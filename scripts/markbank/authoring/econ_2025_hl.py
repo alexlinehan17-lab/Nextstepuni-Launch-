@@ -8,7 +8,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from econ_auto import Paper  # noqa: E402
-from econ_lib import card, point  # noqa: E402
+from econ_lib import anyN, as_option, block, card, heads, load, point, tidy  # noqa: E402
 
 P = Paper(2025, 'higher')
 SCAFFOLD = ('Possible responses', 'Suggested responses', 'More possible response',
@@ -138,5 +138,208 @@ P.cards.append(card(
                {'letter': '3', 'meaning': 'Marginal revenue', 'askedInThisQuestion': True},
                {'letter': 'E', 'meaning': 'the equilibrium where marginal cost cuts marginal revenue',
                 'askedInThisQuestion': False}]))
+
+
+# ── Section B, second pass ──────────────────────────────────────────────────
+# The first pass covered every topic of the specification; it did not cover
+# every part. These are the parts of this paper that list named responses and
+# had no card citing them, found by econ_todo.py.
+SIDES = ('The part asks for one of each and the scheme heads the two lists separately, so each '
+         'side is its own card.')
+
+P.menu('economic advantage and one economic disadvantage for consumers',
+       'econ-2025-hl-q11-b-iii-adv', 'economics-2-0', 'monopoly-advantages-for-consumers',
+       'Outline one economic advantage for consumers if a pharmaceutical company has monopoly '
+       'power.',
+       'An advantage to consumers — any one',
+       'One advantage, 4 marks.',
+       ref='2025 HL Q11(b)(iii) — advantage', claim=1, per=4,
+       drop=SCAFFOLD, stop='Economic Disadvantage for Consumers', notes=SIDES)
+
+P.menu('economic advantage and one economic disadvantage for consumers',
+       'econ-2025-hl-q11-b-iii-dis', 'economics-2-0', 'monopoly-disadvantages-for-consumers',
+       'Outline one economic disadvantage for consumers if a pharmaceutical company has monopoly '
+       'power.',
+       'A disadvantage to consumers — any one',
+       'One disadvantage, 4 marks.',
+       ref='2025 HL Q11(b)(iii) — disadvantage', claim=1, per=4,
+       drop=SCAFFOLD, after='Economic Disadvantage for Consumers')
+
+P.menu('Suggest one economic measure the Irish government could take to address',
+       'econ-2025-hl-q11-c-ii', 'economics-2-1', 'addressing-a-shortage-of-gps',
+       'More than three-quarters of GP practices in Ireland have closed their lists to new '
+       'patients. Suggest one economic measure the Irish government could take to address this.',
+       'A measure to ease the GP shortage — any one',
+       'One measure, 4 marks.',
+       ref='2025 HL Q11(c)(ii)', claim=1, per=4,
+       drop=SCAFFOLD + ('More possible responses on next page',))
+
+# The scheme runs three worked examples together under one "Any relevant
+# example:" heading with no bullet between them, so the extractor hands back one
+# 746-character option -- which the audit refuses, and rightly: a student would
+# be shown three answers as though they were one. Cut at the sectors themselves.
+_MIXED = tidy(load(2025, 'higher'))
+P.cards.append(card(
+    'econ-2025-hl-q11-c-iii', 2025, 'higher', 'economics-1-0',
+    'evidence-that-ireland-is-a-mixed-economy', '2025 HL Q11(c)(iii)',
+    'Outline an example which shows that Ireland is a mixed economy.',
+    '1 @ 8', 8,
+    [anyN('r-1', 'An example of the mixed economy — any one', 8, 1, 8,
+          [as_option(h) for h in heads(
+              block(_MIXED, 'Education – Ireland’s school system includes both public',
+                    'Possible Responses'),
+              ['Education –', 'Transport –', 'Energy –', 'State regulation –'])],
+          'One example, 8 marks. The part pays the same 8 for explaining the term itself.')],
+    'Each example names a sector where the State and private firms both operate — which is what '
+    'a mixed economy is.', tariff_kind='bestNofParts'))
+
+P.menu('economic advantage of Ireland reducing its level of general government debt',
+       'econ-2025-hl-q12-a-ii-tax', 'economics-3-1', 'lower-debt-and-the-taxpayer',
+       'Outline one economic advantage of Ireland reducing its level of general government debt '
+       'for taxpayers in Ireland.',
+       'An advantage to taxpayers — any one',
+       'One advantage, 7 marks.',
+       ref='2025 HL Q12(a)(ii) — taxpayers', claim=1, per=7,
+       drop=SCAFFOLD, stop='The Irish government', notes=SIDES)
+
+P.menu('economic advantage of Ireland reducing its level of general government debt',
+       'econ-2025-hl-q12-a-ii-gov', 'economics-3-1', 'lower-debt-and-the-exchequer',
+       'Outline one economic advantage of Ireland reducing its level of general government debt '
+       'for the Irish government.',
+       'An advantage to the government — any one',
+       'One advantage, 7 marks.',
+       ref='2025 HL Q12(a)(ii) — government', claim=1, per=7,
+       drop=SCAFFOLD, after='Lower annual interest repayments')
+
+P.menu('more accurate measure of Ireland', 'econ-2025-hl-q12-a-iii',
+       'economics-3-0', 'why-gni-star-beats-gdp',
+       'Which is the more accurate measure of Ireland’s debt burden: debt as a percentage of '
+       'GNI* or debt as a percentage of GDP? Justify your choice.',
+       'A justification — any one',
+       'One justification, 6 marks. Every response the scheme lists argues for GNI*.',
+       ref='2025 HL Q12(a)(iii)', claim=1, per=6, drop=SCAFFOLD)
+
+P.menu('higher rate of income tax on individuals who earn above', 'econ-2025-hl-q12-b-iii-agree',
+       'economics-3-1', 'the-case-for-a-higher-top-rate',
+       'Some politicians are debating a higher rate of income tax on individuals earning above '
+       '€100,000. Argue that you AGREE.',
+       'A reason to agree — any one',
+       'One argument, 8 marks.',
+       ref='2025 HL Q12(b)(iii) — agree', claim=1, per=8,
+       drop=SCAFFOLD, stop='Negative impact on FDI',
+       notes='The part is answered either way and the scheme lists the responses for each side, '
+             'so each side is its own card.')
+
+P.menu('higher rate of income tax on individuals who earn above', 'econ-2025-hl-q12-b-iii-disagree',
+       'economics-3-1', 'the-case-against-a-higher-top-rate',
+       'Some politicians are debating a higher rate of income tax on individuals earning above '
+       '€100,000. Argue that you DISAGREE.',
+       'A reason to disagree — any one',
+       'One argument, 8 marks.',
+       ref='2025 HL Q12(b)(iii) — disagree', claim=1, per=8,
+       drop=SCAFFOLD, after='Negative impact on FDI')
+
+P.menu('economic advantage to the employee and one possible economic disadvantage to the employer',
+       'econ-2025-hl-q12-c-i-employee', 'economics-2-1', 'auto-enrolment-and-the-employee',
+       'Outline one possible economic advantage to the employee of the auto-enrolment pension '
+       'scheme.',
+       'An advantage to the employee — any one',
+       'One advantage, 7 marks.',
+       ref='2025 HL Q12(c)(i) — employee', claim=1, per=7,
+       drop=SCAFFOLD, stop='Economic Disadvantage to the Employer', notes=SIDES)
+
+P.menu('economic advantage to the employee and one possible economic disadvantage to the employer',
+       'econ-2025-hl-q12-c-i-employer', 'economics-2-1', 'auto-enrolment-and-the-employer',
+       'Outline one possible economic disadvantage to the employer of the auto-enrolment pension '
+       'scheme.',
+       'A disadvantage to the employer — any one',
+       'One disadvantage, 7 marks.',
+       ref='2025 HL Q12(c)(i) — employer', claim=1, per=7,
+       drop=SCAFFOLD, after='Higher business costs')
+
+P.menu('pension scheme may influence the multiplier effect', 'econ-2025-hl-q12-c-ii',
+       'economics-3-0', 'pension-saving-and-the-multiplier',
+       'Discuss how the auto-enrolment pension scheme may influence the multiplier effect in '
+       'Ireland in the short term.',
+       'A step in the argument — either one',
+       'The scheme’s verdict is that the multiplier gets WEAKER, and the 7 marks are for the '
+       'mechanism that gets you there.',
+       ref='2025 HL Q12(c)(ii)', claim=1, per=7,
+       drop=SCAFFOLD + ('Ireland in the short term', 'It will result in a weaker multiplier'))
+
+P.menu('economic benefit and one economic challenge of Ireland', 'econ-2025-hl-q13-a-ii-benefit',
+       'economics-4-2', 'benefits-of-exporting-2025',
+       'Outline one economic benefit of Ireland’s exports for the Irish economy.',
+       'A benefit of exporting — any one',
+       'One benefit, 7 marks.',
+       ref='2025 HL Q13(a)(ii) — benefit', claim=1, per=7,
+       drop=SCAFFOLD + ('Economic Benefit:',), stop='Economic Challenge', notes=SIDES)
+
+P.menu('economic benefit and one economic challenge of Ireland', 'econ-2025-hl-q13-a-ii-challenge',
+       'economics-4-2', 'challenges-of-an-export-led-economy',
+       'Outline one economic challenge of Ireland’s exports for the Irish economy.',
+       'A challenge of exporting — any one',
+       'One challenge, 7 marks.',
+       ref='2025 HL Q13(a)(ii) — challenge', claim=1, per=7,
+       drop=SCAFFOLD, after='Vulnerability to external shocks')
+
+P.menu('outflows of FDI from Ireland are important', 'econ-2025-hl-q13-a-iii',
+       'economics-4-1', 'why-outward-fdi-matters',
+       'Ireland is the ninth-largest contributor of foreign direct investment into the US. '
+       'Outline one economic reason why such outflows of FDI are important for the Irish economy.',
+       'A reason outward FDI matters — any one',
+       'One reason, 7 marks.',
+       ref='2025 HL Q13(a)(iii)', claim=1, per=7, drop=SCAFFOLD)
+
+P.menu('World Trade Organisation (WTO) plays a crucial role', 'econ-2025-hl-q13-b-iii',
+       'economics-4-2', 'functions-of-the-wto',
+       'The World Trade Organisation (WTO) plays a crucial role in global trade. Outline one '
+       'function of the WTO.',
+       'A function of the WTO — any one',
+       'One function, 6 marks.',
+       ref='2025 HL Q13(b)(iii)', claim=1, per=6, drop=SCAFFOLD)
+
+P.menu('Irish government failing to reach the UN', 'econ-2025-hl-q13-c-i',
+       'economics-4-0', 'why-ireland-misses-the-aid-target',
+       'Outline one possible economic reason for the Irish government failing to reach the UN '
+       'target for overseas development aid.',
+       'A reason the target was missed — any one',
+       'One reason, 7 marks.',
+       ref='2025 HL Q13(c)(i)', claim=1, per=7, drop=SCAFFOLD)
+
+P.menu('benefit that Ireland', 'econ-2025-hl-q13-c-ii',
+       'economics-4-0', 'what-overseas-aid-does-for-ldcs',
+       'Outline one possible economic benefit that Ireland’s overseas development aid provides to '
+       'least developed countries.',
+       'A benefit to the recipient — any one',
+       'One benefit, 7 marks.',
+       ref='2025 HL Q13(c)(ii)', claim=1, per=7, drop=SCAFFOLD)
+
+P.menu('challenge for LDCs who have become dependent on international aid', 'econ-2025-hl-q13-c-iii',
+       'economics-4-0', 'the-cost-of-aid-dependence',
+       'Outline one challenge for least developed countries that have become dependent on '
+       'international aid.',
+       'A cost of aid dependence — any one',
+       'One challenge, 7 marks.',
+       ref='2025 HL Q13(c)(iii)', claim=1, per=7, drop=SCAFFOLD + ('Possible Responses',))
+
+P.menu('advances in technology can influence Ireland', 'econ-2025-hl-q14-a-iii-agri',
+       'economics-1-2', 'technology-in-irish-agriculture',
+       'Outline one way changes in technology may affect how the agriculture sector operates.',
+       'A way technology changes farming — any one',
+       'One way, 5 marks.',
+       ref='2025 HL Q14(a)(iii) — agriculture', claim=1, per=5,
+       drop=SCAFFOLD, stop='Sports & Fitness',
+       notes='The part offers agriculture or sport and the scheme heads the two lists separately, '
+             'so each sector is its own card.')
+
+P.menu('advances in technology can influence Ireland', 'econ-2025-hl-q14-a-iii-sport',
+       'economics-1-2', 'technology-in-sport-and-fitness',
+       'Outline one way changes in technology may affect how the sports and fitness sector '
+       'operates.',
+       'A way technology changes sport — any one',
+       'One way, 5 marks.',
+       ref='2025 HL Q14(a)(iii) — sport', claim=1, per=5,
+       drop=SCAFFOLD, after='Sports & Fitness')
 
 P.emit()

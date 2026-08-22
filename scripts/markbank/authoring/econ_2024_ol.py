@@ -158,4 +158,201 @@ P.cards.append(card(
                {'letter': 'E', 'meaning': 'the equilibrium, where marginal cost cuts marginal revenue',
                 'askedInThisQuestion': False}]))
 
+
+# ── Section B, second pass ──────────────────────────────────────────────────
+# The parts of this paper that list named responses and had no card citing
+# them, found by econ_todo.py.
+SCAF = ('Possible responses', 'Suggested responses')
+SIDES = ('The part is answered either way and the scheme heads the two lists separately, so each '
+         'side is its own card.')
+
+# 2024 OL Q11(b)(iii) is NOT here: econ_todo reported it uncarded because the
+# part path it reconstructs from the paper is one roman numeral out, and a
+# card on that part already exists forty lines above. econ_all.py's duplicate-id
+# guard is what caught it.
+P.menu('Irish energy market more competitive or less competitive', 'econ-2024-ol-q11-c-i',
+       'economics-2-0', 'fewer-firms-and-competition',
+       'A fourth energy company left the Irish market. In your opinion, is the Irish energy '
+       'market more competitive or less competitive as a result? Explain your choice.',
+       'A reason it is less competitive — any one',
+       'One explanation, 6 marks. Every response the scheme lists argues that the market became '
+       'LESS competitive.',
+       ref='2024 OL Q11(c)(i)', claim=1, per=6,
+       drop=SCAF + ('result of this development',))
+
+P.menu('pharmaceutical industry has experienced a shortage of skilled labour',
+       'econ-2024-ol-q12-b-ii', 'economics-2-1', 'effects-of-a-skills-shortage-on-a-sector',
+       'The pharmaceutical industry has experienced a shortage of skilled labour. Explain one '
+       'effect a shortage of labour could have on this industry.',
+       'An effect on the industry — any one',
+       'One effect, 10 marks.',
+       ref='2024 OL Q12(b)(ii)', claim=1, per=10,
+       drop=SCAF + ('years. Explain one effect',))
+
+P.menu('economic measure the Irish government could take to help increase',
+       'econ-2024-ol-q12-b-iii', 'economics-2-1', 'increasing-the-supply-of-skilled-labour',
+       'Outline one economic measure the Irish government could take to help increase the supply '
+       'of skilled labour in the economy.',
+       'A measure to raise the supply of skills — any one',
+       'One measure, 10 marks.',
+       ref='2024 OL Q12(b)(iii)', claim=1, per=10,
+       drop=SCAF + ('supply of more skilled labour',))
+
+P.menu('labour costs increasing some Irish businesses are finding it difficult',
+       # Not 'econ-2024-ol-q12-c-ii': that id is already taken by a card which
+       # cites 2024 OL Q11(c)(ii) — one of the nineteen whose id counts the
+       # wrong question and whose citation econ_refs.py corrects. The ids are
+       # left alone because a student's review history is keyed on them, and
+       # this is the cost of that: a later card on the REAL Q12(c)(ii) has to
+       # find another name.
+       'econ-2024-ol-q12-c-ii-unemployment', 'economics-3-2', 'labour-costs-and-unemployment',
+       'With labour costs increasing, some Irish businesses are finding it difficult to continue '
+       'to operate. Outline how this development may affect unemployment in Ireland.',
+       'A way unemployment could rise — either one',
+       'One point, 10 marks. Both responses the scheme lists point the same way: unemployment '
+       'rises.',
+       ref='2024 OL Q12(c)(ii)', claim=1, per=10,
+       drop=SCAF + ('to operate. Outline how',))
+
+P.menu('why some people remain unemployed while job vacancies exist',
+       'econ-2024-ol-q12-c-iii', 'economics-3-2', 'unemployment-alongside-vacancies',
+       'Outline one reason why some people remain unemployed while job vacancies exist in the '
+       'Irish economy.',
+       'A reason the two coexist — any one',
+       'One reason, 10 marks. This is structural unemployment: the vacancies and the unemployed '
+       'do not match.',
+       ref='2024 OL Q12(c)(iii)', claim=1, per=10, drop=SCAF)
+
+P.menu('manufacturers, like toilet paper companies, use more', 'econ-2024-ol-q13-c-ii-yes',
+       'economics-0-2', 'the-case-for-sustainable-materials',
+       'In your opinion, should manufacturers, like toilet paper companies, use more expensive '
+       'environmentally friendly raw materials? Argue YES.',
+       'A reason to say yes — any one',
+       'One explanation, 10 marks.',
+       ref='2024 OL Q13(c)(ii) — yes', claim=1, per=10,
+       drop=SCAF + ('YES Explanation',), stop='NO Explanation', notes=SIDES)
+
+P.menu('manufacturers, like toilet paper companies, use more', 'econ-2024-ol-q13-c-ii-no',
+       'economics-0-2', 'the-case-against-sustainable-materials',
+       'In your opinion, should manufacturers, like toilet paper companies, use more expensive '
+       'environmentally friendly raw materials? Argue NO.',
+       'A reason to say no — any one',
+       'One explanation, 10 marks.',
+       ref='2024 OL Q13(c)(ii) — no', claim=1, per=10,
+       drop=SCAF, after='NO Explanation')
+
+P.menu('European Central Bank (ECB) is concerned about inflation rates',
+       'econ-2024-ol-q13-c-iii', 'economics-3-3', 'why-the-ecb-fears-inflation',
+       'Explain why you think the European Central Bank is concerned about inflation rates in the '
+       'euro area.',
+       'A reason the ECB is concerned — any one',
+       'One explanation, 4 marks.',
+       ref='2024 OL Q13(c)(iii)', claim=1, per=4,
+       drop=SCAF + ('Explain why you think the ECB',))
+
+P.menu('why the government applies a 0% VAT rate', 'econ-2024-ol-q14-b-i',
+       'economics-1-3', 'why-some-goods-are-zero-rated',
+       'Outline one reason why the government applies a 0% VAT rate to goods such as milk, bread, '
+       'books, children’s clothes and disability aids.',
+       'A reason for the zero rate — any one',
+       'One reason, 7 marks.',
+       ref='2024 OL Q14(b)(i)', claim=1, per=7, drop=SCAF)
+
+P.menu('9% VAT rate for the tourism and hospitality industry would return',
+       'econ-2024-ol-q14-b-iii-agree', 'economics-1-3', 'the-case-for-restoring-the-vat-rate',
+       'The government announced the 9% VAT rate for the tourism and hospitality industry would '
+       'return to 13.5%. Argue that you AGREE with the increase.',
+       'A reason to agree — any one',
+       'One explanation, 7 marks.',
+       ref='2024 OL Q14(b)(iii) — agree', claim=1, per=7,
+       drop=SCAF + ('AGREE Explanation',), stop='DISAGREE Explanation', notes=SIDES)
+
+P.menu('9% VAT rate for the tourism and hospitality industry would return',
+       'econ-2024-ol-q14-b-iii-disagree', 'economics-1-3',
+       'the-case-against-restoring-the-vat-rate',
+       'The government announced the 9% VAT rate for the tourism and hospitality industry would '
+       'return to 13.5%. Argue that you DISAGREE with the increase.',
+       'A reason to disagree — any one',
+       'One explanation, 7 marks.',
+       ref='2024 OL Q14(b)(iii) — disagree', claim=1, per=7,
+       drop=SCAF, after='DISAGREE Explanation')
+
+P.menu('two reasons why exports are important for the Irish economy', 'econ-2024-ol-q14-c-ii',
+       'economics-4-2', 'why-exports-matter-2024',
+       'Outline two reasons why exports are important for the Irish economy.',
+       'A reason exports matter — any two',
+       'Two reasons, the first paid 6 and the second 4.',
+       ref='2024 OL Q14(c)(ii)', steps=[6, 4], drop=SCAF)
+
+P.menu('why you think global population has grown so rapidly', 'econ-2024-ol-q16-a-i',
+       'economics-3-5', 'why-world-population-grew',
+       'Outline one reason why you think global population has grown so rapidly since 1804.',
+       'A reason population grew — any one',
+       'One reason, 9 marks.',
+       ref='2024 OL Q16(a)(i)', claim=1, per=9, drop=SCAF)
+
+P.menu('unretired', 'econ-2024-ol-q16-a-ii', 'economics-2-1', 'older-workers-returning-to-work',
+       'Many people over 65 hope to become part of the so-called “unretired”. Outline one effect '
+       'on the Irish economy if more people over 65 return to work.',
+       'An effect of the unretired — any one',
+       'One effect, 9 marks. The scheme lists four gains and one cost: more competition for '
+       'younger workers.',
+       ref='2024 OL Q16(a)(ii)', claim=1, per=9, drop=SCAF)
+
+P.menu('population is ageing faster than anywhere else in Europe', 'econ-2024-ol-q16-a-iii',
+       'economics-3-1', 'ageing-and-the-irish-exchequer',
+       'Ireland’s population is ageing faster than anywhere else in Europe. Outline one economic '
+       'effect this will have on the Irish government.',
+       'An effect on the government — any one',
+       'One effect, 9 marks.',
+       ref='2024 OL Q16(a)(iii)', claim=1, per=9, drop=SCAF)
+
+P.menu('Corporation tax is now the second largest source of tax revenue',
+       'econ-2024-ol-q16-b-i', 'economics-3-1', 'the-risk-in-corporation-tax',
+       'Corporation tax is now the second largest source of tax revenue for Ireland. Outline one '
+       'possible risk to the Irish economy of this development.',
+       'A risk of the reliance — any one',
+       'One risk, 10 marks.',
+       ref='2024 OL Q16(b)(i)', claim=1, per=10,
+       drop=SCAF + ('Outline one possible risk',))
+
+P.menu('corporation tax rate set to rise', 'econ-2024-ol-q16-b-ii-adv',
+       'economics-3-1', 'raising-corporation-tax-advantage',
+       'Ireland’s corporation tax rate rose from 12.5% to 15% as part of a global deal. Outline '
+       'one possible economic ADVANTAGE of this for Ireland.',
+       'An advantage of the rise — any one',
+       'One advantage, 9 marks.',
+       ref='2024 OL Q16(b)(ii) — advantage', claim=1, per=9,
+       drop=SCAF + ('Economic advantage:',), stop='Economic disadvantage',
+       notes='The part asks for one of each and the scheme heads the two lists separately, so '
+             'each side is its own card.')
+
+P.menu('corporation tax rate set to rise', 'econ-2024-ol-q16-b-ii-dis',
+       'economics-3-1', 'raising-corporation-tax-disadvantage',
+       'Ireland’s corporation tax rate rose from 12.5% to 15% as part of a global deal. Outline '
+       'one possible economic DISADVANTAGE of this for Ireland.',
+       'A disadvantage of the rise — any one',
+       'One disadvantage, 9 marks.',
+       ref='2024 OL Q16(b)(ii) — disadvantage', claim=1, per=9,
+       drop=SCAF, after='Possibility that some MNCs might relocate')
+
+P.menu('new mortgage borrowing rules has a positive or negative', 'econ-2024-ol-q16-c-i-pos',
+       'economics-1-1', 'looser-mortgage-rules-positive',
+       'Do you think the new mortgage borrowing rules has a positive or negative effect on '
+       'first-time home buyers and the Irish housing market? Explain a POSITIVE effect.',
+       'A positive effect — any one',
+       'One explanation, 10 marks.',
+       ref='2024 OL Q16(c)(i) — positive', claim=1, per=10,
+       drop=SCAF + ('Positive effect explanation',), stop='Negative effect explanation',
+       notes=SIDES)
+
+P.menu('new mortgage borrowing rules has a positive or negative', 'econ-2024-ol-q16-c-i-neg',
+       'economics-1-1', 'looser-mortgage-rules-negative',
+       'Do you think the new mortgage borrowing rules has a positive or negative effect on '
+       'first-time home buyers and the Irish housing market? Explain a NEGATIVE effect.',
+       'A negative effect — any one',
+       'One explanation, 10 marks.',
+       ref='2024 OL Q16(c)(i) — negative', claim=1, per=10,
+       drop=SCAF, after='Negative effect explanation')
+
 emit(cards + P.cards)

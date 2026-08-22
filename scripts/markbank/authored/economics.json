@@ -7822,6 +7822,894 @@
   "notes": "Abbreviations are not accepted."
  },
  {
+  "id": "econ-2024-ol-q11-c-i",
+  "topicId": "economics-2-0",
+  "conceptId": "fewer-firms-and-competition",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q11(c)(i)",
+  "questionText": "A fourth energy company left the Irish market. In your opinion, is the Irish energy market more competitive or less competitive as a result? Explain your choice.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 6",
+   "answer": 1,
+   "ofParts": 4,
+   "perPart": 6
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason it is less competitive — any one",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One explanation, 6 marks. Every response the scheme lists argues that the market became LESS competitive.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Reduced number of firms: With fewer electricity providers in the market, the remaining firms now have a greater market share, leading to a higher concentration of power among the remaining providers. This has resulted in less competition, as the remaining firms have more control over the market.",
+      "Less choice for consumers: With fewer electricity providers available, consumers have fewer choices when selecting their electricity supplier. This reduced choice limits the competitive pressure on the remaining providers to offer better prices, services, or products.",
+      "Barriers to entry may exist: If the providers who exited, faced challenges such as high barriers to entry, it might discourage new firms from entering the market, further limiting competition.",
+      "Risk of collusion exists: With a smaller number of electricity providers in the market, the possibility of collusion or tacit co-operation between the remaining firms has increased. This could potentially lead to anti-competitive practices, such as price fixing or limiting supply, which would harm consumers."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2024-ol-q12-b-ii",
+  "topicId": "economics-2-1",
+  "conceptId": "effects-of-a-skills-shortage-on-a-sector",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q12(b)(ii)",
+  "questionText": "The pharmaceutical industry has experienced a shortage of skilled labour. Explain one effect a shortage of labour could have on this industry.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 10",
+   "answer": 1,
+   "ofParts": 5,
+   "perPart": 10
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An effect on the industry — any one",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "One effect, 10 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 10,
+     "options": [
+      "Increased wages / Increase cost of labour: To attract and retain qualified employees, pharmaceutical companies may need to offer higher wages, better benefits, or other incentives. This can drive up labour costs, potentially affecting profitability and the industry's competitiveness.",
+      "Reduced productivity and output / Reduced competitiveness: A lack of skilled workers may result in companies operating below their full capacity, leading to lower productivity and a reduced output of pharmaceutical products. This can impact the industry's ability to meet the domestic and international demand for pharmaceuticals, and potentially lead to a loss of market share.",
+      "Decline in innovation and new product development: A skilled labour shortage may slow down research and development progress, potentially delaying the discovery and commercialisation of new drugs, therapies, and medical devices. This could impact the industry's long-term growth prospects and global competitiveness.",
+      "Increased reliance on outsourcing or offshoring: To address the shortage, pharmaceutical companies in Ireland may choose to outsource or offshore certain functions, such as research, development, or manufacturing, to countries with a more abundant supply of skilled labour. While this may help alleviate the labour shortage, it can also have implications for domestic employment and the Irish economy generally.",
+      "Difficulty in maintaining quality standards: A shortage of skilled workers may make it more challenging for companies in Ireland to maintain the very high quality and safety standards required in the pharmaceutical industry. This could lead to increased risks of product recalls or regulatory issues, potentially damaging the reputation and financial performance of the affected companies."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2024-ol-q12-b-iii",
+  "topicId": "economics-2-1",
+  "conceptId": "increasing-the-supply-of-skilled-labour",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q12(b)(iii)",
+  "questionText": "Outline one economic measure the Irish government could take to help increase the supply of skilled labour in the economy.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 10",
+   "answer": 1,
+   "ofParts": 7,
+   "perPart": 10
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A measure to raise the supply of skills — any one",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "One measure, 10 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 10,
+     "options": [
+      "Increase funding for education and training: Further government investment in education and vocational training programmes that target in-demand skills and industries can help to equip the workforce with the necessary qualifications. This might involve increased funding for universities and colleges, the development of specialised training centres, or the promotion of apprenticeships and internships.",
+      "Collaborate with industry: Government partnerships with businesses and industry organisations can help to ensure that education and training programmes are aligned with the needs of employers. This could involve creating public-private partnerships, fostering industry-academia collaborations, or offering financial incentives for businesses to participate in training and upskilling initiatives.",
+      "Increase labour mobility: Encouraging greater occupational and/or geographical mobility of labour can help to ensure that skilled workers are able to move to industries or regions where their skills are in demand. This might involve investments in transport infrastructure, the development of regional economic hubs, or providing financial support to workers relocating for work.",
+      "Implement immigration policies: Attracting skilled workers from other countries can help to address labour shortages in the short to medium term. The government could consider implementing visa programmes targeted at skilled professionals, offering incentives for foreign workers to relocate to Ireland, or streamlining the process of recognizing foreign qualifications.",
+      "Incentivise lifelong learning: Encouraging workers to continuously update their skills can help to ensure that the workforce remains adaptable to the changing needs of industry. The government could offer financial incentives for individuals to participate in further education or training, such as tax credits, subsidies, or low-interest loans.",
+      "Promote STEM education: Encouraging students to pursue careers in science, technology, engineering, and mathematics (STEM) can help to address skill shortages in industries such as pharmaceuticals. This might involve increased funding for STEM programmes in schools, the development of targeted scholarships or grants, or public awareness campaigns to promote the benefits of STEM careers.",
+      "Implement more gender equality initiatives: Ensuring that women have perfectly equal access to education and career opportunities can help to expand the pool of skilled labour. The government could promote gender equality through policies and programmes that support equal pay, parental leave, and access to childcare, as well as initiatives aimed at encouraging more women to enter traditionally male-dominated fields of employment such as transportation, construction, and its related trades."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2024-ol-q12-c-ii-unemployment",
+  "topicId": "economics-3-2",
+  "conceptId": "labour-costs-and-unemployment",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q12(c)(ii)",
+  "questionText": "With labour costs increasing, some Irish businesses are finding it difficult to continue to operate. Outline how this development may affect unemployment in Ireland.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 10",
+   "answer": 1,
+   "ofParts": 2,
+   "perPart": 10
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A way unemployment could rise — either one",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "One point, 10 marks. Both responses the scheme lists point the same way: unemployment rises.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 10,
+     "options": [
+      "Could lead to increased unemployment if businesses decide not to recruit new workers or reduce their workforce.",
+      "They may also decide to use more technology which would lead to less workers needed and an increase in unemployment figures."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2024-ol-q12-c-iii",
+  "topicId": "economics-3-2",
+  "conceptId": "unemployment-alongside-vacancies",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q12(c)(iii)",
+  "questionText": "Outline one reason why some people remain unemployed while job vacancies exist in the Irish economy.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 10",
+   "answer": 1,
+   "ofParts": 5,
+   "perPart": 10
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason the two coexist — any one",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "One reason, 10 marks. This is structural unemployment: the vacancies and the unemployed do not match.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 10,
+     "options": [
+      "Mismatch between the skills and qualifications of those people seeking employment and the skills and qualifications required in the vacancies that arise.",
+      "Visa requirements to take up some jobs in the Irish economy in the case of non- EU citizens.",
+      "English language – people may have the necessary skills but are not proficient in the English language making it a barrier to employment.",
+      "Lack of infrastructure – difficult to access the place of work due to lack of transport.",
+      "Lack of affordable housing where the jobs are making it prohibitive to take up the post."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2024-ol-q13-c-ii-yes",
+  "topicId": "economics-0-2",
+  "conceptId": "the-case-for-sustainable-materials",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q13(c)(ii) — yes",
+  "questionText": "In your opinion, should manufacturers, like toilet paper companies, use more expensive environmentally friendly raw materials? Argue YES.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 10",
+   "answer": 1,
+   "ofParts": 4,
+   "perPart": 10
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason to say yes — any one",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "One explanation, 10 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 10,
+     "options": [
+      "It helps protect the environment: Environmentally friendly raw materials often have a lower ecological footprint compared to traditional materials. They may be derived from renewable sources, produced with fewer toxic chemicals, or generate less waste. By using these materials, manufacturers contribute to the conservation of natural resources and reduction of pollution. •",
+      "Helps meet growing consumer demand for eco-friendly products: Consumers are increasingly aware of the environmental impact of their purchases and may be more likely to choose products made with sustainable materials. By offering eco-friendly products, manufacturers can meet this growing demand and build customer loyalty. •",
+      "Complies with regulations: Governments worldwide are implementing more stringent environmental regulations to address climate change and other ecological issues. By adopting environmentally friendly materials, manufacturers can ensure compliance with these regulations and avoid potential fines or penalties. •",
+      "Generates long-term cost savings: While environmentally friendly raw materials may be more expensive initially, they can lead to long-term cost savings. For instance, renewable materials may become more cost-effective as non-renewables become scarcer, and the use of eco-friendly materials can result in reduced waste disposal costs and lower environmental clean-up expenses."
+     ]
+    }
+   }
+  ],
+  "notes": "The part is answered either way and the scheme heads the two lists separately, so each side is its own card."
+ },
+ {
+  "id": "econ-2024-ol-q13-c-ii-no",
+  "topicId": "economics-0-2",
+  "conceptId": "the-case-against-sustainable-materials",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q13(c)(ii) — no",
+  "questionText": "In your opinion, should manufacturers, like toilet paper companies, use more expensive environmentally friendly raw materials? Argue NO.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 10",
+   "answer": 1,
+   "ofParts": 6,
+   "perPart": 10
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason to say no — any one",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "One explanation, 10 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 10,
+     "options": [
+      "NO Explanation: •",
+      "Increases production costs: Using eco-friendly materials can result in higher production costs, which can negatively impact a company's profitability. Manufacturers might be reluctant to adopt these materials if they believe that the increased costs cannot be offset by other benefits, such as increased demand or long-term savings. •",
+      "Increases consumer prices: Higher production costs may lead to higher retail prices for consumers. If consumers are price-sensitive and unwilling to pay a premium for eco-friendly products, manufacturers may find it difficult to maintain their market share or achieve desired sales levels. •",
+      "Causes complex issues in the supply chain: Adopting environmentally friendly materials can require significant changes to a company's supply chain, including finding new suppliers, adjusting production processes, and implementing new quality control measures. These changes can be complex and time-consuming, which may deter some manufacturers from making the switch. •",
+      "Lack of consumer awareness exists: If consumers are not well-informed about the benefits of environmentally friendly products, they may not be willing to pay higher prices for them. Manufacturers might hesitate to invest in sustainable materials if they believe that consumer awareness and demand are too low to justify the extra production costs. •",
+      "Companies can have a short-term focus on cost savings: Some companies may prioritise short-term profits over long-term environmental sustainability goals. These companies might be unwilling to invest in more expensive environmentally friendly materials if they perceive that the short-term costs outweigh the potential long-term benefits."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2024-ol-q13-c-iii",
+  "topicId": "economics-3-3",
+  "conceptId": "why-the-ecb-fears-inflation",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q13(c)(iii)",
+  "questionText": "Explain why you think the European Central Bank is concerned about inflation rates in the euro area.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 4",
+   "answer": 1,
+   "ofParts": 5,
+   "perPart": 4
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason the ECB is concerned — any one",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One explanation, 4 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "The ECB has a price stability mandate: The primary objective of the ECB is to maintain price stability in the euro area, which is defined as an inflation rate close to, but below, 2% over the medium term. The current inflation rate significantly exceeds this target and indicates a loss of price stability.",
+      "Purchasing power is eroded: Current high inflation erodes the purchasing power of euro area consumers, leading to a decline in their real income and potentially impacting their standard of living. This may result in reduced consumer spending, which can slow down economic growth.",
+      "Economic uncertainty can increase: High inflation can create uncertainty in the eurozone economy, as businesses and consumers may find it difficult to plan and make long-term decisions. This uncertainty can lead to reduced investment, lower economic growth, and increased volatility in financial markets.",
+      "Poorer sectors of society may be more affected: The current high Inflation rate in the euro area can have negative redistribution effects, as it may disproportionately affect certain groups, such as those on fixed incomes or with limited financial assets. This can lead to increased income inequality and perhaps even social unrest.",
+      "High inflation can damage competitiveness: If inflation rates in the euro area are higher than those in other major economies, e.g. the US, it could make euro area goods and services more expensive, thereby reducing exports and harming the competitiveness of euro area businesses."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2024-ol-q14-b-i",
+  "topicId": "economics-1-3",
+  "conceptId": "why-some-goods-are-zero-rated",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q14(b)(i)",
+  "questionText": "Outline one reason why the government applies a 0% VAT rate to goods such as milk, bread, books, children’s clothes and disability aids.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 7",
+   "answer": 1,
+   "ofParts": 5,
+   "perPart": 7
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason for the zero rate — any one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "One reason, 7 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "To support basic needs: Milk and bread are staple foods that provide essential nutrients to individuals and families. By applying a 0% VAT rate on these items, the government ensures that they remain affordable, making it easier for citizens in Ireland to access and maintain a basic standard of living.",
+      "To promote education and literacy: Books are vital for education, personal development, and promoting a well- informed society. The 0% VAT rate on books helps lower their prices, makes them more accessible to a wider range of citizens and encourages reading and literacy.",
+      "To ease the financial burden on families: Children's clothes can be a significant expense for families, especially for those on low incomes. By applying a 0% VAT rate, the government helps reduce the financial burden on families and ensures that children have access to essential clothing.",
+      "To foster social inclusion: Disability aids, such as wheelchairs and hearing aids, are essential for individuals with disabilities to lead independent lives and participate fully in society. The 0% VAT rate on these items helps reduce their cost, makes them more accessible and promotes social inclusion.",
+      "To reduce income inequality / poverty: Applying a 0% VAT rate on essential goods and services generally helps to mitigate the regressive nature of VAT, which can disproportionately affect lower- income households in Ireland. By lowering the tax burden on these items, the government promotes a more equitable distribution of resources in society."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2024-ol-q14-b-iii-agree",
+  "topicId": "economics-1-3",
+  "conceptId": "the-case-for-restoring-the-vat-rate",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q14(b)(iii) — agree",
+  "questionText": "The government announced the 9% VAT rate for the tourism and hospitality industry would return to 13.5%. Argue that you AGREE with the increase.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 7",
+   "answer": 1,
+   "ofParts": 10,
+   "perPart": 7
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason to agree — any one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "One explanation, 7 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "Some tax revenue is lost to the exchequer: A lower VAT rate of 9% for the tourism and hospitality industry could result in reduced tax revenue for the government. This may limit the government's ability to fund essential public services, such as housing, climate action, healthcare, education, and infrastructure development. •",
+      "VAT is a regressive tax: VAT is a tax on spending, and a lower 9% rate for the tourism and hospitality industry might disproportionately benefit higher-income citizens who can afford to spend more on leisure and travel. This could exacerbate income inequality and the regressive nature of VAT in Ireland. •",
+      "It distorts market signals: A lower VAT rate of 9% for a specific industry may distort market signals and create unfair advantages for certain businesses. This could lead to an inefficient allocation of resources, as businesses in the favoured sectors may receive a disproportionate share of investment and consumer spending. •",
+      "It may have a limited effectiveness: A 9% VAT rate may not necessarily result in increased tourism in Ireland if other factors, such as euro exchange rates with other significant currencies, political stability, and global geopolitical economic factors, are more significant drivers of tourism.",
+      "It boosts tourism: A 9% VAT rate on tourism and hospitality services can make Ireland a more attractive and affordable destination for domestic and foreign tourists. Increased tourism can generate significant revenue for the exchequer, as visitors spend money on accommodation, food / beverages, attractions, and other services. •",
+      "It enhances competitiveness: A 9% VAT rate can help make the Irish tourism and hospitality industry more competitive compared to neighbouring countries with higher VAT rates. This can attract more international tourists, leading to increased demand for local services and products. •",
+      "It supports local business: A 9% VAT rate can help reduce operating costs for businesses in the tourism and hospitality industry, such as hotels and restaurants - particularly with inflation running high. This can enable these businesses to invest more in their facilities, services, and workforce, promoting growth and sustainability in the sector. •",
+      "It creates jobs: The tourism and hospitality industry employ over 200,000 people in Ireland, with many jobs being seasonal or part-time. A 9% VAT rate can encourage businesses to expand, creating more job opportunities and supporting local communities, especially in rural areas. •",
+      "It stimulates economic growth: A thriving tourism and hospitality industry can have positive spillover effects on other sectors of the economy, such as transportation, retail, and agriculture. With a 9% VAT rate, the government can help stimulate overall economic growth and increase tax revenues from other sources. •",
+      "It promotes our cultural heritage: A 9% VAT rate can encourage more people to visit and appreciate Ireland's rich cultural heritage, including historical sites, museums, and local festivals. This can help preserve and promote Irish culture and traditions, both domestically and internationally."
+     ]
+    }
+   }
+  ],
+  "notes": "The part is answered either way and the scheme heads the two lists separately, so each side is its own card."
+ },
+ {
+  "id": "econ-2024-ol-q14-b-iii-disagree",
+  "topicId": "economics-1-3",
+  "conceptId": "the-case-against-restoring-the-vat-rate",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q14(b)(iii) — disagree",
+  "questionText": "The government announced the 9% VAT rate for the tourism and hospitality industry would return to 13.5%. Argue that you DISAGREE with the increase.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 7",
+   "answer": 1,
+   "ofParts": 7,
+   "perPart": 7
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason to disagree — any one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "One explanation, 7 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "DISAGREE Explanation: •",
+      "It boosts tourism: A 9% VAT rate on tourism and hospitality services can make Ireland a more attractive and affordable destination for domestic and foreign tourists. Increased tourism can generate significant revenue for the exchequer, as visitors spend money on accommodation, food / beverages, attractions, and other services. •",
+      "It enhances competitiveness: A 9% VAT rate can help make the Irish tourism and hospitality industry more competitive compared to neighbouring countries with higher VAT rates. This can attract more international tourists, leading to increased demand for local services and products. •",
+      "It supports local business: A 9% VAT rate can help reduce operating costs for businesses in the tourism and hospitality industry, such as hotels and restaurants - particularly with inflation running high. This can enable these businesses to invest more in their facilities, services, and workforce, promoting growth and sustainability in the sector. •",
+      "It creates jobs: The tourism and hospitality industry employ over 200,000 people in Ireland, with many jobs being seasonal or part-time. A 9% VAT rate can encourage businesses to expand, creating more job opportunities and supporting local communities, especially in rural areas. •",
+      "It stimulates economic growth: A thriving tourism and hospitality industry can have positive spillover effects on other sectors of the economy, such as transportation, retail, and agriculture. With a 9% VAT rate, the government can help stimulate overall economic growth and increase tax revenues from other sources. •",
+      "It promotes our cultural heritage: A 9% VAT rate can encourage more people to visit and appreciate Ireland's rich cultural heritage, including historical sites, museums, and local festivals. This can help preserve and promote Irish culture and traditions, both domestically and internationally."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2024-ol-q14-c-ii",
+  "topicId": "economics-4-2",
+  "conceptId": "why-exports-matter-2024",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q14(c)(ii)",
+  "questionText": "Outline two reasons why exports are important for the Irish economy.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 @ 6+1 @ 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason exports matter — any two",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Two reasons, the first paid 6 and the second 4.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Exports can help create employment: If exports exceed imports this means increased demand abroad for goods produced in Ireland, leading to increased employment both directly and indirectly from export-oriented firms. •",
+      "Exports increase sales / profits for domestic firms: If exports exceed imports, then this may mean that domestic firms increase their sales/profits by exporting their excess output onto a foreign market / they may generate economies of scale. •",
+      "Exports can increase economic growth: The monies received from exports (injected into the circular flow of income) can lead to increased incomes within the country. •",
+      "Exports can increase the tax returns to the Irish exchequer: Increased economic activity will generate increased tax revenues for the government e.g. VAT / PAYE / CT/ which can be used to fund public services and infrastructure projects. •",
+      "Exports can attract investment: A strong export performance will increase confidence in the Irish economy and may help attract further foreign direct investment (FDI) into Ireland. FDI can lead to job creation, technology transfers, and increased productivity. •",
+      "Exports can lead to specialisation and the benefits of comparative advantage: By focusing on exporting products and services in which Ireland has a comparative advantage, Ireland can efficiently allocate its resources and maximise its overall economic performance. •",
+      "Exports may enhance international relations: A strong export sector can bolster Ireland's international reputation and diplomatic relations, leading to increased cooperation and potential access to new markets."
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2024-ol-q16-a-i",
+  "topicId": "economics-3-5",
+  "conceptId": "why-world-population-grew",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q16(a)(i)",
+  "questionText": "Outline one reason why you think global population has grown so rapidly since 1804.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 9",
+   "answer": 1,
+   "ofParts": 9,
+   "perPart": 9
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason population grew — any one",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "One reason, 9 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 9,
+     "options": [
+      "The birth rate exceeds the death rate: As the birth rate exceeds the death rate there is a natural increase in the world’s population.",
+      "Health care improvements / Increased life expectancy: Advances in health care technology and medicine have led to fewer people dying from illnesses. The discovery and widespread availability of vaccines and antibiotics has meant the elimination of many diseases such as measles and tuberculosis. Advancements in health care and improved standards of living are allowing people live longer.",
+      "Advances in sanitation systems: The implementation of modern sanitation systems and increased awareness of hygiene practices have contributed to a decrease in the spread of deadly diseases.",
+      "Increased agricultural productivity: Improved agricultural practices have led to fewer famines. The adoption of machinery like tractors and combine harvesters have allowed for more efficient and productive farming to sustain much larger numbers of people. Improved fertilisers and pesticides have increased crop protection and yields thereby increasing the supply of food.",
+      "International migration: In the developed regions population growth is largely due to high levels of international migration.",
+      "The industrial Revolution: The shift from agricultural to industrial societies has created new job opportunities, leading to urbanisation and higher standards of living.",
+      "Improved access to education: Widespread access to education and information has led to better family planning and awareness of health practices.",
+      "Increased global interconnectedness: Technological advancements in transportation and communication have facilitated international trade, migration, and the sharing of ideas, further contributing to global population growth.",
+      "Cultural attitudes to the necessity for children: Some countries due to religious / economic factors encourage women to have more children."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2024-ol-q16-a-ii",
+  "topicId": "economics-2-1",
+  "conceptId": "older-workers-returning-to-work",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q16(a)(ii)",
+  "questionText": "Many people over 65 hope to become part of the so-called “unretired”. Outline one effect on the Irish economy if more people over 65 return to work.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 9",
+   "answer": 1,
+   "ofParts": 5,
+   "perPart": 9
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An effect of the unretired — any one",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "One effect, 9 marks. The scheme lists four gains and one cost: more competition for younger workers.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 9,
+     "options": [
+      "Employment levels may rise / Increase in tax revenues: As more individuals over 65 years of age re-join the workforce, we are likely to witness a boost in economic productivity and higher numbers employed.",
+      "The dependency ratio will decrease: With more elderly citizens working, the dependency ratio (the number of those non-working-age individuals relative to those of working-age) will decrease. This will help reduce government expenditure on social protection, leading to improved fiscal sustainability.",
+      "Consumer spending by senior citizens may rise: Older citizens returning to work will have a higher disposable income, leading to higher consumer spending. This can stimulate economic growth and create a positive cycle of demand and production.",
+      "It will transfer skills and knowledge: The “unretired” bring valuable experience, skills, and knowledge to the workforce. This can foster innovation, improve productivity, and maintain institutional memory in organisations.",
+      "It may exert pressure on younger workers and job opportunities: The “unretired” may increase competition for jobs, potentially making it more difficult for younger workers to secure employment or to advance in their careers. This could have negative implications for wage growth and generational wealth disparities."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2024-ol-q16-a-iii",
+  "topicId": "economics-3-1",
+  "conceptId": "ageing-and-the-irish-exchequer",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q16(a)(iii)",
+  "questionText": "Ireland’s population is ageing faster than anywhere else in Europe. Outline one economic effect this will have on the Irish government.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 9",
+   "answer": 1,
+   "ofParts": 5,
+   "perPart": 9
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An effect on the government — any one",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "One effect, 9 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 9,
+     "options": [
+      "Increased costs of pensions: The government must plan to fund for increased pensions into the future i.e. increasing taxation, changing pension entitlements etc.",
+      "Increase demands on the healthcare system: As the population ages the government must plan to provide increasing funding to the healthcare system to deal with its increased use.",
+      "Increased tax revenue: As people age then their level of spending may increase as they may have more discretionary income and revenue from the indirect taxes collected on this spending by a growing population may increase.",
+      "Pressure on provision of state services / on infrastructure: Demand for those services for older people will increase and this may increase demand for the appropriate infrastructure i.e. accommodation; healthcare; care for older people – workforce adapted to their needs etc.",
+      "Possible increased tax burden for those remaining in the workforce: The government may have to plan that funding for the ageing population should be funded from increases in current taxation – which may have the effect of upsetting current taxpayers."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2024-ol-q16-b-i",
+  "topicId": "economics-3-1",
+  "conceptId": "the-risk-in-corporation-tax",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q16(b)(i)",
+  "questionText": "Corporation tax is now the second largest source of tax revenue for Ireland. Outline one possible risk to the Irish economy of this development.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 10",
+   "answer": 1,
+   "ofParts": 3,
+   "perPart": 10
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A risk of the reliance — any one",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "One risk, 10 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 10,
+     "options": [
+      "The risk of CPT being a transitory source of revenue: Relying heavily on corporation tax revenue, which may be transitory by nature, can lead to increased economic volatility in Ireland. Since corporate profits are subject to business cycles and fluctuating global economic conditions, a downturn in the global economy or a specific industry could significantly impact Ireland’s tax revenue, leading to possible budget deficits and potential cutbacks in public spending.",
+      "The risk of changes in global tax policies: International tax policy changes, such as the planned introduction of a global minimum 15% corporate tax rate or other changes in tax treaties, could impact Ireland’s attractiveness as a low-tax jurisdiction. This may result in multinational corporations shifting their profits elsewhere, reducing Ireland’s corporation tax return.",
+      "Concentration risk: Close to 60% of Ireland’s corporation tax revenue comes from just 10 multinational companies, primarily in the tech and pharmaceutical industries. This leaves the Irish economy increasingly vulnerable to shocks affecting those companies or industries. Adverse events, such as corporate scandals, regulatory changes, or industry downturns, could disproportionately impact Ireland’s tax revenue and overall economy."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2024-ol-q16-b-ii-adv",
+  "topicId": "economics-3-1",
+  "conceptId": "raising-corporation-tax-advantage",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q16(b)(ii) — advantage",
+  "questionText": "Ireland’s corporation tax rate rose from 12.5% to 15% as part of a global deal. Outline one possible economic ADVANTAGE of this for Ireland.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 9",
+   "answer": 1,
+   "ofParts": 3,
+   "perPart": 9
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An advantage of the rise — any one",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "One advantage, 9 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 9,
+     "options": [
+      "Raise more revenue for the government: As the rate will increase from 12.5% to 15% this should lead to more revenue for the government •",
+      "Less criticism of Irish CT globally: The CT system in Ireland is regularly criticised internationally so an increase in the rate more in line with other countries should lead to less criticism and improve Ireland’s image abroad. •",
+      "EU harmonisation of taxes: One of the aims of the EU was harmonisation of taxes across EU member states. By increasing the CT rate this is a step in that direction."
+     ]
+    }
+   }
+  ],
+  "notes": "The part asks for one of each and the scheme heads the two lists separately, so each side is its own card."
+ },
+ {
+  "id": "econ-2024-ol-q16-b-ii-dis",
+  "topicId": "economics-3-1",
+  "conceptId": "raising-corporation-tax-disadvantage",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q16(b)(ii) — disadvantage",
+  "questionText": "Ireland’s corporation tax rate rose from 12.5% to 15% as part of a global deal. Outline one possible economic DISADVANTAGE of this for Ireland.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 9",
+   "answer": 1,
+   "ofParts": 3,
+   "perPart": 9
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A disadvantage of the rise — any one",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "One disadvantage, 9 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 9,
+     "options": [
+      "Possibility that some MNCs might relocate: Some of the MNCs might look at relocating their operations in Ireland to another country. •",
+      "Possible loss of revenue to the government: If the MNCs were to relocate then the Irish government would lose out on tax revenue. •",
+      "Impact on jobs: The relocation would have a significant impact on jobs in the Irish economy."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2024-ol-q16-c-i-pos",
+  "topicId": "economics-1-1",
+  "conceptId": "looser-mortgage-rules-positive",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q16(c)(i) — positive",
+  "questionText": "Do you think the new mortgage borrowing rules has a positive or negative effect on first-time home buyers and the Irish housing market? Explain a POSITIVE effect.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 10",
+   "answer": 1,
+   "ofParts": 3,
+   "perPart": 10
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A positive effect — any one",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "One explanation, 10 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 10,
+     "options": [
+      "Homes will become more affordable: The higher borrowing limit will enable first-time buyers to access more funds, which can help them afford homes in a market where prices have been rising. This increased affordability could make it easier for them to enter the housing market. •",
+      "Stimulates housing demand: With more potential buyers able to afford homes, this could stimulate demand for housing, which may in turn encourage developers to build more homes, addressing any supply shortages in the market. •",
+      "Strengthens the economy: Increased activity in the housing market can have positive knock-on effects for the broader economy. For example, higher demand for housing may lead to more construction jobs and increased spending on home furnishings and renovations, which can benefit various industries."
+     ]
+    }
+   }
+  ],
+  "notes": "The part is answered either way and the scheme heads the two lists separately, so each side is its own card."
+ },
+ {
+  "id": "econ-2024-ol-q16-c-i-neg",
+  "topicId": "economics-1-1",
+  "conceptId": "looser-mortgage-rules-negative",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q16(c)(i) — negative",
+  "questionText": "Do you think the new mortgage borrowing rules has a positive or negative effect on first-time home buyers and the Irish housing market? Explain a NEGATIVE effect.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 10",
+   "answer": 1,
+   "ofParts": 6,
+   "perPart": 10
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A negative effect — any one",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "One explanation, 10 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 10,
+     "options": [
+      "Negative effect explanation: •",
+      "Risk of overborrowing and household debt: Allowing first-time buyers to borrow more money may lead to them overborrowing, particularly for those who may not have a clear understanding of their long-term financial capabilities. This could put them at risk of financial stress and difficulty in meeting mortgage repayments, particularly if there is an economic downturn, job losses, or a rise in interest rates, which could make it difficult for borrowers to meet their mortgage obligations. •",
+      "Risk of a housing bubble: The increased borrowing capacity could stimulate demand for housing, potentially pushing prices up. If prices rise too quickly and outpace wage growth, this may exacerbate the housing bubble, which could eventually burst, leading to a sudden decline in house prices and negative equity for homeowners. •",
+      "Inflationary pressure: Higher demand for housing and increased buying power could lead to higher housing prices, further contributing to inflationary pressure in the broader economy. This could lead to further ECB interest rates hikes to curb inflation, which in turn could increase the cost of borrowing and put pressure on homeowners. •",
+      "Reduced affordability for non-first-time buyers: The new rules only benefit first-time home buyers, so they could inadvertently make it more difficult for existing homeowners to upgrade or downsize, as higher demand and increased prices could reduce affordability for these buyers. •",
+      "Social inequality: The new rules may disproportionately benefit higher-income first-time buyers who have the capacity to borrow more, while lower-income individuals and families may still struggle to enter the housing market due to other barriers, such as the inability to save for a deposit. Fintech company, Revolut, now has over two million users in Ireland and is set to enter the mortgage market by offering mortgage loans to Irish consumers. Adapted from rte.ie"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "econ-2024-ol-sa-q1-i",
   "topicId": "economics-0-2",
   "conceptId": "oceans-as-an-economic-resource",
@@ -8775,6 +9663,935 @@
    }
   ],
   "notes": "Abbreviations are not accepted."
+ },
+ {
+  "id": "econ-2025-hl-q11-b-iii-adv",
+  "topicId": "economics-2-0",
+  "conceptId": "monopoly-advantages-for-consumers",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q11(b)(iii) — advantage",
+  "questionText": "Outline one economic advantage for consumers if a pharmaceutical company has monopoly power.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 4",
+   "answer": 1,
+   "ofParts": 5,
+   "perPart": 4
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An advantage to consumers — any one",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One advantage, 4 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Innovation and Research & Development (R&D) – pharmaceutical firms with a monopoly may invest heavily in R&D due to the high profits they earn. This may lead to the development of new and improved medicines that benefit consumers. E.g. Pfizer invested heavily in COVID-19 vaccine development, which led to life-saving innovations.",
+      "Guaranteed supply of essential drugs – a monopoly firm may ensure the consistent supply of critical medications that smaller competitors might struggle to provide.",
+      "Standardised quality and safety – large pharmaceutical monopolies are often heavily regulated and must meet stringent safety and quality standards. This may provide consumers with a level of confidence in the medicine they use, the European Medicines Agency (EMA)",
+      "Potential for economies of scale – large-scale production may reduce the cost of manufacturing drugs. This may lead to lower prices for consumers in the long term.",
+      "Brand trust / reputation – consumers may feel more comfortable using drugs from a well-known monopoly firm rather than an unknown or smaller competitor."
+     ]
+    }
+   }
+  ],
+  "notes": "The part asks for one of each and the scheme heads the two lists separately, so each side is its own card."
+ },
+ {
+  "id": "econ-2025-hl-q11-b-iii-dis",
+  "topicId": "economics-2-0",
+  "conceptId": "monopoly-disadvantages-for-consumers",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q11(b)(iii) — disadvantage",
+  "questionText": "Outline one economic disadvantage for consumers if a pharmaceutical company has monopoly power.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 4",
+   "answer": 1,
+   "ofParts": 5,
+   "perPart": 4
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A disadvantage to consumers — any one",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One disadvantage, 4 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Economic Disadvantage for Consumers: Higher prices – monopoly firms have pricing power. This enables them to charge significantly higher prices for essential medicines, as there is little to no competition.",
+      "Limited consumer choice – consumers may have fewer alternatives to choose from, especially if the monopoly firm has exclusive rights to a specific drug. This may limit access to alternative treatment options.",
+      "Potential for exploitation – a monopoly firm may delay generic drug production or lobby against lower-cost alternatives. This is prioritising profits over public health.",
+      "Reduced incentive to improve drugs / medicines – without competition, there is less pressure to improve drug effectiveness or reduce side effects. This may impede medical advances.",
+      "Risk of supply chain disruptions – if a monopoly firm experiences production issues, consumers may face shortages due to a lack of alternative suppliers. E.g. Many countries recently have faced shortages of Ozempic, a diabetes drug made by Novo Nordisk, due to high global demand and limited production capacity."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2025-hl-q11-c-ii",
+  "topicId": "economics-2-1",
+  "conceptId": "addressing-a-shortage-of-gps",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q11(c)(ii)",
+  "questionText": "More than three-quarters of GP practices in Ireland have closed their lists to new patients. Suggest one economic measure the Irish government could take to address this.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 4",
+   "answer": 1,
+   "ofParts": 9,
+   "perPart": 4
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A measure to ease the GP shortage — any one",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One measure, 4 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Increase funding for GP training and recruitment – expand medical school places and offer more scholarships or grants specifically for GP training. Provide financial incentives, such as student loan forgiveness, for GPs who commit to working in underserved areas.",
+      "Retain GPs by improving working conditions – reduce administrative burdens by funding secretarial staff or investing in digital health infrastructure. Lowering paperwork would allow GPs to focus more on patient care, reducing burnout and increase job satisfaction.",
+      "Attract foreign-trained GPs via a targeted immigration policy – fast-track a visa programme for qualified GPs and streamline the recognition of foreign medical qualifications. Offer incentives such as relocation assistance and competitive salaries to encourage foreign-trained GPs to work in Ireland.",
+      "Encourage GPs to work in rural areas – introduce location-based incentives such as higher salaries or housing allowances for GPs in rural areas. Expand telemedicine services to support GPs working in remote locations.",
+      "Reform GP contracts and working hours – adjust GP contracts to provide better work / life balance, which may make the profession more attractive. Offer part-time or flexible working options to retain more experienced doctors / encourage those who have left to return to the profession i.e. retired",
+      "Expand the role of nurses / pharmacists – the government could expand the roles of nurses / pharmacists to deal with more routine cases. This would free up GPs to focus on more complex patient needs",
+      "Reform medical school entry / training pathways – reduce the reliance on high CAO points for entry into medical courses and introduce more graduate entry routes to attract a diverse range of students. Increase postgraduate GP training places and ensure faster progression from qualification to practice.",
+      "Address GP practice costs and overheads – provide financial support for setting up new GP practices, especially in areas with shortages. Reduce insurance and administrative costs, to make it more financially viable to remain in practice.",
+      "Promote public awareness of GP career opportunities – encourage more students to pursue a career as a GP through targeted school programmes, e.g. talks by local GPs, work experience at a GP practice etc. Raise awareness of a GP career as a rewarding choice by highlighting its crucial role in patient care, continuity of treatment, and community health. The Irish healthcare system reflects Ireland’s broader mixed economy."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2025-hl-q11-c-iii",
+  "topicId": "economics-1-0",
+  "conceptId": "evidence-that-ireland-is-a-mixed-economy",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q11(c)(iii)",
+  "questionText": "Outline an example which shows that Ireland is a mixed economy.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 8",
+   "answer": 1,
+   "ofParts": 4,
+   "perPart": 8
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An example of the mixed economy — any one",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "One example, 8 marks. The part pays the same 8 for explaining the term itself.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 8,
+     "options": [
+      "Education – Ireland’s school system includes both public and private schools. The majority of schools are publicly funded by the State. A small number of schools are privately funded, meaning parents pay full fees.",
+      "Transport – Ireland’s transport sector includes both state-owned and private companies. Dublin Bus is state-owned and operates public transport services. Go-Ahead Ireland is a private company that also runs bus routes in Dublin under contract.",
+      "Energy – the Irish energy sector includes both private firms and a semi-state company. The Electricity Supply Board (ESB) is state-owned and its retail arm, Electric Ireland, competes with private energy providers like SSE Airtricity, Bord Gáis Energy, Energia etc.",
+      "State regulation – the government appoints Regulators and Ombudsmen to private industries to help protect consumers."
+     ]
+    }
+   }
+  ],
+  "notes": "Each example names a sector where the State and private firms both operate — which is what a mixed economy is."
+ },
+ {
+  "id": "econ-2025-hl-q12-a-ii-tax",
+  "topicId": "economics-3-1",
+  "conceptId": "lower-debt-and-the-taxpayer",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q12(a)(ii) — taxpayers",
+  "questionText": "Outline one economic advantage of Ireland reducing its level of general government debt for taxpayers in Ireland.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 7",
+   "answer": 1,
+   "ofParts": 5,
+   "perPart": 7
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An advantage to taxpayers — any one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "One advantage, 7 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "Improved disposable incomes / standard of living – a lower national debt reduces the need for tax increases. As a result, citizens have higher disposable incomes, which improve their standard of living.",
+      "Improved confidence in the economy – with a more stable financial situation, consumers and businesses feel more secure. This may lead to increased spending and investment.",
+      "Economic growth / Boost to the circular flow of income – less money leaving the country for debt repayments means more will stay within Ireland. This boosts domestic economic activity.",
+      "Improved access to public services / infrastructure – lower general government debt means better access to essential services like healthcare, education, housing etc.",
+      "Better pension / social protection security – a government with lower debt is more financially secure. This may reduce the likelihood of future cuts to pensions, social welfare benefits, and supports for vulnerable groups."
+     ]
+    }
+   }
+  ],
+  "notes": "The part asks for one of each and the scheme heads the two lists separately, so each side is its own card."
+ },
+ {
+  "id": "econ-2025-hl-q12-a-ii-gov",
+  "topicId": "economics-3-1",
+  "conceptId": "lower-debt-and-the-exchequer",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q12(a)(ii) — government",
+  "questionText": "Outline one economic advantage of Ireland reducing its level of general government debt for the Irish government.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 7",
+   "answer": 1,
+   "ofParts": 5,
+   "perPart": 7
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An advantage to the government — any one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "One advantage, 7 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "Lower annual interest repayments – a falling national debt means the government spends less on interest payments each year.",
+      "More funds available for public services – with less money used for debt repayments, the government has more to invest in healthcare, education, infrastructure etc.",
+      "Improved international credit rating – a lower debt level signals financial stability, which improves Ireland’s credit rating and makes future borrowing cheaper.",
+      "Greater budget flexibility – the government has more financial freedom / resilience to respond to economic challenges / fund new initiatives / reduce taxes when possible.",
+      "Improved standing in EU / international markets – a lower debt position improves Ireland’s reputation in the EU / in global markets. This may increase investor confidence and attract more foreign direct investment (FDI)."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2025-hl-q12-a-iii",
+  "topicId": "economics-3-0",
+  "conceptId": "why-gni-star-beats-gdp",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q12(a)(iii)",
+  "questionText": "Which is the more accurate measure of Ireland’s debt burden: debt as a percentage of GNI* or debt as a percentage of GDP? Justify your choice.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 6",
+   "answer": 1,
+   "ofParts": 4,
+   "perPart": 6
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A justification — any one",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One justification, 6 marks. Every response the scheme lists argues for GNI*.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "GNI* (Modified Gross National Income) is a better measure of Ireland’s real economic capacity. It removes distortions caused by multinationals and reflects the income that remains in Ireland. This makes it a more accurate gauge of the resources available to repay debt.",
+      "Ireland’s GD is inflated by multinational activity, including intellectual property transfers and aircraft leasing. These activities make the economy appear larger than it actually is because the profits generated often leave the country. As a result, GDP overstates Ireland’s ability to service its debt.",
+      "GDP is the standard measure for international comparisons by the EU / IMF / ECB, but the government often refers to GNI* because it gives a clearer picture of the country's financial position and debt sustainability.",
+      "The debt / GNI* ratio provides a more realistic assessment of Ireland’s financial position. In the chart, the debt / GNI* ratio is significantly higher than the debt / GDP ratio. This shows how much of Ireland’s economic output is driven by MNC activity rather than domestic sources."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2025-hl-q12-b-iii-agree",
+  "topicId": "economics-3-1",
+  "conceptId": "the-case-for-a-higher-top-rate",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q12(b)(iii) — agree",
+  "questionText": "Some politicians are debating a higher rate of income tax on individuals earning above €100,000. Argue that you AGREE.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 8",
+   "answer": 1,
+   "ofParts": 6,
+   "perPart": 8
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason to agree — any one",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "One argument, 8 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 8,
+     "options": [
+      "Progressive taxation – Ireland already uses a progressive tax system, which means higher earners contribute more. Introducing a higher rate for incomes above €100,000 would ensure that those who can afford to pay more, contribute a fairer share.",
+      "Less reliance on indirect / regressive taxes – Ireland relies heavily on indirect taxes like VAT, which disproportionately affect lower-income earners. By increasing income tax on high earners, the government may reduce the need for higher VAT or other indirect tax rates, which would make the tax system fairer for everyone.",
+      "Reduces income inequality – a higher income tax rate on high earners could help reduce income inequality by narrowing the gap between rich and poor through increased redistribution of wealth.",
+      "More sustainable public finances – increased income tax revenue from high earners would provide the government with more funds to invest in infrastructure, social protection, public services without borrowing more / without placing a greater tax burden on low earners.",
+      "International comparisons – some other European countries have higher top income tax rates than Ireland. E.g. Denmark has a top rate of almost 56%, which helps to fund its high-quality public services.",
+      "Addresses cost of living – with a rising cost of living, the government needs more revenue to provide essential services. A higher income tax rate on top earners would allow for better support for lower- and middle-income earners who are struggling with rising costs such as rent and childcare. DISAGREE: sk o ‘ r n r n’ – high-income earners like skilled professionals and entrepreneurs, may leave Ireland for countries with lower income tax rates. This would reduce Ireland’s talent pool and tax base."
+     ]
+    }
+   }
+  ],
+  "notes": "The part is answered either way and the scheme lists the responses for each side, so each side is its own card."
+ },
+ {
+  "id": "econ-2025-hl-q12-b-iii-disagree",
+  "topicId": "economics-3-1",
+  "conceptId": "the-case-against-a-higher-top-rate",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q12(b)(iii) — disagree",
+  "questionText": "Some politicians are debating a higher rate of income tax on individuals earning above €100,000. Argue that you DISAGREE.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 8",
+   "answer": 1,
+   "ofParts": 5,
+   "perPart": 8
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason to disagree — any one",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "One argument, 8 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 8,
+     "options": [
+      "Negative impact on FDI – a higher top tax rate could make Ireland less attractive to skilled workers, entrepreneurs, and executives, which may discourage foreign investment. MNCs need top talent but if high earners face much higher taxes here than elsewhere, businesses may struggle to hire and expand. This may hurt Ireland’s competitiveness and reduce job creation.",
+      "Already high tax burden – Ireland’s top marginal tax rate (income tax + USC + RSI) is already 52% for employees and 55% for the self-employed. A further increase may be seen as unfair and excessive.",
+      "Increased tax avoidance – high-income earners may use tax planning strategies or move income offshore to reduce their tax liability. This may mean the expected increase in tax revenue does not materialise.",
+      "Encourages economic growth – lower tax rates may encourage spending and investment, which leads to job creation and economic growth. Increasing taxes may reduce disposable income and have a negative effect on the economy.",
+      "Punishes hard work and success – higher taxes on top earners may reduce incentives to work harder, take risks, or invest in further education and skills. If worker feel they are losing too much of their income to tax, they may become less motivated to take on extra work, start a business, or innovate. This may hinder economic growth."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2025-hl-q12-c-i-employee",
+  "topicId": "economics-2-1",
+  "conceptId": "auto-enrolment-and-the-employee",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q12(c)(i) — employee",
+  "questionText": "Outline one possible economic advantage to the employee of the auto-enrolment pension scheme.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 7",
+   "answer": 1,
+   "ofParts": 6,
+   "perPart": 7
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An advantage to the employee — any one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "One advantage, 7 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "More pension savings for less contribution – the State contribution boosts the employee’s retirement fund without needing to contribute as much themselves.",
+      "Guaranteed pension savings – many employees do not have a private pension. This scheme ensures they will start saving automatically, which will lead to better financial security in retirement.",
+      "Protection against future income loss – a pension provides financial support after retirement, which reduces the risk of poverty when the employee is no longer earning a salary.",
+      "Easy to use scheme / Encourages good financial habits – the scheme makes it easier for employees to save for retirement without needing to actively sign up or make complex decisions. Since the government manages the scheme, employees do not have to research / choose a private pension provider. This makes long-term saving simpler.",
+      "Portable pension – if an employee changes jobs, their pension savings stay with them. They do not lose their contributions or have to restart a new pension plan.",
+      "Less reliance on the state pension – the state pension alone may not be enough for a comfortable retirement for many employees. This scheme ensures employees have extra savings, which may reduce their financial worries later in life."
+     ]
+    }
+   }
+  ],
+  "notes": "The part asks for one of each and the scheme heads the two lists separately, so each side is its own card."
+ },
+ {
+  "id": "econ-2025-hl-q12-c-i-employer",
+  "topicId": "economics-2-1",
+  "conceptId": "auto-enrolment-and-the-employer",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q12(c)(i) — employer",
+  "questionText": "Outline one possible economic disadvantage to the employer of the auto-enrolment pension scheme.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 7",
+   "answer": 1,
+   "ofParts": 4,
+   "perPart": 7
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A disadvantage to the employer — any one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "One disadvantage, 7 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "Higher business costs – employers must equal the employee contribution. This increases labour costs, which could reduce profits, especially for small businesses.",
+      "Negative impact on hiring / wages – higher costs per employee may lead employers to hire fewer workers or limit wage increases to manage expenses. If businesses cannot afford the extra costs, they may reduce staff numbers or switch to part-time or temporary contracts to lower expenses.",
+      "Administrative burden – employers must handle enrolments, manage pension deductions, and ensure compliance with regulations. This increases their paperwork and associated costs.",
+      "Damages competitiveness – Irish businesses may face higher costs than those in countries without mandatory employer pension contributions. This makes them less competitive."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2025-hl-q12-c-ii",
+  "topicId": "economics-3-0",
+  "conceptId": "pension-saving-and-the-multiplier",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q12(c)(ii)",
+  "questionText": "Discuss how the auto-enrolment pension scheme may influence the multiplier effect in Ireland in the short term.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 7",
+   "answer": 1,
+   "ofParts": 2,
+   "perPart": 7
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A step in the argument — either one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "The scheme’s verdict is that the multiplier gets WEAKER, and the 7 marks are for the mechanism that gets you there.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "As employees must contribute to their pensions, they have less disposable income to spend. The multiplier effect depends on spending, i.e. when citizens spend less, businesses earn less. Since one person’s spending is another person’s income, reduced spending leads to less job creation and slower economic growth. If workers save more through pensions instead of spending, the overall boost to the economy is smaller.",
+      "A lower Marginal Propensity to Consume (MPC) causes the denominator in the multiplier formula to increase. This results in a smaller multiplier effect in Ireland."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2025-hl-q13-a-ii-benefit",
+  "topicId": "economics-4-2",
+  "conceptId": "benefits-of-exporting-2025",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q13(a)(ii) — benefit",
+  "questionText": "Outline one economic benefit of Ireland’s exports for the Irish economy.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 7",
+   "answer": 1,
+   "ofParts": 2,
+   "perPart": 7
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A benefit of exporting — any one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "One benefit, 7 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "Increased national income (GDP / GNP / GNI*) / Injection into national income – exports contribute significantly to Ireland's national income by bringing in foreign revenue. The increase in national income may lead to higher economic growth / improved living standards / increased tax revenues for the government. Job creation – Ireland’s export sector has created a large number of jobs, both directly and indirectly. Increased demand for Irish goods abroad may lead to higher production, which in turn requires more labour and increases employment levels in the country.",
+      "Improvements in innovation and productivity – by competing in global markets, companies in Ireland may need to adopt new technologies and practices. This may lead to greater efficiencies and economies of scale and future long-term economic growth."
+     ]
+    }
+   }
+  ],
+  "notes": "The part asks for one of each and the scheme heads the two lists separately, so each side is its own card."
+ },
+ {
+  "id": "econ-2025-hl-q13-a-ii-challenge",
+  "topicId": "economics-4-2",
+  "conceptId": "challenges-of-an-export-led-economy",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q13(a)(ii) — challenge",
+  "questionText": "Outline one economic challenge of Ireland’s exports for the Irish economy.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 7",
+   "answer": 1,
+   "ofParts": 4,
+   "perPart": 7
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A challenge of exporting — any one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "One challenge, 7 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "Vulnerability to external shocks – Ireland has a highly open economy, which makes it more vulnerable to external economic shocks, e.g. economic fluctuations / wars / trade wars / changes in demand in key export markets etc. A downturn in global markets may lead to reduced demand for Irish exports. This negatively impacts the Irish economy.",
+      "Overreliance on a few sectors – a large share of Ireland's exports is concentrated in a few key sectors, such as pharmaceuticals, ICT, agri-food etc. Such an overreliance on a limited number of industries may cause economic instability, if any of these sectors face difficulties.",
+      "Fluctuations in euro exchange rates – as an export-led economy, Irish exporting companies are exposed to risks associated with euro exchange rate fluctuations. A stronger / appreciating euro makes Irish exports more expensive / less competitive in international markets.",
+      "Environmental impact – increasing production levels in order to export may lead to environmental damage, e.g. higher carbon emissions / resource depletion. The pressure to maintain export levels may conflict with Ireland's Climate Action Plan. Ireland is now the ninth-largest contributor of foreign direct investment (FDI) into the US. Adapted from the Sunday Independent"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2025-hl-q13-a-iii",
+  "topicId": "economics-4-1",
+  "conceptId": "why-outward-fdi-matters",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q13(a)(iii)",
+  "questionText": "Ireland is the ninth-largest contributor of foreign direct investment into the US. Outline one economic reason why such outflows of FDI are important for the Irish economy.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 7",
+   "answer": 1,
+   "ofParts": 7,
+   "perPart": 7
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason outward FDI matters — any one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "One reason, 7 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "Spreads economic risk – investing in the US reduces Irish companies' reliance on the Irish market. This diversification protects Ireland's economy from economic downturns and makes it more resilient.",
+      "Boosts national Income – profits earned by Irish companies abroad are often repatriated to Ireland. These earnings contribute to Ireland's GNP and GNI* (not GDP), as they originate from overseas activities. When these profits are repatriated, they contribute to Ireland’s overall economic wellbeing by increasing national income and may increase government tax revenues.",
+      "Boosts balance of payments – outward FDI can positively impact Ireland’s balance of payments by generating inflows when profits from foreign investments are repatriated. These inflows strengthen the current account by offsetting Ireland’s high reliance on foreign MNCs sending their profits abroad.",
+      "Gain in skills and knowledge – Irish companies operating in the US gain new skills / technologies / knowledge. These may be applied in Ireland to improve productivity, innovation, and competitiveness.",
+      "Strengthens trade / investment links – Irish investments in the US help deepen economic relations between the two countries, which may make Ireland a more attractive destination for US investment. This may facilitate trade deals, open new export opportunities for Irish firms, and encourage reciprocal investment in Irish industries.",
+      "Improves Irish business competitiveness – exposure to international markets forces Irish firms to compete globally, which improves their efficiency and innovation. Competing in large economies like the US may allow Irish firms to scale up, achieve economies of scale, and develop world-class brands that may later expand into other international markets.",
+      "Avoids trade barriers – if US protectionist policies continue, Irish firms, that rely on exports to the US, may struggle due to tariffs or other trade restrictions. These firms can bypass such barriers and continue to grow by locating directly in the US. This helps ensure their profitability and stability. It also secures long-term access to the US market, which is crucial as the US is one of Ireland’s largest trading partners."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2025-hl-q13-b-iii",
+  "topicId": "economics-4-2",
+  "conceptId": "functions-of-the-wto",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q13(b)(iii)",
+  "questionText": "The World Trade Organisation (WTO) plays a crucial role in global trade. Outline one function of the WTO.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 6",
+   "answer": 1,
+   "ofParts": 6,
+   "perPart": 6
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A function of the WTO — any one",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One function, 6 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Facilitates trade negotiations – the WTO’s most important role is to help countries negotiate trade agreements. These deals aim to reduce barriers such as tariffs and quotas, which make trade easier and more efficient. By promoting free and fair trade, these agreements help economies grow and strengthen international relations.",
+      "Resolves trade disputes – when countries disagree on trade issues, the WTO acts as a neutral mediator to settle disputes. This prevents conflicts from escalating into trade wars, which could damage the global economy. The WTO’s dispute resolution process ensures that all members follow the agreed rules by creating a more stable trading environment.",
+      "Monitors trade practices – the WTO regularly reviews and decides whether countries are following their trade commitments. This monitoring promotes transparency and builds trust among member states because every country knows that the trade rules are being enforced fairly.",
+      "Provides support to developing countries – the WTO helps poorer nations improve their ability to trade by offering them training, advice, and technical assistance. This support allows developing countries to trade more effectively / to benefit from the economic opportunities the WTO agreements create.",
+      "Promotes transparency in global trade – the WTO requires members to publish their trade policies and practices. This transparency reduces uncertainty, prevents unfair practices, and allows businesses to operate with more confidence in international markets.",
+      "Encourages economic cooperation / stability – the WTO helps to prevent economic tensions from escalating into serious disputes by providing a forum for governments to discuss trade issues and resolve conflicts. Such stability is crucial for global economic growth and investment."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2025-hl-q13-c-i",
+  "topicId": "economics-4-0",
+  "conceptId": "why-ireland-misses-the-aid-target",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q13(c)(i)",
+  "questionText": "Outline one possible economic reason for the Irish government failing to reach the UN target for overseas development aid.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 7",
+   "answer": 1,
+   "ofParts": 7,
+   "perPart": 7
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason the target was missed — any one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "One reason, 7 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "Competing domestic priorities – the government may have prioritised spending elsewhere on healthcare, housing, infrastructure, education, or social protection, especially given the rising costs in these sectors. Increased public sector wages may reduce the budget available for foreign aid. The cost of living crisis may pressure the government to prioritise direct support for Irish citizens.",
+      "Economic uncertainty / Budget constraints – global or domestic economic downturns may reduce government revenue and lead to more cautious government expenditure. Concerns over future economic shocks / unforeseen crises, such as increased geopolitical instability, may lead to more conservative fiscal policies.",
+      "Public debt / fiscal rules – despite Ireland’s strong economic growth, it has public debt obligations that require careful management. The EU’s Stability and Growth act encourages fiscal discipline, which may limit budget flexibility.",
+      "Dependency on corporate tax revenue – Ireland’s economy relies heavily on corporate tax revenue. Any uncertainty in this sector may lead the government to avoid increases in discretionary spending like ODA.",
+      "Prioritising humanitarian aid over a fixed target – Ireland may choose to respond flexibly to global crises (e.g. Ukraine, Gaza, natural disasters etc.), instead of focusing solely on meeting a percentage target. This approach may mean that aid levels vary annually rather than always strictly hitting 0.70% of GNI.",
+      "EU contributions count as aid – Ireland contributes to the EU budget, which funds development projects in poorer countries. Some of this spending may already be supporting international aid indirectly, even if it’s not counted in Ireland’s national OD total.",
+      "Shift in political priorities – political considerations may cause the government to focus more on the Irish economy rather than increasing foreign aid commitments. The government may have to balance priorities based on public expectations and political realities."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2025-hl-q13-c-ii",
+  "topicId": "economics-4-0",
+  "conceptId": "what-overseas-aid-does-for-ldcs",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q13(c)(ii)",
+  "questionText": "Outline one possible economic benefit that Ireland’s overseas development aid provides to least developed countries.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 7",
+   "answer": 1,
+   "ofParts": 6,
+   "perPart": 7
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A benefit to the recipient — any one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "One benefit, 7 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "Reduces extreme poverty – Ireland’s OD provides vital resources such as food, clean water, and healthcare to the poorest communities in LDCs. This direct assistance helps lift people out of extreme poverty, improves their quality of life and creates a basis for sustainable economic growth.",
+      "Develops infrastructure – ODA funds the construction and improvement of essential infrastructure in LDCs, such as roads / schools / hospitals etc. Better infrastructure helps economic activities, supports trade, and attracts investment, all of which contribute to economic stability and growth.",
+      "Develops education / skills – Ireland’s OD helps fund education in LDCs. This helps to build a more skilled workforce. Improved education increases productivity and gives citizens in LDCs better opportunities to contribute to their economies.",
+      "Improves healthcare – ODA funds healthcare initiatives, such as vaccination programmes and disease prevention efforts. Healthier populations are more productive and have lower healthcare costs. This allows for more resources to be invested in economic development.",
+      "Diversifies economies / Improves trade – Ireland’s OD helps LDCs to develop new industries and to access international markets. By diversifying their economies, LDCs may reduce dependence on a single export and improve their trade balance. This may lead to more stable economic growth.",
+      "Improves government / Reduces corruption – economic development of LDCs is often hindered by weak governments and ineffective government systems. Irish ODA helps build stronger legal, financial, and political systems, which are crucial for attracting investment, enforcing property rights, and reducing corruption."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2025-hl-q13-c-iii",
+  "topicId": "economics-4-0",
+  "conceptId": "the-cost-of-aid-dependence",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q13(c)(iii)",
+  "questionText": "Outline one challenge for least developed countries that have become dependent on international aid.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 7",
+   "answer": 1,
+   "ofParts": 7,
+   "perPart": 7
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A cost of aid dependence — any one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "One challenge, 7 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "Lack of economic development – when an LDC becomes overly reliant on ODA, it prevents the development of a self-sustaining economy. LDC governments may focus on securing aid rather than fostering local industries and entrepreneurship. E.g. Malawi has struggled to develop its agricultural sector possibly due to continuous food aid, which may discourage investment in domestic farming.",
+      "Distorted market – large amounts of foreign aid may disrupt local markets by undermining domestic producers. If free or heavily subsidised goods flood the market, local producers will struggle to compete. This weakens domestic industries and leads to long-term economic imbalances. E.g. in Haiti, free rice imports from the U.S. have significantly reduced demand for locally grown rice, which harms Haitian rice farmers.",
+      "Loss of autonomy – international aid often comes with specific economic conditions imposed by donor countries / NGOs. The conditions may not align with the country’s economic priorities and may limit government control over economic policies. E.g. some International Monetary Fund (IMF) loans to LDCs require austerity measures to reduce public services, even when the cuts hinder economic development.",
+      "Weakened government – a prolonged reliance on aid weakens government institutions by making them more accountable to donors than their own citizens. This may result in poor economic planning and increased corruption, as aid funds are not always managed transparently. E.g. in South Sudan, large amounts of financial aid have been lost due to corruption, rather than being used for development.",
+      "Aid volatility / uncertainty – international aid is often unpredictable, as it depends on the economic and political priorities of donor countries. If aid is suddenly reduced or withdrawn, LDCs may struggle to sustain vital projects in healthcare, education, or infrastructure. E.g. The US government froze many USAID funds to LDCs in February 2025.",
+      "Erosion of local culture / local practices – when LDCs rely heavily on foreign aid, donor- driven policies may weaken local traditions. For example, some Western-funded education programmes in African LDCs promoted English and French as the primary teaching languages, replacing indigenous languages. This eroded cultural heritage and highlighted a dependence on foreign education models instead of developing locally-led ones.",
+      "Limited impact on structural issues – foreign aid often addresses short-term needs like food, healthcare, and education but neglects deeper problems such as governance, land reform, and legal systems. This keeps LDCs reliant on aid, as corruption, weak institutions, and poor infrastructure persist. E.g. despite decades of foreign aid, the Democratic Republic of Congo still struggles with poor governance and underdeveloped infrastructure."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2025-hl-q14-a-iii-agri",
+  "topicId": "economics-1-2",
+  "conceptId": "technology-in-irish-agriculture",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q14(a)(iii) — agriculture",
+  "questionText": "Outline one way changes in technology may affect how the agriculture sector operates.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 5",
+   "answer": 1,
+   "ofParts": 6,
+   "perPart": 5
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A way technology changes farming — any one",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One way, 5 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Precision farming – technologies like GPS and drones enable farmers to monitor crop health, optimise planting patterns, and apply fertilisers or pesticides more precisely. This reduces waste and costs, which improves the competitiveness of Irish agriculture.",
+      "Reduced labour costs / Higher output – automated machinery (like robotic milking systems) may reduce labour costs / increase productivity / streamline operations, which leads to higher profitability.",
+      "Improved market access – technology may enable more environmentally friendly farming to occur, e.g. by adopting methane-reducing cattle feed Irish farmers may better meet environmental standards and access export markets / avoid penalties under climate agreements.",
+      "Data analytics / AI – software can help farmers to better track weather patterns / soil conditions / livestock health. This may lead to better decision making / higher output, which improves competitiveness. Use of apps – farmers may pool resources through apps such as WhatsApp to share equipment, labour, and transport, in order to reduce costs, which is crucial for a market economy.",
+      "Use of renewable energy – by integrating renewable energy (e.g. solar panels), farms may reduce operational costs / generate additional income by selling excess energy back to the grid. This improves Ireland's agricultural competitiveness.",
+      "Use of genetic engineering – advances in genetics help to improve livestock breeds and crop varieties. This reduces input costs and boosts Ireland’s agricultural productivity / reputation in both domestic and export markets."
+     ]
+    }
+   }
+  ],
+  "notes": "The part offers agriculture or sport and the scheme heads the two lists separately, so each sector is its own card."
+ },
+ {
+  "id": "econ-2025-hl-q14-a-iii-sport",
+  "topicId": "economics-1-2",
+  "conceptId": "technology-in-sport-and-fitness",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q14(a)(iii) — sport",
+  "questionText": "Outline one way changes in technology may affect how the sports and fitness sector operates.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 5",
+   "answer": 1,
+   "ofParts": 5,
+   "perPart": 5
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A way technology changes sport — any one",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One way, 5 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Sports & Fitness: Wearable tech – fitness trackers and smartwatches encourage consumer interest in fitness. It drives consumer demand for fitness-related products and services / increases revenue for manufacturers of wearables and associated apps.",
+      "Performance analytics – advanced data tools, such as video analysis and GPS tracking, may help athletes and sports teams to optimise performance. This supports industries that provide such tools / creates demand for skilled jobs in technology and sports science.",
+      "Online fitness platforms – virtual workout classes and apps allow people to exercise at home. This expands access to fitness options across Ireland, particularly in rural areas. They may lead to new revenue streams for trainers, app developers, and related services.",
+      "Eco-friendly facilities – by adopting smart technologies and renewable energy, sports facilities may reduce operational costs, attract eco-conscious consumers, and enhance their profitability. This contributes to Ireland’s market economy. Social media – social media apps like Instagram and TikTok allow gyms and sports clubs to market themselves more effectively by reaching a wider audience. This may increase membership / sponsorship deals. Economic activity generated by social media marketing is clear and measurable.",
+      "Esports development – the rise of esports has created opportunities for game developers, event organisers, and professional players. Platforms like Twitch and YouTube Gaming allow gamers to earn income through ad revenue, sponsorships, and donations. More young people are engaging with digital sports rather than traditional physical sports."
+     ]
+    }
+   }
+  ],
+  "notes": ""
  },
  {
   "id": "econ-2025-hl-sa-q1-a-for",
