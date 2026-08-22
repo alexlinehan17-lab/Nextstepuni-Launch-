@@ -12339,5 +12339,32 @@
   "year": 2021,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "agricultural-science-2021-HL-paper-p27-art": {
+  "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-HL-paper-p27-art.png",
+  "md5": "622c7059370ea1aafcee28f84f477d43",
+  "alt": "Four colour photographs of livestock in a row, each with a bold capital letter above it. A: a sheep standing side-on on grass with a dense cream fleece and a solid black face, ears and legs, a wire fence behind. B: a heavily built bull side-on, deep brown-roan with a paler flecked coat and a haltered head turned toward the camera, hedging behind. C: a heavily muscled bull side-on with a white coat broken by large blue-grey and black patches, a rosette at its shoulder and a show ring behind. D: a sheep standing side-on with a thick pale cream fleece, a clean white face and short white legs, trees behind.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q14(b)(i)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Agricultural Science 2021 Higher Level — © State Examinations Commission"
+ },
+ "agricultural-science-2021-OL-paper-p11-art": {
+  "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p11-art.png",
+  "md5": "49c92bffa7cbe4ebb54c5ae5fefd29cf",
+  "alt": "A single warning sign: an upright equilateral triangle with a thick black border and a bright yellow field, containing a black silhouette of a tractor seen from the side with a cab, a large rear wheel and a smaller front wheel. No words appear on the sign.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q8(b)(i)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission"
  }
 }

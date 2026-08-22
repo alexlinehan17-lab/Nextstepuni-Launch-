@@ -51,4 +51,11 @@ A.card(12, 'a', topic='agsci-4-1', concept='identifying-cattle-and-sheep-breeds'
                'question itself is the sentence before them, and the card carries the '
                'plate separately.')
 
+# ── Q8(b)(i): the farm safety sign ────────────────────────────────────────
+# A re-crop: the sign sits beside its own answer box, and the box is a drawing,
+# so the extracted extent spanned both and was catalogued as truncated.
+A.card(8, 'b', 'i', topic='agsci-1-5', concept='reading-a-farm-safety-sign',
+       use=[[0, 1]], marks=[2],
+       figure='agricultural-science-2021-OL-paper-p11-art')
+
 A.emit()

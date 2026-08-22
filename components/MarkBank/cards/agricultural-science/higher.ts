@@ -6919,6 +6919,37 @@ export const CARDS: SecCard[] = [
     ],
   } as SecCard,
   {
+    ...base, kind: "diagram",
+    year: 2021, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
+    id: "agsci-2021-hl-q14bi", topicId: "agsci-4-1", conceptId: "identifying-cattle-and-sheep-breeds",
+    section: "B", questionRef: "2021 HL Q14(b)(i)",
+    stem: "1. 2. Name of breed",
+    questionText: "Identify each of the following cattle and sheep breeds.",
+    tariffModel: {"kind":"fixed","notation":"4(1)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A = Suffolk", marks: 1 },
+    { id: "r-2", kind: "point", verbatim: "B = Shorthorn", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "C = Belgian blue", marks: 1 },
+    { id: "r-4", kind: "point", verbatim: "D = Texel", marks: 1 },
+    ],
+    figure: {
+          "candId": "agricultural-science-2021-HL-paper-p27-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-HL-paper-p27-art.png",
+          "srcHash": "622c7059370ea1aafcee28f84f477d43",
+          "alt": "Four colour photographs of livestock in a row, each with a bold capital letter above it. A: a sheep standing side-on on grass with a dense cream fleece and a solid black face, ears and legs, a wire fence behind. B: a heavily built bull side-on, deep brown-roan with a paler flecked coat and a haltered head turned toward the camera, hedging behind. C: a heavily muscled bull side-on with a white coat broken by large blue-grey and black patches, a rosette at its shoulder and a show ring behind. D: a sheep standing side-on with a thick pale cream fleece, a clean white face and short white legs, trees behind.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C",
+                "D"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Suffolk","askedInThisQuestion":true},{"letter":"B","meaning":"Shorthorn","askedInThisQuestion":true},{"letter":"C","meaning":"Belgian blue","askedInThisQuestion":true},{"letter":"D","meaning":"Texel","askedInThisQuestion":true}],
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2022, level: "higher",
     paperFileid: "LC024ALP000EV",

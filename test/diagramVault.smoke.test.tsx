@@ -19,6 +19,10 @@ describe('Diagram Vault', () => {
     for (const s of subs) expect(diagramsForSubject(s.id).length).toBeGreaterThan(0);
   });
 
+  // Renders every Biology tile in the vault — a hundred and nineteen of them —
+  // so it takes about thirty seconds on its own and longer under the rest of the
+  // suite. It was failing intermittently on the default timeout for that reason
+  // and nothing else.
   test('renders the picker, then a subject’s figures with source + description toggle', () => {
     render(<DiagramVault studentSubjects={['Biology']} />);
     // Level 0 — the tool heading and the picker.
@@ -35,5 +39,5 @@ describe('Diagram Vault', () => {
     expect(toggle).toHaveAttribute('aria-expanded', 'false');
     fireEvent.click(toggle);
     expect(within(toggle.closest('figure')!).getByText(/Hide description/i)).toBeInTheDocument();
-  });
+  }, 120_000);
 });

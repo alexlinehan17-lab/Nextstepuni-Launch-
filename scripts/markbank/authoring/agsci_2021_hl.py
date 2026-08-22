@@ -96,4 +96,14 @@ A.card(15, 'b', 'iv', topic='agsci-3-2', concept='what-the-fertiliser-trial-show
        notes='The scheme asks for three recommendations and lists five, and requires each '
              'to be backed by evidence from the graph.')
 
+# ── Q14(b)(i): the breed plate ────────────────────────────────────────────
+# Four photographs, each lettered, one mark each. The figure is a re-crop: the
+# raster extractions of page 27 were both catalogued as truncated.
+A.card(14, 'b', 'i', topic='agsci-4-1', concept='identifying-cattle-and-sheep-breeds',
+       use=[0, 1, 2, 3], marks=[1, 1, 1, 1], notation='4(1)',
+       figure='agricultural-science-2021-HL-paper-p27-art',
+       labels={'A': 'Suffolk', 'B': 'Shorthorn', 'C': 'Belgian blue', 'D': 'Texel'},
+       notes='Unlike the Ordinary Level plate the same year, this question prints no '
+             'word bank — the breeds are expected from knowledge.')
+
 A.emit()

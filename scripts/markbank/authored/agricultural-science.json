@@ -33328,6 +33328,73 @@
   "notes": "The scheme asks for three recommendations and lists five, and requires each to be backed by evidence from the graph."
  },
  {
+  "id": "agsci-2021-hl-q14bi",
+  "topicId": "agsci-4-1",
+  "conceptId": "identifying-cattle-and-sheep-breeds",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2021 HL Q14(b)(i)",
+  "questionText": "Identify each of the following cattle and sheep breeds.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4(1)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A = Suffolk",
+    "marks": 1
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B = Shorthorn",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C = Belgian blue",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "D = Texel",
+    "marks": 1
+   }
+  ],
+  "stem": "1. 2. Name of breed",
+  "notes": "Unlike the Ordinary Level plate the same year, this question prints no word bank — the breeds are expected from knowledge.",
+  "figureKey": "agricultural-science-2021-HL-paper-p27-art",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Suffolk",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Shorthorn",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Belgian blue",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "D",
+    "meaning": "Texel",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
   "id": "agsci-2021-ol-q4b",
   "topicId": "agsci-2-1",
   "conceptId": "uses-of-a-brown-earth-soil",
@@ -33447,6 +33514,33 @@
    }
   ],
   "figureKey": "agricultural-science-2021-OL-paper-p16-art"
+ },
+ {
+  "id": "agsci-2021-ol-q8bi",
+  "topicId": "agsci-1-5",
+  "conceptId": "reading-a-farm-safety-sign",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2021 OL Q8(b)(i)",
+  "questionText": "Explain this farm safety sign.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Caution farm machinery",
+    "marks": 2,
+    "accepts": [
+     "beware of moving machinery"
+    ]
+   }
+  ],
+  "figureKey": "agricultural-science-2021-OL-paper-p11-art"
  },
  {
   "id": "agsci-2022-hl-q16ci",

@@ -200,6 +200,11 @@ describe('Academic Journey scoring model', () => {
     expect(ROUTE_RESOLVERS.__SYSTEM_MASTERY_CHECK__({ ...INITIAL_GAME_STATE, systemSavvy: 70 })).toBe('SYSTEM_MASTERY');
   });
 
+  // Ten thousand seeded runs of the whole scene graph. It takes about 15
+  // seconds on an idle machine and comfortably more than the 30-second default
+  // when the suite is running it alongside everything else, so it fails
+  // intermittently rather than for any reason in the code. The timeout says
+  // what the test actually needs instead.
   test('completes varied seeded journeys without the old energy collapse or score saturation', () => {
     const random = seededRandom(20260814);
     const endings = new Map<string, number>();
@@ -255,5 +260,5 @@ describe('Academic Journey scoring model', () => {
     expect(lowEnergyShare).toBeLessThan(0.45);
     expect(Math.max(...capabilityScores)).toBeLessThanOrEqual(90);
     expect(capabilityScores.filter(value => value >= 95)).toHaveLength(0);
-  });
+  }, 120_000);
 });

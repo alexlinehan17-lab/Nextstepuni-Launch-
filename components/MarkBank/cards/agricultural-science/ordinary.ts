@@ -6572,6 +6572,27 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q8bi", topicId: "agsci-1-5", conceptId: "reading-a-farm-safety-sign",
+    section: "A", questionRef: "2021 OL Q8(b)(i)",
+    questionText: "Explain this farm safety sign.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Caution farm machinery", marks: 2, accepts: ["beware of moving machinery"] },
+    ],
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p11-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p11-art.png",
+          "srcHash": "49c92bffa7cbe4ebb54c5ae5fefd29cf",
+          "alt": "A single warning sign: an upright equilateral triangle with a thick black border and a bright yellow field, containing a black silhouette of a tractor seen from the side with a cab, a large rear wheel and a smaller front wheel. No words appear on the sign.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2022, level: "ordinary",
     paperFileid: "LC024GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",

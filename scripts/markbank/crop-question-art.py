@@ -142,6 +142,18 @@ def main() -> int:
              "question. Read the page with a block dump to find the y to cut at.",
     )
     ap.add_argument(
+        "--left", type=float, default=None,
+        help="cut the crop at this x on the page, in points, instead of at the left "
+             "edge of the artwork. The 2021 Ordinary Level farm safety sign sits to the "
+             "right of its own answer box, and the answer box is a drawing, so the "
+             "computed extent spans both.",
+    )
+    ap.add_argument(
+        "--right", type=float, default=None,
+        help="cut the crop at this x on the page, in points, instead of at the right "
+             "edge of the artwork.",
+    )
+    ap.add_argument(
         "--ignore-rules",
         action="store_true",
         help="drop flat rules (underlined words) from the artwork extent. Opt-in, "
@@ -161,8 +173,9 @@ def main() -> int:
     # Keep the attribution the SEC prints beneath each symbol.
     bottom = (args.bottom if args.bottom is not None
               else box.y1 + PAD * 2.5 + args.pad_bottom)
-    box = fitz.Rect(box.x0 - PAD, box.y0 - PAD - args.pad_top,
-                    box.x1 + PAD, bottom) & page.rect
+    left = args.left if args.left is not None else box.x0 - PAD
+    right = args.right if args.right is not None else box.x1 + PAD
+    box = fitz.Rect(left, box.y0 - PAD - args.pad_top, right, bottom) & page.rect
     pix = page.get_pixmap(clip=box, matrix=fitz.Matrix(args.scale, args.scale))
     args.out.parent.mkdir(parents=True, exist_ok=True)
     pix.save(args.out)
