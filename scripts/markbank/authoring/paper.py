@@ -143,13 +143,25 @@ class Paper:
         for text in self._all_blocks():
             m = QHEAD.match(text)
             if m:
-                q = int(m.group(1) or m.group(2))
-                letter, roman, open_key = None, None, None
-                self.stems.setdefault((q, None), [])
-                rest = text[m.end():].strip()
-                if rest and not RUBRIC.match(rest):
-                    self.stems[(q, None)].append(rest)
-                continue
+                found = int(m.group(1) or m.group(2))
+                # A paper's questions ascend. A bare number that goes backwards
+                # is a numbered line inside the question being read, not a new
+                # question — 2025 OL Biology sets a numbered list inside Q15 and
+                # the "2." in it threw every part after it back under Q2, where
+                # coverage then reported them as gaps though they were carded
+                # all along. The spelled-out form is trusted either way, since
+                # nothing else prints "Question 2" mid-answer.
+                spelled_out = m.group(1) is not None
+                if not spelled_out and q is not None and found <= q:
+                    pass
+                else:
+                    q = found
+                    letter, roman, open_key = None, None, None
+                    self.stems.setdefault((q, None), [])
+                    rest = text[m.end():].strip()
+                    if rest and not RUBRIC.match(rest):
+                        self.stems[(q, None)].append(rest)
+                    continue
             if q is None:
                 continue
             if RUBRIC.match(text):
