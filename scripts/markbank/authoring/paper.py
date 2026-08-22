@@ -68,6 +68,26 @@ def papers_dir(subject):
 # Agricultural Science and Economics print "Question 4", Chemistry and Physics
 # print "4." straight into the text. The bare form is anchored on a following
 # capital or bracket so it cannot match a numbered answer line or a figure.
+# A section rubric and the first question head can be set in one block, and the
+# head is then invisible because QHEAD anchors at the start. Chemistry 2021 HL
+# lost Questions 1 and 4 that way, Physics 2021 HL lost 1 and 6, Business and
+# Home Economics lost Question 1 — whole questions, not parts. The head is only
+# taken when a full stop ends the rubric immediately before it, so that a rubric
+# reading "one question from questions 2, 3, 4 and 5." does not hand back a 5.
+# A question head can also sit part-way down a block, behind the tail of the
+# question before it: on page 8 of 2021 Higher Level Chemistry, "7. (a) Define
+# an acid" runs on from the end of Question 6(d) inside one block, and splitting
+# on part markers alone stranded the "7." at the end of Question 6. The head must
+# follow a closed sentence AND introduce a part, which is what separates it from
+# a figure caption or a numbered line; the caller then requires the number to be
+# one the paper is actually due.
+INLINE_QHEAD = re.compile(r'(?<=[.)?:])\s+(?=\d{1,2}\.\s+\((?:[a-h]|i{1,3}|iv|vi{0,3})\))')
+
+RUBRIC_HEAD = re.compile(
+    r'^(?:(?:SECTION|Section)\s+[A-D]\b'
+    r'|Answer\s+(?:any\s+)?[\w\-]+\s+questions?\b)'
+    r'.*?\.\s+(?=\d{1,2}\.\s+[A-Z(])', re.S)
+
 QHEAD = re.compile(r'^(?:Question\s+(\d{1,2})\b|(\d{1,2})\.\s+(?=[A-Z(]))')
 MARKER = re.compile(r'^\(([a-z]{1,4})\)\s*')
 LETTER = re.compile(r'[a-h]')
@@ -142,26 +162,41 @@ class Paper:
         open_key = None          # the part a continuation block may extend
         for text in self._all_blocks():
             m = QHEAD.match(text)
+            if not m:
+                unrubriced = RUBRIC_HEAD.sub('', text, count=1)
+                if unrubriced != text:
+                    text = unrubriced
+                    m = QHEAD.match(text)
             if m:
                 found = int(m.group(1) or m.group(2))
-                # A paper's questions ascend. A bare number that goes backwards
-                # is a numbered line inside the question being read, not a new
-                # question — 2025 OL Biology sets a numbered list inside Q15 and
-                # the "2." in it threw every part after it back under Q2, where
-                # coverage then reported them as gaps though they were carded
-                # all along. The spelled-out form is trusted either way, since
-                # nothing else prints "Question 2" mid-answer.
-                spelled_out = m.group(1) is not None
-                if not spelled_out and q is not None and found <= q:
+                # Questions run forward, and a head that jumps too far ahead
+                # is something else that looks like one. Three failures, all in
+                # Biology: a numbered list inside 2025 OL Question 15 starts at
+                # "2." and threw every part after it back under Question 2; the
+                # 2021 HL experiment write-up numbers its own sub-questions 2 to
+                # 4; and the second booklet of that paper opens with a contents
+                # page reading "Question 14" to "Question 17", which claimed
+                # those numbers before the real heads reached them and cost six
+                # questions. Backwards is always wrong; the gap allows for a
+                # question this parser missed and for a paper that resumes at 11
+                # after a Section A ending at 8.
+                if q is not None and not (q < found <= q + 3):
                     pass
                 else:
                     q = found
                     letter, roman, open_key = None, None, None
                     self.stems.setdefault((q, None), [])
                     rest = text[m.end():].strip()
-                    if rest and not RUBRIC.match(rest):
-                        self.stems[(q, None)].append(rest)
-                    continue
+                    if rest and _leading(rest)[:2] != (None, None):
+                        # "7. (a) Define an acid ..." — the head is welded to its
+                        # own first part, and filing that as stimulus prose loses
+                        # the part: 2021 HL Chemistry read Question 7(a) as stem
+                        # and then hung (i) and (ii) off no letter at all.
+                        text = rest
+                    else:
+                        if rest and not RUBRIC.match(rest):
+                            self.stems[(q, None)].append(rest)
+                        continue
             if q is None:
                 continue
             if RUBRIC.match(text):
@@ -209,7 +244,11 @@ class Paper:
         Agricultural Science lost the parts underneath every ruled answer box.
         """
         for path in self.files:
-            for text in _blocks(path):
+            for block in _blocks(path):
+              for text in INLINE_QHEAD.split(block):
+                text = text.strip()
+                if not text:
+                    continue
                 head = re.match(r'(\d{1,2}\.)\s+(?=\()', text)
                 prefix = ''
                 if head:
