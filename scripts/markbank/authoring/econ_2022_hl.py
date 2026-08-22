@@ -149,4 +149,111 @@ P.cards.append(card(
           'Two reasons, the first paid 8 and the second 4.', steps=[8, 4])],
     '', tariff_kind='fixed'))
 
+
+# ── Section B, second pass ──────────────────────────────────────────────────
+SIDES3 = ('The part asks for one of each and the scheme heads the two lists separately, so each '
+          'side is its own card.')
+
+P.menu('opportunity cost involved in the above government expenditure',
+       'econ-2022-hl-q11-c-ii', 'economics-0-1', 'opportunity-cost-of-transport-spending',
+       'Outline one opportunity cost involved in government expenditure on transport, using an '
+       'example to illustrate your answer.',
+       'The opportunity cost, with an example',
+       'One point, 5 marks. The spending is capital, so the example must be capital spending '
+       'forgone — a hospital or a school, not a wage bill.',
+       ref='2022 HL Q11(c)(ii)', claim=1, per=5,
+       drop=SCAFFOLD + ('transport, using an example',))
+
+P.menu('privatise a semi-state body instead of deregulation', 'econ-2022-hl-q12-a-iv',
+       'economics-1-3', 'why-privatise-rather-than-deregulate',
+       'Outline one reason why a government may choose to privatise a semi-state body instead of '
+       'deregulation.',
+       'A reason to privatise — any one',
+       'One reason, 5 marks.',
+       ref='2022 HL Q12(a)(iv)', claim=1, per=5,
+       drop=SCAFFOLD + ('Outline one reason why a government may choose',))
+
+P.menu('best described as a State Monopoly', 'econ-2022-hl-q12-b-i-monopoly',
+       'economics-2-0', 'advantages-of-a-state-monopoly',
+       'The 2005 electricity market is best described as a State Monopoly. Outline one advantage '
+       'of that market structure.',
+       'An advantage of monopoly — any one',
+       'One advantage, 5 marks.',
+       ref='2022 HL Q12(b)(i) — monopoly', claim=1, per=5,
+       drop=SCAFFOLD, stop='Stability in prices', notes=SIDES3)
+
+P.menu('best described as a State Monopoly', 'econ-2022-hl-q12-b-i-oligopoly',
+       'economics-2-0', 'advantages-of-an-oligopoly',
+       'The 2019 electricity market is best described as an Oligopoly. Outline one advantage of '
+       'that market structure.',
+       'An advantage of oligopoly — any one',
+       'One advantage, 5 marks.',
+       ref='2022 HL Q12(b)(i) — oligopoly', claim=1, per=5,
+       drop=SCAFFOLD, after='Stability in prices')
+
+P.menu('additional data centres in Ireland', 'econ-2022-hl-q12-c-ii-for',
+       'economics-1-3', 'the-case-for-more-data-centres',
+       'Discuss one reason why the Irish government SHOULD grant planning permission to '
+       'additional data centres in Ireland.',
+       'A reason to grant permission — any one',
+       'One reason, 4 marks.',
+       ref='2022 HL Q12(c)(ii) — for', claim=1, per=4,
+       drop=SCAFFOLD + ('Reasons for granting planning permission',),
+       stop='Reasons against granting planning permission', notes=SIDES3)
+
+P.menu('additional data centres in Ireland', 'econ-2022-hl-q12-c-ii-against',
+       'economics-1-3', 'the-case-against-more-data-centres',
+       'Discuss one reason why the Irish government should NOT grant planning permission to '
+       'additional data centres in Ireland.',
+       'A reason to refuse permission — any one',
+       'One reason, 4 marks.',
+       ref='2022 HL Q12(c)(ii) — against', claim=1, per=4,
+       drop=SCAFFOLD + ('Possible responses',), after='Reasons against granting planning permission')
+
+P.menu('social benefits represent such a high proportion', 'econ-2022-hl-q13-a-i',
+       'economics-3-1', 'why-social-benefits-dominate-spending',
+       'Using the infographic, explain why social benefits represent such a high proportion of '
+       'government expenditure. Use an example of a social benefit to support your answer.',
+       'A reason social benefits are so large — any one',
+       'One explanation, 5 marks.',
+       ref='2022 HL Q13(a)(i)', claim=1, per=5, drop=SCAFFOLD)
+
+P.menu('incentive the government uses to encourage', 'econ-2022-hl-q13-b-i-incentive',
+       'economics-1-3', 'incentives-that-change-behaviour',
+       'Outline one possible incentive the government uses to encourage certain human behaviour, '
+       'with an example.',
+       'An incentive — any one',
+       'One incentive, 7 marks.',
+       ref='2022 HL Q13(b)(i) — incentive', claim=1, per=7,
+       drop=SCAFFOLD, stop='Plastic bag tax', notes=SIDES3)
+
+P.menu('incentive the government uses to encourage', 'econ-2022-hl-q13-b-i-tax',
+       'economics-1-3', 'taxes-that-change-behaviour',
+       'Outline one possible tax measure to discourage certain human behaviour. Give an '
+       'example to support your answer.',
+       'A tax measure — any one',
+       'One measure, 7 marks.',
+       ref='2022 HL Q13(b)(i) — tax measure', claim=1, per=7,
+       drop=SCAFFOLD, after='Plastic bag tax')
+
+P.menu('impose the new 15% corporation tax rate on all firms', 'econ-2022-hl-q13-c-ii-yes',
+       'economics-3-1', 'taxing-all-firms-at-15-percent-for',
+       'Should the Irish Government impose the new 15% corporation tax rate on ALL firms in '
+       'Ireland, regardless of turnover? Justify a YES answer.',
+       'A reason to impose it on all firms — any one',
+       'One justification, 8 marks.',
+       ref='2022 HL Q13(c)(ii) — yes', claim=1, per=8,
+       drop=SCAFFOLD + ('For implementation',), stop='Against implementation',
+       notes='The part is answered either way and the scheme heads the two lists separately, so '
+             'each side is its own card.')
+
+P.menu('impose the new 15% corporation tax rate on all firms', 'econ-2022-hl-q13-c-ii-no',
+       'economics-3-1', 'taxing-all-firms-at-15-percent-against',
+       'Should the Irish Government impose the new 15% corporation tax rate on ALL firms in '
+       'Ireland, regardless of turnover? Justify a NO answer.',
+       'A reason not to impose it on all firms — any one',
+       'One justification, 8 marks.',
+       ref='2022 HL Q13(c)(ii) — no', claim=1, per=8,
+       drop=SCAFFOLD, after='Against implementation')
+
 P.emit()

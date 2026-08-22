@@ -24,6 +24,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from econ_auto import Paper  # noqa: E402
 from econ_lib import anyN, as_option, block, card, defurnish, emit, heads, load, point, tidy  # noqa: E402
 
 YEAR, LEVEL = 2024, 'higher'
@@ -50,6 +51,9 @@ def menu(cid, topic, concept, ref, qtext, notation, total, verbatim, claim, per,
                 tariff_kind='fixed' if steps else 'bestNofParts')
 
 
+# The second pass authors against econ_parts through Paper; the first pass
+# built its cards by hand, and both are emitted together.
+P = Paper(2024, 'higher')
 cards = []
 
 # ── Question 11 ─────────────────────────────────────────────────────────────
@@ -315,4 +319,111 @@ for cid, ref, qtext, concept, start, end in [
         'for the written explanation. Only the explanation is carded; the Mark Bank cannot mark '
         'a drawing.', tariff_kind='fixed'))
 
-emit(cards)
+
+# ── Section B, second pass ──────────────────────────────────────────────────
+SCAF2 = ('Possible responses', 'Suggested responses', 'Possible Responses')
+SIDES2 = ('The part asks for one of each and the scheme heads the two lists separately, so each '
+          'side is its own card.')
+
+P.menu('new 30% tax rate for middle-income earners', 'econ-2024-hl-q12-a-iii-tax',
+       'economics-3-1', 'a-middle-rate-and-the-taxpayer',
+       'A new 30% tax rate for middle-income earners has not been ruled out. Outline one economic '
+       'consequence for the TAX PAYER if this new tax rate was introduced.',
+       'A consequence for the taxpayer — any one', 'One consequence, 4 marks.',
+       ref='2024 HL Q12(a)(iii) — taxpayer', claim=1, per=4,
+       drop=SCAF2, stop='Less government revenue from direct taxation',
+       notes='The part is answered for the taxpayer OR the government and the scheme lists each '
+             'separately, so each side is its own card.')
+
+P.menu('new 30% tax rate for middle-income earners', 'econ-2024-hl-q12-a-iii-gov',
+       'economics-3-1', 'a-middle-rate-and-the-exchequer',
+       'A new 30% tax rate for middle-income earners has not been ruled out. Outline one economic '
+       'consequence for the GOVERNMENT if this new tax rate was introduced.',
+       'A consequence for the government — any one', 'One consequence, 4 marks.',
+       ref='2024 HL Q12(a)(iii) — government', claim=1, per=4,
+       drop=SCAF2, after='Less government revenue from direct taxation')
+
+P.menu('gambling industry in Ireland is', 'econ-2024-hl-q12-c-i',
+       'economics-2-2', 'why-regulate-gambling',
+       'Outline two reasons why it is important that the gambling industry in Ireland is '
+       'regulated.',
+       'A reason to regulate gambling — any two',
+       'Two reasons, the first paid 4 and the second 2.',
+       ref='2024 HL Q12(c)(i)', steps=[4, 2], drop=SCAF2)
+
+P.menu('one positive and one negative impact of globalisation', 'econ-2024-hl-q13-b-iii-pos',
+       'economics-4-1', 'positive-impacts-of-globalisation-2024',
+       'Outline one positive and one negative impact of globalisation — the POSITIVE side.',
+       'A positive impact — any one', 'One impact, 6 marks.',
+       ref='2024 HL Q13(b)(iii) — positive', claim=1, per=6,
+       drop=SCAF2, stop='Inequality / widens the gap', notes=SIDES2)
+
+P.menu('one positive and one negative impact of globalisation', 'econ-2024-hl-q13-b-iii-neg',
+       'economics-4-1', 'negative-impacts-of-globalisation-2024',
+       'Outline one positive and one negative impact of globalisation — the NEGATIVE side.',
+       'A negative impact — any one', 'One impact, 4 marks.',
+       ref='2024 HL Q13(b)(iii) — negative', claim=1, per=4,
+       drop=SCAF2, after='Inequality / widens the gap')
+
+P.menu('Explain a reason for this trend', 'econ-2024-hl-q13-c-i',
+       'economics-3-1', 'why-corporation-tax-receipts-rose',
+       'Corporation tax receipts rose from €3,520m in 2011 to €22,643m in 2022. Explain a reason '
+       'for this trend.',
+       'A reason for the rise — either one',
+       'One reason, 4 marks. The part pays 4 more for outlining the trend itself.',
+       ref='2024 HL Q13(c)(i)', claim=1, per=4,
+       drop=SCAF2 + ('Irelands corporation tax receipts have been increasing',
+                     'Between 2011 and 2022 they have increased',
+                     'The biggest increase was from 2021 to 2022'))
+
+P.menu('economic consequence of having a government budget surplus', 'econ-2024-hl-q13-c-iii-pos',
+       'economics-3-1', 'benefits-of-a-budget-surplus',
+       'Outline one possible POSITIVE economic consequence of having a government budget surplus.',
+       'A positive consequence — any one', 'One consequence, 3 marks.',
+       ref='2024 HL Q13(c)(iii) — positive', claim=1, per=3,
+       drop=SCAF2, stop='Rise in conflicting expectations', notes=SIDES2)
+
+P.menu('economic consequence of having a government budget surplus', 'econ-2024-hl-q13-c-iii-neg',
+       'economics-3-1', 'drawbacks-of-a-budget-surplus',
+       'Outline one possible NEGATIVE economic consequence of having a government budget surplus.',
+       'A negative consequence — any one', 'One consequence, 3 marks.',
+       ref='2024 HL Q13(c)(iii) — negative', claim=1, per=3,
+       drop=SCAF2, after='Rise in conflicting expectations')
+
+P.menu('waste resources', 'econ-2024-hl-q14-a-ii-agree',
+       'economics-2-0', 'monopolistic-competition-wastes-resources',
+       'Firms operating under monopolistic competition waste resources. Justify AGREEING with '
+       'this statement.',
+       'The case that resources are wasted',
+       'One justification, 6 marks: the firm does not produce at the minimum of average cost.',
+       ref='2024 HL Q14(a)(ii) — agree', claim=1, per=6,
+       drop=SCAF2 + ('Do you agree or disagree',), stop='DISAGREE',
+       notes='The part is answered either way and the scheme heads the two, so each side is its '
+             'own card.')
+
+P.menu('waste resources', 'econ-2024-hl-q14-a-ii-disagree',
+       'economics-2-0', 'monopolistic-competition-does-not-waste',
+       'Firms operating under monopolistic competition waste resources. Justify DISAGREEING with '
+       'this statement.',
+       'The case that resources are not wasted',
+       'One justification, 6 marks: spending on innovation and variety is not waste.',
+       ref='2024 HL Q14(a)(ii) — disagree', claim=1, per=6,
+       drop=SCAF2, after='DISAGREE')
+
+P.menu('interest rate increases have on each', 'econ-2024-hl-q14-c-i-spending',
+       'economics-3-3', 'interest-rates-and-consumer-spending',
+       'Explain one economic effect these interest rate increases have on the level of consumer '
+       'spending.',
+       'An effect on consumer spending — either one', 'One effect, 4 marks.',
+       ref='2024 HL Q14(c)(i) — consumer spending', claim=1, per=4,
+       drop=SCAF2, stop='Increased interest payments', notes=SIDES2)
+
+P.menu('interest rate increases have on each', 'econ-2024-hl-q14-c-i-debt',
+       'economics-3-1', 'interest-rates-and-the-national-debt',
+       'Explain one economic effect these interest rate increases have on Ireland’s national '
+       'debt.',
+       'An effect on the national debt — either one', 'One effect, 4 marks.',
+       ref='2024 HL Q14(c)(i) — national debt', claim=1, per=4,
+       drop=SCAF2, after='Increased interest payments')
+
+emit(cards + P.cards)
