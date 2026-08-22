@@ -28629,6 +28629,44 @@
   "notes": "The scheme lists a fifth, the mission statement, and pays four. Each is worth naming, explaining, and quoting the text that shows it."
  },
  {
+  "id": "bus-2021-hl-s2-abq-b-i",
+  "topicId": "business-6-13",
+  "conceptId": "types-of-business-insurance",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "business",
+  "section": "2",
+  "questionRef": "2021 HL Section 2 ABQ(B)(i)",
+  "questionText": "Discuss, with reference to the text, the types of business insurance you would recommend for Miriam’s crèche",
+  "schemeCitation": "Question and marking points quoted from the SEC marking scheme, Business 2021 Higher Level — © State Examinations Commission. Business prints its paper as an answerbook, so the scheme's own table is the published source for the question as well as for the answer.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 × 6m (2 + 2 + 2)"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Public Liability Insurance: Public liability insurance protects the business against financial loss as a result claims made by members of the public such as consumers who are injured or hurt on the business premises",
+    "marks": 6
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Employer’s Liability Insurance: Employer’s liability protects the business against financial loss as a result claims made by employees as a result of injuries they have sustained in the workplace",
+    "marks": 6
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Premises Insurance/Buildings and contents insurance: This provides the business with protection against any loss caused by damage to the structure of the building caused by fire flood or storm. You should ensure a smoke alarm is fitted and there are adequate fire extinguishers in the premises",
+    "marks": 6
+   }
+  ],
+  "notes": "Each type is paid for naming it, explaining it, and quoting the text that shows the risk. The scheme lists motor insurance as a fourth."
+ },
+ {
   "id": "bus-2021-ol-s2-q9-a",
   "topicId": "business-5-13",
   "conceptId": "why-a-brand-name-matters",
@@ -28764,6 +28802,38 @@
    }
   ],
   "notes": "Any three of the scheme's six score. The card shows competitions, loyalty cards and money-off vouchers; the scheme also allows special offers, free samples and a discount for buying in quantity."
+ },
+ {
+  "id": "bus-2022-hl-s2-abq-b",
+  "topicId": "business-4-18",
+  "conceptId": "organic-expansion-and-franchising",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "business",
+  "section": "2",
+  "questionRef": "2022 HL Section 2 ABQ(B)",
+  "questionText": "Evaluate the two methods of expansion used by Mike’s",
+  "schemeCitation": "Question and marking points quoted from the SEC marking scheme, Business 2022 Higher Level — © State Examinations Commission. Business prints its paper as an answerbook, so the scheme's own table is the published source for the question as well as for the answer.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 × 10m (3 + 3 + 3, 1)"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The most natural way of growing a business is to increase sales domestically by developing new products or expanding via",
+    "marks": 10
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "This is when the business owner allows entrepreneurs to use her/his business model in exchange for an upfront fee and a percentage of profits",
+    "marks": 10
+   }
+  ],
+  "notes": "The two methods are organic expansion and franchising. The scheme names each in a heading of its own above the explanation, and pays for naming it, explaining it, quoting the text and evaluating it."
  },
  {
   "id": "bus-2022-ol-s2-q9-b",

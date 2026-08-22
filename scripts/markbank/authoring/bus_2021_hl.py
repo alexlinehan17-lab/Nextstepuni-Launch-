@@ -20,4 +20,10 @@ A.card(2, 0, 'a', topic='business-3-16', concept='types-of-business-plan',
        notes='The scheme lists a fifth, the mission statement, and pays four. Each is '
              'worth naming, explaining, and quoting the text that shows it.')
 
+A.card(2, 0, 'b', 'i', topic='business-6-13', concept='types-of-business-insurance',
+       extend=1, use=[[1, 2, 3, 4], [8, 9, 10, 11], [16, 17, 18, 19, 20]],
+       marks=[6, 6, 6], notation='3 × 6m (2 + 2 + 2)',
+       notes='Each type is paid for naming it, explaining it, and quoting the text that '
+             'shows the risk. The scheme lists motor insurance as a fourth.')
+
 A.emit()
