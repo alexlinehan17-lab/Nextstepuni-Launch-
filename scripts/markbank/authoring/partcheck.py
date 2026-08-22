@@ -32,6 +32,7 @@ Cards whose text was typed rather than lifted — the deck predates the rule —
 miss, so the reference test is kept as well and a part is covered if EITHER
 finds it. The two together are what makes the number worth acting on.
 """
+import difflib
 import json
 import os
 import re
@@ -60,8 +61,14 @@ DEFER = {'economics': 'econ_todo.py <year> <level> <section> — reports 0 uncar
                       'parts on all ten papers'}
 
 
+# The tariff printed after a question is not part of it, and it is the one thing
+# a card never carries: "(20 marks)" on the end of a part is why a card asking
+# that exact question failed to match it.
+TARIFF_TAIL = re.compile(r'\(?\s*\d{1,3}\s*m(?:ark)?s?\.?\s*\)?\s*$', re.I)
+
+
 def squash(text):
-    return re.sub(r'[^a-z0-9]+', '', (text or '').lower())
+    return re.sub(r'[^a-z0-9]+', '', TARIFF_TAIL.sub('', (text or '').strip()).lower())
 
 
 def asked(subject):
@@ -75,10 +82,36 @@ def asked(subject):
 
 
 def covered_by_text(text, texts):
+    """Does some card ask this?
+
+    Matching is on a run rather than the whole string, because one card often
+    answers two parts at once — '2023 OL Section B Q5(b)' asks 'Identify two
+    causes of conflict... and explain two ways of dealing with this conflict',
+    and the scheme sets those as two parts. The second part's text is inside
+    that card's, but not at its start, so a leading-run test alone missed it.
+    """
     a = squash(text)
     if len(a) < FLOOR:
         return False
-    return any(a[:LEAD] in b or b[:LEAD] in a for b in texts if len(b) >= FLOOR)
+    for b in texts:
+        if len(b) < FLOOR:
+            continue
+        if a[:LEAD] in b or b[:LEAD] in a or a[-LEAD:] in b:
+            return True
+    # A card and its scheme can differ inside the window and still be the same
+    # question. The Business card for 2023 HL Q2(A)(i) reads 'privatisiation'
+    # where the scheme reads 'privatisation', and 'Provide examples' where the
+    # scheme says 'Use examples' — one typo and one synonym, enough to break any
+    # exact window. Cards sharing an opening are compared for closeness instead.
+    # The opening test is what keeps this from comparing every part to every
+    # card, which at this size would take minutes.
+    for b in texts:
+        if len(b) < FLOOR:
+            continue
+        if a[:20] in b or b[:20] in a:
+            if difflib.SequenceMatcher(None, a[:140], b[:140]).ratio() >= 0.78:
+                return True
+    return False
 
 
 # A cue is the line the scheme reprints above its own answer. In Home Economics
