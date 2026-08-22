@@ -50,6 +50,10 @@ MARKS_ONLY = re.compile(r'^\d{1,2}\s*(\(\s*\d{1,2}\s*\))?$|^\d(\+\d)+$'
 MARKS_TAIL = re.compile(r'\s(\d{1,2}(?:\(\d{1,2}\))?|\d(?:\+\d)+'
                         r'|\d{1,2}\s*[x\u00d7]\s*\d{1,2})$')
 NOISE = re.compile(r'^(OR|Or|or)$')
+# Mark-band tables, not content: "Q1 (a) - (f) Number of correct responses 1 2 3
+# 4 5 6 Mark 4 8 12 16 20" and "Marks 18-20 14-17 10-13". Read as content they
+# invent a part per band and, worse, a question per band number.
+BAND = re.compile(r'Number of correct responses|^Marks?\s+\d+\s*[-‐–]\s*\d+')
 # 'A = Simmental B = Landrace C = Blackface mountain D = Jersey' — an identify
 # question whose answers share one combined tariff ('4(1)'), so the mark column
 # never delimits them. The labels do.
@@ -100,9 +104,14 @@ class Scheme:
         # one; where it does not — Chemistry prints no such heading — the first
         # question header is the boundary, which is what 'Section A' was
         # standing in for anyway.
+        # Skip the marking preamble. Its instructions are NUMBERED — "1. Key
+        # words or terms may be awarded marks", "2. Cancelled answers" — and
+        # read as questions they put three phantom questions in front of the
+        # paper and slide every real one out of step. So the boundary is the
+        # spelled-out word, never a bare number.
         start = raw.find('Section A')
         if start < 0:
-            m = re.search(r'^(?:QUESTION\s+\d|Q\s?\d)', raw, re.M)
+            m = re.search(r'^(?:QUESTION|Question)\s+\d', raw, re.M)
             start = m.start() if m else 0
         body = raw[start:]
 
@@ -120,7 +129,7 @@ class Scheme:
         self.parts, self.cues = {}, {}
         q = letter = roman = None
         for line in src:
-            if not line or PAGE.match(line) or NOISE.match(line):
+            if not line or PAGE.match(line) or NOISE.match(line) or BAND.search(line):
                 continue
             m = QHEAD.match(line)
             if m:

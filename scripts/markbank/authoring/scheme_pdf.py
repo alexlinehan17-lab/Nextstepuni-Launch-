@@ -57,6 +57,14 @@ MARKS_BLOCK = re.compile(r'^(?:[A-Za-z][A-Za-z ]{0,24}?\s)?(%s)$' % TARIFF)
 MARKS_TAIL = re.compile(r'\s(%s)$' % TARIFF)
 PAGENO = re.compile(r'^\d{1,3}$')
 NOISE = re.compile(r'^(OR|Or|or)$')
+# Mark-band tables, not content: "Q1 (a) - (f) Number of correct responses 1 2 3
+# 4 5 6 Mark 4 8 12 16 20" and "Marks 18-20 14-17 10-13". Read as content they
+# invent a part per band and, worse, a question per band number.
+BAND = re.compile(r'Number of correct responses|^Marks?\s+\d+\s*[-‐–]\s*\d+'
+                  # Home Economics prints its mark ladder as numbered lines —
+                  # "1 One mark awarded", "2 Two marks awarded" — which read as
+                  # eight phantom questions in front of the paper.
+                  r'|^\d{1,2}\s+(?:One|Two|Three|Four|Five|Six|Seven|Eight|Nine|Ten)\s+marks?\s+awarded')
 # The schemes introduce the alternative half of a question with 'Or (b)', often
 # in the same block as the marker. Left in place it hides the '(b)' from the
 # marker parse, and every part beneath it is filed under the previous letter —
@@ -110,11 +118,25 @@ class SchemePdf:
         self.path = os.path.join(SCHEMES, f'{year}-{level}.md')   # the gate's copy
 
         self.parts, self.cues, self._marks = {}, {}, {}
+        # The numbered preamble has to be walked past before anything counts —
+        # but only where the scheme spells out "Question 1", which is the only
+        # marker strong enough to tell instruction 1 from question 1. Physics
+        # and Chemistry head questions with a bare number, so there is nothing
+        # to anchor on and their preamble is left to the Section A boundary.
+        with pymupdf.open(self.pdf) as _probe:
+            spelled = any(re.search(r'^(?:QUESTION|Question)\s+\d', ' '.join(b[4].split()))
+                          for n in range(_probe.page_count)
+                          for b in _probe[n].get_text('blocks') if b[4].strip())
+        seen_first_question = not spelled
         q = letter = roman = None
         key = None
         for text in self._blocks():
-            if PAGENO.match(text) or NOISE.match(text):
+            if PAGENO.match(text) or NOISE.match(text) or BAND.search(text):
                 continue
+            if not seen_first_question:
+                if not re.match(r'^(?:QUESTION|Question)\s+\d', text):
+                    continue
+                seen_first_question = True
 
             m = MARKS_BLOCK.match(text)
             if m and key is not None:
