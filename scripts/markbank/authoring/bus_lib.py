@@ -115,13 +115,22 @@ class Author:
                     raise Refused(f'{r}: no answer line {i} — the scheme printed '
                                   f'{len(p["answers"])}')
             joined = ' '.join(p['answers'][i].strip() for i in idxs)
-            chosen.append(re.sub(r'\s+', ' ', joined).lstrip('•').strip())
+            chosen.append((re.sub(r'\s+', ' ', joined).lstrip('•').strip(),
+                           [p['answers'][i] for i in idxs]))
         if len(marks) != len(chosen):
             raise Refused(f'{r}: {len(marks)} marks for {len(chosen)} points')
 
+        # The JOINED point has to trace, not merely each line of it. The build
+        # runs its own provenance gate on the verbatim a card carries, and a
+        # point joined across lines the tariff column sits between will not
+        # trace there — checking line by line here just moved the rejection
+        # later, to a card that had already been written. Where a point's lines
+        # are not contiguous in the scheme, that point cannot be carded as one.
+        chosen = [c for c, _ in chosen]
         for c in chosen:
             if _squash(c.lstrip('•').strip()) not in self.raw:
-                raise Refused(f'{r}: {c[:60]!r} does not trace to the scheme')
+                raise Refused(f'{r}: {c[:60]!r} does not trace to the scheme — its '
+                              f'lines are not contiguous there')
 
         tariff = [int(m) for m in p['marks'] if m.isdigit()]
         total = sum(marks)

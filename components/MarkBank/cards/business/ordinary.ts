@@ -5267,6 +5267,19 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC033GLP033EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2024 Ordinary Level — © State Examinations Commission.",
+    id: "bus-2024-ol-s2-q9-a-i", topicId: "business-5-14", conceptId: "where-product-ideas-come-from",
+    section: "2", questionRef: "2024 OL Section 2 Q9(A)(i)",
+    questionText: "Outline one method of idea generation that a business like Keogh’s might use",
+    tariffModel: {"kind":"fixed","notation":"15m covers (i) and (ii); this part is 10 of it, paid 7 + 3"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Research and Development: A specific R&D department is responsible for coming up with ideas", marks: 10 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2025, level: "ordinary",
     paperFileid: "LC033GLP033EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2025 Ordinary Level — © State Examinations Commission.",
@@ -5305,6 +5318,21 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Funding Support: Grants and funding are available to businesses for startup costs, expansion, and research and development", marks: 10 },
     { id: "r-2", kind: "point", verbatim: "Market Information: Access to up-to-date data on various markets including resources from the market research centre", marks: 5 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC033GLP033EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2025 Ordinary Level — © State Examinations Commission.",
+    id: "bus-2025-ol-s2-q9-d", topicId: "business-6-13", conceptId: "insurance-terms-explained",
+    section: "2", questionRef: "2025 OL Section 2 Q9(D)",
+    questionText: "Explain any three of the insurance terms underlined",
+    tariffModel: {"kind":"fixed","notation":"4 + 1 for each of the three"}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Insurance Premium: The fee paid to the insurance company (insurer) for the insurance cover. The cost of insurance. It can be paid as a once of payment yearly or monthly instalments which usually occur a fee", marks: 5 },
+    { id: "r-2", kind: "point", verbatim: "Motor Insurance: Motor insurance is required by law. It is protection against loss, theŌ or damage of a car/vehicle. There are three types of motor insurance-third party, third party fire and theŌ and comprehensive", marks: 5 },
+    { id: "r-3", kind: "point", verbatim: "Public Liability Insurance: Protects the business from claims made by members of the public for accidents or injuries on their premises e.g. a customer slips on a wet floor", marks: 5 },
     ],
   } as SecCard,
 ];

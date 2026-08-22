@@ -57,8 +57,15 @@ LEAD = 60
 # it for 2024 HL Q15(b)(iii) and it offers a mark cell reading "Valid
 # information 8". Any figure printed here for Economics would be measuring the
 # pairing, not the coverage.
-DEFER = {'economics': 'econ_todo.py <year> <level> <section> — reports 0 uncarded '
-                      'parts on all ten papers'}
+DEFER = {
+    'economics': 'econ_todo.py <year> <level> <section> — reports 0 uncarded '
+                 'parts on all ten papers',
+    # Business can be measured here, but not well: align_ordered pairs only 187
+    # of its parts and leaves 66 of those unmeasurable, because the paper is an
+    # answerbook. bus_todo enumerates the parts from the scheme's own table
+    # instead, which is the better source and the one bus_lib authors from.
+    'business': 'bus_todo.py [<year> <level>] — enumerates parts from the scheme',
+}
 
 
 # The tariff printed after a question is not part of it, and it is the one thing
