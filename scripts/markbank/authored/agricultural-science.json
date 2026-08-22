@@ -33242,6 +33242,92 @@
   "notes": "The scheme gives nothing for one right and one wrong."
  },
  {
+  "id": "agsci-2021-hl-q15bi",
+  "topicId": "agsci-3-2",
+  "conceptId": "best-organic-fertiliser-for-steady-herbage",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2021 HL Q15(b)(i)",
+  "questionText": "Identify which treatment is the most beneficial organic fertiliser for a steady supply of herbage over the five month period.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "FYM ‐ High",
+    "marks": 3
+   }
+  ],
+  "stem": "800 1000 1200 1400 1600 1800 2000 2200 2400 2600 2800 3000 3200 3400 3600 3800 4000 Total Available kg DM / Ha November December January February March Time (Months) Control Slurry (Low ‐ 22,000 litres / hectare) Slurry (High ‐ 33,000 litres / hectare) Farmyard Manure (Low ‐ 12 tonnes / hectare) Farmyard Manure (High ‐ 25 tonnes / hectare) Most beneficial treatment calculations Control treatment calculations"
+ },
+ {
+  "id": "agsci-2021-hl-q15biii",
+  "topicId": "agsci-3-2",
+  "conceptId": "fertiliser-advice-for-early-spring-grass",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2021 HL Q15(b)(iii)",
+  "questionText": "A beef farmer wants to have early spring grass for his spring calving herd to turnout in late February. Using evidence from the data, outline the advice you would give him in relation to the source and application rates of organic fertiliser.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Advice would be for farmers to put high levels of FYM (25 ton / ha) on the land in autumn to get good quality grass at turnout (The highest Kg DM per ha availability in Feb for early turnout in spring was in the FYM High (25 ton / ha) treatment as there was 3200 kg DM per ha available for grazing )",
+    "marks": 4
+   }
+  ],
+  "stem": "800 1000 1200 1400 1600 1800 2000 2200 2400 2600 2800 3000 3200 3400 3600 3800 4000 Total Available kg DM / Ha November December January February March Time (Months) Control Slurry (Low ‐ 22,000 litres / hectare) Slurry (High ‐ 33,000 litres / hectare) Farmyard Manure (Low ‐ 12 tonnes / hectare) Farmyard Manure (High ‐ 25 tonnes / hectare) Most beneficial treatment calculations Control treatment calculations"
+ },
+ {
+  "id": "agsci-2021-hl-q15biv",
+  "topicId": "agsci-3-2",
+  "conceptId": "what-the-fertiliser-trial-shows",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2021 HL Q15(b)(iv)",
+  "questionText": "Using the findings of the students investigation over the five month period, discuss what advice you would give the farmer in relation to the source and application rates of these organic fertilisers. Your advice should include at least three specific recommendations.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 at 2 marks each"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Applying FYM provides more DM per ha compared to slurry",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "lower amounts slurry provide more DM than high amounts",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "higher amounts of FYM provide more DM than lower amounts until March",
+    "marks": 2
+   }
+  ],
+  "stem": "800 1000 1200 1400 1600 1800 2000 2200 2400 2600 2800 3000 3200 3400 3600 3800 4000 Total Available kg DM / Ha November December January February March Time (Months) Control Slurry (Low ‐ 22,000 litres / hectare) Slurry (High ‐ 33,000 litres / hectare) Farmyard Manure (Low ‐ 12 tonnes / hectare) Farmyard Manure (High ‐ 25 tonnes / hectare) Most beneficial treatment calculations Control treatment calculations",
+  "notes": "The scheme asks for three recommendations and lists five, and requires each to be backed by evidence from the graph."
+ },
+ {
   "id": "agsci-2021-ol-q4b",
   "topicId": "agsci-2-1",
   "conceptId": "uses-of-a-brown-earth-soil",

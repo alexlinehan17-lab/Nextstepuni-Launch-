@@ -84,4 +84,16 @@ A.card(17, 'b', 'i', topic='agsci-3-1', concept='reading-p-and-k-soil-indexes',
        from_run=((17, 'b', 'i'), 0, slice(0, 6)), marks=[3],
        notes='The scheme gives nothing for one right and one wrong.')
 
+# ── Q15(b): the organic fertiliser trial ──────────────────────────────────
+A.card(15, 'b', 'i', topic='agsci-3-2', concept='best-organic-fertiliser-for-steady-herbage',
+       use=[0], marks=[3])
+
+A.card(15, 'b', 'iii', topic='agsci-3-2', concept='fertiliser-advice-for-early-spring-grass',
+       use=[0], marks=[4])
+
+A.card(15, 'b', 'iv', topic='agsci-3-2', concept='what-the-fertiliser-trial-shows',
+       use=[0, 1, 2], marks=[2, 2, 2], notation='3 at 2 marks each', row_kind='anyN',
+       notes='The scheme asks for three recommendations and lists five, and requires each '
+             'to be backed by evidence from the graph.')
+
 A.emit()
