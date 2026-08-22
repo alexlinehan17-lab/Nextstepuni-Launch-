@@ -54,4 +54,8 @@ A.card(9, 'b', 'ii', topic='bio-u1', concept='preparing-the-enzyme',
 A.card(13, 'b', 'iv', topic='bio-3-2', concept='fraction-of-f2-that-is-recessive',
        source='pdf', use=[1], marks=[3], first_sentence=True)
 
+A.card(7, 'a', topic='bio-u1', concept='what-a-hypothesis-is',
+       source='pdf', from_run=((6, 'a', None), 7, slice(5, 6)), marks=[4],
+       checked='The paper prints this part as a Column A description in a matching table, so it has no verb of its own. The instruction to match it to a term in the list sits in the question stem the card already carries.')
+
 A.emit()

@@ -9298,6 +9298,20 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2022-ol-q7-b", topicId: "bio-u1", conceptId: "what-a-hypothesis-is",
+    section: "A", questionRef: "2022 OL Q7(b)",
+    stem: "Choose each term from the following list and place it in Column B to match a description in Column A. The first one has been completed as an example. Theory Data Double blind test Variable Control Hypothesis Column A Column B An explanation for an observation supported by the results of an experiment Theory",
+    questionText: "An educated guess to explain an observation",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Hypothesis", marks: 4 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2023, level: "ordinary",
     paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
@@ -9560,6 +9574,20 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "25% (or one quarter)", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2024-ol-q7-a", topicId: "bio-u1", conceptId: "what-a-hypothesis-is",
+    section: "A", questionRef: "2024 OL Q7(a)",
+    stem: "Choose each term from the following list and place it in Column B to match a description in Column A. The first one has been completed as an example. Safety Hypothesis Data Control Theory Experiment Column A Column B Principle of experimentation Safety",
+    questionText: "Possible explanation for an observation",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Hypothesis", marks: 4 },
     ],
   } as SecCard,
   {

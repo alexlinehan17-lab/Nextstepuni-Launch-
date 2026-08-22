@@ -37905,6 +37905,30 @@
   "notes": "The scheme answers this by ticking a True/False column and the tick is a glyph the text extraction drops, so it was read from page 9 of the 2022 Ordinary Level marking scheme. Q6 is marked 6(3) + 2 over seven statements."
  },
  {
+  "id": "bio-2022-ol-q7-b",
+  "topicId": "bio-u1",
+  "conceptId": "what-a-hypothesis-is",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2022 OL Q7(b)",
+  "questionText": "An educated guess to explain an observation",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Hypothesis",
+    "marks": 4
+   }
+  ],
+  "stem": "Choose each term from the following list and place it in Column B to match a description in Column A. The first one has been completed as an example. Theory Data Double blind test Variable Control Hypothesis Column A Column B An explanation for an observation supported by the results of an experiment Theory"
+ },
+ {
   "id": "bio-2023-ol-q2-a",
   "topicId": "bio-u2",
   "conceptId": "what-a-hypothesis-is",
@@ -38597,6 +38621,30 @@
    }
   ],
   "stem": "Purple- flowered White- flowered p P Purple- flowered (Pp) Two of the F1 offspring were then self-fertilised. Purple-flowered (Pp) The F2 (second generation) offspring were not all purple-flowered. p P P Purple- flowered (Pp)"
+ },
+ {
+  "id": "bio-2024-ol-q7-a",
+  "topicId": "bio-u1",
+  "conceptId": "what-a-hypothesis-is",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2024 OL Q7(a)",
+  "questionText": "Possible explanation for an observation",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Hypothesis",
+    "marks": 4
+   }
+  ],
+  "stem": "Choose each term from the following list and place it in Column B to match a description in Column A. The first one has been completed as an example. Safety Hypothesis Data Control Theory Experiment Column A Column B Principle of experimentation Safety"
  },
  {
   "id": "bio-2025-hl-q13-b-iii",

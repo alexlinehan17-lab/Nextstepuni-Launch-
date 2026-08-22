@@ -32,4 +32,11 @@ for letter, answer, topic, concept in (
     A.card(6, letter, topic=topic, concept=concept, tick=answer, marks=[3],
            notation='6(3) + 2', notes=READ, stem=False)
 
+# ── Q7(b): the matching table ─────────────────────────────────────────────
+# The scheme prints the description and the term it matches on one line, and
+# its own mark column gives four.
+A.card(7, 'b', topic='bio-u1', concept='what-a-hypothesis-is',
+       source='pdf', from_run=((6, 'b', None), 0, slice(6, 7)), marks=[4],
+       checked='The paper prints this part as a Column A description in a matching table, so it has no verb of its own. The instruction to match it to a term in the list sits in the question stem the card already carries.')
+
 A.emit()
