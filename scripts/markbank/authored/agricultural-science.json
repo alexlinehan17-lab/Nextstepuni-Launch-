@@ -34429,6 +34429,145 @@
   "figureKey": "agricultural-science-2025-HL-paper-p03-art"
  },
  {
+  "id": "agsci-2025-hl-q12a",
+  "topicId": "agsci-4-3-2",
+  "conceptId": "why-progeny-test-dairy-cows",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2025 HL Q12(a)",
+  "questionText": "Progeny testing in dairy cows.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2(4) + 2(1)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To assess the genetic merit (traits or characteristics) of a breeding animal through their offspring",
+    "marks": 2
+   }
+  ],
+  "stem": "Outline one scientific reason for any four of the following:",
+  "notes": "Q12 sets five prompts and asks for any four, marked 2(4) + 2(1) — two marks for each of four answered, and two more."
+ },
+ {
+  "id": "agsci-2025-hl-q12b",
+  "topicId": "agsci-3-3-1",
+  "conceptId": "why-buffer-zones-beside-waterways",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2025 HL Q12(b)",
+  "questionText": "Having a buffer zone close to a waterway.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2(4) + 2(1)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Reduce run off or prevent eutrophication",
+    "marks": 2,
+    "accepts": [
+     "reduce sediment in rivers",
+     "increased bank stability",
+     "increased biodiversity"
+    ]
+   }
+  ],
+  "stem": "Outline one scientific reason for any four of the following:",
+  "notes": "Q12 sets five prompts and asks for any four, marked 2(4) + 2(1) — two marks for each of four answered, and two more."
+ },
+ {
+  "id": "agsci-2025-hl-q12c",
+  "topicId": "agsci-3-1",
+  "conceptId": "why-chloroplasts-sit-in-the-palisade-layer",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2025 HL Q12(c)",
+  "questionText": "Presence of chloroplasts in the palisade layer of a leaf.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2(4) + 2(1)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Close to surface to maximise photosynthesis",
+    "marks": 2
+   }
+  ],
+  "stem": "Outline one scientific reason for any four of the following:",
+  "notes": "Q12 sets five prompts and asks for any four, marked 2(4) + 2(1) — two marks for each of four answered, and two more."
+ },
+ {
+  "id": "agsci-2025-hl-q12d",
+  "topicId": "agsci-4-3-1",
+  "conceptId": "why-cull-breeding-ewes",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2025 HL Q12(d)",
+  "questionText": "Culling of breeding ewes on a sheep farm.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2(4) + 2(1)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Ewe could be lame or infertile or diseased or prevent undesirable traits (so is not suitable for breeding)",
+    "marks": 2
+   }
+  ],
+  "stem": "Outline one scientific reason for any four of the following:",
+  "notes": "Q12 sets five prompts and asks for any four, marked 2(4) + 2(1) — two marks for each of four answered, and two more."
+ },
+ {
+  "id": "agsci-2025-hl-q12e",
+  "topicId": "agsci-3-1",
+  "conceptId": "why-water-moves-through-the-plant",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2025 HL Q12(e)",
+  "questionText": "Movement of water from the soil through the plant to the atmosphere.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2(4) + 2(1)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "To transport minerals",
+    "marks": 2,
+    "accepts": [
+     "to provide water for photosynthesis",
+     "to cool the plant"
+    ]
+   }
+  ],
+  "stem": "Additional writing space for Section A. Label all work clearly with the question number and part. Section B 200 marks Each question carries 50 marks.",
+  "notes": "Q12 sets five prompts and asks for any four, marked 2(4) + 2(1) — two marks for each of four answered, and two more."
+ },
+ {
   "id": "agsci-2025-ol-q8b",
   "topicId": "agsci-1-5",
   "conceptId": "reading-fertiliser-hazard-symbols",
