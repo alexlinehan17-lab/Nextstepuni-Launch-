@@ -137,4 +137,42 @@ P.cards.append(card(
                {'letter': 'AC', 'meaning': 'Average Cost', 'askedInThisQuestion': False},
                {'letter': 'AR', 'meaning': 'Average Revenue', 'askedInThisQuestion': False}]))
 
+
+# ── Section B, second pass ──────────────────────────────────────────────────
+# The plain id 'econ-2022-ol-q13-a-ii' is taken by a card citing 2022 OL
+# Q14(c)(ii) — one of the nineteen whose id counts the wrong question, left
+# alone because review history is keyed on it. See econ_refs.py.
+P.menu('Explain current OR capital government expenditure', 'econ-2022-ol-q13-a-ii-expenditure',
+       'economics-3-1', 'current-versus-capital-spending',
+       'Explain current OR capital government expenditure, using a relevant example to support '
+       'your answer.',
+       'One of the two kinds of spending — either one',
+       'One explanation with an example, 9 marks. Capital spending buys something that lasts; '
+       'current spending is the day-to-day bill.',
+       ref='2022 OL Q13(a)(ii)', claim=1, per=9,
+       drop=SCAFFOLD + ('support your answer. Tick',))
+
+P.menu('reason for the increase in consumer spending', 'econ-2022-ol-q13-c-i',
+       'economics-1-1', 'why-consumer-spending-rose',
+       'Outline one possible reason for the increase in consumer spending in Ireland in 2023.',
+       'A reason spending rose — any one', 'One reason, 10 marks.',
+       ref='2022 OL Q13(c)(i)', claim=1, per=10, drop=SCAFFOLD)
+
+P.menu('economic argument in favour of the reintroduction of water charges',
+       'econ-2022-ol-q14-b-i', 'economics-1-3', 'the-case-for-water-charges',
+       'Outline one economic argument in favour of the reintroduction of water charges.',
+       'An argument for water charges — any one', 'One argument, 7 marks.',
+       ref='2022 OL Q14(b)(i)', claim=1, per=7, drop=SCAFFOLD)
+
+P.menu('benefits of the government collecting corporation tax', 'econ-2022-ol-q15-a-ii',
+       'economics-3-1', 'what-corporation-tax-pays-for',
+       'Explain the benefits of the government collecting corporation tax.',
+       'A benefit of the revenue — any one', 'One benefit, 9 marks.',
+       ref='2022 OL Q15(a)(ii)', claim=1, per=9, drop=SCAFFOLD)
+
+# 2022 OL Q16 inflation effects are NOT here: already carded above as
+# econ-2022-ol-q16-a-ii with the same question text. econ_todo reported the part
+# uncarded because its path reads (b)(ii) rather than (a)(ii), and a duplicate id
+# would not have caught it — the ids differ. Duplicate TEXT is the check that does.
+
 P.emit()

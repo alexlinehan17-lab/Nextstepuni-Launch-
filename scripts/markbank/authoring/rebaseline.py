@@ -5,7 +5,13 @@ The baseline test's own header: "update the affected count/hash only after
 checking that all previous IDs remain present. Never refresh this baseline to
 conceal a deletion." This does the checking, and refuses if anything vanished.
 """
-import hashlib, re, subprocess, sys
+import hashlib, os, re, subprocess, sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+try:
+    from econ_refs import WITHDRAWN
+except ImportError:                       # every other subject
+    WITHDRAWN = set()
 
 SUBJECT = sys.argv[1] if len(sys.argv) > 1 else 'home-economics'
 # These MUST match the id prefix the deck actually uses. 'phy' and 'ag' did not
@@ -40,7 +46,12 @@ for level in ('higher', 'ordinary'):
         # paper cannot be blocked on its Ordinary deck not existing.
         print(f'{SUBJECT}:{level}  not authored yet, skipped')
         continue
-    lost = sorted(set(old) - set(new))
+    # A withdrawal is allowed only if someone wrote down why: see
+    # econ_refs.WITHDRAWN. Everything else that vanishes is an accident.
+    lost = sorted(set(old) - set(new) - WITHDRAWN)
+    pulled = sorted((set(old) - set(new)) & WITHDRAWN)
+    for w in pulled:
+        print(f'    withdrawn on purpose (econ_refs.WITHDRAWN): {w}')
     added = sorted(set(new) - set(old))
     dupes = len(new) != len(set(new))
     print(f'{SUBJECT}:{level}  {len(old)} -> {len(new)}   +{len(added)}  lost={len(lost)}  dupes={dupes}')

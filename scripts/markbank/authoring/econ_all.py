@@ -47,6 +47,18 @@ for name in scripts:
     cards.extend(batch)
     print(f'{name:<22} {len(batch):>3} cards', file=sys.stderr)
 
+# Two cards asking the same question of the same paper is a duplicate whatever
+# their ids say, and the id guard above cannot see it: the second pass writes a
+# card from a block of scheme the first pass already used, under a part path one
+# numeral out, so both ids are unique and both cards are the same card. Checked
+# on the text a student actually reads.
+asked = {}
+for c in cards:
+    k = (c['year'], c['level'], ' '.join(c['questionText'].split()).lower())
+    if k in asked:
+        failed.append(f"{c['id']} asks the same question as {asked[k]}: {k[2][:70]}")
+    asked[k] = c['id']
+
 if failed:
     for f in failed:
         print('REFUSING', f, file=sys.stderr)

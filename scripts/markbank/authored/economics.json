@@ -861,6 +861,346 @@
   "notes": "Abbreviations are not accepted: the part says to write the labels out in full."
  },
  {
+  "id": "econ-2021-hl-q12-b-ii",
+  "topicId": "economics-4-2",
+  "conceptId": "why-brussels-wants-tax-harmony",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 HL Q12(b)(ii)",
+  "questionText": "Outline one reason why the European Commission wants to remove the power to set corporation tax from the Irish government.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 7",
+   "answer": 1,
+   "ofParts": 3,
+   "perPart": 7
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason the Commission wants it — any one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "One reason, 7 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "Streamlining of all European policies; social, environmental and economic Part of the European Commission’s remit is to create as much unity as possible in relation to policies in the European area from a social, environmental and economic perspective as possible. The European Commission sees Ireland’s corporation tax policy as being out of line with the rest of Europe.",
+      "Greater transparency across EU The European Commission has been unhappy with how Ireland’s corporate taxes have been managed in the past such as the €13bn in unclaimed taxes from Facebook. The European Commission would prefer to have more transparency of taxation policies across Europe.",
+      "Seen as anti-competitive The European Commission will want there to be as much consistency across European economic policies as possible and will thus view Ireland’s corporate tax rate as an outlier from the rest of the EU. Some members view it an unfair advantage and wish to see it removed."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2021-hl-q13-b-ii",
+  "topicId": "economics-2-2",
+  "conceptId": "fixing-information-failure",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 HL Q13(b)(ii)",
+  "questionText": "Misinformation to consumers by technology retailers is a market failure. Evaluate how Government intervention in this market could address this market failure.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 6",
+   "answer": 1,
+   "ofParts": 4,
+   "perPart": 6
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A form of intervention — any one",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One point, 6 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Increased public awareness The solution to information failure is better access to information. If the government allocates more resources to promoting citizens information websites such as www.citizensinformation.ie then consumers will be less likely to be exploited in the future and provide more knowledge about how to deal with past exploitations.",
+      "Government legislation/regulation and enforcement The government could introduce new legislation and regulations in relation to the misleading of consumers where deemed necessary. The Consumer Protection Act 2007 could be amended to ensure these types of behaviours by retailers don’t go unchecked.",
+      "Increased penalties for offenders If the likelihood of being caught and the penalty for misinformation of consumers were both increased it may decrease the number of offenders as they will be deterred from participation.",
+      "Increased accuracy of information The government could make it a requirement of firms to publish their annual product price lists at the end of every year so that consumers can track when the product was the cheapest/ most expensive across the year."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2021-hl-q13-b-iii",
+  "topicId": "economics-1-3",
+  "conceptId": "advantages-of-regulation",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 HL Q13(b)(iii)",
+  "questionText": "Explain, giving an example, one advantage of a government regulation.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 6",
+   "answer": 1,
+   "ofParts": 6,
+   "perPart": 6
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An advantage of regulation — any one",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One advantage, 6 marks: the marks split between the point and the example.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Health and safety regulations Consumers are protected from substandard and unsafe products through regulations imposed by the Irish Government and the EU.",
+      "Protects consumers from exploitation Government regulation of large firms may help to reduce the likelihood of consumers earning large supernormal profits at the expense of consumers.",
+      "Prevent anti-competitive behaviour / growth of monopolies Regulation can put an end to cartels between competing firms and can also assess whether or not a merger would be competitive within an industry.",
+      "Increases competition in the industry Depending on how regulations are implemented in an industry it may lead to a reduction in the ability of firms to restrict supply and charge exploitative prices.",
+      "Environmental protection Government regulations may lead to improved protection of the environment through reduced use of resources and generation of pollution.",
+      "Employment Laws Employment laws ensure the protection of consumers through safe working environments and proper pay for their work."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2021-hl-q14-b-ii",
+  "topicId": "economics-3-3",
+  "conceptId": "government-tools-against-inflation",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 HL Q14(b)(ii)",
+  "questionText": "Explain one method the government could use to address rising inflation.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 7",
+   "answer": 1,
+   "ofParts": 3,
+   "perPart": 7
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A method against inflation — any one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "One method, 7 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "Increase direct taxation With less income in their pocket’s consumers may spend less in the economy thus reducing demand-pull inflation.",
+      "Decrease government current expenditure Government expenditure is an injection into the circular flow of income. Decreasing government current expenditure decreases aggregate demand and thus demand-pull inflation in the economy.",
+      "Reduce cost of government provided utilities If the government reduces charges on government provided utilities it will reduce the cost of production of firms and thus reduce cost push inflation."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2021-hl-q15-a",
+  "topicId": "economics-3-0",
+  "conceptId": "gni-or-gdp-for-welfare",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 HL Q15(a)",
+  "questionText": "Which measure is a more accurate indicator of Ireland’s economic welfare: gross national income or gross domestic product? Justify your answer.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 7",
+   "answer": 1,
+   "ofParts": 2,
+   "perPart": 7
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A case for one measure — either one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "One justification, 7 marks. The scheme sets out the case for each measure; gross national income is the one that counts income actually accruing to Irish residents.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "Gross national income is a more accurate measure of economic welfare of Irish citizens as it is income that is received by the permanent domestic residents of the country. It excludes those incomes which are generated by the owners of a large part of the capital stock who are non-residents. The level of GNI is over one-fifth lower than the level of GDP.",
+      "Gross domestic product is a measure of the total incomes arising from the production of goods and services in Ireland. The owners of a large part of the capital stock are non- residents. A consequence of this is that a significant part of the income arising from the production of goods and services in Ireland accrues to the foreign owners of capital assets in Ireland. Hence GDP overstates the living standards of Irish residents. GNI: income to permanent domestic residents / excludes incomes to foreign owners of capital"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2021-hl-q15-c-iii",
+  "topicId": "economics-3-0",
+  "conceptId": "the-multiplier-in-reverse",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 HL Q15(c)(iii)",
+  "questionText": "Discuss two possible negative multiplier effects if a large corporation moved its staff to remote working.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 7",
+   "answer": 2,
+   "ofParts": 3,
+   "perPart": 7
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A negative multiplier effect — any two",
+    "marks": 14,
+    "openList": true,
+    "contextNote": "Two effects, 7 marks each.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 7,
+     "options": [
+      "Reduced demand for goods and services Businesses in the area won’t benefit from the custom of Google’s employees anymore, this will mean less revenue for, and less expenditure from these businesses. Employment in these businesses will fall.",
+      "Reduced demand for public transport Employees won’t need to use transport, public and private, to get to the premises and so incomes are lost for transport companies with a possible reduction in employment.",
+      "Effect on government finances With lost rents; reduced spending and a reduction in business activity taxation revenue to the government will fall which may be compensated for by increased government expenditure. Effect on multiplier depends will depend on the extent of increased government expenditure to outweigh the reduction in government revenues."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2021-hl-q16-b-ii-social",
+  "topicId": "economics-2-1",
+  "conceptId": "social-case-for-the-minimum-wage",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 HL Q16(b)(ii) — social",
+  "questionText": "Explain one SOCIAL reason why the Irish government has increased the national minimum wage.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 5",
+   "answer": 1,
+   "ofParts": 3,
+   "perPart": 5
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A social reason — any one",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One reason, 5 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Introduce a more equitable distribution of income People who were on lower levels of pay will now receive a higher minimum level of pay and this helps to re-distribute wealth within a country.",
+      "Protection of the most vulnerable under law Workers who may be vulnerable are now better protected by law from exploitation by unfair employers.",
+      "Reduce problem of poverty An increased minimum wage will ensure that wages from paid work will result in a living wage and this will help reduce poverty within the country."
+     ]
+    }
+   }
+  ],
+  "notes": "The part asks for one of each and the scheme heads the two lists separately, so each side is its own card."
+ },
+ {
+  "id": "econ-2021-hl-q16-b-ii-economic",
+  "topicId": "economics-2-1",
+  "conceptId": "economic-case-for-the-minimum-wage",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 HL Q16(b)(ii) — economic",
+  "questionText": "Explain one ECONOMIC reason why the Irish government has increased the national minimum wage.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 5",
+   "answer": 1,
+   "ofParts": 4,
+   "perPart": 5
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An economic reason — any one",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One reason, 5 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Economic reasons:",
+      "Increase worker’s standard of living By providing for an increased minimum wage workers disposable income increases and their standard of living increases.",
+      "Increase the incentive to work When workers see that pay levels are rising then it may attract more people into the workforce / help retain current workers / help increase productivity.",
+      "Boost economic growth Higher incomes will mean increased spending within the economy and will help boost economic growth / employment."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "econ-2021-hl-sa-q1-b",
   "topicId": "economics-4-2",
   "conceptId": "why-a-trade-surplus-is-an-aim",
@@ -1743,6 +2083,90 @@
    }
   ],
   "notes": "The three unlabelled flows are the ones a student has to supply; the rest of the diagram names its own."
+ },
+ {
+  "id": "econ-2021-ol-q13-a-iii",
+  "topicId": "economics-3-3",
+  "conceptId": "monetary-policy-and-price-stability",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 OL Q13(a)(iii)",
+  "questionText": "Monetary policy and delivering price stability is a concern for everyone. Explain one of the terms in bold in the statement above.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 8",
+   "answer": 1,
+   "ofParts": 2,
+   "perPart": 8
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "One of the two terms — either one",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "One term, 8 marks. The part offers a choice of the two, so either earns the marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 8,
+     "options": [
+      "Monetary Policy: actions taken by the ECB which influences the money supply, interest rates, the availability of credit in Ireland and the rest of the Euro Area.",
+      "Price stability: this is maintaining prices at a constant/unchanging level/avoiding inflation within the economy."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2021-ol-q13-c-iii-types",
+  "topicId": "economics-3-3",
+  "conceptId": "types-of-inflation-ol",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 OL Q13(c)(iii)",
+  "questionText": "The general prices of goods and services rose in Ireland during 2000 to 2007. Explain one type of inflation that could account for this.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 7",
+   "answer": 1,
+   "ofParts": 4,
+   "perPart": 7
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A type of inflation — any one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "One type, 7 marks. The scheme names demand-pull, cost-push and imported inflation.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "Demand pull inflation occurs when the total/aggregate demand for goods and services is greater than the total/aggregate supply of goods and services. There is excess demand which pulls up the price level.",
+      "Cost push inflation occurs when the source of upward pressure on prices is the rising costs of the factors of production i.e. costs rises without a corresponding improvement in productivity. This increase in costs is then passed onto consumers in the form of higher prices.",
+      "Imported inflation Imported raw materials from abroad have increased in price leading to an increase in the prices of finished products in the home market.",
+      "Government induced inflation occurs when the government increase the level of VAT and consequently cause inflation."
+     ]
+    }
+   }
+  ],
+  "notes": ""
  },
  {
   "id": "econ-2021-ol-sa-q10-b",
@@ -4001,6 +4425,176 @@
    }
   ],
   "notes": "Abbreviations are not accepted."
+ },
+ {
+  "id": "econ-2022-ol-q13-a-ii-expenditure",
+  "topicId": "economics-3-1",
+  "conceptId": "current-versus-capital-spending",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 OL Q13(a)(ii)",
+  "questionText": "Explain current OR capital government expenditure, using a relevant example to support your answer.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 9",
+   "answer": 1,
+   "ofParts": 3,
+   "perPart": 9
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "One of the two kinds of spending — either one",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "One explanation with an example, 9 marks. Capital spending buys something that lasts; current spending is the day-to-day bill.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 9,
+     "options": [
+      "Capital expenditure: Capital expenditure is spending by the government on items that will last a long period of time or once-off expenditure / spending on infrastructure.",
+      "Example: building a school or building a hospital. OR Current expenditure is spending on the day-to-day expenses involved in the running of the country.",
+      "Example: salaries of state employees, pensions, social welfare payments"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-ol-q13-c-i",
+  "topicId": "economics-1-1",
+  "conceptId": "why-consumer-spending-rose",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 OL Q13(c)(i)",
+  "questionText": "Outline one possible reason for the increase in consumer spending in Ireland in 2023.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 10",
+   "answer": 1,
+   "ofParts": 3,
+   "perPart": 10
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason spending rose — any one",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "One reason, 10 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 10,
+     "options": [
+      "The easing of health restrictions: allowed consumers who were able, to shop in person.",
+      "Pent up demand: during the pandemic citizens had built up savings (over €31bn by Nov 2021) and so had more disposable income allowing them to spend.",
+      "Shops opened: consumers had access to retail outlets that were not available for most of the pandemic."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-ol-q14-b-i",
+  "topicId": "economics-1-3",
+  "conceptId": "the-case-for-water-charges",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 OL Q14(b)(i)",
+  "questionText": "Outline one economic argument in favour of the reintroduction of water charges.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 7",
+   "answer": 1,
+   "ofParts": 4,
+   "perPart": 7
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An argument for water charges — any one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "One argument, 7 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "Better use of a scare resource: consumers will be more careful with the quantity of water they consume so will lead to conservation of water.",
+      "Current use of revenue received: the money received can be used to upgrade the water system / improve quality of water.",
+      "Invest in infrastructure: in the long term the water provision and waste water treatment systems in Ireland can be made more sustainable.",
+      "Innovation with regard to conservation of water: may be encouraged by the charges e.g. businesses / households using rainwater."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-ol-q15-a-ii",
+  "topicId": "economics-3-1",
+  "conceptId": "what-corporation-tax-pays-for",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 OL Q15(a)(ii)",
+  "questionText": "Explain the benefits of the government collecting corporation tax.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 9",
+   "answer": 1,
+   "ofParts": 4,
+   "perPart": 9
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A benefit of the revenue — any one",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "One benefit, 9 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 9,
+     "options": [
+      "Provides revenue for the government / finance government activities: the government requires tax revenue to fund the daily operation of the country e.g. defence, policing etc",
+      "Provide public services: the government requires tax revenue to provide services such as health care, schools etc. which are essential for citizens.",
+      "Help to re-distribute wealth: the government can re-distribute the taxation collected in the form of social welfare payments to those citizens who require it e.g. old age pensions, single parent allowances etc",
+      "Promote / support industry: subsidies, grants can be provided to help industry and encourage enterprise, employment and training. 2 concepts: increased revenue 6 to provide additional services for citizens 3"
+     ]
+    }
+   }
+  ],
+  "notes": ""
  },
  {
   "id": "econ-2022-ol-sa-q2-ii",
@@ -9391,27 +9985,27 @@
   "year": 2024,
   "subjectId": "economics",
   "section": "B",
-  "questionRef": "2024 OL Q14(a)(ii)",
+  "questionRef": "2024 OL Q14(c)(ii)",
   "questionText": "Outline two reasons why exports are important for the Irish economy.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "2 @ 6",
-   "answer": 2,
-   "ofParts": 7,
-   "perPart": 6
+   "kind": "fixed",
+   "notation": "1 @ 6+1 @ 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
   },
-  "totalMarks": 12,
+  "totalMarks": 10,
   "rows": [
    {
     "id": "r-1",
     "kind": "anyN",
     "verbatim": "A reason exports matter — any two",
-    "marks": 12,
+    "marks": null,
     "openList": true,
-    "contextNote": "Two reasons, 6 marks each.",
+    "contextNote": "Two reasons, the first paid 6 and the second 4.",
     "group": {
      "claimMax": 2,
      "perOption": 6,
@@ -9423,6 +10017,10 @@
       "Exports can attract investment: A strong export performance will increase confidence in the Irish economy and may help attract further foreign direct investment (FDI) into Ireland. FDI can lead to job creation, technology transfers, and increased productivity. •",
       "Exports can lead to specialisation and the benefits of comparative advantage: By focusing on exporting products and services in which Ireland has a comparative advantage, Ireland can efficiently allocate its resources and maximise its overall economic performance. •",
       "Exports may enhance international relations: A strong export sector can bolster Ireland's international reputation and diplomatic relations, leading to increased cooperation and potential access to new markets."
+     ],
+     "perOptionSteps": [
+      6,
+      4
      ]
     }
    }
@@ -9982,56 +10580,6 @@
       "It creates jobs: The tourism and hospitality industry employ over 200,000 people in Ireland, with many jobs being seasonal or part-time. A 9% VAT rate can encourage businesses to expand, creating more job opportunities and supporting local communities, especially in rural areas. •",
       "It stimulates economic growth: A thriving tourism and hospitality industry can have positive spillover effects on other sectors of the economy, such as transportation, retail, and agriculture. With a 9% VAT rate, the government can help stimulate overall economic growth and increase tax revenues from other sources. •",
       "It promotes our cultural heritage: A 9% VAT rate can encourage more people to visit and appreciate Ireland's rich cultural heritage, including historical sites, museums, and local festivals. This can help preserve and promote Irish culture and traditions, both domestically and internationally."
-     ]
-    }
-   }
-  ],
-  "notes": ""
- },
- {
-  "id": "econ-2024-ol-q14-c-ii",
-  "topicId": "economics-4-2",
-  "conceptId": "why-exports-matter-2024",
-  "level": "ordinary",
-  "year": 2024,
-  "subjectId": "economics",
-  "section": "B",
-  "questionRef": "2024 OL Q14(c)(ii)",
-  "questionText": "Outline two reasons why exports are important for the Irish economy.",
-  "stem": "",
-  "figureKey": "",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "1 @ 6+1 @ 4",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
-  },
-  "totalMarks": 10,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "A reason exports matter — any two",
-    "marks": null,
-    "openList": true,
-    "contextNote": "Two reasons, the first paid 6 and the second 4.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 6,
-     "options": [
-      "Exports can help create employment: If exports exceed imports this means increased demand abroad for goods produced in Ireland, leading to increased employment both directly and indirectly from export-oriented firms. •",
-      "Exports increase sales / profits for domestic firms: If exports exceed imports, then this may mean that domestic firms increase their sales/profits by exporting their excess output onto a foreign market / they may generate economies of scale. •",
-      "Exports can increase economic growth: The monies received from exports (injected into the circular flow of income) can lead to increased incomes within the country. •",
-      "Exports can increase the tax returns to the Irish exchequer: Increased economic activity will generate increased tax revenues for the government e.g. VAT / PAYE / CT/ which can be used to fund public services and infrastructure projects. •",
-      "Exports can attract investment: A strong export performance will increase confidence in the Irish economy and may help attract further foreign direct investment (FDI) into Ireland. FDI can lead to job creation, technology transfers, and increased productivity. •",
-      "Exports can lead to specialisation and the benefits of comparative advantage: By focusing on exporting products and services in which Ireland has a comparative advantage, Ireland can efficiently allocate its resources and maximise its overall economic performance. •",
-      "Exports may enhance international relations: A strong export sector can bolster Ireland's international reputation and diplomatic relations, leading to increased cooperation and potential access to new markets."
-     ],
-     "perOptionSteps": [
-      6,
-      4
      ]
     }
    }

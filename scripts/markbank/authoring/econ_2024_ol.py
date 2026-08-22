@@ -136,8 +136,11 @@ P.menu('reasons why exports are important for the Irish economy', 'econ-2024-ol-
        'economics-4-2', 'importance-of-exports',
        'Outline two reasons why exports are important for the Irish economy.',
        'A reason exports matter — any two',
-       'Two reasons, 6 marks each.',
-       claim=2, per=6, drop=SCAFFOLD)
+       # The scheme prints ⟨1 @ 6⟩ and ⟨1 @ 4⟩ against this part, not 6 twice.
+       # Found on the second pass, when a duplicate-text check paired this card
+       # with a new one written from the same block of scheme.
+       'Two reasons, the first paid 6 and the second 4.',
+       steps=[6, 4], drop=SCAFFOLD)
 
 
 # ── A figure card ───────────────────────────────────────────────────────────
@@ -276,13 +279,6 @@ P.menu('9% VAT rate for the tourism and hospitality industry would return',
        'One explanation, 7 marks.',
        ref='2024 OL Q14(b)(iii) — disagree', claim=1, per=7,
        drop=SCAF, after='DISAGREE Explanation')
-
-P.menu('two reasons why exports are important for the Irish economy', 'econ-2024-ol-q14-c-ii',
-       'economics-4-2', 'why-exports-matter-2024',
-       'Outline two reasons why exports are important for the Irish economy.',
-       'A reason exports matter — any two',
-       'Two reasons, the first paid 6 and the second 4.',
-       ref='2024 OL Q14(c)(ii)', steps=[6, 4], drop=SCAF)
 
 P.menu('why you think global population has grown so rapidly', 'econ-2024-ol-q16-a-i',
        'economics-3-5', 'why-world-population-grew',

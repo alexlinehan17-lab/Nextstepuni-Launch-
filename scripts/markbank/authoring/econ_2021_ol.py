@@ -149,4 +149,26 @@ P.cards.append(card(
                {'letter': '2', 'meaning': 'Savings', 'askedInThisQuestion': True},
                {'letter': '3', 'meaning': 'Exports', 'askedInThisQuestion': True}]))
 
+
+# ── Section B, second pass ──────────────────────────────────────────────────
+P.menu('Monetary policy and delivering price stability', 'econ-2021-ol-q13-a-iii',
+       'economics-3-3', 'monetary-policy-and-price-stability',
+       'Monetary policy and delivering price stability is a concern for everyone. Explain one of '
+       'the terms in bold in the statement above.',
+       'One of the two terms — either one',
+       'One term, 8 marks. The part offers a choice of the two, so either earns the marks.',
+       ref='2021 OL Q13(a)(iii)', claim=1, per=8,
+       drop=('Possible responses', 'Suggested responses'))
+
+P.menu('general prices of goods and services rose in Ireland',
+       # the plain id is taken by an earlier card on this paper
+       'econ-2021-ol-q13-c-iii-types',
+       'economics-3-3', 'types-of-inflation-ol',
+       'The general prices of goods and services rose in Ireland during 2000 to 2007. Explain one '
+       'type of inflation that could account for this.',
+       'A type of inflation — any one',
+       'One type, 7 marks. The scheme names demand-pull, cost-push and imported inflation.',
+       ref='2021 OL Q13(c)(iii)', claim=1, per=7,
+       drop=('Possible responses', 'Suggested responses'))
+
 P.emit()

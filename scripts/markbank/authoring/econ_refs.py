@@ -60,6 +60,11 @@ CORRECTIONS = {
     'econ-2025-ol-q16-a-iii': '2025 OL Q16(b)(iii)',
     'econ-2025-ol-q16-b-i-ag': '2025 OL Q16(c)(i) — agricultural sector',
     'econ-2025-ol-q16-b-i-ind': '2025 OL Q16(c)(i) — industrial sector',
+    # 2024 OL Q14(a)(ii) is "outline one reason why the Irish government
+    # contributes to the EU Budget". The exports question is Q14(c)(ii). Found
+    # when a duplicate-question-text check paired this card with a new one
+    # written from the same block of the scheme.
+    'econ-2024-ol-q14-a-ii': '2024 OL Q14(c)(ii)',
 }
 
 
@@ -91,4 +96,21 @@ HAND_CHECKED = {
     # question head and there is nothing left of it to mark against. Read
     # against the 2024 Higher paper: question 8(a).
     'econ-2024-hl-sa-q8-a',
+}
+
+
+# Cards deliberately withdrawn, and why. rebaseline.py refuses to drop a card id
+# that is not listed here, because a vanished id is normally a slicing accident
+# and the whole point of the baseline is to catch it. A withdrawal has to be a
+# decision someone wrote down.
+WITHDRAWN = {
+    # Shipped 22 August 2026 in the Section B backlog pass and withdrawn the same
+    # day. It asked the identical question of the identical paper as
+    # econ-2024-ol-q14-a-ii — "outline two reasons why exports are important for
+    # the Irish economy" — because that card's id counts the wrong question
+    # (Q14(a)(ii) is the EU Budget question) and the part-path heuristic put the
+    # exports part one letter away, so the coverage check could not see it. The
+    # older id is kept because a student's review history is on it; its citation
+    # and its tariff are corrected above and in econ_2024_ol.py.
+    'econ-2024-ol-q14-c-ii',
 }

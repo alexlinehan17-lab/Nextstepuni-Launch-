@@ -228,4 +228,67 @@ P.cards.append(card(
                {'letter': '3', 'meaning': 'Demand / Average Revenue', 'askedInThisQuestion': True},
                {'letter': '4', 'meaning': 'Marginal Revenue', 'askedInThisQuestion': True}]))
 
+
+# ── Section B, second pass ──────────────────────────────────────────────────
+P.menu('European Commission want to remove this power', 'econ-2021-hl-q12-b-ii',
+       'economics-4-2', 'why-brussels-wants-tax-harmony',
+       'Outline one reason why the European Commission wants to remove the power to set '
+       'corporation tax from the Irish government.',
+       'A reason the Commission wants it — any one', 'One reason, 7 marks.',
+       ref='2021 HL Q12(b)(ii)', claim=1, per=7, drop=SCAFFOLD)
+
+P.menu('Government intervention in this market could address', 'econ-2021-hl-q13-b-ii',
+       'economics-2-2', 'fixing-information-failure',
+       'Misinformation to consumers by technology retailers is a market failure. Evaluate how '
+       'Government intervention in this market could address this market failure.',
+       'A form of intervention — any one', 'One point, 6 marks.',
+       ref='2021 HL Q13(b)(ii)', claim=1, per=6, drop=SCAFFOLD)
+
+P.menu('one advantage of a government regulation', 'econ-2021-hl-q13-b-iii',
+       'economics-1-3', 'advantages-of-regulation',
+       'Explain, giving an example, one advantage of a government regulation.',
+       'An advantage of regulation — any one',
+       'One advantage, 6 marks: the marks split between the point and the example.',
+       ref='2021 HL Q13(b)(iii)', claim=1, per=6, drop=SCAFFOLD)
+
+P.menu('method the government could use to address rising inflation', 'econ-2021-hl-q14-b-ii',
+       'economics-3-3', 'government-tools-against-inflation',
+       'Explain one method the government could use to address rising inflation.',
+       'A method against inflation — any one', 'One method, 7 marks.',
+       ref='2021 HL Q14(b)(ii)', claim=1, per=7, drop=SCAFFOLD)
+
+P.menu('more accurate indicator of Ireland', 'econ-2021-hl-q15-a',
+       'economics-3-0', 'gni-or-gdp-for-welfare',
+       'Which measure is a more accurate indicator of Ireland’s economic welfare: gross national '
+       'income or gross domestic product? Justify your answer.',
+       'A case for one measure — either one',
+       'One justification, 7 marks. The scheme sets out the case for each measure; gross national '
+       'income is the one that counts income actually accruing to Irish residents.',
+       ref='2021 HL Q15(a)', claim=1, per=7, drop=SCAFFOLD)
+
+P.menu('negative multiplier effects of large corporations', 'econ-2021-hl-q15-c-iii',
+       'economics-3-0', 'the-multiplier-in-reverse',
+       'Discuss two possible negative multiplier effects if a large corporation moved its staff to '
+       'remote working.',
+       'A negative multiplier effect — any two', 'Two effects, 7 marks each.',
+       ref='2021 HL Q15(c)(iii)', claim=2, per=7, drop=SCAFFOLD + ('Possible Responses',))
+
+P.menu('one social reason and one economic reason', 'econ-2021-hl-q16-b-ii-social',
+       'economics-2-1', 'social-case-for-the-minimum-wage',
+       'Explain one SOCIAL reason why the Irish government has increased the national minimum '
+       'wage.',
+       'A social reason — any one', 'One reason, 5 marks.',
+       ref='2021 HL Q16(b)(ii) — social', claim=1, per=5,
+       drop=SCAFFOLD + ('Social reasons:',), stop='Economic reasons:',
+       notes='The part asks for one of each and the scheme heads the two lists separately, so '
+             'each side is its own card.')
+
+P.menu('one social reason and one economic reason', 'econ-2021-hl-q16-b-ii-economic',
+       'economics-2-1', 'economic-case-for-the-minimum-wage',
+       'Explain one ECONOMIC reason why the Irish government has increased the national minimum '
+       'wage.',
+       'An economic reason — any one', 'One reason, 5 marks.',
+       ref='2021 HL Q16(b)(ii) — economic', claim=1, per=5,
+       drop=SCAFFOLD, after='Economic reasons:')
+
 P.emit()
