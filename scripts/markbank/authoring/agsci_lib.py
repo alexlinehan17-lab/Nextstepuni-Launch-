@@ -49,6 +49,20 @@ def part_ref(year, level, q, letter=None, roman=None):
             + (f'({letter})' if letter else '') + (f'({roman})' if roman else ''))
 
 
+def _unstar(text):
+    """Drop the scheme's essential-answer asterisk from a marking point.
+
+    It is an instruction to the examiner — award nothing for a near miss — not
+    part of what a candidate writes. Agricultural Science prints it trailing
+    ("Oilseed rape*") where the other subjects print it leading, and only the
+    leading form was being removed.
+
+    Cards that want the distinction on their face use the 'gate' row kind and say
+    so in a note; this is for the ordinary case, where it is noise.
+    """
+    return text.strip().strip('*').strip()
+
+
 class Refused(Exception):
     """A card that would have shipped wrong."""
 
@@ -145,7 +159,7 @@ class Author:
                 if not taken:
                     raise Refused(f'{ref}: run {run[point_index]!r} yields nothing '
                                   f'for {token_index}')
-                candidates.append(' '.join(taken).lstrip('*').strip())
+                candidates.append(_unstar(' '.join(taken)))
             use = list(range(len(candidates))) if use is None else use
         elif from_run is not None:
             parent, point_index, token_index = from_run

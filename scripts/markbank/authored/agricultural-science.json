@@ -33543,6 +33543,45 @@
   "figureKey": "agricultural-science-2021-OL-paper-p11-art"
  },
  {
+  "id": "agsci-2021-ol-q1a",
+  "topicId": "agsci-3-2",
+  "conceptId": "identifying-crop-and-sward-plants",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2021 OL Q1(a)",
+  "questionText": "Identify each of the following plants by placing a tick () in the correct box.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 each"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Oilseed rape",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Barley",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Clover",
+    "marks": 2
+   }
+  ],
+  "stem": "Soyabean Cocksfoot Or",
+  "notes": "The scheme marks each of these essential, so a near miss scores nothing: the barley is told from wheat by the long awns on the ears.",
+  "figureKey": "agricultural-science-2021-OL-paper-p03-art"
+ },
+ {
   "id": "agsci-2022-hl-q16ci",
   "topicId": "agsci-3-2",
   "conceptId": "named-grazing-systems",

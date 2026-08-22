@@ -79,6 +79,20 @@ MARK_TAIL = re.compile(
     r'|\s*\[\s*accept\s+partial\s+answer[^\]]*\])+\s*$', re.I)
 
 
+def _unstar(text):
+    """Drop the scheme's essential-answer asterisk from a marking point.
+
+    It is an instruction to the examiner — award nothing for a near miss — not
+    part of what a candidate writes. Agricultural Science prints it trailing
+    ("Oilseed rape*") where the other subjects print it leading, and only the
+    leading form was being removed.
+
+    Cards that want the distinction on their face use the 'gate' row kind and say
+    so in a note; this is for the ordinary case, where it is noise.
+    """
+    return text.strip().strip('*').strip()
+
+
 class Refused(Exception):
     """A card that would have shipped wrong."""
 
@@ -200,7 +214,7 @@ class Author:
                 if not taken:
                     raise Refused(f'{ref}: run {run[point_index]!r} yields nothing '
                                   f'for {token_index}')
-                candidates.append(' '.join(taken).lstrip('*').strip())
+                candidates.append(_unstar(' '.join(taken)))
             use = list(range(len(candidates))) if use is None else use
         elif from_run is not None:
             parent, point_index, token_index = from_run
@@ -216,12 +230,12 @@ class Author:
                 # The scheme marks an essential answer with a leading asterisk;
                 # it is an annotation to the examiner, not part of the answer,
                 # and no card in any deck carries one.
-                candidates = [' '.join(taken).lstrip('*').strip()]
+                candidates = [_unstar(' '.join(taken))]
             else:
                 if token_index >= len(tokens):
                     raise Refused(f'{ref}: run {run[point_index]!r} has no token '
                                   f'{token_index}')
-                candidates = [tokens[token_index].lstrip('*').strip()]
+                candidates = [_unstar(tokens[token_index])]
             use = [0] if use is None else use
         elif tick is None:
             candidates = scheme.points(q, letter, roman)

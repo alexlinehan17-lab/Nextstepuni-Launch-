@@ -6593,6 +6593,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q1a", topicId: "agsci-3-2", conceptId: "identifying-crop-and-sward-plants",
+    section: "A", questionRef: "2021 OL Q1(a)",
+    stem: "Soyabean Cocksfoot Or",
+    questionText: "Identify each of the following plants by placing a tick () in the correct box.",
+    tariffModel: {"kind":"fixed","notation":"2 each"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Oilseed rape", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "Barley", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "Clover", marks: 2 },
+    ],
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p03-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p03-art.png",
+          "srcHash": "fec683e54b764d371929c91c270996ea",
+          "alt": "Three colour photographs stacked down the page, each marked (i), (ii) or (iii) to its left and followed on the right by four named tick boxes. (i) a field in full yellow flower stretching to the horizon with a wheeled sprayer working across it, boom extended; its four boxes read Soyabean, Cocksfoot, Oilseed Rape, Maize. (ii) close-up of ripe golden cereal ears against a blue sky, each ear carrying long straight bristles much longer than the grain; its boxes read Wheat, Barley, Linseed, Oats. (iii) close-up of dense green ground cover of rounded three-lobed leaves beaded with water, with a single white globe flower at the left; its boxes read Plantain, Clover, Dandelion, Chicory. Every tick box is empty.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2022, level: "ordinary",
     paperFileid: "LC024GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",

@@ -58,4 +58,20 @@ A.card(8, 'b', 'i', topic='agsci-1-5', concept='reading-a-farm-safety-sign',
        use=[[0, 1]], marks=[2],
        figure='agricultural-science-2021-OL-paper-p11-art')
 
+# ── Q1(a): the plant plate ────────────────────────────────────────────────
+# Three photographs, each with four named tick boxes, two marks a part. Carded
+# as one question rather than three: the paper's block segmentation merges one
+# part's four option names with the next part's, so no part can carry its own
+# option list as lifted text. The options are reliable only as printed, in the
+# picture, which is what the figure shows.
+A.card(1, 'a', topic='agsci-3-2', concept='identifying-crop-and-sward-plants',
+       source='pdf',
+       from_runs=[((1, 'a', 'i'), 0, slice(0, 2)),
+                  ((1, 'a', 'ii'), 0, slice(0, 1)),
+                  ((1, 'a', 'iii'), 0, slice(0, 1))],
+       marks=[2, 2, 2], notation='2 each',
+       figure='agricultural-science-2021-OL-paper-p03-art',
+       notes='The scheme marks each of these essential, so a near miss scores nothing: '
+             'the barley is told from wheat by the long awns on the ears.')
+
 A.emit()

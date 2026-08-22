@@ -142,6 +142,13 @@ def main() -> int:
              "question. Read the page with a block dump to find the y to cut at.",
     )
     ap.add_argument(
+        "--top", type=float, default=None,
+        help="cut the crop at this y on the page, in points, instead of at the top of "
+             "the artwork. Needed where one question stacks several pictures down a "
+             "page and each is a part of its own — the 2021 Ordinary Level plant "
+             "identification has three, and the extent covers all three at once.",
+    )
+    ap.add_argument(
         "--left", type=float, default=None,
         help="cut the crop at this x on the page, in points, instead of at the left "
              "edge of the artwork. The 2021 Ordinary Level farm safety sign sits to the "
@@ -175,7 +182,8 @@ def main() -> int:
               else box.y1 + PAD * 2.5 + args.pad_bottom)
     left = args.left if args.left is not None else box.x0 - PAD
     right = args.right if args.right is not None else box.x1 + PAD
-    box = fitz.Rect(left, box.y0 - PAD - args.pad_top, right, bottom) & page.rect
+    top = args.top if args.top is not None else box.y0 - PAD - args.pad_top
+    box = fitz.Rect(left, top, right, bottom) & page.rect
     pix = page.get_pixmap(clip=box, matrix=fitz.Matrix(args.scale, args.scale))
     args.out.parent.mkdir(parents=True, exist_ok=True)
     pix.save(args.out)

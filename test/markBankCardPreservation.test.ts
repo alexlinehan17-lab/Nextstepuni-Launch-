@@ -36,7 +36,7 @@ const decks = [
   ['physics:higher', PHYS_HIGHER, 438, '0dc7b01caec39b044d08470a825077263053d0497705df14ecf6e37af28b6731'],
   ['physics:ordinary', PHYS_ORDINARY, 454, 'e6397f59f9a574971b8fb48048845d1bcc7532be463213f70af6ce6107e9dcc0'],
   ['agricultural-science:higher', AGSCI_HIGHER, 438, '31e25662626e35ca1db55e96e1cdfe0492648666c6cd35365f2c1e6d92c35f6a'],
-  ['agricultural-science:ordinary', AGSCI_ORDINARY, 428, 'c519fcd894c33ed82ee1f074f750bca810690280b7c570cc246df74f46d4b9ad'],
+  ['agricultural-science:ordinary', AGSCI_ORDINARY, 429, '338c18162213c261ee39334c32c7e864011a2f25c5a6fc3be8e17400df147a39'],
   ['business:higher', BUSINESS_HIGHER, 272, 'a61655818cee2ce61307eb08fe6dad282193791674b4e5e8a893e203b64af976'],
   ['business:ordinary', BUSINESS_ORDINARY, 334, '6d62fbc00d4b0f4c411cd23c17d76ddaa63cb066325bb2974c881c8b81073b18'],
   ['home-economics:higher', HOME_EC_HIGHER, 298, '0993532438e360013ca6930c425db0b9c398b886673a4029ad6df0c9c467b49d'],
@@ -57,6 +57,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(5_320);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(5_321);
   });
 });
