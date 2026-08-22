@@ -26,7 +26,17 @@ AUTHORED = os.path.join(ROOT, 'scripts/markbank/authored/agricultural-science.js
 OWNED = os.path.join(ROOT, 'scripts/markbank/authored/agricultural-science-script-ids.json')
 
 scripts = sorted(f for f in os.listdir(DIR)
-                 if re.fullmatch(r'agsci_\d{4}_(hl|ol)\.py', f))
+                 if re.fullmatch(r'agsci_\d{4}_(hl|ol)(_\w+)?\.py', f))
+
+# Ids a script deliberately takes over from the hand-authored set, because it
+# writes a better card for the same part — usually the same question now
+# carrying the figure it refers to. Listed here rather than inferred, so a
+# script cannot quietly replace hand-written work: that is the one failure in
+# this merge that would leave no trace. Removing an id from this list puts the
+# hand-authored card back.
+ADOPTED = {
+    'agsci-2023-ol-q14b-iii',   # 2023 OL Q14(b)(iii), now carries the river diagrams
+}
 
 existing = json.load(open(AUTHORED))
 owned = set(json.load(open(OWNED))) if os.path.exists(OWNED) else set()
@@ -53,9 +63,14 @@ for name in scripts:
 kept = [c for c in existing if c['id'] not in owned]
 hand = {c['id'] for c in kept}
 for c in fresh:
-    if c['id'] in hand:
+    if c['id'] in hand and c['id'] not in ADOPTED:
         failed.append(f"{c['id']} collides with a hand-authored card — "
-                      f"rename it or adopt the existing card into a script")
+                      f"rename it, or add it to ADOPTED to mean the takeover")
+adopted = {c['id'] for c in fresh} & ADOPTED
+if adopted:
+    kept = [c for c in kept if c['id'] not in adopted]
+    for i in sorted(adopted):
+        print(f'  adopting {i} from the hand-authored set', file=sys.stderr)
 
 merged = kept + fresh
 

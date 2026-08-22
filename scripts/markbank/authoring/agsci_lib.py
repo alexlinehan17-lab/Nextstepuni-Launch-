@@ -29,6 +29,7 @@ import sys
 
 from agsci_paper import Paper
 from agsci_scheme import Scheme
+from agsci_scheme_pdf import SchemePdf
 
 ROMAN_ORDER = ['i', 'ii', 'iii', 'iv', 'v', 'vi']
 # 'A = Buttercup', 'B: Graduated cylinder', 'C - Simmental'. The label is the
@@ -58,13 +59,22 @@ class Author:
         self.long_level = 'higher' if level == 'hl' else 'ordinary'
         self.paper = Paper(year, level)
         self.scheme = Scheme(year, level)
+        # The PDF-backed parser, for parts the flattened markdown mangles. See
+        # agsci_scheme_pdf: neither parser dominates, so the choice is per part.
+        self.scheme_pdf = SchemePdf(year, level)
         self.cards = []
 
+    def _source(self, source):
+        if source not in ('md', 'pdf'):
+            raise Refused(f'unknown scheme source {source!r} — use "md" or "pdf"')
+        return self.scheme_pdf if source == 'pdf' else self.scheme
+
     # -- the scheme's offer, for deciding what to card -----------------------
-    def offer(self, q, letter=None, roman=None):
+    def offer(self, q, letter=None, roman=None, source='md'):
         """What the two documents hold for this part. Printing aid, not a card."""
-        pts = self.scheme.points(q, letter, roman)
-        ok, _ = self.scheme.verify(pts)
+        scheme = self._source(source)
+        pts = scheme.points(q, letter, roman)
+        ok, _ = scheme.verify(pts)
         ok = set(ok)
         # Indexed over EVERY candidate, traceable or not, because card()'s `use`
         # indexes the same list. Numbering only the traceable ones would silently
@@ -74,7 +84,7 @@ class Author:
             'question': self.paper.text(q, letter, roman),
             'suspect': self.paper.suspect(q, letter, roman),
             'stem': self.paper.stem(q, letter) or self.paper.stem(q),
-            'marks': self.scheme.marks(q, letter, roman),
+            'marks': scheme.marks(q, letter, roman) or self.scheme.marks(q, letter, roman),
             'points': [(i, p, p in ok) for i, p in enumerate(pts)],
             'usable': sum(1 for p in pts if p in ok),
         }
@@ -83,7 +93,7 @@ class Author:
              use=None, marks=None, tariff='fixed', total=None, figure=None,
              labels=None, notes=None, stem=True, checked=None, suffix='',
              row_kind='point', notation=None, spread=False, context=None,
-             omit=()):
+             omit=(), source='md', card_id=None):
         ref = part_ref(self.year, self.level, q, letter, roman)
 
         question = self.paper.text(q, letter, roman)
@@ -94,7 +104,8 @@ class Author:
                 f'{ref}: question text is flagged and unreviewed — {question!r}. '
                 f'Open the page; if it is right, pass checked="<why>".')
 
-        candidates = self.scheme.points(q, letter, roman)
+        scheme = self._source(source)
+        candidates = scheme.points(q, letter, roman)
         if not candidates:
             raise Refused(f'{ref}: the scheme has no marking points for this part')
         # An entry in `use` may be an index, or a list of indices meaning "this
@@ -107,12 +118,15 @@ class Author:
         if not chosen:
             raise Refused(f'{ref}: no marking points chosen')
 
-        ok, bad = self.scheme.verify(chosen)
+        ok, bad = scheme.verify(chosen)
         if bad:
             raise Refused(f'{ref}: {len(bad)} marking point(s) do not trace to the '
                           f'scheme: {bad[0][:90]!r}')
 
-        scheme_marks = self.scheme.marks(q, letter, roman)
+        # Marks come from whichever parser found them: the PDF one keeps table
+        # cells intact but often leaves the right-aligned tariff in a block of
+        # its own that belongs to a neighbouring part.
+        scheme_marks = scheme.marks(q, letter, roman) or self.scheme.marks(q, letter, roman)
         if marks is None:
             numeric = [int(m) for m in scheme_marks if re.fullmatch(r'\d{1,2}', m)]
             if len(numeric) != len(chosen):
@@ -141,7 +155,7 @@ class Author:
         # reported, rather than failing the card the way a bad verbatim does.
         extra = [c for g in groups for c in g[1:]] + spare
         if extra:
-            fine, unusable = self.scheme.verify(extra)
+            fine, unusable = scheme.verify(extra)
             if unusable:
                 print(f'  {ref}: dropped {len(unusable)} untraceable alternative(s)',
                       file=sys.stderr)
@@ -162,7 +176,7 @@ class Author:
             rows.append(row)
 
         card = {
-            'id': part_id(self.year, self.level, q, letter, roman, suffix),
+            'id': card_id or part_id(self.year, self.level, q, letter, roman, suffix),
             'topicId': topic,
             'conceptId': concept,
             'level': self.long_level,

@@ -5501,5 +5501,22 @@
   "labelMeanings": [],
   "questionRef": "2025 OL Q18(b)(iii)",
   "notes": "No usable figure — empty candidate drawing space plus a sliced remnant of the neighbouring timeline at the top edge. Must not be bound. The blue fragment at the top is the SAME timeline as p35-i0/i1/i2 and could be mistaken for a separate figure; it is not."
+ },
+ {
+  "file": "agricultural-science-2023-OL-paper-p24-art.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Three isometric block diagrams of the same stretch of river running through farmland, lettered in red. A, top left: black-and-white dairy cows graze a green field, separated from the river by a wide strip of tall pale-green crop, with a black arrow labelled X pointing at that strip; a person stands on the far bank and a duck and a fish are in the water. B, top right: cows stand in the river itself on bare eroded banks, a tractor is parked at the top of the slope, and a black arrow labelled W points at a person with a knapsack sprayer on the near bank. C, below and centred: the same river with mature trees along both banks, dense yellow flag-iris and cow parsley in the foreground, a kingfisher, a dragonfly, an otter and a fish, with cattle fenced back from the water and two people walking a path. Beneath the artwork the page prints parts (i) and (ii) and their ruled answer boxes. The tops of the letters A and B are lightly clipped by the crop but both remain legible.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "X",
+   "W"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q14(b)",
+  "notes": "Re-cropped with crop-question-art.py. The earlier extraction, p24-i0, took a band of the page and cut diagram C off entirely — the diagram part (i) asks about — which is why it was catalogued as truncated and never published."
  }
 ]

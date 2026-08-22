@@ -12155,5 +12155,22 @@
   "year": 2025,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Economics 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "agricultural-science-2023-OL-paper-p24-art": {
+  "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-OL-paper-p24-art.png",
+  "md5": "92811b83e1546c5ebe417bdf81c71324",
+  "alt": "Three isometric block diagrams of the same stretch of river running through farmland, lettered in red. A, top left: black-and-white dairy cows graze a green field, separated from the river by a wide strip of tall pale-green crop, with a black arrow labelled X pointing at that strip; a person stands on the far bank and a duck and a fish are in the water. B, top right: cows stand in the river itself on bare eroded banks, a tractor is parked at the top of the slope, and a black arrow labelled W points at a person with a knapsack sprayer on the near bank. C, below and centred: the same river with mature trees along both banks, dense yellow flag-iris and cow parsley in the foreground, a kingfisher, a dragonfly, an otter and a fish, with cattle fenced back from the water and two people walking a path. Beneath the artwork the page prints parts (i) and (ii) and their ruled answer boxes. The tops of the letters A and B are lightly clipped by the crop but both remain legible.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "X",
+   "W"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q14(b)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Agricultural Science 2023 Ordinary Level — © State Examinations Commission"
  }
 }

@@ -49,4 +49,37 @@ A.card(18, 'b', 'i', topic='agsci-4-3-2', concept='how-crispr-gene-editing-works
              'strand, cut at the lightning bolt, and the strand then either repairs '
              'itself or takes an inserted gene.')
 
+# ── Q14(b): three river diagrams ───────────────────────────────────────────
+# Read from the scheme PDF rather than the markdown: the markdown splits
+# "animals are not allowed into river to drink" across two answers. The figure
+# is a fresh crop — the earlier one cut diagram C off entirely, which is the
+# diagram part (i) asks about.
+RIVER = 'agricultural-science-2023-OL-paper-p24-art'
+RIVER_CONTEXT = ('Three block diagrams of one stretch of river. A: cows grazing behind a '
+                 'wide strip of tall crop, arrowed X. B: cows standing in the water on '
+                 'bare eroded banks, a tractor above and a person spraying, arrowed W. '
+                 'C: mature trees along both banks, flowering plants, a kingfisher and '
+                 'an otter, with the cattle fenced back.')
+
+A.card(14, 'b', 'i', topic='agsci-3-3-1', concept='comparing-riverbank-biodiversity',
+       source='pdf', use=[1, [2, 3, 4, 5, 6]], marks=[4, 4], spread=False,
+       figure=RIVER, context=RIVER_CONTEXT)
+
+A.card(14, 'b', 'ii', topic='agsci-3-3-1', concept='why-a-riparian-buffer-strip',
+       source='pdf', use=[[1, 2, 3, 4, 5]], marks=[4], figure=RIVER,
+       notes='Crop X is the strip between the cows and the river in diagram A. '
+             'Any one reason scores the 4 marks; the scheme prints five.')
+
+# Takes over the id of the hand-authored text-only card for this part rather
+# than orphaning it: same question, now carrying the figure it refers to.
+A.card(14, 'b', 'iii', topic='agsci-3-3-1', concept='advantages-of-spot-spraying',
+       source='pdf', use=[[1, 2, 3, 4]], marks=[4], figure=RIVER,
+       card_id='agsci-2023-ol-q14b-iii',
+       notes='Farmer W is the figure spot-spraying in diagram B.')
+
+# Q14(b)(iv) is left out: the scheme prints its tariff as "4, 2(4)" against a
+# question asking for a diagram and two reasons, and I cannot tell from the
+# scheme whether that means two reasons at 2 or four at 2. Guessing a total is
+# worse than leaving the part uncarded.
+
 A.emit()

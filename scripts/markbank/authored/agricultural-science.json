@@ -22232,38 +22232,6 @@
   "notes": "2(4) = two parts at 4 marks each = 8, which is what Q14(a) needs to reach 22. Eight considerations are printed in one pool and two are claimable, so two rows plus accepts. 'extreme care on steep slopes' sits in accepts rather than a verbatim because the '2(4)' mark cell is typeset between 'steep' and 'slopes' in the text extraction (scheme lines 570-571)."
  },
  {
-  "id": "agsci-2023-ol-q14b-iii",
-  "topicId": "agsci-3-3-2",
-  "conceptId": "spot-spraying-advantage",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "agricultural-science",
-  "section": "B",
-  "questionRef": "2023 OL Q14(b)(iii)",
-  "stem": "Lisa wanted to sow a food crop in a two hectare field in an environmentally friendly way. Part (b) of Question 14 prints three farm diagrams, A, B and C, to be analysed, and in one of them a farmer is spot spraying the weeds in a field rather than spraying the whole field. This part asks about spot spraying in general and stands without the diagrams.",
-  "questionText": "Outline the advantage of spot spraying compared to spraying the whole field.",
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "4"
-  },
-  "totalMarks": 4,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Less chemicals required or reduce pollution or more environmentally friendly",
-    "marks": 4,
-    "accepts": [
-     "only treat the target plant",
-     "reduced resistance to herbicide",
-     "reduced cost of expensive chemicals"
-    ],
-    "contextNote": "One advantage is asked for and the scheme prints a single 4 against the whole solidus list, so any one of these earns the full 4 marks."
-   }
-  ],
-  "notes": "The paper's lead-in ('The farmer W is spot spraying the weeds in the field in diagram B') points at the diagram and is left out of the questionText, exactly as the shipped card agsci-2023-ol-q2b handled its photograph lead-in; the question itself is general. One 4 is printed against a four-item solidus list, so by the scheme's front matter those are alternatives for one marking point, not four points — splitting them would invent three marking points a student never had to give. The stem deliberately does not name diagram B, because part (b)(iv) asks which diagram is least environmentally friendly and the answer is B. The pool is closed (no 'etc.' or 'any other valid'), so openList is not set."
- },
- {
   "id": "agsci-2023-ol-q15a-i",
   "topicId": "agsci-2-3",
   "conceptId": "soil-sampling-method",
@@ -33668,6 +33636,107 @@
   ],
   "notes": "The diagram runs top to bottom: the target gene is marked on the strand, cut at the lightning bolt, and the strand then either repairs itself or takes an inserted gene.",
   "figureKey": "agricultural-science-2023-OL-paper-p35-i0"
+ },
+ {
+  "id": "agsci-2023-ol-q14bi",
+  "topicId": "agsci-3-3-1",
+  "conceptId": "comparing-riverbank-biodiversity",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2023 OL Q14(b)(i)",
+  "questionText": "State which diagram A, B or C has a higher biodiversity level and give a reason for your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Diagram: C",
+    "marks": 4,
+    "contextNote": "Three block diagrams of one stretch of river. A: cows grazing behind a wide strip of tall crop, arrowed X. B: cows standing in the water on bare eroded banks, a tractor above and a person spraying, arrowed W. C: mature trees along both banks, flowering plants, a kingfisher and an otter, with the cattle fenced back."
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "Reason: Different crops sown",
+    "marks": 4,
+    "accepts": [
+     "lots of trees",
+     "animals are not allowed into river to drink",
+     "flowers or trees present or boundary created to allow for natural growth",
+     "no spraying"
+    ]
+   }
+  ],
+  "stem": "W X",
+  "figureKey": "agricultural-science-2023-OL-paper-p24-art"
+ },
+ {
+  "id": "agsci-2023-ol-q14bii",
+  "topicId": "agsci-3-3-1",
+  "conceptId": "why-a-riparian-buffer-strip",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2023 OL Q14(b)(ii)",
+  "questionText": "Outline the reason for the crop X being sown between the cows and the river in diagram A.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Wildlife corridor",
+    "marks": 4,
+    "accepts": [
+     "prevent soil erosion into river",
+     "prevents the cattle from drinking in or entering the river",
+     "reduce nutrients leaching into the river",
+     "increase biodiversity"
+    ]
+   }
+  ],
+  "stem": "W X",
+  "notes": "Crop X is the strip between the cows and the river in diagram A. Any one reason scores the 4 marks; the scheme prints five.",
+  "figureKey": "agricultural-science-2023-OL-paper-p24-art"
+ },
+ {
+  "id": "agsci-2023-ol-q14b-iii",
+  "topicId": "agsci-3-3-1",
+  "conceptId": "advantages-of-spot-spraying",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2023 OL Q14(b)(iii)",
+  "questionText": "The farmer W is spot spraying the weeds in the field in diagram B. Outline the advantage of spot spraying compared to spraying the whole field.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Less chemicals required or reduce pollution or more environmentally friendly",
+    "marks": 4,
+    "accepts": [
+     "only treat the target plant",
+     "reduced resistance to herbicide",
+     "reduced cost of expensive chemicals"
+    ]
+   }
+  ],
+  "stem": "W X",
+  "notes": "Farmer W is the figure spot-spraying in diagram B.",
+  "figureKey": "agricultural-science-2023-OL-paper-p24-art"
  },
  {
   "id": "agsci-2024-hl-q10a",
