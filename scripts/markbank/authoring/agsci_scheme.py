@@ -49,6 +49,14 @@ NOISE = re.compile(r'^(OR|Or|or)$')
 # question whose answers share one combined tariff ('4(1)'), so the mark column
 # never delimits them. The labels do.
 LABELLED = re.compile(r'(?:(?<=^)|(?<=\s))([A-H])\s*[=:\u2010\u2013\u2014-]\s+')
+# ' / ' separates alternatives, but it is also how the schemes write a rate:
+# 'kg DM / ha', 'cfu / ml', '400 c / kg'. Splitting there invents an answer
+# whose whole text is a unit, so these are rejoined. Listed explicitly rather
+# than guessed at by length, because 'hay' is a real answer and 'ha' is not.
+UNIT = ('ha', 'ml', 'l', 'litre', 'litres', 'kg', 'kgs', 'g', 'mg', 'cm', 'm',
+        'm2', 'day', 'days', 'week', 'weeks', 'year', 'head', 'cfu', 'hd',
+        'ewe', 'cow', 'animal', 'acre', 'ac', 'lu')
+UNIT_START = re.compile(r'^(?:%s)\b' % '|'.join(UNIT), re.I)
 
 
 def _leading(text):
@@ -163,10 +171,17 @@ class Scheme:
             groups.append(' '.join(buf))
         out = []
         for g in groups:
+            pieces = []
             for piece in ' '.join(g.split()).split(' / '):
                 piece = piece.strip()
-                if piece:
-                    out.extend(self._by_label(piece))
+                if not piece:
+                    continue
+                if pieces and UNIT_START.match(piece):
+                    pieces[-1] = f'{pieces[-1]} / {piece}'    # a rate, not a choice
+                else:
+                    pieces.append(piece)
+            for piece in pieces:
+                out.extend(self._by_label(piece))
         return out
 
     @staticmethod

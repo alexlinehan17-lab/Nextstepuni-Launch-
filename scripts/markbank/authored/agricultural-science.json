@@ -32973,5 +32973,336 @@
    }
   ],
   "notes": "Tariff '3(4)' against 'identify any three', so bestNofParts — four plants shown, any three claimable at 4 marks each = 12, and Q13's parts sum to the printed 50 with this part at 12. Figures p20-i0 and p20-i1 are the same grid; both were opened, and p20-i1 is the one bound because p20-i0 runs on past the letters into the answer lines 'A:' and 'B:' below the photographs, which would put two undecodable letters on the crop. The scheme prints the four answers as 'Nettle', 'Dock leaf', 'Clover' and 'Perennial Ryegrass' and credits no alternative wordings. The paper's own word box prints two of them at greater length — 'Broad leaf dock' and 'White clover' — so that difference is recorded as a contextNote on those two rows and NOT as accepts: accepts renders inline as 'Dock leaf or Broad leaf dock', which would show the student a scheme alternative that the scheme does not contain."
+ },
+ {
+  "id": "agsci-2021-hl-q1a",
+  "topicId": "agsci-3-2",
+  "conceptId": "identifying-common-weeds",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2021 HL Q1(a)",
+  "questionText": "Identify each of the following plants.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A = Buttercup",
+    "marks": 2,
+    "contextNote": "Three photographs. A is a yellow five-petalled flower in grass, B a cluster of purple spiny flowerheads, C a broad-leaved rosette."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B = Thistle",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C = Dock (leaf)",
+    "marks": 2
+   }
+  ],
+  "figureKey": "agricultural-science-2021-HL-paper-p03-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Buttercup",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Thistle",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Dock (leaf)",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "agsci-2021-hl-q3ai",
+  "topicId": "agsci-1-5",
+  "conceptId": "farm-safety-sign-symbols",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2021 HL Q3(a)(i)",
+  "questionText": "State the meaning of symbols A and B on the sign.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "A = Beware of bull",
+    "marks": 2,
+    "accepts": [
+     "beware: livestock can be dangerous"
+    ],
+    "contextNote": "On the reproduced notice, A is the yellow panel beside a triangular warning pictogram of a bull, and B the red panel beside a pictogram of an adult and child. The other two panels are already captioned."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B = This is not a playground",
+    "marks": 2
+   }
+  ],
+  "stem": "Farm Safety Notice No unauthorised persons allowed beyond this point CAUTION Farm machinery in operation THINK SAFETY FIRST! Or",
+  "figureKey": "agricultural-science-2021-HL-paper-p06-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Beware of bull",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "This is not a playground",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "agsci-2021-hl-q3aii",
+  "topicId": "agsci-1-5",
+  "conceptId": "animal-husbandry-equipment",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2021 HL Q3(a)(ii)",
+  "questionText": "State the function of C and D.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "C = castrating male animals/ tail docking",
+    "marks": 2,
+    "contextNote": "C is a long-handled pincer tool with blue grips; D a hinged metal frame with a ratcheted bar and two red cords."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "D = to assist cows when giving birth (calving)",
+    "marks": 2
+   }
+  ],
+  "stem": "Farm Safety Notice No unauthorised persons allowed beyond this point CAUTION Farm machinery in operation THINK SAFETY FIRST! Or",
+  "figureKey": "agricultural-science-2021-HL-paper-p06-i1",
+  "labelKey": [
+   {
+    "letter": "C",
+    "meaning": "castrating male animals/ tail docking",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "D",
+    "meaning": "to assist cows when giving birth (calving)",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "agsci-2021-hl-q3aiii",
+  "topicId": "agsci-1-5",
+  "conceptId": "castration-and-farm-sustainability",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2021 HL Q3(a)(iii)",
+  "questionText": "In relation to picture C at part (ii) above, state one advantage of using this piece of equipment to enhance sustainability of the farm.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Castrate male animals on the farm to prevent unwanted breeding (of poor performing animals)",
+    "marks": 2,
+    "accepts": [
+     "removes requirements for keeping bulls on farm",
+     "limited market for bull beef"
+    ]
+   }
+  ],
+  "stem": "Farm Safety Notice No unauthorised persons allowed beyond this point CAUTION Farm machinery in operation THINK SAFETY FIRST! Or",
+  "notes": "The question points back at picture C from part (ii), so the card carries the same figure.",
+  "figureKey": "agricultural-science-2021-HL-paper-p06-i1"
+ },
+ {
+  "id": "agsci-2021-hl-q3bi",
+  "topicId": "agsci-3-3-2",
+  "conceptId": "identifying-farm-machines",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2021 HL Q3(b)(i)",
+  "questionText": "Identify the farm machines, labelled A and B, which are attached to each tractor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "A = Seed drill",
+    "marks": 2,
+    "accepts": [
+     "combine drill",
+     "one pass system"
+    ],
+    "contextNote": "Red arrows mark each machine. A is mounted behind a tracked tractor working bare tilled ground; B is a high-sided trailer being towed across standing grass."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B = Zero grazer",
+    "marks": 2
+   }
+  ],
+  "figureKey": "agricultural-science-2021-HL-paper-p07-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Seed drill",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Zero grazer",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "agsci-2021-hl-q3bii",
+  "topicId": "agsci-3-3-2",
+  "conceptId": "tracked-tractor-advantage",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2021 HL Q3(b)(ii)",
+  "questionText": "The tractor in picture A is fitted with two tracks instead of four wheels. Suggest one advantage of using a tractor fitted with tracks.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Decreased compaction (due to increased surface area)",
+    "marks": 2,
+    "accepts": [
+     "less damage to soil structure",
+     "reduced risk of tractor turning over on steep hillsides or better stability",
+     "machine capable of pulling heavier loads"
+    ]
+   }
+  ],
+  "notes": "Any one advantage scores the 2 marks; the scheme prints four.",
+  "figureKey": "agricultural-science-2021-HL-paper-p07-i0"
+ },
+ {
+  "id": "agsci-2021-hl-q3biii",
+  "topicId": "agsci-3-3-2",
+  "conceptId": "one-pass-environmental-benefit",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2021 HL Q3(b)(iii)",
+  "questionText": "State one way machine A can enhance environmental sustainability.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Reduces water run‐off",
+    "marks": 2,
+    "accepts": [
+     "reduces sediment loss",
+     "increases soil organic matter (C sink)",
+     "fewer number of passes leads to less emissions"
+    ]
+   }
+  ],
+  "figureKey": "agricultural-science-2021-HL-paper-p07-i0"
+ },
+ {
+  "id": "agsci-2021-hl-q4c",
+  "topicId": "agsci-4-3-1",
+  "conceptId": "farmyard-environmental-improvements",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2021 HL Q4(c)",
+  "questionText": "Apart from your answer to part (a) above, suggest two ways in which the farmer could make the farmyard more environmentally sustainable.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2(2)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "sow wild flowers (on bank beside the shed) for pollinators (or biodiversity) or create a wildlife pond",
+    "marks": 2,
+    "accepts": [
+     "water harvesting to reduce water consumption",
+     "install bird boxes",
+     "install bat boxes",
+     "install insect hotels increase biodiversity",
+     "any energy saving measure that a student has not given as an answer to part (a)",
+     "pit silage instead of bales to reduce plastic waste"
+    ],
+    "contextNote": "Scheme tariff is 2(2): any two of the printed ways score 2 marks each."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "cover the collecting yard to prevent any run‐off when raining (bales on concrete)",
+    "marks": 2,
+    "accepts": [
+     "water harvesting to reduce water consumption",
+     "install bird boxes",
+     "install bat boxes",
+     "install insect hotels increase biodiversity",
+     "any energy saving measure that a student has not given as an answer to part (a)",
+     "pit silage instead of bales to reduce plastic waste"
+    ]
+   }
+  ],
+  "stem": "Study the photograph of the farm layout below and answer the questions which follow.",
+  "notes": "The scheme's first line welds a rubric — that the answer may not repeat part (a) — onto its first suggestion, so that line is left off the card rather than shown as an answer. The rubric itself is in the question.",
+  "figureKey": "agricultural-science-2021-HL-paper-p08-i0"
  }
 ]

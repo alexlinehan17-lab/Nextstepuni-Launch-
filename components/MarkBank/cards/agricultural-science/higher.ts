@@ -6679,4 +6679,199 @@ export const CARDS: SecCard[] = [
           "lettersVisible": []
     },
   } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2021, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
+    id: "agsci-2021-hl-q1a", topicId: "agsci-3-2", conceptId: "identifying-common-weeds",
+    section: "A", questionRef: "2021 HL Q1(a)",
+    questionText: "Identify each of the following plants.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A = Buttercup", marks: 2, contextNote: "Three photographs. A is a yellow five-petalled flower in grass, B a cluster of purple spiny flowerheads, C a broad-leaved rosette." },
+    { id: "r-2", kind: "point", verbatim: "B = Thistle", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "C = Dock (leaf)", marks: 2 },
+    ],
+    figure: {
+          "candId": "agricultural-science-2021-HL-paper-p03-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-HL-paper-p03-i0.png",
+          "srcHash": "d753197a7449b755d56f09480914c0a2",
+          "alt": "The Question 1(a) plant-identification figure with its surrounding text. At the top: \"Answer any seven questions.\", \"Each question carries 10 marks.\", \"Question 1\", \"(a) Identify each of the following plants.\" Below are three colour photographs side by side, each with a bold capital letter centred above it. A: a single bright yellow flower with five broad glossy petals and a dense cluster of yellow stamens at the centre, growing among deeply divided/lobed green leaves and grass. B: a clump of thistle plants photographed against a dark green background, showing purple-mauve brush-like flowerheads sitting on green globe-shaped heads covered in stiff spines, with spiny winged stems and prickly leaves. C: a low broadleaf plant growing in grass, forming a spreading rosette of large smooth lance-shaped to oval leaves with slightly wavy margins and a prominent pale midrib; a faint photographer credit watermark sits in the bottom-right corner of that photo. Beneath the photographs is a three-row bordered answer table with the printed row labels \"A:\", \"B:\" and \"C:\". The last line, part (b) about annual and biennial lifecycles, runs off the bottom of the crop.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Buttercup","askedInThisQuestion":true},{"letter":"B","meaning":"Thistle","askedInThisQuestion":true},{"letter":"C","meaning":"Dock (leaf)","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2021, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
+    id: "agsci-2021-hl-q3ai", topicId: "agsci-1-5", conceptId: "farm-safety-sign-symbols",
+    section: "A", questionRef: "2021 HL Q3(a)(i)",
+    stem: "Farm Safety Notice No unauthorised persons allowed beyond this point CAUTION Farm machinery in operation THINK SAFETY FIRST! Or",
+    questionText: "State the meaning of symbols A and B on the sign.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "A = Beware of bull", marks: 2, accepts: ["beware: livestock can be dangerous"], contextNote: "On the reproduced notice, A is the yellow panel beside a triangular warning pictogram of a bull, and B the red panel beside a pictogram of an adult and child. The other two panels are already captioned." },
+    { id: "r-2", kind: "point", verbatim: "B = This is not a playground", marks: 2 },
+    ],
+    figure: {
+          "candId": "agricultural-science-2021-HL-paper-p06-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-HL-paper-p06-i0.png",
+          "srcHash": "42481edb67f70def05a287e9c95f6e59",
+          "alt": "The Question 3(a) farm safety notice. The sign is a rectangular panel with a dark navy border: a dark blue band across the top carries the white heading \"Farm Safety Notice\" and a matching dark blue band across the bottom carries \"THINK SAFETY FIRST!\". Between them are four rows, each with a pictogram on the left and a message panel on the right. Row 1: a red circular prohibition sign (red ring with red diagonal bar) enclosing a black silhouette of a walking pedestrian, beside a red panel with white text \"No unauthorised persons allowed beyond this point\". Row 2: a yellow warning triangle with a black border enclosing a black silhouette of a horned bovine head in profile, beside a blank yellow panel with a blue outline containing only the bold letter \"A\". Row 3: a yellow warning triangle enclosing a black silhouette of a tractor, beside a yellow panel with the underlined word \"CAUTION\" above \"Farm machinery in operation\". Row 4: a red circular prohibition sign (red ring with red diagonal bar) enclosing a black silhouette of a single small child standing with both arms raised towards a round ball in the air, beside a solid red panel containing only the bold white letter \"B\". To the left of the sign is the question text \"(a) The following is an example of a farm safety notice displayed at the entrance to a farm.\" and \"(i) State the meaning of symbols A and B on the sign.\", followed by a two-part answer table printed \"A:\" and \"B:\". The line \"(ii) State the function of C and D.\" is sliced by the bottom edge.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Beware of bull","askedInThisQuestion":true},{"letter":"B","meaning":"This is not a playground","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2021, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
+    id: "agsci-2021-hl-q3aii", topicId: "agsci-1-5", conceptId: "animal-husbandry-equipment",
+    section: "A", questionRef: "2021 HL Q3(a)(ii)",
+    stem: "Farm Safety Notice No unauthorised persons allowed beyond this point CAUTION Farm machinery in operation THINK SAFETY FIRST! Or",
+    questionText: "State the function of C and D.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "C = castrating male animals/ tail docking", marks: 2, contextNote: "C is a long-handled pincer tool with blue grips; D a hinged metal frame with a ratcheted bar and two red cords." },
+    { id: "r-2", kind: "point", verbatim: "D = to assist cows when giving birth (calving)", marks: 2 },
+    ],
+    figure: {
+          "candId": "agricultural-science-2021-HL-paper-p06-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-HL-paper-p06-i1.png",
+          "srcHash": "b6d1428929b4ff1a240666d24051ad17",
+          "alt": "The Question 3(a)(ii) equipment figure. Above it the tail of the previous answer box printed \"B:\", then the line \"(ii) State the function of C and D.\" Below is a bordered two-cell table whose header row reads \"C\" (left) and \"D\" (right), each cell containing a product photograph on a white background. C: a long two-handled hand tool; two straight steel handles ending in moulded blue rubber grips, joined by a compound hinge with three riveted pivot plates, driving a heavy head at the far end formed by a large rounded jaw that encloses a circular opening, with a short blade/clamping face on the inner left side. It is a squeeze-operated clamping and crushing tool. D: an assembly of tubular stainless steel — a broad U-shaped frame whose two arms end in black rubber caps, hinged to a long straight ratcheted bar that carries a lever with a D-shaped hand grip at its upper end; a blue cord loop and a red cord loop with hooked ends hang from the ratchet mechanism. Below the photographs is a two-row answer table printed \"C:\" and \"D:\", then \"(iii) In relation to picture C at part (ii) above, state one advantage of using this piece of equipment to enhance sustainability of the farm.\" with the top of its answer box.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "C",
+                "D"
+          ]
+    },
+    labelKey: [{"letter":"C","meaning":"castrating male animals/ tail docking","askedInThisQuestion":true},{"letter":"D","meaning":"to assist cows when giving birth (calving)","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
+    id: "agsci-2021-hl-q3aiii", topicId: "agsci-1-5", conceptId: "castration-and-farm-sustainability",
+    section: "A", questionRef: "2021 HL Q3(a)(iii)",
+    stem: "Farm Safety Notice No unauthorised persons allowed beyond this point CAUTION Farm machinery in operation THINK SAFETY FIRST! Or",
+    questionText: "In relation to picture C at part (ii) above, state one advantage of using this piece of equipment to enhance sustainability of the farm.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Castrate male animals on the farm to prevent unwanted breeding (of poor performing animals)", marks: 2, accepts: ["removes requirements for keeping bulls on farm","limited market for bull beef"] },
+    ],
+    figure: {
+          "candId": "agricultural-science-2021-HL-paper-p06-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-HL-paper-p06-i1.png",
+          "srcHash": "b6d1428929b4ff1a240666d24051ad17",
+          "alt": "The Question 3(a)(ii) equipment figure. Above it the tail of the previous answer box printed \"B:\", then the line \"(ii) State the function of C and D.\" Below is a bordered two-cell table whose header row reads \"C\" (left) and \"D\" (right), each cell containing a product photograph on a white background. C: a long two-handled hand tool; two straight steel handles ending in moulded blue rubber grips, joined by a compound hinge with three riveted pivot plates, driving a heavy head at the far end formed by a large rounded jaw that encloses a circular opening, with a short blade/clamping face on the inner left side. It is a squeeze-operated clamping and crushing tool. D: an assembly of tubular stainless steel — a broad U-shaped frame whose two arms end in black rubber caps, hinged to a long straight ratcheted bar that carries a lever with a D-shaped hand grip at its upper end; a blue cord loop and a red cord loop with hooked ends hang from the ratchet mechanism. Below the photographs is a two-row answer table printed \"C:\" and \"D:\", then \"(iii) In relation to picture C at part (ii) above, state one advantage of using this piece of equipment to enhance sustainability of the farm.\" with the top of its answer box.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2021, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
+    id: "agsci-2021-hl-q3bi", topicId: "agsci-3-3-2", conceptId: "identifying-farm-machines",
+    section: "A", questionRef: "2021 HL Q3(b)(i)",
+    questionText: "Identify the farm machines, labelled A and B, which are attached to each tractor.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "A = Seed drill", marks: 2, accepts: ["combine drill","one pass system"], contextNote: "Red arrows mark each machine. A is mounted behind a tracked tractor working bare tilled ground; B is a high-sided trailer being towed across standing grass." },
+    { id: "r-2", kind: "point", verbatim: "B = Zero grazer", marks: 2 },
+    ],
+    figure: {
+          "candId": "agricultural-science-2021-HL-paper-p07-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-HL-paper-p07-i0.png",
+          "srcHash": "1b87696a06a30635d81f69d1ea1ca394",
+          "alt": "The Question 3(b)(i) farm-machinery identification figure. Centred word \"Or\" at the top, then \"(b) (i) Identify the farm machines, labelled A and B, which are attached to each tractor.\" Two colour photographs sit side by side, each with a thick red downward arrow (blue outline) pointing at the implement, and a bold capital letter above the arrow. A: a crawler tractor running on rubber tracks instead of rear wheels, working across bare brown cultivated soil under a blue cloudy sky, towing a large orange implement — a tall hopper/tank with the manufacturer's name on its side, from which a bank of flexible delivery pipes runs down and back to a wide rear frame carrying a long row of tine/coulter units with small press wheels; the red arrow labelled A points at the orange hopper unit. B: a green grass field, with the rear wheel and drawbar of a tractor visible at the right, towing a red trailed wagon on a tandem twin-wheel axle; the wagon has high mesh sides and is loaded with green cut grass, with a yellow rotor/beater at the top of the body and a yellow pick-up/mowing header slung at the front bottom of the wagon cutting the standing grass; the red arrow labelled B points at the top of the wagon body. Below is a two-row answer table printed \"A:\" and \"B:\", then \"(ii) The tractor in picture A is fitted with two tracks instead of four wheels. Suggest one advantage of using a tractor fitted with tracks.\" with the top of its answer box.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Seed drill","askedInThisQuestion":true},{"letter":"B","meaning":"Zero grazer","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
+    id: "agsci-2021-hl-q3bii", topicId: "agsci-3-3-2", conceptId: "tracked-tractor-advantage",
+    section: "A", questionRef: "2021 HL Q3(b)(ii)",
+    questionText: "The tractor in picture A is fitted with two tracks instead of four wheels. Suggest one advantage of using a tractor fitted with tracks.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Decreased compaction (due to increased surface area)", marks: 2, accepts: ["less damage to soil structure","reduced risk of tractor turning over on steep hillsides or better stability","machine capable of pulling heavier loads"] },
+    ],
+    figure: {
+          "candId": "agricultural-science-2021-HL-paper-p07-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-HL-paper-p07-i0.png",
+          "srcHash": "1b87696a06a30635d81f69d1ea1ca394",
+          "alt": "The Question 3(b)(i) farm-machinery identification figure. Centred word \"Or\" at the top, then \"(b) (i) Identify the farm machines, labelled A and B, which are attached to each tractor.\" Two colour photographs sit side by side, each with a thick red downward arrow (blue outline) pointing at the implement, and a bold capital letter above the arrow. A: a crawler tractor running on rubber tracks instead of rear wheels, working across bare brown cultivated soil under a blue cloudy sky, towing a large orange implement — a tall hopper/tank with the manufacturer's name on its side, from which a bank of flexible delivery pipes runs down and back to a wide rear frame carrying a long row of tine/coulter units with small press wheels; the red arrow labelled A points at the orange hopper unit. B: a green grass field, with the rear wheel and drawbar of a tractor visible at the right, towing a red trailed wagon on a tandem twin-wheel axle; the wagon has high mesh sides and is loaded with green cut grass, with a yellow rotor/beater at the top of the body and a yellow pick-up/mowing header slung at the front bottom of the wagon cutting the standing grass; the red arrow labelled B points at the top of the wagon body. Below is a two-row answer table printed \"A:\" and \"B:\", then \"(ii) The tractor in picture A is fitted with two tracks instead of four wheels. Suggest one advantage of using a tractor fitted with tracks.\" with the top of its answer box.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
+    id: "agsci-2021-hl-q3biii", topicId: "agsci-3-3-2", conceptId: "one-pass-environmental-benefit",
+    section: "A", questionRef: "2021 HL Q3(b)(iii)",
+    questionText: "State one way machine A can enhance environmental sustainability.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Reduces water run‐off", marks: 2, accepts: ["reduces sediment loss","increases soil organic matter (C sink)","fewer number of passes leads to less emissions"] },
+    ],
+    figure: {
+          "candId": "agricultural-science-2021-HL-paper-p07-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-HL-paper-p07-i0.png",
+          "srcHash": "1b87696a06a30635d81f69d1ea1ca394",
+          "alt": "The Question 3(b)(i) farm-machinery identification figure. Centred word \"Or\" at the top, then \"(b) (i) Identify the farm machines, labelled A and B, which are attached to each tractor.\" Two colour photographs sit side by side, each with a thick red downward arrow (blue outline) pointing at the implement, and a bold capital letter above the arrow. A: a crawler tractor running on rubber tracks instead of rear wheels, working across bare brown cultivated soil under a blue cloudy sky, towing a large orange implement — a tall hopper/tank with the manufacturer's name on its side, from which a bank of flexible delivery pipes runs down and back to a wide rear frame carrying a long row of tine/coulter units with small press wheels; the red arrow labelled A points at the orange hopper unit. B: a green grass field, with the rear wheel and drawbar of a tractor visible at the right, towing a red trailed wagon on a tandem twin-wheel axle; the wagon has high mesh sides and is loaded with green cut grass, with a yellow rotor/beater at the top of the body and a yellow pick-up/mowing header slung at the front bottom of the wagon cutting the standing grass; the red arrow labelled B points at the top of the wagon body. Below is a two-row answer table printed \"A:\" and \"B:\", then \"(ii) The tractor in picture A is fitted with two tracks instead of four wheels. Suggest one advantage of using a tractor fitted with tracks.\" with the top of its answer box.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
+    id: "agsci-2021-hl-q4c", topicId: "agsci-4-3-1", conceptId: "farmyard-environmental-improvements",
+    section: "A", questionRef: "2021 HL Q4(c)",
+    stem: "Study the photograph of the farm layout below and answer the questions which follow.",
+    questionText: "Apart from your answer to part (a) above, suggest two ways in which the farmer could make the farmyard more environmentally sustainable.",
+    tariffModel: {"kind":"fixed","notation":"2(2)"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "sow wild flowers (on bank beside the shed) for pollinators (or biodiversity) or create a wildlife pond", marks: 2, accepts: ["water harvesting to reduce water consumption","install bird boxes","install bat boxes","install insect hotels increase biodiversity","any energy saving measure that a student has not given as an answer to part (a)","pit silage instead of bales to reduce plastic waste"], contextNote: "Scheme tariff is 2(2): any two of the printed ways score 2 marks each." },
+    { id: "r-2", kind: "point", verbatim: "cover the collecting yard to prevent any run‐off when raining (bales on concrete)", marks: 2, accepts: ["water harvesting to reduce water consumption","install bird boxes","install bat boxes","install insect hotels increase biodiversity","any energy saving measure that a student has not given as an answer to part (a)","pit silage instead of bales to reduce plastic waste"] },
+    ],
+    figure: {
+          "candId": "agricultural-science-2021-HL-paper-p08-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-HL-paper-p08-i0.png",
+          "srcHash": "74aec4e9e20f186feafbcfe4ced54c6f",
+          "alt": "The Question 4 farm-layout photograph, with heading \"Question 4\" and \"Study the photograph of the farm layout below and answer the questions which follow.\" The image is an oblique aerial (drone) colour photograph of an Irish farmyard set in bright green grass fields with mature trees and hedgerows along the boundaries. In the foreground stands a large modern shed with a dark green roof carrying two long rows of translucent roof lights, on a pale concrete apron. Behind it are a curved (arched) grey-roofed shed, a wide low grey/green roofed range of older sheds, and several smaller green-roofed buildings; open tanks/channels and a concrete yard lie between them. At the top left a white dwelling house with a grey roof sits beside a tarred entrance road with several parked cars, and a tractor is parked among the buildings. At the top right a large black plastic-covered silage pit weighted with tyres sits beside the trees. On the right-hand side of the yard is a pyramid stack of about twenty pink/white wrapped round bales, a line of parked machinery and implements (including a red machine and a trailer) on bare stony ground, and gravel roadways loop around the yard between the buildings and the fields. Below the photograph the line \"(a) Identify one way in which the farm in the photograph could become more energy efficient.\" with the top of its answer box.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
 ];

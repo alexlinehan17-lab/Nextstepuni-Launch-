@@ -48,6 +48,9 @@ PAGE_FURNITURE = re.compile(r'^Leaving Certificate Examination\s+\d{4}')
 # papers: 294 such lines occur and not one is the opening line of a part.
 FURNITURE = re.compile(r'^(\d{1,2}\.|[^.?!]{1,34}:)$')
 TERMINAL = re.compile(r'[.?!]$')
+# A block holding nothing but figure labels ('A B C', 'A: B: C:'). It captions
+# the artwork, so it belongs to the figure, not to the question's prose.
+LABELS_ONLY = re.compile(r'^[A-H]\s*:?(\s+[A-H]\s*:?)*$')
 
 
 def _blocks(path):
@@ -138,6 +141,10 @@ class Paper:
     def _flat(lines):
         return ' '.join(' '.join(lines).split()) or None
 
+    @staticmethod
+    def _prose(lines):
+        return [l for l in lines if not LABELS_ONLY.match(l)]
+
     def text(self, qnum, letter=None, roman=None):
         """The printed wording of one part, verbatim. None if the part is absent."""
         got = self.parts.get((qnum, letter, roman))
@@ -145,7 +152,7 @@ class Paper:
 
     def stem(self, qnum, letter=None):
         """Stimulus prose printed above the parts, verbatim."""
-        return self._flat(self.stems.get((qnum, letter)) or [])
+        return self._flat(self._prose(self.stems.get((qnum, letter)) or []))
 
     def paths(self):
         return sorted(self.parts, key=lambda k: (k[0], k[1] or '', k[2] or ''))
