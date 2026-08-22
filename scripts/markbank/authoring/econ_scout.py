@@ -26,7 +26,14 @@ T = tidy(load(year, level))
 
 # The scheme prints its answers once and the appended blocks repeat them, so the
 # body is bounded to the first pass; anchoring past that finds a table cell.
-starts = [(m.group(1), m.start()) for m in re.finditer(r'Question (1[1-6])\b', T)]
+# The INDEX lists "Question 11" too, and on some papers it is the first match —
+# which anchored the whole scout inside the front matter, where there are no
+# mark cells at all. The body heading is the one followed by the scheme's own
+# "Possible responses" caption.
+starts = [(m.group(1), m.start()) for m in re.finditer(r'Question (1[1-6])\b', T)
+          if re.search(r'Possible [Rr]esponses', T[m.start():m.start() + 60])]
+if not starts:                       # a paper that does not print the caption
+    starts = [(m.group(1), m.start()) for m in re.finditer(r'Question (1[1-6])\b', T)]
 first = {}
 for q, at in starts:
     first.setdefault(q, at)

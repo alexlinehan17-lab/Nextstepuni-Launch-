@@ -41,8 +41,8 @@ const decks = [
   ['business:ordinary', BUSINESS_ORDINARY, 317, '460e27935f41becdf381904c05fa4fa041c9c906fe0ded058a77638f3a3c2e80'],
   ['home-economics:higher', HOME_EC_HIGHER, 298, '0993532438e360013ca6930c425db0b9c398b886673a4029ad6df0c9c467b49d'],
   ['home-economics:ordinary', HOME_EC_ORDINARY, 273, '5b15bc2e07a475191deb82613d27459fa2e776a0b10a2249aaff4f11f7a7e787'],
-  ['economics:higher', ECON_HIGHER, 22, 'ccc3201c6787a23c8d9a2b727ff2f49d151ba9d8a950148685ce67097ec5f61f'],
-  ['economics:ordinary', ECON_ORDINARY, 7, '0487f73fe653650e50adda293743d2c82224017ad34ecd950d4d57144db78ef9'],
+  ['economics:higher', ECON_HIGHER, 35, '037ec5eff84c11eb458834f74728ac544ce8b155ed88fc5b40ca2767fe4e5933'],
+  ['economics:ordinary', ECON_ORDINARY, 18, '15787fc209d4525fcb927e9c871688c115d9e37985eb412a01539c2da6e7beee'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -57,6 +57,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(4_715);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(4_739);
   });
 });

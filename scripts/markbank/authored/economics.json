@@ -1,5 +1,1113 @@
 [
  {
+  "id": "econ-2021-hl-q12-b-i",
+  "topicId": "economics-3-1",
+  "conceptId": "reasons-for-the-125-corporation-tax-rate",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 HL Q12(b)(i)",
+  "questionText": "The Minister for Finance reaffirmed Ireland’s commitment to the 12.5% corporation tax rate. Evaluate two reasons why the Minister for Finance made this decision.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 7",
+   "answer": 2,
+   "ofParts": 5,
+   "perPart": 7
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason for keeping the 12.5% rate — any two",
+    "marks": 14,
+    "openList": true,
+    "contextNote": "Two reasons, 7 marks each — the scheme splits each into 3 for the reason and 4 for developing it, so a named reason with nothing after it earns less than half.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 7,
+     "options": [
+      "Incentivise FDI / discourage any exodus of MNCs Ireland’s low corporation tax rate has historically been a large incentive for foreign firms to invest in Ireland, this is an incentive that Ireland would like to maintain into the future. If the corporation tax rate were to increase there is a fear that large corporations currently based in Ireland may decide to uproot and move elsewhere.",
+      "Maintain employment levels In order to maintain current levels of investment and consequently employment in the Irish economy the Irish government feels the need to maintain our corporation tax rate at 12.5%.",
+      "Government revenue Corporation tax makes up a large part of Irish tax receipts. It plays an important role in revenue generation which helps to finance state services. The Irish government will not want to discourage this any time soon.",
+      "Maintain economic growth The 12.5% corporation tax rate encourages foreign direct investment and helps create employment within the Irish economy. These are essential in maintaining a stable rate of economic growth. The Irish government will want to keep the corporation tax rate low so to maintain economic growth.",
+      "Loss of fiscal sovereignty As an EU member Ireland has already ceded control of its monetary policy to the EU. Ireland is not inclined to cede control of its other main macroeconomic tool to the EU too as it would leave little independence in economic policy to the government."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2021-hl-q12-c-i",
+  "topicId": "economics-4-2",
+  "conceptId": "implications-of-brexit-for-ireland",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 HL Q12(c)(i)",
+  "questionText": "The United Kingdom left the European Union on January 31, 2020. Discuss two implications of this exit for the Irish economy.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 6",
+   "answer": 2,
+   "ofParts": 4,
+   "perPart": 6
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An implication of Brexit for Ireland — any two",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Two implications, 6 marks each, split 3 for the point and 3 for developing it.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Possible negative effect on Irish exports Approximately 15 per cent of Irish goods and services exports are destined to the UK. In certain sectors, the UK is an especially important market, such as the agri-food sector where around 40 per cent of exports are destined for the UK. Supplier industries to the export sectors will also be affected. In addition, two-thirds of Irish exporters make use of the UK land bridge to access continental markets and this could pose problems for Irish exporters who wish to avoid UK ferry ports.",
+      "Effects on agricultural sector / agri-food sectors Brexit will reduce the preferential access of EU producers to the UK market and thereby reduce the cost advantages that Irish agricultural products have in the UK market relative to similar products, e.g. dairy products from New Zealand or beef from Australia. Impacts in the agri-food sector are driven by a combination of tariffs, customs costs and the risk of regulatory divergence. The Irish Fishing industry may also fare badly from Brexit due to restrictions.",
+      "Labour market effects The effects on the labour market will be determined by the demand for Irish exports in the UK market. Some export sectors are likely to face reduced demand from the UK and thus experience falls in employment levels. However, if foreign companies re-locate from the UK to Ireland for access to the EU market this could give rise to employment in some sectors.",
+      "Imports from the UK The cost of imports from the UK may increase due to tariffs, customs costs etc. Cost of raw materials may also rise leading to a rise in prices for domestically produced goods. There may also be a disruption to supply chains as Irish firms seek alternatives to UK suppliers leading to rising prices or potential shortages. Irish consumers may also switch their online shopping from UK sites to EU"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2021-hl-q12-c-ii",
+  "topicId": "economics-4-1",
+  "conceptId": "advantages-of-eu-membership",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 HL Q12(c)(ii)",
+  "questionText": "Outline two possible advantages to Ireland of remaining a member of the EU.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 6",
+   "answer": 2,
+   "ofParts": 4,
+   "perPart": 6
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An advantage of EU membership — any two",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Two advantages, 6 marks each, split 3 for the point and 3 for developing it.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Free Trade Area / larger market / trade expansion: Being a member of the EU allows Ireland access to an increased market size of over 500 million people. These customers can be exported to tariff free. Ireland also benefits from the collective agreements that the EU negotiates with other countries outside the EU. Trade is also made easier within the EU with the removal of barriers / Irish firms can bid for public sector contracts within the EU.",
+      "Access to capital / research funding Ireland has received large amounts of capital funding from the EU throughout its years of membership which has supported activities such as improvement in infrastructure; re- training grants; Erasmus funding with around 50,000 students from Ireland participating in Erasmus since 1987. As part of the European Research Area we can both participate in and benefit from global research and development.",
+      "Freedom movement of capital / labour We have the freedom to live and work in any other member state without the requirement for a visa. Membership allows access to increased study / job opportunities. Irish citizens choosing to work or study abroad can have their Irish qualifications recognised throughout the EU, under the European Qualifications Framework. Also allows access to EU capital markets.",
+      "Foreign Direct Investment / job creation Ireland operates as an export hub on the doorstep of Europe, this location provides an incentive to American firms to provide FDI into Ireland in order to access this market. Many job opportunities have been created due to our EU membership. EU legislation and policies Ireland is protected by the policies and arrangements which the EU has agreed with EU member states and external countries such as the CAP and the Fisheries Policy. Workers and consumers are protected by EU legislation such as the European Health Insurance Card. Supports the Peace Process in Ireland EU membership has supported the Peace Process in Northern Ireland through investment in cross-border programmes and the creation of the Northern Ireland Task Force (NITF) and the PEACE Programmes. Since 1995 the programmes have committed approximately €2.26 billion worth of funding Northern Ireland and the Border Region of Ireland."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2021-ol-q11-b-i-neg",
+  "topicId": "economics-4-1",
+  "conceptId": "disadvantages-of-globalisation",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 OL Q11(b)(i) — disadvantages",
+  "questionText": "Outline two possible disadvantages of globalisation.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 3",
+   "answer": 2,
+   "ofParts": 4,
+   "perPart": 3
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A disadvantage of globalisation — any two",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two disadvantages, 3 marks each.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Widens the gap between rich and poor - The biggest drawback is that it is widening the gap between rich and poor - empowers those with specialist skills to charge higher prices",
+      "Environmental impact - The connection between economic and environmental problems can be clearly seen in the widespread social and economic impacts on deforestation and air pollution.",
+      "Outsourcing - Due to outsourcing, globalisation may deprive an entire country of his jobs and resources",
+      "Lower cost countries - Global companies hold a lot of negotiating power over governments and can be highly persuasive in getting them to adjust their policies on wages and taxes."
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme answers advantages and disadvantages under one part, so each side is carded on its own with its own questionRef — the rule for parallel accounts."
+ },
+ {
+  "id": "econ-2021-ol-q11-b-iii",
+  "topicId": "economics-4-1",
+  "conceptId": "why-mncs-locate-in-ireland",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 OL Q11(b)(iii)",
+  "questionText": "Outline two reasons why multinational companies choose to locate in Ireland.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 7",
+   "answer": 2,
+   "ofParts": 6,
+   "perPart": 7
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason MNCs locate in Ireland — any two",
+    "marks": 14,
+    "openList": true,
+    "contextNote": "Two reasons, 7 marks each, split 3 for the reason and 4 for developing it.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 7,
+     "options": [
+      "Low rates of taxation: the rate of corporation profits tax in Ireland is one of the lowest within the EU.",
+      "Access to EU market / Member of the euro currency: firms which locate in Ireland have access to free movement of their goods within the EU. Ireland is a member of the euro and this makes payment for international transactions within the eurozone much easier and hence more attractive.",
+      "Availability of state incentives: firms can avail of attractive grants and other incentives provided by the state e.g. grants towards research and development etc.",
+      "Good industrial relations: social partnerships have resulted in relative industrial peace offering firms uninterrupted production.",
+      "Stable rate of economic growth: the rate of economic growth in Ireland was one of the more attractive within the EU and this has led to confidence amongst investors, who see Ireland as an attractive market for their goods.",
+      "Stable economic climate: by international standards Ireland’s economy is performing exceptionally well. This has increased business confidence which encourages firms to locate here."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-q11-a-i",
+  "topicId": "economics-2-1",
+  "conceptId": "regional-rent-disparity",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q11(a)(i)",
+  "questionText": "Outline two possible reasons for the disparity in average rents between Dublin City and Waterford City in Q2, 2021.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 x 8 + 1 x 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason for the rent disparity — any two",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Two reasons, the first paid 8 and the second 4.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 8,
+     "options": [
+      "Greater population per sq. km in Dublin creates greater demand for housing – land is fixed in supply and there are only so many viable residential sites. Thus, the greater the population in a given area, the higher the house prices are likely to be.",
+      "Greater number of people employed in Dublin than Waterford – there are a greater number of jobs in Dublin than there are in any other region across the country. The more jobs there are in an area the greater the demand for housing in that area will be.",
+      "Greater amenities and services available in Dublin make it a more attractive place to some renters – there are more services and a more diverse experience in Dublin which may be a draw for renters especially migrant renters, international students etc.",
+      "Less available residential land in Dublin pushing up its value – the more land that is used up in Dublin for office spaces the less land there is available for residential properties. Planning restrictions also restrict having skyscraper apartments or offices which reduces the number of construction options available."
+     ],
+     "perOptionSteps": [
+      8,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-q11-a-ii",
+  "topicId": "economics-3-5",
+  "conceptId": "balanced-regional-development",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q11(a)(ii)",
+  "questionText": "Outline two possible interventions the Irish government could pursue to support balanced regional development in Ireland.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 x 8 + 1 x 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An intervention for balanced regional development — any two",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Two interventions, the first paid 8 and the second 4.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 8,
+     "options": [
+      "Increased investment in industry in rural areas – if the Irish government can put additional funding into supporting industrial development in underdeveloped regions of the country it may act as an incentive for more firms and production facilities to set up in those regions which will bring more jobs and prosperity to the area.",
+      "Tax breaks for firms in rural areas – if firms agree to operate in regions of Ireland which have traditionally seen lower investment this could be rewarded though lower tax rates.",
+      "Increased investment in infrastructure including broadband networks in rural areas - if the Irish government can put further funding into infrastructure in underdeveloped regions of the country it may be more of a draw for business, industry, and families.",
+      "Incentives for those who are willing to relocate from urban to rural areas – the government could provide financial incentives for workers who are willing to relocate to less developed regions. If the government can provide this, it will help to strengthen the labour force in these regions.",
+      "Increased social housing in rural areas – with increased housing options in these areas it will allow for greater geographical mobility which could help to strengthen the labour force in these areas."
+     ],
+     "perOptionSteps": [
+      8,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-q11-b-ii",
+  "topicId": "economics-1-2",
+  "conceptId": "characteristics-of-land",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q11(b)(ii)",
+  "questionText": "Other than land being fixed in supply, outline two characteristics of land in the economic sense.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 5",
+   "answer": 2,
+   "ofParts": 3,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A characteristic of land — any two",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two characteristics, 5 marks each. Fixed supply is excluded by the question, which leaves exactly the three the scheme prints.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "No cost of production to society as a whole as land – is provided by nature.",
+      "Non-specific factor of production – it can be used for multiple purposes.",
+      "Completely immobile – it cannot be moved from one location to another."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-q12-a-ii",
+  "topicId": "economics-2-0",
+  "conceptId": "advantages-of-deregulation",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q12(a)(ii)",
+  "questionText": "Outline two advantages of deregulation of a market.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 3",
+   "answer": 2,
+   "ofParts": 3,
+   "perPart": 3
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An advantage of deregulation — any two",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two advantages, 3 marks each.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Encourage greater efficiency / less waste of scarce resources – more firms competing together in the industry may mean that firms strive to achieve greater efficiency and so ensure their long-term survival.",
+      "Encourage more research and development in the industry – to remain competitive and hopefully push ahead of their competitors, firms may engage in more research and development which will also benefit the consumer through an improved product i.e., the development of sustainable sources.",
+      "Reduced state involvement – the government becomes less involved in the market and may allow it more time to devote to essential activities i.e., health provision."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-ol-q11-a-ii",
+  "topicId": "economics-2-0",
+  "conceptId": "advantages-of-many-firms-for-consumers",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 OL Q11(a)(ii)",
+  "questionText": "Outline two advantages for consumers of many firms providing streaming services in this market.",
+  "stem": "Set on a chart of US streaming services by number of users — YouTube highest, Vimeo lowest.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 x 8 + 1 x 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An advantage to consumers — any two",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Two advantages, the first paid 8 and the second 4.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 8,
+     "options": [
+      "Gives the consumer more choice – firms may introduce more choice of content in order to attact consumers.",
+      "More competitive prices – firms may reduce their prices to attract new consumers.",
+      "Improved quality / range of programming – firms providing the service might provide better service / a wider range of services due to the competition.",
+      "Increased innovation – firms may be more innovative in programming / content and consumers will benefit from this."
+     ],
+     "perOptionSteps": [
+      8,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-ol-q11-c-ii",
+  "topicId": "economics-2-0",
+  "conceptId": "barriers-to-entry",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 OL Q11(c)(ii)",
+  "questionText": "Firms who may wish to enter a monopoly industry face barriers to entry. Outline two possible barriers to entry.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 4",
+   "answer": 2,
+   "ofParts": 7,
+   "perPart": 4
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A barrier to entry — any two",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Two barriers, 4 marks each.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "The Government may grant a company the sole right to produce a good or supply a service",
+      "A patent / copyright will confer the sole right on a business to a particular manufacturing process for a particular commodity.",
+      "Firms may enter trade agreements with other suppliers i.e. collude with them so that no other firm can supply the product or service in the market.",
+      "A company may acquire the sole right to the available raw materials thereby becoming a monopoly in that particular industry e.g. oil exploration company.",
+      "For some industries the capital required to get established in that industry is so large that only the company which can raise the necessary capital can operate in the market.",
+      "By merging with a competitor or buying out the competitor a firm may become a monopoly supplier in that industry.",
+      "An individual or group of individuals may, by fear, force or threats, stop other individuals competing with the supplier e.g. the supply of illegal drugs."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-ol-q11-c-iii",
+  "topicId": "economics-1-3",
+  "conceptId": "government-intervention-dominant-firm",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 OL Q11(c)(iii)",
+  "questionText": "Suggest one way governments can intervene in the market if one firm becomes too dominant.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 4",
+   "answer": 1,
+   "ofParts": 2,
+   "perPart": 4
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A way government can intervene — any one",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One way, 4 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Regulation: regulators can ensure that dominant firms do not abuse their dominant position by investigating behaviour which may be deemed against the consumer’s interests. Decide the prices which they can charge such as electricity.",
+      "Legislation: the government / EU can use laws which make it illegal to engage in anti- competitive or abusive behaviour by companies holding a dominant position. Where a dominant firm is found to be engaged in behaviour against the consumer’s interests they can be fined."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2023-hl-q11-b-ii",
+  "topicId": "economics-2-1",
+  "conceptId": "geographical-mobility-of-labour",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 HL Q11(b)(ii)",
+  "questionText": "Explain two factors that influence the geographical mobility of labour.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1st @ 5 + 2nd @ 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A factor affecting geographical mobility — any two",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Two factors. The paper pays the first 5 and the second 4.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Housing: if there is affordable housing available in an area, this may encourage 2nd @ 4 people to move. The prohibitive costs of moving acts as a deterrent.",
+      "Educational facilities: if there are schools, childcare, universities etc. accessible, this may encourage families with children to move to an area.",
+      "Social infrastructure: if there are many social amenities in an area such as shops, parks, leisure facilities etc., this may encourage people to move.",
+      "Government supports: if financial aid was available to help with the move, people may be more willing to do so.",
+      "Access to supports for remote working e.g. broadband / work hubs etc.",
+      "Social connections: links with family / dependent relatives may restrict MOL.",
+      "Availability of work visas: for international workers limits mobility.",
+      "Availability of well-paid jobs in other areas i.e. Dublin v. rural areas in country."
+     ],
+     "perOptionSteps": [
+      5,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2023-hl-q11-b-iii",
+  "topicId": "economics-2-1",
+  "conceptId": "increasing-mobility-of-labour",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 HL Q11(b)(iii)",
+  "questionText": "Explain two ways the government can possibly increase geographical mobility of labour.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1st @ 5 + 2nd @ 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A way to increase mobility of labour — any two",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Two ways, the first paid 5 and the second 4.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Financial incentives: to encourage firm to relocate and/or incentives to 1st @ 5 encourage individuals to do so. 2nd @ 4",
+      "Investment into housing: the lack of affordable housing is an impediment to mobility. If housing were made available in underutilised areas it could act an an incentive for re-location.",
+      "Funding for educational institutions: the provision of schools; colleges and institutes may make these areas attractive.",
+      "Increased infrastructural development: in these areas such as improved transport facilities; social infrastructure make these areas more attractive for relocation.",
+      "Improve access/affordability to those supports needed for remote working i.e. internet access etc / provide more rural working hubs. The table below (adapted from the UNDP) shows the Human Development Index"
+     ],
+     "perOptionSteps": [
+      5,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2023-hl-q11-c-ii",
+  "topicId": "economics-3-1",
+  "conceptId": "policies-to-address-inequality",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 HL Q11(c)(ii)",
+  "questionText": "Despite Ireland’s high HDI ranking, inequalities still exist. Outline two economic policies which the Irish Government could consider to address inequality in Ireland. Justify your answers.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1st @ 5 + 2nd @ 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A policy to address inequality — any two",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Two policies, the first paid 5 and the second 4. The marks are for the justification as much as the policy.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Invest in education: If the government abolished (hidden) fees that hinder access to education at all levels, this would remove a barrier that currently exists.",
+      "Adjust the tax system: If direct taxes were reduced for workers on low incomes, this would increase their disposable income.",
+      "Increase minimum wage: Increasing the minimum wage further would provide those on low incomes with further disposable income.",
+      "Increase social welfare payments: While an obvious expense to the government, this would also provide those on low or no incomes to have further disposable income.",
+      "Control rents: Rents are a high expense for many in this country. Proper control of the rents would lead to less exploitation and allow for further disposable income.",
+      "Remove barriers to health care access: Some citizens are prevented access to health care due to their lack of income. Removal of such barriers and others would reduce inequalities.",
+      "Increased regulation to decrease the gender pay gap.",
+      "Increase employment opportunities: The government could promote job opportunities in various forms including advertisements and subsidies.",
+      "Improved access to education / employment / social structures for people with disabilities."
+     ],
+     "perOptionSteps": [
+      5,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2023-hl-q11-c-iii",
+  "topicId": "economics-3-1",
+  "conceptId": "disadvantages-of-inequality-policies",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 HL Q11(c)(iii)",
+  "questionText": "If the policies you suggested above were introduced, outline two possible economic disadvantages of the implementation of these policies.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1st @ 5 + 2nd @ 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A disadvantage of those policies — any two",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Two disadvantages, the first paid 5 and the second 4. Each answers one of the policies from part (ii), so the two parts are marked as a pair.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Education: abolishing fees could lead to too many people applying to go to college and universities and some may not able to cope / not enough people 1st @ 5 doing apprenticeships for trades. 2nd @ 4",
+      "Adjust the tax system: reducing direct taxes may mean we rely on increasing indirect taxation and hence inflation and/or relying too heavily on taxation from MNCs.",
+      "Increase minimum wage: this pushes up costs for business and it may result in the closure of some firms.",
+      "Increase social welfare payments: may have the effect of acting as a disincentive to work and negatively affect the labour supply.",
+      "Control rents: may further increase the number of landlords leaving the housing market and make the housing crisis worse. Note: one disadvantage of each policy required."
+     ],
+     "perOptionSteps": [
+      5,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2023-hl-q12-a-i",
+  "topicId": "economics-2-0",
+  "conceptId": "perfect-competition-characteristics",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 HL Q12(a)(i)",
+  "questionText": "Outline three characteristics of a perfectly competitive market.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 @ 4",
+   "answer": 3,
+   "ofParts": 8,
+   "perPart": 4
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A characteristic of perfect competition — any three",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Three characteristics, 4 marks each.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Large number of buyers. No individual buyer can influence the market price.",
+      "Large number of sellers. No individual seller can influence the market price. Each seller is a price taker and accept the market price.",
+      "Homogenous goods. All the goods are identical and hence there is no need for advertising.",
+      "No barriers to entry. This means that firms are free to enter and exit the industry.",
+      "Perfect knowledge of products, profits, prices. All firms have full knowledge of the profits being earned in the industry. All buyers are fully aware of the prices being charged for thew products.",
+      "Firms aim to maximise profits. They do this by maximising efficiency and minimising their costs.",
+      "No Collusion exists in the industry. Firms do not join together implicitly or explicitly to control the supply and manipulate prices.",
+      "Perfectly elastic supply of factors of production. All firms have access to the factors at existing prices."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2023-hl-q12-a-ii",
+  "topicId": "economics-2-0",
+  "conceptId": "irish-milk-not-perfectly-competitive",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 HL Q12(a)(ii)",
+  "questionText": "Identify one reason why the market for Irish milk can no longer be considered perfectly competitive.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 4",
+   "answer": 1,
+   "ofParts": 10,
+   "perPart": 4
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason the milk market is not perfectly competitive — any one",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One reason, 4 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "There are some large sellers in the industry who can now influence price e.g. Kerry Group and Glanbia.",
+      "Milk products are not homogeneous. They are now heavily differentiated with extensive advertising.",
+      "Competitive advertising could possibly be seen as a barrier to entry.",
+      "There is not perfect knowledge in the industry of prices, profits or products. (iii) Explain, with the use of a fully labelled diagram (including the axes), the long run equilibrium of a firm in perfect competition. Price MC AC E P/C D = AR = MR Q Quantity 1 mark per label = 9 marks Price Quantity P C Q MC AC D/AR/MR E Explanation:",
+      "Equilibrium is at point E (where MC = MR).",
+      "Firms produce quantity Q.",
+      "They sell the output at price P.",
+      "Costs occur at level C.",
+      "The firm earns normal profit as AR = AC.",
+      "The firm is efficient as costs are at a minimum point of the ATC curve. The bar chart below shows the market share for Irish Dairy Producers in 2021."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2023-ol-q11-a-i",
+  "topicId": "economics-2-0",
+  "conceptId": "monopolistic-competition-identified",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q11(a)(i)",
+  "questionText": "Outline two reasons why, in your opinion, the hair and beauty industries are an example of monopolistic competition.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1st @ 6 + 2nd @ 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason it is monopolistic competition — any two",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Two reasons, the first paid 6 and the second 4.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "There are many firms in the industry: each seller can influence their sales.",
+      "There are many buyers in the industry: no buyer can influence market price.",
+      "The products and services are close substitutes for each other: this allows for extensive advertising.",
+      "Firms wish to maximise profits where MC=MR."
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2023-ol-q11-a-ii",
+  "topicId": "economics-2-0",
+  "conceptId": "monopolistic-competition-consumer-advantages",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q11(a)(ii)",
+  "questionText": "Outline two advantages for consumers of monopolistic competition.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1st @ 6 + 2nd @ 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An advantage to consumers — any two",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Two advantages, the first paid 6 and the second 4.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Consumers benefit from increased choice.",
+      "Due to competition the consumer may benefit from more competitive pricing.",
+      "They may also benefit from better quality of service.",
+      "As firms earn normal profit in the long run, consumers are less likely to be exploited by higher prices.",
+      "Due to competition, there may be more innovation in the industry.",
+      "As the firms in this industry engage in competitive advertising, it could be argued that consumers have the benefit of access to more information / consumers may have access to brand loyalty bonuses."
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2023-ol-q12-b-ii",
+  "topicId": "economics-3-1",
+  "conceptId": "principles-of-a-good-tax-system",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q12(b)(ii)",
+  "questionText": "Explain two other principles of a good tax system that you would consider important in the current economic climate.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1st @ 8 + 2nd @ 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A principle of a good tax system — any two",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Two principles, the first paid 8 and the second 4. Equity — ability to pay — is excluded by the question.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 8,
+     "options": [
+      "A good tax system should not be a disincentive to work.",
+      "Convenient: It should be easy and convenient to collect the tax.",
+      "It should discourage tax evasion.",
+      "Certainty: the amount of tax to be paid should be clear or certain.",
+      "Economic: The revenue collected should exceed the cost of collection."
+     ],
+     "perOptionSteps": [
+      8,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2023-ol-q12-c-i",
+  "topicId": "economics-1-3",
+  "conceptId": "benefit-of-the-electricity-credit",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q12(c)(i)",
+  "questionText": "Outline one benefit of the €600 electricity credit to the Irish household.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 8",
+   "answer": 1,
+   "ofParts": 5,
+   "perPart": 8
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A benefit to the household — any one",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "One benefit, 8 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 8,
+     "options": [
+      "It helps Irish households to maintain their standard of living during cost of living crisis.",
+      "It reduces the costs of electricity for households in a time of high energy inflation.",
+      "It reduces the risk of energy poverty for fixed/low income families.",
+      "It may help reduce stress / anxiety for households facing increasing bills.",
+      "Helps low income families by providing them with more disposable income."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2023-ol-q12-c-ii",
+  "topicId": "economics-0-2",
+  "conceptId": "household-actions-to-cut-electricity-use",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q12(c)(ii)",
+  "questionText": "Describe two actions an Irish household could take to reduce their electricity bills and make them more sustainable.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1st @ 10 + 2nd @ 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An action the household could take — any two",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Two actions, the first paid 10 and the second 4.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 10,
+     "options": [
+      "The Irish household could reduce their consumption of electricity: switch off unused appliances.",
+      "The Irish household could look at alternative ways of accessing energy e.g. install solar panels.",
+      "They could ensure their electrical appliances are more energy efficient: switch to improved energy rating appliances.",
+      "They could be more mindful of usage e.g. standby, boiling a full kettle for one cup of tea. Use dishwashers/ washing machines with full loads."
+     ],
+     "perOptionSteps": [
+      10,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2023-ol-q13-a-ii",
+  "topicId": "economics-4-2",
+  "conceptId": "advantages-of-exports",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q13(a)(ii)",
+  "questionText": "Describe two advantages of exports for the Irish economy.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1st @ 8 + 2nd @ 2",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An advantage of exports — any two",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Two advantages, the first paid 8 and the second 2.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 8,
+     "options": [
+      "Increased national income: exporting goods and services generates money for the Irish economy and leads to an increase in economic growth.",
+      "Employment: the demand for Irish goods and services abroad leads to an increase in jobs in the Irish economy.",
+      "Government revenue will increase in terms of increase in corporation tax collected and PAYE and VAT collected.",
+      "Benefit of economies of scale for the Irish firms exporting abroad. These are the cost savings that will come with increased production to meet the demand for Irish goods and services abroad."
+     ],
+     "perOptionSteps": [
+      8,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "econ-2024-hl-q11-a-iii",
   "topicId": "economics-4-1",
   "conceptId": "disadvantages-of-tourism",
