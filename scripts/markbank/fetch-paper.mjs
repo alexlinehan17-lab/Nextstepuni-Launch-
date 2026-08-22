@@ -21,6 +21,11 @@
  *
  * With no label it lists what that subject/year/level actually holds, which is
  * the quickest way to find the label to pass.
+ *
+ * --scheme fetches the MARKING SCHEME for that sitting instead of the paper.
+ * One scheme usually covers every paper of a sitting, so the label may be any of
+ * them and the same file comes back; where a subject splits its schemes, the
+ * label picks between them.
  */
 
 import { writeFileSync, mkdirSync } from 'node:fs';
@@ -29,7 +34,9 @@ import { paperIndex } from './paperIndex.mjs';
 
 const BUCKET = 'nextstepuni-app.firebasestorage.app';
 
-const [subject, yearArg, level, label, out] = process.argv.slice(2);
+const argv = process.argv.slice(2);
+const wantScheme = argv.includes('--scheme');
+const [subject, yearArg, level, label, out] = argv.filter((a) => a !== '--scheme');
 if (!subject || !yearArg || !level) {
   process.stderr.write('usage: fetch-paper.mjs <subject> <year> <higher|ordinary> [label] [outfile]\n');
   process.exit(2);
@@ -54,7 +61,9 @@ if (!release) {
 }
 
 if (!label) {
-  for (const p of release.papers) process.stdout.write(`${p.label}\n`);
+  for (const p of release.papers) {
+    process.stdout.write(`${p.label}${p.scheme ? `  [scheme ${p.scheme.f}]` : ''}\n`);
+  }
   process.exit(0);
 }
 
@@ -64,7 +73,12 @@ if (!paper) {
   process.exit(1);
 }
 
-const path = `papers/lc/${subject}/${year}/paper/${paper.doc.f}`;
+const doc = wantScheme ? paper.scheme : paper.doc;
+if (!doc) {
+  process.stderr.write(`no ${wantScheme ? 'scheme' : 'paper'} for "${label}"\n`);
+  process.exit(1);
+}
+const path = `papers/lc/${subject}/${year}/${wantScheme ? 'scheme' : 'paper'}/${doc.f}`;
 const url = `https://firebasestorage.googleapis.com/v0/b/${BUCKET}/o/${encodeURIComponent(path)}?alt=media`;
 const res = await fetch(url);
 if (!res.ok) {
@@ -73,7 +87,7 @@ if (!res.ok) {
 }
 const bytes = Buffer.from(await res.arrayBuffer());
 
-const dest = out ?? `${subject}-${year}-${level === 'higher' ? 'HL' : 'OL'}.pdf`;
+const dest = out ?? `${subject}-${year}-${level === 'higher' ? 'HL' : 'OL'}${wantScheme ? '-scheme' : ''}.pdf`;
 mkdirSync(dirname(dest), { recursive: true });
 writeFileSync(dest, bytes);
 process.stdout.write(`${dest} (${(bytes.length / 1024).toFixed(0)} kB)\n`);
