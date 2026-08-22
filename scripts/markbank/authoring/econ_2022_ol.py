@@ -175,4 +175,27 @@ P.menu('benefits of the government collecting corporation tax', 'econ-2022-ol-q1
 # uncarded because its path reads (b)(ii) rather than (a)(ii), and a duplicate id
 # would not have caught it — the ids differ. Duplicate TEXT is the check that does.
 
+# ── Section B, third pass ──────────────────────────────────────────────────
+P.menu('consumers behaving rationally', 'econ-2022-ol-q13-c-ii',
+       'economics-1-1', 'what-a-rational-consumer-does',
+       'Explain the concept of consumers behaving rationally, using an example to support '
+       'your answer.',
+       'The explanation and an example — both of these',
+       'Explanation 6 and example 4.',
+       ref='2022 OL Q13(c)(ii)', claim=2, per=6, steps=[6, 4], drop=SCAFFOLD)
+
+P.menu('Explain the term indirect tax giving', 'econ-2022-ol-q16-c-i',
+       'economics-3-1', 'what-an-indirect-tax-is',
+       'Explain the term indirect tax, giving an example other than excise duties.',
+       'The explanation and an example — both of these',
+       'Explanation and example, 8 marks between them.',
+       ref='2022 OL Q16(c)(i)', claim=2, per=4, drop=SCAFFOLD)
+
+P.menu('Explain the term hidden economy', 'econ-2022-ol-q16-c-ii',
+       'economics-3-1', 'what-the-hidden-economy-is',
+       'Explain the term hidden economy, giving one other example of such an activity.',
+       'The explanation and an example — both of these',
+       'Explanation and example, 8 marks each.',
+       ref='2022 OL Q16(c)(ii)', claim=2, per=8, drop=SCAFFOLD)
+
 P.emit()

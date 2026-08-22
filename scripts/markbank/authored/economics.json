@@ -4728,6 +4728,133 @@
   "notes": ""
  },
  {
+  "id": "econ-2022-ol-q13-c-ii",
+  "topicId": "economics-1-1",
+  "conceptId": "what-a-rational-consumer-does",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 OL Q13(c)(ii)",
+  "questionText": "Explain the concept of consumers behaving rationally, using an example to support your answer.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 @ 6+1 @ 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The explanation and an example — both of these",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Explanation 6 and example 4.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Explain the concept of consumers behaving rationally, using an example to support your answer. Behaving rationally means the consumer acts in a manner consistent with their preferences / consumers buy goods and services with their income that give them the maximum satisfaction.",
+      "Example: If a consumer prefers a pair of trainers to a pair of jeans and they both cost the same then the rational consumer will choose the trainers. If the trainers are for sale in two adjoining shops, then the rational consumer will buy the trainers at the lower price."
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-ol-q16-c-i",
+  "topicId": "economics-3-1",
+  "conceptId": "what-an-indirect-tax-is",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 OL Q16(c)(i)",
+  "questionText": "Explain the term indirect tax, giving an example other than excise duties.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 4",
+   "answer": 2,
+   "ofParts": 2,
+   "perPart": 4
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The explanation and an example — both of these",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Explanation and example, 8 marks between them.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "an example other than excise duties. An indirect tax is a tax on the consumption of goods and services / a tax on spending.",
+      "Example: Value Added Tax / Plastic bag tax / Motor Tax."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-ol-q16-c-ii",
+  "topicId": "economics-3-1",
+  "conceptId": "what-the-hidden-economy-is",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 OL Q16(c)(ii)",
+  "questionText": "Explain the term hidden economy, giving one other example of such an activity.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 8",
+   "answer": 2,
+   "ofParts": 2,
+   "perPart": 8
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The explanation and an example — both of these",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "Explanation and example, 8 marks each.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 8,
+     "options": [
+      "Explain the term hidden economy, giving one other example of such an activity. The hidden economy refers to economic activity which is not recorded and as a result not included in the national income accounts. It refers to incomes from illegal sources /undeclared incomes from the production of goods & services from either monetary of barter transactions. Activities outside the tax/regulatory systems.",
+      "Example: paying for repairs by cash (which is not declared for tax purposes)"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "econ-2022-ol-sa-q2-ii",
   "topicId": "economics-1-3",
   "conceptId": "what-the-census-is-used-for",
