@@ -6862,6 +6862,35 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
+    id: "agsci-2021-hl-q17bi", topicId: "agsci-3-1", conceptId: "reading-p-and-k-soil-indexes",
+    section: "B", questionRef: "2021 HL Q17(b)(i)",
+    stem: "554115 Field 1 – Permanent pasture (mainly silage production) Fertiliser Recommendations pH 5.3 6.5 – 7.5 Lime Requirement Test Parameters Result Very Low Low Normal High Target Response to Value Fertiliser t/ha 5.2 Phosphorus (P) mg/l 1.77 8.00 Definite 39 kg/ha P Potassium (K) mg/l 28.4 150 Definite 85 kg/ha K 554116 Field 2 – Permanent pasture (main grazing block) Fertiliser Recommendations pH 6 6.5 – 7.5 Lime Requirement Test Parameters Result Very Low Low Normal High Target Response to Value Fertiliser t/ha 3.75 Phosphorus (P) mg/l 6.42 8.00 Unlikely 19 kg/ha P Potassium (K) mg/l 157 150 None 0 kg/ha K Nutrient Field 2 Field 1 P Field 2 K Reference Soil Index Soil test range for each Soil Index Description Response to fertilisers index (mg/l) P K 1 Very low Definite 0 – 3.0 0 ‐ 50 2 Low Likely 3.1 – 5.0 51 ‐ 100 3 Medium Unlikely 5.1 – 8.0 101 – 150 4 High None ≥ 8.1 ≥ 151",
+    questionText: "Determine the P and K soil indexes for field 2.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "P = 3 K = 4", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
+    id: "agsci-2023-hl-q15cii", topicId: "agsci-3-1", conceptId: "soil-ph-and-nitrous-oxide-emissions",
+    section: "B", questionRef: "2023 HL Q15(c)(ii)",
+    stem: "Effect of soil pH on nitrous oxide (N20) emissions 7000 Cumulaitve N20 Emissions (g N20/ha/year) 6000 5000 4000 3000 2000 1000 0 5.1 5.4 6.2 6.9 Soil pH",
+    questionText: "Discuss the relationship between pH and N20 emissions on the graph and its implications for ongoing farming practice.",
+    tariffModel: {"kind":"fixed","notation":"5 + 3"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "its implications for ongoing farming practice. The higher the soil pH the lower the N20 emissions", marks: 5 },
+    { id: "r-2", kind: "point", verbatim: "(Farmers should test their soil pH and) add lime to increase the pH levels to as close to neutral as possible to reduce the N20 emissions", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2024, level: "higher",
     paperFileid: "LC024ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
@@ -7059,6 +7088,20 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Pooling colostrum or using colostrum from another dam has little effect on calf performance or own dam colostrum is best followed by pooled colostrum", marks: 4 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q16bi", topicId: "agsci-4-2", conceptId: "whether-pooling-colostrum-costs-quality",
+    section: "B", questionRef: "2024 HL Q16(b)(i)",
+    stem: "Sample number Treatment group Colostrum IgG Average birthweight (kg) Average weaning (mg/ml) weight (kg) Sample 1 Pooled colostrum 100.7 34.0 94.0 Sample 2 Own dam colostrum 99.4 33.3 93.7 Sample 3 Colostrum from another dam 95.2 34.3 91.7 (Adapted from Teagasc, 2019)",
+    questionText: "Based on the results shown, state if there is any difference in colostrum quality when pooled.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Pooled colostrum is best or valid comparison with Sample 2 or", marks: 4 },
     ],
   } as SecCard,
   {

@@ -48,4 +48,10 @@ A.card(8, 'a', 'i', topic='chem-2-4', concept='homologous-series-of-ethene',
 A.card(8, 'a', 'ii', topic='chem-4-2', concept='naming-the-alcohol-from-ethene',
        source='pdf', use=[1], marks=[6], notation='8 + 6 + 2 + 2')
 
+A.card(5, 'b', 'vii', topic='chem-1-4', concept='shape-of-a-four-atom-molecule',
+       source='pdf', from_run=((5, 'b', 'vii'), 5, slice(0, 1)), marks=[2],
+       notation='2 of the 28 the scheme splits 9 + 6 + 4 + 3 + 2 + 2 + 2 across Q5(b)',
+       first_sentence=True,
+       notes='The scheme accepts tetrahedral, triangular or trigonal as well.')
+
 A.emit()

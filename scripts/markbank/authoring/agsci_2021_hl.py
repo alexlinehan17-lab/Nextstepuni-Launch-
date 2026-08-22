@@ -77,4 +77,11 @@ A.card(4, 'c', topic='agsci-4-3-1', concept='farmyard-environmental-improvements
              "part (a) — onto its first suggestion, so that line is left off the card "
              "rather than shown as an answer. The rubric itself is in the question.")
 
+# ── Q17(b)(i): reading a soil report ──────────────────────────────────────
+# Three marks, and the scheme pays them only if both indexes are right. The
+# field's P and K results are in the soil report the question prints above it.
+A.card(17, 'b', 'i', topic='agsci-3-1', concept='reading-p-and-k-soil-indexes',
+       from_run=((17, 'b', 'i'), 0, slice(0, 6)), marks=[3],
+       notes='The scheme gives nothing for one right and one wrong.')
+
 A.emit()

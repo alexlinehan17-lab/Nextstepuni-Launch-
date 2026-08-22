@@ -5203,4 +5203,18 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "ethanol", marks: 6 },
     ],
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC022GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2024 Ordinary Level — © State Examinations Commission.",
+    id: "chem-2024-ol-q5-b-vii", topicId: "chem-1-4", conceptId: "shape-of-a-four-atom-molecule",
+    section: "A", questionRef: "2024 OL Q5(b)(vii)",
+    stem: "The periodic table on page 81 of the Formulae and Tables booklet shows the electronegativity values of the elements. Part of this table is shown in the diagram below. 1 18 1 2 H He 2.20 2 13 14 15 16 17 – – 3 4 5 6 7 8 9 10 Li Be B C N O F Ne 0.98 1.57 2.04 2.55 3.04 3.44 3.98 – – 11 12 13 14 15 16 17 18 Na Mg Al Si P S Cl Ar 0.93 1.31 3 4 5 6 7 8 9 10 11 12 1.61 1.90 2.19 2.58 3.16 – – 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr 0.82 1.00 1.36 1.54 1.63 1.66 1.55 1.83 1.88 1.91 1.90 1.65 1.81 2.01 2.18 2.55 2.96 – – Electronegativity values increase across a period of the periodic table.",
+    questionText: "Suggest a possible shape for a molecule containing 4 atoms, such as NF3.",
+    tariffModel: {"kind":"fixed","notation":"2 of the 28 the scheme splits 9 + 6 + 4 + 3 + 2 + 2 + 2 across Q5(b)"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "●", marks: 2 },
+    ],
+  } as SecCard,
 ];

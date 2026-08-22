@@ -6949,6 +6949,20 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2023-ol-q13bii", topicId: "agsci-3-2", conceptId: "what-the-reseeding-trial-shows",
+    section: "B", questionRef: "2023 OL Q13(b)(ii)",
+    stem: "Comparison of reseeding methods in terms of grass production potential Grass production relative to plough method Plough Disc One pass Direct drill 1.2 1 1 0.95 0.87 1 0.8 0.6 0.4 0.2 0 Reseeding method (Adapted from Teagasc, 2022)",
+    questionText: "Outline what conclusion the researchers can make in relation to the sustainable reseeding methods.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "There is very little difference in the grass growth (between all the reseeding methods) or sustainable methods as good as plough or it would be better for the environment to use the sustainable methods", marks: 2 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2024, level: "ordinary",
     paperFileid: "LC024GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",

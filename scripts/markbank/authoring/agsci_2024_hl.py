@@ -88,4 +88,7 @@ A.card(1, 'b', topic='agsci-1-5', concept='how-a-stomach-tube-is-used',
 A.card(16, 'b', 'ii', topic='agsci-4-2', concept='advice-from-the-colostrum-trial',
        from_run=((16, 'b', 'ii'), 0, slice(4, None)), marks=[4])
 
+A.card(16, 'b', 'i', topic='agsci-4-2', concept='whether-pooling-colostrum-costs-quality',
+       from_run=((16, 'b', 'i'), 0, slice(3, None)), marks=[4])
+
 A.emit()

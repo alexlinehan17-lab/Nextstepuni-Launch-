@@ -90,4 +90,10 @@ A.card(6, 'a', 'iii', topic='agsci-3-3-3', concept='silage-dmd-for-dry-suckler-c
        from_run=((6, 'a', 'iii'), 0, slice(2, 5)), marks=[1],
        notes='D is the lowest band on the paper\'s own list of silage qualities.')
 
+A.card(13, 'b', 'ii', topic='agsci-3-2', concept='what-the-reseeding-trial-shows',
+       source='pdf', from_run=((12, 'b', 'ii'), 1, slice(0, None)), marks=[2],
+       notes='The scheme numbers this answer under its own Question 12 while the paper '
+             'prints Question 13, and only the PDF reading has it — the markdown one '
+             'files it under 13 with the question cue spliced onto the front.')
+
 A.emit()

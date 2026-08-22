@@ -33217,6 +33217,31 @@
   "figureKey": "agricultural-science-2021-HL-paper-p08-i0"
  },
  {
+  "id": "agsci-2021-hl-q17bi",
+  "topicId": "agsci-3-1",
+  "conceptId": "reading-p-and-k-soil-indexes",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2021 HL Q17(b)(i)",
+  "questionText": "Determine the P and K soil indexes for field 2.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "P = 3 K = 4",
+    "marks": 3
+   }
+  ],
+  "stem": "554115 Field 1 – Permanent pasture (mainly silage production) Fertiliser Recommendations pH 5.3 6.5 – 7.5 Lime Requirement Test Parameters Result Very Low Low Normal High Target Response to Value Fertiliser t/ha 5.2 Phosphorus (P) mg/l 1.77 8.00 Definite 39 kg/ha P Potassium (K) mg/l 28.4 150 Definite 85 kg/ha K 554116 Field 2 – Permanent pasture (main grazing block) Fertiliser Recommendations pH 6 6.5 – 7.5 Lime Requirement Test Parameters Result Very Low Low Normal High Target Response to Value Fertiliser t/ha 3.75 Phosphorus (P) mg/l 6.42 8.00 Unlikely 19 kg/ha P Potassium (K) mg/l 157 150 None 0 kg/ha K Nutrient Field 2 Field 1 P Field 2 K Reference Soil Index Soil test range for each Soil Index Description Response to fertilisers index (mg/l) P K 1 Very low Definite 0 – 3.0 0 ‐ 50 2 Low Likely 3.1 – 5.0 51 ‐ 100 3 Medium Unlikely 5.1 – 8.0 101 – 150 4 High None ≥ 8.1 ≥ 151",
+  "notes": "The scheme gives nothing for one right and one wrong."
+ },
+ {
   "id": "agsci-2021-ol-q4b",
   "topicId": "agsci-2-1",
   "conceptId": "uses-of-a-brown-earth-soil",
@@ -33676,6 +33701,37 @@
   "notes": "The scheme prints the five answers as one run against Q4(b) rather than against each statement, so this answer is the run's word for this statement. Tariff 5(2): five statements at 2 marks each."
  },
  {
+  "id": "agsci-2023-hl-q15cii",
+  "topicId": "agsci-3-1",
+  "conceptId": "soil-ph-and-nitrous-oxide-emissions",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2023 HL Q15(c)(ii)",
+  "questionText": "Discuss the relationship between pH and N20 emissions on the graph and its implications for ongoing farming practice.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 + 3"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "its implications for ongoing farming practice. The higher the soil pH the lower the N20 emissions",
+    "marks": 5
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "(Farmers should test their soil pH and) add lime to increase the pH levels to as close to neutral as possible to reduce the N20 emissions",
+    "marks": 3
+   }
+  ],
+  "stem": "Effect of soil pH on nitrous oxide (N20) emissions 7000 Cumulaitve N20 Emissions (g N20/ha/year) 6000 5000 4000 3000 2000 1000 0 5.1 5.4 6.2 6.9 Soil pH"
+ },
+ {
   "id": "agsci-2023-ol-q1b",
   "topicId": "agsci-2-2-1",
   "conceptId": "reading-a-soil-ph-probe",
@@ -34043,6 +34099,31 @@
   "notes": "D is the lowest band on the paper's own list of silage qualities."
  },
  {
+  "id": "agsci-2023-ol-q13bii",
+  "topicId": "agsci-3-2",
+  "conceptId": "what-the-reseeding-trial-shows",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2023 OL Q13(b)(ii)",
+  "questionText": "Outline what conclusion the researchers can make in relation to the sustainable reseeding methods.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "There is very little difference in the grass growth (between all the reseeding methods) or sustainable methods as good as plough or it would be better for the environment to use the sustainable methods",
+    "marks": 2
+   }
+  ],
+  "stem": "Comparison of reseeding methods in terms of grass production potential Grass production relative to plough method Plough Disc One pass Direct drill 1.2 1 1 0.95 0.87 1 0.8 0.6 0.4 0.2 0 Reseeding method (Adapted from Teagasc, 2022)",
+  "notes": "The scheme numbers this answer under its own Question 12 while the paper prints Question 13, and only the PDF reading has it — the markdown one files it under 13 with the question cue spliced onto the front."
+ },
+ {
   "id": "agsci-2024-hl-q10a",
   "topicId": "agsci-3-2",
   "conceptId": "recognising-a-multi-species-sward",
@@ -34346,6 +34427,30 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "Pooling colostrum or using colostrum from another dam has little effect on calf performance or own dam colostrum is best followed by pooled colostrum",
+    "marks": 4
+   }
+  ],
+  "stem": "Sample number Treatment group Colostrum IgG Average birthweight (kg) Average weaning (mg/ml) weight (kg) Sample 1 Pooled colostrum 100.7 34.0 94.0 Sample 2 Own dam colostrum 99.4 33.3 93.7 Sample 3 Colostrum from another dam 95.2 34.3 91.7 (Adapted from Teagasc, 2019)"
+ },
+ {
+  "id": "agsci-2024-hl-q16bi",
+  "topicId": "agsci-4-2",
+  "conceptId": "whether-pooling-colostrum-costs-quality",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2024 HL Q16(b)(i)",
+  "questionText": "Based on the results shown, state if there is any difference in colostrum quality when pooled.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Pooled colostrum is best or valid comparison with Sample 2 or",
     "marks": 4
    }
   ],
