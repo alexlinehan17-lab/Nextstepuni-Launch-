@@ -71,6 +71,16 @@ def main():
         # Q16(a)(i) are both "Discuss two reasons for the increase in the number
         # of homeless people in Ireland".
         asked = squash(p['question'])
+        # An unplaced part has no question number to compare, so the check above
+        # never fires for it and a carded part is reported as a gap — 2022 HL
+        # Section A Q7(b) on the roles of the ECB was offered twice that way.
+        # Compare against every card of this year and level instead.
+        if not k and asked and any(
+                squash(c['questionText'])[:50] in asked or asked[:50] in squash(c['questionText'])
+                for c in cards
+                if str(c['year']) == str(year)
+                and c['level'].startswith(level[:2])):
+            continue
         if k and asked and any(
                 (kk := key(c['questionRef'])) and kk[:4] == k[:4]
                 and (squash(c['questionText'])[:60] in asked
