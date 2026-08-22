@@ -189,4 +189,8 @@ P.menu('economic factor which led to a change in Ireland', 'econ-2025-hl-sa-q10-
        'One factor, 6 marks.',
        ref='2025 HL Section A Q10(b)', claim=1, per=6, drop=SCAFFOLD)
 
+# Q6(b) is not carded: its 6 marks cover a diagram to be completed AND the
+# explanation, and the scheme does not split them. Four written steps at 1 mark
+# each was my arithmetic, not the scheme's.
+
 P.emit()

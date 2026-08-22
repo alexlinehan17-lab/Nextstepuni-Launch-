@@ -16553,5 +16553,136 @@
    }
   ],
   "notes": ""
+ },
+ {
+  "id": "econ-2025-ol-sa-q2-b-yes",
+  "topicId": "economics-1-3",
+  "conceptId": "the-case-for-free-schoolbooks",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2025 OL Section A Q2(b) — yes",
+  "questionText": "Do you think the Budget 2025 schoolbooks measure was a good use of government expenditure? Explain YES.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 12",
+   "answer": 1,
+   "ofParts": 3,
+   "perPart": 12
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason in favour — any one",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "One reason, 12 marks for the part.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 12,
+     "options": [
+      "Cost of attending school reduced - helps keep students in education as there are less costs associated with going to school.",
+      "Reduces inequality - parents have to spend less for their children to stay in school and this may encourage those children who may have considered leaving school to remain.",
+      "Second level education now becomes cheaper – this may further boost economic growth and help alleviate poverty. No"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2025-ol-sa-q2-b-no",
+  "topicId": "economics-1-3",
+  "conceptId": "the-case-against-free-schoolbooks",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2025 OL Section A Q2(b) — no",
+  "questionText": "Do you think the Budget 2025 schoolbooks measure was a good use of government expenditure? Explain NO.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 12",
+   "answer": 1,
+   "ofParts": 7,
+   "perPart": 12
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason against — any one",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "One reason, 12 marks for the part.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 12,
+     "options": [
+      "Cost of attending school reduced - helps keep students in education as there are less costs associated with going to school.",
+      "Reduces inequality - parents have to spend less for their children to stay in school and this may encourage those children who may have considered leaving school to remain.",
+      "Second level education now becomes cheaper – this may further boost economic growth and help alleviate poverty. No",
+      "It is not equitable – it should be means tested, so that only those who cannot afford books get the required support.",
+      "If better targeted at those who need it most – then the costs will be reduced so saving scarce resources.",
+      "Closure of businesses – with its introduction many small businesses have been forced to close resulting in a decline in economic activity in some areas; job losses etc (which maybe require government assistance.",
+      "Opportunity cost - there are other more significant issues either within education or society that this money might be better going towards e.g. SNA's, SEN education, housing crisis, infrastructure, heath care etc."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2025-ol-sa-q4-b",
+  "topicId": "economics-1-3",
+  "conceptId": "why-cost-of-living-measures",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2025 OL Section A Q4(b)",
+  "questionText": "Outline one reason why the government introduced the cost-of-living measures.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 12",
+   "answer": 1,
+   "ofParts": 4,
+   "perPart": 12
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason — any one",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "One reason, 12 marks for the part.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 12,
+     "options": [
+      "To help people with the cost-of-living crisis / inflation - as people have been dealing with higher prices for goods and services and rent / mortgage payments, these measures will allow people to keep more of their money and deal with these additional costs.",
+      "To increase economic growth - as workers keep more of their money they might decide to spend more in the economy, leading to more economic growth and business confidence, and possibly more indirect taxes being paid like VAT.",
+      "To help reduce inequality – if the cost-of-living measures are targeted at lower income groups these may help reduce inequalities and a better distribution of income.",
+      "To prevent increased complaints from opposition political parties / commentators. OR"
+     ]
+    }
+   }
+  ],
+  "notes": ""
  }
 ]

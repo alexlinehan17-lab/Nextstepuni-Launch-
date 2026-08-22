@@ -2021,4 +2021,43 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "anyN", verbatim: "A factor affecting demand — any one", marks: 8, contextNote: "One factor, 8 marks.", openList: true, group: {"claimMax":1,"perOption":8,"options":["Consumer Incomes - consumer incomes may have increased, in which case people's demand for concert tickets may also increase.","Tastes and preferences - some people may be big Oasis fans / it may be something that their friends are doing, and this may affect demand for tickets.","Seasonal factors - some people might want to attend concerts more in the summer, meaning demand will increase because the gigs as they are in August.","Unplanned factors – some consumers may want to relive their youth and as the band has not played concerts for a long time they will have increased demand.","Change in price of a substitute good or complement goods: if the prices of accommodation increased then demand for tickets may become less attractive."]} },
     ],
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2025-ol-sa-q2-b-yes", topicId: "economics-1-3", conceptId: "the-case-for-free-schoolbooks",
+    section: "A", questionRef: "2025 OL Section A Q2(b) — yes",
+    questionText: "Do you think the Budget 2025 schoolbooks measure was a good use of government expenditure? Explain YES.",
+    tariffModel: {"kind":"bestNofParts","notation":"1 @ 12","answer":1,"ofParts":3,"perPart":12}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason in favour — any one", marks: 12, contextNote: "One reason, 12 marks for the part.", openList: true, group: {"claimMax":1,"perOption":12,"options":["Cost of attending school reduced - helps keep students in education as there are less costs associated with going to school.","Reduces inequality - parents have to spend less for their children to stay in school and this may encourage those children who may have considered leaving school to remain.","Second level education now becomes cheaper – this may further boost economic growth and help alleviate poverty. No"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2025-ol-sa-q2-b-no", topicId: "economics-1-3", conceptId: "the-case-against-free-schoolbooks",
+    section: "A", questionRef: "2025 OL Section A Q2(b) — no",
+    questionText: "Do you think the Budget 2025 schoolbooks measure was a good use of government expenditure? Explain NO.",
+    tariffModel: {"kind":"bestNofParts","notation":"1 @ 12","answer":1,"ofParts":7,"perPart":12}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason against — any one", marks: 12, contextNote: "One reason, 12 marks for the part.", openList: true, group: {"claimMax":1,"perOption":12,"options":["Cost of attending school reduced - helps keep students in education as there are less costs associated with going to school.","Reduces inequality - parents have to spend less for their children to stay in school and this may encourage those children who may have considered leaving school to remain.","Second level education now becomes cheaper – this may further boost economic growth and help alleviate poverty. No","It is not equitable – it should be means tested, so that only those who cannot afford books get the required support.","If better targeted at those who need it most – then the costs will be reduced so saving scarce resources.","Closure of businesses – with its introduction many small businesses have been forced to close resulting in a decline in economic activity in some areas; job losses etc (which maybe require government assistance.","Opportunity cost - there are other more significant issues either within education or society that this money might be better going towards e.g. SNA's, SEN education, housing crisis, infrastructure, heath care etc."]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2025-ol-sa-q4-b", topicId: "economics-1-3", conceptId: "why-cost-of-living-measures",
+    section: "A", questionRef: "2025 OL Section A Q4(b)",
+    questionText: "Outline one reason why the government introduced the cost-of-living measures.",
+    tariffModel: {"kind":"bestNofParts","notation":"1 @ 12","answer":1,"ofParts":4,"perPart":12}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason — any one", marks: 12, contextNote: "One reason, 12 marks for the part.", openList: true, group: {"claimMax":1,"perOption":12,"options":["To help people with the cost-of-living crisis / inflation - as people have been dealing with higher prices for goods and services and rent / mortgage payments, these measures will allow people to keep more of their money and deal with these additional costs.","To increase economic growth - as workers keep more of their money they might decide to spend more in the economy, leading to more economic growth and business confidence, and possibly more indirect taxes being paid like VAT.","To help reduce inequality – if the cost-of-living measures are targeted at lower income groups these may help reduce inequalities and a better distribution of income.","To prevent increased complaints from opposition political parties / commentators. OR"]} },
+    ],
+  } as SecCard,
 ];

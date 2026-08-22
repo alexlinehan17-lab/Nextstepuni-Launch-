@@ -137,4 +137,27 @@ P.menu('one factor, other than ticket prices', 'econ-2025-ol-sa-q10-i',
        ref='2025 OL Section A Q10(i)', claim=1, per=8, drop=SCAFFOLD,
        stem='Oasis will play Croke Park, capacity 82,300, in August 2025.')
 
+# The scheme runs both sides together and marks the break with "No", so each
+# side of Q2(b) is its own card.
+P.menu('Cost of attending school reduced', 'econ-2025-ol-sa-q2-b-yes',
+       'economics-1-3', 'the-case-for-free-schoolbooks',
+       'Do you think the Budget 2025 schoolbooks measure was a good use of government '
+       'expenditure? Explain YES.',
+       'A reason in favour — any one', 'One reason, 12 marks for the part.',
+       ref='2025 OL Section A Q2(b) — yes', claim=1, per=12,
+       drop=SCAFFOLD, stop='It is not equitable')
+
+P.menu('It is not equitable', 'econ-2025-ol-sa-q2-b-no',
+       'economics-1-3', 'the-case-against-free-schoolbooks',
+       'Do you think the Budget 2025 schoolbooks measure was a good use of government '
+       'expenditure? Explain NO.',
+       'A reason against — any one', 'One reason, 12 marks for the part.',
+       ref='2025 OL Section A Q2(b) — no', claim=1, per=12, drop=SCAFFOLD)
+
+P.menu('reason why the government introduced the above measures',
+       'econ-2025-ol-sa-q4-b', 'economics-1-3', 'why-cost-of-living-measures',
+       'Outline one reason why the government introduced the cost-of-living measures.',
+       'A reason — any one', 'One reason, 12 marks for the part.',
+       ref='2025 OL Section A Q4(b)', claim=1, per=12, drop=SCAFFOLD)
+
 P.emit()
