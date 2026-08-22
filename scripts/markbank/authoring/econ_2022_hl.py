@@ -291,4 +291,13 @@ P.menu('Rapid increase in milk production', 'econ-2022-hl-q15-a-i',
 # marks are mostly for a labelled diagram, and it does not say how much of that
 # belongs to the written steps. I had it at 4 x 1, which was my arithmetic.
 
+P.menu('one step businesses in Ireland can take', 'econ-2022-hl-q16-c-iii',
+       'economics-0-2', 'how-business-can-curb-fast-fashion',
+       'Outline one step businesses in Ireland can take to reduce the effects of the fast '
+       'fashion industry.',
+       'A step a business can take — any one', 'One step, 2 for the point and 3 for '
+       'developing it. The scheme lists five.',
+       ref='2022 HL Q16(c)(iii)', claim=1, per=2,
+       drop=SCAFFOLD + ('Deduct 1m', 'The Research Process', 'Data: 5 quantitative'))
+
 P.emit()

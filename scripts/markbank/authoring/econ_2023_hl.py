@@ -256,4 +256,10 @@ P.menu('Deposit Return Scheme is to be introduced', 'econ-2023-hl-q16-c-ii',
 # much of that is for the written explanation as against the drawing. Guessing a
 # split would put a made-up tariff on a real question.
 
+P.menu('economic disadvantage of this government intervention', 'econ-2023-hl-q15-c-ii',
+       'economics-1-3', 'downside-of-the-electricity-credit',
+       'Outline one possible economic disadvantage of the government electricity credit.',
+       'A disadvantage — any one', 'One disadvantage, 7 marks.',
+       ref='2023 HL Q15(c)(ii)', claim=1, per=7, drop=SCAFFOLD)
+
 P.emit()

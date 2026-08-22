@@ -887,6 +887,19 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: "LC034ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2022 Higher Level — © State Examinations Commission.",
+    id: "econ-2022-hl-q16-c-iii", topicId: "economics-0-2", conceptId: "how-business-can-curb-fast-fashion",
+    section: "B", questionRef: "2022 HL Q16(c)(iii)",
+    questionText: "Outline one step businesses in Ireland can take to reduce the effects of the fast fashion industry.",
+    tariffModel: {"kind":"bestNofParts","notation":"1 @ 2","answer":1,"ofParts":5,"perPart":2}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A step a business can take — any one", marks: 2, contextNote: "One step, 2 for the point and 3 for developing it. The scheme lists five.", openList: true, group: {"claimMax":1,"perOption":2,"options":["Alterations to production methods. Through ensuring that high quality materials are used in an ethical and environmentally friendly production process it may extend the life of clothing. It may also better reward the production employees. •","Ethical sourcing of raw materials. Fast fashion is often exploitative in how it sources its materials and how it pays the employees on the production line. If firms did more thorough work on eliminating these practices, it can help reduce the effects of fast fashion. •","Transparency in production methods. Firms can help make their production process clear to consumers through online explication. This has become popular in the food industry e.g. “farm to table” •","Actively engage in the recycling process of clothes sold by the business. Firms can offer a free recycling service to its consumers to help reduce the amount of their clothes which needlessly end up in landfill. •","Encourage consumers to update their clothes: some firms may offer a facility for consumers to return their ‘old’ clothes for repair / refinement."]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2022 Higher Level — © State Examinations Commission.",
     id: "econ-2022-hl-sa-q2-b", topicId: "economics-1-1", conceptId: "what-moves-personal-consumption",
     section: "A", questionRef: "2022 HL Section A Q2(b)",
     stem: "The Quarterly National Accounts for Quarter 2 of 2021 — the quarter Ireland came out of its third lockdown — showed personal consumption rising.",
@@ -1366,6 +1379,19 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed","notation":"1 @ 7+1 @ 5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "An effect on the consumer — any two", marks: null, contextNote: "Two effects, 7 then 5.", openList: true, group: {"claimMax":2,"perOption":7,"options":["Will incentivise consumers to return these containers / boost recycling: so producers can make new bottles out of old bottles and new cans out of old cans, which will lead to reduced waste.","Reduced usage of scarce resources: in the use of plastic /aluminium and in the energy used to make these products.","Reduced littering in public places: makes for an improved social infrastructure / less expenditure on cleaning.","Reach our EU environmental targets: the scheme will help Irish consumers reach our EU environmental targets: and face less pressure /scrutiny with the EU.","Possible reduced demand of these products: as the price has increased this may create a disincentive for some Irish consumers to purchase the product."],"perOptionSteps":[7,5]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2023 Higher Level — © State Examinations Commission.",
+    id: "econ-2023-hl-q15-c-ii", topicId: "economics-1-3", conceptId: "downside-of-the-electricity-credit",
+    section: "B", questionRef: "2023 HL Q15(c)(ii)",
+    questionText: "Outline one possible economic disadvantage of the government electricity credit.",
+    tariffModel: {"kind":"bestNofParts","notation":"1 @ 7","answer":1,"ofParts":2,"perPart":7}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A disadvantage — any one", marks: 7, contextNote: "One disadvantage, 7 marks.", openList: true, group: {"claimMax":1,"perOption":7,"options":["MNCs may come to distrust government fiscal policy: if they fear windfall taxes may be introduced to fund this intervention.","Electricity firms may continue to earn large profits: maybe they could be better regulated instead thereby reducing electricity prices reducing the need for this credit."]} },
     ],
   } as SecCard,
   {
