@@ -102,6 +102,14 @@ EXCLUDED = {
         'the explanation beside a diagram, with the tariff covering both',
     '2025 OL Q11(c)(ii)':
         'the scheme heads three areas and answers only the first before the rubric',
+
+    # The scheme DOES split the diagram from the explanation here — "1 mark per
+    # label = 9 marks", explanation 8 — but 8 marks over five written steps has
+    # no split the scheme states, and choosing one is inventing a tariff.
+    '2023 HL Q12(a)(iii)':
+        'the explanation is worth 8 over five steps and the scheme states no split',
+    '2024 HL Q14(b)(i)':
+        'the explanation is marked as a block and the scheme states no split',
 }
 
 
