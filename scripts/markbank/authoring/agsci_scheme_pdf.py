@@ -53,6 +53,11 @@ MARKS_BLOCK = re.compile(r'^(?:[A-Za-z][A-Za-z ]{0,24}?\s)?(%s)$' % TARIFF)
 MARKS_TAIL = re.compile(r'\s(%s)$' % TARIFF)
 PAGENO = re.compile(r'^\d{1,3}$')
 NOISE = re.compile(r'^(OR|Or|or)$')
+# The schemes introduce the alternative half of a question with 'Or (b)', often
+# in the same block as the marker. Left in place it hides the '(b)' from the
+# marker parse, and every part beneath it is filed under the previous letter —
+# which is how 2022 OL's Q4(b) came out as Q4(a)(iv) and (v).
+LEADING_OR = re.compile(r'^(?:OR|Or|or)\s+(?=\()')
 # ' / ' separates alternatives, but it is also how the schemes write a rate:
 # 'kg DM / ha', 'cfu / ml'. Listed explicitly because 'hay' is a real answer.
 UNIT = ('ha', 'ml', 'l', 'litre', 'litres', 'kg', 'kgs', 'g', 'mg', 'cm', 'm',
@@ -111,6 +116,7 @@ class SchemePdf:
                 self._marks.setdefault(key, []).append(m.group(1).strip())
                 continue
 
+            text = LEADING_OR.sub('', text)
             head = QHEAD.match(text)
             rest = text
             if head:

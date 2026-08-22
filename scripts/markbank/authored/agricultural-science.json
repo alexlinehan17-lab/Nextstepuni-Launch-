@@ -33397,6 +33397,136 @@
   "figureKey": "agricultural-science-2022-OL-paper-p03-i0"
  },
  {
+  "id": "agsci-2022-ol-q4bi",
+  "topicId": "agsci-4-1",
+  "conceptId": "oestrus-cycle-length",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2022 OL Q4(b)(i)",
+  "questionText": "The length of the oestrus cycle in cows is 17 days",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5(2)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "False",
+    "marks": 2
+   }
+  ],
+  "stem": "The first one has been done as an example. True False Example Duration of heat in cattle is 48 hours ",
+  "notes": "The scheme prints the five answers as one run against Q4(b) rather than against each statement, so this answer is the run's word for this statement. Tariff 5(2): five statements at 2 marks each."
+ },
+ {
+  "id": "agsci-2022-ol-q4bii",
+  "topicId": "agsci-4-1",
+  "conceptId": "gestation-length-in-cattle",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2022 OL Q4(b)(ii)",
+  "questionText": "Gestation length in cattle is 283 days",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5(2)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "True",
+    "marks": 2
+   }
+  ],
+  "stem": "The first one has been done as an example. True False Example Duration of heat in cattle is 48 hours ",
+  "notes": "The scheme prints the five answers as one run against Q4(b) rather than against each statement, so this answer is the run's word for this statement. Tariff 5(2): five statements at 2 marks each."
+ },
+ {
+  "id": "agsci-2022-ol-q4biii",
+  "topicId": "agsci-4-1",
+  "conceptId": "rumen-ph",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2022 OL Q4(b)(iii)",
+  "questionText": "pH of the rumen is 7",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5(2)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "True",
+    "marks": 2
+   }
+  ],
+  "stem": "The first one has been done as an example. True False Example Duration of heat in cattle is 48 hours ",
+  "notes": "The scheme prints the five answers as one run against Q4(b) rather than against each statement, so this answer is the run's word for this statement. Tariff 5(2): five statements at 2 marks each."
+ },
+ {
+  "id": "agsci-2022-ol-q4biv",
+  "topicId": "agsci-4-1",
+  "conceptId": "body-condition-score-at-calving",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2022 OL Q4(b)(iv)",
+  "questionText": "Ideal Body Condition Score (BCS) for a cow at calving is 4.5",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5(2)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "False",
+    "marks": 2
+   }
+  ],
+  "stem": "The first one has been done as an example. True False Example Duration of heat in cattle is 48 hours ",
+  "notes": "The scheme prints the five answers as one run against Q4(b) rather than against each statement, so this answer is the run's word for this statement. Tariff 5(2): five statements at 2 marks each."
+ },
+ {
+  "id": "agsci-2022-ol-q4bv",
+  "topicId": "agsci-4-1",
+  "conceptId": "compartments-in-the-ruminant-stomach",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2022 OL Q4(b)(v)",
+  "questionText": "The number of compartments in the ruminant stomach is 3",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5(2)"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "False",
+    "marks": 2
+   }
+  ],
+  "stem": "The first one has been done as an example. True False Example Duration of heat in cattle is 48 hours ",
+  "notes": "The scheme prints the five answers as one run against Q4(b) rather than against each statement, so this answer is the run's word for this statement. Tariff 5(2): five statements at 2 marks each."
+ },
+ {
   "id": "agsci-2023-ol-q1b",
   "topicId": "agsci-2-2-1",
   "conceptId": "reading-a-soil-ph-probe",

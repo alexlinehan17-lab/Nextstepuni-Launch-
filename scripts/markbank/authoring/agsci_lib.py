@@ -93,7 +93,7 @@ class Author:
              use=None, marks=None, tariff='fixed', total=None, figure=None,
              labels=None, notes=None, stem=True, checked=None, suffix='',
              row_kind='point', notation=None, spread=False, context=None,
-             omit=(), source='md', card_id=None):
+             omit=(), source='md', card_id=None, from_run=None):
         ref = part_ref(self.year, self.level, q, letter, roman)
 
         question = self.paper.text(q, letter, roman)
@@ -105,7 +105,28 @@ class Author:
                 f'Open the page; if it is right, pass checked="<why>".')
 
         scheme = self._source(source)
-        candidates = scheme.points(q, letter, roman)
+
+        # Some parts have their answers printed as one positional run against
+        # the parent, because the scheme set them as a table: 2022 OL Q4(b) has
+        # five true/false statements and prints "False True True False False"
+        # once, with the roman markers in a neighbouring cell. from_run names
+        # the parent part, which of its points holds the run, and which token in
+        # that run belongs to this part. The token is still lifted from the
+        # scheme — only the correspondence between position and part is read,
+        # and that is what the page shows.
+        if from_run is not None:
+            parent, point_index, token_index = from_run
+            run = scheme.points(*parent)
+            if point_index >= len(run):
+                raise Refused(f'{ref}: parent {parent} has no point {point_index}')
+            tokens = run[point_index].split()
+            if token_index >= len(tokens):
+                raise Refused(f'{ref}: run {run[point_index]!r} has no token '
+                              f'{token_index}')
+            candidates = [tokens[token_index]]
+            use = [0] if use is None else use
+        else:
+            candidates = scheme.points(q, letter, roman)
         if not candidates:
             raise Refused(f'{ref}: the scheme has no marking points for this part')
         # An entry in `use` may be an index, or a list of indices meaning "this
