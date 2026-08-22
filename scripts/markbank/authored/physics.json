@@ -26463,6 +26463,31 @@
   "stem": "Sound travels faster in water than in air. When a sound wave travels from water into air, it undergoes refraction."
  },
  {
+  "id": "phys-2022-hl-q1-vii",
+  "topicId": "phys-u2",
+  "conceptId": "net-vertical-force-on-a-metre-stick",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2022 HL Q1(vii)",
+  "questionText": "Calculate the net vertical force acting on the metre stick.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Calculate the net vertical force acting on the metre stick.",
+    "marks": 3
+   }
+  ],
+  "stem": "A student used a metre stick to investigate the laws of equilibrium for a set of co-planar forces. He found that the weight of the metre stick was 1.2 N and that its centre of gravity was at the 50.6 cm position. Position on metre stick 22.5 cm 32.1 cm 72.2 cm 81.3 cm Force (N) 2.85 2.00 3.00 3.40 Direction upwards downwards downwards upwards",
+  "notes": "The scheme keeps \"[upwards]\" on the answer — the direction is part of it."
+ },
+ {
   "id": "phys-2023-ol-q13b-v",
   "topicId": "phys-4-4",
   "conceptId": "daughter-nucleus-after-beta-decay",
@@ -26486,5 +26511,236 @@
   ],
   "stem": "What is meant by nuclear fission? (7) Why is there such interest in replacing nuclear fission with nuclear fusion? (7) Leaving Certificate, 2023 Physics – Ordinary Level 12",
   "notes": "The scheme prints \"[3 + 2 + 2]\" against this line, covering this part and the two that follow it."
+ },
+ {
+  "id": "phys-2023-ol-q10-vi",
+  "topicId": "phys-2-4",
+  "conceptId": "nodes-on-a-stationary-wave",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2023 OL Q10(vi)",
+  "questionText": "What name is given to points A and B?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "nodes",
+    "marks": 4
+   }
+  ],
+  "stem": "The source of every sound is a vibration. Sound travels as a wave. As a sound wave moves it interacts with its environment in four ways, one of which is reflection. Sound also undergoes refraction as it moves from one medium to another. When two sound waves meet they can undergo interference. Sounds waves can undergo diffraction as they pass through a doorway or a window. This is why we can hear around corners. Light waves can undergo polarisation but sound waves cannot. h (ix) Calculate the frequency of the wave. (20) Leaving Certificate, 2023 Physics – Ordinary Level 9",
+  "notes": "The scheme reprints the question above its answer and the two run together in one line, so the answer is the word after the question mark."
+ },
+ {
+  "id": "phys-2023-ol-q10-vii",
+  "topicId": "phys-2-4",
+  "conceptId": "amplitude-on-a-stationary-wave",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2023 OL Q10(vii)",
+  "questionText": "What name is given to height h?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "What name is given to height h?",
+    "marks": 4
+   }
+  ],
+  "stem": "The source of every sound is a vibration. Sound travels as a wave. As a sound wave moves it interacts with its environment in four ways, one of which is reflection. Sound also undergoes refraction as it moves from one medium to another. When two sound waves meet they can undergo interference. Sounds waves can undergo diffraction as they pass through a doorway or a window. This is why we can hear around corners. Light waves can undergo polarisation but sound waves cannot. h (ix) Calculate the frequency of the wave. (20) Leaving Certificate, 2023 Physics – Ordinary Level 9"
+ },
+ {
+  "id": "phys-2023-ol-q10-viii",
+  "topicId": "phys-2-4",
+  "conceptId": "wavelength-from-node-separation",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2023 OL Q10(viii)",
+  "questionText": "Calculate the wavelength of the wave.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "2 × 45 = 90 cm",
+    "marks": 6
+   }
+  ],
+  "stem": "The source of every sound is a vibration. Sound travels as a wave. As a sound wave moves it interacts with its environment in four ways, one of which is reflection. Sound also undergoes refraction as it moves from one medium to another. When two sound waves meet they can undergo interference. Sounds waves can undergo diffraction as they pass through a doorway or a window. This is why we can hear around corners. Light waves can undergo polarisation but sound waves cannot. h (ix) Calculate the frequency of the wave. (20) Leaving Certificate, 2023 Physics – Ordinary Level 9",
+  "notes": "The scheme runs the next part on from this answer in the same line; the six words taken are this part's working and result."
+ },
+ {
+  "id": "phys-2023-ol-q13b-viii",
+  "topicId": "phys-4-6",
+  "conceptId": "why-fusion-is-preferred-to-fission",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2023 OL Q13(b)(viii)",
+  "questionText": "Large amounts of money are being invested into nuclear fusion research.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "any valid reference to fuel/products/etc.",
+    "marks": 7
+   }
+  ],
+  "stem": "What is meant by nuclear fission? (7) Why is there such interest in replacing nuclear fission with nuclear fusion? (7) Leaving Certificate, 2023 Physics – Ordinary Level 12"
+ },
+ {
+  "id": "phys-2024-hl-q11-vii",
+  "topicId": "phys-3-2",
+  "conceptId": "charge-on-a-capacitor-mid-discharge",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2024 HL Q11(vii)",
+  "questionText": "Calculate the charge held by the capacitor at this instant.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Calculate the charge held by the capacitor at this instant.",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Vcapacitor = 30 – 7.5 = 22.5 (V)",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C = q/V",
+    "marks": 3
+   }
+  ],
+  "stem": "A device that is designed to store energy when it holds a charge is called a capacitor."
+ },
+ {
+  "id": "phys-2024-ol-q11-i",
+  "topicId": "phys-3-3",
+  "conceptId": "example-of-an-electrical-conductor",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2024 OL Q11(i)",
+  "questionText": "State an example of an electrical conductor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "any named conductor",
+    "marks": 5
+   }
+  ],
+  "stem": "Electric current is the movement of charged particles through a conductor. fuse neutral cable grip cable A fuse is used as a safety precaution. A miniature circuit breaker (MCB) is another device used for safety."
+ },
+ {
+  "id": "phys-2024-ol-q14a-ii",
+  "topicId": "phys-1-1",
+  "conceptId": "acceleration-at-constant-velocity",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2024 OL Q14(a)(ii)",
+  "questionText": "What is the acceleration of the car?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0 m s–2",
+    "marks": 2
+   }
+  ],
+  "stem": "520 N 520 N 1900 kg 680 N 520 N 1900 kg"
+ },
+ {
+  "id": "phys-2025-hl-q14c-ii",
+  "topicId": "phys-4-4",
+  "conceptId": "beta-decay-equation-iodine-131",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2025 HL Q14(c)(ii)",
+  "questionText": "Write a nuclear equation to represent the beta decay of Iodine–131.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "7 × 1"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "I → Xe + β -1 0",
+    "marks": 7
+   }
+  ],
+  "notes": "The scheme pays the equation a mark per correct term and takes three off for each extra species written in."
+ },
+ {
+  "id": "phys-2025-ol-q12b-vii",
+  "topicId": "phys-4-6",
+  "conceptId": "advantage-of-fusion-over-fission",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2025 OL Q12(b)(vii)",
+  "questionText": "State one advantage of using nuclear fusion over nuclear fission as a source of energy. (36) Leaving Certificate, 2025 Physics – Ordinary Level 12",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "any valid reference to fuel/products",
+    "marks": 3
+   }
+  ],
+  "stem": "Einstein’s equation E = mc2 is used to explain the energy conversion taking place in a nuclear reactor. The Sun’s energy is produced by nuclear fusion."
  }
 ]
