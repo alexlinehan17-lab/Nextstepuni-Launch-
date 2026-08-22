@@ -35,6 +35,24 @@ MARKER = re.compile(r'\(([a-hA-H]|i{1,3}|iv|vi{0,3})\)')
 
 
 LETTERS = set('abcdefgh')
+ROMANS = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x']
+RANGE = re.compile(r'\((' + '|'.join(ROMANS) + r')\)\s*[–—-]\s*\((' + '|'.join(ROMANS) + r')\)')
+
+
+def expand(tail, marks):
+    """Add the parts a range reference covers between its two ends.
+
+    Biology's Ordinary Level Section C is carded in groups, because the scheme
+    splits one tariff across several parts rather than paying each — so a card
+    reads '2023 OL Q13(c)(i)–(iii)' and answers all three. Reading only the two
+    ends reported every middle part uncarded.
+    """
+    out = list(marks)
+    for m in RANGE.finditer(tail):
+        lo, hi = ROMANS.index(m.group(1)), ROMANS.index(m.group(2))
+        if lo < hi:
+            out.extend(ROMANS[lo:hi + 1])
+    return out
 
 
 def covered(subject):
@@ -57,7 +75,8 @@ def covered(subject):
         year, level = int(h.group(1)), h.group(2).lower()
         for qm in QNUM.finditer(ref):
             q = int(qm.group(1))
-            marks = [m.group(1).lower() for m in MARKER.finditer(ref[qm.end():])]
+            tail = ref[qm.end():]
+            marks = expand(tail, [m.group(1).lower() for m in MARKER.finditer(tail)])
             # 'i' reads as both a letter and a roman; every paper in the corpus
             # that sets an (i) means the roman, so it is only ever read that way.
             letters = {m for m in marks if m in LETTERS and m != 'i'}
