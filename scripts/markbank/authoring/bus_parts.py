@@ -307,7 +307,16 @@ def notes_parts(year, level):
             question, part, roman = int(m.group(1)), None, None
             continue
 
-        m = NOTES_S1.match(line) if section == 1 else None
+        # Section 3 heads its notes the same way Section 1 does — "1 (A) Describe
+        # one example of a co-operative relationship" — not with a "Question 1"
+        # line. Trying this form only in Section 1 meant every Section 3 head
+        # fell through to the continuation branch and its parts were appended to
+        # whatever Section 2 part was open last, so no Section 3 part existed at
+        # all in three of the five Higher Level papers. Section 2 is excluded:
+        # it is one compulsory question with no number of its own, and a
+        # numbered line inside it is part of an answer — allowing it there filed
+        # the 2022 expansion answer under a Question 7 that does not exist.
+        m = NOTES_S1.match(line) if section in (1, 3) else None
         if m:
             n = int(m.group(1))
             letter, roman_, rest = _markers(m.group(2))
@@ -333,10 +342,16 @@ def notes_parts(year, level):
 
         m = NOTES_PART.match(line)
         if m and question is not None:
-            part = m.group(1).lower()
-            roman = m.group(2)
+            # Read the leading markers properly rather than assuming the first
+            # bracket is a letter: "(i) Employer and employee" is the roman
+            # numeral under part (A), and reading it as a part called 'i' split
+            # every Section 3 answer into fragments filed under parts that do
+            # not exist.
+            letter, roman_, rest_ = _markers(line)
+            part = letter if letter else part
+            roman = roman_
             out.append({'section': section, 'question': question, 'part': part,
-                        'roman': roman, 'text': _clean(m.group(3)),
+                        'roman': roman, 'text': _clean(rest_),
                         'marks': MARKS.findall(raw), 'answers': [], 'clean': True,
                         'splits': [t for t in ANGLE.findall(raw) if any(c.isdigit() for c in t)]})
             continue
