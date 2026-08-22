@@ -33,4 +33,14 @@ A.card(11, None, 'vi', topic='phys-3-3', concept='potential-difference-across-a-
                   ((11, None, 'vi'), 0, slice(4, 8))],
        marks=[3, 3])
 
+A.card(1, None, 'ii', topic='phys-u2', concept='how-acceleration-was-determined',
+       source='pdf',
+       from_runs=[((1, None, 'ii'), 0, slice(0, 6)),
+                  ((1, None, 'ii'), 0, slice(7, 12)),
+                  ((1, None, 'ii'), 0, slice(13, 16))],
+       marks=[3, 3, 3], checked='The paper prints the part mark in brackets after the question, so the text ends on a number rather than punctuation. The question itself is complete.')
+
+A.card(7, None, 'i', topic='phys-1-6', concept='deriving-v-equals-r-omega',
+       source='pdf', use=[0, 1, 2], marks=[3, 3, 3])
+
 A.emit()

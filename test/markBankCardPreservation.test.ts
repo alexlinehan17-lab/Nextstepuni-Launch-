@@ -30,11 +30,11 @@ import { CARDS as ECON_ORDINARY } from '../components/MarkBank/cards/economics/o
 
 const decks = [
   ['biology:higher', BIO_HIGHER, 602, 'd75b09af5def1a673e9bd9e643ec75217be496b46d188de33e2a746451bcada4'],
-  ['biology:ordinary', BIO_ORDINARY, 617, '4d8ddffc71f222060137bb2d4805dee477a091954bf42e7639be6f8314cbce09'],
+  ['biology:ordinary', BIO_ORDINARY, 619, '527778c6b8a04a2187bcf192d4153c0f9299e369f4a855b9f62f0a2aad8840ba'],
   ['chemistry:higher', CHEM_HIGHER, 443, '713b7ef8560702e78ed246adca8800057ca9eafd6e4e45ed583404be169709ae'],
   ['chemistry:ordinary', CHEM_ORDINARY, 335, 'b57490d8dce4b1bbcfa072e614f0078b29983dc95debe9cb56b559f10c5cfa2b'],
-  ['physics:higher', PHYS_HIGHER, 436, '95412f2a5e38b50e2953bdd38dcab7fc6664f3ec3f8d7d6769c34ce54ef395b3'],
-  ['physics:ordinary', PHYS_ORDINARY, 449, 'ded05c27b431a7ecb7623fcfc6e3ba83c68fef074099a96aa8391350dc8e1e06'],
+  ['physics:higher', PHYS_HIGHER, 438, '0dc7b01caec39b044d08470a825077263053d0497705df14ecf6e37af28b6731'],
+  ['physics:ordinary', PHYS_ORDINARY, 454, 'e6397f59f9a574971b8fb48048845d1bcc7532be463213f70af6ce6107e9dcc0'],
   ['agricultural-science:higher', AGSCI_HIGHER, 436, '92a3ff90937b5c78dc6b1d0daca3ac9a52ed8aa7c46168829928589a0f10d354'],
   ['agricultural-science:ordinary', AGSCI_ORDINARY, 425, '8a3a42a54b66b03cee75255235087d4474ba65c474abd0d1b5a1bcd882a483fa'],
   ['business:higher', BUSINESS_HIGHER, 272, 'a61655818cee2ce61307eb08fe6dad282193791674b4e5e8a893e203b64af976'],
@@ -57,6 +57,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(5_306);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(5_315);
   });
 });

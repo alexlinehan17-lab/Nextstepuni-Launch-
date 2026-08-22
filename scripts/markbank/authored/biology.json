@@ -39142,6 +39142,55 @@
   "stem": "PR BR Resting 60 20 Moderate exercise 100 30 rate Intense exercise 150 60 Choosing either pulse or breathing rate, complete the name of the y-axis and on the grid provided, draw (using pencil) a suitable graph to represent the data of either pulse rate (PR) or breathing rate (BR). Resting Moderate exercise Intense exercise Answerbook for Section C Instructions Questions for Section C are supplied separately. Start each question on a new page. Write the question number in the box at the top of each page. Use the left-hand column to label each part, as shown below. 1 4 There are two pages of graph paper on the next two pages of this answerbook. On pages with graph paper, the box for the question number is at the bottom of the page. You do not need to use all of the pages in this answerbook. If you run out of space in this answerbook, you may ask the superintendent for more paper or graph paper. Write your answers in blue or black pen. You may use a pencil for sketches, graphs and diagrams only. Part Start each question on a new page Question 15 Part Start each question on a new page Question 16 Part Start each question on a new page Question 17 Part Start each question on a new page Question 18 Part Start each question on a new page Question 19 Part Start each question on a new page Question 20 Part Start each question on a new page Question 21 Part Start each question on a new page Question 22 Part Start each question on a new page Question 23 Part Start each question on a new page Question 24 Part Start each question on a new page Question 25 Part Start each question on a new page Question 26 Part Start each question on a new page Question 27 Part Start each question on a new page Question 28 Part Start each question on a new page Question 29 Part Start each question on a new page Question 30 Part Start each question on a new page Question 31 Part Start each question on a new page Question 32 Part Start each question on a new page Question 33 Part Start each question on a new page Question 34 Part Start each question on a new page Question 35 Do not write on this page Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Ordinary Level Biology Sections A and B and Answerbook Tuesday 11 June Afternoon 2:00 - 5:00 2024L025G2EL 2024.M43 Coimisiún na Scrúduithe Stáit State Examinations Commission Section C Ordinary Level Tuesday 11 June Afternoon 2:00 - 5:00 240 marks Do not hand this up. This document will not be returned to the State Examinations Commission. Section C Answer any four questions. Write your answers in the answerbook containing Sections A and B."
  },
  {
+  "id": "bio-2024-ol-q3-b",
+  "topicId": "bio-1-4",
+  "conceptId": "the-structure-that-moves-chromosomes",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2024 OL Q3(b)",
+  "questionText": "Structure B is shown during Stage 2 and Stage 3 of mitosis. Name structure B.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(Spindle) fibre",
+    "marks": 3
+   }
+  ],
+  "stem": "The diagram shows DNA replication followed by mitosis. Stage 4 Stage 2 Stage 3 Stage 1 DNA replication",
+  "notes": "The scheme numbers this answer under its own Question 2 while the paper prints Question 3."
+ },
+ {
+  "id": "bio-2024-ol-q11-b-i",
+  "topicId": "bio-3-1",
+  "conceptId": "the-producer-in-a-food-web",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2024 OL Q11(b)(i)",
+  "questionText": "Name the producer from the food web.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Grasses",
+    "marks": 3
+   }
+  ],
+  "stem": "Barn owl Badger Fox Bat Robin Grasshopper Mouse Thrush Mosquito Snail Grasses 2. How many feeding (trophic) levels are in your food chain?"
+ },
+ {
   "id": "bio-2025-hl-q13-b-iii",
   "topicId": "bio-2-3",
   "conceptId": "cyclic-and-non-cyclic-electron-flow",

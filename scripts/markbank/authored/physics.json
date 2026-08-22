@@ -26995,6 +26995,36 @@
   "notes": "The scheme accepts the suvat route as well."
  },
  {
+  "id": "phys-2022-ol-q2-vi",
+  "topicId": "phys-u2",
+  "conceptId": "whether-the-results-verify-snells-law",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2022 OL Q2(vi)",
+  "questionText": "Do your calculations verify Snell’s law? Explain your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "yes [or answer consistent with calculations]",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "explanation, e.g. calculations all close to average, straight line through origin",
+    "marks": 3
+   }
+  ],
+  "stem": "A student carried out an experiment to verify Snell’s Law and used her measurements to calculate the refractive index (n) of a material. She measured the angle of incidence i and the corresponding angle of refraction r. She repeated this for a different values of i. Her results are shown in the table below. i (degrees) 30 40 50 60 r (degrees) 19 25 31 35"
+ },
+ {
   "id": "phys-2023-hl-q1-v",
   "topicId": "phys-u2",
   "conceptId": "g-from-the-slope-of-a-graph",
@@ -27550,6 +27580,78 @@
   "stem": "A device that is designed to store energy when it holds a charge is called a capacitor."
  },
  {
+  "id": "phys-2024-hl-q1-ii",
+  "topicId": "phys-u2",
+  "conceptId": "how-acceleration-was-determined",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2024 HL Q1(ii)",
+  "questionText": "Describe how the student determined the acceleration of the body. (19)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "calculate initial velocity and final velocity",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "measure distance/time interval between velocities",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "use relevant formula",
+    "marks": 3
+   }
+  ],
+  "stem": "A student carried out a laboratory experiment to investigate the relationship between the acceleration a of a body and the force F applied to it. During the experiment the student recorded values for the force and measured the associated acceleration. The following data were recorded. F (N) 0.2 0.3 0.4 0.5 0.6 0.7 a (m s–2) 0.280 0.422 0.554 0.702 0.837 0.982"
+ },
+ {
+  "id": "phys-2024-hl-q7-i",
+  "topicId": "phys-1-6",
+  "conceptId": "deriving-v-equals-r-omega",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2024 HL Q7(i)",
+  "questionText": "Derive the formula to show the relationship between the radius, velocity and angular velocity of an object moving with uniform circular motion.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "θ = s/r or v = s/t or ω = θ/t",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "combination of two formulae",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "v = rω",
+    "marks": 3
+   }
+  ],
+  "stem": "The hammer throw is an athletics event where athletes rotate a metal ball, attached to a wire, in a circle before releasing it. The velocity of the ball as it is released is at an angle of 36° above the horizontal. The ball is released at a height of 1.26 m above the ground and lands 3.79 s later."
+ },
+ {
   "id": "phys-2024-ol-q11-i",
   "topicId": "phys-3-3",
   "conceptId": "example-of-an-electrical-conductor",
@@ -27692,6 +27794,103 @@
    }
   ],
   "stem": "A student carried out an experiment to investigate how the resistance R of a metallic conductor changes with temperature T. T (°C) 10 20 30 40 50 60 R (Ω) 5.2 5.9 6.5 7.2 7.9 8.5 Each question carries 56 marks."
+ },
+ {
+  "id": "phys-2024-ol-q1-v",
+  "topicId": "phys-u2",
+  "conceptId": "clockwise-moments-on-a-metre-stick",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2024 OL Q1(v)",
+  "questionText": "Use the data to calculate the clockwise moments on the metre stick about the 0 cm mark.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(6 × 20) + (4 × 70) = 400 N cm",
+    "marks": 6
+   }
+  ],
+  "stem": "A student carried out an experiment to investigate the laws of equilibrium. He suspended a metre stick from two Newton spring balances and hung two weights from the metre stick, as outlined in the tables below, until it was balanced and level. Before setting up the experiment, the student took two measurements. He measured the weight of the metre stick to be 3 N. He found its centre of gravity at the 50 cm mark. His results are shown in the tables below. Newton Spring Balances Weights Upward forces (N) 6 4 Downward forces (N) 5 2 Position (cm) 20 70 Position (cm) 26 60 The second law of equilibrium states that the sum of the clockwise moments equals the sum of the anticlockwise moments. (Remember: Moment = Force × Distance)",
+  "notes": "The scheme numbers this answer one part further on than the paper does."
+ },
+ {
+  "id": "phys-2024-ol-q14a-i",
+  "topicId": "phys-1-2",
+  "conceptId": "net-force-when-forces-balance",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2024 OL Q14(a)(i)",
+  "questionText": "Calculate the net horizontal force acting on the car.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "520 – 520 = 0 N",
+    "marks": 4
+   }
+  ],
+  "stem": "520 N 520 N 1900 kg 680 N 520 N 1900 kg"
+ },
+ {
+  "id": "phys-2024-ol-q14a-v",
+  "topicId": "phys-1-2",
+  "conceptId": "net-force-when-forces-do-not-balance",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2024 OL Q14(a)(v)",
+  "questionText": "Calculate the net horizontal force acting on the car.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "680 – 520 = 160 N (right)",
+    "marks": 5
+   }
+  ],
+  "stem": "520 N 520 N 1900 kg 680 N 520 N 1900 kg"
+ },
+ {
+  "id": "phys-2024-ol-q14a-vii",
+  "topicId": "phys-1-1",
+  "conceptId": "velocity-under-an-unbalanced-force",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2024 OL Q14(a)(vii)",
+  "questionText": "Calculate the velocity of the car after 12 s when the unbalanced forces are acting on the car. (15)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "v = 20 + (0.084)(12) = 21 m s–1",
+    "marks": 5
+   }
+  ],
+  "stem": "520 N 520 N 1900 kg 680 N 520 N 1900 kg"
  },
  {
   "id": "phys-2025-hl-q14c-ii",

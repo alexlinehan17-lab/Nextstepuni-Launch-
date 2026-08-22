@@ -39,4 +39,17 @@ A.card(5, None, 'ii', topic='phys-u2', concept='varying-temperature-in-the-resis
        source='pdf', from_run=((5, None, 'ii'), 0, slice(11, 15)), marks=[6],
        row_kind='criterion')
 
+A.card(1, None, 'v', topic='phys-u2', concept='clockwise-moments-on-a-metre-stick',
+       source='pdf', from_run=((1, None, 'vi'), 0, slice(0, 11)), marks=[6],
+       notes='The scheme numbers this answer one part further on than the paper does.')
+
+A.card(14, 'a', 'i', topic='phys-1-2', concept='net-force-when-forces-balance',
+       source='pdf', from_run=((14, 'a', 'i'), 0, slice(0, 6)), marks=[4])
+
+A.card(14, 'a', 'v', topic='phys-1-2', concept='net-force-when-forces-do-not-balance',
+       source='pdf', from_run=((14, 'a', 'v'), 0, slice(0, 7)), marks=[5])
+
+A.card(14, 'a', 'vii', topic='phys-1-1', concept='velocity-under-an-unbalanced-force',
+       source='pdf', from_run=((14, 'a', 'vii'), 0, slice(0, 9)), marks=[5], checked='The paper prints the part mark in brackets after the question, so the text ends on a number rather than punctuation. The question itself is complete.')
+
 A.emit()

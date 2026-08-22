@@ -43,4 +43,10 @@ A.card(14, 'a', 'v', topic='phys-1-4', concept='maximum-height-from-kinetic-ener
        source='pdf', from_run=((14, 'a', 'v'), 0, slice(0, 8)), marks=[5],
        notes='The scheme accepts the suvat route as well.')
 
+A.card(2, None, 'vi', topic='phys-u2', concept='whether-the-results-verify-snells-law',
+       source='pdf',
+       from_runs=[((2, None, 'vi'), 0, slice(0, 6)),
+                  ((2, None, 'vi'), 0, slice(7, 18))],
+       marks=[3, 3])
+
 A.emit()

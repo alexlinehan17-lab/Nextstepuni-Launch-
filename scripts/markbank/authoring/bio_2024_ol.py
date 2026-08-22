@@ -65,4 +65,12 @@ A.card(7, 'd', topic='bio-u1', concept='what-data-is',
 A.card(10, 'b', 'v', topic='bio-u1', concept='a-safety-precaution-in-the-experiment',
        source='pdf', use=[1], marks=[3], row_kind='criterion')
 
+A.card(3, 'b', topic='bio-1-4', concept='the-structure-that-moves-chromosomes',
+       source='pdf', from_run=((2, 'b', None), 1, slice(0, None)), marks=[3],
+       notes='The scheme numbers this answer under its own Question 2 while the paper '
+             'prints Question 3.')
+
+A.card(11, 'b', 'i', topic='bio-3-1', concept='the-producer-in-a-food-web',
+       source='pdf', from_run=((11, 'b', 'i'), 0, slice(0, 1)), marks=[3])
+
 A.emit()
