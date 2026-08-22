@@ -219,4 +219,41 @@ P.menu('impacted on Irish consumer behaviou', 'econ-2023-hl-q15-a-i',
        ref='2023 HL Q15(a)(i)', claim=1, per=6,
        drop=SCAFFOLD + ('Impact on consumer behavior',))
 
+# ── Q16: the national herd, the Deposit Return Scheme, school transport ────
+# The scheme heads the two sides of Q16(c)(i) "For:" and runs them together, so
+# each side is its own card, as the deck does elsewhere for a question that asks
+# for one of each.
+P.menu('simply reduce the national herd', 'econ-2023-hl-q16-c-i-for',
+       'economics-0-2', 'the-case-for-reducing-the-national-herd',
+       'Outline one argument FOR the proposal that the agricultural industry must simply '
+       'reduce the national herd to play its part in reducing emissions.',
+       'An argument for — any one', 'One argument, 7 marks, with 5 for the other side.',
+       ref='2023 HL Q16(c)(i) — for', claim=1, per=7,
+       drop=SCAFFOLD + ('Outline one argument for and one argument against',),
+       stop='Protection of rural economy')
+
+P.menu('simply reduce the national herd', 'econ-2023-hl-q16-c-i-against',
+       'economics-0-2', 'the-case-against-reducing-the-national-herd',
+       'Outline one argument AGAINST the proposal that the agricultural industry must simply '
+       'reduce the national herd to play its part in reducing emissions.',
+       'An argument against — any one', 'One argument, 5 marks, with 7 for the other side.',
+       ref='2023 HL Q16(c)(i) — against', claim=1, per=5,
+       drop=SCAFFOLD + ('Outline one argument for and one argument against',
+                        'The beef industry in Ireland is in decline',
+                        'Emission credits costs', 'Agricultural emissions are 32%',
+                        'Environmental Sustainability. The Climate Action Plan'))
+
+P.menu('Deposit Return Scheme is to be introduced', 'econ-2023-hl-q16-c-ii',
+       'economics-0-2', 'effects-of-the-deposit-return-scheme',
+       'Outline two likely effects the introduction of the Deposit Return Scheme will have on '
+       'the Irish consumer.',
+       'An effect on the consumer — any two', 'Two effects, 7 then 5.',
+       ref='2023 HL Q16(c)(ii)', claim=2, per=7, steps=[7, 5],
+       drop=SCAFFOLD + ('Outline two likely effects the introduction',))
+
+# Q16(a)(ii) is not carded: its marks are for a fully labelled diagram and the
+# scheme's tariff cells read 4/4/7/8 across the part, which does not tell me how
+# much of that is for the written explanation as against the drawing. Guessing a
+# split would put a made-up tariff on a real question.
+
 P.emit()
