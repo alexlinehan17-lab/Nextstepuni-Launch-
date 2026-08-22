@@ -63,4 +63,12 @@ A.card(3, None, 'iv', topic='phys-u2', concept='linear-density-from-a-graph',
 A.card(4, None, 'iv', topic='phys-u2', concept='reading-a-temperature-off-a-resistance-graph',
        source='pdf', use=[1], marks=[3], first_sentence=True)
 
+A.card(5, None, 'iv', topic='phys-u2', concept='average-resistance-of-a-heating-coil',
+       source='pdf', use=[1, 2, 4, 5, 6], marks=[3, 3, 3, 2, 2], first_sentence=True,
+       notes='The scheme prints the two energy expressions on either side of the equation '
+             'it wants them set equal in.')
+
+A.card(12, None, 'v', topic='phys-3-2', concept='why-parallel-capacitors-add',
+       source='pdf', use=[1], marks=[3], first_sentence=True)
+
 A.emit()

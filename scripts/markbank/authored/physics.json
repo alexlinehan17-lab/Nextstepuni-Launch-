@@ -26590,6 +26590,79 @@
   "stem": "A student measured the resistance R of a wire of length 30 cm at different values of temperature . The following data were recorded.  (°C) 0 20 40 60 80 100 R (Ω) 5.35 5.60 5.85 6.04 6.28 6.51"
  },
  {
+  "id": "phys-2021-hl-q5-iv",
+  "topicId": "phys-u2",
+  "conceptId": "average-resistance-of-a-heating-coil",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2021 HL Q5(iv)",
+  "questionText": "Use your graph to calculate the average resistance of the heating coil.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 13,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "slope formula",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "value of slope (≈ 2.03)",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "mc∆θ",
+    "marks": 3
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "I2Rt = mc∆θ",
+    "marks": 2
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "R (≈ 3.71 Ω)",
+    "marks": 2
+   }
+  ],
+  "stem": "In an experiment to verify Joule’s law a constant current I was passed through a heating coil immersed in water. The current was allowed to flow for four minutes and the rise in temperature  was determined. This procedure was repeated for a number of different currents. The mass of the water was kept constant at 105 g. The following data were recorded. I (A) 1.0 1.5 2.0 2.5 3.0 3.5  (°C) 2.0 4.6 8.2 12.6 18.3 25.0",
+  "notes": "The scheme prints the two energy expressions on either side of the equation it wants them set equal in."
+ },
+ {
+  "id": "phys-2021-hl-q12-v",
+  "topicId": "phys-3-2",
+  "conceptId": "why-parallel-capacitors-add",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2021 HL Q12(v)",
+  "questionText": "Three such capacitors are connected in parallel as shown below.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(common) area increases by a factor of 3 (and C is proportional to A)",
+    "marks": 3
+   }
+  ],
+  "stem": "The Wimshurst machine is an electrostatic generator for generating high voltages. It uses the principles of charging by induction and point discharge to store energy in two large capacitors. Wimshurst machines provided a source of high voltage for early X‐ray tubes. (ix) What happens to the energy of the electrons when they hit the anode? (17) Leaving Certificate, 2021 Physics – Higher Level 11"
+ },
+ {
   "id": "phys-2022-hl-q1-vii",
   "topicId": "phys-u2",
   "conceptId": "net-vertical-force-on-a-metre-stick",
@@ -26686,6 +26759,240 @@
    }
   ],
   "stem": "This document will not be returned to the State Examinations Commission. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate Examination – Higher Level Physics Wednesday, 22 June Morning, 9:30 – 12:30 Leaving Certificate 2021 Physics – Higher Level 16"
+ },
+ {
+  "id": "phys-2022-hl-q1-vi",
+  "topicId": "phys-u2",
+  "conceptId": "net-moment-about-a-point",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2022 HL Q1(vi)",
+  "questionText": "Calculate the net moment about the 0 cm position.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(2 × 0.321) + (1.2 × 0.506) + (3 × 0.722) = 3.4152 [N m]",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "(2.85 × 0.225) + (3.4 × 0.813) = 3.40545 [N m]",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3.4152 – 3.40545 = 0.00975 N m",
+    "marks": 3
+   }
+  ],
+  "stem": "A student used a metre stick to investigate the laws of equilibrium for a set of co-planar forces. He found that the weight of the metre stick was 1.2 N and that its centre of gravity was at the 50.6 cm position. Position on metre stick 22.5 cm 32.1 cm 72.2 cm 81.3 cm Force (N) 2.85 2.00 3.00 3.40 Direction upwards downwards downwards upwards"
+ },
+ {
+  "id": "phys-2022-hl-q3-iv",
+  "topicId": "phys-u2",
+  "conceptId": "refractive-index-from-a-slope",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2022 HL Q3(iv)",
+  "questionText": "Use your graph to calculate the refractive index of the glass.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "slope formula",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "n = 1.4",
+    "marks": 3
+   }
+  ],
+  "stem": "In an experiment to verify Snell’s law, a student measured the angle of incidence i and the angle of refraction r for a ray of light as it passes from air into glass. This process was repeated for six different values of i. The following data were recorded. i (degrees) 30 40 50 60 70 80 r (degrees) 19 27 32 36 40 44"
+ },
+ {
+  "id": "phys-2022-ol-q2-v",
+  "topicId": "phys-u2",
+  "conceptId": "average-refractive-index-from-results",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2022 OL Q2(v)",
+  "questionText": "Use all of the results in the table to calculate an average value for n.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "one calculation of n // graph of sin i against sin r",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "average calculated // slope calculated",
+    "marks": 3
+   }
+  ],
+  "stem": "A student carried out an experiment to verify Snell’s Law and used her measurements to calculate the refractive index (n) of a material. She measured the angle of incidence i and the corresponding angle of refraction r. She repeated this for a different values of i. Her results are shown in the table below. i (degrees) 30 40 50 60 r (degrees) 19 25 31 35",
+  "notes": "Either route scores: an average of the calculated values, or the slope of a graph of sin i against sin r."
+ },
+ {
+  "id": "phys-2022-ol-q5-v",
+  "topicId": "phys-u2",
+  "conceptId": "reading-a-current-off-a-graph",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2022 OL Q5(v)",
+  "questionText": "Use your graph to find the current that caused a change in temperature of 6 °C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "reading for I2 [≈ 5]",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "I ≈ 2.2 A",
+    "marks": 3
+   }
+  ],
+  "stem": "In an experiment to verify Joule’s law, a constant current I was passed through a heating coil immersed in water and the rise in temperature Δθ was recorded. This procedure was repeated for a number of different currents. The mass of the water and the length of time for which the current was flowing were both kept constant. The student recorded the following results. I (A) 1 1.5 2 2.5 3 3.5 I2 (A2) Δθ (°C) 1.2 2.7 4.8 7.5 10.8 14.7 Each question carries 56 marks."
+ },
+ {
+  "id": "phys-2022-ol-q7-ii",
+  "topicId": "phys-u5",
+  "conceptId": "converting-minutes-to-seconds",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2022 OL Q7(ii)",
+  "questionText": "Convert 6 minutes into seconds.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "6 × 60 = 360 s",
+    "marks": 6
+   }
+  ],
+  "stem": "A train of mass 420000 kg started from rest and accelerated to a velocity of 25 m s–1 in a time of 6 minutes. (ix) Draw a speed‐time graph for the train during the first 21 minutes of its journey. (26) Leaving Certificate, 2022 Physics – Ordinary Level 6"
+ },
+ {
+  "id": "phys-2022-ol-q9-iv",
+  "topicId": "phys-2-3",
+  "conceptId": "image-position-from-the-lens-formula",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2022 OL Q9(iv)",
+  "questionText": "Calculate the position of the real image formed.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1/u + 1/v = 1/f",
+    "marks": 6
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "substitution",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "v = 30 cm",
+    "marks": 3
+   }
+  ],
+  "stem": "When light is reflected from a concave mirror, the image produced may be real or virtual. f ● object Light is also reflected by convex mirrors. (ix) State one use for a convex mirror. (20) Leaving Certificate, 2022 Physics – Ordinary Level 8"
+ },
+ {
+  "id": "phys-2022-ol-q14a-iv",
+  "topicId": "phys-1-4",
+  "conceptId": "kinetic-energy-of-a-thrown-stone",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2022 OL Q14(a)(iv)",
+  "questionText": "Calculate the kinetic energy of the stone when it is thrown.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "½ × 0.005 × 152 = 0.5625 J",
+    "marks": 5
+   }
+  ]
+ },
+ {
+  "id": "phys-2022-ol-q14a-v",
+  "topicId": "phys-1-4",
+  "conceptId": "maximum-height-from-kinetic-energy",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2022 OL Q14(a)(v)",
+  "questionText": "Calculate the maximum height reached by the stone.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.5625 ÷ (0.005 × 9.8) = 11.5 m",
+    "marks": 5
+   }
+  ],
+  "notes": "The scheme accepts the suvat route as well."
  },
  {
   "id": "phys-2023-ol-q13b-v",

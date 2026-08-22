@@ -34,4 +34,17 @@ A.card(14, 'd', 'i', topic='phys-3-6', concept='laws-of-electromagnetic-inductio
                   ((14, 'd', 'i'), 0, slice(22, 32))],
        marks=[3, 3, 3, 3])
 
+A.card(1, None, 'vi', topic='phys-u2', concept='net-moment-about-a-point',
+       source='pdf',
+       from_runs=[((1, None, 'vi'), 0, slice(0, 15)),
+                  ((1, None, 'vi'), 0, slice(16, 27)),
+                  ((1, None, 'vi'), 0, slice(28, 35))],
+       marks=[3, 3, 3])
+
+A.card(3, None, 'iv', topic='phys-u2', concept='refractive-index-from-a-slope',
+       source='pdf',
+       from_runs=[((3, None, 'iv'), 0, slice(0, 2)),
+                  ((3, None, 'iv'), 0, slice(3, 6))],
+       marks=[3, 3])
+
 A.emit()
