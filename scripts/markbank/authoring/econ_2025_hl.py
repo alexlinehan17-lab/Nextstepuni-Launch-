@@ -8,6 +8,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from econ_auto import Paper  # noqa: E402
+from econ_lib import card, point  # noqa: E402
 
 P = Paper(2025, 'higher')
 SCAFFOLD = ('Possible responses', 'Suggested responses', 'More possible response',
@@ -117,5 +118,25 @@ P.menu('barrier to entry often found in monopoly', 'econ-2025-hl-q11-b-ii',
        'A barrier to entry — any one',
        'One barrier, 4 marks. Patents are excluded by the question.',
        claim=1, per=4, drop=SCAFFOLD)
+
+
+# ── A figure card ───────────────────────────────────────────────────────────
+P.cards.append(card(
+    'econ-2025-hl-q9-a', 2025, 'higher', 'economics-2-0', 'labelling-the-kinked-demand-diagram',
+    '2025 HL Q9(a)',
+    'The diagram represents the long run equilibrium of a firm operating in an oligopoly market. '
+    'Write out in full what each of the numbered items 1 to 3 represents.',
+    'fixed', 6,
+    [point('r-1', 'Marginal cost', 2, 'Item 1 — the green curve rising through point E.'),
+     point('r-2', 'Average revenue = Demand', 2, 'Item 2 — the yellow kinked line.'),
+     point('r-3', 'Marginal revenue', 2, 'Item 3 — the red line, which breaks vertically under '
+                                         'the kink in item 2.')],
+    'Abbreviations are not accepted.', tariff_kind='fixed',
+    figure_key='economics-2025-HL-paper-p11-art',
+    label_key=[{'letter': '1', 'meaning': 'Marginal cost', 'askedInThisQuestion': True},
+               {'letter': '2', 'meaning': 'Average revenue = Demand', 'askedInThisQuestion': True},
+               {'letter': '3', 'meaning': 'Marginal revenue', 'askedInThisQuestion': True},
+               {'letter': 'E', 'meaning': 'the equilibrium where marginal cost cuts marginal revenue',
+                'askedInThisQuestion': False}]))
 
 P.emit()

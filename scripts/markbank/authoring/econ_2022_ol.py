@@ -8,6 +8,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from econ_auto import Paper  # noqa: E402
+from econ_lib import card, point  # noqa: E402
 
 P = Paper(2022, 'ordinary')
 SCAFFOLD = ('Possible responses', 'Suggested responses', 'Minimum Unit Price for A')
@@ -115,5 +116,25 @@ P.menu('governments can intervene in the market', 'econ-2022-ol-q11-c-iii',
        'One way, 4 marks. The scheme names two: regulate the firm, or legislate against the '
        'behaviour.',
        claim=1, per=4, drop=SCAFFOLD)
+
+
+# ── A figure card ───────────────────────────────────────────────────────────
+P.cards.append(card(
+    'econ-2022-ol-q11-b-i', 2022, 'ordinary', 'economics-2-0', 'labelling-a-monopoly-diagram',
+    '2022 OL Q11(b)(i)',
+    'The diagram shows a firm operating under conditions of monopoly. Write out in full what '
+    'each of the three numbered items represents.',
+    'fixed', 21,
+    [point('r-1', 'Price', 7, 'Item 1 — the vertical axis.'),
+     point('r-2', 'Marginal Cost', 7, 'Item 2 — the U-shaped curve rising to the right, above AC.'),
+     point('r-3', 'Marginal Revenue', 7, 'Item 3 — the steeper of the two downward-sloping lines. '
+                                         'AC and AR are already labelled on the diagram.')],
+    'Abbreviations are not accepted.', tariff_kind='fixed',
+    figure_key='economics-2022-OL-paper-p11-i0',
+    label_key=[{'letter': '1', 'meaning': 'Price', 'askedInThisQuestion': True},
+               {'letter': '2', 'meaning': 'Marginal Cost', 'askedInThisQuestion': True},
+               {'letter': '3', 'meaning': 'Marginal Revenue', 'askedInThisQuestion': True},
+               {'letter': 'AC', 'meaning': 'Average Cost', 'askedInThisQuestion': False},
+               {'letter': 'AR', 'meaning': 'Average Revenue', 'askedInThisQuestion': False}]))
 
 P.emit()

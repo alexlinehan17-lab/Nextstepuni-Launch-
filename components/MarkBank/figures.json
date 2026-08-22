@@ -12014,5 +12014,146 @@
   "year": 2025,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Economics 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2023-HL-paper-p07-art": {
+  "src": "/exam-figures/economics/markbank/economics-2023-HL-paper-p07-art.png",
+  "md5": "a5430e656bf3a1a34123fc3f9cbf7a59",
+  "alt": "A production possibilities frontier for a firm making laptops and tablets. 'Laptops' on the vertical axis, 'Tablets' on the horizontal. A blue curve bows outward from the top left to the bottom right. Three coloured dots are marked: C in blue sitting on the curve, B in orange outside it to the right, and A in green well inside it. Beneath the diagram sit the instruction to identify which of A, B or C is the efficient, inefficient and impossible production point, the answer table, and part (b) asking the student to justify each choice.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "Laptops",
+   "Tablets"
+  ],
+  "labelMeanings": [
+   {
+    "label": "A",
+    "meaning": "inside the frontier - an inefficient production point, with resources going unused"
+   },
+   {
+    "label": "B",
+    "meaning": "outside the frontier - an impossible production point with current resources"
+   },
+   {
+    "label": "C",
+    "meaning": "on the frontier - an efficient production point"
+   }
+  ],
+  "questionRef": "2023 HL Section A Q5(a)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2023 Higher Level — © State Examinations Commission"
+ },
+ "economics-2024-OL-paper-p11-art": {
+  "src": "/exam-figures/economics/markbank/economics-2024-OL-paper-p11-art.png",
+  "md5": "5f36ab7541ff909b9f3b3051dfdeb82c",
+  "alt": "A kinked demand diagram of a firm in oligopoly at long-run equilibrium. 'Price' on the vertical axis, 'Quantity' on the horizontal. A blue line labelled in a box 'D=AR' runs from the top left, bends at a filled black dot and falls more steeply to the quantity axis. A red line labelled in a box 'MR' runs below it, drops vertically through a second filled dot labelled E, and continues below the axis. A green U-shaped curve labelled in a box 'MC' rises through E to the top right. A dotted red vertical joins the two dots. Beneath the diagram sit the three-row answer table for D=AR, MC and MR, the instruction to mark Q1 and P1 at equilibrium, and part (iii) on naming another Irish oligopoly.",
+  "lettersVisible": [
+   "D=AR",
+   "MC",
+   "MR",
+   "E",
+   "Price",
+   "Quantity"
+  ],
+  "labelMeanings": [
+   {
+    "label": "D=AR",
+    "meaning": "demand, which for this firm is also average revenue"
+   },
+   {
+    "label": "MC",
+    "meaning": "marginal cost"
+   },
+   {
+    "label": "MR",
+    "meaning": "marginal revenue"
+   },
+   {
+    "label": "E",
+    "meaning": "the equilibrium, where marginal cost cuts marginal revenue"
+   }
+  ],
+  "questionRef": "2024 OL Q11(b)(i)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2025-HL-paper-p11-art": {
+  "src": "/exam-figures/economics/markbank/economics-2025-HL-paper-p11-art.png",
+  "md5": "e3f7aab02ca447e84f23cc676a085706",
+  "alt": "A kinked demand diagram of a firm in oligopoly at long-run equilibrium. 'Price' on the vertical axis, 'Quantity' on the horizontal. A yellow line runs from the top left, bends at a filled black dot and falls more steeply to the axis; it is numbered 2 in a yellow box near its lower end. A red line runs below it and stops abruptly; it is numbered 3 in a red box. A green U-shaped curve rises through a second filled dot labelled E to the top right; it is numbered 1 in a green box. Blue dashed guides run from the upper dot left to P1 on the price axis and down to Q1 on the quantity axis. Beneath the diagram sit the three-row answer table for items 1 to 3 and part (b) asking for the shape of curve 2.",
+  "lettersVisible": [
+   "1",
+   "2",
+   "3",
+   "E",
+   "P1",
+   "Q1",
+   "Price",
+   "Quantity"
+  ],
+  "labelMeanings": [
+   {
+    "label": "1",
+    "meaning": "marginal cost"
+   },
+   {
+    "label": "2",
+    "meaning": "average revenue, which is also the demand curve"
+   },
+   {
+    "label": "3",
+    "meaning": "marginal revenue"
+   },
+   {
+    "label": "E",
+    "meaning": "the equilibrium where marginal cost cuts marginal revenue"
+   }
+  ],
+  "questionRef": "2025 HL Q9(a)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission"
+ },
+ "economics-2025-OL-paper-p12-art": {
+  "src": "/exam-figures/economics/markbank/economics-2025-OL-paper-p12-art.png",
+  "md5": "5b13350fb4578839fb00ab80124cf8a3",
+  "alt": "A cost and revenue diagram of a firm in perfect competition at long-run equilibrium. 'Price' on the vertical axis, 'Q' on the horizontal. A red U-shaped average cost curve labelled AC and a steeply rising red marginal cost curve labelled MC cross at a filled black dot labelled E, which sits exactly on a horizontal blue line running the width of the diagram and labelled 'D = AR = MR'. Beneath the diagram sits the four-row answer table for MC, Q, D = AR = MR and AC.",
+  "lettersVisible": [
+   "MC",
+   "AC",
+   "D = AR = MR",
+   "E",
+   "Price",
+   "Q"
+  ],
+  "labelMeanings": [
+   {
+    "label": "MC",
+    "meaning": "marginal cost"
+   },
+   {
+    "label": "AC",
+    "meaning": "average cost"
+   },
+   {
+    "label": "D = AR = MR",
+    "meaning": "the horizontal demand curve facing a price taker, equal to average revenue and marginal revenue"
+   },
+   {
+    "label": "Q",
+    "meaning": "quantity"
+   },
+   {
+    "label": "E",
+    "meaning": "long-run equilibrium, where marginal cost cuts average cost at its minimum and the firm earns normal profit"
+   }
+  ],
+  "questionRef": "2025 OL Q12(b)(i)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2025 Ordinary Level — © State Examinations Commission"
  }
 }

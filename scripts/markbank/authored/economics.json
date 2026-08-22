@@ -783,6 +783,84 @@
   "notes": ""
  },
  {
+  "id": "econ-2021-hl-q11-b-i",
+  "topicId": "economics-2-0",
+  "conceptId": "labelling-an-oligopoly-diagram",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 HL Q11(b)(i)",
+  "questionText": "The diagram shows the long-run equilibrium of a firm in oligopoly at point E, producing Q1 and selling at P1. Write out in full the label for each of the lines numbered 1 to 4.",
+  "stem": "",
+  "figureKey": "economics-2021-HL-paper-p16-i0",
+  "labelKey": [
+   {
+    "letter": "1",
+    "meaning": "Marginal Cost",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "2",
+    "meaning": "Average (Total) Cost",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "3",
+    "meaning": "Demand / Average Revenue",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "4",
+    "meaning": "Marginal Revenue",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Marginal Cost",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Line 1 — the curve rising steeply to the top right."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Average (Total) Cost",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Line 2 — the U-shaped curve above point E."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Demand / Average Revenue",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Line 3 — the kinked line falling to the right."
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Marginal Revenue",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Line 4 — the short line dropping steeply below E."
+   }
+  ],
+  "notes": "Abbreviations are not accepted: the part says to write the labels out in full."
+ },
+ {
   "id": "econ-2021-hl-sa-q1-b",
   "topicId": "economics-4-2",
   "conceptId": "why-a-trade-surplus-is-an-aim",
@@ -1522,6 +1600,149 @@
    }
   ],
   "notes": ""
+ },
+ {
+  "id": "econ-2021-ol-q12-a-i",
+  "topicId": "economics-2-0",
+  "conceptId": "labelling-perfect-competition",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 OL Q12(a)(i)",
+  "questionText": "The diagram shows the long run equilibrium of a firm in perfect competition. Write out in full what each of the four labels represents.",
+  "stem": "",
+  "figureKey": "economics-2021-OL-paper-p13-i0",
+  "labelKey": [
+   {
+    "letter": "MC",
+    "meaning": "Marginal Cost",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "AC",
+    "meaning": "Average Cost",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "AR",
+    "meaning": "Average Revenue",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "MR",
+    "meaning": "Marginal Revenue",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-mc",
+    "kind": "point",
+    "verbatim": "Marginal Cost",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "MC — the steeply rising curve."
+   },
+   {
+    "id": "r-ac",
+    "kind": "point",
+    "verbatim": "Average Cost",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "AC — the U-shaped curve whose minimum is point B."
+   },
+   {
+    "id": "r-ar",
+    "kind": "point",
+    "verbatim": "Average Revenue",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "AR — part of the horizontal line D = AR = MR."
+   },
+   {
+    "id": "r-mr",
+    "kind": "point",
+    "verbatim": "Marginal Revenue",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "MR — the same horizontal line: for a price taker demand, average revenue and marginal revenue coincide."
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2021-ol-sa-q6-a",
+  "topicId": "economics-3-0",
+  "conceptId": "reading-the-circular-flow",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2021 OL Section A Q6(a)",
+  "questionText": "The diagram represents the circular flow of income in an open economy without the government. State what the flows numbered 1 to 3 represent.",
+  "stem": "",
+  "figureKey": "economics-2021-OL-paper-p06-art",
+  "labelKey": [
+   {
+    "letter": "1",
+    "meaning": "Incomes for supplying the factors of production",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "2",
+    "meaning": "Savings",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "3",
+    "meaning": "Exports",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Incomes for supplying the factors of production",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "Flow 1 — the outer arc running from Firms back to Households."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Savings",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Flow 2 — Households to Financial Institutions. A leakage."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Exports",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Flow 3 — Foreign Markets to Firms. An injection."
+   }
+  ],
+  "notes": "The three unlabelled flows are the ones a student has to supply; the rest of the diagram names its own."
  },
  {
   "id": "econ-2021-ol-sa-q10-b",
@@ -3230,6 +3451,81 @@
   "notes": ""
  },
  {
+  "id": "econ-2022-ol-q11-b-i",
+  "topicId": "economics-2-0",
+  "conceptId": "labelling-a-monopoly-diagram",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 OL Q11(b)(i)",
+  "questionText": "The diagram shows a firm operating under conditions of monopoly. Write out in full what each of the three numbered items represents.",
+  "stem": "",
+  "figureKey": "economics-2022-OL-paper-p11-i0",
+  "labelKey": [
+   {
+    "letter": "1",
+    "meaning": "Price",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "2",
+    "meaning": "Marginal Cost",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "3",
+    "meaning": "Marginal Revenue",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "AC",
+    "meaning": "Average Cost",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "AR",
+    "meaning": "Average Revenue",
+    "askedInThisQuestion": false
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 21,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Price",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "Item 1 — the vertical axis."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Marginal Cost",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "Item 2 — the U-shaped curve rising to the right, above AC."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Marginal Revenue",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "Item 3 — the steeper of the two downward-sloping lines. AC and AR are already labelled on the diagram."
+   }
+  ],
+  "notes": "Abbreviations are not accepted."
+ },
+ {
   "id": "econ-2022-ol-sa-q2-ii",
   "topicId": "economics-1-3",
   "conceptId": "what-the-census-is-used-for",
@@ -4653,6 +4949,71 @@
   "notes": ""
  },
  {
+  "id": "econ-2023-hl-sa-q5-a",
+  "topicId": "economics-0-1",
+  "conceptId": "reading-a-production-frontier",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2023 HL Section A Q5(a)",
+  "questionText": "Identify from the diagram above which option (A, B or C) represents an efficient, an inefficient and an impossible production point respectively.",
+  "stem": "",
+  "figureKey": "economics-2023-HL-paper-p07-art",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "an inefficient production point, inside the frontier",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "an impossible production point, outside the frontier",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "an efficient production point, on the frontier",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Efficient Production Point C",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "C sits on the frontier itself."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Inefficient Production Point A",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "A sits inside it, so resources are idle."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Impossible Production Point B",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "B sits outside it, beyond what current resources allow."
+   }
+  ],
+  "notes": "The justifications are carded separately, from the same diagram."
+ },
+ {
   "id": "econ-2023-ol-q11-a-i",
   "topicId": "economics-2-0",
   "conceptId": "monopolistic-competition-identified",
@@ -5077,6 +5438,81 @@
    }
   ],
   "notes": ""
+ },
+ {
+  "id": "econ-2023-ol-q11-b-i",
+  "topicId": "economics-2-0",
+  "conceptId": "labelling-monopolistic-competition",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q11(b)(i)",
+  "questionText": "The diagram represents the long run equilibrium of a firm in the hair and beauty industry. Write out in full what each of the three numbered items represents.",
+  "stem": "",
+  "figureKey": "economics-2023-OL-paper-p11-art",
+  "labelKey": [
+   {
+    "letter": "1",
+    "meaning": "AVERAGE COST",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "2",
+    "meaning": "AVERAGE REVENUE / DEMAND",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "3",
+    "meaning": "QUANTITY",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "MC",
+    "meaning": "Marginal Cost",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "MR",
+    "meaning": "Marginal Revenue",
+    "askedInThisQuestion": false
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 24,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "AVERAGE COST",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Item 1 — the blue U-shaped curve, whose minimum is point W."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "AVERAGE REVENUE / DEMAND",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Item 2 — the yellow line falling to the right."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "QUANTITY",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Item 3 — the horizontal axis. MC and MR are already labelled."
+   }
+  ],
+  "notes": "Abbreviations are not accepted."
  },
  {
   "id": "econ-2023-ol-sa-q2-b",
@@ -7316,6 +7752,76 @@
   "notes": ""
  },
  {
+  "id": "econ-2024-ol-q11-b-i",
+  "topicId": "economics-2-0",
+  "conceptId": "labelling-an-oligopoly-diagram-ol",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q11(b)(i)",
+  "questionText": "The diagram represents the long-run equilibrium of a firm in oligopoly. Write out in full what each of the three labels represents.",
+  "stem": "",
+  "figureKey": "economics-2024-OL-paper-p11-art",
+  "labelKey": [
+   {
+    "letter": "D=AR",
+    "meaning": "Demand/Average Revenue",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "MC",
+    "meaning": "Marginal Cost",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "MR",
+    "meaning": "Marginal Revenue",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "E",
+    "meaning": "the equilibrium, where marginal cost cuts marginal revenue",
+    "askedInThisQuestion": false
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 24,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Demand/Average Revenue",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "D=AR — the kinked line falling to the right."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Marginal Cost",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "MC — the curve rising through point E."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Marginal Revenue",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "MR — the line with a vertical break beneath the kink."
+   }
+  ],
+  "notes": "Abbreviations are not accepted."
+ },
+ {
   "id": "econ-2024-ol-sa-q1-i",
   "topicId": "economics-0-2",
   "conceptId": "oceans-as-an-economic-resource",
@@ -8199,6 +8705,76 @@
    }
   ],
   "notes": ""
+ },
+ {
+  "id": "econ-2025-hl-q9-a",
+  "topicId": "economics-2-0",
+  "conceptId": "labelling-the-kinked-demand-diagram",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q9(a)",
+  "questionText": "The diagram represents the long run equilibrium of a firm operating in an oligopoly market. Write out in full what each of the numbered items 1 to 3 represents.",
+  "stem": "",
+  "figureKey": "economics-2025-HL-paper-p11-art",
+  "labelKey": [
+   {
+    "letter": "1",
+    "meaning": "Marginal cost",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "2",
+    "meaning": "Average revenue = Demand",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "3",
+    "meaning": "Marginal revenue",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "E",
+    "meaning": "the equilibrium where marginal cost cuts marginal revenue",
+    "askedInThisQuestion": false
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Marginal cost",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Item 1 — the green curve rising through point E."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Average revenue = Demand",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Item 2 — the yellow kinked line."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Marginal revenue",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Item 3 — the red line, which breaks vertically under the kink in item 2."
+   }
+  ],
+  "notes": "Abbreviations are not accepted."
  },
  {
   "id": "econ-2025-hl-sa-q1-a-for",
@@ -9404,6 +9980,75 @@
       "Reduce emissions – flying creates a lot of emissions and greenhouse gases which will have a negative impact on the environment. A limit may help reduce emissions.",
       "Reduce traffic around Dublin airport – this will reduce traffic congestion for residents.",
       "Reduce noise pollution – for local residents as less planes will fly reducing the negative impact on residents. Reduce overcrowding – Dublin airport is already stretched and at capacity during busy periods. Facilities may need to be improved before more passengers can be facilitated."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2025-ol-q11-b-i",
+  "topicId": "economics-2-0",
+  "conceptId": "labelling-perfect-competition-ol",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 OL Q11(b)(i)",
+  "questionText": "The diagram represents the long-run equilibrium of a firm in perfect competition. Write out in full what any three of the four labels represent.",
+  "stem": "",
+  "figureKey": "economics-2025-OL-paper-p12-art",
+  "labelKey": [
+   {
+    "letter": "MC",
+    "meaning": "Marginal Cost",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "Q",
+    "meaning": "Quantity",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "D = AR = MR",
+    "meaning": "Demand / Average Revenue / Marginal Revenue",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "AC",
+    "meaning": "Average Cost",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "E",
+    "meaning": "long-run equilibrium, where marginal cost cuts average cost at its minimum",
+    "askedInThisQuestion": false
+   }
+  ],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 @ 8",
+   "answer": 3,
+   "ofParts": 4,
+   "perPart": 8
+  },
+  "totalMarks": 24,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A label written out in full — any three",
+    "marks": 24,
+    "openList": true,
+    "contextNote": "Three labels, 8 marks each. Abbreviations are not accepted.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 8,
+     "options": [
+      "Marginal Cost",
+      "Quantity",
+      "Demand / Average Revenue / Marginal Revenue",
+      "Average Cost"
      ]
     }
    }

@@ -228,3 +228,55 @@ cannot place at all.
   written by something that has looked at the image, which is the whole cost of
   the figure pipeline.
 - 2026 papers are not published yet.
+
+
+## Economics figures — added 2026-08-22
+
+**223 images catalogued, 159 published, 9 cards bound.** Bank total 4,918;
+Economics 232 cards (145 higher / 87 ordinary).
+
+The catalogue is `scripts/markbank/authored/economics-figures.json`; the crops
+are staged in the gitignored `exam-papers/economics/figures/<year>-<level>/` and
+published to `public/exam-figures/economics/markbank/` by bind-figures.mjs.
+
+### Two extractors, and why both are needed
+
+`extract-figures.py` lifts the paper's own embedded images. It works in
+horizontal bands, so a tall infographic comes out sliced — 23 of the 223 crops
+are truncated, including every one of the CSO infographics a question is
+actually answered from.
+
+`crop-question-art.py` crops the artwork's own extent from the page, and is the
+only way to reach a chart DRAWN on the page rather than pasted in as an image.
+Those are not rare: the circular flow of income, every kinked demand diagram,
+every supply-and-demand diagram a student is asked to shift.
+
+Find them with a stroke-level scan. An answer box and a table grid are ruled
+horizontally and vertically; a chart has curves and diagonals:
+
+    for d in page.get_drawings():
+        for it in d['items']:
+            if it[0] == 'c': ...                       # a bezier curve
+            elif it[0] == 'l' and abs(dx) > 3 and abs(dy) > 3: ...   # a diagonal
+
+Run it over EVERY page, not just pages with no raster crop — a page carrying an
+answer box also carries the diagram, and the first scan missed four diagrams
+that way, all of them the subject of a labelling card.
+
+Always pass `--keep-charts --ignore-rules`. Without the first, a chart frame
+wider than 30% of the page is discarded as an answer box (this cut the 2021 ECB
+interest-rate chart down to its own x-axis). Without the second, the crop runs
+down over the blank answer lines.
+
+### The guard that matters
+
+Assert that the catalogue and the staging directory hold the same set of files.
+It caught seven artwork crops generated and never catalogued, and two raster
+crops never opened at all. There is no way to check "did an agent really look at
+this image", so check the thing that can be checked.
+
+### What is left
+
+Roughly twenty pages carry a drawn diagram that no card needs yet — mostly the
+blank axes a student draws on, and charts already published as raster crops.
+They are listed by the stroke scan; nothing is lost by leaving them.

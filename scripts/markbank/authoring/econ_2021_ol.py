@@ -15,6 +15,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from econ_auto import Paper  # noqa: E402
+from econ_lib import card, point  # noqa: E402
 
 P = Paper(2021, 'ordinary')
 SCAFFOLD = ('Possible responses', 'Suggested responses', 'Evidence of Data', 'Deduct')
@@ -108,5 +109,44 @@ P.menu('one advantage or one disadvantage of Globalisation', 'econ-2021-ol-q11-b
        'One advantage, 5 marks.',
        ref='2021 OL Q11(b)(i) — advantage',
        claim=1, per=5, drop=SCAFFOLD, stop='Possible disadvantages')
+
+
+# ── Two figure cards ────────────────────────────────────────────────────────
+P.cards.append(card(
+    'econ-2021-ol-q12-a-i', 2021, 'ordinary', 'economics-2-0', 'labelling-perfect-competition',
+    '2021 OL Q12(a)(i)',
+    'The diagram shows the long run equilibrium of a firm in perfect competition. Write out in '
+    'full what each of the four labels represents.',
+    'fixed', 20,
+    [point('r-mc', 'Marginal Cost', 5, 'MC — the steeply rising curve.'),
+     point('r-ac', 'Average Cost', 5, 'AC — the U-shaped curve whose minimum is point B.'),
+     point('r-ar', 'Average Revenue', 5, 'AR — part of the horizontal line D = AR = MR.'),
+     point('r-mr', 'Marginal Revenue', 5, 'MR — the same horizontal line: for a price taker '
+                                          'demand, average revenue and marginal revenue coincide.')],
+    '', tariff_kind='fixed',
+    figure_key='economics-2021-OL-paper-p13-i0',
+    label_key=[{'letter': 'MC', 'meaning': 'Marginal Cost', 'askedInThisQuestion': True},
+               {'letter': 'AC', 'meaning': 'Average Cost', 'askedInThisQuestion': True},
+               {'letter': 'AR', 'meaning': 'Average Revenue', 'askedInThisQuestion': True},
+               {'letter': 'MR', 'meaning': 'Marginal Revenue', 'askedInThisQuestion': True}]))
+
+P.cards.append(card(
+    'econ-2021-ol-sa-q6-a', 2021, 'ordinary', 'economics-3-0', 'reading-the-circular-flow',
+    '2021 OL Section A Q6(a)',
+    'The diagram represents the circular flow of income in an open economy without the '
+    'government. State what the flows numbered 1 to 3 represent.',
+    'fixed', 15,
+    [point('r-1', 'Incomes for supplying the factors of production', 9,
+           'Flow 1 — the outer arc running from Firms back to Households.'),
+     point('r-2', 'Savings', 3, 'Flow 2 — Households to Financial Institutions. A leakage.'),
+     point('r-3', 'Exports', 3, 'Flow 3 — Foreign Markets to Firms. An injection.')],
+    'The three unlabelled flows are the ones a student has to supply; the rest of the diagram '
+    'names its own.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2021-OL-paper-p06-art',
+    label_key=[{'letter': '1', 'meaning': 'Incomes for supplying the factors of production',
+                'askedInThisQuestion': True},
+               {'letter': '2', 'meaning': 'Savings', 'askedInThisQuestion': True},
+               {'letter': '3', 'meaning': 'Exports', 'askedInThisQuestion': True}]))
 
 P.emit()

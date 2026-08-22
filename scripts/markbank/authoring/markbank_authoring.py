@@ -128,7 +128,7 @@ def make_card(subject_id, default_section='B'):
     """A card constructor bound to one subject."""
     def card(cid, year, level, topic, concept, ref, qtext, notation, total, rows, notes,
              stem="", tariff_kind="bestNofParts", answer=None, of_parts=None, per_part=None,
-             section=default_section):
+             section=default_section, figure_key="", label_key=None):
         # A best-of tariff must state answer x perPart, and the build checks it
         # makes the total. Derive from the row when the caller has not said
         # otherwise, so a forgotten argument cannot ship a card whose tariff
@@ -147,7 +147,13 @@ def make_card(subject_id, default_section='B'):
                 answer, per_part, of_parts = g['claimMax'], g['perOption'], len(g['options'])
         return {"id": cid, "topicId": topic, "conceptId": concept, "level": level, "year": year,
                 "subjectId": subject_id, "section": section, "questionRef": ref,
-                "questionText": qtext, "stem": stem, "figureKey": "", "labelKey": [],
+                "questionText": qtext, "stem": stem,
+                # A figure is named by KEY only. The build resolves the key against
+                # the manifest bind-figures.mjs wrote, checks the file is still on
+                # disk and that its bytes still hash to what the inspecting agent
+                # saw, and refuses otherwise -- both historical figure corruptions
+                # in this repo came in through a hand-transcribed path.
+                "figureKey": figure_key, "labelKey": label_key or [],
                 "tariffModel": {"kind": tariff_kind, "notation": notation, "answer": answer,
                                 "ofParts": of_parts, "perPart": per_part},
                 "totalMarks": total, "rows": rows, "notes": notes}

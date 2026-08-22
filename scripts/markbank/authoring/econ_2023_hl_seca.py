@@ -13,7 +13,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from econ_auto import Paper  # noqa: E402
-from econ_lib import anyN, block, bullets, card, load, tidy  # noqa: E402
+from econ_lib import anyN, block, bullets, card, load, point, tidy  # noqa: E402
 
 P = Paper(2023, 'higher', 'A')
 SCAFFOLD = ('Possible responses', 'Suggested responses')
@@ -126,5 +126,27 @@ P.cards.append(card(
                         '6. (a) In each case below')),
           'Three justifications, 2 marks each. The three are the whole answer, not a choice.')],
     '', section='A'))
+
+
+# ── A figure card ───────────────────────────────────────────────────────────
+P.cards.append(card(
+    'econ-2023-hl-sa-q5-a', 2023, 'higher', 'economics-0-1', 'reading-a-production-frontier',
+    '2023 HL Section A Q5(a)',
+    'Identify from the diagram above which option (A, B or C) represents an efficient, an '
+    'inefficient and an impossible production point respectively.',
+    'fixed', 6,
+    [point('r-1', 'Efficient Production Point C', 2, 'C sits on the frontier itself.'),
+     point('r-2', 'Inefficient Production Point A', 2, 'A sits inside it, so resources are idle.'),
+     point('r-3', 'Impossible Production Point B', 2,
+           'B sits outside it, beyond what current resources allow.')],
+    'The justifications are carded separately, from the same diagram.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2023-HL-paper-p07-art',
+    label_key=[{'letter': 'A', 'meaning': 'an inefficient production point, inside the frontier',
+                'askedInThisQuestion': True},
+               {'letter': 'B', 'meaning': 'an impossible production point, outside the frontier',
+                'askedInThisQuestion': True},
+               {'letter': 'C', 'meaning': 'an efficient production point, on the frontier',
+                'askedInThisQuestion': True}]))
 
 P.emit()

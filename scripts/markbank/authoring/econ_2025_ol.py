@@ -8,7 +8,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from econ_auto import Paper  # noqa: E402
-from econ_lib import anyN, block, card, heads, load, as_option, tidy  # noqa: E402
+from econ_lib import anyN, as_option, block, card, heads, load, tidy  # noqa: E402
 
 P = Paper(2025, 'ordinary')
 SCAFFOLD = ('Possible responses', 'Suggested responses', 'Accept relevant infras',
@@ -110,5 +110,29 @@ P.cards.append(card(
           'One reason, 8 marks.')],
     '', stem='Dublin Airport has a cap of 32 million passengers a year, which was exceeded in '
              '2024.', tariff_kind='bestNofParts'))
+
+
+# ── A figure card ───────────────────────────────────────────────────────────
+# The one labelling part in the five years that is a genuine choice: four
+# labels are printed and any three earn the marks.
+P.cards.append(card(
+    'econ-2025-ol-q11-b-i', 2025, 'ordinary', 'economics-2-0',
+    'labelling-perfect-competition-ol', '2025 OL Q11(b)(i)',
+    'The diagram represents the long-run equilibrium of a firm in perfect competition. Write out '
+    'in full what any three of the four labels represent.',
+    '3 @ 8', 24,
+    [anyN('r-1', 'A label written out in full — any three', 24, 3, 8,
+          ['Marginal Cost', 'Quantity', 'Demand / Average Revenue / Marginal Revenue',
+           'Average Cost'],
+          'Three labels, 8 marks each. Abbreviations are not accepted.')],
+    '', tariff_kind='bestNofParts',
+    figure_key='economics-2025-OL-paper-p12-art',
+    label_key=[{'letter': 'MC', 'meaning': 'Marginal Cost', 'askedInThisQuestion': True},
+               {'letter': 'Q', 'meaning': 'Quantity', 'askedInThisQuestion': True},
+               {'letter': 'D = AR = MR',
+                'meaning': 'Demand / Average Revenue / Marginal Revenue', 'askedInThisQuestion': True},
+               {'letter': 'AC', 'meaning': 'Average Cost', 'askedInThisQuestion': True},
+               {'letter': 'E', 'meaning': 'long-run equilibrium, where marginal cost cuts average '
+                                          'cost at its minimum', 'askedInThisQuestion': False}]))
 
 P.emit()

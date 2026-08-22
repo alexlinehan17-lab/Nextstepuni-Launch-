@@ -266,6 +266,36 @@ export const CARDS: SecCard[] = [
     ],
   } as SecCard,
   {
+    ...base, kind: "diagram",
+    year: 2021, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2021 Higher Level — © State Examinations Commission.",
+    id: "econ-2021-hl-q11-b-i", topicId: "economics-2-0", conceptId: "labelling-an-oligopoly-diagram",
+    section: "B", questionRef: "2021 HL Q11(b)(i)",
+    questionText: "The diagram shows the long-run equilibrium of a firm in oligopoly at point E, producing Q1 and selling at P1. Write out in full the label for each of the lines numbered 1 to 4.",
+    tariffModel: {"kind":"fixed","notation":"fixed","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Marginal Cost", marks: 4, contextNote: "Line 1 — the curve rising steeply to the top right.", openList: true },
+    { id: "r-2", kind: "point", verbatim: "Average (Total) Cost", marks: 4, contextNote: "Line 2 — the U-shaped curve above point E.", openList: true },
+    { id: "r-3", kind: "point", verbatim: "Demand / Average Revenue", marks: 4, contextNote: "Line 3 — the kinked line falling to the right.", openList: true },
+    { id: "r-4", kind: "point", verbatim: "Marginal Revenue", marks: 4, contextNote: "Line 4 — the short line dropping steeply below E.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2021-HL-paper-p16-i0",
+          "src": "/exam-figures/economics/markbank/economics-2021-HL-paper-p16-i0.png",
+          "srcHash": "15490d0fe93f7e5c5fbdb4e6bf245598",
+          "alt": "A cost-and-revenue diagram of a firm in oligopoly at long-run equilibrium. Price on the vertical axis, Quantity on the horizontal. Four black curves are numbered in red: 1 is an upward-sloping curve rising steeply to the top right; 2 is a U-shaped curve whose minimum sits to the right of centre; 3 is a downward-sloping line running to the bottom right; 4 is a short line dropping steeply below and right of point E. A kinked demand curve runs from the top left through a red dot at price P1, with a second U-shaped curve below it whose minimum is at the filled point E on the dotted vertical at Q1. Dotted red guide lines run from P1 across and from Q1 up to E.",
+          "attribution": "SEC Leaving Certificate Economics 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "1",
+                "2",
+                "3",
+                "4"
+          ]
+    },
+    labelKey: [{"letter":"1","meaning":"Marginal Cost","askedInThisQuestion":true},{"letter":"2","meaning":"Average (Total) Cost","askedInThisQuestion":true},{"letter":"3","meaning":"Demand / Average Revenue","askedInThisQuestion":true},{"letter":"4","meaning":"Marginal Revenue","askedInThisQuestion":true}],
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2021, level: "higher",
     paperFileid: "LC034ALP000EV",
@@ -1054,6 +1084,34 @@ export const CARDS: SecCard[] = [
     ],
   } as SecCard,
   {
+    ...base, kind: "diagram",
+    year: 2023, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2023 Higher Level — © State Examinations Commission.",
+    id: "econ-2023-hl-sa-q5-a", topicId: "economics-0-1", conceptId: "reading-a-production-frontier",
+    section: "A", questionRef: "2023 HL Section A Q5(a)",
+    questionText: "Identify from the diagram above which option (A, B or C) represents an efficient, an inefficient and an impossible production point respectively.",
+    tariffModel: {"kind":"fixed","notation":"fixed","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Efficient Production Point C", marks: 2, contextNote: "C sits on the frontier itself.", openList: true },
+    { id: "r-2", kind: "point", verbatim: "Inefficient Production Point A", marks: 2, contextNote: "A sits inside it, so resources are idle.", openList: true },
+    { id: "r-3", kind: "point", verbatim: "Impossible Production Point B", marks: 2, contextNote: "B sits outside it, beyond what current resources allow.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2023-HL-paper-p07-art",
+          "src": "/exam-figures/economics/markbank/economics-2023-HL-paper-p07-art.png",
+          "srcHash": "a5430e656bf3a1a34123fc3f9cbf7a59",
+          "alt": "A production possibilities frontier for a firm making laptops and tablets. 'Laptops' on the vertical axis, 'Tablets' on the horizontal. A blue curve bows outward from the top left to the bottom right. Three coloured dots are marked: C in blue sitting on the curve, B in orange outside it to the right, and A in green well inside it. Beneath the diagram sit the instruction to identify which of A, B or C is the efficient, inefficient and impossible production point, the answer table, and part (b) asking the student to justify each choice.",
+          "attribution": "SEC Leaving Certificate Economics 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"an inefficient production point, inside the frontier","askedInThisQuestion":true},{"letter":"B","meaning":"an impossible production point, outside the frontier","askedInThisQuestion":true},{"letter":"C","meaning":"an efficient production point, on the frontier","askedInThisQuestion":true}],
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2024, level: "higher",
     paperFileid: "LC034ALP000EV",
@@ -1656,6 +1714,35 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "A barrier to entry — any one", marks: 4, contextNote: "One barrier, 4 marks. Patents are excluded by the question.", openList: true, group: {"claimMax":1,"perOption":4,"options":["Government-legislated monopolies – the Government may grant a company the sole right to produce a good or supply a service, e.g. An Post has a government monopoly over universal postal services, including letter delivery in Ireland. It is the only provider, required by law, to deliver post nationwide, even in remote areas.","Collusion and trade agreements – firms may enter trade agreements with other suppliers i.e. collude with them so that no other firm can supply the product or service in the market. E.g. Daimler, Volvo/Renault, Iveco, DAF, and MAN were fined €2.93 billion by the European Commission in 2016 for colluding in a price fixing cartel to prevent new truck manufacturers enter the European market.","Exclusive ownership of raw materials – a company may acquire the sole right to the available raw materials thereby becoming a monopoly in that particular industry. E.g. Coillte, the state-owned forestry company, owns and manages the vast majority of Ireland’s forests. This gives it significant control over the supply of timber.","High capital requirements / Economies of scale – for some industries the capital required to get established in that industry is so large that only the company which can raise the necessary capital may operate in the market. E.g. The ESB (Electricity Supply Board) dominated Ireland’s electricity market for decades because of the enormous infrastructure costs required to generate and distribute power.","Mergers and acquisitions – by merging with a competitor or buying out the competitor a firm may become a monopoly supplier in that industry. E.g. in 2014, Irish Water was established by merging local authority water services into one national utility. The move created a state-controlled monopoly over public water supply and wastewater treatment in Ireland.","Intimidation and unfair practices – an individual or group of individuals may, by fear, force or threats, stop other individuals competing with the supplier. E.g. the supply of illegal drugs."]} },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2025, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2025 Higher Level — © State Examinations Commission.",
+    id: "econ-2025-hl-q9-a", topicId: "economics-2-0", conceptId: "labelling-the-kinked-demand-diagram",
+    section: "B", questionRef: "2025 HL Q9(a)",
+    questionText: "The diagram represents the long run equilibrium of a firm operating in an oligopoly market. Write out in full what each of the numbered items 1 to 3 represents.",
+    tariffModel: {"kind":"fixed","notation":"fixed","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Marginal cost", marks: 2, contextNote: "Item 1 — the green curve rising through point E.", openList: true },
+    { id: "r-2", kind: "point", verbatim: "Average revenue = Demand", marks: 2, contextNote: "Item 2 — the yellow kinked line.", openList: true },
+    { id: "r-3", kind: "point", verbatim: "Marginal revenue", marks: 2, contextNote: "Item 3 — the red line, which breaks vertically under the kink in item 2.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2025-HL-paper-p11-art",
+          "src": "/exam-figures/economics/markbank/economics-2025-HL-paper-p11-art.png",
+          "srcHash": "e3f7aab02ca447e84f23cc676a085706",
+          "alt": "A kinked demand diagram of a firm in oligopoly at long-run equilibrium. 'Price' on the vertical axis, 'Quantity' on the horizontal. A yellow line runs from the top left, bends at a filled black dot and falls more steeply to the axis; it is numbered 2 in a yellow box near its lower end. A red line runs below it and stops abruptly; it is numbered 3 in a red box. A green U-shaped curve rises through a second filled dot labelled E to the top right; it is numbered 1 in a green box. Blue dashed guides run from the upper dot left to P1 on the price axis and down to Q1 on the quantity axis. Beneath the diagram sit the three-row answer table for items 1 to 3 and part (b) asking for the shape of curve 2.",
+          "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "1",
+                "2",
+                "3",
+                "E"
+          ]
+    },
+    labelKey: [{"letter":"1","meaning":"Marginal cost","askedInThisQuestion":true},{"letter":"2","meaning":"Average revenue = Demand","askedInThisQuestion":true},{"letter":"3","meaning":"Marginal revenue","askedInThisQuestion":true},{"letter":"E","meaning":"the equilibrium where marginal cost cuts marginal revenue","askedInThisQuestion":false}],
   } as SecCard,
   {
     ...base, kind: "question",

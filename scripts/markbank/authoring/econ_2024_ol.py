@@ -139,4 +139,23 @@ P.menu('reasons why exports are important for the Irish economy', 'econ-2024-ol-
        'Two reasons, 6 marks each.',
        claim=2, per=6, drop=SCAFFOLD)
 
+
+# ── A figure card ───────────────────────────────────────────────────────────
+P.cards.append(card(
+    'econ-2024-ol-q11-b-i', 2024, 'ordinary', 'economics-2-0', 'labelling-an-oligopoly-diagram-ol',
+    '2024 OL Q11(b)(i)',
+    'The diagram represents the long-run equilibrium of a firm in oligopoly. Write out in full '
+    'what each of the three labels represents.',
+    'fixed', 24,
+    [point('r-1', 'Demand/Average Revenue', 8, 'D=AR — the kinked line falling to the right.'),
+     point('r-2', 'Marginal Cost', 8, 'MC — the curve rising through point E.'),
+     point('r-3', 'Marginal Revenue', 8, 'MR — the line with a vertical break beneath the kink.')],
+    'Abbreviations are not accepted.', tariff_kind='fixed',
+    figure_key='economics-2024-OL-paper-p11-art',
+    label_key=[{'letter': 'D=AR', 'meaning': 'Demand/Average Revenue', 'askedInThisQuestion': True},
+               {'letter': 'MC', 'meaning': 'Marginal Cost', 'askedInThisQuestion': True},
+               {'letter': 'MR', 'meaning': 'Marginal Revenue', 'askedInThisQuestion': True},
+               {'letter': 'E', 'meaning': 'the equilibrium, where marginal cost cuts marginal revenue',
+                'askedInThisQuestion': False}]))
+
 emit(cards + P.cards)

@@ -8,6 +8,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from econ_auto import Paper  # noqa: E402
+from econ_lib import card, point  # noqa: E402
 
 P = Paper(2023, 'ordinary')
 SCAFFOLD = ('Possible responses', 'Suggested responses')
@@ -82,5 +83,24 @@ P.menu('benefit of this electricity credit', 'econ-2023-ol-q12-c-i',
        'A benefit to the household — any one',
        'One benefit, 10 marks.',
        claim=1, per=10, drop=SCAFFOLD)
+
+
+# ── A figure card ───────────────────────────────────────────────────────────
+P.cards.append(card(
+    'econ-2023-ol-q11-b-i', 2023, 'ordinary', 'economics-2-0',
+    'labelling-monopolistic-competition', '2023 OL Q11(b)(i)',
+    'The diagram represents the long run equilibrium of a firm in the hair and beauty industry. '
+    'Write out in full what each of the three numbered items represents.',
+    'fixed', 24,
+    [point('r-1', 'AVERAGE COST', 8, 'Item 1 — the blue U-shaped curve, whose minimum is point W.'),
+     point('r-2', 'AVERAGE REVENUE / DEMAND', 8, 'Item 2 — the yellow line falling to the right.'),
+     point('r-3', 'QUANTITY', 8, 'Item 3 — the horizontal axis. MC and MR are already labelled.')],
+    'Abbreviations are not accepted.', tariff_kind='fixed',
+    figure_key='economics-2023-OL-paper-p11-art',
+    label_key=[{'letter': '1', 'meaning': 'AVERAGE COST', 'askedInThisQuestion': True},
+               {'letter': '2', 'meaning': 'AVERAGE REVENUE / DEMAND', 'askedInThisQuestion': True},
+               {'letter': '3', 'meaning': 'QUANTITY', 'askedInThisQuestion': True},
+               {'letter': 'MC', 'meaning': 'Marginal Cost', 'askedInThisQuestion': False},
+               {'letter': 'MR', 'meaning': 'Marginal Revenue', 'askedInThisQuestion': False}]))
 
 P.emit()

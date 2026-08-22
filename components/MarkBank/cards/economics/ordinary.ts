@@ -160,6 +160,64 @@ export const CARDS: SecCard[] = [
     ],
   } as SecCard,
   {
+    ...base, kind: "diagram",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2021-ol-q12-a-i", topicId: "economics-2-0", conceptId: "labelling-perfect-competition",
+    section: "B", questionRef: "2021 OL Q12(a)(i)",
+    questionText: "The diagram shows the long run equilibrium of a firm in perfect competition. Write out in full what each of the four labels represents.",
+    tariffModel: {"kind":"fixed","notation":"fixed","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
+    rows: [
+    { id: "r-mc", kind: "point", verbatim: "Marginal Cost", marks: 5, contextNote: "MC — the steeply rising curve.", openList: true },
+    { id: "r-ac", kind: "point", verbatim: "Average Cost", marks: 5, contextNote: "AC — the U-shaped curve whose minimum is point B.", openList: true },
+    { id: "r-ar", kind: "point", verbatim: "Average Revenue", marks: 5, contextNote: "AR — part of the horizontal line D = AR = MR.", openList: true },
+    { id: "r-mr", kind: "point", verbatim: "Marginal Revenue", marks: 5, contextNote: "MR — the same horizontal line: for a price taker demand, average revenue and marginal revenue coincide.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2021-OL-paper-p13-i0",
+          "src": "/exam-figures/economics/markbank/economics-2021-OL-paper-p13-i0.png",
+          "srcHash": "6ce289dd3cc8315b7417b47124959eb1",
+          "alt": "A cost-and-revenue diagram of a firm in perfect competition at long-run equilibrium. Price on the vertical axis, Quantity on the horizontal. A U-shaped average cost curve labelled AC and a steeply rising marginal cost curve labelled MC cross at the filled point B, which sits exactly on a horizontal line running the width of the diagram labelled 'D = AR = MR'. A second, lower U-shaped curve sits to the left. Point B is at the minimum of AC, where price equals minimum average cost and the firm earns normal profit.",
+          "attribution": "SEC Leaving Certificate Economics 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "MC",
+                "AC",
+                "AR",
+                "MR"
+          ]
+    },
+    labelKey: [{"letter":"MC","meaning":"Marginal Cost","askedInThisQuestion":true},{"letter":"AC","meaning":"Average Cost","askedInThisQuestion":true},{"letter":"AR","meaning":"Average Revenue","askedInThisQuestion":true},{"letter":"MR","meaning":"Marginal Revenue","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2021-ol-sa-q6-a", topicId: "economics-3-0", conceptId: "reading-the-circular-flow",
+    section: "A", questionRef: "2021 OL Section A Q6(a)",
+    questionText: "The diagram represents the circular flow of income in an open economy without the government. State what the flows numbered 1 to 3 represent.",
+    tariffModel: {"kind":"fixed","notation":"fixed","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Incomes for supplying the factors of production", marks: 9, contextNote: "Flow 1 — the outer arc running from Firms back to Households.", openList: true },
+    { id: "r-2", kind: "point", verbatim: "Savings", marks: 3, contextNote: "Flow 2 — Households to Financial Institutions. A leakage.", openList: true },
+    { id: "r-3", kind: "point", verbatim: "Exports", marks: 3, contextNote: "Flow 3 — Foreign Markets to Firms. An injection.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2021-OL-paper-p06-art",
+          "src": "/exam-figures/economics/markbank/economics-2021-OL-paper-p06-art.png",
+          "srcHash": "4981686f16dc93fed62f0de6df9433ed",
+          "alt": "A circular flow of income diagram. Five labelled ovals - Households and Firms at the top, Financial Institutions and Foreign Markets below - are linked by curved arrows. Labelled flows read 'Supply factors of production' and 'Supply goods and services' between Households and Firms, 'Spending on goods and services' from Households towards Firms, 'Imports' from Households to Foreign Markets, and 'Investments' from Financial Institutions to Firms. Three flows are left unlabelled and marked instead with red numerals 1, 2 and 3 in circles: 1 on the outer arc running from Firms back to Households, 2 on the arrow from Households down to Financial Institutions, and 3 on the arrow from Foreign Markets up to Firms.",
+          "attribution": "SEC Leaving Certificate Economics 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "1",
+                "2",
+                "3"
+          ]
+    },
+    labelKey: [{"letter":"1","meaning":"Incomes for supplying the factors of production","askedInThisQuestion":true},{"letter":"2","meaning":"Savings","askedInThisQuestion":true},{"letter":"3","meaning":"Exports","askedInThisQuestion":true}],
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
     paperFileid: "LC034GLP000EV",
@@ -343,6 +401,36 @@ export const CARDS: SecCard[] = [
     ],
   } as SecCard,
   {
+    ...base, kind: "diagram",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2022-ol-q11-b-i", topicId: "economics-2-0", conceptId: "labelling-a-monopoly-diagram",
+    section: "B", questionRef: "2022 OL Q11(b)(i)",
+    questionText: "The diagram shows a firm operating under conditions of monopoly. Write out in full what each of the three numbered items represents.",
+    tariffModel: {"kind":"fixed","notation":"fixed","answer":null,"ofParts":null,"perPart":null}, totalMarks: 21,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Price", marks: 7, contextNote: "Item 1 — the vertical axis.", openList: true },
+    { id: "r-2", kind: "point", verbatim: "Marginal Cost", marks: 7, contextNote: "Item 2 — the U-shaped curve rising to the right, above AC.", openList: true },
+    { id: "r-3", kind: "point", verbatim: "Marginal Revenue", marks: 7, contextNote: "Item 3 — the steeper of the two downward-sloping lines. AC and AR are already labelled on the diagram.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2022-OL-paper-p11-i0",
+          "src": "/exam-figures/economics/markbank/economics-2022-OL-paper-p11-i0.png",
+          "srcHash": "d67e0b8c7a21632cbe2bf1cbd0bd228c",
+          "alt": "A cost-and-revenue diagram of a firm in monopolistic competition. Two blue downward-sloping straight lines run from the top left, the steeper one numbered 3 at its foot and the shallower one labelled AR at its foot; the higher of the two is numbered 1 at its head. Two red U-shaped curves rise to the right, the upper labelled AC and numbered 2 near its top, the lower one bottoming out at a large filled black dot labelled G. The horizontal axis is labelled Quantity.",
+          "attribution": "SEC Leaving Certificate Economics 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "1",
+                "2",
+                "3",
+                "AC",
+                "AR"
+          ]
+    },
+    labelKey: [{"letter":"1","meaning":"Price","askedInThisQuestion":true},{"letter":"2","meaning":"Marginal Cost","askedInThisQuestion":true},{"letter":"3","meaning":"Marginal Revenue","askedInThisQuestion":true},{"letter":"AC","meaning":"Average Cost","askedInThisQuestion":false},{"letter":"AR","meaning":"Average Revenue","askedInThisQuestion":false}],
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
     paperFileid: "LC034GLP000EV",
@@ -499,6 +587,36 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "A benefit to the household — any one", marks: 10, contextNote: "One benefit, 10 marks.", openList: true, group: {"claimMax":1,"perOption":10,"options":["It helps Irish households to maintain their standard of living during cost of living crisis.","It reduces the costs of electricity for households in a time of high energy inflation.","It reduces the risk of energy poverty for fixed/low income families.","It may help reduce stress / anxiety for households facing increasing bills.","Helps low income families by providing them with more disposable income."]} },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2023-ol-q11-b-i", topicId: "economics-2-0", conceptId: "labelling-monopolistic-competition",
+    section: "B", questionRef: "2023 OL Q11(b)(i)",
+    questionText: "The diagram represents the long run equilibrium of a firm in the hair and beauty industry. Write out in full what each of the three numbered items represents.",
+    tariffModel: {"kind":"fixed","notation":"fixed","answer":null,"ofParts":null,"perPart":null}, totalMarks: 24,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "AVERAGE COST", marks: 8, contextNote: "Item 1 — the blue U-shaped curve, whose minimum is point W.", openList: true },
+    { id: "r-2", kind: "point", verbatim: "AVERAGE REVENUE / DEMAND", marks: 8, contextNote: "Item 2 — the yellow line falling to the right.", openList: true },
+    { id: "r-3", kind: "point", verbatim: "QUANTITY", marks: 8, contextNote: "Item 3 — the horizontal axis. MC and MR are already labelled.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2023-OL-paper-p11-art",
+          "src": "/exam-figures/economics/markbank/economics-2023-OL-paper-p11-art.png",
+          "srcHash": "930a629267c6c1f0914146663d9edf1a",
+          "alt": "A cost-and-revenue diagram of a firm in monopolistic competition, drawn in four colours. Price (€) on the vertical axis. A red line falls steeply from the top left and is labelled MR at its foot. A yellow line falls less steeply and is numbered 2 near its lower end. A green U-shaped curve rises to the right and is labelled MC. A blue U-shaped curve sits above it and is numbered 1 at its top right. Two filled black dots mark points on the diagram: E where the red MR line crosses the green MC curve near the axis, and W at the minimum of the blue curve. The horizontal axis is numbered 3.",
+          "attribution": "SEC Leaving Certificate Economics 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "1",
+                "2",
+                "3",
+                "MC",
+                "MR"
+          ]
+    },
+    labelKey: [{"letter":"1","meaning":"AVERAGE COST","askedInThisQuestion":true},{"letter":"2","meaning":"AVERAGE REVENUE / DEMAND","askedInThisQuestion":true},{"letter":"3","meaning":"QUANTITY","askedInThisQuestion":true},{"letter":"MC","meaning":"Marginal Cost","askedInThisQuestion":false},{"letter":"MR","meaning":"Marginal Revenue","askedInThisQuestion":false}],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -729,6 +847,35 @@ export const CARDS: SecCard[] = [
     ],
   } as SecCard,
   {
+    ...base, kind: "diagram",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2024-ol-q11-b-i", topicId: "economics-2-0", conceptId: "labelling-an-oligopoly-diagram-ol",
+    section: "B", questionRef: "2024 OL Q11(b)(i)",
+    questionText: "The diagram represents the long-run equilibrium of a firm in oligopoly. Write out in full what each of the three labels represents.",
+    tariffModel: {"kind":"fixed","notation":"fixed","answer":null,"ofParts":null,"perPart":null}, totalMarks: 24,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Demand/Average Revenue", marks: 8, contextNote: "D=AR — the kinked line falling to the right.", openList: true },
+    { id: "r-2", kind: "point", verbatim: "Marginal Cost", marks: 8, contextNote: "MC — the curve rising through point E.", openList: true },
+    { id: "r-3", kind: "point", verbatim: "Marginal Revenue", marks: 8, contextNote: "MR — the line with a vertical break beneath the kink.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2024-OL-paper-p11-art",
+          "src": "/exam-figures/economics/markbank/economics-2024-OL-paper-p11-art.png",
+          "srcHash": "5f36ab7541ff909b9f3b3051dfdeb82c",
+          "alt": "A kinked demand diagram of a firm in oligopoly at long-run equilibrium. 'Price' on the vertical axis, 'Quantity' on the horizontal. A blue line labelled in a box 'D=AR' runs from the top left, bends at a filled black dot and falls more steeply to the quantity axis. A red line labelled in a box 'MR' runs below it, drops vertically through a second filled dot labelled E, and continues below the axis. A green U-shaped curve labelled in a box 'MC' rises through E to the top right. A dotted red vertical joins the two dots. Beneath the diagram sit the three-row answer table for D=AR, MC and MR, the instruction to mark Q1 and P1 at equilibrium, and part (iii) on naming another Irish oligopoly.",
+          "attribution": "SEC Leaving Certificate Economics 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "D=AR",
+                "MC",
+                "MR",
+                "E"
+          ]
+    },
+    labelKey: [{"letter":"D=AR","meaning":"Demand/Average Revenue","askedInThisQuestion":true},{"letter":"MC","meaning":"Marginal Cost","askedInThisQuestion":true},{"letter":"MR","meaning":"Marginal Revenue","askedInThisQuestion":true},{"letter":"E","meaning":"the equilibrium, where marginal cost cuts marginal revenue","askedInThisQuestion":false}],
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
     paperFileid: "LC034GLP000EV",
@@ -926,6 +1073,34 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "A reason for the passenger cap — any one", marks: 8, contextNote: "One reason, 8 marks.", openList: true, group: {"claimMax":1,"perOption":8,"options":["Reduce emissions – flying creates a lot of emissions and greenhouse gases which will have a negative impact on the environment. A limit may help reduce emissions.","Reduce traffic around Dublin airport – this will reduce traffic congestion for residents.","Reduce noise pollution – for local residents as less planes will fly reducing the negative impact on residents. Reduce overcrowding – Dublin airport is already stretched and at capacity during busy periods. Facilities may need to be improved before more passengers can be facilitated."]} },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2025-ol-q11-b-i", topicId: "economics-2-0", conceptId: "labelling-perfect-competition-ol",
+    section: "B", questionRef: "2025 OL Q11(b)(i)",
+    questionText: "The diagram represents the long-run equilibrium of a firm in perfect competition. Write out in full what any three of the four labels represent.",
+    tariffModel: {"kind":"bestNofParts","notation":"3 @ 8","answer":3,"ofParts":4,"perPart":8}, totalMarks: 24,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A label written out in full — any three", marks: 24, contextNote: "Three labels, 8 marks each. Abbreviations are not accepted.", openList: true, group: {"claimMax":3,"perOption":8,"options":["Marginal Cost","Quantity","Demand / Average Revenue / Marginal Revenue","Average Cost"]} },
+    ],
+    figure: {
+          "candId": "economics-2025-OL-paper-p12-art",
+          "src": "/exam-figures/economics/markbank/economics-2025-OL-paper-p12-art.png",
+          "srcHash": "5b13350fb4578839fb00ab80124cf8a3",
+          "alt": "A cost and revenue diagram of a firm in perfect competition at long-run equilibrium. 'Price' on the vertical axis, 'Q' on the horizontal. A red U-shaped average cost curve labelled AC and a steeply rising red marginal cost curve labelled MC cross at a filled black dot labelled E, which sits exactly on a horizontal blue line running the width of the diagram and labelled 'D = AR = MR'. Beneath the diagram sits the four-row answer table for MC, Q, D = AR = MR and AC.",
+          "attribution": "SEC Leaving Certificate Economics 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "MC",
+                "Q",
+                "D = AR = MR",
+                "AC",
+                "E"
+          ]
+    },
+    labelKey: [{"letter":"MC","meaning":"Marginal Cost","askedInThisQuestion":true},{"letter":"Q","meaning":"Quantity","askedInThisQuestion":true},{"letter":"D = AR = MR","meaning":"Demand / Average Revenue / Marginal Revenue","askedInThisQuestion":true},{"letter":"AC","meaning":"Average Cost","askedInThisQuestion":true},{"letter":"E","meaning":"long-run equilibrium, where marginal cost cuts average cost at its minimum","askedInThisQuestion":false}],
   } as SecCard,
   {
     ...base, kind: "question",

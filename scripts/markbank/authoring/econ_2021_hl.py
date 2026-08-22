@@ -205,4 +205,27 @@ P.menu('Internal Economies of Scale which could arise for Boeing and Embraer',
        'Three economies, 6 marks each.',
        ref='2021 HL Q11(c)(ii)', drop=SCAFFOLD + ('Possible responses',))
 
+
+# ── A figure card ───────────────────────────────────────────────────────────
+# Not cardable until the figure pipeline reached Economics: the answer IS the
+# diagram. The four lines cannot be named from the scheme's word list without
+# seeing which curve each numeral points at.
+P.cards.append(card(
+    'econ-2021-hl-q11-b-i', 2021, 'higher', 'economics-2-0', 'labelling-an-oligopoly-diagram',
+    '2021 HL Q11(b)(i)',
+    'The diagram shows the long-run equilibrium of a firm in oligopoly at point E, producing Q1 '
+    'and selling at P1. Write out in full the label for each of the lines numbered 1 to 4.',
+    'fixed', 16,
+    [point('r-1', 'Marginal Cost', 4, 'Line 1 — the curve rising steeply to the top right.'),
+     point('r-2', 'Average (Total) Cost', 4, 'Line 2 — the U-shaped curve above point E.'),
+     point('r-3', 'Demand / Average Revenue', 4, 'Line 3 — the kinked line falling to the right.'),
+     point('r-4', 'Marginal Revenue', 4, 'Line 4 — the short line dropping steeply below E.')],
+    'Abbreviations are not accepted: the part says to write the labels out in full.',
+    tariff_kind='fixed',
+    figure_key='economics-2021-HL-paper-p16-i0',
+    label_key=[{'letter': '1', 'meaning': 'Marginal Cost', 'askedInThisQuestion': True},
+               {'letter': '2', 'meaning': 'Average (Total) Cost', 'askedInThisQuestion': True},
+               {'letter': '3', 'meaning': 'Demand / Average Revenue', 'askedInThisQuestion': True},
+               {'letter': '4', 'meaning': 'Marginal Revenue', 'askedInThisQuestion': True}]))
+
 P.emit()
