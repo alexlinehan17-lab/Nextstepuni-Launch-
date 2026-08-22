@@ -6841,4 +6841,18 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "rate proportional to concentration", marks: 3 },
     ],
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC022ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2024 Higher Level — © State Examinations Commission.",
+    id: "chem-2024-hl-q5-b-vi", topicId: "chem-1-2", conceptId: "shape-of-a-p-orbital",
+    section: "A", questionRef: "2024 HL Q5(b)(vi)",
+    stem: "In 1885 the Swiss mathematician Johann Balmer wrote a mathematical formula to describe the wavelengths of the visible line spectrum of atomic hydrogen, which is now named after him. However there was no explanation for the existence of these lines until 1913. green red violet blue wavelength In 1913 Bohr’s model of the hydrogen atom was shown to be consistent with the Balmer series. Bohr’s model was therefore supported by experimental evidence.",
+    questionText: "Draw the shape of a p orbital.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "correct dumb-bell shape (6) [award 3 marks for drawing that shows overlapping dumb-bell shapes]", marks: 6 },
+    ],
+  } as SecCard,
 ];

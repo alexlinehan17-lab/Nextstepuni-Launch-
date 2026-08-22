@@ -18,4 +18,8 @@ A.card(3, 'b', 'iii', topic='chem-u2', concept='what-a-rate-graph-shows',
                'ends on a bracketed number rather than punctuation. The question itself '
                'is complete: "What can be concluded from your graph?"')
 
+A.card(5, 'b', 'vi', topic='chem-1-2', concept='shape-of-a-p-orbital',
+       source='pdf', use=[0], marks=[6], first_sentence=True,
+       notes='Three of the six are given for a drawing showing the two lobes overlapping.')
+
 A.emit()

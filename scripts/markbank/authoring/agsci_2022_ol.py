@@ -2,10 +2,12 @@
 """Agricultural Science 2022 Ordinary Level — parts the deck had not carded.
 
 Not carded here, and why:
-  Q10(a), Q10(c), Q12(a)
+  Q10(a), Q12(a)
                  the scheme lays these out as Test/Description and
                  Factor/Description tables, and the markdown extraction
                  interleaves the columns — the marking points come out spliced.
+                 Q10(c) was in this list and is now carded: only its first line
+                 is spliced, and the precautions under it each stand alone.
   Q13(b)(i), Q16(a)(ii)
                  the whole answer is a shape drawn onto a photograph or graph.
   Q17(b)(i)/(iii)
@@ -52,5 +54,23 @@ A.card(2, 'a', 'ii', topic='agsci-4-3-2', concept='traits-of-a-sire',
        figure=BREEDS, context=BREEDS_CONTEXT,
        notes='Animal A is the bull in the top-left photograph. The first trait scores 3 '
              'and the second 1, so the order they are given in decides the total.')
+
+# ── Q7(b)(ii): how a leaf is adapted ──────────────────────────────────────
+# The scheme prints "3+1" against this part, the same shape as (b)(i)'s
+# "4+1+1" — the whole part is four marks, three for the first way and one for
+# the second, not four for each. spread carries the six adaptations the card
+# does not put on a line of its own, because any of them scores.
+A.card(7, 'b', 'ii', topic='agsci-2-1', concept='leaf-adaptations-for-photosynthesis',
+       use=[0, 1], marks=[3, 1], notation='3+1', spread=True, row_kind='anyN')
+
+# ── Q10(c): sampling the pit face ─────────────────────────────────────────
+# The scheme prints "2+1" — three marks, two for the first precaution and one
+# for the second. Its first line is dropped: the extraction splices the tail of
+# the question cue onto the front of it ("pit face to ensure accuracy when
+# sampling Samples taken at random..."), so putting it on a card would show a
+# student half a question as though it were an answer.
+A.card(10, 'c', topic='agsci-3-3-3', concept='taking-a-representative-silage-sample',
+       use=[1, 2], marks=[2, 1], notation='2+1', spread=True, row_kind='anyN',
+       omit=(0,))
 
 A.emit()

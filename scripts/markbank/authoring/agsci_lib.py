@@ -28,6 +28,7 @@ import re
 import sys
 
 from agsci_paper import Paper
+from paper import Paper as GenericPaper
 from agsci_scheme import Scheme
 from agsci_scheme_pdf import SchemePdf
 
@@ -58,6 +59,14 @@ class Author:
         self.year, self.level = year, level
         self.long_level = 'higher' if level == 'hl' else 'ordinary'
         self.paper = Paper(year, level)
+        # This deck predates the generic paper parser and keeps its own, which
+        # reads eight parts the generic one misses — 2021 OL Q18(d) and 2022 HL
+        # Q1(b)(iii)-(iv). The generic one reads thirty-two this one misses,
+        # among them the whole of 2022 OL Q7(b). Neither dominates, so the
+        # subject's own parser stays in front and the generic one is consulted
+        # only where it has nothing, which leaves every card already built on
+        # exactly the text it was built on.
+        self._fallback = GenericPaper('agricultural-science', year, level)
         self.scheme = Scheme(year, level)
         # The PDF-backed parser, for parts the flattened markdown mangles. See
         # agsci_scheme_pdf: neither parser dominates, so the choice is per part.
@@ -96,10 +105,16 @@ class Author:
              omit=(), source='md', card_id=None, from_run=None):
         ref = part_ref(self.year, self.level, q, letter, roman)
 
-        question = self.paper.text(q, letter, roman)
+        question = self.paper.text(q, letter, roman) or self._fallback.text(q, letter, roman)
         if not question:
             raise Refused(f'{ref}: the paper has no text for this part')
-        if self.paper.suspect(q, letter, roman) and not checked:
+        if not self.paper.text(q, letter, roman):
+            # The part is the fallback's; its own flag is the one that applies.
+            if self._fallback.suspect(q, letter, roman) and not checked:
+                raise Refused(
+                    f'{ref}: question text is flagged and unreviewed — {question!r}. '
+                    f'Open the page; if it is right, pass checked="<why>".')
+        elif self.paper.suspect(q, letter, roman) and not checked:
             raise Refused(
                 f'{ref}: question text is flagged and unreviewed — {question!r}. '
                 f'Open the page; if it is right, pass checked="<why>".')
@@ -221,7 +236,8 @@ class Author:
             'rows': rows,
         }
         if stem:
-            text = self.paper.stem(q, letter) or self.paper.stem(q)
+            text = (self.paper.stem(q, letter) or self.paper.stem(q)
+                    or self._fallback.stem(q, letter) or self._fallback.stem(q))
             if text:
                 card['stem'] = text
         if notes:

@@ -33454,6 +33454,98 @@
   "figureKey": "agricultural-science-2022-OL-paper-p04-art"
  },
  {
+  "id": "agsci-2022-ol-q7bii",
+  "topicId": "agsci-2-1",
+  "conceptId": "leaf-adaptations-for-photosynthesis",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2022 OL Q7(b)(ii)",
+  "questionText": "Describe two ways a leaf is adapted to carry out photosynthesis.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3+1"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Flat (large surface area for max absorption of light)",
+    "marks": 3,
+    "accepts": [
+     "waxy cuticle (prevent water loss)",
+     "palisade layer (tightly packed together with large number of chloroplasts for max light absorption)",
+     "spongy mesophyll (many air spaces for rapid diffusion of gases)",
+     "vascular tissue (xylem or phloem) ‐ (transport of water or removal of sugars for storage)",
+     "stomata (gas exchange)",
+     "guard cells (open and close stomata)"
+    ]
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "thin (for diffusion of gases)",
+    "marks": 1,
+    "accepts": [
+     "waxy cuticle (prevent water loss)",
+     "palisade layer (tightly packed together with large number of chloroplasts for max light absorption)",
+     "spongy mesophyll (many air spaces for rapid diffusion of gases)",
+     "vascular tissue (xylem or phloem) ‐ (transport of water or removal of sugars for storage)",
+     "stomata (gas exchange)",
+     "guard cells (open and close stomata)"
+    ]
+   }
+  ],
+  "stem": "Gas B Gas A Water"
+ },
+ {
+  "id": "agsci-2022-ol-q10c",
+  "topicId": "agsci-3-3-3",
+  "conceptId": "taking-a-representative-silage-sample",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2022 OL Q10(c)",
+  "questionText": "State two precautions the student should take when obtaining samples of silage from the pit face to ensure they take a representative sample.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2+1"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "samples not taken near the edges of the pit or from the open face of the pit",
+    "marks": 2,
+    "accepts": [
+     "use corer to take the sample or dig through about 20cm from pit face",
+     "mix all samples in bucket",
+     "put in zip lock bag and remove as much air as possible",
+     "sampling bales from same batch (min 5)",
+     "safety ‐ be aware of silage falling from overhead at the pit face or any one valid safety point"
+    ]
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "samples should not be taken if spoiled",
+    "marks": 1,
+    "accepts": [
+     "use corer to take the sample or dig through about 20cm from pit face",
+     "mix all samples in bucket",
+     "put in zip lock bag and remove as much air as possible",
+     "sampling bales from same batch (min 5)",
+     "safety ‐ be aware of silage falling from overhead at the pit face or any one valid safety point"
+    ]
+   }
+  ],
+  "stem": "Beef, sheep and dairy farmers require high quality silage for winter feed."
+ },
+ {
   "id": "agsci-2022-ol-q4bi",
   "topicId": "agsci-4-1",
   "conceptId": "oestrus-cycle-length",

@@ -29423,6 +29423,31 @@
   "stem": "The reaction of sodium thiosulfate with hydrochloric acid is described by the following balanced chemical equation: Na2S2O3 + 2HCl  2NaCl + SO2 + S + H2O To investigate the effect of concentration on the rate of this reaction, the experiment was carried out for a number of different concentrations of sodium thiosulfate solution. For each run, a stopwatch was started when 100 cm3 of Na2S2O3 were mixed with 10 cm3 of 3 M HCl. For each run, the reaction was carried out at room temperature and the time taken for the same mass of sulfur to precipitate was measured. The inverse of that time was taken as a measure of the initial rate of reaction. The results are shown in the table below. Concentration of Na2S2O3 (M) 0.10 0.09 0.08 0.07 0.06 0.05 0.04 0.03 Time (s) 50 56 63 72 84 100 125 168 Rate = 1 Time (s–1) 0.020 0.018"
  },
  {
+  "id": "chem-2024-hl-q5-b-vi",
+  "topicId": "chem-1-2",
+  "conceptId": "shape-of-a-p-orbital",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2024 HL Q5(b)(vi)",
+  "questionText": "Draw the shape of a p orbital.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "correct dumb-bell shape (6) [award 3 marks for drawing that shows overlapping dumb-bell shapes]",
+    "marks": 6
+   }
+  ],
+  "stem": "In 1885 the Swiss mathematician Johann Balmer wrote a mathematical formula to describe the wavelengths of the visible line spectrum of atomic hydrogen, which is now named after him. However there was no explanation for the existence of these lines until 1913. green red violet blue wavelength In 1913 Bohr’s model of the hydrogen atom was shown to be consistent with the Balmer series. Bohr’s model was therefore supported by experimental evidence.",
+  "notes": "Three of the six are given for a drawing showing the two lobes overlapping."
+ },
+ {
   "id": "chem-2024-ol-q5-b-i",
   "topicId": "chem-4-3",
   "conceptId": "naming-a-greenhouse-gas",
