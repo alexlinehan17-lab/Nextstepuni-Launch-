@@ -32,4 +32,13 @@ A.card(1, 'd', topic='agsci-3-3-2', concept='advantages-of-strip-grazing',
        use=[[0, 1, 2, 3, 4]], marks=[2], card_id='agsci-2024-ol-q1d',
        figure=GRAZING, context=GRAZING_CONTEXT)
 
+A.card(13, 'b', 'i', topic='agsci-1-3', concept='percentage-frequency-from-quadrats',
+       source='pdf', from_run=((13, 'b', 'i'), 1, slice(0, None)), marks=[6],
+       notes='The scheme allows all six for the answer alone and three where the working '
+             'is shown but the answer is wrong.')
+
+A.card(2, 'b', 'iii', topic='agsci-1-5', concept='why-a-head-gate-matters',
+       source='pdf', use=[[1, 2, 3]], marks=[2], row_kind='anyN',
+       notation='2 for any one')
+
 A.emit()

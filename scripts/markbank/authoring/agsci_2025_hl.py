@@ -45,4 +45,11 @@ A.card(1, 'c', topic='agsci-4-2', concept='what-polled-means',
        notes='Part (b) establishes that one of the two breeds is polled; this part asks '
              'what the term means.')
 
+A.card(14, 'a', 'i', topic='agsci-3-1', concept='identifying-a-compacted-soil',
+       source='pdf', use=[1, 2], marks=[6, 4], notation='6 + 4')
+
+A.card(14, 'a', 'ii', topic='agsci-3-1', concept='available-water-in-a-soil',
+       source='pdf', from_run=((14, 'a', 'ii'), 1, slice(0, None)), marks=[6],
+       notation='3 for the method and 3 for the answer, or 6 for a correct answer alone')
+
 A.emit()
