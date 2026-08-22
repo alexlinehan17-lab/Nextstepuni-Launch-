@@ -17,9 +17,33 @@ the deck today. That is asserted by `test/markBankAuthoringToolkit.test.ts`.
 | `scout.py` | `python3 scout.py <year> <higher\|ordinary>` — prints Section C bounds and the question map |
 | `rebaseline.py` | Verifies no card ID vanished, then updates the preservation baseline. Refuses on loss |
 | `provcheck.mjs` | `node provcheck.mjs /tmp/out.json` — runs the build's provenance gate on a script's output *before* merging |
+| `econ_refcheck.py` | Checks every Economics **citation** against the question paper. The provenance gate checks what a card claims; this checks which question it says it came from |
+| `econ_refs.py` | The nineteen citations the paper corrected, and the cards the checker cannot place, each read by hand |
+| `econ_parts.py` | Segments a scheme into parts, reads each tariff, splits the responses. Output is candidates, never cards |
+| `econ_auto.py` | `Paper(year, level, section).menu(...)` — one card per call, against `econ_parts` |
+| `econ_all.py` | Runs every `econ_<year>_<level>[_secA].py` and writes `authored/economics.json`. Refuses on a duplicate id |
 | `he_<year>_<level>_secC.py` | One Section C paper each |
 | `he_<year>_<level>.py` | The earlier Section A/B papers |
 | `RESUME.md` | Current state and the next action |
+
+## Two gates, two documents
+
+A card makes two kinds of claim, and each is checked against a different
+document.
+
+- **What it says the examiner accepts** is checked against the marking scheme,
+  by `provcheck.mjs`. Every marking point must appear in its own scheme,
+  contiguously, after normalisation.
+- **Which question it came from** is checked against the QUESTION PAPER, by
+  `econ_refcheck.py`. It has to be the other document: the scheme is a table
+  flattened into one long line, and the question number a part sits under is
+  exactly what that flattening loses. A question number printed at the foot of
+  one page comes back as more parts of the question before it — which is how
+  nineteen shipped cards came to cite a question they were not from while every
+  one of their claims still traced, because the claims came from the right block
+  of text.
+
+Papers live in `examiner-reports/economics/papers/<year>-<hl|ol>-paper.pdf`.
 
 ## Why the guards exist
 

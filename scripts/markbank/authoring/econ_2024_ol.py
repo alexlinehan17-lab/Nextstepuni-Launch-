@@ -13,7 +13,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from econ_auto import Paper  # noqa: E402
-from econ_lib import anyN, block, bullets, card, emit, load, point, tidy  # noqa: E402
+from econ_lib import anyN, as_option, block, bullets, card, emit, load, point, tidy  # noqa: E402
 
 YEAR, LEVEL = 2024, 'ordinary'
 T = tidy(load(YEAR, LEVEL))
@@ -89,9 +89,16 @@ cards = [
          'Currently there is a shortage of skilled employees in different sectors of the Irish '
          'economy. Explain the economic term scarcity in relation to labour (employees).',
          '1 @ 8', 8,
+         # The scheme prints the two wordings as consecutive sentences rather
+         # than as a list, and they open with the same eleven words, so neither
+         # a bullet split nor an anchor split can separate them — each is cut
+         # out by naming where it starts and where the next one does.
          [anyN('r-1', 'Scarcity applied to labour — either wording', 8, 1, 8,
-               bullets('• ' + block(BODY, 'When applied to labour, scarcity refers to the situation where the number',
-                                    '(ii) The pharmaceutical industry has experienced')),
+               [as_option(block(BODY, a, b)) for a, b in (
+                   ('When applied to labour, scarcity refers to the situation where the number',
+                    'When applied to labour, scarcity refers to the situation where there are firms'),
+                   ('When applied to labour, scarcity refers to the situation where there are firms',
+                    '(ii) The pharmaceutical industry has experienced'))],
                'The scheme gives two wordings of the same idea: demand for workers exceeds the '
                'supply of them. Either earns the 8.')],
          '', tariff_kind='bestNofParts'),

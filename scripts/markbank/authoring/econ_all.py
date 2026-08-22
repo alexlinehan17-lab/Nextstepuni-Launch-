@@ -26,7 +26,7 @@ OUT = os.path.join(ROOT, 'scripts/markbank/authored/economics.json')
 
 scripts = sorted(
     f for f in os.listdir(DIR)
-    if re.fullmatch(r'econ_\d{4}_(hl|ol)\.py', f)
+    if re.fullmatch(r'econ_\d{4}_(hl|ol)(_sec[ab])?\.py', f)
 )
 
 cards, seen, failed = [], {}, []
@@ -52,7 +52,7 @@ if failed:
         print('REFUSING', f, file=sys.stderr)
     raise SystemExit('economics.json NOT written')
 
-print(f'{"TOTAL":<22} {len(cards):>3} cards from {len(scripts)} paper(s)', file=sys.stderr)
+print(f'{"TOTAL":<22} {len(cards):>3} cards from {len(scripts)} script(s)', file=sys.stderr)
 if '--write' in sys.argv:
     with open(OUT, 'w') as fh:
         json.dump(cards, fh, ensure_ascii=False, indent=1)

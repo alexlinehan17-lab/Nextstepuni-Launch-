@@ -13,6 +13,7 @@ historical scheme corruptions in this repo entered through hand transcription.
 """
 import re
 
+from econ_refs import CORRECTIONS
 from markbank_authoring import (  # noqa: F401  (re-exported for the econ_*.py scripts)
     VALID_KINDS, anyN, block, heads, make_audit, make_card, make_emit, make_load,
     make_semis, point, tidy,
@@ -46,10 +47,19 @@ FOOTER = re.compile(r'\s*\d+\s*\|\s*P\s*a\s*g\s*e\s*')
 # never match — and it would put "⟨1 @ 4⟩" in front of a student besides.
 MARKS_CELL = re.compile(r'\s*⟨[^⟩]*⟩\s*')
 
+# The same tariff spelled out in words. The SEC prints it beside the QUESTION
+# rather than in the marks column, so flattening the page drops it into the
+# middle of whatever response happens to be printed alongside — four shipped
+# options read "...this may encourage 2nd @ 4 people to move". Stripped
+# everywhere rather than only at the start of a response, which is all
+# bullets() used to do. comparableScheme() strips it from the scheme too, as an
+# added form, so a claim without it still traces.
+ORDINAL_TARIFF = re.compile(r'\s*\b\d+\s*(?:st|nd|rd|th)\s*[@x]\s*\d+\b\s*', re.I)
+
 
 def defurnish(s):
     """One slice with the page furniture the scheme's own comparison ignores."""
-    return tidy(MARKS_CELL.sub(' ', FOOTER.sub(' ', s)))
+    return tidy(ORDINAL_TARIFF.sub(' ', MARKS_CELL.sub(' ', FOOTER.sub(' ', s))))
 
 
 # Where the examiner stops answering one part and starts the next. heads() runs
@@ -111,6 +121,17 @@ def load(year, level):
     cut = raw.find(APPENDED)
     return raw if cut < 0 else raw[:cut]
 semis = make_semis(JUNK)
-card = make_card('economics', default_section='B')
+_card = make_card('economics', default_section='B')
+
+
+def card(cid, *a, **kw):
+    """An Economics card, with its citation corrected where the id misnames it.
+
+    See econ_refs.py: nineteen ids count the wrong question, and the citation
+    rather than the id is what gets fixed.
+    """
+    c = _card(cid, *a, **kw)
+    c['questionRef'] = CORRECTIONS.get(cid, c['questionRef'])
+    return c
 audit = make_audit(MAX_OPTIONS)
 emit = make_emit(audit)

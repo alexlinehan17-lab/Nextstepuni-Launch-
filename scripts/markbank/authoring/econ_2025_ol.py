@@ -42,9 +42,9 @@ P.menu('Governments of LDCs who receive this aid', 'econ-2025-ol-q14-c',
 P.menu('one economic benefit for each of the following of this reduction in overall',
        'econ-2025-ol-q15-a-i', 'economics-3-1', 'benefits-of-lower-national-debt',
        'Outline one economic benefit of a reduction in overall national debt for the Irish '
-       'government, and one for the Irish taxpayer.',
+       'government, and one for citizens in Ireland.',
        'A benefit of lower national debt — any two',
-       'The paper pays 8 for the government benefit and 6 for the taxpayer one; the scheme lists '
+       'The paper pays 8 for the government benefit and 6 for the citizens one; the scheme lists '
        'the government benefits first.',
        drop=SCAFFOLD + ('Irish government and 2', 'Irish Government'))
 

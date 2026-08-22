@@ -60,6 +60,20 @@ const LEADING_LABEL = /^\s*\(\s*(?:[ivx]{1,4}|[a-z]|\d{1,2})\s*\)\s+(?=\S)/i;
 const MARKS_CELL = /⟨[^⟩]*⟩/g;
 
 /**
+ * The descending tariff spelled out in words -- "1st @ 8", "2nd x 6" -- which
+ * the SEC prints beside the question rather than in the marks column, and which
+ * lands in the MIDDLE of a marking point when the extractor flattens the page:
+ * "if there is affordable housing available in an area, this may encourage
+ * 2nd @ 4 people to move".
+ *
+ * Stripped as an ADDED scheme form rather than in normalise(), for the reason
+ * every other fold here is: a fold applied to both sides is symmetric, and a
+ * symmetric fold once cost a card that was genuinely in its scheme. An added
+ * form can only ever let more through.
+ */
+const ORDINAL_TARIFF = /\b\d+\s*(?:st|nd|rd|th)\s*[@x]\s*\d+\b/gi;
+
+/**
  * The extractor's own page markers.
  *
  * A marking point does not stop at a page break — the SEC prints "Less Risk /
@@ -214,5 +228,6 @@ export const comparableScheme = (raw) => {
     normalise(lines.map((l) => l.replace(LEADING_LABEL, '')).join(' ')),
     whole.replace(DEGREE_O, '$1c'),
     normalise(foldOriya(joined)),
+    normalise(joined.replace(ORDINAL_TARIFF, ' ')),
   ].join('|');
 };

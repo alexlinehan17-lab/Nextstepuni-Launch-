@@ -165,3 +165,66 @@ teach a student to under-answer. Q9(a) and Q9(b)(i) carry that experiment.
 `he-2025-ol-sa-q8/q10/q11/q12` (a row offering Nx2 on a 6-mark question) were
 real tariff errors in older authoring and dropped on every build. Corrected
 against the printed tariffs; Home Economics now drops nothing.
+
+---
+
+# Economics — state at 2026-08-22
+
+**223 cards** (142 higher / 81 ordinary), 1,988 marks, all 21 topics, all ten
+papers 2021–2025 at both levels, Sections A and B. 1,129 claims, 0 untraceable.
+Bank total 4,909.
+
+## What Section A turned out to be
+
+Section A was passed over on the first pass as "keyed to infographics, needs the
+figure pipeline". That is true of a minority of its parts. Most of it is a
+tariff over a list of named responses, exactly like Section B — "Outline one
+advantage of having a surplus on the balance of payments" is answered by four
+named responses and needs no chart at all. 89 of the 223 cards are Section A.
+
+What is genuinely not cardable, and is left alone deliberately:
+
+- a part answered by reading the figure printed with it (calculate the current
+  account balance, comment on the trend in the chart). The figure pipeline could
+  carry these, but the card would then test chart-reading rather than economics;
+- a part whose marks are for drawing a shift on a supplied diagram;
+- table completion, tick-boxes, and elasticity calculations;
+- a part whose responses are keyed to the student's own earlier choice.
+
+Ordinary Section A is thinner than Higher on purpose: it is mostly the four
+kinds above. 2021 Ordinary yields one card; 2023 Ordinary yields eight.
+
+## The citation gate
+
+`econ_refcheck.py` checks each card's citation against the QUESTION PAPER. It
+found nineteen shipped Section B cards citing a question they were not from —
+see `econ_refs.py` for the list and why the ids are left alone. Run it after
+every authoring change; it exits non-zero on a wrong or newly unplaceable
+citation.
+
+Its verdicts were validated against those nineteen hand-confirmed references:
+seventeen reproduced exactly, and the two it cannot reproduce are cards it
+cannot place at all.
+
+## Extractor fixes made here, each of which had cost cards
+
+- Section B began at the first "Question 1x" heading that repeated the response
+  table caption. On 2021 Higher that heading is question 12, so question 11 was
+  in neither section's output and could not be carded. Four cards recovered.
+- A part's responses ran past its own end into the next question's table header
+  — "…they can be fined. Question 12 Possible responses Max Mark". Every
+  response is now stopped at the next part.
+- On a bulleted Ordinary scheme, cutting at bold anchors lost responses, because
+  a bold run under fifteen characters is not taken as an anchor. Whichever of
+  the two splits finds more responses now wins. 20 cards gained options.
+- The descending tariff spelled out in words — "1st @ 8", "2nd x 6" — was
+  landing in the middle of a marking point. Four shipped options read "…this may
+  encourage 2nd @ 4 people to move". Stripped, with a matching added form in
+  `comparableScheme()` so the claim still traces.
+
+## Next
+
+- Section A parts that need a figure are the remaining gap. They need alt text
+  written by something that has looked at the image, which is the whole cost of
+  the figure pipeline.
+- 2026 papers are not published yet.

@@ -163,4 +163,46 @@ P.cards.append(card(
            'response outweighs the price cut.')],
     '', tariff_kind='fixed'))
 
+# ── Question 11, recovered ──────────────────────────────────────────────────
+# Not an oversight in the authoring: the extractor could not see this question.
+# Section B used to begin at the first "Question 1x" heading that repeated the
+# response-table caption, and on this paper alone that heading is question 12 —
+# so question 11's five pages were in neither section's output and could not be
+# carded. econ_parts now begins Section B at the first such heading of any kind.
+P.menu('Would you consider this market to be competitive', 'econ-2021-hl-q11-a-ii',
+       'economics-2-0', 'reading-a-concentration-ratio',
+       'Explain why the global aircraft market in 2018 would be considered highly concentrated.',
+       'A reason it is highly concentrated — any one',
+       'One reason, 5 marks. The part pays 8: 3 for naming the market highly concentrated and 5 '
+       'for the explanation, and it is the explanation that is carded.',
+       ref='2021 HL Q11(a)(ii)', claim=1, per=5,
+       stem='Boeing and Airbus each held 46% of the global aircraft market in 2018, Embraer 5%, '
+            'Others 2% and Bombardier 1%.',
+       drop=SCAFFOLD + ('Highly concentrated because',))
+
+P.menu('Would you advise the above firm to engage in price competition', 'econ-2021-hl-q11-b-ii',
+       'economics-2-0', 'price-competition-in-oligopoly',
+       'A firm in oligopoly is at long-run equilibrium. Would you advise it to engage in price '
+       'competition? Give two reasons for your answer.',
+       'A reason not to compete on price — any two',
+       'Two reasons, 4 marks each. Every response the scheme lists argues against price '
+       'competition, so the answer the examiner is marking is "no".',
+       ref='2021 HL Q11(b)(ii)', drop=SCAFFOLD)
+
+P.menu('small firms such as Embraer and Bombardier', 'econ-2021-hl-q11-b-iii',
+       'economics-2-0', 'small-firms-in-an-oligopoly',
+       'Outline two reasons why small firms such as Embraer and Bombardier may survive in a '
+       'market dominated by two large firms.',
+       'A reason a small firm survives — any two',
+       'Two reasons, 4 marks each.',
+       ref='2021 HL Q11(b)(iii)', drop=SCAFFOLD)
+
+P.menu('Internal Economies of Scale which could arise for Boeing and Embraer',
+       'econ-2021-hl-q11-c-ii', 'economics-1-5', 'internal-economies-of-scale',
+       'Outline possible internal economies of scale which could arise for Boeing and Embraer if '
+       'a merger between them were to occur.',
+       'An internal economy of scale — any three',
+       'Three economies, 6 marks each.',
+       ref='2021 HL Q11(c)(ii)', drop=SCAFFOLD + ('Possible responses',))
+
 P.emit()
