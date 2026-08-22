@@ -22,6 +22,7 @@
 import { readFileSync } from 'node:fs';
 import { comparableScheme, claimMatches } from '../schemeText.mjs';
 const cards = JSON.parse(readFileSync(process.argv[2], 'utf8'));
+const fallbackSubject = (process.argv[2].split('/').pop() ?? '').replace(/\.json$/, '');
 const cache = new Map();
 let bad = 0, checked = 0;
 for (const c of cards) {
@@ -30,12 +31,23 @@ for (const c of cards) {
   // every claim of the second one as untraceable the moment there is another —
   // against a scheme for a different subject entirely.
   const stem = `${c.year}-${c.level === 'higher' ? 'hl' : 'ol'}`;
-  const f = `examiner-reports/${c.subjectId}/schemes/${stem}.md`;
+  // Biology's authored file carries no subjectId at all, so this read for
+  // 'examiner-reports/undefined/...' and threw — which is why that subject has
+  // never been pre-checked. Fall back to the file name, the way build-deck does.
+  const f = `examiner-reports/${c.subjectId ?? fallbackSubject}/schemes/${stem}.md`;
   if (!cache.has(f)) cache.set(f, comparableScheme(readFileSync(f, 'utf8')));
   const scheme = cache.get(f);
   for (const r of c.rows) {
-    const claims = [...(r.group?.options ?? [])];
-    if (r.kind !== 'anyN') claims.push(r.verbatim);
+    // EXACTLY what build-deck.mjs checks, including the label convention: a row
+    // verbatim written "<label> — <marking point>" is checked on the marking
+    // point, because the label names which alternative the row answers and is
+    // often the paper's word rather than the scheme's. This file drifted from the
+    // build and reported 114 Agricultural Science claims as untraceable that the
+    // build accepts and ships. A pre-check stricter than the gate it stands in
+    // for is worse than no pre-check: it sends you to fix cards that are fine.
+    const claims = r.kind === 'anyN' && r.group
+      ? [...r.group.options]
+      : [String(r.verbatim).split(/\s[—-]\s/).pop()];
     for (const claim of claims) {
       checked++;
       // claimMatches, not a private copy of it: the build compares around
