@@ -71,4 +71,34 @@ A.card(5, None, 'iv', topic='phys-u2', concept='average-resistance-of-a-heating-
 A.card(12, None, 'v', topic='phys-3-2', concept='why-parallel-capacitors-add',
        source='pdf', use=[1], marks=[3], first_sentence=True)
 
+
+# ── Drawing questions whose scheme says what the drawing must show ─────────
+# A question that asks for a diagram is not automatically uncardable. Where the
+# scheme answers it with a marking convention — "apparatus, method, observation"
+# — there is nothing to put on a card. Where it says WHAT the drawing must
+# contain, that is the answer, and the card asks a student to say what they would
+# draw and what earns each mark.
+A.card(4, None, 'iii', topic='phys-u2', concept='graph-for-resistance-against-temperature',
+       source='pdf', use=[1, 2, 3], marks=[3, 3, 3])
+
+A.card(5, None, 'iii', topic='phys-u2', concept='graph-to-verify-joules-law',
+       source='pdf', use=[1, 2, 3, 4], marks=[3, 3, 3, 3],
+       notes='Joule\'s law is verified against the square of the current, so the first '
+             'mark is for working those values out before plotting anything.')
+
+A.card(9, None, 'v', topic='phys-2-1', concept='parts-of-a-heat-pump',
+       source='pdf', use=[1, 2, 3], marks=[3, 3, 3])
+
+A.card(13, 'b', 'ii', topic='phys-3-3', concept='circuit-of-a-bridge-rectifier',
+       source='pdf', use=[1, 2], marks=[4, 3], first_sentence=True)
+
+A.card(13, 'b', 'iii', topic='phys-3-3', concept='input-and-output-of-a-bridge-rectifier',
+       source='pdf', use=[1, 2, 3], marks=[3, 2, 2], checked=MARK)
+
+A.card(13, 'b', 'v', topic='phys-3-3', concept='circuit-of-a-voltage-amplifier',
+       source='pdf', use=[1, 2, 3, 4, 5], marks=[3, 3, 3, 3, 2], checked=MARK)
+
+A.card(14, 'b', 'iv', topic='phys-2-3', concept='refraction-of-sound-from-water-into-air',
+       source='pdf', use=[1, 2], marks=[3, 2], first_sentence=True)
+
 A.emit()

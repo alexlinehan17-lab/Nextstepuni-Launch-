@@ -26663,6 +26663,265 @@
   "stem": "The Wimshurst machine is an electrostatic generator for generating high voltages. It uses the principles of charging by induction and point discharge to store energy in two large capacitors. Wimshurst machines provided a source of high voltage for early X‐ray tubes. (ix) What happens to the energy of the electrons when they hit the anode? (17) Leaving Certificate, 2021 Physics – Higher Level 11"
  },
  {
+  "id": "phys-2021-hl-q4-iii",
+  "topicId": "phys-u2",
+  "conceptId": "graph-for-resistance-against-temperature",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2021 HL Q4(iii)",
+  "questionText": "Draw a suitable graph to show the relationship between R and .",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "labelled axes",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "correct points plotted",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "line of best fit",
+    "marks": 3
+   }
+  ],
+  "stem": "A student measured the resistance R of a wire of length 30 cm at different values of temperature . The following data were recorded.  (°C) 0 20 40 60 80 100 R (Ω) 5.35 5.60 5.85 6.04 6.28 6.51"
+ },
+ {
+  "id": "phys-2021-hl-q5-iii",
+  "topicId": "phys-u2",
+  "conceptId": "graph-to-verify-joules-law",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2021 HL Q5(iii)",
+  "questionText": "Draw a suitable graph to verify Joule’s law.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "values for I2",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "labelled axes",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "correct points plotted",
+    "marks": 3
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "line of best fit",
+    "marks": 3
+   }
+  ],
+  "stem": "In an experiment to verify Joule’s law a constant current I was passed through a heating coil immersed in water. The current was allowed to flow for four minutes and the rise in temperature  was determined. This procedure was repeated for a number of different currents. The mass of the water was kept constant at 105 g. The following data were recorded. I (A) 1.0 1.5 2.0 2.5 3.0 3.5  (°C) 2.0 4.6 8.2 12.6 18.3 25.0",
+  "notes": "Joule's law is verified against the square of the current, so the first mark is for working those values out before plotting anything."
+ },
+ {
+  "id": "phys-2021-hl-q9-v",
+  "topicId": "phys-2-1",
+  "conceptId": "parts-of-a-heat-pump",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2021 HL Q9(v)",
+  "questionText": "Draw a labelled diagram of a heat pump.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "compressor indicated",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "(expansion) valve indicated",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "correct arrangement of liquid/vapour indicated",
+    "marks": 3
+   }
+  ],
+  "stem": "Ice is used as a coolant due to the high specific heat capacities of ice and water and the high specific latent heat of fusion of ice. It is the principal coolant used in ice packs for insulated picnic boxes, such as the one shown. Freezers and refrigerators operate by use of a heat pump."
+ },
+ {
+  "id": "phys-2021-hl-q13b-ii",
+  "topicId": "phys-3-3",
+  "conceptId": "circuit-of-a-bridge-rectifier",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2021 HL Q13(b)(ii)",
+  "questionText": "Diodes can be used to make a bridge rectifier.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "four diodes",
+    "marks": 4
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "correct arrangement shown",
+    "marks": 3
+   }
+  ],
+  "stem": "December 16, 1947 marked the start of humankind’s information age when physicists John Bardeen and Walter Brattain connected upper electrodes to specially treated germanium that sat on a third electrode. When a small current flowed through one of the electrodes, a much larger current flowed through the other two. The transistor was born. A transistor is a semiconductor device that can be used to amplify voltage or switch electronic signals. Adapted from ‘The Physics Book: From the Big Bang to Quantum Resurrection’ (Clifford A. Pickover) Sterling New York 2011"
+ },
+ {
+  "id": "phys-2021-hl-q13b-iii",
+  "topicId": "phys-3-3",
+  "conceptId": "input-and-output-of-a-bridge-rectifier",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2021 HL Q13(b)(iii)",
+  "questionText": "Sketch the input and output voltage patterns for a bridge rectifier. (7)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "axes labelled (V and t)",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "a.c. input",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "d.c. output",
+    "marks": 2
+   }
+  ],
+  "stem": "December 16, 1947 marked the start of humankind’s information age when physicists John Bardeen and Walter Brattain connected upper electrodes to specially treated germanium that sat on a third electrode. When a small current flowed through one of the electrodes, a much larger current flowed through the other two. The transistor was born. A transistor is a semiconductor device that can be used to amplify voltage or switch electronic signals. Adapted from ‘The Physics Book: From the Big Bang to Quantum Resurrection’ (Clifford A. Pickover) Sterling New York 2011"
+ },
+ {
+  "id": "phys-2021-hl-q13b-v",
+  "topicId": "phys-3-3",
+  "conceptId": "circuit-of-a-voltage-amplifier",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2021 HL Q13(b)(v)",
+  "questionText": "Draw a circuit diagram of a voltage amplifier. Indicate clearly the input and output voltages. (14)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "symbol for a transistor",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "source of voltage",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "input voltage between base and emitter",
+    "marks": 3
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "output voltage across load resistor",
+    "marks": 3
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "bias resistor shown in correct position",
+    "marks": 2
+   }
+  ],
+  "stem": "December 16, 1947 marked the start of humankind’s information age when physicists John Bardeen and Walter Brattain connected upper electrodes to specially treated germanium that sat on a third electrode. When a small current flowed through one of the electrodes, a much larger current flowed through the other two. The transistor was born. A transistor is a semiconductor device that can be used to amplify voltage or switch electronic signals. Adapted from ‘The Physics Book: From the Big Bang to Quantum Resurrection’ (Clifford A. Pickover) Sterling New York 2011"
+ },
+ {
+  "id": "phys-2021-hl-q14b-iv",
+  "topicId": "phys-2-3",
+  "conceptId": "refraction-of-sound-from-water-into-air",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2021 HL Q14(b)(iv)",
+  "questionText": "Draw a ray diagram to show the refraction of a sound wave as it travels from water into air.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "wave changing direction as it travels from water to air",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "towards the normal",
+    "marks": 2
+   }
+  ],
+  "stem": "Sound travels faster in water than in air. When a sound wave travels from water into air, it undergoes refraction."
+ },
+ {
   "id": "phys-2022-hl-q1-vii",
   "topicId": "phys-u2",
   "conceptId": "net-vertical-force-on-a-metre-stick",
