@@ -3657,6 +3657,47 @@
   "notes": ""
  },
  {
+  "id": "econ-2022-hl-q15-b-ii",
+  "topicId": "economics-4-2",
+  "conceptId": "brexit-and-irish-uk-trade",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q15(b)(ii)",
+  "questionText": "Outline other impacts Brexit has had on the trade relationship between the UK and Ireland.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 4",
+   "answer": 1,
+   "ofParts": 2,
+   "perPart": 4
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An impact — any one",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One impact, 4 for the point and 3 for developing it.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Possible negative effect on Irish exports. Approximately 15 per cent of Irish goods and services exports are destined to the UK. In certain sectors, the UK is an especially important market, such as the agri-food sector where around 40 per cent of exports are destined for the UK. Supplier industries to the export sectors will also be affected. In addition, two-thirds of Irish exporters make use of the UK land bridge to access continental markets, and this could pose problems for Irish exporters who wish to avoid UK ferry ports. Effects on agricultural sector / agri-food sectors / marine industries. Brexit will reduce the preferential access of EU producers to the UK market and thereby reduce the cost advantages that Irish agricultural products have in the UK market relative to similar products, e.g. dairy products from New Zealand or beef from Australia. Impacts in the agri-food sector are driven by a combination of tariffs, customs costs, and the risk of regulatory divergence. The Irish Fishing industry may also fare badly from Brexit due to restrictions. Labour market effects. The effects on the labour market will be determined by the demand for Irish exports in the UK market. Some export sectors are likely to face reduced demand from the UK and thus experience falls in employment levels.",
+      "However, if foreign companies re- locate from the UK to Ireland for access to the EU market this could give rise to employment in some sectors. Imports from the UK. The cost of imports from the UK may increase due to tariffs, customs costs, administrative barriers etc. Cost of raw materials may also rise leading to a rise in prices for domestically produced goods. There may also be a disruption to supply chains as Irish firms seek alternatives to UK suppliers leading to rising prices or potential shortages. Irish consumers may also switch their online shopping from UK sites to EU Relocation of U.K. based firms. Some firms exiting the U.K. due to the difficulties Brexit has presented to their business may decide to set up in Ireland to benefit from EU access. Instability in Northern Ireland. There have been some more fractious and tense moments in Northern Ireland in recent years as the question of how it should operate within the island of Ireland, the U.K. and the E.U. has been a difficult one to navigate."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "econ-2022-hl-sa-q2-b",
   "topicId": "economics-1-1",
   "conceptId": "what-moves-personal-consumption",

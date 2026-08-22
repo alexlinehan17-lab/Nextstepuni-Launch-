@@ -300,4 +300,11 @@ P.menu('one step businesses in Ireland can take', 'econ-2022-hl-q16-c-iii',
        ref='2022 HL Q16(c)(iii)', claim=1, per=2,
        drop=SCAFFOLD + ('Deduct 1m', 'The Research Process', 'Data: 5 quantitative'))
 
+P.menu('Possible negative effect on Irish exports', 'econ-2022-hl-q15-b-ii',
+       'economics-4-2', 'brexit-and-irish-uk-trade',
+       'Outline other impacts Brexit has had on the trade relationship between the UK and '
+       'Ireland.',
+       'An impact — any one', 'One impact, 4 for the point and 3 for developing it.',
+       ref='2022 HL Q15(b)(ii)', claim=1, per=4, drop=SCAFFOLD)
+
 P.emit()
