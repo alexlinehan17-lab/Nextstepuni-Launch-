@@ -27315,30 +27315,6 @@
   "stem": "The diagram below shows how a ray of light travels through a rectangular glass block."
  },
  {
-  "id": "phys-2023-ol-q3-i",
-  "topicId": "phys-u2",
-  "conceptId": "the-instrument-that-measures-temperature",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "physics",
-  "section": "A",
-  "questionRef": "2023 OL Q3(i)",
-  "questionText": "Name the piece of equipment labelled A.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 3,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "thermometer",
-    "marks": 3
-   }
-  ],
-  "stem": "A student carried out an experiment to measure the specific latent heat of fusion of ice. He added ice at 0 °C to water in a copper calorimeter. The following results were recorded. Mass of empty copper calorimeter = 0.083 kg Mass of calorimeter + water = 0.181 kg Mass of ice = 0.008 kg Initial temperature of calorimeter + water = 23 °C Final temperature of calorimeter + water + melted ice = 16 °C Below is a diagram of the apparatus used in this experiment. cloth with crushed ice calorimeter water with crushed ice (ix) Calculate the value for l, the specific latent heat of fusion of ice. Note: E = micel + micecwaterΔθice (9) specific heat capacity of copper = 390 J kg–1K–1; specific heat capacity of water = 4180 J kg–1 K–1 Leaving Certificate, 2023 Physics – Ordinary Level 3"
- },
- {
   "id": "phys-2023-ol-q7-v",
   "topicId": "phys-1-4",
   "conceptId": "velocity-from-energy-or-suvat",

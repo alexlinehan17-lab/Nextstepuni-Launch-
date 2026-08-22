@@ -51,11 +51,9 @@ A.card(8, None, 'iv', topic='phys-2-3', concept='angle-of-refraction-from-snells
                   ((8, None, 'iv'), 0, slice(20, 23))],
        marks=[3, 3, 3])
 
-A.card(3, None, 'i', topic='phys-u2', concept='the-instrument-that-measures-temperature',
-       source='pdf', from_run=((3, None, 'i'), 0, slice(0, 1)), marks=[3],
-       checked='The paper prints this part as a label on its own diagram, so the scheme '
-               'reprints neither a verb nor a sentence. What is being asked is which '
-               'instrument the labelled item is.')
+# 2023 OL Q3(i) is not carded. It asks for the equipment labelled A on a diagram
+# the card cannot show, and the build refuses a card that names a lettered part
+# without a labelled figure behind it.
 
 A.card(7, None, 'v', topic='phys-1-4', concept='velocity-from-energy-or-suvat',
        source='pdf',
