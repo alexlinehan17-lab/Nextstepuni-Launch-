@@ -50,4 +50,11 @@ A.card(14, 'c', 'iii', topic='bio-1-3', concept='which-cell-is-turgid',
        notes='A and B are the two plant cells drawn in the paper, one full and firm '
              'against its wall, the other with the membrane pulled away from it.')
 
+A.card(11, 'b', 'vii', topic='bio-3-1', concept='writing-a-food-chain-from-a-web',
+       source='pdf', from_run=((11, 'b', 'vii'), 0, slice(1, 8)), marks=[3],
+       notes='The scheme requires the chain to start with a producer.')
+
+A.card(14, 'c', 'v', topic='bio-1-3', concept='the-storage-organelle-of-a-plant-cell',
+       source='pdf', from_run=((14, 'c', 'v'), 0, slice(0, 1)), marks=[3])
+
 A.emit()

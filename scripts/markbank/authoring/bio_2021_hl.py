@@ -62,4 +62,26 @@ A.card(14, 'c', 'i', topic='bio-2-4', concept='which-leaf-transpires-least',
        notes='The three plants are shown in the paper with their stomata counted, and '
              'the scheme wants the one with fewest.')
 
+A.card(12, 'b', 'v', topic='bio-3-2', concept='which-offspring-genotypes-show-variation',
+       source='pdf',
+       from_runs=[((12, 'b', 'v'), 0, slice(9, 10)),
+                  ((12, 'b', 'v'), 0, slice(11, 12))],
+       marks=[3, 3],
+       checked='The paper prints the part mark "(27)" after the question, so the text ends '
+               'on a bracketed number rather than punctuation.')
+
+A.card(13, 'b', 'i', topic='bio-2-2', concept='the-name-of-stage-1-of-respiration',
+       source='pdf', from_run=((13, 'b', 'i'), 0, slice(6, 7)), marks=[3])
+
+A.card(13, 'b', 'ii', topic='bio-2-2', concept='the-molecule-released-in-stage-1',
+       source='pdf', from_run=((13, 'b', 'ii'), 0, slice(3, 8)), marks=[3])
+
+A.card(13, 'b', 'iii', topic='bio-2-2', concept='how-atp-and-nadh-are-made',
+       source='pdf',
+       from_runs=[((13, 'b', 'iii'), 1, slice(2, None)),
+                  ((13, 'b', 'iii'), 2, slice(4, None))],
+       marks=[3, 3],
+       notes='Which answer applies depends on which molecule was named at part (ii) — the '
+             'scheme gives one route for ATP and one for NADH.')
+
 A.emit()
