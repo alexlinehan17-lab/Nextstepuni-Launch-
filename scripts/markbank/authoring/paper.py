@@ -158,13 +158,44 @@ class Paper:
                 self.stems.setdefault((q, letter), []).append(text)
             open_key = None
 
+        self._adopt_unlettered()
+
     def _all_blocks(self):
+        """Blocks, split where a block sets several parts at once.
+
+        The number that heads a question stays welded to the first piece.
+        Splitting "9. (a) (i) What is meant by enzyme denaturation?" at its
+        first marker leaves "9." alone, and a lone "9." cannot be told from the
+        booklet's numbered answer lines — which is how Biology lost questions 8
+        to 15 and, when a lone number was allowed to head a question, how
+        Agricultural Science lost the parts underneath every ruled answer box.
+        """
         for path in self.files:
             for text in _blocks(path):
-                for piece in INLINE_MARKER.split(text):
-                    piece = piece.strip()
-                    if piece:
-                        yield piece
+                head = re.match(r'(\d{1,2}\.)\s+(?=\()', text)
+                prefix = ''
+                if head:
+                    prefix, text = head.group(1) + ' ', text[head.end():]
+                pieces = [p.strip() for p in INLINE_MARKER.split(text) if p.strip()]
+                for i, piece in enumerate(pieces):
+                    yield (prefix + piece) if i == 0 else piece
+
+    def _adopt_unlettered(self):
+        """A question with no (a) or (i) IS a part, and was being lost.
+
+        Short-answer sections ask the whole question outright — "1. State two
+        causes of protein denaturation and give one example in each case." —
+        with no marker anywhere in it. Parts were only ever recorded when a
+        marker was seen, so every such question fell into the stem and vanished
+        from paths(). Home Economics lost seven of its fourteen questions that
+        way, all the odd-numbered ones, which are its Section A.
+        """
+        for (qnum, letter), lines in list(self.stems.items()):
+            if letter is not None or not lines:
+                continue
+            if any(k[0] == qnum for k in self.parts):
+                continue                      # the question has lettered parts
+            self.parts[(qnum, None, None)] = list(lines)
 
     @staticmethod
     def _flat(lines):

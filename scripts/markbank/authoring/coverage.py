@@ -21,6 +21,7 @@ import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from paper import Paper                                      # noqa: E402
 from scheme_pdf import SchemePdf                            # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(
@@ -63,10 +64,18 @@ def report(subject):
         for level in ('hl', 'ol'):
             try:
                 S = SchemePdf(subject, year, level)
+                asked = {k[0] for k in Paper(subject, year, level).paths()}
             except Exception:
                 continue
             for q, letter, roman in S.paths():
                 if not S.points(q, letter, roman):
+                    continue
+                # A scheme "question" the paper never asked is a misread, not a
+                # gap. The mark bands the examiners print — "Marks 18-20 14-17
+                # 10-13" — parse as question 20, and Agricultural Science has no
+                # question 20, 25, 35 or 60. Cross-checking against the paper
+                # drops them without having to guess at a maximum.
+                if q not in asked:
                     continue
                 total += 1
                 hit = ((year, level, q, letter, roman) in done
