@@ -6953,4 +6953,76 @@ export const CARDS: SecCard[] = [
           "lettersVisible": []
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2025-ol-q4a", topicId: "agsci-4-3-1", conceptId: "farmyard-layout-and-labour-efficiency",
+    section: "A", questionRef: "2025 OL Q4(a)",
+    stem: "The following photograph shows the layout of a dairy farm. Analyse the photograph and answer the questions that follow.",
+    questionText: "Suggest two ways in which this farm allows for efficient labour.",
+    tariffModel: {"kind":"fixed","notation":"3+2"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Paddocks near yard or yard at the centre of the paddocks", marks: 3, accepts: ["sheds near farmhouse","silage storage near sheds","yard has wide roadways for easy machinery movement"], contextNote: "Aerial photograph of the farmyard with three drawn yellow arrows: A points at a large circular tank with a dark open top standing on its own hardstanding, B at a long low narrow building along the bottom of the yard, C at a small pitched-roof shed on the western side." },
+    { id: "r-2", kind: "point", verbatim: "roadways for access", marks: 2, accepts: ["sheds near farmhouse","silage storage near sheds","yard has wide roadways for easy machinery movement"] },
+    ],
+    figure: {
+          "candId": "agricultural-science-2025-OL-paper-p06-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p06-art.png",
+          "srcHash": "0d1204138042916f3b94a70900733e33",
+          "alt": "Aerial colour photograph of a dairy farmyard, with three yellow arrows and yellow letters drawn onto it. A points down at a large circular tank with a dark open top, standing on its own hardstanding at the top of the yard. B points left at a long, low, narrow building along the bottom edge of the yard. C points down-right at a small pitched-roof shed on the western side, beside a scrap and machinery area. The yard is a compact block of six or seven pitched-roof sheds served by wide concrete aprons and a roadway, set centrally among large rectangular grass fields divided by hedgerows, with a ploughed brown field at the bottom left and a farmhouse at the western edge. Beneath the photograph the page prints parts (a), (b) and (c) with their ruled answer boxes.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2025-ol-q4b", topicId: "agsci-4-3-1", conceptId: "identifying-a-slurry-store",
+    section: "A", questionRef: "2025 OL Q4(b)",
+    stem: "The following photograph shows the layout of a dairy farm. Analyse the photograph and answer the questions that follow.",
+    questionText: "Using the photograph above, identify which structure A, B or C is most suitable for slurry storage.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "photograph", marks: 3, contextNote: "Aerial photograph of the farmyard with three drawn yellow arrows: A points at a large circular tank with a dark open top standing on its own hardstanding, B at a long low narrow building along the bottom of the yard, C at a small pitched-roof shed on the western side." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2025-OL-paper-p06-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p06-art.png",
+          "srcHash": "0d1204138042916f3b94a70900733e33",
+          "alt": "Aerial colour photograph of a dairy farmyard, with three yellow arrows and yellow letters drawn onto it. A points down at a large circular tank with a dark open top, standing on its own hardstanding at the top of the yard. B points left at a long, low, narrow building along the bottom edge of the yard. C points down-right at a small pitched-roof shed on the western side, beside a scrap and machinery area. The yard is a compact block of six or seven pitched-roof sheds served by wide concrete aprons and a roadway, set centrally among large rectangular grass fields divided by hedgerows, with a ploughed brown field at the bottom left and a farmhouse at the western edge. Beneath the photograph the page prints parts (a), (b) and (c) with their ruled answer boxes.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"the large circular tank with a dark open top, standing alone on hardstanding at the top of the yard","askedInThisQuestion":true},{"letter":"B","meaning":"the long, low, narrow building along the bottom of the yard","askedInThisQuestion":true},{"letter":"C","meaning":"the small pitched-roof shed on the western side, beside the machinery area","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2025-ol-q4c", topicId: "agsci-4-3-1", conceptId: "farm-layout-suited-to-paddock-grazing",
+    section: "A", questionRef: "2025 OL Q4(c)",
+    stem: "The following photograph shows the layout of a dairy farm. Analyse the photograph and answer the questions that follow.",
+    questionText: "Commonly used methods of grazing on dairy farms are paddock or strip grazing. Suggest why this farm may be suited to either method of grazing.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Paddocks (adjacent to each other for rotational grazing)", marks: 2, accepts: ["large paddocks could be divided into strips with electric fencing roadways for access to paddocks","little or no hedgerows","farmyard is central to the fields"], contextNote: "Aerial photograph of the farmyard with three drawn yellow arrows: A points at a large circular tank with a dark open top standing on its own hardstanding, B at a long low narrow building along the bottom of the yard, C at a small pitched-roof shed on the western side." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2025-OL-paper-p06-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p06-art.png",
+          "srcHash": "0d1204138042916f3b94a70900733e33",
+          "alt": "Aerial colour photograph of a dairy farmyard, with three yellow arrows and yellow letters drawn onto it. A points down at a large circular tank with a dark open top, standing on its own hardstanding at the top of the yard. B points left at a long, low, narrow building along the bottom edge of the yard. C points down-right at a small pitched-roof shed on the western side, beside a scrap and machinery area. The yard is a compact block of six or seven pitched-roof sheds served by wide concrete aprons and a roadway, set centrally among large rectangular grass fields divided by hedgerows, with a ploughed brown field at the bottom left and a farmhouse at the western edge. Beneath the photograph the page prints parts (a), (b) and (c) with their ruled answer boxes.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
 ];

@@ -40,4 +40,35 @@ A.card(13, 'a', 'i', topic='agsci-2-2-2', concept='choosing-a-soil-sampling-patt
        notes="The scheme prints a stray 'or' on its own line between two reasons; "
              "it is not an answer and is left off the card.")
 
+# ── Q4: the aerial farmyard photograph ────────────────────────────────────
+YARD = 'agricultural-science-2025-OL-paper-p06-art'
+YARD_CONTEXT = ('Aerial photograph of the farmyard with three drawn yellow arrows: A '
+                'points at a large circular tank with a dark open top standing on its '
+                'own hardstanding, B at a long low narrow building along the bottom of '
+                'the yard, C at a small pitched-roof shed on the western side.')
+
+A.card(4, 'a', topic='agsci-4-3-1', concept='farmyard-layout-and-labour-efficiency',
+       use=[0, 1], marks=[3, 2], notation='3+2', spread=True, omit=[5],
+       figure=YARD, context=YARD_CONTEXT,
+       notes="The scheme's last line, 'any two valid examples', is a rubric rather than "
+             "an answer, so it is left off the card.")
+
+# The scheme runs its cue and its answer together here — "...by placing an X on
+# the structure in the photograph A" — and the answer is the final letter.
+A.card(4, 'b', topic='agsci-4-3-1', concept='identifying-a-slurry-store',
+       source='pdf', from_run=((4, 'b', None), 0, -1), marks=[3],
+       figure=YARD, context=YARD_CONTEXT,
+       # Described by what each arrow points at, not by what it is for — naming
+       # the function would put the answer in the label key.
+       labels={'A': 'the large circular tank with a dark open top, standing alone '
+                    'on hardstanding at the top of the yard',
+               'B': 'the long, low, narrow building along the bottom of the yard',
+               'C': 'the small pitched-roof shed on the western side, beside the '
+                    'machinery area'},
+       notes='The scheme prints this answer at the end of its own question cue, so the '
+             'card takes the final letter of that line.')
+
+A.card(4, 'c', topic='agsci-4-3-1', concept='farm-layout-suited-to-paddock-grazing',
+       source='pdf', use=[[1, 2, 3, 4]], marks=[2], figure=YARD, context=YARD_CONTEXT)
+
 A.emit()

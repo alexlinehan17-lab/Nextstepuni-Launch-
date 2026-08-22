@@ -12172,5 +12172,53 @@
   "year": 2023,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Agricultural Science 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "agricultural-science-2025-OL-paper-p06-art": {
+  "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p06-art.png",
+  "md5": "0d1204138042916f3b94a70900733e33",
+  "alt": "Aerial colour photograph of a dairy farmyard, with three yellow arrows and yellow letters drawn onto it. A points down at a large circular tank with a dark open top, standing on its own hardstanding at the top of the yard. B points left at a long, low, narrow building along the bottom edge of the yard. C points down-right at a small pitched-roof shed on the western side, beside a scrap and machinery area. The yard is a compact block of six or seven pitched-roof sheds served by wide concrete aprons and a roadway, set centrally among large rectangular grass fields divided by hedgerows, with a ploughed brown field at the bottom left and a farmhouse at the western edge. Beneath the photograph the page prints parts (a), (b) and (c) with their ruled answer boxes.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q4",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "agricultural-science-2024-HL-paper-p36-art": {
+  "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p36-art.png",
+  "md5": "e2adf0f6cbdc572de192c0a1af1dd0c8",
+  "alt": "The Question 17(c) results table, with its header row complete. Four columns: Soil sample, Loss in mass (g), % Soil organic matter, % Soil organic carbon. The Peat row reads 55.2 for loss in mass, then two cells highlighted in yellow carrying the letters A and B in place of values. The Loam row beneath it is filled in throughout: 3.8, 4.2 and 2.4. Above the table sit the ruled Predication and Reason boxes from part (c)(i) and the line 'Results from the investigation are shown in the table below.'; below it are parts (ii) and (iii) with their Calculation boxes.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q17(c)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission"
+ },
+ "agricultural-science-2025-HL-paper-p30-art": {
+  "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-p30-art.png",
+  "md5": "542ca6ea641423f68967675a6d9401f9",
+  "alt": "Two pieces of artwork on one page. Across the top, four colour photographs of plants lettered A to D above an empty four-cell answer row: A a dense mat of narrow leaves in whorls up square stems, B open sky-blue daisy-like flowers on wiry stems, C small five-petalled yellow flowers among strongly toothed silvery-green leaflets, D a field of tall yellow four-petalled flowers on branching stems. Below, the part (c) weed control diagram: a blue triangle whose corners carry photographs captioned Mature plants (top), Seedlings (bottom left) and Seeds (bottom right). Three numbered circles sit on the sides — a green 1 on the bottom edge fed by a green box reading Crop rotation, Seedbed preparation, Pre-emergence herbicide; a grey 2 on the left edge fed by a grey box reading Seed rate, Biological controls, Patch / band spray; a red 3 on the right edge fed by a red box reading Pre-harvest herbicides, Cleaning of machinery, Stubble management.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "1",
+   "2",
+   "3"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q15(b) and Q15(c)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission"
  }
 }

@@ -6896,4 +6896,76 @@ export const CARDS: SecCard[] = [
           "lettersVisible": []
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q17cii", topicId: "agsci-3-1", conceptId: "calculating-percent-soil-organic-matter",
+    section: "B", questionRef: "2024 HL Q17(c)(ii)",
+    stem: "Results from the investigation are shown in the table below. Soil sample Loss in mass (g) % Soil organic % Soil organic matter carbon Peat 55.2 A B Loam 3.8 4.2 2.4",
+    questionText: "Calculate A the % soil organic matter in the peat sample.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "55.2/90 X 100 = 61.3(%)", marks: 6, contextNote: "The results table gives the peat sample a loss in mass of 55.2 g with its two percentage cells blanked and lettered A and B; the loam row below is filled in at 3.8, 4.2 and 2.4." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2024-HL-paper-p36-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p36-art.png",
+          "srcHash": "e2adf0f6cbdc572de192c0a1af1dd0c8",
+          "alt": "The Question 17(c) results table, with its header row complete. Four columns: Soil sample, Loss in mass (g), % Soil organic matter, % Soil organic carbon. The Peat row reads 55.2 for loss in mass, then two cells highlighted in yellow carrying the letters A and B in place of values. The Loam row beneath it is filled in throughout: 3.8, 4.2 and 2.4. Above the table sit the ruled Predication and Reason boxes from part (c)(i) and the line 'Results from the investigation are shown in the table below.'; below it are parts (ii) and (iii) with their Calculation boxes.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q17ciii", topicId: "agsci-3-1", conceptId: "calculating-percent-soil-organic-carbon",
+    section: "B", questionRef: "2024 HL Q17(c)(iii)",
+    stem: "Results from the investigation are shown in the table below. Soil sample Loss in mass (g) % Soil organic % Soil organic matter carbon Peat 55.2 A B Loam 3.8 4.2 2.4",
+    questionText: "Calculate B the % soil organic carbon in the peat sample.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "61.3 x 0.58 = 35.55 or 36%", marks: 6, contextNote: "The results table gives the peat sample a loss in mass of 55.2 g with its two percentage cells blanked and lettered A and B; the loam row below is filled in at 3.8, 4.2 and 2.4." },
+    ],
+    figure: {
+          "candId": "agricultural-science-2024-HL-paper-p36-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p36-art.png",
+          "srcHash": "e2adf0f6cbdc572de192c0a1af1dd0c8",
+          "alt": "The Question 17(c) results table, with its header row complete. Four columns: Soil sample, Loss in mass (g), % Soil organic matter, % Soil organic carbon. The Peat row reads 55.2 for loss in mass, then two cells highlighted in yellow carrying the letters A and B in place of values. The Loam row beneath it is filled in throughout: 3.8, 4.2 and 2.4. Above the table sit the ruled Predication and Reason boxes from part (c)(i) and the line 'Results from the investigation are shown in the table below.'; below it are parts (ii) and (iii) with their Calculation boxes.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2025, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
+    id: "agsci-2025-hl-q15b", topicId: "agsci-3-1", conceptId: "identifying-common-farm-weeds",
+    section: "B", questionRef: "2025 HL Q15(b)",
+    questionText: "Identify any three common plants found on Irish farms in the photographs below.",
+    tariffModel: {"kind":"fixed","notation":"3x1"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A: Cleavers", marks: 1, accepts: ["D: Oilseed rape"], contextNote: "Four photographs lettered A to D: A narrow leaves in whorls up square stems, B open sky-blue daisy-like flowers, C small yellow five-petalled flowers among toothed silvery leaflets, D a field of tall yellow four-petalled flowers. Any three of the four score." },
+    { id: "r-2", kind: "point", verbatim: "B: Chicory", marks: 1, accepts: ["D: Oilseed rape"] },
+    { id: "r-3", kind: "point", verbatim: "C: Silverweed", marks: 1, accepts: ["D: Oilseed rape"] },
+    ],
+    figure: {
+          "candId": "agricultural-science-2025-HL-paper-p30-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-p30-art.png",
+          "srcHash": "542ca6ea641423f68967675a6d9401f9",
+          "alt": "Two pieces of artwork on one page. Across the top, four colour photographs of plants lettered A to D above an empty four-cell answer row: A a dense mat of narrow leaves in whorls up square stems, B open sky-blue daisy-like flowers on wiry stems, C small five-petalled yellow flowers among strongly toothed silvery-green leaflets, D a field of tall yellow four-petalled flowers on branching stems. Below, the part (c) weed control diagram: a blue triangle whose corners carry photographs captioned Mature plants (top), Seedlings (bottom left) and Seeds (bottom right). Three numbered circles sit on the sides — a green 1 on the bottom edge fed by a green box reading Crop rotation, Seedbed preparation, Pre-emergence herbicide; a grey 2 on the left edge fed by a grey box reading Seed rate, Biological controls, Patch / band spray; a red 3 on the right edge fed by a red box reading Pre-harvest herbicides, Cleaning of machinery, Stubble management.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Cleavers","askedInThisQuestion":true},{"letter":"B","meaning":"Chicory","askedInThisQuestion":true},{"letter":"C","meaning":"Silverweed","askedInThisQuestion":true}],
+  } as SecCard,
 ];

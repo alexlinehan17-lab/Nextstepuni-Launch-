@@ -33895,6 +33895,124 @@
   "figureKey": "agricultural-science-2024-HL-paper-p15-i0"
  },
  {
+  "id": "agsci-2024-hl-q17cii",
+  "topicId": "agsci-3-1",
+  "conceptId": "calculating-percent-soil-organic-matter",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2024 HL Q17(c)(ii)",
+  "questionText": "Calculate A the % soil organic matter in the peat sample.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "55.2/90 X 100 = 61.3(%)",
+    "marks": 6,
+    "contextNote": "The results table gives the peat sample a loss in mass of 55.2 g with its two percentage cells blanked and lettered A and B; the loam row below is filled in at 3.8, 4.2 and 2.4."
+   }
+  ],
+  "stem": "Results from the investigation are shown in the table below. Soil sample Loss in mass (g) % Soil organic % Soil organic matter carbon Peat 55.2 A B Loam 3.8 4.2 2.4",
+  "notes": "The scheme adds that a candidate giving 61.3 or 61 without showing the calculation still takes the 6 marks.",
+  "figureKey": "agricultural-science-2024-HL-paper-p36-art"
+ },
+ {
+  "id": "agsci-2024-hl-q17ciii",
+  "topicId": "agsci-3-1",
+  "conceptId": "calculating-percent-soil-organic-carbon",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2024 HL Q17(c)(iii)",
+  "questionText": "Calculate B the % soil organic carbon in the peat sample.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "61.3 x 0.58 = 35.55 or 36%",
+    "marks": 6,
+    "contextNote": "The results table gives the peat sample a loss in mass of 55.2 g with its two percentage cells blanked and lettered A and B; the loam row below is filled in at 3.8, 4.2 and 2.4."
+   }
+  ],
+  "stem": "Results from the investigation are shown in the table below. Soil sample Loss in mass (g) % Soil organic % Soil organic matter carbon Peat 55.2 A B Loam 3.8 4.2 2.4",
+  "notes": "Carries the answer to part (ii) forward; 0.58 is the conversion from organic matter to organic carbon.",
+  "figureKey": "agricultural-science-2024-HL-paper-p36-art"
+ },
+ {
+  "id": "agsci-2025-hl-q15b",
+  "topicId": "agsci-3-1",
+  "conceptId": "identifying-common-farm-weeds",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2025 HL Q15(b)",
+  "questionText": "Identify any three common plants found on Irish farms in the photographs below.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3x1"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: Cleavers",
+    "marks": 1,
+    "accepts": [
+     "D: Oilseed rape"
+    ],
+    "contextNote": "Four photographs lettered A to D: A narrow leaves in whorls up square stems, B open sky-blue daisy-like flowers, C small yellow five-petalled flowers among toothed silvery leaflets, D a field of tall yellow four-petalled flowers. Any three of the four score."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: Chicory",
+    "marks": 1,
+    "accepts": [
+     "D: Oilseed rape"
+    ]
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C: Silverweed",
+    "marks": 1,
+    "accepts": [
+     "D: Oilseed rape"
+    ]
+   }
+  ],
+  "figureKey": "agricultural-science-2025-HL-paper-p30-art",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Cleavers",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Chicory",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Silverweed",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
   "id": "agsci-2025-ol-q8b",
   "topicId": "agsci-1-5",
   "conceptId": "reading-fertiliser-hazard-symbols",
@@ -34010,5 +34128,124 @@
   ],
   "notes": "The scheme prints a stray 'or' on its own line between two reasons; it is not an answer and is left off the card.",
   "figureKey": "agricultural-science-2025-OL-paper-p18-i0"
+ },
+ {
+  "id": "agsci-2025-ol-q4a",
+  "topicId": "agsci-4-3-1",
+  "conceptId": "farmyard-layout-and-labour-efficiency",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2025 OL Q4(a)",
+  "questionText": "Suggest two ways in which this farm allows for efficient labour.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3+2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Paddocks near yard or yard at the centre of the paddocks",
+    "marks": 3,
+    "accepts": [
+     "sheds near farmhouse",
+     "silage storage near sheds",
+     "yard has wide roadways for easy machinery movement"
+    ],
+    "contextNote": "Aerial photograph of the farmyard with three drawn yellow arrows: A points at a large circular tank with a dark open top standing on its own hardstanding, B at a long low narrow building along the bottom of the yard, C at a small pitched-roof shed on the western side."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "roadways for access",
+    "marks": 2,
+    "accepts": [
+     "sheds near farmhouse",
+     "silage storage near sheds",
+     "yard has wide roadways for easy machinery movement"
+    ]
+   }
+  ],
+  "stem": "The following photograph shows the layout of a dairy farm. Analyse the photograph and answer the questions that follow.",
+  "notes": "The scheme's last line, 'any two valid examples', is a rubric rather than an answer, so it is left off the card.",
+  "figureKey": "agricultural-science-2025-OL-paper-p06-art"
+ },
+ {
+  "id": "agsci-2025-ol-q4b",
+  "topicId": "agsci-4-3-1",
+  "conceptId": "identifying-a-slurry-store",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2025 OL Q4(b)",
+  "questionText": "Using the photograph above, identify which structure A, B or C is most suitable for slurry storage.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "photograph",
+    "marks": 3,
+    "contextNote": "Aerial photograph of the farmyard with three drawn yellow arrows: A points at a large circular tank with a dark open top standing on its own hardstanding, B at a long low narrow building along the bottom of the yard, C at a small pitched-roof shed on the western side."
+   }
+  ],
+  "stem": "The following photograph shows the layout of a dairy farm. Analyse the photograph and answer the questions that follow.",
+  "notes": "The scheme prints this answer at the end of its own question cue, so the card takes the final letter of that line.",
+  "figureKey": "agricultural-science-2025-OL-paper-p06-art",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "the large circular tank with a dark open top, standing alone on hardstanding at the top of the yard",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "the long, low, narrow building along the bottom of the yard",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "the small pitched-roof shed on the western side, beside the machinery area",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "agsci-2025-ol-q4c",
+  "topicId": "agsci-4-3-1",
+  "conceptId": "farm-layout-suited-to-paddock-grazing",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2025 OL Q4(c)",
+  "questionText": "Commonly used methods of grazing on dairy farms are paddock or strip grazing. Suggest why this farm may be suited to either method of grazing.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Paddocks (adjacent to each other for rotational grazing)",
+    "marks": 2,
+    "accepts": [
+     "large paddocks could be divided into strips with electric fencing roadways for access to paddocks",
+     "little or no hedgerows",
+     "farmyard is central to the fields"
+    ],
+    "contextNote": "Aerial photograph of the farmyard with three drawn yellow arrows: A points at a large circular tank with a dark open top standing on its own hardstanding, B at a long low narrow building along the bottom of the yard, C at a small pitched-roof shed on the western side."
+   }
+  ],
+  "stem": "The following photograph shows the layout of a dairy farm. Analyse the photograph and answer the questions that follow.",
+  "figureKey": "agricultural-science-2025-OL-paper-p06-art"
  }
 ]

@@ -5518,5 +5518,53 @@
   "labelMeanings": [],
   "questionRef": "2023 OL Q14(b)",
   "notes": "Re-cropped with crop-question-art.py. The earlier extraction, p24-i0, took a band of the page and cut diagram C off entirely — the diagram part (i) asks about — which is why it was catalogued as truncated and never published."
+ },
+ {
+  "file": "agricultural-science-2025-OL-paper-p06-art.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Aerial colour photograph of a dairy farmyard, with three yellow arrows and yellow letters drawn onto it. A points down at a large circular tank with a dark open top, standing on its own hardstanding at the top of the yard. B points left at a long, low, narrow building along the bottom edge of the yard. C points down-right at a small pitched-roof shed on the western side, beside a scrap and machinery area. The yard is a compact block of six or seven pitched-roof sheds served by wide concrete aprons and a roadway, set centrally among large rectangular grass fields divided by hedgerows, with a ploughed brown field at the bottom left and a farmhouse at the western edge. Beneath the photograph the page prints parts (a), (b) and (c) with their ruled answer boxes.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q4",
+  "notes": "Re-cropped with crop-question-art.py. The earlier crop of this page was catalogued as truncated and never published."
+ },
+ {
+  "file": "agricultural-science-2024-HL-paper-p36-art.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "The Question 17(c) results table, with its header row complete. Four columns: Soil sample, Loss in mass (g), % Soil organic matter, % Soil organic carbon. The Peat row reads 55.2 for loss in mass, then two cells highlighted in yellow carrying the letters A and B in place of values. The Loam row beneath it is filled in throughout: 3.8, 4.2 and 2.4. Above the table sit the ruled Predication and Reason boxes from part (c)(i) and the line 'Results from the investigation are shown in the table below.'; below it are parts (ii) and (iii) with their Calculation boxes.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q17(c)",
+  "notes": "Re-cropped with crop-question-art.py. The earlier crop, p36-i0, sliced the header row in half — the two headings the letters A and B sit under were unreadable — so it was catalogued as truncated and never published."
+ },
+ {
+  "file": "agricultural-science-2025-HL-paper-p30-art.png",
+  "kind": "figure",
+  "drawingComplete": true,
+  "truncated": false,
+  "description": "Two pieces of artwork on one page. Across the top, four colour photographs of plants lettered A to D above an empty four-cell answer row: A a dense mat of narrow leaves in whorls up square stems, B open sky-blue daisy-like flowers on wiry stems, C small five-petalled yellow flowers among strongly toothed silvery-green leaflets, D a field of tall yellow four-petalled flowers on branching stems. Below, the part (c) weed control diagram: a blue triangle whose corners carry photographs captioned Mature plants (top), Seedlings (bottom left) and Seeds (bottom right). Three numbered circles sit on the sides — a green 1 on the bottom edge fed by a green box reading Crop rotation, Seedbed preparation, Pre-emergence herbicide; a grey 2 on the left edge fed by a grey box reading Seed rate, Biological controls, Patch / band spray; a red 3 on the right edge fed by a red box reading Pre-harvest herbicides, Cleaning of machinery, Stubble management.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "1",
+   "2",
+   "3"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q15(b) and Q15(c)",
+  "notes": "Re-cropped with crop-question-art.py to take both pieces of artwork on the page. The tops of the letters A to D are lightly clipped by the crop but all four remain legible."
  }
 ]
