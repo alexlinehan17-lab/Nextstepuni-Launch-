@@ -47,9 +47,16 @@ ID_PREFIX = {
 }
 
 
+# Decks differ in how they join a part onto its question: agsci writes
+# agsci-2021-hl-q3bi, biology writes bio-2025-hl-q1-a. Follow each deck's own.
+DASHED = {'biology'}
+
+
 def part_id(subject, year, level, q, letter=None, roman=None, suffix=''):
-    return (f'{ID_PREFIX[subject]}-{year}-{level}-q{q}' + (letter or '')
-            + (roman or '') + (f'-{suffix}' if suffix else ''))
+    join = '-' if subject in DASHED else ''
+    tail = ''.join(join + p for p in (letter, roman) if p)
+    return (f'{ID_PREFIX[subject]}-{year}-{level}-q{q}{tail}'
+            + (f'-{suffix}' if suffix else ''))
 
 
 def part_ref(year, level, q, letter=None, roman=None):
@@ -103,7 +110,7 @@ class Author:
              use=None, marks=None, tariff='fixed', total=None, figure=None,
              labels=None, notes=None, stem=True, checked=None, suffix='',
              row_kind='point', notation=None, spread=False, context=None,
-             omit=(), source='md', card_id=None, from_run=None):
+             omit=(), source='md', card_id=None, from_run=None, tick=None):
         ref = part_ref(self.year, self.level, q, letter, roman)
 
         question = self.paper.text(q, letter, roman)
@@ -115,6 +122,23 @@ class Author:
                 f'Open the page; if it is right, pass checked="<why>".')
 
         scheme = self._source(source)
+
+        # A tick in a True/False column is an answer the text layer does not
+        # carry: the glyph leaves an empty block behind, so no parser can read
+        # it and the marking points for the NEXT question get attributed here
+        # instead. The answer is read off the rendered scheme page and named
+        # here, which is the same standing as reading a figure — the scheme
+        # states it, just graphically. Both words appear in the scheme's own
+        # column headings, so the provenance gate still checks it, and the note
+        # says on the card's face where the answer came from.
+        if tick is not None:
+            if tick not in ('True', 'False'):
+                raise Refused(f'{ref}: tick must be "True" or "False", not {tick!r}')
+            if not notes:
+                raise Refused(f'{ref}: a tick-read answer needs a note saying so')
+            candidates = [tick]
+            use = [0]
+            scheme = self.scheme_pdf
 
         # Some parts have their answers printed as one positional run against
         # the parent, because the scheme set them as a table: 2022 OL Q4(b) has
@@ -144,7 +168,7 @@ class Author:
                                   f'{token_index}')
                 candidates = [tokens[token_index]]
             use = [0] if use is None else use
-        else:
+        elif tick is None:
             candidates = scheme.points(q, letter, roman)
         if not candidates:
             raise Refused(f'{ref}: the scheme has no marking points for this part')
