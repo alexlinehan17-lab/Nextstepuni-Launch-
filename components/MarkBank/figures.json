@@ -9880,5 +9880,2139 @@
   "year": 2023,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2021-HL-paper-p03-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2021-HL-paper-p03-i0.png",
+  "md5": "9b85110693f6fe0b3c9890086fbb01cd",
+  "alt": "A line chart headed 'Ireland's Exports and Imports 2015-2019', y-axis €'s millions from 0 to 200, x-axis 'Period' with years 2015 to 2019. A green line labelled Exports rises across the period through data labels 112, 119, 123, 141, 152. A blue line labelled Imports runs below it through 70, 74, 83, 92, 91. Legend at bottom right; source line 'Adapted from the CSO'. The whole chart, both axes, the legend and all ten data labels are visible.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Section A Q1(a)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2021 Higher Level — © State Examinations Commission"
+ },
+ "economics-2021-HL-paper-p04-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2021-HL-paper-p04-i0.png",
+  "md5": "2b7ce4b1d55706c270f739dc67aefcd4",
+  "alt": "A four-row table with a header row reading Statement | Positive Statement | Normative Statement. The statements are: 'If the Irish government increase jobseeker's allowance by 5% in the 2022 budget, unemployment in Ireland will increase by at least 2% by 2023.'; 'We have to do more for the less well off in society.'; 'The government should have increased unemployment benefit by more than €0.10 this year.'; 'Sales of new cars in Ireland decreased during 2020.' The two right-hand columns are empty tick boxes.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Section A Q2",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2021 Higher Level — © State Examinations Commission"
+ },
+ "economics-2021-HL-paper-p08-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2021-HL-paper-p08-i0.png",
+  "md5": "62d394c016d395c9c068924542e7d96a",
+  "alt": "A table extracted from the Human Development Index 2020 with columns Rank, Country, Human Development Index (HDI) (value), Life expectancy at birth (years) SDG 3, Mean years of schooling (years) SDG 4.6, and Gross national income (GNI) per capita (PPP $) SDG 8.5. Three rows, shaded blue: 187 Chad 0.398, 54.2, 2.5, 1,555; 188 Central African Republic 0.397, 53.3, 4.3, 993; 189 Niger 0.394, 62.4, 2.1, 1,201.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Section A Q6(b)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2021 Higher Level — © State Examinations Commission"
+ },
+ "economics-2021-HL-paper-p10-art": {
+  "src": "/exam-figures/economics/markbank/economics-2021-HL-paper-p10-art.png",
+  "md5": "ab17d37936c0a8f3e1d7f16b62ed12cc",
+  "alt": "A CSO infographic headed 'Government Finance Statistics 2019'. On the left, under 'Government Balance 2019', two jars of gold coins labelled IN and OUT feed a pale circle reading 'Government Surplus €1.3bn (0.4% of GDP)'. On the right, under 'Gross Debt per Person', three dark spheres of increasing size are dragged by cartoon figures on chains: 2007 €11,138, 2013 €46,880 and 2019 €41,460. Source line 'Adapted from the CSO'.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Section A Q7(a)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2021 Higher Level — © State Examinations Commission"
+ },
+ "economics-2021-HL-paper-p13-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2021-HL-paper-p13-i0.png",
+  "md5": "de00973680c335a555c6c703a766898a",
+  "alt": "A three-row table with header Product / Firm | Market Structure. Rows A: Irish banking sector; B: Irish Water (the company); C: A takeaway food outlet. The Market Structure column is an empty answer box in every row.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [
+   {
+    "label": "A",
+    "meaning": "Irish banking sector"
+   },
+   {
+    "label": "B",
+    "meaning": "Irish Water (the company)"
+   },
+   {
+    "label": "C",
+    "meaning": "A takeaway food outlet"
+   }
+  ],
+  "questionRef": "2021 HL Section A Q9(a)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2021 Higher Level — © State Examinations Commission"
+ },
+ "economics-2021-HL-paper-p14-art": {
+  "src": "/exam-figures/economics/markbank/economics-2021-HL-paper-p14-art.png",
+  "md5": "d469238ee279923347b801c0bf84c30c",
+  "alt": "A line chart headed 'European Central Bank Fixed Rate May 2020', y-axis 'Interest Rate' from 0.00% to 4.00%, x-axis 'Years' from 1.10.08 to 1.10.18. The line opens near 3.75%, falls sharply to about 1.25% by late 2009, drifts up to 1.50% by 2011, drops to 1.00%, then declines steadily to zero by late 2013 and runs flat along the axis to the end. Source 'Adapted from Statista'.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Section A Q10(a)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2021 Higher Level — © State Examinations Commission"
+ },
+ "economics-2021-HL-paper-p15-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2021-HL-paper-p15-i0.png",
+  "md5": "9493b6f1999613083612f8765aae6e9b",
+  "alt": "A pie chart headed 'Global Aircraft Market 2018' with five slices, each labelled in a dark callout box: Boeing 46%, Airbus 46%, Embraer 5%, Others 2%, Bombardier 1%. A legend at right lists the five in the same order with their colours - Boeing blue, Airbus orange, Bombardier purple, Embraer yellow, Others dark blue. Source line 'Adapted from Industry and Research.com'. The crop also carries the question text below: '(a)(i) Using the data provided above, calculate the Herfindahl Hirschman Index (HHI) for the Global Aircraft Market in 2018. Show your workings.'",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q11(a)(i)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2021 Higher Level — © State Examinations Commission"
+ },
+ "economics-2021-HL-paper-p16-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2021-HL-paper-p16-i0.png",
+  "md5": "15490d0fe93f7e5c5fbdb4e6bf245598",
+  "alt": "A cost-and-revenue diagram of a firm in oligopoly at long-run equilibrium. Price on the vertical axis, Quantity on the horizontal. Four black curves are numbered in red: 1 is an upward-sloping curve rising steeply to the top right; 2 is a U-shaped curve whose minimum sits to the right of centre; 3 is a downward-sloping line running to the bottom right; 4 is a short line dropping steeply below and right of point E. A kinked demand curve runs from the top left through a red dot at price P1, with a second U-shaped curve below it whose minimum is at the filled point E on the dotted vertical at Q1. Dotted red guide lines run from P1 across and from Q1 up to E.",
+  "lettersVisible": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "E",
+   "P1",
+   "Q1",
+   "P",
+   "Q"
+  ],
+  "labelMeanings": [
+   {
+    "label": "E",
+    "meaning": "the long-run equilibrium point, output Q1 at price P1"
+   }
+  ],
+  "questionRef": "2021 HL Q11(b)(i)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2021 Higher Level — © State Examinations Commission"
+ },
+ "economics-2021-HL-paper-p26-art": {
+  "src": "/exam-figures/economics/markbank/economics-2021-HL-paper-p26-art.png",
+  "md5": "bebece0d5a1b23bec82b20e490dd1566",
+  "alt": "A line chart headed 'HICP average inflation rate, 2014-2019' with three series named in a legend: UK (blue), Ireland (orange) and Euro Area (grey). Y-axis 'AVERAGE INFLATION RATE' from -0.50 to 3.00. The UK runs 1.5, 0.0, 0.8, 2.7, 2.5, 1.9. Ireland runs 0.4, 0.2, -0.3, 0.4, 0.6, 0.7. The Euro Area runs 0.45, 0.4, 0.4, 1.6, 1.7, 0.9. Source 'Adapted from Eurostat - Irish Competitiveness Council Scorecard'.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q14",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2021 Higher Level — © State Examinations Commission"
+ },
+ "economics-2021-HL-paper-p31-art": {
+  "src": "/exam-figures/economics/markbank/economics-2021-HL-paper-p31-art.png",
+  "md5": "b200d1c8d2dd4118211d71a81e261ab7",
+  "alt": "A line chart headed 'GNI Per Capita PPP (Constant 2017 International $)' with two series named beneath: Ireland GNI per Capita in blue and United States GNI per Capita in orange. Y-axis 'US Dollars $' 0 to 70000, x-axis 'Years' 1995 to 2020. The US line climbs steadily from about 43,000 to 62,000, dipping around 2009. The Irish line starts near 29,000, rises to about 52,000 by 2007, falls back to about 43,000 by 2012, then climbs steeply to overtake the US around 2017 and reach about 66,000 by 2018. Source 'Adapted from Statbank'.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q15(b)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2021 Higher Level — © State Examinations Commission"
+ },
+ "economics-2021-HL-paper-p34-art": {
+  "src": "/exam-figures/economics/markbank/economics-2021-HL-paper-p34-art.png",
+  "md5": "a13a128c9f7b62fac1ce4587405ab631",
+  "alt": "A line chart headed 'Number of Passengers', y-axis 'Millions' 0 to 12, x-axis 'Period' with four points: Q2 2017 about 9.4, Q2 2018 about 10.0, Q2 2019 about 10.5, and Q2 2020 almost zero. The line rises gently for three years and then falls almost vertically.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q16(a)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2021 Higher Level — © State Examinations Commission"
+ },
+ "economics-2021-HL-paper-p35-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2021-HL-paper-p35-i0.png",
+  "md5": "7ab401dad0dab084c16e71733bf70e3d",
+  "alt": "A line chart headed 'National Minimum Wage Rate', y-axis 'wage rate in €'s', x-axis 'Year' from 2016 to 2021. Six orange markers rise steadily left to right, each with its value beside it: €9.15 in 2016, €9.25 in 2017, €9.55 in 2018, €9.80 in 2019, €10.10 in 2020, €10.20 in 2021. Source 'Adapted from the CSO'. The crop carries the question stem above and the start of the Workings box below.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q16(b)(i)",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2021 Higher Level — © State Examinations Commission"
+ },
+ "economics-2021-OL-paper-p03-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2021-OL-paper-p03-i0.png",
+  "md5": "94fa4f1f178903871989827e124b0902",
+  "alt": "A column chart headed 'Estimated Total Government Expenditure 2021', y-axis '€ Billions' from 0.0 to 25.0, x-axis 'Government Department' with eight angled labels. Each bar carries its value above it in bold: Social Protection 23.3 (red), Health 22.1 (yellow), Education 8.9 (navy), Justice 3.0 (mid blue), Agriculture 1.8 (purple), Debt Servicing/EU Pay 9.2 (pale blue), Transport 3.5 (magenta), Other 17.8 (green).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Section A Q1",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2021-OL-paper-p04-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2021-OL-paper-p04-i0.png",
+  "md5": "1756ca2f4b09f6e6eabaf20e239cb13b",
+  "alt": "A two-row table with header Statement | Positive | Normative. Row 1: 'In 2022 exports in Ireland will grow by 10% due to Brexit.' Row 2: 'Increased government expenditure on drug abuse will reduce the number of deaths.' The Positive and Normative columns are empty tick boxes.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Section A Q2",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2021-OL-paper-p04-i1": {
+  "src": "/exam-figures/economics/markbank/economics-2021-OL-paper-p04-i1.png",
+  "md5": "05604814eb66288942fb01d6395f8494",
+  "alt": "A three-row table for a price elasticity calculation with columns Units Purchased and Price (€). Before the carbon tax increase: 1000 litres at 800. After the carbon tax increase: 750 litres at 850. Changes row, in bold: -250 litres and + 50.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Section A Q3",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2021-OL-paper-p05-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2021-OL-paper-p05-i0.png",
+  "md5": "ac5b750160d93b835a237672cf077a21",
+  "alt": "The Question 5 stem beside a black PlayStation 5 logo tile - the letters PS5 in white with 'PlayStation.5' beneath. The text reads 'Sony released The Playstation 5 (PS5) in 2020. Name a substitute good for this item and explain your answer.'",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Section A Q5",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2021-OL-paper-p05-i1": {
+  "src": "/exam-figures/economics/markbank/economics-2021-OL-paper-p05-i1.png",
+  "md5": "1470a2a5a0c1ffd6174d33e0499e94e7",
+  "alt": "A utility table with four columns for bags of crisps consumed 1, 2, 3, 4. Total Utility in Units/Util reads 10, 25, 38, 47. Marginal Utility in Units/Util reads 10, 15, then two heavily outlined empty boxes for the student to complete.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Section A Q4",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2021-OL-paper-p06-art": {
+  "src": "/exam-figures/economics/markbank/economics-2021-OL-paper-p06-art.png",
+  "md5": "4981686f16dc93fed62f0de6df9433ed",
+  "alt": "A circular flow of income diagram. Five labelled ovals - Households and Firms at the top, Financial Institutions and Foreign Markets below - are linked by curved arrows. Labelled flows read 'Supply factors of production' and 'Supply goods and services' between Households and Firms, 'Spending on goods and services' from Households towards Firms, 'Imports' from Households to Foreign Markets, and 'Investments' from Financial Institutions to Firms. Three flows are left unlabelled and marked instead with red numerals 1, 2 and 3 in circles: 1 on the outer arc running from Firms back to Households, 2 on the arrow from Households down to Financial Institutions, and 3 on the arrow from Foreign Markets up to Firms.",
+  "lettersVisible": [
+   "1",
+   "2",
+   "3",
+   "Households",
+   "Firms",
+   "Financial Institutions",
+   "Foreign Markets"
+  ],
+  "labelMeanings": [
+   {
+    "label": "1",
+    "meaning": "income - the payment firms make to households for factors of production"
+   },
+   {
+    "label": "2",
+    "meaning": "savings - the leakage from households into financial institutions"
+   },
+   {
+    "label": "3",
+    "meaning": "exports - the injection from foreign markets to firms"
+   }
+  ],
+  "questionRef": "2021 OL Section A Q6(a)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2021-OL-paper-p08-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2021-OL-paper-p08-i0.png",
+  "md5": "fec3e83f52ac8dad7f84cfddd07de800",
+  "alt": "The Question 9 stem beside a simple black-and-white line drawing of a classical temple: a triangular pediment carrying the word 'Sustainability' resting on three fluted columns on a plinth. The text reads 'Answer either (a) or (b). (a) Name the 3 pillars of sustainability.' with three numbered blank answer lines.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Section A Q9(a)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2021-OL-paper-p10-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2021-OL-paper-p10-i0.png",
+  "md5": "1591f777b46b83ee939056f6e7006097",
+  "alt": "A single-row table extracted from the Human Development Index for 2019, columns Rank, Country, Human Development Index (HDI) (value), Life expectancy at birth (years) SDG 3, Mean years of schooling (years) SDG 4.6. The row reads 3, Ireland, 0.951, 82.1, 12.5.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q13(a)(i)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2021-OL-paper-p10-i1": {
+  "src": "/exam-figures/economics/markbank/economics-2021-OL-paper-p10-i1.png",
+  "md5": "edb4963ae9dcb843f6162bba1c5919de",
+  "alt": "The matching single-row HDI table for 2020, same columns, reading 2, Ireland, 0.955, 82.3, 12.7.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q13(a)(i)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2021-OL-paper-p12-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2021-OL-paper-p12-i0.png",
+  "md5": "583afcd9f2daaa9161a7c4ba63acd087",
+  "alt": "A part stem beside the Fairtrade certification mark - a black square tile carrying the blue-and-green yin-yang-like figure of a person with a raised arm, above the word FAIRTRADE in white. The text reads '(ii) Explain your understanding of the Fair-Trade Movement. Give two examples of fair-trade products that you can buy.'",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q14(b)(ii)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2021-OL-paper-p13-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2021-OL-paper-p13-i0.png",
+  "md5": "6ce289dd3cc8315b7417b47124959eb1",
+  "alt": "A cost-and-revenue diagram of a firm in perfect competition at long-run equilibrium. Price on the vertical axis, Quantity on the horizontal. A U-shaped average cost curve labelled AC and a steeply rising marginal cost curve labelled MC cross at the filled point B, which sits exactly on a horizontal line running the width of the diagram labelled 'D = AR = MR'. A second, lower U-shaped curve sits to the left. Point B is at the minimum of AC, where price equals minimum average cost and the firm earns normal profit.",
+  "lettersVisible": [
+   "MC",
+   "AC",
+   "D = AR = MR",
+   "B",
+   "Price",
+   "Quantity"
+  ],
+  "labelMeanings": [
+   {
+    "label": "MC",
+    "meaning": "marginal cost"
+   },
+   {
+    "label": "AC",
+    "meaning": "average cost"
+   },
+   {
+    "label": "D = AR = MR",
+    "meaning": "the horizontal demand curve facing a price taker, equal to average revenue and marginal revenue"
+   },
+   {
+    "label": "B",
+    "meaning": "long-run equilibrium, where MC cuts AC at its minimum and the firm makes normal profit"
+   }
+  ],
+  "questionRef": "2021 OL Q12(a)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2021-OL-paper-p14-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2021-OL-paper-p14-i0.png",
+  "md5": "5d357d68e9f65c3388f4071df32923ea",
+  "alt": "A colour photograph of a street flower market, taken along a city street lined with Victorian shopfronts and ornate lamp standards. Dozens of stalls and buckets of cut flowers in every colour fill the foreground and recede down the street. Above it the question text reads 'Discuss three main assumptions of this type of market structure.' Source line 'Adapted from Zupermar.ie'.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q12(b)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2021-OL-paper-p21-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2021-OL-paper-p21-i0.png",
+  "md5": "a0d9fa871f4fba800cea195a16da2570",
+  "alt": "A five-row table of income tax paid on a salary of €18,000 in different countries: Germany €4,770; France €4,015; UK €2,119; Switzerland €1,120; Ireland €510.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q14(c)(i)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2021-OL-paper-p25-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2021-OL-paper-p25-i0.png",
+  "md5": "f0b74325c410d7b6abc9a003df3ddb6e",
+  "alt": "A four-row table headed Factors of Production | Definition | Example. The rows are Land, Labour, Capital and Enterprise. Only the Capital row is filled in, as a worked example: 'Anything that is man-made that is used in the production of goods and services/wealth' with the example 'Machinery'. The other nine cells are blank for the student.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q16(c)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2022-HL-paper-p03-art": {
+  "src": "/exam-figures/economics/markbank/economics-2022-HL-paper-p03-art.png",
+  "md5": "76e2dd33b83f19d509c540e6622191bb",
+  "alt": "A demand curve headed 'DEMAND FOR FACE MASKS', y-axis 'PRICE IN EURO €' from 0 to 7, x-axis 'QUANTITY DEMANDED' from 0 to 20. A thick red line falls from €6 at quantity 2 to €1 at quantity 20, with two red dots marking the points the question uses: €5 at quantity 4 and €4 at quantity 8. Above it the Section A header ('Short Response Questions, 75 marks, Answer 5 out of 10 questions') and the Question 1(a) stem.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Section A Q1(a)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2022 Higher Level — © State Examinations Commission"
+ },
+ "economics-2022-HL-paper-p04-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2022-HL-paper-p04-i0.png",
+  "md5": "1bd3b10dc409339a2cd412dc9df5e1f9",
+  "alt": "A CSO infographic headed 'Quarterly National Accounts Q2 2021' on a dark teal ground. Down the left, GNP up 6.7%, a large 'GDP up 6.3%' with €109.4bn beneath it, and MDD up 8.4%. Eleven rounded panels, each with a small illustration and a green up-arrow percentage: Industry excl. Construction 3.6%, Construction 22.9%, Distribution/Transport/Hotels & Restaurants 0.7%, Information & Comm. 6.2%, Financial & Insurance Activities 2.4%, Professional/Admin & Support Services 4.1%, Personal Consumption 12.6%, Government Expenditure 0.9%, Investment 5.8%, Exports 6.4%, Imports 5.4%. Footnote '% growth Q2 2021 vs Q1 2021'; source www.cso.ie.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Section A Q2(a)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2022 Higher Level — © State Examinations Commission"
+ },
+ "economics-2022-HL-paper-p06-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2022-HL-paper-p06-i0.png",
+  "md5": "aa415ccdf84eaea3079a61dfe7bac32a",
+  "alt": "A three-row table with a green header row reading Injection | Leakage. The statements are: 1. 'The Irish government increases public sector salaries by 1% in 2023.' 2. 'Irish exports increase to record €160bn despite the Covid-19 Pandemic.' 3. 'Irish consumers saved more than €10bn in the first quarter of 2021.' The Injection and Leakage columns are empty tick boxes.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Section A Q4(a)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2022 Higher Level — © State Examinations Commission"
+ },
+ "economics-2022-HL-paper-p08-art": {
+  "src": "/exam-figures/economics/markbank/economics-2022-HL-paper-p08-art.png",
+  "md5": "a14cc58d25a15eba6affeb62b9f2b6d3",
+  "alt": "Two blank diagram frames side by side for the student to draw on, each headed in its own box: 'The Market' on the left and 'The Firm' on the right. The market frame already carries a downward-sloping and an upward-sloping straight line crossing in an X; the firm frame carries only a bare pair of axes. Above them, the tail of the instruction to explain each diagram.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Section A Q6(a)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2022 Higher Level — © State Examinations Commission"
+ },
+ "economics-2022-HL-paper-p10-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2022-HL-paper-p10-i0.png",
+  "md5": "9226cb175e6a5b85811a040ed50d8ea4",
+  "alt": "A line chart headed 'Figure B: Base Interest Rate', y-axis 'Base % Interest Rate' 0 to 5, x-axis 'Year' in two-year steps from 2000 to 2020. The line starts at 3, holds to 2002, falls to 2 by 2004, holds to 2006, spikes to 4 at 2008, falls sharply to 1 by 2010, holds to 2012, then falls to 0 by 2014 and runs flat along the axis to 2020.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Section A Q7(a)(i)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2022 Higher Level — © State Examinations Commission"
+ },
+ "economics-2022-HL-paper-p13-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2022-HL-paper-p13-i0.png",
+  "md5": "ee0945e77c78286df161be7d6b368977",
+  "alt": "A production possibility schedule with columns 'Doritos million (kg)' and 'Tropicana million (l)' and rows lettered A to H: A 0/90, B 20/80, C 38/70, D 50/62 (in red), E 60/55, F 70/48, G 80/35, H 90/0 (in red). Rows D and H are picked out in red because the question moves between them.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "F",
+   "G",
+   "H"
+  ],
+  "labelMeanings": [
+   {
+    "label": "D",
+    "meaning": "50 million kg of Doritos with 62 million litres of Tropicana"
+   },
+   {
+    "label": "H",
+    "meaning": "90 million kg of Doritos with no Tropicana"
+   }
+  ],
+  "questionRef": "2022 HL Section A Q9(a)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2022 Higher Level — © State Examinations Commission"
+ },
+ "economics-2022-HL-paper-p14-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2022-HL-paper-p14-i0.png",
+  "md5": "b4f774f8b2957830b133615254bbce44",
+  "alt": "An RTB infographic on a pale blue ground headed 'Highest and lowest standardised average rents Q2 2021'. By county: Dublin €1,848 per month in a large circle, Donegal €677 per month in a small one. By LEA: Ballymote, Tobercurry Co. Sligo €645 per month and Stillorgan LEA, Co. Dublin €2,440 per month. At right, a white silhouette map of Ireland headed 'Rents in cities Q2 2021' with pinned labels: Galway City €1,355, Dublin City €1,775, Limerick City €1,196, Cork City €1,344, Waterford City €969. Source www.rtb.ie.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q11",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2022 Higher Level — © State Examinations Commission"
+ },
+ "economics-2022-HL-paper-p18-art": {
+  "src": "/exam-figures/economics/markbank/economics-2022-HL-paper-p18-art.png",
+  "md5": "960e4f7c4c40c9e8dc1025fd7ed628c7",
+  "alt": "The pair of market-share charts as printed, both headed in full. Left, 'MARKET SHARE OF DOMESTIC ELECTRICITY SUPPLIERS IN IRELAND 2005' over a single solid blue circle labelled 'ESB (Now Electric Ireland)' with the caption 'HHI in 2005 was 10,000'. Right, the same heading for 2019 over a pie divided Electric Ireland (Formerly ESB) 53%, Bord Gáis Energy 16%, SSE Airtricity 12%, Energia 8%, PrePayPower 7%, Panda 2%, Pinergy 1%, Others 1%, with the caption 'HHI in 2019 was 3,328'.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q12",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2022 Higher Level — © State Examinations Commission"
+ },
+ "economics-2022-HL-paper-p22-art": {
+  "src": "/exam-figures/economics/markbank/economics-2022-HL-paper-p22-art.png",
+  "md5": "c66cc8ef9d3bba72f87dfa1df84a78f4",
+  "alt": "The CSO infographic 'Government Income & Expenditure 2020' in full, as two exploded euro coins. Sources of Income (per euro): Taxes 74c, PRSI 19c, Fees for Services 5c, Other Income 2c. Areas of Expenditure (per euro): Social Benefits 37c, Pay 24c, Goods and Services 14c, Capital Assets 9c, Subsidies 6c, Interest 4c, Grants and Other Payments 4c, Payments to the EU 2c. Source www.cso.ie.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q13",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2022 Higher Level — © State Examinations Commission"
+ },
+ "economics-2022-HL-paper-p26-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2022-HL-paper-p26-i0.png",
+  "md5": "f994a535e4bfdf3ca59877b946c2dce0",
+  "alt": "A four-column table with a green header reading Building Expense | Fixed Cost | Variable Cost | Explanation. Three rows name the expenses: Bags of Cement, Carpenters (Labour), and Purchase price of a construction site. The Fixed Cost, Variable Cost and Explanation cells are all blank for the student.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q14(b)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2022 Higher Level — © State Examinations Commission"
+ },
+ "economics-2022-HL-paper-p27-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2022-HL-paper-p27-i0.png",
+  "md5": "2324a8ba68349b7524583c0df9700cd6",
+  "alt": "A costs table for a housebuilder with columns Units of Housing, Fixed Cost (€), Variable Cost (€), Total Cost (€), Average Total Cost (€) and Marginal Cost (€). Row 1: 100,000 / 260,000 / A (highlighted green) / 360,000 / -. Row 2: 100,000 / 300,000 / 400,000 / B (green) / 40,000. Row 3: 100,000 / 350,000 / 450,000 / 150,000 / C (green). Row 4: 100,000 / 405,000 / 505,000 / 126,250 / 55,000.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [
+   {
+    "label": "A",
+    "meaning": "total cost at one unit - the missing figure is 360,000"
+   },
+   {
+    "label": "B",
+    "meaning": "average total cost at two units - 200,000"
+   },
+   {
+    "label": "C",
+    "meaning": "marginal cost of the third unit - 50,000"
+   }
+  ],
+  "questionRef": "2022 HL Q14(c)(i)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2022 Higher Level — © State Examinations Commission"
+ },
+ "economics-2022-HL-paper-p28-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2022-HL-paper-p28-i0.png",
+  "md5": "1777fcd05026920a6df87f01d88eecb8",
+  "alt": "A horizontal bar chart headed 'Gender Pay Gap: How much less do women earn than men?' with five bars, each labelled with its value: Estonia 21.7 (black), Germany 19.2 (orange), Denmark 14 (red), Ireland 11.3 (green), Luxemburg 1.3 (pale blue). Source 'Adapted from Eurostat'. The question text below reads '(i) Based upon the data above calculate the average gender wage gap across these five European countries. Show all your workings.'",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q15(a)(i)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2022 Higher Level — © State Examinations Commission"
+ },
+ "economics-2022-HL-paper-p30-art": {
+  "src": "/exam-figures/economics/markbank/economics-2022-HL-paper-p30-art.png",
+  "md5": "e929e98822ef1e6dd739706d7b238d7d",
+  "alt": "A line chart headed 'Evolution of Irish Milk Production' over a photographic background of splashing milk, y-axis 'Million litres' from 2,000 to 9,000, x-axis 1975 to 2020. A green line rises from about 3,200 in 1975 to 5,500 by 1985, runs almost flat near 5,000 for thirty years, then climbs steeply from 2015 to an annotated '2020 estimate 8.3bn litres'. Three arrow annotations mark '1973 Ireland Joined the EEC', '1984 Introduction of milk quotas' and '2015 Removal of milk quotas'. Source: CSO.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q15(a)(i)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2022 Higher Level — © State Examinations Commission"
+ },
+ "economics-2022-HL-paper-p32-art": {
+  "src": "/exam-figures/economics/markbank/economics-2022-HL-paper-p32-art.png",
+  "md5": "79c245452214a2bd80669a632866f733",
+  "alt": "A line chart headed 'Euro (€) to Pound Sterling (£) exchange rate', y-axis '€/£ EXCHANGE RATE' from 0.5 to 0.95, x-axis December 2012 to December 2021. The rate opens at 0.81, rises to 0.83 in 2013, falls to a low of 0.74 in 2015, climbs to 0.85 in 2016 and 0.89 in 2017, peaks at 0.90 in 2018, dips to 0.85 in 2019, returns to 0.89 in 2020 and closes at 0.86 in 2021. Source 'Adapted from ecb.europa.eu'.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q16(b)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2022 Higher Level — © State Examinations Commission"
+ },
+ "economics-2022-HL-paper-p33-art": {
+  "src": "/exam-figures/economics/markbank/economics-2022-HL-paper-p33-art.png",
+  "md5": "cc0659fbb42902f27128dc7318433350",
+  "alt": "A column chart headed 'Net Beneficiaries from the EU budget, by member state (2018, in million euros)', y-axis 'Net benefit in € millions' from -20000 to 15000. Red bars below the axis are net contributors: Germany about -17,200, France about -7,400, Italy about -6,600, Sweden about -1,700, Ireland about -400. Blue bars above are net beneficiaries: Spain about 400, Croatia about 600, Luxembourg about 1,600, Hungary about 5,000, Poland about 11,600. Source 'Adapted from www.statista.com'.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q16(c)(i)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2022 Higher Level — © State Examinations Commission"
+ },
+ "economics-2022-OL-paper-p03-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2022-OL-paper-p03-i0.png",
+  "md5": "874701930c8e9f13b50b31a1e8f95fcb",
+  "alt": "A Central Bank of Ireland infographic headed 'Forecast growth* in Irish economy' on a dark teal ground, with a grey silhouette map of Ireland at left and four coloured columns rising left to right, each labelled with its year above and its rate inside: 2020 -4.9% (purple, the only negative), 2021 5.5% (orange), 2022 7.1% (teal), 2023 4.1% (pale green). Footnote '*Modified domestic demand.' and the Banc Ceannais na hÉireann / Central Bank of Ireland logo.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Section A Q1",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2022-OL-paper-p05-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2022-OL-paper-p05-i0.png",
+  "md5": "9d0675b61efbcf1c9b5b5871b091902e",
+  "alt": "A four-row table with a green header reading Substitute Goods | Complementary Goods. The items listed are Samsung S21, iPhone 13 case, iPhone charging plug, and Google Pixel 4A smartphone. Both tick columns are empty.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Section A Q4",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2022-OL-paper-p06-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2022-OL-paper-p06-i0.png",
+  "md5": "e089aff5e87de0bd58d21d7750838c40",
+  "alt": "A line chart headed 'Number of people unemployed: Nov 20 - Nov 21', y-axis 'Number of people' 0 to 250,000, x-axis 'Months' from Nov-20 to Nov-21. The green line starts near 150,000, holds through December, climbs to a peak just under 192,000 in March 2021, stays there in April, then falls steadily to about 133,000 by September and flattens near 135,000 to November.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Section A Q6",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2022-OL-paper-p07-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2022-OL-paper-p07-i0.png",
+  "md5": "e8fd9b7890d088f46f263f344b6ab169",
+  "alt": "A four-row table with a green header reading Fixed Cost | Variable Cost. The costs listed are Wages €1,000, Raw materials €1,500, Light & heat €300, and Rent of the premises €750. Both tick columns are empty.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Section A Q7(ii)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2022-OL-paper-p11-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2022-OL-paper-p11-i0.png",
+  "md5": "d67e0b8c7a21632cbe2bf1cbd0bd228c",
+  "alt": "A cost-and-revenue diagram of a firm in monopolistic competition. Two blue downward-sloping straight lines run from the top left, the steeper one numbered 3 at its foot and the shallower one labelled AR at its foot; the higher of the two is numbered 1 at its head. Two red U-shaped curves rise to the right, the upper labelled AC and numbered 2 near its top, the lower one bottoming out at a large filled black dot labelled G. The horizontal axis is labelled Quantity.",
+  "lettersVisible": [
+   "1",
+   "2",
+   "3",
+   "AC",
+   "AR",
+   "G",
+   "Quantity"
+  ],
+  "labelMeanings": [
+   {
+    "label": "AR",
+    "meaning": "average revenue, the firm's downward-sloping demand curve"
+   },
+   {
+    "label": "AC",
+    "meaning": "average cost"
+   },
+   {
+    "label": "G",
+    "meaning": "the equilibrium point, at the minimum of the lower curve"
+   }
+  ],
+  "questionRef": "2022 OL Q11(a)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2022-OL-paper-p13-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2022-OL-paper-p13-i0.png",
+  "md5": "72b70fdffebdce3d8dffea917cd53392",
+  "alt": "A market schedule with a green header reading Price (€) | Quantity Demanded (Units) | Quantity Supplied (Units). Rows: €9 with 10,000 demanded and 50,000 supplied; €8 with 20,000 and 40,000; €7 with 30,000 and 30,000; €6 with 40,000 and 20,000; €5 with 50,000 and 10,000.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q12(a)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2022-OL-paper-p14-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2022-OL-paper-p14-i0.png",
+  "md5": "da1134706957af87ab35ecf8fe2d33bd",
+  "alt": "A demand and supply diagram for Gym + Coffee clothing. Price on the vertical axis, Quantity on the horizontal. A downward-sloping line labelled D and an upward-sloping line labelled S cross at a filled dot, with dashed guide lines running left to P1 on the price axis and down to Q1 on the quantity axis.",
+  "lettersVisible": [
+   "D",
+   "S",
+   "P1",
+   "Q1",
+   "Price",
+   "Quantity"
+  ],
+  "labelMeanings": [
+   {
+    "label": "D",
+    "meaning": "demand"
+   },
+   {
+    "label": "S",
+    "meaning": "supply"
+   },
+   {
+    "label": "P1",
+    "meaning": "equilibrium price"
+   },
+   {
+    "label": "Q1",
+    "meaning": "equilibrium quantity"
+   }
+  ],
+  "questionRef": "2022 OL Q12(b)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2022-OL-paper-p15-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2022-OL-paper-p15-i0.png",
+  "md5": "ef542f3a9a5734b370dab0b0aae47515",
+  "alt": "A colour photograph of a modern single-storey cafe building - dark brick and full-height glass, with a yellow sign reading 'NINETEEN30 CAFE' above the entrance and a second inside, olive trees in planters and metal bollards along a paved forecourt. Source line 'Adapted from 1930.ie'.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q12(c)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2022-OL-paper-p16-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2022-OL-paper-p16-i0.png",
+  "md5": "fe531cf62c6541e17957ca4474a4b0de",
+  "alt": "A pie chart headed 'Total Government Expenditure: €82.92 Billion' with two slices, the smaller pulled out: Current €71.82 Billion in blue and Capital €11.1 Billion in orange, with a legend at right. Source 'Adapted from gov.ie'. The question below reads '(a)(i) Calculate current expenditure as a percentage of total government expenditure. Show your workings.'",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q13(a)(i)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2022-OL-paper-p19-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2022-OL-paper-p19-i0.png",
+  "md5": "444048139126e96c75d0ee45217c4afa",
+  "alt": "A four-row table with a green header reading Factor of Production | Explanation | Example. Row 1 names Land, row 3 names Capital; rows 2 and 4 leave the factor blank. Two cells are filled in as worked examples: the Example for row 2 is 'Workers', and the Explanation for row 4 is 'Takes a risk with an idea in setting up a business in return for profit.' Every other cell is blank.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q14",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2022-OL-paper-p22-art": {
+  "src": "/exam-figures/economics/markbank/economics-2022-OL-paper-p22-art.png",
+  "md5": "0f5dec17b0ebc24b8130c9f8232bd503",
+  "alt": "A line chart headed 'Corporation Tax Receipts' in red, y-axis '€ millions' 0 to 14,000, x-axis 'Year' 2011 to 2020. The line rises from about 3,500 in 2011 to 4,200 in 2012, runs flat to 2014 near 4,600, climbs steeply to about 6,900 in 2015, rises gently to 8,200 by 2017, jumps to 10,400 in 2018 and continues to about 11,800 by 2020. Source 'Adapted from revenue.ie'.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q15(a)(i)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2022-OL-paper-p25-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2022-OL-paper-p25-i0.png",
+  "md5": "7a8ed47673af603f07f8642ac2374976",
+  "alt": "A table headed 'Minimum Unit Price for Alcohol Products' with columns Beverage, Volume (mls), Alcohol by Volume % (ABV) and Minimum Unit Price € (MUP). Whiskey 700 / 40% / €22.09; Gin 700 / 40% / €22.09; Cider (Can) 500 / 4.3% / €1.70; Stout (Can) 500 / 4.2% / €1.66.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q16(a)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2023-HL-paper-p05-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2023-HL-paper-p05-i0.png",
+  "md5": "1572304334d764a81f6617a7630d9efa",
+  "alt": "A utility table with columns for 1 to 4 units consumed. Total Utility in Units/Utils reads 40, 80, blank, 137. Marginal Utility in Units/Utils reads 40, blank, 35, blank. The four blank cells are outlined in green for the student to complete.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Section A Q3(a)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2023 Higher Level — © State Examinations Commission"
+ },
+ "economics-2023-HL-paper-p06-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2023-HL-paper-p06-i0.png",
+  "md5": "556573b7af1ea3273353af69a40e5c69",
+  "alt": "A cost table with columns for output 1 to 4 units. Total Cost (€) reads 55, 82, 108, 152. Average Cost (€) reads 55, blank, 36, blank. Marginal Cost (€) reads N/A in red, 27, blank, blank. The blank cells are outlined in blue.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Section A Q4(a)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2023 Higher Level — © State Examinations Commission"
+ },
+ "economics-2023-HL-paper-p08-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2023-HL-paper-p08-i0.png",
+  "md5": "c6ad67718ee41c003b622c7142ace58d",
+  "alt": "A three-row table on pale blue with a header reading Tax | Direct Tax | Indirect Tax. The taxes listed are VAT, PAYE, and Customs and Excise Duty. Both tick columns are empty.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Section A Q6(a)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2023 Higher Level — © State Examinations Commission"
+ },
+ "economics-2023-HL-paper-p09-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2023-HL-paper-p09-i0.png",
+  "md5": "4727a746e63da8cb008b755212ec945d",
+  "alt": "A demand and supply diagram of the rental market. Price on the vertical axis, 'Quantity of rental properties' on the horizontal. A red downward-sloping line labelled D crosses a blue upward-sloping line labelled S at a filled black dot, with grey dashed guides to Pe on the price axis and Qe on the quantity axis. Beside it, a ruled 'Explanation:' answer box.",
+  "lettersVisible": [
+   "D",
+   "S",
+   "Pe",
+   "Qe",
+   "Price"
+  ],
+  "labelMeanings": [
+   {
+    "label": "D",
+    "meaning": "demand for rental properties"
+   },
+   {
+    "label": "S",
+    "meaning": "supply of rental properties"
+   },
+   {
+    "label": "Pe",
+    "meaning": "equilibrium rent"
+   },
+   {
+    "label": "Qe",
+    "meaning": "equilibrium quantity of rental properties"
+   }
+  ],
+  "questionRef": "2023 HL Section A Q7(a)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2023 Higher Level — © State Examinations Commission"
+ },
+ "economics-2023-HL-paper-p12-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2023-HL-paper-p12-i0.png",
+  "md5": "adaa233e2b3dfab6ead95ecac48b477a",
+  "alt": "A table adapted from Ireland's National Accounts with columns Description and Value. Net factor income from abroad -€103bn; EU Subsidies €1.7bn; EU Taxes €0.5bn; and Adjustments €89bn, itemised as factor income of redomiciled companies, depreciation on R&D imports and trade in IP, and depreciation on aircraft leasing.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Section A Q10",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2023 Higher Level — © State Examinations Commission"
+ },
+ "economics-2023-HL-paper-p12-i1": {
+  "src": "/exam-figures/economics/markbank/economics-2023-HL-paper-p12-i1.png",
+  "md5": "d6b21f53264d6108ded873c48e7635c0",
+  "alt": "A worked national income ladder. It opens with Gross Domestic Product (GDP) at Current Market Prices €426bn, then a completed step: GDP at CMP 426.00 plus or minus Net Factor Income from Abroad (103.00), giving row A '= Gross National Product (GNP) at Current Market Prices, Ans: €323 bn'. Rows B and C are blank for the student: '= Gross National Income at Current Market Prices' and '= Modified Gross National Income at Current Market Prices', each with an empty Relationships / Workings panel and an empty Answer cell. Black arrows link the steps.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C"
+  ],
+  "labelMeanings": [
+   {
+    "label": "A",
+    "meaning": "Gross National Product at current market prices, worked out as €323bn"
+   },
+   {
+    "label": "B",
+    "meaning": "Gross National Income at current market prices - the student adds EU subsidies and subtracts EU taxes"
+   },
+   {
+    "label": "C",
+    "meaning": "Modified Gross National Income - the student then subtracts the €89bn of adjustments"
+   }
+  ],
+  "questionRef": "2023 HL Section A Q10",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2023 Higher Level — © State Examinations Commission"
+ },
+ "economics-2023-HL-paper-p13-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2023-HL-paper-p13-i0.png",
+  "md5": "1cbcbf01cb8148c4487c3b2010156152",
+  "alt": "A CSO infographic of preliminary Census 2022 results over a purple map of Ireland. Left, headed Population: crowd pictograms with 2016 4,761,865 and 2022 5,123,536, Total Change 361,671, Natural Increase 171,338, Net Migration 190,333, an aircraft graphic marking 'Largest Inward Migration Dublin at +46,559', and a dark roundel reading 'First time the population exceeds 5 million in a census since 1851'. Right, headed Housing: house pictograms with 2016 2,003,645 and 2022 2,124,590, Total Change 120,945, Occupied Homes 1,858,526, Vacant Homes 166,752, Vacancy Rate 7.8% with Percentage Change -9%, Lowest % Vacant South Dublin 4%, Highest % Vacant Leitrim 16%.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q11",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2023 Higher Level — © State Examinations Commission"
+ },
+ "economics-2023-HL-paper-p13-i1": {
+  "src": "/exam-figures/economics/markbank/economics-2023-HL-paper-p13-i1.png",
+  "md5": "a00ca8bfffda31d31fa13755856ed37f",
+  "alt": "A single-row table extracted from the census infographic: Population 2016 4,761,865, Population 2022 5,123,536, Total Change 361,671.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q11(a)(i)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2023 Higher Level — © State Examinations Commission"
+ },
+ "economics-2023-HL-paper-p15-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2023-HL-paper-p15-i0.png",
+  "md5": "fc4f679e2902c015fda8d6452561970d",
+  "alt": "A two-row table from the UNDP Human Development Index with columns Rank, Country, HDI (value), Life expectancy at birth (years) SDG 3, Mean years of schooling (years) SDG 4.4, and Gross national income (GNI) per capita (2017 PPP $) SDG 8.5. Row 8: Ireland 0.945, 82.0, 11.6, 76,169. Row 153: Congo 0.571, 63.5, 6.2, 2,889.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q11(c)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2023 Higher Level — © State Examinations Commission"
+ },
+ "economics-2023-HL-paper-p17-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2023-HL-paper-p17-i0.png",
+  "md5": "cfaa08e81e16802686f4e1c07a39c761",
+  "alt": "The Question 12 stem above a colour photograph of four Avonmore milk cartons standing in a row - fresh milk, Light milk, Low Fat Super Milk and Whole Super Milk, each in different livery. The text reads that a consumer buying milk in the Irish market now faces an abundance of choice from low-fat to super to lactose free, where in the past the market was closer to perfect competition. Source 'Adapted from Irish Times.ie'.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q12(a)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2023 Higher Level — © State Examinations Commission"
+ },
+ "economics-2023-HL-paper-p22-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2023-HL-paper-p22-i0.png",
+  "md5": "c4ba4e8d02a42764428acec5740fb758",
+  "alt": "A four-row data table: Marginal Propensity to Consume (MPC) 0.7; Marginal Propensity to Import (MPM) 0.2; Current equilibrium level of National Income €500m; Level of National Income that would give full employment €750m.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q13(b)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2023 Higher Level — © State Examinations Commission"
+ },
+ "economics-2023-HL-paper-p25-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2023-HL-paper-p25-i0.png",
+  "md5": "4ec6bdef6c266446d60c4d0c2e69cce4",
+  "alt": "A line chart on a blue ground headed 'SEASONALLY ADJUSTED MONTHLY UNEMPLOYMENT RATE', y-axis % from 0 to 8, x-axis by month from Mar-21 to Sep-22. Labelled values fall across the period: 7.6, 7, 5.9, 5.3, 5.2, 4.9, 4.9, 4.2, 4.3, 4.4.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q14(a)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2023 Higher Level — © State Examinations Commission"
+ },
+ "economics-2023-HL-paper-p29-i1": {
+  "src": "/exam-figures/economics/markbank/economics-2023-HL-paper-p29-i1.png",
+  "md5": "8cc6cc72f8a25359f865de9f49aac0cb",
+  "alt": "A line chart headed 'Average electricity price charged to Irish households (2020-2022)', y-axis '€ cent per kwh' 0 to 30, x-axis 'Period' with five half-yearly points: 2020 S1 about 23, 2020 S2 about 25, 2021 S1 about 24, 2021 S2 about 28, 2022 S1 about 26.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q15",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2023 Higher Level — © State Examinations Commission"
+ },
+ "economics-2023-HL-paper-p30-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2023-HL-paper-p30-i0.png",
+  "md5": "27bbf3046eed62b50cd82205aac63cd9",
+  "alt": "A weighted price index worksheet with an orange header: Category, % of income (weight) spent on item(s), Price of item(s) in base year €, Price of item(s) in the current year €, Calculation of Simple Price Index, Weight, Result. Food 60% at 50 rising to 55; Transport 25% at 20 rising to 24; Other Items 15% at 75 rising to 81. The bottom row totals 100% and is headed 'Price Index for the current Year' with a heavily outlined empty result cell. The four right-hand columns are blank throughout.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q15(b)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2023 Higher Level — © State Examinations Commission"
+ },
+ "economics-2023-HL-paper-p31-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2023-HL-paper-p31-i0.png",
+  "md5": "43df64eba16f5d0eac416f428011a281",
+  "alt": "A line chart headed 'Euro (€) to Sterling (£)', y-axis 'Euro (€) to Stg (£)', with three labelled points falling left to right: 0.9 at 01/09/2022, 0.87 at 01/10/2022 and 0.86 at 01/11/2022. Above it the tick boxes 'Appreciation:' and 'Depreciation:' and below it a ruled Explanation box.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q15(c)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2023 Higher Level — © State Examinations Commission"
+ },
+ "economics-2023-OL-paper-p03-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2023-OL-paper-p03-i0.png",
+  "md5": "6d6da2ca5198264dca2778b67b83c346",
+  "alt": "A line chart headed 'Seasonally adjusted monthly unemployment rate', y-axis %, x-axis 'Months' from JUL-22 to JAN-23. Seven labelled markers: 4.3 in July, 4.4 in August, 4.4 in September, 4.5 in October, 4.5 in November, 4.4 in December, 4.4 in January. Source 'Adapted from the CSO'.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Section A Q1",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2023-OL-paper-p06-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2023-OL-paper-p06-i0.png",
+  "md5": "8d47cbfd62fb7c481920e1c9b2bf7d22",
+  "alt": "A three-row table headed Name of Organisation | Tick which is a monopoly structure. The organisations are Aer Lingus, Iarnród Eireann (Irish Rail) and VHI. The tick column is empty.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Section A Q4(a)(i)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2023-OL-paper-p07-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2023-OL-paper-p07-i0.png",
+  "md5": "e97cb144b5b1a28bb35f0e4f70c73e6a",
+  "alt": "A supply diagram for Rugby World Cup tickets. Price on the vertical axis, 'No. of tickets' on the horizontal. A single vertical line labelled S1 stands to the right of the price axis - a perfectly inelastic supply curve. Beneath it a ruled 'Explanation:' box.",
+  "lettersVisible": [
+   "S1",
+   "Price",
+   "No. of tickets"
+  ],
+  "labelMeanings": [
+   {
+    "label": "S1",
+    "meaning": "supply of tickets - vertical, so the quantity is fixed whatever the price"
+   }
+  ],
+  "questionRef": "2023 OL Section A Q5",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2023-OL-paper-p10-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2023-OL-paper-p10-i0.png",
+  "md5": "0b7fb50fcdff153cd030ac4a97e7a0b8",
+  "alt": "An infographic in muted green and maroon over a silhouette map of Ireland: a very large '9,286' above 'HAIR & BEAUTY SALONS', with the caption 'The regional footprint of the sector is an important presence on the streets of the villages, towns, and cities all over the country' and a row of four small shopfront illustrations. Source 'Adapted from Jim Power for HABIC, 2020'.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q11(a)(i)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2023-OL-paper-p11-art": {
+  "src": "/exam-figures/economics/markbank/economics-2023-OL-paper-p11-art.png",
+  "md5": "930a629267c6c1f0914146663d9edf1a",
+  "alt": "A cost-and-revenue diagram of a firm in monopolistic competition, drawn in four colours. Price (€) on the vertical axis. A red line falls steeply from the top left and is labelled MR at its foot. A yellow line falls less steeply and is numbered 2 near its lower end. A green U-shaped curve rises to the right and is labelled MC. A blue U-shaped curve sits above it and is numbered 1 at its top right. Two filled black dots mark points on the diagram: E where the red MR line crosses the green MC curve near the axis, and W at the minimum of the blue curve. The horizontal axis is numbered 3.",
+  "lettersVisible": [
+   "1",
+   "2",
+   "3",
+   "MC",
+   "MR",
+   "E",
+   "W",
+   "Price (€)"
+  ],
+  "labelMeanings": [
+   {
+    "label": "1",
+    "meaning": "average cost"
+   },
+   {
+    "label": "2",
+    "meaning": "average revenue, the firm's demand curve"
+   },
+   {
+    "label": "3",
+    "meaning": "quantity, the horizontal axis"
+   },
+   {
+    "label": "E",
+    "meaning": "the profit-maximising equilibrium where marginal cost cuts marginal revenue"
+   },
+   {
+    "label": "W",
+    "meaning": "the minimum of the average cost curve"
+   }
+  ],
+  "questionRef": "2023 OL Q11(a)(ii)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2023-OL-paper-p13-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2023-OL-paper-p13-i0.png",
+  "md5": "64fdd09394b4a03f416e473397a5eab7",
+  "alt": "A pie chart headed 'Budget Planned Revenue 2023 in € millions' with six labelled slices and a legend: Corporation Tax €14 m, VAT €17 m, Income Tax €27.5 m, Stamp Duties €2 m, Excise Duties €7 m, Other €27.5 m.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q12",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2023-OL-paper-p17-i1": {
+  "src": "/exam-figures/economics/markbank/economics-2023-OL-paper-p17-i1.png",
+  "md5": "16f3dfba42cb27a95098838408a42af6",
+  "alt": "A national income table for 2023 with columns Year, Income, C, Investment, G, Exports and Imports, all in € m. The Income cell is blank; C is 700, Investment 200, G 400, Exports 300 and Imports 200.",
+  "lettersVisible": [
+   "C",
+   "G"
+  ],
+  "labelMeanings": [
+   {
+    "label": "C",
+    "meaning": "consumption"
+   },
+   {
+    "label": "G",
+    "meaning": "government expenditure"
+   }
+  ],
+  "questionRef": "2023 OL Q13(c)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2023-OL-paper-p19-art": {
+  "src": "/exam-figures/economics/markbank/economics-2023-OL-paper-p19-art.png",
+  "md5": "10f1994353bcc293e1c211fa67703279",
+  "alt": "A line chart headed 'Petrol Prices in Ireland: April - September 2022', y-axis 'Price in cent (€)' from 160.00 to 220.00, x-axis 'Months' from Apr-22 to Sep-22. The line rises from about 181 in April to 192 in May and peaks near 213 in June, then falls back through about 199 in July to 187 in August and 184 in September. Source 'Adapted from theaa.ie'.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q14(a)(i)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2023-OL-paper-p20-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2023-OL-paper-p20-i0.png",
+  "md5": "7f60b9ccf55397c205e98261808fcc75",
+  "alt": "A four-row table with output 0, 200 and 400 units. Total Cost €500, €2,500, €4,500. Total Revenue €0, €3,000, blank. Total Profit or Loss -€500 in red, €500 in bold, blank.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q14(b)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2023-OL-paper-p22-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2023-OL-paper-p22-i0.png",
+  "md5": "20bf2b84e266ce725bf30cae5da9ee37",
+  "alt": "A CSO infographic headed 'Licensed for the first time 2021' on a dark ground, with four rows each carrying a vehicle illustration: 101,853 New private cars, Up 20.8% on 2020; 68,042 Used private cars, Down 13.4% on 2020; 28,387 New goods vehicles, Up 32.1% on 2020; 10,631 Used goods vehicles, Down 9.5% on 2020. Beneath, in red, 'TOTAL Number of vehicles = 208,913'. Source 'Adapted from the CSO'.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q15",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2023-OL-paper-p25-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2023-OL-paper-p25-i0.png",
+  "md5": "2a898c4e7b52a6861c306f99815ebeea",
+  "alt": "A four-row table with a green header reading Factor of Production | Explanation | Example. Row 1 LAND is explained as 'Anything supplied by nature which helps in production'; row 2 is blank but its Example is 'Workers'; row 3 CAPITAL has the Example 'Machinery'; row 4 is blank but its Explanation is 'Takes a risk with an idea in setting up a business in return for profit.' The remaining cells are empty.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q16",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2024-HL-paper-p03-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2024-HL-paper-p03-i0.png",
+  "md5": "a5667e7030053c0033d47b6d01e0e006",
+  "alt": "A CSO infographic on a teal ground headed by the CSO logo, made of overlapping circles. The first reads 'Ireland's Economic Interactions with the Rest of the World' over a world map. The second is headed Goods, with a container ship for each side: Exports €76bn, Imports €38bn. The third is headed Services, with a desk-worker illustration for each side: Exports €91bn, Imports €83bn. A fourth circle is cropped by the infographic's own frame at the right edge, as printed.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Section A Q1(a)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2024 Higher Level — © State Examinations Commission"
+ },
+ "economics-2024-HL-paper-p05-art": {
+  "src": "/exam-figures/economics/markbank/economics-2024-HL-paper-p05-art.png",
+  "md5": "88dca7f5218a1ead05db553eed27d223",
+  "alt": "A demand and supply diagram of the electricity market. The vertical axis is 'Price MWh', the horizontal 'Quantity of Electricity'. A red downward-sloping line labelled D crosses a blue upward-sloping line labelled S at a filled black dot, with grey dashed guides running left to '€600 Pe' on the price axis and down to Qe on the quantity axis. Beneath the diagram are the 'Answer (b) or (c)' alternatives and their ruled answer boxes: (b) explain the term price ceiling, (c) explain why the government introduced the €450 energy credit in Budget 2024.",
+  "lettersVisible": [
+   "D",
+   "S",
+   "Pe",
+   "Qe",
+   "Price MWh",
+   "Quantity of Electricity"
+  ],
+  "labelMeanings": [
+   {
+    "label": "D",
+    "meaning": "demand for electricity"
+   },
+   {
+    "label": "S",
+    "meaning": "supply of electricity"
+   },
+   {
+    "label": "Pe",
+    "meaning": "the equilibrium price, €600 per megawatt hour"
+   },
+   {
+    "label": "Qe",
+    "meaning": "the equilibrium quantity of electricity"
+   }
+  ],
+  "questionRef": "2024 HL Section A Q3(a)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2024 Higher Level — © State Examinations Commission"
+ },
+ "economics-2024-HL-paper-p06-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2024-HL-paper-p06-i0.png",
+  "md5": "19c3f4ea0ef5fe6d6067cab4d54c0204",
+  "alt": "A small table comparing two years, 2022 in blue and 2023 in pink. No. of machines 5 then 10; No. of workers 5 then 5; RATIO 1:1 then 2:1, both ratio cells outlined heavily.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Section A Q4(a)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2024 Higher Level — © State Examinations Commission"
+ },
+ "economics-2024-HL-paper-p12-i1": {
+  "src": "/exam-figures/economics/markbank/economics-2024-HL-paper-p12-i1.png",
+  "md5": "9b7cc46f7c799aaf85d1777d405273ef",
+  "alt": "A table adapted from Ireland's National Accounts with columns Description and Value: Net factor income from abroad -€105bn; EU Subsidies €2bn; EU Taxes €0.5bn.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Section A Q10",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2024 Higher Level — © State Examinations Commission"
+ },
+ "economics-2024-HL-paper-p12-i2": {
+  "src": "/exam-figures/economics/markbank/economics-2024-HL-paper-p12-i2.png",
+  "md5": "e556e168f65a83f763f229dfe3dd9e65",
+  "alt": "A worked national income ladder opening at Gross Domestic Product (GDP) at Current Market Prices €430bn. The first step is completed: GDP at CMP 430.00 plus or minus Net Factor Income from Abroad (105.00), giving row (i) '= Gross National Product (GNP) at Current Market Prices, Ans: €325 bn'. Row (ii) '= Gross National Income at Current Market Prices' is left blank with an empty Relationships / Workings panel and an empty Answer cell. Black arrows link the steps.",
+  "lettersVisible": [
+   "(i)",
+   "(ii)"
+  ],
+  "labelMeanings": [
+   {
+    "label": "(i)",
+    "meaning": "Gross National Product at current market prices, worked as €325bn"
+   },
+   {
+    "label": "(ii)",
+    "meaning": "Gross National Income at current market prices - add EU subsidies of €2bn and subtract EU taxes of €0.5bn to get €326.5bn"
+   }
+  ],
+  "questionRef": "2024 HL Section A Q10",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2024 Higher Level — © State Examinations Commission"
+ },
+ "economics-2024-HL-paper-p13-i1": {
+  "src": "/exam-figures/economics/markbank/economics-2024-HL-paper-p13-i1.png",
+  "md5": "6841a3775c47005d3f58771900a521ed",
+  "alt": "A two-bar column chart headed 'Number of foreign tourists' in red: 380,000 for July 2021 and 737,600 for August 2023, each value printed inside its bar. The question below reads '(a)(i) Calculate the percentage increase in foreign tourists in August 2023 compared to July 2021. Show your workings.'",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q11(a)(i)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2024 Higher Level — © State Examinations Commission"
+ },
+ "economics-2024-HL-paper-p18-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2024-HL-paper-p18-i0.png",
+  "md5": "c7cd99a85129e26cb0cf47ba67b1a4f5",
+  "alt": "A weighted price index worksheet with an orange header: Category, % of income (weight) spent on item(s), Price of item(s) in base year €, Price of item(s) in the current year €, Calculation of simple price index, Weight, Result. Food 65% at 60 rising to 66; Transport 20% at 30 rising to 45; Other Items 15% at 80 rising to 96. The final row totals 100% and is headed 'Price Index for the current year'; two cells in it are blocked out in dark grey and the four right-hand columns are blank throughout.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q12(b)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2024 Higher Level — © State Examinations Commission"
+ },
+ "economics-2024-HL-paper-p21-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2024-HL-paper-p21-i0.png",
+  "md5": "63d5c55c92ed1a22a0fcd5c9a580a841",
+  "alt": "A CSO infographic headed 'DAONÁIREAMH CENSUS 2022' and 'Census 2022 Preliminary Results', over a purple map of Ireland. Left, headed Population: crowd pictograms with 2016 4,761,865 and 2022 5,123,536, Total Change 361,671, Natural Increase 171,338, Net Migration 190,333, an aircraft marking 'Largest Inward Migration Dublin at +46,559', and a roundel reading 'First time the population exceeds 5 million in a census since 1851'. Right, headed Housing: 2016 2,003,645 and 2022 2,124,590, Total Change 120,945, Occupied Homes 1,858,526, Vacant Homes 166,752, Vacancy Rate 7.8% with Percentage Change -9%, Lowest % Vacant South Dublin 4%, Highest % Vacant Leitrim 16%.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q13",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2024 Higher Level — © State Examinations Commission"
+ },
+ "economics-2024-HL-paper-p21-i1": {
+  "src": "/exam-figures/economics/markbank/economics-2024-HL-paper-p21-i1.png",
+  "md5": "b4c4d5be8241da9544ec3c2999c3d625",
+  "alt": "A four-row table extracted from the census infographic: Population 2016 4,761,865; Population 2022 5,123,536; Total Change 361,671; Net Migration 190,333.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q13(a)(i)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2024 Higher Level — © State Examinations Commission"
+ },
+ "economics-2024-HL-paper-p23-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2024-HL-paper-p23-i0.png",
+  "md5": "0139e297591cb10dc1c219da5bca1215",
+  "alt": "A line chart headed 'Corporation Tax Receipts', y-axis '€ millions', x-axis 'Year' from 2011 to 2022, with every point labelled: 3,520; 4,216; 4,270; 4,614; 6,872; 7,351; 8,201; 10,385; 10,888; 11,833; 15,324; 22,643. The line rises gently to 2014 and then steeply, most sharply between 2021 and 2022.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q13(c)(i)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2024 Higher Level — © State Examinations Commission"
+ },
+ "economics-2024-HL-paper-p29-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2024-HL-paper-p29-i0.png",
+  "md5": "7d6587986557085ea1872c42319ec47f",
+  "alt": "A two-bar column chart headed 'Debt servicing levels of LDCs 2016 - 2022 ($bn)' in red: $22 for 2016 and $43 for 2022, each value printed inside its bar. Source 'Adapted from UNCTAD.org'.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q15(a)(i)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2024 Higher Level — © State Examinations Commission"
+ },
+ "economics-2024-HL-paper-p34-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2024-HL-paper-p34-i0.png",
+  "md5": "27d32d233f60b291383966c96af8bdde",
+  "alt": "A three-column table with a green header reading Year | Average Income | Quantity Demanded. 2022: €40,000 and 150 units. 2023: €50,000 and 180 units.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q16",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2024 Higher Level — © State Examinations Commission"
+ },
+ "economics-2024-OL-paper-p03-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2024-OL-paper-p03-i0.png",
+  "md5": "a0497908a79f95ad8c11d70dd9cf16ee",
+  "alt": "The UN Sustainable Development Goal 14 tile - a blue square carrying a large '14' beside the words 'LIFE BELOW WATER', over a white pictogram of three wave lines and a fish. Above it the tail of the question stem about conserving and sustainably using the oceans, seas and marine resources; below, 'Adapted from sdgsun.org'.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Section A Q1",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2024-OL-paper-p04-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2024-OL-paper-p04-i0.png",
+  "md5": "fc9d0bf79a631bcb3aa6f5f73dd395fb",
+  "alt": "The Lidl logo on white - a blue square containing a yellow disc outlined in red, with 'LIDL' across it in red and blue lettering.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Section A Q2",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2024-OL-paper-p04-i1": {
+  "src": "/exam-figures/economics/markbank/economics-2024-OL-paper-p04-i1.png",
+  "md5": "c2647dab2009e0410183403309f9c627",
+  "alt": "A two-row tick table, pale blue, reading 'Price competition' and 'Non-price competition' with an empty box beside each.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Section A Q2(a)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2024-OL-paper-p05-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2024-OL-paper-p05-i0.png",
+  "md5": "5b9067706f4ca2412eb593e1517af8bb",
+  "alt": "A two-row true/false table with a pale green header reading Statement | True | False. 1. 'Barriers to entry exist in the Irish coffee shop market.' 2. 'The demand curve / average revenue curve for coffee in an Irish coffee shop is downward-sloping from left to right.' Both tick columns empty.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Section A Q3(a)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2024-OL-paper-p06-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2024-OL-paper-p06-i0.png",
+  "md5": "6eec90aa44b140f40d4b53e33e0c2fbc",
+  "alt": "A two-row table with a red header reading Import | Export | Reason. Row 1: 'Farmers in Ireland selling beef to the German market.' Row 2: 'Irish tourists staying in hotels in France.' The tick columns are empty and the Reason column is ruled for writing.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Section A Q5",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2024-OL-paper-p07-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2024-OL-paper-p07-i0.png",
+  "md5": "d32aed91bd844c83d0bed5cc5334d052",
+  "alt": "A two-row table with a green header reading Statement | Positive | Normative. 1. 'The introduction of the plastic bag levy has led to a decrease in the number of plastic bags being bought by consumers when shopping.' 2. 'The government should increase the amount of the old age pension to reduce poverty levels.' Both tick columns empty.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Section A Q7",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2024-OL-paper-p08-art": {
+  "src": "/exam-figures/economics/markbank/economics-2024-OL-paper-p08-art.png",
+  "md5": "038e3ca5c247418216ff6b164dbf3771",
+  "alt": "A horizontal bar chart headed 'Gini Coefficients 2019 - 2021', y-axis 'Selected Countries', x-axis 'Gini Coefficient' running 0 to 1. Four labelled bars: SOUTH KOREA 0.33 in pink, IRELAND 0.29 in green, USA 0.38 in blue, SLOVAKIA 0.22 in orange. Source 'Adapted from the C[SO]'. Beneath it the answer table for the lowest and highest levels of inequality, and the whole of Question 9 - the Real GDP 4.7% and Real GNI 0.4% table and the abbreviation-completion grid.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Section A Q8",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2024-OL-paper-p08-i2": {
+  "src": "/exam-figures/economics/markbank/economics-2024-OL-paper-p08-i2.png",
+  "md5": "46d0e027af5f358b209ce50edd353fec",
+  "alt": "A two-row table on pale green: Real GDP 4.7%, Real GNI 0.4%.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Section A Q9",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2024-OL-paper-p08-i3": {
+  "src": "/exam-figures/economics/markbank/economics-2024-OL-paper-p08-i3.png",
+  "md5": "5762f603f7fa4f43c8514ff1e1a3ffec",
+  "alt": "An answer table for spelling out two abbreviations: the first row reads 'G ______ | Domestic | P______' and the second 'G ______ | N ______ | Income', with the given words Domestic and Income printed.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Section A Q9",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2024-OL-paper-p09-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2024-OL-paper-p09-i0.png",
+  "md5": "56eff27f93f7ffa251052971f0f70ebf",
+  "alt": "Two demand and supply diagrams side by side, each with Price on the vertical axis and Quantity on the horizontal. Diagram A: a blue upward-sloping supply curve labelled S with two red downward-sloping demand curves, D1 and D2, D2 to the right of D1, and two labelled equilibrium dots E1 and E2, with arrows showing the demand curve shifting right. Diagram B: a red downward-sloping demand curve labelled D with two blue supply curves, S1 and S2, S2 to the left of S1, and dots E1 and E2, with arrows showing the supply curve shifting left.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "D1",
+   "D2",
+   "S",
+   "S1",
+   "S2",
+   "E1",
+   "E2"
+  ],
+  "labelMeanings": [
+   {
+    "label": "Diagram A",
+    "meaning": "demand shifts right from D1 to D2, moving equilibrium from E1 to E2"
+   },
+   {
+    "label": "Diagram B",
+    "meaning": "supply shifts left from S1 to S2, moving equilibrium from E1 to E2"
+   }
+  ],
+  "questionRef": "2024 OL Section A Q10",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2024-OL-paper-p13-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2024-OL-paper-p13-i0.png",
+  "md5": "7f53fabeda568ac0135ad12d6a9e1eda",
+  "alt": "A CSO 'Labour Force Survey Quarter 4, 2022' infographic. On an orange panel, 'Persons in employment': Q4 2021 2,506,000 and Q4 2022 2,574,500. On a navy panel, 'Hours worked per week': Q4 2021 77.6 million hours and Q4 2022 80.6 million hours, with an up-arrow reading 3.9%. Along the foot, a bar chart headed 'Annual change in the Labour Force to Q4 2022' with values by age band: 15-24 years -6,400; 25-34 years +8,800; 35-44 years +16,600; 45-54 years +25,900; 55-64 years +13,600; 65+ years -5,100. Source 'Adapted from the CSO'.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q12",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2024-OL-paper-p15-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2024-OL-paper-p15-i0.png",
+  "md5": "6359e384a23d7a6dc7c634c78e3efe1e",
+  "alt": "A column chart headed 'Seasonally Adjusted Monthly Unemployment Rate', y-axis %, x-axis 'Months' from JUL-22 to JAN-23, each bar labelled: 4.3, 4.4, 4.4, 4.5, 4.5, 4.4, 4.4. Source 'Adapted from the CSO'.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q12(c)(i)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2024-OL-paper-p16-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2024-OL-paper-p16-i0.png",
+  "md5": "4ea71bfc333e339b1a44990c56cf0ef3",
+  "alt": "A cost table with an orange header: Quantity (units of output) 1, 2, 3, 4; Fixed Costs in € 600 in every column; Variable Costs in € 500, 600, 700, 800.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q13(a)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2024-OL-paper-p17-art": {
+  "src": "/exam-figures/economics/markbank/economics-2024-OL-paper-p17-art.png",
+  "md5": "de2203116b0d5a289828d36a31c89d65",
+  "alt": "A horizontal bar chart headed 'Annual Food Price Inflation Rates' with six labelled bars over a '% change' axis running 0% to 120%: Turkey just above 100% in orange, Germany about 12% in grey, Ireland about 7% in green, Switzerland about 2% in pink, Poland about 21% in dark red, Hungary about 47% in blue. Source 'Adapted from Eurostat'. Beneath, the answer table asking which country had the lowest and highest food price inflation, and part (ii) asking for one economic effect of food price inflation on consumers.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q13(b)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2024-OL-paper-p19-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2024-OL-paper-p19-i0.png",
+  "md5": "ffeac4b40515c8cb5147971c77cb94a2",
+  "alt": "A column chart headed 'Estimated Government Expenditure for 2023 in €bn's', y-axis '€ billions', with five labelled bars: Dept of Social Protection 23.4, Dept of Education 9.63, Service of National Debt 3.91, EU Budget Contribution 3.98, Justice 3.30. Source 'Adapted from the Department of Finance'.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q14(a)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2024-OL-paper-p20-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2024-OL-paper-p20-i0.png",
+  "md5": "3e94defb7c63b9e8bfb5d684ec6afa57",
+  "alt": "A two-row tick table on pale green reading 'Direct tax' and 'Indirect tax', each with an empty box.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q14(b)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2024-OL-paper-p21-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2024-OL-paper-p21-i0.png",
+  "md5": "278fd0611e9293559a5a697100590482",
+  "alt": "A trade table with a green header reading Exports | Imports. Exports: UK €18.1 billion, US €52.6 billion, EU €61.7 billion, Rest of World €33.3 billion, Total Exports €165.7 billion. Imports: UK €19.5 billion, US €18.1 billion, EU €34.6 billion, Rest of World €31.5 billion, Total Imports €103.7 billion.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q14(c)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2024-OL-paper-p22-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2024-OL-paper-p22-i0.png",
+  "md5": "16f955ad1a1ec81126cd61b3bd341e25",
+  "alt": "A four-row table with a green header reading Example | Name of Factor of Production | Explanation of Factor of Production. The examples are Farm Machinery, Farm Workers, Farm Owners and Farm Land. Two explanations are given as worked examples - 'Anything that is man-made that is used in the production of goods and services/wealth' for machinery and 'The human effort involved in the production of products on the farm' for workers - and 'Land' is filled in as the factor for Farm Land. The rest is blank.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q15",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2024-OL-paper-p23-art": {
+  "src": "/exam-figures/economics/markbank/economics-2024-OL-paper-p23-art.png",
+  "md5": "1d1b199b3c764e4e3e03aab1b8e22f81",
+  "alt": "A demand and supply diagram of Irish farm output. Price on the vertical axis, Quantity on the horizontal. A red downward-sloping line labelled D crosses a blue upward-sloping line labelled S at a filled dot labelled E, with grey guides to Pe on the price axis and Qe on the quantity axis. Beneath it the note that the price of fertiliser in Ireland increased by 97.7% in the 12 months to October 2022, and the parts asking the student to show the effect on the diagram, explain it, and explain the term substitute good.",
+  "lettersVisible": [
+   "D",
+   "S",
+   "E",
+   "Pe",
+   "Qe"
+  ],
+  "labelMeanings": [
+   {
+    "label": "D",
+    "meaning": "demand for Irish farm output"
+   },
+   {
+    "label": "S",
+    "meaning": "supply of Irish farm output"
+   },
+   {
+    "label": "E",
+    "meaning": "the starting equilibrium"
+   },
+   {
+    "label": "Pe",
+    "meaning": "equilibrium price"
+   },
+   {
+    "label": "Qe",
+    "meaning": "equilibrium quantity"
+   }
+  ],
+  "questionRef": "2024 OL Q15(b)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2024-OL-paper-p24-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2024-OL-paper-p24-i0.png",
+  "md5": "0de35db59655c38b1b157b712c12a5a1",
+  "alt": "A three-row table for a price elasticity calculation with columns Bars of chocolate and Price (€). Before the increase: 90 bars at 100 cent. After the increase: 50 bars at 140 cent. Changes: -40 bars and +40 cent.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q16",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2024-OL-paper-p25-i1": {
+  "src": "/exam-figures/economics/markbank/economics-2024-OL-paper-p25-i1.png",
+  "md5": "8822077261458247e6d618bd84bcd904",
+  "alt": "A line chart headed 'Global Population Levels 1804 - 2022', y-axis 'Population in billions' 0 to 10, x-axis 1800 to 2025. Blue markers rise from 1 billion around 1804, to 2 billion by about 1927, 3 by 1960, 4 by 1974, 5 by 1987, 6 by 1999 and 7 by 2011, with a red marker at 8 billion in 2022. The curve is almost flat for the first century and steepens sharply after 1950.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q16(a)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2024-OL-paper-p27-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2024-OL-paper-p27-i0.png",
+  "md5": "d2c5cfcc903e0116bc8b00dab7deaa7a",
+  "alt": "A two-row table with red year labels: 2022 'First-time home buyers may borrow up to 3.5 times their gross income.' 2023 'First-time home buyers may borrow up to 4 times their gross income.'",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q16(c)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2025-HL-paper-p03-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2025-HL-paper-p03-i0.png",
+  "md5": "191e6d4c69097b5c005b4e5dcea91647",
+  "alt": "The UEFA EURO 2024 Germany tournament logo - the Henri Delaunay trophy on a white ground ringed by curved bands in the colours of the competing nations, above the words UEFA EURO 2024 GERMANY in blue. Above it the Question 1 stem about Germany hosting the championship and 2.7 million people attending the 51 matches; below, the start of the answer box.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Section A Q1(a)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission"
+ },
+ "economics-2025-HL-paper-p04-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2025-HL-paper-p04-i0.png",
+  "md5": "6eda0e5df680b567fd05a667a51d57ff",
+  "alt": "A three-row table on pale blue: Household Disposable Income €43.91 billion; Household Consumption Expenditure €37.32 billion; Household Savings €6.59 billion.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Section A Q2(a)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission"
+ },
+ "economics-2025-HL-paper-p05-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2025-HL-paper-p05-i0.png",
+  "md5": "59a0177879f6e0644a6510c9be0598c2",
+  "alt": "A column chart on a yellow ground headed 'Used Car Imports Entering Ireland - From Japan and the UK in 2014 and 2023', y-axis 'Number of used cars' 0 to 50,000. For 2014: From the UK 44,939 (blue) and From Japan 2,321 (pink). For 2023: From the UK 14,904 and From Japan 21,716. Legend beneath; source 'Adapted from cartell.ie'.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Section A Q3(a)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission"
+ },
+ "economics-2025-HL-paper-p06-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2025-HL-paper-p06-i0.png",
+  "md5": "6d251e4b9d0a8556318d32309ab83d09",
+  "alt": "A column chart styled as chocolate bars, headed \"Ireland's Consumer Price Index (CPI) for Chocolate - Annual Percentage Change from Jan 2024 to June 2024\", y-axis 'Percentage Change'. Six labelled bars falling left to right: JAN-24 9.1, FEB-24 7.7, MAR-24 7.7, APR-24 7.1, MAY-24 5.0, JUN-24 4.8. Source 'Adapted from the CSO'. Beneath, the answer boxes for commenting on the trend and explaining whether it benefits chocolate consumers.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Section A Q4(a)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission"
+ },
+ "economics-2025-HL-paper-p07-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2025-HL-paper-p07-i0.png",
+  "md5": "b7b3ecb8aa624971ce8fb5d6534f425c",
+  "alt": "A two-row table on pale yellow with a header reading Economic Statement | Positive Statement | Normative Statement. 1. 'All citizens in Ireland deserve free healthcare to ensure equal access to medical services.' 2. 'If the Irish government were to raise the corporation tax rate by 3%, it would reduce foreign direct investment in the country by at least 25%.' Both tick columns empty.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Section A Q5(b)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission"
+ },
+ "economics-2025-HL-paper-p08-art": {
+  "src": "/exam-figures/economics/markbank/economics-2025-HL-paper-p08-art.png",
+  "md5": "128c8c9c1343be3f5ce243675aa21960",
+  "alt": "A labour market diagram. 'Wage rate' on the vertical axis, 'Quantity of workers' on the horizontal. A red downward-sloping line labelled D-sub-L crosses a blue upward-sloping line labelled S-sub-L at a filled black dot, with pale blue dashed arrows running left to W-sub-E on the wage axis and down to Q-sub-E on the quantity axis. Above the diagram sit the answer box for part (a)'s 'Price floor:' definition and the part (b) instruction to complete the diagram for a minimum wage above W-sub-E; beneath it, the ruled Explanation box.",
+  "lettersVisible": [
+   "D_L",
+   "S_L",
+   "W_E",
+   "Q_E"
+  ],
+  "labelMeanings": [
+   {
+    "label": "D_L",
+    "meaning": "demand for labour"
+   },
+   {
+    "label": "S_L",
+    "meaning": "supply of labour"
+   },
+   {
+    "label": "W_E",
+    "meaning": "the free-market equilibrium wage"
+   },
+   {
+    "label": "Q_E",
+    "meaning": "the equilibrium quantity of workers"
+   }
+  ],
+  "questionRef": "2025 HL Section A Q6(b)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission"
+ },
+ "economics-2025-HL-paper-p09-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2025-HL-paper-p09-i0.png",
+  "md5": "76631312381571d47be616c54db2741d",
+  "alt": "A three-row table on pale purple with a header reading Product | YED value: 1 Domestic electricity + 0.1; 2 Instant noodles - 0.5; 3 Premium branded clothing + 4.1.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Section A Q7(a)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission"
+ },
+ "economics-2025-HL-paper-p12-art": {
+  "src": "/exam-figures/economics/markbank/economics-2025-HL-paper-p12-art.png",
+  "md5": "61c44c752feb028b5680c60b9157ebe7",
+  "alt": "A drawing of Ireland's economic cycle. 'Output / Real GDP' on the vertical axis, years 2000 to 2020 on the horizontal. A blue curve rises from 2000 to a red-dotted peak marked 2008, labelled A on its rising section; falls steeply to a red-dotted trough marked 2011, labelled B on the falling section; runs flat to about 2013, then climbs steeply to 2015 and on to a high plateau around 2021 before turning down at the right edge. Beneath, the parts asking the student to say which of A or B is an economic boom and which a recession and to justify each, and to outline one factor behind the change in output from 2008 to 2011.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "2008",
+   "2011"
+  ],
+  "labelMeanings": [
+   {
+    "label": "A",
+    "meaning": "the rising section to the 2008 peak - an economic boom"
+   },
+   {
+    "label": "B",
+    "meaning": "the falling section from 2008 to the 2011 trough - an economic recession"
+   }
+  ],
+  "questionRef": "2025 HL Section A Q10",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission"
+ },
+ "economics-2025-HL-paper-p13-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2025-HL-paper-p13-i0.png",
+  "md5": "5098d86f7539e666462fa80105ccb46b",
+  "alt": "A pie chart headed 'Market Share of Irish Private Health Insurance Providers, Q2, 2024' with four labelled slices and a legend: VHI 49% (green), Laya Healthcare 28% (blue), Irish Life Health 20% (yellow), Other 3% (purple). Source 'Adapted from hia.ie'.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q11",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission"
+ },
+ "economics-2025-HL-paper-p17-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2025-HL-paper-p17-i0.png",
+  "md5": "23112502dfc517235851390c3c129746",
+  "alt": "A column chart headed \"Ireland's General Government Debt - As % of GNI* & % of GDP, from 2021 to 2025\", y-axis 'Percentage' 0 to 120, paired bars for each year. As a % of GNI*: 101, 82, 76, 72, 70. As a % of GDP: 54, 44, 44, 42, 39. The last two years are marked 2024f and 2025f. Source 'Adapted from the NTMA'.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q12",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission"
+ },
+ "economics-2025-HL-paper-p18-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2025-HL-paper-p18-i0.png",
+  "md5": "f9a531325b060e708d2e126c558e8992",
+  "alt": "Two doughnut charts side by side comparing Ireland's tax revenues. 2017: Income Tax 40%, VAT 26%, Other 18%, Corporation Tax 16%. 2023: Income Tax 37%, Corporation Tax 27%, VAT 23%, Other 13%. Each has its own legend.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q12(b)(i)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission"
+ },
+ "economics-2025-HL-paper-p21-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2025-HL-paper-p21-i0.png",
+  "md5": "a2e30d73c2ae6cd9ba37c25f7d81a3b5",
+  "alt": "A column chart on a yellow ground headed \"Value of Ireland's Exported Goods By Region - From January to June, 2024 (Total: €108 billion)\", y-axis 'VALUE OF EXPORTS, € BILLION' 0 to 50. Five labelled bars: European Union 42, Great Britain 8, Northern Ireland 3, United States 34, Rest of the World 21. Source 'Adapted from the CSO'.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q13(a)(i)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission"
+ },
+ "economics-2025-HL-paper-p23-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2025-HL-paper-p23-i0.png",
+  "md5": "88b9e37b88b01b6db6fb1794e71e05d0",
+  "alt": "A horizontal bar chart of overseas development aid as a percentage of gross national income, each bar carrying a national flag and a value: Norway 1.09%, Luxembourg 0.99%, Ireland 0.67%, Netherlands 0.66%, Switzerland 0.60%. A dashed vertical line marks the '0.70% United Nations target'. Source 'Adapted from Statista'.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q14",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission"
+ },
+ "economics-2025-HL-paper-p25-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2025-HL-paper-p25-i0.png",
+  "md5": "1072d067a9a207cffd5331765e7c2979",
+  "alt": "A CSO graphic headed 'Of internet users...' showing two illustrated figures with laptop and phone against wifi arcs, captioned '84% of Males' and '85% of Females' above the words 'Bought online'. Source 'Adapted from Household Digital Consumer Behaviour 2024, CSO'.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q15",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission"
+ },
+ "economics-2025-HL-paper-p26-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2025-HL-paper-p26-i0.png",
+  "md5": "662e22310ed6ea9914352347c1afb510",
+  "alt": "A market schedule on pale purple with columns Price (€), Quantity Demanded (units) and Quantity Supplied (units): €1.00 with 50,000 demanded and 10,000 supplied; €1.50 with 40,000 and 20,000; €2.00 with 30,000 and 30,000; €2.50 with 20,000 and 40,000; €3.00 with 10,000 and 50,000.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q15(b)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission"
+ },
+ "economics-2025-HL-paper-p30-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2025-HL-paper-p30-i0.png",
+  "md5": "487aa541592eb2befd46e3d4f8638aad",
+  "alt": "A column chart headed \"Annual % Changes in Ireland's Residential Property Price Index (RPPI) - From March to August, 2024\", six labelled blue bars rising left to right: Mar-24 7.4%, Apr-24 7.9%, May-24 8.5%, Jun-24 8.9%, Jul-24 9.6%, Aug-24 10.1%.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q16(b)(i)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission"
+ },
+ "economics-2025-HL-paper-p32-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2025-HL-paper-p32-i0.png",
+  "md5": "731a8e90513665be16f3d44bca0d8f6f",
+  "alt": "A three-column table on pale green: Year 2015, 2019 and 2025f, with Government Expenditure of €54 billion, €67 billion and €105.4 billion.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q16",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission"
+ },
+ "economics-2025-HL-paper-p33-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2025-HL-paper-p33-i0.png",
+  "md5": "560ddb3312f08233f387e4b766f440ea",
+  "alt": "A cost table with an orange header: Output of Smoothies 0, 20, 40, 60; Fixed Cost (€) 60 throughout; Variable Cost (€) 0, A (highlighted green), 30, 55; Total Cost (€) 60, 70, 90, 115; Average Cost (€) dash, 3.50, 2.25, B (highlighted green).",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [
+   {
+    "label": "A",
+    "meaning": "variable cost at an output of 20 smoothies - €10"
+   },
+   {
+    "label": "B",
+    "meaning": "average cost at an output of 60 smoothies - €1.92"
+   }
+  ],
+  "questionRef": "2025 HL Q16(a)(i)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission"
+ },
+ "economics-2025-HL-paper-p34-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2025-HL-paper-p34-i0.png",
+  "md5": "3ad2659ebc505ef76997c7583bc79847",
+  "alt": "A cost diagram drawn on a squared grid. The vertical axis is labelled 'Costs' in red and the horizontal 'Quantity'. Two red U-shaped short-run average cost curves are drawn and labelled: SRAC subscript 1, the narrower and higher of the two, sitting to the left; and SRAC subscript 2, wider and lower, sitting to its right. The two curves cross on the right-hand limb of SRAC 1.",
+  "lettersVisible": [
+   "SRAC 1",
+   "SRAC 2",
+   "Costs",
+   "Quantity"
+  ],
+  "labelMeanings": [
+   {
+    "label": "SRAC 1",
+    "meaning": "the short-run average cost curve of the smaller plant"
+   },
+   {
+    "label": "SRAC 2",
+    "meaning": "the short-run average cost curve of the larger plant, with a lower minimum"
+   }
+  ],
+  "questionRef": "2025 HL Q16",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission"
+ },
+ "economics-2025-HL-paper-p35-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2025-HL-paper-p35-i0.png",
+  "md5": "b49d3c5c405f86c89977ea50a0a0e24e",
+  "alt": "A two-bar column chart headed \"Insolvencies in Ireland's Hospitality Sector H1, 2023 & H1, 2024\", y-axis 'NO. OF INSOLVENCIES' 0 to 100. H1 2023 is 41 in navy; H1 2024 is 77 in orange. Source 'Adapted from Deloitte (June, 2024)'.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q16",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission"
+ },
+ "economics-2025-OL-paper-p03-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2025-OL-paper-p03-i0.png",
+  "md5": "44d2fa13f0a179c10aadbc98849f0373",
+  "alt": "The Central Statistics Office logo - a dark navy tile carrying the letters CSO set as three rings in pale green, teal and orange.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Section A Q1",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2025-OL-paper-p04-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2025-OL-paper-p04-i0.png",
+  "md5": "c0989c8975a04504b0ffd2e5cb3f30a4",
+  "alt": "A teal-outlined callout with a stack-of-books icon, reading 'Extension of the Free Schoolbooks initiative to all senior cycle pupils in recognised post primary schools within the free education scheme'. Source 'Adapted from gov.ie'.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Section A Q2",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2025-OL-paper-p05-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2025-OL-paper-p05-i0.png",
+  "md5": "0b0ba887ffa09deacd06de2f0d2efed6",
+  "alt": "A two-column tick table on pale green reading 'Private benefit' and 'Social benefit', with an empty row beneath.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Section A Q3(a)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2025-OL-paper-p05-i1": {
+  "src": "/exam-figures/economics/markbank/economics-2025-OL-paper-p05-i1.png",
+  "md5": "ba13b5c92e1c2a98e880f6ffd701ac89",
+  "alt": "A two-column tick table on pale orange reading 'Agree' and 'Disagree', with an empty row beneath.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Section A Q3(b)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2025-OL-paper-p07-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2025-OL-paper-p07-i0.png",
+  "md5": "679cbb4b94f11431c1d47981280846a4",
+  "alt": "A colour photograph of a pile of discarded disposable vapes on a wooden surface - a dozen or more brightly coloured plastic devices in blue, orange, pink, green and yellow, several with their batteries and mouthpieces exposed. Source 'Adapted from RTE.ie'.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Section A Q6",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2025-OL-paper-p09-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2025-OL-paper-p09-i0.png",
+  "md5": "4067871a59401474114f98c3f6190b25",
+  "alt": "A product photograph of eight Apple Watch Series 10 models in a row, each with a different case and strap - yellow woven, dark green, plum leather, black mesh, cream, blue, pale silver and rose gold - and each screen showing a watch face or photo. Source www.apple.com.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Section A Q9",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2025-OL-paper-p09-i1": {
+  "src": "/exam-figures/economics/markbank/economics-2025-OL-paper-p09-i1.png",
+  "md5": "1e1e729a202224e9fcc31091360a4013",
+  "alt": "A three-row table on pale blue with a header reading Name of Organisation | Tick which is a Monopoly structure. The organisations are Ryanair, An Post (mail service for letter post) and Vodafone. The tick column is empty.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Section A Q8(i)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2025-OL-paper-p09-i2": {
+  "src": "/exam-figures/economics/markbank/economics-2025-OL-paper-p09-i2.png",
+  "md5": "d156c07f98205653a5ec1ab56857b94e",
+  "alt": "A two-row table with a purple header reading Substitute | Complement | Reason. The items are 'Apple iPhone 16' and 'Samsung Galaxy watch 7'. The tick columns are empty and the Reason column is ruled for writing.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Section A Q9",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2025-OL-paper-p10-art": {
+  "src": "/exam-figures/economics/markbank/economics-2025-OL-paper-p10-art.png",
+  "md5": "72dce5e9aa4ef33b3a738870f3f62a4b",
+  "alt": "A supply diagram for concert tickets. 'Price' on the vertical axis, 'No. of Tickets' on the horizontal. A single red vertical line labelled S stands above the value 82,300 on the quantity axis - a perfectly inelastic supply curve.",
+  "lettersVisible": [
+   "S",
+   "Price",
+   "No. of Tickets",
+   "82,300"
+  ],
+  "labelMeanings": [
+   {
+    "label": "S",
+    "meaning": "supply of tickets - vertical at the stadium's capacity of 82,300"
+   }
+  ],
+  "questionRef": "2025 OL Section A Q10(ii)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2025-OL-paper-p11-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2025-OL-paper-p11-i0.png",
+  "md5": "76467da2e9e750e133989e244f2e9621",
+  "alt": "The Section B header (Extended Response Questions, 300 marks, Answer 4 out of 6 questions), the Question 11 stem, and a colour photograph of a fruit and vegetable stall in the English Market in Cork City - a covered Victorian market hall with an ornate iron gallery, a long stall of boxed produce under a yellow canopy, a stallholder serving and shoppers in the aisle, with a 'CORK FOOD CAPITAL OF IRELAND' roundel on the wall behind. Source www.expedia.com.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q11(a)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2025-OL-paper-p14-art": {
+  "src": "/exam-figures/economics/markbank/economics-2025-OL-paper-p14-art.png",
+  "md5": "edff28bd87126ee56fd81874314c631e",
+  "alt": "A pie chart headed 'Total Government Expenditure: €105.4 billion' with two slices, the smaller pulled out: Current Expenditure €90.5 billion in dark teal and Capital Expenditure €14.9 billion in orange, with a legend beneath. Below it the part asking the student to calculate capital expenditure as a percentage of the total, and part (ii) on whether €360 million for walking and cycling infrastructure is current or capital expenditure.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q13(a)(i)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2025-OL-paper-p17-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2025-OL-paper-p17-i0.png",
+  "md5": "e593a2db5eaa8dd5ccea74210f02f808",
+  "alt": "A two-column table on pale green reading 'Irish government' and 'Employers', with an empty row beneath.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q13",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2025-OL-paper-p18-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2025-OL-paper-p18-i0.png",
+  "md5": "5b4477fdc25b0f9ae62fc6e3a7793c6b",
+  "alt": "A cost and revenue table with an orange header: Quantity (units of output) 1, 2, 3, 4; Average Costs (AC) in € 300, 250, 200, 300; Marginal Costs (MC) in € 150, 100, 200, 400; Marginal Revenue (MR) in € 200 in every column.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q14",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2025-OL-paper-p22-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2025-OL-paper-p22-i0.png",
+  "md5": "aed3841101b17f77a3f8c3c97b6dd849",
+  "alt": "A table on pale green comparing Ireland in 2003 and 2022: Gross National Income Per Capita (US $) 44,194 then 87,467; Life Expectancy at Birth (in years) 77.6 then 82.7; Expected Years of Schooling (in years) 16.8 then 19.1; HDI Figure 0.87 then 0.95, highlighted yellow.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q15",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2025-OL-paper-p22-i1": {
+  "src": "/exam-figures/economics/markbank/economics-2025-OL-paper-p22-i1.png",
+  "md5": "7a675a8954aaa0ffa3b8b9b096a62586",
+  "alt": "A two-column tick table on green reading 'Improved' and 'Disimproved', with an empty row beneath.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q15",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2025-OL-paper-p23-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2025-OL-paper-p23-i0.png",
+  "md5": "46a2f371e0cfb19fec0d937d574533be",
+  "alt": "A two-column tick table on pale orange reading 'Agree' and 'Disagree', with an empty row beneath.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q15",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2025-OL-paper-p24-art": {
+  "src": "/exam-figures/economics/markbank/economics-2025-OL-paper-p24-art.png",
+  "md5": "a37096cfcd088cacc11f445aed5d2d28",
+  "alt": "A demand and supply diagram of the housing market. Price on the vertical axis, Quantity on the horizontal. A red downward-sloping line labelled D crosses a blue upward-sloping line labelled S at a filled dot labelled E, with grey arrows running left to Pe and down to Qe. Beneath it the parts asking the student to show the effect of a forecast population increase on the diagram, explain it, and give a positive or negative effect of the Dublin Quays traffic restrictions.",
+  "lettersVisible": [
+   "D",
+   "S",
+   "E",
+   "Pe",
+   "Qe"
+  ],
+  "labelMeanings": [
+   {
+    "label": "D",
+    "meaning": "demand for housing"
+   },
+   {
+    "label": "S",
+    "meaning": "supply of housing"
+   },
+   {
+    "label": "E",
+    "meaning": "the starting equilibrium"
+   },
+   {
+    "label": "Pe",
+    "meaning": "equilibrium price"
+   },
+   {
+    "label": "Qe",
+    "meaning": "equilibrium quantity"
+   }
+  ],
+  "questionRef": "2025 OL Q16(b)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2025-OL-paper-p24-i1": {
+  "src": "/exam-figures/economics/markbank/economics-2025-OL-paper-p24-i1.png",
+  "md5": "94002baead1aac37872fb94f7ef3444f",
+  "alt": "A two-column tick table on pale orange reading 'Positive' and 'Negative', with an empty row beneath.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q16(b)(iii)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2025-OL-paper-p25-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2025-OL-paper-p25-i0.png",
+  "md5": "89887f285a6162b864b40f01bedaa95f",
+  "alt": "A CSO infographic headed 'Government Finance Statistics 2023 (April 2024)', laid out as two matching panels. For 2022: Government Balance €8.6bn, 1.7% of GDP, shown as a balance scale with Expenditure €107.3bn against Revenue €116.0bn; Government Debt €224.7bn at 44.4% of GDP, with an illustrated figure carrying a tag reading 'Per Person €43,354'. For 2023: Government Balance €8.3bn, 1.7% of GDP, Expenditure €115.4bn against Revenue €123.7bn; Government Debt €220.7bn at 43.7% of GDP, tagged 'Per Person €41,781'. Source www.cso.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q15(c)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2025-OL-paper-p26-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2025-OL-paper-p26-i0.png",
+  "md5": "6c3ed947931619fd07f9283be17fe713",
+  "alt": "A two-row tick table on pale green reading 'Direct tax' and 'Indirect tax', with empty boxes.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q16",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2025-OL-paper-p27-art": {
+  "src": "/exam-figures/economics/markbank/economics-2025-OL-paper-p27-art.png",
+  "md5": "4dcf8c45393e61d95bb8828960ce4b96",
+  "alt": "A line chart headed 'CPI - ALL ITEMS Annual Percentage Change', y-axis 'Annual % Change' 0 to 3, x-axis May 2024 to Sep 2024. A green line falls through labelled points 2.6, 2.2, 2.2, 1.7 and 0.7. Source 'Adapted from CSO'. Beneath, the part asking what CPI stands for and the part asking for the overall trend.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q16",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2025-OL-paper-p28-i0": {
+  "src": "/exam-figures/economics/markbank/economics-2025-OL-paper-p28-i0.png",
+  "md5": "db5d7723098f836d01bece4e7a9b1667",
+  "alt": "The UN Sustainable Development Goal 13 tile - a green square carrying a large '13' beside the words 'CLIMATE ACTION', over a white eye-shaped pictogram enclosing the globe. Beneath it the part asking the student to identify one action each sector of the Irish economy could take to reduce the effects of climate change, and the header of the Agricultural Sector answer box.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q16",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2025 Ordinary Level — © State Examinations Commission"
  }
 }

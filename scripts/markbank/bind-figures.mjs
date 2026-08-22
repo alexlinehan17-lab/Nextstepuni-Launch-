@@ -39,7 +39,7 @@ const MANIFEST = resolve(ROOT, 'components/MarkBank/figures.json');
 const SUBJECT_TITLE = {
   biology: 'Biology', chemistry: 'Chemistry', physics: 'Physics',
   'agricultural-science': 'Agricultural Science', business: 'Business',
-  'home-economics': 'Home Economics',
+  'home-economics': 'Home Economics', economics: 'Economics',
 };
 
 const argv = process.argv.slice(2);

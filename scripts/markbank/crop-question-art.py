@@ -51,14 +51,41 @@ def is_text_rule(r):
     )
 
 
-def art_box(page, ignore_rules=False):
+def drawn_points(page):
+    """Every point on a curved or diagonal stroke.
+
+    An answer box and a table grid are ruled: their every stroke is horizontal
+    or vertical. A chart is not. This is what separates a wide chart FRAME from
+    a wide answer box, which are otherwise the same rectangle.
+    """
+    pts = []
+    for d in page.get_drawings():
+        for it in d["items"]:
+            if it[0] == "c":
+                pts.extend(it[1:])
+            elif it[0] == "l":
+                a, b = it[1], it[2]
+                if abs(a.x - b.x) > 3 and abs(a.y - b.y) > 3:
+                    pts.extend((a, b))
+    return pts
+
+
+def art_box(page, ignore_rules=False, keep_charts=False):
     """The union of the page's real artwork, excluding answer-box rules."""
     boxes = []
+    drawn = drawn_points(page) if keep_charts else []
     for d in page.get_drawings():
         r = fitz.Rect(d["rect"])
         if r.is_empty:
             continue
         if r.width > page.rect.width * BOX_MIN_WIDTH_FRACTION and r.height > 8:
+            # A chart drawn on the page rather than pasted in as an image is
+            # framed by a rectangle as wide as an answer box, and was being
+            # thrown away as one - the 2021 Higher ECB interest-rate chart came
+            # out as its own bottom axis and nothing else. A frame with a curve
+            # or a diagonal inside it is artwork.
+            if keep_charts and any(p in r for p in drawn):
+                boxes.append(r)
             continue          # a ruled answer box, not artwork
         if r.width < 3 and r.height < 3:
             continue          # a stray rule or tick
@@ -83,6 +110,13 @@ def main() -> int:
     ap.add_argument("-o", "--out", type=Path, required=True)
     ap.add_argument("--scale", type=float, default=3.0)
     ap.add_argument(
+        "--keep-charts",
+        action="store_true",
+        help="keep a wide framed rectangle when it has a curved or diagonal stroke "
+             "inside it, i.e. it is a chart drawn on the page rather than an answer "
+             "box. Opt-in, so no crop produced before this existed can change.",
+    )
+    ap.add_argument(
         "--ignore-rules",
         action="store_true",
         help="drop flat rules (underlined words) from the artwork extent. Opt-in, "
@@ -95,7 +129,7 @@ def main() -> int:
 
     doc = fitz.open(args.paper)
     page = doc[args.page - 1]
-    box = art_box(page, ignore_rules=args.ignore_rules)
+    box = art_box(page, ignore_rules=args.ignore_rules, keep_charts=args.keep_charts)
     if box is None:
         print(f"no artwork found on page {args.page}", file=sys.stderr)
         return 3
