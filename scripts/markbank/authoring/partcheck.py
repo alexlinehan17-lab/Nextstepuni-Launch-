@@ -81,13 +81,57 @@ def covered_by_text(text, texts):
     return any(a[:LEAD] in b or b[:LEAD] in a for b in texts if len(b) >= FLOOR)
 
 
+# A cue is the line the scheme reprints above its own answer. In Home Economics
+# it is the question verbatim; in Business it is often the tariff instead —
+# "4m (b) 2 x3m (2+1)" — and in Biology it can be a rubric about surplus answers.
+# So a cue is only used as a question when it reads like one.
+CUE_IS_A_QUESTION = re.compile(
+    r'^(state|name|explain|describe|outline|give|identify|list|define|suggest|discuss|'
+    r'calculate|distinguish|comment|evaluate|illustrate|what|which|why|how|where|when)\b',
+    re.I)
+
+
+def question_of(P, S, pkey, skey):
+    """The best text available for a part: the paper's, else the scheme's cue.
+
+    Business and Home Economics set their papers as answerbooks, and the generic
+    parser returns page furniture for most of their parts. Their schemes reprint
+    the question, so where the paper gives nothing usable the cue stands in.
+    """
+    text = P.text(*pkey)
+    if squash(text) and len(squash(text)) >= FLOOR:
+        return text
+    cue = (S.cues or {}).get(skey) if hasattr(S, 'cues') else None
+    if cue and CUE_IS_A_QUESTION.match(cue.strip()) and len(squash(cue)) >= FLOOR:
+        return cue
+    return text
+
+
+def unreadable(P, keys):
+    """Parts whose 'question' is a block the parser handed to several of them.
+
+    Home Economics sets its paper as an answerbook, and the generic parser
+    returns the same run of page furniture — 'Part Start each question on a new
+    page Question' — as the text of twelve consecutive parts of the 2021 Higher
+    paper. Compared against the cards, all twelve miss, and all twelve questions
+    turn out to be carded already: the part is unmeasurable here, not uncovered.
+
+    One question can legitimately be shared by two parts, so the line is drawn
+    at three. Nothing in the corpus prints one question three times.
+    """
+    seen = {}
+    for k, text in keys:
+        seen.setdefault(squash(text), []).append(k)
+    return {k for text, ks in seen.items() if len(ks) > 2 and text for k in ks}
+
+
 def report(subject, show=False):
     if subject in DEFER:
         print(f'{subject:<22} not measured here — use {DEFER[subject]}')
         return 0, 0
     by_ref = C.covered(subject)
     by_text = asked(subject)
-    total = open_ = ref_only = text_only = 0
+    total = open_ = ref_only = text_only = unread = 0
     for year in range(2021, 2026):
         for level in ('hl', 'ol'):
             try:
@@ -95,8 +139,14 @@ def report(subject, show=False):
             except Exception:
                 continue
             texts = by_text.get((year, level), [])
-            for skey, (pkey, _) in {**positional, **pairs}.items():
+            paired = {**positional, **pairs}
+            asks = {sk: question_of(P, S, pk, sk) for sk, (pk, _) in paired.items()}
+            shared = unreadable(P, [(pk, asks[sk]) for sk, (pk, _) in paired.items()])
+            for skey, (pkey, _) in paired.items():
                 if not S.points(*skey):
+                    continue
+                if pkey in shared and not CUE_IS_A_QUESTION.match((asks[skey] or '').strip()):
+                    unread += 1
                     continue
                 q, letter, roman = pkey
                 total += 1
@@ -109,7 +159,7 @@ def report(subject, show=False):
                                    and (roman is None or not romans or roman in romans))
                     if hit_ref:
                         break
-                hit_text = covered_by_text(P.text(*pkey), texts)
+                hit_text = covered_by_text(asks[skey], texts)
                 if hit_ref and not hit_text:
                     ref_only += 1
                 if hit_text and not hit_ref:
@@ -119,12 +169,14 @@ def report(subject, show=False):
                 open_ += 1
                 if show:
                     print(f'-- {year} {level.upper()} {P.ref(pkey)}  scheme={skey}')
-                    print(f'   Q: {(P.text(*pkey) or "(no paper text)")[:170]}')
+                    print(f'   Q: {(asks[skey] or "(no paper text)")[:170]}')
                     for pt in S.points(*skey)[:4]:
                         print(f'   * {pt[:150]}')
     pct = 100 - (open_ * 100 // total) if total else 0
+    tail = f'   (reference only {ref_only}, text only {text_only}'
+    tail += f', {unread} unmeasurable)' if unread else ')'
     print(f'{subject:<22} {total:>5} parts   {total - open_:>5} covered   {open_:>5} open   '
-          f'{pct:>3}%   (reference only {ref_only}, text only {text_only})')
+          f'{pct:>3}%{tail}')
     return total, open_
 
 
