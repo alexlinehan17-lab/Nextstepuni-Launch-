@@ -13357,6 +13357,146 @@
   "notes": ""
  },
  {
+  "id": "econ-2025-hl-q15-a-i-agree",
+  "topicId": "economics-3-5",
+  "conceptId": "the-case-for-regulating-gig-work",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q15(a)(i) — agree",
+  "questionText": "Gig economy workers need greater protection and regulation. Do you AGREE with the statement? Explain your answer.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 7",
+   "answer": 1,
+   "ofParts": 6,
+   "perPart": 7
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason to agree — any one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "One reason, 7 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "Lack of job security – gig workers usually lack permanent contracts / have no guarantee of continued employment. This instability may lead to financial insecurity and difficulty in obtaining loans or mortgages.",
+      "Absence of employment rights – many gig workers are classified as independent contractors rather than employees. This means they miss out on protections like sick pay, holiday pay, and unfair dismissal rights. Stronger regulation could ensure they receive basic employment rights.",
+      "Low / unpredictable earnings – in contrast to traditional jobs, gig workers may struggle with fluctuating income levels. This makes it hard to budget and plan financially. Minimum wage protections should be extended to gig workers to ensure fair pay.",
+      "Lack of social protection – many gig workers do not have access to social security benefits such as PRSI contributions, which affect their entitlement to state pensions, unemployment benefits, and illness benefits. A reclassification of their employment status could improve their social protection coverage.",
+      "Exploitation by digital platforms – digital platforms such as food delivery and taxi hailing services often dictate pricing and working conditions, without consulting workers. More oversight is needed to prevent unfair treatment and ensure better working conditions.",
+      "Lack of taxation clarity – many gig workers face confusion regarding their tax liabilities as self-employed citizens. Clearer regulations could simplify tax compliance and prevent potential legal issues arising."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2025-hl-q15-a-i-disagree",
+  "topicId": "economics-3-5",
+  "conceptId": "the-case-against-regulating-gig-work",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q15(a)(i) — disagree",
+  "questionText": "Gig economy workers need greater protection and regulation. Do you DISAGREE with the statement? Explain your answer.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 7",
+   "answer": 1,
+   "ofParts": 11,
+   "perPart": 7
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason to disagree — any one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "One reason, 7 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "Lack of job security – gig workers usually lack permanent contracts / have no guarantee of continued employment. This instability may lead to financial insecurity and difficulty in obtaining loans or mortgages.",
+      "Absence of employment rights – many gig workers are classified as independent contractors rather than employees. This means they miss out on protections like sick pay, holiday pay, and unfair dismissal rights. Stronger regulation could ensure they receive basic employment rights.",
+      "Low / unpredictable earnings – in contrast to traditional jobs, gig workers may struggle with fluctuating income levels. This makes it hard to budget and plan financially. Minimum wage protections should be extended to gig workers to ensure fair pay.",
+      "Lack of social protection – many gig workers do not have access to social security benefits such as PRSI contributions, which affect their entitlement to state pensions, unemployment benefits, and illness benefits. A reclassification of their employment status could improve their social protection coverage.",
+      "Exploitation by digital platforms – digital platforms such as food delivery and taxi hailing services often dictate pricing and working conditions, without consulting workers. More oversight is needed to prevent unfair treatment and ensure better working conditions.",
+      "Lack of taxation clarity – many gig workers face confusion regarding their tax liabilities as self-employed citizens. Clearer regulations could simplify tax compliance and prevent potential legal issues arising.",
+      "Flexibility for workers – many gig workers choose this type of work because it offers flexibility. They can decide when and how much they work. It allows them to balance other commitments like education, caregiving, or a second job. If stricter regulations are introduced, companies may reduce this flexibility.",
+      "More employment opportunities – the gig economy allows workers to earn money quickly without going through long hiring processes. For citizens struggling to find full-time employment, gig work can provide immediate income, work experience and self-employment opportunities i.e employment at gigs/ the arts.",
+      "Regulations may reduce gig work – if gig workers were reclassified as employees, companies might hire fewer people or introduce stricter requirements to reduce costs. This could lead to fewer opportunities for those who rely on gig work.",
+      "Some gig workers earn well – not all gig workers experience low pay or poor conditions. Some choose gig work because they earn more than they would in traditional employment, especially those with in-demand skills like IT, graphic design, or consulting. Over-regulation may limit their earning potential.",
+      "Increased costs for consumers – if gig workers receive more benefits, companies will likely increase their prices to cover these costs. This could make services like food delivery, taxi-hailing services, and freelance work more expensive for consumers. re n ’s economy benefits from gig work – the gig economy helps businesses by providing a flexible workforce, reducing costs, and increasing productivity. If businesses were to face higher costs due to regulations, they may relocate or reduce investment in Ireland, which would lower economic growth."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2025-hl-q14-c-ii-positive",
+  "topicId": "economics-3-2",
+  "conceptId": "positive-effects-of-full-employment",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q14(c)(ii) — positive",
+  "questionText": "Outline one POSITIVE economic effect of full employment on the Irish economy.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 6",
+   "answer": 1,
+   "ofParts": 6,
+   "perPart": 6
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A positive effect — any one",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One positive effect, 6 marks; a negative one is worth 6 as well.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Higher standard of living – increased employment leads to higher incomes. This allows consumers to afford more goods and services, which improves their standard of living.",
+      "Reduced social protection costs / Increased tax revenue – with more working, the government spends less on unemployment benefits / collects more revenue from income tax, VAT, and other taxes.",
+      "Boosts economic growth – higher employment boosts spending / aggregate demand. This leads to increased production and economic growth.",
+      "Encourages investment – companies are more likely to invest in their business when demand is high and economic conditions are stable.",
+      "Greater consumer sentiment – consumers feel more confident / secure when employment levels are high. This leads to increased spending, which adds to economic stability.",
+      "Reduced inequality / Less poverty – more job opportunities allow a wider range of workers to earn incomes. This helps to close income gaps and reduce poverty levels."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "econ-2025-hl-sa-q1-a-for",
   "topicId": "economics-3-5",
   "conceptId": "the-case-for-hosting-a-major-event",

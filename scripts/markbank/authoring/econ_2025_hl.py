@@ -342,4 +342,33 @@ P.menu('advances in technology can influence Ireland', 'econ-2025-hl-q14-a-iii-s
        ref='2025 HL Q14(a)(iii) — sport', claim=1, per=5,
        drop=SCAFFOLD, after='Sports & Fitness')
 
+# ── Q15(a)(i): the gig economy ─────────────────────────────────────────────
+# The scheme runs both sides together and marks the break with "DISAGREE
+# responses overleaf DISAGREE:", so each side is its own card.
+P.menu('Do you agree or disagree with the statement', 'econ-2025-hl-q15-a-i-agree',
+       'economics-3-5', 'the-case-for-regulating-gig-work',
+       'Gig economy workers need greater protection and regulation. Do you AGREE with the '
+       'statement? Explain your answer.',
+       'A reason to agree — any one', 'One reason, 7 marks.',
+       ref='2025 HL Q15(a)(i) — agree', claim=1, per=7,
+       drop=SCAFFOLD, stop='DISAGREE responses overleaf')
+
+P.menu('Do you agree or disagree with the statement', 'econ-2025-hl-q15-a-i-disagree',
+       'economics-3-5', 'the-case-against-regulating-gig-work',
+       'Gig economy workers need greater protection and regulation. Do you DISAGREE with the '
+       'statement? Explain your answer.',
+       'A reason to disagree — any one', 'One reason, 7 marks.',
+       ref='2025 HL Q15(a)(i) — disagree', claim=1, per=7,
+       drop=SCAFFOLD + ('DISAGREE responses overleaf',), after='DISAGREE responses overleaf')
+
+# ── Q14(c)(ii): full employment ────────────────────────────────────────────
+P.menu('positive and one negative economic effect of full employment',
+       'econ-2025-hl-q14-c-ii-positive', 'economics-3-2',
+       'positive-effects-of-full-employment',
+       'Outline one POSITIVE economic effect of full employment on the Irish economy.',
+       'A positive effect — any one', 'One positive effect, 6 marks; a negative one is '
+       'worth 6 as well.',
+       ref='2025 HL Q14(c)(ii) — positive', claim=1, per=6,
+       drop=SCAFFOLD, stop='Negative')
+
 P.emit()
