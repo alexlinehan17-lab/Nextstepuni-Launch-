@@ -24,4 +24,18 @@ P.menu('one reason why different wages are paid for different jobs', 'econ-2021-
        ref='2021 OL Section A Q10(b)', claim=1, per=15,
        drop=('Possible responses', 'Suggested responses'))
 
+P.menu('term invisible export', 'econ-2021-ol-sa-q6-b',
+       'economics-4-2', 'what-an-invisible-export-is',
+       'Explain what is meant by the term invisible export. Give an example.',
+       'The explanation and an example — both of these',
+       'Explanation and example, 9 marks for the part.',
+       ref='2021 OL Section A Q6(b)', claim=2, per=5, drop=('Possible responses', 'Suggested responses'))
+
+P.menu('environmentally sustainable choices', 'econ-2021-ol-sa-q9-b',
+       'economics-0-2', 'sustainable-choices-an-individual-can-make',
+       'Explain, using two relevant examples, how an individual can make more '
+       'environmentally sustainable choices.',
+       'A sustainable choice — any two', 'Two examples, 9 marks for the part.',
+       ref='2021 OL Section A Q9(b)', claim=2, per=5, drop=('Possible responses', 'Suggested responses'))
+
 P.emit()

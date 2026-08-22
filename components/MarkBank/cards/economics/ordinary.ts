@@ -258,6 +258,32 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2021-ol-sa-q6-b", topicId: "economics-4-2", conceptId: "what-an-invisible-export-is",
+    section: "A", questionRef: "2021 OL Section A Q6(b)",
+    questionText: "Explain what is meant by the term invisible export. Give an example.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 5","answer":2,"ofParts":2,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The explanation and an example — both of these", marks: 10, contextNote: "Explanation and example, 9 marks for the part.", openList: true, group: {"claimMax":2,"perOption":5,"options":["Explanation: services sold to other countries.","Example: Foreign students (Spanish) in Ireland for the summer/ Irish music band playing a concert in Europe e.g. Madrid"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2021-ol-sa-q9-b", topicId: "economics-0-2", conceptId: "sustainable-choices-an-individual-can-make",
+    section: "A", questionRef: "2021 OL Section A Q9(b)",
+    questionText: "Explain, using two relevant examples, how an individual can make more environmentally sustainable choices.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 5","answer":2,"ofParts":2,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A sustainable choice — any two", marks: 10, contextNote: "Two examples, 9 marks for the part.", openList: true, group: {"claimMax":2,"perOption":5,"options":["environmentally sustainable choices. 1. Recycle more. Using the local recycling facility. 2.","Cut down on air pollution – use public transport. 3. Walk more use the car less. 4. Watch what kind of fuel you use. Any acceptable response illustrated with an example."]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2022, level: "ordinary",
     paperFileid: "LC034GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2022 Ordinary Level — © State Examinations Commission.",

@@ -2214,6 +2214,88 @@
   "notes": ""
  },
  {
+  "id": "econ-2021-ol-sa-q6-b",
+  "topicId": "economics-4-2",
+  "conceptId": "what-an-invisible-export-is",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2021 OL Section A Q6(b)",
+  "questionText": "Explain what is meant by the term invisible export. Give an example.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 5",
+   "answer": 2,
+   "ofParts": 2,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The explanation and an example — both of these",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Explanation and example, 9 marks for the part.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Explanation: services sold to other countries.",
+      "Example: Foreign students (Spanish) in Ireland for the summer/ Irish music band playing a concert in Europe e.g. Madrid"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2021-ol-sa-q9-b",
+  "topicId": "economics-0-2",
+  "conceptId": "sustainable-choices-an-individual-can-make",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2021 OL Section A Q9(b)",
+  "questionText": "Explain, using two relevant examples, how an individual can make more environmentally sustainable choices.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 5",
+   "answer": 2,
+   "ofParts": 2,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A sustainable choice — any two",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two examples, 9 marks for the part.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "environmentally sustainable choices. 1. Recycle more. Using the local recycling facility. 2.",
+      "Cut down on air pollution – use public transport. 3. Walk more use the car less. 4. Watch what kind of fuel you use. Any acceptable response illustrated with an example."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "econ-2022-hl-q11-a-ii",
   "topicId": "economics-3-5",
   "conceptId": "balanced-regional-development",
