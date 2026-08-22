@@ -174,6 +174,15 @@ EXCLUDED_TEXT = {
         'the diagram',
     'As the cost of fertiliser has risen':
         'the explanation beside a diagram, with the tariff covering both',
+    'Commits to environmental sustainability / cost reduction':
+        'carded as econ-2025-hl-q15-a-iii-aib',
+    'The increase in population will lead to an increase in demand for housing':
+        'the explanation beside a diagram, with the tariff covering both',
+    'Demand curve shifts to the right (D1)':
+        'labels to be placed on a diagram; no wording to show',
+    'Effect on price Through imposing a minimum price':
+        'the explanation beside a diagram, marked 10 for the drawing and 5 for the '
+        'writing, with no split stated across the three effects',
     'They sell the output at price P1':
         'the explanation beside a monopoly diagram, marked 1 per label with the '
         'explanation as a block',
