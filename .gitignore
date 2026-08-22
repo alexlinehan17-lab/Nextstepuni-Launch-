@@ -51,3 +51,11 @@ tmp/pdfs/rendered_*/
 android/keystore.properties
 *.jks
 *.keystore
+
+# Exam papers and scheme PDFs live in the Paper Trail corpus in Firebase
+# Storage, which is where the app itself reads them from. Fetch them with
+# scripts/markbank/fetch-corpus.py rather than committing ~120 MB of PDFs that
+# already have a canonical home. (Agricultural Science and Economics papers
+# predate this and stay tracked; gitignore does not untrack them.)
+examiner-reports/*/papers/*.pdf
+examiner-reports/*/schemes/*.pdf

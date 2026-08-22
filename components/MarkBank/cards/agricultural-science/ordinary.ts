@@ -6562,8 +6562,8 @@ export const CARDS: SecCard[] = [
     questionText: "Describe two disadvantages associated with the use of soil B.",
     tariffModel: {"kind":"fixed","notation":"3+1"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Poor drainage (due to the impermeable iron pan)", marks: 3, accepts: ["acidic or low pH (due to poor decomposition of organic matter)","poor fertility (low CEC) (due to acid leaching)","poor root penetration (due to iron pan)","poor establishment or yield or growth"], contextNote: "Scheme tariff is 3+1: the first disadvantage scores 3 and the second 1, so the order the answers are given in decides the total." },
-    { id: "r-2", kind: "point", verbatim: "poor aeration (as air spaces fill with water)", marks: 1, accepts: ["acidic or low pH (due to poor decomposition of organic matter)","poor fertility (low CEC) (due to acid leaching)","poor root penetration (due to iron pan)","poor establishment or yield or growth"] },
+    { id: "r-1", kind: "point", verbatim: "Poor drainage (due to the impermeable iron pan)", marks: 3, accepts: ["acidic or low pH (due to poor decomposition of organic matter)","poor fertility (low CEC) (due to acid leaching)","poor root penetration (due to iron pan)","reduced crop yield (due to acidic nature of soil or poor drainage or poor aeration or waterlogging of soil)","poor establishment or yield or growth"], contextNote: "Scheme tariff is 3+1: the first disadvantage scores 3 and the second 1, so the order the answers are given in decides the total." },
+    { id: "r-2", kind: "point", verbatim: "poor aeration (as air spaces fill with water)", marks: 1, accepts: ["acidic or low pH (due to poor decomposition of organic matter)","poor fertility (low CEC) (due to acid leaching)","poor root penetration (due to iron pan)","reduced crop yield (due to acidic nature of soil or poor drainage or poor aeration or waterlogging of soil)","poor establishment or yield or growth"] },
     ],
     figure: {
           "candId": "agricultural-science-2021-OL-paper-p07-i1",
@@ -6730,8 +6730,8 @@ export const CARDS: SecCard[] = [
     questionText: "With the aid of the diagram above, explain how the gene editing process works.",
     tariffModel: {"kind":"fixed","notation":"3+1"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Gene responsible for a specific trait is identified", marks: 3, accepts: ["natural DNA repair processes occurs"] },
-    { id: "r-2", kind: "point", verbatim: "desired gene is inserted", marks: 1, accepts: ["natural DNA repair processes occurs"] },
+    { id: "r-1", kind: "point", verbatim: "Gene responsible for a specific trait is identified", marks: 3, accepts: ["CRISPR-Cas9 edits genes by precisely cutting DNA at the target gene","natural DNA repair processes occurs"] },
+    { id: "r-2", kind: "point", verbatim: "desired gene is inserted", marks: 1, accepts: ["CRISPR-Cas9 edits genes by precisely cutting DNA at the target gene","natural DNA repair processes occurs"] },
     ],
     figure: {
           "candId": "agricultural-science-2023-OL-paper-p35-i0",

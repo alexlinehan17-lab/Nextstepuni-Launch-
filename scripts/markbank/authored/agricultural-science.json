@@ -33277,6 +33277,7 @@
     "verbatim": "sow wild flowers (on bank beside the shed) for pollinators (or biodiversity) or create a wildlife pond",
     "marks": 2,
     "accepts": [
+     "cover the open lagoon to avoid it filling up quickly and becoming diluted",
      "water harvesting to reduce water consumption",
      "install bird boxes",
      "install bat boxes",
@@ -33292,6 +33293,7 @@
     "verbatim": "cover the collecting yard to prevent any run‐off when raining (bales on concrete)",
     "marks": 2,
     "accepts": [
+     "cover the open lagoon to avoid it filling up quickly and becoming diluted",
      "water harvesting to reduce water consumption",
      "install bird boxes",
      "install bat boxes",
@@ -33361,6 +33363,7 @@
      "acidic or low pH (due to poor decomposition of organic matter)",
      "poor fertility (low CEC) (due to acid leaching)",
      "poor root penetration (due to iron pan)",
+     "reduced crop yield (due to acidic nature of soil or poor drainage or poor aeration or waterlogging of soil)",
      "poor establishment or yield or growth"
     ],
     "contextNote": "Scheme tariff is 3+1: the first disadvantage scores 3 and the second 1, so the order the answers are given in decides the total."
@@ -33374,6 +33377,7 @@
      "acidic or low pH (due to poor decomposition of organic matter)",
      "poor fertility (low CEC) (due to acid leaching)",
      "poor root penetration (due to iron pan)",
+     "reduced crop yield (due to acidic nature of soil or poor drainage or poor aeration or waterlogging of soil)",
      "poor establishment or yield or growth"
     ]
    }
@@ -33647,6 +33651,7 @@
     "verbatim": "Gene responsible for a specific trait is identified",
     "marks": 3,
     "accepts": [
+     "CRISPR-Cas9 edits genes by precisely cutting DNA at the target gene",
      "natural DNA repair processes occurs"
     ]
    },
@@ -33656,6 +33661,7 @@
     "verbatim": "desired gene is inserted",
     "marks": 1,
     "accepts": [
+     "CRISPR-Cas9 edits genes by precisely cutting DNA at the target gene",
      "natural DNA repair processes occurs"
     ]
    }

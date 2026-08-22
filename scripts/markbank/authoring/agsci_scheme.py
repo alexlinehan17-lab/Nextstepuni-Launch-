@@ -88,6 +88,11 @@ class Scheme:
         self.year, self.level = year, level
         self.path = os.path.join(SCHEMES, f'{year}-{level}.md')
         raw = open(self.path, errors='ignore').read().replace('\xa0', ' ')
+        # append-scheme-blocks.py adds the PDF's block-ordered text to this file
+        # so the provenance gate can match claims lifted from either rendering.
+        # That section is a second copy of the whole scheme — parsing it as well
+        # would report every part twice — so this parser stops at the marker.
+        raw = raw.split('<!-- pdf-block-order')[0]
 
         start = raw.find('Section A')
         body = raw[start if start >= 0 else 0:]
