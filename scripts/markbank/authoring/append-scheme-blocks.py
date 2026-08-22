@@ -23,6 +23,7 @@ Re-runnable: the appended section is replaced, never stacked.
 """
 import os
 import re
+import subprocess
 import sys
 
 import pymupdf
@@ -30,6 +31,23 @@ import pymupdf
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.abspath(__file__)))))
 MARK = '<!-- pdf-block-order: appended by append-scheme-blocks.py -->'
+FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fold-scheme-text.mjs')
+
+
+def fold(text):
+    """Apply the bank's own glyph folding to text lifted straight from a PDF.
+
+    The SEC typesets "letters" with a single Ʃ and "ti" with Ɵ, and
+    test/markBankSchemes.test.ts holds every scheme file to being extractor
+    output with those folded away. Shelling out to foldDigits keeps this the
+    same fold the rest of the pipeline uses instead of a second copy of the
+    table that could drift from it.
+    """
+    proc = subprocess.run(['node', FOLDER], input=text, capture_output=True,
+                          text=True)
+    if proc.returncode != 0:
+        raise RuntimeError(f'fold-scheme-text.mjs failed: {proc.stderr.strip()}')
+    return proc.stdout
 
 
 def block_text(pdf):
@@ -55,7 +73,7 @@ def main(subject):
             continue
         original = open(md, encoding='utf-8', errors='ignore').read()
         original = original.split(MARK)[0].rstrip('\n')
-        appended = block_text(os.path.join(root, name))
+        appended = fold(block_text(os.path.join(root, name)))
         with open(md, 'w', encoding='utf-8') as fh:
             fh.write(f'{original}\n\n{MARK}\n\n{appended}\n')
         done += 1
