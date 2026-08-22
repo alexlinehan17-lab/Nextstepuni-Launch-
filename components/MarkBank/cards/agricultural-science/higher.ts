@@ -13,8 +13,8 @@
  * script — never typed — because both historical figure corruptions in this repo
  * entered through a hand-transcribed path.
  *
- * Cards are tagged to the units of the REDEVELOPED Agricultural Science specification,
- * first examined June 2027, not to the retired syllabus the papers were sat under.
+ * Cards are tagged to the strands of the specification the papers were actually sat
+ * under: this one has been the examined specification since 2021.
  */
 
 import type { SecCard } from '../../../../types/markBank';

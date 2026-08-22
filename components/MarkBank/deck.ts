@@ -424,6 +424,63 @@ export const HOME_ECONOMICS_STRANDS: StrandRef[] = [
 ];
 
 /**
+ * Leaving Certificate Economics, NCCA specification of 2019.
+ *
+ * The first subject here whose whole corpus sits on the specification it is
+ * filed against: this one was first examined in 2021, so 2021-2025 straddles
+ * nothing. The five strands and their topic names are curriculum.ts's, so the
+ * deck and the curriculum registry name the same node the same way.
+ */
+export const ECONOMICS_STRANDS: StrandRef[] = [
+  {
+    id: 'econ1', label: 'Strand 1', title: 'What Is Economics About?',
+    topics: [
+      { id: 'economics-0-0', code: '1.1', title: 'Economics as a Way of Thinking' },
+      { id: 'economics-0-1', code: '1.2', title: 'Scarcity & Choice' },
+      { id: 'economics-0-2', code: '1.3', title: 'Sustainability' },
+    ],
+  },
+  {
+    id: 'econ2', label: 'Strand 2', title: 'How Are Economic Decisions Made?',
+    topics: [
+      { id: 'economics-1-0', code: '2.1', title: 'The Market Economy' },
+      { id: 'economics-1-1', code: '2.2', title: 'The Consumer (Demand)' },
+      { id: 'economics-1-2', code: '2.3', title: 'The Firm (Supply)' },
+      { id: 'economics-1-3', code: '2.4', title: 'Government Intervention' },
+      { id: 'economics-1-4', code: '2.5', title: 'Elasticity (PED, PES, Income & Cross)' },
+      { id: 'economics-1-5', code: '2.6', title: 'Costs of Production, Revenue & Profit' },
+    ],
+  },
+  {
+    id: 'econ3', label: 'Strand 3', title: 'What Can Markets Do?',
+    topics: [
+      { id: 'economics-2-0', code: '3.1', title: 'Market Structures' },
+      { id: 'economics-2-1', code: '3.2', title: 'The Labour Market' },
+      { id: 'economics-2-2', code: '3.3', title: 'Market Failure' },
+    ],
+  },
+  {
+    id: 'econ4', label: 'Strand 4', title: 'Policy and Economic Performance',
+    topics: [
+      { id: 'economics-3-0', code: '4.1', title: 'National Income' },
+      { id: 'economics-3-1', code: '4.2', title: 'Fiscal Policy & the Budget' },
+      { id: 'economics-3-2', code: '4.3', title: 'Employment & Unemployment' },
+      { id: 'economics-3-3', code: '4.4', title: 'Monetary Policy & Inflation' },
+      { id: 'economics-3-4', code: '4.5', title: 'Financial Sector' },
+      { id: 'economics-3-5', code: '4.6', title: 'Economic Growth' },
+    ],
+  },
+  {
+    id: 'econ5', label: 'Strand 5', title: 'International Economics',
+    topics: [
+      { id: 'economics-4-0', code: '5.1', title: 'Growth & Development' },
+      { id: 'economics-4-1', code: '5.2', title: 'Globalisation' },
+      { id: 'economics-4-2', code: '5.3', title: 'International Trade & Competitiveness' },
+    ],
+  },
+];
+
+/**
  * `spec` is what the strands above ACTUALLY are, and the picker prints it.
  *
  * It is not the same claim for every subject. Biology, Chemistry, Physics and
@@ -442,6 +499,7 @@ export const SUBJECTS = [
   { id: 'agricultural-science', title: 'Agricultural Science', strands: AGRICULTURAL_SCIENCE_STRANDS, spec: 'redeveloped specification' },
   { id: 'business', title: 'Business', strands: BUSINESS_STRANDS, spec: 'redeveloped specification' },
   { id: 'home-economics', title: 'Home Economics', strands: HOME_ECONOMICS_STRANDS, spec: 'Scientific and Social syllabus' },
+  { id: 'economics', title: 'Economics', strands: ECONOMICS_STRANDS, spec: 'specification examined from 2021' },
 ] as const;
 
 export type SubjectId = (typeof SUBJECTS)[number]['id'];
@@ -670,6 +728,10 @@ const DECKS: Record<string, Record<Level, () => Promise<{ CARDS: SecCard[] }>>> 
   'home-economics': {
     higher: () => import('./cards/home-economics/higher'),
     ordinary: () => import('./cards/home-economics/ordinary'),
+  },
+  economics: {
+    higher: () => import('./cards/economics/higher'),
+    ordinary: () => import('./cards/economics/ordinary'),
   },
 };
 

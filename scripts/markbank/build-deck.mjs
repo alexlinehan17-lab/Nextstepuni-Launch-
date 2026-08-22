@@ -38,6 +38,7 @@ const SUBJECTS = {
   biology: {
     title: 'Biology',
     specVersion: 'lc-biology-2002',
+    specNote: 'Cards are tagged to the units of the REDEVELOPED Biology specification, first\n * examined June 2027, not to the syllabus the 2021-2025 papers were sat under.',
     figureDir: 'public/exam-figures/biology',
     /** Crops that hold a neighbour's image, or truncate a label the question
      *  asks about. Never bindable. Mirrors BLOCKED_FIGURES in deck.ts. */
@@ -52,6 +53,7 @@ const SUBJECTS = {
      * rather than by a year — its publication year is unverified here, and an
      * unverified date in a provenance field is worse than none. */
     specVersion: 'lc-physics-legacy',
+    specNote: 'Cards are tagged to the units of the REDEVELOPED Physics specification, first\n * examined June 2027, not to the syllabus the 2021-2025 papers were sat under.',
     figureDir: 'public/exam-figures/physics',
     blocked: new Set(),
   },
@@ -61,6 +63,7 @@ const SUBJECTS = {
      * rather than by a year, because I have not verified its publication year
      * and an unverified date in a provenance field is worse than none. */
     specVersion: 'lc-chemistry-legacy',
+    specNote: 'Cards are tagged to the units of the REDEVELOPED Chemistry specification, first\n * examined June 2027, not to the syllabus the 2021-2025 papers were sat under.',
     figureDir: 'public/exam-figures/chemistry',
     blocked: new Set(),
   },
@@ -69,6 +72,7 @@ const SUBJECTS = {
     /* The 1999 syllabus, still examined. Named by year because it is verified:
      * every paper in the corpus (2021-2025) sits on it. */
     specVersion: 'lc-business-1999',
+    specNote: 'Cards are tagged to the units of the REDEVELOPED Business specification, first\n * examined June 2027, not to the syllabus the 2021-2025 papers were sat under.',
     figureDir: 'public/exam-figures/business',
     blocked: new Set(),
   },
@@ -77,7 +81,18 @@ const SUBJECTS = {
     /* The syllabus examined before the 2027 redevelopment. Named by what it is
      * rather than by a year, because its publication year is unverified here. */
     specVersion: 'lc-home-economics-legacy',
+    specNote: 'Cards are tagged to the areas of the Scientific and Social syllabus, which is the\n * one these papers were sat under and the one still being sat: the NCCA schedule\n * introduces a replacement in 2027 for first examination in 2029.',
     figureDir: 'public/exam-figures/home-economics',
+    blocked: new Set(),
+  },
+  economics: {
+    title: 'Economics',
+    /* The NCCA specification published February 2019 and first examined in 2021
+     * — dated because it IS verified: every paper in the corpus (2021-2025) sits
+     * on it, with no syllabus change to straddle. */
+    specVersion: 'lc-economics-2019',
+    specNote: 'Cards are tagged to the strands of the specification the papers were actually sat\n * under. Economics was first examined on it in 2021, so the whole 2021-2025\n * corpus sits on one syllabus with nothing to straddle.',
+    figureDir: 'public/exam-figures/economics',
     blocked: new Set(),
   },
   'agricultural-science': {
@@ -86,6 +101,7 @@ const SUBJECTS = {
      * here because it IS verified: every paper in the corpus (2021-2025) sits on
      * it, with no syllabus change to straddle. */
     specVersion: 'lc-agricultural-science-2019',
+    specNote: 'Cards are tagged to the strands of the specification the papers were actually sat\n * under: this one has been the examined specification since 2021.',
     figureDir: 'public/exam-figures/agricultural-science',
     blocked: new Set(),
   },
@@ -509,19 +525,18 @@ const moduleFor = (level, cards) => `/**
  * script — never typed — because both historical figure corruptions in this repo
  * entered through a hand-transcribed path.
  *
- * Cards are tagged to the units of the REDEVELOPED ${SUBJECT.title} specification,
- * first examined June 2027, not to the retired syllabus the papers were sat under.
+ * ${SUBJECT.specNote}
  */
 
 import type { SecCard } from '../../../../types/markBank';
-
+${cards.length ? `
 const base = {
   source: 'sec' as const,
   subjectId: ${q(SUBJECT_ID)},
   specVersion: ${q(SUBJECT.specVersion)},
   qa: { gates: ['verbatim', 'tariff', 'figure'], humanReviewedBy: 'agent-verified', humanReviewedAt: '2026-07-31' },
 };
-
+` : ''}
 export const CARDS: SecCard[] = [
 ${cards.join('\n')}
 ];

@@ -71,6 +71,17 @@ const MARKS_CELL = /⟨[^⟩]*⟩/g;
 const PAGE_MARKER = /^##\s*Page\s*\d+\s*$/gm;
 
 /**
+ * The SEC's own running footer, letter-spaced: "17 | P a g e".
+ *
+ * Same reasoning as PAGE_MARKER above, for the SEC's furniture rather than
+ * ours: a marking point does not stop at a page break, and Economics wraps them
+ * across one often enough that leaving the footer in splits a point down the
+ * middle so no card can quote it whole. It is page furniture either way — the
+ * one thing on the page that is certainly not a marking point.
+ */
+const PAGE_FOOTER = /\d+\s*\|\s*P\s*a\s*g\s*e/g;
+
+/**
  * Digits that are drawn differently but ARE digits.
  *
  * SEC PDFs extract formulae as plain ASCII — "H2SO4", not "H₂SO₄" — while an
@@ -194,7 +205,7 @@ export const claimMatches = (scheme, claim) => {
 };
 
 export const comparableScheme = (raw) => {
-  const lines = raw.replace(MARKS_CELL, ' ').replace(PAGE_MARKER, ' ')
+  const lines = raw.replace(MARKS_CELL, ' ').replace(PAGE_MARKER, ' ').replace(PAGE_FOOTER, ' ')
     .split('\n').filter((l) => !MARKS_ONLY.test(l) && !LABEL_ONLY.test(l));
   const joined = lines.join(' ');
   const whole = normalise(joined);

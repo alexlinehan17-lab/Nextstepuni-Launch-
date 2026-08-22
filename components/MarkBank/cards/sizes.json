@@ -22,5 +22,9 @@
  "home-economics": {
   "higher": 298,
   "ordinary": 273
+ },
+ "economics": {
+  "higher": 4,
+  "ordinary": 0
  }
 }

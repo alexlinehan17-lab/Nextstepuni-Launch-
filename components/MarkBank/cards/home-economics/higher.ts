@@ -13,8 +13,9 @@
  * script — never typed — because both historical figure corruptions in this repo
  * entered through a hand-transcribed path.
  *
- * Cards are tagged to the units of the REDEVELOPED Home Economics specification,
- * first examined June 2027, not to the retired syllabus the papers were sat under.
+ * Cards are tagged to the areas of the Scientific and Social syllabus, which is the
+ * one these papers were sat under and the one still being sat: the NCCA schedule
+ * introduces a replacement in 2027 for first examination in 2029.
  */
 
 import type { SecCard } from '../../../../types/markBank';

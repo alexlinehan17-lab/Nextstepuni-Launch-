@@ -13,8 +13,8 @@
  * script — never typed — because both historical figure corruptions in this repo
  * entered through a hand-transcribed path.
  *
- * Cards are tagged to the units of the REDEVELOPED Physics specification,
- * first examined June 2027, not to the retired syllabus the papers were sat under.
+ * Cards are tagged to the units of the REDEVELOPED Physics specification, first
+ * examined June 2027, not to the syllabus the 2021-2025 papers were sat under.
  */
 
 import type { SecCard } from '../../../../types/markBank';

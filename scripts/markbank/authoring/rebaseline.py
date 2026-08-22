@@ -14,7 +14,8 @@ SUBJECT = sys.argv[1] if len(sys.argv) > 1 else 'home-economics'
 # with the SHA of the empty string. The guard against losing cards recorded a
 # total wipe as a clean run. The empty-deck check below is the backstop.
 PREFIX = {'home-economics': 'he', 'biology': 'bio', 'business': 'bus',
-          'chemistry': 'chem', 'physics': 'phys', 'agricultural-science': 'agsci'}[SUBJECT]
+          'chemistry': 'chem', 'physics': 'phys', 'agricultural-science': 'agsci',
+          'economics': 'econ'}[SUBJECT]
 TEST = 'test/markBankCardPreservation.test.ts'
 KEY = {'home-economics': 'home-economics', 'agricultural-science': 'agricultural-science'}.get(SUBJECT, SUBJECT)
 
@@ -27,10 +28,17 @@ for level in ('higher', 'ordinary'):
     path = f'components/MarkBank/cards/{SUBJECT}/{level}.ts'
     old = ids(subprocess.run(['git', 'show', f'HEAD:{path}'], capture_output=True, text=True).stdout)
     new = ids(open(path).read())
-    if not new:
-        print(f'    REFUSING: found no {PREFIX}-* ids in {path}. A deck is never '
-              f'empty, so either the build failed or PREFIX is wrong for this subject.')
+    if not new and old:
+        print(f'    REFUSING: found no {PREFIX}-* ids in {path}, and HEAD has '
+              f'{len(old)}. That is a wipe, not a rebuild.')
         ok = False
+        continue
+    if not new:
+        # Empty at HEAD and empty now: a level nobody has authored yet. The
+        # backstop above exists because a total WIPE once recorded itself as a
+        # clean run, and it still catches that — but a subject's first Higher
+        # paper cannot be blocked on its Ordinary deck not existing.
+        print(f'{SUBJECT}:{level}  not authored yet, skipped')
         continue
     lost = sorted(set(old) - set(new))
     added = sorted(set(new) - set(old))

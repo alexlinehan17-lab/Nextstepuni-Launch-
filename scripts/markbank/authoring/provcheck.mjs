@@ -20,13 +20,17 @@
  * Run from the repo root.
  */
 import { readFileSync } from 'node:fs';
-import { comparableScheme, normalise } from '../schemeText.mjs';
+import { comparableScheme, claimMatches } from '../schemeText.mjs';
 const cards = JSON.parse(readFileSync(process.argv[2], 'utf8'));
 const cache = new Map();
 let bad = 0, checked = 0;
 for (const c of cards) {
+  // The subject comes from the CARD. This was hard-coded to home-economics,
+  // which is invisible while only one subject is authored this way and reports
+  // every claim of the second one as untraceable the moment there is another —
+  // against a scheme for a different subject entirely.
   const stem = `${c.year}-${c.level === 'higher' ? 'hl' : 'ol'}`;
-  const f = `examiner-reports/home-economics/schemes/${stem}.md`;
+  const f = `examiner-reports/${c.subjectId}/schemes/${stem}.md`;
   if (!cache.has(f)) cache.set(f, comparableScheme(readFileSync(f, 'utf8')));
   const scheme = cache.get(f);
   for (const r of c.rows) {
@@ -34,7 +38,10 @@ for (const c of cards) {
     if (r.kind !== 'anyN') claims.push(r.verbatim);
     for (const claim of claims) {
       checked++;
-      if (!scheme.includes(normalise(claim))) { bad++; console.log(`UNTRACEABLE ${c.id} :: ${claim.slice(0,110)}`); }
+      // claimMatches, not a private copy of it: the build compares around
+      // font defects this file knew nothing about, so its own copy would have
+      // reported traceable cards as untraceable.
+      if (!claimMatches(scheme, claim)) { bad++; console.log(`UNTRACEABLE ${c.id} :: ${claim.slice(0,110)}`); }
     }
   }
 }
