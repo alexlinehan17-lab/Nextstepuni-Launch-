@@ -154,7 +154,15 @@ def make_card(subject_id, default_section='B'):
     return card
 
 
-def make_audit(max_options):
+# An option this long is a slice that ran past the end of its question and took
+# the next one with it. The provenance gate cannot object -- the text really is
+# in the scheme, contiguously -- so it shipped: one Economics option reached
+# 9,047 characters and ended in the examiner instructions of a later question.
+# The longest legitimate marking point across every subject here is ~620.
+MAX_OPTION_CHARS = 700
+
+
+def make_audit(max_options, max_option_chars=MAX_OPTION_CHARS):
     """An auditor for one subject's option cap."""
     def audit(cards):
         """Catch what the build would drop, before writing anything."""
@@ -187,6 +195,11 @@ def make_audit(max_options):
                          else g['claimMax'] * g['perOption'])
                 if worth > c['totalMarks']:
                     problems.append(f"{c['id']} {r['id']}: group is worth {worth} on a {c['totalMarks']}-mark question")
+                for i, o in enumerate(g['options']):
+                    if len(o) > max_option_chars:
+                        problems.append(
+                            f"{c['id']} {r['id']}: option {i} is {len(o)} chars -- the slice ran "
+                            f"past its question. Bound it with an end anchor.")
         return problems
     return audit
 

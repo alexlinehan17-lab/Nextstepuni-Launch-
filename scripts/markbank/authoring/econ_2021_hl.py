@@ -12,7 +12,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from econ_lib import anyN, block, card, defurnish, emit, heads, load, point, tidy  # noqa: E402
+from econ_lib import anyN, as_option, block, card, defurnish, emit, heads, load, point, tidy  # noqa: E402
 
 YEAR, LEVEL = 2021, 'higher'
 T = tidy(load(YEAR, LEVEL))
@@ -24,7 +24,7 @@ def menu(cid, topic, concept, ref, qtext, notation, total, verbatim, claim, per,
     chunk = block(BODY, start, end)
     return card(cid, YEAR, LEVEL, topic, concept, ref, qtext, notation, total,
                 [anyN('r-1', verbatim, None if steps else total, claim, per,
-                      [defurnish(h) for h in heads(chunk, headings)], note, steps=steps)],
+                      [as_option(h) for h in heads(chunk, headings)], note, steps=steps)],
                 notes, stem=stem,
                 tariff_kind='fixed' if steps else 'bestNofParts')
 
@@ -61,7 +61,8 @@ cards = [
          'Free Trade Area / larger market / trade expansion', 'Question 13',
          ['Free Trade Area / larger market / trade expansion',
           'Access to capital / research funding', 'Freedom movement of capital / labour',
-          'Foreign Direct Investment / job creation'],
+          'Foreign Direct Investment', 'EU legislation and policies',
+          'Supports the Peace Process in Ireland'],
          'Two advantages, 6 marks each, split 3 for the point and 3 for developing it.'),
 ]
 
@@ -109,7 +110,10 @@ cards.append(menu(
     '2 @ 6', 12, 'An area to focus on — any two', 2, 6,
     'Fund skills, education and training programmes', 'Question 15',
     ['Fund skills, education and training programmes', 'Improve the infrastructure for business',
-     'Manage the current housing shortage', 'Supporting Enterpris'],
+     'Manage the current housing shortage', 'Supporting Enterprise / Entrepreneurship',
+     'Reduce utility charges', 'Encourage competition in the market / deregulation',
+     'Reduce taxation / maintain Ireland’s competitive CPT rate at 12.5%',
+     'Address climate action in a competitiveness context'],
     'Two areas, 6 marks each, split 3 for the choice and 3 for the justification.'))
 
 # The corpus's only cards on elasticity as a decision rule rather than as a
@@ -123,7 +127,7 @@ cards.append(card(
     [point('r-answer', 'Based upon the above calculation Apple Airpods can be said to be Elastic.',
            4, 'The scheme pays this half for the classification alone.'),
      anyN('r-reason', 'The reason — either one', 4, 1, 4,
-          [defurnish(x) for x in block(
+          [as_option(x) for x in block(
               BODY, '• The number is greater than 1',
               '(iii) If the firm selling the above product').split('•')
            if len(x.strip()) > 12],

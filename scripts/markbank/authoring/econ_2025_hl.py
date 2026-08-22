@@ -8,7 +8,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from econ_lib import anyN, block, card, defurnish, emit, heads, load, tidy  # noqa: E402
+from econ_lib import anyN, as_option, block, card, defurnish, emit, heads, load, tidy  # noqa: E402
 
 YEAR, LEVEL = 2025, 'higher'
 T = tidy(load(YEAR, LEVEL))
@@ -20,7 +20,7 @@ def menu(cid, topic, concept, ref, qtext, notation, total, verbatim, claim, per,
     chunk = block(BODY, start, end)
     return card(cid, YEAR, LEVEL, topic, concept, ref, qtext, notation, total,
                 [anyN('r-1', verbatim, None if steps else total, claim, per,
-                      [defurnish(h) for h in heads(chunk, headings)], note, steps=steps)],
+                      [as_option(h) for h in heads(chunk, headings)], note, steps=steps)],
                 notes, stem=stem,
                 tariff_kind='fixed' if steps else 'bestNofParts')
 
@@ -73,9 +73,10 @@ cards = [
          '2 @ 6', 12, 'A source of Ireland’s comparative advantage — any two', 2, 6,
          'Reputation / Track record – Ireland has long established itself',
          '(iii)',
-         ['Reputation / Track record', 'R&D / innovation supports', 'Pharmaceutical ‘cluster',
-          'Highly skilled workforce', 'open economy', 'Low corporate tax rate',
-          'Proximity to the EU market'],
+         ['Reputation / Track record', 'R&D / innovation supports',
+          'Pharmaceutical ‘cluster e ect’', 'Highly skilled workforce',
+          'Low corporate tax rate', 'Proximity to the EU market', 'English-speaking nation',
+          'Alignment with regulatory / quality standards', 'Political and economic stability'],
          'Two sources, 6 marks each.'),
 
     # ── Question 14 — the consumer and the firm ─────────────────────────────
@@ -101,8 +102,9 @@ cards += [
          'operating in Ireland.',
          '2 @ 5', 10, 'A difficulty for small and medium retailers — any two', 2, 5,
          'Increased competition –', '(b)',
-         ['Increased competition –', 'Squeezed profit margins', 'Technology gap',
-          'Erosion of customer loyalty', 'Supply chain challenges'],
+         ['Increased competition', 'Squeezed profit margins', 'Erosion of customer loyalty',
+          'Supply chain challenges', 'Community impact', 'Job losses in small businesses',
+          'Negative impact on retail property market'],
          'Two difficulties, 5 marks each.'),
 
     menu('econ-2025-hl-q15-a-ii', 'economics-3-4', 'factors-affecting-credit-creation',
@@ -122,7 +124,9 @@ cards += [
          '2 @ 6', 12, 'An effect on the labour market — any two', 2, 6,
          'Reduced geographical mobility of labour – geographical mobility', '(c)',
          ['Reduced geographical mobility of labour', 'Increased wage demands',
-          'Skills shortages / Emigration', 'Overcrowding'],
+          'Skills shortages / Emigration', 'Impact on entrepreneurship and small businesses',
+          'Greater reliance on remote working', 'Expansion of commuter belt',
+          'Increase in informal employment –'],
          'Two effects, 6 marks each.'),
 
     menu('econ-2025-hl-q16-c', 'economics-0-0', 'importance-of-entrepreneurship',
@@ -133,8 +137,9 @@ cards += [
          'Creates employment – entrepreneurs employ people',
          None,   # the last carded part of the paper, so it runs to the end of the body
          ['Creates employment', 'Organises production', 'Determines what gets produced',
-          'Encourages investment and innovation', 'Provides tax revenue', 'Boosts exports',
-          'Creates income and wealth'],
+          'Encourages investment', 'Provides tax revenue', 'Creates income and wealth',
+          'Supports regional development', 'Reduces a reliance on multinationals',
+          'Improves standards of living', 'Encourages a culture of enterprise'],
          'Two reasons, 4 marks each.'),
 ]
 

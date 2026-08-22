@@ -24,7 +24,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from econ_lib import anyN, block, card, defurnish, emit, heads, load, point, tidy  # noqa: E402
+from econ_lib import anyN, as_option, block, card, defurnish, emit, heads, load, point, tidy  # noqa: E402
 
 YEAR, LEVEL = 2024, 'higher'
 T = tidy(load(YEAR, LEVEL))
@@ -37,7 +37,7 @@ BODY = block(T, 'Question 11 Possible Responses Marks', 'Student Research Projec
 
 def opts(chunk, headings):
     """The scheme's named responses, each with the sentence that explains it."""
-    return [defurnish(h) for h in heads(chunk, headings)]
+    return [as_option(h) for h in heads(chunk, headings)]
 
 
 def menu(cid, topic, concept, ref, qtext, notation, total, verbatim, claim, per,
@@ -307,7 +307,7 @@ for cid, ref, qtext, concept, start, end in [
     cards.append(card(
         cid, YEAR, LEVEL, 'economics-1-0', concept, ref, qtext, '4 @ 1', 4,
         [anyN('r-1', 'What happens to the curve, the price and the quantity — all four', 4, 4, 1,
-              [defurnish(x) for x in block(BODY, start, end).split('•') if len(x.strip()) > 12][:4],
+              [as_option(x) for x in block(BODY, start, end).split('•') if len(x.strip()) > 12][:4],
               'Four points at 1 mark each, and the scheme wants all four: which curve moves and '
               'which way, why, what happens to price, and what happens to quantity. The paper '
               'also pays 5 marks for the diagram itself, which is not carded.')],

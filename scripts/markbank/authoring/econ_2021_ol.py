@@ -8,7 +8,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from econ_lib import anyN, block, card, defurnish, emit, heads, load, tidy  # noqa: E402
+from econ_lib import anyN, as_option, block, card, defurnish, emit, heads, load, tidy  # noqa: E402
 
 YEAR, LEVEL = 2021, 'ordinary'
 T = tidy(load(YEAR, LEVEL))
@@ -20,7 +20,7 @@ def menu(cid, topic, concept, ref, qtext, notation, total, verbatim, claim, per,
     chunk = block(BODY, start, end)
     return card(cid, YEAR, LEVEL, topic, concept, ref, qtext, notation, total,
                 [anyN('r-1', verbatim, None if steps else total, claim, per,
-                      [defurnish(h) for h in heads(chunk, headings)], note, steps=steps)],
+                      [as_option(h) for h in heads(chunk, headings)], note, steps=steps)],
                 notes, stem=stem,
                 tariff_kind='fixed' if steps else 'bestNofParts')
 

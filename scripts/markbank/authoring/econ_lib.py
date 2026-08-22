@@ -52,6 +52,26 @@ def defurnish(s):
     return tidy(MARKS_CELL.sub(' ', FOOTER.sub(' ', s)))
 
 
+# Where the examiner stops answering one part and starts the next. heads() runs
+# its LAST block to the end of the chunk, so if the chunk is bounded even
+# slightly loosely that block swallows whatever follows — one option reached
+# 9,047 characters and ended in the instructions of a later question. The
+# provenance gate cannot object: the text really is in the scheme, contiguously.
+NEXT_PART = re.compile(
+    r'\((?:i{1,3}|iv|v|vi{1,3}|[a-c])\)\s'      # (i) (ii) (a) (b)
+    r'|Question\s+\d+'
+    r'|Suggested responses'
+    r'|Must have a MINIMUM'                      # an instruction to the examiner
+    r'|(?:Higher|Ordinary) Level Economics')     # the running header
+
+
+def as_option(s):
+    """One marking point, stopped where the next part of the paper begins."""
+    text = defurnish(s)
+    cut = NEXT_PART.search(text)
+    return tidy(text[:cut.start()]) if cut else text
+
+
 def bullets(chunk, drop_prefix=None):
     """The scheme's bullet-listed responses, in scheme order.
 
@@ -65,7 +85,7 @@ def bullets(chunk, drop_prefix=None):
         t = t[len(drop_prefix):]
     out = []
     for x in re.split(r'\s*•\s*', t):
-        x = tidy(re.sub(r'^\s*\d+(?:st|nd|rd|th)\s*@\s*\d+\s*', '', tidy(x)))
+        x = as_option(re.sub(r'^\s*\d+(?:st|nd|rd|th)\s*@\s*\d+\s*', '', tidy(x)))
         if len(x) < 12 or JUNK.match(x):
             continue
         out.append(x)
