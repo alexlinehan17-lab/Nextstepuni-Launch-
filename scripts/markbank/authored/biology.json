@@ -37429,5 +37429,530 @@
    }
   ],
   "notes": "The scheme answers this by ticking a True/False column, and the tick is a glyph the text extraction drops. Read from page 9 of the 2021 Higher Level marking scheme. Q6 is marked 6(3) + 2 over seven statements."
+ },
+ {
+  "id": "bio-2022-hl-q5-a",
+  "topicId": "bio-1-2",
+  "conceptId": "copper-is-a-trace-element",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2022 HL Q5(a)",
+  "questionText": "Copper (Cu) is one of the common elements present in food.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "False",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme answers this by ticking a True/False column and the tick is a glyph the text extraction drops, so it was read from page 9 of the 2022 Higher Level marking scheme. Q5 is marked 6(3) + 2 over seven statements."
+ },
+ {
+  "id": "bio-2022-hl-q5-b",
+  "topicId": "bio-1-1",
+  "conceptId": "response-as-a-characteristic-of-life",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2022 HL Q5(b)",
+  "questionText": "Response is a characteristic of life.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "True",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme answers this by ticking a True/False column and the tick is a glyph the text extraction drops, so it was read from page 9 of the 2022 Higher Level marking scheme. Q5 is marked 6(3) + 2 over seven statements."
+ },
+ {
+  "id": "bio-2022-hl-q5-c",
+  "topicId": "bio-1-3",
+  "conceptId": "animal-cell-in-a-concentrated-solution",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2022 HL Q5(c)",
+  "questionText": "An animal cell will burst if placed in a concentrated sugar solution.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "False",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme answers this by ticking a True/False column and the tick is a glyph the text extraction drops, so it was read from page 9 of the 2022 Higher Level marking scheme. Q5 is marked 6(3) + 2 over seven statements."
+ },
+ {
+  "id": "bio-2022-hl-q5-d",
+  "topicId": "bio-2-6",
+  "conceptId": "which-cells-secrete-perforin",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2022 HL Q5(d)",
+  "questionText": "Macrophages are white blood cells that secrete perforin.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "False",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme answers this by ticking a True/False column and the tick is a glyph the text extraction drops, so it was read from page 9 of the 2022 Higher Level marking scheme. Q5 is marked 6(3) + 2 over seven statements."
+ },
+ {
+  "id": "bio-2022-hl-q5-e",
+  "topicId": "bio-1-3",
+  "conceptId": "what-an-organ-is",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2022 HL Q5(e)",
+  "questionText": "Organs are groups of tissues with a shared function.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "True",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme answers this by ticking a True/False column and the tick is a glyph the text extraction drops, so it was read from page 9 of the 2022 Higher Level marking scheme. Q5 is marked 6(3) + 2 over seven statements."
+ },
+ {
+  "id": "bio-2022-hl-q5-f",
+  "topicId": "bio-2-4",
+  "conceptId": "ethene-ripens-fruit",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2022 HL Q5(f)",
+  "questionText": "Ethene is used to ripen fruit.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "True",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme answers this by ticking a True/False column and the tick is a glyph the text extraction drops, so it was read from page 9 of the 2022 Higher Level marking scheme. Q5 is marked 6(3) + 2 over seven statements."
+ },
+ {
+  "id": "bio-2022-hl-q5-g",
+  "topicId": "bio-3-2",
+  "conceptId": "fungi-are-heterotrophic",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2022 HL Q5(g)",
+  "questionText": "All members of Kingdom Fungi are heterotrophic.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "True",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme answers this by ticking a True/False column and the tick is a glyph the text extraction drops, so it was read from page 9 of the 2022 Higher Level marking scheme. Q5 is marked 6(3) + 2 over seven statements."
+ },
+ {
+  "id": "bio-2022-ol-q6-a",
+  "topicId": "bio-2-4",
+  "conceptId": "endocrine-glands-produce-hormones",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2022 OL Q6(a)",
+  "questionText": "Hormones are produced by endocrine glands.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "True",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme answers this by ticking a True/False column and the tick is a glyph the text extraction drops, so it was read from page 9 of the 2022 Ordinary Level marking scheme. Q6 is marked 6(3) + 2 over seven statements."
+ },
+ {
+  "id": "bio-2022-ol-q6-b",
+  "topicId": "bio-2-5",
+  "conceptId": "where-fertilisation-occurs",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2022 OL Q6(b)",
+  "questionText": "Fertilisation usually occurs in the fallopian tube.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "True",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme answers this by ticking a True/False column and the tick is a glyph the text extraction drops, so it was read from page 9 of the 2022 Ordinary Level marking scheme. Q6 is marked 6(3) + 2 over seven statements."
+ },
+ {
+  "id": "bio-2022-ol-q6-c",
+  "topicId": "bio-2-6",
+  "conceptId": "which-organ-produces-hydrochloric-acid",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2022 OL Q6(c)",
+  "questionText": "Hydrochloric acid is produced by the liver.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "False",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme answers this by ticking a True/False column and the tick is a glyph the text extraction drops, so it was read from page 9 of the 2022 Ordinary Level marking scheme. Q6 is marked 6(3) + 2 over seven statements."
+ },
+ {
+  "id": "bio-2022-ol-q6-d",
+  "topicId": "bio-2-6",
+  "conceptId": "which-organ-produces-bile",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2022 OL Q6(d)",
+  "questionText": "Bile is produced by the kidney.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "False",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme answers this by ticking a True/False column and the tick is a glyph the text extraction drops, so it was read from page 9 of the 2022 Ordinary Level marking scheme. Q6 is marked 6(3) + 2 over seven statements."
+ },
+ {
+  "id": "bio-2022-ol-q6-e",
+  "topicId": "bio-2-4",
+  "conceptId": "nerve-cells-produce-neurotransmitters",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2022 OL Q6(e)",
+  "questionText": "Neurotransmitters are produced by nerve cells.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "True",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme answers this by ticking a True/False column and the tick is a glyph the text extraction drops, so it was read from page 9 of the 2022 Ordinary Level marking scheme. Q6 is marked 6(3) + 2 over seven statements."
+ },
+ {
+  "id": "bio-2022-ol-q6-f",
+  "topicId": "bio-3-2",
+  "conceptId": "what-produces-antibiotics",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2022 OL Q6(f)",
+  "questionText": "Antibiotics are produced by viruses.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "False",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme answers this by ticking a True/False column and the tick is a glyph the text extraction drops, so it was read from page 9 of the 2022 Ordinary Level marking scheme. Q6 is marked 6(3) + 2 over seven statements."
+ },
+ {
+  "id": "bio-2022-ol-q6-g",
+  "topicId": "bio-2-6",
+  "conceptId": "salivary-glands-produce-amylase",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2022 OL Q6(g)",
+  "questionText": "Amylase is produced by the salivary glands.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "True",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme answers this by ticking a True/False column and the tick is a glyph the text extraction drops, so it was read from page 9 of the 2022 Ordinary Level marking scheme. Q6 is marked 6(3) + 2 over seven statements."
+ },
+ {
+  "id": "bio-2024-hl-q5-a",
+  "topicId": "bio-1-3",
+  "conceptId": "which-cells-have-cell-walls",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2024 HL Q5(a)",
+  "questionText": "Cell walls are only found in plant cells.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "False",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme answers this by ticking a True/False column and the tick is a glyph the text extraction drops, so it was read from page 10 of the 2024 Higher Level marking scheme. Q5 is marked 6(3) + 2 over seven statements."
+ },
+ {
+  "id": "bio-2024-hl-q5-b",
+  "topicId": "bio-1-3",
+  "conceptId": "what-a-turgid-cell-is",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2024 HL Q5(b)",
+  "questionText": "A turgid cell has lost a lot of water.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "False",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme answers this by ticking a True/False column and the tick is a glyph the text extraction drops, so it was read from page 10 of the 2024 Higher Level marking scheme. Q5 is marked 6(3) + 2 over seven statements."
+ },
+ {
+  "id": "bio-2024-hl-q5-c",
+  "topicId": "bio-2-2",
+  "conceptId": "fermentation-is-anaerobic",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2024 HL Q5(c)",
+  "questionText": "Fermentation does not use oxygen.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "True",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme answers this by ticking a True/False column and the tick is a glyph the text extraction drops, so it was read from page 10 of the 2024 Higher Level marking scheme. Q5 is marked 6(3) + 2 over seven statements."
+ },
+ {
+  "id": "bio-2024-hl-q5-d",
+  "topicId": "bio-1-4",
+  "conceptId": "where-dna-is-found-in-the-cell",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2024 HL Q5(d)",
+  "questionText": "DNA is only found in the nucleus.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "False",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme answers this by ticking a True/False column and the tick is a glyph the text extraction drops, so it was read from page 10 of the 2024 Higher Level marking scheme. Q5 is marked 6(3) + 2 over seven statements."
+ },
+ {
+  "id": "bio-2024-hl-q5-e",
+  "topicId": "bio-1-4",
+  "conceptId": "hydrogen-bonds-in-dna",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2024 HL Q5(e)",
+  "questionText": "There are no hydrogen bonds in a molecule of DNA.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "False",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme answers this by ticking a True/False column and the tick is a glyph the text extraction drops, so it was read from page 10 of the 2024 Higher Level marking scheme. Q5 is marked 6(3) + 2 over seven statements."
+ },
+ {
+  "id": "bio-2024-hl-q5-f",
+  "topicId": "bio-1-4",
+  "conceptId": "which-bases-are-purines",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2024 HL Q5(f)",
+  "questionText": "Adenine and guanine are purine bases.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "True",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme answers this by ticking a True/False column and the tick is a glyph the text extraction drops, so it was read from page 10 of the 2024 Higher Level marking scheme. Q5 is marked 6(3) + 2 over seven statements."
+ },
+ {
+  "id": "bio-2024-hl-q5-g",
+  "topicId": "bio-1-4",
+  "conceptId": "what-chromosomes-are-made-of",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2024 HL Q5(g)",
+  "questionText": "Chromosomes are composed of DNA and protein.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "True",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme answers this by ticking a True/False column and the tick is a glyph the text extraction drops, so it was read from page 10 of the 2024 Higher Level marking scheme. Q5 is marked 6(3) + 2 over seven statements."
  }
 ]
