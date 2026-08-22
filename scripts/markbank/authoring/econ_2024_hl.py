@@ -495,4 +495,22 @@ P.menu('social cost and one social benefit of the proposed DART', 'econ-2024-hl-
        ref='2024 HL Q16(c)(ii) — benefit', claim=1, per=5,
        drop=SCAF2 + ('Social benefit:',), after='Social benefit:')
 
+# The scheme runs advantages then disadvantages, marking the turn with "Disad"
+# at the end of the built-in-stabiliser line, so each side is its own card.
+P.menu('Low collection cost', 'econ-2024-hl-q16-c-iii-advantage',
+       'economics-3-1', 'advantages-of-indirect-taxation',
+       'Outline one advantage of raising tax revenue through increasing indirect taxation.',
+       'An advantage — any one', 'One advantage, 6 marks; a disadvantage is worth 6 too.',
+       ref='2024 HL Q16(c)(iii) — advantage', claim=1, per=6,
+       drop=SCAF2 + ('The Research Process', 'Data (Application'),
+       stop='Will increase inflation')
+
+P.menu('Low collection cost', 'econ-2024-hl-q16-c-iii-disadvantage',
+       'economics-3-1', 'disadvantages-of-indirect-taxation',
+       'Outline one disadvantage of raising tax revenue through increasing indirect taxation.',
+       'A disadvantage — any one', 'One disadvantage, 6 marks; an advantage is worth 6 too.',
+       ref='2024 HL Q16(c)(iii) — disadvantage', claim=1, per=6,
+       drop=SCAF2 + ('The Research Process', 'Data (Application'),
+       after='Will increase inflation')
+
 emit(cards + P.cards)
