@@ -44,4 +44,10 @@ P.menu('advantages for the Irish economy of increasing the minimum wage', 'econ-
        ref='2022 OL Section A Q5(a)', steps=[9, 6], drop=SCAFFOLD,
        stem='The government increased the minimum wage by 30c in Budget 2022.')
 
+P.menu('disadvantage of this development for local retailers',
+       'econ-2022-ol-sa-q3-ii', 'economics-2-0', 'how-online-shopping-hurts-local-retailers',
+       'Outline one possible disadvantage of the growth in online shopping for local retailers.',
+       'A disadvantage — any one', 'One disadvantage, 6 for the point and 3 for developing it.',
+       ref='2022 OL Section A Q3(ii)', claim=1, per=6, drop=SCAFFOLD)
+
 P.emit()

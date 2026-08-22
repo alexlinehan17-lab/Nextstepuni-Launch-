@@ -207,4 +207,9 @@ P.menu('entrepreneurs important to the development of the Irish economy',
        'A reason entrepreneurs matter — any one', 'One reason, 4 marks after 2 for the stance.',
        ref='2023 OL Q16(a)(ii)', claim=1, per=4, drop=SCAFFOLD)
 
+# Q14(c)(i) is not carded: the scheme welds the variable-cost definition onto
+# the end of the fixed-cost examples line — "Examples: rent of premises,
+# insurance, rates ... Variable costs: costs which vary with output" — so
+# neither half separates cleanly and a card would carry the other's definition.
+
 P.emit()

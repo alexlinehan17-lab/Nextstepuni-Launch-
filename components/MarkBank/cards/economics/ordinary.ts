@@ -590,6 +590,19 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2022-ol-sa-q3-ii", topicId: "economics-2-0", conceptId: "how-online-shopping-hurts-local-retailers",
+    section: "A", questionRef: "2022 OL Section A Q3(ii)",
+    questionText: "Outline one possible disadvantage of the growth in online shopping for local retailers.",
+    tariffModel: {"kind":"bestNofParts","notation":"1 @ 6","answer":1,"ofParts":3,"perPart":6}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A disadvantage — any one", marks: 6, contextNote: "One disadvantage, 6 for the point and 3 for developing it.", openList: true, group: {"claimMax":1,"perOption":6,"options":["Reduced sales / profits: if consumers shop online then local retailers will lose sales / revenue due to lack of footfall / reduction in impulse buying.","Decline in domestic economic activity: due to the possible reduction in people shopping in the locality.","Job losses: retailers may reduce number of employees due to reduced store sales."]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2023, level: "ordinary",
     paperFileid: "LC034GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2023 Ordinary Level — © State Examinations Commission.",
