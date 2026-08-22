@@ -139,6 +139,22 @@ EXCLUDED = {
         'answered by ticking which diagram applies, with the explanation beside it',
     '2025 HL Section A Q7':
         'answered by naming a product from the table and justifying off its YED value',
+    '2024 HL Q14(c)(ii)': 'the response is the worked real-interest-rate calculation',
+    '2022 OL Section A Q9(i)': 'the response is the worked elasticity calculation',
+    '2022 OL Section A Q4':
+        'answered by ticking substitute or complementary against each product',
+    '2022 HL Q14(c)(iii)':
+        'the scheme welds its two sides together and neither separates cleanly',
+    '2023 HL Q15(b)(iii)':
+        'the yes and no cases are welded onto the cue line and neither separates',
+    '2025 HL Q14(b)(i)':
+        'a graph to be completed; the responses are its axis and equilibrium labels',
+
+    # Already carded under a reference the worklist cannot match, because the
+    # scheme leaves the part unplaced and gives it no question cue to compare.
+    '2021 OL Q11(b)(iii)-mnc': 'carded as econ-2021-ol-q11-b-iii',
+    '2023 HL Section A Q5(b)-ppf': 'carded as econ-2023-hl-sa-q5-b',
+    '2025 OL Section A Q5(ii)-gdp': 'carded as econ-2025-ol-sa-q5-ii',
 }
 
 
