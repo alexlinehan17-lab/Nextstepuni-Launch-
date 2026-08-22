@@ -49,4 +49,17 @@ A.card(2, None, 'vi', topic='phys-u2', concept='whether-the-results-verify-snell
                   ((2, None, 'vi'), 0, slice(7, 18))],
        marks=[3, 3])
 
+
+# ── Drawing questions whose scheme says what the drawing must show ─────────
+A.card(5, None, 'iv', topic='phys-u2', concept='plotting-current-squared-against-temperature-rise',
+       source='pdf',
+       from_runs=[((5, None, 'iv'), 0, slice(0, 2)),
+                  ((5, None, 'iv'), 0, slice(3, 8)),
+                  ((5, None, 'iv'), 0, slice(8, 12))],
+       marks=[3, 6, 3], notation='3 + 6 × 1 + 3')
+
+A.card(7, None, 'vii', topic='phys-1-2', concept='forces-on-a-train-at-constant-speed',
+       source='pdf', from_run=((7, None, 'vii'), 0, slice(0, 3)), marks=[9],
+       notes='The scheme takes a mark off for each of the four forces left out.')
+
 A.emit()

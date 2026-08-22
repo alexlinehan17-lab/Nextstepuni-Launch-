@@ -27086,6 +27086,224 @@
   "stem": "In an experiment to verify Snell’s law, a student measured the angle of incidence i and the angle of refraction r for a ray of light as it passes from air into glass. This process was repeated for six different values of i. The following data were recorded. i (degrees) 30 40 50 60 70 80 r (degrees) 19 27 32 36 40 44"
  },
  {
+  "id": "phys-2022-hl-q3-iii",
+  "topicId": "phys-u2",
+  "conceptId": "graph-to-verify-snells-law",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2022 HL Q3(iii)",
+  "questionText": "Draw a suitable graph to verify Snell’s law.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "values for sin i and sin r",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "labelled axes",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "correct points plotted",
+    "marks": 3
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "line of best fit",
+    "marks": 3
+   }
+  ],
+  "stem": "In an experiment to verify Snell’s law, a student measured the angle of incidence i and the angle of refraction r for a ray of light as it passes from air into glass. This process was repeated for six different values of i. The following data were recorded. i (degrees) 30 40 50 60 70 80 r (degrees) 19 27 32 36 40 44",
+  "notes": "Snell's law is verified against the sines, not the angles, so the first mark is for working those out before plotting anything."
+ },
+ {
+  "id": "phys-2022-hl-q5-iii",
+  "topicId": "phys-u2",
+  "conceptId": "graph-to-verify-joules-law",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2022 HL Q5(iii)",
+  "questionText": "Draw a suitable graph to verify Joule’s law.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "values for I2",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "labelled axes",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "correct points plotted",
+    "marks": 3
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "line of best fit",
+    "marks": 3
+   }
+  ],
+  "stem": "A student performed a single experiment to (a) verify Joule’s law, and (b) determine the specific heat capacity of olive oil. An electrical heating coil of resistance 8.5 Ω was immersed in 350 g of olive oil which was at room temperature. A current I was allowed to flow through the coil for three minutes and the final temperature θ of the oil was determined. This process was repeated for six different values of I. The following data were recorded. Room temperature = 17.0 °C I (A) 1.0 2.0 3.0 3.5 4.0 4.5 θ (°C) 19.2 26.1 36.6 44.4 53.1 62.1 Each question carries 56 marks."
+ },
+ {
+  "id": "phys-2022-hl-q9a-i",
+  "topicId": "phys-3-1",
+  "conceptId": "electric-field-around-a-charged-sphere",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2022 HL Q9(a)(i)",
+  "questionText": "Draw the electric field around the sphere.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "radial shape of field",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "direction of field towards centre",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme numbers this answer under its own Question 8 while the paper prints Question 9."
+ },
+ {
+  "id": "phys-2022-hl-q12b-ii",
+  "topicId": "phys-3-5",
+  "conceptId": "parts-of-a-moving-coil-galvanometer",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2022 HL Q12(b)(ii)",
+  "questionText": "Draw a labelled diagram of a moving-coil galvanometer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "magnet",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "coil",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "[soft] iron core",
+    "marks": 3
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "scale and pointer",
+    "marks": 3
+   }
+  ],
+  "stem": "A resistor called a multiplier is used to convert a galvanometer into a voltmeter.",
+  "notes": "The scheme takes a mark off if the diagram carries no labels."
+ },
+ {
+  "id": "phys-2022-hl-q12b-iv",
+  "topicId": "phys-3-3",
+  "conceptId": "converting-a-galvanometer-to-an-ammeter",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2022 HL Q12(b)(iv)",
+  "questionText": "Draw a circuit diagram to demonstrate how a galvanometer can be converted into an ammeter.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "[low resistance] resistor/shunt",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "in parallel with galvanometer",
+    "marks": 3
+   }
+  ],
+  "stem": "A resistor called a multiplier is used to convert a galvanometer into a voltmeter."
+ },
+ {
+  "id": "phys-2022-hl-q12b-v",
+  "topicId": "phys-3-3",
+  "conceptId": "converting-a-galvanometer-to-an-ohmmeter",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2022 HL Q12(b)(v)",
+  "questionText": "Draw a circuit diagram to demonstrate how a galvanometer can be converted into an ohmmeter.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "variable resistor in series with galvanometer",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "power supply",
+    "marks": 3
+   }
+  ],
+  "stem": "A resistor called a multiplier is used to convert a galvanometer into a voltmeter."
+ },
+ {
   "id": "phys-2022-ol-q2-v",
   "topicId": "phys-u2",
   "conceptId": "average-refractive-index-from-results",
@@ -27282,6 +27500,68 @@
    }
   ],
   "stem": "A student carried out an experiment to verify Snell’s Law and used her measurements to calculate the refractive index (n) of a material. She measured the angle of incidence i and the corresponding angle of refraction r. She repeated this for a different values of i. Her results are shown in the table below. i (degrees) 30 40 50 60 r (degrees) 19 25 31 35"
+ },
+ {
+  "id": "phys-2022-ol-q5-iv",
+  "topicId": "phys-u2",
+  "conceptId": "plotting-current-squared-against-temperature-rise",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2022 OL Q5(iv)",
+  "questionText": "Use all of the data to plot a graph of I2 against Δθ.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 + 6 × 1 + 3"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "labelled axis",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "points plotted",
+    "marks": 6
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "line of best fit",
+    "marks": 3
+   }
+  ],
+  "stem": "In an experiment to verify Joule’s law, a constant current I was passed through a heating coil immersed in water and the rise in temperature Δθ was recorded. This procedure was repeated for a number of different currents. The mass of the water and the length of time for which the current was flowing were both kept constant. The student recorded the following results. I (A) 1 1.5 2 2.5 3 3.5 I2 (A2) Δθ (°C) 1.2 2.7 4.8 7.5 10.8 14.7 Each question carries 56 marks."
+ },
+ {
+  "id": "phys-2022-ol-q7-vii",
+  "topicId": "phys-1-2",
+  "conceptId": "forces-on-a-train-at-constant-speed",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2022 OL Q7(vii)",
+  "questionText": "Draw a labelled diagram to show the forces acting on the train while it is moving with constant speed.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "four correct forces",
+    "marks": 9
+   }
+  ],
+  "stem": "A train of mass 420000 kg started from rest and accelerated to a velocity of 25 m s–1 in a time of 6 minutes. (ix) Draw a speed‐time graph for the train during the first 21 minutes of its journey. (26) Leaving Certificate, 2022 Physics – Ordinary Level 6",
+  "notes": "The scheme takes a mark off for each of the four forces left out."
  },
  {
   "id": "phys-2023-hl-q1-v",

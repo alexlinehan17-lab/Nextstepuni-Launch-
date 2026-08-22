@@ -47,4 +47,53 @@ A.card(3, None, 'iv', topic='phys-u2', concept='refractive-index-from-a-slope',
                   ((3, None, 'iv'), 0, slice(3, 6))],
        marks=[3, 3])
 
+
+# ── Drawing questions whose scheme says what the drawing must show ─────────
+A.card(3, None, 'iii', topic='phys-u2', concept='graph-to-verify-snells-law',
+       source='pdf',
+       from_runs=[((3, None, 'iii'), 0, slice(0, 7)),
+                  ((3, None, 'iii'), 2, slice(0, 2)),
+                  ((3, None, 'iii'), 2, slice(3, 6)),
+                  ((3, None, 'iii'), 2, slice(7, 11))],
+       marks=[3, 3, 3, 3],
+       notes='Snell\'s law is verified against the sines, not the angles, so the first '
+             'mark is for working those out before plotting anything.')
+
+A.card(5, None, 'iii', topic='phys-u2', concept='graph-to-verify-joules-law',
+       source='pdf',
+       from_runs=[((5, None, 'iii'), 0, slice(0, 3)),
+                  ((5, None, 'iii'), 3, slice(0, 2)),
+                  ((5, None, 'iii'), 3, slice(3, 6)),
+                  ((5, None, 'iii'), 3, slice(7, 11))],
+       marks=[3, 3, 3, 3])
+
+A.card(9, 'a', 'i', topic='phys-3-1', concept='electric-field-around-a-charged-sphere',
+       source='pdf',
+       from_runs=[((8, 'a', 'i'), 0, slice(0, 4)),
+                  ((8, 'a', 'i'), 0, slice(5, 10))],
+       marks=[3, 3], checked='The paper prints the part mark in brackets after the question, so the text ends on a number rather than punctuation. The question itself is complete.',
+       notes='The scheme numbers this answer under its own Question 8 while the paper '
+             'prints Question 9.')
+
+A.card(12, 'b', 'ii', topic='phys-3-5', concept='parts-of-a-moving-coil-galvanometer',
+       source='pdf',
+       from_runs=[((12, 'b', 'ii'), 0, slice(0, 1)),
+                  ((12, 'b', 'ii'), 0, slice(2, 3)),
+                  ((12, 'b', 'ii'), 0, slice(4, 7)),
+                  ((12, 'b', 'ii'), 0, slice(8, 11))],
+       marks=[3, 3, 3, 3],
+       notes='The scheme takes a mark off if the diagram carries no labels.')
+
+A.card(12, 'b', 'iv', topic='phys-3-3', concept='converting-a-galvanometer-to-an-ammeter',
+       source='pdf',
+       from_runs=[((12, 'b', 'iv'), 0, slice(0, 3)),
+                  ((12, 'b', 'iv'), 0, slice(4, 8))],
+       marks=[3, 3])
+
+A.card(12, 'b', 'v', topic='phys-3-3', concept='converting-a-galvanometer-to-an-ohmmeter',
+       source='pdf',
+       from_runs=[((12, 'b', 'v'), 0, slice(0, 6)),
+                  ((12, 'b', 'v'), 0, slice(7, 9))],
+       marks=[3, 3])
+
 A.emit()
