@@ -351,4 +351,15 @@ P.menu('new mortgage borrowing rules has a positive or negative', 'econ-2024-ol-
        ref='2024 OL Q16(c)(i) — negative', claim=1, per=10,
        drop=SCAF, after='Negative effect explanation')
 
+# The plain id is taken by a card citing 2024 OL Q14(a)(ii) on the importance of
+# exports — one of the parts whose reconstructed path is a numeral out. Left
+# alone because review history is keyed on it.
+P.menu('reason why the Irish government contributes to the EU', 'econ-2024-ol-q14-a-ii-eu',
+       'economics-4-1', 'why-ireland-pays-into-the-eu-budget',
+       'Outline one reason why the Irish government contributes to the EU.',
+       'A reason Ireland contributes — any one',
+       'One reason, 4 marks. The scheme lists eight.',
+       ref='2024 OL Q14(a)(ii)', claim=1, per=4,
+       drop=SCAF + ('Outline one reason why the Irish government contributes',))
+
 emit(cards + P.cards)

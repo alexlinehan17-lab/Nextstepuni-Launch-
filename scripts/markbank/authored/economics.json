@@ -11426,6 +11426,53 @@
   "notes": ""
  },
  {
+  "id": "econ-2024-ol-q14-a-ii-eu",
+  "topicId": "economics-4-1",
+  "conceptId": "why-ireland-pays-into-the-eu-budget",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q14(a)(ii)",
+  "questionText": "Outline one reason why the Irish government contributes to the EU.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 4",
+   "answer": 1,
+   "ofParts": 8,
+   "perPart": 4
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason Ireland contributes — any one",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One reason, 4 marks. The scheme lists eight.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "To help achieve economic growth and cohesion: Ireland has greatly benefited from its EU membership, which has helped the country's economy grow and improve its infrastructure. By contributing to the EU budget, Ireland supports initiatives and programmes aimed at fostering economic growth and reducing disparities between regions in the EU. For example, during Covid-19, the EU acted to contain the spread of the virus, support national health systems, and counter the socio-economic impact of the pandemic.",
+      "To ensure access to the single market: The EU single market allows for the free movement of goods, services, capital, and people among member states. By contributing to the EU budget, Ireland can participate in and benefit from the single market, which has been a significant factor in its economic development.",
+      "To receive supports… for Irish agriculture / forestry / infrastructure: The Common Agricultural Policy (CAP) is a major component of the EU budget. Ireland's agricultural / agri-food / forestry sector has benefited significantly from CAP subsidies and supports, which contribute to the stability and sustainability of the sector.",
+      "To help fund research and innovation: The EU budget funds various research and innovation programmes, such as Horizon Europe. By contributing to the budget, Ireland gains access to such funding programmes, which promote scientific and technological progress, boost competitiveness, and help to create jobs.",
+      "To help fund environmental and climate goals: The EU budget supports policies and initiatives aimed at protecting the environment and tackling climate change, including the European Green Deal. Ireland's contributions help advance these goals, which are vital for the wellbeing and sustainability of its current citizens and future generations.",
+      "To help promote social Inclusion and education: EU-funded programmes, such as Erasmus+, promote social inclusion, education, and cultural exchanges among member states. By contributing to the budget, Ireland supports these initiatives that benefit its citizens, especially the youth.",
+      "To bolster security and foreign policy: EU budget contributions help strengthen its security and foreign policy capabilities, enabling joint efforts in areas such as defence, counterterrorism, and migration management. This enhances Ireland's own security and global influence.",
+      "To demonstrate Ireland’s belief in European solidarity and shared values: As a member of the EU, Ireland shares common values such as democracy, human rights, and the rule of law. Contributing to the EU budget is a way for Ireland to express its commitment to these values and support the collective effort of member states to promote peace and prosperity in Europe and beyond."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "econ-2024-ol-sa-q1-i",
   "topicId": "economics-0-2",
   "conceptId": "oceans-as-an-economic-resource",
