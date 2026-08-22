@@ -174,4 +174,37 @@ P.menu('factor, other than an increase in income, that would affect the demand',
        ref='2023 OL Q15(b)(iii)', claim=1, per=5,
        drop=SCAFFOLD + ('electric cars in a market.',))
 
+# ── Q16(c): food waste ─────────────────────────────────────────────────────
+P.menu('cost to society of wasting food', 'econ-2023-ol-q16-c-i',
+       'economics-0-2', 'the-social-cost-of-food-waste',
+       'Outline one cost to society of wasting food.',
+       'A cost to society — any one', 'One cost, 8 marks. The scheme lists seven.',
+       ref='2023 OL Q16(c)(i)', claim=1, per=8, drop=SCAFFOLD)
+
+P.menu('action consumers could take to reduce food waste', 'econ-2023-ol-q16-c-ii',
+       'economics-0-2', 'how-consumers-can-cut-food-waste',
+       'Describe one action consumers could take to reduce food waste.',
+       'An action a consumer can take — any one', 'One action, 8 marks. The scheme lists six.',
+       ref='2023 OL Q16(c)(ii)', claim=1, per=8, drop=SCAFFOLD)
+
+P.menu('action producers could take to reduce food waste', 'econ-2023-ol-q16-c-iii',
+       'economics-0-2', 'how-producers-can-cut-food-waste',
+       'Describe one action producers could take to reduce food waste.',
+       'An action a producer can take — any one', 'One action, 8 marks.',
+       ref='2023 OL Q16(c)(iii)', claim=1, per=8, drop=SCAFFOLD)
+
+P.menu('social benefit for Ireland if more consumers switch to hybrid and electric',
+       'econ-2023-ol-q15-c-ii', 'economics-0-2', 'social-benefits-of-electric-cars',
+       'Describe one social benefit for Ireland if more consumers switch to hybrid and '
+       'electric cars.',
+       'A social benefit — any one', 'One benefit, 8 marks.',
+       ref='2023 OL Q15(c)(ii)', claim=1, per=8, drop=SCAFFOLD)
+
+P.menu('entrepreneurs important to the development of the Irish economy',
+       'econ-2023-ol-q16-a-ii', 'economics-1-5', 'why-entrepreneurs-matter',
+       'In your opinion are entrepreneurs important to the development of the Irish economy? '
+       'Explain your answer.',
+       'A reason entrepreneurs matter — any one', 'One reason, 4 marks after 2 for the stance.',
+       ref='2023 OL Q16(a)(ii)', claim=1, per=4, drop=SCAFFOLD)
+
 P.emit()
