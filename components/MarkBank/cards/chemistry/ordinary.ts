@@ -5107,6 +5107,20 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC022GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2021 Ordinary Level — © State Examinations Commission.",
+    id: "chem-2021-ol-q11-a-iii", topicId: "chem-1-2", conceptId: "elements-with-the-same-energy-levels",
+    section: "A", questionRef: "2021 OL Q11(a)(iii)",
+    stem: "In the periodic table of the elements, what term is used for the elements (i) in the same vertical column, (ii) in the same horizontal row?",
+    questionText: "Identify a metallic element whose atoms have the same number of main energy levels occupied by electrons as boron (B).",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "lithium (Li)", marks: 6, accepts: ["beryllium (Be)"] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2024, level: "ordinary",
     paperFileid: "LC022GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2024 Ordinary Level — © State Examinations Commission.",

@@ -29399,6 +29399,34 @@
   "notes": "Five marking points across (i)-(iii) share one combined allocation (9 + 6 + 3 + 2 + 2 = 22). Q5(b) is skipped entirely: its seven sub-parts share a single combined allocation (9 + 6 + 4 + 3 + 2 + 2 + 2 = 28), but one is a dot-and-cross drawing and one requires reading the electronegativity table, so the remaining parts cannot be given real marks without inventing a split."
  },
  {
+  "id": "chem-2021-ol-q11-a-iii",
+  "topicId": "chem-1-2",
+  "conceptId": "elements-with-the-same-energy-levels",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2021 OL Q11(a)(iii)",
+  "questionText": "Identify a metallic element whose atoms have the same number of main energy levels occupied by electrons as boron (B).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "lithium (Li)",
+    "marks": 6,
+    "accepts": [
+     "beryllium (Be)"
+    ]
+   }
+  ],
+  "stem": "In the periodic table of the elements, what term is used for the elements (i) in the same vertical column, (ii) in the same horizontal row?",
+  "notes": "Either element scores: both lithium and beryllium fill the same two main energy levels that boron does."
+ },
+ {
   "id": "chem-2024-hl-q3-b-iii",
   "topicId": "chem-u2",
   "conceptId": "what-a-rate-graph-shows",
