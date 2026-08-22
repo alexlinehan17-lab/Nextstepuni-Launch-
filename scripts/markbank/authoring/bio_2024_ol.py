@@ -29,4 +29,29 @@ for letter, answer, topic, concept in (
     A.card(6, letter, topic=topic, concept=concept, tick=answer, marks=[3],
            notation='6(3) + 2', notes=READ, stem=False)
 
+# ── Parts the deck had not carded ──────────────────────────────────────────
+# Question 3 pays four marks a part and Question 7 pays "5(4)" — five matches
+# at four each — both printed in the scheme's own mark column. The scheme
+# numbers its Section A answers one behind the paper, so the Question 3 and
+# Question 7 cards name the scheme's Question 2 and Question 6 as their source.
+A.card(3, 'c', topic='bio-1-4', concept='what-happens-at-stage-2-of-mitosis',
+       source='pdf', from_run=((2, 'c', None), 1, slice(0, None)), marks=[4])
+
+A.card(3, 'd', topic='bio-1-4', concept='what-happens-at-stage-3-of-mitosis',
+       source='pdf', from_run=((2, 'd', None), 1, slice(0, None)), marks=[4])
+
+A.card(7, 'b', topic='bio-u1', concept='what-tests-a-hypothesis',
+       source='pdf', from_run=((6, 'b', None), 0, slice(5, 6)), marks=[4],
+       checked='Question 7 is a matching table. The paper prints this part as a Column A description with no verb of its own, and the instruction to match it to a term in the list sits in the question stem the card already carries.')
+
+A.card(7, 'c', topic='bio-u1', concept='what-a-control-is-for',
+       source='pdf', from_run=((6, 'c', None), 0, slice(4, 5)), marks=[4],
+       checked='Question 7 is a matching table. The paper prints this part as a Column A description with no verb of its own, and the instruction to match it to a term in the list sits in the question stem the card already carries.')
+
+A.card(9, 'b', 'ii', topic='bio-u1', concept='preparing-the-enzyme',
+       source='pdf', use=[1], marks=[3], row_kind='criterion')
+
+A.card(13, 'b', 'iv', topic='bio-3-2', concept='fraction-of-f2-that-is-recessive',
+       source='pdf', use=[1], marks=[3], first_sentence=True)
+
 A.emit()

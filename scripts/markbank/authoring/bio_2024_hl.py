@@ -32,4 +32,11 @@ for letter, answer, topic, concept in (
     A.card(5, letter, topic=topic, concept=concept, tick=answer, marks=[3],
            notation='6(3) + 2', notes=READ, stem=False)
 
+A.card(12, 'c', 'iv', topic='bio-3-1', concept='counting-trophic-levels',
+       source='pdf', from_run=((3, None, 'iv'), 0, slice(0, None)), marks=[3],
+       checked='The paper runs this part into the next in one block, so the text stops at '
+               '"in part". The question asked is the one the scheme answers.',
+       notes='The scheme numbers this answer under its own Question 3 while the paper '
+             'prints Question 12.')
+
 A.emit()
