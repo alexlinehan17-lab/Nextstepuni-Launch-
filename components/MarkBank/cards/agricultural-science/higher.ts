@@ -7191,6 +7191,20 @@ export const CARDS: SecCard[] = [
     ],
   } as SecCard,
   {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q18aiii", topicId: "agsci-4-1", conceptId: "dominant-features-in-a-cross",
+    section: "B", questionRef: "2024 HL Q18(a)(iii)",
+    questionText: "Isobel crossed breeds A and B in part (ii) above. The resulting offspring is shown in C below. C List two dominant features from parents in A and B in part (ii) above that are passed to the offspring C.",
+    tariffModel: {"kind":"fixed","notation":"6 + 2"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Black coat colour", marks: 6 },
+    { id: "r-2", kind: "point", verbatim: "coat pattern", marks: 2 },
+    ],
+  } as SecCard,
+  {
     ...base, kind: "diagram",
     year: 2025, level: "higher",
     paperFileid: "LC024ALP000EV",

@@ -34323,6 +34323,37 @@
   "notes": "The scheme numbers this answer under its own Question 12 while the paper prints Question 13, and only the PDF reading has it — the markdown one files it under 13 with the question cue spliced onto the front."
  },
  {
+  "id": "agsci-2023-ol-q15aii",
+  "topicId": "agsci-3-1",
+  "conceptId": "which-soil-sample-is-compacted",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2023 OL Q15(a)(ii)",
+  "questionText": "Two soil samples A and B were collected are represented in the diagrams. Identify which soil is compacted and give a reason for your answer.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 + 5"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Soil sample – B",
+    "marks": 5
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Reason – less (air) spaces or soil particles closer together",
+    "marks": 5
+   }
+  ],
+  "stem": "Soil particle Water Air"
+ },
+ {
   "id": "agsci-2024-hl-q10a",
   "topicId": "agsci-3-2",
   "conceptId": "recognising-a-multi-species-sward",
@@ -34654,6 +34685,37 @@
    }
   ],
   "stem": "Sample number Treatment group Colostrum IgG Average birthweight (kg) Average weaning (mg/ml) weight (kg) Sample 1 Pooled colostrum 100.7 34.0 94.0 Sample 2 Own dam colostrum 99.4 33.3 93.7 Sample 3 Colostrum from another dam 95.2 34.3 91.7 (Adapted from Teagasc, 2019)"
+ },
+ {
+  "id": "agsci-2024-hl-q18aiii",
+  "topicId": "agsci-4-1",
+  "conceptId": "dominant-features-in-a-cross",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2024 HL Q18(a)(iii)",
+  "questionText": "Isobel crossed breeds A and B in part (ii) above. The resulting offspring is shown in C below. C List two dominant features from parents in A and B in part (ii) above that are passed to the offspring C.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 2"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Black coat colour",
+    "marks": 6
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "coat pattern",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme also allows a white face, white legs and belly, a pink nose or the tail switch."
  },
  {
   "id": "agsci-2024-ol-q1b",

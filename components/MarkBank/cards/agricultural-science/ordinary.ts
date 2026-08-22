@@ -6978,6 +6978,21 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2023-ol-q15aii", topicId: "agsci-3-1", conceptId: "which-soil-sample-is-compacted",
+    section: "B", questionRef: "2023 OL Q15(a)(ii)",
+    stem: "Soil particle Water Air",
+    questionText: "Two soil samples A and B were collected are represented in the diagrams. Identify which soil is compacted and give a reason for your answer.",
+    tariffModel: {"kind":"fixed","notation":"5 + 5"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Soil sample – B", marks: 5 },
+    { id: "r-2", kind: "point", verbatim: "Reason – less (air) spaces or soil particles closer together", marks: 5 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2024, level: "ordinary",
     paperFileid: "LC024GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",

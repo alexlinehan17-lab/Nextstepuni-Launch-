@@ -91,4 +91,11 @@ A.card(16, 'b', 'ii', topic='agsci-4-2', concept='advice-from-the-colostrum-tria
 A.card(16, 'b', 'i', topic='agsci-4-2', concept='whether-pooling-colostrum-costs-quality',
        from_run=((16, 'b', 'i'), 0, slice(3, None)), marks=[4])
 
+A.card(18, 'a', 'iii', topic='agsci-4-1', concept='dominant-features-in-a-cross',
+       from_runs=[((18, 'a', 'iii'), 0, slice(6, None)),
+                  ((18, 'a', 'iii'), 1, slice(0, None))],
+       marks=[6, 2], notation='6 + 2',
+       notes='The scheme also allows a white face, white legs and belly, a pink nose or '
+             'the tail switch.')
+
 A.emit()

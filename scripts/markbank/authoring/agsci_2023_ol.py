@@ -96,4 +96,10 @@ A.card(13, 'b', 'ii', topic='agsci-3-2', concept='what-the-reseeding-trial-shows
              'prints Question 13, and only the PDF reading has it — the markdown one '
              'files it under 13 with the question cue spliced onto the front.')
 
+A.card(15, 'a', 'ii', topic='agsci-3-1', concept='which-soil-sample-is-compacted',
+       source='pdf',
+       from_runs=[((15, 'a', 'ii'), 1, slice(0, 4)),
+                  ((15, 'a', 'ii'), 1, slice(4, 14))],
+       marks=[5, 5], notation='5 + 5')
+
 A.emit()
