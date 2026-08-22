@@ -34,9 +34,20 @@ QNUM = re.compile(r'\bQ\s?(\d{1,2})\b')
 MARKER = re.compile(r'\(([a-hA-H]|i{1,3}|iv|vi{0,3})\)')
 
 
+LETTERS = set('abcdefgh')
+
+
 def covered(subject):
-    """Every (year, level, question, marker) a card's reference names."""
-    out = set()
+    """For each (year, level, question), the marker shapes cards cite for it.
+
+    A reference names its markers in one of three shapes, and which shape it is
+    decides what it covers. "Q11(c)(i)" names both a letter and a roman and
+    covers only that one part. "Q11(b)" names a letter and covers everything
+    under it. "Q3(v)" names a roman alone, which is how Physics cites a part the
+    paper prints as Q3(b)(v) — so a bare roman covers that roman under any
+    letter, while a letter that is named has to match.
+    """
+    out = collections.defaultdict(list)
     path = os.path.join(AUTHORED, f'{subject}.json')
     for card in json.load(open(path)):
         ref = card.get('questionRef') or ''
@@ -46,12 +57,12 @@ def covered(subject):
         year, level = int(h.group(1)), h.group(2).lower()
         for qm in QNUM.finditer(ref):
             q = int(qm.group(1))
-            tail = ref[qm.end():]
-            markers = [m.group(1).lower() for m in MARKER.finditer(tail)]
-            out.add((year, level, q, None, None))
-            for mk in markers:
-                out.add((year, level, q, mk, None))
-                out.add((year, level, q, None, mk))
+            marks = [m.group(1).lower() for m in MARKER.finditer(ref[qm.end():])]
+            # 'i' reads as both a letter and a roman; every paper in the corpus
+            # that sets an (i) means the roman, so it is only ever read that way.
+            letters = {m for m in marks if m in LETTERS and m != 'i'}
+            romans = {m for m in marks if m not in letters}
+            out[(year, level, q)].append((letters, romans))
     return out
 
 
@@ -76,17 +87,15 @@ def report(subject):
                     continue
                 q, letter, roman = pkey
                 total += 1
-                # A roman on its own only counts when the part has no letter,
-                # as in a reference like "2023 HL Q4(iv), (v)". Letting it count
-                # regardless meant a card citing Q11(c)(i) marked Q11(b)(i)
-                # covered, and Biology reported four parts open when the whole
-                # of one question's (b) was missing.
-                hit = ((year, level, q, letter, roman) in done
-                       or (year, level, q, letter, None) in done
-                       or (letter is None
-                           and (year, level, q, None, roman) in done)
-                       or (letter is None and roman is None
-                           and (year, level, q, None, None) in done))
+                hit = False
+                for letters, romans in done.get((year, level, q), ()):
+                    if not letters and not romans:
+                        hit = letter is None and roman is None
+                    else:
+                        hit = ((letter is None or not letters or letter in letters)
+                               and (roman is None or not romans or roman in romans))
+                    if hit:
+                        break
                 if not hit:
                     uncovered += 1
                     gaps[(year, level)] += 1
