@@ -84,6 +84,24 @@ EXCLUDED = {
         'a table completion — the marks are for the figures, not for prose',
     '2025 HL Section A Q9(a)':
         'writing out what numbered items on a diagram stand for; no prose answer',
+
+    # An "explain your answer" beside a diagram, marked for the part as a whole.
+    # The scheme does not say how much of the tariff is the drawing, so splitting
+    # it over the written steps would be arithmetic rather than the scheme's.
+    '2025 OL Q15(b)(ii)':
+        'the explanation beside a diagram, with the tariff covering both',
+    '2024 OL Q15(b)(ii)':
+        'the explanation beside a diagram, with the tariff covering both',
+    '2025 HL Section A Q6(b)':
+        'the explanation beside a diagram, with the tariff covering both',
+    '2022 HL Q15(a)(iii)':
+        'the explanation beside a diagram, with the tariff covering both',
+    '2023 HL Q16(a)(ii)':
+        'the explanation beside a diagram, with the tariff covering both',
+    '2025 HL Q11(b)(i)':
+        'the explanation beside a diagram, with the tariff covering both',
+    '2025 OL Q11(c)(ii)':
+        'the scheme heads three areas and answers only the first before the rubric',
 }
 
 

@@ -255,4 +255,9 @@ P.menu('Savers may decide to save less', 'econ-2025-ol-q12-c-iii',
        ref='2025 OL Q12(c)(iii)', claim=2, per=6, steps=[6, 4],
        drop=SCAFFOLD + ('Savers in Ireland • Borrowers who are repaying mortgages',))
 
+# 2025 OL Q15(b)(ii) and 2024 OL Q15(b)(ii) are not carded: each is the
+# "Explain your answer" beside a diagram, marked 10 and 9 for the part as a
+# whole, and the scheme does not say how much of that is the drawing. Splitting
+# it over the four written steps would be my arithmetic, not the scheme's.
+
 P.emit()
