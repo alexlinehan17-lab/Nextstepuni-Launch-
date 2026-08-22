@@ -158,5 +158,32 @@ EXCLUDED = {
 }
 
 
-def is_excluded(ref):
-    return ref in EXCLUDED
+# A part the scheme leaves unplaced has no reference to key on, so these are
+# matched on a distinctive phrase from the scheme's own responses instead.
+EXCLUDED_TEXT = {
+    'Availability of a skilled/English speaking workforce':
+        'carded as econ-2021-ol-q11-b-iii, the reasons MNCs locate in Ireland',
+    'Efficient refers to a production point':
+        'carded as econ-2023-hl-sa-q5-b, the PPF justifications',
+    'Higher incomes / living standards':
+        'carded as econ-2025-ol-sa-q5-ii, the advantages of a growing GDP',
+    'The supply of land is fixed in quantity':
+        'the explanation beside a diagram, with the tariff covering both',
+    'Specialisation/division of labour':
+        'the two halves of a long-run average cost curve, marked as one part with '
+        'the diagram',
+    'As the cost of fertiliser has risen':
+        'the explanation beside a diagram, with the tariff covering both',
+    'They sell the output at price P1':
+        'the explanation beside a monopoly diagram, marked 1 per label with the '
+        'explanation as a block',
+}
+
+
+def is_excluded(ref, question=''):
+    if ref in EXCLUDED:
+        return EXCLUDED[ref]
+    for phrase, why in EXCLUDED_TEXT.items():
+        if phrase in (question or ''):
+            return why
+    return None

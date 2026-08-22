@@ -14689,6 +14689,49 @@
   "notes": ""
  },
  {
+  "id": "econ-2025-hl-q15-a-iii-aib",
+  "topicId": "economics-2-0",
+  "conceptId": "why-a-bank-invests-in-its-branches",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q15(a)(iii)",
+  "questionText": "Outline one reason why AIB is investing €40 million upgrading almost two-thirds of its branch network.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 6",
+   "answer": 1,
+   "ofParts": 4,
+   "perPart": 6
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason — any one",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One reason, 6 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Commits to environmental sustainability / cost reduction – by upgrading its branches, the bank may improve its energy efficiency and reduce costs of electricity, heating, and cooling.",
+      "Attracts / retains customers – by upgrading its branches, AIB can offer better in-person services, which many customers still value for important financial decisions. A modern branch network helps attract new customers, keep existing ones loyal, and ensure strong customer satisfaction, especially in rural areas.",
+      "Complies with Government policies – IB’s investment aligns with the Irish government’s policy to maintain cash access and banking services across the country. By keeping its branch network strong, AIB is showing its commitment to financial inclusion and avoids a public backlash.",
+      "Supports digital integration – by modernising branches, AIB can incorporate new technology, such as self-service kiosks and advanced digital support. This improves efficiency and ensures it stays up to date with how banking is changing."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "econ-2025-hl-sa-q1-a-for",
   "topicId": "economics-3-5",
   "conceptId": "the-case-for-hosting-a-major-event",

@@ -19,7 +19,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from econ_auto import Paper
-from econ_excluded import EXCLUDED  # noqa: E402
+from econ_excluded import EXCLUDED, is_excluded  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__)))))
@@ -88,8 +88,9 @@ def main():
                 for c in cards):
             continue
 
-        if ref in EXCLUDED:
-            skipped.append((ref, EXCLUDED[ref]))
+        why = is_excluded(ref, ' '.join(p['options']) + ' ' + p['question'])
+        if why:
+            skipped.append((ref or '(unplaced)', why))
             continue
         n += 1
         tar = ('+'.join(map(str, p['steps'])) if p['steps'] else

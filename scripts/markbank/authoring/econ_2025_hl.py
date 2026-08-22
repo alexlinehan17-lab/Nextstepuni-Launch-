@@ -404,4 +404,12 @@ P.menu('Growth in corporate profits', 'econ-2025-hl-q12-b-i',
        'A reason for the change — any one', 'One reason, 6 marks.',
        ref='2025 HL Q12(b)(i)', claim=1, per=6, drop=SCAFFOLD)
 
+# The scheme leaves this part unplaced; the paper puts it at Q15(a)(iii).
+P.menu('Commits to environmental sustainability / cost reduction',
+       'econ-2025-hl-q15-a-iii-aib', 'economics-2-0', 'why-a-bank-invests-in-its-branches',
+       'Outline one reason why AIB is investing €40 million upgrading almost two-thirds of '
+       'its branch network.',
+       'A reason — any one', 'One reason, 6 marks.',
+       ref='2025 HL Q15(a)(iii)', claim=1, per=6, drop=SCAFFOLD)
+
 P.emit()
