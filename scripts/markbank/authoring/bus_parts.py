@@ -282,7 +282,10 @@ def notes_parts(year, level):
     if start is None:
         return []
 
-    out, section, question, part, roman = [], None, None, None, None
+    # 2025 Higher Level begins its notes with "2 (a) Explain the term Global
+    # Business" and no SECTION heading at all, so the notes open in Section 1
+    # unless and until a heading says otherwise.
+    out, section, question, part, roman = [], 1, None, None, None
     for raw in lines[start + 1:]:
         line = raw.strip()
         head = NOTES_HEADER.match(line)
@@ -304,6 +307,12 @@ def notes_parts(year, level):
             continue
         m = QHEAD.match(line)
         if m:
+            # Section 2 is one compulsory question with no number, so a
+            # "Question 1" line inside it means Section 3 has begun. 2025 Higher
+            # Level prints no SECTION 3 heading in its notes at all, and without
+            # this every Section 3 part of that paper was filed under the ABQ.
+            if section == 2:
+                section = 3
             question, part, roman = int(m.group(1)), None, None
             continue
 
