@@ -13028,74 +13028,6 @@
   "notes": ""
  },
  {
-  "id": "chem-2023-ol-q6-a-i",
-  "topicId": "chem-4-3",
-  "conceptId": "methane-greenhouse-gas-sources",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "chemistry",
-  "section": "B",
-  "questionRef": "2023 OL Q6(a)(i)",
-  "stem": "Methane is a greenhouse gas. Its increasing concentration in the atmosphere is a concern. Satellites showed that considerable quantities of methane were leaked into the atmosphere at oil and gas fields and from gas pipelines all over the world in 2022.",
-  "questionText": "Identify a significant source of methane not associated with the oil and gas industry.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "agriculture (cattle, sheep, pigs, slurry)",
-    "accepts": [
-     "coal mining",
-     "landfill",
-     "decomposition of organic matter (biodigesters)"
-    ],
-    "openList": true,
-    "marks": 6
-   }
-  ],
-  "notes": "Scheme closes the list with '/ etc.', so openList is set. Q6(a) marks are '(6 + 4 + 2 + 2)' read in sub-part order; Q6 reconciles to 50 on that reading."
- },
- {
-  "id": "chem-2023-ol-q6-a-ii-iii",
-  "topicId": "chem-2-4",
-  "conceptId": "hydrocarbon-meaning-methane-formula",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "chemistry",
-  "section": "B",
-  "questionRef": "2023 OL Q6(a)(ii)-(iii)",
-  "stem": "In the printed paper 'hydrocarbon' is the underlined term in (iii).",
-  "questionText": "(ii) Write the chemical formula for methane. (iii) Methane is a hydrocarbon. Explain the underlined term.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 8,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "CH4",
-    "marks": 4
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "contain hydrogen (H)",
-    "marks": 2
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "and carbon (C) only",
-    "marks": 2
-   }
-  ],
-  "notes": "This scheme's own preamble (introduction point 4) states that '//' separates points for which SEPARATE marks are allocated. So 'contain hydrogen (H) // and carbon (C) only' is two rows of 2 marks, not two mutually exclusive routes. For that reason no route fields are used on any card in this set."
- },
- {
   "id": "chem-2023-ol-q6-b-i-iv",
   "topicId": "chem-2-4",
   "conceptId": "natural-gas-alkanes-mercaptans",
@@ -13152,78 +13084,6 @@
    }
   ],
   "notes": "Marks taken from the scheme's '(8 + 6 + 2 + 2)' in sub-part order, with (v) separately marked (2 x 3); 8+6+2+2+6 = 24, the printed total for Q6(b)."
- },
- {
-  "id": "chem-2023-ol-q6-b-v",
-  "topicId": "chem-2-4",
-  "conceptId": "lpg-components",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "chemistry",
-  "section": "B",
-  "questionRef": "2023 OL Q6(b)(v)",
-  "questionText": "Liquid petroleum gas (LPG) is another mixture of gases. What are the two main components of LPG?",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "propane",
-    "accepts": [
-     "C3H8"
-    ],
-    "marks": 3
-   },
-   {
-    "id": "r-2",
-    "kind": "alt",
-    "verbatim": "butane",
-    "accepts": [
-     "C4H10"
-    ],
-    "marks": 3
-   }
-  ],
-  "notes": "Formulae are accepted alongside names under the scheme's general convention (introduction point 5)."
- },
- {
-  "id": "chem-2023-ol-q6-c-ii",
-  "topicId": "chem-2-4",
-  "conceptId": "aromatic-vs-aliphatic-methane",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "chemistry",
-  "section": "B",
-  "questionRef": "2023 OL Q6(c)(ii)",
-  "questionText": "State, giving a reason, whether methane is categorised as aromatic or aliphatic.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 4,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "aliphatic",
-    "accepts": [
-     "not aromatic"
-    ],
-    "marks": 2
-   },
-   {
-    "id": "r-2",
-    "kind": "alt",
-    "verbatim": "it doesn't have a benzene ring",
-    "accepts": [
-     "not a planar cyclic compound with delocalised pi electrons"
-    ],
-    "marks": 2
-   }
-  ],
-  "notes": "SKIPPED Q6(c)(i) 'Name the aromatic compound whose structure is shown on the right' (8 marks) - it depends on a printed structural formula, and this wave carries no figures."
  },
  {
   "id": "chem-2023-ol-q7-a",
@@ -25547,7 +25407,7 @@
     "marks": null
    }
   ],
-  "notes": "The scheme prints one combined tariff (4 + 2) at the end of the part rather than a value beside each line, so the marks are awarded in descending order to however many points are earned and no per-row value exists."
+  "notes": "The scheme prints one combined tariff (4 + 2) at the end of the part rather than a value beside each line, so the marks are awarded in descending order to however many points are earned and no per-row value exists. Q6(a)(ii) asked candidates to draw the molecular structure of each C4H10 isomer — skipped (drawing question)."
  },
  {
   "id": "chem-2024-ol-q6-a-iii-v",
@@ -29539,85 +29399,187 @@
   "notes": "Five marking points across (i)-(iii) share one combined allocation (9 + 6 + 3 + 2 + 2 = 22). Q5(b) is skipped entirely: its seven sub-parts share a single combined allocation (9 + 6 + 4 + 3 + 2 + 2 + 2 = 28), but one is a dot-and-cross drawing and one requires reading the electronegativity table, so the remaining parts cannot be given real marks without inventing a split."
  },
  {
-  "id": "chem-2024-ol-q6-a-i",
-  "topicId": "chem-2-4",
-  "conceptId": "isomers-definition",
+  "id": "chem-2024-ol-q5-b-i",
+  "topicId": "chem-4-3",
+  "conceptId": "naming-a-greenhouse-gas",
   "level": "ordinary",
   "year": 2024,
   "subjectId": "chemistry",
-  "section": "B",
-  "questionRef": "2024 OL Q6(a)(i)",
-  "stem": "Liquefied petroleum gas (LPG) is a fuel for some heating and cooking appliances. Isomers with the molecular formula C4H10 are present in LPG.",
-  "questionText": "What are isomers?",
+  "section": "A",
+  "questionRef": "2024 OL Q5(b)(i)",
+  "questionText": "Name another greenhouse gas.",
   "tariffModel": {
-   "kind": "orderedSplit",
-   "notation": "4 + 2"
+   "kind": "fixed",
+   "notation": "9 + 6 + 4 + 3 + 2 + 2 + 2"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "carbon dioxide, water, methane, nitrous oxide, ozone, CFCs, HCFCs, etc. [accept formula]",
+    "marks": 9
+   }
+  ],
+  "stem": "The periodic table on page 81 of the Formulae and Tables booklet shows the electronegativity values of the elements. Part of this table is shown in the diagram below. 1 18 1 2 H He 2.20 2 13 14 15 16 17 – – 3 4 5 6 7 8 9 10 Li Be B C N O F Ne 0.98 1.57 2.04 2.55 3.04 3.44 3.98 – – 11 12 13 14 15 16 17 18 Na Mg Al Si P S Cl Ar 0.93 1.31 3 4 5 6 7 8 9 10 11 12 1.61 1.90 2.19 2.58 3.16 – – 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr 0.82 1.00 1.36 1.54 1.63 1.66 1.55 1.83 1.88 1.91 1.90 1.65 1.81 2.01 2.18 2.55 2.96 – – Electronegativity values increase across a period of the periodic table."
+ },
+ {
+  "id": "chem-2024-ol-q5-b-ii",
+  "topicId": "chem-1-2",
+  "conceptId": "electron-configuration-of-nitrogen",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2024 OL Q5(b)(ii)",
+  "questionText": "Write the electron configuration for an atom of nitrogen (N).",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9 + 6 + 4 + 3 + 2 + 2 + 2"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "1s2, 2s2, 2p3",
+    "marks": 6,
+    "accepts": [
+     "2, 5"
+    ]
+   }
+  ],
+  "stem": "The periodic table on page 81 of the Formulae and Tables booklet shows the electronegativity values of the elements. Part of this table is shown in the diagram below. 1 18 1 2 H He 2.20 2 13 14 15 16 17 – – 3 4 5 6 7 8 9 10 Li Be B C N O F Ne 0.98 1.57 2.04 2.55 3.04 3.44 3.98 – – 11 12 13 14 15 16 17 18 Na Mg Al Si P S Cl Ar 0.93 1.31 3 4 5 6 7 8 9 10 11 12 1.61 1.90 2.19 2.58 3.16 – – 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr 0.82 1.00 1.36 1.54 1.63 1.66 1.55 1.83 1.88 1.91 1.90 1.65 1.81 2.01 2.18 2.55 2.96 – – Electronegativity values increase across a period of the periodic table."
+ },
+ {
+  "id": "chem-2024-ol-q5-b-iii",
+  "topicId": "chem-1-2",
+  "conceptId": "electron-configuration-of-fluorine",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2024 OL Q5(b)(iii)",
+  "questionText": "Write the electron configuration for an atom of fluorine (F).",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9 + 6 + 4 + 3 + 2 + 2 + 2"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "1s2, 2s2, 2p5",
+    "marks": 4,
+    "accepts": [
+     "2, 7"
+    ]
+   }
+  ],
+  "stem": "The periodic table on page 81 of the Formulae and Tables booklet shows the electronegativity values of the elements. Part of this table is shown in the diagram below. 1 18 1 2 H He 2.20 2 13 14 15 16 17 – – 3 4 5 6 7 8 9 10 Li Be B C N O F Ne 0.98 1.57 2.04 2.55 3.04 3.44 3.98 – – 11 12 13 14 15 16 17 18 Na Mg Al Si P S Cl Ar 0.93 1.31 3 4 5 6 7 8 9 10 11 12 1.61 1.90 2.19 2.58 3.16 – – 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr 0.82 1.00 1.36 1.54 1.63 1.66 1.55 1.83 1.88 1.91 1.90 1.65 1.81 2.01 2.18 2.55 2.96 – – Electronegativity values increase across a period of the periodic table."
+ },
+ {
+  "id": "chem-2024-ol-q5-b-v",
+  "topicId": "chem-1-3",
+  "conceptId": "electronegativity-difference-n-and-f",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2024 OL Q5(b)(v)",
+  "questionText": "Use the table shown above to calculate the electronegativity difference between N and F.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9 + 6 + 4 + 3 + 2 + 2 + 2"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "3.98 – 3.04 = 0.94",
+    "marks": 2
+   }
+  ],
+  "stem": "The periodic table on page 81 of the Formulae and Tables booklet shows the electronegativity values of the elements. Part of this table is shown in the diagram below. 1 18 1 2 H He 2.20 2 13 14 15 16 17 – – 3 4 5 6 7 8 9 10 Li Be B C N O F Ne 0.98 1.57 2.04 2.55 3.04 3.44 3.98 – – 11 12 13 14 15 16 17 18 Na Mg Al Si P S Cl Ar 0.93 1.31 3 4 5 6 7 8 9 10 11 12 1.61 1.90 2.19 2.58 3.16 – – 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr 0.82 1.00 1.36 1.54 1.63 1.66 1.55 1.83 1.88 1.91 1.90 1.65 1.81 2.01 2.18 2.55 2.96 – – Electronegativity values increase across a period of the periodic table."
+ },
+ {
+  "id": "chem-2024-ol-q5-b-vi",
+  "topicId": "chem-2-2",
+  "conceptId": "bonding-from-electronegativity-difference",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2024 OL Q5(b)(vi)",
+  "questionText": "Use your answer to (v) to predict the type of bonding between the fluorine atoms and the nitrogen atom in NF3.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9 + 6 + 4 + 3 + 2 + 2 + 2"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "polar",
+    "marks": 2,
+    "accepts": [
+     "polar covalent [accept covalent]"
+    ]
+   }
+  ],
+  "stem": "The periodic table on page 81 of the Formulae and Tables booklet shows the electronegativity values of the elements. Part of this table is shown in the diagram below. 1 18 1 2 H He 2.20 2 13 14 15 16 17 – – 3 4 5 6 7 8 9 10 Li Be B C N O F Ne 0.98 1.57 2.04 2.55 3.04 3.44 3.98 – – 11 12 13 14 15 16 17 18 Na Mg Al Si P S Cl Ar 0.93 1.31 3 4 5 6 7 8 9 10 11 12 1.61 1.90 2.19 2.58 3.16 – – 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr 0.82 1.00 1.36 1.54 1.63 1.66 1.55 1.83 1.88 1.91 1.90 1.65 1.81 2.01 2.18 2.55 2.96 – – Electronegativity values increase across a period of the periodic table."
+ },
+ {
+  "id": "chem-2024-ol-q8-a-i",
+  "topicId": "chem-2-4",
+  "conceptId": "homologous-series-of-ethene",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2024 OL Q8(a)(i)",
+  "questionText": "Compound Q is ethene. Name the homologous series to which compound Q belongs.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8 + 6 + 2 + 2"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "alkene",
+    "marks": 8
+   }
+  ],
+  "stem": "Study the series of reactions shown below and answer the following questions. C2H5OH C2H4 S Q R CH3COOH T"
+ },
+ {
+  "id": "chem-2024-ol-q8-a-ii",
+  "topicId": "chem-4-2",
+  "conceptId": "naming-the-alcohol-from-ethene",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2024 OL Q8(a)(ii)",
+  "questionText": "Name compound R.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8 + 6 + 2 + 2"
   },
   "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "same molecular formulae",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "different structures",
-    "marks": null
+    "verbatim": "ethanol",
+    "marks": 6
    }
   ],
-  "notes": "Q6(a)(ii) asked candidates to draw the molecular structure of each C4H10 isomer — skipped (drawing question)."
- },
- {
-  "id": "chem-2024-ol-q6-a-iii-v",
-  "topicId": "chem-2-4",
-  "conceptId": "lpg-isomer-names-and-components",
-  "level": "ordinary",
-  "year": 2024,
-  "subjectId": "chemistry",
-  "section": "B",
-  "questionRef": "2024 OL Q6(a)(iii)-(v)",
-  "stem": "Liquefied petroleum gas (LPG) is a fuel for some heating and cooking appliances. Isomers with the molecular formula C4H10 are present in LPG. Part (ii) asked for the molecular structure of each of the two isomers with the molecular formula C4H10.",
-  "questionText": "(iii) For each of the structures you drew in (ii), state the systematic IUPAC name of the isomer. (iv) Identify a component of LPG which does not have the molecular formula C4H10. (v) Identify the sulfur-containing compounds which may be added to give LPG an unpleasant smell, warning of leaks.",
-  "tariffModel": {
-   "kind": "orderedSplit",
-   "notation": "4 + 2 + 2 + 2"
-  },
-  "totalMarks": 10,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "butane",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "methylpropane",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "propane",
-    "accepts": [
-     "C3H8"
-    ],
-    "marks": null
-   },
-   {
-    "id": "r-4",
-    "kind": "alt",
-    "verbatim": "mercaptans",
-    "accepts": [
-     "thiols"
-    ],
-    "marks": null
-   }
-  ],
-  "notes": "(iii) refers to the candidate's own drawing in (ii), but the two isomers are fully determined by the molecular formula C4H10 given in the stem, so no figure is needed. Four marking points share a combined (4 + 2 + 2 + 2) allocation."
+  "stem": "Study the series of reactions shown below and answer the following questions. C2H5OH C2H4 S Q R CH3COOH T"
  }
 ]

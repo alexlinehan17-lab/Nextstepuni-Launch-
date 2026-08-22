@@ -33,6 +33,32 @@ import re
 
 import pymupdf
 
+# The SEC typesets "configuration" with a single ﬁ glyph and "ti" with Ɵ, and a
+# card must not carry them. The table is read out of schemeText.mjs rather than
+# restated, so it cannot drift from the fold the rest of the pipeline applies.
+def _ligatures():
+    js = os.path.join(ROOT_DIR, 'scripts', 'markbank', 'schemeText.mjs')
+    with open(js, encoding='utf-8') as fh:
+        for line in fh:
+            if 'LIGATURES = {' in line:
+                body = line.split('{', 1)[1].rsplit('}', 1)[0]
+                return {k.strip().strip("'"): v.strip().strip("'")
+                        for k, v in (pair.split(':', 1)
+                                     for pair in body.split(',') if ':' in pair)}
+    return {}
+
+
+ROOT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(
+    os.path.abspath(__file__)))))
+LIGATURES = _ligatures()
+LIG_RE = re.compile('[' + ''.join(re.escape(c) for c in LIGATURES) + ']') if LIGATURES else None
+
+
+def unligature(text):
+    if not text or LIG_RE is None:
+        return text
+    return LIG_RE.sub(lambda m: LIGATURES[m.group(0)], text)
+
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.abspath(__file__)))))
 def papers_dir(subject):
@@ -199,7 +225,7 @@ class Paper:
 
     @staticmethod
     def _flat(lines):
-        return ' '.join(' '.join(lines).split()) or None
+        return unligature(' '.join(' '.join(lines).split())) or None
 
     @staticmethod
     def _prose(lines):

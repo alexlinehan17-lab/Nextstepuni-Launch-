@@ -84,6 +84,7 @@ merged = kept + fresh
 # their ids say. Checked on the text a student actually reads — question and
 # stem together, because these papers ask 'Explain the underlined term.'
 # repeatedly and it is the stem that carries which term is underlined.
+script_ids = {c['id'] for c in fresh}
 asked = {}
 for c in merged:
     k = (c['year'], c['level'],
@@ -94,8 +95,16 @@ for c in merged:
         # the other. Not a duplicate to refuse.
         pair = {c['id'], asked[k]}
         twin = any(a + '-fig' == b for a in pair for b in pair)
-        if not twin:
+        if twin:
+            pass
+        elif pair & script_ids:
             failed.append(f"{c['id']} asks the same question as {asked[k]}: {k[2][:70]}")
+        else:
+            # Both were hand-authored before this harness existed. Reporting it
+            # is right; refusing to write the file over it is not, because that
+            # blocks every new card on a duplicate neither of them is.
+            print(f'  LEGACY DUPLICATE (both hand-authored): {c["id"]} and '
+                  f'{asked[k]} ask the same question', file=sys.stderr)
     asked[k] = c['id']
 
 if failed:

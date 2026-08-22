@@ -49,7 +49,7 @@ ID_PREFIX = {
 
 # Decks differ in how they join a part onto its question: agsci writes
 # agsci-2021-hl-q3bi, biology writes bio-2025-hl-q1-a. Follow each deck's own.
-DASHED = {'biology'}
+DASHED = {'biology', 'chemistry'}
 
 
 def part_id(subject, year, level, q, letter=None, roman=None, suffix=''):
