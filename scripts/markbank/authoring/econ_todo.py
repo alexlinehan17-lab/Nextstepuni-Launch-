@@ -36,6 +36,10 @@ def key(ref):
 
 def main():
     year, level, section = int(sys.argv[1]), sys.argv[2], sys.argv[3].upper()
+    # econ_parts tests `level == 'higher'`, so an 'hl' passed straight through
+    # is not higher and not ordinary — it silently fell through to the Ordinary
+    # scheme, and this tool reported the same gaps for both levels.
+    level = {'hl': 'higher', 'ol': 'ordinary'}.get(level, level)
     wide = '--wide' in sys.argv
     cards = json.load(open(os.path.join(ROOT, 'scripts/markbank/authored/economics.json')))
     carded = {k for k in (key(c['questionRef']) for c in cards) if k}
