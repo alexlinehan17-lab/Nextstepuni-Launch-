@@ -140,7 +140,7 @@ teach a student to under-answer. Q9(a) and Q9(b)(i) carry that experiment.
 3. Run it; emit() prints AUDIT lines to stderr - must be silent
 4. Merge into scripts/markbank/authored/home-economics.json (+ -held.json)
 5. node scripts/markbank/build-deck.mjs scripts/markbank/authored/home-economics.json
-   -- every new card must build; only the 5 legacy Section A drops are expected
+   -- every new card must build, and Home Economics drops nothing
 6. python3 scratchpad/rebaseline.py home-economics   -- refuses if any ID vanished
 7. npm run lint && npm run typecheck && npm test && npm run build
 8. Commit + push
@@ -160,8 +160,8 @@ teach a student to under-answer. Q9(a) and Q9(b)(i) carry that experiment.
   block() rejects an ambiguous start anchor, semis() strips leading/trailing
   "etc." and drops page furniture / "Accept ..." examiner notes.
 
-## Known pre-existing issue, NOT caused by this work
-5 Section A cards are dropped by the build every run and always have been:
-  he-2025-hl-sa-q8    rows sum to 8, tariff is 6
-  he-2025-ol-sa-q8/q10/q11/q12   row offers Nx2 on a 6-mark question
-Worth fixing separately - they are real tariff errors in older authoring.
+## Fixed since: the five legacy Section A tariff errors
+`he-2025-hl-sa-q8` (rows summed to 8 against a tariff of 6) and
+`he-2025-ol-sa-q8/q10/q11/q12` (a row offering Nx2 on a 6-mark question) were
+real tariff errors in older authoring and dropped on every build. Corrected
+against the printed tariffs; Home Economics now drops nothing.
