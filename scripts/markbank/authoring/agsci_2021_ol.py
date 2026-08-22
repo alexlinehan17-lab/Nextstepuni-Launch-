@@ -35,9 +35,20 @@ A.card(4, 'c', topic='agsci-2-1', concept='disadvantages-of-a-podzol',
        context='Scheme tariff is 3+1: the first disadvantage scores 3 and the '
                'second 1, so the order the answers are given in decides the total.')
 
-# Q12(a), the breed plate, is not carded. The scheme names all four breeds and
-# the figure exists, but agricultural-science-2021-OL-paper-p16-i0 has not been
-# through the inspection pass, so it has no verified alt text and the build
-# refuses to bind it. Carding it needs that pass, not more authoring.
+# ── Q12(a): the breed plate ───────────────────────────────────────────────
+# Four colour photographs, each lettered, above the word bank the question tells
+# the student to choose from. Two marks each.
+#
+# The figure is a re-crop. The original -i0 extraction cut the feet off C and D
+# and left the word bank out altogether, so it was catalogued as truncated and
+# could not be bound; -art is taken with crop-question-art.py and cut at the
+# bottom of the word bank so the empty answer rows and part (b) stay out.
+A.card(12, 'a', topic='agsci-4-1', concept='identifying-cattle-and-sheep-breeds',
+       use=[0, 1, 2, 3], marks=[2, 2, 2, 2], notation='2 each',
+       figure='agricultural-science-2021-OL-paper-p16-art',
+       checked='The block segmentation pulls the four photograph letters and the word '
+               'bank onto the end of the question, which is why the text is flagged. The '
+               'question itself is the sentence before them, and the card carries the '
+               'plate separately.')
 
 A.emit()

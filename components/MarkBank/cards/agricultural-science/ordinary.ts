@@ -6548,6 +6548,30 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q12a", topicId: "agsci-4-1", conceptId: "identifying-cattle-and-sheep-breeds",
+    section: "A", questionRef: "2021 OL Q12(a)",
+    questionText: "The photographs show some common breeds of cattle and sheep. Identify each breed using the list of names and write your answer in the space provided. A B C D Limousin Jacob Border Leicester Charolais",
+    tariffModel: {"kind":"fixed","notation":"2 each"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A = Charolais*", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "B = Limousin*", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "C = Jacob*", marks: 2 },
+    { id: "r-4", kind: "point", verbatim: "D = Border Leicester*", marks: 2 },
+    ],
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p16-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p16-art.png",
+          "srcHash": "280b3f2fb213d00b8034f6f7d6b22e50",
+          "alt": "Four colour photographs of livestock arranged two by two, each with a bold capital letter above it, and a blue word bank beneath them. A: a heavily muscled cream-white bull standing side-on on grass, wearing a black halter, a stone wall behind. B: a heavily muscled deep russet-brown bull side-on on grass in a black halter with a pink lead rope, bare winter trees behind. C: a horned sheep side-on with a broken brown-and-white fleece and a white blaze down a dark face, a drystone wall and green hills behind. D: two white-faced sheep with heavy cream fleeces and upright ears, standing on grass. The word bank below reads, in four boxes: Limousin, Jacob, Border Leicester, Charolais.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2022, level: "ordinary",
     paperFileid: "LC024GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",

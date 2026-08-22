@@ -125,6 +125,23 @@ def main() -> int:
              "zero by default, so no crop taken before this existed can change.",
     )
     ap.add_argument(
+        "--pad-bottom", type=float, default=0.0,
+        help="extra points of page below the artwork. The extent stops at the last "
+             "drawing or image, so a word bank printed UNDER a plate of photographs — "
+             "the list of breed names a student is told to choose from — falls outside "
+             "it, and the crop shows four animals with nothing to name them from. "
+             "Opt-in and zero by default, so no crop taken before this existed can "
+             "change.",
+    )
+    ap.add_argument(
+        "--bottom", type=float, default=None,
+        help="cut the crop at this y on the page, in points, instead of at the bottom "
+             "of the artwork. The extent is the union of every drawing on the page, and "
+             "a ruled answer box is a drawing — on the 2021 Ordinary Level breed plate "
+             "it drags the crop down over four empty answer rows and into the next "
+             "question. Read the page with a block dump to find the y to cut at.",
+    )
+    ap.add_argument(
         "--ignore-rules",
         action="store_true",
         help="drop flat rules (underlined words) from the artwork extent. Opt-in, "
@@ -142,8 +159,10 @@ def main() -> int:
         print(f"no artwork found on page {args.page}", file=sys.stderr)
         return 3
     # Keep the attribution the SEC prints beneath each symbol.
+    bottom = (args.bottom if args.bottom is not None
+              else box.y1 + PAD * 2.5 + args.pad_bottom)
     box = fitz.Rect(box.x0 - PAD, box.y0 - PAD - args.pad_top,
-                    box.x1 + PAD, box.y1 + PAD * 2.5) & page.rect
+                    box.x1 + PAD, bottom) & page.rect
     pix = page.get_pixmap(clip=box, matrix=fitz.Matrix(args.scale, args.scale))
     args.out.parent.mkdir(parents=True, exist_ok=True)
     pix.save(args.out)
