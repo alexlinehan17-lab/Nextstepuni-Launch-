@@ -9312,6 +9312,21 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2022-ol-q8-b-iii", topicId: "bio-u1", conceptId: "percentage-frequency-from-a-quadrat-table",
+    section: "A", questionRef: "2022 OL Q8(b)(iii)",
+    stem: "The table below shows the data collected during the survey. Plant Station 1 Station 2 Station 3 Station 4 Station 5 Plantain    Daisy     Dandelion  ",
+    questionText: "What is the % frequency of the other two named plants in the table above?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Plantain: 3/5 = 60%", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Dandelion: 2/5 = 40%", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2023, level: "ordinary",
     paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
@@ -9588,6 +9603,34 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Hypothesis", marks: 4 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2024-ol-q7-d", topicId: "bio-u1", conceptId: "what-data-is",
+    section: "A", questionRef: "2024 OL Q7(d)",
+    stem: "Choose each term from the following list and place it in Column B to match a description in Column A. The first one has been completed as an example. Safety Hypothesis Data Control Theory Experiment Column A Column B Principle of experimentation Safety",
+    questionText: "Information and measurements collected during an investigation",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Data", marks: 4 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2024-ol-q10-b-v", topicId: "bio-u1", conceptId: "a-safety-precaution-in-the-experiment",
+    section: "A", questionRef: "2024 OL Q10(b)(v)",
+    stem: "PR BR Resting 60 20 Moderate exercise 100 30 rate Intense exercise 150 60 Choosing either pulse or breathing rate, complete the name of the y-axis and on the grid provided, draw (using pencil) a suitable graph to represent the data of either pulse rate (PR) or breathing rate (BR). Resting Moderate exercise Intense exercise Answerbook for Section C Instructions Questions for Section C are supplied separately. Start each question on a new page. Write the question number in the box at the top of each page. Use the left-hand column to label each part, as shown below. 1 4 There are two pages of graph paper on the next two pages of this answerbook. On pages with graph paper, the box for the question number is at the bottom of the page. You do not need to use all of the pages in this answerbook. If you run out of space in this answerbook, you may ask the superintendent for more paper or graph paper. Write your answers in blue or black pen. You may use a pencil for sketches, graphs and diagrams only. Part Start each question on a new page Question 15 Part Start each question on a new page Question 16 Part Start each question on a new page Question 17 Part Start each question on a new page Question 18 Part Start each question on a new page Question 19 Part Start each question on a new page Question 20 Part Start each question on a new page Question 21 Part Start each question on a new page Question 22 Part Start each question on a new page Question 23 Part Start each question on a new page Question 24 Part Start each question on a new page Question 25 Part Start each question on a new page Question 26 Part Start each question on a new page Question 27 Part Start each question on a new page Question 28 Part Start each question on a new page Question 29 Part Start each question on a new page Question 30 Part Start each question on a new page Question 31 Part Start each question on a new page Question 32 Part Start each question on a new page Question 33 Part Start each question on a new page Question 34 Part Start each question on a new page Question 35 Do not write on this page Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Ordinary Level Biology Sections A and B and Answerbook Tuesday 11 June Afternoon 2:00 - 5:00 2024L025G2EL 2024.M43 Coimisiún na Scrúduithe Stáit State Examinations Commission Section C Ordinary Level Tuesday 11 June Afternoon 2:00 - 5:00 240 marks Do not hand this up. This document will not be returned to the State Examinations Commission. Section C Answer any four questions. Write your answers in the answerbook containing Sections A and B.",
+    questionText: "Describe a safety precaution the student would have taken.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Correct safety precaution described", marks: 3 },
     ],
   } as SecCard,
   {

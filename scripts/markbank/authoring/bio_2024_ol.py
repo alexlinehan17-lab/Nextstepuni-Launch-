@@ -58,4 +58,11 @@ A.card(7, 'a', topic='bio-u1', concept='what-a-hypothesis-is',
        source='pdf', from_run=((6, 'a', None), 7, slice(5, 6)), marks=[4],
        checked='The paper prints this part as a Column A description in a matching table, so it has no verb of its own. The instruction to match it to a term in the list sits in the question stem the card already carries.')
 
+A.card(7, 'd', topic='bio-u1', concept='what-data-is',
+       source='pdf', from_run=((6, 'd', None), 0, slice(7, 8)), marks=[4],
+       checked='Question 7 is a matching table. The paper prints this part as a Column A description with no verb of its own, and the instruction to match it to a term in the list sits in the question stem the card already carries.')
+
+A.card(10, 'b', 'v', topic='bio-u1', concept='a-safety-precaution-in-the-experiment',
+       source='pdf', use=[1], marks=[3], row_kind='criterion')
+
 A.emit()

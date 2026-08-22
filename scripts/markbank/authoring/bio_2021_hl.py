@@ -37,4 +37,21 @@ for letter, answer, topic, concept in (
     A.card(6, letter, topic=topic, concept=concept, tick=answer, marks=[3],
            notation='6(3) + 2', suffix='', notes=READ, stem=False)
 
+
+# ── Parts the deck had not carded ──────────────────────────────────────────
+# The scheme answers these on the same line as the question it is repeating, so
+# each answer is taken out of that line rather than off one of its own. The
+# leading asterisk on an essential answer is an annotation to the examiner and
+# no card in any deck carries one.
+A.card(10, 'b', 'iii', topic='bio-u1', concept='the-purpose-of-a-control-plate',
+       source='pdf', from_run=((10, 'b', 'iii'), 0, slice(10, 20)), marks=[3])
+
+A.card(10, 'b', 'v', topic='bio-3-3', concept='why-urban-and-rural-plates-differ',
+       source='pdf', use=[[1, 2, 3]], marks=[3],
+       notes='The scheme accepts the comparison either way round, and names smoke, '
+             'sulphur dioxide and harmful chemicals as the pollution meant.')
+
+A.card(12, 'b', 'i', topic='bio-3-2', concept='genotype-heterozygous-for-two-traits',
+       source='pdf', from_run=((12, 'b', 'i'), 0, slice(10, 11)), marks=[3])
+
 A.emit()

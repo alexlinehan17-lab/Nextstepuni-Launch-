@@ -39,4 +39,24 @@ A.card(12, 'c', 'iv', topic='bio-3-1', concept='counting-trophic-levels',
        notes='The scheme numbers this answer under its own Question 3 while the paper '
              'prints Question 12.')
 
+A.card(12, 'b', 'ii', topic='bio-3-1', concept='explaining-a-predator-prey-graph',
+       source='pdf',
+       from_runs=[((2, 'b', 'ii'), 1, slice(0, None)),
+                  ((2, 'b', 'ii'), 2, slice(0, None)),
+                  ((2, 'b', 'ii'), 4, slice(0, None))],
+       marks=[2, 2, 2],
+       notes='The scheme numbers this answer under its own Question 2 while the paper '
+             'prints Question 12. It wants three separate observations: the shape of the '
+             'line, the numbers involved, and the delay in time.')
+
+A.card(12, 'b', 'iii', topic='bio-3-1', concept='what-happens-to-prey-if-the-predator-fails',
+       source='pdf',
+       from_runs=[((2, 'b', 'iii'), 1, slice(0, None)),
+                  ((2, 'b', 'iii'), 3, slice(0, None))],
+       marks=[3, 3])
+
+# 2024 HL Q12(c)(iii) is not carded. Its whole marking point is "Any correct
+# food chain from the food web", which the build refuses as a content-free row —
+# rightly, because a card whose answer is "any correct answer" teaches nothing.
+
 A.emit()

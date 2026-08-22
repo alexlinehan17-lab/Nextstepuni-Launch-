@@ -39,4 +39,10 @@ A.card(7, 'b', topic='bio-u1', concept='what-a-hypothesis-is',
        source='pdf', from_run=((6, 'b', None), 0, slice(6, 7)), marks=[4],
        checked='The paper prints this part as a Column A description in a matching table, so it has no verb of its own. The instruction to match it to a term in the list sits in the question stem the card already carries.')
 
+A.card(8, 'b', 'iii', topic='bio-u1', concept='percentage-frequency-from-a-quadrat-table',
+       source='pdf',
+       from_runs=[((8, 'b', 'iii'), 0, slice(14, 18)),
+                  ((8, 'b', 'iii'), 0, slice(19, 23))],
+       marks=[3, 3])
+
 A.emit()

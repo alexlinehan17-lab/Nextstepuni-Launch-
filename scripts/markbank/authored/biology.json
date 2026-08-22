@@ -37431,6 +37431,83 @@
   "notes": "The scheme answers this by ticking a True/False column, and the tick is a glyph the text extraction drops. Read from page 9 of the 2021 Higher Level marking scheme. Q6 is marked 6(3) + 2 over seven statements."
  },
  {
+  "id": "bio-2021-hl-q10-b-iii",
+  "topicId": "bio-u1",
+  "conceptId": "the-purpose-of-a-control-plate",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2021 HL Q10(b)(iii)",
+  "questionText": "What is the purpose of plate A in this investigation?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A control (or described) or to compare to the results",
+    "marks": 3
+   }
+  ],
+  "stem": "Plate Investigation setup Results after 7 days A Unopened 0 colonies B 5 leaf discs from an ash tree from a quiet rural setting 10 colonies C 5 leaf discs from an ash tree from a busy urban setting 4 colonies Answerbook for Section C Instructions Questions for Section C are supplied separately. Start each question on a new page. Write the question number in the box at the top of each page. Use the left‐hand column to label each part, as shown below. There are four pages of graph paper on the next four pages of this answerbook. On pages with graph paper, the box for the question number is at the bottom of the page. You do not need to use all of the pages in this answerbook. If you run out of space in this answerbook, you may ask the superintendent for more paper or graph paper. Write your answers in blue or black pen. You may use pencil for sketches, graphs and diagrams. Part Start each question on a new page Question 18 Part Start each question on a new page Question 19 Part Start each question on a new page Question 20 Part Start each question on a new page Question 21 Part Start each question on a new page Question 22 Part Start each question on a new page Question 23 Part Start each question on a new page Question 24 Part Start each question on a new page Question 25 Part Start each question on a new page Question 26 Part Start each question on a new page Question 27 Part Start each question on a new page Question 28 Part Start each question on a new page Question 29 Part Start each question on a new page Question 30 Part Start each question on a new page Question 31 Part Start each question on a new page Question 32 Part Start each question on a new page Question 33 Part Start each question on a new page Question 34 Part Start each question on a new page Question 35 Part Start each question on a new page Question 36 Part Start each question on a new page Question 37 Part Start each question on a new page Question 38 Part Start each question on a new page Question 39 Do not write on this page Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Biology Sections A and B and Answerbook Tuesday 15 June Afternoon 2:00 – 5:00 2021.M44 2021L025A2EL Coimisiún na Scrúduithe Stáit State Examinations Commission Biology Section C Higher Level Tuesday 15 June Afternoon 2:00 – 5:00 180 marks Do not hand this question paper up Scrúdú na hArdteistiméireachta 2020 1 Bitheolaíocht, Roinn C – Ardleibhéal Section C Answer any three questions. Write your answer in the answerbook containing Sections A and B."
+ },
+ {
+  "id": "bio-2021-hl-q10-b-v",
+  "topicId": "bio-3-3",
+  "conceptId": "why-urban-and-rural-plates-differ",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2021 HL Q10(b)(v)",
+  "questionText": "Suggest one reason for the difference in results between plates B and C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "(More) pollution in the urban air or less pollution in rural air or described (smoke",
+    "marks": 3,
+    "accepts": [
+     "sulphur dioxide",
+     "harmful chemicals)"
+    ]
+   }
+  ],
+  "stem": "Plate Investigation setup Results after 7 days A Unopened 0 colonies B 5 leaf discs from an ash tree from a quiet rural setting 10 colonies C 5 leaf discs from an ash tree from a busy urban setting 4 colonies Answerbook for Section C Instructions Questions for Section C are supplied separately. Start each question on a new page. Write the question number in the box at the top of each page. Use the left‐hand column to label each part, as shown below. There are four pages of graph paper on the next four pages of this answerbook. On pages with graph paper, the box for the question number is at the bottom of the page. You do not need to use all of the pages in this answerbook. If you run out of space in this answerbook, you may ask the superintendent for more paper or graph paper. Write your answers in blue or black pen. You may use pencil for sketches, graphs and diagrams. Part Start each question on a new page Question 18 Part Start each question on a new page Question 19 Part Start each question on a new page Question 20 Part Start each question on a new page Question 21 Part Start each question on a new page Question 22 Part Start each question on a new page Question 23 Part Start each question on a new page Question 24 Part Start each question on a new page Question 25 Part Start each question on a new page Question 26 Part Start each question on a new page Question 27 Part Start each question on a new page Question 28 Part Start each question on a new page Question 29 Part Start each question on a new page Question 30 Part Start each question on a new page Question 31 Part Start each question on a new page Question 32 Part Start each question on a new page Question 33 Part Start each question on a new page Question 34 Part Start each question on a new page Question 35 Part Start each question on a new page Question 36 Part Start each question on a new page Question 37 Part Start each question on a new page Question 38 Part Start each question on a new page Question 39 Do not write on this page Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Biology Sections A and B and Answerbook Tuesday 15 June Afternoon 2:00 – 5:00 2021.M44 2021L025A2EL Coimisiún na Scrúduithe Stáit State Examinations Commission Biology Section C Higher Level Tuesday 15 June Afternoon 2:00 – 5:00 180 marks Do not hand this question paper up Scrúdú na hArdteistiméireachta 2020 1 Bitheolaíocht, Roinn C – Ardleibhéal Section C Answer any three questions. Write your answer in the answerbook containing Sections A and B.",
+  "notes": "The scheme accepts the comparison either way round, and names smoke, sulphur dioxide and harmful chemicals as the pollution meant."
+ },
+ {
+  "id": "bio-2021-hl-q12-b-i",
+  "topicId": "bio-3-2",
+  "conceptId": "genotype-heterozygous-for-two-traits",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2021 HL Q12(b)(i)",
+  "questionText": "Write the genotype of a plant heterozygous for both traits.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "RrYy",
+    "marks": 3
+   }
+  ],
+  "stem": "115 plants with round yellow seeds 115 plants with wrinkled yellow seeds 114 plants with round green seeds 116 plants with wrinkled green seeds"
+ },
+ {
   "id": "bio-2021-hl-q13-b-vii",
   "topicId": "bio-2-2",
   "conceptId": "the-series-of-events-at-y",
@@ -37929,6 +38006,36 @@
   "stem": "Choose each term from the following list and place it in Column B to match a description in Column A. The first one has been completed as an example. Theory Data Double blind test Variable Control Hypothesis Column A Column B An explanation for an observation supported by the results of an experiment Theory"
  },
  {
+  "id": "bio-2022-ol-q8-b-iii",
+  "topicId": "bio-u1",
+  "conceptId": "percentage-frequency-from-a-quadrat-table",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2022 OL Q8(b)(iii)",
+  "questionText": "What is the % frequency of the other two named plants in the table above?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Plantain: 3/5 = 60%",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Dandelion: 2/5 = 40%",
+    "marks": 3
+   }
+  ],
+  "stem": "The table below shows the data collected during the survey. Plant Station 1 Station 2 Station 3 Station 4 Station 5 Plantain    Daisy     Dandelion  "
+ },
+ {
   "id": "bio-2023-ol-q2-a",
   "topicId": "bio-u2",
   "conceptId": "what-a-hypothesis-is",
@@ -38304,6 +38411,71 @@
   "notes": "The scheme numbers this answer under its own Question 3 while the paper prints Question 12."
  },
  {
+  "id": "bio-2024-hl-q12-b-ii",
+  "topicId": "bio-3-1",
+  "conceptId": "explaining-a-predator-prey-graph",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2024 HL Q12(b)(ii)",
+  "questionText": "Give a detailed explanation of the graph that you have drawn for the predator species.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Line: Increases due to food (prey) availability or decreases due to lack of food (prey)",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Number: Lower number due to loss of energy or reference to size (predators",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Time: Delay in increase (in predator numbers) due to time taken to breed.",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme numbers this answer under its own Question 2 while the paper prints Question 12. It wants three separate observations: the shape of the line, the numbers involved, and the delay in time."
+ },
+ {
+  "id": "bio-2024-hl-q12-b-iii",
+  "topicId": "bio-3-1",
+  "conceptId": "what-happens-to-prey-if-the-predator-fails",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2024 HL Q12(b)(iii)",
+  "questionText": "If a disease affected the predator at time X, what would you expect to happen to the graph showing the prey? Explain your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Prey (population) increases",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Less predators or greater chance of survival",
+    "marks": 3
+   }
+  ]
+ },
+ {
   "id": "bio-2024-ol-q6-a",
   "topicId": "bio-u2",
   "conceptId": "what-the-microscope-stage-does",
@@ -38645,6 +38817,54 @@
    }
   ],
   "stem": "Choose each term from the following list and place it in Column B to match a description in Column A. The first one has been completed as an example. Safety Hypothesis Data Control Theory Experiment Column A Column B Principle of experimentation Safety"
+ },
+ {
+  "id": "bio-2024-ol-q7-d",
+  "topicId": "bio-u1",
+  "conceptId": "what-data-is",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2024 OL Q7(d)",
+  "questionText": "Information and measurements collected during an investigation",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Data",
+    "marks": 4
+   }
+  ],
+  "stem": "Choose each term from the following list and place it in Column B to match a description in Column A. The first one has been completed as an example. Safety Hypothesis Data Control Theory Experiment Column A Column B Principle of experimentation Safety"
+ },
+ {
+  "id": "bio-2024-ol-q10-b-v",
+  "topicId": "bio-u1",
+  "conceptId": "a-safety-precaution-in-the-experiment",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2024 OL Q10(b)(v)",
+  "questionText": "Describe a safety precaution the student would have taken.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Correct safety precaution described",
+    "marks": 3
+   }
+  ],
+  "stem": "PR BR Resting 60 20 Moderate exercise 100 30 rate Intense exercise 150 60 Choosing either pulse or breathing rate, complete the name of the y-axis and on the grid provided, draw (using pencil) a suitable graph to represent the data of either pulse rate (PR) or breathing rate (BR). Resting Moderate exercise Intense exercise Answerbook for Section C Instructions Questions for Section C are supplied separately. Start each question on a new page. Write the question number in the box at the top of each page. Use the left-hand column to label each part, as shown below. 1 4 There are two pages of graph paper on the next two pages of this answerbook. On pages with graph paper, the box for the question number is at the bottom of the page. You do not need to use all of the pages in this answerbook. If you run out of space in this answerbook, you may ask the superintendent for more paper or graph paper. Write your answers in blue or black pen. You may use a pencil for sketches, graphs and diagrams only. Part Start each question on a new page Question 15 Part Start each question on a new page Question 16 Part Start each question on a new page Question 17 Part Start each question on a new page Question 18 Part Start each question on a new page Question 19 Part Start each question on a new page Question 20 Part Start each question on a new page Question 21 Part Start each question on a new page Question 22 Part Start each question on a new page Question 23 Part Start each question on a new page Question 24 Part Start each question on a new page Question 25 Part Start each question on a new page Question 26 Part Start each question on a new page Question 27 Part Start each question on a new page Question 28 Part Start each question on a new page Question 29 Part Start each question on a new page Question 30 Part Start each question on a new page Question 31 Part Start each question on a new page Question 32 Part Start each question on a new page Question 33 Part Start each question on a new page Question 34 Part Start each question on a new page Question 35 Do not write on this page Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Ordinary Level Biology Sections A and B and Answerbook Tuesday 11 June Afternoon 2:00 - 5:00 2024L025G2EL 2024.M43 Coimisiún na Scrúduithe Stáit State Examinations Commission Section C Ordinary Level Tuesday 11 June Afternoon 2:00 - 5:00 240 marks Do not hand this up. This document will not be returned to the State Examinations Commission. Section C Answer any four questions. Write your answers in the answerbook containing Sections A and B."
  },
  {
   "id": "bio-2025-hl-q13-b-iii",
