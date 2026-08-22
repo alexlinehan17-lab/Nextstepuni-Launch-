@@ -181,12 +181,15 @@ class Author:
                 if not taken:
                     raise Refused(f'{ref}: run {run[point_index]!r} yields nothing '
                                   f'for {token_index}')
-                candidates = [' '.join(taken)]
+                # The scheme marks an essential answer with a leading asterisk;
+                # it is an annotation to the examiner, not part of the answer,
+                # and no card in any deck carries one.
+                candidates = [' '.join(taken).lstrip('*').strip()]
             else:
                 if token_index >= len(tokens):
                     raise Refused(f'{ref}: run {run[point_index]!r} has no token '
                                   f'{token_index}')
-                candidates = [tokens[token_index]]
+                candidates = [tokens[token_index].lstrip('*').strip()]
             use = [0] if use is None else use
         elif tick is None:
             candidates = scheme.points(q, letter, roman)

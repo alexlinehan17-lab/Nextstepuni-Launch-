@@ -29,7 +29,7 @@ import { CARDS as ECON_HIGHER } from '../components/MarkBank/cards/economics/hig
 import { CARDS as ECON_ORDINARY } from '../components/MarkBank/cards/economics/ordinary';
 
 const decks = [
-  ['biology:higher', BIO_HIGHER, 583, '4b0c49aea5360d4df0b659aa5d8e75720b2844f1368973505b057cfa90af629f'],
+  ['biology:higher', BIO_HIGHER, 585, '4ed2e3d51b8137d58f29162ad23e72b29b3e9baad76f4019adf1588d6812141d'],
   ['biology:ordinary', BIO_ORDINARY, 602, 'f5c0d0602214ba4035c2c0e1ca922c1626cd7a4d4b8e7f5e26e5ed1f18bd7133'],
   ['chemistry:higher', CHEM_HIGHER, 440, 'b4a96e7c169bbbdf4abdfd2f9ed231e62363d9edfe37744861fc71e84ff3fe24'],
   ['chemistry:ordinary', CHEM_ORDINARY, 333, 'e39a8fd08acd5d0849ab0d254cf27b15a237fc1edf1afac85131e2ba278b9884'],
@@ -57,6 +57,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(5_125);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(5_127);
   });
 });
