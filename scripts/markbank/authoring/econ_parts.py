@@ -27,7 +27,7 @@ import sys
 import pymupdf
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from econ_lib import defurnish, load, tidy  # noqa: E402
+from econ_lib import as_option, defurnish, heads, load, tidy  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__)))))
@@ -177,6 +177,14 @@ def parts(year, level):
         # The menu tariff is not always the FIRST cell: a part often prints its
         # total first — ⟨12⟩ ⟨2 @ 6⟩ — and reading only cells[0] reported a paper
         # full of menus as having none.
+        # The options, cut at the anchors by the same guarded splitter the
+        # hand-authored cards use — so a heading found out of order is refused
+        # here exactly as it would be there.
+        if len(anchors) >= 2:
+            try:
+                opts = [as_option(h) for h in heads(tail, anchors)]
+            except ValueError:
+                pass
         menu = next((m for m in (MENU.match(c.replace(' ', '')) for c in cells) if m), None)
         # "1st @ 8" followed by "2nd @ 4" is a menu of two on a descending
         # tariff, which reads as claim=1 if each cell is taken on its own.

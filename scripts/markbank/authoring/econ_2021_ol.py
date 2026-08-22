@@ -1,66 +1,112 @@
 #!/usr/bin/env python3
 """Economics 2021 Ordinary Level — Section B.
 
-Same rules as econ_2024_ol.py. This paper runs its responses under bold headings
-rather than as bullets, so it splits with `heads()`.
+Authored against econ_parts; see econ_2021_hl.py for what `drop` is for.
+
+Two parts here answer a question about two DIFFERENT subjects under one heading
+— one economic effect of Brexit on the consumer and on the firm, one benefit of
+perfect competition to the consumer and to society — and the scheme lists both
+sets together. Each side is carded on its own, which is the rule for parallel
+accounts, so a student picking "one effect on the consumer" is not offered the
+firm's.
 """
 import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from econ_lib import anyN, as_option, block, card, defurnish, emit, heads, load, tidy  # noqa: E402
+from econ_auto import Paper  # noqa: E402
 
-YEAR, LEVEL = 2021, 'ordinary'
-T = tidy(load(YEAR, LEVEL))
-BODY = block(T, 'loping countries to benefit from globalisation', occ=0)
+P = Paper(2021, 'ordinary')
+SCAFFOLD = ('Possible responses', 'Suggested responses', 'Evidence of Data', 'Deduct')
 
+P.menu('reasons why MNC’s locate in Ireland', 'econ-2021-ol-q11-b-iii',
+       'economics-4-1', 'why-mncs-locate-in-ireland',
+       'Outline two reasons why multinational companies locate in Ireland.',
+       'A reason MNCs locate in Ireland — any two',
+       'Two reasons, 7 marks each, split 3 for the reason and 4 for developing it.',
+       drop=SCAFFOLD)
 
-def menu(cid, topic, concept, ref, qtext, notation, total, verbatim, claim, per,
-         start, end, headings, note, notes='', steps=None, stem=''):
-    chunk = block(BODY, start, end)
-    return card(cid, YEAR, LEVEL, topic, concept, ref, qtext, notation, total,
-                [anyN('r-1', verbatim, None if steps else total, claim, per,
-                      [as_option(h) for h in heads(chunk, headings)], note, steps=steps)],
-                notes, stem=stem,
-                tariff_kind='fixed' if steps else 'bestNofParts')
+P.menu('outdoor flower market in Stoneybatter', 'econ-2021-ol-q12-b',
+       'economics-2-0', 'assumptions-of-perfect-competition',
+       'This firm operates in perfect competition where there are many homogeneous products. '
+       'Discuss three main assumptions of this type of market structure.',
+       'An assumption of perfect competition — any three',
+       'Three assumptions, 5 marks each.',
+       claim=3, per=5, drop=SCAFFOLD,
+       stem='Set on a photograph of the outdoor flower market in Stoneybatter, Dublin, given as '
+            'an example of perfect competition.')
 
+P.menu('impact the introduction of a new mortgage lender', 'econ-2021-ol-q13-b-i',
+       'economics-3-4', 'effect-of-a-new-mortgage-lender',
+       'Outline the impact the introduction of a new mortgage lender in Ireland will have on '
+       'consumers applying for a mortgage and on interest rates.',
+       'An impact of a new lender — either one',
+       'The scheme answers this in two halves — what it does for the borrower, and what it does '
+       'to the rate — and pays 7 for each.',
+       claim=2, per=7, drop=SCAFFOLD)
 
-cards = [
-    menu('econ-2021-ol-q11-b-i-neg', 'economics-4-1', 'disadvantages-of-globalisation',
-         '2021 OL Q11(b)(i) — disadvantages',
-         'Outline two possible disadvantages of globalisation.',
-         '2 @ 3', 6, 'A disadvantage of globalisation — any two', 2, 3,
-         'Widens the gap between rich and poor', '(ii) Name two multinational companies',
-         ['Widens the gap between rich and poor', 'Environmental impact', 'Outsourcing',
-          'Lower cost countries'],
-         'Two disadvantages, 3 marks each.',
-         notes='The scheme answers advantages and disadvantages under one part, so each side is '
-               'carded on its own with its own questionRef — the rule for parallel accounts.'),
+P.menu('one measure the Irish government could use to achieve', 'econ-2021-ol-q13-c-ii',
+       'economics-0-2', 'measures-for-sustainable-objectives',
+       'Outline one measure the Irish government could use to achieve its objectives on care for '
+       'the environment and sustainable development.',
+       'A measure the government could take — any one',
+       'One measure, 8 marks.',
+       claim=1, per=8, drop=SCAFFOLD)
 
-    menu('econ-2021-ol-q11-b-iii', 'economics-4-1', 'why-mncs-locate-in-ireland',
-         '2021 OL Q11(b)(iii)',
-         'Outline two reasons why multinational companies choose to locate in Ireland.',
-         '2 @ 7', 14, 'A reason MNCs locate in Ireland — any two', 2, 7,
-         'Low rates of taxation: the rate of corporation profits tax',
-         '(c) (i) Foreign Direct Investment (FDI) has been a key contributor',
-         ['Low rates of taxation', 'Access to EU market / Member of the euro currency',
-          'Availability of state incentives', 'Good industrial relations',
-          'Stable rate of economic growth', 'Stable economic climate'],
-         'Two reasons, 7 marks each, split 3 for the reason and 4 for developing it.'),
+P.menu('reasons why the Irish Government may intervene', 'econ-2021-ol-q13-c-iii',
+       'economics-1-3', 'why-government-intervenes',
+       'Outline two reasons why the Irish Government may intervene in an economy.',
+       'A reason for government intervention — any two',
+       'Two reasons, 5 marks each.',
+       drop=SCAFFOLD)
 
-    menu('econ-2021-ol-q12-b', 'economics-2-0', 'assumptions-of-perfect-competition',
-         '2021 OL Q12(b)',
-         'This firm operates in perfect competition where there are many homogeneous products. '
-         'Discuss three main assumptions of this type of market structure.',
-         '3 @ 5', 15, 'An assumption of perfect competition — any three', 3, 5,
-         'There are many buyers in the industry', 'Question 13',
-         ['There are many buyers in the industry', 'There are many sellers in the industry',
-          'Firm tries to maximise profits', 'Perfect knowledge exists',
-          'Free entry and exit exist in the industry', 'All goods produced are homogenous goods',
-          'No collusion in the market', 'Elastic supply of factors of production'],
-         'Three assumptions, 5 marks each.',
-         stem='Set on a photograph of the outdoor flower market in Stoneybatter, Dublin, given '
-              'as an example of perfect competition.'),
-]
+P.menu('one social benefit and one economic benefit resulting from the introduction of the sugar tax',
+       'econ-2021-ol-q14-a-i', 'economics-2-2', 'benefits-of-the-sugar-tax',
+       'Explain one social benefit and one economic benefit resulting from the introduction of '
+       'the sugar tax in Ireland.',
+       'A benefit of the sugar tax — any two',
+       'Two benefits, 10 marks each. The scheme lists the social benefits first and the economic '
+       'ones after, and the question wants one of each.',
+       drop=SCAFFOLD)
 
-emit(cards)
+P.menu('Discuss one economic effect Brexit will have on each of the following',
+       'econ-2021-ol-q15-a-i', 'economics-4-2', 'effects-of-brexit-on-consumers-and-firms',
+       'Discuss one economic effect Brexit will have on the Irish consumer and one on the Irish '
+       'firm.',
+       'An economic effect of Brexit — any two',
+       'Two effects, 8 marks each. The scheme lists the consumer effects first and the firm '
+       'effects after, and the question wants one of each.',
+       drop=SCAFFOLD)
+
+P.menu('Irish exports to the UK have grown by 16%', 'econ-2021-ol-q15-a-ii',
+       'economics-4-2', 'benefits-of-exports-to-ireland',
+       'Irish exports to the UK have grown by 16% despite the uncertainty surrounding Brexit. '
+       'Outline one benefit of this for the Irish economy.',
+       'A benefit of rising exports — any one',
+       'One benefit, 8 marks.',
+       # The scheme's list here runs straight into the next question with no
+       # marker of any kind, so the tail is bounded by count: five named
+       # benefits, then the examiner's data-evidence note.
+       claim=1, per=8, drop=SCAFFOLD, cap=5)
+
+P.menu('one advantage or one disadvantage of Globalisation', 'econ-2021-ol-q11-b-i-neg',
+       'economics-4-1', 'disadvantages-of-globalisation',
+       'Outline one disadvantage of globalisation.',
+       'A disadvantage of globalisation — any one',
+       'One disadvantage, 5 marks.',
+       ref='2021 OL Q11(b)(i) — disadvantage',
+       claim=1, per=5,
+       drop=SCAFFOLD + ('Improvements in fair trade', 'New experiences',
+                        'Improved government relations', 'Possible disadvantages'),
+       notes='The part lets a student answer with EITHER an advantage or a disadvantage and the '
+             'scheme heads the two lists separately, so each side is its own card.')
+
+P.menu('one advantage or one disadvantage of Globalisation', 'econ-2021-ol-q11-b-i-pos',
+       'economics-4-1', 'advantages-of-globalisation',
+       'Outline one advantage of globalisation.',
+       'An advantage of globalisation — any one',
+       'One advantage, 5 marks.',
+       ref='2021 OL Q11(b)(i) — advantage',
+       claim=1, per=5, drop=SCAFFOLD, stop='Possible disadvantages')
+
+P.emit()

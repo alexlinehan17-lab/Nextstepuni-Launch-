@@ -12,6 +12,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from econ_auto import Paper  # noqa: E402
 from econ_lib import anyN, block, bullets, card, emit, load, point, tidy  # noqa: E402
 
 YEAR, LEVEL = 2024, 'ordinary'
@@ -113,4 +114,22 @@ cards = [
          tariff_kind='fixed'),
 ]
 
-emit(cards)
+# ── The parts econ_parts found that hand-reading had passed over ────────────
+P = Paper(YEAR, LEVEL)
+SCAFFOLD = ('Possible responses', 'Suggested responses')
+
+P.menu('ways citizens in Ireland can behave more sustainably', 'econ-2024-ol-q12-c-ii',
+       'economics-0-2', 'sustainable-household-behaviour',
+       'Outline two ways citizens in Ireland can behave more sustainably in their use of energy.',
+       'A way to behave more sustainably — any two',
+       'Two ways, 8 marks each.',
+       drop=SCAFFOLD)
+
+P.menu('reasons why exports are important for the Irish economy', 'econ-2024-ol-q14-a-ii',
+       'economics-4-2', 'importance-of-exports',
+       'Outline two reasons why exports are important for the Irish economy.',
+       'A reason exports matter — any two',
+       'Two reasons, 6 marks each.',
+       claim=2, per=6, drop=SCAFFOLD)
+
+emit(cards + P.cards)
