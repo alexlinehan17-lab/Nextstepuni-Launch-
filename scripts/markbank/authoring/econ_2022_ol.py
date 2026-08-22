@@ -198,4 +198,12 @@ P.menu('Explain the term hidden economy', 'econ-2022-ol-q16-c-ii',
        'Explanation and example, 8 marks each.',
        ref='2022 OL Q16(c)(ii)', claim=2, per=8, drop=SCAFFOLD)
 
+P.menu('Have been consistent to the US with no major changes',
+       'econ-2022-ol-q15-c-i', 'economics-4-2', 'reading-irish-export-trends',
+       "Comment on the trends in Ireland's exports to the US and to the UK using the figures "
+       'in the graph.',
+       'The trend on each side — both of these', 'US 6 and UK 6.',
+       ref='2022 OL Q15(c)(i)', claim=2, per=6,
+       drop=SCAFFOLD + ('Exports to the UK',))
+
 P.emit()

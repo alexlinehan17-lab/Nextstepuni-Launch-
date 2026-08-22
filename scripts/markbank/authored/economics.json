@@ -5024,6 +5024,48 @@
   "notes": ""
  },
  {
+  "id": "econ-2022-ol-q15-c-i",
+  "topicId": "economics-4-2",
+  "conceptId": "reading-irish-export-trends",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 OL Q15(c)(i)",
+  "questionText": "Comment on the trends in Ireland's exports to the US and to the UK using the figures in the graph.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 6",
+   "answer": 2,
+   "ofParts": 3,
+   "perPart": 6
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The trend on each side — both of these",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "US 6 and UK 6.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Have been consistent to the US with no major changes / with gradual increases from Feb to Mar / a fall in Apr and rising again. Exports were over €4bn in Jan and €4bn in Dec.",
+      "Exports between €1bn and approx. €2bn /",
+      "Slight increase in exports to the UK in some months. Exports were over €1bn in Feb and €2bn in Nov."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "econ-2022-ol-sa-q2-ii",
   "topicId": "economics-1-3",
   "conceptId": "what-the-census-is-used-for",
@@ -7025,6 +7067,48 @@
    }
   ],
   "notes": "The justifications are carded separately, from the same diagram."
+ },
+ {
+  "id": "econ-2023-hl-sa-q7-a",
+  "topicId": "economics-1-1",
+  "conceptId": "landlords-leaving-and-the-rental-market",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2023 HL Section A Q7(a)",
+  "questionText": "Explain what happens in the rental market as landlords leave it: to supply, and to the equilibrium price.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 3",
+   "answer": 2,
+   "ofParts": 3,
+   "perPart": 3
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A step in the explanation — both of these",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two steps, 3 marks each.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "As landlords leave the market it reduces the supply of properties in the market.",
+      "The supply curve will shift to the left from S1 to S2.",
+      "The equilibrium price will increase from Pe1 to Pe2."
+     ]
+    }
+   }
+  ],
+  "notes": ""
  },
  {
   "id": "econ-2023-ol-q11-a-i",

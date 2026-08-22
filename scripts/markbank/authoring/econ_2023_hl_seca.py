@@ -149,4 +149,13 @@ P.cards.append(card(
                {'letter': 'C', 'meaning': 'an efficient production point, on the frontier',
                 'askedInThisQuestion': True}]))
 
+P.menu('As landlords leave the market it reduces the supply', 'econ-2023-hl-sa-q7-a',
+       'economics-1-1', 'landlords-leaving-and-the-rental-market',
+       'Explain what happens in the rental market as landlords leave it: to supply, and to '
+       'the equilibrium price.',
+       'A step in the explanation — both of these', 'Two steps, 3 marks each.',
+       ref='2023 HL Section A Q7(a)', claim=2, per=3,
+       drop=('Possible responses', 'Suggested responses',
+             'Price S Pe1 Pe D Qe1 Qe Quantity of rental properties'))
+
 P.emit()

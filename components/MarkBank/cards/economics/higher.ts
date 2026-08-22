@@ -1568,6 +1568,19 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2023 Higher Level — © State Examinations Commission.",
+    id: "econ-2023-hl-sa-q7-a", topicId: "economics-1-1", conceptId: "landlords-leaving-and-the-rental-market",
+    section: "A", questionRef: "2023 HL Section A Q7(a)",
+    questionText: "Explain what happens in the rental market as landlords leave it: to supply, and to the equilibrium price.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 3","answer":2,"ofParts":3,"perPart":3}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A step in the explanation — both of these", marks: 6, contextNote: "Two steps, 3 marks each.", openList: true, group: {"claimMax":2,"perOption":3,"options":["As landlords leave the market it reduces the supply of properties in the market.","The supply curve will shift to the left from S1 to S2.","The equilibrium price will increase from Pe1 to Pe2."]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2024, level: "higher",
     paperFileid: "LC034ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2024 Higher Level — © State Examinations Commission.",
