@@ -81,14 +81,14 @@ def papers_dir(subject):
 # follow a closed sentence AND introduce a part, which is what separates it from
 # a figure caption or a numbered line; the caller then requires the number to be
 # one the paper is actually due.
-INLINE_QHEAD = re.compile(r'(?<=[.)?:])\s+(?=\d{1,2}\.\s+\((?:[a-h]|i{1,3}|iv|vi{0,3})\))')
+INLINE_QHEAD = re.compile(r'(?<=[.)?:])\s+(?=\d{1,2}\.\s+[A-Z(])')
 
 RUBRIC_HEAD = re.compile(
     r'^(?:(?:SECTION|Section)\s+[A-D]\b'
     r'|Answer\s+(?:any\s+)?[\w\-]+\s+questions?\b)'
     r'.*?\.\s+(?=\d{1,2}\.\s+[A-Z(])', re.S)
 
-QHEAD = re.compile(r'^(?:Question\s+(\d{1,2})\b|(\d{1,2})\.\s+(?=[A-Z(]))')
+QHEAD = re.compile(r'^(?:Question\s+(\d{1,2})\b|(\d{1,2})\.\s+(?=[A-Z(\d]))')
 MARKER = re.compile(r'^\(([a-z]{1,4})\)\s*')
 LETTER = re.compile(r'[a-h]')
 ROMAN = re.compile(r'i{1,3}|iv|vi{0,3}')
@@ -160,8 +160,33 @@ class Paper:
         self.parts, self.stems = {}, {}
         q = letter = roman = None
         open_key = None          # the part a continuation block may extend
-        for text in self._all_blocks():
+        blocks = list(self._all_blocks())
+        # A contents page lists "Question 12", "Question 13" and so on as bare
+        # blocks with nothing under them. The second Biology booklet prints one,
+        # and reading those as heads walked the parser up to 15 before the real
+        # Question 11 arrived — so 11 to 15 were all rejected as going backwards
+        # and four questions of that paper were unreachable. A real head is
+        # never bare, and never has another bare head as its neighbour.
+        bare = [i for i, t in enumerate(blocks)
+                if re.fullmatch(r'Question\s+\d{1,2}|\d{1,2}\s+Question', t)]
+        contents = {i for i in bare if i - 1 in bare or i + 1 in bare}
+
+        for index, text in enumerate(blocks):
+            if index in contents:
+                continue
             m = QHEAD.match(text)
+            if not m and q is not None:
+                # Not every head is printed as "N." followed by a word. 2025 OL
+                # Physics sets "12." in a block of its own with part (a) in the
+                # next block, its Question 13 drops the full stop, and 2022 OL
+                # Biology prints a bare "12". A lone number is normally the ruled
+                # answer lines in an Agricultural Science booklet, so these forms
+                # are only read as a head when the number is the very next
+                # question due — no gap, no tolerance.
+                loose = re.match(r'(\d{1,2})\.?(\s+|$)', text)
+                if loose and int(loose.group(1)) == q + 1:
+                    text = f'{loose.group(1)}. {text[loose.end():]}'.strip()
+                    m = QHEAD.match(text) or QHEAD.match(text + ' X')
             if not m:
                 unrubriced = RUBRIC_HEAD.sub('', text, count=1)
                 if unrubriced != text:
