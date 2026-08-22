@@ -99,10 +99,21 @@ def heads(chunk, hs):
             for i, (h, p) in enumerate(idx)]
 
 
-def anyN(rid, verbatim, marks, claim, per, options, note):
+def anyN(rid, verbatim, marks, claim, per, options, note, steps=None):
+    """A bounded menu.
+
+    `steps` is for a scheme that does not pay the same for every option claimed
+    -- Economics prices "two economic consequences" at 6 then 4 -- and must have
+    exactly `claim` entries. `per` stays the first step, so anything reading only
+    `perOption` is never wrong by more than the tail.
+    """
+    group = {"claimMax": claim, "perOption": per, "options": options}
+    if steps:
+        if len(steps) != claim:
+            raise ValueError(f'{rid}: {len(steps)} mark steps for {claim} claimable options')
+        group["perOptionSteps"] = steps
     return {"id": rid, "kind": "anyN", "verbatim": verbatim, "marks": marks,
-            "openList": True, "contextNote": note,
-            "group": {"claimMax": claim, "perOption": per, "options": options}}
+            "openList": True, "contextNote": note, "group": group}
 
 
 def point(rid, verbatim, marks, note, accepts=None):
@@ -122,9 +133,17 @@ def make_card(subject_id, default_section='B'):
         # makes the total. Derive from the row when the caller has not said
         # otherwise, so a forgotten argument cannot ship a card whose tariff
         # reads "null x null".
-        if tariff_kind == 'bestNofParts' and answer is None:
+        if tariff_kind == 'bestNofParts':
             g = next((r['group'] for r in rows if r.get('group')), None)
-            if g:
+            # A descending tariff cannot be a best-of: "answer x perPart" is one
+            # value per option by definition, and 2 x 6 is not the 10 that 6-then-4
+            # pays. Caught here rather than at the build, where it reads as an
+            # arithmetic error with no hint of the cause.
+            if g and g.get('perOptionSteps'):
+                raise ValueError(
+                    f"{cid}: a descending tariff ({'+'.join(map(str, g['perOptionSteps']))}) "
+                    f"is not a best-of — pass tariff_kind='fixed'")
+            if answer is None and g:
                 answer, per_part, of_parts = g['claimMax'], g['perOption'], len(g['options'])
         return {"id": cid, "topicId": topic, "conceptId": concept, "level": level, "year": year,
                 "subjectId": subject_id, "section": section, "questionRef": ref,
@@ -141,7 +160,10 @@ def make_audit(max_options):
         """Catch what the build would drop, before writing anything."""
         problems = []
         for c in cards:
-            rowsum = sum(r['marks'] for r in c['rows'])
+            rowsum = sum(
+                (sum(r['group']['perOptionSteps'][:r['group']['claimMax']])
+                 if r.get('group', {}).get('perOptionSteps') else r['marks'])
+                for r in c['rows'])
             if rowsum != c['totalMarks']:
                 problems.append(f"{c['id']}: rows sum to {rowsum}, tariff is {c['totalMarks']}")
             tm = c['tariffModel']
@@ -161,8 +183,10 @@ def make_audit(max_options):
                     problems.append(f"{c['id']} {r['id']}: claims {g['claimMax']} from {len(g['options'])} option(s)")
                 if len(g['options']) > max_options:
                     problems.append(f"{c['id']} {r['id']}: {len(g['options'])} options, cap is {max_options}")
-                if g['claimMax'] * g['perOption'] > c['totalMarks']:
-                    problems.append(f"{c['id']} {r['id']}: {g['claimMax']}x{g['perOption']} on a {c['totalMarks']}-mark question")
+                worth = (sum(g['perOptionSteps'][:g['claimMax']]) if g.get('perOptionSteps')
+                         else g['claimMax'] * g['perOption'])
+                if worth > c['totalMarks']:
+                    problems.append(f"{c['id']} {r['id']}: group is worth {worth} on a {c['totalMarks']}-mark question")
         return problems
     return audit
 

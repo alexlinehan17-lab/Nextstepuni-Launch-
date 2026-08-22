@@ -174,5 +174,608 @@
    }
   ],
   "notes": ""
+ },
+ {
+  "id": "econ-2024-hl-q12-a-i",
+  "topicId": "economics-3-1",
+  "conceptId": "canons-of-taxation",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 HL Q12(a)(i)",
+  "questionText": "The principle of certainty is one of the canons of taxation, i.e. taxpayers should be aware of their tax liability. Explain two other canons/principles of taxation.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 5",
+   "answer": 2,
+   "ofParts": 8,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A canon of taxation — any two",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two canons, 5 marks each. Certainty is excluded by the question; the scheme lists eight others.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Equity: taxes should be progressive, i.e. taking a higher proportion of income in tax as income rises. People on higher incomes should carry a greater burden of taxation, whether or not they benefit from it. Income tax in Ireland is very progressive as those on higher incomes pay a greater proportion of their income in taxation.",
+      "Economy: the tax system should be structured so that the cost of collecting the tax is small compared to the yield from the tax (the main aim of taxation is to raise revenue for government). Most of the tax take should be available for the welfare of the economy not for administration. e.g. The Local Property Tax (LPT) is economic as it can be collected online.",
+      "Convenience: the tax should be collected in a way and at a time which is convenient for the taxpayer. It’s more convenient to have tax deducted at source, e.g. PAYE rather than receiving a bill for the total amount due in a single payment after the income has been spent.",
+      "Taxes should not be perceived, nor act, as a disincentive: tax rates should not discourage workers from working; should not discourage entrepreneurial investment; should not discourage people from saving.",
+      "Taxes should assist in the redistribution of income : a good tax system should help the government to redistribute income progressively from those who can afford to pay to those with limited incomes.",
+      "Taxes should be consistent with and aid the national economic objectives: the taxes levied should enable to Government to achieve other economic and social objectives e.g. raising excise rates on cigarettes to discourage smoking.",
+      "Taxes should have a stabilising influence on the economy: an effective system of taxation can prevent the level of economic activity from rising as fast as it would otherwise in economic growth. Similarly the system should shield the level of economic activity from falling as fast as it otherwise would in a recession",
+      "Tax evasion should not be possible - effective taxes should not be possible to evade. Otherwise the tax is not fair."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2024-hl-q12-a-ii",
+  "topicId": "economics-3-1",
+  "conceptId": "effects-of-the-hidden-economy",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 HL Q12(a)(ii)",
+  "questionText": "Outline two effects on the Irish economy of an increase in activities in the hidden economy.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 5",
+   "answer": 2,
+   "ofParts": 6,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An effect of a growing hidden economy — any two",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two effects, 5 marks each.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Loss of tax revenue to the government/pressure on government services: Revenues which are essential to the provision of state services are lost to the exchequer. These could have been used by the government in various ways. The loss of revenue to the state the government may have to cut spending and find additional sources of tax revenue and/or reduce the volume of services which it provides and/or increase borrowing.",
+      "Decline in legitimate business activity: Legitimate businesses will suffer a decline in sales, leading to possible job losses and a decline in economic activity.",
+      "Increased government expenditure on enforcement: To curb the activities of the shadow economy the government may have to increase spending on enforcement which will lead to pressure on the state’s finances.",
+      "Increased crime levels: An increase in shadow/hidden economic activities results in increased crime and may instil fear in citizens.",
+      "Standards of products/services: Because of lack of regulation, products may be unsafe or harmful to consumers.",
+      "Increase in employment in the hidden economy: More people may opt to seek employment in this economy i.e. cleaning services. Hindering legitimate business."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2024-hl-q12-b-iii",
+  "topicId": "economics-3-3",
+  "conceptId": "effects-of-high-inflation",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 HL Q12(b)(iii)",
+  "questionText": "Outline two possible economic effects of high price inflation on the Irish economy.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 3",
+   "answer": 2,
+   "ofParts": 6,
+   "perPart": 3
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An effect of high price inflation — any two",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two effects, 3 marks each.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Loss of purchasing power / fall in living standards - it now requires more money to purchase the same goods/services, meaning the purchasing power of consumers in Ireland has fallen. Therefore they purchase fewer goods than they were previously able to, resulting in a lower standard of living / some businesses, to cut costs may reduce their workforce.",
+      "Those on fixed incomes are losing lose out - people who earn fixed incomes (e.g., welfare recipients) are suffering more during this inflationary period because they suffer the greatest loss of purchasing power and their incomes are always trying to catch up.",
+      "Possibility of wage demands – workers experiencing a reduction in their standard of living may seek an increase in wages causing jobs losses; increase in prices etc.",
+      "Loss of international competitiveness – if the inflation rate is higher than that of our competitors then it may cause exports from Ireland to become too expensive and demand fall.",
+      "If tax rates are not indexed to the rate of inflation, the issue of fiscal drag can arise – as wages increase to compensate workers for high inflation, workers may move into the marginal tax bracket, meaning a higher proportion of income is paid in tax. This leads to their income being reduced in real terms as prices continue to rise.",
+      "Borrowers may benefit: the real cost of repayments is reduced."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2024-hl-q12-c-ii",
+  "topicId": "economics-2-2",
+  "conceptId": "demerit-goods",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 HL Q12(c)(ii)",
+  "questionText": "Cigarettes are classified as demerit goods. Outline one possible effect of the demerit good markets.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 4",
+   "answer": 1,
+   "ofParts": 5,
+   "perPart": 4
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An effect of demerit good markets — any one",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One effect, 4 marks. The scheme lists benefits as well as harms — employment and tax revenue are both listed, so \"effect\" here does not mean \"disadvantage\".",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Over-consumption of a product – if the private cost is less than the social cost it may lead to over-consumption of the product resulting in socially undesirable consequences.",
+      "Employment (direct and spin off)– demerit markets even though they produce goods that can be harmful, are a huge source of employment in the Irish economy and without them the economy would not be in as strong of a position. With most businesses there are indirect jobs created and this again benefits the Irish economy.",
+      "Tax revenues – demerit markets are a huge source of employment in the Irish economy and as a result generate large direct tax revenues for the state. The government also benefits from large indirect tax revenues generated through the transactions that take place. Without these revenues the economy would not be in as strong of a position.",
+      "Negative externalities – a negative effect of demerit goods are negative externalities i.e. they have negative effects on third parties not involved in the consumption of the good. Demerit goods can have major negative effects on third parties i.e. increased crime levels; increased debt for families of users.",
+      "Government funding of programmes to deal with negative externalities – funding may be required to deal with addiction; crime; provision of health services etc."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2024-hl-q12-c-iii",
+  "topicId": "economics-1-1",
+  "conceptId": "assumptions-of-consumer-behaviour",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 HL Q12(c)(iii)",
+  "questionText": "One assumption of consumer behaviour is that they have limited incomes. Explain two other key assumptions of consumer behaviour.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 5",
+   "answer": 2,
+   "ofParts": 3,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An assumption of consumer behaviour — any two",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two assumptions, 5 marks each. Limited income is excluded by the question, which leaves exactly the three the scheme prints.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Consumers seek to get maximum utility from that income/obey the equi-marginal principle of consumer behaviour - consumers will spend their limited incomes in such a way that they will try to achieve the most satisfaction from the goods and services they purchase and receive the best value for money.",
+      "Consumers are subject to the law of diminishing marginal utility - the law of Diminishing Marginal Utility states that as more units of a good are consumed, a point will be reached where marginal (extra) utility eventually begins to decline",
+      "Most consumers will act rationally - the consumer acts in a manner consistent with their preferences e.g. If a person sees an identical commodity priced differently in two shops, they will buy the good at the lower price."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2024-hl-q13-a-ii",
+  "topicId": "economics-3-5",
+  "conceptId": "consequences-of-a-rising-population",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 HL Q13(a)(ii)",
+  "questionText": "Discuss two economic consequences of an increasing population.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 @ 6 + 1 @ 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An economic consequence of a rising population — any two",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Two consequences. The paper pays the first 6 and the second 4 — not 5 each. The scheme lists gains and costs together, so a good answer need not be all one or the other.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Increased demand for goods & services / larger domestic market for firms - with a rising population the demand for goods and services within the country grows. This may lead to increased opportunities for investment. Firms who increase output may benefit from economies of scale.",
+      "Increased government revenue - the numbers joining the labour market should increase meaning increased tax revenue for the government.",
+      "Reduction in labour shortages - if vacancies exist, an increase in population may help reduce these labour shortages and reduce unemployment in general. This will help the reduce social welfare expenditure.",
+      "Increased pressure on public services - a rising population may put further pressure on essential services e.g. health services, schools etc.",
+      "Increased pressure on the country’s infrastructure - greater pressure is exerted on the infrastructure of the country leading to bottlenecks e.g. increased traffic congestion, limited spaces in educational facilities for the population.",
+      "Land values / housing shortages - as population density increases, available land becomes scarcer, the price of land increases and the housing crisis worsens."
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2024-hl-q13-a-iii",
+  "topicId": "economics-3-1",
+  "conceptId": "vacant-home-tax",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 HL Q13(a)(iii)",
+  "questionText": "Outline two advantages of the introduction of the Vacant Home Tax.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 @ 6 + 1 @ 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An advantage of the Vacant Home Tax — any two",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Two advantages, the first paid 6 and the second 4.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Encourage people to sell the vacant property - this may encourage those people with the vacant property to sell and so those people who actually need a home may now get access to one.",
+      "May ease the housing crisis / reduction in homelessness - the housing crisis is one of the most persistent economic issues in Ireland in recent years and is requiring the government to fund emergency accommodation. This cost may be reduced in providing accommodation for those who are homeless.",
+      "Revenue for the government – this VHT will increase revenue to the state and allow the government to use this revenue for the benefit of citizens.",
+      "Misallocation of resources/opportunity cost/market failure - an economy in which there is a homeless crisis and at the same time idle houses is clearly suffering from market failure as resources are being misallocated. Those who need homes have none whilst those who have them are not using them.",
+      "Reduction on derelict sites – if this is achieved by the sale of such properties then these sites become available for development increasing house supply and removing ‘eyesores’."
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2024-hl-q13-b-ii",
+  "topicId": "economics-4-1",
+  "conceptId": "growth-of-globalisation",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 HL Q13(b)(ii)",
+  "questionText": "Explain two reasons behind the growth of globalisation in the second half of the 20th Century (i.e. between 1950 – 1999).",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 @ 6 + 1 @ 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason globalisation grew — any two",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Two reasons, the first paid 6 and the second 4.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Improved transport - transport advances make global travel easier. For example, there has been a rapid growth in air travel, enabling greater movement of people and goods across the globe. The costs of shipping have come down too, due to containerisation, bulk shipping, refrigeration and other efficiencies. The lower unit cost of shipping products around the world reduces prices in the country of manufacture closer to those in export markets. This makes markets more contestable globally",
+      "Improved technology - rapid and sustained technological change has reduced the cost of communicating information. This has led to the growth of international trade via advancements in the internet, mobile tech and e-commerce. This area is constantly developing to allow better communication in real time.",
+      "Increased population / increased consumer demands – population is rising leading to increased demand worldwide. Coupled with rising income levels consumers are becoming more demanding in terms of choice of products and services and increased awareness of global businesses",
+      "Peace / recovery following World War II – peace allowed governments to rebuild their countries, and this was helped by the sharing of knowledge and availability of labour. Governments had to invest in infrastructure requiring international assistance .",
+      "Free Trade agreements – the desire to trade internationally, without barriers, grew. Free Trade areas developed i.e. the European Economic Community which assisted globalisation.",
+      "Labour availability and skills - countries with lower labour costs such as India and Vietnam, have attracted many global companies to take advantage of the low costs of production."
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2024-hl-q15-a-ii",
+  "topicId": "economics-4-0",
+  "conceptId": "solving-the-ldc-debt-crisis",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 HL Q15(a)(ii)",
+  "questionText": "Outline one step which could be taken by the governments of developed countries to help solve the debt crisis which LDCs are experiencing.",
+  "stem": "Set on a chart showing LDC debt servicing rising from $22bn in 2016 to $43bn in 2022.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 5",
+   "answer": 1,
+   "ofParts": 5,
+   "perPart": 5
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A step developed countries could take — any one",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One step, 5 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Abolish the outstanding debt - the quickest and simplest way to solve the debt crisis is to ‘write-off’ the existing debts of these countries and start afresh.",
+      "Help restructuring of national debts - if national debts of these countries are re- structured, more funds would become available for these counties to use for economic development in their countries. Lengthening the repayment period allows these countries retain more of their funds for improving standards of living.",
+      "Allow LDCs to extend the length of the repayment period which will enable them to repay at a time more suitable to them.",
+      "Reduce the annual interest repayments – arrange with the lending agencies to reduce the negotiated interest rates on the debts. This will help reduce annual repayments.",
+      "Provide financial aid / official development assistance - governments can provide aid to the LDCs so that they can also assist with the development of infrastructure, provide education, improve health so that the country can promote economic growth and increase incomes which will provide the LDCs with the ability to repay the debts in the longer term."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2024-hl-q15-a-iii",
+  "topicId": "economics-4-0",
+  "conceptId": "limits-of-financial-aid",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 HL Q15(a)(iii)",
+  "questionText": "Explain two reasons why financial aid given to LDCs may not always help LDCs resolve their difficulties.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 @ 6 + 1 @ 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason aid may not help — any two",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Two reasons, the first paid 6 and the second 4.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Countries / citizens may become too dependent on the financial aid / food aid – In some LDCs, a culture of dependency may develop and this may prove to be a major barrier in promoting economic growth and development. This culture of dependency may reduce the desire of people to work / to become entrepreneurs / to increase domestic food production. Foreign NGOs can sometimes stifle indigenous industry through their free aid.",
+      "Unfair distribution of benefits - any aid that is given to LDCs may find its way into the hands of a small ruling elite. In the case of some LDCs the aid may not reach the people who really need it.",
+      "Financial aid may be ‘tied’ - some of the aid may be ‘tied aid’, based on political and trade factors rather than on necessity. Thus the aid is not being used for the purposes for which it was intended.",
+      "Aid is used to invest in high profile projects - in some LDCs, the provision of adequate infrastructure together with land drainage and irrigation schemes, roads, housing, factories and communication facilities maybe bypassed in favour of ‘high profile’ projects to the detriment of citizens.",
+      "Inadequate oversight by the donors – if the donors do not establish criteria that the aid is being used effectively then the aid received may not be used efficiently or achieve the maximum benefits."
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2024-hl-q15-b-i",
+  "topicId": "economics-4-2",
+  "conceptId": "improving-competitiveness",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 HL Q15(b)(i)",
+  "questionText": "Suggest two economic measures that the Irish government could implement to continue the improvement in the competitiveness of firms in Ireland.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 @ 4",
+   "answer": 2,
+   "ofParts": 6,
+   "perPart": 4
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A measure to improve competitiveness — any two",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Two measures, 4 marks each.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Reduce taxation - a reduction in indirect taxes, e.g. VAT or excise duty on fuel or raw materials would help reduce costs to small business. A reduction in income tax may help combat the current wage / price spiral thus helping firms to lower their costs.",
+      "Subsidies to firms in relation to energy costs - by subsidising the current high energy costs, a firm’s costs may decrease and it may become more competitive.",
+      "Continue to promote foreign direct investment - Ireland remains a popular hub for foreign direct investment. This investment into our economy brings many advantages such as new knowledge, skills and technological advances which improve the productive capacity of the Irish economy. It helps give Ireland a competitive advantage.",
+      "Increase the availability and affordability of accommodation - the dysfunctional housing market in areas of infrastructural development reduces the mobility of labour in areas where employees are needed to maintain Ireland’s productive capacity.",
+      "Invest more in infrastructure - the government could invest more resources in the roll out of the National Broadband Plan across the country as this remains a competitiveness concern. Reliable, high-speed broadband is essential to increase the attractiveness of regional areas for investment.",
+      "Reduce costs for businesses – the government could restrict its involvement in the market place e.g. reduce PRSI for employers; defer minimum wage increases; changes to sick leave entitlement; postpone ‘auto pension enrolment’ – these have the effect of increasing costs and reducing competitiveness."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2024-hl-q15-c-i",
+  "topicId": "economics-4-1",
+  "conceptId": "reasons-to-join-the-eu",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 HL Q15(c)(i)",
+  "questionText": "Give two reasons why countries wish to join the EU.",
+  "stem": "Set in 2023, the fiftieth anniversary of Ireland joining the EU, with Ukraine and Moldova seeking membership.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 @ 6 + 1 @ 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason to join the EU — any two",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Two reasons, the first paid 6 and the second 4.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Access to the single market - the EU's main economic engine is the single market. It enables most goods, services, money and people to move freely throughout most of the continent. The EU is the largest trade bloc in the world. It is the world's biggest exporter of manufactured goods and services, and the biggest import market for over 100 countries. This is an attractive proposition for indigenous businesses that would have a bigger market for their produce.",
+      "Ease of movement / travel / work – with EU membership, it is much easier to move around Europe – all EU citizens have the right to study, work or retire in any EU country. As an EU national, for employment, social security and tax purposes, every EU country is required to treat you exactly the same as its own citizens.",
+      "Provision and protections of citizens’ rights - The Treaty on the European Union gives EU citizens and legal residents a wide range of rights, enacted in EU law across many fields.",
+      "Access to financial funds / improvements in standard of living – it is usual for new members of the EU to receive funds to enable new members help develop their infrastructure and provide services comparable with established members. Thes should improve citizens standard of living.",
+      "International diplomacy & development - EU countries acting in unison have much more of a voice on the world stage than 27 nations of varying size acting separately. Taken together, the EU institutions and national governments are the world’s leading donor of development assistance and work collectively to promote good governance, fight hunger and preserve natural resources.",
+      "Democratic society / structures - Moldova wants EU membership for many reasons but currently a major reason is protection against a possible threat from Russia and its authoritarian regime."
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2024-hl-q15-c-iii",
+  "topicId": "economics-2-2",
+  "conceptId": "data-centres-negative-consequences",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 HL Q15(c)(iii)",
+  "questionText": "Discuss two possible negative consequences for the Irish economy of these data centres locating in Ireland.",
+  "stem": "Amazon secured planning permission for two new data centres in Dublin despite objections from environmental groups.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 @ 6 + 1 @ 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A negative consequence of data centres — any two",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Two consequences, the first paid 6 and the second 4.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Energy supplies – Data centres use a large proportion of the country’s electricity. The national grid operator Eirgrid has warned that the State may face an electricity shortfall unless supply is increased.",
+      "Environmental impact – Data centres account for large proportion of Ireland’s carbon emissions as they are currently mostly powered by fossil fuels (mainly gas).",
+      "Water – One centre can use up to 500,000 litres of water a day to cool its systems and this can increase significantly during a heat wave.",
+      "Increased demand of land – their location will reduce the land available for the provision of housing and may have an inflationary effect on land prices.",
+      "Skilled labour shortages – Ireland faces a shortage of skilled labour and their location can exacerbate these shortages and cause wage rates to rise to attract workers. Question 16 Possible Responses (a) 12,827 people living in emergency homeless accommodation in Ireland are facing into 2024 in homelessness. Number of homeless people in Ireland 14,000 12,000 10,000 Number of homeless people 8,000 6,000 4,000 2,000 2021 2022 2023 Years (i) Outline two reasons for the increase in the number of homeless people in Ireland. Growing demand for housing - Ireland’s population has grown to over five million people according to Census 2022. This places more pressure on those looking to buy or rent a home. Increase in Ireland’s net migration has also increased demand. Low supply of affordable rental accommodation - Ireland’s dysfunctional housing market means there are very few rental properties on the market and those which are available are often in excess of government rent supplements, so they are not affordable. Many landlords are also leaving the market which is exacerbating this problem. Lifting of the eviction ban – the government voted to lift the eviction ban in place during Covid-19 and this has forced some people to lose their rented accommodation and become homeless. Supply issues - Covid 19 resulted in the closure of building sites and this affected the building of new houses. Ireland is experiencing a difficulty in the number of workers in the trades / building industry. Planning issues may also mean that it takes a lot of time to go from the planning stage to the actual construction of houses. Personal factors – some people who suffer from addictions, mental health issues, family breakdown etc., - they may leave home and become homeless due to the lack of emergency accommodation / adequate rental properties etc. (ii) Over 7,400 new social housing units were built in 2022. Discuss two benefits of increasing expenditure on social housing apart from helping to reduce the level of homelessness. Reduced government spending on emergency accommodation - if people are in permanent accommodation then this should mean that the government will spend less on the provision of emergency accommodation. Revitalisation of local communities - areas where social housing is built will be revitalised, it should help distressed neighbourhoods and improve the quality of lives in those areas. Economic benefits to local communities - the increase in population in areas where the social housing is completed should result in increased spending in those communities, resulting in possible employment opportunities in local businesses. Less pressure on private property market - an increase in permanent accommodation should lead to a decrease in the need for rental accommodation, reduce the demand in the private property market and have a positive effect on house prices / rents. Employment in the construction & associated sectors - activity and employment in the construction sector will be boosted. There will be an increase in demand for goods and services associated with the construction industry, which will benefit the suppliers of these goods and services. Economic growth & government finances – increased economic activity should aid economic growth and have a positive impact on government finances: increased PAYE and VAT receipts to the exchequer because of increased economic activity in the labour- intensive construction industry. (b) (i) Explain the term income elasticity of demand. 27 This measures the percentage/proportionate change in the quantity demanded of a good caused by the percentage/proportionate change in the consumer’s income. (ii) Using an appropriate formula and the figures in the table below, calculate the income elasticity of demand (YED) for this good. Explain the economic meaning of your answer. Show your workings. Workings: +30 x 40,000 + 50,000 (90,000) = + 0.8 +10,000 150 + 180 1 (330) Explanation: The good is inelastic – the percentage change in quantity demanded is less than the percentage change in income. This means that the good is a necessity. It is less than 1. The good is a normal good – it has a positive income effect – as income went up more was demanded. (iii) Assume income elasticity of demand (YED) for a PlayStation 5 is + 5.2 and total sales in 2022 were 10,000 units. Calculate the expected total sales for the year if consumers’ incomes are expected to fall by 5% in 2024. Show your workings. Workings: If income falls by 5%, then sales will be expected to fall by (5% x 5.2) = 26%. Sales will fall by 26% in 2023. 26% of 10,000 units = 2,600 units. Expected sales in 2023 will be 10,000 – 2,600 = 7,400 units. Answer: 7,400 units (c) A major expansion to the Dublin Area Rapid Transport (DART) service (named DART+ project) is set to begin construction in 2024 with an operational target date of 2029. The 28 DART+ project plans to extend the length of the network from 50km to over 150km at a cost of €1.1bn. Adapted from dartplus.ie (i) The above expenditure is classed as capital expenditure. Explain the term capital expenditure using an example other than transport. Capital expenditure is spending on items not used up during the year / they help increase the productive capacity of the company / their benefits accrue for the long-term term. Example - building a new school or building a new hospital. (ii) Outline one social cost and one social benefit of the proposed DART+ project. Social cost: Traffic – there will be an increase in traffic congestion as the construction takes place. Pollution – there may be increased pollution as the construction of the DART+ takes place. Heavy construction machinery emit carbon emissions polluting the area. Disruption to local activity – during the construction phase disruption will occur possibly leading to a loss of business; greater inconvenience for residents; damage to property. Loss of natural environment – the routeways may be at the cost of losing some of the natural environment resulting is less access for social activities. Social benefit: Reduced emissions – once the DART+ is completed more people should be using the service and having more people using public transport and not private cars is much better for the environment. These new DART+ should also be the most environmentally friendly. Reduced congestion – once the construction phase is over, the DART+ should result in less traffic congestion which benefits people as they will spend less time every day/week commuting. Reduced health care costs – less emissions should result in a healthier population and this will result in lower health care costs into future. Improved economic activity – following completion more people may shop/reside in those areas serviced by DART+. This may boost activity in the area – boosting employment and help re-generate neighbourhoods. (iii) To fund more expenditure into the future, the Minister for Finance is considering raising tax revenue through a policy of increasing indirect taxation. Discuss the economic advantages and disadvantages of increasing indirect taxation. Advantages: Low collection cost – more convenient collection because the taxes are collected by retailers. Evasion is more difficult – it is harder to avoid indirect taxes as these taxes are included in the price of the good or service. Less distortionary / no disincentive to work - VAT does not discourage work unlike increases in income tax. Possibly more ‘acceptable’ than alternatives - it may be easier for government to raise tax revenue through indirect tax rather as these taxes are included in the price of the good or service. Alternatives such as increasing income tax; chargers for services may be more unpopular. Used by government to change consumption patterns – a government can change consumption patterns (aligning private and social costs) by increasing indirect taxes e.g. reduce consumption of harmful products e.g. sugar tax and the carbon tax. Acts as a built-in stabiliser – indirect taxes take more out of the economy when the economy is performing well and leaves more money in the economy when it is not performing as strong. It is a built-in stabiliser. Disadvantages: Will increase inflation – Indirect taxes increase the prices of goods and services and hence the cost of living, possibly causing demands for further wages increases. Regressive / inequitable – lower income groups may end up paying a greater proportion of their income in this form of tax because they spend a greater proportion of their income on necessities. Revenue not as certain – the revenue collected is not as predictable as that from direct taxation which could hinder government planning / planning. Burden of collection with retailers – retailers now act as revenue collectors and procedures must be put into practice to collect, record and remit the revenue. This is a further cost for firm and may deter business set-up. Must have a MINIMUM of ONE advantage / disadvantage. Higher Level Economics"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
  }
 ]

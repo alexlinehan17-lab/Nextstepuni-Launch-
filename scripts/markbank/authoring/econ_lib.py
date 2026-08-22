@@ -39,10 +39,17 @@ JUNK = re.compile(
 # provenance gate cannot object: the footer really is in the scheme.
 FOOTER = re.compile(r'\s*\d+\s*\|\s*P\s*a\s*g\s*e\s*')
 
+# The extractor lifts every marks cell into angle brackets, and the SEC prints
+# the SECOND cell of a descending tariff partway into the first response rather
+# than beside the question: "...with a rising ⟨1 @ 4⟩ population the demand...".
+# comparableScheme() strips these from the scheme, so a claim that keeps one can
+# never match — and it would put "⟨1 @ 4⟩" in front of a student besides.
+MARKS_CELL = re.compile(r'\s*⟨[^⟩]*⟩\s*')
+
 
 def defurnish(s):
-    """One slice with the running footer taken out of it."""
-    return tidy(FOOTER.sub(' ', s))
+    """One slice with the page furniture the scheme's own comparison ignores."""
+    return tidy(MARKS_CELL.sub(' ', FOOTER.sub(' ', s)))
 
 
 load = make_load('economics')

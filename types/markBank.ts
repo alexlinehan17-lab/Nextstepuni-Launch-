@@ -135,7 +135,26 @@ export interface MarkRow {
    */
   route?: string;
   /** `anyN` only: how many of the listed options may be claimed, and for how much. */
-  group?: { claimMax: number; perOption: number; options: string[] };
+  group?: {
+    claimMax: number;
+    perOption: number;
+    options: string[];
+    /**
+     * Descending per-option values, where the scheme does not pay the same for
+     * every option claimed.
+     *
+     * Economics is built on this: "Discuss two economic consequences" prices the
+     * first at 6 and the second at 4, and it is the commonest tariff on the
+     * paper — four of the five long parts of one 2024 question. Without it the
+     * choice was to state a per-option value that is wrong for one of the two,
+     * or to card half of each question.
+     *
+     * When present it has exactly claimMax entries and supersedes perOption for
+     * both scoring and display; perOption stays as the first step so anything
+     * reading only that is never wrong by more than the tail.
+     */
+    perOptionSteps?: number[];
+  };
 }
 
 /** What every letter on a figure means — including letters this question never asks
@@ -381,13 +400,20 @@ export function isContentFreeRow(verbatim: string): boolean {
  * `orderedSplit` cannot be checked, because the scheme does not define per-row
  * values — so we assert the rows carry none rather than pretending.
  */
+/** What one bounded group is worth when fully claimed. */
+export function groupMarks(g: { claimMax: number; perOption: number; perOptionSteps?: number[] }): number {
+  return g.perOptionSteps
+    ? g.perOptionSteps.slice(0, g.claimMax).reduce((n, m) => n + m, 0)
+    : g.claimMax * g.perOption;
+}
+
 export function tariffReconciles(card: SecCard): boolean {
   const { tariffModel: t, rows, totalMarks } = card;
   if (t.kind === 'orderedSplit') return rows.every(r => r.marks === null);
   if (t.kind === 'bestNofParts') return t.answer * t.perPart === totalMarks;
   // Asterisked rows count: the asterisk constrains the wording, not the value.
   const worth = (r: MarkRow) =>
-    r.kind === 'anyN' && r.group ? r.group.claimMax * r.group.perOption : (r.marks ?? 0);
+    r.kind === 'anyN' && r.group ? groupMarks(r.group) : (r.marks ?? 0);
   // Mutually exclusive routes are counted ONCE, and each must reach the tariff on
   // its own — a student takes one route or the other, never a total of both.
   const byRoute = new Map<string, number>();

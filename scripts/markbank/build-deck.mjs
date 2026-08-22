@@ -258,7 +258,13 @@ function tariffFault(c) {
     return t.answer * t.perPart === c.totalMarks
       ? null : `best-of tariff ${t.answer}x${t.perPart} does not make ${c.totalMarks}`;
   }
-  const worth = (r) => (r.kind === 'anyN' && r.group ? r.group.claimMax * r.group.perOption : (r.marks ?? 0));
+  // Mirrors groupMarks() in types/markBank.ts: a descending tariff pays its
+  // steps, not claimMax times one value.
+  const worth = (r) => (r.kind === 'anyN' && r.group
+    ? (r.group.perOptionSteps
+        ? r.group.perOptionSteps.slice(0, r.group.claimMax).reduce((n, m) => n + m, 0)
+        : r.group.claimMax * r.group.perOption)
+    : (r.marks ?? 0));
   const byRoute = new Map();
   let common = 0;
   for (const r of c.rows) {
@@ -295,8 +301,16 @@ function groupFault(c) {
     }
     // The session prints "Any 2 of these — 7 marks each" from these two numbers,
     // so a group worth more than the question tells the student a false total.
-    if (g.claimMax * g.perOption > c.totalMarks) {
-      return `row "${r.id}" offers ${g.claimMax}x${g.perOption} on a ${c.totalMarks}-mark question`;
+    const groupWorth = g.perOptionSteps
+      ? g.perOptionSteps.slice(0, g.claimMax).reduce((n, m) => n + m, 0)
+      : g.claimMax * g.perOption;
+    if (groupWorth > c.totalMarks) {
+      return `row "${r.id}" offers ${groupWorth} marks on a ${c.totalMarks}-mark question`;
+    }
+    // A descending tariff must state exactly as many steps as it lets a student
+    // claim, or the renderer pays the tail of a shorter list to nobody.
+    if (g.perOptionSteps && g.perOptionSteps.length !== g.claimMax) {
+      return `row "${r.id}" lists ${g.perOptionSteps.length} mark step(s) for ${g.claimMax} claimable option(s)`;
     }
     // Nothing enforced this before: rowCapFor() caps how many ROWS a card has,
     // and a menu's options live inside ONE row, so a group could list any number

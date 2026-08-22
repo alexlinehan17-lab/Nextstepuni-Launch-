@@ -36,7 +36,7 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { splitForEmphasis } from './questionEmphasis';
 import { createPortal } from 'react-dom';
 import { AnimatePresence, MotionDiv, MotionSpan, useReducedMotion } from '../Motion';
-import { rowId, type LabelKey, type MarkRow, type SecCard } from '../../types/markBank';
+import { groupMarks, rowId, type LabelKey, type MarkRow, type SecCard } from '../../types/markBank';
 import type { MarkBankGrade } from './scheduler';
 import { figureUrl } from '../../utils/figureUrl';
 import { getSubjectHex } from '../../utils/subjectColors';
@@ -134,8 +134,14 @@ export interface SessionScreenProps {
 
 /** Marks a row is worth when claimed. `anyN` groups count their claimable max. */
 export function rowMarks(row: MarkRow): number {
-  if (row.kind === 'anyN' && row.group) return row.group.claimMax * row.group.perOption;
+  if (row.kind === 'anyN' && row.group) return groupMarks(row.group);
   return row.marks ?? 0;
+}
+
+/** What the first `n` options claimed are worth, honouring a descending tariff. */
+function claimedMarks(g: NonNullable<MarkRow['group']>, n: number): number {
+  if (!g.perOptionSteps) return n * g.perOption;
+  return g.perOptionSteps.slice(0, n).reduce((sum, m) => sum + m, 0);
 }
 
 /**
@@ -194,7 +200,7 @@ export function marksClaimed(
     // had, not as one all-or-nothing block worth twelve marks.
     if (r.kind === 'anyN' && r.group) {
       const chosen = Math.min(picks[id]?.length ?? 0, r.group.claimMax);
-      return n + chosen * r.group.perOption;
+      return n + claimedMarks(r.group, chosen);
     }
     return isClaimed(claims, id) ? n + rowMarks(r) : n;
   }, 0);
@@ -337,7 +343,11 @@ const MarkRowView: React.FC<{
       >
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 10, marginBottom: 9 }}>
           <span style={{ font: `600 12.5px/1.35 ${SANS}`, color: chosen ? SUCCESS_TEXT : INK_2 }}>
-            Any {g.claimMax} of these — {g.perOption} marks each
+            {/* A descending tariff is stated as it is paid. Saying "5 marks
+                each" of a 6-then-4 split is wrong for both halves. */}
+            Any {g.claimMax} of these — {g.perOptionSteps
+              ? `${g.perOptionSteps.slice(0, g.claimMax).join(' then ')} marks`
+              : `${g.perOption} marks each`}
           </span>
           {showMarks && (
             <span style={{
