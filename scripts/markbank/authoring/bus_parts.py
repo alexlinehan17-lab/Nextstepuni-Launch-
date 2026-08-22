@@ -37,6 +37,12 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(
 SCHEMES = os.path.join(ROOT, 'examiner-reports/business/schemes')
 
 SECTION = re.compile(r'^SECTION\s+([123])\b')
+# The notes reader needs a looser match — 2021 Higher Level writes "Section 3"
+# in mixed case — but the front-table reader must not have it. 2025 Ordinary
+# Level prints "Section 1 Short Answer Questions" partway through its front
+# matter, and matching that as a backwards heading ended the table before the
+# questions it exists to read.
+SECTION_ANY = re.compile(r'^SECTION\s+([123])\b', re.I)
 QHEAD = re.compile(r'^Question\s+(\d{1,2})\b', re.I)
 PART = re.compile(r'^\(([A-E])\)\s*(?:\((i{1,3}|iv|vi{0,3})\)\s*)?(.*)$')
 # Ordinary Level sets its part marker as a bare capital — "A (i) What do the
@@ -65,7 +71,7 @@ NOISE = re.compile(
     r'^(LEAVING CERTIFICATE|MARKING SCHEME|Available Marks|Section \d Available|'
     r'This is a compulsory|Answer \w+ questions?|All questions carry|Part \d|'
     r'Max$|Mark$|Applied Business Question|## Page|⟨\d+⟩$|'
-    r'Possible Responses|Examples?:|Marks$)', re.I)
+    r'Possible Responses|Examples?:|Marks?$|Support Notes$)', re.I)
 # Words the tariff column adds to a question line: "Source, explain, link".
 CUE_NOISE = re.compile(r'^(Source|State|Variable)[,.]? (explain|discussion), link\.?$', re.I)
 
@@ -196,9 +202,14 @@ def parts(year, level):
             else:
                 out[-1]['text'] = (out[-1]['text'] + ' ' + extra).strip()
                 out[-1]['marks'] += MARKS.findall(raw)
-    # A part can be read twice where the scheme repeats its table. Keep the
-    # fuller reading of each — the one that captured the answer lines and their
-    # splits — rather than whichever came last.
+    # The front table gives the question and its tariff; the support notes give
+    # the answer. Neither is complete on its own at Higher Level, so both are
+    # read and the fuller reading of each part wins — which is the notes wherever
+    # they were parsed, because only they carry answer lines.
+    out = out + notes_parts(year, level)
+
+    # A part can also be read twice where the scheme repeats its table. Keep the
+    # fuller reading of each rather than whichever came last.
     best = {}
     for p in out:
         if len(p['text']) <= 12:
@@ -206,8 +217,156 @@ def parts(year, level):
         key = (p['section'], p['question'], p['part'], p['roman'])
         prev = best.get(key)
         if prev is None or len(p['answers']) > len(prev['answers']):
+            # The front table is where the question is printed and the notes are
+            # where the answer is, so the question text always comes from the
+            # table when it has one. Taking the notes' wording gave 2022 Higher
+            # Level ABQ(B) the question "1. Organic expansion / Internal Growth"
+            # — which is the first line of its own answer.
+            if prev is not None and len(prev['text']) > 12 and not prev['answers']:
+                p = {**p, 'text': prev['text'], 'clean': prev.get('clean', False)}
             best[key] = p
     return list(best.values())
+
+
+NOTES_START = re.compile(r'^Support Notes\b', re.I)
+# 2021 puts the question number on the end of the repeated column header —
+# "Question Possible Responses Max Mark 1" — where every other year sets a
+# "Question 1" line of its own.
+NOTES_HEADER = re.compile(r'^Question\s+Possible\s+Responses.*?(\d{1,2})?\s*$', re.I)
+# Section 1 of the support notes numbers its questions and letters its parts on
+# one line: "1 (a) Explain the term indigenous firm." A part with no letter is
+# written "2 Total Quality Management".
+# The head form varies by year: "1 (a) Explain..." in 2023, "3. (i) Explain..."
+# in 2021 — a dot after the number, and romans where the other uses letters.
+NOTES_S1 = re.compile(r'^(\d{1,2})[.)]?\s+(.*)$')
+LEADING = re.compile(r'^\(([a-hA-H]|i{1,3}|iv|vi{0,3})\)\s*')
+ROMANS = {'i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii'}
+
+
+def _markers(text):
+    """Strip leading (a)/(i) markers off a head. Returns (letter, roman, rest)."""
+    letter = roman = None
+    for _ in range(2):
+        m = LEADING.match(text)
+        if not m:
+            break
+        tag = m.group(1).lower()
+        if tag in ROMANS and roman is None:
+            roman = tag
+        elif letter is None:
+            letter = tag
+        else:
+            break
+        text = text[m.end():]
+    return letter, roman, text
+NOTES_PART = re.compile(r'^\(([a-zA-E])\)\s*(?:\((i{1,3}|iv|vi{0,3})\)\s*)?(.*)$')
+
+
+def notes_parts(year, level):
+    """The support notes, where the scheme prints its model answers.
+
+    Higher Level splits its scheme in two: a tariff table at the front carrying
+    the question and its marks, and support notes at the back carrying the
+    answer. Only the notes can be carded from, so this reads them. Ordinary
+    Level prints both together and does not need this, but has the same shape
+    where it does use notes.
+
+    The notes repeat "Question Possible Responses Max. Mark" at the top of every
+    page and number Section 1 as "1 (a) Explain the term indigenous firm.",
+    which is neither of the two markers the front table uses.
+    """
+    path = os.path.join(SCHEMES, f'{year}-{level}.md')
+    with open(path, encoding='utf-8') as fh:
+        lines = fh.read().split('\n')
+    start = next((i for i, l in enumerate(lines) if NOTES_START.match(l.strip())), None)
+    if start is None:
+        return []
+
+    out, section, question, part, roman = [], None, None, None, None
+    for raw in lines[start + 1:]:
+        line = raw.strip()
+        head = NOTES_HEADER.match(line)
+        if head:
+            if head.group(1):
+                question, part, roman = int(head.group(1)), None, None
+            continue
+        if not line or NOISE.match(line):
+            continue
+        if line.startswith('<!-- markbank:'):
+            break
+        m = SECTION_ANY.match(line)
+        if m:
+            section, question, part, roman = int(m.group(1)), None, None, None
+            if section == 2:
+                question = 0
+            continue
+        if section is None:
+            continue
+        m = QHEAD.match(line)
+        if m:
+            question, part, roman = int(m.group(1)), None, None
+            continue
+
+        m = NOTES_S1.match(line) if section == 1 else None
+        if m:
+            n = int(m.group(1))
+            letter, roman_, rest = _markers(m.group(2))
+            # "6 marks" and "€90bn - €40bn" both start with a number and are not
+            # question heads. A head either carries a part letter or is the next
+            # question due and opens with a capital.
+            opens = bool(re.match(r'[A-Z]', rest)) and not re.match(r'marks?\b', rest, re.I)
+            _ = roman_
+            # Ascending rather than strictly consecutive: some heads are a bare
+            # number with only a tariff beside them — "4 ⟨3,2,2,2,1⟩" — and are
+            # not matched here, so insisting on the very next number left every
+            # question after such a gap filed under the last one that did match.
+            m = m if ((n > (question or 0) and (letter or roman_ or opens))
+                      or (n == question and (letter or roman_))) else None
+        if m:
+            question = n
+            part, roman = letter, roman_
+            out.append({'section': section, 'question': question, 'part': part,
+                        'roman': roman, 'text': _clean(rest),
+                        'marks': MARKS.findall(raw), 'answers': [], 'clean': True,
+                        'splits': [t for t in ANGLE.findall(raw) if any(c.isdigit() for c in t)]})
+            continue
+
+        m = NOTES_PART.match(line)
+        if m and question is not None:
+            part = m.group(1).lower()
+            roman = m.group(2)
+            out.append({'section': section, 'question': question, 'part': part,
+                        'roman': roman, 'text': _clean(m.group(3)),
+                        'marks': MARKS.findall(raw), 'answers': [], 'clean': True,
+                        'splits': [t for t in ANGLE.findall(raw) if any(c.isdigit() for c in t)]})
+            continue
+
+        if out and question is not None:
+            extra = _clean(line)
+            if not extra or len(extra) <= 2:
+                # A line holding nothing but a tariff still says what the part
+                # is worth. The question can wrap over several lines before it,
+                # so this is often where a part's marks are printed.
+                if ANGLE.search(raw):
+                    out[-1]['marks'] += MARKS.findall(raw)
+                    out[-1]['splits'].extend(
+                        t for t in ANGLE.findall(raw) if any(c.isdigit() for c in t))
+                continue
+            # The question can wrap before its answer starts. The answer starts
+            # at the first line carrying a tariff, or once the question line has
+            # one of its own.
+            if out[-1]['marks'] or out[-1]['answers']:
+                out[-1]['answers'].append(extra)
+                out[-1]['splits'].extend(
+                    t for t in ANGLE.findall(raw) if any(c.isdigit() for c in t))
+            elif ANGLE.search(raw):
+                out[-1]['answers'].append(extra)
+                out[-1]['marks'] += MARKS.findall(raw)
+                out[-1]['splits'].extend(
+                    t for t in ANGLE.findall(raw) if any(c.isdigit() for c in t))
+            else:
+                out[-1]['text'] = (out[-1]['text'] + ' ' + extra).strip()
+    return [p for p in out if len(p['text']) > 12]
 
 
 def ref(p, year, level):

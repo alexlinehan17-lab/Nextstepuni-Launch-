@@ -5155,6 +5155,21 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC033GLP033EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2021 Ordinary Level — © State Examinations Commission.",
+    id: "bus-2021-ol-s2-q9-c-ii", topicId: "business-5-16", conceptId: "methods-of-sales-promotion",
+    section: "2", questionRef: "2021 OL Section 2 Q9(C)(ii)",
+    questionText: "List three methods of Sales Promotion the Ryan’s could use to compete with the larger chain store",
+    tariffModel: {"kind":"fixed","notation":"4 + 4 + 4"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Competitions offering prizes", marks: 4 },
+    { id: "r-2", kind: "anyN", verbatim: "Loyalty cards", marks: 4 },
+    { id: "r-3", kind: "anyN", verbatim: "Money off vouchers", marks: 4 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2022, level: "ordinary",
     paperFileid: "LC033GLP033EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2022 Ordinary Level — © State Examinations Commission.",
@@ -5188,7 +5203,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2023 Ordinary Level — © State Examinations Commission.",
     id: "bus-2023-ol-s2-q9-a", topicId: "business-0-12", conceptId: "where-business-ideas-come-from",
     section: "2", questionRef: "2023 OL Section 2 Q9(A)",
-    questionText: "Paulette and Louise turned their interests into a business opportunity List two other sources of business ideas for entrepreneurs",
+    questionText: "Two sources: @ each List two other sources of business ideas for entrepreneurs",
     tariffModel: {"kind":"fixed","notation":"5m each"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Suggestions from family/friends", marks: 5 },
@@ -5272,7 +5287,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2024 Ordinary Level — © State Examinations Commission.",
     id: "bus-2024-ol-s2-q9-a-i", topicId: "business-5-14", conceptId: "where-product-ideas-come-from",
     section: "2", questionRef: "2024 OL Section 2 Q9(A)(i)",
-    questionText: "Outline one method of idea generation that a business like Keogh’s might use",
+    questionText: "One method: ( + ) Keogh’s might use",
     tariffModel: {"kind":"fixed","notation":"15m covers (i) and (ii); this part is 10 of it, paid 7 + 3"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Research and Development: A specific R&D department is responsible for coming up with ideas", marks: 10 },
@@ -5327,7 +5342,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Business 2025 Ordinary Level — © State Examinations Commission.",
     id: "bus-2025-ol-s2-q9-d", topicId: "business-6-13", conceptId: "insurance-terms-explained",
     section: "2", questionRef: "2025 OL Section 2 Q9(D)",
-    questionText: "Explain any three of the insurance terms underlined",
+    questionText: "Three Insurance terms: @ each ( + )",
     tariffModel: {"kind":"fixed","notation":"4 + 1 for each of the three"}, totalMarks: 15,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Insurance Premium: The fee paid to the insurance company (insurer) for the insurance cover. The cost of insurance. It can be paid as a once of payment yearly or monthly instalments which usually occur a fee", marks: 5 },

@@ -32,4 +32,10 @@ A.card(2, 9, 'b', topic='business-5-13', concept='what-sets-a-price',
 A.card(2, 9, 'e', topic='business-4-18', concept='merger-versus-takeover',
        use=[[0, 1, 2], [3, 4, 5]], marks=[5, 5], notation='5m (3 + 2) each')
 
+A.card(2, 9, 'c', 'ii', topic='business-5-16', concept='methods-of-sales-promotion',
+       words=17, use=[0, 1, 2], marks=[4, 4, 4], notation='4 + 4 + 4', row_kind='anyN',
+       notes='Any three of the scheme\'s six score. The card shows competitions, loyalty '
+             'cards and money-off vouchers; the scheme also allows special offers, free '
+             'samples and a discount for buying in quantity.')
+
 A.emit()
