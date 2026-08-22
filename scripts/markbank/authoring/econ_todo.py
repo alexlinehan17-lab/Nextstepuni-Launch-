@@ -18,7 +18,8 @@ import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from econ_auto import Paper  # noqa: E402
+from econ_auto import Paper
+from econ_excluded import EXCLUDED  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__)))))
@@ -46,6 +47,7 @@ def main():
 
     P = Paper(year, level, section)
     n = 0
+    skipped = []
     for p in P.parts:
         if len(p['options']) < 2:
             continue
@@ -53,6 +55,12 @@ def main():
         k = key(ref)
         if k and any(c[:4] == k[:4] and (c[4] == k[4] or c[4].startswith(k[4])
                                          or k[4].startswith(c[4])) for c in carded):
+            continue
+        # A part recorded in econ_excluded is a decision, not a gap. Listing it
+        # argues for work already considered and declined, and invites carding a
+        # part the deck deliberately left alone.
+        if ref in EXCLUDED:
+            skipped.append((ref, EXCLUDED[ref]))
             continue
         n += 1
         tar = ('+'.join(map(str, p['steps'])) if p['steps'] else
@@ -73,7 +81,11 @@ def main():
         print(f"    Q: {p['question'][:150]}")
         for o in p['options']:
             print(f"     · {o[:220 if wide else 110]}")
-    print(f'\n{n} uncarded part(s) with listed responses in {year} {level} Section {section}')
+    for ref, why in skipped:
+        print(f'  left alone: {ref} — {why}')
+    print(f'\n{n} uncarded part(s) with listed responses in {year} {level} '
+          f'Section {section}' + (f'; {len(skipped)} deliberately left alone'
+                                  if skipped else ''))
 
 
 if __name__ == '__main__':
