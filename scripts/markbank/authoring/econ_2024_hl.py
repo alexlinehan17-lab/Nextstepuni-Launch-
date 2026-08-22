@@ -426,4 +426,36 @@ P.menu('interest rate increases have on each', 'econ-2024-hl-q14-c-i-debt',
        ref='2024 HL Q14(c)(i) — national debt', claim=1, per=4,
        drop=SCAF2, after='Increased interest payments')
 
+# ── Q15(c)(ii) and Q16(a): obesity and housing ─────────────────────────────
+# The scheme heads the two halves "Economic measure" and "Social measure", and
+# the question asks for one of each, so each half is its own card.
+P.menu('economic measure and one social measure', 'econ-2024-hl-q15-c-ii-economic',
+       'economics-1-3', 'economic-measures-against-obesity',
+       'Explain one ECONOMIC measure which, if taken, could help reduce obesity levels in '
+       'Ireland.',
+       'An economic measure — any one', 'One measure, 6 marks.',
+       ref='2024 HL Q15(c)(ii) — economic', claim=1, per=6,
+       drop=SCAF2 + ('Economic measure',), stop='Social measure')
+
+P.menu('economic measure and one social measure', 'econ-2024-hl-q15-c-ii-social',
+       'economics-1-3', 'social-measures-against-obesity',
+       'Explain one SOCIAL measure which, if taken, could help reduce obesity levels in '
+       'Ireland.',
+       'A social measure — any one', 'One measure, 6 marks.',
+       ref='2024 HL Q15(c)(ii) — social', claim=1, per=6,
+       drop=SCAF2 + ('Economic measure',), after='Social measure')
+
+P.menu('reasons for the increase in the number of homeless people',
+       'econ-2024-hl-q16-a-i', 'economics-1-3', 'why-homelessness-rose-in-ireland',
+       'Outline two reasons for the increase in the number of homeless people in Ireland.',
+       'A reason homelessness rose — any two', 'Two reasons, 6 marks each.',
+       ref='2024 HL Q16(a)(i)', claim=2, per=6, drop=SCAF2)
+
+P.menu('Revitalisation of local communities',
+       'econ-2024-hl-q16-a-ii', 'economics-1-3', 'benefits-of-social-housing-spending',
+       'Discuss two benefits of increasing expenditure on social housing, apart from helping '
+       'to reduce homelessness.',
+       'A benefit — any two', 'Two benefits, 6 marks each.',
+       ref='2024 HL Q16(a)(ii)', claim=2, per=6, drop=SCAF2)
+
 emit(cards + P.cards)
