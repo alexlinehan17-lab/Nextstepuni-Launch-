@@ -3357,6 +3357,137 @@
   "notes": ""
  },
  {
+  "id": "econ-2022-hl-q14-c-ii",
+  "topicId": "economics-3-5",
+  "conceptId": "why-a-gender-pay-gap-persists",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q14(c)(ii)",
+  "questionText": "Explain one reason why a gender pay gap persists in many European countries.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 5",
+   "answer": 1,
+   "ofParts": 7,
+   "perPart": 5
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason the gap persists — any one",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "One reason, 5 marks: 2 for naming it and 3 for explaining it. The scheme lists seven.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Discrimination in the workplace: women and men may not be paid the same wages even though they do the same work due to illegal discrimination in the workplace.",
+      "Lack of enforcement by EU agencies: state agencies do not enforce the existing legislation or may not take legal action against offenders.",
+      "Balancing work and family responsibilities: some women work shorter hours and often part-time to combine family responsibilities and paid work. Career progression can be interrupted by maternity leave.",
+      "‘Glass ceiling’/fewer women in senior and leadership positions: women are underrepresented in most senior positions, in politics and in certain sectors within the economy such as on boards of management.",
+      "Different jobs, different sectors: women and men carry out different jobs and often work in different sectors. In health and social work women make up 80% of workers.",
+      "Undervaluing of women’s work and skills: women’s skills and competencies are often undervalued, especially in occupations where they are in the majority. This is reflected in lower rates of pay.",
+      "Gender role of women / tradition: some people may still consider that a woman’s role in society is to stay in the home and rear children and this may still cause rates to be lower in some societies."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-q15-b-iii",
+  "topicId": "economics-1-2",
+  "conceptId": "using-ped-to-set-an-export-price",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q15(b)(iii)",
+  "questionText": "Explain how a knowledge of price elasticity of demand (PED) might be helpful to Irish exporters who wish to maximise their total revenue in the UK market.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 6",
+   "answer": 1,
+   "ofParts": 3,
+   "perPart": 6
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A use of PED to an exporter — any one",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One explanation, 6 marks.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "A knowledge of Price Elasticity of Demand is useful to exporters as they will know that where the demand for their product is most elastic (with response to changes in the price of their product) they can choose how best to change their prices.",
+      "If the product has a more elastic response to price changes in the foreign market, a lower price will be charged.",
+      "If the product has a less elastic response to price changes in the foreign market, a higher price will be charged."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "econ-2022-hl-q16-b-i",
+  "topicId": "economics-0-2",
+  "conceptId": "why-environmental-sustainability-matters",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q16(b)(i)",
+  "questionText": "Outline the importance of environmental sustainability for the future of our economy.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 7",
+   "answer": 1,
+   "ofParts": 4,
+   "perPart": 7
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A reason it matters — any one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "One reason, 7 marks: 4 for the point and 3 for developing it. The scheme lists four.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "Threat to human life – without mitigating measures environmental damage creates a threat to human life.",
+      "Future generations – the environment is a natural resource and needs to be protected for future generations.",
+      "Standard of living – unless the current trends of environmental damage can be reduced the standard of living of people, now and in the future, will disimprove.",
+      "Production methods – unless immediate changes are made to current environmentally damaging production methods then these methods may be forced to come to an end."
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "econ-2022-hl-sa-q2-b",
   "topicId": "economics-1-1",
   "conceptId": "what-moves-personal-consumption",

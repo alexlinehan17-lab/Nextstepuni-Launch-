@@ -256,4 +256,29 @@ P.menu('impose the new 15% corporation tax rate on all firms', 'econ-2022-hl-q13
        ref='2022 HL Q13(c)(ii) — no', claim=1, per=8,
        drop=SCAFFOLD, after='Against implementation')
 
+# ── further Section B parts ────────────────────────────────────────────────
+P.menu('reason why a gender pay gap persists in many European countries',
+       'econ-2022-hl-q14-c-ii', 'economics-3-5', 'why-a-gender-pay-gap-persists',
+       'Explain one reason why a gender pay gap persists in many European countries.',
+       'A reason the gap persists — any one',
+       'One reason, 5 marks: 2 for naming it and 3 for explaining it. The scheme lists seven.',
+       ref='2022 HL Q14(c)(ii)', claim=1, per=5, drop=SCAFFOLD)
+
+# The question runs on into what the scheme prints as its first response, so
+# that line is dropped and the full wording is given here.
+P.menu('knowledge of price elasticity of demand (PED) might be helpful',
+       'econ-2022-hl-q15-b-iii', 'economics-1-2', 'using-ped-to-set-an-export-price',
+       'Explain how a knowledge of price elasticity of demand (PED) might be helpful to Irish '
+       'exporters who wish to maximise their total revenue in the UK market.',
+       'A use of PED to an exporter — any one', 'One explanation, 6 marks.',
+       ref='2022 HL Q15(b)(iii)', claim=1, per=6,
+       drop=SCAFFOLD + ('exporters who wish to maximise their total revenue',))
+
+P.menu('importance of environmental sustainability for the future of our economy',
+       'econ-2022-hl-q16-b-i', 'economics-0-2', 'why-environmental-sustainability-matters',
+       'Outline the importance of environmental sustainability for the future of our economy.',
+       'A reason it matters — any one', 'One reason, 7 marks: 4 for the point and 3 for '
+       'developing it. The scheme lists four.',
+       ref='2022 HL Q16(b)(i)', claim=1, per=7, drop=SCAFFOLD)
+
 P.emit()
