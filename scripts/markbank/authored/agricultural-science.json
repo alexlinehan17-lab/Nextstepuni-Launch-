@@ -33320,6 +33320,31 @@
   "figureKey": "agricultural-science-2021-OL-paper-p07-i1"
  },
  {
+  "id": "agsci-2022-hl-q16ci",
+  "topicId": "agsci-3-2",
+  "conceptId": "named-grazing-systems",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2022 HL Q16(c)(i)",
+  "questionText": "Describe using a labelled diagram a named grazing system that could have been used to manage the swards in the trial in part (a).",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 for naming one, and 1 each thereafter"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Named grazing system – Paddock (rotational)",
+    "marks": 3
+   }
+  ],
+  "notes": "Block, strip grazing and the spokes-of-a-wheel layout also score. Zero grazing does not."
+ },
+ {
   "id": "agsci-2022-ol-q1a",
   "topicId": "agsci-1-5",
   "conceptId": "identifying-farm-machinery-and-function",

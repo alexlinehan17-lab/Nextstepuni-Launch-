@@ -6855,4 +6855,21 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "correct dumb-bell shape (6) [award 3 marks for drawing that shows overlapping dumb-bell shapes]", marks: 6 },
     ],
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC022ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2024 Higher Level — © State Examinations Commission.",
+    id: "chem-2024-hl-q8-a", topicId: "chem-1-4", conceptId: "geometry-change-during-addition",
+    section: "A", questionRef: "2024 HL Q8(a)",
+    stem: "Study the reaction scheme below and answer the questions that follow. B A C2H6 C2H5Cl C2H4 Cl2 X elimination Y polymerisation PVC",
+    questionText: "How does the geometry around the carbon atoms change during reaction A?",
+    tariffModel: {"kind":"fixed","notation":"3 for the shape it starts as, 2 for what it becomes"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "planar", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "120°", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "to tetrahedral", marks: 1 },
+    { id: "r-4", kind: "point", verbatim: "109°", marks: 1 },
+    ],
+  } as SecCard,
 ];

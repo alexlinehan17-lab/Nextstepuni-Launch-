@@ -22,4 +22,14 @@ A.card(5, 'b', 'vi', topic='chem-1-2', concept='shape-of-a-p-orbital',
        source='pdf', use=[0], marks=[6], first_sentence=True,
        notes='Three of the six are given for a drawing showing the two lobes overlapping.')
 
+A.card(8, 'a', topic='chem-1-4', concept='geometry-change-during-addition',
+       source='pdf', first_sentence=True,
+       from_runs=[((8, 'a', None), 0, slice(12, 13)),
+                  ((8, 'a', None), 3, slice(0, 1)),
+                  ((8, 'a', None), 3, slice(2, 4)),
+                  ((8, 'a', None), 4, slice(0, 1))],
+       marks=[2, 1, 1, 1],
+       notation='3 for the shape it starts as, 2 for what it becomes',
+       notes='The scheme accepts trigonal or triangular for planar.')
+
 A.emit()

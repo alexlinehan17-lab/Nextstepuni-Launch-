@@ -1,10 +1,10 @@
 {
  "biology": {
-  "higher": 595,
-  "ordinary": 614
+  "higher": 596,
+  "ordinary": 615
  },
  "chemistry": {
-  "higher": 442,
+  "higher": 443,
   "ordinary": 334
  },
  "physics": {
@@ -12,7 +12,7 @@
   "ordinary": 440
  },
  "agricultural-science": {
-  "higher": 430,
+  "higher": 431,
   "ordinary": 424
  },
  "business": {

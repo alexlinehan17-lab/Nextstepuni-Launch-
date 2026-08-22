@@ -29448,6 +29448,50 @@
   "notes": "Three of the six are given for a drawing showing the two lobes overlapping."
  },
  {
+  "id": "chem-2024-hl-q8-a",
+  "topicId": "chem-1-4",
+  "conceptId": "geometry-change-during-addition",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2024 HL Q8(a)",
+  "questionText": "How does the geometry around the carbon atoms change during reaction A?",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 for the shape it starts as, 2 for what it becomes"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "planar",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "120°",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "to tetrahedral",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "109°",
+    "marks": 1
+   }
+  ],
+  "stem": "Study the reaction scheme below and answer the questions that follow. B A C2H6 C2H5Cl C2H4 Cl2 X elimination Y polymerisation PVC",
+  "notes": "The scheme accepts trigonal or triangular for planar."
+ },
+ {
   "id": "chem-2024-ol-q5-b-i",
   "topicId": "chem-4-3",
   "conceptId": "naming-a-greenhouse-gas",

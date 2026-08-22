@@ -6876,6 +6876,19 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
+    id: "agsci-2022-hl-q16ci", topicId: "agsci-3-2", conceptId: "named-grazing-systems",
+    section: "B", questionRef: "2022 HL Q16(c)(i)",
+    questionText: "Describe using a labelled diagram a named grazing system that could have been used to manage the swards in the trial in part (a).",
+    tariffModel: {"kind":"fixed","notation":"3 for naming one, and 1 each thereafter"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Named grazing system – Paddock (rotational)", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2023, level: "higher",
     paperFileid: "LC024ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",

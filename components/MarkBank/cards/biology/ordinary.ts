@@ -9327,6 +9327,20 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2022-ol-q14-c-iii", topicId: "bio-1-3", conceptId: "which-cell-is-turgid",
+    section: "B", questionRef: "2022 OL Q14(c)(iii)",
+    stem: "Turgor is also important for plants. The pictures, A and B, show two plants cells. A B Nucleus X Cell membrane",
+    questionText: "Which cell, A or B, is turgid?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Cell A", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2023, level: "ordinary",
     paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",

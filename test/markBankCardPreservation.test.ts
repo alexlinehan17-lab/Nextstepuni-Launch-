@@ -29,13 +29,13 @@ import { CARDS as ECON_HIGHER } from '../components/MarkBank/cards/economics/hig
 import { CARDS as ECON_ORDINARY } from '../components/MarkBank/cards/economics/ordinary';
 
 const decks = [
-  ['biology:higher', BIO_HIGHER, 595, '75dbbfe71505e4c7830b9d1691cd994fa3534dd5a38fbdc92df3aebc4b98f343'],
-  ['biology:ordinary', BIO_ORDINARY, 614, '0b321e5fea8e902a7a590ab141e1df0ae44fe82b8875d2ca7aaf0a33f89e0f47'],
-  ['chemistry:higher', CHEM_HIGHER, 442, '0d4d7d1d3507f1ec87d9ba100bf172199a2e65dc37e837a093a6a52895f31196'],
+  ['biology:higher', BIO_HIGHER, 596, '670cf324f232ae79e3b649c0d4d783f0b41e3b4714cbae101f258150310b9795'],
+  ['biology:ordinary', BIO_ORDINARY, 615, '807385b2c17207ef063d59471e5f6eb832119e49fb941e5eb6b08935c1cdedba'],
+  ['chemistry:higher', CHEM_HIGHER, 443, '713b7ef8560702e78ed246adca8800057ca9eafd6e4e45ed583404be169709ae'],
   ['chemistry:ordinary', CHEM_ORDINARY, 334, 'd62186f4410f0516f01d6a902e07bfe8544d770095c8abd7e4ffdf9f24ab6f2c'],
   ['physics:higher', PHYS_HIGHER, 427, 'fc3b13256e2df0d09cf2d2be265d392b532777285d398a6e60e0cb8b0889c229'],
   ['physics:ordinary', PHYS_ORDINARY, 440, '8bf3256d22c99b71448864050236aa926188e6244601a2fabdd9c539adc76664'],
-  ['agricultural-science:higher', AGSCI_HIGHER, 430, '86b9ee86f393d2b649468cf3c422e55e80ca8b9c5efbf2440d84ed6385e4492e'],
+  ['agricultural-science:higher', AGSCI_HIGHER, 431, 'c2e321cb19421d130ecd89bf6f248ecb974fea94f1c54c69387800a8edf1c06d'],
   ['agricultural-science:ordinary', AGSCI_ORDINARY, 424, '8601d3986cb259f847742099ddbfa63b00c662cea1680ba1ffe733c8d7b52a5b'],
   ['business:higher', BUSINESS_HIGHER, 272, 'a61655818cee2ce61307eb08fe6dad282193791674b4e5e8a893e203b64af976'],
   ['business:ordinary', BUSINESS_ORDINARY, 334, '6d62fbc00d4b0f4c411cd23c17d76ddaa63cb066325bb2974c881c8b81073b18'],
@@ -57,6 +57,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(5_269);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(5_273);
   });
 });

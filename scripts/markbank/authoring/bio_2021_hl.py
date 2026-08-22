@@ -54,4 +54,12 @@ A.card(10, 'b', 'v', topic='bio-3-3', concept='why-urban-and-rural-plates-differ
 A.card(12, 'b', 'i', topic='bio-3-2', concept='genotype-heterozygous-for-two-traits',
        source='pdf', from_run=((12, 'b', 'i'), 0, slice(10, 11)), marks=[3])
 
+A.card(14, 'c', 'i', topic='bio-2-4', concept='which-leaf-transpires-least',
+       source='pdf',
+       from_runs=[((14, 'c', 'i'), 0, slice(12, 13)),
+                  ((14, 'c', 'i'), 1, slice(3, None))],
+       marks=[3, 3],
+       notes='The three plants are shown in the paper with their stomata counted, and '
+             'the scheme wants the one with fewest.')
+
 A.emit()

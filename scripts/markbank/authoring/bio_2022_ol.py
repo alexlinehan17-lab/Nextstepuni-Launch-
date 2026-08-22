@@ -45,4 +45,9 @@ A.card(8, 'b', 'iii', topic='bio-u1', concept='percentage-frequency-from-a-quadr
                   ((8, 'b', 'iii'), 0, slice(19, 23))],
        marks=[3, 3])
 
+A.card(14, 'c', 'iii', topic='bio-1-3', concept='which-cell-is-turgid',
+       source='pdf', from_run=((14, 'c', 'iii'), 0, slice(4, 6)), marks=[3],
+       notes='A and B are the two plant cells drawn in the paper, one full and firm '
+             'against its wall, the other with the membrane pulled away from it.')
+
 A.emit()
