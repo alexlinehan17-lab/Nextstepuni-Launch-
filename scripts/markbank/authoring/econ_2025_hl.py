@@ -397,4 +397,11 @@ P.menu('Public infrastructure refers to essential facilities', 'econ-2025-hl-q15
        'Explanation and example, 6 marks between them.',
        ref='2025 HL Q15(c)(i)', claim=2, per=3, drop=SCAFFOLD)
 
+P.menu('Growth in corporate profits', 'econ-2025-hl-q12-b-i',
+       'economics-3-1', 'what-changed-in-irish-tax-revenue',
+       'Identify the MOST significant change which occurred in the composition of Irish tax '
+       'revenue from 2017 to 2023, and outline one reason for it.',
+       'A reason for the change — any one', 'One reason, 6 marks.',
+       ref='2025 HL Q12(b)(i)', claim=1, per=6, drop=SCAFFOLD)
+
 P.emit()

@@ -479,4 +479,20 @@ P.menu('Capital expenditure is spending on items not used up', 'econ-2024-hl-q16
        'The explanation — this one', 'The explanation carries 4 with 2 for the example.',
        ref='2024 HL Q16(c)(i)', claim=1, per=4, drop=SCAF2)
 
+# The scheme heads the halves "Social benefit:", and the question asks for one
+# cost and one benefit, so each is its own card.
+P.menu('social cost and one social benefit of the proposed DART', 'econ-2024-hl-q16-c-ii-cost',
+       'economics-2-2', 'social-costs-of-the-dart-project',
+       'Outline one social COST of the proposed DART+ project.',
+       'A social cost — any one', 'One cost, 5 marks; a benefit is worth 5 as well.',
+       ref='2024 HL Q16(c)(ii) — cost', claim=1, per=5,
+       drop=SCAF2, stop='Social benefit:')
+
+P.menu('social cost and one social benefit of the proposed DART', 'econ-2024-hl-q16-c-ii-benefit',
+       'economics-2-2', 'social-benefits-of-the-dart-project',
+       'Outline one social BENEFIT of the proposed DART+ project.',
+       'A social benefit — any one', 'One benefit, 5 marks; a cost is worth 5 as well.',
+       ref='2024 HL Q16(c)(ii) — benefit', claim=1, per=5,
+       drop=SCAF2 + ('Social benefit:',), after='Social benefit:')
+
 emit(cards + P.cards)

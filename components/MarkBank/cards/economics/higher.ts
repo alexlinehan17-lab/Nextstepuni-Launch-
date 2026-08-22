@@ -2081,6 +2081,32 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC034ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2024 Higher Level — © State Examinations Commission.",
+    id: "econ-2024-hl-q16-c-ii-cost", topicId: "economics-2-2", conceptId: "social-costs-of-the-dart-project",
+    section: "B", questionRef: "2024 HL Q16(c)(ii) — cost",
+    questionText: "Outline one social COST of the proposed DART+ project.",
+    tariffModel: {"kind":"bestNofParts","notation":"1 @ 5","answer":1,"ofParts":2,"perPart":5}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A social cost — any one", marks: 5, contextNote: "One cost, 5 marks; a benefit is worth 5 as well.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Disruption to local activity – during the construction phase disruption will occur possibly leading to a loss of business; greater inconvenience for residents; damage to property.","Loss of natural environment – the routeways may be at the cost of losing some of the natural environment resulting is less access for social activities."]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2024 Higher Level — © State Examinations Commission.",
+    id: "econ-2024-hl-q16-c-ii-benefit", topicId: "economics-2-2", conceptId: "social-benefits-of-the-dart-project",
+    section: "B", questionRef: "2024 HL Q16(c)(ii) — benefit",
+    questionText: "Outline one social BENEFIT of the proposed DART+ project.",
+    tariffModel: {"kind":"bestNofParts","notation":"1 @ 5","answer":1,"ofParts":6,"perPart":5}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A social benefit — any one", marks: 5, contextNote: "One benefit, 5 marks; a cost is worth 5 as well.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Disruption to local activity – during the construction phase disruption will occur possibly leading to a loss of business; greater inconvenience for residents; damage to property.","Loss of natural environment – the routeways may be at the cost of losing some of the natural environment resulting is less access for social activities.","Reduced emissions – once the DART+ is completed more people should be using the service and having more people using public transport and not private cars is much better for the environment. These new DART+ should also be the most environmentally friendly.","Reduced congestion – once the construction phase is over, the DART+ should result in less traffic congestion which benefits people as they will spend less time every day/week commuting.","Reduced health care costs – less emissions should result in a healthier population and this will result in lower health care costs into future.","Improved economic activity – following completion more people may shop/reside in those areas serviced by DART+. This may boost activity in the area – boosting employment and help re-generate neighbourhoods."]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2024 Higher Level — © State Examinations Commission.",
     id: "econ-2024-hl-sa-q2-b", topicId: "economics-3-2", conceptId: "why-full-employment-is-an-aim",
     section: "A", questionRef: "2024 HL Section A Q2(b)",
     stem: "Ireland’s seasonally adjusted unemployment rate for October 2023 was 4.8%, which may be regarded as full employment.",
@@ -2795,6 +2821,19 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"bestNofParts","notation":"2 @ 3","answer":2,"ofParts":2,"perPart":3}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The explanation and an example — both of these", marks: 6, contextNote: "Explanation and example, 6 marks between them.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Public Infrastructure: Public infrastructure refers to essential facilities and services which support economic activity / improve the lives of citizens / productive capacity. It is usually funded and maintained by the government but may also involve public-private partnerships (PPPs) (where private companies collaborate with the government to finance, build, and operate infrastructure).","Any relevant example: Ireland’s public water supply system, managed is by Irish Water, a semi-state body. It provides essential services to households and businesses by ensuring access to clean water, which supports public health and economic activity. Public hospitals like Mayo University Hospital are part of Ireland’s publicly funded healthcare system. Such hospitals provide essential medical services, support the health of the population and ensure the country’s workforce remains productive. Garda stations are funded and operated by the Irish government. They are critical infrastructure supporting law enforcement. They ensure public safety, which is vital for a stable / functioning economy. Irish Rail’s rail network is owned by the state and provides vital public transport. It reduces road congestion and supports economic activity by connecting cities and rural areas across Ireland."]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2025 Higher Level — © State Examinations Commission.",
+    id: "econ-2025-hl-q12-b-i", topicId: "economics-3-1", conceptId: "what-changed-in-irish-tax-revenue",
+    section: "B", questionRef: "2025 HL Q12(b)(i)",
+    questionText: "Identify the MOST significant change which occurred in the composition of Irish tax revenue from 2017 to 2023, and outline one reason for it.",
+    tariffModel: {"kind":"bestNofParts","notation":"1 @ 6","answer":1,"ofParts":2,"perPart":6}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason for the change — any one", marks: 6, contextNote: "One reason, 6 marks.", openList: true, group: {"claimMax":1,"perOption":6,"options":["Growth in corporate profits / Foreign Direct Investment (FDI) – Ireland continues to attract large multinational companies, especially from the US, in industries such as ICT, pharmaceuticals, and financial services. The long-term expansion of these sectors has led to substantial growth in corporate profits, which has increased their tax contributions. re n ’s low corporate tax rate / Profit-shifting by MNCs – Ireland’s corporate tax rate remained at 12.5% for the timeframe of the chart. This was one of the lowest rates in Europe and helped to attract large multinational companies to establish their European headquarters here / strategically book their profits in Ireland rather in other countries. re n ’s now e e De e o ment o D / rowth o nte ectu ro erty rights – to attract more high-value industries, Ireland introduced the Knowledge Development Box (KDB) in 2016. It offered a a reduced corporate tax rate of 6.25% on profits generated from qualifying IP, such as patented inventions and copyrighted software. Over time, this scheme has grown in popularity and has increased Corporation Tax revenue.","Impact of the Covid pandemic on key sectors – the pandemic directly boosted the profits of ICT and pharmaceutical companies, which already had a strong presence in Ireland. Medical advancements, vaccine production, and the increased reliance on technology for remote working led to a short-term but sharp rise in revenues, which increased Corporation Tax revenue."]} },
     ],
   } as SecCard,
   {
