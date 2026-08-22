@@ -1,21 +1,43 @@
 # Mark Bank coverage — where it stands
 
-Measured with `python3 scripts/markbank/authoring/coverage.py`. Counts *parts of
+Measured with `python3 scripts/markbank/authoring/partcheck.py`. Counts *parts of
 papers*, not topics: a subject is finished when every part of every 2021–2025
 paper it sets is carded.
 
-| Subject | Scheme parts | Covered | Open | |
-|---|---:|---:|---:|---|
-| Agricultural Science | 929 | 817 | 112 | 88% |
-| Biology | 1121 | 940 | 181 | 84% |
-| Business | 253 | 141 | 112 | 56% |
-| Chemistry | 630 | 535 | 95 | 85% |
-| Economics | 124 | 48 | 76 | 39% |
-| Home Economics | 189 | 82 | 107 | 44% |
-| Physics | 1014 | 732 | 282 | 73% |
-| **Total** | **4260** | **3295** | **965** | |
+Three tools, and which one is right for a subject:
 
-Bank total: 5,212 cards.
+| Tool | Use it for | How it decides |
+|---|---|---|
+| `partcheck.py` | the five subjects whose papers parse | question text, with the citation as a fallback |
+| `bus_todo.py` | Business | parts read from the scheme's own table by `bus_parts.py` |
+| `econ_todo.py` | Economics | parts reconstructed from the answer booklet by `econ_auto.py` |
+
+`partcheck` names the other two rather than printing a number it cannot stand
+over. `coverage.py` is the older reference-only test and `partcheck` still calls
+it, but do not read its output on its own — it counted a part as carded whenever
+any card named its question.
+
+| Subject | Parts | Covered | Open | |
+|---|---:|---:|---:|---|
+| Agricultural Science | 929 | 827 | 102 | 90% |
+| Biology | 1121 | 947 | 174 | 85% |
+| Chemistry | 630 | 535 | 95 | 85% |
+| Home Economics | 179 | 170 | 9 | 95% |
+| Physics | 999 | 735 | 264 | 74% |
+| Business | — | — | 71 | `bus_todo.py` |
+| Economics | — | — | 0 | `econ_todo.py` |
+
+Bank total: 5,230 cards.
+
+**Home Economics is finished bar three questions.** Of the nine `partcheck`
+reports open, six are carded already under a reference it reads only partly. The
+three real ones are the fabric-care-symbol questions of 2021, 2022 and 2023
+Ordinary Level — the scheme gives the answers ("Hand wash only", "Do not
+bleach", "drip dry") but the question is a row of symbols, and there is no
+figure catalogue for that subject.
+
+**Business is measured by `bus_todo`, not here.** `partcheck` pairs only 187 of
+its parts and cannot measure 66 of those, because the paper is an answerbook.
 
 ## The number moved twice, downward, and both moves were corrections
 
@@ -94,3 +116,41 @@ Economics, Home Economics and Business read low above because their cards cite
 references in shapes `coverage.py` reads only partly — Economics was closed to
 zero gaps by `econ_todo.py`, which is the authority for that subject. Treat the
 four science subjects' figures as the real ones.
+
+## Authoring Business
+
+Business had no script path until now — all 584 of its cards were hand written —
+because `lib.Author` takes question text from the paper and Business prints its
+paper as an answerbook the block parser cannot follow.
+
+`bus_lib.Author` takes the question *and* the marking points from the scheme's
+own table, which is a published SEC document, so a card built this way is still
+lifted rather than written. Every such card records that in its
+`schemeCitation`.
+
+```python
+A = Author(2023, 'ol')
+A.card(2, 9, 'b', topic='business-5-15', concept='desk-and-field-research',
+       extend=1, use=[[1, 2, 3, 4], [7, 8, 9, 10, 11, 12]], marks=[8, 7],
+       notation='8m (3 + 3 + 2), 7m (3 + 2 + 2)')
+```
+
+- `use` indexes the answer lines the scheme printed under the part. A list means
+  one marking point that wrapped over several lines. Indexes are never
+  reindexed by `extend`, so adding one cannot move which lines a card quotes.
+- `extend=n` says the question itself wrapped past its own line and the first
+  `n` answer lines finish it.
+- `marks` must be the split the scheme prints beside each point. These are not
+  the even splits a reader would guess: 2024 and 2025 pay 7 + 3 for the first
+  point and 4 + 1 for the second, so a fifteen-mark part is ten and five.
+- `shared_tariff=True` where one printed tariff covers a part and its siblings;
+  it requires a `notation` saying what the figure covers.
+
+Only Ordinary Level works this way. The Higher Level tariff table prints the
+question with no answer under it — those live in separate support notes, which
+nothing reads yet. That is most of the 71 Business parts still open.
+
+A marking point whose lines are not contiguous in the scheme cannot be carded:
+the build runs its own provenance gate on the verbatim and will drop it. 2025
+Ordinary Level Q9(E) is left uncarded for exactly this reason, with a note in
+the script.
