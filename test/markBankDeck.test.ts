@@ -23,7 +23,7 @@ import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 // One implementation of the provenance comparison, shared with build-deck.mjs —
 // two copies drifted once and reported four correct cards as untraceable.
-import { normalise, comparableScheme } from '../scripts/markbank/schemeText.mjs';
+import { comparableScheme, claimMatches } from '../scripts/markbank/schemeText.mjs';
 import { questionStandsAlone } from '../scripts/markbank/questionText.mjs';
 import { createHash } from 'node:crypto';
 
@@ -83,8 +83,10 @@ const ROOT = resolve(__dirname, '..');
  * SEC PDFs extract formulae as plain ASCII — "H2SO4" — while an author writing
  * the same answer out is liable to typeset it properly as "H₂SO₄". Without this
  * the two normalise to "h2so4" and "hso", and a correct card reads as untraceable.
+ *
+ * claimMatches() is the whole comparison, imported rather than rebuilt here: it
+ * also compares around the "tt" an SEC font prints as a single t ("pipete").
  */
-const tight = (x: string) => normalise(x);
 const comparable = (text: string) => comparableScheme(text);
 
 const schemeFor = (card: { year: number; level: string; subjectId: string }) =>
@@ -144,7 +146,7 @@ describe('every card traces to the marking scheme on disk', () => {
           // Rows read "Label — answer"; the answer is what the scheme prints.
           : [row.verbatim.split(/\s[—-]\s/).pop() ?? row.verbatim];
         for (const claim of claims) {
-          if (!scheme.includes(tight(claim))) bad.push(`${card.questionRef}: "${claim}"`);
+          if (!claimMatches(scheme, claim)) bad.push(`${card.questionRef}: "${claim}"`);
         }
       }
     }

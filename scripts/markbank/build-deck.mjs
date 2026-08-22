@@ -25,7 +25,7 @@ import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { resolvePaperFileid } from './paperIndex.mjs';
-import { normalise, comparableScheme } from './schemeText.mjs';
+import { normalise, comparableScheme, claimMatches } from './schemeText.mjs';
 import { optionCapFor, MAX_LONG_OPTION_ROWS } from './optionCap.mjs';
 import { isContentFreeRow } from './contentFree.mjs';
 import { questionStandsAlone } from './questionText.mjs';
@@ -417,7 +417,7 @@ for (const c of cards) {
   for (const r of c.rows) {
     const claims = r.kind === 'anyN' && r.group ? r.group.options : [String(r.verbatim).split(/\s[—-]\s/).pop()];
     for (const claim of claims) {
-      if (!scheme.includes(normalise(claim))) untraceable.push(claim);
+      if (!claimMatches(scheme, claim)) untraceable.push(claim);
     }
   }
   if (untraceable.length) {

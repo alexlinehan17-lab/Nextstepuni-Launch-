@@ -4704,11 +4704,12 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Kc = [CH3OH] / [CO][H2]²",
+    "verbatim": "[CH3OH] / [CO][H2]²",
     "marks": 6,
-    "contextNote": "Square brackets essential."
+    "contextNote": "This is the expression for Kc, which the question names. The scheme sets it as a fraction, [CH3OH] over [CO][H2]², so the solidus here is a division line. Square brackets essential."
    }
-  ]
+  ],
+  "notes": "The row led with \"Kc = \", which the scheme does not print beside the expression — it prints the fraction alone. The question already names Kc, so the row carries the expression."
  },
  {
   "id": "chem-2022-hl-q7-b-ii",
@@ -5306,12 +5307,12 @@
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "Mr = 4.85 / 2.43 = 2.00 = 2",
+    "verbatim": "4.85 / 2.43 = 2.00 = 2",
     "marks": 3,
-    "contextNote": "If final answer is not a whole number (–1)."
+    "contextNote": "Mr = mass ÷ moles, so 4.85 g over the 2.43 moles found at the previous step. If the final answer is not a whole number, –1."
    }
   ],
-  "notes": "Carded because the scheme awards a named formula/substitution mark, a stated intermediate value with its unit, and a final answer."
+  "notes": "Carded because the scheme awards a named formula/substitution mark, a stated intermediate value with its unit, and a final answer. The last row led with \"Mr = \"; the scheme sets the division as a fraction and prints no label beside it, so the label moved to the row note."
  },
  {
   "id": "chem-2022-hl-q10-b-def",
@@ -15033,31 +15034,21 @@
   "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
-    "kind": "allOf",
-    "verbatim": "sublevel: 2p // (Ne has) 3 // can be > 2 e– (3) orbital: e.g. 2px",
-    "marks": 6,
-    "route": "a",
-    "contextNote": "3 marks for the sublevel element, 3 for the orbital element."
+    "id": "r-sublevel",
+    "kind": "point",
+    "marks": 3,
+    "verbatim": "sublevel: 2p // (Ne has) 3 // can be > 2 e–",
+    "contextNote": "The // separates three mutually exclusive ways of answering. Whichever you take for the sublevel, the orbital answer must be the matching one."
    },
    {
-    "id": "r-2",
-    "kind": "allOf",
-    "verbatim": "sublevel: (Ne has) 3; orbital: (Ne has) 5",
-    "marks": 6,
-    "route": "b",
-    "contextNote": "3 marks for the sublevel element, 3 for the orbital element."
-   },
-   {
-    "id": "r-3",
-    "kind": "allOf",
-    "verbatim": "sublevel: can be > 2 e–; orbital: = 2 e–",
-    "marks": 6,
-    "route": "c",
-    "contextNote": "3 marks for the sublevel element, 3 for the orbital element."
+    "id": "r-orbital",
+    "kind": "point",
+    "marks": 3,
+    "verbatim": "orbital: e.g. 2px // (Ne has) 5 // = 2 e–",
+    "contextNote": "Must match the sublevel answer: 2p with 2px, 3 with 5, \"can be > 2 e–\" with \"= 2 e–\"."
    }
   ],
-  "notes": "The scheme prints 'sublevel: 2p // (Ne has) 3 // can be > 2 e–' (3) and 'orbital: e.g. 2px // (Ne has) 5 // = 2 e–' (3). The // makes the three ways of distinguishing mutually exclusive, so each route pairs the matching sublevel and orbital statements and claims the full 6 marks."
+  "notes": "The scheme prints two lines, \"sublevel: 2p // (Ne has) 3 // can be > 2 e–\" (3) and \"orbital: e.g. 2px // (Ne has) 5 // = 2 e–\" (3). The card previously carried three routes, each PAIRING one branch of the first line with the matching branch of the second -- a pairing no line of the scheme prints, so two of the three could not be traced. One row per printed line instead, with the matching rule on the row."
  },
  {
   "id": "chem-2024-hl-q5-b-iv",
@@ -15334,12 +15325,12 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "[H2] [CO2] over [H2O][CO]",
+    "verbatim": "[H2] [CO2] / [H2O][CO]",
     "marks": 6,
     "contextNote": "The scheme prints this as a fraction with [H2] [CO2] above the line and [H2O][CO] below it. Award 3 marks if round brackets are used."
    }
   ],
-  "notes": ""
+  "notes": "The scheme sets this as a fraction, [H2] [CO2] above the line and [H2O][CO] below, with the (6) printed between them in the marks column. Written with a solidus, which is how a student writes a Kc expression on the page."
  },
  {
   "id": "chem-2024-hl-q7-a-iii",
@@ -20280,12 +20271,12 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Kc = [NO]2[Br2] / [NOBr]2",
+    "verbatim": "[NO]2[Br2] / [NOBr]2",
     "marks": 6,
-    "contextNote": "The scheme prints this as a fraction, [NO]2[Br2] over [NOBr]2 — here the solidus is a division line, not an alternative. [award 3 marks if round brackets are used]"
+    "contextNote": "This is the expression for Kc, which the question names. The scheme sets it as a fraction, [NO]2[Br2] over [NOBr]2, so the solidus here is a division line, not an alternative. [award 3 marks if round brackets are used]"
    }
   ],
-  "notes": "Q9(b)(i), (ii) and (iv) skipped: the scheme gives only worked arithmetic (Mr = 110, 55/110 = 0.5, 0.5 × 78%, and the substituted Kc fraction), which a student cannot self-mark as discrete answers; the Kc substitution is also a mangled fraction in the source extraction."
+  "notes": "The row led with \"Kc = \", which the scheme does not print beside the expression."
  },
  {
   "id": "chem-2025-hl-q9-c-i",
@@ -23136,13 +23127,11 @@
    {
     "id": "r-1",
     "kind": "alt",
-    "verbatim": "equal number of protons and electrons",
-    "accepts": [
-     "same number of protons and electrons"
-    ],
+    "verbatim": "equal / same number of protons and electrons",
     "marks": 6
    }
-  ]
+  ],
+  "notes": "The scheme prints \"equal / same number of protons and electrons (6)\" -- one point with the two openings as alternatives. Carried as the scheme prints it rather than as one opening with the other in accepts."
  },
  {
   "id": "chem-2025-ol-q5-c",

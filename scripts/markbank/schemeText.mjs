@@ -80,8 +80,22 @@ const PAGE_MARKER = /^##\s*Page\s*\d+\s*$/gm;
  * reducing a correct answer to the empty string. Folding maps a character to the
  * digit it already means; it does not loosen what counts as a match.
  */
+/**
+ * Ligature glyphs an SEC font encodes with no sensible Unicode mapping.
+ *
+ * The same map markbank_text.py folds on extraction, applied at comparison time
+ * as well, because two scheme files converted before that fold existed still
+ * carry the raw glyphs: Physics 2025 HL prints "paƩern" for "pattern" sixteen
+ * times, and the card quoting "electric field pattern" could not be traced.
+ * Folding here rather than rewriting the converted schemes keeps the extraction
+ * output exactly as the extractor produced it, and a claim can never contain
+ * one of these, so folding both sides changes nothing else.
+ */
+const LIGATURES = { 'Ɵ': 'ti', 'Ŧ': 'ti', 'Ʃ': 'tt', 'ﬀ': 'ff', 'ﬁ': 'fi', 'ﬂ': 'fl', 'ﬃ': 'ffi', 'ﬄ': 'ffl', 'ﬅ': 'st', 'ﬆ': 'st' };
+
 const SUP = { '⁰': '0', '¹': '1', '²': '2', '³': '3', '⁴': '4', '⁵': '5', '⁶': '6', '⁷': '7', '⁸': '8', '⁹': '9' };
 export const foldDigits = (t) => t
+  .replace(/[ƟŦƩﬀﬁﬂﬃﬄﬅﬆ]/g, (c) => LIGATURES[c] ?? c)
   .replace(/[₀-₉]/g, (c) => String(c.charCodeAt(0) - 0x2080))
   .replace(/[⁰¹²³⁴-⁹]/g, (c) => SUP[c] ?? c)
   // Mathematical Alphanumeric Symbols, the whole block. The SEC typesets
@@ -147,6 +161,38 @@ export const normalise = (t) =>
  * to any form, so no wording the SEC did not print can pass — the guard only
  * stops rejecting the SEC's own.
  */
+/**
+ * The double t an SEC font prints once.
+ *
+ * The 2024 Ordinary Chemistry scheme embeds a font whose "tt" ligature maps to a
+ * single t, so it reads "pipete", "atraction", "leters", "writen". Unlike the
+ * ligature glyphs above there is nothing in the text to say which t should be
+ * two, so it cannot be repaired — only compared around, by collapsing tt on BOTH
+ * sides. Restricted to tt because tt is what the evidence shows; collapsing every
+ * doubled letter would loosen matching far past the defect.
+ */
+const collapseTT = (t) => t.replace(/tt/g, 't');
+
+/** The last form comparableScheme() emits: the whole scheme with tt collapsed. */
+const collapsedCache = new Map();
+
+/**
+ * Does this marking point appear in this scheme?
+ *
+ * Imported by the build and by test/markBankDeck.test.ts so the shipped deck is
+ * re-checked by the rule that admitted it.
+ */
+export const claimMatches = (scheme, claim) => {
+  const c = normalise(claim);
+  if (scheme.includes(c)) return true;
+  let collapsed = collapsedCache.get(scheme);
+  if (collapsed === undefined) {
+    collapsed = collapseTT(scheme);
+    collapsedCache.set(scheme, collapsed);
+  }
+  return collapsed.includes(collapseTT(c));
+};
+
 export const comparableScheme = (raw) => {
   const lines = raw.replace(MARKS_CELL, ' ').replace(PAGE_MARKER, ' ')
     .split('\n').filter((l) => !MARKS_ONLY.test(l) && !LABEL_ONLY.test(l));

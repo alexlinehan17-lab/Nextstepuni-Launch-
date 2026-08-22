@@ -11,120 +11,128 @@ so every subject now has every section.
   2022 HL  27 cards   2022 OL  25 cards
   2021 HL  27 cards   2021 OL  26 cards
 
-Bank total 4544. Home Economics: 542 cards built, higher deck 282, ordinary 260.
-Held 27.
+Home Economics builds **569 cards and drops 0** — higher 296, ordinary 273.
+Bank total 4684.
 
 ## NEXT ACTION
 
-Home Economics now builds **553 cards and drops 0**. Held is down to 21, and
-every one of those is blocked on something outside the card model:
+Held is down to **6**, and every one is blocked on something outside the card
+model. (It was 27; the rest were recovered by adding the exam papers from Paper
+Trail, extracting and inspecting their figures, and re-reading the schemes.)
 
-**13 need a figure from the exam paper** (outfit photographs, a kitchen floor
-plan, a bathroom photograph). Blocked on missing source material: the repo has
-Home Economics MARKING SCHEMES only, no exam-paper PDFs, and
-`public/exam-figures/home-economics-s-and-s/` holds 15 charts and care symbols,
-none of which are these. To ship them someone must add the HE exam papers
-(2021-2025, HL and OL), then `extract-figures.py`, inspect each image, write
-verified alt text into `components/MarkBank/figures.json`, and attach
-`figureKey`. The alt text has to be written by something that actually looked at
-the image -- the build refuses a figure that has not been inspected.
+All 6 are strands the SEC prices and then prints no marking points for.
+Shipping them means inventing the detail the examiner declined to print, which
+is what the provenance rule exists to prevent. These will not be fixed.
 
-**5 have no marking points to ship.** The scheme prices a strand and then prints
-nothing for it. Shipping these means inventing the detail the examiner declined
-to print, which the provenance rule exists to prevent. These will not be fixed.
+The figure-dependent ones are done: papers came from Paper Trail via
+`fetch-paper.mjs`, figures out through `extract-figures.py` /
+`crop-question-art.py`, each image inspected, and the verified alt text bound
+into `components/MarkBank/figures.json` by `bind-figures.mjs`. The build still
+refuses a figure nothing has looked at, so that route is the only one.
 
-**3 are corrupted table extractions.** `he-2025-hl-sb-q3a` was investigated on
-2026-08-21: the PDF table extracts cleanly, but the provenance gate reads the
-scheme MARKDOWN, which interleaves the columns, so half the cells are not
-contiguous. It needs the scheme re-extracted with table awareness -- a change
-that touches every card built from that file. The other two are 2022 and 2023,
-whose scheme PDFs are not in the repo at all.
+## Elsewhere in the bank — reworked 2026-08-22
 
-## Elsewhere in the bank — investigated 2026-08-21
+Every deck now builds, and outside Chemistry every remaining drop is one the
+build is RIGHT to make.
 
-Home Economics and Agricultural Science build at **zero drops**. The rest:
+    subject               built (HL/OL)   drops   of those, intentional
+    home-economics          296 / 273        0    —
+    agricultural-science    401 / 389        0    —
+    business                267 / 317        0    —
+    physics                 409 / 425       17    17 supersessions
+    biology                 562 / 581       22    21 supersessions
+    chemistry               439 / 325       35    21 supersessions
 
-    chemistry      720 built, 79 dropped
-    physics        807 built, 44 dropped
-    biology       1112 built, 53 dropped
-    business       575 built,  9 dropped
+Bank total **4684**. A "supersession" is a question carded twice, once before a
+verified figure existed and once after; the build keeps the one with the figure.
 
-**95 of those are provenance drops** — 134 marking points that cannot be found
-in their own scheme. `provdiag.mjs <subject> <card-id>` shows where each one
-stops matching.
+### What the earlier estimate got wrong
 
-### The cause is the scheme markdown, not the cards
+This note used to say ~95 cards needed genuine re-authoring, and that the table
+append recovered exactly one card. Both were true of the tooling as it stood and
+false about the cards. Diagnosing every failure one at a time found FIVE
+separate faults in how a scheme is read, not one:
 
-I first read the build's "1 marking point" counts as ~41 cheap one-line fixes.
-**That was wrong.** Diagnosing them shows one dominant cause: the scheme
-markdown flattens TWO-DIMENSIONAL layout into lines, so any marking point that
-spans columns or a fraction can never be contiguous.
+1. **Interleaved columns.** The SEC sets parallel answers side by side and the
+   flat extraction reads across the page. `append-scheme-columns.py` reads them
+   apart from word coordinates — which reaches the ones `append-scheme-tables.py`
+   cannot, because where the two answers share ONE table cell there is no cell
+   boundary to split at.
+2. **Stacked fractions.** A formula is the one thing a scheme states that is not
+   written on a line. `append-scheme-fractions.py` finds the drawn bar and
+   splices numerator/denominator back into the line as `num/den`.
+3. **Equation-font digits.** The SEC's equation font maps the ten digits into the
+   Oriya letter block, so 22.50/187.5 extracts as "ଶଶ.ହ଴ / ଵ଼଻.ହ". Folded as an
+   added scheme form in `schemeText.mjs`.
+4. **The degree sign**, printed as a superscript letter o ("17oC"), and the **"tt"
+   ligature** that one font prints as a single t ("pipete", "atraction").
+5. **The deferred paper.** `biology/2023-marking-scheme.pdf` is the DEFERRED
+   Higher Level paper — a different exam — and both appenders preferred that name
+   over `2023-hl-marking-scheme.pdf`, so its answers were sitting in the main
+   paper's scheme text.
 
-    Runners (strawberries)        <- the card, correctly pairing method + example
-    Method    Runners  Root suckers  Leaflets  Bulbs      <- the scheme, row 1
-    examples: (strawberries) (holly bush) ...             <- the scheme, row 2
+Every append is APPEND-ONLY and every fold is an ADDED form, so no card that
+passed can start failing. Measured at each step: 0 lost, every time. Folding the
+Oriya digits symmetrically inside `normalise()` was tried first and DID cost a
+card; that is why it is a form.
 
-"Runners" matches and then the scheme continues "rootsuckersleafletsbulbs..." --
-the next columns. Same for stacked fractions and isotope notation:
-`Kc = [NH3]² / [N2][H2]³` has its numerator and denominator on different lines
-with "(c) (i) WRITE:" between them. **70 of the 134 are mathematical.** It is the
-same root cause as the Home Economics held tables.
+The rest were card-side, and each one was checked against the printed scheme:
+authors had written out one branch of a slash alternative ("melts if current is
+too high" for "melts/breaks if current is too high"), composed a pairing across
+two columns that no line of the scheme prints, spelled a symbol out ("Omega",
+"½", the letter x for ×), or led a formula with a label the scheme prints
+nowhere near it ("Kc = ").
 
-### What was fixed
+### What is left: 14 Chemistry formulae, and they are not recoverable by text
 
-`foldDigits` in `schemeText.mjs` folded mathematical bold DIGITS but not
-mathematical bold LETTERS, so `[𝐍𝐇𝟑]𝟐` normalised to `32` -- the letters were
-stripped as punctuation -- and could never match `[NH3]²`. The schemes contain
-94 distinct mathematical alphanumeric characters. Folding the whole
-U+1D400-U+1D7FF block via NFKD recovered 2 chemistry cards. Correct on
-principle regardless: 𝐇 IS H.
+All 14 are calculations or equilibrium expressions the PDF does not encode
+recoverably. The 2023 Higher scheme is the clear case: its equation font's
+ToUnicode maps several glyphs to the same codepoint, so "118" extracts as six
+copies of MATHEMATICAL BOLD DIGIT ONE and "2.43" as "22.4444". The characters
+are simply not in the file — `page.get_text()` recovers some pages and not
+others, which is what `append-scheme-maths.py` picks up.
 
-### What was NOT done, and why
+    chem-2021-hl-q6-d        S + O2 -> SO2  ΔH = –296.8 kJ
+    chem-2021-hl-q7-d-iv     (1.5 × 10⁻³)² ÷ 0.10 = 2.25 × 10⁻⁵
+    chem-2021-hl-q9-c-ii     the ICE table for N2 + 3H2 ⇌ 2NH3
+    chem-2021-ol-q10-c-ii    n = m/Ar = 1620/60
+    chem-2022-hl-q5-d        218/84 Po        (isotope notation, no drawn bar)
+    chem-2022-hl-q11-a-v-vi  Mn2+ -> +2 (II) and MnO4– -> +7 (VII)
+    chem-2023-hl-q7-b-ii     pH = –log√(Ka[HA])
+    chem-2023-hl-q9-b-i      Kc = [PCl5] / ([PCl3][Cl2])
+    chem-2023-hl-q10-b-ii    1.77/(14n + 90) moles (CH2)n(COOH)2
+    chem-2023-hl-q10-b-iii   1.77/(14n + 90) = 2.43/(14n + 134)
+    chem-2023-hl-q10-b-iv    0.03 = (0.12 × V)/1000 ⇒ V = 250 cm³
+    chem-2023-hl-q10-c-iii   ¹³¹₅₄Xe          (isotope notation, no drawn bar)
+    chem-2023-hl-q11-a-ii    pV = nRT ⇒ V/T = nR/p = constant
+    chem-2023-ol-q11-b-ii    [NH3]^2 over [N2][H2]^3
 
-Mechanical transforms recover only 27 of the 134, and every one of them changes
-the marking point: stripping "(strawberries)" from "Runners (strawberries)"
-loses the SEC's own example. That is degrading content to satisfy a gate, which
-is what the provenance rule exists to prevent. Not done.
+Shipping them means typing a formula off a rendered image, which is the
+hand-transcribed path both historical figure corruptions came through. If they
+are worth having, do it the way figures are done: render the equation's region,
+have something LOOK at it, and record the reading with the page and an image
+hash, so the transcription is auditable rather than assumed.
 
-### The append was built and measured — it recovers ONE card
+### The tools, and when to run them
 
-`append-scheme-tables.py` exists and works. Run across every scheme whose PDF is
-in the repo it appended ~27,000 table cells and recovered **one** card.
+Each appends its own marked block to `examiner-reports/<subject>/schemes/*.md`
+and is idempotent — re-running replaces the block.
 
-The enabler half works: "sublevel: 2p" and "orbital: e.g. 2px" both match
-afterwards where neither did before. But the cards that fail do not quote a
-cell — they quote a PAIRING the author composed across two cells,
-`"sublevel: 2p; orbital: e.g. 2px"`, and only **2 of 133** failing claims are
-joins whose every part matches.
+    append-scheme-tables.py      cells from find_tables(), and column runs joined
+    append-scheme-columns.py     columns read apart from word coordinates
+    append-scheme-fractions.py   stacked fractions spliced back into their line
+    append-scheme-maths.py       equation pages re-read the plain way
+    fetch-paper.mjs              pull a paper or scheme out of Paper Trail
+    provdiag.mjs                 where a claim stops matching, and the raw wording
+    suggest-verbatim.mjs         propose the scheme's own slash-alternative form
 
-So the appends were reverted and the tool kept. Carrying 27,000 machine-written
-lines in nine ground-truth scheme files for one card is not a good trade; run it
-at the point someone authors those questions, which is when the cells are needed.
+Run all four appenders with `--all` after adding any scheme PDF.
 
-### What the remaining ~95 cards actually need
+### One deliberate drop
 
-Genuine re-authoring against the scheme: read what the SEC actually printed and
-rewrite the marking points so each one is a thing the examiner wrote, rather than
-a pairing composed across cells. That is the same work as authoring a paper, for
-about 95 cards across four subjects. None of chemistry, physics, biology or
-business has authoring scripts, so it would be JSON edits or new scripts.
-
-Two mechanical shortcuts were measured and rejected: stripping parentheticals
-and "or"-alternatives recovers 27 of 133 but ALTERS the marking point (dropping
-"(strawberries)" loses the SEC's own example), and splitting joins recovers 2.
-Degrading content to satisfy the gate is what the provenance rule exists to
-prevent.
-
-**Also blocked on missing PDFs for most of it.** Scheme PDFs in the repo cover only
-recent years, and the drops are spread across 2021-2025:
-
-    chemistry  2021:10 2022:5 2023:11 2024:18 2025:6   PDFs: 2024, 2025 only
-    physics    2021:6  2022:4 2023:1  2024:9  2025:6   PDFs: 2023, 2025 only
-    biology    2021:3  2022:7                          PDFs: 2023, 2025 only  -> reaches NONE
-    business   2021:1  2023:2 2024:4  2025:1           PDFs: 2024, 2025 only
-
-Roughly 36 of the 95 are reachable without adding PDFs. The rest need the
-marking-scheme PDFs for 2021-2023 added first.
+`bio-2025-hl-q9-b-ii`. Strip its content-free row and what remains is a single
+3-mark point on a question asking for a whole 21-mark activity, which would
+teach a student to under-answer. Q9(a) and Q9(b)(i) carry that experiment.
 
 ## The loop, per paper
 1. python3 scratchpad/scout.py <year> <higher|ordinary>   -> Section C bounds + question map

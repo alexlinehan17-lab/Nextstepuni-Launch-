@@ -423,7 +423,7 @@
   "section": "A",
   "questionRef": "2021 OL Q3(v)",
   "stem": "A student carried out an experiment to measure f, the focal length of a converging lens.",
-  "questionText": "State the formula used to calculate f.",
+  "questionText": "Calculate the focal length of this lens.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -432,12 +432,12 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "1/u + 1/v = 1/f",
     "marks": 6,
-    "contextNote": "Scheme awards a partial 3 for one error in the formula."
+    "verbatim": "( 1/16 + 1/48 = 1/12 ⇒ f =) 12 cm",
+    "contextNote": "The formula is 1/u + 1/v = 1/f. The scheme prices the substitution and the answer; a correct substitution alone is a partial answer worth 3."
    }
   ],
-  "notes": "Carded under the calculation rule because the marking point is a named formula. The extractor flattened the scheme's stacked fractions (the numerators appear on a separate line), so the formula is transcribed in inline form."
+  "notes": "The row was the general lens formula, which this scheme never prints -- it prices the substitution \"( 1/16 + 1/48 = 1/12 ⇒ f =) 12 cm\" (6), with \"partial answer e.g. correct substitution\" (3). The formula moved to the row note, where it belongs."
  },
  {
   "id": "phys-2021-ol-q3-vi",
@@ -1609,7 +1609,7 @@
    {
     "id": "r-1",
     "kind": "alt",
-    "verbatim": "insulating region",
+    "verbatim": "insulating region / region with no free charge carriers",
     "accepts": [
      "region with no free charge carriers"
     ],
@@ -1624,7 +1624,7 @@
    {
     "id": "r-3",
     "kind": "alt",
-    "verbatim": "holes migrate",
+    "verbatim": "holes/electrons migrate",
     "accepts": [
      "electrons migrate"
     ],
@@ -1634,14 +1634,15 @@
    {
     "id": "r-4",
     "kind": "alt",
-    "verbatim": "and combine",
+    "verbatim": "and combine/neutralise each other",
     "accepts": [
      "and neutralise each other"
     ],
     "marks": 3,
     "contextNote": "Scheme prints 'and combine/neutralise each other'."
    }
-  ]
+  ],
+  "notes": "The scheme prints slash-separated ALTERNATIVES and the card had written out one of them. Restored to the SEC's own form, which is more faithful and also shows the student which other answers score. All four rows were truncated the same way; the scheme prints \"insulating region / region with no free charge carriers\", \"holes/electrons migrate\" and \"and combine/neutralise each other\"."
  },
  {
   "id": "phys-2022-hl-q8-viii",
@@ -3721,7 +3722,7 @@
    {
     "id": "r-1",
     "kind": "alt",
-    "verbatim": "region around a charge in which another charged particle will experience a force",
+    "verbatim": "region/space around a charge in which another charged particle will experience a force",
     "accepts": [
      "space around a charge in which another charged particle will experience a force"
     ],
@@ -3729,7 +3730,7 @@
     "contextNote": "The scheme's solidus is on the opening word only: 'region / space around a charge...'."
    }
   ],
-  "notes": "Inline solidus expanded into two complete statements."
+  "notes": "Inline solidus expanded into two complete statements. The scheme prints slash-separated ALTERNATIVES and the card had written out one of them. Restored to the SEC's own form, which is more faithful and also shows the student which other answers score."
  },
  {
   "id": "phys-2021-ol-q14a-i",
@@ -3964,7 +3965,7 @@
    {
     "id": "r-1",
     "kind": "alt",
-    "verbatim": "region around a magnet where magnetic forces act",
+    "verbatim": "region/space around a magnet where magnetic forces act",
     "accepts": [
      "space around a magnet where magnetic forces act"
     ],
@@ -3972,7 +3973,7 @@
     "contextNote": "The scheme's solidus is on the opening word only: 'region / space around a magnet...'."
    }
   ],
-  "notes": "Inline solidus expanded into two complete statements."
+  "notes": "Inline solidus expanded into two complete statements. The scheme prints slash-separated ALTERNATIVES and the card had written out one of them. Restored to the SEC's own form, which is more faithful and also shows the student which other answers score."
  },
  {
   "id": "phys-2021-ol-q14c-ii",
@@ -9708,12 +9709,12 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "20 x 150 = 3000 J",
+    "verbatim": "20 × 150 = 3000 J",
     "marks": 7,
     "contextNote": "The scheme accepts a partial answer for 4."
    }
   ],
-  "notes": "Carded because the scheme awards one undivided marking point that is the complete working ending in the final answer, so it is fully self-markable. The 2022 OL scheme has no general units-deduction note, so no unit penalty is claimed."
+  "notes": "Carded because the scheme awards one undivided marking point that is the complete working ending in the final answer, so it is fully self-markable. The 2022 OL scheme has no general units-deduction note, so no unit penalty is claimed. The multiplication sign was typed as the letter x, which no scheme contains."
  },
  {
   "id": "phys-2022-ol-q6-c",
@@ -9789,12 +9790,12 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "4 + 7 = 11 Omega",
+    "verbatim": "4 + 7 = 11 Ω",
     "marks": 7,
     "contextNote": "The scheme accepts a partial answer for 4."
    }
   ],
-  "notes": "One undivided marking point reproduced as printed in the scheme, including the ohm symbol. The 2022 OL scheme has no general units-deduction note, so no unit penalty is claimed."
+  "notes": "One undivided marking point reproduced as printed in the scheme, including the ohm symbol. The 2022 OL scheme has no general units-deduction note, so no unit penalty is claimed. The unit was spelled out as \"Omega\"; the scheme prints Ω."
  },
  {
   "id": "phys-2022-ol-q6-g",
@@ -16481,7 +16482,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "T½ = ln2/λ",
+    "verbatim": "T1/2 = ln2/λ",
     "marks": 3
    },
    {
@@ -16497,7 +16498,7 @@
     "marks": 3
    }
   ],
-  "notes": ""
+  "notes": "The half-life subscript was typed as the vulgar fraction ½, which normalise() strips; the scheme sets it as 1 over 2, so T1/2 is both readable and traceable."
  },
  {
   "id": "phys-2024-hl-q14-c-i",
@@ -18988,7 +18989,7 @@
    {
     "id": "r-1",
     "kind": "alt",
-    "verbatim": "melts if current is too high",
+    "verbatim": "melts/breaks if current is too high",
     "accepts": [
      "breaks if current is too high"
     ],
@@ -18996,7 +18997,7 @@
     "contextNote": "The scheme prints 'melts/breaks if current is too high'. A single solidus, so either verb is equally acceptable, but the condition is part of the marking point, not optional context. Partial answer scores 3."
    }
   ],
-  "notes": "The scheme's solidus falls mid-phrase, so each alternative is written out in full rather than leaving the shared clause off the marking point."
+  "notes": "The scheme's solidus falls mid-phrase, so each alternative is written out in full rather than leaving the shared clause off the marking point. The scheme prints slash-separated ALTERNATIVES and the card had written out one of them. Restored to the SEC's own form, which is more faithful and also shows the student which other answers score."
  },
  {
   "id": "phys-2024-ol-q11-v",
@@ -20579,11 +20580,11 @@
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "u = 1.89 × 10⁷ m s–1",
+    "verbatim": "u — 1.89 x 10⁷ m s–1",
     "marks": 3
    }
   ],
-  "notes": "Carded because the scheme awards a named formula and a final answer with its unit as two discrete points. The extractor stacked the fraction (printing 'fc' above 'f' = c ± u'), so the formula is written here in linear form. The exponent of the final answer lost its superscript formatting in extraction ('1.89 x 107'); it is restored here to the value the scheme prints, 1.89 × 10⁷ m s–1."
+  "notes": "Carded because the scheme awards a named formula and a final answer with its unit as two discrete points. The extractor stacked the fraction (printing 'fc' above 'f' = c ± u'), so the formula is written here in linear form. The exponent of the final answer lost its superscript formatting in extraction ('1.89 x 107'); it is restored here to the value the scheme prints, 1.89 × 10⁷ m s–1. The row read \"u = 1.89 × 10⁷ m s–1\"; the scheme prints the answer alone, and with the letter x as its multiplication sign. Labelled with an em dash so the row still says which quantity it is while the claim is the scheme's own text."
  },
  {
   "id": "phys-2025-hl-q6-k",
@@ -22967,14 +22968,14 @@
    {
     "id": "r-3",
     "kind": "alt",
-    "verbatim": "observation: lines of semolina show electric field pattern",
+    "verbatim": "observation: lines of semolina/seeds show electric field pattern",
     "accepts": [
      "observation: lines of seeds show electric field pattern"
     ],
     "marks": 2
    }
   ],
-  "notes": "The scheme writes \"semolina/seeds\"; the solidus alternatives are split out rather than left joined. Q14(d)(iv) skipped — it asks for a drawn field-pattern diagram."
+  "notes": "The scheme writes \"semolina/seeds\"; the solidus alternatives are split out rather than left joined. Q14(d)(iv) skipped — it asks for a drawn field-pattern diagram. The scheme prints slash-separated ALTERNATIVES and the card had written out one of them. Restored to the SEC's own form, which is more faithful and also shows the student which other answers score."
  },
  {
   "id": "phys-2025-hl-q14d-v",
