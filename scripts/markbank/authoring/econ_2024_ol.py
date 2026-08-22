@@ -362,4 +362,12 @@ P.menu('reason why the Irish government contributes to the EU', 'econ-2024-ol-q1
        ref='2024 OL Q14(a)(ii)', claim=1, per=4,
        drop=SCAF + ('Outline one reason why the Irish government contributes',))
 
+P.menu('Revolut becoming a mortgage lender', 'econ-2024-ol-q16-c-ii',
+       'economics-2-0', 'a-new-entrant-to-the-mortgage-market',
+       'Outline one possible economic effect Revolut becoming a mortgage lender may have.',
+       'An economic effect — any one', 'One effect, 10 marks.',
+       ref='2024 OL Q16(c)(ii)', claim=1, per=10,
+       drop=SCAF + ('Evidence of Data', 'The Research Process', 'Process overall mark',
+                    'Deduct 1m'))
+
 emit(cards + P.cards)

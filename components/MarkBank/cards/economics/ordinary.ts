@@ -1478,6 +1478,19 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC034GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2024-ol-q16-c-ii", topicId: "economics-2-0", conceptId: "a-new-entrant-to-the-mortgage-market",
+    section: "B", questionRef: "2024 OL Q16(c)(ii)",
+    questionText: "Outline one possible economic effect Revolut becoming a mortgage lender may have.",
+    tariffModel: {"kind":"bestNofParts","notation":"1 @ 10","answer":1,"ofParts":4,"perPart":10}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An economic effect — any one", marks: 10, contextNote: "One effect, 10 marks.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Increase in competition: Revolut's entry would lead to increased competition among traditional mortgage lenders in Ireland, challenging their dominance. This could lead to more attractive mortgage rates and terms, benefiting consumers as lenders strive to offer better deals and innovation to attract and retain customers. •","Improved access to mortgage loans: The innovative instant application process could streamline the mortgage application process, making it easier and more efficient for potential homebuyers to access mortgage loans. •","Lower borrowing costs: Increased competition among lenders may lead to lower interest rates, which could reduce the cost of borrowing for homebuyers. Lower borrowing costs could make homeownership more affordable for a wider range of consumers. •","Financial inclusion: Revolut's innovative approach to lending and their digital platform could potentially increase financial inclusion by providing access to mortgage loans for underserved populations who may have had difficulty obtaining traditional mortgages."]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "econ-2024-ol-sa-q1-i", topicId: "economics-0-2", conceptId: "oceans-as-an-economic-resource",
     section: "A", questionRef: "2024 OL Section A Q1(i)",
     stem: "UN Sustainable Development Goal 14 is to conserve and sustainably use the oceans, seas and marine resources.",
@@ -1867,6 +1880,19 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"bestNofParts","notation":"1 @ 8","answer":1,"ofParts":4,"perPart":8}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "A negative effect — any one", marks: 8, contextNote: "One effect, 8 marks.", openList: true, group: {"claimMax":1,"perOption":8,"options":["Cross-border shopping & loss of revenue – consumers may travel to Northern Ireland to purchase cheaper alcohol and tobacco, reducing domestic sales and reducing tax revenue in the Republic.","Growth of the hidden economy – higher VAT rates may encourage smuggling and illegal sales of alcohol and tobacco. The government could lose tax revenue as illicit trade grows.","Impact on hospitality & retail Sectors – pubs, restaurants, and off-licences may suffer from declining sales, potentially leading to job losses.","Reduced tax revenue in the long run – while VAT hikes initially increase revenue, declining sales could lead to lower overall tax income over time."]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2025-ol-q12-c-iii", topicId: "economics-3-4", conceptId: "who-gains-when-interest-rates-fall",
+    section: "B", questionRef: "2025 OL Q12(c)(iii)",
+    questionText: "Explain the economic effect interest rate decreases could have on savers in Ireland and on borrowers who are repaying mortgages.",
+    tariffModel: {"kind":"fixed","notation":"1 @ 6+1 @ 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The effect on each group — both of these", marks: null, contextNote: "Savers 6 and borrowers 4.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Borrowers repaying mortgages Consumers will have more disposable income: as mortgage rates and rates of borrowing decrease, consumers will have more disposable income left to spend on discretionary items.","Possible Responses Max Mark"],"perOptionSteps":[6,4]} },
     ],
   } as SecCard,
   {

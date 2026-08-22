@@ -245,4 +245,14 @@ P.menu('Cross-border shopping & loss of revenue', 'econ-2025-ol-q16-a-iii-excise
        'A negative effect — any one', 'One effect, 8 marks.',
        ref='2025 OL Q16(a)(iii)', claim=1, per=8, drop=SCAFFOLD)
 
+# The scheme lists the two groups the question names — savers, then borrowers —
+# and gives an effect for each, so both are rows on one card.
+P.menu('Savers may decide to save less', 'econ-2025-ol-q12-c-iii',
+       'economics-3-4', 'who-gains-when-interest-rates-fall',
+       'Explain the economic effect interest rate decreases could have on savers in Ireland '
+       'and on borrowers who are repaying mortgages.',
+       'The effect on each group — both of these', 'Savers 6 and borrowers 4.',
+       ref='2025 OL Q12(c)(iii)', claim=2, per=6, steps=[6, 4],
+       drop=SCAFFOLD + ('Savers in Ireland • Borrowers who are repaying mortgages',))
+
 P.emit()
