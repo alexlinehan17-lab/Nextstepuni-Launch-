@@ -28518,6 +28518,339 @@
   "stem": "The hammer throw is an athletics event where athletes rotate a metal ball, attached to a wire, in a circle before releasing it. The velocity of the ball as it is released is at an angle of 36° above the horizontal. The ball is released at a height of 1.26 m above the ground and lands 3.79 s later."
  },
  {
+  "id": "phys-2024-hl-q1-iii",
+  "topicId": "phys-u2",
+  "conceptId": "graph-of-force-against-acceleration",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2024 HL Q1(iii)",
+  "questionText": "Draw a suitable graph to show the relationship between F and a.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "labelled axes",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "points plotted",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "line of best fit",
+    "marks": 3
+   }
+  ],
+  "stem": "A student carried out a laboratory experiment to investigate the relationship between the acceleration a of a body and the force F applied to it. During the experiment the student recorded values for the force and measured the associated acceleration. The following data were recorded. F (N) 0.2 0.3 0.4 0.5 0.6 0.7 a (m s–2) 0.280 0.422 0.554 0.702 0.837 0.982"
+ },
+ {
+  "id": "phys-2024-hl-q5-i",
+  "topicId": "phys-u2",
+  "conceptId": "circuit-for-the-resistivity-experiment",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2024 HL Q5(i)",
+  "questionText": "Draw a circuit diagram for this experiment.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "any three of the four components at 1 each, then 3 and 3"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "power supply, copper wire, ammeter, voltmeter",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "power supply, copper wire and ammeter in series",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "voltmeter in parallel",
+    "marks": 3
+   }
+  ],
+  "stem": "In an experiment to investigate the relationship between current I and potential difference V for a length of copper wire the following data were recorded. V (V) 1.0 2.0 3.0 4.0 5.0 6.0 I (A) 0.14 0.26 0.43 0.58 0.70 0.84 Each question carries 56 marks."
+ },
+ {
+  "id": "phys-2024-hl-q5-ii",
+  "topicId": "phys-u2",
+  "conceptId": "graph-of-current-against-voltage",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2024 HL Q5(ii)",
+  "questionText": "Draw a suitable graph to show the relationship between I and V.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "labelled axes",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "correct points plotted",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "line of best fit",
+    "marks": 3
+   }
+  ],
+  "stem": "In an experiment to investigate the relationship between current I and potential difference V for a length of copper wire the following data were recorded. V (V) 1.0 2.0 3.0 4.0 5.0 6.0 I (A) 0.14 0.26 0.43 0.58 0.70 0.84 Each question carries 56 marks."
+ },
+ {
+  "id": "phys-2024-hl-q8-iii",
+  "topicId": "phys-3-4",
+  "conceptId": "field-around-a-straight-current-carrying-wire",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2024 HL Q8(iii)",
+  "questionText": "Draw a diagram of the magnetic field produced by a current flowing in a long straight wire.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "shape",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "direction",
+    "marks": 3
+   }
+  ],
+  "stem": "A moving-coil loudspeaker is based on the principle that a current-carrying conductor in a magnetic field experiences a force. permanent magnet cone coil The amplitude of the vibrations of the cone determines the amplitude of the sound wave produced. cone vibrations A loudspeaker has a power of 80 mW. (ix) This sound intensity is halved for the person when they stand a distance d from the loudspeaker. Calculate d. (x) After this, the speaker of power 80 mW is replaced by a speaker of power 20 mW. Calculate the decrease in sound intensity level. (31) speed of sound = 340 m s–1 Leaving Certificate, 2024 Physics – Higher Level 7"
+ },
+ {
+  "id": "phys-2024-hl-q12b-iii",
+  "topicId": "phys-3-3",
+  "conceptId": "circuit-of-a-half-wave-rectifier",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2024 HL Q12(b)(iii)",
+  "questionText": "Draw a circuit diagram of a half-wave rectifier that can be used to convert a.c. to d.c..",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "diode",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "input and output voltage labelled",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "arrangement",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme numbers this answer under its own Question 11 while the paper prints Question 12."
+ },
+ {
+  "id": "phys-2024-hl-q12b-v",
+  "topicId": "phys-3-3",
+  "conceptId": "structure-of-a-bipolar-transistor",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2024 HL Q12(b)(v)",
+  "questionText": "Draw a labelled diagram of the structure of a bi-polar transistor.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 + 2 + 2 across the three layers"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "n (collector), p (base), n (emitter)",
+    "marks": 7
+   }
+  ],
+  "notes": "The scheme numbers this answer under its own Question 11 while the paper prints Question 12."
+ },
+ {
+  "id": "phys-2024-hl-q12b-vi",
+  "topicId": "phys-3-3",
+  "conceptId": "truth-table-of-a-not-gate",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2024 HL Q12(b)(vi)",
+  "questionText": "Draw a truth table for a NOT gate. (11) The induction coil was invented by Dr Nicolas Callan in 1836.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "input 1 : output 0",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "input 0 : output 1",
+    "marks": 2
+   }
+  ]
+ },
+ {
+  "id": "phys-2024-hl-q12b-vii",
+  "topicId": "phys-3-6",
+  "conceptId": "parts-of-an-induction-coil",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2024 HL Q12(b)(vii)",
+  "questionText": "Draw a labelled diagram showing the main components of an induction coil.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "coil and d.c power supply in primary circuit",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "coil with more turns in secondary circuit",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "labelled make and break mechanism and iron core",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme numbers this answer under its own Question 11 while the paper prints Question 12."
+ },
+ {
+  "id": "phys-2024-hl-q14c-ii",
+  "topicId": "phys-4-2",
+  "conceptId": "parts-of-a-cathode-ray-tube",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2024 HL Q14(c)(ii)",
+  "questionText": "Draw a labelled diagram of a cathode ray tube. (14) A high-speed electron that strikes the screen of an oscilloscope produces the green light that is seen.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "heating coil",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "voltage across cathode and anode",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "labelled vacuum",
+    "marks": 2
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "one other detail",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme numbers this answer under its own Question 13 while the paper prints Question 14."
+ },
+ {
+  "id": "phys-2024-hl-q14d-i",
+  "topicId": "phys-2-6",
+  "conceptId": "parts-of-a-spectrometer",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2024 HL Q14(d)(i)",
+  "questionText": "Draw a labelled diagram of a spectrometer. (8) Green light of wavelength 530 nm is passed through a diffraction grating with 400 lines per mm.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 + 2 + 2 + 2"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "labelled collimator, table, telescope, other detail",
+    "marks": 8
+   }
+  ],
+  "stem": "angle of separation ray of light diffraction grating This document will not be returned to the State Examinations Commission. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate Examination – Higher Level Physics Wednesday, 19 June Morning, 9:30 – 12:30 Leaving Certificate, 2024 Physics – Higher Level 16",
+  "notes": "The scheme numbers this answer under its own Question 13 while the paper prints Question 14."
+ },
+ {
   "id": "phys-2024-ol-q11-i",
   "topicId": "phys-3-3",
   "conceptId": "example-of-an-electrical-conductor",
