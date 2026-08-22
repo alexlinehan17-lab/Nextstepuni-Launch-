@@ -51,4 +51,33 @@ A.card(8, None, 'iv', topic='phys-2-3', concept='angle-of-refraction-from-snells
                   ((8, None, 'iv'), 0, slice(20, 23))],
        marks=[3, 3, 3])
 
+A.card(3, None, 'i', topic='phys-u2', concept='the-instrument-that-measures-temperature',
+       source='pdf', from_run=((3, None, 'i'), 0, slice(0, 1)), marks=[3],
+       checked='The paper prints this part as a label on its own diagram, so the scheme '
+               'reprints neither a verb nor a sentence. What is being asked is which '
+               'instrument the labelled item is.')
+
+A.card(7, None, 'v', topic='phys-1-4', concept='velocity-from-energy-or-suvat',
+       source='pdf',
+       from_runs=[((7, None, 'v'), 0, slice(0, 9)),
+                  ((7, None, 'v'), 0, slice(10, 11)),
+                  ((7, None, 'v'), 0, slice(12, 17))],
+       marks=[3, 3, 3],
+       notes='Either route scores, the energy one or the equation of motion, but a '
+             'partial answer cannot be taken from both.')
+
+A.card(8, None, 'vi', topic='phys-2-3', concept='image-position-for-a-converging-lens',
+       source='pdf',
+       from_runs=[((8, None, 'vi'), 0, slice(7, 12)),
+                  ((8, None, 'vi'), 0, slice(13, 14)),
+                  ((8, None, 'vi'), 0, slice(15, 19))],
+       marks=[3, 3, 3])
+
+A.card(11, None, 'v', topic='phys-3-3', concept='total-resistance-of-two-parallel-bulbs',
+       source='pdf',
+       from_runs=[((11, None, 'v'), 0, slice(9, 14)),
+                  ((11, None, 'v'), 0, slice(15, 16)),
+                  ((11, None, 'v'), 0, slice(17, 21))],
+       marks=[3, 3, 3])
+
 A.emit()

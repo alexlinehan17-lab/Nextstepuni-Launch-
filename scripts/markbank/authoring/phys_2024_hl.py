@@ -27,4 +27,10 @@ A.card(9, 'a', 'iv', topic='phys-3-3', concept='intrinsic-and-extrinsic-conducti
        notes='The scheme numbers this answer under its own Question 8 while the paper '
              'prints Question 9.')
 
+A.card(11, None, 'vi', topic='phys-3-3', concept='potential-difference-across-a-resistor',
+       source='pdf',
+       from_runs=[((11, None, 'vi'), 0, slice(0, 3)),
+                  ((11, None, 'vi'), 0, slice(4, 8))],
+       marks=[3, 3])
+
 A.emit()

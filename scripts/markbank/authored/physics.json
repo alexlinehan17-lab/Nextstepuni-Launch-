@@ -26995,6 +26995,138 @@
   "notes": "The scheme accepts the suvat route as well."
  },
  {
+  "id": "phys-2023-hl-q1-v",
+  "topicId": "phys-u2",
+  "conceptId": "g-from-the-slope-of-a-graph",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2023 HL Q1(v)",
+  "questionText": "Use the graph to calculate a value for g. (18)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "slope formula",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "s = ut + ½ at2",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "g ≈ 9.8 m s–2 from calculation",
+    "marks": 3
+   }
+  ],
+  "stem": "In an experiment to determine the acceleration due to gravity g, the time t for an object to fall from rest through a distance s was measured. The procedure was repeated for a series of values of s. The following data were recorded. s (cm) 40 50 60 70 80 90 t (cs) 29 32 35 38 40 43"
+ },
+ {
+  "id": "phys-2023-hl-q9-ii",
+  "topicId": "phys-4-4",
+  "conceptId": "energy-released-in-a-decay",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2023 HL Q9(ii)",
+  "questionText": "Calculate the energy released during each decay of plutonium–238, in MeV.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "E = mc2",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "E = 8.95 × 10–13 (J)",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "E = 5.6 (MeV)",
+    "marks": 3
+   }
+  ],
+  "stem": "Voyager I and Voyager II are spacecraft that were launched in 1977 to investigate the outer planets of our solar system. The spacecraft are powered with radioisotope thermoelectric generators. When the spacecraft were launched, each generator contained 4 kg of plutonium–238. Each atom of plutonium–238 has a mass of 3.9529085 × 10–25 kg. The Voyager spacecraft are now beyond our solar system and they are maintaining constant velocities."
+ },
+ {
+  "id": "phys-2023-hl-q14c-iii",
+  "topicId": "phys-3-3",
+  "conceptId": "total-resistance-of-a-mixed-circuit",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2023 HL Q14(c)(iii)",
+  "questionText": "Calculate the total resistance of the circuit shown below.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1/Rp = 1/R1 + 1/R2",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Rp = 2.5 (Ω)",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "RT = 7.5 Ω",
+    "marks": 3
+   }
+  ],
+  "stem": "5 Ω 5 Ω 5 Ω"
+ },
+ {
+  "id": "phys-2023-hl-q14c-iv",
+  "topicId": "phys-3-3",
+  "conceptId": "how-to-lower-total-resistance",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2023 HL Q14(c)(iv)",
+  "questionText": "Describe how a fourth 5 Ω resistor could be added to the circuit so as to reduce the total effective resistance of the circuit. (12)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "in parallel",
+    "marks": 3
+   }
+  ],
+  "stem": "5 Ω 5 Ω 5 Ω"
+ },
+ {
   "id": "phys-2023-ol-q13b-v",
   "topicId": "phys-4-4",
   "conceptId": "daughter-nucleus-after-beta-decay",
@@ -27183,6 +27315,139 @@
   "stem": "The diagram below shows how a ray of light travels through a rectangular glass block."
  },
  {
+  "id": "phys-2023-ol-q3-i",
+  "topicId": "phys-u2",
+  "conceptId": "the-instrument-that-measures-temperature",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2023 OL Q3(i)",
+  "questionText": "Name the piece of equipment labelled A.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "thermometer",
+    "marks": 3
+   }
+  ],
+  "stem": "A student carried out an experiment to measure the specific latent heat of fusion of ice. He added ice at 0 °C to water in a copper calorimeter. The following results were recorded. Mass of empty copper calorimeter = 0.083 kg Mass of calorimeter + water = 0.181 kg Mass of ice = 0.008 kg Initial temperature of calorimeter + water = 23 °C Final temperature of calorimeter + water + melted ice = 16 °C Below is a diagram of the apparatus used in this experiment. cloth with crushed ice calorimeter water with crushed ice (ix) Calculate the value for l, the specific latent heat of fusion of ice. Note: E = micel + micecwaterΔθice (9) specific heat capacity of copper = 390 J kg–1K–1; specific heat capacity of water = 4180 J kg–1 K–1 Leaving Certificate, 2023 Physics – Ordinary Level 3"
+ },
+ {
+  "id": "phys-2023-ol-q7-v",
+  "topicId": "phys-1-4",
+  "conceptId": "velocity-from-energy-or-suvat",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2023 OL Q7(v)",
+  "questionText": "Calculate the velocity of the carriage when it has fallen 37 m.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Ek = ½mv2 // v2 = u2 + 2as",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "substitution",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "v = 26.9 m s–1",
+    "marks": 3
+   }
+  ],
+  "stem": "A big drop is an amusement ride where a carriage with passengers is lifted to the top of a large vertical tower and then released to fall down the tower before it brakes and comes to rest.",
+  "notes": "Either route scores, the energy one or the equation of motion, but a partial answer cannot be taken from both."
+ },
+ {
+  "id": "phys-2023-ol-q8-vi",
+  "topicId": "phys-2-3",
+  "conceptId": "image-position-for-a-converging-lens",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2023 OL Q8(vi)",
+  "questionText": "An object is placed 25 cm in front of a converging lens of focal length 15 cm. Calculate the position of the image formed.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1/u + 1/v = 1/f",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "substitution",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "v = 37.5 cm",
+    "marks": 3
+   }
+  ],
+  "stem": "The diagram below shows how a ray of light travels through a rectangular glass block."
+ },
+ {
+  "id": "phys-2023-ol-q11-v",
+  "topicId": "phys-3-3",
+  "conceptId": "total-resistance-of-two-parallel-bulbs",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2023 OL Q11(v)",
+  "questionText": "Two light bulbs connected in parallel have resistances of 5 Ω and 4 Ω. Calculate the total resistance of the two light bulbs.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1/RT = 1/R1 + 1/R2",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "substitution",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "RT = 2.22 Ω",
+    "marks": 3
+   }
+  ],
+  "stem": "Electric current is the movement of charged particles through a conductor. light bulb + – battery 60 50 40 current (mA) 30 20 10 0 0 1 2 3 4 5 6 voltage (V) (ix) The charged particles that carry current through a metallic conductor are electrons. Name the charged particles that carry current through an ionic solution such as copper sulfate solution? (17) Leaving Certificate, 2023 Physics – Ordinary Level 10"
+ },
+ {
   "id": "phys-2024-hl-q11-vii",
   "topicId": "phys-3-2",
   "conceptId": "charge-on-a-capacitor-mid-discharge",
@@ -27277,6 +27542,36 @@
    }
   ],
   "notes": "The scheme numbers this answer under its own Question 8 while the paper prints Question 9."
+ },
+ {
+  "id": "phys-2024-hl-q11-vi",
+  "topicId": "phys-3-3",
+  "conceptId": "potential-difference-across-a-resistor",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2024 HL Q11(vi)",
+  "questionText": "Calculate the potential difference across the resistor at this instant.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "V = IR",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "V = 7.5 V",
+    "marks": 3
+   }
+  ],
+  "stem": "A device that is designed to store energy when it holds a charge is called a capacitor."
  },
  {
   "id": "phys-2024-ol-q11-i",
