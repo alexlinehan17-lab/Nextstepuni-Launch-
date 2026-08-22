@@ -340,12 +340,108 @@ export const BUSINESS_STRANDS: StrandRef[] = [
   },
 ];
 
+/**
+ * Leaving Certificate Home Economics — Scientific and Social.
+ *
+ * Three core areas and three electives, named as the marking scheme names them:
+ * "Elective 1 - Home Design and Management", "Elective 2 - Textiles, Fashion and
+ * Design", "Elective 3 - Social Studies". A candidate answers ONE elective, which
+ * is why Section C carries 291 of the deck's 569 cards across all three.
+ *
+ * The ids and the topic TITLES are the ones curriculum.ts already publishes for
+ * this subject, so the deck and the curriculum registry name the same node the
+ * same way rather than drifting into two vocabularies for one syllabus. What
+ * differs is the grouping: curriculum.ts files all three electives under one
+ * "Electives" strand, and the paper does not — a candidate answers ONE elective,
+ * which the marking scheme heads "Elective 1 - Home Design and Management" and
+ * so on. Splitting them that way is why "Elective N:" is dropped from the topic
+ * titles; the strand carries it.
+ *
+ * 3-0 to 3-2 are absent because they are the elective headings themselves, and
+ * no card was ever filed on a heading.
+ */
+export const HOME_ECONOMICS_STRANDS: StrandRef[] = [
+  {
+    id: 'he-core1', label: 'Core 1', title: 'Food Studies',
+    topics: [
+      { id: 'home-economics-0-1', code: '1.1', title: 'Diet & Health' },
+      { id: 'home-economics-0-2', code: '1.2', title: 'Food Science & Properties of Food' },
+      { id: 'home-economics-0-3', code: '1.3', title: 'Culinary Skills & Food Preparation' },
+      { id: 'home-economics-0-4', code: '1.4', title: 'Food Spoilage, Safety & Hygiene' },
+      { id: 'home-economics-0-5', code: '1.5', title: 'Nutrition: Protein' },
+      { id: 'home-economics-0-6', code: '1.6', title: 'Nutrition: Carbohydrates' },
+      { id: 'home-economics-0-7', code: '1.7', title: 'Nutrition: Lipids (Fats)' },
+      { id: 'home-economics-0-8', code: '1.8', title: 'Nutrition: Vitamins, Minerals & Water' },
+      { id: 'home-economics-0-9', code: '1.9', title: 'Food Commodities' },
+      { id: 'home-economics-0-10', code: '1.10', title: 'Meal Planning & Preparation' },
+      { id: 'home-economics-0-11', code: '1.11', title: 'The Food Industry & Packaging' },
+    ],
+  },
+  {
+    id: 'he-core2', label: 'Core 2', title: 'Resource Management and Consumer Studies',
+    topics: [
+      { id: 'home-economics-1-0', code: '2.1', title: 'Family Resource Management' },
+      { id: 'home-economics-1-1', code: '2.2', title: 'Household Financial Management' },
+      { id: 'home-economics-1-2', code: '2.3', title: 'Consumer Studies' },
+      { id: 'home-economics-1-3', code: '2.4', title: 'Household Technology & Energy' },
+      { id: 'home-economics-1-4', code: '2.5', title: 'Household Textiles' },
+      { id: 'home-economics-1-5', code: '2.6', title: 'The Environment & Sustainable Living' },
+    ],
+  },
+  {
+    id: 'he-core3', label: 'Core 3', title: 'Social Studies',
+    topics: [
+      { id: 'home-economics-2-0', code: '3.1', title: 'The Family in Society' },
+      { id: 'home-economics-2-1', code: '3.2', title: 'Marriage & the Family Life Cycle' },
+      { id: 'home-economics-2-2', code: '3.3', title: 'Education, Work & Leisure in Society' },
+      { id: 'home-economics-2-3', code: '3.4', title: 'Older People & the Family' },
+    ],
+  },
+  {
+    id: 'he-e1', label: 'Elective 1', title: 'Home Design and Management',
+    topics: [
+      { id: 'home-economics-3-3', code: 'E1.1', title: 'Housing Provision & Planning' },
+      { id: 'home-economics-3-4', code: 'E1.2', title: 'Interior Design' },
+      { id: 'home-economics-3-5', code: 'E1.3', title: 'Household Services (Heating, Water, Lighting)' },
+      { id: 'home-economics-3-6', code: 'E1.4', title: 'Energy & Emissions' },
+    ],
+  },
+  {
+    id: 'he-e2', label: 'Elective 2', title: 'Textiles, Fashion and Design',
+    topics: [
+      { id: 'home-economics-3-7', code: 'E2.1', title: 'Fabrics & Fibres' },
+      { id: 'home-economics-3-8', code: 'E2.2', title: 'Patterns & Fashion' },
+    ],
+  },
+  {
+    id: 'he-e3', label: 'Elective 3', title: 'Social Studies (elective)',
+    topics: [
+      { id: 'home-economics-3-9', code: 'E3.1', title: 'Unemployment & Poverty' },
+      { id: 'home-economics-3-10', code: 'E3.2', title: 'Education in Ireland' },
+      { id: 'home-economics-3-11', code: 'E3.3', title: 'Family Life & Leisure' },
+    ],
+  },
+];
+
+/**
+ * `spec` is what the strands above ACTUALLY are, and the picker prints it.
+ *
+ * It is not the same claim for every subject. Biology, Chemistry, Physics and
+ * Business are filed against their redeveloped specifications so a student
+ * studying those can find a 2021-2025 question under the unit they are learning;
+ * Agricultural Science's redeveloped specification has been the examined one
+ * since 2021. Home Economics has no redeveloped specification to file against —
+ * the NCCA schedule introduces its replacement in 2027 for first examination in
+ * 2029 — so its strands are the syllabus being sat, and saying "redeveloped
+ * specification" over them, as the hard-coded label did, was simply untrue.
+ */
 export const SUBJECTS = [
-  { id: 'biology', title: 'Biology', strands: STRANDS },
-  { id: 'chemistry', title: 'Chemistry', strands: CHEMISTRY_STRANDS },
-  { id: 'physics', title: 'Physics', strands: PHYSICS_STRANDS },
-  { id: 'agricultural-science', title: 'Agricultural Science', strands: AGRICULTURAL_SCIENCE_STRANDS },
-  { id: 'business', title: 'Business', strands: BUSINESS_STRANDS },
+  { id: 'biology', title: 'Biology', strands: STRANDS, spec: 'redeveloped specification' },
+  { id: 'chemistry', title: 'Chemistry', strands: CHEMISTRY_STRANDS, spec: 'redeveloped specification' },
+  { id: 'physics', title: 'Physics', strands: PHYSICS_STRANDS, spec: 'redeveloped specification' },
+  { id: 'agricultural-science', title: 'Agricultural Science', strands: AGRICULTURAL_SCIENCE_STRANDS, spec: 'redeveloped specification' },
+  { id: 'business', title: 'Business', strands: BUSINESS_STRANDS, spec: 'redeveloped specification' },
+  { id: 'home-economics', title: 'Home Economics', strands: HOME_ECONOMICS_STRANDS, spec: 'Scientific and Social syllabus' },
 ] as const;
 
 export type SubjectId = (typeof SUBJECTS)[number]['id'];
@@ -570,6 +666,10 @@ const DECKS: Record<string, Record<Level, () => Promise<{ CARDS: SecCard[] }>>> 
   business: {
     higher: () => import('./cards/business/higher'),
     ordinary: () => import('./cards/business/ordinary'),
+  },
+  'home-economics': {
+    higher: () => import('./cards/home-economics/higher'),
+    ordinary: () => import('./cards/home-economics/ordinary'),
   },
 };
 

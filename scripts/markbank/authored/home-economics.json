@@ -7698,22 +7698,19 @@
   "year": 2025,
   "subjectId": "home-economics",
   "section": "B",
-  "questionRef": "2025 HL Section B Q1(b)",
-  "questionText": "Describe the structure and give one example of each of the following: saturated fatty acids; monounsaturated fatty acids; polyunsaturated fatty acids.",
+  "questionRef": "2025 HL Section B Q1(b) — saturated fatty acids",
+  "questionText": "Describe the structure and give one example of saturated fatty acids.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "4 points on structure @ 1 mark (graded 1:0) x 3; 1 example @ 2 marks (graded 2:0) x 3",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "notation": "4 points on structure @ 1 mark (graded 1:0); 1 example @ 2 marks (graded 2:0)"
   },
-  "totalMarks": 18,
+  "totalMarks": 6,
   "rows": [
    {
-    "id": "r-1",
+    "id": "r-structure",
     "kind": "anyN",
     "verbatim": "Saturated fatty acids — structure",
     "marks": 4,
@@ -7733,15 +7730,37 @@
     }
    },
    {
-    "id": "r-2",
+    "id": "r-example",
     "kind": "point",
     "verbatim": "Example butyric acid; stearic acid; etc.",
     "marks": 2,
     "openList": true,
     "contextNote": "Saturated fatty acids, example: one named acid, 2 marks, graded 2:0 — all-or-nothing, and naming a second adds nothing. The example must belong to the type it is written under; the three lists do not overlap."
-   },
+   }
+  ],
+  "notes": "The scheme prices three named types identically -- 4 structure points at 1 mark plus one example at 2 marks, 6 marks per type, 18 in all -- so this is three parallel accounts and is carded one per account, which is the rule for parallel accounts everywhere else in this subject. It was one six-row card, over the five-row cap for a fixed tariff: three types' worth of chemistry on one side of one card, and the row cap is a reading-load limit. Structure and example stay separate rows within each card because they are graded differently -- a student who describes the chain perfectly and names no acid still loses 2 of the 6. he-2025-hl-sb-q1b keeps its id, as the saturated card, so no card id vanishes from the deck."
+ },
+ {
+  "id": "he-2025-hl-sb-q1b-mono",
+  "topicId": "home-economics-0-7",
+  "conceptId": "fatty-acid-structure",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "home-economics",
+  "section": "B",
+  "questionRef": "2025 HL Section B Q1(b) — monounsaturated fatty acids",
+  "questionText": "Describe the structure and give one example of monounsaturated fatty acids.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points on structure @ 1 mark (graded 1:0); 1 example @ 2 marks (graded 2:0)"
+  },
+  "totalMarks": 6,
+  "rows": [
    {
-    "id": "r-3",
+    "id": "r-structure",
     "kind": "anyN",
     "verbatim": "Monounsaturated fatty acids — structure",
     "marks": 4,
@@ -7761,15 +7780,37 @@
     }
    },
    {
-    "id": "r-4",
+    "id": "r-example",
     "kind": "point",
     "verbatim": "Example oleic acid; etc.",
     "marks": 2,
     "openList": true,
     "contextNote": "Monounsaturated fatty acids, example: one named acid, 2 marks, graded 2:0 — all-or-nothing, and naming a second adds nothing. The example must belong to the type it is written under; the three lists do not overlap."
-   },
+   }
+  ],
+  "notes": "The scheme prices three named types identically -- 4 structure points at 1 mark plus one example at 2 marks, 6 marks per type, 18 in all -- so this is three parallel accounts and is carded one per account, which is the rule for parallel accounts everywhere else in this subject. It was one six-row card, over the five-row cap for a fixed tariff: three types' worth of chemistry on one side of one card, and the row cap is a reading-load limit. Structure and example stay separate rows within each card because they are graded differently -- a student who describes the chain perfectly and names no acid still loses 2 of the 6. he-2025-hl-sb-q1b keeps its id, as the saturated card, so no card id vanishes from the deck."
+ },
+ {
+  "id": "he-2025-hl-sb-q1b-poly",
+  "topicId": "home-economics-0-7",
+  "conceptId": "fatty-acid-structure",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "home-economics",
+  "section": "B",
+  "questionRef": "2025 HL Section B Q1(b) — polyunsaturated fatty acids",
+  "questionText": "Describe the structure and give one example of polyunsaturated fatty acids.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 points on structure @ 1 mark (graded 1:0); 1 example @ 2 marks (graded 2:0)"
+  },
+  "totalMarks": 6,
+  "rows": [
    {
-    "id": "r-5",
+    "id": "r-structure",
     "kind": "anyN",
     "verbatim": "Polyunsaturated fatty acids — structure",
     "marks": 4,
@@ -7789,15 +7830,15 @@
     }
    },
    {
-    "id": "r-6",
+    "id": "r-example",
     "kind": "point",
-    "verbatim": "Example linoleic acid; linolenic acid; arachidonic acid; etc. Accept clear diagrams",
+    "verbatim": "Example linoleic acid; linolenic acid; arachidonic acid; etc.",
     "marks": 2,
     "openList": true,
     "contextNote": "Polyunsaturated fatty acids, example: one named acid, 2 marks, graded 2:0 — all-or-nothing, and naming a second adds nothing. The example must belong to the type it is written under; the three lists do not overlap."
    }
   ],
-  "notes": "Three named types, each priced identically at 4 structure points (1 mark each) plus one example (2 marks) — 6 marks per type, 18 in all. Kept as six rows rather than three so the structure marks and the example mark are not blurred: they are graded differently, and a student who describes all three chains perfectly but names no acids still loses 6 of the 18."
+  "notes": "The scheme prices three named types identically -- 4 structure points at 1 mark plus one example at 2 marks, 6 marks per type, 18 in all -- so this is three parallel accounts and is carded one per account, which is the rule for parallel accounts everywhere else in this subject. It was one six-row card, over the five-row cap for a fixed tariff: three types' worth of chemistry on one side of one card, and the row cap is a reading-load limit. Structure and example stay separate rows within each card because they are graded differently -- a student who describes the chain perfectly and names no acid still loses 2 of the 6. he-2025-hl-sb-q1b keeps its id, as the saturated card, so no card id vanishes from the deck."
  },
  {
   "id": "he-2025-hl-sb-q1c",

@@ -52,9 +52,22 @@ export const paperIndex = (() => {
   throw new Error('PAPER_TRAIL_INDEX is not closed in paperTrailData.ts');
 })();
 
+/**
+ * Where the Mark Bank's subject id is not the corpus's key for the same subject.
+ *
+ * Paper Trail files Home Economics under the syllabus's full name, and the deck
+ * calls it what the app calls it. Nothing warned about the mismatch — the lookup
+ * simply found nothing, resolvePaperFileid returned its honest null, and all 569
+ * Home Economics cards shipped with no link to the paper they came from.
+ */
+const CORPUS_KEY = {
+  'home-economics': 'home-economics-s-and-s',
+};
+
 /** The English-language sitting of one subject, year and level. */
 export const paperEntry = (subjectId, year, level) =>
-  (paperIndex[subjectId] ?? []).find(e => e.year === year && e.level === level && e.lang === 'ev');
+  (paperIndex[CORPUS_KEY[subjectId] ?? subjectId] ?? [])
+    .find(e => e.year === year && e.level === level && e.lang === 'ev');
 
 /**
  * The sections a paper's label covers: "Section A&B" -> {A, B}, "Section 2 & 3"

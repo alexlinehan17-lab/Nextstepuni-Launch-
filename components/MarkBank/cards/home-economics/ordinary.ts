@@ -30,7 +30,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sa-q1", topicId: "home-economics-0-5", conceptId: "he-protein-hbv-and-amino-acids",
     section: "A", questionRef: "2021 OL Section A Q1",
@@ -45,7 +45,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sa-q2", topicId: "home-economics-0-8", conceptId: "he-minerals-calcium-and-iron-functions",
     section: "A", questionRef: "2021 OL Section A Q2",
@@ -60,7 +60,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sa-q3", topicId: "home-economics-0-9", conceptId: "he-meat-toughness-and-tenderising",
     section: "A", questionRef: "2021 OL Section A Q3",
@@ -74,7 +74,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sa-q4", topicId: "home-economics-0-9", conceptId: "he-vegetables-classification-and-composition",
     section: "A", questionRef: "2021 OL Section A Q4",
@@ -89,7 +89,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sa-q5", topicId: "home-economics-0-1", conceptId: "he-healthy-eating-guidelines-for-children",
     section: "A", questionRef: "2021 OL Section A Q5",
@@ -102,7 +102,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sa-q6", topicId: "home-economics-0-4", conceptId: "he-food-processing-and-cross-contamination",
     section: "A", questionRef: "2021 OL Section A Q6",
@@ -117,7 +117,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sa-q7", topicId: "home-economics-0-9", conceptId: "flour-types-and-culinary-uses",
     section: "A", questionRef: "2021 OL Section A Q7",
@@ -133,7 +133,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sa-q8", topicId: "home-economics-0-1", conceptId: "dental-health-vegetarian-diets-and-fibre",
     section: "A", questionRef: "2021 OL Section A Q8",
@@ -149,7 +149,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sa-q9", topicId: "home-economics-0-4", conceptId: "methods-of-food-preservation",
     section: "A", questionRef: "2021 OL Section A Q9",
@@ -165,7 +165,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sa-q10", topicId: "home-economics-1-1", conceptId: "private-health-insurance",
     section: "A", questionRef: "2021 OL Section A Q10",
@@ -179,7 +179,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sa-q11", topicId: "home-economics-1-3", conceptId: "choosing-and-disposing-of-electrical-appliances",
     section: "A", questionRef: "2021 OL Section A Q11",
@@ -193,7 +193,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sa-q12", topicId: "home-economics-1-4", conceptId: "uses-of-textiles-in-the-home",
     section: "A", questionRef: "2021 OL Section A Q12",
@@ -206,7 +206,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sa-q13", topicId: "home-economics-1-1", conceptId: "household-expenditure",
     section: "A", questionRef: "2021 OL Section A Q13",
@@ -221,7 +221,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sa-q1", topicId: "home-economics-0-1", conceptId: "diet-and-health-true-or-false",
     section: "A", questionRef: "2022 OL Section A Q1",
@@ -236,7 +236,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sa-q2", topicId: "home-economics-0-7", conceptId: "functions-and-sources-of-lipids",
     section: "A", questionRef: "2022 OL Section A Q2",
@@ -250,7 +250,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sa-q3", topicId: "home-economics-0-3", conceptId: "types-of-sauces-worked-examples",
     section: "A", questionRef: "2022 OL Section A Q3",
@@ -265,7 +265,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sa-q4", topicId: "home-economics-0-9", conceptId: "fruit-and-vegetables-vitamin-c-blanching-seasonality",
     section: "A", questionRef: "2022 OL Section A Q4",
@@ -280,7 +280,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sa-q5", topicId: "home-economics-0-3", conceptId: "dishes-by-cooking-method-baking-and-grilling",
     section: "A", questionRef: "2022 OL Section A Q5",
@@ -296,7 +296,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sa-q6", topicId: "home-economics-0-10", conceptId: "meal-planning-for-a-person-recovering-from-illness",
     section: "A", questionRef: "2022 OL Section A Q6",
@@ -309,7 +309,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sa-q7", topicId: "home-economics-0-11", conceptId: "food-packaging-functions-and-materials",
     section: "A", questionRef: "2022 OL Section A Q7",
@@ -324,7 +324,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sa-q8", topicId: "home-economics-0-10", conceptId: "food-choices-for-pre-school-children",
     section: "A", questionRef: "2022 OL Section A Q8",
@@ -337,7 +337,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sa-q9", topicId: "home-economics-0-4", conceptId: "safe-food-preparation-guidelines",
     section: "A", questionRef: "2022 OL Section A Q9",
@@ -352,7 +352,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sa-q10", topicId: "home-economics-0-11", conceptId: "classes-of-food-additives",
     section: "A", questionRef: "2022 OL Section A Q10",
@@ -367,7 +367,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sa-q11", topicId: "home-economics-1-1", conceptId: "buying-goods-on-credit",
     section: "A", questionRef: "2022 OL Section A Q11",
@@ -381,7 +381,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sa-q12", topicId: "home-economics-1-1", conceptId: "income-deductions-paye-prsi-net-income",
     section: "A", questionRef: "2022 OL Section A Q12",
@@ -396,7 +396,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sa-q13", topicId: "home-economics-1-4", conceptId: "choosing-household-textiles-factors",
     section: "A", questionRef: "2022 OL Section A Q13",
@@ -409,7 +409,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sa-q1", topicId: "home-economics-0-7", conceptId: "lipids-composition-and-function",
     section: "A", questionRef: "2023 OL Section A Q1",
@@ -424,7 +424,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sa-q2", topicId: "home-economics-0-1", conceptId: "adult-energy-requirement-factors",
     section: "A", questionRef: "2023 OL Section A Q2",
@@ -437,7 +437,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sa-q3", topicId: "home-economics-0-5", conceptId: "protein-properties-of-egg",
     section: "A", questionRef: "2023 OL Section A Q3",
@@ -453,7 +453,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sa-q4", topicId: "home-economics-0-8", conceptId: "iron-functions-and-sources",
     section: "A", questionRef: "2023 OL Section A Q4",
@@ -467,7 +467,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sa-q5", topicId: "home-economics-0-1", conceptId: "digestion-of-nutrients",
     section: "A", questionRef: "2023 OL Section A Q5",
@@ -482,7 +482,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sa-q6", topicId: "home-economics-0-9", conceptId: "cereal-food-products",
     section: "A", questionRef: "2023 OL Section A Q6",
@@ -497,7 +497,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sa-q7", topicId: "home-economics-0-6", conceptId: "increasing-dietary-fibre-intake",
     section: "A", questionRef: "2023 OL Section A Q7",
@@ -510,7 +510,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sa-q8", topicId: "home-economics-0-3", conceptId: "raising-agents-in-baked-products",
     section: "A", questionRef: "2023 OL Section A Q8",
@@ -526,7 +526,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sa-q9", topicId: "home-economics-0-3", conceptId: "guidelines-for-grilling",
     section: "A", questionRef: "2023 OL Section A Q9",
@@ -539,7 +539,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sa-q10", topicId: "home-economics-1-1", conceptId: "means-tested-versus-universal-welfare-payments",
     section: "A", questionRef: "2023 OL Section A Q10",
@@ -555,7 +555,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sa-q11", topicId: "home-economics-1-1", conceptId: "types-of-credit-and-disadvantages",
     section: "A", questionRef: "2023 OL Section A Q11",
@@ -569,7 +569,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sa-q12", topicId: "home-economics-1-4", conceptId: "functions-of-household-textiles",
     section: "A", questionRef: "2023 OL Section A Q12",
@@ -582,7 +582,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sa-q13", topicId: "home-economics-1-3", conceptId: "selecting-a-microwave-oven",
     section: "A", questionRef: "2023 OL Section A Q13",
@@ -595,7 +595,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sa-q1", topicId: "home-economics-0-5", conceptId: "protein-biological-value",
     section: "A", questionRef: "2024 OL Section A Q1",
@@ -610,7 +610,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sa-q2", topicId: "home-economics-0-8", conceptId: "vitamin-c",
     section: "A", questionRef: "2024 OL Section A Q2",
@@ -624,7 +624,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sa-q3", topicId: "home-economics-0-1", conceptId: "energy-balance-and-obesity",
     section: "A", questionRef: "2024 OL Section A Q3",
@@ -639,7 +639,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sa-q4", topicId: "home-economics-0-9", conceptId: "meat-tenderness",
     section: "A", questionRef: "2024 OL Section A Q4",
@@ -653,7 +653,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sa-q5", topicId: "home-economics-0-9", conceptId: "cereals-and-starch",
     section: "A", questionRef: "2024 OL Section A Q5",
@@ -668,7 +668,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sa-q6", topicId: "home-economics-0-1", conceptId: "weight-management-lifestyle-changes",
     section: "A", questionRef: "2024 OL Section A Q6",
@@ -681,7 +681,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sa-q7", topicId: "home-economics-0-3", conceptId: "pastry-types-and-dishes",
     section: "A", questionRef: "2024 OL Section A Q7",
@@ -695,7 +695,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sa-q8", topicId: "home-economics-0-4", conceptId: "home-freezing-guidelines",
     section: "A", questionRef: "2024 OL Section A Q8",
@@ -708,7 +708,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sa-q9", topicId: "home-economics-0-2", conceptId: "heat-transfer-methods",
     section: "A", questionRef: "2024 OL Section A Q9",
@@ -723,7 +723,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sa-q10", topicId: "home-economics-1-2", conceptId: "consumer-rights-when-buying-goods",
     section: "A", questionRef: "2024 OL Section A Q10",
@@ -736,7 +736,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sa-q11", topicId: "home-economics-1-1", conceptId: "advantages-of-regular-saving",
     section: "A", questionRef: "2024 OL Section A Q11",
@@ -749,7 +749,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sa-q12", topicId: "home-economics-1-4", conceptId: "textile-selection-criteria-household",
     section: "A", questionRef: "2024 OL Section A Q12",
@@ -765,7 +765,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sa-q13", topicId: "home-economics-1-1", conceptId: "life-assurance-benefits",
     section: "A", questionRef: "2024 OL Section A Q13",
@@ -778,7 +778,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sa-q14", topicId: "home-economics-1-3", conceptId: "microwave-oven-use-guidelines",
     section: "A", questionRef: "2024 OL Section A Q14",
@@ -791,7 +791,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sa-q1", topicId: "home-economics-0-1", conceptId: "healthy-eating-guidelines",
     section: "A", questionRef: "2025 OL Section A Q1",
@@ -806,7 +806,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sa-q2", topicId: "home-economics-0-5", conceptId: "protein-functions-and-sources",
     section: "A", questionRef: "2025 OL Section A Q2",
@@ -820,7 +820,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sa-q3", topicId: "home-economics-0-9", conceptId: "fish-nutritional-value",
     section: "A", questionRef: "2025 OL Section A Q3",
@@ -835,7 +835,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sa-q4", topicId: "home-economics-0-6", conceptId: "carbohydrate-functions-and-storage",
     section: "A", questionRef: "2025 OL Section A Q4",
@@ -850,7 +850,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sa-q5", topicId: "home-economics-0-9", conceptId: "effects-of-cooking-on-cereals",
     section: "A", questionRef: "2025 OL Section A Q5",
@@ -863,7 +863,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sa-q6", topicId: "home-economics-0-10", conceptId: "meal-planning-for-children",
     section: "A", questionRef: "2025 OL Section A Q6",
@@ -876,7 +876,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sa-q7", topicId: "home-economics-0-9", conceptId: "cheese-varieties-and-their-culinary-uses",
     section: "A", questionRef: "2025 OL Section A Q7",
@@ -891,7 +891,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sa-q8", topicId: "home-economics-1-2", conceptId: "food-labelling-consumer-benefits",
     section: "A", questionRef: "2025 OL Section A Q8",
@@ -904,7 +904,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sa-q9", topicId: "home-economics-0-10", conceptId: "factors-influencing-family-meal-planning",
     section: "A", questionRef: "2025 OL Section A Q9",
@@ -919,7 +919,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sa-q10", topicId: "home-economics-1-5", conceptId: "renewable-energy-sources-and-benefits",
     section: "A", questionRef: "2025 OL Section A Q10",
@@ -933,7 +933,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sa-q11", topicId: "home-economics-1-1", conceptId: "buying-goods-on-credit",
     section: "A", questionRef: "2025 OL Section A Q11",
@@ -946,7 +946,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sa-q12", topicId: "home-economics-1-4", conceptId: "uses-of-household-textiles",
     section: "A", questionRef: "2025 OL Section A Q12",
@@ -959,7 +959,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP014EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sa-q13", topicId: "home-economics-1-2", conceptId: "online-clothes-shopping-disadvantages",
     section: "A", questionRef: "2025 OL Section A Q13",
@@ -972,7 +972,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sb-q1b", topicId: "home-economics-0-8", conceptId: "vitamin-c",
     section: "B", questionRef: "2025 OL Section B Q1(b)",
@@ -988,7 +988,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sb-q1c", topicId: "home-economics-0-10", conceptId: "fruit-veg-in-teenage-diet",
     section: "B", questionRef: "2025 OL Section B Q1(c)",
@@ -1001,7 +1001,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sb-q1d", topicId: "home-economics-1-2", conceptId: "convenience-food-selection",
     section: "B", questionRef: "2025 OL Section B Q1(d)",
@@ -1015,7 +1015,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sb-q2c", topicId: "home-economics-0-2", conceptId: "effects-of-heat-on-eggs",
     section: "B", questionRef: "2025 OL Section B Q2(c)",
@@ -1029,7 +1029,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sb-q3a", topicId: "home-economics-0-4", conceptId: "causes-of-food-spoilage",
     section: "B", questionRef: "2025 OL Section B Q3(a)",
@@ -1043,7 +1043,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sb-q3c", topicId: "home-economics-0-4", conceptId: "advantages-of-preservation",
     section: "B", questionRef: "2025 OL Section B Q3(c)",
@@ -1057,7 +1057,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sb-q4a", topicId: "home-economics-1-1", conceptId: "advantages-of-budgeting",
     section: "B", questionRef: "2025 OL Section B Q4(a)",
@@ -1071,7 +1071,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sb-q4b", topicId: "home-economics-1-1", conceptId: "weekly-budget-plan",
     section: "B", questionRef: "2025 OL Section B Q4(b)",
@@ -1085,7 +1085,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sb-q4c", topicId: "home-economics-1-1", conceptId: "mabs-role",
     section: "B", questionRef: "2025 OL Section B Q4(c)",
@@ -1099,7 +1099,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sb-q5a", topicId: "home-economics-2-1", conceptId: "marriage-customs-cultures",
     section: "B", questionRef: "2025 OL Section B Q5(a)",
@@ -1113,7 +1113,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sb-q5b", topicId: "home-economics-2-1", conceptId: "marriage-rights-responsibilities",
     section: "B", questionRef: "2025 OL Section B Q5(b)",
@@ -1127,7 +1127,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sb-q5c", topicId: "home-economics-2-1", conceptId: "pre-marriage-courses",
     section: "B", questionRef: "2025 OL Section B Q5(c)",
@@ -1141,7 +1141,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sb-q3b", topicId: "home-economics-0-4", conceptId: "food-preservation-method",
     section: "B", questionRef: "2025 OL Section B Q3(b)",
@@ -1156,7 +1156,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sb-q1a", topicId: "home-economics-0-10", conceptId: "factors-affecting-food-choice",
     section: "B", questionRef: "2024 OL Section B Q1(a)",
@@ -1170,7 +1170,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sb-q1b", topicId: "home-economics-0-6", conceptId: "carbohydrates-account",
     section: "B", questionRef: "2024 OL Section B Q1(b)",
@@ -1186,7 +1186,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sb-q1c", topicId: "home-economics-0-6", conceptId: "increasing-dietary-fibre",
     section: "B", questionRef: "2024 OL Section B Q1(c)",
@@ -1200,7 +1200,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sb-q1d", topicId: "home-economics-1-5", conceptId: "reducing-food-waste",
     section: "B", questionRef: "2024 OL Section B Q1(d)",
@@ -1214,7 +1214,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sb-q2c", topicId: "home-economics-0-9", conceptId: "storing-fruit-vegetables",
     section: "B", questionRef: "2024 OL Section B Q2(c)",
@@ -1228,7 +1228,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sb-q3a", topicId: "home-economics-0-11", conceptId: "food-additives",
     section: "B", questionRef: "2024 OL Section B Q3(a)",
@@ -1242,7 +1242,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sb-q3b", topicId: "home-economics-0-11", conceptId: "irish-food-industry-sectors",
     section: "B", questionRef: "2024 OL Section B Q3(b)",
@@ -1256,7 +1256,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sb-q3c", topicId: "home-economics-0-11", conceptId: "packaging-roles",
     section: "B", questionRef: "2024 OL Section B Q3(c)",
@@ -1272,7 +1272,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sb-q4a", topicId: "home-economics-1-2", conceptId: "factors-influencing-purchases",
     section: "B", questionRef: "2024 OL Section B Q4(a)",
@@ -1286,7 +1286,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sb-q4b", topicId: "home-economics-1-2", conceptId: "small-claims-court",
     section: "B", questionRef: "2024 OL Section B Q4(b)",
@@ -1300,7 +1300,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sb-q4c", topicId: "home-economics-1-2", conceptId: "sale-of-goods-1980-ol",
     section: "B", questionRef: "2024 OL Section B Q4(c)",
@@ -1314,7 +1314,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sb-q5a", topicId: "home-economics-2-0", conceptId: "functions-of-the-family-ol",
     section: "B", questionRef: "2024 OL Section B Q5(a)",
@@ -1331,7 +1331,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sb-q5b", topicId: "home-economics-2-0", conceptId: "state-support-family-functions",
     section: "B", questionRef: "2024 OL Section B Q5(b)",
@@ -1345,7 +1345,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sb-q5c", topicId: "home-economics-2-0", conceptId: "parent-child-relationship",
     section: "B", questionRef: "2024 OL Section B Q5(c)",
@@ -1359,7 +1359,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sb-q1b", topicId: "home-economics-0-5", conceptId: "protein-account-ol",
     section: "B", questionRef: "2023 OL Section B Q1(b)",
@@ -1375,7 +1375,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sb-q1c", topicId: "home-economics-0-8", conceptId: "water-in-sport-diet",
     section: "B", questionRef: "2023 OL Section B Q1(c)",
@@ -1389,7 +1389,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sb-q1d", topicId: "home-economics-1-1", conceptId: "reducing-household-food-costs",
     section: "B", questionRef: "2023 OL Section B Q1(d)",
@@ -1403,7 +1403,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sb-q2c", topicId: "home-economics-0-9", conceptId: "tenderising-meat",
     section: "B", questionRef: "2023 OL Section B Q2(c)",
@@ -1417,7 +1417,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sb-q3a", topicId: "home-economics-0-4", conceptId: "kitchen-hygiene-practices",
     section: "B", questionRef: "2023 OL Section B Q3(a)",
@@ -1431,7 +1431,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sb-q3b", topicId: "home-economics-1-3", conceptId: "refrigeration-appliance-study",
     section: "B", questionRef: "2023 OL Section B Q3(b)",
@@ -1447,7 +1447,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sb-q3c", topicId: "home-economics-1-3", conceptId: "technology-meal-efficiency",
     section: "B", questionRef: "2023 OL Section B Q3(c)",
@@ -1461,7 +1461,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sb-q4a", topicId: "home-economics-3-3", conceptId: "choosing-a-family-home",
     section: "B", questionRef: "2023 OL Section B Q4(a)",
@@ -1475,7 +1475,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sb-q4b", topicId: "home-economics-1-1", conceptId: "household-insurance",
     section: "B", questionRef: "2023 OL Section B Q4(b)",
@@ -1489,7 +1489,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sb-q4c", topicId: "home-economics-1-5", conceptId: "reducing-pollution",
     section: "B", questionRef: "2023 OL Section B Q4(c)",
@@ -1503,7 +1503,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sb-q5a", topicId: "home-economics-2-3", conceptId: "older-people-roles",
     section: "B", questionRef: "2023 OL Section B Q5(a)",
@@ -1517,7 +1517,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sb-q5b", topicId: "home-economics-2-1", conceptId: "teenage-adult-conflict",
     section: "B", questionRef: "2023 OL Section B Q5(b)",
@@ -1532,7 +1532,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sb-q5c", topicId: "home-economics-2-3", conceptId: "making-a-will",
     section: "B", questionRef: "2023 OL Section B Q5(c)",
@@ -1546,7 +1546,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sb-q1b", topicId: "home-economics-0-9", conceptId: "dairy-in-teenage-diet",
     section: "B", questionRef: "2022 OL Section B Q1(b)",
@@ -1560,7 +1560,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sb-q1c", topicId: "home-economics-0-8", conceptId: "calcium-account-ol",
     section: "B", questionRef: "2022 OL Section B Q1(c)",
@@ -1576,7 +1576,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sb-q1d", topicId: "home-economics-1-5", conceptId: "buying-storing-dairy",
     section: "B", questionRef: "2022 OL Section B Q1(d)",
@@ -1590,7 +1590,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sb-q2c", topicId: "home-economics-0-2", conceptId: "effects-of-heat-on-cereals",
     section: "B", questionRef: "2022 OL Section B Q2(c)",
@@ -1604,7 +1604,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sb-q3b", topicId: "home-economics-0-3", conceptId: "food-preservation-safety",
     section: "B", questionRef: "2022 OL Section B Q3(b)",
@@ -1618,7 +1618,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sb-q3c", topicId: "home-economics-1-2", conceptId: "food-labelling-benefits",
     section: "B", questionRef: "2022 OL Section B Q3(c)",
@@ -1632,7 +1632,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sb-q4a", topicId: "home-economics-1-2", conceptId: "consumer-rights-appliances",
     section: "B", questionRef: "2022 OL Section B Q4(a)",
@@ -1646,7 +1646,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sb-q4b", topicId: "home-economics-1-3", conceptId: "small-electrical-appliance-study",
     section: "B", questionRef: "2022 OL Section B Q4(b)",
@@ -1662,7 +1662,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sb-q4c", topicId: "home-economics-1-3", conceptId: "eu-energy-label",
     section: "B", questionRef: "2022 OL Section B Q4(c)",
@@ -1676,7 +1676,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sb-q5a", topicId: "home-economics-2-1", conceptId: "marriage-rights-responsibilities-ol",
     section: "B", questionRef: "2022 OL Section B Q5(a)",
@@ -1690,7 +1690,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sb-q5b", topicId: "home-economics-2-1", conceptId: "legal-separation-divorce",
     section: "B", questionRef: "2022 OL Section B Q5(b)",
@@ -1704,7 +1704,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sb-q5c", topicId: "home-economics-2-1", conceptId: "cultural-variations-marriage",
     section: "B", questionRef: "2022 OL Section B Q5(c)",
@@ -1718,7 +1718,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sc-q1aii", topicId: "home-economics-3-5", conceptId: "planning-a-lighting-system",
     section: "C", questionRef: "2022 OL Section C E1 Q1(a)(ii)",
@@ -1732,7 +1732,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sc-q1aiii", topicId: "home-economics-3-5", conceptId: "contemporary-lighting-types",
     section: "C", questionRef: "2022 OL Section C E1 Q1(a)(iii)",
@@ -1746,7 +1746,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sc-q1bi", topicId: "home-economics-3-3", conceptId: "choice-of-housing-for-an-older-person",
     section: "C", questionRef: "2022 OL Section C E1 Q1(b)(i)",
@@ -1760,7 +1760,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sc-q1bii", topicId: "home-economics-3-6", conceptId: "reducing-home-energy-bills",
     section: "C", questionRef: "2022 OL Section C E1 Q1(b)(ii)",
@@ -1774,7 +1774,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sc-q1ci", topicId: "home-economics-3-5", conceptId: "electrical-safety-devices",
     section: "C", questionRef: "2022 OL Section C E1 Q1(c)(i)",
@@ -1789,7 +1789,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sc-q1cii", topicId: "home-economics-1-3", conceptId: "safe-use-of-electricity-guidelines-ol",
     section: "C", questionRef: "2022 OL Section C E1 Q1(c)(ii)",
@@ -1803,7 +1803,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sc-q2aii", topicId: "home-economics-3-8", conceptId: "accessorising-an-outfit",
     section: "C", questionRef: "2022 OL Section C E2 Q2(a)(ii)",
@@ -1818,7 +1818,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sc-q2bi", topicId: "home-economics-3-7", conceptId: "profile-of-a-man-made-fabric",
     section: "C", questionRef: "2022 OL Section C E2 Q2(b)(i)",
@@ -1834,7 +1834,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sc-q2bii", topicId: "home-economics-3-7", conceptId: "advantages-of-man-made-fibres",
     section: "C", questionRef: "2022 OL Section C E2 Q2(b)(ii)",
@@ -1848,7 +1848,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sc-q2ci", topicId: "home-economics-3-8", conceptId: "factors-influencing-teenage-clothing-choices",
     section: "C", questionRef: "2022 OL Section C E2 Q2(c)(i)",
@@ -1862,7 +1862,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sc-q2cii", topicId: "home-economics-3-8", conceptId: "social-media-and-fashion-trends",
     section: "C", questionRef: "2022 OL Section C E2 Q2(c)(ii)",
@@ -1876,7 +1876,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sc-q3ai", topicId: "home-economics-3-9", conceptId: "defining-relative-and-absolute-poverty",
     section: "C", questionRef: "2022 OL Section C E3 Q3(a)(i)",
@@ -1892,7 +1892,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sc-q3aii", topicId: "home-economics-3-9", conceptId: "why-poverty-persists-in-ireland",
     section: "C", questionRef: "2022 OL Section C E3 Q3(a)(ii)",
@@ -1906,7 +1906,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sc-q3aiii", topicId: "home-economics-3-9", conceptId: "voluntary-organisations-supporting-families-in-poverty",
     section: "C", questionRef: "2022 OL Section C E3 Q3(a)(iii)",
@@ -1921,7 +1921,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sc-q3bi", topicId: "home-economics-3-11", conceptId: "rural-to-urban-migration-reasons",
     section: "C", questionRef: "2022 OL Section C E3 Q3(b)(i)",
@@ -1935,7 +1935,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sc-q3bii", topicId: "home-economics-3-11", conceptId: "impact-of-rural-to-urban-movement-on-family-life",
     section: "C", questionRef: "2022 OL Section C E3 Q3(b)(ii)",
@@ -1949,7 +1949,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sc-q3ci", topicId: "home-economics-2-0", conceptId: "choosing-a-childcare-facility",
     section: "C", questionRef: "2022 OL Section C E3 Q3(c)(i)",
@@ -1963,7 +1963,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sc-q3cii", topicId: "home-economics-2-0", conceptId: "pre-school-and-child-development",
     section: "C", questionRef: "2022 OL Section C E3 Q3(c)(ii)",
@@ -1977,7 +1977,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sc-q4ai", topicId: "home-economics-0-9", conceptId: "nutritive-and-dietetic-value-of-fish",
     section: "C", questionRef: "2022 OL Section C Q4(a)(i) - Core",
@@ -1993,7 +1993,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sc-q4aii", topicId: "home-economics-0-9", conceptId: "buying-fresh-fish-and-the-effects-of-cooking",
     section: "C", questionRef: "2022 OL Section C Q4(a)(ii) - Core",
@@ -2008,7 +2008,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sc-q4aiii", topicId: "home-economics-0-4", conceptId: "processing-fish-to-extend-shelf-life",
     section: "C", questionRef: "2022 OL Section C Q4(a)(iii) - Core",
@@ -2024,7 +2024,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sc-q4bi", topicId: "home-economics-1-2", conceptId: "retail-techniques-to-encourage-purchase",
     section: "C", questionRef: "2022 OL Section C Q4(b)(i) - Core",
@@ -2038,7 +2038,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sc-q4bii", topicId: "home-economics-1-2", conceptId: "making-a-consumer-complaint",
     section: "C", questionRef: "2022 OL Section C Q4(b)(ii) - Core",
@@ -2052,7 +2052,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sc-q4ci", topicId: "home-economics-1-0", conceptId: "factors-affecting-management-of-the-home",
     section: "C", questionRef: "2022 OL Section C Q4(c)(i) - Core",
@@ -2068,7 +2068,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sc-q4cii", topicId: "home-economics-1-3", conceptId: "technology-and-efficient-home-management",
     section: "C", questionRef: "2022 OL Section C Q4(c)(ii) - Core",
@@ -2082,7 +2082,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sc-q1ai", topicId: "home-economics-3-4", conceptId: "evaluating-an-open-plan-kitchen-living-space",
     section: "C", questionRef: "2022 OL Section C E1 Q1(a)(i)",
@@ -2104,7 +2104,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "he-2022-ol-sc-q2ai", topicId: "home-economics-3-8", conceptId: "evaluating-athleisure-wear-outfits",
     section: "C", questionRef: "2022 OL Section C E2 Q2(a)(i)",
@@ -2128,7 +2128,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sb-q1b", topicId: "home-economics-0-1", conceptId: "causes-of-obesity",
     section: "B", questionRef: "2021 OL Section B Q1(b)",
@@ -2142,7 +2142,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sb-q1c", topicId: "home-economics-0-7", conceptId: "lipids-account-ol",
     section: "B", questionRef: "2021 OL Section B Q1(c)",
@@ -2158,7 +2158,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sb-q1d", topicId: "home-economics-0-7", conceptId: "reducing-fat-intake",
     section: "B", questionRef: "2021 OL Section B Q1(d)",
@@ -2172,7 +2172,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sb-q2a", topicId: "home-economics-0-1", conceptId: "pregnancy-dietary-requirements-ol",
     section: "B", questionRef: "2021 OL Section B Q2(a)",
@@ -2186,7 +2186,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sb-q2c", topicId: "home-economics-1-2", conceptId: "food-labelling-buying",
     section: "B", questionRef: "2021 OL Section B Q2(c)",
@@ -2200,7 +2200,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sb-q3b", topicId: "home-economics-0-9", conceptId: "vegetables-cooking-storage",
     section: "B", questionRef: "2021 OL Section B Q3(b)",
@@ -2215,7 +2215,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sb-q3c", topicId: "home-economics-0-10", conceptId: "vegetables-for-children",
     section: "B", questionRef: "2021 OL Section B Q3(c)",
@@ -2229,7 +2229,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sb-q4a", topicId: "home-economics-1-1", conceptId: "advantages-household-budget",
     section: "B", questionRef: "2021 OL Section B Q4(a)",
@@ -2243,7 +2243,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sb-q4b", topicId: "home-economics-1-1", conceptId: "weekly-budget-plan-ol",
     section: "B", questionRef: "2021 OL Section B Q4(b)",
@@ -2257,7 +2257,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sb-q4c", topicId: "home-economics-1-1", conceptId: "buying-on-credit",
     section: "B", questionRef: "2021 OL Section B Q4(c)",
@@ -2272,7 +2272,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sb-q5a", topicId: "home-economics-2-0", conceptId: "family-structures",
     section: "B", questionRef: "2021 OL Section B Q5(a)",
@@ -2288,7 +2288,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sb-q5b", topicId: "home-economics-2-1", conceptId: "adolescent-roles-responsibilities",
     section: "B", questionRef: "2021 OL Section B Q5(b)",
@@ -2302,7 +2302,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sb-q5c", topicId: "home-economics-2-0", conceptId: "family-communication",
     section: "B", questionRef: "2021 OL Section B Q5(c)",
@@ -2316,7 +2316,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sc-q1ai", topicId: "home-economics-3-6", conceptId: "advantages-of-home-insulation",
     section: "C", questionRef: "2021 OL Section C E1 Q1(a)(i)",
@@ -2330,7 +2330,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sc-q1aii", topicId: "home-economics-3-6", conceptId: "methods-of-insulation-attic-walls-windows",
     section: "C", questionRef: "2021 OL Section C E1 Q1(a)(ii)",
@@ -2346,7 +2346,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sc-q1aiii", topicId: "home-economics-3-6", conceptId: "advantages-and-disadvantages-of-solar-energy",
     section: "C", questionRef: "2021 OL Section C E1 Q1(a)(iii)",
@@ -2360,7 +2360,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sc-q1bi", topicId: "home-economics-1-1", conceptId: "buying-a-home-advantages-and-disadvantages",
     section: "C", questionRef: "2021 OL Section C E1 Q1(b)(i)",
@@ -2376,7 +2376,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sc-q1bii", topicId: "home-economics-3-3", conceptId: "housing-requirements-family-versus-single-person",
     section: "C", questionRef: "2021 OL Section C E1 Q1(b)(ii)",
@@ -2390,7 +2390,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sc-q1ci", topicId: "home-economics-3-4", conceptId: "planning-the-interior-design-of-a-house",
     section: "C", questionRef: "2021 OL Section C E1 Q1(c)(i)",
@@ -2404,7 +2404,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sc-q1cii", topicId: "home-economics-3-4", conceptId: "soft-furnishings-and-room-appearance",
     section: "C", questionRef: "2021 OL Section C E1 Q1(c)(ii)",
@@ -2418,7 +2418,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sc-q2aii", topicId: "home-economics-3-8", conceptId: "accessorising-occasion-wear",
     section: "C", questionRef: "2021 OL Section C E2 Q2(a)(ii)",
@@ -2433,7 +2433,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sc-q2bi", topicId: "home-economics-3-7", conceptId: "profile-of-a-natural-fabric-ol",
     section: "C", questionRef: "2021 OL Section C E2 Q2(b)(i)",
@@ -2448,7 +2448,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sc-q2bii", topicId: "home-economics-3-7", conceptId: "advantages-of-natural-fibres",
     section: "C", questionRef: "2021 OL Section C E2 Q2(b)(ii)",
@@ -2462,7 +2462,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sc-q2ci", topicId: "home-economics-3-8", conceptId: "factors-influencing-choice-of-clothing-ol",
     section: "C", questionRef: "2021 OL Section C E2 Q2(c)(i)",
@@ -2478,7 +2478,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sc-q2cii", topicId: "home-economics-3-8", conceptId: "trendsetters-and-fashion-trends",
     section: "C", questionRef: "2021 OL Section C E2 Q2(c)(ii)",
@@ -2492,7 +2492,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sc-q3ai", topicId: "home-economics-3-10", conceptId: "education-and-development-of-the-individual",
     section: "C", questionRef: "2021 OL Section C E3 Q3(a)(i)",
@@ -2508,7 +2508,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sc-q3aii", topicId: "home-economics-3-10", conceptId: "factors-influencing-educational-achievement-ol",
     section: "C", questionRef: "2021 OL Section C E3 Q3(a)(ii)",
@@ -2522,7 +2522,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sc-q3aiii", topicId: "home-economics-2-2", conceptId: "benefits-of-work-experience",
     section: "C", questionRef: "2021 OL Section C E3 Q3(a)(iii)",
@@ -2536,7 +2536,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sc-q3bi", topicId: "home-economics-3-11", conceptId: "importance-of-leisure",
     section: "C", questionRef: "2021 OL Section C E3 Q3(b)(i)",
@@ -2550,7 +2550,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sc-q3bii", topicId: "home-economics-3-11", conceptId: "influences-on-choice-of-leisure-activity",
     section: "C", questionRef: "2021 OL Section C E3 Q3(b)(ii)",
@@ -2566,7 +2566,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sc-q3ci", topicId: "home-economics-3-9", conceptId: "effects-of-unemployment-ol",
     section: "C", questionRef: "2021 OL Section C E3 Q3(c)(i)",
@@ -2582,7 +2582,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sc-q3cii", topicId: "home-economics-3-9", conceptId: "voluntary-organisations-supporting-the-unemployed",
     section: "C", questionRef: "2021 OL Section C E3 Q3(c)(ii)",
@@ -2597,7 +2597,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sc-q4ai", topicId: "home-economics-0-9", conceptId: "nutritive-and-dietetic-value-of-eggs",
     section: "C", questionRef: "2021 OL Section C Q4(a)(i) - Core",
@@ -2613,7 +2613,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sc-q4aii", topicId: "home-economics-0-9", conceptId: "using-eggs-in-the-diet-and-effects-of-heat",
     section: "C", questionRef: "2021 OL Section C Q4(a)(ii) - Core",
@@ -2628,7 +2628,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sc-q4aiii", topicId: "home-economics-0-11", conceptId: "popularity-of-small-irish-food-producers",
     section: "C", questionRef: "2021 OL Section C Q4(a)(iii) - Core",
@@ -2642,7 +2642,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sc-q4bi", topicId: "home-economics-1-2", conceptId: "influences-on-consumer-decision-making",
     section: "C", questionRef: "2021 OL Section C Q4(b)(i) - Core",
@@ -2658,7 +2658,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sc-q4bii", topicId: "home-economics-1-2", conceptId: "advantages-and-disadvantages-of-online-shopping",
     section: "C", questionRef: "2021 OL Section C Q4(b)(ii) - Core",
@@ -2674,7 +2674,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sc-q4ci", topicId: "home-economics-2-1", conceptId: "influences-on-adolescent-behaviour",
     section: "C", questionRef: "2021 OL Section C Q4(c)(i) - Core",
@@ -2688,7 +2688,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sc-q4cii", topicId: "home-economics-2-1", conceptId: "adolescent-behaviour-and-conflict-in-the-home",
     section: "C", questionRef: "2021 OL Section C Q4(c)(ii) - Core",
@@ -2702,7 +2702,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q1ai", topicId: "home-economics-3-6", conceptId: "methods-of-insulating-a-home",
     section: "C", questionRef: "2025 OL Section C E1 Q1(a)(i)",
@@ -2715,7 +2715,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q1aii", topicId: "home-economics-3-6", conceptId: "advantages-of-a-well-insulated-home",
     section: "C", questionRef: "2025 OL Section C E1 Q1(a)(ii)",
@@ -2728,7 +2728,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q1aiii", topicId: "home-economics-3-6", conceptId: "sustainable-practices-saving-energy",
     section: "C", questionRef: "2025 OL Section C E1 Q1(a)(iii)",
@@ -2741,7 +2741,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q1bi", topicId: "home-economics-3-5", conceptId: "electricity-delivery-into-the-home",
     section: "C", questionRef: "2025 OL Section C E1 Q1(b)(i)",
@@ -2754,7 +2754,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q1bii", topicId: "home-economics-3-5", conceptId: "electrical-terms-mcb-voltage-kwh",
     section: "C", questionRef: "2025 OL Section C E1 Q1(b)(ii)",
@@ -2769,7 +2769,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q1ci", topicId: "home-economics-3-4", conceptId: "interior-design-planning-factors",
     section: "C", questionRef: "2025 OL Section C E1 Q1(c)(i)",
@@ -2784,7 +2784,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q1cii", topicId: "home-economics-3-4", conceptId: "texture-in-interior-design",
     section: "C", questionRef: "2025 OL Section C E1 Q1(c)(ii)",
@@ -2798,7 +2798,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q2bi", topicId: "home-economics-3-7", conceptId: "why-fabric-finishes-are-used",
     section: "C", questionRef: "2025 OL Section C E2 Q2(b)(i)",
@@ -2812,7 +2812,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q2bii", topicId: "home-economics-3-7", conceptId: "fabric-finishes-named-described-and-used",
     section: "C", questionRef: "2025 OL Section C E2 Q2(b)(ii)",
@@ -2828,7 +2828,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q2ci", topicId: "home-economics-3-8", conceptId: "selecting-a-commercial-sewing-pattern",
     section: "C", questionRef: "2025 OL Section C E2 Q2(c)(i)",
@@ -2842,7 +2842,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q2cii", topicId: "home-economics-3-8", conceptId: "importance-of-pressing-a-garment",
     section: "C", questionRef: "2025 OL Section C E2 Q2(c)(ii)",
@@ -2856,7 +2856,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q3ai", topicId: "home-economics-3-10", conceptId: "primary-school-education-in-ireland",
     section: "C", questionRef: "2025 OL Section C E3 Q3(a)(i)",
@@ -2873,7 +2873,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q3aii-name", topicId: "home-economics-3-10", conceptId: "education-initiatives-supporting-attendance",
     section: "C", questionRef: "2025 OL Section C E3 Q3(a)(ii) - naming the initiative",
@@ -2887,7 +2887,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q3aiii", topicId: "home-economics-3-10", conceptId: "education-and-child-development",
     section: "C", questionRef: "2025 OL Section C E3 Q3(a)(iii)",
@@ -2903,7 +2903,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q3bi", topicId: "home-economics-3-11", conceptId: "choosing-a-childcare-option",
     section: "C", questionRef: "2025 OL Section C E3 Q3(b)(i)",
@@ -2917,7 +2917,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q3bii-name", topicId: "home-economics-3-11", conceptId: "state-supports-for-families-with-children",
     section: "C", questionRef: "2025 OL Section C E3 Q3(b)(ii) - naming the support",
@@ -2931,7 +2931,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q3ci", topicId: "home-economics-3-9", conceptId: "reasons-for-risk-of-poverty",
     section: "C", questionRef: "2025 OL Section C E3 Q3(c)(i)",
@@ -2945,7 +2945,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q3cii", topicId: "home-economics-3-9", conceptId: "effects-of-poverty-on-families",
     section: "C", questionRef: "2025 OL Section C E3 Q3(c)(ii)",
@@ -2959,7 +2959,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q4ai", topicId: "home-economics-0-9", conceptId: "nutritive-and-dietetic-value-of-yoghurt",
     section: "C", questionRef: "2025 OL Section C Q4(a)(i) - Core",
@@ -2975,7 +2975,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q4aii", topicId: "home-economics-0-9", conceptId: "yoghurt-uses-buying-and-storing",
     section: "C", questionRef: "2025 OL Section C Q4(a)(ii) - Core",
@@ -2991,7 +2991,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q4aiii", topicId: "home-economics-0-11", conceptId: "reasons-for-variety-of-yoghurt-products",
     section: "C", questionRef: "2025 OL Section C Q4(a)(iii) - Core",
@@ -3005,7 +3005,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q4bi", topicId: "home-economics-1-1", conceptId: "importance-of-regular-saving",
     section: "C", questionRef: "2025 OL Section C Q4(b)(i) - Core",
@@ -3019,7 +3019,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q4bii-name-reasons", topicId: "home-economics-1-1", conceptId: "choosing-a-family-saving-scheme",
     section: "C", questionRef: "2025 OL Section C Q4(b)(ii) - Core - naming the scheme and reasons",
@@ -3034,7 +3034,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q4ci", topicId: "home-economics-2-1", conceptId: "dealing-with-teenager-parent-conflict",
     section: "C", questionRef: "2025 OL Section C Q4(c)(i) - Core",
@@ -3048,7 +3048,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q4cii", topicId: "home-economics-2-3", conceptId: "grandparents-support-for-the-family",
     section: "C", questionRef: "2025 OL Section C Q4(c)(ii) - Core",
@@ -3062,7 +3062,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sc-q1ai", topicId: "home-economics-3-5", conceptId: "treatment-of-public-water-supply",
     section: "C", questionRef: "2024 OL Section C E1 Q1(a)(i)",
@@ -3076,7 +3076,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sc-q1aii", topicId: "home-economics-3-5", conceptId: "preventing-cold-water-supply-freezing",
     section: "C", questionRef: "2024 OL Section C E1 Q1(a)(ii)",
@@ -3090,7 +3090,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sc-q1aiii", topicId: "home-economics-3-5", conceptId: "cold-water-system-components",
     section: "C", questionRef: "2024 OL Section C E1 Q1(a)(iii)",
@@ -3106,7 +3106,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sc-q1bi", topicId: "home-economics-3-3", conceptId: "applying-for-planning-permission",
     section: "C", questionRef: "2024 OL Section C E1 Q1(b)(i)",
@@ -3120,7 +3120,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sc-q1bii", topicId: "home-economics-3-3", conceptId: "professional-services-when-building-a-house",
     section: "C", questionRef: "2024 OL Section C E1 Q1(b)(ii)",
@@ -3136,7 +3136,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sc-q1ci", topicId: "home-economics-3-5", conceptId: "advantages-of-good-ventilation",
     section: "C", questionRef: "2024 OL Section C E1 Q1(c)(i)",
@@ -3150,7 +3150,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sc-q1cii", topicId: "home-economics-3-5", conceptId: "kitchen-ventilation-methods",
     section: "C", questionRef: "2024 OL Section C E1 Q1(c)(ii)",
@@ -3165,7 +3165,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sc-q2b-linen", topicId: "home-economics-3-7", conceptId: "natural-fibre-profile-linen-ol",
     section: "C", questionRef: "2024 OL Section C E2 Q2(b) - Linen",
@@ -3181,7 +3181,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sc-q2b-cotton", topicId: "home-economics-3-7", conceptId: "natural-fibre-profile-cotton-ol",
     section: "C", questionRef: "2024 OL Section C E2 Q2(b) - Cotton",
@@ -3197,7 +3197,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sc-q2b-wool", topicId: "home-economics-3-7", conceptId: "natural-fibre-profile-wool-ol",
     section: "C", questionRef: "2024 OL Section C E2 Q2(b) - Wool",
@@ -3213,7 +3213,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sc-q2b-silk", topicId: "home-economics-3-7", conceptId: "natural-fibre-profile-silk-ol",
     section: "C", questionRef: "2024 OL Section C E2 Q2(b) - Silk",
@@ -3229,7 +3229,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sc-q2ci", topicId: "home-economics-3-8", conceptId: "summer-fashion-trends",
     section: "C", questionRef: "2024 OL Section C E2 Q2(c)(i)",
@@ -3243,7 +3243,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sc-q2cii", topicId: "home-economics-3-8", conceptId: "choosing-work-wear-clothing",
     section: "C", questionRef: "2024 OL Section C E2 Q2(c)(ii)",
@@ -3257,7 +3257,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sc-q3ai", topicId: "home-economics-2-2", conceptId: "types-of-work-paid-unpaid-voluntary",
     section: "C", questionRef: "2024 OL Section C E3 Q3(a)(i)",
@@ -3273,7 +3273,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sc-q3aii", topicId: "home-economics-2-2", conceptId: "women-in-the-workforce",
     section: "C", questionRef: "2024 OL Section C E3 Q3(a)(ii)",
@@ -3287,7 +3287,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sc-q3aiii", topicId: "home-economics-2-0", conceptId: "impact-of-dual-earner-families",
     section: "C", questionRef: "2024 OL Section C E3 Q3(a)(iii)",
@@ -3301,7 +3301,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sc-q3bi", topicId: "home-economics-3-11", conceptId: "influences-on-family-leisure-activities",
     section: "C", questionRef: "2024 OL Section C E3 Q3(b)(i)",
@@ -3317,7 +3317,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sc-q3bii", topicId: "home-economics-3-11", conceptId: "benefits-of-leisure-activities",
     section: "C", questionRef: "2024 OL Section C E3 Q3(b)(ii)",
@@ -3331,7 +3331,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sc-q3ci", topicId: "home-economics-2-0", conceptId: "social-and-economic-changes-and-family-life",
     section: "C", questionRef: "2024 OL Section C E3 Q3(c)(i)",
@@ -3347,7 +3347,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sc-q3cii", topicId: "home-economics-2-2", conceptId: "second-level-education-and-the-workplace",
     section: "C", questionRef: "2024 OL Section C E3 Q3(c)(ii)",
@@ -3361,7 +3361,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sc-q4ai", topicId: "home-economics-0-9", conceptId: "nutritive-and-dietetic-value-of-milk",
     section: "C", questionRef: "2024 OL Section C Q4(a)(i) - Core",
@@ -3377,7 +3377,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sc-q4aii-pasteurisation", topicId: "home-economics-0-9", conceptId: "milk-heat-treatment-pasteurisation",
     section: "C", questionRef: "2024 OL Section C Q4(a)(ii) - Core - Pasteurisation",
@@ -3393,7 +3393,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sc-q4aii-sterilisation", topicId: "home-economics-0-9", conceptId: "milk-heat-treatment-sterilisation",
     section: "C", questionRef: "2024 OL Section C Q4(a)(ii) - Core - Sterilisation",
@@ -3409,7 +3409,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sc-q4aii-uht", topicId: "home-economics-0-9", conceptId: "milk-heat-treatment-uht",
     section: "C", questionRef: "2024 OL Section C Q4(a)(ii) - Core - Ultra-heat treatment (UHT)",
@@ -3425,7 +3425,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sc-q4aii-condensed", topicId: "home-economics-0-9", conceptId: "milk-heat-treatment-condensed",
     section: "C", questionRef: "2024 OL Section C Q4(a)(ii) - Core - Condensed milk",
@@ -3441,7 +3441,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sc-q4aii-evaporated", topicId: "home-economics-0-9", conceptId: "milk-heat-treatment-evaporated",
     section: "C", questionRef: "2024 OL Section C Q4(a)(ii) - Core - Evaporated milk",
@@ -3457,7 +3457,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sc-q4aiii", topicId: "home-economics-0-10", conceptId: "including-dairy-foods-in-a-healthy-diet",
     section: "C", questionRef: "2024 OL Section C Q4(a)(iii) - Core",
@@ -3471,7 +3471,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sc-q4bi", topicId: "home-economics-1-3", conceptId: "choosing-a-kitchen-appliance",
     section: "C", questionRef: "2024 OL Section C Q4(b)(i) - Core",
@@ -3485,7 +3485,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sc-q4bii", topicId: "home-economics-1-3", conceptId: "safe-use-of-electrical-kitchen-appliances",
     section: "C", questionRef: "2024 OL Section C Q4(b)(ii) - Core",
@@ -3499,7 +3499,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sc-q4ci", topicId: "home-economics-2-1", conceptId: "conditions-for-a-legally-valid-marriage",
     section: "C", questionRef: "2024 OL Section C Q4(c)(i) - Core",
@@ -3513,7 +3513,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sc-q4cii", topicId: "home-economics-2-1", conceptId: "responsibilities-within-a-marriage",
     section: "C", questionRef: "2024 OL Section C Q4(c)(ii) - Core",
@@ -3527,7 +3527,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q1aii", topicId: "home-economics-3-5", conceptId: "choosing-a-home-heating-system",
     section: "C", questionRef: "2023 OL Section C E1 Q1(a)(ii)",
@@ -3541,7 +3541,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q1aiii", topicId: "home-economics-1-3", conceptId: "safe-use-of-electricity-in-the-home",
     section: "C", questionRef: "2023 OL Section C E1 Q1(a)(iii)",
@@ -3554,7 +3554,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q1bi", topicId: "home-economics-3-6", conceptId: "improving-home-energy-efficiency",
     section: "C", questionRef: "2023 OL Section C E1 Q1(b)(i)",
@@ -3568,7 +3568,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q1bii", topicId: "home-economics-3-6", conceptId: "renewable-energy-sources-and-advantages",
     section: "C", questionRef: "2023 OL Section C E1 Q1(b)(ii)",
@@ -3583,7 +3583,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q1ci", topicId: "home-economics-3-5", conceptId: "cold-water-supply-parts-ol",
     section: "C", questionRef: "2023 OL Section C E1 Q1(c)(i)",
@@ -3598,7 +3598,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q1cii", topicId: "home-economics-3-6", conceptId: "reducing-water-usage-in-the-home",
     section: "C", questionRef: "2023 OL Section C E1 Q1(c)(ii)",
@@ -3611,7 +3611,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q2aii", topicId: "home-economics-3-8", conceptId: "methods-of-applying-a-design-to-a-garment",
     section: "C", questionRef: "2023 OL Section C E2 Q2(a)(ii)",
@@ -3626,7 +3626,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q2bi", topicId: "home-economics-3-7", conceptId: "why-fabric-finishes-are-used-2023",
     section: "C", questionRef: "2023 OL Section C E2 Q2(b)(i)",
@@ -3640,7 +3640,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q2bii", topicId: "home-economics-3-7", conceptId: "fabric-finishes-2023-ol",
     section: "C", questionRef: "2023 OL Section C E2 Q2(b)(ii)",
@@ -3656,7 +3656,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q2ci", topicId: "home-economics-3-8", conceptId: "irish-designers-contribution-to-industry",
     section: "C", questionRef: "2023 OL Section C E2 Q2(c)(i)",
@@ -3670,7 +3670,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q2cii", topicId: "home-economics-3-8", conceptId: "popular-fashion-accessories",
     section: "C", questionRef: "2023 OL Section C E2 Q2(c)(ii)",
@@ -3684,7 +3684,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q3ai", topicId: "home-economics-3-9", conceptId: "defining-unemployment",
     section: "C", questionRef: "2023 OL Section C E3 Q3(a)(i)",
@@ -3698,7 +3698,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q3aii", topicId: "home-economics-3-9", conceptId: "effects-of-unemployment",
     section: "C", questionRef: "2023 OL Section C E3 Q3(a)(ii)",
@@ -3714,7 +3714,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q3aiii", topicId: "home-economics-3-10", conceptId: "education-preparing-young-people-for-work",
     section: "C", questionRef: "2023 OL Section C E3 Q3(a)(iii)",
@@ -3728,7 +3728,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q3aiv", topicId: "home-economics-3-9", conceptId: "statutory-schemes-supporting-the-unemployed",
     section: "C", questionRef: "2023 OL Section C E3 Q3(a)(iv) - naming the scheme",
@@ -3742,7 +3742,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q3bi", topicId: "home-economics-3-10", conceptId: "primary-school-and-child-development",
     section: "C", questionRef: "2023 OL Section C E3 Q3(b)(i)",
@@ -3756,7 +3756,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q3bii", topicId: "home-economics-3-10", conceptId: "factors-influencing-educational-achievement",
     section: "C", questionRef: "2023 OL Section C E3 Q3(b)(ii)",
@@ -3770,7 +3770,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q3ci", topicId: "home-economics-3-11", conceptId: "social-and-economic-change-and-family-life",
     section: "C", questionRef: "2023 OL Section C E3 Q3(c)(i)",
@@ -3786,7 +3786,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q3cii", topicId: "home-economics-3-11", conceptId: "benefits-of-voluntary-work-to-the-community",
     section: "C", questionRef: "2023 OL Section C E3 Q3(c)(ii)",
@@ -3800,7 +3800,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q4ai", topicId: "home-economics-0-8", conceptId: "causes-and-effects-of-osteoporosis",
     section: "C", questionRef: "2023 OL Section C Q4(a)(i) - Core",
@@ -3816,7 +3816,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q4aii", topicId: "home-economics-0-8", conceptId: "preventing-osteoporosis",
     section: "C", questionRef: "2023 OL Section C Q4(a)(ii) - Core",
@@ -3830,7 +3830,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q4aiii", topicId: "home-economics-1-2", conceptId: "food-labelling-and-special-diets",
     section: "C", questionRef: "2023 OL Section C Q4(a)(iii) - Core",
@@ -3844,7 +3844,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q4bi", topicId: "home-economics-1-1", conceptId: "factors-affecting-household-income",
     section: "C", questionRef: "2023 OL Section C Q4(b)(i) - Core",
@@ -3858,7 +3858,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q4bii", topicId: "home-economics-1-1", conceptId: "benefits-of-a-family-budget-plan",
     section: "C", questionRef: "2023 OL Section C Q4(b)(ii) - Core",
@@ -3872,7 +3872,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q4ci", topicId: "home-economics-2-0", conceptId: "changing-role-of-the-adolescent",
     section: "C", questionRef: "2023 OL Section C Q4(c)(i) - Core",
@@ -3886,7 +3886,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q4cii", topicId: "home-economics-2-0", conceptId: "family-support-for-child-development",
     section: "C", questionRef: "2023 OL Section C Q4(c)(ii) - Core",
@@ -3900,7 +3900,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "he-2021-ol-sc-q2ai", topicId: "home-economics-3-8", conceptId: "evaluating-occasion-wear",
     section: "C", questionRef: "2021 OL Section C E2 Q2(a)(i)",
@@ -3922,7 +3922,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q1ai", topicId: "home-economics-3-4", conceptId: "evaluating-a-bathroom-design",
     section: "C", questionRef: "2023 OL Section C E1 Q1(a)(i)",
@@ -3944,7 +3944,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "he-2023-ol-sc-q2ai", topicId: "home-economics-3-8", conceptId: "suitability-of-festival-fashion",
     section: "C", questionRef: "2023 OL Section C E2 Q2(a)(i)",
@@ -3968,7 +3968,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sc-q2ai", topicId: "home-economics-3-8", conceptId: "suitability-of-sportswear",
     section: "C", questionRef: "2024 OL Section C E2 Q2(a)(i)",
@@ -3992,7 +3992,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "he-2024-ol-sc-q2aii", topicId: "home-economics-3-8", conceptId: "emphasis-applied-to-an-outfit",
     section: "C", questionRef: "2024 OL Section C E2 Q2(a)(ii)",
@@ -4015,7 +4015,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q2ai", topicId: "home-economics-3-8", conceptId: "suitability-of-outfits-for-an-occasion",
     section: "C", questionRef: "2025 OL Section C E2 Q2(a)(i)",
@@ -4039,7 +4039,7 @@ export const CARDS: SecCard[] = [
   {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
-    paperFileid: null,
+    paperFileid: "LC098GLP039EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Home Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "he-2025-ol-sc-q2aii", topicId: "home-economics-3-8", conceptId: "accessorising-an-outfit",
     section: "C", questionRef: "2025 OL Section C E2 Q2(a)(ii) - naming the accessory",

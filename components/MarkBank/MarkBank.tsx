@@ -501,7 +501,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
           <h2 style={{ font: `700 24px/1.15 ${SERIF}`, color: INK, margin: '0 0 3px' }}>
             {subject.title}
           </h2>
-          <Eyebrow>{level === 'higher' ? 'Higher level' : 'Ordinary level'} · redeveloped specification</Eyebrow>
+          <Eyebrow>{level === 'higher' ? 'Higher level' : 'Ordinary level'} · {subject.spec}</Eyebrow>
 
           {/* alignItems, or the pills stretch: a flex column stretches its
               children by default, which overrides the Segment's own inline-flex

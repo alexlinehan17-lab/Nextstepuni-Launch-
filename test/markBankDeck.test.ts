@@ -38,6 +38,8 @@ import { CARDS as AGSCI_HIGHER } from '../components/MarkBank/cards/agricultural
 import { CARDS as AGSCI_ORDINARY } from '../components/MarkBank/cards/agricultural-science/ordinary';
 import { CARDS as BUS_HIGHER } from '../components/MarkBank/cards/business/higher';
 import { CARDS as BUS_ORDINARY } from '../components/MarkBank/cards/business/ordinary';
+import { CARDS as HE_HIGHER } from '../components/MarkBank/cards/home-economics/higher';
+import { CARDS as HE_ORDINARY } from '../components/MarkBank/cards/home-economics/ordinary';
 
 /** Every deck at once. The app loads one at a time; the guards check them all,
  *  so a new subject inherits the whole net the day its first cards land.
@@ -50,7 +52,7 @@ import { CARDS as BUS_ORDINARY } from '../components/MarkBank/cards/business/ord
 const SAMPLE_CARDS = [
   ...BIO_HIGHER, ...BIO_ORDINARY, ...CHEM_HIGHER, ...CHEM_ORDINARY,
   ...PHYS_HIGHER, ...PHYS_ORDINARY, ...AGSCI_HIGHER, ...AGSCI_ORDINARY,
-  ...BUS_HIGHER, ...BUS_ORDINARY,
+  ...BUS_HIGHER, ...BUS_ORDINARY, ...HE_HIGHER, ...HE_ORDINARY,
 ];
 import {
   isDiagramCard, isContentFreeRow, looksLikeSectionLabel, tariffReconciles,
@@ -398,6 +400,7 @@ describe('the taxonomy is the redeveloped specification', () => {
     const PREFIX: Record<string, string> = {
       biology: 'bio-', chemistry: 'chem-', physics: 'phys-',
       'agricultural-science': 'agsci-', business: 'business-',
+      'home-economics': 'home-economics-',
     };
     for (const subject of SUBJECTS) {
       const prefix = PREFIX[subject.id];

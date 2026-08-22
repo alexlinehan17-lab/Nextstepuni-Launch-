@@ -336,38 +336,48 @@ export const CURRICULUM_REDEVELOPMENT_TRANSITIONS: Record<string, CurriculumRede
   },
 };
 
-const redevelopedSpecifications: CanonicalCurriculumSpecification[] = MARK_BANK_SUBJECTS.map((subject) => {
-  const transition = transitionSubjects[subject.id];
-  const legacy = CURRICULUM.find((entry) => entry.id === subject.id);
-  return {
-    id: `${subject.id}:${transition.firstExamYear}`,
-    subjectId: subject.id,
-    subjectName: subject.title,
-    programme: 'leaving-certificate-established',
-    category: legacy?.category ?? 'other',
-    levels: legacy?.levels ?? ['higher', 'ordinary'],
-    title: `${transition.title} — specification examined from ${transition.firstExamYear}`,
-    firstExamYear: transition.firstExamYear,
-    status: 'verified',
-    sources: [{
-      authority: 'Curriculum Online',
-      title: transition.title,
-      url: transition.source,
-      role: 'content',
-    }],
-    groups: subject.strands.map((strand) => ({
-      id: `${subject.id}:${strand.id}`,
-      title: strand.title,
-      label: strand.label,
-      topics: strand.topics.map((topic) => ({
-        id: topic.id,
-        code: topic.code,
-        title: topic.title,
+const redevelopedSpecifications: CanonicalCurriculumSpecification[] = MARK_BANK_SUBJECTS
+  /* Not every Mark Bank subject has a redeveloped specification to record.
+   * Home Economics is taught and examined on the Scientific and Social
+   * syllabus; the NCCA schedule introduces its replacement in 2027 for first
+   * examination in 2029, and that specification is not published, so there is
+   * nothing here to cite. Its record is `home-economics:current` below.
+   * Mapping over every subject regardless would assert a specification that
+   * does not exist — and it threw on the missing entry the moment a subject
+   * without one was added to the deck. */
+  .filter((subject) => transitionSubjects[subject.id])
+  .map((subject) => {
+    const transition = transitionSubjects[subject.id];
+    const legacy = CURRICULUM.find((entry) => entry.id === subject.id);
+    return {
+      id: `${subject.id}:${transition.firstExamYear}`,
+      subjectId: subject.id,
+      subjectName: subject.title,
+      programme: 'leaving-certificate-established',
+      category: legacy?.category ?? 'other',
+      levels: legacy?.levels ?? ['higher', 'ordinary'],
+      title: `${transition.title} — specification examined from ${transition.firstExamYear}`,
+      firstExamYear: transition.firstExamYear,
+      status: 'verified',
+      sources: [{
+        authority: 'Curriculum Online',
+        title: transition.title,
+        url: transition.source,
+        role: 'content',
+      }],
+      groups: subject.strands.map((strand) => ({
+        id: `${subject.id}:${strand.id}`,
+        title: strand.title,
+        label: strand.label,
+        topics: strand.topics.map((topic) => ({
+          id: topic.id,
+          code: topic.code,
+          title: topic.title,
+        })),
       })),
-    })),
-    coverageNodeLevel: 'topic',
-  };
-});
+      coverageNodeLevel: 'topic',
+    };
+  });
 
 const constructionTechnologySpecification: CanonicalCurriculumSpecification = {
   id: 'construction-technology:2028',
