@@ -33682,6 +33682,38 @@
   "stem": "Beef, sheep and dairy farmers require high quality silage for winter feed."
  },
  {
+  "id": "agsci-2022-ol-q3b",
+  "topicId": "agsci-3-1",
+  "conceptId": "what-a-low-soil-ph-means-for-a-crop",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2022 OL Q3(b)",
+  "questionText": "The result of the investigation is shown in the table below. Suggest one implication this has for growing crops on the land and one way the student could alter the pH of the soil.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 + 1"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "low nutrient availability or nutrient deficiencies in the crop",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "adding lime to the land",
+    "marks": 1
+   }
+  ],
+  "stem": "pH Soil sample 5.2",
+  "notes": "The scheme also allows reduced yield, slower growth or an effect on earthworm activity as the implication."
+ },
+ {
   "id": "agsci-2022-ol-q4bi",
   "topicId": "agsci-4-1",
   "conceptId": "oestrus-cycle-length",
@@ -33841,6 +33873,62 @@
    }
   ],
   "stem": "Effect of soil pH on nitrous oxide (N20) emissions 7000 Cumulaitve N20 Emissions (g N20/ha/year) 6000 5000 4000 3000 2000 1000 0 5.1 5.4 6.2 6.9 Soil pH"
+ },
+ {
+  "id": "agsci-2023-hl-q8c",
+  "topicId": "agsci-3-1",
+  "conceptId": "what-the-urea-leaching-test-shows",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2023 HL Q8(c)",
+  "questionText": "The student tested the leachate using nitrate strips and recorded the results shown below.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "There is a large amount of nitrate present in the water from the unprotected urea (250mg/l) compared to protected urea (50mg/l)",
+    "marks": 3
+   }
+  ],
+  "stem": "Nitrate Levels in Soil Water Amount of Nitrate (mg/l) 300 250 200 150 100 50 0 Control Protected urea Unprotected urea Analyse the graph and briefly describe the conclusion the student made from his investigation.",
+  "notes": "The scheme goes on to say what a farmer should do about it: use protected urea, because less nitrate leaches from it."
+ },
+ {
+  "id": "agsci-2023-hl-q16aii",
+  "topicId": "agsci-4-3-1",
+  "conceptId": "reading-an-emissions-figure-against-average",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2023 HL Q16(a)(ii)",
+  "questionText": "State with reason if the main source of emissions is above or below the national average for the enterprise.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 + 1"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Below",
+    "marks": 5
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "As the average for the enterprise is over 40%",
+    "marks": 1
+   }
+  ],
+  "stem": "Percentage Share of Farm Carbon Emissions 50 Current farm assessment (2021) Previous farm assessment (2019) National average Percentage Share (%) 40 30 20 10 0 Animal digestion Manure usage Fertiliser used Forage / Feed Sources of Carbon Emissions (Adapted from Teagasc, 2022)"
  },
  {
   "id": "agsci-2023-ol-q1b",

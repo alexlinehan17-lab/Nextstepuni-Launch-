@@ -73,4 +73,11 @@ A.card(10, 'c', topic='agsci-3-3-3', concept='taking-a-representative-silage-sam
        use=[1, 2], marks=[2, 1], notation='2+1', spread=True, row_kind='anyN',
        omit=(0,))
 
+A.card(3, 'b', topic='agsci-3-1', concept='what-a-low-soil-ph-means-for-a-crop',
+       from_runs=[((3, 'b', None), 0, slice(7, None)),
+                  ((3, 'b', None), 3, slice(5, None))],
+       marks=[3, 1], notation='3 + 1',
+       notes='The scheme also allows reduced yield, slower growth or an effect on '
+             'earthworm activity as the implication.')
+
 A.emit()

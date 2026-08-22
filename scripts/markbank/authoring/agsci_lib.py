@@ -102,7 +102,7 @@ class Author:
              use=None, marks=None, tariff='fixed', total=None, figure=None,
              labels=None, notes=None, stem=True, checked=None, suffix='',
              row_kind='point', notation=None, spread=False, context=None,
-             omit=(), source='md', card_id=None, from_run=None):
+             omit=(), source='md', card_id=None, from_run=None, from_runs=None):
         ref = part_ref(self.year, self.level, q, letter, roman)
 
         question = self.paper.text(q, letter, roman) or self._fallback.text(q, letter, roman)
@@ -131,7 +131,23 @@ class Author:
         # from the tail of its own question cue — "Explain the underlined term.
         # Produce many offspring". The words are still lifted from the scheme;
         # only where the cue stops and the answer starts is read off the page.
-        if from_run is not None:
+        # Several marking points can share one line of the scheme; from_runs
+        # takes a slice per row where from_run takes one. Same contract as lib.
+        if from_runs is not None:
+            if from_run is not None:
+                raise Refused(f'{ref}: pass from_run or from_runs, not both')
+            candidates = []
+            for parent, point_index, token_index in from_runs:
+                run = scheme.points(*parent)
+                if point_index >= len(run):
+                    raise Refused(f'{ref}: parent {parent} has no point {point_index}')
+                taken = run[point_index].split()[token_index]
+                if not taken:
+                    raise Refused(f'{ref}: run {run[point_index]!r} yields nothing '
+                                  f'for {token_index}')
+                candidates.append(' '.join(taken).lstrip('*').strip())
+            use = list(range(len(candidates))) if use is None else use
+        elif from_run is not None:
             parent, point_index, token_index = from_run
             run = scheme.points(*parent)
             if point_index >= len(run):
