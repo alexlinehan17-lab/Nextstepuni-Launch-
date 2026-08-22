@@ -11,6 +11,7 @@
  * (which reuses the cross-year jump).
  */
 
+import { usePulse } from '../../hooks/usePulse';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { ArrowLeft, ChevronRight, Layers, Download, Search, X, Link2, Check as CheckIcon } from 'lucide-react';
 import SubjectTilePicker from '../shared/SubjectTilePicker';
@@ -45,7 +46,7 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
   const [scope, setScope] = useState<'mine' | 'all'>(mineIds.length ? 'mine' : 'all');
   const [subjectId, setSubjectId] = useState<string | null>(restore?.subjectId ?? boot?.subjectId ?? null);
   const [subtopicId, setSubtopicId] = useState<string | null>(restore?.subtopicId ?? boot?.subtopicId ?? null);
-  const [copied, setCopied] = useState(false);
+  const [copied, pulseCopied, clearCopied] = usePulse(2000);
   const [sort, setSort] = useState<'busiest' | 'frequent'>('busiest');
   const [levelFilter, setLevelFilter] = useState<'all' | string>('all');
   const [yearFilter, setYearFilter] = useState<'all' | number>('all');
@@ -69,15 +70,14 @@ const ReviseByTopic: React.FC<Props> = ({ subjects, mineIds, uid, subjectLabel, 
   // Reset the topic search when switching subjects.
   useEffect(() => { setTopicQuery(''); }, [subjectId]);
   // The "Copied" confirmation is per-topic.
-  useEffect(() => { setCopied(false); }, [subtopicId]);
+  useEffect(() => { clearCopied(); }, [subtopicId, clearCopied]);
 
   const copyTopicLink = async () => {
     if (!subjectId || !subtopicId) return;
     const url = buildVaultLink(subjectId, subtopicId);
     try {
       await navigator.clipboard.writeText(url);
-      setCopied(true);
-      window.setTimeout(() => setCopied(false), 2000);
+      pulseCopied();
     } catch {
       // Clipboard blocked (insecure context / permissions) — surface the URL so
       // the student can still copy it by hand rather than failing silently.

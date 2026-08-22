@@ -15,6 +15,7 @@
  * primitives so all three decks stay identical.
  */
 
+import { usePulse } from '../hooks/usePulse';
 import React, { useMemo, useState, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
@@ -234,7 +235,7 @@ const CareerPaths: React.FC<{ uid?: string; studentSubjects?: string[]; seedMatc
   const [beat, setBeat] = useState<Beat>('front');
   const [showSaved, setShowSaved] = useState(false);
   const [index, setIndex] = useState(0);
-  const [burst, setBurst] = useState(false);
+  const [burst, pulseBurst] = usePulse(950);
   useEffect(() => { setIndex(0); }, [filter]);
   // If we arrive seeded from the Future Finder once picks have loaded, jump to matches.
   useEffect(() => { if (seedMatches && hasMatches) setFilter('matches'); }, [seedMatches, hasMatches]);
@@ -252,7 +253,7 @@ const CareerPaths: React.FC<{ uid?: string; studentSubjects?: string[]; seedMatc
   const saveFromDetail = (id: string) => {
     const wasSaved = state.savedIds.includes(id);
     toggleSaved(id);
-    if (!wasSaved) { setBurst(true); sound.play('save'); window.setTimeout(() => setBurst(false), 950); }
+    if (!wasSaved) { pulseBurst(); sound.play('save'); }
   };
   const nextUnseen = (): CareerCard | null => deck.find((c) => c.id !== card?.id && !state.seenIds.includes(c.id)) ?? deck.find((c) => c.id !== card?.id) ?? null;
 

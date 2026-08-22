@@ -9,6 +9,7 @@
  * card. No fabricated answers — every card points at a genuine SEC question.
  */
 
+import { usePulse } from '../../hooks/usePulse';
 import React, { useEffect, useMemo, useState } from 'react';
 import { ArrowLeft, ExternalLink, RotateCcw, Settings2, Trash2 } from 'lucide-react';
 import {
@@ -85,7 +86,8 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
   const [managing, setManaging] = useState(false);
   const [deckVer, setDeckVer] = useState(0); // bump to re-read the deck list
   const [retention, setRetentionState] = useState(() => getTargetRetention(uid));
-  const [flash, setFlash] = useState(false); // restrained correct-recall micro-celebration
+  // Restrained correct-recall micro-celebration.
+  const [flash, pulseFlash] = usePulse(550);
   const reduceMotion = useReducedMotion();
 
   const card = queue[pos];
@@ -103,10 +105,7 @@ const ReviewSession: React.FC<Props> = ({ uid, now, subjectLabel, onOpenQuestion
     recordActivity(uid, now, 1); // feeds the practice streak + daily goal
     setDone(d => d + 1);
     // Restrained micro-celebration on genuine recall (Good/Easy), never on a miss.
-    if (g === 'good' || g === 'easy') {
-      setFlash(true);
-      setTimeout(() => setFlash(false), 550);
-    }
+    if (g === 'good' || g === 'easy') pulseFlash();
     // A failed card comes back before the session ends.
     if (g === 'again') setQueue(q => [...q, card]);
     setPos(p => p + 1);
