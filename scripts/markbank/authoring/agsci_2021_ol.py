@@ -35,4 +35,9 @@ A.card(4, 'c', topic='agsci-2-1', concept='disadvantages-of-a-podzol',
        context='Scheme tariff is 3+1: the first disadvantage scores 3 and the '
                'second 1, so the order the answers are given in decides the total.')
 
+# Q12(a), the breed plate, is not carded. The scheme names all four breeds and
+# the figure exists, but agricultural-science-2021-OL-paper-p16-i0 has not been
+# through the inspection pass, so it has no verified alt text and the build
+# refuses to bind it. Carding it needs that pass, not more authoring.
+
 A.emit()
