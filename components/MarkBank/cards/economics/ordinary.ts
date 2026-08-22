@@ -20,6 +20,105 @@
 
 import type { SecCard } from '../../../../types/markBank';
 
-export const CARDS: SecCard[] = [
+const base = {
+  source: 'sec' as const,
+  subjectId: "economics",
+  specVersion: "lc-economics-2019",
+  qa: { gates: ['verbatim', 'tariff', 'figure'], humanReviewedBy: 'agent-verified', humanReviewedAt: '2026-07-31' },
+};
 
+export const CARDS: SecCard[] = [
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2024-ol-q11-a-ii", topicId: "economics-1-2", conceptId: "effect-of-energy-costs-on-business",
+    section: "B", questionRef: "2024 OL Q11(a)(ii)",
+    stem: "Set on a chart of Irish electricity price increases from 2020 to 2022.",
+    questionText: "Outline one possible economic effect of these price increases on businesses in Ireland.",
+    tariffModel: {"kind":"bestNofParts","notation":"1 @ 8","answer":1,"ofParts":6,"perPart":8}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An economic effect on business — any one", marks: 8, contextNote: "One effect, 8 marks.", openList: true, group: {"claimMax":1,"perOption":8,"options":["Increased costs for business due to higher prices: The higher expenditure on electricity will increase the costs of running a business.","Increased prices for consumers: If the business passes the increased costs on to the consumer this means higher prices for consumers which could lead to a fall in demand for goods and services.","Fall in profits: If consumers face higher prices and demand less of the good or service this would lead to a fall in profit for the business. If the business decides to absorb the increased costs themselves this will lead to a fall in their profit.","Electricity conservation: Higher electricity prices may encourage some businesses to be more conscious of their energy usage and invest in energy-saving appliances or practices to reduce their electricity consumption.","Switching to alternative sources of energy or switching provider: Some businesses might switch to alternative sources of energy, such as natural gas, oil, or renewable energy sources, to mitigate the impact of higher electricity prices.","Reduced competitiveness: Higher electricity prices can make businesses less competitive, as they face higher operating costs. This may lead to reduced production, job losses, or business closures."]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2024-ol-q11-a-iii", topicId: "economics-1-3", conceptId: "electricity-credit-rationale",
+    section: "B", questionRef: "2024 OL Q11(a)(iii)",
+    questionText: "During winter 2023 – 2024, the Irish government granted all households a credit of €450 towards their electricity bills. Why, in your opinion, did the government do this?",
+    tariffModel: {"kind":"bestNofParts","notation":"1 @ 8","answer":1,"ofParts":6,"perPart":8}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason the government granted the credit — any one", marks: 8, contextNote: "One reason, 8 marks. The question asks for an opinion, and the scheme answers it with six the examiner will accept — it is not open-ended.", openList: true, group: {"claimMax":1,"perOption":8,"options":["To alleviate the financial burden/economic welfare of Irish households Higher electricity bills have put a significant financial strain on households. By providing the €450 credit, the government aimed to alleviate some of this burden and help households manage their expenses.","To support low-income families: Higher electricity bills disproportionately affected low-income families, leading to energy poverty. The credit helped ensure these households could maintain basic energy services, such as heating and lighting.","To stimulate the economy: By reducing the financial burden of higher electricity bills, households may have had more disposable income to spend on other goods and services, potentially maintaining Ireland’s economic growth.","To increase consumer confidence: The €450 government credit helped improve consumer confidence, as it showed the government's commitment to addressing higher electricity prices and supporting households.","To maintain social stability: Ever increasing electricity prices could have led to public dissatisfaction and unrest. By providing the credit, the government was able to demonstrate its responsiveness to the public's concerns and maintain social stability.","Buy time for policy adjustments: The government is working on long-term solutions to address higher electricity prices, for example the 2023 Climate Action Plan commits that up to 80% of Ireland’s electricity will be sourced from renewables by 2030. The €450 credit provided short-term relief to households while such longer-term solutions are implemented."]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2024-ol-q11-b-iii", topicId: "economics-2-0", conceptId: "oligopoly-in-ireland",
+    section: "B", questionRef: "2024 OL Q11(b)(iii)",
+    questionText: "The electricity market is an example of an oligopoly market in Ireland. Give one example of an oligopoly market in Ireland and explain a reason for your choice.",
+    tariffModel: {"kind":"bestNofParts","notation":"1 @ 8","answer":1,"ofParts":4,"perPart":8}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason a market is an oligopoly — any one", marks: 8, contextNote: "One reason, 8 marks. The scheme accepts mobile phones, broadband, insurance, banking, TV services or supermarkets as the example; the marks are for the reason.", openList: true, group: {"claimMax":1,"perOption":8,"options":["Only a few providers dominate the market: The market is becoming increasingly concentrated, with the largest providers dominating, e.g. the three largest companies control over 80% of the market.","Barriers to entry exist in the market: The barriers enable such firms to maintain their share of the market, e.g. high start-up costs associated with establishing and maintaining plants /relevant infrastructure / meeting regulatory requirements.","Non-price competition exists in the market: Oligopolistic firms often engage in non-price competition, such as marketing, customer service, and product differentiation. In these markets, firms may compete on factors like green energy offerings, smart metering technology etc.","Interdependence exists between firms: The actions of one firm in these markets can significantly impact the other providers, as there are so few major players. This interdependence can lead to strategic decision-making and potential collusion among the firms, e.g. whenever one provider announced a price increase recently it tended to be followed swiftly by similar increases from competing firms."]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2025-ol-q11-b-iii", topicId: "economics-2-0", conceptId: "perfect-competition-consumer-advantage",
+    section: "B", questionRef: "2025 OL Q11(b)(iii)",
+    questionText: "As a consumer what, in your opinion, is the main advantage of a perfectly competitive market? Explain your answer.",
+    tariffModel: {"kind":"bestNofParts","notation":"1 @ 8","answer":1,"ofParts":3,"perPart":8}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An advantage to the consumer — any one", marks: 8, contextNote: "One advantage, 8 marks. The question asks for an opinion and the scheme answers it with the three the examiner accepts.", openList: true, group: {"claimMax":1,"perOption":8,"options":["Low prices - firms are competitive so must operate at lowest point of AC meaning lowest possible prices for consumers. Consumers are not exploited as they have perfect information.","No Advertising – consumers are not taken advantage of with persuasive advertising.","Efficient use of scarce resources – as each firm produces at the lowest point of average cost."]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2025-ol-q11-c-i", topicId: "economics-2-2", conceptId: "dublin-airport-passenger-cap",
+    section: "B", questionRef: "2025 OL Q11(c)(i)",
+    stem: "Dublin Airport has a cap of 32 million passengers a year, which was exceeded in 2024.",
+    questionText: "Outline one reason why, in your opinion, a limit has been placed on the number of passengers who can pass through Dublin Airport.",
+    tariffModel: {"kind":"bestNofParts","notation":"1 @ 8","answer":1,"ofParts":3,"perPart":8}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A reason for the passenger cap — any one", marks: 8, contextNote: "One reason, 8 marks.", openList: true, group: {"claimMax":1,"perOption":8,"options":["Reduce emissions – flying creates a lot of emissions and greenhouse gases which will have a negative impact on the environment. A limit may help reduce emissions.","Reduce traffic around Dublin airport – this will reduce traffic congestion for residents.","Reduce noise pollution – for local residents as less planes will fly reducing the negative impact on residents. Reduce overcrowding – Dublin airport is already stretched and at capacity during busy periods. Facilities may need to be improved before more passengers can be facilitated. (ii) If this passenger cap remains unchanged outline the possible economic effect this may 1stx 7 have on each of the following: 2ndx 3 • Tourism into Ireland 3rd x 3 • Other airports in Ireland i.e. Cork, Shannon and Ireland West Airport • Economic growth in Ireland. Tourism into Ireland This could lead to a reduction in the number of tourists that will visit Ireland, through Dublin airport. This could reduce the money coming into the country. It may also make it more expensive for tourists to visit Ireland, through some other route, and that could impact businesses in Ireland dependent on tourism negatively. Other airports in Ireland i.e. Cork, Shannon and Ireland West Airport Airlines might incentivise travel to other airports in Ireland. These airports may be cheaper to fly in to now which could lead to more traffic into these airports. Economic growth in Ireland This could impact Ireland’s economic growth negatively. If less people visit Ireland as it is now more expensive to do so – economic growth will fall as there will be a reduction in injections into the circular flow as tourists are spending less money in the country. It could also lead to unemployment which will have knock on effects for economic growth."]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2025-ol-q13-c", topicId: "economics-3-1", conceptId: "uses-of-the-apple-tax-money",
+    section: "B", questionRef: "2025 OL Q13(c)",
+    questionText: "Outline two areas of infrastructure the Irish government could spend the €14 billion Apple tax money on (other than a new city and reunification of Ireland). Justify your choice in each case.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 @ 7","answer":2,"ofParts":6,"perPart":7}, totalMarks: 14,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An area of infrastructure — any two", marks: 14, contextNote: "Two areas, 7 marks each. The scheme opens with \"Accept relevant infrastructure spending\", so this list is what it names rather than all it allows.", openList: true, group: {"claimMax":2,"perOption":7,"options":["Social Housing – build more social and affordable housing which would help with homelessness and with the generation which currently feels locked out of housing market.","Public transport – increase bus and rail services in rural areas / extend DART; LUAS; metro systems allowing for increased use of public transport.","School building – Improve facilities in schools, allowing for better learning environment for more students and teachers.","Water infrastructure – upgrade Ireland’s ageing water infrastructure meaning less boiled water notices and safe drinking water for more people.","Invest in Ireland’s electricity provision – demand for electricity is increasing and provision must be made its sustainability into the future.","Build / expand hospitals health centres – so that the health sector can provide the services which are needed."]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2025-ol-q14-c", topicId: "economics-4-0", conceptId: "ldc-actions-to-improve-welfare",
+    section: "B", questionRef: "2025 OL Q14(b)",
+    questionText: "Suggest two actions the governments of LDCs receiving aid can take to improve their citizens’ welfare.",
+    tariffModel: {"kind":"fixed","notation":"1st @ 6 + 2nd @ 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "An action to improve citizens’ welfare — any two", marks: null, contextNote: "Two actions. The paper pays the first 6 and the second 4 — the scheme writes the split out in words rather than in the marks column.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Infrastructure Development - investing in essential infrastructure such as clean water systems, sanitation facilities, and roads can significantly improve public health and access to markets. This would enhance the quality of life for citizens, promote economic growth, and facilitate access to education and healthcare services.","Education and skills training - allocating funds towards education, including primary and vocational training, can empower citizens with essential skills. This can lead to improved employment opportunities, higher income levels, and greater overall economic development, helping to break the cycle of poverty.","Healthcare - expand access to hospitals, clinics, and medical supplies to reduce disease and improve life expectancy. Investing in clean water and sanitation can also prevent the spread of illnesses.","Job Creation - support local businesses, invest in agriculture, and encourage industries that create employment, reducing dependency on aid and fostering long- term development."],"perOptionSteps":[6,4]} },
+    ],
+  } as SecCard,
 ];

@@ -52,7 +52,44 @@ def defurnish(s):
     return tidy(MARKS_CELL.sub(' ', FOOTER.sub(' ', s)))
 
 
-load = make_load('economics')
+def bullets(chunk, drop_prefix=None):
+    """The scheme's bullet-listed responses, in scheme order.
+
+    Ordinary Level sets its possible responses as a bullet list where Higher
+    Level runs them together under bold headings, and it spells the descending
+    tariff out in words beside them — "1st @ 8", "2nd @ 4" — rather than in the
+    marks column. Both are the same shape underneath.
+    """
+    t = defurnish(chunk)
+    if drop_prefix and t.startswith(drop_prefix):
+        t = t[len(drop_prefix):]
+    out = []
+    for x in re.split(r'\s*•\s*', t):
+        x = tidy(re.sub(r'^\s*\d+(?:st|nd|rd|th)\s*@\s*\d+\s*', '', tidy(x)))
+        if len(x) < 12 or JUNK.match(x):
+            continue
+        out.append(x)
+    return out
+
+
+_load = make_load('economics')
+
+# Every appender adds its own marked block to the end of the scheme markdown, and
+# each repeats the answers the primary extraction already carries. Slicing across
+# that boundary makes every anchor ambiguous for reasons that have nothing to do
+# with the paper — and the second copy is table cells, in the wrong order.
+APPENDED = '<!-- markbank:'
+
+
+def load(year, level):
+    """The scheme's PRIMARY extraction, without the appended blocks.
+
+    The appended blocks exist for the provenance gate, which searches the whole
+    file. Authoring slices only from what the extractor read off the page.
+    """
+    raw = _load(year, level)
+    cut = raw.find(APPENDED)
+    return raw if cut < 0 else raw[:cut]
 semis = make_semis(JUNK)
 card = make_card('economics', default_section='B')
 audit = make_audit(MAX_OPTIONS)
