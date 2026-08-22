@@ -50,11 +50,16 @@ ID_PREFIX = {
 # Decks differ in how they join a part onto its question: agsci writes
 # agsci-2021-hl-q3bi, biology writes bio-2025-hl-q1-a. Follow each deck's own.
 DASHED = {'biology', 'chemistry'}
+# Physics attaches the letter and dashes the roman: phys-2021-hl-q14c-v.
+ROMAN_DASHED = {'physics'}
 
 
 def part_id(subject, year, level, q, letter=None, roman=None, suffix=''):
-    join = '-' if subject in DASHED else ''
-    tail = ''.join(join + p for p in (letter, roman) if p)
+    if subject in ROMAN_DASHED:
+        tail = (letter or '') + (f'-{roman}' if roman else '')
+    else:
+        join = '-' if subject in DASHED else ''
+        tail = ''.join(join + p for p in (letter, roman) if p)
     return (f'{ID_PREFIX[subject]}-{year}-{level}-q{q}{tail}'
             + (f'-{suffix}' if suffix else ''))
 

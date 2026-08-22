@@ -6152,4 +6152,18 @@ export const CARDS: SecCard[] = [
     },
     labelKey: [{"letter":"S","meaning":"The south pole of the bar magnet (the end facing away from the coil)","askedInThisQuestion":false},{"letter":"N","meaning":"The north pole of the bar magnet — the end facing the coil, with an arrow showing the magnet being moved towards the coil","askedInThisQuestion":false}],
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2023-ol-q13b-v", topicId: "phys-4-4", conceptId: "daughter-nucleus-after-beta-decay",
+    section: "B", questionRef: "2023 OL Q13(b)(v)",
+    stem: "What is meant by nuclear fission? (7) Why is there such interest in replacing nuclear fission with nuclear fusion? (7) Leaving Certificate, 2023 Physics – Ordinary Level 12",
+    questionText: "Tritium decays by beta emission. What is the daughter nucleus when an atom of H1 3 emits a beta particle? (7)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "He2 3", marks: 3 },
+    ],
+  } as SecCard,
 ];
