@@ -35,6 +35,11 @@ def key(ref):
     return m and (m.group(1), m.group(2), bool(m.group(3)), m.group(4), m.group(5))
 
 
+def squash(text):
+    """Question text reduced to what is comparable: letters and digits only."""
+    return re.sub(r'[^a-z0-9]+', '', (text or '').lower())
+
+
 def main():
     year, level, section = int(sys.argv[1]), sys.argv[2], sys.argv[3].upper()
     # econ_parts tests `level == 'higher'`, so an 'hl' passed straight through
@@ -59,6 +64,20 @@ def main():
         # A part recorded in econ_excluded is a decision, not a gap. Listing it
         # argues for work already considered and declined, and invites carding a
         # part the deck deliberately left alone.
+        # The part PATH is reconstructed from answer-booklet markers and is a
+        # suggestion. The question TEXT is not. Where a carded card on this same
+        # question asks what this part asks, this is that card under a different
+        # reconstructed path — not a gap. 2021 HL Q16(c)(i) and the carded
+        # Q16(a)(i) are both "Discuss two reasons for the increase in the number
+        # of homeless people in Ireland".
+        asked = squash(p['question'])
+        if k and asked and any(
+                (kk := key(c['questionRef'])) and kk[:4] == k[:4]
+                and (squash(c['questionText'])[:60] in asked
+                     or asked[:60] in squash(c['questionText']))
+                for c in cards):
+            continue
+
         if ref in EXCLUDED:
             skipped.append((ref, EXCLUDED[ref]))
             continue
