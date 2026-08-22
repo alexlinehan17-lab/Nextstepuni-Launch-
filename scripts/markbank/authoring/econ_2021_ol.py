@@ -47,6 +47,20 @@ cards = [
           'Availability of state incentives', 'Good industrial relations',
           'Stable rate of economic growth', 'Stable economic climate'],
          'Two reasons, 7 marks each, split 3 for the reason and 4 for developing it.'),
+
+    menu('econ-2021-ol-q12-b', 'economics-2-0', 'assumptions-of-perfect-competition',
+         '2021 OL Q12(b)',
+         'This firm operates in perfect competition where there are many homogeneous products. '
+         'Discuss three main assumptions of this type of market structure.',
+         '3 @ 5', 15, 'An assumption of perfect competition — any three', 3, 5,
+         'There are many buyers in the industry', 'Question 13',
+         ['There are many buyers in the industry', 'There are many sellers in the industry',
+          'Firm tries to maximise profits', 'Perfect knowledge exists',
+          'Free entry and exit exist in the industry', 'All goods produced are homogenous goods',
+          'No collusion in the market', 'Elastic supply of factors of production'],
+         'Three assumptions, 5 marks each.',
+         stem='Set on a photograph of the outdoor flower market in Stoneybatter, Dublin, given '
+              'as an example of perfect competition.'),
 ]
 
 emit(cards)

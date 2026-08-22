@@ -12,7 +12,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from econ_lib import anyN, block, bullets, card, emit, load, tidy  # noqa: E402
+from econ_lib import anyN, block, bullets, card, emit, load, point, tidy  # noqa: E402
 
 YEAR, LEVEL = 2024, 'ordinary'
 T = tidy(load(YEAR, LEVEL))
@@ -58,6 +58,59 @@ cards = [
          '(c) Panda Power left the Irish energy market',
          'One reason, 8 marks. The scheme accepts mobile phones, broadband, insurance, banking, '
          'TV services or supermarkets as the example; the marks are for the reason.'),
+
+    # ── Question 12 ─────────────────────────────────────────────────────────
+    menu('econ-2024-ol-q12-a-ii', 'economics-3-2', 'benefits-of-increased-employment',
+         '2024 OL Q12(a)(ii)',
+         'Outline one possible economic benefit of increased employment for the Irish economy.',
+         '1 @ 8', 8, 'A benefit of increased employment — any one', 1, 8,
+         '• Increased standard of living for citizens',
+         '(b) (i) Currently there is a shortage of skilled employees',
+         'One benefit, 8 marks.',
+         stem='In 2022 the number of people employed in Ireland exceeded 2.5 million for the '
+              'first time.'),
+
+    # ── Question 13 ─────────────────────────────────────────────────────────
+    menu('econ-2024-ol-q13-b-ii', 'economics-3-3', 'effects-of-food-price-inflation',
+         '2024 OL Q13(b)(ii)',
+         'Explain one possible economic effect food price inflation will have on consumers.',
+         '1 @ 8', 8, 'An effect on consumers — any one', 1, 8,
+         '• Reduced purchasing power / standard of living',
+         '(iii)',
+         'One effect, 8 marks.',
+         stem='Set on a chart of annual food price inflation across six countries — Switzerland '
+              'lowest, Turkey highest.'),
+
+    # These two are here because they are the paper's only cards on their strand
+    # topic — scarcity, and the cost structure of a firm.
+    card('econ-2024-ol-q12-b-i', YEAR, LEVEL, 'economics-0-1', 'scarcity-of-labour',
+         '2024 OL Q12(b)(i)',
+         'Currently there is a shortage of skilled employees in different sectors of the Irish '
+         'economy. Explain the economic term scarcity in relation to labour (employees).',
+         '1 @ 8', 8,
+         [anyN('r-1', 'Scarcity applied to labour — either wording', 8, 1, 8,
+               bullets('• ' + block(BODY, 'When applied to labour, scarcity refers to the situation where the number',
+                                    '(ii) The pharmaceutical industry has experienced')),
+               'The scheme gives two wordings of the same idea: demand for workers exceeds the '
+               'supply of them. Either earns the 8.')],
+         '', tariff_kind='bestNofParts'),
+
+    card('econ-2024-ol-q13-a-ii', YEAR, LEVEL, 'economics-1-5', 'fixed-and-variable-costs',
+         '2024 OL Q13(a)(ii)',
+         'Explain the difference between fixed costs and variable costs. Give an example in '
+         'each case.',
+         'fixed', 8,
+         [point('r-fixed', 'Fixed Costs: Costs which do not change as output changes / Costs '
+                'which have to be paid even if nothing is produced.', 4,
+                'The scheme sets the two definitions side by side in a table with their examples '
+                'in the next column: rent and loan repayments for fixed.',
+                accepts=['Rent', 'Loan repayments']),
+          point('r-variable', 'Variable Costs: Costs which do change as output changes.', 4,
+                'Examples the scheme prints: electricity, labour, raw materials.',
+                accepts=['Electricity', 'Labour', 'Raw materials'])],
+         'Carded as two rows rather than one menu: the question asks for the DIFFERENCE, so a '
+         'student needs both halves, and picking either from a list would not be answering it.',
+         tariff_kind='fixed'),
 ]
 
 emit(cards)

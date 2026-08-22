@@ -63,4 +63,43 @@ cards = [
          'Two advantages, 3 marks each.'),
 ]
 
+cards += [
+    menu('econ-2022-hl-q12-b-iii', 'economics-2-0', 'monopoly-versus-oligopoly',
+         '2022 HL Q12(b)(iii)',
+         'Explain two changes in market conditions (characteristics) which allow a market to '
+         'move from a Monopoly to an Oligopoly.',
+         '2 x 3', 6, 'A change in market conditions — any two', 2, 3,
+         '• Number of firms in the market: in a monopoly',
+         'By 2030, there will be an estimated 500,000 electric vehicles',
+         'Two changes, 3 marks each.'),
+
+    menu('econ-2022-hl-q13-b-ii', 'economics-1-3', 'interventions-to-influence-behaviour',
+         '2022 HL Q13(b)(ii)',
+         'Outline two interventions, other than incentives/taxes, that a government could '
+         'consider implementing to influence consumer behaviour.',
+         '2 x 6', 12, 'An intervention to influence behaviour — any two', 2, 6,
+         '• Minimum prices such as the minimum unit price on alcohol',
+         '(c) The Irish Government has signed up to the Organisation',
+         'Two interventions, 6 marks each. Incentives and taxes are excluded by the question.'),
+
+    menu('econ-2022-hl-q15-c-ii', 'economics-4-1', 'why-net-contributors-stay-in-the-eu',
+         '2022 HL Q15(c)(ii)',
+         'Justify why countries which are Net Contributors to the EU, despite the financial cost '
+         'of membership, still decide to remain members of the EU.',
+         '2 x 5', 10, 'A reason a net contributor stays — any two', 2, 5,
+         '• Free Trade Area / larger market / trade expansion/ improved balance of payments',
+         'Question 16',
+         'Two reasons, 5 marks each.'),
+
+    menu('econ-2022-hl-q16-c-ii', 'economics-0-2', 'consumer-steps-on-fast-fashion',
+         '2022 HL Q16(c)(ii)',
+         'Outline two steps consumers in Ireland can take to reduce the effects of the fast '
+         'fashion industry.',
+         '2 x 5', 10, 'A step a consumer can take — any two', 2, 5,
+         '• Ethical consumption of goods/Research the product',
+         '(iii) Outline one step businesses in Ireland can take',
+         'Two steps, 5 marks each. The scheme heads this list "The Irish Consumer" and lists the '
+         'business steps separately, so the two sides are not interchangeable.'),
+]
+
 emit(cards)

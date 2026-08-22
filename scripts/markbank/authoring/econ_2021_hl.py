@@ -12,7 +12,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from econ_lib import anyN, block, card, defurnish, emit, heads, load, tidy  # noqa: E402
+from econ_lib import anyN, block, card, defurnish, emit, heads, load, point, tidy  # noqa: E402
 
 YEAR, LEVEL = 2021, 'higher'
 T = tidy(load(YEAR, LEVEL))
@@ -64,5 +64,88 @@ cards = [
           'Foreign Direct Investment / job creation'],
          'Two advantages, 6 marks each, split 3 for the point and 3 for developing it.'),
 ]
+
+# ── Question 14 — inflation and competitiveness ─────────────────────────────
+cards.append(menu(
+    'econ-2021-hl-q14-a-ii', 'economics-3-3', 'advantages-of-low-inflation', '2021 HL Q14(a)(ii)',
+    'Outline the potential advantages to Ireland as a country of maintaining the lowest price '
+    'inflation rate relative to the Euro Area and the UK over this period.',
+    '2 @ 6', 12, 'An advantage of low inflation — any two', 2, 6,
+    'More competitive exports As Irish prices will be lower',
+    '(b) (i) Outline two possible disadvantages to Irish citizens',
+    ['More competitive exports', 'Competitive costs',
+     'Domestic spending / savings / wage restraint / reduced demand for imports',
+     'Government finances'],
+    'Two advantages, 6 marks each, split 3 for the point and 3 for developing it.',
+    stem='Set on a chart of Irish, UK and Euro Area inflation from 2014 to 2019, with Ireland '
+         'lowest throughout.'))
+
+cards.append(menu(
+    'econ-2021-hl-q14-b-i', 'economics-3-3', 'disadvantages-of-low-inflation', '2021 HL Q14(b)(i)',
+    'Outline two possible disadvantages to Irish citizens of a low inflation rate in Ireland.',
+    '2 @ 7', 14, 'A disadvantage of low inflation — any two', 2, 7,
+    'Consumers may postpone spending', '(ii) Explain one method the government could use',
+    ['Consumers may postpone spending', 'No / low wage increases',
+     'Debt burden effect (mortgage debt and state debt)', 'Asset appreciation rate may fall'],
+    'Two disadvantages, 7 marks each, split 3 for the point and 4 for developing it. The paper '
+    'asks for the downside of LOW inflation, which is the harder half of the topic.'))
+
+cards.append(menu(
+    'econ-2021-hl-q14-c-ii', 'economics-4-2', 'broadband-and-competitiveness', '2021 HL Q14(c)(ii)',
+    'Discuss the importance of continued capital investment in the National Broadband Plan for '
+    'Ireland’s international competitiveness.',
+    '2 @ 6', 12, 'A reason broadband investment matters — any two', 2, 6,
+    'Ability to attract FDI Companies who may wish to locate',
+    '(iii) Choose two other areas the Irish Government should focus on',
+    ['Ability to attract FDI', 'More flexible working arrangements',
+     'Allow state provide services more efficiently', 'Reduce costs of running business'],
+    'Two points, 6 marks each, split 3 and 3.'))
+
+cards.append(menu(
+    'econ-2021-hl-q14-c-iii', 'economics-4-2', 'improving-international-competitiveness',
+    '2021 HL Q14(c)(iii)',
+    'Choose two other areas the Irish Government should focus on to become more internationally '
+    'competitive. Justify your choice in each case.',
+    '2 @ 6', 12, 'An area to focus on — any two', 2, 6,
+    'Fund skills, education and training programmes', 'Question 15',
+    ['Fund skills, education and training programmes', 'Improve the infrastructure for business',
+     'Manage the current housing shortage', 'Supporting Enterpris'],
+    'Two areas, 6 marks each, split 3 for the choice and 3 for the justification.'))
+
+# The corpus's only cards on elasticity as a decision rule rather than as a
+# calculation, which is what the topic is actually for.
+cards.append(card(
+    'econ-2021-hl-q13-c-ii', YEAR, LEVEL, 'economics-1-4', 'reading-a-ped-figure',
+    '2021 HL Q13(c)(ii)',
+    'The Price Elasticity of Demand for Apple Airpods was calculated as −1.63. State whether '
+    'demand is elastic or inelastic, and give a reason for your answer.',
+    '(4 + 4)', 8,
+    [point('r-answer', 'Based upon the above calculation Apple Airpods can be said to be Elastic.',
+           4, 'The scheme pays this half for the classification alone.'),
+     anyN('r-reason', 'The reason — either one', 4, 1, 4,
+          [defurnish(x) for x in block(
+              BODY, '• The number is greater than 1',
+              '(iii) If the firm selling the above product').split('•')
+           if len(x.strip()) > 12],
+          'Either reason earns the second half: the size of the number, or what it means about '
+          'the two percentage changes.')],
+    'The calculation itself (15 marks) is not carded — it is keyed to figures printed on the '
+    'paper. What is carded is reading the answer, which is the part students lose marks on.',
+    tariff_kind='fixed'))
+
+cards.append(card(
+    'econ-2021-hl-q13-c-iii', YEAR, LEVEL, 'economics-1-4', 'elasticity-and-revenue',
+    '2021 HL Q13(c)(iii)',
+    'If the firm selling this product intends to maximise revenue from its sale, should it '
+    'increase, decrease, or maintain the same price? Explain your answer.',
+    'fixed', 10,
+    [point('r-1',
+           'As the price elasticity of demand is elastic the firm should decrease price in order '
+           'to increase total revenue. A decrease in price will lead to a more than proportionate '
+           'increase in quantity demanded than the percentage decrease in price thereby increasing '
+           'total revenue.', 10,
+           'One point, and the marks are for the mechanism: elastic demand means the quantity '
+           'response outweighs the price cut.')],
+    '', tariff_kind='fixed'))
 
 emit(cards)

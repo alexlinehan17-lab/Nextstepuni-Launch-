@@ -93,4 +93,49 @@ cards = [
          'Two benefits, 5 marks each. Wider selection is excluded by the question.'),
 ]
 
+cards += [
+    menu('econ-2025-hl-q14-a-ii', 'economics-2-0', 'amazon-expansion-and-small-retailers',
+         '2025 HL Q14(a)(ii)',
+         'Amazon plans to open a dedicated store in Ireland in 2025. Outline two economic '
+         'difficulties which Amazon’s expansion may create for small and medium-sized retailers '
+         'operating in Ireland.',
+         '2 @ 5', 10, 'A difficulty for small and medium retailers — any two', 2, 5,
+         'Increased competition –', '(b)',
+         ['Increased competition –', 'Squeezed profit margins', 'Technology gap',
+          'Erosion of customer loyalty', 'Supply chain challenges'],
+         'Two difficulties, 5 marks each.'),
+
+    menu('econ-2025-hl-q15-a-ii', 'economics-3-4', 'factors-affecting-credit-creation',
+         '2025 HL Q15(a)(ii)',
+         'Outline two factors which affect the amount of credit that Irish retail banks can create.',
+         '2 @ 6', 12, 'A factor affecting credit creation — any two', 2, 6,
+         'Future economic expectations – if retail banks are optimistic', '(b)',
+         ['Future economic expectations', 'ECB changes in interest rates / monetary policy',
+          'Competition within the retail banking sector', 'Central bank reserve ratios',
+          'Ability of banks to raise capital'],
+         'Two factors, 6 marks each.'),
+
+    menu('econ-2025-hl-q15-b-ii', 'economics-2-1', 'property-prices-and-the-labour-market',
+         '2025 HL Q15(b)(ii)',
+         'Rising property prices are affecting the labour market in Ireland. Discuss two economic '
+         'effects this may have on the Irish labour market.',
+         '2 @ 6', 12, 'An effect on the labour market — any two', 2, 6,
+         'Reduced geographical mobility of labour – geographical mobility', '(c)',
+         ['Reduced geographical mobility of labour', 'Increased wage demands',
+          'Skills shortages / Emigration', 'Overcrowding'],
+         'Two effects, 6 marks each.'),
+
+    menu('econ-2025-hl-q16-c', 'economics-0-0', 'importance-of-entrepreneurship',
+         '2025 HL Q16(c)',
+         'Discuss two reasons why entrepreneurship is important to the continued development of '
+         'the Irish economy.',
+         '2 @ 4', 8, 'A reason entrepreneurship matters — any two', 2, 4,
+         'Creates employment – entrepreneurs employ people',
+         None,   # the last carded part of the paper, so it runs to the end of the body
+         ['Creates employment', 'Organises production', 'Determines what gets produced',
+          'Encourages investment and innovation', 'Provides tax revenue', 'Boosts exports',
+          'Creates income and wealth'],
+         'Two reasons, 4 marks each.'),
+]
+
 emit(cards)

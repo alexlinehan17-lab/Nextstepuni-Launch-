@@ -281,4 +281,38 @@ cards.append(menu(
          'objections from environmental groups.',
     steps=[6, 4]))
 
+# The paper's only cards on how a market reaches a new equilibrium. The DIAGRAM
+# marks are not carded — the Mark Bank cannot mark a drawing — but the four
+# explanation points beside it are exactly what the diagram is meant to show.
+for cid, ref, qtext, concept, start, end in [
+    ('econ-2024-hl-q11-c-i', '2024 HL Q11(c)(i)',
+     'Assume the market for a brand of organic ice cream is in equilibrium. Explain the effect '
+     'a prolonged heatwave during the summer in Ireland is most likely to have on the initial '
+     'equilibrium position of this market.',
+     'demand-shift-heatwave',
+     '• D/C shifts to the right (D2).', '(ii) An increase in lactose intolerant consumers'),
+    ('econ-2024-hl-q11-c-ii', '2024 HL Q11(c)(ii)',
+     'Explain the effect an increase in lactose intolerant consumers is most likely to have on '
+     'the initial equilibrium position of this market.',
+     'demand-shift-consumer-tastes',
+     '• D/C shifts to the left (D2).', '(iii) Producers are receiving a subsidy'),
+    ('econ-2024-hl-q11-c-iii', '2024 HL Q11(c)(iii)',
+     'Explain the effect producers receiving a subsidy for organic ice cream production is most '
+     'likely to have on the initial equilibrium position of this market.',
+     'supply-shift-subsidy',
+     # Ends at its own Explanation line: it is the last part of the question, so
+     # without a bound the fourth point swallows the examiner's summary of it.
+     '• S/C shifts to the right (S2).', 'Explanation ⟨4 @ 1⟩ Shift in S/C'),
+]:
+    cards.append(card(
+        cid, YEAR, LEVEL, 'economics-1-0', concept, ref, qtext, '4 @ 1', 4,
+        [anyN('r-1', 'What happens to the curve, the price and the quantity — all four', 4, 4, 1,
+              [defurnish(x) for x in block(BODY, start, end).split('•') if len(x.strip()) > 12][:4],
+              'Four points at 1 mark each, and the scheme wants all four: which curve moves and '
+              'which way, why, what happens to price, and what happens to quantity. The paper '
+              'also pays 5 marks for the diagram itself, which is not carded.')],
+        'PARTIAL CARD. The part is worth 9 — 5 for a correctly drawn and labelled diagram and 4 '
+        'for the written explanation. Only the explanation is carded; the Mark Bank cannot mark '
+        'a drawing.', tariff_kind='fixed'))
+
 emit(cards)
