@@ -6874,4 +6874,26 @@ export const CARDS: SecCard[] = [
           "lettersVisible": []
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Higher Level — © State Examinations Commission.",
+    id: "agsci-2024-hl-q10a", topicId: "agsci-3-2", conceptId: "recognising-a-multi-species-sward",
+    section: "A", questionRef: "2024 HL Q10(a)",
+    stem: "The pictures below show two swards with a varying level of diversity. Analyse the pictures and answer the questions that follow.",
+    questionText: "Identify which picture A or B is more likely to be a multi-species (polyculture) sward.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "B", marks: 4 },
+    ],
+    figure: {
+          "candId": "agricultural-science-2024-HL-paper-p15-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p15-i0.png",
+          "srcHash": "626e5cb38fb3546e878ca328bfb03095",
+          "alt": "The Question 10 sward-diversity figure. Heading text above reads 'Question 10 / The pictures below show two swards with a varying level of diversity. Analyse the pictures and answer the questions that follow.' Two illustrated soil-profile blocks stand side by side, each headed by a bold letter. A shows a uniform stand of narrow green grass blades, all of one type and much the same height, growing from a dark brown topsoil layer; their roots are short, fine, reddish-brown and fibrous and stay entirely within the top band of soil. B shows a mixed stand containing several different plant types - fine grasses, taller darker grass stems, broad rounded leaves, small clover-like trifoliate leaves and a scatter of pale lilac/blue flower heads; below ground the roots are far more varied, with several thick pale taproots driving down through the dark topsoil and the darker band beneath it into the tan subsoil. Both blocks share the same layered profile: dark brown topsoil, a darker brown band, a tan stony subsoil with scattered grey stones and a grey stony layer at the base. Below the figure: '(a) Identify which picture A or B is more likely to be a multi-species (polyculture) sward.' with an answer box, and '(b) List two plants that could be included in the multi-species sward.' with numbered answer lines.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
 ];

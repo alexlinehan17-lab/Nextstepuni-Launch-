@@ -42,8 +42,12 @@ LETTER = re.compile(r'[a-h]')
 ROMAN = re.compile(r'i{1,3}|iv|vi{0,3}')
 PAGE = re.compile(r'^##\s*Page\s*\d+\s*$')
 # The mark column: a whole line, or the tail of one. '2', '2(2)', '1+1', '4+2'.
-MARKS_ONLY = re.compile(r'^\d{1,2}\s*(\(\s*\d{1,2}\s*\))?$|^\d(\+\d)+$')
-MARKS_TAIL = re.compile(r'\s(\d{1,2}(?:\(\d{1,2}\))?|\d(?:\+\d)+)$')
+# '2', '2(2)', '1+1', '4+2', and the multiplied form '3 x 2' / '5x2' the later
+# papers use when one tariff covers several identical answers.
+MARKS_ONLY = re.compile(r'^\d{1,2}\s*(\(\s*\d{1,2}\s*\))?$|^\d(\+\d)+$'
+                        r'|^\d{1,2}\s*[x\u00d7]\s*\d{1,2}$')
+MARKS_TAIL = re.compile(r'\s(\d{1,2}(?:\(\d{1,2}\))?|\d(?:\+\d)+'
+                        r'|\d{1,2}\s*[x\u00d7]\s*\d{1,2})$')
 NOISE = re.compile(r'^(OR|Or|or)$')
 # 'A = Simmental B = Landrace C = Blackface mountain D = Jersey' — an identify
 # question whose answers share one combined tariff ('4(1)'), so the mark column

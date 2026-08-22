@@ -33304,5 +33304,506 @@
   "stem": "Study the photograph of the farm layout below and answer the questions which follow.",
   "notes": "The scheme's first line welds a rubric — that the answer may not repeat part (a) — onto its first suggestion, so that line is left off the card rather than shown as an answer. The rubric itself is in the question.",
   "figureKey": "agricultural-science-2021-HL-paper-p08-i0"
+ },
+ {
+  "id": "agsci-2021-ol-q4b",
+  "topicId": "agsci-2-1",
+  "conceptId": "uses-of-a-brown-earth-soil",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2021 OL Q4(b)",
+  "questionText": "Outline one use for soil A.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "(Tillage) crops",
+    "marks": 2,
+    "accepts": [
+     "horticulture",
+     "grazing pasture (grassland)",
+     "silage or hay"
+    ]
+   }
+  ],
+  "stem": "Diagrams A and B show the profiles of two common soil types in Ireland. Humus, rich dark brown colour Pale grey, heavily leached Darker brown, leached minerals Stony Parent rock Parent rock",
+  "notes": "Any one use scores the 2 marks; the scheme prints four.",
+  "figureKey": "agricultural-science-2021-OL-paper-p07-i1"
+ },
+ {
+  "id": "agsci-2021-ol-q4c",
+  "topicId": "agsci-2-1",
+  "conceptId": "disadvantages-of-a-podzol",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2021 OL Q4(c)",
+  "questionText": "Describe two disadvantages associated with the use of soil B.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3+1"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Poor drainage (due to the impermeable iron pan)",
+    "marks": 3,
+    "accepts": [
+     "acidic or low pH (due to poor decomposition of organic matter)",
+     "poor fertility (low CEC) (due to acid leaching)",
+     "poor root penetration (due to iron pan)",
+     "poor establishment or yield or growth"
+    ],
+    "contextNote": "Scheme tariff is 3+1: the first disadvantage scores 3 and the second 1, so the order the answers are given in decides the total."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "poor aeration (as air spaces fill with water)",
+    "marks": 1,
+    "accepts": [
+     "acidic or low pH (due to poor decomposition of organic matter)",
+     "poor fertility (low CEC) (due to acid leaching)",
+     "poor root penetration (due to iron pan)",
+     "poor establishment or yield or growth"
+    ]
+   }
+  ],
+  "stem": "Diagrams A and B show the profiles of two common soil types in Ireland. Humus, rich dark brown colour Pale grey, heavily leached Darker brown, leached minerals Stony Parent rock Parent rock",
+  "figureKey": "agricultural-science-2021-OL-paper-p07-i1"
+ },
+ {
+  "id": "agsci-2022-ol-q1a",
+  "topicId": "agsci-1-5",
+  "conceptId": "identifying-farm-machinery-and-function",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2022 OL Q1(a)",
+  "questionText": "Identify and state the function of machine A and B.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2,2,2,2"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "A = (fertiliser) spreader Function = spread (shake or broadcast) fertiliser",
+    "marks": 4,
+    "accepts": [
+     "spreading grass seed"
+    ],
+    "contextNote": "A red arrow points at each implement. A is mounted behind the tractor and works grass; B is a tanker towed on a hard yard with a boom of trailing pipes."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B = Slurry spreader or slurry tanker or trailing shoe or injector",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Function = spreading slurry or effluent",
+    "marks": 2
+   }
+  ],
+  "stem": "Two examples of farm machinery are shown in the photographs.",
+  "notes": "The scheme prints A's identity and A's function on a single line, so the card keeps them together and gives that row both 2-mark units. B's identity and function are printed separately and get a row each.",
+  "figureKey": "agricultural-science-2022-OL-paper-p03-i0"
+ },
+ {
+  "id": "agsci-2023-ol-q1b",
+  "topicId": "agsci-2-2-1",
+  "conceptId": "reading-a-soil-ph-probe",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2023 OL Q1(b)",
+  "questionText": "State the pH of the soil filtrate.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "6.5*",
+    "marks": 3
+   }
+  ],
+  "stem": "An agricultural science student wanted to test the pH of a sample of soil before deciding what crops to sow. pH probe Universal Indicator",
+  "notes": "The value is read off the probe in the figure, whose display shows 6.5.",
+  "figureKey": "agricultural-science-2023-OL-paper-p03-i0"
+ },
+ {
+  "id": "agsci-2023-ol-q2a",
+  "topicId": "agsci-4-3-3",
+  "conceptId": "identifying-continental-beef-breeds",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2023 OL Q2(a)",
+  "questionText": "Assist Jimmy in identifying any three of the following continental beef cattle using the list below.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3+2+1"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: Charolais",
+    "marks": 3,
+    "accepts": [
+     "D: Simmental",
+     "E: Belgian Blue"
+    ],
+    "contextNote": "A is cream-white, B dark with a tan saddle, C solid red-brown, D red-and-white with a white face, E black-and-white and heavily muscled. Any three of the five score, at 3, 2 and 1 marks."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: Aubrac",
+    "marks": 2,
+    "accepts": [
+     "D: Simmental",
+     "E: Belgian Blue"
+    ]
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C: Limousine",
+    "marks": 1,
+    "accepts": [
+     "D: Simmental",
+     "E: Belgian Blue"
+    ]
+   }
+  ],
+  "stem": "Belgian Blue Aubrac Limousin Charolais Simmental",
+  "figureKey": "agricultural-science-2023-OL-paper-p04-i1",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Charolais",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Aubrac",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Limousine",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "agsci-2023-ol-q9ai",
+  "topicId": "agsci-4-1",
+  "conceptId": "the-fourth-stomach-chamber",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2023 OL Q9(a)(i)",
+  "questionText": "Identify the stomach chamber A.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Abomasum*",
+    "marks": 3
+   }
+  ],
+  "notes": "Three diagrams show the stomach at first week, 3 to 4 months and maturity. Rumen, omasum and reticulum are labelled on each; A is the chamber left unlabelled.",
+  "figureKey": "agricultural-science-2023-OL-paper-p12-i0"
+ },
+ {
+  "id": "agsci-2023-ol-q10bii",
+  "topicId": "agsci-4-3-1",
+  "conceptId": "comparing-bull-sperm-motility",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2023 OL Q10(b)(ii)",
+  "questionText": "Identify which bull has the best sperm motility.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Bull 1",
+    "marks": 3
+   }
+  ],
+  "stem": "Bull 1 Bull 2 Bull 3 Bull 4 Sperm motility (%) 100 95 90 95 Abnormal structure (%) 5 8 8 10",
+  "notes": "Read from the table: Bull 1 is the only one at 100% motility.",
+  "figureKey": "agricultural-science-2023-OL-paper-p15-i0"
+ },
+ {
+  "id": "agsci-2023-ol-q13aii",
+  "topicId": "agsci-3-3-1",
+  "conceptId": "plants-for-a-reseeded-pasture",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2023 OL Q13(a)(ii)",
+  "questionText": "Identify the plants below that may be sown in a newly reseeded pasture.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6+3+3"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: Red clover",
+    "marks": 6,
+    "contextNote": "A is a head of pink-purple clover flowers, B a grass seedhead, C a white clover flower over trifoliate leaves."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: Perennial ryegrass",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C: White clover (clover accepted once only)",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme's rubric that clover is accepted once only is printed on the same line as answer C, so it travels with it.",
+  "figureKey": "agricultural-science-2023-OL-paper-p20-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Red clover",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Perennial ryegrass",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "White clover (clover accepted once only)",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "agsci-2023-ol-q18bi",
+  "topicId": "agsci-4-3-2",
+  "conceptId": "how-crispr-gene-editing-works",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2023 OL Q18(b)(i)",
+  "questionText": "With the aid of the diagram above, explain how the gene editing process works.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3+1"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Gene responsible for a specific trait is identified",
+    "marks": 3,
+    "accepts": [
+     "natural DNA repair processes occurs"
+    ]
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "desired gene is inserted",
+    "marks": 1,
+    "accepts": [
+     "natural DNA repair processes occurs"
+    ]
+   }
+  ],
+  "notes": "The diagram runs top to bottom: the target gene is marked on the strand, cut at the lightning bolt, and the strand then either repairs itself or takes an inserted gene.",
+  "figureKey": "agricultural-science-2023-OL-paper-p35-i0"
+ },
+ {
+  "id": "agsci-2024-hl-q10a",
+  "topicId": "agsci-3-2",
+  "conceptId": "recognising-a-multi-species-sward",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2024 HL Q10(a)",
+  "questionText": "Identify which picture A or B is more likely to be a multi-species (polyculture) sward.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "B",
+    "marks": 4
+   }
+  ],
+  "stem": "The pictures below show two swards with a varying level of diversity. Analyse the pictures and answer the questions that follow.",
+  "notes": "Two cutaway sward illustrations. A is a single grass species with short, uniform roots; B carries grasses, broadleaf herbs and clover above ground and a mix of shallow and deep roots below it.",
+  "figureKey": "agricultural-science-2024-HL-paper-p15-i0"
+ },
+ {
+  "id": "agsci-2025-ol-q8b",
+  "topicId": "agsci-1-5",
+  "conceptId": "reading-fertiliser-hazard-symbols",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2025 OL Q8(b)",
+  "questionText": "Orla noticed two warning signs on the fertiliser bags which identified it as an eye irritant and a fire risk. Choose the two warning signs by placing a tick () in the correct boxes to identify these signs.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3+2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Symbols 2 and 3",
+    "marks": 5
+   }
+  ],
+  "stem": "The photograph shows a farmer pouring fertiliser into a fertiliser spreader. Analyse the photograph and answer the questions that follow.",
+  "notes": "Four hazard pictograms run left to right and the scheme numbers them in that order: 1 environmental hazard, 2 exclamation mark, 3 flame over a circle, 4 skull and crossbones. The two the question describes are the irritant and the fire risk.",
+  "figureKey": "agricultural-science-2025-OL-paper-p09-i1"
+ },
+ {
+  "id": "agsci-2025-ol-q9bii",
+  "topicId": "agsci-1-3",
+  "conceptId": "what-falling-input-prices-mean",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2025 OL Q9(b)(ii)",
+  "questionText": "Identify what your answer in part (i) above means for farmers by placing a tick () in the correct box below.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Means: Costs less to produce",
+    "marks": 2
+   }
+  ],
+  "stem": "Electricity down 22% Cereals down 31% Fertilisers down 40% Feedstuffs down 21% Milk down 5% Sheep up 30% Changes in Agricultural Input Price Changes in Agricultural Output Price Costs less to produce Cost the same to produce Costs more to produce Increased profit Increased cost",
+  "notes": "The infographic splits into input prices — electricity down 22%, fertilisers down 40%, feedstuffs down 21% — and output prices. Part (i) establishes that inputs fell; this part asks what that means.",
+  "figureKey": "agricultural-science-2025-OL-paper-p11-i0"
+ },
+ {
+  "id": "agsci-2025-ol-q9biv",
+  "topicId": "agsci-1-3",
+  "conceptId": "what-the-price-gap-means-for-profit",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2025 OL Q9(b)(iv)",
+  "questionText": "Identify what your answer in part (iii) above means for farmers by placing a tick () in the correct box below.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Increased profit",
+    "marks": 2
+   }
+  ],
+  "stem": "Electricity down 22% Cereals down 31% Fertilisers down 40% Feedstuffs down 21% Milk down 5% Sheep up 30% Changes in Agricultural Input Price Changes in Agricultural Output Price Costs less to produce Cost the same to produce Costs more to produce Increased profit Increased cost",
+  "figureKey": "agricultural-science-2025-OL-paper-p11-i0"
+ },
+ {
+  "id": "agsci-2025-ol-q13ai",
+  "topicId": "agsci-2-2-2",
+  "conceptId": "choosing-a-soil-sampling-pattern",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2025 OL Q13(a)(i)",
+  "questionText": "Identify which method of soil sampling A, B or C she should carry out and explain one reason why she should use this method.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5,4"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Method: C",
+    "marks": 5,
+    "contextNote": "Three sampling patterns drawn on a field: A a tight zigzag confined to one diagonal band, B a ring of marks round the edges, C a broad W crossing the whole field."
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "Reason: Multiple samples (20) taken",
+    "marks": 4,
+    "accepts": [
+     "all areas of field sampled",
+     "representative of field",
+     "avoids headlands or gateways",
+     "entrances and exits or around drinking trough"
+    ]
+   }
+  ],
+  "notes": "The scheme prints a stray 'or' on its own line between two reasons; it is not an answer and is left off the card.",
+  "figureKey": "agricultural-science-2025-OL-paper-p18-i0"
  }
 ]
