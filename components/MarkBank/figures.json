@@ -12220,5 +12220,49 @@
   "year": 2025,
   "level": "higher",
   "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission"
+ },
+ "agricultural-science-2022-OL-paper-p33-art": {
+  "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-OL-paper-p33-art.png",
+  "md5": "ff0de53c28c18136384ef06a1d0c48e2",
+  "alt": "The bovine nitrogen table for John's farm, 2020-21, with a photograph of cream and black cattle at top right and the stem explaining that John is in the Beef Emergency Aid Measure and must cut his bovine nitrogen figure by 5%. Four columns: type of livestock, number on the farm, nitrogen produced per year in kg, and bovine nitrogen produced. Rows read Suckler Cows 46 at 65 giving 2990; Cattle (0-1 year) 44 at 24 giving 1056; Cattle (1-2 year) 40 at 57 with its result cell highlighted yellow and lettered A; Bull (1-2 year) 1 at 57 giving 57; Bull over 2 years 1 at 65 giving 65. A blue total row across the foot is lettered B. Beneath the table sit parts (i), (ii) and (iii) with their Calculation boxes.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q17(b)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Agricultural Science 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "agricultural-science-2022-OL-paper-p04-art": {
+  "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-OL-paper-p04-art.png",
+  "md5": "6baad662b386a227504cc5642e6a40c1",
+  "alt": "Breed identification plate. A pale green word bank runs across the top listing Jersey, Blackface mountain, Landrace and Simmental, above four colour photographs in a two by two grid. A: a heavy red-brown bull with a white face, white belly and white socks. B: a long pale pink pig with large forward-drooping ears and a curled tail, grazing. C: a white-fleeced ewe with a black-and-white face, curled horns and black-and-white legs, with a lamb lying beside her. D: a small fawn cow with a dark muzzle and a large udder, standing against dark foliage. Below the grid is a four-row answer box lettered A to D, then part (ii) asking about traits of animal A. The instruction line above the word bank is clipped by the crop but reads 'Identify any three of the following breeds using the list below'.",
+  "lettersVisible": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q2(a)(i) and Q2(a)(ii)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Agricultural Science 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "agricultural-science-2025-HL-paper-p03-art": {
+  "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-p03-art.png",
+  "md5": "d7f988c81dab0a42a66b517638761e02",
+  "alt": "The top of Section A with Question 1. Two colour photographs of bulls side by side. A: a solid black bull, deep-bodied and hornless, wearing a rope halter and two yellow ear tags, standing against dark hedging. B: a dark red bull with a white face, white underline, white flank patches and white lower legs, standing in a field with hills behind. Below them an empty two-cell answer box, then part (b) asking which breed carries the dominant polled trait and part (c) asking for that underlined term explained, each with ruled answer boxes.",
+  "lettersVisible": [
+   "A",
+   "B"
+  ],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q1(a), Q1(b) and Q1(c)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission"
  }
 }

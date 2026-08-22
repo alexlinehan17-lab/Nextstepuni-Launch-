@@ -2,9 +2,6 @@
 """Agricultural Science 2022 Ordinary Level — parts the deck had not carded.
 
 Not carded here, and why:
-  Q2(a)(i)/(ii)  the breed plate they depend on (p04-i0) is catalogued but not
-                 published, so the cards would ask about photographs the app
-                 cannot show.
   Q10(a), Q10(c), Q12(a)
                  the scheme lays these out as Test/Description and
                  Factor/Description tables, and the markdown extraction
@@ -35,5 +32,25 @@ A.card(1, 'a', topic='agsci-1-5', concept='identifying-farm-machinery-and-functi
        notes="The scheme prints A's identity and A's function on a single line, so "
              "the card keeps them together and gives that row both 2-mark units. "
              "B's identity and function are printed separately and get a row each.")
+
+# ── Q2(a): the breed plate ────────────────────────────────────────────────
+BREEDS = 'agricultural-science-2022-OL-paper-p04-art'
+BREEDS_CONTEXT = ('Four photographs above a word bank of Jersey, Blackface mountain, '
+                  'Landrace and Simmental. A is a heavy red-brown bull with a white '
+                  'face and white socks, B a long pale pink pig with drooping ears, C '
+                  'a white-fleeced horned ewe with a black-and-white face, D a small '
+                  'fawn cow with a large udder.')
+
+A.card(2, 'a', 'i', topic='agsci-4-3-2', concept='identifying-farm-animal-breeds',
+       use=[0, 1, 2], marks=[2, 2, 2], notation='3(2)', spread=True,
+       figure=BREEDS, labels='auto', context=BREEDS_CONTEXT,
+       notes='Any three of the four score at 2 marks each; the fourth is carried as an '
+             'accepted alternative.')
+
+A.card(2, 'a', 'ii', topic='agsci-4-3-2', concept='traits-of-a-sire',
+       use=[0, 1], marks=[3, 1], notation='3+1', spread=True,
+       figure=BREEDS, context=BREEDS_CONTEXT,
+       notes='Animal A is the bull in the top-left photograph. The first trait scores 3 '
+             'and the second 1, so the order they are given in decides the total.')
 
 A.emit()

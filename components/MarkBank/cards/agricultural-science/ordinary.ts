@@ -6585,6 +6585,58 @@ export const CARDS: SecCard[] = [
     },
   } as SecCard,
   {
+    ...base, kind: "diagram",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2022-ol-q2ai", topicId: "agsci-4-3-2", conceptId: "identifying-farm-animal-breeds",
+    section: "A", questionRef: "2022 OL Q2(a)(i)",
+    stem: "Jersey Blackface mountain Landrace Simmental Or",
+    questionText: "The photographs below show breeds of animals found on Irish farms. Identify any three of the following breeds using the list below.",
+    tariffModel: {"kind":"fixed","notation":"3(2)"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A = Simmental", marks: 2, accepts: ["D = Jersey"], contextNote: "Four photographs above a word bank of Jersey, Blackface mountain, Landrace and Simmental. A is a heavy red-brown bull with a white face and white socks, B a long pale pink pig with drooping ears, C a white-fleeced horned ewe with a black-and-white face, D a small fawn cow with a large udder." },
+    { id: "r-2", kind: "point", verbatim: "B = Landrace", marks: 2, accepts: ["D = Jersey"] },
+    { id: "r-3", kind: "point", verbatim: "C = Blackface mountain or Swaledale", marks: 2, accepts: ["D = Jersey"] },
+    ],
+    figure: {
+          "candId": "agricultural-science-2022-OL-paper-p04-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-OL-paper-p04-art.png",
+          "srcHash": "6baad662b386a227504cc5642e6a40c1",
+          "alt": "Breed identification plate. A pale green word bank runs across the top listing Jersey, Blackface mountain, Landrace and Simmental, above four colour photographs in a two by two grid. A: a heavy red-brown bull with a white face, white belly and white socks. B: a long pale pink pig with large forward-drooping ears and a curled tail, grazing. C: a white-fleeced ewe with a black-and-white face, curled horns and black-and-white legs, with a lamb lying beside her. D: a small fawn cow with a dark muzzle and a large udder, standing against dark foliage. Below the grid is a four-row answer box lettered A to D, then part (ii) asking about traits of animal A. The instruction line above the word bank is clipped by the crop but reads 'Identify any three of the following breeds using the list below'.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Simmental","askedInThisQuestion":true},{"letter":"B","meaning":"Landrace","askedInThisQuestion":true},{"letter":"C","meaning":"Blackface mountain or Swaledale","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2022-ol-q2aii", topicId: "agsci-4-3-2", conceptId: "traits-of-a-sire",
+    section: "A", questionRef: "2022 OL Q2(a)(ii)",
+    stem: "Jersey Blackface mountain Landrace Simmental Or",
+    questionText: "Describe two traits which make animal A shown in part (i) above suitable for selection as a sire.",
+    tariffModel: {"kind":"fixed","notation":"3+1"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Good conformation or well‐muscled", marks: 3, accepts: ["good liveweight gain (LWG) or food conversion ratio (FCR)","good temperament","heavy carcase or high % kill out","lean carcase","early maturing","short calving interval"], contextNote: "Four photographs above a word bank of Jersey, Blackface mountain, Landrace and Simmental. A is a heavy red-brown bull with a white face and white socks, B a long pale pink pig with drooping ears, C a white-fleeced horned ewe with a black-and-white face, D a small fawn cow with a large udder." },
+    { id: "r-2", kind: "point", verbatim: "dual purpose breed (good beef and milk qualities)", marks: 1, accepts: ["good liveweight gain (LWG) or food conversion ratio (FCR)","good temperament","heavy carcase or high % kill out","lean carcase","early maturing","short calving interval"] },
+    ],
+    figure: {
+          "candId": "agricultural-science-2022-OL-paper-p04-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-OL-paper-p04-art.png",
+          "srcHash": "6baad662b386a227504cc5642e6a40c1",
+          "alt": "Breed identification plate. A pale green word bank runs across the top listing Jersey, Blackface mountain, Landrace and Simmental, above four colour photographs in a two by two grid. A: a heavy red-brown bull with a white face, white belly and white socks. B: a long pale pink pig with large forward-drooping ears and a curled tail, grazing. C: a white-fleeced ewe with a black-and-white face, curled horns and black-and-white legs, with a lamb lying beside her. D: a small fawn cow with a dark muzzle and a large udder, standing against dark foliage. Below the grid is a four-row answer box lettered A to D, then part (ii) asking about traits of animal A. The instruction line above the word bank is clipped by the crop but reads 'Identify any three of the following breeds using the list below'.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
     paperFileid: "LC024GLP000EV",

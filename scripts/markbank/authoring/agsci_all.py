@@ -36,6 +36,7 @@ scripts = sorted(f for f in os.listdir(DIR)
 # hand-authored card back.
 ADOPTED = {
     'agsci-2023-ol-q14b-iii',   # 2023 OL Q14(b)(iii), now carries the river diagrams
+    'agsci-2025-hl-q1c',        # 2025 HL Q1(c), now carries the bulls — one is polled
 }
 
 existing = json.load(open(AUTHORED))

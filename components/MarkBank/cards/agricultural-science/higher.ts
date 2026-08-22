@@ -2229,20 +2229,6 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC024ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
-    id: "agsci-2025-hl-q1c", topicId: "agsci-4-2", conceptId: "polled-trait",
-    section: "A", questionRef: "2025 HL Q1(c)",
-    stem: "Question 1(b) asked candidates to state which cattle breed has a dominant polled trait as a characteristic of the breed. The underlined term is polled.",
-    questionText: "Explain the underlined term in part (b) above.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 2,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Does not have horns", marks: 2 },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC024ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
     id: "agsci-2025-hl-q2a", topicId: "agsci-3-2", conceptId: "plant-lifecycles",
     section: "A", questionRef: "2025 HL Q2(a)",
     stem: "Plant lifecycles can be distinguished as annual, biennial and perennial.",
@@ -6967,5 +6953,52 @@ export const CARDS: SecCard[] = [
           ]
     },
     labelKey: [{"letter":"A","meaning":"Cleavers","askedInThisQuestion":true},{"letter":"B","meaning":"Chicory","askedInThisQuestion":true},{"letter":"C","meaning":"Silverweed","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2025, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
+    id: "agsci-2025-hl-q1a", topicId: "agsci-4-2", conceptId: "identifying-cattle-breeds",
+    section: "A", questionRef: "2025 HL Q1(a)",
+    questionText: "Identify both cattle breeds in A and B.",
+    tariffModel: {"kind":"fixed","notation":"5+1"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A: Aberdeen Angus", marks: 5, contextNote: "Two bulls photographed side by side. A is solid black, deep-bodied and hornless, in a rope halter. B is dark red with a white face, white underline, white flank patches and white lower legs." },
+    { id: "r-2", kind: "point", verbatim: "B: Hereford", marks: 1 },
+    ],
+    figure: {
+          "candId": "agricultural-science-2025-HL-paper-p03-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-p03-art.png",
+          "srcHash": "d7f988c81dab0a42a66b517638761e02",
+          "alt": "The top of Section A with Question 1. Two colour photographs of bulls side by side. A: a solid black bull, deep-bodied and hornless, wearing a rope halter and two yellow ear tags, standing against dark hedging. B: a dark red bull with a white face, white underline, white flank patches and white lower legs, standing in a field with hills behind. Below them an empty two-cell answer box, then part (b) asking which breed carries the dominant polled trait and part (c) asking for that underlined term explained, each with ruled answer boxes.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Aberdeen Angus","askedInThisQuestion":true},{"letter":"B","meaning":"Hereford","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC024ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2025 Higher Level — © State Examinations Commission.",
+    id: "agsci-2025-hl-q1c", topicId: "agsci-4-2", conceptId: "what-polled-means",
+    section: "A", questionRef: "2025 HL Q1(c)",
+    questionText: "Explain the underlined term in part (b) above.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Does not have horns", marks: 2 },
+    ],
+    figure: {
+          "candId": "agricultural-science-2025-HL-paper-p03-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-p03-art.png",
+          "srcHash": "d7f988c81dab0a42a66b517638761e02",
+          "alt": "The top of Section A with Question 1. Two colour photographs of bulls side by side. A: a solid black bull, deep-bodied and hornless, wearing a rope halter and two yellow ear tags, standing against dark hedging. B: a dark red bull with a white face, white underline, white flank patches and white lower legs, standing in a field with hills behind. Below them an empty two-cell answer box, then part (b) asking which breed carries the dominant polled trait and part (c) asking for that underlined term explained, each with ruled answer boxes.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
 ];
