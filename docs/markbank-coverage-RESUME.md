@@ -56,15 +56,32 @@ parts back.
 
 ## What the open parts actually are
 
-Classified across the four best-measured subjects (654 of the 965):
+Classified across the four science subjects (552 of the 561):
 
 | | Agri | Biology | Chemistry | Physics |
 |---|---:|---:|---:|---:|
-| Authorable | 81 | 109 | 34 | 65 |
-| Answer is itself a drawing | 6 | 31 | 26 | 124 |
-| Needs a figure to read | 24 | 37 | 18 | 44 |
-| Font-mangled in the scheme | 3 | 2 | 17 | 37 |
-| Rubric only | 0 | 2 | 0 | 12 |
+| Answer is itself a drawing | 6 | 36 | 23 | 104 |
+| Font-mangled in the scheme | 6 | 7 | 26 | 55 |
+| No printed tariff | 24 | 32 | 12 | 12 |
+| Needs a figure | 11 | 15 | 11 | 13 |
+| No marking points | 9 | 20 | 2 | 10 |
+| Rubric only | 0 | 9 | 0 | 15 |
+| Reads authorable | 29 | 34 | 18 | 14 |
+
+The last row is the one to be careful with. Each of those was opened and
+read, and nearly all turn out to be **mispairings** the classifier cannot
+see: `align_ordered` offers a Chemistry scheme part numbered 60 for a paper
+that stops at 11, and hands a question about a weak acid's dissociation
+constant a marking point about Rutherford's gold foil. Where the scheme does
+not reprint the question above its own answer there is nothing to check the
+pairing against except reading it, and that is what the last pass did.
+
+**"No printed tariff" is a real and separate blocker**, worth 80 parts.
+Biology's Ordinary Level Section C prices a whole question with a
+"number of correct responses → mark" table rather than a figure per part.
+Guessing the split has been the recurring error of this work — a `3+1`
+against a "describe two ways" part is four marks total, not four each — so
+a part whose marks are not printed is left rather than estimated.
 
 **187 of them cannot become question-and-answer cards at all.** "Draw a ray
 diagram", "Draw the structure of a molecule of eugenol" — the scheme's answer is
