@@ -42,7 +42,7 @@ LABELLED_POINT = re.compile(r'^([A-H])\s*[=:\u2010\u2013\u2014-]\s*(.+)$')
 # card has to be born under the same one rather than a tidier one.
 ID_PREFIX = {
     'agricultural-science': 'agsci', 'biology': 'bio', 'business': 'bus',
-    'chemistry': 'chem', 'economics': 'econ', 'home-economics': 'hem',
+    'chemistry': 'chem', 'economics': 'econ', 'home-economics': 'he',
     'physics': 'phys',
 }
 

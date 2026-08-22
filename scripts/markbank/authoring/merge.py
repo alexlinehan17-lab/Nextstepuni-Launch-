@@ -26,7 +26,7 @@ SUBJECT = sys.argv[1] if len(sys.argv) > 1 and not sys.argv[1].startswith('--') 
 if not SUBJECT:
     raise SystemExit('name a subject: merge.py <subject> [--write]')
 PREFIX = {'agricultural-science': 'agsci', 'biology': 'bio', 'business': 'bus',
-          'chemistry': 'chem', 'economics': 'econ', 'home-economics': 'hem',
+          'chemistry': 'chem', 'economics': 'econ', 'home-economics': 'he',
           'physics': 'phys'}[SUBJECT]
 AUTHORED = os.path.join(ROOT, f'scripts/markbank/authored/{SUBJECT}.json')
 OWNED = os.path.join(ROOT, f'scripts/markbank/authored/{SUBJECT}-script-ids.json')
@@ -43,6 +43,20 @@ scripts = sorted(f for f in os.listdir(DIR)
 ADOPTED = set(json.load(open(os.path.join(
     ROOT, 'scripts/markbank/authored/adopted-ids.json')))) if os.path.exists(
     os.path.join(ROOT, 'scripts/markbank/authored/adopted-ids.json')) else set()
+
+# Subjects whose deck is ALREADY fully script-derived have their own all-script
+# and must not come through here: this harness treats the authored file as
+# hand-written work to be preserved and appends to it, so running it against a
+# deck the scripts already regenerate emits every card a second time. Home
+# Economics has twenty he_*.py scripts covering all 571 of its cards, and
+# Economics has econ_all.py.
+OWN_HARNESS = {
+    'home-economics': 'the he_*.py scripts, merged per the workflow in README.md',
+    'economics': 'econ_all.py',
+    'agricultural-science': 'agsci_all.py',
+}
+if SUBJECT in OWN_HARNESS:
+    raise SystemExit(f'{SUBJECT} is built by {OWN_HARNESS[SUBJECT]} — use that, not merge.py')
 
 existing = json.load(open(AUTHORED))
 owned = set(json.load(open(OWNED))) if os.path.exists(OWNED) else set()
@@ -94,7 +108,17 @@ for c in merged:
         # plain and once carrying its figure, and the build supersedes one with
         # the other. Not a duplicate to refuse.
         pair = {c['id'], asked[k]}
-        twin = any(a + '-fig' == b for a in pair for b in pair)
+        # A '-fig' twin is the same question carded twice, once carrying its
+        # figure. A suffixed sibling is one question answered once per variant —
+        # Home Economics asks for a profile of a natural fibre and the deck
+        # carries wool, silk, cotton and linen separately. Both are deliberate.
+        # A card compared with itself means the same id appears twice, which the
+        # id guard above already reports; nothing to say here.
+        ids = sorted(pair)
+        a, b = (ids[0], ids[-1])
+        twin = (a != b
+                and (a + '-fig' == b
+                     or a.rsplit('-', 1)[0] == b.rsplit('-', 1)[0] != a))
         if twin:
             pass
         elif pair & script_ids:
