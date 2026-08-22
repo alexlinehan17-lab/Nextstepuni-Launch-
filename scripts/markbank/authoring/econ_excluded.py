@@ -110,6 +110,35 @@ EXCLUDED = {
         'the explanation is worth 8 over five steps and the scheme states no split',
     '2024 HL Q14(b)(i)':
         'the explanation is marked as a block and the scheme states no split',
+
+    # Calculations: the scheme's response IS the worked arithmetic, so a card
+    # would show the answer beside the sum that produces it.
+    '2025 HL Section A Q2(a)':
+        'the response is the worked calculation of the savings rate',
+    '2024 OL Q14(a)(i)': 'the response is the worked percentage calculation',
+    '2024 OL Q14(c)(i)': 'the response is the worked balance-of-trade calculation',
+    '2024 OL Q15(c)(i)': 'the response is the worked elasticity calculation',
+    '2025 HL Q11(a)(i)': 'the response is the worked HHI calculation',
+    '2025 HL Q13(a)(i)': 'the response is the worked percentage calculation',
+    '2025 HL Q15(b)(i)': 'the response is the worked calculation',
+    '2025 HL Q16(a)(ii)': 'the response is the worked calculation',
+    '2025 HL Q16(b)(ii)': 'the response is the worked calculation',
+    '2024 HL Q11(a)(i)': 'the response is the worked calculation',
+    '2024 HL Q11(b)(i)': 'the response is the worked multiplier calculation',
+    '2024 HL Q16(b)(ii)': 'the response is the worked elasticity calculation',
+    '2024 HL Q16(b)(iii)': 'the response is the worked elasticity calculation',
+    '2023 OL Q13(b)(ii)': 'the response is the worked calculation',
+    '2021 OL Q13(c)(ii)': 'the responses are figures read out of the CPI table',
+    '2023 HL Section A Q10':
+        'the responses are the national-accounts workings, not prose',
+    '2021 HL Section A Q10(b)':
+        'the scheme prints no responses for this part — only the section header',
+    '2021 OL Q11(c)(ii)':
+        'the scheme gives the definition welded to the cue and only an examples line after',
+    '2024 OL Section A Q10':
+        'answered by ticking which diagram applies, with the explanation beside it',
+    '2025 HL Section A Q7':
+        'answered by naming a product from the table and justifying off its YED value',
 }
 
 
