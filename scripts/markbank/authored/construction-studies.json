@@ -1,0 +1,507 @@
+[
+ {
+  "id": "cons-2021-hl-q1-a",
+  "topicId": "cons-3-2",
+  "conceptId": "vertical-section-door-external-wall-ground-floor",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "Q1(a)",
+  "questionText": "To a scale of 1:5, draw a vertical section through the centre of the door, the external wall and the ground floor. Show the typical construction details from the bottom of the strip foundation to a level 400 mm above finished floor level.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 x 4 + 4 x 4 + 4 x 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 48,
+  "rows": [
+   {
+    "id": "cons-2021-hl-q1-a-r1",
+    "kind": "anyN",
+    "verbatim": "Foundation, external wall and level entrance – typical detailing",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "Foundation, external wall and level entrance – typical detailing",
+    "group": {
+     "claimMax": 4,
+     "perOption": 4,
+     "options": [
+      "R.C. Strip foundation typical - 1350 mm × 400 mm",
+      "400 mm Blockwork - deadwork",
+      "Vertical insulation - thermal break",
+      "Entrance substructure",
+      "Level concrete entrance"
+     ]
+    }
+   },
+   {
+    "id": "cons-2021-hl-q1-a-r2",
+    "kind": "anyN",
+    "verbatim": "Solid ground floor – typical detailing",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "Solid ground floor – typical detailing",
+    "group": {
+     "claimMax": 4,
+     "perOption": 4,
+     "options": [
+      "Compacted hardcore",
+      "Sand blinding",
+      "Radon barrier / DPM",
+      "200 mm floor insulation",
+      "150 mm concrete floor / subfloor",
+      "20 mm hardwood flooring"
+     ]
+    }
+   },
+   {
+    "id": "cons-2021-hl-q1-a-r3",
+    "kind": "anyN",
+    "verbatim": "Door threshold and door – typical detailing",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "Door threshold and door – typical detailing",
+    "group": {
+     "claimMax": 4,
+     "perOption": 4,
+     "options": [
+      "Drainage channel",
+      "Concrete threshold and wrap around DPC / Proprietary insulated door threshold",
+      "15 mm upstand or 15°",
+      "Airtight tape at threshold",
+      "External door / vertical sheeting",
+      "Door insulation"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2021-hl-q3-c",
+  "topicId": "cons-1-1",
+  "conceptId": "working-from-a-home-office",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "Q3(c)",
+  "questionText": "Discuss two advantages and two disadvantages of working from a home office.",
+  "stem": "The scheme groups its answer under: Advantages; Disadvantages",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 x 3",
+   "answer": 4,
+   "ofParts": 14,
+   "perPart": 3
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "cons-2021-hl-q3-c-r1",
+    "kind": "anyN",
+    "verbatim": "Discuss two advantages and two disadvantages of working from a home office.",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 4,
+     "perOption": 3,
+     "options": [
+      "reduced time lost in commute",
+      "increased free time to use for personal health and wellbeing",
+      "no transport costs",
+      "increased productivity",
+      "greater flexibility",
+      "cost reduction from buying food on the go",
+      "better work-life balance",
+      "reduced distractions",
+      "no social interactions with colleagues",
+      "loneliness and isolation",
+      "distractions from the home environment",
+      "being out of the loop and overlooked",
+      "creating a dedicated work space",
+      "always being available"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2021-hl-q4-c",
+  "topicId": "cons-1-3",
+  "conceptId": "sketching-a-site-and-its-boundaries",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "Q4(c)",
+  "questionText": "Draw a well-proportioned sketch of your selected site and the immediate boundaries.",
+  "stem": "The scheme groups its answer under: House location and orientation; depth); Road entrance and driveway Site B",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "6 x 4",
+   "answer": 6,
+   "ofParts": 13,
+   "perPart": 4
+  },
+  "totalMarks": 24,
+  "rows": [
+   {
+    "id": "cons-2021-hl-q4-c-r1",
+    "kind": "anyN",
+    "verbatim": "Draw a well-proportioned sketch of your selected site and the immediate boundaries.",
+    "marks": 24,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 6,
+     "perOption": 4,
+     "options": [
+      "The design / form of the building maximises solar gains by having the largest external perimeter facing south",
+      "Building’s proximity to the road where services are normally Site A located",
+      "The building is set back from the road to reduce the environmental impact on the landscape",
+      "House placed for greater privacy",
+      "The built form and its positioning is inspired by local existing vernacular architectural characteristics",
+      "Maximum daylight penetration to the living areas/spaces which ideally should be located on the",
+      "Enabling maximum solar gain and daylight into the living spaces reduces the need for unnecessary heating and lighting",
+      "Short driveway resulting in minimal hard surfaces and less strain on existing surface water disposal systems",
+      "Facilitates the planting of vegetation to help integrate the house into the landscape and increase privacy",
+      "Enables the driver to clearly see oncoming traffic from both sides",
+      "Is set back – 5 metres - so that a car waiting to enter closed gates is not obstructing traffic",
+      "Sidewalls splayed at 45° for clear vision",
+      "Meets the criteria set out by the local authority – in design and measurements"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2021-hl-q6-a",
+  "topicId": "cons-6-3",
+  "conceptId": "designing-for-low-environmental-impact",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "Q6(a)",
+  "questionText": "With reference to the design shown, discuss using notes and freehand sketches, three features of the design that contribute to the house having a low environmental impact.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "6 x 5",
+   "answer": 6,
+   "ofParts": 8,
+   "perPart": 5
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "cons-2021-hl-q6-a-r1",
+    "kind": "anyN",
+    "verbatim": "impact",
+    "marks": 30,
+    "openList": true,
+    "contextNote": "impact",
+    "group": {
+     "claimMax": 6,
+     "perOption": 5,
+     "options": [
+      "Timber frame construction from local sources which reduces transport movements; has lower carbon emissions and a reduction in local air pollution",
+      "Less embodied energy required to produce timber frame construction compared to concrete block construction",
+      "One room deep design enables light to enter the room from both sides - heat from the sun entering the house will reduce heating costs",
+      "High levels of insulation used in the construction will reduce heat loss through the exterior envelope",
+      "The absence of a chimney reduces draughts and increases airtightness",
+      "Cedar cladding sourced from FSC certified forests used on the front façade",
+      "House is heated using a renewable heat source",
+      "Simple building form – building envelope area minimised to reduce energy loss through external walls"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2021-hl-q6-c",
+  "topicId": "cons-6-3",
+  "conceptId": "advantages-of-low-operational-energy-use",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "Q6(c)",
+  "questionText": "Discuss in detail two advantages of designing a house that will have a low operational energy use when the house is built.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 5",
+   "answer": 2,
+   "ofParts": 4,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2021-hl-q6-c-r1",
+    "kind": "anyN",
+    "verbatim": "Advantages",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Advantages",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Benefit the environment and our ecosystems by using less energy",
+      "It lowers our exposure to chemicals and pollution therefore enhancing our personal health and wellbeing",
+      "Costs less to run house",
+      "Less finite resources being consumed in the energy used to operate the house"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2021-hl-q7-b",
+  "topicId": "cons-3-10",
+  "conceptId": "moisture-at-the-chimney-roof-junction",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "Q7(b)",
+  "questionText": "On your drawing, show two typical design details to prevent the penetration of moisture at the junction of the roof and chimney stack.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 3",
+   "answer": 2,
+   "ofParts": 2,
+   "perPart": 3
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "cons-2021-hl-q7-b-r1",
+    "kind": "anyN",
+    "verbatim": "On your drawing, show two typical design details to prevent the penetration of moisture at the junction of the roof and ",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "DPC at roof level",
+      "Lead flashing ×"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2021-hl-q8-c",
+  "topicId": "cons-5-3",
+  "conceptId": "air-to-water-heat-pump",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "Q8(c)",
+  "questionText": "Discuss two advantages of installing an Air-to-Water heat pump system in the house as an alternative to the stove.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 4",
+   "answer": 2,
+   "ofParts": 8,
+   "perPart": 4
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "cons-2021-hl-q8-c-r1",
+    "kind": "anyN",
+    "verbatim": "Advantages",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Advantages",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Reduces the heating cost and increase energy efficiency heating a house",
+      "Easy installation and low maintenance",
+      "Heat pumps reduces the operational carbon emissions of a house",
+      "Reduces the burning of fossil fuels to heat a house",
+      "Heat pumps are environmentally friendly reducing harmful particulate and carbon dioxide emissions by over 60% - 80%",
+      "The installation of a domestic heat pumps are eligible for SEAI grants for homeowners",
+      "Low noise emissions and reduced heating time",
+      "Air-to-water heat pumps do not produce carbon emissions when operating"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2021-hl-q9-b",
+  "topicId": "cons-5-8",
+  "conceptId": "ring-main-circuit-wiring-layout",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "Q9(b)",
+  "questionText": "Using notes and freehand sketches, show the design of a typical wiring layout for a ring main circuit to include: • distribution board • three electrical sockets. Indicate the typical sizes and colour coding of the electrical cables.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "6 x 5",
+   "answer": 6,
+   "ofParts": 6,
+   "perPart": 5
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "cons-2021-hl-q9-b-r1",
+    "kind": "anyN",
+    "verbatim": "Ring main circuit – typical detailing",
+    "marks": 30,
+    "openList": true,
+    "contextNote": "Ring main circuit – typical detailing",
+    "group": {
+     "claimMax": 6,
+     "perOption": 5,
+     "options": [
+      "Distribution board",
+      "Three sockets",
+      "Live cabling",
+      "Neutral cabling",
+      "Earth cabling",
+      "Cable size (2) and colour (3)"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2021-hl-q9-c",
+  "topicId": "cons-1-9",
+  "conceptId": "renewable-energy-ratio",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "Q9(c)",
+  "questionText": "The current Building Regulations require all new houses to have a renewable energy ratio (RER) of 20%. Discuss two benefits for the homeowner of generating their own electricity by using micro-generation to help meet this energy requirement.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 6",
+   "answer": 2,
+   "ofParts": 6,
+   "perPart": 6
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "cons-2021-hl-q9-c-r1",
+    "kind": "anyN",
+    "verbatim": "The current Building Regulations require all new houses to have a renewable energy ratio (RER) of 20%. Discuss two benef",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Reduce household electricity costs by generating electrical power through micro-generators",
+      "The use of micro-generators will reduce the household carbon footprint",
+      "Generation of clean electricity to help combat climate change",
+      "Excess electricity can be sold back to the national grid – generate a household income",
+      "Reduce the burning of fossil fuels which release high levels of greenhouse gases and carbon dioxide into the atmosphere",
+      "Households become independent from the primarily coal-powered energy grid - reduce your reliance on grid electricity and the costs that come with it"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2021-hl-q10-c",
+  "topicId": "cons-6-4",
+  "conceptId": "design-features-for-thermal-comfort",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "Q10(c)",
+  "questionText": "Using notes and freehand sketches, discuss two features of the given house design that contribute to the house responding to its rural setting. OR 10. “There is considerable potential to convert and reuse former schools, churches, mills and farm buildings in the county which will preserve these historic buildings which presently lie empty. This is an approach which underpins sustainable development in that it retains our built heritage while bringing empty structures into use. The reuse of these buildings can help to reduce the demand for new housing while also preserving the vernacular design of the area.” Adapted from: County Roscommon Rural Design Guidelines by Roscommon County Council Published by: Roscommon County Council",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 x 3",
+   "answer": 4,
+   "ofParts": 9,
+   "perPart": 3
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "cons-2021-hl-q10-c-r1",
+    "kind": "anyN",
+    "verbatim": "Using notes and freehand sketches, discuss two features of the given house design that contribute to the house respondin",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 4,
+     "perOption": 3,
+     "options": [
+      "Dome-shaped roof profile similar to haybarns found in countryside",
+      "House is rectangular, narrow and one-room deep in plan",
+      "Nestled into the contours and features of the landscape – trees, vegetation, ground terrain",
+      "External corrugated metal cladding on the upper section of the house reflects materials used in agricultural buildings",
+      "White rendered finish to the lower aspect of the house – similar to lime render finish on rural houses",
+      "Proportion of the external materials applied similar to typical agricultural haybarn",
+      "House is construction in a longhouse form",
+      "Narrow plan width - one room deep form of traditional vernacular dwellings",
+      "Minimum hard surfaces to allow vegetation to flourish about the house"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ }
+]

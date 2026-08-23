@@ -63,6 +63,8 @@ TARIFF_ONLY = re.compile(r'^[\d\s×x+•()\-]*marks?\b.*$', re.I)
 SCALE_TAIL = re.compile(r'^(Scale\s*[-–]|Drafting\s*[-–]|[\d\s]+$)', re.I)
 # The mark column bleeding onto the end of a bullet: "R.C. strip foundation 4".
 MARK_TAIL = re.compile(r'\s+\d{1,3}\s*$')
+TOTAL_ONLY = re.compile(r'^(total|sub-?total|notes?|sketches?'
+                        r'|\(?\d+\s+for\s+\w+)\b', re.I)
 # A group heading: short, title-ish, no closing punctuation, no bullet.
 HEADING_LOOK = re.compile(r'^[A-Z][^.:;•]{0,58}$')
 # Lines that sit where a heading sits but name nothing. The question's own text
@@ -260,6 +262,25 @@ class Scheme:
             t = tariffs[n] if n < len(tariffs) else (tariffs[0] if len(tariffs) == 1 else None)
             out.append((name, t, b))
         return out
+
+    def mark_items(self, q, letter):
+        """The mark table's own answer rows, where IT is the fuller list.
+
+        For most parts the indicative half carries the content and the mark
+        table only prices it. For the services and wiring layouts it is the
+        other way round: the 2021 Higher Q9(b) mark table names the six things
+        a ring main drawing must show, and the indicative half lists something
+        else entirely under "Ring main circuit - typical detailing".
+        """
+        out = []
+        for line in _rewrap(self.marks.get((q, letter), [])):
+            t = BULLET.sub('', line).strip()
+            if not t or TARIFF_ONLY.match(t) or SCALE_TAIL.match(t):
+                continue
+            t = MARK_TAIL.sub('', t).strip(' .;')
+            if len(t) > 2 and not TOTAL_ONLY.match(t):
+                out.append(t)
+        return out[1:] if out else out          # drop the part's own title
 
     def tariff(self, q, letter):
         """(kind, n, per) from the mark table, or None if it prints none."""

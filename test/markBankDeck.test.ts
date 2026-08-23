@@ -404,6 +404,7 @@ describe('the taxonomy is the redeveloped specification', () => {
       biology: 'bio-', chemistry: 'chem-', physics: 'phys-',
       'agricultural-science': 'agsci-', business: 'business-',
       'home-economics': 'home-economics-', economics: 'economics-',
+      'construction-studies': 'cons-',
     };
     for (const subject of SUBJECTS) {
       const prefix = PREFIX[subject.id];

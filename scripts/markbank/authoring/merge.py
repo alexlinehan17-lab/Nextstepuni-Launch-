@@ -54,6 +54,7 @@ OWN_HARNESS = {
     'home-economics': 'the he_*.py scripts, merged per the workflow in README.md',
     'economics': 'econ_all.py',
     'agricultural-science': 'agsci_all.py',
+    'construction-studies': 'cs_all.py',
 }
 if SUBJECT in OWN_HARNESS:
     raise SystemExit(f'{SUBJECT} is built by {OWN_HARNESS[SUBJECT]} — use that, not merge.py')

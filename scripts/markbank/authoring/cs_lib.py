@@ -28,7 +28,9 @@ from markbank_authoring import anyN, make_audit, make_card, make_emit  # noqa: E
 
 SUBJECT = 'construction-studies'
 _card = make_card(SUBJECT, default_section='B')
-audit = make_audit(40)
+# The deck's own display cap; mirrors MAX_LONG_OPTION_ROWS in optionCap.mjs.
+MAX_OPTIONS_SHOWN = 14
+audit = make_audit(MAX_OPTIONS_SHOWN)
 emit = make_emit(audit)
 
 ANY_N = re.compile(r'\bany\s+(one|two|three|four|five|six)\b', re.I)
@@ -50,8 +52,15 @@ def _squash(t):
 
 
 class Author:
+    LEVELS = {'hl': 'higher', 'ol': 'ordinary'}
+
     def __init__(self, year, level):
         self.year, self.level = year, level
+        # The deck names levels in full, and the build resolves a card's scheme
+        # file from it: "hl" was read as not-"higher", so every Higher card was
+        # checked against the ORDINARY scheme and its marking points reported
+        # untraceable. They traced perfectly against the right file.
+        self.deck_level = self.LEVELS[level]
         self.S = CS.Scheme(year, level)
         self.P = PP.Paper(SUBJECT, year, level)
         self.cards = []
@@ -95,10 +104,6 @@ class Author:
         # A group whose mark rows are each priced the same: the scheme sets
         # "Guideline 1 (3 for note, 3 for sketch) 6 / Guideline 2 ... 6" under
         # each task, which is two claimable answers at 6 rather than a total.
-        marks = [int(m.group(1)) for l in block_lines
-                 if (m := re.search(r'\s(\d{1,3})\s*$', l.strip()))]
-        if len(marks) >= 2 and len(set(marks)) == 1 and index is None:
-            return (len(marks), marks[0])
         block = ' '.join(self.S.marks.get((q, letter), []))
         # The commonest form by far, and the one groups() cannot reach: the
         # mark table prints "6 x 5 marks" as a line of its own, above rows that
@@ -124,45 +129,100 @@ class Author:
                     return (claim, per)
                 raise Refused(f'Q{q}({letter}): {total}/{claim} = {per}, but the scheme '
                               f'never prints {per} — not carding a derived tariff')
+        # Last resort, and the only inferred form: every priced row in the part
+        # carries the same mark, so the count and that mark are the tariff. It
+        # must reconcile with the printed total, otherwise it is a guess.
+        marks = [int(m.group(1)) for l in block_lines
+                 if (m := re.search(r'\s(\d{1,3})\s*$', l.strip()))]
+        if len(marks) >= 2 and len(set(marks)) == 1 and index is None:
+            n, per = len(marks), marks[0]
+            if tot is None or n * per == int(tot.group(1)):
+                return (n, per)
         raise Refused(f'Q{q}({letter}) [{name}]: the scheme prints no tariff for this '
                       f'group; leave it uncarded rather than estimate one')
 
     # ---- the card -------------------------------------------------------
-    def card(self, q, letter, name, *, cid, topic, concept, qtext, note='', notes='',
-             stem='', claim=None, index=None):
+    def card(self, q, letter, *, cid, topic, concept, note='', notes='', stem='',
+             only=None):
+        """One card per PART, with one row per group the scheme names.
+
+        NOT one card per group. A group-level card would need a group-level
+        question -- "name five details of the foundation" -- and no such
+        sentence exists in the paper. Question text is lifted or it is not
+        written, so the card asks the part exactly as the paper sets it and
+        carries the scheme's own groups as separate rows. That is also how the
+        SEC marks it: Q1(a) of the 2021 Higher paper is three lists priced
+        4 x 4 each, not one list of twelve.
+        """
         if cid in self._used:
             raise Refused(f'{cid}: already emitted')
-        gs = [g for g in self.S.groups(q, letter, 'indicative')
-              if name is None or _squash(g[0] or '') == _squash(name)]
-        if not gs:
-            have = [g[0] for g in self.S.groups(q, letter, 'indicative')]
-            raise Refused(f'Q{q}({letter}): no group {name!r} in the scheme; it has {have}')
-        _, _, items = gs[0]
-        options = []
-        for it in items:
-            it = it.strip(' .;')
-            if not it or CONTENT_FREE.match(it):
-                continue
-            if _squash(it) not in self.raw:
-                raise Refused(f'Q{q}({letter}) [{name}]: {it[:60]!r} is not in the '
-                              f'scheme text — the extraction changed it')
-            options.append(it)
-        if len(options) < 2:
-            raise Refused(f'Q{q}({letter}) [{name}]: {len(options)} usable option(s)')
-        n, per = self.tariff(q, letter, name, len(options), index)
-        if claim is not None:
-            n = claim
-        if n > len(options):
-            raise Refused(f'Q{q}({letter}) [{name}]: tariff claims {n} of only '
-                          f'{len(options)} printed options')
+        qtext = self.question(q, letter)
         if not qtext:
-            raise Refused(f'Q{q}({letter}): no question text')
-        total = n * per
-        row = anyN(f'{cid}-r1', options[0], total, n, per, options, note)
+            raise Refused(f'Q{q}({letter}): no question text in the paper')
+        gs = self.S.groups(q, letter, 'indicative')
+        multi = len(CS.GROUP_TARIFF.findall(
+            ' '.join(self.S.marks.get((q, letter), [])))) > 1
+        # One tariff over several groups prices the PART, not each group:
+        # "Two features that could be added to reduce its energy use (4 x 5
+        # marks)" sits over five candidate features. Charging every group 4 x 5
+        # multiplies the question's marks by five, and the guard below caught it
+        # as a tariff claiming more options than the group prints. Merge instead,
+        # so the tariff applies to exactly the list the scheme priced.
+        if not multi and len(gs) > 1:
+            merged = [it for _, _, items in gs for it in items]
+            names = [n for n, _, _ in gs if n]
+            gs = [(None, None, merged)]
+            stem = stem or ('The scheme groups its answer under: ' + '; '.join(names)
+                            if names else stem)
+        rows, parts_note = [], []
+        for gi, (name, _, items) in enumerate(gs):
+            if only is not None and gi not in only:
+                continue
+            options = []
+            for it in items:
+                it = it.strip(' .;')
+                if not it or CONTENT_FREE.match(it):
+                    continue
+                if _squash(it) not in self.raw:
+                    raise Refused(f'Q{q}({letter}) [{name}]: {it[:60]!r} is not in '
+                                  f'the scheme text — the extraction changed it')
+                options.append(it)
+            if len(options) < 2:
+                continue
+            n, per = self.tariff(q, letter, name, len(options), gi if multi else None)
+            if n > len(options) and len(gs) == 1:
+                # The mark table is the fuller list for this part -- see
+                # cs_scheme.mark_items. Only tried where the part has a single
+                # group, because with several the two halves are not the same
+                # list and swapping one for the other would mix them.
+                alt = [it.strip(' .;') for it in self.S.mark_items(q, letter)
+                       if it.strip() and not CONTENT_FREE.match(it.strip(' .;'))]
+                alt = [it for it in alt if _squash(it) in self.raw]
+                if len(alt) >= n:
+                    options = alt
+            if n > len(options):
+                raise Refused(f'Q{q}({letter}) [{name}]: tariff claims {n} of only '
+                              f'{len(options)} printed options')
+            if len(options) > MAX_OPTIONS_SHOWN:
+                # The deck will not show more than this many options in a row,
+                # and a card offering thirty-seven is not a card. It happens
+                # where one part-level tariff sits over several groups and they
+                # are merged; the honest answer is to leave the part than to
+                # truncate a menu the SEC printed whole.
+                raise Refused(f'Q{q}({letter}) [{name}]: {len(options)} options, past '
+                              f'the {MAX_OPTIONS_SHOWN} a row may show')
+            label = (name or qtext)[:120]
+            rows.append(anyN(f'{cid}-r{len(rows) + 1}', label, n * per, n, per,
+                             options, name or ''))
+            parts_note.append(f'{n} x {per}')
+        if not rows:
+            raise Refused(f'Q{q}({letter}): no priced group with usable options')
+        total = sum(r['marks'] for r in rows)
+        kind = 'bestNofParts' if len(rows) == 1 else 'fixed'
         self.cards.append(_card(
-            cid, self.year, self.level, topic, concept, self.ref(q, letter),
-            qtext, f'{n} x {per}', total, [row], notes, stem=stem,
-            tariff_kind='bestNofParts'))
+            cid, self.year, self.deck_level, topic, concept, self.ref(q, letter),
+            qtext, ' + '.join(parts_note), total, rows, notes, stem=stem,
+            tariff_kind=kind))
         self._used.add(cid)
         return self.cards[-1]
 

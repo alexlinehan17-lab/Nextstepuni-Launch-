@@ -35,6 +35,17 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 /** Per-subject facts the generated module needs. Adding a subject means adding
  *  a row here, and nothing else in this script changes. */
 const SUBJECTS = {
+  'construction-studies': {
+    title: 'Construction Studies',
+    /* The syllabus these papers were actually sat under. Its replacement,
+     * Construction Technology, is first examined 2028, so unlike the science
+     * subjects there is no redeveloped specification to tag against and the
+     * cards are filed where a student revising them is actually studying. */
+    specVersion: 'lc-construction-studies-syllabus',
+    specNote: 'Cards are tagged to the sections of the Construction Studies syllabus these\n * papers were sat under. Construction Technology replaces it from 2028.',
+    figureDir: 'public/exam-figures/construction-studies',
+    blocked: new Set(),
+  },
   biology: {
     title: 'Biology',
     specVersion: 'lc-biology-2002',
