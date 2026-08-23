@@ -53,6 +53,13 @@ def _squash(t):
     return re.sub(r'[^a-z0-9]+', '', (t or '').lower())
 
 
+SOLUTION_LABEL = 'Model solution'
+# Part labels, rung markers and bare mark totals are not working.
+SOLUTION_FURNITURE = re.compile(
+    r'^(?:\(?[a-h]\)|\(?(?:i{1,3}|iv|vi{0,3})\)|\[?\d{1,3}\]?|OR'
+    r'|Model Solution.*|Q\d+)$', re.I)
+
+
 class Author:
     LEVELS = {'hl': 'higher', 'ol': 'ordinary'}
 
@@ -79,6 +86,12 @@ class Author:
                  if k[0] == q and k[1] == letter and k[2] == roman]
         if not exact and roman is None:
             exact = [k for k in P.parts if k[0] == q and k[1] == letter]
+        # The scheme sometimes prices a whole question as one unit -- 2021 OL
+        # Paper 1 Q2 is marked once where the paper sets (a) and (b) -- and the
+        # paper has no part with no letter to match, so the lookup found
+        # nothing and the part was filed as having no question text at all.
+        if not exact and letter is None:
+            exact = [k for k in P.parts if k[0] == q]
         if not exact:
             return ''
         exact.sort(key=lambda k: (k[1] or '', k[2] or ''))
@@ -94,6 +107,33 @@ class Author:
             tail += f'({roman})'
         return f'{self.year} {self.level.upper()} Paper {paper} {tail}'
 
+    def _solution_rows(self, key):
+        """The scheme's printed worked solution, read as marking points.
+
+        Where the Marking Notes column is empty the scheme has still printed
+        the answer -- in the Model Solution column beside it, which is the SEC's
+        own text and is what the ladder is marked against. 2021 HL Paper 1
+        Q4(b)(i) prices five marks on a (0, 2, 5) scale and states nothing in
+        the notes, while the solution column reads "Tn = p + (n-1)(7)" and
+        "Tn = p + 7n-7". Refusing those parts threw away a printed answer; 84
+        parts of the ten papers are marked that way.
+        """
+        out = []
+        for text in self.S.solution(key):
+            text = text.strip()
+            if not text or SOLUTION_FURNITURE.match(text):
+                continue
+            # Not the squashed-length test the prose subjects use. Squashing
+            # keeps only letters and digits, and a line of algebra is mostly
+            # neither: "Tn = p + (n-1)(7)" squashes to six characters and was
+            # dropped as too thin, which is why this fallback first returned
+            # nothing at all. Length of the line as printed, plus something to
+            # read in it.
+            if len(text) < 4 or not re.search(r'[A-Za-z0-9]', text):
+                continue
+            out.append((SOLUTION_LABEL, text))
+        return out
+
     def card(self, key, *, cid, topic, concept, notes='', stem='', figure_key=''):
         if cid in self._used:
             raise Refused(f'{cid}: already emitted')
@@ -105,6 +145,8 @@ class Author:
             raise Refused(f'{self.ref(key)}: the scheme prints no ladder for this part')
         rows = [(lab, txt) for lab, txt in self.S.answer_rows(key)
                 if txt and not CONTENT_FREE.match(txt) and len(_squash(txt)) > 6]
+        if not rows:
+            rows = self._solution_rows(key)
         if not rows:
             raise Refused(f'{self.ref(key)}: the marking notes state nothing liftable')
         if len(rows) > MAX_OPTIONS_SHOWN:
@@ -127,7 +169,11 @@ class Author:
         # provenance gate is right to refuse it. The headings go in the note,
         # in order, so a student still knows which rung is which.
         options = [txt for _, txt in rows]
-        rung_note = ' Marked in order: ' + '; '.join(lab for lab, _ in rows) + '.'
+        if all(lab == SOLUTION_LABEL for lab, _ in rows):
+            rung_note = (" These are the lines of the scheme's own printed "
+                         'solution, in the order it sets them out.')
+        else:
+            rung_note = ' Marked in order: ' + '; '.join(lab for lab, _ in rows) + '.'
         note = ('The scheme marks this on a sliding scale: '
                 + ', '.join(f'{n} for {v}' for n, v in
                             zip(('nothing', 'one part', 'two parts', 'three parts',

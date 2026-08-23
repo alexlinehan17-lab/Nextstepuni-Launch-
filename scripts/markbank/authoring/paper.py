@@ -81,12 +81,18 @@ def papers_dir(subject):
 # follow a closed sentence AND introduce a part, which is what separates it from
 # a figure caption or a numbered line; the caller then requires the number to be
 # one the paper is actually due.
-INLINE_QHEAD = re.compile(r'(?<=[.)?:])\s+(?=\d{1,2}\.\s+[A-Z(])')
+# Either spelling of a question head. Maths writes "Question 1" where the
+# science papers write "1.", and the rubric sentence above it is set in the
+# same block -- "Answer any four questions from this section. Question 1" --
+# so a head only recognised at the start of a block was invisible. Every
+# Q1 in the Maths corpus was lost that way, and with it its parts.
+QHEAD_AHEAD = r'(?=\d{1,2}\.\s+[A-Z(]|Question\s+\d{1,2}\b)'
+INLINE_QHEAD = re.compile(r'(?<=[.)?:])\s+' + QHEAD_AHEAD)
 
 RUBRIC_HEAD = re.compile(
     r'^(?:(?:SECTION|Section)\s+[A-D]\b'
     r'|Answer\s+(?:any\s+)?[\w\-]+\s+questions?\b)'
-    r'.*?\.\s+(?=\d{1,2}\.\s+[A-Z(])', re.S)
+    r'.*?\.\s+' + QHEAD_AHEAD, re.S)
 
 QHEAD = re.compile(r'^(?:Question\s+(\d{1,2})\b|(\d{1,2})\.\s+(?=[A-Z(\d]))')
 MARKER = re.compile(r'^\(([a-z]{1,4})\)\s*')
@@ -177,6 +183,14 @@ class Paper:
         bare = [i for i, t in enumerate(blocks)
                 if re.fullmatch(r'Question\s+\d{1,2}|\d{1,2}\s+Question', t)]
         contents = {i for i in bare if i - 1 in bare or i + 1 in bare}
+        # Same argument, one step further: a lone number standing beside other
+        # lone numbers is a graph axis, not a head. The Argand diagram in 2021
+        # OL Paper 1 Q2 labels its axes -5 to 7, and the "3" among those labels
+        # was read as Question 3 -- which then swallowed Q2(b) and Q2(c) and
+        # filed them under a question they have nothing to do with.
+        lone = [i for i, t in enumerate(blocks)
+                if re.fullmatch(r'[-\u2212]?\d{1,2}\.?', t.strip())]
+        axis = {i for i in lone if i - 1 in lone or i + 1 in lone}
 
         for index, text in enumerate(blocks):
             if index in contents:
@@ -191,7 +205,7 @@ class Paper:
                 # are only read as a head when the number is the very next
                 # question due — no gap, no tolerance.
                 loose = re.match(r'(\d{1,2})\.?(\s+|$)', text)
-                if loose and int(loose.group(1)) == q + 1:
+                if loose and index not in axis and int(loose.group(1)) == q + 1:
                     text = f'{loose.group(1)}. {text[loose.end():]}'.strip()
                     m = QHEAD.match(text) or QHEAD.match(text + ' X')
             if not m:
