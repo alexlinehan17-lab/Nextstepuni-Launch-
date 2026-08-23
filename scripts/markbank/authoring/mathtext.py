@@ -100,7 +100,7 @@ def line_text(line):
         raised = (s['size'] < base - 1.5 and prev is not None
                   and s['bbox'][1] < prev['bbox'][1] - 0.8)
         out.append(f'^({t.strip()})' if raised and t.strip() else t)
-    return superscripts(''.join(out).strip())
+    return spacing(superscripts(''.join(out).strip()))
 
 
 def columns(page, cut=300):
@@ -195,8 +195,11 @@ def clean_like(paths, fragment):
         hay.append(sq)
         owner.extend([i] * len(sq))
     hay = ''.join(hay)
-    at = -1
-    for n in range(min(len(want), 200), 39, -10):
+    # The floor has to be below len(want), or the range is EMPTY and the match
+    # never runs: a 34-character fragment against a floor of 40 gave range(34,
+    # 39, -10), no iterations, and a silent fallback to the unrepaired text.
+    at, floor = -1, min(40, len(want)) - 1
+    for n in range(min(len(want), 200), floor, -10):
         at = hay.find(want[:n])
         if at >= 0:
             break
@@ -204,12 +207,30 @@ def clean_like(paths, fragment):
         return demangle(fragment)
     end = min(at + len(want), len(owner)) - 1
     lines = rows[owner[at]:owner[end] + 1]
-    return ' '.join(' '.join(c for c, _ in lines).split())
+    return spacing(' '.join(' '.join(c for c, _ in lines).split()))
 
 
 SUP = {'0': '⁰', '1': '¹', '2': '²', '3': '³', '4': '⁴', '5': '⁵',
        '6': '⁶', '7': '⁷', '8': '⁸', '9': '⁹', '+': '⁺', '-': '⁻',
        'n': 'ⁿ', 'i': 'ⁱ', '(': '⁽', ')': '⁾'}
+
+
+OPERATOR = re.compile(r'(?<=[A-Za-z0-9)\]|²³⁴⁵⁶⁷⁸⁹¹⁰])\s*([=+×÷≤≥<>≠])\s*')
+
+
+def spacing(text):
+    """Put the space back on both sides of an operator.
+
+    The PDF kerns these so the space lands after the operator and not before:
+    "x= 0", "2x+ 3", "0 <x<4". On a card that reads as a typo, and it is the
+    first thing anyone notices.
+
+    Deliberately does NOT touch the minus sign. In this notation "−" is as often
+    a negation as a subtraction -- "e5k−1", "f(−2)" -- and spacing it wrongly
+    would be worse than leaving it.
+    """
+    out = OPERATOR.sub(lambda m: f' {m.group(1)} ', text or '')
+    return re.sub(r'\s{2,}', ' ', out).strip()
 
 
 def superscripts(text):

@@ -242,6 +242,218 @@ export interface CurriculumRedevelopmentTransition {
  * editorial study advice: every entry is backed by Curriculum Online or the
  * NCCA redevelopment schedule.
  */
+
+/**
+ * The Construction Studies syllabus's own ten sections, mirroring
+ * CONSTRUCTION_STUDIES_STRANDS in components/MarkBank/deck.ts. Both are needed:
+ * deck.ts is what the tool displays, this is what a card's topic must resolve
+ * into, and a subject present in one and absent from the other fails the
+ * registry check the moment its deck can be loaded.
+ */
+const CONSTRUCTION_STUDIES_GROUPS = [
+  {
+    id: 'cs1',
+    code: '1',
+    title: 'General',
+    topics: [
+      { id: 'cons-1-1', code: '1.1', title: 'Historical development and appearance of buildings' },
+      { id: 'cons-1-2', code: '1.2', title: 'The built environment and controls over it' },
+      { id: 'cons-1-3', code: '1.3', title: 'Planning permission, choosing a site, house purchase' },
+      { id: 'cons-1-4', code: '1.4', title: 'The construction industry and occupations in it' },
+      { id: 'cons-1-5', code: '1.5', title: 'Drawings, documents, scales, symbols and notation' },
+      { id: 'cons-1-6', code: '1.6', title: 'Site investigation and site accommodation' },
+      { id: 'cons-1-7', code: '1.7', title: 'Structural principles and exposure to the elements' },
+      { id: 'cons-1-8', code: '1.8', title: 'Safety precautions on site' },
+      { id: 'cons-1-9', code: '1.9', title: 'Building regulations and fire tests on materials' },
+    ],
+  },
+  {
+    id: 'cs2',
+    code: '2',
+    title: 'Substructure',
+    topics: [
+      { id: 'cons-2-1', code: '2.1', title: 'Excavation, vegetable soil and water in excavations' },
+      { id: 'cons-2-2', code: '2.2', title: 'Functions of a foundation and choice of foundation' },
+      { id: 'cons-2-3', code: '2.3', title: 'Subsoil movement and foundation materials' },
+      { id: 'cons-2-4', code: '2.4', title: 'Strip, slab, short bored pile and pad foundations' },
+      { id: 'cons-2-5', code: '2.5', title: 'Steel reinforcement in foundations' },
+      { id: 'cons-2-6', code: '2.6', title: 'Concrete materials, storage and batching' },
+      { id: 'cons-2-7', code: '2.7', title: 'Water/cement ratio, mixing, site and ready mixed concrete' },
+    ],
+  },
+  {
+    id: 'cs3',
+    code: '3',
+    title: 'Superstructure',
+    topics: [
+      { id: 'cons-3-1', code: '3.1', title: 'Structural forms and the relationship to substructure' },
+      { id: 'cons-3-2', code: '3.2', title: 'The external envelope and its primary functions' },
+      { id: 'cons-3-3', code: '3.3', title: 'External walls, bonding, piers and parapet walls' },
+      { id: 'cons-3-4', code: '3.4', title: 'Damp proof courses and membranes, lintels and arches' },
+      { id: 'cons-3-5', code: '3.5', title: 'Windows: types, components, ironmongery and choice' },
+      { id: 'cons-3-6', code: '3.6', title: 'Window details at head, sill and jamb; glass and glazing' },
+      { id: 'cons-3-7', code: '3.7', title: 'Doors: types, schedules, sizes and details' },
+      { id: 'cons-3-8', code: '3.8', title: 'Roof forms, trusses and trussed rafters' },
+      { id: 'cons-3-9', code: '3.9', title: 'Roof coverings, sarking and thermal insulation' },
+      { id: 'cons-3-10', code: '3.10', title: 'Flat roofs, finishes, eaves, verges and abutments' },
+    ],
+  },
+  {
+    id: 'cs4',
+    code: '4',
+    title: 'Internal Construction',
+    topics: [
+      { id: 'cons-4-1', code: '4.1', title: 'Internal walls, openings and wall finishes' },
+      { id: 'cons-4-2', code: '4.2', title: 'Ground floors: solid and timber, and their junctions' },
+      { id: 'cons-4-3', code: '4.3', title: 'Suspended timber floors, upper floors and strutting' },
+      { id: 'cons-4-4', code: '4.4', title: 'Stairs: rise, going, handrail, height and headroom' },
+      { id: 'cons-4-5', code: '4.5', title: 'Stud partitions, internal doors and second fixing' },
+      { id: 'cons-4-6', code: '4.6', title: 'Dry lining, plastering, painting and defects in finishes' },
+    ],
+  },
+  {
+    id: 'cs5',
+    code: '5',
+    title: 'Services and External Works',
+    topics: [
+      { id: 'cons-5-1', code: '5.1', title: 'Service entry, materials and protection of installations' },
+      { id: 'cons-5-2', code: '5.2', title: 'Hot and cold water systems, cisterns and cylinders' },
+      { id: 'cons-5-3', code: '5.3', title: 'Heating systems, temperature control and heat conservation' },
+      { id: 'cons-5-4', code: '5.4', title: 'Surface water, eaves gutters and rainwater pipes' },
+      { id: 'cons-5-5', code: '5.5', title: 'Underground drainage, septic tanks and laying drains' },
+      { id: 'cons-5-6', code: '5.6', title: 'Sanitary fitments and the single stack system' },
+      { id: 'cons-5-7', code: '5.7', title: 'Fireplaces and flues to domestic fireplaces' },
+      { id: 'cons-5-8', code: '5.8', title: 'Domestic electrical installation, circuits and protection' },
+    ],
+  },
+  {
+    id: 'cs6',
+    code: '6',
+    title: 'Heat and Thermal Effects in Buildings',
+    topics: [
+      { id: 'cons-6-1', code: '6.1', title: 'Thermal resistance, conductivity and transmittance' },
+      { id: 'cons-6-2', code: '6.2', title: 'Thermal bridges and insulating materials' },
+      { id: 'cons-6-3', code: '6.3', title: 'Heat loss calculations and running costs' },
+      { id: 'cons-6-4', code: '6.4', title: 'Solar heat gain and sources of heat gain' },
+      { id: 'cons-6-5', code: '6.5', title: 'Human comfort, humidity and ventilation rates' },
+      { id: 'cons-6-6', code: '6.6', title: 'Surface condensation and vapour barriers' },
+    ],
+  },
+  {
+    id: 'cs7',
+    code: '7',
+    title: 'Illumination in Buildings',
+    topics: [
+      { id: 'cons-7-1', code: '7.1', title: 'The way we see, and the nature of light' },
+      { id: 'cons-7-2', code: '7.2', title: 'Units of illumination and the daylight factor' },
+      { id: 'cons-7-3', code: '7.3', title: 'Glare, the glare index and control of glare' },
+      { id: 'cons-7-4', code: '7.4', title: 'Conditions necessary for good illumination' },
+    ],
+  },
+  {
+    id: 'cs8',
+    code: '8',
+    title: 'Sound in Buildings',
+    topics: [
+      { id: 'cons-8-1', code: '8.1', title: 'The way we hear, and the nature of sound' },
+      { id: 'cons-8-2', code: '8.2', title: 'The decibel, reverberation and reverberation time' },
+      { id: 'cons-8-3', code: '8.3', title: 'Airborne and impact sound insulation' },
+      { id: 'cons-8-4', code: '8.4', title: 'Hearing loss, noise levels and protection devices' },
+    ],
+  },
+  {
+    id: 'cs9',
+    code: '9',
+    title: 'Tools',
+    topics: [
+      { id: 'cons-9-1', code: '9.1', title: 'Maintenance and care in the use of tools' },
+      { id: 'cons-9-2', code: '9.2', title: 'Woodworking tools, their uses and mechanical principles' },
+      { id: 'cons-9-3', code: '9.3', title: 'Grinding, sharpening and workshop equipment' },
+      { id: 'cons-9-4', code: '9.4', title: 'Safety with edged tools and electricity' },
+    ],
+  },
+  {
+    id: 'cs10',
+    code: '10',
+    title: 'Processes',
+    topics: [
+      { id: 'cons-10-1', code: '10.1', title: 'Joints in partitions, floors, stairs, roofs, doors and windows' },
+      { id: 'cons-10-2', code: '10.2', title: 'Box and carcase construction and simple fitments' },
+      { id: 'cons-10-3', code: '10.3', title: 'Jointing boards and the use of manufactured boards' },
+      { id: 'cons-10-4', code: '10.4', title: 'Choice of joint for strength, assembly and decorative effect' },
+      { id: 'cons-10-5', code: '10.5', title: 'Cutting lists and the setting-out rod' },
+      { id: 'cons-10-6', code: '10.6', title: 'Glues, adhesives, holding work and jigs' },
+      { id: 'cons-10-7', code: '10.7', title: 'Measuring for accuracy, surface preparation and finishing' },
+    ],
+  },
+];
+
+
+/**
+ * The Mathematics syllabus's own five strands, mirroring MATHS_STRANDS in
+ * components/MarkBank/deck.ts. Titles are the syllabus's, including where it is
+ * terser than the usual name for the area -- it writes "Complex", not "Complex
+ * numbers".
+ */
+const MATHS_GROUPS = [
+  {
+    id: 'ms1',
+    code: '1',
+    title: 'Statistics and Probability',
+    topics: [
+      { id: 'maths-1-1', code: '1.1', title: 'Counting' },
+      { id: 'maths-1-2', code: '1.2', title: 'Concepts of probability' },
+      { id: 'maths-1-3', code: '1.3', title: 'Outcomes of simple random processes' },
+      { id: 'maths-1-4', code: '1.4', title: 'Statistical reasoning with an aim' },
+      { id: 'maths-1-5', code: '1.5', title: 'Finding, collecting and organising data' },
+      { id: 'maths-1-6', code: '1.6', title: 'Representing data graphically and numerically' },
+      { id: 'maths-1-7', code: '1.7', title: 'Analysing, interpreting and drawing conclusions from data' },
+    ],
+  },
+  {
+    id: 'ms2',
+    code: '2',
+    title: 'Geometry and Trigonometry',
+    topics: [
+      { id: 'maths-2-1', code: '2.1', title: 'Synthetic geometry' },
+      { id: 'maths-2-2', code: '2.2', title: 'Co-ordinate geometry' },
+      { id: 'maths-2-3', code: '2.3', title: 'Trigonometry' },
+      { id: 'maths-2-4', code: '2.4', title: 'Transformation geometry, enlargements' },
+    ],
+  },
+  {
+    id: 'ms3',
+    code: '3',
+    title: 'Number',
+    topics: [
+      { id: 'maths-3-1', code: '3.1', title: 'Number systems' },
+      { id: 'maths-3-2', code: '3.2', title: 'Indices' },
+      { id: 'maths-3-3', code: '3.3', title: 'Arithmetic' },
+      { id: 'maths-3-4', code: '3.4', title: 'Length, area and volume' },
+    ],
+  },
+  {
+    id: 'ms4',
+    code: '4',
+    title: 'Algebra',
+    topics: [
+      { id: 'maths-4-1', code: '4.1', title: 'Expressions' },
+      { id: 'maths-4-2', code: '4.2', title: 'Solving equations' },
+      { id: 'maths-4-3', code: '4.3', title: 'Inequalities' },
+      { id: 'maths-4-4', code: '4.4', title: 'Complex' },
+    ],
+  },
+  {
+    id: 'ms5',
+    code: '5',
+    title: 'Functions',
+    topics: [
+      { id: 'maths-5-1', code: '5.1', title: 'Functions' },
+      { id: 'maths-5-2', code: '5.2', title: 'Calculus' },
+    ],
+  },
+];
+
 export const CURRICULUM_REDEVELOPMENT_TRANSITIONS: Record<string, CurriculumRedevelopmentTransition> = {
   'construction-studies': {
     introductionYear: 2026,
@@ -1023,6 +1235,7 @@ function patchLegacySpecification(spec: CanonicalCurriculumSpecification): Canon
       id: 'mathematics:2015',
       title: 'Leaving Certificate Mathematics syllabus for examination from 2015',
       status: 'verified',
+      groups: MATHS_GROUPS,
       sources: [{ authority: 'Curriculum Online', title: 'Mathematics', url: OFFICIAL.mathematics, role: 'assessment' }],
       notes: [
         'Higher and Ordinary levels have two examination papers; Foundation level has one examination paper.',
@@ -1497,7 +1710,8 @@ function patchLegacySpecification(spec: CanonicalCurriculumSpecification): Canon
       notes: current.notes,
     };
   }
-  const verifiedOutgoing: Record<string, { id: string; title: string; lastExamYear: number; source: string; note: string }> = {
+  const verifiedOutgoing: Record<string, { id: string; title: string; lastExamYear: number;
+    source: string; note: string; groups?: CanonicalCurriculumSpecification['groups'] }> = {
     english: {
       id: 'english:outgoing', title: 'Leaving Certificate English syllabus — examination to June 2028',
       lastExamYear: 2028, source: OFFICIAL.english,
@@ -1507,6 +1721,7 @@ function patchLegacySpecification(spec: CanonicalCurriculumSpecification): Canon
       id: 'construction-studies:outgoing', title: 'Leaving Certificate Construction Studies syllabus — examination to June 2027',
       lastExamYear: 2027, source: OFFICIAL.constructionStudies,
       note: 'Construction Technology is introduced to fifth-year students in September 2026 and needs a separate canonical record.',
+      groups: CONSTRUCTION_STUDIES_GROUPS,
     },
     engineering: {
       id: 'engineering:outgoing', title: 'Leaving Certificate Engineering syllabus — examination to June 2027',
@@ -1534,6 +1749,11 @@ function patchLegacySpecification(spec: CanonicalCurriculumSpecification): Canon
       status: 'verified',
       sources: [{ authority: 'Curriculum Online', title: outgoing.title, url: outgoing.source, role: 'transition' }],
       notes: [outgoing.note],
+      // An outgoing subject still needs its own groups, or a Mark Bank card
+      // tagged to it resolves into a specification that contains no such topic.
+      // Construction Studies shipped without them and the check only caught it
+      // once the deck could actually be loaded.
+      ...(outgoing.groups ? { groups: outgoing.groups } : {}),
     };
   }
   return spec;

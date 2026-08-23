@@ -934,6 +934,18 @@ const DECKS: Record<string, Record<Level, () => Promise<{ CARDS: SecCard[] }>>> 
     higher: () => import('./cards/economics/higher'),
     ordinary: () => import('./cards/economics/ordinary'),
   },
+  // A subject is READY on DECK_SIZES, which the build writes, but its cards are
+  // LOADED from here, which is hand-maintained. A subject in one and not the
+  // other shows in the picker, says it is ready, and then has nothing in it.
+  // Construction Studies shipped that way until it was opened in a browser.
+  'construction-studies': {
+    higher: () => import('./cards/construction-studies/higher'),
+    ordinary: () => import('./cards/construction-studies/ordinary'),
+  },
+  maths: {
+    higher: () => import('./cards/maths/higher'),
+    ordinary: () => import('./cards/maths/ordinary'),
+  },
 };
 
 export type Level = 'higher' | 'ordinary';
