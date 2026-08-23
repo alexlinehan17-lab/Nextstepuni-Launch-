@@ -60,7 +60,8 @@ Classified across the four science subjects (552 of the 561):
 
 | | Agri | Biology | Chemistry | Physics |
 |---|---:|---:|---:|---:|
-| Answer is itself a drawing | 6 | 36 | 23 | 104 |
+| Drawing, scheme states its criteria | 6 | 28 | 18 | 47 |
+| Drawing, no usable criteria | 0 | 4 | 5 | 4 |
 | Font-mangled in the scheme | 6 | 7 | 26 | 55 |
 | No printed tariff | 24 | 32 | 12 | 12 |
 | Needs a figure | 11 | 15 | 11 | 13 |
@@ -181,3 +182,49 @@ A marking point whose lines are not contiguous in the scheme cannot be carded:
 the build runs its own provenance gate on the verbatim and will drop it. 2025
 Ordinary Level Q9(E) is left uncarded for exactly this reason, with a note in
 the script.
+
+## A drawing question is usually cardable
+
+The largest single thing learned on this pass. A question that asks for a
+diagram was being written off, and that was costing far more than the figure
+pipeline is.
+
+Split them by what the SCHEME says, not by what the question asks:
+
+- **"apparatus, method, observation (3 × 3)"** — a marking convention. There is
+  nothing to put on a card, and the deck has skipped these since 2021 HL
+  Physics Q10(ii).
+- **"symbol for a transistor (3) / source of voltage (3) / input voltage between
+  base and emitter (3)"** — that IS the answer. The card asks a student what
+  they would draw and what earns each mark, which is the thing they actually
+  get wrong.
+
+Across the four science subjects the split is 156 in the second group against
+13 in the first. Fifty-seven have been carded from it so far, most of them
+Physics.
+
+**A card type that shows the scheme's own answer diagram is not the lever it
+sounds like.** Across every scheme in the corpus, only 36 pages carry a large
+image beside a draw-or-sketch question. The Physics scheme answers "Draw the
+shape and direction of this magnetic field" in words with no picture anywhere on
+the page — the drawings are in the students' answer books, not the scheme. The
+one place it would pay is Chemistry, whose schemes do print structures, and
+those are the dot-and-cross and molecular-structure questions that no text card
+can carry.
+
+## Re-cropping a truncated figure
+
+`crop-question-art.py` now takes `--top`, `--bottom`, `--left` and `--right`,
+each an absolute page coordinate in points, plus `--pad-top`/`--pad-bottom`. All
+are opt-in and unset by default so no crop taken before they existed can change.
+
+They are needed because the tool's computed extent is the union of every drawing
+and image on the page, and **a ruled answer box is a drawing**: on the 2021
+Ordinary Level breed plate it drags the crop down over four empty answer rows and
+into the next question; the farm safety sign sits beside its own answer box, so
+the sign came out as a sliver of a much wider crop.
+
+The pass is: read the page with a block dump to find the cut lines, crop, **open
+the PNG and look at it**, write the catalogue entry from what is actually there,
+`bind-figures.mjs`, then card. The looking is not optional — describing an image
+nobody opened is how an earlier pass captioned bread mould as an alveolus.
