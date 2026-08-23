@@ -102,7 +102,9 @@ RUBRIC_HEAD = re.compile(
     # still refuses the bare '5' of 'questions 2, 3, 4 and 5.'
     r'.*?\.?\s+' + QHEAD_AHEAD, re.S)
 
-QHEAD = re.compile(r'^(?:Question\s+(\d{1,2})\b|(\d{1,2})\.\s+(?=[A-Z(\d]))')
+# The '\d.' head may be followed by an opening quote: Construction Studies'
+# 2019-2025 alternative Q10 opens with a quotation.
+QHEAD = re.compile('^(?:Question\\s+(\\d{1,2})\\b|(\\d{1,2})\\.\\s+(?=[A-Z(\\d"\u201c\u2018]))')
 MARKER = re.compile(r'^\(([a-z]{1,4})\)\s*')
 # Letters run past (h): Chemistry's Q4 runs to (l) and Physics' lettered-choice
 # questions to (l) as well — every part after (h) was invisible and 61 shipped
@@ -136,7 +138,13 @@ MISPRINTS = {
         ('16. (i) Draw a large diagram', lambda t: '(b) ' + t[4:]),
     ],
 }
-PAGE_FURNITURE = re.compile(r'^Leaving Certificate Examination\s+\d{4}')
+# Chemistry prints 'Leaving Certificate Examination, 2021' (comma), Physics
+# 'Leaving Certificate, 2021' — the strict form let footers leak into leaf
+# text.
+PAGE_FURNITURE = re.compile(
+    r'^(?:Leaving Certificate(?:\s+Examination)?[,\s]+\d{4}'
+    r'|There is no examination material on this page'
+    r'|Do not hand this up)')
 # Answer-booklet scaffolding: a numbered answer line, or a short fill-in label
 # ending in a colon ('Named crop:', 'Symptoms:'). Verified across all ten
 # papers: 294 such lines occur and not one is the opening line of a part.
@@ -375,11 +383,28 @@ class Paper:
 
             found_letter, found_roman, rest = _leading(text)
             if found_roman == 'i' and not found_letter and letter == 'h' \
-                    and roman is None and _i_is_letter(blocks, index):
+                    and _i_is_letter(blocks, index):
+                # Not gated on (h) being roman-free: Physics 2025 HL Q6 sets
+                # romans UNDER (h) and then continues the letter run at (i) —
+                # the (j) ahead already decides, and demanding a roman-free (h)
+                # silently dropped four printed asks.
                 # After (h), a lone (i) is the ninth LETTER when the run goes
                 # on to (j) — Chemistry's Q4 runs (a) to (l) — and the first
                 # roman when it does not. The blocks ahead decide.
                 found_letter, found_roman = 'i', None
+            if found_letter and letter is not None and found_letter > letter \
+                    and ord(found_letter) - ord(letter) > 1 \
+                    and found_letter not in ('j', 'k', 'l'):
+                # Letters arrive in order. A jump — (g) landing while (b) is
+                # open — is a unit in a table ("Average Daily Gain (ADG) (g)"),
+                # and keying it filed two years' worth of Agricultural Science
+                # asks under a letter the paper never printed.
+                if open_key:
+                    self.parts[open_key].append(f'({found_letter}) {rest}')
+                else:
+                    self.stems.setdefault((q, letter), []).append(
+                        f'({found_letter}) {rest}')
+                continue
             if found_letter in ('j', 'k', 'l') and letter != (
                     'i' if found_letter == 'j'
                     else chr(ord(found_letter) - 1)):
@@ -458,7 +483,7 @@ class Paper:
               # A choice question prints its alternative welded on after a
               # standalone OR — Construction Studies HL sets Q10 twice this
               # way — and the second head must stand alone to be read at all.
-              for text in re.split(r'\s+(?=OR\s+\d{1,2}\.\s+[A-Z(])', block):
+              for text in re.split('\\s+(?=OR\\s+\\d{1,2}\\.\\s+[A-Z("\u201c\u2018])', block):
                for text in INLINE_QHEAD.split(text):
                 text = text.strip()
                 if not text:

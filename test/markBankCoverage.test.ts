@@ -20,7 +20,7 @@
  */
 import { describe, expect, it } from 'vitest';
 import { createHash } from 'node:crypto';
-import { readFileSync } from 'node:fs';
+import { readFileSync, readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 import baseline from '../scripts/markbank/coverage-baseline.json';
@@ -94,7 +94,29 @@ describe('Mark Bank paper-coverage ratchet', () => {
   });
 
   it('every subject with a deck is measured', () => {
-    // A tenth subject added without entering the ledger would ship unmeasured.
-    expect(SUBJECTS.length).toBeGreaterThanOrEqual(9);
+    // A tenth subject added without entering the ledger would ship unmeasured
+    // — enumerate the actual deck directories, not the baseline's own keys.
+    const dirs = readdirSync(resolve(__dirname, '..', 'components', 'MarkBank', 'cards'),
+      { withFileTypes: true })
+      .filter((d) => d.isDirectory())
+      .map((d) => d.name);
+    const unmeasured = dirs.filter((d) => !(d in baseline));
+    expect(unmeasured, 'deck directories with no coverage baseline entry').toEqual([]);
+  });
+
+  it.each(SUBJECTS)('%s deck content matches its measured baseline', (subject) => {
+    // The refs hash pins addresses; this pins everything else — questionText,
+    // rows, figure bindings. A card gutted in place trips here.
+    const h = createHash('sha256');
+    for (const level of ['higher', 'ordinary']) {
+      const path = resolve(
+        __dirname, '..', 'components', 'MarkBank', 'cards', subject, `${level}.ts`);
+      try { h.update(readFileSync(path)); } catch { /* single-level deck */ }
+    }
+    expect(
+      h.digest('hex').slice(0, 16),
+      `${subject}: deck content changed since coverage was measured — ` +
+      `python3 scripts/markbank/authoring/reconcile.py --all --baseline write`,
+    ).toBe((baseline[subject] as { contentHash?: string }).contentHash);
   });
 });

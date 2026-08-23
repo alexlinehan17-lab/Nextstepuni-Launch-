@@ -304,6 +304,20 @@ def census_sections(subject, year, level):
     lone = [i for i, t in enumerate(blocks)
             if re.fullmatch(r'[-\u2212]?\d{1,2}\.?', t.strip())]
     scaffold = {i for i in lone if i - 1 in lone or i + 1 in lone}
+    # A run of short numbered lines is an option list inside a question
+    # ('1. Merger  2. Strategic alliance  ...'), not a run of question heads —
+    # walking it re-keyed four Business sittings' Section 1.
+    # Option rows are bare terms with no sentence punctuation ('1. Merger');
+    # a short numbered ASK ends in one ('7. List the uses of flour.') and Home
+    # Economics' Section A is made of exactly those — the guard must split on
+    # the full stop, not the length.
+    listy = [i for i, t in enumerate(blocks)
+             if re.fullmatch(r'\d{1,2}\.\s+[^.?!]{1,40}', t.strip())]
+    for i in listy:
+        if (i - 1 in listy and i + 1 in listy) \
+                or (i + 1 in listy and i + 2 in listy) \
+                or (i - 1 in listy and i - 2 in listy):
+            scaffold.add(i)
 
     parts, stems = {}, {}
     section, q, letter, roman = None, None, None, None
@@ -321,7 +335,18 @@ def census_sections(subject, year, level):
         sh = re.match(r'(?:SECTION|Section)\s+([A-C]|\d{1,2})\b(.{0,160})', text)
         if sh and 'Section' not in sh.group(2) \
                 and (len(text) < 200 or 'marks' in sh.group(2).lower()):
-            if sh.group(1) != section:
+            # Two guards, both earned. Sections only move FORWARD — the
+            # answerbook repeats earlier sections' names and re-opening one
+            # keyed hundreds of phantom questions from ruled pages. And a new
+            # section only opens once the CURRENT one holds a part — the
+            # instructions page lists every section with its marks ('Section
+            # B 130 marks Answer Question 1...'), and following that listing
+            # walked the tracker to C before the paper had begun, filing all
+            # of Section A under C.
+            if sh.group(1) != section and (section is None
+                                           or sh.group(1) > section) \
+                    and (section is None
+                         or any(k[0] == section for k in parts)):
                 section, q, letter, roman = sh.group(1), None, None, None
             # 'Section 2 Applied Business Question 80 marks' is one block —
             # the header AND the headless compulsory question it opens.
@@ -356,12 +381,27 @@ def census_sections(subject, year, level):
                 text, m = un, PP.QHEAD.match(un)
         if not m and isinstance(q, int):
             # Business Section 1 sets some heads as a bare '6.' in a block of
-            # its own, the ask following. Only the next number due, and never
-            # one from a scaffold run.
+            # its own, the ask following. Only the next number due, never one
+            # from a scaffold run — and only when real prose follows: the
+            # answerbook's ruled pages interleave bare numbers with 'Question'
+            # and 'Start each question on a new page', which walked the
+            # counter to a phantom Q16.
             ln = re.match(r'^(\d{1,2})\.?$', text)
             if ln and int(ln.group(1)) == q + 1:
-                q, letter, roman = q + 1, None, None
+                ahead = ' '.join(blocks[index + 1:index + 5])
+                prose = re.sub(
+                    r'\b(Question|Part|Start each question on a new page'
+                    r'|SECTION|Section)\b', '', ahead)
+                if len(prose.strip()) >= 30:
+                    q, letter, roman = q + 1, None, None
                 continue
+        if m and re.match(r'\s*(?:\([a-z]+\)\s*)?(?:is|are)\s+worth\b'
+                          r'|\s*carr(?:ies|y)\b', text[m.end():]):
+            # 'Question 1 is worth 80 marks.' is the instructions pricing a
+            # question, not the question — reading it as a head walked the
+            # counter to 4 before the paper began and threw Q1-Q3 away as
+            # going backwards, in every sitting.
+            m = None
         if m:
             found = int(m.group(1) or m.group(2))
             # Within a section numbering only moves forward, and a fresh
@@ -402,6 +442,11 @@ def census_sections(subject, year, level):
     # whole questions — the order matters, because a phantom part suppresses
     # adoption for its whole question.
     parts = {k: v for k, v in parts.items() if any(x.strip() for x in v)}
+    scaffold_text = re.compile(
+        r'^(?:(?:Question|Part|Start each question on a new page|SECTION'
+        r'\s+\d|Section\s+\w|and Answerbook)\s*)+$')
+    parts = {k: v for k, v in parts.items()
+             if not scaffold_text.match(' '.join(' '.join(v).split()))}
     for (section_, q_, letter_), lines in list(stems.items()):
         if letter_ is not None or not lines:
             continue

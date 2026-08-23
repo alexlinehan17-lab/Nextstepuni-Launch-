@@ -1,83 +1,137 @@
 {
  "agricultural-science": {
   "cards": 869,
-  "coveragePct": 93.2,
-  "covered": 886,
-  "leaves": 954,
-  "open": 65,
+  "contentHash": "a07e4757a78dd398",
+  "coveragePct": 93.6,
+  "covered": 888,
+  "excluded": 3,
+  "leaves": 952,
+  "open": 61,
   "orphans": 2,
+  "papers": {
+   "count": 10,
+   "hash": "4f4a401f6defdc36"
+  },
   "refsHash": "967a2d72ff0648b1"
  },
  "biology": {
   "cards": 1229,
+  "contentHash": "10229c065333933d",
   "coveragePct": 85.9,
   "covered": 1405,
+  "excluded": 0,
   "leaves": 1636,
   "open": 231,
   "orphans": 0,
+  "papers": {
+   "count": 20,
+   "hash": "55091726a504e556"
+  },
   "refsHash": "42eeb25d476dca17"
  },
  "business": {
   "cards": 606,
-  "coveragePct": 73.9,
+  "contentHash": "4ef9fc54b65316a3",
+  "coveragePct": 94.6,
   "covered": 677,
-  "leaves": 916,
-  "open": 239,
+  "excluded": 0,
+  "leaves": 716,
+  "open": 39,
   "orphans": 6,
+  "papers": {
+   "count": 20,
+   "hash": "eee231038910ba2c"
+  },
   "refsHash": "4ad16765c129d1c4"
  },
  "chemistry": {
   "cards": 779,
-  "coveragePct": 84.2,
-  "covered": 962,
+  "contentHash": "045ff2de9ac8fed8",
+  "coveragePct": 84.1,
+  "covered": 961,
+  "excluded": 0,
   "leaves": 1143,
-  "open": 181,
+  "open": 182,
   "orphans": 5,
+  "papers": {
+   "count": 10,
+   "hash": "bf2ca1ce05646d41"
+  },
   "refsHash": "f294b1d87c22d990"
  },
  "construction-studies": {
   "cards": 505,
-  "coveragePct": 84.0,
+  "contentHash": "09d7c2a09e999f45",
+  "coveragePct": 81.8,
   "covered": 419,
-  "leaves": 499,
-  "open": 80,
+  "excluded": 0,
+  "leaves": 512,
+  "open": 93,
   "orphans": 0,
+  "papers": {
+   "count": 20,
+   "hash": "63522e1ef5a10ab2"
+  },
   "refsHash": "ab5312971b0e0217"
  },
  "economics": {
   "cards": 386,
+  "contentHash": "64f8812a1dec4d63",
   "coveragePct": 51.7,
   "covered": 340,
+  "excluded": 0,
   "leaves": 658,
   "open": 318,
   "orphans": 0,
+  "papers": {
+   "count": 10,
+   "hash": "d356131d0d2d0e2e"
+  },
   "refsHash": "98f811ec3f53b2ac"
  },
  "home-economics": {
   "cards": 571,
-  "coveragePct": 69.7,
+  "contentHash": "17212890d5ceff72",
+  "coveragePct": 95.3,
   "covered": 545,
-  "leaves": 782,
-  "open": 237,
+  "excluded": 0,
+  "leaves": 572,
+  "open": 27,
   "orphans": 1,
+  "papers": {
+   "count": 20,
+   "hash": "6b57d840bf971638"
+  },
   "refsHash": "7cddab6869c06c08"
  },
  "maths": {
   "cards": 785,
-  "coveragePct": 80.9,
-  "covered": 800,
+  "contentHash": "51c94735097fd2c8",
+  "coveragePct": 80.1,
+  "covered": 792,
+  "excluded": 0,
   "leaves": 989,
-  "open": 189,
-  "orphans": 0,
+  "open": 197,
+  "orphans": 7,
+  "papers": {
+   "count": 20,
+   "hash": "dd8222a2e1b8d8d6"
+  },
   "refsHash": "5d368271e83e0197"
  },
  "physics": {
   "cards": 961,
-  "coveragePct": 77.4,
-  "covered": 943,
-  "leaves": 1218,
-  "open": 275,
-  "orphans": 12,
+  "contentHash": "3b546a29e145db4e",
+  "coveragePct": 77.3,
+  "covered": 941,
+  "excluded": 0,
+  "leaves": 1217,
+  "open": 276,
+  "orphans": 14,
+  "papers": {
+   "count": 10,
+   "hash": "aedd9969b3ce025e"
+  },
   "refsHash": "50dd866a59561c3b"
  }
 }

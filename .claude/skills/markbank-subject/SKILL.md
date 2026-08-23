@@ -1,172 +1,187 @@
 ---
 name: markbank-subject
-description: Card a Leaving Cert subject into Mark Bank end-to-end, or audit/backfill one that shipped. Paper-anchored census first, authoring against named refusal buckets, and a reconciliation ledger that defines done. Use for any Mark Bank subject work — new subject, "add more cards", coverage questions, or citation doubts.
+description: Card a Leaving Cert subject into Mark Bank end-to-end, or audit/backfill one that shipped. Paper-anchored census first, authoring against named refusal buckets, and a reconciliation ledger plus ratchet that define done. Use for any Mark Bank subject work — new subject, "add more cards", coverage questions, or citation doubts.
 ---
 
 # Mark Bank — carding a subject
 
-## The law
+## The laws
 
-**The denominator is the paper, never your reader.** Every coverage failure
+**1. The denominator is the paper, never your reader.** Every coverage failure
 this bank has had — "64 cards" for Construction Studies that became 505, "15
 cards" for Maths that became 785 — came from measuring against a number
-produced by the same reader that was silently losing the content. The paper is
-what a student sees. Count it first, independently, and report every number
-beside that denominator or not at all.
+produced by the same reader that was silently losing the content. Count the
+paper first, independently, and report every number beside that count.
 
-The second law follows from the first: **a refusal message is a hypothesis,
-not a fact.** "The scheme prints no tariff" was said about a document that
-prices every line. Every blocker must be demonstrated against the PDF before
-it is believed, and every bucket of refusals attacked with the table below
-before it is accepted.
+**2. A refusal message is a hypothesis, not a fact.** "The scheme prints no
+tariff" was said about a document that prices every line. Demonstrate every
+blocker against the PDF before believing it.
+
+**3. Zero flags is not clean.** The census flag set only sees *internal* gaps.
+Silence hid a 10-paper alternative-question loss in Construction Studies, a
+wholesale Section 3 loss in Business, and ~84 uncounted Physics asks. After
+the flags are worked, independently verify per paper: the first question is
+Q1, the last printed question is present, a repeated number after a standalone
+OR is a choice VARIANT (not a duplicate), and spot-check three covered asks
+end-to-end against the raw pages.
+
+**4. Never join paper to scheme on the part key.** The (question, letter,
+roman) join agrees with wording evidence in only one subject (agsci 96%;
+home-ec 0%) — schemes number sections independently of the paper. Pair with
+`align.py`'s order-preserving, wording-scored alignment; pairs resting on
+order alone get READ, not shipped. A wrong pairing passes every downstream
+gate.
 
 ## Definition of done
 
-A subject is finished when `python3 scripts/markbank/authoring/reconcile.py
-<subject>` exits 0, which means, for every paper PDF on disk:
+`python3 scripts/markbank/authoring/reconcile.py <subject>` exits 0:
 
 - every **leaf ask** the papers print is *covered* (a shipped card cites it,
   exactly or through the part the scheme priced it under) or *excluded* in
-  `scripts/markbank/authoring/exclusions/<subject>.json` with a reason AND the
-  scheme evidence for that reason — exclusions are rare on purpose; even
-  drawing questions are cardable, split by what the scheme says;
-- zero **orphan** cards (a citation no paper prints — check against the PAPER,
-  not the scheme; they can disagree and the paper wins);
-- zero **unparsed** citations and zero stale exclusions;
-- every census **flag** diagnosed (reader-bug fixed, or paper-layout explained).
+  `scripts/markbank/authoring/exclusions/<subject>.json` with a reason AND
+  scheme evidence (exclusions are rare — drawing questions are cardable,
+  split by what the scheme says: 156 cardable vs 13 not, when measured);
+- zero **orphans** (citations no paper prints — the paper wins over the
+  scheme when they disagree), zero unparsed, zero stale exclusions;
+- every census **flag** diagnosed: reader-bug (fix it), paper-layout
+  (explain it), or **SEC misprint** — the paper itself prints the wrong
+  marker (2023 HL Biology prints a bold "16." where "(b)" belongs); misprints
+  get an entry in `paper.py`'s `MISPRINTS` table keyed (subject, year,
+  level), never a heuristic;
+- the **ratchet** is regenerated: `reconcile.py --all --baseline write`, and
+  `--baseline check` read before shipping. `test/markBankCoverage.test.ts`
+  pins deck size + a citation hash to the committed baseline, so CI is RED
+  until the re-measure happens;
+- the CI gate (`lint`, `typecheck`, `test`, `build`) is clean — run
+  separately, never chained with commit (chaining `npm test && git commit`
+  once pushed a red main) — and a browser session sampled the cards: *it
+  can't look poor.*
 
-Plus the gates reconcile cannot see: `npm run lint && npm run typecheck &&
-npm test && npm run build` all clean, and a browser check of sampled cards —
-notation legible, figures readable at size, nothing that looks poor.
-
-**Never report a card count as an endpoint.** The first report for any subject
-is the census ("the papers print N asks"); every later report is `covered/N`.
-If an intermediate count would have satisfied you, the census was skipped.
+**Never report a card count as an endpoint.** The first report is the census
+denominator; every later report is `covered/N`.
 
 ## The stages
 
 ### 0 · Admit
 `python3 scripts/markbank/authoring/stage0.py` scores whether the scheme
-prints answers. A low score rejects the **prose** pipeline only — Mathematics
-scored a hard reject and ships 785 cards through the scale/model-solution
-pipeline. What stage 0 really decides is *which* pipeline family (step 3).
+prints answers — but the score does not decide it: **read one scheme.**
+Home Economics shipped 571 cards at a 28% score while Geography was rejected
+at 29%. A low score rejects the *prose* pipeline only; Maths was a hard
+reject and ships through the scale/model-solution family.
 
 ### 1 · Corpus
-`python3 scripts/markbank/fetch-corpus.py <subject>` — papers AND schemes,
-both levels, the full span (Construction Studies runs 2016–2025; default is
-2021–2025). The corpus on disk IS the denominator's scope: a paper you did not
-fetch is a paper you will silently not cover.
+`python3 scripts/markbank/fetch-corpus.py <subject> --schemes [--from 2016]`
+— **without `--schemes` it fetches papers only.** The corpus on disk IS the
+denominator's scope.
 
 ### 2 · Census — before any authoring
 ```
 python3 scripts/markbank/authoring/paper_census.py <subject> --json census.json
 ```
-Every leaf ask, with marks checksums and continuity flags (question-gap,
-letter-gap, roman-gap, empty-leaf, marks-checksum). **Work the flags to zero
-unexplained before authoring**: a flag is how every keying bug actually
-presents. Diagnose by printing the reader's blocks next to the raw PDF —
-observe, never reason from the aggregate:
+Layout families (`SUBJECTS` in paper_census.py): **merged** (numbering runs
+on across booklets — most), **papers** (components each starting at Q1 —
+Maths), **sections** (numbering restarts — Business, Home Ec; the walker also
+handles the headless ABQ, electives with glued "1.(a)" sub-heads, capital
+markers, and instruction-page pricing lines). Work the flags, then apply
+Law 3. Diagnose by printing blocks beside the raw PDF:
 ```python
 import sys; sys.path.insert(0,'scripts/markbank/authoring')
 import paper as PP
-P = PP.Paper('<subject>', 2022, 'hl')
+P = PP.Paper('<subject>', 2022, 'hl')       # component='100' for maths
 for i, b in enumerate(P._all_blocks()): print(i, repr(str(b)[:100]))
 ```
-Layout families (in `paper_census.py::SUBJECTS`): **merged** (one sitting,
-numbering runs on across booklets — most subjects), **papers** (components
-each starting at Q1 — Maths), **sections** (numbering restarts per section —
-Business, Home Economics). A new subject that flags heavily in merged mode
-probably belongs to another family or needs an adapter; extend the census, do
-not hand-wave the flags.
 
-### 3 · Shapes → pick the pipeline
-`python3 scripts/markbank/authoring/shapes.py` classifies every priced scheme
-line structurally. Three families exist; reuse, never rewrite:
-- **prose bullets** (biology/chemistry/business style): bullet marking points
-  under part headers → the generic block parsers.
-- **two-half** (Construction Studies): indicative content + performance-
-  criteria mark table → `cs_scheme.py` / `cs_lib.py` as the template.
-- **scale + model solution** (Maths): `Scale NX (0, a, b, N)` ladders beside a
-  worked solution → `maths_scheme.py` / `maths_lib.py` as the template, with
-  `mathtext.py` for notation and stacked fractions.
+### 3 · Shapes → pipeline family
+`python3 scripts/markbank/authoring/shapes.py <subject>` classifies every
+priced scheme line. Families: **prose bullets** (generic block parsers),
+**two-half** (`cs_scheme.py`/`cs_lib.py`), **scale + model solution**
+(`maths_scheme.py`/`maths_lib.py` + `mathtext.py`). Then run
+`python3 scripts/markbank/append-scheme-blocks.py <subject>` once so the
+provenance gate holds both renderings (9%→1% gate-failure when it was added).
 
 ### 4 · Glyph gate
 `python3 scripts/markbank/authoring/derive_glyphs.py --write` re-derives the
-broken-font repair map from glyph ids across ALL schemes on disk. Never
-hand-map a glyph: settle survivors by cropping the glyph out of the page and
-looking at it. The build refuses any card still carrying an unresolved glyph —
-refusing beats shipping the wrong expression.
+broken-font map from glyph ids. Never hand-map; settle survivors by cropping
+the glyph and looking. Fold ligatures only — `foldDigits` rewrites sub- and
+superscripts and cost a Chemistry card.
 
 ### 5 · Author
-Per-paper scripts + a subject lib (copy the nearest family's). Non-negotiables:
-- **Lift, never write**: question text from the paper, marking points from the
-  scheme, verbatim. If either must be typed, the card is not made.
-- Every refusal prints a named reason; bucket them (whyopen.py pattern) and
-  attack each bucket with the table below. A bucket is only accepted after its
-  members were checked against the PDF.
-- Card ids collide → it is a **keying bug** (a unit named after its
-  neighbour), not a duplicate. Find which unit is mislabelled.
+- **Lift, never write** — question from the paper, marking points from the
+  scheme, verbatim.
+- **Pair via align.py (Law 4)**; pass the SCHEME's key to `from_run`.
+- **NEVER GUESS A TARIFF** — five separate incidents. No printed tariff, no
+  card. Schemes answered graphically use `tick=True/False` with the note,
+  after rendering the page.
+- Every refusal is a named bucket (whyopen.py pattern); attack each with the
+  table below before accepting it. Colliding card ids = a keying bug, not a
+  duplicate.
+- **Citation grammar**: refs open `YYYY HL|OL`, then the paper's own address.
+  Sections subjects prefix it (`Section 2 Q4(A)`; Home Ec electives
+  `Section C E1 Q1(a)(i)`); Business's headless compulsory question is
+  `ABQ`; a choice variant is `Q10-alt(…)`; a split item's name rides the ref
+  suffix after an em dash (`… — safety training`) or the build drops the
+  second half as a duplicate; level fields are `higher`/`ordinary`, never
+  `hl`/`ol`. A card id is NEVER renamed to fix a citation — ids key student
+  review history; fix the ref, supersede via adopted-ids.json.
 
 ### 6 · Figures
-Crop from the paper/scheme PDF (`maths_figures.py` / `extract-figures.py`
-family). Crop to the ink, exclude page furniture, audit aspect ratios (a
-2:1+ tall crop is usually a bad crop), alt text from the scheme's own lines —
-and dropped rather than quoted when it cannot be read cleanly. Bind via
-`bind-figures.mjs`; the build refuses uninspected figures.
+Check `components/MarkBank/figures.json` FIRST — a figure-blocked part is
+often already catalogued. **Never re-run extract-figures.py over a catalogued
+subject** (indices drift; wrong image on a card is the corruption this
+pipeline exists to prevent). Re-crop with `crop-question-art.py --page N`
+(name it `-art`, `--pad-top` when labels sit above the ink); drawn charts are
+invisible to the raster extractor — stroke-scan every page
+(`get_drawings`, `--keep-charts`). Open the PNG before writing the catalogue
+entry. Aspect-audit: 2:1+ tall is usually a bad crop. A card naming letters
+needs a labelKey; labelMeanings never caption the answer.
 
 ### 7 · Build + registries
 `node scripts/markbank/build-deck.mjs scripts/markbank/authored/<subject>.json`
-gates provenance (every marking point found in its own scheme), glyphs,
-tariffs, display caps. Then the five registrations a subject needs or it ships
-as an EMPTY deck: `DECK_SIZES` (build-written) **and** the `DECKS` map in
-`components/MarkBank/deck.ts`, strands/topics in deck.ts, groups in
-`curriculumRegistry.ts`, the id prefix in `test/markBankDeck.test.ts`, and the
+gates provenance/glyphs/tariffs/caps and ends by printing the LEDGER line.
+Registrations or the deck ships empty/unguarded: the `DECKS` map in
+`components/MarkBank/deck.ts`, strands/topics there, groups in
+`curriculumRegistry.ts`, the id prefix in `test/markBankDeck.test.ts`, the
 preservation baseline in `test/markBankCardPreservation.test.ts` (update
-counts WITH a comment naming exactly which cards moved and why — never to
-conceal a deletion).
+WITH a comment naming which cards moved and why), and a baseline entry via
+the ratchet re-measure. `rebaseline.py` refuses on loss — trust it.
 
 ### 8 · Reconcile — the ledger
 ```
 python3 scripts/markbank/authoring/reconcile.py <subject> --open
 ```
-Work the OPEN list, the orphans, and the stale exclusions to zero. Orphans are
-citation bugs (paper vs scheme numbering) as often as coverage bugs.
+Caveats — reconcile's verdicts are hypotheses too: an "open" ask may sit in a
+shipped range/compound card (the grammar expands `–` ranges and comma
+compounds, but check); a "covered" ask granted through a parent or
+whole-question rule deserves a spot-check that the card's text actually holds
+it. Reconcile the **side ledgers** as well: every ref in
+`<subject>-abandoned.json` needs a matching exclusions entry or it reports
+OPEN forever; `-held.json`/`-skipped.json` are logs, not state — 23 of
+agsci's 34 held rows were stale.
 
 ### 9 · Look at it
-Dev server → Demo Account → the subject → run a session. Sample across
-question shapes and both levels. The bar is the user's: *"it can't look
-poor."* Mangled notation, thumbnail-sized worked solutions, part labels split
-mid-formula — all of these shipped once and were caught only by looking.
+Dev server → Demo Account → subject → session, sampled across shapes and
+levels. Mangled notation, thumbnail solutions, split part labels all shipped
+once and were caught only by looking.
 
 ### 10 · Ship + record
-Full CI gate, commit, push (push to main deploys). Update the memory files if
-a new trap or pipeline family was discovered.
+Ratchet re-measure, full gate (unchained), commit, push (push to main
+deploys). New traps go in the memory files and this skill.
 
 ## Refusal-bucket attack table
 
-| Bucket | First moves (all have worked before) |
+| Bucket | First moves (all have worked) |
 |---|---|
-| "nothing liftable" | The Model Solution / indicative-content column beside the empty notes column is the scheme's own text — lift it. Length tests tuned for prose starve on algebra; measure the line, not the squash. |
-| "no question text" | Continuation pages; head glued to the rubric; axis label eaten as a head; ask printed on the line below (pull the letter's stem, clean the halves separately); head printed without its "Q"; head past the first-6-lines window. |
-| duplicate card id | A unit keyed by its NEIGHBOUR's marker (stop at a second letter, read two-line markers together); a section restart collapsing questions. |
-| provenance "not found in scheme" | 2-D layout flattened: stacked fractions, columns, sub/superscripts (thresholds: smaller by ≥1.5pt, either direction), broken glyphs → re-derive map, re-fold the scheme forms (fold forms are append-only: adding one can only add matches). |
-| over display cap | Split by the scheme's own groups; disclosed trimming with the note saying so. |
-| figure refusals | Re-crop (furniture exclusion), re-catalogue, re-bind; alt text dropped, not mangled. |
+| "nothing liftable" | The Model Solution / indicative-content column beside the empty notes column is the scheme's own text. Prose length tests starve on algebra — measure the line, not the squash. |
+| "no question text" | Continuation pages; rubric-glued heads (with or without the full stop); axis labels and instruction pricing lines eaten as heads; ask on the line below (pull the letter's stem; clean halves separately); bare or letterspaced heads; head past a fixed window. |
+| duplicate card id | A unit keyed by its NEIGHBOUR's marker (stop at a second letter; read two-line markers together); a section restart collapsing questions. |
+| provenance "not found" | 2-D layout flattened: stacked fractions, columns, sub/superscripts (≤1.5pt either way), broken glyphs → re-derive, re-fold (fold forms are append-only). |
+| over display cap | Split by the scheme's own groups; disclosed trimming. |
+| figure refusals | Manifest first; re-crop; stroke scan; alt dropped, not mangled. |
 
-## Debugging discipline (how the above stay fixed)
+## Debugging discipline
 
-- **Print the failing case before patching.** Patch only what you have seen.
-- **Assert the NAMED case changed** before trusting any aggregate; an
-  aggregate that moved by zero can still hide a swap of wins for losses.
-- Every scripted source edit asserts `old in s` — a silent no-op replace has
-  shipped bugs twice.
-- Diff corpus-wide after loosening any threshold: list what changed and check
-  the changes gained only what the fix targeted.
-- Two-pass verify: fix everything, re-run everything, then report.
-
-## Reporting rules
-
-Progress reports name three numbers and nothing else as the headline:
-**paper asks (census) / covered (reconcile) / open**, plus the gate status.
-Card counts appear only beside the denominator. "Done" is claimed exactly
-when `reconcile.py <subject>` exits 0 and the browser check passed.
+Print the failing case before patching. Assert the NAMED case changed before
+trusting any aggregate — and diff corpus-wide after loosening anything.
+Every scripted edit asserts `old in s`. Two-pass verify: fix all, re-run all,
+then report. An aggregate that moved by zero can still be a swap of wins for
+losses.

@@ -27,6 +27,10 @@ import { CARDS as HOME_EC_HIGHER } from '../components/MarkBank/cards/home-econo
 import { CARDS as HOME_EC_ORDINARY } from '../components/MarkBank/cards/home-economics/ordinary';
 import { CARDS as ECON_HIGHER } from '../components/MarkBank/cards/economics/higher';
 import { CARDS as ECON_ORDINARY } from '../components/MarkBank/cards/economics/ordinary';
+import { CARDS as MATHS_HIGHER } from '../components/MarkBank/cards/maths/higher';
+import { CARDS as MATHS_ORDINARY } from '../components/MarkBank/cards/maths/ordinary';
+import { CARDS as CONS_HIGHER } from '../components/MarkBank/cards/construction-studies/higher';
+import { CARDS as CONS_ORDINARY } from '../components/MarkBank/cards/construction-studies/ordinary';
 
 const decks = [
   ['biology:higher', BIO_HIGHER, 604, '0463b882c88149b96f94d709918f3a4c0aa86f385d947f036324de072d9f36da'],
@@ -51,6 +55,14 @@ const decks = [
   ['home-economics:ordinary', HOME_EC_ORDINARY, 273, '5b15bc2e07a475191deb82613d27459fa2e776a0b10a2249aaff4f11f7a7e787'],
   ['economics:higher', ECON_HIGHER, 234, '5bf329cc43896d7ae5dcb46ffc413255cc72a23f403068be83cc804fce6fecdb'],
   ['economics:ordinary', ECON_ORDINARY, 152, 'f07a279c83d1a53cf923d42344612cfbaa1c33e324b114a4a6173b872536b6a8'],
+  /* 2026-08-23: the two newest subjects had shipped with NO identity baseline
+   * at all — found by the ratchet-soundness review, which means every earlier
+   * count in this file was guarding seven decks while two rode along
+   * unprotected. First recorded at their current shipped state. */
+  ['maths:higher', MATHS_HIGHER, 389, 'd2d5175dc3525c1f0ddeaa66df7631eb82ae26ef4f059b455dfcaf8b5d4e2357'],
+  ['maths:ordinary', MATHS_ORDINARY, 396, 'bbd98d5d4a318c0a18fa6373494f45b5f55130e4327865db20e572603f444ca9'],
+  ['construction-studies:higher', CONS_HIGHER, 255, 'b74a39fd589f1082d6378190aee778d528eff0968d7af0ee9144525f2e40d57b'],
+  ['construction-studies:ordinary', CONS_ORDINARY, 250, 'f56985e32cc1f02a2e2f7a7eb300a44646b75cf3604a12b5a478bde2a520d2da'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -65,6 +77,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(5_401);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(6_691);
   });
 });

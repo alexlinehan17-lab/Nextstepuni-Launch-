@@ -105,7 +105,9 @@ def parse_ref(ref):
     ("Q11(b)(i) — advantage" is still Q11(b)(i)) and compound citations
     ("Q4(ii), (iii)"; "Q6(a)–(e)"), which cover every path they name.
     """
-    core = re.split(r'\s+[\u2014\u2013-]\s+', ref)[0].strip()
+    # The annotation dash never precedes a part token: 'Q9(vii) – (viii)' is
+    # a range, 'Q8(b) — coastal defences' an annotation.
+    core = re.split(r'\s+[\u2014\u2013-]\s+(?!\()', ref)[0].strip()
     m = HEAD.match(core)
     if not m:
         return None
@@ -130,7 +132,7 @@ def parse_ref(ref):
         tok = tok.lower()
         if cls == 'letter':
             if dash and cur_letter and cur_roman is None:
-                lo, hi = LETTERS.index(cur_letter), LETTERS.index(tok)
+                lo, hi = sorted((LETTERS.index(cur_letter), LETTERS.index(tok)))
                 for x in LETTERS[lo + 1:hi + 1]:
                     paths.append((x, None))
             else:
@@ -138,7 +140,8 @@ def parse_ref(ref):
             cur_letter, cur_roman, dash = tok, None, False
         elif cls == 'roman':
             if dash and cur_roman in ROMANS and tok in ROMANS:
-                lo, hi = ROMANS.index(cur_roman), ROMANS.index(tok)
+                # sorted: a descending citation still names both ends
+                lo, hi = sorted((ROMANS.index(cur_roman), ROMANS.index(tok)))
                 for x in ROMANS[lo + 1:hi + 1]:
                     paths.append((cur_letter, x))
             elif paths and paths[-1] == (cur_letter, None) and cur_letter:
@@ -214,7 +217,13 @@ def match_leaves(ref, leaves, sections_mode):
                     if roman is None or kr == roman or kr is None:
                         covered.append(k)
                 elif letter is None and roman is not None:
-                    if kr == roman or (kl == roman and kr is None):
+                    # A letterless roman matches ONLY a letterless key. Letting
+                    # it reach (q, ANY letter, roman) fanned one card across
+                    # every letter sharing that numeral — ten asks were counted
+                    # covered by cards that provably do not contain them, and
+                    # the mis-cited card underneath escaped the orphan report.
+                    if (kl is None and kr == roman) \
+                            or (kl == roman and kr is None):
                         covered.append(k)
         if covered:
             return covered
@@ -359,7 +368,42 @@ def baseline_check(results):
         if len(r['orphans']) > b['orphans']:
             problems.append(f"{r['subject']}: orphans grew {b['orphans']} -> "
                             f"{len(r['orphans'])} — a citation broke")
+        if r['leaves'] < b['leaves'] - 2:
+            problems.append(f"{r['subject']}: the DENOMINATOR shrank "
+                            f"{b['leaves']} -> {r['leaves']} — a paper went "
+                            f"missing or the reader lost content")
+        if r['excluded'] > b.get('excluded', 0):
+            problems.append(f"{r['subject']}: exclusions grew "
+                            f"{b.get('excluded', 0)} -> {r['excluded']} — "
+                            f"open asks may not be laundered; re-read the "
+                            f"evidence before accepting")
     return problems
+
+
+def content_hash(subject):
+    """A digest of the deck FILES, whole. The refs hash pins addresses; this
+    pins everything else — a card's questionText, rows, or figure binding
+    gutted in place trips nothing address-shaped, and the review demonstrated
+    exactly that edit passing every mechanism."""
+    import hashlib
+    h = hashlib.sha256()
+    for level in ('higher', 'ordinary'):
+        path = os.path.join(DECKS, subject, f'{level}.ts')
+        if os.path.exists(path):
+            h.update(open(path, 'rb').read())
+    return h.hexdigest()[:16]
+
+
+def papers_inventory(subject):
+    """What the denominator was measured against. The paper PDFs are local-
+    only (gitignored), so a deleted or swapped paper would silently shrink
+    the census — this pins their names and sizes."""
+    import hashlib
+    root = os.path.join(ROOT, 'examiner-reports', subject, 'papers')
+    rows = sorted(f'{f}:{os.path.getsize(os.path.join(root, f))}'
+                  for f in os.listdir(root) if f.endswith('.pdf'))
+    return {'count': len(rows),
+            'hash': hashlib.sha256('\n'.join(rows).encode()).hexdigest()[:16]}
 
 
 def refs_hash(subject):
@@ -379,6 +423,8 @@ def baseline_write(results):
         'leaves': r['leaves'], 'covered': r['covered'], 'open': r['open'],
         'orphans': len(r['orphans']), 'cards': r['cards'],
         'coveragePct': r['coveragePct'], 'refsHash': refs_hash(r['subject']),
+        'contentHash': content_hash(r['subject']),
+        'excluded': r['excluded'], 'papers': papers_inventory(r['subject']),
     } for r in results}
     with open(BASELINE, 'w', encoding='utf-8') as fh:
         json.dump(data, fh, indent=1, sort_keys=True)
@@ -395,6 +441,8 @@ def main():
                     help='list every open ask, paper by paper')
     ap.add_argument('--baseline', choices=['write', 'check'],
                     help='write or enforce the coverage ratchet')
+    ap.add_argument('--accept-regression', action='store_true',
+                    help='record a baseline even though coverage fell')
     args = ap.parse_args()
     targets = sorted(SUBJECTS) if args.all else [args.subject]
     if not targets or targets == [None]:
@@ -413,6 +461,16 @@ def main():
                       ensure_ascii=False, indent=1)
         print(f'wrote {args.json}')
     if args.baseline == 'write':
+        # Writing is not a bypass: a write that would record a regression
+        # against the PREVIOUS baseline refuses, so the ratchet cannot be
+        # reset by the same command that maintains it.
+        prior = baseline_check(results)
+        real = [b for b in prior if 'no baseline' not in b]
+        if real and not args.accept_regression:
+            for b in real:
+                print(f'REFUSED: {b}')
+            print('re-run with --accept-regression to record this anyway')
+            sys.exit(2)
         baseline_write(results)
     elif args.baseline == 'check':
         bad = baseline_check(results)
