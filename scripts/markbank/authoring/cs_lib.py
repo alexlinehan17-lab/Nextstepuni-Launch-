@@ -176,13 +176,7 @@ class Author:
         # each -- it is one of the six answers, not a label, and dropping it
         # priced a 30-mark part at 20. A majority vote cannot decide this: half
         # these parts have two rows, where there is no majority.
-        def _label(lab):
-            return CS.DRAFTING.search(lab) or self.UNSTATEABLE.match(lab)
-        answer_marks = {mk for lab, mk in rows if not _label(lab)}
-        kept = [(lab, mk) for lab, mk in rows
-                if not _label(lab) or mk in answer_marks]
-        if kept:
-            rows = kept
+        rows = self._without_band(rows)
         scaffold = [(lab, mk) for lab, mk in rows if CS.SCAFFOLD_ROW.match(lab)]
         printed = {int(a or b) for a, b in PART_TOTAL.findall(block)}
 
@@ -508,6 +502,23 @@ class Author:
         self._used.add(cid)
         return self.cards[-1]
 
+    @staticmethod
+    def _without_band(rows):
+        """Rows with the presentation band removed — and only the band.
+
+        "Draughting, accuracy and scale (excellent, good, fair) 8" beside eight
+        answers at 4 is what stops the eight reading as a single same-mark
+        tariff. A presentation row is dropped only where its mark is one NO
+        answer row carries: 2022 Ordinary Q4(a) prices "Note 4" beside five
+        details at 4 each, and that Note is one of the six answers.
+        """
+        def label(lab):
+            return CS.DRAFTING.search(lab) or Author.UNSTATEABLE.match(lab)
+        answer_marks = {mk for lab, mk in rows if not label(lab)}
+        kept = [(lab, mk) for lab, mk in rows
+                if not label(lab) or mk in answer_marks]
+        return kept or rows
+
     def _answerish_names(self, gs, qtext):
         """Group names that read like ANSWERS, not section labels.
 
@@ -574,6 +585,26 @@ class Author:
         # card's own "Design Consideration 1/2/3" rows read as unstateable
         # because the question names them, while "Justification" did not.
         rest = list(self.S.mark_rows(q, letter))
+        # Priced items that never became a mark row because the value sits
+        # inside the label rather than after it -- "Typical dimensions
+        # (2 x 2 marks)". They are part of the part's total and so part of the
+        # shortfall a card does not carry.
+        # A tariff line BEFORE the first priced row states the part's own tariff
+        # -- counting it priced 2025 Higher Q9(a)'s "6 x 5 marks" as a 30-mark
+        # shortfall on top of the 30 the card already carries. After the first
+        # priced row it is an extra item: 2016 Higher Q7(b) awards its last four
+        # marks as "Typical dimensions (2 x 2 marks)", which no mark row holds.
+        priced_seen = False
+        for line in self.S.marks.get((q, letter), []):
+            t = line.strip()
+            tars = CS.group_tariffs(t)
+            has_mark = bool(re.search(r'\s\d{1,3}\s*$', t))
+            if not tars:
+                priced_seen = priced_seen or has_mark
+                continue
+            if priced_seen and not has_mark:
+                for nn, pp in tars:
+                    rest.append((t[:60], nn * pp))
         for claim, per in (used or []):
             for _ in range(claim):
                 hit = next((i for i, (_, mk) in enumerate(rest) if mk == per), None)
@@ -659,7 +690,7 @@ class Author:
             # rather than opposite. 46 parts have no usable indicative group and
             # most of them are these.
             named = []
-            for lab, mk in self.S.mark_rows(q, letter):
+            for lab, mk in self._without_band(self.S.mark_rows(q, letter)):
                 if CS.SCAFFOLD_ROW.match(lab) or len(lab) < 4:
                     continue
                 named.append((lab, mk))

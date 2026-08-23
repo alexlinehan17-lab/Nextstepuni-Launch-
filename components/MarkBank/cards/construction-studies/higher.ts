@@ -312,6 +312,19 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Higher Level — © State Examinations Commission.",
+    id: "cons-2016-hl-q7-b", topicId: "cons-3-10", conceptId: "considerations-taken-into-account-design-chimney",
+    section: "B", questionRef: "2016 HL Q7(b)",
+    questionText: "On your drawing, show two considerations to be taken into account in the design of the chimney stack shown which will help prevent a downdraught. Include typical dimensions as appropriate.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 2","answer":2,"ofParts":2,"perPart":2}, totalMarks: 4,
+    rows: [
+    { id: "cons-2016-hl-q7-b-r1", kind: "anyN", verbatim: "On your drawing, show two considerations to be taken into account in the design of the chimney stack shown which will he", marks: 4, openList: true, group: {"claimMax":2,"perOption":2,"options":["Design detail 1 -","Design detail 2 -"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2017, level: "higher",
     paperFileid: "LC029ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2017 Higher Level — © State Examinations Commission.",
@@ -632,6 +645,19 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2017 Higher Level — © State Examinations Commission.",
+    id: "cons-2017-hl-q4-b", topicId: "cons-3-3", conceptId: "when-specifying-high-performance-external-wall",
+    section: "B", questionRef: "2017 HL Q4(b)",
+    questionText: "When specifying a high performance external wall for a new house, a choice is to be made between: • a rendered cavity wall of concrete block construction or • a wall of timber frame construction with a rainscreen of cedar cladding, as shown or • a rendered wall of timber frame and hemp-lime construction. Select any two of the above wall types, and using notes and freehand sketches, show the typical design detailing for each wall type selected. Name the typical components of each wall and include typical dimensions.",
+    tariffModel: {"kind":"bestNofParts","notation":"4 x 5","answer":4,"ofParts":4,"perPart":5}, totalMarks: 20,
+    rows: [
+    { id: "cons-2017-hl-q4-b-r1", kind: "anyN", verbatim: "When specifying a high performance external wall for a new house, a choice is to be made between: • a rendered cavity wa", marks: 20, openList: true, group: {"claimMax":4,"perOption":5,"options":["Sketch","Timber frame construction","Dimensions","Note"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2018, level: "higher",
     paperFileid: "LC029ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
@@ -915,9 +941,9 @@ export const CARDS: SecCard[] = [
     id: "cons-2018-hl-q7-a", topicId: "cons-4-3", conceptId: "vertical-section-through-portion-external-wall",
     section: "B", questionRef: "2018 HL Q7(a)",
     questionText: "To a scale of 1:5, draw a vertical section through a portion of the external wall, doorframe, door, first floor joists, and floor. Show the typical construction details from a level 400 mm below the top of the door to a level 300 mm above the first floor joists.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 4","answer":4,"ofParts":14,"perPart":4}, totalMarks: 16,
+    tariffModel: {"kind":"bestNofParts","notation":"4 x 4","answer":4,"ofParts":11,"perPart":4}, totalMarks: 16,
     rows: [
-    { id: "cons-2018-hl-q7-a-r1", kind: "anyN", verbatim: "To a scale of 1:5, draw a vertical section through a portion of the external wall, doorframe, door, first floor joists, ", marks: 16, openList: true, group: {"claimMax":4,"perOption":4,"options":["450 mm concrete block wall","Full-fill cavity insulation","Internal and external plaster/render","Cavity closer","Lintels","Wall tie – basalt coated low conductivity","Stepped dpc","Thermally broken frame","Top rail","Airtightness tape - doorframe to wall","Insulation","Vertical sheeting","Rebates - double & draught proofing strips","Floor"]} },
+    { id: "cons-2018-hl-q7-a-r1", kind: "anyN", verbatim: "To a scale of 1:5, draw a vertical section through a portion of the external wall, doorframe, door, first floor joists, ", marks: 16, openList: true, group: {"claimMax":4,"perOption":4,"options":["450 mm concrete block wall","Internal and external plaster/render","Cavity closer","Wall tie – basalt coated low conductivity","Top rail","Airtightness tape - doorframe to wall","Vertical sheeting","Mechanical fixing of joist to wall","Joist","Plywood decking","Plasterboard ceiling"]} },
     ],
   } as SecCard,
   {

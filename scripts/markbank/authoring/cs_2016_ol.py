@@ -32,7 +32,8 @@ PLAN = [
     (7, 'b', 'cons-8-3', 'separate-annotated-method-would-help-reduce'),
     (1, 'a', 'cons-2-4', 'vertical-section-through-strip-foundation-external'),
     (6, 'b', 'cons-1-8', 'specific-safety-precautions-observed-when-turning'),
-    (9, 'a', 'cons-3-3', 'wood-external-cladding-reasons-choice-wood'),]
+    (9, 'a', 'cons-3-3', 'wood-external-cladding-reasons-choice-wood'),
+    (2, 'a', 'cons-5-2', 'large-attic-space-typical-design-detailing'),]
 
 for q, letter, topic, concept in PLAN:
     try:

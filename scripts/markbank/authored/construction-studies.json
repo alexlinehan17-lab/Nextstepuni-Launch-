@@ -1210,6 +1210,47 @@
   "notes": "The scheme lists 16 acceptable points under \"Economical use of electricity – such as –\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
  },
  {
+  "id": "cons-2016-hl-q7-b",
+  "topicId": "cons-3-10",
+  "conceptId": "considerations-taken-into-account-design-chimney",
+  "level": "higher",
+  "year": 2016,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2016 HL Q7(b)",
+  "questionText": "On your drawing, show two considerations to be taken into account in the design of the chimney stack shown which will help prevent a downdraught. Include typical dimensions as appropriate.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 2",
+   "answer": 2,
+   "ofParts": 2,
+   "perPart": 2
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "cons-2016-hl-q7-b-r1",
+    "kind": "anyN",
+    "verbatim": "On your drawing, show two considerations to be taken into account in the design of the chimney stack shown which will he",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Design detail 1 -",
+      "Design detail 2 -"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme awards 8 marks for this part. The 4 on this card are the marks it states answers for; the other 4 go to Typical dimensions (2 × 2 marks) (4) — the drawing itself and anything the scheme prices without saying what earns it."
+ },
+ {
   "id": "cons-2016-ol-q2-b",
   "topicId": "cons-3-9",
   "conceptId": "reasons-why-attic-space-chosen-first",
@@ -2170,6 +2211,53 @@
    }
   ],
   "notes": "The scheme lists 18 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
+  "id": "cons-2016-ol-q2-a",
+  "topicId": "cons-5-2",
+  "conceptId": "large-attic-space-typical-design-detailing",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2016 OL Q2(a)",
+  "questionText": "Draw a large freehand sketch of the attic space. On your sketch, show the typical design detailing necessary to insulate, to a high standard, each of the following: • attic space • water storage tank and • pipework.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "8 x 4",
+   "answer": 8,
+   "ofParts": 8,
+   "perPart": 4
+  },
+  "totalMarks": 32,
+  "rows": [
+   {
+    "id": "cons-2016-ol-q2-a-r1",
+    "kind": "anyN",
+    "verbatim": "Draw a large freehand sketch of the attic space. On your sketch, show the typical design detailing necessary to insulate",
+    "marks": 32,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 8,
+     "perOption": 4,
+     "options": [
+      "Ceiling joist",
+      "Rafter",
+      "Insulation – two layers",
+      "Tank",
+      "Tank supports free of insulation",
+      "Insulation - top and sides",
+      "Expansion pipe",
+      "Other exposed pipes"
+     ]
+    }
+   }
+  ],
+  "notes": ""
  },
  {
   "id": "cons-2017-hl-q1-b",
@@ -3427,6 +3515,49 @@
   "notes": "The scheme lists 16 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
  },
  {
+  "id": "cons-2017-hl-q4-b",
+  "topicId": "cons-3-3",
+  "conceptId": "when-specifying-high-performance-external-wall",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2017 HL Q4(b)",
+  "questionText": "When specifying a high performance external wall for a new house, a choice is to be made between: • a rendered cavity wall of concrete block construction or • a wall of timber frame construction with a rainscreen of cedar cladding, as shown or • a rendered wall of timber frame and hemp-lime construction. Select any two of the above wall types, and using notes and freehand sketches, show the typical design detailing for each wall type selected. Name the typical components of each wall and include typical dimensions.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 x 5",
+   "answer": 4,
+   "ofParts": 4,
+   "perPart": 5
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "cons-2017-hl-q4-b-r1",
+    "kind": "anyN",
+    "verbatim": "When specifying a high performance external wall for a new house, a choice is to be made between: • a rendered cavity wa",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "Sketch",
+      "Timber frame construction",
+      "Dimensions",
+      "Note"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "cons-2017-ol-q2-a",
   "topicId": "cons-1-1",
   "conceptId": "how-inner-leaf-insulated-type-thickness",
@@ -4233,6 +4364,51 @@
    }
   ],
   "notes": "The scheme lists 15 acceptable points under \"Specification – typical detail\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
+  "id": "cons-2017-ol-q7-b",
+  "topicId": "cons-1-1",
+  "conceptId": "large-tongue-groove-joint-between-flooring",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2017 OL Q7(b)",
+  "questionText": "Using a large freehand sketch, show the tongue-and- groove joint between two flooring boards and list two advantages of this method of jointing.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 5",
+   "answer": 2,
+   "ofParts": 6,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2017-ol-q7-b-r1",
+    "kind": "anyN",
+    "verbatim": "Two advantages a tongue-and-groove joint between two flooring boards - Notes",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two advantages a tongue-and-groove joint between two flooring boards - Notes",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "The joint closes the gap between the boards",
+      "The joint helps to draught proof the floor",
+      "The joint adds strength to the overall floor",
+      "If shrinkage occurs the gap will remain closed",
+      "Boards can be glued together at the tongue",
+      "Boards can be secret nailed through the tongue"
+     ]
+    }
+   }
+  ],
+  "notes": ""
  },
  {
   "id": "cons-2018-hl-q1-b",
@@ -5228,7 +5404,7 @@
    "kind": "bestNofParts",
    "notation": "4 x 4",
    "answer": 4,
-   "ofParts": 14,
+   "ofParts": 11,
    "perPart": 4
   },
   "totalMarks": 16,
@@ -5245,24 +5421,21 @@
      "perOption": 4,
      "options": [
       "450 mm concrete block wall",
-      "Full-fill cavity insulation",
       "Internal and external plaster/render",
       "Cavity closer",
-      "Lintels",
       "Wall tie – basalt coated low conductivity",
-      "Stepped dpc",
-      "Thermally broken frame",
       "Top rail",
       "Airtightness tape - doorframe to wall",
-      "Insulation",
       "Vertical sheeting",
-      "Rebates - double & draught proofing strips",
-      "Floor"
+      "Mechanical fixing of joist to wall",
+      "Joist",
+      "Plywood decking",
+      "Plasterboard ceiling"
      ]
     }
    }
   ],
-  "notes": "The scheme lists 21 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+  "notes": ""
  },
  {
   "id": "cons-2018-hl-q8-a",
@@ -6391,6 +6564,48 @@
    }
   ],
   "notes": "The scheme lists 16 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
+  "id": "cons-2018-ol-q2-a",
+  "topicId": "cons-1-1",
+  "conceptId": "method-applying-external-insulation-system-wall",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2018 OL Q2(a)",
+  "questionText": "Using notes and freehand sketches show one suitable method of applying an external insulation system to the wall. Specify the typical thickness of the insulation.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 x 4",
+   "answer": 3,
+   "ofParts": 3,
+   "perPart": 4
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "cons-2018-ol-q2-a-r1",
+    "kind": "anyN",
+    "verbatim": "Using notes and freehand sketches show one suitable method of applying an external insulation system to the wall. Specif",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Valid description one",
+      "Valid description two",
+      "Thickness of insulation"
+     ]
+    }
+   }
+  ],
+  "notes": ""
  },
  {
   "id": "cons-2019-hl-q1-b",

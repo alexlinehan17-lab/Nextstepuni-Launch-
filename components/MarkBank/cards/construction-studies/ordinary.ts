@@ -269,6 +269,19 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2016, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2016-ol-q2-a", topicId: "cons-5-2", conceptId: "large-attic-space-typical-design-detailing",
+    section: "B", questionRef: "2016 OL Q2(a)",
+    questionText: "Draw a large freehand sketch of the attic space. On your sketch, show the typical design detailing necessary to insulate, to a high standard, each of the following: • attic space • water storage tank and • pipework.",
+    tariffModel: {"kind":"bestNofParts","notation":"8 x 4","answer":8,"ofParts":8,"perPart":4}, totalMarks: 32,
+    rows: [
+    { id: "cons-2016-ol-q2-a-r1", kind: "anyN", verbatim: "Draw a large freehand sketch of the attic space. On your sketch, show the typical design detailing necessary to insulate", marks: 32, openList: true, group: {"claimMax":8,"perOption":4,"options":["Ceiling joist","Rafter","Insulation – two layers","Tank","Tank supports free of insulation","Insulation - top and sides","Expansion pipe","Other exposed pipes"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2017, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2017 Ordinary Level — © State Examinations Commission.",
@@ -480,6 +493,19 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2017, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2017 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2017-ol-q7-b", topicId: "cons-1-1", conceptId: "large-tongue-groove-joint-between-flooring",
+    section: "B", questionRef: "2017 OL Q7(b)",
+    questionText: "Using a large freehand sketch, show the tongue-and- groove joint between two flooring boards and list two advantages of this method of jointing.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 5","answer":2,"ofParts":6,"perPart":5}, totalMarks: 10,
+    rows: [
+    { id: "cons-2017-ol-q7-b-r1", kind: "anyN", verbatim: "Two advantages a tongue-and-groove joint between two flooring boards - Notes", marks: 10, contextNote: "Two advantages a tongue-and-groove joint between two flooring boards - Notes", openList: true, group: {"claimMax":2,"perOption":5,"options":["The joint closes the gap between the boards","The joint helps to draught proof the floor","The joint adds strength to the overall floor","If shrinkage occurs the gap will remain closed","Boards can be glued together at the tongue","Boards can be secret nailed through the tongue"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2018, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
@@ -687,6 +713,19 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"bestNofParts","notation":"4 x 4","answer":4,"ofParts":14,"perPart":4}, totalMarks: 16,
     rows: [
     { id: "cons-2018-ol-q9-b-r1", kind: "anyN", verbatim: "Show, using notes and freehand sketches, how the doorframe is held square while it is being fitted and show one method o", marks: 16, openList: true, group: {"claimMax":4,"perOption":4,"options":["Temporary wooden strip is fixed diagonally at one or both corners","The corners are checked for square","A strip is fixed at the bottom of the frame to keep the uprights parallel and the correct distance apart","The frame is now ready for fitting","These temporary fixtures can be removed when the frame is fixed in place","Suitable screws are used to fix the doorframe to the wall","The position for the screws is marked on the frame","A larger hole is drilled","The hole for the screws is then drilled through the centre","The exact position for the screws is then marked on the wall","Holes are drilled in concrete for the plastic plugs B","Frame is put back in position","Screws are then inserted","Metal frame fixings are also used"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2018-ol-q2-a", topicId: "cons-1-1", conceptId: "method-applying-external-insulation-system-wall",
+    section: "B", questionRef: "2018 OL Q2(a)",
+    questionText: "Using notes and freehand sketches show one suitable method of applying an external insulation system to the wall. Specify the typical thickness of the insulation.",
+    tariffModel: {"kind":"bestNofParts","notation":"3 x 4","answer":3,"ofParts":3,"perPart":4}, totalMarks: 12,
+    rows: [
+    { id: "cons-2018-ol-q2-a-r1", kind: "anyN", verbatim: "Using notes and freehand sketches show one suitable method of applying an external insulation system to the wall. Specif", marks: 12, openList: true, group: {"claimMax":3,"perOption":4,"options":["Valid description one","Valid description two","Thickness of insulation"]} },
     ],
   } as SecCard,
   {

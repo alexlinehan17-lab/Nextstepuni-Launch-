@@ -104,7 +104,8 @@ SCAFFOLD_ROW = re.compile(
     r'consideration|answer|discussion point|benefit|way|factor|use|example|'
     r'design consideration|safety precaution|precaution|approach|'
     r'functional requirement|requirement|area|aspect|task|option|step|'
-    r'stage|element|item)s?\s*\d*$', re.I)
+    r'stage|element|item|detail)s?\s*(?:\d+|one|two|three|four|five|six)?'
+    r'\s*[-–:]?$', re.I)
 # A group heading: short, title-ish, no closing punctuation, no bullet.
 HEADING_LOOK = re.compile(r'^[A-Z][^.:;•]{0,58}$')
 # Lines that sit where a heading sits but name nothing. The question's own text
