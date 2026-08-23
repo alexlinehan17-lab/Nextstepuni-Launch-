@@ -44,6 +44,9 @@ PLAN = [
     (10, 'a', 'cons-6-4', 'why-solar-overheating-occurs'),
     (10, 'b', 'cons-6-4', 'reducing-solar-overheating'),
     (10, 'c', 'cons-6-4', 'design-features-for-thermal-comfort'),
+    (1, 'b', 'cons-6-2', 'preventing-a-thermal-bridge-at-the-threshold'),
+    (5, 'b', 'cons-6-1', 'insulation-thickness-for-a-target-u-value'),
+    (5, 'c', 'cons-6-6', 'moisture-and-vapour-control-layers'),
 ]
 
 for q, letter, topic, concept in PLAN:

@@ -42,9 +42,9 @@ if __name__ == '__main__':
             for (q, letter) in A.S.parts():
                 if not A.question(q, letter):
                     continue
-                gs = [g for g in A.S.groups(q, letter, 'indicative') if len(g[2]) >= 2]
-                if not gs:
-                    continue
+                # Deliberately NOT pre-filtered on the indicative groups: the
+                # author falls back to the mark table's own rows where there are
+                # none, and a probe that skips those parts cannot see it work.
                 try:
                     A.card(q, letter, cid=f'probe-{year}-{level}-{q}-{letter}',
                            topic='cons-1-1', concept='probe')

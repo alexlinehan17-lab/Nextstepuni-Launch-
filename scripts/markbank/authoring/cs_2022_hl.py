@@ -33,6 +33,9 @@ PLAN = [
     (10, 'a', 'cons-6-4', 'benefits-of-orientation'),
     (10, 'b', 'cons-6-4', 'choosing-an-orientation'),
     (10, 'c', 'cons-6-4', 'thermal-mass'),
+    (1, 'b', 'cons-6-2', 'preventing-a-thermal-bridge'),
+    (5, 'b', 'cons-6-1', 'calculating-heat-loss-through-a-wall'),
+    (5, 'c', 'cons-6-1', 'upgrading-a-wall-to-a-target-u-value'),
 ]
 
 for q, letter, topic, concept in PLAN:

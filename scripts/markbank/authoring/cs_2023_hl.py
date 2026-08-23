@@ -32,6 +32,10 @@ PLAN = [
     (10, 'a', 'cons-6-3', 'passive-house-design'),
     (10, 'b', 'cons-6-3', 'designing-a-low-energy-ground-floor-plan'),
     (10, 'c', 'cons-6-3', 'where-to-locate-a-low-energy-feature'),
+    (1, 'b', 'cons-6-5', 'ventilation-detailing-at-the-eaves'),
+    (5, 'b', 'cons-6-1', 'calculating-heat-loss-through-a-roof'),
+    (5, 'c', 'cons-6-2', 'best-practice-detailing-against-heat-loss'),
+    (9, 'b', 'cons-8-2', 'reverberation-in-a-living-room'),
 ]
 
 for q, letter, topic, concept in PLAN:

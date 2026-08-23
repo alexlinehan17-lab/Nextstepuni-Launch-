@@ -25,6 +25,10 @@ PLAN = [
     (9, 'a', 'cons-4-6', 'an-applied-finish-for-decking'),
     (9, 'b', 'cons-1-1', 'using-an-outdoor-space-year-round'),
     (9, 'c', 'cons-1-1', 'advantages-of-an-outdoor-living-space'),
+    (1, 'a', 'cons-3-9', 'vertical-section-external-wall-and-pitched-eaves'),
+    (2, 'c', 'cons-4-2', 'choosing-a-floor-finish-for-a-kitchen'),
+    (5, 'b', 'cons-3-6', 'preventing-water-entering-at-the-window-cill'),
+    (6, 'a', 'cons-1-8', 'safety-signs-on-a-construction-site'),
 ]
 
 for q, letter, topic, concept in PLAN:

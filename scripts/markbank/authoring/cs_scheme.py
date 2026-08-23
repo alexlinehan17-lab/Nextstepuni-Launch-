@@ -61,11 +61,14 @@ PRACTICAL = re.compile(r'^Practical Test\b', re.I)
 TARIFF_ONLY = re.compile(r'^[\d\s×x+•()\-]*marks?\b.*$', re.I)
 # The drafting/scale band printed under every drawing question, and its numbers.
 SCALE_TAIL = re.compile(r'^(Scale\s*[-–]|Drafting\s*[-–]|[\d\s]+$)', re.I)
+# The presentation band every drawing question closes with. Priced, but not a
+# named answer, so it is never one of a card's options.
+DRAFTING = re.compile(r'\b(draughting|drafting)\b|\bexcellent, ?good, ?fair\b', re.I)
 # The mark column bleeding onto the end of a bullet: "R.C. strip foundation 4".
 MARK_TAIL = re.compile(r'\s+\d{1,3}\s*$')
 TOTAL_ONLY = re.compile(r'^(total|sub-?total|notes?|sketches?'
                         r'|\(?\d+\s+for\s+\w+)\b', re.I)
-TOTALS = re.compile(r'^(sub-?\s*total|total)\b', re.I)
+TOTALS = re.compile(r'\b(sub-?\s*total|total)\b', re.I)
 # "(8 + 5 marks)", "(3 + 3 marks)" printed inside a row's label.
 MARK_EXPR = re.compile(r'\(\s*\d{1,3}(?:\s*\+\s*\d{1,3})*\s*marks?\s*\)', re.I)
 # A row that names nothing: the scheme's way of saying "N interchangeable
@@ -74,7 +77,8 @@ SCAFFOLD_ROW = re.compile(
     r'^(advantage|disadvantage|reason|risk|feature|guideline|point|method|'
     r'consideration|answer|discussion point|benefit|way|factor|use|example|'
     r'design consideration|safety precaution|precaution|approach|'
-    r'functional requirement|requirement)s?\s*\d*$', re.I)
+    r'functional requirement|requirement|area|aspect|task|option|step|'
+    r'stage|element|item)s?\s*\d*$', re.I)
 # A group heading: short, title-ish, no closing punctuation, no bullet.
 HEADING_LOOK = re.compile(r'^[A-Z][^.:;•]{0,58}$')
 # Lines that sit where a heading sits but name nothing. The question's own text
@@ -292,7 +296,12 @@ class Scheme:
         out = []
         for line in _rewrap(self.marks.get((q, letter), [])):
             t = BULLET.sub('', line).strip()
-            if not t or SCALE_TAIL.match(t) or TOTALS.match(t):
+            # A total or a tariff is not an answer row wherever it sits on the
+            # line. "Any 7 x 5 marks Sub-total 35" closes every Ordinary Level
+            # vertical section; counted as a row its 35 broke the "every row
+            # carries the same mark" test and lost the richest question in the
+            # paper, five times over.
+            if not t or SCALE_TAIL.match(t) or TOTALS.search(t) or GROUP_TARIFF.search(t):
                 continue
             m = re.search(r'^(.*?)\s+(\d{1,3})\s*$', t)
             if not m:
@@ -302,7 +311,7 @@ class Scheme:
                 out.append((label, int(m.group(2))))
         return out
 
-    def mark_items(self, q, letter):
+    def mark_items(self, q, letter, question=None):
         """The mark table's own answer rows, where IT is the fuller list.
 
         For most parts the indicative half carries the content and the mark
@@ -314,12 +323,22 @@ class Scheme:
         out = []
         for line in _rewrap(self.marks.get((q, letter), [])):
             t = BULLET.sub('', line).strip()
-            if not t or TARIFF_ONLY.match(t) or SCALE_TAIL.match(t):
+            if (not t or TARIFF_ONLY.match(t) or SCALE_TAIL.match(t)
+                    or TOTALS.search(t) or GROUP_TARIFF.search(t) or DRAFTING.search(t)):
                 continue
             t = MARK_TAIL.sub('', t).strip(' .;')
             if len(t) > 2 and not TOTAL_ONLY.match(t):
                 out.append(t)
-        return out[1:] if out else out          # drop the part's own title
+        # The block usually opens by restating the question, and that line is
+        # not an answer. But not always: the Ordinary vertical sections open
+        # straight into "Slates 600 mm x 300 mm on battens", and dropping it
+        # unconditionally lost a real detail off every one of them. Dropped only
+        # when it actually reads as the question.
+        if out and question:
+            a, b = PCS(out[0]), PCS(question)
+            if a and b and (a[:30] in b or b[:30] in a):
+                return out[1:]
+        return out
 
     def tariff(self, q, letter):
         """(kind, n, per) from the mark table, or None if it prints none."""
@@ -361,7 +380,8 @@ SLOT_LINE = re.compile(
     r'^(advantage|disadvantage|reason|risk|feature|guideline|point|method|'
     r'consideration|answer|discussion point|benefit|way|factor|use|example|'
     r'design consideration|safety precaution|safety procedure|precaution|'
-    r'approach|functional requirement|requirement|item|element)s?\s+(\d{1,2})\b',
+    r'approach|functional requirement|requirement|item|element|area|aspect|'
+    r'section|task|option|type|material|detail|step|stage|part)s?\s+(\d{1,2})\b',
     re.I)
 
 
@@ -379,3 +399,8 @@ def slot_labels(lines):
         if m:
             out.append(m.group(1).lower())
     return out
+
+
+def PCS(t):
+    """Squashed to letters and digits, for comparing two printings of one line."""
+    return re.sub(r'[^a-z0-9]+', '', (t or '').lower())

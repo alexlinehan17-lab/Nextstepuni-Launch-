@@ -24,7 +24,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import cs_scheme as CS                                       # noqa: E402
 import paper as PP                                           # noqa: E402
-from markbank_authoring import anyN, make_audit, make_card, make_emit  # noqa: E402
+from markbank_authoring import anyN, make_audit, make_card, make_emit, point  # noqa: E402
 
 SUBJECT = 'construction-studies'
 _card = make_card(SUBJECT, default_section='B')
@@ -164,6 +164,14 @@ class Author:
             if total % len(slots) == 0:
                 return (len(slots), total // len(slots))
 
+        # A part with exactly ONE priced row prices one answer. "Advantage 6 /
+        # Sub-total 6" and "Safety precaution note & sketch (8 + 5 marks) 13"
+        # are both a single answer worth what the row says, and the candidates
+        # for it are in the indicative half. The scaffold path above needs two
+        # rows to see a pattern and so could not read either.
+        if len(rows) == 1:
+            return (1, rows[0][1])
+
         # Last resort, and the only inferred form: every priced row in the part
         # carries the same mark, so the count and that mark are the tariff. It
         # must reconcile with the printed total, otherwise it is a guess.
@@ -174,6 +182,29 @@ class Author:
                 return (n, per)
         raise Refused(f'Q{q}({letter}) [{name}]: the scheme prints no tariff for this '
                       f'group; leave it uncarded rather than estimate one')
+
+    def _check_total(self, q, letter, total):
+        """The card's marks must be the question's marks.
+
+        Where the scheme prints a total for this part, the rows have to make it
+        -- otherwise the card tells a student a 30-mark question is worth 12,
+        which is worse than no card. The one allowed shortfall is the drawing
+        and scale allowance, which the scheme prices separately and is not a
+        named answer.
+
+        Called from EVERY path that emits. It began life inline in the menu path
+        and the single-answer path added later returned before reaching it, so
+        nine cards shipped with a total their own scheme block never prints.
+        """
+        block = ' '.join(self.S.marks.get((q, letter), []))
+        printed = {int(a or b) for a, b in PART_TOTAL.findall(block)}
+        if not printed or total in printed:
+            return
+        allowance = sum(int(x) for x in DRAW_ALLOWANCE.findall(block))
+        if any(total + allowance == p for p in printed):
+            return
+        raise Refused(f'Q{q}({letter}): rows make {total} but the scheme prints '
+                      f'{sorted(printed)} for this part — not carding a partial tariff')
 
     # ---- the card -------------------------------------------------------
     def card(self, q, letter, *, cid, topic, concept, note='', notes='', stem='',
@@ -195,6 +226,45 @@ class Author:
         if not qtext:
             raise Refused(f'Q{q}({letter}): no question text in the paper')
         gs = self.S.groups(q, letter, 'indicative')
+        if not [g for g in gs if len(g[2]) >= 2]:
+            # The indicative half groups nothing for this part, but the MARK
+            # table often names the answer itself: the U-value questions list
+            # every element of the wall at three marks each, and the vertical
+            # sections of the Ordinary papers list the section's details there
+            # rather than opposite. 46 parts have no usable indicative group and
+            # most of them are these.
+            named = []
+            for lab, mk in self.S.mark_rows(q, letter):
+                if CS.SCAFFOLD_ROW.match(lab) or len(lab) < 4:
+                    continue
+                named.append((lab, mk))
+            if len(named) >= 2 and len({mk for _, mk in named}) == 1:
+                seen, opts = set(), []
+                for lab, _ in named:
+                    k = _squash(lab)
+                    if k and k not in seen:
+                        seen.add(k)
+                        opts.append(lab)
+                if len(opts) >= 2:
+                    gs = [(None, None, opts)]
+            if not [g for g in gs if len(g[2]) >= 2]:
+                # The mark column is printed on alternate lines in the Ordinary
+                # vertical sections, so only four of thirteen details carry a
+                # number and mark_rows() sees a quarter of the answer. Where the
+                # block states its tariff outright -- "Any 7 x 5 marks" -- the
+                # options are every detail line, priced by that.
+                blk = ' '.join(self.S.marks.get((q, letter), []))
+                if len(CS.GROUP_TARIFF.findall(blk)) == 1:
+                    items = [it for it in self.S.mark_items(q, letter, qtext)
+                             if not CONTENT_FREE.match(it) and len(it) > 4]
+                    seen, opts = set(), []
+                    for it in items:
+                        k = _squash(it)
+                        if k and k not in seen and k in self.raw:
+                            seen.add(k)
+                            opts.append(it)
+                    if len(opts) >= 2:
+                        gs = [(None, None, opts)]
         multi = len(CS.GROUP_TARIFF.findall(
             ' '.join(self.S.marks.get((q, letter), [])))) > 1
         # One tariff over several groups prices the PART, not each group:
@@ -283,22 +353,26 @@ class Author:
             row_names.append(name)
             parts_note.append(f'{n} x {per}')
         if not rows:
+            # A part whose scheme names ONE thing is still a card -- it is just
+            # not a menu. "Show the typical design detailing to prevent water
+            # entering at the window cill" is answered "Throating / drip / DPC"
+            # for four marks, and that is as liftable as any list.
+            single = [(lab, mk) for lab, mk in self.S.mark_rows(q, letter)
+                      if not CS.SCAFFOLD_ROW.match(lab) and len(lab) > 8
+                      and not CONTENT_FREE.match(lab)]
+            if len(single) == 1 and _squash(single[0][0]) in self.raw:
+                lab, mk = single[0]
+                self._check_total(q, letter, mk)
+                self.cards.append(_card(
+                    cid, self.year, self.deck_level, topic, concept,
+                    self.ref(q, letter), qtext, f'{mk}', mk,
+                    [point(f'{cid}-r1', lab, mk, '')], notes, stem=stem,
+                    tariff_kind='fixed'))
+                self._used.add(cid)
+                return self.cards[-1]
             raise Refused(f'Q{q}({letter}): no priced group with usable options')
         total = sum(r['marks'] for r in rows)
-        # The card's marks must be the question's marks. Where the scheme prints
-        # a total for this part, the rows have to make it -- otherwise the card
-        # tells a student a 30-mark question is worth 12, which is worse than no
-        # card. The one allowed shortfall is the drawing and scale allowance,
-        # which the scheme prices separately and which is not a named answer.
-        printed = {int(a or b) for a, b in PART_TOTAL.findall(
-            ' '.join(self.S.marks.get((q, letter), [])))}
-        if printed and total not in printed:
-            allowance = sum(int(x) for x in DRAW_ALLOWANCE.findall(
-                ' '.join(self.S.marks.get((q, letter), []))))
-            if not any(total + allowance == p for p in printed):
-                raise Refused(
-                    f'Q{q}({letter}): rows make {total} but the scheme prints '
-                    f'{sorted(printed)} for this part — not carding a partial tariff')
+        self._check_total(q, letter, total)
         # One card per row, where the PAPER's own sentence enumerates the rows.
         # The narrowed question is that sentence with the other items deleted --
         # never rewritten -- and narrow() returns nothing unless the result is a

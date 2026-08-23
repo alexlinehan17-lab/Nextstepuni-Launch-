@@ -1176,7 +1176,7 @@
    "kind": "bestNofParts",
    "notation": "6 x 5",
    "answer": 6,
-   "ofParts": 6,
+   "ofParts": 7,
    "perPart": 5
   },
   "totalMarks": 30,
@@ -1192,6 +1192,7 @@
      "claimMax": 6,
      "perOption": 5,
      "options": [
+      "Typical wiring layout for ring main circuit (30 marks)",
       "Distribution board",
       "Three sockets",
       "Live cabling",
@@ -1336,6 +1337,83 @@
       "House is construction in a longhouse form",
       "Narrow plan width - one room deep form of traditional vernacular dwellings",
       "Minimum hard surfaces to allow vegetation to flourish about the house"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2021-hl-q1-b",
+  "topicId": "cons-6-2",
+  "conceptId": "preventing-a-thermal-bridge-at-the-threshold",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2021 HL Q1(b)",
+  "questionText": "On your drawing, show the typical design detailing that will prevent the formation of a thermal bridge at the threshold.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "cons-2021-hl-q1-b-r1",
+    "kind": "point",
+    "verbatim": "Design detailing to prevent a thermal bridge",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2021-hl-q5-b",
+  "topicId": "cons-6-1",
+  "conceptId": "insulation-thickness-for-a-target-u-value",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2021 HL Q5(b)",
+  "questionText": "It is proposed to redesign the above timber frame wall and upgrade its thermal properties to meet the Passive House standard by adding sheep wool insulation to the design of the internal leaf. Given the thermal conductivity (k) of sheep wool insulation as 0.034 W/m ⁰C, calculate the thickness of additional insulation required to achieve a U-value of 0.15 W/m2 ⁰C.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "5 x 3",
+   "answer": 5,
+   "ofParts": 5,
+   "perPart": 3
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "cons-2021-hl-q5-b-r1",
+    "kind": "anyN",
+    "verbatim": "It is proposed to redesign the above timber frame wall and upgrade its thermal properties to meet the Passive House stan",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 5,
+     "perOption": 3,
+     "options": [
+      "Resistance for U- value for 0.15 W/m2 °c (using R=1/U)",
+      "Resistance from calculated U-value from part (a)",
+      "Difference in resistances (required resistance)",
+      "Application of formula R = T/k",
+      "Required thickness of insulation in mm"
      ]
     }
    }
@@ -1672,6 +1750,49 @@
   "notes": ""
  },
  {
+  "id": "cons-2021-ol-q6-c",
+  "topicId": "cons-1-8",
+  "conceptId": "safety-precautions-in-a-deep-trench",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2021 OL Q6(c)",
+  "questionText": "Using notes and a freehand sketch, describe one safety precaution that workers should observe when working in a deep trench on a construction site.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 x 13",
+   "answer": 1,
+   "ofParts": 4,
+   "perPart": 13
+  },
+  "totalMarks": 13,
+  "rows": [
+   {
+    "id": "cons-2021-ol-q6-c-r1",
+    "kind": "anyN",
+    "verbatim": "Using notes and a freehand sketch, describe one safety precaution that workers should observe when working in a deep tre",
+    "marks": 13,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 1,
+     "perOption": 13,
+     "options": [
+      "Slope or battering back the trench sides to a safe angle to stabilise the sides and stop collapse",
+      "Support trench walls with sheeting/trench box when the depth exceeds 1.25 metres to prevent the collapse of the sides",
+      "Ensure guard rails and exclusion zone notices are in place to limit the proximity of machines and workers to the edge of the trench",
+      "Ensure excavated material is stored at a safe distance from the open trench to prevent material falling into the trench"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "cons-2021-ol-q7-b",
   "topicId": "cons-1-1",
   "conceptId": "laying-out-a-living-room",
@@ -1709,6 +1830,49 @@
       "Sofa (2 Seater)",
       "Stove",
       "Television"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2021-ol-q7-c",
+  "topicId": "cons-5-7",
+  "conceptId": "a-wood-burning-stove-in-a-living-room",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2021 OL Q7(c)",
+  "questionText": "Discuss one advantage of incorporating a wood-burning stove in a modern living room.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 x 6",
+   "answer": 1,
+   "ofParts": 4,
+   "perPart": 6
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "cons-2021-ol-q7-c-r1",
+    "kind": "anyN",
+    "verbatim": "Discuss one advantage of incorporating a wood-burning stove in a modern living room.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "A centre piece for a group to gather around and socialise",
+      "Provides warmth to the family in the main room of the dwelling",
+      "Environmentally friendly if using timber for fuel",
+      "Reduces the use oil and gas to heat the area"
      ]
     }
    }
@@ -1794,6 +1958,134 @@
       "Connection with nature and the outdoors",
       "Area to have outdoor meals during warmer seasons",
       "Increase the resale value of the property"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2021-ol-q1-a",
+  "topicId": "cons-3-9",
+  "conceptId": "vertical-section-external-wall-and-pitched-eaves",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2021 OL Q1(a)",
+  "questionText": "To a scale of 1:5, draw a vertical section through the external wall and through the eaves of the pitched roof. On your drawing, show the typical construction details from a level 400 mm below the wallplate, through the wall and eaves. Include the first three courses of slate at eaves.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "7 x 5",
+   "answer": 7,
+   "ofParts": 14,
+   "perPart": 5
+  },
+  "totalMarks": 35,
+  "rows": [
+   {
+    "id": "cons-2021-ol-q1-a-r1",
+    "kind": "anyN",
+    "verbatim": "To a scale of 1:5, draw a vertical section through the external wall and through the eaves of the pitched roof. On your ",
+    "marks": 35,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 7,
+     "perOption": 5,
+     "options": [
+      "Slates 600 mm × 300 mm on battens 50 mm × 30 mm",
+      "Breather membrane",
+      "Rafters 200 mm × 50 mm",
+      "Ceiling joist with insulation between joists",
+      "Insulated plasterboard with skim coat",
+      "Wallplate 100 mm × 75 mm",
+      "Airtight membrane and tape",
+      "Ventilation",
+      "Tilting fillet, fascia, soffit and eaves gutter",
+      "Concrete block inner leaf",
+      "Full fill cavity insulation 200 mm, wall ties and cavity closer",
+      "Concrete block outer leaf",
+      "13 mm internal plaster and 19 mm render",
+      "Any three typical dimensions"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2021-ol-q5-b",
+  "topicId": "cons-3-6",
+  "conceptId": "preventing-water-entering-at-the-window-cill",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2021 OL Q5(b)",
+  "questionText": "Show on your drawing the typical design detailing to prevent water entering at the window cill.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "cons-2021-ol-q5-b-r1",
+    "kind": "point",
+    "verbatim": "Throating / drip / DPC",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2021-ol-q6-a",
+  "topicId": "cons-1-8",
+  "conceptId": "safety-signs-on-a-construction-site",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2021 OL Q6(a)",
+  "questionText": "Using a large freehand sketch, show the safety sign for each of the following personal protection equipment (PPE) items: • high-visibility vest • safety boots • safety helmet. Give one specific reason why each item of personal protective equipment listed above must be worn.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 x 9",
+   "answer": 3,
+   "ofParts": 3,
+   "perPart": 9
+  },
+  "totalMarks": 27,
+  "rows": [
+   {
+    "id": "cons-2021-ol-q6-a-r1",
+    "kind": "anyN",
+    "verbatim": "Using a large freehand sketch, show the safety sign for each of the following personal protection equipment (PPE) items:",
+    "marks": 27,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 3,
+     "perOption": 9,
+     "options": [
+      "High-visibility vest sign and specific reason",
+      "Safety boots sign and specific reason",
+      "Safety helmet sign and specific reason"
      ]
     }
    }
@@ -1976,6 +2268,82 @@
       "Ensure that all doorways on the entrance level have a level threshold",
       "All sockets and switches installed at between 400 mm and 1000 mm above floor level",
       "Ensure that lighting levels are at 100 lux at floor level"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2022-hl-q2-b",
+  "topicId": "cons-1-1",
+  "conceptId": "open-plan-kitchen-for-reduced-mobility",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2022 HL Q2(b)",
+  "questionText": "The drawing shows the ground floor plan of an open-plan kitchen / dining space, that is to be used by a person in a wheelchair. With reference to the design shown, discuss using notes and freehand sketches, two areas of the internal layout that require specific design detailing to ensure ease of use by a person in a wheelchair. Indicate on your sketches typical dimensions as appropriate.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 x 12 + 1 x 12",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 24,
+  "rows": [
+   {
+    "id": "cons-2022-hl-q2-b-r1",
+    "kind": "anyN",
+    "verbatim": "Kitchen",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Kitchen",
+    "group": {
+     "claimMax": 1,
+     "perOption": 12,
+     "options": [
+      "Kitchen design the layout in a ‘U’ or ‘L’-shape",
+      "A turning circle of minimum Ø1500 mm - Ø1800 mm in the work area",
+      "Provide between 1200 – 1500 mm to opposite work surfaces of the kitchen area",
+      "A working countertop height of 900 mm with the potential to raise or lower the counters",
+      "Providing clear knee-space beneath the sink, hob and other areas of the kitchen worktop will allow the full use of the kitchen by someone seated",
+      "A clear knee space, 700mm high, 600mm deep and 800mm wide, beside ovens, washing machines, dishwashers, fridges and freezers",
+      "Provide pull-out drawers with 600mm deep units, instead of internal shelves",
+      "Provide a continuous worktop between sink and hob with at least 300mm on either side",
+      "Wall units at a maximum height of 450 mm above worktop level with pull-down mechanism for bringing shelf contents within reach",
+      "Tall units, like the oven and fridge freezer housings are located at the end of a run of worktop to avoid interrupting the work space",
+      "Flooring material installed, level, non-slip, easy to clean and continued under kitchen base units",
+      "Kitchen base units to have a plinth of 250mm high to suit wheelchair users"
+     ]
+    }
+   },
+   {
+    "id": "cons-2022-hl-q2-b-r2",
+    "kind": "anyN",
+    "verbatim": "Dining",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Dining",
+    "group": {
+     "claimMax": 1,
+     "perOption": 12,
+     "options": [
+      "Room layout clearly defined passage for guests to move out or into the dining/kitchen areas",
+      "Dining table is best located close to the kitchen to minimise the distance for carrying food and drinks",
+      "A clear space of 1200mm minimum on at least two sides of the table",
+      "Dining table supported on central pedestal which enables easy seating for all diners",
+      "Dining table with corner legs widely spaced/ absence of bottom rails/ stretcher",
+      "External corners of table slightly rounded to avoid injury",
+      "Dining chairs to be stable, lightweight and easily moveable",
+      "Height of table electronically adjustable c. 700 – 900mm",
+      "A clearly defined space between the two areas to enable diner’s guests adequate space prevent accidents",
+      "Level floor surface between the kitchen and dining area",
+      "Floor material which is slip-resistant and easy to clean"
      ]
     }
    }
@@ -2821,6 +3189,127 @@
   "notes": ""
  },
  {
+  "id": "cons-2022-hl-q1-b",
+  "topicId": "cons-6-2",
+  "conceptId": "preventing-a-thermal-bridge",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2022 HL Q1(b)",
+  "questionText": "On your drawing, indicate the typical design detailing to prevent the formation of a thermal bridge at the junction of the flat roof and the rear wall of the house.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "cons-2022-hl-q1-b-r1",
+    "kind": "point",
+    "verbatim": "Design detailing to prevent a thermal bridge",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2022-hl-q5-b",
+  "topicId": "cons-6-1",
+  "conceptId": "calculating-heat-loss-through-a-wall",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2022 HL Q5(b)",
+  "questionText": "Using the U-value of the wall obtained at 5(a) above and the following data, calculate the cost of heat lost annually through this wall: • area of external wall 144 m2 • average internal temperature 20 ⁰C • average external temperature 5 ⁰C • heating period 10 hours daily for 37 weeks per annum • cost of oil 97 cent per litre • calorific value of oil 37350 kJ per litre • 1000 watts 1 kJ per second.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "5 x 3",
+   "answer": 5,
+   "ofParts": 5,
+   "perPart": 3
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "cons-2022-hl-q5-b-r1",
+    "kind": "anyN",
+    "verbatim": "Using the U-value of the wall obtained at 5(a) above and the following data, calculate the cost of heat lost annually th",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 5,
+     "perOption": 3,
+     "options": [
+      "Heat loss formula and calculation",
+      "Heating duration for one year",
+      "k/Joules calculation for one year",
+      "Litres of oil for one year",
+      "Annual cost of heat loss"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2022-hl-q5-c",
+  "topicId": "cons-6-1",
+  "conceptId": "upgrading-a-wall-to-a-target-u-value",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2022 HL Q5(c)",
+  "questionText": "It is proposed to redesign the above external wall and upgrade its thermal properties to meet the Passive House standard by increasing the width of external insulation in the design. Calculate the thickness of additional external insulation required to achieve a U-value of 0.12 W/m2 ⁰C.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "5 x 3",
+   "answer": 5,
+   "ofParts": 5,
+   "perPart": 3
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "cons-2022-hl-q5-c-r1",
+    "kind": "anyN",
+    "verbatim": "It is proposed to redesign the above external wall and upgrade its thermal properties to meet the Passive House standard",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 5,
+     "perOption": 3,
+     "options": [
+      "Resistance for U- value for 0.12 W/m2 °c (using R=1/U)",
+      "Resistance from calculated U-value from part (a)",
+      "Difference in resistances (required resistance)",
+      "Application of formula R = T/k",
+      "Required thickness of insulation in mm"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "cons-2022-ol-q1-a",
   "topicId": "cons-3-4",
   "conceptId": "vertical-section-wall-lintel-and-doorframe",
@@ -3067,6 +3556,48 @@
   "notes": ""
  },
  {
+  "id": "cons-2022-ol-q3-c",
+  "topicId": "cons-5-4",
+  "conceptId": "advantages-of-reusing-rainwater",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2022 OL Q3(c)",
+  "questionText": "Discuss one advantage of reusing rainwater in a dwelling house.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 x 6",
+   "answer": 1,
+   "ofParts": 3,
+   "perPart": 6
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "cons-2022-ol-q3-c-r1",
+    "kind": "anyN",
+    "verbatim": "Discuss one advantage of reusing rainwater in a dwelling house.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Sustainable living",
+      "Reduces flooding around property",
+      "Reduce the cost of water treatment due to reduced usage"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "cons-2022-ol-q4-c",
   "topicId": "cons-1-1",
   "conceptId": "separating-a-living-room-from-a-kitchen",
@@ -3196,6 +3727,49 @@
       "Exposure to dust and fumes if correct PPE is not used",
       "Overuse of hammer action tools resulting in Hand-Arm Vibration Syndrome (HAVS)",
       "Encountering underground services"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2022-ol-q6-c",
+  "topicId": "cons-9-4",
+  "conceptId": "safety-precautions-with-power-tools",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2022 OL Q6(c)",
+  "questionText": "Using notes and a freehand sketch, describe one safety precaution that will reduce the risk to the public while the footpath is being replaced.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 x 13",
+   "answer": 1,
+   "ofParts": 4,
+   "perPart": 13
+  },
+  "totalMarks": 13,
+  "rows": [
+   {
+    "id": "cons-2022-ol-q6-c-r1",
+    "kind": "anyN",
+    "verbatim": "Using notes and a freehand sketch, describe one safety precaution that will reduce the risk to the public while the foot",
+    "marks": 13,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 1,
+     "perOption": 13,
+     "options": [
+      "Erect signage to direct the public away from the work zone",
+      "Ensure guard rails and exclusion zone notices are in place to limit the proximity of the public to the work area",
+      "Ensure building material is stored at a safe distance from the open public zones",
+      "Enclose work area with dust shelter to prevent dust particles being blown into the open public zones"
      ]
     }
    }
@@ -3426,6 +4000,81 @@
       "Additional security to home",
       "Improved insulation of existing home",
       "Increase the resale value of the property"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2022-ol-q1-b",
+  "topicId": "cons-3-4",
+  "conceptId": "keeping-the-cavity-clear-of-mortar",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2022 OL Q1(b)",
+  "questionText": "On your drawing, show the typical design detailing to ensure that the cavity is closed at the door head.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "cons-2022-ol-q1-b-r1",
+    "kind": "point",
+    "verbatim": "Cavity closer",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2022-ol-q6-a",
+  "topicId": "cons-1-8",
+  "conceptId": "safety-signs-on-a-construction-site",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2022 OL Q6(a)",
+  "questionText": "Using a large freehand sketch, show three safety signs highlighting the use of personal protective equipment (PPE) that must be worn by workers while using a jackhammer. For each sign, state how the personal protective equipment protects workers while using the jackhammer.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 x 9",
+   "answer": 3,
+   "ofParts": 3,
+   "perPart": 9
+  },
+  "totalMarks": 27,
+  "rows": [
+   {
+    "id": "cons-2022-ol-q6-a-r1",
+    "kind": "anyN",
+    "verbatim": "Using a large freehand sketch, show three safety signs highlighting the use of personal protective equipment (PPE) that ",
+    "marks": 27,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 3,
+     "perOption": 9,
+     "options": [
+      "Sign 1 and specific reason",
+      "Sign 2 and specific reason",
+      "Sign 3 and specific reason"
      ]
     }
    }
@@ -4097,6 +4746,48 @@
   "notes": ""
  },
  {
+  "id": "cons-2023-hl-q7-b",
+  "topicId": "cons-3-4",
+  "conceptId": "preventing-moisture-at-the-threshold",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2023 HL Q7(b)",
+  "questionText": "On your drawing, show the typical design detailing that will prevent the ingress of moisture at the threshold.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 x 4",
+   "answer": 1,
+   "ofParts": 3,
+   "perPart": 4
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "cons-2023-hl-q7-b-r1",
+    "kind": "anyN",
+    "verbatim": "On your drawing, show the typical design detailing that will prevent the ingress of moisture at the threshold.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Threshold drainage channel",
+      "Sloped threshold cill",
+      "Threshold upstand"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "cons-2023-hl-q8-a",
   "topicId": "cons-5-5",
   "conceptId": "functional-requirements-of-wastewater-treatment",
@@ -4417,6 +5108,181 @@
   "notes": ""
  },
  {
+  "id": "cons-2023-hl-q1-b",
+  "topicId": "cons-6-5",
+  "conceptId": "ventilation-detailing-at-the-eaves",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2023 HL Q1(b)",
+  "questionText": "On your drawing, indicate the typical design detailing to ensure ventilation of the roof structure.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "cons-2023-hl-q1-b-r1",
+    "kind": "point",
+    "verbatim": "Design detailing to ensure ventilation of the roof",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2023-hl-q5-b",
+  "topicId": "cons-6-1",
+  "conceptId": "calculating-heat-loss-through-a-roof",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2023 HL Q5(b)",
+  "questionText": "Using the U-value of the roof obtained at 5(a) above and the following data, calculate the cost of heat lost annually through this roof: • dimensions of flat roof 8.5 metres × 4.5 metres • average internal temperature 18 °C • average external temperature 5 °C • heating period 8 hours daily for 36 weeks per annum • cost of oil €1.25 per litre • calorific value of oil 37350 kJ per litre • 1000 watts 1 kJ per second.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "5 x 3",
+   "answer": 5,
+   "ofParts": 5,
+   "perPart": 3
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "cons-2023-hl-q5-b-r1",
+    "kind": "anyN",
+    "verbatim": "Using the U-value of the roof obtained at 5(a) above and the following data, calculate the cost of heat lost annually th",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 5,
+     "perOption": 3,
+     "options": [
+      "Heat loss formula and calculation",
+      "Heating duration - calculation for one year",
+      "k/Joules - calculation for one year",
+      "Litres of oil - calculation for one year",
+      "Annual cost – calculation of heat loss PA"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2023-hl-q9-b",
+  "topicId": "cons-8-2",
+  "conceptId": "reverberation-in-a-living-room",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2023 HL Q9(b)",
+  "questionText": "The sketch shows a living room which measures 4.5 metres long by 4.2 metres wide. The living room has a vertical window and unobstructed views. An average illumination of 500 lux of daylight is required on the work plane. Calculate using the degree of efficiency method, or any other suitable method, the appropriate area of glazing required to provide the stated illumination. Assuming the illumination of a standard overcast sky to be 5000 lux.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "7 x 4",
+   "answer": 7,
+   "ofParts": 7,
+   "perPart": 4
+  },
+  "totalMarks": 28,
+  "rows": [
+   {
+    "id": "cons-2023-hl-q9-b-r1",
+    "kind": "anyN",
+    "verbatim": "The sketch shows a living room which measures 4.5 metres long by 4.2 metres wide. The living room has a vertical window ",
+    "marks": 28,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 7,
+     "perOption": 4,
+     "options": [
+      "Formula",
+      "Correct entry into formula",
+      "Floor area",
+      "Using formula Li = Lo × WF × E",
+      "Solve for w (window area) line 1",
+      "Solve for w (window area) line 2",
+      "Window area"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2023-ol-q1-b",
+  "topicId": "cons-3-3",
+  "conceptId": "connecting-the-inner-and-outer-leaves",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2023 OL Q1(b)",
+  "questionText": "On your drawing, show the typical design detailing to connect the inner and outer leaves of the external wall.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 x 3",
+   "answer": 1,
+   "ofParts": 13,
+   "perPart": 3
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "cons-2023-ol-q1-b-r1",
+    "kind": "anyN",
+    "verbatim": "Specification – typical detail",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Specification – typical detail",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "19 mm external render",
+      "Concrete block outer leaf 100 mm",
+      "Full fill insulated cavity 200 mm",
+      "Wall tie",
+      "Concrete block inner leaf 100 mm",
+      "15 mm internal plaster",
+      "Airtight tape",
+      "Joist hanger",
+      "225 × 50 mm Joist",
+      "Plasterboard ceiling",
+      "20 mm plywood decking",
+      "T & G hardwood flooring",
+      "Skirting board N.B. Any alternative detailing which complies with current Building Regulations is acceptable"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "cons-2023-ol-q2-a",
   "topicId": "cons-6-3",
   "conceptId": "why-energy-upgrade-grants-exist",
@@ -4454,6 +5320,50 @@
       "To encourage owners to upgrade existing houses instead of building new houses",
       "To make older houses energy efficient, sustainable, and economical to heat",
       "To encourage greener living for the inhabitants"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2023-ol-q2-c",
+  "topicId": "cons-6-3",
+  "conceptId": "other-energy-upgrades-for-an-old-house",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2023 OL Q2(c)",
+  "questionText": "On a separate sketch show, using notes and freehand sketches, one other possible energy upgrade the homeowner could carry out to their house.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 x 14",
+   "answer": 1,
+   "ofParts": 5,
+   "perPart": 14
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "cons-2023-ol-q2-c-r1",
+    "kind": "anyN",
+    "verbatim": "On a separate sketch show, using notes and freehand sketches, one other possible energy upgrade the homeowner could carr",
+    "marks": 14,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 1,
+     "perOption": 14,
+     "options": [
+      "Increase insulation at roof level",
+      "Install solar panels to supplement electricity from the grid",
+      "Replace the heating system to a more energy efficient method",
+      "Replace open fireplace with a wood burning stove",
+      "Upgrade to high performance windows Any alternative detailing which complies with current Building Regulations is acceptable"
      ]
     }
    }
@@ -4872,6 +5782,130 @@
   "notes": ""
  },
  {
+  "id": "cons-2023-ol-q1-a",
+  "topicId": "cons-3-2",
+  "conceptId": "vertical-section-external-wall-and-floor",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2023 OL Q1(a)",
+  "questionText": "To a scale of 1:5, draw a vertical section through the external wall and first floor. On your drawing show the typical construction details from a level 400 mm below the plasterboard ceiling to a level 400 mm above the hardwood floor. Show an internal floor width of 900 mm. Include four typical dimensions.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "7 x 5",
+   "answer": 7,
+   "ofParts": 11,
+   "perPart": 5
+  },
+  "totalMarks": 35,
+  "rows": [
+   {
+    "id": "cons-2023-ol-q1-a-r1",
+    "kind": "anyN",
+    "verbatim": "To a scale of 1:5, draw a vertical section through the external wall and first floor. On your drawing show the typical c",
+    "marks": 35,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 7,
+     "perOption": 5,
+     "options": [
+      "Concrete block outer leaf with internal plaster",
+      "Full fill cavity with wall tie",
+      "Concrete block inner leaf with render",
+      "Joist hanger",
+      "Ceiling joist",
+      "Airtight tape",
+      "Plasterboard",
+      "Plywood decking",
+      "Tongue & groove flooring",
+      "Skirting board",
+      "Any 4 typical dimensions"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2023-ol-q5-b",
+  "topicId": "cons-3-4",
+  "conceptId": "keeping-the-cavity-clear-of-mortar",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2023 OL Q5(b)",
+  "questionText": "On your drawing show the typical design detailing to ensure that the cavity is closed at wallplate level.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "cons-2023-ol-q5-b-r1",
+    "kind": "point",
+    "verbatim": "Cavity closer",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2023-ol-q9-b",
+  "topicId": "cons-1-1",
+  "conceptId": "modifying-a-front-entrance",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2023 OL Q9(b)",
+  "questionText": "Using notes and freehand sketches, show two modifications to the front entrance area that would allow access to the house for a person with limited mobility.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 13",
+   "answer": 2,
+   "ofParts": 2,
+   "perPart": 13
+  },
+  "totalMarks": 26,
+  "rows": [
+   {
+    "id": "cons-2023-ol-q9-b-r1",
+    "kind": "anyN",
+    "verbatim": "Using notes and freehand sketches, show two modifications to the front entrance area that would allow access to the hous",
+    "marks": 26,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 2,
+     "perOption": 13,
+     "options": [
+      "Modification 1 to entrance notes + sketch",
+      "Modification 2 to entrance notes + sketch"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "cons-2024-hl-q1-a",
   "topicId": "cons-3-2",
   "conceptId": "vertical-section-entrance-porch",
@@ -4954,6 +5988,48 @@
       "Rafter support",
       "Stepped DPC",
       "Lead flashing (under and apron)"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2024-hl-q2-a",
+  "topicId": "cons-1-8",
+  "conceptId": "best-practice-guidelines-on-site",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2024 HL Q2(a)",
+  "questionText": "Discuss in detail, using notes and freehand sketches, two best practice guidelines for each of the following areas when designing a house for lifetime use: • kitchen • bedroom.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 12",
+   "answer": 2,
+   "ofParts": 3,
+   "perPart": 12
+  },
+  "totalMarks": 24,
+  "rows": [
+   {
+    "id": "cons-2024-hl-q2-a-r1",
+    "kind": "anyN",
+    "verbatim": "Discuss in detail, using notes and freehand sketches, two best practice guidelines for each of the following areas when ",
+    "marks": 24,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 2,
+     "perOption": 12,
+     "options": [
+      "Kitchen",
+      "“waterfall lip”",
+      "Bedroom"
      ]
     }
    }
@@ -5420,6 +6496,47 @@
   "notes": ""
  },
  {
+  "id": "cons-2024-hl-q7-b",
+  "topicId": "cons-6-2",
+  "conceptId": "airtightness-at-the-first-floor-junction",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2024 HL Q7(b)",
+  "questionText": "On your drawing, indicate the typical design detailing to ensure airtightness at the junction of the first floor joist and timber frame inner leaf.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 x 4",
+   "answer": 1,
+   "ofParts": 2,
+   "perPart": 4
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "cons-2024-hl-q7-b-r1",
+    "kind": "anyN",
+    "verbatim": "On your drawing, indicate the typical design detailing to ensure airtightness at the junction of the first floor joist a",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Airtightness barrier around joists",
+      "Junctions and corners sealed with airtightness tape"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "cons-2024-hl-q8-b",
   "topicId": "cons-5-2",
   "conceptId": "renewable-energy-for-hot-water",
@@ -5528,6 +6645,164 @@
       "Building fabric",
       "Discussion of the above statement– such as",
       "Abiotic depletion of materials and components"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2024-hl-q1-b",
+  "topicId": "cons-6-5",
+  "conceptId": "ventilation-detailing-in-a-roof",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2024 HL Q1(b)",
+  "questionText": "On your drawing, show the typical design detailing to ensure adequate ventilation of the roof structure.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "cons-2024-hl-q1-b-r1",
+    "kind": "point",
+    "verbatim": "Design detailing identified to ensure ventilation of the roof",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2024-hl-q6-c",
+  "topicId": "cons-6-3",
+  "conceptId": "advantages-of-energy-efficient-homes",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2024 HL Q6(c)",
+  "questionText": "Discuss two advantages of designing energy efficient new homes.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 5",
+   "answer": 2,
+   "ofParts": 2,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2024-hl-q6-c-r1",
+    "kind": "anyN",
+    "verbatim": "Discuss two advantages of designing energy efficient new homes.",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Advantage 1 (2 for point, 3 for discussion)",
+      "Advantage 2 (2 for point, 3 for discussion)"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2024-hl-q8-c",
+  "topicId": "cons-5-3",
+  "conceptId": "underfloor-heating",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2024 HL Q8(c)",
+  "questionText": "Underfloor heating is often installed in dwellings to provide space heating. Discuss two advantages and two disadvantages of incorporating an underfloor heating system into a dwelling house.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 x 4",
+   "answer": 4,
+   "ofParts": 4,
+   "perPart": 4
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "cons-2024-hl-q8-c-r1",
+    "kind": "anyN",
+    "verbatim": "Underfloor heating is often installed in dwellings to provide space heating. Discuss two advantages and two disadvantage",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 4,
+     "perOption": 4,
+     "options": [
+      "Advantage 1 (1 for point, 3 for discussion)",
+      "Advantage 2 (1 for point, 3 for discussion)",
+      "Disadvantage 1 (1 for point, 3 for discussion)",
+      "Disadvantage 2 (1 for point, 3 for discussion)"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2024-hl-q10-c",
+  "topicId": "cons-1-4",
+  "conceptId": "using-qualified-skilled-labour",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2024 HL Q10(c)",
+  "questionText": "Discuss two advantages of using qualified skilled labour when retrofitting a house to meet EnerPHit Passive House standards. OR 10. “Buildings have an impact on the environment at every stage of their lifecycle. Materials have to be quarried, mined or harvested, transported to factories and manufactured. The final products have to be transported to site, lifted into place and fixed in position. The buildings have to be operated, heated and cooled. Over a 60 year life cycle, components fail, roof finishes fail and need replacement, finishes spoil and need repainting and replacement. Eventually the building ceases to provide its function and needs to be deconstructed and all its components disposed by landfill, incineration, recycling or direct reuse.” Adapted from: Towards a circular economy in construction. Published by: Irish Green Building Council.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 6",
+   "answer": 2,
+   "ofParts": 2,
+   "perPart": 6
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "cons-2024-hl-q10-c-r1",
+    "kind": "anyN",
+    "verbatim": "Discuss two advantages of using qualified skilled labour when retrofitting a house to meet EnerPHit Passive House standa",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Advantage 1 (2 for point, 4 for discussion)",
+      "Advantage 2 (2 for point, 4 for discussion)"
      ]
     }
    }
@@ -6030,6 +7305,133 @@
       "Creates outdoor living space",
       "Encourages the use of the outdoors",
       "Increases the resale value of the property"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2024-ol-q1-a",
+  "topicId": "cons-3-2",
+  "conceptId": "vertical-section-external-wall",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2024 OL Q1(a)",
+  "questionText": "To a scale of 1:5, draw a vertical section through the external wall of the house and through the eaves of the trussed roof. On your drawing, show the typical construction details from a level 400 mm below the wallplate, through the wall and eaves of the roof. Include the first three courses of slate at eaves. Include three typical dimensions on your drawing.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "7 x 5",
+   "answer": 7,
+   "ofParts": 13,
+   "perPart": 5
+  },
+  "totalMarks": 35,
+  "rows": [
+   {
+    "id": "cons-2024-ol-q1-a-r1",
+    "kind": "anyN",
+    "verbatim": "To a scale of 1:5, draw a vertical section through the external wall of the house and through the eaves of the trussed r",
+    "marks": 35,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 7,
+     "perOption": 5,
+     "options": [
+      "Concrete block outer leaf with external render",
+      "Full fill cavity with wall tie",
+      "Concrete block inner leaf with internal plaster",
+      "Cavity closer",
+      "Wallplate 100 mm x 75 mm",
+      "Prefabricated roof truss",
+      "Insulation and airtight membrane",
+      "Plasterboard with skim coat",
+      "Fascia, soffit & gutter",
+      "Ventilation",
+      "Breather membrane",
+      "Slates and battens",
+      "Any 3 typical dimensions"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2024-ol-q5-b",
+  "topicId": "cons-3-6",
+  "conceptId": "preventing-moisture-at-the-window-cill",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2024 OL Q5(b)",
+  "questionText": "On your drawing show how to prevent moisture penetration at the window cill.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "cons-2024-ol-q5-b-r1",
+    "kind": "point",
+    "verbatim": "DPC and drip",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2024-ol-q6-b",
+  "topicId": "cons-1-8",
+  "conceptId": "personal-protective-equipment",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2024 OL Q6(b)",
+  "questionText": "Using notes and freehand sketches, show three items of personal protective equipment (PPE) which should be worn by workers when working with construction vehicles. Give one specific reason why each item of personal protective equipment must be worn.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 x 8",
+   "answer": 3,
+   "ofParts": 3,
+   "perPart": 8
+  },
+  "totalMarks": 24,
+  "rows": [
+   {
+    "id": "cons-2024-ol-q6-b-r1",
+    "kind": "anyN",
+    "verbatim": "Using notes and freehand sketches, show three items of personal protective equipment (PPE) which should be worn by worke",
+    "marks": 24,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 3,
+     "perOption": 8,
+     "options": [
+      "Item of PPE 1 and specific reason",
+      "Item of PPE 2 and specific reason",
+      "Item of PPE 3 and specific reason"
      ]
     }
    }
@@ -6551,6 +7953,47 @@
   "notes": ""
  },
  {
+  "id": "cons-2025-hl-q7-b",
+  "topicId": "cons-3-10",
+  "conceptId": "rainwater-at-the-chimney-roof-junction",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2025 HL Q7(b)",
+  "questionText": "On your drawing, show the typical design detailing to prevent the penetration of rainwater between the chimney stack and the adjoining roof.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 x 6",
+   "answer": 1,
+   "ofParts": 2,
+   "perPart": 6
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "cons-2025-hl-q7-b-r1",
+    "kind": "anyN",
+    "verbatim": "On your drawing, show the typical design detailing to prevent the penetration of rainwater between the chimney stack and",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Back of chimney",
+      "Front of chimney"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "cons-2025-hl-q8-a",
   "topicId": "cons-6-2",
   "conceptId": "benefits-of-preventing-air-leakage",
@@ -6685,6 +8128,133 @@
   "notes": ""
  },
  {
+  "id": "cons-2025-hl-q1-b",
+  "topicId": "cons-3-4",
+  "conceptId": "preventing-rainwater-penetration",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2025 HL Q1(b)",
+  "questionText": "On your drawing, show the typical design detailing that will prevent the penetration of radon gas into the house.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "cons-2025-hl-q1-b-r1",
+    "kind": "point",
+    "verbatim": "Design detailing identified to prevent the penetration of radon gas",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2025-hl-q5-c",
+  "topicId": "cons-6-1",
+  "conceptId": "upgrading-a-wall-to-passive-house-standard",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2025 HL Q5(c)",
+  "questionText": "It has been decided that the wall at 5(a) above should meet the Passive House standard, by further increasing the thickness of the external insulation.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 x 3",
+   "answer": 4,
+   "ofParts": 4,
+   "perPart": 3
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "cons-2025-hl-q5-c-r1",
+    "kind": "anyN",
+    "verbatim": "It has been decided that the wall at 5(a) above should meet the Passive House standard, by further increasing the thickn",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 4,
+     "perOption": 3,
+     "options": [
+      "Resistance for U-value for 0.11 W/m2 °C (using R=1/U)",
+      "Difference in resistances (required resistance)",
+      "Application of formula R = T/k",
+      "Required thickness of insulation"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2025-ol-q1-b",
+  "topicId": "cons-3-4",
+  "conceptId": "preventing-rainwater-at-the-window-head",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2025 OL Q1(b)",
+  "questionText": "On your drawing, show the typical design detailing that prevents the penetration of rainwater at the window head.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 x 4",
+   "answer": 1,
+   "ofParts": 12,
+   "perPart": 4
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "cons-2025-ol-q1-b-r1",
+    "kind": "anyN",
+    "verbatim": "Specification – typical detail",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Specification – typical detail",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "19 mm external render",
+      "Cavity closer",
+      "Concrete block outer leaf 100 mm",
+      "100 mm × 75 mm concrete lintel",
+      "Full fill insulated cavity 200 mm",
+      "Stepped DPC",
+      "Wall tie",
+      "Thermally broken window frame",
+      "Concrete block inner leaf 100 mm",
+      "Triple glazing",
+      "15 mm internal plaster",
+      "Airtightness tape N.B. Any alternative detailing which complies with current Building Regulations is acceptable"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "cons-2025-ol-q2-a",
   "topicId": "cons-6-2",
   "conceptId": "advantages-of-insulating-a-sloped-ceiling",
@@ -6767,6 +8337,51 @@
       "Dormer window",
       "Ridge roof-light",
       "Sun tunnel"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2025-ol-q3-b",
+  "topicId": "cons-5-3",
+  "conceptId": "advantages-of-a-zoned-heating-system",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2025 OL Q3(b)",
+  "questionText": "Discuss one advantage of installing a zoned heating system so the radiators and hot water can be heated separately.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 x 5",
+   "answer": 1,
+   "ofParts": 6,
+   "perPart": 5
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "cons-2025-ol-q3-b-r1",
+    "kind": "anyN",
+    "verbatim": "Discuss one advantage of installing a zoned heating system so the radiators and hot water can be heated separately.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "It is more energy efficient to only heat the zone you need",
+      "Reduced cost to homeowner",
+      "Avoids unnecessary energy use",
+      "More user control over your heating system",
+      "Only heating the water may lead to less wear and tear on the heating system",
+      "A zoned heating system is a more modern system which may increase the value of the home"
      ]
     }
    }
@@ -7295,6 +8910,132 @@
       "You can get closer to nature by using bird feeders",
       "Space for a garden shed or additional storage",
       "A garden is ideal for a family pet"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2025-ol-q1-a",
+  "topicId": "cons-3-2",
+  "conceptId": "vertical-section-external-wall",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2025 OL Q1(a)",
+  "questionText": "To a scale of 1:5, draw a vertical section through the external wall and top portion of the window. Show the wall, the concrete lintels, and the top fixed frame of the window. On your drawing, show the typical construction details from a level 400 mm below to a level 400 mm above the concrete lintels. Include three typical dimensions on your drawing.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "7 x 5",
+   "answer": 7,
+   "ofParts": 12,
+   "perPart": 5
+  },
+  "totalMarks": 35,
+  "rows": [
+   {
+    "id": "cons-2025-ol-q1-a-r1",
+    "kind": "anyN",
+    "verbatim": "To a scale of 1:5, draw a vertical section through the external wall and top portion of the window. Show the wall, the c",
+    "marks": 35,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 7,
+     "perOption": 5,
+     "options": [
+      "External render",
+      "Concrete block outer leaf",
+      "Full fill insulated cavity with wall tie",
+      "Concrete block inner leaf",
+      "Internal plaster",
+      "Cavity closer",
+      "Stepped DPC",
+      "Concrete lintels",
+      "Thermally broken window frame",
+      "Triple glazing",
+      "Airtightness",
+      "Any 3 typical dimensions"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2025-ol-q5-b",
+  "topicId": "cons-4-4",
+  "conceptId": "a-design-detail-for-a-safe-stairs",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2025 OL Q5(b)",
+  "questionText": "On your drawing, show one design detail which will ensure that the stairs will not creak when in use.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "cons-2025-ol-q5-b-r1",
+    "kind": "point",
+    "verbatim": "Glue blocks",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2025-ol-q6-a",
+  "topicId": "cons-1-8",
+  "conceptId": "safety-signs-on-a-construction-site",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2025 OL Q6(a)",
+  "questionText": "Using a large freehand sketch, show the safety sign for each of the following personal protective equipment (PPE) items:  high-visibility vest  safety boots  ear defenders. Give one specific reason why each item of personal protective equipment must be worn.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 x 8",
+   "answer": 3,
+   "ofParts": 3,
+   "perPart": 8
+  },
+  "totalMarks": 24,
+  "rows": [
+   {
+    "id": "cons-2025-ol-q6-a-r1",
+    "kind": "anyN",
+    "verbatim": "Using a large freehand sketch, show the safety sign for each of the following personal protective equipment (PPE) items:",
+    "marks": 24,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 3,
+     "perOption": 8,
+     "options": [
+      "High-visibility vest sign and specific reason",
+      "Safety boots sign and specific reason",
+      "Ear defenders sign and specific reason"
      ]
     }
    }
