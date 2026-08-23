@@ -115,4 +115,48 @@ A.card(14, 'd', 'i', topic='phys-2-6', concept='parts-of-a-spectrometer',
        notes='The scheme numbers this answer under its own Question 13 while the paper '
              'prints Question 14.')
 
+A.card(1, None, 'i', topic='phys-u2', concept='apparatus-for-the-newtons-second-law-experiment',
+       source='pdf',
+       from_runs=[((1, None, 'i'), 1, slice(0, 1)),
+                  ((1, None, 'i'), 1, slice(2, 4)),
+                  ((1, None, 'i'), 1, slice(5, 8))],
+       marks=[4, 3, 3], notes='The scheme takes a mark off if the diagram carries no labels.')
+
+A.card(4, None, 'i', topic='phys-u2', concept='apparatus-for-the-stretched-string-experiment',
+       source='pdf',
+       from_runs=[((4, None, 'i'), 1, slice(0, 2)),
+                  ((4, None, 'i'), 2, slice(0, 1)),
+                  ((4, None, 'i'), 3, slice(0, 2))],
+       marks=[2, 2, 2],
+       notes='The scheme also credits a newtonmeter, a tuning fork, a metre stick and '
+             'the bridges.')
+
+A.card(7, None, 'iii', topic='phys-1-6', concept='forces-on-a-ball-in-circular-motion',
+       source='pdf', use=[1, 2], marks=[3, 3], first_sentence=True,
+       notes='The scheme takes three marks off for any extra force drawn in — there is '
+             'no outward force on the ball.')
+
+A.card(9, 'a', 'ii', topic='phys-3-3', concept='temperature-resistance-graph-for-a-thermistor',
+       source='pdf',
+       from_runs=[((8, 'a', 'ii'), 1, slice(0, 2)),
+                  ((8, 'a', 'ii'), 2, slice(0, 1))],
+       marks=[3, 3],
+       notes='The scheme numbers this answer under its own Question 8 while the paper '
+             'prints Question 9.')
+
+A.card(11, None, 'iii', topic='phys-3-2', concept='graph-of-capacitance-against-plate-area',
+       source='pdf',
+       from_runs=[((11, None, 'iii'), 1, slice(0, 2)),
+                  ((11, None, 'iii'), 2, slice(0, 2))],
+       marks=[3, 3], checked='The paper prints the part mark in brackets after the question, so the text ends on a number rather than punctuation. The question itself is complete.')
+
+A.card(12, 'b', 'ii', topic='phys-3-6', concept='voltage-time-graphs-for-ac-and-dc',
+       source='pdf',
+       from_runs=[((11, 'b', 'ii'), 1, slice(0, 2)),
+                  ((11, 'b', 'ii'), 2, slice(0, 2)),
+                  ((11, 'b', 'ii'), 3, slice(0, 2))],
+       marks=[3, 3, 3],
+       notes='The scheme numbers this answer under its own Question 11 while the paper '
+             'prints Question 12.')
+
 A.emit()

@@ -118,4 +118,11 @@ A.card(14, 'b', 'ii', topic='phys-3-3', concept='resistance-temperature-graph-fo
 A.card(14, 'd', 'v', topic='phys-3-1', concept='charge-on-a-pear-shaped-conductor',
        source='pdf', from_run=((14, 'd', 'v'), 0, slice(0, 6)), marks=[4], checked='The paper prints the part mark in brackets after the question, so the text ends on a number rather than punctuation. The question itself is complete.')
 
+A.card(4, None, 'vi', topic='phys-u2', concept='graph-of-frequency-against-one-over-length-ol',
+       source='pdf',
+       from_runs=[((4, None, 'vi'), 1, slice(2, 4)),
+                  ((4, None, 'vi'), 1, slice(5, 7)),
+                  ((4, None, 'vi'), 1, slice(8, 12))],
+       marks=[3, 6, 3], notation='3 + 6 × 1 + 3', checked='The paper prints the part mark in brackets after the question, so the text ends on a number rather than punctuation. The question itself is complete.')
+
 A.emit()

@@ -29107,6 +29107,207 @@
   "notes": "The scheme numbers this answer under its own Question 13 while the paper prints Question 14."
  },
  {
+  "id": "phys-2024-hl-q1-i",
+  "topicId": "phys-u2",
+  "conceptId": "apparatus-for-the-newtons-second-law-experiment",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2024 HL Q1(i)",
+  "questionText": "Draw a labelled diagram of how the apparatus was arranged in this experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "trolley",
+    "marks": 4
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "applied force",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "ticker timer/light gates",
+    "marks": 3
+   }
+  ],
+  "stem": "A student carried out a laboratory experiment to investigate the relationship between the acceleration a of a body and the force F applied to it. During the experiment the student recorded values for the force and measured the associated acceleration. The following data were recorded. F (N) 0.2 0.3 0.4 0.5 0.6 0.7 a (m s–2) 0.280 0.422 0.554 0.702 0.837 0.982",
+  "notes": "The scheme takes a mark off if the diagram carries no labels."
+ },
+ {
+  "id": "phys-2024-hl-q4-i",
+  "topicId": "phys-u2",
+  "conceptId": "apparatus-for-the-stretched-string-experiment",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2024 HL Q4(i)",
+  "questionText": "Draw a labelled diagram of how the apparatus was arranged in this experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "stretched string",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "weights",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "signal generator",
+    "marks": 2
+   }
+  ],
+  "stem": "A student investigated how the fundamental frequency f of a stretched string of length 70 cm varied with its tension T. During the experiment, the length of the string was kept constant, and the student varied the tension. The following data were recorded. f (Hz) 256 320 341 426.5 480 512 T (N) 29 44 51 79 100 115",
+  "notes": "The scheme also credits a newtonmeter, a tuning fork, a metre stick and the bridges."
+ },
+ {
+  "id": "phys-2024-hl-q7-iii",
+  "topicId": "phys-1-6",
+  "conceptId": "forces-on-a-ball-in-circular-motion",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2024 HL Q7(iii)",
+  "questionText": "Draw a force diagram to show the forces acting on the ball just before it is released.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "weight down",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "tension towards centre",
+    "marks": 3
+   }
+  ],
+  "stem": "The hammer throw is an athletics event where athletes rotate a metal ball, attached to a wire, in a circle before releasing it. The velocity of the ball as it is released is at an angle of 36° above the horizontal. The ball is released at a height of 1.26 m above the ground and lands 3.79 s later.",
+  "notes": "The scheme takes three marks off for any extra force drawn in — there is no outward force on the ball."
+ },
+ {
+  "id": "phys-2024-hl-q9a-ii",
+  "topicId": "phys-3-3",
+  "conceptId": "temperature-resistance-graph-for-a-thermistor",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2024 HL Q9(a)(ii)",
+  "questionText": "Sketch a graph to show the relationship between temperature and resistance for a thermistor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "axes labelled",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "shape",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme numbers this answer under its own Question 8 while the paper prints Question 9."
+ },
+ {
+  "id": "phys-2024-hl-q11-iii",
+  "topicId": "phys-3-2",
+  "conceptId": "graph-of-capacitance-against-plate-area",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2024 HL Q11(iii)",
+  "questionText": "Sketch a suitable graph to show the relationship between capacitance C and the common area A between the plates of a parallel plate capacitor. (21) A parallel-plate capacitor with metal plates of area 0.0225 m2 are placed 8 mm apart in a vacuum.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "axes labelled",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "correct shape",
+    "marks": 3
+   }
+  ],
+  "stem": "A device that is designed to store energy when it holds a charge is called a capacitor."
+ },
+ {
+  "id": "phys-2024-hl-q12b-ii",
+  "topicId": "phys-3-6",
+  "conceptId": "voltage-time-graphs-for-ac-and-dc",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2024 HL Q12(b)(ii)",
+  "questionText": "Draw a voltage–time graph for an a.c. supply and a d.c. supply.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "labelled axes",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "a.c. shown",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "d.c. shown",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme numbers this answer under its own Question 11 while the paper prints Question 12."
+ },
+ {
   "id": "phys-2024-ol-q11-i",
   "topicId": "phys-3-3",
   "conceptId": "example-of-an-electrical-conductor",
@@ -29695,6 +29896,43 @@
    }
   ],
   "stem": "A student performed an experiment to investigate how charge is distributed on a pear-shaped conductor. This document will not be returned to the State Examinations Commission. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate Examination – Ordinary Level Physics Wednesday, 19 June Morning, 9:30 – 12:30 Leaving Certificate, 2024 Physics – Ordinary Level 16"
+ },
+ {
+  "id": "phys-2024-ol-q4-vi",
+  "topicId": "phys-u2",
+  "conceptId": "graph-of-frequency-against-one-over-length-ol",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2024 OL Q4(vi)",
+  "questionText": "Use the data to plot a graph of 1 l against f. (16)",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 + 6 × 1 + 3"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "labelled axis",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "points plotted",
+    "marks": 6
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "line of best fit",
+    "marks": 3
+   }
+  ],
+  "stem": "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The student set a length of string vibrating and adjusted the length until resonance occurred. The tension of the string was kept constant throughout the experiment. paper rider bridge bridge On the right is a diagram of the apparatus used in this experiment. f (Hz) 256 320 341 427 480 512 l (m) 0.214 0.171 0.160 0.127 0.114 0.107 1 l (m–1) 4.67 5.85"
  },
  {
   "id": "phys-2025-hl-q14c-ii",

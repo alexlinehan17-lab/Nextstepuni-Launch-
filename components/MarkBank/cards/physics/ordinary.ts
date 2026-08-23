@@ -6804,6 +6804,22 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2024-ol-q4-vi", topicId: "phys-u2", conceptId: "graph-of-frequency-against-one-over-length-ol",
+    section: "A", questionRef: "2024 OL Q4(vi)",
+    stem: "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The student set a length of string vibrating and adjusted the length until resonance occurred. The tension of the string was kept constant throughout the experiment. paper rider bridge bridge On the right is a diagram of the apparatus used in this experiment. f (Hz) 256 320 341 427 480 512 l (m) 0.214 0.171 0.160 0.127 0.114 0.107 1 l (m–1) 4.67 5.85",
+    questionText: "Use the data to plot a graph of 1 l against f. (16)",
+    tariffModel: {"kind":"fixed","notation":"3 + 6 × 1 + 3"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "labelled axis", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "points plotted", marks: 6 },
+    { id: "r-3", kind: "point", verbatim: "line of best fit", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2025, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
