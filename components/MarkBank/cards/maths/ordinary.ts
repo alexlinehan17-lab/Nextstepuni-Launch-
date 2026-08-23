@@ -34,16 +34,16 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q2-a", topicId: "maths-4-4", conceptId: "plot-label-argand-diagram",
     section: "B", questionRef: "2021 OL Paper 1 Q2(a)",
-    questionText: "Plot and label z₁, z₂, and z₁ + z₂ on the Argand Diagram",
+    questionText: "Plot and label z1, z2, and z1+ z2 on the Argand Diagram",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-ol-p1-q2-a-r1", kind: "anyN", verbatim: "One correct item Substitutes for z₁ and / or z₂", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["One correct item Substitutes for z₁ and / or z₂","Two correct items, with or without labels","Three correct items"],"perOptionSteps":[3,2,5]} },
+    { id: "maths-2021-ol-p1-q2-a-r1", kind: "anyN", verbatim: "One correct item Substitutes for z₁ and / or z₂", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":4,"perOption":3,"options":["One correct item Substitutes for z₁ and / or z₂","Two correct items, with or without labels","Three correct items Some correct substitution by same number, even if incorrect conjugate","(−3 + 4i)(4−3i)/(4 + 3i)(4−3i)"],"perOptionSteps":[3,2,3,2]} },
     ],
     figure: {
-          "candId": "maths-2021-OL-paper-p009-i1",
-          "src": "/exam-figures/maths/markbank/maths-2021-OL-paper-p009-i1.png",
-          "srcHash": "3bb6d5e15184781a599319044c3c3c17",
-          "alt": "The marking scheme's printed worked solution for 2021 OL Paper 1 Q2(b), typeset as the State Examinations Commission set it. It reads: z1 + z2 = 1 + 7i (diagram below)",
+          "candId": "maths-2021-OL-paper-p009-i0",
+          "src": "/exam-figures/maths/markbank/maths-2021-OL-paper-p009-i0.png",
+          "srcHash": "7671fdb50c6d2de0c2054f66d6a92d74",
+          "alt": "The marking scheme's printed worked solution for 2021 OL Paper 1 Q2, typeset as the State Examinations Commission set it. It reads: (−3 + 4i)(4 −3i) (4 + 3i)(4 −3i) = 0 + 25i 25 i or 0 + i or 25 = 0 + 25 25 i or i",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -76,37 +76,16 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q3-b", topicId: "maths-4-2", conceptId: "equation-has-solutions-value-value-leaving",
     section: "B", questionRef: "2021 OL Paper 1 Q3(b)",
-    questionText: "The equation x² + ax + b = 0, where a, b∈ℤ, has solutions x = 5 and x = −2. Find the value of a and the value of b. a = b = Leaving Certificate, 2021 9",
+    questionText: "The equation x2+ ax+ b= 0, where a, b∈ℤ, has solutions x= 5 and x= −2. Find the value of a and the value of b. a= b= Leaving Certificate, 2021 8",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-ol-p1-q3-b-r1", kind: "anyN", verbatim: "f(5) f(−2) Any relevant equation in a and b (without x) Either factor Mention of Sum and/or Product of Roots mentioned", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["f(5) f(−2) Any relevant equation in a and b (without x) Either factor Mention of Sum and/or Product of Roots mentioned","Both equations in a and b Both factors Sum or Product of roots found","a or b found x²−3x−10 without further relevant work Sum and Product of roots found"],"perOptionSteps":[3,2,5]} },
+    { id: "maths-2021-ol-p1-q3-b-r1", kind: "anyN", verbatim: "f(5) f(−2) Any relevant equation in a and b (without x) Either factor Mention of Sum and/or Product of Roots mentioned", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":4,"perOption":3,"options":["f(5) f(−2) Any relevant equation in a and b (without x) Either factor Mention of Sum and/or Product of Roots mentioned","Both equations in a and b Both factors Sum or Product of roots found","a or b found x²−3x−10 without further relevant work Sum and Product of roots found Correct quadratic formula","Fully correct substitution into formula"],"perOptionSteps":[3,2,3,2]} },
     ],
     figure: {
           "candId": "maths-2021-OL-paper-p011-i1",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-paper-p011-i1.png",
           "srcHash": "6f8c7ed06b3c9f3e95cfd23401c637c5",
           "alt": "The marking scheme's printed worked solution for 2021 OL Paper 1 Q3(c), typeset as the State Examinations Commission set it. It reads: f(5) = 25 + 5a + b = 0 f(−2) = 4 −2a + b = 0 5a + b = − 25 2a−b = 4 7a = −21 a = −3 ⇒b = −10 (x−5)(x + 2) = 0 x²−3x−10 = 0 a = −3 ⇒b = −10",
-          "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: null,
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2021-ol-p1-q3-c", topicId: "maths-4-2", conceptId: "solutions-equation-each-correct-decimal-places",
-    section: "B", questionRef: "2021 OL Paper 1 Q3(c)",
-    questionText: "Find the solutions of the equation 5x²−2x−9 = 0, where x∈ℝ. Give each answer correct to 2 decimal places",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
-    rows: [
-    { id: "maths-2021-ol-p1-q3-c-r1", kind: "anyN", verbatim: "Correct quadratic formula a or b or c explicitly identified Correct answer without work", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Correct quadratic formula a or b or c explicitly identified Correct answer without work","Fully correct substitution into formula"],"perOptionSteps":[3,7]} },
-    ],
-    figure: {
-          "candId": "maths-2021-OL-paper-p011-i2",
-          "src": "/exam-figures/maths/markbank/maths-2021-OL-paper-p011-i2.png",
-          "srcHash": "474cb0a49baae0c717af588c32289f91",
-          "alt": "The marking scheme's printed worked solution for 2021 OL Paper 1 Q3(c), typeset as the State Examinations Commission set it. It reads: 2 ± √(−2)²−4(5)(−9) (2)(5) = 2 ± √184 x = 1∙56 or x = −1∙16",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -142,7 +121,7 @@ export const CARDS: SecCard[] = [
     questionText: "Solve the simultaneous equations: 2x−y = 7 x² + y² = 49",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 5, 10, 15, 20)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
     rows: [
-    { id: "maths-2021-ol-p1-q4-b-r1", kind: "anyN", verbatim: "x or y isolated Quadratic formula written Any correct transposing", marks: 20, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 10, three parts for 15, four parts for 20. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":5,"options":["x or y isolated Quadratic formula written Any correct transposing","x² + (2x−7)² = 49 or equivalent equation in one variable","1 relevant value (root) found from quadratic"],"perOptionSteps":[5,5,10]} },
+    { id: "maths-2021-ol-p1-q4-b-r1", kind: "anyN", verbatim: "x or y isolated Quadratic formula written Any correct transposing", marks: 20, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 10, three parts for 15, four parts for 20. Marked in order: Low Partial Credit; Mid Partial Credit.", openList: true, group: {"claimMax":2,"perOption":5,"options":["x or y isolated Quadratic formula written Any correct transposing","x² + (2x−7)² = 49 or equivalent quadratic"],"perOptionSteps":[5,15]} },
     ],
     figure: {
           "candId": "maths-2021-OL-paper-p012-i1",
@@ -202,7 +181,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q7", topicId: "maths-5-2", conceptId: "what-level-annual-income-does-worker",
     section: "B", questionRef: "2021 OL Paper 1 Q7",
-    questionText: "At what level of annual income does a worker start paying the top rate of USC? (b) How much USC will a worker have paid in total if they pay the maximum amount due at each of the first three rates? (c) John’s annual income is €54 800. Find the amount of USC he will pay. Leaving Certificate, 2021 17",
+    questionText: "At what level of annual income does a worker start paying the top rate of USC? (b) How much USC will a worker have paid in total if they pay the maximum amount due at each of the first three rates? (c) John’s annual income is €54 800. Find the amount of USC he will pay. 16 Leaving Certificate, 2021",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2021-ol-p1-q7-r1", kind: "anyN", verbatim: "60∙06 or 169·44 transferred from above 34316 found Any use of relevant % 20 484 found", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["60∙06 or 169·44 transferred from above 34316 found Any use of relevant % 20 484 found","4∙5% of 34316","Correct formulation of all 3 USC rates"],"perOptionSteps":[3,2,5]} },
@@ -263,9 +242,9 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2021-ol-p1-q8", topicId: "maths-5-2", conceptId: "length-breadth-height-box-shown-diagram",
+    id: "maths-2021-ol-p1-q8", topicId: "maths-3-4", conceptId: "length-breadth-height-box-shown-diagram",
     section: "B", questionRef: "2021 OL Paper 1 Q8",
-    questionText: "The length (l), breadth (b) and height (h) of the box are shown in the diagram above. Write l, b, and h in terms of x. (b) Show that the volume of the box can be written as V(x) = 4x³−40x² + 100x. (c) Explain why a box of height 6 units cannot be made from the sheet of cardboard. h 10 x l b l = b = h = Leaving Certificate, 2021 19",
+    questionText: "The length (l), breadth (b) and height (h) of the box are shown in the diagram above. (a) Write l, b, and h in terms of x. l = b = h = (b) Show that the volume of the box can be written as V(x) = 4x³−40x² + 100x. (c) Explain why a box of height 6 units cannot be made from the sheet of cardboard. 18 Leaving Certificate, 2021",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-ol-p1-q8-r1", kind: "anyN", verbatim: "Width is (10 −2x) therefore if x is 6", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Width is (10 −2x) therefore if x is 6","(greater than 5), then 2x is greater than 10","resulting in a negative width"],"perOptionSteps":[2,3]} },
@@ -286,7 +265,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q8-a", topicId: "maths-4-1", conceptId: "length-breadth-height-box-shown-diagram",
     section: "B", questionRef: "2021 OL Paper 1 Q8(a)",
-    questionText: "The length (l), breadth (b) and height (h) of the box are shown in the diagram above. Write l, b, and h in terms of x",
+    questionText: "The length (l), breadth (b) and height (h) of the box are shown in the diagram above. (a) Write l, b, and h in terms of x",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-ol-p1-q8-a-r1", kind: "anyN", verbatim: "One correct dimension explicitly formulated", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["One correct dimension explicitly formulated","Two correct dimensions given"],"perOptionSteps":[2,3]} },
@@ -328,7 +307,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q9-iii", topicId: "maths-4-1", conceptId: "first-three-patterns-sequence-patterns-containing",
     section: "B", questionRef: "2021 OL Paper 1 Q9(iii)",
-    questionText: "The first three patterns in a sequence of patterns containing dots and crosses are shown below. (i) Draw the fourth pattern in the sequence into the box below. (ii) Find a formula, in n, for the number of dots in pattern n of the sequence (Tₙ). × × × pattern 1 pattern 2 pattern 3 × × × × × × × × × × × Leaving Certificate, 2021 21",
+    questionText: "The first three patterns in a sequence of patterns containing dots and crosses are shown below. × × × × × × × × × × × × × × pattern 1 pattern 2 pattern 3 (i) Draw the fourth pattern in the sequence into the box below. Find a formula, in n, for the number of dots in pattern n of the sequence (Tₙ). (ii) 20 Leaving Certificate, 2021",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-ol-p1-q9-iii-r1", kind: "anyN", verbatim: "Sₙ formula written Sₙ formula with some substitution a and/or d identified List of 4 terms or more (1, 2, 3, 4, …)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Sₙ formula written Sₙ formula with some substitution a and/or d identified List of 4 terms or more (1, 2, 3, 4, …)","Formula fully substituted correctly 20 terms listed with addition indicated (1 + 2 + 3 + 4 + … +20) Note: Accept correct answer without supporting work"],"perOptionSteps":[2,3]} },
@@ -391,10 +370,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q10-a-i", topicId: "maths-3-3", conceptId: "how-long-takes-release-million-cubic",
     section: "B", questionRef: "2021 OL Paper 1 Q10(a)(i)",
-    questionText: "Find how long it takes to release 1 million cubic metres (1 000 000 m³) of water. Note 1 m³ = 1000 litres. Give your answer correct to the nearest minute",
+    questionText: "Find how long it takes to release 1 million cubic metres (1 000 000 m³) of water. (i) Note 1 m³ = 1000 litres. Give your answer correct to the nearest minute",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-ol-p1-q10-a-i-r1", kind: "anyN", verbatim: "10⁹ or equivalent x 250000 where x ≠ 10⁹  Correct answer without supporting work Divides by 1000 Use of 60", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["10⁹ or equivalent x 250000 where x ≠ 10⁹  Correct answer without supporting work Divides by 1000 Use of 60","10⁹  250000 or 4000"],"perOptionSteps":[3,7]} },
+    { id: "maths-2021-ol-p1-q10-a-i-r1", kind: "anyN", verbatim: "10⁹ or equivalent x/250000 where x ≠ 109 Correct answer without supporting work Divides by 1000 Use of 60", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["10⁹ or equivalent x/250000 where x ≠ 109 Correct answer without supporting work Divides by 1000 Use of 60","10⁹  250000 or 4000"],"perOptionSteps":[3,7]} },
     ],
     figure: {
           "candId": "maths-2021-OL-paper-p025-i0",
@@ -433,10 +412,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p1-q10-b-i", topicId: "maths-3-3", conceptId: "john-walks-around-circular-trail-radius",
     section: "B", questionRef: "2021 OL Paper 1 Q10(b)(i)",
-    questionText: "John walks around a circular trail of radius 0·5 km at a steady speed of 6 km/h. How long will it take him to complete 3 full circuits of the trail? Give your answer correct to the nearest minute",
+    questionText: "John walks around a circular trail of radius 0·5 km at a steady speed of 6 km/h. (b) (i) How long will it take him to complete 3 full circuits of the trail? Give your answer correct to the nearest minute",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-ol-p1-q10-b-i-r1", kind: "anyN", verbatim: "D = 2𝜋(0∙5) = 3∙14 km", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":4,"perOption":3,"options":["D = 2𝜋(0∙5) = 3∙14 km","T = 2𝜋(0∙5)3","= 1∙5707 hours or 1∙57","= 94∙2 mins","= 94 mins"],"perOptionSteps":[3,2,3,2]} },
+    { id: "maths-2021-ol-p1-q10-b-i-r1", kind: "anyN", verbatim: "D = 2𝜋(0∙5) = 3∙14 km", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":4,"perOption":3,"options":["D = 2𝜋(0∙5) = 3∙14 km","T = 2𝜋(0∙5)3/6","= 1∙5707 hours or 1∙57","= 94∙2 mins","= 94 mins"],"perOptionSteps":[3,2,3,2]} },
     ],
     figure: {
           "candId": "maths-2021-OL-paper-p025-i2",
@@ -475,10 +454,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q2-b", topicId: "maths-3-4", conceptId: "figure-abcde-shown-diagram-consists-large",
     section: "B", questionRef: "2021 OL Paper 2 Q2(b)",
-    questionText: "The figure ABCDE shown in the diagram consists of a large square ACDE standing on the diagonal [AC ] of a smaller square ABCF. The smaller square has a side length of 2 cm. Find the area and perimeter of the figure ABCDE. Give your answer for the perimeter correct to two decimal places",
+    questionText: "The figure ABCDE shown in the diagram consists of a large (b) D E square ACDE standing on the diagonal [AC ] of a smaller square ABCF. The smaller square has a side length of 2 cm. F Find the area and perimeter of the figure ABCDE. Give your answer for the perimeter correct to two decimal places",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-ol-p2-q2-b-r1", kind: "anyN", verbatim: "Work of merit Fail, Fail, Success", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit; Low Partial Credit; Mid Partial credit; High Partial credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit Fail, Fail, Success","Significant work Correct answer indicated but not calculated (0·66) × (0·66) × (0·34)","Correct answer without supporting work","Work of merit Correct reference to/use of Pythagoras to calculate |AC|","Finds |AC|","Significant work Area or Perimeter correct Expression for Area and Perimeter fully substituted but not calculated"],"perOptionSteps":[3,4,3]} },
+    { id: "maths-2021-ol-p2-q2-b-r1", kind: "anyN", verbatim: "Work of merit Fail, Fail, Success", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit; Low Partial Credit; Mid Partial credit; High Partial credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit Fail, Fail, Success","Significant work Correct answer indicated but not calculated (0·66) × (0·66) × (0·34)","Correct answer without supporting work","to calculate |AC|","Finds |AC|","Significant work Area or Perimeter correct Expression for Area and Perimeter fully substituted but not calculated"],"perOptionSteps":[3,4,3]} },
     ],
     figure: {
           "candId": "maths-2021-OL-paper-p034-i1",
@@ -494,39 +473,18 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2021-ol-p2-q3", topicId: "maths-2-2", conceptId: "line-passes-through-points-write-equation",
-    section: "B", questionRef: "2021 OL Paper 2 Q3",
-    questionText: "A line n passes through the points A(–1, 2) and B(0, –2). Write the equation of n in the form y = mx + c, where m, c ∈ ℤ. (b) The diagram below shows the line l: 3x−4y = 5 and the point P(6, −3). (i) Find the equation of the line k through the point P that is perpendicular to the line l. Write your answer in the form ax + by + c = 0, where a, b, c ∈ℤ. P -2 -1 1 2 3 4 5 6 7 8 -3 -2 -1 1 2 3 4 5 l x y Leaving Certificate, 2021 9",
+    id: "maths-2021-ol-p2-q3-a", topicId: "maths-3-1", conceptId: "line-passes-through-points-write-equation",
+    section: "B", questionRef: "2021 OL Paper 2 Q3(a)",
+    questionText: "A line n passes through the points A(–1, 2) and B(0, –2). Write the equation of n in the form y= mx+ c, where m, c ∈ ℤ",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-ol-p2-q3-r1", kind: "anyN", verbatim: "Work of merit Some correct substitution into equation y = mx + c", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit Some correct substitution into equation y = mx + c","Full substitution into both A & B m or c found","Significant Work m and c found One error and finishes correctly Answer not in required format"],"perOptionSteps":[3,2,5]} },
+    { id: "maths-2021-ol-p2-q3-a-r1", kind: "anyN", verbatim: "Significant Work Eq. of line formula fully substituted One error and finishes correctly Answer not in required format or", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: High Partial Credit; Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":4,"perOption":3,"options":["Significant Work Eq. of line formula fully substituted One error and finishes correctly Answer not in required format or","Work of merit Some correct substitution into equation y = mx + c","Full substitution into both A & B m or c found","Significant Work m and c found One error and finishes correctly Answer not in required format"],"perOptionSteps":[3,2,3,2]} },
     ],
     figure: {
           "candId": "maths-2021-OL-paper-p035-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-paper-p035-i0.png",
           "srcHash": "139f1c48a010da119e3b7f15e4b56e0d",
           "alt": "The marking scheme's printed worked solution for 2021 OL Paper 2 Q3, typeset as the State Examinations Commission set it. It reads: A: 2 = −m + c B: −2 = m(0) + c ⇒c = −2 From A: 2 = −m−2 ⇒m = −4 → y = −4x−2",
-          "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: null,
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2021-ol-p2-q3-a", topicId: "maths-3-1", conceptId: "line-passes-through-points-write-equation",
-    section: "B", questionRef: "2021 OL Paper 2 Q3(a)",
-    questionText: "A line n passes through the points A(–1, 2) and B(0, –2). Write the equation of n in the form y = mx + c, where m, c ∈ ℤ",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
-    rows: [
-    { id: "maths-2021-ol-p2-q3-a-r1", kind: "anyN", verbatim: "Work of merit Slope formula with some substitution", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit Slope formula with some substitution","Significant Work Eq. of line formula fully substituted One error and finishes correctly Answer not in required format or"],"perOptionSteps":[3,7]} },
-    ],
-    figure: {
-          "candId": "maths-2021-OL-paper-p035-i1",
-          "src": "/exam-figures/maths/markbank/maths-2021-OL-paper-p035-i1.png",
-          "srcHash": "5b583afb50e68b4a95396ffdf6921240",
-          "alt": "The marking scheme's printed worked solution for 2021 OL Paper 2 Q3(a), typeset as the State Examinations Commission set it. It reads: slope = −2 −2 0 −(−1) = −4 y−2 = −4[x−(−1)] y = −4x−4 + 2 y = −4x−2 A: 2 = −m + c",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -583,7 +541,7 @@ export const CARDS: SecCard[] = [
     questionText: "The heights of a given population are normally distributed. 95% of the population fall within the height range [147∙9 cm ↔ 178∙7 cm]. Using the empirical rule, find the mean and the standard deviation of the distribution of heights in the population",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2021-ol-p2-q5-a-r1", kind: "anyN", verbatim: "Mean:", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Mean:","178∙7 + 147∙9","= 163∙3","147∙9 + (178∙7 −147∙9",") = 163∙3","Std. Dev.:","4𝜎= 178∙7 −147∙9 ⇒ 𝜎= 7∙7","2𝜎= 178∙7 −163∙3 ⇒ 𝜎= 7∙7","(Scatter Plot below)","Height vs Arm Span","Arm Span (cm)","150 155","Height (cm)","−0∙6"],"perOptionSteps":[2,3]} },
+    { id: "maths-2021-ol-p2-q5-a-r1", kind: "anyN", verbatim: "Mean:", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Mean:","178∙7 + 147∙9/2 = 163∙3","147∙9 + (178∙7/2 −147∙9 ) = 163∙3","Std. Dev.:","4𝜎= 178∙7 −147∙9 ⇒ 𝜎= 7∙7","2𝜎= 178∙7 −163∙3 ⇒ 𝜎= 7∙7","(Scatter Plot below)","Height vs Arm Span","Arm Span (cm)","150 155","Height (cm)","−0∙6"],"perOptionSteps":[2,3]} },
     ],
     figure: {
           "candId": "maths-2021-OL-paper-p040-i0",
@@ -622,7 +580,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Ordinary Level — © State Examinations Commission.",
     id: "maths-2021-ol-p2-q6-a-i", topicId: "maths-2-3", conceptId: "diagram-showing-triangle-abc-construct-perpendicular",
     section: "B", questionRef: "2021 OL Paper 2 Q6(a)(i)",
-    questionText: "On the diagram below showing the triangle ABC , construct the perpendicular bisector of the side [AC]. Show all your construction lines and arcs clearly",
+    questionText: "On the diagram below showing the triangle ABC , construct the perpendicular bisector (a) (i) of the side [AC]. Show all your construction lines and arcs clearly",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2021-ol-p2-q6-a-i-r1", kind: "anyN", verbatim: "Work of merit Pilot diagram drawn for [AC] bisector One correct arc drawn", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit Pilot diagram drawn for [AC] bisector One correct arc drawn","Significant Work Mid-point of [AC] shown but without visible construction or perpendicular line Line perpendicular to [AC] drawn but not through mid-point Misreading (-1) Draws perpendicular bisector of the side [AB] or [BC] Note: Tolerance ± 0·2 cm","Work of merit Pilot diagram drawn","Additional correct bisector drawn other than [AC] Centroid or orthocentre drawn correctly","Significant Work Correct construction of circumcentre but circle not drawn Incircle constructed and drawn correctly Note: Tolerance ± 0·2 cm"],"perOptionSteps":[2,1,2]} },
@@ -709,7 +667,7 @@ export const CARDS: SecCard[] = [
     questionText: "Use the Trapezoidal Rule to estimate the surface area of the lake",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2021-ol-p2-q8-a-i-r1", kind: "anyN", verbatim: "A = 10", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":2,"perOption":2,"options":["A = 10","2 (10 + 0 + 2[200])","= 5(410)","= 2050 m²","A = 10","2 (0 + 0 + 2[110]","+ 10","2 (10 + 0 + 2[90]))","= 1100 + 950","= 2050 m²","V = 2050 × 8 = 16400 m³"],"perOptionSteps":[2,3]} },
+    { id: "maths-2021-ol-p2-q8-a-i-r1", kind: "anyN", verbatim: "(i) A = 10/2 (10 + 0 + 2[200])", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":2,"perOption":2,"options":["(i) A = 10/2 (10 + 0 + 2[200])","= 5(410)","= 2050 m²","A = 10/2 (0 + 0 + 2[110]","+ 10/2 (10 + 0 + 2[90]))","= 1100 + 950","= 2050 m²","V = 2050 × 8 = 16400 m³"],"perOptionSteps":[2,3]} },
     ],
     figure: {
           "candId": "maths-2021-OL-paper-p047-i0",
@@ -769,7 +727,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q3-a", topicId: "maths-3-3", conceptId: "joe-gross-annual-income-500-joe",
     section: "B", questionRef: "2022 OL Paper 1 Q3(a)",
-    questionText: "Joe’s gross annual income is €27 500. Joe only pays tax at the lower rate. Work out Joe’s net annual income",
+    questionText: "Joe’s gross annual income is €27 500. Joe only pays tax at the lower rate. (a) Work out Joe’s net annual income",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-ol-p1-q3-a-r1", kind: "anyN", verbatim: "Some relevant operation, eg, 0∙2, 0∙8 Finds 5500", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Some relevant operation, eg, 0∙2, 0∙8 Finds 5500","Two steps correct (Using €35300 as the gross annual income is treated as work of merit in step 1 rather than a misreading) Finds €22,000"],"perOptionSteps":[3,7]} },
@@ -874,7 +832,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q4-b-ii", topicId: "maths-5-2", conceptId: "diagram-draw-tangent-point-tangent-you",
     section: "B", questionRef: "2022 OL Paper 1 Q4(b)(ii)",
-    questionText: "On the diagram above, draw the tangent to u(x) at the point (4, 2) and use the tangent that you draw to work out an estimate for the value of u′(4)",
+    questionText: "On the diagram above, draw the tangent to u(x) at the point (4, 2) and use the (ii) tangent that you draw to work out an estimate for the value of u′(4)",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-ol-p1-q4-b-ii-r1", kind: "anyN", verbatim: "1 part correct Indicates (4,2) on the diagram Slope formula", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["1 part correct Indicates (4,2) on the diagram Slope formula","1 part correct plus work of merit in the other"],"perOptionSteps":[2,3]} },
@@ -977,9 +935,9 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p1-q7-a-ii", topicId: "maths-3-1", conceptId: "draw-graph-axes-note-point-169",
+    id: "maths-2022-ol-p1-q7-a-ii", topicId: "maths-4-3", conceptId: "draw-graph-axes-note-point-169",
     section: "B", questionRef: "2022 OL Paper 1 Q7(a)(ii)",
-    questionText: "Draw the graph of y = h(x) on the axes below, for 0 ≤ x ≤ 6, x∈ℝ. Note that the point A (6, 169) is on the graph",
+    questionText: "Draw the graph of y= h(x) on the axes below, for 0 ≤x≤6, x∈ℝ. Note that the point A (6, 169) is on the graph",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2022-ol-p1-q7-a-ii-r1", kind: "anyN", verbatim: "1 element correct", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12, four parts for 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["1 element correct","4 elements correct","8 elements correct Full Credit –1 9 elements correct, and an appropriate curve, including A"],"perOptionSteps":[4,4,7]} },
@@ -1000,7 +958,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q7-b", topicId: "maths-5-2", conceptId: "explain-what-ordinates-point-169-represent",
     section: "B", questionRef: "2022 OL Paper 1 Q7(b)",
-    questionText: "Explain what the co-ordinates of the point A (6, 169) represent, in the context of Joseph’s heart-rate",
+    questionText: "Explain what the co-ordinates of the point A (6, 169) represent, in the context of Joseph’s (b) heart-rate",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-ol-p1-q7-b-r1", kind: "anyN", verbatim: "“6 minutes after the start of the session, Joseph’s", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":2,"perOption":2,"options":["“6 minutes after the start of the session, Joseph’s","heart rate is 169 BPM.”"],"perOptionSteps":[2,3]} },
@@ -1063,7 +1021,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q7-e", topicId: "maths-5-2", conceptId: "joseph-has-smart-watch-beeps-every",
     section: "B", questionRef: "2022 OL Paper 1 Q7(e)",
-    questionText: "Joseph has a smart watch that beeps every 15 seconds during the session. It beeps for the first time at exactly 2: 55 p.m., as Joseph starts his session. It beeps for the last time at exactly 3: 23 p.m., as Joseph finishes his session",
+    questionText: "Joseph has a smart watch that beeps every 15 seconds during the session. (e) It beeps for the first time at exactly 2: 55 p.m., as Joseph starts his session. It beeps for the last time at exactly 3: 23 p.m., as Joseph finishes his session",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-ol-p1-q7-e-r1", kind: "anyN", verbatim: "From 2: 55 until 3: 23 is 28 minutes", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":2,"perOption":2,"options":["From 2: 55 until 3: 23 is 28 minutes","(4 × 28) + 1 = 113 [times]"],"perOptionSteps":[2,3]} },
@@ -1103,12 +1061,12 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p1-q8-a-i", topicId: "maths-2-3", conceptId: "work-out-how-many-acid-200",
+    id: "maths-2022-ol-p1-q8-a-i", topicId: "maths-3-1", conceptId: "work-out-how-many-acid-200",
     section: "B", questionRef: "2022 OL Paper 1 Q8(a)(i)",
     questionText: "Work out how many ml of acid are in 200 ml of liquid from Bottle A",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2022-ol-p1-q8-a-i-r1", kind: "anyN", verbatim: "100 × 200 = 24 [ml]", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":1,"perOption":5,"options":["100 × 200 = 24 [ml]"]} },
+    { id: "maths-2022-ol-p1-q8-a-i-r1", kind: "anyN", verbatim: "(a) (i) 12/100 × 200 = 24 [ml]", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":1,"perOption":5,"options":["(a) (i) 12/100 × 200 = 24 [ml]"]} },
     ],
     figure: {
           "candId": "maths-2022-OL-paper-p021-i0",
@@ -1126,7 +1084,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q8-a-ii", topicId: "maths-3-3", conceptId: "jessica-mixes-200-liquid-bottle-300",
     section: "B", questionRef: "2022 OL Paper 1 Q8(a)(ii)",
-    questionText: "Jessica mixes 200 ml of liquid from Bottle A with 300 ml of liquid from Bottle B. Work out the overall concentration of the acid in Jessica’s mixture. Give your answer as a percentage",
+    questionText: "Jessica mixes 200 ml of liquid from Bottle A with 300 ml of liquid from Bottle B. (ii) Work out the overall concentration of the acid in Jessica’s mixture. Give your answer as a percentage",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-ol-p1-q8-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, finds volume of acid from B, or finds total volume of mixture Answer (a)(i) written", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit, for example, finds volume of acid from B, or finds total volume of mixture Answer (a)(i) written","One error, otherwise correct, for example, fails to multiply by 100 Finds 39 and 500"],"perOptionSteps":[3,7]} },
@@ -1166,9 +1124,30 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p1-q8-b-i", topicId: "maths-2-3", conceptId: "write-down-values-cube-these-values",
+    id: "maths-2022-ol-p1-q8-a-iv", topicId: "maths-3-1", conceptId: "when-she-making-another-mixture-jessica",
+    section: "B", questionRef: "2022 OL Paper 1 Q8(a)(iv)",
+    questionText: "(iv) When she is making another mixture, Jessica makes a mistake in measuring. She wants to measure out 250 ml but she measures out 260 ml instead",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p1-q8-a-iv-r1", kind: "anyN", verbatim: "1 correct operation % error formula written Correct answer without supporting work", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["1 correct operation % error formula written Correct answer without supporting work","2 correct operations, for example, 260−250/250 or 260−250/260 × 100 or 104"],"perOptionSteps":[2,3]} },
+    ],
+    figure: {
+          "candId": "maths-2022-OL-paper-p021-i3",
+          "src": "/exam-figures/maths/markbank/maths-2022-OL-paper-p021-i3.png",
+          "srcHash": "b5d5f6f2a65aa1f3446a83f076e23b14",
+          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 1 Q8(a)(iv), typeset as the State Examinations Commission set it. It reads: 260−250 250 × 100 = 4 [%] × 100 =",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-q8-b-i", topicId: "maths-3-1", conceptId: "write-down-values-cube-these-values",
     section: "B", questionRef: "2022 OL Paper 1 Q8(b)(i)",
-    questionText: "Write down the values of C, E, and F for a cube, and show that C−E + F = 2 for these values",
+    questionText: "Write down the values of C, E, and F for a cube, and show that C−E+ F= 2 for these values",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-ol-p1-q8-b-i-r1", kind: "anyN", verbatim: "Work of merit, for example, C or F correct, or at least one value filled into given identity", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, C or F correct, or at least one value filled into given identity","C and F correct C or F correct, and at least 2 values filled into given identity"],"perOptionSteps":[2,3]} },
@@ -1210,7 +1189,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q8-b-iii", topicId: "maths-3-1", conceptId: "iii-surface-third-solid-made-hexagons",
     section: "B", questionRef: "2022 OL Paper 1 Q8(b)(iii)",
-    questionText: "(iii) The surface of a third solid is made up of h hexagons and p pentagons, where h, p∈ℕ. For this solid: 6h + 5p 3 − 6h + 5p 2 + h + p = 2 Use this equation to find the number of pentagons in the surface of this solid (that is, the value of p)",
+    questionText: "(iii) The surface of a third solid is made up of h hexagons and p pentagons, where h, p∈ℕ. For this solid: 6h + 5p/3 − Use this equation to find the number of pentagons in the surface of this solid (that is, the value of p)",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-ol-p1-q8-b-iii-r1", kind: "anyN", verbatim: "Some mention of 6", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Some mention of 6","Correctly multiplies across by 6","Multiplies out the equation correctly"],"perOptionSteps":[3,2,5]} },
@@ -1231,7 +1210,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q9-a-i", topicId: "maths-3-3", conceptId: "graph-write-down-initial-value-brian",
     section: "B", questionRef: "2022 OL Paper 1 Q9(a)(i)",
-    questionText: "Use the graph to write down V(0), the initial value of Brian’s car, and V(1), the value of Brian’s car after 1 year",
+    questionText: "Use the graph to write down V(0), the initial value of Brian’s car, and V(1), the value (a) (i) of Brian’s car after 1 year",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-ol-p1-q9-a-i-r1", kind: "anyN", verbatim: "V(0) = 30 000 V(1) = 24 000", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":1,"perOption":5,"options":["V(0) = 30 000 V(1) = 24 000"]} },
@@ -1250,9 +1229,30 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2022-ol-p1-q9-a-ii", topicId: "maths-3-3", conceptId: "value-car-will-reduce-its-first",
+    section: "B", questionRef: "2022 OL Paper 1 Q9(a)(ii)",
+    questionText: "Show that the value of the car will reduce by 20% in its first year, according to this (ii) model",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-ol-p1-q9-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, finds 6000 or 6000/30 000", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, finds 6000 or 6000/30 000","Finds 30 6000/000 × 100 but fails to finish"],"perOptionSteps":[2,3]} },
+    ],
+    figure: {
+          "candId": "maths-2022-OL-paper-p023-i1",
+          "src": "/exam-figures/maths/markbank/maths-2022-OL-paper-p023-i1.png",
+          "srcHash": "98d7a0746ecfcc8796a5eeef63593d3c",
+          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 1 Q9(a)(ii), typeset as the State Examinations Commission set it. It reads: 30 000−24 000 × 100 30 000 6000 = 30 ⁰⁰⁰ × 100 = 20%",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q9-b-i", topicId: "maths-4-1", conceptId: "based-model-write-formula-value-brian",
     section: "B", questionRef: "2022 OL Paper 1 Q9(b)(i)",
-    questionText: "Based on this model, write a formula for V(t), the value of Brian’s car after t years, in terms of the age of the car (t)",
+    questionText: "Based on this model, write a formula for V(t), the value of Brian’s car after t years, (b) (i) in terms of the age of the car (t)",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-ol-p1-q9-b-i-r1", kind: "anyN", verbatim: "Work of merit, for example, 0∙2 or 30000 × something Correct depreciation formula written", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, 0∙2 or 30000 × something Correct depreciation formula written","2 elements of formula correct (30000, 0∙8, or power of t)"],"perOptionSteps":[2,3]} },
@@ -1273,7 +1273,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q9-b-ii", topicId: "maths-3-3", conceptId: "otherwise-work-out-value-brian-car",
     section: "B", questionRef: "2022 OL Paper 1 Q9(b)(ii)",
-    questionText: "Hence, or otherwise, work out the value of Brian’s car after 4 years, according to this model. Show your working out",
+    questionText: "Hence, or otherwise, work out the value of Brian’s car after 4 years, according to this (ii) model. Show your working out",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-ol-p1-q9-b-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, writes t = 4, or works out 20% of V(1)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit, for example, writes t = 4, or works out 20% of V(1)","Finds V(3) Method 2, one consistent error in calculating V(2), V(3), and V(4)"],"perOptionSteps":[3,7]} },
@@ -1294,7 +1294,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q9-c-ii", topicId: "maths-3-3", conceptId: "otherwise-estimate-age-brian-car-when",
     section: "B", questionRef: "2022 OL Paper 1 Q9(c)(ii)",
-    questionText: "Hence, or otherwise, estimate T, the age of Brian’s car when its value would be €0, according to this new model",
+    questionText: "Hence, or otherwise, estimate T, the age of Brian’s car when its value would be €0, (ii) according to this new model",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-ol-p1-q9-c-ii-r1", kind: "anyN", verbatim: "Straight-line graph through (0, 30 000),", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Straight-line graph through (0, 30 000),","(1, 24 000), and (5, 0).","T = 5 years"],"perOptionSteps":[2,3]} },
@@ -1339,7 +1339,7 @@ export const CARDS: SecCard[] = [
     questionText: "Eva drives her car home from the garage, a distance of 12 km",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2022-ol-p1-q9-e-r1", kind: "anyN", verbatim: "60 = 0∙2 hours or 12 minutes", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":3,"options":["60 = 0∙2 hours or 12 minutes","Usual time:","40 = 0∙3 hours or 18 minutes","Time today:","(0∙3−0∙2)","× 100 = 50%","% increase in time:","40−1) × 100 = 50%"],"perOptionSteps":[3,4,3]} },
+    { id: "maths-2022-ol-p1-q9-e-r1", kind: "anyN", verbatim: "One correct relevant fraction, or 12 or 18", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["One correct relevant fraction, or 12 or 18","Finds both times, ie ∙2 and ∙3, or 12 minutes and 18 minutes Consistent error finding both times, but finishes correctly Finds 1∙5 or equivalent, from 60/40 in 2nd method"],"perOptionSteps":[3,7]} },
     ],
     figure: {
           "candId": "maths-2022-OL-paper-p024-i2",
@@ -1402,7 +1402,7 @@ export const CARDS: SecCard[] = [
     questionText: "(iii) When the ball passed over the halfway line, it was at a height of 3∙2 metres and its height was decreasing",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2022-ol-p1-q10-a-iii-r1", kind: "anyN", verbatim: "−2t² + 5t + 1∙2 = 3∙2", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":4,"perOption":3,"options":["−2t² + 5t + 1∙2 = 3∙2","2t²−5t + 2 = 0","(2t−1)(t−2) = 0","2 or t = 2","Answer: t = 2 [secs]","[as height was decreasing]"],"perOptionSteps":[3,2,3,2]} },
+    { id: "maths-2022-ol-p1-q10-a-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, one step correct? -b formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, one step correct? -b formula","2 steps correct","3 steps correct, based on h = 3 ∙2 Full Credit –1 Finds both values of t, but does not indicate that t = 2 or discount t = 1/2"],"perOptionSteps":[3,2,5]} },
     ],
     figure: {
           "candId": "maths-2022-OL-paper-p025-i2",
@@ -1418,12 +1418,12 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p1-q10-a-iv", topicId: "maths-3-3", conceptId: "dtand-how-long-took-ball-reach",
+    id: "maths-2022-ol-p1-q10-a-iv", topicId: "maths-3-3", conceptId: "how-long-took-ball-reach-its",
     section: "B", questionRef: "2022 OL Paper 1 Q10(a)(iv)",
-    questionText: "(iv) Find dℎ dtand hence find how long it took the ball to reach its greatest height",
+    questionText: "Find dℎ dt and hence find how long it took the ball to reach its greatest height",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2022-ol-p1-q10-a-iv-r1", kind: "anyN", verbatim: "Some correct differentiation dℎ dt = 0", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Some correct differentiation dℎ dt = 0","dℎ dt correct, and sets = 0  dℎ Work of merit in finding dt, finishes correctly"],"perOptionSteps":[3,7]} },
+    { id: "maths-2022-ol-p1-q10-a-iv-r1", kind: "anyN", verbatim: "Some correct differentiation dℎ/dt = 0", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Some correct differentiation dℎ/dt = 0","dℎ/dt correct, and sets = 0 Work of merit in finding dℎ/dt, finishes correctly"],"perOptionSteps":[3,7]} },
     ],
     figure: {
           "candId": "maths-2022-OL-paper-p026-i0",
@@ -1441,7 +1441,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q10-b", topicId: "maths-4-2", conceptId: "later-game-keith-hit-ball-again",
     section: "B", questionRef: "2022 OL Paper 1 Q10(b)",
-    questionText: "Later in the game, Keith hit the ball again. This time, the height of the ball t seconds after it was hit could be modelled by a different quadratic function, y = k(t), where k is in metres",
+    questionText: "Later in the game, Keith hit the ball again. This time, the height of the ball t seconds after it (b) was hit could be modelled by a different quadratic function, y = k(t), where k is in metres",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-ol-p1-q10-b-r1", kind: "anyN", verbatim: "Work of merit, for example, 1 co- ordinate of 1 point correctly written; or 1 point correctly plotted", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, 1 co- ordinate of 1 point correctly written; or 1 point correctly plotted","3 elements correct","4 elements correct, and an appropriate curve 6 elements correct, but no curve or a curve that is not appropriate Full Credit –1 6 elements correct, and an appropriate curve, but not extended to the x-axis"],"perOptionSteps":[3,2,5]} },
@@ -1465,7 +1465,7 @@ export const CARDS: SecCard[] = [
     questionText: "Keith buys a new hurl. It usually costs €33. Keith gets a student discount of 15%. Work out the price Keith pays for the hurl",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2022-ol-p1-q10-c-i-r1", kind: "anyN", verbatim: "(2, 5)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":2,"options":["(2, 5)","Height, k metres","(0, 1)","Time, t seconds","33 × 0∙85 = 28∙05"],"perOptionSteps":[2,1,2]} },
+    { id: "maths-2022-ol-p1-q10-c-i-r1", kind: "anyN", verbatim: "One correct operation, for example ∙15 or ∙85 or 15/100 or 85/100", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["One correct operation, for example ∙15 or ∙85 or 15/100 or 85/100","Finds 15% (4∙95)"],"perOptionSteps":[2,3]} },
     ],
     figure: {
           "candId": "maths-2022-OL-paper-p027-i0",
@@ -1483,7 +1483,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p1-q10-c-ii", topicId: "maths-3-3", conceptId: "keith-also-buys-jersey-costs-including",
     section: "B", questionRef: "2022 OL Paper 1 Q10(c)(ii)",
-    questionText: "Keith also buys a jersey. This costs €49∙50, including VAT at 23%. Work out the VAT on this jersey. Give your answer correct to the nearest cent",
+    questionText: "Keith also buys a jersey. This costs €49∙50, including VAT at 23%. (ii) Work out the VAT on this jersey. Give your answer correct to the nearest cent",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-ol-p1-q10-c-ii-r1", kind: "anyN", verbatim: "Indicates 123", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Indicates 123","Finds 1% or 100% (40∙24) NOTE: Apply F* if fails to round off correctly"],"perOptionSteps":[2,3]} },
@@ -1528,7 +1528,7 @@ export const CARDS: SecCard[] = [
     questionText: "(iii) The line NM has equation x + 4y−13 = 0, where x, y∈ℝ",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2022-ol-p2-q1-b-iii-r1", kind: "anyN", verbatim: "Work of merit e.g. indicates x = 0 Finds a point on the given line other than the intercepts", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit e.g. indicates x = 0 Finds a point on the given line other than the intercepts","Substitutes x = 0 in equation, accompanied by further work of merit Substitutes y = 0 and correctly finds x Full Credit (–1): Answer not given as a pair of co-ordinates"],"perOptionSteps":[3,7]} },
+    { id: "maths-2022-ol-p2-q1-b-iii-r1", kind: "anyN", verbatim: "Work of merit e.g. indicates x = 0 Full Credit (–1): Answer not given as a pair of co-ordinates", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Work of merit e.g. indicates x = 0 Full Credit (–1): Answer not given as a pair of co-ordinates"]} },
     ],
     figure: {
           "candId": "maths-2022-OL-paper-p033-i1",
@@ -1591,7 +1591,7 @@ export const CARDS: SecCard[] = [
     questionText: "(iii) One more number is added to the list.The new median is 10∙5. Find the number that was added to the list",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2022-ol-p2-q3-a-iii-r1", kind: "anyN", verbatim: "Indicates average of two numbers Any use of 11", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Indicates average of two numbers Any use of 11","Works to 21","Correct answer without supporting work"],"perOptionSteps":[2,1,2]} },
+    { id: "maths-2022-ol-p2-q3-a-iii-r1", kind: "anyN", verbatim: "Indicates average of two numbers Any use of 11 Works to 21", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; Full Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Indicates average of two numbers Any use of 11 Works to 21","Correct answer without supporting work"],"perOptionSteps":[2,3]} },
     ],
     figure: {
           "candId": "maths-2022-OL-paper-p036-i2",
@@ -1759,7 +1759,7 @@ export const CARDS: SecCard[] = [
     questionText: "GHK is a right-angled triangle. |∠GHK| = 90°, |GH| = 12 cm, and |GK| = 30 cm",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2022-ol-p2-q5-b-r1", kind: "anyN", verbatim: "Pythagoras Theorem written", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Pythagoras Theorem written","A fully correctly-substituted formula","|HK| = √756 Full Credit (–1):  Correct answer, no unit or incorrect unit  Correct answer, incorrect rounding"],"perOptionSteps":[3,2,5]} },
+    { id: "maths-2022-ol-p2-q5-b-r1", kind: "anyN", verbatim: "Pythagoras Theorem written", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Pythagoras Theorem written","A fully correctly-substituted formula High • |HK| Partial = Credit:/√756 Full Credit (–1):  Correct answer, no unit or incorrect unit  Correct answer, incorrect rounding"],"perOptionSteps":[3,7]} },
     ],
     figure: {
           "candId": "maths-2022-OL-paper-p042-i0",
@@ -1822,7 +1822,7 @@ export const CARDS: SecCard[] = [
     questionText: "(iii) The radius of the circle is 18 cm. Find the length of the arc AD. Give your answer in cm, in terms of 𝜋",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2022-ol-p2-q6-a-iii-r1", kind: "anyN", verbatim: "Minor arc:", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Minor arc:","360 × 2𝜋(18) = 13𝜋 [cm]","Major arc:","(360−130)","× 2𝜋(18) = 23𝜋 [cm]"],"perOptionSteps":[3,4,3]} },
+    { id: "maths-2022-ol-p2-q6-a-iii-r1", kind: "anyN", verbatim: "Work of merit Correct relevant formula written 130/360", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit Correct relevant formula written 130/360","Finds circumference Fully correctly-substituted arc-length formula Answer not in terms of 𝜋 Misreading(-1)  If a different arc is correctly calculated e.g. 50/360 × 2𝜋(18) = 5𝜋"],"perOptionSteps":[3,7]} },
     ],
     figure: {
           "candId": "maths-2022-OL-paper-p044-i0",
@@ -1882,7 +1882,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p2-q8-a-ii", topicId: "maths-3-4", conceptId: "volume-cylinder-work-out-height-cylinder",
     section: "B", questionRef: "2022 OL Paper 2 Q8(a)(ii)",
-    questionText: "The volume of the cylinder is 36𝜋 m³. Work out h, the height of the cylinder",
+    questionText: "The volume of the cylinder is 36𝜋 m3. Work out h, the height of the cylinder",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-ol-p2-q8-a-ii-r1", kind: "anyN", verbatim: "Formula for cylinder written with no substitution Substitutes r = 3 into cylinder  formula Sets cylinder formula = 36𝜋", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Formula for cylinder written with no substitution Substitutes r = 3 into cylinder  formula Sets cylinder formula = 36𝜋","Forms correct equation in h","Correct equation in h and further significant work of merit in solving for h"],"perOptionSteps":[3,2,5]} },
@@ -1903,7 +1903,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p2-q8-b-i", topicId: "maths-3-4", conceptId: "height-cone-before-top-part-removed",
     section: "B", questionRef: "2022 OL Paper 2 Q8(b)(i)",
-    questionText: "The height of the cone before the top part is removed is 47 m. Work out the size of the angle at the base of the cone, marked A in the diagram above. Give your answer correct to the nearest degree",
+    questionText: "The height of the cone before the top part is removed is 47 m. (i) Work out the size of the angle at the base of the cone, marked A in the diagram above. Give your answer correct to the nearest degree",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-ol-p2-q8-b-i-r1", kind: "anyN", verbatim: "Correct trigonometric ratio a² = (7 ∙5)² + (47)²", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Correct trigonometric ratio a² = (7 ∙5)² + (47)²","Fully substituted trigonometric ratio  Incorrect calculator mode but otherwise correct (only once in the paper) Note: Rad = 1. Grad = 90"],"perOptionSteps":[2,3]} },
@@ -1945,7 +1945,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p2-q8-c-i", topicId: "maths-3-4", conceptId: "probability-first-animal-picked-was-cat",
     section: "B", questionRef: "2022 OL Paper 2 Q8(c)(i)",
-    questionText: "Find the probability that the first animal picked was a cat. (ii) Find the probability that all three animals picked were male dogs. Give your answer correct to 3 decimal places",
+    questionText: "Find the probability that the first animal picked was a cat. (ii) Find the probability that all three animals picked were male dogs. Give your answer correct to 3 decimal places. 18",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2022-ol-p2-q8-c-i-r1", kind: "anyN", verbatim: "Correct answer without supporting work", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. Marked in order: Full Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Correct answer without supporting work"]} },
@@ -1966,7 +1966,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p2-q8-c-ii", topicId: "maths-3-4", conceptId: "probability-all-three-animals-picked-were",
     section: "B", questionRef: "2022 OL Paper 2 Q8(c)(ii)",
-    questionText: "Find the probability that all three animals picked were male dogs. Give your answer correct to 3 decimal places",
+    questionText: "Find the probability that all three animals picked were male dogs. Give your answer correct to 3 decimal places. 18",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 5, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-ol-p2-q8-c-ii-r1", kind: "anyN", verbatim: "Correct answer without supporting work", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 10. Marked in order: Full Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Correct answer without supporting work"]} },
@@ -1985,12 +1985,12 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p2-q8-d", topicId: "maths-1-2", conceptId: "female-cats-were-put-separate-pens",
+    id: "maths-2022-ol-p2-q8-d", topicId: "maths-3-4", conceptId: "female-cats-were-put-separate-pens",
     section: "B", questionRef: "2022 OL Paper 2 Q8(d)",
-    questionText: "The 9 female cats were put in 9 separate pens. Work out the number of ways in which this could have been done (that is, the number of different possible arrangements). (e) By the end of this week, 10 of the animals had left the shelter, and no new animals had been taken in. If an animal was picked at random at the end of this week, the probability of",
+    questionText: "The 9 female cats were put in 9 separate pens. Work out the number of ways in which this could have been done (that is, the number of different possible arrangements). The top of the Fastnet lighthouse, F, is 49 m above sea level. The angle of elevation of the top of the lighthouse from a ship S is 1∙2°, as shown in the diagram below (not to scale)",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2022-ol-p2-q8-d-r1", kind: "anyN", verbatim: "Tan formula written Incorrect equation in d based on trig formula, but work of merit in solving equation ∠F = 88 ∙8°", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Tan formula written Incorrect equation in d based on trig formula, but work of merit in solving equation ∠F = 88 ∙8°","Correct equation in d Incorrect equation in d based on trig formula, finishes correctly","Equation with d, as subject Note: Rad = 0 ∙02 Grad = 2 ∙60"],"perOptionSteps":[3,2,5]} },
+    { id: "maths-2022-ol-p2-q8-d-r1", kind: "anyN", verbatim: "Correct equation in d Incorrect equation in d based on trig formula, finishes correctly", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Correct equation in d Incorrect equation in d based on trig formula, finishes correctly","Equation with d, as subject Note: Rad = 0 ∙02 Grad = 2 ∙60"],"perOptionSteps":[3,7]} },
     ],
     figure: {
           "candId": "maths-2022-OL-paper-p050-i2",
@@ -2011,7 +2011,7 @@ export const CARDS: SecCard[] = [
     questionText: "State which of the following statements is most likely to be true, and write down a possible height of Seán that would support your answer. Tick (✓) one box only",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2022-ol-p2-q9-a-r1", kind: "anyN", verbatim: "Answer: 5 times", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Answer: 5 times","5 = 1∙7 m","Possible height:"],"perOptionSteps":[2,3]} },
+    { id: "maths-2022-ol-p2-q9-a-r1", kind: "anyN", verbatim: "Answer: 5 times", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Answer: 5 times","Possible height: 8∙5/5 = 1∙7 m"],"perOptionSteps":[2,3]} },
     ],
     figure: {
           "candId": "maths-2022-OL-paper-p051-i0",
@@ -2029,7 +2029,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p2-q9-b", topicId: "maths-3-4", conceptId: "says-his-shed-has-capacity-over",
     section: "B", questionRef: "2022 OL Paper 2 Q9(b)",
-    questionText: "Seán says that his shed has a capacity of over one million litres, where 1 m³ = 1000 litres. Work out the volume of Seán’s shed, to show that he is correct",
+    questionText: "Seán says that his shed has a capacity of over one million litres, where 1 m³ = 1000 litres. (b) Work out the volume of Seán’s shed, to show that he is correct",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-ol-p2-q9-b-r1", kind: "anyN", verbatim: "Work of merit e.g. Finds area of rectangle or triangle, or step 2 or 3 correct based on own work in step 1", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit e.g. Finds area of rectangle or triangle, or step 2 or 3 correct based on own work in step 1","Step 1 correct Error(s) in step 1, but other two steps correct based on this","Step 1 correct, and one other step correct"],"perOptionSteps":[3,2,5]} },
@@ -2050,10 +2050,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p2-q9-c", topicId: "maths-2-1", conceptId: "theorem-pythagoras-length-distance-marked-diagram",
     section: "B", questionRef: "2022 OL Paper 2 Q9(c)",
-    questionText: "Use the theorem of Pythagoras to find the length of the distance marked d in the diagram below, the slant length of the roof. Give your answer in metres, correct to 1 decimal place",
+    questionText: "Use the theorem of Pythagoras to find the length of the distance marked d in the diagram (c) below, the slant length of the roof. Give your answer in metres, correct to 1 decimal place",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2022-ol-p2-q9-c-r1", kind: "anyN", verbatim: "Work of merit Theorem of Pythagoras written", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit Theorem of Pythagoras written","Fully correctly-substituted Pythagoras Theorem Error(s) in substituting into Pythagoras Theorem, but finishes correctly (must involve taking a square root)","Writes or evaluates d² correctly"],"perOptionSteps":[3,2,5]} },
+    { id: "maths-2022-ol-p2-q9-c-r1", kind: "anyN", verbatim: "Fully correctly-substituted Pythagoras Theorem Error(s) in substituting into Pythagoras Theorem, but finishes correctly (must involve taking a square root)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Fully correctly-substituted Pythagoras Theorem Error(s) in substituting into Pythagoras Theorem, but finishes correctly (must involve taking a square root)","Writes or evaluates d² correctly"],"perOptionSteps":[3,7]} },
     ],
     figure: {
           "candId": "maths-2022-OL-paper-p052-i0",
@@ -2092,10 +2092,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p2-q9-e-ii", topicId: "maths-3-4", conceptId: "acb-angle-roof-makes-point-correct",
     section: "B", questionRef: "2022 OL Paper 2 Q9(e)(ii)",
-    questionText: "Find |∠ ACB| , the angle that the roof makes at the point C. Give your answer correct to the nearest degree. Remember that |BC| = 4∙65 m, correct to 2 decimal places",
+    questionText: "Find |∠ ACB| , the angle that the roof makes at the point C. (ii) Give your answer correct to the nearest degree. Remember that |BC| = 4∙65 m, correct to 2 decimal places",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2022-ol-p2-q9-e-ii-r1", kind: "anyN", verbatim: "Correct relevant formula written", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Correct relevant formula written","Fully correctly-substituted relevant formula Error(s) in substituting Sine Rule or Cosine Rule but continues correctly Note: For Sine Rule: Answer = 19° Radian Answer = −0 ∙69(−1) Gradian Answer = 19 For Cosine Rule: Answer = 19° Radian Answer = 0 ∙33(0) Gradian Answer = 21"],"perOptionSteps":[2,3]} },
+    { id: "maths-2022-ol-p2-q9-e-ii-r1", kind: "anyN", verbatim: "sin C/3 = sin 30°/4 ∙65", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":2,"options":["sin C/3 = sin 30°/4 ∙65","sin C = 3(sin 30°)/4 ∙65","C = sin−1(10/31)","C = 18 ∙819063 … . .","C = 19°","3² = 7² + 4∙65²-2(7)(4∙65) cos(∠ACB)","9 = 49 + 21∙6225-65∙1 cos(∠ACB)","cos(∠ACB) = 61∙6225/65∙1","|∠ACB| = 18∙8119…"],"perOptionSteps":[2,1,2]} },
     ],
     figure: {
           "candId": "maths-2022-OL-paper-p055-i0",
@@ -2137,7 +2137,7 @@ export const CARDS: SecCard[] = [
     questionText: "A random sample of 1500 people took part in the survey. Show that the margin of error for the survey is 2∙6%, correct to 1 decimal place",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2022-ol-p2-q10-b-i-r1", kind: "anyN", verbatim: "M. E. = 1", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":2,"options":["M. E. = 1","M. E. =","√1500","= 0 ∙0258 × 100","= 2 ∙58 %","= 2 ∙6 %"],"perOptionSteps":[2,1,2]} },
+    { id: "maths-2022-ol-p2-q10-b-i-r1", kind: "anyN", verbatim: "1/√n 1/√n written and stops", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["1/√n 1/√n written and stops","Formula substituted correctly but not evaluated i.e. 1/√1500 1/√1500 Answer given as 0.0258","Correct answer with supporting work"],"perOptionSteps":[2,1,2]} },
     ],
     figure: {
           "candId": "maths-2022-OL-paper-p056-i1",
@@ -2179,7 +2179,7 @@ export const CARDS: SecCard[] = [
     questionText: "(iv) According to the 2019 Irish Sport Monitor Report, 65% of the adults in Ireland walked for recreation",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2022-ol-p2-q10-b-iv-r1", kind: "anyN", verbatim: "(iii) 71 −2∙6 ≤ p ≤ 71 + 2∙6", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":4,"perOption":3,"options":["(iii) 71 −2∙6 ≤ p ≤ 71 + 2∙6","68∙4 ≤ p ≤ 73∙6 [C.I.]","[H₀ = 65% ]","[H_A ≠ 65%].","Conclusion:","Reject the Null hypothesis and conclude","that the figure of 65% has changed","in 2022","Reason:","The figure 65% is outside the 95% C.I."],"perOptionSteps":[3,2,3,2]} },
+    { id: "maths-2022-ol-p2-q10-b-iv-r1", kind: "anyN", verbatim: "Work of merit Interval written as [p̂ − 1/√n, p̂ + 1/√n] in part (iii)and/or(iv). Either lower or upper boundary as 68∙4 or 73∙6 in (iii) Conclusion without reason correct in part (iv) Reason without interpretation knowledge shown in part (iv)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit Interval written as [p̂ − 1/√n, p̂ + 1/√n] in part (iii)and/or(iv). Either lower or upper boundary as 68∙4 or 73∙6 in (iii) Conclusion without reason correct in part (iv) Reason without interpretation knowledge shown in part (iv)","Either part (iii) or part (iv) correct Significant work of merit in both parts (Correct substitution in both parts)","Either part correct and significant work in the other part"],"perOptionSteps":[3,2,5]} },
     ],
     figure: {
           "candId": "maths-2022-OL-paper-p057-i0",
@@ -2197,10 +2197,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p2-q10-c", topicId: "maths-1-2", conceptId: "assume-adults-ireland-jog-recreation-three",
     section: "B", questionRef: "2022 OL Paper 2 Q10(c)",
-    questionText: "Assume that 20% of adults in Ireland jog for recreation. Three adults are picked at random. Find the probability that exactly one of these adults jogs for recreation",
+    questionText: "Assume that 20% of adults in Ireland jog for recreation. (c) Three adults are picked at random. Find the probability that exactly one of these adults jogs for recreation",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2022-ol-p2-q10-c-r1", kind: "anyN", verbatim: "Work of merit Works with 80%(0 ∙8) Indicates any one possible arrangement", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit Works with 80%(0 ∙8) Indicates any one possible arrangement","Multiplies 3 relevant numbers"],"perOptionSteps":[2,3]} },
+    { id: "maths-2022-ol-p2-q10-c-r1", kind: "anyN", verbatim: "Multiplies 3 relevant numbers", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: High Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Multiplies 3 relevant numbers"]} },
     ],
     figure: {
           "candId": "maths-2022-OL-paper-p057-i1",
@@ -2218,7 +2218,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p2-q10-d", topicId: "maths-3-3", conceptId: "she-could-pay-individual-classes-per",
     section: "B", questionRef: "2022 OL Paper 2 Q10(d)",
-    questionText: "She could pay for individual classes, at €6 per class. Sinéad estimates that there is: • a 30% chance she will go to no classes in the year, • a 60% chance she will go to 1 class a week, so 52 classes in a year, and • a 10% chance she will go to 2 classes a week, so 104 classes a year",
+    questionText: "She could pay for individual classes, at €6 per class. Sinéad estimates that there is: (d) • a 30% chance she will go to no classes in the year, • a 60% chance she will go to 1 class a week, so 52 classes in a year, and • a 10% chance she will go to 2 classes a week, so 104 classes a year",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2022-ol-p2-q10-d-r1", kind: "anyN", verbatim: "Work of merit One correct term or operation indicated e.g. 0 or 6 × 52", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit One correct term or operation indicated e.g. 0 or 6 × 52","One correct term, (other than 0) 6 × 52 and 6 × 104 0∙6 × a relevant number, and 0∙1 × a relevant number Correct answer without supporting work"],"perOptionSteps":[3,7]} },
@@ -2239,10 +2239,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
     id: "maths-2022-ol-p2-q10-e", topicId: "maths-3-3", conceptId: "there-two-price-plans-gym-silver",
     section: "B", questionRef: "2022 OL Paper 2 Q10(e)",
-    questionText: "There are two price plans for the gym, Silver and Gold, as follows: Silver Gold €420 for the year. Pay €6 for each class. €670 for the year. All classes are free",
+    questionText: "There are two price plans for the gym, Silver and Gold, as follows: Silver Gold €420 for the year. €670 for the year. Pay €6 for each class. All classes are free",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2022-ol-p2-q10-e-r1", kind: "anyN", verbatim: "Gold −Silver = €670 −€420 = €250", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Gold −Silver = €670 −€420 = €250","= 41∙66 classes","So least number = 42 [classes]","420 + 6n > 670","6n > 250","n > 41∙66 …","n = 42 [as n∈ℕ]"],"perOptionSteps":[3,4,3]} },
+    { id: "maths-2022-ol-p2-q10-e-r1", kind: "anyN", verbatim: "One relevant operation e.g. 670 −420 or 670/6 420 + 6n or similar", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["One relevant operation e.g. 670 −420 or 670/6 420 + 6n or similar","670−420/6 420 + 6n > 670 and further work: finds 6n > 250 or mishandles 420 but divides by 6 to find n Full Credit –1 Finds n, but no or incorrect rounding"],"perOptionSteps":[3,7]} },
     ],
     figure: {
           "candId": "maths-2022-OL-paper-p058-i0",
@@ -2258,9 +2258,30 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-q1-c", topicId: "maths-3-3", conceptId: "third-house-was-valued-265-000",
+    section: "B", questionRef: "2023 OL Paper 1 Q1(c)",
+    questionText: "A third house was valued at €265 000",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-ol-p1-q1-c-r1", kind: "anyN", verbatim: "Some correct substitution into F = P(1 + r/100) t", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Some correct substitution into F = P(1 + r/100) t","Fully correct substitution Note: Apply F* for incorrect or no rounding"],"perOptionSteps":[4,6]} },
+    ],
+    figure: {
+          "candId": "maths-2023-OL-paper-p007-i0",
+          "src": "/exam-figures/maths/markbank/maths-2023-OL-paper-p007-i0.png",
+          "srcHash": "6d97fe5bdeae575b87986fe81bdd27d7",
+          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 1 Q1(c), typeset as the State Examinations Commission set it.",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q3-a", topicId: "maths-4-2", conceptId: "solve-equation",
     section: "B", questionRef: "2023 OL Paper 1 Q3(a)",
-    questionText: "Solve the following equation in x∈ℝ : 3(2x + 4)−5 = 3",
+    questionText: "Solve the following equation in x∈ℝ : 3(2x+ 4)−5 = 3",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 6, 10, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
     { id: "maths-2023-ol-p1-q3-a-r1", kind: "anyN", verbatim: "Work of merit for example one correct operation", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 6, two parts for 10, three parts for 15. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Work of merit for example one correct operation","Two steps correct"],"perOptionSteps":[6,9]} },
@@ -2281,7 +2302,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q3-c", topicId: "maths-4-2", conceptId: "algebra-solve-simultaneous-equations-leaving-certificate",
     section: "B", questionRef: "2023 OL Paper 1 Q3(c)",
-    questionText: "Use algebra to solve the following simultaneous equations: x−y + 1 = 0 2x + 4y = 19",
+    questionText: "Use algebra to solve the following simultaneous equations: x−y + 1 = 0 2x + 4y = 19 9",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-ol-p1-q3-c-r1", kind: "anyN", verbatim: "Some work of merit, for example, relevant work in isolating one variable in one equation, or indicates multiplying one equation by a constant", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Some work of merit, for example, relevant work in isolating one variable in one equation, or indicates multiplying one equation by a constant","Two steps correct","Three steps correct"],"perOptionSteps":[4,2,4]} },
@@ -2389,7 +2410,7 @@ export const CARDS: SecCard[] = [
     questionText: "It costs €12 000 to lay 240 metres of railway track. Work out how much would it cost to lay 320 metres of railway track, at the same rate",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p1-q5-a-i-r1", kind: "anyN", verbatim: "12 000", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 7, two parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":2,"perOption":7,"options":["12 000","× 320 = €16 000"],"perOptionSteps":[7,3]} },
+    { id: "maths-2023-ol-p1-q5-a-i-r1", kind: "anyN", verbatim: "(a) (i) 12 000/240 × 320 = €16 000", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 7, two parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":1,"perOption":10,"options":["(a) (i) 12 000/240 × 320 = €16 000"]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p014-i0",
@@ -2407,10 +2428,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q5-a-ii", topicId: "maths-3-3", conceptId: "would-take-people-days-replace-tracks",
     section: "B", questionRef: "2023 OL Paper 1 Q5(a)(ii)",
-    questionText: "It would take 6 people 8 days to replace the tracks on a different part of the railway line. Work out how long it would take 4 people to replace these tracks, each working at the same speed",
+    questionText: "It would take 6 people 8 days to replace the tracks on a different part of the railway (ii) line. Work out how long it would take 4 people to replace these tracks, each working at the same speed",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2023-ol-p1-q5-a-ii-r1", kind: "anyN", verbatim: "6 × 8 = 48", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":2,"perOption":3,"options":["6 × 8 = 48","4 = 12 days"],"perOptionSteps":[3,2]} },
+    { id: "maths-2023-ol-p1-q5-a-ii-r1", kind: "anyN", verbatim: "Finds 48 6 + 8/4 = 14/4 days (or 6 + 8/4 = 3 1/2 days) Note: Accept correct answer without supporting work for full credit", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: High Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Finds 48 6 + 8/4 = 14/4 days (or 6 + 8/4 = 3 1/2 days) Note: Accept correct answer without supporting work for full credit"]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p014-i1",
@@ -2431,7 +2452,7 @@ export const CARDS: SecCard[] = [
     questionText: "Work out the time it takes the train to get from A to B. Give your answer in hours, as a fraction",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p1-q5-b-i-r1", kind: "anyN", verbatim: "180 or 2", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 7, two parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":2,"perOption":7,"options":["180 or 2","3 [of an hour]","Mathematics – Ordinary Level"],"perOptionSteps":[7,3]} },
+    { id: "maths-2023-ol-p1-q5-b-i-r1", kind: "anyN", verbatim: "(b) (i) 120/180 or 2/3 [of an hour]", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 7, two parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":2,"perOption":7,"options":["(b) (i) 120/180 or 2/3 [of an hour]","Mathematics – Ordinary Level"],"perOptionSteps":[7,3]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p014-i2",
@@ -2447,7 +2468,28 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p1-q6-a-i", topicId: "maths-5-2", conceptId: "value",
+    id: "maths-2023-ol-p1-q5-b-ii", topicId: "maths-3-3", conceptId: "way-back-train-travels-average-speed",
+    section: "B", questionRef: "2023 OL Paper 1 Q5(b)(ii)",
+    questionText: "On the way back from B to A, the train travels at an average speed of 220 km/hour. (ii) Work out the average speed of the train for the entire journey, while it is travelling from A to B and back again. Give your answer in km/hour",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p1-q5-b-ii-r1", kind: "anyN", verbatim: "Two parts correct", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Marked in order: Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Two parts correct","Three parts correct"],"perOptionSteps":[2,3]} },
+    ],
+    figure: {
+          "candId": "maths-2023-OL-paper-p015-i0",
+          "src": "/exam-figures/maths/markbank/maths-2023-OL-paper-p015-i0.png",
+          "srcHash": "b9e71a608f6161d709b83614753a47a2",
+          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 1 Q5(b)(ii), typeset as the State Examinations Commission set it.",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-q6-a-i", topicId: "maths-4-1", conceptId: "value",
     section: "B", questionRef: "2023 OL Paper 1 Q6(a)(i)",
     questionText: "Find the value of g(−5)",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -2510,9 +2552,9 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p1-q6-c", topicId: "maths-4-2", conceptId: "solve-equation-each-correct-decimal-places",
+    id: "maths-2023-ol-p1-q6-c", topicId: "maths-4-2", conceptId: "solve-equation-9x2-each-correct-decimal",
     section: "B", questionRef: "2023 OL Paper 1 Q6(c)",
-    questionText: "Solve the following equation in x: 9x² + 6x−5 = 0 Give each answer correct to 2 decimal places",
+    questionText: "Solve the following equation in x: 9x2+ 6x−5 = 0 Give each answer correct to 2 decimal places",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-ol-p1-q6-c-r1", kind: "anyN", verbatim: "Minus b formula written Work of merit, for example identifies one of a, b or c", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Minus b formula written Work of merit, for example identifies one of a, b or c","Two steps correct Formula fully correctly substituted Second value not found Note: Apply F* if incorrect or no rounding, once only"],"perOptionSteps":[4,6]} },
@@ -2536,7 +2578,7 @@ export const CARDS: SecCard[] = [
     questionText: "Find the value of C when S = 15",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p1-q7-a-i-r1", kind: "anyN", verbatim: "1000", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 7, two parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":2,"perOption":7,"options":["1000","15 + 10 = 40"],"perOptionSteps":[7,3]} },
+    { id: "maths-2023-ol-p1-q7-a-i-r1", kind: "anyN", verbatim: "(a) (i) 1000/15 + 10 = 40", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 7, two parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":1,"perOption":10,"options":["(a) (i) 1000/15 + 10 = 40"]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p018-i0",
@@ -2573,12 +2615,33 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2023-ol-p1-q7-a-iii", topicId: "maths-4-1", conceptId: "iii-rearrange-equation-write-terms",
+    section: "B", questionRef: "2023 OL Paper 1 Q7(a)(iii)",
+    questionText: "(iii) Rearrange the equation to write S in terms of C",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-ol-p1-q7-a-iii-r1", kind: "anyN", verbatim: "One term correct when multiplying across by (S + 10) Writes C(S + 10) CS = 1000 −10C Note: S = 1000/C + 10 without work is zero", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["One term correct when multiplying across by (S + 10) Writes C(S + 10) CS = 1000 −10C Note: S = 1000/C + 10 without work is zero"]} },
+    ],
+    figure: {
+          "candId": "maths-2023-OL-paper-p018-i2",
+          "src": "/exam-figures/maths/markbank/maths-2023-OL-paper-p018-i2.png",
+          "srcHash": "262edad95c57bf0f61a9d9e32fc1d61e",
+          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 1 Q7(a)(iii), typeset as the State Examinations Commission set it. It reads: C(S + 10) = 1000 CS + 10C = 1000 CS = 1000 −10C S = 1000 −10C C Or S = 1000 −10 C Mathematics – Ordinary Level",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q7-a-iv", topicId: "maths-5-1", conceptId: "values-100-part-iii-otherwise-range",
     section: "B", questionRef: "2023 OL Paper 1 Q7(a)(iv)",
     questionText: "(iv) The values for C go from 30 to 100. Use your answer from part (a)(iii), or otherwise, to find the range of values of S",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p1-q7-a-iv-r1", kind: "anyN", verbatim: "Carries answer from part (iii) down Some correct substitution into C = 1000 S + 10", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Carries answer from part (iii) down Some correct substitution into C = 1000 S + 10","Both formulas fully correctly substituted One value correct Note: Award F* if both numbers are calculated correctly but no range indicated Note: Accept correct answers, 0 and 23 , without supporting work"],"perOptionSteps":[4,6]} },
+    { id: "maths-2023-ol-p1-q7-a-iv-r1", kind: "anyN", verbatim: "C = 1000/S + 10", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["C = 1000/S + 10","Both formulas fully correctly substituted One value correct Note: Award F* if both numbers are calculated correctly but no range indicated Note: Accept correct answers, 0 and 23 , without supporting work"],"perOptionSteps":[4,6]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p019-i0",
@@ -2617,7 +2680,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q7-b-ii", topicId: "maths-5-2", conceptId: "value-derivative-explain-what-value-means",
     section: "B", questionRef: "2023 OL Paper 1 Q7(b)(ii)",
-    questionText: "Find the value of P′(t), the derivative of t, and explain what the value of P′(t) means in this context",
+    questionText: "Find the value of P′(t), the derivative of t, and explain what the value of P′(t) means (ii) in this context",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-ol-p1-q7-b-ii-r1", kind: "anyN", verbatim: "P′(t) = 0 ∙02", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":2,"perOption":3,"options":["P′(t) = 0 ∙02","This means that the probability that it is raining","in Waterville is increasing at a rate of 2 % every","hour."],"perOptionSteps":[3,2]} },
@@ -2638,7 +2701,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q7-b-iii", topicId: "maths-5-1", conceptId: "certain-time-probability-raining-according-model",
     section: "B", questionRef: "2023 OL Paper 1 Q7(b)(iii)",
-    questionText: "At a certain time, the probability that it is raining, according to this model, is 0∙35. Work out the probability that it is raining exactly 1 hour later, according to this model",
+    questionText: "At a certain time, the probability that it is raining, according to this model, is 0∙35. (iii) Work out the probability that it is raining exactly 1 hour later, according to this model",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-ol-p1-q7-b-iii-r1", kind: "anyN", verbatim: "0 ∙35 + 0 ∙02 = 0 ∙37", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":2,"perOption":3,"options":["0 ∙35 + 0 ∙02 = 0 ∙37","0 ∙3 + 0 ∙02t = 0 ∙35","=> t = 2 ∙5","1 hour later t = 3 ∙5","=> 0 ∙3 + 0 ∙02(3 ∙5) = 0 ∙37","Mathematics – Ordinary Level"],"perOptionSteps":[3,2]} },
@@ -2746,7 +2809,7 @@ export const CARDS: SecCard[] = [
     questionText: "Some materials were imported from England by the gardener for resowing the grass. The cost of the materials was £840. This included an Import Duty of 16∙9%. Work out the cost of the materials before the Import Duty was added. Give your answer correct to the nearest penny (that is, to 2 decimal places)",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p1-q8-e-r1", kind: "anyN", verbatim: "Writes 116 ∙9% or 100 + 16 ∙9 or 1 ∙169", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Writes 116 ∙9% or 100 + 16 ∙9 or 1 ∙169","116∙9 × 100 or  1∙169 Note: Apply F* if incorrect or no rounding"],"perOptionSteps":[4,6]} },
+    { id: "maths-2023-ol-p1-q8-e-r1", kind: "anyN", verbatim: "Writes 116 ∙9% or 100 + 16 ∙9 or 1 ∙169", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Writes 116 ∙9% or 100 + 16 ∙9 or 1 ∙169","116∙9 × 840 100 or 840/1∙169 Note: Apply F* if incorrect or no rounding"],"perOptionSteps":[4,6]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p021-i0",
@@ -2767,7 +2830,7 @@ export const CARDS: SecCard[] = [
     questionText: "The gardener paid the £840 in euro. The exchange rate was €1 = £0∙8547. He also paid a fee of 2∙5% of the £840 as a commission",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p1-q8-f-r1", kind: "anyN", verbatim: "0 ∙8547 × 1 ∙025 = 1007 ∙371007", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":4,"options":["0 ∙8547 × 1 ∙025 = 1007 ∙371007","€1007 ∙37","Mathematics – Ordinary Level"],"perOptionSteps":[4,2,4]} },
+    { id: "maths-2023-ol-p1-q8-f-r1", kind: "anyN", verbatim: "(f) 840/0 ∙8547 × 1 ∙025 = 1007 ∙371007", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":4,"options":["(f) 840/0 ∙8547 × 1 ∙025 = 1007 ∙371007","€1007 ∙37","Mathematics – Ordinary Level"],"perOptionSteps":[4,2,4]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p021-i1",
@@ -2806,10 +2869,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q9-a-ii", topicId: "maths-3-3", conceptId: "work-out-percentage-error-model-value",
     section: "B", questionRef: "2023 OL Paper 1 Q9(a)(ii)",
-    questionText: "Work out the percentage error in the model’s value for day t = 12. Use your answer to part (a)(i) above as the actual value for day t = 12. Give your answer correct to the nearest percent",
+    questionText: "Work out the percentage error in the model’s value for day t = 12. (ii) Use your answer to part (a)(i) above as the actual value for day t = 12. Give your answer correct to the nearest percent",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2023-ol-p1-q9-a-ii-r1", kind: "anyN", verbatim: "1500 × 100 = 33 ∙33 …", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":2,"perOption":3,"options":["1500 × 100 = 33 ∙33 …","= 33%"],"perOptionSteps":[3,2]} },
+    { id: "maths-2023-ol-p1-q9-a-ii-r1", kind: "anyN", verbatim: "(a) (ii) 500/1500 × 100 = 33 ∙33 …", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":2,"perOption":3,"options":["(a) (ii) 500/1500 × 100 = 33 ∙33 …","= 33%"],"perOptionSteps":[3,2]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p022-i1",
@@ -2869,7 +2932,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q10-a-i", topicId: "maths-3-4", conceptId: "volume-cylinder-diameter-height-correct-nearest",
     section: "B", questionRef: "2023 OL Paper 1 Q10(a)(i)",
-    questionText: "Find the volume of a cylinder with a diameter of 18 mm and a height of 5 mm. Give your answer correct to the nearest mm³",
+    questionText: "Find the volume of a cylinder with a diameter of 18 mm and a height of 5 mm. (a) (i) Give your answer correct to the nearest mm³",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-ol-p1-q10-a-i-r1", kind: "anyN", verbatim: "V = 𝜋× 9² × 5 = 1272 ∙345", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":2,"perOption":3,"options":["V = 𝜋× 9² × 5 = 1272 ∙345","(a)(i)","= 1272 [nearest mm³]"],"perOptionSteps":[3,2]} },
@@ -2890,7 +2953,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q10-a-ii", topicId: "maths-3-4", conceptId: "metal-ring-could-made-removing-cylinder",
     section: "B", questionRef: "2023 OL Paper 1 Q10(a)(ii)",
-    questionText: "A metal ring could be made by removing a cylinder of diameter 14 mm and height 5 mm from the cylinder in part (a)(i)",
+    questionText: "A metal ring could be made by removing a cylinder of diameter 14 mm and height (ii) 5 mm from the cylinder in part (a)(i)",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-ol-p1-q10-a-ii-r1", kind: "anyN", verbatim: "Work of merit for example, Answer carried down from part (i) Writes cylinder formula Writes r = 7 or r = 9 or 245 or 245π", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit for example, Answer carried down from part (i) Writes cylinder formula Writes r = 7 or r = 9 or 245 or 245π","𝜋× 9² × 5 −𝜋× 7² × 5 (or similar) Note: Apply F* if incorrect or no rounding or 160π with work"],"perOptionSteps":[3,2]} },
@@ -2914,7 +2977,7 @@ export const CARDS: SecCard[] = [
     questionText: "Pink gold is made up of pure gold, copper, and silver. The ratio of the weight of pure gold to copper to silver is 15 ∶4 ∶1, respectively",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p1-q10-b-ii-r1", kind: "anyN", verbatim: "Work of merit in (i) or (ii)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit in (i) or (ii)","Work of merit in (i) and (ii) One part correct","One part correct and work of merit in the other"],"perOptionSteps":[4,2,4]} },
+    { id: "maths-2023-ol-p1-q10-b-ii-r1", kind: "anyN", verbatim: "Work of merit in (i) and (ii) One part correct", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8, four parts for 10. Marked in order: Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit in (i) and (ii) One part correct","One part correct and work of merit in the other"],"perOptionSteps":[4,6]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p024-i2",
@@ -2974,7 +3037,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p1-q10-c-ii", topicId: "maths-3-3", conceptId: "cost-insuring-particular-necklace-142-per",
     section: "B", questionRef: "2023 OL Paper 1 Q10(c)(ii)",
-    questionText: "The cost of insuring a particular necklace is €142∙80 per year. Work out the value of this necklace",
+    questionText: "The cost of insuring a particular necklace is €142∙80 per year. (ii) Work out the value of this necklace",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-ol-p1-q10-c-ii-r1", kind: "anyN", verbatim: "Work of merit, for example writes €10 or 132 ∙8 or ∙01 or ∙02", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example writes €10 or 132 ∙8 or ∙01 or ∙02","Writes 6640"],"perOptionSteps":[4,6]} },
@@ -2998,7 +3061,7 @@ export const CARDS: SecCard[] = [
     questionText: "(iii) A brooch is valued at €17 500. The cost per year of insuring the brooch is €435",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p1-q10-c-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, writes €10 or €180 or ∙01 or ∙02 7500 written", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, writes €10 or €180 or ∙01 or ∙02 7500 written","Finds €190 (with work)","Finds €245 Note: Apply F* if incorrect or no rounding"],"perOptionSteps":[4,2,4]} },
+    { id: "maths-2023-ol-p1-q10-c-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, writes €10 or €180 or ∙01 or ∙02 7500 written Finds €190 (with work)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, writes €10 or €180 or ∙01 or ∙02 7500 written Finds €190 (with work)","Finds €245 Note: Apply F* if incorrect or no rounding"],"perOptionSteps":[4,6]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p025-i3",
@@ -3014,9 +3077,9 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p2-q1-b", topicId: "maths-2-2", conceptId: "equation-line-through-point-slope",
+    id: "maths-2023-ol-p2-q1-b", topicId: "maths-2-2", conceptId: "equation-line-through-point-slope-form",
     section: "B", questionRef: "2023 OL Paper 2 Q1(b)",
-    questionText: "Find the equation of the line through the point (−2, 7) with a slope of 1 3",
+    questionText: "Find the equation of the line through the point (−2, 7) with a slope of (b) Give your answer in the form ax + by + c = 0, where a, b, c∈ℤ",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-ol-p2-q1-b-r1", kind: "anyN", verbatim: "Correct formula fully substituted One error in substitution but finishes correctly Answer not in required format Full Credit (-1): x−3y + 23", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: High Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Correct formula fully substituted One error in substitution but finishes correctly Answer not in required format Full Credit (-1): x−3y + 23"]} },
@@ -3040,7 +3103,7 @@ export const CARDS: SecCard[] = [
     questionText: "(a) s is the circle x² + y² = 25",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p2-q2-a-r1", kind: "anyN", verbatim: "Work of merit in either (a) or (b) e.g. work on diagram for (a)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Full Credit.", openList: true, group: {"claimMax":4,"perOption":4,"options":["Work of merit in either (a) or (b) e.g. work on diagram for (a)","One part correct","One part correct and work of merit in the other part Full Credit (-1): Incorrect rounding Incorrect or omitted units Leaves answer in terms of 𝜋","Correct answers without supporting work"],"perOptionSteps":[4,2,2,2]} },
+    { id: "maths-2023-ol-p2-q2-a-r1", kind: "anyN", verbatim: "Work e.g. work of merit on diagram in either for (a) or/(a) (b)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Full Credit.", openList: true, group: {"claimMax":4,"perOption":4,"options":["Work e.g. work of merit on diagram in either for (a) or/(a) (b)","One part correct","One part correct and work of merit in the other part Full Credit (-1): Incorrect rounding Incorrect or omitted units Leaves answer in terms of 𝜋","Correct answers without supporting work"],"perOptionSteps":[4,2,2,2]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p039-i0",
@@ -3061,7 +3124,7 @@ export const CARDS: SecCard[] = [
     questionText: "Write down the centre and radius of the circle s",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2023-ol-p2-q2-a-i-r1", kind: "anyN", verbatim: "Work of merit e.g. Some correct terms multiplied", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit e.g. Some correct terms multiplied","All terms listed but not multiplied One error in substitution but finishes correctly","Correct answer without supporting work"],"perOptionSteps":[3,1,1]} },
+    { id: "maths-2023-ol-p2-q2-a-i-r1", kind: "anyN", verbatim: "All terms listed but not multiplied One error in substitution but finishes correctly", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: High Partial Credit; Full Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["All terms listed but not multiplied One error in substitution but finishes correctly","Correct answer without supporting work"],"perOptionSteps":[3,2]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p035-i0",
@@ -3121,10 +3184,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q2-b", topicId: "maths-2-2", conceptId: "points-intersection-between-different-circle-line",
     section: "B", questionRef: "2023 OL Paper 2 Q2(b)",
-    questionText: "(b) Find the points of intersection between a different circle, k, and the line l, where: l : 5x−y−13 = 0 k : x² + y² = 13 Leaving Certificate, 2023 8",
+    questionText: "(b) Find the points of intersection between a different circle, k, and the line l, where: l : 5x−y−13 = 0 x² + y² = 13 k : 7 Leaving Certificate, 2023",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 5, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
-    { id: "maths-2023-ol-p2-q2-b-r1", kind: "anyN", verbatim: "Some work of merit e.g. Work in isolating one variable e.g. One point tested in one equation", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 8, three parts for 12, four parts for 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Some work of merit e.g. Work in isolating one variable e.g. One point tested in one equation","Two steps correct e.g. One point tested in both equations or e.g. Two points tested in one equation","Three steps correct e.g. One point tested in both equations and Other point tested in one equation only"],"perOptionSteps":[5,3,7]} },
+    { id: "maths-2023-ol-p2-q2-b-r1", kind: "anyN", verbatim: "Some work of merit e.g. Work in isolating one variable e.g. One point tested in one equation", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 8, three parts for 12, four parts for 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Some work of merit e.g. Work in isolating one variable e.g. One point tested in one equation","Two steps correct e.g. One point tested in both equations e.g. Two points tested or/in one equation","Three steps correct e.g. One point tested in both equations Other point tested in and/one equation only"],"perOptionSteps":[5,3,7]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p034-i0",
@@ -3142,7 +3205,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q7-a-i", topicId: "maths-2-1", conceptId: "gradient-road-when-135-correct-nearest",
     section: "B", questionRef: "2023 OL Paper 2 Q7(a)(i)",
-    questionText: "Find the gradient of the road [AB] when |BC| = 24 m and |AC| = 135 m. Give your answer correct to the nearest percent",
+    questionText: "Find the gradient of the road [AB] when |BC| = 24 m and |AC| = 135 m. (i) Give your answer correct to the nearest percent",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2023-ol-p2-q7-a-i-r1", kind: "anyN", verbatim: "Work of merit e.g. formula with some substitution", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit .", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit e.g. formula with some substitution","Correct formula fully substituted Full Credit (-1): Incorrect rounding","Correct answer without supporting work"],"perOptionSteps":[4,2,4]} },
@@ -3163,10 +3226,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q7-a-ii", topicId: "maths-2-1", conceptId: "when-gradient-road-correct-nearest-metre",
     section: "B", questionRef: "2023 OL Paper 2 Q7(a)(ii)",
-    questionText: "Find |AC| when |BC| = 16 m and the gradient of the road [AB] is 12%. Give your answer correct to the nearest metre",
+    questionText: "Find |AC| when |BC| = 16 m and the gradient of the road [AB] is 12%. (ii) Give your answer correct to the nearest metre",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p2-q7-a-ii-r1", kind: "anyN", verbatim: "Work of merit e.g. Gradient formula with some substitution", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit .", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit e.g. Gradient formula with some substitution","Correct formula fully substituted |AC| isolated correctly One error in substitution and finishes correctly Full Credit (-1): Incorrect rounding","Correct answer without supporting work"],"perOptionSteps":[4,2,4]} },
+    { id: "maths-2023-ol-p2-q7-a-ii-r1", kind: "anyN", verbatim: "Work of merit e.g. Gradient formula with some substitution Correct formula fully substituted |AC| isolated correctly One error in substitution and finishes correctly Full Credit (-1): Incorrect rounding", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; Full Credit .", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit e.g. Gradient formula with some substitution Correct formula fully substituted |AC| isolated correctly One error in substitution and finishes correctly Full Credit (-1): Incorrect rounding","Correct answer without supporting work"],"perOptionSteps":[4,6]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p043-i1",
@@ -3208,7 +3271,7 @@ export const CARDS: SecCard[] = [
     questionText: "(iv) Find the size of the angle ∠BAC when the gradient of the road [AB] is 9%. Give your answer correct to the nearest degree",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p2-q7-a-iv-r1", kind: "anyN", verbatim: "A = Tan^(−1)( 100) Correct answer without supporting work Full Credit (-1): Incorrect rounding Note: Incorrect Calculator Mode (Apply once in paper) Rad: = 0 ∙08975 Grad = 5 ∙714", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: High Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["A = Tan^(−1)( 100) Correct answer without supporting work Full Credit (-1): Incorrect rounding Note: Incorrect Calculator Mode (Apply once in paper) Rad: = 0 ∙08975 Grad = 5 ∙714"]} },
+    { id: "maths-2023-ol-p2-q7-a-iv-r1", kind: "anyN", verbatim: "Work of merit A = Tan−1( 9/100) Correct answer without supporting work Full Credit (-1): Incorrect rounding Note: Incorrect Calculator Mode (Apply once in paper) Rad: = 0 ∙08975 Grad = 5 ∙714", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Work of merit A = Tan−1( 9/100) Correct answer without supporting work Full Credit (-1): Incorrect rounding Note: Incorrect Calculator Mode (Apply once in paper) Rad: = 0 ∙08975 Grad = 5 ∙714"]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p044-i1",
@@ -3226,10 +3289,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q7-b", topicId: "maths-2-1", conceptId: "olga-wants-measure-distance-between-two",
     section: "B", questionRef: "2023 OL Paper 2 Q7(b)",
-    questionText: "Olga wants to measure the distance between two points, R and O. She marks a point P on the ground, so that the distance from R to P is 20 m. She measures the angles ∠OPR and ∠ORP. All of these are shown in the diagram below (not to scale)",
+    questionText: "Olga wants to measure the distance between two points, R and O. (b) She marks a point P on the ground, so that the distance from R to P is 20 m. She measures the angles ∠OPR and ∠ORP. All of these are shown in the diagram below (not to scale)",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2023-ol-p2-q7-b-r1", kind: "anyN", verbatim: "Work of merit e.g. Sine Rule written Identifies 5^o", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit e.g. Sine Rule written Identifies 5^o","Correct formula fully substituted Full Credit (-1): Incorrect rounding Rad: = 17 ∙14 Grad: = 249 ∙61"],"perOptionSteps":[3,2]} },
+    { id: "maths-2023-ol-p2-q7-b-r1", kind: "anyN", verbatim: "e.g. Sine Rule written", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["e.g. Sine Rule written","Correct formula fully substituted Full Credit (-1): Incorrect rounding Rad: = 17 ∙14 Grad: = 249 ∙61"],"perOptionSteps":[3,2]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p045-i0",
@@ -3292,7 +3355,7 @@ export const CARDS: SecCard[] = [
     questionText: "The pool is filled with water to a height of 0∙6 m. The 3 pool seats are put into the pool, so that each seat is fully covered in water",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p2-q8-b-ii-r1", kind: "anyN", verbatim: "Work of merit e.g. Writes 0 ∙375 Identifies r", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit e.g. Writes 0 ∙375 Identifies r","Correct formula fully substituted Full Credit (-1): Incorrect rounding"],"perOptionSteps":[4,6]} },
+    { id: "maths-2023-ol-p2-q8-b-ii-r1", kind: "anyN", verbatim: "Work of merit e.g. Writes 0 ∙375 Identifies r Correct formula fully substituted Full Credit (-1): Incorrect rounding", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Work of merit e.g. Writes 0 ∙375 Identifies r Correct formula fully substituted Full Credit (-1): Incorrect rounding"]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p046-i2",
@@ -3310,7 +3373,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q8-c-i", topicId: "maths-3-4", conceptId: "slant-height-cone-marked-diagram-correct",
     section: "B", questionRef: "2023 OL Paper 2 Q8(c)(i)",
-    questionText: "Show that the slant height of the cone, marked l in the diagram above, is 1∙53 m, correct to 2 decimal places",
+    questionText: "Show that the slant height of the cone, marked l in the diagram above, is 1∙53 m, (i) correct to 2 decimal places",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-ol-p2-q8-c-i-r1", kind: "anyN", verbatim: "Work of merit e.g. Identifies right angled triangle in diagram or correct relevant formula", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit e.g. Identifies right angled triangle in diagram or correct relevant formula","Correct formula fully substituted One error in substitution and finishes correctly Full Credit (-1): Incorrect rounding"],"perOptionSteps":[3,2]} },
@@ -3355,7 +3418,7 @@ export const CARDS: SecCard[] = [
     questionText: "(iii) The diagram below shows the net of the conical cover (not to scale). It is a sector of a circle of radius x",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p2-q8-c-iii-r1", kind: "anyN", verbatim: "Work of merit e.g. Identifies r Use of Ans (c)(i) or (c)(ii)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit e.g. Identifies r Use of Ans (c)(i) or (c)(ii)","Correct x value","Correct formula fully substituted One error in substitution but finishes correctly Full Credit (-1): Incorrect rounding"],"perOptionSteps":[4,2,4]} },
+    { id: "maths-2023-ol-p2-q8-c-iii-r1", kind: "anyN", verbatim: "Work of merit e.g. Identifies r Use of Ans (c)(i) or (c)(ii)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit e.g. Identifies r Use of Ans (c)(i) or (c)(ii)","Correct formula fully substituted One error in substitution but finishes correctly Full Credit (-1): Incorrect rounding"],"perOptionSteps":[4,6]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p048-i0",
@@ -3373,7 +3436,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q9-a-ii", topicId: "maths-1-6", conceptId: "estimate-median-time-spent-reading-these",
     section: "B", questionRef: "2023 OL Paper 2 Q9(a)(ii)",
-    questionText: "Estimate the median time spent reading by these 200 students, as accurately as possible. Justify your answer",
+    questionText: "Estimate the median time spent reading by these 200 students, as accurately as (ii) possible. Justify your answer",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
     { id: "maths-2023-ol-p2-q9-a-ii-r1", kind: "anyN", verbatim: "Work of merit e.g. Gives answer as 90", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit e.g. Gives answer as 90","[60 −90] interval indicated Zero Credit Mean = 83 ∙7"],"perOptionSteps":[3,2]} },
@@ -3413,7 +3476,7 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p2-q9-a-iv", topicId: "maths-5-2", conceptId: "draw-graph-chart-represent-data-table",
+    id: "maths-2023-ol-p2-q9-a-iv", topicId: "maths-1-6", conceptId: "draw-graph-chart-represent-data-table",
     section: "B", questionRef: "2023 OL Paper 2 Q9(a)(iv)",
     questionText: "(iv) Draw a graph or chart to represent the data in the table. Show clearly any relevant calculations. Label your graph or chart clearly",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 5, 10, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
@@ -3439,7 +3502,7 @@ export const CARDS: SecCard[] = [
     questionText: "Work out the percentage of students in this sample who were given a rating of Excellent",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p2-q9-b-i-r1", kind: "anyN", verbatim: "p̂ = 61", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":4,"options":["p̂ = 61","= 0 ∙122 × 100","= 12 ∙2%","Mathematics – Ordinary Level"],"perOptionSteps":[4,2,4]} },
+    { id: "maths-2023-ol-p2-q9-b-i-r1", kind: "anyN", verbatim: "Work of merit e.g. p̂ = 61/500 or × 100", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit e.g. p̂ = 61/500 or × 100","p̂ = 61/500 × 100 or 0 ∙122"],"perOptionSteps":[4,6]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p050-i1",
@@ -3460,7 +3523,7 @@ export const CARDS: SecCard[] = [
     questionText: "Show that the margin of error for this sample is 4∙5%, correct to 1 decimal place",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2023-ol-p2-q9-b-ii-r1", kind: "anyN", verbatim: "√n =", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":3,"options":["√n =","√500","= 0 ∙044721359","= 4 ∙5%"],"perOptionSteps":[3,1,1]} },
+    { id: "maths-2023-ol-p2-q9-b-ii-r1", kind: "anyN", verbatim: "Correct e.g. n = formula 500 or written/√500", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Correct e.g. n = formula 500 or written/√500","Correct formula fully substituted e.g. 1/√500 1/√500"],"perOptionSteps":[3,2]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p051-i0",
@@ -3476,12 +3539,12 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p2-q9-b-iii", topicId: "maths-5-2", conceptId: "iii-general-students-get-rating-excellent",
+    id: "maths-2023-ol-p2-q9-b-iii", topicId: "maths-1-6", conceptId: "iii-general-students-get-rating-excellent",
     section: "B", questionRef: "2023 OL Paper 2 Q9(b)(iii)",
     questionText: "(iii) In general, 10% of students get a rating of Excellent on this statistics test",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2023-ol-p2-q9-b-iii-r1", kind: "anyN", verbatim: "12 ∙2 −4 ∙5 ≤ p̂ ≤12 ∙2 + 4 ∙5", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":4,"perOption":2,"options":["12 ∙2 −4 ∙5 ≤ p̂ ≤12 ∙2 + 4 ∙5","7 ∙7 ≤ p̂ ≤16 ∙7","Conclusion:","No difference between Cork and population","proportion","Reason:","10% is inside the range found. Within the CI.","Mathematics – Ordinary Level"],"perOptionSteps":[2,1,1,1]} },
+    { id: "maths-2023-ol-p2-q9-b-iii-r1", kind: "anyN", verbatim: "Work of merit e.g. Writes answer from (b)(i) or (b)(ii) in this part p̂ ± 1/√n 1/√n p̂ ± 1.96√^p⁽^(1−p)^) n", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit e.g. Writes answer from (b)(i) or (b)(ii) in this part p̂ ± 1/√n 1/√n p̂ ± 1.96√^p⁽^(1−p)^) n","One boundary formed 12 ∙2 −4 ∙5 or 12 ∙2 + 4 ∙5","Both boundaries formed but 12 no ∙2 −4 ∙5 and/conclusion and 12 reason ∙2 + 4 ∙5 Full Credit (-1): Either conclusion or reason missing"],"perOptionSteps":[2,1,2]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p051-i1",
@@ -3497,12 +3560,12 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p2-q10-a", topicId: "maths-2-3", conceptId: "work-out-cba-size-angle-cba",
+    id: "maths-2023-ol-p2-q10-a", topicId: "maths-1-5", conceptId: "work-out-cba-size-angle-cba",
     section: "B", questionRef: "2023 OL Paper 2 Q10(a)",
     questionText: "Work out |∠CBA|, the size of the angle CBA",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p2-q10-a-r1", kind: "anyN", verbatim: "Work of merit e.g. Any correct geometrical interpretation worked or indicated diagram", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit e.g. Any correct geometrical interpretation worked or indicated diagram","Calculates 54^o and stops","Correct answer without supporting work"],"perOptionSteps":[4,2,4]} },
+    { id: "maths-2023-ol-p2-q10-a-r1", kind: "anyN", verbatim: "Calculates 54^o and stops", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: High Partial Credit; Full Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Calculates 54^o and stops","Correct answer without supporting work"],"perOptionSteps":[4,6]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p052-i0",
@@ -3520,10 +3583,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
     id: "maths-2023-ol-p2-q10-b", topicId: "maths-2-3", conceptId: "work-out-area-triangle-aob-work",
     section: "B", questionRef: "2023 OL Paper 2 Q10(b)",
-    questionText: "Work out the area of the triangle AOB, and hence work out the area of the pentagon ABCDE. Give each answer correct to 1 decimal place. (You do not need to use your answer from part (a).) This question continues on the next page. A B C D E O 6 cm 72° Area of triangle AOB = _________ cm² Area of pentagon = _________ cm²",
+    questionText: "Work out the area of the triangle AOB, and hence work out the area of the pentagon (b) ABCDE. Give each answer correct to 1 decimal place. (You do not need to use your answer from part (a).) Area of triangle AOB = _________ cm² Area of pentagon = _________ cm² This question continues on the next page",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p2-q10-b-r1", kind: "anyN", verbatim: "Work of merit e.g. Any correct work with area of triangle formula. Correct formula for area of triangle fully substituted", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit e.g. Any correct work with area of triangle formula. Correct formula for area of triangle fully substituted","Finds area of triangle Rad: Triangle = 4 ∙56, Pentagon = 22 ∙84 Grad: Triangle = 16 ∙28, Pentagon = 81 ∙43"],"perOptionSteps":[4,6]} },
+    { id: "maths-2023-ol-p2-q10-b-r1", kind: "anyN", verbatim: "Finds area of triangle Rad: Triangle = 4 ∙56, Pentagon = 22 ∙84 Grad: Triangle = 16 ∙28, Pentagon = 81 ∙43", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: High Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Finds area of triangle Rad: Triangle = 4 ∙56, Pentagon = 22 ∙84 Grad: Triangle = 16 ∙28, Pentagon = 81 ∙43"]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p052-i1",
@@ -3581,12 +3644,12 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p2-q10-c-iii", topicId: "maths-2-3", conceptId: "iii-each-time-spinner-spun-each",
+    id: "maths-2023-ol-p2-q10-c-iii", topicId: "maths-1-5", conceptId: "iii-each-time-spinner-spun-each",
     section: "B", questionRef: "2023 OL Paper 2 Q10(c)(iii)",
     questionText: "(iii) Each time the spinner is spun, each number (1 to 5) is equally likely. Work out the probability of getting a total of either 4 or 5, when the two numbers are added",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2023-ol-p2-q10-c-iii-r1", kind: "anyN", verbatim: "Probability (4 or 5):", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Probability (4 or 5):","25 + 4","P(4 or 5) = 3","25 or 0 ∙28 or 28%"],"perOptionSteps":[3,1,1]} },
+    { id: "maths-2023-ol-p2-q10-c-iii-r1", kind: "anyN", verbatim: "e.g. Indicates correct numerator or", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["e.g. Indicates correct numerator or","Calculates: P(4) = 3/25 and P(5) = 4/25","Correct answer without supporting work"],"perOptionSteps":[3,1,1]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p054-i0",
@@ -3602,7 +3665,7 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p2-q10-d", topicId: "maths-2-3", conceptId: "different-spinner-there-different-outcomes",
+    id: "maths-2023-ol-p2-q10-d", topicId: "maths-1-5", conceptId: "different-spinner-there-different-outcomes",
     section: "B", questionRef: "2023 OL Paper 2 Q10(d)",
     questionText: "In a different spinner, there are 4 different outcomes: N, S, E, or W",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
@@ -3628,7 +3691,7 @@ export const CARDS: SecCard[] = [
     questionText: "The farmer also bought land. One year later its value had increased by 12∙5% and was now €52 875",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2024-ol-p1-q1-c-r1", kind: "anyN", verbatim: "Work of merit, for example, mentions 112 ∙5 or 1 ∙125 Finds 12 ∙5 % and continues or stops", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, mentions 112 ∙5 or 1 ∙125 Finds 12 ∙5 % and continues or stops","52 875  112∙5 × 100 470"],"perOptionSteps":[4,6]} },
+    { id: "maths-2024-ol-p1-q1-c-r1", kind: "anyN", verbatim: "Work of merit, for example, mentions 112 ∙5 or 1 ∙125 Finds 12 ∙5 % and continues or stops", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, mentions 112 ∙5 or 1 ∙125 Finds 12 ∙5 % and continues or stops","52 875/112∙5 × 100 470"],"perOptionSteps":[4,6]} },
     ],
     figure: {
           "candId": "maths-2024-OL-paper-p007-i0",
@@ -3649,13 +3712,34 @@ export const CARDS: SecCard[] = [
     questionText: "Find the value of the following expression when x = 2",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2024-ol-p1-q5-a-r1", kind: "anyN", verbatim: "Some correct substitution Work towards a single fraction", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit -1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Some correct substitution Work towards a single fraction","Fully correct substitution","Apply a * for incorrect form"],"perOptionSteps":[2,1,2]} },
+    { id: "maths-2024-ol-p1-q5-a-r1", kind: "anyN", verbatim: "Apply a * for incorrect form", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Full Credit -1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Apply a * for incorrect form"]} },
     ],
     figure: {
           "candId": "maths-2024-OL-paper-p012-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p012-i0.png",
           "srcHash": "d2edeb96343de6e35fe7ee30f7d8edbd",
           "alt": "The marking scheme's printed worked solution for 2024 OL Paper 1 Q5(a), typeset as the State Examinations Commission set it. It reads: 3(2) + 5 2 + 3 − 10 −1 = 9",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-q5-b", topicId: "maths-3-1", conceptId: "function-defined-20x",
+    section: "B", questionRef: "2024 OL Paper 1 Q5(b)",
+    questionText: "The function f is defined as f(x) = 5x² −20x + 2, where x∈ℝ",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 7, 10, 12, 20)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
+    rows: [
+    { id: "maths-2024-ol-p1-q5-b-r1", kind: "anyN", verbatim: "Work of merit, for example, indicates differentiation or d/d Some correct differentiation", marks: 20, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 7, two parts for 10, three parts for 12, four parts for 20. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":7,"options":["Work of merit, for example, indicates differentiation or d/d Some correct differentiation","One step correct","Two steps correct"],"perOptionSteps":[7,3,10]} },
+    ],
+    figure: {
+          "candId": "maths-2024-OL-paper-p012-i1",
+          "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p012-i1.png",
+          "srcHash": "09125c6aba3926261eeffec986a28566",
+          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 1 Q5(b), typeset as the State Examinations Commission set it. It reads: f′(x) = 10x−20 10x−20 = 0 x = 2 f(2) = 5(2)² −20(2) + 2 = −18 [(2, −18)]",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3833,6 +3917,27 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-q8-a-ii", topicId: "maths-3-3", conceptId: "his-speed-hour-while-was-travelling",
+    section: "B", questionRef: "2024 OL Paper 1 Q8(a)(ii)",
+    questionText: "Find his speed in km/hour while he was travelling from A to B",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p1-q8-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, one correct value identified S = D/T Relevant work on the diagram", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, one correct value identified S = D/T Relevant work on the diagram","Both values identified and some substitution into S = D/T"],"perOptionSteps":[4,6]} },
+    ],
+    figure: {
+          "candId": "maths-2024-OL-paper-p016-i1",
+          "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p016-i1.png",
+          "srcHash": "efefc31d68dddd6814b692a70d14e692",
+          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 1 Q8(a)(ii), typeset as the State Examinations Commission set it. It reads: 0∙5 = 24 [km/hour] S =",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p1-q8-a-iii", topicId: "maths-3-3", conceptId: "iii-information-complete-graph-diagram-rest",
     section: "B", questionRef: "2024 OL Paper 1 Q8(a)(iii)",
     questionText: "(iii) Use the following information to complete the graph on the diagram above to show the rest of Liam’s journey: • Liam stopped at B for 30 minutes • He then cycled the 32 km back home at a constant speed. This took him 1 hour",
@@ -3845,6 +3950,27 @@ export const CARDS: SecCard[] = [
           "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p016-i2.png",
           "srcHash": "6def0cd5c1f0b0c727096a984779fb3d",
           "alt": "The marking scheme's printed worked solution for 2024 OL Paper 1 Q8(a)(iii), typeset as the State Examinations Commission set it. It reads: ",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-q8-b-ii", topicId: "maths-4-1", conceptId: "ellie-continued-pattern-distance-she-would",
+    section: "B", questionRef: "2024 OL Paper 1 Q8(b)(ii)",
+    questionText: "If Ellie continued with this pattern, find the distance she would run in week 100",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p1-q8-b-ii-r1", kind: "anyN", verbatim: "Work of merit in (i), for example, 13∙5 one correct term in the table Work of merit in (ii), for example, a new term found or a relevant formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Full Credit -1.", openList: true, group: {"claimMax":4,"perOption":3,"options":["Work of merit in (i), for example, 13∙5 one correct term in the table Work of merit in (ii), for example, a new term found or a relevant formula","Work of merit in (i) AND (ii) One part correct","One part correct and work of merit in the other part","Apply a * for no units"],"perOptionSteps":[3,2,2,3]} },
+    ],
+    figure: {
+          "candId": "maths-2024-OL-paper-p017-i0",
+          "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p017-i0.png",
+          "srcHash": "907620e74530185c2bd1fdb0ab7a7892",
+          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 1 Q8(b)(ii), typeset as the State Examinations Commission set it. It reads: Week & 10∙5 Distance 7∙5 T100 = 6 + (100 −1)(1 ∙5) T100 = 154 ∙5 km",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3922,7 +4048,7 @@ export const CARDS: SecCard[] = [
     questionText: "Liam flies to the concert. He finds the following information: • The aeroplane emits 28 000 grams of carbon per km, during the flight • His total flight distance is 394 km • There are 244 passengers on the flight",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2024-ol-p1-q9-b-r1", kind: "anyN", verbatim: "Work of merit, for example, one correct operation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit -1.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, one correct operation","Completed with one error 28 000 × 394  244 × 1000","Apply a * for no or incorrect rounding"],"perOptionSteps":[4,2,4]} },
+    { id: "maths-2024-ol-p1-q9-b-r1", kind: "anyN", verbatim: "Work of merit, for example, one correct operation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit -1.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, one correct operation","Completed with one error 28 000 × 394/244 × 1000","Apply a * for no or incorrect rounding"],"perOptionSteps":[4,2,4]} },
     ],
     figure: {
           "candId": "maths-2024-OL-paper-p018-i1",
@@ -3959,9 +4085,30 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p1-q9-c-ii", topicId: "maths-3-3", conceptId: "price-ticket-value-which-attendance-would",
+    section: "B", questionRef: "2024 OL Paper 1 Q9(c)(ii)",
+    questionText: "Find the price of a ticket (value of x) for which the attendance would be 12 800",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p1-q9-c-ii-r1", kind: "anyN", verbatim: "A(x) = 12 800 Trial and improvement", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["A(x) = 12 800 Trial and improvement","x = 17 600−12 800/160 and stops"],"perOptionSteps":[4,6]} },
+    ],
+    figure: {
+          "candId": "maths-2024-OL-paper-p019-i0",
+          "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p019-i0.png",
+          "srcHash": "9bebf10b07357fb74ab21d62122ee10f",
+          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 1 Q9(c)(ii), typeset as the State Examinations Commission set it. It reads: 17 600 −160x = 12 800 x = 17 600 −12800 x = [€]30",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
     id: "maths-2024-ol-p1-q9-d-ii", topicId: "maths-4-2", conceptId: "solve-equation-100x-2400-two-possible",
     section: "B", questionRef: "2024 OL Paper 1 Q9(d)(ii)",
-    questionText: "Solve the equation x² −100x + 2400 = 0 to find the two possible ticket prices for this concert",
+    questionText: "Solve the equation x² −100x + 2400 = 0 to find the two possible ticket prices for (ii) this concert",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
     { id: "maths-2024-ol-p1-q9-d-ii-r1", kind: "anyN", verbatim: "Work of merit in (i), for example, equates expression to 360 000 Work of merit in (ii), for example, some relevant work towards solving the quadratic", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in (i), for example, equates expression to 360 000 Work of merit in (ii), for example, some relevant work towards solving the quadratic","Work of merit in (i) AND (ii) One part correct","One part correct and work of merit in the other part"],"perOptionSteps":[3,2,5]} },
@@ -3985,7 +4132,7 @@ export const CARDS: SecCard[] = [
     questionText: "Hence, write his net annual income as a percentage of his gross annual income. Give your answer correct to the nearest percent",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2024-ol-p1-q10-a-ii-r1", kind: "anyN", verbatim: "Work of merit in (i), for example, adds some of the deductions Work of merit in (ii), for example, numerator or denominator correct", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Full Credit -1.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Work of merit in (i), for example, adds some of the deductions Work of merit in (ii), for example, numerator or denominator correct","Work of merit in (i) AND (ii) One part correct","One part correct and work of merit in the other part","Apply a * for no or incorrect rounding"],"perOptionSteps":[2,1,1,1]} },
+    { id: "maths-2024-ol-p1-q10-a-ii-r1", kind: "anyN", verbatim: "Work of merit in (i), for example, adds some of the deductions Work of merit in (ii), for example, numerator or denominator correct Work of merit in (i) AND (ii) One part correct", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit -1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit in (i), for example, adds some of the deductions Work of merit in (ii), for example, numerator or denominator correct Work of merit in (i) AND (ii) One part correct","One part correct and work of merit in the other part","Apply a * for no or incorrect rounding"],"perOptionSteps":[2,1,2]} },
     ],
     figure: {
           "candId": "maths-2024-OL-paper-p020-i0",
@@ -4027,7 +4174,7 @@ export const CARDS: SecCard[] = [
     questionText: "(iii) The personal tax credit for an employee in Ireland in 2023 is €3550. Find the greatest amount of income an employee can earn before paying any income tax",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2024-ol-p1-q10-b-iii-r1", kind: "anyN", verbatim: "3550 × 5 = [€]17 750", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":2,"perOption":4,"options":["3550 × 5 = [€]17 750","3550","20% = [€]17 750"],"perOptionSteps":[4,6]} },
+    { id: "maths-2024-ol-p1-q10-b-iii-r1", kind: "anyN", verbatim: "3550 × 5 = [€]17 750", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":2,"perOption":4,"options":["3550 × 5 = [€]17 750","3550/20% = [€]17 750"],"perOptionSteps":[4,6]} },
     ],
     figure: {
           "candId": "maths-2024-OL-paper-p021-i0",
@@ -4048,7 +4195,7 @@ export const CARDS: SecCard[] = [
     questionText: "Tara also worked from home for a number of days. Tara’s total electricity and broadband bills were €2250. She claimed tax relief of €135 for working from home",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 5, 7, 9, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
-    { id: "maths-2024-ol-p1-q10-c-ii-r1", kind: "anyN", verbatim: "Work of merit in (i) OR (ii), for example, some correct substitution", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 7, three parts for 9, four parts for 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Full Credit -1.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Work of merit in (i) OR (ii), for example, some correct substitution","Work of merit in (i) AND (ii) One part correct","One part correct and work of merit in the other part","Apply a * for no or incorrect rounding"],"perOptionSteps":[5,2,2,6]} },
+    { id: "maths-2024-ol-p1-q10-c-ii-r1", kind: "anyN", verbatim: "Work of merit in (i) OR (ii), for example, some correct substitution", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 7, three parts for 9, four parts for 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Full Credit -1.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Work of merit in (i) OR (ii), for example, some correct substitution","Work of merit in (i) AND (ii)","One part correct and work of merit in","Apply a * for no or incorrect rounding"],"perOptionSteps":[5,2,2,6]} },
     ],
     figure: {
           "candId": "maths-2024-OL-paper-p021-i2",
@@ -4090,7 +4237,7 @@ export const CARDS: SecCard[] = [
     questionText: "A card is chosen at random. Work out the probability of getting a card with an even number",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2024-ol-p2-q2-b-r1", kind: "anyN", verbatim: "14[= 3", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":1,"perOption":5,"options":["14[= 3"]} },
+    { id: "maths-2024-ol-p2-q2-b-r1", kind: "anyN", verbatim: "= 6/14 [= 3/7 ]", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":1,"perOption":5,"options":["= 6/14 [= 3/7 ]"]} },
     ],
     figure: {
           "candId": "maths-2024-OL-paper-p027-i1",
@@ -4111,7 +4258,7 @@ export const CARDS: SecCard[] = [
     questionText: "Seán picks a card at random and doesn’t replace it. It is Red 5 (R5). He then picks a second card at random",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 8, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
-    { id: "maths-2024-ol-p2-q2-c-r1", kind: "anyN", verbatim: "Work of merit, for example, 7 or 13 in the correct position or on its own in (c) OR 6 or 13 in the correct position or on its own in (d) Relevant partial listing", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8, four parts for 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, 7 or 13 in the correct position or on its own in (c) OR 6 or 13 in the correct position or on its own in (d) Relevant partial listing","Work of merit in (c) AND (d) (c) OR (d) correct","One part correct and work of merit in the other part"],"perOptionSteps":[4,2,9]} },
+    { id: "maths-2024-ol-p2-q2-c-r1", kind: "anyN", verbatim: "Work of merit, for example, 7 or 13 in the correct position or on its own in (c) OR 6 or 13 in the correct position or on its own in (d) Relevant partial listing Work of merit in (c) AND (d) (c) OR (d) correct", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8, four parts for 15. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, 7 or 13 in the correct position or on its own in (c) OR 6 or 13 in the correct position or on its own in (d) Relevant partial listing Work of merit in (c) AND (d) (c) OR (d) correct","One part correct and work of merit in the other part"],"perOptionSteps":[4,11]} },
     ],
     figure: {
           "candId": "maths-2024-OL-paper-p027-i2",
@@ -4132,7 +4279,7 @@ export const CARDS: SecCard[] = [
     questionText: "Draw the line l on the co-ordinate diagram below, in the domain −4 ≤ x ≤ 5, x∈ℝ",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 8, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
-    { id: "maths-2024-ol-p2-q3-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct substitution in (i), effort at getting another point in (ii) or any correct point from l drawn on the graph.", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8, four parts for 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, some correct substitution in (i), effort at getting another point in (ii) or any correct point from l drawn on the graph.","Work of merit in (i) AND (ii) (i) OR (ii) correct","One part correct and work of merit in the other part Full Credit (-1) Line not drawn with a ruler Line drawn in reduced domain"],"perOptionSteps":[4,2,9]} },
+    { id: "maths-2024-ol-p2-q3-a-ii-r1", kind: "anyN", verbatim: "Work of merit in (i) AND (ii) (i) OR (ii) correct", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8, four parts for 15. Marked in order: Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit in (i) AND (ii) (i) OR (ii) correct","One part correct and work of merit in the other part Full Credit (-1) Line not drawn with a ruler Line drawn in reduced domain"],"perOptionSteps":[4,11]} },
     ],
     figure: {
           "candId": "maths-2024-OL-paper-p028-i0",
@@ -4153,7 +4300,7 @@ export const CARDS: SecCard[] = [
     questionText: "Find the equation of the line through the points (0, 6) and (2, 9)",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2024-ol-p2-q3-c-r1", kind: "anyN", verbatim: "Work of merit, for example, a relevant formula", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit, for example, a relevant formula","Some correct substitution into a relevant formula Slope found","One error but finishes correctly"],"perOptionSteps":[2,1,2]} },
+    { id: "maths-2024-ol-p2-q3-c-r1", kind: "anyN", verbatim: "formula Slope found One error but finishes correctly", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["formula Slope found One error but finishes correctly"]} },
     ],
     figure: {
           "candId": "maths-2024-OL-paper-p029-i0",
@@ -4195,7 +4342,7 @@ export const CARDS: SecCard[] = [
     questionText: "Use algebra to investigate if the point (9, 2) is on, inside, or outside the circle k",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2024-ol-p2-q4-a-ii-r1", kind: "anyN", verbatim: "Only correct box ticked Correct relevant formula Work of merit, for example, some correct substitution Use of radius from (a)(i)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Only correct box ticked Correct relevant formula Work of merit, for example, some correct substitution Use of radius from (a)(i)","Fully substituted distance formula"],"perOptionSteps":[2,3]} },
+    { id: "maths-2024-ol-p2-q4-a-ii-r1", kind: "anyN", verbatim: "Only correct box ticked Correct relevant formula Work of merit, for example, some correct substitution Use of radius from (a)(i)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Only correct box ticked Correct relevant formula Work of merit, for example, some correct substitution Use of radius from (a)(i)"]} },
     ],
     figure: {
           "candId": "maths-2024-OL-paper-p030-i1",
@@ -4258,7 +4405,7 @@ export const CARDS: SecCard[] = [
     questionText: "Fill in the three missing numbers on the horizontal axis",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2024-ol-p2-q5-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, correct relevant formula Effort at calculating the mean of 7.2 and 8.4 Effort at finding 𝜎 One entry correct", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, correct relevant formula Effort at calculating the mean of 7.2 and 8.4 Effort at finding 𝜎 One entry correct","Two entries correct"],"perOptionSteps":[2,3]} },
+    { id: "maths-2024-ol-p2-q5-a-i-r1", kind: "anyN", verbatim: "Two entries correct", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: High Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Two entries correct"]} },
     ],
     figure: {
           "candId": "maths-2024-OL-paper-p032-i0",
@@ -4379,7 +4526,7 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p2-q7-a-i", topicId: "maths-1-7", conceptId: "complete-back-back-stem-leaf-plot",
+    id: "maths-2024-ol-p2-q7-a-i", topicId: "maths-1-6", conceptId: "complete-back-back-stem-leaf-plot",
     section: "B", questionRef: "2024 OL Paper 2 Q7(a)(i)",
     questionText: "Complete the back-to-back stem-and-leaf plot below to show this information. Two values are already filled in",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 5, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
@@ -4468,7 +4615,7 @@ export const CARDS: SecCard[] = [
     questionText: "Show that, for this sample, the margin of error for a population proportion is 5∙3%, correct to 1 decimal place",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2024-ol-p2-q7-b-i-r1", kind: "anyN", verbatim: "Margin of error", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Margin of error","√n =","√355","= 0 ∙05307","= 5 ∙3 [%]"],"perOptionSteps":[2,1,2]} },
+    { id: "maths-2024-ol-p2-q7-b-i-r1", kind: "anyN", verbatim: "Work of merit for example n = 355 Correct relevant formula ( 1/√n)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit for example n = 355 Correct relevant formula ( 1/√n)","Correct formula fully substituted Full Credit (-1): Apply a * for no or incorrect rounding"],"perOptionSteps":[2,3]} },
     ],
     figure: {
           "candId": "maths-2024-OL-paper-p036-i0",
@@ -4489,7 +4636,7 @@ export const CARDS: SecCard[] = [
     questionText: "96 of the 355 runners finished the run in under 25 minutes. Work out the percentage of runners in this sample who finished the park run in under 25 minutes. Give your answer correct to the nearest percent",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2024-ol-p2-q7-b-ii-r1", kind: "anyN", verbatim: "= 96", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":2,"options":["= 96","= 0 ∙27042","= 27 [%]"],"perOptionSteps":[2,1,2]} },
+    { id: "maths-2024-ol-p2-q7-b-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, 96/355 OR × 100", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, 96/355 OR × 100","96/355 × 100 OR 0.27042 Full Credit (-1): Apply a * for no or incorrect rounding"],"perOptionSteps":[2,3]} },
     ],
     figure: {
           "candId": "maths-2024-OL-paper-p036-i1",
@@ -4505,12 +4652,12 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p2-q7-b-iii", topicId: "maths-1-7", conceptId: "iii-running-club-commentator-said-galway",
+    id: "maths-2024-ol-p2-q7-b-iii", topicId: "maths-1-6", conceptId: "iii-running-club-commentator-said-galway",
     section: "B", questionRef: "2024 OL Paper 2 Q7(b)(iii)",
     questionText: "(iii) A running club commentator said that Galway park run times have changed since 2019. In 2019 it was reported that 24% of all runners finished the park run in under 25 minutes",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2024-ol-p2-q7-b-iii-r1", kind: "anyN", verbatim: "p̂ ± 1", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":4,"perOption":3,"options":["p̂ ± 1","27 −5 ∙3 ≤ p ≤ 27 + 5 ∙3","21 ∙7 ≤ p ≤ 32 ∙3","Conclusion:","No change to the population percentage","Reason:","24% is inside the range found. Within the"],"perOptionSteps":[3,2,2,3]} },
+    { id: "maths-2024-ol-p2-q7-b-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, writes answer from (b)(i) or (b)(ii) in this part p̂ ± 1/√n 1/√n", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, writes answer from (b)(i) or (b)(ii) in this part p̂ ± 1/√n 1/√n","One boundary formed: OR 27 + 5 ∙3 27 −5 ∙3","Both boundaries formed: AND 27 + 5 ∙3 27 −5 ∙3 but no conclusion and reason Full Credit (-1): Either conclusion OR reason missing OR incorrect"],"perOptionSteps":[3,2,5]} },
     ],
     figure: {
           "candId": "maths-2024-OL-paper-p037-i0",
@@ -4531,7 +4678,7 @@ export const CARDS: SecCard[] = [
     questionText: "Use the Theorem of Pythagoras to find the length of the cable, |G|. Give your answer in metres, correct to 1 decimal place",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 5, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2024-ol-p2-q8-a-i-r1", kind: "anyN", verbatim: "Correct relevant formula Use of Cosine Rule would merit at most L.P.C.", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 5, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Correct relevant formula Use of Cosine Rule would merit at most L.P.C.","Correct formula fully substituted One error in substitution and finishes correctly Full Credit (-1): Apply a * for no or incorrect rounding"],"perOptionSteps":[4,6]} },
+    { id: "maths-2024-ol-p2-q8-a-i-r1", kind: "anyN", verbatim: "Correct formula fully substituted One error in substitution and finishes correctly Full Credit (-1): Apply a * for no or incorrect rounding", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 5, three parts for 10. Marked in order: High Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Correct formula fully substituted One error in substitution and finishes correctly Full Credit (-1): Apply a * for no or incorrect rounding"]} },
     ],
     figure: {
           "candId": "maths-2024-OL-paper-p038-i0",
@@ -4552,7 +4699,7 @@ export const CARDS: SecCard[] = [
     questionText: "Show that the size of the angle ∠F = 65°, correct to the nearest degree",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2024-ol-p2-q8-a-ii-r1", kind: "anyN", verbatim: "T A = 1∙4 or similar Finds ∠G using trigonometry (25°) Full Credit (-1): Apply a * for no or incorrect rounding", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: High Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["T A = 1∙4 or similar Finds ∠G using trigonometry (25°) Full Credit (-1): Apply a * for no or incorrect rounding"]} },
+    { id: "maths-2024-ol-p2-q8-a-ii-r1", kind: "anyN", verbatim: "T A = 3/1∙4 or similar Finds ∠G using trigonometry (25°) Full Credit (-1): Apply a * for no or incorrect rounding", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: High Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["T A = 3/1∙4 or similar Finds ∠G using trigonometry (25°) Full Credit (-1): Apply a * for no or incorrect rounding"]} },
     ],
     figure: {
           "candId": "maths-2024-OL-paper-p038-i1",
@@ -4573,7 +4720,7 @@ export const CARDS: SecCard[] = [
     questionText: "(iii) A second cable from G is tied to the sign, at the point K, where K is half way up the sign [F]",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2024-ol-p2-q8-a-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, correct box ticked 1∙5 or 32∙5 written", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, correct box ticked 1∙5 or 32∙5 written","Answer as 47° Full Credit (-1): Correct box not ticked No conclusion"],"perOptionSteps":[2,3]} },
+    { id: "maths-2024-ol-p2-q8-a-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, correct box ticked 1∙5 or 32∙5 written", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, correct box ticked 1∙5 or 32∙5 written","Full Credit (-1): Correct box not ticked No conclusion"],"perOptionSteps":[2,3]} },
     ],
     figure: {
           "candId": "maths-2024-OL-paper-p038-i2",
@@ -4594,7 +4741,7 @@ export const CARDS: SecCard[] = [
     questionText: "|A| = 12 cm, |A| = 10 cm, and |∠A| = 37°",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 5, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2024-ol-p2-q8-b-i-r1", kind: "anyN", verbatim: "Work of merit, for example, sine rule formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 5, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, sine rule formula","Correct formula fully substituted Full Credit (-1): Apply a * for no or incorrect rounding"],"perOptionSteps":[4,6]} },
+    { id: "maths-2024-ol-p2-q8-b-i-r1", kind: "anyN", verbatim: "Work of merit, for example, sine rule", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 5, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, sine rule","Correct formula fully substituted Full Credit (-1): Apply a * for no or incorrect rounding"],"perOptionSteps":[4,6]} },
     ],
     figure: {
           "candId": "maths-2024-OL-paper-p039-i0",
@@ -4636,7 +4783,7 @@ export const CARDS: SecCard[] = [
     questionText: "(iii) C is symmetrical about [C]. Work out the total area of C. Give your answer correct to the nearest cm²",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 5, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2024-ol-p2-q8-b-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, area of triangle formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 5, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, area of triangle formula","Area formula fully substituted Area of triangle CEF given as answer Full Credit (-1): Apply a * for no or incorrect rounding"],"perOptionSteps":[4,6]} },
+    { id: "maths-2024-ol-p2-q8-b-iii-r1", kind: "anyN", verbatim: "Area formula fully substituted Area of triangle CEF given as answer Full Credit (-1): Apply a * for no or incorrect rounding", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 5, three parts for 10. Marked in order: High Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Area formula fully substituted Area of triangle CEF given as answer Full Credit (-1): Apply a * for no or incorrect rounding"]} },
     ],
     figure: {
           "candId": "maths-2024-OL-paper-p039-i2",
@@ -4699,7 +4846,7 @@ export const CARDS: SecCard[] = [
     questionText: "A customer is picked at random from the first 100 customers. Find the probability that this customer bought a cone with a flavour other than vanilla",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2024-ol-p2-q9-b-ii-r1", kind: "anyN", verbatim: "100 or 0 ∙13 or 13%", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":1,"perOption":5,"options":["100 or 0 ∙13 or 13%"]} },
+    { id: "maths-2024-ol-p2-q9-b-ii-r1", kind: "anyN", verbatim: "(ii) 13/100 or 0 ∙13 or 13%", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":1,"perOption":5,"options":["(ii) 13/100 or 0 ∙13 or 13%"]} },
     ],
     figure: {
           "candId": "maths-2024-OL-paper-p040-i2",
@@ -4741,7 +4888,7 @@ export const CARDS: SecCard[] = [
     questionText: "Find the size of the angle 𝜃 and hence, find the length of the arc s",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 5, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2024-ol-p2-q9-d-i-r1", kind: "anyN", verbatim: "Work of merit, for example, new relevant angle found Correct relevant formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 5, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, new relevant angle found Correct relevant formula","220 found and correct formula fully substituted Full Credit (-1): Apply a * for no or incorrect rounding"],"perOptionSteps":[4,6]} },
+    { id: "maths-2024-ol-p2-q9-d-i-r1", kind: "anyN", verbatim: "Work of merit, for example, new relevant angle found", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 5, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, new relevant angle found","220 found and correct formula fully substituted Full Credit (-1): Apply a * for no or incorrect rounding"],"perOptionSteps":[4,6]} },
     ],
     figure: {
           "candId": "maths-2024-OL-paper-p041-i1",
@@ -4804,7 +4951,7 @@ export const CARDS: SecCard[] = [
     questionText: "Tennis balls are in the shape of a sphere. For professional tennis matches, tennis balls can be of slightly different sizes",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 5, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2024-ol-p2-q10-b-r1", kind: "anyN", verbatim: "Correct relevant formula Work of merit, for example, some addition of terms", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 5, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Correct relevant formula Work of merit, for example, some addition of terms","Correct formula fully substituted"],"perOptionSteps":[4,6]} },
+    { id: "maths-2024-ol-p2-q10-b-r1", kind: "anyN", verbatim: "Correct formula fully substituted", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 5, three parts for 10. Marked in order: High Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Correct formula fully substituted"]} },
     ],
     figure: {
           "candId": "maths-2024-OL-paper-p026-i2",
@@ -4909,13 +5056,55 @@ export const CARDS: SecCard[] = [
     questionText: "(iii) Write down one possible value of z₄. Give your answer in the form a + b, where a, b∈ℤ",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2025-ol-p1-q2-a-iii-r1", kind: "anyN", verbatim: "Work of merit in (ii), for example, correct substitution Work of merit in (iii), for example, a point with a modulus < √5 plotted and labelled z₄ Modulus formula written in (ii) OR (iii)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Full Credit -1.", openList: true, group: {"claimMax":4,"perOption":3,"options":["Work of merit in (ii), for example, correct substitution Work of merit in (iii), for example, a point with a modulus < √5 plotted and labelled z₄ Modulus formula written in (ii) OR (iii)","Work of merit in (ii) AND (iii) One part correct","One part correct and work of merit in the other part","(ii) correct and (iii) not in correct form"],"perOptionSteps":[3,2,2,3]} },
+    { id: "maths-2025-ol-p1-q2-a-iii-r1", kind: "anyN", verbatim: "Work of merit in (ii), for example, correct substitution Work point with of merit a modulus in (iii), for < example,/√5 plotted a and labelled z₄ Modulus formula written in (ii) OR (iii)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Full Credit -1.", openList: true, group: {"claimMax":4,"perOption":3,"options":["Work of merit in (ii), for example, correct substitution Work point with of merit a modulus in (iii), for < example,/√5 plotted a and labelled z₄ Modulus formula written in (ii) OR (iii)","Work of merit in (ii) AND (iii) One part correct","One part correct and work of merit in the other part","(ii) correct and (iii) not in correct form"],"perOptionSteps":[3,2,2,3]} },
     ],
     figure: {
           "candId": "maths-2025-OL-paper-p007-i1",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-paper-p007-i1.png",
           "srcHash": "41000c31232f1c405030d70b0a3de128",
           "alt": "The marking scheme's printed worked solution for 2025 OL Paper 1 Q2(a)(iii), typeset as the State Examinations Commission set it. It reads: √1² + 2² √5 1 + i or similar",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-q2-b", topicId: "maths-4-4", conceptId: "two-complex-numbers",
+    section: "B", questionRef: "2025 OL Paper 1 Q2(b)",
+    questionText: "u and v are two complex numbers",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p1-q2-b-r1", kind: "anyN", verbatim: "Correct substitution AND correct conjugate written Correct substitution AND some correct multiplication by an incorrect conjugate", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Mid Partial Credit; High Partial Credit; Full credit -1.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Correct substitution AND correct conjugate written Correct substitution AND some correct multiplication by an incorrect conjugate","4−6i/1 + i × 1−i/1−i with some correct multiplication","Apply a * if in the form −2−10i/2"],"perOptionSteps":[3,2,5]} },
+    ],
+    figure: {
+          "candId": "maths-2025-OL-paper-p008-i0",
+          "src": "/exam-figures/maths/markbank/maths-2025-OL-paper-p008-i0.png",
+          "srcHash": "137bf8a665916368f060ae06862538e5",
+          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 1 Q2(b), typeset as the State Examinations Commission set it. It reads: 1 + i × 1 −i 4 −6i 1 −i = −2 −10i = −1 −5i",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p1-q3-a", topicId: "maths-4-2", conceptId: "rickie-buying-protein-bars",
+    section: "B", questionRef: "2025 OL Paper 1 Q3(a)",
+    questionText: "Rickie is buying protein bars",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p1-q3-a-r1", kind: "anyN", verbatim: "Correct box ticked written or a correct calculation/setup, 6∙60/3 or similar A full comparable calculation worked out, for example, 26∙40 or similar calculated OR the per unit cost of both Correct box ticked and work of merit", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Correct box ticked written or a correct calculation/setup, 6∙60/3 or similar A full comparable calculation worked out, for example, 26∙40 or similar calculated OR the per unit cost of both Correct box ticked and work of merit"]} },
+    ],
+    figure: {
+          "candId": "maths-2025-OL-paper-p009-i0",
+          "src": "/exam-figures/maths/markbank/maths-2025-OL-paper-p009-i0.png",
+          "srcHash": "f779de79fb4169aa1054072893a4874f",
+          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 1 Q3(a), typeset as the State Examinations Commission set it. It reads: Offer A Offer A cost per bar 6∙60 = 2∙20 Offer B cost per bar 29∙99 = 2∙50 OR 6∙60 × 4 = 26∙40 26∙40 < 29∙99 OR 29∙99 ÷ 4 = 7∙50 7∙50 > 6∙60",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4951,7 +5140,7 @@ export const CARDS: SecCard[] = [
     questionText: "Solve the following equation in a∈ℝ: 5(a−3) = 2a + 7",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2025-ol-p1-q4-a-r1", kind: "anyN", verbatim: "Work of merit, for example, one correct operation", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, one correct operation","Two steps correct"],"perOptionSteps":[2,3]} },
+    { id: "maths-2025-ol-p1-q4-a-r1", kind: "anyN", verbatim: "Two steps correct", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: High Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Two steps correct"]} },
     ],
     figure: {
           "candId": "maths-2025-OL-paper-p010-i0",
@@ -5009,12 +5198,12 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p1-q5-a", topicId: "maths-4-2", conceptId: "algebra-solve-simultaneous-equations-solve-equation",
+    id: "maths-2025-ol-p1-q5-a", topicId: "maths-4-2", conceptId: "algebra-solve-simultaneous-equations",
     section: "B", questionRef: "2025 OL Paper 1 Q5(a)",
-    questionText: "Use algebra to solve the simultaneous equations: 3x + 2y = 11 x−4y = −1 (b) Solve the following equation in x∈ℝ:",
+    questionText: "Use algebra to solve the simultaneous equations: 3x + 2y = 11 x−4y = −1 x = y =",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2025-ol-p1-q5-a-r1", kind: "anyN", verbatim: "Some work of merit, for example, correct relevant work in isolating one variable in one equation OR indicates multiplying one equation by a constant OR finds a correct matching x and y value for either equation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Some work of merit, for example, correct relevant work in isolating one variable in one equation OR indicates multiplying one equation by a constant OR finds a correct matching x and y value for either equation","Two steps correct","Three steps correct"],"perOptionSteps":[3,2,5]} },
+    { id: "maths-2025-ol-p1-q5-a-r1", kind: "anyN", verbatim: "Some work of merit, for example, correct relevant work in isolating one variable in one equation OR indicates multiplying equation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Some work of merit, for example, correct relevant work in isolating one variable in one equation OR indicates multiplying equation","Two steps correct","Three steps correct"],"perOptionSteps":[3,2,5]} },
     ],
     figure: {
           "candId": "maths-2025-OL-paper-p011-i0",
@@ -5056,7 +5245,7 @@ export const CARDS: SecCard[] = [
     questionText: "Find the value of x, at which h(x) is a minimum",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2025-ol-p1-q5-c-ii-r1", kind: "anyN", verbatim: "Work of merit in (i), for example, some correct work on the graph Work of merit in (ii), for example, minimum point indicated on the graph OR work with the roots towards finding the minimum OR h′(x) = 0", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in (i), for example, some correct work on the graph Work of merit in (ii), for example, minimum point indicated on the graph OR work with the roots towards finding the minimum OR h′(x) = 0","Work of merit in (i) AND (ii) One part correct","One part correct and work of merit in the other part Note: Correct answer without work in (ii) must be consistent with answer from (i)"],"perOptionSteps":[3,2,5]} },
+    { id: "maths-2025-ol-p1-q5-c-ii-r1", kind: "anyN", verbatim: "Work of merit in (i), for example, some minimum point indicated on the graph OR work with the roots towards finding the minimum OR h′(x) = 0", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in (i), for example, some minimum point indicated on the graph OR work with the roots towards finding the minimum OR h′(x) = 0","Work of merit in (i) AND (ii) One part correct","One part correct and work of merit in the other part Note: Correct answer without work in (ii) must be consistent with answer from (i)"],"perOptionSteps":[3,2,5]} },
     ],
     figure: {
           "candId": "maths-2025-OL-paper-p012-i0",
@@ -5182,7 +5371,7 @@ export const CARDS: SecCard[] = [
     questionText: "Using your expression, or otherwise, find how many months it takes for the value of one share for Company B to fall below its value on 1st January, according to the model. Remember that n∈ℕ",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2025-ol-p1-q7-e-ii-r1", kind: "anyN", verbatim: "(i) correct Work of merit in (ii), for example, indicates subtraction of 0∙3 OR relevant use of equation from (i)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit -1.", openList: true, group: {"claimMax":3,"perOption":4,"options":["(i) correct Work of merit in (ii), for example, indicates subtraction of 0∙3 OR relevant use of equation from (i)","(i) correct and work of merit in (ii) (ii) correct","(i) correct and answer to (ii) given as n = 24"],"perOptionSteps":[4,2,4]} },
+    { id: "maths-2025-ol-p1-q7-e-ii-r1", kind: "anyN", verbatim: "(i) correct Work of merit in (ii), for example, indicates subtraction of 0∙3 OR relevant use of equation from (i) (ii) correct", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; Full Credit -1.", openList: true, group: {"claimMax":2,"perOption":4,"options":["(i) correct Work of merit in (ii), for example, indicates subtraction of 0∙3 OR relevant use of equation from (i) (ii) correct","(i) correct and answer to (ii) given as n = 24"],"perOptionSteps":[4,6]} },
     ],
     figure: {
           "candId": "maths-2025-OL-paper-p015-i2",
@@ -5392,7 +5581,7 @@ export const CARDS: SecCard[] = [
     questionText: "Hence, or otherwise, find the total number of complete patterns in the sequence that can be made using 740 dots",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2025-ol-p1-q9-b-v-r1", kind: "anyN", verbatim: "Work of merit in (iv), for example, correct formula OR a or d identified Work of merit in (v), for example answer from (iv) let equal to 740 OR more than one value of n trialled", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in (iv), for example, correct formula OR a or d identified Work of merit in (v), for example answer from (iv) let equal to 740 OR more than one value of n trialled","Work of merit in (i) AND (ii) One part correct","One part correct and work of merit in the other part"],"perOptionSteps":[3,2,5]} },
+    { id: "maths-2025-ol-p1-q9-b-v-r1", kind: "anyN", verbatim: "Work of merit in (iv), for example, answer from (iv) let equal to 740 OR more than one value of n trialled Work of merit in (i) AND (ii) One part correct", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit in (iv), for example, answer from (iv) let equal to 740 OR more than one value of n trialled Work of merit in (i) AND (ii) One part correct","One part correct and work of merit in the other part"],"perOptionSteps":[3,7]} },
     ],
     figure: {
           "candId": "maths-2025-OL-paper-p019-i1",
@@ -5476,7 +5665,7 @@ export const CARDS: SecCard[] = [
     questionText: "(iii) The factory owner buys a machine from China for making the boxes. The machine costs 353 819∙34 Chinese Yuan, including shipping. The factory owner must also pay €1890 in customs duty",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2025-ol-p1-q10-a-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, relevant fraction created OR addition of 1890", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, relevant fraction created OR addition of 1890","Cost of machine in euro found (46 494)"],"perOptionSteps":[2,3]} },
+    { id: "maths-2025-ol-p1-q10-a-iii-r1", kind: "anyN", verbatim: "Cost of machine in euro found (46 494)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: High Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Cost of machine in euro found (46 494)"]} },
     ],
     figure: {
           "candId": "maths-2025-OL-paper-p020-i2",
@@ -5513,12 +5702,12 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p1-q10-c-ii", topicId: "maths-3-3", conceptId: "value-when-charge-repair-repair-takes",
-    section: "B", questionRef: "2025 OL Paper 1 Q10(c)(ii)",
-    questionText: "Find the value of x when the charge for the repair is €76, the repair takes 4 hours, and the discount rate is 1∙2",
+    id: "maths-2025-ol-p1-q10-c", topicId: "maths-3-3", conceptId: "shop-repairs-clothes-charge-repair-given",
+    section: "B", questionRef: "2025 OL Paper 1 Q10(c)",
+    questionText: "A shop repairs clothes. The charge for a repair is given by the formula: C = 20h + xh d where C is the charge for the repair, in euro, h is the number of hours it took to do the repair, x is an extra hourly charge based on the level of difficulty of the work and d is a discount rate, with d ≥ 1",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2025-ol-p1-q10-c-ii-r1", kind: "anyN", verbatim: "Work of merit in (i), for example, some correct substitution Work of merit in (ii), for example, some correct substitution", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in (i), for example, some correct substitution Work of merit in (ii), for example, some correct substitution","Work of merit in (i) AND (ii) One part correct","One part correct and work of merit in the other part"],"perOptionSteps":[3,2,5]} },
+    { id: "maths-2025-ol-p1-q10-c-r1", kind: "anyN", verbatim: "Work of merit in (i), for example, some correct substitution Work of merit in (ii), for example, some correct substitution One part correct", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit in (i), for example, some correct substitution Work of merit in (ii), for example, some correct substitution One part correct","One part correct and work of merit in the other part"],"perOptionSteps":[3,7]} },
     ],
     figure: {
           "candId": "maths-2025-OL-paper-p021-i1",
@@ -5576,12 +5765,33 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-q2-a-ii", topicId: "maths-2-3", conceptId: "lengths-two-sides-shown-diagram-using",
+    section: "B", questionRef: "2025 OL Paper 2 Q2(a)(ii)",
+    questionText: "The lengths of two of the sides are x and 10 cm, as shown in the diagram above. Using A = 30°, find the value of x, correct to 2 decimal places",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p2-q2-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, some understanding of trigonometric ratios or sine rule formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, some understanding of trigonometric ratios or sine rule formula","tan 30 = x/10 or similar Full Credit (-1): Apply a * for no or incorrect rounding Apply a * for no units"],"perOptionSteps":[4,6]} },
+    ],
+    figure: {
+          "candId": "maths-2025-OL-paper-p027-i1",
+          "src": "/exam-figures/maths/markbank/maths-2025-OL-paper-p027-i1.png",
+          "srcHash": "710b76fb3cb91e7f1c2aed100eddda0c",
+          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 2 Q2(a)(ii), typeset as the State Examinations Commission set it. It reads: tan 30 = x x = 5∙7735 … x = 5∙77 cm",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p2-q2-b", topicId: "maths-2-3", conceptId: "triangle-shown-some-its-measurements-also",
     section: "B", questionRef: "2025 OL Paper 2 Q2(b)",
     questionText: "The triangle P is shown below. Some of its measurements are also shown",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 6, 8, 10, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
-    { id: "maths-2025-ol-p2-q2-b-r1", kind: "anyN", verbatim: "Work of merit, for example, sine rule formula or work towards finding |∠PQR|", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 6, two parts for 8, three parts for 10, four parts for 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":6,"options":["Work of merit, for example, sine rule formula or work towards finding |∠PQR|","Some correct substitution into the formula","Sine rule correctly substituted Full Credit (-1): Apply a * for no or incorrect rounding"],"perOptionSteps":[6,2,7]} },
+    { id: "maths-2025-ol-p2-q2-b-r1", kind: "anyN", verbatim: "Some correct substitution into the formula", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 6, two parts for 8, three parts for 10, four parts for 15. Marked in order: Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Some correct substitution into the formula","Sine rule correctly substituted Full Credit (-1): Apply a * for no or incorrect rounding"],"perOptionSteps":[6,9]} },
     ],
     figure: {
           "candId": "maths-2025-OL-paper-p027-i2",
@@ -5602,7 +5812,7 @@ export const CARDS: SecCard[] = [
     questionText: "Find the slope of the line A",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2025-ol-p2-q4-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, relevant formula OR a point labelled for substitution Rise  Run", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, relevant formula OR a point labelled for substitution Rise  Run","Correct formula fully substituted"],"perOptionSteps":[2,3]} },
+    { id: "maths-2025-ol-p2-q4-a-i-r1", kind: "anyN", verbatim: "substitution Rise/Run", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["substitution Rise/Run","Correct formula fully substituted"],"perOptionSteps":[2,3]} },
     ],
     figure: {
           "candId": "maths-2025-OL-paper-p029-i0",
@@ -5644,13 +5854,34 @@ export const CARDS: SecCard[] = [
     questionText: "(iii) C (4, 3) is a third point on the co-ordinate plane",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2025-ol-p2-q4-a-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, relevant work on diagram OR relevant formula Some correct work on translating a point", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, relevant work on diagram OR relevant formula Some correct work on translating a point","Correct formula fully substituted Full Credit (-1): Apply a * for no units"],"perOptionSteps":[4,6]} },
+    { id: "maths-2025-ol-p2-q4-a-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, relevant work on diagram OR relevant formula Some correct work on translating a point Full Credit (-1): Apply a * for no units", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Work of merit, for example, relevant work on diagram OR relevant formula Some correct work on translating a point Full Credit (-1): Apply a * for no units"]} },
     ],
     figure: {
           "candId": "maths-2025-OL-paper-p029-i2",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-paper-p029-i2.png",
           "srcHash": "2880c908ed601491d73ea757c38dbd55",
           "alt": "The marking scheme's printed worked solution for 2025 OL Paper 2 Q4(a)(iii), typeset as the State Examinations Commission set it. It reads: 2 (9)(3) = 13∙5 units² Area = OR (2, 0) →(0, 0) (−5, 3) →(−7, 3) (4, 3) →(2, 3) 2 |(−7)(3) −(2)(3)| = 13∙5 units² Or similar",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-q4-b", topicId: "maths-2-2", conceptId: "lines-have-equations-investigate-lines-parallel",
+    section: "B", questionRef: "2025 OL Paper 2 Q4(b)",
+    questionText: "The lines l and k have the following equations: l: y= 2 3 x−5 k: 2x+ 3y−7 = 0 Investigate if the lines l and k are parallel, perpendicular, or neither. Show working out to support your answer",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "maths-2025-ol-p2-q4-b-r1", kind: "anyN", verbatim: "Two items correct", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: High Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Two items correct"]} },
+    ],
+    figure: {
+          "candId": "maths-2025-OL-paper-p030-i0",
+          "src": "/exam-figures/maths/markbank/maths-2025-OL-paper-p030-i0.png",
+          "srcHash": "b16b21b9a41d20b5694fb18cc71d9c47",
+          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 2 Q4(b), typeset as the State Examinations Commission set it. It reads: Neither ml = 2 mk = −2",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5786,6 +6017,27 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-q7-a-ii", topicId: "maths-1-3", conceptId: "working-out-probability-each-outcome-writing",
+    section: "B", questionRef: "2025 OL Paper 2 Q7(a)(ii)",
+    questionText: "working out the probability for each outcome and writing it in the appropriate box in the final column",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p2-q7-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, relevant addition or subtraction One entry correct", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, relevant addition or subtraction One entry correct","Two or three entries correct","Four entries correct 0∙42 = Win = Lose 0∙18 Win = 0∙28 0∙12 = Lose"],"perOptionSteps":[3,2,5]} },
+    ],
+    figure: {
+          "candId": "maths-2025-OL-paper-p033-i0",
+          "src": "/exam-figures/maths/markbank/maths-2025-OL-paper-p033-i0.png",
+          "srcHash": "1a29d05f2c0c069c579d805546fefaa8",
+          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 2 Q7(a)(ii), typeset as the State Examinations Commission set it. It reads: Tree Diagram 0∙7 Win 0∙3 0∙6 0∙4 0∙7 Lose 0∙3",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p2-q7-a-iii", topicId: "maths-3-4", conceptId: "iii-based-tree-diagram-what-probability",
     section: "B", questionRef: "2025 OL Paper 2 Q7(a)(iii)",
     questionText: "(iii) Based on the tree diagram, what is the probability that Seán wins at least 1 match?",
@@ -5854,7 +6106,7 @@ export const CARDS: SecCard[] = [
     questionText: "An adult’s football is in the shape of a sphere and has a volume of 5424∙6 cm³",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2025-ol-p2-q7-c-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, volume of sphere formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, volume of sphere formula","3 𝜋 r³ = 5424∙6","r³ isolated Full Credit (-1): Apply a * for no or incorrect rounding Apply a * for no units"],"perOptionSteps":[3,2,5]} },
+    { id: "maths-2025-ol-p2-q7-c-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, volume of sphere formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, volume of sphere formula","4/3 𝜋 r3 = 5424∙6","r³ isolated Full Credit (-1): Apply a * for no or incorrect rounding Apply a * for no units"],"perOptionSteps":[3,2,5]} },
     ],
     figure: {
           "candId": "maths-2025-OL-paper-p035-i0",
@@ -5959,7 +6211,7 @@ export const CARDS: SecCard[] = [
     questionText: "Show that, for this sample, the margin of error for a population proportion is 3∙5%, correct to 1 decimal place",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2025-ol-p2-q8-c-i-r1", kind: "anyN", verbatim: "√815", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":2,"options":["√815","= 0∙035028","= 3∙5 [%]"],"perOptionSteps":[2,1,2]} },
+    { id: "maths-2025-ol-p2-q8-c-i-r1", kind: "anyN", verbatim: "Work of merit for example n = 815, × 100 Correct relevant formula ( 1/√n) 1/√n)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit for example n = 815, × 100 Correct relevant formula ( 1/√n) 1/√n)","Correct formula fully substituted Full Credit (-1): Apply a * for no or incorrect rounding"],"perOptionSteps":[2,3]} },
     ],
     figure: {
           "candId": "maths-2025-OL-paper-p037-i1",
@@ -5980,7 +6232,7 @@ export const CARDS: SecCard[] = [
     questionText: "106 of the 815 new cars bought in 2024 were electric cars. Work out the percentage of new cars in this sample that were electric cars. Give your answer correct to the nearest percent",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2025-ol-p2-q8-c-ii-r1", kind: "anyN", verbatim: "= 0∙13006 …", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":2,"perOption":2,"options":["= 0∙13006 …","= 13 [%]"],"perOptionSteps":[2,3]} },
+    { id: "maths-2025-ol-p2-q8-c-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, 106/815 OR × 100", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, 106/815 OR × 100","106/815 × 100 OR 0∙13006 … Full Credit (-1): Apply a * for no or incorrect rounding"],"perOptionSteps":[2,3]} },
     ],
     figure: {
           "candId": "maths-2025-OL-paper-p037-i2",
@@ -6001,7 +6253,7 @@ export const CARDS: SecCard[] = [
     questionText: "In 2023, 19∙2% of all new cars bought were electric. A reporter claimed that the proportion of new electric cars being bought in 2024 was different to 2023",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2025-ol-p2-q8-c-iii-r1", kind: "anyN", verbatim: "Calculations:", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Calculations:","p̂ ± 1","13 −3∙5 ≤ p ≤ 13 + 3∙5","9∙5 ≤ p ≤ 16∙5","Conclusion:","There is evidence to say that the","percentage of new electric cars being","bought in 2024 is different to 2023.","Reason:","19∙2% is not inside the range found.","It is outside the CI."],"perOptionSteps":[2,1,2]} },
+    { id: "maths-2025-ol-p2-q8-c-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, writes answer from (c)(i) or (c)(ii) in this part p̂ ± 1/√n 1/√n", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, writes answer from (c)(i) or (c)(ii) in this part p̂ ± 1/√n 1/√n","Relevant boundary formed: 13 + 3∙5 but no conclusion and reason Full Credit (-1): Either conclusion OR reason missing OR incorrect"],"perOptionSteps":[2,3]} },
     ],
     figure: {
           "candId": "maths-2025-OL-paper-p038-i0",
@@ -6080,6 +6332,27 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-q9-b", topicId: "maths-2-4", conceptId: "finn-making-pair-triangular-tables-one",
+    section: "B", questionRef: "2025 OL Paper 2 Q9(b)",
+    questionText: "Finn is making a pair of triangular tables, one bigger than the other. The bigger table-top is an enlargement of the smaller table-top. The scale factor of the enlargement is k",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p2-q9-b-r1", kind: "anyN", verbatim: "Work of merit in (i), for example, relevant numerator or denominator Work of merit in (ii), for example, use of 25∙5 and 1∙25", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in (i), for example, relevant numerator or denominator Work of merit in (ii), for example, use of 25∙5 and 1∙25","Work of merit in (i) AND (ii) One part correct","One part correct and work of merit in the other part Full Credit (-1): Apply a * for no or incorrect rounding Apply a * for no units"],"perOptionSteps":[3,2,5]} },
+    ],
+    figure: {
+          "candId": "maths-2025-OL-paper-p039-i1",
+          "src": "/exam-figures/maths/markbank/maths-2025-OL-paper-p039-i1.png",
+          "srcHash": "3a33376740dda7f1774fb24d8f8a09e5",
+          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 2 Q9(i)(ii), typeset as the State Examinations Commission set it. It reads: (i)(ii) Midpoint of [AB] constructed",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
     id: "maths-2025-ol-p2-q9-b-i", topicId: "maths-3-4", conceptId: "longest-side-bigger-table-top-longest",
     section: "B", questionRef: "2025 OL Paper 2 Q9(b)(i)",
     questionText: "The longest side of the bigger table-top is 45 cm. The longest side of the smaller table-top is 36 cm",
@@ -6092,27 +6365,6 @@ export const CARDS: SecCard[] = [
           "src": "/exam-figures/maths/markbank/maths-2025-OL-paper-p042-i0.png",
           "srcHash": "abfa22722e3d8663f7c8433c33dba3af",
           "alt": "The marking scheme's printed worked solution for 2025 OL Paper 2 Q9(b)(i), typeset as the State Examinations Commission set it. It reads: D C F B E Or similar",
-          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2025, level: "ordinary",
-    paperFileid: null,
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p2-q9-b-ii", topicId: "maths-3-4", conceptId: "shortest-side-smaller-table-top-work",
-    section: "B", questionRef: "2025 OL Paper 2 Q9(b)(ii)",
-    questionText: "The shortest side of the smaller table-top is 25∙5 cm. Work out the length of the shortest side of the bigger table-top, correct to 1 decimal place",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
-    rows: [
-    { id: "maths-2025-ol-p2-q9-b-ii-r1", kind: "anyN", verbatim: "Work of merit in (i), for example, relevant numerator or denominator Work of merit in (ii), for example, use of 25∙5 and 1∙25", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in (i), for example, relevant numerator or denominator Work of merit in (ii), for example, use of 25∙5 and 1∙25","Work of merit in (i) AND (ii) One part correct","One part correct and work of merit in the other part Full Credit (-1): Apply a * for no or incorrect rounding Apply a * for no units"],"perOptionSteps":[3,2,5]} },
-    ],
-    figure: {
-          "candId": "maths-2025-OL-paper-p039-i1",
-          "src": "/exam-figures/maths/markbank/maths-2025-OL-paper-p039-i1.png",
-          "srcHash": "3a33376740dda7f1774fb24d8f8a09e5",
-          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 2 Q9(i)(ii), typeset as the State Examinations Commission set it. It reads: (i)(ii) Midpoint of [AB] constructed",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6148,7 +6400,7 @@ export const CARDS: SecCard[] = [
     questionText: "The shaded area is the Work Section. It has a width of 40 cm. Work out the area of the Work Section. Give your answer correct to the nearest cm²",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2025-ol-p2-q9-c-i-r1", kind: "anyN", verbatim: "360 × 𝜋(160)² −250", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":4,"perOption":3,"options":["360 × 𝜋(160)² −250","360 × 𝜋(120)²","160 000𝜋","−10 000𝜋","70 000𝜋","= 24 434∙6 …","= 24 435 [cm²]","360 × [𝜋(160)² −𝜋(120)₂]","= 24 434∙6 …","= 24 435 [cm²]"],"perOptionSteps":[3,2,2,3]} },
+    { id: "maths-2025-ol-p2-q9-c-i-r1", kind: "anyN", verbatim: "One step correct Area of a relevant sector found Two steps correct Full Credit (-1): Apply a * for no or incorrect rounding", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Mid Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["One step correct Area of a relevant sector found Two steps correct Full Credit (-1): Apply a * for no or incorrect rounding"]} },
     ],
     figure: {
           "candId": "maths-2025-OL-paper-p040-i1",
@@ -6169,7 +6421,7 @@ export const CARDS: SecCard[] = [
     questionText: "Each participant attending the demonstration needs at least 60 cm along the outer circumference of the Work Section of the table to carry out the food preparation",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2025-ol-p2-q9-c-ii-r1", kind: "anyN", verbatim: "360 × 2𝜋(160) = 698∙1 …", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":2,"options":["360 × 2𝜋(160) = 698∙1 …","698∙1 …","= 11∙6 …","= 11 [people]"],"perOptionSteps":[2,1,2]} },
+    { id: "maths-2025-ol-p2-q9-c-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, or 250/360 or division by 60", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, or 250/360 or division by 60","Correct formula fully substituted Length of arc found (698∙1 …) Full Credit (-1): Apply a * for answer given as 12"],"perOptionSteps":[2,3]} },
     ],
     figure: {
           "candId": "maths-2025-OL-paper-p040-i2",
@@ -6190,7 +6442,7 @@ export const CARDS: SecCard[] = [
     questionText: "Aoibhe swims from A to B, to C, to D, to E, to F, and back to A",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2025-ol-p2-q10-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, 94 −72 or a relevant numerator or denominator", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Work of merit, for example, 94 −72 or a relevant numerator or denominator"]} },
+    { id: "maths-2025-ol-p2-q10-a-i-r1", kind: "anyN", verbatim: "relevant numerator or denominator", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["relevant numerator or denominator"]} },
     ],
     figure: {
           "candId": "maths-2025-OL-paper-p026-i0",
@@ -6232,7 +6484,7 @@ export const CARDS: SecCard[] = [
     questionText: "Point A is the nearest point to the shore and is the start and end point for all swims",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2025-ol-p2-q10-b-r1", kind: "anyN", verbatim: "Work of merit, for example, shows understanding of IQR Relevant work towards finding Q₁ Relevant work on the table", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Work of merit, for example, shows understanding of IQR Relevant work towards finding Q₁ Relevant work on the table"]} },
+    { id: "maths-2025-ol-p2-q10-b-r1", kind: "anyN", verbatim: "Q1 = 94 + 93/2", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Q1 = 94 + 93/2","Q1 = 187/2","= 93∙5 [mm]","IQR = 183 −93∙5 = 89∙5 [mm]"],"perOptionSteps":[4,2,4]} },
     ],
     figure: {
           "candId": "maths-2025-OL-paper-p026-i2",

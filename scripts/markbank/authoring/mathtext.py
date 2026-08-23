@@ -173,6 +173,105 @@ def line_text(line):
     return spacing(subscripts(superscripts(''.join(out).strip())))
 
 
+# A stacked fraction is three objects -- a numerator, a drawn rule and a
+# denominator -- so reading a page line by line splits one expression across
+# two of them. In the Maths schemes that broke marking points in half:
+# "r(2) = 10 + 1.5 + sin(pi/5) + 1.5 + sin(2pi/5)" arrived as "r(2) = 10 + 1.5
+# + sin" with "5 + 1.5 + sin" offered underneath as a separate answer. The
+# geometry is append-scheme-fractions.py's, which has read these bars across
+# seven subjects; what differs is the answer, which is the text AND the band it
+# occupies, so placed() can drop the lines it consumed.
+BAR_MAX_HEIGHT, BAR_MIN_WIDTH, BAR_MAX_WIDTH = 3.0, 4.0, 140.0
+REACH, SAME_COLUMN, GRID_MIN_WIDTH, SAME_LINE, LINE_TOL = 16.0, 2.0, 25.0, 6.0, 3.5
+
+
+def _bars(page):
+    """Thin rules that are not part of a grid: a table redraws its column
+    border at every row, a fraction bar is drawn once."""
+    rules = [d['rect'] for d in page.get_drawings()
+             if d['rect'].height <= BAR_MAX_HEIGHT
+             and BAR_MIN_WIDTH <= d['rect'].width <= BAR_MAX_WIDTH]
+    return [r for r in rules
+            if not (r.width >= GRID_MIN_WIDTH and any(
+                o is not r and abs(o.y0 - r.y0) > 2
+                and abs(o.x0 - r.x0) <= SAME_COLUMN
+                and abs(o.x1 - r.x1) <= SAME_COLUMN for o in rules))]
+
+
+def _mid(w):
+    return (w[1] + w[3]) / 2
+
+
+def _one_line(candidates, key):
+    """The printed line nearest the bar, and only that one -- a numerator and
+    a denominator are each a single line."""
+    if not candidates:
+        return []
+    edge = key(sorted(candidates, key=key)[0])
+    return [w for w in candidates if abs(key(w) - edge) <= LINE_TOL]
+
+
+def fractions(page, cut=300):
+    """[(x0, top, bottom, text)] -- each stacked fraction read back into a line."""
+    words = [w for w in page.get_text('words') if w[4].strip()]
+    out, band = [], []
+    for bar in sorted(_bars(page), key=lambda r: (r.y0, r.x0)) + [None]:
+        if band and (bar is None or bar.y0 - band[0].y0 > SAME_LINE):
+            piece = _splice(words, band, cut)
+            if piece:
+                out.append(piece)
+            band = []
+        if bar is not None:
+            band.append(bar)
+    return out
+
+
+def _over(w, x0, x1):
+    """Does this word sit on the bar? Overlap, not containment: the extractor
+    joins a denominator to whatever follows it when the PDF sets no space
+    between them, so the "5" under pi/5 arrives as the word "5+" and reaches
+    past the bar's right edge. Requiring containment dropped it and left the
+    fraction unread."""
+    lap = min(w[2], x1) - max(w[0], x0)
+    return lap > 0 and lap >= 0.5 * min(w[2] - w[0], x1 - x0)
+
+
+def _splice(words, band, cut=300):
+    pieces, claimed, top, bottom = [], [], None, None
+    side = band[0].x0 >= cut
+    words = [w for w in words if (w[0] >= cut) == side]
+    for bar in band:
+        x0, x1 = bar.x0 - 3, bar.x1 + 3
+        # Sorted on the word's MIDPOINT: an exponent sets its glyph box from the
+        # top, so a denominator like "d^2" starts fractionally ABOVE the bar.
+        above = [w for w in words
+                 if bar.y0 - REACH < _mid(w) < bar.y0 and _over(w, x0, x1)]
+        below = [w for w in words
+                 if bar.y1 < _mid(w) < bar.y1 + REACH and _over(w, x0, x1)]
+        num = _one_line(above, key=lambda w: -_mid(w))
+        den = _one_line(below, key=lambda w: _mid(w))
+        if not num or not den:
+            continue
+        claimed.extend(num + den)
+        hi, lo = min(w[1] for w in num), max(w[3] for w in den)
+        top = hi if top is None else min(top, hi)
+        bottom = lo if bottom is None else max(bottom, lo)
+        pieces.append((bar.x0, '{}/{}'.format(
+            ' '.join(demangle(w[4]) for w in sorted(num, key=lambda w: w[0])),
+            ' '.join(demangle(w[4]) for w in sorted(den, key=lambda w: w[0])))))
+    if not pieces:
+        return None
+    # The rest of the expression -- the "r(2) =" before the fraction -- is set
+    # on the fraction's own baseline, between numerator and denominator.
+    held = {id(w) for w in claimed}
+    for w in words:
+        if id(w) not in held and top <= _mid(w) <= bottom:
+            pieces.append((w[0], demangle(w[4])))
+    text = ' '.join(t for _, t in sorted(pieces, key=lambda q: q[0]))
+    return (min(x for x, _ in pieces), top, bottom,
+            spacing(re.sub(r'\s+', ' ', text).strip()))
+
+
 def placed(page, cut=300):
     """([(y, text)] left, [(y, text)] right) — columns WITH their positions.
 
@@ -183,6 +282,9 @@ def placed(page, cut=300):
     it.
     """
     left, right = [], []
+    spans = fractions(page, cut)
+    for x0, top, bottom, text in spans:
+        (right if x0 >= cut else left).append((top, text))
     for b in page.get_text('dict')['blocks']:
         for ln in b.get('lines', []):
             t = line_text(ln)
@@ -190,6 +292,13 @@ def placed(page, cut=300):
                 continue
             x = min(s['bbox'][0] for s in ln['spans'])
             y = min(s['bbox'][1] for s in ln['spans'])
+            # A line the fraction reader already consumed would otherwise be
+            # emitted a second time, in halves.
+            centre = (min(s['bbox'][1] for s in ln['spans'])
+                      + max(s['bbox'][3] for s in ln['spans'])) / 2
+            if any(top <= centre <= bottom and abs(x0 - x) < 200
+                   for x0, top, bottom, _ in spans):
+                continue
             (right if x >= cut else left).append((y, t))
     return sorted(left), sorted(right)
 
@@ -249,11 +358,35 @@ def clean_document(paths):
     for path in paths:
         with pymupdf.open(path) as doc:
             for page in doc:
+                # A paper sets its fractions stacked too: 2021 HL Paper 1 Q5(b)
+                # asks for the tangent "at the point where x = pi/6", and read
+                # line by line that arrives as "x = pi 6". The lines a fraction
+                # occupies collapse into one row, whose clean side is the
+                # fraction and whose plain side is still every character
+                # paper.py saw, in the order it saw them -- clean_like searches
+                # the plain side and returns the clean one, so both must hold.
+                spans = fractions(page)
+                buckets, loose = {}, []
                 for b in page.get_text('dict')['blocks']:
                     for ln in b.get('lines', []):
                         plain = ''.join(sp['text'] for sp in ln['spans'])
-                        if plain.strip():
-                            rows.append((line_text(ln), plain))
+                        if not plain.strip():
+                            continue
+                        y0 = min(sp['bbox'][1] for sp in ln['spans'])
+                        centre = (y0 + max(sp['bbox'][3] for sp in ln['spans'])) / 2
+                        x0 = min(sp['bbox'][0] for sp in ln['spans'])
+                        at = next((i for i, f in enumerate(spans)
+                                   if f[1] <= centre <= f[2] and abs(f[0] - x0) < 200),
+                                  None)
+                        if at is None:
+                            loose.append((y0, line_text(ln), plain))
+                        else:
+                            buckets.setdefault(at, []).append((y0, plain))
+                merged = [(min(y for y, _ in v), spans[i][3],
+                           ''.join(t for _, t in sorted(v)))
+                          for i, v in buckets.items()]
+                rows.extend((c, p) for _, c, p in sorted(loose + merged,
+                                                        key=lambda r: r[0]))
     _DOCCACHE[key] = rows
     return rows
 

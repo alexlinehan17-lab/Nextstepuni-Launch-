@@ -597,7 +597,12 @@ const LabelKeyPanel: React.FC<{ keys: LabelKey[] }> = ({ keys }) => {
  * This splits on labels only where the paper actually printed them; a question
  * with no parts renders as one block, unchanged.
  */
-const PART = /\s*(\((?:[ivx]+|[a-h])\))\s+/gi;
+/* Never glued to a letter. "(x)" IS a part label -- Physics 2022 OL Q3 runs
+ * to (x) -- but in "h(x) = 2 sin(2x)" it is a function's argument, and
+ * splitting there put "(x)" in the part gutter and left the question
+ * reading "the tangent line to h". A printed label always follows a space
+ * or opens the text. */
+const PART = /\s*(?<![A-Za-z0-9])(\((?:[ivx]+|[a-h])\))\s+/gi;
 
 /**
  * Which emphasis the command clause carries.

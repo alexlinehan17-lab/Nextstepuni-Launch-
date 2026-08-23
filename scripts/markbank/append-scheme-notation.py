@@ -40,6 +40,20 @@ def apply(subject, year, level):
                     t = mathtext.line_text(ln)
                     if t:
                         lines.append(t)
+            # And each stacked fraction read back into one line. A card quoting
+            # "sin(pi/5)" cannot be traced to a scheme whose text layer holds
+            # the numerator and the denominator on separate lines, and the
+            # author now reads them joined. Appended, like every other form, so
+            # nothing that matches today can stop matching.
+            # And the two columns in the order placed() yields them, which is
+            # the order the author reads a marking point in. A point that spans
+            # several printed lines is one string to the author and several to
+            # the reading above, so it could not be traced -- "m isolated
+            # correctly, for example, m = log_3(7/3)" is a notes line and a
+            # fraction line joined.
+            left, right = mathtext.placed(page)
+            for column in (left, right):
+                lines.extend(t for _, t in column if t)
     body = f'{START}\n' + '\n'.join(lines) + f'\n{END}\n'
     text = open(md, encoding='utf-8').read()
     if START in text:
