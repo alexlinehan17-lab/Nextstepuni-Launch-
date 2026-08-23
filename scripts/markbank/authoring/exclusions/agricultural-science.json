@@ -1,0 +1,22 @@
+[
+ {
+  "ref": "2022 OL Q2(b)(ii)",
+  "reason": "recorded product decision: not representable inside the card format without misleading",
+  "evidence": "Cannot be represented inside the five-row cap without misleading. The scheme gives two mutually exclusive reason pools — E = good milk production / prolific / easy lambing / good mothers / hardy or good survival rate / good growth rate / calm or easy to handle / maternal sire, and F = hardy or good survival rate / prolific / good mothers / good growth rate / excellent conformation — nine distinct "
+ },
+ {
+  "ref": "2022 OL Q13(b)(i)",
+  "reason": "recorded product decision: not representable inside the card format without misleading",
+  "evidence": "It is a draw-on-the-photograph answer, which this product does not support. The question is 'Sketch onto the photograph of field A below, the pattern the farmer would use…' and the whole 4 marks ride on one scheme row, 'W shape on photograph'. types/markBank.ts states the position outright in the RowKind comment: the tiered drawing rubric variant is 'deliberately ABSENT. Drawing and graph-shape ca"
+ },
+ {
+  "ref": "2023 HL Q18(a)(i)",
+  "reason": "recorded product decision: not representable inside the card format without misleading",
+  "evidence": "The scheme's answer for B is 'Median suspensory ligament' — the skeptic is right that marking scheme p.27 puts the letter and the answer in separate table cells (letters at x≈325, answers at x≈345, marks '3(1)' at x=498), so nothing is printed between the two words and 'Median suspensory' is a fragment, not a structure. It cannot be repaired at card level. The extracted scheme markdown that the bu"
+ },
+ {
+  "ref": "2025 OL Q8(b)",
+  "reason": "recorded product decision: not representable inside the card format without misleading",
+  "evidence": "The objection requires the 5-mark two-tick answer to be split into two claimable rows so that a student who ticked one correct sign can land on Shaky instead of the all-or-nothing missed/got that one row forces (suggestGrade in components/MarkBank/SessionScreen.tsx confirms this: with a single row the grade is claimedRows 0 = missed, 1 = got). The scheme will not support that split. Its entire ans"
+ }
+]

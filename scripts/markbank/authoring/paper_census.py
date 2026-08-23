@@ -108,11 +108,23 @@ def continuity_flags(parts, texts):
     keys = set(parts)
     prefixes = sorted({k[:-3] for k in keys})     # () or (section,)
     for pre in prefixes:
-        qs = sorted({k[-3] for k in keys if k[:-3] == pre})
+        # Negative numbers are printed choice VARIANTS (Construction Studies
+        # sets Q10 twice joined by OR; the alternative files under -10) and sit
+        # outside the run.
+        # Negative numbers are choice variants, and 'ABQ' is Business's
+        # headless compulsory question — neither sits in the numeric run.
+        qs = sorted({k[-3] for k in keys if k[:-3] == pre
+                     and isinstance(k[-3], int) and k[-3] > 0})
         want = list(range(min(qs), min(qs) + len(qs))) if qs else []
         if qs != want:
             flags.append({'type': 'question-gap', 'where': str(pre or ''),
                           'detail': f'questions found: {qs}'})
+        # A paper starts at Question 1. A census that starts later has LOST a
+        # leading question — Economics lost Q1 twice with no flag firing,
+        # because a gap detector only sees interior holes.
+        if qs and isinstance(qs[0], int) and qs[0] > 1:
+            flags.append({'type': 'question-gap', 'where': str(pre or ''),
+                          'detail': f'first question found is Q{qs[0]}'})
         for q in qs:
             letters = sorted({k[-2] for k in keys
                               if k[:-3] == pre and k[-3] == q and k[-2]})
@@ -145,7 +157,8 @@ def key_label(k):
     parts = list(k)
     q, letter, roman = parts[-3], parts[-2], parts[-1]
     head = f'Section {parts[0]} ' if len(parts) == 4 else ''
-    tail = f'Q{q}'
+    tail = ('ABQ' if q == 'ABQ'
+            else f'Q{-q}-alt' if isinstance(q, int) and q < 0 else f'Q{q}')
     if letter:
         tail += f'({letter})'
     if roman:
@@ -184,11 +197,53 @@ def marks_by_question(P_files, subject):
     return out
 
 
+ROM_INLINE = re.compile(r'\((i{1,3}|iv|v)\)\s*')
+
+
+def complete_leading_romans(parts, texts, stem=lambda q, letter: ''):
+    """Synthesize the roman leaves a part carries but never opens.
+
+    Two printings, one rule. Chemistry writes "(i) ..., (ii) ..." INSIDE a
+    letter's sentence and only breaks to block-leading markers at (iii), so
+    the census saw romans starting mid-run and 16 shipped cards orphaned
+    against asks that were on the page all along. Agricultural Science prints
+    a letter whose body IS its first ask and then numbers the next one (ii).
+    In both cases the parent's own text supplies the missing leading romans.
+    """
+    parts = set(parts)
+    for (q, letter) in {(k[-3], k[-2]) for k in parts if k[-2] and k[-1]}:
+        roms = sorted((k[-1] for k in parts if k[-3] == q and k[-2] == letter
+                       and k[-1]),
+                      key=lambda r: ROMANS.index(r) if r in ROMANS else 99)
+        first = ROMANS.index(roms[0]) if roms[0] in ROMANS else 0
+        if first == 0:
+            continue
+        # The run can sit in the letter's own text OR in its stem — Chemistry
+        # prints the (i)/(ii) sentence after the part's sealed opening, which
+        # files it as stimulus prose.
+        parent = ' '.join(t for t in (texts.get((q, letter, None), ''),
+                                      stem(q, letter) or '') if t)
+        need = ROMANS[:first]
+        markers = [m.group(1) for m in ROM_INLINE.finditer(parent)]
+        if markers[:len(need)] == need:
+            spans = list(ROM_INLINE.finditer(parent))
+            for i, rom in enumerate(need):
+                start = spans[i].end()
+                end = spans[i + 1].start() if i + 1 < len(spans) else len(parent)
+                parts.add((q, letter, rom))
+                texts[(q, letter, rom)] = parent[start:end].strip()
+        elif len(need) == 1 and sum(c.isalnum() for c in parent) >= 6:
+            parts.add((q, letter, 'i'))
+            texts[(q, letter, 'i')] = parent.strip()
+    return parts
+
+
 def census_merged(subject, year, level, component=None):
     P = PP.Paper(subject, year, level, component=component)
     P._adopt_unlettered()
     texts = {k: (P.text(*k) or '') for k in P.parts}
-    return set(P.parts), texts, P.files
+    parts = complete_leading_romans(P.parts, texts, stem=P.stem)
+    return parts, texts, P.files
 
 
 def census_sections(subject, year, level):
@@ -198,6 +253,15 @@ def census_sections(subject, year, level):
     papers start again at Question 1 (or lose their section letter) part way
     through — so every restarted question would be rejected as going
     backwards, which is invisible from outside. Keys carry the section.
+
+    The first audit of this walker found five ways it lost content, all now
+    guarded here: section tokens taken from instruction prose ("Write your
+    answer in the answerbook containing Section A." flipped 2025's Section B
+    into A); capital part markers Business prints as (A)-(E); ruled answer
+    blanks ("(i)" over a blank line) keyed as parts, which also blocked the
+    real ask from whole-question adoption; the Applied Business Question,
+    which is compulsory, worth 80 marks, and headless; and Home Economics'
+    Section C electives, whose sub-heads print glued as "1.(a)" / "or 1.(c)".
     """
     P = PP.Paper.__new__(PP.Paper)
     P.subject, P.year, P.level, P.component = subject, year, level, None
@@ -207,81 +271,137 @@ def census_sections(subject, year, level):
     if not P.files:
         raise FileNotFoundError(f'no {year} {level} paper for {subject}')
 
-    parts, stems = {}, {}
-    section, q, letter, roman = None, None, None, None
+    # Assemble the block stream first, with the glued-head and capital-marker
+    # splits applied, so the neighbour guards can see the whole paper.
+    blocks = []
     for path in P.files:
-        blocks = []
         for block in PP._blocks(path):
             for text in PP.INLINE_QHEAD.split(block):
-                text = text.strip()
-                if not text:
-                    continue
-                head = re.match(r'(\d{1,2}\.)\s+(?=\()', text)
-                prefix = ''
-                if head:
-                    prefix, text = head.group(1) + ' ', text[head.end():]
-                pieces = [p.strip() for p in PP.INLINE_MARKER.split(text)
-                          if p.strip()]
-                for i, piece in enumerate(pieces):
-                    blocks.append((prefix + piece) if i == 0 else piece)
-        for text in blocks:
-            s = SECTION.search(text[:80])
-            if s and len(text) < 200:
-                if s.group(1) != section:
-                    section, q = s.group(1), None
-            m = PP.QHEAD.match(text)
-            if not m:
-                un = PP.RUBRIC_HEAD.sub('', text, count=1)
-                if un != text:
-                    text, m = un, PP.QHEAD.match(un)
-            if m:
-                found = int(m.group(1) or m.group(2))
-                # Within a section numbering only moves forward, and a fresh
-                # section accepts any small start. The guard is the same one
-                # paper.py carries: a number leaping ahead is a numbered list
-                # inside an answer, not a head.
-                if q is None or q < found <= q + 3:
-                    q = found
-                    letter = roman = None
-                    rest = text[m.end():].strip()
-                    if rest and PP._leading(rest)[:2] != (None, None):
-                        text = rest
-                    else:
-                        if rest and not PP.RUBRIC.match(rest):
-                            stems.setdefault((section, q, None), []).append(rest)
-                        continue
-            if q is None:
-                continue
-            if PP.RUBRIC.match(text):
-                continue
-            # Business prints its part markers in capitals — (A), (B), (C) —
-            # and paper.py's marker grammar is lowercase, so every lettered
-            # part of every Business question was invisible and the census
-            # saw only whole questions. Normalised here, at the marker
-            # position only.
-            while True:
-                u = re.match(r'\(([A-H])\)\s*', text)
-                if not u:
-                    break
-                text = f'({u.group(1).lower()}) ' + text[u.end():]
-                break
-            fl, fr, rest = PP._leading(text)
-            if fl or fr:
-                if fl:
-                    letter, roman = fl, fr
-                else:
-                    roman = fr
-                key = (section, q, letter, roman)
-                parts.setdefault(key, [])
-                if rest:
-                    parts[key].append(rest)
-                continue
-            if PP.FURNITURE.match(text):
-                continue
-            stems.setdefault((section, q, letter), []).append(text)
+                # Capital markers mid-block: Business glues "(B) Outline..."
+                # onto the tail of (A)'s prose.
+                for text in re.split(
+                        r'\s(?=\((?:[A-H]|[a-hj-l]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)'
+                        r'\s+[A-Z(0-9\u201c"])', text):
+                    # Home Economics Section C glues its elective sub-heads:
+                    # "or 1.(c)" / "and 3.(b)" / "4.(a)" — split each onto its
+                    # own line so the walker can read it as a head.
+                    for text in re.split(r'\s(?=(?:and\s+|or\s+)?\d\.\([a-z])', text):
+                        text = text.strip()
+                        if not text:
+                            continue
+                        head = re.match(r'(\d{1,2}\.)\s+(?=\()', text)
+                        prefix = ''
+                        if head:
+                            prefix, text = head.group(1) + ' ', text[head.end():]
+                        pieces = [x.strip() for x in PP.INLINE_MARKER.split(text)
+                                  if x.strip()]
+                        for i, piece in enumerate(pieces):
+                            blocks.append((prefix + piece) if i == 0 else piece)
 
-    # A question with no marker anywhere is asked whole — Home Economics
-    # Section A is nothing but these.
+    # A lone number beside other lone numbers is a matching-table row or an
+    # answerbook rule, not a head — the same neighbour argument paper.py makes
+    # for axis labels. 2022 HL Business lost Q2-Q5 to a matching table.
+    lone = [i for i, t in enumerate(blocks)
+            if re.fullmatch(r'[-\u2212]?\d{1,2}\.?', t.strip())]
+    scaffold = {i for i in lone if i - 1 in lone or i + 1 in lone}
+
+    parts, stems = {}, {}
+    section, q, letter, roman = None, None, None, None
+    for index, text in enumerate(blocks):
+        if index in scaffold:
+            continue
+        # A marker-only block — "(B)" alone, its content following — is a real
+        # two-line part opening, so it keys normally; a ruled answer BLANK
+        # (the same shape with nothing after it) dies in the post-walk
+        # empty-part drop instead. Skipping them all here lost Business its
+        # every (B).
+        # A section header is a heading, not a mention: anchored at the block
+        # start, never containing a second "Section" (booklet covers read
+        # "Section B and Section C"), and short or marks-bearing.
+        sh = re.match(r'(?:SECTION|Section)\s+([A-C]|\d{1,2})\b(.{0,160})', text)
+        if sh and 'Section' not in sh.group(2) \
+                and (len(text) < 200 or 'marks' in sh.group(2).lower()):
+            if sh.group(1) != section:
+                section, q, letter, roman = sh.group(1), None, None, None
+            # 'Section 2 Applied Business Question 80 marks' is one block —
+            # the header AND the headless compulsory question it opens.
+            if re.search(r'Applied\s+Business\s+Question', sh.group(2)):
+                q = 'ABQ'
+            continue
+        # The Applied Business Question: compulsory, 80 marks, and headless —
+        # it never says "Question N", so it needs its own key.
+        if re.match(r'Applied\s+Business\s+Question', text):
+            q, letter, roman = 'ABQ', None, None
+            continue
+        # Home Economics Section C: "Elective 1 – Home Design..." heads the
+        # elective, whose sub-heads then use the elective's own number.
+        el = re.match(r'Elective\s+(\d)\b', text)
+        if el and str(section) == 'C':
+            q, letter, roman = int(el.group(1)), None, None
+            continue
+        # Glued elective sub-head: "1.(a) ..." (often prefixed and/or or-ed).
+        gl = re.match(r'(?:and\s+|or\s+)?(\d)\.\(([a-z])\)\s*', text)
+        if gl and str(section) == 'C':
+            q, letter, roman = int(gl.group(1)), gl.group(2), None
+            key = (section, q, letter, None)
+            parts.setdefault(key, [])
+            rest = text[gl.end():].strip()
+            if rest:
+                parts[key].append(rest)
+            continue
+        m = PP.QHEAD.match(text)
+        if not m:
+            un = PP.RUBRIC_HEAD.sub('', text, count=1)
+            if un != text:
+                text, m = un, PP.QHEAD.match(un)
+        if not m and isinstance(q, int):
+            # Business Section 1 sets some heads as a bare '6.' in a block of
+            # its own, the ask following. Only the next number due, and never
+            # one from a scaffold run.
+            ln = re.match(r'^(\d{1,2})\.?$', text)
+            if ln and int(ln.group(1)) == q + 1:
+                q, letter, roman = q + 1, None, None
+                continue
+        if m:
+            found = int(m.group(1) or m.group(2))
+            # Within a section numbering only moves forward, and a fresh
+            # section accepts any small start.
+            if q in (None, 'ABQ') or (isinstance(q, int) and q < found <= q + 3):
+                q = found
+                letter = roman = None
+                rest = text[m.end():].strip()
+                if rest and PP._leading(rest)[:2] != (None, None):
+                    text = rest
+                else:
+                    if rest and not PP.RUBRIC.match(rest):
+                        stems.setdefault((section, q, None), []).append(rest)
+                    continue
+        if q is None:
+            continue
+        if PP.RUBRIC.match(text):
+            continue
+        u = re.match(r'\(([A-H])\)\s*', text)
+        if u:
+            text = f'({u.group(1).lower()}) ' + text[u.end():]
+        fl, fr, rest = PP._leading(text)
+        if fl or fr:
+            if fl:
+                letter, roman = fl, fr
+            else:
+                roman = fr
+            key = (section, q, letter, roman)
+            parts.setdefault(key, [])
+            if rest:
+                parts[key].append(rest)
+            continue
+        if PP.FURNITURE.match(text):
+            continue
+        stems.setdefault((section, q, letter), []).append(text)
+
+    # Drop keys that never accumulated text (unlabelled blanks), THEN adopt
+    # whole questions — the order matters, because a phantom part suppresses
+    # adoption for its whole question.
+    parts = {k: v for k, v in parts.items() if any(x.strip() for x in v)}
     for (section_, q_, letter_), lines in list(stems.items()):
         if letter_ is not None or not lines:
             continue

@@ -1,0 +1,74 @@
+{
+ "agricultural-science": {
+  "cards": 869,
+  "coveragePct": 93.2,
+  "covered": 886,
+  "leaves": 954,
+  "open": 65,
+  "orphans": 2
+ },
+ "biology": {
+  "cards": 1229,
+  "coveragePct": 85.9,
+  "covered": 1405,
+  "leaves": 1636,
+  "open": 231,
+  "orphans": 0
+ },
+ "business": {
+  "cards": 606,
+  "coveragePct": 73.9,
+  "covered": 677,
+  "leaves": 916,
+  "open": 239,
+  "orphans": 6
+ },
+ "chemistry": {
+  "cards": 779,
+  "coveragePct": 84.2,
+  "covered": 962,
+  "leaves": 1143,
+  "open": 181,
+  "orphans": 5
+ },
+ "construction-studies": {
+  "cards": 505,
+  "coveragePct": 84.0,
+  "covered": 419,
+  "leaves": 499,
+  "open": 80,
+  "orphans": 0
+ },
+ "economics": {
+  "cards": 386,
+  "coveragePct": 51.7,
+  "covered": 340,
+  "leaves": 658,
+  "open": 318,
+  "orphans": 0
+ },
+ "home-economics": {
+  "cards": 571,
+  "coveragePct": 69.7,
+  "covered": 545,
+  "leaves": 782,
+  "open": 237,
+  "orphans": 1
+ },
+ "maths": {
+  "cards": 785,
+  "coveragePct": 80.9,
+  "covered": 800,
+  "leaves": 989,
+  "open": 189,
+  "orphans": 0
+ },
+ "physics": {
+  "cards": 961,
+  "coveragePct": 77.4,
+  "covered": 943,
+  "leaves": 1218,
+  "open": 275,
+  "orphans": 12
+ }
+}

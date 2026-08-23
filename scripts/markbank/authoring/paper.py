@@ -91,14 +91,51 @@ INLINE_QHEAD = re.compile(r'(?<=[.)?:])\s+' + QHEAD_AHEAD)
 
 RUBRIC_HEAD = re.compile(
     r'^(?:(?:SECTION|Section)\s+[A-D]\b'
-    r'|Answer\s+(?:any\s+)?[\w\-]+\s+questions?\b)'
-    r'.*?\.\s+' + QHEAD_AHEAD, re.S)
+    # 'Answer five questions', 'Answer any four questions', and Economics'
+    # 'Answer 5 out of 6 questions.' — the last was unmatched, so the head
+    # welded behind it was invisible and six sittings lost Q11 onward.
+    r'|Answer\s+(?:any\s+)?[\w\-]+(?:\s+out\s+of\s+[\w\-]+)?\s+questions?\b)'
+    # The full stop is optional: Economics prints 'Answer 3 out of 6
+    # questions Question 11' with no punctuation at all, and demanding the
+    # stop left six sittings' Question 11 welded invisible. Minimal
+    # matching stops at the FIRST head-shaped token, and the lookahead
+    # still refuses the bare '5' of 'questions 2, 3, 4 and 5.'
+    r'.*?\.?\s+' + QHEAD_AHEAD, re.S)
 
 QHEAD = re.compile(r'^(?:Question\s+(\d{1,2})\b|(\d{1,2})\.\s+(?=[A-Z(\d]))')
 MARKER = re.compile(r'^\(([a-z]{1,4})\)\s*')
-LETTER = re.compile(r'[a-h]')
-ROMAN = re.compile(r'i{1,3}|iv|vi{0,3}')
+# Letters run past (h): Chemistry's Q4 runs to (l) and Physics' lettered-choice
+# questions to (l) as well — every part after (h) was invisible and 61 shipped
+# cards orphaned against a census that had never seen their asks. 'i' is NOT in
+# the letter class: alone it is a roman first, and only the (h)-context rule in
+# Paper.__init__ may upgrade it. Romans run past (viii): Biology prints (ix),
+# Physics (ix)-(xii), and the old alternation topped out at viii so '(ix)'
+# could never split a block or key a part.
+LETTER = re.compile(r'[a-hj-l]')
+ROMAN = re.compile(r'i{1,3}|iv|vi{0,3}|ix|xi{0,3}')
 RUBRIC = re.compile(r'^Answer (either|any|all)\b')
+# A part marker orphaned at the very end of a block: pymupdf glues a marker
+# whose content follows on the next line to the TAIL of the previous block —
+# "...gene and allele. (ii)" — and the marker then vanishes, its children
+# glued to the sibling before it. Seven Biology flags and two silent losses.
+# Guarded by the punctuation before it, so "...shown in part (iii)" mid-prose
+# is never stripped.
+TRAILING_MARKER = re.compile(
+    r'[.?!:]\s+(\((?:[a-hj-l]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\))\s*$')
+# A cross-reference that lands at a block start — "(b) (iii) above." — reads
+# as a real letter+roman marker and re-files the tail of the current ask into
+# an earlier leaf. 25 instances across eight Biology papers.
+CROSSREF = re.compile(
+    r'^\([a-hj-l]\)\s*\([ivx]{1,4}\)\s*(?:\d\.\s*)?(?:above\b|,)')
+# Misprints in the SEC's own papers, applied by (subject, year, level). No
+# numbering heuristic can catch these: 2023 HL Biology prints a bold "16."
+# where "(b)" belongs inside Question 15, which filed Q15(b) under a fake Q16
+# and merged the real Q16 into it.
+MISPRINTS = {
+    ('biology', 2023, 'hl'): [
+        ('16. (i) Draw a large diagram', lambda t: '(b) ' + t[4:]),
+    ],
+}
 PAGE_FURNITURE = re.compile(r'^Leaving Certificate Examination\s+\d{4}')
 # Answer-booklet scaffolding: a numbered answer line, or a short fill-in label
 # ending in a colon ('Named crop:', 'Symptoms:'). Verified across all ten
@@ -109,8 +146,13 @@ TERMINAL = re.compile(r'[.?!]$')
 # turns up mid-text: "(ii) How did the student make the temperature 0 °C?".
 # Anchored on a following capital or bracket, which keeps "(15)" and "(a)" of a
 # chemical name out of it.
+# The lookahead accepts what a part can actually open with: a capital, a
+# bracket, a digit ('(vi) 90 g of...'), a quote, or a mathematical-alphanumeric
+# glyph — Chemistry 2022 OL Q10(a) opens '(vi) 𝐇...' and the [A-Z(] class lost
+# the part.
 INLINE_MARKER = re.compile(
-    r'\s(?=\((?:[a-h]|i{1,3}|iv|vi{0,3})\)\s+[A-Z(])')
+    r'\s(?=\((?:[a-hj-l]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)'
+    '\s+[A-Z(0-9"\u201c\u2018\'\u0391-\u03a9\U0001d400-\U0001d7ff])')
 # A block holding nothing but figure labels ('A B C', 'A: B: C:'). It captions
 # the artwork, so it belongs to the figure, not to the question's prose.
 LABELS_ONLY = re.compile(r'^[A-H]\s*:?(\s+[A-H]\s*:?)*$')
@@ -128,7 +170,23 @@ def _blocks(path):
                 yield text
 
 
-def _opens_a_question(blocks, index):
+def _i_is_letter(blocks, index):
+    """Is a lone "(i)" after "(h)" the ninth letter or the first roman?
+
+    Decided by what follows: a "(j)" ahead of any "(ii)" means the letter run
+    continues. Chemistry 2024 HL Q4 runs (a)-(l); Biology prints (h)(i)(ii)
+    roman runs. Neither side can be a default without breaking the other.
+    """
+    for text in blocks[index + 1:index + 10]:
+        t = text.strip()
+        if re.match(r'^\(ii\)', t):
+            return False
+        if re.match(r'^\(j\)', t):
+            return True
+    return False
+
+
+def _opens_a_question(blocks, index, open_letter=None):
     """Does a bare number here start a question, or label a graph?
 
     A question's first part is (a), or (i), or prose. So if the next part
@@ -137,10 +195,17 @@ def _opens_a_question(blocks, index):
     Q7 labels its x-axis up to 8, and that "8" was read as Question 8 -- taking
     parts (d) to (g) of Question 7 with it. The neighbour test that catches an
     axis of several labels cannot catch a single one.
+
+    And a roman next to a bare number while a LETTER is open is that letter's
+    own numbering continuing, not a new question: three Maths papers had a
+    stray figure label accepted as a head because "(i)" followed it, which
+    created bare-roman leaves under a question that never printed them.
     """
     for text in blocks[index + 1:index + 7]:
         letter, roman, _ = _leading(text)
         if letter or roman:
+            if roman and not letter and open_letter is not None:
+                return False
             return letter in (None, 'a') and roman in (None, 'i')
     return True
 
@@ -190,6 +255,9 @@ class Paper:
         self.parts, self.stems = {}, {}
         q = letter = roman = None
         open_key = None          # the part a continuation block may extend
+        or_pending = False       # a standalone OR announces a choice variant
+        dot_heads = 0            # how many 'N.'-style heads were accepted
+        qkind = {}               # q -> 'letter'|'roman': which marker opened it
         blocks = list(self._all_blocks())
         # A contents page lists "Question 12", "Question 13" and so on as bare
         # blocks with nothing under them. The second Biology booklet prints one,
@@ -212,6 +280,26 @@ class Paper:
         for index, text in enumerate(blocks):
             if index in contents:
                 continue
+            # A standalone OR announces that the next head, though it repeats
+            # the current question number, is a printed ALTERNATIVE the
+            # student may choose instead — Construction Studies HL sets Q10
+            # twice this way every year. The variant files under -q so its
+            # parts never collide with the first printing's.
+            if re.fullmatch(r'OR', text):
+                or_pending = True
+                continue
+            if text.startswith('OR ') and QHEAD.match(text[3:]):
+                or_pending, text = True, text[3:]
+            # 2025 HL Economics letterspaces a head as 'Question 1 2' — two
+            # digits, one question. QHEAD would happily read it as Question 1
+            # and the forward guard would then discard it, so the joined
+            # reading must come FIRST, taken only when the join is the next
+            # question due and the split reading is not.
+            sp = re.match(r'^Question\s+(\d)\s+(\d)\b', text)
+            if sp and q is not None:
+                joined_q = int(sp.group(1) + sp.group(2))
+                if q < joined_q <= q + 3 and not q < int(sp.group(1)) <= q + 3:
+                    text = f'Question {joined_q}' + text[sp.end():]
             m = QHEAD.match(text)
             if not m and q is not None:
                 # Not every head is printed as "N." followed by a word. 2025 OL
@@ -222,8 +310,13 @@ class Paper:
                 # are only read as a head when the number is the very next
                 # question due — no gap, no tolerance.
                 loose = re.match(r'(\d{1,2})\.?(\s+|$)', text)
-                if loose and index not in axis and int(loose.group(1)) == q + 1 \
-                        and _opens_a_question(blocks, index):
+                # Only papers that head questions 'N.' earn loose bare-number
+                # heads at all: Agricultural Science writes the literal
+                # 'Question N' everywhere, and a stray '19' in a diagram was
+                # its only bare number — accepted, it invented a Question 19.
+                if loose and dot_heads and index not in axis \
+                        and int(loose.group(1)) == q + 1 \
+                        and _opens_a_question(blocks, index, letter):
                     text = f'{loose.group(1)}. {text[loose.end():]}'.strip()
                     m = QHEAD.match(text) or QHEAD.match(text + ' X')
             if not m:
@@ -244,10 +337,14 @@ class Paper:
                 # questions. Backwards is always wrong; the gap allows for a
                 # question this parser missed and for a paper that resumes at 11
                 # after a Section A ending at 8.
-                if q is not None and not (q < found <= q + 3):
+                variant = or_pending and q is not None and found == abs(q)
+                if q is not None and not (q < found <= q + 3) and not variant:
                     pass
                 else:
-                    q = found
+                    if m.group(2):
+                        dot_heads += 1
+                    q = -found if variant else found
+                    or_pending = False
                     letter, roman, open_key = None, None, None
                     self.stems.setdefault((q, None), [])
                     rest = text[m.end():].strip()
@@ -266,8 +363,50 @@ class Paper:
             if RUBRIC.match(text):
                 continue
 
+            if CROSSREF.match(text):
+                # "(b) (iii) above." is the tail of the CURRENT ask referring
+                # back, not a marker — reading it as one re-filed the rest of
+                # the sentence into an earlier leaf.
+                if open_key:
+                    self.parts[open_key].append(text)
+                else:
+                    self.stems.setdefault((q, letter), []).append(text)
+                continue
+
             found_letter, found_roman, rest = _leading(text)
+            if found_roman == 'i' and not found_letter and letter == 'h' \
+                    and roman is None and _i_is_letter(blocks, index):
+                # After (h), a lone (i) is the ninth LETTER when the run goes
+                # on to (j) — Chemistry's Q4 runs (a) to (l) — and the first
+                # roman when it does not. The blocks ahead decide.
+                found_letter, found_roman = 'i', None
+            if found_letter in ('j', 'k', 'l') and letter != (
+                    'i' if found_letter == 'j'
+                    else chr(ord(found_letter) - 1)):
+                # The high letters only ever CONTINUE a run: (k) out of
+                # nowhere is Construction Studies' thermal-conductivity
+                # symbol, not part (k) — extending the alphabet without this
+                # guard invented a phantom Q5(k) in all ten HL papers.
+                if open_key:
+                    self.parts[open_key].append(f'({found_letter}) {rest}')
+                else:
+                    self.stems.setdefault((q, letter), []).append(
+                        f'({found_letter}) {rest}')
+                continue
             if found_letter or found_roman:
+                if qkind.get(q) is None:
+                    qkind[q] = 'letter' if found_letter else 'roman'
+                if qkind.get(q) == 'roman' and found_letter and not found_roman:
+                    # A roman-major question (Physics: parts are (i)..(x))
+                    # enumerates WITHIN a part as (a), (b) — those are lines
+                    # of the current ask, not new top-level parts, and keying
+                    # them invented letter leaves the paper never printed.
+                    if open_key:
+                        self.parts[open_key].append(f'({found_letter}) {rest}')
+                    else:
+                        self.stems.setdefault((q, None), []).append(
+                            f'({found_letter}) {rest}')
+                    continue
                 if found_letter:
                     letter, roman = found_letter, found_roman
                 else:
@@ -285,7 +424,12 @@ class Paper:
                 open_key = None
                 continue
 
-            if open_key and not TERMINAL.search(' '.join(self.parts[open_key])):
+            joined = ' '.join(self.parts[open_key]) if open_key else ''
+            # Sealed by a full stop only when there are words to seal: a bare
+            # given like "g′(5) = 6." is a premise, not a closed ask, and
+            # sealing on it filed the real instruction into the stem.
+            sealed = TERMINAL.search(joined) and re.search(r'[A-Za-z]{3,}', joined)
+            if open_key and not sealed:
                 self.parts[open_key].append(text)      # continuation
                 continue
 
@@ -307,9 +451,15 @@ class Paper:
         to 15 and, when a lone number was allowed to head a question, how
         Agricultural Science lost the parts underneath every ruled answer box.
         """
+        fixes = MISPRINTS.get((self.subject, self.year, self.level), [])
+        carry = ''
         for path in self.files:
             for block in _blocks(path):
-              for text in INLINE_QHEAD.split(block):
+              # A choice question prints its alternative welded on after a
+              # standalone OR — Construction Studies HL sets Q10 twice this
+              # way — and the second head must stand alone to be read at all.
+              for text in re.split(r'\s+(?=OR\s+\d{1,2}\.\s+[A-Z(])', block):
+               for text in INLINE_QHEAD.split(text):
                 text = text.strip()
                 if not text:
                     continue
@@ -319,7 +469,20 @@ class Paper:
                     prefix, text = head.group(1) + ' ', text[head.end():]
                 pieces = [p.strip() for p in INLINE_MARKER.split(text) if p.strip()]
                 for i, piece in enumerate(pieces):
-                    yield (prefix + piece) if i == 0 else piece
+                    piece = (prefix + piece) if i == 0 else piece
+                    if carry:
+                        piece, carry = f'{carry} {piece}', ''
+                    for prefix_txt, fix in fixes:
+                        if piece.startswith(prefix_txt):
+                            piece = fix(piece)
+                    t = TRAILING_MARKER.search(piece)
+                    if t:
+                        carry = t.group(1)
+                        piece = piece[:t.start(1)].rstrip()
+                    if piece:
+                        yield piece
+        if carry:
+            yield carry
 
     def _adopt_unlettered(self):
         """A question with no (a) or (i) IS a part, and was being lost.

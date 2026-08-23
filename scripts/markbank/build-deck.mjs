@@ -598,6 +598,22 @@ ${rows}
 }
 
 process.stderr.write(`${SUBJECT.title}: built ${out.length} cards, dropped ${dropped.length}\n`);
+/* Every build ends with the paper-anchored ledger, so nobody can ship a deck
+ * without the coverage number in front of them — the class of failure where
+ * "64 cards" was reported for a subject whose papers print 500 asks. Best
+ * effort: a machine without python3 still builds. */
+try {
+  const { execSync } = await import('node:child_process');
+  const led = execSync(
+    `python3 ${resolve(ROOT, 'scripts/markbank/authoring/reconcile.py')} ${SUBJECT_ID}`,
+    { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
+  process.stderr.write(`LEDGER ${led.split('\n')[0]}\n`);
+} catch (e) {
+  const first = String(e.stdout ?? '').split('\n')[0];
+  process.stderr.write(first
+    ? `LEDGER ${first}\n`
+    : 'LEDGER unavailable (python3 missing?) — run reconcile.py by hand\n');
+}
 for (const d of dropped) process.stderr.write(`  DROPPED ${d}\n`);
 for (const r of repaired) process.stderr.write(`  REPAIRED ${r}\n`);
 for (const o of overCap) process.stderr.write(`  OVER CAP ${o}\n`);
