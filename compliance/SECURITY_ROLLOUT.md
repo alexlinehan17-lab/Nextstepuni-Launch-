@@ -3,8 +3,9 @@
 Status: the hardened backend, Firestore and Storage rules, Functions, Hosting
 release, administrator claim, Authentication password policy, retention
 policies, browser-key restrictions and web App Check registration were rolled
-out to `nextstepuni-app` on 2026-08-23. App Check enforcement and retirement of
-the legacy CI key remain deliberately staged as described below.
+out to `nextstepuni-app` on 2026-08-23. The keyless deployment workflow has
+completed successfully and the legacy CI credential has been retired. App
+Check enforcement remains deliberately staged as described below.
 
 The deployed release now fails closed around revoked sessions, server-owned
 roles, peer actions, account deletion and privileged administration.
@@ -40,7 +41,10 @@ Completed:
 - added the Workload Identity provider, deploy-service-account and App Check
   site-key values to GitHub Actions secrets, and independently verified all 25
   Firebase deployment permissions plus both runtime-service-account
-  impersonation boundaries using short-lived credentials; and
+  impersonation boundaries using short-lived credentials;
+- completed a real `main` deployment using only Workload Identity Federation,
+  then permanently deleted the old Google Cloud service-account key and its
+  matching `FIREBASE_SERVICE_ACCOUNT` GitHub Actions secret; and
 - completed two clean local release gates: lint, application and test
   type-checks, 2,665 tests, production build, Functions build, 18 Firestore
   rules-emulator tests and both dependency audits with zero vulnerabilities.
@@ -51,19 +55,15 @@ Production acceptance evidence:
 - CSP, HSTS, frame, MIME-sniffing, referrer and permissions-policy headers are
   present on the production response;
 - the live module bundle contains the registered App Check site-key identifier;
-  and
-- Firebase reports all 25 expected Functions deployed.
+  Firebase reports all 25 expected Functions deployed; and
+- GitHub Actions run `32656639106` and its CodeQL run both completed
+  successfully for production commit `6694cd42866c34b58628f485a905bebacaf70523`.
 
 Still staged intentionally:
 
 - App Check enforcement remains off for Functions, Firestore and Storage until
   iOS and Android providers are registered, released and verified in App Check
   metrics. Enforcing it now would lock out the current native clients.
-- The legacy `FIREBASE_SERVICE_ACCOUNT` GitHub secret and matching Google Cloud
-  key must remain active until the Workload Identity workflow in this checkout
-  is committed to `main` and completes one real federated deployment. Deleting
-  it before that proof would break the workflow that currently exists on
-  `main`.
 - The historical App Review password must be changed by the account owner in a
   password manager and the private store-review consoles; no replacement
   credential may be generated or recorded in this repository.
