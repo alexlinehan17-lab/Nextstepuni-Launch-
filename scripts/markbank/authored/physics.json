@@ -29092,6 +29092,355 @@
   "stem": "520 N 520 N 1900 kg 680 N 520 N 1900 kg"
  },
  {
+  "id": "phys-2024-ol-q2-i",
+  "topicId": "phys-u2",
+  "conceptId": "apparatus-for-the-focal-length-experiment",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2024 OL Q2(i)",
+  "questionText": "Draw a labelled diagram of the arrangement of the apparatus used in this experiment.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 + 4 + 2 + 2"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "converging lens",
+    "marks": 4
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "object",
+    "marks": 4
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "screen",
+    "marks": 2
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "correct arrangement",
+    "marks": 2
+   }
+  ],
+  "stem": "A student carried out an experiment to measure f, the focal length of a converging lens. u (cm) 18 25 30 v (cm) 90 38 30",
+  "notes": "The scheme takes a mark off if the diagram carries no labels."
+ },
+ {
+  "id": "phys-2024-ol-q5-i",
+  "topicId": "phys-u2",
+  "conceptId": "apparatus-for-the-resistance-temperature-experiment",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2024 OL Q5(i)",
+  "questionText": "Draw a labelled diagram of the arrangement of the apparatus used in this experiment.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 + 4 + 2 + 2"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "conductor",
+    "marks": 4
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "ohmmeter",
+    "marks": 4
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "thermometer",
+    "marks": 2
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "arrangement",
+    "marks": 2
+   }
+  ],
+  "stem": "A student carried out an experiment to investigate how the resistance R of a metallic conductor changes with temperature T. T (°C) 10 20 30 40 50 60 R (Ω) 5.2 5.9 6.5 7.2 7.9 8.5 Each question carries 56 marks.",
+  "notes": "The scheme takes a mark off if the diagram carries no labels."
+ },
+ {
+  "id": "phys-2024-ol-q5-iv",
+  "topicId": "phys-u2",
+  "conceptId": "graph-of-resistance-against-temperature-ol",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2024 OL Q5(iv)",
+  "questionText": "Use the data to plot a graph to show the relationship between T and R.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 + 6 × 1 + 3"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "labelled axis",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "points plotted",
+    "marks": 6
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "line of best fit",
+    "marks": 3
+   }
+  ],
+  "stem": "A student carried out an experiment to investigate how the resistance R of a metallic conductor changes with temperature T. T (°C) 10 20 30 40 50 60 R (Ω) 5.2 5.9 6.5 7.2 7.9 8.5 Each question carries 56 marks."
+ },
+ {
+  "id": "phys-2024-ol-q7-iv",
+  "topicId": "phys-1-2",
+  "conceptId": "forces-on-a-bar-held-still",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2024 OL Q7(iv)",
+  "questionText": "Draw a diagram of the forces acting on the bar when it is held at a height of 46 cm.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 + 4 + 1"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "arrow up arrow down same length",
+    "marks": 9
+   }
+  ],
+  "stem": "Oleksii Novikov from Ukraine broke the world record in 2020 in the deadlift. He achieved the world record by lifting a mass of 537.5 kg from the ground to a height of 46 cm. In 2020, Novikov won the World’s Strongest Man competition. One of the events in this competition is a bus pull. The bus has a mass of 19 000 kg."
+ },
+ {
+  "id": "phys-2024-ol-q7-viii",
+  "topicId": "phys-1-1",
+  "conceptId": "velocity-time-graph-of-a-bus-journey",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2024 OL Q7(viii)",
+  "questionText": "Draw a velocity–time graph for the motion of the bus during the 52 s. (17) acceleration due to gravity g = 9.8 m s–2 Leaving Certificate, 2024 Physics – Ordinary Level 6",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "labelled axis",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "acceleration shown",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "constant velocity shown",
+    "marks": 3
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "deceleration shown",
+    "marks": 3
+   }
+  ],
+  "stem": "Oleksii Novikov from Ukraine broke the world record in 2020 in the deadlift. He achieved the world record by lifting a mass of 537.5 kg from the ground to a height of 46 cm. In 2020, Novikov won the World’s Strongest Man competition. One of the events in this competition is a bus pull. The bus has a mass of 19 000 kg."
+ },
+ {
+  "id": "phys-2024-ol-q8-v",
+  "topicId": "phys-2-3",
+  "conceptId": "ray-diagram-for-a-magnified-image",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2024 OL Q8(v)",
+  "questionText": "In your answerbook, copy and complete the ray diagram below to show how a magnified image is formed in a concave mirror.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "first incident ray",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "first reflected ray",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "second reflected ray",
+    "marks": 3
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "image formed",
+    "marks": 2
+   }
+  ],
+  "stem": "Light can be reflected by many different surfaces. The picture on the right shows light being reflected from a plane mirror. An image is formed. One of the laws of reflection of light states that the angle of incidence equals the angle of reflection. f ● object The picture on the right shows images in a concave mirror. An object is placed 20 cm in front of a concave mirror and the image is formed 40 cm in front of the mirror."
+ },
+ {
+  "id": "phys-2024-ol-q12-vii",
+  "topicId": "phys-4-3",
+  "conceptId": "where-the-neutrons-are-in-an-atom",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2024 OL Q12(vii)",
+  "questionText": "Draw a diagram of an atom and indicate where the neutrons are located.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "diagram of atom indicating neutrons in the nucleus",
+    "marks": 6
+   }
+  ],
+  "stem": "The picture on the right is a nuclear fission reactor in Kamataka, a state in India. The control rods and the moderator play a very important role in the production of energy by nuclear fission. Pu–239 is an isotope of plutonium. It has a half-life of 24 110 years. Pu94 239  X + α2 4 When uranium undergoes nuclear fission, neutrons are produced in the reaction. These help sustain a chain reaction. Neutrons are sub-atomic particles. Nuclear fusion is another type of nuclear reaction. (ix) What is meant by nuclear fusion? (x) State one advantage of a nuclear fusion reactor over a nuclear fission reactor. (38) Leaving Certificate, 2024 Physics – Ordinary Level 11"
+ },
+ {
+  "id": "phys-2024-ol-q13e",
+  "topicId": "phys-4-2",
+  "conceptId": "parts-of-an-x-ray-tube-ol",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2024 OL Q13(e)",
+  "questionText": "Draw a labelled diagram of an X-ray tube. (7)",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 + 2 + 2"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "heating filament",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "cathode and anode target",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "high voltage",
+    "marks": 2
+   }
+  ],
+  "stem": "Read the following passage and answer the questions below. Every year astronauts go to the International Space Station (ISS). They have to live and work in microgravity for months. The ISS orbits at an altitude of 322 km. It completes one revolution of the Earth every 90 minutes. At this altitude, acceleration due to gravity is about 90% of what it is on the Earth’s surface. A big problem with this environment is loss of bone mass. Bones grow and change to adapt to your body's needs. In microgravity, the breaking down of bones happens faster than the rebuilding. This is because bones adapt to this new environment where they don't have to carry the body’s weight due to the reduced gravity. Astronauts may be more likely to fracture their bones later in life. Because of this issue, astronauts spend a lot of their time in space doing exercise. The leg and arm bones of 17 astronauts before and after spaceflight were examined. A computed tomography (CT) scanner was used which provided high resolution 3D images. The bones were examined for thickness, strength and density. The goal was to understand the role of exercising before and during spaceflight. Adapted from: www.ScienceJournalForKids.org",
+  "notes": "The scheme also credits shielding and the glass tube, and takes a mark off if the diagram carries no labels."
+ },
+ {
+  "id": "phys-2024-ol-q14b-ii",
+  "topicId": "phys-3-3",
+  "conceptId": "resistance-temperature-graph-for-a-thermistor",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2024 OL Q14(b)(ii)",
+  "questionText": "Sketch a graph to show the relationship between resistance and temperature for a thermistor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "labelled axis",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "correct shape",
+    "marks": 3
+   }
+  ]
+ },
+ {
+  "id": "phys-2024-ol-q14d-v",
+  "topicId": "phys-3-1",
+  "conceptId": "charge-on-a-pear-shaped-conductor",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "B",
+  "questionRef": "2024 OL Q14(d)(v)",
+  "questionText": "Draw a diagram to show how charge is distributed on a pear-shaped conductor. (10) Leaving Certificate, 2024 Physics – Ordinary Level 14 Acknowledgements Images Image on page 2: State Examinations Commission Image on page 4: State Examinations Commission Image on page 5: www.britannica.com/science/ Image on page 6: giants-live.com Images on page 7: maggiesscienceconnection.weebly.com/; State Examinations Commission; maggiesscienceconnection.weebly.com/ Images on page 9: www.istockphoto.com/photos/; State Examinations Commission; www.theguardian.com/music/2019/jul/09/flute-lizzo-and-the-woodwind-renaissance Images on page 10: shutterstock.com; State Examinations Commission Image on page 11: www.powermag.com/ Image on page 12: www.ScienceJournalForKids.org Images on page 13: State Examinations Commission; State Examinations Commission; www.pyrosales.com.au/ Images on page 14: State Examinations Commission; www.britannica.com/science/static-electricity; www.curiousscience.com/ Leaving Certificate, 2024 Physics – Ordinary Level 15 Do not hand this up.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "charges accumulated at the pointed end",
+    "marks": 4
+   }
+  ],
+  "stem": "A student performed an experiment to investigate how charge is distributed on a pear-shaped conductor. This document will not be returned to the State Examinations Commission. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate Examination – Ordinary Level Physics Wednesday, 19 June Morning, 9:30 – 12:30 Leaving Certificate, 2024 Physics – Ordinary Level 16"
+ },
+ {
   "id": "phys-2025-hl-q14c-ii",
   "topicId": "phys-4-4",
   "conceptId": "beta-decay-equation-iodine-131",

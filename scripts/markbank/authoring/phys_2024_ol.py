@@ -52,4 +52,70 @@ A.card(14, 'a', 'v', topic='phys-1-2', concept='net-force-when-forces-do-not-bal
 A.card(14, 'a', 'vii', topic='phys-1-1', concept='velocity-under-an-unbalanced-force',
        source='pdf', from_run=((14, 'a', 'vii'), 0, slice(0, 9)), marks=[5], checked='The paper prints the part mark in brackets after the question, so the text ends on a number rather than punctuation. The question itself is complete.')
 
+
+# ── Drawing questions whose scheme says what the drawing must show ─────────
+A.card(2, None, 'i', topic='phys-u2', concept='apparatus-for-the-focal-length-experiment',
+       source='pdf',
+       from_runs=[((2, None, 'i'), 0, slice(0, 2)),
+                  ((2, None, 'i'), 0, slice(2, 3)),
+                  ((2, None, 'i'), 0, slice(3, 4)),
+                  ((2, None, 'i'), 0, slice(4, 6))],
+       marks=[4, 4, 2, 2], notation='4 + 4 + 2 + 2', notes='The scheme takes a mark off if the diagram carries no labels.')
+
+A.card(5, None, 'i', topic='phys-u2', concept='apparatus-for-the-resistance-temperature-experiment',
+       source='pdf',
+       from_runs=[((5, None, 'i'), 0, slice(0, 1)),
+                  ((5, None, 'i'), 0, slice(1, 2)),
+                  ((5, None, 'i'), 0, slice(2, 3)),
+                  ((5, None, 'i'), 0, slice(3, 4))],
+       marks=[4, 4, 2, 2], notation='4 + 4 + 2 + 2', notes='The scheme takes a mark off if the diagram carries no labels.')
+
+A.card(5, None, 'iv', topic='phys-u2', concept='graph-of-resistance-against-temperature-ol',
+       source='pdf',
+       from_runs=[((5, None, 'iv'), 0, slice(0, 2)),
+                  ((5, None, 'iv'), 0, slice(3, 6)),
+                  ((5, None, 'iv'), 0, slice(6, 10))],
+       marks=[3, 6, 3], notation='3 + 6 × 1 + 3')
+
+A.card(7, None, 'iv', topic='phys-1-2', concept='forces-on-a-bar-held-still',
+       source='pdf', from_run=((7, None, 'iv'), 0, slice(0, 6)), marks=[9],
+       notation='4 + 4 + 1')
+
+A.card(7, None, 'viii', topic='phys-1-1', concept='velocity-time-graph-of-a-bus-journey',
+       source='pdf',
+       from_runs=[((7, None, 'viii'), 0, slice(0, 2)),
+                  ((7, None, 'viii'), 0, slice(3, 5)),
+                  ((7, None, 'viii'), 0, slice(6, 9)),
+                  ((7, None, 'viii'), 0, slice(10, 12))],
+       marks=[3, 3, 3, 3], checked='The paper prints the part mark in brackets after the question, so the text ends on a number rather than punctuation. The question itself is complete.')
+
+A.card(8, None, 'v', topic='phys-2-3', concept='ray-diagram-for-a-magnified-image',
+       source='pdf',
+       from_runs=[((8, None, 'v'), 0, slice(0, 3)),
+                  ((8, None, 'v'), 0, slice(4, 7)),
+                  ((8, None, 'v'), 0, slice(8, 11)),
+                  ((8, None, 'v'), 0, slice(12, 14))],
+       marks=[3, 3, 3, 2])
+
+A.card(12, None, 'vii', topic='phys-4-3', concept='where-the-neutrons-are-in-an-atom',
+       source='pdf', from_run=((12, None, 'vii'), 0, slice(0, 8)), marks=[6])
+
+A.card(13, 'e', topic='phys-4-2', concept='parts-of-an-x-ray-tube-ol',
+       source='pdf',
+       from_runs=[((13, 'e', None), 0, slice(0, 2)),
+                  ((13, 'e', None), 0, slice(2, 6)),
+                  ((13, 'e', None), 1, slice(0, 2))],
+       marks=[3, 2, 2], notation='3 + 2 + 2', checked='The paper prints the part mark in brackets after the question, so the text ends on a number rather than punctuation. The question itself is complete.',
+       notes='The scheme also credits shielding and the glass tube, and takes a mark off '
+             'if the diagram carries no labels.')
+
+A.card(14, 'b', 'ii', topic='phys-3-3', concept='resistance-temperature-graph-for-a-thermistor',
+       source='pdf',
+       from_runs=[((14, 'b', 'ii'), 0, slice(0, 2)),
+                  ((14, 'b', 'ii'), 0, slice(3, 5))],
+       marks=[3, 3])
+
+A.card(14, 'd', 'v', topic='phys-3-1', concept='charge-on-a-pear-shaped-conductor',
+       source='pdf', from_run=((14, 'd', 'v'), 0, slice(0, 6)), marks=[4], checked='The paper prints the part mark in brackets after the question, so the text ends on a number rather than punctuation. The question itself is complete.')
+
 A.emit()
