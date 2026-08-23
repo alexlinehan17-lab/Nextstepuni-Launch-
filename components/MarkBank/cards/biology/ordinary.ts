@@ -9229,7 +9229,7 @@ export const CARDS: SecCard[] = [
     questionText: "Draw a food chain using the information from the above passage. (27)",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Pine nuts  Squirrel  Pine marten", marks: 3 },
+    { id: "r-1", kind: "point", verbatim: "Pine nuts → Squirrel → Pine marten", marks: 3 },
     ],
   } as SecCard,
   {
@@ -9359,7 +9359,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
     id: "bio-2022-ol-q8-b-iii", topicId: "bio-u1", conceptId: "percentage-frequency-from-a-quadrat-table",
     section: "A", questionRef: "2022 OL Q8(b)(iii)",
-    stem: "The table below shows the data collected during the survey. Plant Station 1 Station 2 Station 3 Station 4 Station 5 Plantain    Daisy     Dandelion  ",
+    stem: "The table below shows the data collected during the survey. Plant Station 1 Station 2 Station 3 Station 4 Station 5 Plantain ✓ ✓ ✓ Daisy ✓ ✓ ✓ ✓ Dandelion ✓ ✓",
     questionText: "What is the % frequency of the other two named plants in the table above?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [

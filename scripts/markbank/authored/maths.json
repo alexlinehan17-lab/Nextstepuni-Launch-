@@ -59,7 +59,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q2(b)",
-  "questionText": "(x + 4) is a factor of f(x) = x3 + qx²−22x + 56, where x∈ℝ and q∈ℤ. Show that q = −5, and find the three roots of f(x)",
+  "questionText": "(x + 4) is a factor of f(x) = x³ + qx²−22x + 56, where x∈ℝ and q∈ℤ. Show that q = −5, and find the three roots of f(x)",
   "stem": "",
   "figureKey": "maths-2021-HL-paper-p010-i0",
   "labelKey": [],
@@ -134,7 +134,7 @@
       "xz = 2√2 and yz = 8√6 and xy = 4√3",
       "x²y²z² = (2√2)(8√6)( 4√3) If solving by isolating variables:",
       "xz = 2√2, or similar",
-      "2√2 4√3 ௫ and z = y = ௫ , or similar",
+      "2√2 4√3 x and z = y = x , or similar",
       "1 dimension found"
      ],
      "perOptionSteps": [
@@ -151,13 +151,13 @@
  {
   "id": "maths-2021-hl-p1-q3-b-i",
   "topicId": "maths-4-2",
-  "conceptId": "given-3x2-two-roots",
+  "conceptId": "given-two-roots",
   "level": "higher",
   "year": 2021,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q3(b)(i)",
-  "questionText": "Given that f(x) = 3x2 + 8x−35, where x∈ℝ, find the two roots of f(x) = 0",
+  "questionText": "Given that f(x) = 3x² + 8x−35, where x∈ℝ, find the two roots of f(x) = 0",
   "stem": "",
   "figureKey": "maths-2021-HL-paper-p011-i1",
   "labelKey": [],
@@ -202,7 +202,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q3(b)(ii)",
-  "questionText": "(ii) Hence or otherwise, solve the equation 3^(2௠+1) = 35 −8(3^௠), where m∈ℝ. Give your answer in the form m = log3p−q, where p, q∈ℕ",
+  "questionText": "(ii) Hence or otherwise, solve the equation 3^(2m + 1) = 35 −8(3^m), where m∈ℝ. Give your answer in the form m = log3p−q, where p, q∈ℕ",
   "stem": "",
   "figureKey": "maths-2021-HL-paper-p012-i0",
   "labelKey": [],
@@ -218,7 +218,7 @@
    {
     "id": "maths-2021-hl-p1-q3-b-ii-r1",
     "kind": "anyN",
-    "verbatim": "Some work in writing given equation in the form of that in (b)(i) –5 explicitly excluded x = 3^௠",
+    "verbatim": "Some work in writing given equation in the form of that in (b)(i) –5 explicitly excluded x = 3^m",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; High Partial Credit.",
@@ -226,8 +226,8 @@
      "claimMax": 2,
      "perOption": 3,
      "options": [
-      "Some work in writing given equation in the form of that in (b)(i) –5 explicitly excluded x = 3^௠",
-      "m isolated correctly, for example, 3) m = log3( Full Credit –1: 3^௠= −5 written down, and not explicitly excluded"
+      "Some work in writing given equation in the form of that in (b)(i) –5 explicitly excluded x = 3^m",
+      "m isolated correctly, for example, 3) m = log3( Full Credit –1: 3^m = −5 written down, and not explicitly excluded"
      ],
      "perOptionSteps": [
       3,
@@ -247,7 +247,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q4(a)",
-  "questionText": "Prove using induction that 2^(3௡−1) + 3 is divisible by 7 for all n∈ℕ",
+  "questionText": "Prove using induction that 2^(3n−1) + 3 is divisible by 7 for all n∈ℕ",
   "stem": "",
   "figureKey": "maths-2021-HL-paper-p013-i0",
   "labelKey": [],
@@ -332,7 +332,7 @@
  },
  {
   "id": "maths-2021-hl-p1-q5-a-i",
-  "topicId": "maths-5-1",
+  "topicId": "maths-2-3",
   "conceptId": "value-value-value",
   "level": "higher",
   "year": 2021,
@@ -365,7 +365,7 @@
      "options": [
       "Any correct differentiation",
       "Differentiation fully correct",
-      "any 2 of a or b or c correctly identified 6[(x + 1)2−3] Full Credit –1 6(x + 1)2−18"
+      "any 2 of a or b or c correctly identified 6[(x + 1)²−3] Full Credit –1 6(x + 1)²−18"
      ],
      "perOptionSteps": [
       3,
@@ -379,14 +379,14 @@
  },
  {
   "id": "maths-2021-hl-p1-q5-a-ii",
-  "topicId": "maths-5-1",
+  "topicId": "maths-5-2",
   "conceptId": "36x-range-values-which",
   "level": "higher",
   "year": 2021,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q5(a)(ii)",
-  "questionText": "(ii) If g(x) = 36x + 5, find the range of values of x for which f^ᇱ(x) > g^ᇱ(x)",
+  "questionText": "(ii) If g(x) = 36x + 5, find the range of values of x for which f′(x) > g′(x)",
   "stem": "",
   "figureKey": "maths-2021-HL-paper-p015-i1",
   "labelKey": [],
@@ -433,7 +433,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q5(b)",
-  "questionText": "(b) The diagram below shows t, the tangent line to h(x) = 2 sin(2x) , where 0 ≤ x ≤ 𝜋, at the point where x = గ 6. A(0, k), where k∈ℝ, is the point where t cuts the y-axis. Find the value of k correct to two decimal places",
+  "questionText": "(b) The diagram below shows t, the tangent line to h(x) = 2 sin(2x) , where 0 ≤ x ≤ 𝜋, at the point where x = 𝜋 6. A(0, k), where k∈ℝ, is the point where t cuts the y-axis. Find the value of k correct to two decimal places",
   "stem": "",
   "figureKey": "maths-2021-HL-paper-p016-i0",
   "labelKey": [],
@@ -449,7 +449,7 @@
    {
     "id": "maths-2021-hl-p1-q5-b-r1",
     "kind": "anyN",
-    "verbatim": "Work of merit, for example, some correct differentiation; గ 6 in to h(x); substitutes formula for slope or equation of a line with some substitution",
+    "verbatim": "Work of merit, for example, some correct differentiation; 𝜋 6 in to h(x); substitutes formula for slope or equation of a line with some substitution",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
@@ -457,7 +457,7 @@
      "claimMax": 3,
      "perOption": 3,
      "options": [
-      "Work of merit, for example, some correct differentiation; గ 6 in to h(x); substitutes formula for slope or equation of a line with some substitution",
+      "Work of merit, for example, some correct differentiation; 𝜋 6 in to h(x); substitutes formula for slope or equation of a line with some substitution",
       "2 steps correct",
       "3 steps correct"
      ],
@@ -473,14 +473,14 @@
  },
  {
   "id": "maths-2021-hl-p1-q6-a",
-  "topicId": "maths-5-1",
-  "conceptId": "2x2",
+  "topicId": "maths-5-2",
+  "conceptId": "part",
   "level": "higher",
   "year": 2021,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q6(a)",
-  "questionText": "Show that h^ᇱ(x) = −2x2 + 4x + 6",
+  "questionText": "Show that h′(x) = −2x² + 4x + 6",
   "stem": "",
   "figureKey": "maths-2021-HL-paper-p017-i0",
   "labelKey": [],
@@ -543,7 +543,7 @@
    {
     "id": "maths-2021-hl-p1-q6-b-r1",
     "kind": "anyN",
-    "verbatim": "Some correct differentiation of h′(x) Finds h^(ᇱᇱ)(x) h^ᇱ(x) = −2(x2−2x−3) Indicates axis of symmetry on graph",
+    "verbatim": "Some correct differentiation of h′(x) Finds h′′(x) h′(x) = −2(x²−2x−3) Indicates axis of symmetry on graph",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.",
@@ -551,8 +551,8 @@
      "claimMax": 2,
      "perOption": 3,
      "options": [
-      "Some correct differentiation of h′(x) Finds h^(ᇱᇱ)(x) h^ᇱ(x) = −2(x2−2x−3) Indicates axis of symmetry on graph",
-      "x = 1 h^ᇱ(x) = −2((x−1)2−4)"
+      "Some correct differentiation of h′(x) Finds h′′(x) h′(x) = −2(x²−2x−3) Indicates axis of symmetry on graph",
+      "x = 1 h′(x) = −2((x−1)²−4)"
      ],
      "perOptionSteps": [
       3,
@@ -612,7 +612,7 @@
  },
  {
   "id": "maths-2021-hl-p1-q8-a-i",
-  "topicId": "maths-5-1",
+  "topicId": "maths-5-2",
   "conceptId": "part",
   "level": "higher",
   "year": 2021,
@@ -711,7 +711,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q8(b)(i)",
-  "questionText": "Find h^ᇱ(x), the derivative of h(x)",
+  "questionText": "Find h′(x), the derivative of h(x)",
   "stem": "",
   "figureKey": "maths-2021-HL-paper-p022-i2",
   "labelKey": [],
@@ -772,7 +772,7 @@
    {
     "id": "maths-2021-hl-p1-q8-b-ii-r1",
     "kind": "anyN",
-    "verbatim": "0·003x²−0·24x + 3·6 States h^ᇱ(x) = 0, or similar",
+    "verbatim": "0·003x²−0·24x + 3·6 States h′(x) = 0, or similar",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.",
@@ -780,8 +780,8 @@
      "claimMax": 2,
      "perOption": 3,
      "options": [
-      "0·003x²−0·24x + 3·6 States h^ᇱ(x) = 0, or similar",
-      "Shows that h^ᇱ(20) = 0, but no further justification that it is the max in the range [0, 75]."
+      "0·003x²−0·24x + 3·6 States h′(x) = 0, or similar",
+      "Shows that h′(20) = 0, but no further justification that it is the max in the range [0, 75]."
      ],
      "perOptionSteps": [
       3,
@@ -801,7 +801,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q8(b)(iii)",
-  "questionText": "(iii) Find, using calculus, the height above ground, in metres, at the instant the track passes through an inflection point. The function h(x) = 0·001x3−0·12x² + 3·6x + 5",
+  "questionText": "(iii) Find, using calculus, the height above ground, in metres, at the instant the track passes through an inflection point. The function h(x) = 0·001x³−0·12x² + 3·6x + 5",
   "stem": "",
   "figureKey": "maths-2021-HL-paper-p023-i1",
   "labelKey": [],
@@ -817,7 +817,7 @@
    {
     "id": "maths-2021-hl-p1-q8-b-iii-r1",
     "kind": "anyN",
-    "verbatim": "Some correct differentiation of h′(x) h^(ᇱᇱ)(x) indicated",
+    "verbatim": "Some correct differentiation of h′(x) h′′(x) indicated",
     "marks": 5,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit.",
@@ -825,7 +825,7 @@
      "claimMax": 1,
      "perOption": 5,
      "options": [
-      "Some correct differentiation of h′(x) h^(ᇱᇱ)(x) indicated"
+      "Some correct differentiation of h′(x) h′′(x) indicated"
      ]
     }
    }
@@ -835,13 +835,13 @@
  {
   "id": "maths-2021-hl-p1-q8-c",
   "topicId": "maths-3-1",
-  "conceptId": "function-001x3-12x-average-height-section",
+  "conceptId": "function-001x-12x-average-height-section",
   "level": "higher",
   "year": 2021,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q8(c)",
-  "questionText": "Use the function h(x) = 0·001x3−0·12x² + 3·6x + 5, x∈ℝ, to find the average height of this section of the track above level ground, from x = 0 to x = 75. Give your answer in metres correct to 2 decimal places",
+  "questionText": "Use the function h(x) = 0·001x³−0·12x² + 3·6x + 5, x∈ℝ, to find the average height of this section of the track above level ground, from x = 0 to x = 75. Give your answer in metres correct to 2 decimal places",
   "stem": "",
   "figureKey": "maths-2021-HL-paper-p024-i0",
   "labelKey": [],
@@ -927,13 +927,13 @@
  {
   "id": "maths-2021-hl-p1-q9-b",
   "topicId": "maths-5-2",
-  "conceptId": "75e-081-gives-temperature-coffee-time",
+  "conceptId": "75e-081t-gives-temperature-coffee-time",
   "level": "higher",
   "year": 2021,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q9(b)",
-  "questionText": "T(t) = 75e−0·081௧+ 20 gives the temperature of the coffee at time t. If the ideal temperature to drink coffee is 82°C, find the time, to the nearest second, that it takes for the coffee to reach this temperature",
+  "questionText": "T(t) = 75e^(−0·081t) + 20 gives the temperature of the coffee at time t. If the ideal temperature to drink coffee is 82°C, find the time, to the nearest second, that it takes for the coffee to reach this temperature",
   "stem": "",
   "figureKey": "maths-2021-HL-paper-p026-i0",
   "labelKey": [],
@@ -980,7 +980,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q9(c)",
-  "questionText": "Find, to the nearest °C, the temperature the coffee has reached when T^ᇱ(t) = −4·05, where T^ᇱ(t) is the rate at which the coffee is cooling, in °C per minute",
+  "questionText": "Find, to the nearest °C, the temperature the coffee has reached when T′(t) = −4·05, where T′(t) is the rate at which the coffee is cooling, in °C per minute",
   "stem": "",
   "figureKey": "maths-2021-HL-paper-p026-i1",
   "labelKey": [],
@@ -1043,7 +1043,7 @@
    {
     "id": "maths-2021-hl-p1-q9-d-r1",
     "kind": "anyN",
-    "verbatim": "States a relevant derivative, for ୢ௏ ୢ௧ example, x³ =",
+    "verbatim": "States a relevant derivative, for dV dt example, x³ =",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
@@ -1051,9 +1051,9 @@
      "claimMax": 3,
      "perOption": 3,
      "options": [
-      "States a relevant derivative, for ୢ௏ ୢ௧ example, x³ =",
-      "Any two of the following: ୢ௏ ୢ௧ = − o ୢ௏ ୢ௫ = 3x² o o x = ୢ௏ ୢ௏ ୢ௫ dt = ୢ௧ ÷ o ୢ௫ , or similar",
-      "ୢ௏ ୢ௏ ୢ௫ dt = ୢ௧ ÷  ୢ௫ , and any two others from the MPC list above Full Credit –1: Unit incorrect or omitted"
+      "States a relevant derivative, for dV dt example, x³ =",
+      "Any two of the following: dV dt = − o dV dx = 3x² o o x = dV dV dx dt = dt ÷ o dx , or similar",
+      "dV dV dx dt = dt ÷  dx , and any two others from the MPC list above Full Credit –1: Unit incorrect or omitted"
      ],
      "perOptionSteps": [
       3,
@@ -1067,7 +1067,7 @@
  },
  {
   "id": "maths-2021-hl-p1-q10-a-i",
-  "topicId": "maths-4-1",
+  "topicId": "maths-3-4",
   "conceptId": "value-when-tank-empties",
   "level": "higher",
   "year": 2021,
@@ -1209,7 +1209,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q10(b)(iii)",
-  "questionText": "(iii) Two identical trees are growing in the forest. At the beginning of year 1, a tree was cut down and a section of its trunk, in the shape of a cylinder of radius 10 cm, standard length h cm, and volume V1 cm³ was sent to a sawmill. Given that r(0) = 10, the formula r(t + 1) = r(t) + I(t + 1), where t∈ℕ, can be used to find the radius of the second tree for subsequent values of t. Find r(2), the radius of the second tree at t = 2. Give your answer in the form a + sin ௕గ 5 + sin ௖గ 5, where a, b, and c∈ℕ. (iv) At t = 10 the second tree was also cut down",
+  "questionText": "(iii) Two identical trees are growing in the forest. At the beginning of year 1, a tree was cut down and a section of its trunk, in the shape of a cylinder of radius 10 cm, standard length h cm, and volume V1 cm³ was sent to a sawmill. Given that r(0) = 10, the formula r(t + 1) = r(t) + I(t + 1), where t∈ℕ, can be used to find the radius of the second tree for subsequent values of t. Find r(2), the radius of the second tree at t = 2. Give your answer in the form a + sin b𝜋 5 + sin c𝜋 5, where a, b, and c∈ℕ. (iv) At t = 10 the second tree was also cut down",
   "stem": "",
   "figureKey": "maths-2021-HL-paper-p029-i2",
   "labelKey": [],
@@ -1234,7 +1234,7 @@
      "perOption": 2,
      "options": [
       "r(2) = r(1) + I(2) r(3) = r(2) + I(3) Some relevant substitution into r(1)",
-      "r(2) = r(0) + I(1) + I(2) గ r(1) = 10 + 1 ∙5 + sin Full Credit –1: గ r(2) = 10 + 1∙5 + sin 5 + 1∙5 2గ + sin"
+      "r(2) = r(0) + I(1) + I(2) 𝜋 r(1) = 10 + 1 ∙5 + sin Full Credit –1: 𝜋 r(2) = 10 + 1∙5 + sin 5 + 1∙5 2𝜋 + sin"
      ],
      "perOptionSteps": [
       2,
@@ -1299,7 +1299,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q2(a)",
-  "questionText": "The line ^(3x−6y + 2 = 0) contains the point (k, 2௞+2 3), where ^(k∈ℝ.)",
+  "questionText": "The line 3x−6y + 2 = 0 contains the point (k, 2k + 2 3), where k∈ℝ",
   "stem": "",
   "figureKey": "maths-2021-HL-paper-p036-i0",
   "labelKey": [],
@@ -1370,7 +1370,7 @@
      "options": [
       "Some substitution of (s, t) into equation of line Some substitution into distance of point to line formula Finds one co-ordinate of point of intersection of two given lines Correct answer without work",
       "Full substitution of s and t into both (1) the equation of the line and (2) the equation of the distance of a point to a line formula 4s + 3t = −1or4s + 3t = −11",
-      "|8௧+32 + 3௧+6| = 1 , or similar  (4s + 3t = −1or4s + 3t = −11) and s−2t = 8"
+      "|8t + 32 + 3t + 6| = 1 , or similar  (4s + 3t = −1or4s + 3t = −11) and s−2t = 8"
      ],
      "perOptionSteps": [
       3,
@@ -1483,7 +1483,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q3(b)(i)",
-  "questionText": "Show that the circles c: x² + y² + 4x−2y−95 = 0 and s: (x−7)2 + (y−13)2 = 25 touch externally",
+  "questionText": "Show that the circles c: x² + y² + 4x−2y−95 = 0 and s: (x−7)² + (y−13)² = 25 touch externally",
   "stem": "",
   "figureKey": "maths-2021-HL-paper-p038-i1",
   "labelKey": [],
@@ -1600,7 +1600,7 @@
      "perOption": 3,
      "options": [
       "Reference angle = 60° Correct range for B + 150° Quadrants 2 and 4 identified tan(A + B) formula with some substitution",
-      "300° or 480° Solution to equation outside of required range (for e.g., B = −30° or −210°) ୲ୟ୬஻+୲ୟ୬150 1−୲ୟ୬஻୲ୟ୬150 ^(= − √3)",
+      "300° or 480° Solution to equation outside of required range (for e.g., B = −30° or −210°) tanB + tan150 1−tanBtan150 = − √3",
       "B = 150° or B = 330° 300° and 480°"
      ],
      "perOptionSteps": [
@@ -1687,7 +1687,7 @@
    {
     "id": "maths-2021-hl-p2-q5-b-r1",
     "kind": "anyN",
-    "verbatim": "Work of merit, for example: 1·75 or 4 or 105 km; or (t−1·75) or (t + 1·75); 60 or or",
+    "verbatim": "Work of merit, for example: 1·75 or 4 or 105 km; or (t−1·75) or (t + 1·75); x x 60 or or",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.",
@@ -1695,7 +1695,7 @@
      "claimMax": 2,
      "perOption": 3,
      "options": [
-      "Work of merit, for example: 1·75 or 4 or 105 km; or (t−1·75) or (t + 1·75); 60 or or",
+      "Work of merit, for example: 1·75 or 4 or 105 km; or (t−1·75) or (t + 1·75); x x 60 or or",
       "equation in t or in x, from which correct time / distance can be directly found correct table / diagram showing destination with all required distances / times indicated, but no conclusion 1∙75 × 60  95−60"
      ],
      "perOptionSteps": [
@@ -1716,7 +1716,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q6(a)",
-  "questionText": "Prove that if two triangles ∆ABC and ∆A′B′C′ are similar, then the lengths of their sides are proportional in order: |஺஻| |஺^ᇲ஻^ᇲ| = |஻஼| |஻^ᇲ஼^ᇲ| = |஼஺| |஼^ᇲ஺^ᇲ|. Diagram: Given: To Prove: Construction: Proof: Leaving Certificate, 2021",
+  "questionText": "Prove that if two triangles ∆ABC and ∆A′B′C′ are similar, then the lengths of their sides are proportional in order: |AB| |A′B′| = |BC| |B′C′| = |CA| |C′A′|. Diagram: Given: To Prove: Construction: Proof: Leaving Certificate, 2021",
   "stem": "",
   "figureKey": "maths-2021-HL-paper-p044-i0",
   "labelKey": [],
@@ -1829,17 +1829,19 @@
     "verbatim": "Mean or standard deviation indicated z-formula with some substitution",
     "marks": 10,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
     "group": {
-     "claimMax": 2,
+     "claimMax": 3,
      "perOption": 3,
      "options": [
       "Mean or standard deviation indicated z-formula with some substitution",
-      "z-score found (1∙28 or 1·29) z-formula fully substituted (x−176 )"
+      "z-score found (1∙28 or 1·29) z-formula fully substituted (x−176 )",
+      "x−176 = 1·28"
      ],
      "perOptionSteps": [
       3,
-      7
+      2,
+      5
      ]
     }
    }
@@ -2315,7 +2317,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q9(b)(iv)",
-  "questionText": "(iv) Find one value for t where the voltage is 110 Volts. Give your answer in the form ௔ ௕ where a, b ∈ℕ",
+  "questionText": "(iv) Find one value for t where the voltage is 110 Volts. Give your answer in the form a b where a, b ∈ℕ",
   "stem": "",
   "figureKey": "maths-2021-HL-paper-p053-i0",
   "labelKey": [],
@@ -2421,7 +2423,7 @@
    {
     "id": "maths-2021-hl-p2-q10-a-i-r1",
     "kind": "anyN",
-    "verbatim": "100 or (⁹ 2)  100 or First line of solution indicated (accept with “and” instead of × )",
+    "verbatim": "100 or (9 2)  100 or First line of solution indicated (accept with “and” instead of × )",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
@@ -2429,7 +2431,7 @@
      "claimMax": 3,
      "perOption": 3,
      "options": [
-      "100 or (⁹ 2)  100 or First line of solution indicated (accept with “and” instead of × )",
+      "100 or (9 2)  100 or First line of solution indicated (accept with “and” instead of × )",
       "(⁹ ( 100) 100) 2)( (¹⁰ ( 100) 100) 3)( evaluated",
       "(⁹ ( 100) 100) 2)( (¹⁰ ( 100) 100) 3)( 100 evaluated"
      ],
@@ -2468,7 +2470,7 @@
    {
     "id": "maths-2021-hl-p2-q10-a-ii-r1",
     "kind": "anyN",
-    "verbatim": "௔ ( 100) where 0 < a < 5 First line of either solution",
+    "verbatim": "a ( 100) where 0 < a < 5 First line of either solution",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.",
@@ -2476,7 +2478,7 @@
      "claimMax": 2,
      "perOption": 3,
      "options": [
-      "௔ ( 100) where 0 < a < 5 First line of either solution",
+      "a ( 100) where 0 < a < 5 First line of either solution",
       "100) ( Three terms in second solution"
      ],
      "perOptionSteps": [
@@ -2513,20 +2515,22 @@
    {
     "id": "maths-2021-hl-p2-q10-a-iii-r1",
     "kind": "anyN",
-    "verbatim": "1 −0·92^௞> 0·97 or = 0·97 k(ln (0·92))",
+    "verbatim": "0·92^k 0·03",
     "marks": 10,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Mid Partial Credit; High Partial Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
     "group": {
-     "claimMax": 2,
+     "claimMax": 3,
      "perOption": 3,
      "options": [
-      "1 −0·92^௞> 0·97 or = 0·97 k(ln (0·92))",
+      "0·92^k 0·03",
+      "1 −0·92^k > 0·97 or = 0·97 k(ln (0·92))",
       "Equation in k without indices (logs handled correctly)"
      ],
      "perOptionSteps": [
       3,
-      7
+      2,
+      5
      ]
     }
    }
@@ -2558,7 +2562,7 @@
    {
     "id": "maths-2021-hl-p2-q10-b-r1",
     "kind": "anyN",
-    "verbatim": "First line of solution 20 or (¹¹ 1) 0·15 or 0·85 or 20 or",
+    "verbatim": "First line of solution 20 or (11 1) 0·15 or 0·85 or 20 or",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.",
@@ -2566,7 +2570,7 @@
      "claimMax": 2,
      "perOption": 3,
      "options": [
-      "First line of solution 20 or (¹¹ 1) 0·15 or 0·85 or 20 or",
+      "First line of solution 20 or (11 1) 0·15 or 0·85 or 20 or",
       "Two out of P(0), P(1), P(2) fully substituted"
      ],
      "perOptionSteps": [
@@ -2634,7 +2638,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q3(b)",
-  "questionText": "z3= ௭భ ௭మ . Find z3 in the form a+ bi, where a, b∈ℤ. The equation x2+ ax+ b= 0, where a, b∈ℤ, has solutions x= 5 and x= −2. Find the value of a and the value of b. a= b= Leaving Certificate, 2021 8",
+  "questionText": "z3= ௭1 ௭2 . Find z3 in the form a+ bi, where a, b∈ℤ. The equation x2+ ax+ b= 0, where a, b∈ℤ, has solutions x= 5 and x= −2. Find the value of a and the value of b. a= b= Leaving Certificate, 2021 8",
   "stem": "",
   "figureKey": "maths-2021-OL-paper-p011-i0",
   "labelKey": [],
@@ -2787,7 +2791,7 @@
    {
     "id": "maths-2021-ol-p1-q6-a-r1",
     "kind": "anyN",
-    "verbatim": "T௡ formula written Some relevant substitution into formula a = −5 −5 + 3 + 3 = 1 If you see the number 6",
+    "verbatim": "Tn formula written Some relevant substitution into formula a = −5 −5 + 3 + 3 = 1 If you see the number 6",
     "marks": 5,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.",
@@ -2795,7 +2799,7 @@
      "claimMax": 2,
      "perOption": 2,
      "options": [
-      "T௡ formula written Some relevant substitution into formula a = −5 −5 + 3 + 3 = 1 If you see the number 6",
+      "Tn formula written Some relevant substitution into formula a = −5 −5 + 3 + 3 = 1 If you see the number 6",
       "k = −2 and stops Relevant equation in k and common difference = 3 shown 2d = 6 Note: Common difference must be explicitly shown to be 3"
      ],
      "perOptionSteps": [
@@ -2810,13 +2814,13 @@
  {
   "id": "maths-2021-ol-p1-q6-a-ii",
   "topicId": "maths-4-1",
-  "conceptId": "t10-term-sequence",
+  "conceptId": "t10-10th-term-sequence",
   "level": "ordinary",
   "year": 2021,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q6(a)(ii)",
-  "questionText": "Find T10, the 10^(th) term in the sequence",
+  "questionText": "Find T10, the 10th term in the sequence",
   "stem": "",
   "figureKey": "maths-2021-OL-paper-p015-i1",
   "labelKey": [],
@@ -2832,7 +2836,7 @@
    {
     "id": "maths-2021-ol-p1-q6-a-ii-r1",
     "kind": "anyN",
-    "verbatim": "Some relevant substitution into T௡ formula T௡ formula written List containing 4 correct terms or more a and/or d identified",
+    "verbatim": "Some relevant substitution into Tn formula Tn formula written List containing 4 correct terms or more a and/or d identified",
     "marks": 5,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.",
@@ -2840,7 +2844,7 @@
      "claimMax": 2,
      "perOption": 2,
      "options": [
-      "Some relevant substitution into T௡ formula T௡ formula written List containing 4 correct terms or more a and/or d identified",
+      "Some relevant substitution into Tn formula Tn formula written List containing 4 correct terms or more a and/or d identified",
       "Formula fully substituted List with more than 10 terms but T10 = 22 not clearly identified Note: Accept correct answer without supporting work"
      ],
      "perOptionSteps": [
@@ -2947,13 +2951,13 @@
  {
   "id": "maths-2021-ol-p1-q8-b",
   "topicId": "maths-3-4",
-  "conceptId": "volume-box-can-written-4x3-40x",
+  "conceptId": "volume-box-can-written-40x-100x",
   "level": "ordinary",
   "year": 2021,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q8(b)",
-  "questionText": "Show that the volume of the box can be written as V(x) = 4x3−40x² + 100x",
+  "questionText": "Show that the volume of the box can be written as V(x) = 4x³−40x² + 100x",
   "stem": "",
   "figureKey": "maths-2021-OL-paper-p019-i1",
   "labelKey": [],
@@ -3106,7 +3110,7 @@
    {
     "id": "maths-2021-ol-p1-q10-a-i-r1",
     "kind": "anyN",
-    "verbatim": "10⁹ or equivalent 250000 where x ≠ 10⁹  Correct answer without supporting work Divides by 1000 Use of 60",
+    "verbatim": "10⁹ or equivalent x 250000 where x ≠ 10⁹  Correct answer without supporting work Divides by 1000 Use of 60",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.",
@@ -3114,8 +3118,8 @@
      "claimMax": 2,
      "perOption": 3,
      "options": [
-      "10⁹ or equivalent 250000 where x ≠ 10⁹  Correct answer without supporting work Divides by 1000 Use of 60",
-      "10^వ  250000 or 4000"
+      "10⁹ or equivalent x 250000 where x ≠ 10⁹  Correct answer without supporting work Divides by 1000 Use of 60",
+      "10⁹  250000 or 4000"
      ],
      "perOptionSteps": [
       3,
@@ -3135,7 +3139,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q10(a)(ii)",
-  "questionText": "Due to heavy rainfall, the operators of the dam decide to increase the flow by 10% for 24 hours. Find how many m³ of water were released in that 24 hour period. Give your answer in the form a × 10^௡, where 1 ≤ a < 10, and n∈ℕ. Give the value of a correct to 3 significant figures",
+  "questionText": "Due to heavy rainfall, the operators of the dam decide to increase the flow by 10% for 24 hours. Find how many m³ of water were released in that 24 hour period. Give your answer in the form a × 10ⁿ, where 1 ≤ a < 10, and n∈ℕ. Give the value of a correct to 3 significant figures",
   "stem": "",
   "figureKey": "maths-2021-OL-paper-p025-i1",
   "labelKey": [],
@@ -3198,7 +3202,7 @@
    {
     "id": "maths-2021-ol-p1-q10-b-i-r1",
     "kind": "anyN",
-    "verbatim": "2𝜋r 3∙14 km without work ஽ T = ௌ or equivalent 𝜋r² with r = 0∙5 inserted Correct answer without supporting work",
+    "verbatim": "2𝜋r 3∙14 km without work D T = S or equivalent 𝜋r² with r = 0∙5 inserted Correct answer without supporting work",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
@@ -3206,8 +3210,8 @@
      "claimMax": 3,
      "perOption": 3,
      "options": [
-      "2𝜋r 3∙14 km without work ஽ T = ௌ or equivalent 𝜋r² with r = 0∙5 inserted Correct answer without supporting work",
-      "2గ(0∙5)3  9∙4247 or 9∙42",
+      "2𝜋r 3∙14 km without work D T = S or equivalent 𝜋r² with r = 0∙5 inserted Correct answer without supporting work",
+      "2𝜋(0∙5)3  9∙4247 or 9∙42",
       "1∙5707 hours or similar"
      ],
      "perOptionSteps": [
@@ -3735,53 +3739,6 @@
   "notes": ""
  },
  {
-  "id": "maths-2022-hl-p1-q3-a-ii",
-  "topicId": "maths-3-1",
-  "conceptId": "part",
-  "level": "higher",
-  "year": 2022,
-  "subjectId": "maths",
-  "section": "B",
-  "questionRef": "2022 HL Paper 1 Q3(a)(ii)",
-  "questionText": "Show that |z|2 + |iz|2 = |z−iz|2",
-  "stem": "",
-  "figureKey": "maths-2022-HL-paper-p011-i1",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 5, 8, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
-  },
-  "totalMarks": 10,
-  "rows": [
-   {
-    "id": "maths-2022-hl-p1-q3-a-ii-r1",
-    "kind": "anyN",
-    "verbatim": "Work of merit, for example, correct formula with some substitution",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 3,
-     "options": [
-      "Work of merit, for example, correct formula with some substitution",
-      "Two correct values found, from |z|, |iz| and |z−iz|",
-      "Two correct values found, from |z|2, |iz|2, and |z−iz|2 Full Credit –1 Finds |z|2, |iz|2, and |z−iz|2, but no conclusion of equality"
-     ],
-     "perOptionSteps": [
-      3,
-      2,
-      5
-     ]
-    }
-   }
-  ],
-  "notes": ""
- },
- {
   "id": "maths-2022-hl-p1-q3-a-iii",
   "topicId": "maths-3-1",
   "conceptId": "iii-circle-passes-through-points-shown",
@@ -3882,7 +3839,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q4(a)",
-  "questionText": "A sequence u1 , u2 , u3 , ... is defined as follows, for n∈ℕ: u1^(= 2), ^u2^(= 64), ^u௡+1^= ට ௨೙ ௨೙షభ Write u3 in the form 2^௣ , where p∈ℝ",
+  "questionText": "A sequence u1 , u2 , u3 , ... is defined as follows, for n∈ℕ: u1 = 2, u2 = 64, un + 1 = √ u೙ u೙ష1 Write u3 in the form 2^p , where p∈ℝ",
   "stem": "",
   "figureKey": "maths-2022-HL-paper-p013-i0",
   "labelKey": [],
@@ -3927,7 +3884,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q4(b)(i)",
-  "questionText": "By letting y = e^௞ in this arithmetic sequence, show that: 5y²−26y + 5 = 0",
+  "questionText": "By letting y = e^k in this arithmetic sequence, show that: 5y²−26y + 5 = 0",
   "stem": "",
   "figureKey": "maths-2022-HL-paper-p013-i1",
   "labelKey": [],
@@ -3943,7 +3900,7 @@
    {
     "id": "maths-2022-hl-p1-q4-b-i-r1",
     "kind": "anyN",
-    "verbatim": "Work of merit, for example, finds one common difference, or replaces e^௞ with y or y with e^௞, or states T3−T2 = T2−T1",
+    "verbatim": "Work of merit, for example, finds one common difference, or replaces e^k with y or y with e^k, or states T3−T2 = T2−T1",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.",
@@ -3951,7 +3908,7 @@
      "claimMax": 2,
      "perOption": 3,
      "options": [
-      "Work of merit, for example, finds one common difference, or replaces e^௞ with y or y with e^௞, or states T3−T2 = T2−T1",
+      "Work of merit, for example, finds one common difference, or replaces e^k with y or y with e^k, or states T3−T2 = T2−T1",
       "2 steps correct"
      ],
      "perOptionSteps": [
@@ -3998,7 +3955,7 @@
      "options": [
       "Work of merit, for example, effort at factorisation, or identifies a, b, or c",
       "1 step correct",
-      "2 steps correct Full Credit –1 2 values of e^௞ correctly found, only 1 value of k correctly found"
+      "2 steps correct Full Credit –1 2 values of e^k correctly found, only 1 value of k correctly found"
      ],
      "perOptionSteps": [
       3,
@@ -4012,7 +3969,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q5-b-i",
-  "topicId": "maths-3-1",
+  "topicId": "maths-5-2",
   "conceptId": "factor-three-values-which",
   "level": "higher",
   "year": 2022,
@@ -4106,14 +4063,14 @@
  },
  {
   "id": "maths-2022-hl-p1-q6-a",
-  "topicId": "maths-3-1",
-  "conceptId": "differentiate-2x2-respect-first-principles",
+  "topicId": "maths-5-2",
+  "conceptId": "differentiate-respect-first-principles",
   "level": "higher",
   "year": 2022,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q6(a)",
-  "questionText": "Differentiate f(x) = 2x2 + 4x with respect to x, from first principles",
+  "questionText": "Differentiate f(x) = 2x² + 4x with respect to x, from first principles",
   "stem": "",
   "figureKey": "maths-2022-HL-paper-p017-i0",
   "labelKey": [],
@@ -4176,7 +4133,7 @@
    {
     "id": "maths-2022-hl-p1-q6-b-r1",
     "kind": "anyN",
-    "verbatim": "Work of merit, for example, ௗ஺ l = 4x ; mentions ௗ௫",
+    "verbatim": "Work of merit, for example, dA l = 4x ; mentions dx",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Low Partial Credit; Mid Partial Credit; High Partial Credit.",
@@ -4184,12 +4141,12 @@
      "claimMax": 4,
      "perOption": 3,
      "options": [
-      "Work of merit, for example, ௗ஺ l = 4x ; mentions ௗ௫",
+      "Work of merit, for example, dA l = 4x ; mentions dx",
       "2 steps correct",
       "3 steps correct Method 2:",
-      "States relevant derivative, for ௗ஺ ௗ௫ example, l = 4x",
-      "Any two of the following: ௗ௟ ௗ௫= 4 o ௗ஺ 2l ௗ௟= o ௗ஺ ௗ஺ ௗ௟ ௗ௟× ௗ௫= o ௗ௫ o l = 30",
-      "ௗ஺ ௗ஺ ௗ௟ ௗ௟× ௗ௫=  ௗ௫, and any two others from the MPC list above"
+      "States relevant derivative, for dA dx example, l = 4x",
+      "Any two of the following: dl dx = 4 o dA 2l dl = o dA dA dl dl × dx = o dx o l = 30",
+      "dA dA dl dl × dx =  dx, and any two others from the MPC list above"
      ],
      "perOptionSteps": [
       3,
@@ -4211,7 +4168,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q6(c)",
-  "questionText": "The graph of a cubic function p(x) is shown in the first diagram below, for 0 ≤ x ≤ 4, x∈ℝ. The maximum value of p′(x) in this domain is 1, and p^ᇱ(0) = −3, where p′(x) is the derivative of p(x)",
+  "questionText": "The graph of a cubic function p(x) is shown in the first diagram below, for 0 ≤ x ≤ 4, x∈ℝ. The maximum value of p′(x) in this domain is 1, and p′(0) = −3, where p′(x) is the derivative of p(x)",
   "stem": "",
   "figureKey": "maths-2022-HL-paper-p019-i0",
   "labelKey": [],
@@ -4431,14 +4388,14 @@
  },
  {
   "id": "maths-2022-hl-p1-q8-e",
-  "topicId": "maths-4-2",
+  "topicId": "maths-2-3",
   "conceptId": "how-long-after-start-session-hannah",
   "level": "higher",
   "year": 2022,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q8(e)",
-  "questionText": "How long after the start of the session is Hannah’s heart-rate decreasing most quickly, within the first 8 minutes? Give your answer in minutes and seconds. Remember that h(x) = 2x3−28∙5x² + 105x + 70. Bruno, Karen, and Martha start a training session at the same time as Hannah. All of their heart-rates are measured in BPM. (f) (i) For the first 8 minutes of the session, Bruno’s heart-rate, b(x), is always 15 BPM more",
+  "questionText": "How long after the start of the session is Hannah’s heart-rate decreasing most quickly, within the first 8 minutes? Give your answer in minutes and seconds. Remember that h(x) = 2x³−28∙5x² + 105x + 70. Bruno, Karen, and Martha start a training session at the same time as Hannah. All of their heart-rates are measured in BPM. (f) (i) For the first 8 minutes of the session, Bruno’s heart-rate, b(x), is always 15 BPM more",
   "stem": "",
   "figureKey": "maths-2022-HL-paper-p024-i1",
   "labelKey": [],
@@ -4454,7 +4411,7 @@
    {
     "id": "maths-2022-hl-p1-q8-e-r1",
     "kind": "anyN",
-    "verbatim": "Work of merit, for example, some correct work towards గ 3t) isolating cos (",
+    "verbatim": "Work of merit, for example, some correct work towards 𝜋 3t) isolating cos (",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
@@ -4462,7 +4419,7 @@
      "claimMax": 3,
      "perOption": 3,
      "options": [
-      "Work of merit, for example, some correct work towards గ 3t) isolating cos (",
+      "Work of merit, for example, some correct work towards 𝜋 3t) isolating cos (",
       "2 steps correct",
       "3 steps correct Full Credit –1 Calculator in degree mode, otherwise correct"
      ],
@@ -4478,7 +4435,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q8-f",
-  "topicId": "maths-4-2",
+  "topicId": "maths-2-3",
   "conceptId": "integration-average-height-point-over-first",
   "level": "higher",
   "year": 2022,
@@ -4525,7 +4482,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-a",
-  "topicId": "maths-3-1",
+  "topicId": "maths-2-3",
   "conceptId": "amount-drug-left-alex-body-days",
   "level": "higher",
   "year": 2022,
@@ -4565,7 +4522,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-b",
-  "topicId": "maths-3-1",
+  "topicId": "maths-2-3",
   "conceptId": "how-long-after-single-injection-will",
   "level": "higher",
   "year": 2022,
@@ -4588,7 +4545,7 @@
    {
     "id": "maths-2022-hl-p1-q9-b-r1",
     "kind": "anyN",
-    "verbatim": "Work of merit, for example, 15(0 ∙6௧) = 1 5.3 days by trial and improvement",
+    "verbatim": "Work of merit, for example, 15(0 ∙6^t) = 1 5.3 days by trial and improvement",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.",
@@ -4596,7 +4553,7 @@
      "claimMax": 2,
      "perOption": 3,
      "options": [
-      "Work of merit, for example, 15(0 ∙6௧) = 1 5.3 days by trial and improvement",
+      "Work of merit, for example, 15(0 ∙6^t) = 1 5.3 days by trial and improvement",
       "2 steps correct"
      ],
      "perOptionSteps": [
@@ -4610,7 +4567,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-d",
-  "topicId": "maths-3-1",
+  "topicId": "maths-2-3",
   "conceptId": "total-amount-drug-alex-body-immediately",
   "level": "higher",
   "year": 2022,
@@ -4633,7 +4590,7 @@
    {
     "id": "maths-2022-hl-p1-q9-d-r1",
     "kind": "anyN",
-    "verbatim": "Work of merit, for example, indicates sum of two or more relevant terms, identifies a or r, or S௡ formula with some substitution",
+    "verbatim": "Work of merit, for example, indicates sum of two or more relevant terms, identifies a or r, or Sn formula with some substitution",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.",
@@ -4641,8 +4598,8 @@
      "claimMax": 2,
      "perOption": 3,
      "options": [
-      "Work of merit, for example, indicates sum of two or more relevant terms, identifies a or r, or S௡ formula with some substitution",
-      "S௡ formula fully substituted"
+      "Work of merit, for example, indicates sum of two or more relevant terms, identifies a or r, or Sn formula with some substitution",
+      "Sn formula fully substituted"
      ],
      "perOptionSteps": [
       3,
@@ -4662,7 +4619,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q9(f)(i)",
-  "questionText": "Use the sum of a geometric series to show that the total amount of the drug (in mg) in Jessica’s body immediately after the n th injection, where n∈ℕ, is: 20d(1 −0∙85௡) 3",
+  "questionText": "Use the sum of a geometric series to show that the total amount of the drug (in mg) in Jessica’s body immediately after the n th injection, where n∈ℕ, is: 20d(1 −0∙85ⁿ) 3",
   "stem": "",
   "figureKey": "maths-2022-HL-paper-p027-i1",
   "labelKey": [],
@@ -4700,7 +4657,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-f-ii",
-  "topicId": "maths-3-1",
+  "topicId": "maths-2-3",
   "conceptId": "immediately-after-7th-injection-there-drug",
   "level": "higher",
   "year": 2022,
@@ -4745,7 +4702,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q10-b",
-  "topicId": "maths-3-1",
+  "topicId": "maths-4-1",
   "conceptId": "after-how-many-hours-would-exactly",
   "level": "higher",
   "year": 2022,
@@ -4792,14 +4749,14 @@
  },
  {
   "id": "maths-2022-hl-p1-q10-c-ii",
-  "topicId": "maths-3-1",
+  "topicId": "maths-5-2",
   "conceptId": "always-negative-what-does-tell-you",
   "level": "higher",
   "year": 2022,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q10(c)(ii)",
-  "questionText": "P^ᇱ(t) is always negative for 0 ≤ t ≤ 12, t∈ℝ. What does this tell you about the proportion of digits recalled correctly after t hours, according to this model?",
+  "questionText": "P′(t) is always negative for 0 ≤ t ≤ 12, t∈ℝ. What does this tell you about the proportion of digits recalled correctly after t hours, according to this model?",
   "stem": "",
   "figureKey": "maths-2022-HL-paper-p028-i2",
   "labelKey": [],
@@ -4905,7 +4862,7 @@
    {
     "id": "maths-2022-hl-p1-q10-e-i-r1",
     "kind": "anyN",
-    "verbatim": "Work of merit, for example, correct relevant equation involving logs ஺ (t + 1)௖= ஻",
+    "verbatim": "Work of merit, for example, correct relevant equation involving logs A (t + 1)^c = B",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.",
@@ -4913,8 +4870,8 @@
      "claimMax": 2,
      "perOption": 3,
      "options": [
-      "Work of merit, for example, correct relevant equation involving logs ஺ (t + 1)௖= ஻",
-      "Correct equation involving log10A, log10B, and log10(t + 1) Correct equation involving log௧+1A and log௧+1B"
+      "Work of merit, for example, correct relevant equation involving logs A (t + 1)^c = B",
+      "Correct equation involving log10A, log10B, and log10(t + 1) Correct equation involving logt + 1A and logt + 1B"
      ],
      "perOptionSteps": [
       3,
@@ -4927,7 +4884,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q10-e-ii",
-  "topicId": "maths-3-1",
+  "topicId": "maths-4-1",
   "conceptId": "student-got-guitar-exam-after-two",
   "level": "higher",
   "year": 2022,
@@ -5158,7 +5115,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q3(b)",
-  "questionText": "The circle (x−5)2 + (y + 2)2 = 20 has a tangent at the point (9, −4). Find the slope of this tangent",
+  "questionText": "The circle (x−5)² + (y + 2)² = 20 has a tangent at the point (9, −4). Find the slope of this tangent",
   "stem": "",
   "figureKey": "maths-2022-HL-paper-p039-i1",
   "labelKey": [],
@@ -5183,7 +5140,7 @@
      "perOption": 3,
      "options": [
       "Work of merit, for example, some substitution into slope or line formula, or identifies centre, or some correct differentiation",
-      "2 steps correct ௗ௬ −௫+5 ௗ௫=  ௬+2 Finds equation of tangent (without explicitly finding the slope)"
+      "2 steps correct dy −x + 5 dx =  y + 2 Finds equation of tangent (without explicitly finding the slope)"
      ],
      "perOptionSteps": [
       3,
@@ -5196,7 +5153,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q3-c",
-  "topicId": "maths-3-2",
+  "topicId": "maths-2-2",
   "conceptId": "two-circles-each-have-both-axis",
   "level": "higher",
   "year": 2022,
@@ -5244,13 +5201,13 @@
  {
   "id": "maths-2022-hl-p2-q4-a-i",
   "topicId": "maths-2-3",
-  "conceptId": "prove-tan",
+  "conceptId": "prove-tan-tana-tanb-tanatanb",
   "level": "higher",
   "year": 2022,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q4(a)(i)",
-  "questionText": "Prove that tan(A−B) = ୲ୟ୬஺−୲ୟ୬஻ 1 + ୲ୟ୬஺୲ୟ୬஻",
+  "questionText": "Prove that tan(A−B) = tanA−tanB 1 + tanAtanB",
   "stem": "",
   "figureKey": "maths-2022-HL-paper-p041-i0",
   "labelKey": [],
@@ -5266,15 +5223,20 @@
    {
     "id": "maths-2022-hl-p2-q4-a-i-r1",
     "kind": "anyN",
-    "verbatim": "Work of merit, for example, indicates that A−B = A + (−B), ୱ୧୬஺ or writes tan A = ୡ୭ୱ஺",
+    "verbatim": "Work of merit, for example, indicates that A−B = A + (−B), sinA or writes tan A = cosA",
     "marks": 10,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.",
     "group": {
-     "claimMax": 1,
-     "perOption": 10,
+     "claimMax": 2,
+     "perOption": 3,
      "options": [
-      "Work of merit, for example, indicates that A−B = A + (−B), ୱ୧୬஺ or writes tan A = ୡ୭ୱ஺"
+      "Work of merit, for example, indicates that A−B = A + (−B), sinA or writes tan A = cosA",
+      "tanA + tan (−B)  1−tanAtan(−B) sinAcosB−cosAsinB  cosAcosB + sinAsinB"
+     ],
+     "perOptionSteps": [
+      3,
+      7
      ]
     }
    }
@@ -5290,7 +5252,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q4(a)(ii)",
-  "questionText": "Write tan 15° in the form √௔−1 √௔+1 , where a∈ℕ",
+  "questionText": "Write tan 15° in the form √a−1 √a + 1 , where a∈ℕ",
   "stem": "",
   "figureKey": "maths-2022-HL-paper-p042-i0",
   "labelKey": [],
@@ -5315,7 +5277,7 @@
      "perOption": 3,
      "options": [
       "Work of merit, for example, 60 −45, or some correct substitution into relevant formula, or top line of relevant formula substituted −√3 + 2 with no supporting work",
-      "୲ୟ୬60−୲ୟ୬45  1 + ୲ୟ୬60୲ୟ୬45 or equivalent Makes error(s) in arriving at ୲ୟ୬60−୲ୟ୬45 1 + ୲ୟ୬60୲ୟ୬45 (or equivalent) from relevant expression, but finishes correctly ^√3−1 √3 + 1 without supporting work 1 − ^భ √య or −√3 + 2 ,  1 + ^భ √య with supporting work (equivalent to that in model solutions)"
+      "tan60−tan45  1 + tan60tan45 or equivalent Makes error(s) in arriving at tan60−tan45 1 + tan60tan45 (or equivalent) from relevant expression, but finishes correctly √3−1 √3 + 1 without supporting work 1 − ¹ √3 or −√3 + 2 ,  1 + ¹ √3 with supporting work (equivalent to that in model solutions)"
      ],
      "perOptionSteps": [
       3,
@@ -5380,7 +5342,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q5(a)(ii)",
-  "questionText": "Use the margin of error ( 1 √௡) to create a 95% confidence interval for the proportion of the population that preferred remote learning",
+  "questionText": "Use the margin of error ( 1 √n) to create a 95% confidence interval for the proportion of the population that preferred remote learning",
   "stem": "",
   "figureKey": "maths-2022-HL-paper-p044-i0",
   "labelKey": [],
@@ -5797,7 +5759,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q7(e)",
-  "questionText": "Part of the logo of the company is shown below. ABCD is a square, with sides of length 30 cm. The points E and F are the midpoints of ሾABሿ and ሾADሿ, respectively. The lines EC and FB are perpendicular, and meet at the point O",
+  "questionText": "Part of the logo of the company is shown below. ABCD is a square, with sides of length 30 cm. The points E and F are the midpoints of [AB] and [AD], respectively. The lines EC and FB are perpendicular, and meet at the point O",
   "stem": "",
   "figureKey": "maths-2022-HL-paper-p049-i1",
   "labelKey": [],
@@ -5822,7 +5784,7 @@
      "perOption": 2,
      "options": [
       "Work of merit, for example, indicates two similar triangles, or two equal angles, or a correct trigonometric ratio of a relevant angle, or 15",
-      "|ா஻| |ாை| |ா஻| = States |ா஼| and has also found |EB| and |EC| tan BCE = 2and |ாை| sin EBO = 15 , or similar Full Credit –1 Correct value found, but not in the correct form Finds |OB| (which is 6√5 cm)"
+      "|EB| |EO| |EB| = States |EC^| and has also found |EB| and |EC| tan BCE = 2and |EO| sin EBO = 15 , or similar Full Credit –1 Correct value found, but not in the correct form Finds |OB| (which is 6√5 cm)"
      ],
      "perOptionSteps": [
       2,
@@ -5835,7 +5797,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q8-a-ii",
-  "topicId": "maths-4-2",
+  "topicId": "maths-1-6",
   "conceptId": "scatterplot-draw-line-best-fit-data",
   "level": "higher",
   "year": 2022,
@@ -5880,7 +5842,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q8-a-iv",
-  "topicId": "maths-4-2",
+  "topicId": "maths-1-6",
   "conceptId": "based-data-given-would-you-more",
   "level": "higher",
   "year": 2022,
@@ -6017,7 +5979,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q8-d-ii",
-  "topicId": "maths-4-2",
+  "topicId": "maths-1-6",
   "conceptId": "work-out-probability-least-one-events",
   "level": "higher",
   "year": 2022,
@@ -6981,7 +6943,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q6(c)",
-  "questionText": "The sum of the first n terms of this sequence is given by S௡= ௡ 2 ሾ2(−254) + 4n−4ሿ",
+  "questionText": "The sum of the first n terms of this sequence is given by Sn = n 2 [2(−254) + 4n−4]",
   "stem": "",
   "figureKey": "maths-2022-OL-paper-p017-i0",
   "labelKey": [],
@@ -6997,7 +6959,7 @@
    {
     "id": "maths-2022-ol-p1-q6-c-r1",
     "kind": "anyN",
-    "verbatim": "Work of merit, for example, sets second factor = 0, or some correct work in simplifying second factor Any correct multiplication ௡ 2 = 0 Indicates Trial and Improvement",
+    "verbatim": "Work of merit, for example, sets second factor = 0, or some correct work in simplifying second factor Any correct multiplication n 2 = 0 Indicates Trial and Improvement",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.",
@@ -7005,7 +6967,7 @@
      "claimMax": 2,
      "perOption": 3,
      "options": [
-      "Work of merit, for example, sets second factor = 0, or some correct work in simplifying second factor Any correct multiplication ௡ 2 = 0 Indicates Trial and Improvement",
+      "Work of merit, for example, sets second factor = 0, or some correct work in simplifying second factor Any correct multiplication n 2 = 0 Indicates Trial and Improvement",
       "One error, otherwise correct"
      ],
      "perOptionSteps": [
@@ -7066,7 +7028,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q7-c",
-  "topicId": "maths-5-2",
+  "topicId": "maths-3-1",
   "conceptId": "using-same-axes-scales-continue-graph",
   "level": "ordinary",
   "year": 2022,
@@ -7118,7 +7080,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q7(f)",
-  "questionText": "Solve the equation h^ᇱ(x) = − 1∙14x² + 5∙2x−0∙13 = 0 to find how long after the start of the session Joseph’s heart-rate is at a maximum, for 0 ≤ x ≤ 6, x∈ℝ. Give your answer in minutes, correct to 2 decimal places",
+  "questionText": "Solve the equation h′(x) = − 1∙14x² + 5∙2x−0∙13 = 0 to find how long after the start of the session Joseph’s heart-rate is at a maximum, for 0 ≤ x ≤ 6, x∈ℝ. Give your answer in minutes, correct to 2 decimal places",
   "stem": "",
   "figureKey": "maths-2022-OL-paper-p020-i0",
   "labelKey": [],
@@ -7201,7 +7163,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q8-a-iv",
-  "topicId": "maths-2-3",
+  "topicId": "maths-3-1",
   "conceptId": "when-she-making-another-mixture-jessica",
   "level": "ordinary",
   "year": 2022,
@@ -7246,7 +7208,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q8-b-i",
-  "topicId": "maths-2-3",
+  "topicId": "maths-3-1",
   "conceptId": "write-down-values-cube-these-values",
   "level": "ordinary",
   "year": 2022,
@@ -7415,7 +7377,7 @@
      "perOption": 2,
      "options": [
       "Work of merit, for example, finds 6000 30 000 6000 or",
-      "6000 30 000 × 100 but fails to Finds finish"
+      "6000 30 ⁰⁰⁰ × 100 but fails to Finds finish"
      ],
      "perOptionSteps": [
       2,
@@ -7597,7 +7559,7 @@
      "perOption": 3,
      "options": [
       "One correct relevant fraction, or 12 or 18",
-      "Finds both times, ie ∙2 and ∙3, or 12 minutes and 18 minutes Consistent error finding both times, but finishes correctly Finds 1∙5 or equivalent, from 40 in 2^(nd) method"
+      "Finds both times, ie ∙2 and ∙3, or 12 minutes and 18 minutes Consistent error finding both times, but finishes correctly Finds 1∙5 or equivalent, from 40 in 2nd method"
      ],
      "perOptionSteps": [
       3,
@@ -7658,13 +7620,13 @@
  {
   "id": "maths-2022-ol-p1-q10-a-iv",
   "topicId": "maths-3-3",
-  "conceptId": "how-long-took-ball-reach-its",
+  "conceptId": "dtand-how-long-took-ball-reach",
   "level": "ordinary",
   "year": 2022,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q10(a)(iv)",
-  "questionText": "(iv) Find ௗ௛ ௗ௧and hence find how long it took the ball to reach its greatest height",
+  "questionText": "(iv) Find dℎ dtand hence find how long it took the ball to reach its greatest height",
   "stem": "",
   "figureKey": "maths-2022-OL-paper-p026-i0",
   "labelKey": [],
@@ -7680,7 +7642,7 @@
    {
     "id": "maths-2022-ol-p1-q10-a-iv-r1",
     "kind": "anyN",
-    "verbatim": "Some correct differentiation ௗ௛ ௗ௧= 0",
+    "verbatim": "Some correct differentiation dℎ dt = 0",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.",
@@ -7688,8 +7650,8 @@
      "claimMax": 2,
      "perOption": 3,
      "options": [
-      "Some correct differentiation ௗ௛ ௗ௧= 0",
-      "ௗ௛ ௗ௧ correct, and sets = 0  ௗ௛ Work of merit in finding ௗ௧, finishes correctly"
+      "Some correct differentiation dℎ dt = 0",
+      "dℎ dt correct, and sets = 0  dℎ Work of merit in finding dt, finishes correctly"
      ],
      "perOptionSteps": [
       3,
@@ -8552,7 +8514,7 @@
    {
     "id": "maths-2022-ol-p2-q8-b-i-r1",
     "kind": "anyN",
-    "verbatim": "Correct trigonometric ratio a² = (7 ∙5)2 + (47)2",
+    "verbatim": "Correct trigonometric ratio a² = (7 ∙5)² + (47)²",
     "marks": 5,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.",
@@ -8560,7 +8522,7 @@
      "claimMax": 2,
      "perOption": 2,
      "options": [
-      "Correct trigonometric ratio a² = (7 ∙5)2 + (47)2",
+      "Correct trigonometric ratio a² = (7 ∙5)² + (47)²",
       "Fully substituted trigonometric ratio  Incorrect calculator mode but otherwise correct (only once in the paper) Note: Rad = 1. Grad = 90"
      ],
      "perOptionSteps": [
@@ -8840,7 +8802,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q9-e-i",
-  "topicId": "maths-2-1",
+  "topicId": "maths-3-4",
   "conceptId": "correct-decimal-places",
   "level": "ordinary",
   "year": 2022,
@@ -8887,7 +8849,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q9-e-ii",
-  "topicId": "maths-2-1",
+  "topicId": "maths-3-4",
   "conceptId": "acb-angle-roof-makes-point-correct",
   "level": "ordinary",
   "year": 2022,
@@ -8955,7 +8917,7 @@
    {
     "id": "maths-2022-ol-p2-q10-b-i-r1",
     "kind": "anyN",
-    "verbatim": "√௡ written and stops",
+    "verbatim": "√n written and stops",
     "marks": 5,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.",
@@ -8963,7 +8925,7 @@
      "claimMax": 3,
      "perOption": 2,
      "options": [
-      "√௡ written and stops",
+      "√n written and stops",
       "Formula substituted correctly but not evaluated i.e. √1500 Answer given as 0.0258",
       "Correct answer with supporting work"
      ],
@@ -9042,7 +9004,7 @@
    {
     "id": "maths-2022-ol-p2-q10-b-iv-r1",
     "kind": "anyN",
-    "verbatim": "Work of merit √௡, p̂ + √௡ቃ in Interval written as ቂp̂ − part (iii)and/or(iv). Either lower or upper boundary as 68∙4 or 73∙6 in (iii) Conclusion without reason correct in part (iv) Reason without interpretation knowledge shown in part (iv)",
+    "verbatim": "Work of merit √n, p̂ + √n] in Interval written as [p̂ − part (iii)and/or(iv). Either lower or upper boundary as 68∙4 or 73∙6 in (iii) Conclusion without reason correct in part (iv) Reason without interpretation knowledge shown in part (iv)",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
@@ -9050,7 +9012,7 @@
      "claimMax": 3,
      "perOption": 3,
      "options": [
-      "Work of merit √௡, p̂ + √௡ቃ in Interval written as ቂp̂ − part (iii)and/or(iv). Either lower or upper boundary as 68∙4 or 73∙6 in (iii) Conclusion without reason correct in part (iv) Reason without interpretation knowledge shown in part (iv)",
+      "Work of merit √n, p̂ + √n] in Interval written as [p̂ − part (iii)and/or(iv). Either lower or upper boundary as 68∙4 or 73∙6 in (iii) Conclusion without reason correct in part (iv) Reason without interpretation knowledge shown in part (iv)",
       "Either part (iii) or part (iv) correct Significant work of merit in both parts (Correct substitution in both parts)",
       "Either part correct and significant work in the other part"
      ],
@@ -9325,7 +9287,7 @@
    {
     "id": "maths-2023-hl-p1-q2-a-r1",
     "kind": "anyN",
-    "verbatim": "Work of merit, for example, f(3) or some correct differentiation Work of merit at completing the square (x−h)2 + k",
+    "verbatim": "Work of merit, for example, f(3) or some correct differentiation Work of merit at completing the square (x−h)² + k",
     "marks": 15,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12, four parts for 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
@@ -9333,9 +9295,9 @@
      "claimMax": 3,
      "perOption": 4,
      "options": [
-      "Work of merit, for example, f(3) or some correct differentiation Work of merit at completing the square (x−h)2 + k",
-      "b correct Uses f(3) to find a correct equation in b and c ௕^మ ௕ 2) 4 + c (x + − Work of merit in finding both b and c (x−3)2 + k, where k ≠ −1 (x−h)2−1, where h ≠ 3",
-      "Finds b and work of merit in finding c (x−3)2−1"
+      "Work of merit, for example, f(3) or some correct differentiation Work of merit at completing the square (x−h)² + k",
+      "b correct Uses f(3) to find a correct equation in b and c b² b 2) 4 + c (x + − Work of merit in finding both b and c (x−3)² + k, where k ≠ −1 (x−h)²−1, where h ≠ 3",
+      "Finds b and work of merit in finding c (x−3)²−1"
      ],
      "perOptionSteps": [
       4,
@@ -9356,7 +9318,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q2(b)",
-  "questionText": "Find the value of the following limit, where n∈ℕ: lim ௡→ஶቈ n n + 1 + n + 1000 n + ( 1 3 ) ௡ ቉ b = ____________ and c = ____________",
+  "questionText": "Find the value of the following limit, where n∈ℕ: n ] lim n→∞ [ n n+ 1 + n+ 1000 n + ( 1 3 )",
   "stem": "",
   "figureKey": "maths-2023-HL-paper-p009-i1",
   "labelKey": [],
@@ -9372,7 +9334,7 @@
    {
     "id": "maths-2023-hl-p1-q2-b-r1",
     "kind": "anyN",
-    "verbatim": "Work of merit, for example, ௡ indicates sum of limits, divides 3) ቇ቏ by highest power of n in one of first two terms Substitutes ∞ for n Finds two or more terms of the sequence, ௡ ௡ ௡+1000 + ( 3) T௡= ௡+1 + ௡",
+    "verbatim": "Work of merit, for example, n indicates sum of limits, divides 3) )቏ by highest power of n in one of first two terms Substitutes ∞ for n Finds two or more terms of the sequence, n n n + 1000 + ( 3) Tn = n + 1 + n",
     "marks": 5,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.",
@@ -9380,7 +9342,7 @@
      "claimMax": 2,
      "perOption": 2,
      "options": [
-      "Work of merit, for example, ௡ indicates sum of limits, divides 3) ቇ቏ by highest power of n in one of first two terms Substitutes ∞ for n Finds two or more terms of the sequence, ௡ ௡ ௡+1000 + ( 3) T௡= ௡+1 + ௡",
+      "Work of merit, for example, n indicates sum of limits, divides 3) )቏ by highest power of n in one of first two terms Substitutes ∞ for n Finds two or more terms of the sequence, n n n + 1000 + ( 3) Tn = n + 1 + n",
       "One limit correctly evaluated and work of merit in any one of the other two limits"
      ],
      "perOptionSteps": [
@@ -9473,7 +9435,7 @@
       "Work of merit, for example, some correct substitution or some correct multiplication",
       "Fully correct substitution and multiplication Method 2",
       "z²−(sum)z + product States p is the product of the roots Sum of the roots = −3 + 2i",
-      "Finds 2^(nd) root States sum of the roots = 3 −2i, but finishes correctly Method 3",
+      "Finds 2nd root States sum of the roots = 3 −2i, but finishes correctly Method 3",
       "Some correct substitution in the quadratic formula",
       "Formula fully substituted and 1 + i substituted for z Formula fully substituted and set equal to 1 + i Method 4",
       "Sets up long division but divisor must be of the form z−a + bi, where a = 1 and b = −1 (Accept b = 1 here)",
@@ -9498,7 +9460,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q4(b)",
-  "questionText": "t is a positive real number, with: log3t + log9t + log27t + log81t = 10 Find the value of t. Give your answer in the form 3^௥, where r∈ℚ. Hint: use the formula log௔b = ୪୭୥೎௕ ୪୭୥೎^௔ . (c) (i) Explain what log6m means, where m is a positive real number",
+  "questionText": "t is a positive real number, with: log3t + log9t + log27t + log81t = 10 Find the value of t. Give your answer in the form 3^r, where r∈ℚ. Hint: use the formula logab = log೎b log೎a . (c) (i) Explain what log6m means, where m is a positive real number",
   "stem": "",
   "figureKey": "maths-2023-HL-paper-p014-i0",
   "labelKey": [],
@@ -9514,7 +9476,7 @@
    {
     "id": "maths-2023-hl-p1-q4-b-r1",
     "kind": "anyN",
-    "verbatim": "Work of merit, for example, plots −1 + √3i Work of merit towards finding r or 𝜃 భ w = (−1 + √3i) మ",
+    "verbatim": "Work of merit, for example, plots −1 + √3i Work of merit towards finding r or 𝜃 w = (−1 + √3i)",
     "marks": 15,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12, four parts for 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
@@ -9522,7 +9484,7 @@
      "claimMax": 3,
      "perOption": 4,
      "options": [
-      "Work of merit, for example, plots −1 + √3i Work of merit towards finding r or 𝜃 భ w = (−1 + √3i) మ",
+      "Work of merit, for example, plots −1 + √3i Work of merit towards finding r or 𝜃 w = (−1 + √3i)",
       "2 steps correct",
       "3 steps correct Full Credit –1 Roots found correctly, but one or both in polar form"
      ],
@@ -9570,8 +9532,8 @@
      "perOption": 3,
      "options": [
       "Work of merit in one element, for example, i(a + bi)",
-      "1 element correct and work of merit in a 2^(nd) element",
-      "2 elements correct and work of merit in a 3^(rd) element",
+      "1 element correct and work of merit in a 2nd element",
+      "2 elements correct and work of merit in a 3rd element",
       "Diagram not labelled, otherwise correct"
      ],
      "perOptionSteps": [
@@ -9588,13 +9550,13 @@
  {
   "id": "maths-2023-hl-p1-q5-a",
   "topicId": "maths-5-2",
-  "conceptId": "function-defined-follows-5x2-derivative-its",
+  "conceptId": "function-defined-follows-derivative-its-simplest",
   "level": "higher",
   "year": 2023,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q5(a)",
-  "questionText": "The function f is defined as follows, for x∈ℝ: f(x) = 1 5x2 + 7 Find f′(x), the derivative of f. Give your answer in its simplest form",
+  "questionText": "The function f is defined as follows, for x∈ℝ: f(x) = 1 5x² + 7 Find f′(x), the derivative of f. Give your answer in its simplest form",
   "stem": "",
   "figureKey": "maths-2023-HL-paper-p016-i0",
   "labelKey": [],
@@ -9619,7 +9581,7 @@
      "perOption": 6,
      "options": [
       "Some correct differentiation",
-      "Correct substitution into quotient rule One error in substitution into quotient rule, but finishes correctly Full Credit –1 f^ᇱ(x) = −1(5x2 + 7)−2(10x)"
+      "Correct substitution into quotient rule One error in substitution into quotient rule, but finishes correctly Full Credit –1 f′(x) = −1(5x² + 7)^(−2)(10x)"
      ],
      "perOptionSteps": [
       6,
@@ -9632,14 +9594,14 @@
  },
  {
   "id": "maths-2023-hl-p1-q5-b",
-  "topicId": "maths-2-3",
+  "topicId": "maths-5-2",
   "conceptId": "function-defined-follows-tan-value-form",
   "level": "higher",
   "year": 2023,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q5(b)",
-  "questionText": "The function g(x) is defined as follows, for x∈ℝ, 0 < x < 𝜋: g(x) = (tan ( ௫ 2 ))(ln x) Find the value of g^ᇱ( గ 2 ). Give your answer in the form a + ln b, where a, b∈ℝ",
+  "questionText": "The function g(x) is defined as follows, for x∈ℝ, 0 < x < 𝜋: g(x) = (tan ( x 2 ))(ln x) Find the value of g′( 𝜋 2 ). Give your answer in the form a + ln b, where a, b∈ℝ",
   "stem": "",
   "figureKey": "maths-2023-HL-paper-p016-i1",
   "labelKey": [],
@@ -9733,7 +9695,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q6(a)",
-  "questionText": "f and g are two functions of x∈ℝ, where: f(x) = x + 4 g(x) = x2−2",
+  "questionText": "f and g are two functions of x∈ℝ, where: f(x) = x + 4 g(x) = x²−2",
   "stem": "",
   "figureKey": "maths-2023-HL-paper-p020-i0",
   "labelKey": [],
@@ -9818,7 +9780,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q6(a)(ii)",
-  "questionText": "Find the area of the shaded region in the diagram below (not to scale), the region between the graphs of f(x) = x + 4 and g(x) = x2−2, from x = −1 to x = 2",
+  "questionText": "Find the area of the shaded region in the diagram below (not to scale), the region between the graphs of f(x) = x + 4 and g(x) = x²−2, from x = −1 to x = 2",
   "stem": "",
   "figureKey": "maths-2023-HL-paper-p019-i0",
   "labelKey": [],
@@ -9861,13 +9823,13 @@
  {
   "id": "maths-2023-hl-p1-q6-b",
   "topicId": "maths-5-2",
-  "conceptId": "positive-constant-work-out-value",
+  "conceptId": "positive-constant-ebx-work-out-value",
   "level": "higher",
   "year": 2023,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q6(b)",
-  "questionText": "b∈ℝ is a positive constant, and: ∫b e^(௕௫) dx = e ௕ 0 Work out the value of b",
+  "questionText": "b∈ℝ is a positive constant, and: b ∫b ebx dx= e 0 Work out the value of b",
   "stem": "",
   "figureKey": "maths-2023-HL-paper-p020-i1",
   "labelKey": [],
@@ -9883,7 +9845,7 @@
    {
     "id": "maths-2023-hl-p1-q6-b-r1",
     "kind": "anyN",
-    "verbatim": "Some correct integration, for example, ke^(௕௫) (k ≠ 1) appears without the integral sign +C",
+    "verbatim": "Some correct integration, for example, kebx (k ≠ 1) appears without the integral sign +C",
     "marks": 5,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Marked in order: Low Partial Credit; Mid Partial Credit.",
@@ -9891,7 +9853,7 @@
      "claimMax": 2,
      "perOption": 2,
      "options": [
-      "Some correct integration, for example, ke^(௕௫) (k ≠ 1) appears without the integral sign +C",
+      "Some correct integration, for example, kebx (k ≠ 1) appears without the integral sign +C",
       "Fully correct integration"
      ],
      "perOptionSteps": [
@@ -9928,7 +9890,7 @@
    {
     "id": "maths-2023-hl-p1-q7-c-r1",
     "kind": "anyN",
-    "verbatim": "Work of merit in finding v′(t) or brings v′(t) from (b) States v^ᇱ(t) = 0 or similar v′′(t) appears",
+    "verbatim": "Work of merit in finding v′(t) or brings v′(t) from (b) States v′(t) = 0 or similar v′′(t) appears",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.",
@@ -9936,7 +9898,7 @@
      "claimMax": 2,
      "perOption": 4,
      "options": [
-      "Work of merit in finding v′(t) or brings v′(t) from (b) States v^ᇱ(t) = 0 or similar v′′(t) appears",
+      "Work of merit in finding v′(t) or brings v′(t) from (b) States v′(t) = 0 or similar v′′(t) appears",
       "2 steps correct Full Credit –1 t = 4.58 written down and not explicitly excluded Rounded incorrectly or no rounding, otherwise correct"
      ],
      "perOptionSteps": [
@@ -10006,7 +9968,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q7(e)",
-  "questionText": "Taking v′(t) to be the derivative of v, and v′′(t) to be the second derivative of v: v^ᇱ(1) > 0 and v^(ᇱᇱ)(1) ൏0 Four graphs, A, B, C, and D, are shown below",
+  "questionText": "Taking v′(t) to be the derivative of v, and v′′(t) to be the second derivative of v: v′(1) > 0 and v′′(1) ൏0 Four graphs, A, B, C, and D, are shown below",
   "stem": "",
   "figureKey": "maths-2023-HL-paper-p023-i0",
   "labelKey": [],
@@ -10123,7 +10085,7 @@
      "perOption": 2,
      "options": [
       "Some correct substitution into relevant formula 2.4% written as a decimal",
-      "భ (1.024) ర= 1 + i Evaluates correctly i = (1.024)4−1 Uses 3 or 12 instead of 4, but otherwise correct",
+      "(1.024) 4 = 1 + i Evaluates correctly i = (1.024)⁴−1 Uses 3 or 12 instead of 4, but otherwise correct",
       "Answer given as a decimal"
      ],
      "perOptionSteps": [
@@ -10282,7 +10244,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q10(c)",
-  "questionText": "Find the total area of the n rectangles in T௡ , for n∈ℕ. Give your answer in square units in terms of n, in its simplest form",
+  "questionText": "Find the total area of the n rectangles in Tn , for n∈ℕ. Give your answer in square units in terms of n, in its simplest form",
   "stem": "",
   "figureKey": "maths-2023-HL-paper-p031-i0",
   "labelKey": [],
@@ -10298,7 +10260,7 @@
    {
     "id": "maths-2023-hl-p1-q10-c-r1",
     "kind": "anyN",
-    "verbatim": "Work of merit, for example, work towards establishing pattern by writing T௞, k ≠ 3  ௡ mentioned as height of rectangle Identifies 2n (or n) small triangles Base length of each small triangle found",
+    "verbatim": "Work of merit, for example, work towards establishing pattern by writing Tk^, k ≠ 3  n mentioned as height of rectangle Identifies 2n (or n) small triangles Base length of each small triangle found",
     "marks": 5,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.",
@@ -10306,8 +10268,8 @@
      "claimMax": 2,
      "perOption": 2,
      "options": [
-      "Work of merit, for example, work towards establishing pattern by writing T௞, k ≠ 3  ௡ mentioned as height of rectangle Identifies 2n (or n) small triangles Base length of each small triangle found",
-      "2௡ ௡+ ௡+ ⋯+ ௡ቂ ௡ቃ or T௡= equivalent not in closed form Finds sum of the areas of the small triangles"
+      "Work of merit, for example, work towards establishing pattern by writing Tk^, k ≠ 3  n mentioned as height of rectangle Identifies 2n (or n) small triangles Base length of each small triangle found",
+      "2n n + n + ⋯+ n[ n] or Tn = equivalent not in closed form Finds sum of the areas of the small triangles"
      ],
      "perOptionSteps": [
       2,
@@ -10327,7 +10289,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q10(d)",
-  "questionText": "The total area of the rectangles in the n th term of a different sequence of groups of rectangles is as follows, for n∈ℕ: Total area = A௡= 8 (௡−1) ௡ Work out the first value of n for which A௡ is greater than 95% of the area of the triangle on the right. This question continues on the next page",
+  "questionText": "The total area of the rectangles in the n th term of a different sequence of groups of rectangles is as follows, for n∈ℕ: Total area = An = 8 (n−1) n Work out the first value of n for which An is greater than 95% of the area of the triangle on the right. This question continues on the next page",
   "stem": "",
   "figureKey": "maths-2023-HL-paper-p032-i0",
   "labelKey": [],
@@ -10365,14 +10327,14 @@
  },
  {
   "id": "maths-2023-hl-p1-q10-e-i",
-  "topicId": "maths-3-4",
+  "topicId": "maths-5-2",
   "conceptId": "volume-pyramid",
   "level": "higher",
   "year": 2023,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q10(e)(i)",
-  "questionText": "The volume of the pyramid is ׬ S(x) dx ௛ 0",
+  "questionText": "The volume of the pyramid is ∫ S(x) dx ℎ 0",
   "stem": "",
   "figureKey": "maths-2023-HL-paper-p032-i1",
   "labelKey": [],
@@ -10397,7 +10359,7 @@
      "perOption": 4,
      "options": [
       "Integral set up correctly",
-      "Integration is correct ௖^మ Mishandles ௛^మ , but otherwise correct."
+      "Integration is correct c² Mishandles ℎ² , but otherwise correct."
      ],
      "perOptionSteps": [
       4,
@@ -10410,7 +10372,7 @@
  },
  {
   "id": "maths-2023-hl-p1-q10-e-ii",
-  "topicId": "maths-3-4",
+  "topicId": "maths-2-3",
   "conceptId": "starts-increase-rate-units-per-second",
   "level": "higher",
   "year": 2023,
@@ -10433,7 +10395,7 @@
    {
     "id": "maths-2023-hl-p1-q10-e-ii-r1",
     "kind": "anyN",
-    "verbatim": "States a relevant derivative, for ௗௌ ௗௌ ௗ௧ ௗ௫ or example, ௛ x = Some correct differentiation",
+    "verbatim": "States a relevant derivative, for dS dS dt dx or example, ℎ x = Some correct differentiation",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
@@ -10441,9 +10403,9 @@
      "claimMax": 3,
      "perOption": 3,
      "options": [
-      "States a relevant derivative, for ௗௌ ௗௌ ௗ௧ ௗ௫ or example, ௛ x = Some correct differentiation",
-      "Any two of the following: ௗ௫ ௗ௧= 3 o ௛ o x = ௖^మ ௗௌ ௗ௫= ௛^మ(2x) o ௗௌ ௗ௦ ௗ௫ ௗ௧= ௗ௫× o ௗ௧ or similar",
-      "ௗௌ ௗ௦ ௗ௫ ௗ௧= ௗ௫×  ௗ௧, and any two others from the MPC list above"
+      "States a relevant derivative, for dS dS dt dx or example, ℎ x = Some correct differentiation",
+      "Any two of the following: dx dt = 3 o ℎ o x = c² dS dx = ℎ²(2x) o dS ds dx dt = dx × o dt or similar",
+      "dS ds dx dt = dx ×  dt, and any two others from the MPC list above"
      ],
      "perOptionSteps": [
       3,
@@ -10553,14 +10515,14 @@
  },
  {
   "id": "maths-2023-hl-p2-q3-b-ii",
-  "topicId": "maths-2-2",
+  "topicId": "maths-2-3",
   "conceptId": "perpendicular-bisector-value-value",
   "level": "higher",
   "year": 2023,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 2 Q3(b)(ii)",
-  "questionText": "The perpendicular bisector of ሾABሿ is: 3x + 2y−14 = 0 Find the value of l and the value of k",
+  "questionText": "The perpendicular bisector of [AB] is: 3x + 2y−14 = 0 Find the value of l and the value of k",
   "stem": "",
   "figureKey": "maths-2023-HL-paper-p044-i0",
   "labelKey": [],
@@ -10748,7 +10710,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 2 Q5(b)",
-  "questionText": "Rohan makes a solid cuboid of dimensions 5 ൈ3 ൈ4 using his small cubes. Each small cube has sides of length 1 unit. Some of the small cubes have 1 face, 2 faces, or 3 faces on the outside of the cuboid. Other small cubes have no faces on the outside of the cuboid",
+  "questionText": "Rohan makes a solid cuboid of dimensions 5 × 3 × 4 using his small cubes. Each small cube has sides of length 1 unit. Some of the small cubes have 1 face, 2 faces, or 3 faces on the outside of the cuboid. Other small cubes have no faces on the outside of the cuboid",
   "stem": "",
   "figureKey": "maths-2023-HL-paper-p047-i1",
   "labelKey": [],
@@ -10891,7 +10853,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 2 Q7(a)",
-  "questionText": "The diagram below shows a road ሾABሿ, which is not to scale. AC is horizontal and BC is vertical. |BC| = 9 m and |AB| = 70 m",
+  "questionText": "The diagram below shows a road [AB], which is not to scale. AC is horizontal and BC is vertical. |BC| = 9 m and |AB| = 70 m",
   "stem": "",
   "figureKey": "maths-2023-HL-paper-p050-i0",
   "labelKey": [],
@@ -11090,7 +11052,7 @@
    {
     "id": "maths-2023-hl-p2-q7-e-ii-r1",
     "kind": "anyN",
-    "verbatim": "Work of merit in finding V^ᇱ(t)",
+    "verbatim": "Work of merit in finding V′(t)",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit -1.",
@@ -11098,8 +11060,8 @@
      "claimMax": 3,
      "perOption": 4,
      "options": [
-      "Work of merit in finding V^ᇱ(t)",
-      "V^ᇱ(t) correct",
+      "Work of merit in finding V′(t)",
+      "V′(t) correct",
       "Calculator in incorrect mode No rounding or incorrect rounding No units or incorrect units"
      ],
      "perOptionSteps": [
@@ -11423,7 +11385,7 @@
      "perOption": 4,
      "options": [
       "Correct formula with some substitution",
-      "6^మ+8^మ−4^మ cos 𝛼= 2(6)(8) or equivalent 16 = 100 −96cos𝛼 Uses the cosine rule to find either ∠ADE or ∠DEA"
+      "6² + 8²−4² cos 𝛼= 2⁽⁶^()⁸^) or equivalent 16 = 100 −96cos𝛼 Uses the cosine rule to find either ∠ADE or ∠DEA"
      ],
      "perOptionSteps": [
       4,
@@ -11698,7 +11660,7 @@
    {
     "id": "maths-2023-ol-p1-q1-c-r1",
     "kind": "anyN",
-    "verbatim": "Some correct substitution into ௥ 100) F = P(1 +",
+    "verbatim": "Some correct substitution into t r 100) F = P(1 +",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.",
@@ -11706,7 +11668,7 @@
      "claimMax": 2,
      "perOption": 4,
      "options": [
-      "Some correct substitution into ௥ 100) F = P(1 +",
+      "Some correct substitution into t r 100) F = P(1 +",
       "Fully correct substitution Note: Apply F* for incorrect or no rounding"
      ],
      "perOptionSteps": [
@@ -12048,7 +12010,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q6(b)",
-  "questionText": "Expand and simplify (2x−4)2−6",
+  "questionText": "Expand and simplify (2x−4)²−6",
   "stem": "",
   "figureKey": "maths-2023-OL-paper-p016-i2",
   "labelKey": [],
@@ -12064,7 +12026,7 @@
    {
     "id": "maths-2023-ol-p1-q6-b-r1",
     "kind": "anyN",
-    "verbatim": "One term correct in expansion of (2x−4)2 Writes (2x−4) (2x−4) Ignores twice the product and just writes 4x²∓16 for the squaring",
+    "verbatim": "One term correct in expansion of (2x−4)² Writes (2x−4) (2x−4) Ignores twice the product and just writes 4x²∓16 for the squaring",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.",
@@ -12072,7 +12034,7 @@
      "claimMax": 2,
      "perOption": 4,
      "options": [
-      "One term correct in expansion of (2x−4)2 Writes (2x−4) (2x−4) Ignores twice the product and just writes 4x²∓16 for the squaring",
+      "One term correct in expansion of (2x−4)² Writes (2x−4) (2x−4) Ignores twice the product and just writes 4x²∓16 for the squaring",
       "Writes 4x²−8x−8x + 16"
      ],
      "perOptionSteps": [
@@ -12163,7 +12125,7 @@
      "perOption": 3,
      "options": [
       "One term correct when multiplying across by (S + 10) Writes C(S + 10)",
-      "CS = 1000 −10C 1000 Note: S = ஼+10 without work is zero marks"
+      "CS = 1000 −10C 1000 Note: S = C + 10 without work is zero marks"
      ],
      "perOptionSteps": [
       3,
@@ -12221,7 +12183,7 @@
  },
  {
   "id": "maths-2023-ol-p1-q7-b-i",
-  "topicId": "maths-4-1",
+  "topicId": "maths-5-1",
   "conceptId": "write-down-probability-raining-start-end",
   "level": "ordinary",
   "year": 2023,
@@ -12812,7 +12774,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 2 Q7(a)(i)",
-  "questionText": "Find the gradient of the road ሾABሿ when |BC| = 24 m and |AC| = 135 m. Give your answer correct to the nearest percent",
+  "questionText": "Find the gradient of the road [AB] when |BC| = 24 m and |AC| = 135 m. Give your answer correct to the nearest percent",
   "stem": "",
   "figureKey": "maths-2023-OL-paper-p043-i0",
   "labelKey": [],
@@ -12859,7 +12821,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 2 Q7(a)(ii)",
-  "questionText": "Find |AC| when |BC| = 16 m and the gradient of the road ሾABሿ is 12%. Give your answer correct to the nearest metre",
+  "questionText": "Find |AC| when |BC| = 16 m and the gradient of the road [AB] is 12%. Give your answer correct to the nearest metre",
   "stem": "",
   "figureKey": "maths-2023-OL-paper-p043-i1",
   "labelKey": [],
@@ -13007,7 +12969,7 @@
    {
     "id": "maths-2023-ol-p2-q7-b-r1",
     "kind": "anyN",
-    "verbatim": "Work of merit e.g. Sine Rule written Identifies 5^௢",
+    "verbatim": "Work of merit e.g. Sine Rule written Identifies 5^o",
     "marks": 5,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.",
@@ -13015,7 +12977,7 @@
      "claimMax": 2,
      "perOption": 3,
      "options": [
-      "Work of merit e.g. Sine Rule written Identifies 5^௢",
+      "Work of merit e.g. Sine Rule written Identifies 5^o",
       "Correct formula fully substituted Full Credit (-1): Incorrect rounding Rad: = 17 ∙14 Grad: = 249 ∙61"
      ],
      "perOptionSteps": [
@@ -13438,7 +13400,7 @@
  },
  {
   "id": "maths-2023-ol-p2-q9-a-iv",
-  "topicId": "maths-3-3",
+  "topicId": "maths-5-2",
   "conceptId": "draw-graph-chart-represent-data-table",
   "level": "ordinary",
   "year": 2023,
@@ -13573,7 +13535,7 @@
  },
  {
   "id": "maths-2023-ol-p2-q9-b-iii",
-  "topicId": "maths-3-3",
+  "topicId": "maths-5-2",
   "conceptId": "iii-general-students-get-rating-excellent",
   "level": "ordinary",
   "year": 2023,
@@ -13596,7 +13558,7 @@
    {
     "id": "maths-2023-ol-p2-q9-b-iii-r1",
     "kind": "anyN",
-    "verbatim": "Work of merit e.g. Writes answer from (b)(i) or (b)(ii) in this part p̂ ± √௡ p̂ ± 1.96ට^௣(1−௣) ௡",
+    "verbatim": "Work of merit e.g. Writes answer from (b)(i) or (b)(ii) in this part p̂ ± √n p̂ ± 1.96√^p⁽^(1−p)^) n",
     "marks": 5,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
@@ -13604,7 +13566,7 @@
      "claimMax": 3,
      "perOption": 2,
      "options": [
-      "Work of merit e.g. Writes answer from (b)(i) or (b)(ii) in this part p̂ ± √௡ p̂ ± 1.96ට^௣(1−௣) ௡",
+      "Work of merit e.g. Writes answer from (b)(i) or (b)(ii) in this part p̂ ± √n p̂ ± 1.96√^p⁽^(1−p)^) n",
       "One boundary formed 12 ∙2 −4 ∙5 or 12 ∙2 + 4 ∙5",
       "Both boundaries formed 12 ∙2 −4 ∙5 and 12 ∙2 + 4 ∙5 but no conclusion and reason Full Credit (-1): Either conclusion or reason missing"
      ],
@@ -13652,7 +13614,7 @@
      "perOption": 4,
      "options": [
       "Work of merit e.g. Any correct geometrical interpretation worked or indicated diagram",
-      "Calculates 54^௢ and stops",
+      "Calculates 54^o and stops",
       "Correct answer without supporting work"
      ],
      "perOptionSteps": [
@@ -14116,7 +14078,7 @@
    {
     "id": "maths-2024-hl-p1-q3-b-ii-r1",
     "kind": "anyN",
-    "verbatim": "Work of merit, for example, some correct differentiation of f(x) or f^′(x); states f^(′′)(x) = 0 Brings down derivative from (i)",
+    "verbatim": "Work of merit, for example, some correct differentiation of f(x) or f′(x); states f′′(x) = 0 Brings down derivative from (i)",
     "marks": 5,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.",
@@ -14124,7 +14086,7 @@
      "claimMax": 2,
      "perOption": 2,
      "options": [
-      "Work of merit, for example, some correct differentiation of f(x) or f^′(x); states f^(′′)(x) = 0 Brings down derivative from (i)",
+      "Work of merit, for example, some correct differentiation of f(x) or f′(x); states f′′(x) = 0 Brings down derivative from (i)",
       "Correct f′′(x) Finds x values of local maximum and local minimum"
      ],
      "perOptionSteps": [
@@ -14373,7 +14335,7 @@
  },
  {
   "id": "maths-2024-hl-p1-q5-c-ii",
-  "topicId": "maths-3-1",
+  "topicId": "maths-4-1",
   "conceptId": "first-value-which",
   "level": "higher",
   "year": 2024,
@@ -14714,7 +14676,7 @@
    {
     "id": "maths-2024-hl-p1-q7-c-i-r1",
     "kind": "anyN",
-    "verbatim": "Work of merit in differentiation, for example, F^′(t) = ae^(0.04t)",
+    "verbatim": "Work of merit in differentiation, for example, F′(t) = ae^(0.04t)",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit -1.",
@@ -14722,8 +14684,8 @@
      "claimMax": 3,
      "perOption": 4,
      "options": [
-      "Work of merit in differentiation, for example, F^′(t) = ae^(0.04t)",
-      "Differentiation fully correct 5000e^(0.04t) F^′(t) = and finishes 0.04 correctly",
+      "Work of merit in differentiation, for example, F′(t) = ae^(0.04t)",
+      "Differentiation fully correct 5000e^(0.04t) F′(t) = and finishes 0.04 correctly",
       "Apply a * for incorrect rounding or no rounding"
      ],
      "perOptionSteps": [
@@ -14857,7 +14819,7 @@
      "perOption": 2,
      "options": [
       "Work of merit, for example, mentions max value of c = 1 Indicates + 19 or −19 Correct indication of 21 or 19 on the graph Some correct differentiation of S(t)",
-      "Max or min correct Finds the values of t for which S^′(t) = 0 Indicates ±19",
+      "Max or min correct Finds the values of t for which S′(t) = 0 Indicates ±19",
       "Answers given as 2 and 40, but doesn’t indicate which is maximum and which is minimum Maximum = 2 and Minimum = 40"
      ],
      "perOptionSteps": [
@@ -15157,7 +15119,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q9(d)",
-  "questionText": "The volume of the hemisphere is increasing at a constant rate of 450 cm3 per second",
+  "questionText": "The volume of the hemisphere is increasing at a constant rate of 450 cm³ per second",
   "stem": "",
   "figureKey": "maths-2024-HL-paper-p024-i0",
   "labelKey": [],
@@ -15317,7 +15279,7 @@
      "options": [
       "Inequality correctly formulated Trials one value of x",
       "Quadratic formula fully substituted Trials 13 and 14 Trials 21 and 22",
-      "Roots of quadratic found Trials 13 and 14 and 21 and 22 Solves P^′(x) > 0 correctly",
+      "Roots of quadratic found Trials 13 and 14 and 21 and 22 Solves P′(x) > 0 correctly",
       "Incorrect rounding or no rounding"
      ],
      "perOptionSteps": [
@@ -15924,7 +15886,7 @@
      "perOption": 3,
      "options": [
       "Work of merit in finding the centre/ radius Some substitution into general equation of a circle Work of merit in finding midpoint or slope of chord joining (7, 10) to (12, 8)",
-      "√(9 −7)2 + (k−10)2 and √(12 −9)2 + (8 −k)2 Two of E A, B, o C Finds equation of the line perpendicular to the chord joining (7, 10) to (12, 8)",
+      "√(9 −7)² + (k−10)² and √(12 −9)² + (8 −k)² Two of E A, B, o C Finds equation of the line perpendicular to the chord joining (7, 10) to (12, 8)",
       "Finds k = 4 (Method 1 or 3) Two independent equations in f and c (Method 2)"
      ],
      "perOptionSteps": [
@@ -16596,7 +16558,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q10(b)",
-  "questionText": "Moving the point O along the line N changes the size of the wiper blade and the region that it cleans. In the diagram below, [D] rotates about O, where O∈D, until it reaches [D′E^′]. As in part (a), E and E′ lie on the rectangle P",
+  "questionText": "Moving the point O along the line N changes the size of the wiper blade and the region that it cleans. In the diagram below, [D] rotates about O, where O∈D, until it reaches [D′E′]. As in part (a), E and E′ lie on the rectangle P",
   "stem": "",
   "figureKey": "maths-2024-HL-paper-p049-i0",
   "labelKey": [],
@@ -16921,7 +16883,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q6(b)(i)",
-  "questionText": "Using the values of k(x) in the table above, show that the Trapezoidal Rule will give an estimate of 32∙1 units2 for this area",
+  "questionText": "Using the values of k(x) in the table above, show that the Trapezoidal Rule will give an estimate of 32∙1 units² for this area",
   "stem": "",
   "figureKey": "maths-2024-OL-paper-p013-i1",
   "labelKey": [],
@@ -16960,13 +16922,13 @@
  {
   "id": "maths-2024-ol-p1-q6-b-ii",
   "topicId": "maths-5-1",
-  "conceptId": "actual-area-under-between-units2-liam",
+  "conceptId": "actual-area-under-between-units-liam",
   "level": "ordinary",
   "year": 2024,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q6(b)(ii)",
-  "questionText": "The actual area under k(x), between 0 and 5, is 31∙8 units2. Liam estimated the area was 32∙1 units2 by using the Trapezoidal Rule",
+  "questionText": "The actual area under k(x), between 0 and 5, is 31∙8 units². Liam estimated the area was 32∙1 units² by using the Trapezoidal Rule",
   "stem": "",
   "figureKey": "maths-2024-OL-paper-p013-i2",
   "labelKey": [],
@@ -17102,7 +17064,7 @@
  },
  {
   "id": "maths-2024-ol-p1-q7-b-i",
-  "topicId": "maths-3-1",
+  "topicId": "maths-5-2",
   "conceptId": "number-bacteria-after-hour-after-hours",
   "level": "ordinary",
   "year": 2024,
@@ -18008,7 +17970,7 @@
    {
     "id": "maths-2024-ol-p2-q4-a-i-r1",
     "kind": "anyN",
-    "verbatim": "Correct relevant formula Work of merit, for example, identifies h or k or r2",
+    "verbatim": "Correct relevant formula Work of merit, for example, identifies h or k or r²",
     "marks": 5,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.",
@@ -18016,7 +17978,7 @@
      "claimMax": 2,
      "perOption": 2,
      "options": [
-      "Correct relevant formula Work of merit, for example, identifies h or k or r2",
+      "Correct relevant formula Work of merit, for example, identifies h or k or r²",
       "Either centre or radius correct"
      ],
      "perOptionSteps": [
@@ -19037,7 +18999,7 @@
    {
     "id": "maths-2025-hl-p1-q6-b-ii-r1",
     "kind": "anyN",
-    "verbatim": "−b 2a or Work of merit, for example, states h^′(x) = 0",
+    "verbatim": "−b 2a or Work of merit, for example, states h′(x) = 0",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.",
@@ -19045,7 +19007,7 @@
      "claimMax": 2,
      "perOption": 4,
      "options": [
-      "−b 2a or Work of merit, for example, states h^′(x) = 0",
+      "−b 2a or Work of merit, for example, states h′(x) = 0",
       "4(9m)  2(6m) (Method 1) (x−3)² = 0 or equivalent (Method 2) 12m−36m = 0 (Method 3) 54m  6m (Method 4)"
      ],
      "perOptionSteps": [
@@ -19428,7 +19390,7 @@
  },
  {
   "id": "maths-2025-hl-p1-q8-d",
-  "topicId": "maths-3-3",
+  "topicId": "maths-5-2",
   "conceptId": "how-long-would-take-jacob-kayak",
   "level": "higher",
   "year": 2025,
@@ -19527,7 +19489,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 HL Paper 1 Q8(e)(ii)",
-  "questionText": "Jacob knows that there is one value of x for which T(x) is a minimum (0 ≤ x ≤ 8). Solve the following equation to find this value of x, correct to 3 decimal places: T^′(x) = x 6√x² + 4 − 1 12 = 0",
+  "questionText": "Jacob knows that there is one value of x for which T(x) is a minimum (0 ≤ x ≤ 8). Solve the following equation to find this value of x, correct to 3 decimal places: T′(x) = x 6√x² + 4 − 1 12 = 0",
   "stem": "",
   "figureKey": "maths-2025-HL-paper-p026-i0",
   "labelKey": [],
@@ -19574,7 +19536,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 HL Paper 1 Q8(e)(iii)",
-  "questionText": "(iii) There are no other values of x in [0, 8] for which T^′(x) = 0, apart from the answer to part (e)(ii)",
+  "questionText": "(iii) There are no other values of x in [0, 8] for which T′(x) = 0, apart from the answer to part (e)(ii)",
   "stem": "",
   "figureKey": "maths-2025-HL-paper-p027-i0",
   "labelKey": [],
@@ -19644,7 +19606,7 @@
      "perOption": 2,
      "options": [
       "Work of merit, for example, substitutes in 60 or 110 for c, or finds F′(c)",
-      "Evaluates F(60) or F(110) Finds c = 85 when F^′(c) = 0"
+      "Evaluates F(60) or F(110) Finds c = 85 when F′(c) = 0"
      ],
      "perOptionSteps": [
       2,
@@ -19924,7 +19886,7 @@
      "perOption": 4,
      "options": [
       "t−1 Substitutes in n = t² + 2t + 1 Substitutes t = 2n + 1 into 4t²",
-      "(^((t + 1)2) ) or similar  t² t−1 Substitutes n = 2 and completes squaring (^(t−1) +2(^(t−1) 2 ) 2 ) + 1  t² t2 + 2t + 1  2 ) + 1 2(^(t−1)"
+      "((t + 1)2 ) or similar  t² t−1 Substitutes n = 2 and completes squaring (t−1 +2(t−1 2 ) 2 ) + 1  t² t2 + 2t + 1  2 ) + 1 2(t−1"
      ],
      "perOptionSteps": [
       4,
@@ -20218,10 +20180,10 @@
      "perOption": 4,
      "options": [
       "Finds in terms of k, point of tangency",
-      "Equation in k ( in solution)",
+      "Equation in k (• in solution)",
       "Quadratic equation in the form",
       "Finds centre and radius",
-      "Equation in k ( in solution)",
+      "Equation in k (• in solution)",
       "Quadratic equation in form",
       "Finds centre and radius",
       "23 + √725 −k or 23 −√725 −k",
@@ -20366,7 +20328,7 @@
      "perOption": 4,
      "options": [
       "Finds one relevant probability, for example, 1 ), (240 1), (67 Writes one of (6 2 )  240 not evaluated 240 ×",
-      "239 or similar not evaluated 240 × 2 ( 240) not evaluated 240 × (6 (67 1 ) 1)  2 ) 2 ) or (240 (240",
+      "239 or similar not evaluated 240 × 2 ( 240) not evaluated 240 × (6 (67 1 ) 1)  2 ) 2 ^) or (240 (240",
       "2 (( 239)) 240) × ( (6 1)(67 1 )  2 ) (240"
      ],
      "perOptionSteps": [
@@ -20579,7 +20541,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 HL Paper 2 Q5(b)(ii)",
-  "questionText": "P and P^′Q^′R^′S^′ are shown again in the diagram on the right",
+  "questionText": "P and P′Q′R′S′ are shown again in the diagram on the right",
   "stem": "",
   "figureKey": "maths-2025-HL-paper-p053-i0",
   "labelKey": [],
@@ -20604,7 +20566,7 @@
      "perOption": 3,
      "options": [
       "Finds one relevant length",
-      "Finds |P^′Q|",
+      "Finds |P′Q|",
       "Indicates",
       "Finds area",
       "Finds one relevant length",
@@ -20911,13 +20873,13 @@
  {
   "id": "maths-2025-hl-p2-q7-c-iii",
   "topicId": "maths-2-3",
-  "conceptId": "iii-using-area-triangle-km2",
+  "conceptId": "iii-using-area-triangle",
   "level": "higher",
   "year": 2025,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 HL Paper 2 Q7(c)(iii)",
-  "questionText": "(iii) By using C(7, 3) and D(7, −3), find the area of the triangle D, in km2",
+  "questionText": "(iii) By using C(7, 3) and D(7, −3), find the area of the triangle D, in km²",
   "stem": "",
   "figureKey": "maths-2025-HL-paper-p057-i1",
   "labelKey": [],
@@ -21001,13 +20963,13 @@
  {
   "id": "maths-2025-hl-p2-q7-c-v",
   "topicId": "maths-2-3",
-  "conceptId": "area-sector-circle-4837-km2-correct",
+  "conceptId": "area-sector-circle-4837-correct-decimal",
   "level": "higher",
   "year": 2025,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 HL Paper 2 Q7(c)(v)",
-  "questionText": "The area of the sector A of the circle k is 23∙4837 km2, correct to 4 decimal places. The area of the triangle A is 21 km2",
+  "questionText": "The area of the sector A of the circle k is 23∙4837 km², correct to 4 decimal places. The area of the triangle A is 21 km²",
   "stem": "",
   "figureKey": "maths-2025-HL-paper-p059-i0",
   "labelKey": [],
@@ -21439,7 +21401,7 @@
    {
     "id": "maths-2025-hl-p2-q9-d-r1",
     "kind": "anyN",
-    "verbatim": "Work of merit, for example, (²⁴ 16), or (¹⁶ 8 ), or (²⁴ 2 ), or 8!^(, or) diagram  24P8 or similar",
+    "verbatim": "Work of merit, for example, (24 16), or (16 8 ), or (24 2 ), or 8!, or diagram  24P8 or similar",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.",
@@ -21447,8 +21409,8 @@
      "claimMax": 2,
      "perOption": 4,
      "options": [
-      "Work of merit, for example, (²⁴ 16), or (¹⁶ 8 ), or (²⁴ 2 ), or 8!^(, or) diagram  24P8 or similar",
-      "Two relevant terms multiplied, for 8 )(¹⁶ example, (²⁴ 2 ), or 15 × 13, 2 )(¹⁴ or (¹⁶ 2 ) 16!  2⁸"
+      "Work of merit, for example, (24 16), or (16 8 ), or (24 2 ), or 8!, or diagram  24P8 or similar",
+      "Two relevant terms multiplied, for 8 )(16 example, (²⁴ 2 ), or 15 × 13, 2 )(14 or (16 2 ) 16!  2⁸"
      ],
      "perOptionSteps": [
       4,
@@ -21998,7 +21960,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q4(c)(ii)",
-  "questionText": "For the point that you matched to g^′(x) = 0, give a reason for your answer",
+  "questionText": "For the point that you matched to g′(x) = 0, give a reason for your answer",
   "stem": "",
   "figureKey": "maths-2025-OL-paper-p010-i2",
   "labelKey": [],
@@ -22155,7 +22117,7 @@
    {
     "id": "maths-2025-ol-p1-q5-c-ii-r1",
     "kind": "anyN",
-    "verbatim": "Work of merit in (i), for example, some correct work on the graph Work of merit in (ii), for example, minimum point indicated on the graph OR work with the roots towards finding the minimum OR h^′(x) = 0",
+    "verbatim": "Work of merit in (i), for example, some correct work on the graph Work of merit in (ii), for example, minimum point indicated on the graph OR work with the roots towards finding the minimum OR h′(x) = 0",
     "marks": 10,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
@@ -22163,7 +22125,7 @@
      "claimMax": 3,
      "perOption": 3,
      "options": [
-      "Work of merit in (i), for example, some correct work on the graph Work of merit in (ii), for example, minimum point indicated on the graph OR work with the roots towards finding the minimum OR h^′(x) = 0",
+      "Work of merit in (i), for example, some correct work on the graph Work of merit in (ii), for example, minimum point indicated on the graph OR work with the roots towards finding the minimum OR h′(x) = 0",
       "Work of merit in (i) AND (ii) One part correct",
       "One part correct and work of merit in the other part Note: Correct answer without work in (ii) must be consistent with answer from (i)"
      ],
@@ -22574,7 +22536,7 @@
    {
     "id": "maths-2025-ol-p1-q8-b-ii-r1",
     "kind": "anyN",
-    "verbatim": "Work of merit in (i), for example, some correct differentiation OR Q^′(x) = 0 written Work of merit in (ii), for example, some relevant substitution into Q(x) One step correct",
+    "verbatim": "Work of merit in (i), for example, some correct differentiation OR Q′(x) = 0 written Work of merit in (ii), for example, some relevant substitution into Q(x) One step correct",
     "marks": 15,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 10, four parts for 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
@@ -22582,7 +22544,7 @@
      "claimMax": 3,
      "perOption": 4,
      "options": [
-      "Work of merit in (i), for example, some correct differentiation OR Q^′(x) = 0 written Work of merit in (ii), for example, some relevant substitution into Q(x) One step correct",
+      "Work of merit in (i), for example, some correct differentiation OR Q′(x) = 0 written Work of merit in (ii), for example, some relevant substitution into Q(x) One step correct",
       "Two steps correct",
       "Three steps correct"
      ],
@@ -22922,13 +22884,13 @@
  {
   "id": "maths-2025-ol-p1-q10-a-ii",
   "topicId": "maths-3-4",
-  "conceptId": "work-out-surface-area-box-cm2",
+  "conceptId": "work-out-surface-area-box",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q10(a)(ii)",
-  "questionText": "Work out the surface area of this box, in cm2",
+  "questionText": "Work out the surface area of this box, in cm²",
   "stem": "",
   "figureKey": "maths-2025-OL-paper-p020-i1",
   "labelKey": [],
@@ -23754,7 +23716,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q7(c)(i)",
-  "questionText": "A child’s football is in the shape of a sphere and has a diameter of 18 cm. Find the volume of this ball. Give your answer, in cm3, in terms of 𝜋",
+  "questionText": "A child’s football is in the shape of a sphere and has a diameter of 18 cm. Find the volume of this ball. Give your answer, in cm³, in terms of 𝜋",
   "stem": "",
   "figureKey": "maths-2025-OL-paper-p034-i1",
   "labelKey": [],
@@ -23799,7 +23761,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q7(c)(ii)",
-  "questionText": "An adult’s football is in the shape of a sphere and has a volume of 5424∙6 cm3",
+  "questionText": "An adult’s football is in the shape of a sphere and has a volume of 5424∙6 cm³",
   "stem": "",
   "figureKey": "maths-2025-OL-paper-p035-i0",
   "labelKey": [],
@@ -24249,13 +24211,13 @@
  {
   "id": "maths-2025-ol-p2-q9-b-iii",
   "topicId": "maths-3-4",
-  "conceptId": "area-bigger-table-top-724-cm2",
+  "conceptId": "area-bigger-table-top-724-area",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q9(b)(iii)",
-  "questionText": "The area of the bigger table-top is 724 cm2. Use k = 1∙25 to find the area of the smaller table-top. Give your answer correct to the nearest cm2",
+  "questionText": "The area of the bigger table-top is 724 cm². Use k = 1∙25 to find the area of the smaller table-top. Give your answer correct to the nearest cm²",
   "stem": "",
   "figureKey": "maths-2025-OL-paper-p040-i0",
   "labelKey": [],
@@ -24300,7 +24262,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q9(c)(i)",
-  "questionText": "The shaded area is the Work Section. It has a width of 40 cm. Work out the area of the Work Section. Give your answer correct to the nearest cm2",
+  "questionText": "The shaded area is the Work Section. It has a width of 40 cm. Work out the area of the Work Section. Give your answer correct to the nearest cm²",
   "stem": "",
   "figureKey": "maths-2025-OL-paper-p040-i1",
   "labelKey": [],
@@ -24432,7 +24394,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q10(a)(ii)",
-  "questionText": "The size of the angle A is 110°. Work out the area, correct to the nearest m2, of the triangle A, that is, the area of the shaded region in the diagram above",
+  "questionText": "The size of the angle A is 110°. Work out the area, correct to the nearest m², of the triangle A, that is, the area of the shaded region in the diagram above",
   "stem": "",
   "figureKey": "maths-2025-OL-paper-p026-i1",
   "labelKey": [],

@@ -33,8 +33,16 @@ const decks = [
   ['biology:ordinary', BIO_ORDINARY, 625, 'dbad8369d6ba60dee04009663a5502da490e9606630dc8fa8c78bfb84d7ca833'],
   ['chemistry:higher', CHEM_HIGHER, 443, '713b7ef8560702e78ed246adca8800057ca9eafd6e4e45ed583404be169709ae'],
   ['chemistry:ordinary', CHEM_ORDINARY, 336, 'bd98c8dc0d83bbb2fb009b5b10e6dbf39bdb1c407b0408758182648ef9210e7e'],
-  ['physics:higher', PHYS_HIGHER, 487, '58bccae7f701e94253b8aa3639bd21aeb4b5308976fdc69749f19be0f4c4112b'],
-  ['physics:ordinary', PHYS_ORDINARY, 477, '4633bcc4db69cd9c0db73136ea6afcbd90a274580b7339bccbf3cb2e7c95bf0f'],
+  /* 2026-08-23: physics drops from 487/477 to 486/475. Three cards -- one
+   * Higher (2021 q13a(v)) and two Ordinary (2022 q3(ii) and q3(viii)) -- quote
+   * a stacked fraction the scheme's font renders as a diagonal slash whose
+   * operands extract out of order, so "1/l" arrived as "1 l⁄". They were
+   * shipping that text. build-deck.mjs now refuses any card still carrying a
+   * glyph no font table resolves, and refusing beats printing the wrong
+   * expression in front of a student. Recoverable once the fraction reader
+   * covers the Physics papers; not a deletion of content that was correct. */
+  ['physics:higher', PHYS_HIGHER, 486, 'fc15252875fbe1316ad4bfc5696a988ee9c35a126b0425d256afb47230b67e0f'],
+  ['physics:ordinary', PHYS_ORDINARY, 475, '23f9cfff7c5377f0b7ec70f8b127b50757021456bec847070a4a31735eb3f9d1'],
   ['agricultural-science:higher', AGSCI_HIGHER, 438, '31e25662626e35ca1db55e96e1cdfe0492648666c6cd35365f2c1e6d92c35f6a'],
   ['agricultural-science:ordinary', AGSCI_ORDINARY, 431, '2dbd6e7635bb73941a16773ce9d3c654741a863280c002f783fc45cd0d7e8dbd'],
   ['business:higher', BUSINESS_HIGHER, 272, 'a61655818cee2ce61307eb08fe6dad282193791674b4e5e8a893e203b64af976'],
@@ -57,6 +65,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(5_404);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(5_401);
   });
 });

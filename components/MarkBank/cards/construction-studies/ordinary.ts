@@ -140,7 +140,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
     id: "cons-2016-ol-q6-a", topicId: "cons-1-8", conceptId: "specific-safety-precautions-observed-construction-studies",
     section: "B", questionRef: "2016 OL Q6(a)",
-    questionText: "Outline two specific safety precautions to be observed in the Construction Studies room in each of the following situations:  using a scalpel to cut modelling card  carrying a chisel  using a contact adhesive.",
+    questionText: "Outline two specific safety precautions to be observed in the Construction Studies room in each of the following situations: • using a scalpel to cut modelling card • carrying a chisel • using a contact adhesive.",
     tariffModel: {"kind":"fixed","notation":"2 x 4 + 2 x 4 + 2 x 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 24,
     rows: [
     { id: "cons-2016-ol-q6-a-r1", kind: "anyN", verbatim: "Using a scalpel to cut modelling card", marks: 8, contextNote: "Using a scalpel to cut modelling card", openList: true, group: {"claimMax":2,"perOption":4,"options":["Prepare and carry out the work on a clean flat surface","Place the modelling card on a suitable base or mat","Use a good quality straight edge to guide the scalpel","Ensure the straight edge is held firmly","Scalpels are very sharp","Always cut away from your hands","Do not cut right through the material on the first cut","Score the line lightly at the start with the scalpel","Repeat the cut carefully and repeat a number of times until the material is cut","Keep scalpels covered when not in use","Work slowly and plan each cut","Replace blunt blades","Heed the teacher’s advice on classroom safety"]} },
@@ -1132,7 +1132,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
     id: "cons-2019-ol-q6-a-using-a-contact-adhesive-to-glue-veneers", topicId: "cons-1-8", conceptId: "specific-safety-precautions-observed-construction-studies-using-a-contact-adhesive-to-glue-veneers",
     section: "B", questionRef: "2019 OL Q6(a) — Using a contact adhesive to glue veneers",
-    questionText: "State two specific safety precautions to be observed in the Construction Studies classroom in each of the following situations:  using a contact adhesive to glue veneers.",
+    questionText: "State two specific safety precautions to be observed in the Construction Studies classroom in each of the following situations: • using a contact adhesive to glue veneers.",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 4","answer":2,"ofParts":8,"perPart":4}, totalMarks: 8,
     rows: [
     { id: "cons-2019-ol-q6-a-using-a-contact-adhesive-to-glue-veneers-r1", kind: "anyN", verbatim: "Using a contact adhesive to glue veneers", marks: 8, contextNote: "Using a contact adhesive to glue veneers", openList: true, group: {"claimMax":2,"perOption":4,"options":["Carry out the work in a well-ventilated area","Keep the glue away from sources of ignition","Put on safety goggles, a mask and latex gloves","Read the instructions on the container for use and storage","Do not inhale the fumes","Avoid contact with the skin","Keep out of the reach of children","Discard any glue that has expired in an appropriate and safe way"]} },
@@ -1145,7 +1145,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
     id: "cons-2019-ol-q6-a-using-a-battery-powered-screwdriver", topicId: "cons-1-8", conceptId: "specific-safety-precautions-observed-construction-studies-using-a-battery-powered-screwdriver",
     section: "B", questionRef: "2019 OL Q6(a) — Using a battery-powered screwdriver",
-    questionText: "State two specific safety precautions to be observed in the Construction Studies classroom in each of the following situations:  using a battery powered screwdriver.",
+    questionText: "State two specific safety precautions to be observed in the Construction Studies classroom in each of the following situations: • using a battery powered screwdriver.",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 4","answer":2,"ofParts":9,"perPart":4}, totalMarks: 8,
     rows: [
     { id: "cons-2019-ol-q6-a-using-a-battery-powered-screwdriver-r1", kind: "anyN", verbatim: "Using a battery-powered screwdriver", marks: 8, contextNote: "Using a battery-powered screwdriver", openList: true, group: {"claimMax":2,"perOption":4,"options":["Ensure the work is firmly held on a solid surface or fixed in a vice","Never hold the piece you are working on in your hand","Select the correct size of bit for the screw being used","The screwdriver tip should be fitted fully into the screw head before starting the battery powered screwdriver","Apply firm pressure and press the trigger lightly when starting","Set to the highest torque when removing screws","Concentrate on the work being carried out","Make sure your finger is away from the trigger when changing bits","Always store the charger unit away safely when finished"]} },
@@ -3127,7 +3127,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
     id: "cons-2025-ol-q4-b", topicId: "cons-1-3", conceptId: "laying-out-a-chosen-site",
     section: "B", questionRef: "2025 OL Q4(b)",
-    questionText: "Draw a large freehand sketch of your chosen site. On your sketch include your preferred:  house position  entrance to the site  driveway to the house.",
+    questionText: "Draw a large freehand sketch of your chosen site. On your sketch include your preferred: • house position • entrance to the site • driveway to the house.",
     tariffModel: {"kind":"fixed","notation":"1 x 6 + 1 x 6 + 1 x 6 + 1 x 6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 24,
     rows: [
     { id: "cons-2025-ol-q4-b-r1", kind: "anyN", verbatim: "Draw a large freehand sketch of your chosen site. On your sketch include your preferred", marks: 6, contextNote: "Draw a large freehand sketch of your chosen site. On your sketch include your preferred", openList: true, group: {"claimMax":1,"perOption":6,"options":["house position","entrance to the site","driveway to the house"]} },
@@ -3173,7 +3173,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe two potential risks to construction workers when working at height on a construction site.",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 6","answer":2,"ofParts":5,"perPart":6}, totalMarks: 12,
     rows: [
-    { id: "cons-2025-ol-q6-b-r1", kind: "anyN", verbatim: "Describe two potential risks to construction workers when working at height on a construction site.", marks: 12, openList: true, group: {"claimMax":2,"perOption":6,"options":["Workers may slip and fall from a height when on scaffolding or rooftops","A ladder or platform could give way causing a worker to fall","Using power tools can be more challenging at a height leading to an injury","Tools or materials can fall from height and strike a construction worker below","Heavy rain or gusts of wind are often more severe at a height and could lead to a worker falling"]} },
+    { id: "cons-2025-ol-q6-b-r1", kind: "anyN", verbatim: "Describe two potential risks to construction workers when working at height on a construction site.", marks: 12, openList: true, group: {"claimMax":2,"perOption":6,"options":["Workers may slip and fall from a height when on scaffolding or rooftops ","A ladder or platform could give way causing a worker to fall ","Using power tools can be more challenging at a height leading to an injury ","Tools or materials can fall from height and strike a construction worker below ","Heavy rain or gusts of wind are often more severe at a height and could lead to a worker falling "]} },
     ],
   } as SecCard,
   {
@@ -3186,7 +3186,7 @@ export const CARDS: SecCard[] = [
     questionText: "Using notes and freehand sketches, describe one safety measure that should be in place to ensure construction workers can safely access a roof when installing solar panels.",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 7","answer":2,"ofParts":6,"perPart":7}, totalMarks: 14,
     rows: [
-    { id: "cons-2025-ol-q6-c-r1", kind: "anyN", verbatim: "Using notes and freehand sketches, describe one safety measure that should be in place to ensure construction workers ca", marks: 14, openList: true, group: {"claimMax":2,"perOption":7,"options":["Safe and stable scaffolding and ladders should be used to provide access to the roof","installing guardrails around the perimeter can prevent workers from accidentally falling off the roof","A safety harness which is attached to secure anchor points can be worn by workers","Ladders should be placed at the correct angle and extend adequately to provide a secure handhold when workers step onto the roof","A qualified construction worker should inspect the roof structure to ensure that it can safely support the weight of the workers and equipment","Proper non-slip boots should be worn to reduce the risk of slipping on the roof’s surface"]} },
+    { id: "cons-2025-ol-q6-c-r1", kind: "anyN", verbatim: "Using notes and freehand sketches, describe one safety measure that should be in place to ensure construction workers ca", marks: 14, openList: true, group: {"claimMax":2,"perOption":7,"options":["Safe and stable scaffolding and ladders should be used to provide access to the roof ","installing guardrails around the perimeter can prevent workers from accidentally falling off the roof ","A safety harness which is attached to secure anchor points can be worn by workers ","Ladders should be placed at the correct angle and extend adequately to provide a secure handhold when workers step onto the roof ","A qualified construction worker should inspect the roof structure to ensure that it can safely support the weight of the workers and equipment ","Proper non-slip boots should be worn to reduce the risk of slipping on the roof’s surface "]} },
     ],
   } as SecCard,
   {
@@ -3199,7 +3199,7 @@ export const CARDS: SecCard[] = [
     questionText: "Discuss two advantages of using timber frame for the construction of the garden office.",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 5","answer":2,"ofParts":7,"perPart":5}, totalMarks: 10,
     rows: [
-    { id: "cons-2025-ol-q7-a-r1", kind: "anyN", verbatim: "Discuss two advantages of using timber frame for the construction of the garden office.", marks: 10, openList: true, group: {"claimMax":2,"perOption":5,"options":["Timber frame can be quicker to construct than traditional concrete block construction","Timber is a renewable material","It is an environmentally friendly option with a low embodied energy","Timber is generally less expensive than other construction materials like steel or concrete","The office can be prefabricated in a factory leading to less time on site","The light weight of timber frame construction reduces the need for large concrete foundations","Timber can give an attractive aesthetic to the office"]} },
+    { id: "cons-2025-ol-q7-a-r1", kind: "anyN", verbatim: "Discuss two advantages of using timber frame for the construction of the garden office.", marks: 10, openList: true, group: {"claimMax":2,"perOption":5,"options":["Timber frame can be quicker to construct than traditional concrete block construction ","Timber is a renewable material ","It is an environmentally friendly option with a low embodied energy ","Timber is generally less expensive than other construction materials like steel or concrete ","The office can be prefabricated in a factory leading to less time on site ","The light weight of timber frame construction reduces the need for large concrete foundations ","Timber can give an attractive aesthetic to the office "]} },
     ],
   } as SecCard,
   {
@@ -3209,10 +3209,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
     id: "cons-2025-ol-q7-b", topicId: "cons-1-1", conceptId: "laying-out-a-garden-office",
     section: "B", questionRef: "2025 OL Q7(b)",
-    questionText: "Draw a large freehand sketch of the given design and show your preferred location for each of the following in the garden office:  corner desk  two windows  bookcase unit  seating area.",
+    questionText: "Draw a large freehand sketch of the given design and show your preferred location for each of the following in the garden office: • corner desk • two windows • bookcase unit • seating area.",
     tariffModel: {"kind":"bestNofParts","notation":"4 x 5","answer":4,"ofParts":14,"perPart":5}, totalMarks: 20,
     rows: [
-    { id: "cons-2025-ol-q7-b-r1", kind: "anyN", verbatim: "Draw a large freehand sketch of the given design and show your preferred location for each of the following in the garde", marks: 20, openList: true, group: {"claimMax":4,"perOption":5,"options":["corner desk","two windows","bookcase unit","seating area","Located close to a window for a view","Located in the brightest area of the office close to a window","Located away from the door for ease of entry two windows","Located close to the desk to provide a view while working","Located at the front to see people as they approach","Located on two different walls to provide dual aspect bookcase unit","Located on the back wall to allow adequate space for the desk","Located near the seating area for convenience when reading","Located away from the windows to not obstruct the light seating area","Located away from the desk to create a different zone within the office"]} },
+    { id: "cons-2025-ol-q7-b-r1", kind: "anyN", verbatim: "Draw a large freehand sketch of the given design and show your preferred location for each of the following in the garde", marks: 20, openList: true, group: {"claimMax":4,"perOption":5,"options":["corner desk","two windows","bookcase unit","seating area","Located close to a window for a view ","Located in the brightest area of the office close to a window ","Located away from the door for ease of entry  two windows","Located close to the desk to provide a view while working ","Located at the front to see people as they approach ","Located on two different walls to provide dual aspect  bookcase unit","Located on the back wall to allow adequate space for the desk ","Located near the seating area for convenience when reading ","Located away from the windows to not obstruct the light  seating area","Located away from the desk to create a different zone within the office "]} },
     ],
   } as SecCard,
   {
@@ -3225,7 +3225,7 @@ export const CARDS: SecCard[] = [
     questionText: "Discuss one advantage of constructing a garden office separate from the home.",
     tariffModel: {"kind":"bestNofParts","notation":"1 x 6","answer":1,"ofParts":5,"perPart":6}, totalMarks: 6,
     rows: [
-    { id: "cons-2025-ol-q7-c-advantage-r1", kind: "anyN", verbatim: "Advantage", marks: 6, contextNote: "Advantage", openList: true, group: {"claimMax":1,"perOption":6,"options":["Creates a clear boundary between work and home life","Easier to concentrate when away from household noise and interruptions.","A garden office can increase the value of your home","Lessens the impact on the household","The office does not take up space within the house"]} },
+    { id: "cons-2025-ol-q7-c-advantage-r1", kind: "anyN", verbatim: "Advantage", marks: 6, contextNote: "Advantage", openList: true, group: {"claimMax":1,"perOption":6,"options":["Creates a clear boundary between work and home life ","Easier to concentrate when away from household noise and interruptions. ","A garden office can increase the value of your home ","Lessens the impact on the household ","The office does not take up space within the house "]} },
     ],
   } as SecCard,
   {
@@ -3238,7 +3238,7 @@ export const CARDS: SecCard[] = [
     questionText: "Discuss one disadvantage of constructing a garden office separate from the home.",
     tariffModel: {"kind":"bestNofParts","notation":"1 x 6","answer":1,"ofParts":5,"perPart":6}, totalMarks: 6,
     rows: [
-    { id: "cons-2025-ol-q7-c-disadvantage-r1", kind: "anyN", verbatim: "Disadvantage", marks: 6, contextNote: "Disadvantage", openList: true, group: {"claimMax":1,"perOption":6,"options":["It can be expensive to create the separate office and provide required services such as electricity, internet","May also require planning permission depending on size and location","Can be cold and uncomfortable to work in if not constructed to a high standard","Reduces the size of your garden","Will require on-going maintenance to keep it in good condition Any other valid reason will be accepted"]} },
+    { id: "cons-2025-ol-q7-c-disadvantage-r1", kind: "anyN", verbatim: "Disadvantage", marks: 6, contextNote: "Disadvantage", openList: true, group: {"claimMax":1,"perOption":6,"options":["It can be expensive to create the separate office and provide required services such as electricity, internet ","May also require planning permission depending on size and location ","Can be cold and uncomfortable to work in if not constructed to a high standard ","Reduces the size of your garden ","Will require on-going maintenance to keep it in good condition  Any other valid reason will be accepted"]} },
     ],
   } as SecCard,
   {
@@ -3248,7 +3248,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
     id: "cons-2025-ol-q9-b", topicId: "cons-1-1", conceptId: "modifying-the-rear-of-a-house",
     section: "B", questionRef: "2025 OL Q9(b)",
-    questionText: "Using notes and freehand sketches, show two possible modifications that could be made at the rear of the house that would allow for the following:  access to the garden from the house  an outdoor dining/living space.",
+    questionText: "Using notes and freehand sketches, show two possible modifications that could be made at the rear of the house that would allow for the following: • access to the garden from the house • an outdoor dining/living space.",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 13","answer":2,"ofParts":6,"perPart":13}, totalMarks: 26,
     rows: [
     { id: "cons-2025-ol-q9-b-r1", kind: "anyN", verbatim: "Using notes and freehand sketches, show two possible modifications that could be made at the rear of the house that woul", marks: 26, openList: true, group: {"claimMax":2,"perOption":13,"options":["Replace windows with a large glazed door","Install a large sliding door","Install a bifold door","Patio area along back wall","Some grass area changed to decking or slabs","Create a BBQ area"]} },
@@ -3300,7 +3300,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2025 Ordinary Level — © State Examinations Commission.",
     id: "cons-2025-ol-q6-a", topicId: "cons-1-8", conceptId: "safety-signs-on-a-construction-site",
     section: "B", questionRef: "2025 OL Q6(a)",
-    questionText: "Using a large freehand sketch, show the safety sign for each of the following personal protective equipment (PPE) items:  high-visibility vest  safety boots  ear defenders. Give one specific reason why each item of personal protective equipment must be worn.",
+    questionText: "Using a large freehand sketch, show the safety sign for each of the following personal protective equipment (PPE) items: • high-visibility vest • safety boots • ear defenders. Give one specific reason why each item of personal protective equipment must be worn.",
     tariffModel: {"kind":"bestNofParts","notation":"3 x 8","answer":3,"ofParts":3,"perPart":8}, totalMarks: 24,
     rows: [
     { id: "cons-2025-ol-q6-a-r1", kind: "anyN", verbatim: "Using a large freehand sketch, show the safety sign for each of the following personal protective equipment (PPE) items:", marks: 24, openList: true, group: {"claimMax":3,"perOption":8,"options":["High-visibility vest sign and specific reason","Safety boots sign and specific reason","Ear defenders sign and specific reason"]} },

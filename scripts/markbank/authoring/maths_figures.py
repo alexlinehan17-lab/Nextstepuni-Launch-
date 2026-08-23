@@ -19,6 +19,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import maths_scheme                                          # noqa: E402
+import mathtext                                              # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(
     os.path.abspath(__file__)))))
@@ -62,10 +63,23 @@ def crop(year, level, write=False):
         left, _ = mathtext.placed(page)
         # The page number sits alone at the foot and is not part of the answer;
         # counting it padded every crop with an inch of white.
+        # The running footer is not part of the answer either. On a page whose
+        # band is the whole page, "Leaving Certificate 2021 / Marking Scheme"
+        # at y=801 stretched a solution that ends at y=251 into a 783x2116
+        # crop -- the worked solution legible only as a thumbnail, floating at
+        # the top of an inch of white. maths_scheme already knows these lines.
         ys = [y for y, t in left if lo - 4 <= y < hi and t.strip()
-              and not re.fullmatch(r'\[?\d{1,3}\]?', t.strip())]
+              and not re.fullmatch(r'\[?\d{1,3}\]?', t.strip())
+              and not maths_scheme.FURNITURE.match(t.strip())]
         if not ys:
             continue
+        # And a trailing line cut off from the rest by more than four lines of
+        # white is furniture the list does not name, not a continuation.
+        ys.sort()
+        for a, b in zip(ys, ys[1:]):
+            if b - a > 90:
+                ys = [y for y in ys if y <= a]
+                break
         top = max(0, min(ys) - PAD)
         bottom = min(page.rect.height - 24, max(ys) + LINE + PAD)
         if bottom - top < 18:
@@ -109,9 +123,17 @@ if __name__ == '__main__':
             # The description is the solution's OWN lines, demangled, not a
             # guess about a picture: this is typeset mathematics, and what it
             # says is recoverable even though its layout is not.
+            # The quote is dropped when the text layer cannot be read cleanly.
+            # A handful of solutions use glyphs no font table resolves, and
+            # quoting them put strings like "h^(ᇱᇱ)(x)" in front of a reader
+            # -- while the crop itself, which is a picture of the page, was
+            # perfectly legible. Better a description that says less than one
+            # that says it wrongly, and better than dropping a sound card.
             desc = (f'The marking scheme\'s printed worked solution for '
                     f'{year} {level.upper()} {ref}, typeset as the State '
-                    f'Examinations Commission set it. It reads: {body[:420]}')
+                    f'Examinations Commission set it.')
+            if not mathtext.unreadable(body):
+                desc += f' It reads: {body[:420]}'
             out.append({'file': f'{name}.png', 'kind': 'figure',
                         'truncated': False, 'description': desc})
         print(json.dumps(out, ensure_ascii=False, indent=1))

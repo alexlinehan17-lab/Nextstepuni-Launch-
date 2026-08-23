@@ -13,6 +13,7 @@
  * paperIndex.mjs exists.
  */
 
+import GLYPHS from './authoring/glyphmap.json' with { type: 'json' };
 /** A line that is nothing but a mark. */
 const MARKS_ONLY = /^\s*\d+\s*(\(\s*\d+\s*\))?\s*$/;
 
@@ -149,6 +150,25 @@ const ORIYA_DIGIT = /[\u0B34-\u0B3D]/g;
 const foldOriya = (t) => t.replace(ORIYA_DIGIT, (c) => String(c.charCodeAt(0) - 0x0B34));
 
 /**
+ * The scheme with every broken subset glyph repaired.
+ *
+ * build-deck.mjs repairs a card's own text -- the mangling belongs to the PDF's
+ * ToUnicode map, not to the examiner, and a card reading "h^(ᇱᇱ)(x)" where the
+ * scheme prints "h''(x)" is the wrong card. Repairing one side alone would then
+ * stop the repaired card matching the scheme it came from, which is how "theft"
+ * stopped matching "theŌ".
+ *
+ * An ADDED form, for the reason foldOriya gives: some marking points match
+ * precisely BECAUSE normalise() throws an unresolved glyph away as punctuation,
+ * and putting a character back in the middle of a phrase would break them.
+ * Searching both forms keeps those and admits the repaired ones.
+ */
+
+const BROKEN_GLYPH = /[\u0100-\u1FFF\uE000-\uF8FF\uFB00-\uFB4F]/;
+export const repairGlyphs = (t) => (BROKEN_GLYPH.test(t)
+  ? [...t].map((c) => GLYPHS[c] ?? c).join('') : t);
+
+/**
  * The degree sign as SEC PDFs actually print it.
  *
  * "17 °C to 32 °C" comes out of the scheme as "17oC to 32oC" — the degree mark
@@ -229,5 +249,6 @@ export const comparableScheme = (raw) => {
     whole.replace(DEGREE_O, '$1c'),
     normalise(foldOriya(joined)),
     normalise(joined.replace(ORDINAL_TARIFF, ' ')),
+    normalise(repairGlyphs(joined)),
   ].join('|');
 };

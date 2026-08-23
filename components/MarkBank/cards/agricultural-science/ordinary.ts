@@ -6599,7 +6599,7 @@ export const CARDS: SecCard[] = [
     id: "agsci-2021-ol-q1a", topicId: "agsci-3-2", conceptId: "identifying-crop-and-sward-plants",
     section: "A", questionRef: "2021 OL Q1(a)",
     stem: "Soyabean Cocksfoot Or",
-    questionText: "Identify each of the following plants by placing a tick () in the correct box.",
+    questionText: "Identify each of the following plants by placing a tick (✓) in the correct box.",
     tariffModel: {"kind":"fixed","notation":"2 each"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Oilseed rape", marks: 2 },
@@ -6765,7 +6765,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2022-ol-q4bi", topicId: "agsci-4-1", conceptId: "oestrus-cycle-length",
     section: "A", questionRef: "2022 OL Q4(b)(i)",
-    stem: "The first one has been done as an example. True False Example Duration of heat in cattle is 48 hours ",
+    stem: "The first one has been done as an example. True False Example Duration of heat in cattle is 48 hours ✓",
     questionText: "The length of the oestrus cycle in cows is 17 days",
     tariffModel: {"kind":"fixed","notation":"5(2)"}, totalMarks: 2,
     rows: [
@@ -6779,7 +6779,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2022-ol-q4bii", topicId: "agsci-4-1", conceptId: "gestation-length-in-cattle",
     section: "A", questionRef: "2022 OL Q4(b)(ii)",
-    stem: "The first one has been done as an example. True False Example Duration of heat in cattle is 48 hours ",
+    stem: "The first one has been done as an example. True False Example Duration of heat in cattle is 48 hours ✓",
     questionText: "Gestation length in cattle is 283 days",
     tariffModel: {"kind":"fixed","notation":"5(2)"}, totalMarks: 2,
     rows: [
@@ -6793,7 +6793,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2022-ol-q4biii", topicId: "agsci-4-1", conceptId: "rumen-ph",
     section: "A", questionRef: "2022 OL Q4(b)(iii)",
-    stem: "The first one has been done as an example. True False Example Duration of heat in cattle is 48 hours ",
+    stem: "The first one has been done as an example. True False Example Duration of heat in cattle is 48 hours ✓",
     questionText: "pH of the rumen is 7",
     tariffModel: {"kind":"fixed","notation":"5(2)"}, totalMarks: 2,
     rows: [
@@ -6807,7 +6807,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2022-ol-q4biv", topicId: "agsci-4-1", conceptId: "body-condition-score-at-calving",
     section: "A", questionRef: "2022 OL Q4(b)(iv)",
-    stem: "The first one has been done as an example. True False Example Duration of heat in cattle is 48 hours ",
+    stem: "The first one has been done as an example. True False Example Duration of heat in cattle is 48 hours ✓",
     questionText: "Ideal Body Condition Score (BCS) for a cow at calving is 4.5",
     tariffModel: {"kind":"fixed","notation":"5(2)"}, totalMarks: 2,
     rows: [
@@ -6821,7 +6821,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2022-ol-q4bv", topicId: "agsci-4-1", conceptId: "compartments-in-the-ruminant-stomach",
     section: "A", questionRef: "2022 OL Q4(b)(v)",
-    stem: "The first one has been done as an example. True False Example Duration of heat in cattle is 48 hours ",
+    stem: "The first one has been done as an example. True False Example Duration of heat in cattle is 48 hours ✓",
     questionText: "The number of compartments in the ruminant stomach is 3",
     tariffModel: {"kind":"fixed","notation":"5(2)"}, totalMarks: 2,
     rows: [
@@ -7211,7 +7211,7 @@ export const CARDS: SecCard[] = [
     id: "agsci-2025-ol-q8b", topicId: "agsci-1-5", conceptId: "reading-fertiliser-hazard-symbols",
     section: "A", questionRef: "2025 OL Q8(b)",
     stem: "The photograph shows a farmer pouring fertiliser into a fertiliser spreader. Analyse the photograph and answer the questions that follow.",
-    questionText: "Orla noticed two warning signs on the fertiliser bags which identified it as an eye irritant and a fire risk. Choose the two warning signs by placing a tick () in the correct boxes to identify these signs.",
+    questionText: "Orla noticed two warning signs on the fertiliser bags which identified it as an eye irritant and a fire risk. Choose the two warning signs by placing a tick (✓) in the correct boxes to identify these signs.",
     tariffModel: {"kind":"fixed","notation":"3+2"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Symbols 2 and 3", marks: 5 },
@@ -7233,7 +7233,7 @@ export const CARDS: SecCard[] = [
     id: "agsci-2025-ol-q9bii", topicId: "agsci-1-3", conceptId: "what-falling-input-prices-mean",
     section: "A", questionRef: "2025 OL Q9(b)(ii)",
     stem: "Electricity down 22% Cereals down 31% Fertilisers down 40% Feedstuffs down 21% Milk down 5% Sheep up 30% Changes in Agricultural Input Price Changes in Agricultural Output Price Costs less to produce Cost the same to produce Costs more to produce Increased profit Increased cost",
-    questionText: "Identify what your answer in part (i) above means for farmers by placing a tick () in the correct box below.",
+    questionText: "Identify what your answer in part (i) above means for farmers by placing a tick (✓) in the correct box below.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Means: Costs less to produce", marks: 2 },
@@ -7255,7 +7255,7 @@ export const CARDS: SecCard[] = [
     id: "agsci-2025-ol-q9biv", topicId: "agsci-1-3", conceptId: "what-the-price-gap-means-for-profit",
     section: "A", questionRef: "2025 OL Q9(b)(iv)",
     stem: "Electricity down 22% Cereals down 31% Fertilisers down 40% Feedstuffs down 21% Milk down 5% Sheep up 30% Changes in Agricultural Input Price Changes in Agricultural Output Price Costs less to produce Cost the same to produce Costs more to produce Increased profit Increased cost",
-    questionText: "Identify what your answer in part (iii) above means for farmers by placing a tick () in the correct box below.",
+    questionText: "Identify what your answer in part (iii) above means for farmers by placing a tick (✓) in the correct box below.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Increased profit", marks: 2 },

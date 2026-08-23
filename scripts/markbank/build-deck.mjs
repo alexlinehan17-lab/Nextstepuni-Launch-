@@ -171,6 +171,66 @@ function schemeFor(subjectId, card) {
  * written. Caught here the card is dropped with a reason instead.
  * Mirrors RowKind in types/markBank.ts.
  */
+/** The glyph a broken subset font left behind, if the card still shows one.
+ *
+ * Word embeds its fonts as subsets whose ToUnicode map is wrong, so a scheme's
+ * text layer spells "tan" in Oriya and "Certificate" as "CerƟficate".
+ * derive_glyphs.py repairs what it can prove; this refuses to ship the rest.
+ * A card that reads "h^(ᇱᇱ)(x)" where the scheme prints "h''(x)" is not a
+ * smaller version of the right card, it is the wrong one, and it went out
+ * looking poor because nothing was checking. Greek is genuinely Greek here,
+ * and the two combining marks carry p-hat and z-bar. */
+const REAL = /[\u0370-\u03FF\u0302\u0305\u02B0-\u02FF]/;
+const BROKEN = /[\u0100-\u1FFF\uE000-\uF8FF\uFB00-\uFB4F]/g;
+/** Undo a subset font's broken ToUnicode map, using the table derived from the
+ * schemes themselves by scripts/markbank/authoring/derive_glyphs.py. Applied
+ * here as well as at authoring time so every subject benefits from a re-derived
+ * table on its next build, without ten reader scripts each having to know. */
+const GLYPHS = JSON.parse(readFileSync(
+  resolve(ROOT, 'scripts/markbank/authoring/glyphmap.json'), 'utf8'));
+
+function repairText(text) {
+  if (typeof text !== 'string' || !BROKEN.test(text)) return text;
+  BROKEN.lastIndex = 0;
+  return [...text].map(ch => GLYPHS[ch] ?? ch).join('');
+}
+
+/* Every string on the card, not a list of the fields that were mangled the
+ * last time someone looked. Naming them missed contextNote, which is where the
+ * business deck kept its "the word set as GiOen is often" asides -- text that
+ * exists only because the mangling was not being repaired. Ids and keys are
+ * ASCII, so walking them costs a failed regex test and changes nothing. */
+function walkStrings(node, fn) {
+  if (Array.isArray(node)) {
+    node.forEach((v, i) => {
+      if (typeof v === 'string') node[i] = fn(v);
+      else if (v && typeof v === 'object') walkStrings(v, fn);
+    });
+  } else if (node && typeof node === 'object') {
+    for (const k of Object.keys(node)) {
+      const v = node[k];
+      if (typeof v === 'string') node[k] = fn(v);
+      else if (v && typeof v === 'object') walkStrings(v, fn);
+    }
+  }
+}
+
+function repairGlyphs(card) { walkStrings(card, repairText); }
+
+function brokenGlyphs(text) {
+  const hits = (text.match(BROKEN) ?? []).filter(ch => !REAL.test(ch));
+  if (!hits.length) return null;
+  const uniq = [...new Set(hits)];
+  return `${hits.length} unreadable glyph(s) from a broken font subset, e.g. `
+    + uniq.slice(0, 4).map(ch => `U+${ch.codePointAt(0).toString(16).toUpperCase().padStart(4, '0')}`).join(' ');
+}
+
+function mangledText(card) {
+  const seen = [];
+  walkStrings(card, (v) => { seen.push(v); return v; });
+  return brokenGlyphs(seen.join(' '));
+}
+
 const ROW_KINDS = new Set(['point', 'alt', 'allOf', 'anyN', 'criterion', 'gate']);
 
 function badRowKind(c) {
@@ -475,11 +535,23 @@ for (const c of cards) {
     continue;
   }
 
+  /* Repaired after the provenance check, never before: the check reads the
+   * scheme's own text layer, so a card matched against it must still be
+   * spelled the way that layer spells things. What ships is the repaired
+   * text, which is what the scheme actually PRINTS -- the mangling is the
+   * PDF's broken ToUnicode map, not the examiner's writing. */
+  repairGlyphs(c);
+  const mangled = mangledText(c);
+  if (mangled) { dropped.push(`${c.id}: ${mangled}`); continue; }
+
   let figure = null;
   let labelKey = null;
   if (c.figureKey) {
     const rec = figureRecord(c.figureKey);
     if (rec.error) { dropped.push(`${c.id}: ${rec.error}`); continue; }
+    rec.alt = repairText(rec.alt ?? '');
+    const figMangled = brokenGlyphs(rec.alt);
+    if (figMangled) { dropped.push(`${c.id}: figure alt text — ${figMangled}`); continue; }
     // A lettered figure MUST decode its letters; an unlettered one has nothing
     // to decode and rides on a plain question card instead.
     const lettered = Array.isArray(c.labelKey) && c.labelKey.length > 0;

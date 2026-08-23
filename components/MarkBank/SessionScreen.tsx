@@ -1179,7 +1179,11 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                 <div style={{ textAlign: 'center' }}>
                   <img
                     src={figureUrl(figure.src)} alt={figure.alt}
-                    style={{ maxWidth: '100%', maxHeight: 340, objectFit: 'contain', display: 'inline-block' }}
+                    style={{ maxWidth: '100%', maxHeight: 640, objectFit: 'contain', display: 'inline-block' }}
+                    /* 640, not 340: a Maths figure is a worked solution to be READ, and
+                       a tall one shrank to a 126px-wide thumbnail. Both bounds only ever
+                       shrink an image, so a wide diagram -- already limited by width --
+                       is unaffected and nothing is upscaled into blur. */
                   />
                 </div>
                 <figcaption style={{ marginTop: 8, font: `400 10.5px/1.4 ${SANS}`, color: LABEL }}>

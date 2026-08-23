@@ -35,6 +35,8 @@ Two things to get right, both learned by getting them wrong:
   * Superscripts are a smaller span on a raised baseline, not a character.
     Ignore that and "e^5x" reads as "e5x".
 """
+import json
+import os
 import re
 import sys
 import unicodedata
@@ -48,12 +50,23 @@ DIGITS = {'ZERO': '0', 'ONE': '1', 'TWO': '2', 'THREE': '3', 'FOUR': '4',
 # results back: "m^ଶ−4ሺ3ሻሺ3ሻ= 0" becomes "m²−4(3)(3) = 0", which is the
 # discriminant it plainly is, and "(ସିଶ)" becomes "(4−2)".
 GLYPH = {chr(0x0B34 + i): str(i) for i in range(10)}
-GLYPH.update({'\u0b3e': '+', '\u0b3f': '−',
+GLYPH.update({'\u0b3e': '+', '\u0b3f': '−', 'ᇱ': '′', '\u11f1': '′',
               'ሺ': '(', 'ሻ': ')', 'ቀ': '(', 'ቁ': ')'})
-GLYPH.update({'න': '∫', '൤': '[', '൨': ']', 'ൣ': '[', '൧': ']',
-              '൬': '(', '൰': ')', 'ඈ': '{', 'ඉ': '}', '൫': '(', '൯': ')',
-              '൛': '(', 'ඌ': '|',
-              'ඥ': '√', 'ඩ': '√', 'ℎ': 'h', '': ''})
+# Nine glyphs the derivation below cannot reach, kept as a fallback.
+GLYPH.update({'ඈ': '{', 'ඉ': '}', '൛': '(', 'ඌ': '|', 'ൣ': '[', '൧': ']',
+              'ඥ': '√', 'ඩ': '√', 'ℎ': 'h', '': '•'})
+
+# The rest of the table is derived from the schemes, not written here. Hand
+# mapping did not converge -- ten Maths schemes alone printed 147 distinct
+# broken glyphs, and a wrong guess quietly changes what a marking point says.
+# derive_glyphs.py reads each glyph's id, which is reliable where the PDF's
+# ToUnicode map is not, and learns the character from the schemes that happen
+# to spell it correctly. It reproduces every entry written by hand above and
+# adds ninety more. Re-derive with:
+#     python3 scripts/markbank/authoring/derive_glyphs.py --write
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                       'glyphmap.json'), encoding='utf-8') as _fh:
+    GLYPH.update(json.load(_fh))
 
 
 def _is_math(ch):
@@ -82,7 +95,25 @@ def demangle(text):
         if out and ch == out[-1] and _is_math(ch):
             continue
         out.append(ch)
-    return ''.join(_plain(c) if _is_math(c) else GLYPH.get(c, c) for c in out)
+    # Glyph map first, plain letters second. The other order leaves anything
+    # the map resolves TO a maths-italic letter untouched, so the x of dy/dx
+    # arrived repaired but still unreadable.
+    mapped = ''.join(GLYPH.get(c, c) for c in out)
+    return ''.join(_plain(c) if _is_math(c) else c for c in mapped)
+
+
+def unreadable(text):
+    """The glyphs in `text` that no font table resolved, if any.
+
+    Greek is genuinely Greek in these schemes, and the two combining marks
+    carry p-hat and z-bar; everything else left in these blocks is a subset
+    font's wreckage and must not reach a reader.
+    """
+    return sorted({c for c in text
+                   if (0x0100 <= ord(c) < 0x2000 or 0xE000 <= ord(c) < 0xF900
+                       or 0xFB00 <= ord(c) < 0xFB50)
+                   and not 0x0370 <= ord(c) < 0x0400
+                   and ord(c) not in (0x0302, 0x0305)})
 
 
 def line_text(line):
@@ -95,7 +126,15 @@ def line_text(line):
     spans = [s for s in line['spans'] if s['text'].strip() or s['text'] == ' ']
     if not spans:
         return ''
-    base = max(s['size'] for s in spans)
+    # The DOMINANT size, weighted by how much text is set in it -- not the
+    # largest. A line whose bullet is 12pt and whose body is 8.5pt has a
+    # maximum of 12, which made the entire body "raised": the marking point
+    # "4 - 2i = -4k + 2ki" came back as one giant exponent.
+    weight = {}
+    for s_ in spans:
+        weight[s_['size']] = weight.get(s_['size'], 0) + len(s_['text'].strip())
+    base = max(weight, key=lambda k: (weight[k], k)) if any(weight.values()) \
+        else max(s_['size'] for s_ in spans)
     out = []
     for i, s in enumerate(spans):
         t = demangle(s['text'])
@@ -104,9 +143,19 @@ def line_text(line):
         # CambriaMath variable beside it -- so a line-wide minimum said the
         # exponent was not raised and "Integrates e^(5x)" read as "e5x".
         prev = spans[i - 1] if i else None
+        # A superscript is a smaller span that is NOT lower than the one it
+        # follows. Demanding it be 0.8pt higher missed this font, which raises
+        # its exponents by 0.59: "−2(x²−2x−3)" came out "−2(x2−2x−3)", which is
+        # a different expression. A subscript sits LOWER and is still excluded.
         raised = (s['size'] < base - 1.5 and prev is not None
-                  and s['bbox'][1] < prev['bbox'][1] - 0.8)
-        out.append(f'^({t.strip()})' if raised and t.strip() else t)
+                  and s['bbox'][1] <= prev['bbox'][1] + 0.2)
+        # An exponent is short. Prose set a size smaller than the body -- an
+        # examiner's aside, a footnote -- is not an exponent, and wrapping it
+        # turned "In a C scale where" into "^(C scale)^(where)".
+        body = t.strip()
+        if raised and (len(body) > 8 or re.search(r'[A-Za-z]{2,}', body)):
+            raised = False
+        out.append(f'^({body})' if raised and body else t)
     return spacing(superscripts(''.join(out).strip()))
 
 
@@ -262,6 +311,10 @@ def superscripts(text):
     """
     def one(m):
         body = m.group(1)
+        # A prime is already a raised glyph; wrapping it as an exponent gives
+        # "h^(′)(x)" where the scheme prints "h′(x)".
+        if body and set(body) <= {'′', '″'}:
+            return body
         if body and all(c in SUP for c in body):
             return ''.join(SUP[c] for c in body)
         return f'^({body})' if len(body) > 1 else f'^{body}'
