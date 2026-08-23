@@ -1066,7 +1066,7 @@
  },
  {
   "id": "maths-2021-hl-p1-q8-a-i",
-  "topicId": "maths-5-1",
+  "topicId": "maths-5-2",
   "conceptId": "part",
   "level": "higher",
   "year": 2021,
@@ -1570,7 +1570,7 @@
  },
  {
   "id": "maths-2021-hl-p1-q10-a-i",
-  "topicId": "maths-3-4",
+  "topicId": "maths-4-1",
   "conceptId": "value-when-tank-empties",
   "level": "higher",
   "year": 2021,
@@ -2402,7 +2402,7 @@
  },
  {
   "id": "maths-2021-hl-p2-q7-a",
-  "topicId": "maths-3-3",
+  "topicId": "maths-3-4",
   "conceptId": "total-length-course",
   "level": "higher",
   "year": 2021,
@@ -2489,7 +2489,7 @@
  },
  {
   "id": "maths-2021-hl-p2-q7-c",
-  "topicId": "maths-3-3",
+  "topicId": "maths-3-4",
   "conceptId": "acb-116-correct-decimal-place",
   "level": "higher",
   "year": 2021,
@@ -2581,7 +2581,7 @@
  },
  {
   "id": "maths-2021-hl-p2-q7-e",
-  "topicId": "maths-3-3",
+  "topicId": "maths-3-4",
   "conceptId": "shortest-distance-point-side-correct-decimal",
   "level": "higher",
   "year": 2021,
@@ -2626,7 +2626,7 @@
  },
  {
   "id": "maths-2021-hl-p2-q7-f",
-  "topicId": "maths-3-3",
+  "topicId": "maths-3-4",
   "conceptId": "course-viewed-camera-tower-which-rises",
   "level": "higher",
   "year": 2021,
@@ -3543,15 +3543,15 @@
   "notes": ""
  },
  {
-  "id": "maths-2021-ol-p1-q2-b",
-  "topicId": "maths-3-1",
-  "conceptId": "form",
+  "id": "maths-2021-ol-p1-q2-a",
+  "topicId": "maths-4-4",
+  "conceptId": "plot-label-argand-diagram",
   "level": "ordinary",
   "year": 2021,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2021 OL Paper 1 Q2(b)",
-  "questionText": "z3 = ௭1 ௭2 . Find z3 in the form a + bi, where a, b∈ℤ",
+  "questionRef": "2021 OL Paper 1 Q2(a)",
+  "questionText": "Plot and label z1, z2, and z1 + z2 on the Argand Diagram",
   "stem": "",
   "figureKey": "maths-2021-OL-paper-p009-i1",
   "labelKey": [],
@@ -3565,7 +3565,7 @@
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2021-ol-p1-q2-b-r1",
+    "id": "maths-2021-ol-p1-q2-a-r1",
     "kind": "anyN",
     "verbatim": "One correct item Substitutes for z1 and / or z2",
     "marks": 10,
@@ -3590,15 +3590,15 @@
   "notes": ""
  },
  {
-  "id": "maths-2021-ol-p1-q3-b",
+  "id": "maths-2021-ol-p1-q3-a",
   "topicId": "maths-4-2",
-  "conceptId": "equation-has-solutions-value-value-leaving",
+  "conceptId": "solution-equation",
   "level": "ordinary",
   "year": 2021,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2021 OL Paper 1 Q3(b)",
-  "questionText": "The equation x² + ax + b = 0, where a, b∈ℤ, has solutions x = 5 and x = −2. Find the value of a and the value of b. a = b = Leaving Certificate, 2021 9",
+  "questionRef": "2021 OL Paper 1 Q3(a)",
+  "questionText": "Show that x = 4 is a solution of the equation x²−2x−8 = 0",
   "stem": "",
   "figureKey": "maths-2021-OL-paper-p011-i0",
   "labelKey": [],
@@ -3612,7 +3612,7 @@
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2021-ol-p1-q3-b-r1",
+    "id": "maths-2021-ol-p1-q3-a-r1",
     "kind": "anyN",
     "verbatim": "Any partial substitution into equation f(4) or equivalent written Quadratic formula written Attempt at factorising (x−4)",
     "marks": 10,
@@ -3635,15 +3635,15 @@
   "notes": ""
  },
  {
-  "id": "maths-2021-ol-p1-q3-c",
+  "id": "maths-2021-ol-p1-q3-b",
   "topicId": "maths-4-2",
-  "conceptId": "solutions-equation-each-correct-decimal-places",
+  "conceptId": "equation-has-solutions-value-value-leaving",
   "level": "ordinary",
   "year": 2021,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2021 OL Paper 1 Q3(c)",
-  "questionText": "Find the solutions of the equation 5x²−2x−9 = 0, where x∈ℝ. Give each answer correct to 2 decimal places",
+  "questionRef": "2021 OL Paper 1 Q3(b)",
+  "questionText": "The equation x² + ax + b = 0, where a, b∈ℤ, has solutions x = 5 and x = −2. Find the value of a and the value of b. a = b = Leaving Certificate, 2021 9",
   "stem": "",
   "figureKey": "maths-2021-OL-paper-p011-i1",
   "labelKey": [],
@@ -3657,7 +3657,7 @@
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2021-ol-p1-q3-c-r1",
+    "id": "maths-2021-ol-p1-q3-b-r1",
     "kind": "anyN",
     "verbatim": "f(5) f(−2) Any relevant equation in a and b (without x) Either factor Mention of Sum and/or Product of Roots mentioned",
     "marks": 10,
@@ -3682,15 +3682,60 @@
   "notes": ""
  },
  {
-  "id": "maths-2021-ol-p1-q4-b",
+  "id": "maths-2021-ol-p1-q3-c",
   "topicId": "maths-4-2",
-  "conceptId": "solve-simultaneous-equations",
+  "conceptId": "solutions-equation-each-correct-decimal-places",
   "level": "ordinary",
   "year": 2021,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2021 OL Paper 1 Q4(b)",
-  "questionText": "Solve the simultaneous equations: 2x−y = 7 x² + y² = 49",
+  "questionRef": "2021 OL Paper 1 Q3(c)",
+  "questionText": "Find the solutions of the equation 5x²−2x−9 = 0, where x∈ℝ. Give each answer correct to 2 decimal places",
+  "stem": "",
+  "figureKey": "maths-2021-OL-paper-p011-i2",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 3, 7, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2021-ol-p1-q3-c-r1",
+    "kind": "anyN",
+    "verbatim": "Correct quadratic formula a or b or c explicitly identified Correct answer without work",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Correct quadratic formula a or b or c explicitly identified Correct answer without work",
+      "Fully correct substitution into formula"
+     ],
+     "perOptionSteps": [
+      3,
+      7
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "maths-2021-ol-p1-q4-a",
+  "topicId": "maths-4-2",
+  "conceptId": "solve-equation",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2021 OL Paper 1 Q4(a)",
+  "questionText": "Solve the equation: 4(2x + 3) −7 = 3(x−5), where x∈ℝ",
   "stem": "",
   "figureKey": "maths-2021-OL-paper-p012-i0",
   "labelKey": [],
@@ -3704,7 +3749,7 @@
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2021-ol-p1-q4-b-r1",
+    "id": "maths-2021-ol-p1-q4-a-r1",
     "kind": "anyN",
     "verbatim": "Any correct multiplication into a bracket Any correct transposition Correct answer without supporting work",
     "marks": 10,
@@ -3727,15 +3772,62 @@
   "notes": ""
  },
  {
-  "id": "maths-2021-ol-p1-q6-a",
-  "topicId": "maths-4-1",
-  "conceptId": "first-three-terms-arithmetic-sequence",
+  "id": "maths-2021-ol-p1-q4-b",
+  "topicId": "maths-4-2",
+  "conceptId": "solve-simultaneous-equations",
   "level": "ordinary",
   "year": 2021,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2021 OL Paper 1 Q6(a)",
-  "questionText": "The first three terms of an arithmetic sequence are −5, k, 1",
+  "questionRef": "2021 OL Paper 1 Q4(b)",
+  "questionText": "Solve the simultaneous equations: 2x−y = 7 x² + y² = 49",
+  "stem": "",
+  "figureKey": "maths-2021-OL-paper-p012-i1",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 5, 10, 15, 20)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "maths-2021-ol-p1-q4-b-r1",
+    "kind": "anyN",
+    "verbatim": "x or y isolated Quadratic formula written Any correct transposing",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 10, three parts for 15, four parts for 20. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "x or y isolated Quadratic formula written Any correct transposing",
+      "x² + (2x−7)² = 49 or equivalent equation in one variable",
+      "1 relevant value (root) found from quadratic"
+     ],
+     "perOptionSteps": [
+      5,
+      5,
+      10
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "maths-2021-ol-p1-q6-a-i",
+  "topicId": "maths-4-1",
+  "conceptId": "otherwise-common-difference",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2021 OL Paper 1 Q6(a)(i)",
+  "questionText": "Find k and hence or otherwise show that the common difference is 3",
   "stem": "",
   "figureKey": "maths-2021-OL-paper-p015-i0",
   "labelKey": [],
@@ -3749,7 +3841,7 @@
   "totalMarks": 5,
   "rows": [
    {
-    "id": "maths-2021-ol-p1-q6-a-r1",
+    "id": "maths-2021-ol-p1-q6-a-i-r1",
     "kind": "anyN",
     "verbatim": "Tn formula written Some relevant substitution into formula a = −5 −5 + 3 + 3 = 1 If you see the number 6",
     "marks": 5,
@@ -3864,15 +3956,15 @@
   "notes": ""
  },
  {
-  "id": "maths-2021-ol-p1-q7-b",
+  "id": "maths-2021-ol-p1-q7-a",
   "topicId": "maths-5-2",
-  "conceptId": "how-much-usc-will-worker-have",
+  "conceptId": "what-level-annual-income-does-worker",
   "level": "ordinary",
   "year": 2021,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2021 OL Paper 1 Q7(b)",
-  "questionText": "How much USC will a worker have paid in total if they pay the maximum amount due at each of the first three rates?",
+  "questionRef": "2021 OL Paper 1 Q7(a)",
+  "questionText": "At what level of annual income does a worker start paying the top rate of USC?",
   "stem": "",
   "figureKey": "maths-2021-OL-paper-p017-i1",
   "labelKey": [],
@@ -3886,7 +3978,7 @@
   "totalMarks": 5,
   "rows": [
    {
-    "id": "maths-2021-ol-p1-q7-b-r1",
+    "id": "maths-2021-ol-p1-q7-a-r1",
     "kind": "anyN",
     "verbatim": "Any 2 of €12012 or €8472 or €49560 written or added",
     "marks": 5,
@@ -3909,15 +4001,15 @@
   "notes": ""
  },
  {
-  "id": "maths-2021-ol-p1-q7-c",
-  "topicId": "maths-3-3",
-  "conceptId": "john-annual-income-800-amount-usc",
+  "id": "maths-2021-ol-p1-q7-b",
+  "topicId": "maths-5-2",
+  "conceptId": "how-much-usc-will-worker-have",
   "level": "ordinary",
   "year": 2021,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2021 OL Paper 1 Q7(c)",
-  "questionText": "John’s annual income is €54 800. Find the amount of USC he will pay",
+  "questionRef": "2021 OL Paper 1 Q7(b)",
+  "questionText": "How much USC will a worker have paid in total if they pay the maximum amount due at each of the first three rates?",
   "stem": "",
   "figureKey": "maths-2021-OL-paper-p017-i2",
   "labelKey": [],
@@ -3931,7 +4023,7 @@
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2021-ol-p1-q7-c-r1",
+    "id": "maths-2021-ol-p1-q7-b-r1",
     "kind": "anyN",
     "verbatim": "Any correct formulation of any USC rate (e.g. 0·5% of 12012 or 60∙06) Any use of relevant %",
     "marks": 10,
@@ -4002,15 +4094,15 @@
   "notes": ""
  },
  {
-  "id": "maths-2021-ol-p1-q8-b",
-  "topicId": "maths-3-4",
-  "conceptId": "volume-box-can-written-40x-100x",
+  "id": "maths-2021-ol-p1-q8-a",
+  "topicId": "maths-4-1",
+  "conceptId": "length-breadth-height-box-shown-diagram",
   "level": "ordinary",
   "year": 2021,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2021 OL Paper 1 Q8(b)",
-  "questionText": "Show that the volume of the box can be written as V(x) = 4x³−40x² + 100x",
+  "questionRef": "2021 OL Paper 1 Q8(a)",
+  "questionText": "The length (l), breadth (b) and height (h) of the box are shown in the diagram above. Write l, b, and h in terms of x",
   "stem": "",
   "figureKey": "maths-2021-OL-paper-p019-i1",
   "labelKey": [],
@@ -4024,7 +4116,7 @@
   "totalMarks": 5,
   "rows": [
    {
-    "id": "maths-2021-ol-p1-q8-b-r1",
+    "id": "maths-2021-ol-p1-q8-a-r1",
     "kind": "anyN",
     "verbatim": "One correct dimension explicitly formulated",
     "marks": 5,
@@ -4047,15 +4139,15 @@
   "notes": ""
  },
  {
-  "id": "maths-2021-ol-p1-q8-c",
+  "id": "maths-2021-ol-p1-q8-b",
   "topicId": "maths-3-4",
-  "conceptId": "explain-why-box-height-units-cannot",
+  "conceptId": "volume-box-can-written-40x-100x",
   "level": "ordinary",
   "year": 2021,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2021 OL Paper 1 Q8(c)",
-  "questionText": "Explain why a box of height 6 units cannot be made from the sheet of cardboard",
+  "questionRef": "2021 OL Paper 1 Q8(b)",
+  "questionText": "Show that the volume of the box can be written as V(x) = 4x³−40x² + 100x",
   "stem": "",
   "figureKey": "maths-2021-OL-paper-p019-i2",
   "labelKey": [],
@@ -4069,7 +4161,7 @@
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2021-ol-p1-q8-c-r1",
+    "id": "maths-2021-ol-p1-q8-b-r1",
     "kind": "anyN",
     "verbatim": "Correct Volume formula written Some relevant substitution into volume formula l or b or h explicitly identified",
     "marks": 10,
@@ -4139,15 +4231,15 @@
   "notes": ""
  },
  {
-  "id": "maths-2021-ol-p1-q9-a",
+  "id": "maths-2021-ol-p1-q9-a-i",
   "topicId": "maths-4-1",
-  "conceptId": "first-three-patterns-sequence-patterns-containing",
+  "conceptId": "draw-fourth-pattern-sequence-into-box",
   "level": "ordinary",
   "year": 2021,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2021 OL Paper 1 Q9(a)",
-  "questionText": "The first three patterns in a sequence of patterns containing dots and crosses are shown below",
+  "questionRef": "2021 OL Paper 1 Q9(a)(i)",
+  "questionText": "Draw the fourth pattern in the sequence into the box below",
   "stem": "",
   "figureKey": "maths-2021-OL-paper-p022-i1",
   "labelKey": [],
@@ -4161,7 +4253,7 @@
   "totalMarks": 5,
   "rows": [
    {
-    "id": "maths-2021-ol-p1-q9-a-r1",
+    "id": "maths-2021-ol-p1-q9-a-i-r1",
     "kind": "anyN",
     "verbatim": "Correct number of rows Correct number of columns",
     "marks": 5,
@@ -4184,8 +4276,53 @@
   "notes": ""
  },
  {
+  "id": "maths-2021-ol-p1-q9-a-ii",
+  "topicId": "maths-4-1",
+  "conceptId": "formula-number-dots-pattern-sequence",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2021 OL Paper 1 Q9(a)(ii)",
+  "questionText": "Find a formula, in n, for the number of dots in pattern n of the sequence (Tn)",
+  "stem": "",
+  "figureKey": "maths-2021-OL-paper-p022-i2",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 2, 3, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2021-ol-p1-q9-a-ii-r1",
+    "kind": "anyN",
+    "verbatim": "Tn formula written a and/or d identified",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Tn formula written a and/or d identified",
+      "Formula with some substitution Note: Accept correct answer without supporting work"
+     ],
+     "perOptionSteps": [
+      2,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "maths-2021-ol-p1-q10-a-i",
-  "topicId": "maths-2-3",
+  "topicId": "maths-3-3",
   "conceptId": "how-long-takes-release-million-cubic",
   "level": "ordinary",
   "year": 2021,
@@ -4323,15 +4460,15 @@
   "notes": ""
  },
  {
-  "id": "maths-2021-ol-p2-q2-a",
+  "id": "maths-2021-ol-p2-q2-a-i",
   "topicId": "maths-3-4",
-  "conceptId": "stall-fun-fair-probability-knocking-coconut",
+  "conceptId": "what-probability-not-knocking-coconut-off",
   "level": "ordinary",
   "year": 2021,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2021 OL Paper 2 Q2(a)",
-  "questionText": "At a stall in a fun fair, the probability of knocking a coconut off its support is 0∙34",
+  "questionRef": "2021 OL Paper 2 Q2(a)(i)",
+  "questionText": "What is the probability of not knocking a coconut off its support?",
   "stem": "",
   "figureKey": "maths-2021-OL-paper-p034-i0",
   "labelKey": [],
@@ -4345,7 +4482,7 @@
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2021-ol-p2-q2-a-r1",
+    "id": "maths-2021-ol-p2-q2-a-i-r1",
     "kind": "anyN",
     "verbatim": "Work of merit Mention of 1",
     "marks": 10,
@@ -4559,15 +4696,62 @@
   "notes": ""
  },
  {
-  "id": "maths-2021-ol-p2-q5-b",
-  "topicId": "maths-1-7",
-  "conceptId": "table-shows-data-height-arm-span",
+  "id": "maths-2021-ol-p2-q4-a-i",
+  "topicId": "maths-2-2",
+  "conceptId": "write-down-ordinates",
   "level": "ordinary",
   "year": 2021,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2021 OL Paper 2 Q5(b)",
-  "questionText": "The following table shows data on the height and arm span of twenty teenagers",
+  "questionRef": "2021 OL Paper 2 Q4(a)(i)",
+  "questionText": "Write down the co-ordinates of A and of B",
+  "stem": "",
+  "figureKey": "maths-2021-OL-paper-p037-i1",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 2, 3, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2021-ol-p2-q4-a-i-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit One correct co-ordinate Ordinates reversed",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "Work of merit One correct co-ordinate Ordinates reversed",
+      "Significant Work One point correct",
+      "Correct answer"
+     ],
+     "perOptionSteps": [
+      2,
+      1,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "maths-2021-ol-p2-q5-a",
+  "topicId": "maths-1-6",
+  "conceptId": "heights-given-population-normally-distributed-population",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2021 OL Paper 2 Q5(a)",
+  "questionText": "The heights of a given population are normally distributed. 95% of the population fall within the height range [147∙9 cm ↔ 178∙7 cm]. Using the empirical rule, find the mean and the standard deviation of the distribution of heights in the population",
   "stem": "",
   "figureKey": "maths-2021-OL-paper-p040-i0",
   "labelKey": [],
@@ -4581,7 +4765,7 @@
   "totalMarks": 5,
   "rows": [
    {
-    "id": "maths-2021-ol-p2-q5-b-r1",
+    "id": "maths-2021-ol-p2-q5-a-r1",
     "kind": "anyN",
     "verbatim": "Work of merit Some explanation of the relevance of the empirical rule 𝜇−2𝜎, 𝜇+ 2𝜎 Writes 178∙7 + 147∙9 Writes 178·7 −147·9",
     "marks": 5,
@@ -4654,15 +4838,15 @@
   "notes": ""
  },
  {
-  "id": "maths-2021-ol-p2-q6-a-ii",
+  "id": "maths-2021-ol-p2-q6-a-i",
   "topicId": "maths-2-3",
-  "conceptId": "construct-circumcircle-given-triangle-abc-all",
+  "conceptId": "diagram-showing-triangle-abc-construct-perpendicular",
   "level": "ordinary",
   "year": 2021,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2021 OL Paper 2 Q6(a)(ii)",
-  "questionText": "Construct the circumcircle of the given triangle ABC. Show all your construction lines and arcs clearly",
+  "questionRef": "2021 OL Paper 2 Q6(a)(i)",
+  "questionText": "On the diagram below showing the triangle ABC , construct the perpendicular bisector of the side [AC]. Show all your construction lines and arcs clearly",
   "stem": "",
   "figureKey": "maths-2021-OL-paper-p041-i0",
   "labelKey": [],
@@ -4676,7 +4860,7 @@
   "totalMarks": 5,
   "rows": [
    {
-    "id": "maths-2021-ol-p2-q6-a-ii-r1",
+    "id": "maths-2021-ol-p2-q6-a-i-r1",
     "kind": "anyN",
     "verbatim": "Work of merit Pilot diagram drawn for [AC] bisector One correct arc drawn",
     "marks": 5,
@@ -4703,15 +4887,15 @@
   "notes": ""
  },
  {
-  "id": "maths-2021-ol-p2-q7-a",
+  "id": "maths-2021-ol-p2-q7-a-i",
   "topicId": "maths-1-6",
-  "conceptId": "table-shows-age-profiles-all-people",
+  "conceptId": "draw-histogram-represent-data",
   "level": "ordinary",
   "year": 2021,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2021 OL Paper 2 Q7(a)",
-  "questionText": "The following table shows the age profiles of all of the people in Ireland, aged between 15 and 65, who subscribed to an online streaming platform",
+  "questionRef": "2021 OL Paper 2 Q7(a)(i)",
+  "questionText": "Draw a Histogram to represent the data",
   "stem": "",
   "figureKey": "maths-2021-OL-paper-p043-i0",
   "labelKey": [],
@@ -4725,7 +4909,7 @@
   "totalMarks": 15,
   "rows": [
    {
-    "id": "maths-2021-ol-p2-q7-a-r1",
+    "id": "maths-2021-ol-p2-q7-a-i-r1",
     "kind": "anyN",
     "verbatim": "Work of merit One correct column height indicated",
     "marks": 15,
@@ -4741,6 +4925,53 @@
      "perOptionSteps": [
       5,
       10
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "maths-2021-ol-p2-q7-a-ii",
+  "topicId": "maths-1-5",
+  "conceptId": "survey-1000-subscribers-aged-between-how",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2021 OL Paper 2 Q7(a)(ii)",
+  "questionText": "In a survey of 1000 subscribers, aged between 15 and 65, how many people would you expect to be between 25 years and 55 years?",
+  "stem": "",
+  "figureKey": "maths-2021-OL-paper-p043-i1",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 2, 3, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2021-ol-p2-q7-a-ii-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit Work with any Two of 27, 25, 16",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "Work of merit Work with any Two of 27, 25, 16",
+      "Significant Work Works to 27 + 25 + 16 = 68",
+      "Correct answer without supporting work"
+     ],
+     "perOptionSteps": [
+      2,
+      1,
+      2
      ]
     }
    }
@@ -4788,15 +5019,15 @@
   "notes": ""
  },
  {
-  "id": "maths-2021-ol-p2-q8-a-ii",
+  "id": "maths-2021-ol-p2-q8-a-i",
   "topicId": "maths-3-4",
-  "conceptId": "lake-average-deep-estimate-volume-water",
+  "conceptId": "trapezoidal-rule-estimate-surface-area-lake",
   "level": "ordinary",
   "year": 2021,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2021 OL Paper 2 Q8(a)(ii)",
-  "questionText": "If the lake is on average 8 m deep, estimate the volume of water in the lake",
+  "questionRef": "2021 OL Paper 2 Q8(a)(i)",
+  "questionText": "Use the Trapezoidal Rule to estimate the surface area of the lake",
   "stem": "",
   "figureKey": "maths-2021-OL-paper-p047-i0",
   "labelKey": [],
@@ -4810,7 +5041,7 @@
   "totalMarks": 5,
   "rows": [
    {
-    "id": "maths-2021-ol-p2-q8-a-ii-r1",
+    "id": "maths-2021-ol-p2-q8-a-i-r1",
     "kind": "anyN",
     "verbatim": "Work of merit Trapezoidal Rule formula with some substitution",
     "marks": 5,
@@ -5262,7 +5493,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q5-b-i",
-  "topicId": "maths-5-2",
+  "topicId": "maths-3-1",
   "conceptId": "factor-three-values-which",
   "level": "higher",
   "year": 2022,
@@ -5356,7 +5587,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q6-a",
-  "topicId": "maths-5-2",
+  "topicId": "maths-3-1",
   "conceptId": "differentiate-respect-first-principles",
   "level": "higher",
   "year": 2022,
@@ -5498,6 +5729,53 @@
   "notes": ""
  },
  {
+  "id": "maths-2022-hl-p1-q7-a",
+  "topicId": "maths-5-2",
+  "conceptId": "work-out-hannah-heart-rate-minutes",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 HL Paper 1 Q7(a)",
+  "questionText": "Work out Hannah’s heart-rate 4 minutes after the start of the session",
+  "stem": "",
+  "figureKey": "maths-2022-HL-paper-p020-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 3, 5, 8, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-hl-p1-q7-a-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit in either part, for example, in (a), some correct substitution; in (b): some correct differentiation",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "Work of merit in either part, for example, in (a), some correct substitution; in (b): some correct differentiation",
+      "(a) or (b) correct Work of merit in both (a) and (b)",
+      "One part correct and work of merit in the other Full Credit –1 All correct, except that unit is missing or incorrect in (a)"
+     ],
+     "perOptionSteps": [
+      3,
+      2,
+      5
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "maths-2022-hl-p1-q7-c",
   "topicId": "maths-5-2",
   "conceptId": "explain-what-value-means-context-hannah",
@@ -5543,15 +5821,15 @@
   "notes": ""
  },
  {
-  "id": "maths-2022-hl-p1-q8-b",
-  "topicId": "maths-3-1",
-  "conceptId": "draw-graph",
+  "id": "maths-2022-hl-p1-q8-a",
+  "topicId": "maths-2-3",
+  "conceptId": "complete-table-value-given",
   "level": "higher",
   "year": 2022,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2022 HL Paper 1 Q8(b)",
-  "questionText": "Draw the graph of y = h(t) for 0 ≤ t ≤ 8, t∈ℝ",
+  "questionRef": "2022 HL Paper 1 Q8(a)",
+  "questionText": "Complete the table below. The value of h(1) is given",
   "stem": "",
   "figureKey": "maths-2022-HL-paper-p023-i0",
   "labelKey": [],
@@ -5565,7 +5843,7 @@
   "totalMarks": 15,
   "rows": [
    {
-    "id": "maths-2022-hl-p1-q8-b-r1",
+    "id": "maths-2022-hl-p1-q8-a-r1",
     "kind": "anyN",
     "verbatim": "Any 1 item correct",
     "marks": 15,
@@ -5681,7 +5959,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q8-e",
-  "topicId": "maths-4-2",
+  "topicId": "maths-2-3",
   "conceptId": "how-long-after-start-session-hannah",
   "level": "higher",
   "year": 2022,
@@ -5728,7 +6006,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q8-f",
-  "topicId": "maths-4-2",
+  "topicId": "maths-2-3",
   "conceptId": "integration-average-height-point-over-first",
   "level": "higher",
   "year": 2022,
@@ -5775,7 +6053,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-a",
-  "topicId": "maths-2-3",
+  "topicId": "maths-3-1",
   "conceptId": "amount-drug-left-alex-body-days",
   "level": "higher",
   "year": 2022,
@@ -5815,7 +6093,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-b",
-  "topicId": "maths-2-3",
+  "topicId": "maths-3-1",
   "conceptId": "how-long-after-single-injection-will",
   "level": "higher",
   "year": 2022,
@@ -5860,7 +6138,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-c",
-  "topicId": "maths-2-3",
+  "topicId": "maths-3-1",
   "conceptId": "explain-why-total-amount-drug-alex",
   "level": "higher",
   "year": 2022,
@@ -5906,7 +6184,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-d",
-  "topicId": "maths-2-3",
+  "topicId": "maths-3-1",
   "conceptId": "total-amount-drug-alex-body-immediately",
   "level": "higher",
   "year": 2022,
@@ -6041,7 +6319,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-f-ii",
-  "topicId": "maths-2-3",
+  "topicId": "maths-3-1",
   "conceptId": "immediately-after-7th-injection-there-drug",
   "level": "higher",
   "year": 2022,
@@ -6086,7 +6364,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q10-a",
-  "topicId": "maths-5-2",
+  "topicId": "maths-3-1",
   "conceptId": "proportion-digits-recalled-correctly-after-hours",
   "level": "higher",
   "year": 2022,
@@ -6131,7 +6409,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q10-b",
-  "topicId": "maths-5-2",
+  "topicId": "maths-3-1",
   "conceptId": "after-how-many-hours-would-exactly",
   "level": "higher",
   "year": 2022,
@@ -6313,7 +6591,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q10-e-ii",
-  "topicId": "maths-5-2",
+  "topicId": "maths-3-1",
   "conceptId": "student-got-guitar-exam-after-two",
   "level": "higher",
   "year": 2022,
@@ -6582,7 +6860,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q3-c",
-  "topicId": "maths-2-2",
+  "topicId": "maths-3-2",
   "conceptId": "two-circles-each-have-both-axis",
   "level": "higher",
   "year": 2022,
@@ -7271,8 +7549,60 @@
   "notes": ""
  },
  {
+  "id": "maths-2022-hl-p2-q8-a",
+  "topicId": "maths-3-3",
+  "conceptId": "jena-researching-fuel-consumption-cars-she",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 HL Paper 2 Q8(a)",
+  "questionText": "Jena is researching fuel consumption in cars. She finds the following data for the number of miles per gallon (m/g) for eight different cars, labelled A to H, when driving in the city and on the motorway: Miles per gallon data for city and motorway Car City (m/g) Motorway (m/g) A 22 34 B 27 38 C 24 34 D 16 27 E 15 24 F 21 30 G 30 40 H 17 30",
+  "stem": "",
+  "figureKey": "maths-2022-HL-paper-p051-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 2, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-hl-p2-q8-a-r1",
+    "kind": "anyN",
+    "verbatim": "0∙9659 … = 0∙966 [3 D.P.]",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "0∙9659 … = 0∙966 [3 D.P.]",
+      "(a)(v)",
+      "Any valid reason, for example:",
+      "Correlation is related to linear",
+      "relationships, and this is quadratic",
+      "The line of best fit is close to horizontal",
+      "The data is symmetrical: it is",
+      "decreasing first, and then increasing in",
+      "a symmetrical way"
+     ],
+     "perOptionSteps": [
+      2,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "maths-2022-hl-p2-q8-a-ii",
-  "topicId": "maths-4-2",
+  "topicId": "maths-3-3",
   "conceptId": "scatterplot-draw-line-best-fit-data",
   "level": "higher",
   "year": 2022,
@@ -7317,7 +7647,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q8-a-iv",
-  "topicId": "maths-4-2",
+  "topicId": "maths-3-3",
   "conceptId": "based-data-given-would-you-more",
   "level": "higher",
   "year": 2022,
@@ -7350,58 +7680,6 @@
      "options": [
       "Work of merit, for example, in (iii): relevant work on the graph, or in (iv): gives K, or reason shows some relevant knowledge",
       "One part correct Work of merit in both parts Full Credit –1 Correct answers and reason, but without supporting work on the graph for (iii)"
-     ],
-     "perOptionSteps": [
-      2,
-      3
-     ]
-    }
-   }
-  ],
-  "notes": ""
- },
- {
-  "id": "maths-2022-hl-p2-q8-b",
-  "topicId": "maths-4-2",
-  "conceptId": "scatterplot-right-shows-some-values-fuel",
-  "level": "higher",
-  "year": 2022,
-  "subjectId": "maths",
-  "section": "B",
-  "questionRef": "2022 HL Paper 2 Q8(b)",
-  "questionText": "The scatterplot on the right shows some values of fuel consumption (F) for the given values of engine speed (S), for a particular car. For the points in this scatterplot, F can be closely approximated by a quadratic function of S",
-  "stem": "",
-  "figureKey": "maths-2022-HL-paper-p051-i0",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 2, 5)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
-  },
-  "totalMarks": 5,
-  "rows": [
-   {
-    "id": "maths-2022-hl-p2-q8-b-r1",
-    "kind": "anyN",
-    "verbatim": "0∙9659 … = 0∙966 [3 D.P.]",
-    "marks": 5,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 2,
-     "options": [
-      "0∙9659 … = 0∙966 [3 D.P.]",
-      "(a)(v)",
-      "Any valid reason, for example:",
-      "Correlation is related to linear",
-      "relationships, and this is quadratic",
-      "The line of best fit is close to horizontal",
-      "The data is symmetrical: it is",
-      "decreasing first, and then increasing in",
-      "a symmetrical way"
      ],
      "perOptionSteps": [
       2,
@@ -7506,7 +7784,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q8-d-ii",
-  "topicId": "maths-4-2",
+  "topicId": "maths-3-3",
   "conceptId": "work-out-probability-least-one-events",
   "level": "higher",
   "year": 2022,
@@ -8098,15 +8376,15 @@
   "notes": ""
  },
  {
-  "id": "maths-2022-ol-p1-q1-b",
+  "id": "maths-2022-ol-p1-q1-a",
   "topicId": "maths-4-4",
-  "conceptId": "plot-label-argand-diagram-previous-page",
+  "conceptId": "using-argand-diagram",
   "level": "ordinary",
   "year": 2022,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2022 OL Paper 1 Q1(b)",
-  "questionText": "Plot and label z2 and z3 on the Argand diagram on the previous page",
+  "questionRef": "2022 OL Paper 1 Q1(a)",
+  "questionText": "Using the Argand diagram:",
   "stem": "",
   "figureKey": "maths-2022-OL-paper-p007-i0",
   "labelKey": [],
@@ -8120,7 +8398,7 @@
   "totalMarks": 15,
   "rows": [
    {
-    "id": "maths-2022-ol-p1-q1-b-r1",
+    "id": "maths-2022-ol-p1-q1-a-r1",
     "kind": "anyN",
     "verbatim": "Work of merit, for example, real or imaginary part of z1 or z1ഥcorrect, or real or imaginary part of z2 or z3 plotted correctly 1 part correct",
     "marks": 15,
@@ -9055,7 +9333,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q8-a-i",
-  "topicId": "maths-4-2",
+  "topicId": "maths-3-3",
   "conceptId": "work-out-how-many-acid-200",
   "level": "ordinary",
   "year": 2022,
@@ -9186,7 +9464,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q8-a-iv",
-  "topicId": "maths-4-2",
+  "topicId": "maths-3-3",
   "conceptId": "when-she-making-another-mixture-jessica",
   "level": "ordinary",
   "year": 2022,
@@ -9231,7 +9509,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q8-b-i",
-  "topicId": "maths-4-2",
+  "topicId": "maths-3-3",
   "conceptId": "write-down-values-cube-these-values",
   "level": "ordinary",
   "year": 2022,
@@ -10312,7 +10590,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q4-a",
-  "topicId": "maths-1-6",
+  "topicId": "maths-3-3",
   "conceptId": "group-students-sat-exam-each-student",
   "level": "ordinary",
   "year": 2022,
@@ -10358,15 +10636,15 @@
   "notes": ""
  },
  {
-  "id": "maths-2022-ol-p2-q4-b-ii",
-  "topicId": "maths-1-6",
-  "conceptId": "top-scores-were-given-grade-exceptional",
+  "id": "maths-2022-ol-p2-q4-b-i",
+  "topicId": "maths-3-3",
+  "conceptId": "what-percentage-people-had-scores-between",
   "level": "ordinary",
   "year": 2022,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2022 OL Paper 2 Q4(b)(ii)",
-  "questionText": "The top 2∙5% of scores were given a grade of ‘Exceptional’. What was the least score that was needed to get this grade?",
+  "questionRef": "2022 OL Paper 2 Q4(b)(i)",
+  "questionText": "What percentage of the people had scores between 80 and 120?",
   "stem": "",
   "figureKey": "maths-2022-OL-paper-p039-i0",
   "labelKey": [],
@@ -10380,7 +10658,7 @@
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2022-ol-p2-q4-b-ii-r1",
+    "id": "maths-2022-ol-p2-q4-b-i-r1",
     "kind": "anyN",
     "verbatim": "Work of merit e.g. Some relevant figures indicated on the diagram x̅ = 100 or 𝜎= 20",
     "marks": 10,
@@ -11083,7 +11361,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q9-a",
-  "topicId": "maths-2-1",
+  "topicId": "maths-3-4",
   "conceptId": "state-which-statements-most-likely-true",
   "level": "ordinary",
   "year": 2022,
@@ -11223,7 +11501,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q9-e-i",
-  "topicId": "maths-2-1",
+  "topicId": "maths-3-4",
   "conceptId": "correct-decimal-places",
   "level": "ordinary",
   "year": 2022,
@@ -11270,7 +11548,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q9-e-ii",
-  "topicId": "maths-2-1",
+  "topicId": "maths-3-4",
   "conceptId": "acb-angle-roof-makes-point-correct",
   "level": "ordinary",
   "year": 2022,
@@ -11451,7 +11729,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q10-b-iv",
-  "topicId": "maths-1-5",
+  "topicId": "maths-3-3",
   "conceptId": "according-2019-irish-sport-monitor-report",
   "level": "ordinary",
   "year": 2022,
@@ -12845,6 +13123,96 @@
   "notes": ""
  },
  {
+  "id": "maths-2023-hl-p1-q9-a",
+  "topicId": "maths-3-1",
+  "conceptId": "first-she-looks-numbers-can-written",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 1 Q9(a)",
+  "questionText": "First, she looks at numbers that can be written as powers of a prime number",
+  "stem": "",
+  "figureKey": "maths-2023-HL-paper-p027-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 4, 8, 12, 15)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-q9-a-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit in one part, for example, one correct factor in (i) or lists 2 or more factors in (ii) Some valid relevant statement in (ii) or (iii)",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12, four parts for 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Work of merit in one part, for example, one correct factor in (i) or lists 2 or more factors in (ii) Some valid relevant statement in (ii) or (iii)",
+      "One part correct",
+      "Two parts correct Either (i) or (ii) correct and work of merit in (iii)"
+     ],
+     "perOptionSteps": [
+      4,
+      4,
+      7
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "maths-2023-hl-p1-q9-b-iii",
+  "topicId": "maths-3-1",
+  "conceptId": "ava-realises-relationship-between",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 1 Q9(b)(iii)",
+  "questionText": "Ava realises that the relationship between x and y is y = 12 x",
+  "stem": "",
+  "figureKey": "maths-2023-HL-paper-p027-i1",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 5, 10, 15, 20)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p1-q9-b-iii-r1",
+    "kind": "anyN",
+    "verbatim": "3 parts correct",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 10, three parts for 15, four parts for 20. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Full Credit -1.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "3 parts correct",
+      "7 parts correct",
+      "9 parts correct",
+      "11 parts correct Correct graph with no table entries x"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "maths-2023-hl-p1-q10-b",
   "topicId": "maths-3-4",
   "conceptId": "total-area-three-rectangles-square-units",
@@ -13026,7 +13394,7 @@
  },
  {
   "id": "maths-2023-hl-p1-q10-e-ii",
-  "topicId": "maths-3-4",
+  "topicId": "maths-2-3",
   "conceptId": "starts-increase-rate-units-per-second",
   "level": "higher",
   "year": 2023,
@@ -13072,15 +13440,15 @@
   "notes": ""
  },
  {
-  "id": "maths-2023-hl-p2-q2-b",
+  "id": "maths-2023-hl-p2-q2-a",
   "topicId": "maths-2-3",
-  "conceptId": "using-formula-part-without-using-calculator",
+  "conceptId": "prove-sin-sin-acos-cos-asin",
   "level": "higher",
   "year": 2023,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2023 HL Paper 2 Q2(b)",
-  "questionText": "Using the formula in part (a), and without using a calculator, find the value of sin 75°. Give your answer in surd form",
+  "questionRef": "2023 HL Paper 2 Q2(a)",
+  "questionText": "Prove that sin(A + B) = sin Acos B + cos Asin B",
   "stem": "",
   "figureKey": "maths-2023-HL-paper-p040-i0",
   "labelKey": [],
@@ -13094,7 +13462,7 @@
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2023-hl-p2-q2-b-r1",
+    "id": "maths-2023-hl-p2-q2-a-r1",
     "kind": "anyN",
     "verbatim": "Work of merit, for example 30 + 45, or some correct substitution into relevant formula",
     "marks": 10,
@@ -13223,7 +13591,7 @@
  },
  {
   "id": "maths-2023-hl-p2-q3-b-ii",
-  "topicId": "maths-2-2",
+  "topicId": "maths-2-3",
   "conceptId": "perpendicular-bisector-value-value",
   "level": "higher",
   "year": 2023,
@@ -13745,15 +14113,15 @@
   "notes": ""
  },
  {
-  "id": "maths-2023-hl-p2-q7-d",
+  "id": "maths-2023-hl-p2-q7-c",
   "topicId": "maths-5-2",
-  "conceptId": "what-connection-between-derivative-whether-olga",
+  "conceptId": "values-marked-graph-minimum-maximum-values",
   "level": "higher",
   "year": 2023,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2023 HL Paper 2 Q7(d)",
-  "questionText": "What is the connection between V′(t), the derivative of V, and whether Olga is breathing in or breathing out?",
+  "questionRef": "2023 HL Paper 2 Q7(c)",
+  "questionText": "Find the values marked a and b on the graph, the minimum and maximum values of V",
   "stem": "",
   "figureKey": "maths-2023-HL-paper-p051-i0",
   "labelKey": [],
@@ -13767,7 +14135,7 @@
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2023-hl-p2-q7-d-r1",
+    "id": "maths-2023-hl-p2-q7-c-r1",
     "kind": "anyN",
     "verbatim": "Work of merit in finding either a or b Work of merit in part (d), for example, indicates that V′ is the rate of change of volume of air",
     "marks": 10,
@@ -14989,7 +15357,7 @@
  },
  {
   "id": "maths-2023-ol-p1-q6-a-i",
-  "topicId": "maths-4-2",
+  "topicId": "maths-5-2",
   "conceptId": "value",
   "level": "ordinary",
   "year": 2023,
@@ -15169,7 +15537,7 @@
  },
  {
   "id": "maths-2023-ol-p1-q7-a-i",
-  "topicId": "maths-5-1",
+  "topicId": "maths-4-1",
   "conceptId": "value-when",
   "level": "ordinary",
   "year": 2023,
@@ -15214,7 +15582,7 @@
  },
  {
   "id": "maths-2023-ol-p1-q7-a-ii",
-  "topicId": "maths-5-1",
+  "topicId": "maths-4-1",
   "conceptId": "when-increases-does-increase-decrease",
   "level": "ordinary",
   "year": 2023,
@@ -15350,7 +15718,7 @@
  },
  {
   "id": "maths-2023-ol-p1-q7-b-i",
-  "topicId": "maths-5-1",
+  "topicId": "maths-4-1",
   "conceptId": "write-down-probability-raining-start-end",
   "level": "ordinary",
   "year": 2023,
@@ -15442,7 +15810,7 @@
  },
  {
   "id": "maths-2023-ol-p1-q7-b-iii",
-  "topicId": "maths-5-1",
+  "topicId": "maths-4-1",
   "conceptId": "certain-time-probability-raining-according-model",
   "level": "ordinary",
   "year": 2023,
@@ -16347,36 +16715,38 @@
   "questionRef": "2023 OL Paper 2 Q2(a)",
   "questionText": "(a) s is the circle x² + y² = 25",
   "stem": "",
-  "figureKey": "maths-2023-OL-paper-p041-i0",
+  "figureKey": "maths-2023-OL-paper-p039-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
-   "notation": "Scale (0, 5, 8, 12, 15)",
+   "notation": "Scale (0, 4, 6, 8, 10)",
    "answer": null,
    "ofParts": null,
    "perPart": null
   },
-  "totalMarks": 15,
+  "totalMarks": 10,
   "rows": [
    {
     "id": "maths-2023-ol-p2-q2-a-r1",
     "kind": "anyN",
-    "verbatim": "Work of merit e.g. ONE correct element Work on diagram",
-    "marks": 15,
+    "verbatim": "Work of merit in either (a) or (b) e.g. work on diagram for (a)",
+    "marks": 10,
     "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 8, three parts for 12, four parts for 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Full Credit.",
     "group": {
-     "claimMax": 3,
-     "perOption": 5,
+     "claimMax": 4,
+     "perOption": 4,
      "options": [
-      "Work of merit e.g. ONE correct element Work on diagram",
-      "Any TWO elements correct towards constructing a parallelogram",
-      "THREE or more elements correct Full Credit (-1): If [AD] is on the horizontal and the construction is correct"
+      "Work of merit in either (a) or (b) e.g. work on diagram for (a)",
+      "One part correct",
+      "One part correct and work of merit in the other part Full Credit (-1): Incorrect rounding Incorrect or omitted units Leaves answer in terms of 𝜋",
+      "Correct answers without supporting work"
      ],
      "perOptionSteps": [
-      5,
-      3,
-      7
+      4,
+      2,
+      2,
+      2
      ]
     }
    }
@@ -17206,7 +17576,7 @@
  },
  {
   "id": "maths-2023-ol-p2-q9-a-iv",
-  "topicId": "maths-1-7",
+  "topicId": "maths-5-2",
   "conceptId": "draw-graph-chart-represent-data-table",
   "level": "ordinary",
   "year": 2023,
@@ -17341,7 +17711,7 @@
  },
  {
   "id": "maths-2023-ol-p2-q9-b-iii",
-  "topicId": "maths-1-7",
+  "topicId": "maths-5-2",
   "conceptId": "iii-general-students-get-rating-excellent",
   "level": "ordinary",
   "year": 2023,
@@ -18231,7 +18601,7 @@
  },
  {
   "id": "maths-2024-hl-p1-q5-c-ii",
-  "topicId": "maths-3-1",
+  "topicId": "maths-4-1",
   "conceptId": "first-value-which",
   "level": "higher",
   "year": 2024,
@@ -19469,7 +19839,7 @@
  },
  {
   "id": "maths-2024-hl-p2-q2-c",
-  "topicId": "maths-3-1",
+  "topicId": "maths-1-2",
   "conceptId": "two-other-events-universal-set",
   "level": "higher",
   "year": 2024,
@@ -19509,7 +19879,7 @@
  },
  {
   "id": "maths-2024-hl-p2-q2-d",
-  "topicId": "maths-3-1",
+  "topicId": "maths-1-2",
   "conceptId": "event-will-raining-tomorrow-morning-event",
   "level": "higher",
   "year": 2024,
@@ -20067,15 +20437,15 @@
   "notes": ""
  },
  {
-  "id": "maths-2024-hl-p2-q7-a-ii",
+  "id": "maths-2024-hl-p2-q7-a-i",
   "topicId": "maths-1-2",
-  "conceptId": "exactly-people-who-stayed-hotel-2023",
+  "conceptId": "one-person-picked-random-people-who",
   "level": "higher",
   "year": 2024,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2024 HL Paper 2 Q7(a)(ii)",
-  "questionText": "Exactly 10% of people who stayed in a PK Hotel in 2023 are at least A years old. Find the value of A, correct to the nearest whole number",
+  "questionRef": "2024 HL Paper 2 Q7(a)(i)",
+  "questionText": "One person is picked at random from the people who stayed in a PK Hotel in 2023. Find the probability that this person is less than 50 years old",
   "stem": "",
   "figureKey": "maths-2024-HL-paper-p039-i0",
   "labelKey": [],
@@ -20089,7 +20459,7 @@
   "totalMarks": 5,
   "rows": [
    {
-    "id": "maths-2024-hl-p2-q7-a-ii-r1",
+    "id": "maths-2024-hl-p2-q7-a-i-r1",
     "kind": "anyN",
     "verbatim": "Work of merit, for example, some correct substitution into relevant formula, relevant diagram drawn, indicates 𝜇 or 𝜎",
     "marks": 5,
@@ -20912,53 +21282,6 @@
   "questionRef": "2024 HL Paper 2 Q10(b)",
   "questionText": "Moving the point O along the line N changes the size of the wiper blade and the region that it cleans. In the diagram below, [D] rotates about O, where O∈D, until it reaches [D′E′]. As in part (a), E and E′ lie on the rectangle P",
   "stem": "",
-  "figureKey": "maths-2024-HL-paper-p049-i0",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 5, 7, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
-  },
-  "totalMarks": 10,
-  "rows": [
-   {
-    "id": "maths-2024-hl-p2-q10-b-r1",
-    "kind": "anyN",
-    "verbatim": "Work of merit, for example, some correct substitution into Cosine Rule, or correctly indicates x on the diagram",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 3,
-     "options": [
-      "Work of merit, for example, some correct substitution into Cosine Rule, or correctly indicates x on the diagram",
-      "1 step correct",
-      "2 steps correct"
-     ],
-     "perOptionSteps": [
-      3,
-      2,
-      5
-     ]
-    }
-   }
-  ],
-  "notes": ""
- },
- {
-  "id": "maths-2024-hl-p2-q10-c",
-  "topicId": "maths-4-1",
-  "conceptId": "mattie-driving-home-way-she-passes",
-  "level": "higher",
-  "year": 2024,
-  "subjectId": "maths",
-  "section": "B",
-  "questionRef": "2024 HL Paper 2 Q10(c)",
-  "questionText": "Mattie is driving home. On the way, she passes five traffic lights. Each traffic light is either red (R), green (G), or orange (O) when she arrives at it. One day, she notes the pattern made by the colour of each traffic light when she arrives at it. For example, this pattern could be R R O G R",
-  "stem": "",
   "figureKey": "maths-2024-HL-paper-p031-i1",
   "labelKey": [],
   "tariffModel": {
@@ -20971,7 +21294,7 @@
   "totalMarks": 15,
   "rows": [
    {
-    "id": "maths-2024-hl-p2-q10-c-r1",
+    "id": "maths-2024-hl-p2-q10-b-r1",
     "kind": "anyN",
     "verbatim": "Work of merit in (b), for example, mentions that swimmers improved, or reference to non-linearity",
     "marks": 15,
@@ -22369,15 +22692,15 @@
   "notes": ""
  },
  {
-  "id": "maths-2024-ol-p2-q2-d",
+  "id": "maths-2024-ol-p2-q2-c",
   "topicId": "maths-1-2",
-  "conceptId": "picks-card-random-doesn-replace-then",
+  "conceptId": "picks-card-random-doesn-replace-red",
   "level": "ordinary",
   "year": 2024,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2024 OL Paper 2 Q2(d)",
-  "questionText": "Seán picks a card at random and doesn’t replace it. He then picks a second card at random",
+  "questionRef": "2024 OL Paper 2 Q2(c)",
+  "questionText": "Seán picks a card at random and doesn’t replace it. It is Red 5 (R5). He then picks a second card at random",
   "stem": "",
   "figureKey": "maths-2024-OL-paper-p027-i2",
   "labelKey": [],
@@ -22391,7 +22714,7 @@
   "totalMarks": 15,
   "rows": [
    {
-    "id": "maths-2024-ol-p2-q2-d-r1",
+    "id": "maths-2024-ol-p2-q2-c-r1",
     "kind": "anyN",
     "verbatim": "Work of merit, for example, 7 or 13 in the correct position or on its own in (c) OR 6 or 13 in the correct position or on its own in (d) Relevant partial listing",
     "marks": 15,
@@ -23005,7 +23328,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q7-a-i",
-  "topicId": "maths-1-6",
+  "topicId": "maths-1-7",
   "conceptId": "complete-back-back-stem-leaf-plot",
   "level": "ordinary",
   "year": 2024,
@@ -23278,7 +23601,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q7-b-iii",
-  "topicId": "maths-1-6",
+  "topicId": "maths-1-7",
   "conceptId": "iii-running-club-commentator-said-galway",
   "level": "ordinary",
   "year": 2024,
@@ -23370,7 +23693,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q8-a-ii",
-  "topicId": "maths-2-1",
+  "topicId": "maths-3-4",
   "conceptId": "size-angle-correct-nearest-degree",
   "level": "ordinary",
   "year": 2024,
@@ -23410,7 +23733,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q8-a-iii",
-  "topicId": "maths-2-1",
+  "topicId": "maths-3-4",
   "conceptId": "iii-second-cable-tied-sign-point",
   "level": "ordinary",
   "year": 2024,
@@ -23455,7 +23778,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q8-b-i",
-  "topicId": "maths-2-1",
+  "topicId": "maths-3-4",
   "conceptId": "part",
   "level": "ordinary",
   "year": 2024,
@@ -23500,7 +23823,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q8-b-ii",
-  "topicId": "maths-2-1",
+  "topicId": "maths-3-4",
   "conceptId": "110",
   "level": "ordinary",
   "year": 2024,
@@ -25308,53 +25631,6 @@
   "notes": ""
  },
  {
-  "id": "maths-2025-hl-p1-q8-d",
-  "topicId": "maths-3-3",
-  "conceptId": "how-long-would-take-jacob-kayak",
-  "level": "higher",
-  "year": 2025,
-  "subjectId": "maths",
-  "section": "B",
-  "questionRef": "2025 HL Paper 1 Q8(d)",
-  "questionText": "Find how long it would take Jacob to kayak directly from S to F, correct to the nearest minute",
-  "stem": "",
-  "figureKey": "maths-2025-HL-paper-p025-i0",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 4, 7, 10, 15)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
-  },
-  "totalMarks": 15,
-  "rows": [
-   {
-    "id": "maths-2025-hl-p1-q8-d-r1",
-    "kind": "anyN",
-    "verbatim": "Work of merit, for example, in (c), one correct time found; or, in (d), some correct substitution into Pythagoras’ Theorem",
-    "marks": 15,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7, three parts for 10, four parts for 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 3,
-     "perOption": 4,
-     "options": [
-      "Work of merit, for example, in (c), one correct time found; or, in (d), some correct substitution into Pythagoras’ Theorem",
-      "1 part correct Work of merit in both parts",
-      "(d) correct and work of merit in (c) (c) correct and answer to (d) given in hours only Full Credit –1 Incorrect rounding, otherwise correct Incorrect or no units in (c)"
-     ],
-     "perOptionSteps": [
-      4,
-      3,
-      8
-     ]
-    }
-   }
-  ],
-  "notes": ""
- },
- {
   "id": "maths-2025-hl-p1-q8-e-i",
   "topicId": "maths-4-1",
   "conceptId": "expression-total-time-hours-will-take",
@@ -25824,15 +26100,15 @@
   "notes": ""
  },
  {
-  "id": "maths-2025-hl-p1-q10-c",
-  "topicId": "maths-3-1",
-  "conceptId": "what-smallest-value-which-point-pattern",
+  "id": "maths-2025-hl-p1-q10-b",
+  "topicId": "maths-4-1",
+  "conceptId": "pattern-2000-there-points-distance-2000",
   "level": "higher",
   "year": 2025,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2025 HL Paper 1 Q10(c)",
-  "questionText": "What is the smallest value of n∈ℕ for which the point (4, 4) is in Pattern n? Do not draw on your diagram from part (a)",
+  "questionRef": "2025 HL Paper 1 Q10(b)",
+  "questionText": "In Pattern 2000, there are 4 points that are a distance of 2000 units from (0, 0). Write down the co-ordinates of these 4 points",
   "stem": "",
   "figureKey": "maths-2025-HL-paper-p033-i1",
   "labelKey": [],
@@ -25846,7 +26122,7 @@
   "totalMarks": 10,
   "rows": [
    {
-    "id": "maths-2025-hl-p1-q10-c-r1",
+    "id": "maths-2025-hl-p1-q10-b-r1",
     "kind": "anyN",
     "verbatim": "Work of merit, for example, in (b), one point given with 2000 as one of the co-ordinates; in (c), draws some of pattern for a value of n where n > 4 Shows (4, 4) on any one of the diagrams",
     "marks": 10,
@@ -30641,6 +30917,53 @@
   "notes": ""
  },
  {
+  "id": "maths-2025-ol-p2-q9-a",
+  "topicId": "maths-2-3",
+  "conceptId": "clodagh-making-wooden-table-her-woodwork",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 OL Paper 2 Q9(a)",
+  "questionText": "Clodagh is making a wooden table for her woodwork class. The triangle A below is a scaled diagram of the table-top",
+  "stem": "",
+  "figureKey": "maths-2025-OL-paper-p039-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 6, 8, 10, 15)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2025-ol-p2-q9-a-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit in (i), for example, a relevant work on diagram or a relevant measurement written (15 cm or 7∙5 cm) Work of merit in (ii), for example, shows some understanding of centroid, relevant work on the diagram or a relevant measurement written (10 cm, 5 cm, 12 cm, or 6 cm).",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 6, two parts for 8, three parts for 10, four parts for 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "Work of merit in (i), for example, a relevant work on diagram or a relevant measurement written (15 cm or 7∙5 cm) Work of merit in (ii), for example, shows some understanding of centroid, relevant work on the diagram or a relevant measurement written (10 cm, 5 cm, 12 cm, or 6 cm).",
+      "(i) correct Work of merit in (i) AND (ii) A relevant arc in (i) AND an additional arc in (ii)",
+      "(i) correct and work of merit in (ii) Full Credit (-1): D and/or O not labelled"
+     ],
+     "perOptionSteps": [
+      6,
+      2,
+      7
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "maths-2025-ol-p2-q9-a-i",
   "topicId": "maths-2-2",
   "conceptId": "diagram-construct-midpoint-side-label-point",
@@ -30777,7 +31100,7 @@
   "questionRef": "2025 OL Paper 2 Q9(b)(ii)",
   "questionText": "The shortest side of the smaller table-top is 25∙5 cm. Work out the length of the shortest side of the bigger table-top, correct to 1 decimal place",
   "stem": "",
-  "figureKey": "maths-2025-OL-paper-p039-i0",
+  "figureKey": "maths-2025-OL-paper-p039-i1",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",

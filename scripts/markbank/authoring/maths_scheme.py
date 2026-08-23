@@ -113,12 +113,21 @@ class Scheme:
                         continue
                     a = mk.group(1).lower()
                     b = (mk.group(2) or '').lower()
-                    if b:
-                        letter, roman = a, b
-                    elif a in ROMANS:
+                    if a in ROMANS and not b:
+                        # The roman belongs to the letter printed above it: the
+                        # scheme sets "(a)" on one line and "(ii)" on the next,
+                        # so the two have to be read together.
                         roman = a
-                    else:
-                        letter, roman = a, None
+                        continue
+                    if letter is not None:
+                        # A SECOND letter in this band is the next unit's, not
+                        # this one's. Bands meet a few points apart and each one
+                        # can see its neighbour's marker at its foot, so reading
+                        # on named a unit after the one that follows it: 2021 OL
+                        # Paper 1 Q3(b) was keyed as Q3(c), collided with the
+                        # real Q3(c), and one of the two was dropped.
+                        break
+                    letter, roman = a, (b or None)
                 key = (paper, q, letter, roman)
                 if key in self.units:
                     key = (paper, q, letter, roman, n)
