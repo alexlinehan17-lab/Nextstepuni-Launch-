@@ -43,10 +43,17 @@ MATH_LO, MATH_HI = 0x1D400, 0x1D7FF
 DIGITS = {'ZERO': '0', 'ONE': '1', 'TWO': '2', 'THREE': '3', 'FOUR': '4',
           'FIVE': '5', 'SIX': '6', 'SEVEN': '7', 'EIGHT': '8', 'NINE': '9'}
 # Glyphs whose ToUnicode map put them in the wrong block entirely.
-GLYPH = {'න': '∫', '൤': '[', '൨': ']', 'ൣ': '[', '൧': ']',
-         '൬': '(', '൰': ')', 'ඈ': '{', 'ඉ': '}', '൫': '(', '൯': ')',
-         '൛': '(', '൧': ']', 'ඌ': '|',
-         'ඥ': '√', 'ඩ': '√', 'ℎ': 'h', '': ''}
+# A second font subset, used from 2023, maps its digits into the Oriya block in
+# a contiguous run and its brackets into Ethiopic. Verified by reading the
+# results back: "m^ଶ−4ሺ3ሻሺ3ሻ= 0" becomes "m²−4(3)(3) = 0", which is the
+# discriminant it plainly is, and "(ସିଶ)" becomes "(4−2)".
+GLYPH = {chr(0x0B34 + i): str(i) for i in range(10)}
+GLYPH.update({'\u0b3e': '+', '\u0b3f': '−',
+              'ሺ': '(', 'ሻ': ')', 'ቀ': '(', 'ቁ': ')'})
+GLYPH.update({'න': '∫', '൤': '[', '൨': ']', 'ൣ': '[', '൧': ']',
+              '൬': '(', '൰': ')', 'ඈ': '{', 'ඉ': '}', '൫': '(', '൯': ')',
+              '൛': '(', 'ඌ': '|',
+              'ඥ': '√', 'ඩ': '√', 'ℎ': 'h', '': ''})
 
 
 def _is_math(ch):
@@ -103,8 +110,15 @@ def line_text(line):
     return spacing(superscripts(''.join(out).strip()))
 
 
-def columns(page, cut=300):
-    """(model solution lines, marking-notes lines) for one scheme page."""
+def placed(page, cut=300):
+    """([(y, text)] left, [(y, text)] right) — columns WITH their positions.
+
+    A Maths scheme page is a table, and one page frequently holds several
+    parts: 25 of the 61 marked pages of the 2025 Higher scheme carry more than
+    one part marker. Dropping the y coordinate collapses those into a single
+    part and loses the rest, so the position is kept and the caller segments on
+    it.
+    """
     left, right = [], []
     for b in page.get_text('dict')['blocks']:
         for ln in b.get('lines', []):
@@ -114,7 +128,13 @@ def columns(page, cut=300):
             x = min(s['bbox'][0] for s in ln['spans'])
             y = min(s['bbox'][1] for s in ln['spans'])
             (right if x >= cut else left).append((y, t))
-    return ([t for _, t in sorted(left)], [t for _, t in sorted(right)])
+    return sorted(left), sorted(right)
+
+
+def columns(page, cut=300):
+    """(model solution lines, marking-notes lines) for one scheme page."""
+    left, right = placed(page, cut)
+    return ([t for _, t in left], [t for _, t in right])
 
 
 SCALE = re.compile(r'Scale\s+(\d+)([A-Z]?)\s*\(([\d,\s]+)\)')

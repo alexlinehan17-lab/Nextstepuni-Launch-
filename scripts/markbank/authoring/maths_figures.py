@@ -1,0 +1,130 @@
+#!/usr/bin/env python3
+"""Crop each Mathematics unit's model solution out of the scheme PDF.
+
+    python3 scripts/markbank/authoring/maths_figures.py 2025 hl [--write]
+
+The model solution is the one part of a Maths scheme that must NOT be text. Its
+notation extracts readably but its structure does not -- fractions flatten,
+limits detach, lines reorder -- so on a card it belongs as the image the SEC
+printed. mathtext.py explains why; this cuts it out.
+
+Every unit already knows its page and its vertical band, because the scheme is
+segmented on the Scale lines in the marking-notes column. The crop is that band,
+left of the column boundary, with a little air around it.
+"""
+import collections
+import os
+import re
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import maths_scheme                                          # noqa: E402
+
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(
+    os.path.abspath(__file__)))))
+# bind-figures.mjs reads from here and derives the subject, year and level from
+# the FILE NAME, so both have to match what it expects. Nothing about a figure
+# is passed to it by hand -- that is how both historical figure corruptions in
+# this repo happened.
+def out_dir(year, level):
+    return os.path.join(ROOT, 'exam-papers', 'maths', 'figures', f'{year}-{level}')
+COLUMN = 300          # where the Marking Notes column starts
+PAD = 6
+LINE = 16          # a line's own height, so the last one is not sliced
+DPI = 200
+
+
+def key_slug(key):
+    paper, q, letter, roman = key[0], key[1], key[2], key[3]
+    s = f'{paper}-q{q}'
+    if letter:
+        s += f'-{letter}'
+    if roman:
+        s += f'-{roman}'
+    if len(key) > 4:
+        s += f'-{key[4]}'
+    return s
+
+
+def crop(year, level, write=False):
+    import pymupdf
+    S = maths_scheme.Scheme(year, level)
+    made = []
+    seen = collections.defaultdict(int)
+    for key in S.parts():
+        page_no, lo, hi = S.band(key)
+        page = S.doc[page_no]
+        # Crop to the INK, not to the band. The band runs from one scale to the
+        # next, which on a page holding one unit is the whole page: the first
+        # crops were 818pt of mostly white with the next row's "(a)" clipped in
+        # at the foot. The solution's own lines say where it actually is.
+        import mathtext
+        left, _ = mathtext.placed(page)
+        # The page number sits alone at the foot and is not part of the answer;
+        # counting it padded every crop with an inch of white.
+        ys = [y for y, t in left if lo - 4 <= y < hi and t.strip()
+              and not re.fullmatch(r'\[?\d{1,3}\]?', t.strip())]
+        if not ys:
+            continue
+        top = max(0, min(ys) - PAD)
+        bottom = min(page.rect.height - 24, max(ys) + LINE + PAD)
+        if bottom - top < 18:
+            continue
+        # The right edge is where the solution's own text ends, not a fixed
+        # column line: clipping at 296pt sliced "[for all x in the domain of
+        # g(x)]" in half.
+        # Bounded by where the NOTES column actually begins on this page, not by
+        # a guessed offset: too tight sliced "[for all x in the domain of g(x)]"
+        # in half, too loose let the first letters of the notes bleed in down
+        # the right-hand edge.
+        notes_x = [min(sp['bbox'][0] for sp in ln['spans'])
+                   for b in page.get_text('dict')['blocks'] for ln in b.get('lines', [])
+                   if min(sp['bbox'][0] for sp in ln['spans']) >= COLUMN
+                   and top <= min(sp['bbox'][1] for sp in ln['spans']) <= bottom]
+        right_edge = (min(notes_x) - 6) if notes_x else COLUMN - 4
+        rect = pymupdf.Rect(30, top, right_edge, bottom)
+        name = f'maths-{year}-{level.upper()}-paper-p{page_no:03d}-i{seen[page_no]}'
+        seen[page_no] += 1
+        if write:
+            d = out_dir(year, level)
+            os.makedirs(d, exist_ok=True)
+            page.get_pixmap(clip=rect, dpi=DPI).save(os.path.join(d, f'{name}.png'))
+        made.append((name, key, round(rect.height), S.solution(key)))
+    return made
+
+
+if __name__ == '__main__':
+    year, level = int(sys.argv[1]), sys.argv[2]
+    made = crop(year, level, '--write' in sys.argv)
+    if '--catalogue' in sys.argv:
+        import json
+        out = []
+        for name, key, h, sol in made:
+            body = ' '.join(t for t in sol
+                            if t and not t.startswith('Model Solution')
+                            and not re.fullmatch(r'Q\d+|\(?[a-z]{1,4}\)?|\[?\d{1,3}\]?', t.strip()))
+            body = re.sub(r'\s+', ' ', body).strip()
+            ref = ('Paper ' + str(key[0]) + ' Q' + str(key[1])
+                   + (f'({key[2]})' if key[2] else '') + (f'({key[3]})' if key[3] else ''))
+            # The description is the solution's OWN lines, demangled, not a
+            # guess about a picture: this is typeset mathematics, and what it
+            # says is recoverable even though its layout is not.
+            desc = (f'The marking scheme\'s printed worked solution for '
+                    f'{year} {level.upper()} {ref}, typeset as the State '
+                    f'Examinations Commission set it. It reads: {body[:420]}')
+            out.append({'file': f'{name}.png', 'kind': 'figure',
+                        'truncated': False, 'description': desc})
+        print(json.dumps(out, ensure_ascii=False, indent=1))
+    else:
+        print(f'{len(made)} model-solution crops')
+        for name, key, h, _ in made[:6]:
+            print(f'   {name}  {h}pt tall')
+
+
+def names(year, level):
+    """{unit key: figure name} — what the cropper called each unit's solution.
+
+    Derived by re-running the same walk, so the name a card references can never
+    drift from the name the crop was written under.
+    """
+    return {key: name for name, key, _, _ in crop(year, level, write=False)}

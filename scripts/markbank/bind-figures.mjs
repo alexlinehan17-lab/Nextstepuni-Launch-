@@ -37,6 +37,7 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 const MANIFEST = resolve(ROOT, 'components/MarkBank/figures.json');
 
 const SUBJECT_TITLE = {
+  maths: 'Mathematics',
   biology: 'Biology', chemistry: 'Chemistry', physics: 'Physics',
   'agricultural-science': 'Agricultural Science', business: 'Business',
   'home-economics': 'Home Economics', economics: 'Economics',

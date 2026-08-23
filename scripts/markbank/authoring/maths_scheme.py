@@ -32,68 +32,126 @@ QHEAD = re.compile(r'^Q\s*(\d{1,2})\b')
 PART = re.compile(r'^\(([a-h])\)\s*$')
 ROMAN = re.compile(r'^\((i{1,3}|iv|v|vi{0,3})\)\s*$', re.I)
 PAPER = re.compile(r'\bPaper\s*([12])\b')
+# The running header and footer sit inside the notes column's band and get
+# welded onto whatever marking point precedes them -- "3 steps correct
+# Mathematics Higher Level" -- which the provenance gate is right to refuse
+# because the scheme never printed that string. 282 of 530 cards were being
+# dropped on it.
+# The running footer is set as TWO lines -- "Mathematics" on one and "Higher
+# Level" on the next -- so a pattern for the phrase matches neither. Each half
+# has to be matched on its own.
+FURNITURE = re.compile(
+    r'^(Mathematics|(Higher|Ordinary|Foundation)\s+Level'
+    r'|Mathematics\s+(Higher|Ordinary|Foundation)\s+Level'
+    r'|Leaving Certificate.*|Coimisi.*|State Examinations.*'
+    r'|Page \d+|\[?\d{1,3}\]?|Marking Notes|Marking scheme.*|Model Solution.*)\s*$', re.I)
+
 CREDIT = re.compile(r'^(Low|Mid|High)\s+Partial\s+Credit\s*:?\s*$', re.I)
 FULL = re.compile(r'^Full\s+Credit\s*(-\s*\d+)?\s*:?\s*$', re.I)
 
 
+SCALE_LINE = re.compile(r'Scale\s+\d+[A-Z]?\s*\(', re.I)
+# "(a)", "(i)", and "(b)(i)" -- the scheme frequently prints the letter and the
+# roman on ONE line, sometimes with the solution's first words after them.
+# Requiring the whole line to be a single marker left those units unnamed, and
+# a unit with no part is a unit with no question.
+MARKER = re.compile(r'^\(([a-h]|i{1,3}|iv|v|vi{0,3})\)\s*(?:\(([a-h]|i{1,3}|iv|v|vi{0,3})\))?',
+                    re.I)
+ROMANS = {'i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii'}
+
+
 class Scheme:
+    """Every marked unit of a Mathematics scheme.
+
+    The unit is a SCALE, not a page. A page is a table and one page commonly
+    holds several parts -- 23 of the 61 marked pages of the 2025 Higher scheme
+    carry two scales -- so reading a page as one part found 50 units where the
+    paper has 84. Each "Scale 15D (0, 4, 7, 10, 15)" opens a new one, and the
+    part it belongs to is named by the left-column markers beside it.
+    """
+
     def __init__(self, year, level):
         import pymupdf
         self.year, self.level = year, level
         self.path = os.path.join(SCHEMES, f'{year}-{level}.pdf')
         self.doc = pymupdf.open(self.path)
-        self.pages = {}
-        paper, q, letter = 1, None, None
+        self.units = {}
+        paper, q = 1, None
         for i, page in enumerate(self.doc):
-            flat = page.get_text()
-            m = PAPER.search(flat)
+            m = PAPER.search(page.get_text())
             if m:
                 paper = int(m.group(1))
-            sol, notes = mathtext.columns(page)
-            if not notes or 'Marking Notes' not in ' '.join(notes[:3]):
+            left, right = mathtext.placed(page)
+            if not any('Marking Notes' in t for _, t in right[:3]):
                 continue
-            # The question and part are printed in the left column's first
-            # lines, and a page that names neither continues the one before it.
-            for line in sol[:6]:
-                h = QHEAD.match(line.strip())
+            for t in (t for _, t in left[:6]):
+                h = QHEAD.match(t.strip())
                 if h:
                     q = int(h.group(1))
-                    letter = None
-                p = PART.match(line.strip()) or ROMAN.match(line.strip())
-                if p:
-                    letter = p.group(1)
             if q is None:
                 continue
-            self.pages.setdefault((paper, q, letter), []).append(i)
+            scales = [y for y, t in right if SCALE_LINE.search(t)]
+            if not scales:
+                continue
+            bounds = scales + [1e9]
+            for n, y0 in enumerate(scales):
+                # A unit runs from ITS OWN scale to the next, not from the
+                # previous one: using the previous scale shifted every band up
+                # by a unit, so a crop of Q3(b) opened with Q3(a)'s answer
+                # sitting above it. The small lookback keeps the part marker,
+                # which the scheme prints a few points higher than the scale.
+                lo = y0 - 8 if n else 0
+                hi = bounds[n + 1] - 8 if bounds[n + 1] < 1e8 else bounds[n + 1]
+                # The markers that name this unit sit beside its scale, between
+                # the previous scale and the next.
+                letter = roman = None
+                for y, t in left:
+                    if not (lo - 4 <= y < hi):
+                        continue
+                    mk = MARKER.match(t.strip())
+                    if not mk:
+                        continue
+                    a = mk.group(1).lower()
+                    b = (mk.group(2) or '').lower()
+                    if b:
+                        letter, roman = a, b
+                    elif a in ROMANS:
+                        roman = a
+                    else:
+                        letter, roman = a, None
+                key = (paper, q, letter, roman)
+                if key in self.units:
+                    key = (paper, q, letter, roman, n)
+                self.units[key] = (i, lo, hi)
 
     def parts(self):
-        return sorted(self.pages, key=lambda k: (k[0], k[1], k[2] or ''))
+        def order(k):
+            return (k[0], k[1], k[2] or '', k[3] or '')
+        return sorted(self.units, key=order)
+
+    def _band(self, key, side):
+        i, lo, hi = self.units[key]
+        left, right = mathtext.placed(self.doc[i])
+        rows = right if side == 'notes' else left
+        return [t for y, t in rows
+                if lo - 4 <= y < hi and not FURNITURE.search(t.strip())]
 
     def notes(self, key):
-        out = []
-        for i in self.pages[key]:
-            out += mathtext.columns(self.doc[i])[1]
-        return out
+        return self._band(key, 'notes')
 
     def solution(self, key):
-        out = []
-        for i in self.pages[key]:
-            out += mathtext.columns(self.doc[i])[0]
-        return out
+        return self._band(key, 'solution')
+
+    def band(self, key):
+        """(page index, y0, y1) — for cropping the model solution."""
+        return self.units[key]
 
     def tariff(self, key):
-        """(total, ladder) from the part's Scale line, or (None, None)."""
         _, total, ladder = mathtext.steps_and_scale(self.notes(key))
         return total, ladder
 
     def answer_rows(self, key):
-        """[(label, text)] — the marking notes as a card's answer.
-
-        Two shapes, both the scheme's own. Where it numbers the steps, each step
-        is a row. Where it does not, the Low/Mid/High Partial Credit headings
-        and what follows them are the rows: those name what a partially correct
-        answer looks like, which is the thing a student most needs told.
-        """
+        """[(label, text)] — the marking notes as a card's answer."""
         notes = self.notes(key)
         steps, _, _ = mathtext.steps_and_scale(notes)
         if steps:
@@ -115,11 +173,11 @@ class Scheme:
 
 if __name__ == '__main__':
     S = Scheme(int(sys.argv[1]), sys.argv[2])
-    print(f'{len(S.parts())} parts across {len(S.doc)} pages')
+    print(f'{len(S.parts())} marked units across {len(S.doc)} pages')
     for key in S.parts()[:8]:
         total, ladder = S.tariff(key)
         rows = S.answer_rows(key)
-        p, q, l = key
+        p, q, l = key[0], key[1], (key[2] or '') + (f'({key[3]})' if key[3] else '')
         print(f'  P{p} Q{q}({l or "-"})  {total} marks, ladder {ladder}, {len(rows)} rows')
         for lab, txt in rows[:3]:
             print(f'        {lab}: {txt[:66]}')

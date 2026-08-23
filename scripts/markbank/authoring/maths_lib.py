@@ -66,18 +66,32 @@ class Author:
         self._used = set()
 
     def question(self, key):
-        paper, q, letter = key
+        """The paper's wording for this unit.
+
+        A unit may be marked at a coarser grain than the paper sets it -- the
+        scheme prices Q2(b) once where the paper asks (b)(i), (b)(ii) and
+        (b)(iii) -- so where the exact part is not in the paper, the parts
+        underneath it are joined. That is still the paper's own words.
+        """
+        paper, q, letter, roman = key[0], key[1], key[2], key[3]
         P = self.P[paper]
-        roman = letter if letter and letter not in 'abcdefgh' else None
-        want = None if roman else letter
-        for k in P.parts:
-            if k[0] == q and k[1] == want and (roman is None or k[2] == roman):
-                return mathtext.clean_like(P.files, P.text(*k) or '')
-        return ''
+        exact = [k for k in P.parts
+                 if k[0] == q and k[1] == letter and k[2] == roman]
+        if not exact and roman is None:
+            exact = [k for k in P.parts if k[0] == q and k[1] == letter]
+        if not exact:
+            return ''
+        exact.sort(key=lambda k: (k[1] or '', k[2] or ''))
+        joined = ' '.join((P.text(*k) or '').strip() for k in exact)
+        return mathtext.clean_like(P.files, joined)
 
     def ref(self, key):
-        paper, q, letter = key
-        tail = f'Q{q}' + (f'({letter})' if letter else '')
+        paper, q, letter, roman = key[0], key[1], key[2], key[3]
+        tail = f'Q{q}'
+        if letter:
+            tail += f'({letter})'
+        if roman:
+            tail += f'({roman})'
         return f'{self.year} {self.level.upper()} Paper {paper} {tail}'
 
     def card(self, key, *, cid, topic, concept, notes='', stem='', figure_key=''):
