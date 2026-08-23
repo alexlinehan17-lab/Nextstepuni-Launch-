@@ -1026,7 +1026,7 @@
  },
  {
   "id": "maths-2021-hl-p1-q8-a-i",
-  "topicId": "maths-5-2",
+  "topicId": "maths-5-1",
   "conceptId": "part",
   "level": "higher",
   "year": 2021,
@@ -2528,7 +2528,7 @@
  },
  {
   "id": "maths-2021-hl-p2-q7-a",
-  "topicId": "maths-3-4",
+  "topicId": "maths-3-3",
   "conceptId": "total-length-course",
   "level": "higher",
   "year": 2021,
@@ -2596,7 +2596,7 @@
    {
     "id": "maths-2021-hl-p2-q7-b-r1",
     "kind": "anyN",
-    "verbatim": "Work of merit, for example: 4·8 −1·2 or 5·6x or 28/4 or Tೞೢ೔೘/5∙6",
+    "verbatim": "Work of merit, for example: 4·8 −1·2 or 5·6x or 28/4 or Tswim/5∙6",
     "marks": 15,
     "openList": true,
     "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12, four parts for 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
@@ -2604,8 +2604,8 @@
      "claimMax": 3,
      "perOption": 4,
      "options": [
-      "Work of merit, for example: 4·8 −1·2 or 5·6x or 28/4 or Tೞೢ೔೘/5∙6",
-      "4/x or 28/5·6x or 5/x 28/4 × Tೞೢ೔೘/5∙6",
+      "Work of merit, for example: 4·8 −1·2 or 5·6x or 28/4 or Tswim/5∙6",
+      "4/x or 28/5·6x or 5/x 28/4 × Tswim/5∙6",
       "An equation in one variable that can be solved to give a relevant time or speed"
      ],
      "perOptionSteps": [
@@ -2620,7 +2620,7 @@
  },
  {
   "id": "maths-2021-hl-p2-q7-c",
-  "topicId": "maths-3-4",
+  "topicId": "maths-3-3",
   "conceptId": "acb-116-correct-decimal-place",
   "level": "higher",
   "year": 2021,
@@ -2712,7 +2712,7 @@
  },
  {
   "id": "maths-2021-hl-p2-q7-e",
-  "topicId": "maths-3-4",
+  "topicId": "maths-3-3",
   "conceptId": "shortest-distance-point-side-correct-decimal",
   "level": "higher",
   "year": 2021,
@@ -2757,7 +2757,7 @@
  },
  {
   "id": "maths-2021-hl-p2-q7-f",
-  "topicId": "maths-3-4",
+  "topicId": "maths-3-3",
   "conceptId": "course-viewed-camera-tower-which-rises",
   "level": "higher",
   "year": 2021,
@@ -5780,7 +5780,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q4(a)",
-  "questionText": "A sequence u1 , u2 , u3 , ... is defined as follows, for n∈ℕ: u1= 2, u2= 64, un+1= √ u೙ u೙ష1 Write u3 in the form 2p , where p∈ℝ",
+  "questionText": "A sequence u1 , u2 , u3 , ... is defined as follows, for n∈ℕ: u1= 2, u2= 64, un+1= √ un un−1 Write u3 in the form 2p , where p∈ℝ",
   "stem": "",
   "figureKey": "maths-2022-HL-paper-p013-i0",
   "labelKey": [],
@@ -6706,7 +6706,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-a",
-  "topicId": "maths-2-3",
+  "topicId": "maths-3-1",
   "conceptId": "amount-drug-left-alex-body-days",
   "level": "higher",
   "year": 2022,
@@ -6746,7 +6746,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-b",
-  "topicId": "maths-2-3",
+  "topicId": "maths-3-1",
   "conceptId": "how-long-after-single-injection-will",
   "level": "higher",
   "year": 2022,
@@ -6791,7 +6791,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-c",
-  "topicId": "maths-2-3",
+  "topicId": "maths-3-1",
   "conceptId": "explain-why-total-amount-drug-alex",
   "level": "higher",
   "year": 2022,
@@ -6837,7 +6837,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-d",
-  "topicId": "maths-2-3",
+  "topicId": "maths-3-1",
   "conceptId": "total-amount-drug-alex-body-immediately",
   "level": "higher",
   "year": 2022,
@@ -6967,7 +6967,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-f-ii",
-  "topicId": "maths-2-3",
+  "topicId": "maths-3-1",
   "conceptId": "immediately-after-7th-injection-there-drug",
   "level": "higher",
   "year": 2022,
@@ -8198,7 +8198,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q8-a",
-  "topicId": "maths-1-6",
+  "topicId": "maths-1-2",
   "conceptId": "jena-researching-fuel-consumption-cars-she",
   "level": "higher",
   "year": 2022,
@@ -8295,7 +8295,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q8-a-iv",
-  "topicId": "maths-1-6",
+  "topicId": "maths-1-2",
   "conceptId": "based-data-given-would-you-more",
   "level": "higher",
   "year": 2022,
@@ -9063,7 +9063,7 @@
      "perOption": 4,
      "options": [
       "(a),",
-      "z₁ = −2 −3i and z₁ഥ= −2 + 3i",
+      "z₁ = −2 −3i and z₁̅= −2 + 3i",
       "-6 -5 -4 -3 -2 -1"
      ],
      "perOptionSteps": [
@@ -9629,7 +9629,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q6(b)",
-  "questionText": "Find the smallest value of n∈ℕ for which −254 + (n−1)(4) ൐0 Answer: n= ___________ Leaving Certificate, 2022 14",
+  "questionText": "Find the smallest value of n∈ℕ for which −254 + (n−1)(4) >0 Answer: n= ___________ Leaving Certificate, 2022 14",
   "stem": "",
   "figureKey": "maths-2022-OL-paper-p016-i2",
   "labelKey": [],
@@ -9674,7 +9674,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q6(c)",
-  "questionText": "The sum of the first n terms of this sequence is given by Sₙ = (c) Solve the following equation for n∈ℕ. Note that n്0",
+  "questionText": "The sum of the first n terms of this sequence is given by Sₙ = (c) Solve the following equation for n∈ℕ. Note that n ≠ 0",
   "stem": "",
   "figureKey": "maths-2022-OL-paper-p017-i0",
   "labelKey": [],
@@ -11237,7 +11237,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q4-a",
-  "topicId": "maths-1-6",
+  "topicId": "maths-3-3",
   "conceptId": "group-students-sat-exam-each-student",
   "level": "ordinary",
   "year": 2022,
@@ -11515,7 +11515,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q6-a-i",
-  "topicId": "maths-4-1",
+  "topicId": "maths-2-1",
   "conceptId": "write-down-adb-size-total-angle",
   "level": "ordinary",
   "year": 2022,
@@ -11558,7 +11558,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q6-a-ii",
-  "topicId": "maths-4-1",
+  "topicId": "maths-2-1",
   "conceptId": "aod-130-work-out-size-angle",
   "level": "ordinary",
   "year": 2022,
@@ -12918,7 +12918,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q1(c)",
-  "questionText": "x²−px + 1 is a factor of x³−2x−3r, where p, r∈ℝ and p൏0. Find the value of p and the value of r. p= ____________ and r= ____________",
+  "questionText": "x²−px + 1 is a factor of x³−2x−3r, where p, r∈ℝ and p < 0. Find the value of p and the value of r. p= ____________ and r= ____________",
   "stem": "",
   "figureKey": "maths-2023-HL-paper-p008-i0",
   "labelKey": [],
@@ -13799,7 +13799,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q7(e)",
-  "questionText": "Taking v′(t) to be the derivative of v, and v′′(t) to be the second derivative of v: (e) v′(1) > 0 and v′′(1) ൏0 Four graphs, A, B, C, and D, are shown below",
+  "questionText": "Taking v′(t) to be the derivative of v, and v′′(t) to be the second derivative of v: (e) v′(1) > 0 and v′′(1) < 0 Four graphs, A, B, C, and D, are shown below",
   "stem": "",
   "figureKey": "maths-2023-HL-paper-p023-i0",
   "labelKey": [],
@@ -14596,7 +14596,7 @@
  },
  {
   "id": "maths-2023-hl-p2-q3-b-ii",
-  "topicId": "maths-2-2",
+  "topicId": "maths-2-3",
   "conceptId": "perpendicular-bisector-value-value",
   "level": "higher",
   "year": 2023,
@@ -14650,7 +14650,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 2 Q4(ii)",
-  "questionText": "The circle c has equation: (x−h)2+ (y+ 3)2= 12 where h∈ℝ. Write down the centre and radius of the circle c. Give your answer in terms of h, where appropriate. The perpendicular distance from the line x−4y+ 7 = 0 to the centre of the circle c is 5 units. The circle s passes through the points (8, 1), (a, 3), and (a, −5), as shown in the diagram on the right (not to scale), where 0 ൏a൏5, a∈ℝ",
+  "questionText": "The circle c has equation: (x−h)2+ (y+ 3)2= 12 where h∈ℝ. Write down the centre and radius of the circle c. Give your answer in terms of h, where appropriate. The perpendicular distance from the line x−4y+ 7 = 0 to the centre of the circle c is 5 units. The circle s passes through the points (8, 1), (a, 3), and (a, −5), as shown in the diagram on the right (not to scale), where 0 <a<5, a∈ℝ",
   "stem": "",
   "figureKey": "maths-2023-HL-paper-p045-i0",
   "labelKey": [],
@@ -14742,7 +14742,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 2 Q4(b)",
-  "questionText": "The circle s passes through the points (8, 1), (a, 3), and (a, −5), as shown in the diagram on the right (not to scale), where 0 ൏a൏5, a∈ℝ",
+  "questionText": "The circle s passes through the points (8, 1), (a, 3), and (a, −5), as shown in the diagram on the right (not to scale), where 0 <a<5, a∈ℝ",
   "stem": "",
   "figureKey": "maths-2023-HL-paper-p046-i0",
   "labelKey": [],
@@ -16358,7 +16358,7 @@
  },
  {
   "id": "maths-2023-ol-p1-q6-a-i",
-  "topicId": "maths-4-1",
+  "topicId": "maths-5-2",
   "conceptId": "value",
   "level": "ordinary",
   "year": 2023,
@@ -17655,7 +17655,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 2 Q1(c)(ii)",
-  "questionText": "Draw the line segment through the point (4, 2) with a slope of 2 on the co-ordinate (i) diagram below, with the range −2 ൑y൑6, y∈ℝ",
+  "questionText": "Draw the line segment through the point (4, 2) with a slope of 2 on the co-ordinate (i) diagram below, with the range −2 ≤ y ≤ 6, y∈ℝ",
   "stem": "",
   "figureKey": "maths-2023-OL-paper-p032-i0",
   "labelKey": [],
@@ -19138,7 +19138,7 @@
  },
  {
   "id": "maths-2023-ol-p2-q9-a-iv",
-  "topicId": "maths-1-6",
+  "topicId": "maths-5-2",
   "conceptId": "draw-graph-chart-represent-data-table",
   "level": "ordinary",
   "year": 2023,
@@ -19273,7 +19273,7 @@
  },
  {
   "id": "maths-2023-ol-p2-q9-b-iii",
-  "topicId": "maths-1-6",
+  "topicId": "maths-5-2",
   "conceptId": "iii-general-students-get-rating-excellent",
   "level": "ordinary",
   "year": 2023,
@@ -19320,7 +19320,7 @@
  },
  {
   "id": "maths-2023-ol-p2-q10-a",
-  "topicId": "maths-1-5",
+  "topicId": "maths-1-2",
   "conceptId": "work-out-cba-size-angle-cba",
   "level": "ordinary",
   "year": 2023,
@@ -20162,7 +20162,7 @@
  },
  {
   "id": "maths-2024-hl-p1-q5-c-ii",
-  "topicId": "maths-3-1",
+  "topicId": "maths-4-1",
   "conceptId": "first-value-which",
   "level": "higher",
   "year": 2024,
@@ -21028,7 +21028,7 @@
  },
  {
   "id": "maths-2024-hl-p1-q10-a-i",
-  "topicId": "maths-3-1",
+  "topicId": "maths-5-2",
   "conceptId": "estimate-height-water-spinach-plant-after",
   "level": "higher",
   "year": 2024,
@@ -21853,7 +21853,7 @@
  },
  {
   "id": "maths-2024-hl-p2-q6-a",
-  "topicId": "maths-1-2",
+  "topicId": "maths-2-2",
   "conceptId": "line-segment-point-divides-line-segment",
   "level": "higher",
   "year": 2024,
@@ -23384,7 +23384,7 @@
  },
  {
   "id": "maths-2024-ol-p1-q7-b-i",
-  "topicId": "maths-3-1",
+  "topicId": "maths-5-2",
   "conceptId": "number-bacteria-after-hour-after-hours",
   "level": "ordinary",
   "year": 2024,
@@ -24634,7 +24634,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q5-a-i",
-  "topicId": "maths-1-2",
+  "topicId": "maths-3-3",
   "conceptId": "fill-three-missing-numbers-horizontal-axis",
   "level": "ordinary",
   "year": 2024,
@@ -28560,7 +28560,7 @@
      "options": [
       "Finds one relevant length",
       "Finds |P′Q|",
-      "Indicates หP′Qห/|P|",
+      "Indicates |P′Q|/|P|",
       "Finds area",
       "Finds one relevant length",
       "Shows |P| s(∠ S) = 4",

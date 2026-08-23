@@ -71,6 +71,18 @@ NEIGHBOUR = {
     '\u1243': ']',   # gid 4675 in the same run, closes it
     '\u0c0f': '\U0001d703',  # gid 3087, four before 3091='m' in the Greek run: theta
     '\u014c': 'ft',  # Calibri gid 332, between 327='fl' and 336='g': "aOer"
+    # Relations, read off the sentence each one sits in:
+    '\u0d4d': '\u2260',  # "Note that n != 0"
+    '\u0d4f': '<',        # "where p, r in R and p < 0"
+    '\u0d50': '>',        # "-254 + (n-1)(4) > 0"
+    '\u0d51': '\u2264',  # "with the range -2 <= y <= 6"
+    '\u0c36': '+',        # Chemistry prints "[H3O+][A-]" with these two
+    '\u0c37': '\u2212',
+    '\u0d25': '\u0305',  # the conjugate bar: "z1 = -2 - 3i and z1-bar = -2 + 3i"
+    '\u0e2b': '|',        # renders as a vertical bar: "|XQ'|"
+    # A subscripted word, cropped and read: "T_swim". The four agree on one
+    # offset, which is what lets the run below fill the rest of itself.
+    '\u0bcd': 'T', '\u0cd4': 'i', '\u0cd8': 'm', '\u0cde': 's', '\u0ce2': 'w',
 }
 
 
@@ -159,7 +171,31 @@ def main():
     dropped = sorted(k for k, v in conflict.items() if len(v) > 1)
     for k in dropped:
         table.pop(k, None)
+    # Fill a contiguous run of mangled code points from the members already
+    # known. The subset packs its glyphs in the original font's order, so a run
+    # whose known members agree on one offset predicts the rest of itself --
+    # the same argument as interpolate(), made on the other side of the map.
     table.update(NEIGHBOUR)
+    # Letters and digits only, at both ends. A font packs its glyphs in the
+    # original's order, and for letters and digits that order IS the character
+    # order -- but a bracket is followed by its own size variants, which are
+    # the SAME character, so extending a run through one invents nonsense: it
+    # read the tall bracket after "(" as "*" and shipped "72(8) - *".
+    filled = 0
+    known = {ord(k): v for k, v in table.items()
+             if len(v) == 1 and v.isalnum()}
+    for cp in sorted(known):
+        off = cp - ord(known[cp])
+        for step in (1, -1):
+            n = cp + step
+            while n not in known and 0x0100 < n < 0x2000 and abs(n - cp) <= 8:
+                ch = n - off
+                if not (0x20 <= ch <= 0x7E) or not chr(ch).isalnum():
+                    break
+                table.setdefault(chr(n), chr(ch))
+                filled += 1
+                n += step
+    print(f'filled {filled} code points inside known runs')
     table.update(LIGATURE)
 
     total = sum(bad.values())

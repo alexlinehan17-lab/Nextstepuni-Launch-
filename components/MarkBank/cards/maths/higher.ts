@@ -42,8 +42,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2021-HL-paper-p007-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p007-i0.png",
-          "srcHash": "2821c1e729bfe4a45d83956ae25dfb52",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q1(b), typeset as the State Examinations Commission set it. It reads: −5 + 12i = (a + bi)² a² + 2abi−b² Re: a²−b² = −5 Im: 2ab = 12 ∴ b = a²−( = −5 a⁴ + 5a²−36 = 0 (a² + 9)(a²−4) = 0 ∴a = ±2 and b = ±3 Answer: 2 + 3i, −2 −3i OR r = √5² + 12² = 13 5 so cos 𝜃= − tan 𝜃= − (−5 + 12i) = [13(cos(𝜃+ 2n𝜋) + isin(𝜃+ 2n𝜋))] 𝜃 𝜃 2 + n𝜋) + isin ( 2 + n𝜋)) = √13 (cos ( 𝜃 2 sin²( 2) = 1 −cos 𝜃= 1 + 𝜃 𝜃 So sin ( 2) = 2) = √13 and so cos ( √13 𝜃 𝜃 2) + isin ( 2)) n = 0: √13 (cos ( = √13 ( √13 + i √13)",
+          "srcHash": "6b6725779f552b1ba180054cb6a7ca42",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q1(b), typeset as the State Examinations Commission set it. It reads: −5 + 12i = (a + bi)² a² + 2abi−b² Re: a²−b² = −5 Im: 2ab = 12 ∴ b = 6/a a2−( 6/a) 2 = −5 a⁴ + 5a²−36 = 0 (a² + 9)(a²−4) = 0 ∴a = ±2 and b = ±3 Answer: 2 + 3i, −2 −3i OR r = √5² + 12² = 13 tan 𝜃= − 12/5 so cos 𝜃= − 5/13 (−5 + 12i) 1/2 = [13(cos(𝜃+ 2n𝜋) + isin(𝜃+ 2n𝜋))] = √13 (cos (/2 + 𝜃 n𝜋) + isin (/2 + 𝜃 n𝜋)) 2 sin2( 𝜃/2) = 1 −cos 𝜃= 1 + 5/13 So sin (/2) = 𝜃 3/√13 3/√13 and so cos (/2) = 𝜃 2/√13 2/√13 n = 0: √13 (co",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -63,8 +63,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2021-HL-paper-p008-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p008-i0.png",
-          "srcHash": "60ca166a59e8ade8aff98a9327898bb6",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q1(c), typeset as the State Examinations Commission set it. It reads: z³ = r(cos𝜃+ i sin𝜃) z = (r(cos𝜃+ isin𝜃)) 𝜋+2n𝜋 𝜋+2n𝜋 ) + isin = 2 (cos 𝜋 𝜋 3 + isin 3) = 1 + √3i n = 0: z = 2 (cos 3𝜋 3𝜋 n = 1: z = 2 (cos 3 + isin 3) = −2 5𝜋 5𝜋 3 + isin 3) = 1 −√3i n = 2: z = 2 (cos",
+          "srcHash": "b4dccdfabae7bec59de52e26175176fa",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q1(c), typeset as the State Examinations Commission set it. It reads: z³ = r(cos𝜃+ i sin𝜃) z = (r(cos𝜃+ isin𝜃)) 1/3 = 2 (cos 𝜋+2n𝜋/3 + isin )/3 𝜋+2n𝜋 n = 0: z = 2 (cos 𝜋/3 + isin 𝜋/3) = 1 + √3i n = 1: z = 2 (cos 3𝜋/3 + isin 3𝜋/3) = −2 n = 2: z = 2 (cos 5𝜋/3 + isin 5𝜋/3) = 1 −√3i",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -106,7 +106,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p010-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p010-i0.png",
           "srcHash": "875b20ab6cbef12e2e292fd43bb67c0f",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q2(b), typeset as the State Examinations Commission set it. It reads: f(−4) = 0 (−4)³ + q(−4)²−22(−4) + 56 = 0 −64 + 16q + 88 + 56 = 0 16q + 80 = 0 16q = −80 q = −5 x³−5x²−22x + 56 = 0 x²(x + 4) −9x(x + 4) + 14(x + 4) = 0 (x²−9x + 14)(x + 4) = 0 (x−2)(x−7)(x + 4) = 0 Roots = (−4, 2, 7) OR x² −9x + 14 √x³−5x²−22x + 56 x + 4 x³ + 4x² −9x²−22x + 56 −9x²−36x 14x + 56 14x + 56 Remainder = 0, ∴ q = −5 Roots = (−4, 2, 7)",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q2(b), typeset as the State Examinations Commission set it. It reads: f(−4) = 0 (−4)³ + q(−4)²−22(−4) + 56 = 0 −64 + 16q + 88 + 56 = 0 16q + 80 = 0 16q = −80 q = −5 x³−5x²−22x + 56 = 0 x²(x + 4) −9x(x + 4) + 14(x + 4) = 0 (x²−9x + 14)(x + 4) = 0 (x−2)(x−7)(x + 4) = 0 Roots = (−4, 2, 7) OR x + 4 x2 −9x + 14/√x3−5x2−22x + 56 x3 + 4x2/−9x2−22x + 56 −9x2−36x/14x + 56 14x + 56/0 Remainder = 0, ∴ q = −5 Roots = (−4, 2, 7)",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -126,8 +126,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2021-HL-paper-p011-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p011-i0.png",
-          "srcHash": "22d83fffc25cd98448b47e8495bd7788",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q3(a), typeset as the State Examinations Commission set it. It reads: xz = 2√2 yz = 8√6 xy = 4√3 ⇒x²y²z² = (2√2)(8√6)( 4√3) ⇒x²y²z² = 384 ⇒xyz = √384 = 8√6 [cm³] OR xand z = 2√2 y = 4√3 x)(2√2 ⇒(4√3 x) = 8√6 ⇒x = 1 cm ⇒y = 4√3 cm ⇒z = 2√2 cm ∴xyz = 8√6 [cm³]",
+          "srcHash": "4cb1c0884fceb82284e4d7542dcbc7ed",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q3(a), typeset as the State Examinations Commission set it. It reads: xz = 2√2 yz = 8√6 xy = 4√3 y = 4√3/x and z = 2√2/x x)(2√2 x/⇒(4√3 and x) = 8√6 x ⇒(4√3 x)(2√2/x) = 8√6 ⇒x = 1 cm ⇒z = 2√2 cm",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -147,8 +147,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2021-HL-paper-p011-i1",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p011-i1.png",
-          "srcHash": "bce6fc7dd36d070f574cd153d2463840",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q3(b)(i), typeset as the State Examinations Commission set it. It reads: 3x² + 8x−35 = 0 (3x−7)(x + 5) = 0 x = 7 3 x = −5 OR −8±√8²−4(3)(−35) Roots = 2(3) x = 7 3 x = −5",
+          "srcHash": "412b8045379426be1f009c6510b5b80d",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q3(b)(i), typeset as the State Examinations Commission set it. It reads: 3x² + 8x−35 = 0 (3x−7)(x + 5) = 0 x = 7/3 x = −5 OR/−8±√82−4(3)(−35) Roots = −8±√82−4(3)(−35)/2(3) x = 7/3 x = −5",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -169,7 +169,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p012-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p012-i0.png",
           "srcHash": "485e10ef34dc6a63492ed24c93a9611b",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q3(b)(ii), typeset as the State Examinations Commission set it. It reads: 3. (3^m)² + 8(3^m) −35 = 0 [as 3^m > 0, then 3^m ≠ −5, so:] 3^m = 7 log33^m = log3(7 3) m = log3(7 3) = log37 −log33 = log37 −1",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q3(b)(ii), typeset as the State Examinations Commission set it. It reads: 3. (3^m)² + 8(3^m) −35 = 0 [as 3^m > 0, then 3^m ≠ −5, so:] 3m = 7/3 log33m = log3(7/3) m = log3(7/3) = log₃7 −log₃3 = log₃7 −1",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -211,7 +211,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p013-i1",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p013-i1.png",
           "srcHash": "1f372df6c4d86119d7cab5d7a3e4e2f8",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q4(b)(i), typeset as the State Examinations Commission set it. It reads: Tn = p + (n−1)(7) Tn = p + 7n−7",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q4(b)(i), typeset as the State Examinations Commission set it. It reads: Tₙ = p + (n−1)(7) Tₙ = p + 7n−7",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -295,7 +295,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p016-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p016-i0.png",
           "srcHash": "d0aa4c55c7f78b531ae835c04e787802",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q5(b), typeset as the State Examinations Commission set it. It reads: h′(x) = 4cos2x 6) = 4 cos (𝜋 6) = 4cos2 (𝜋 h′(𝜋 3) = 2 = mT 6) = 2 sin (𝜋 6) = 2sin2 (𝜋 h(𝜋 3) = √3 (𝜋 6 , √3) m = 2 y−√3 = 2 (x−𝜋 6) x = 0 ⇒y−√3 = 2 (−𝜋 6) y = √3 −𝜋 3 = 0·6848 … ∴k = 0·68 [2 D.P.] OR 𝜋 6, √3) and slope = 2, then: Finds ( 𝜋 6) + k y = mx + c implies √3 = 2 ( 𝜋 i.e. k = √3 − = 0·6848 … = 0·68 [2 D.P.]",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q5(b), typeset as the State Examinations Commission set it. It reads: h′(x) = 4cos2x h′(𝜋/6) = 4cos2 (𝜋/6) = 4 cos (𝜋/3) h(𝜋/6) = 2sin2 (𝜋/6) = 2 sin (𝜋/3) = √3 (𝜋/6 , √3) m = 2 y−√3 = 2 (x−𝜋/6) x = 0 ⇒y−√3 = 2 (−𝜋/6) y = √3 −𝜋/3 = 0·6848 … ∴k = 0·68 [2 D.P.] OR Finds (/6, 𝜋 √3) and slope = 2, then: y = i.e. k = mx + c/√3 − implies 𝜋 3 √3 = 2 ( 𝜋 6) + k y = mx + c implies √3 = 2 (/6) + 𝜋 k i.e. k = √3 − 𝜋/3 = 0·6848 … = 0·68 [2 D.P.]",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -337,7 +337,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p018-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p018-i0.png",
           "srcHash": "8cd0f5e62ad21c3ffa854c3cfac357bf",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q6(b), typeset as the State Examinations Commission set it. It reads: h′′(x) = −4x + 4 = 0 at max/min of h′(x) ∴x = 1 h′′′(x) = −4 < 0 , i.e. max h′(1) = −2(1)² + 4(1) + 6 = 8 OR [Quadratic with negative x², so max occurs halfway between the roots:] −1 + 3 = 1 x = h′(1) = −2(1)² + 4(1) + 6 = 8 OR h′(x) = −2(x²−2x−3) = −2(x²−2x + 1 −1 −3) = −2((x−1)²−4) = −2(x−1)² + 8 ∴ max positive slope = 8",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q6(b), typeset as the State Examinations Commission set it. It reads: h′′(x) = −4x + 4 = 0 at max/min of h′(x) ∴x = 1 h′′′(x) = −4 < 0 , i.e. max h′(1) = −2(1)² + 4(1) + 6 = 8 OR [Quadratic with negative x², so max occurs halfway between the roots:] x = −1 + 3/2 = 1 h′(1) = −2(1)² + 4(1) + 6 = 8 OR h′(x) = −2(x²−2x−3) = −2(x²−2x + 1 −1 −3) = −2((x−1)²−4) = −2(x−1)² + 8 ∴ max positive slope = 8",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -357,8 +357,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2021-HL-paper-p018-i1",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p018-i1.png",
-          "srcHash": "9b02cea919bbeeeb1bde3857ba6999e0",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q6(c), typeset as the State Examinations Commission set it. It reads: h(x) = ∫h′(x) dx 3 + 4x² h(x) = −2x³ 2 + 6x + C (0, −2) ∈h(x): −2 = −0 + 0 + 0 + C ⇒C = −2 ∴h(x) = −2x³ 3 + 2x² + 6x−2",
+          "srcHash": "4b90b92ba4ccfa65ce9f1215a1a279c1",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q6(c), typeset as the State Examinations Commission set it. It reads: h(x) = ∫h′(x) dx h(x) = −2x3/3 + 4x2/2 + 6x + C (0, −2) ∈h(x): −2 = −0 + 0 + 0 + C ⇒C = −2 ∴h(x) = −2x3/3 + 2x2 + 6x−2",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -379,7 +379,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p019-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p019-i0.png",
           "srcHash": "ee6d6ca7aa4b7d2730758736c23a2c3b",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q7(a)(i), typeset as the State Examinations Commission set it. It reads: Swing Length 2 729 45 81 20 59049 20 6561 of Arc OR Answers as decimals: 40∙5, 32∙805, and 29∙5245",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q7(a)(i), typeset as the State Examinations Commission set it. It reads: Swing Length of (cm) Arc 45 81/2 729/20 6561/20 59049/20 (cm) 2 20/OR 20 20 Answers as decimals: 40∙5, 32∙805, and 29∙5245",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -400,7 +400,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p019-i1",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p019-i1.png",
           "srcHash": "8f6a86be71b49cf92f4803f7db51867a",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q7(a)(ii), typeset as the State Examinations Commission set it. It reads: Tn = 45(0·9)^(n−1) T25 = 45(0·9)²⁴ = 3·5894 … = 3·6 cm [1 D.P.]",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q7(a)(ii), typeset as the State Examinations Commission set it. It reads: Tₙ = 45(0·9)^(n−1) T₂₅ = 45(0·9)²⁴ = 3·5894 … = 3·6 cm [1 D.P.]",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -420,8 +420,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2021-HL-paper-p019-i2",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p019-i2.png",
-          "srcHash": "2505e5b738b58f23802e23a1634e7c3a",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q7(a)(iii), typeset as the State Examinations Commission set it. It reads: S40 = 45(1 −0·9⁴⁰) 1 −0·9 S40 = 443·3486 … = 443 [cm] [∈ℕ]",
+          "srcHash": "7ec49d33f21d19bd290f16da6d29e7eb",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q7(a)(iii), typeset as the State Examinations Commission set it. It reads: (a) (iii) S40 = 45(1 −0·940)/1 −0·9 S₄₀ = 443·3486 … = 443 [cm] [∈ℕ]",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -442,7 +442,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p020-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p020-i0.png",
           "srcHash": "3d893363a5715e32fdb1a75015d5eec5",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q7(a)(iv), typeset as the State Examinations Commission set it. It reads: 45(0·9)^(n−1) = 2 (0·9)^(n−1) = 2 n−1 = log0·9(2 45) n−1 = 29·5510 … n = 30·5510 … ∴p = 31",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q7(a)(iv), typeset as the State Examinations Commission set it. It reads: 45(0·9)^(n−1) = 2 (0·9)n−1 = 2/45 n−1 = log0·9(2/45) n−1 = 29·5510 … n = 30·5510 … ∴p = 31",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -462,8 +462,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2021-HL-paper-p020-i1",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p020-i1.png",
-          "srcHash": "872535b52b30943279af91747f3e9af0",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q7(b)(i), typeset as the State Examinations Commission set it. It reads: 𝜃 360°) [degrees] l = 2𝜋r( 𝜃 2𝜋(100) ( 360°) = 45 𝜃= 45 × 360° = 25·7831 … ° 200𝜋 = 26 [°] [∈ℕ] OR l = r𝜃 [radians] 100𝜃= 45 𝜃= 0·45 radians 𝜋)° = 25·7831 … ° 𝜃= 0·45 ( = 26 [°] [∈ℕ]",
+          "srcHash": "ce1a6736c77b602c2c413c6aa3566db6",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q7(b)(i), typeset as the State Examinations Commission set it. It reads: (b) (i) l = 2𝜋r( 𝜃/360°) [degrees] 2𝜋(100) (/360°) = 𝜃 45 𝜃= 45 × 360°/200𝜋 = 25·7831 … ° = 26 [°] [∈ℕ] OR l = r𝜃 [radians] 100𝜃= 45 𝜃= 0·45 radians 𝜃= 0·45 (/𝜋)° 180 = 25·7831 … ° = 26 [°] [∈ℕ]",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -483,8 +483,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2021-HL-paper-p021-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p021-i0.png",
-          "srcHash": "83d38f91b499276caf7e9e3b61da768f",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q7(b)(ii), typeset as the State Examinations Commission set it. It reads: 26 + 26(0·9) + 26(0·9)² + 26(0·9)³ + ⋯ 1 −0·9 = 260 [°] S∞=",
+          "srcHash": "7f4bf67ea2b1882b5c3ddbcaaf8f3e68",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q7(b)(ii), typeset as the State Examinations Commission set it. It reads: 26 + 26(0·9) + 26(0·9)² + 26(0·9)³ + ⋯ S∞= 26/1 −0·9 = 260 [°]",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -505,7 +505,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p021-i1",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p021-i1.png",
           "srcHash": "11596b8c1d7d11970c48dd642675da4f",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q7(b)(iii), typeset as the State Examinations Commission set it. It reads: (iii) [Half total distance and half accumulated angle occur at same point]: 1−0·9 = 450 cm Distance: S∞= Half = 225 [cm] OR 26(1 −0·9ⁿ) = 260° 1 −0·9 1 −0·9ⁿ= 1 −0·9ⁿ= −1 n = 6·5788 … 45(1 −0·9^(6·5788)) 1 −0·9 = 224·9996 … = 225 [cm] [∈ℕ] OR 260° Half accumulated angle = = 130° 130° So distance = 2𝜋(100) ( 360°) = 226∙89 … = 227 [cm] [∈ℕ]",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q7(b)(iii), typeset as the State Examinations Commission set it. It reads: (iii) [Half total distance and half accumulated angle occur at same point]: Distance: S∞= 45/1−0·9 = 450 cm Half = 225 [cm] OR 26(1 −0·9n)/1 −0·9 = 260°/2 1 −0·9n = 1/2 −0·9n = −1/2 n = 6·5788 … 45(1 −0·96·5788)/1 −0·9 = 224·9996 … = 225 [cm] [∈ℕ] OR Half accumulated angle = 260°/2 = 130° So distance = 2𝜋(100) (/360°) 130° = 226∙89 … = 227 [cm] [∈ℕ]",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -515,7 +515,7 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p1-q8-a-i", topicId: "maths-5-2", conceptId: "part",
+    id: "maths-2021-hl-p1-q8-a-i", topicId: "maths-5-1", conceptId: "part",
     section: "B", questionRef: "2021 HL Paper 1 Q8(a)(i)",
     questionText: "Use h(10) = 30 to show that p = 3·6",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -673,7 +673,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p026-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p026-i0.png",
           "srcHash": "7c48e7eeeec19dd33264190811f82ed6",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q9(b), typeset as the State Examinations Commission set it. It reads: 82 = 75e⁽−0·081)(t) + 20 62 = 75e^(−0.·081t) 75 = e−0·081t 75) = −0·081t ln ( t = 2·3500 … mins t = 2 mins 21 secs [nearest sec]",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q9(b), typeset as the State Examinations Commission set it. It reads: 82 = 75e⁽−0·081)(t) + 20 62 = 75e^(−0.·081t) 62/75 = e−0·081t ln (/75) = 62 −0·081t t = 2·3500 … mins t = 2 mins 21 secs [nearest sec]",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -694,7 +694,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p026-i1",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p026-i1.png",
           "srcHash": "183d1c0281f5c5e9c4e339d3f9863413",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q9(c), typeset as the State Examinations Commission set it. It reads: T(t) = 75e^(−0.081t) + 20 T′(t) = −6·075e^(−0·081t) −6·075e^(−0·081t) = −4·05 e−0·081t = 3) −0·081t = ln ( t = 5·0057 … T(5 ∙0057 … ) = 75e−0·081(5∙0057… ) + 20 = 70 [℃]",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q9(c), typeset as the State Examinations Commission set it. It reads: T(t) = 75e^(−0.081t) + 20 T′(t) = −6·075e^(−0·081t) −6·075e^(−0·081t) = −4·05 e−0·081t = 2/3 −0·081t = ln (/3) 2 t = 5·0057 … T(5 ∙0057 … ) = 75e−0·081(5∙0057… ) + 20 = 70 [℃]",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -714,8 +714,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2021-HL-paper-p027-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p027-i0.png",
-          "srcHash": "1d9fa465edb934c4875d6d7e0ba3d8a5",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q9(d), typeset as the State Examinations Commission set it. It reads: dV dt = − 64 = x³ so x = V = dV dx = 3x² dV dV dt = dt ÷ 20 ÷ 3x² = − = − 60x² dt = − At x = 60(0·25)2 4 , 15 cm/sec = −",
+          "srcHash": "59dd90f399d69c36dccc30f085bfd7cc",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q9(d), typeset as the State Examinations Commission set it. It reads: (d) dV/dt = − 1/20 V = 1/64 = x3 so x = 1/4 and dV/dx = 3x2 dx/dt = dV/dt ÷ dV/dx = − 1/20 ÷ 3x2 = − 1/60x2 dt = − At x = 4 , = − 4/15 cm/sec",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -736,7 +736,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p028-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p028-i0.png",
           "srcHash": "2369c68c016f77b7966ac06ab3fc9878",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q10(a)(i), typeset as the State Examinations Commission set it. It reads: V(t) = 60 + 41t−3t² = 0 (−t + 15)(3t + 4) = 0 t = 15 days OR −41±√41²−4(−3)(60) = 2(−3) −41±√2401 = −6 = 15, as t > 0",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q10(a)(i), typeset as the State Examinations Commission set it. It reads: V(t) = 60 + 41t−3t² = 0 (−t + 15)(3t + 4) = 0 t = 15 days OR/−41±√412−4(−3)(60) t = −41±√412−4(−3)(60)/2(−3) 2(−3)/−41±√2401 = −41±√2401/−6 = 15, as t > 0",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -778,7 +778,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p028-i2",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p028-i2.png",
           "srcHash": "7f586c90b1970e9cd44df67efe2397ea",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q10(a)(iii), typeset as the State Examinations Commission set it. It reads: V′(t) = 0 41 −6t = 0 41 = 6t 6 or 6∙8333 … t = [V′′(t) = −6 < 0, so max]",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q10(a)(iii), typeset as the State Examinations Commission set it. It reads: V′(t) = 0 41 −6t = 0 41 = 6t t = 41/6 or 6∙8333 … [V′′(t) = −6 < 0, so max]",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -799,7 +799,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p028-i3",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p028-i3.png",
           "srcHash": "2c3230655894ccd82d6f7c2a94ad87d4",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q10(a)(iv), typeset as the State Examinations Commission set it. It reads: 6) 6) 6)−3 ( = 60 + 41 ( V( = 200∙0833 … = 200 [litres] [nearest litre]",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q10(a)(iv), typeset as the State Examinations Commission set it. It reads: (a) (iv) V( 41/6) = 60 + 41 (/6)−3 41 (/6) 41 2 = 200∙0833 … = 200 [litres] [nearest litre]",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -820,7 +820,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p029-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p029-i0.png",
           "srcHash": "d7e9ef0460ac967f2ca685320e25abf7",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q10(b)(i), typeset as the State Examinations Commission set it. It reads: I(t) = 1·5 + sin 𝜋t sin A ≥ −1 So I(t) ≥ 0·5 Radius increases every year, as I(t) > 0",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q10(b)(i), typeset as the State Examinations Commission set it. It reads: (b) (i) I(t) = 1·5 + sin 𝜋t/5 sin A ≥ −1 So I(t) ≥ 0·5 Radius increases every year, as I(t) > 0",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -840,8 +840,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2021-HL-paper-p029-i1",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p029-i1.png",
-          "srcHash": "5bc88096d919374c163dfb62993fa768",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q10(b)(ii), typeset as the State Examinations Commission set it. It reads: 6𝜋 Show: I(6) = 1·5 + sin 5 = 0·9122 … 5𝜋 I(5) = 1·5 + sin 5 = 1·5 I(6) < I(5) Explanation: It grew less in year 6 than in year 5, or similar",
+          "srcHash": "653ed55146c65bf6397c819c858ab042",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q10(b)(ii), typeset as the State Examinations Commission set it. It reads: (b) (ii) Show: I(6) = 1·5 + sin 6𝜋/5 = 0·9122 … I(5) = 1·5 + sin 5𝜋/5 = 1·5 I(6) < I(5) Explanation: It grew less in year 6 than in year 5, or similar",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -861,8 +861,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2021-HL-paper-p029-i2",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p029-i2.png",
-          "srcHash": "2e3b9e966ffb0963ba48001ef033c543",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q10(b)(iii), typeset as the State Examinations Commission set it. It reads: r(2) = r(1) + I(2) r(2) = r(0) + I(1) + I(2) 2𝜋 𝜋 r(2) = 10 + 1·5 + sin 5 + 1·5 + sin 2𝜋 𝜋 r(2) = 13 + sin 5 + sin",
+          "srcHash": "f8bd669d4a3d936f0cd79a1767f7c729",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q10(b)(iii), typeset as the State Examinations Commission set it. It reads: r(2) = r(1) + I(2) r(2) = r(0) + I(1) + I(2) r(2) = 10 + 1·5 + sin 𝜋/5 + 1·5 + sin 2𝜋/5 r(2) = 13 + sin 𝜋/5 + sin 2𝜋/5",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -883,7 +883,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p030-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p030-i0.png",
           "srcHash": "967f8a8a15420883e969312ca5662aa4",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q10(b)(iv), typeset as the State Examinations Commission set it. It reads: 𝜋 r(10) = 10 + 10(1·5) + sin 10𝜋 2𝜋 +sin 5 + ⋯+ sin = 10 + 15 + 0 = 25 cm V2 = kV1 𝜋25²h = k𝜋10²h 625 = 100k k = 6·25",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q10(b)(iv), typeset as the State Examinations Commission set it. It reads: (b) (iv) r(10) = 10 + 10(1·5) + sin 𝜋/5 +sin 2𝜋/5 + ⋯+ sin 10𝜋/5 = 10 + 15 + 0 = 25 cm V₂ = kV₁ 𝜋25²h = k𝜋10²h 625 = 100k k = 6·25",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -925,7 +925,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p037-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p037-i0.png",
           "srcHash": "9f84dd8093c948e61ae49bca9e0e77fd",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q2(c)(i), typeset as the State Examinations Commission set it. It reads: |AC| = √12² + 9² = 15 3(15) = 10 |AD| = OR (2 × 16 + 1 × 4 , 2 × 11 + 1 × 2 ) 2 + 1 2 + 1 = D(12, 8) |AD| = √(12 −8)² + (8 −2)² = 10 OR Let D be (x, y). Then 3x−1 × 4 3y−1 × 2 3−1 ) = (16, 11) 3−1, ( So D = (x, y) = (12, 8) |AD| = √8² + 6² = 10",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q2(i), typeset as the State Examinations Commission set it. It reads: Q2 (c) Model |AC| = Solution – 30/√122 + 92 = Marks 15 |AD| = 2/3(15) = 10 OR (2 ,/2 + 1 2 + 1 ) = D(12, 8) |AD| = √(12 −8)² + (8 −2)² = 10 OR Let D be (x, y). Then ( 3x−1 × 4/3−1, 3y−1 × 2/3−1 ) = (16, 11) So D = (x, y) = (12, 8) |AD| = √8² + 6² = 10",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -946,7 +946,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p036-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p036-i0.png",
           "srcHash": "4844f60ad0498e6ad1b6ff96094baa35",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q2(a), typeset as the State Examinations Commission set it. It reads: 3k−6 (2k + 2 ) + 2 = 0 ⇒3k−4k−4 + 2 = 0 ⇒k = −2",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q2(a), typeset as the State Examinations Commission set it. It reads: (a) 3k−6 (2k + /3 2 ) + 2 = 0 ⇒3k−4k−4 + 2 = 0 ⇒k = −2",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -966,8 +966,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2021-HL-paper-p036-i1",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p036-i1.png",
-          "srcHash": "aeb4d4aad91f1425e629ca9a55f6b39f",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q2(b), typeset as the State Examinations Commission set it. It reads: s−2t−8 = 0 so s = 2t + 8 |4s + 3t + 6| √42 + 32 = 1 |8t + 32 + 3t + 6| = 1 |11t + 38| = 5 11t + 38 = 5 11t + 38 = −5 ∴t = − ∴t = −3 ∴s = ∴s = 2 OR |4s + 3t + 6| √42 + 32 = 1 |4s + 3t + 6| = 5 4s + 3t = −1 4s + 3t = −11 Intersection of either with s−2t = 8: 11 , t = − s = s = 2, t = −3",
+          "srcHash": "e08a2a66dac17c4e1fe1b8c0346a9746",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q2(b), typeset as the State Examinations Commission set it. It reads: s−2t−8 = 0 so s = 2t + 8 |4s + 3t + 6| √42 + 32 = 1 |8t + 32 + 3t + 6|/5 = 1 |11t + 38| = 5 11t + 38 = 5 11t + 38 = −5 ∴ t = −3 or ∴ t = − 43/11 ∴ s = 2 or ∴ s = 2/11 OR |4s + 3t + 6| √42 + 32 = 1 |4s + 3t + 6| = 5 4s + 3t = −1 4s + 3t = −11 Intersection of either with s−2t = 8: s = 2, t = −3 or s = 2/11 , t = − 43/11",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1009,7 +1009,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p038-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p038-i0.png",
           "srcHash": "d5681fc80e0108a623c09331cb47509e",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q3(a), typeset as the State Examinations Commission set it. It reads: |DB| = 2(4√3) = 2√3 |CD| = √4² + 2² = √20 or 2√5 Radius = |CB| 2 + (2√3) 2 = 4√2 = √(2√5)",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q3(a), typeset as the State Examinations Commission set it. It reads: (a) |DB| = 1/2(4√3) = 2√3 |CD| = √4² + 2² = √20 or 2√5 Radius = |CB| 2 + (2√3) 2 = 4√2 = √(2√5)",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1030,7 +1030,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p038-i1",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p038-i1.png",
           "srcHash": "11939a6ece2076663280c6bfecd4629c",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q3(b)(i), typeset as the State Examinations Commission set it. It reads: x² + y² + 4x−2y−95 = 0: Centre (−2, 1). Radius = 10 (x−7)² + (y−13)² = 25: Centre (7, 13). Radius = 5 r1 + r2 = 15 Distance between the two centres: √12² + 9² = √225 = 15 Touch Externally since r1 + r2 = distance between two centres.",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q3(b)(i), typeset as the State Examinations Commission set it. It reads: x² + y² + 4x−2y−95 = 0: Centre (−2, 1). Radius = 10 (x−7)² + (y−13)² = 25: Centre (7, 13). Radius = 5 r₁ + r₂ = 15 Distance/√122 + 92 = between the/√225 = two 15 centres: Touch Externally since r₁ + r₂ = distance between two centres.",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1071,8 +1071,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2021-HL-paper-p040-i1",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p040-i1.png",
-          "srcHash": "bc84cbf4e2cb38336e6c2d822dc44ea6",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q4(a)(ii), typeset as the State Examinations Commission set it. It reads: cos2A = cos²A−sin²A 2−sin^(2𝜃) ⇒cos𝜃= cos^(2𝜃) 𝜃 2 = using a right-angled triangle cos √5 = cos𝜃= ( −( √5) √5) OR 2−sin^(2𝜃) cos𝜃= cos^(2𝜃) 2)−sin^(2𝜃) = (1 −sin^(2𝜃) = 1 −2sin^(2𝜃) = = 1 −2 ( √5)",
+          "srcHash": "6ab9df1326de79e46b24065287f28844",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q4(a)(ii), typeset as the State Examinations Commission set it. It reads: cos2A = cos²A−sin²A 2−sin^(2𝜃) ⇒cos𝜃= cos^(2𝜃) using a right-angled triangle cos 𝜃/2 = 2/√5 2/√5 cos𝜃= (/√5) 2 2 −( 1/√5) 2 = 3/5 OR cos𝜃= cos^(2𝜃) = (1 −sin^(2𝜃) = 1 −2sin2𝜃/2 = 1 −2 (/√5) 1 2 = 3/5",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1093,7 +1093,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p041-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p041-i0.png",
           "srcHash": "693b1dfc9ce39527658a18976d716172",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q4(b), typeset as the State Examinations Commission set it. It reads: tan(angle) = −√3, so reference angle = 60° 150° ≤B + 150° ≤510° In Quad’s 2 or 4, so angles are 30° or 480° B + 150 = 300 or B + 150 = 480 B = 150° or B = 330° So OR tanB + tan150 tan(B + 150) = 1−tanBtan150 tanB− ¹ √3 = √3)tanB = − √3 1 + (¹ tan B− √3 = − √3 −tan B So 2 tan B = − √3 , i.e. tan B = − So √3 Reference angle = 30° In Quad’s 2 or 4, so B = 150°orB = 330°",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q4(b), typeset as the State Examinations Commission set it. It reads: tan(angle) = −√3, so reference angle = 60° 150° ≤B + 150° ≤510° In Quad’s 2 or 4, so angles are 30° or 480° B + 150 = 300 or B + 150 = 480 B = 150° or B = 330° So OR tan(B + 150) = tanB + tan150/1−tanBtan150 = tanB− 1/√3 1/√3 = − √3 = √3/1 + (1 √3)tanB = − √3 = 1 + (1/√3)tanB = − √3 So tan B− 1/√3 = − √3 −tan B So 2 tan B = − 2/√3 2/√3 , i.e. tan B = − 1/√3 1/√3 Reference angle = 30° In Quad’s 2 or 4, so B = 150°orB ",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1113,8 +1113,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2021-HL-paper-p042-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p042-i0.png",
-          "srcHash": "c298c1dbff4039563133137a8c88a894",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q5(a)(i), typeset as the State Examinations Commission set it. It reads: 3𝜋r³ Vspℎere = 3𝜋r²h Vcone = 3𝜋r²h 3𝜋r³−2. Vspace = 3𝜋r²r 3𝜋r³− = 3𝜋r³ = = 2 × Vspℎere",
+          "srcHash": "fb122f2915bb19c0e1408265e822f695",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q5(a)(i), typeset as the State Examinations Commission set it. It reads: (a) (i) Vspℎere = 4/3𝜋r3 Vcone = 1/3𝜋r2h Vspace = 4/3𝜋r3−2. 1/3𝜋r2h = 4/3𝜋r3− 2/3𝜋r2r = 2/3𝜋r3 = 1/2 × Vspℎere",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1135,7 +1135,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p042-i1",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p042-i1.png",
           "srcHash": "52943d846421ba7953ad05e569c5ac04",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q5(a)(ii), typeset as the State Examinations Commission set it. It reads: 3𝜋r³ = 3𝜋 Vc = 2r³ = 686 r³ = 343 r = 7 cm",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q5(a)(ii), typeset as the State Examinations Commission set it. It reads: (ii) Vc = 2/3𝜋r3 = 686/3𝜋 2r³ = 686 r³ = 343 r = 7 cm",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1156,7 +1156,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p043-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p043-i0.png",
           "srcHash": "85d11e10b8692d9801d8bf02a1ff87c5",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q5(b), typeset as the State Examinations Commission set it. It reads: 60 × 1∙75 = 105 km travelled by van until 10: 45. 105 + 60t = 95t So t = 3 hours 10: 45 + 3 hr = 13: 45 OR 95 × (t−1∙75) = 60t 4 hours ⇒ t = 4 9: 00 + 4 4 hr = 13: 45 OR Let distance travelled = x km 60 − x 95 = 7 x = 285 km 95 = 3 hours ⇒ t = 10: 45 + 3 hr = 13: 45 OR 1∙75 × 60 95−60 = 3 hours. 10: 45 + 3 = 13: 45 OR Dist A (km) Dist B (km) Time 10: 45 1·75 × 60 = 105 105 + 60 11: 45 = 165 12: 45 165 + 60 95 + 95 = ",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q5(b), typeset as the State Examinations Commission set it. It reads: 60 × 1∙75 = 105 km travelled by van until 10: 45. 105 + 60t = 95t So t = 3 hours 10: 45 + 3 hr = 13: 45 OR 95 × (t−1∙75) = 60t ⇒ t = 4 3/4 hours 9: 00 + 4 3/4 hr = 13: 45 OR Let distance travelled = x km x/60 − x/95 = 7/4 x = 285 km ⇒ t = 285/95 = 3 hours 10: 45 + 3 hr = 13: 45 OR 1∙75 × 60/95−60 = 3 hours. 10: 45 + 3 = 13: 45 OR Dist A (km) Dist B (km) Time 10: 45 1·75 × 60 = 105 105 + 60 11: 45 = 165 12: 45 165 + 6",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1176,8 +1176,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2021-HL-paper-p044-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p044-i0.png",
-          "srcHash": "e7192babd072a9436bb4ad899c63149e",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q6(a), typeset as the State Examinations Commission set it. It reads: Step A (Given / Diagram) A′ A B′ C′ C′′ B′′ B C Given: ABC and A′B′C′ [similar triangles] |AB| |BC| |CA| |A′B′| = |B′C′| = |C′A′| .] [To Prove: Step B (Construction / Diagram): Construction: Mark B′′ on [AB] such that |AB′′| = |A′B′|. Mark C′′ on [AC] such that |AC′′| = |A′C′|. [Join B′′ to C′′.] Step C: Proof: Δ AB′′C′′ is congruent to Δ A′B′C′ Reason: SAS Step D: ∴ B′′C′′|| BC Reason: corresponding angles, |∠ AB′′C",
+          "srcHash": "839362e356e89630886d4a1af6b1e6a3",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q6(a), typeset as the State Examinations Commission set it. It reads: Step A (Given / Diagram) A′ A B′ C′ C′′ B′′ B C Given: ABC and A′B′C′ [similar triangles] [To Prove: |AB|/|A′B′| = |BC|/|B′C′| = |CA|/|C′A′| .] Step B (Construction / Diagram): Construction: Mark B′′ on [AB] such that |AB′′| = |A′B′|. Mark C′′ on [AC] such that |AC′′| = |A′C′|. [Join B′′ to C′′.] Step C: Proof: Δ AB′′C′′ is congruent to Δ A′B′C′ Reason: SAS Step D: ∴ B′′C′′|| BC Reason: corresponding angles, |∠ AB′′C",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1198,7 +1198,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p045-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p045-i0.png",
           "srcHash": "c2ef48a54dcd5b959574c996c5e7c500",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q6(b), typeset as the State Examinations Commission set it. It reads: S1. |∠HBQ| = |∠HAP| .................. alternate S2. |∠QHB| = |∠PHA| .... vertically opposite S3. So triangles are similar |AH| |AP| |HB| = S4. So |QB| S5. So |AH| × |QB| = |AP| × |HB|",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q6(b), typeset as the State Examinations Commission set it. It reads: S1. |∠HBQ| = |∠HAP| .................. alternate S2. |∠QHB| = |∠PHA| .... vertically opposite S3. So triangles are similar S4. So |AH|/|HB| = |AP|/|QB| S5. So |AH| × |QB| = |AP| × |HB|",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1208,7 +1208,7 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p2-q7-a", topicId: "maths-3-4", conceptId: "total-length-course",
+    id: "maths-2021-hl-p2-q7-a", topicId: "maths-3-3", conceptId: "total-length-course",
     section: "B", questionRef: "2021 HL Paper 2 Q7(a)",
     questionText: "(a) Show that the total length of the course is 62 km",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -1229,7 +1229,28 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p2-q7-c", topicId: "maths-3-4", conceptId: "acb-116-correct-decimal-place",
+    id: "maths-2021-hl-p2-q7-b", topicId: "maths-3-3", conceptId: "average-mary-can-run-times-fast",
+    section: "B", questionRef: "2021 HL Paper 2 Q7(b)",
+    questionText: "(b) On average, Mary can run 5·6 times as fast as she can swim. It takes her 4·8 hours to complete the course. Find her average swimming speed in km/h",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    rows: [
+    { id: "maths-2021-hl-p2-q7-b-r1", kind: "anyN", verbatim: "Work of merit, for example: 4·8 −1·2 or 5·6x or 28/4 or Tswim/5∙6", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12, four parts for 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example: 4·8 −1·2 or 5·6x or 28/4 or Tswim/5∙6","4/x or 28/5·6x or 5/x 28/4 × Tswim/5∙6","An equation in one variable that can be solved to give a relevant time or speed"],"perOptionSteps":[4,4,7]} },
+    ],
+    figure: {
+          "candId": "maths-2021-HL-paper-p046-i1",
+          "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p046-i1.png",
+          "srcHash": "2c343e0f2122f07c9d0e95b1ef11baee",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q7(b), typeset as the State Examinations Commission set it.",
+          "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
+    id: "maths-2021-hl-p2-q7-c", topicId: "maths-3-3", conceptId: "acb-116-correct-decimal-place",
     section: "B", questionRef: "2021 HL Paper 2 Q7(c)",
     questionText: "Show that |∠ ACB| = 116·5°, correct to 1 decimal place",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
@@ -1240,7 +1261,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p046-i2",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p046-i2.png",
           "srcHash": "fadd0c7dd9b03c511159e971a2142a63",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q7(c), typeset as the State Examinations Commission set it. It reads: 30² = 28² + 4²−2(28)(4) cos C 282 + 42−302 cos C = 2(28)(4) cos C = − C = 116·51 … = 116·5 [1 D.P.]",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q7(c), typeset as the State Examinations Commission set it. It reads: 30² = 28² + 4²−2(28)(4) cos C cos C = 282 + 42−302/2(28)(4) cos C = − 100/224 C = 116·51 … = 116·5 [1 D.P.]",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1261,7 +1282,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p047-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p047-i0.png",
           "srcHash": "ac0b341fb5f615d96077886a4a4b74d9",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q7(d), typeset as the State Examinations Commission set it. It reads: 2A Bsin C Area = 2(28)(4)sin116·5° Area = = 50·11 … = 50·1 [km²] [1 D.P.] Or sin116·5 = sinB sin B = 0 ∙83527 … B = 56 ∙33⁰ 2(30)(4)sin56·33 Area = = 50·11 … = 50·1 [km²] [1 D.P.]",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q7(d), typeset as the State Examinations Commission set it. It reads: (d) Area = 1/2A Bsin C Area = 1/2(28)(4)sin116·5° = 50·11 … = 50·1 [km²] [1 D.P.] Or 30/sin116·5 = 28/sinB sin B = 0 ∙83527 … B = 56 ∙33⁰ Area = 1/2(30)(4)sin56·33 = 50·11 … = 50·1 [km²] [1 D.P.]",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1271,7 +1292,7 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p2-q7-e", topicId: "maths-3-4", conceptId: "shortest-distance-point-side-correct-decimal",
+    id: "maths-2021-hl-p2-q7-e", topicId: "maths-3-3", conceptId: "shortest-distance-point-side-correct-decimal",
     section: "B", questionRef: "2021 HL Paper 2 Q7(e)",
     questionText: "(e) Find the shortest distance from the point C to the side AB. Give your answer in km, correct to 1 decimal place",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
@@ -1281,8 +1302,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2021-HL-paper-p047-i1",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p047-i1.png",
-          "srcHash": "bcb87e329c98013a05d4c462d3a9db3e",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q7(e), typeset as the State Examinations Commission set it. It reads: 2 base × d Area = 2(30)d 50·1 = 50∙1 15 = 3·34 = 3·3 [km] [1 D.P.] d =",
+          "srcHash": "20920a20dcfb544c1ac4ef689345404e",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q7(e), typeset as the State Examinations Commission set it. It reads: (e) Area = 1/2 base × d 50·1 = 1/2(30)d d = 50∙1/15 = 3·34 = 3·3 [km] [1 D.P.]",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1292,7 +1313,7 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p2-q7-f", topicId: "maths-3-4", conceptId: "course-viewed-camera-tower-which-rises",
+    id: "maths-2021-hl-p2-q7-f", topicId: "maths-3-3", conceptId: "course-viewed-camera-tower-which-rises",
     section: "B", questionRef: "2021 HL Paper 2 Q7(f)",
     questionText: "The course is viewed from a camera tower which rises vertically from point A. The top of the tower is point T. The angle of elevation of T from B is 0·05^o. Find |AT |, the vertical height of the tower. Give your answer correct to the nearest metre",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -1303,7 +1324,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p047-i2",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p047-i2.png",
           "srcHash": "18c23a60f2ea15a1136ce8381b7ef914",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q7(f), typeset as the State Examinations Commission set it. It reads: tan (0·05) = x 30 × tan (0·05) = x x = 0·02617 … km = 26 [m] [∈ℕ ]",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q7(f), typeset as the State Examinations Commission set it. It reads: (f) tan (0·05) = x/30 30 × tan (0·05) = x x = 0·02617 … km = 26 [m] [∈ℕ ]",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1324,7 +1345,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p048-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p048-i0.png",
           "srcHash": "de84cee808013f216436cdb26ab9b474",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q8(a)(i), typeset as the State Examinations Commission set it. It reads: Top 10% means 90% below. P(z < 1 ∙28) = 0·8997. x−176 = 1∙28 ⇒x = 222∙08 Minimum mark of 223",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q8(a)(i), typeset as the State Examinations Commission set it. It reads: Top 10% means 90% below. P(z < 1 ∙28) = 0·8997. x−176/36 = 1∙28 ⇒x = 222∙08 Minimum mark of 223",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1345,7 +1366,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p048-i1",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p048-i1.png",
           "srcHash": "86e37416f7477f1ee6a10fd5681a7e43",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q8(a)(ii), typeset as the State Examinations Commission set it. It reads: P(165 < x < 210) 165−176 210−176 ) < z < P( = P(−0∙31 < z < 0∙94) [2 D.P.] = P(z < 0·94) −P(z > −0·31) P(z < 0∙94) = 0∙8264 P(z < −0∙31) = 1 −P(z < 0∙31) = 1 −0·6217 = 0∙3783 So answer = 0∙8264 −0∙3783 = 0∙4481 = 44∙81% of 1st years got the Distinction.",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q8(a)(ii), typeset as the State Examinations Commission set it. It reads: P(165 < x < 210) P( 165−176/36 < z < )/36 210−176 = P(−0∙31 < z < 0∙94) [2 D.P.] = P(z < 0·94) −P(z > −0·31) P(z < 0∙94) = 0∙8264 P(z < −0∙31) = 1 −P(z < 0∙31) = 1 −0·6217 = 0∙3783 So answer = 0∙8264 −0∙3783 = 0∙4481 = 44∙81% of 1st years got the Distinction.",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1366,7 +1387,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p049-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p049-i0.png",
           "srcHash": "4052ef4fc77d5dbf04ba39b1736f474a",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q8(b)(i), typeset as the State Examinations Commission set it. It reads: 19∙8−21 T = √60) = −1∙787 … (5∙2",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q8(b)(i), typeset as the State Examinations Commission set it. It reads: (b) (i) T = 19∙8−21/(5∙2 √60) = −1∙787 … (i) T = (5∙2/√60) (5∙2/√60) = −1∙787 …",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1408,7 +1429,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p050-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p050-i0.png",
           "srcHash": "ad20225e5e012a0f0644d20a858326f9",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q8(c)(i), typeset as the State Examinations Commission set it. It reads: Assuming no replacement: 21 × 22 × 23 × = 0·11518 … = 0·1152 [4 D.P.] OR Assuming replacement: 23) × ( = 0∙10420 … = 0∙1042 [4 D.P.]",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q8(c)(i), typeset as the State Examinations Commission set it. It reads: Assuming no replacement: 18/23 × 17/22 × 16/21 × 5/20 = 0·11518 … = 0·1152 [4 D.P.] OR Assuming replacement: (/23) 18 3 × 5/23 = 0∙10420 … = 0∙1042 [4 D.P.]",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1428,8 +1449,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2021-HL-paper-p050-i1",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p050-i1.png",
-          "srcHash": "7f8a643ef8c48174cadc772b96772fd3",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q8(c)(ii), typeset as the State Examinations Commission set it. It reads: ( 21)3! = 22 × 23 × 1771 = 0 · 20327 … = 0·2033 [4 D.P.] OR (12 21) + (12 22 × 5 22 × 6 23 × 5 23 × 6 21) + 21) + (6 22 × 12 22 × 5 23 × 12 23 × 5 (6 21) + (5 21) + (5 22 × 12 22 × 6 23 × 12 23 × 6 21) = 0 · 20327 … = 0·2033 [4 D.P.] OR (12 1) × (⁵ 1) × (⁶ 1) = 0·2033 [4 D.P.] (23 3)",
+          "srcHash": "5179a3379892ecdbcfa31bf34f0def5b",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q8(c)(ii), typeset as the State Examinations Commission set it. It reads: (ii) (/23 × 12 6/22 × 5/21)3! = 360/1771 = 0 · 20327 … = 0·2033 [4 D.P.] (12/23 × 6/22 × 5/21) + (12/23 × 5/22 × 6/21) + (6/23 × 12/22 × 5/21) + (6/23 × 5/22 × 12/21) + (5/23 × 6/22 × 12/21) + (5/23 × 12/22 × 6/21) = 0 · 20327 … = 0·2033 [4 D.P.] OR (12 1) × (6 1) × (5 1)/(23 3) = 0·2033 [4 D.P.]",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1449,8 +1470,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2021-HL-paper-p051-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p051-i0.png",
-          "srcHash": "77cfa561a9fb44594dbccb681eb94489",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q9(a)(i), typeset as the State Examinations Commission set it. It reads: |∠ABC| = 180 −20 = 160° 1450 sin160 = sin8·57 1450 × sin8·57 x = sin160 x = 631·7626 … 631·7626… = 1·504 … hours Time = = 90 mins or 1·5 hours or 1 hour 30 mins OR |AB| = 2 × 420 = 840 km |BC|² = 1450² + 840² −2(1450)(840) cos 8 ∙57 |BC|² = 399299·05 … |BC| = 631·90 … 631·90… = 1·50 … hours etc",
+          "srcHash": "2fa8692fdd5fd6e8eb89e44389bc034c",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q9(a)(i), typeset as the State Examinations Commission set it. It reads: |∠ABC| = 180 −20 = 160° 1450/sin160 = x/sin8·57 x = 1450 × sin8·57/sin160 x = 631·7626 … Time = 631·7626…/420 = 1·504 … hours = 90 mins or 1·5 hours or 1 hour 30 mins OR |AB| = 2 × 420 = 840 km |BC|² = 1450² + 840² −2(1450)(840) cos 8 ∙57 |BC|² = 399299·05 … |BC| = 631·90 … 631·90…/420 = 1·50 … hours etc",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1471,7 +1492,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p051-i1",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p051-i1.png",
           "srcHash": "6807dda058b3d2c4bf15694d2260b0ad",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q9(a)(ii), typeset as the State Examinations Commission set it. It reads: 1450 420 = 3·4523 … hours Time[AC] = Total time = 2 + 1·5 + 3·4523 … = 6·9523 … hours = 25 028·57 … seconds 100 000 Max possible flight time = 3·8 = 26 315·7 … seconds, which is greater than 25 028·57 … sec OR Finds 25 028·57 … seconds Litres required = 3·8 × 25 028·57 … = 95 108 ∙57 … litres, which is less than 100 000 litres.",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q9(a)(ii), typeset as the State Examinations Commission set it. It reads: (a) Time[AC] = 1450/420 = 3·4523 … hours Total time = 2 + 1·5 + 3·4523 … = 6·9523 … hours = 25 028·57 … seconds Max possible flight time = 100 000/3·8 = 26 315·7 … seconds, which is greater than 25 028·57 … sec Finds 25 028·57 … seconds Litres required = 3·8 × 25 028·57 … = 95 108 ∙57 … litres, which is less than 100 000 litres.",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1491,8 +1512,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2021-HL-paper-p052-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p052-i0.png",
-          "srcHash": "3cc3fc4e9473930c36b85606a2b0729e",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q9(b)(i), typeset as the State Examinations Commission set it. It reads: Range: [−110√2, 110√2] 2𝜋 120𝜋 or Period:",
+          "srcHash": "3432f5832047ae15cad1a7168d5a45d3",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q9(b)(i), typeset as the State Examinations Commission set it. It reads: Range: [−110√2, 110√2] Period: 2𝜋/120𝜋 or 1/60",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1512,8 +1533,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2021-HL-paper-p052-i1",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p052-i1.png",
-          "srcHash": "a4ae28335216c7bdd0f3fa6ef565a5b1",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q9(b)(ii), typeset as the State Examinations Commission set it. It reads: 110√2 V(t) Period Range −110√2",
+          "srcHash": "1f804e72bbb75398a6b3ab241f4123b6",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q9(b)(ii), typeset as the State Examinations Commission set it. It reads: 110√2 V(t) Range 0 Period 1/60 −110√2",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1554,8 +1575,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2021-HL-paper-p053-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p053-i0.png",
-          "srcHash": "d9451194f91b8511e0a76712fb2a0b97",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q9(b)(iv), typeset as the State Examinations Commission set it. It reads: 1 + 8n (iv) Accept any value of t satisfying t = 480 or 3 + 8n t = 480, as long as in the correct form. V(t) = 110√2 sin120𝜋t = 110 sin120𝜋t = So √2 𝜋 120𝜋t = 4 , i.e. t = 480 [seconds] So 3𝜋 4 = > t = 120𝜋t = 480 [seconds]",
+          "srcHash": "fa07ecbe124586d0ae2ea1176b12042f",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q9(b)(iv), typeset as the State Examinations Commission set it. It reads: (b) (iv) Accept any value of t satisfying t = 1 + 8n/480 or 1 + 8n 480 or t = 3 + 8n/480, as long as in the correct form. V(t) = 110√2 sin120𝜋t = 110 So sin120𝜋t = 1/√2 1/√2 So 120𝜋t = 𝜋/4 , i.e. t = 1/480 [seconds] or 120𝜋t = 3𝜋/4 = > t = 3/480 [seconds]",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1596,8 +1617,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2021-HL-paper-p034-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p034-i0.png",
-          "srcHash": "28453c6028e9ee5eb5d9478c47c72efe",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q10(a), typeset as the State Examinations Commission set it. It reads: Detailed marking notes Note: The model solutions for each question are not intended to be exhaustive – there may be other correct solutions. Any Examiner unsure of the validity of the approach adopted by a particular candidate to a particular question should contact his / her Advising Examiner. 11 × 0·15¹ × 0·85¹⁰ = 0 ∙3248 … = 0 ∙325 [3 D.P.] OR 11 × 3 20 × (17 = 0·3248 … 20) = 0 ∙325 [3 D.P.]",
+          "srcHash": "454e615e7ebc15ad912ba57aa8286943",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q10(a), typeset as the State Examinations Commission set it. It reads: Detailed marking notes Note: The model solutions for each question are not intended to be exhaustive – there may be other correct solutions. Any Examiner unsure of the validity of the approach adopted by a particular candidate to a particular question should contact his / her Advising Examiner. 11 × 0·15¹ × 0·85¹⁰ = 0 ∙3248 … = 0 ∙325 [3 D.P.] OR 11 × 3/20 × (17/20) 10 = 0·3248 …",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1618,7 +1639,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p054-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p054-i0.png",
           "srcHash": "8d3b945fd0a979e6bfd56fdc456e69d8",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q10(a)(i), typeset as the State Examinations Commission set it. It reads: P(2 from the 1st 9 are O⁻) × P(10th is O⁻) = (⁹ ( 100) 100) 2)( × = 0∙01028 … = 0∙0103 [4 D.P.]",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q10(a)(i), typeset as the State Examinations Commission set it. It reads: P(2 from the 1st 9 are O⁻) × P(10th is O⁻) = (9 2)( 8/100) 2 (/100) 92 7 × 8/100 = 0∙01028 … = 0∙0103 [4 D.P.]",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1639,7 +1660,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p054-i1",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p054-i1.png",
           "srcHash": "2ad3e8287e8a6f7fc42621712c4b79cf",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q10(a)(ii), typeset as the State Examinations Commission set it. It reads: 1 −P(none are O⁻) 100) = 1 −( = 0·34091 … = 0·3409 [4 D.P.] OR P(1 or 2 or 3 or 4 or 5 are O⁻) + (⁵ = (⁵ ( ( 1)( 100) 100) 100) 100) 2)( + (⁵ +(⁵ ( ( 100) 100) 100) 100) 3)( 4)( 100) + ( = 0·34091 … = 0·3409 [4 D.P.]",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q10(a)(ii), typeset as the State Examinations Commission set it. It reads: 1 −P(none are O⁻) (ii) = 1 −( 92/100) 5 OR P(1 or 2 or 3 or 4 or 5 are O⁻) = (5 1)( 8/100) 1 (/100) 92 4 + (5 2)( 8/100) 2 (/100) 92 3 +(5 3)( 8/100) 3 (/100) 92 2 + (5 4)( 8/100) 4 (/100) 92 1 + (/100) 8 = 0·34091 … = 0·3409 [4 D.P.]",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1660,7 +1681,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p054-i2",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p054-i2.png",
           "srcHash": "9765f3ac11f763ee5f3cd40fc91ebad8",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q10(a)(iii), typeset as the State Examinations Commission set it. It reads: 1 −0·92^k > 0·97 so 0·92^k < 0∙03 Find where 0·92^k = 0∙03 k(ln (0·92)) = ln (0·03) i.e. ln (0·03) k = ln (0·92) = 42·05 … so least k = 43",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q10(a)(iii), typeset as the State Examinations Commission set it. It reads: 1 −0·92^k > 0·97 so 0·92^k < 0∙03 Find where 0·92^k = 0∙03 k(ln (0·92)) = ln (0·03) i.e. so k = ln (0·03)/ln (0·92) = 42·05 … so least k = 43",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1702,7 +1723,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p055-i1",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p055-i1.png",
           "srcHash": "e1be991ecf83579151ac27e07b5dc082",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q10(c), typeset as the State Examinations Commission set it. It reads: Average pay-out per customer: 120 000(0∙0001) + 40 000(0∙002) = €92 Target profit per customer: 900 000 18 000 = €50 Required premium: 50 + 92 = €142 OR Average pay-out per customer: 120 000(0∙0001) + 40 000(0∙002) = €92 Total expected payout: €92 × 18 000 = €1 656 000 Total revenue required: €1 656 000 + €900 000 = €2 556 000 Required premium: €2 556 000 ÷ 18 000 = €142",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q10(c), typeset as the State Examinations Commission set it. It reads: Average pay-out per customer: 120 000(0∙0001) + 40 000(0∙002) = €92 Target profit per customer: 900 000/18 000 = €50 Required premium: 50 + 92 = €142 OR Average pay-out per customer: 120 000(0∙0001) + 40 000(0∙002) = €92 Total expected payout: €92 × 18 000 = €1 656 000 Total revenue required: €1 656 000 + €900 000 = €2 556 000 Required premium: €2 556 000 ÷ 18 000 = €142",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1723,7 +1744,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-HL-paper-p007-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p007-i0.png",
           "srcHash": "c514284b336228dad9c2e49c2750ace4",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q1(b), typeset as the State Examinations Commission set it. It reads: (2x + 3)² ≥ 0 for all x∈ℝ So (2x + 3)² + 7 ≥ 7 > 0 OR (2x + 3)² = −7 2x + 3 = ±√−7 , which is not real OR 4x² + 12x + 9 + 7 = 0 4x² + 12x + 16 = 0 b²−4ac = 12²−4(4)(16) < 0 , so no real roots OR The graph of y = (2x + 3)² + 7 is U-shaped and the minimum value of y is 7, therefore, no real solutions.",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q1(b), typeset as the State Examinations Commission set it. It reads: (2x + 3)² ≥ 0 for all x∈ℝ So (2x + 3)² + 7 ≥ 7 > 0 OR (2x + 2x + 3 3)2 = = −7/±√−7 , which is not real OR 4x² + 12x + 9 + 7 = 0 4x² + 12x + 16 = 0 b²−4ac = 12²−4(4)(16) < 0 , so no real roots OR The graph of y = (2x + 3)² + 7 is U-shaped and the minimum value of y is 7, therefore, no real solutions.",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1744,7 +1765,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-HL-paper-p008-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p008-i0.png",
           "srcHash": "c57bf206c2e867d1938131cfba29619d",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q1(c)(ii), typeset as the State Examinations Commission set it. It reads: 3(−1)² + 2(−1) + 5 = 3 −2 + 5 = 6 ≠ 0 (x + 1)(ax + b) + c = ax² + (a + b)x + b + c = 3x² + 2x + 5 So a = 3, 3 + b = 2, so b = −1 −1 + c = 5, so c = 6. OR 3x−1 √3x² + 2x + 5 x + 1 3x² + 3x −x + 5 −x−1 Remainder = 6 OR 3x −1 3x² −x 3x −1 So remainder = 5 −(−1) = 6",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q1(c)(ii), typeset as the State Examinations Commission set it. It reads: 3(−1)² + 2(−1) + 5 = 3 −2 + 5 = 6 ≠ 0 (x + 1)(ax + b) + c = ax² + (a + b)x + b + c = 3x² + 2x + 5 So a = 3, 3 + b = 2, so b = −1 −1 + c = 5, so c = 6. OR x + 1 3x−1/√3x2 + 2x + 5 3x2 + 3x/−x + 5 −x−1/6 Remainder = 6 OR 3x −1 x 3x2 −x/1 3x −1 So remainder = 5 −(−1) = 6",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1764,8 +1785,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2022-HL-paper-p009-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p009-i0.png",
-          "srcHash": "33b6359c8d5d4c3ea1d4d7b23792715d",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q2(a), typeset as the State Examinations Commission set it. It reads: 2x³ 3 + 5x² 2 + 6x + c",
+          "srcHash": "e5a8f2f5e4da4cec6256c4939854ee05",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q2(a), typeset as the State Examinations Commission set it. It reads: (a) 2x3/3 + 5x2/2 + 6x + c",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1807,7 +1828,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-HL-paper-p010-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p010-i0.png",
           "srcHash": "1b696882cf94d82b2080cf15f40344f3",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q2(b)(ii), typeset as the State Examinations Commission set it. It reads: (2) − (1): 24a + 6b = 72 ...(4) (3) − (2): 48a + 6b = −216 ...(5) (5) − (4): 24a = −288 So a = −12 (4): 24(−12) + 6b = 72 6b = 360 so b = 60 (1): 4(−12) + 3(60) + 3c = 807 3c = 675 so c = 225 OR Eq1: a = 807 −3b−3c Eq2: 7(807 −3b−3c) + 9b + 3c = 879 c = 795 −2b Eq3: 19(807 −3b−(795 −2b)) + 15b + 795 −2b = 663 −6b = −360 b = 60 Back substitution: c = 795 −2(60) c = 225 a = 807 −3(60) −3(225) a = −12",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q2(b)(ii), typeset as the State Examinations Commission set it. It reads: (2) − (1): 24a + 6b = 72 ...(4) (3) − (2): 48a + 6b = −216 ...(5) (5) − (4): 24a = −288 So a = −12 (4): 24(−12) + 6b = 72 6b = 360 so b = 60 (1): 4(−12) + 3(60) + 3c = 807 3c = 675 so c = 225 OR Eq1: a = 807 −3b−3c/4 Eq2: 7(807 −3b−3c) + 9b + 3c = 879 c = 795 −2b/3 Eq3: 19(807 −3b−(795 −2b)) + 15b + 795 −2b = 663 −6b = −360 b = 60 Back substitution: c = 795 −2(60)/3 c = 225 a = 807 −3(60) −3(225)/4 a = −12",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1827,8 +1848,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2022-HL-paper-p011-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p011-i0.png",
-          "srcHash": "9f3b56ed0c29229f1879687a1f950ae0",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q3(a)(i), typeset as the State Examinations Commission set it. It reads: z−iz = 6 + 2i−i(6 + 2i) = 6 + 2i−6i−2i² = 8 −4i OR z(1 −i) = 8 −4i 8−4i 1−i z = (8−4i)(1 + i) (1−i)(1 + i) z = 12 + 4i z = = 6 + 2i",
+          "srcHash": "aa12ce7dcd03314fdc04e5d4c2ecddd1",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q3(a)(i), typeset as the State Examinations Commission set it. It reads: z−iz = 6 + 2i−i(6 + 2i) = 6 + 2i−6i−2i² = 8 −4i OR z(1 −i) = 8 −4i z = 8−4i/1−i z = (8−4i)(1 + i)/(1−i)(1 + i) z = 12 + 4i/2 = 6 + 2i",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1870,7 +1891,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-HL-paper-p011-i2",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p011-i2.png",
           "srcHash": "bbea60a03a32d66b163fabf50500f895",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q3(a)(iii), typeset as the State Examinations Commission set it. It reads: (iii) Radius = √80 ÷ 2 = √20 2 = 20𝜋 square units Area = 𝜋(√20) OR 6 + 2i−2 + 6i = 2 + 4i Centre = Radius = √(6 −2)² + (2 −4)² = √20 2 = 20𝜋 square units Area = 𝜋(√20) (Accept without units)",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q3(a)(iii), typeset as the State Examinations Commission set it. It reads: (iii) Radius = √80 ÷ 2 = √20 2 = 20𝜋 square units Area = 𝜋(√20) OR Centre = 6 + 2i−2 + 6i/2 = 2 + 4i Radius = 2/√(6 −2)2 + (2 −4)2 = √20 2 = 20𝜋 square units Area = 𝜋(√20) (Accept without units)",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1891,7 +1912,28 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-HL-paper-p012-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p012-i0.png",
           "srcHash": "5c9d1e49e46a4d5107880d55dec25cb3",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q3(b), typeset as the State Examinations Commission set it. It reads: tan A = √3 , so A = 30°, so 𝜃= 330° 2 = 2 r = √1² + (√3) 9 = 2⁹(cos 9(330) + isin 9(330)) (√3 −i) = 512(cos 2970 + isin 2970) = 0 + 512i a = 0, b = 512",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q3(b), typeset as the State Examinations Commission set it. It reads: (b) tan A = 1/√3 1/√3 , so A = 30°, so 𝜃= 330° r = √3/√12 + (√3) 2 = 2 9 = 2⁹(cos 9(330) + isin 9(330)) (√3 −i) = 512(cos 2970 + isin 2970) = 0 + 512i a = 0, b = 512",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-q4-a", topicId: "maths-3-1", conceptId: "sequence-defined-follows-write-form",
+    section: "B", questionRef: "2022 HL Paper 1 Q4(a)",
+    questionText: "A sequence u1 , u2 , u3 , ... is defined as follows, for n∈ℕ: u1= 2, u2= 64, un+1= √ un un−1 Write u3 in the form 2p , where p∈ℝ",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p1-q4-a-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct substitution into u₃", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit, for example, some correct substitution into u₃","2 steps correct"],"perOptionSteps":[3,7]} },
+    ],
+    figure: {
+          "candId": "maths-2022-HL-paper-p013-i0",
+          "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p013-i0.png",
+          "srcHash": "9058b74559c5913014a255efe92476c9",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q4(a), typeset as the State Examinations Commission set it. It reads: u3 = √ u2 u1 = √ 64 2 = √32 = (25) 1/2 = 2 5/2 u3 = √ u2/u1 = √ 64/2 = √32 = (25) 1 2 = 2 5 2",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1912,7 +1954,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-HL-paper-p013-i1",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p013-i1.png",
           "srcHash": "16454bbc4429ae3f5ae8084fdcbd49ef",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q4(b)(i), typeset as the State Examinations Commission set it. It reads: [5e^k−13 = 13 −5e^(−k) ] 5y−13 = 13 − 5y²−13y = 13y−5 5y²−26y + 5 = 0 OR T2−T1 = T3−T2 T1 + T3 = 2T2 5(e^k)²−26(e^k) + 5 = 0 5e^(2k)−26e^k + 5 = 0 5e^k + 5e^(−k) = 26 T1 + T3 = 2T2 OR a = y + d = 13 d = 13 − 13 + (13 − y) = 5y 26y−5 = 5y² 5y²−26y + 5 = 0",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q4(b)(i), typeset as the State Examinations Commission set it. It reads: [5e^k−13 = 13 −5e^(−k) ] 5y−13 = 13 − 5/y 5y²−13y = 13y−5 5y²−26y + 5 = 0 T₂−T₁ = T₃−T₂ T₁ + T₃ = 2T₂ 5(e^k)²−26(e^k) + 5 = 0 5e^(2k)−26e^k + 5 = 0 5e^k + 5e^(−k) = 26 T₁ + T₃ = 2T₂ OR a = 5/y 5/y + d = 13 d = 13 − 5/y 13 + (13 − 5/y) = 5y 26y−5 = 5y² 5y²−26y + 5 = 0",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1932,8 +1974,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2022-HL-paper-p014-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p014-i0.png",
-          "srcHash": "4b9b7d765856ac662a3f3831814bd4f2",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q4(b)(ii), typeset as the State Examinations Commission set it. It reads: (y−5)(5y−1) = 0 y = 5 or e^k = 5 or e^k = 5 = ln(5^(−1)) = −ln 5 k = ln 5 or k = ln",
+          "srcHash": "d4716eb7e6d0d9ab2859884a4d776a9e",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q4(b)(ii), typeset as the State Examinations Commission set it. It reads: (y−5)(5y−1) = 0 y = 5 or 1/5 ek = 5 or ek = 1/5 k = ln 5 or k = ln 1/5 = ln(5−1) = −ln 5",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1953,8 +1995,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2022-HL-paper-p015-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p015-i0.png",
-          "srcHash": "7ee25b411783225e6fa4a634bd448067",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q5(a), typeset as the State Examinations Commission set it. It reads: g′(x) = 2x−(−1x^(−2)) = 2x + x² OR x(0)−1(1) g′(x) = 2x− = 2x + x² x²",
+          "srcHash": "e7353f6b682ee2de4b53e1856081f3f7",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q5(a), typeset as the State Examinations Commission set it. It reads: g′(x) = 2x−(−1x^(−2)) = 2x + 1/x2 OR g′(x) = 2x− x(0)−1(1)/x2 = 2x + 1/x2",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1974,8 +2016,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2022-HL-paper-p015-i1",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p015-i1.png",
-          "srcHash": "dbf19574206ae0abe823389aa24f06ed",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q5(b)(i), typeset as the State Examinations Commission set it. It reads: 2x² −23x + 63 √2x³−21x² + 40x + 63 x + 1 2x³ + 2x² −23x² + 40x + 63 −23x²−23x 63x + 63 63x + 63 (x + 1)(2x²−23x + 63) = 0 (x + 1)(2x−9)(x−7) = 0 x = −1, 4∙5, or 7 OR 2x² −23x 2x³ −23x² 63x 2x² −23x (x + 1)(2x²−23x + 63) = 0 (x + 1)(2x−9)(x−7) = 0 x = −1, 4∙5, or 7",
+          "srcHash": "c66f493f3c282997ce8ce9cbcf00270e",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q5(b)(i), typeset as the State Examinations Commission set it. It reads: (b) (i) x + 1 2x2 −23x + 63/√2x3−21x2 + 40x + 63 2x3 + 2x2/−23x2 + 40x + 63 −23x2−23x/63x + 63 63x + 63/0 (x + 1)(2x²−23x + 63) = 0 (x + 1)(2x−9)(x−7) = 0 x = −1, 4∙5, or 7 OR 2x² −23x 2x³ −23x² 63x 2x² −23x (x + 1)(2x²−23x + 63) = 0 (x + 1)(2x−9)(x−7) = 0 x = −1, 4∙5, or 7",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1996,7 +2038,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-HL-paper-p016-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p016-i0.png",
           "srcHash": "02d73216d26da8823627918326476767",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q5(b)(ii), typeset as the State Examinations Commission set it. It reads: f′(x) = 6x²−42x + 40 < 0 42±√42²−4(6)(40) 42±√804 = Roots: 2(6) = 1∙137 … or = 5∙862 … So: 1∙14 < x < 5∙86 [2 D.P.]",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q5(b)(ii), typeset as the State Examinations Commission set it. It reads: (b) (ii) f′(x) = 6x2−42x + /42±√422−4(6)(40) 40 < 42±√804 0 Roots: 42±√422−4(6)(40)/2(6) = 42±√804/12 = 1∙137 … or = 5∙862 … So: 1∙14 < x < 5∙86 [2 D.P.]",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2017,7 +2059,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-HL-paper-p017-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p017-i0.png",
           "srcHash": "213843ad26fa1143956c66b2308991f6",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q6(a), typeset as the State Examinations Commission set it. It reads: 2(x + ℎ)² + 4(x + ℎ)−2x²−4x f(x + ℎ)−f(x) = lim ℎ ℎ ℎ→0 ℎ→0 2x² + 4xℎ+2ℎ² + 4x + 4ℎ−2x²−4x = lim ℎ ℎ→0 4xℎ+2ℎ² + 4ℎ = lim ℎ ℎ→0 = lim ℎ→0(4x + 2h + 4) = 4x + 4",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q6(a), typeset as the State Examinations Commission set it. It reads: (a) ℎ→0 lim f(x + ℎ)−f(x)/ℎ = ℎ→0 lim 2(x + ℎ)2 + 4(x + ℎ)−2x2−4x/ℎ = ℎ→0 lim 2x2 + 4xℎ+2ℎ2 + 4x + 4ℎ−2x2−4x/ℎ = ℎ→0 lim 4xℎ+2ℎ2 + 4ℎ/ℎ = lim ℎ→0(4x + 2h + 4) = 4x + 4",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2038,7 +2080,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-HL-paper-p018-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p018-i0.png",
           "srcHash": "7e360b636f12df3e587bc9e6891ff90c",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q6(b), typeset as the State Examinations Commission set it. It reads: A = l × w = 4x × x = 4x² When A = 225, 4x² = 225, so x² = 4, i.e. x = dA 2) = 60 cm²/cm dx = 8x = 8 ( Accept without unit OR l = 4x so x = A = l × l 4 = 1 4 l² dA 2l dl = dx = 4 and dA dl × dl dx = dA dA dx = 1 2 l × 4 4l² = 225, so l = 30 When A = 225, dA 2(30)(4) = 60 cm²/cm dx = Accept without unit",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q6(b), typeset as the State Examinations Commission set it. It reads: A = l × w = 4x × x = 4x² When A = 225, 4x² = 225, so x2 = 225/4, i.e. x = 15/2 dA/dx = 8x = 8 (/2) = 15 60 cm2/cm Accept without unit l = 4x so x = l/4 A = l × l/4 = 1/4 l2 dl/dx = 4 and dA/dl = 1/2l dA/dx = dA/dl × dl/dx dA/dx = 1/2 l × 4 When A = 225, 1/4l2 = 225, so l = 30 dA/dx = 1/2(30)(4) = 60 cm2/cm Accept without unit",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2080,7 +2122,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-HL-paper-p020-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p020-i0.png",
           "srcHash": "323f06d0654983d9837030a19b8d3e11",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q7(b), typeset as the State Examinations Commission set it. It reads: (a) h(4) = 2(4³) −28∙5(4²) + 105(4) + 70 = 162 BPM (b) h′(x) = 3(2x²) −2(28 ∙5x) + 105 = 6x²−57x + 105",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q7(a), typeset as the State Examinations Commission set it. It reads: (a) h(4) = 2(4³) −28∙5(4²) + 105(4) + 70 = 162 BPM (b) h′(x) = 3(2x²) −2(28 ∙5x) + 105 = 6x²−57x + 105",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2143,7 +2185,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-HL-paper-p021-i1",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p021-i1.png",
           "srcHash": "d19333815896c348989557a3374eae5c",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q7(e), typeset as the State Examinations Commission set it. It reads: h′(x) = 6x²−57x + 105 Decreasing most quickly at h′′(x) = 0 So 12x−57 = 0 So x = 4∙75 minutes = 4 mins 45 secs OR Decreasing most quickly at midpoint of local 2∙5 + 7 = 4∙75 minutes max/min, that is, x = = 4 mins 45 secs",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q7(e), typeset as the State Examinations Commission set it. It reads: h′(x) = 6x²−57x + 105 Decreasing most quickly at h′′(x) = 0 So 12x−57 = 0 So x = 4∙75 minutes = 4 mins 45 secs OR Decreasing most quickly at midpoint of local max/min, that is, x = 2∙5 + 7/2 = 4∙75 minutes = 4 mins 45 secs",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2206,7 +2248,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-HL-paper-p023-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p023-i0.png",
           "srcHash": "d22edaf81913aa388af4a216d4293b49",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q8(b), typeset as the State Examinations Commission set it. It reads: (a), 12 42 102 132 102 42 12 42 102 Appropriate graph through the 9 points",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q8(a), typeset as the State Examinations Commission set it. It reads: (a), 12 42 102 132 102 42 12 42 102 Appropriate graph through the 9 points",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2269,7 +2311,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-HL-paper-p024-i1",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p024-i1.png",
           "srcHash": "094a904356e2a66c103355fa32d0afd9",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q8(e), typeset as the State Examinations Commission set it. It reads: 𝜋 3t) = 72 −110 = −38 60 cos ( 𝜋 3t) = − cos ( Ref angle = cos^(−1)( 60) = 0∙8849 … radians 1st time: Quadrant 2 2nd time: Quadrant 3 𝜋 3t2 = 𝜋+ 0∙8849 … radians 3(𝜋+0∙8849… ) = 3∙845 … = 3∙85 mins t = 𝜋 [2 DP] OR 𝜋 3t) = − cos ( 3 t1 = cos^(−1)(−38 𝜋 60) t1 = 2.15494 … t = 6 −2.15494 t = 3.85 mins",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q8(e), typeset as the State Examinations Commission set it. It reads: 60 cos (/3t) = 𝜋 72 −110 = −38 cos (/3t) = 𝜋 − 38/60 Ref angle = cos^(−1)( 1st time: Quadrant 2 2nd time: Quadrant 3 𝜋/3t2 = 𝜋+ 0∙8849 … radians t = 3(𝜋+0∙8849… )/𝜋 = 3∙845 … = 3∙85 mins [2 DP] OR cos (/3t) = 𝜋 − 38/60 𝜋/3 t1 = cos−1(−38/60) t₁ = 2.15494 … t = 6 −2.15494 t = 3.85 mins",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2300,7 +2342,7 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p1-q9-a", topicId: "maths-2-3", conceptId: "amount-drug-left-alex-body-days",
+    id: "maths-2022-hl-p1-q9-a", topicId: "maths-3-1", conceptId: "amount-drug-left-alex-body-days",
     section: "B", questionRef: "2022 HL Paper 1 Q9(a)",
     questionText: "Find the amount of the drug left in Alex’s body 2∙5 days after a single 15 mg injection. (a) Give your answer in mg, correct to 2 decimal places",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -2321,7 +2363,7 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p1-q9-b", topicId: "maths-2-3", conceptId: "how-long-after-single-injection-will",
+    id: "maths-2022-hl-p1-q9-b", topicId: "maths-3-1", conceptId: "how-long-after-single-injection-will",
     section: "B", questionRef: "2022 HL Paper 1 Q9(b)",
     questionText: "How long after a single 15 mg injection will there be exactly 1 mg of the drug left in Alex’s (b) body? Give your answer in days, correct to 1 decimal place",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
@@ -2332,7 +2374,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-HL-paper-p026-i1",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p026-i1.png",
           "srcHash": "78103f475df96c61891e3c691a83c9c0",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q9(b), typeset as the State Examinations Commission set it. It reads: 15(0 ∙6^t) = 1 0 ∙6^t = ln 0 ∙6^t = tln 0 ∙6 = ln ln¹ ln0∙6 = 5∙30 … = 5∙3 [days] t = OR t = log0^.⁶ 15 = 5.30 … = 5.3 [days] [1 DP]",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q9(b), typeset as the State Examinations Commission set it. It reads: 15(0 ∙6^t) = 1 0 ∙6t = 1/15 ln 0 ∙6t = tln 0 ∙6 = ln 1/15 t = ln1/15 = 5∙30 … = 5∙3 t = 15/ln0∙6 = 5∙30 … = 5∙3 [days] OR t = log0.6 1/15 = 5.30 … = 5.3 [days] [1 DP]",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2342,7 +2384,7 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p1-q9-c", topicId: "maths-2-3", conceptId: "explain-why-total-amount-drug-alex",
+    id: "maths-2022-hl-p1-q9-c", topicId: "maths-3-1", conceptId: "explain-why-total-amount-drug-alex",
     section: "B", questionRef: "2022 HL Paper 1 Q9(c)",
     questionText: "Explain why the total amount of the drug, in mg, in Alex’s body immediately after the 4 th injection is given by: 15 + 15(0∙6) + 15(0∙6)² + 15(0∙6)³",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -2363,7 +2405,7 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p1-q9-d", topicId: "maths-2-3", conceptId: "total-amount-drug-alex-body-immediately",
+    id: "maths-2022-hl-p1-q9-d", topicId: "maths-3-1", conceptId: "total-amount-drug-alex-body-immediately",
     section: "B", questionRef: "2022 HL Paper 1 Q9(d)",
     questionText: "Find the total amount of the drug in Alex’s body immediately after the 10 th injection. (d) Give your answer in mg, correct to 2 decimal places",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
@@ -2394,8 +2436,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2022-HL-paper-p027-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p027-i0.png",
-          "srcHash": "ef9c5c0a58faf36ab7222324f1a8594d",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q9(e), typeset as the State Examinations Commission set it. It reads: 1−0∙6 = 37∙5 [mg] 1−r = S∞=",
+          "srcHash": "215bf3376476be68b65a88582b9b99a9",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q9(e), typeset as the State Examinations Commission set it. It reads: (e) S∞= a/1−r = 15/1−0∙6 = 37∙5 [mg]",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2415,7 +2457,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2022-HL-paper-p027-i1",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p027-i1.png",
-          "srcHash": "d1f38258740afb2207521936db0dbe8e",
+          "srcHash": "f01feb3d457b4d6044e7dc8998fc4324",
           "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q9(f)(i), typeset as the State Examinations Commission set it.",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
@@ -2426,7 +2468,7 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p1-q9-f-ii", topicId: "maths-2-3", conceptId: "immediately-after-7th-injection-there-drug",
+    id: "maths-2022-hl-p1-q9-f-ii", topicId: "maths-3-1", conceptId: "immediately-after-7th-injection-there-drug",
     section: "B", questionRef: "2022 HL Paper 1 Q9(f)(ii)",
     questionText: "Immediately after the 7th injection, there are 50 mg of the drug in Jessica’s body",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -2436,8 +2478,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2022-HL-paper-p027-i2",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p027-i2.png",
-          "srcHash": "27c75af50206d13a7b09e3f6ee05fa72",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q9(f)(ii), typeset as the State Examinations Commission set it. It reads: 20d(1−0∙85⁷) = 50 50 × 3 20⁽1−0∙85⁷) = 11∙03 … = 11 [mg] [∈ℕ] d =",
+          "srcHash": "28389e77a3bae0af97079f08b9d9e1ad",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q9(f)(ii), typeset as the State Examinations Commission set it. It reads: (f) (ii) 20d(1−0∙857)/3 = 50 d = 50 × 3/20(1−0∙857) = 11∙03 … = 11 [mg] [∈ℕ]",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2479,7 +2521,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-HL-paper-p028-i1",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p028-i1.png",
           "srcHash": "7002631408485b3b964eafc8a7209720",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q10(b), typeset as the State Examinations Commission set it. It reads: 0∙82 −0∙12 ln(t + 1) = 0∙55 0∙12 ln(t + 1) = 0∙27 0∙27 ln(t + 1) = 0∙12 = 2∙25 t + 1 = e^(2∙25) t = e^(2∙25)−1 = 8∙487 … = 8∙49 [hours] [2 DP]",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q10(b), typeset as the State Examinations Commission set it. It reads: 0∙82 −0∙12 ln(t + 1) = 0∙55 0∙12 ln(t + 1) = 0∙27 ln(t + 1) = 0∙27/0∙12 = 2∙25 t + 1 = e^(2∙25) t = e^(2∙25)−1 = 8∙487 … = 8∙49 [hours] [2 DP]",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2499,8 +2541,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2022-HL-paper-p028-i2",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p028-i2.png",
-          "srcHash": "a2929bbcee4ed4ccd64feda44578790c",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q10(c)(ii), typeset as the State Examinations Commission set it. It reads: −0∙12 (i) P′(t) = t + 1 −0∙12 P′(1) = 1 + 1 = −0∙06 (ii) The proportion decreases [as t goes up]",
+          "srcHash": "27e8def0815c648fd17c0dbf24348de8",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q10(c)(ii), typeset as the State Examinations Commission set it. It reads: (c) (i) P′(t) = −0∙12/t + 1 P′(1) = −0∙12/1 + 1 = −0∙06 (ii) The proportion decreases [as t goes up]",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2521,7 +2563,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-HL-paper-p029-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p029-i0.png",
           "srcHash": "5cc632e48390509825795eeedf2ee68e",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q10(d), typeset as the State Examinations Commission set it. It reads: [P′′(t) = 0 at all points of inflection] P′′(t) = −0∙12(−(t + 1)^(−2)) 0∙12 (t + 1^)² = 0 ⇒0 ∙12 = 0, contradiction. = [So, no points of inflection] OR 0.12 P′′(t) = (t + 1^)² ≠ 0 [as 0∙12 ≠ 0] [So, no points of inflection]",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q10(d), typeset as the State Examinations Commission set it. It reads: [P′′(t) = 0 at all points of inflection] P′′(t) = −0∙12(−(t + 1)^(−2)) = 0∙12/(t + 1)2 = 0 ⇒0 ∙12 = 0, contradiction. [So, no points of inflection] OR P′′(t) = 0.12/(t + 1)2 ≠ 0 [as 0∙12 ≠ 0] [So, no points of inflection]",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2541,8 +2583,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2022-HL-paper-p029-i1",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p029-i1.png",
-          "srcHash": "677a7e9e3fdfd13f961d7a7dc992c456",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q10(e)(i), typeset as the State Examinations Commission set it. It reads: log10A = log10B(t + 1)^c log10A = log10B + log10(t + 1)^c clog10(t + 1) = log10A−log10B log10A−log10B c = log10(t + 1) OR (t + 1)^c = A B A logt + 1 B = c c = logt + 1A−logt + 1B log10A log10B c = log10(t + 1) − log10(t + 1)",
+          "srcHash": "443b66fe5c663a5821fc5f37a66cb7aa",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q10(e)(i), typeset as the State Examinations Commission set it. It reads: log₁₀A = log₁₀B(t + 1)^c log₁₀A = log₁₀B + log₁₀(t + 1)^c clog₁₀(t + 1) = log₁₀A−log₁₀B c = log10A−log10B/log10(t + 1) (t + 1)c = A/B logt + 1 A/B = c c = logₜ₊₁A−logₜ₊₁B c = log10A/log10(t + 1) − log10B/log10(t + 1)",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2562,8 +2604,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2022-HL-paper-p029-i2",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p029-i2.png",
-          "srcHash": "28ea3287a96c68e9ba3878cd090cf032",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q10(e)(ii), typeset as the State Examinations Commission set it. It reads: log1080−log1047 = 0∙1652 … = 0∙165 c = log10(24 + 1) [3 DP] OR 80 = 47(24 + 1)^c (24 + 1)^c = ln 25^c = ln ln⁸⁰ c = ln25 = 0∙1652 … = 0∙165 [3 DP] OR 80 = 47(24 + 1)^c (24 + 1)^c = 47 = 0∙1652 … = 0∙165 [3 DP] c = log25",
+          "srcHash": "fdba12569a1bd8026c44d1a5000965e4",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q10(e)(ii), typeset as the State Examinations Commission set it. It reads: (e) (ii) c = log1080−log1047/log10(24 + 1) = 0∙1652 … = 0∙165 [3 DP] OR 80 = 47(24 + 1)^c (24 + 1)c = 80/47 ln 25c = ln 80/47 c = ln80/47 0∙1652 … = 0∙165 c = 47/ln25 = 0∙1652 … = 0∙165 [3 DP] OR 80 = 47(24 + 1)^c (24 + 1)c = 80/47 c = log25 80/47 = 0∙1652 … = 0∙165 [3 DP]",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2584,7 +2626,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-HL-paper-p035-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p035-i0.png",
           "srcHash": "7c41ce8d4df3176a528d9f662070ffd1",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q1(a)(ii), typeset as the State Examinations Commission set it. It reads: Conclusion: They are not independent Justification: Based on independent iff P(O). P(U) = P(O∩U): 4288 8576 P(O) = 11357 or 0∙377.. 22714 or 15707 P(U) = 22714 = 0∙6915.. P(O) × P(U) = 0∙261 … 2922 22714 = 0∙1286 ≠ P(O). P(U) P(O∩U) = OR Based on independent iff P(O) = P(O|U): 4288 8576 P(O) = 11357 or 0∙377.. 22714 or 2922 P(O|U) = 15707 = 0 ∙186.. OR Based on independent iff P(U) = P(U|O): 15707 P(U) = 22714 = 0∙69",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q1(a)(ii), typeset as the State Examinations Commission set it. It reads: Conclusion: They are not independent Justification: Based on independent iff P(O). P(U) = P(O∩U): P(O) = 8576/22714 or 4288/11357 or 0∙377.. P(U) = 15707/22714 = 0∙6915.. P(O) × P(U) = 0∙261 … P(O∩U) = 2922/22714 = 0∙1286 ≠ P(O). P(U) OR Based on independent iff P(O) = P(O|U): P(O) = 8576/22714 or 4288/11357 or 0∙377.. P(O|U) = 2922/15707 = 0 ∙186.. OR Based on independent iff P(U) = P(U|O): P(U) = 15707/22714 = 0∙69",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2604,8 +2646,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2022-HL-paper-p035-i1",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p035-i1.png",
-          "srcHash": "14c4700b9bced2b82b68e6c116aea8a8",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q1(b), typeset as the State Examinations Commission set it. It reads: 49 or 7 × ( 7 = 7 × 7 × 7 × 7 × 7 × 7 or",
+          "srcHash": "c4c27bf49bcd9c3aff0d4899a6b86811",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q1(b), typeset as the State Examinations Commission set it. It reads: (b) 1/7 × 1/7 or 7/7 × 1/7 × 1/7 = 1/49 or 7 × (/7 × 1 1/7 × 7 × 7 ×",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2667,7 +2709,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2022-HL-paper-p039-i1",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p039-i1.png",
-          "srcHash": "34fb7b7e0cc3e6e194edd71acf9a0ab7",
+          "srcHash": "84fabbcfd3e5ee5b8f88fe9338316809",
           "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q3(b), typeset as the State Examinations Commission set it.",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
@@ -2730,8 +2772,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2022-HL-paper-p042-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p042-i0.png",
-          "srcHash": "1d357c316216ed2532327c1b449337a6",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q4(a)(ii), typeset as the State Examinations Commission set it. It reads: tan 15 = tan(60 −45) tan60−tan45 = 1 + tan60tan45 = √3−1 √3 + 1 OR tan 15 = tan(45 −30) tan45−tan30 = 1 + tan45tan30 1 − ¹ = √3−1 √3 = √3 + 1 1 + ¹ √3 OR 2tan15 tan 30 = √3 = 1−tan²15 1 −tan²15 = 2 √3 tan 15 tan²15 + 2 √3 tan 15 −1 = 0 2−4 × 1 × (−1) −2√3 ±√(−2√3) tan 15 = = −√3 + 2 (first quadrant) = √3−1 √3 + 1",
+          "srcHash": "31b142d7d16898cd0b12169a5aa80e4a",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q4(a)(ii), typeset as the State Examinations Commission set it. It reads: tan 15 = tan(60 −45) tan60−tan45 = = √3−1/√3 + 1 √3−1/√3 + 1 OR tan 15 = tan(45 −30) tan45−tan30 = 1 + tan45tan30 = 1 − 1/√3 = √3−1 = √3/1 + 1 1 − = √3−1/√3 + 1 √3−1/√3 + 1 = 1 + 1/√3 √3/√3 = √3 + 1 √3−1 OR tan 30 = 1/√3 = 2tan15/1−tan215 1 −tan215 √3 = = 2 1−tan215/√3 tan 15 tan215 1 −tan215 + 2 = 2/√3 tan √3 15 tan −1 15 = 0 tan215 + −2√3 2 √3 tan 15 −1 = 0/±√(−2√3) 2−4 × 1 × (−1) tan 15 = −2√3 ±√(−2√3) 2−4 × 1 × (",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2751,8 +2793,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2022-HL-paper-p043-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p043-i0.png",
-          "srcHash": "d9cbb6b18b6c2e1301c431415b1dbaac",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q4(b), typeset as the State Examinations Commission set it. It reads: Sine Rule: 180−45 = 67∙5° 10√2−√2 sin67∙5 = sin45 10√2−√2sin67∙5 = 10 x = sin45 OR Cosine Rule: (10√2 −√2) = x² + x²−2(x)(x) cos 45° (2 −√2)x² = 100(2 −√2) x = 10 [as x > 0] OR Drop a perpendicular from C: 5√2−√2 cos 67∙5 = 5√2−√2 x = cos67∙5 = 10",
+          "srcHash": "b8839d0f832c0d862f40ede5c3cfed64",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q4(b), typeset as the State Examinations Commission set it. It reads: Sine Rule: 180−45 = 67∙5° sin67∙5 = x 10√2−√2/sin45 sin67∙5 = sin45/10√2−√2 sin67∙5 x = 10√2−√2 sin67∙5/sin45 = 10 OR Cosine Rule: (10√2 −√2) = x² + x²−2(x)(x) cos 45° (2 −√2)x² = 100(2 −√2) x = 10 [as x > 0] OR Drop a perpendicular/5√2−√2 from C: cos 67∙5 = 5√2−√2/x x = 5√2−√2/cos67∙5 = 10",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2772,8 +2814,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2022-HL-paper-p044-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p044-i0.png",
-          "srcHash": "557d2b5d3fa68cb10fdd846a367b3c49",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q5(a)(ii), typeset as the State Examinations Commission set it. It reads: 400 = 0∙3375 p̂ = 0∙3375 ± √400 = 0∙3375 ± 0∙05 = [0∙2875, 0∙3875]",
+          "srcHash": "5c164811b0f50b64f41899c385e77800",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q5(a)(ii), typeset as the State Examinations Commission set it. It reads: (a) (i) p̂ = 135/400 = 0∙3375 (ii) 0∙3375 ± 1/√400 1/√400 = 0∙3375 ± 0∙05",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2898,8 +2940,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2022-HL-paper-p047-i1",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p047-i1.png",
-          "srcHash": "ff8488dce6ff5c6cd908e773736b81e6",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q7(b), typeset as the State Examinations Commission set it. It reads: 3𝜋r²h = 12𝜋 so r²h = 36 Vsmall = 3𝜋(kr)²(2h) = 150𝜋 so k²r²h = 225 Vlarge = So k²(36) = 225 k = √²²⁵ 2 or 2∙5 36 =",
+          "srcHash": "512d6c7402c2140e8061ad73e664814e",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q7(b), typeset as the State Examinations Commission set it. It reads: (b) Vsmall = 1/3𝜋r2h = 12𝜋 so r2h = 36 Vlarge = 1/3𝜋(kr)2(2h) = 150𝜋 so k2r2h = So k²(36) = 225 k = √225/36 = 5/2 or 2∙5",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2920,7 +2962,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-HL-paper-p048-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p048-i0.png",
           "srcHash": "014d9b4980e33dac8d1f4ca571ab45b5",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q7(c), typeset as the State Examinations Commission set it. It reads: Length of arc from B to A: 360 × 2𝜋8 = 9∙6 𝜋 [cm] = Let radius of cone = r: 2𝜋r = 9∙6 𝜋 so r = 4∙8 [cm]",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q7(c), typeset as the State Examinations Commission set it. It reads: Length of arc from B to A: = 216/360 × 2𝜋8 = 9∙6 𝜋 [cm] Let radius of cone = r: 2𝜋r = 9∙6 𝜋 so r = 4∙8 [cm]",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2940,8 +2982,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2022-HL-paper-p048-i1",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p048-i1.png",
-          "srcHash": "523dfe929fb6b75c1c45f2e9729005e1",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q7(d)(i), typeset as the State Examinations Commission set it. It reads: 3𝜋(2∙7)³ 3𝜋r³ = V = = 82∙4479 … = 82∙448 cm³ [3 D.P.]",
+          "srcHash": "e4148eda9fc18ce3728fa50ad835edfe",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q7(d)(i), typeset as the State Examinations Commission set it. It reads: (d) (i) V = 4/3𝜋r3 = 4/3𝜋(2∙7)3 = 82∙4479 … = 82∙448 cm³ [3 D.P.]",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2962,7 +3004,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-HL-paper-p049-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p049-i0.png",
           "srcHash": "4925ce9e282d38ac2ae88eb8dd685429",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q7(d)(ii), typeset as the State Examinations Commission set it. It reads: Let r = radius of circular base: 𝜋r² = 5∙4 ⇒r = 1∙311 … Let x = vertical height of centre of sphere above horizontal cut: x² + (1∙311 … )² = 2∙7² x = √7∙29 −1∙718 … = 2∙36 … l = 2∙7 + 2∙36 … = 5∙06 = 5∙1 [cm] [1 D.P.]",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q7(d)(ii), typeset as the State Examinations Commission set it. It reads: Let r = radius of circular base: 𝜋r² = 5∙4 ⇒r = 1∙311 … Let x = vertical height of centre of sphere above horizontal cut: x = x2 + (1∙311 …/√7∙29 −1∙718 … )2 = 2∙72 = 2∙36 … l = 2∙7 + 2∙36 … = 5∙06 = 5∙1 [cm] [1 D.P.]",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2982,8 +3024,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2022-HL-paper-p049-i1",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p049-i1.png",
-          "srcHash": "99fbfbd8c6bd66014806673b473b3352",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q7(e), typeset as the State Examinations Commission set it. It reads: |EB| = 15 |EC| = √15² + 30² = 15√5 |EB| |EO| |EB| = ΔEOB is similar to ΔEBC, so |EC| 15² |EO| = 15√5 = 3√5 [cm] OR |∠EBO| = |∠BCE| and tan BCE = |EO| sin EBO = 15 and sin EBO = sin BCE = √1² + 2² = √5 So |EO| = √5 = 3√5 [cm]",
+          "srcHash": "69793c552820a846f7bd700467efb468",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q7(e), typeset as the State Examinations Commission set it. It reads: (e) |EB| |EC| = = 15/√152 + 302 = 15√5 ΔEOB is similar to ΔEBC, so |EO|/|EB| = |EB|/|EC| |EO| = 152/15√5 = 3√5 [cm] OR |∠EBO| = |∠BCE| and tan BCE = 1/2 sin EBO = |EO|/15 and sin EBO = sin BCE = 1/√12 + 22 = 1/√5 1/√5 So |EO| = 15/√5 = 3√5 [cm]",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3014,7 +3056,7 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p2-q8-a-iv", topicId: "maths-1-6", conceptId: "based-data-given-would-you-more",
+    id: "maths-2022-hl-p2-q8-a-iv", topicId: "maths-1-2", conceptId: "based-data-given-would-you-more",
     section: "B", questionRef: "2022 HL Paper 2 Q8(a)(iv)",
     questionText: "(iv) Based on the data given, would you be more confident in the value you estimated for K or for L? Give a reason for your answer",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -3046,7 +3088,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-HL-paper-p051-i1",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p051-i1.png",
           "srcHash": "0128c3bc10e4e9cb627fb1b2f61fae2c",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q8(c), typeset as the State Examinations Commission set it. It reads: 534 + S + M = 52 Mean = 534 + S + M = 676 S + M = 142 Median = 54, so the least value S could be is 55 Greatest value of S = 142 – 55 = 87",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q8(c), typeset as the State Examinations Commission set it. It reads: (c) Mean = 534 + S + M/13 = 52 534 + S + M = 676 S + M = 142 Median = 54, so the least value S could be is 55 Greatest value of S = 142 – 55 = 87",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3109,7 +3151,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-HL-paper-p053-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p053-i0.png",
           "srcHash": "6749583421d3125af58a50ada6553a90",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q9(a), typeset as the State Examinations Commission set it. It reads: 2(35)(30) sin 50 Area Field 1 = = 402∙1 … = 402 [m²] [nearest m²] 3 × Area Field 1 Area Field 2 = [since both have common perp. height] 402∙1… = 134 [m²] [nearest m²] = OR 2(35)(40) sin 50 = 536∙2 … Total area = So, area Field 2 = 536∙2 … −402∙1 … = 134 [m²] [nearest m²]",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q9(a), typeset as the State Examinations Commission set it. It reads: (a) Area Field 1 = 1/2(35)(30) sin 50 = 402∙1 … = 402 [m²] [nearest m²] Area Field 2 = 1/3 × Area Field 1 [since both have common perp. height] = 402∙1…/3 = 134 [m2] [nearest m2] OR Total area = 1/2(35)(40) sin 50 = 536∙2 … So, area Field 2 = 536∙2 … −402∙1 … = 134 [m²] [nearest m²]",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3150,8 +3192,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2022-HL-paper-p054-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p054-i0.png",
-          "srcHash": "33436ff43185760304dfe50f4e927b5c",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q9(c)(i), typeset as the State Examinations Commission set it. It reads: |P1O| = √10² + 10² = 14∙142 … km ≈14 142 m 14 142 343 = 41∙2 … secs = 41 [secs] [∈ℕ] T = OR cos 45° = |P1O| So |P1O| = cos45^° = 14∙142 … km, etc.",
+          "srcHash": "1cb3c70b98aad0ac29e388cc45332b03",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q9(c)(i), typeset as the State Examinations Commission set it. It reads: |P₁O| = √10² + 10² = 14∙142 … km ≈14 142 m T = 14 142/343 = 41∙2 … secs = 41 [secs] [∈ℕ] OR cos 45° = 10/|P1O| So |P1O| = 10/cos45° = 14∙142 … km, etc.",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3172,7 +3214,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-HL-paper-p054-i1",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p054-i1.png",
           "srcHash": "512ada05c5823f16580a53520e7d32cd",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q9(c)(ii), typeset as the State Examinations Commission set it. It reads: |P1P2| = 41 × 255 = 10 455 m So tan 𝜃= 10 000 𝜃= 2∙60 … = 2∙6[°] [1 D.P.]",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q9(c)(ii), typeset as the State Examinations Commission set it. It reads: |P₁P₂| = 41 × 255 = 10 455 m (ii) So tan 𝜃= 455/10 000 𝜃= 2∙60 … = 2∙6[°] [1 D.P.]",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3193,7 +3235,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-HL-paper-p054-i2",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p054-i2.png",
           "srcHash": "6e6ab37d5cbda2d23519d4dab93e5d36",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q9(d)(i), typeset as the State Examinations Commission set it. It reads: For example: The time taken for the sound to go from P3 to O [LHS] is the same as the time taken for the plane to go from P3 to P4 [RHS]",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q9(d)(i), typeset as the State Examinations Commission set it. It reads: For example: The time taken for the sound to go from P₃ to O [LHS] is the same as the time taken for the plane to go from P₃ to P₄ [RHS]",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3213,8 +3255,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2022-HL-paper-p055-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p055-i0.png",
-          "srcHash": "a193e9fbde1e8f2a3f079d37f6dad878",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q9(d)(ii), typeset as the State Examinations Commission set it. It reads: √100 + d² 2d = 0∙255 0∙343 2 × 0∙343 × d = √100 + d² 0∙255 255d = √100 + d² (7∙23 … )d² = 100 + d² (6∙23 … )d² = 100 d² = 6∙23^… = 16∙03 … d = √16∙03 … = 4∙00 … = 4 [1 D.P.]",
+          "srcHash": "ae71401688081be098a6dc95b7ed861c",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q9(d)(ii), typeset as the State Examinations Commission set it. It reads: Q9 (d) Model/√100 + d2 Solution 2d – 50 Marks (d) √100 + d2/0∙343 = 2d/0∙255 2 × 0∙343 × d/0∙255 = √100 + d2 686/255d = √100 + d2 (7∙23 … )d² = 100 + d² (6∙23 … )d² = 100 d2 = 100/6∙23… = 16∙03 … d = 6∙23…/√16∙03 … = 4∙00 … = 4 [1 D.P.]",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3256,7 +3298,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-HL-paper-p056-i1",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p056-i1.png",
           "srcHash": "b6b3d0a0491c566c2967a321d13a0f6c",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q10(a)(ii), typeset as the State Examinations Commission set it. It reads: Look up P = 0∙8: z = 0∙84 or 0∙85 225−x = 0 ∙84 Time = So Time = 225 −0∙84(12) = 214∙92 Or Time = 225 −0∙85(12) = 214∙8 Accept time = 214 [secs] or 215 [secs]",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q10(a)(ii), typeset as the State Examinations Commission set it. It reads: Look up P = 0∙8: z = 0∙84 or 0∙85 (ii) Time = 225−x/12 = 0 ∙84 So Time = 225 −0∙84(12) = 214∙92 Or Time = 225 −0∙85(12) = 214∙8 Accept time = 214 [secs] or 215 [secs]",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3318,8 +3360,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2022-HL-paper-p057-i1",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p057-i1.png",
-          "srcHash": "31e7463b0eecd77f762e69e7675563d0",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q10(d), typeset as the State Examinations Commission set it. It reads: 50 possible pairs of numbers add to 101: 1 + 100, 2 + 99, ... , 50 + 51 300C2 = 44 850 pairs in total. 44 850 = So P = OR 100 different 1st numbers could be picked; for each, only one 2nd number will give 101: P = 299 = 300 ×",
+          "srcHash": "8f3deca7a8c162cb11efa489b6a42ba1",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q10(d), typeset as the State Examinations Commission set it. It reads: 50 possible pairs of numbers add to 101: 1 + 100, 2 + 99, ... , 50 + 51 300C2 = 44 850 pairs in total. So P = 50/850 = 44 1/897 OR 100 different 1st numbers could be picked; for each, only one 2nd number will give 101: P = 100/300 × 1/299 = 1/897",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3340,7 +3382,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-HL-paper-p058-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p058-i0.png",
           "srcHash": "94284cc2f3f867d775b672d109d10f75",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q10(e), typeset as the State Examinations Commission set it. It reads: Windy: 5265 6000 = 0∙8775 So z = 1∙16 or 1∙17 So Time = 254 + 1∙16(38) = 298∙08 Or Time = 254 + 1∙17(38) = 298∙46 Sunny: 298∙08−247 = 1∙76137 … z = 298∙46−247 = 1∙77448 … Or z = Taking z = 1∙76, there are 0∙9608 of runners are faster than Sorcha, so position = 0∙9608 × 2000 = 1921∙6 , i.e. 1921th or 1922th Taking z = 1∙77, position = 0∙9616 × 2000 = 1923∙2 , i.e. 1923th or 1924th Taking z = 1∙78, position = 0∙9625 × ",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q10(e), typeset as the State Examinations Commission set it. It reads: Windy: 5265/6000 = 0∙8775 So z = 1∙16 or 1∙17 So Time = 254 + 1∙16(38) = 298∙08 Or Time = 254 + 1∙17(38) = 298∙46 Sunny: z = 298∙08−247/29 = 1∙76137 … Or z = 298∙46−247/29 = 1∙77448 … Taking z = 1∙76, there are 0∙9608 of runners are faster than Sorcha, so position = 0∙9608 × 2000 = 1921∙6 , i.e. 1921th or 1922th Taking z = 1∙77, position = 0∙9616 × 2000 = 1923∙2 , i.e. 1923th or 1924th Taking z = 1∙78, position = 0∙9",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3360,8 +3402,29 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2023-HL-paper-p007-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p007-i0.png",
-          "srcHash": "ede4f18262899124ba94f0396539d77c",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q1(b), typeset as the State Examinations Commission set it. It reads: j + k = hk k−hk = −j k(1 −h) = −j 1−ℎ or k = k = − ℎ−1 Mathematics – Higher Level",
+          "srcHash": "bf042a4a8f287e54b09163227f7e390f",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q1(b), typeset as the State Examinations Commission set it. It reads: j + k = hk k−hk = −j k(1 −h) = −j k = − j/1−ℎ or k = j/ℎ−1 Mathematics – Higher Level",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-q1-c", topicId: "maths-3-1", conceptId: "factor-value-value-leaving-certificate-2023",
+    section: "B", questionRef: "2023 HL Paper 1 Q1(c)",
+    questionText: "x²−px + 1 is a factor of x³−2x−3r, where p, r∈ℝ and p < 0. Find the value of p and the value of r. p= ____________ and r= ____________",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p1-q1-c-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct division, or sets up long 2 steps correct", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Marked in order: Low Partial Credit; High Partial Credit; High Partial Credit; Low Partial Credit; Mid Partial Credit.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Work of merit, for example, some correct division, or sets up long 2 steps correct","3 steps correct Method 2 4 steps: 1. Equation set up 2. Expansion of the product (Allow with 3 or more terms correct) 3. Value of p found 4. Value of r found Work of merit, for example, 2 steps correct","3 steps correct. Method 3 1. Grid set up 2. Grid completed (Allow with 3 or more terms correct) 3. Value of p found 4. Value of r found","Work of merit, for example, mentions linear factor.","2 steps correct."],"perOptionSteps":[2,1,1,1]} },
+    ],
+    figure: {
+          "candId": "maths-2023-HL-paper-p008-i0",
+          "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p008-i0.png",
+          "srcHash": "43c8fefaff1e925b457e98f4d1d5392d",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q1(c), typeset as the State Examinations Commission set it. It reads: Method 1 x2−px + 1 ⁄ x + p/x3 + 0x2−2x−3r x3−px2 + x/px2−3x−3r px2−p2x + p/(p2−3)x−3r−p p2 = p2−3 3 = 0 −3r−p = 0/−3r−(−√3) = 0 p2 = p = −√3 3 [p < 0] −3r−(−√3) = /√3 = 3r 0 r = √3/3 OR Method 2 (x²−px + 1)(x + k) = x³−2x−3r x³−px² + x + kx²−pkx + k = x³−2x−3r x³ + (k−p)x² + (1 −pk)x + k = x³−2x−3r 1 −pk = −2 k−p = 0 k = −3r k = p 1 −p2 = −2 r = − k/3 p² = 3 p = −√3 [p < 0] = − −√3/3 = √3/3 OR Method 3 −3r x² x³ −3rx",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3382,7 +3445,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-HL-paper-p009-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p009-i0.png",
           "srcHash": "13768e6a4696b533b69a53fcded82528",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q2(a), typeset as the State Examinations Commission set it. It reads: f′(x) = 2x + b f′(3) = 2(3) + b = 0 b = −6 f(3) = (3)²−6(3) + c = −1 9 −18 + c = −1 c = 8 OR b² x² + bx + c = (x + 2) 4 + c − 2 = 3 so b = −6 − b² − 4 + c = −1 so c = 8 OR f(x) = (x−3)²−1 = x²−6x + 8",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q2(a), typeset as the State Examinations Commission set it. It reads: f′(x) = 2x + b f′(3) = 2(3) + b = 0 b = −6 f(3) = (3)²−6(3) + c = −1 9 −18 + c = −1 c = 8 OR x2 + bx + c = (x + b/2) 2 − b2/4 + c − b/2 = 3 so b = −6 − b2/4 + c = −1 so c = 8 f(x) = (x−3)²−1 = x²−6x + 8",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3424,7 +3487,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-HL-paper-p011-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p011-i0.png",
           "srcHash": "c2a0b4d4811b2fafcf574f54b2c2db7c",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q3(a), typeset as the State Examinations Commission set it. It reads: Assume that √2 is rational. b where a, b∈ℤ, b ≠ 0 and √2 = HCF(a , b) = 1 2 = a² b² 2b² = a² ⇒a² is even If a² is even, then a is even. ∴a = 2k, where k∈ℤ 2b² = (2k)² 2b² = 4k² b² = 2k² ∴b² is even If b² is even, then b is even. If both a and b are even, then they have 2 as a common factor. This contradicts the assumption that HCF(a, b) = 1.",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q3(a), typeset as the State Examinations Commission set it. It reads: Q3 (a) Model Assume that Solution –/√2 is 30 rational. Marks (a) Assume/√2 = a b where that √2 a, is b∈ℤ, rational. b ≠ 0 and √2 = a/b where a, b∈ℤ, b ≠ 0 and HCF(a , b) = 1 2 = a2/b2 2b² = a² ⇒a² is even If a² is even, then a is even. ∴a = 2k, where k∈ℤ 2b² = (2k)² 2b² = 4k² b² = 2k² ∴b² is even If b² is even, then b is even. If both a and b are even, then they have 2 as a common factor. This contradicts the assumpt",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3466,7 +3529,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-HL-paper-p012-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p012-i0.png",
           "srcHash": "d683b2594187e9c342d4b8f4c5ee8290",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q3(c)(ii), typeset as the State Examinations Commission set it. It reads: Any valid explanation, for example: the power you need to raise 6 to, to get m. log6m > 1 Mathematics – Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q3(c)(ii), typeset as the State Examinations Commission set it. It reads: Any valid explanation, for example: the power you need to raise 6 to, to get m. log₆m > 1 Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3487,7 +3550,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-HL-paper-p013-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p013-i0.png",
           "srcHash": "e0d2af527f2e7d9bfcd5a5bb925817a0",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q4(a), typeset as the State Examinations Commission set it. It reads: Method 1 (1 + i)² + (3 −2i)(1 + i) + p = 0 1 + 2i + i² + 3 + i−2(i)² + p = 0 5 + 3i + p = 0 p = −5 −3i Method 2 Let the second root = z2 Sum of roots: 1 + i + z2 = −3 + 2i z2 = −4 + i Product of roots: (1 + i)(−4 + i) = p p = −5 −3i Method 3 −(3−2i)±√(3−2i)2−4p z = 2z = −(3 −2i) ± √(3 −2i)²−4p 2z + 3 −2i = ±√(3 −2i)²−4p [2z + 3 −2i]² = (3 −2i)²−4p z = 1 + i satisfies this equation [2(1 + i) + 3 −2i]² = (3 −2i)²−4p 5²",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q4(a), typeset as the State Examinations Commission set it. It reads: Method 1 (1 + i)² + (3 −2i)(1 + i) + p = 0 1 + 2i + i² + 3 + i−2(i)² + p = 0 5 + 3i + p = 0 p = −5 −3i Method 2 Let the second root = z₂ Sum of roots: 1 + i + z₂ = −3 + 2i z₂ = −4 + i Product of roots: (1 + i)(−4 + i) = p p = −5 −3i Method 3 z = −(3−2i)±√(3−2i)2−4p/2 2z = 2z + 3 −(3 −2i = −2i) ± √(3/±√(3 −2i)2−4p −2i)2−4p [2z + 3 −2i]² = (3 −2i)²−4p z = 1 + i satisfies this equation [2(1 + i) + 3 −2i]² = (3 −2i)²−4p ",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3507,8 +3570,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2023-HL-paper-p014-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p014-i0.png",
-          "srcHash": "1e7b3c05081ce3ea6ea6a60681166fcb",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q4(b), typeset as the State Examinations Commission set it. It reads: Reference Angle: 𝜋 𝛼= tan^(−1√3) 1 = 60° ( 3 rads) Argument: 2𝜋 𝜃= 180⁰−60⁰ = 120⁰( 3 rads) Modulus: r = √(−1)² + (√3) = √4 = 2 General Polar Form: 2 (cos (2𝜋 3 + 2n𝜋) + isin (2𝜋 3 + 2n𝜋)) 3 + 2n𝜋) + isin (2𝜋 w² = 2 (cos (2𝜋 3 + 2n𝜋)) w = [2 (cos (2𝜋 3 + 2n𝜋) + isin (2𝜋 3 + 2n𝜋))] De Moivre: 2 (2𝜋 2 (2𝜋 2[(cos 1 3 + 2n𝜋) + isin 1 3 + 2n𝜋))] w = 2 𝜋 𝜋 2[cos ( 3 + n𝜋) + isin ( 3 + n𝜋)] = 2 n = 0: 3) + isin (𝜋 w = √2 (c",
+          "srcHash": "7cff4ec6dd55925d66ad1e80ec3fa7ff",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q4(b), typeset as the State Examinations Commission set it. It reads: (b) Reference 𝛼= 1 = Angle:/tan−1√3 60° ( 𝜋 rads) 𝛼= tan−1√3/1 = 60° (/3 𝜋 rads) Argument: 𝜃= 1800−600 = 1200( 2𝜋/3 rads) Modulus: r = √(−1)² + (√3) = √4 = 2 General Polar Form: 2 (cos (2𝜋/3 + 2n𝜋) + isin (2𝜋/3 + 2n𝜋)) w2 = 2 (cos (2𝜋/3 + 2n𝜋) + isin (2𝜋/3 + 2n𝜋)) (2𝜋 (2𝜋 1/2 w = [2 (cos (2𝜋/3 + 2n𝜋) + isin (2𝜋/3 + 2n𝜋))] 2 De Moivre: w = 1/2 2[(cos 1/2 (2𝜋/3 + 2n𝜋) + isin 1/2 (2𝜋/3 + 2n𝜋))] = 2 2[cos (/3 + 𝜋 n𝜋) + i",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3549,8 +3612,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2023-HL-paper-p016-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p016-i0.png",
-          "srcHash": "276a69f95c94f36436e4617fba101385",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q5(a), typeset as the State Examinations Commission set it. It reads: f(x) = (5x² + 7)^(−1) f′(x) = −1(5x² + 7)^(−2)(10x) = −10x(5x² + 7)^(−2) −10x (5x² + 7)² f′(x) = OR u(x) = 1 so u′(x) = 0 v(x) = 5x² + 7 so v′(x) = 10x (5x2 + 7)(0)−1(10x) f′(x) = (5x2 + 7)2 −10x = (5x2 + 7)2",
+          "srcHash": "699221076e6f0f3adacac58045d91de0",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q5(a), typeset as the State Examinations Commission set it. It reads: f(x) = (5x² + 7)^(−1) f′(x) = −1(5x² + 7)^(−2)(10x) = −10x(5x² + 7)^(−2) f′(x) = −10x/(5x2 + 7)2 OR u(x) = 1 so u′(x) = 0 v(x) = 5x² + 7 so v′(x) = 10x f′(x) = (5x2 + 7)(0)−1(10x)/(5x2 + 7)2 = −10x/(5x2 + 7)2",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3570,7 +3633,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2023-HL-paper-p016-i1",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p016-i1.png",
-          "srcHash": "ca18b7133ead798a68cc57c87f87fd4f",
+          "srcHash": "866ed30d1c5d8667ed22465a89b3793a",
           "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q5(b), typeset as the State Examinations Commission set it.",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
@@ -3613,7 +3676,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-HL-paper-p020-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p020-i0.png",
           "srcHash": "68dd6f308d8a84d6171188e468866660",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q6(a), typeset as the State Examinations Commission set it. It reads: v(0) = 2 3 (0)³−6(0)² + 13(0) + 109 v(0) = 109 km/hr",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q6(a), typeset as the State Examinations Commission set it. It reads: (a) v(0) = 2/3 (0)3−6(0)2 + 13(0) + 109 v(0) = 109 km/hr",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3675,8 +3738,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2023-HL-paper-p020-i1",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p020-i1.png",
-          "srcHash": "328cfe3915124b0f2e9235d6645254fb",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q6(b), typeset as the State Examinations Commission set it. It reads: [b(1 bebx)]b 0 = e (e^b⁽b^) −e^b⁽0^)) = e e^b²−1 = e e^b² = e + 1 b² = ln(e + 1) b = √ln(e + 1) = 1 · 15 ….",
+          "srcHash": "8a250d8f54ccdaefcc7582d9475bbc52",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q6(b), typeset as the State Examinations Commission set it. It reads: [b(1 bebx)]b 0 = e (e^b⁽_b^) −e^b⁽₀^)) = e e^b²−1 = e e^b² = e + 1 b2 = b = ln(e + 1)/√ln(e + 1) = 1 · 15 ….",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3697,7 +3760,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-HL-paper-p021-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p021-i0.png",
           "srcHash": "e3daad3e69a383f78f7655b596631090",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q7(c), typeset as the State Examinations Commission set it. It reads: Maximum speed when v′(t) = 0 2t²−12t + 13 = 0 t = −(−12) ± √(−12)²−4(2)(13) 2(2) t = 4 · 58 or t = 1 · 42 Maximum at t = 1 ∙42 [as coefficient of t³ > 0 and domain of interest is [0, 4], with local min at t = 4 ∙58] OR [v′′(t) = 4t−12 v′′(1.42) < 0 ⇒maximum at t = 1.42] Mathematics – Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q7(c), typeset as the State Examinations Commission set it. It reads: Maximum speed when v′(t) = 0 2t2−12t + −(−12) 13 ± = 0/√(−12)2−4(2)(13) 2(2) t = 4 · 58 or t = 1 · 42 Maximum at t = 1 ∙42 [as coefficient of t³ > 0 and domain of interest is [0, 4], with local min at t = 4 ∙58] OR [v′′(t) = 4t−12 v′′(1.42) < 0 ⇒maximum at t = 1.42] Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3718,7 +3781,28 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-HL-paper-p022-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p022-i0.png",
           "srcHash": "e47d902bb7ccfcdf5e93c782a6368d43",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q7(d), typeset as the State Examinations Commission set it. It reads: 5 −0 [∫(2 3 t³−6t² + 13t + 109)dt ] 5 [t⁴ 6 −2t³ + 13t² + 109t]5 = 1 5 [((5)⁴ −2(5)³ + 13(5)² = 1 + 109(5))−(0)] = 112 · 333 …. km/hr = 112 · 33 km/hr [2 d.p.] Mathematics – Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q7(d), typeset as the State Examinations Commission set it. It reads: 1/5 −0 0 5 [∫(2/3 t3−6t2 + 13t + 109)dt ] = 1/5 [t4/6 −2t3 + 13t2/2 + 109t]5 0 = 1/5 [((5)4/6 −2(5)3 + 13(5)2/2 + 109(5))−(0)] = 112 · 333 …. km/hr = 112 · 33 km/hr [2 d.p.] Mathematics – Higher Level",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-q7-e", topicId: "maths-5-2", conceptId: "taking-derivative-second-derivative-four-graphs",
+    section: "B", questionRef: "2023 HL Paper 1 Q7(e)",
+    questionText: "Taking v′(t) to be the derivative of v, and v′′(t) to be the second derivative of v: (e) v′(1) > 0 and v′′(1) < 0 Four graphs, A, B, C, and D, are shown below",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p1-q7-e-r1", kind: "anyN", verbatim: "Answer correct Work of merit in either justification", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Answer correct Work of merit in either justification","2 elements correct Answer given as B or D, justified correctly using v′(1) Answer given as B justified correctly using v′′(1) Answer given as A justified correctly using v′′(1) No answer given, but 2 justifications are correct"],"perOptionSteps":[2,3]} },
+    ],
+    figure: {
+          "candId": "maths-2023-HL-paper-p023-i0",
+          "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p023-i0.png",
+          "srcHash": "fff3e9da624c2cdfaaa68c79ea0b25cf",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q7(e), typeset as the State Examinations Commission set it. It reads: Answer: B Justification: v′(1) > 0: Function is increasing so the slope is positive. v′′(1) < 0: Rate of increase is slowing. OR The slope is decreasing. Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3760,7 +3844,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-HL-paper-p025-i2",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p025-i2.png",
           "srcHash": "d484d81e1011a1306a7eacea8f5b5aa7",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q8(c), typeset as the State Examinations Commission set it. It reads: 1 · 024 = (1 + i)⁴ (1.024) 4 = 1 + i (1.024) 4−1 = i 0 · 005947. . = i Rate = 0 · 59% Mathematics – Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q8(c), typeset as the State Examinations Commission set it. It reads: 1 · 024 = (1 + i)⁴ (1.024) 1/4 = 1 + i (1.024) 1/4−1 = i 0 · 005947. . = i Rate = 0 · 59% Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3802,7 +3886,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-HL-paper-p026-i2",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p026-i2.png",
           "srcHash": "44e23e80593cdfa54b491dcac77aa128",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q8(f), typeset as the State Examinations Commission set it. It reads: Cost Price = 82% of Selling Price Profit = 18% of Selling Price 0·18 Mark-up = 0^·⁸² × 100 = 0 · 2195 = 22% [nearest percent] OR Let x = selling price and y = cost price x−y = 0.18 →y = 0.82x Mark up: x−0.82x x−y 0.82x = y = Mark up: 41 × 100 = 21.95 = 22% [nearest percent] Mathematics – Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q8(f), typeset as the State Examinations Commission set it. It reads: Cost Price = 82% of Selling Price Profit = 18% of Selling Price Mark-up = 0·18/0·82 × 100 = 0 · 2195 = 22% [nearest percent] OR Let x = selling price and y = cost price x−y/x = 0.18 →y = 0.82x Mark up: x−y/y = x−0.82x/0.82x = 9/41 Mark up: 9/41 × 100 = 21.95 = 22% [nearest percent] Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3864,8 +3948,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2023-HL-paper-p030-i1",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p030-i1.png",
-          "srcHash": "baea7f820561e14a07b9441f1b1d15d7",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q10(b), typeset as the State Examinations Commission set it. It reads: Method 1 h = Using similar triangles w1 2 = 3 ÷ 8 (w1 = length of middle rectangle) w1 = w2 = 3 (w2 = length of top rectangle) Area = 2 (8 3 (8 3 (8 3) + 2 3) + 4 3) 3units² = Method 2 6 = 6 small triangles of length 2 × 3 = 3 × Areasmall^∆′s = 6 × 2 × 2 × 8 = 8 Areabig^∆= 3 units² 3 + 8 = Arearectangles = Method 3 Sum of lengths of horizontal sides of small triangles (i.e., excess of rectangles over large triangle) ",
+          "srcHash": "99a441b1bf2d116f9ea55bd9d29e65e3",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q10(b), typeset as the State Examinations Commission set it. It reads: Method 1 h = 8/3 Using similar triangles w1/2 = 8/3 ÷ 8 (w1 = length of middle rectangle) w1 = 2/3 w2 = 4/3 (w2 = length of top rectangle) Area = 2 (8/3) + 4/3 (8/3) + 2/3 (8/3) = 32/3units2 Method 2 6 small triangles of length 2/6 = 1/3 Areasmall ∆′s = 6 × 1/2 × 1/3 × 8/3 = 8/3 Areabig ∆= 1/2 × 2 × 8 = 8 Arearectangles = 8/3 + 8 = 32/3 units2 Method 3 Sum of lengths of horizontal sides of small triangles (i.e., exce",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3886,7 +3970,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-HL-paper-p032-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p032-i0.png",
           "srcHash": "7cfa19901fcb537b0e5c0b733f5dd8dd",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q10(d), typeset as the State Examinations Commission set it. It reads: 8(n−1) > 0 · 95(8) n−1 > 0 · 95 n−1 > 0 · 95n 0 · 05n > 1 n > 20 n = 21 OR 8n²(n−1) > 0.95(8)n² 8n²−7.6n²−8n > 0 0.4n²−8n > 0 n²−20n > 0 n(n−20) > 0 n > 20 n = 21",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q10(d), typeset as the State Examinations Commission set it. It reads: (d) 8(n−1)/n > 0 · 95(8) n−1/n > 0 · 95 n−1 > 0 · 95n 0 · 05n > 1 n > 20 n = 21 OR 8n2(n−1)/n > 0.95(8)n2 8n²−7.6n²−8n > 0 0.4n²−8n > 0 n²−20n > 0 n(n−20) > 0 n > 20 n = 21",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3907,7 +3991,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-HL-paper-p032-i1",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p032-i1.png",
           "srcHash": "428545bfb390ad89bfa0ba9393c03069",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q10(e)(i), typeset as the State Examinations Commission set it. It reads: ℎ ℎ (e) (i) = c² ∫x² c² h²∫x²dx h² = c² h²[x³ 3 ]h = c² h²[h³ 3 −0] = c²h Mathematics – Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q10(e)(i), typeset as the State Examinations Commission set it. It reads: ℎ ℎ (e) (i) ∫x2/h2 c2 dx = c2/h2∫x2dx = c2 h2[x3/3 ]h 0 = c2 h2[h3/3 −0] = c2h/3 Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3927,8 +4011,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2023-HL-paper-p033-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p033-i0.png",
-          "srcHash": "d595ff0ebcf983c6772c5177a1cbc3f9",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q10(e)(ii), typeset as the State Examinations Commission set it. It reads: dS dS (e)(ii) dt = dt = 3 dx × x2 c2 S(x) = ℎ2 dx = c² dS h²(2x) dt = c² dS h²(2x)(3) = 6c²x h² ℎ When x = 6c²(h 2) = 3c² dS dt = h² Mathematics – Higher Level",
+          "srcHash": "62c15bc3e76d9f48c599290016262976",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q10(e)(ii), typeset as the State Examinations Commission set it. It reads: (e)(ii) dx/dt = 3 dS/dt = dS/dx × dx/dt S(x) = x2 c2/ℎ2 dS/dx = c2/h2(2x) dS/dt = c2/h2(2x)(3) = 6c2x/h2 When x = ℎ/2 dS 6c2(h/2) = 3c2 dS/dt = 2)/h2 6c2(h = 3c2/h Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3949,7 +4033,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-HL-paper-p039-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p039-i0.png",
           "srcHash": "0a1183a72eb79946814497eac35edcd8",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q1(c), typeset as the State Examinations Commission set it. It reads: Will get less than €16 unless 9, 9, so: 1 −P(9, 9) = 1 − 4 = 4 × 144or = 0 ∙9375 OR 12 × 4 P(0,0) P(0 first) 12 × 5 P(0,6) 12 × 3 P(0,9) 12 × 4 P(6,0) P(6 first) 12 × 5 P(6,6) 12 × 3 P(6,9) 12 × 4 P(9,0) P(9,0) 12 × 5 P(9,6) P(9,6) TOTAL = = = 0 ∙9375 Mathematics – Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q1(c), typeset as the State Examinations Commission set it. It reads: Will get less than €16 unless 9, 9, so: 1 −P(9, 9) = 1 − 1/4 × 1/4 = 135/144 or 15/16 = 0 ∙9375 OR P(0,0) 4/12 × 4/12 P(0 first) 4 P(0,6) 4/12 12 × 12 5/12 P(0 first) 4/12 P(0,9) 4/12 × 3/12 P(6,0) 5/12 × 4/12 P(6 first) 5 P(6,6) 5/12 12 × 12 5/12 P(6 first) 5/12 P(6,9) 5/12 × 3/12 P(9,0) 3/12 × 4/12 P(9,0) 1/12 P(9,6) 3/12 × 5/12 P(9,6) 5/48 TOTAL = 15/16 = 15/16 = 0 ∙9375 Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3969,8 +4053,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2023-HL-paper-p040-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p040-i0.png",
-          "srcHash": "c6e36afc315ead0cc51ae90ba946ef71",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q2(b), typeset as the State Examinations Commission set it. It reads: cos(A−B) = cos Acos B + sin Asin B Replace A with 90 −A: cos(90 −A−B) = cos(90 −A) cos B + sin(90 −A) sin B ….as sin A = cos(90 −A) cos(90 −(A + B)) = sin Acos B + cos Asin B sin(A + B) = sin Acos B + cos Asin B sin A = cos(90 −A) sin(A + B) = cos(90 −(A + B)) = cos((90 −A) −B) = cos(90 −A) cos B + sin(90 −A) sin B … by cos (A−B) formula = sin Acos B + cos Asin B Scale 10C (0, 4, 7, 10) Low Partial Credit: • Work of ",
+          "srcHash": "03912c2df381add927f2ba18cb45f93f",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q2(a), typeset as the State Examinations Commission set it. It reads: cos(A−B) = cos Acos B + sin Asin B Replace A with 90 −A: cos(90 −A−B) = cos(90 −A) cos B + sin(90 −A) sin B ….as sin A = cos(90 −A) cos(90 −(A + B)) = sin Acos B + cos Asin B sin(A + B) = sin Acos B + cos Asin B sin A = cos(90 −A) sin(A + B) = cos(90 −(A + B)) = cos((90 −A) −B) = cos(90 −A) cos B + sin(90 −A) sin B … by cos (A−B) formula = sin Acos B + cos Asin B Scale 10C (0, 4, 7, 10) Low Partial Credit: • Work of ",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3990,8 +4074,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2023-HL-paper-p042-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p042-i0.png",
-          "srcHash": "a6bd227939e12520d391cb65809e1a25",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q3(a), typeset as the State Examinations Commission set it. It reads: Method 1 (4, 6), (−3, −1), (0, 1). −1 (4, −5), (−3, −12), (0, 0) 2|4(−12) −(−3)(−5)| AREA = 2|−63| = = 31· 5 OR Method 2 Uses any one of the following formulae: 2absinc 1. Area = 2 × base × perpendicular height 2. Area = Mathematics – Higher Level",
+          "srcHash": "0886e63318abe142e40fef34ba67b760",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q3(a), typeset as the State Examinations Commission set it. It reads: Method 1 (4, 6), (−3, −1), (0, 1). −1 (4, −5), (−3, −12), (0, 0) AREA = 1/2|4(−12) −(−3)(−5)| = 1/2|−63| = 31· 5 OR Method 2 Uses any one of the following formulae: 1. Area = 1/2absinc 2. Area = 1/2 × base × perpendicular height Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4011,8 +4095,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2023-HL-paper-p043-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p043-i0.png",
-          "srcHash": "1e4f6d917dc0367859ff4008dd4760d0",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q3(b)(i), typeset as the State Examinations Commission set it. It reads: k + l −1 + 5 , 2) Mid-point = ( k + l 2) = (2, OR −1 to 5 is 6 steps, then x = −1 + 3 = 2 = k + l k to l is (l−k)steps , then y = k + l−k k + l 2) Mid-point = (2, Mathematics – Higher Level",
+          "srcHash": "0c5ebadd6553e7810fff2d415bf6c446",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q3(b)(i), typeset as the State Examinations Commission set it. It reads: (b) (i) Mid-point = ( −1 + 5/2 , k + l/2) = (2, k + l/2) OR −1 to 5 is 6 steps, then x = −1 + 3 = 2 k to l is (l−k)steps , then y = k + l−k/2 = k + /2 Mid-point = (2, k + l/2) Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4022,7 +4106,7 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p2-q3-b-ii", topicId: "maths-2-2", conceptId: "perpendicular-bisector-value-value",
+    id: "maths-2023-hl-p2-q3-b-ii", topicId: "maths-2-3", conceptId: "perpendicular-bisector-value-value",
     section: "B", questionRef: "2023 HL Paper 2 Q3(b)(ii)",
     questionText: "The perpendicular bisector of [AB] is: 3x+ 2y−14 = 0 Find the value of l and the value of k",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
@@ -4034,6 +4118,27 @@ export const CARDS: SecCard[] = [
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p044-i0.png",
           "srcHash": "d0516234997b7af0b832eef1d3d8abfa",
           "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q3(b)(ii), typeset as the State Examinations Commission set it.",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-q4-ii", topicId: "maths-2-2", conceptId: "circle-has-equation-write-down-centre",
+    section: "B", questionRef: "2023 HL Paper 2 Q4(ii)",
+    questionText: "The circle c has equation: (x−h)2+ (y+ 3)2= 12 where h∈ℝ. Write down the centre and radius of the circle c. Give your answer in terms of h, where appropriate. The perpendicular distance from the line x−4y+ 7 = 0 to the centre of the circle c is 5 units. The circle s passes through the points (8, 1), (a, 3), and (a, −5), as shown in the diagram on the right (not to scale), where 0 <a<5, a∈ℝ",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    rows: [
+    { id: "maths-2023-hl-p2-q4-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, some substitution into relevant formula, or draws diagram with relevant figures (5, centre marked, and line)", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12, four parts for 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, some substitution into relevant formula, or draws diagram with relevant figures (5, centre marked, and line)","1 step correct","2 steps correct"],"perOptionSteps":[4,4,7]} },
+    ],
+    figure: {
+          "candId": "maths-2023-HL-paper-p045-i0",
+          "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p045-i0.png",
+          "srcHash": "275d6d42f67bc888188c68650dc8f024",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q4(ii), typeset as the State Examinations Commission set it. It reads: (ii) |h−4(−3) + 7|/(−4)2 = √(1)2 + |h−4(−3) + 7|/(−4)2 = 5 |h + 19| = 5√17 h + 19 = 5√17 or h + 19 = −5√17 h = 5√17 −19 or h = −5√17 −19 OR (h + 19)² = 425 h² + 38h−64 = 0 h = 5√17 −19 or h = −5√17 −19 Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4064,6 +4169,27 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-q4-b", topicId: "maths-3-1", conceptId: "circle-passes-through-points-shown-diagram",
+    section: "B", questionRef: "2023 HL Paper 2 Q4(b)",
+    questionText: "The circle s passes through the points (8, 1), (a, 3), and (a, −5), as shown in the diagram on the right (not to scale), where 0 <a<5, a∈ℝ",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p2-q4-b-r1", kind: "anyN", verbatim: "Some correct substitution of relevant point", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Some correct substitution of relevant point","Finds k = −1 Finds f = 1 4 independent equations in g, f, c and a","k = −1 and quadratic equation in h Finds f = 1 and quadratic equation in g Full Credit –1: Finds the relevant constants, but equation of circle not stated Finds equation of circles for both values of h but does not select the correct one"],"perOptionSteps":[2,1,2]} },
+    ],
+    figure: {
+          "candId": "maths-2023-HL-paper-p046-i0",
+          "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p046-i0.png",
+          "srcHash": "ac25204fbb24ef8c486a5c8438a77490",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q4(b), typeset as the State Examinations Commission set it. It reads: Centre = (h, k) k = 3 −5/2 = −1 (x−h)² + (y + 1)² = (√20) x² + y²−2hx + h² + 2y + 1 = 20 (8,1) is on the circle… (8)² + (1)²−2h(8) + h² + 2(1) + 1 = 20 h²−16h + 48 = 0 (h−4)(h−12) = 0 h = 4, h = 12 s: (x−4)² + (y + 1)² = 20 OR (a, 3): a² + 2ga + 6f + c = −9 (a, −5): a² + 2ga−10f + c = −25 f = 1 So: (8, 1): 16g + 2f + c = −65 16g + c = −67 … Eqn A So: √g² + f²−c = √20 g²−c = 19 … Eqn B So: From A and B: g² + 16g + 48 ",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q5-a-iii", topicId: "maths-1-7", conceptId: "iii-rohan-repeats-experiment-large-number",
     section: "B", questionRef: "2023 HL Paper 2 Q5(a)(iii)",
     questionText: "(iii) Rohan repeats this experiment a large number of times. Explain why you would expect the correlation coefficient between the number of red cubes and the number of green cubes per trial to be negative",
@@ -4075,7 +4201,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-HL-paper-p047-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p047-i0.png",
           "srcHash": "57dc0dfb81c8b1ca7eb82e372cce9abc",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q5(a)(iii), typeset as the State Examinations Commission set it. It reads: 0 + 3 + 2 + 2 + 4 + 5 + 1 7 = 2 · 42 … = Mean = 2.4 [1 d.p.] Standard deviation = 1 · 59. . = 1.6 [1 d.p.] (ii)r = −0 · 76204 … r = −0 · 762 [3 d.p.] (iii) Any valid explanation, for example: If the number of red cubes increases then there will be less green cubes",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q5(a)(iii), typeset as the State Examinations Commission set it. It reads: (ii) Mean 0 + 3 + 2 + 2 + 4 + 5 + 1/7 = 17/7 = 2 · 42 … = 2.4 [1 d.p.] Standard deviation = 1 · 59. . = 1.6 [1 d.p.] (ii)r = −0 · 76204 … r = −0 · 762 [3 d.p.] (iii) Any valid explanation, for example: If the number of red cubes increases then there will be less green cubes",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4159,7 +4285,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-HL-paper-p049-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p049-i0.png",
           "srcHash": "5338d954e8e0a723dc6887e51aa8df40",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q6(b)(ii), typeset as the State Examinations Commission set it. It reads: |FE| = 1 2 |AB| = 10 |FG| = 40 tan 𝜃= |AG| |FG| = 90 𝜃= 66 · 037. . ° 𝜃= 66° [nearest degree] OR |FE| = 1 2 |AB| = 10 Triangles FED and BCD are similar So |ED| = 90/4 = 22.5 tan 𝜃= |ED| |FE| = 22.5 𝜃= 66 · 037. . ° 𝜃= 66° [nearest degree] OR |FE| = 1 2 |AB| = 10 Triangles FED and BCD are similar So |DC| = 90 x 4 = 67.5 tan 𝜃= |CD| |BC| = 67.5 𝜃= 66 · 037. . ° 𝜃= 66° [nearest degree] Mathematics – Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q6(b)(ii), typeset as the State Examinations Commission set it. It reads: (b) (ii) |FE| = 1/2 |AB| = 10 |FG| = 40 tan 𝜃= |AG| |FG| = 90 𝜃= 66 · 037. . ° 𝜃= 66° [nearest degree] OR |FE| = 1/2 |AB| = 10 Triangles FED and BCD are similar So |ED| = 90/4 = 22.5 tan 𝜃= |ED|/|FE| = 22.5/10 𝜃= 66 · 037. . ° 𝜃= 66° [nearest degree] OR |FE| = 1/2 |AB| = 10 Triangles FED and BCD are similar So |DC| = 90 x 3/4 = 67.5 tan 𝜃= |CD|/|BC| = 67.5/30 𝜃= 66 · 037. . ° 𝜃= 66° [nearest degree] Mathematics – Hig",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4180,7 +4306,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-HL-paper-p050-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p050-i0.png",
           "srcHash": "b4c9475d684586ffdea4f99498f70ee1",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q7(a), typeset as the State Examinations Commission set it. It reads: |AC|² + 9² = 70² |AC|² = 70²−9² |AC|² = 4819 |AC| = √4819 Gradient = √4819 × 100 = 12.96.. =13% [nearest percent]",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q7(a), typeset as the State Examinations Commission set it. It reads: |AC|² + 9² = 70² |AC|² = 70²−9² |AC|² = 4819 |AC| = √4819 Gradient = 9/√4819 × 100 = 12.96.. =13% [nearest percent]",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4201,7 +4327,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-HL-paper-p050-i1",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p050-i1.png",
           "srcHash": "de29837732deaa38101ac0c678f6de8e",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q7(b), typeset as the State Examinations Commission set it. It reads: | < POR| = 5° |RO| sin 87 = 20 sin 5 |RO| = 20 sin 87 sin 5 |RO| = 229 · 16 m |HO| tan 17 = 229 · 16 |HO| = 229 · 16 tan 17 |HO| = 70 [m] Mathematics – Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q7(b), typeset as the State Examinations Commission set it. It reads: | < POR| = 5° |RO|/sin 87 = 20/sin 5 |RO| = 20 sin 87/sin 5 |RO| = 229 · 16 m tan 17 = |HO|/229 · 16 |HO| = 229 · 16 tan 17 |HO| = 70 [m] Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4222,7 +4348,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-HL-paper-p051-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p051-i0.png",
           "srcHash": "c80e327339069d28ec66ac0cf238f3c8",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q7(d), typeset as the State Examinations Commission set it. It reads: (c) Range = 2 ± 0 · 4 a = 1 · 6b = 2 · 4 OR 𝜋 𝜋 V′(t) = −0 · 4 [(−sin 2)] = 0 2t) ( 𝜋 2t = 0 𝜋 𝜋 2t = 0 or 2t = 𝜋 t = 0 or t = 2 V(0) = 1.6V(2) = 2.4 a = 1 · 6b = 2 · 4 (d) If V′(t) > 0 then the volume of air is increasing so she is breathing in. If V′(t) < 0 then the volume of air is decreasing so she is breathing out. V(0 · 5) = 2 −0 · 4 cos 𝜋",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q7(c), typeset as the State Examinations Commission set it. It reads: (c) Range = 2 ± 0 · 4 a = 1 · 6b = 2 · 4 OR V′(t) = −0 · 4 [(−sin 𝜋/2t) (/2)] 𝜋 =0 sin 𝜋/2t = 0 𝜋/2t = 0 or 𝜋/2t = 𝜋 t = 0 or t = 2 V(0) = 1.6V(2) = 2.4 a = 1 · 6b = 2 · 4 (d) If V′(t) > 0 then the volume of air is increasing so she is breathing in. If V′(t) < 0 then the volume of air is decreasing so she is breathing out. (e) (i) V(0 · 5) = 2 −0 · 4 cos 𝜋/2 (0 · 5)",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4243,7 +4369,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-HL-paper-p051-i1",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p051-i1.png",
           "srcHash": "27a3844afc9fbc35c50f5958fd6eaa10",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q7(e)(i), typeset as the State Examinations Commission set it. It reads: V(0 · 5) = 2 −0 · 4 cos 𝜋 2 (0 · 5) = 1 · 7171 … = 1 · 717 litres [3 d.p.]",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q7(e)(i), typeset as the State Examinations Commission set it. It reads: (e) (i) V(0 · 5) = 2 −0 · 4 cos 𝜋/2 (0 · 5) = 1 · 7171 … = 1 · 717 litres [3 d.p.]",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4263,8 +4389,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2023-HL-paper-p051-i2",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p051-i2.png",
-          "srcHash": "c611413d9b73b668989fc8b1324f819f",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q7(e)(ii), typeset as the State Examinations Commission set it. It reads: 𝜋 𝜋 V′(t) = −0 · 4 [(−sin 2)] 2t) ( V′(0 · 5) = 0 · 4 (𝜋 2)[sin 𝜋 2 (0 · 5)] = 0 · 4442.. = 0 · 444 litres/sec [3 d.p.] Mathematics – Higher Level",
+          "srcHash": "a549fad793747af92326f006a28439d5",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q7(e)(ii), typeset as the State Examinations Commission set it. It reads: (e) (ii) V′(t) = −0 · 4 [(−sin 𝜋/2t) (/2)] 𝜋 V′(0 · 5) = 0 · 4 (𝜋/2)[sin 𝜋/2 (0 · 5)] = 0 · 4442.. = 0 · 444 litres/sec [3 d.p.] Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4285,7 +4411,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-HL-paper-p052-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p052-i0.png",
           "srcHash": "73c4f10987b016dcc212d5fbb5504873",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q7(f), typeset as the State Examinations Commission set it. It reads: Form: a + bcos(ct) Maximum = 3 · 6 Minimum = 1 · 3 Range = [3 · 6, 1 · 3] 2(3 · 6 + 1 · 3) = 2 · 45 = a Mid-line = b = 1 2 (3 · 6 −1 · 3) = 1 · 15 Period = 2 seconds 2𝜋 c = 2 c = 𝜋 E(t) = 2 · 45 −1 · 15 cos 𝜋t Mathematics – Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q7(f), typeset as the State Examinations Commission set it. It reads: Form: a + bcos(ct) Maximum = 3 · 6 Minimum = 1 · 3 Range = [3 · 6, 1 · 3] Mid-line = 1/2(3 · 6 + 1 · 3) = 2 · 45 = a b = 1/2 (3 · 6 −1 · 3) = 1 · 15 Period = 2 seconds 2𝜋/c = 2 c = 𝜋 E(t) = 2 · 45 −1 · 15 cos 𝜋t Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4306,7 +4432,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-HL-paper-p054-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p054-i0.png",
           "srcHash": "6ac7ce0df753ba83135349d0dbd4fbd7",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q8(ii), typeset as the State Examinations Commission set it. It reads: H0: 𝜇= 3 · 87 H1: 𝜇≠3 · 87 We reject null hypothesis. Galway players do take a different average number of attempts. Confidence Interval: 3 · 6518 ≤ 𝜇≤3 · 8282 3 · 87 is NOT within the confidence interval OR 3·74−3·87 = −2 · 89 Test statistic: z = 0·36 √64 −2 · 89 < −1 · 96 so test statistic is in the critical zone of rejection OR 3·74−3·87 = −2 · 89 Test statistic: z = 0·36 √64 P(z ≤ −2 · 89) = 0 · 9981 p-value: 2 ×",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q8(ii), typeset as the State Examinations Commission set it. It reads: H₀: 𝜇= 3 · 87 H₁: 𝜇≠3 · 87 We reject null hypothesis. Galway players do take a different average number of attempts. Confidence Interval: 3 · 6518 ≤ 𝜇≤3 · 8282 3 · 87 is NOT within the confidence interval OR 3·74−3·87 Test statistic: z = 0·36/√64 0·36/√64 = −2 · 89 −2 · 89 < −1 · 96 so test statistic is in the critical zone of rejection OR 3·74−3·87 Test statistic: z = 0·36/√64 0·36/√64 = −2 · 89 P(z ≤ −2 · 89) = 0 ·",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4327,7 +4453,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-HL-paper-p053-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p053-i0.png",
           "srcHash": "81b2924f5d30f33702d7f0da6985ce89",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q8(a), typeset as the State Examinations Commission set it. It reads: = 3 · 5 −3 · 87 z = x−𝜇 = −1 · 03 0 · 36 𝜎 P(x < 3 · 5) = P(z < −1 · 03) = 1 −P(z < 1 · 03) = 1 −0 · 8485 = 0 · 1515 x̅ ± 1 · 96 𝜎",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q8(a), typeset as the State Examinations Commission set it. It reads: (a) z = x−𝜇/𝜎 = 3 · 5 −3 · 87/0 · 36 = −1 · 03 P(x < 3 · 5) = P(z < −1 · 03) = 1 −P(z < 1 · 03) = 1 −0 · 8485 = 0 · 1515 (b) (i) x̅ ± 1 · 96 𝜎/√n 𝜎/√n 3 · 74 −1 · 96 (0 · 36/√64 ) = 3 · 6518 3 · 74 + 1 · 96 (0 · 36/√64 ) = 3 · 8282 C.I. : 3 · 6518 ≤ 𝜇≤3 · 8282 Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4369,7 +4495,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-HL-paper-p058-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p058-i0.png",
           "srcHash": "8db20540f6fc6063e2ccfc8ea703c01c",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q9(a)(i), typeset as the State Examinations Commission set it. It reads: Square: l² = 140 (a) (i) l = √140 = 11.83.. l = 11.8 cm [1 d.p.] Mathematics – Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q9(a)(i), typeset as the State Examinations Commission set it. It reads: (a) (i) Square: l = l2 = /√140 = 140 11.83.. l = 11.8 cm [1 d.p.] Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4390,7 +4516,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-HL-paper-p059-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p059-i0.png",
           "srcHash": "dc7d0258bb50171ca05349b41736384f",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q9(a)(ii), typeset as the State Examinations Commission set it. It reads: (a) (ii) Hexagon: 6 area of one triangle 2x²sin 60 = x² = 3sin 60 x = √ 3sin60 = √ 3√3 x = 7 · 34 … = 7.3 [cm] [1 d.p.] OR 6 area of one triangle Hexagon: Let h = perpendicular height of one triangle h² + (1 = x² 2 x) h² = 3 4 x² h = √3 2 x 2 x = 140 2 × x × √3 x² = 280 3√3 x = 7.34 … . = 7.3 [cm] [1 d.p.] OR Total Area = area of two identical trapeziums 2) √3 x + 2x 2x …….. h calculated above 140 = 2 ( 140 = 3√3 2 x",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q9(a)(ii), typeset as the State Examinations Commission set it. It reads: (a) (ii) Hexagon: 140/6 area of one triangle 1/2x2sin 60 = 140/6 x2 = 140/3sin 60 x = √ 3sin60 140 = √ 280/3√3 280/3√3 x = 7 · 34 … = 7.3 [cm] [1 d.p.] OR Hexagon: 140/6 area of one triangle Let h = perpendicular height of one triangle h2 + (1/2 x) 2 = x2 h2 = 3/4 x2 h = √3/2 x 1/2 × x × √3/2 x = 140/6 x2 = 280/3√3 x = 7.34 … . = 7.3 [cm] [1 d.p.] OR Total Area = area of two identical trapeziums 140 = 2 (/2) x + 2x √",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4411,7 +4537,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-HL-paper-p060-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p060-i0.png",
           "srcHash": "7e0a463a0658dcca7fd762a634e434f5",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q9(b)(i), typeset as the State Examinations Commission set it. It reads: 4² = 6² + 8²−2(6)(8) cos 𝛼 (b) (i) cos 𝛼= 6² + 8²−4² 2(6)(8) 96 = 7 cos 𝛼= 84 𝛼= cos^(−1)7",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q9(b)(i), typeset as the State Examinations Commission set it. It reads: 4² = 6² + 8²−2(6)(8) cos 𝛼 (b) (i) cos 𝛼= 62 + 82−42/2(6)(8) cos 𝛼= 84/96 = 7/8 𝛼= cos−17/8",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4432,7 +4558,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-HL-paper-p060-i1",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p060-i1.png",
           "srcHash": "4ecb1dbebf328de7d01f85c493660bbb",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q9(b)(ii), typeset as the State Examinations Commission set it. It reads: (b) (ii) 8 so |AC| = cos 𝛼= |AC| = 8√15 |CD| = √( −8² = 7) 8√15 2(8) ( 7)] Area = 2 [ 64√15 = 35.410… =35.41 cm² [2 d.p.] = OR 𝛼= 28 · 955° |AC| = 64 2(8) ( 7)sin 28 · 96] = 35 · 410.. Area = 2 [ = 35.41 cm² [2 d.p.], OR 𝛼= 28 · 955° |CD| tan 28.955 = |CD| = 4.426 2 × 8 × 4.426] = 35.410 … Area = 2[ = 35.41 cm² [2 d.p.] Mathematics – Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q9(b)(ii), typeset as the State Examinations Commission set it. It reads: (b) (ii) cos 𝛼= 8/|AC| = 7/8 so |AC| = 64/7 |AC| 8/2 64 8√15 7 |CD| = √( 64/7) 2 −82 = 8√15/7 Area = 2 [/2(8) 1 (/7)] 8√15 = 64√15/7 = 35.410… =35.41 cm2 [2 d.p.] OR 𝛼= 28 · 955° |AC| = 64/7 Area = 2 [/2(8) 1 (/7)sin 64 28 · 96] = 35 · 410.. = 35.41 cm² [2 d.p.], OR 𝛼= 28 · 955° tan 28.955 = |CD|/8 |CD| = 4.426 Area = 2[ 1/2 × 8 × 4.426] = 35.410 … = 35.41 cm² [2 d.p.] Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4453,7 +4579,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-HL-paper-p038-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p038-i0.png",
           "srcHash": "3c76a5beefde96cdc176d9bc8a3a2a74",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q10(a), typeset as the State Examinations Commission set it. It reads: Detailed marking notes Note: The model solutions for each question are not intended to be exhaustive – there may be other correct solutions. Any Examiner unsure of the validity of the approach adopted by a particular candidate to a particular question should contact his / her Advising Examiner. 12 × 3 12 × 5 P(€6, €9, €6) = [5 1728 = 576 = 0 · 04340…. = = 0 · 0434 [4 d.p.]",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q10(a), typeset as the State Examinations Commission set it. It reads: Detailed marking notes Note: The model solutions for each question are not intended to be exhaustive – there may be other correct solutions. Any Examiner unsure of the validity of the approach adopted by a particular candidate to a particular question should contact his / her Advising Examiner. (a) P(€6, €9, €6) = [5/12 × 3/12 × 5/12] = 75/1728 = 25/576 = 0 · 04340…. = 0 · 0434 [4 d.p.]",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4474,7 +4600,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-HL-paper-p063-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p063-i0.png",
           "srcHash": "89edbcb34477a500b44d10a5f440f2ba",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q10(a)(i), typeset as the State Examinations Commission set it. It reads: x + 10 (a)(i) 12 = 15 … or equivalent 15x = 12x + 120 3x = 120 x = 40 [cm] OR 12 = 15 … or equivalent 600 = 600",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q10(a)(i), typeset as the State Examinations Commission set it. It reads: (a)(i) x/12 = x + 10/15 … or equivalent 15x = 12x + 120 3x = 120 x = 40 [cm] 40/12 = 50/15 … or equivalent 600 = 600",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4495,7 +4621,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-HL-paper-p063-i1",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p063-i1.png",
           "srcHash": "68bf434b55add9ac6ab96c02eb22cf14",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q10(a)(ii), typeset as the State Examinations Commission set it. It reads: Large cone: R = 15, L = 50 (a)(ii) Small cone: r = 12, l = 40 Surface area = 𝜋RL−𝜋rl + 𝜋r² = 𝜋(15)(50) −𝜋(12)(40) + 𝜋(12)² = 750𝜋−480𝜋+ 144𝜋= 414𝜋 1300 · 61. . = 1300.6 cm²[1d.p.] Mathematics – Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q10(a)(ii), typeset as the State Examinations Commission set it. It reads: Large cone: R = 15, L = 50 (a)(ii) Small cone: r = 12, l = 40 Surface area = 𝜋RL−𝜋rl + 𝜋r² = 𝜋(15)(50) −𝜋(12)(40) + 𝜋(12)² = 750𝜋−480𝜋+ 144𝜋= 414𝜋 1300 · 61. . = 1300.6 cm² [1d.p.] Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4516,7 +4642,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-HL-paper-p064-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p064-i0.png",
           "srcHash": "cda5b798d62e976e9daf00297c936344",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q10(a)(iii), typeset as the State Examinations Commission set it. It reads: 𝜃 (a)(iii) Angle: 3602𝜋(40) = 2𝜋(12) 𝜃= 108° Mathematics – Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q10(a)(iii), typeset as the State Examinations Commission set it. It reads: (a)(iii) Angle: 𝜃/3602𝜋(40) = 2𝜋(12) 𝜃= 108° Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4537,7 +4663,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p006-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p006-i0.png",
           "srcHash": "af0c2c30e3a93e4e63a6caa0d131d379",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q1(c), typeset as the State Examinations Commission set it. It reads: 1: x + 2y = 143 2x(-2): −2y−6w = 148 4: x −6w = 291 3: 4x + 5w = 4 4x(4): 4x−24w = 1164 5: 29w = −1160 So w = −40 4: x−6(−40) = 291 So x = 51 1: 51 + 2y = 143 y = 46 So Mathematics, Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q1(c), typeset as the State Examinations Commission set it. It reads: 1: x + 2y = 143 2x(-2): 4: −2y−6w = 148/x −6w = 291 3: 4x + 5w = 4 4x(4): 5: 4x−24w = 1164/29w = −1160 So w = −40 4: x−6(−40) = 291 So x = 51 1: 51 + 2y = 143 y = 46 So Mathematics, Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4558,7 +4684,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p007-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p007-i0.png",
           "srcHash": "cc45a0b1db0b34e79de14b9f20826c14",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q2(a), typeset as the State Examinations Commission set it. It reads: Method 1 z = −12 ± √(12)² −4(1)(261) 2(1) = −12 ± √−900 = −12 ± 30i = −6 + 15i and −6 −15i Accept as −6 ± 15i Method 2 Let z = x + y (where y ≠ 0), (x + y)² + 12(x + y) + 261 = 0 x² −y² + 2x + 12x + 12y + 261 = 0 Im: 2x + 12y = 0 y(2x + 12) = 0 ∴x = −6 Re: x² −y² + 12x + 261 = 0 36 −y² −72 + 261 = 0 y² = 225 y = ±15 z = −6 ± 15i Method 3 Let z = x + y Sum of the roots = -12 x + y + x−y = −12 2x = −12, ∴x = −6 Product",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q2(a), typeset as the State Examinations Commission set it. It reads: Method 1 z = −12 ± √(12)² −4(1)(261) 2(1) = −12 ± √−900/2 = −12 ± 30i/2 = −6 + 15i and −6 −15i Accept as −6 ± 15i Method 2 Let z = x + y (where y ≠ 0), (x + y)² + 12(x + y) + 261 = 0 x² −y² + 2x + 12x + 12y + 261 = 0 Im: 2x + 12y = 0 y(2x + 12) = 0 ∴x = −6 Re: x² −y² + 12x + 261 = 0 36 −y² −72 + 261 = 0 y² = 225 y = ±15 z = −6 ± 15i Method 3 Let z = x + y Sum of the roots = -12 x + y + x−y = −12 2x = −12, ∴x = −6 Pro",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4579,7 +4705,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p008-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p008-i0.png",
           "srcHash": "26586c580d0dbc59be37f17c9750e08e",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q2(b), typeset as the State Examinations Commission set it. It reads: 2 = 2 r = √1² + (√3) 5𝜋 𝜋 𝜃= 300° (o−60°) or 𝜃= 3) 3 (o− 9 = [2(cos 300 + isin 300)]9 (1 + √3i) = 2⁹(cos 9(300) + isin 9(300)) = 512(−1 + 0i) = −512 Mathematics, Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q2(b), typeset as the State Examinations Commission set it. It reads: 2 = 2 r = √1² + (√3) 𝜃= 300° (o−60°) or 𝜃= 5𝜋/3 (o− 𝜋/3) 9 = [2(cos 300 + isin 300)]₉ (1 + √3i) = 2⁹(cos 9(300) + isin 9(300)) = 512(−1 + 0i) = −512 Mathematics, Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4599,8 +4725,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2024-HL-paper-p010-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p010-i0.png",
-          "srcHash": "cb8e12edb67b378f61dcfd7c0fba8d2f",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q3(a), typeset as the State Examinations Commission set it. It reads: 6 sin 6x + C",
+          "srcHash": "d0d0f21ff7e2fea4279303237c1bc360",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q3(a), typeset as the State Examinations Commission set it. It reads: (a) 1/6 sin 6x + C",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4642,7 +4768,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p011-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p011-i0.png",
           "srcHash": "ab7782b2fc04894e453459e6e9e2f1f7",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q3(b)(ii), typeset as the State Examinations Commission set it. It reads: f′(x) = 6x² −18x + 5 f′′(x) = 12x−18 f′′(x) = 0 12x−18 = 0 x = 3 Also accept the following for Full Credit: x values at local maximum & local minimum f′(x) = 0 6x² −18x + 5 = 0 x1 = 18 + √204 x2 = 18 −√204 x co-ordinate of the point of inflection: x1 + x2 = 36 12 ÷ 2 x = 3",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q3(b)(ii), typeset as the State Examinations Commission set it. It reads: f′(x) = 6x² −18x + 5 f′′(x) = 12x−18 f′′(x) = 0 12x−18 = 0 x = 3/2 Also accept the following for Full Credit: x values at local maximum & local minimum f′(x) = 0 6x² −18x + 5 = 0 x₁ = 18 + √204 x₂ = 18 −√204 x co-ordinate of the point of inflection: x1 + x2/2 = 36/12 ÷ 2 x = 3/2",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4662,8 +4788,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2024-HL-paper-p011-i1",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p011-i1.png",
-          "srcHash": "a974da1e00421050bff683aa1cf0046e",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q3(c), typeset as the State Examinations Commission set it. It reads: Slope of l = Lines drawn parallel to l and touching the graph of p(x) at x≈2 · 2 and x≈6 · 8 Mathematics, Higher Level",
+          "srcHash": "96602e975bfb48ee2d12c369a5b0bf8d",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q3(c), typeset as the State Examinations Commission set it. It reads: (c) Slope of l = 1/2 Lines drawn parallel to l and touching the graph of p(x) at x≈2 · 2 and x≈6 · 8 Mathematics, Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4684,7 +4810,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p012-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p012-i0.png",
           "srcHash": "ac2eea95066d79b42d02e4b75b71c62e",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q4(a), typeset as the State Examinations Commission set it. It reads: f(x + h) = (x + h)² −7(x + h) −10 = x² + 2hx + h² −7x−7h−10 −f(x) = −x² + 7x + 10 f(x + h) −f(x) = 2hx + h² −7h h + h² f(x + h) −f(x) = 2hx h−7h = 2x + h−7 f(x + h) −f(x) = 2x + 0 −7 h→0 f′(x) = 2x−7",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q4(a), typeset as the State Examinations Commission set it. It reads: f(x + h) = (x + h)² −7(x + h) −10 = x² + 2hx + h² −7x−7h−10 −f(x) = −x² + 7x + 10 f(x + h) −f(x) = 2hx + h² −7h f(x + h) −f(x)/h = 2hx/h + h2 h−7h/h = 2x + h−7 h→0 lim f(x + h) −f(x)/h = 2x + 0 −7 f′(x) = 2x−7",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4705,7 +4831,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p012-i1",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p012-i1.png",
           "srcHash": "6dc4e8c964db9e7a41944658e4fdd43b",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q4(b), typeset as the State Examinations Commission set it. It reads: u = 6x + 1v = x⁴ + 3 d = 4x³ d = 6 (x⁴ + 3)(6)−(6x + 1)(4x³) g′(x) = (x⁴ + 3)² ((−2)⁴ + 3)(6)−(6(−2) + 1)(4(−2)³) g′(−2) = ((−2)⁴ + 3)² = −238 OR g(x) = (6x + 1)(x⁴ + 3)^(−1) u = 6x + 1v = (x⁴ + 1)^(−1) d = 6 d = −4x³(x⁴ + 3)−2 g′(x) = (6x + 1)(−4x³(x⁴ + 3)^(−2)) + (x⁴ + 3)^(−1)(6) g′(−2) = (6(−2) + 1)(−4(−2)³((−2)⁴ + 3)^(−2)) + ((−2)⁴ + 3)^(−1)(6) = −238",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q4(b), typeset as the State Examinations Commission set it. It reads: u = 6x + 1v = x⁴ + 3 d/d = 6 d/d = 4x3 g′(x) = (x4 + 3)(6)−(6x + 1)(4x3)/(x4 + 3)2 g′(−2) = = −238/361 OR g(x) = (6x + 1)(x⁴ + 3)^(−1) u = 6x + 1v = (x⁴ + 1)^(−1) d/d = 6 d/d = −4x3(x4 + 3)−2 g′(x) = (6x + 1)(−4x³(x⁴ + 3)^(−2)) + (x⁴ + 3)^(−1)(6) g′(−2) = (6(−2) + 1)(−4(−2)³((−2)⁴ + 3)^(−2)) + ((−2)⁴ + 3)^(−1)(6) = −238/361",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4747,7 +4873,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p013-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p013-i0.png",
           "srcHash": "d948098aaedd2d3a83dccf64521a5dd8",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q5(a), typeset as the State Examinations Commission set it. It reads: (5p−3) −(2p + 1) = (6p + 7) −(5p−3) 3p−4 = p + 10 2p = 14 p = 7 OR Tn = a + (n−1)d a = 2p + 1 and d = 3p−4 (or p + 10) Tn = (2p + 1) + (n−1)(3p−4) T3 = 2p + 1 + 2(3p−4) = 8p−7 But T3 = 6p + 7 8p−7 = 6p + 7 2p = 14 p = 7",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q5(a), typeset as the State Examinations Commission set it. It reads: (5p−3) −(2p + 1) = (6p + 7) −(5p−3) 3p−4 = p + 10 2p = 14 p = 7 OR Tₙ = a + (n−1)d a = 2p + 1 and d = 3p−4 (or p + 10) Tₙ = (2p + 1) + (n−1)(3p−4) T₃ = 2p + 1 + 2(3p−4) = 8p−7 But T₃ = 6p + 7 8p−7 = 6p + 7 2p = 14 p = 7",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4768,7 +4894,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p013-i1",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p013-i1.png",
           "srcHash": "be90a07c6cbabcfa2c083fb26215ae3f",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q5(b), typeset as the State Examinations Commission set it. It reads: Method 1: Method 2: 6r⁴ = 3 ar¹⁰ ar⁶ = 3 8 ÷ 6 r⁴ = 3 r⁴ = 3 = 1 = 1 r = ± 1 r = ± 1",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q5(b), typeset as the State Examinations Commission set it. It reads: Method 1: Method 2: 6r4 = 3/8 ar10 = 3 ÷ 6 6r4 = 3 8 ar10/ar6 = 3/8 ÷ 6 r4 = 3/48 ar6 r4 = 8 3 r4 = 48 1 r4 = 3/48 = 1/16 = 48 1 r = ± 1/2 r = ± 1 r = ± 2 r = ± 1/2",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4778,7 +4904,7 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p1-q5-c-ii", topicId: "maths-3-1", conceptId: "first-value-which",
+    id: "maths-2024-hl-p1-q5-c-ii", topicId: "maths-4-1", conceptId: "first-value-which",
     section: "B", questionRef: "2024 HL Paper 1 Q5(c)(ii)",
     questionText: "Find the first value of n for which Fₙ = 0",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 8, 11, 13, 20)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
@@ -4789,7 +4915,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p013-i2",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p013-i2.png",
           "srcHash": "4d190d124a298a0fd9ef75b55bdb8045",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q5(c)(ii), typeset as the State Examinations Commission set it. It reads: F1(x) = 2024 x²⁰²³ F2(x) = 2024 × 2023 x²⁰²² Index = 2024 −n At n = 2024, answer is a constant (x⁰) So at n = 2025 answer is 0 Answer: n = 2025 Mathematics, Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q5(c)(ii), typeset as the State Examinations Commission set it. It reads: F₁(x) = 2024 x²⁰²³ F₂(x) = 2024 × 2023 x²⁰²² Index = 2024 −n At n = 2024, answer is a constant (x⁰) So at n = 2025 answer is 0 Answer: n = 2025 Mathematics, Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4852,7 +4978,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p015-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p015-i0.png",
           "srcHash": "d5fc5847df57cdc2ef74667dc03324c4",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q6(b)(ii), typeset as the State Examinations Commission set it. It reads: Method 1 ... LPC ln √x = 3·5 ... HPC √x = e^(3·5) x = (e^(3·5))² = e⁷ Method 2 ... LPC ln √x = 3·5 ... HPC 2 ln x = 3·5 ln x = 7 x = e⁷",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q6(b)(ii), typeset as the State Examinations Commission set it. It reads: (b) (ii) ln Method/√x = 3·5 1 ... LPC ln/√x = √x = e3·5 3·5 ... ... HPC LPC x = (e^(3·5))² = e⁷ ln Method/√x = 3·5 2 ... LPC 1/2 ln x = 3·5 ... HPC ln x = 7 x = e⁷",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4872,8 +4998,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2024-HL-paper-p015-i1",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p015-i1.png",
-          "srcHash": "d4daeb24be45d4cc708f254d0faaea80",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q6(b)(iii), typeset as the State Examinations Commission set it. It reads: g(f(x)) = ln √e^(9x) = ln(e^(9x)) 9x = ln e 9x 2 or 4∙5x = Mathematics, Higher Level",
+          "srcHash": "0887766d86e7d1f7c75195c1bd538343",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q6(b)(iii), typeset as the State Examinations Commission set it. It reads: g(f(x)) = ln √e^(9x) (iii) = ln(e9x) 1/2 = ln e 9x/2 = 9x/2 or 4∙5x Mathematics, Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4935,8 +5061,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2024-HL-paper-p018-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p018-i0.png",
-          "srcHash": "1a62ffa39da09071ffaea1656ab54748",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q7(c)(i), typeset as the State Examinations Commission set it. It reads: d = 5000(0 · 04)e^(0·04t) = 200e^(0·04t) t = 3 · 5: d = 5000(0 · 04)e0·04(3·5) = 200e^(0·14) = 230 · 05 = 230 [nearest € per year]",
+          "srcHash": "3c927523d0d4ae35f3b75db07a4e2e67",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q7(c)(i), typeset as the State Examinations Commission set it. It reads: (i) d/d = 5000(0 · 04)e0·04t = 200e^(0·04t) t = 3 · 5: d/d = 5000(0 · 04)e0·04(3·5) = 200e^(0·14) = 230 · 05",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4956,8 +5082,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2024-HL-paper-p018-i1",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p018-i1.png",
-          "srcHash": "58410ae340eaec5ececbbae8289487c8",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q7(c)(ii), typeset as the State Examinations Commission set it. It reads: 5 ∫(5000e^(0·04t))d 5 (5000) [e^(0·04t) 0 · 04 ]5 = 1 0 · 04 −e^(0·04(0)) = 1000 (e^(0·04(5)) 0 · 04 ) = €5535 ∙06.. = €5535 [nearest euro] Mathematics, Higher Level",
+          "srcHash": "af53733b10f9c11d87bb951935326a7e",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q7(c)(ii), typeset as the State Examinations Commission set it. It reads: (c) (ii) 1/5 ∫(5000e0·04t)d 0 5 = 1/5 (5000) [e0·04t/0 · 04 ]5 0 = 1000 (e0·04(5)/0 · 04 −e0·04(0)/0 · 04 ) = €5535 ∙06.. = €5535 [nearest euro] Mathematics, Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4978,7 +5104,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p019-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p019-i0.png",
           "srcHash": "c929f08682fe5e6824021149639f79b5",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q7(c)(iii), typeset as the State Examinations Commission set it. It reads: e^(0·04) = 1 · 04081… AER = 4 · 08% [2DP] OR F(0) = 5000e^(0.04(0)) = 5000 F(1) = 5000e^(0.04(1)) = 5204.053 … F(1) −F(0) = 204.053 … AER = 204.053 … × 100 5000 = 4 ∙08% [2DP] OR 5204 ∙053 … = 1 ∙04081 … 5000 AER = 4 · 08% [2DP] Mathematics, Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q7(c)(iii), typeset as the State Examinations Commission set it. It reads: e^(0·04) = 1 · 04081… AER = 4 · 08% [2DP] OR F(0) = 5000e^(0.04(0)) = 5000 F(1) = 5000e^(0.04(1)) = 5204.053 … F(1) −F(0) = 204.053 … AER = 204.053 …/5000 × 100 = 4 ∙08% [2DP] OR 5204 ∙053 …/5000 = 1 ∙04081 … AER = 4 · 08% [2DP] Mathematics, Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4999,7 +5125,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p021-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p021-i0.png",
           "srcHash": "c55691d610b20dc3219ea14bc9c8b170",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q8(b), typeset as the State Examinations Commission set it. It reads: Max = 21 + 19(1) = 40 Min = 21 −19(1) = 2 OR S′(t) 365)sin 2𝜋 = −(19) (2𝜋 S′(t) = 0 365)sin 2𝜋 −(19) (2𝜋 365 = 0 2𝜋 2𝜋 365 = 0 365 = 𝜋 ⇒t = 0 ⇒t = 365 Max = S(0) = 40 Min = S(365 2 ) = 2",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q8(b), typeset as the State Examinations Commission set it. It reads: Max = 21 + 19(1) = 40 Min = 21 −19(1) = 2 OR S′(t) = −(19) (2𝜋/365)sin 2𝜋/365 S′(t) = 0 −(19) (2𝜋/365)sin 2𝜋/365 = 0 2𝜋/365 = 0 2𝜋/365 = 𝜋 Max ⇒t = = S(0) 0 ⇒t = 365/2 = 40 Min = S(365/2 = 2",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5062,7 +5188,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p022-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p022-i0.png",
           "srcHash": "3ada25be2470efe07ef5a75e4d29c691",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q8(e), typeset as the State Examinations Commission set it. It reads: 365 sin(2𝜋 C′(t) = 0∙03 − 38𝜋 365) = 0 0∙03 = 38𝜋 365 sin(2𝜋 365) 0 · 03(365) = sin(2𝜋 365) 38𝜋 sin^(−1) (0 · 03(365) ) = 2𝜋 38𝜋 0 · 09185 = 2𝜋 t = 5 · 336 = 5 [days] [∈ℕ] Mathematics, Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q8(e), typeset as the State Examinations Commission set it. It reads: (e) C′(t) = 0∙03 − 38𝜋/365 sin(2𝜋/365) = 0 0∙03 = 38𝜋/365 sin(2𝜋/365) 0 · 03(365)/38𝜋 = sin(2𝜋/365) sin−1 (0/38𝜋 · 03(365) ) = 2𝜋/365 0 · 09185 = 2𝜋/365 t = 5 · 336 = 5 [days] [∈ℕ] Mathematics, Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5083,7 +5209,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p023-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p023-i0.png",
           "srcHash": "c06efce45bed66f5f4cbbe9c0c8ab769",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q9(a), typeset as the State Examinations Commission set it. It reads: C = 𝜋(4)² (3(13) −4) = 560𝜋",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q9(a), typeset as the State Examinations Commission set it. It reads: (a) C = 𝜋(4)2/3 (3(13) −4) = 560𝜋/3",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5103,8 +5229,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2024-HL-paper-p023-i2",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p023-i2.png",
-          "srcHash": "db689739569f5f5a084083b4553a7bbc",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q9(c), typeset as the State Examinations Commission set it. It reads: 3 litres = 3000 cm³ 𝜋 12 x³ = 3000 x³ = 3000(12) 𝜋 36000 = 22 · 5 [1 DP] x = √ 𝜋 Mathematics, Higher Level",
+          "srcHash": "8656502cc7f3bfd0e044ff40f6301a0b",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q9(c), typeset as the State Examinations Commission set it. It reads: 3 litres = 3000 cm³ 𝜋/12 x3 = 3000 x3 = 3000(12)/𝜋 3 𝜋/36000 x = 3 √ 36000/𝜋 = 22 · 5 [1 DP] Mathematics, Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5124,8 +5250,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2024-HL-paper-p024-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p024-i0.png",
-          "srcHash": "18666ded5381915b1613c0a9b27049d5",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q9(d), typeset as the State Examinations Commission set it. It reads: d = 450 V = 𝜋 12 x³ d = 𝜋 4 x² 𝜋x² d = d = d d × d 𝜋x² × 450 = 1800 𝜋x² d = 1800 At x = 20 𝜋(20)² = 1 · 4 [cm/sec] d =",
+          "srcHash": "a4ff0c9bc755d1070d1f3b15bda55968",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q9(d), typeset as the State Examinations Commission set it. It reads: (d) d/d = 450 V = 𝜋/12 x3 d/d = 𝜋/4 x2 d/d = 4/𝜋x2 d/d = d/d × d/d d/d = 4/𝜋x2 × 450 = 1800/𝜋x2 At x = 20 d/d = 1800/𝜋(20)2 = 1 · 4 [cm/sec]",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5145,8 +5271,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2024-HL-paper-p024-i1",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p024-i1.png",
-          "srcHash": "a7e7f9ca309eab8f847700bc527ba157",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q9(e), typeset as the State Examinations Commission set it. It reads: S = 𝜋√r² + h² S 𝜋= √r2 + h2 S² 𝜋²r² = r² + h2 S² 𝜋²r² −r² = h2 S² −𝜋²r⁴ = h² 𝜋²r² √S²−𝜋²r⁴ = h 𝜋²r² √S² −𝜋²r⁴ = h 𝜋 Mathematics, Higher Level",
+          "srcHash": "adcf834928a608eda01d02f817f45611",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q9(e), typeset as the State Examinations Commission set it. It reads: S = 𝜋√r² + h² S/𝜋= √r2 + h2 S2/𝜋2r2 = r2 + h2 S2/𝜋2r2 −r2 = h2 S2 −𝜋2r4/𝜋2r2 = h2 √S²−𝜋²r⁴ = h 𝜋2r2/√S2 −𝜋2r4 √S2 −𝜋2r4/𝜋 = h Mathematics, Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5156,7 +5282,7 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p1-q10-a-i", topicId: "maths-3-1", conceptId: "estimate-height-water-spinach-plant-after",
+    id: "maths-2024-hl-p1-q10-a-i", topicId: "maths-5-2", conceptId: "estimate-height-water-spinach-plant-after",
     section: "B", questionRef: "2024 HL Paper 1 Q10(a)(i)",
     questionText: "Use W(x) to estimate the height of a water spinach plant after 15 days. Give your answer correct to the nearest mm",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -5209,7 +5335,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p025-i2",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p025-i2.png",
           "srcHash": "3e1dfed7073c5eb303c843e2321a569a",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q10(b), typeset as the State Examinations Commission set it. It reads: 1 · 1 + 2 · 73x−0 · 078x² > 24 0.078x² −2.73x + 22 · 9 < 0 Roots: 2·73±√(2·73)²−4(0.078)(22·9) x = 2(0·078) = 21 · 06 or 13 ∙94 So 14 ≤ x ≤ 21 Mathematics, Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q10(b), typeset as the State Examinations Commission set it. It reads: 1 · 1 + 2 · 73x−0 · 078x² > 24 0.078x² −2.73x + 22 · 9 < 0 Roots: x = 2·73±√(2·73)2−4(0.078)(22·9)/2(0·078) = 21 · 06 or 13 ∙94 So 14 ≤ x ≤ 21 Mathematics, Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5229,7 +5355,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2024-HL-paper-p026-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p026-i0.png",
-          "srcHash": "ea3e6356870c2d3926ab3e78f97e40ea",
+          "srcHash": "5698aec3be2d84ee60014b3308afcdfb",
           "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q10(c)(i), typeset as the State Examinations Commission set it.",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
@@ -5377,7 +5503,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p033-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p033-i0.png",
           "srcHash": "bc1218bb1fcf13d009f67427ff98a429",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q3(a), typeset as the State Examinations Commission set it. It reads: 2 (10)(13) sin 110 = 61∙08. . Area of A = Area of A = 2(61∙08 … ) = 122∙16 … = 122 [cm²] [nearest cm²] OR Area of A = (10)(13) sin 110 = 122∙16 … = 122 [cm²] [nearest cm²]",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q3(a), typeset as the State Examinations Commission set it. It reads: (a) Area of A = 1/2 (10)(13) sin 110 = 61∙08. . Area of A = 2(61∙08 … ) = 122∙16 … = 122 [cm²] [nearest cm²] OR Area of A = (10)(13) sin 110 = 122∙16 … = 122 [cm²] [nearest cm²]",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5398,7 +5524,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p033-i1",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p033-i1.png",
           "srcHash": "b4165921dd3df11a0b5f4c694a83b7e3",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q3(b), typeset as the State Examinations Commission set it. It reads: Reference angle in 1st and 4th quadrants cos−1 √3 2 = 30° or 330° 2X = 30°, 330°, 390°, 690° X = 15°, 165°, 195°, 345°",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q3(b), typeset as the State Examinations Commission set it. It reads: (b) Reference/√3 angle in 1st and 4th quadrants cos−1 √3/2 = 30° or 330° 2X = 30°, 330°, 390°, 690° X = 15°, 165°, 195°, 345°",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5418,8 +5544,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2024-HL-paper-p033-i2",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p033-i2.png",
-          "srcHash": "5d320e6994887e518f07c7058b8ac143",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q3(c), typeset as the State Examinations Commission set it. It reads: 45 = sin 25 sin 𝜃 15√3 sin 𝜃= 45(0.4226) = 0.73196 15√3 sin 𝜃= 0.73196 … 47.05° angle in 1st and 2nd quadrants 𝜃= 47.05° or 𝜃= 132.95° 𝜃= 47° or 𝜃= 133° [nearest degree] Mathematics – Higher Level",
+          "srcHash": "235c817bd29b4390eb56995d824819c9",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q3(c), typeset as the State Examinations Commission set it. It reads: (c) sin 𝜃/45 = sin 25/15√3 25/15√3 sin 𝜃= 45(0.4226)/15√3 45(0.4226)/15√3 = 0.73196 sin 𝜃= 0.73196 … 47.05° angle in 1st and 2nd quadrants 𝜃= 47.05° or 𝜃= 132.95° 𝜃= 47° or 𝜃= 133° [nearest degree] Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5503,7 +5629,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p035-i1",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p035-i1.png",
           "srcHash": "bef6a4131235275dfb9d2b7f919d00ec",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q5(a)(ii), typeset as the State Examinations Commission set it. It reads: Centre of c = (2, −1) Radius of c = √72 = 6√2 Distance between centres = √(2 −(−2))² + (−1 −3)² = √16 + 16 = 4√2 Difference between radii = 6√2 −2√2 = 4√2 4√2 = 4√2 Therefore, circles touch internally Mathematics – Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q5(a)(ii), typeset as the State Examinations Commission set it. It reads: Centre of c = (2, −1) Radius of c = √72 = 6√2 = Distance between centres/√(2 −(−2))2 + (−1 −3)2 = = √(2 −(−2))2/√16 + 16 + (−1 −3)2 = = √16/4√2 + 16 = Difference/6√2 between/−2√2 radii = = 6√2/4√2 −2√2 4√2 = 4√2 Therefore, circles touch internally Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5523,8 +5649,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2024-HL-paper-p036-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p036-i0.png",
-          "srcHash": "873f7c2dd8a40fbc8d74f3acc0538924",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q5(b), typeset as the State Examinations Commission set it. It reads: Q5 Model Solution – 30 Marks Centre = (9, k) So distance from (7,10) to (9, k) = distance from (12,8) to (9, k) √(9 −7)² + (k−10)² = √(12 −9)² + (8 −k)² 4 + k² −20k + 100 = 9 + 64 −16k + k² 4k = 31 k = 31 4 ) So, centre = (9, = √145 Radius = √(9 −7)² + ( 4 −10) Eqn: (x−9)² + (y− 4 ) = OR Centre = (−g, −f) = (9, k) ∴ g = −9 … E A (7,10): 7² + 10² + 2g(7) + 2f(10) + c = 0 … E B So: 20f + c = −23 (12, 8): 12² + 8² + 2g(",
+          "srcHash": "71f31bb22eca7ce3032d1ef741ec15bf",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q5(b), typeset as the State Examinations Commission set it. It reads: Q5 Model Solution – 30 Marks Centre = (9, k) So distance from (7,10) to (9, k) = distance from (12,8) to (9, k)/√(9 −7)2 + (k−10)2 = √(12 −9)2 + (8 −k)2 4 + k² −20k + 100 = 9 + 64 −16k + k² 4k = 31 k = 31/4 So, centre = (9, 31/4 ) Radius = √(9 −7)2 + ( 31/4 −10) 2 = √145/4 Eqn: (x−9)2 + (y− 31/4 ) 2 = 145/16 OR Centre = (−g, −f) = (9, k) ∴ g = −9 … E A (7,10): 7² + 10² + 2g(7) + 2f(10) + c = 0 … E B So: 20f + c = −23",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5534,7 +5660,7 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p2-q6-a", topicId: "maths-1-2", conceptId: "line-segment-point-divides-line-segment",
+    id: "maths-2024-hl-p2-q6-a", topicId: "maths-2-2", conceptId: "line-segment-point-divides-line-segment",
     section: "B", questionRef: "2024 HL Paper 2 Q6(a)",
     questionText: "[A] is a line segment. The point C (6, 11) divides the line segment [A] internally in the ratio 1: 3",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -5545,7 +5671,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p037-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p037-i0.png",
           "srcHash": "385cb4c8f6482bbe0ded974e88134bfa",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q6(a), typeset as the State Examinations Commission set it. It reads: (1, 13) →+5 and−2 →(6, 11) (6, 11) →+3(5) and 3(−2) →B(21, 5) OR (1, 13) →+5 and−2 →(6, 11) (1, 13) →+4(5) and 4(−2) →B(21, 5) OR B = (x2, y2), m: n = 1: 3 1(x2) + 3(1) 1(y2) + 3(13) ) (6, 11) = ( , 1 + 3 1 + 3 x2 + 3 y2 + 39 4 and 11 = 6 = x2 = 21 and y2 = 5 B = (21, 5)",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q6(a), typeset as the State Examinations Commission set it. It reads: (1, 13) →+5 and−2 →(6, 11) (6, 11) →+3(5) and 3(−2) →B(21, 5) OR (1, 13) →+5 and−2 →(6, 11) (1, 13) →+4(5) and 4(−2) →B(21, 5) OR B = (x₂, y₂), m: n = 1: 3 (6, 11) = ( 1(x2) + 3(1)/1 + 3 , 1(y2) + 3(13)/1 + 3 ) 6 = x2 + 3/4 and 11 = y2 + 39/4 x₂ = 21 and y₂ = 5 B = (21, 5)",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5565,7 +5691,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2024-HL-paper-p037-i1",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p037-i1.png",
-          "srcHash": "13b7f8de2c411f97cdda5806f84d26ae",
+          "srcHash": "cae6560340a1755b260f2836b179eb58",
           "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q6(b), typeset as the State Examinations Commission set it.",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
@@ -5586,8 +5712,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2024-HL-paper-p038-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p038-i0.png",
-          "srcHash": "6c7aa068aed242122897cc5190cd0588",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q6(c)(ii), typeset as the State Examinations Commission set it. It reads: (16 2 ) = 120 [pairs] Also accept 16 × 15 = 240 [pairs], i.e. where a pair is considered as being ordered (⁴ 2) × 4 = 24 [unordered pairs that give horizontal lines] 120or So probability = OR (4 × 3) × 4 = 48 [ordered pairs that give horizontal lines] 240or So probability = Mathematics – Higher Level",
+          "srcHash": "c6bbeedc13f67f5c475024f725fc57c0",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q6(c)(ii), typeset as the State Examinations Commission set it. It reads: (16 2 ) = 120 [pairs] Also accept 16 × 15 = 240 [pairs], i.e. where a pair is considered as being ordered (⁴ 2) × 4 = 24 [unordered pairs that give horizontal lines] So probability = 24/120 or 1/5 OR (4 × 3) × 4 = 48 [ordered pairs that give horizontal lines] So probability = 48/240 or 1/5 Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5608,7 +5734,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p039-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p039-i0.png",
           "srcHash": "ca8d745c4c6b95282c686567ccdb4b7e",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q7(a)(ii), typeset as the State Examinations Commission set it. It reads: z = 50 −48·2 = 0·1698 10·6 P(z < 0·17) = 0∙5675 o 56·75% (a)(ii) Oldest 10% ∴90% less than ‘A’ years old So, z = 1·28 (or 1·29) 1·28 = A−48·2 10·6 A = 61·768 Using z = 1·29, A = 61·874 A = 62 [nearest whole number]",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q7(a)(i), typeset as the State Examinations Commission set it. It reads: (a) (i) z = 50 −48·2/10·6 = 0·1698 P(z < 0·17) = 0∙5675 o 56·75% (a)(ii) Oldest 10% ∴90% less than ‘A’ years old So, z = 1·28 (or 1·29) 1·28 = A−48·2/10·6 A = 61·768 Using z = 1·29, A = 61·874 A = 62 [nearest whole number]",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5628,8 +5754,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2024-HL-paper-p039-i1",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p039-i1.png",
-          "srcHash": "967a10433dd22ac04a75db45f8fc3848",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q7(b)(i), typeset as the State Examinations Commission set it. It reads: 2 successes: (⁶ 3125 = 0·24576 ( 2)( 5) 5) = Mathematics – Higher Level",
+          "srcHash": "ab40836d1d4ddd41f4294959adc5d59d",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q7(b)(i), typeset as the State Examinations Commission set it. It reads: (b) (i) 2 successes: (6 2)( 1/5) 2 ( 4/5) 4 = 768/3125 = 0·24576 Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5650,7 +5776,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p040-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p040-i0.png",
           "srcHash": "5e70deafea5f111079a289a368619510",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q7(b)(ii), typeset as the State Examinations Commission set it. It reads: (b)(ii) (4 0)(1 = 0· 0047 5) 5) 0·8ⁿ= 0·0047 n = l0·0047 l0·8 n = 24 ∙021.. n = 24",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q7(b)(ii), typeset as the State Examinations Commission set it. It reads: (b)(ii) (n 0)(1/5) 0 (4/5) n = 0· 0047 0·8ⁿ = 0·0047 n = l0·0047/l0·8 n = 24 ∙021.. n = 24",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5670,8 +5796,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2024-HL-paper-p040-i1",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p040-i1.png",
-          "srcHash": "9b808805e9f0574dd39a72e3d9d57935",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q7(c), typeset as the State Examinations Commission set it. It reads: Booked: (0∙45) ( 3) + (0∙55) ( 5) = Booked on new system: (0∙55) ( 5) = (11 50) 37 = 59% [∈ℕ] Probability = 100) = (37 Mathematics – Higher Level",
+          "srcHash": "746d400ef52582030613fa7e55dcc482",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q7(c), typeset as the State Examinations Commission set it. It reads: (c) Booked: (0∙45) ( 1/3) + (0∙55) ( 2/5) = 37/100 Booked on new system: (0∙55) ( 2/5) = 11/50 Probability = (11/50) 22 = 59% [∈ℕ] Probability = 50)/(37 100) = (11 22/37 = 59% [∈ℕ] Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5692,7 +5818,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p041-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p041-i0.png",
           "srcHash": "71f2ef6e288172c0b4cc45a817f1f7f9",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q7(d), typeset as the State Examinations Commission set it. It reads: Null Hypothesis: p = 0·75 or similar (for example, “in 2024, PK Hotels were rated the best hotel chain in Europe by 75% of their customers”) Alternative Hypothesis: P ≠ 0·75 or similar Calculations: Conf Int: 0·765 ± √1000 = 0∙765 ± 0∙0316… So 0∙7334 < p < 0∙7966 Conclusion: Fail to reject H0 or there is not enough evidence to conclude that this percentage has changed. Accept: the percentage has not changed, or simil",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q7(d), typeset as the State Examinations Commission set it. It reads: Null Hypothesis: p = 0·75 or similar (for example, “in 2024, PK Hotels were rated the best hotel chain in Europe by 75% of their customers”) Alternative Hypothesis: P ≠ 0·75 or similar Calculations: Conf Int: 0·765 ± 1/√1000 1/√1000 = 0∙765 ± 0∙0316… So 0∙7334 < p < 0∙7966 Conclusion: Fail to reject H₀ or there is not enough evidence to conclude that this percentage has changed. Accept: the percentage has not changed",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5734,7 +5860,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p042-i1",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p042-i1.png",
           "srcHash": "7e236fc171c93b85716e65ff24c11c02",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q8(b), typeset as the State Examinations Commission set it. It reads: r² = 6² + 11² r = √36 + 121 = √157 Vol = 3 𝜋(√157) = 8240∙20 … = 8240·2 [cm³] [1 DP] Mathematics – Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q8(b), typeset as the State Examinations Commission set it. It reads: r² = 6² + 11² r = √36 + 121 = √157 Vol = 4/3 𝜋(√157) 3 = 8240∙20 … = 8240·2 [cm³] [1 DP] Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5775,8 +5901,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2024-HL-paper-p043-i1",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p043-i1.png",
-          "srcHash": "b16ce19a077642c09fc61c208f9c6d3c",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q8(c)(iii), typeset as the State Examinations Commission set it. It reads: (c)(iii) 20 −h = h r² = h(20 −h) r² = 20h−h²",
+          "srcHash": "499f0f77b4f80b64068b50b2280e99c3",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q8(c)(iii), typeset as the State Examinations Commission set it. It reads: (c)(iii) r/−h = 20 h/r r² = h(20 −h) r² = 20h−h²",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5796,8 +5922,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2024-HL-paper-p043-i2",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p043-i2.png",
-          "srcHash": "ee2b9437ca8ca12a3cbdba33b76fbcc5",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q8(c)(iv), typeset as the State Examinations Commission set it. It reads: (c)(iv) V = 3 𝜋(20h−h²)h 3 𝜋r²h = = 1 3 𝜋(20h² −h3) dh = 1 3 𝜋(40h−3h²) 3 𝜋(40h−3h²) = 0 at local max/min 40h−3h² = 0 h(40 −3h) = 0 Mathematics – Higher Level",
+          "srcHash": "ea018c1d7047c5f47a738fd524df3a16",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q8(c)(iv), typeset as the State Examinations Commission set it. It reads: (c)(iv) V = 1/3 𝜋r2h = 1/3 𝜋(20h−h2)h = 1/3 𝜋(20h2 −h3) d/dh = 1/3 𝜋(40h−3h2) 1/3 𝜋(40h−3h2) = 0 at local max/min 40h−3h² = 0 h(40 −3h) = 0 Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5839,7 +5965,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p045-i1",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p045-i1.png",
           "srcHash": "8f154a07fa248cdb63e8bf94edda7a3a",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q9(a)(ii), typeset as the State Examinations Commission set it. It reads: (a−1)² + (8 −17)² = 144 (a)(ii) (a−1)² = 63 a−1 = √63 (as a > 0) = 1 + √63",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q9(a)(ii), typeset as the State Examinations Commission set it. It reads: (a−1)² + (8 −17)² = 144 (a)(ii) (a−1)2 a−1 = = 63/√63 (as a > 0) = 1 + √63",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5859,8 +5985,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2024-HL-paper-p045-i2",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p045-i2.png",
-          "srcHash": "119d23489c1dc735b6770c93c1c3f932",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q9(a)(iii), typeset as the State Examinations Commission set it. It reads: (a)(iii) |P| = √(10 −1)² + (6 −17)2 = √202 |P| −radius = √202 −12 = 2∙2126 … Shortest distance = 2∙2126 … × 100 = 221∙26 … = 221 [m] [nearest m]",
+          "srcHash": "bf0a8293690049676b003e2e04bfd20c",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q9(a)(iii), typeset as the State Examinations Commission set it. It reads: (a)(iii) |P| |P| −radius = √(10 = −1)2 + /√202 −12 (6 −17)2 = 2∙2126 = √202 … Shortest distance = 2∙2126 … × 100 = 221∙26 … = 221 [m] [nearest m]",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5902,7 +6028,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p046-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p046-i0.png",
           "srcHash": "2cac4037b01b314f4793d012afd51a7d",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q9(c), typeset as the State Examinations Commission set it. It reads: Step 1: Slope of w = Step 2: ⊥ slope = −3 S 3: y−6 = −3(x−10) S 4: 3x + y = 36 3x + y = 36(× 3) x−3y = 9 9x + 3y = 108 x−3y = 9 10x = 117 x = 11∙7 S 5: 11∙7 −3y = 9 y = 0∙9 (11∙7, 0∙9) Mathematics – Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q9(c), typeset as the State Examinations Commission set it. It reads: (c) Step 1: Slope of w = 1/3 Step 2: ⊥ slope = −3 S 3: y−6 = −3(x−10) S 4: 3x + y = 36 3x + y = 36(× 3) x−3y = 9 9x + 3y = 108 x−3y = 9 10x = 117 x = 11∙7 S 5: 11∙7 −3y = 9 y = 0∙9 (11∙7, 0∙9) Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5923,7 +6049,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p047-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p047-i0.png",
           "srcHash": "a114ede645a384ca91bd280027d09acc",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q9(d), typeset as the State Examinations Commission set it. It reads: y² + (3y)² = (12)² 10y² = 144 3y y = √14∙4 = 3∙8 … x = 9 + 3√14∙4 = 20∙4 … (20∙4, 3∙8) [1 DP] OR x² = 3² + 1² x² = 10 x = √10 1200m = 12 units Factor increase = √10 = 3 ∙794.. x = 3 × 3 ∙794 + 9 = 20.38.. y = 3.794.. (20∙4, 3∙8) [1 DP] OR Slope of line w = Angle between line w and the x−a = tan−1 1 3 = 18.435 Then, sin 18.435 = y = 3.794 … x = 3.794 × 3 + 9 = 20.384 …. (20∙4, 3∙8) [1 DP] Mathematics – Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q9(d), typeset as the State Examinations Commission set it. It reads: y² + (3y)² = (12)² 10y² = 144 x = y = 9 √14∙4 + = 3∙8/3√14∙4 = … 20∙4 … 3y (20∙4, 3∙8) [1 DP] OR x² = 3² + 1² x2 x = = 10/√10 3 1200m = 12 units Factor increase = 12/√10 12/√10 = 3 ∙794.. x = 3 × 3 ∙794 + 9 = 20.38.. y = 3.794.. (20∙4, 3∙8) [1 DP] OR Slope of line w = 1/3 Angle between line w and the x−a = tan−1 1/3 = 18.435 Then, sin 18.435 = y/12 y = 3.794 … x = 3.794 × 3 + 9 = 20.384 …. (20∙4, 3∙8) [1 DP] Mathemat",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5964,8 +6090,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2024-HL-paper-p048-i1",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p048-i1.png",
-          "srcHash": "89cf0afb49f6cffbd3b1f383484201e3",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q10(a)(ii), typeset as the State Examinations Commission set it. It reads: (a)(ii) cos ∠B = ∠B = cos^(−1 90) 120 = 41·40 … ° = 41·4° [1 DP]",
+          "srcHash": "7b716f0169237265125420a4fa1fe24e",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q10(a)(ii), typeset as the State Examinations Commission set it. It reads: (a)(ii) cos ∠B = 90/120 ∠B = cos−1 90/120 = 41·40 … ° = 41·4° [1",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5986,7 +6112,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p031-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p031-i0.png",
           "srcHash": "8c6d5b496b6e11a05d95eae7a8a1ac2e",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q10(a)(iii), typeset as the State Examinations Commission set it. It reads: Detailed marking notes Note: The model solutions for each question are not intended to be exhaustive – there may be other correct solutions. Any Examiner unsure of the validity of the approach adopted by a particular candidate to a particular question should contact his / her Advising Examiner. Mode = 34 so a = 4 Range = 49 … 69 −20 = 49 So b = 0 and c = 9 \"4d\"+45 = 43·5 Median = \"4d\" + 45 = 87 “4d” = 42 So d = 2",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q10(a)(iii), typeset as the State Examinations Commission set it. It reads: Detailed marking notes Note: The model solutions for each question are not intended to be exhaustive – there may be other correct solutions. Any Examiner unsure of the validity of the approach adopted by a particular candidate to a particular question should contact his / her Advising Examiner. Mode = 34 so a = 4 Range = 49 … 69 −20 = 49 So b = 0 and c = 9 (iii) Median = \"4d\"+45/2 = 43·5 \"4d\" + 45 = 87 “4d” = 42 So d",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6007,7 +6133,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p031-i1",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p031-i1.png",
           "srcHash": "a699ce0bca707df98db0a83977f1e2d2",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q10(c), typeset as the State Examinations Commission set it. It reads: A valid description, for example: Everyone improved but the stronger swimmers improved to a greater extent than the weaker swimmers. r = 0∙91451 … = 0∙9145 [4 D.P.] Mathematics – Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q10(b), typeset as the State Examinations Commission set it. It reads: A valid description, for example: Everyone improved but the stronger swimmers improved to a greater extent than the weaker swimmers. r = 0∙91451 … = 0∙9145 [4 D.P.] Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6070,7 +6196,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p006-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p006-i0.png",
           "srcHash": "160aa223c9a54207dcd4aaf721d664da",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q1(a), typeset as the State Examinations Commission set it. It reads: Note: The model solutions for each question are not intended to be exhaustive – there may be other correct solutions. Any Examiner unsure of the validity of the approach adopted by a particular candidate to a particular question should contact his / her Advising Examiner. Method 1: x−3 ≤ 12 and x−3 ≥ −12 x ≤ 15 and x ≥ −9 −9 ≤ x ≤ 15 Method 2: (x−3)² ≤ 12² x² −6x + 9 ≤ 144 x² −6x−135 ≤ 0 Roots: x = 6 ± √(−6)² −4(1)(−",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q1(a), typeset as the State Examinations Commission set it. It reads: Note: The model solutions for each question are not intended to be exhaustive – there may be other correct solutions. Any Examiner unsure of the validity of the approach adopted by a particular candidate to a particular question should contact his / her Advising Examiner. Method 1: x−3 ≤ 12 and x−3 ≥ −12 x ≤ 15 and x ≥ −9 −9 ≤ x ≤ 15 Method 2: (x−3)² ≤ 12² x² −6x + 9 ≤ 144 x² −6x−135 ≤ 0 Roots: x = 6 ± √(−6)2 −4(1)(−",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6090,8 +6216,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2025-HL-paper-p007-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p007-i0.png",
-          "srcHash": "e5a446be8e7b93978ac6acd9d67ddf45",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q1(b), typeset as the State Examinations Commission set it. It reads: Method 1 (4x−10√x)(2x + 5√x−7) = 4x(2x + 5√x−7) −10√x(2x + 5√x−7) = 8x² + 20x√x−28x −20x√x−50x + 70√x = 8x² −78x + 70√x Method 2 Let y = √x 4y²(2y² + 5y−7) −10y(2y² + 5y−7) = 8y⁴ + 20y³ −28y² −20y³ −50y² + 70y = 8y⁴ −78y² + 70y = 8x² −78x + 70√x",
+          "srcHash": "643690520702e895b784b0bcf766e00a",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q1(b), typeset as the State Examinations Commission set it. It reads: Method 1 (4x−10√x)(2x + 5√x−7) = 4x(2x + 5√x−7)/−10√x(2x + 5√x−7) = 8x2 + /−20x√x−50x + 20x√x−28x 70√x = 8x² −78x + 70√x Method 2 Let y = √x 4y²(2y² + 5y−7) −10y(2y² + 5y−7) = 8y⁴ + 20y³ −28y² −20y³ −50y² + 70y = = 8y4 8x2 −78x + −78y2 + 70y/70√x",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6111,8 +6237,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2025-HL-paper-p008-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p008-i0.png",
-          "srcHash": "742fcc0890bb612bd294cb78a05dc470",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q1(c), typeset as the State Examinations Commission set it. It reads: Method 1 2x² −9x + 10 2x + 3√4x³ −12x² −7x + 30 4x³ + 6x² −18x² −7x −18x² −27x 20x + 30 20x + 30 2x² −9x + 10 = 0 (2x + 3)(2x−5)(x−2) = 0 2 and x = 2 and x = 2 x = − Method 2 −9x 2x² 20x 2x 4x³ −18x² −27x 6x² 2x² −9x + 10 = 0 (2x + 3)(2x−5)(x−2) = 0 2 and x = 2 and x = 2 x = − Method 3 (2x + 3)(ax² + b + c) = 4x³ −12x² −7x + 30 (2x + 3)(2x² + b + 10) = 4x³ −12x² −7x + 30 20x + 3b = −7x (20 + 3b)x = −7x 20 + 3b = −7 b",
+          "srcHash": "341db889fc09ea7c146785b595d8e70a",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q1(c), typeset as the State Examinations Commission set it. It reads: Method 1 2x + 2x2 −9x + 10/3√4x3 −12x2 −7x + 30 4x3 + 6x2/−18x2 −7x −18x2 −27x/20x + 30 20x + 30/0 2x² −9x + 10 = 0 (2x + 3)(2x−5)(x−2) = 0 x = − 3/2 and x = 5/2 and x = 2 Method 2 −9x 2x² 2x² −9x + 10 = 0 (2x + 3)(2x−5)(x−2) = 0 x = − 3/2 and x = 5/2 and x = 2 Method 3 (2x + 3)(ax² + b + c) = 4x³ −12x² −7x + 30 (2x + 3)(2x² + b + 10) = 4x³ −12x² −7x + 30 20x + 3b = −7x (20 + 3b)x = −7x 20 + 3b = −7 b = −9 2x² −9x + ",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6196,7 +6322,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p011-i1",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p011-i1.png",
           "srcHash": "31f5db76a098107efc55dda2ddad15a5",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q3(b), typeset as the State Examinations Commission set it. It reads: Method 1 [By the quotient rule:] g′(x) = (2x−7)(0) −3(2) (2x−7)² (2x−7)² = − ≠0 [for all x in the domain of g(x)] [So, the function has no turning points] Method 2 [By the chain rule] g(x) = 3(2x−7)^(−1) g′(x) = −3(2x−7)^(−2)(2) = −6(2x−7)^(−2) < 0[for all x in the domain of g(x)] [So, the function has no turning points] Method 3 g′(x) = − (2x−7)² < 0[for all x in the domain of g(x)] [So g(x) is a decreasing function",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q3(b), typeset as the State Examinations Commission set it. It reads: Method 1 [By the quotient rule:] g′(x) = (2x−7)(0) −3(2)/(2x−7)2 = − 6/(2x−7)2 ≠0 [for all x in the domain of g(x)] [So, the function has no turning points] Method 2 [By the chain rule] g(x) = 3(2x−7)^(−1) g′(x) = −3(2x−7)^(−2)(2) = −6(2x−7)^(−2) < 0[for all x in the domain of g(x)] [So, the function has no turning points] Method 3 g′(x) = − 6/(2x−7)2 < 0[for all x in the domain of g(x)] [So g(x) is a decreasing func",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6217,7 +6343,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p012-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p012-i0.png",
           "srcHash": "8c22d69edcf0f33b2f151fbb3bbb7c38",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q3(c), typeset as the State Examinations Commission set it. It reads: 5 e^(5x)]k = [1 ∫e^(5x)d 5 e^(5x)]k 0 = 9 5 [e^(5(k)) −e5(0)] = 9 e^(5k)−1 = 45 e^(5k) = 46 5k = ln 46 k = ln 46",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q3(c), typeset as the State Examinations Commission set it. It reads: ∫e5xd 0 k = [1/5 e5x]k 0 [1/5 e5x]k 0 = 9 1/5 [e5(k) −e5(0)] = 9 e^(5k)−1 = 45 e^(5k) = 46 5k = ln 46 k = ln 46/5",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6237,8 +6363,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2025-HL-paper-p013-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p013-i0.png",
-          "srcHash": "1f39f19f7e2bfc0ec3714d2853ada5a9",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q4(a), typeset as the State Examinations Commission set it. It reads: Method 1: 4 + 5i) = 8 + 10i + 12i + 15i² (2 + 3i 4 −5i)(4 + 5i 16 + 20i−20i−25i² = −7 + 22i = −7 41 + 22 41 i Method 2: 2 + 3i 4 −5i = a + b (4 −5i)(a + b) = 2 + 3i 4a + 4b−5a−5bi² = 2 + 3i Re: 4a + 5b = 2 Im: −5a + 4b = 3 20a + 25b = 10 Re × 5: Im × 4: −20a + 16b = 12 41b = 22∴b = 41) = 2∴a = − 4a + 5 ( 2 + 3i 4 −5i = −7 41 + 22 41 i Method 3 Let 𝜃1 = tan^(−1 3) Let 𝜃2 = tan^(−1) − 2 + 3i = √13(cos(𝜃1) + isin(𝜃1)) 4",
+          "srcHash": "d276327dd5f80ba38cca14d9d27c30f0",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q4(a), typeset as the State Examinations Commission set it. It reads: Method 1: (2 + 3i 4 −5i)(4 + 5i = −7 + 22i/41 = −7/41 + 22/41 i Method 2: 2 + 3i/4 −5i = a + b (4 −5i)(a + b) = 2 + 3i 4a + 4b−5a−5bi² = 2 + 3i Re: 4a + 5b = 2 Im: −5a + 4b = 3 20a + 25b = 10 Re × 5: Im × 4: −20a + 16b = 12/22 41b = 22 ∴b = 22/41 4a + 5 ( 22/41) = 2 ∴a = − 7/41 2 + 3i/4 −5i = −7/41 + 22/41 i Method 3 Let 𝜃1 = tan−1 3/2 Let 𝜃2 = tan−1 − 5/4 2 + 3i = √13(cos(𝜃₁) + isin(𝜃₁)) 4 −5i = √41(cos(𝜃₂) + isin(𝜃",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6280,7 +6406,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p014-i1",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p014-i1.png",
           "srcHash": "e03b9125ba77513fa09fa634cf4c49c1",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q4(c), typeset as the State Examinations Commission set it. It reads: z⁶ = −64i so z = (−64i) Reference angle: 3𝜋 𝜋 𝜃= −90° or 270° or 2 or − Modulus: r = 64 General polar form: 3𝜋 3𝜋 z = [64 (cos ( 2 + 2n) + i sin ( 2 + 2n))] De Moivre’s Theorem: 6 [cos ( 𝜋 3 ) + i sin( 𝜋 4 + n 4 + n 3 ) ] z = 64 ANY TWO OF: 𝜋 𝜋 4)) = √2 + √2i n = 0:2 (cos ( 4) + i sin ( 𝜋 𝜋 𝜋 𝜋 n = 1:2 (cos ( 3)) 3) + i sin ( 4 + 4 + + √6 + √2 −√6 + √2 = 2𝜋 2𝜋 𝜋 𝜋 3 )) = n = 2:2 (cos ( 3 ) + i sin( 4 + 4 + + √6−√2 −√",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q4(c), typeset as the State Examinations Commission set it. It reads: z⁶ = −64i so z = (−64i) Reference angle: 𝜃= −90° or 270° or 3𝜋/2 or − 𝜋/2 Modulus: r = 64 General polar form: z = [64 (cos ( 3𝜋/2 + 2n) + i sin ( 3𝜋/2 + 2n))] De Moivre’s Theorem: z = 64 1/6 [cos ( 𝜋/4 + n/3 ) + i sin( 𝜋/4 + n/3 ) ] ANY TWO OF:/n = 0: 2 (cos ( 𝜋 4) + i sin ( 𝜋 4)) = √2 + √2i n = 0: 2 (cos ( 𝜋/4) + i sin ( 𝜋/4)) = √2 + √2i n = 1: 2 (cos ( 𝜋/4 + 𝜋/3) + i sin ( 𝜋/4 + 𝜋/3)) n = 1: 2 (cos ( 4 + 3) + /−√6 ",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6301,7 +6427,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p015-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p015-i0.png",
           "srcHash": "b58e9c683bc8a868db0aebe6d48de2b9",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q5(a), typeset as the State Examinations Commission set it. It reads: Method 1 5x² + 20x−12 = 5 [x² + 4x−12 5 ] = 5 [(x² + 4x + 2²) −12 5 −2²] = 5 [(x + 2)² −32 5 ] ∴g(x) = 5(x + 2)² −32 Method 2 5x² + 20x−12 = a(x + h)² + k = a(x² + 2xh + h²) + k = ax² + 2ah + ah² + k Equating coefficients of like terms: a = 5 2ah = 20 2(5)(h) = 20 h = 10 ah² + k = −12 5(2)² + k = −12 k = −32 ∴g(x) = 5(x + 2)² −32 Method 3 f′(x) = 10x + 20 f′(x) = 0 10x + 20 = 0 x = −2 [axis of symmetry] f(−2) = −32 ∴",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q5(a), typeset as the State Examinations Commission set it. It reads: Method 1 5x² + 20x−12 = 5 [x2 + 4x−12/5 ] = 5 [(x2 + 4x + 22) −12/5 −22] = 5 [(x + 2)2 −32/5 ] ∴g(x) = 5(x + 2)² −32 Method 2 5x² + 20x−12 = a(x + h)² + k = a(x² + 2xh + h²) + k = ax² + 2ah + ah² + k Equating coefficients of like terms: a = 5 2ah = 20 2(5)(h) = 20 h = 10 ah² + k = −12 5(2)² + k = −12 k = −32 ∴g(x) = 5(x + 2)² −32 Method 3 f′(x) = 10x + 20 f′(x) = 0 10x + 20 = 0 x = −2 [axis of symmetry] f(−2) = −32 ∴",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6385,7 +6511,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p018-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p018-i0.png",
           "srcHash": "78e5b3d1537ab5de695eb2a2354887cd",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q6(b)(i), typeset as the State Examinations Commission set it. It reads: (b)(i) Method 1 One solution ⇒b² −4a = 0 (−4r)² −4(6m)(54m) = 0 16r² −1296m² = 0 r² −81m² = 0 (r−9m)(r + 9m) = 0 r = 9m [ r, m > 0] Method 2 One solution ⇒2 equal roots {α, α} Sum of roots: Product of roots: 2𝛼= 4r 𝛼² = 54m 6m 6m = 9 [r, m > 0, ⇒𝛼> 0] 𝛼= ±3 𝛼= 3 2(3) = 4r 6m 4r = 36m r = 9m",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q6(b)(i), typeset as the State Examinations Commission set it. It reads: (b)(i) Method 1 One solution ⇒b² −4a = 0 (−4r)² −4(6m)(54m) = 0 16r² −1296m² = 0 (r−9m)(r + 9m) = 0 r = 9m [ r, m > 0] Method 2 One solution ⇒2 equal roots {α, α} Sum of roots: Product of roots: 𝛼² = 54m = 9 [r, m > 0, ⇒𝛼> 0] 𝛼= ±3 𝛼= 3 2(3) = 4r/6m 4r = 36m r = 9m",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6406,7 +6532,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p019-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p019-i0.png",
           "srcHash": "58ccfadf0992ff473719e137d1ffcbea",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q6(b)(ii), typeset as the State Examinations Commission set it. It reads: (b)(ii) Method 1 x = −b± √0 2a = 4(9m) 2(6m) = 3 Method 2 6mx² −36m + 54m = 0 x² −6x + 9 = 0 (x−3)² = 0 x = 3 Method 3 One solution, 𝛼⇒h′(𝛼) = 0 h′(𝛼) = 12m−4r 12m−4r = 0 12m−36m = 0 𝛼−3 = 0 𝛼= 3 Method 4 Sum of roots: Product of roots: 2𝛼= 4r 𝛼² = 54m 6m 6m = 9 [r, m > 0, ⇒𝛼> 0] 𝛼= ±3 𝛼= 3",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q6(b)(ii), typeset as the State Examinations Commission set it. It reads: (b)(ii) Method 1 x = −b± √0/2a = 4(9m)/2(6m) = 3 Method 2 6mx² −36m + 54m = 0 (x−3)² = 0 x = 3 Method 3 One solution, 𝛼⇒h′(𝛼) = 0 h′(𝛼) = 12m−4r 12m−4r = 0 12m−36m = 0 𝛼−3 = 0 𝛼= 3 Method 4 Sum of roots: Product of roots: 𝛼2 = 54m/6m 2𝛼= 4r/6m = 9 [r, m > 0, ⇒𝛼> 0] 𝛼= ±3 𝛼= 3",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6447,8 +6573,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2025-HL-paper-p020-i1",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p020-i1.png",
-          "srcHash": "d11fa2069f8871a1894ba166f702c74f",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q7(a)(iii), typeset as the State Examinations Commission set it. It reads: (a)(ii) 15.8 28.2 6.2 6.2 d = 6·2, a = 15·8 A(n) = 15·8 + (n−1)(6·2) [A(n) = 6·2n + 9·6] A(100) = 6 ∙2(100) + 9 ∙6 = 629 ∙6 (oo 3148 )",
+          "srcHash": "d4d63993958eca5538082605caa908a4",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q7(a)(iii), typeset as the State Examinations Commission set it. It reads: (a)(ii) 15.8 28.2 6.2 6.2 d = 6·2, a = 15·8 A(n) = 15·8 + (n−1)(6·2) [A(n) = 6·2n + 9·6] A(100) = 6 ∙2(100) + 9 ∙6 = 629 ∙6 (o 3148/5 )",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6469,7 +6595,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p021-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p021-i0.png",
           "srcHash": "f849be184e8e22d271f55211081396a3",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q7(a)(iv), typeset as the State Examinations Commission set it. It reads: (a)(iv) Method 1 S(n) = n 2 (2(15 ∙8) + (n−1)6 ∙2) = n(15 ∙8) + n(3 ∙1n) −n(3 ∙1) = 3 ∙1n² + 12 ∙7n Method 2 Sn−Sn−1 = Tn 3.1n² + 12.7n−(3.1(n−1)² + 12.7(n−1)) = 3.1n² + 12.7n−3.1n² −6.5n + 9.6 = 6.2n + 9.6 = Tn Method 3 The cumulative amount of silk required increases in a quadratic pattern S(1) S(2) S(3) 15.8 37.8 2228.2 6.2 Sn = an² + b + c a = 6.2 2 = 3.1 S1 = 3.1(1)² + b(1) + c = 15.8 b + c = 12.7 S2 = 3.1(2)² +",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q7(a)(iv), typeset as the State Examinations Commission set it. It reads: (a)(iv) Method 1 S(n) = n/2 (2(15 ∙8) + (n−1)6 ∙2) = n(15 ∙8) + n(3 ∙1n) −n(3 ∙1) = 3 ∙1n² + 12 ∙7n Method 2 Sₙ−Sₙ₋₁ = Tₙ 3.1n² + 12.7n−(3.1(n−1)² + 12.7(n−1)) = 3.1n² + 12.7n−3.1n² −6.5n + 9.6 = 6.2n + 9.6 = Tₙ Method 3 The cumulative amount of silk required increases in a quadratic pattern S(1) S(2) S(3) 15.8 37.8 2228.2 6.2 Sₙ = an² + b + c a = 6.2/2 = 3.1 S₁ = 3.1(1)² + b(1) + c = 15.8 b + c = 12.7 S₂ = 3.1(2)² +",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6490,7 +6616,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p022-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p022-i0.png",
           "srcHash": "9b7f1dd9612fb124f06fac8838349ad7",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q7(a)(v), typeset as the State Examinations Commission set it. It reads: (a)(v) 10 m = 1000 cm 3·1n² + 12·7n = 1000 3·1n² + 12·7n−1000 = 0 n = −12·7 ± √(12·7)² −4(3·1)(−1000) 2(3·1) n = 16·02 … [as n > 0] k = 17 [as k∈ℕ]",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q7(a)(v), typeset as the State Examinations Commission set it. It reads: (a)(v) 10 m = 1000 cm 3·1n² + 12·7n = 1000 3·1n2 −12·7 + ± 12·7n−1000 = 0/√(12·7)2 −4(3·1)(−1000) 2(3·1) n = 16·02 … [as n > 0] k = 17 [as k∈ℕ]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6511,7 +6637,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p022-i1",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p022-i1.png",
           "srcHash": "119168b9cf4709d757b91de09f7ed081",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q7(b)(ii), typeset as the State Examinations Commission set it. It reads: (b)(i) r = 0∙53 0·5 = 1.06 (oo53 50) O3 = 1·06(0·53) = 0·5618 (oo2890 5000) Sn = a(rⁿ−1) r−1 = 0·5(1·06ⁿ−1) 1·06 −1 = 25(1·06ⁿ−1) o−25(1 −1·06ⁿ)",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q7(b)(ii), typeset as the State Examinations Commission set it. It reads: (b)(i) r = 0∙53/0·5 = 1.06 (o53/50) O₃ = 1·06(0·53) = 0·5618 (o2890/5000) Sn = a(rn−1)/r−1 = 0·5(1·06n−1)/1·06 −1 = 25(1·06n−1)/3 o−25(1/3 −1·06n)",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6531,8 +6657,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2025-HL-paper-p023-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p023-i0.png",
-          "srcHash": "8c32b74e37c5a3261ab3cfa20a74d091",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q7(b)(iii), typeset as the State Examinations Commission set it. It reads: (b)(iii) Method 1 [18k orbitals in the first k laps, so:] S18k = 0·5(1·06^(18k)−1) 1·06 −1 25(1·06^(18k)−1) −25(1−1·06^(18k)) = Method 2 Each lap forms a geometric sequence. S36−S18 a = S18 and r = S18 S36 = 25 3 (1.06³⁶ −1) S18 = 25 3 (1.06¹⁸ −1) r = (1.06³⁶ −1) −(1.0618 −1) 1.06¹⁸ −1 = 1.06³⁶ −1.0618 1.06¹⁸ −1 = 1.06¹⁸(1.06¹⁸ −1) 1.06¹⁸ −1 = 1.06¹⁸ 3 (1.06¹⁸ −1)((1.06¹⁸)^k−1) Sk = 1.06¹⁸ −1 = 25 3 (1.06^(18k)−1)",
+          "srcHash": "3a7f31645455f69f8f00d1f359c4f2b3",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q7(b)(iii), typeset as the State Examinations Commission set it. It reads: (b)(iii) Method 1 [18k orbitals in the first k laps, so:] S18k = 0·5(1·0618k−1)/1·06 −1 = 25(1·0618k−1)/3 or −25(1−1·0618k)/3 Method 2 Each lap forms a geometric sequence. a = S18 and r = S36−S18/S18 S36 = 25/3 (1.0636 −1) S18 = 25/3 (1.0618 −1) r = (1.0636 −1) −(1.0618 −1)/1.0618 −1 = 1.0636 −1.0618/1.0618 −1 = 1.0618(1.0618 −1)/1.0618 −1 = 1.06¹⁸ 25/3 (1.0618 −1)((1.0618)k−1) S_k = 1.06¹⁸ −1 = 25/3 (1.0618k−1)",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6574,7 +6700,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p024-i1",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p024-i1.png",
           "srcHash": "bf79b6e0e3fb175e591eddd0cabd9b3e",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q8(b), typeset as the State Examinations Commission set it. It reads: Method 1 Cost according to Jacob: 1.183 = €80.30 … Actual cost: 80∙30 + 1∙02 = €81∙32 … Actual rate: 81 ∙32 d = = 1∙1682 … (or 1∙1681 … if an actual cost with more decimal places is used) d = 1∙168 [3D. P. ] Method 2 1·183 = 1·02 d− 95(1·183) −95d = 1·02(1·183)d 112·385 = 1·20666 d + 95 d d = 112·385 96·20666 = 1·1681 … d = 1∙168[3 D. P. ]",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q8(b), typeset as the State Examinations Commission set it. It reads: Method 1 Cost according to Jacob: 95/1.183 = €80.30 … Actual cost: 80∙30 + 1∙02 = €81∙32 … Actual rate: d = 95/81 ∙32 = 1∙1682 … (or 1∙1681 … if an actual cost with more decimal places is used) d = 1∙168 [3D. P. ] Method 2 95/d− 95/1·183 = 1·02 95(1·183) −95d = 1·02(1·183)d 112·385 = 1·20666 d + 95 d d = 112·385/96·20666 = 1·1681 … d = 1∙168[3 D. P. ]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6594,8 +6720,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2025-HL-paper-p025-i1",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p025-i1.png",
-          "srcHash": "2c1d7703247cdc1537d7bc4e94547788",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q8(e)(i), typeset as the State Examinations Commission set it. It reads: (e)(i) Method 1 |S| = √x² + 4 |B| = 8 −x T = √x² + 4 + 8 −x Method 2 |S| = √x² + 4 |B| = 8 −x Time|SB| = 10√x² + 4 [mins] Time|BF| = 5(8 −x) [mins] Total = 10√x² + 4 + 5(8 −x) [mins] = 10√x² + 4 + 5(8 −x) [hours]",
+          "srcHash": "6ce573e676238322d1b2bbdade63327f",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q8(e)(i), typeset as the State Examinations Commission set it. It reads: (e)(i) Method 1 |S| = √x2 + /√x2 + 4 4 8 −x |B| = 8 −x T = √x2 + 4/6 + 8 −x/12 Method 2 Time|SB| |S| = √x2 = 10√x2 + 4 |B|/+ 4 = [mins] 8 −x Time|BF| = 5(8 −x) [mins] Total = 10√x² + 4 + 5(8 −x) [mins] = 10√x2 + 4 + 5(8 −x)/60 [hours]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6616,7 +6742,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p026-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p026-i0.png",
           "srcHash": "1cff1a8edde45d864931e542b1528f90",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q8(e)(ii), typeset as the State Examinations Commission set it. It reads: (e)(ii) Method 1 − 1 12 = 0 6√x² + 4 12x−6√x2 + 4 = 0 2x = √x² + 4 4x² = x² + 4 3x² = 4 x² = 4 x = 2 √3 = 1.1547 … = 1.155 [km][3 D. P. ] Method 2 = 1 6√x² + 4 x² 36(x² + 4) = 144x² = 36x² + 144 108x² = 144 x² = 144 = 4 x = 2 √3 = 1·1547 … = 1.155 [km][3 D. P. ]",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q8(e)(ii), typeset as the State Examinations Commission set it. It reads: (e)(ii) Method 1 6√x2 x + 4 − 1/12 = 0 12x−6√x₂ + 4 = 0 2x = √x² + 4 4x² = x² + 4 3x² = 4 x2 = 4/3 x = 2/√3 2/√3 = 1.1547 … = 1.155 [km][3 D. P. ] Method 2 6√x2 x + 4 = 1/12 x2/36(x2 + 4) = 1/144 144x² = 36x² + 144 108x² = 144 x2 = 144/108 = 4/3 x = 2/√3 2/√3 = 1·1547 … = 1.155 [km][3 D. P. ]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6658,7 +6784,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p028-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p028-i0.png",
           "srcHash": "615c437945662eea45a4cc593e4b00ec",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q9(a)(i), typeset as the State Examinations Commission set it. It reads: (a)(i) Method 1 F(60) = 0·05(60)² −8·5(60) + 800 = 470 F(110) = 0·05(110)² −8·5(110) + 800 = 470 [= F(60)] Method 2 F′(c) = 0∙1c−8∙5 0∙1c−8∙5 = 0 at local min c = 85 [axis of symmetry] 60 + 110 = 85 ⇒F(60) = F(110)[by symmetry]",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q9(a)(i), typeset as the State Examinations Commission set it. It reads: (a)(i) Method 1 F(60) = 0·05(60)² −8·5(60) + 800 = 470 F(110) = 0·05(110)² −8·5(110) + 800 = 470 [= F(60)] Method 2 F′(c) = 0∙1c−8∙5 0∙1c−8∙5 = 0 at local min c = 85 [axis of symmetry] 60 + 110/2 = 85 ⇒F(60) = F(110)[by symmetry]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6679,7 +6805,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p029-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p029-i0.png",
           "srcHash": "b86cf080b143f8c3125d62c0252c890e",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q9(a)(iii), typeset as the State Examinations Commission set it. It reads: (a)(ii) d = 0·1c−8·5 At t = 7: c = 78 + 9 ln(7²) = 113·02 … d = (0·1c−8·5) = (0·1(113·02 … ) −8·5) = 2·80 … = 2∙8 [1 D. P. ]",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q9(a)(iii), typeset as the State Examinations Commission set it. It reads: (a)(ii) d/d = 0·1c−8·5 At t = 7: c = 78 + 9 ln(7²) = 113·02 … d/d = (0·1c−8·5) = (0·1(113·02 … ) −8·5) = 2·80 … = 2∙8 [1 D. P. ]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6699,8 +6825,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2025-HL-paper-p029-i1",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p029-i1.png",
-          "srcHash": "84813d99805b0783869895c1db887ea3",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q9(a)(iv), typeset as the State Examinations Commission set it. It reads: (a)(iv) Method 1 d = 9 (1 t²)(2t) = 18t t² = 18 Method 2 c = 78 + 18 ln t d = 18",
+          "srcHash": "9fec4bda89868734ed9e9b29de36ff3e",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q9(a)(iv), typeset as the State Examinations Commission set it. It reads: (a)(iv) Method 1 d/d = 9 (1/t2)(2t) = 18t/t2 = 18/t Method 2 c = 78 + 18 ln t d/d = 18/t",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6720,8 +6846,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2025-HL-paper-p030-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p030-i0.png",
-          "srcHash": "e3f3ea04169453fb84b79ba16d40afb7",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q9(a)(v), typeset as the State Examinations Commission set it. It reads: (a)(v) d = d d × d = (2·8) × (18 = (2·8) × (18 7 ) 5 [(litres/10000 km) / minute] = 7·2 or",
+          "srcHash": "98fe4949a3c6b58fa2abc02d2ea6d98c",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q9(a)(v), typeset as the State Examinations Commission set it. It reads: (a)(v) d/d = d/d × d/d = (2·8) × (18/t) = (2·8) × (18/7 ) = 7·2 or 36/5 [(litres/10000 km) / minute]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6763,7 +6889,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p032-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p032-i0.png",
           "srcHash": "578f8d8cbe158aa18e5e57c5b3e22e79",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q9(b)(iii), typeset as the State Examinations Commission set it. It reads: (b)(iii) 8−4 [∫(−t² + 24t−48∙4)d ] t³ 3 + 12t² −48·4t)]^(t = 8) = t = 4 4 [(− 8³ 3 + 12(8²) −48∙4(8)) ⎡(− ⎢ = 4 × ⎢ 4³ ⎢ 3 + 12(4²) −48∙4(4))⎦ −(− ⎣ 3152 15 )] = 15 −(− 4 × [ 58∙26 … = = 58∙3 [km/hour] [1 D.P.]",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q9(b)(iii), typeset as the State Examinations Commission set it. It reads: (b)(iii) 1/8−4 [∫(−t2 4 8 + 24t−48∙4)d ] = 1/4 [(− t3/3 + 12t2 −48·4t)]t = 8 t = 4 1 ⎢ ⎡(− 83/3 + 12(82) −48∙4(8)) = 1/4 × ⎢ ⎢ 3 43 4 ⎣ ⎢ −(− 43/3 + 12(42) −48∙4(4))⎦ = 1/4 × [ 3152/15 −(− 344/15 )] 58∙26 … = = 58∙3 [km/hour] [1 D.P.]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6805,7 +6931,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p033-i1",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p033-i1.png",
           "srcHash": "96a22c26dde4f7f2627ad76b6883ca6b",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q10(c), typeset as the State Examinations Commission set it. It reads: (0, 2000), (2000,0), (0, −2000), (−2000,0) (1, 1) in P2 (2, 2) in P4 (3, 3) in P6 (4, 4) in P8 ∴n = 8",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q10(b), typeset as the State Examinations Commission set it. It reads: (0, 2000), (2000,0), (0, −2000), (−2000,0) (1, 1) in P2 (2, 2) in P4 (3, 3) in P6 (4, 4) in P8 ∴n = 8",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6825,8 +6951,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2025-HL-paper-p033-i2",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p033-i2.png",
-          "srcHash": "d27f951782c5f8616f7452a1d03a164d",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q10(d)(i), typeset as the State Examinations Commission set it. It reads: n = t−1",
+          "srcHash": "44b49fbea6ec07dcb37f6a62a99a0ab3",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q10(d)(i), typeset as the State Examinations Commission set it. It reads: (d) (i) n = t−1/2",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6847,7 +6973,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p034-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p034-i0.png",
           "srcHash": "1018f68e10bdf51c0add7182aa15aa54",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q10(d)(ii), typeset as the State Examinations Commission set it. It reads: (n + 1)² (2n + 1)² Q(n) = (t−1 2 + 1) = (2(t−1 2 ) + 1) (t−1 + 2 ) (t−1 + 1)² = ((t + 1)2 ) = t² t² + 2t + 1 = 4t²",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q10(d)(ii), typeset as the State Examinations Commission set it. It reads: (d) (ii) Q(n) = (n + 1)2/(2n + 1)2 (t−1/2 + 1) 2 = 2/2 (t−1 + 2/2 ) 2 (t−1 + 1)² = 22/t2 ) t² + 2t + 1 = 4t²",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6867,8 +6993,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2025-HL-paper-p035-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p035-i0.png",
-          "srcHash": "8bdd22aa0ac2a3dbe7a50a921e1cab7a",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q10(d)(iii), typeset as the State Examinations Commission set it. It reads: Method 1 t² + 2t + 1 4t² t→∞ t² 2t 4t²) = lim 4t² + 4t² + t→∞( 4t²) = lim 2t + 4 + t→∞( 4 + 0 + 0 = = Method 2 t² + 2t + 1 4t² t→∞ t2 t2 + 1 t2 + 2t = lim t2 ) t2 (4t2 t→∞ 1 + ² t + 1 = lim t2 t→∞ 1 + 0 + 0 = =",
+          "srcHash": "c218720d0a21ede3d1d0747fb4d532e1",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q10(d)(iii), typeset as the State Examinations Commission set it. It reads: Method 1 t→∞ lim t2 + 2t + 1/4t2 = t→∞( lim t2/4t2 + 2t/4t2 + 1/4t2) = t→∞( lim 1/4 + 1/2t + 1/4t2) = 1/4 + 0 + 0 = 1/4 Method 2 t² + 2t + 1 4t² t→∞ = lim t2 t2 + 2t t2 + 1/t2 = t→∞ lim (4t2/t2 ) = lim 1 + 2/t + 1/t2 = t→∞ lim t + t2/4 1 + 2 = 1 + 0 + 0/4 = 1/4",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6910,7 +7036,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p041-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p041-i0.png",
           "srcHash": "b88c610bb0d93fb24754c0d936341dc0",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q1(a), typeset as the State Examinations Commission set it. It reads: Note: The model solutions for each question are not intended to be exhaustive – there may be other correct solutions. Any Examiner unsure of the validity of the approach adopted by a particular candidate to a particular question should contact his / her Advising Examiner. Method 1 3(p) −2(5) + 28 = 0 3p + 18 = 0 3p = −18 p = −6 Method 2 2 and (0, 14) is a point on the line m = 0 −p = 3 14 −5 −3p = 18 p = −6",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q1(a), typeset as the State Examinations Commission set it. It reads: Note: The model solutions for each question are not intended to be exhaustive – there may be other correct solutions. Any Examiner unsure of the validity of the approach adopted by a particular candidate to a particular question should contact his / her Advising Examiner. Method 1 3(p) −2(5) + 28 = 0 3p + 18 = 0 3p = −18 p = −6 Method 2 m = 3/2 and (0, 14) is a point on the line 14 −5/−p = 0 3/2 −3p = 18 p = −6",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6931,7 +7057,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p042-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p042-i0.png",
           "srcHash": "20637a75985c45145c508a8c1fc8e66f",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q1(b), typeset as the State Examinations Commission set it. It reads: Method 1 ml = −1 mh = 2 3 −2 −1 tan 𝜃= ± 1 + (−1 3)(2 5) tan 𝜃= ± −11 𝜃= 40∙2 … ° = 40[°][∈ℕ] Method 2 ml = −1 mh = 2 tan^(−1) (−1 3) = 161 ∙56 …⁰ tan^(−1) (2 5) = 21 ∙80 …⁰ 𝛼= 161 ∙56 …⁰ −21 ∙80 …⁰ = 139 ∙76 … ° 𝜃= 180⁰ −139 ∙76 …⁰ = 40∙24 … ° = 40[°][∈ℕ] Method 3 3 + tan^(−1) 2 𝜃= tan^(−1) 1 = 40 ∙2 … = 40[°][∈ℕ]",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q1(b), typeset as the State Examinations Commission set it. It reads: Method 1 ml = −1/3 mh = 2/5 tan 𝜃= ± −1/3 −2/5 tan 𝜃= ± 3 5/1 + (−1 3)(2 5) 1 + (−1 3)(2/5) tan 𝜃= ± −11/13 𝜃= 40∙2 … ° = 40[°][∈ℕ] Method 2 ml = −1/3 mh = 2/5 tan^(−1) (−1 tan−1 (2/5) = 21 ∙80 …0 𝛼= 161 ∙56 …⁰ −21 ∙80 …⁰ = 139 ∙76 … ° 𝜃= 180⁰ −139 ∙76 …⁰ = 40∙24 … ° = 40[°][∈ℕ] Method 3 𝜃= tan−1 1/3 + tan−1 2/5 = 40 ∙2 … = 40[°][∈ℕ]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6951,8 +7077,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2025-HL-paper-p043-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p043-i0.png",
-          "srcHash": "f82924e718c5f426ddc058bbf9328a7c",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q1(c), typeset as the State Examinations Commission set it. It reads: Method 1: [First 2 possible lines A in 1st quadrant:] a = 3, b = 2: area = 2 (2)(3) = 3 2 (4)(6) = 12. a = 6, b = 4: area = So a = 6, b = 4, ora = −6, b = −4. Equations: 3 x + 4andy = − 3 x−4 y = − [2x + 3y = 12 and 2x + 3y = −12] Method 2: Area: 2 a = 12 a = 24 a = Slope: a = −2 −b 2a = 3b 2 (24 b) = 3b 48 = 3b² b² = 16 b = ±4 Equations: 3 x + 4 and y = − 3 x−4 y = −",
+          "srcHash": "ca9ff7f7661e16089d23d2f8b56fcdd3",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q1(c), typeset as the State Examinations Commission set it. It reads: Method 1: [First 2 possible lines A in 1st quadrant:] a = 3, b = 2: area = 1/2 (2)(3) = 3 a = 6, b = 4: area = 1/2 (4)(6) = 12. So a = 6, b = 4, ora = −6, b = −4. Equations: y = − 2/3 x + 4 and y = − 2/3 x−4 [2x + 3y = 12 and 2x + 3y = −12] Method 2: Area: 1/2 a = 12 a = 24 a = 24/b Slope: −b/a = −2/3 2a = 3b 2 (24/b) = 3b 48 = 3b² b² = 16 b = ±4 Equations: y = − 2/3 x + 4 and y = − 2/3 x−4",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6972,8 +7098,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2025-HL-paper-p044-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p044-i0.png",
-          "srcHash": "1259cd50b69ed3594f087112f39c6abc",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q2(a)(i), typeset as the State Examinations Commission set it. It reads: Centre = (4, −2) Radius = √45or3√5",
+          "srcHash": "58841524bb258804bdecb196307f9e1a",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q2(a)(i), typeset as the State Examinations Commission set it. It reads: (i) Radius Centre = = (4,/√45 −2) or 3√5",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6994,7 +7120,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p046-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p046-i0.png",
           "srcHash": "1ca9a80561d6feef0a027af9924502c8",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q2(b), typeset as the State Examinations Commission set it. It reads: Method 1: Centre: (−14, 23) (−14, 23) y = k (−14, k) Point of tangency on circle: (−14, k) (−14)² + k² + 28(−14) −46k + k = 0 ...• k² −45k−196 = 0 (k−49)(k + 4) = 0 k = 49 or k = −4 Method 2: Centre = (−14, 23) Radius = √725 −k Tangent: 0 + y−k = 0 Perp distance tangent to centre = radius: |0 + 1(23)−k| ... • √0² + 1² = √725 −k (23 −k)² = 725 −k 529 −46k + k² −725 + k = 0 k² −45k−196 = 0 (k−49)(k + 4) = 0 k = 49 or k",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q2(b), typeset as the State Examinations Commission set it. It reads: Method 1: Centre: (−14, 23) (−14, 23) y = k (−14, k) Point of tangency on circle: (−14, k) (−14)² + k² + 28(−14) −46k + k = 0 ...• k² −45k−196 = 0 (k−49)(k + 4) = 0 k = 49 or k = −4 Method 2: Centre = (−14, 23) Radius = √725 −k Tangent: 0 + y−k = 0 Perp distance tangent to centre = radius: |0 + 1(23)−k|/√02 + 12 = √725 −k ... |0 + 1(23)−k|/√02 + 12 = √725 −k ... (23 −k)² = 725 −k 529 −46k + k² −725 + k = 0 k² −45k−19",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -7015,7 +7141,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p047-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p047-i0.png",
           "srcHash": "e8fc4a0bbf20a00117aca330b026cf21",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q3(a)(i), typeset as the State Examinations Commission set it. It reads: (a)(i) P(A) = 23 + 18 + 6 + 13 = 60 = 1",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q3(a)(i), typeset as the State Examinations Commission set it. It reads: (a)(i) P(A) = 23 + 18 + 6 + 13/240 = 60/240 = 1/4",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -7035,8 +7161,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2025-HL-paper-p047-i1",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p047-i1.png",
-          "srcHash": "7ee3d0f8bfc6bd5cc1a1ddd2b792ed49",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q3(a)(ii), typeset as the State Examinations Commission set it. It reads: (a)(ii) P(A∪C) = 60 + 16 + 41 = 117 P(A) = P(C) = P(A∩C) = P(A) + P(C) −P(A∩C) = 60 + 76 −19 = 117 = [P(A∪C)]",
+          "srcHash": "7a62c7509bd84a57d4a3de25252fbb0f",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q3(a)(ii), typeset as the State Examinations Commission set it. It reads: (a)(ii) P(A∪C) = 60 + 16 + 41/240 = 117/240 P(A) = 60/240 P(C) = 76/240 P(A∩C) = 19/240 P(A) + P(C) −P(A∩C) = 60 + 76 −19/240 = 117/240 = [P(A∪C)]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -7057,7 +7183,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p048-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p048-i0.png",
           "srcHash": "a53bfe00e82e029eb371a3a02eb71101",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q3(a)(iii), typeset as the State Examinations Commission set it. It reads: (a)(iii) Answer: YES Justification: Method 1 [Does P(A∩B) = P(A) × P(B)?] P(A∩B) = 18 + 6 = 24 = 1 4 and P(B) = P(A) = 240 = 4 × 2 P(A) × P(B) = 1 = 1 = [P(A∩B)] Method 2 [Is P(A|B) = P(A)?] P(A|B) = P(A∩B) P(B) = 24 = 1 = [P(A)] Method 3 [Is P(B|A) = P(B)?] P(B) = 18 + 6 + 16 + 56 = 2 P(B|A) = P(B∩A) P(A) = 18 + 6 = 2 = [P(B)]",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q3(a)(iii), typeset as the State Examinations Commission set it. It reads: (a)(iii) Answer: YES Justification: Method 1 [Does P(A∩B) = P(A) × P(B)?] P(A∩B) = 18 + 6/240 = 24/240 = 1/10 P(A) = 1/4 and P(B) = 96/240 = 2/5 P(A) × P(B) = 1/4 × 2/5 = 1/10 = [P(A∩B)] Method 2 [Is P(A|B) = P(A)?] P(A|B) = P(A∩B) P(B) = 24/96 = 1/4 = [P(A)] Method 3 [Is P(B|A) = P(B)?] P(B) = 18 + 6 + 16 + 56/240 = 2/5 P(B|A) = P(B∩A) P(A) = 18 + 6/60 = 2/5 = [P(B)]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -7078,7 +7204,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p050-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p050-i0.png",
           "srcHash": "f638c39195440c48e2c17ed232025864",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q4(a)(ii), typeset as the State Examinations Commission set it. It reads: x + 18 Median = x + 18 = 17 ∙5 x + 18 = 35 x = 17 Q3 = 19 + 22 = 20 ∙5 I = Q3 −Q1 = 20 ∙5 −13 = 7 ∙5",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q4(a)(ii), typeset as the State Examinations Commission set it. It reads: Median = x + 18/2 x + 18/2 = 17 ∙5 x + 18 = 35 x = 17 Q3 = 19 + 22/2 = 20 ∙5 I = Q₃ −Q₁ = 20 ∙5 −13 = 7 ∙5",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -7120,7 +7246,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p051-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p051-i0.png",
           "srcHash": "b8b2ab5b02d2a481e84502859db65b44",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q4(c), typeset as the State Examinations Commission set it. It reads: 27(4) + 33(5) + 39(9) + 45(k) + 51(4) + 57(2) = 40·4 4 + 5 + 9 + k + 4 + 2 942 + 45k = 40·4 k + 24 942 + 45k = 40.4k + 969.6 4.6k = 27.6 k = 6",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q4(c), typeset as the State Examinations Commission set it. It reads: 27(4) + 33(5) + 39(9) + 45(k) + 51(4) + 57(2) = 40·4 4 + 5 + 9 + k + 4 + 2 942 + 45k/k + 24 = 40·4 942 + 45k = 40.4k + 969.6 4.6k = 27.6 k = 6",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -7162,7 +7288,28 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p052-i1",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p052-i1.png",
           "srcHash": "c9467e91e095e1e0ca6e12b554adc02e",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q5(b)(i), typeset as the State Examinations Commission set it. It reads: (b)(i) k = |XQ′| |X| = 12 = 1 ∙5",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q5(b)(i), typeset as the State Examinations Commission set it. It reads: (b)(i) k = |XQ′|/|X| = 12/8 = 1 ∙5",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
+    id: "maths-2025-hl-p2-q5-b-ii", topicId: "maths-2-2", conceptId: "shown-again-diagram-right",
+    section: "B", questionRef: "2025 HL Paper 2 Q5(b)(ii)",
+    questionText: "P and P′Q′R′S′ are shown again in the diagram on the right",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-hl-p2-q5-b-ii-r1", kind: "anyN", verbatim: "Finds one relevant length", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Step 1; Step 2; Step 3; Step 4; Step 1; Step 3; Step 4.", openList: true, group: {"claimMax":4,"perOption":3,"options":["Finds one relevant length","Finds |P′Q|","Indicates |P′Q|/|P|","Finds area","Finds one relevant length","Shows |P| s(∠ S) = 4","Finds area"],"perOptionSteps":[3,2,2,3]} },
+    ],
+    figure: {
+          "candId": "maths-2025-HL-paper-p053-i0",
+          "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p053-i0.png",
+          "srcHash": "8e15ae7220212f7186e0a9cb8467f9a4",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q5(b)(ii), typeset as the State Examinations Commission set it. It reads: (b)(ii) Method 1 |XP′| = 1.5 × 3 = 4 ∙5 So, |P′Q| = 3∙5 Area = |P′Q| |P| × 20 = 3 · 5 = 14[cm²] Method 2 |P| = 8 −3 = 5 |P′Q′| = 5 × 1∙5 = 7 ∙5 |P′Q| = 7∙5 −4 = 3 ∙5 Area = |P′Q| |P| × 20 = 3 · 5/5 × 20 = 14[cm²] Method 3 |P| = 8 −3 = 5 |P′| = |XP′| −|X| = 3(1∙5) −3 = 1∙5 Area P = |P||P| sin∠S = 5|P| sin∠S = 20 ∴ |P| sin∠S = 4 Area P′Q = Area P−Area P′Y = 20 −1∙5|P| sin∠S = 20 −1∙5(4) = 14[cm²]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -7183,7 +7330,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p054-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p054-i0.png",
           "srcHash": "71cce7c284f42383aeb958f8ea62a251",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q6(a), typeset as the State Examinations Commission set it. It reads: sin^(−1) ( 2) = 30° 1st and 2nd quadrants: A = 30° A = 180 −30° = 150⁰ −360° : A = −330° or −210° +360° : A = 390° or 510° {−330⁰, −210⁰, 30⁰, 150⁰, 390⁰, 510⁰}",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q6(a), typeset as the State Examinations Commission set it. It reads: sin−1 ( 1/2) = 30° 1st and 2nd quadrants: A = 30° A = 180 −30° = 150⁰ −360° : A = −330° or −210° +360° : A = 390° or 510° {−330⁰, −210⁰, 30⁰, 150⁰, 390⁰, 510⁰}",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -7203,8 +7350,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2025-HL-paper-p054-i1",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p054-i1.png",
-          "srcHash": "fe576d6ab39a12d881e9194107bd822a",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q6(b), typeset as the State Examinations Commission set it. It reads: Period = 2 (2𝜋) = 𝜋 [radians] Range: |sin x| has a range of [0, 1] |4 sinx| has a range of [0, 4] |4 sinx| −1 has a range of [−1, 3]",
+          "srcHash": "847c2b0b6796c98e39d2275daff7fe45",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q6(b), typeset as the State Examinations Commission set it. It reads: (b) Period = 1/2 (2𝜋) = 𝜋 [radians] Range: |sin x| has a range of [0, 1] |4 sinx| has a range of [0, 4] |4 sinx| −1 has a range of [−1, 3]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -7225,7 +7372,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p055-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p055-i0.png",
           "srcHash": "40e3a57ca1a4fad56f8f92cb665229c1",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q6(c), typeset as the State Examinations Commission set it. It reads: (2)² = (3)² + (4)² −2(3)(4) cos B cos B = 25 −4 = 21 24² = x² + 21² x² = 135 B x = √135 = 3√15 tan ∠C = 3√15 = √15",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q6(c), typeset as the State Examinations Commission set it. It reads: (2)² = (3)² + (4)² −2(3)(4) cos B cos B = 25 −4/24 = 21/24 24² = x² + 21² x2 x = = 135/√135 x B x = = √135/3√15 21 B tan ∠C = 3√15/21 = √15/7",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -7245,8 +7392,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2025-HL-paper-p056-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p056-i0.png",
-          "srcHash": "5bfcd25d05ed756ade9cf49959ebc0a3",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q7(a)(ii), typeset as the State Examinations Commission set it. It reads: r = 1 [cm]; d = 10 [cm]; h = 3 [cm] 14 × 90 = 6·42 … = 6∙4 [m] [1 D.P.] r = 14 × 90 = 64·28 … = 64∙3 [m] [1 D.P.] d = 14 × 90 = 19·28 … = 19∙3 [m] [1 D.P.] h =",
+          "srcHash": "f2b3aa34abc7d4f740907211e1b74969",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q7(a)(ii), typeset as the State Examinations Commission set it. It reads: r = 1 [cm]; d = 10 [cm]; h = 3 [cm] r = 1/14 × 90 = 6·42 … = 6∙4 [m] [1 D.P.] d = 10/14 × 90 = 64·28 … = 64∙3 [m] [1 D.P.] h = 3/14 × 90 = 19·28 … = 19∙3 [m] [1 D.P.]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -7266,7 +7413,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2025-HL-paper-p056-i1",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p056-i1.png",
-          "srcHash": "b7191b7abb4d92f95fb3be3673f91416",
+          "srcHash": "85023eddddee5084c5a9ae39666385f4",
           "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q7(b), typeset as the State Examinations Commission set it.",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
@@ -7308,8 +7455,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2025-HL-paper-p057-i1",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p057-i1.png",
-          "srcHash": "ace283f18b07b442014e9091cba94fd3",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q7(c)(iii), typeset as the State Examinations Commission set it. It reads: (c)(iii) Method 1 2 (6)(20 −7) = 39 [km2] Method 2 (20,0) →(0,0) (7, 3) →(−13, 3) (7, −3) →(−13, −3) 2 |(−13)(−3) −(−13)(3)| = 39 [km2]",
+          "srcHash": "958c1b801e887bdf7666e783998745b4",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q7(c)(iii), typeset as the State Examinations Commission set it. It reads: (c)(iii) Method 1 1/2 (6)(20 −7) = 39 [km2] Method 2 (20,0) →(0,0) (7, 3) →(−13, 3) (7, −3) →(−13, −3) 1/2 |(−13)(−3) −(−13)(3)| = 39 [km2]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -7329,8 +7476,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2025-HL-paper-p058-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p058-i0.png",
-          "srcHash": "ed964da7c2e8e3425f15c80301edfe08",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q7(c)(iv), typeset as the State Examinations Commission set it. It reads: (c)(iv) Method 1 |∠C| = 2 tan^(−1) (3 13) = 25 ∙9 … = 26 [°][∈ℕ] Method 2 2 (√178)(√178 )sin∠CB = 39 sin∠C = 78 |∠C| = sin^(−1) (78 178) |∠C| = 25∙9 … = 26[°][∈ℕ] Method 3 6² = 178 + 178 −2(178) cos∠C cos∠C = 320 |∠C| = 25 ∙9 … = 26[°][∈ℕ]",
+          "srcHash": "c05bc6bb9396c5eb12651bce940b6f36",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q7(c)(iv), typeset as the State Examinations Commission set it. It reads: (c)(iv) Method 1 |∠C| = 2 tan−1 (3/13) = 25 ∙9 … = 26 [°][∈ℕ] Method 2 1/2 (√178)(√178 )sin∠CB = 39 sin∠C = 78/178 |∠C| = sin−1 (78/178) |∠C| = 25∙9 … = 26[°][∈ℕ] Method 3 6² = 178 + 178 −2(178) cos∠C cos∠C = 320/356 |∠C| = 25 ∙9 …",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -7351,7 +7498,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p059-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p059-i0.png",
           "srcHash": "468e1d6261bacc053553a50c39ed7a43",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q7(c)(v), typeset as the State Examinations Commission set it. It reads: (c)(v) Method 1 Area sector C = 26 360 𝜋(√178) = 40 ∙3869 … Sector −∆C = 40·3869 … −39 = 1·3869 … Sector −∆A = 23·4837 −21 = 2·4837 Total shaded area = 1·3869 … + 2·4837 … = 3 ∙87[km²][2 D. P. ] Method 2 Area sector C = 26 360 𝜋(√178) = 40 ∙3869 … Total shaded area: 40·3869 … + 23·4837 −39 −21 = 3∙87 [km2] [2 D.P.] Method 3 |∠C| = 13𝜋 Area of sector C = 1 2 13𝜋 2 (√178) = 40∙3869 … Total shaded area: 40·3869 … + 23·4",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q7(c)(v), typeset as the State Examinations Commission set it. It reads: (c)(v) Method 1 Area sector C = 26/360 𝜋(√178) 2 = 40 ∙3869 … Sector −∆C = 40·3869 … −39 = 1·3869 … Sector −∆A = 23·4837 −21 = 2·4837 Total shaded area = 1·3869 … + 2·4837 … = 3 ∙87[km²][2 D. P. ] Method 2 Area sector C = 26/360 𝜋(√178) 2 = 40 ∙3869 … Total shaded area: 40·3869 … + 23·4837 −39 −21 = 3∙87 [km₂] [2 D.P.] Method 3 |∠C| = 13𝜋/90 Area of sector C = 1/2 (√178) 2 13𝜋/90 = 40∙3869 … Total shaded area: 40·386",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -7371,8 +7518,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2025-HL-paper-p060-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p060-i0.png",
-          "srcHash": "5434f46570100ec6b40eafb65c0aad63",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q8(a)(i), typeset as the State Examinations Commission set it. It reads: (a)(i) |O|² + |O|² = 6² 2 |O| ² = 36 |O| ² = 18 |O| = 3√2 [m] OR |O|² = 3² + 3² = 18 |O| = 3√2 [m] 2 + |O|2 = 112 (3√2) |O|² = 103 |O| = √103 [m]",
+          "srcHash": "2cc83886732f550a6a75a212b63cdb0a",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q8(a)(i), typeset as the State Examinations Commission set it. It reads: (a)(i) |O|² + |O|² = 6² 2 |O| ² = 36 |O| |O| 2 = = 18/3√2 [m] OR |O|² = 3² + 3² = 18 |O| = 3√2 [m] 2 + |O|₂ = 11₂ (3√2) |O|2 |O| = = 103/√103 [m]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -7393,7 +7540,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p060-i1",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p060-i1.png",
           "srcHash": "fdc4dec0272fc0129104429d6dc5ae98",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q8(a)(ii), typeset as the State Examinations Commission set it. It reads: (a)(ii) Method 1 Area 1 face = (1 2)(6)(11)(sin 74·2) = 31 ∙75 … Area 4 faces = 4 × 31 ∙75 … = 127[m²][∈ℕ] Method 2 Area 1 face = (1 2)(11)(11)(sin31·6) = 31 ∙71 … Area 4 faces = 4 × 31 ∙71 … = 127[m²][∈ℕ] Method 3 tan 74.2⁰ = h h = 3 tan 74 ∙2⁰ Area 1 face = (1 2)(6)(3 tan 74 ∙2⁰) = 31 ∙80 … Area 4 faces = 4 × 31 ∙80 … = 127[m²][∈ℕ]",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q8(a)(ii), typeset as the State Examinations Commission set it. It reads: (a)(ii) Method 1 Area 1 face = (1/2)(6)(11)(sin 74·2) = 31 ∙75 … Area 4 faces = 4 × 31 ∙75 … = 127[m²][∈ℕ] Method 2 Area 1 face = (1/2)(11)(11)(sin31·6) Area 4 faces = 4 × 31 ∙71 … = 127[m²][∈ℕ] Method 3 tan 74.20 = h/3 h = 3 tan 74 ∙2⁰ Area 1 face = (1/2)(6)(3 tan 74 ∙20) = 31 ∙80 … Area 4 faces = 4 × 31 ∙80 … = 127[m²][∈ℕ]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -7434,8 +7581,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2025-HL-paper-p061-i1",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p061-i1.png",
-          "srcHash": "a4cf528b47db6fe697a167735a172443",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q8(b), typeset as the State Examinations Commission set it. It reads: tan A = 17·5 A = tan^(−1) (17·5 15 ) = 49 ∙39 … 52−49∙39… % Error = × 100 49∙4 2∙60… 49∙4 × 100 = = 5∙26 … = 5∙3 [%] [1 DP]",
+          "srcHash": "69093afd0b24e7a93bdd75159485a08c",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q8(b), typeset as the State Examinations Commission set it. It reads: (b) tan A = 17·5/15 A = tan−1 (17·5/15 ) = 49 ∙39 … % Error = 52−49∙39…/49∙4 × 100 = 2∙60…/49∙4 × 100 = 5∙26 … = 5∙3 [%] [1 DP]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -7456,7 +7603,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p062-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p062-i0.png",
           "srcHash": "15865218d1918417d23c76a126389363",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q8(c)(i), typeset as the State Examinations Commission set it. It reads: (c)(i) Angle opposite x: 180 −35 = 145° Angle opposite 10: 35 −22 = 13° Sine rule: sin13 sin145 = x = 10 sin145⁰ sin13⁰ = 25.5[m][1 D. P. ]",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q8(c)(i), typeset as the State Examinations Commission set it. It reads: (c)(i) Angle opposite x: 180 −35 = 145° Angle opposite 10: 35 −22 = 13° Sine rule: x/sin145 = 10/sin13 x = 10 sin1450/sin130 = 25.5[m][1 D. P. ]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -7477,7 +7624,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p063-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p063-i0.png",
           "srcHash": "ca5cf6bafcda25e0b695473bd2aea115",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q8(c)(ii), typeset as the State Examinations Commission set it. It reads: (c)(ii) Method 1 Let y = h−1 ∙25 sin22⁰ = 25 ∙5 y = 25 ∙5 × sin 22⁰ = 9 ∙55 … h = 9 ∙55 … + 1 ∙25 = 10 ∙80 … = 10 ∙8 [m][1 D. P. ] Method 2 Let p be the length of the side opposite 22⁰ sin 22⁰ sin13⁰ = p = 16.652 … Let y = h−1 ∙25 sin35⁰ = 16.652 … y = 9 ∙551 … h = 9 ∙551 … + 1 ∙25 = 10 ∙80 … = 10 ∙8 [m][1 D. P. ]",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q8(c)(ii), typeset as the State Examinations Commission set it. It reads: (c)(ii) Method 1 Let y = h−1 ∙25 sin220 = y/25 ∙5 y = 25 ∙5 × sin 22⁰ = 9 ∙55 … h = 9 ∙55 … + 1 ∙25 = 10 ∙80 … = 10 ∙8 [m][1 D. P. ] Method 2 Let p be the length of the side opposite 22⁰ 10/sin130 = p/sin 220 p = 16.652 … Let y = h−1 ∙25 sin350 = y/16.652 … y = 9 ∙551 … h = 9 ∙551 … + 1 ∙25 = 10 ∙80 … = 10 ∙8 [m][1 D. P. ]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -7498,7 +7645,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p065-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p065-i0.png",
           "srcHash": "edbb06cebfb015c508a67ea4d3c2a9a3",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q9(a)(iv), typeset as the State Examinations Commission set it. It reads: 0∙0663 + 0∙0728 = 0∙1391 0∙0663 0∙1391 = 0 ∙47663 = 0 ∙4766 [4 D. P. ]",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q9(a)(iv), typeset as the State Examinations Commission set it. It reads: 0∙0663 + 0∙0728 = 0∙1391 0∙0663/0∙1391 = 0 ∙47663 = 0 ∙4766 [4 D. P. ]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -7518,8 +7665,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2025-HL-paper-p066-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p066-i0.png",
-          "srcHash": "77603a8266c9b274d7df955fea4fca59",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q9(c)(i), typeset as the State Examinations Commission set it. It reads: ( 20 10 ) = 184 756 OR 20P10 ÷ 10! OR 20! 10! 10!",
+          "srcHash": "ca411a124e84abf16b9b30afe4efbb78",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q9(c)(i), typeset as the State Examinations Commission set it. It reads: ( 20 10 ) = 184 756 OR 20_P₁₀ ÷ 10! OR 20!/10! 10!",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -7581,8 +7728,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2025-HL-paper-p068-i1",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p068-i1.png",
-          "srcHash": "204b97212e60187744f91fd377c6177b",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q10(a)(ii), typeset as the State Examinations Commission set it. It reads: (a)(ii) z = x−𝜇 𝜎 z = 420 −400 = 1 = 0∙33 1 −P(z < 0∙33) = 1 −0∙6293 = 0.3707 = 0.37 [2 D. P. ] or accept: 1 −P(z < 0∙34) = 1 −0∙6331 = 0.3669 = 0.37 [2 D. P. ]",
+          "srcHash": "3caa84a845930095ae659e9670e29d0e",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q10(a)(ii), typeset as the State Examinations Commission set it. It reads: (a)(ii) z = x−𝜇/𝜎 z = 420 −400/60 = 1/3 = 0∙33 1 −P(z < 0∙33) = 1 −0∙6293 = 0.3707 = 0.37 [2 D. P. ] or accept: 1 −P(z < 0∙34) = 1 −0∙6331 = 0.3669 = 0.37 [2 D. P. ]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -7603,7 +7750,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p069-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p069-i0.png",
           "srcHash": "b013aa6d361efba0404714f26b974a97",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q10(b), typeset as the State Examinations Commission set it. It reads: x̅ ± 1.96 s √n 387 ± 1∙96 (66∙2 ) √2161 = 387 ± 2∙79 … 384∙2 < 𝜇< 389∙8 [1 D.P.]",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q10(b), typeset as the State Examinations Commission set it. It reads: (b) x̅ ± 1.96 s/√n s/√n 387 ± 1∙96 (66∙2 = 387 ± 2∙79 … 384∙2 < 𝜇< 389∙8 [1 D.P.]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -7624,7 +7771,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p069-i1",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p069-i1.png",
           "srcHash": "8b19ca1a2208166b08a42990db9ccefa",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q10(c)(ii), typeset as the State Examinations Commission set it. It reads: z = 403 −400 70 ∙6 √2724 = 2∙217 … = 2 ∙22 [2 D. P. ] p-value: P(z < 2∙22) = 0∙9868 p = 2(1 −0∙9868) = 0.0264 Conclusion: the mean score for country Y is significantly different to 400",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q10(c)(ii), typeset as the State Examinations Commission set it. It reads: z = 403 −400/70 ∙6 70 ∙6/√2724 70 ∙6/√2724 = 2∙217 … = 2 ∙22 [2 D. P. ] p-value: P(z < 2∙22) = 0∙9868 p = 2(1 −0∙9868) = 0.0264 Conclusion: the mean score for country Y is significantly different to 400",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -7645,7 +7792,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p070-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p070-i0.png",
           "srcHash": "84bdc8aad3f9fde1648a098d109f8edc",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q10(d), typeset as the State Examinations Commission set it. It reads: How to: From all students who own a pet in country Z, 2520 take a random sample of = 1260. From all students who do not own a pet, do the same. Why not useful: Probably no connection between owning a pet and maths scores.",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q10(d), typeset as the State Examinations Commission set it. It reads: How to: From all students who own a pet in country Z, take a random sample of 2520/2 = 1260. From all students who do not own a pet, do the same. Why not useful: Probably no connection between owning a pet and maths scores.",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
