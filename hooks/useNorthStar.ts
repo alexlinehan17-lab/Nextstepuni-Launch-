@@ -3,58 +3,42 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState, useEffect, useCallback } from 'react';
-import { doc, getDoc, setDoc } from 'firebase/firestore';
-import { db, auth } from '../firebase';
+import { useCallback } from 'react';
+import { doc, setDoc } from 'firebase/firestore';
+import { db } from '../firebase';
 import { saveInBackground } from '../utils/firestoreWrite';
 import { type NorthStar } from '../types';
+import { useAuth } from '../contexts/AuthContext';
+import { useProgress } from '../contexts/ProgressContext';
+import { DEMO_STUDENT_UID } from '../data/devStudent';
 
+/**
+ * Shared North Star access for module content. ProgressContext is the source of
+ * truth so the localhost Demo Account and a freshly edited North Star are both
+ * visible immediately; the previous auth.currentUser lookup excluded demo
+ * sessions entirely and duplicated the app-level progress read.
+ */
 export function useNorthStar() {
-  const [northStar, setNorthStar] = useState<NorthStar | null>(null);
-  const [isLoaded, setIsLoaded] = useState(false);
+  const { user } = useAuth();
+  const {
+    northStar,
+    setNorthStar,
+    progressLoaded,
+    updateDemoProgress,
+  } = useProgress();
 
-  const uid = auth.currentUser?.uid;
-
-  useEffect(() => {
-    if (!uid) {
-      setNorthStar(null);
-      setIsLoaded(true);
+  const saveNorthStar = useCallback(async (next: NorthStar) => {
+    setNorthStar(next);
+    if (!user?.uid) return;
+    if (user.uid === DEMO_STUDENT_UID) {
+      updateDemoProgress(current => ({ ...current, northStar: next }));
       return;
     }
+    saveInBackground(
+      setDoc(doc(db, 'progress', user.uid), { northStar: next }, { merge: true }),
+      'useNorthStar.save',
+    );
+  }, [setNorthStar, updateDemoProgress, user?.uid]);
 
-    let cancelled = false;
-
-    const load = async () => {
-      try {
-        const snap = await getDoc(doc(db, 'progress', uid));
-        if (cancelled) return;
-        if (snap.exists()) {
-          const data = snap.data();
-          if (data.northStar) {
-            setNorthStar(data.northStar as NorthStar);
-          }
-        }
-      } catch (err) {
-        console.error('Failed to load North Star:', err);
-      }
-      if (!cancelled) setIsLoaded(true);
-    };
-
-    load();
-    return () => { cancelled = true; };
-  }, [uid]);
-
-  const saveNorthStar = useCallback(async (ns: NorthStar) => {
-    setNorthStar(ns);
-    const uid = auth.currentUser?.uid;
-    if (uid) {
-      try {
-        saveInBackground(setDoc(doc(db, 'progress', uid), { northStar: ns }, { merge: true }), 'useNorthStar.save');
-      } catch (err) {
-        console.error('Failed to save North Star:', err);
-      }
-    }
-  }, []);
-
-  return { northStar, saveNorthStar, isLoaded };
+  return { northStar, saveNorthStar, isLoaded: progressLoaded };
 }

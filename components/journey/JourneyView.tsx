@@ -327,6 +327,12 @@ const JourneyView: React.FC<JourneyViewProps> = ({
             onSelectPlacement={handleSelectOwnedPlacement}
           />
 
+          {peerViewMode === 'own' && !sheetOpen && !kudosModalOpen && !giftsModalOpen && (
+            <div className="pointer-events-none absolute left-1/2 top-[76px] z-[74] w-[calc(100%-32px)] max-w-xs -translate-x-1/2 rounded-xl bg-black/65 px-4 py-2.5 text-center text-sm font-semibold leading-snug text-white sm:hidden">
+              {northStar.statement}
+            </div>
+          )}
+
           {/* Top overlay */}
           <div
             className="absolute top-0 left-0 right-0 z-[75] flex items-center justify-between gap-4 py-4 md:px-6"
@@ -336,7 +342,9 @@ const JourneyView: React.FC<JourneyViewProps> = ({
             }}
           >
             <button
+              type="button"
               onClick={isViewingPeer ? handleBackFromPeer : onBack}
+              aria-label={isViewingPeer ? 'Back to my island' : 'Back to home'}
               className="p-2.5 rounded-xl bg-white/90 dark:bg-zinc-900/90 backdrop-blur-sm border border-zinc-200 dark:border-zinc-800 hover:bg-white dark:hover:bg-zinc-800 transition-colors"
             >
               <ArrowLeft size={18} className="text-zinc-900 dark:text-white" />
@@ -382,7 +390,9 @@ const JourneyView: React.FC<JourneyViewProps> = ({
             {!isViewingPeer ? (
               <div className="flex shrink-0 items-center gap-2 sm:gap-3">
                 <button
+                  type="button"
                   onClick={() => buildMode ? exitBuildMode() : setBuildMode(true)}
+                  aria-label={buildMode ? 'Finish building' : 'Build island'}
                   className={`flex items-center gap-2 px-3 py-2.5 rounded-xl backdrop-blur-sm border transition-colors ${
                     buildMode
                       ? 'bg-[#F26B1F] border-[#F26B1F] text-white'
@@ -395,7 +405,9 @@ const JourneyView: React.FC<JourneyViewProps> = ({
                 {user.school && <>
                 {kudosCount > 0 && (
                   <button
+                    type="button"
                     onClick={() => setKudosModalOpen(true)}
+                    aria-label={`Open ${kudosCount} kudos`}
                     className="relative p-2.5 rounded-xl bg-white/90 dark:bg-zinc-900/90 backdrop-blur-sm border border-zinc-200 dark:border-zinc-800 hover:bg-white dark:hover:bg-zinc-800 transition-colors"
                   >
                     <Heart size={18} className="text-pink-500" fill="currentColor" />
@@ -406,7 +418,9 @@ const JourneyView: React.FC<JourneyViewProps> = ({
                 )}
                 {pendingGifts.length > 0 && (
                   <button
+                    type="button"
                     onClick={() => setGiftsModalOpen(true)}
+                    aria-label={`Open ${pendingGifts.length} pending gifts`}
                     className="relative p-2.5 rounded-xl bg-white/90 dark:bg-zinc-900/90 backdrop-blur-sm border border-zinc-200 dark:border-zinc-800 hover:bg-white dark:hover:bg-zinc-800 transition-colors"
                   >
                     <Gift size={18} className="text-amber-500" />
@@ -416,7 +430,9 @@ const JourneyView: React.FC<JourneyViewProps> = ({
                   </button>
                 )}
                 <button
+                  type="button"
                   onClick={() => setPeerViewMode('peer-list')}
+                  aria-label="View classmates' islands"
                   className="p-2.5 rounded-xl bg-white/90 dark:bg-zinc-900/90 backdrop-blur-sm border border-zinc-200 dark:border-zinc-800 hover:bg-white dark:hover:bg-zinc-800 transition-colors"
                 >
                   <Users size={18} className="text-zinc-900 dark:text-white" />
@@ -581,6 +597,7 @@ const JourneyView: React.FC<JourneyViewProps> = ({
           isOpen={rewardModalItem !== null}
           onClose={() => {
             setRewardModalItem(null);
+            setSheetOpen(false);
             setBuildMode(true);
             setBuildMessage('Your reward is waiting in the Build Tray');
           }}

@@ -12,7 +12,7 @@ import { resolveCurriculumSpecification } from '../curriculumRegistry';
 import { type DebriefEntry } from '../components/StudyDebrief';
 import { type StudentSubjectProfile } from '../components/subjectData';
 import { type CourseData } from '../components/Library';
-import { type ProgressDocument } from '../services/progressRepository';
+import { extractModuleProgress, type ProgressDocument } from '../services/progressRepository';
 import { canonicalMasteryKey } from '../services/topicMasteryMigration';
 import {
   type NorthStar,
@@ -29,6 +29,9 @@ import { STRATEGY_REGISTRY, type StudySessionRecord } from '../utils/strategyReg
 import { getWeekStartDate, type GamificationFirestoreData } from '../gamificationConfig';
 
 export const DEMO_STUDENT_UID = 'demo-student';
+
+const DEMO_SESSION_STORAGE_KEY = 'nextstepuni:demo-session:v1';
+const DEMO_PROGRESS_STORAGE_KEY = 'nextstepuni:demo-progress:v1';
 
 /** @deprecated Use DEMO_STUDENT_UID. Kept for local tooling compatibility. */
 export const DEV_STUDENT_UID = DEMO_STUDENT_UID;
@@ -369,6 +372,7 @@ export const createDemoMockResults = (
       }),
       totalPoints: totals[resultIndex],
       timestamp: atLocalTime(day, 15).getTime(),
+      resultKind: 'full',
     };
   });
 };
@@ -459,6 +463,84 @@ export const createDemoStudentLoadedData = (today = new Date()): DemoStudentLoad
       earnedRest: { restDayPasses: [] },
     },
   };
+};
+
+const canUseBrowserStorage = (): boolean => typeof window !== 'undefined';
+
+const readStoredDemoProgress = (): ProgressDocument | null => {
+  if (!canUseBrowserStorage()) return null;
+  try {
+    const stored = window.localStorage.getItem(DEMO_PROGRESS_STORAGE_KEY);
+    if (!stored) return null;
+    const parsed = JSON.parse(stored) as unknown;
+    return parsed && typeof parsed === 'object' && !Array.isArray(parsed)
+      ? parsed as ProgressDocument
+      : null;
+  } catch {
+    return null;
+  }
+};
+
+/** Rebuild the date-aware demo seed and layer locally saved interactions over it. */
+export const loadDemoStudentLoadedData = (today = new Date()): DemoStudentLoadedData => {
+  const seeded = createDemoStudentLoadedData(today);
+  const stored = readStoredDemoProgress();
+  if (!stored) return seeded;
+
+  const rawProgressDoc: ProgressDocument = { ...seeded.rawProgressDoc, ...stored };
+  const studentProfile = (rawProgressDoc.subjectProfile as StudentSubjectProfile | undefined)
+    ?? seeded.studentProfile;
+  const northStar = (rawProgressDoc.northStar as NorthStar | undefined) ?? seeded.northStar;
+  const cosmeticUnlocks = rawProgressDoc.cosmeticUnlocks ?? {};
+
+  return {
+    ...seeded,
+    userProgress: extractModuleProgress(rawProgressDoc),
+    studentProfile,
+    northStar,
+    dismissedGuides: rawProgressDoc.dismissedGuides ?? seeded.dismissedGuides,
+    timetableCompletions: rawProgressDoc.timetableCompletions ?? seeded.timetableCompletions,
+    unlockedAvatarSeeds: cosmeticUnlocks.avatarSeeds ?? seeded.unlockedAvatarSeeds,
+    unlockedThemes: cosmeticUnlocks.themeColors ?? seeded.unlockedThemes,
+    unlockedCardStyles: cosmeticUnlocks.cardStyles ?? seeded.unlockedCardStyles,
+    rawProgressDoc,
+  };
+};
+
+export const persistDemoStudentProgress = (progress: ProgressDocument): void => {
+  if (!canUseBrowserStorage()) return;
+  try {
+    window.localStorage.setItem(DEMO_PROGRESS_STORAGE_KEY, JSON.stringify(progress));
+  } catch {
+    // Privacy-restricted embeds can disable storage; in-memory demo state still works.
+  }
+};
+
+export const markDemoSessionActive = (): void => {
+  if (!canUseBrowserStorage()) return;
+  try {
+    window.sessionStorage.setItem(DEMO_SESSION_STORAGE_KEY, 'active');
+  } catch {
+    // In-memory login remains the fallback.
+  }
+};
+
+export const clearDemoSession = (): void => {
+  if (!canUseBrowserStorage()) return;
+  try {
+    window.sessionStorage.removeItem(DEMO_SESSION_STORAGE_KEY);
+  } catch {
+    // Nothing else to clear when storage is unavailable.
+  }
+};
+
+export const hasActiveDemoSession = (): boolean => {
+  if (!canUseBrowserStorage()) return false;
+  try {
+    return window.sessionStorage.getItem(DEMO_SESSION_STORAGE_KEY) === 'active';
+  } catch {
+    return false;
+  }
 };
 
 /** @deprecated Local tooling aliases retained while callers migrate names. */

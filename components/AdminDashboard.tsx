@@ -8,12 +8,13 @@ import { type CourseData } from './Library';
 import { type SessionUser, getAvatarUrl } from '../utils/authUtils';
 import { GraduationCap, LogOut, Trash2, AlertTriangle, MessageSquareText, Users, TrendingUp, KeyRound } from 'lucide-react';
 import { type CategoryType } from './KnowledgeTree';
-import app, { db } from '../firebase';
+import app, { auth, db } from '../firebase';
 import { collection, getDocs, query, limit, where, documentId } from 'firebase/firestore';
 import { getFunctions, httpsCallable } from 'firebase/functions';
 import AdminFeedbackInbox from './AdminFeedbackInbox';
 import AdminFunnelPanel from './AdminFunnelPanel';
 import AdminGcAccessPanel from './AdminGcAccessPanel';
+import { reauthMethodFor, reauthenticateCurrentUser } from '../utils/reauthenticate';
 
 // FIX: Cast motion components to any to bypass broken type definitions
 
@@ -117,7 +118,12 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
     const [isLoading, setIsLoading] = useState(true);
     const [deleteTarget, setDeleteTarget] = useState<SessionUser | null>(null);
     const [isDeleting, setIsDeleting] = useState(false);
+    const [deleteVerificationPassword, setDeleteVerificationPassword] = useState('');
     const [activeView, setActiveView] = useState<'students' | 'feedback' | 'funnel' | 'gc-access'>('students');
+    const closeDeleteDialog = () => {
+      setDeleteVerificationPassword('');
+      setDeleteTarget(null);
+    };
 
     // Full cascade delete via the requestAccountDeletion Cloud Function (Admin
     // SDK): removes the Auth account + every Firestore collection holding the
@@ -125,6 +131,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
     const handleDeleteStudent = async (user: SessionUser) => {
       setIsDeleting(true);
       try {
+        if (!auth.currentUser) throw new Error('No administrator is signed in.');
+        await reauthenticateCurrentUser(auth.currentUser, deleteVerificationPassword);
         const functions = getFunctions(app);
         const deleteFn = httpsCallable<{ uid: string }, { success: boolean }>(functions, 'requestAccountDeletion');
         await deleteFn({ uid: user.uid });
@@ -134,7 +142,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
         alert('Failed to delete student. You may not have permission.');
       }
       setIsDeleting(false);
-      setDeleteTarget(null);
+      setDeleteVerificationPassword('');
+      closeDeleteDialog();
     };
 
     useEffect(() => {
@@ -294,7 +303,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
 
       {/* Delete confirmation modal */}
       {deleteTarget && (
-        <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4" onClick={() => !isDeleting && setDeleteTarget(null)}>
+        <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4" onClick={() => !isDeleting && closeDeleteDialog()}>
           <div className="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 max-w-sm w-full shadow-2xl" onClick={e => e.stopPropagation()}>
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 rounded-xl bg-red-100 dark:bg-red-500/10 flex items-center justify-center text-red-500">
@@ -308,9 +317,22 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
             <p className="text-xs text-zinc-400 dark:text-zinc-500 mb-6">
               This will permanently remove all their progress and profile. This action cannot be undone.
             </p>
+            {reauthMethodFor(auth.currentUser) === 'password' && (
+              <div className="mb-5">
+                <label htmlFor="admin-delete-password" className="block text-xs font-medium text-zinc-500 dark:text-zinc-400 mb-2">Re-enter your password</label>
+                <input
+                  id="admin-delete-password"
+                  type="password"
+                  value={deleteVerificationPassword}
+                  onChange={event => setDeleteVerificationPassword(event.target.value)}
+                  autoComplete="current-password"
+                  className="w-full rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 px-4 py-3 text-sm text-zinc-900 dark:text-white outline-none focus:border-red-400"
+                />
+              </div>
+            )}
             <div className="flex gap-3">
               <button
-                onClick={() => setDeleteTarget(null)}
+                onClick={closeDeleteDialog}
                 disabled={isDeleting}
                 className="flex-1 px-4 py-2.5 text-sm font-medium rounded-xl border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors disabled:opacity-50"
               >
@@ -318,7 +340,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ allCourses, onLo
               </button>
               <button
                 onClick={() => handleDeleteStudent(deleteTarget)}
-                disabled={isDeleting}
+                disabled={isDeleting || (reauthMethodFor(auth.currentUser) === 'password' && !deleteVerificationPassword)}
                 className="flex-1 px-4 py-2.5 text-sm font-medium rounded-xl bg-red-500 text-white hover:bg-red-600 transition-colors disabled:opacity-50"
               >
                 {isDeleting ? 'Deleting...' : 'Delete'}

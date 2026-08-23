@@ -7,6 +7,8 @@ import type { DirectionItemState, DirectionProfile, NorthStar } from '../types';
 import { createDirectionProfile, getNorthStarDisplayText, hasStudentAuthoredNorthStar, normaliseDirectionProfile } from '../services/directionProfile';
 import { saveInBackground } from '../utils/firestoreWrite';
 import NorthStarCategoryIcon from './NorthStarCategoryIcon';
+import { useProgress } from '../contexts/ProgressContext';
+import { DEMO_STUDENT_UID } from '../data/devStudent';
 
 interface MyDirectionProps {
   uid: string;
@@ -41,10 +43,17 @@ const VISION_BLOB_COLOUR: Record<string, string> = {
 const MyDirection: React.FC<MyDirectionProps> = ({
   uid, northStar, onBack, onEditNorthStar, onOpenFutureFinder, onOpenPointsPassport,
 }) => {
+  const { rawProgressDoc, updateDemoProgress } = useProgress();
+  const isDemo = uid === DEMO_STUDENT_UID;
   const [profile, setProfile] = useState<DirectionProfile>(() => createDirectionProfile(northStar));
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
+    if (isDemo) {
+      setProfile(normaliseDirectionProfile(rawProgressDoc.directionProfile, northStar));
+      setLoaded(true);
+      return;
+    }
     let live = true;
     getDoc(doc(db, 'progress', uid)).then(snapshot => {
       if (!live) return;
@@ -54,7 +63,7 @@ const MyDirection: React.FC<MyDirectionProps> = ({
       if (live) setLoaded(true);
     });
     return () => { live = false; };
-  }, [uid, northStar]);
+  }, [uid, northStar, isDemo, rawProgressDoc.directionProfile]);
 
   const cardsById = useMemo(() => new Map(VISION_CARDS.map(card => [card.id, card])), []);
   const category = NORTH_STAR_CATEGORIES.find(item => item.id === northStar.category);
@@ -69,7 +78,8 @@ const MyDirection: React.FC<MyDirectionProps> = ({
       visionItems: profile.visionItems.map(item => item.id === id ? { ...item, state, updatedAt: now } : item),
     };
     setProfile(next);
-    saveInBackground(setDoc(doc(db, 'progress', uid), { directionProfile: next }, { merge: true }), 'MyDirection.updateState');
+    if (isDemo) updateDemoProgress(current => ({ ...current, directionProfile: next }));
+    else saveInBackground(setDoc(doc(db, 'progress', uid), { directionProfile: next }, { merge: true }), 'MyDirection.updateState');
   };
 
   return (

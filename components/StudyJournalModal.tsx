@@ -93,7 +93,7 @@ const StudyJournalModal: React.FC<StudyJournalModalProps> = ({ isOpen, onClose, 
                     Study Journal
                   </h2>
                   <p className="text-[10px] text-zinc-400 dark:text-zinc-500 font-medium">
-                    {reflections.length} reflections &middot; {totalPoints} pts earned
+                    {reflections.length} reflections &middot; {totalPoints} JP earned
                   </p>
                 </div>
               </div>

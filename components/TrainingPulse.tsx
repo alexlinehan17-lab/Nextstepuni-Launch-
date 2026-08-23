@@ -114,14 +114,14 @@ const AnimatedPoints: React.FC<{ value: number; size: 'sm' | 'xs' }> = ({ value,
 
 interface TrainingPulseProps {
   gamificationState: GamificationState;
-  onOpenHub: () => void;
+  onOpenProgress: () => void;
   streak: StreakData;
   pointsBalance: number;
 }
 
 const TrainingPulse: React.FC<TrainingPulseProps> = ({
   gamificationState,
-  onOpenHub,
+  onOpenProgress,
   streak,
   pointsBalance,
 }) => {
@@ -133,7 +133,7 @@ const TrainingPulse: React.FC<TrainingPulseProps> = ({
     <>
       {/* Desktop: Horizontal pill */}
       <MotionButton
-        onClick={onOpenHub}
+        onClick={onOpenProgress}
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
         className="hidden md:flex items-center gap-3 px-4 py-2 rounded-full bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-shadow cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]"
@@ -179,7 +179,7 @@ const TrainingPulse: React.FC<TrainingPulseProps> = ({
 
       {/* Mobile: Compact badge — shown inline in header area */}
       <MotionButton
-        onClick={onOpenHub}
+        onClick={onOpenProgress}
         whileTap={{ scale: 0.95 }}
         className="flex md:hidden items-center gap-2 px-3 py-1.5 rounded-full bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-sm cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]"
       >

@@ -18,8 +18,13 @@ export interface WaysInFigure {
 }
 
 export interface WaysInAnswerShape {
-  /** Number of distinct answer ideas or selectable parts to plan for. */
-  points: number;
+  /**
+   * Number of distinct answer ideas or selectable parts PRINTED by the source.
+   *
+   * This must never be inferred from marking-scheme rows. It is optional
+   * because many papers print a tariff without printing an answer count.
+   */
+  points?: number;
   /** Printed tariff for the whole question, when the source supplies one. */
   totalMarks?: number;
   /** A choice instruction such as “answer 4 of 6”, without answer content. */
@@ -69,14 +74,48 @@ export interface WaysInStep {
   prompt: string;
 }
 
+export type WaysInPlanKind =
+  | 'printed-parts'
+  | 'calculation'
+  | 'procedure'
+  | 'explanation'
+  | 'comparison'
+  | 'direct';
+
+export interface WaysInPlanPrompt {
+  /** Stable within the generated frame; student work still stays session-only. */
+  id: string;
+  /** Neutral structural label, never an answer or marking-scheme phrase. */
+  label: string;
+  /** Exact paper wording that this planning row belongs to, when available. */
+  sourceText?: string;
+  placeholder: string;
+}
+
 export interface WaysInQuestionModel {
   exactText: string;
   lines: string[];
+  /** Every distinct instruction safely detected, in printed order. */
+  commands: CommandDemand[];
+  /** First instruction, retained for the existing step-by-step workspace. */
   command: CommandDemand | null;
   givens: string[];
   constraints: string[];
   keywords: string[];
+  /** A conservative planning frame derived from the printed question only. */
+  planShape: {
+    count: number;
+    basis: 'printed' | 'flexible';
+    /** Exact words from the question that justify a printed count. */
+    evidence?: string;
+    /** The visible paper structure that justifies the planning frame. */
+    structure?: 'choice' | 'count-phrase' | 'parts' | 'blanks' | 'labels' | 'instructions';
+  };
+  /** Backwards-compatible alias for planShape.count. */
   expectedPoints: number;
+  /** A question-shaped empty frame made only from visible paper wording. */
+  planKind: WaysInPlanKind;
+  planPrompts: WaysInPlanPrompt[];
   highlights: QuestionHighlight[];
   steps: WaysInStep[];
 }

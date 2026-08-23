@@ -46,11 +46,13 @@ import { type StudySessionRecord } from '../utils/strategyRegistry';
 import { doc, setDoc, arrayUnion } from 'firebase/firestore';
 import { db } from '../firebase';
 import { saveInBackground } from '../utils/firestoreWrite';
+import { useProgress } from '../contexts/ProgressContext';
+import { DEMO_STUDENT_UID } from '../data/devStudent';
+import { isProgressReadyForUser } from '../utils/progressHydration';
 
 const Onboarding = lazy(() => import('./Onboarding'));
 const JCComingSoon = lazy(() => import('./JCComingSoon'));
 const JourneyView = lazy(() => import('./journey/JourneyView'));
-const TrainingHub = lazy(() => import('./TrainingHub'));
 const MyDirection = lazy(() => import('./MyDirection'));
 const StudySessionView = lazy(() => import('./study/StudySessionView'));
 const InsightsView = lazy(() => import('./InsightsView'));
@@ -202,7 +204,8 @@ export interface AppRouterProps {
 
 const AppRouter: React.FC<AppRouterProps> = (props) => {
   const nav = useNavigation();
-  const { viewState, currentCategory, currentModuleId, cameFromJourney } = nav.state;
+  const { updateDemoProgress, setTimetableCompletions, progressLoaded, progressDataUid } = useProgress();
+  const { viewState, dashboardSection, currentCategory, currentModuleId, cameFromJourney } = nav.state;
   const { user, userResolved, needsOnboarding, handleLoginSuccess, handleLogout } = useAuth();
 
   const {
@@ -237,11 +240,11 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
   const handleGoToModules = () => { nav.navigateToModules(); };
   const handleGoToInnovationZone = () => { nav.navigateToInnovationZone(); };
   const handleGoToDashboard = () => { nav.navigateToDashboard(); };
+  const handleGoToMilestones = () => { nav.navigateToDashboard('milestones'); };
   const handleGoToLearningPaths = () => { nav.navigateToLearningPaths(); };
   const handleGoToYearPlans = () => { nav.navigateToYearPlans(); };
   const handleGoToWipTools = () => { nav.navigateToWipTools(); };
   const handleGoToJourney = () => { nav.navigateToJourney(); };
-  const handleGoToGamificationHub = () => { nav.navigateToGamificationHub(); };
   const handleGoToStudy = () => {
     setTimetableBlockContext(null);
     nav.navigateToStudySession();
@@ -285,9 +288,17 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     return <Suspense fallback={<LoadingSpinner />}><LoginPage handleLoginSuccess={handleLoginSuccess} /></Suspense>;
   }
 
+  // Auth and progress live in separate providers. A login can publish the user
+  // one render before ProgressContext has mirrored that same user's document;
+  // rendering the app in that gap flashes 0 JP and empty progress. Hold the
+  // route until the progress snapshot explicitly belongs to this account.
+  if (!isProgressReadyForUser(user.uid, progressLoaded, progressDataUid)) {
+    return <LoadingSpinner />;
+  }
+
   // Force password change if flagged by GC reset
   if (user.needsPasswordChange) {
-    return <ChangePasswordModal user={user} />;
+    return <ChangePasswordModal user={user} onComplete={handleLogout} />;
   }
 
   if (user.isAdmin) {
@@ -299,7 +310,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
   if (isSchoolStaff(user.role) && user.school) {
     // Provisioning resolved — release the hold set during the staff claim.
     endStaffProvisioning();
-    return <Suspense fallback={<LoadingSpinner />}><GCDashboard school={user.school} onLogout={handleLogout} allCourses={ALL_COURSES} gcName={user.name} gcUid={user.uid} /></Suspense>;
+    return <Suspense fallback={<LoadingSpinner />}><GCDashboard school={user.school} onLogout={handleLogout} allCourses={ALL_COURSES} gcName={user.name} gcUid={user.uid} role={user.role} /></Suspense>;
   }
 
   // Onboarding gate: render Onboarding immediately when the auth+progress
@@ -339,13 +350,23 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
           onBack={handleBackToTree}
           onStrategyMasteryRecompute={strategyMastery.recompute}
           strategyMastery={strategyMastery.masteryMap}
-          onGoToTrainingHub={handleGoToGamificationHub}
+          onGoToProgress={handleGoToMilestones}
           dismissedGuides={dismissedGuides}
           onDismissGuide={handleDismissGuide}
           weeklyChallenge={weeklyChallenge}
           timetableBlock={timetableBlockContext}
           onTimetableBlockComplete={async (dateKey, blockId, _actualMinutes) => {
             if (!user?.uid) return;
+            if (user.uid === DEMO_STUDENT_UID) {
+              setTimetableCompletions(previous => {
+                const nextForDay = Array.from(new Set([...(previous[dateKey] ?? []), blockId]));
+                const next = { ...previous, [dateKey]: nextForDay };
+                updateDemoProgress(current => ({ ...current, timetableCompletions: next }));
+                return next;
+              });
+              setTimetableBlockContext(null);
+              return;
+            }
             // arrayUnion is atomic — concurrent tabs can't clobber each other's
             // completions. Fired, not awaited: a student finishing a study
             // session offline would otherwise never see the block clear.
@@ -376,32 +397,6 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     );
   }
 
-  if (viewState === 'gamification-hub') {
-    return (
-      <Suspense fallback={<LoadingSpinner />}>
-        <TrainingHub
-          gamificationState={gamification.state}
-          streak={streak}
-          pointsBalance={pointsData.balance}
-          northStar={northStar}
-          onBack={handleBackToTree}
-          onOpenJourney={handleGoToJourney}
-          onOpenDirection={() => nav.navigateToDirection()}
-          userProgress={userProgress}
-          allCourses={studentCourses}
-          strategyMastery={strategyMastery.masteryMap}
-          dismissedGuides={dismissedGuides}
-          onDismissGuide={handleDismissGuide}
-          weeklyChallenge={weeklyChallenge}
-          pointsReload={() => { pointsData.reload(); reloadQuest(); }}
-          onGoToStudy={handleGoToStudy}
-          uid={user?.uid}
-          curriculumLevel={user?.curriculumLevel}
-        />
-      </Suspense>
-    );
-  }
-
   if (viewState === 'dashboard') {
     return (
       <Suspense fallback={<LoadingSpinner />}>
@@ -424,6 +419,13 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
           questState={questState}
           onClaimQuestReward={claimQuestReward}
           onStartStudy={handleGoToStudy}
+          gamificationState={gamification.isLoaded ? gamification.state : null}
+          strategyMastery={strategyMastery.masteryMap}
+          weeklyChallenge={weeklyChallenge}
+          pointsReload={() => { pointsData.reload(); reloadQuest(); }}
+          curriculumLevel={user?.curriculumLevel}
+          activeTab={dashboardSection}
+          onTabChange={nav.setDashboardSection}
           darkMode={settings.darkMode}
           onToggleTheme={() => updateSetting('darkMode', !settings.darkMode)}
         />
@@ -550,7 +552,6 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
       onGoToJourney={handleGoToJourney}
       onGoToStudy={handleGoToStudy}
       onGoToInsights={handleGoToInsights}
-      onGoToTrainingHub={handleGoToGamificationHub}
       onGoToCutContent={handleGoToCutContent}
       onGoToAccreditation={handleGoToAccreditation}
       allCourses={studentCourses}
@@ -625,7 +626,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
           {/* Header */}
           <header className="fixed top-0 left-0 right-0 z-50 px-4 md:px-10 bg-[#FAFBF6] dark:bg-zinc-950 border-b border-zinc-200/50 dark:border-white/[0.06]" style={{ paddingTop: 'calc(16px + var(--sat, 0px))', paddingBottom: '24px' }}>
             <div className="flex items-center gap-4">
-              <button onClick={handleBackToTree} className="p-2.5 rounded-xl transition-colors hover:bg-white/60" style={{ border: '1px solid rgba(0,0,0,0.06)' }}>
+              <button onClick={handleBackToTree} aria-label="Back to modules" className="p-2.5 rounded-xl transition-colors hover:bg-white/60" style={{ border: '1px solid rgba(0,0,0,0.06)' }}>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
               </button>
             </div>
@@ -746,14 +747,15 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
 };
 
 /** Password change screen — shown when a GC resets a student's password */
-const ChangePasswordModal: React.FC<{ user: SessionUser }> = ({ user: _user }) => {
+const ChangePasswordModal: React.FC<{ user: SessionUser; onComplete: () => Promise<void> }> = ({ user: _user, onComplete }) => {
   const [newPassword, setNewPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
 
   const handleChangePassword = async () => {
-    if (newPassword.length < 6) { setError('Password must be at least 6 characters.'); return; }
+    if (newPassword.length < 12) { setError('Password must be at least 12 characters.'); return; }
+    if (newPassword.length > 128) { setError('Password must be no more than 128 characters.'); return; }
     setIsLoading(true); setError('');
     try {
       const { getFunctions, httpsCallable } = await import('firebase/functions');
@@ -761,7 +763,7 @@ const ChangePasswordModal: React.FC<{ user: SessionUser }> = ({ user: _user }) =
       const functions = getFunctions(app);
       const changeFn = httpsCallable(functions, 'changeOwnPassword');
       await changeFn({ newPassword });
-      window.location.reload();
+      await onComplete();
     } catch (err) {
       console.error('Failed to change password:', err);
       setError('Failed to change password. Try again.');
@@ -781,21 +783,21 @@ const ChangePasswordModal: React.FC<{ user: SessionUser }> = ({ user: _user }) =
             <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>New Password</label>
             <div className="relative">
               <input type={showPassword ? 'text' : 'password'} value={newPassword} onChange={e => { setNewPassword(e.target.value); setError(''); }} placeholder="Choose a new password" className={inputClass} autoFocus />
-              <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-3 top-1/2 -translate-y-1/2 transition-colors" style={{ color: '#9e9186' }}>
+              <button type="button" onClick={() => setShowPassword(!showPassword)} aria-label={showPassword ? 'Hide password' : 'Show password'} aria-pressed={showPassword} className="absolute right-3 top-1/2 -translate-y-1/2 transition-colors" style={{ color: '#9e9186' }}>
                 {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
               </button>
             </div>
-            {newPassword.length > 0 && newPassword.length < 6 && (
-              <p className="text-xs mt-1.5" style={{ color: '#9e9186' }}>{6 - newPassword.length} more character{6 - newPassword.length !== 1 ? 's' : ''} needed</p>
+            {newPassword.length > 0 && newPassword.length < 12 && (
+              <p className="text-xs mt-1.5" style={{ color: '#9e9186' }}>{12 - newPassword.length} more character{12 - newPassword.length !== 1 ? 's' : ''} needed</p>
             )}
-            {newPassword.length >= 6 && (
+            {newPassword.length >= 12 && newPassword.length <= 128 && (
               <p className="text-xs mt-1.5 flex items-center gap-1" style={{ color: '#F26B1F' }}><Check size={12} /> Looks good</p>
             )}
           </div>
           {error && <p className="text-sm text-red-500 font-medium">{error}</p>}
           <button
             onClick={handleChangePassword}
-            disabled={isLoading || newPassword.length < 6}
+            disabled={isLoading || newPassword.length < 12 || newPassword.length > 128}
             className="w-full py-3.5 rounded-full text-white text-[15px] font-semibold transition-all disabled:opacity-50 disabled:cursor-not-allowed"
             style={{ backgroundColor: '#F26B1F', borderBottom: '3px solid #B54D14', boxShadow: '0 4px 0 #B54D14' }}
           >

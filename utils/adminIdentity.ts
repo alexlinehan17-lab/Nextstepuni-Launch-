@@ -52,6 +52,18 @@ export function isAdminEmail(email: string | null | undefined): boolean {
   return email.trim().toLowerCase() === ADMIN_EMAIL;
 }
 
+/**
+ * Client routing is privileged only when the signed token carries the
+ * server-issued admin claim and Firebase has verified the exact mailbox.
+ * Firestore rules and callable functions repeat the same check.
+ */
+export function isVerifiedAdminSession(
+  user: { email?: string | null; emailVerified?: boolean },
+  claims: Record<string, unknown>,
+): boolean {
+  return user.emailVerified === true && claims.admin === true && isAdminEmail(user.email);
+}
+
 /** True if this address may not be used to register a new account. */
 export function isReservedEmail(email: string | null | undefined): boolean {
   if (!email) return false;

@@ -96,6 +96,7 @@ export function isEligibleFeedbackUser(userData: Record<string, unknown> | undef
   const role = userData.role;
   return typeof userData.school === "string"
     && userData.school.trim().length > 0
+    && userData.accountDisabled !== true
     && userData.isAdmin !== true
     && role !== "admin"
     && role !== "gc"

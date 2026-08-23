@@ -68,7 +68,7 @@ const SignDecoration: React.FC<SignDecorationProps> = ({
     if (t >= 1) setHasAnimated(true);
   });
 
-  const truncated = statement ? (statement.length > 40 ? statement.slice(0, 37) + '...' : statement) : '';
+  const label = statement?.trim() ?? '';
   const [showLabel, setShowLabel] = useState(true);
 
   return (
@@ -82,28 +82,28 @@ const SignDecoration: React.FC<SignDecorationProps> = ({
       onPointerOut={() => { document.body.style.cursor = 'auto'; }}
     >
       <primitive object={cloned} />
-      {truncated && showLabel && (
+      {label && showLabel && (
         <Html
           position={[0, 0.7, 0]}
           center
           distanceFactor={8}
           style={{ pointerEvents: 'none' }}
         >
-          <div style={{
+          <div className="hidden sm:block" style={{
             background: 'rgba(0,0,0,0.65)',
             color: '#fff',
-            fontSize: '10px',
+            fontSize: '11px',
             fontWeight: 600,
-            padding: '3px 8px',
-            borderRadius: '6px',
-            whiteSpace: 'nowrap',
-            maxWidth: '140px',
-            overflow: 'hidden',
-            textOverflow: 'ellipsis',
+            padding: '6px 10px',
+            borderRadius: '8px',
+            whiteSpace: 'normal',
+            width: 'max-content',
+            maxWidth: '220px',
+            textAlign: 'center',
             fontFamily: 'system-ui, sans-serif',
             lineHeight: 1.3,
           }}>
-            {truncated}
+            {label}
           </div>
         </Html>
       )}

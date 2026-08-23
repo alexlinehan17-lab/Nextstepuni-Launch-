@@ -20,6 +20,7 @@ import {
   type PersonalizedQuestTemplate,
 } from '../questData';
 import { normaliseDailyQuestJP } from '../journeyEconomyConfig';
+import { DEMO_STUDENT_UID } from '../data/devStudent';
 
 // ── Types ──────────────────────────────────────────────────
 
@@ -81,7 +82,9 @@ export function useQuests(
     questRewards: firestoreRewards,
     progressLoaded,
     reloadProgress,
+    updateDemoProgress,
   } = useProgress();
+  const isDemo = uid === DEMO_STUDENT_UID;
   const isMountedRef = useRef(true);
   useEffect(() => () => { isMountedRef.current = false; }, []);
 
@@ -256,6 +259,18 @@ export function useQuests(
     const rewardPoints = questState.quest.rewardPoints;
     setLocalClaimedIds(prev => ({ ...prev, [questId]: new Date().toISOString() }));
     try {
+      if (isDemo) {
+        const claimedAt = new Date().toISOString();
+        updateDemoProgress(current => ({
+          ...current,
+          pointsData: {
+            ...current.pointsData,
+            totalEarned: (current.pointsData?.totalEarned ?? 0) + rewardPoints,
+          },
+          questRewards: { ...(current.questRewards ?? {}), [questId]: claimedAt },
+        }));
+        return;
+      }
       // Transaction: read the questRewards map; bail if this questId is already
       // claimed (covers the multi-tab race where two tabs both pass the optimistic
       // gate). Firestore rules also reject overwrites, but failing fast here
@@ -287,7 +302,7 @@ export function useQuests(
     } finally {
       claimingRef.current = false;
     }
-  }, [uid, questState]);
+  }, [uid, questState, isDemo, updateDemoProgress]);
 
   return { questState, claimReward, reload };
 }

@@ -114,7 +114,8 @@ const SESSION_TYPE_LABELS: Record<string, { label: string; icon: LucideIcon }> =
 const ReflectionModal: React.FC<ReflectionModalProps> = ({
   isOpen, subjectName, sessionType, mode, onSubmit, onCancel,
 }) => {
-  useModal(isOpen, onCancel);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  useModal(isOpen, onCancel, dialogRef);
   const [confidence, setConfidence] = useState('');
   const [freeText, setFreeText] = useState('');
   const [submitted, setSubmitted] = useState(false);
@@ -171,6 +172,11 @@ const ReflectionModal: React.FC<ReflectionModalProps> = ({
           onClick={onCancel}
         >
           <MotionDiv
+            ref={dialogRef}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="reflection-modal-title"
+            tabIndex={-1}
             initial={{ scale: 0.96, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.96, opacity: 0 }}
@@ -181,11 +187,11 @@ const ReflectionModal: React.FC<ReflectionModalProps> = ({
             {/* Header */}
             <div className="flex items-center justify-between p-6 pb-4 border-b border-[#DDD8D2] dark:border-zinc-700">
               <div>
-                <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white tracking-tight">
+                <h2 id="reflection-modal-title" className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white tracking-tight">
                   {isQuick ? 'Quick Debrief' : 'Write a Reflection'}
                 </h2>
                 <p className="text-xs text-zinc-400 dark:text-zinc-500 mt-0.5">
-                  +{bonusPts} bonus pts
+                  +{bonusPts} bonus JP
                 </p>
               </div>
               <button
@@ -280,7 +286,7 @@ const ReflectionModal: React.FC<ReflectionModalProps> = ({
                 }`}
                 style={isValid && !submitted ? { backgroundColor: COLORS.accent } : undefined}
               >
-                {submitted ? 'Saving...' : `Complete & Earn +${bonusPts} pts`}
+                {submitted ? 'Saving...' : `Complete & earn +${bonusPts} JP`}
               </MotionButton>
             </div>
           </MotionDiv>

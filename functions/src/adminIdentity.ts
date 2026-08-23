@@ -10,8 +10,10 @@
  * files must be changed together — see the note in utils/adminIdentity.ts for
  * the three places that have to agree (client, functions, firestore.rules).
  *
- * Checked against the VERIFIED email on the ID token, never a Firestore field:
- * a document can be written, a token cannot be forged.
+ * Email alone is not an authorization grant. Sensitive paths require all of:
+ * the exact address, Firebase's email_verified claim, and a server-issued
+ * `admin: true` custom claim. This file retains the exact-email helper for
+ * reserved-address checks and defence in depth.
  */
 
 /** The platform administrator's sign-in address. */
@@ -27,4 +29,10 @@ export const ADMIN_EMAIL = "nextstepuniinfo@gmail.com";
 export function isAdminEmail(email: unknown): boolean {
   if (typeof email !== "string") return false;
   return email.trim().toLowerCase() === ADMIN_EMAIL;
+}
+
+export function isVerifiedAdminClaims(token: Record<string, unknown>): boolean {
+  return token.admin === true
+    && token.email_verified === true
+    && isAdminEmail(token.email);
 }

@@ -60,7 +60,7 @@ describe('home dashboard navigation', () => {
     render(<HomeHarness />);
 
     expect(screen.queryByRole('region', { name: 'Home dashboard' })).not.toBeInTheDocument();
-    fireEvent.click(screen.getByRole('button', { name: 'Enter Dashboard' }));
+    fireEvent.click(screen.getByRole('button', { name: 'My Progress' }));
     expect(goToDashboard).toHaveBeenCalledTimes(1);
     expect(screen.queryByRole('region', { name: 'Home dashboard' })).not.toBeInTheDocument();
   });
@@ -69,6 +69,6 @@ describe('home dashboard navigation', () => {
     localStorage.setItem('nextstep-settings', JSON.stringify({ showDashboard: true }));
     render(<HomeHarness />);
     expect(screen.queryByRole('region', { name: 'Home dashboard' })).not.toBeInTheDocument();
-    expect(screen.getByRole('button', { name: 'Enter Dashboard' })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'My Progress' })).toBeInTheDocument();
   });
 });

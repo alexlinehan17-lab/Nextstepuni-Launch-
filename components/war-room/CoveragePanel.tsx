@@ -714,7 +714,9 @@ const CoveragePanel: React.FC<CoveragePanelProps> = ({ subjects, topicMastery, d
               <p className="mx-auto mt-1 max-w-lg text-xs leading-5 text-[var(--ink-secondary)]">
                 {allTopics.length
                   ? 'Try a different confidence filter or clear the search.'
-                  : 'The outgoing map is intentionally hidden rather than being shown to the wrong exam cohort. Use the official link above in the meantime.'}
+                  : primarySource
+                    ? 'The outgoing map is intentionally hidden rather than being shown to the wrong exam cohort. Use the official specification link above in the meantime.'
+                    : 'The outgoing map is intentionally hidden rather than being shown to the wrong exam cohort. Ask your teacher for the current official specification while we complete this source check.'}
               </p>
             </div>
           )}

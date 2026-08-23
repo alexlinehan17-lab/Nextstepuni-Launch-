@@ -84,10 +84,10 @@ interface Item {
 }
 
 const EARN_ITEMS: Item[] = [
-  { Icon: StudySessionIcon,   label: 'Study session',        value: '15 pts',     sub: 'Per 10 min' },
-  { Icon: ModuleSectionIcon,  label: 'Module section',       value: '10 pts',     sub: 'Each section' },
+  { Icon: StudySessionIcon,   label: 'Study session',        value: '15 JP',      sub: 'Per 10 min' },
+  { Icon: ModuleSectionIcon,  label: 'Module section',       value: '10 JP',      sub: 'Each section' },
   { Icon: CompleteModuleIcon, label: 'Complete a module',    value: '+30 bonus',  sub: 'On finish' },
-  { Icon: QuestsIcon,         label: 'Quests & challenges',  value: '25–200 pts', sub: 'Varies' },
+  { Icon: QuestsIcon,         label: 'Quests & challenges',  value: '25–200 JP',  sub: 'Varies' },
 ];
 
 const SPEND_ITEMS: Item[] = [

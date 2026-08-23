@@ -25,6 +25,8 @@ import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useFreshProgress } from './useFreshProgress';
 import { reportSaveError } from '../utils/logError';
+import { useProgress } from '../contexts/ProgressContext';
+import { DEMO_STUDENT_UID } from '../data/devStudent';
 import {
   type PaperLang,
   type PaperLevel,
@@ -40,6 +42,8 @@ const PAGE_WRITE_DEBOUNCE_MS = 1500;
 const stripUndefined = <T,>(v: T): T => JSON.parse(JSON.stringify(v)) as T;
 
 export function usePaperFinder(uid?: string) {
+  const { updateDemoProgress } = useProgress();
+  const isDemo = uid === DEMO_STUDENT_UID;
   const [state, setState] = useState<PaperTrailState>(EMPTY);
   const { doc: progressDoc, loaded } = useFreshProgress(uid);
   const seededRef = useRef<string | null>(null);
@@ -69,11 +73,15 @@ export function usePaperFinder(uid?: string) {
   const write = useCallback(
     (next: PaperTrailState) => {
       if (!uid) return;
+      if (isDemo) {
+        updateDemoProgress(current => ({ ...current, paperTrail: stripUndefined(next) }));
+        return;
+      }
       setDoc(doc(db, 'progress', uid), { paperTrail: stripUndefined(next) }, { merge: true }).catch(
         e => reportSaveError('PaperTrail.persist', e),
       );
     },
-    [uid],
+    [uid, isDemo, updateDemoProgress],
   );
 
   const persist = useCallback(

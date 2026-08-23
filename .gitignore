@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 .env
+.env.*
+!.env.example
+!functions/.env.nextstepuni-app
 .firebase
 
 # Editor directories and files

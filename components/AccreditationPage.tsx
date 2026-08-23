@@ -5,19 +5,27 @@
  * Accreditation — the evidence library behind the Learning Lab.
  *
  * A master–detail explorer: every module, what it is, why it helps, and the
- * verified sources behind it. Copy lives in data/accreditationCatalog.ts
- * (dossier-grounded, fact-checked); references are the same ordered lists the
- * in-module <Cite/> markers number against, so this page can never drift from
- * what students see inside a module.
+ * verified sources behind it. Copy lives in data/accreditationCatalog.ts;
+ * references preserve the same order as each module's inline citations.
  */
 
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowLeft, ArrowRight, ArrowUpRight, BookOpen, Check, ChevronRight, Search, ShieldCheck } from 'lucide-react';
+import {
+  ArrowLeft,
+  ArrowRight,
+  ArrowUpRight,
+  BookOpen,
+  Check,
+  ChevronRight,
+  Search,
+  ShieldCheck,
+} from 'lucide-react';
 import { ACCREDITED_MODULES, type AccreditedModuleEntry } from '../data/accreditationCatalog';
 import { type Reference } from '../data/references/types';
 import { ALL_COURSES, categoryTitles } from '../courseData';
 import { type CategoryType } from './KnowledgeTree';
+import PageHeader from './ui/PageHeader';
 
 interface AccreditationPageProps {
   onBack: () => void;
@@ -25,22 +33,7 @@ interface AccreditationPageProps {
   onOpenModule?: (moduleId: string) => void;
 }
 
-const SERIF = "'Source Serif 4', serif";
-const SANS = "'DM Sans', sans-serif";
-
-const INK = 'var(--ink-primary)';
-const HAIRLINE = 'var(--hairline)';
-const PAGE = 'var(--page-canvas)';
-const BODY = 'var(--page-body)';
-const MUTED = 'var(--page-muted)';
-const LABEL = 'var(--page-label)';
-const FAINT = 'var(--ink-faint)';
-const ACCENT = '#F26B1F';
-const ACCENT_TINT = 'var(--accent-tint)';
-const ACCENT_DARK_TEXT = 'var(--accent-tint-ink)';
-const SUCCESS = '#3A8D5F';
-const SUCCESS_TINT = 'var(--success-tint)';
-const SUCCESS_DARK_TEXT = 'var(--success-tint-ink)';
+type CategoryFilter = CategoryType | 'all';
 
 const CATEGORY_ORDER: CategoryType[] = [
   'architecture-mindset',
@@ -50,56 +43,75 @@ const CATEGORY_ORDER: CategoryType[] = [
   'subject-specific-science',
 ];
 
-const MicroLabel: React.FC<{ children: React.ReactNode; color?: string; className?: string }> = ({
-  children,
-  color = LABEL,
-  className = '',
-}) => (
-  <p className={`text-[10px] font-bold uppercase tracking-[0.14em] ${className}`} style={{ color, fontFamily: SANS }}>
-    {children}
-  </p>
+const CATEGORY_TAB_LABELS: Partial<Record<CategoryType, string>> = {
+  'architecture-mindset': 'Mindset',
+  'science-growth': 'Growth',
+  'learning-cheat-codes': 'Learning',
+  'exam-zone': 'Exam',
+  'subject-specific-science': 'Subjects',
+};
+
+const MicroLabel: React.FC<{
+  children: React.ReactNode;
+  tone?: 'default' | 'accent' | 'success';
+  className?: string;
+}> = ({ children, tone = 'default', className = '' }) => {
+  const toneClass = tone === 'accent'
+    ? 'text-[var(--accent-text)]'
+    : tone === 'success'
+      ? 'text-[var(--success-tint-ink)]'
+      : 'text-[var(--ink-muted)]';
+
+  return (
+    <p className={`text-[10px] font-bold uppercase tracking-[0.18em] ${toneClass} ${className}`}>
+      {children}
+    </p>
+  );
+};
+
+const StatCell: React.FC<{
+  eyebrow: string;
+  value: string;
+  meta: string;
+  accent?: boolean;
+}> = ({ eyebrow, value, meta, accent = false }) => (
+  <div className="min-w-0">
+    <MicroLabel>{eyebrow}</MicroLabel>
+    <p className={`mt-2 font-serif text-[30px] font-semibold leading-none tracking-[-0.025em] ${accent ? 'text-[var(--accent-text)]' : 'text-[var(--ink-primary)]'}`}>
+      {value}
+    </p>
+    <p className="mt-2 text-xs leading-relaxed text-[var(--ink-muted)]">{meta}</p>
+  </div>
 );
 
-/** One reference row inside the detail pane — numbered to match the module's inline markers. */
-const RefRow: React.FC<{ r: Reference; n: number }> = ({ r, n }) => {
-  const official = r.kind === 'official';
-  const link = r.doi
-    ? { href: `https://doi.org/${r.doi}`, label: `doi:${r.doi}` }
-    : r.url
-    ? { href: r.url, label: r.url.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '') }
-    : null;
+/** One reference row inside the detail pane — numbered to match inline markers. */
+const RefRow: React.FC<{ reference: Reference; number: number }> = ({ reference, number }) => {
+  const official = reference.kind === 'official';
+  const href = reference.doi ? `https://doi.org/${reference.doi}` : reference.url;
+
   return (
-    <div className="flex gap-3 py-3.5" style={{ borderTop: `1px solid ${HAIRLINE}` }}>
-      <span
-        className="shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-[11px] font-bold mt-0.5"
-        style={{ backgroundColor: ACCENT_TINT, color: ACCENT_DARK_TEXT, fontFamily: SANS }}
-      >
-        {n}
+    <div className="grid grid-cols-[32px_minmax(0,1fr)] gap-3 border-t border-[var(--outline-soft)] py-5 first:border-t-0">
+      <span className="flex h-8 w-8 items-center justify-center rounded-full border border-[var(--outline-soft)] bg-[var(--surface-soft)] text-xs font-bold tabular-nums text-[var(--ink-secondary)]">
+        {number}
       </span>
       <div className="min-w-0">
-        <p className="text-[13.5px] leading-relaxed" style={{ color: BODY, fontFamily: SANS }}>
-          {r.authors} ({r.year}). {r.title}. <span className="italic">{r.source}</span>.
+        <p className="text-sm leading-relaxed text-[var(--ink-secondary)]">
+          {reference.authors} ({reference.year}). {reference.title}. <span className="italic">{reference.source}</span>.
         </p>
-        <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 mt-1.5">
-          <span
-            className="inline-flex items-center px-2 py-0.5 rounded-full text-[9.5px] font-bold uppercase tracking-[0.08em]"
-            style={
-              official
-                ? { backgroundColor: ACCENT_TINT, color: ACCENT_DARK_TEXT }
-                : { backgroundColor: SUCCESS_TINT, color: SUCCESS_DARK_TEXT }
-            }
-          >
+        <div className="mt-2 flex flex-wrap items-center gap-2.5">
+          <span className="inline-flex items-center gap-1 rounded-full bg-[var(--success-tint)] px-2.5 py-1 text-[9px] font-bold uppercase tracking-[0.1em] text-[var(--success-tint-ink)]">
+            <Check size={10} strokeWidth={3} aria-hidden="true" />
             {official ? 'Official source' : 'Peer-reviewed'}
           </span>
-          {link && (
+          {href && (
             <a
-              href={link.href}
+              href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[11.5px] underline decoration-dotted underline-offset-2 break-all transition-colors hover:text-[#F26B1F]"
-              style={{ color: MUTED, fontFamily: SANS }}
+              aria-label={`Open ${official ? 'official source' : 'DOI record'} for ${reference.title}`}
+              className="inline-flex items-center gap-1 text-xs font-semibold text-[var(--accent-text)] underline decoration-dotted underline-offset-4 transition-colors hover:text-[var(--ink-primary)]"
             >
-              {link.label}
+              {official ? 'Source record' : 'DOI record'} <ArrowUpRight size={12} aria-hidden="true" />
             </a>
           )}
         </div>
@@ -110,327 +122,439 @@ const RefRow: React.FC<{ r: Reference; n: number }> = ({ r, n }) => {
 
 const AccreditationPage: React.FC<AccreditationPageProps> = ({ onBack, onOpenModule }) => {
   const entryById = useMemo(() => {
-    const m = new Map<string, AccreditedModuleEntry>();
-    ACCREDITED_MODULES.forEach(e => m.set(e.id, e));
-    return m;
+    const entries = new Map<string, AccreditedModuleEntry>();
+    ACCREDITED_MODULES.forEach(entry => entries.set(entry.id, entry));
+    return entries;
   }, []);
 
-  // Category-ordered index: accredited modules rich, remaining courses shown
-  // honestly as "in review" — never a dead link, never a fake reference list.
+  // Category-ordered index: accredited modules are rich; remaining courses are
+  // shown honestly as in review. The subject collection stays withheld until
+  // every subject module has passed its evidence review.
   const groups = useMemo(
-    () =>
-      CATEGORY_ORDER.map(cat => {
-        const courses = ALL_COURSES.filter(c => c.category === cat);
-        return {
-          cat,
-          accredited: courses.filter(c => entryById.has(c.id)),
-          inReview: courses.filter(c => !entryById.has(c.id)),
-        };
-      })
-        .filter(g => g.accredited.length + g.inReview.length > 0)
-        // Decoding the Subjects is withheld entirely until EVERY subject module
-        // has passed evidence review — no partial list, no greyed rows.
-        .filter(g => !(g.cat === 'subject-specific-science' && g.inReview.length > 0)),
-    [entryById]
+    () => CATEGORY_ORDER.map(category => {
+      const courses = ALL_COURSES.filter(course => course.category === category);
+      return {
+        category,
+        accredited: courses.filter(course => entryById.has(course.id)),
+        inReview: courses.filter(course => !entryById.has(course.id)),
+      };
+    })
+      .filter(group => group.accredited.length + group.inReview.length > 0)
+      .filter(group => !(group.category === 'subject-specific-science' && group.inReview.length > 0)),
+    [entryById],
   );
 
-  // Flat navigation order across every accredited module (for prev/next + arrows).
   const navOrder = useMemo(
-    () => groups.flatMap(g => g.accredited.map(c => c.id)),
-    [groups]
+    () => groups.flatMap(group => group.accredited.map(course => course.id)),
+    [groups],
   );
 
-  const sourceCount = useMemo(() => {
-    const ids = new Set<string>();
-    ACCREDITED_MODULES.forEach(e => e.references.forEach(r => ids.add(r.id)));
-    return ids.size;
-  }, []);
+  const sourceStats = useMemo(() => {
+    const uniqueSources = new Map<string, Reference>();
+    const visibleModuleIds = new Set(navOrder);
+    ACCREDITED_MODULES.filter(entry => visibleModuleIds.has(entry.id)).forEach(entry => {
+      entry.references.forEach(reference => uniqueSources.set(reference.id, reference));
+    });
+    const sources = [...uniqueSources.values()];
+    return {
+      total: sources.length,
+      peerReviewed: sources.filter(reference => reference.kind !== 'official').length,
+      official: sources.filter(reference => reference.kind === 'official').length,
+    };
+  }, [navOrder]);
 
   const [selectedId, setSelectedId] = useState<string>(navOrder[0]);
+  const [activeCategory, setActiveCategory] = useState<CategoryFilter>('all');
   const [query, setQuery] = useState('');
-  // Mobile drill-in: list → detail.
   const [mobileDetail, setMobileDetail] = useState(false);
   const detailRef = useRef<HTMLDivElement>(null);
   const activeItemRef = useRef<HTMLButtonElement>(null);
 
-  // Keep the active index row visible when navigating via prev/next or arrows.
   useEffect(() => {
-    activeItemRef.current?.scrollIntoView({ block: 'nearest' });
+    activeItemRef.current?.scrollIntoView?.({ block: 'nearest' });
   }, [selectedId]);
 
   const selected = entryById.get(selectedId);
-  const selectedCourse = useMemo(() => ALL_COURSES.find(c => c.id === selectedId), [selectedId]);
+  const selectedCourse = useMemo(() => ALL_COURSES.find(course => course.id === selectedId), [selectedId]);
   const navIndex = navOrder.indexOf(selectedId);
 
   const goTo = (id: string) => {
     setSelectedId(id);
     setMobileDetail(true);
-    detailRef.current?.scrollTo({ top: 0 });
-  };
-  const step = (dir: 1 | -1) => {
-    const next = navOrder[navIndex + dir];
-    if (next) goTo(next);
+    detailRef.current?.scrollTo?.({ top: 0 });
   };
 
-  // ←/→ move through modules (desktop affordance; ignored while typing).
+  const step = (direction: 1 | -1) => {
+    const next = navOrder[navIndex + direction];
+    if (!next) return;
+    const nextCategory = ALL_COURSES.find(course => course.id === next)?.category as CategoryType | undefined;
+    setQuery('');
+    setActiveCategory(current => current === 'all' || !nextCategory ? current : nextCategory);
+    goTo(next);
+  };
+
   useEffect(() => {
-    const onKey = (e: KeyboardEvent) => {
-      if ((e.target as HTMLElement)?.tagName === 'INPUT') return;
-      if (e.key === 'ArrowRight') step(1);
-      if (e.key === 'ArrowLeft') step(-1);
+    const onKey = (event: KeyboardEvent) => {
+      const target = event.target as HTMLElement | null;
+      if (target?.closest('input, textarea, select, button, a, [contenteditable="true"]')) return;
+      if (event.key === 'ArrowRight') step(1);
+      if (event.key === 'ArrowLeft') step(-1);
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
   });
 
-  const q = query.trim().toLowerCase();
-  const matches = (title: string) => !q || title.toLowerCase().includes(q);
+  const normalizedQuery = query.trim().toLowerCase();
+  const visibleGroups = useMemo(
+    () => groups
+      .filter(group => activeCategory === 'all' || group.category === activeCategory)
+      .map(group => ({
+        ...group,
+        accredited: group.accredited.filter(course => !normalizedQuery || course.title.toLowerCase().includes(normalizedQuery)),
+        inReview: group.inReview.filter(course => !normalizedQuery || course.title.toLowerCase().includes(normalizedQuery)),
+      }))
+      .filter(group => group.accredited.length + group.inReview.length > 0),
+    [activeCategory, groups, normalizedQuery],
+  );
+
+  const visibleModuleCount = visibleGroups.reduce(
+    (total, group) => total + group.accredited.length + group.inReview.length,
+    0,
+  );
+
+  const visibleAccreditedIds = useMemo(
+    () => visibleGroups.flatMap(group => group.accredited.map(course => course.id)),
+    [visibleGroups],
+  );
+  const hasVisibleSelectedEvidence = visibleAccreditedIds.includes(selectedId);
+
+  // Keep the master and detail panes truthful to each other. A search that
+  // removes the active module should select the first matching result instead
+  // of leaving stale evidence visible beside the filtered list.
+  useEffect(() => {
+    if (visibleAccreditedIds.length > 0 && !visibleAccreditedIds.includes(selectedId)) {
+      setSelectedId(visibleAccreditedIds[0]);
+      detailRef.current?.scrollTo?.({ top: 0 });
+    }
+  }, [visibleAccreditedIds, selectedId]);
+
+  const categoryTabs: Array<{ id: CategoryFilter; label: string }> = [
+    { id: 'all', label: 'All modules' },
+    ...groups.map(group => ({
+      id: group.category,
+      label: CATEGORY_TAB_LABELS[group.category] ?? categoryTitles[group.category],
+    })),
+  ];
+
+  const chooseCategory = (category: CategoryFilter) => {
+    setActiveCategory(category);
+    setQuery('');
+    setMobileDetail(false);
+    const nextId = category === 'all'
+      ? navOrder[0]
+      : groups.find(group => group.category === category)?.accredited[0]?.id;
+    if (nextId) setSelectedId(nextId);
+  };
+
+  const handleCategoryKeyDown = (event: React.KeyboardEvent<HTMLButtonElement>, index: number) => {
+    let nextIndex: number | undefined;
+    if (event.key === 'ArrowRight') nextIndex = (index + 1) % categoryTabs.length;
+    if (event.key === 'ArrowLeft') nextIndex = (index - 1 + categoryTabs.length) % categoryTabs.length;
+    if (event.key === 'Home') nextIndex = 0;
+    if (event.key === 'End') nextIndex = categoryTabs.length - 1;
+    if (nextIndex === undefined) return;
+
+    event.preventDefault();
+    const nextCategory = categoryTabs[nextIndex].id;
+    chooseCategory(nextCategory);
+    document.getElementById(`evidence-tab-${nextCategory}`)?.focus();
+  };
+
+  const handlePageBack = () => {
+    if (mobileDetail && window.innerWidth < 768) {
+      setMobileDetail(false);
+      return;
+    }
+    onBack();
+  };
 
   return (
-    <div className="min-h-screen theme-compat" style={{ backgroundColor: PAGE }}>
-      {/* ── Masthead ── */}
-      <header
-        className="sticky top-0 z-30 px-4 md:px-10 bg-[#f0f0f0]/92 backdrop-blur-sm border-b"
-        style={{ borderColor: HAIRLINE, paddingTop: 'calc(14px + var(--sat, 0px))', paddingBottom: '14px' }}
+    <div className="product-shell theme-compat min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)] transition-colors duration-300">
+      <div
+        className="sticky inset-x-0 top-0 z-40 border-b border-[var(--outline-soft)] bg-[color:var(--surface-canvas)]/95 px-4 pb-4 backdrop-blur-xl md:px-10"
+        style={{ paddingTop: 'calc(16px + var(--sat, 0px))' }}
       >
-        <div className="max-w-6xl mx-auto flex items-center gap-4">
-          <button
-            onClick={() => (mobileDetail ? setMobileDetail(false) : onBack())}
-            className="p-2.5 rounded-xl transition-colors hover:bg-white shrink-0 md:hidden"
-            style={{ border: '1px solid rgba(0,0,0,0.08)', backgroundColor: 'white' }}
-            aria-label="Back"
-          >
-            <ArrowLeft size={18} style={{ color: INK }} />
-          </button>
-          <button
-            onClick={onBack}
-            className="p-2.5 rounded-xl transition-colors hover:bg-white shrink-0 hidden md:block"
-            style={{ border: '1px solid rgba(0,0,0,0.08)', backgroundColor: 'white' }}
-            aria-label="Back"
-          >
-            <ArrowLeft size={18} style={{ color: INK }} />
-          </button>
-          <div className="min-w-0">
-            <h1 className="text-lg md:text-xl font-semibold leading-tight" style={{ fontFamily: SERIF, color: INK }}>
-              References
-            </h1>
-            <p className="text-[12px] leading-tight mt-0.5 hidden sm:block" style={{ color: MUTED, fontFamily: SANS }}>
-              Every module, the evidence behind it, and why it earns its place.
-            </p>
-          </div>
+        <div className="mx-auto max-w-7xl">
+          <PageHeader onBack={handlePageBack} eyebrow="Evidence library" title="References" backLabel="Go back" compact />
         </div>
-      </header>
+      </div>
 
-      <div className="max-w-6xl mx-auto md:px-10 md:py-8 md:grid md:grid-cols-[300px_1fr] md:gap-8 md:items-start">
-        {/* ── Index (left pane / mobile list) ── */}
-        <aside
-          className={`${mobileDetail ? 'hidden' : 'block'} md:block px-4 py-5 md:p-0 md:sticky md:top-[86px] md:max-h-[calc(100vh-110px)] md:overflow-y-auto md:pr-1`}
+      <main className="mx-auto max-w-7xl px-4 pb-[calc(120px+var(--sab,0px))] pt-7 sm:px-6 md:px-10 md:pt-10">
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
         >
-          <p className="text-[14px] leading-relaxed mb-4 md:hidden" style={{ color: BODY, fontFamily: SANS }}>
-            Every module, the evidence behind it, and why it earns its place. Nothing here states what its sources
-            can't support.
-          </p>
-          {/* Stat strip — lives in the index column so it never fights the app's floating HUD. */}
-          <div className="rounded-2xl bg-white px-4 py-3.5 mb-4 flex items-center gap-5" style={{ border: `1px solid ${HAIRLINE}` }}>
-            {[
-              { v: String(ACCREDITED_MODULES.length), l: 'Modules' },
-              { v: String(sourceCount), l: 'Sources' },
-            ].map(s => (
-              <div key={s.l}>
-                <p className="text-[22px] font-semibold leading-none" style={{ fontFamily: SERIF, color: INK }}>{s.v}</p>
-                <MicroLabel className="mt-1">{s.l}</MicroLabel>
+          <div className={`${mobileDetail ? 'hidden md:block' : 'block'}`}>
+            <div className="flex flex-col gap-8 border-b border-[var(--outline-strong)] pb-7 lg:flex-row lg:items-end lg:justify-between">
+              <div className="max-w-3xl">
+                <div className="flex items-center gap-3">
+                  <MicroLabel tone="accent">Verified foundations</MicroLabel>
+                  <span className="h-px w-8 bg-[var(--outline-soft)]" aria-hidden="true" />
+                  <p className="text-xs text-[var(--ink-muted)]">Research and official guidance</p>
+                </div>
+                <h1 className="mt-4 max-w-3xl font-serif text-[clamp(38px,6vw,68px)] font-semibold leading-[0.96] tracking-[-0.045em] text-[var(--ink-primary)]">
+                  The evidence behind{' '}<br />every module.
+                </h1>
+                <p className="mt-4 max-w-2xl text-sm leading-relaxed text-[var(--ink-secondary)] sm:text-[15px]">
+                  Explore what each module is designed to teach, why it helps, and the source record supporting it.
+                </p>
               </div>
-            ))}
-            <div className="ml-auto flex items-center gap-1.5">
-              <ShieldCheck size={15} style={{ color: SUCCESS }} />
-              <p className="text-[11px] font-semibold leading-tight" style={{ color: SUCCESS_DARK_TEXT, fontFamily: SANS }}>
-                Every source<br />checkable
-              </p>
+
+              <div className="max-w-sm border-t border-[var(--outline-strong)] pt-4 lg:mb-1 lg:w-80">
+                <div className="flex items-center gap-2">
+                  <ShieldCheck size={16} className="text-[var(--success-tint-ink)]" aria-hidden="true" />
+                  <MicroLabel tone="success">Evidence standard</MicroLabel>
+                </div>
+                <p className="mt-2 text-xs leading-relaxed text-[var(--ink-muted)]">
+                  Citation numbers match the modules. Every listed source opens to its DOI record or issuing body.
+                </p>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 gap-x-5 gap-y-6 border-b border-[var(--outline-soft)] py-6 sm:grid-cols-4">
+              <StatCell eyebrow="Modules" value={String(navOrder.length)} meta="with reviewed evidence" accent />
+              <StatCell eyebrow="Unique sources" value={String(sourceStats.total)} meta="across the library" />
+              <StatCell eyebrow="Peer-reviewed" value={String(sourceStats.peerReviewed)} meta="research records" />
+              <StatCell eyebrow="Official" value={String(sourceStats.official)} meta="institutional sources" />
+            </div>
+
+            <div className="mt-6 overflow-x-auto border-b border-[var(--outline-soft)]" role="tablist" aria-label="Evidence collections">
+              <div className="flex min-w-max gap-7">
+                {categoryTabs.map((tab, index) => (
+                  <button
+                    key={tab.id}
+                    id={`evidence-tab-${tab.id}`}
+                    type="button"
+                    role="tab"
+                    aria-selected={activeCategory === tab.id}
+                    aria-controls="evidence-browser-panel"
+                    tabIndex={activeCategory === tab.id ? 0 : -1}
+                    onClick={() => chooseCategory(tab.id)}
+                    onKeyDown={event => handleCategoryKeyDown(event, index)}
+                    className={`relative pb-3 text-xs font-semibold transition-colors ${activeCategory === tab.id ? 'text-[var(--ink-primary)]' : 'text-[var(--ink-muted)] hover:text-[var(--ink-secondary)]'}`}
+                  >
+                    {tab.label}
+                    {activeCategory === tab.id && <span className="absolute inset-x-0 -bottom-px h-0.5 bg-[var(--accent-hex)]" />}
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
-          <div
-            className="flex items-center gap-2 px-3 py-2.5 rounded-xl mb-5 bg-white"
-            style={{ border: `1px solid ${HAIRLINE}` }}
-          >
-            <Search size={15} style={{ color: FAINT }} />
-            <input
-              value={query}
-              onChange={e => setQuery(e.target.value)}
-              placeholder="Find a module"
-              className="w-full bg-transparent outline-none text-[13.5px]"
-              style={{ color: INK, fontFamily: SANS }}
-            />
-          </div>
 
-          {groups.map(g => {
-            const acc = g.accredited.filter(c => matches(c.title));
-            const rev = g.inReview.filter(c => matches(c.title));
-            if (acc.length + rev.length === 0) return null;
-            return (
-              <div key={g.cat} className="mb-6">
-                <MicroLabel className="mb-2 px-1">{categoryTitles[g.cat]}</MicroLabel>
-                <div className="rounded-2xl overflow-hidden bg-white" style={{ border: `1px solid ${HAIRLINE}` }}>
-                  {acc.map((c, i) => {
-                    const active = c.id === selectedId;
-                    return (
+          <div
+            id="evidence-browser-panel"
+            role="tabpanel"
+            aria-labelledby={`evidence-tab-${activeCategory}`}
+            className="mt-5 grid grid-cols-1 gap-4 md:grid-cols-12 md:items-start"
+          >
+            <aside className={`${mobileDetail ? 'hidden' : 'block'} md:sticky md:top-[94px] md:col-span-4 md:block`}>
+              <section className="overflow-hidden rounded-[18px] border border-[var(--outline-soft)] bg-[var(--surface-paper)]">
+                <div className="border-b border-[var(--outline-soft)] px-5 py-5 sm:px-6">
+                  <MicroLabel>Module index</MicroLabel>
+                  <div className="mt-1 flex items-end justify-between gap-4">
+                    <h2 className="font-serif text-2xl font-semibold tracking-[-0.02em]">Find a module</h2>
+                    <p className="shrink-0 text-xs font-semibold tabular-nums text-[var(--ink-muted)]">
+                      {visibleModuleCount} shown
+                    </p>
+                  </div>
+                  <label className="relative mt-4 block">
+                    <Search size={15} className="pointer-events-none absolute left-3 top-1/2 z-10 -translate-y-1/2 text-[var(--ink-muted)]" aria-hidden="true" />
+                    <span className="sr-only">Search modules</span>
+                    <input
+                      value={query}
+                      onChange={event => setQuery(event.target.value)}
+                      placeholder="Search modules"
+                      className="w-full pl-9 pr-3 text-sm"
+                    />
+                  </label>
+                </div>
+
+                <div className="max-h-[62vh] overflow-y-auto px-3 py-3 md:max-h-[calc(100vh-245px)]">
+                  {visibleGroups.length === 0 && (
+                    <div className="px-3 py-10 text-center">
+                      <p className="font-serif text-xl font-semibold">No modules found</p>
+                      <p className="mt-2 text-xs leading-relaxed text-[var(--ink-muted)]">Try a different title or evidence collection.</p>
                       <button
-                        key={c.id}
-                        ref={active ? activeItemRef : undefined}
-                        onClick={() => goTo(c.id)}
-                        className="w-full flex items-center gap-2.5 px-4 py-3 text-left transition-colors"
-                        style={{
-                          borderTop: i === 0 ? 'none' : `1px solid ${HAIRLINE}`,
-                          backgroundColor: active ? ACCENT_TINT : 'white',
-                        }}
+                        type="button"
+                        onClick={() => setQuery('')}
+                        className="mt-4 text-xs font-bold text-[var(--accent-text)] underline underline-offset-4"
                       >
-                        <span className="min-w-0 flex-1">
-                          <span
-                            className="block text-[13.5px] font-semibold leading-snug truncate"
-                            style={{ fontFamily: SERIF, color: active ? ACCENT_DARK_TEXT : INK }}
-                          >
-                            {c.title}
-                          </span>
-                          <span className="block text-[11px] mt-0.5" style={{ color: active ? ACCENT_DARK_TEXT : LABEL, fontFamily: SANS }}>
-                            {entryById.get(c.id)?.references.length} sources
-                          </span>
-                        </span>
-                        <ChevronRight size={15} className="shrink-0" style={{ color: active ? ACCENT : FAINT }} />
+                        Clear search
                       </button>
-                    );
-                  })}
-                  {rev.map((c, i) => (
-                    <div
-                      key={c.id}
-                      className="w-full flex items-center gap-2.5 px-4 py-3"
-                      style={{ borderTop: acc.length + i === 0 ? 'none' : `1px solid ${HAIRLINE}` }}
-                    >
-                      <span className="min-w-0 flex-1">
-                        <span className="block text-[13.5px] leading-snug truncate" style={{ fontFamily: SERIF, color: FAINT }}>
-                          {c.title}
-                        </span>
-                        <span className="block text-[11px] mt-0.5" style={{ color: FAINT, fontFamily: SANS }}>
-                          Evidence review in progress
-                        </span>
-                      </span>
+                    </div>
+                  )}
+
+                  {visibleGroups.map(group => (
+                    <div key={group.category} className="mb-5 last:mb-0">
+                      <MicroLabel className="px-2 pb-2 pt-1">{categoryTitles[group.category]}</MicroLabel>
+                      <div>
+                        {group.accredited.map(course => {
+                          const active = course.id === selectedId;
+                          return (
+                            <button
+                              key={course.id}
+                              ref={active ? activeItemRef : undefined}
+                              type="button"
+                              aria-current={active ? 'true' : undefined}
+                              aria-label={`${course.title}, ${entryById.get(course.id)?.references.length} verified sources`}
+                              onClick={() => goTo(course.id)}
+                              className={`group flex w-full items-center gap-3 rounded-xl px-3 py-3 text-left transition-colors ${active ? 'bg-[var(--surface-soft)]' : 'hover:bg-[var(--surface-canvas)]'}`}
+                            >
+                              <span className={`h-1.5 w-1.5 shrink-0 rounded-full ${active ? 'bg-[var(--accent-hex)]' : 'bg-[var(--outline-soft)]'}`} aria-hidden="true" />
+                              <span className="min-w-0 flex-1">
+                                <span className={`block truncate font-serif text-[15px] font-semibold leading-snug ${active ? 'text-[var(--ink-primary)]' : 'text-[var(--ink-secondary)]'}`}>
+                                  {course.title}
+                                </span>
+                                <span className="mt-0.5 block text-[11px] text-[var(--ink-muted)]">
+                                  {entryById.get(course.id)?.references.length} verified sources
+                                </span>
+                              </span>
+                              <ChevronRight size={15} className={`shrink-0 ${active ? 'text-[var(--accent-text)]' : 'text-[var(--ink-muted)] group-hover:text-[var(--ink-primary)]'}`} aria-hidden="true" />
+                            </button>
+                          );
+                        })}
+
+                        {group.inReview.map(course => (
+                          <div key={course.id} className="flex items-center gap-3 px-3 py-3">
+                            <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--outline-soft)]" aria-hidden="true" />
+                            <span className="min-w-0 flex-1">
+                              <span className="block truncate font-serif text-[15px] leading-snug text-[var(--ink-muted)]">{course.title}</span>
+                              <span className="mt-0.5 block text-[11px] text-[var(--ink-muted)]">Evidence review underway</span>
+                            </span>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   ))}
                 </div>
-              </div>
-            );
-          })}
-        </aside>
+              </section>
+            </aside>
 
-        {/* ── Detail (right pane / mobile drill-in) ── */}
-        <main ref={detailRef} className={`${mobileDetail ? 'block' : 'hidden'} md:block px-4 pb-10 md:p-0`}>
-          {selected && selectedCourse && (
-              <motion.div
-                key={selected.id}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.22, ease: 'easeOut' }}
-              >
-                <div className="rounded-2xl bg-white px-5 md:px-8 py-6 md:py-8" style={{ border: `1px solid ${HAIRLINE}` }}>
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="min-w-0">
-                      <MicroLabel color={ACCENT}>{categoryTitles[selectedCourse.category as CategoryType]}</MicroLabel>
-                      <h2 className="text-[24px] md:text-[28px] font-semibold leading-tight mt-1.5" style={{ fontFamily: SERIF, color: INK }}>
-                        {selectedCourse.title}
-                      </h2>
-                      <p className="text-[13.5px] mt-1" style={{ color: MUTED, fontFamily: SANS }}>
-                        {selectedCourse.subtitle}
-                      </p>
+            <section ref={detailRef} aria-label="Module evidence" className={`${mobileDetail ? 'block' : 'hidden'} md:col-span-8 md:block`}>
+              {selected && selectedCourse && hasVisibleSelectedEvidence && (
+                <motion.div
+                  key={selected.id}
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.22, ease: 'easeOut' }}
+                >
+                  <article className="overflow-hidden rounded-[18px] border border-[var(--outline-soft)] bg-[var(--surface-paper)]">
+                    <div className="flex flex-col gap-5 border-b border-[var(--outline-soft)] px-5 py-6 sm:px-7 sm:py-7 lg:flex-row lg:items-start lg:justify-between">
+                      <div className="min-w-0 max-w-2xl">
+                        <MicroLabel tone="accent">{categoryTitles[selectedCourse.category as CategoryType]}</MicroLabel>
+                        <h2 className="mt-2 font-serif text-[clamp(30px,4vw,44px)] font-semibold leading-[1.02] tracking-[-0.035em] text-[var(--ink-primary)]">
+                          {selectedCourse.title}
+                        </h2>
+                        <p className="mt-2 text-sm text-[var(--ink-muted)]">{selectedCourse.subtitle}</p>
+                      </div>
+                      {onOpenModule && (
+                        <button
+                          type="button"
+                          onClick={() => onOpenModule(selected.id)}
+                          className="inline-flex min-h-11 shrink-0 items-center justify-center gap-2 rounded-xl border border-[var(--outline-strong)] bg-[var(--surface-paper)] px-4 text-xs font-bold text-[var(--ink-primary)] transition-transform hover:-translate-y-0.5"
+                          aria-label={`Open the ${selectedCourse.title} module`}
+                        >
+                          Open module <ArrowUpRight size={14} aria-hidden="true" />
+                        </button>
+                      )}
                     </div>
-                    {onOpenModule && (
-                      <button
-                        onClick={() => onOpenModule(selected.id)}
-                        className="shrink-0 inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full text-[12.5px] font-semibold transition-colors hover:bg-[#FDEEDF]"
-                        style={{ border: '1px solid rgba(242,107,31,0.3)', color: ACCENT, fontFamily: SANS, backgroundColor: 'white' }}
-                        aria-label={`Open the ${selectedCourse.title} module`}
-                      >
-                        Open module <ArrowUpRight size={14} />
-                      </button>
-                    )}
-                  </div>
 
-                  <div className="grid md:grid-cols-2 gap-5 md:gap-8 mt-6">
-                    <div>
-                      <MicroLabel className="mb-2">What it is</MicroLabel>
-                      <p className="text-[14.5px] leading-relaxed" style={{ color: BODY, fontFamily: SANS }}>
-                        {selected.what}
-                      </p>
+                    <div className="grid sm:grid-cols-2">
+                      <section className="px-5 py-6 sm:border-r sm:border-[var(--outline-soft)] sm:px-7">
+                        <MicroLabel>What it is</MicroLabel>
+                        <p className="mt-3 text-sm leading-7 text-[var(--ink-secondary)]">{selected.what}</p>
+                      </section>
+                      <section className="border-t border-[var(--outline-soft)] px-5 py-6 sm:border-t-0 sm:px-7">
+                        <MicroLabel tone="success">Why it helps</MicroLabel>
+                        <p className="mt-3 text-sm leading-7 text-[var(--ink-secondary)]">{selected.why}</p>
+                      </section>
                     </div>
-                    <div>
-                      <MicroLabel color={SUCCESS_DARK_TEXT} className="mb-2">Why it helps</MicroLabel>
-                      <p className="text-[14.5px] leading-relaxed" style={{ color: BODY, fontFamily: SANS }}>
-                        {selected.why}
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                  </article>
 
-                <div className="rounded-2xl bg-white px-5 md:px-8 py-5 md:py-6 mt-4" style={{ border: `1px solid ${HAIRLINE}` }}>
-                  <div className="flex items-center gap-2.5 mb-1">
-                    <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ backgroundColor: ACCENT_TINT }}>
-                      <BookOpen size={15} style={{ color: ACCENT }} />
+                  <section className="mt-4 overflow-hidden rounded-[18px] border border-[var(--outline-soft)] bg-[var(--surface-paper)]">
+                    <div className="flex flex-wrap items-start justify-between gap-4 border-b border-[var(--outline-soft)] px-5 py-5 sm:px-7">
+                      <div className="min-w-0">
+                        <MicroLabel>Source record</MicroLabel>
+                        <div className="mt-1 flex items-center gap-2.5">
+                          <BookOpen size={17} className="text-[var(--accent-text)]" aria-hidden="true" />
+                          <h2 className="font-serif text-2xl font-semibold tracking-[-0.02em]">References</h2>
+                        </div>
+                        <p className="mt-1 text-xs leading-relaxed text-[var(--ink-muted)]">
+                          Numbered exactly as the citations inside this module.
+                        </p>
+                      </div>
+                      <span className="inline-flex min-h-8 items-center gap-1.5 rounded-full bg-[var(--success-tint)] px-3 text-[10px] font-bold uppercase tracking-[0.1em] text-[var(--success-tint-ink)]">
+                        <Check size={11} strokeWidth={3} aria-hidden="true" /> {selected.references.length} verified
+                      </span>
                     </div>
-                    <div>
-                      <p className="text-[14px] font-semibold leading-tight" style={{ fontFamily: SERIF, color: INK }}>
-                        References
-                      </p>
-                      <p className="text-[11px]" style={{ color: LABEL, fontFamily: SANS }}>
-                        Numbered exactly as the citations inside the module
-                      </p>
-                    </div>
-                    <span
-                      className="ml-auto inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[10.5px] font-bold"
-                      style={{ backgroundColor: SUCCESS_TINT, color: SUCCESS_DARK_TEXT, fontFamily: SANS }}
-                    >
-                      <Check size={11} strokeWidth={3} /> {selected.references.length} verified
-                    </span>
-                  </div>
-                  <div className="mt-3">
-                    {selected.references.map((r, i) => (
-                      <RefRow key={r.id} r={r} n={i + 1} />
-                    ))}
-                  </div>
-                </div>
 
-                {/* Prev / next */}
-                <div className="flex items-stretch gap-3 mt-4">
-                  {([-1, 1] as const).map(dir => {
-                    const target = navOrder[navIndex + dir];
-                    const course = target ? ALL_COURSES.find(c => c.id === target) : undefined;
-                    return (
-                      <button
-                        key={dir}
-                        disabled={!target}
-                        onClick={() => step(dir)}
-                        className={`flex-1 rounded-2xl bg-white px-4 py-3.5 transition-colors ${target ? 'hover:bg-[#FDEEDF]' : 'opacity-40 cursor-default'} ${dir === 1 ? 'text-right' : 'text-left'}`}
-                        style={{ border: `1px solid ${HAIRLINE}` }}
-                      >
-                        <span className={`flex items-center gap-2 ${dir === 1 ? 'justify-end' : ''}`}>
-                          {dir === -1 && <ArrowLeft size={14} style={{ color: MUTED }} />}
-                          <span className="min-w-0">
-                            <MicroLabel>{dir === -1 ? 'Previous' : 'Next'}</MicroLabel>
-                            <span className="block text-[13px] font-semibold truncate mt-0.5" style={{ fontFamily: SERIF, color: INK }}>
-                              {course?.title ?? '—'}
+                    <div className="px-5 sm:px-7">
+                      {selected.references.map((reference, index) => (
+                        <RefRow key={reference.id} reference={reference} number={index + 1} />
+                      ))}
+                    </div>
+
+                    <p className="border-t border-[var(--outline-soft)] px-5 py-4 text-[11px] leading-relaxed text-[var(--ink-muted)] sm:px-7">
+                      Peer-reviewed entries open to their DOI record; official entries open to the issuing body.
+                    </p>
+                  </section>
+
+                  <nav className="mt-4 grid grid-cols-2 gap-3" aria-label="Browse accredited modules">
+                    {([-1, 1] as const).map(direction => {
+                      const target = navOrder[navIndex + direction];
+                      const course = target ? ALL_COURSES.find(item => item.id === target) : undefined;
+                      return (
+                        <button
+                          key={direction}
+                          type="button"
+                          disabled={!target}
+                          onClick={() => step(direction)}
+                          className={`rounded-[18px] border border-[var(--outline-soft)] bg-[var(--surface-paper)] px-4 py-4 transition-colors ${target ? 'hover:border-[var(--outline-strong)]' : 'cursor-default opacity-40'} ${direction === 1 ? 'text-right' : 'text-left'}`}
+                        >
+                          <span className={`flex items-center gap-2 ${direction === 1 ? 'justify-end' : ''}`}>
+                            {direction === -1 && <ArrowLeft size={15} className="shrink-0 text-[var(--ink-muted)]" aria-hidden="true" />}
+                            <span className="min-w-0">
+                              <MicroLabel>{direction === -1 ? 'Previous' : 'Next'}</MicroLabel>
+                              <span className="mt-1 block truncate font-serif text-sm font-semibold text-[var(--ink-primary)]">
+                                {course?.title ?? '—'}
+                              </span>
                             </span>
+                            {direction === 1 && <ArrowRight size={15} className="shrink-0 text-[var(--ink-muted)]" aria-hidden="true" />}
                           </span>
-                          {dir === 1 && <ArrowRight size={14} style={{ color: MUTED }} />}
-                        </span>
-                      </button>
-                    );
-                  })}
+                        </button>
+                      );
+                    })}
+                  </nav>
+                </motion.div>
+              )}
+              {!hasVisibleSelectedEvidence && (
+                <div className="rounded-[18px] border border-[var(--outline-soft)] bg-[var(--surface-paper)] px-6 py-12 text-center sm:px-10">
+                  <MicroLabel>Evidence status</MicroLabel>
+                  <h2 className="mt-3 font-serif text-3xl font-semibold tracking-[-0.025em] text-[var(--ink-primary)]">
+                    {visibleModuleCount > 0 ? 'Review underway' : 'No evidence record found'}
+                  </h2>
+                  <p className="mx-auto mt-3 max-w-md text-sm leading-7 text-[var(--ink-muted)]">
+                    {visibleModuleCount > 0
+                      ? 'The matching module is listed in the index, but its source record is still being reviewed.'
+                      : 'Try a different module title or evidence collection.'}
+                  </p>
                 </div>
-
-                <p className="text-[11.5px] mt-5 px-1" style={{ color: LABEL, fontFamily: SANS }}>
-                  Peer-reviewed entries link to their DOI record; official entries link to the issuing body. The full
-                  change-by-change audit trail lives on the Cut Content page.
-                </p>
-              </motion.div>
-          )}
-        </main>
-      </div>
+              )}
+            </section>
+          </div>
+        </motion.div>
+      </main>
     </div>
   );
 };

@@ -178,10 +178,6 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[]; studentC
     const fwComplete = cb != null && fwCurrent === null;
     return (
       <div className="w-full max-w-xl mx-auto pb-12">
-        <p className="text-[15px] leading-relaxed mb-5" style={{ color: '#5a5550', fontFamily: "'DM Sans', sans-serif" }}>
-          Been out of school? There are two sides to getting back on track — the schoolwork you missed, and getting yourself back in the door. Start wherever feels easier.
-        </p>
-
         {/* Saved comeback plan, surfaced on the home (one tap away) */}
         {cb && (
           <button
@@ -257,11 +253,12 @@ const CatchUpLane: React.FC<{ uid?: string; studentSubjects?: string[]; studentC
         {/* Higher / Ordinary level filter */}
         <div className="flex items-center gap-2.5 mb-5">
           <span className="text-[11px] font-bold uppercase tracking-[0.12em]" style={{ color: '#9e9186' }}>Your level</span>
-          <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50">
+          <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50" role="group" aria-label="Question level">
             {(['higher', 'ordinary'] as const).map(lv => (
               <button
                 key={lv}
                 onClick={() => setLevelFilter(lv)}
+                aria-pressed={levelFilter === lv}
                 className={`px-4 py-1.5 rounded-lg text-[13px] transition-all ${levelFilter === lv ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white font-semibold shadow-sm' : 'text-zinc-500 dark:text-zinc-400'}`}
               >
                 {lv === 'higher' ? 'Higher' : 'Ordinary'}

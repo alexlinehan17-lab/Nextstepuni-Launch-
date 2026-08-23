@@ -12,11 +12,14 @@ import { useAuth } from './AuthContext';
 export type ViewState =
   | 'tree' | 'modules' | 'category' | 'module' | 'innovation-zone'
   | 'dashboard' | 'learning-paths' | 'onboarding'
-  | 'my-journey' | 'my-direction' | 'gamification-hub' | 'study-session' | 'insights'
+  | 'my-journey' | 'my-direction' | 'study-session' | 'insights'
   | 'jc-coming-soon' | 'cut-content' | 'accreditation' | 'year-plans' | 'wip-tools';
+
+export type DashboardSection = 'overview' | 'study' | 'confidence' | 'practice' | 'milestones';
 
 export interface NavigationState {
   viewState: ViewState;
+  dashboardSection: DashboardSection;
   currentCategory: CategoryType | null;
   currentModuleId: string | null;
   cameFromJourney: boolean;
@@ -29,11 +32,10 @@ type NavigationAction =
   | { type: 'NAVIGATE_TO_CATEGORY'; category: CategoryType }
   | { type: 'NAVIGATE_TO_MODULE'; moduleId: string; fromJourney?: boolean; category?: CategoryType | null }
   | { type: 'NAVIGATE_TO_INNOVATION_ZONE'; tool?: string | null }
-  | { type: 'NAVIGATE_TO_DASHBOARD' }
+  | { type: 'NAVIGATE_TO_DASHBOARD'; section?: DashboardSection }
   | { type: 'NAVIGATE_TO_LEARNING_PATHS' }
   | { type: 'NAVIGATE_TO_JOURNEY' }
   | { type: 'NAVIGATE_TO_DIRECTION' }
-  | { type: 'NAVIGATE_TO_GAMIFICATION_HUB' }
   | { type: 'NAVIGATE_TO_STUDY_SESSION' }
   | { type: 'NAVIGATE_TO_INSIGHTS' }
   | { type: 'NAVIGATE_TO_ONBOARDING' }
@@ -42,6 +44,7 @@ type NavigationAction =
   | { type: 'NAVIGATE_TO_ACCREDITATION' }
   | { type: 'NAVIGATE_TO_YEAR_PLANS' }
   | { type: 'NAVIGATE_TO_WIP_TOOLS' }
+  | { type: 'SET_DASHBOARD_SECTION'; section: DashboardSection }
   | { type: 'SET_ACTIVE_TOOL'; tool: string | null }
   | { type: 'RESTORE_STATE'; state: Partial<NavigationState> };
 
@@ -53,11 +56,10 @@ interface NavigationContextValue {
   navigateToCategory: (category: CategoryType) => void;
   navigateToModule: (moduleId: string, currentViewState?: ViewState, currentCategory?: CategoryType | null, fromJourney?: boolean) => void;
   navigateToInnovationZone: (tool?: string | null) => void;
-  navigateToDashboard: () => void;
+  navigateToDashboard: (section?: DashboardSection) => void;
   navigateToLearningPaths: () => void;
   navigateToJourney: () => void;
   navigateToDirection: () => void;
-  navigateToGamificationHub: () => void;
   navigateToStudySession: () => void;
   navigateToInsights: () => void;
   navigateToOnboarding: () => void;
@@ -66,6 +68,7 @@ interface NavigationContextValue {
   navigateToAccreditation: () => void;
   navigateToYearPlans: () => void;
   navigateToWipTools: () => void;
+  setDashboardSection: (section: DashboardSection) => void;
   setActiveTool: (tool: string | null) => void;
   goBack: () => void;
 }
@@ -75,14 +78,42 @@ interface NavigationContextValue {
 const VALID_VIEWS = new Set<string>([
   'tree', 'modules', 'category', 'module', 'innovation-zone',
   'dashboard', 'learning-paths', 'onboarding',
-  'my-journey', 'my-direction', 'gamification-hub', 'study-session', 'insights',
+  'my-journey', 'my-direction', 'study-session', 'insights',
   'jc-coming-soon', 'cut-content', 'accreditation', 'year-plans', 'wip-tools',
 ]);
+
+const VALID_DASHBOARD_SECTIONS = new Set<DashboardSection>([
+  'overview', 'study', 'confidence', 'practice', 'milestones',
+]);
+
+const DEFAULT_NAVIGATION_STATE: NavigationState = {
+  viewState: 'tree',
+  dashboardSection: 'overview',
+  currentCategory: null,
+  currentModuleId: null,
+  cameFromJourney: false,
+  activeTool: null,
+};
+
+const isDashboardSection = (value: unknown): value is DashboardSection => (
+  typeof value === 'string' && VALID_DASHBOARD_SECTIONS.has(value as DashboardSection)
+);
+
+const isFirebaseAuthActionRoute = () => {
+  const path = window.location.pathname;
+  const search = window.location.search;
+  return path === '/reset-password'
+    || path.startsWith('/reset-password/')
+    || search.includes('mode=resetPassword');
+};
 
 function serializeToURL(state: NavigationState): string {
   const params = new URLSearchParams();
   if (state.viewState && state.viewState !== 'tree') {
     params.set('view', state.viewState);
+  }
+  if (state.viewState === 'dashboard' && state.dashboardSection !== 'overview') {
+    params.set('section', state.dashboardSection);
   }
   if (state.currentCategory) params.set('cat', state.currentCategory);
   if (state.currentModuleId) params.set('mod', state.currentModuleId);
@@ -97,8 +128,17 @@ function deserializeFromURL(): Partial<NavigationState> {
   const result: Partial<NavigationState> = {};
 
   const view = params.get('view');
-  if (view && VALID_VIEWS.has(view)) {
+  // Training Hub was consolidated into My Progress. Keep old bookmarks and
+  // shared links useful by resolving the retired view to its new section.
+  if (view === 'gamification-hub') {
+    result.viewState = 'dashboard';
+    result.dashboardSection = 'milestones';
+  } else if (view && VALID_VIEWS.has(view)) {
     result.viewState = view as ViewState;
+    if (view === 'dashboard') {
+      const section = params.get('section');
+      result.dashboardSection = isDashboardSection(section) ? section : 'overview';
+    }
   }
   const cat = params.get('cat');
   if (cat) result.currentCategory = cat as CategoryType;
@@ -117,7 +157,7 @@ function deserializeFromURL(): Partial<NavigationState> {
 function navigationReducer(state: NavigationState, action: NavigationAction): NavigationState {
   switch (action.type) {
     case 'NAVIGATE_TO_TREE':
-      return { viewState: 'tree', currentCategory: null, currentModuleId: null, cameFromJourney: false, activeTool: null };
+      return { ...DEFAULT_NAVIGATION_STATE };
     case 'NAVIGATE_TO_MODULES':
       return { ...state, viewState: 'modules', currentCategory: null, currentModuleId: null, cameFromJourney: false, activeTool: null };
     case 'NAVIGATE_TO_CATEGORY':
@@ -127,15 +167,13 @@ function navigationReducer(state: NavigationState, action: NavigationAction): Na
     case 'NAVIGATE_TO_INNOVATION_ZONE':
       return { ...state, viewState: 'innovation-zone', currentModuleId: null, cameFromJourney: false, activeTool: action.tool ?? null };
     case 'NAVIGATE_TO_DASHBOARD':
-      return { ...state, viewState: 'dashboard', currentModuleId: null, cameFromJourney: false, activeTool: null };
+      return { ...state, viewState: 'dashboard', dashboardSection: action.section ?? 'overview', currentModuleId: null, cameFromJourney: false, activeTool: null };
     case 'NAVIGATE_TO_LEARNING_PATHS':
       return { ...state, viewState: 'learning-paths', currentModuleId: null, cameFromJourney: false, activeTool: null };
     case 'NAVIGATE_TO_JOURNEY':
       return { ...state, viewState: 'my-journey', currentModuleId: null, cameFromJourney: false, activeTool: null };
     case 'NAVIGATE_TO_DIRECTION':
       return { ...state, viewState: 'my-direction', currentModuleId: null, cameFromJourney: false, activeTool: null };
-    case 'NAVIGATE_TO_GAMIFICATION_HUB':
-      return { ...state, viewState: 'gamification-hub', currentModuleId: null, cameFromJourney: false, activeTool: null };
     case 'NAVIGATE_TO_STUDY_SESSION':
       return { ...state, viewState: 'study-session', currentModuleId: null, cameFromJourney: false, activeTool: null };
     case 'NAVIGATE_TO_INSIGHTS':
@@ -154,6 +192,9 @@ function navigationReducer(state: NavigationState, action: NavigationAction): Na
       return { ...state, viewState: 'year-plans', currentModuleId: null, cameFromJourney: false, activeTool: null };
     case 'NAVIGATE_TO_WIP_TOOLS':
       return { ...state, viewState: 'wip-tools', currentModuleId: null, cameFromJourney: false, activeTool: null };
+    case 'SET_DASHBOARD_SECTION':
+      if (state.viewState !== 'dashboard' || state.dashboardSection === action.section) return state;
+      return { ...state, dashboardSection: action.section };
     case 'SET_ACTIVE_TOOL':
       if (state.activeTool === action.tool) return state;
       return { ...state, activeTool: action.tool };
@@ -165,18 +206,11 @@ function navigationReducer(state: NavigationState, action: NavigationAction): Na
 }
 
 function getInitialState(): NavigationState {
-  const base: NavigationState = {
-    viewState: 'tree',
-    currentCategory: null,
-    currentModuleId: null,
-    cameFromJourney: false,
-    activeTool: null,
-  };
   const fromURL = deserializeFromURL();
   if (fromURL.viewState) {
-    return { ...base, ...fromURL };
+    return { ...DEFAULT_NAVIGATION_STATE, ...fromURL };
   }
-  return base;
+  return { ...DEFAULT_NAVIGATION_STATE };
 }
 
 // ─── Context ────────────────────────────────────────────────
@@ -214,26 +248,34 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     // query params (mode=resetPassword, oobCode, apiKey) carry the reset code
     // and must survive long enough for ResetPasswordPage to read them.
     // Re-rewriting the URL from navigation state strips those params.
-    if (typeof window !== 'undefined') {
-      const path = window.location.pathname;
-      const search = window.location.search;
-      if (path === '/reset-password' || path.startsWith('/reset-password/') || search.includes('mode=resetPassword')) {
-        return;
-      }
+    if (typeof window !== 'undefined' && isFirebaseAuthActionRoute()) {
+      return;
     }
     const url = serializeToURL(state);
+    const currentHistoryState = window.history.state;
+    const currentURLView = new URLSearchParams(window.location.search).get('view');
+    const isLegacyTrainingHubEntry = currentHistoryState?.viewState === 'gamification-hub'
+      || currentURLView === 'gamification-hub';
     // Replace (not push) on the initial mount to seed URL without adding a history entry
-    if (!window.history.state?.__navSynced) {
+    if (!currentHistoryState?.__navSynced || isLegacyTrainingHubEntry) {
       window.history.replaceState({ ...state, __navSynced: true }, '', url);
     } else {
       // State changed after initial mount — check if it actually differs from current history
-      const prev = window.history.state;
-      const changed = prev.viewState !== state.viewState
+      const prev = currentHistoryState;
+      const routeChanged = prev.viewState !== state.viewState
         || prev.currentCategory !== state.currentCategory
         || prev.currentModuleId !== state.currentModuleId
         || prev.activeTool !== state.activeTool
         || prev.cameFromJourney !== state.cameFromJourney;
-      if (changed) {
+      const dashboardSectionChanged = state.viewState === 'dashboard'
+        && prev.viewState === 'dashboard'
+        && (prev.dashboardSection ?? 'overview') !== state.dashboardSection;
+      if (dashboardSectionChanged && !routeChanged) {
+        // Tabs are sections of one destination, not extra stops. Replace the
+        // dashboard entry so leaving it remains a single Back action, while a
+        // later Back from another page still restores the selected section.
+        window.history.replaceState({ ...state, __navSynced: true }, '', url);
+      } else if (routeChanged || dashboardSectionChanged) {
         window.history.pushState({ ...state, __navSynced: true }, '', url);
       }
     }
@@ -244,27 +286,40 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     const handlePopState = (e: PopStateEvent) => {
       isPopstateRef.current = true;
       const s = e.state;
+      let restoredState: NavigationState;
       if (s && s.__navSynced) {
-        // Restore full state from the history entry
-        dispatch({
-          type: 'RESTORE_STATE',
-          state: {
-            viewState: s.viewState || 'tree',
-            currentCategory: s.currentCategory || null,
-            currentModuleId: s.currentModuleId || null,
-            cameFromJourney: s.cameFromJourney || false,
-            activeTool: s.activeTool || null,
-          },
-        });
+        const isLegacyTrainingHub = s.viewState === 'gamification-hub';
+        const restoredView = isLegacyTrainingHub
+          ? 'dashboard'
+          : (VALID_VIEWS.has(s.viewState) ? s.viewState as ViewState : 'tree');
+        restoredState = {
+          viewState: restoredView,
+          dashboardSection: isLegacyTrainingHub
+            ? 'milestones'
+            : (isDashboardSection(s.dashboardSection) ? s.dashboardSection : 'overview'),
+          currentCategory: s.currentCategory || null,
+          currentModuleId: s.currentModuleId || null,
+          cameFromJourney: s.cameFromJourney || false,
+          activeTool: s.activeTool || null,
+        };
       } else {
         // No synced state (e.g. external history entry) — fall back to URL
         const fromURL = deserializeFromURL();
-        if (fromURL.viewState) {
-          dispatch({ type: 'RESTORE_STATE', state: fromURL });
-        } else {
-          dispatch({ type: 'NAVIGATE_TO_TREE' });
-        }
+        restoredState = fromURL.viewState
+          ? { ...DEFAULT_NAVIGATION_STATE, ...fromURL }
+          : { ...DEFAULT_NAVIGATION_STATE };
       }
+
+      // Seed or normalize the entry in place. This keeps browser Back from
+      // resurfacing the retired Training Hub URL or creating a duplicate entry.
+      if (!isFirebaseAuthActionRoute()) {
+        window.history.replaceState(
+          { ...restoredState, __navSynced: true },
+          '',
+          serializeToURL(restoredState),
+        );
+      }
+      dispatch({ type: 'RESTORE_STATE', state: restoredState });
       window.scrollTo(0, 0);
       // isPopstateRef stays true — the URL-sync effect will clear it and skip pushing
     };
@@ -318,8 +373,8 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     window.scrollTo(0, 0);
   }, [navigate]);
 
-  const navigateToDashboard = useCallback(() => {
-    navigate({ type: 'NAVIGATE_TO_DASHBOARD' });
+  const navigateToDashboard = useCallback((section: DashboardSection = 'overview') => {
+    navigate({ type: 'NAVIGATE_TO_DASHBOARD', section });
     window.scrollTo(0, 0);
   }, [navigate]);
 
@@ -335,11 +390,6 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
 
   const navigateToDirection = useCallback(() => {
     navigate({ type: 'NAVIGATE_TO_DIRECTION' });
-    window.scrollTo(0, 0);
-  }, [navigate]);
-
-  const navigateToGamificationHub = useCallback(() => {
-    navigate({ type: 'NAVIGATE_TO_GAMIFICATION_HUB' });
     window.scrollTo(0, 0);
   }, [navigate]);
 
@@ -386,6 +436,11 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     navigate({ type: 'SET_ACTIVE_TOOL', tool });
   }, [navigate]);
 
+  const setDashboardSection = useCallback((section: DashboardSection) => {
+    navigate({ type: 'SET_DASHBOARD_SECTION', section });
+    window.scrollTo(0, 0);
+  }, [navigate]);
+
   const goBack = useCallback(() => {
     window.history.back();
   }, []);
@@ -402,7 +457,6 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     navigateToLearningPaths,
     navigateToJourney,
     navigateToDirection,
-    navigateToGamificationHub,
     navigateToStudySession,
     navigateToInsights,
     navigateToOnboarding,
@@ -411,6 +465,7 @@ export const NavigationProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     navigateToAccreditation,
     navigateToYearPlans,
     navigateToWipTools,
+    setDashboardSection,
     setActiveTool,
     goBack,
   };

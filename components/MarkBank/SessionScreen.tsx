@@ -40,6 +40,11 @@ import { groupMarks, rowId, type LabelKey, type MarkRow, type SecCard } from '..
 import type { MarkBankGrade } from './scheduler';
 import { figureUrl } from '../../utils/figureUrl';
 import { getSubjectHex } from '../../utils/subjectColors';
+import WaysInPanel, {
+  WaysInAttemptReview,
+  emptyWaysInWork,
+  type WaysInWork,
+} from './WaysInPanel';
 
 const EASE = [0.16, 1, 0.3, 1] as number[];
 
@@ -759,6 +764,15 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const [results, setResults] = useState<SessionCardResult[]>([]);
   const [whisper, setWhisper] = useState<string | null>(null);
   const [confirmExit, setConfirmExit] = useState(false);
+  const [waysInOpen, setWaysInOpen] = useState(false);
+  const [waysInFocusMode, setWaysInFocusMode] = useState(false);
+  const [waysInWork, setWaysInWork] = useState<WaysInWork>(emptyWaysInWork);
+  const [schemeInteracted, setSchemeInteracted] = useState(false);
+  const waysInEntryRef = useRef<HTMLButtonElement | null>(null);
+  const questionPaneRef = useRef<HTMLDivElement | null>(null);
+  const leaveButtonRef = useRef<HTMLButtonElement | null>(null);
+  const keepReviewButtonRef = useRef<HTMLButtonElement | null>(null);
+  const leaveSessionButtonRef = useRef<HTMLButtonElement | null>(null);
   const byId = useMemo(() => new Map(cards.map(c => [c.id, c])), [cards]);
 
   const card = byId.get(queue[position]);
@@ -811,6 +825,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const routeTaken = card ? committedRoute(card, rowClaims) : null;
 
   const setClaim = useCallback((id: string, next: RowClaim) => {
+    setSchemeInteracted(true);
     setClaims(prev => ({ ...prev, [id]: next }));
   }, []);
 
@@ -840,6 +855,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
 
   /** Toggle one option inside a bounded "Any N" group. */
   const togglePick = useCallback((id: string, optionIndex: number) => {
+    setSchemeInteracted(true);
     setPicks(prev => {
       const current = prev[id] ?? [];
       const next = current.includes(optionIndex)
@@ -851,6 +867,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
 
   const claimAll = useCallback(() => {
     if (!card) return;
+    setSchemeInteracted(true);
     const all: Record<string, RowClaim> = {};
     const allPicks: Record<string, number[]> = {};
     card.rows.forEach((r, i) => {
@@ -908,6 +925,10 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     setClaims({});
     setPicks({});
     setRevealed(false);
+    setWaysInOpen(false);
+    setWaysInFocusMode(false);
+    setWaysInWork(emptyWaysInWork());
+    setSchemeInteracted(false);
 
     if (position + 1 >= nextQueue.length) onFinish(nextResults);
     else setPosition(position + 1);
@@ -918,6 +939,25 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     const t = setTimeout(() => setWhisper(null), reduced ? 400 : 1100);
     return () => clearTimeout(t);
   }, [whisper, reduced]);
+
+  const closeWaysIn = useCallback(() => {
+    setWaysInFocusMode(false);
+    setWaysInOpen(false);
+    requestAnimationFrame(() => waysInEntryRef.current?.focus());
+  }, []);
+
+  const openExitConfirmation = useCallback(() => {
+    // Unmounting Ways In first also stops speech and removes its Escape handler.
+    // Do not send focus back to the background entry while the modal is open.
+    setWaysInOpen(false);
+    setWaysInFocusMode(false);
+    setConfirmExit(true);
+  }, []);
+
+  const closeExitConfirmation = useCallback(() => {
+    setConfirmExit(false);
+    requestAnimationFrame(() => leaveButtonRef.current?.focus());
+  }, []);
 
   if (!card) return null;
 
@@ -966,7 +1006,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
           height: 58, display: 'flex', alignItems: 'center', gap: 14,
         }}>
           <button
-            type="button" onClick={() => setConfirmExit(true)}
+            ref={leaveButtonRef}
+            type="button" onClick={openExitConfirmation}
             style={{
               display: 'flex', alignItems: 'center', gap: 6,
               background: 'var(--mb-raised)', border: `1px solid ${HAIRLINE_2}`, borderRadius: 10,
@@ -1036,18 +1077,23 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
         key={card.id}
         className="mb-card-in"
         style={{
-          maxWidth: wide ? SURFACE : COLUMN, margin: '0 auto', padding: '38px 16px 0',
+          maxWidth: waysInFocusMode ? COLUMN : wide ? SURFACE : COLUMN,
+          margin: '0 auto', padding: '38px 16px 0',
           display: 'flex', alignItems: 'flex-start',
           gap: wide ? 32 : 0, flexDirection: wide ? 'row' : 'column',
         }}
       >
-      <div style={{
+      <div
+        ref={questionPaneRef}
+        data-testid="mark-bank-question-pane"
+        hidden={waysInFocusMode}
+        style={{
         width: wide ? QUESTION_W : '100%',
         maxWidth: '100%',
         flex: '0 0 auto',
         // Stays put while the marking points scroll beneath it: the exact wording
         // is the evidence a student marks against, so it must never leave view.
-        position: wide ? 'sticky' : 'static', top: 96,
+        position: wide ? 'sticky' : 'static', top: 96, scrollMarginTop: 74,
       }}>
         {/* The question card is built like the top of a small stack of
             papers: the white sheet with its ink border, and behind it two
@@ -1205,12 +1251,12 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
           reveal — before it, it holds the tariff and the instruction; after, the
           marking points themselves. */}
       <div style={{
-        width: wide ? SCHEME_W : '100%',
+        width: waysInFocusMode ? '100%' : wide ? SCHEME_W : '100%',
         maxWidth: '100%',
         flex: '0 0 auto',
         /* 14px of visible gap: the question card's accent plate reaches 8px
            below its sheet, so the margin allows for it in single-column mode. */
-        marginTop: wide ? 0 : 22,
+        marginTop: waysInFocusMode || wide ? 0 : 22,
       }}>
         <MotionDiv
           /* The pane still grows from the prompt to the marking points within a
@@ -1222,20 +1268,36 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             border: '1.5px solid #383838', boxShadow: '0 12px 28px rgba(38, 32, 27, .045)',
           }}
         >
-          {!revealed && (
-            <div style={{ padding: '16px 18px 18px' }}>
-              <span style={{
-                display: 'block', marginBottom: 9,
-                font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.12em',
-                textTransform: 'uppercase', color: LABEL,
-              }}>
-                The scheme
-              </span>
-              <p style={{ margin: '0 0 4px', font: `italic 400 13px/1.5 ${SANS}`, color: MUTED }}>
-                Answer it in your head, or write it out. Then reveal the scheme and
-                tick off what you had.
+          {!revealed && !waysInOpen && (
+            <div className="mb-wi-entry">
+              <span>Before the scheme</span>
+              <h2>Need a way into the question?</h2>
+              <p>
+                Focus one line at a time, map the instruction and hold your plan beside the exact SEC wording.
               </p>
+              <button
+                ref={waysInEntryRef}
+                type="button"
+                onClick={() => setWaysInOpen(true)}
+              >
+                Open Ways In
+              </button>
+              <small>Uses the printed question only. No marking point is opened or inferred.</small>
             </div>
+          )}
+
+          {!revealed && waysInOpen && (
+            <WaysInPanel
+              card={card}
+              subjectLabel={subjectLabel}
+              work={waysInWork}
+              setWork={setWaysInWork}
+              focusMode={waysInFocusMode}
+              onFocusModeChange={focused => {
+                setWaysInFocusMode(focused);
+              }}
+              onClose={closeWaysIn}
+            />
           )}
 
           <AnimatePresence>
@@ -1248,6 +1310,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                 transition={{ duration: reduced ? 0.12 : 0.18, ease: EASE }}
               >
                 <div style={{ padding: '4px 18px 18px' }}>
+                  <WaysInAttemptReview work={waysInWork} card={card} subjectLabel={subjectLabel} />
                   <div style={{
                     display: 'flex', justifyContent: 'space-between', alignItems: 'center',
                     padding: '12px 0 9px',
@@ -1266,8 +1329,17 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                         borderBottom: `1px solid ${MUTED_BORDER}`,
                       }}
                     >
-                      I had them all
+                      Select all — I had them all
                     </button>
+                  </div>
+
+                  <div style={{ margin: '0 0 14px', padding: '0 0 13px', borderBottom: `1px solid ${HAIRLINE_2}` }}>
+                    <p style={{ margin: 0, font: `600 18px/1.3 ${SERIF}`, color: INK }}>
+                      Select the points you actually got.
+                    </p>
+                    <p style={{ margin: '5px 0 0', font: `400 12px/1.5 ${SANS}`, color: MUTED }}>
+                      Tap every point that appeared in your answer. This gives you a mark-based suggestion; you can still choose your own grade below.
+                    </p>
                   </div>
 
                   {card.rows.map((row, i) => {
@@ -1364,7 +1436,13 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                 autoFocus
                 // Clear any lingering whisper so the schedule note for the card
                 // just graded does not hang over the one now in front of them.
-                onClick={() => { setWhisper(null); setRevealed(true); }}
+                onClick={() => {
+                  setWhisper(null);
+                  setWaysInOpen(false);
+                  setWaysInFocusMode(false);
+                  setSchemeInteracted(false);
+                  setRevealed(true);
+                }}
                 style={{
                   width: '100%', padding: '15px 18px', borderRadius: 12,
                   background: ACCENT, color: '#FFFFFF', border: 'none',
@@ -1422,10 +1500,12 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
             <AnimatePresence mode="wait">
               {(
                 <MotionDiv key="grades" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.18 }}>
-                  <p style={{ margin: '0 0 9px', font: `400 12px/1.45 ${SANS}`, color: INK_2 }}>
-                    {showsRowMarks(card)
-                      ? <>You claimed {got} of {total} marks — that looks like {GRADE_COPY[suggested]}.</>
-                      : <>That looks like {GRADE_COPY[suggested]}.</>}
+                  <p id="mark-bank-grade-guidance" style={{ margin: '0 0 9px', font: `400 12px/1.45 ${SANS}`, color: INK_2 }}>
+                    {!schemeInteracted
+                      ? <>No points selected yet. Select them above for a mark-based suggestion, or choose your own grade now.</>
+                      : showsRowMarks(card)
+                        ? <>You claimed {got} of {total} marks — that looks like {GRADE_COPY[suggested]}.</>
+                        : <>That looks like {GRADE_COPY[suggested]}.</>}
                     <br />
                     <em style={{ color: MUTED }}>You decide. Tap any of the three.</em>
                   </p>
@@ -1434,12 +1514,13 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                       360px hit area and makes the rail read as a toolbar. */}
                   <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 168px))', gap: 8 }}>
                     {(['missed', 'shaky', 'got'] as MarkBankGrade[]).map(g => {
-                      const isSuggested = g === suggested;
+                      const isSuggested = schemeInteracted && g === suggested;
                       return (
                         <button
                           key={g}
                           type="button"
                           onClick={() => commit(g)}
+                          aria-describedby="mark-bank-grade-guidance"
                           data-suggested={isSuggested || undefined}
                           className="mb-grade-button"
                           style={{
@@ -1471,6 +1552,29 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
           role="dialog"
           aria-modal="true"
           aria-labelledby="mark-bank-exit-title"
+          onKeyDown={event => {
+            if (event.key === 'Escape') {
+              event.preventDefault();
+              closeExitConfirmation();
+              return;
+            }
+            if (event.key !== 'Tab') return;
+            const buttons = [keepReviewButtonRef.current, leaveSessionButtonRef.current]
+              .filter((button): button is HTMLButtonElement => button !== null);
+            if (!buttons.length) return;
+            const first = buttons[0];
+            const last = buttons[buttons.length - 1];
+            if (event.shiftKey && document.activeElement === first) {
+              event.preventDefault();
+              last.focus();
+            } else if (!event.shiftKey && document.activeElement === last) {
+              event.preventDefault();
+              first.focus();
+            } else if (!buttons.includes(document.activeElement as HTMLButtonElement)) {
+              event.preventDefault();
+              first.focus();
+            }
+          }}
           style={{
             position: 'fixed', inset: 0, zIndex: 20, display: 'flex', alignItems: 'center', justifyContent: 'center',
             padding: 20, background: 'rgba(26,26,26,.42)',
@@ -1483,10 +1587,10 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               You have finished {distinctDone} of {cards.length}. This card will stay ungraded and return next time.
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 9 }}>
-              <button type="button" autoFocus onClick={() => setConfirmExit(false)} style={{ padding: '12px 16px', borderRadius: 11, border: '2px solid #1A1A1A', background: '#F26B1F', color: '#FFFFFF', boxShadow: '3px 3px 0 #1A1A1A', font: `650 13.5px/1 ${SANS}`, cursor: 'pointer' }}>
+              <button ref={keepReviewButtonRef} type="button" autoFocus onClick={closeExitConfirmation} style={{ padding: '12px 16px', borderRadius: 11, border: '2px solid #1A1A1A', background: '#F26B1F', color: '#FFFFFF', boxShadow: '3px 3px 0 #1A1A1A', font: `650 13.5px/1 ${SANS}`, cursor: 'pointer' }}>
                 Keep reviewing
               </button>
-              <button type="button" onClick={onExit} style={{ padding: '11px 16px', borderRadius: 11, border: `1px solid ${MUTED_BORDER}`, background: 'var(--mb-raised)', color: INK_2, font: `600 13px/1 ${SANS}`, cursor: 'pointer' }}>
+              <button ref={leaveSessionButtonRef} type="button" onClick={onExit} style={{ padding: '11px 16px', borderRadius: 11, border: `1px solid ${MUTED_BORDER}`, background: 'var(--mb-raised)', color: INK_2, font: `600 13px/1 ${SANS}`, cursor: 'pointer' }}>
                 Leave session
               </button>
             </div>

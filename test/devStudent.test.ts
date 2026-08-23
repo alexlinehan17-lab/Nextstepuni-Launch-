@@ -2,7 +2,7 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
-import { describe, expect, test } from 'vitest';
+import { afterEach, beforeEach, describe, expect, test } from 'vitest';
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
@@ -10,16 +10,31 @@ import { ALL_COURSES } from '@/courseData';
 import { computeStreak } from '@/components/timetableAlgorithm';
 import {
   DEMO_STUDENT_UID,
+  clearDemoSession,
   createDemoStudentLoadedData,
   createDemoStudentNorthStar,
   createDemoStudentProfile,
   createDemoStudentSession,
+  hasActiveDemoSession,
+  loadDemoStudentLoadedData,
+  markDemoSessionActive,
+  persistDemoStudentProgress,
 } from '@/data/devStudent';
 import { filterCoursesForStudent } from '@/utils/courseVisibility';
 
 const FIXED_NOW = new Date('2026-08-09T12:00:00.000Z');
 
 describe('localhost Demo Account', () => {
+  beforeEach(() => {
+    window.localStorage.clear();
+    window.sessionStorage.clear();
+  });
+
+  afterEach(() => {
+    window.localStorage.clear();
+    window.sessionStorage.clear();
+  });
+
   test('creates a complete senior-cycle session', () => {
     expect(createDemoStudentSession()).toMatchObject({
       uid: DEMO_STUDENT_UID,
@@ -59,6 +74,39 @@ describe('localhost Demo Account', () => {
       subjectProfile: loaded.studentProfile,
       northStar,
     });
+  });
+
+  test('restores locally saved progress instead of snapping back to the seed', () => {
+    const initial = createDemoStudentLoadedData(FIXED_NOW);
+    const moduleId = Object.keys(initial.userProgress)[0];
+    const updatedProfile = {
+      ...initial.studentProfile,
+      examStartDate: '2028-06-07',
+    };
+
+    persistDemoStudentProgress({
+      ...initial.rawProgressDoc,
+      [moduleId]: { unlockedSection: 9 },
+      subjectProfile: updatedProfile,
+      pointsData: { totalEarned: 7_001, totalSpent: 1_201 },
+      collegeCompass: { checklist: { 'doors-open:create-account': 'done' } },
+    });
+
+    const restored = loadDemoStudentLoadedData(FIXED_NOW);
+    expect(restored.studentProfile.examStartDate).toBe('2028-06-07');
+    expect(restored.userProgress[moduleId]?.unlockedSection).toBe(9);
+    expect(restored.rawProgressDoc.pointsData).toEqual({ totalEarned: 7_001, totalSpent: 1_201 });
+    expect(restored.rawProgressDoc.collegeCompass).toEqual({
+      checklist: { 'doors-open:create-account': 'done' },
+    });
+  });
+
+  test('keeps the Demo Account signed in across reloads but not after logout', () => {
+    expect(hasActiveDemoSession()).toBe(false);
+    markDemoSessionActive();
+    expect(hasActiveDemoSession()).toBe(true);
+    clearDemoSession();
+    expect(hasActiveDemoSession()).toBe(false);
   });
 
   test('seeds every dashboard data source with a substantial, varied history', () => {

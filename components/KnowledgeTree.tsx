@@ -7,7 +7,7 @@ import React, { useState, useMemo, useEffect, useCallback, useRef } from 'react'
 import { AnimatePresence, MotionDiv, useReducedMotion } from './Motion';
 import {
   ArrowRight,
-  User, Home, PanelLeft, ChartNoAxesCombined, Award, BookOpen, CalendarRange, Settings, LogOut, Sun, Moon, RefreshCw, Timer, Dumbbell, Bell, MessageSquare, HelpCircle
+  User, Home, PanelLeft, ChartNoAxesCombined, Award, BookOpen, CalendarRange, Settings, LogOut, Sun, Moon, RefreshCw, Timer, Bell, MessageSquare, HelpCircle
 } from 'lucide-react';
 import SiteGuide, { type GuideAction } from './SiteGuide';
 import FirstVisitCoachMarks, { coachMarksSeen } from './FirstVisitCoachMarks';
@@ -43,7 +43,6 @@ interface KnowledgeTreeProps {
   onGoToJourney: () => void;
   onGoToStudy?: () => void;
   onGoToInsights?: () => void;
-  onGoToTrainingHub?: () => void;
   onGoToCutContent?: () => void;
   onGoToAccreditation?: () => void;
   onGoToYearPlans?: () => void;
@@ -79,7 +78,7 @@ interface KnowledgeTreeProps {
 }
 
 
-export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: _onSelectCategory, onGoToModules, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, onGoToInsights: _onGoToInsights, onGoToTrainingHub, onGoToAccreditation, onGoToYearPlans, allCourses, onSelectModule, categoryTitles: _categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes: _unlockedThemes = [], completedCount, totalCount, streak, pointsBalance, northStar, studentProfile, timetableCompletions, smartRecommendation, questState, onClaimQuestReward, onRecommendationAction, onOpenTool, uid }) => {
+export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: _onSelectCategory, onGoToModules, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, onGoToInsights: _onGoToInsights, onGoToAccreditation, onGoToYearPlans, allCourses, onSelectModule, categoryTitles: _categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes: _unlockedThemes = [], completedCount, totalCount, streak, pointsBalance, northStar, studentProfile, timetableCompletions, smartRecommendation, questState, onClaimQuestReward, onRecommendationAction, onOpenTool, uid }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [feedbackOpen, setFeedbackOpen] = useState(false);
   const reduceMotion = useReducedMotion();
@@ -170,7 +169,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
 
   const sidebarItems = [
     { icon: Home, label: 'Home', onClick: () => {}, active: true },
-    { icon: Dumbbell, label: 'Training Hub', onClick: onGoToTrainingHub ?? (() => {}), active: false },
+    { icon: ChartNoAxesCombined, label: 'My Progress', onClick: onGoToDashboard, active: false },
     { icon: BookOpen, label: 'References', onClick: onGoToAccreditation ?? (() => {}), active: false },
     { icon: Timer, label: 'Study Session', onClick: onGoToStudy ?? (() => {}), active: false },
     { icon: CalendarRange, label: 'Year Plans', onClick: onGoToYearPlans ?? (() => {}), active: false },
@@ -265,7 +264,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
   };
 
   return (
-    <div className="product-shell dashboard-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)] overflow-x-hidden relative transition-colors duration-500 selection:bg-[rgba(var(--accent),0.2)]">
+    <div className="product-shell dashboard-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)] overflow-x-hidden relative selection:bg-[rgba(var(--accent),0.2)]">
       {/* Sidebar — desktop only */}
       <aside
         className={`hidden md:flex flex-col fixed top-0 left-0 h-full z-40 bg-[#FAFBF6] dark:bg-zinc-900 border-r-[1.5px] border-[#383838] dark:border-zinc-700 overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${sidebarOpen ? 'w-56' : 'w-[60px]'}`}
@@ -351,22 +350,6 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
               </span>
             </button>
           )}
-
-          {/* Student dashboard entry */}
-          <button
-            type="button"
-            onClick={onGoToDashboard}
-            aria-label="Enter Dashboard"
-            title={sidebarOpen ? undefined : 'Enter Dashboard'}
-            className="w-full flex items-center gap-3 px-2.5 py-2 rounded-lg transition-colors duration-200 hover:bg-[#FFF1E7] dark:hover:bg-[#F26B1F]/10"
-          >
-            <div className="shrink-0 flex items-center justify-center w-[18px] h-[18px]">
-              <ChartNoAxesCombined size={18} strokeWidth={1.7} className="text-[#F26B1F]" />
-            </div>
-            <span className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 whitespace-nowrap overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
-              Enter Dashboard
-            </span>
-          </button>
 
           {/* Dark / Light mode toggle */}
           <button
@@ -718,11 +701,11 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
                     <div className="flex-1 h-1.5 rounded-full overflow-hidden bg-[#EDEBE8] dark:bg-zinc-700">
                       <div className="h-full rounded-full transition-all duration-500" style={{ width: `${Math.min(100, (questState.current / questState.quest.target) * 100)}%`, backgroundColor: COLORS.accent }} />
                     </div>
-                    <span className="text-[10px] font-bold tabular-nums text-[#A8A29E] dark:text-zinc-500">{questState.current}/{questState.quest.target}</span>
+                    <span className="text-[10px] font-bold tabular-nums text-[#A8A29E] dark:text-zinc-500">{questState.isCompleted ? 'Completed' : `${Math.min(questState.current, questState.quest.target)}/${questState.quest.target}`}</span>
                   </div>
                   {questState.isCompleted && !questState.isClaimed && onClaimQuestReward && (
                     <button onClick={onClaimQuestReward} className="mt-3 w-full py-2.5 rounded-lg text-xs font-bold text-white border-2 border-[#1A1A1A] bg-[#F26B1F] shadow-[3px_3px_0_0_#1A1A1A] active:translate-x-[3px] active:translate-y-[3px] active:shadow-none">
-                      Claim {questState.quest.rewardPoints} pts
+                      Claim {questState.quest.rewardPoints} JP
                     </button>
                   )}
                   {questState.isClaimed && (

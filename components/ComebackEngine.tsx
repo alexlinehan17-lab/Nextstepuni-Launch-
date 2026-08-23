@@ -29,6 +29,8 @@ import { useAuth } from '../contexts/AuthContext';
 import { MISSION_TECHNIQUES, spacingGapDays, type TechniqueType } from '../comebackMissionData';
 import FluencyTrap from './comeback/FluencyTrap';
 import { LoadingState } from './ui/SystemState';
+import { useProgress } from '../contexts/ProgressContext';
+import { DEMO_STUDENT_UID } from '../data/devStudent';
 
 // ── Types ──────────────────────────────────────────────────
 
@@ -451,6 +453,8 @@ function generateMissionsJC(
 // ── Main Component ─────────────────────────────────────────
 
 const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
+  const { rawProgressDoc, updateDemoProgress } = useProgress();
+  const isDemo = uid === DEMO_STUDENT_UID;
   // Curriculum flag (Phase 2 JC support). When isJunior, we render the
   // JC anchor list, swap CAO-points framing for descriptor-band framing,
   // and skip Future Finder integration in favour of Subject Explorer.
@@ -537,6 +541,21 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
   // Load from Firestore
   useEffect(() => {
     if (!uid) return;
+    if (isDemo) {
+      const data = rawProgressDoc;
+      if (data.comebackEngine) {
+        setComebackData(data.comebackEngine as ComebackData);
+        setPhase('progress');
+      }
+      const caoSimulator = data.caoSimulator as { whatIfScenarios?: typeof whatIfScenarios } | undefined;
+      if (caoSimulator?.whatIfScenarios?.length) setWhatIfScenarios(caoSimulator.whatIfScenarios);
+      if (data.northStar?.statement) setNorthStar({ category: data.northStar.category, statement: data.northStar.statement });
+      const computed = data.computedPoints as { current?: number } | undefined;
+      if (computed?.current) setComputedPoints(computed.current);
+      if (data.timetableCompletions) setTimetableCompletions(data.timetableCompletions);
+      setIsLoading(false);
+      return;
+    }
     let cancelled = false;
     const load = async () => {
       try {
@@ -570,13 +589,17 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
     };
     load();
     return () => { cancelled = true; };
-  }, [uid]);
+  }, [uid, isDemo, rawProgressDoc]);
 
   const saveData = useCallback((data: ComebackData) => {
     setComebackData(data);
+    if (isDemo) {
+      updateDemoProgress(current => ({ ...current, comebackEngine: data }));
+      return;
+    }
     setDoc(doc(db, 'progress', uid), { comebackEngine: data }, { merge: true })
       .catch(err => { console.error('Failed to save comeback data:', err); showToast('Couldn\'t save — check your connection', 'error'); });
-  }, [uid]);
+  }, [uid, isDemo, updateDemoProgress, showToast]);
 
   // ── Anchor Setup ───────────────────────────────────────
 
@@ -672,6 +695,10 @@ const ComebackEngine: React.FC<ComebackEngineProps> = ({ uid, profile }) => {
     setSelectedAnchor(null);
     setAnchorText('');
     setCustomPoints('');
+    if (isDemo) {
+      updateDemoProgress(current => ({ ...current, comebackEngine: null }));
+      return;
+    }
     setDoc(doc(db, 'progress', uid), { comebackEngine: null }, { merge: true })
       .catch(err => { console.error('Failed to reset comeback data:', err); showToast('Couldn\'t save — check your connection', 'error'); });
   };

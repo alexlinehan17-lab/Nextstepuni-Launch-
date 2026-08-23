@@ -55,6 +55,17 @@ export const RECOMMENDATION_NOTE_IDS = ["sr1", "sr2", "sr3", "sr4", "sr5"];
  */
 export const BROADCAST_IDS = ["sb1", "sb2", "sb3", "sb4", "sb5", "sb6"];
 
+/** Tool identifiers a recommendation may navigate to. */
+export const RECOMMENDABLE_TOOL_IDS = [
+  "journey", "cao-simulator", "flashcards", "planner", "war-room",
+  "comeback", "future-finder", "learning-dna", "first-gen-intel",
+] as const;
+
+export function isRecommendableToolId(value: unknown): value is typeof RECOMMENDABLE_TOOL_IDS[number] {
+  return typeof value === "string"
+    && (RECOMMENDABLE_TOOL_IDS as readonly string[]).includes(value);
+}
+
 /** Titles are generated here too — they used to be free text rendered raw. */
 const TITLES: Record<StaffMessageKind, string> = {
   encouragement: "Words of encouragement",

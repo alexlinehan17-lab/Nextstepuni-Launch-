@@ -20,7 +20,12 @@ import { describe, expect, it } from 'vitest';
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
-import { ADMIN_EMAIL, isAdminEmail, isReservedEmail } from '@/utils/adminIdentity';
+import {
+  ADMIN_EMAIL,
+  isAdminEmail,
+  isReservedEmail,
+  isVerifiedAdminSession,
+} from '@/utils/adminIdentity';
 
 const root = resolve(__dirname, '..');
 const read = (p: string) => readFileSync(resolve(root, p), 'utf8');
@@ -35,6 +40,14 @@ describe('admin identity', () => {
     expect(isAdminEmail(ADMIN_EMAIL)).toBe(true);
     expect(isAdminEmail('NextStepUniInfo@Gmail.com')).toBe(true);
     expect(isAdminEmail('  nextstepuniinfo@gmail.com  ')).toBe(true);
+  });
+
+  it('requires the exact verified mailbox and a server-issued admin claim', () => {
+    const verifiedUser = { email: ADMIN_EMAIL, emailVerified: true };
+    expect(isVerifiedAdminSession(verifiedUser, { admin: true })).toBe(true);
+    expect(isVerifiedAdminSession(verifiedUser, {})).toBe(false);
+    expect(isVerifiedAdminSession({ ...verifiedUser, emailVerified: false }, { admin: true })).toBe(false);
+    expect(isVerifiedAdminSession({ email: 'admin@nextstep.app', emailVerified: true }, { admin: true })).toBe(false);
   });
 
   it('grants nothing to the retired address or to look-alikes', () => {
@@ -61,6 +74,8 @@ describe('admin identity', () => {
     // worse, the database allows someone the UI does not show as admin.
     expect(read('functions/src/adminIdentity.ts')).toContain(ADMIN_EMAIL);
     expect(read('firestore.rules')).toContain(`request.auth.token.email == '${ADMIN_EMAIL}'`);
+    expect(read('firestore.rules')).toContain('request.auth.token.admin == true');
+    expect(read('firestore.rules')).toContain('request.auth.token.email_verified == true');
   });
 
   it('leaves no hardcoded admin check outside the shared helpers', () => {

@@ -331,14 +331,14 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
 
       {/* ── Mobile Top Bar ── */}
       <div className="md:hidden fixed top-0 left-0 right-0 h-14 z-40 bg-[var(--surface-paper)] border-b border-[var(--outline-soft)] flex items-center gap-3 px-3" style={{ paddingTop: 'var(--sat, 0px)' }}>
-        <button onClick={onBack} className="p-2 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800 shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]">
+        <button type="button" onClick={onBack} aria-label="Back to module library" className="p-2 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800 shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]">
           <ArrowLeft size={16} className="text-zinc-700 dark:text-zinc-300" />
         </button>
         <div className="flex-1 min-w-0">
           <p className={`text-[9px] font-semibold ${theme.sidebarModuleText} uppercase tracking-[0.15em] leading-none`} style={{ color: 'var(--accent-hex)' }}>Module {displayedModuleNumber}</p>
           <h1 className="text-sm font-semibold text-zinc-900 dark:text-white truncate">{moduleTitle}</h1>
         </div>
-        <button onClick={() => setMobileSectionsOpen(true)} className="p-2 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800 shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]">
+        <button onClick={() => setMobileSectionsOpen(true)} aria-label="Open module sections" aria-expanded={mobileSectionsOpen} className="p-2 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-800 shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]">
           <List size={16} className="text-zinc-700 dark:text-zinc-300" />
         </button>
       </div>

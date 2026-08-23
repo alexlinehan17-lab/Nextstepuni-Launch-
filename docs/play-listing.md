@@ -142,7 +142,7 @@ restricted** and provide:
 ```
 Name:        Demo student account
 Username:    appreview@nextstepuni.app
-Password:    NextStep-Demo-2026
+Password:    [retrieve the current value from the release password manager]
 Instructions: Sign in with the credentials above to reach the full app. This is a
 seeded demo student ("Aoife Brennan", 6th year, 5 subjects, 5 completed modules)
 with populated progress. NextStepUni is delivered through participating Irish
@@ -150,8 +150,11 @@ secondary schools; in normal use accounts are provisioned via the school with
 parental consent obtained at enrolment.
 ```
 
-If that account is ever deleted during review, re-seed it with
-`scripts/seed-demo.mjs`.
+Do not commit the password or a credential-seeding script. If the review
+account is deleted, recreate it through the same reviewed account flow as a
+real student, seed only synthetic data from a trusted administrator context,
+and store the rotated password only in the release password manager and the
+Play Console review instructions.
 
 ---
 

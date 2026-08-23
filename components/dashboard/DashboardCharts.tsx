@@ -49,6 +49,16 @@ function niceMax(value: number): number {
   return Math.ceil(value / magnitude) * magnitude;
 }
 
+function countWithUnit(value: number, pluralUnit: string): string {
+  const singularUnits: Record<string, string> = {
+    sessions: 'session',
+    minutes: 'minute',
+    uses: 'use',
+  };
+  const unit = value === 1 ? (singularUnits[pluralUnit] ?? pluralUnit) : pluralUnit;
+  return `${value} ${unit}`;
+}
+
 export const ActivityChart: React.FC<{
   buckets: ActivityBucket[];
   metric: ActivityMetric;
@@ -79,7 +89,7 @@ export const ActivityChart: React.FC<{
         aria-label={`Study activity bar chart showing ${unit}`}
       >
         <title>Study activity</title>
-        <desc>{hasData ? `${values.reduce((sum, value) => sum + value, 0)} ${unit} in this period.` : `No ${unit} recorded in this period.`}</desc>
+        <desc>{hasData ? `${countWithUnit(values.reduce((sum, value) => sum + value, 0), unit)} in this period.` : `No ${unit} recorded in this period.`}</desc>
         {gridTicks.map(tick => {
           const y = margin.top + plotHeight - (tick * plotHeight);
           const value = Math.round(maxValue * tick);
@@ -103,7 +113,7 @@ export const ActivityChart: React.FC<{
               key={bucket.key}
               role="button"
               tabIndex={0}
-              aria-label={`${bucket.accessibleLabel}: ${value} ${unit}`}
+              aria-label={`${bucket.accessibleLabel}: ${countWithUnit(value, unit)}`}
               onMouseEnter={() => setActiveIndex(index)}
               onMouseLeave={() => setActiveIndex(null)}
               onFocus={() => setActiveIndex(index)}
@@ -153,7 +163,7 @@ export const ActivityChart: React.FC<{
               <line x1={centre} y1={margin.top} x2={centre} y2={margin.top + plotHeight} stroke="var(--ink-primary)" strokeWidth="1" opacity="0.18" />
               <rect x={tooltipX} y={tooltipY} width={tooltipWidth} height="36" rx="7" fill="var(--dashboard-tooltip)" stroke="var(--outline-soft)" />
               <text x={tooltipX + 10} y={tooltipY + 14} fontSize="10" fill="var(--dashboard-tooltip-muted)">{bucket.accessibleLabel}</text>
-              <text x={tooltipX + 10} y={tooltipY + 28} fontSize="12" fontWeight="600" fill="var(--dashboard-tooltip-ink)">{value} {unit}</text>
+              <text x={tooltipX + 10} y={tooltipY + 28} fontSize="12" fontWeight="600" fill="var(--dashboard-tooltip-ink)">{countWithUnit(value, unit)}</text>
             </g>
           );
         })()}
@@ -307,7 +317,7 @@ export const RankedBarChart: React.FC<{
         <div key={item.id}>
           <div className="mb-1.5 flex items-end justify-between gap-4 text-xs">
             <span className="min-w-0 truncate font-semibold text-[var(--ink-secondary)]">{item.label}</span>
-            <span className="shrink-0 font-mono text-[11px] font-semibold tabular-nums text-[var(--ink-muted)]">{item.value} {unit}</span>
+            <span className="shrink-0 font-mono text-[11px] font-semibold tabular-nums text-[var(--ink-muted)]">{countWithUnit(item.value, unit)}</span>
           </div>
           <div className="h-2 overflow-hidden rounded-full bg-[var(--dashboard-track)]">
             <div
@@ -337,7 +347,7 @@ export const SessionMixChart: React.FC<{ values: RankedValue[] }> = ({ values })
             <div
               key={item.id}
               style={{ width: `${(item.value / total) * 100}%`, background: colors[index] }}
-              aria-label={`${item.label}: ${item.value} sessions`}
+              aria-label={`${item.label}: ${countWithUnit(item.value, 'sessions')}`}
             />
           )
         ))}
@@ -381,7 +391,7 @@ export const StudyRhythmChart: React.FC<{ weeks: RhythmDay[][] }> = ({ weeks }) 
                   key={day.key}
                   className="aspect-square min-h-[7px] rounded-[3px] border border-[var(--dashboard-cell-border)]"
                   style={{ background: cellColor(day), opacity: day.isFuture ? 0.35 : 1 }}
-                  title={`${day.date.toLocaleDateString('en-IE', { day: 'numeric', month: 'short' })}: ${day.sessions} sessions, ${day.minutes} minutes`}
+                  title={`${day.date.toLocaleDateString('en-IE', { day: 'numeric', month: 'short' })}: ${day.sessions} session${day.sessions === 1 ? '' : 's'}, ${day.minutes} minute${day.minutes === 1 ? '' : 's'}`}
                 />
               ))}
             </div>
@@ -434,10 +444,41 @@ export const MasteryBar: React.FC<{ summary: MasterySummary }> = ({ summary }) =
 
 const DAY_MS = 86_400_000;
 
+interface MockMonthTick {
+  key: string;
+  label: string;
+  firstTimestamp: number;
+  lastTimestamp: number;
+}
+
+function buildMockMonthTicks(timestamps: number[]): MockMonthTick[] {
+  const ticks = new Map<string, MockMonthTick>();
+
+  for (const timestamp of timestamps) {
+    const date = new Date(timestamp);
+    const key = `${date.getFullYear()}-${date.getMonth()}`;
+    const existing = ticks.get(key);
+
+    if (existing) {
+      existing.lastTimestamp = timestamp;
+      continue;
+    }
+
+    ticks.set(key, {
+      key,
+      label: date.toLocaleDateString('en-IE', { month: 'short', year: '2-digit' }),
+      firstTimestamp: timestamp,
+      lastTimestamp: timestamp,
+    });
+  }
+
+  return [...ticks.values()];
+}
+
 export const MockTrajectoryChart: React.FC<{ mocks: UnifiedMockResult[] }> = ({ mocks }) => {
   const { ref, width } = useChartWidth();
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
-  if (mocks.length === 0) return <ChartEmpty title="No mock results yet" detail="Add a mock in Points Passport and the points trajectory will appear here automatically." />;
+  if (mocks.length === 0) return <ChartEmpty title="No full mock results yet" detail="Add a full mock in Points Passport and the total-points trajectory will appear here automatically." />;
 
   const height = 238;
   const margin = { top: 20, right: 14, bottom: 38, left: width < 420 ? 40 : 48 };
@@ -452,6 +493,10 @@ export const MockTrajectoryChart: React.FC<{ mocks: UnifiedMockResult[] }> = ({ 
     : margin.left + (((timestamp - minTime) / (maxTime - minTime)) * plotWidth);
   const yFor = (points: number) => margin.top + plotHeight - ((points / yMax) * plotHeight);
   const path = mocks.map((mock, index) => `${index === 0 ? 'M' : 'L'} ${xFor(timestamps[index])} ${yFor(mock.totalPoints)}`).join(' ');
+  const monthTicks = buildMockMonthTicks(timestamps);
+  const visibleMonthTicks = width >= 480 || monthTicks.length <= 2
+    ? monthTicks
+    : monthTicks.filter((_, index) => index === 0 || index === monthTicks.length - 1);
 
   return (
     <div ref={ref} className="w-full">
@@ -485,12 +530,22 @@ export const MockTrajectoryChart: React.FC<{ mocks: UnifiedMockResult[] }> = ({ 
             >
               <circle cx={x} cy={y} r="16" fill="transparent" />
               <circle cx={x} cy={y} r={active ? 5.5 : 4} fill="var(--surface-paper)" stroke="var(--accent-hex)" strokeWidth={active ? 3 : 2.5} />
-              {(width >= 480 || index === 0 || index === mocks.length - 1) && (
-                <text x={x} y={height - 12} textAnchor={mocks.length === 1 ? 'middle' : index === 0 ? 'start' : index === mocks.length - 1 ? 'end' : 'middle'} fontSize="11" fill="var(--ink-muted)">
-                  {new Date(timestamps[index]).toLocaleDateString('en-IE', { month: 'short', year: '2-digit' })}
-                </text>
-              )}
             </g>
+          );
+        })}
+        {visibleMonthTicks.map((tick, index) => {
+          const x = xFor((tick.firstTimestamp + tick.lastTimestamp) / 2);
+          const textAnchor = monthTicks.length === 1
+            ? 'middle'
+            : index === 0
+              ? 'start'
+              : index === visibleMonthTicks.length - 1
+                ? 'end'
+                : 'middle';
+          return (
+            <text key={tick.key} x={x} y={height - 12} textAnchor={textAnchor} fontSize="11" fill="var(--ink-muted)">
+              {tick.label}
+            </text>
           );
         })}
         {activeIndex !== null && (() => {

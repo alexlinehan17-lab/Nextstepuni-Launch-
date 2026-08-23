@@ -79,8 +79,8 @@ describe('generated password', () => {
   });
 
   it('is long enough for an account that opens a whole school', () => {
-    // Longer than the 8-character student temp password: there is no
-    // forced-change-on-first-use behind a GC login.
+    // A shared school credential needs substantial entropy even though a GC
+    // rotation does not use the student's forced-change-on-first-use flow.
     expect(PASSWORD_LENGTH).toBeGreaterThanOrEqual(12);
   });
 });
@@ -116,7 +116,7 @@ describe('an administrator-typed password', () => {
     expect(checkSuppliedPassword('correct horse battery')).toEqual({
       ok: true, password: 'correct horse battery',
     });
-    expect(checkSuppliedPassword(' padded123 ')).toEqual({ ok: true, password: ' padded123 ' });
+    expect(checkSuppliedPassword(' padded1234 ')).toEqual({ ok: true, password: ' padded1234 ' });
   });
 
   it('rejects one that is too short for an account that opens a school', () => {
@@ -133,7 +133,7 @@ describe('an administrator-typed password', () => {
   });
 
   it('is comfortably above Firebase\'s own 6-character floor', () => {
-    expect(MIN_SUPPLIED_PASSWORD_LENGTH).toBeGreaterThanOrEqual(10);
+    expect(MIN_SUPPLIED_PASSWORD_LENGTH).toBeGreaterThanOrEqual(12);
   });
 
   it('agrees with the copy of the rule in the admin panel', () => {

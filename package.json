@@ -32,11 +32,22 @@
     "jspdf": "^4.2.1",
     "jspdf-autotable": "^5.0.7",
     "lucide-react": "^0.553.0",
-    "pdfjs-dist": "^6.0.227",
+    "pdfjs-dist": "^6.2.108",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "three": "^0.181.1",
     "ts-fsrs": "^5.4.1"
+  },
+  "overrides": {
+    "firebase-tools": {
+      "@google-cloud/pubsub": "6.0.1"
+    },
+    "gaxios@6.7.1": {
+      "uuid": "11.1.1"
+    },
+    "dompurify": "3.4.14",
+    "protobufjs": "7.6.5",
+    "websocket-driver": "0.7.5"
   },
   "devDependencies": {
     "@capacitor/cli": "^8.3.4",
@@ -49,9 +60,9 @@
     "@vitejs/plugin-react": "^5.0.0",
     "autoprefixer": "^10.4.27",
     "eslint": "^10.1.0",
-    "firebase-tools": "^14.22.0",
+    "firebase-tools": "^15.28.1",
     "jsdom": "^29.1.1",
-    "postcss": "^8.5.8",
+    "postcss": "^8.5.26",
     "tailwindcss": "^3.4.19",
     "typescript": "~5.8.2",
     "typescript-eslint": "^8.57.2",

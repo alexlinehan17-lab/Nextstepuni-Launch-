@@ -106,7 +106,7 @@ const StrategyPickerStep: React.FC<StrategyPickerStepProps> = ({
         <ResultStatGrid className="mb-7" items={[
           { label: 'Duration', value: `${durationMin}m` },
           { label: 'Tracked', value: autoTrackedIds.length },
-          { label: 'Journey points', value: `+${pointsEarned}`, tone: 'accent' },
+          { label: 'JP earned', value: `+${pointsEarned}`, tone: 'accent' },
         ]} />
 
         {/* ── Strategy chips by category ── */}
@@ -158,7 +158,7 @@ const StrategyPickerStep: React.FC<StrategyPickerStepProps> = ({
               transition={{ duration: 0.3 }}
               className="text-center mt-3"
             >
-              <p className="text-xs font-medium" style={{ color: '#F26B1F' }}>+5 bonus journey points for reflecting</p>
+              <p className="text-xs font-medium" style={{ color: '#F26B1F' }}>+5 bonus JP for reflecting</p>
             </MotionDiv>
           )}
         </AnimatePresence>

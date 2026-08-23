@@ -6,7 +6,8 @@
 import { getFirestore, FieldValue } from "firebase-admin/firestore";
 import { HttpsError, onCall } from "firebase-functions/v2/https";
 import { logger } from "firebase-functions/v2";
-import { checkStaffMessage } from "./staffMessagePolicy";
+import { checkStaffMessage, isRecommendableToolId } from "./staffMessagePolicy";
+import { CALLABLE_OPTIONS, assertUnrevokedAuth } from "./security";
 
 /** Cap kept in step with MAX_ITEMS in components/gc/gcNotifications.ts. */
 const MAX_ITEMS = 200;
@@ -28,10 +29,11 @@ const MAX_RECIPIENTS = 400;
  * Authorisation mirrors the rule it replaces: the caller must be gc/staff, and
  * every recipient must be a student at the caller's own school.
  */
-export const sendStaffNotification = onCall({ cors: true }, async (request) => {
+export const sendStaffNotification = onCall(CALLABLE_OPTIONS, async (request) => {
   if (!request.auth) {
     throw new HttpsError("unauthenticated", "Must be logged in.");
   }
+  await assertUnrevokedAuth(request.auth);
 
   const { studentUids, kind, messageId, toolId } = request.data as {
     studentUids?: unknown; kind?: unknown; messageId?: unknown; toolId?: unknown;
@@ -48,9 +50,10 @@ export const sendStaffNotification = onCall({ cors: true }, async (request) => {
   if (!studentUids.every(uid => typeof uid === "string" && uid.length > 0 && uid.length <= 128)) {
     throw new HttpsError("invalid-argument", "Invalid recipient.");
   }
-  // A tool id only ever names a tool the client will look up in its own
-  // registry; it is never rendered as prose. Bounded so it cannot smuggle text.
-  if (toolId !== undefined && (typeof toolId !== "string" || toolId.length > 60)) {
+  if (check.kind === "recommendation" && !isRecommendableToolId(toolId)) {
+    throw new HttpsError("invalid-argument", "Choose one of the available tools.");
+  }
+  if (check.kind !== "recommendation" && toolId !== undefined) {
     throw new HttpsError("invalid-argument", "Invalid tool.");
   }
 
@@ -66,16 +69,34 @@ export const sendStaffNotification = onCall({ cors: true }, async (request) => {
     throw new HttpsError("failed-precondition", "Your account is not linked to a school.");
   }
 
-  const senderName = typeof caller?.name === "string" && caller.name.trim() !== ""
-    ? caller.name.trim().slice(0, 50)
-    : "Your school";
+  // Never turn a self-editable profile name into adult-to-minor message text.
+  const senderName = "Your school team";
+
+  const hourBucket = new Date().toISOString().slice(0, 13);
+  const rateRef = db.collection("staffMessageRateLimits").doc(`${request.auth.uid}-${hourBucket}`);
+  await db.runTransaction(async transaction => {
+    const snap = await transaction.get(rateRef);
+    const sent = Number(snap.data()?.recipients || 0);
+    if (sent + studentUids.length > 800) {
+      throw new HttpsError("resource-exhausted", "Hourly message limit reached. Try again later.");
+    }
+    transaction.set(rateRef, {
+      uid: request.auth!.uid,
+      recipients: sent + studentUids.length,
+      hour: hourBucket,
+      updatedAt: FieldValue.serverTimestamp(),
+      expiresAt: new Date(Date.now() + 48 * 60 * 60 * 1000),
+    });
+  });
 
   let delivered = 0;
-  for (const studentUid of studentUids as string[]) {
+  for (const studentUid of [...new Set(studentUids as string[])]) {
     // Same-school check per recipient — the caller supplies the uid list, so it
     // is never trusted. A staff member cannot reach a student at another school.
     const studentSnap = await db.collection("users").doc(studentUid).get();
-    if (!studentSnap.exists || studentSnap.data()?.school !== callerSchool) {
+    const student = studentSnap.data();
+    if (!studentSnap.exists || student?.school !== callerSchool
+      || student?.role === "gc" || student?.role === "staff" || student?.role === "admin") {
       logger.warn(`sendStaffNotification: ${request.auth.uid} tried to message ${studentUid} outside ${callerSchool}`);
       continue;
     }
@@ -90,12 +111,11 @@ export const sendStaffNotification = onCall({ cors: true }, async (request) => {
       body: "",
       messageId: check.messageId,
       fromGCName: senderName,
-      fromGCUid: request.auth.uid,
       severity: check.kind === "encouragement" ? "success" : "info",
       timestamp: Date.now(),
       read: false,
     };
-    if (typeof toolId === "string" && toolId !== "") item.actionToolId = toolId;
+    if (check.kind === "recommendation" && typeof toolId === "string") item.actionToolId = toolId;
 
     const ref = db.collection("notifications").doc(studentUid);
     await db.runTransaction(async txn => {

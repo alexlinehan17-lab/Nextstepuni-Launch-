@@ -22,6 +22,8 @@ import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { reportSaveError, logError } from '../utils/logError';
 import { type CollegeCompassState } from '../types';
+import { useProgress } from '../contexts/ProgressContext';
+import { DEMO_STUDENT_UID } from '../data/devStudent';
 
 const EMPTY: CollegeCompassState = { checklist: {}, updatedAt: '' };
 const DEBOUNCE_MS = 1500;
@@ -46,6 +48,8 @@ function normaliseChecklist(raw: Record<string, unknown> | undefined): Record<st
 }
 
 export function useCollegeCompass(uid: string | undefined) {
+  const { rawProgressDoc, updateDemoProgress } = useProgress();
+  const isDemo = uid === DEMO_STUDENT_UID;
   const [state, setState] = useState<CollegeCompassState>(EMPTY);
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -57,6 +61,12 @@ export function useCollegeCompass(uid: string | undefined) {
     let cancelled = false;
     setIsLoaded(false);
     if (!uid) { setState(EMPTY); setIsLoaded(true); return; }
+    if (isDemo) {
+      const saved = rawProgressDoc.collegeCompass as (Omit<CollegeCompassState, 'checklist'> & { checklist?: Record<string, unknown> }) | undefined;
+      setState(saved ? { ...EMPTY, ...saved, checklist: normaliseChecklist(saved.checklist) } : EMPTY);
+      setIsLoaded(true);
+      return;
+    }
     getDoc(doc(db, 'progress', uid))
       .then((snap) => {
         if (cancelled) return;
@@ -66,7 +76,7 @@ export function useCollegeCompass(uid: string | undefined) {
       })
       .catch((e) => { logError('useCollegeCompass.load', e); if (!cancelled) { setState(EMPTY); setIsLoaded(true); } });
     return () => { cancelled = true; };
-  }, [uid]);
+  }, [uid, isDemo, rawProgressDoc.collegeCompass]);
 
   // Flush any pending debounced write on unmount (navigating back out).
   useEffect(() => () => {
@@ -80,7 +90,8 @@ export function useCollegeCompass(uid: string | undefined) {
     const write = () => {
       pendingWrite.current = null;
       writeTimer.current = null;
-      setDoc(doc(db, 'progress', uid), { collegeCompass: payload }, { merge: true }).catch((e) => reportSaveError('useCollegeCompass.save', e));
+      if (isDemo) updateDemoProgress(current => ({ ...current, collegeCompass: payload }));
+      else setDoc(doc(db, 'progress', uid), { collegeCompass: payload }, { merge: true }).catch((e) => reportSaveError('useCollegeCompass.save', e));
     };
     if (writeTimer.current) clearTimeout(writeTimer.current);
     if (debounce) {
@@ -90,7 +101,7 @@ export function useCollegeCompass(uid: string | undefined) {
       pendingWrite.current = null;
       write();
     }
-  }, [uid]);
+  }, [uid, isDemo, updateDemoProgress]);
 
   /** Cycle a checklist item: not-started -> in-progress -> done -> not-started.
    *  `key` should be namespaced "<stopId>:<itemId>". */

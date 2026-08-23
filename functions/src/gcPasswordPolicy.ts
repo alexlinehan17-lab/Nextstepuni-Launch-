@@ -66,14 +66,15 @@ export function gcAddressToReset(email: unknown): string | null {
 
 /**
  * Alphabet with no O/0/I/1/L — these passwords get read down a phone to a
- * counsellor, so ambiguous glyphs cost a support call. Mirrors the staff-code
- * generator in components/gc/StaffAccessPanel.tsx.
+ * counsellor, so ambiguous glyphs cost a support call. The staff/student
+ * invitation generator follows the same unambiguous-alphabet principle in
+ * accessCodes.ts.
  */
 export const PASSWORD_ALPHABET = "ABCDEFGHJKMNPQRSTUVWXYZabcdefghjkmnpqrstuvwxyz23456789";
 
 /**
- * 14 characters — longer than the 8 used for a student's temporary password,
- * because a GC login opens every student record in a school and there is no
+ * 14 characters — longer than the 12-character application minimum because a
+ * GC login opens every student record in a school and there is no
  * forced-change-on-first-use step behind it.
  */
 export const PASSWORD_LENGTH = 14;
@@ -81,14 +82,14 @@ export const PASSWORD_LENGTH = 14;
 /**
  * Minimum length for a password the administrator types themselves.
  *
- * Shorter than the 14 we generate, because a human-chosen password gets read
- * down a phone and retyped, but well above Firebase's own 6-character floor: a
+ * Slightly shorter than the 14 we generate, because a human-chosen password
+ * gets read down a phone and retyped, but well above Firebase's legacy floor: a
  * counsellor login opens every student record in a school, and there is no
  * forced-change-on-first-use behind it. Long beats clever here, so length is
  * the only rule — no character-class theatre that pushes people towards
  * Passw0rd! and a sticky note.
  */
-export const MIN_SUPPLIED_PASSWORD_LENGTH = 10;
+export const MIN_SUPPLIED_PASSWORD_LENGTH = 12;
 export const MAX_SUPPLIED_PASSWORD_LENGTH = 128;
 
 /** Validity of an administrator-supplied password. Reason is for the UI. */

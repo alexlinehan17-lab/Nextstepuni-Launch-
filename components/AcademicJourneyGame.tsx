@@ -10,6 +10,7 @@ import { ArrowRight, RotateCcw } from 'lucide-react';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { saveInBackground } from '../utils/firestoreWrite';
+import { DEMO_STUDENT_UID } from '../data/devStudent';
 import {
     type GameState, type Choice, type HistoryItem, type StatKey, type CapabilityKey, type JourneyEvidence, type Phase,
     type Location,
@@ -716,7 +717,7 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
     const isEndScene = currentSceneId.startsWith('END_');
 
     useEffect(() => {
-        if (!user?.uid) return;
+        if (!user?.uid || user.uid === DEMO_STUDENT_UID) return;
         let cancelled = false;
         const loadPrevious = async () => {
             try {
@@ -754,7 +755,7 @@ const AcademicJourneyGame: React.FC<{ onSelectModule?: (moduleId: string) => voi
         };
         setPreviousResult(result);
         onJourneyComplete?.(result);
-        if (user?.uid) {
+        if (user?.uid && user.uid !== DEMO_STUDENT_UID) {
             const progressDocRef = doc(db, 'progress', user.uid);
             saveInBackground(
                 setDoc(progressDocRef, {

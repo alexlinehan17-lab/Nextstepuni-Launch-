@@ -8,7 +8,7 @@ import { MotionDiv } from './Motion';
 import { type CourseData } from './Library';
 import { type SessionUser, getAvatarUrl, yearGroupToCurriculumLevel } from '../utils/authUtils';
 import { LogOut, LayoutDashboard, Users, BarChart3, PanelLeft, StickyNote, AlertTriangle, CalendarDays, ListChecks, KeyRound, RefreshCw } from 'lucide-react';
-import app, { db } from '../firebase';
+import app, { auth, db } from '../firebase';
 import { collection, query, where, limit, getDocs, doc, getDoc, setDoc } from 'firebase/firestore';
 import { getFunctions, httpsCallable } from 'firebase/functions';
 import { getSchoolName } from '../schoolData';
@@ -34,6 +34,7 @@ import GCAssignPanel from './gc/GCAssignPanel';
 import { generateAlerts, type DismissedAlert, type EarlyWarningAlert } from './gc/gcAlerts';
 import { useGCFlags } from '../hooks/useGCFlags';
 import { logError } from '../utils/logError';
+import { reauthenticateCurrentUser } from '../utils/reauthenticate';
 
 interface GCDashboardProps {
   school: string;
@@ -41,6 +42,7 @@ interface GCDashboardProps {
   allCourses: CourseData[];
   gcName?: string;
   gcUid?: string;
+  role?: SessionUser['role'];
 }
 
 // ─── Shimmer skeleton ────────────────────────────────────────────────────────
@@ -239,7 +241,7 @@ export function mapProgressDocToStudent(
 
 // ─── Component ──────────────────────────────────────────────────────────────
 
-export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allCourses, gcName, gcUid }) => {
+export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allCourses, gcName, gcUid, role }) => {
   const [studentData, setStudentData] = useState<GCStudentFullData[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [selectedStudentUid, setSelectedStudentUid] = useState<string | null>(null);
@@ -262,6 +264,11 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
 
   const [deleteTarget, setDeleteTarget] = useState<SessionUser | null>(null);
   const [isDeleting, setIsDeleting] = useState(false);
+  const [deleteVerificationPassword, setDeleteVerificationPassword] = useState('');
+  const closeDeleteDialog = () => {
+    setDeleteVerificationPassword('');
+    setDeleteTarget(null);
+  };
   const [dismissedAlerts, setDismissedAlerts] = useState<Record<string, DismissedAlert>>({});
 
   // Full cascade delete via the requestAccountDeletion Cloud Function (Admin
@@ -270,6 +277,8 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
   const handleDeleteStudent = async (user: SessionUser) => {
     setIsDeleting(true);
     try {
+      if (!auth.currentUser) throw new Error('No signed-in user');
+      await reauthenticateCurrentUser(auth.currentUser, deleteVerificationPassword);
       const functions = getFunctions(app);
       const deleteFn = httpsCallable<{ uid: string }, { success: boolean }>(functions, 'requestAccountDeletion');
       await deleteFn({ uid: user.uid });
@@ -280,13 +289,24 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
       alert('Failed to delete student. You may not have permission.');
     }
     setIsDeleting(false);
-    setDeleteTarget(null);
+    setDeleteVerificationPassword('');
+    closeDeleteDialog();
   };
 
   // ── Password reset handler ──
   const [resetResult, setResetResult] = useState<{ name: string; password: string } | null>(null);
+  const [resetTargetUid, setResetTargetUid] = useState<string | null>(null);
+  const [resetVerificationPassword, setResetVerificationPassword] = useState('');
+  const [isResettingPassword, setIsResettingPassword] = useState(false);
+  const closeResetDialog = () => {
+    setResetVerificationPassword('');
+    setResetTargetUid(null);
+  };
   const handleResetPassword = async (studentUid: string) => {
+    setIsResettingPassword(true);
     try {
+      if (!auth.currentUser) throw new Error('No signed-in user');
+      await reauthenticateCurrentUser(auth.currentUser, resetVerificationPassword);
       const functions = getFunctions(app);
       const resetFn = httpsCallable<{ studentUid: string }, { tempPassword: string; studentName: string }>(functions, 'resetStudentPassword');
       const result = await resetFn({ studentUid });
@@ -295,6 +315,9 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
       console.error('Failed to reset password:', err);
       alert('Failed to reset password. Please try again.');
     }
+    setIsResettingPassword(false);
+    setResetVerificationPassword('');
+    closeResetDialog();
   };
 
   // ── Alert dismiss handler ──
@@ -329,7 +352,9 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
     { id: 'gc-analytics', label: 'Analytics', icon: BarChart3, active: activeNav === 'gc-analytics' },
     { id: 'gc-students', label: 'Students', icon: Users, active: activeNav === 'gc-students' },
     { id: 'gc-notes', label: 'Notes', icon: StickyNote, active: activeNav === 'gc-notes' },
-    { id: 'gc-staff-access', label: 'Staff access', icon: KeyRound, active: activeNav === 'gc-staff-access' },
+    ...(role === 'gc'
+      ? [{ id: 'gc-staff-access', label: 'School access', icon: KeyRound, active: activeNav === 'gc-staff-access' }]
+      : []),
   ];
 
   // Body scroll lock when tray is open
@@ -569,8 +594,8 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
             allCourses={allCourses}
             school={school}
             onSelectStudent={(uid) => setSelectedStudentUid(prev => prev === uid ? null : uid)}
-            onDeleteStudent={setDeleteTarget}
-            onResetPassword={handleResetPassword}
+            onDeleteStudent={role === 'gc' ? setDeleteTarget : undefined}
+            onResetPassword={role === 'gc' ? setResetTargetUid : undefined}
             alerts={alerts}
             onDismissAlert={handleDismissAlert}
             gcFlags={gcFlags}
@@ -623,7 +648,7 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
 
       {/* Delete confirmation modal */}
       {deleteTarget && (
-        <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4" onClick={() => !isDeleting && setDeleteTarget(null)}>
+        <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4" onClick={() => !isDeleting && closeDeleteDialog()}>
           <div className="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 max-w-sm w-full shadow-2xl" onClick={e => e.stopPropagation()}>
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 rounded-xl bg-red-100 dark:bg-red-500/10 flex items-center justify-center text-red-500">
@@ -637,9 +662,20 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
             <p className="text-xs text-zinc-400 dark:text-zinc-500 mb-6">
               This will permanently remove all their progress and profile. This action cannot be undone.
             </p>
+            <label className="block text-xs font-medium text-zinc-500 dark:text-zinc-400 mb-2" htmlFor="delete-verification-password">
+              Re-enter your password to continue
+            </label>
+            <input
+              id="delete-verification-password"
+              type="password"
+              value={deleteVerificationPassword}
+              onChange={event => setDeleteVerificationPassword(event.target.value)}
+              autoComplete="current-password"
+              className="w-full rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 px-4 py-3 text-sm text-zinc-900 dark:text-white mb-5 outline-none focus:border-red-400"
+            />
             <div className="flex gap-3">
               <button
-                onClick={() => setDeleteTarget(null)}
+                onClick={closeDeleteDialog}
                 disabled={isDeleting}
                 className="flex-1 px-4 py-2.5 text-sm font-medium rounded-xl border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors disabled:opacity-50"
               >
@@ -647,10 +683,36 @@ export const GCDashboard: React.FC<GCDashboardProps> = ({ school, onLogout, allC
               </button>
               <button
                 onClick={() => handleDeleteStudent(deleteTarget)}
-                disabled={isDeleting}
+                disabled={isDeleting || !deleteVerificationPassword}
                 className="flex-1 px-4 py-2.5 text-sm font-medium rounded-xl bg-red-500 text-white hover:bg-red-600 transition-colors disabled:opacity-50"
               >
                 {isDeleting ? 'Deleting...' : 'Delete'}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Password reset verification modal */}
+      {resetTargetUid && (
+        <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black/50 backdrop-blur-sm p-4" onClick={() => !isResettingPassword && closeResetDialog()}>
+          <div role="dialog" aria-modal="true" aria-labelledby="reset-student-title" className="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 p-6 max-w-sm w-full shadow-2xl" onClick={event => event.stopPropagation()}>
+            <h3 id="reset-student-title" className="font-semibold text-zinc-900 dark:text-white">Reset student password?</h3>
+            <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-2 mb-4">This ends the student's other sessions and creates a temporary password that expires after 24 hours.</p>
+            <label className="block text-xs font-medium text-zinc-500 dark:text-zinc-400 mb-2" htmlFor="reset-verification-password">Re-enter your password</label>
+            <input
+              id="reset-verification-password"
+              type="password"
+              value={resetVerificationPassword}
+              onChange={event => setResetVerificationPassword(event.target.value)}
+              autoFocus
+              autoComplete="current-password"
+              className="w-full rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 px-4 py-3 text-sm text-zinc-900 dark:text-white outline-none focus:border-orange-500"
+            />
+            <div className="flex gap-3 mt-5">
+              <button type="button" disabled={isResettingPassword} onClick={closeResetDialog} className="flex-1 px-4 py-2.5 text-sm rounded-xl border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300">Cancel</button>
+              <button type="button" disabled={isResettingPassword || !resetVerificationPassword} onClick={() => void handleResetPassword(resetTargetUid)} className="flex-1 px-4 py-2.5 text-sm font-semibold rounded-xl bg-orange-600 text-white disabled:opacity-50">
+                {isResettingPassword ? 'Resetting…' : 'Reset password'}
               </button>
             </div>
           </div>

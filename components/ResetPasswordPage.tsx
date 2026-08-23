@@ -13,17 +13,21 @@
  *   1. Parse oobCode from URL
  *   2. Verify code via verifyPasswordResetCode → returns email
  *   3. Show new-password form
- *   4. confirmPasswordReset → success
- *   5. CTA back to sign-in
+ *   4. confirmPasswordReset, briefly authenticate with the new credential,
+ *      and advance the server-side Firestore session cutoff
+ *   5. Sign out and return to sign-in
  */
 
 import React, { useEffect, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionButton, MotionDiv } from './Motion';
 import { Eye, EyeOff, Check, AlertTriangle } from 'lucide-react';
-import { auth } from '../firebase';
-import { verifyPasswordResetCode, confirmPasswordReset } from 'firebase/auth';
+import app, { auth } from '../firebase';
+import { verifyPasswordResetCode, confirmPasswordReset, signInWithEmailAndPassword, signOut } from 'firebase/auth';
+import { getFunctions, httpsCallable } from 'firebase/functions';
 import { COLORS } from '../design/tokens';
+import { MAX_PASSWORD_LENGTH, MIN_PASSWORD_LENGTH, passwordLengthError } from '../utils/passwordPolicy';
+import { clearLocalSessionData } from '../utils/sessionPrivacy';
 
 const SPRING_FAST = { type: 'spring' as const, stiffness: 500, damping: 28 };
 const SPRING_GENTLE = { type: 'spring' as const, stiffness: 340, damping: 30 };
@@ -50,6 +54,7 @@ const ResetPasswordPage: React.FC = () => {
   const [newPassword, setNewPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState('');
+  const [securityNotice, setSecurityNotice] = useState('');
 
   useEffect(() => {
     if (!oobCode) {
@@ -77,18 +82,46 @@ const ResetPasswordPage: React.FC = () => {
   }, [oobCode]);
 
   const handleSubmit = async () => {
-    if (newPassword.length < 6) {
-      setError('Password must be at least 6 characters.');
+    const validationError = passwordLengthError(newPassword);
+    if (validationError) {
+      setError(validationError);
       return;
     }
     if (!oobCode) return;
     setStage('submitting');
     setError('');
+    setSecurityNotice('');
+    let passwordWasUpdated = false;
     try {
       await confirmPasswordReset(auth, oobCode, newPassword);
+      passwordWasUpdated = true;
+      // Obtain a new-session token without ever sending the password to our
+      // backend. The callable records a Firestore auth_time cutoff so stolen
+      // pre-reset ID tokens stop working immediately, then revokes refresh
+      // tokens; this page signs the temporary session back out.
+      await signInWithEmailAndPassword(auth, email, newPassword);
+      const finalize = httpsCallable<unknown, { success: boolean }>(
+        getFunctions(app),
+        'finalizeSelfServicePasswordReset',
+      );
+      try {
+        await finalize({});
+      } finally {
+        await signOut(auth).catch(() => {});
+        await clearLocalSessionData();
+      }
+      setNewPassword('');
       setStage('done');
     } catch (err: any) {
       console.error('Password reset failed:', err);
+      if (passwordWasUpdated) {
+        await signOut(auth).catch(() => {});
+        await clearLocalSessionData();
+        setNewPassword('');
+        setSecurityNotice('Your password changed, but we could not confirm that every older session was closed. Contact support before using a shared device.');
+        setStage('done');
+        return;
+      }
       setStage('ready');
       if (err.code === 'auth/weak-password') {
         setError('Password is too weak. Try a longer one.');
@@ -105,7 +138,9 @@ const ResetPasswordPage: React.FC = () => {
   const primaryBtn = "w-full py-3.5 rounded-xl text-[15px] font-semibold transition-all border-2 disabled:opacity-50 disabled:cursor-not-allowed";
   const primaryBtnStyle = { backgroundColor: '#FFFFFF', color: '#1A1A1A', borderColor: 'rgba(26,26,26,0.55)' };
 
-  const goToSignIn = () => { window.location.href = '/'; };
+  // Replace rather than append so a used reset token is not left in the
+  // browser's Back history on a shared device.
+  const goToSignIn = () => { window.location.replace('/'); };
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-4 md:p-8 theme-compat" style={{ backgroundColor: 'var(--surface-canvas)' }}>
@@ -166,18 +201,20 @@ const ResetPasswordPage: React.FC = () => {
                     type={showPassword ? 'text' : 'password'}
                     value={newPassword}
                     onChange={e => { setNewPassword(e.target.value); setError(''); }}
-                    placeholder="At least 6 characters"
+                    placeholder={`At least ${MIN_PASSWORD_LENGTH} characters`}
+                    minLength={MIN_PASSWORD_LENGTH}
+                    maxLength={MAX_PASSWORD_LENGTH}
                     className={inputClass}
                     autoFocus
                   />
-                  <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-3 top-1/2 -translate-y-1/2 transition-colors" style={{ color: '#9e9186' }}>
+                  <button type="button" onClick={() => setShowPassword(!showPassword)} aria-label={showPassword ? 'Hide password' : 'Show password'} aria-pressed={showPassword} className="absolute right-3 top-1/2 -translate-y-1/2 transition-colors" style={{ color: '#9e9186' }}>
                     {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
                   </button>
                 </div>
-                {newPassword.length > 0 && newPassword.length < 6 && (
-                  <p className="text-xs mt-1.5" style={{ color: '#9e9186' }}>{6 - newPassword.length} more character{6 - newPassword.length !== 1 ? 's' : ''} needed</p>
+                {newPassword.length > 0 && newPassword.length < MIN_PASSWORD_LENGTH && (
+                  <p className="text-xs mt-1.5" style={{ color: '#9e9186' }}>{MIN_PASSWORD_LENGTH - newPassword.length} more character{MIN_PASSWORD_LENGTH - newPassword.length !== 1 ? 's' : ''} needed</p>
                 )}
-                {newPassword.length >= 6 && (
+                {newPassword.length >= MIN_PASSWORD_LENGTH && newPassword.length <= MAX_PASSWORD_LENGTH && (
                   <p className="text-xs mt-1.5 flex items-center gap-1" style={{ color: COLORS.success }}><Check size={12} /> Looks good</p>
                 )}
               </div>
@@ -186,7 +223,7 @@ const ResetPasswordPage: React.FC = () => {
               </AnimatePresence>
               <MotionButton
                 type="submit"
-                disabled={stage === 'submitting' || newPassword.length < 6}
+                disabled={stage === 'submitting' || passwordLengthError(newPassword) !== null}
                 whileHover={btnHover}
                 whileTap={btnTap}
                 transition={SPRING_FAST}
@@ -218,6 +255,7 @@ const ResetPasswordPage: React.FC = () => {
             <MotionDiv initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={SPRING_GENTLE}>
               <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Password updated</h2>
               <p className="text-sm mb-6" style={{ color: '#7a7068' }}>You can now sign in with your new password.</p>
+              {securityNotice && <p role="alert" className="text-sm mb-6 text-red-600">{securityNotice}</p>}
             </MotionDiv>
             <MotionDiv initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={SPRING_GENTLE}>
               <MotionButton

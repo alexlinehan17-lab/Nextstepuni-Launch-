@@ -16,6 +16,8 @@ import { db } from '../firebase';
 import { useFreshProgress } from './useFreshProgress';
 import { type RepSelection } from '../types/examReps';
 import { reportSaveError } from '../utils/logError';
+import { useProgress } from '../contexts/ProgressContext';
+import { DEMO_STUDENT_UID } from '../data/devStudent';
 
 export interface ExamRepsState {
   /** All-time marks captured across every rep (the competence tally). */
@@ -39,6 +41,8 @@ export interface RepResult {
 
 export function useExamReps(uid: string | undefined) {
   const { doc: rawProgressDoc, loaded: progressLoaded } = useFreshProgress(uid);
+  const { updateDemoProgress } = useProgress();
+  const isDemo = uid === DEMO_STUDENT_UID;
   const [state, setState] = useState<ExamRepsState>(EMPTY);
   const [isLoaded, setIsLoaded] = useState(false);
   const seededRef = useRef(false);
@@ -78,21 +82,24 @@ export function useExamReps(uid: string | undefined) {
         leakCardIds: leaks,
         updatedAt: new Date().toISOString(),
       };
-      if (uid) {
+      if (isDemo) {
+        updateDemoProgress(current => ({ ...current, examReps: next }));
+      } else if (uid) {
         setDoc(doc(db, 'progress', uid), { examReps: next }, { merge: true }).catch((e) => reportSaveError('useExamReps.save', e));
       }
       return next;
     });
-  }, [uid]);
+  }, [uid, isDemo, updateDemoProgress]);
 
   /** Persist the student's Subject → Level → Topic selection. */
   const setSelection = useCallback((selection: RepSelection) => {
     setState(prev => {
       const next = { ...prev, selection, updatedAt: new Date().toISOString() };
-      if (uid) setDoc(doc(db, 'progress', uid), { examReps: next }, { merge: true }).catch((e) => reportSaveError('useExamReps.save', e));
+      if (isDemo) updateDemoProgress(current => ({ ...current, examReps: next }));
+      else if (uid) setDoc(doc(db, 'progress', uid), { examReps: next }, { merge: true }).catch((e) => reportSaveError('useExamReps.save', e));
       return next;
     });
-  }, [uid]);
+  }, [uid, isDemo, updateDemoProgress]);
 
   return { state, isLoaded, recordRep, setSelection };
 }

@@ -29,6 +29,9 @@ import { db } from '../firebase';
 import { COLORS } from '../design/tokens';
 import { logError } from '../utils/logError';
 import { LoadingState } from './ui/SystemState';
+import ModalFrame from './ui/ModalFrame';
+import { useProgress } from '../contexts/ProgressContext';
+import { DEMO_STUDENT_UID } from '../data/devStudent';
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -113,6 +116,8 @@ function getDot(name: string) { return SUBJECT_DOT[name] || 'bg-zinc-500'; }
 
 const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSettings, initialTab = 'overview' }) => {
   const { showToast } = useToast();
+  const { rawProgressDoc } = useProgress();
+  const isDemo = uid === DEMO_STUDENT_UID;
   const [activeTab, setActiveTab] = useState<PassportTab>(initialTab);
 
   // One app-wide academic record. War Zone, the CAO Simulator and Points
@@ -136,6 +141,17 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
 
   useEffect(() => {
     if (!uid) return;
+    if (isDemo) {
+      const simulator = rawProgressDoc.caoSimulator as { whatIfScenarios?: any[] } | undefined;
+      const computedPoints = rawProgressDoc.computedPoints as { current: number; target: number } | undefined;
+      setCaoData(simulator?.whatIfScenarios?.length || computedPoints
+        ? {
+            whatIfScenarios: simulator?.whatIfScenarios || [],
+            computedPoints,
+          }
+        : null);
+      return;
+    }
     let cancelled = false;
     getDoc(doc(db, 'progress', uid)).then(snap => {
       if (cancelled) return;
@@ -148,12 +164,13 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
       }
     }).catch((e) => logError('PointsPassport.loadCao', e));
     return () => { cancelled = true; };
-  }, [uid]);
+  }, [uid, isDemo, rawProgressDoc.caoSimulator, rawProgressDoc.computedPoints]);
 
   // Mock entry form state
   const [showMockForm, setShowMockForm] = useState(false);
   const [mockLabel, setMockLabel] = useState('');
   const [mockGrades, setMockGrades] = useState<Record<string, Grade>>({});
+  const [pendingDeleteMock, setPendingDeleteMock] = useState<MockResult | null>(null);
 
   // Scenario runway state (feature F7) — local-only, per uid
   const [scenarios, setScenarios] = useState<ScenarioMap>({});
@@ -236,13 +253,17 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
       date: new Date().toISOString().split('T')[0],
       entries: gradeEntries,
       totalPoints: total,
+      resultKind: 'full',
     });
     setShowMockForm(false);
     showToast(`${label} saved — ${total} points`, 'success');
   };
 
-  const deleteMock = async (id: string) => {
-    mockResultsHook.removeMockResult(id);
+  const deleteMock = () => {
+    if (!pendingDeleteMock) return;
+    mockResultsHook.removeMockResult(pendingDeleteMock.id);
+    showToast(`${pendingDeleteMock.label} removed`, 'success');
+    setPendingDeleteMock(null);
   };
 
   // ── Scenario runway (feature F7) ──
@@ -321,6 +342,7 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
   }
 
   return (
+    <>
     <div className="space-y-6">
 
       {/* Grade Planner carries its own live totals because they react to the
@@ -564,7 +586,8 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
                     </div>
                     <span className="text-sm font-bold" style={{ color: COLORS.accent }}>{mock.totalPoints} pts</span>
                     <button
-                      onClick={() => deleteMock(mock.id)}
+                      onClick={() => setPendingDeleteMock(mock)}
+                      aria-label={`Remove ${mock.label}`}
                       className="p-1.5 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
                     >
                       <Trash2 size={14} className="text-zinc-400" />
@@ -636,6 +659,8 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
                             <button
                               key={g}
                               onClick={() => setMockGrades(prev => ({ ...prev, [sub.subjectName]: g }))}
+                              aria-label={`${sub.subjectName} ${g}`}
+                              aria-pressed={mockGrades[sub.subjectName] === g}
                               className={`px-2 py-1 rounded-md text-xs font-bold transition-all ${
                                 mockGrades[sub.subjectName] === g
                                   ? 'text-white shadow-sm'
@@ -816,6 +841,8 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
                             <button
                               key={g}
                               onClick={() => setScenarioGrades(prev => ({ ...prev, [sub.subjectName]: g }))}
+                              aria-label={`${sub.subjectName} ${g}`}
+                              aria-pressed={scenarioGrades[sub.subjectName] === g}
                               className={`px-2 py-1 rounded-md text-xs font-bold transition-all ${
                                 scenarioGrades[sub.subjectName] === g
                                   ? 'text-white shadow-sm'
@@ -945,6 +972,38 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
         )}
       </AnimatePresence>
     </div>
+    <ModalFrame
+      open={pendingDeleteMock !== null}
+      onClose={() => setPendingDeleteMock(null)}
+      title="Remove this mock result?"
+      eyebrow="Points Passport"
+      description={pendingDeleteMock ? `${pendingDeleteMock.label} and its subject grades will be removed from your mock history.` : undefined}
+      width="sm"
+      labelledBy="remove-mock-title"
+      footer={(
+        <div className="flex flex-col-reverse gap-2 sm:flex-row sm:justify-end">
+          <button
+            type="button"
+            onClick={() => setPendingDeleteMock(null)}
+            className="min-h-11 rounded-xl border border-[#CFC9C2] bg-white px-4 text-sm font-semibold text-[#59534D] hover:border-[#383838] dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200"
+          >
+            Keep result
+          </button>
+          <button
+            type="button"
+            onClick={deleteMock}
+            className="min-h-11 rounded-xl border-[1.5px] border-[#383838] bg-[#1A1A1A] px-4 text-sm font-semibold text-white"
+          >
+            Remove result
+          </button>
+        </div>
+      )}
+    >
+      <p className="text-sm leading-relaxed text-[#706A64] dark:text-zinc-400">
+        This cannot be undone. Your current grades and saved scenarios will not change.
+      </p>
+    </ModalFrame>
+    </>
   );
 };
 

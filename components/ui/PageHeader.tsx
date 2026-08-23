@@ -9,6 +9,7 @@ interface PageHeaderProps {
   actions?: React.ReactNode;
   className?: string;
   compact?: boolean;
+  backLabel?: string;
 }
 
 /** Shared navigation frame for top-level student destinations. */
@@ -20,13 +21,14 @@ const PageHeader: React.FC<PageHeaderProps> = ({
   actions,
   className = '',
   compact = false,
+  backLabel = 'Back to home',
 }) => (
   <header className={`flex items-start justify-between gap-4 ${className}`}>
     <div className="flex min-w-0 items-start gap-3 sm:gap-4">
       <button
         type="button"
         onClick={onBack}
-        aria-label="Back to home"
+        aria-label={backLabel}
         className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border-[1.5px] border-[#383838] bg-[#FAFBF6] text-[#1A1A1A] shadow-[2px_2px_0_0_#383838] transition-all duration-150 hover:-translate-y-0.5 hover:shadow-[3px_3px_0_0_#383838] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none dark:border-zinc-600 dark:bg-zinc-900 dark:text-white dark:shadow-[2px_2px_0_0_#52525B]"
       >
         <ArrowLeft size={18} strokeWidth={1.8} />
