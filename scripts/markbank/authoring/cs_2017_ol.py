@@ -31,7 +31,9 @@ PLAN = [
     (9, 'b', 'cons-1-1', 'recommend-applied-finish-preserve-external-decking'),
     (1, 'b', 'cons-3-4', 'clearly-how-prevent-penetration-rainwater-head'),
     (1, 'a', 'cons-1-5', 'vertical-section-through-top-door-showing'),
-    (7, 'b', 'cons-1-1', 'large-tongue-groove-joint-between-flooring'),]
+    (7, 'b', 'cons-1-1', 'large-tongue-groove-joint-between-flooring'),
+    (8, None, 'cons-3-8', 'explain-five-handrail-box-dovetail-joint'),
+    (9, 'c', 'cons-1-1', 'external-patio-has-many-advantages-occupants'),]
 
 for q, letter, topic, concept in PLAN:
     try:

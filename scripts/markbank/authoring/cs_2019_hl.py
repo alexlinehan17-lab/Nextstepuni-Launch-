@@ -32,7 +32,10 @@ PLAN = [
     (9, 'b', 'cons-1-1', 'negative-impacts-thermal-bridging-result-poor'),
     (10, 'a', 'cons-6-3', 'design-considerations-necessary-achieve-enerphit-passive'),
     (10, 'b', 'cons-6-3', 'how-you-would-retrofit-given-house'),
-    (10, 'c', 'cons-6-3', 'advantages-retrofitting-existing-house-meet-enerphit'),]
+    (10, 'c', 'cons-6-3', 'advantages-retrofitting-existing-house-meet-enerphit'),
+    (2, 'a', 'cons-1-1', 'functional-requirements-roof-domestic-dwelling-house'),
+    (2, 'c', 'cons-1-1', 'select-different-roofing-material-roof-types'),
+    (8, 'b', 'cons-5-5', 'shows-site-layout-map-new-house'),]
 
 for q, letter, topic, concept in PLAN:
     try:

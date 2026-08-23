@@ -38,7 +38,13 @@ ANY_N = re.compile(r'\bany\s+(one|two|three|four|five|six)\b', re.I)
 N_WORD = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6}
 TOTAL = re.compile(r'\(\s*(\d{1,3})\s*marks?\s*\)', re.I)
 # Every printed total for a part: the bracketed one and the Sub-total row.
-PART_TOTAL = re.compile(r'\((\d{1,3})\s*marks?\)|sub-?\s*total\s+(\d{1,3})', re.I)
+# A part total ENDS its line, or is a total row. Matched anywhere, it read the
+# sub-splits inside a row label -- "Material 1 - identify (2 marks), adv (1
+# mark), disadv (1 mark) 4" -- as the part's total, and then refused the card
+# for making 12 against a "printed total" of 1 or 2.
+PART_TOTAL = re.compile(r'\((\d{1,3})\s*marks?\)\s*$'
+                        r'|\bsub-?\s*total\s+(\d{1,3})\b'
+                        r'|\btotal\s+(\d{1,3})\s*marks?\b', re.I | re.M)
 # "Scale - 4 marks Drafting - 4 marks", "+ 4 marks (3 for drawing, 1 for
 # annotation)" — priced, but not a named answer, so a card may leave it out.
 DRAW_ALLOWANCE = re.compile(r'(?:scale|drafting|drawing|annotation)\s*[-–]?\s*(\d{1,3})\s*marks?', re.I)
@@ -178,7 +184,8 @@ class Author:
         # these parts have two rows, where there is no majority.
         rows = self._without_band(rows)
         scaffold = [(lab, mk) for lab, mk in rows if CS.SCAFFOLD_ROW.match(lab)]
-        printed = {int(a or b) for a, b in PART_TOTAL.findall(block)}
+        printed = {int(a or b or c) for a, b, c in
+                   PART_TOTAL.findall('\n'.join(self.S.marks.get((q, letter), [])))}
 
         # Two readings of the same block, and the printed total decides between
         # them. "Suitable finish 4 / Reason 1 4 / Reason 2 4 / Sub-total 12" is
@@ -354,9 +361,14 @@ class Author:
         gs = [g for g in self.S.groups(q, letter, 'indicative') if len(g[2]) >= 2 and g[0]]
         if len(gs) < 3:
             return None
-        names = [g[0] for g in gs]
-        if any(locate(qtext, n) is None for n in names):
+        # Drop groups the question does not name rather than abandoning the
+        # part. One spurious group -- "1500mm", a dimension read as a heading --
+        # was vetoing 2016 Ordinary Q8 entirely, and that question is worth nine
+        # cards. The survivors must still be enough to be a list.
+        gs = [g for g in gs if locate(qtext, g[0]) is not None]
+        if len(gs) < 3:
             return None
+        names = [g[0] for g in gs]
         rows = self.S.mark_rows(q, letter)
         steps = None
         if len(rows) >= 4:
@@ -377,7 +389,8 @@ class Author:
             # following (12 marks)" over three named options is three cards
             # worth six, not one card listing three names.
             block = ' '.join(self.S.marks.get((q, letter), []))
-            printed = {int(a or b) for a, b in PART_TOTAL.findall(block)}
+            printed = {int(a or b or c) for a, b, c in
+                   PART_TOTAL.findall('\n'.join(self.S.marks.get((q, letter), [])))}
             k = N_WORD[m.group(1).lower()]
             fit = [p for p in printed if k and p % k == 0 and p // k > 1]
             if not fit or k >= len(gs) + 1:
@@ -545,6 +558,23 @@ class Author:
             out.append(n)
         return out
 
+    def _printed_totals(self, q, letter):
+        """The part's own printed total(s), with impostors removed.
+
+        Two kinds get in. A sub-split that happens to end its line -- "Sketches
+        (3 marks)" -- is smaller than what the part prices, and a total is never
+        smaller than the rows beneath it. And where a block over-runs into the
+        next part or into the Practical Test scheme it picks up that section's
+        total: 2018 Ordinary Q9(c) prices eight marks and was being checked
+        against 150.
+        """
+        lines = self.S.marks.get((q, letter), [])
+        found = {int(a or b or c) for a, b, c in PART_TOTAL.findall('\n'.join(lines))}
+        rows_sum = sum(mk for _, mk in self.S.mark_rows(q, letter))
+        if not rows_sum:
+            return found
+        return {p for p in found if rows_sum <= p <= rows_sum * 3}
+
     def _check_total(self, q, letter, total, qtext='', used=None):
         """Returns a note where a NAMED shortfall is allowed, else None."""
         """The card's marks must be the question's marks.
@@ -559,8 +589,9 @@ class Author:
         and the single-answer path added later returned before reaching it, so
         nine cards shipped with a total their own scheme block never prints.
         """
-        block = ' '.join(self.S.marks.get((q, letter), []))
-        printed = {int(a or b) for a, b in PART_TOTAL.findall(block)}
+        lines = self.S.marks.get((q, letter), [])
+        block = ' '.join(lines)
+        printed = self._printed_totals(q, letter)
         if not printed or total in printed:
             return None
         allowance = sum(int(x) for x in DRAW_ALLOWANCE.findall(block))
