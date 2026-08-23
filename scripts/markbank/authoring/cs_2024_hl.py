@@ -12,6 +12,7 @@ PLAN = [
     (1, 'a', 'cons-3-2', 'vertical-section-entrance-porch'),
     (2, 'a', 'cons-1-8', 'best-practice-guidelines-on-site'),
     (2, 'b', 'cons-1-1', 'designing-an-accessible-en-suite'),
+    (3, 'b', 'cons-1-1', 'external-design-for-a-renovated-forge'),
     (3, 'c', 'cons-1-1', 'respecting-irish-vernacular-architecture'),
     (4, 'a', 'cons-1-2', 'why-planning-authorities-regulate-design'),
     (4, 'b', 'cons-1-3', 'choosing-between-two-sites'),

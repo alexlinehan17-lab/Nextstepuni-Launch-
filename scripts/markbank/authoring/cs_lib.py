@@ -36,6 +36,11 @@ emit = make_emit(audit)
 ANY_N = re.compile(r'\bany\s+(one|two|three|four|five|six)\b', re.I)
 N_WORD = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6}
 TOTAL = re.compile(r'\(\s*(\d{1,3})\s*marks?\s*\)', re.I)
+# Every printed total for a part: the bracketed one and the Sub-total row.
+PART_TOTAL = re.compile(r'\((\d{1,3})\s*marks?\)|sub-?\s*total\s+(\d{1,3})', re.I)
+# "Scale - 4 marks Drafting - 4 marks", "+ 4 marks (3 for drawing, 1 for
+# annotation)" — priced, but not a named answer, so a card may leave it out.
+DRAW_ALLOWANCE = re.compile(r'(?:scale|drafting|drawing|annotation)\s*[-–]?\s*(\d{1,3})\s*marks?', re.I)
 # A "point" that names nothing. The build refuses these anyway; catching them
 # here says which scheme line is at fault instead of which card.
 CONTENT_FREE = re.compile(
@@ -137,11 +142,32 @@ class Author:
                     return (claim, per)
                 raise Refused(f'Q{q}({letter}): {total}/{claim} = {per}, but the scheme '
                               f'never prints {per} — not carding a derived tariff')
+        # The scheme's commonest way of pricing a menu: rows that NAME nothing.
+        # "Advantage 1  5 / Advantage 2  5" is two interchangeable answers at
+        # five, and the content is in the indicative half. This is not an
+        # inference -- the count and the mark are both printed -- and it is what
+        # most of Ordinary Level looks like.
+        rows = self.S.mark_rows(q, letter)
+        scaffold = [(lab, mk) for lab, mk in rows if CS.SCAFFOLD_ROW.match(lab)]
+        if len(scaffold) >= 2 and len({mk for _, mk in scaffold}) == 1:
+            return (len(scaffold), scaffold[0][1])
+
+        # N identically-named slots against a printed total. "Three functional
+        # requirements of an external wall (18 marks)" over "Functional
+        # Requirement 1/2/3" is three answers at six, and both the three and the
+        # eighteen are printed -- the six is arithmetic on them, not a guess.
+        # The division must be exact; where it is not, the scheme has not said
+        # how the marks fall and the part is left.
+        slots = CS.slot_labels(block_lines)
+        if tot and len(slots) >= 2 and len(set(slots)) == 1:
+            total = int(tot.group(1))
+            if total % len(slots) == 0:
+                return (len(slots), total // len(slots))
+
         # Last resort, and the only inferred form: every priced row in the part
         # carries the same mark, so the count and that mark are the tariff. It
         # must reconcile with the printed total, otherwise it is a guess.
-        marks = [int(m.group(1)) for l in block_lines
-                 if (m := re.search(r'\s(\d{1,3})\s*$', l.strip()))]
+        marks = [mk for _, mk in rows]
         if len(marks) >= 2 and len(set(marks)) == 1 and index is None:
             n, per = len(marks), marks[0]
             if tot is None or n * per == int(tot.group(1)):
@@ -162,6 +188,7 @@ class Author:
         SEC marks it: Q1(a) of the 2021 Higher paper is three lists priced
         4 x 4 each, not one list of twelve.
         """
+        self._forced = self._forced_each = None
         if cid in self._used:
             raise Refused(f'{cid}: already emitted')
         qtext = self.question(q, letter)
@@ -176,7 +203,32 @@ class Author:
         # multiplies the question's marks by five, and the guard below caught it
         # as a tariff claiming more options than the group prints. Merge instead,
         # so the tariff applies to exactly the list the scheme priced.
-        if not multi and len(gs) > 1:
+        # How the part's tariff lands on its groups. Decided by comparing what
+        # the scheme lets a student CLAIM against how many groups it names:
+        #
+        #   claim == groups   -> answer each one   -> fixed, a row per group
+        #   claim %  groups==0-> k answers in each -> fixed, a row per group
+        #   claim <  groups   -> choose among them -> best-of over group NAMES
+        #
+        # The last is the one that matters most. "The importance of any two in
+        # maintaining a positive health and safety culture (12 marks)" over
+        # three named options is two of three at six, not two of the twenty-six
+        # bullets underneath them -- which is both a menu the deck will not show
+        # and a misreading of the question.
+        named_groups = [g for g in gs if g[0]]
+        if len(gs) > 1 and len(named_groups) == len(gs):
+            try:
+                n, per = self.tariff(q, letter, None, len(gs), None)
+            except Refused:
+                n = per = None
+            if n:
+                if n % len(gs) == 0:
+                    self._forced_each = (n // len(gs), per)
+                elif n < len(gs):
+                    gs = [(None, None, [g[0] for g in gs])]
+                    multi = False
+                    self._forced = (n, per)
+        if self._forced is None and self._forced_each is None and not multi and len(gs) > 1:
             merged = [it for _, _, items in gs for it in items]
             names = [n for n, _, _ in gs if n]
             gs = [(None, None, merged)]
@@ -197,7 +249,13 @@ class Author:
                 options.append(it)
             if len(options) < 2:
                 continue
-            n, per = self.tariff(q, letter, name, len(options), gi if multi else None)
+            if getattr(self, '_forced_each', None):
+                n, per = self._forced_each
+            elif getattr(self, '_forced', None):
+                n, per = self._forced
+            else:
+                n, per = self.tariff(q, letter, name, len(options),
+                                     gi if multi else None)
             if n > len(options) and len(gs) == 1:
                 # The mark table is the fuller list for this part -- see
                 # cs_scheme.mark_items. Only tried where the part has a single
@@ -226,6 +284,20 @@ class Author:
         if not rows:
             raise Refused(f'Q{q}({letter}): no priced group with usable options')
         total = sum(r['marks'] for r in rows)
+        # The card's marks must be the question's marks. Where the scheme prints
+        # a total for this part, the rows have to make it -- otherwise the card
+        # tells a student a 30-mark question is worth 12, which is worse than no
+        # card. The one allowed shortfall is the drawing and scale allowance,
+        # which the scheme prices separately and which is not a named answer.
+        printed = {int(a or b) for a, b in PART_TOTAL.findall(
+            ' '.join(self.S.marks.get((q, letter), [])))}
+        if printed and total not in printed:
+            allowance = sum(int(x) for x in DRAW_ALLOWANCE.findall(
+                ' '.join(self.S.marks.get((q, letter), []))))
+            if not any(total + allowance == p for p in printed):
+                raise Refused(
+                    f'Q{q}({letter}): rows make {total} but the scheme prints '
+                    f'{sorted(printed)} for this part — not carding a partial tariff')
         kind = 'bestNofParts' if len(rows) == 1 else 'fixed'
         self.cards.append(_card(
             cid, self.year, self.deck_level, topic, concept, self.ref(q, letter),

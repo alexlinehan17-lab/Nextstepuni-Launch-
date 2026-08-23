@@ -65,6 +65,16 @@ SCALE_TAIL = re.compile(r'^(Scale\s*[-–]|Drafting\s*[-–]|[\d\s]+$)', re.I)
 MARK_TAIL = re.compile(r'\s+\d{1,3}\s*$')
 TOTAL_ONLY = re.compile(r'^(total|sub-?total|notes?|sketches?'
                         r'|\(?\d+\s+for\s+\w+)\b', re.I)
+TOTALS = re.compile(r'^(sub-?\s*total|total)\b', re.I)
+# "(8 + 5 marks)", "(3 + 3 marks)" printed inside a row's label.
+MARK_EXPR = re.compile(r'\(\s*\d{1,3}(?:\s*\+\s*\d{1,3})*\s*marks?\s*\)', re.I)
+# A row that names nothing: the scheme's way of saying "N interchangeable
+# answers go here". "Advantage 1", "Reason 2", "Design Consideration 3".
+SCAFFOLD_ROW = re.compile(
+    r'^(advantage|disadvantage|reason|risk|feature|guideline|point|method|'
+    r'consideration|answer|discussion point|benefit|way|factor|use|example|'
+    r'design consideration|safety precaution|precaution|approach|'
+    r'functional requirement|requirement)s?\s*\d*$', re.I)
 # A group heading: short, title-ish, no closing punctuation, no bullet.
 HEADING_LOOK = re.compile(r'^[A-Z][^.:;•]{0,58}$')
 # Lines that sit where a heading sits but name nothing. The question's own text
@@ -72,6 +82,11 @@ HEADING_LOOK = re.compile(r'^[A-Z][^.:;•]{0,58}$')
 # and the SEC closes most lists with a catch-all. Both became group names.
 NOT_A_HEADING = re.compile(r'^(any other relevant|note\b|n\.?b\.?\b|alternative\b'
                            r'|.*[a-z]\.\s*$)', re.I)
+# A heading in this scheme is always title-case. A line opening lower-case is a
+# bullet that wrapped -- "available for immediate contact" became a fourth group
+# of 2021 Higher Q2(c), which has three, and a group count that is wrong by one
+# breaks the tariff split that depends on it dividing evenly.
+LOWER_START = re.compile(r'^[a-z]')
 FURNITURE = re.compile(
     r'^(##\s*Page|Leaving Certificate|Coimisi|State Examinations|-\s*\d+\s*-'
     r'|\d{1,3}\s*$|PERFORMANCE CRITERIA|MAXIMUM|MARK\s*$|TOTAL\b'
@@ -225,7 +240,9 @@ class Scheme:
         # Headings: a non-bullet line with at least one bullet under it.
         heads = []
         for i, line in enumerate(src):
-            if BULLET.match(line) or TARIFF_ONLY.match(line) or NOT_A_HEADING.match(line.strip()):
+            if (BULLET.match(line) or TARIFF_ONLY.match(line)
+                    or NOT_A_HEADING.match(line.strip())
+                    or LOWER_START.match(line.strip())):
                 continue
             nxt = src[i + 1] if i + 1 < len(src) else ''
             if BULLET.match(nxt):
@@ -261,6 +278,28 @@ class Scheme:
                 continue
             t = tariffs[n] if n < len(tariffs) else (tariffs[0] if len(tariffs) == 1 else None)
             out.append((name, t, b))
+        return out
+
+    def mark_rows(self, q, letter):
+        """[(label, marks)] — the mark table's priced rows for this part.
+
+        Totals are excluded. Leaving "Sub-total 10" in was why the tariff
+        inference failed on most of Ordinary Level: the rows read [5, 5, 10],
+        which is not "every row carries the same mark", so a part the scheme
+        prices plainly as two answers at five was reported as having no tariff
+        at all. Eighty-seven parts were refused on that.
+        """
+        out = []
+        for line in _rewrap(self.marks.get((q, letter), [])):
+            t = BULLET.sub('', line).strip()
+            if not t or SCALE_TAIL.match(t) or TOTALS.match(t):
+                continue
+            m = re.search(r'^(.*?)\s+(\d{1,3})\s*$', t)
+            if not m:
+                continue
+            label = MARK_EXPR.sub('', m.group(1)).strip(' .;:')
+            if label:
+                out.append((label, int(m.group(2))))
         return out
 
     def mark_items(self, q, letter):
@@ -311,3 +350,32 @@ if __name__ == '__main__':
             if dump:
                 for x in b[:6]:
                     print(f'          * {x[:100]}')
+
+
+# A numbered answer slot, with or without a trailing mark and with or without
+# the rest of the sentence: "Functional Requirement 2", "Method 1 to reduce
+# solar overheating", "Guideline 3". Read off the RAW block, because a slot is
+# frequently priced on the lines beneath it rather than on its own line and so
+# never reaches mark_rows() at all.
+SLOT_LINE = re.compile(
+    r'^(advantage|disadvantage|reason|risk|feature|guideline|point|method|'
+    r'consideration|answer|discussion point|benefit|way|factor|use|example|'
+    r'design consideration|safety precaution|safety procedure|precaution|'
+    r'approach|functional requirement|requirement|item|element)s?\s+(\d{1,2})\b',
+    re.I)
+
+
+def slot_labels(lines):
+    """The numbered answer slots a part's mark block sets out, by name.
+
+    "Functional Requirement 1/2/3" is the scheme saying three answers of the
+    same kind go here. Where they all share a name and the part prints a total,
+    the count and the total are both printed and the per-answer mark is
+    arithmetic on them rather than a guess.
+    """
+    out = []
+    for line in lines:
+        m = SLOT_LINE.match(line.strip())
+        if m:
+            out.append(m.group(1).lower())
+    return out
