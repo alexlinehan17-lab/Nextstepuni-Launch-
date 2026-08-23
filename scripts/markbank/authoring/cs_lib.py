@@ -205,6 +205,69 @@ class Author:
         raise Refused(f'Q{q}({letter}) [{name}]: the scheme prints no tariff for this '
                       f'group; leave it uncarded rather than estimate one')
 
+    def _choice_and_reasons(self, q, letter, qtext, cid, topic, concept, notes, stem):
+        """A card for "specify a suitable X, and give two reasons for it".
+
+        The scheme prices these as "Suitable material 4 / Reason 1 4 / Reason 2
+        4", every row at the same mark, and answers them with a two-column
+        table. Read flat, only the one named row survives and the card came out
+        worth 4 on a 12-mark question; read as columns, it is the choice and the
+        reasons, which is what the question asks for.
+        """
+        rows = self.S.mark_rows(q, letter)
+        if len(rows) < 2:
+            return None
+        reasons = [r for r in rows if re.match(r'reasons?\b', r[0], re.I)]
+        choice = [r for r in rows if not CS.SCAFFOLD_ROW.match(r[0])]
+        # The choice is not always priced the same as its reasons: 2021 Ordinary
+        # Q2(c) pays 6 for the floor type and 4 for each reason. The reasons
+        # must agree with each other, and nothing else may be priced here.
+        if (not reasons or len(choice) != 1
+                or len({mk for _, mk in reasons}) != 1
+                or len(reasons) + 1 != len(rows)):
+            return None
+        per, pick = reasons[0][1], choice[0][1]
+        page = self.S.pages.get((q, letter))
+        left, right = CS.paired_table(self.year, self.level, page, letter)
+        if len(left) < 2 or len(right) < 2:
+            return None
+
+        def clean(col):
+            out = []
+            for t in col:
+                t = t.strip(' .;')
+                if (not t or CONTENT_FREE.match(t) or len(t) < 3
+                        or re.fullmatch(r'reasons?', t, re.I)
+                        or _squash(t)[:24] in _squash(qtext)
+                        or _squash(t) not in self.raw):
+                    continue
+                out.append(t)
+            return out
+
+        opts_l, opts_r = clean(left), clean(right)
+        if len(opts_l) < 2 or len(opts_r) < 2:
+            return None
+        # The reasons column pools every material's reasons, so it can run past
+        # what the deck will show. Trimming it is not an option -- the SEC
+        # printed the list whole -- so the part is left rather than shown a
+        # menu that is missing five of its answers.
+        if len(opts_l) > MAX_OPTIONS_SHOWN or len(opts_r) > MAX_OPTIONS_SHOWN:
+            raise Refused(f'Q{q}({letter}): the reasons column has {len(opts_r)} '
+                          f'options, past the {MAX_OPTIONS_SHOWN} a row may show')
+        total = pick + len(reasons) * per
+        self._check_total(q, letter, total)
+        card_rows = [
+            anyN(f'{cid}-r1', choice[0][0], pick, 1, pick, opts_l, choice[0][0]),
+            anyN(f'{cid}-r2', 'Reasons for the choice', len(reasons) * per,
+                 len(reasons), per, opts_r, 'Any valid reason for the choice'),
+        ]
+        self.cards.append(_card(
+            cid, self.year, self.deck_level, topic, concept, self.ref(q, letter),
+            qtext, f'1 x {pick} + {len(reasons)} x {per}', total, card_rows, notes,
+            stem=stem, tariff_kind='fixed'))
+        self._used.add(cid)
+        return self.cards[-1]
+
     def _check_total(self, q, letter, total):
         """The card's marks must be the question's marks.
 
@@ -248,7 +311,20 @@ class Author:
         qtext = self.question(q, letter)
         if not qtext:
             raise Refused(f'Q{q}({letter}): no question text in the paper')
+        pair = self._choice_and_reasons(q, letter, qtext, cid, topic, concept,
+                                        notes, stem)
+        if pair is not None:
+            return pair
         gs = self.S.groups(q, letter, 'indicative')
+        # The two halves do not always agree on how many groups a part has, and
+        # the mark half is sometimes the one that got it right: 2021 Higher
+        # Q7(a) is "Chimney stack 4 x 5" and "Roofing 4 x 5" there, while the
+        # indicative half welded the two column headings into one line and
+        # returned a single group of sixteen -- too long for the deck to show,
+        # and wrong about the question, which prices the two halves separately.
+        mk_groups = [g for g in self.S.groups(q, letter) if g[1] and len(g[2]) >= 2]
+        if len(mk_groups) > len([g for g in gs if len(g[2]) >= 2]):
+            gs = mk_groups
         if not [g for g in gs if len(g[2]) >= 2]:
             # The indicative half groups nothing for this part, but the MARK
             # table often names the answer itself: the U-value questions list
@@ -310,7 +386,11 @@ class Author:
         # and a misreading of the question.
         block = ' '.join(self.S.marks.get((q, letter), []))
         named_groups = [g for g in gs if g[0]]
-        if len(gs) > 1 and len(named_groups) == len(gs):
+        # Not when `multi`: that means the mark table prints a tariff PER GROUP
+        # already, and dividing one of them by the group count priced 2021
+        # Higher Q7(a) at 2 x 5 per group where the scheme plainly gives each
+        # group its own 4 x 5.
+        if len(gs) > 1 and len(named_groups) == len(gs) and not multi:
             try:
                 n, per = self.tariff(q, letter, None, len(gs), None)
             except Refused:

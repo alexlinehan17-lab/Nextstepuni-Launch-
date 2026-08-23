@@ -159,11 +159,24 @@ def _rewrap(src):
     return out
 
 
-def blocks(lines):
-    """{(question, letter): [line, ...]} for one half."""
-    out, q, letter = {}, None, None
+PAGE_MARK = re.compile(r'^##\s*Page\s+(\d+)\s*$', re.I)
+
+
+def blocks(lines, pages=None):
+    """{(question, letter): [line, ...]} for one half.
+
+    `pages`, when given, is filled with {(question, letter): pdf page index} so
+    a caller can go back to the PDF for a part whose table the flat text
+    destroys -- the two-column "material / reason" tables of the Ordinary
+    papers read as "Tiles Easy to clean" and cannot be split on text alone.
+    """
+    out, q, letter, page = {}, None, None, None
     for raw in lines:
         line = raw.strip()
+        m = PAGE_MARK.match(line)
+        if m:
+            page = int(m.group(1)) - 1
+            continue
         if not line:
             continue
         m = QHEAD.match(line)
@@ -181,6 +194,8 @@ def blocks(lines):
             letter = p.group(1)
             rest = p.group(2).strip()
             out.setdefault((q, letter), [])
+            if pages is not None and page is not None:
+                pages.setdefault((q, letter), page)
             if rest:
                 out[(q, letter)].append(rest)
             continue
@@ -194,7 +209,8 @@ class Scheme:
         self.year, self.level = year, level
         lines = _lines(year, level)
         ind, mark = split_halves(lines)
-        self.indicative = blocks(ind)
+        self.pages = {}
+        self.indicative = blocks(ind, self.pages)
         self.marks = blocks(mark)
 
     def parts(self):
@@ -405,3 +421,125 @@ def slot_labels(lines):
 def PCS(t):
     """Squashed to letters and digits, for comparing two printings of one line."""
     return re.sub(r'[^a-z0-9]+', '', (t or '').lower())
+
+
+_COLCACHE = {}
+
+
+def columns(subject_year_level, page, min_gap=60):
+    """The lines of one scheme page, grouped into columns by x position.
+
+    The SEC sets its "specify a material / give two reasons" tables as two
+    columns, and the flat extraction reads across them: "Slate Aesthetically
+    pleasing" is a material and a reason welded together, and neither survives
+    as an answer. The x coordinate separates them cleanly -- column one sits at
+    62pt and column two at 202pt on every one of these pages -- so the columns
+    are recovered from the PDF rather than guessed at from the text.
+
+    Returns [[line, ...], ...], one list per column, left to right.
+    """
+    import pymupdf
+    year, level = subject_year_level
+    key = (year, level, page)
+    if key in _COLCACHE:
+        return _COLCACHE[key]
+    path = os.path.join(SCHEMES, f'{year}-{level}.pdf')
+    if not os.path.exists(path):
+        return []
+    rows = []
+    with pymupdf.open(path) as doc:
+        if page >= len(doc):
+            return []
+        for b in doc[page].get_text('dict')['blocks']:
+            for ln in b.get('lines', []):
+                txt = ''.join(sp['text'] for sp in ln['spans']).strip()
+                if txt:
+                    rows.append((min(sp['bbox'][0] for sp in ln['spans']),
+                                 min(sp['bbox'][1] for sp in ln['spans']), txt))
+    if not rows:
+        return []
+    # Cluster the left edges; a gap wider than min_gap starts a new column.
+    xs = sorted({round(x) for x, _, _ in rows})
+    edges, run = [], [xs[0]]
+    for a, b in zip(xs, xs[1:]):
+        if b - a > min_gap:
+            edges.append(run)
+            run = []
+        run.append(b)
+    edges.append(run)
+    out = []
+    for grp in edges:
+        lo, hi = min(grp) - 2, max(grp) + 2
+        col = [t for x, y, t in sorted(rows, key=lambda r: r[1]) if lo <= x <= hi]
+        out.append(col)
+    _COLCACHE[key] = out
+    return out
+
+
+_PAIRCACHE = {}
+_STOP_ROW = re.compile(r'^(\(?[a-h]\)|Question\s+\d|Leaving Certificate|Any other)', re.I)
+
+
+def paired_table(year, level, page, letter=None):
+    """(left column, right column) of a "specify X / give a reason" table.
+
+    The Ordinary papers answer "Specify a suitable roof finish material and give
+    two reasons" with a two-column table: the material on the left, its reasons
+    on the right. Flattened to text it reads "Slate Aesthetically pleasing", so
+    neither column is an answer a card can carry.
+
+    The part is found by its own "(c)" marker and ends at the next marker, and
+    the two columns are then separated by clustering the left edges. An earlier
+    version keyed on a "Reason" heading, which half these tables do not print.
+
+    Returns ([], []) where the part's rows do not form two columns.
+    """
+    import pymupdf
+    key = (year, level, page, letter)
+    if key in _PAIRCACHE:
+        return _PAIRCACHE[key]
+    path = os.path.join(SCHEMES, f'{year}-{level}.pdf')
+    if not os.path.exists(path) or page is None:
+        return [], []
+    rows = []
+    with pymupdf.open(path) as doc:
+        if page >= len(doc):
+            return [], []
+        for b in doc[page].get_text('dict')['blocks']:
+            for ln in b.get('lines', []):
+                txt = ''.join(sp['text'] for sp in ln['spans']).strip()
+                if txt:
+                    rows.append((min(sp['bbox'][0] for sp in ln['spans']),
+                                 min(sp['bbox'][1] for sp in ln['spans']), txt))
+    rows.sort(key=lambda r: r[1])
+    lo, hi = 0.0, 1e9
+    if letter:
+        here = re.compile(rf'^\(?{letter}\)')
+        nxt = re.compile(r'^\(?[a-h]\)|^Question\s+\d')
+        for i, (_, y, t) in enumerate(rows):
+            if here.match(t):
+                lo = y
+                for _, y2, t2 in rows[i + 1:]:
+                    if y2 > y and nxt.match(t2) and not here.match(t2):
+                        hi = y2
+                        break
+                break
+    span = [(x, t) for x, y, t in rows
+            if lo <= y < hi and len(t) > 2 and not _STOP_ROW.match(t)]
+    if len(span) < 4:
+        _PAIRCACHE[key] = ([], [])
+        return [], []
+    xs = sorted({round(x) for x, _ in span})
+    cut = None
+    for a, b in zip(xs, xs[1:]):
+        if b - a > 60:
+            cut = (a + b) / 2
+            break
+    if cut is None:
+        _PAIRCACHE[key] = ([], [])
+        return [], []
+    left = [t for x, t in span if x < cut]
+    right = [t for x, t in span if x >= cut]
+    out = (left, right) if left and right else ([], [])
+    _PAIRCACHE[key] = out
+    return out

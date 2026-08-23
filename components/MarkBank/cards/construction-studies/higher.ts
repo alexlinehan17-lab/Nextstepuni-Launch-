@@ -271,6 +271,20 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: "LC029ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2021 Higher Level — © State Examinations Commission.",
+    id: "cons-2021-hl-q7-a", topicId: "cons-3-10", conceptId: "vertical-section-chimney-stack-and-roof",
+    section: "B", questionRef: "2021 HL Q7(a)",
+    questionText: "To a scale of 1:5, draw a vertical section through the centre of the chimney stack and roof structure. The section should show the typical construction details through the chimney stack, flue liner, chimney capping and portion of the roof structure.",
+    tariffModel: {"kind":"fixed","notation":"4 x 5 + 4 x 5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 40,
+    rows: [
+    { id: "cons-2021-hl-q7-a-r1", kind: "anyN", verbatim: "Chimney stack", marks: 20, contextNote: "Chimney stack", openList: true, group: {"claimMax":4,"perOption":5,"options":["Chimney blockwork","External render","Flue liners","Lime sand fill / vermiculite","Concrete chimney capping","DPC beneath chimney capping","Lead flashing","DPC at roof level"]} },
+    { id: "cons-2021-hl-q7-a-r2", kind: "anyN", verbatim: "Roofing", marks: 20, contextNote: "Roofing", openList: true, group: {"claimMax":4,"perOption":5,"options":["Rafter 200 × 50 @400mm centres","Chimney trimmer 200 × 50","Windtightness OSB layer","Breather membrane","Counter battens 50 × 25","Slating Batten 50 ×","Apron lead flashing"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2021 Higher Level — © State Examinations Commission.",
     id: "cons-2021-hl-q7-b", topicId: "cons-3-10", conceptId: "moisture-at-the-chimney-roof-junction",
     section: "B", questionRef: "2021 HL Q7(b)",
     questionText: "On your drawing, show two typical design details to prevent the penetration of moisture at the junction of the roof and chimney stack.",
@@ -407,9 +421,11 @@ export const CARDS: SecCard[] = [
     id: "cons-2022-hl-q1-a", topicId: "cons-3-10", conceptId: "vertical-section-external-wall-and-flat-roof",
     section: "B", questionRef: "2022 HL Q1(a)",
     questionText: "To a scale of 1:5, draw a vertical section through the external wall of the dining area, the flat roof and the rear wall of the house. Show the typical construction details from a level 300 mm below the wallplate of the dining area wall, through the flat roof, to a level 400 mm above the abutment of the roof and the rear wall of the house.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 8","answer":2,"ofParts":3,"perPart":8}, totalMarks: 16,
+    tariffModel: {"kind":"fixed","notation":"4 x 4 + 4 x 4 + 4 x 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 48,
     rows: [
-    { id: "cons-2022-hl-q1-a-r1", kind: "anyN", verbatim: "To a scale of 1:5, draw a vertical section through the external wall of the dining area, the flat roof and the rear wall", marks: 16, openList: true, group: {"claimMax":2,"perOption":8,"options":["External wall & eaves - typical detailing","Flat roof - typical detailing","Rear external wall & abutment- typical detailing"]} },
+    { id: "cons-2022-hl-q1-a-r1", kind: "anyN", verbatim: "External wall & eaves - typical detailing", marks: 16, contextNote: "External wall & eaves - typical detailing", openList: true, group: {"claimMax":4,"perOption":4,"options":["External & internal render","Cavity wall & wall ties - 100 mm external and internal leaf","250 mm Full-fill insulated cavity","Cavity closer","100 mm × 75 mm Wallplate","Fascia / soffit / gutter (any 2)"]} },
+    { id: "cons-2022-hl-q1-a-r2", kind: "anyN", verbatim: "Flat roof - typical detailing", marks: 16, contextNote: "Flat roof - typical detailing", openList: true, group: {"claimMax":4,"perOption":4,"options":["Waterproof membrane","150 mm Roof insulation","Breather membrane","OSB / plywood decking","Firing pieces (1:40 slope)","200 mm × 50 mm Roof joists","Air-barrier / Airtightness membrane","Insulated plasterboard (50 mm insulation + 12.5 mm plasterboard)"]} },
+    { id: "cons-2022-hl-q1-a-r3", kind: "anyN", verbatim: "Rear external wall & abutment- typical detailing", marks: 16, contextNote: "Rear external wall & abutment- typical detailing", openList: true, group: {"claimMax":4,"perOption":4,"options":["External & internal render","Cavity wall & wall ties - 100 mm external and internal leaf","100 mm × 75 mm Concrete lintels","Cavity closer","200 mm × 50 mm Wallplate & metal hanger","Tilting fillet & lead flashing","Stepped DPC"]} },
     ],
   } as SecCard,
   {
@@ -725,9 +741,11 @@ export const CARDS: SecCard[] = [
     id: "cons-2023-hl-q1-a", topicId: "cons-3-8", conceptId: "vertical-section-roof-eaves-to-ridge",
     section: "B", questionRef: "2023 HL Q1(a)",
     questionText: "To a scale of 1:10, draw a vertical section through one half of the roof structure from eaves up to the ridge. Show one external wall and one rafter length. Include the typical construction details from 600 mm below the ceiling joist up to the ridge and include three courses of tiles at eaves.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 10","answer":2,"ofParts":3,"perPart":10}, totalMarks: 20,
+    tariffModel: {"kind":"fixed","notation":"5 x 4 + 3 x 4 + 4 x 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 48,
     rows: [
-    { id: "cons-2023-hl-q1-a-r1", kind: "anyN", verbatim: "To a scale of 1:10, draw a vertical section through one half of the roof structure from eaves up to the ridge. Show one ", marks: 20, openList: true, group: {"claimMax":2,"perOption":10,"options":["External timber frame wall - typical detailing","Roof structure- typical detailing","Eaves detail- typical detailing"]} },
+    { id: "cons-2023-hl-q1-a-r1", kind: "anyN", verbatim: "External timber frame wall - typical detailing", marks: 20, contextNote: "External timber frame wall - typical detailing", openList: true, group: {"claimMax":5,"perOption":4,"options":["External render","Concrete block + tie","Firestopping / cavity closer","Air space / residual cavity","Breather membrane","Racking board","250 × 50 mm Stud","Insulation","Air barrier membrane","Insulated service cavity","Plasterboard / skim"]} },
+    { id: "cons-2023-hl-q1-a-r2", kind: "anyN", verbatim: "Roof structure- typical detailing", marks: 12, contextNote: "Roof structure- typical detailing", openList: true, group: {"claimMax":3,"perOption":4,"options":["Prefabricated roof truss 200 × 50 mm @ 400 - 600 mm centres","Gang nail plates","Attic insulation","Insulated plasterboard (50 mm insulation + 12.5 mm plasterboard)","Air-barrier / airtightness membrane / joint taping"]} },
+    { id: "cons-2023-hl-q1-a-r3", kind: "anyN", verbatim: "Eaves detail- typical detailing", marks: 16, contextNote: "Eaves detail- typical detailing", openList: true, group: {"claimMax":4,"perOption":4,"options":["Fascia / soffit / gutter (Any two)","Tilting fillet","Ventilation","Wind tightness barrier","Roof breather membrane","Tiling battens 40 × 40 mm @ 400 mm centre","Counter battens","Three courses of concrete tiles Any other relevant points"]} },
     ],
   } as SecCard,
   {
@@ -881,10 +899,11 @@ export const CARDS: SecCard[] = [
     id: "cons-2023-hl-q7-a", topicId: "cons-3-2", conceptId: "vertical-section-door-external-wall-ground-floor",
     section: "B", questionRef: "2023 HL Q7(a)",
     questionText: "To a scale of 1:10, draw a vertical section through the centre of the door, external wall and ground floor. Show the typical construction details from a level 400 mm below the finished floor, through the door, up to a level 400 mm above the concrete lintels.",
-    tariffModel: {"kind":"fixed","notation":"2 x 4 + 2 x 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
+    tariffModel: {"kind":"fixed","notation":"4 x 4 + 4 x 4 + 4 x 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 48,
     rows: [
-    { id: "cons-2023-hl-q7-a-r1", kind: "anyN", verbatim: "Head of the door Threshold", marks: 8, contextNote: "Head of the door Threshold", openList: true, group: {"claimMax":2,"perOption":4,"options":["External & internal render","Concrete floor tiles 20 mm","Cavity wall","Concrete floor / subfloor 150 mm","Wall ties","Floor insulation 200mm","Full-fill insulated cavity 250 mm","Radon Barrier","Cavity closer","Vertical insulation – thermal break","Damp proof tray/course","Drainage channel","Reinforced concrete lintels - 100 × 65 mm","Entrance Substructure"]} },
-    { id: "cons-2023-hl-q7-a-r2", kind: "anyN", verbatim: "External door", marks: 8, contextNote: "External door", openList: true, group: {"claimMax":2,"perOption":4,"options":["Thermally broken frame 160 mm × 70 mm","External door with sheeting","Door insulation","Proprietary insulated door threshold – 15 Any other relevant detail mm upstand or 15°","Airtightness tape at door junction"]} },
+    { id: "cons-2023-hl-q7-a-r1", kind: "anyN", verbatim: "Head of the door", marks: 16, contextNote: "Head of the door", openList: true, group: {"claimMax":4,"perOption":4,"options":["External & internal render","Cavity wall","Wall tie","Full-fill insulated cavity","Cavity closer","Stepped Damp proof tray/course","Reinforced concrete lintels"]} },
+    { id: "cons-2023-hl-q7-a-r2", kind: "anyN", verbatim: "External door", marks: 16, contextNote: "External door", openList: true, group: {"claimMax":4,"perOption":4,"options":["Airtightness tape at Door frame head","Thermally broken doorframe","External door with sheeting","Door insulation","Proprietary insulated door threshold","15 mm upstand or 15° slope","Airtightness tape at door threshold"]} },
+    { id: "cons-2023-hl-q7-a-r3", kind: "anyN", verbatim: "Floor Level", marks: 16, contextNote: "Floor Level", openList: true, group: {"claimMax":4,"perOption":4,"options":["Skirting board","Concrete floor tiles","Concrete floor","Floor insulation","Radon barrier","Vertical insulation – thermal break","Drainage channel","Entrance- Level surface"]} },
     ],
   } as SecCard,
   {
@@ -1025,9 +1044,11 @@ export const CARDS: SecCard[] = [
     id: "cons-2024-hl-q1-a", topicId: "cons-3-2", conceptId: "vertical-section-entrance-porch",
     section: "B", questionRef: "2024 HL Q1(a)",
     questionText: "To a scale of 1:10, draw a vertical section through the entrance porch showing the external wall of the porch, the sloping roof, and the front wall of the house. Include the typical construction details of the porch from a point 300 mm below the wall plate, through the sloping rafters, to a level 350 mm above the abutment of the porch roof with the front wall of the house. Show three courses of slate at eaves.",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 8","answer":2,"ofParts":3,"perPart":8}, totalMarks: 16,
+    tariffModel: {"kind":"fixed","notation":"4 x 4 + 4 x 4 + 4 x 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 48,
     rows: [
-    { id: "cons-2024-hl-q1-a-r1", kind: "anyN", verbatim: "To a scale of 1:10, draw a vertical section through the entrance porch showing the external wall of the porch, the slopi", marks: 16, openList: true, group: {"claimMax":2,"perOption":8,"options":["External wall and eaves - typical detailing","Lean - To roof - typical detailing","Front wall of house and abutment - typical detailing"]} },
+    { id: "cons-2024-hl-q1-a-r1", kind: "anyN", verbatim: "External wall and eaves - typical detailing", marks: 16, contextNote: "External wall and eaves - typical detailing", openList: true, group: {"claimMax":4,"perOption":4,"options":["Larch cladding rain screen","Battens / counter battens","Cavity wall blockwork & wall ties","Full-fill insulation","Cavity closer","Wallplates","Skim"]} },
+    { id: "cons-2024-hl-q1-a-r2", kind: "anyN", verbatim: "Lean - To roof - typical detailing", marks: 16, contextNote: "Lean - To roof - typical detailing", openList: true, group: {"claimMax":4,"perOption":4,"options":["Fascia / soffit / gutter (Any two)","Three courses of slate","Slating battens 50 × 30 mm @ 400 mm centres","Roof breather membrane","Ventilation","Roof rafter & insulation","Air barrier membrane & airtightness taping","Insulated plasterboard (50 mm insulation + 12.5 mm plasterboard)"]} },
+    { id: "cons-2024-hl-q1-a-r3", kind: "anyN", verbatim: "Front wall of house and abutment - typical detailing", marks: 16, contextNote: "Front wall of house and abutment - typical detailing", openList: true, group: {"claimMax":4,"perOption":4,"options":["External & internal render","Full-fill cavity wall blockwork & low conductivity wall ties","Concrete lintels","Cavity closer","Rafter support","Stepped DPC","Lead flashing (under and apron)"]} },
     ],
   } as SecCard,
   {
