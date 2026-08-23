@@ -84,29 +84,29 @@
   "notes": ""
  },
  {
-  "id": "cons-2021-hl-q2-a",
+  "id": "cons-2021-hl-q2-a-safety-training",
   "topicId": "cons-1-8",
-  "conceptId": "duty-of-care-on-a-construction-site",
+  "conceptId": "duty-of-care-on-a-construction-site-safety-training",
   "level": "higher",
   "year": 2021,
   "subjectId": "construction-studies",
   "section": "B",
-  "questionRef": "2021 HL Q2(a)",
-  "questionText": "Under each of the following, discuss in detail the duty of care that all workers have in maintaining high safety standards on a construction site: • safety training • personal protective equipment (PPE) • vigilance.",
+  "questionRef": "2021 HL Q2(a) — Safety training",
+  "questionText": "Under each of the following, discuss in detail the duty of care that all workers have in maintaining high safety standards on a construction site: • safety training.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "1 x 6 + 1 x 6 + 1 x 6",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "bestNofParts",
+   "notation": "1 x 6",
+   "answer": 1,
+   "ofParts": 9,
+   "perPart": 6
   },
-  "totalMarks": 18,
+  "totalMarks": 6,
   "rows": [
    {
-    "id": "cons-2021-hl-q2-a-r1",
+    "id": "cons-2021-hl-q2-a-safety-training-r1",
     "kind": "anyN",
     "verbatim": "Safety training",
     "marks": 6,
@@ -127,9 +127,34 @@
       "Obligation to obtain and maintain a Safe Pass Certification"
      ]
     }
-   },
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2021-hl-q2-a-personal-protective-equipment-ppe",
+  "topicId": "cons-1-8",
+  "conceptId": "duty-of-care-on-a-construction-site-personal-protective-equipment-ppe",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2021 HL Q2(a) — Personal Protective Equipment (PPE)",
+  "questionText": "Under each of the following, discuss in detail the duty of care that all workers have in maintaining high safety standards on a construction site: • personal protective equipment (PPE).",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 x 6",
+   "answer": 1,
+   "ofParts": 8,
+   "perPart": 6
+  },
+  "totalMarks": 6,
+  "rows": [
    {
-    "id": "cons-2021-hl-q2-a-r2",
+    "id": "cons-2021-hl-q2-a-personal-protective-equipment-ppe-r1",
     "kind": "anyN",
     "verbatim": "Personal Protective Equipment (PPE)",
     "marks": 6,
@@ -149,9 +174,34 @@
       "Employers should inform their employer of any medical conditions that have that might be affected by the use of PPE"
      ]
     }
-   },
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2021-hl-q2-a-vigilance",
+  "topicId": "cons-1-8",
+  "conceptId": "duty-of-care-on-a-construction-site-vigilance",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2021 HL Q2(a) — Vigilance",
+  "questionText": "Under each of the following, discuss in detail the duty of care that all workers have in maintaining high safety standards on a construction site: • vigilance.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 x 6",
+   "answer": 1,
+   "ofParts": 10,
+   "perPart": 6
+  },
+  "totalMarks": 6,
+  "rows": [
    {
-    "id": "cons-2021-hl-q2-a-r3",
+    "id": "cons-2021-hl-q2-a-vigilance-r1",
     "kind": "anyN",
     "verbatim": "Vigilance",
     "marks": 6,
@@ -178,29 +228,29 @@
   "notes": ""
  },
  {
-  "id": "cons-2021-hl-q2-b",
+  "id": "cons-2021-hl-q2-b-repairing-a-chimney-stack",
   "topicId": "cons-1-8",
-  "conceptId": "risks-in-chimney-roof-and-scaffold-work",
+  "conceptId": "risks-in-chimney-roof-and-scaffold-work-repairing-a-chimney-stack",
   "level": "higher",
   "year": 2021,
   "subjectId": "construction-studies",
   "section": "B",
-  "questionRef": "2021 HL Q2(b)",
-  "questionText": "Discuss in detail one possible risk associated with each of the following: • repairing a chimney stack • overhead electrical cables • on-site health & hygiene.",
+  "questionRef": "2021 HL Q2(b) — Repairing a chimney stack",
+  "questionText": "Discuss in detail one possible risk associated with each of the following: • repairing a chimney stack.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "1 x 6 + 1 x 6 + 1 x 6",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "bestNofParts",
+   "notation": "1 x 6",
+   "answer": 1,
+   "ofParts": 5,
+   "perPart": 6
   },
-  "totalMarks": 18,
+  "totalMarks": 6,
   "rows": [
    {
-    "id": "cons-2021-hl-q2-b-r1",
+    "id": "cons-2021-hl-q2-b-repairing-a-chimney-stack-r1",
     "kind": "anyN",
     "verbatim": "Repairing a chimney stack",
     "marks": 6,
@@ -217,9 +267,34 @@
       "Building materials or tools used to fix the chimney may fall from a height and pose a risk to those on the ground"
      ]
     }
-   },
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2021-hl-q2-b-overhead-electrical-cables",
+  "topicId": "cons-1-8",
+  "conceptId": "risks-in-chimney-roof-and-scaffold-work-overhead-electrical-cables",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2021 HL Q2(b) — Overhead electrical cables",
+  "questionText": "Discuss in detail one possible risk associated with each of the following: • overhead electrical cables.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 x 6",
+   "answer": 1,
+   "ofParts": 5,
+   "perPart": 6
+  },
+  "totalMarks": 6,
+  "rows": [
    {
-    "id": "cons-2021-hl-q2-b-r2",
+    "id": "cons-2021-hl-q2-b-overhead-electrical-cables-r1",
     "kind": "anyN",
     "verbatim": "Overhead electrical cables",
     "marks": 6,
@@ -236,9 +311,34 @@
       "High plant or equipment e.g. excavators, MEWPs, scaffold poles, tipper vehicles and cranes, presents a particularly high risk for their operators"
      ]
     }
-   },
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2021-hl-q2-b-on-site-health-hygiene",
+  "topicId": "cons-1-8",
+  "conceptId": "risks-in-chimney-roof-and-scaffold-work-on-site-health-hygiene",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2021 HL Q2(b) — On-site health & hygiene",
+  "questionText": "Discuss in detail one possible risk associated with each of the following: • on-site health & hygiene.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 x 6",
+   "answer": 1,
+   "ofParts": 5,
+   "perPart": 6
+  },
+  "totalMarks": 6,
+  "rows": [
    {
-    "id": "cons-2021-hl-q2-b-r3",
+    "id": "cons-2021-hl-q2-b-on-site-health-hygiene-r1",
     "kind": "anyN",
     "verbatim": "On-site health & hygiene",
     "marks": 6,
@@ -406,29 +506,29 @@
   "notes": ""
  },
  {
-  "id": "cons-2021-hl-q3-c",
+  "id": "cons-2021-hl-q3-c-advantages",
   "topicId": "cons-1-1",
-  "conceptId": "working-from-a-home-office",
+  "conceptId": "working-from-a-home-office-advantages",
   "level": "higher",
   "year": 2021,
   "subjectId": "construction-studies",
   "section": "B",
-  "questionRef": "2021 HL Q3(c)",
-  "questionText": "Discuss two advantages and two disadvantages of working from a home office.",
+  "questionRef": "2021 HL Q3(c) — Advantages",
+  "questionText": "Discuss two advantages of working from a home office.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "2 x 3 + 2 x 3",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "bestNofParts",
+   "notation": "2 x 3",
+   "answer": 2,
+   "ofParts": 8,
+   "perPart": 3
   },
-  "totalMarks": 12,
+  "totalMarks": 6,
   "rows": [
    {
-    "id": "cons-2021-hl-q3-c-r1",
+    "id": "cons-2021-hl-q3-c-advantages-r1",
     "kind": "anyN",
     "verbatim": "Advantages",
     "marks": 6,
@@ -448,9 +548,34 @@
       "reduced distractions"
      ]
     }
-   },
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2021-hl-q3-c-disadvantages",
+  "topicId": "cons-1-1",
+  "conceptId": "working-from-a-home-office-disadvantages",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2021 HL Q3(c) — Disadvantages",
+  "questionText": "Discuss two disadvantages of working from a home office.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 3",
+   "answer": 2,
+   "ofParts": 6,
+   "perPart": 3
+  },
+  "totalMarks": 6,
+  "rows": [
    {
-    "id": "cons-2021-hl-q3-c-r2",
+    "id": "cons-2021-hl-q3-c-disadvantages-r1",
     "kind": "anyN",
     "verbatim": "Disadvantages",
     "marks": 6,
@@ -473,29 +598,29 @@
   "notes": ""
  },
  {
-  "id": "cons-2021-hl-q4-a",
+  "id": "cons-2021-hl-q4-a-availability-of-services",
   "topicId": "cons-1-3",
-  "conceptId": "factors-when-selecting-a-site",
+  "conceptId": "factors-when-selecting-a-site-availability-of-services",
   "level": "higher",
   "year": 2021,
   "subjectId": "construction-studies",
   "section": "B",
-  "questionRef": "2021 HL Q4(a)",
-  "questionText": "Using notes and freehand sketches, discuss in detail each of the following factors when selecting a site for a new house in a rural setting: • availability of services • existing trees and hedgerows • site topography.",
+  "questionRef": "2021 HL Q4(a) — Availability of services",
+  "questionText": "Using notes and freehand sketches, discuss in detail each of the following factors when selecting a site for a new house in a rural setting: • availability of services.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "2 x 4 + 2 x 4 + 2 x 4",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "bestNofParts",
+   "notation": "2 x 4",
+   "answer": 2,
+   "ofParts": 4,
+   "perPart": 4
   },
-  "totalMarks": 24,
+  "totalMarks": 8,
   "rows": [
    {
-    "id": "cons-2021-hl-q4-a-r1",
+    "id": "cons-2021-hl-q4-a-availability-of-services-r1",
     "kind": "anyN",
     "verbatim": "Availability of services",
     "marks": 8,
@@ -511,9 +636,34 @@
       "Remote sites may have no economical access to any services"
      ]
     }
-   },
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2021-hl-q4-a-existing-trees-and-hedgerows",
+  "topicId": "cons-1-3",
+  "conceptId": "factors-when-selecting-a-site-existing-trees-and-hedgerows",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2021 HL Q4(a) — Existing trees and hedgerows",
+  "questionText": "Using notes and freehand sketches, discuss in detail each of the following factors when selecting a site for a new house in a rural setting: • existing trees and hedgerows.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 4",
+   "answer": 2,
+   "ofParts": 8,
+   "perPart": 4
+  },
+  "totalMarks": 8,
+  "rows": [
    {
-    "id": "cons-2021-hl-q4-a-r2",
+    "id": "cons-2021-hl-q4-a-existing-trees-and-hedgerows-r1",
     "kind": "anyN",
     "verbatim": "Existing trees and hedgerows",
     "marks": 8,
@@ -533,9 +683,34 @@
       "Mature trees can be integrated into new house design"
      ]
     }
-   },
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2021-hl-q4-a-site-topography",
+  "topicId": "cons-1-3",
+  "conceptId": "factors-when-selecting-a-site-site-topography",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2021 HL Q4(a) — Site topography",
+  "questionText": "Using notes and freehand sketches, discuss in detail each of the following factors when selecting a site for a new house in a rural setting: • site topography.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 4",
+   "answer": 2,
+   "ofParts": 6,
+   "perPart": 4
+  },
+  "totalMarks": 8,
+  "rows": [
    {
-    "id": "cons-2021-hl-q4-a-r3",
+    "id": "cons-2021-hl-q4-a-site-topography-r1",
     "kind": "anyN",
     "verbatim": "Site topography",
     "marks": 8,
@@ -1714,29 +1889,29 @@
   "notes": ""
  },
  {
-  "id": "cons-2022-hl-q2-a",
+  "id": "cons-2022-hl-q2-a-entrance-access",
   "topicId": "cons-1-1",
-  "conceptId": "designing-for-lifetime-use",
+  "conceptId": "designing-for-lifetime-use-entrance-access",
   "level": "higher",
   "year": 2022,
   "subjectId": "construction-studies",
   "section": "B",
-  "questionRef": "2022 HL Q2(a)",
-  "questionText": "Using notes and freehand sketches, discuss two best practice guidelines that should be followed when designing for lifetime use at each of the following areas of a house: • entrance access • internal corridor.",
+  "questionRef": "2022 HL Q2(a) — Entrance access",
+  "questionText": "Using notes and freehand sketches, discuss two best practice guidelines that should be followed when designing for lifetime use at each of the following areas of a house: • entrance access.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "4 x 3 + 4 x 3",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "bestNofParts",
+   "notation": "4 x 3",
+   "answer": 4,
+   "ofParts": 9,
+   "perPart": 3
   },
-  "totalMarks": 24,
+  "totalMarks": 12,
   "rows": [
    {
-    "id": "cons-2022-hl-q2-a-r1",
+    "id": "cons-2022-hl-q2-a-entrance-access-r1",
     "kind": "anyN",
     "verbatim": "Entrance access",
     "marks": 12,
@@ -1757,9 +1932,34 @@
       "Provide a vision panel to create a clear view through the door for people at all eye levels"
      ]
     }
-   },
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2022-hl-q2-a-internal-corridor",
+  "topicId": "cons-1-1",
+  "conceptId": "designing-for-lifetime-use-internal-corridor",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2022 HL Q2(a) — Internal corridor",
+  "questionText": "Using notes and freehand sketches, discuss two best practice guidelines that should be followed when designing for lifetime use at each of the following areas of a house: • internal corridor.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 x 3",
+   "answer": 4,
+   "ofParts": 7,
+   "perPart": 3
+  },
+  "totalMarks": 12,
+  "rows": [
    {
-    "id": "cons-2022-hl-q2-a-r2",
+    "id": "cons-2022-hl-q2-a-internal-corridor-r1",
     "kind": "anyN",
     "verbatim": "Internal corridor",
     "marks": 12,
@@ -2391,29 +2591,29 @@
   "notes": ""
  },
  {
-  "id": "cons-2022-hl-q8-c",
+  "id": "cons-2022-hl-q8-c-advantages",
   "topicId": "cons-5-2",
-  "conceptId": "advantages-and-disadvantages-of-a-solar-collector",
+  "conceptId": "advantages-and-disadvantages-of-a-solar-collector-advantages",
   "level": "higher",
   "year": 2022,
   "subjectId": "construction-studies",
   "section": "B",
-  "questionRef": "2022 HL Q8(c)",
-  "questionText": "Discuss two advantages and two disadvantages of installing a solar collector system in a domestic house.",
+  "questionRef": "2022 HL Q8(c) — Advantages",
+  "questionText": "Discuss two advantages of installing a solar collector system in a domestic house.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "2 x 4 + 2 x 4",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "bestNofParts",
+   "notation": "2 x 4",
+   "answer": 2,
+   "ofParts": 4,
+   "perPart": 4
   },
-  "totalMarks": 16,
+  "totalMarks": 8,
   "rows": [
    {
-    "id": "cons-2022-hl-q8-c-r1",
+    "id": "cons-2022-hl-q8-c-advantages-r1",
     "kind": "anyN",
     "verbatim": "Advantages",
     "marks": 8,
@@ -2429,9 +2629,34 @@
       "Reduces dependency on fossil fuel - the more solar energy is used, the less we will rely on the world’s finite fossil fuels"
      ]
     }
-   },
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2022-hl-q8-c-disadvantages",
+  "topicId": "cons-5-2",
+  "conceptId": "advantages-and-disadvantages-of-a-solar-collector-disadvantages",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2022 HL Q8(c) — Disadvantages",
+  "questionText": "Discuss two disadvantages of installing a solar collector system in a domestic house.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 4",
+   "answer": 2,
+   "ofParts": 4,
+   "perPart": 4
+  },
+  "totalMarks": 8,
+  "rows": [
    {
-    "id": "cons-2022-hl-q8-c-r2",
+    "id": "cons-2022-hl-q8-c-disadvantages-r1",
     "kind": "anyN",
     "verbatim": "Disadvantages",
     "marks": 8,
@@ -3299,29 +3524,29 @@
   "notes": ""
  },
  {
-  "id": "cons-2023-hl-q2-a",
+  "id": "cons-2023-hl-q2-a-communication",
   "topicId": "cons-1-8",
-  "conceptId": "maintaining-a-safe-working-environment",
+  "conceptId": "maintaining-a-safe-working-environment-communication",
   "level": "higher",
   "year": 2023,
   "subjectId": "construction-studies",
   "section": "B",
-  "questionRef": "2023 HL Q2(a)",
-  "questionText": "Discuss in detail the importance of each of the following in maintaining a safe working environment on a construction site: • communication • supervision • training.",
+  "questionRef": "2023 HL Q2(a) — Communication",
+  "questionText": "Discuss in detail the importance of each of the following in maintaining a safe working environment on a construction site: • communication.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "1 x 6 + 1 x 6 + 1 x 6",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "bestNofParts",
+   "notation": "1 x 6",
+   "answer": 1,
+   "ofParts": 8,
+   "perPart": 6
   },
-  "totalMarks": 18,
+  "totalMarks": 6,
   "rows": [
    {
-    "id": "cons-2023-hl-q2-a-r1",
+    "id": "cons-2023-hl-q2-a-communication-r1",
     "kind": "anyN",
     "verbatim": "Communication",
     "marks": 6,
@@ -3341,9 +3566,34 @@
       "All communications should be clear, concise, and to the point using understandable terms to avoid misinterpretation which may lead to accidents Any other relevant points:"
      ]
     }
-   },
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2023-hl-q2-a-supervision",
+  "topicId": "cons-1-8",
+  "conceptId": "maintaining-a-safe-working-environment-supervision",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2023 HL Q2(a) — Supervision",
+  "questionText": "Discuss in detail the importance of each of the following in maintaining a safe working environment on a construction site: • supervision.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 x 6",
+   "answer": 1,
+   "ofParts": 8,
+   "perPart": 6
+  },
+  "totalMarks": 6,
+  "rows": [
    {
-    "id": "cons-2023-hl-q2-a-r2",
+    "id": "cons-2023-hl-q2-a-supervision-r1",
     "kind": "anyN",
     "verbatim": "Supervision",
     "marks": 6,
@@ -3363,9 +3613,34 @@
       "High-risk activities will need to be closely monitored by supervisors Any other relevant points:"
      ]
     }
-   },
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2023-hl-q2-a-training",
+  "topicId": "cons-1-8",
+  "conceptId": "maintaining-a-safe-working-environment-training",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2023 HL Q2(a) — Training",
+  "questionText": "Discuss in detail the importance of each of the following in maintaining a safe working environment on a construction site: • training.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 x 6",
+   "answer": 1,
+   "ofParts": 8,
+   "perPart": 6
+  },
+  "totalMarks": 6,
+  "rows": [
    {
-    "id": "cons-2023-hl-q2-a-r3",
+    "id": "cons-2023-hl-q2-a-training-r1",
     "kind": "anyN",
     "verbatim": "Training",
     "marks": 6,
@@ -3530,29 +3805,29 @@
   "notes": ""
  },
  {
-  "id": "cons-2023-hl-q3-c",
+  "id": "cons-2023-hl-q3-c-advantages",
   "topicId": "cons-1-1",
-  "conceptId": "living-space-on-the-first-floor",
+  "conceptId": "living-space-on-the-first-floor-advantages",
   "level": "higher",
   "year": 2023,
   "subjectId": "construction-studies",
   "section": "B",
-  "questionRef": "2023 HL Q3(c)",
-  "questionText": "Discuss two advantages and two disadvantages of locating a kitchen/dining and living area on the first floor of a dwelling house.",
+  "questionRef": "2023 HL Q3(c) — Advantages",
+  "questionText": "Discuss two advantages of locating a kitchen/dining and living area on the first floor of a dwelling house.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "2 x 5 + 2 x 5",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "bestNofParts",
+   "notation": "2 x 5",
+   "answer": 2,
+   "ofParts": 5,
+   "perPart": 5
   },
-  "totalMarks": 20,
+  "totalMarks": 10,
   "rows": [
    {
-    "id": "cons-2023-hl-q3-c-r1",
+    "id": "cons-2023-hl-q3-c-advantages-r1",
     "kind": "anyN",
     "verbatim": "Advantages",
     "marks": 10,
@@ -3569,9 +3844,34 @@
       "Living areas on the first floor of a house will have greater privacy from neighbouring two-story dwellings. Traditionally, living rooms on the ground floor use hedges, fences and curtains which in turn block out the view and light"
      ]
     }
-   },
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2023-hl-q3-c-disadvantages",
+  "topicId": "cons-1-1",
+  "conceptId": "living-space-on-the-first-floor-disadvantages",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2023 HL Q3(c) — Disadvantages",
+  "questionText": "Discuss two disadvantages of locating a kitchen/dining and living area on the first floor of a dwelling house.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 5",
+   "answer": 2,
+   "ofParts": 5,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
    {
-    "id": "cons-2023-hl-q3-c-r2",
+    "id": "cons-2023-hl-q3-c-disadvantages-r1",
     "kind": "anyN",
     "verbatim": "Disadvantages",
     "marks": 10,
@@ -3943,29 +4243,29 @@
   "notes": ""
  },
  {
-  "id": "cons-2023-hl-q9-c",
+  "id": "cons-2023-hl-q9-c-advantages",
   "topicId": "cons-3-6",
-  "conceptId": "advantages-and-disadvantages-of-triple-glazing",
+  "conceptId": "advantages-and-disadvantages-of-triple-glazing-advantages",
   "level": "higher",
   "year": 2023,
   "subjectId": "construction-studies",
   "section": "B",
-  "questionRef": "2023 HL Q9(c)",
-  "questionText": "Discuss two advantages and two disadvantages of installing triple glazing in a modern window framing system.",
+  "questionRef": "2023 HL Q9(c) — Advantages",
+  "questionText": "Discuss two advantages of installing triple glazing in a modern window framing system.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "2 x 4 + 2 x 4",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "bestNofParts",
+   "notation": "2 x 4",
+   "answer": 2,
+   "ofParts": 5,
+   "perPart": 4
   },
-  "totalMarks": 16,
+  "totalMarks": 8,
   "rows": [
    {
-    "id": "cons-2023-hl-q9-c-r1",
+    "id": "cons-2023-hl-q9-c-advantages-r1",
     "kind": "anyN",
     "verbatim": "Advantages",
     "marks": 8,
@@ -3982,9 +4282,34 @@
       "Double glazing reduces thermal transmittance. The inner pane of glass is not as cold as the outside and moisture doesn’t form. Triple glazing can reduce the cold on the inner pane of glass even more with its super thermal efficiency, resulting in less condensation on the inside of windows"
      ]
     }
-   },
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2023-hl-q9-c-disadvantages",
+  "topicId": "cons-3-6",
+  "conceptId": "advantages-and-disadvantages-of-triple-glazing-disadvantages",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2023 HL Q9(c) — Disadvantages",
+  "questionText": "Discuss two disadvantages of installing triple glazing in a modern window framing system.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 4",
+   "answer": 2,
+   "ofParts": 4,
+   "perPart": 4
+  },
+  "totalMarks": 8,
+  "rows": [
    {
-    "id": "cons-2023-hl-q9-c-r2",
+    "id": "cons-2023-hl-q9-c-disadvantages-r1",
     "kind": "anyN",
     "verbatim": "Disadvantages",
     "marks": 8,
@@ -4824,29 +5149,29 @@
   "notes": ""
  },
  {
-  "id": "cons-2024-hl-q5-c",
+  "id": "cons-2024-hl-q5-c-advantages",
   "topicId": "cons-5-3",
-  "conceptId": "wood-pellet-heating-system",
+  "conceptId": "wood-pellet-heating-system-advantages",
   "level": "higher",
   "year": 2024,
   "subjectId": "construction-studies",
   "section": "B",
-  "questionRef": "2024 HL Q5(c)",
-  "questionText": "Discuss two advantages and two disadvantages of designing a domestic heating system to incorporate a wood pellet boiler stove.",
+  "questionRef": "2024 HL Q5(c) — Advantages",
+  "questionText": "Discuss two advantages of designing a domestic heating system to incorporate a wood pellet boiler stove.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "2 x 3 + 2 x 3",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "bestNofParts",
+   "notation": "2 x 3",
+   "answer": 2,
+   "ofParts": 5,
+   "perPart": 3
   },
-  "totalMarks": 12,
+  "totalMarks": 6,
   "rows": [
    {
-    "id": "cons-2024-hl-q5-c-r1",
+    "id": "cons-2024-hl-q5-c-advantages-r1",
     "kind": "anyN",
     "verbatim": "Advantages",
     "marks": 6,
@@ -4863,9 +5188,34 @@
       "Ease of use – Pellet stoves come with programmable thermostats allowing users to control the desired temperature. Some pellet stoves feature automatic self-cleaning burners, reducing maintenance"
      ]
     }
-   },
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2024-hl-q5-c-disadvantages",
+  "topicId": "cons-5-3",
+  "conceptId": "wood-pellet-heating-system-disadvantages",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2024 HL Q5(c) — Disadvantages",
+  "questionText": "Discuss two disadvantages of designing a domestic heating system to incorporate a wood pellet boiler stove.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 3",
+   "answer": 2,
+   "ofParts": 5,
+   "perPart": 3
+  },
+  "totalMarks": 6,
+  "rows": [
    {
-    "id": "cons-2024-hl-q5-c-r2",
+    "id": "cons-2024-hl-q5-c-disadvantages-r1",
     "kind": "anyN",
     "verbatim": "Disadvantages",
     "marks": 6,
@@ -6773,29 +7123,29 @@
   "notes": ""
  },
  {
-  "id": "cons-2025-ol-q7-c",
+  "id": "cons-2025-ol-q7-c-advantage",
   "topicId": "cons-1-1",
-  "conceptId": "a-garden-office-separate-from-the-home",
+  "conceptId": "a-garden-office-separate-from-the-home-advantage",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "construction-studies",
   "section": "B",
-  "questionRef": "2025 OL Q7(c)",
-  "questionText": "Discuss one advantage and one disadvantage of constructing a garden office separate from the home.",
+  "questionRef": "2025 OL Q7(c) — Advantage",
+  "questionText": "Discuss one advantage of constructing a garden office separate from the home.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "1 x 6 + 1 x 6",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "bestNofParts",
+   "notation": "1 x 6",
+   "answer": 1,
+   "ofParts": 5,
+   "perPart": 6
   },
-  "totalMarks": 12,
+  "totalMarks": 6,
   "rows": [
    {
-    "id": "cons-2025-ol-q7-c-r1",
+    "id": "cons-2025-ol-q7-c-advantage-r1",
     "kind": "anyN",
     "verbatim": "Advantage",
     "marks": 6,
@@ -6812,9 +7162,34 @@
       "The office does not take up space within the house"
      ]
     }
-   },
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2025-ol-q7-c-disadvantage",
+  "topicId": "cons-1-1",
+  "conceptId": "a-garden-office-separate-from-the-home-disadvantage",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2025 OL Q7(c) — Disadvantage",
+  "questionText": "Discuss one disadvantage of constructing a garden office separate from the home.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 x 6",
+   "answer": 1,
+   "ofParts": 5,
+   "perPart": 6
+  },
+  "totalMarks": 6,
+  "rows": [
    {
-    "id": "cons-2025-ol-q7-c-r2",
+    "id": "cons-2025-ol-q7-c-disadvantage-r1",
     "kind": "anyN",
     "verbatim": "Disadvantage",
     "marks": 6,

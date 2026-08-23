@@ -177,7 +177,7 @@ class Author:
 
     # ---- the card -------------------------------------------------------
     def card(self, q, letter, *, cid, topic, concept, note='', notes='', stem='',
-             only=None):
+             only=None, split=True):
         """One card per PART, with one row per group the scheme names.
 
         NOT one card per group. A group-level card would need a group-level
@@ -234,7 +234,7 @@ class Author:
             gs = [(None, None, merged)]
             stem = stem or ('The scheme groups its answer under: ' + '; '.join(names)
                             if names else stem)
-        rows, parts_note = [], []
+        rows, parts_note, row_names = [], [], []
         for gi, (name, _, items) in enumerate(gs):
             if only is not None and gi not in only:
                 continue
@@ -280,6 +280,7 @@ class Author:
             label = (name or qtext)[:120]
             rows.append(anyN(f'{cid}-r{len(rows) + 1}', label, n * per, n, per,
                              options, name or ''))
+            row_names.append(name)
             parts_note.append(f'{n} x {per}')
         if not rows:
             raise Refused(f'Q{q}({letter}): no priced group with usable options')
@@ -298,6 +299,36 @@ class Author:
                 raise Refused(
                     f'Q{q}({letter}): rows make {total} but the scheme prints '
                     f'{sorted(printed)} for this part — not carding a partial tariff')
+        # One card per row, where the PAPER's own sentence enumerates the rows.
+        # The narrowed question is that sentence with the other items deleted --
+        # never rewritten -- and narrow() returns nothing unless the result is a
+        # strict subsequence of what the SEC printed. All rows must narrow or
+        # none do: a half-split part would ask two of its items and silently
+        # drop the third. The marks still reconcile, because the split cards'
+        # totals are the row totals that were just checked against the part's.
+        if split and len(rows) > 1 and all(row_names):
+            narrowed = {nm: narrow(qtext, row_names, nm) for nm in row_names}
+            if all(narrowed.values()) and len(set(narrowed.values())) == len(rows):
+                for row, nm in zip(rows, row_names):
+                    slug = re.sub(r'[^a-z0-9]+', '-', nm.lower()).strip('-')[:44]
+                    sub = f'{cid}-{slug}'
+                    if sub in self._used:
+                        continue
+                    g = row['group']
+                    self.cards.append(_card(
+                        sub, self.year, self.deck_level, topic, f'{concept}-{slug}',
+                        # The item goes on the CITATION, the way Economics
+                        # cites "2022 OL Q15(a)(iii) — social benefit". Both
+                        # halves of a split cite the same part, and the build
+                        # keeps one card per citation, so without this the
+                        # second half of every split was dropped as a duplicate.
+                        f'{self.ref(q, letter)} — {nm}', narrowed[nm],
+                        f"{g['claimMax']} x {g['perOption']}", row['marks'],
+                        [dict(row, id=f'{sub}-r1')], notes, stem=stem,
+                        tariff_kind='bestNofParts'))
+                    self._used.add(sub)
+                return self.cards[-1]
+
         kind = 'bestNofParts' if len(rows) == 1 else 'fixed'
         self.cards.append(_card(
             cid, self.year, self.deck_level, topic, concept, self.ref(q, letter),
@@ -338,3 +369,142 @@ if __name__ == '__main__':
                 print(f'  --   {str(e)[:118]}')
                 refused += 1
     print(f'\n{year} {level.upper()}: {ok} priceable, {refused} not priced by the scheme')
+
+
+# ---------------------------------------------------------------- splitting --
+# A multi-row card can become one card per row, but ONLY where the paper's own
+# sentence enumerates the items. The narrowed question is then built by DELETING
+# the other items from that sentence -- never by rewriting it, reordering it or
+# supplying a word of our own -- so the result is literally a subsequence of
+# what the SEC printed. narrow() proves that before it returns.
+#
+# Where the scheme's groups are its own invention rather than the paper's list
+# ("Foundation, external wall and level entrance" against a question that says
+# "the door, the external wall and the ground floor"), or where the question
+# points at another part instead of listing anything ("each risk identified at
+# 2(b) above"), there is nothing to narrow and the card stays whole.
+
+def _index_map(text):
+    """(squashed text, index of each squashed char in the original)."""
+    keep, idx = [], []
+    for i, ch in enumerate(text):
+        c = re.sub(r'[^a-z0-9]', '', ch.lower())
+        if c:
+            keep.append(c)
+            idx.append(i)
+    return ''.join(keep), idx
+
+
+def locate(text, item):
+    """(start, end) of `item` inside `text`, ignoring case and punctuation."""
+    hay, idx = _index_map(text)
+    needle, _ = _index_map(item)
+    if len(needle) < 4:
+        return None
+    at = hay.find(needle)
+    if at < 0:
+        return None
+    return idx[at], idx[at + len(needle) - 1] + 1
+
+
+QUANT = re.compile(r'(?:\b(?:one|two|three|four|five|six|\d{1,2})\s*)$', re.I)
+
+
+def _span(question, item):
+    """The item's span, widened to what belongs with it and nothing more.
+
+    Widened FORWARD over a closing bracket the squashed match cannot see --
+    "personal protective equipment (PPE)" ends at the second E, and leaving the
+    ")" behind put a stray bracket in the question. Widened BACKWARD over the
+    quantifier and the separator that introduce it, so deleting one member of
+    "two advantages and two disadvantages" does not stnad a "two" or an "and".
+
+    Returns None where the item is not separable -- where what precedes it is
+    ordinary prose rather than a bullet, a comma, "and", or the colon that opens
+    the list. An item embedded mid-clause cannot be removed without rewriting
+    the sentence, and rewriting is the one thing that is not allowed here.
+    """
+    found = locate(question, item)
+    if found is None:
+        return None
+    lo, hi = found
+    while hi < len(question) and question[hi] in ')]':
+        hi += 1
+    cut = False
+    while True:
+        before = question[:lo]
+        stripped = before.rstrip(' \t')
+        if stripped.endswith(('•', '·')):
+            lo = len(stripped) - 1
+            cut = True
+            break
+        if stripped.lower().endswith(' and'):
+            lo = len(stripped) - 4
+            cut = True
+            break
+        if stripped.endswith(','):
+            lo = len(stripped) - 1
+            cut = True
+            break
+        m = QUANT.search(before)
+        if m and not cut:
+            lo = m.start()
+            continue                      # then look again for the separator
+        break
+    if not cut:
+        # Nothing separable in front. The first member of a pair carries its
+        # separator BEHIND it instead -- "two advantages and two disadvantages"
+        # -- so the "and" is taken with it. Only tried once a quantifier has
+        # been consumed, which is what marks this as a list member rather than
+        # a phrase that happens to appear mid-sentence.
+        after = question[hi:]
+        m = re.match(r'\s+(and|,)\s', after, re.I)
+        if m and QUANT.search(question[:found[0]]):
+            return lo, hi + m.end() - 1
+        return None
+    return lo, hi
+
+
+def narrow(question, items, keep):
+    """The paper's sentence with every item but `keep` deleted.
+
+    Returns None unless the result is a strict subsequence of the original --
+    that is the whole safety property. If a cleanup ever introduced so much as a
+    letter that the SEC did not print, this returns nothing and the caller keeps
+    the undivided card.
+    """
+    spans = []
+    for it in items:
+        if it == keep:
+            continue
+        sp = _span(question, it)
+        if sp is None:
+            return None
+        spans.append(sp)
+    if not spans:
+        return None
+    out, last = [], 0
+    for lo, hi in sorted(spans):
+        if lo < last:
+            return None                       # overlapping items: not separable
+        out.append(question[last:lo])
+        last = hi
+    out.append(question[last:])
+    text = re.sub(r'\s+', ' ', ''.join(out)).strip()
+    text = re.sub(r'\s+([.,;:])', r'\1', text)
+    text = re.sub(r'[:•]\s*([.,;])', r'\1', text).strip(' •·-–,')
+    if not text.endswith('.'):
+        text = text.rstrip(':;, ') + '.'
+    # The guarantee: every character of the result, in order, came from the
+    # original. Whitespace and the one closing full stop are exempt.
+    a, _ = _index_map(text)
+    b, _ = _index_map(question)
+    i = 0
+    for ch in a:
+        i = b.find(ch, i)
+        if i < 0:
+            return None
+        i += 1
+    if locate(text, keep) is None:
+        return None
+    return text
