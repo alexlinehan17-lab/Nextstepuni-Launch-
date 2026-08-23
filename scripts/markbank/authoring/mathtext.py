@@ -152,11 +152,25 @@ def line_text(line):
         # An exponent is short. Prose set a size smaller than the body -- an
         # examiner's aside, a footnote -- is not an exponent, and wrapping it
         # turned "In a C scale where" into "^(C scale)^(where)".
+        # The other direction: a smaller span sitting LOWER is a subscript. It
+        # was excluded outright, which spelled a logarithm's base into the
+        # number beside it -- "log_3 7" came out "log37".
+        lowered = (s['size'] < base - 1.5 and prev is not None
+                   and s['bbox'][1] > prev['bbox'][1] + 0.2)
         body = t.strip()
-        if raised and (len(body) > 8 or re.search(r'[A-Za-z]{2,}', body)):
-            raised = False
-        out.append(f'^({body})' if raised and body else t)
-    return spacing(superscripts(''.join(out).strip()))
+        if len(body) > 8 or re.search(r'[A-Za-z]{2,}', body):
+            raised = lowered = False
+        # The space around the span belongs to the line, not to the exponent.
+        # Stripping it into the wrapper closed a gap the scheme prints:
+        # "Tn = p" came out "T_n= p".
+        lead, trail = t[:len(t) - len(t.lstrip())], t[len(t.rstrip()):]
+        if raised and body:
+            out.append(f'{lead}^({body}){trail}')
+        elif lowered and body:
+            out.append(f'{lead}_({body}){trail}')
+        else:
+            out.append(t)
+    return spacing(subscripts(superscripts(''.join(out).strip())))
 
 
 def placed(page, cut=300):
@@ -284,7 +298,13 @@ SUP = {'0': '⁰', '1': '¹', '2': '²', '3': '³', '4': '⁴', '5': '⁵',
        'n': 'ⁿ', 'i': 'ⁱ', '(': '⁽', ')': '⁾'}
 
 
-OPERATOR = re.compile(r'(?<=[A-Za-z0-9)\]|²³⁴⁵⁶⁷⁸⁹¹⁰])\s*([=+×÷≤≥<>≠])\s*')
+# The character before the operator can be a raised or lowered one -- a
+# subscript n, an exponent, a prime. Listing only the superscript digits
+# left "T_n= p" unspaced once subscripts started being read at all.
+OPERATOR = re.compile(
+    r'(?<=[A-Za-z0-9)\]|\u00b2\u00b3\u2074-\u2079\u00b9\u2070\u207f'
+    r'\u2080-\u208e\u2090-\u209c\u1d62\u1d63\u2032\u2033])'
+    r'\s*([=+\u00d7\u00f7\u2264\u2265<>\u2260])\s*')
 
 
 def spacing(text):
@@ -300,6 +320,30 @@ def spacing(text):
     """
     out = OPERATOR.sub(lambda m: f' {m.group(1)} ', text or '')
     return re.sub(r'\s{2,}', ' ', out).strip()
+
+
+SUB = {c: chr(0x2080 + i) for i, c in enumerate('0123456789')}
+SUB.update({'+': '\u208a', '-': '\u208b', '\u2212': '\u208b',
+            '(': '\u208d', ')': '\u208e',
+            'a': '\u2090', 'e': '\u2091', 'i': '\u1d62', 'n': '\u2099',
+            'x': '\u2093', 'r': '\u1d63', 't': '\u209c'})
+
+
+def subscripts(text):
+    """Render "_(3)" as a real subscript where every character has one.
+
+    The same argument as superscripts(), for the other direction: the scheme
+    writes a logarithm's base under the line, and dropping it spelled
+    "log-base-3 of 7" as "log37", which reads as thirty-seven. Anything with no
+    subscript glyph keeps the underscore form rather than being flattened,
+    because flattening changes the maths.
+    """
+    def one(m):
+        body = m.group(1)
+        if body and all(c in SUB for c in body):
+            return ''.join(SUB[c] for c in body)
+        return f'_({body})' if len(body) > 1 else f'_{body}'
+    return re.sub(r'_\(([^)]*)\)', one, text)
 
 
 def superscripts(text):

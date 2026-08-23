@@ -71,6 +71,7 @@ class Author:
                   for n, c in COMPONENT.items()}
         self.cards = []
         self._used = set()
+        self._flat = None
 
     def question(self, key):
         """The paper's wording for this unit.
@@ -106,6 +107,27 @@ class Author:
         if roman:
             tail += f'({roman})'
         return f'{self.year} {self.level.upper()} Paper {paper} {tail}'
+
+    def _flat_scheme(self):
+        """The whole scheme as one squashed string, for a traceability check.
+
+        The build refuses a card whose marking point it cannot find in the
+        scheme, and squashing to letters and digits is exactly the comparison
+        it makes. Making the same check here lets the author react to a failure
+        instead of emitting a card the build will silently drop.
+        """
+        if self._flat is None:
+            said = []
+            for i in range(len(self.S.doc)):
+                left, right = mathtext.placed(self.S.doc[i])
+                said.extend(t for _, t in left)
+                said.extend(t for _, t in right)
+            self._flat = _squash(' '.join(said))
+        return self._flat
+
+    def _traceable(self, rows):
+        flat = self._flat_scheme()
+        return all(_squash(t) in flat for _, t in rows)
 
     def _solution_rows(self, key):
         """The scheme's printed worked solution, read as marking points.
@@ -145,6 +167,17 @@ class Author:
             raise Refused(f'{self.ref(key)}: the scheme prints no ladder for this part')
         rows = [(lab, txt) for lab, txt in self.S.answer_rows(key)
                 if txt and not CONTENT_FREE.match(txt) and len(_squash(txt)) > 6]
+        # A marking point set as two-dimensional mathematics does not survive
+        # being read line by line: "cos C = (28^2 + 4^2 - 30^2) / (2(28)(4))"
+        # comes back as "cosC = 282 + 42-302 or equivalent 2(28)(4)", which is
+        # not what the scheme says and would not be readable if it were. The
+        # build drops those on provenance -- 85 of them -- so notice here and
+        # use the solution column instead, which the same scheme prints in one
+        # line at a time.
+        if rows and not self._traceable(rows):
+            spelled = self._solution_rows(key)
+            if spelled and self._traceable(spelled):
+                rows = spelled
         if not rows:
             rows = self._solution_rows(key)
         if not rows:
