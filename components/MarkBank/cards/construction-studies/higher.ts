@@ -311,6 +311,19 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: "LC029ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2021 Higher Level — © State Examinations Commission.",
+    id: "cons-2021-hl-q8-a", topicId: "cons-5-3", conceptId: "heating-and-hot-water-layout",
+    section: "B", questionRef: "2021 HL Q8(a)",
+    questionText: "Using notes and a single-line diagram, show a typical design layout for both the heating system and hot water system. Show two independently controlled heating zones, one on each floor. Include three radiators on each floor and give the typical sizes of the pipework.",
+    tariffModel: {"kind":"bestNofParts","notation":"1 x 4","answer":1,"ofParts":6,"perPart":4}, totalMarks: 4,
+    rows: [
+    { id: "cons-2021-hl-q8-a-r1", kind: "anyN", verbatim: "Typical sizes of pipework - any two", marks: 4, contextNote: "Typical sizes of pipework", openList: true, group: {"claimMax":1,"perOption":4,"options":["Ø15 mm Cold water rising main","Ø22 mm Primary flow and return to radiator","Ø15 mm Pipes to radiators","Ø22 mm Cold water feed to cylinder","Ø28 mm Hot water feed","Ø28 mm Overflow pipe"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2021 Higher Level — © State Examinations Commission.",
     id: "cons-2021-hl-q8-b", topicId: "cons-5-3", conceptId: "features-that-make-a-heating-system-efficient",
     section: "B", questionRef: "2021 HL Q8(b)",
     questionText: "Using notes and freehand sketches, describe two features that increase the efficiency of the heating system. Discuss the importance of each feature identified.",
@@ -492,6 +505,21 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"bestNofParts","notation":"2 x 6","answer":2,"ofParts":8,"perPart":6}, totalMarks: 12,
     rows: [
     { id: "cons-2022-hl-q2-c-r1", kind: "anyN", verbatim: "Advantages", marks: 12, contextNote: "Advantages", openList: true, group: {"claimMax":2,"perOption":6,"options":["Flexibility and ease of adaptability to meet people’s changing needs over time in a cost effective way","Sustainable design to improve comfort and energy efficiency","Allows for cradle-to-grave living with minimal interventions","Unexpected lifestyle changes may be accommodated with minimum disruption to other inhabitants and with limited increases in associated costs","Avoid the need for re-location or costly building works as you or your family’s needs change over time","Enables the widest possible number of people to participate at home, in society, and to live independently","A house is instantly resalable and ready to live in without incurring substantial increased reconstruction costs","Integration of smart infrastructure at the outset of home design avoids costly re-fits and also benefits everyone in terms of comfort, efficiency and quality of services"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level — © State Examinations Commission.",
+    id: "cons-2022-hl-q3-a", topicId: "cons-1-1", conceptId: "design-layout-for-an-extension",
+    section: "B", questionRef: "2022 HL Q3(a)",
+    questionText: "Using notes and freehand sketches, show a proposed design layout for the extension that incorporates each of the above requirements.",
+    tariffModel: {"kind":"fixed","notation":"1 x 5 + 1 x 5 + 1 x 5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    rows: [
+    { id: "cons-2022-hl-q3-a-r1", kind: "anyN", verbatim: "Note for separate living space", marks: 5, contextNote: "Separate additional living space", openList: true, group: {"claimMax":1,"perOption":5,"options":["Open-plan layouts so the daylight and sunlight can penetrate into the house","Kitchen to remain at the rear of the house with new living space in the extension – dining area provided in the link corridor","New extension to contain the kitchen with additional living space at the rear of the house"]} },
+    { id: "cons-2022-hl-q3-a-r2", kind: "anyN", verbatim: "Note for optimising daylight", marks: 5, contextNote: "Optimising daylight", openList: true, group: {"claimMax":1,"perOption":5,"options":["Large south facing windows to maximise light, solar gains and create a visual connection with nature","High performance - triple and quadruple low-e glazing - maintains thermal comfort internally and reduces glare","Remove large section of rear wall of house and install glazing to allow light into the rear of the house","Lower cill levels to allow daylight and sunlight to penetrate deeper into the house"]} },
+    { id: "cons-2022-hl-q3-a-r3", kind: "anyN", verbatim: "Note for internal courtyard", marks: 5, contextNote: "Internal courtyard", openList: true, group: {"claimMax":1,"perOption":5,"options":["Provide an internal courtyard at the rear linking the house the new extension","Installation of sliding, folding or swing doors to the courtyard to bring outside in for wellbeing of occupants","Provide outdoor living/dining space in the courtyard for occupants","Glazing on three side of the courtyard to link the house, courtyard and extension for occupants","Large south facing windows to maximise light, solar gains and create a visual connection with nature","Internal planting in the courtyard to bring nature into the house"]} },
     ],
   } as SecCard,
   {
@@ -1208,6 +1236,19 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"bestNofParts","notation":"1 x 4","answer":1,"ofParts":2,"perPart":4}, totalMarks: 4,
     rows: [
     { id: "cons-2024-hl-q7-b-r1", kind: "anyN", verbatim: "On your drawing, indicate the typical design detailing to ensure airtightness at the junction of the first floor joist a", marks: 4, openList: true, group: {"claimMax":1,"perOption":4,"options":["Airtightness barrier around joists","Junctions and corners sealed with airtightness tape"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2024 Higher Level — © State Examinations Commission.",
+    id: "cons-2024-hl-q8-a", topicId: "cons-5-2", conceptId: "hot-water-and-heating-layout",
+    section: "B", questionRef: "2024 HL Q8(a)",
+    questionText: "Using notes and a single-line diagram, show a typical design layout for both the hot water system and the heating system. On the diagram, show two independently controlled heating zones, one on each floor. Include two radiators on each floor and give typical sizes of the pipework.",
+    tariffModel: {"kind":"bestNofParts","notation":"1 x 4","answer":1,"ofParts":6,"perPart":4}, totalMarks: 4,
+    rows: [
+    { id: "cons-2024-hl-q8-a-r1", kind: "anyN", verbatim: "Typical sizes of pipework - any two", marks: 4, contextNote: "Typical sizes of pipework", openList: true, group: {"claimMax":1,"perOption":4,"options":["Ø15 mm Cold water rising main","Ø22 mm Primary flow and return to radiator","Ø15 mm Pipes to radiators","Ø22 mm Cold water feed to cylinder","Ø28 mm Hot water feed","Ø28 mm Overflow pipe"]} },
     ],
   } as SecCard,
   {

@@ -1086,6 +1086,51 @@
   "notes": ""
  },
  {
+  "id": "cons-2021-hl-q8-a",
+  "topicId": "cons-5-3",
+  "conceptId": "heating-and-hot-water-layout",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2021 HL Q8(a)",
+  "questionText": "Using notes and a single-line diagram, show a typical design layout for both the heating system and hot water system. Show two independently controlled heating zones, one on each floor. Include three radiators on each floor and give the typical sizes of the pipework.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 x 4",
+   "answer": 1,
+   "ofParts": 6,
+   "perPart": 4
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "cons-2021-hl-q8-a-r1",
+    "kind": "anyN",
+    "verbatim": "Typical sizes of pipework - any two",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Typical sizes of pipework",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Ø15 mm Cold water rising main",
+      "Ø22 mm Primary flow and return to radiator",
+      "Ø15 mm Pipes to radiators",
+      "Ø22 mm Cold water feed to cylinder",
+      "Ø28 mm Hot water feed",
+      "Ø28 mm Overflow pipe"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "cons-2021-hl-q8-b",
   "topicId": "cons-5-3",
   "conceptId": "features-that-make-a-heating-system-efficient",
@@ -2987,6 +3032,86 @@
    }
   ],
   "notes": ""
+ },
+ {
+  "id": "cons-2022-hl-q3-a",
+  "topicId": "cons-1-1",
+  "conceptId": "design-layout-for-an-extension",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2022 HL Q3(a)",
+  "questionText": "Using notes and freehand sketches, show a proposed design layout for the extension that incorporates each of the above requirements.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 x 5 + 1 x 5 + 1 x 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "cons-2022-hl-q3-a-r1",
+    "kind": "anyN",
+    "verbatim": "Note for separate living space",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Separate additional living space",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Open-plan layouts so the daylight and sunlight can penetrate into the house",
+      "Kitchen to remain at the rear of the house with new living space in the extension – dining area provided in the link corridor",
+      "New extension to contain the kitchen with additional living space at the rear of the house"
+     ]
+    }
+   },
+   {
+    "id": "cons-2022-hl-q3-a-r2",
+    "kind": "anyN",
+    "verbatim": "Note for optimising daylight",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Optimising daylight",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Large south facing windows to maximise light, solar gains and create a visual connection with nature",
+      "High performance - triple and quadruple low-e glazing - maintains thermal comfort internally and reduces glare",
+      "Remove large section of rear wall of house and install glazing to allow light into the rear of the house",
+      "Lower cill levels to allow daylight and sunlight to penetrate deeper into the house"
+     ]
+    }
+   },
+   {
+    "id": "cons-2022-hl-q3-a-r3",
+    "kind": "anyN",
+    "verbatim": "Note for internal courtyard",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Internal courtyard",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Provide an internal courtyard at the rear linking the house the new extension",
+      "Installation of sliding, folding or swing doors to the courtyard to bring outside in for wellbeing of occupants",
+      "Provide outdoor living/dining space in the courtyard for occupants",
+      "Glazing on three side of the courtyard to link the house, courtyard and extension for occupants",
+      "Large south facing windows to maximise light, solar gains and create a visual connection with nature",
+      "Internal planting in the courtyard to bring nature into the house"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme awards 30 marks for this part. The 15 on this card are the marks it states answers for; the other 15 go to Proposed design layout sketch for extension to include separate living (15) — the drawing itself and anything the scheme prices without saying what earns it."
  },
  {
   "id": "cons-2022-hl-q3-b",
@@ -8084,6 +8209,51 @@
   "notes": ""
  },
  {
+  "id": "cons-2024-hl-q8-a",
+  "topicId": "cons-5-2",
+  "conceptId": "hot-water-and-heating-layout",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2024 HL Q8(a)",
+  "questionText": "Using notes and a single-line diagram, show a typical design layout for both the hot water system and the heating system. On the diagram, show two independently controlled heating zones, one on each floor. Include two radiators on each floor and give typical sizes of the pipework.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 x 4",
+   "answer": 1,
+   "ofParts": 6,
+   "perPart": 4
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "cons-2024-hl-q8-a-r1",
+    "kind": "anyN",
+    "verbatim": "Typical sizes of pipework - any two",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Typical sizes of pipework",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Ø15 mm Cold water rising main",
+      "Ø22 mm Primary flow and return to radiator",
+      "Ø15 mm Pipes to radiators",
+      "Ø22 mm Cold water feed to cylinder",
+      "Ø28 mm Hot water feed",
+      "Ø28 mm Overflow pipe"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "cons-2024-hl-q8-b",
   "topicId": "cons-5-2",
   "conceptId": "renewable-energy-for-hot-water",
@@ -10527,6 +10697,55 @@
    }
   ],
   "notes": ""
+ },
+ {
+  "id": "cons-2025-ol-q2-b",
+  "topicId": "cons-3-9",
+  "conceptId": "insulating-a-sloped-ceiling",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2025 OL Q2(b)",
+  "questionText": "Using notes and freehand sketches, show one suitable method of highly insulating the sloped ceiling. Show on your sketch how the ceiling is to be finished internally. Specify the type and thickness of insulation.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 x 16",
+   "answer": 1,
+   "ofParts": 10,
+   "perPart": 16
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "cons-2025-ol-q2-b-r1",
+    "kind": "anyN",
+    "verbatim": "Method of insulating the sloped ceiling note & sketch",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "One suitable method of highly insulating the sloped ceiling",
+    "group": {
+     "claimMax": 1,
+     "perOption": 16,
+     "options": [
+      "Cut the insulation material to required width so it can fit between the rafters",
+      "Ensure adequate ventilation space is allowed between the breather membrane and insulation",
+      "Insulating materials – phenolic foam, wood fibre, sheep’s wool, EPS insulation",
+      "Cover the insulted rafters with an airtight membrane",
+      "Fix plasterboard/insulated plasterboard to the rafters",
+      "Plasterboard skim coated with plaster or taped and filled to provide a finish",
+      "Fix a ventilation card/spacer between the rafters",
+      "Spray foam insulation to the underside of the ventilation card",
+      "When insulation is set, trim flush with the rafters",
+      "Fix the plasterboard sheet to the rafters and skim over"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme awards 24 marks for this part. The 16 on this card are the marks it states answers for; the other 8 go to Preferred insulation type for sloped ceiling (4); Thickness of insulation (4) — the drawing itself and anything the scheme prices without saying what earns it."
  },
  {
   "id": "cons-2025-ol-q2-c",

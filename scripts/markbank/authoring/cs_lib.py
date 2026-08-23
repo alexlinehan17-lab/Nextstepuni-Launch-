@@ -391,6 +391,100 @@ class Author:
             self._used.add(sub)
         return out
 
+    @staticmethod
+    def _match_score(a, b):
+        """How strongly do two labels name the same thing? 0 when they don't."""
+        import difflib
+        x, y = _squash(a), _squash(b)
+        if len(x) < 6 or len(y) < 6:
+            return 0.0
+        blocks = difflib.SequenceMatcher(None, x, y).get_matching_blocks()
+        hit = sum(bl.size for bl in blocks)
+        # Both directions. One direction alone let "Method of insulating floor
+        # note & sketch" match "Type of insulation" -- the short label is nearly
+        # covered by the long one purely by shared letters -- and all three rows
+        # of the part then answered with the same options, including a
+        # "Thickness of insulation" row answered with insulation types.
+        return min(hit / len(x), hit / len(y))
+
+    @staticmethod
+    def _same_thing(a, b):
+        """Do two labels name the same thing? Coverage, not equality.
+
+        The mark table and the indicative half rarely word a group the same
+        way: "Preferred insulation type for the floor" against "Type of
+        insulation", "Note for separate living space" against "Separate
+        additional living space".
+        """
+        import difflib
+        x, y = _squash(a), _squash(b)
+        if len(x) < 6 or len(y) < 6:
+            return False
+        blocks = difflib.SequenceMatcher(None, x, y).get_matching_blocks()
+        hit = sum(bl.size for bl in blocks)
+        return hit / min(len(x), len(y)) >= 0.7
+
+    def _rows_to_groups(self, q, letter, qtext, cid, topic, concept, notes, stem):
+        """A row per named mark row that the indicative half gives content for.
+
+        The commonest Ordinary shape is a sketch priced beside two nameable
+        answers -- "Method of insulating floor note & sketch (8 + 8 marks) 16 /
+        Preferred insulation type for the floor 5 / Thickness of insulation 5" --
+        where the rows carry different marks so none of the same-mark readings
+        apply. Matching each row to the group that answers it gives the card,
+        and the sketch becomes the shortfall _check_total names in a note.
+        """
+        rows = self.S.mark_rows(q, letter)
+        # Match against EVERY named group, including ones too thin to card.
+        # Filtering them out first freed the wrong group to take their row: the
+        # real "Thickness of insulation" group has a single option, so the
+        # thickness row matched "Type of insulation" and was answered with
+        # insulation types. A row whose own group is too thin is dropped, not
+        # re-matched.
+        gs = [g for g in self.S.groups(q, letter, 'indicative') if g[0]]
+        if len(rows) < 2 or not gs:
+            return None
+        # Best match wins, and each group answers at most one row. Taking the
+        # first match above a threshold gave every row of a part the same
+        # options.
+        pairs = sorted(((self._match_score(lab, g[0]), i, j)
+                        for i, (lab, _) in enumerate(rows)
+                        for j, g in enumerate(gs)),
+                       key=lambda t: -t[0])
+        assign, taken_r, taken_g = {}, set(), set()
+        for score, i, j in pairs:
+            if score < 0.62 or i in taken_r or j in taken_g:
+                continue
+            assign[i] = gs[j]
+            taken_r.add(i)
+            taken_g.add(j)
+        card_rows, used, notation = [], [], []
+        for i, (lab, mk) in enumerate(rows):
+            hit = assign.get(i)
+            if hit is None:
+                continue
+            opts = [it.strip(' .;') for it in hit[2]
+                    if it.strip() and not CONTENT_FREE.match(it.strip(' .;'))
+                    and _squash(it) in self.raw]
+            if len(opts) < 2 or len(opts) > MAX_OPTIONS_SHOWN:
+                continue
+            rid = f'{cid}-r{len(card_rows) + 1}'
+            card_rows.append(anyN(rid, lab, mk, 1, mk, opts, hit[0]))
+            used.append((1, mk))
+            notation.append(f'1 x {mk}')
+        if not card_rows:
+            return None
+        total = sum(r['marks'] for r in card_rows)
+        gap_note = self._check_total(q, letter, total, qtext, used)
+        if gap_note:
+            notes = (notes + ' ' if notes else '') + gap_note
+        self.cards.append(_card(
+            cid, self.year, self.deck_level, topic, concept, self.ref(q, letter),
+            qtext, ' + '.join(notation), total, card_rows, notes, stem=stem,
+            tariff_kind='bestNofParts' if len(card_rows) == 1 else 'fixed'))
+        self._used.add(cid)
+        return self.cards[-1]
+
     def _check_total(self, q, letter, total, qtext='', used=None):
         """Returns a note where a NAMED shortfall is allowed, else None."""
         """The card's marks must be the question's marks.
@@ -451,6 +545,25 @@ class Author:
     # ---- the card -------------------------------------------------------
     def card(self, q, letter, *, cid, topic, concept, note='', notes='', stem='',
              only=None, split=True):
+        """Author this part, falling back to the row-to-group reading.
+
+        _rows_to_groups is deliberately LAST: it matches mark rows to groups by
+        name similarity, which is the loosest reading in here, and it should
+        never take a part one of the printed-tariff paths can read exactly.
+        """
+        try:
+            return self._card(q, letter, cid=cid, topic=topic, concept=concept,
+                              note=note, notes=notes, stem=stem, only=only,
+                              split=split)
+        except Refused:
+            out = self._rows_to_groups(q, letter, self.question(q, letter), cid,
+                                       topic, concept, notes, stem)
+            if out is not None:
+                return out
+            raise
+
+    def _card(self, q, letter, *, cid, topic, concept, note='', notes='', stem='',
+              only=None, split=True):
         """One card per PART, with one row per group the scheme names.
 
         NOT one card per group. A group-level card would need a group-level
