@@ -26922,6 +26922,58 @@
   "stem": "Sound travels faster in water than in air. When a sound wave travels from water into air, it undergoes refraction."
  },
  {
+  "id": "phys-2021-hl-q2-iii",
+  "topicId": "phys-u2",
+  "conceptId": "apparatus-for-the-concave-mirror-experiment",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2021 HL Q2(iii)",
+  "questionText": "Draw a labelled diagram of how the apparatus was arranged.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 × 1"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "object, mirror, screen, correct arrangement",
+    "marks": 4
+   }
+  ],
+  "stem": "In an experiment to determine the focal length of a concave mirror, a student first made an approximate measurement of the focal length of the mirror. He then measured the image distance v for each of two different object distances u. The following data were recorded. u (cm) 20.0 25.0 v (cm) 31.2 23.2",
+  "notes": "The scheme takes a mark off if there is no diagram at all, and another if it carries no labels."
+ },
+ {
+  "id": "phys-2021-ol-q8-vii",
+  "topicId": "phys-2-3",
+  "conceptId": "what-diffraction-through-a-gap-looks-like",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2021 OL Q8(vii)",
+  "questionText": "The wave fronts shown below diffract as they pass through the gap. Copy and complete the diagram to show this wave undergoing diffraction.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6, or 3 for a partial answer"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "waves spreading out from the slit",
+    "marks": 6
+   }
+  ],
+  "stem": "A wave can be described as a travelling disturbance that transports energy from one point to another. (ix) Light waves undergo polarisation but sound waves do not. Explain with the aid of a labelled diagram what is meant by polarisation. (28) Leaving Certificate, 2021 Physics – Ordinary Level 7",
+  "notes": "The scheme numbers this answer under its own Question 2 while the paper prints Question 8."
+ },
+ {
   "id": "phys-2022-hl-q1-vii",
   "topicId": "phys-u2",
   "conceptId": "net-vertical-force-on-a-metre-stick",
@@ -28277,6 +28329,115 @@
    }
   ],
   "stem": "A spring has a natural length of 15.0 cm. When a block of mass 500 g is hung from the spring, its length increases to 17.5 cm. The block is then pulled down further, released and begins to oscillate."
+ },
+ {
+  "id": "phys-2023-hl-q2-iii",
+  "topicId": "phys-u2",
+  "conceptId": "apparatus-with-u-and-v-marked",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2023 HL Q2(iii)",
+  "questionText": "Draw a labelled diagram of the apparatus used in this experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "object, screen, mirror",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "u shown",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "v shown",
+    "marks": 3
+   }
+  ],
+  "stem": "In an experiment to determine the focal length f of a concave mirror, a student first found an approximate value for the focal length. She then measured the image distance v for a series of object distances u. The following data were recorded. u (cm) 20.0 30.0 40.0 v (cm) 66.3 31.1 25.2"
+ },
+ {
+  "id": "phys-2023-hl-q5-i",
+  "topicId": "phys-u2",
+  "conceptId": "circuit-for-a-diode-in-forward-bias",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2023 HL Q5(i)",
+  "questionText": "Draw a circuit diagram for this experiment with the diode in forward bias.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "source of voltage",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "diode in forward bias",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "voltmeter across the diode",
+    "marks": 3
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "(milli)ammeter in series",
+    "marks": 3
+   }
+  ],
+  "stem": "A student investigated the variation of current I with potential difference V for a semiconductor diode in forward bias. The following data were recorded. V (V) 0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 I (mA) 0 0 0 0 5 20 70 220 Each question carries 56 marks."
+ },
+ {
+  "id": "phys-2023-hl-q5-iv",
+  "topicId": "phys-u2",
+  "conceptId": "circuit-for-a-diode-in-reverse-bias",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2023 HL Q5(iv)",
+  "questionText": "Draw a circuit diagram for this experiment with the diode in reverse bias.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "diode in reverse bias",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "voltmeter across the diode and (micro)ammeter",
+    "marks": 3
+   }
+  ],
+  "stem": "A student investigated the variation of current I with potential difference V for a semiconductor diode in forward bias. The following data were recorded. V (V) 0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 I (mA) 0 0 0 0 5 20 70 220 Each question carries 56 marks.",
+  "notes": "The ammeter changes with the bias: a milliammeter in forward bias, a microammeter in reverse, because the reverse current is tiny."
  },
  {
   "id": "phys-2023-ol-q13b-v",

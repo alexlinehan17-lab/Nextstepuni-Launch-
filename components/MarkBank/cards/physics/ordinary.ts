@@ -6154,6 +6154,20 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2021-ol-q8-vii", topicId: "phys-2-3", conceptId: "what-diffraction-through-a-gap-looks-like",
+    section: "A", questionRef: "2021 OL Q8(vii)",
+    stem: "A wave can be described as a travelling disturbance that transports energy from one point to another. (ix) Light waves undergo polarisation but sound waves do not. Explain with the aid of a labelled diagram what is meant by polarisation. (28) Leaving Certificate, 2021 Physics – Ordinary Level 7",
+    questionText: "The wave fronts shown below diffract as they pass through the gap. Copy and complete the diagram to show this wave undergoing diffraction.",
+    tariffModel: {"kind":"fixed","notation":"6, or 3 for a partial answer"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "waves spreading out from the slit", marks: 6 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2022, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Ordinary Level — © State Examinations Commission.",

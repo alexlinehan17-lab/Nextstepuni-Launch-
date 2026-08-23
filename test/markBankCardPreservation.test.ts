@@ -33,8 +33,8 @@ const decks = [
   ['biology:ordinary', BIO_ORDINARY, 621, '449975186cd8a84f7f89d1cf0709515a09d6561592091e3f692e774f8d58746c'],
   ['chemistry:higher', CHEM_HIGHER, 443, '713b7ef8560702e78ed246adca8800057ca9eafd6e4e45ed583404be169709ae'],
   ['chemistry:ordinary', CHEM_ORDINARY, 335, 'b57490d8dce4b1bbcfa072e614f0078b29983dc95debe9cb56b559f10c5cfa2b'],
-  ['physics:higher', PHYS_HIGHER, 481, '0bd475f2b832d96affcb96fa2185e00406563681ed72e29f15c7fb61cfc9fc9a'],
-  ['physics:ordinary', PHYS_ORDINARY, 475, '3ee5987402ebdae6785184ae20d8dab537daf321705725819fd378f52869116f'],
+  ['physics:higher', PHYS_HIGHER, 485, 'b55030d87561dabe648528b960c74cc1def7c2fcbafbfbdd2ae63552b20b076b'],
+  ['physics:ordinary', PHYS_ORDINARY, 476, 'ee2ae321c9ef21cb3fe8f041067268dba805c9fb5eb587ba70dd976171428f0a'],
   ['agricultural-science:higher', AGSCI_HIGHER, 438, '31e25662626e35ca1db55e96e1cdfe0492648666c6cd35365f2c1e6d92c35f6a'],
   ['agricultural-science:ordinary', AGSCI_ORDINARY, 429, '338c18162213c261ee39334c32c7e864011a2f25c5a6fc3be8e17400df147a39'],
   ['business:higher', BUSINESS_HIGHER, 272, 'a61655818cee2ce61307eb08fe6dad282193791674b4e5e8a893e203b64af976'],
@@ -57,6 +57,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(5_389);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(5_394);
   });
 });

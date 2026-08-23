@@ -109,4 +109,27 @@ A.card(14, 'a', 'iv', topic='phys-2-1', concept='graph-that-explains-boyles-law'
                   ((14, 'a', 'iv'), 0, slice(15, 20))],
        marks=[5, 2], notation='3 + 2 for the axes, 2 for the line', checked='The paper prints the part mark in brackets after the question, so the text ends on a number rather than punctuation. The question itself is complete.')
 
+A.card(2, None, 'iii', topic='phys-u2', concept='apparatus-with-u-and-v-marked',
+       source='pdf',
+       from_runs=[((2, None, 'iii'), 0, slice(7, 10)),
+                  ((2, None, 'iii'), 0, slice(11, 13)),
+                  ((2, None, 'iii'), 0, slice(14, 16))],
+       marks=[3, 3, 3], first_sentence=True)
+
+A.card(5, None, 'i', topic='phys-u2', concept='circuit-for-a-diode-in-forward-bias',
+       source='pdf',
+       from_runs=[((5, None, 'i'), 0, slice(0, 3)),
+                  ((5, None, 'i'), 0, slice(4, 8)),
+                  ((5, None, 'i'), 0, slice(9, 13)),
+                  ((5, None, 'i'), 0, slice(14, 17))],
+       marks=[3, 3, 3, 3])
+
+A.card(5, None, 'iv', topic='phys-u2', concept='circuit-for-a-diode-in-reverse-bias',
+       source='pdf',
+       from_runs=[((5, None, 'iv'), 0, slice(0, 4)),
+                  ((5, None, 'iv'), 0, slice(5, 11))],
+       marks=[3, 3],
+       notes='The ammeter changes with the bias: a milliammeter in forward bias, a '
+             'microammeter in reverse, because the reverse current is tiny.')
+
 A.emit()

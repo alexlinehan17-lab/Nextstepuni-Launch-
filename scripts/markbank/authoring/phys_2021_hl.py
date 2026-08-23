@@ -101,4 +101,10 @@ A.card(13, 'b', 'v', topic='phys-3-3', concept='circuit-of-a-voltage-amplifier',
 A.card(14, 'b', 'iv', topic='phys-2-3', concept='refraction-of-sound-from-water-into-air',
        source='pdf', use=[1, 2], marks=[3, 2], first_sentence=True)
 
+A.card(2, None, 'iii', topic='phys-u2', concept='apparatus-for-the-concave-mirror-experiment',
+       source='pdf', from_run=((2, None, 'iii'), 1, slice(0, 5)), marks=[4],
+       notation='4 × 1',
+       notes='The scheme takes a mark off if there is no diagram at all, and another if '
+             'it carries no labels.')
+
 A.emit()
