@@ -33,6 +33,10 @@ import urllib.request
 BUCKET = 'nextstepuni-app.firebasestorage.app'
 CTX = ssl.create_default_context()
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# The bank's default window. Overridable with --from/--to: Construction Studies
+# has been examined on the same 1983 syllabus throughout the corpus and its
+# replacement is not examined until 2028, so its older papers are exactly as
+# valid as its recent ones. Subjects mid-redevelopment are a different matter.
 YEARS = range(2021, 2026)
 
 # Mark Bank subject -> the corpus's own slug, where they differ.
@@ -129,10 +133,14 @@ if __name__ == '__main__':
     ap.add_argument('--all', action='store_true')
     ap.add_argument('--schemes', action='store_true',
                     help='also fetch the marking-scheme PDFs')
+    ap.add_argument('--from', dest='y0', type=int, help='first year (default 2021)')
+    ap.add_argument('--to', dest='y1', type=int, help='last year (default 2025)')
     args = ap.parse_args()
     targets = sorted(SUBJECTS) if args.all else args.subjects
     if not targets:
         raise SystemExit('name a subject, or pass --all')
+    if args.y0 or args.y1:
+        globals()['YEARS'] = range(args.y0 or 2021, (args.y1 or 2025) + 1)
     kinds = ['paper'] + (['scheme'] if args.schemes else [])
     total = sum(fetch(s, kinds) for s in targets)
     print(f'\n{total} file(s) fetched')

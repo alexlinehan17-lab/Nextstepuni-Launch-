@@ -115,7 +115,7 @@ class Author:
         """
         block_lines = self.S.marks.get((q, letter), [])
         block = ' '.join(block_lines)
-        tariffs = [(int(a), int(b)) for a, b in CS.GROUP_TARIFF.findall(block)]
+        tariffs = CS.group_tariffs(block)
         if index is not None and index < len(tariffs):
             return tariffs[index]
         for gname, t, _ in self.S.groups(q, letter):
@@ -133,9 +133,9 @@ class Author:
         # groups and groups() has already matched them by name; falling through
         # to here would take the first one for every group, so only an
         # unambiguous single tariff is used.
-        direct = CS.GROUP_TARIFF.findall(block)
+        direct = CS.group_tariffs(block)
         if len(direct) == 1:
-            return (int(direct[0][0]), int(direct[0][1]))
+            return direct[0]
         tot = TOTAL.search(block)
         anyn = ANY_N.search(block) or ANY_N.search(self.question(q, letter))
         if tot and anyn:
@@ -625,7 +625,7 @@ class Author:
                 # block states its tariff outright -- "Any 7 x 5 marks" -- the
                 # options are every detail line, priced by that.
                 blk = ' '.join(self.S.marks.get((q, letter), []))
-                if len(CS.GROUP_TARIFF.findall(blk)) == 1:
+                if len(CS.group_tariffs(blk)) == 1:
                     items = [it for it in self.S.mark_items(q, letter, qtext)
                              if not CONTENT_FREE.match(it) and len(it) > 4]
                     seen, opts = set(), []
@@ -636,7 +636,7 @@ class Author:
                             opts.append(it)
                     if len(opts) >= 2:
                         gs = [(None, None, opts)]
-        multi = len(CS.GROUP_TARIFF.findall(
+        multi = len(CS.group_tariffs(
             ' '.join(self.S.marks.get((q, letter), [])))) > 1
         # One tariff over several groups prices the PART, not each group:
         # "Two features that could be added to reduce its energy use (4 x 5
@@ -835,8 +835,8 @@ if __name__ == '__main__':
     ok = refused = 0
     for (q, letter) in A.S.parts():
         gs = A.S.groups(q, letter, 'indicative')
-        multi = len([t for t in CS.GROUP_TARIFF.findall(
-            ' '.join(A.S.marks.get((q, letter), [])))]) > 1
+        multi = len(CS.group_tariffs(
+            ' '.join(A.S.marks.get((q, letter), [])))) > 1
         for gi, (name, _, items) in enumerate(gs):
             if len(items) < 2:
                 continue

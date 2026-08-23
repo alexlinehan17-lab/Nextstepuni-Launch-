@@ -45,14 +45,40 @@ SCHEMES = os.path.join(ROOT, 'examiner-reports/construction-studies/schemes')
 # Case varies inside one document: the 2024 Higher scheme prints "QUESTION 3"
 # and "Question 4" on facing pages. Matching case-sensitively lost three of the
 # ten mark tables and made the file look half-parsed.
+# "Question 1", "QUESTION 3", "Question 10 (Alternative)" -- and "Ceist 1." in
+# the 2016-2018 schemes, which are bilingual: the headings are Irish and the
+# content underneath them is English. Those three years read as having no
+# questions at all, so five whole papers were unreachable.
+#
+# The head also carries its own text in those years -- "Ceist 2 (a) one possible
+# safety risk associated with each of the following" -- so trailing text is
+# allowed and any part marker in it is handed straight to the part reader.
 QHEAD = re.compile(r'^(?:Leaving Certificate Examination,?\s*\d{4}\s+)?'
-                   r'Question\s+(\d{1,2})\b\.?\s*(\(Alternative\))?\s*$', re.I)
+                   r'(?:Question|Ceist)\s+(\d{1,2})\b\.?\s*'
+                   r'(\(Alternative\))?(?P<rest>\s+\S.*)?$', re.I)
 # "(a)" at Higher Level, "Part (a)" at Ordinary. Without the prefix the whole
 # Ordinary mark half parsed to zero parts, and the subject read as Higher-only.
 PART = re.compile(r'^(?:Part\s+)?\(([a-h])\)\s*(.*)$', re.I)
 BULLET = re.compile(r'^[•\-\uf0b7\uf06c\uf0a7]\s*')
 # "5 x 4 marks", "4 × 4 marks (3 for drawing, 1 for annotation)"
-GROUP_TARIFF = re.compile(r'(\d{1,2})\s*[x×]\s*(\d{1,3})\s*marks?', re.I)
+# Two ways the same tariff is written. "7 x 5 marks" in the recent papers, and
+# "Any 7 of the above details ( 5 marks each)" in the older ones -- no multiply
+# sign at all, which is why five whole papers priced nothing and 2018 Ordinary
+# produced four cards.
+GROUP_TARIFF = re.compile(
+    r'(\d{1,2})\s*[x×]\s*(\d{1,3})\s*marks?'
+    r'|(?:any\s+)?(\d{1,2})\s+of the above[^()]{0,40}\(\s*(\d{1,3})\s*marks?\s*each',
+    re.I)
+
+
+def group_tariffs(text):
+    """[(n, per)] for every tariff in `text`, in the order printed."""
+    out = []
+    for m in GROUP_TARIFF.finditer(text or ''):
+        a, b = (m.group(1), m.group(2)) if m.group(1) else (m.group(3), m.group(4))
+        if a and b:
+            out.append((int(a), int(b)))
+    return out
 # "(12 marks)", "(3 + 2 marks)", "(8 + 8 marks)"
 PART_TARIFF = re.compile(r'\(\s*((?:\d{1,3}\s*\+\s*)*\d{1,3})\s*marks?\s*\)', re.I)
 FOLD = re.compile(r'^<!--\s*markbank:')
@@ -180,12 +206,27 @@ def blocks(lines, pages=None):
         if not line:
             continue
         m = QHEAD.match(line)
-        if m:
+        if m and not (m.group('rest') and not PART.match(m.group('rest').strip())
+                      and not m.group('rest').strip()[0].isupper()
+                      and len(m.group('rest')) > 90):
             # "Question 10 (Alternative)" is a DIFFERENT question a candidate
             # may answer instead, with its own parts and its own marks. Merged
             # into Question 10 it silently doubled that question's content.
             q = f'{m.group(1)}alt' if m.group(2) else int(m.group(1))
             letter = None
+            rest = (m.group('rest') or '').strip()
+            if rest:
+                # The bilingual years weld the part marker and its text onto the
+                # question head. Re-read the remainder as a part so neither is
+                # lost -- without this every one of those parts vanished.
+                pm = PART.match(rest)
+                if pm:
+                    letter = pm.group(1)
+                    out.setdefault((q, letter), [])
+                    if pages is not None and page is not None:
+                        pages.setdefault((q, letter), page)
+                    if pm.group(2).strip():
+                        out[(q, letter)].append(pm.group(2).strip())
             continue
         if FURNITURE.match(line):
             continue
@@ -206,7 +247,13 @@ def blocks(lines, pages=None):
             # the five papers, and the richest one in them: the scheme explains
             # every term on the list in full.
             out.setdefault((q, letter), []).append(line)
-    return out
+    # A (q, None) bucket is only a real part where the question has no lettered
+    # parts at all. Everywhere else it is just the lines between the question
+    # head and its first "(a)", and keeping those invented one phantom part per
+    # question -- 61 of them across the 2016-2020 papers, every one reported as
+    # having no question text because the paper has no such part.
+    lettered = {q for q, letter in out if letter is not None}
+    return {k: v for k, v in out.items() if k[1] is not None or k[0] not in lettered}
 
 
 class Scheme:
@@ -273,7 +320,7 @@ class Scheme:
             nxt = src[i + 1] if i + 1 < len(src) else ''
             if BULLET.match(nxt):
                 heads.append((i, line.strip().rstrip(':').strip()))
-        tariffs = [(int(a), int(b)) for a, b in GROUP_TARIFF.findall(' '.join(src))]
+        tariffs = group_tariffs(' '.join(src))
 
         def items(lo, hi):
             out = []
@@ -365,9 +412,9 @@ class Scheme:
     def tariff(self, q, letter):
         """(kind, n, per) from the mark table, or None if it prints none."""
         text = ' '.join(self.marks.get((q, letter), []))
-        g = GROUP_TARIFF.search(text)
+        g = group_tariffs(text)
         if g:
-            return ('bestNofParts', int(g.group(1)), int(g.group(2)))
+            return ('bestNofParts', g[0][0], g[0][1])
         p = PART_TARIFF.search(text)
         if p:
             vals = [int(v) for v in re.split(r'\s*\+\s*', p.group(1))]
