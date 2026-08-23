@@ -45,6 +45,9 @@ jobs:
         env:
           VITE_FIREBASE_APPCHECK_SITE_KEY: ${{ secrets.VITE_FIREBASE_APPCHECK_SITE_KEY }}
 
+      - name: Synchronise Android plugins
+        run: npx --no-install cap update android
+
       - name: Build Android client
         run: ./gradlew :app:assembleDebug --no-daemon
         working-directory: android
