@@ -15,6 +15,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from econ_auto import Paper  # noqa: E402
+from econ_lib import anyN, block, bullets, card, load, point, tidy  # noqa: E402
 
 P = Paper(2022, 'ordinary', 'A')
 SCAFFOLD = ('Possible responses', 'Suggested responses')
@@ -49,5 +50,159 @@ P.menu('disadvantage of this development for local retailers',
        'Outline one possible disadvantage of the growth in online shopping for local retailers.',
        'A disadvantage — any one', 'One disadvantage, 6 for the point and 3 for developing it.',
        ref='2022 OL Section A Q3(ii)', claim=1, per=6, drop=SCAFFOLD)
+
+# ── Second pass: the parts with one printed answer ─────────────────────────
+# Definitions and single responses are not menus, so econ_parts has nothing for
+# them; each is sliced from the scheme directly. Q5(b) and Q8(i) ARE menus, but
+# their tariff cells are printed beside the question number and land in a
+# neighbouring segment, so the extractor cannot see the parts at all.
+BODY = tidy(load(2022, 'ordinary'))
+
+P.cards.append(card(
+    'econ-2022-ol-sa-q1-ii', 2022, 'ordinary', 'economics-3-5', 'what-economic-growth-is',
+    '2022 OL Section A Q1(ii)',
+    'The diagram shows the forecast growth in the Irish economy for 2020 to 2023. Explain '
+    'the term economic growth.',
+    'fixed', 6,
+    [point('r-1', 'It is the increase in GNP / output (value of goods and services) national '
+                  'income per head of population within a country over a period of time / '
+                  'increased productive capacity of an economy.', 6,
+           'The definition, 6 marks; any of the slash-separated wordings.')],
+    'Part (i), completing the table, is answered by reading the growth chart and is not '
+    'carded.', section='A', tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2022-ol-sa-q2-i', 2022, 'ordinary', 'economics-1-3', 'what-the-cso-is',
+    '2022 OL Section A Q2(i)',
+    'What do the initials CSO stand for?',
+    'fixed', 9,
+    [point('r-1', 'Central Statistics Office', 9, 'The name written out in full, 9 marks.')],
+    '', stem='In April 2022 the CSO conducted a census, an official count of Ireland’s '
+             'population.',
+    section='A', tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2022-ol-sa-q5-b', 2022, 'ordinary', 'economics-2-1',
+    'employee-advantages-of-a-higher-minimum-wage',
+    '2022 OL Section A Q5(b)',
+    'Outline two advantages for employees of this increase in the minimum wage.',
+    '1 @ 9+1 @ 6', 15,
+    [anyN('r-1', 'An advantage for employees — any two', None, 2, 9,
+          bullets(block(BODY, 'Increased standard of living', '6. The diagram below')),
+          'Two advantages, the first paid 9 and the second 6.', steps=[9, 6])],
+    'The paper offers Q5 as (a) or (b); the (a) advantages for the Irish economy are carded '
+    'as econ-2022-ol-sa-q5-a.',
+    stem='The government increased the minimum wage by 30c in Budget 2022.',
+    section='A', tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2022-ol-sa-q6-ii', 2022, 'ordinary', 'economics-3-2',
+    'why-unemployment-rose-in-lockdown',
+    '2022 OL Section A Q6(ii)',
+    'Outline one reason for the increase in unemployment between Dec 2020 and April 2021.',
+    'fixed', 6,
+    [point('r-1', 'The imposition of a national lockdown by the government to protect the '
+                  'population against the spread of the COVID-19 virus, many businesses were '
+                  'forced to let workers go temporarily as they were not able to have their '
+                  'businesses open e.g. hairdressers, pubs etc.', 6,
+           'The reason, 6 marks.')],
+    'Part (i), naming the two peak months, is answered by reading the unemployment graph and '
+    'is not carded.',
+    stem='Set on a graph of the monthly number of people unemployed from November 2020 to '
+         'November 2021.',
+    section='A', tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2022-ol-sa-q7-a-i', 2022, 'ordinary', 'economics-1-5', 'what-fixed-costs-are',
+    '2022 OL Section A Q7(a)(i)',
+    'The table shows the costs of production for a bakery for the week: wages €1,000, raw '
+    'materials €1,500, light and heat €300, rent of the premises €750. Explain the term '
+    'fixed costs.',
+    'fixed', 5,
+    [point('r-1', 'Costs which do not change as output changes / costs which have to be paid '
+                  'even if nothing is produced.', 5, 'The definition, 5 marks.')],
+    'The paper offers Q7 as (a) or (b); (a)(ii) is a tick exercise and (b) is the worked '
+    'total-cost and net-profit calculation, so neither is carded.',
+    section='A', tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2022-ol-sa-q8-i', 2022, 'ordinary', 'economics-2-2',
+    'positive-externality-of-vaccination',
+    '2022 OL Section A Q8(i)',
+    'State one example of a positive externality in relation to vaccinations.',
+    '1 @ 9', 9,
+    [anyN('r-1', 'A positive externality — any one', 9, 1, 9,
+          bullets(block(BODY, 'Protection of others from contracting the virus',
+                        '(ii) Outline one opportunity cost')),
+          'One example, 9 marks: 6 for the point and 3 for developing it.')],
+    '', stem='Over half the world population has received at least one dose of a COVID-19 '
+             'vaccine — an externality being the external costs or benefits that accrue to '
+             'others as a result of production or consumption.',
+    section='A'))
+
+P.cards.append(card(
+    'econ-2022-ol-sa-q8-ii', 2022, 'ordinary', 'economics-0-1',
+    'opportunity-cost-of-the-vaccine',
+    '2022 OL Section A Q8(ii)',
+    'Outline one opportunity cost for the Irish government of providing the COVID-19 vaccine '
+    'for their citizens.',
+    'fixed', 6,
+    [point('r-1', 'The money the government could have used to provide other services for '
+                  'citizens such as childcare subsidy, respite for Carers, improved pensions '
+                  'etc.', 6, 'The opportunity cost, 6 marks: 3 for the point and 3 for '
+                             'developing it.')],
+    '', section='A', tariff_kind='fixed'))
+
+# Carded like econ-2022-ol-q15-a-i-trend: part (i) of Q9 is the worked
+# elasticity calculation, the established leave-alone class, but its (ii)
+# carries its own printed cell ⟨2⟩ and one printed answer — the same separable
+# shape as econ-2025-hl-q14-b-ii-meaning — so the calculation's result is
+# folded into the question and the interpretation stands alone.
+P.cards.append(card(
+    'econ-2022-ol-sa-q9-ii', 2022, 'ordinary', 'economics-1-4', 'interpreting-a-ped-value',
+    '2022 OL Section A Q9(ii)',
+    'The price of an iPad falls from €750 to €500. As a result, weekly sales of the iPad '
+    'increase from 30,000 units to 45,000 units, giving a Price Elasticity of Demand (PED) '
+    'of −1. Indicate if the demand is price elastic, price inelastic or unit elastic.',
+    'fixed', 2,
+    [point('r-1', 'UNIT ELASTIC', 2, 'The one right answer, 2 marks: a PED of exactly −1 is '
+                                     'unit elastic.')],
+    'Part (i), the worked elasticity calculation, is the established leave-alone class; its '
+    'result is folded into the question so this part stands alone.',
+    section='A', tariff_kind='fixed'))
+
+# Carded like econ-2022-ol-q15-a-i-trend and -q15-c-i: the scheme prints the
+# comparison statement with its figures, so the card holds it rather than
+# leaving the part as a chart read.
+P.cards.append(card(
+    'econ-2022-ol-sa-q10-a', 2022, 'ordinary', 'economics-3-1',
+    'comparing-debt-interest-payments',
+    '2022 OL Section A Q10(a)',
+    'The graph shows the interest paid and forecast to be paid on the general government '
+    'debt from 2018 up to 2024. Compare the interest paid on the national debt in 2018 to '
+    'the forecasted amount to be paid in 2024, using the data in the graph.',
+    'fixed', 15,
+    [point('r-1', 'The interest to be paid on the National Debt in 2024 is significantly '
+                  'lower (€3.51 bn) than the interest paid on the debt in 2018 of €5.32bn.',
+           15, '15 marks (9+3+3): the comparison, and the two supporting figures.')],
+    'The paper offers Q10 as (a) or (b); the (b) National Debt definition is carded as '
+    'econ-2022-ol-sa-q10-b.',
+    stem='Set on a bar chart of the interest paid on the general government debt in '
+         '€ billions, 2018 to 2024.',
+    section='A', tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2022-ol-sa-q10-b', 2022, 'ordinary', 'economics-3-1', 'what-the-national-debt-is',
+    '2022 OL Section A Q10(b)',
+    'The graph shows the interest paid and forecast to be paid on the general government '
+    'debt from 2021 up to 2024. Explain the term National Debt.',
+    '1 @ 15', 15,
+    [anyN('r-1', 'The definition — either wording', 15, 1, 15,
+          ['Refers to the total amount of government borrowing which is outstanding / owed.',
+           'Refers to the total amount of money borrowed by the government which is owed.'],
+          'One definition, 15 marks (9+3+3).')],
+    'The paper offers Q10 as (a) or (b); the (a) comparison is carded as '
+    'econ-2022-ol-sa-q10-a.',
+    section='A'))
 
 P.emit()

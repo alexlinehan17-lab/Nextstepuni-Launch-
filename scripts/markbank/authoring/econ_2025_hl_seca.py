@@ -17,6 +17,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from econ_auto import Paper  # noqa: E402
+from econ_lib import as_option, block, card, load, point, tidy  # noqa: E402
 
 P = Paper(2025, 'higher', 'A')
 SCAFFOLD = ('Possible responses', 'Suggested responses')
@@ -188,6 +189,49 @@ P.menu('economic factor which led to a change in Ireland', 'econ-2025-hl-sa-q10-
        'A factor behind the downturn — any one',
        'One factor, 6 marks.',
        ref='2025 HL Section A Q10(b)', claim=1, per=6, drop=SCAFFOLD)
+
+# ── Definitions with one printed answer, built from the scheme directly ─────
+# These parts print a single response under a single tariff cell, so they are
+# not menus; each is a point card, the same shape as 2024's Q6(b) halves. The
+# slice ends at the page footer or the next part, so nothing foreign rides in.
+BODY = tidy(load(2025, 'higher'))
+
+P.cards.append(card(
+    'econ-2025-hl-sa-q1-b', 2025, 'higher', 'economics-0-1', 'cost-benefit-analysis',
+    '2025 HL Section A Q1(b)',
+    'Outline what you understand by the economic term cost benefit analysis.',
+    'fixed', 6,
+    [point('r-1', as_option(block(BODY, 'Helps weigh up / evaluate whether the positive benefits',
+                                  '4 | P a g e')), 6,
+           'One explanation, 6 marks. The scheme prints one answer and one only.')],
+    '', section='A', tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2025-hl-sa-q6-a', 2025, 'higher', 'economics-1-3', 'what-a-price-floor-is',
+    '2025 HL Section A Q6(a)',
+    'Explain what you understand by the economic term price floor.',
+    'fixed', 6,
+    [point('r-1', as_option(block(BODY, 'A price floor is a legal minimum price',
+                                  '(b) The diagram below shows a free labour market')), 6,
+           'One explanation, 6 marks: what a price floor is, and what it is for.')],
+    '', stem='The national minimum wage rate currently stands at €13.50 per hour. This is an '
+             'example of a price floor.',
+    section='A', tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2025-hl-sa-q7-b', 2025, 'higher', 'economics-2-2', 'phone-pouches-as-merit-goods',
+    '2025 HL Section A Q7(b)',
+    'Phone pouches in all secondary schools are considered to be merit goods. Explain your '
+    'understanding of this statement.',
+    'fixed', 6,
+    [point('r-1', as_option(block(BODY, 'Phone pouches in secondary schools are considered a merit good',
+                                  '17 | P a g e')), 6,
+           'One explanation, 6 marks: why the good would be under-consumed, and the positive '
+           'externalities it creates.')],
+    '', stem='The government announced in Budget 2025 that it would spend €9m on phone pouches '
+             '(for the storage of each student’s mobile phone during the school day) for all '
+             'secondary school students in the country.',
+    section='A', tariff_kind='fixed'))
 
 # Q6(b) is not carded: its 6 marks cover a diagram to be completed AND the
 # explanation, and the scheme does not split them. Four written steps at 1 mark

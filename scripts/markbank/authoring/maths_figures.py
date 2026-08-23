@@ -29,6 +29,12 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(
 # this repo happened.
 def out_dir(year, level):
     return os.path.join(ROOT, 'exam-papers', 'maths', 'figures', f'{year}-{level}')
+# Scheme-front furniture that shares a page with the first marked unit.
+HEADER = re.compile(
+    r'^(?:Detailed marking notes|Model Solutions? (?:&|and) Marking Notes'
+    r'|Note:|other correct solutions|particular candidate|Section [A-C]\b'
+    r'|Model Solutions? & Detailed)', re.I)
+TABLE_HEAD = re.compile(r'Model Solution\s*[–\u2013-]\s*\d+\s*Marks', re.I)
 COLUMN = 300          # where the Marking Notes column starts
 PAD = 6
 LINE = 16          # a line's own height, so the last one is not sliced
@@ -70,7 +76,17 @@ def crop(year, level, write=False):
         # the top of an inch of white. maths_scheme already knows these lines.
         ys = [y for y, t in left if lo - 4 <= y < hi and t.strip()
               and not re.fullmatch(r'\[?\d{1,3}\]?', t.strip())
-              and not maths_scheme.FURNITURE.match(t.strip())]
+              and not maths_scheme.FURNITURE.match(t.strip())
+              and not HEADER.match(t.strip())]
+        # The first unit on a page has a band that starts at the page top, so
+        # everything above the solution table — the page title, the "Model
+        # Solutions & Marking Notes" heading, the examiner's note paragraph —
+        # was cropped INTO the card. The table's own head row says where the
+        # SEC's answer actually begins; nothing above it is the solution.
+        heads = [y for y, t in left if lo - 4 <= y < hi
+                 and TABLE_HEAD.search(t.strip())]
+        if heads:
+            ys = [y for y in ys if y >= min(heads) - 2]
         if not ys:
             continue
         # And a trailing line cut off from the rest by more than four lines of
@@ -135,7 +151,10 @@ if __name__ == '__main__':
             if not mathtext.unreadable(body):
                 desc += f' It reads: {body[:420]}'
             out.append({'file': f'{name}.png', 'kind': 'figure',
-                        'truncated': False, 'description': desc})
+                        'truncated': False, 'description': desc,
+                        # every maths crop IS the scheme's worked solution —
+                        # the session screen must hold it until reveal
+                        'solution': True})
         print(json.dumps(out, ensure_ascii=False, indent=1))
     else:
         print(f'{len(made)} model-solution crops')

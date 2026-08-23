@@ -8,7 +8,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from econ_auto import Paper  # noqa: E402
-from econ_lib import card, point  # noqa: E402
+from econ_lib import anyN, block, bullets, card, load, point, tidy  # noqa: E402
 
 P = Paper(2022, 'ordinary')
 SCAFFOLD = ('Possible responses', 'Suggested responses', 'Minimum Unit Price for A')
@@ -101,13 +101,18 @@ P.menu('one social benefit and one private benefit of the government increasing 
        drop=SCAFFOLD + ('Greater productivity', 'Reduction in cancer', 'Reduced pressure on hosp',
                         'Population healthier', 'Improved environment', 'Private Benefits'))
 
+# The id counts the wrong part: the paper prints this question at Q16(b)(ii) —
+# (a)(ii) is the smoking-measures question, carded below as
+# econ-2022-ol-q16-a-ii-smoking. The id is left alone (review history is keyed
+# on it) and the citation is corrected here, the same call econ_refs.py makes
+# for the nineteen cards whose id counts the wrong question.
 P.menu('economic effects which this rate of price inflation may have', 'econ-2022-ol-q16-a-ii',
        'economics-3-3', 'effects-of-inflation-on-citizens',
        'Discuss two economic effects which this rate of price inflation may have on Irish '
        'citizens.',
        'An effect on citizens — any two',
        'Two effects, 8 marks each.',
-       drop=SCAFFOLD)
+       ref='2022 OL Q16(b)(ii)', drop=SCAFFOLD)
 
 P.menu('governments can intervene in the market', 'econ-2022-ol-q11-c-iii',
        'economics-1-3', 'government-intervention-dominant-firm',
@@ -170,10 +175,10 @@ P.menu('benefits of the government collecting corporation tax', 'econ-2022-ol-q1
        'A benefit of the revenue — any one', 'One benefit, 9 marks.',
        ref='2022 OL Q15(a)(ii)', claim=1, per=9, drop=SCAFFOLD)
 
-# 2022 OL Q16 inflation effects are NOT here: already carded above as
-# econ-2022-ol-q16-a-ii with the same question text. econ_todo reported the part
-# uncarded because its path reads (b)(ii) rather than (a)(ii), and a duplicate id
-# would not have caught it — the ids differ. Duplicate TEXT is the check that does.
+# 2022 OL Q16(b)(ii), the inflation effects, is carded above as
+# econ-2022-ol-q16-a-ii — the id counts the wrong part and the citation is
+# corrected on the call. Duplicate TEXT is the check that stops it being carded
+# twice — a duplicate id would not have caught it, the ids differ.
 
 # ── Section B, third pass ──────────────────────────────────────────────────
 P.menu('consumers behaving rationally', 'econ-2022-ol-q13-c-ii',
@@ -205,5 +210,203 @@ P.menu('Have been consistent to the US with no major changes',
        'The trend on each side — both of these', 'US 6 and UK 6.',
        ref='2022 OL Q15(c)(i)', claim=2, per=6,
        drop=SCAFFOLD + ('Exports to the UK',))
+
+# ── Section B, fourth pass: the non-menu parts ─────────────────────────────
+# Definitions with one printed answer, and menu parts whose tariff cell the
+# extractor left in a neighbouring segment, so econ_parts cannot see them.
+# Sliced from the scheme directly, the way econ_2023_ol_seca.py builds its Q10.
+BODY = tidy(load(2022, 'ordinary'))
+
+P.cards.append(card(
+    'econ-2022-ol-q11-c-i', 2022, 'ordinary', 'economics-2-0', 'what-a-monopoly-is',
+    '2022 OL Q11(c)(i)',
+    'Explain the term monopoly and give one example of a monopoly that you are familiar with '
+    'in Ireland.',
+    'fixed', 9,
+    [point('r-1', 'A monopoly firm arises when there is only one firm in the industry.', 5,
+           'The explanation, 5 marks.'),
+     point('r-2', 'An example — An Post, Irish Rail, Irish Water, a sole pub in your village.', 4,
+           'Any one example, 4 marks.')],
+    '', tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2022-ol-q12-b-i', 2022, 'ordinary', 'economics-1-1', 'what-shifts-demand',
+    '2022 OL Q12(b)(i)',
+    'If a celebrity was featured on a social media platform (TikTok) wearing Gym + Coffee '
+    'clothing how might this effect the demand for Gym + Coffee clothing?',
+    'fixed', 8,
+    [point('r-1', 'This would lead to an increase in the quantity demanded for Gym + Coffee '
+                  'clothing. The celebrity endorsement would make the clothing more attractive '
+                  'to the consumer. Appearing on the social media platform is advertising the '
+                  'clothing and makes it more well-known so the demand for the clothing would '
+                  'increase.', 8, 'The effect and why, 8 marks.')],
+    'Parts (ii) and (iii) mark the shift and the new equilibrium on the printed diagram and '
+    'are not carded.',
+    stem='Set beside a demand-and-supply diagram for Gym + Coffee clothing.',
+    tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2022-ol-q12-c-i', 2022, 'ordinary', 'economics-0-2', 'what-sustainability-is',
+    '2022 OL Q12(c)(i)',
+    'Nineteen30 café in Limerick offers its customers a fresh and sustainable approach to '
+    'convenience coffee. Explain the term sustainability.',
+    '1 @ 5', 5,
+    [anyN('r-1', 'The definition — either wording', 5, 1, 5,
+          ['Achieving economic growth without harming society or the environment.',
+           'Meeting the current needs of humanity without compromising the ability of future '
+           'generations to meet their needs.'],
+          'One definition, 5 marks: 3 for the definition and 2 for development.')],
+    ''))
+
+P.cards.append(card(
+    'econ-2022-ol-q13-b-i', 2022, 'ordinary', 'economics-3-0', 'the-national-income-formula',
+    '2022 OL Q13(b)(i)',
+    'National Income is calculated using the formula: National Income = Consumption + I + '
+    'Government Spending + X – M. State what each of the letters I, X and M stand for.',
+    'fixed', 12,
+    [point('r-1', 'I: Investment X: Exports M: Imports', 12,
+           'All three letters. The scheme prints 12 for the part with no per-letter split, so '
+           'the three answers are held as one point.')],
+    '', tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2022-ol-q13-b-iii', 2022, 'ordinary', 'economics-3-0', 'meaning-of-the-multiplier',
+    '2022 OL Q13(b)(iii)',
+    'The multiplier formula for an open economy is 1 ÷ (MPS + MPM). Assume that MPS is 0.1 '
+    'and MPM is 0.4, giving a multiplier of 2. Explain the economic meaning of the figure you '
+    'have calculated for the multiplier.',
+    '1 @ 6', 6,
+    [anyN('r-1', 'The meaning — either wording', 6, 1, 6,
+          ['For any €1 injected into the economy, national income will double.',
+           'For each euro spent in the economy, National Income will increase by €2.'],
+          'The meaning of the figure, 6 marks.')],
+    'Part (ii), the calculation itself, is the worked arithmetic and is not carded; its '
+    'result is folded into the question so this part stands alone.'))
+
+# The plain ids econ-2022-ol-q14-a-ii and -q14-a-iii are taken by cards citing
+# 2022 OL Q15(b)(ii) and Q15(b)(iii) — see econ_refs.py — so the true Q14(a)
+# parts ride a suffix.
+P.cards.append(card(
+    'econ-2022-ol-q14-a-ii-scarce', 2022, 'ordinary', 'economics-0-1',
+    'what-a-scarce-resource-is',
+    '2022 OL Q14(a)(ii)',
+    'Glenisk extracts water from local ponds, and filters it for use in its production as '
+    'they acknowledge that water is a scarce resource. Explain what a scarce resource is.',
+    '1 @ 3', 3,
+    [anyN('r-1', 'The definition — any wording', 3, 1, 3,
+          ['There is not enough water / the supply of water is finite to meet the needs of '
+           'everyone.',
+           'The supply of a resource / factor of production is limited the demand is unlimited.',
+           'Quantity of goods and services people like to have exceeded the amount which the '
+           'economy’s resources are capable of producing.'],
+          'The definition, 3 marks.')],
+    ''))
+
+P.cards.append(card(
+    'econ-2022-ol-q14-a-iii-water', 2022, 'ordinary', 'economics-0-2', 'sustainable-use-of-water',
+    '2022 OL Q14(a)(iii)',
+    'Comment on Glenisk’s approach to water usage as a scarce resource.',
+    'fixed', 7,
+    [point('r-1', 'The company tries to minimise the wastage of water and use a sustainable '
+                  'approach to the consumption of water for their factory. This approach '
+                  'reduces the negative impact on the environment.', 7,
+           'The comment, 7 marks.')],
+    '',
+    stem='Glenisk extracts water from local ponds and filters it for use in its production, '
+         'acknowledging that water is a scarce resource.',
+    tariff_kind='fixed'))
+
+# Q14(b)'s tariff is printed beside the question head, Section A style: 1st x 10
+# (6+4) belongs to part (i) and 2nd x 7 (4+3) to part (ii) — together the 17
+# marks Q14 leaves for (b). The (ii) segment itself carries no cell, which is
+# why econ_parts cannot see this part.
+P.cards.append(card(
+    'econ-2022-ol-q14-b-ii-water', 2022, 'ordinary', 'economics-1-3',
+    'why-citizens-oppose-water-charges',
+    '2022 OL Q14(b)(ii)',
+    'Explain why some citizens in Ireland would be unhappy if water charges were reintroduced.',
+    '1 @ 7', 7,
+    [anyN('r-1', 'A reason citizens would be unhappy — any one', 7, 1, 7,
+          bullets(block(BODY, 'Lower standard of living', '22 | P a g e')),
+          'One explanation, 7 marks: 4 for the point and 3 for developing it.')],
+    'The plain id econ-2022-ol-q14-b-ii is taken by a card citing 2022 OL Q15(c)(ii); see '
+    'econ_refs.py.'))
+
+# Carded like econ-2022-ol-q15-c-i: the scheme prints the trend statement, so
+# the card holds it rather than leaving the part as a chart read.
+P.cards.append(card(
+    'econ-2022-ol-q15-a-i-trend', 2022, 'ordinary', 'economics-3-1',
+    'reading-corporation-tax-trends',
+    '2022 OL Q15(a)(i)',
+    'Explain the trend in corporation tax received by the Irish government during the period '
+    '2011 to 2020, using the figures in the graph.',
+    'fixed', 10,
+    [point('r-1', 'There has been a steady increase in the amount of money received by the '
+                  'Irish state from corporation tax. It has increased from approx. €4m in 2011 '
+                  'to approx. €12m in 2020.', 10,
+           '10 marks: 6 for the trend and 4 for supporting figures.')],
+    'The plain id econ-2022-ol-q15-a-i is taken by a card citing 2022 OL Q16(a)(i); see '
+    'econ_refs.py.',
+    stem='Set on a bar chart of corporation tax receipts in € millions, 2011 to 2020.',
+    tariff_kind='fixed'))
+
+# The scheme's list of MNC names, one option per name. 'Coca Cola' is printed
+# twice (once hyphenated), so the fold on hyphens keeps one of the pair.
+_mncs, _seen = [], set()
+for _n in block(BODY, 'Apple, Google, Facebook', '(ii) Outline two reasons why TikTok').split(','):
+    _n = tidy(_n).rstrip('.')
+    _k = _n.replace('-', ' ').lower()
+    if _n and _k not in _seen:
+        _seen.add(_k)
+        _mncs.append(_n)
+P.cards.append(card(
+    'econ-2022-ol-q15-b-i', 2022, 'ordinary', 'economics-4-1', 'mncs-in-ireland',
+    '2022 OL Q15(b)(i)',
+    'Name two other Multi-National Corporations operating in Ireland.',
+    '2 @ 6', 12,
+    [anyN('r-1', 'A Multi-National Corporation in Ireland — any two', 12, 2, 6, _mncs,
+          'Two names, 6 marks each.')],
+    '', stem='TikTok had shortlisted five Dublin sites for its new headquarters.'))
+
+# The real Q16(a)(ii): the plain id econ-2022-ol-q16-a-ii is taken by the
+# inflation-effects card above, whose citation the paper puts at Q16(b)(ii).
+P.menu('increased the price of a packet of cigarettes by 50c in Budget',
+       'econ-2022-ol-q16-a-ii-smoking', 'economics-1-3', 'measures-to-reduce-smoking',
+       'The government increased the price of a packet of cigarettes by 50c in Budget 2022. '
+       'Suggest one other measure the government could take to help reduce the consumption '
+       'of cigarettes.',
+       'A measure to reduce smoking — any one',
+       'One measure, 7 marks: 4 for the point and 3 for developing it.',
+       ref='2022 OL Q16(a)(ii)', claim=1, per=7,
+       drop=SCAFFOLD + ('Suggest one other measure',))
+
+P.cards.append(card(
+    'econ-2022-ol-q16-b-i', 2022, 'ordinary', 'economics-3-3', 'what-price-inflation-is',
+    '2022 OL Q16(b)(i)',
+    'The annual rate of price inflation in Ireland rose by 5.5% in December 2021. Explain '
+    'the term price inflation.',
+    '1 @ 8', 8,
+    [anyN('r-1', 'The definition — either wording', 8, 1, 8,
+          ['An increase in the general level of prices for goods & services over a period '
+           'of time',
+           'A decrease in the value of money / people can buy less with their money.'],
+          'One definition, 8 marks: 6 for the definition and 2 for development.')],
+    ''))
+
+# econ_excluded records '2022 OL Q16(c)(iii)' as coursework grading bands. That
+# entry describes the Student Research Project block the extractor welded onto
+# this part's segment, not the part the paper prints, which the scheme answers
+# with the six effects sliced here.
+P.cards.append(card(
+    'econ-2022-ol-q16-c-iii', 2022, 'ordinary', 'economics-3-1',
+    'effects-of-the-hidden-economy',
+    '2022 OL Q16(c)(iii)',
+    'Outline one economic effect for the Irish economy of activities taking place in the '
+    'hidden economy.',
+    '1 @ 8', 8,
+    [anyN('r-1', 'An economic effect — any one', 8, 1, 8,
+          bullets(block(BODY, 'Loss of revenue to the government', 'Student Research Project')),
+          'One effect, 8 marks.')],
+    ''))
 
 P.emit()

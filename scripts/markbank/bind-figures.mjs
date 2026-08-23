@@ -104,6 +104,7 @@ for (const f of catalogue) {
     src: `/exam-figures/${subjectId}/markbank/${f.file}`,
     md5,
     alt: f.description,
+    ...(f.solution ? { solution: true } : {}),
     lettersVisible: f.lettersVisible ?? [],
     labelMeanings: f.labelMeanings ?? [],
     questionRef: f.questionRef ?? '',

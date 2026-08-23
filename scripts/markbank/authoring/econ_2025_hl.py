@@ -342,24 +342,30 @@ P.menu('advances in technology can influence Ireland', 'econ-2025-hl-q14-a-iii-s
        ref='2025 HL Q14(a)(iii) — sport', claim=1, per=5,
        drop=SCAFFOLD, after='Sports & Fitness')
 
-# ── Q15(a)(i): the gig economy ─────────────────────────────────────────────
+# ── Q14(c)(i): the gig economy ─────────────────────────────────────────────
 # The scheme runs both sides together and marks the break with "DISAGREE
-# responses overleaf DISAGREE:", so each side is its own card.
+# responses overleaf DISAGREE:", so each side is its own card. The scheme
+# prints this part after its Question 15 head — a page early — but the PAPER
+# prints it at Q14(c)(i), and the paper is where a citation comes from.
+GIG = 'Nearly 200,000 citizens in Ireland work in the gig economy.'
 P.menu('Do you agree or disagree with the statement', 'econ-2025-hl-q15-a-i-agree',
        'economics-3-5', 'the-case-for-regulating-gig-work',
-       'Gig economy workers need greater protection and regulation. Do you AGREE with the '
-       'statement? Explain your answer.',
+       'The gig economy needs to be better regulated for its workers. Do you AGREE with the '
+       'statement? Justify your choice.',
        'A reason to agree — any one', 'One reason, 7 marks.',
-       ref='2025 HL Q15(a)(i) — agree', claim=1, per=7,
+       ref='2025 HL Q14(c)(i) — agree', claim=1, per=7, stem=GIG,
        drop=SCAFFOLD, stop='DISAGREE responses overleaf')
 
 P.menu('Do you agree or disagree with the statement', 'econ-2025-hl-q15-a-i-disagree',
        'economics-3-5', 'the-case-against-regulating-gig-work',
-       'Gig economy workers need greater protection and regulation. Do you DISAGREE with the '
-       'statement? Explain your answer.',
+       'The gig economy needs to be better regulated for its workers. Do you DISAGREE with the '
+       'statement? Justify your choice.',
        'A reason to disagree — any one', 'One reason, 7 marks.',
-       ref='2025 HL Q15(a)(i) — disagree', claim=1, per=7,
-       drop=SCAFFOLD + ('DISAGREE responses overleaf',), after='DISAGREE responses overleaf')
+       ref='2025 HL Q14(c)(i) — disagree', claim=1, per=7, stem=GIG,
+       # The break marker is dropped as scaffolding, so the cut anchors on the
+       # first DISAGREE response instead — dropping it AND anchoring on it left
+       # every AGREE response in this card's list.
+       drop=SCAFFOLD + ('DISAGREE responses overleaf',), after='Flexibility for workers')
 
 # ── Q14(c)(ii): full employment ────────────────────────────────────────────
 P.menu('positive and one negative economic effect of full employment',
@@ -375,34 +381,65 @@ P.menu('positive and one negative economic effect of full employment',
 # "DISAGREE:", so each side is its own card.
 P.menu('extending mortgage interest relief', 'econ-2025-hl-q15-b-iii-agree',
        'economics-1-3', 'the-case-for-mortgage-interest-relief',
-       'In Budget 2025 the government extended mortgage interest relief. Do you AGREE with '
-       'this decision? Explain your answer.',
+       'In Budget 2025, the government decided it was extending mortgage interest relief for '
+       'taxpayers who are paying more in mortgage interest in 2024 than they were in 2022. Do '
+       'you AGREE with this decision? Explain your answer.',
        'A reason to agree — any one', 'One reason, 5 marks.',
        ref='2025 HL Q15(b)(iii) — agree', claim=1, per=5,
        drop=SCAFFOLD, stop='DISAGREE:')
 
 P.menu('extending mortgage interest relief', 'econ-2025-hl-q15-b-iii-disagree',
        'economics-1-3', 'the-case-against-mortgage-interest-relief',
-       'In Budget 2025 the government extended mortgage interest relief. Do you DISAGREE '
-       'with this decision? Explain your answer.',
+       'In Budget 2025, the government decided it was extending mortgage interest relief for '
+       'taxpayers who are paying more in mortgage interest in 2024 than they were in 2022. Do '
+       'you DISAGREE with this decision? Explain your answer.',
        'A reason to disagree — any one', 'One reason, 5 marks.',
        ref='2025 HL Q15(b)(iii) — disagree', claim=1, per=5,
        drop=SCAFFOLD + ('DISAGREE:',), after='DISAGREE:')
 
-P.menu('Public infrastructure refers to essential facilities', 'econ-2025-hl-q15-c-i',
-       'economics-3-1', 'what-public-infrastructure-is',
-       'Explain the economic term public infrastructure and illustrate your answer with an '
-       'example.',
-       'The explanation and an example — both of these',
-       'Explanation and example, 6 marks between them.',
-       ref='2025 HL Q15(c)(i)', claim=2, per=3, drop=SCAFFOLD)
+# The scheme runs its four examples together under one "Any relevant example:"
+# heading with no bullet between them, so the extractor hands back one 898-char
+# option -- which the audit refuses, exactly as it refused the mixed-economy
+# glob at Q11(c)(iii). Cut at the examples themselves, the same way.
+P.cards.append(card(
+    'econ-2025-hl-q15-c-i', 2025, 'higher', 'economics-3-1', 'what-public-infrastructure-is',
+    '2025 HL Q15(c)(i)',
+    'Explain the economic term public infrastructure and illustrate your answer with an '
+    'example.',
+    '2 @ 3', 6,
+    [anyN('r-1', 'The explanation and an example — both of these', 6, 2, 3,
+          [as_option(block(_MIXED, 'Public infrastructure refers to essential facilities',
+                           'Any relevant example'))] +
+          [as_option(h) for h in heads(
+              block(_MIXED, 'Ireland’s public water supply system', '(ii) Discuss two possible'),
+              ['Ireland’s public water supply system', 'Public hospitals like',
+               'Garda stations are funded', 'Irish Rail’s rail network'])],
+          'Explanation and example, 6 marks between them.')],
+    'Each example names a piece of infrastructure the State provides and what it does for the '
+    'economy.', tariff_kind='bestNofParts'))
 
-P.menu('Growth in corporate profits', 'econ-2025-hl-q12-b-i',
-       'economics-3-1', 'what-changed-in-irish-tax-revenue',
-       'Identify the MOST significant change which occurred in the composition of Irish tax '
-       'revenue from 2017 to 2023, and outline one reason for it.',
-       'A reason for the change — any one', 'One reason, 6 marks.',
-       ref='2025 HL Q12(b)(i)', claim=1, per=6, drop=SCAFFOLD)
+# The scheme's second and third response heads reach the markdown glyph-mangled
+# ("re n ’s low corporate tax rate"), so the extractor cannot see them and welds
+# three responses into one 1,112-char option -- which the audit refuses. Cut at
+# the responses themselves, starting each slice past its mangled head.
+P.cards.append(card(
+    'econ-2025-hl-q12-b-i', 2025, 'higher', 'economics-3-1', 'what-changed-in-irish-tax-revenue',
+    '2025 HL Q12(b)(i)',
+    'Identify the MOST significant change which occurred in the composition of Irish tax '
+    'revenue from 2017 to 2023, and outline one reason for it.',
+    '1 @ 6', 6,
+    [anyN('r-1', 'A reason for the change — any one', 6, 1, 6,
+          [as_option(block(_MIXED, 'Growth in corporate profits',
+                           're n ’s low corporate tax rate')),
+           as_option(block(_MIXED, 'Profit-shifting by MNCs',
+                           're n ’s now e e De e o ment')),
+           as_option(block(_MIXED, 'Ireland introduced the Knowledge Development Box',
+                           'Impact of the Covid pandemic')),
+           as_option(block(_MIXED, 'Impact of the Covid pandemic on key sectors',
+                           '(ii) Do you regard'))],
+          'One reason, 6 marks.')],
+    'The change itself is read off the two charts printed with the question; the 6 marks are '
+    'for the reason.', tariff_kind='bestNofParts'))
 
 # The scheme leaves this part unplaced; the paper puts it at Q15(a)(iii).
 P.menu('Commits to environmental sustainability / cost reduction',
@@ -411,5 +448,75 @@ P.menu('Commits to environmental sustainability / cost reduction',
        'its branch network.',
        'A reason — any one', 'One reason, 6 marks.',
        ref='2025 HL Q15(a)(iii)', claim=1, per=6, drop=SCAFFOLD)
+
+
+# ── Section B, third pass ───────────────────────────────────────────────────
+# Parts whose scheme prints a single response under a single tariff cell, so
+# they are point cards rather than menus — the same shape as the 2024 Section A
+# definitions — plus the Access to Cash Bill, whose two sides the scheme heads
+# AGREE and DISAGREE.
+
+P.cards.append(card(
+    'econ-2025-hl-q12-b-ii', 2025, 'higher', 'economics-3-1', 'why-vat-is-regressive',
+    '2025 HL Q12(b)(ii)',
+    'Do you regard Ireland’s value added tax system to be a progressive tax or a regressive '
+    'tax? Justify your choice.',
+    'fixed', 8,
+    [point('r-1', as_option(block(_MIXED, 'A regressive tax is a tax that takes a higher proportion',
+                                  '(iii) Some politicians are debating')), 8,
+           'The scheme’s verdict is REGRESSIVE, and the 8 marks are for this justification.')],
+    '', tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2025-hl-q13-b-i', 2025, 'higher', 'economics-4-2',
+    'the-principle-of-comparative-advantage', '2025 HL Q13(b)(i)',
+    'Ireland has a comparative advantage in attracting pharmaceutical foreign direct '
+    'investment (FDI). Explain the principle of comparative advantage.',
+    'fixed', 7,
+    [point('r-1', as_option(block(_MIXED, 'Comparative advantage occurs when a country specialises',
+                                  '(ii) Outline two sources of comparative advantage')), 7,
+           'One explanation, 7 marks.')],
+    '', stem='Over 90 foreign pharmaceutical companies operate in Ireland and they employ over '
+             '45,000 people.', tariff_kind='fixed'))
+
+# Q14(b)(ii) prints two cells — ⟨9⟩ for the workings and ⟨5⟩ for the economic
+# meaning — so the meaning is separable and carded; the workings are the worked
+# calculation itself, the established leave-alone class.
+P.cards.append(card(
+    'econ-2025-hl-q14-b-ii-meaning', 2025, 'higher', 'economics-1-4', 'interpreting-a-ped-value',
+    '2025 HL Q14(b)(ii) — economic meaning',
+    'The price elasticity of demand (PED) for Scentastic, when its price rises from €2.00 to '
+    '€2.50 and quantity demanded decreases from 30,000 units to 20,000 units, is −1.8. '
+    'Explain the economic meaning of your answer.',
+    'fixed', 5,
+    [point('r-1', as_option(block(_MIXED, 'The sign is minus therefore Scentastic obeys',
+                                  '51 | P a g e')), 5,
+           'Both halves of the meaning: the minus sign, and the absolute value above 1.')],
+    'The part’s other cell, ⟨9⟩, pays for the worked calculation itself and is not carded.',
+    stem='Scentastic is a new deodorant. The PED is calculated from its market demand schedule.',
+    tariff_kind='fixed'))
+
+# ── Q15(a)(i): the Access to Cash Bill ─────────────────────────────────────
+# The scheme glues its "DISAGREE:" heading onto the tail of the last AGREE
+# response, so the agree card trims there rather than stopping short of it.
+CASH = ('The Finance (Provision of Access to Cash Infrastructure) Bill 2024 aims to ensure '
+        'that sufficient and effective access to cash is available across the country.')
+P.menu('Do you agree or disagree with The Finance', 'econ-2025-hl-q15-a-i-cash-agree',
+       'economics-3-4', 'the-case-for-protecting-access-to-cash',
+       'Do you AGREE with The Finance (Provision of Access to Cash Infrastructure) Bill 2024? '
+       'Justify your choice.',
+       'A reason to agree — any one', 'One reason, 6 marks.',
+       ref='2025 HL Q15(a)(i) — agree', claim=1, per=6, stem=CASH,
+       drop=SCAFFOLD, stop='Encourages criminal activity', trim='DISAGREE:',
+       notes='The part is answered either way and the scheme heads the two lists AGREE and '
+             'DISAGREE, so each side is its own card.')
+
+P.menu('Do you agree or disagree with The Finance', 'econ-2025-hl-q15-a-i-cash-disagree',
+       'economics-3-4', 'the-case-against-protecting-access-to-cash',
+       'Do you DISAGREE with The Finance (Provision of Access to Cash Infrastructure) Bill '
+       '2024? Justify your choice.',
+       'A reason to disagree — any one', 'One reason, 6 marks.',
+       ref='2025 HL Q15(a)(i) — disagree', claim=1, per=6, stem=CASH,
+       drop=SCAFFOLD, after='Encourages criminal activity')
 
 P.emit()

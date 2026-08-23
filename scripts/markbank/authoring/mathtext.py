@@ -257,12 +257,24 @@ def words(page):
                     if not ch['c'].strip():
                         continue
                     t = demangle(ch['c'])
-                    small = sp['size'] <= base - 1.5 and prev_y is not None
-                    if small and box[1] <= prev_y + 0.2:
+                    tiny = sp['size'] <= base - 1.5
+                    small = tiny and prev_y is not None
+                    # A real exponent or index sits a few points off its base.
+                    # A fraction's denominator measured against a neighbouring
+                    # sub-line is 8-10pt away, and marking it turned the
+                    # denominator of (4-2i)/(2+4i) into superscript soup.
+                    near = prev_y is not None and abs(box[1] - prev_y) <= 6.0
+                    if small and near and box[1] <= prev_y + 0.2:
                         t = f'^({t})'
-                    elif small and box[1] > prev_y + 0.2:
+                    elif small and near and box[1] > prev_y + 0.2:
                         t = f'_({t})'
-                    else:
+                    elif not tiny:
+                        # Only a FULL-SIZE character may set the reference
+                        # baseline. A line that OPENS with small print — a
+                        # fraction's denominator leading its own line — was
+                        # seeding prev_y with its first character and then
+                        # marking its own siblings as exponents against it:
+                        # (2+4i) shipped as superscript soup.
                         prev_y = box[1]
                     cur.append((box, t))
             if cur:
@@ -444,10 +456,39 @@ def clean_document(paths):
                         if at is None:
                             loose.append((y0, line_text(ln), plain))
                         else:
-                            buckets.setdefault(at, []).append((y0, plain))
-                merged = [(min(y for y, _ in v), spans[i][3],
-                           ''.join(t for _, t in sorted(v)))
-                          for i, v in buckets.items()]
+                            buckets.setdefault(at, []).append(
+                                (y0, plain, line_text(ln)))
+                merged = []
+                for i, v in buckets.items():
+                    frac = spans[i][3]
+                    fsq = _squash(demangle(frac))
+                    # The fraction's spliced text replaces the lines it
+                    # CONSUMED; a line that merely fell inside the band — the
+                    # ask printed beside the fraction — keeps its own clean
+                    # text, or "Find the value of k." disappears from the card.
+                    # A bucketed line is often HALF-consumed: the fraction's
+                    # splice holds "(2+4i) = 0 + ki..." but not the "Find the
+                    # value of k." printed at the end of the same line. Keep
+                    # only the unconsumed TAIL — the longest word-boundary
+                    # prefix already inside the fraction is dropped.
+                    tails = []
+                    for _, _, c in sorted(v):
+                        if not c or not _squash(demangle(c)):
+                            continue
+                        words_ = c.split(' ')
+                        keep = c
+                        for cut in range(len(words_), 0, -1):
+                            head = ' '.join(words_[:cut])
+                            if _squash(demangle(head)) and \
+                                    _squash(demangle(head)) in fsq:
+                                keep = ' '.join(words_[cut:])
+                                break
+                        if keep and _squash(demangle(keep)):
+                            tails.append(keep)
+                    extra = ' '.join(tails)
+                    merged.append((min(y for y, _, _ in v),
+                                   f'{frac} {extra}'.strip() if extra else frac,
+                                   ''.join(t for _, t, _ in sorted(v))))
                 rows.extend((c, p) for _, c, p in sorted(loose + merged,
                                                         key=lambda r: r[0]))
     _DOCCACHE[key] = rows

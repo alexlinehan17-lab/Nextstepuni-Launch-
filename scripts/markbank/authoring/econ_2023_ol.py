@@ -8,10 +8,11 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from econ_auto import Paper  # noqa: E402
-from econ_lib import card, point  # noqa: E402
+from econ_lib import anyN, as_option, block, card, load, point, tidy  # noqa: E402
 
 P = Paper(2023, 'ordinary')
 SCAFFOLD = ('Possible responses', 'Suggested responses')
+BODY = tidy(load(2023, 'ordinary'))
 
 P.menu('hair and beauty industries are an', 'econ-2023-ol-q11-a-i',
        'economics-2-0', 'monopolistic-competition-identified',
@@ -61,13 +62,18 @@ P.menu('advantages of exports for the Irish economy', 'econ-2023-ol-q13-a-ii',
        'Two advantages, the first paid 8 and the second 2.',
        drop=SCAFFOLD)
 
+# The id counts the wrong part: the paper prints this question at Q15(c)(i) —
+# (a)(i) is the private-car percentage calculation. The id is a review-history
+# key and stays; the citation, which a student does see, says what the paper
+# says. Same call as econ_refs.CORRECTIONS, made here because this script owns
+# the card.
 P.menu('ways the Irish government may influence consumers to switch to electric',
        'econ-2023-ol-q15-a-i', 'economics-1-3', 'encouraging-electric-vehicles',
        'Outline two ways the Irish government may influence consumers to switch to electric '
-       'vehicles.',
-       'A way to encourage electric vehicles — any two',
+       'cars.',
+       'A way to encourage electric cars — any two',
        'Two ways, the first paid 8 and the second 4.',
-       drop=SCAFFOLD)
+       ref='2023 OL Q15(c)(i)', drop=SCAFFOLD)
 
 P.menu('Explain any two of the above terms', 'econ-2023-ol-q16-a-i',
        'economics-0-1', 'properties-of-an-economic-good',
@@ -207,9 +213,135 @@ P.menu('entrepreneurs important to the development of the Irish economy',
        'A reason entrepreneurs matter — any one', 'One reason, 4 marks after 2 for the stance.',
        ref='2023 OL Q16(a)(ii)', claim=1, per=4, drop=SCAFFOLD)
 
-# Q14(c)(i) is not carded: the scheme welds the variable-cost definition onto
-# the end of the fixed-cost examples line — "Examples: rent of premises,
-# insurance, rates ... Variable costs: costs which vary with output" — so
-# neither half separates cleanly and a card would carry the other's definition.
+# ── The non-menu parts, sliced by hand ─────────────────────────────────────
+# Q14(c)(i) was recorded in econ_excluded as welded — "the variable-cost
+# definition is welded onto the fixed-cost examples line". Re-read with block()
+# anchored at 'Examples:' and 'Variable costs:', all four halves separate
+# cleanly, so the part is carded after all; the econ_excluded line is now stale.
+P.cards.append(card(
+    'econ-2023-ol-q14-c-i', 2023, 'ordinary', 'economics-1-5',
+    'fixed-and-variable-costs', '2023 OL Q14(c)(i)',
+    'Explain the terms fixed costs and variable costs and state one example of each.',
+    'fixed', 18,
+    [point('r-fixed-def', as_option(block(BODY, 'Fixed costs: costs which remain the same',
+                                          'Examples: rent of premises')), 6,
+           'The fixed-cost definition, 6 marks.'),
+     point('r-fixed-ex', as_option(block(BODY, 'rent of premises, insurance, rates',
+                                         'Variable costs:')), 3,
+           'An example of a fixed cost — any one, 3 marks.'),
+     point('r-var-def', as_option(block(BODY, 'Variable costs: costs which vary with output',
+                                        'Examples: raw materials')), 6,
+           'The variable-cost definition, 6 marks.'),
+     point('r-var-ex', as_option(block(BODY, 'raw materials, electricity, wages, packaging',
+                                       '(ii) Outline one reason why it is important')), 3,
+           'An example of a variable cost — any one, 3 marks.')],
+    'The scheme prints ⟨6⟩ on each definition and ⟨3⟩ on each examples line.',
+    tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2023-ol-q11-b-iii', 2023, 'ordinary', 'economics-2-0',
+    'efficiency-in-monopolistic-competition', '2023 OL Q11(b)(iii)',
+    'Is the above firm producing efficiently? Give a reason for your answer.',
+    'fixed', 2,
+    [point('r-1', 'No.', 1, 'The stance, 1 mark.'),
+     point('r-2', as_option(block(BODY, 'The firm is not producing at the minimum point',
+                                  '(c) The hidden economy in the Hair')), 1,
+           'The reason, 1 mark: equilibrium at E sits to the left of W, the minimum of the '
+           'average cost curve.')],
+    'The same long-run equilibrium diagram as (b)(i).',
+    stem='The diagram represents the long run equilibrium of a firm in the hair and beauty '
+         'industry.',
+    tariff_kind='fixed',
+    figure_key='economics-2023-OL-paper-p11-art',
+    label_key=[{'letter': '1', 'meaning': 'AVERAGE COST', 'askedInThisQuestion': False},
+               {'letter': '2', 'meaning': 'AVERAGE REVENUE / DEMAND', 'askedInThisQuestion': False},
+               {'letter': '3', 'meaning': 'QUANTITY', 'askedInThisQuestion': False},
+               {'letter': 'MC', 'meaning': 'Marginal Cost', 'askedInThisQuestion': False},
+               {'letter': 'MR', 'meaning': 'Marginal Revenue', 'askedInThisQuestion': False}]))
+
+P.cards.append(card(
+    'econ-2023-ol-q12-b-i', 2023, 'ordinary', 'economics-3-1',
+    'equity-in-taxation', '2023 OL Q12(b)(i)',
+    'Equity is one of the principles of a good tax system. Explain the term equity.',
+    '1 @ 8', 8,
+    [point('r-1', as_option(block(BODY, 'This means the more income you earn',
+                                  '(ii) Explain two other principles')), 8,
+           'One explanation, 8 marks.')],
+    '', tariff_kind='fixed'))
+
+# ⟨3⟩ is printed for the three pillars together; three names for three marks is
+# the only integral split, and each point carries it.
+P.cards.append(card(
+    'econ-2023-ol-q12-c-iii', 2023, 'ordinary', 'economics-0-2',
+    'three-pillars-of-sustainability', '2023 OL Q12(c)(iii)',
+    'Name the three pillars of sustainability.',
+    'fixed', 3,
+    [point('r-1', 'Economic', 1, 'The first pillar.'),
+     point('r-2', 'Environment', 1, 'The second.'),
+     point('r-3', 'Social', 1, 'The third.')],
+    'The scheme prints ⟨3⟩ against the three names together.',
+    tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2023-ol-q13-b-i', 2023, 'ordinary', 'economics-3-0',
+    'letters-in-the-national-income-formula', '2023 OL Q13(b)(i)',
+    'State what each of the letters C and G represent.',
+    '2 @ 4', 8,
+    [point('r-1', 'Consumption expenditure', 4, 'The C.'),
+     point('r-2', 'Government expenditure', 4, 'The G.')],
+    '',
+    stem='National Income is calculated using the following formula: National Income (Y) = '
+         'C + Investment + G + Exports – Imports.',
+    tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2023-ol-q15-a-ii', 2023, 'ordinary', 'economics-1-3',
+    'subsidising-public-transport', '2023 OL Q15(a)(ii)',
+    'The Irish government are currently subsiding the users of public transport. Explain the '
+    'term subsidy in the context of public transport.',
+    '1 @ 5', 5,
+    [point('r-1', as_option(block(BODY, 'The Irish government is paying part of the cost',
+                                  'Draw and label')), 5,
+           'One explanation, 5 marks.')],
+    '', tariff_kind='fixed'))
+
+# The factors-of-production table. Six cells are blank on the paper and the
+# scheme prints ⟨6 @ 4⟩ over its completed copy, setting the answers in caps —
+# each blank cell is a point here, lifted from the scheme's own table cells.
+# The id carries a suffix because econ-2023-ol-q16-a-i is the terms card whose
+# citation econ_refs corrects to Q16(b)(i).
+P.cards.append(card(
+    'econ-2023-ol-q16-a-i-factors', 2023, 'ordinary', 'economics-0-1',
+    'factors-of-production', '2023 OL Q16(a)(i)',
+    'Complete the table below to show your understanding of the factors of production used in '
+    'the production of Keogh’s Crisps. Some of the information has been completed for you.',
+    '6 @ 4', 24,
+    [point('r-land-ex', 'POTATOES SALT OIL', 4,
+           'The Example cell for LAND — any one of the three.'),
+     point('r-labour', 'LABOUR', 4, 'The factor named in row 2, whose example is Workers.'),
+     point('r-labour-def', 'THE HUMAN EFFORT INVOLVED IN THE PRODUCTION OF A GOOD OR SERVICE.',
+           4, 'The Explanation cell for LABOUR.'),
+     point('r-capital-def', 'ANYTHING MADE BY HUMANS WHICH IS USED IN PRODUCTION.', 4,
+           'The Explanation cell for CAPITAL, whose example is Machinery.'),
+     point('r-enterprise', 'ENTERPRISE', 4,
+           'The factor named in row 4 — takes a risk with an idea in return for profit.'),
+     point('r-enterprise-ex', 'TOM KEOGH', 4, 'The Example cell for ENTERPRISE.')],
+    'The rows the paper leaves blank: the land example, the labour row’s name and '
+    'explanation, the capital explanation, and the enterprise row’s name and example.',
+    tariff_kind='fixed',
+    figure_key='economics-2023-OL-paper-p25-i0'))
+
+P.cards.append(card(
+    'econ-2023-ol-q16-b-ii', 2023, 'ordinary', 'economics-1-5',
+    'economies-of-scale-ol', '2023 OL Q16(b)(ii)',
+    'This expansion will allow Keogh’s Crisps to benefit from economies of scale. Explain the '
+    'term economies of scale with reference to Keogh’s crisps.',
+    '1 @ 7', 7,
+    [point('r-1', as_option(block(BODY, 'Economies of scale arise as the firm increases',
+                                  'In Ireland, we generate')), 7,
+           'One explanation, 7 marks.')],
+    '',
+    stem='Keogh’s Crisps are due to increase production capacity by 50%.',
+    tariff_kind='fixed'))
 
 P.emit()

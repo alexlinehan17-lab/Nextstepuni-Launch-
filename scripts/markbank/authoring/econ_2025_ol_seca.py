@@ -12,6 +12,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from econ_auto import Paper  # noqa: E402
+from econ_lib import anyN, as_option, block, bullets, card, heads, load, point, tidy  # noqa: E402
 
 P = Paper(2025, 'ordinary', 'A')
 SCAFFOLD = ('Possible responses', 'Suggested responses')
@@ -137,27 +138,105 @@ P.menu('one factor, other than ticket prices', 'econ-2025-ol-sa-q10-i',
        ref='2025 OL Section A Q10(i)', claim=1, per=8, drop=SCAFFOLD,
        stem='Oasis will play Croke Park, capacity 82,300, in August 2025.')
 
-# The scheme runs both sides together and marks the break with "No", so each
-# side of Q2(b) is its own card.
-P.menu('Cost of attending school reduced', 'econ-2025-ol-sa-q2-b-yes',
-       'economics-1-3', 'the-case-for-free-schoolbooks',
-       'Do you think the Budget 2025 schoolbooks measure was a good use of government '
-       'expenditure? Explain YES.',
-       'A reason in favour — any one', 'One reason, 12 marks for the part.',
-       ref='2025 OL Section A Q2(b) — yes', claim=1, per=12,
-       drop=SCAFFOLD, stop='It is not equitable')
+# ── The read-the-answer parts of this section ───────────────────────────────
+# Each is one printed answer with its tariff printed beside it, sliced by
+# anchor — the shape econ_2024_ol.py established. econ_parts cannot see them
+# because none lists a menu of responses.
+T = tidy(load(2025, 'ordinary'))
 
-P.menu('It is not equitable', 'econ-2025-ol-sa-q2-b-no',
-       'economics-1-3', 'the-case-against-free-schoolbooks',
-       'Do you think the Budget 2025 schoolbooks measure was a good use of government '
-       'expenditure? Explain NO.',
-       'A reason against — any one', 'One reason, 12 marks for the part.',
-       ref='2025 OL Section A Q2(b) — no', claim=1, per=12, drop=SCAFFOLD)
+P.cards.append(card(
+    'econ-2025-ol-sa-q1-i', 2025, 'ordinary', 'economics-3-0', 'what-cso-stands-for',
+    '2025 OL Section A Q1(i)',
+    'What do the initials CSO stand for? S is completed for your benefit.',
+    '2 @ 4', 8,
+    [point('r-1', as_option(block(T, 'Central Statistics Office')), 8,
+           'Two initials to complete, 4 marks each; the S is given.')],
+    '', section='A', tariff_kind='fixed'))
 
-P.menu('reason why the government introduced the above measures',
-       'econ-2025-ol-sa-q4-b', 'economics-1-3', 'why-cost-of-living-measures',
-       'Outline one reason why the government introduced the cost-of-living measures.',
-       'A reason — any one', 'One reason, 12 marks for the part.',
-       ref='2025 OL Section A Q4(b)', claim=1, per=12, drop=SCAFFOLD)
+P.cards.append(card(
+    'econ-2025-ol-sa-q5-i', 2025, 'ordinary', 'economics-3-0', 'what-gdp-stands-for',
+    '2025 OL Section A Q5(i)',
+    'What do the initials GDP stand for? P is completed for your benefit.',
+    'fixed', 4,
+    [point('r-1', as_option(block(T, 'GROSS DOMESTIC PRODUCT')), 4,
+           'The scheme prints ⟨4⟩ for the part as a whole; the P is given.')],
+    '', stem='Ireland’s GDP was expected to grow by 3.6% in 2025.',
+    section='A', tariff_kind='fixed'))
+
+# The figure is the artwork crop of the vertical supply curve — the reason for
+# its shape is the thing the part asks about, so the diagram rides the card.
+P.cards.append(card(
+    'econ-2025-ol-sa-q10-ii', 2025, 'ordinary', 'economics-1-2',
+    'why-ticket-supply-is-vertical', '2025 OL Section A Q10(ii)',
+    'The diagram shows the supply curve for tickets for this event. Explain the reason for '
+    'the shape of this supply curve.',
+    'fixed', 4,
+    [point('r-1', as_option(block(T, 'The supply of tickets is fixed')), 4,
+           'One reason, 4 marks: the stadium holds 82,300 whatever the ticket price, so '
+           'supply cannot respond to price and the curve is vertical.')],
+    '', stem='Oasis will play Croke Park, capacity 82,300, in August 2025.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2025-OL-paper-p10-art',
+    label_key=[{'letter': 'S', 'meaning': 'the supply of tickets — vertical at the stadium’s '
+                                          'capacity of 82,300', 'askedInThisQuestion': True}]))
+
+# ── The either/or halves of questions 2 and 4 ──────────────────────────────
+# Two earlier cards cited Q2(b) with a question of their own invention — the
+# paper's (b) is a definition, not a second run at the schoolbooks debate —
+# and a third re-carded Q4(a)'s responses as Q4(b). All three are deleted;
+# these are the parts the paper actually prints. The ⟨12⟩ each question
+# carries is printed once and covers whichever of (a) or (b) is answered,
+# the reading econ_2023_ol_seca.py established for the same layout.
+P.cards.append(card(
+    'econ-2025-ol-sa-q2-b', 2025, 'ordinary', 'economics-3-1',
+    'government-current-budget-surplus', '2025 OL Section A Q2(b)',
+    'The Irish government has planned for a current budget surplus once again for 2025. '
+    'Explain the term government current budget surplus.',
+    'fixed', 12,
+    [point('r-1', as_option(block(T, 'When government current revenue exceeds',
+                                  '3 Answer either')), 12,
+           'One explanation, 12 marks.')],
+    'The ⟨12⟩ is printed once beside Question 2 and covers whichever of (a) or (b) is '
+    'answered.',
+    section='A', tariff_kind='fixed'))
+
+# The scheme ticks Yes and lists three explanations; the extractor welds them
+# past the "OR" onto Q4(a), so they are sliced by anchor here.
+P.cards.append(card(
+    'econ-2025-ol-sa-q4-b', 2025, 'ordinary', 'economics-3-1',
+    'opportunity-cost-of-budget-measures', '2025 OL Section A Q4(b)',
+    'Is there an opportunity cost of these measures to the government? Place a tick (✔) in '
+    'the relevant box below and explain your answer.',
+    '1 @ 12', 12,
+    [anyN('r-1', 'A reason there is an opportunity cost — any one', 12, 1, 12,
+          [as_option(h) for h in heads(
+              block(T, 'Less tax revenue for the government', '5 Ireland’s GDP'),
+              ['Less tax revenue for the government',
+               'Government now more reliant on corporation tax',
+               'Alternative use of funds'])],
+          'The scheme ticks Yes; the 12 marks cover the tick and one explanation.')],
+    'The ⟨12⟩ is printed once beside Question 4 and covers whichever of (a) or (b) is '
+    'answered.',
+    stem='Budget 2025 included changes to the threshold of the higher tax bracket, along '
+         'with USC cuts and cost-of-living payments.',
+    section='A', tariff_kind='bestNofParts'))
+
+# Question 8 prints ONE descending pair — 1st x 8, 2nd x 4 — against a question
+# whose two parts ask for exactly two things: the tick in (i) and this barrier
+# in (ii). So the 8 is the tick and the 4 the barrier, the reading
+# econ_2023_ol_seca.py took for the same layout on its Q9. The tick itself is
+# in econ_excluded; the barrier menu is prose and is carded.
+P.cards.append(card(
+    'econ-2025-ol-sa-q8-ii', 2025, 'ordinary', 'economics-2-0',
+    'barriers-to-entry-in-a-monopoly', '2025 OL Section A Q8(ii)',
+    'In a monopoly market structure, there are barriers to entry. Outline one such possible '
+    'barrier to entry.',
+    '1 @ 4', 4,
+    [anyN('r-1', 'A barrier to entry — any one', 4, 1, 4,
+          bullets(block(T, 'The Government may grant a company the sole right',
+                        '9 In September 2024')),
+          'One barrier, 4 marks.')],
+    '',
+    section='A', tariff_kind='bestNofParts'))
 
 P.emit()

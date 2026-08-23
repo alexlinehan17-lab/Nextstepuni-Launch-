@@ -35,39 +35,39 @@ cards = [
     menu('econ-2024-ol-q11-a-ii', 'economics-1-2', 'effect-of-energy-costs-on-business',
          '2024 OL Q11(a)(ii)',
          'Outline one possible economic effect of these price increases on businesses in Ireland.',
-         '1 @ 8', 8, 'An economic effect on business — any one', 1, 8,
+         '1 @ 5', 5, 'An economic effect on business — any one', 1, 5,
          'Increased costs for business due to higher prices',
          '(iii) During winter 2023',
-         'One effect, 8 marks.',
+         'One effect, 5 marks.',
          stem='Set on a chart of Irish electricity price increases from 2020 to 2022.'),
 
     menu('econ-2024-ol-q11-a-iii', 'economics-1-3', 'electricity-credit-rationale',
          '2024 OL Q11(a)(iii)',
          'During winter 2023 – 2024, the Irish government granted all households a credit of €450 '
          'towards their electricity bills. Why, in your opinion, did the government do this?',
-         '1 @ 8', 8, 'A reason the government granted the credit — any one', 1, 8,
+         '1 @ 5', 5, 'A reason the government granted the credit — any one', 1, 5,
          'To alleviate the financial burden/economic welfare of Irish households',
          '(b) The diagram below represents the long-run equilibrium',
-         'One reason, 8 marks. The question asks for an opinion, and the scheme answers it with '
+         'One reason, 5 marks. The question asks for an opinion, and the scheme answers it with '
          'six the examiner will accept — it is not open-ended.'),
 
     menu('econ-2024-ol-q11-b-iii', 'economics-2-0', 'oligopoly-in-ireland', '2024 OL Q11(b)(iii)',
          'The electricity market is an example of an oligopoly market in Ireland. Give one '
          'example of an oligopoly market in Ireland and explain a reason for your choice.',
-         '1 @ 8', 8, 'A reason a market is an oligopoly — any one', 1, 8,
+         '1 @ 4', 4, 'A reason a market is an oligopoly — any one', 1, 4,
          'Only a few providers dominate the market',
          '(c) Panda Power left the Irish energy market',
-         'One reason, 8 marks. The scheme accepts mobile phones, broadband, insurance, banking, '
+         'One reason, 4 marks. The scheme accepts mobile phones, broadband, insurance, banking, '
          'TV services or supermarkets as the example; the marks are for the reason.'),
 
     # ── Question 12 ─────────────────────────────────────────────────────────
     menu('econ-2024-ol-q12-a-ii', 'economics-3-2', 'benefits-of-increased-employment',
          '2024 OL Q12(a)(ii)',
          'Outline one possible economic benefit of increased employment for the Irish economy.',
-         '1 @ 8', 8, 'A benefit of increased employment — any one', 1, 8,
+         '1 @ 7', 7, 'A benefit of increased employment — any one', 1, 7,
          '• Increased standard of living for citizens',
          '(b) (i) Currently there is a shortage of skilled employees',
-         'One benefit, 8 marks.',
+         'One benefit, 7 marks.',
          stem='In 2022 the number of people employed in Ireland exceeded 2.5 million for the '
               'first time.'),
 
@@ -75,10 +75,10 @@ cards = [
     menu('econ-2024-ol-q13-b-ii', 'economics-3-3', 'effects-of-food-price-inflation',
          '2024 OL Q13(b)(ii)',
          'Explain one possible economic effect food price inflation will have on consumers.',
-         '1 @ 8', 8, 'An effect on consumers — any one', 1, 8,
+         '1 @ 10', 10, 'An effect on consumers — any one', 1, 10,
          '• Reduced purchasing power / standard of living',
-         '(iii)',
-         'One effect, 8 marks.',
+         '(c) Toilet paper prices rose',
+         'One effect, 10 marks.',
          stem='Set on a chart of annual food price inflation across six countries — Switzerland '
               'lowest, Turkey highest.'),
 
@@ -88,32 +88,32 @@ cards = [
          '2024 OL Q12(b)(i)',
          'Currently there is a shortage of skilled employees in different sectors of the Irish '
          'economy. Explain the economic term scarcity in relation to labour (employees).',
-         '1 @ 8', 8,
+         '1 @ 4', 4,
          # The scheme prints the two wordings as consecutive sentences rather
          # than as a list, and they open with the same eleven words, so neither
          # a bullet split nor an anchor split can separate them — each is cut
          # out by naming where it starts and where the next one does.
-         [anyN('r-1', 'Scarcity applied to labour — either wording', 8, 1, 8,
+         [anyN('r-1', 'Scarcity applied to labour — either wording', 4, 1, 4,
                [as_option(block(BODY, a, b)) for a, b in (
                    ('When applied to labour, scarcity refers to the situation where the number',
                     'When applied to labour, scarcity refers to the situation where there are firms'),
                    ('When applied to labour, scarcity refers to the situation where there are firms',
                     '(ii) The pharmaceutical industry has experienced'))],
                'The scheme gives two wordings of the same idea: demand for workers exceeds the '
-               'supply of them. Either earns the 8.')],
+               'supply of them. Either earns the 4.')],
          '', tariff_kind='bestNofParts'),
 
     card('econ-2024-ol-q13-a-ii', YEAR, LEVEL, 'economics-1-5', 'fixed-and-variable-costs',
          '2024 OL Q13(a)(ii)',
          'Explain the difference between fixed costs and variable costs. Give an example in '
          'each case.',
-         'fixed', 8,
+         '2 @ 8', 16,
          [point('r-fixed', 'Fixed Costs: Costs which do not change as output changes / Costs '
-                'which have to be paid even if nothing is produced.', 4,
+                'which have to be paid even if nothing is produced.', 8,
                 'The scheme sets the two definitions side by side in a table with their examples '
                 'in the next column: rent and loan repayments for fixed.',
                 accepts=['Rent', 'Loan repayments']),
-          point('r-variable', 'Variable Costs: Costs which do change as output changes.', 4,
+          point('r-variable', 'Variable Costs: Costs which do change as output changes.', 8,
                 'Examples the scheme prints: electricity, labour, raw materials.',
                 accepts=['Electricity', 'Labour', 'Raw materials'])],
          'Carded as two rows rather than one menu: the question asks for the DIFFERENCE, so a '
@@ -369,5 +369,72 @@ P.menu('Revolut becoming a mortgage lender', 'econ-2024-ol-q16-c-ii',
        ref='2024 OL Q16(c)(ii)', claim=1, per=10,
        drop=SCAF + ('Evidence of Data', 'The Research Process', 'Process overall mark',
                     'Deduct 1m'))
+
+# ── Section B, third pass ───────────────────────────────────────────────────
+# The definition and read-the-answer parts of this paper. None of them lists a
+# menu of bulleted responses, so econ_parts cannot see them: each is one
+# printed answer, or a handful of consecutive wordings, sliced by anchor.
+
+P.cards.append(card(
+    'econ-2024-ol-q13-c-i', YEAR, LEVEL, 'economics-3-3', 'cost-push-inflation',
+    '2024 OL Q13(c)(i)',
+    'Explain what is meant by the economic term, cost-push inflation.',
+    'fixed', 10,
+    [point('r-1', as_option(block(BODY, 'This occurs when the source of upward pressure',
+                                  '(ii) In your opinion, should manufacturers')), 10,
+           'One explanation, 10 marks. The scheme answers with the definition and then its '
+           'imported form — dearer raw materials from abroad passing into home prices — as one '
+           'continuous explanation.')],
+    '', stem='Toilet paper prices rose by 15.6% in 2022 because manufacturers used more '
+             'expensive environmentally friendly raw materials — the paper names this as an '
+             'example of cost-push inflation.',
+    tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2024-ol-q14-a-iii', YEAR, LEVEL, 'economics-3-1', 'national-debt',
+    '2024 OL Q14(a)(iii)',
+    'Outline what is meant by the economic term national debt.',
+    'fixed', 4,
+    [point('r-1', as_option(block(BODY, 'The total / cumulative amount of government borrowing',
+                                  'According to the NTMA')), 4,
+           'One definition, 4 marks. The scheme adds that Ireland’s gross national debt stood '
+           'at €235.9bn at the end of April 2023 — one of the highest per-capita burdens in '
+           'the world.')],
+    '', tariff_kind='fixed'))
+
+# The scheme prints the applied almond-milk answer first and then three generic
+# wordings as consecutive sentences, not bullets — each is cut out by naming
+# where it starts and where the next one does, as with scarcity above.
+P.cards.append(card(
+    'econ-2024-ol-q15-b-iii', YEAR, LEVEL, 'economics-1-1', 'substitute-goods',
+    '2024 OL Q15(b)(iii)',
+    'Almond milk can be classed as a substitute good for cow’s milk. Explain the meaning of '
+    'the economic term substitute good.',
+    '1 @ 6', 6,
+    [anyN('r-1', 'Substitute good — any wording', 6, 1, 6,
+          [as_option(block(BODY, a, b)) for a, b in (
+              ('Almond milk can be classed as a substitute good for cow’s milk because',
+               'A good that satisfies the same need'),
+              ('A good that satisfies the same need', 'A good that can be consumed'),
+              ('A good that can be consumed', 'Goods that can be used as alternatives'),
+              ('Goods that can be used as alternatives', '(c) (i) Using the formula supplied'))],
+          'Any one wording, 6 marks.')],
+    '', tariff_kind='bestNofParts'))
+
+P.cards.append(card(
+    'econ-2024-ol-q15-c-ii', YEAR, LEVEL, 'economics-1-4', 'reading-a-ped-figure',
+    '2024 OL Q15(c)(ii)',
+    'Indicate if the demand for a bar of chocolate is price elastic or price inelastic. '
+    'Explain your answer.',
+    'fixed', 5,
+    [point('r-1', as_option(block(BODY, 'Price elastic demand', 'Possible responses')), 5,
+           'The 5 marks cover the indication and the explanation as one block; the scheme '
+           'states no split between them.')],
+    'The calculation itself (20 marks) is not carded — the scheme’s response is the worked '
+    'arithmetic. What is carded is reading the answer.',
+    stem='Follows the elasticity calculation in (c)(i): the price of a bar of chocolate rose '
+         'from 100 cents to 140 cents, demand fell from 90 bars to 50, and the PED came '
+         'to −1.71.',
+    tariff_kind='fixed'))
 
 emit(cards + P.cards)

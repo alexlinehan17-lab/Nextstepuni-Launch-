@@ -10,6 +10,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from econ_auto import Paper  # noqa: E402
+from econ_lib import anyN, as_option, block, bullets, card, heads, load, make_load, point, tidy  # noqa: E402
 
 P = Paper(2023, 'higher')
 SCAFFOLD = ('Possible responses', 'Suggested responses', 'Deduct 1m', 'The Research Process')
@@ -261,5 +262,182 @@ P.menu('economic disadvantage of this government intervention', 'econ-2023-hl-q1
        'Outline one possible economic disadvantage of the government electricity credit.',
        'A disadvantage — any one', 'One disadvantage, 7 marks.',
        ref='2023 HL Q15(c)(ii)', claim=1, per=7, drop=SCAFFOLD)
+
+
+# ── Third pass: the parts the extractor hands back with fewer than two ──────
+# options — definitions with one printed answer, yes/no parts with one printed
+# justification, and one two-column table. Built from the scheme directly.
+#
+# Left alone on purpose, besides what the header and econ_excluded already
+# record: Q11(a)(i), Q12(b)(i), Q13(b)(i)-(iii) and Q15(a)(iii) are worked
+# calculations; Q14(a)(i) and Q15(b)(ii) are answered by reading the chart
+# printed beside them; Q16(a)(i) has no tariff the scheme attributes to it
+# (the margin prints 4/4/7/8 between (ii)'s marker and (iii)'s, nothing beside
+# (i)'s two definitions); Q13(a)(i) is a drawing whose 13 credited labels at 1
+# mark each live in the scheme's model circular-flow diagram, so it needs that
+# figure cropped before it can be carded.
+BODY = tidy(load(2023, 'higher'))
+
+P.cards.append(card(
+    'econ-2023-hl-q11-b-i', 2023, 'higher', 'economics-2-1',
+    'factor-of-production-labour', '2023 HL Q11(b)(i)',
+    'Explain the factor of production labour.',
+    '1 @ 6', 6,
+    [point('r-1', as_option(block(BODY, 'Labour refers to all human effort',
+                                  '(ii) Explain two factors')),
+           6, 'The definition, 6 marks.')],
+    '', tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2023-hl-q11-c-i', 2023, 'higher', 'economics-4-0',
+    'life-expectancy-and-the-hdi', '2023 HL Q11(c)(i)',
+    'In your opinion, if the average life expectancy in Ireland were to decrease, would it '
+    'positively or negatively affect Ireland’s HDI score? Explain the reason for your answer.',
+    '1+4', 5,
+    [point('r-1', 'Negatively.', 1, 'The scheme pays 1 mark for the choice itself.'),
+     point('r-2', as_option(block(BODY, 'If average life expectancy were to decrease',
+                                  '(ii) Despite Ireland’s high HDI ranking')),
+           4, 'The explanation, 4 marks.')],
+    '', tariff_kind='fixed'))
+
+# Q12(c): the windfall-tax debate. The scheme sets it as a two-column
+# For/Against table and the primary extraction interleaves the columns
+# mid-sentence, so no argument separates from it. append-scheme-blocks.py
+# recovered each column as one contiguous run (the markbank:column-runs block,
+# which the provenance gate searches too), so the arguments are sliced from
+# there — occ=1 naming the column-runs copy of the For run.
+RAW = tidy(make_load('economics')(2023, 'higher'))
+_FOR = block(RAW, 'For Reduce consumer exploitation.', 'Against Deter future investment', occ=1)
+_AGAINST = block(RAW, 'Against Deter future investment in energy development.', '18 1st @ 8')
+WINDFALL = ([as_option(h) for h in heads(_FOR, (
+                'Reduce consumer exploitation.',
+                'Help people during current crisis',
+                'Support Irish businesses.',
+                'Achieve a more equitable tax system.'))] +
+            [as_option(h) for h in heads(_AGAINST, (
+                'Deter future investment in energy development.',
+                'Inadequate infrastructure.',
+                'Erratic future supply of energy.'))])
+
+P.cards.append(card(
+    'econ-2023-hl-q12-c', 2023, 'higher', 'economics-1-3', 'windfall-tax-for-and-against',
+    '2023 HL Q12(c)',
+    'Budget 2023 proposed introducing a temporary 33% windfall tax on energy companies’ '
+    'profits. Discuss the arguments for and the arguments against this proposal.',
+    '1 @ 8+1 @ 5+1 @ 5', 18,
+    [anyN('r-1', 'An argument for or against the windfall tax — any three, covering both sides',
+          None, 3, 8, WINDFALL,
+          'The first four are the scheme’s arguments FOR, the last three its arguments '
+          'AGAINST. The first argument earns 8 and the next two 5 each, and a discussion of '
+          'both sides needs at least one of each.',
+          steps=[8, 5, 5])],
+    'Not split into a for-card and an against-card the way Q16(c)(i) is: the scheme prices '
+    'the three arguments across the sides — 1st @ 8, 2 @ 5 — and states no per-side split.',
+    tariff_kind='fixed'))
+
+_FULL = block(BODY, 'Full Employment refers to a situation', '(ii) Maintaining full employment')
+_CORE, _TAIL = _FULL.split(' 4 ')
+P.cards.append(card(
+    'econ-2023-hl-q14-b-i', 2023, 'higher', 'economics-3-2',
+    'the-term-full-employment', '2023 HL Q14(b)(i)',
+    'Explain the economic term full employment.',
+    '4+2', 6,
+    [point('r-1', tidy(_CORE), 4, 'The body of the definition, 4 marks.'),
+     point('r-2', _TAIL.split('.')[0], 2,
+           'The closing condition, which the scheme prices separately at 2.')],
+    'The scheme prints its 4/2 split as inline ticks in the sentence — "... are employed 4 '
+    'at existing wage rates.2" — so the definition is carded as its two priced halves.',
+    tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2023-hl-q14-c-i', 2023, 'higher', 'economics-4-2',
+    'the-term-trade-protection', '2023 HL Q14(c)(i)',
+    'Explain the economic term trade protection.',
+    '1 @ 7', 7,
+    [point('r-1', as_option(block(BODY, 'Trade Protection refers to government policies',
+                                  '(ii) Some countries are now favouring')),
+           7, 'The definition, 7 marks.')],
+    '', tariff_kind='fixed'))
+
+# Q15(a)(ii): the scheme prices each definition at 4 and marks 2-mark ticks
+# INSIDE each sentence — "cost of production2 are passed" — so a whole-sentence
+# slice cannot dodge the digit. Each definition is its two contiguous halves,
+# joined for display with an em-dash where the tick falls; the gate checks the
+# half after the dash, and the half before it is a verbatim slice too.
+_CP = block(BODY, 'Cost-push inflation occurs when increases', '• Demand-pull inflation occurs')
+_CP1, _CP2 = _CP.split('2 ')
+_DP = block(BODY, 'Demand-pull inflation occurs when', '⟨8⟩')
+_DP1, _DP2 = _DP.split('2 ')
+P.cards.append(card(
+    'econ-2023-hl-q15-a-ii', 2023, 'higher', 'economics-3-3',
+    'demand-pull-and-cost-push-inflation', '2023 HL Q15(a)(ii)',
+    'Distinguish between demand-pull inflation and cost-push inflation.',
+    '4+4', 8,
+    [point('r-1', f"{tidy(_CP1)} — {tidy(_CP2.split('2.')[0])}", 4, 'Cost-push, 4 marks.'),
+     point('r-2', f"{tidy(_DP1)} — {tidy(_DP2.split('2.')[0])}", 4, 'Demand-pull, 4 marks.')],
+    'The em-dash in each definition marks where the scheme prints an inline 2-mark tick.',
+    tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2023-hl-q15-b-i', 2023, 'higher', 'economics-3-3',
+    'the-term-monetary-policy', '2023 HL Q15(b)(i)',
+    'One role of the European Central Bank (ECB) is to formulate monetary policy for the '
+    'Eurozone. Explain the term monetary policy.',
+    '1 @ 8', 8,
+    [point('r-1', as_option(block(BODY, 'Monetary policy refers to any action',
+                                  '(ii) Does the trend on the graph')),
+           8, 'The definition, 8 marks.')],
+    '', tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2023-hl-q15-c-i', 2023, 'higher', 'economics-1-3',
+    'why-the-electricity-credit', '2023 HL Q15(c)(i)',
+    'In budget 2023 the Irish government introduced a €600 electricity credit for all '
+    'households. Explain the main economic reason for the above government intervention.',
+    '1 @ 7', 7,
+    [anyN('r-1', 'A main economic reason — any one', 7, 1, 7,
+          bullets(block(BODY, 'Help Irish citizens with the cost of living crisis',
+                        '(ii) Outline one possible economic disadvantage')),
+          'One reason, 7 marks.')],
+    ''))
+
+P.cards.append(card(
+    'econ-2023-hl-q15-c-iii', 2023, 'higher', 'economics-1-3',
+    'does-the-credit-reduce-electricity-use', '2023 HL Q15(c)(iii)',
+    'In your opinion does the €600 electricity credit encourage electricity users to reduce '
+    'their use of electricity? Explain your answer.',
+    '1 @ 6', 6,
+    [point('r-1', as_option(block(BODY, 'As consumers can continue to purchase',
+                                  'Question 16')),
+           6, 'The scheme answers NO — the credit shields consumers from the price rise, so '
+              'usage holds. One explanation, 6 marks.')],
+    '', tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2023-hl-q16-a-iii', 2023, 'higher', 'economics-2-2',
+    'school-transport-government-failure', '2023 HL Q16(a)(iii)',
+    'The rapid introduction of this scheme created an additional demand of 6,000 bus tickets '
+    'in late September 2022 after schools had opened. Does this represent a government '
+    'failure? Explain your answer.',
+    '1 @ 5', 5,
+    [point('r-1', as_option(block(BODY, 'This government intervention into the market',
+                                  '(b) In 2006, multinational oil trading')),
+           5, 'The scheme answers YES. One explanation, 5 marks.')],
+    '', tariff_kind='fixed',
+    stem='The Irish Government provided free school transport for the 2022/2023 school year.'))
+
+P.cards.append(card(
+    'econ-2023-hl-q16-b-i', 2023, 'higher', 'economics-2-2',
+    'toxic-waste-and-market-failure', '2023 HL Q16(b)(i)',
+    'Does this represent a market failure? Justify your answer.',
+    '1 @ 5', 5,
+    [point('r-1', as_option(block(BODY, 'Market failure occurs when the price mechanism',
+                                  '(ii) The Circular Economy')),
+           5, 'The scheme answers YES. The justification, 5 marks.')],
+    '', tariff_kind='fixed',
+    stem='In 2006 the multinational oil trader Trafigura rejected a US$620,000 offer to '
+         'dispose of its toxic waste safely in The Netherlands and instead paid US$17,000 to '
+         'have it dumped illegally in Côte d’Ivoire, leaving more than 100,000 people in '
+         'need of medical assistance.'))
 
 P.emit()

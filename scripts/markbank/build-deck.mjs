@@ -299,6 +299,7 @@ const figureRecord = (key) => {
       srcHash: md5,
       alt: inspected.alt,
       attribution: inspected.attribution,
+      ...(inspected.solution ? { solution: true } : {}),
     };
   }
 

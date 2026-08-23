@@ -8,7 +8,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from econ_auto import Paper  # noqa: E402
-from econ_lib import anyN, as_option, block, card, heads, load, tidy  # noqa: E402
+from econ_lib import anyN, as_option, block, card, heads, load, point, tidy  # noqa: E402
 
 P = Paper(2025, 'ordinary')
 SCAFFOLD = ('Possible responses', 'Suggested responses', 'Accept relevant infras',
@@ -220,7 +220,10 @@ P.menu('promote Balanced Regional', 'econ-2025-ol-q16-c-ii',
        'Ireland. Suggest one measure the government could take to help achieve this aim.',
        'A measure for regional development — any one', 'One measure, 6 marks.',
        ref='2025 OL Q16(c)(ii)', claim=1, per=6,
-       drop=SCAFFOLD + ('Irish government could take to help achieve',))
+       drop=SCAFFOLD + ('Irish government could take to help achieve',),
+       # Q16 is the last question before the Student Research Project, whose
+       # grading bands otherwise arrive as options 9-11 of this menu.
+       stop='Evidence of Data')
 
 # ── further Section B parts ────────────────────────────────────────────────
 P.menu('economic term homogenous product', 'econ-2025-ol-q11-a-i',
@@ -231,10 +234,11 @@ P.menu('economic term homogenous product', 'econ-2025-ol-q11-a-i',
        'Explanation and example, 6 marks between them.',
        ref='2025 OL Q11(a)(i)', claim=2, per=3, drop=SCAFFOLD)
 
-# Q12(b)(i) is not carded: it asks what C, G and X each stand for, and the
-# scheme's three answers come out welded across two lines — "Consumption
-# expenditure G:" and "Government Spending X: Exports" — so a card would show a
-# letter run onto the end of the answer before it.
+# Q12(b)(i) was once left alone because splitting its three answers welded a
+# letter onto the end of the answer before it. Taken as ONE uncut slice — "C:
+# Consumption expenditure G: Government Spending X: Exports" — each letter
+# precedes its own answer, so it is carded below with the part's ⟨12⟩ unsplit.
+# (econ_excluded still records the old decision; that line is now stale.)
 
 # The plain id belongs to a card citing 2025 OL Q16(a)(iii) on falling
 # inflation — another part whose reconstructed path is a numeral out.
@@ -259,5 +263,180 @@ P.menu('Savers may decide to save less', 'econ-2025-ol-q12-c-iii',
 # "Explain your answer" beside a diagram, marked 10 and 9 for the part as a
 # whole, and the scheme does not say how much of that is the drawing. Splitting
 # it over the four written steps would be my arithmetic, not the scheme's.
+
+# ── The definition and read-the-answer parts of this paper ──────────────────
+# None of these lists a menu of bulleted responses, so econ_parts cannot see
+# them: each is one printed answer, or a couple of consecutive wordings, sliced
+# by anchor — the shape econ_2024_ol.py established.
+
+# econ_excluded records Q11(c)(ii) as answering only its first area — a reading
+# taken off the extractor's mangled view of the part. The scheme itself heads
+# all three areas and answers each, with the tariff printed 1st x 7, 2nd x 3,
+# 3rd x 3, so it is carded here and that registry line is now stale.
+P.cards.append(card(
+    'econ-2025-ol-q11-c-ii', 2025, 'ordinary', 'economics-2-2',
+    'effects-of-the-passenger-cap', '2025 OL Q11(c)(ii)',
+    'If this passenger cap remains unchanged outline the possible economic effect this may '
+    'have on each of the following: tourism into Ireland; other airports in Ireland, i.e. '
+    'Cork, Shannon and Ireland West Airport; and economic growth in Ireland.',
+    '1 @ 7+1 @ 3+1 @ 3', 13,
+    [anyN('r-1', 'The effect on each area — all three', None, 3, 7,
+          [as_option(a) for a in heads(
+              block(BODY, 'Tourism into Ireland This could lead', 'Question 12'),
+              ['Tourism into Ireland', 'Other airports in Ireland',
+               'Economic growth in Ireland'])],
+          'Three effects, the first paid 7 and the second and third 3 each.',
+          steps=[7, 3, 3])],
+    '', stem='Dublin Airport has a cap of 32 million passengers a year, which was exceeded '
+             'in 2024.', tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2025-ol-q12-a-ii', 2025, 'ordinary', 'economics-3-1',
+    'current-vs-capital-expenditure', '2025 OL Q12(a)(ii)',
+    'In Budget 2025, the government is making €360 million available for walking and cycling '
+    'infrastructure projects throughout the country. Indicate whether this is an example of '
+    'current or capital expenditure. Explain your answer.',
+    'fixed', 5,
+    [point('r-1', as_option(block(BODY, 'Capital expenditure is spending by the government')), 5,
+           'The 5 marks cover the tick and the explanation as one block; the scheme states '
+           'no split between them.')],
+    '', tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2025-ol-q12-b-i', 2025, 'ordinary', 'economics-3-0',
+    'letters-in-the-national-income-formula', '2025 OL Q12(b)(i)',
+    'State what each of the letters C, G and X stand for.',
+    'fixed', 12,
+    [point('r-1', as_option(block(BODY, 'C: Consumption expenditure')), 12,
+           'The scheme prints ⟨12⟩ against the part as a whole and no per-letter split, so '
+           'the three answers are one row.')],
+    '', stem='National Income is calculated using the following formula: National Income = '
+             'C + Investment + G + X − Imports.', tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2025-ol-q12-b-iii', 2025, 'ordinary', 'economics-3-0',
+    'what-an-open-economy-is', '2025 OL Q12(b)(iii)',
+    'Ireland is a small open economy. Explain what is meant by the economic term open '
+    'economy.',
+    'fixed', 4,
+    [point('r-1', as_option(block(BODY, 'An Open Economy is an economy')), 4,
+           'One explanation, 4 marks.')],
+    '', tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2025-ol-q12-c-i', 2025, 'ordinary', 'economics-3-3',
+    'what-ecb-stands-for', '2025 OL Q12(c)(i)',
+    'What do the initials ECB stand for?',
+    '3 @ 4', 12,
+    [point('r-1', as_option(block(BODY, 'European Central Bank')), 12,
+           'Three initials, 4 marks each.')],
+    '', stem='In October 2024, the ECB cut interest rates by a further 0.25%.',
+    tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2025-ol-q13-a-i', 2025, 'ordinary', 'economics-2-1',
+    'factor-of-production-labour', '2025 OL Q13(a)(i)',
+    'Explain the factor of production labour.',
+    'fixed', 7,
+    [point('r-1', as_option(block(BODY, 'The effort that people contribute')), 7,
+           'One explanation, 7 marks.')],
+    '', tariff_kind='fixed'))
+
+# The sectors are printed as one comma-separated line rather than bullets, so
+# econ_parts cannot see them. Each option is a contiguous run of that line —
+# the last comma-group, "hospitality and transport and logistics", is two
+# sectors and is split at its first "and".
+_sectors = [s.strip(' .') for s in
+            as_option(block(BODY, 'Science and engineering')).split(',')]
+_sectors = _sectors[:-1] + _sectors[-1].split(' and ', 1)
+P.cards.append(card(
+    'econ-2025-ol-q13-a-ii', 2025, 'ordinary', 'economics-2-1',
+    'sectors-short-of-skilled-labour', '2025 OL Q13(a)(ii)',
+    'State two sectors of the Irish economy which are currently experiencing a shortage of '
+    'skilled labour.',
+    '1 @ 8+1 @ 4', 12,
+    [anyN('r-1', 'A sector short of skilled labour — any two', None, 2, 8, _sectors,
+          'Two sectors, the first paid 8 and the second 4.', steps=[8, 4])],
+    '', stem='Ireland remains close to full employment, with some employers experiencing '
+             'shortages of skilled labour in different sectors of the economy.',
+    tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2025-ol-q13-b-ii', 2025, 'ordinary', 'economics-1-5',
+    'marginal-cost-and-marginal-revenue', '2025 OL Q13(b)(ii)',
+    'Explain the meaning of either of the following terms: marginal cost or marginal '
+    'revenue.',
+    '1 @ 6', 6,
+    [anyN('r-1', 'Either definition — any one', 6, 1, 6,
+          [as_option(block(BODY, 'Marginal cost is the addition',
+                           'Marginal revenue is the addition')),
+           as_option(block(BODY, 'Marginal revenue is the addition'))],
+          'One definition, 6 marks. The scheme prints this part as (b)(iii); the paper heads '
+          'it (b)(ii), and the paper is what the citation follows.')],
+    '', tariff_kind='bestNofParts'))
+
+P.cards.append(card(
+    'econ-2025-ol-q14-a-i', 2025, 'ordinary', 'economics-4-2',
+    'what-customs-duties-are', '2025 OL Q14(a)(i)',
+    'Explain the economic term customs duties.',
+    'fixed', 6,
+    [point('r-1', as_option(block(BODY, 'A custom duty is a tax')), 6,
+           'One explanation, 6 marks.')],
+    '', stem='Ireland reaps €700m Brexit bonanza from customs duties.', tariff_kind='fixed'))
+
+# The plain id econ-2025-ol-q15-a-i belongs to the card citing 2025 OL
+# Q15(c)(i) on the national debt — a part whose reconstructed path was a letter
+# out — so this one names its subject.
+P.cards.append(card(
+    'econ-2025-ol-q15-a-i-entrepreneur', 2025, 'ordinary', 'economics-1-5',
+    'what-an-entrepreneur-is', '2025 OL Q15(a)(i)',
+    # The lead-in is the paper's own stem sentence: four words of bare question
+    # could never be placed by econ_refcheck's six-word run.
+    'Entrepreneurs are vital to the success of the Irish economy. Explain the term '
+    'entrepreneur.',
+    'fixed', 10,
+    [point('r-1', as_option(block(BODY, 'An entrepreneur is an individual who identifies')), 10,
+           'One explanation, 10 marks.')],
+    '', tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2025-ol-q15-a-ii', 2025, 'ordinary', 'economics-1-5',
+    'why-entrepreneurs-control-costs', '2025 OL Q15(a)(ii)',
+    'An entrepreneur must control their costs of production. Do you agree or disagree with '
+    'this statement? Justify your answer.',
+    'fixed', 4,
+    [point('r-1', as_option(block(BODY, 'Entrepreneurs must control their costs')), 4,
+           'The 4 marks cover the tick and the justification as one block; the scheme argues '
+           'the agree side.')],
+    '', tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2025-ol-q15-c-ii', 2025, 'ordinary', 'economics-1-0',
+    'what-a-mixed-economy-is', '2025 OL Q15(c)(ii)',
+    'Ireland is considered a mixed economy. Explain the meaning of the term mixed economy.',
+    'fixed', 7,
+    [point('r-1', as_option(block(BODY, 'A mixed economy is one that combines')), 7,
+           'One explanation, 7 marks.')],
+    '', tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2025-ol-q16-a-i', 2025, 'ordinary', 'economics-3-1',
+    'excise-and-vat-are-indirect-taxes', '2025 OL Q16(a)(i)',
+    'Indicate whether excise duty and VAT are examples of a direct tax or an indirect tax. '
+    'Explain your choice.',
+    'fixed', 4,
+    [point('r-1', as_option(block(BODY, 'Excise duty is an indirect tax')), 4,
+           'The 4 marks cover the tick and the explanation as one block.')],
+    '', stem='In Budget 2025 the government announced a €1 increase in excise duty and VAT '
+             'on a pack of 20 cigarettes.', tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2025-ol-q16-b-i', 2025, 'ordinary', 'economics-3-3',
+    'what-cpi-stands-for', '2025 OL Q16(b)(i)',
+    'What do the letters CPI stand for? I is completed for your benefit.',
+    '1 @ 3+1 @ 2', 5,
+    [point('r-1', as_option(block(BODY, 'Consumer Price Index')), 5,
+           'Two letters to complete: the first paid 3 and the second 2; the I is given.')],
+    '', tariff_kind='fixed'))
 
 P.emit()

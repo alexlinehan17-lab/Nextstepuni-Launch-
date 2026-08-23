@@ -4,16 +4,20 @@
 100 marks, eight questions of twelve answered out of ten, plus a mark for each
 of the first four answered correctly.
 
-Not carded: the table completion in question 4(a), the national income
-calculation in question 10, and the two parts whose marks are for drawing a
-shift on a supplied diagram rather than for the reasoning printed beside it.
+Not carded: the table completions in questions 3(a) and 4(a) and the national
+income calculation in question 10 (the marks are for figures and workings, not
+prose); 3(b), which is answered by reading the marginal-utility figures the
+student calculated in 3(a); 3(c), whose response is the worked equi-marginal
+ratio; 6(a), answered by ticking direct or indirect against each tax; and the
+two parts whose marks are for drawing a shift on a supplied diagram rather
+than for the reasoning printed beside it.
 """
 import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from econ_auto import Paper  # noqa: E402
-from econ_lib import anyN, block, bullets, card, load, point, tidy  # noqa: E402
+from econ_lib import anyN, as_option, block, bullets, card, load, point, tidy  # noqa: E402
 
 P = Paper(2023, 'higher', 'A')
 SCAFFOLD = ('Possible responses', 'Suggested responses')
@@ -148,6 +152,57 @@ P.cards.append(card(
                 'askedInThisQuestion': True},
                {'letter': 'C', 'meaning': 'an efficient production point, on the frontier',
                 'askedInThisQuestion': True}]))
+
+# ── The definition-shaped parts, built from the scheme directly ────────────
+# Each prints one tariff cell over one stated answer (or one short list of
+# alternative wordings), so these are point/anyN cards sliced with block()
+# rather than menus — the extractor hands them back with the answer welded to
+# the question and nothing to claim.
+
+P.cards.append(card(
+    'econ-2023-hl-sa-q4-b', 2023, 'higher', 'economics-1-5',
+    'covering-costs-in-the-short-run', '2023 HL Section A Q4(b)',
+    'To remain in production, in the short run a firm must cover its average total costs. '
+    'Do you agree or disagree with this statement? Explain your answer.',
+    '1 @ 6', 6,
+    [point('r-1', as_option(block(BODY, 'In the short run a firm must cover its average variable',
+                                  'OR (c) Explain the relationship')),
+           6, 'The ticked box is DISAGREE: in the short run only average variable costs must '
+              'be covered. One explanation, 6 marks.')],
+    '', section='A', tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2023-hl-sa-q8-a', 2023, 'higher', 'economics-3-3',
+    'why-the-ecb-raised-interest-rates', '2023 HL Section A Q8(a)',
+    'Eurozone interest rates increased four times in the last six months of 2022. Justify '
+    'why the European Central Bank (ECB) made this decision.',
+    '1 @ 6', 6,
+    [point('r-1', as_option(block(BODY, 'The European Central Bank (ECB) made this monetary',
+                                  '(b) Does being a member')),
+           6, 'One justification, 6 marks.')],
+    '', section='A', tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2023-hl-sa-q8-b', 2023, 'higher', 'economics-3-3',
+    'eurozone-membership-and-monetary-policy', '2023 HL Section A Q8(b)',
+    'Does being a member of the Eurozone affect Ireland’s ability to implement monetary '
+    'policy in Ireland? Explain your answer.',
+    '1 @ 6', 6,
+    [anyN('r-1', 'A way membership constrains Irish monetary policy — any one', 6, 1, 6,
+          bullets(block(BODY, 'Ireland doesn’t have sovereignty over its monetary policy',
+                        '9. China')),
+          'The answer is YES. One explanation, 6 marks.')],
+    '', section='A'))
+
+P.cards.append(card(
+    'econ-2023-hl-sa-q9-a', 2023, 'higher', 'economics-1-5',
+    'law-of-diminishing-marginal-returns', '2023 HL Section A Q9(a)',
+    'Explain the economic concept of the law of diminishing marginal returns.',
+    '1 @ 6', 6,
+    [point('r-1', as_option(block(BODY, 'The law of diminishing marginal returns states',
+                                  '(b) Harvard Kennedy School')),
+           6, 'The definition, 6 marks.')],
+    '', section='A', tariff_kind='fixed'))
 
 P.menu('As landlords leave the market it reduces the supply', 'econ-2023-hl-sa-q7-a',
        'economics-1-1', 'landlords-leaving-and-the-rental-market',

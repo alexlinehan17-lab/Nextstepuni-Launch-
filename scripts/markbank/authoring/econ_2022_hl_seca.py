@@ -14,7 +14,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from econ_auto import Paper  # noqa: E402
-from econ_lib import anyN, block, bullets, card, load, tidy  # noqa: E402
+from econ_lib import anyN, as_option, block, bullets, card, load, point, tidy  # noqa: E402
 
 P = Paper(2022, 'higher', 'A')
 SCAFFOLD = ('Possible responses', 'Suggested responses')
@@ -115,5 +115,107 @@ P.cards.append(card(
           'Two advantages, 4 marks each.')],
     '', section='A',
     stem='The number of people in Ireland aged over 65 is predicted to reach 1 million by 2031.'))
+
+
+# ── Second pass: the non-menu parts, built from the scheme directly ─────────
+# Each of these prints its whole answer as one or two blocks rather than a
+# bulleted menu, so the extractor has nothing to split and the card is sliced
+# by hand. Every slice is a contiguous run of the scheme; scheme typos ride
+# along uncorrected, because retyping is how corruption enters.
+
+# Q1(b). The paper's demand graph is in the figure manifest as a complete art
+# crop, so the card can carry the question as the paper words it.
+P.cards.append(card(
+    'econ-2022-hl-sa-q1-b', 2022, 'higher', 'economics-1-1', 'the-law-of-demand',
+    '2022 HL Section A Q1(b)',
+    'With reference to the graph above explain the law of demand.',
+    '5', 5,
+    [point('r-1', as_option(block(BODY, 'The Law of Demand states',
+                                  '2. (a) Using the data provided')), 5,
+           'The law itself, then what it looks like on this graph: the price rise from €4 to €5 '
+           'cuts quantity demanded from 8 to 4.')],
+    'Part (a), the elasticity calculation off the same graph, is not carded — the response is '
+    'the worked formula.', section='A',
+    tariff_kind='fixed', figure_key='economics-2022-HL-paper-p03-art'))
+
+# Q3(b). The market-failure explanation, 3 for the statement and 3 for the
+# example.
+P.cards.append(card(
+    'econ-2022-hl-sa-q3-b', 2022, 'higher', 'economics-2-2', 'alcohol-and-market-failure',
+    '2022 HL Section A Q3(b)',
+    'The purchase of alcohol in the free market may generate a market failure. Explain this '
+    'statement using an example to illustrate your understanding.',
+    '3 + 3', 6,
+    [point('r-1', as_option(block(BODY, 'Market failure occurs when the price mechanism',
+                                  '4. (a) Categorise each of the following')), 6,
+           '3 for explaining market failure and 3 for an example of it in the alcohol market.')],
+    '', section='A', tariff_kind='fixed',
+    stem='From early 2022 a 750ml bottle of wine could not be sold for less than €7.40, a '
+         '500ml can of beer for less than €1.70, or a 70cl bottle of spirits for less than '
+         '€20.70.'))
+
+# Q4(b). The ticks in (a) are not carded — they are a table — but the scheme
+# prints a fixed justification for each of the three items, on a descending
+# 3+2+2, and the justification states the categorisation it defends.
+P.cards.append(card(
+    'econ-2022-hl-sa-q4-b', 2022, 'higher', 'economics-3-0', 'injections-and-leakages-justified',
+    '2022 HL Section A Q4(b)',
+    'Categorise each of the following as either an injection, or a leakage from the circular '
+    'flow of income. Justify each of your choices.',
+    '3 + 2 + 2', 7,
+    [anyN('r-1', 'The justification for each item — all three', None, 3, 3,
+          bullets(block(BODY, 'Public sector salaries are a part of government spending',
+                        'OR (c) Outline two reasons why inflows')),
+          'Three justifications, paid 3, 2 and 2. Each names the side of the circular flow its '
+          'item sits on.', steps=[3, 2, 2])],
+    'The tick table in (a) carries its own 3+3+2; this card is the justification the paper '
+    'asks for in (b).', section='A',
+    tariff_kind='fixed', figure_key='economics-2022-HL-paper-p06-i0'))
+
+# Q9(a) and Q9(b). Private cost, private benefit, then the social benefits —
+# each side priced by its own printed cell.
+P.cards.append(card(
+    'econ-2022-hl-sa-q9-a', 2022, 'higher', 'economics-2-2', 'private-costs-and-benefits',
+    '2022 HL Section A Q9(a)',
+    'Identify one private cost and one private benefit for the consumer of installing solar '
+    'panels.',
+    '5 + 5', 10,
+    [point('r-cost', as_option(block(BODY, 'The private cost of installing solar panels',
+                                     'A private benefit for the consumer')), 5,
+           'The private cost, 5 marks.'),
+     point('r-benefit', as_option(block(BODY, 'A private benefit for the consumer of installing '
+                                              'solar panels')), 5,
+           'The private benefit, 5 marks.')],
+    '', section='A', tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2022-hl-sa-q9-b', 2022, 'higher', 'economics-2-2', 'social-benefits-of-solar-panels',
+    '2022 HL Section A Q9(b)',
+    'Installing solar panels also creates social benefits. Discuss this statement.',
+    '5', 5,
+    [point('r-1', as_option(block(BODY, 'Social benefits are benefits to society',
+                                  '10. (a)')), 5,
+           'What a social benefit is, then the two this good creates: finite resources spared '
+           'and emissions avoided.')],
+    '', section='A', tariff_kind='fixed'))
+
+# Q10(b). Point X is judged against the production possibility schedule, which
+# the figure manifest carries whole; the reasoning — inside the frontier is
+# inefficient — is the economics the 9 marks pay for. Part (a), the opportunity
+# cost read off the same schedule, is a worked figure and is not carded.
+P.cards.append(card(
+    'econ-2022-hl-sa-q10-b', 2022, 'higher', 'economics-0-1', 'producing-inside-the-frontier',
+    '2022 HL Section A Q10(b)',
+    'The point X (20,20) is another production possibility for PepsiCo. Would you recommend '
+    'them to produce at this point? Explain your answer.',
+    '9', 9,
+    [point('r-1', as_option(block(BODY, 'No, as it can be seen as waste of resources',
+                                  'SECTION B')), 9,
+           'No — X lies inside the frontier, so resources are idle: at 20 of either product the '
+           'schedule allows 80 of the other.')],
+    '', section='A', tariff_kind='fixed',
+    stem='Cork based firm PepsiCo have 23 brands in total. Doritos and Tropicana are two of '
+         'their most popular products.',
+    figure_key='economics-2022-HL-paper-p13-i0'))
 
 P.emit()

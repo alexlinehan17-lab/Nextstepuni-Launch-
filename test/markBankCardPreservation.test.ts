@@ -59,8 +59,13 @@ const decks = [
    * at all — found by the ratchet-soundness review, which means every earlier
    * count in this file was guarding seven decks while two rode along
    * unprotected. First recorded at their current shipped state. */
-  ['maths:higher', MATHS_HIGHER, 389, 'd2d5175dc3525c1f0ddeaa66df7631eb82ae26ef4f059b455dfcaf8b5d4e2357'],
-  ['maths:ordinary', MATHS_ORDINARY, 396, 'bbd98d5d4a318c0a18fa6373494f45b5f55130e4327865db20e572603f444ca9'],
+  /* 2026-08-23 (same day): maths 389/396 -> 391/398. The user caught a card
+   * with no context ("find the probability..." with nothing saying 15% or 11
+   * players) — the fix ships every part's paper stem, and four cards whose
+   * question texts previously collided as duplicates are disambiguated by
+   * their stems and now ship. Nothing was removed; all prior ids remain. */
+  ['maths:higher', MATHS_HIGHER, 390, '23beae5a41188a29cd14fad10d9051270d53455c9df02f6e225d57fd87e2d6e0'],
+  ['maths:ordinary', MATHS_ORDINARY, 398, '132d41a755698eb9fade86a22efad0cf1425d6d328938da0c8ace53eef6d8600'],
   ['construction-studies:higher', CONS_HIGHER, 255, 'b74a39fd589f1082d6378190aee778d528eff0968d7af0ee9144525f2e40d57b'],
   ['construction-studies:ordinary', CONS_ORDINARY, 250, 'f56985e32cc1f02a2e2f7a7eb300a44646b75cf3604a12b5a478bde2a520d2da'],
 ] as const;
@@ -77,6 +82,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(6_691);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(6694);
   });
 });

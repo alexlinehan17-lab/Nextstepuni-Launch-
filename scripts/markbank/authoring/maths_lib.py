@@ -173,10 +173,39 @@ class Author:
             out.append((SOLUTION_LABEL, text))
         return out
 
+    def stem_for(self, key):
+        """The paper's setup for this part — the context the ask leans on.
+
+        "Find the probability that there is exactly one left footed player on
+        the team" is unanswerable without the stem that says 15% of the
+        population is left footed and the team has 11 players. The stem lives
+        on the question, sometimes on the letter; both are the paper's own
+        words. Cleaned piece by piece (clean_like matches one fragment at a
+        time) and deduplicated against the part's own text, since a short part
+        already pulls its letter stem into the question."""
+        paper, q, letter, roman = key[0], key[1], key[2], key[3]
+        P = self.P[paper]
+        pieces = []
+        for src in ((q, None), (q, letter) if letter else None):
+            if not src:
+                continue
+            raw = (P.stem(*src) or '').strip()
+            raw = re.sub(r'^\(\d{1,3}\s*marks?\)\s*', '', raw)
+            if len(_squash(raw)) >= 15:
+                pieces.append(mathtext.clean_like(P.files, raw))
+        text = ' '.join(dict.fromkeys(pieces))
+        return text if len(_squash(text)) >= 15 else ''
+
     def card(self, key, *, cid, topic, concept, notes='', stem='', figure_key=''):
         if cid in self._used:
             raise Refused(f'{cid}: already emitted')
         qtext = FURNITURE_TAIL.sub('', self.question(key)).strip(' .;,')
+        if not stem:
+            stem = self.stem_for(key)
+            # A stem the question already contains (the short-part rule pulls
+            # it in) would print twice.
+            if stem and _squash(stem) in _squash(qtext):
+                stem = ''
         # Squashing keeps only letters and digits, and a Maths question is
         # mostly neither: "Show that z - iz = 8 - 4i." measures fourteen and is
         # a whole question. Judged on either measure, not on the squash alone.
@@ -185,7 +214,13 @@ class Author:
         total, ladder = self.S.tariff(key)
         if not total or not ladder or len(ladder) < 2:
             raise Refused(f'{self.ref(key)}: the scheme prints no ladder for this part')
-        rows = [(lab, txt) for lab, txt in self.S.answer_rows(key)
+        # The fraction splice can echo a stacked token the scheme prints once
+        # — "Writes 1/√n 1/√n" — when the same bar serves two printed rows.
+        # Collapsed here because a student reads this text; the collapsed form
+        # still traces (the fold holds the doubled spelling, and a substring
+        # only matches more).
+        dedupe = lambda t: re.sub(r'(\S{1,14}/\S{1,14}) \1(?=\s|$)', r'\1', t)
+        rows = [(lab, dedupe(txt)) for lab, txt in self.S.answer_rows(key)
                 if txt and not CONTENT_FREE.match(txt) and len(_squash(txt)) > 6]
         # A marking point set as two-dimensional mathematics does not survive
         # being read line by line: "cos C = (28^2 + 4^2 - 30^2) / (2(28)(4))"

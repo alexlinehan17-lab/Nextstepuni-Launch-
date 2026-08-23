@@ -11,7 +11,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from econ_auto import Paper  # noqa: E402
-from econ_lib import anyN, block, bullets, card, load, tidy  # noqa: E402
+from econ_lib import anyN, as_option, block, bullets, card, load, point, tidy  # noqa: E402
 
 P = Paper(2022, 'higher')
 SCAFFOLD = ('Possible responses', 'Suggested responses', 'Must have a minimum')
@@ -300,11 +300,141 @@ P.menu('one step businesses in Ireland can take', 'econ-2022-hl-q16-c-iii',
        ref='2022 HL Q16(c)(iii)', claim=1, per=2,
        drop=SCAFFOLD + ('Deduct 1m', 'The Research Process', 'Data: 5 quantitative'))
 
-P.menu('Possible negative effect on Irish exports', 'econ-2022-hl-q15-b-ii',
-       'economics-4-2', 'brexit-and-irish-uk-trade',
-       'Outline other impacts Brexit has had on the trade relationship between the UK and '
-       'Ireland.',
-       'An impact — any one', 'One impact, 4 for the point and 3 for developing it.',
-       ref='2022 HL Q15(b)(ii)', claim=1, per=4, drop=SCAFFOLD)
+# Q15(b)(ii). The scheme runs its six impacts together as headed paragraphs
+# rather than bullets, so the extractor read them as two welded runs and the
+# audit flagged both. Split at the scheme's own headings instead — and claim
+# what the printed tariff says, ⟨2 x 7⟩⟨(4 + 3)⟩: two impacts at 7, not one at 4.
+BREXIT = [as_option(block(BODY, a, b)) for a, b in (
+    ('Possible negative effect on Irish exports', 'Effects on agricultural sector'),
+    ('Effects on agricultural sector', 'Labour market effects'),
+    ('Labour market effects', 'Imports from the UK.'),
+    ('Imports from the UK.', 'Relocation of U.K. based firms'),
+    ('Relocation of U.K. based firms', 'Instability in Northern Ireland'),
+    ('Instability in Northern Ireland', '(iii) Explain how a knowledge of price elasticity'),
+)]
+P.cards.append(card(
+    'econ-2022-hl-q15-b-ii', 2022, 'higher', 'economics-4-2', 'brexit-and-irish-uk-trade',
+    '2022 HL Q15(b)(ii)',
+    'Apart from the change in exchange rates between the two currencies, outline two other '
+    'impacts Brexit has had on the trade relationship between the UK and Ireland.',
+    '2 x 7', 14,
+    [anyN('r-1', 'An impact — any two', 14, 2, 7, BREXIT,
+          'Two impacts, 7 marks each: 4 for the point and 3 for developing it.')],
+    ''))
+
+# ── The term definitions, built from the scheme directly ────────────────────
+# Each of these prints one answer as a single block — a definition, not a menu
+# — so the card is a point row sliced by hand. Scheme typos ride along
+# uncorrected, because retyping is how corruption enters.
+
+P.cards.append(card(
+    'econ-2022-hl-q11-c-i', 2022, 'higher', 'economics-0-1', 'what-opportunity-cost-is',
+    '2022 HL Q11(c)(i)',
+    # The paper's own question is five words — too short for the citation gate
+    # to place — so the paper's lead-in about the project rides in front of it.
+    'The North Runway Project at Dublin airport is estimated to cost €250m - €500m. Explain '
+    'the term opportunity cost.',
+    '8', 8,
+    [point('r-1', as_option(block(BODY, 'Opportunity cost refers to the cost of foregone '
+                                        'alternatives')), 8,
+           'One definition, 8 marks: the cost of the next best alternative forgone.')],
+    'The applied opportunity cost on this question, Q11(c)(ii), is carded separately.',
+    tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2022-hl-q12-a-iii', 2022, 'higher', 'economics-1-3', 'what-privatisation-is',
+    '2022 HL Q12(a)(iii)',
+    # Four words on the paper — too short for the citation gate to place — so
+    # the paper's next sentence, the (iv) lead-in, rides in front of it.
+    'A government could choose privatisation of a semi-state body over deregulation. Explain '
+    'the term privatisation.',
+    '4', 4,
+    [point('r-1', as_option(block(BODY, 'This is the sale of a state-owned company')), 4,
+           'One definition, 4 marks. Whole or partial sale both count.')],
+    'The reason to privatise rather than deregulate, Q12(a)(iv), is carded separately.',
+    tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2022-hl-q14-a-i', 2022, 'higher', 'economics-3-3', 'what-cost-push-inflation-is',
+    '2022 HL Q14(a)(i)',
+    'Explain the term cost push inflation with reference to the statement above.',
+    '3 + 3', 6,
+    [point('r-1', as_option(block(BODY, 'Cost push inflation refers to increases in the '
+                                        'average price')), 6,
+           '3 for the definition and 3 for relating it to the statement: dearer cement and '
+           'timber pushing up house prices.')],
+    '', tariff_kind='fixed',
+    stem='The cost of building a house has risen by 30% in 2021. Everything has gone up by a '
+         'staggering rate, from the price of a bag of cement, to the timber on the roof, to '
+         'the steel. The cost of building a house in late 2021 was €70,000 more than was '
+         'originally budgeted.'))
+
+# Q13(a)(ii). Two definitions with their examples, priced ⟨6 + 2⟩ each — the
+# question names both taxes, so this is not a choice.
+P.cards.append(card(
+    'econ-2022-hl-q13-a-ii', 2022, 'higher', 'economics-3-1', 'direct-and-indirect-taxes',
+    '2022 HL Q13(a)(ii)',
+    'The Irish government uses both direct and indirect tax to raise government revenue. '
+    'Distinguish between these two types of taxes. Use examples of each to support your answer.',
+    '(6 + 2) + (6 + 2)', 16,
+    [point('r-direct', as_option(block(BODY, 'Direct taxes are taxes placed upon income and '
+                                             'wealth',
+                                       'Indirect taxes are taxes placed')), 8,
+           'Direct tax: 6 for the distinction and 2 for an example.'),
+     point('r-indirect', as_option(block(BODY, 'Indirect taxes are taxes placed on spending')), 8,
+           'Indirect tax: 6 for the distinction and 2 for an example.')],
+    '', tariff_kind='fixed'))
+
+# Q12(c)(i). A menu the extractor drops: the ⟨2 x 4⟩ cell is printed beside the
+# (c) lead-in, so the (i) segment that holds the bullets arrives with no cells
+# and is skipped. Sliced by hand instead.
+P.cards.append(card(
+    'econ-2022-hl-q12-c-i', 2022, 'higher', 'economics-0-2',
+    'challenges-of-a-carbon-neutral-motor-industry', '2022 HL Q12(c)(i)',
+    'Outline two challenges which the Irish economy faces in transforming the Irish motor '
+    'industry into a carbon neutral industry.',
+    '2 x 4', 8,
+    [anyN('r-1', 'A challenge — any two', 8, 2, 4,
+          bullets(block(BODY, 'Prohibitive cost of electric cars',
+                        'Discuss one reason why the Irish government should grant')),
+          'Two challenges, 4 marks each, split 2 for the challenge and 2 for developing it.')],
+    '',
+    stem='By 2030, there will be an estimated 500,000 electric vehicles on Irish roads with '
+         'proposals already in place to ban the sale of non-zero emission vehicles.'))
+
+# Q11(b)(iii). The ⟨5⟩ cell is printed a line into the response, so the head of
+# the answer is welded to the extractor's question. Sliced whole instead.
+P.cards.append(card(
+    'econ-2022-hl-q11-b-iii', 2022, 'higher', 'economics-1-2', 'derived-demand-and-land',
+    '2022 HL Q11(b)(iii)',
+    'Explain how the concept of derived demand relates to the factor of production land.',
+    '5', 5,
+    [point('r-1', as_option(block(BODY, 'Derived demand states that a factor of production')), 5,
+           'The concept, then its application: land is wanted for what it lets you produce, '
+           'not for itself.')],
+    '', tariff_kind='fixed'))
+
+# Q14(b)(iii). The cost table is in the figure manifest whole; row 4 prints the
+# marginal cost of €55,000 the part turns on. The calculations for A, B and C
+# in (b)(i) are worked figures and are not carded.
+P.cards.append(card(
+    'econ-2022-hl-q14-b-iii', 2022, 'higher', 'economics-1-5', 'profit-maximising-output',
+    '2022 HL Q14(b)(iii)',
+    'If the firm earns €55,000 for an additional unit of output produced, how many houses '
+    'should it produce? Explain your answer.',
+    '5', 5,
+    [point('r-1', as_option(block(BODY, 'The firm should produce 4 houses')), 5,
+           'The answer and the rule it follows: produce where marginal cost equals marginal '
+           'revenue.')],
+    '', tariff_kind='fixed',
+    stem='The figures below represent the costs of building an average 3-bedroom '
+         'semi-detached house in rural Ireland.',
+    figure_key='economics-2022-HL-paper-p27-i0',
+    label_key=[{'letter': 'A', 'meaning': 'total cost at one unit — 360,000',
+                'askedInThisQuestion': False},
+               {'letter': 'B', 'meaning': 'average total cost at two units — 200,000',
+                'askedInThisQuestion': False},
+               {'letter': 'C', 'meaning': 'marginal cost of the third unit — 50,000',
+                'askedInThisQuestion': False}]))
 
 P.emit()

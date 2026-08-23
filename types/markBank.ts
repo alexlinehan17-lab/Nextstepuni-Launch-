@@ -179,6 +179,10 @@ export interface CardFigure {
    *  asks about — the guard against a crop that cuts off a label being examined. */
   lettersVisible: string[];
   attribution: string;
+  /** True when the crop IS the scheme's worked solution. A solution shown in
+   *  the question area before reveal answers the question for the student, so
+   *  the session screen holds these back until the scheme is revealed. */
+  solution?: boolean;
   /** Named in the paper's acknowledgements, where a figure is third-party. */
   thirdPartyRights?: string;
 }

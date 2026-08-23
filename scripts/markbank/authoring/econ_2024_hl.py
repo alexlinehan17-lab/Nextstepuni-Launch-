@@ -320,6 +320,86 @@ for cid, ref, qtext, concept, start, end in [
         'a drawing.', tariff_kind='fixed'))
 
 
+# ── Definitions and single-answer parts ─────────────────────────────────────
+# Each prints its tariff beside the part and one answer — or a short list of
+# accepted formulations — under it. None is a menu econ_parts can read, so they
+# are sliced from the scheme directly, like the Q11(c) explanations above.
+cards.append(card(
+    'econ-2024-hl-q11-a-ii', YEAR, LEVEL, 'economics-3-0', 'tourism-and-the-circular-flow',
+    '2024 HL Q11(a)(ii)',
+    'Outline the effect of this increase in tourism on Ireland’s circular flow of income.',
+    'fixed', 6,
+    [point('r-1', as_option(block(BODY, 'Foreign tourists coming to Ireland are an invisible export',
+                                  '(iii) Outline one possible disadvantage')), 6,
+           'One effect, 6 marks: tourists are an invisible export, so their spending is an '
+           'injection that increases the circular flow.')],
+    '', stem='Set on a chart of foreign tourist arrivals rising from 380,000 in July 2021 to '
+             '737,600 in August 2023.', tariff_kind='fixed'))
+
+cards.append(card(
+    'econ-2024-hl-q11-b-ii', YEAR, LEVEL, 'economics-3-0', 'income-tax-and-the-multiplier',
+    '2024 HL Q11(b)(ii)',
+    'Explain briefly how a reduction in income tax rates would affect the value of the '
+    'multiplier.',
+    'fixed', 4,
+    [point('r-1', as_option(block(BODY, 'A reduction in income tax would result',
+                                  '(iii) Outline two uses of the information')), 4,
+           'One explanation, 4 marks: a smaller leakage, so spending and economic activity '
+           'rise — the multiplier grows.')],
+    '', tariff_kind='fixed'))
+
+q13b1 = block(BODY, 'Globalisation is the process by which',
+              '(ii) Explain two reasons behind the growth')
+cards.append(card(
+    'econ-2024-hl-q13-b-i', YEAR, LEVEL, 'economics-4-1', 'what-globalisation-is',
+    '2024 HL Q13(b)(i)',
+    'Globalisation is not dead. It may not even be dying. But it is changing. '
+    'Explain the term globalisation.',
+    '1 @ 6', 6,
+    [anyN('r-1', 'A way of explaining the term — any one', 6, 1, 6,
+          [as_option(h) for h in heads(q13b1, [
+              'Globalisation is the process',
+              'Globalisation is the increasing internationalisation',
+              'Globalisation is the ability to produce',
+              'Integration between countries'])],
+          'One explanation, 6 marks. The scheme accepts four formulations, from the full '
+          'definition down to “integration between countries”.')],
+    ''))
+
+cards.append(card(
+    'econ-2024-hl-q13-c-ii', YEAR, LEVEL, 'economics-3-1', 'current-budget-surplus',
+    '2024 HL Q13(c)(ii)',
+    'It is essential that the government uses budget surpluses wisely. Explain the term '
+    'government current budget surplus.',
+    'fixed', 7,
+    [point('r-1', as_option(block(BODY, 'A government current budget surplus occurs',
+                                  '(iii) Outline one possible positive')), 7,
+           'One definition, 7 marks, and CURRENT is the word doing the work: current revenue '
+           'exceeding current expenditure.')],
+    '', tariff_kind='fixed'))
+
+cards.append(card(
+    'econ-2024-hl-q15-b-iii', YEAR, LEVEL, 'economics-3-5', 'what-a-recession-is',
+    '2024 HL Q15(b)(iii)',
+    'If competitiveness in Ireland was to deteriorate, this could increase the chance of '
+    'Ireland entering into a recession. Explain the term recession.',
+    'fixed', 4,
+    [point('r-1', as_option(block(BODY, 'A recession is when the economy',
+                                  'In 2023, Ireland celebrated')), 4,
+           'One definition, 4 marks: two consecutive quarters of negative GDP growth.')],
+    '', tariff_kind='fixed'))
+
+cards.append(card(
+    'econ-2024-hl-q16-b-i', YEAR, LEVEL, 'economics-1-4', 'income-elasticity-of-demand',
+    '2024 HL Q16(b)(i)',
+    'Explain the term income elasticity of demand.',
+    'fixed', 8,
+    [point('r-1', as_option(block(BODY, 'This measures the percentage/proportionate change',
+                                  '(ii) Using an appropriate formula')), 8,
+           'One definition, 8 marks: the percentage change in quantity demanded caused by the '
+           'percentage change in income.')],
+    '', tariff_kind='fixed'))
+
 # ── Section B, second pass ──────────────────────────────────────────────────
 SCAF2 = ('Possible responses', 'Suggested responses', 'Possible Responses')
 SIDES2 = ('The part asks for one of each and the scheme heads the two lists separately, so each '

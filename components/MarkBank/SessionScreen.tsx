@@ -1222,10 +1222,13 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
 
             <QuestionText text={card.questionText} />
 
-            {figure && (
+            {figure && (revealed || !figure.solution) && (
               /* The crop sits directly on the sheet — no third box competing
                  with the card's own border. A full-bleed hairline rule marks
-                 where our typesetting ends and the SEC's print begins. */
+                 where our typesetting ends and the SEC's print begins.
+                 A SOLUTION crop waits for the reveal: the scheme's worked
+                 answer printed in the question area answers the question for
+                 the student before they have tried it. */
               <figure style={{ margin: '16px -18px 0', padding: '14px 18px 0', borderTop: `1px solid ${HAIRLINE_2}` }}>
                 <div style={{ textAlign: 'center' }}>
                   <img

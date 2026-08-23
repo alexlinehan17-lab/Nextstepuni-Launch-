@@ -40,6 +40,16 @@ CORRECTIONS = {
     'econ-2022-ol-q15-a-i': '2022 OL Q16(a)(i)',
     'econ-2022-ol-q15-a-iii-social': '2022 OL Q16(a)(iii) — social benefit',
     'econ-2022-ol-q15-a-iii-private': '2022 OL Q16(a)(iii) — private benefit',
+    # 2021 Higher — the homelessness stimulus is part (c) of question 16; the
+    # cards were keyed (a) off the scheme's running order. Found by the
+    # adversarial verification fleet, confirmed against the paper: (a) is the
+    # air-passenger data, (b) the minimum-wage graph, (c) homelessness.
+    'econ-2021-hl-q16-a-i': '2021 HL Q16(c)(i)',
+    'econ-2021-hl-q16-a-ii': '2021 HL Q16(c)(ii)',
+    # 2023 Higher — MNC over-reliance and competitiveness are question 13(c);
+    # (b) is the MPS/multiplier table the deck never carded.
+    'econ-2023-hl-q13-b-i': '2023 HL Q13(c)(i)',
+    'econ-2023-hl-q13-b-ii': '2023 HL Q13(c)(ii)',
     # 2023 Higher — trade protection is question 14(c), on page 28; question 15
     # does not start until page 29.
     'econ-2023-hl-q15-b-ii': '2023 HL Q14(c)(ii)',

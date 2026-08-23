@@ -141,4 +141,112 @@ for side, half, cid, topic, concept in (
         'The part asks for one opportunity cost and one social benefit and the scheme heads the '
         'two lists separately, so each side is its own card.', section='A'))
 
+# ── Definitions and single-answer parts, built from the scheme directly ─────
+# Each prints its tariff beside the part and one answer — or a short list of
+# accepted formulations — under it. None is a menu econ_parts can read.
+P.cards.append(card(
+    'econ-2024-hl-sa-q2-a', 2024, 'higher', 'economics-3-2', 'what-full-employment-is',
+    '2024 HL Section A Q2(a)',
+    'Explain what you understand by the term full employment.',
+    'fixed', 6,
+    [point('r-1', as_option(block(BODY, 'Full employment is a situation',
+                                  'Answer either (b) or (c)')), 6,
+           'One explanation, 6 marks: who counts as employed — everyone in the labour force '
+           'willing and able to work at existing wage rates — and the 4% to 5% unemployment '
+           'rate it corresponds to in Ireland.')],
+    '', section='A', tariff_kind='fixed',
+    stem='Ireland’s seasonally adjusted unemployment rate for October 2023 was 4.8%, which '
+         'may be regarded as full employment.'))
+
+q3b = block(BODY, 'A price ceiling is a maximum price', 'OR (c)')
+P.cards.append(card(
+    'econ-2024-hl-sa-q3-b', 2024, 'higher', 'economics-1-3', 'price-ceiling',
+    '2024 HL Section A Q3(b)',
+    'Explain your understanding of the economic term price ceiling.',
+    '2 @ 3', 6,
+    [anyN('r-1', 'A point of the explanation — any two', 6, 2, 3,
+          [as_option(h) for h in heads(q3b, ['A price ceiling is a maximum price',
+                                             'This price may be below the equilibrium',
+                                             'A measure put in place to prevent'])],
+          'Two points, 3 marks each: what the ceiling is — a legal maximum price — plus its '
+          'position below the market equilibrium or its purpose.')],
+    '', section='A',
+    stem='In an effort to combat the energy crisis, the European Commission considered a €200 '
+         'per megawatt hour limit on the price of electricity.'))
+
+P.cards.append(card(
+    'econ-2024-hl-sa-q4-c', 2024, 'higher', 'economics-1-5', 'marginal-efficiency-of-capital',
+    '2024 HL Section A Q4(c)',
+    'Explain the term Marginal Efficiency of Capital (MEC).',
+    'fixed', 6,
+    [point('r-1', as_option(block(BODY, 'The MEC is the extra profit', '5 Harry Styles')), 6,
+           'One definition, 6 marks: the extra profit earned from employing one extra unit of '
+           'capital.')],
+    '', section='A', tariff_kind='fixed'))
+
+# The explanation beside the MC/AC diagram. Its ⟨3⟩ is printed apart from the
+# diagram's ⟨5⟩, so the written half is carded the way the Q11(c) explanations
+# are in the Section B script.
+P.cards.append(card(
+    'econ-2024-hl-sa-q6-a', 2024, 'higher', 'economics-1-5', 'marginal-cost-and-average-cost',
+    '2024 HL Section A Q6(a)',
+    'With the aid of a fully labelled diagram below (including the axes), explain the '
+    'relationship between a firm’s short run average cost curve and its marginal cost curve.',
+    'fixed', 3,
+    [point('r-1', as_option(block(BODY, 'If marginal cost is less than average cost',
+                                  '(b) Explain the shape of the short run')), 3,
+           'The written explanation, 3 marks: what average cost does while marginal cost is '
+           'below it, above it, and equal to it.')],
+    'PARTIAL CARD. The part is worth 8 — 5 for a correctly drawn and labelled diagram and 3 '
+    'for the written explanation. Only the explanation is carded; the Mark Bank cannot mark '
+    'a drawing.', section='A', tariff_kind='fixed'))
+
+# The explanation of the ticket-shortage diagram. Q5 splits its tariff the way
+# Q6 does — ⟨8⟩ for the diagram in (a), ⟨4⟩ for the written explanation in (b) —
+# so the written half is carded the same way as sa-q6-a above.
+P.cards.append(card(
+    'econ-2024-hl-sa-q5-b', 2024, 'higher', 'economics-1-0', 'explaining-a-ticket-shortage',
+    '2024 HL Section A Q5(b)',
+    'Illustrate with the aid of a fully labelled diagram (including the axes) how a shortage '
+    'of tickets for this concert may arise. Explain your diagram.',
+    'fixed', 4,
+    [point('r-1', as_option(block(BODY, 'The demand for tickets is downward sloping',
+                                  '6 (a) With the aid of a fully labelled diagram below')), 4,
+           'The written explanation, 4 marks: demand slopes down, supply is fixed / perfectly '
+           'inelastic at the 80,000 capacity, and at €97.10 — below the equilibrium price — '
+           'there is excess demand.')],
+    'Part (a) pays 8 for the fully labelled diagram itself, which is not carded — the Mark '
+    'Bank cannot mark a drawing. This card is part (b), the written explanation of it.',
+    section='A', tariff_kind='fixed',
+    stem='Harry Styles performed a concert at Slane Castle on 10th June 2023 with a maximum '
+         'capacity of 80,000 people. The ticket prices for the show were €97.10 each and the '
+         'concert sold out in hours.'))
+
+q9b = block(BODY, 'With positive externalities the benefit', '10 The data in the table below')
+P.cards.append(card(
+    'econ-2024-hl-sa-q9-b', 2024, 'higher', 'economics-2-2', 'positive-externalities',
+    '2024 HL Section A Q9(b)',
+    'Explain what you understand by the term, positive externality.',
+    '1 @ 6', 6,
+    [anyN('r-1', 'A way of explaining the term — any one', 6, 1, 6,
+          [as_option(h) for h in heads(q9b, ['With positive externalities the benefit',
+                                             'Goods / services which give a benefit',
+                                             'The existence of ATU will bring benefits'])],
+          'One explanation, 6 marks. Society’s benefit exceeding private benefit, or a benefit '
+          'to a third party — the ATU line is the scheme’s own illustration.')],
+    '', section='A',
+    stem='The Atlantic Technological University was launched in April 2022 creating a positive '
+         'externality for counties Donegal, Sligo, and Mayo.'))
+
+P.cards.append(card(
+    'econ-2024-hl-sa-q10-b', 2024, 'higher', 'economics-3-0', 'net-factor-income-from-abroad',
+    '2024 HL Section A Q10(b)',
+    'Explain the term Net factor income from abroad.',
+    'fixed', 6,
+    [point('r-1', as_option(block(BODY, 'Net factor income is the income earned',
+                                  'Section B: 300 marks')), 6,
+           'One definition, 6 marks, and it runs both ways: Irish factor income repatriated '
+           'home MINUS foreign factor income repatriated out.')],
+    '', section='A', tariff_kind='fixed'))
+
 P.emit()
