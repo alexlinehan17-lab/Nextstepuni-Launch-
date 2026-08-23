@@ -450,7 +450,7 @@
  },
  {
   "id": "maths-2021-hl-p1-q5-a-i",
-  "topicId": "maths-5-2",
+  "topicId": "maths-2-3",
   "conceptId": "value-value-value",
   "level": "higher",
   "year": 2021,
@@ -1026,7 +1026,7 @@
  },
  {
   "id": "maths-2021-hl-p1-q8-a-i",
-  "topicId": "maths-5-2",
+  "topicId": "maths-5-1",
   "conceptId": "part",
   "level": "higher",
   "year": 2021,
@@ -4399,7 +4399,7 @@
  },
  {
   "id": "maths-2021-ol-p1-q10-a-i",
-  "topicId": "maths-3-3",
+  "topicId": "maths-2-3",
   "conceptId": "how-long-takes-release-million-cubic",
   "level": "ordinary",
   "year": 2021,
@@ -5206,15 +5206,15 @@
   "notes": ""
  },
  {
-  "id": "maths-2021-ol-p2-q9-a-ii",
+  "id": "maths-2021-ol-p2-q10-a-ii",
   "topicId": "maths-2-2",
-  "conceptId": "aircraft-starts-point-travels-250-point",
+  "conceptId": "food-located-point-map-point-line",
   "level": "ordinary",
   "year": 2021,
   "subjectId": "maths",
   "section": "B",
-  "questionRef": "2021 OL Paper 2 Q9(a)(ii)",
-  "questionText": "An aircraft starts at the point S and travels 1 250 m to a point L where it lifts off. (ii) From the point L, the aircraft makes an angle of 14° with the ground, [LE]. The aeroplane travels along this path until it is directly above E. Plot and label the lift-off point L, and draw the aircraft’s flight path for this part of its journey, on the diagram above",
+  "questionRef": "2021 OL Paper 2 Q10(a)(ii)",
+  "questionText": "Food is located at a point F on the map. The point F is on a line which contains the point A(3, −5) and has a slope of −1. The point F is also on a line which contains B(6, 4) and has a slope of 0. By drawing appropriate lines on the map above, or otherwise, find the co-ordinates of F",
   "stem": "",
   "figureKey": "maths-2021-OL-paper-p053-i1",
   "labelKey": [],
@@ -5228,7 +5228,7 @@
   "totalMarks": 5,
   "rows": [
    {
-    "id": "maths-2021-ol-p2-q9-a-ii-r1",
+    "id": "maths-2021-ol-p2-q10-a-ii-r1",
     "kind": "anyN",
     "verbatim": "Work of merit Slope = rise/run A or B labelled correctly Equation of line with some correct substitution One line correctly drawn through A or B",
     "marks": 5,
@@ -6543,7 +6543,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q10-a",
-  "topicId": "maths-4-1",
+  "topicId": "maths-5-1",
   "conceptId": "proportion-digits-recalled-correctly-after-hours",
   "level": "higher",
   "year": 2022,
@@ -6588,7 +6588,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q10-b",
-  "topicId": "maths-4-1",
+  "topicId": "maths-5-1",
   "conceptId": "after-how-many-hours-would-exactly",
   "level": "higher",
   "year": 2022,
@@ -6765,7 +6765,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q10-e-ii",
-  "topicId": "maths-4-1",
+  "topicId": "maths-5-1",
   "conceptId": "student-got-guitar-exam-after-two",
   "level": "higher",
   "year": 2022,
@@ -10768,7 +10768,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q4-a",
-  "topicId": "maths-3-3",
+  "topicId": "maths-1-6",
   "conceptId": "group-students-sat-exam-each-student",
   "level": "ordinary",
   "year": 2022,
@@ -11582,7 +11582,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q9-a",
-  "topicId": "maths-3-4",
+  "topicId": "maths-2-1",
   "conceptId": "state-which-statements-most-likely-true",
   "level": "ordinary",
   "year": 2022,
@@ -11719,7 +11719,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q9-e-i",
-  "topicId": "maths-3-4",
+  "topicId": "maths-2-1",
   "conceptId": "correct-decimal-places",
   "level": "ordinary",
   "year": 2022,
@@ -11766,7 +11766,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q9-e-ii",
-  "topicId": "maths-3-4",
+  "topicId": "maths-2-1",
   "conceptId": "acb-angle-roof-makes-point-correct",
   "level": "ordinary",
   "year": 2022,
@@ -11955,7 +11955,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q10-b-iv",
-  "topicId": "maths-1-5",
+  "topicId": "maths-3-3",
   "conceptId": "according-2019-irish-sport-monitor-report",
   "level": "ordinary",
   "year": 2022,
@@ -15532,7 +15532,7 @@
  },
  {
   "id": "maths-2023-ol-p1-q6-a-i",
-  "topicId": "maths-4-1",
+  "topicId": "maths-5-2",
   "conceptId": "value",
   "level": "ordinary",
   "year": 2023,
@@ -16868,100 +16868,6 @@
   "notes": ""
  },
  {
-  "id": "maths-2023-ol-p2-q2-a",
-  "topicId": "maths-2-2",
-  "conceptId": "circle",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "maths",
-  "section": "B",
-  "questionRef": "2023 OL Paper 2 Q2(a)",
-  "questionText": "(a) s is the circle x² + y² = 25",
-  "stem": "",
-  "figureKey": "maths-2023-OL-paper-p039-i0",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 4, 6, 8, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
-  },
-  "totalMarks": 10,
-  "rows": [
-   {
-    "id": "maths-2023-ol-p2-q2-a-r1",
-    "kind": "anyN",
-    "verbatim": "Work e.g. work of merit on diagram in either for (a) or/(a) (b)",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Full Credit.",
-    "group": {
-     "claimMax": 4,
-     "perOption": 4,
-     "options": [
-      "Work e.g. work of merit on diagram in either for (a) or/(a) (b)",
-      "One part correct",
-      "One part correct and work of merit in the other part Full Credit (-1): Incorrect rounding Incorrect or omitted units Leaves answer in terms of 𝜋",
-      "Correct answers without supporting work"
-     ],
-     "perOptionSteps": [
-      4,
-      2,
-      2,
-      2
-     ]
-    }
-   }
-  ],
-  "notes": ""
- },
- {
-  "id": "maths-2023-ol-p2-q2-a-i",
-  "topicId": "maths-2-2",
-  "conceptId": "write-down-centre-radius-circle",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "maths",
-  "section": "B",
-  "questionRef": "2023 OL Paper 2 Q2(a)(i)",
-  "questionText": "Write down the centre and radius of the circle s",
-  "stem": "",
-  "figureKey": "maths-2023-OL-paper-p035-i0",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 3, 4, 5)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
-  },
-  "totalMarks": 5,
-  "rows": [
-   {
-    "id": "maths-2023-ol-p2-q2-a-i-r1",
-    "kind": "anyN",
-    "verbatim": "All terms listed but not multiplied One error in substitution but finishes correctly",
-    "marks": 5,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: High Partial Credit; Full Credit.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 3,
-     "options": [
-      "All terms listed but not multiplied One error in substitution but finishes correctly",
-      "Correct answer without supporting work"
-     ],
-     "perOptionSteps": [
-      3,
-      2
-     ]
-    }
-   }
-  ],
-  "notes": ""
- },
- {
   "id": "maths-2023-ol-p2-q2-a-ii",
   "topicId": "maths-2-2",
   "conceptId": "point-circle",
@@ -17096,6 +17002,684 @@
       5,
       3,
       7
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "maths-2023-ol-p2-q3-a-i",
+  "topicId": "maths-1-1",
+  "conceptId": "how-many-ways-can-letters-word",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 2 Q3(a)(i)",
+  "questionText": "In how many ways can the letters in the word CAMOGIE be arranged?",
+  "stem": "",
+  "figureKey": "maths-2023-OL-paper-p035-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 3, 4, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p2-q3-a-i-r1",
+    "kind": "anyN",
+    "verbatim": "All terms listed but not multiplied One error in substitution but finishes correctly",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: High Partial Credit; Full Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "All terms listed but not multiplied One error in substitution but finishes correctly",
+      "Correct answer without supporting work"
+     ],
+     "perOptionSteps": [
+      3,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "maths-2023-ol-p2-q3-a-ii",
+  "topicId": "maths-1-1",
+  "conceptId": "how-many-arrangements-part-start-end",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 2 Q3(a)(ii)",
+  "questionText": "How many of the arrangements in part (a)(i) start with M and end with a vowel (A, O, I, or E)?",
+  "stem": "",
+  "figureKey": "maths-2023-OL-paper-p035-i1",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 4, 6, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p2-q3-a-ii-r1",
+    "kind": "anyN",
+    "verbatim": "Terms listed but not multiplied One error in substitution but finishes correctly",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: High Partial Credit; Full Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Terms listed but not multiplied One error in substitution but finishes correctly",
+      "Correct answer without supporting work"
+     ],
+     "perOptionSteps": [
+      4,
+      6
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "maths-2023-ol-p2-q3-a-iii",
+  "topicId": "maths-1-1",
+  "conceptId": "iii-how-many-arrangements-different-letters",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 2 Q3(a)(iii)",
+  "questionText": "(iii) How many arrangements of 3 different letters can be made from the letters in the word CAMOGIE?",
+  "stem": "",
+  "figureKey": "maths-2023-OL-paper-p035-i2",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 3, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p2-q3-a-iii-r1",
+    "kind": "anyN",
+    "verbatim": "Correct answer without supporting work",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5. Marked in order: Full Credit.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Correct answer without supporting work"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "maths-2023-ol-p2-q3-b-ii",
+  "topicId": "maths-1-6",
+  "conceptId": "scatterplot-explain-why-value-you-picked",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 2 Q3(b)(ii)",
+  "questionText": "For scatterplot B, explain why the value you picked is correct",
+  "stem": "",
+  "figureKey": "maths-2023-OL-paper-p036-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 4, 6, 8, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p2-q3-b-ii-r1",
+    "kind": "anyN",
+    "verbatim": "Work e.g. one of merit correct in (i) or/correlation (ii) coefficient identified in (i)",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Work e.g. one of merit correct in (i) or/correlation (ii) coefficient identified in (i)",
+      "Work of merit in (i) and (ii) One part correct",
+      "One part correct and work of merit in the other"
+     ],
+     "perOptionSteps": [
+      4,
+      2,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "maths-2023-ol-p2-q4-a-i",
+  "topicId": "maths-1-2",
+  "conceptId": "probability-scores-his-first-free-throws",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 2 Q4(a)(i)",
+  "questionText": "Find the probability that he scores his first 3 free throws",
+  "stem": "",
+  "figureKey": "maths-2023-OL-paper-p037-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 3, 4, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p2-q4-a-i-r1",
+    "kind": "anyN",
+    "verbatim": "S . S. S = (0 ∙7)(0 ∙7)(0 ∙7)",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "S . S. S = (0 ∙7)(0 ∙7)(0 ∙7)",
+      "= 0 ∙343 or 343/1000 or 34 ∙3%"
+     ],
+     "perOptionSteps": [
+      3,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "maths-2023-ol-p2-q4-a-ii",
+  "topicId": "maths-1-2",
+  "conceptId": "probability-scores-exactly-his-first-free",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 2 Q4(a)(ii)",
+  "questionText": "Find the probability that he scores exactly 2 of his first 3 free throws",
+  "stem": "",
+  "figureKey": "maths-2023-OL-paper-p037-i1",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 4, 6, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p2-q4-a-ii-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit e.g. indicates three arrangements Correct layout with correct substitution Answer as 0 ∙147 or 147/1000",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; Full Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Work of merit e.g. indicates three arrangements Correct layout with correct substitution Answer as 0 ∙147 or 147/1000",
+      "Correct answers without supporting work Zero Credit: Probability greater than 1"
+     ],
+     "perOptionSteps": [
+      4,
+      6
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "maths-2023-ol-p2-q4-a-iii",
+  "topicId": "maths-1-2",
+  "conceptId": "iii-one-reason-why-scoring-his",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 2 Q4(a)(iii)",
+  "questionText": "(iii) Give one reason why scoring his free throws might not be independent events",
+  "stem": "",
+  "figureKey": "maths-2023-OL-paper-p037-i2",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 3, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p2-q4-a-iii-r1",
+    "kind": "anyN",
+    "verbatim": "Previous performance levels may affect",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Previous performance levels may affect",
+      "future performance.",
+      "Mathematics – Ordinary Level"
+     ],
+     "perOptionSteps": [
+      3,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "maths-2023-ol-p2-q4-b",
+  "topicId": "maths-1-2",
+  "conceptId": "table-shows-number-games-which-rohan",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 2 Q4(b)",
+  "questionText": "The table below shows the number of games in which Rohan scored each of the given number of points. For example, Rohan scored 12 points in 3 games",
+  "stem": "",
+  "figureKey": "maths-2023-OL-paper-p038-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 4, 6, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p2-q4-b-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit e.g. Some addition of numerator or denominator terms 134 and/or 19 without work",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Work of merit e.g. Some addition of numerator or denominator terms 134 and/or 19 without work",
+      "Correct formula fully substituted One error and finishes correctly Full Credit (-1): Incorrect rounding",
+      "Correct answer without supporting work"
+     ],
+     "perOptionSteps": [
+      4,
+      2,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "maths-2023-ol-p2-q5-a",
+  "topicId": "maths-2-2",
+  "conceptId": "length-radius-circle",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 2 Q5(a)",
+  "questionText": "Find the length of the radius of the circle c",
+  "stem": "",
+  "figureKey": "maths-2023-OL-paper-p039-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 4, 6, 8, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p2-q5-a-r1",
+    "kind": "anyN",
+    "verbatim": "Work e.g. work of merit on diagram in either for (a) or/(a) (b)",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Full Credit.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 4,
+     "options": [
+      "Work e.g. work of merit on diagram in either for (a) or/(a) (b)",
+      "One part correct",
+      "One part correct and work of merit in the other part Full Credit (-1): Incorrect rounding Incorrect or omitted units Leaves answer in terms of 𝜋",
+      "Correct answers without supporting work"
+     ],
+     "perOptionSteps": [
+      4,
+      2,
+      2,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "maths-2023-ol-p2-q5-c",
+  "topicId": "maths-3-4",
+  "conceptId": "work-out-percentage-area-square-taken",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 2 Q5(c)",
+  "questionText": "Work out the percentage of the area of the square that is taken up by the circle c, (c) correct to the nearest percent",
+  "stem": "",
+  "figureKey": "maths-2023-OL-paper-p039-i1",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 3, 4, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p2-q5-c-r1",
+    "kind": "anyN",
+    "verbatim": "113∙10/12 × 12 × 100 or 0 ∙7854 Full Credit (-1): Incorrect rounding",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: High Partial Credit; Full Credit .",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "113∙10/12 × 12 × 100 or 0 ∙7854 Full Credit (-1): Incorrect rounding",
+      "Correct answer without supporting work"
+     ],
+     "perOptionSteps": [
+      3,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "maths-2023-ol-p2-q5-d",
+  "topicId": "maths-2-2",
+  "conceptId": "radius-circle-correct-decimal-places",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 2 Q5(d)",
+  "questionText": "Show that the radius of the circle k is 8∙49 cm, correct to 2 decimal places",
+  "stem": "",
+  "figureKey": "maths-2023-OL-paper-p040-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 3, 4, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p2-q5-d-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit e.g. Pythagoras Theorem formula written as c² = a² + b² High Partial/√288 Credit: x = √288/2 or √72 with work Full Credit (-1): Incorrect rounding Zero Credit: No correct substitution and no formula",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: Low Partial Credit.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Work of merit e.g. Pythagoras Theorem formula written as c² = a² + b² High Partial/√288 Credit: x = √288/2 or √72 with work Full Credit (-1): Incorrect rounding Zero Credit: No correct substitution and no formula"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "maths-2023-ol-p2-q5-e",
+  "topicId": "maths-2-2",
+  "conceptId": "work-out-circumference-circle-correct-decimal",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 2 Q5(e)",
+  "questionText": "Work out the circumference of the circle k, correct to 2 decimal places",
+  "stem": "",
+  "figureKey": "maths-2023-OL-paper-p040-i1",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 4, 6, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p2-q5-e-r1",
+    "kind": "anyN",
+    "verbatim": "Correct formula fully substituted Full Credit (-1): Incorrect rounding Incorrect or omitted units",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: High Partial Credit; Full Credit .",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Correct formula fully substituted Full Credit (-1): Incorrect rounding Incorrect or omitted units",
+      "Correct answer without supporting work Zero Credit: 53 ∙3 without work"
+     ],
+     "perOptionSteps": [
+      4,
+      6
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "maths-2023-ol-p2-q6-a",
+  "topicId": "maths-2-1",
+  "conceptId": "diagram-shows-parallelogram-abcd-not-scale",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 2 Q6(a)",
+  "questionText": "The diagram below shows the parallelogram ABCD (not to scale). (a) |AB| = 8 cm, |BC| = 6 cm, and |∠ABC| = 130°, as shown",
+  "stem": "",
+  "figureKey": "maths-2023-OL-paper-p041-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 5, 8, 12, 15)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p2-q6-a-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit e.g. ONE/Work on correct diagram element",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 8, three parts for 12, four parts for 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Work of merit e.g. ONE/Work on correct diagram element",
+      "Any TWO/constructing elements a parallelogram correct towards",
+      "THREE or more elements correct Full Credit (-1): If [AD] is on the horizontal and the construction is correct"
+     ],
+     "perOptionSteps": [
+      5,
+      3,
+      7
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "maths-2023-ol-p2-q6-b",
+  "topicId": "maths-2-1",
+  "conceptId": "diagram-shows-another-parallelogram-not-scale",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 2 Q6(b)",
+  "questionText": "(b) The diagram below shows another parallelogram (not to scale). The sizes of three of the angles are given, where x, y∈ℝ",
+  "stem": "",
+  "figureKey": "maths-2023-OL-paper-p041-i1",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 3, 4, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p2-q6-b-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit e.g. sets up equation, indicates knowledge of opposite angles in a parallelogram being equal or adjacent angles summing to 180° Work on diagram",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit .",
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "Work of merit e.g. sets up equation, indicates knowledge of opposite angles in a parallelogram being equal or adjacent angles summing to 180° Work on diagram",
+      "Value of x found Full Credit (-1): Answer without supporting work that gives x = 5 y = 65,",
+      "Correct answers without supporting work"
+     ],
+     "perOptionSteps": [
+      3,
+      1,
+      1
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "maths-2023-ol-p2-q6-c",
+  "topicId": "maths-2-1",
+  "conceptId": "state-whether-statement-true-false-justify",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 2 Q6(c)",
+  "questionText": "State whether the following statement is true or false. Justify your answer",
+  "stem": "",
+  "figureKey": "maths-2023-OL-paper-p042-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 4, 6, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p2-q6-c-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit e.g. Correct box (True) ticked but no work of merit in Justification Incorrect box (False) ticked but some correct knowledge of the properties of a parallelogram or square indicated",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Work of merit e.g. Correct box (True) ticked but no work of merit in Justification Incorrect box (False) ticked but some correct knowledge of the properties of a parallelogram or square indicated",
+      "Correct box ticked and work of merit in Justification"
+     ],
+     "perOptionSteps": [
+      4,
+      6
      ]
     }
    }
@@ -17728,7 +18312,7 @@
  },
  {
   "id": "maths-2023-ol-p2-q9-a-iv",
-  "topicId": "maths-5-2",
+  "topicId": "maths-1-6",
   "conceptId": "draw-graph-chart-represent-data-table",
   "level": "ordinary",
   "year": 2023,
@@ -17863,7 +18447,7 @@
  },
  {
   "id": "maths-2023-ol-p2-q9-b-iii",
-  "topicId": "maths-5-2",
+  "topicId": "maths-1-6",
   "conceptId": "iii-general-students-get-rating-excellent",
   "level": "ordinary",
   "year": 2023,
@@ -17910,7 +18494,7 @@
  },
  {
   "id": "maths-2023-ol-p2-q10-a",
-  "topicId": "maths-1-3",
+  "topicId": "maths-2-3",
   "conceptId": "work-out-cba-size-angle-cba",
   "level": "ordinary",
   "year": 2023,
@@ -18752,7 +19336,7 @@
  },
  {
   "id": "maths-2024-hl-p1-q5-c-ii",
-  "topicId": "maths-4-1",
+  "topicId": "maths-3-1",
   "conceptId": "first-value-which",
   "level": "higher",
   "year": 2024,
@@ -20112,7 +20696,7 @@
  },
  {
   "id": "maths-2024-hl-p2-q3-b",
-  "topicId": "maths-2-3",
+  "topicId": "maths-2-1",
   "conceptId": "angle-360-all-possible-values",
   "level": "higher",
   "year": 2024,
@@ -21929,7 +22513,7 @@
  },
  {
   "id": "maths-2024-ol-p1-q7-b-i",
-  "topicId": "maths-5-2",
+  "topicId": "maths-3-1",
   "conceptId": "number-bacteria-after-hour-after-hours",
   "level": "ordinary",
   "year": 2024,
@@ -24018,7 +24602,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q9-a-ii",
-  "topicId": "maths-2-3",
+  "topicId": "maths-1-2",
   "conceptId": "diarmuid-wants-maximise-number-choices-available",
   "level": "ordinary",
   "year": 2024,
@@ -24065,7 +24649,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q9-b-i",
-  "topicId": "maths-2-3",
+  "topicId": "maths-1-2",
   "conceptId": "complete-venn-diagram-number-customers-each",
   "level": "ordinary",
   "year": 2024,
@@ -24153,7 +24737,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q9-c",
-  "topicId": "maths-2-3",
+  "topicId": "maths-1-2",
   "conceptId": "general-sales-ice-creams-increase-weather",
   "level": "ordinary",
   "year": 2024,
@@ -24198,7 +24782,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q9-d-i",
-  "topicId": "maths-2-3",
+  "topicId": "maths-1-2",
   "conceptId": "size-angle-length-arc",
   "level": "ordinary",
   "year": 2024,
@@ -26311,7 +26895,7 @@
  },
  {
   "id": "maths-2025-hl-p1-q10-d-iii",
-  "topicId": "maths-2-2",
+  "topicId": "maths-4-1",
   "conceptId": "value-which-given-lim-4t2-leaving",
   "level": "higher",
   "year": 2025,
@@ -31071,91 +31655,6 @@
   "notes": ""
  },
  {
-  "id": "maths-2025-ol-p2-q9-a-i",
-  "topicId": "maths-2-2",
-  "conceptId": "diagram-construct-midpoint-side-label-point",
-  "level": "ordinary",
-  "year": 2025,
-  "subjectId": "maths",
-  "section": "B",
-  "questionRef": "2025 OL Paper 2 Q9(a)(i)",
-  "questionText": "On the diagram below, construct the midpoint of the side [A]. Label this point D. (If using measurements and calculations, show all calculations clearly)",
-  "stem": "",
-  "figureKey": "maths-2025-OL-paper-p041-i0",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 5, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
-  },
-  "totalMarks": 10,
-  "rows": [
-   {
-    "id": "maths-2025-ol-p2-q9-a-i-r1",
-    "kind": "anyN",
-    "verbatim": "4 × 200 + 2 × 150 = 1100 m",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.",
-    "group": {
-     "claimMax": 1,
-     "perOption": 10,
-     "options": [
-      "4 × 200 + 2 × 150 = 1100 m"
-     ]
-    }
-   }
-  ],
-  "notes": ""
- },
- {
-  "id": "maths-2025-ol-p2-q9-a-ii",
-  "topicId": "maths-2-3",
-  "conceptId": "construct-centroid-triangle-label-point",
-  "level": "ordinary",
-  "year": 2025,
-  "subjectId": "maths",
-  "section": "B",
-  "questionRef": "2025 OL Paper 2 Q9(a)(ii)",
-  "questionText": "Hence, construct the centroid of the triangle A. Label this point O",
-  "stem": "",
-  "figureKey": "maths-2025-OL-paper-p041-i1",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 4, 6, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
-  },
-  "totalMarks": 10,
-  "rows": [
-   {
-    "id": "maths-2025-ol-p2-q9-a-ii-r1",
-    "kind": "anyN",
-    "verbatim": "Work of merit, for example, correct relevant formula",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 4,
-     "options": [
-      "Work of merit, for example, correct relevant formula",
-      "Correct formula fully substituted Full Credit (-1): Apply a * for no or incorrect rounding"
-     ],
-     "perOptionSteps": [
-      4,
-      6
-     ]
-    }
-   }
-  ],
-  "notes": ""
- },
- {
   "id": "maths-2025-ol-p2-q9-b",
   "topicId": "maths-2-4",
   "conceptId": "finn-making-pair-triangular-tables-one",
@@ -31196,47 +31695,6 @@
       3,
       2,
       5
-     ]
-    }
-   }
-  ],
-  "notes": ""
- },
- {
-  "id": "maths-2025-ol-p2-q9-b-i",
-  "topicId": "maths-3-4",
-  "conceptId": "longest-side-bigger-table-top-longest",
-  "level": "ordinary",
-  "year": 2025,
-  "subjectId": "maths",
-  "section": "B",
-  "questionRef": "2025 OL Paper 2 Q9(b)(i)",
-  "questionText": "The longest side of the bigger table-top is 45 cm. The longest side of the smaller table-top is 36 cm",
-  "stem": "",
-  "figureKey": "maths-2025-OL-paper-p042-i0",
-  "labelKey": [],
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "Scale (0, 5, 10)",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
-  },
-  "totalMarks": 10,
-  "rows": [
-   {
-    "id": "maths-2025-ol-p2-q9-b-i-r1",
-    "kind": "anyN",
-    "verbatim": "D C F B E",
-    "marks": 10,
-    "openList": true,
-    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.",
-    "group": {
-     "claimMax": 2,
-     "perOption": 5,
-     "options": [
-      "D C F B E",
-      "Or similar"
      ]
     }
    }
@@ -31459,6 +31917,96 @@
   "notes": ""
  },
  {
+  "id": "maths-2025-ol-p2-q10-a-iii",
+  "topicId": "maths-2-3",
+  "conceptId": "iii-aoibhe-swims-straight-cosine-rule",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 OL Paper 2 Q10(a)(iii)",
+  "questionText": "(iii) Aoibhe swims straight from A to C. Use the cosine rule to work out the distance from A to C. Give your answer correct to the nearest metre",
+  "stem": "",
+  "figureKey": "maths-2025-OL-paper-p041-i2",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 4, 6, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-ol-p2-q10-a-iii-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit, for example, cosine rule formula",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Work of merit, for example, cosine rule formula",
+      "Correct formula fully substituted Full Credit (-1): Apply a * for no or incorrect rounding"
+     ],
+     "perOptionSteps": [
+      4,
+      6
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "maths-2025-ol-p2-q10-a-iv",
+  "topicId": "maths-3-4",
+  "conceptId": "otherwise-work-out-total-area-water",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 OL Paper 2 Q10(a)(iv)",
+  "questionText": "Hence, or otherwise, work out the total area of the water enclosed by the six markers",
+  "stem": "",
+  "figureKey": "maths-2025-OL-paper-p041-i3",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 2, 3, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2025-ol-p2-q10-a-iv-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit, for example, answer from (ii) or (iii) written or relevant work on the diagram or relevant area formula",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Work of merit, for example, answer from (ii) or (iii) written or relevant work on the diagram or relevant area formula",
+      "2(14 095) + (200 × 288) Full Credit (-1): Apply a * for no units"
+     ],
+     "perOptionSteps": [
+      2,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "maths-2025-ol-p2-q10-b",
   "topicId": "maths-2-3",
   "conceptId": "point-nearest-point-shore-start-end",
@@ -31500,6 +32048,94 @@
       4,
       2,
       4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "maths-2025-ol-p2-q10-b-i",
+  "topicId": "maths-2-3",
+  "conceptId": "another-example-such-route-aoibhe-could",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 OL Paper 2 Q10(b)(i)",
+  "questionText": "Give another example of such a route Aoibhe could swim",
+  "stem": "",
+  "figureKey": "maths-2025-OL-paper-p042-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 5, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-ol-p2-q10-b-i-r1",
+    "kind": "anyN",
+    "verbatim": "D C F B E",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "D C F B E",
+      "Or similar"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "maths-2025-ol-p2-q10-b-iii",
+  "topicId": "maths-2-3",
+  "conceptId": "iii-particular-day-aoibhe-wants-start",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 OL Paper 2 Q10(b)(iii)",
+  "questionText": "(iii) On a particular day Aoibhe wants to start at A, swim to two markers other than A, and then return to A. For example, Aoibhe could swim the route: A E B A Work out how many such routes are possible",
+  "stem": "",
+  "figureKey": "maths-2025-OL-paper-p042-i1",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 2, 3, 4, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2025-ol-p2-q10-b-iii-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit in (ii), for example, writing a different route or some relevant multiplication Work of merit in (iii), for example, writing a different route or 5, 4, or 2 written",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "Work of merit in (ii), for example, writing a different route or some relevant multiplication Work of merit in (iii), for example, writing a different route or 5, 4, or 2 written",
+      "Work of merit in (ii) AND (iii) One part correct",
+      "One part correct and work of merit in the other part"
+     ],
+     "perOptionSteps": [
+      2,
+      1,
+      2
      ]
     }
    }

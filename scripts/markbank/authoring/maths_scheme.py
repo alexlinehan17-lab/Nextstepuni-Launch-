@@ -29,6 +29,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(
 SCHEMES = os.path.join(ROOT, 'examiner-reports/maths/schemes')
 
 QHEAD = re.compile(r'^Q\s*(\d{1,2})\b')
+BARE_QHEAD = re.compile(r'^(\d{1,2})$')
 PART = re.compile(r'^\(([a-h])\)\s*$')
 ROMAN = re.compile(r'^\((i{1,3}|iv|v|vi{0,3})\)\s*$', re.I)
 PAPER = re.compile(r'\bPaper\s*([12])\b')
@@ -88,6 +89,18 @@ class Scheme:
                 h = QHEAD.match(t.strip())
                 if h:
                     q = int(h.group(1))
+            # Some schemes drop the Q. The 2023 Ordinary Paper 2 heads its
+            # first two marked pages "Q2" and every page after that with a bare
+            # "3", "4", "5", "6" in the same cell -- so from Question 3 on, ten
+            # pages of four different questions were all filed under Question 2
+            # and collided with each other. Read forward only, and not past the
+            # next few, so a stray number in the working cannot claim the page.
+            if left:
+                for t in (t for _, t in left[:3]):
+                    n = BARE_QHEAD.match(t.strip())
+                    if n and q is not None and q <= int(n.group(1)) <= q + 3:
+                        q = int(n.group(1))
+                        break
             if q is None:
                 continue
             scales = [y for y, t in right if SCALE_LINE.search(t)]
