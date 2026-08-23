@@ -38446,6 +38446,31 @@
   "notes": "The scheme numbers this answer under its own Question 17(b) while the paper prints 17(c)."
  },
  {
+  "id": "bio-2022-ol-q7-c",
+  "topicId": "bio-u1",
+  "conceptId": "what-data-is",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2022 OL Q7(c)",
+  "questionText": "Information and measurements collected during an investigation",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Data",
+    "marks": 4
+   }
+  ],
+  "stem": "Choose each term from the following list and place it in Column B to match a description in Column A. The first one has been completed as an example. Theory Data Double blind test Variable Control Hypothesis Column A Column B An explanation for an observation supported by the results of an experiment Theory",
+  "notes": "The scheme prices Q7(a) to (e) on a scale of 4, 8, 12, 16, 20 for one to five correct — evenly, so each is worth four."
+ },
+ {
   "id": "bio-2023-ol-q2-a",
   "topicId": "bio-u2",
   "conceptId": "what-a-hypothesis-is",

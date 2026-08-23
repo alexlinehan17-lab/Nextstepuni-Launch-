@@ -74,4 +74,12 @@ A.card(17, 'c', 'i', topic='bio-2-4', concept='drawing-the-internal-structure-of
        notes='The scheme numbers this answer under its own Question 17(b) while the '
              'paper prints 17(c).')
 
+A.card(7, 'c', topic='bio-u1', concept='what-data-is',
+       source='md', from_run=((6, 'c', None), 0, slice(0, 1)), marks=[4],
+       checked='Question 7 is a matching table. The paper prints this part as a Column A '
+               'description with no verb of its own, and the instruction to match it to a '
+               'term in the list sits in the question stem the card already carries.',
+       notes='The scheme prices Q7(a) to (e) on a scale of 4, 8, 12, 16, 20 for one to '
+             'five correct — evenly, so each is worth four.')
+
 A.emit()

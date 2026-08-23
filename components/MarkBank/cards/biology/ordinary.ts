@@ -9440,6 +9440,20 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2022-ol-q7-c", topicId: "bio-u1", conceptId: "what-data-is",
+    section: "A", questionRef: "2022 OL Q7(c)",
+    stem: "Choose each term from the following list and place it in Column B to match a description in Column A. The first one has been completed as an example. Theory Data Double blind test Variable Control Hypothesis Column A Column B An explanation for an observation supported by the results of an experiment Theory",
+    questionText: "Information and measurements collected during an investigation",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Data", marks: 4 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2023, level: "ordinary",
     paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",

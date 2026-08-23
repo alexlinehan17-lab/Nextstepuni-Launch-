@@ -140,7 +140,7 @@ class Author:
              labels=None, notes=None, stem=True, checked=None, suffix='',
              row_kind='point', notation=None, spread=False, context=None,
              omit=(), source='md', card_id=None, from_run=None, from_runs=None,
-             tick=None, first_sentence=False):
+             tick=None, first_sentence=False, ladder=None):
         ref = part_ref(self.year, self.level, q, letter, roman)
 
         question = self.paper.text(q, letter, roman)
@@ -268,6 +268,18 @@ class Author:
         # Marks come from whichever parser found them: the PDF one keeps table
         # cells intact but often leaves the right-aligned tariff in a block of
         # its own that belongs to a neighbouring part.
+        # A sliding scale is not a per-part mark. Biology's Ordinary Level
+        # Section A prints one ladder for a whole question — "Q1 (a)-(e) Number
+        # of correct responses 1 2 3 4 5 / Mark 7 14 16 18 20" — so no part of it
+        # has a mark of its own. The deck's shape for that is a row carrying no
+        # mark, the ladder written into the notation, and totalMarks set to what
+        # the first correct response is worth. `ladder` says so explicitly, so
+        # that a part with no printed tariff is never quietly given one.
+        if ladder is not None:
+            if not notation:
+                raise Refused(f'{ref}: ladder needs a notation giving the scale')
+            marks = [None] * len(chosen)
+
         scheme_marks = scheme.marks(q, letter, roman) or self.scheme.marks(q, letter, roman)
         if marks is None:
             numeric = [int(m) for m in scheme_marks if re.fullmatch(r'\d{1,2}', m)]
@@ -279,9 +291,12 @@ class Author:
         if len(marks) != len(chosen):
             raise Refused(f'{ref}: {len(marks)} marks for {len(chosen)} points')
 
-        computed = sum(marks)
-        if total is not None and total != computed:
-            raise Refused(f'{ref}: marks sum to {computed}, not the {total} given')
+        if ladder is not None:
+            computed = ladder
+        else:
+            computed = sum(marks)
+            if total is not None and total != computed:
+                raise Refused(f'{ref}: marks sum to {computed}, not the {total} given')
 
         # 'spread' is the 2(2) shape: the scheme prints more ways than the
         # question asks for, any of them scores, so every row carries the ones
