@@ -37868,6 +37868,43 @@
   ]
  },
  {
+  "id": "bio-2021-ol-q14-c-ii",
+  "topicId": "bio-2-6",
+  "conceptId": "where-the-endocrine-glands-are",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2021 OL Q14(c)(ii)",
+  "questionText": "Draw an outline diagram of the human body and on it indicate the location of any three of the following endocrine glands listed below: Pituitary Thyroid Pancreas Adrenals Ovaries Testes",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 at 3 marks each"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Pituitary",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "anyN",
+    "verbatim": "Thyroid",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "anyN",
+    "verbatim": "Adrenals",
+    "marks": 3
+   }
+  ],
+  "notes": "Any three of the scheme's six: it also allows the pancreas, the ovaries and the testes."
+ },
+ {
   "id": "bio-2022-hl-q5-a",
   "topicId": "bio-1-2",
   "conceptId": "copper-is-a-trace-element",
@@ -38344,6 +38381,69 @@
    }
   ],
   "stem": "Turgor is also important for plants. The pictures, A and B, show two plants cells. A B Nucleus X Cell membrane"
+ },
+ {
+  "id": "bio-2022-ol-q16-b-i",
+  "topicId": "bio-1-2",
+  "conceptId": "drawing-a-typical-bacterial-cell",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2022 OL Q16(b)(i)",
+  "questionText": "Draw a large labelled diagram of a typical bacterial cell.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "7 for the diagram, 2 a label"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Includes cell wall and cell membrane and indication of DNA",
+    "marks": 7
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Cell wall",
+    "marks": 2
+   }
+  ],
+  "notes": "The scheme numbers this answer under its own Question 16(a) while the paper prints 16(b). Cell wall, cell membrane and an indication of DNA are what the drawing must contain."
+ },
+ {
+  "id": "bio-2022-ol-q17-c-i",
+  "topicId": "bio-2-4",
+  "conceptId": "drawing-the-internal-structure-of-the-heart",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2022 OL Q17(c)(i)",
+  "questionText": "The heart is an organ of the circulatory system. Draw a large labelled diagram showing the internal structures of the human heart.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "7 for the diagram, 2 a label"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Four chambers and septum and valves",
+    "marks": 7
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Any two correct labels",
+    "marks": 2
+   }
+  ],
+  "stem": "X Y",
+  "notes": "The scheme numbers this answer under its own Question 17(b) while the paper prints 17(c)."
  },
  {
   "id": "bio-2023-ol-q2-a",

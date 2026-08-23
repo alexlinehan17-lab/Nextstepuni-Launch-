@@ -9234,6 +9234,21 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2021-ol-q14-c-ii", topicId: "bio-2-6", conceptId: "where-the-endocrine-glands-are",
+    section: "B", questionRef: "2021 OL Q14(c)(ii)",
+    questionText: "Draw an outline diagram of the human body and on it indicate the location of any three of the following endocrine glands listed below: Pituitary Thyroid Pancreas Adrenals Ovaries Testes",
+    tariffModel: {"kind":"fixed","notation":"3 at 3 marks each"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Pituitary", marks: 3 },
+    { id: "r-2", kind: "anyN", verbatim: "Thyroid", marks: 3 },
+    { id: "r-3", kind: "anyN", verbatim: "Adrenals", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2022, level: "ordinary",
     paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
@@ -9392,6 +9407,35 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Vacuole", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2022-ol-q16-b-i", topicId: "bio-1-2", conceptId: "drawing-a-typical-bacterial-cell",
+    section: "B", questionRef: "2022 OL Q16(b)(i)",
+    questionText: "Draw a large labelled diagram of a typical bacterial cell.",
+    tariffModel: {"kind":"fixed","notation":"7 for the diagram, 2 a label"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Includes cell wall and cell membrane and indication of DNA", marks: 7 },
+    { id: "r-2", kind: "point", verbatim: "Cell wall", marks: 2 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2022-ol-q17-c-i", topicId: "bio-2-4", conceptId: "drawing-the-internal-structure-of-the-heart",
+    section: "B", questionRef: "2022 OL Q17(c)(i)",
+    stem: "X Y",
+    questionText: "The heart is an organ of the circulatory system. Draw a large labelled diagram showing the internal structures of the human heart.",
+    tariffModel: {"kind":"fixed","notation":"7 for the diagram, 2 a label"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Four chambers and septum and valves", marks: 7 },
+    { id: "r-2", kind: "point", verbatim: "Any two correct labels", marks: 2 },
     ],
   } as SecCard,
   {

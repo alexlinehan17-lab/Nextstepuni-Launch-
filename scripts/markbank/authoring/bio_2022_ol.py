@@ -57,4 +57,21 @@ A.card(11, 'b', 'vii', topic='bio-3-1', concept='writing-a-food-chain-from-a-web
 A.card(14, 'c', 'v', topic='bio-1-3', concept='the-storage-organelle-of-a-plant-cell',
        source='pdf', from_run=((14, 'c', 'v'), 0, slice(0, 1)), marks=[3])
 
+A.card(16, 'b', 'i', topic='bio-1-2', concept='drawing-a-typical-bacterial-cell',
+       source='pdf',
+       from_runs=[((16, 'a', 'i'), 3, slice(1, None)),
+                  ((16, 'a', 'i'), 4, slice(1, None))],
+       marks=[7, 2], notation='7 for the diagram, 2 a label',
+       notes='The scheme numbers this answer under its own Question 16(a) while the '
+             'paper prints 16(b). Cell wall, cell membrane and an indication of DNA are '
+             'what the drawing must contain.')
+
+A.card(17, 'c', 'i', topic='bio-2-4', concept='drawing-the-internal-structure-of-the-heart',
+       source='pdf',
+       from_runs=[((17, 'b', 'i'), 3, slice(1, 7)),
+                  ((17, 'b', 'i'), 3, slice(8, None))],
+       marks=[7, 2], notation='7 for the diagram, 2 a label',
+       notes='The scheme numbers this answer under its own Question 17(b) while the '
+             'paper prints 17(c).')
+
 A.emit()

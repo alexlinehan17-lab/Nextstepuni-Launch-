@@ -125,4 +125,13 @@ A.card(4, None, 'vi', topic='phys-u2', concept='graph-of-frequency-against-one-o
                   ((4, None, 'vi'), 1, slice(8, 12))],
        marks=[3, 6, 3], notation='3 + 6 × 1 + 3', checked='The paper prints the part mark in brackets after the question, so the text ends on a number rather than punctuation. The question itself is complete.')
 
+A.card(10, None, 'iv', topic='phys-2-1', concept='why-a-freezer-cools-when-liquid-vaporises',
+       source='pdf', from_run=((9, None, 'iv'), 0, slice(17, 19)), marks=[6],
+       checked='The paper prints the part mark and then runs the next two questions on '
+               'in the same block. The trim cannot be confirmed against the scheme '
+               'because the scheme reprints the question with the word fridge where the '
+               'paper writes freezer, so the card carries the paper\'s own wording.',
+       notes='The scheme numbers this answer under its own Question 9 while the paper '
+             'prints Question 10.')
+
 A.emit()

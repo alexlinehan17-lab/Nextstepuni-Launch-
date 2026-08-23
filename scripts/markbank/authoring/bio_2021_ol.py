@@ -21,4 +21,13 @@ A.card(11, 'b', 'vii', topic='bio-3-1', concept='food-chain-from-a-passage',
        checked='The paper prints the part mark "(27)" after the question, so the text ends '
                'on a bracketed number rather than punctuation.')
 
+A.card(14, 'c', 'ii', topic='bio-2-6', concept='where-the-endocrine-glands-are',
+       source='pdf', use=[1, 2, 3], marks=[3, 3, 3], notation='3 at 3 marks each',
+       row_kind='anyN',
+       checked='The question runs its list of glands on after the instruction without '
+               'punctuation between them, which is why the text is flagged. Both halves '
+               'are the question as printed.',
+       notes='Any three of the scheme\'s six: it also allows the pancreas, the ovaries '
+             'and the testes.')
+
 A.emit()

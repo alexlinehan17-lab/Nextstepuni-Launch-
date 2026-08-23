@@ -30096,6 +30096,31 @@
   "stem": "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The student set a length of string vibrating and adjusted the length until resonance occurred. The tension of the string was kept constant throughout the experiment. paper rider bridge bridge On the right is a diagram of the apparatus used in this experiment. f (Hz) 256 320 341 427 480 512 l (m) 0.214 0.171 0.160 0.127 0.114 0.107 1 l (m–1) 4.67 5.85"
  },
  {
+  "id": "phys-2024-ol-q10-iv",
+  "topicId": "phys-2-1",
+  "conceptId": "why-a-freezer-cools-when-liquid-vaporises",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2024 OL Q10(iv)",
+  "questionText": "What happens to the temperature inside a freezer when the liquid changes state to become a gas? (24) The heat pump also turns the gas back into a liquid. Draw a diagram, in your answerbook, to show the next harmonic for a sound wave in the same pipe.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "it decreases",
+    "marks": 6
+   }
+  ],
+  "stem": "0 0 2 4 6 8 10 12 Heat added (J) (ix) What is the thermometric property of an alcohol-in-glass thermometer? (x) State one everyday use of a thermometer. (14) Leaving Certificate, 2024 Physics – Ordinary Level 8 10. When a person sings, their vocal chords vibrate. This vibration can cause a wine glass to shatter if resonance occurs. X Y If a musician increases the loudness of the note she plays, she has increased the amplitude of the sound wave. (ix) A sound wave vibrates at its fundamental frequency in a pipe of length 60 cm which is open at both ends. Calculate the wavelength of the sound wave. (11) Leaving Certificate, 2024 Physics – Ordinary Level 9",
+  "notes": "The scheme numbers this answer under its own Question 9 while the paper prints Question 10."
+ },
+ {
   "id": "phys-2025-hl-q14c-ii",
   "topicId": "phys-4-4",
   "conceptId": "beta-decay-equation-iodine-131",

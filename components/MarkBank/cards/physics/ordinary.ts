@@ -6834,6 +6834,20 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2024-ol-q10-iv", topicId: "phys-2-1", conceptId: "why-a-freezer-cools-when-liquid-vaporises",
+    section: "A", questionRef: "2024 OL Q10(iv)",
+    stem: "0 0 2 4 6 8 10 12 Heat added (J) (ix) What is the thermometric property of an alcohol-in-glass thermometer? (x) State one everyday use of a thermometer. (14) Leaving Certificate, 2024 Physics – Ordinary Level 8 10. When a person sings, their vocal chords vibrate. This vibration can cause a wine glass to shatter if resonance occurs. X Y If a musician increases the loudness of the note she plays, she has increased the amplitude of the sound wave. (ix) A sound wave vibrates at its fundamental frequency in a pipe of length 60 cm which is open at both ends. Calculate the wavelength of the sound wave. (11) Leaving Certificate, 2024 Physics – Ordinary Level 9",
+    questionText: "What happens to the temperature inside a freezer when the liquid changes state to become a gas? (24) The heat pump also turns the gas back into a liquid. Draw a diagram, in your answerbook, to show the next harmonic for a sound wave in the same pipe.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "it decreases", marks: 6 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2025, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",

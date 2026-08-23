@@ -1,7 +1,7 @@
 {
  "biology": {
   "higher": 604,
-  "ordinary": 621
+  "ordinary": 624
  },
  "chemistry": {
   "higher": 443,
@@ -9,7 +9,7 @@
  },
  "physics": {
   "higher": 485,
-  "ordinary": 476
+  "ordinary": 477
  },
  "agricultural-science": {
   "higher": 438,
