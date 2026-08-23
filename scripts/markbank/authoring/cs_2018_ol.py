@@ -19,7 +19,8 @@ PLAN = [
     (3, 'b', 'cons-5-3', 'advantage-wood-burning-stove-heat-water'),
     (4, 'a', 'cons-2-4', 'environmental-reason-why-strip-foundation-considered'),
     (6, 'c', 'cons-1-8', 'recommend-other-item-personal-protective-equipment'),
-    (7, 'c', 'cons-1-1', 'advantage-storing-rainwater-underground-tank'),]
+    (7, 'c', 'cons-1-1', 'advantage-storing-rainwater-underground-tank'),
+    (3, 'a', 'cons-5-2', 'wood-burning-stove-back-boiler-shown'),]
 
 for q, letter, topic, concept in PLAN:
     try:

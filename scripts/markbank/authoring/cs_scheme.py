@@ -110,7 +110,13 @@ HEADING_LOOK = re.compile(r'^[A-Z][^.:;•]{0,58}$')
 # Lines that sit where a heading sits but name nothing. The question's own text
 # wraps onto a line ending in a full stop ("...requirements.", "...the house."),
 # and the SEC closes most lists with a catch-all. Both became group names.
-NOT_A_HEADING = re.compile(r'^(any other relevant|note\b|n\.?b\.?\b|alternative\b'
+# "Notes" and "Sketches" sit exactly where a heading sits -- unpriced, with a
+# priced line under them -- and taking them as group names split three parts
+# into fragments of two options each, none of which could satisfy its own
+# tariff. They are presentation labels, never a group.
+NOT_A_HEADING = re.compile(r'^(any other relevant|notes?\b|sketch(es)?\b'
+                           r'|drawing\b|presentation\b|discussion\b'
+                           r'|n\.?b\.?\b|alternative\b'
                            r'|.*[a-z]\.\s*$|.*\bsuch as\s*$|.*\bincluding\s*$'
                            r'|discussion of\b|.*\bmay include\s*$)', re.I)
 # A heading in this scheme is always title-case. A line opening lower-case is a
@@ -310,7 +316,52 @@ class Scheme:
         if not src:
             return []
         src = _rewrap(src)
-        # Headings: a non-bullet line with at least one bullet under it.
+        # Headings: a non-bullet line with at least one bullet under it -- or,
+        # where the block uses no bullets at all, a line carrying NO mark with
+        # priced rows under it. The 2018 Ordinary mark tables set their groups
+        # that way ("Secondary circulation" over six rows at five marks each,
+        # then "Primary circulation" over six more), so bullet-only heading
+        # detection returned no groups and the part fell back to the indicative
+        # half's welded list of eighteen.
+        tariffs = group_tariffs(' '.join(src))
+        if half == 'marks' and not any(BULLET.match(l) for l in src):
+            priced = re.compile(r'\s\d{1,3}\s*$')
+            heads = []
+            for i, line in enumerate(src):
+                t = line.strip()
+                if priced.search(t) or TARIFF_ONLY.match(t) or TOTALS.search(t):
+                    continue
+                nxt = src[i + 1].strip() if i + 1 < len(src) else ''
+                # A heading starts upper-case and is short. Without that,
+                # "water cylinder" -- the tail of a line that wrapped -- became
+                # a third group of 2018 Ordinary Q3(a), splitting a six-row
+                # group into fragments too small for their own tariff and
+                # costing four parts elsewhere that had been carding fine.
+                if (priced.search(nxt) and not NOT_A_HEADING.match(t)
+                        and not LOWER_START.match(t) and len(t) <= 60):
+                    heads.append((i, t.rstrip(':').strip()))
+            if len(heads) > 1:
+                out = []
+                for n, (i, name) in enumerate(heads):
+                    hi = heads[n + 1][0] if n + 1 < len(heads) else len(src)
+                    items = []
+                    for line in src[i + 1:hi]:
+                        t = line.strip()
+                        if not priced.search(t) or SCALE_TAIL.match(t) or TOTALS.search(t):
+                            continue
+                        t = MARK_TAIL.sub('', t).strip(' .;')
+                        if len(t) > 2 and not DRAFTING.search(t):
+                            items.append(t)
+                    # Three, not two. Where the mark column is printed on
+                    # alternate lines an unpriced ITEM looks exactly like a
+                    # heading -- "String 250 mm x 50 mm" over "Tread ... 5" --
+                    # and a two-item group is what that mistake produces. A
+                    # real group heading has a real list under it.
+                    if len(items) >= 3:
+                        out.append((name, tariffs[n] if n < len(tariffs) else None, items))
+                if len(out) > 1 and sum(len(g[2]) for g in out) >= len(heads) * 3:
+                    return out
+
         heads = []
         for i, line in enumerate(src):
             if (BULLET.match(line) or TARIFF_ONLY.match(line)
@@ -320,7 +371,6 @@ class Scheme:
             nxt = src[i + 1] if i + 1 < len(src) else ''
             if BULLET.match(nxt):
                 heads.append((i, line.strip().rstrip(':').strip()))
-        tariffs = group_tariffs(' '.join(src))
 
         def items(lo, hi):
             out = []

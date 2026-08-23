@@ -439,6 +439,20 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2018, level: "ordinary",
+    paperFileid: "LC029GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
+    id: "cons-2018-ol-q3-a", topicId: "cons-5-2", conceptId: "wood-burning-stove-back-boiler-shown",
+    section: "B", questionRef: "2018 OL Q3(a)",
+    stem: "The scheme groups its answer under: Secondary circulation; Primary circulation",
+    questionText: "A wood-burning stove with a back boiler, as shown, is used to heat water for a dwelling house. Using a single-line labelled diagram, show the pipework required to supply hot water to a shower. Include the following in your diagram: • wood-burning stove • rising main and cold water storage tank • hot water cylinder and expansion tank • pipework to shower and all necessary valves.",
+    tariffModel: {"kind":"bestNofParts","notation":"7 x 5","answer":7,"ofParts":11,"perPart":5}, totalMarks: 35,
+    rows: [
+    { id: "cons-2018-ol-q3-a-r1", kind: "anyN", verbatim: "A wood-burning stove with a back boiler, as shown, is used to heat water for a dwelling house. Using a single-line label", marks: 35, openList: true, group: {"claimMax":7,"perOption":5,"options":["15 mm rising main","Water storage tank and overflow 22 mm min","22 mm cold feed from water storage tank to hot water cylinder","Hot water cylinder","22 mm expansion pipe from hot water cylinder","22 mm hot water supply to shower","Wood-burning stove","28 mm primary flow and return to and from wood-burning stove and hot","22 mm cold feed from expansion tank and 22 mm expansion pipe","Expansion tank and overflow 22 mm min","Valves"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2019, level: "ordinary",
     paperFileid: "LC029GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
@@ -1216,7 +1230,7 @@ export const CARDS: SecCard[] = [
     questionText: "Discuss two advantages for the occupants of creating an outdoor living space.",
     tariffModel: {"kind":"bestNofParts","notation":"2 x 6","answer":2,"ofParts":4,"perPart":6}, totalMarks: 12,
     rows: [
-    { id: "cons-2021-ol-q9-c-r1", kind: "anyN", verbatim: "Discuss two advantages for the occupants of creating an outdoor living space.", marks: 12, openList: true, group: {"claimMax":2,"perOption":6,"options":["Increase the owner’s usable space","Connection with nature and the outdoors","Area to have outdoor meals during warmer seasons","Increase the resale value of the property"]} },
+    { id: "cons-2021-ol-q9-c-r1", kind: "anyN", verbatim: "Discuss two advantages for the occupants of creating an outdoor living space.", marks: 12, openList: true, group: {"claimMax":2,"perOption":6,"options":["A Planning of Project","B Report Writing","C Manipulative Skills","D Presentation of Project"]} },
     ],
   } as SecCard,
   {

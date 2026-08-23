@@ -594,7 +594,12 @@ class Author:
         # indicative half welded the two column headings into one line and
         # returned a single group of sixteen -- too long for the deck to show,
         # and wrong about the question, which prices the two halves separately.
-        mk_groups = [g for g in self.S.groups(q, letter) if g[1] and len(g[2]) >= 2]
+        # A tariff on the group is NOT required. 2018 Ordinary Q3(a) sets
+        # "Secondary circulation" and "Primary circulation" as two groups of
+        # six rows at five marks each, with no "N x M" line anywhere; requiring
+        # one excluded both and left the indicative half's welded group of
+        # eighteen, which the deck will not show. The tariff comes from the rows.
+        mk_groups = [g for g in self.S.groups(q, letter) if len(g[2]) >= 2]
         if len(mk_groups) > len([g for g in gs if len(g[2]) >= 2]):
             gs = mk_groups
         if not [g for g in gs if len(g[2]) >= 2]:
