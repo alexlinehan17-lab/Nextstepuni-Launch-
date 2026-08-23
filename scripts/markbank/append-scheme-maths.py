@@ -83,8 +83,21 @@ def pdf_for(subject: str, year: int, level: str) -> Path | None:
     answers belong to a different exam.
     """
     d = ROOT / 'examiner-reports' / subject
+    # schemes/<year>-<level>.pdf FIRST: that is where fetch-corpus.py puts every
+    # scheme, it is explicitly levelled, and the fetcher never pulls a deferred
+    # paper. Without it a newly fetched subject silently got no folds at all —
+    # Construction Studies folded 2 of its 10 schemes and reported the other
+    # eight as "no PDF, skipped", which reads like nothing needed doing.
     names = ([f'{year}-{level}-marking-scheme.pdf'] if level == 'ol'
              else [f'{year}-hl-marking-scheme.pdf', f'{year}-marking-scheme.pdf'])
+    # LAST, never first: schemes/<year>-<level>.pdf is where fetch-corpus.py
+    # puts every scheme, so a newly fetched subject has only this copy and
+    # without it gets no folds at all — Construction Studies folded 2 of its 10
+    # and reported the rest as "no PDF, skipped", which reads like nothing
+    # needed doing. Preferring it would have been worse: the two copies are not
+    # byte-identical, and re-running rewrote the fold blocks under all seven
+    # shipped subjects, which is provenance every shipped card traces against.
+    names.append(f'schemes/{year}-{level}.pdf')
     for name in names:
         path = d / name
         if not path.exists():

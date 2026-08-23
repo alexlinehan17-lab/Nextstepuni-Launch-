@@ -44,6 +44,11 @@ SUBJECTS = {
     'economics': 'economics',
     'home-economics': 'home-economics-s-and-s',
     'physics': 'physics',
+    # Added 23 August 2026. Stage 0 passed on the drawing+ pattern: the scheme
+    # answers "draw a section through this wall" with a list of the details the
+    # drawing must contain — "Breather membrane", "Cavity closer", "Triple
+    # glazing" — which is a stated answer and cards well. See stage0.py.
+    'construction-studies': 'construction-studies',
 }
 
 FILEID = re.compile(r'^LC(\d{3})([AG])LP(\d{3})([EI])V\.pdf$', re.I)
