@@ -9173,7 +9173,7 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: "LC025ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Higher Level — © State Examinations Commission.",
-    id: "bio-2021-hl-q16-b-i", topicId: "bio-3-4", conceptId: "parts-of-the-male-reproductive-system",
+    id: "bio-2021-hl-q16-b-i", topicId: "bio-2-5", conceptId: "parts-of-the-male-reproductive-system",
     section: "B", questionRef: "2021 HL Q16(b)(i)",
     questionText: "Draw a large diagram of the reproductive system of the human male. Label the following parts: Testis Sperm duct Prostate gland Urethra Penis Scrotum",
     tariffModel: {"kind":"fixed","notation":"3 + 3, and only 3 if any one of the four is missing"}, totalMarks: 6,

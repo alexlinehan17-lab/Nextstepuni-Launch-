@@ -91,7 +91,7 @@ A.card(9, 'b', 'iv', topic='bio-2-1', concept='enzyme-activity-against-temperatu
        notes='The curve rises to a peak at the optimum and falls away sharply after it, '
              'because the enzyme denatures rather than merely slowing.')
 
-A.card(16, 'b', 'i', topic='bio-3-4', concept='parts-of-the-male-reproductive-system',
+A.card(16, 'b', 'i', topic='bio-2-5', concept='parts-of-the-male-reproductive-system',
        source='pdf', from_run=((16, None, 'i'), 0, slice(0, 9)), marks=[6],
        notation='3 + 3, and only 3 if any one of the four is missing',
        checked='The question runs its list of parts to label on after the instruction '
