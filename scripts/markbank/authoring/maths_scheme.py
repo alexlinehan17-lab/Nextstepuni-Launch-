@@ -83,12 +83,25 @@ class Scheme:
             if m:
                 paper = int(m.group(1))
             left, right = mathtext.placed(page)
-            if not any('Marking Notes' in t for _, t in right[:3]):
+            # The table header prints once, on the page a question OPENS. A
+            # question that runs on has its continuation page headed by nothing
+            # at all -- so requiring "Marking Notes" threw away every part
+            # printed after a page break. 2021 OL Paper 1 lost Q1(c) and Q1(d),
+            # Q2(c) and Q5(c) that way, each of them priced on its own scale.
+            # A page carrying a scale is a marked page whether it says so or not.
+            if not any('Marking Notes' in t for _, t in right[:3]) \
+                    and not any(SCALE_LINE.search(t) for _, t in right):
                 continue
-            for t in (t for _, t in left[:6]):
+            # The FIRST head anywhere in the column, not the last of the first
+            # six lines. A page that opens a section carries four lines of
+            # instruction above the table, which pushed "Q1" to the seventh --
+            # so Question 1 of the 2021 Ordinary paper was never seen at all
+            # and neither were its four parts.
+            for t in (t for _, t in left):
                 h = QHEAD.match(t.strip())
                 if h:
                     q = int(h.group(1))
+                    break
             # Some schemes drop the Q. The 2023 Ordinary Paper 2 heads its
             # first two marked pages "Q2" and every page after that with a bare
             # "3", "4", "5", "6" in the same cell -- so from Question 3 on, ten
@@ -96,7 +109,7 @@ class Scheme:
             # and collided with each other. Read forward only, and not past the
             # next few, so a stray number in the working cannot claim the page.
             if left:
-                for t in (t for _, t in left[:3]):
+                for t in (t for _, t in left[:4]):
                     n = BARE_QHEAD.match(t.strip())
                     if n and q is not None and q <= int(n.group(1)) <= q + 3:
                         q = int(n.group(1))

@@ -32,6 +32,27 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
+    id: "maths-2021-hl-p1-q1-a", topicId: "maths-3-1", conceptId: "part",
+    section: "B", questionRef: "2021 HL Paper 1 Q1(a)",
+    questionText: "(a) (4−2i)/(²⁺⁴ⁱ^) = 0 + ki, where k ∈ ℤ, and i² = −1",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "maths-2021-hl-p1-q1-a-r1", kind: "anyN", verbatim: "2 −4i 4 −2i = ki(2 + 4i)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["2 −4i 4 −2i = ki(2 + 4i)","4−2i/2 + 4i × 2−4i/2−4i 4 −2i = −4k + 2ki Sets Re = Re or Im = Im Full Credit –1: 0 −i or −1i as solution, with k not identified."],"perOptionSteps":[3,7]} },
+    ],
+    figure: {
+          "candId": "maths-2021-HL-paper-p006-i0",
+          "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p006-i0.png",
+          "srcHash": "c81f1da7be2e9e644725401cfc07fde7",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q1(a), typeset as the State Examinations Commission set it. It reads: Detailed marking notes Note: The model solutions for each question are not intended to be exhaustive – there may be other correct solutions. Any Examiner unsure of the validity of the approach adopted by a particular candidate to a particular question should contact his / her Advising Examiner. (a) (4−2i) (2 + 4i) = 4−2i/2 + 4i × 2−4i/2−4i = (8−16i−4i−8)/2² + 4² = −20i/20 = 0 −1i ∴k = −1 OR (4−2i) (2 + 4i) = −i(2 + 4",
+          "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q1-b", topicId: "maths-3-1", conceptId: "12i-both-answers-form",
     section: "B", questionRef: "2021 HL Paper 1 Q1(b)",
     questionText: "Find √−5 + 12i. Give both of your answers in the form a+ bi, where a, b∈ℝ",
@@ -100,7 +121,7 @@ export const CARDS: SecCard[] = [
     questionText: "(x+ 4) is a factor of f(x) = x3+ qx2−22x+ 56, where x∈ℝ and q∈ℤ. Show that q= −5, and find the three roots of f(x)",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 5, 10, 15, 20)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
     rows: [
-    { id: "maths-2021-hl-p1-q2-b-r1", kind: "anyN", verbatim: "States f(−4) = 0 Any correct division Sets up long division correctly", marks: 20, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 10, three parts for 15, four parts for 20. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":5,"options":["States f(−4) = 0 Any correct division Sets up long division correctly","Shows that q = −5 Correct quotient in quadratic form found (accept in terms of q)","Find x = 2 and x = 7 Correct quotient in quadratic form found and shows that q = −5"],"perOptionSteps":[5,5,10]} },
+    { id: "maths-2021-hl-p1-q2-b-r1", kind: "anyN", verbatim: "States f(−4) = 0 Any correct division Sets up long division correctly", marks: 20, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 10, three parts for 15, four parts for 20. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":5,"options":["States f(−4) = 0 Any correct division Sets up long division correctly","Shows that q = −5 Correct quotient in quadratic form found (accept in terms of q)","Find x = 2 and x = 7 Correct quotient in quadratic form found and shows that q = −5 Full Credit –1: Apply a * for −4 not listed as a root"],"perOptionSteps":[5,5,10]} },
     ],
     figure: {
           "candId": "maths-2021-HL-paper-p010-i0",
@@ -121,13 +142,13 @@ export const CARDS: SecCard[] = [
     questionText: "Find the volume of the cuboid in the form a√b cm³, where a, b∈ℕ",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-hl-p1-q3-a-r1", kind: "anyN", verbatim: "1 dimension found", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: High Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["1 dimension found"]} },
+    { id: "maths-2021-hl-p1-q3-a-r1", kind: "anyN", verbatim: "x²y²z² = (2√2)(8√6)( 4√3) If solving by isolating variables: Low • Partial xz = Credit:/2√2, or similar Mid Partial Credit:/4√3 2√2 y = 4√3/x and z = 2√2/x , or similar", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: High Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["x²y²z² = (2√2)(8√6)( 4√3) If solving by isolating variables: Low • Partial xz = Credit:/2√2, or similar Mid Partial Credit:/4√3 2√2 y = 4√3/x and z = 2√2/x , or similar","1 dimension found"],"perOptionSteps":[3,7]} },
     ],
     figure: {
           "candId": "maths-2021-HL-paper-p011-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p011-i0.png",
-          "srcHash": "4cb1c0884fceb82284e4d7542dcbc7ed",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q3(a), typeset as the State Examinations Commission set it. It reads: xz = 2√2 yz = 8√6 xy = 4√3 y = 4√3/x and z = 2√2/x ⇒ x/(4√3 ) (2√2 and ) = 8√6 x ⇒ (4√3/x ) (2√2/x ) = 8√6 ⇒x = 1 cm ⇒z = 2√2 cm",
+          "srcHash": "22d83fffc25cd98448b47e8495bd7788",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q3(a), typeset as the State Examinations Commission set it. It reads: xz = 2√2 yz = 8√6 xy = 4√3 ⇒x²y²z² = (2√2)(8√6)( 4√3) ⇒x²y²z² = 384 ⇒xyz = √384 = 8√6 [cm³] OR y = 4√3/x and z = 2√2/x ⇒ x/(4√3 ) (2√2 and ) = 8√6 x ⇒ (4√3/x ) (2√2/x ) = 8√6 ⇒x = 1 cm ⇒y = 4√3 cm ⇒z = 2√2 cm ∴xyz = 8√6 [cm³]",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -142,7 +163,7 @@ export const CARDS: SecCard[] = [
     questionText: "Given that f(x) = 3x² + 8x−35, where x∈ℝ, find the two roots of f(x) = 0",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-hl-p1-q3-b-i-r1", kind: "anyN", verbatim: "Effort at factorisation Formula fully substituted", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Effort at factorisation Formula fully substituted"]} },
+    { id: "maths-2021-hl-p1-q3-b-i-r1", kind: "anyN", verbatim: "Effort at factorisation Quadratic formula with some substitution", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Effort at factorisation Quadratic formula with some substitution","Factors found Formula fully substituted"],"perOptionSteps":[3,7]} },
     ],
     figure: {
           "candId": "maths-2021-HL-paper-p011-i1",
@@ -163,7 +184,7 @@ export const CARDS: SecCard[] = [
     questionText: "(ii) Hence or otherwise, solve the equation 3^(2m + 1) = 35 −8(3^m), where m∈ℝ. Give your answer in the form m = log₃p−q, where p, q∈ℕ",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-hl-p1-q3-b-ii-r1", kind: "anyN", verbatim: "m isolated correctly, for example, m = log₃ (/3) 7 Full Credit –1: 3^m = −5 written down, and not explicitly excluded", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: High Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["m isolated correctly, for example, m = log₃ (/3) 7 Full Credit –1: 3^m = −5 written down, and not explicitly excluded"]} },
+    { id: "maths-2021-hl-p1-q3-b-ii-r1", kind: "anyN", verbatim: "Some work in writing given equation in the form of that in (b)(i) –5 explicitly excluded x = 3^m", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Some work in writing given equation in the form of that in (b)(i) –5 explicitly excluded x = 3^m","m isolated correctly, for example, m = log₃ (/3) 7 Full Credit –1: 3^m = −5 written down, and not explicitly excluded"],"perOptionSteps":[3,7]} },
     ],
     figure: {
           "candId": "maths-2021-HL-paper-p012-i0",
@@ -289,13 +310,13 @@ export const CARDS: SecCard[] = [
     questionText: "(b) The diagram below shows t, the tangent line to h(x) = 2 sin(2x) , where 0 ≤ x ≤ 𝜋, at the point where x = 𝜋/6. A(0, k), where k∈ℝ, is the point where t cuts the y-axis. Find the value of k correct to two decimal places",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-hl-p1-q5-b-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct differentiation; substitutes 𝜋/6 in to h(x); formula for slope or equation of a line with some substitution 2 steps correct 3 steps correct", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Work of merit, for example, some correct differentiation; substitutes 𝜋/6 in to h(x); formula for slope or equation of a line with some substitution 2 steps correct 3 steps correct"]} },
+    { id: "maths-2021-hl-p1-q5-b-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct differentiation; substitutes 𝜋/6 in to h(x); formula for slope or equation of a line with some substitution", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, some correct differentiation; substitutes 𝜋/6 in to h(x); formula for slope or equation of a line with some substitution","2 steps correct","3 steps correct"],"perOptionSteps":[3,2,5]} },
     ],
     figure: {
           "candId": "maths-2021-HL-paper-p016-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p016-i0.png",
           "srcHash": "d0aa4c55c7f78b531ae835c04e787802",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q5(b), typeset as the State Examinations Commission set it. It reads: h′(x) = 4cos2x h′ (𝜋/6) = 4cos2 (𝜋/6) = 4 cos (𝜋/3) h (𝜋/6) = 2sin2 (𝜋/6) = 2 sin (𝜋/3) = √3 (𝜋/6 , √3) m = 2 y − √3 = 2 (x − 𝜋/6) x = 0 ⇒ y − √3 = 2 (− 𝜋/6) y = √3 − 𝜋/3 = 0·6848 … ∴k = 0·68 [2 D.P.] OR Finds (/6 𝜋 , √3) and slope = 2, then: y = mx + c implies √3 = 2 (/6) 𝜋 + k y i.e. = k mx = + c/√3 − implies 𝜋 3 √3 = 2 ( 𝜋 6) + k i.e. k = √3 − 𝜋/3 = 0·6848 … = 0·68 [2 D.P.]",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q5(b), typeset as the State Examinations Commission set it. It reads: h′(x) = 4cos2x h′ (𝜋/6) = 4cos2 (𝜋/6) = 4 cos (𝜋/3) = 2 = m_T h (𝜋/6) = 2sin2 (𝜋/6) = 2 sin (𝜋/3) = √3 (𝜋/6 , √3) m = 2 y − √3 = 2 (x − 𝜋/6) x = 0 ⇒ y − √3 = 2 (− 𝜋/6) y = √3 − 𝜋/3 = 0·6848 … ∴k = 0·68 [2 D.P.] OR Finds (/6 𝜋 , √3) and slope = 2, then: y = mx + c implies √3 = 2 (/6) 𝜋 + k y i.e. = k mx = + c/√3 − implies 𝜋 3 √3 = 2 ( 𝜋 6) + k i.e. k = √3 − 𝜋/3 = 0·6848 … = 0·68 [2 D.P.]",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -352,7 +373,7 @@ export const CARDS: SecCard[] = [
     questionText: "The graph of h(x) passes through the point (0, −2). Find the equation of h(x)",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-hl-p1-q6-c-r1", kind: "anyN", verbatim: "Integration of 3 terms fully correct", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Integration of 3 terms fully correct","Relevant equation in C (with substitution)"],"perOptionSteps":[3,7]} },
+    { id: "maths-2021-hl-p1-q6-c-r1", kind: "anyN", verbatim: "Any indication of integration", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Any indication of integration","Integration of 3 terms fully correct","Relevant equation in C (with substitution)"],"perOptionSteps":[3,2,5]} },
     ],
     figure: {
           "candId": "maths-2021-HL-paper-p018-i1",
@@ -436,7 +457,7 @@ export const CARDS: SecCard[] = [
     questionText: "(iv) Swing p is the first swing which has an arc length of less than 2 cm. Find the value of p",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-hl-p1-q7-a-iv-r1", kind: "anyN", verbatim: "log equation without indices Evaluates T₃₀ and T₃₁ but no conclusion p = 31 with T₃₁ evaluated", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: High Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["log equation without indices Evaluates T₃₀ and T₃₁ but no conclusion p = 31 with T₃₁ evaluated"]} },
+    { id: "maths-2021-hl-p1-q7-a-iv-r1", kind: "anyN", verbatim: "Two or more different values substituted and evaluated for n, other than 30 and 31 45(0∙9)^(n−1) = 2", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Two or more different values substituted and evaluated for n, other than 30 and 31 45(0∙9)^(n−1) = 2","log equation without indices Evaluates T₃₀ and T₃₁ but no conclusion p = 31 with T₃₁ evaluated"],"perOptionSteps":[3,7]} },
     ],
     figure: {
           "candId": "maths-2021-HL-paper-p020-i0",
@@ -462,7 +483,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2021-HL-paper-p020-i1",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p020-i1.png",
-          "srcHash": "ce1a6736c77b602c2c413c6aa3566db6",
+          "srcHash": "872535b52b30943279af91747f3e9af0",
           "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q7(b)(i), typeset as the State Examinations Commission set it. It reads: (i) l = 2𝜋r (/3⁶⁰^°) 𝜃 [degrees] 2𝜋(100) (/3⁶⁰^°) 𝜃 = 45 𝜃 = 45 × 360°/200𝜋 = 25·7831 … ° = 26 [°] [∈ℕ] OR l = r𝜃 [radians] 100𝜃= 45 𝜃= 0·45 radians 𝜃 = 0·45 ( )/𝜋 180 ° = 25·7831 … ° = 26 [°] [∈ℕ]",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
@@ -499,7 +520,7 @@ export const CARDS: SecCard[] = [
     questionText: "(iii) Hence, or otherwise, find the total distance travelled by the tip of the pendulum when it has moved through half of the total accumulated angle. Give your answer, in cm, correct to the nearest integer",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2021-hl-p1-q7-b-iii-r1", kind: "anyN", verbatim: "Finds half accumulated angle", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Finds half accumulated angle"]} },
+    { id: "maths-2021-hl-p1-q7-b-iii-r1", kind: "anyN", verbatim: "Finds half accumulated angle Sₙ formula with some substitution S_∞ distance formula with some substitution", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Finds half accumulated angle Sₙ formula with some substitution S_∞ distance formula with some substitution","n found S_∞ found for distance"],"perOptionSteps":[2,3]} },
     ],
     figure: {
           "candId": "maths-2021-HL-paper-p021-i1",
@@ -515,7 +536,7 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p1-q8-a-i", topicId: "maths-5-2", conceptId: "part",
+    id: "maths-2021-hl-p1-q8-a-i", topicId: "maths-5-1", conceptId: "part",
     section: "B", questionRef: "2021 HL Paper 1 Q8(a)(i)",
     questionText: "Use h(10) = 30 to show that p = 3·6",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -620,6 +641,27 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
+    id: "maths-2021-hl-p1-q8-c", topicId: "maths-3-1", conceptId: "function-001x-12x-average-height-section",
+    section: "B", questionRef: "2021 HL Paper 1 Q8(c)",
+    questionText: "Use the function h(x) = 0·001x³−0·12x² + 3·6x + 5, x∈ℝ, to find the average height (c) of this section of the track above level ground, from x = 0 to x = 75. Give your answer in metres correct to 2 decimal places",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "maths-2021-hl-p1-q8-c-r1", kind: "anyN", verbatim: "Integration indicated", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Integration indicated","Integration of terms fully correct (accept without C)","limits substituted correctly (and 1/75 present)"],"perOptionSteps":[3,2,5]} },
+    ],
+    figure: {
+          "candId": "maths-2021-HL-paper-p024-i0",
+          "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p024-i0.png",
+          "srcHash": "d6ebb1bd1b33d46333889483b7623baa",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q8(c), typeset as the State Examinations Commission set it. It reads: (c) 1/75 ∫ 0 75 h(x) dx = 1/75 [/4 0·001x⁴ − 0·12x³/3 + 3·6x² = 1/75 [/4 0·001(75)⁴ − 0·12(75)³/3 = 1/7⁵ (1535·15625) = 20·46875 m = 20∙47 [m] [2 D.P.]",
+          "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
     id: "maths-2021-hl-p1-q9-a-ii", topicId: "maths-5-2", conceptId: "explain-what-value-formula-represents-context",
     section: "B", questionRef: "2021 HL Paper 1 Q9(a)(ii)",
     questionText: "Explain what the value 20 in the formula represents in the context of the coffee (ii) cooling",
@@ -667,7 +709,7 @@ export const CARDS: SecCard[] = [
     questionText: "T(t) = 75e^(−0·081t) + 20 gives the temperature of the coffee at time t. (b) If the ideal temperature to drink coffee is 82°C, find the time, to the nearest second, that it takes for the coffee to reach this temperature",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-hl-p1-q9-b-r1", kind: "anyN", verbatim: "Equation in t with no indices (logs handled correctly)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: High Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Equation in t with no indices (logs handled correctly)"]} },
+    { id: "maths-2021-hl-p1-q9-b-r1", kind: "anyN", verbatim: "Some substitution into equation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Some substitution into equation","Fully substituted equation","Equation in t with no indices (logs handled correctly)"],"perOptionSteps":[3,2,5]} },
     ],
     figure: {
           "candId": "maths-2021-HL-paper-p026-i0",
@@ -709,13 +751,13 @@ export const CARDS: SecCard[] = [
     questionText: "A sugar cube is put into the coffee. The sugar keeps its cube shape as it dissolves. at the constant rate of 1/2⁰ cm³/sec. As the sugar cube dissolves, its volume decreases at the constant rate of Let x(t) be the sidelength of the cube at time t. of the cube reaches 1/6⁴ cm³. Find the rate of change of x(t) when the volume of the cube reaches",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-hl-p1-q9-d-r1", kind: "anyN", verbatim: "Any two of the following: o dV/d^t = − 1/20 o dV/d^x = 3x² o x = 1/4 o dx/dt = dV/dt ÷ dV/d^x , or similar", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Any two of the following: o dV/d^t = − 1/20 o dV/d^x = 3x² o x = 1/4 o dx/dt = dV/dt ÷ dV/d^x , or similar","dx/dt = dV/dt ÷ dV/d^x , and any two others from the MPC list above Full Credit –1: Unit incorrect or omitted"],"perOptionSteps":[3,7]} },
+    { id: "maths-2021-hl-p1-q9-d-r1", kind: "anyN", verbatim: "States a relevant derivative, for example, dV/dt x³ = 1/64", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["States a relevant derivative, for example, dV/dt x³ = 1/64","Any two of the following: o dV/d^t = − 1/20 o dV/d^x = 3x² o x = 1/4 o dx/dt = dV/dt ÷ dV/d^x , or similar","dx/dt = dV/dt ÷ dV/d^x , and any two others from the MPC list above Full Credit –1: Unit incorrect or omitted"],"perOptionSteps":[3,2,5]} },
     ],
     figure: {
           "candId": "maths-2021-HL-paper-p027-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p027-i0.png",
           "srcHash": "59dd90f399d69c36dccc30f085bfd7cc",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q9(d), typeset as the State Examinations Commission set it. It reads: (d) dV/d^t = − 1/20 V = 1/6⁴ = x³ so x = 1/4 and dV/d^x = 3x² dx/dt = dV/dt ÷ dV/dx = − 1/2⁰ ÷ 3x² = − 1/60x² dt = − At x = 4 , = − 4/15 cm/sec",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q9(d), typeset as the State Examinations Commission set it. It reads: (d) dV/d^t = − 1/20 V = 1/6⁴ = x³ so x = 1/4 and dV/d^x = 3x² dx/dt = dV/dt ÷ dV/dx = − 1/2⁰ ÷ 3x² = − 1/60x² dt = − At x = 60(0·25)² 4 , = − 4/15 cm/sec",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -730,7 +772,7 @@ export const CARDS: SecCard[] = [
     questionText: "Find the value of t when the tank empties",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2021-hl-p1-q10-a-i-r1", kind: "anyN", verbatim: "V(t) = 0 Quadratic formula with some Formula fully substituted Full Credit –1: Gives 15 and − 4/3", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["V(t) = 0 Quadratic formula with some Formula fully substituted Full Credit –1: Gives 15 and − 4/3"]} },
+    { id: "maths-2021-hl-p1-q10-a-i-r1", kind: "anyN", verbatim: "V(t) = 0 Quadratic formula with some substitution", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["V(t) = 0 Quadratic formula with some substitution","V(t) fully factorised Formula fully substituted Full Credit –1: Gives 15 and − 4/3"],"perOptionSteps":[2,3]} },
     ],
     figure: {
           "candId": "maths-2021-HL-paper-p028-i0",
@@ -798,7 +840,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2021-HL-paper-p028-i3",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p028-i3.png",
-          "srcHash": "2c3230655894ccd82d6f7c2a94ad87d4",
+          "srcHash": "1ade24bb2732074328621ecd2b8c7532",
           "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q10(a)(iv), typeset as the State Examinations Commission set it. It reads: (a) (iv) V ( )/6 41 = 60 + 41 ( )/6 41 − 3 ( )/6 41 = 200∙0833 … = 200 [litres] [nearest litre]",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
@@ -877,13 +919,55 @@ export const CARDS: SecCard[] = [
     questionText: "(iv) At t = 10 the second tree was also cut down. A section of its trunk, in the shape of a cylinder, of radius r(10) cm, standard length h cm, and volume V₂ cm³ was also sent to a sawmill. If V₂ = kV₁, where k∈ℝ, find the value of k",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2021-hl-p1-q10-b-iv-r1", kind: "anyN", verbatim: "r(10) fully substituted", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: High Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["r(10) fully substituted"]} },
+    { id: "maths-2021-hl-p1-q10-b-iv-r1", kind: "anyN", verbatim: "r(10) with some substitution Formula for volume of a cylinder with some substitution", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["r(10) with some substitution Formula for volume of a cylinder with some substitution","r(10) fully substituted"],"perOptionSteps":[2,3]} },
     ],
     figure: {
           "candId": "maths-2021-HL-paper-p030-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p030-i0.png",
           "srcHash": "967f8a8a15420883e969312ca5662aa4",
           "alt": "The marking scheme's printed worked solution for 2021 HL Paper 1 Q10(b)(iv), typeset as the State Examinations Commission set it. It reads: (b) (iv) r(10) = 10 + 10(1·5) + sin 𝜋/5 +sin 2𝜋/5 + ⋯ + sin 10𝜋/5 = 10 + 15 + 0 = 25 cm V₂ = kV₁ 𝜋25²h = k𝜋10²h 625 = 100k k = 6·25",
+          "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
+    id: "maths-2021-hl-p2-q1-a", topicId: "maths-1-2", conceptId: "probability-there-exactly-one-left-footed",
+    section: "B", questionRef: "2021 HL Paper 2 Q1(a)",
+    questionText: "Find the probability that there is exactly one left footed player on the team. Give you answer correct to three decimal places",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    rows: [
+    { id: "maths-2021-hl-p2-q1-a-r1", kind: "anyN", verbatim: "0·15 or 0·85 or 3/2⁰ or 17/2⁰ or 11 x¹⁰ where 0 < x < 1", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12, four parts for 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["0·15 or 0·85 or 3/2⁰ or 17/2⁰ or 11 x¹⁰ where 0 < x < 1","Three terms multiplied, two correct, from 11, (0·15¹), and (0·85¹⁰) (0·15¹) × (0·85¹⁰)","11 × 0·15¹ × 0·85¹⁰ or equivalent (0·15¹) × (0·85¹⁰) evaluated [0 ∙0295 …]"],"perOptionSteps":[4,4,7]} },
+    ],
+    figure: {
+          "candId": "maths-2021-HL-paper-p034-i0",
+          "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p034-i0.png",
+          "srcHash": "28453c6028e9ee5eb5d9478c47c72efe",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q1(a), typeset as the State Examinations Commission set it. It reads: Detailed marking notes Note: The model solutions for each question are not intended to be exhaustive – there may be other correct solutions. Any Examiner unsure of the validity of the approach adopted by a particular candidate to a particular question should contact his / her Advising Examiner. 11 × 0·15¹ × 0·85¹⁰ = 0 ∙3248 … = 0 ∙325 [3 D.P.] OR 11 × 3/20 × (17/20) 10 = 0·3248 … = 0 ∙325 [3 D.P.]",
+          "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
+    id: "maths-2021-hl-p2-q1-b", topicId: "maths-1-2", conceptId: "probability-less-than-three-players-team",
+    section: "B", questionRef: "2021 HL Paper 2 Q1(b)",
+    questionText: "(b) Find the probability that less than three players on the team are left footed. Give you answer correct to two decimal places",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "maths-2021-hl-p2-q1-b-r1", kind: "anyN", verbatim: "First line of solution 0·15 or 0·85 or 3/2⁰ or 17/20 or (11 1 )", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["First line of solution 0·15 or 0·85 or 3/2⁰ or 17/20 or (11 1 )","Two out of P(0), P(1), P(2) fully substituted"],"perOptionSteps":[3,7]} },
+    ],
+    figure: {
+          "candId": "maths-2021-HL-paper-p034-i1",
+          "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p034-i1.png",
+          "srcHash": "25aebb99a3db22aa1277cd9d30cdf036",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q1(b), typeset as the State Examinations Commission set it. It reads: P(0 or 1 or 2 left-footed) = 0·85¹¹ + (11 1 ) × 0·15¹ × 0·85¹⁰ + (11 2 ) × 0·15² × 0·85⁹ = 0∙1673 … + 0∙3248 … + 0∙2866 … = 0∙7787 … = 0∙78 [2 D.P.]",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -982,7 +1066,7 @@ export const CARDS: SecCard[] = [
     questionText: "[AB]and [DE] are horizontal line segments. |AB| = 33 units. Find the coordinates of B and of E",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2021-hl-p2-q2-c-ii-r1", kind: "anyN", verbatim: "One co-ordinate of B or E found |DE| = 11", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["One co-ordinate of B or E found |DE| = 11","B found and some work towards finding E"],"perOptionSteps":[2,3]} },
+    { id: "maths-2021-hl-p2-q2-c-ii-r1", kind: "anyN", verbatim: "One co-ordinate of B or E found |DE| = 11", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["One co-ordinate of B or E found |DE| = 11","B found and some work towards finding E E found"],"perOptionSteps":[2,3]} },
     ],
     figure: {
           "candId": "maths-2021-HL-paper-p037-i1",
@@ -1072,7 +1156,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p040-i1",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p040-i1.png",
           "srcHash": "6ab9df1326de79e46b24065287f28844",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q4(a)(ii), typeset as the State Examinations Commission set it. It reads: cos2A = cos²A−sin²A ⇒ cos𝜃 = cos² ^𝜃/2 − sin² ^𝜃/2 using a right-angled triangle cos 𝜃/2 = 2/√5 2/√5 cos𝜃 = (/√5) 2 2 − (/√5) 1 2 = 3/5 OR cos𝜃= cos^(2𝜃) = (1 − sin² ^𝜃/2) − sin² ^𝜃/2 = 1 − 2sin² ^𝜃/2 = 1 − 2 (/√5) 1 2 = 3/5",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q4(a)(ii), typeset as the State Examinations Commission set it. It reads: cos2A = cos²A−sin²A ⇒ cos𝜃 = cos² ^𝜃/2 − sin² ^𝜃/2 using a right-angled triangle cos 𝜃/2 = 2/√5 2/√5 cos𝜃 = (/√5) 2 2 − (/√5) 1 2 = 3/5 OR 2−sin^(2𝜃) cos𝜃= cos^(2𝜃) = (1 − sin² ^𝜃/2) − sin² ^𝜃/2 = 1 − 2sin² ^𝜃/2 = 1 − 2 (/√5) 1 2 = 3/5",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1087,7 +1171,7 @@ export const CARDS: SecCard[] = [
     questionText: "Solve the equation: tan(B + 150°) = −√3, for 0° ≤B ≤ 360°",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-hl-p2-q4-b-r1", kind: "anyN", verbatim: "Reference angle = 60° Correct range for B + 150° Quadrants 2 and 4 identified tan(A + B) formula with some substitution", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Reference angle = 60° Correct range for B + 150° Quadrants 2 and 4 identified tan(A + B) formula with some substitution","300° or 480° tan B + tan 150/1−tan B tan 150 = − √3","B = 150° or B = 330° 300° and 480°"],"perOptionSteps":[3,2,5]} },
+    { id: "maths-2021-hl-p2-q4-b-r1", kind: "anyN", verbatim: "Reference angle = 60° Correct range for B + 150° Quadrants 2 and 4 identified tan(A + B) formula with some substitution", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Reference angle = 60° Correct range for B + 150° Quadrants 2 and 4 identified tan(A + B) formula with some substitution","300° or 480° Solution to equation outside of required range (for e.g., B = −30° or −210°) tan B + tan 150/1−tan B tan 150 = − √3","B = 150° or B = 330° 300° and 480°"],"perOptionSteps":[3,2,5]} },
     ],
     figure: {
           "candId": "maths-2021-HL-paper-p041-i0",
@@ -1108,7 +1192,7 @@ export const CARDS: SecCard[] = [
     questionText: "Prove that the volume of the remaining space inside the sphere is exactly half the total volume of the sphere",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
-    { id: "maths-2021-hl-p2-q5-a-i-r1", kind: "anyN", verbatim: "2 volume formulas given (sphere and cone) Volume formula given with some relevant manipulation / substitution", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12, four parts for 15. Marked in order: Low Partial Credit; Full Credit -1.", openList: true, group: {"claimMax":2,"perOption":4,"options":["2 volume formulas given (sphere and cone) Volume formula given with some relevant manipulation / substitution","Incorrect or no conclusion, otherwise correct"],"perOptionSteps":[4,11]} },
+    { id: "maths-2021-hl-p2-q5-a-i-r1", kind: "anyN", verbatim: "2 volume formulas given (sphere and cone) Volume formula given with some relevant manipulation / substitution", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12, four parts for 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Full Credit -1.", openList: true, group: {"claimMax":4,"perOption":4,"options":["2 volume formulas given (sphere and cone) Volume formula given with some relevant manipulation / substitution","Volume of space in terms of r and h","Volume of space in terms of 1 variable","Incorrect or no conclusion, otherwise correct"],"perOptionSteps":[4,4,4,3]} },
     ],
     figure: {
           "candId": "maths-2021-HL-paper-p042-i0",
@@ -1423,7 +1507,7 @@ export const CARDS: SecCard[] = [
     questionText: "Four keys are drawn at random from the box. What is the probability that the 4th key drawn is the first office key drawn? Give your answer correct to 4 decimal places",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-hl-p2-q8-c-i-r1", kind: "anyN", verbatim: "One relevant fraction them correct", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["One relevant fraction them correct","18/23 × 17/22 × 16/21 × 5/20 (/23) 18 3 × 5/23"],"perOptionSteps":[3,7]} },
+    { id: "maths-2021-hl-p2-q8-c-i-r1", kind: "anyN", verbatim: "One relevant fraction", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["One relevant fraction","Product of four fractions, two of them correct","18/23 × 17/22 × 16/21 × 5/20 (/23) 18 3 × 5/23"],"perOptionSteps":[3,2,5]} },
     ],
     figure: {
           "candId": "maths-2021-HL-paper-p050-i0",
@@ -1449,8 +1533,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2021-HL-paper-p050-i1",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p050-i1.png",
-          "srcHash": "5179a3379892ecdbcfa31bf34f0def5b",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q8(c)(ii), typeset as the State Examinations Commission set it. It reads: (ii) (/23 12 × 6/22 × 5/2¹) 3! = 360/1771 = 0 · 20327 … = 0·2033 [4 D.P.] (12/23 × 6/22 × 5/21) + (12/23 × 5/22 × 6/21) + (/23 6 × 12/22 × 5/21) + (/23 6 × 5/22 × 12/21) + (/23 5 × 6/22 × 12/21) + (/23 5 × 12/22 × 6/21) = 0 · 20327 … = 0·2033 [4 D.P.] OR 1 1)/(23 ) (12 ) × (⁶ 3 1) × (⁵ = 0·2033 [4 D.P.]",
+          "srcHash": "c14011ddb51f96a854416a2cc8d4321b",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q8(c)(ii), typeset as the State Examinations Commission set it. It reads: (ii) (/23 12 × 6/22 × 5/2¹) 3! = 360/1771 = 0 · 20327 … = 0·2033 [4 D.P.] OR (12/23 × 6/22 × 5/21) + (12/23 × 5/22 × 6/21) + (/23 6 × 12/22 × 5/21) + (/23 6 × 5/22 × 12/21) + (/23 5 × 6/22 × 12/21) + (/23 5 × 12/22 × 6/21) = 0 · 20327 … = 0·2033 [4 D.P.] OR 1 1)/(23 ) (12 ) × (⁶ 3 1) × (⁵ = 0·2033 [4 D.P.]",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1492,7 +1576,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p051-i1",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p051-i1.png",
           "srcHash": "6807dda058b3d2c4bf15694d2260b0ad",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q9(a)(ii), typeset as the State Examinations Commission set it. It reads: (a) Time_[_A_C_] = 1450/4²⁰ = 3·4523 … hours Total time = 2 + 1·5 + 3·4523 … = 6·9523 … hours = 25 028·57 … seconds Max possible flight time = 100 000/3·8 = 26 315·7 … seconds, which is greater than 25 028·57 … sec Finds 25 028·57 … seconds Litres required = 3·8 × 25 028·57 … = 95 108 ∙57 … litres, which is less than 100 000 litres.",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q9(a)(ii), typeset as the State Examinations Commission set it. It reads: (a) Time_[_A_C_] = 1450/4²⁰ = 3·4523 … hours Total time = 2 + 1·5 + 3·4523 … = 6·9523 … hours = 25 028·57 … seconds Max possible flight time = 100 000/3·8 = 26 315·7 … seconds, which is greater than 25 028·57 … sec OR Finds 25 028·57 … seconds Litres required = 3·8 × 25 028·57 … = 95 108 ∙57 … litres, which is less than 100 000 litres.",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1576,7 +1660,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p053-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p053-i0.png",
           "srcHash": "fa07ecbe124586d0ae2ea1176b12042f",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q9(b)(iv), typeset as the State Examinations Commission set it. It reads: (b) (iv) Accept any value of t satisfying t = 1 + 8n/480 or 1 + 8n 480 or t = 3 + 8n/4⁸⁰ , as long as in the correct form. V(t) = 110√2 sin120𝜋t = 110 So sin120𝜋t = 1/√2 1/√2 So 120𝜋t = 𝜋/4 , i.e. t = 1/4⁸⁰ [seconds] or 120𝜋t = 3𝜋/4 = > t = 3/4⁸⁰ [seconds]",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q9(b)(iv), typeset as the State Examinations Commission set it. It reads: (b) (iv) Accept any value of t satisfying t = 1 + 8n/480 or t = 3 + 8n/4⁸⁰ , as long as in the correct form. V(t) = 110√2 sin120𝜋t = 110 So sin120𝜋t = 1/√2 1/√2 So 120𝜋t = 𝜋/4 , i.e. t = 1/4⁸⁰ [seconds] or 120𝜋t = 3𝜋/4 = > t = 3/4⁸⁰ [seconds]",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1598,27 +1682,6 @@ export const CARDS: SecCard[] = [
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p053-i1.png",
           "srcHash": "61cfa44154c00ba77774a0c1625bef32",
           "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q9(b)(v), typeset as the State Examinations Commission set it. It reads: V(t) = 110√2 sin (120𝜋t) V′(t) = 120𝜋× 110√2 cos (120𝜋t) V′(2) = 120𝜋× 110√2 cos (120𝜋× 2) = 58646·0 = 58646 Volts /sec [∈ℕ ]",
-          "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "higher",
-    paperFileid: null,
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p2-q10-a", topicId: "maths-1-2", conceptId: "question-continues-next-page-leaving-certificate",
-    section: "B", questionRef: "2021 HL Paper 2 Q10(a)",
-    questionText: "This question continues on the next page. Leaving Certificate, 2021 25",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
-    rows: [
-    { id: "maths-2021-hl-p2-q10-a-r1", kind: "anyN", verbatim: "0·15 or 0·85 or 3/2⁰ or 17/2⁰ or 11 x¹⁰ where 0 < x < 1", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12, four parts for 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["0·15 or 0·85 or 3/2⁰ or 17/2⁰ or 11 x¹⁰ where 0 < x < 1","Three terms multiplied, two correct, from 11, (0·15¹), and (0·85¹⁰) (0·15¹) × (0·85¹⁰)","11 × 0·15¹ × 0·85¹⁰ or equivalent (0·15¹) × (0·85¹⁰) evaluated [0 ∙0295 …]"],"perOptionSteps":[4,4,7]} },
-    ],
-    figure: {
-          "candId": "maths-2021-HL-paper-p034-i0",
-          "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p034-i0.png",
-          "srcHash": "454e615e7ebc15ad912ba57aa8286943",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q10(a), typeset as the State Examinations Commission set it. It reads: Detailed marking notes Note: The model solutions for each question are not intended to be exhaustive – there may be other correct solutions. Any Examiner unsure of the validity of the approach adopted by a particular candidate to a particular question should contact his / her Advising Examiner. 11 × 0·15¹ × 0·85¹⁰ = 0 ∙3248 … = 0 ∙325 [3 D.P.] OR 11 × 3/20 × (17/20) 10 = 0·3248 …",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1660,7 +1723,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-HL-paper-p054-i1",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p054-i1.png",
           "srcHash": "2ad3e8287e8a6f7fc42621712c4b79cf",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q10(a)(ii), typeset as the State Examinations Commission set it. It reads: 1 −P(none are O⁻) (ii) = 1 − (/100) 92 OR P(1 or 2 or 3 or 4 or 5 are O⁻) = (⁵ 1) (/100) 8 (/100) 92 + (⁵ 2) (/100) 8 (/100) 92 +(⁵ 3) (/100) 8 (/100) 92 + (⁵ 4) (/100) 8 (/100) 92 + (/100) 8 = 0·34091 … = 0·3409 [4 D.P.]",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q10(a)(ii), typeset as the State Examinations Commission set it. It reads: 1 −P(none are O⁻) (ii) = 1 − (/100) 92 = 0·34091 … = 0·3409 [4 D.P.] OR P(1 or 2 or 3 or 4 or 5 are O⁻) = (⁵ 1) (/100) 8 (/100) 92 + (⁵ 2) (/100) 8 (/100) 92 +(⁵ 3) (/100) 8 (/100) 92 + (⁵ 4) (/100) 8 (/100) 92 + (/100) 8 = 0·34091 … = 0·3409 [4 D.P.]",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1696,13 +1759,13 @@ export const CARDS: SecCard[] = [
     questionText: "A homeowner has a problem with the heating system in her house. A plumber has identified the problem as a faulty part. The homeowner knows that in 80% of cases a repair of the part will fix the problem and this repair will cost €70. If the repair does not work then a new part will have to be bought costing €150 and there will be an additional labour cost of €80 to replace the old part with the new. Find the expected value of the cost of fixing this faulty system",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-hl-p2-q10-b-r1", kind: "anyN", verbatim: "First line of solution 0·15 or 0·85 or 3/2⁰ or 17/20 or (11 1 )", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["First line of solution 0·15 or 0·85 or 3/2⁰ or 17/20 or (11 1 )","Two out of P(0), P(1), P(2) fully substituted"],"perOptionSteps":[3,7]} },
+    { id: "maths-2021-hl-p2-q10-b-r1", kind: "anyN", verbatim: "A correct calculation, for example, 0·8(70) or 300 or 230", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["A correct calculation, for example, 0·8(70) or 300 or 230","0·8(70) and 0·2(300) or 0·8(70) and 0·2(230)"],"perOptionSteps":[3,7]} },
     ],
     figure: {
-          "candId": "maths-2021-HL-paper-p034-i1",
-          "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p034-i1.png",
-          "srcHash": "25aebb99a3db22aa1277cd9d30cdf036",
-          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q10(b), typeset as the State Examinations Commission set it. It reads: P(0 or 1 or 2 left-footed) = 0·85¹¹ + (11 1 ) × 0·15¹ × 0·85¹⁰ + (11 2 ) × 0·15² × 0·85⁹ = 0∙1673 … + 0∙3248 … + 0∙2866 … = 0∙7787 … = 0∙78 [2 D.P.]",
+          "candId": "maths-2021-HL-paper-p055-i0",
+          "src": "/exam-figures/maths/markbank/maths-2021-HL-paper-p055-i0.png",
+          "srcHash": "fb42339bab9175ab7b9821749ede14a0",
+          "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q10(b), typeset as the State Examinations Commission set it. It reads: Interpretation 1: initial €70 charged regardless 0∙8(70) + 0∙2(70 + 150 + 80) = 0∙8(70) + 0∙2(300) = €116 Interpretation 2: initial €70 not charged if not successful 0∙8(70) + 0∙2(150 + 80) = 0∙8(70) + 0∙2(230) = €102",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1725,6 +1788,27 @@ export const CARDS: SecCard[] = [
           "srcHash": "e1be991ecf83579151ac27e07b5dc082",
           "alt": "The marking scheme's printed worked solution for 2021 HL Paper 2 Q10(c), typeset as the State Examinations Commission set it. It reads: Average pay-out per customer: 120 000(0∙0001) + 40 000(0∙002) = €92 Target profit per customer: 900 000/18 000 = €50 Required premium: 50 + 92 = €142 OR Average pay-out per customer: 120 000(0∙0001) + 40 000(0∙002) = €92 Total expected payout: €92 × 18 000 = €1 656 000 Total revenue required: €1 656 000 + €900 000 = €2 556 000 Required premium: €2 556 000 ÷ 18 000 = €142",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p1-q1-a", topicId: "maths-4-2", conceptId: "two-values-which-equation-has-exactly",
+    section: "B", questionRef: "2022 HL Paper 1 Q1(a)",
+    questionText: "(a) Find the two values of m∈ℤ for which the following equation in x has exactly one solution: 3x²−mx + 3 = 0",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "maths-2022-hl-p1-q1-a-r1", kind: "anyN", verbatim: "Work of merit, for example, identifies a or b or c Some correct differentiation Mentions perfect square Divides the given equation by 3", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit, for example, identifies a or b or c Some correct differentiation Mentions perfect square Divides the given equation by 3","Two steps correct One correct value of m found Finds x = m/6 and substitutes into function Finds correct factors or roots"],"perOptionSteps":[3,7]} },
+    ],
+    figure: {
+          "candId": "maths-2022-HL-paper-p006-i0",
+          "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p006-i0.png",
+          "srcHash": "2aeade6daa63675ae5a979134de43ef8",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q1(a), typeset as the State Examinations Commission set it. It reads: Detailed marking notes Note: The model solutions for each question are not intended to be exhaustive – there may be other correct solutions. Any Examiner unsure of the validity of the approach adopted by a particular candidate to a particular question should contact his / her Advising Examiner. Where “work of merit” is referred to in the Marking Notes, example(s) are given to demonstrate the standard of work that is ",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
   } as SecCard,
@@ -1759,7 +1843,7 @@ export const CARDS: SecCard[] = [
     questionText: "Find the remainder when 3x² + 2x + 5 is divided by x + 1",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
-    { id: "maths-2022-hl-p1-q1-c-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, in (i): substitutes in x = −1, or mentions x + 1; Substitutes into quadratic formula in (ii): some expansion of given product, or some correct division, or sets up long division correctly", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12, four parts for 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Full Credit -1.", openList: true, group: {"claimMax":4,"perOption":4,"options":["Work of merit, for example, in (i): substitutes in x = −1, or mentions x + 1; Substitutes into quadratic formula in (ii): some expansion of given product, or some correct division, or sets up long division correctly","(i) correct and work of merit in (ii) Substantial work of merit in (ii),","(i) correct and substantial work of merit in (ii) (ii) correct","(i) correct and correct long division in (ii), but answer (remainder) not identified"],"perOptionSteps":[4,4,4,3]} },
+    { id: "maths-2022-hl-p1-q1-c-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, in (i): substitutes in x = −1, or mentions x + 1; Substitutes into quadratic formula in (ii): some expansion of given product, or some correct division, or sets up long division correctly", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12, four parts for 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Full Credit -1.", openList: true, group: {"claimMax":4,"perOption":4,"options":["Work of merit, for example, in (i): substitutes in x = −1, or mentions x + 1; Substitutes into quadratic formula in (ii): some expansion of given product, or some correct division, or sets up long division correctly","(i) correct and work of merit in (ii) Substantial work of merit in (ii), for example, finds −x + 5 in long division method, or finds two of a, b, and c correctly","(i) correct and substantial work of merit in (ii) (ii) correct","(i) correct and correct long division in (ii), but answer (remainder) not identified"],"perOptionSteps":[4,4,4,3]} },
     ],
     figure: {
           "candId": "maths-2022-HL-paper-p008-i0",
@@ -1822,7 +1906,7 @@ export const CARDS: SecCard[] = [
     questionText: "The areas of the three regions K, L, and N give the following three equations (including the equation from part (b)(i)): 4a + 3b + 3c = 807 28a + 9b + 3c = 879 76a + 15b + 3c = 663 Solve these equations to find the values of a, b, and c",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
-    { id: "maths-2022-hl-p1-q2-b-ii-r1", kind: "anyN", verbatim: "2 steps correct", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12, four parts for 15. Marked in order: High Partial Credit.", openList: true, group: {"claimMax":1,"perOption":15,"options":["2 steps correct"]} },
+    { id: "maths-2022-hl-p1-q2-b-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, 4a = 807 −3b−3c", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12, four parts for 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, 4a = 807 −3b−3c","1 step correct","2 steps correct"],"perOptionSteps":[4,4,7]} },
     ],
     figure: {
           "candId": "maths-2022-HL-paper-p010-i0",
@@ -1954,7 +2038,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-HL-paper-p013-i1",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p013-i1.png",
           "srcHash": "16454bbc4429ae3f5ae8084fdcbd49ef",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q4(b)(i), typeset as the State Examinations Commission set it. It reads: [5e^k−13 = 13 −5e^(−k) ] 5y − 13 = 13 − 5/y 5y²−13y = 13y−5 5y²−26y + 5 = 0 T₂−T₁ = T₃−T₂ T₁ + T₃ = 2T₂ 5(e^k)²−26(e^k) + 5 = 0 5e^(2k)−26e^k + 5 = 0 5e^k + 5e^(−k) = 26 T₁ + T₃ = 2T₂ OR a = 5/y 5/y + d = 13 d = 13 − 5/y 13 + (13 − 5/y) = 5y 26y−5 = 5y² 5y²−26y + 5 = 0",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q4(b)(i), typeset as the State Examinations Commission set it. It reads: [5e^k−13 = 13 −5e^(−k) ] 5y − 13 = 13 − 5/y 5y²−13y = 13y−5 5y²−26y + 5 = 0 OR T₂−T₁ = T₃−T₂ T₁ + T₃ = 2T₂ 5(e^k)²−26(e^k) + 5 = 0 5e^(2k)−26e^k + 5 = 0 5e^k + 5e^(−k) = 26 T₁ + T₃ = 2T₂ OR a = 5/y 5/y + d = 13 d = 13 − 5/y 13 + (13 − 5/y) = 5y 26y−5 = 5y² 5y²−26y + 5 = 0",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2080,7 +2164,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-HL-paper-p018-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p018-i0.png",
           "srcHash": "7e360b636f12df3e587bc9e6891ff90c",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q6(b), typeset as the State Examinations Commission set it. It reads: A = l × w = 4x × x = 4x² When A = 225, 4x² = 225, so x² = 225/4 , i.e. x = 15/2 dA/d^x = 8x = 8 ( )/2 15 = 60 cm²/cm Accept without unit l = 4x so x = l/4 A = l × l/4 = 1/4 l² dl/d^x = 4 and dA/dl = 1/2 l dA/dx = dA/dl × dl/dx dA/dx = 1/2 l × 4 When A = 225, 1/4 l² = 225, so l = 30 dA/dx = 1/2 (30)(4) = 60 cm²/cm Accept without unit",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q6(b), typeset as the State Examinations Commission set it. It reads: A = l × w = 4x × x = 4x² When A = 225, 4x² = 225, so x² = 225/4 , i.e. x = 15/2 dA/d^x = 8x = 8 ( )/2 15 = 60 cm²/cm Accept without unit OR l = 4x so x = l/4 A = l × l/4 = 1/4 l² dl/d^x = 4 and dA/dl = 1/2 l dA/dx = dA/dl × dl/dx dA/dx = 1/2 l × 4 When A = 225, 1/4 l² = 225, so l = 30 dA/dx = 1/2 (30)(4) = 60 cm²/cm Accept without unit",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2311,7 +2395,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-HL-paper-p024-i1",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p024-i1.png",
           "srcHash": "094a904356e2a66c103355fa32d0afd9",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q8(e), typeset as the State Examinations Commission set it. It reads: 60 cos (/3 𝜋 t) = 72 − 110 = −38 cos (/3 𝜋 t) = − 38/60 Ref angle = cos^(−1)( 1st time: Quadrant 2 2nd time: Quadrant 3 𝜋/3 t₂ = 𝜋 + 0∙8849 … radians t = 3(𝜋+0∙8849… )/𝜋 = 3∙845 … = 3∙85 mins [2 DP] OR cos (/3 𝜋 t) = − 38/60 𝜋/3 t₁ = cos^−¹ (− 38/60) t₁ = 2.15494 … t = 6 −2.15494 t = 3.85 mins",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q8(e), typeset as the State Examinations Commission set it. It reads: 60 cos (/3 𝜋 t) = 72 − 110 = −38 cos (/3 𝜋 t) = − 38/60 Ref angle = cos^(−1)( 60) = 0∙8849 … radians 1st time: Quadrant 2 2nd time: Quadrant 3 𝜋/3 t₂ = 𝜋 + 0∙8849 … radians t = 3(𝜋+0∙8849… )/𝜋 = 3∙845 … = 3∙85 mins [2 DP] OR cos (/3 𝜋 t) = − 38/60 𝜋/3 t₁ = cos^−¹ (− 38/60) t₁ = 2.15494 … t = 6 −2.15494 t = 3.85 mins",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2489,7 +2573,7 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p1-q10-a", topicId: "maths-5-1", conceptId: "proportion-digits-recalled-correctly-after-hours",
+    id: "maths-2022-hl-p1-q10-a", topicId: "maths-5-2", conceptId: "proportion-digits-recalled-correctly-after-hours",
     section: "B", questionRef: "2022 HL Paper 1 Q10(a)",
     questionText: "Find the proportion of the digits recalled correctly after 3 hours, according to this model. (a) Give your answer correct to 2 decimal places",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -2510,7 +2594,7 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p1-q10-b", topicId: "maths-5-1", conceptId: "after-how-many-hours-would-exactly",
+    id: "maths-2022-hl-p1-q10-b", topicId: "maths-5-2", conceptId: "after-how-many-hours-would-exactly",
     section: "B", questionRef: "2022 HL Paper 1 Q10(b)",
     questionText: "After how many hours would exactly 55% of the digits be recalled correctly, according to (b) this model?Give your answer correct to 2 decimal places",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
@@ -2578,13 +2662,13 @@ export const CARDS: SecCard[] = [
     questionText: "Write c in terms of log₁₀A, log₁₀B, and log₁₀(t + 1)",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2022-hl-p1-q10-e-i-r1", kind: "anyN", verbatim: "Work of merit, for example, correct relevant equation involving logs (t + 1)^c = A/B Correct equation involving log₁₀A, log₁₀B, and log₁₀(t + 1) Correct equation involving logₜ₊₁A and logₜ₊₁B", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Work of merit, for example, correct relevant equation involving logs (t + 1)^c = A/B Correct equation involving log₁₀A, log₁₀B, and log₁₀(t + 1) Correct equation involving logₜ₊₁A and logₜ₊₁B"]} },
+    { id: "maths-2022-hl-p1-q10-e-i-r1", kind: "anyN", verbatim: "Work of merit, for example, correct relevant equation involving logs (t + 1)^c = A/B", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit, for example, correct relevant equation involving logs (t + 1)^c = A/B","Correct equation involving log₁₀A, log₁₀B, and log₁₀(t + 1) Correct equation involving logₜ₊₁A and logₜ₊₁B"],"perOptionSteps":[3,7]} },
     ],
     figure: {
           "candId": "maths-2022-HL-paper-p029-i1",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p029-i1.png",
           "srcHash": "443b66fe5c663a5821fc5f37a66cb7aa",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q10(e)(i), typeset as the State Examinations Commission set it. It reads: log₁₀A = log₁₀B(t + 1)^c log₁₀A = log₁₀B + log₁₀(t + 1)^c clog₁₀(t + 1) = log₁₀A−log₁₀B c = log₁₀ A−log₁₀ B/log₁₀(t + 1) (t + 1)^c = A/B logₜ₊₁ A/B = c c = logₜ₊₁A−logₜ₊₁B c = log₁₀ A/log₁₀(t + 1) − log₁₀ B/log₁₀(t + 1)",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q10(e)(i), typeset as the State Examinations Commission set it. It reads: log₁₀A = log₁₀B(t + 1)^c log₁₀A = log₁₀B + log₁₀(t + 1)^c clog₁₀(t + 1) = log₁₀A−log₁₀B c = log₁₀ A−log₁₀ B/log₁₀(t + 1) OR (t + 1)^c = A/B logₜ₊₁ A/B = c c = logₜ₊₁A−logₜ₊₁B c = log₁₀ A/log₁₀(t + 1) − log₁₀ B/log₁₀(t + 1)",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2594,7 +2678,7 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p1-q10-e-ii", topicId: "maths-5-1", conceptId: "student-got-guitar-exam-after-two",
+    id: "maths-2022-hl-p1-q10-e-ii", topicId: "maths-5-2", conceptId: "student-got-guitar-exam-after-two",
     section: "B", questionRef: "2022 HL Paper 1 Q10(e)(ii)",
     questionText: "A student got 80% on a guitar exam. After two years of not playing the guitar, the student got 47% on the same exam",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -2606,6 +2690,27 @@ export const CARDS: SecCard[] = [
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p029-i2.png",
           "srcHash": "fdba12569a1bd8026c44d1a5000965e4",
           "alt": "The marking scheme's printed worked solution for 2022 HL Paper 1 Q10(e)(ii), typeset as the State Examinations Commission set it. It reads: (e) (ii) c = log₁₀ 80−log₁₀ 47/log₁₀(24 + 1) = 0∙1652 … = 0∙165 [3 DP] OR 80 = 47(24 + 1)^c (24 + 1)^c = 80/47 ln 25^c = ln 80/47 c = ln⁸⁰/47 = 0∙1652 … = 0∙165 c = 47/lⁿ ²⁵ = 0∙1652 … = 0∙165 [3 DP] OR 80 = 47(24 + 1)^c (24 + 1)^c = 80/47 c = log₂₅ 80/4⁷ = 0∙1652 … = 0∙165 [3 DP]",
+          "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
+    id: "maths-2022-hl-p2-q1-a-i", topicId: "maths-1-2", conceptId: "fill-three-missing-values-complete-table",
+    section: "B", questionRef: "2022 HL Paper 2 Q1(a)(i)",
+    questionText: "Fill in the three missing values to complete the table above",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "maths-2022-hl-p2-q1-a-i-r1", kind: "anyN", verbatim: "1 value correct", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["1 value correct","2 values correct"],"perOptionSteps":[2,3]} },
+    ],
+    figure: {
+          "candId": "maths-2022-HL-paper-p034-i0",
+          "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p034-i0.png",
+          "srcHash": "99def7f533f34dd1c0dfc3922bcbd7fa",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q1(a)(i), typeset as the State Examinations Commission set it. It reads: Detailed marking notes Note: The model solutions for each question are not intended to be exhaustive – there may be other correct solutions. Any Examiner unsure of the validity of the approach adopted by a particular candidate to a particular question should contact his / her Advising Examiner. Where steps are listed in the Marking Notes, unless otherwise specified, it is to be taken that they can be independently co",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2646,8 +2751,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2022-HL-paper-p035-i1",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p035-i1.png",
-          "srcHash": "c4c27bf49bcd9c3aff0d4899a6b86811",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q1(b), typeset as the State Examinations Commission set it. It reads: (b) 1/7 × 1/7 or 7/7 × 1/7 × 1/7 = 1/4⁹ or 7 × (/7 1 × 1/7 × 7 × 7 ×",
+          "srcHash": "635e216f0c01380a1b39d805234bb786",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q1(b), typeset as the State Examinations Commission set it. It reads: (b) 1/7 × 1/7 or 7/7 × 1/7 × 1/7 = 1/4⁹ or 7 × (/7 1 × 1/7 ×",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2746,7 +2851,7 @@ export const CARDS: SecCard[] = [
     questionText: "Prove that tan(A−B) = tanA−tanB 1+tanAtanB",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2022-hl-p2-q4-a-i-r1", kind: "anyN", verbatim: "tan A + tan (−B)/1−tan A tan(−B) sin A cos B−cos A sin B/cos A cos B + sin A sin B", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: High Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["tan A + tan (−B)/1−tan A tan(−B) sin A cos B−cos A sin B/cos A cos B + sin A sin B"]} },
+    { id: "maths-2022-hl-p2-q4-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, indicates that A−B = A + (−B), or writes tan A = sin A/cos A", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit, for example, indicates that A−B = A + (−B), or writes tan A = sin A/cos A","tan A + tan (−B)/1−tan A tan(−B) sin A cos B−cos A sin B/cos A cos B + sin A sin B"],"perOptionSteps":[3,7]} },
     ],
     figure: {
           "candId": "maths-2022-HL-paper-p041-i0",
@@ -2773,7 +2878,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-HL-paper-p042-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p042-i0.png",
           "srcHash": "31b142d7d16898cd0b12169a5aa80e4a",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q4(a)(ii), typeset as the State Examinations Commission set it. It reads: tan 15 = tan(60 −45) tan60−tan45 = = √3−1/√3 + 1 √3−1/√3 + 1 OR tan 15 = tan(45 −30) tan45−tan30 = 1 + tan45tan30 = 1 − ¹/√3 = √3−1 = √3/¹ 1 1 + − = √3−1/√3 + 1 √3−1/√3 + 1 = 1 + ¹/√3 ¹/√3 = √3 + 1 OR tan 30 = 1/√3 1/√3 = 2 tan 15/1−tan² 15 1 − tan² 15 √3 = 2 1−tan²/√3 tan 15 15 tan² 1 − tan² 15 + 15 2 = 2/√3 tan √3 15 tan − 15 1 = 0 tan² 15 + −2√3 2 √3 tan 15 − 1 = 0/±√(−2√3) 2−4 × 1 × (−1) tan 15 = −2√3 ±√(−2√3) 2−",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q4(a)(ii), typeset as the State Examinations Commission set it. It reads: tan 15 = tan(60 −45) tan60−tan45 = 1 + tan60tan45 = √3−1/√3 + 1 √3−1/√3 + 1 OR tan 15 = tan(45 −30) tan45−tan30 = 1 + tan45tan30 = 1 − ¹/√3 = √3−1 = √3/¹ 1 1 + − = √3−1/√3 + 1 √3−1/√3 + 1 = 1 + ¹/√3 ¹/√3 = √3 + 1 OR tan 30 = 1/√3 1/√3 = 2 tan 15/1−tan² 15 1 − tan² 15 √3 = 2 1−tan²/√3 tan 15 15 tan² 1 − tan² 15 + 15 2 = 2/√3 tan √3 15 tan − 15 1 = 0 tan² 15 + −2√3 2 √3 tan 15 − 1 = 0/±√(−2√3) 2−4 × 1 × (−1) tan 15 = −",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2814,8 +2919,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2022-HL-paper-p044-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p044-i0.png",
-          "srcHash": "5c164811b0f50b64f41899c385e77800",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q5(a)(ii), typeset as the State Examinations Commission set it. It reads: (a) (i) p̂ = 135/4⁰⁰ = 0∙3375 (ii) 0∙3375 ± 1/√400 1/√400 = 0∙3375 ± 0∙05",
+          "srcHash": "557d2b5d3fa68cb10fdd846a367b3c49",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q5(a)(ii), typeset as the State Examinations Commission set it. It reads: (a) (i) p̂ = 135/4⁰⁰ = 0∙3375 (ii) 0∙3375 ± 1/√400 1/√400 = 0∙3375 ± 0∙05 = [0∙2875, 0∙3875]",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3269,15 +3374,15 @@ export const CARDS: SecCard[] = [
     id: "maths-2022-hl-p2-q10-a-i", topicId: "maths-3-3", conceptId: "percentage-runners-these-heats-who-took",
     section: "B", questionRef: "2022 HL Paper 2 Q10(a)(i)",
     questionText: "Find the percentage of runners in these heats who took more than 240 seconds to run (i) the 1500 m",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2022-hl-p2-q10-a-i-r1", kind: "anyN", verbatim: "1 value correct", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["1 value correct","2 values correct"],"perOptionSteps":[2,3]} },
+    { id: "maths-2022-hl-p2-q10-a-i-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct substitution into relevant formula, relevant diagram drawn, indicates 𝜇 or 𝜎", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, some correct substitution into relevant formula, relevant diagram drawn, indicates 𝜇 or 𝜎","Finds z-score ( )/12 240−225","Finds z-score and further work, for example, finds 0∙8944, or indicates 1 −P(x < 240) or similar"],"perOptionSteps":[3,2,5]} },
     ],
     figure: {
-          "candId": "maths-2022-HL-paper-p034-i0",
-          "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p034-i0.png",
-          "srcHash": "99def7f533f34dd1c0dfc3922bcbd7fa",
-          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q10(a)(i), typeset as the State Examinations Commission set it. It reads: Detailed marking notes Note: The model solutions for each question are not intended to be exhaustive – there may be other correct solutions. Any Examiner unsure of the validity of the approach adopted by a particular candidate to a particular question should contact his / her Advising Examiner. Where steps are listed in the Marking Notes, unless otherwise specified, it is to be taken that they can be independently co",
+          "candId": "maths-2022-HL-paper-p056-i0",
+          "src": "/exam-figures/maths/markbank/maths-2022-HL-paper-p056-i0.png",
+          "srcHash": "2cd29dd55372320a4f8ef0d65b68c62d",
+          "alt": "The marking scheme's printed worked solution for 2022 HL Paper 2 Q10(a)(i), typeset as the State Examinations Commission set it. It reads: (a) (i) z = 240−225/12 = 15/1² = 1∙25 P(x > 240) = P(z > 1∙25) = 1 −P(z < 1∙25) = 1 −0∙8944 = 0∙1056 Answer: 10∙56%",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3392,6 +3497,27 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-q1-a", topicId: "maths-3-1", conceptId: "two-values-which",
+    section: "B", questionRef: "2023 HL Paper 1 Q1(a)",
+    questionText: "Find the two values of m∈ℝ for which |5 + 3m| = 11",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    rows: [
+    { id: "maths-2023-hl-p1-q1-a-r1", kind: "anyN", verbatim: "1 linear equation. One correct value of m found without work. Attempts at trial and improvement.", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12, four parts for 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":4,"perOption":4,"options":["1 linear equation. One correct value of m found without work. Attempts at trial and improvement.","One value of m found with work.","One value of m correctly found and work of merit in finding the second value. Method 2 Note: If quadratic does not have an m term award Mid Partial Credit at most","Indication of squaring","relevant quadratic in m expanded (Line 2 of the solution) Quadratic is missing the m term, otherwise correct","quadratic factorised quadratic formula fully substituted"],"perOptionSteps":[4,4,4,3]} },
+    ],
+    figure: {
+          "candId": "maths-2023-HL-paper-p006-i0",
+          "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p006-i0.png",
+          "srcHash": "788f3a2b96105f0dade44f5cd4e81779",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q1(a), typeset as the State Examinations Commission set it. It reads: Detailed marking notes Note: The model solutions for each question are not intended to be exhaustive – there may be other correct solutions. Any Examiner unsure of the validity of the approach adopted by a particular candidate to a particular question should contact his / her Advising Examiner. Method 1: 5 + 3m = 11 5 + 3m = −11 3m = 6 3m = −16 m = 2 m = − 16/3 OR Method 2: (5 + 3m)² = 11² 25 + 30m + 9m² = 121 9m² + ",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q1-b", topicId: "maths-4-1", conceptId: "real-numbers-express-terms",
     section: "B", questionRef: "2023 HL Paper 1 Q1(b)",
     questionText: "For the real numbers h, j, and k: 1 h = k j+ k Express k in terms of h and j",
@@ -3418,7 +3544,7 @@ export const CARDS: SecCard[] = [
     questionText: "x²−px + 1 is a factor of x³−2x−3r, where p, r∈ℝ and p < 0. Find the value of p and the value of r. p= ____________ and r= ____________",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2023-hl-p1-q1-c-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct division, or sets up long 2 steps correct", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Marked in order: Low Partial Credit; High Partial Credit; High Partial Credit; Low Partial Credit; Mid Partial Credit.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Work of merit, for example, some correct division, or sets up long 2 steps correct","3 steps correct Method 2 4 steps: 1. Equation set up 2. Expansion of the product (Allow with 3 or more terms correct) 3. Value of p found 4. Value of r found Work of merit, for example, 2 steps correct","3 steps correct. Method 3 1. Grid set up 2. Grid completed (Allow with 3 or more terms correct) 3. Value of p found 4. Value of r found","Work of merit, for example, mentions linear factor.","2 steps correct."],"perOptionSteps":[2,1,1,1]} },
+    { id: "maths-2023-hl-p1-q1-c-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct division, or sets up long division.", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Low Partial Credit; Mid Partial Credit; High Partial Credit; Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Work of merit, for example, some correct division, or sets up long division.","2 steps correct","3 steps correct Method 2 4 steps: 1. Equation set up 2. Expansion of the product (Allow with 3 or more terms correct) 3. Value of p found 4. Value of r found","Work of merit, for example, mentions linear factor","2 steps correct","3 steps correct. Method 3 1. Grid set up 2. Grid completed (Allow with 3 or more terms correct) 3. Value of p found 4. Value of r found","Work of merit, for example, mentions linear factor.","2 steps correct.","3 steps correct."],"perOptionSteps":[2,1,1,1]} },
     ],
     figure: {
           "candId": "maths-2023-HL-paper-p008-i0",
@@ -3445,7 +3571,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-HL-paper-p009-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p009-i0.png",
           "srcHash": "13768e6a4696b533b69a53fcded82528",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q2(a), typeset as the State Examinations Commission set it. It reads: f′(x) = 2x + b f′(3) = 2(3) + b = 0 b = −6 f(3) = (3)²−6(3) + c = −1 9 −18 + c = −1 c = 8 OR x² + bx + c = (x + b/2) 2 − b²/4 + c − b/2 = 3 so b = −6 − b²/4 + c = −1 so c = 8 f(x) = (x−3)²−1 = x²−6x + 8",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q2(a), typeset as the State Examinations Commission set it. It reads: f′(x) = 2x + b f′(3) = 2(3) + b = 0 b = −6 f(3) = (3)²−6(3) + c = −1 9 −18 + c = −1 c = 8 OR x² + bx + c = (x + b/2) 2 − b²/4 + c − b/2 = 3 so b = −6 − b²/4 + c = −1 so c = 8 OR f(x) = (x−3)²−1 = x²−6x + 8",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3544,7 +3670,7 @@ export const CARDS: SecCard[] = [
     questionText: "The complex number z₁ = 1 + i is a root of the equation z² + (3 −2i)z + p = 0",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2023-hl-p1-q4-a-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct substitution or some correct multiplication", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Low Partial Credit; High Partial Credit; Low Partial Credit; High Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit, for example, some correct substitution or some correct multiplication","Fully correct substitution and multiplication Method 2","z²−(sum)z + product States p is the product of the roots Sum of the roots = −3 + 2i","Finds 2nd root States sum of the roots = 3 −2i, but finishes correctly Method 3","Some correct substitution in the quadratic formula","Formula fully substituted and 1 + i substituted for z Formula fully substituted and set equal to 1 + i Method 4 Sets up long division but divisor must be of the form z−a + bi,","First cycle of long division done correctly."],"perOptionSteps":[2,1,2]} },
+    { id: "maths-2023-hl-p1-q4-a-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct substitution or some correct multiplication", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Low Partial Credit; High Partial Credit; Low Partial Credit; High Partial Credit; Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit, for example, some correct substitution or some correct multiplication","Fully correct substitution and multiplication Method 2","z²−(sum)z + product States p is the product of the roots Sum of the roots = −3 + 2i","Finds 2nd root States sum of the roots = 3 −2i, but finishes correctly Method 3","Some correct substitution in the quadratic formula","Formula fully substituted and 1 + i substituted for z Formula fully substituted and set equal to 1 + i Method 4","Sets up long division but divisor must be of the form z−a + bi, where a = 1 and b = −1 (Accept b = 1 here)","First cycle of long division done correctly."],"perOptionSteps":[2,1,2]} },
     ],
     figure: {
           "candId": "maths-2023-HL-paper-p013-i0",
@@ -3565,7 +3691,7 @@ export const CARDS: SecCard[] = [
     questionText: "Use De Moivre’s Theorem to find the values of w for which w² = −1 + √3i",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
-    { id: "maths-2023-hl-p1-q4-b-r1", kind: "anyN", verbatim: "2 steps correct", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12, four parts for 15. Marked in order: Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["2 steps correct","3 steps correct Full Credit –1 Roots found correctly, but one or both in polar form"],"perOptionSteps":[4,11]} },
+    { id: "maths-2023-hl-p1-q4-b-r1", kind: "anyN", verbatim: "Work of merit, for example, plots −1 + √3i Work of merit towards finding r or 𝜃 w = (−1 + √3i) 1/2", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12, four parts for 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, plots −1 + √3i Work of merit towards finding r or 𝜃 w = (−1 + √3i) 1/2","2 steps correct","3 steps correct Full Credit –1 Roots found correctly, but one or both in polar form"],"perOptionSteps":[4,4,7]} },
     ],
     figure: {
           "candId": "maths-2023-HL-paper-p014-i0",
@@ -3712,7 +3838,7 @@ export const CARDS: SecCard[] = [
     questionText: "Find the area of the shaded region in the diagram below (not to scale), the region between the graphs of f(x) = x + 4 and g(x) = x²−2, from x = −1 to x = 2",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
-    { id: "maths-2023-hl-p1-q6-a-ii-r1", kind: "anyN", verbatim: "Integration indicated Some correct integration Sets up integration of original function(s) Some work of merit towards using the Trapezoidal Rule Work of merit towards finding x intercept of g(x) f(−1) or f(2) found", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12, four parts for 15. Marked in order: Low Partial Credit; Mid Partial Credit; Full Credit -1.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Integration indicated Some correct integration Sets up integration of original function(s) Some work of merit towards using the Trapezoidal Rule Work of merit towards finding x intercept of g(x) f(−1) or f(2) found","2 steps correct 1 relevant area calculated correctly Steps 1 and 2 correct and one relevant area calculated 3 steps correct","Area = −16.5"],"perOptionSteps":[4,4,7]} },
+    { id: "maths-2023-hl-p1-q6-a-ii-r1", kind: "anyN", verbatim: "Integration indicated Some correct integration Sets up integration of original function(s) Some work of merit towards finding an approximate area using the Trapezoidal Rule Work of merit towards finding x intercept of g(x) f(−1) or f(2) found", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12, four parts for 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Full Credit -1.", openList: true, group: {"claimMax":4,"perOption":4,"options":["Integration indicated Some correct integration Sets up integration of original function(s) Some work of merit towards finding an approximate area using the Trapezoidal Rule Work of merit towards finding x intercept of g(x) f(−1) or f(2) found","2 steps correct 1 relevant area calculated","2 relevant areas calculated correctly Steps 1 and 2 correct and one relevant area calculated 3 steps correct","Area = −16.5"],"perOptionSteps":[4,4,4,3]} },
     ],
     figure: {
           "candId": "maths-2023-HL-paper-p019-i0",
@@ -3803,6 +3929,48 @@ export const CARDS: SecCard[] = [
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p023-i0.png",
           "srcHash": "fff3e9da624c2cdfaaa68c79ea0b25cf",
           "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q7(e), typeset as the State Examinations Commission set it. It reads: Answer: B Justification: v′(1) > 0: Function is increasing so the slope is positive. v′′(1) < 0: Rate of increase is slowing. OR The slope is decreasing. Mathematics – Higher Level",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-q7-f", topicId: "maths-5-2", conceptId: "work-out-minimum-time-minutes-driver",
+    section: "B", questionRef: "2023 HL Paper 1 Q7(f)",
+    questionText: "Work out the minimum time, in minutes, that a driver could get from A to B, while not driving above 100 km/hour",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p1-q7-f-r1", kind: "anyN", verbatim: "(f) Time = Distance/Speed = 10/1⁰⁰ = 6 [minutes]", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":1,"perOption":5,"options":["(f) Time = Distance/Speed = 10/1⁰⁰ = 6 [minutes]"]} },
+    ],
+    figure: {
+          "candId": "maths-2023-HL-paper-p024-i0",
+          "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p024-i0.png",
+          "srcHash": "dd7f68d1a4fc1360db8c943af37d3cfa",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q7(f), typeset as the State Examinations Commission set it. It reads: (f) Time = Distance/Speed = 10/1⁰⁰ = 6 [minutes]",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-q7-g", topicId: "maths-3-3", conceptId: "rohan-drives-passes-point-driving-constant",
+    section: "B", questionRef: "2023 HL Paper 1 Q7(g)",
+    questionText: "Rohan drives from A to B. He passes the point A driving at a constant speed of 120 km/hour. After 2 minutes driving at this speed, he starts to decelerate (reduce his speed) at a constant rate, until he reaches the point B. Overall, his average speed in driving from A to B is 100 km/hour. Work out Rohan’s deceleration. Give your answer in km/hour per minute. 18",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p1-q7-g-r1", kind: "anyN", verbatim: "Some correct substitution in relation to distance for first 2 minutes or time / distance for remaining part Indicates integration", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Full Credit -1.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Some correct substitution in relation to distance for first 2 minutes or time / distance for remaining part Indicates integration","Identifies 4 km, 6 km or 4 minutes.","Calculates 60 km/hr after the extra 4 minutes or 90km/hr after extra 2 minutes.","Answer in km/hr/hr"],"perOptionSteps":[2,1,1,1]} },
+    ],
+    figure: {
+          "candId": "maths-2023-HL-paper-p024-i1",
+          "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p024-i1.png",
+          "srcHash": "f8235f045f74cf7e2cdff35b91555d45",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q7(g), typeset as the State Examinations Commission set it. It reads: (g) 120 km/hr for 2 minutes:/2 Distance = 120 × 2/6⁰ = 4km 10 −4 = 6 km remaining to get to B Average Speed: 10/total time = 100 total time = 1/10 hrs = 6 minutes ⇒4 minutes remaining to get to B Average speed for last 6 km:/1 Avg Speed = 6 ÷ (/1⁵) 1 = 90 km/hr 120 + v/2 = 90, where v is the speed at B v = 60 km/hr Decelerates from 120 to 60 over 4 minutes. So, deceleration = 15 km/hr per minute OR Average speed for ",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3938,6 +4106,48 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-q9-c-i", topicId: "maths-5-2", conceptId: "tangent-curve-drawn-point",
+    section: "B", questionRef: "2023 HL Paper 1 Q9(c)(i)",
+    questionText: "A tangent to the curve y= 12 x is drawn at the point (p, 12 p) , where p∈ℝ and p> 0",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p1-q9-c-i-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct differentiation, some correct substitution into equation of line formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":4,"perOption":3,"options":["Work of merit, for example, some correct differentiation, some correct substitution into equation of line formula","2 steps correct","3 steps correct Method 3 4 steps: 1. From the given equation writes down the slope of the tangent 2. Finds dy/dx 3. Substitutes x = p in dy/dx 4. Verifies that the point (p, 12 )/p is on the given equation","Work of merit, for example, some correct differentiation, some correct substitution into the given equation","2 steps correct.","3 steps correct."],"perOptionSteps":[3,2,3,2]} },
+    ],
+    figure: {
+          "candId": "maths-2023-HL-paper-p028-i0",
+          "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p028-i0.png",
+          "srcHash": "c988a078e385a39b2a1fd969d06b925a",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q9(c)(i), typeset as the State Examinations Commission set it. It reads: (c)(i) Method 1 Derivative: y = 12/x dy/d^x = − 12/x² dx(x = p) = − p² Equation at point (p, 12/p ): y − 12/p = − 12/p² (x − p) y = − 12/p² x + 24/p OR Method 2 Derivative: y = 12/x dy/d^x = − 12/x² dy/d^x (x = p) = − 12/p² Equation at point (p, 12/p ): Line is of the form y = − 12/p² x + c 12/p = − 12/p² (p) + c [/p 12 = − 12/p + c] c = 24/p OR Method 3 From the given equation the slope is − 12/p² dy/d^x = − 12/x² d",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p1-q9-c-ii", topicId: "maths-2-3", conceptId: "area-triangle-formed-axis-axis-tangent",
+    section: "B", questionRef: "2023 HL Paper 1 Q9(c)(ii)",
+    questionText: "The area of the triangle formed by the x-axis, the y-axis, and the tangent (ii) y = − 12/p² x + 24/p is always k square units",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p1-q9-c-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, lets x = 0 or y = 0", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Work of merit, for example, lets x = 0 or y = 0","2 steps correct","3 steps correct Method 2 1. Finds x intercept 2. Integrates the function 3. Substitutes limits 4. Finds k","Work of merit, for example, lets y = 0 Indicates integration","2 steps correct","3 steps correct"],"perOptionSteps":[2,1,1,1]} },
+    ],
+    figure: {
+          "candId": "maths-2023-HL-paper-p029-i0",
+          "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p029-i0.png",
+          "srcHash": "516fc85ab056706ad3f4e9edf67272c0",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 1 Q9(c)(ii), typeset as the State Examinations Commission set it. It reads: y-intercept: (c)(ii) y = − 12/p² (0) + 24/p y = 24/p (0, )/p 24 height = 24/p x-intercept: 0 = − 12/p² x + 24/p 12/p² x = 24/p 12/p x = 24 x = 2p (2p, 0) base = 2p Area = 1/2 (2p) ( )/p 24 = 24 units² OR x intercept (2p, 0) ∫ 0 2p (− 12/p² x + 24/p ) dx = (− 12x²/2p² + 24x/p ) 0 2p = −24 + 48 = 24 [units²] Mathematics – Higher Level",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p1-q10-b", topicId: "maths-3-4", conceptId: "total-area-three-rectangles-leaving-certificate",
     section: "B", questionRef: "2023 HL Paper 1 Q10(b)",
     questionText: "Show that the total area of the three rectangles in T₃ is (b) 26",
@@ -4022,6 +4232,27 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-q1-a", topicId: "maths-1-2", conceptId: "fiona-plays-game-number-times",
+    section: "B", questionRef: "2023 HL Paper 2 Q1(a)",
+    questionText: "Fiona plays the game a number of times",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p2-q1-a-r1", kind: "anyN", verbatim: "Any correct relevant probability stated", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit -1.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Any correct relevant probability stated","P(€6) = 5/1² and P(€9) = 3/1² and some multiplication indicated 5/12 × 3/12 × 5/12 5/12 × 3/11 × 5/1⁰ and continues","Incorrect rounding or no rounding"],"perOptionSteps":[4,3,3]} },
+    ],
+    figure: {
+          "candId": "maths-2023-HL-paper-p038-i0",
+          "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p038-i0.png",
+          "srcHash": "3c76a5beefde96cdc176d9bc8a3a2a74",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q1(a), typeset as the State Examinations Commission set it. It reads: Detailed marking notes Note: The model solutions for each question are not intended to be exhaustive – there may be other correct solutions. Any Examiner unsure of the validity of the approach adopted by a particular candidate to a particular question should contact his / her Advising Examiner. (a) P(€6, €9, €6) = [/12 5 × 3/12 × 5/12] = 75/1728 = 25/5⁷⁶ = 0 · 04340…. = 0 · 0434 [4 d.p.]",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
     id: "maths-2023-hl-p2-q1-c", topicId: "maths-1-2", conceptId: "olga-plays-game-times-probability-olga",
     section: "B", questionRef: "2023 HL Paper 2 Q1(c)",
     questionText: "Olga plays the game 2 times. Find the probability that Olga gets less than €16 in total from playing the game. Give your answer correct to 4 decimal places. 5",
@@ -4055,6 +4286,27 @@ export const CARDS: SecCard[] = [
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p040-i0.png",
           "srcHash": "03912c2df381add927f2ba18cb45f93f",
           "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q2(a), typeset as the State Examinations Commission set it. It reads: cos(A−B) = cos Acos B + sin Asin B Replace A with 90 −A: cos(90 −A−B) = cos(90 −A) cos B + sin(90 −A) sin B ….as sin A = cos(90 −A) cos(90 −(A + B)) = sin Acos B + cos Asin B sin(A + B) = sin Acos B + cos Asin B sin A = cos(90 −A) sin(A + B) = cos(90 −(A + B)) = cos((90 −A) −B) = cos(90 −A) cos B + sin(90 −A) sin B … by cos (A−B) formula = sin Acos B + cos Asin B Scale 10C (0, 4, 7, 10) Low Partial Credit: • Work of ",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-q2-c", topicId: "maths-2-3", conceptId: "all-solutions-equation-360-sin-sin",
+    section: "B", questionRef: "2023 HL Paper 2 Q2(c)",
+    questionText: "Find all solutions of the following equation in t, for 0° ≤t ≤ 360°: (c) sin t = sin(2t) 7",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "maths-2023-hl-p2-q2-c-r1", kind: "anyN", verbatim: "Work of merit, for example, effort to expand sin2t or some correct transposition", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":4,"perOption":3,"options":["Work of merit, for example, effort to expand sin2t or some correct transposition","2 steps correct","3 steps correct Full Credit –1: Apply a * for each solution omitted from Step 3 or Step 4 Method 2","One correct solution","3 correct values verified","4 correct values verified All values correct but no work shown"],"perOptionSteps":[3,2,3,2]} },
+    ],
+    figure: {
+          "candId": "maths-2023-HL-paper-p041-i0",
+          "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p041-i0.png",
+          "srcHash": "9ad0cfa13a14f65d9bd155cfbeb87221",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q2(c), typeset as the State Examinations Commission set it. It reads: Method 1 sin t[1 − 2 cos t] = 0 sin t = 0 and 1 −2 cos t = 0 sin t = 0 when t = 0°, 180° and 360° 1 −2 cos t = 0 cos t = 1/2 cos t = 1/2 when t = 60° and t = 300° t = 0°, 60°, 180°, 300° and 360° OR sin2t−sint = 0 2 sint 2cos3t 2 = 0 cos 3t/2 = 0 t = 60°, 180° and 300° sin t/2 = 0 t = 0° and 360° OR Method 2 Trial & Improvement: t = 0 sin 0 = sin(2(0)) 0 = 0 t = 60 sin/√3 60 = /√3 sin(2(60)) √3/2 = √3/2 t = 180 sin 1",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4106,7 +4358,7 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p2-q3-b-ii", topicId: "maths-2-3", conceptId: "perpendicular-bisector-value-value",
+    id: "maths-2023-hl-p2-q3-b-ii", topicId: "maths-2-2", conceptId: "perpendicular-bisector-value-value",
     section: "B", questionRef: "2023 HL Paper 2 Q3(b)(ii)",
     questionText: "The perpendicular bisector of [AB] is: 3x+ 2y−14 = 0 Find the value of l and the value of k",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
@@ -4552,7 +4804,7 @@ export const CARDS: SecCard[] = [
     questionText: "In the diagram|∠ADC| = |∠ABC| = 90°",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-hl-p2-q9-b-ii-r1", kind: "anyN", verbatim: "Correctly finds relevant sides and/or angles to allow for area to be found, for example, |CD|, or 𝛼 and |AC|", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Mid Partial Credit; High Partial Credit; Full Credit -1.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Correctly finds relevant sides and/or angles to allow for area to be found, for example, |CD|, or 𝛼 and |AC|","Correctly filled formula for area of triangle ACD","No rounding or incorrect rounding No unit or incorrect unit"],"perOptionSteps":[3,2,5]} },
+    { id: "maths-2023-hl-p2-q9-b-ii-r1", kind: "anyN", verbatim: "Work of merit in finding a relevant side or angle", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Full Credit -1.", openList: true, group: {"claimMax":4,"perOption":3,"options":["Work of merit in finding a relevant side or angle","Correctly finds relevant sides and/or angles to allow for area to be found, for example, |CD|, or 𝛼 and |AC|","Correctly filled formula for area of triangle ACD","No rounding or incorrect rounding No unit or incorrect unit"],"perOptionSteps":[3,2,3,2]} },
     ],
     figure: {
           "candId": "maths-2023-HL-paper-p060-i1",
@@ -4568,18 +4820,18 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p2-q10-a", topicId: "maths-3-4", conceptId: "amus-has-basin-shape-inverted-right",
-    section: "B", questionRef: "2023 HL Paper 2 Q10(a)",
-    questionText: "Séamus has a basin in the shape of an inverted right circular cone with the lower part removed, as shown in the diagram on the right below (diagrams not to scale)",
+    id: "maths-2023-hl-p2-q9-c-ii", topicId: "maths-3-1", conceptId: "point-lies-axis",
+    section: "B", questionRef: "2023 HL Paper 2 Q9(c)(ii)",
+    questionText: "The point P lies on the x-axis",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-hl-p2-q10-a-r1", kind: "anyN", verbatim: "Any correct relevant probability stated", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit -1.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Any correct relevant probability stated","P(€6) = 5/1² and P(€9) = 3/1² and some multiplication indicated 5/12 × 3/12 × 5/12 5/12 × 3/11 × 5/1⁰ and continues","Incorrect rounding or no rounding"],"perOptionSteps":[4,3,3]} },
+    { id: "maths-2023-hl-p2-q9-c-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, any relevant work on the diagram", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, any relevant work on the diagram","Two steps correct"],"perOptionSteps":[4,6]} },
     ],
     figure: {
-          "candId": "maths-2023-HL-paper-p038-i0",
-          "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p038-i0.png",
-          "srcHash": "3c76a5beefde96cdc176d9bc8a3a2a74",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q10(a), typeset as the State Examinations Commission set it. It reads: Detailed marking notes Note: The model solutions for each question are not intended to be exhaustive – there may be other correct solutions. Any Examiner unsure of the validity of the approach adopted by a particular candidate to a particular question should contact his / her Advising Examiner. (a) P(€6, €9, €6) = [/12 5 × 3/12 × 5/12] = 75/1728 = 25/5⁷⁶ = 0 · 04340…. = 0 · 0434 [4 d.p.]",
+          "candId": "maths-2023-HL-paper-p062-i0",
+          "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p062-i0.png",
+          "srcHash": "de4e3f746ce390cb1c2327f50ad329ed",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q9(c)(ii), typeset as the State Examinations Commission set it.",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4600,7 +4852,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-HL-paper-p063-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p063-i0.png",
           "srcHash": "89edbcb34477a500b44d10a5f440f2ba",
-          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q10(a)(i), typeset as the State Examinations Commission set it. It reads: (a)(i) x/12 = x + 10/1⁵ … or equivalent 15x = 12x + 120 3x = 120 x = 40 [cm] 40/12 = 50/1⁵ … or equivalent 600 = 600",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q10(a)(i), typeset as the State Examinations Commission set it. It reads: (a)(i) x/12 = x + 10/1⁵ … or equivalent 15x = 12x + 120 3x = 120 x = 40 [cm] OR 40/12 = 50/1⁵ … or equivalent 600 = 600",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4644,6 +4896,90 @@ export const CARDS: SecCard[] = [
           "srcHash": "cda5b798d62e976e9daf00297c936344",
           "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q10(a)(iii), typeset as the State Examinations Commission set it. It reads: (a)(iii) Angle: 𝜃/3⁶⁰ 2𝜋(40) = 2𝜋(12) 𝜃= 108° Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-q10-b-i", topicId: "maths-3-4", conceptId: "work-out-how-many-such-codes",
+    section: "B", questionRef: "2023 HL Paper 2 Q10(b)(i)",
+    questionText: "Work out how many such codes are possible",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p2-q10-b-i-r1", kind: "anyN", verbatim: "9 × 9 × 9 × 9 evaluated 10 × 9 × 8 × 7 evaluated", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. Marked in order: Full Credit-1.", openList: true, group: {"claimMax":1,"perOption":5,"options":["9 × 9 × 9 × 9 evaluated 10 × 9 × 8 × 7 evaluated"]} },
+    ],
+    figure: {
+          "candId": "maths-2023-HL-paper-p065-i0",
+          "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p065-i0.png",
+          "srcHash": "bee51e4da72c0fa10083ecf67cb97d85",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q10(b)(i), typeset as the State Examinations Commission set it. It reads: 9 × 8 × 7 × 6 = 3024 (b)(i) OR 9C₄ × 4! = 3024",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
+    id: "maths-2023-hl-p2-q10-b-ii", topicId: "maths-3-4", conceptId: "work-out-how-many-these-codes",
+    section: "B", questionRef: "2023 HL Paper 2 Q10(b)(ii)",
+    questionText: "Work out how many of these codes contain the digit 2",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "maths-2023-hl-p2-q10-b-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, lists some correct codes, brings answer from b(i) down to b(ii)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit, for example, lists some correct codes, brings answer from b(i) down to b(ii)","1 × 8 × 7 × 6 or 1/9 × 3024 1680","Work of merit in listing some codes","All 7 combinations listed One correct combination and mentions 3! or 6 possible arrangements"],"perOptionSteps":[2,1,2]} },
+    ],
+    figure: {
+          "candId": "maths-2023-HL-paper-p065-i1",
+          "src": "/exam-figures/maths/markbank/maths-2023-HL-paper-p065-i1.png",
+          "srcHash": "09e8b77569b897ab894d0a5d511b6116",
+          "alt": "The marking scheme's printed worked solution for 2023 HL Paper 2 Q10(b)(ii), typeset as the State Examinations Commission set it. It reads: 4(1 × 8 × 7 × 6) = 1344 (b)(ii) OR No 2: 8 × 7 × 6 × 5 = 1680 3024 −1680 = 1344 OR Of the 3024 codes: 1/9 of them begin with a ‘2’, 1/9 of them have a ‘2’ in the 2ⁿ^d position… Therefore, number of codes that contain the digit 2 = 1/9 × 3024 × 4 1 + 2 + 3 = 6 1 + 2 + 4 = 7 1 + 2 + 5 = 8 1 + 2 + 6 = 9 1 + 3 + 4 = 8 1 + 3 + 5 = 9 2 + 3 + 4 = 9 7 possible combinations with 6 possible arrangements of each So 7 × 6 or 7 ×",
+          "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-q1-a", topicId: "maths-4-2", conceptId: "solve-equation",
+    section: "B", questionRef: "2024 HL Paper 1 Q1(a)",
+    questionText: "Solve the following equation for n∈ℕ : n−3 = √3n + 1",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p1-q1-a-r1", kind: "anyN", verbatim: "Work of merit, for example, indication of squaring Trials values of n", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Full Credit -1.", openList: true, group: {"claimMax":4,"perOption":3,"options":["Work of merit, for example, indication of squaring Trials values of n","Fully correct quadratic (2nd line in solution)","Quadratic factorised Fully correct substitution into the quadratic formula Verifies n = 8 is a solution","Apply a * for incorrect solution(s) not eliminated."],"perOptionSteps":[3,2,2,3]} },
+    ],
+    figure: {
+          "candId": "maths-2024-HL-paper-p005-i0",
+          "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p005-i0.png",
+          "srcHash": "341d55e35a9e4b42bf44de9a4292c5a1",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q1(a), typeset as the State Examinations Commission set it. It reads: Detailed marking notes Note: The model solutions for each question are not intended to be exhaustive – there may be other correct solutions. Any Examiner unsure of the validity of the approach adopted by a particular candidate to a particular question should contact his / her Advising Examiner. (n−3)² = (√3n + 1) n² −6n + 9 = 3n + 1 n² −9n + 8 = 0 (n−8)(n−1) = 0 n = 8, n = 1 Answer: n = 8[as n = 1 gives −2 = √4 ]",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p1-q1-b", topicId: "maths-4-1", conceptId: "write-expression-single-fraction-terms-2tt",
+    section: "B", questionRef: "2024 HL Paper 1 Q1(b)",
+    questionText: "Write the following expression as a single fraction in terms of t : 4/2tt + 4",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-hl-p1-q1-b-r1", kind: "anyN", verbatim: "Work of merit, for example, identifies the numerator or the common denominator", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit -1.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, identifies the numerator or the common denominator","4(12tt)−7(2tt + 1)/(2tt + 1)(12tt) 4(12tt)/(2tt + 1)(12tt) − 7(2tt + 1)/(2tt + 1)(12tt)","Numerator simplified correctly with an incorrect common denominator, where the correct common denominator appears earlier in the solution"],"perOptionSteps":[4,2,4]} },
+    ],
+    figure: {
+          "candId": "maths-2024-HL-paper-p005-i1",
+          "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p005-i1.png",
+          "srcHash": "9fe8446be707f4a9a3310eb81b2dabdd",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q1(b), typeset as the State Examinations Commission set it. It reads: (b) 4/2tt + 1 − 7/12tt = 4(12tt) − 7(2tt + 1)/(2tt + 1)(12tt) = 48t−14t−7 (2t + 1)(12t) 34t−7 (2t + 1)(12t) = Mathematics, Higher Level",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
   } as SecCard,
@@ -4825,13 +5161,13 @@ export const CARDS: SecCard[] = [
     questionText: "The function g(x) is defined for x∈ℝ by: = 6xx + 1/xx⁴ + 3 Find the value of g′(−2), the derivative of g(x) when x = −2",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2024-hl-p1-q4-b-r1", kind: "anyN", verbatim: "Work of merit in one step, for example, some correct substitution in to the quotient/product rule", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; Full Credit -1.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in one step, for example, some correct substitution in to the quotient/product rule","2 steps correct","Answer given as a decimal"],"perOptionSteps":[3,2,5]} },
+    { id: "maths-2024-hl-p1-q4-b-r1", kind: "anyN", verbatim: "Work of merit in one step, for example, some correct substitution in to the quotient/product rule", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Full Credit -1.", openList: true, group: {"claimMax":4,"perOption":3,"options":["Work of merit in one step, for example, some correct substitution in to the quotient/product rule","2 steps correct","3 steps correct","Answer given as a decimal"],"perOptionSteps":[3,2,2,3]} },
     ],
     figure: {
           "candId": "maths-2024-HL-paper-p012-i1",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p012-i1.png",
           "srcHash": "6dc4e8c964db9e7a41944658e4fdd43b",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q4(b), typeset as the State Examinations Commission set it. It reads: u = 6x + 1v = x⁴ + 3 dddd/dddd = 6 dddd/dddd = 4xx3 gg′(xx) = (xx⁴ + 3)(6)−(6xx + 1)(4xx³)/(xx⁴ + 3)² g′(−2) = = − 238/361 OR g(x) = (6x + 1)(x⁴ + 3)^(−1) u = 6x + 1v = (x⁴ + 1)^(−1) dddd/dddd = 6 dddd/d^d^d^d = −4xx³(xx⁴ + 3)^−² g′(x) = (6x + 1)(−4x³(x⁴ + 3)^(−2)) + (x⁴ + 3)^(−1)(6) g′(−2) = (6(−2) + 1)(−4(−2)³((−2)⁴ + 3)^(−2)) + ((−2)⁴ + 3)^(−1)(6) = − 238/361",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q4(b), typeset as the State Examinations Commission set it. It reads: u = 6x + 1v = x⁴ + 3 dddd/dddd = 6 dddd/dddd = 4xx3 gg′(xx) = (xx⁴ + 3)(6)−(6xx + 1)(4xx³)/(xx⁴ + 3)² ((−2)⁴ + 3)(6)−(6(−2) + 1)(4(−2)³) g′(−2) = ((−2)⁴ + 3)² = − 238/361 OR g(x) = (6x + 1)(x⁴ + 3)^(−1) u = 6x + 1v = (x⁴ + 1)^(−1) dddd/dddd = 6 dddd/d^d^d^d = −4xx³(xx⁴ + 3)^−² g′(x) = (6x + 1)(−4x³(x⁴ + 3)^(−2)) + (x⁴ + 3)^(−1)(6) g′(−2) = (6(−2) + 1)(−4(−2)³((−2)⁴ + 3)^(−2)) + ((−2)⁴ + 3)^(−1)(6) = − 238/361",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4888,7 +5224,7 @@ export const CARDS: SecCard[] = [
     questionText: "G7 = 6 and G11 = 3 8 are the 7th and 11th terms of a geometric sequence, respectively",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2024-hl-p1-q5-b-r1", kind: "anyN", verbatim: "Method 1:", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Method 1:","Method 2:","6rr⁴ = 3/8 aarr¹⁰ = 3 ÷ 6","6rr⁴ = 3 8 aarr¹⁰/aarr⁶ = 3/8 ÷ 6","rr⁴ = 3/48 aarr⁶ rr⁴ = 8 3","rr⁴ = 48 1 rr⁴ = 3/48","= 1/16 = 48 1","rr = ± 1/2 rr = ± 1","rr = ± 2 rr = ± 1/2"],"perOptionSteps":[2,1,2]} },
+    { id: "maths-2024-hl-p1-q5-b-r1", kind: "anyN", verbatim: "Work of merit in establishing an equation in r, for example, multiplication by r indicated", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit in establishing an equation in r, for example, multiplication by r indicated","rr⁴ = 3/48 Full Credit –1: Apply a * if only 1 value of r is given"],"perOptionSteps":[2,3]} },
     ],
     figure: {
           "candId": "maths-2024-HL-paper-p013-i1",
@@ -4993,7 +5329,7 @@ export const CARDS: SecCard[] = [
     questionText: "(iii) Write the function g(f(x)) in terms of x, in its simplest form",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2024-hl-p1-q6-b-iii-r1", kind: "anyN", verbatim: "High Writes Partial ln Credit:/√ee⁹^x^x as ln(ee⁹^x^x) 1/2 or equivalent ff(gg(xx)) = xx 9/2", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["High Writes Partial ln Credit:/√ee⁹^x^x as ln(ee⁹^x^x) 1/2 or equivalent ff(gg(xx)) = xx 9/2"]} },
+    { id: "maths-2024-hl-p1-q6-b-iii-r1", kind: "anyN", verbatim: "Some correct substitution into composite function Some correct substitution into f(g(x)) High Writes Partial ln Credit:/√ee⁹^x^x as ln(ee⁹^x^x) 1/2 or equivalent ff(gg(xx)) = xx 9/2", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Some correct substitution into composite function Some correct substitution into f(g(x)) High Writes Partial ln Credit:/√ee⁹^x^x as ln(ee⁹^x^x) 1/2 or equivalent ff(gg(xx)) = xx 9/2"]} },
     ],
     figure: {
           "candId": "maths-2024-HL-paper-p015-i1",
@@ -5061,8 +5397,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2024-HL-paper-p018-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p018-i0.png",
-          "srcHash": "3c927523d0d4ae35f3b75db07a4e2e67",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q7(c)(i), typeset as the State Examinations Commission set it. It reads: (i) dddd/dddd = 5000(0 · 04)ee⁰^·⁰⁴^t^t = 200e^(0·04t) t = 3 · 5: dddd/dddd = 5000(0 · 04)ee⁰^·⁰⁴⁽³^·⁵^) = 200e^(0·14) = 230 · 05",
+          "srcHash": "1a62ffa39da09071ffaea1656ab54748",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q7(c)(i), typeset as the State Examinations Commission set it. It reads: (i) dddd/dddd = 5000(0 · 04)ee⁰^·⁰⁴^t^t = 200e^(0·04t) t = 3 · 5: dddd/dddd = 5000(0 · 04)ee⁰^·⁰⁴⁽³^·⁵^) = 200e^(0·14) = 230 · 05 = 230 [nearest € per year]",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5119,7 +5455,7 @@ export const CARDS: SecCard[] = [
     questionText: "Work out the maximum and minimum daily sales of scarves, according to S(t). You do not need to use differentiation",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2024-hl-p1-q8-b-r1", kind: "anyN", verbatim: "Indicates + 19 or −19 Correct indication of 21 or 19 on the graph Some correct differentiation of S(t)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit -1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Indicates + 19 or −19 Correct indication of 21 or 19 on the graph Some correct differentiation of S(t)","S′(t) = 0 Indicates ±19","and which is minimum Maximum = 2 and Minimum = 40"],"perOptionSteps":[2,1,2]} },
+    { id: "maths-2024-hl-p1-q8-b-r1", kind: "anyN", verbatim: "Work of merit, for example, mentions max value of c = 1 Indicates + 19 or −19 Correct indication of 21 or 19 on the graph Some correct differentiation of S(t)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit -1.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit, for example, mentions max value of c = 1 Indicates + 19 or −19 Correct indication of 21 or 19 on the graph Some correct differentiation of S(t)","Max or min correct Finds the values of t for which S′(t) = 0 Indicates ±19","Answers given as 2 and 40, but doesn’t indicate which is maximum and which is minimum Maximum = 2 and Minimum = 40"],"perOptionSteps":[2,1,2]} },
     ],
     figure: {
           "candId": "maths-2024-HL-paper-p021-i0",
@@ -5350,7 +5686,7 @@ export const CARDS: SecCard[] = [
     questionText: "Use integration to work out the area of the logo",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2024-hl-p1-q10-c-i-r1", kind: "anyN", verbatim: "Integration indicated Some correct integration", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Integration indicated Some correct integration","1 Step correct 1 relevant area calculated","calculated quadrant, but does not double the answer"],"perOptionSteps":[2,1,2]} },
+    { id: "maths-2024-hl-p1-q10-c-i-r1", kind: "anyN", verbatim: "Integration indicated Some correct integration", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Full Credit-1.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Integration indicated Some correct integration","1 Step correct 1 relevant area calculated","2 relevant areas calculated correctly Step 1 correct and one relevant area calculated 2 steps correct","Finds the correct area in the 1st quadrant, but does not double the answer"],"perOptionSteps":[2,1,1,1]} },
     ],
     figure: {
           "candId": "maths-2024-HL-paper-p026-i0",
@@ -5399,6 +5735,48 @@ export const CARDS: SecCard[] = [
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p027-i1.png",
           "srcHash": "da97748049de3315e8c1d2de47de8e54",
           "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q10(d), typeset as the State Examinations Commission set it. It reads: Answer: Option 1 Option 1: 0∙9p−r Option 2: 0·9(p−r)OR 0·9p−0·9r Mathematics, Higher Level",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-q1-a-iii", topicId: "maths-1-6", conceptId: "iii-median-data-metres-value",
+    section: "B", questionRef: "2024 HL Paper 2 Q1(a)(iii)",
+    questionText: "(iii) The median of the data is 43·5 metres. Use this to find the value of d",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 8, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    rows: [
+    { id: "maths-2024-hl-p2-q1-a-iii-r1", kind: "anyN", verbatim: "Work of merit in finding one value, for example, indicates median is between \"4d\" and 45", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8, four parts for 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit in finding one value, for example, indicates median is between \"4d\" and 45","Two values correct One value correct and work of merit in finding two other values","Three values correct Two values correct and work of merit in finding the other two values Full Credit –1 Apply a * if both digits are given instead of just second digit in parts (ii) and (iii), once only. Do not penalise thereafter"],"perOptionSteps":[4,2,9]} },
+    ],
+    figure: {
+          "candId": "maths-2024-HL-paper-p031-i0",
+          "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p031-i0.png",
+          "srcHash": "8c6d5b496b6e11a05d95eae7a8a1ac2e",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q1(a)(iii), typeset as the State Examinations Commission set it. It reads: Detailed marking notes Note: The model solutions for each question are not intended to be exhaustive – there may be other correct solutions. Any Examiner unsure of the validity of the approach adopted by a particular candidate to a particular question should contact his / her Advising Examiner. Mode = 34 so a = 4 Range = 49 … 69 −20 = 49 So b = 0 and c = 9 (iii) Median = \"4dd\"+45/2 = 43·5 \"4d\" + 45 = 87 “4d” = 42 So ",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
+    id: "maths-2024-hl-p2-q1-b", topicId: "maths-1-6", conceptId: "how-would-you-best-describe-how",
+    section: "B", questionRef: "2024 HL Paper 2 Q1(b)",
+    questionText: "How would you best describe how the results changed for these students, from the initial test to the re-test?",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 6, 8, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    rows: [
+    { id: "maths-2024-hl-p2-q1-b-r1", kind: "anyN", verbatim: "Work of merit in (b), for example, mentions that swimmers improved, or reference to non-linearity", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 6, two parts for 8, three parts for 15. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Work of merit in (b), for example, mentions that swimmers improved, or reference to non-linearity","(b) or (c) correct Full Credit –1 Apply a * for incorrect rounding in (c) (incorrect to 4 DP, or correct to a different number of DP)"],"perOptionSteps":[6,9]} },
+    ],
+    figure: {
+          "candId": "maths-2024-HL-paper-p031-i1",
+          "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p031-i1.png",
+          "srcHash": "a699ce0bca707df98db0a83977f1e2d2",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q1(b), typeset as the State Examinations Commission set it. It reads: A valid description, for example: Everyone improved but the stronger swimmers improved to a greater extent than the weaker swimmers. r = 0∙91451 … = 0∙9145 [4 D.P.] Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5513,7 +5891,7 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p2-q3-b", topicId: "maths-3-4", conceptId: "angle-360-all-possible-values",
+    id: "maths-2024-hl-p2-q3-b", topicId: "maths-2-3", conceptId: "angle-360-all-possible-values",
     section: "B", questionRef: "2024 HL Paper 2 Q3(b)",
     questionText: "X is an angle, with 0° ≤X ≤ 360°, and = √3/2 Find all the possible values of X",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -5791,12 +6169,12 @@ export const CARDS: SecCard[] = [
     questionText: "PK Hotels are testing a new booking system",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 8, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
     rows: [
-    { id: "maths-2024-hl-p2-q7-c-r1", kind: "anyN", verbatim: "Work of merit, for example, one correct relevant multiplication", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8, four parts for 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Full Credit -1.", openList: true, group: {"claimMax":4,"perOption":4,"options":["Work of merit, for example, one correct relevant multiplication","37/100 or 11/5⁰ (or equivalent)","37/1⁰⁰ and 11/50","Apply a * for answer not in correct form"],"perOptionSteps":[4,2,2,7]} },
+    { id: "maths-2024-hl-p2-q7-c-r1", kind: "anyN", verbatim: "Work of merit, for example, one correct relevant multiplication Tree diagram with some correct value(s)", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8, four parts for 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Full Credit -1.", openList: true, group: {"claimMax":4,"perOption":4,"options":["Work of merit, for example, one correct relevant multiplication Tree diagram with some correct value(s)","37/100 or 11/5⁰ (or equivalent)","37/1⁰⁰ and 11/50","Apply a * for answer not in correct form"],"perOptionSteps":[4,2,2,7]} },
     ],
     figure: {
           "candId": "maths-2024-HL-paper-p040-i1",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p040-i1.png",
-          "srcHash": "746d400ef52582030613fa7e55dcc482",
+          "srcHash": "d09f399d2e658435f5b4683ed65e0224",
           "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q7(c), typeset as the State Examinations Commission set it. It reads: (c) Booked: (0∙45) ( 1/3) + (0∙55) ( 2/5) = 37/100 Booked on new system: (0∙55) ( 2/5) = 11/50 Probability = (11/50) = 22 = 59% [∈ ℕ] Probability = 50)/37 ( (11 100) = 22/3⁷ = 59% [∈ ℕ] ( 37/100) 3⁷ Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
@@ -5985,7 +6363,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2024-HL-paper-p045-i2",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p045-i2.png",
-          "srcHash": "bf0a8293690049676b003e2e04bfd20c",
+          "srcHash": "6c001ae406df04ffef29fa96eac4e40a",
           "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q9(a)(iii), typeset as the State Examinations Commission set it. It reads: (a)(iii) |PPPP| |PPPP| −radius = √(10 = − 1)² + /√202 − (6 12 − 17)² = 2∙2126 = √202 … Shortest distance = 2∙2126 … × 100 = 221∙26 … = 221 [m] [nearest m]",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
@@ -6104,15 +6482,15 @@ export const CARDS: SecCard[] = [
     id: "maths-2024-hl-p2-q10-a-iii", topicId: "maths-3-4", conceptId: "iii-work-out-area",
     section: "B", questionRef: "2024 HL Paper 2 Q10(a)(iii)",
     questionText: "(iii) Hence, work out the area of A′A′",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 8, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2024-hl-p2-q10-a-iii-r1", kind: "anyN", verbatim: "Work of merit in finding one value, for example, indicates median is between \"4d\" and 45", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8, four parts for 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit in finding one value, for example, indicates median is between \"4d\" and 45","Two values correct One value correct and work of merit in finding two other values","Three values correct Two values correct and work of merit in finding the other two values Full Credit –1 Apply a * if both digits are given instead of just second digit in parts (ii) and (iii), once only. Do not penalise thereafter"],"perOptionSteps":[4,2,9]} },
+    { id: "maths-2024-hl-p2-q10-a-iii-r1", kind: "anyN", verbatim: "Work of merit in one step, for example, finds |∠A|", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit in one step, for example, finds |∠A|","One step correct and work of merit in another step","Three steps correct"],"perOptionSteps":[3,2,5]} },
     ],
     figure: {
-          "candId": "maths-2024-HL-paper-p031-i0",
-          "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p031-i0.png",
-          "srcHash": "8c6d5b496b6e11a05d95eae7a8a1ac2e",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q10(a)(iii), typeset as the State Examinations Commission set it. It reads: Detailed marking notes Note: The model solutions for each question are not intended to be exhaustive – there may be other correct solutions. Any Examiner unsure of the validity of the approach adopted by a particular candidate to a particular question should contact his / her Advising Examiner. Mode = 34 so a = 4 Range = 49 … 69 −20 = 49 So b = 0 and c = 9 (iii) Median = \"4dd\"+45/2 = 43·5 \"4d\" + 45 = 87 “4d” = 42 So ",
+          "candId": "maths-2024-HL-paper-p048-i2",
+          "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p048-i2.png",
+          "srcHash": "8fd156a9726590aff85a896da4f0824b",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q10(a)(iii), typeset as the State Examinations Commission set it. It reads: |∠B′| = 180 −2(41·4) = 97·2° sin 41·4 = 20/|OOOO| |OOOO| = 20/sin 41·4 = 30·24 … Area AB′A′ = Area B′ −Area A′ = 97·2/360 𝜋𝜋(120)² − 97·2/360 𝜋𝜋(30·24)² = 11438·84 … = 11 439 [cm²] [∈ℕ] Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6125,15 +6503,15 @@ export const CARDS: SecCard[] = [
     id: "maths-2024-hl-p2-q10-b", topicId: "maths-3-4", conceptId: "moving-point-along-line-changes-size",
     section: "B", questionRef: "2024 HL Paper 2 Q10(b)",
     questionText: "Moving the point O along the line N changes the size of the wiper blade and the region that it cleans. In the diagram below, [D] rotates about O, where O∈D, until it reaches [D′E′]. As in part (a), E and E′ lie on the rectangle P",
-    tariffModel: {"kind":"fixed","notation":"Scale (0, 6, 8, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2024-hl-p2-q10-b-r1", kind: "anyN", verbatim: "Work of merit in (b), for example, mentions that swimmers improved, or reference to non-linearity", marks: 15, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 6, two parts for 8, three parts for 15. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Work of merit in (b), for example, mentions that swimmers improved, or reference to non-linearity","(b) or (c) correct Full Credit –1 Apply a * for incorrect rounding in (c) (incorrect to 4 DP, or correct to a different number of DP)"],"perOptionSteps":[6,9]} },
+    { id: "maths-2024-hl-p2-q10-b-r1", kind: "anyN", verbatim: "Work of merit, for example, some correct substitution into Cosine Rule, or correctly indicates x on the diagram", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, some correct substitution into Cosine Rule, or correctly indicates x on the diagram","1 step correct","2 steps correct"],"perOptionSteps":[3,2,5]} },
     ],
     figure: {
-          "candId": "maths-2024-HL-paper-p031-i1",
-          "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p031-i1.png",
-          "srcHash": "a699ce0bca707df98db0a83977f1e2d2",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q10(b), typeset as the State Examinations Commission set it. It reads: A valid description, for example: Everyone improved but the stronger swimmers improved to a greater extent than the weaker swimmers. r = 0∙91451 … = 0∙9145 [4 D.P.] Mathematics – Higher Level",
+          "candId": "maths-2024-HL-paper-p049-i0",
+          "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p049-i0.png",
+          "srcHash": "6f14fa872f13602fb079d5652b52b82b",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q10(b), typeset as the State Examinations Commission set it. It reads: Method 1: 180² = x² + x² −2x² cos 105 180² = x²(2 −2 cos 105) xx = 180/√2 − 2 cos 105 180/√2 − 2 cos 105 = 113.44 … = 113∙4 [cm] [1 DP] OR Method 2: |∠OOOO′EE| = 180 − 105/2 = 37·5° x² = x² + 180² −2(x)(180) cos 37·5 2(x)(180) cos 37·5 = 180² xx = 32400/360 cos 37·5 = 113.44… = 113∙4 [cm] [1 DP]",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6232,13 +6610,13 @@ export const CARDS: SecCard[] = [
     questionText: "(2x+ 3) is a factor of 4x3 −12x2 −7x+ 30. Use this information to find the three solutions to the following equation in x: 4x3 −12x2 −7x+ 30 = 0 x= _____________ , x= _____________ , and x= _____________",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2025-hl-p1-q1-c-r1", kind: "anyN", verbatim: "Finds 3 values of x", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 4, three parts for 6, four parts for 10. Marked in order: Step 5.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Finds 3 values of x"]} },
+    { id: "maths-2025-hl-p1-q1-c-r1", kind: "anyN", verbatim: "Sets up long division / array/product", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 4, three parts for 6, four parts for 10. Marked in order: Step 1; Step 2; Step 3; Step 4; Step 5.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Sets up long division / array/product","Finds first term in quotient (2x² or 10)","Finds 2x² −9x + 10","Factorises 2x² −9x + 10 / fully","Finds 3 values of x"],"perOptionSteps":[2,2,2,4]} },
     ],
     figure: {
           "candId": "maths-2025-HL-paper-p008-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p008-i0.png",
           "srcHash": "341db889fc09ea7c146785b595d8e70a",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q1(c), typeset as the State Examinations Commission set it. It reads: Method 1 2xx + 2xx² − 9xx + 10/3√4xx³ − 12xx² − 7xx + 30 4xx³ + 6xx²/−18xx² − 7xx −18xx² − 27xx/20xx + 30 20xx + 30/0 2x² −9x + 10 = 0 (2x + 3)(2x−5)(x−2) = 0 xx = − 3/2 and xx = 5/2 and xx = 2 Method 2 −9x 2x² 2x² −9x + 10 = 0 (2x + 3)(2x−5)(x−2) = 0 xx = − 3/2 and xx = 5/2 and xx = 2 Method 3 (2x + 3)(ax² + b + c) = 4x³ −12x² −7x + 30 (2x + 3)(2x² + b + 10) = 4x³ −12x² −7x + 30 20x + 3b = −7x (20 + 3b)x = −7x 20 + ",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q1(c), typeset as the State Examinations Commission set it. It reads: Method 1 2xx + 2xx² − 9xx + 10/3√4xx³ − 12xx² − 7xx + 30 4xx³ + 6xx²/−18xx² − 7xx −18xx² − 27xx/20xx + 30 20xx + 30/0 2x² −9x + 10 = 0 (2x + 3)(2x−5)(x−2) = 0 xx = − 3/2 and xx = 5/2 and xx = 2 Method 2 −9x 2x² 20x 2x 4x³ −18x² −27x 6x² 2x² −9x + 10 = 0 (2x + 3)(2x−5)(x−2) = 0 xx = − 3/2 and xx = 5/2 and xx = 2 Method 3 (2x + 3)(ax² + b + c) = 4x³ −12x² −7x + 30 (2x + 3)(2x² + b + 10) = 4x³ −12x² −7x + 30 20x + 3b = ",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6316,7 +6694,7 @@ export const CARDS: SecCard[] = [
     questionText: "The function g(x) is defined for x∈ℝ, x≠3∙5, by: g(x) = 3 2x−7 By finding g′(x), show that this function has no local maximum or minimum points",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2025-hl-p1-q3-b-r1", kind: "anyN", verbatim: "Explanation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 4, three parts for 6, four parts for 10. Marked in order: Step 3.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Explanation"]} },
+    { id: "maths-2025-hl-p1-q3-b-r1", kind: "anyN", verbatim: "Unsimplified expression for g′(x)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 4, three parts for 6, four parts for 10. Marked in order: Step 1; Step 2; Step 3.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Unsimplified expression for g′(x)","Simplified expression for g′(x)","Explanation"],"perOptionSteps":[2,2,6]} },
     ],
     figure: {
           "candId": "maths-2025-HL-paper-p011-i1",
@@ -6358,13 +6736,13 @@ export const CARDS: SecCard[] = [
     questionText: "Write the complex number 2+3i 4−5i in the form a+ b, where a, b∈ℝ",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2025-hl-p1-q4-a-r1", kind: "anyN", verbatim: "Expands top line", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Marked in order: Step 2; Step 1; Step 2; Step 3; Step 4; Step 2; Step 3.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Expands top line","2 + 3i = 4a + 4b−5a−5bi²","Sets Re = Re and Im = Im","Solves for 1 variable (a or b)","Solves for 2nd variable","Writes 4 −5i in polar form","Evaluates 2 + 3ii/4^−⁵ⁱⁱ in polar form"],"perOptionSteps":[2,1,1,1]} },
+    { id: "maths-2025-hl-p1-q4-a-r1", kind: "anyN", verbatim: "Indicates multiplication of top", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Marked in order: Step 1; Step 2; Step 3; Step 4; Step 1; Step 2; Step 3; Step 4; Step 1; Step 2; Step 3; Step 4.", openList: true, group: {"claimMax":4,"perOption":2,"options":["Indicates multiplication of top","Expands top line","Expands bottom line","Writes in the form a + b","2 + 3i = 4a + 4b−5a−5bi²","Sets Re = Re and Im = Im","Solves for 1 variable (a or b)","Solves for 2nd variable","Writes 2 + 3i in polar form","Writes 4 −5i in polar form","Evaluates 2 + 3ii/4^−⁵ⁱⁱ in polar form","Writes in the form a + b"],"perOptionSteps":[2,1,1,1]} },
     ],
     figure: {
           "candId": "maths-2025-HL-paper-p013-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p013-i0.png",
           "srcHash": "d276327dd5f80ba38cca14d9d27c30f0",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q4(a), typeset as the State Examinations Commission set it. It reads: Method 1: (2 + 3i 4 −5i)(4 + 5i = −7 + 22ii/41 = − 7/41 + 22/41 ii Method 2: 2 + 3ii/4 − 5ii = aa + bbbb (4 −5i)(a + b) = 2 + 3i 4a + 4b−5a−5bi² = 2 + 3i Re: 4a + 5b = 2 Im: −5a + 4b = 3 20a + 25b = 10 Re × 5: Im × 4: −20aa + 16bb = 12/22 41bb = 22 ∴ bb = 22/41 4aa + 5 ( 22/4¹) = 2 ∴ aa = − 7/41 2 + 3ii/4 − 5ii = − 7/41 + 22/41 ii Method 3 Let 𝜃𝜃₁ = tan^−¹ ³/2 Let 𝜃𝜃₂ = tan^−¹ − 5/4 2 + 3i = √13(cos(𝜃₁) + isin(𝜃₁)) 4",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q4(a), typeset as the State Examinations Commission set it. It reads: Method 1: 4 + 5i) = 8 + 10i + 12i + 15i² (2 + 3i 4 −5i)(4 + 5i 16 + 20i−20i−25i² = −7 + 22ii/41 = − 7/41 + 22/41 ii Method 2: 2 + 3ii/4 − 5ii = aa + bbbb (4 −5i)(a + b) = 2 + 3i 4a + 4b−5a−5bi² = 2 + 3i Re: 4a + 5b = 2 Im: −5a + 4b = 3 20a + 25b = 10 Re × 5: Im × 4: −20aa + 16bb = 12/22 41bb = 22 ∴ bb = 22/41 4aa + 5 ( 22/4¹) = 2 ∴ aa = − 7/41 2 + 3ii/4 − 5ii = − 7/41 + 22/41 ii Method 3 Let 𝜃𝜃₁ = tan^−¹ ³/2 Let 𝜃𝜃₂ ",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6511,7 +6889,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p018-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p018-i0.png",
           "srcHash": "78e5b3d1537ab5de695eb2a2354887cd",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q6(b)(i), typeset as the State Examinations Commission set it. It reads: (b)(i) Method 1 One solution ⇒b² −4a = 0 (−4r)² −4(6m)(54m) = 0 16r² −1296m² = 0 (r−9m)(r + 9m) = 0 r = 9m [ r, m > 0] Method 2 One solution ⇒2 equal roots {α, α} Sum of roots: Product of roots: 𝛼² = 54m = 9 [r, m > 0, ⇒𝛼> 0] 𝛼= ±3 𝛼= 3 2(3) = 4rr/6mm 4r = 36m r = 9m",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q6(b)(i), typeset as the State Examinations Commission set it. It reads: (b)(i) Method 1 One solution ⇒b² −4a = 0 (−4r)² −4(6m)(54m) = 0 16r² −1296m² = 0 r² −81m² = 0 (r−9m)(r + 9m) = 0 r = 9m [ r, m > 0] Method 2 One solution ⇒2 equal roots {α, α} Sum of roots: Product of roots: 2𝛼= 4r 𝛼² = 54m 6m 6m = 9 [r, m > 0, ⇒𝛼> 0] 𝛼= ±3 𝛼= 3 2(3) = 4rr/6mm 4r = 36m r = 9m",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6526,13 +6904,13 @@ export const CARDS: SecCard[] = [
     questionText: "Use the fact that r = 9m to find the value of this solution",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2025-hl-p1-q6-b-ii-r1", kind: "anyN", verbatim: "4(9mm)/2⁽⁶^m^m^) (Method 1) (x−3)² = 0 or equivalent (Method 2) 12m−36m = 0 (Method 3) 54mm/6^m^m (Method 4)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: High Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["4(9mm)/2⁽⁶^m^m^) (Method 1) (x−3)² = 0 or equivalent (Method 2) 12m−36m = 0 (Method 3) 54mm/6^m^m (Method 4)"]} },
+    { id: "maths-2025-hl-p1-q6-b-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, −bb/2aa or states h′(x) = 0", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, −bb/2aa or states h′(x) = 0","4(9mm)/2⁽⁶^m^m^) (Method 1) (x−3)² = 0 or equivalent (Method 2) 12m−36m = 0 (Method 3) 54mm/6^m^m (Method 4)"],"perOptionSteps":[4,6]} },
     ],
     figure: {
           "candId": "maths-2025-HL-paper-p019-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p019-i0.png",
           "srcHash": "58ccfadf0992ff473719e137d1ffcbea",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q6(b)(ii), typeset as the State Examinations Commission set it. It reads: (b)(ii) Method 1 xx = −bb ± √0/2aa = 4(9mm)/2(6mm) = 3 Method 2 6mx² −36m + 54m = 0 (x−3)² = 0 x = 3 Method 3 One solution, 𝛼⇒h′(𝛼) = 0 h′(𝛼) = 12m−4r 12m−4r = 0 12m−36m = 0 𝛼−3 = 0 𝛼= 3 Method 4 Sum of roots: Product of roots: 𝛼𝛼² = 54mm/6mm 2𝛼𝛼 = 4rr/6mm = 9 [r, m > 0, ⇒𝛼> 0] 𝛼= ±3 𝛼= 3",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q6(b)(ii), typeset as the State Examinations Commission set it. It reads: (b)(ii) Method 1 xx = −bb ± √0/2aa = 4(9mm)/2(6mm) = 3 Method 2 6mx² −36m + 54m = 0 x² −6x + 9 = 0 (x−3)² = 0 x = 3 Method 3 One solution, 𝛼⇒h′(𝛼) = 0 h′(𝛼) = 12m−4r 12m−4r = 0 12m−36m = 0 𝛼−3 = 0 𝛼= 3 Method 4 Sum of roots: Product of roots: 𝛼𝛼² = 54mm/6mm 2𝛼𝛼 = 4rr/6mm = 9 [r, m > 0, ⇒𝛼> 0] 𝛼= ±3 𝛼= 3",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6568,7 +6946,7 @@ export const CARDS: SecCard[] = [
     questionText: "(iii) Hence, or otherwise, find the value of A(100)",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2025-hl-p1-q7-a-iii-r1", kind: "anyN", verbatim: "Work of merit in one part, for example, in (ii), indicates common difference or identifies a; in (iii), finds A(4) (in (iii), must involve moving beyond A(3) in order to qualify as work of merit)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 4, three parts for 6, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit in one part, for example, in (ii), indicates common difference or identifies a; in (iii), finds A(4) (in (iii), must involve moving beyond A(3) in order to qualify as work of merit)","1 part correct Work of merit in both parts 1 part correct and work of merit in the other part."],"perOptionSteps":[2,8]} },
+    { id: "maths-2025-hl-p1-q7-a-iii-r1", kind: "anyN", verbatim: "Work of merit in one part, for example, in (ii), indicates common difference or identifies a; in (iii), finds A(4) (in (iii), must involve moving beyond A(3) in order to qualify as work of merit)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 4, three parts for 6, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit in one part, for example, in (ii), indicates common difference or identifies a; in (iii), finds A(4) (in (iii), must involve moving beyond A(3) in order to qualify as work of merit)","1 part correct Work of merit in both parts","1 part correct and work of merit in the other part."],"perOptionSteps":[2,2,6]} },
     ],
     figure: {
           "candId": "maths-2025-HL-paper-p020-i1",
@@ -6967,13 +7345,13 @@ export const CARDS: SecCard[] = [
     questionText: "By substituting your answer from (d)(i) into the expression for Q(n) above, show that: tt² + 2tt + 1/4tt²",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2025-hl-p1-q10-d-ii-r1", kind: "anyN", verbatim: "(d) (ii) QQ(nn) = (nn + 1)²/(2nn + 1)²", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":4,"options":["(d) (ii) QQ(nn) = (nn + 1)²/(2nn + 1)²","(tt−1/2 + 1) 2","= 2/2","(tt−1 + 2/2 ) 2","(t−1 + 1)²","= 22/tt² )","t² + 2t + 1"],"perOptionSteps":[4,2,4]} },
+    { id: "maths-2025-hl-p1-q10-d-ii-r1", kind: "anyN", verbatim: "(d) (ii) QQ(nn) = (nn + 1)²/(2nn + 1)²", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":4,"options":["(d) (ii) QQ(nn) = (nn + 1)²/(2nn + 1)²","(tt−1/2 + 1) 2","= 2/2","(2(t−1","2 ) + 1)","(tt−1 + 2/2 ) 2","(t−1 + 1)²","((t + 1)2","= 22/tt² )","t² + 2t + 1"],"perOptionSteps":[4,2,4]} },
     ],
     figure: {
           "candId": "maths-2025-HL-paper-p034-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p034-i0.png",
           "srcHash": "1018f68e10bdf51c0add7182aa15aa54",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q10(d)(ii), typeset as the State Examinations Commission set it. It reads: (d) (ii) QQ(nn) = (nn + 1)²/(2nn + 1)² (tt−1/2 + 1) 2 = 2/2 (tt−1 + 2/2 ) 2 (t−1 + 1)² = 22/tt² ) t² + 2t + 1 = 4t²",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q10(d)(ii), typeset as the State Examinations Commission set it. It reads: (d) (ii) QQ(nn) = (nn + 1)²/(2nn + 1)² (tt−1/2 + 1) 2 = 2/2 (2(t−1 2 ) + 1) (tt−1 + 2/2 ) 2 (t−1 + 1)² ((t + 1)2 = 22/tt² ) t² + 2t + 1 = 4t²",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6983,7 +7361,7 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Higher Level — © State Examinations Commission.",
-    id: "maths-2025-hl-p1-q10-d-iii", topicId: "maths-2-2", conceptId: "value-which-given-lim-4t2-leaving",
+    id: "maths-2025-hl-p1-q10-d-iii", topicId: "maths-4-1", conceptId: "value-which-given-lim-4t2-leaving",
     section: "B", questionRef: "2025 HL Paper 1 Q10(d)(iii)",
     questionText: "Find the value of Q ∞ which is given by: Q ∞= lim t→∞ t2 + 2t+ 1 4t2",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -7051,13 +7429,13 @@ export const CARDS: SecCard[] = [
     questionText: "The line l has equation y= − 1 3 x+ 11. The line h has equation 2x−5y + 10 = 0. Work out the size of the acute angle between the lines l and h. Give your answer correct to the nearest degree. 4",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2025-hl-p2-q1-b-r1", kind: "anyN", verbatim: "Finds m_l", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Step 1; Step 2; Step 1; Step 2; Step 3; Step 1; Step 2; Step 3.", openList: true, group: {"claimMax":4,"perOption":3,"options":["Finds m_l","Finds m_h","Finds m_l","Finds m_h","Finds 161 ∙56 …⁰ and 21 ∙8 …⁰","Finds m_l","Finds m_h","𝜃𝜃 = tan^−¹ ¹/3 + tan^−¹ ²/5"],"perOptionSteps":[3,2,2,3]} },
+    { id: "maths-2025-hl-p2-q1-b-r1", kind: "anyN", verbatim: "Finds m_l", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Step 1; Step 2; Step 3; Step 1; Step 2; Step 3; Step 1; Step 2; Step 3.", openList: true, group: {"claimMax":4,"perOption":3,"options":["Finds m_l","Finds m_h","Subs in formula","Finds m_l","Finds m_h","Finds 161 ∙56 …⁰ and 21 ∙8 …⁰","Finds m_l","Finds m_h","𝜃𝜃 = tan^−¹ ¹/3 + tan^−¹ ²/5"],"perOptionSteps":[3,2,2,3]} },
     ],
     figure: {
           "candId": "maths-2025-HL-paper-p042-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p042-i0.png",
           "srcHash": "20637a75985c45145c508a8c1fc8e66f",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q1(b), typeset as the State Examinations Commission set it. It reads: Method 1 mm_l_l = − 1/3 mm_h = 2/5 tan 𝜃𝜃 = ± − 1/3 − 2/5 tan 𝜃𝜃 = ± 3 5/1 (2 1 + (− 3) 5) 1 + (− 1/3) (2/5) tan 𝜃𝜃 = ± −11/13 𝜃= 40∙2 … ° = 40[°][∈ℕ] Method 2 mm_l_l = − 1/3 mm_h = 2/5 tan^(−1) (−1 tan^−¹ (2/5) = 21 ∙ 80 …⁰ 𝛼= 161 ∙56 …⁰ −21 ∙80 …⁰ = 139 ∙76 … ° 𝜃= 180⁰ −139 ∙76 …⁰ = 40∙24 … ° = 40[°][∈ℕ] Method 3 𝜃𝜃 = tan^−¹ 1/3 + tan^−¹ 2/5 = 40 ∙2 … = 40[°][∈ℕ]",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q1(b), typeset as the State Examinations Commission set it. It reads: Method 1 mm_l_l = − 1/3 mm_h = 2/5 tan 𝜃𝜃 = ± − 1/3 − 2/5 tan 𝜃𝜃 = ± 3 5/1 (2 1 + (− 3) 5) 1 + (− 1/3) (2/5) tan 𝜃𝜃 = ± −11/13 𝜃= 40∙2 … ° = 40[°][∈ℕ] Method 2 mm_l_l = − 1/3 mm_h = 2/5 tan^(−1) (−1 3) = 161 ∙56 …⁰ tan^−¹ (2/5) = 21 ∙ 80 …⁰ 𝛼= 161 ∙56 …⁰ −21 ∙80 …⁰ = 139 ∙76 … ° 𝜃= 180⁰ −139 ∙76 …⁰ = 40∙24 … ° = 40[°][∈ℕ] Method 3 𝜃𝜃 = tan^−¹ 1/3 + tan^−¹ 2/5 = 40 ∙2 … = 40[°][∈ℕ]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -7156,7 +7534,7 @@ export const CARDS: SecCard[] = [
     questionText: "Verify that, for the values in this diagram: P(A∪C) = P(A) + P(C) −P(A∩C)",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2025-hl-p2-q3-a-ii-r1", kind: "anyN", verbatim: "Find P(A∩C)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Step 3; Step 4.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Find P(A∩C)","Substitute in P(A) + P(C) −P(A∩C)"],"perOptionSteps":[2,3]} },
+    { id: "maths-2025-hl-p2-q3-a-ii-r1", kind: "anyN", verbatim: "Find P(A∪C)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Step 1; Step 3; Step 4.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Find P(A∪C)","Find P(A∩C)","Substitute in P(A) + P(C) −P(A∩C)"],"perOptionSteps":[2,1,2]} },
     ],
     figure: {
           "candId": "maths-2025-HL-paper-p047-i1",
@@ -7177,7 +7555,7 @@ export const CARDS: SecCard[] = [
     questionText: "(iii) Are A and B independent events? Use calculations to justify your answer",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2025-hl-p2-q3-a-iii-r1", kind: "anyN", verbatim: "Answer correct Work of merit in justification, for example, states a relevant condition, or finds a work of merit in justification, for example, states a relevant condition and finds 2 relevant probabilities", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Answer correct Work of merit in justification, for example, states a relevant condition, or finds a work of merit in justification, for example, states a relevant condition and finds 2 relevant probabilities","merit in justification, for example, states a relevant condition and finds 2 relevant probabilities Justification sufficient to support the correct answer, but no or incorrect answer"],"perOptionSteps":[2,3]} },
+    { id: "maths-2025-hl-p2-q3-a-iii-r1", kind: "anyN", verbatim: "Answer correct Work of merit in justification, for example, states a relevant condition, or finds a relevant probability", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Answer correct Work of merit in justification, for example, states a relevant condition, or finds a relevant probability","Answer correct and work of merit in justification Incorrect or no answer, but substantial work of merit in justification, for example, states a relevant condition and finds 2 relevant probabilities","Answer correct and substantial work of merit in justification, for example, states a relevant condition and finds 2 relevant probabilities Justification sufficient to support the correct answer, but no or incorrect answer"],"perOptionSteps":[2,1,2]} },
     ],
     figure: {
           "candId": "maths-2025-HL-paper-p048-i0",
@@ -7309,7 +7687,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p053-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p053-i0.png",
           "srcHash": "8e15ae7220212f7186e0a9cb8467f9a4",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q5(b)(ii), typeset as the State Examinations Commission set it. It reads: (b)(ii) Method 1 |XP′| = 1.5 × 3 = 4 ∙5 So, |P′Q| = 3∙5 Area = |P′Q| |P| × 20 = 3 · 5 = 14[cm²] Method 2 |P| = 8 −3 = 5 |P′Q′| = 5 × 1∙5 = 7 ∙5 |P′Q| = 7∙5 −4 = 3 ∙5 Area = |P′Q| |P| × 20 = 3 · 5/5 × 20 = 14[cm²] Method 3 |P| = 8 −3 = 5 |P′| = |XP′| −|X| = 3(1∙5) −3 = 1∙5 Area P = |P||P| sin∠S = 5|P| sin∠S = 20 ∴ |P| sin∠S = 4 Area P′Q = Area P−Area P′Y = 20 −1∙5|P| sin∠S = 20 −1∙5(4) = 14[cm²]",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q5(b)(ii), typeset as the State Examinations Commission set it. It reads: (b)(ii) Method 1 |XP′| = 1.5 × 3 = 4 ∙5 So, |P′Q| = 3∙5 Area = |P′Q| |P| × 20 = 3 · 5 × 20 = 14[cm²] Method 2 |P| = 8 −3 = 5 |P′Q′| = 5 × 1∙5 = 7 ∙5 |P′Q| = 7∙5 −4 = 3 ∙5 Area = |P′Q| |P| × 20 = 3 · 5/5 × 20 = 14[cm²] Method 3 |P| = 8 −3 = 5 |P′| = |XP′| −|X| = 3(1∙5) −3 = 1∙5 Area P = |P||P| sin∠S = 5|P| sin∠S = 20 ∴ |P| sin∠S = 4 Area P′Q = Area P−Area P′Y = 20 −1∙5|P| sin∠S = 20 −1∙5(4) = 14[cm²]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -7366,7 +7744,7 @@ export const CARDS: SecCard[] = [
     questionText: "In the triangle A, |A| = 2, |B| = 3, and |A| = 4. C 2 3 A B 4 Use the Cosine Rule to find the value of tan ∠C, without using a calculator. Give your answer in the form √n m , where n, m∈ℤ. Show all your working out. tan ∠C= __________",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2025-hl-p2-q6-c-r1", kind: "anyN", verbatim: "Finds t∠C", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Step 3.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Finds t∠C"]} },
+    { id: "maths-2025-hl-p2-q6-c-r1", kind: "anyN", verbatim: "Fills in cosine rule", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Step 1; Step 2; Step 3.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Fills in cosine rule","Finds c∠C","Finds t∠C"],"perOptionSteps":[3,2,5]} },
     ],
     figure: {
           "candId": "maths-2025-HL-paper-p055-i0",
@@ -7476,8 +7854,8 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "maths-2025-HL-paper-p058-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p058-i0.png",
-          "srcHash": "c05bc6bb9396c5eb12651bce940b6f36",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q7(c)(iv), typeset as the State Examinations Commission set it. It reads: (c)(iv) Method 1 |∠CCCCCC| = 2 tan^−¹ ( 3/13) = 25 ∙9 … = 26 [°][∈ℕ] Method 2 1/2 (√178)(√178 ) sin ∠CCBBBB = 39 sin ∠CCCCCC = 78/178 |∠CCCCCC| = sin^−¹ ( 78/178) |∠C| = 25∙9 … = 26[°][∈ℕ] Method 3 6² = 178 + 178 −2(178) cos∠C cos ∠CCCCCC = 320/356 |∠C| = 25 ∙9 …",
+          "srcHash": "ed964da7c2e8e3425f15c80301edfe08",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q7(c)(iv), typeset as the State Examinations Commission set it. It reads: (c)(iv) Method 1 |∠CCCCCC| = 2 tan^−¹ ( 3/13) = 25 ∙9 … = 26 [°][∈ℕ] Method 2 1/2 (√178)(√178 ) sin ∠CCBBBB = 39 sin ∠CCCCCC = 78/178 |∠CCCCCC| = sin^−¹ ( 78/178) |∠C| = 25∙9 … = 26[°][∈ℕ] Method 3 6² = 178 + 178 −2(178) cos∠C cos ∠CCCCCC = 320/356 |∠C| = 25 ∙9 … = 26[°][∈ℕ]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -7534,13 +7912,13 @@ export const CARDS: SecCard[] = [
     questionText: "On the triangular face P, the size of ∠P is 74∙2°, correct to 1 decimal place",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2025-hl-p2-q8-a-ii-r1", kind: "anyN", verbatim: "Finds area of 1 face finishes correctly 4 × ( 1/2) (11)(11)(sin 31·6) or equivalent", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: High Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["Finds area of 1 face finishes correctly 4 × ( 1/2) (11)(11)(sin 31·6) or equivalent"]} },
+    { id: "maths-2025-hl-p2-q8-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, diagram drawn with at least 2 correct values filled in", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, diagram drawn with at least 2 correct values filled in","Finds area of 1 face One error in finding area of 1 face, but finishes correctly 4 × ( 1/2) (11)(11)(sin 31·6) or equivalent"],"perOptionSteps":[2,3]} },
     ],
     figure: {
           "candId": "maths-2025-HL-paper-p060-i1",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p060-i1.png",
           "srcHash": "fdc4dec0272fc0129104429d6dc5ae98",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q8(a)(ii), typeset as the State Examinations Commission set it. It reads: (a)(ii) Method 1 Area 1 face = (1/2) (6)(11)(sin 74·2) = 31 ∙75 … Area 4 faces = 4 × 31 ∙75 … = 127[m²][∈ℕ] Method 2 Area 1 face = (1/2) (11)(11)(sin 31·6) Area 4 faces = 4 × 31 ∙71 … = 127[m²][∈ℕ] Method 3 tan 74.2⁰ = h/3 h = 3 tan 74 ∙2⁰ Area 1 face = (1/2) (6)(3 tan 74 ∙ 2⁰) = 31 ∙80 … Area 4 faces = 4 × 31 ∙80 … = 127[m²][∈ℕ]",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q8(a)(ii), typeset as the State Examinations Commission set it. It reads: (a)(ii) Method 1 Area 1 face = (1/2) (6)(11)(sin 74·2) = 31 ∙75 … Area 4 faces = 4 × 31 ∙75 … = 127[m²][∈ℕ] Method 2 Area 1 face = (1/2) (11)(11)(sin 31·6) = 31 ∙71 … Area 4 faces = 4 × 31 ∙71 … = 127[m²][∈ℕ] Method 3 tan 74.2⁰ = h/3 h = 3 tan 74 ∙2⁰ Area 1 face = (1/2) (6)(3 tan 74 ∙ 2⁰) = 31 ∙80 … Area 4 faces = 4 × 31 ∙80 … = 127[m²][∈ℕ]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -7576,7 +7954,7 @@ export const CARDS: SecCard[] = [
     questionText: "In the diagram on the right, [B] represents a flagpole",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2025-hl-p2-q8-b-r1", kind: "anyN", verbatim: "Work of merit, for example, opposite and adjacent identified on the diagram", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit-1.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, opposite and adjacent identified on the diagram","A correct and work of merit in calculating % Error % Error correct and work of merit in calculating A Answer not given as a percentage","Calculator in an incorrect mode, otherwise correct Incorrect or no rounding"],"perOptionSteps":[4,2,4]} },
+    { id: "maths-2025-hl-p2-q8-b-r1", kind: "anyN", verbatim: "Work of merit, for example, opposite and adjacent identified on the diagram Either A or % Error calculated correctly", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit-1.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Work of merit, for example, opposite and adjacent identified on the diagram Either A or % Error calculated correctly","A correct and work of merit in calculating % Error % Error correct and work of merit in calculating A Answer not given as a percentage","Calculator in an incorrect mode, otherwise correct Incorrect or no rounding"],"perOptionSteps":[4,2,4]} },
     ],
     figure: {
           "candId": "maths-2025-HL-paper-p061-i1",
@@ -7750,7 +8128,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p069-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p069-i0.png",
           "srcHash": "b013aa6d361efba0404714f26b974a97",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q10(b), typeset as the State Examinations Commission set it. It reads: (b) xx̅ ± 1.96 ss/√nn ss/√nn 387 ± 1∙96 (66∙2 = 387 ± 2∙79 … 384∙2 < 𝜇< 389∙8 [1 D.P.]",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q10(b), typeset as the State Examinations Commission set it. It reads: (b) xx̅ ± 1.96 ss/√nn ss/√nn 387 ± 1∙96 (66∙2 ) √2161 = 387 ± 2∙79 … 384∙2 < 𝜇< 389∙8 [1 D.P.]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },

@@ -355,7 +355,11 @@ def placed(page, cut=300):
             # emitted a second time, in halves.
             centre = (min(s['bbox'][1] for s in ln['spans'])
                       + max(s['bbox'][3] for s in ln['spans'])) / 2
-            if any(top <= centre <= bottom and abs(x0 - x) < 200
+            # Same COLUMN, not "within 200 points". A fraction in the solution
+            # column reaches across that distance into the notes beside it, and
+            # dropped the "Scale 10C (0, 3, 7, 10)" and "Low Partial Credit:"
+            # that price the part -- so the part itself vanished.
+            if any(top <= centre <= bottom and (x0 >= cut) == (x >= cut)
                    for x0, top, bottom, _ in spans):
                 continue
             (right if x >= cut else left).append((y, t))
