@@ -153,6 +153,19 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: "LC029ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2021 Higher Level — © State Examinations Commission.",
+    id: "cons-2021-hl-q3-b", topicId: "cons-1-1", conceptId: "designing-a-home-office-layout",
+    section: "B", questionRef: "2021 HL Q3(b)",
+    questionText: "Using notes and freehand sketches, show a proposed design layout for the office space that incorporates each of the design considerations you outlined at 3(a) above.",
+    tariffModel: {"kind":"bestNofParts","notation":"3 x 4","answer":3,"ofParts":5,"perPart":4}, totalMarks: 12,
+    rows: [
+    { id: "cons-2021-hl-q3-b-r1", kind: "anyN", verbatim: "Using notes and freehand sketches, show a proposed design layout for the office space that incorporates each of the desi", marks: 12, openList: true, group: {"claimMax":3,"perOption":4,"options":["Visual Comfort","Thermal Comfort","Olfactory Comfort","Ergonomic Comfort/Storage/ Flexibility","Acoustic Comfort"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2021 Higher Level — © State Examinations Commission.",
     id: "cons-2021-hl-q3-c-advantages", topicId: "cons-1-1", conceptId: "working-from-a-home-office-advantages",
     section: "B", questionRef: "2021 HL Q3(c) — Advantages",
     questionText: "Discuss two advantages of working from a home office.",
@@ -1410,6 +1423,20 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"bestNofParts","notation":"2 x 6","answer":2,"ofParts":8,"perPart":6}, totalMarks: 12,
     rows: [
     { id: "cons-2025-hl-q8-a-r1", kind: "anyN", verbatim: "Reduces energy bills", marks: 12, contextNote: "Reduces energy bills", openList: true, group: {"claimMax":2,"perOption":6,"options":["Reduces energy bills as heat loss through air leakage is minimised","Mechanical Ventilation systems will work more efficiently and there will be better indoor air quality (less allergens from outside)","Reduces carbon emissions as fewer fossil fuels are used in heating the house","Thermal comfort is reduced as there are no draughts coming into the house","Reduce heat loss through gaps in the building fabric","Reduction in moisture entering the building fabric – preventing rot etc","Reduces noise pollution","Improves the performance of the thermal insulation"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2025 Higher Level — © State Examinations Commission.",
+    id: "cons-2025-hl-q9-a", topicId: "cons-5-8", conceptId: "wiring-layout-for-two-light-points",
+    section: "B", questionRef: "2025 HL Q9(a)",
+    questionText: "Using notes and freehand sketches, show the design of a typical wiring layout for two electrical light points which are controlled by a single switch. Show the lighting circuit from the distribution board to the switch and to the light points. Indicate the typical sizing and colour coding of the cables.",
+    tariffModel: {"kind":"fixed","notation":"3 x 5 + 3 x 5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 30,
+    rows: [
+    { id: "cons-2025-hl-q9-a-r1", kind: "anyN", verbatim: "Typical wiring layout for two electrical points which are controlled by a single switch", marks: 15, contextNote: "Typical wiring layout for two electrical points which are controlled by a single switch", openList: true, group: {"claimMax":3,"perOption":5,"options":["A 1.5mm2 twin and earth LSF (low-smoke and fume) cable is fed from the distribution board to the single switch","This will provide power to the switch","The 1.5mm cable is then fed from the switch to the first light where it is looped and then onto the remaining lighting point"]} },
+    { id: "cons-2025-hl-q9-a-r2", kind: "anyN", verbatim: "Typical circuit detailing", marks: 15, contextNote: "Typical circuit detailing", openList: true, group: {"claimMax":3,"perOption":5,"options":["1.5 mm2 twin and earth LSF cable","Live – Brown","Neutral – Blue","Earth – Green & Yellow"]} },
     ],
   } as SecCard,
   {

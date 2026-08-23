@@ -153,6 +153,12 @@ class Author:
         # five, and the content is in the indicative half. This is not an
         # inference -- the count and the mark are both printed -- and it is what
         # most of Ordinary Level looks like.
+        # Deliberately NOT filtered by _is_unstateable. Dropping the drawing and
+        # notes rows here unlocks a handful of parts and costs more than it
+        # wins: the readings that survive shift the option lists past the
+        # display cap, and same-mark readings that were right stop resolving.
+        # Measured at 168 carded against 173 without it. The allowance belongs
+        # in _check_total, where it can only widen what is accepted.
         rows = self.S.mark_rows(q, letter)
         scaffold = [(lab, mk) for lab, mk in rows if CS.SCAFFOLD_ROW.match(lab)]
         printed = {int(a or b) for a, b in PART_TOTAL.findall(block)}
@@ -255,7 +261,9 @@ class Author:
             raise Refused(f'Q{q}({letter}): the reasons column has {len(opts_r)} '
                           f'options, past the {MAX_OPTIONS_SHOWN} a row may show')
         total = pick + len(reasons) * per
-        self._check_total(q, letter, total)
+        gap_note = self._check_total(q, letter, total, qtext)
+        if gap_note:
+            notes = (notes + ' ' if notes else '') + gap_note
         card_rows = [
             anyN(f'{cid}-r1', choice[0][0], pick, 1, pick, opts_l, choice[0][0]),
             anyN(f'{cid}-r2', 'Reasons for the choice', len(reasons) * per,
@@ -268,7 +276,47 @@ class Author:
         self._used.add(cid)
         return self.cards[-1]
 
-    def _check_total(self, q, letter, total):
+    # A priced row that awards no NAMEABLE answer: the drawing itself, the
+    # notes/sketch split, the presentation band, or a row that simply restates
+    # the task. A card cannot carry these -- there is nothing to lift -- so the
+    # marks they hold are a legitimate shortfall against the part's total.
+    # Anchored to the WHOLE label. As a prefix it swallowed "Note for separate
+    # living space", which is a named answer worth five marks, and the part
+    # then priced as one answer worth fifteen.
+    UNSTATEABLE = re.compile(
+        r'^(sketch(es)?|drawing|notes?|notes?\s*[/&]\s*(discussion|sketch(es)?)'
+        r'|discussion|presentation|layout|quality of \w+.*)$', re.I)
+
+    def _is_unstateable(self, lab, qtext):
+        """Does this priced row award anything a card could carry?
+
+        Three ways it does not: the label is a bare "Sketch" or "Notes"; it is
+        content-free; or it restates the task. The restatement is matched on
+        OVERLAP, not on a prefix -- "Proposed design layout sketch for extension
+        to include separate living space" is the question said back with one
+        word inserted, which a prefix test misses and a ratio does not.
+        """
+        if CONTENT_FREE.match(lab) or self.UNSTATEABLE.match(lab):
+            return True
+        a, b = _squash(lab), _squash(qtext)
+        if len(a) < 16 or not b:
+            return False
+        # COVERAGE of the label, not similarity of the two strings. A ratio
+        # compares lengths as well as content, so a 30-character row label
+        # scored 0.39 against a 110-character question it is almost entirely
+        # contained in. What matters is whether the row says anything the
+        # question does not: "Design layout for home office space" against
+        # "show a proposed design layout for the office space" says nothing.
+        import difflib
+        m = difflib.SequenceMatcher(None, a, b).get_matching_blocks()
+        return sum(bl.size for bl in m) / len(a) >= 0.8
+
+    def _unstateable(self, q, letter, qtext):
+        return sum(mk for lab, mk in self.S.mark_rows(q, letter)
+                   if self._is_unstateable(lab, qtext))
+
+    def _check_total(self, q, letter, total, qtext='', used=None):
+        """Returns a note where a NAMED shortfall is allowed, else None."""
         """The card's marks must be the question's marks.
 
         Where the scheme prints a total for this part, the rows have to make it
@@ -284,11 +332,43 @@ class Author:
         block = ' '.join(self.S.marks.get((q, letter), []))
         printed = {int(a or b) for a, b in PART_TOTAL.findall(block)}
         if not printed or total in printed:
-            return
+            return None
         allowance = sum(int(x) for x in DRAW_ALLOWANCE.findall(block))
         allowance += sum(int(x) for x in BAND.findall(block))
+        # NOT _unstateable() over every row: that counted the rows the card
+        # itself used. 2025 Higher Q10(c) is priced "Notes 3 / Notes 3" and the
+        # card is those two rows, so allowing them again as an allowance made a
+        # 6-mark card pass silently as a 12-mark part. The rows the card did not
+        # take are handled below, where they produce a note the student sees.
         if any(total + allowance == p for p in printed):
-            return
+            return None
+        # The shortfall is only acceptable if it can be NAMED. Where the rows
+        # the card does not carry account for it exactly, the card ships with a
+        # note saying so, because a student needs to know a 12-mark card sits
+        # inside a 30-mark question. Where the arithmetic does not close, the
+        # part is left: an unexplained shortfall is a misread tariff.
+        # The gap is whatever the card did NOT take. `used` says how many rows
+        # of what value the card's own tariff accounts for; removing exactly
+        # those leaves the rows nobody is being asked to state -- the drawing,
+        # and a "Justification" the scheme gives no content for. Deciding this
+        # by inspecting each label instead was wrong in both directions: the
+        # card's own "Design Consideration 1/2/3" rows read as unstateable
+        # because the question names them, while "Justification" did not.
+        rest = list(self.S.mark_rows(q, letter))
+        for claim, per in (used or []):
+            for _ in range(claim):
+                hit = next((i for i, (_, mk) in enumerate(rest) if mk == per), None)
+                if hit is None:
+                    break
+                rest.pop(hit)
+        named = rest
+        gap = min(p for p in printed if p > total) - total if any(p > total for p in printed) else -1
+        if gap > 0 and sum(mk for _, mk in named) == gap:
+            what = '; '.join(f'{lab} ({mk})' for lab, mk in named)
+            return (f'The scheme awards {total + gap} marks for this part. The '
+                    f'{total} on this card are the marks it states answers for; '
+                    f'the other {gap} go to {what} — the drawing itself and '
+                    f'anything the scheme prices without saying what earns it.')
         raise Refused(f'Q{q}({letter}): rows make {total} but the scheme prints '
                       f'{sorted(printed)} for this part — not carding a partial tariff')
 
@@ -490,7 +570,9 @@ class Author:
                       and not CONTENT_FREE.match(lab)]
             if len(single) == 1 and _squash(single[0][0]) in self.raw:
                 lab, mk = single[0]
-                self._check_total(q, letter, mk)
+                gap_note = self._check_total(q, letter, mk, qtext)
+                if gap_note:
+                    notes = (notes + ' ' if notes else '') + gap_note
                 self.cards.append(_card(
                     cid, self.year, self.deck_level, topic, concept,
                     self.ref(q, letter), qtext, f'{mk}', mk,
@@ -500,7 +582,11 @@ class Author:
                 return self.cards[-1]
             raise Refused(f'Q{q}({letter}): no priced group with usable options')
         total = sum(r['marks'] for r in rows)
-        self._check_total(q, letter, total)
+        used = [(r['group']['claimMax'], r['group']['perOption'])
+                for r in rows if r.get('group')]
+        gap_note = self._check_total(q, letter, total, qtext, used)
+        if gap_note:
+            notes = (notes + ' ' if notes else '') + gap_note
         # One card per row, where the PAPER's own sentence enumerates the rows.
         # The narrowed question is that sentence with the other items deleted --
         # never rewritten -- and narrow() returns nothing unless the result is a

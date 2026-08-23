@@ -19,6 +19,7 @@ PLAN = [
     (4, 'a', 'cons-3-3', 'functional-requirements-of-an-external-wall'),
     (4, 'b', 'cons-3-3', 'high-performance-external-wall-designs'),
     (4, 'c', 'cons-3-3', 'advantages-and-disadvantages-of-wall-types'),
+    (5, 'a', 'cons-6-1', 'calculating-the-u-value-of-a-wall'),
     (6, 'a', 'cons-6-3', 'design-features-for-low-environmental-impact'),
     (6, 'b', 'cons-6-5', 'creating-a-healthy-indoor-environment'),
     (6, 'c', 'cons-6-3', 'benefits-of-locally-sourced-materials'),

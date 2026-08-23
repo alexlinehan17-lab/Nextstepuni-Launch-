@@ -506,6 +506,50 @@
   "notes": ""
  },
  {
+  "id": "cons-2021-hl-q3-b",
+  "topicId": "cons-1-1",
+  "conceptId": "designing-a-home-office-layout",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2021 HL Q3(b)",
+  "questionText": "Using notes and freehand sketches, show a proposed design layout for the office space that incorporates each of the design considerations you outlined at 3(a) above.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 x 4",
+   "answer": 3,
+   "ofParts": 5,
+   "perPart": 4
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "cons-2021-hl-q3-b-r1",
+    "kind": "anyN",
+    "verbatim": "Using notes and freehand sketches, show a proposed design layout for the office space that incorporates each of the desi",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Visual Comfort",
+      "Thermal Comfort",
+      "Olfactory Comfort",
+      "Ergonomic Comfort/Storage/ Flexibility",
+      "Acoustic Comfort"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme awards 30 marks for this part. The 12 on this card are the marks it states answers for; the other 18 go to Design layout for home office space (15); Justification (3) — the drawing itself and anything the scheme prices without saying what earns it."
+ },
+ {
   "id": "cons-2021-hl-q3-c-advantages",
   "topicId": "cons-1-1",
   "conceptId": "working-from-a-home-office-advantages",
@@ -8240,6 +8284,66 @@
   "notes": ""
  },
  {
+  "id": "cons-2025-hl-q9-a",
+  "topicId": "cons-5-8",
+  "conceptId": "wiring-layout-for-two-light-points",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2025 HL Q9(a)",
+  "questionText": "Using notes and freehand sketches, show the design of a typical wiring layout for two electrical light points which are controlled by a single switch. Show the lighting circuit from the distribution board to the switch and to the light points. Indicate the typical sizing and colour coding of the cables.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 x 5 + 3 x 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "cons-2025-hl-q9-a-r1",
+    "kind": "anyN",
+    "verbatim": "Typical wiring layout for two electrical points which are controlled by a single switch",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Typical wiring layout for two electrical points which are controlled by a single switch",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "A 1.5mm2 twin and earth LSF (low-smoke and fume) cable is fed from the distribution board to the single switch",
+      "This will provide power to the switch",
+      "The 1.5mm cable is then fed from the switch to the first light where it is looped and then onto the remaining lighting point"
+     ]
+    }
+   },
+   {
+    "id": "cons-2025-hl-q9-a-r2",
+    "kind": "anyN",
+    "verbatim": "Typical circuit detailing",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Typical circuit detailing",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "1.5 mm2 twin and earth LSF cable",
+      "Live – Brown",
+      "Neutral – Blue",
+      "Earth – Green & Yellow"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme awards 34 marks for this part. The 30 on this card are the marks it states answers for; the other 4 go to Cable size (1) and colour (3) (4) — the drawing itself and anything the scheme prices without saying what earns it."
+ },
+ {
   "id": "cons-2025-hl-q10-b",
   "topicId": "cons-6-4",
   "conceptId": "choosing-an-orientation",
@@ -8524,6 +8628,70 @@
    }
   ],
   "notes": ""
+ },
+ {
+  "id": "cons-2025-ol-q4-a",
+  "topicId": "cons-1-3",
+  "conceptId": "choosing-between-two-sites",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2025 OL Q4(a)",
+  "questionText": "Select your preferred site A or B, and give two reasons for your choice.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 x 6 + 1 x 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "cons-2025-ol-q4-a-r1",
+    "kind": "anyN",
+    "verbatim": "Site A – Considerations",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Site A – Considerations",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Allows for a south facing façade to the house for maximum solar gain",
+      "Has direct access to the main road for services",
+      "Close to existing houses for access to services",
+      "Existing hedgerow to one side of the site for shelter",
+      "Well-proportioned size and shape of site for home and garden"
+     ]
+    }
+   },
+   {
+    "id": "cons-2025-ol-q4-a-r2",
+    "kind": "anyN",
+    "verbatim": "Site B – Considerations",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Site B – Considerations",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Allows for a south facing façade for maximum solar gain",
+      "Reduced risk when entering and exiting site as it is accessed from a secondary road",
+      "Close to existing houses for access to services",
+      "Off the main road for greater privacy",
+      "Less noise and air pollution as the site is away from the main road",
+      "Site is on the same side as other buildings for services, security Any other valid reason will be accepted"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme awards 14 marks for this part. The 12 on this card are the marks it states answers for; the other 2 go to Select site (2) — the drawing itself and anything the scheme prices without saying what earns it."
  },
  {
   "id": "cons-2025-ol-q4-b",
