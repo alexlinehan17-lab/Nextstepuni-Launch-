@@ -85,7 +85,8 @@ HEADING_LOOK = re.compile(r'^[A-Z][^.:;•]{0,58}$')
 # wraps onto a line ending in a full stop ("...requirements.", "...the house."),
 # and the SEC closes most lists with a catch-all. Both became group names.
 NOT_A_HEADING = re.compile(r'^(any other relevant|note\b|n\.?b\.?\b|alternative\b'
-                           r'|.*[a-z]\.\s*$)', re.I)
+                           r'|.*[a-z]\.\s*$|.*\bsuch as\s*$|.*\bincluding\s*$'
+                           r'|discussion of\b|.*\bmay include\s*$)', re.I)
 # A heading in this scheme is always title-case. A line opening lower-case is a
 # bullet that wrapped -- "available for immediate contact" became a fourth group
 # of 2021 Higher Q2(c), which has three, and a group count that is wrong by one

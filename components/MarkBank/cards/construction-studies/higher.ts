@@ -407,11 +407,9 @@ export const CARDS: SecCard[] = [
     id: "cons-2022-hl-q1-a", topicId: "cons-3-10", conceptId: "vertical-section-external-wall-and-flat-roof",
     section: "B", questionRef: "2022 HL Q1(a)",
     questionText: "To a scale of 1:5, draw a vertical section through the external wall of the dining area, the flat roof and the rear wall of the house. Show the typical construction details from a level 300 mm below the wallplate of the dining area wall, through the flat roof, to a level 400 mm above the abutment of the roof and the rear wall of the house.",
-    tariffModel: {"kind":"fixed","notation":"4 x 4 + 4 x 4 + 4 x 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 48,
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 8","answer":2,"ofParts":3,"perPart":8}, totalMarks: 16,
     rows: [
-    { id: "cons-2022-hl-q1-a-r1", kind: "anyN", verbatim: "External wall & eaves - typical detailing", marks: 16, contextNote: "External wall & eaves - typical detailing", openList: true, group: {"claimMax":4,"perOption":4,"options":["External & internal render","Cavity wall & wall ties - 100 mm external and internal leaf","250 mm Full-fill insulated cavity","Cavity closer","100 mm × 75 mm Wallplate","Fascia / soffit / gutter (any 2)"]} },
-    { id: "cons-2022-hl-q1-a-r2", kind: "anyN", verbatim: "Flat roof - typical detailing", marks: 16, contextNote: "Flat roof - typical detailing", openList: true, group: {"claimMax":4,"perOption":4,"options":["Waterproof membrane","150 mm Roof insulation","Breather membrane","OSB / plywood decking","Firing pieces (1:40 slope)","200 mm × 50 mm Roof joists","Air-barrier / Airtightness membrane","Insulated plasterboard (50 mm insulation + 12.5 mm plasterboard)"]} },
-    { id: "cons-2022-hl-q1-a-r3", kind: "anyN", verbatim: "Rear external wall & abutment- typical detailing", marks: 16, contextNote: "Rear external wall & abutment- typical detailing", openList: true, group: {"claimMax":4,"perOption":4,"options":["External & internal render","Cavity wall & wall ties - 100 mm external and internal leaf","100 mm × 75 mm Concrete lintels","Cavity closer","200 mm × 50 mm Wallplate & metal hanger","Tilting fillet & lead flashing","Stepped DPC"]} },
+    { id: "cons-2022-hl-q1-a-r1", kind: "anyN", verbatim: "To a scale of 1:5, draw a vertical section through the external wall of the dining area, the flat roof and the rear wall", marks: 16, openList: true, group: {"claimMax":2,"perOption":8,"options":["External wall & eaves - typical detailing","Flat roof - typical detailing","Rear external wall & abutment- typical detailing"]} },
     ],
   } as SecCard,
   {
@@ -541,6 +539,19 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: "LC029ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level — © State Examinations Commission.",
+    id: "cons-2022-hl-q6-b", topicId: "cons-6-3", conceptId: "providing-for-low-environmental-impact",
+    section: "B", questionRef: "2022 HL Q6(b)",
+    questionText: "Using notes and freehand sketches, discuss the importance of providing for any two of the following in the design of a house, to enhance the health and wellbeing of the occupants: • internal air quality • thermal environment • social interaction.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 10","answer":2,"ofParts":3,"perPart":10}, totalMarks: 20,
+    rows: [
+    { id: "cons-2022-hl-q6-b-r1", kind: "anyN", verbatim: "Using notes and freehand sketches, discuss the importance of providing for any two of the following in the design of a h", marks: 20, openList: true, group: {"claimMax":2,"perOption":10,"options":["Internal air quality","Thermal environment","Social interaction"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level — © State Examinations Commission.",
     id: "cons-2022-hl-q6-c", topicId: "cons-6-5", conceptId: "design-for-health-and-wellbeing",
     section: "B", questionRef: "2022 HL Q6(c)",
     questionText: "Discuss in detail two advantages of designing a house that will enhance the health and wellbeing of the occupants.",
@@ -648,11 +659,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Higher Level — © State Examinations Commission.",
     id: "cons-2022-hl-q9-b", topicId: "cons-6-2", conceptId: "airtightness-detailing-at-wall-and-roof",
     section: "B", questionRef: "2022 HL Q9(b)",
-    stem: "The scheme groups its answer under: Head of window; Wallplate level; Ceiling light fitting",
     questionText: "The drawing shows an outline section through a portion of a house. The house has a truss roof. The wall is of timber frame construction with an external concrete block leaf and the window frame is thermally broken. Using notes and freehand sketches, show best practice design detailing that will prevent air leakage at any two of the locations circled on the drawing.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 9","answer":4,"ofParts":10,"perPart":9}, totalMarks: 36,
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 18","answer":2,"ofParts":3,"perPart":18}, totalMarks: 36,
     rows: [
-    { id: "cons-2022-hl-q9-b-r1", kind: "anyN", verbatim: "The drawing shows an outline section through a portion of a house. The house has a truss roof. The wall is of timber fra", marks: 36, openList: true, group: {"claimMax":4,"perOption":9,"options":["The inner surface of the timber frame is fitted with an airtight membrane","The thermally broken window frame is sealed to the internal timber frame","The junction between the window frame and the wall airtightness membrane is carefully tapped using an airtightness tape","The inner surface of the timber frame is fitted with an airtight membrane","A service cavity is installed inside the wall membrane","An airtight membrane is fitted to the underside of the ceiling joist","The junction between the wall airtightness membrane and ceiling membrane is carefully tapped using an airtightness tape","The ceiling is fitted with an airtightness membrane to the underside of the ceiling joist","The electrical cable which protrudes through the airtightness membrane is sealed to the membrane using an airtightness grommet around the cable","Reducing any air leakage about the cable"]} },
+    { id: "cons-2022-hl-q9-b-r1", kind: "anyN", verbatim: "The drawing shows an outline section through a portion of a house. The house has a truss roof. The wall is of timber fra", marks: 36, openList: true, group: {"claimMax":2,"perOption":18,"options":["Head of window","Wallplate level","Ceiling light fitting"]} },
     ],
   } as SecCard,
   {
@@ -715,11 +725,9 @@ export const CARDS: SecCard[] = [
     id: "cons-2023-hl-q1-a", topicId: "cons-3-8", conceptId: "vertical-section-roof-eaves-to-ridge",
     section: "B", questionRef: "2023 HL Q1(a)",
     questionText: "To a scale of 1:10, draw a vertical section through one half of the roof structure from eaves up to the ridge. Show one external wall and one rafter length. Include the typical construction details from 600 mm below the ceiling joist up to the ridge and include three courses of tiles at eaves.",
-    tariffModel: {"kind":"fixed","notation":"5 x 4 + 3 x 4 + 4 x 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 48,
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 10","answer":2,"ofParts":3,"perPart":10}, totalMarks: 20,
     rows: [
-    { id: "cons-2023-hl-q1-a-r1", kind: "anyN", verbatim: "External timber frame wall - typical detailing", marks: 20, contextNote: "External timber frame wall - typical detailing", openList: true, group: {"claimMax":5,"perOption":4,"options":["External render","Concrete block + tie","Firestopping / cavity closer","Air space / residual cavity","Breather membrane","Racking board","250 × 50 mm Stud","Insulation","Air barrier membrane","Insulated service cavity","Plasterboard / skim"]} },
-    { id: "cons-2023-hl-q1-a-r2", kind: "anyN", verbatim: "Roof structure- typical detailing", marks: 12, contextNote: "Roof structure- typical detailing", openList: true, group: {"claimMax":3,"perOption":4,"options":["Prefabricated roof truss 200 × 50 mm @ 400 - 600 mm centres","Gang nail plates","Attic insulation","Insulated plasterboard (50 mm insulation + 12.5 mm plasterboard)","Air-barrier / airtightness membrane / joint taping"]} },
-    { id: "cons-2023-hl-q1-a-r3", kind: "anyN", verbatim: "Eaves detail- typical detailing", marks: 16, contextNote: "Eaves detail- typical detailing", openList: true, group: {"claimMax":4,"perOption":4,"options":["Fascia / soffit / gutter (Any two)","Tilting fillet","Ventilation","Wind tightness barrier","Roof breather membrane","Tiling battens 40 × 40 mm @ 400 mm centre","Counter battens","Three courses of concrete tiles Any other relevant points"]} },
+    { id: "cons-2023-hl-q1-a-r1", kind: "anyN", verbatim: "To a scale of 1:10, draw a vertical section through one half of the roof structure from eaves up to the ridge. Show one ", marks: 20, openList: true, group: {"claimMax":2,"perOption":10,"options":["External timber frame wall - typical detailing","Roof structure- typical detailing","Eaves detail- typical detailing"]} },
     ],
   } as SecCard,
   {
@@ -962,19 +970,6 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC029ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2023 Higher Level — © State Examinations Commission.",
-    id: "cons-2023-hl-q10-a", topicId: "cons-6-3", conceptId: "passive-house-design",
-    section: "B", questionRef: "2023 HL Q10(a)",
-    questionText: "Using notes and freehand sketches, discuss the importance of any two of the following in Passive House design: • foundation design • solar shading • thermally efficient building envelope. Discuss the above statement in detail.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 5","answer":4,"ofParts":5,"perPart":5}, totalMarks: 20,
-    rows: [
-    { id: "cons-2023-hl-q10-a-r1", kind: "anyN", verbatim: "Using notes and freehand sketches, discuss the importance of any two of the following in Passive House design: • foundat", marks: 20, openList: true, group: {"claimMax":4,"perOption":5,"options":["Foundation design","Solar shading","Thermal efficient building envelope (TEBE)","Discussion of the above statement– such as","Older People (NCAOP)"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2023 Higher Level — © State Examinations Commission.",
     id: "cons-2023-hl-q10-c", topicId: "cons-6-3", conceptId: "where-to-locate-a-low-energy-feature",
     section: "B", questionRef: "2023 HL Q10(c)",
     questionText: "Discuss in detail, two design considerations that need to be taken into account when deciding on the location of a MVHR unit in a dwelling house. OR 10. “People regardless of age, size, ability or disability are positively contributing to the social, economic and cultural life of our communities. However, finding suitable and appropriate homes that can accommodate our changing needs over time can be difficult - whether for families with young children, a person with a temporary or permanent injury, someone with a disability, or an older person living independently. Universal Design can meet everyone’s needs through flexible homes designed to adapt to lifecycle and lifestyle patterns of people over time.” Adapted from: Universal Design Guidelines for Homes in Ireland Published by National Disability Authority",
@@ -1030,11 +1025,9 @@ export const CARDS: SecCard[] = [
     id: "cons-2024-hl-q1-a", topicId: "cons-3-2", conceptId: "vertical-section-entrance-porch",
     section: "B", questionRef: "2024 HL Q1(a)",
     questionText: "To a scale of 1:10, draw a vertical section through the entrance porch showing the external wall of the porch, the sloping roof, and the front wall of the house. Include the typical construction details of the porch from a point 300 mm below the wall plate, through the sloping rafters, to a level 350 mm above the abutment of the porch roof with the front wall of the house. Show three courses of slate at eaves.",
-    tariffModel: {"kind":"fixed","notation":"4 x 4 + 4 x 4 + 4 x 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 48,
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 8","answer":2,"ofParts":3,"perPart":8}, totalMarks: 16,
     rows: [
-    { id: "cons-2024-hl-q1-a-r1", kind: "anyN", verbatim: "External wall and eaves - typical detailing", marks: 16, contextNote: "External wall and eaves - typical detailing", openList: true, group: {"claimMax":4,"perOption":4,"options":["Larch cladding rain screen","Battens / counter battens","Cavity wall blockwork & wall ties","Full-fill insulation","Cavity closer","Wallplates","Skim"]} },
-    { id: "cons-2024-hl-q1-a-r2", kind: "anyN", verbatim: "Lean - To roof - typical detailing", marks: 16, contextNote: "Lean - To roof - typical detailing", openList: true, group: {"claimMax":4,"perOption":4,"options":["Fascia / soffit / gutter (Any two)","Three courses of slate","Slating battens 50 × 30 mm @ 400 mm centres","Roof breather membrane","Ventilation","Roof rafter & insulation","Air barrier membrane & airtightness taping","Insulated plasterboard (50 mm insulation + 12.5 mm plasterboard)"]} },
-    { id: "cons-2024-hl-q1-a-r3", kind: "anyN", verbatim: "Front wall of house and abutment - typical detailing", marks: 16, contextNote: "Front wall of house and abutment - typical detailing", openList: true, group: {"claimMax":4,"perOption":4,"options":["External & internal render","Full-fill cavity wall blockwork & low conductivity wall ties","Concrete lintels","Cavity closer","Rafter support","Stepped DPC","Lead flashing (under and apron)"]} },
+    { id: "cons-2024-hl-q1-a-r1", kind: "anyN", verbatim: "To a scale of 1:10, draw a vertical section through the entrance porch showing the external wall of the porch, the slopi", marks: 16, openList: true, group: {"claimMax":2,"perOption":8,"options":["External wall and eaves - typical detailing","Lean - To roof - typical detailing","Front wall of house and abutment - typical detailing"]} },
     ],
   } as SecCard,
   {
@@ -1205,9 +1198,9 @@ export const CARDS: SecCard[] = [
     id: "cons-2024-hl-q10-a", topicId: "cons-6-3", conceptId: "retrofitting-a-dwelling",
     section: "B", questionRef: "2024 HL Q10(a)",
     questionText: "Using notes and freehand sketches, discuss the importance of any two of the following when carrying out a retrofit to achieve the EnerPHit Passive House design standard: • airtightness • windows • building fabric. Discuss the above statement in detail.",
-    tariffModel: {"kind":"bestNofParts","notation":"4 x 6","answer":4,"ofParts":6,"perPart":6}, totalMarks: 24,
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 12","answer":2,"ofParts":5,"perPart":12}, totalMarks: 24,
     rows: [
-    { id: "cons-2024-hl-q10-a-r1", kind: "anyN", verbatim: "Using notes and freehand sketches, discuss the importance of any two of the following when carrying out a retrofit to ac", marks: 24, openList: true, group: {"claimMax":4,"perOption":6,"options":["The way to get to the EnerPHit standard is by implementing the five passive house principles","Airtightness","Windows","Building fabric","Discussion of the above statement– such as","Abiotic depletion of materials and components"]} },
+    { id: "cons-2024-hl-q10-a-r1", kind: "anyN", verbatim: "Using notes and freehand sketches, discuss the importance of any two of the following when carrying out a retrofit to ac", marks: 24, openList: true, group: {"claimMax":2,"perOption":12,"options":["The way to get to the EnerPHit standard is by implementing the five passive house principles","Airtightness","Windows","Building fabric","Abiotic depletion of materials and components"]} },
     ],
   } as SecCard,
   {
@@ -1409,19 +1402,6 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"bestNofParts","notation":"2 x 14","answer":2,"ofParts":4,"perPart":14}, totalMarks: 28,
     rows: [
     { id: "cons-2025-hl-q10-b-r1", kind: "anyN", verbatim: "Using notes and freehand sketches, suggest a preferred orientation for the house shown. Show the sun path on your sketch", marks: 28, openList: true, group: {"claimMax":2,"perOption":14,"options":["Orientation","Lowers energy bills","Reduces carbon dioxide emission","Enhances wellbeing"]} },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC029ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2025 Higher Level — © State Examinations Commission.",
-    id: "cons-2025-hl-q10-c", topicId: "cons-6-4", conceptId: "reducing-solar-overheating",
-    section: "B", questionRef: "2025 HL Q10(c)",
-    questionText: "Solar overheating may occur during the summer months in the house shown. Using notes and freehand sketches, suggest two ways to reduce the possibility of solar overheating while respecting the character of this house design. OR 10. “The historic built environment is critical in addressing climate change. Protecting, adapting and reusing historic building stock reduces environmental waste and the carbon dioxide emissions associated with demolition and reconstruction. Traditional building methods and materials have much to teach us about the skills needed to work with prevailing weather conditions and the use of available local materials.” Adapted from: Heritage Ireland 2030 Department of Housing, Local Government and Heritage Published on: gov.ie/housing",
-    tariffModel: {"kind":"bestNofParts","notation":"2 x 6","answer":2,"ofParts":5,"perPart":6}, totalMarks: 12,
-    rows: [
-    { id: "cons-2025-hl-q10-c-r1", kind: "anyN", verbatim: "Solar overheating may occur during the summer months in the house shown. Using notes and freehand sketches, suggest two ", marks: 12, openList: true, group: {"claimMax":2,"perOption":6,"options":["Dynamic Glass","Mature Deciduous trees","Brise Soleil","Shutters","Thermal Mass"]} },
     ],
   } as SecCard,
   {

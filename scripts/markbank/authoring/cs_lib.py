@@ -41,6 +41,12 @@ PART_TOTAL = re.compile(r'\((\d{1,3})\s*marks?\)|sub-?\s*total\s+(\d{1,3})', re.
 # "Scale - 4 marks Drafting - 4 marks", "+ 4 marks (3 for drawing, 1 for
 # annotation)" — priced, but not a named answer, so a card may leave it out.
 DRAW_ALLOWANCE = re.compile(r'(?:scale|drafting|drawing|annotation)\s*[-–]?\s*(\d{1,3})\s*marks?', re.I)
+# The presentation band, priced as a descending run under its own heading:
+#   Quality of sketch (excellent, good, fair)
+#   6 4 2
+# Its top value is what a full answer earns, and like the scale and drafting
+# marks it is awarded for presentation rather than for a named answer.
+BAND = re.compile(r'(?:quality of \w+|excellent,? ?good,? ?fair)[^\d]{0,40}?(\d{1,3})(?:\s+\d{1,3})+', re.I)
 # A "point" that names nothing. The build refuses these anyway; catching them
 # here says which scheme line is at fault instead of which card.
 CONTENT_FREE = re.compile(
@@ -108,7 +114,8 @@ class Author:
         from the same list.
         """
         block_lines = self.S.marks.get((q, letter), [])
-        tariffs = [(int(a), int(b)) for a, b in CS.GROUP_TARIFF.findall(' '.join(block_lines))]
+        block = ' '.join(block_lines)
+        tariffs = [(int(a), int(b)) for a, b in CS.GROUP_TARIFF.findall(block)]
         if index is not None and index < len(tariffs):
             return tariffs[index]
         for gname, t, _ in self.S.groups(q, letter):
@@ -117,7 +124,6 @@ class Author:
         # A group whose mark rows are each priced the same: the scheme sets
         # "Guideline 1 (3 for note, 3 for sketch) 6 / Guideline 2 ... 6" under
         # each task, which is two claimable answers at 6 rather than a total.
-        block = ' '.join(self.S.marks.get((q, letter), []))
         # The commonest form by far, and the one groups() cannot reach: the
         # mark table prints "6 x 5 marks" as a line of its own, above rows that
         # carry no bullet character, so there is no group structure to hang it
@@ -149,8 +155,24 @@ class Author:
         # most of Ordinary Level looks like.
         rows = self.S.mark_rows(q, letter)
         scaffold = [(lab, mk) for lab, mk in rows if CS.SCAFFOLD_ROW.match(lab)]
+        printed = {int(a or b) for a, b in PART_TOTAL.findall(block)}
+
+        # Two readings of the same block, and the printed total decides between
+        # them. "Suitable finish 4 / Reason 1 4 / Reason 2 4 / Sub-total 12" is
+        # THREE answers at four, not the two the scaffold rows alone suggest --
+        # taking the scaffold reading gave a card worth 8 on a 12-mark question.
+        # Where no total is printed the scaffold reading is the safer of the two,
+        # because a named row may be a heading rather than an answer.
+        cand = []
         if len(scaffold) >= 2 and len({mk for _, mk in scaffold}) == 1:
-            return (len(scaffold), scaffold[0][1])
+            cand.append((len(scaffold), scaffold[0][1]))
+        if len(rows) >= 2 and len({mk for _, mk in rows}) == 1:
+            cand.append((len(rows), rows[0][1]))
+        for n, per in cand:
+            if printed and n * per in printed:
+                return (n, per)
+        if cand:
+            return cand[0]
 
         # N identically-named slots against a printed total. "Three functional
         # requirements of an external wall (18 marks)" over "Functional
@@ -201,6 +223,7 @@ class Author:
         if not printed or total in printed:
             return
         allowance = sum(int(x) for x in DRAW_ALLOWANCE.findall(block))
+        allowance += sum(int(x) for x in BAND.findall(block))
         if any(total + allowance == p for p in printed):
             return
         raise Refused(f'Q{q}({letter}): rows make {total} but the scheme prints '
@@ -285,6 +308,7 @@ class Author:
         # three named options is two of three at six, not two of the twenty-six
         # bullets underneath them -- which is both a menu the deck will not show
         # and a misreading of the question.
+        block = ' '.join(self.S.marks.get((q, letter), []))
         named_groups = [g for g in gs if g[0]]
         if len(gs) > 1 and len(named_groups) == len(gs):
             try:
@@ -294,6 +318,18 @@ class Author:
             if n:
                 if n % len(gs) == 0:
                     self._forced_each = (n // len(gs), per)
+                elif ANY_N.search(qtext) or ANY_N.search(block):
+                    # "any two of the following" over three named groups is two
+                    # of THREE, whatever the tariff's own multiplier says: the
+                    # 4 in "(4 x 5 marks)" counts answers, not groups, and
+                    # reading it as the claim merged all three groups into a
+                    # 29-option menu the deck will not show.
+                    k = N_WORD[(ANY_N.search(qtext) or ANY_N.search(block)).group(1).lower()]
+                    tot_ = n * per
+                    if 0 < k < len(gs) and tot_ % k == 0:
+                        gs = [(None, None, [g[0] for g in gs])]
+                        multi = False
+                        self._forced = (k, tot_ // k)
                 elif n < len(gs):
                     gs = [(None, None, [g[0] for g in gs])]
                     multi = False
@@ -352,6 +388,18 @@ class Author:
                              options, name or ''))
             row_names.append(name)
             parts_note.append(f'{n} x {per}')
+        if len(rows) == 1 and rows[0].get('group', {}).get('claimMax') == 1 \
+                and len(rows[0]['group']['options']) > 6:
+            # A menu of one from twenty is not a menu. Where the scheme prices a
+            # single named answer, that answer is the card -- 2021 Ordinary
+            # Q1(b) is "Eaves gutter/ downpipe" for three marks, and the twenty
+            # options came from the previous part's specification list.
+            lone = [(lab, mk) for lab, mk in self.S.mark_rows(q, letter)
+                    if not CS.SCAFFOLD_ROW.match(lab) and len(lab) > 8
+                    and not CONTENT_FREE.match(lab)]
+            if len(lone) == 1 and _squash(lone[0][0]) in self.raw:
+                rows = []
+
         if not rows:
             # A part whose scheme names ONE thing is still a card -- it is just
             # not a menu. "Show the typical design detailing to prevent water
