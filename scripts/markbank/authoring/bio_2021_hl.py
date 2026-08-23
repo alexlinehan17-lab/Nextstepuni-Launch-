@@ -84,4 +84,18 @@ A.card(13, 'b', 'iii', topic='bio-2-2', concept='how-atp-and-nadh-are-made',
        notes='Which answer applies depends on which molecule was named at part (ii) — the '
              'scheme gives one route for ATP and one for NADH.')
 
+
+# ── Drawing questions whose scheme says what the drawing must show ─────────
+A.card(9, 'b', 'iv', topic='bio-2-1', concept='enzyme-activity-against-temperature-curve',
+       source='pdf', from_run=((9, 'b', 'iv'), 0, slice(17, None)), marks=[3],
+       notes='The curve rises to a peak at the optimum and falls away sharply after it, '
+             'because the enzyme denatures rather than merely slowing.')
+
+A.card(16, 'b', 'i', topic='bio-3-4', concept='parts-of-the-male-reproductive-system',
+       source='pdf', from_run=((16, None, 'i'), 0, slice(0, 9)), marks=[6],
+       notation='3 + 3, and only 3 if any one of the four is missing',
+       checked='The question runs its list of parts to label on after the instruction '
+               'without punctuation between them, which is why the text is flagged. Both '
+               'halves are the question as printed.')
+
 A.emit()

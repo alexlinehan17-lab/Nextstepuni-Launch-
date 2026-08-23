@@ -9207,6 +9207,33 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2021-ol-q9-b-vii", topicId: "bio-2-1", conceptId: "enzyme-activity-against-ph-curve",
+    section: "A", questionRef: "2021 OL Q9(b)(vii)",
+    stem: "Rate of enzyme activity pH",
+    questionText: "Sketch a graph to show the results of your investigation using the axis provided.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Increasing line, peak, and decreasing line", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2021-ol-q11-b-vii", topicId: "bio-3-1", conceptId: "food-chain-from-a-passage",
+    section: "A", questionRef: "2021 OL Q11(b)(vii)",
+    questionText: "Draw a food chain using the information from the above passage. (27)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Pine nuts  Squirrel  Pine marten", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2022, level: "ordinary",
     paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
