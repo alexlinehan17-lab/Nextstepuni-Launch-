@@ -362,11 +362,23 @@ def baseline_check(results):
     return problems
 
 
+def refs_hash(subject):
+    """A digest of every citation in the shipped deck, in order.
+
+    The card COUNT alone leaves a hole: re-citing a card — same deck size,
+    different address — would change coverage without tripping the count pin,
+    and nothing would force a re-measure. The hash moves when any citation
+    does."""
+    import hashlib
+    text = '\n'.join(f'{cid}\t{ref}' for cid, ref in shipped_cards(subject))
+    return hashlib.sha256(text.encode('utf-8')).hexdigest()[:16]
+
+
 def baseline_write(results):
     data = {r['subject']: {
         'leaves': r['leaves'], 'covered': r['covered'], 'open': r['open'],
         'orphans': len(r['orphans']), 'cards': r['cards'],
-        'coveragePct': r['coveragePct'],
+        'coveragePct': r['coveragePct'], 'refsHash': refs_hash(r['subject']),
     } for r in results}
     with open(BASELINE, 'w', encoding='utf-8') as fh:
         json.dump(data, fh, indent=1, sort_keys=True)

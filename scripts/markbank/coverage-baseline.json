@@ -5,7 +5,8 @@
   "covered": 886,
   "leaves": 954,
   "open": 65,
-  "orphans": 2
+  "orphans": 2,
+  "refsHash": "967a2d72ff0648b1"
  },
  "biology": {
   "cards": 1229,
@@ -13,7 +14,8 @@
   "covered": 1405,
   "leaves": 1636,
   "open": 231,
-  "orphans": 0
+  "orphans": 0,
+  "refsHash": "42eeb25d476dca17"
  },
  "business": {
   "cards": 606,
@@ -21,7 +23,8 @@
   "covered": 677,
   "leaves": 916,
   "open": 239,
-  "orphans": 6
+  "orphans": 6,
+  "refsHash": "4ad16765c129d1c4"
  },
  "chemistry": {
   "cards": 779,
@@ -29,7 +32,8 @@
   "covered": 962,
   "leaves": 1143,
   "open": 181,
-  "orphans": 5
+  "orphans": 5,
+  "refsHash": "f294b1d87c22d990"
  },
  "construction-studies": {
   "cards": 505,
@@ -37,7 +41,8 @@
   "covered": 419,
   "leaves": 499,
   "open": 80,
-  "orphans": 0
+  "orphans": 0,
+  "refsHash": "ab5312971b0e0217"
  },
  "economics": {
   "cards": 386,
@@ -45,7 +50,8 @@
   "covered": 340,
   "leaves": 658,
   "open": 318,
-  "orphans": 0
+  "orphans": 0,
+  "refsHash": "98f811ec3f53b2ac"
  },
  "home-economics": {
   "cards": 571,
@@ -53,7 +59,8 @@
   "covered": 545,
   "leaves": 782,
   "open": 237,
-  "orphans": 1
+  "orphans": 1,
+  "refsHash": "7cddab6869c06c08"
  },
  "maths": {
   "cards": 785,
@@ -61,7 +68,8 @@
   "covered": 800,
   "leaves": 989,
   "open": 189,
-  "orphans": 0
+  "orphans": 0,
+  "refsHash": "5d368271e83e0197"
  },
  "physics": {
   "cards": 961,
@@ -69,6 +77,7 @@
   "covered": 943,
   "leaves": 1218,
   "open": 275,
-  "orphans": 12
+  "orphans": 12,
+  "refsHash": "50dd866a59561c3b"
  }
 }

@@ -19,6 +19,7 @@
  * Business cards.
  */
 import { describe, expect, it } from 'vitest';
+import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
@@ -61,13 +62,24 @@ const TAIL =
 describe('Mark Bank paper-coverage ratchet', () => {
   it.each(SUBJECTS)('%s deck matches its measured baseline', (subject) => {
     const cards = deckCards(subject);
+    const remeasure =
+      `Re-measure before shipping: python3 scripts/markbank/authoring/` +
+      `reconcile.py --all --baseline write (and read what --baseline check ` +
+      `says about the change).`;
     expect(
       cards.length,
       `${subject}: deck has ${cards.length} cards but the coverage baseline ` +
-      `recorded ${baseline[subject].cards}. Re-measure before shipping: ` +
-      `python3 scripts/markbank/authoring/reconcile.py --all --baseline write ` +
-      `(and read what --baseline check says about the change).`,
+      `recorded ${baseline[subject].cards}. ${remeasure}`,
     ).toBe(baseline[subject].cards);
+    // The count alone leaves a hole: a re-cited card changes coverage with
+    // no size change. The hash moves when any citation does.
+    const digest = createHash('sha256')
+      .update(cards.map(({ id, ref }) => `${id}\t${ref}`).join('\n'))
+      .digest('hex').slice(0, 16);
+    expect(
+      digest,
+      `${subject}: a questionRef changed since coverage was measured. ${remeasure}`,
+    ).toBe((baseline[subject] as { refsHash?: string }).refsHash);
   });
 
   it.each(SUBJECTS)('%s citations all parse under the grammar', (subject) => {
