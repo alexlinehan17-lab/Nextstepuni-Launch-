@@ -4399,7 +4399,7 @@
  },
  {
   "id": "maths-2021-ol-p1-q10-a-i",
-  "topicId": "maths-2-3",
+  "topicId": "maths-3-3",
   "conceptId": "how-long-takes-release-million-cubic",
   "level": "ordinary",
   "year": 2021,
@@ -6005,8 +6005,146 @@
   "notes": ""
  },
  {
+  "id": "maths-2022-hl-p1-q7-d",
+  "topicId": "maths-4-2",
+  "conceptId": "least-value-greatest-value-calculus-solution",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 HL Paper 1 Q7(d)",
+  "questionText": "Find the least value and the greatest value of h(x), for 0 ≤ x ≤ 8, x∈ℝ. (d) Use calculus in your solution. You may also use information from the graph above, which is to scale",
+  "stem": "",
+  "figureKey": "maths-2022-HL-paper-p021-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 4, 8, 12, 15)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2022-hl-p1-q7-d-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit, for example, indicates least value at h(0) Any correct differentiation Brings down h′(x) from (b)",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12, four parts for 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Work of merit, for example, indicates least value at h(0) Any correct differentiation Brings down h′(x) from (b)",
+      "2 steps correct",
+      "3 steps correct"
+     ],
+     "perOptionSteps": [
+      4,
+      4,
+      7
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "maths-2022-hl-p1-q7-e",
+  "topicId": "maths-5-2",
+  "conceptId": "how-long-after-start-session-hannah",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 HL Paper 1 Q7(e)",
+  "questionText": "How long after the start of the session is Hannah’s heart-rate decreasing most quickly, within the first 8 minutes? Give your answer in minutes and seconds",
+  "stem": "",
+  "figureKey": "maths-2022-HL-paper-p021-i1",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 3, 7, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-hl-p1-q7-e-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit, for example, marks relevant point on graph, indicates h′′(x) Brings down h′(x) from (b) First differences found and some indication of the greatest first difference",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Work of merit, for example, marks relevant point on graph, indicates h′′(x) Brings down h′(x) from (b) First differences found and some indication of the greatest first difference",
+      "2 steps correct, including Step 1"
+     ],
+     "perOptionSteps": [
+      3,
+      7
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "maths-2022-hl-p1-q7-g",
+  "topicId": "maths-3-1",
+  "conceptId": "martha-does-each-exercise-longer-time",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 HL Paper 1 Q7(g)",
+  "questionText": "Martha does each exercise for a longer time than Hannah. For 0 ≤ x ≤ 10, Martha’s heart-rate, m(x), is: m(x) = h(0∙8 x) Use h(x) = 2x³−28∙5x² + 105x + 70 to write m(x) in the form: m(x) = ax³ + bx² + cx + d where a, b, c, d∈ℝ, for 0 ≤ x ≤ 10",
+  "stem": "",
+  "figureKey": "maths-2022-HL-paper-p022-i1",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 2, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-hl-p1-q7-g-r1",
+    "kind": "anyN",
+    "verbatim": "m(x) = 2(0 ∙8x)³−28∙5(0 ∙8x)²",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "m(x) = 2(0 ∙8x)³−28∙5(0 ∙8x)²",
+      "+105(0 ∙8x) + 70",
+      "= 1∙024x³−18∙24x² + 84x + 70"
+     ],
+     "perOptionSteps": [
+      2,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "maths-2022-hl-p1-q8-a",
-  "topicId": "maths-5-1",
+  "topicId": "maths-2-3",
   "conceptId": "complete-table-value-given",
   "level": "higher",
   "year": 2022,
@@ -6098,14 +6236,14 @@
  },
  {
   "id": "maths-2022-hl-p1-q8-d",
-  "topicId": "maths-4-2",
-  "conceptId": "least-value-greatest-value-calculus-solution",
+  "topicId": "maths-2-3",
+  "conceptId": "during-minute-period-what-greatest-number",
   "level": "higher",
   "year": 2022,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q8(d)",
-  "questionText": "Find the least value and the greatest value of h(x), for 0 ≤ x ≤ 8, x∈ℝ. (d) Use calculus in your solution. You may also use information from the graph above, which is to scale. Least value of h(x): ____________ Greatest value of h(x): ____________ This question continues on the next page. 17",
+  "questionText": "During a 50-minute period, what is the greatest number of minutes for which the point A (d) could be higher than 42 m?",
   "stem": "",
   "figureKey": "maths-2022-HL-paper-p024-i0",
   "labelKey": [],
@@ -6143,14 +6281,14 @@
  },
  {
   "id": "maths-2022-hl-p1-q8-e",
-  "topicId": "maths-5-1",
-  "conceptId": "how-long-after-start-session-hannah",
+  "topicId": "maths-2-3",
+  "conceptId": "solving-equation-second-time-value-point",
   "level": "higher",
   "year": 2022,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q8(e)",
-  "questionText": "How long after the start of the session is Hannah’s heart-rate decreasing most quickly, within the first 8 minutes? Give your answer in minutes and seconds. Remember that h(x) = 2x³−28∙5x² + 105x + 70. Bruno, Karen, and Martha start a training session at the same time as Hannah. All of their heart-rates are measured in BPM. For the first 8 minutes of the session, Bruno’s heart-rate, b(x), is always 15 BPM more",
+  "questionText": "By solving the following equation, find the second time (value of t) that the point A is at a (e) height of 110 m, after it starts turning: 𝜋/3t) = 110 Give your answer in minutes, correct to 2 decimal places",
   "stem": "",
   "figureKey": "maths-2022-HL-paper-p024-i1",
   "labelKey": [],
@@ -6237,7 +6375,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-a",
-  "topicId": "maths-2-3",
+  "topicId": "maths-3-1",
   "conceptId": "amount-drug-left-alex-body-days",
   "level": "higher",
   "year": 2022,
@@ -6277,7 +6415,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-b",
-  "topicId": "maths-2-3",
+  "topicId": "maths-3-1",
   "conceptId": "how-long-after-single-injection-will",
   "level": "higher",
   "year": 2022,
@@ -6322,7 +6460,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-c",
-  "topicId": "maths-2-3",
+  "topicId": "maths-3-1",
   "conceptId": "explain-why-total-amount-drug-alex",
   "level": "higher",
   "year": 2022,
@@ -6368,7 +6506,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-d",
-  "topicId": "maths-2-3",
+  "topicId": "maths-3-1",
   "conceptId": "total-amount-drug-alex-body-immediately",
   "level": "higher",
   "year": 2022,
@@ -6498,7 +6636,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-f-ii",
-  "topicId": "maths-2-3",
+  "topicId": "maths-3-1",
   "conceptId": "immediately-after-7th-injection-there-drug",
   "level": "higher",
   "year": 2022,
@@ -6543,7 +6681,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q10-a",
-  "topicId": "maths-5-1",
+  "topicId": "maths-5-2",
   "conceptId": "proportion-digits-recalled-correctly-after-hours",
   "level": "higher",
   "year": 2022,
@@ -6588,7 +6726,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q10-b",
-  "topicId": "maths-5-1",
+  "topicId": "maths-5-2",
   "conceptId": "after-how-many-hours-would-exactly",
   "level": "higher",
   "year": 2022,
@@ -6765,7 +6903,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q10-e-ii",
-  "topicId": "maths-5-1",
+  "topicId": "maths-5-2",
   "conceptId": "student-got-guitar-exam-after-two",
   "level": "higher",
   "year": 2022,
@@ -7729,7 +7867,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q8-a",
-  "topicId": "maths-1-2",
+  "topicId": "maths-1-6",
   "conceptId": "jena-researching-fuel-consumption-cars-she",
   "level": "higher",
   "year": 2022,
@@ -7826,7 +7964,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q8-a-iv",
-  "topicId": "maths-1-2",
+  "topicId": "maths-1-6",
   "conceptId": "based-data-given-would-you-more",
   "level": "higher",
   "year": 2022,
@@ -8329,7 +8467,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q10-a-ii",
-  "topicId": "maths-1-2",
+  "topicId": "maths-3-3",
   "conceptId": "runners-fastest-times-qualified-final-assuming",
   "level": "higher",
   "year": 2022,
@@ -8466,7 +8604,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q10-d",
-  "topicId": "maths-1-2",
+  "topicId": "maths-3-3",
   "conceptId": "300-runners-take-part-road-race",
   "level": "higher",
   "year": 2022,
@@ -8517,7 +8655,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q10-e",
-  "topicId": "maths-1-2",
+  "topicId": "maths-3-3",
   "conceptId": "sorcha-ran-two-different-marathons-windy",
   "level": "higher",
   "year": 2022,
@@ -9518,7 +9656,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q8-a-i",
-  "topicId": "maths-3-3",
+  "topicId": "maths-2-3",
   "conceptId": "work-out-how-many-acid-200",
   "level": "ordinary",
   "year": 2022,
@@ -9649,7 +9787,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q8-a-iv",
-  "topicId": "maths-3-3",
+  "topicId": "maths-2-3",
   "conceptId": "when-she-making-another-mixture-jessica",
   "level": "ordinary",
   "year": 2022,
@@ -9694,7 +9832,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q8-b-i",
-  "topicId": "maths-3-3",
+  "topicId": "maths-2-3",
   "conceptId": "write-down-values-cube-these-values",
   "level": "ordinary",
   "year": 2022,
@@ -11046,7 +11184,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q6-a-i",
-  "topicId": "maths-4-1",
+  "topicId": "maths-2-1",
   "conceptId": "write-down-adb-size-total-angle",
   "level": "ordinary",
   "year": 2022,
@@ -11089,7 +11227,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q6-a-ii",
-  "topicId": "maths-4-1",
+  "topicId": "maths-2-1",
   "conceptId": "aod-130-work-out-size-angle",
   "level": "ordinary",
   "year": 2022,
@@ -11267,6 +11405,269 @@
       4,
       4,
       7
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "maths-2022-ol-p2-q7-a-ii",
+  "topicId": "maths-1-6",
+  "conceptId": "what-does-stem-leaf-plot-about",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 2 Q7(a)(ii)",
+  "questionText": "What does the stem-and-leaf plot show about the weights of the dogs on Day X and Day Y ?",
+  "stem": "",
+  "figureKey": "maths-2022-OL-paper-p045-i1",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 2, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p2-q7-a-ii-r1",
+    "kind": "anyN",
+    "verbatim": "Conclusion:",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Conclusion:",
+      "That the weight of the dogs has increased from",
+      "Day X to Day Y"
+     ],
+     "perOptionSteps": [
+      2,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "maths-2022-ol-p2-q7-a-iii",
+  "topicId": "maths-1-7",
+  "conceptId": "iii-correlation-coefficient-between-weight-day",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 2 Q7(a)(iii)",
+  "questionText": "(iii) r is the correlation coefficient between the weight on Day X and the weight on Day Y. Based on the data in the table, pick the most likely value of r from the list below",
+  "stem": "",
+  "figureKey": "maths-2022-OL-paper-p045-i2",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 2, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p2-q7-a-iii-r1",
+    "kind": "anyN",
+    "verbatim": "Work given in the answer box identifies the value of r as 0 ∙9 accompanied with a valid reason",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. Marked in order: Full Credit.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Work given in the answer box identifies the value of r as 0 ∙9 accompanied with a valid reason"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "maths-2022-ol-p2-q7-b",
+  "topicId": "maths-1-6",
+  "conceptId": "complete-table-filling-four-missing-values",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 2 Q7(b)",
+  "questionText": "Complete the table, by filling in the four missing values",
+  "stem": "",
+  "figureKey": "maths-2022-OL-paper-p046-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 3, 5, 8, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p2-q7-b-r1",
+    "kind": "anyN",
+    "verbatim": "1 correct value",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "1 correct value",
+      "2 correct values",
+      "3 correct values Note: Watch out for consistent work here"
+     ],
+     "perOptionSteps": [
+      3,
+      2,
+      5
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "maths-2022-ol-p2-q7-c-ii",
+  "topicId": "maths-1-2",
+  "conceptId": "probability-all-three-animals-picked-were",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 2 Q7(c)(ii)",
+  "questionText": "Find the probability that all three animals picked were male dogs. Give your answer correct to 3 decimal places",
+  "stem": "",
+  "figureKey": "maths-2022-OL-paper-p046-i1",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 2, 3, 4, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p2-q7-c-ii-r1",
+    "kind": "anyN",
+    "verbatim": "Part(i) correct correct in (ii)",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Marked in order: Mid Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Part(i) correct correct in (ii)",
+      "(i) correct and 2 correct fractions in (ii) 3 correct fractions in (ii) Incorrect operation used Full Credit (-1):  Incorrect rounding"
+     ],
+     "perOptionSteps": [
+      2,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "maths-2022-ol-p2-q7-d",
+  "topicId": "maths-1-6",
+  "conceptId": "female-cats-were-put-separate-pens",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 2 Q7(d)",
+  "questionText": "The 9 female cats were put in 9 separate pens. Work out the number of ways in which this could have been done (that is, the number of different possible arrangements)",
+  "stem": "",
+  "figureKey": "maths-2022-OL-paper-p046-i2",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 2, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p2-q7-d-r1",
+    "kind": "anyN",
+    "verbatim": "9! = 362 880",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "9! = 362 880"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "maths-2022-ol-p2-q7-e",
+  "topicId": "maths-1-2",
+  "conceptId": "end-week-animals-had-left-shelter",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 2 Q7(e)",
+  "questionText": "By the end of this week, 10 of the animals had left the shelter, and no new animals had been (e) taken in. If an animal was picked at random at the end of this week, the probability of picking a dog would be 11/15",
+  "stem": "",
+  "figureKey": "maths-2022-OL-paper-p047-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 2, 3, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p2-q7-e-r1",
+    "kind": "anyN",
+    "verbatim": "Finds total number of animals in shelter (30) Finds equivalent fraction (22/30) Finds 4/15",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Finds total number of animals in shelter (30) Finds equivalent fraction (22/30) Finds 4/15",
+      "Finds the number dogs or number of cats at the end of the week"
+     ],
+     "perOptionSteps": [
+      2,
+      3
      ]
     }
    }
@@ -11457,14 +11858,14 @@
  },
  {
   "id": "maths-2022-ol-p2-q8-c-i",
-  "topicId": "maths-1-2",
-  "conceptId": "probability-first-animal-picked-was-cat",
+  "topicId": "maths-3-4",
+  "conceptId": "work-out-area-circle-within-which",
   "level": "ordinary",
   "year": 2022,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q8(c)(i)",
-  "questionText": "Find the probability that the first animal picked was a cat. (ii) Find the probability that all three animals picked were male dogs. Give your answer correct to 3 decimal places. 18",
+  "questionText": "Work out the area of the circle within which the Fastnet lighthouse can be seen. Give your answer correct to the nearest km²",
   "stem": "",
   "figureKey": "maths-2022-OL-paper-p050-i0",
   "labelKey": [],
@@ -11497,14 +11898,14 @@
  },
  {
   "id": "maths-2022-ol-p2-q8-c-ii",
-  "topicId": "maths-1-2",
-  "conceptId": "probability-all-three-animals-picked-were",
+  "topicId": "maths-3-4",
+  "conceptId": "nautical-miles-work-out-how-many",
   "level": "ordinary",
   "year": 2022,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q8(c)(ii)",
-  "questionText": "Find the probability that all three animals picked were male dogs. Give your answer correct to 3 decimal places. 18",
+  "questionText": "(ii)50 km = 27 nautical miles. Use this to work out how many km are in 1 nautical mile. Give your answer correct to 4 significant figures",
   "stem": "",
   "figureKey": "maths-2022-OL-paper-p050-i1",
   "labelKey": [],
@@ -11538,13 +11939,13 @@
  {
   "id": "maths-2022-ol-p2-q8-d",
   "topicId": "maths-3-4",
-  "conceptId": "female-cats-were-put-separate-pens",
+  "conceptId": "top-fastnet-lighthouse-sea-level-angle",
   "level": "ordinary",
   "year": 2022,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 2 Q8(d)",
-  "questionText": "The 9 female cats were put in 9 separate pens. Work out the number of ways in which this could have been done (that is, the number of different possible arrangements). The top of the Fastnet lighthouse, F, is 49 m above sea level. The angle of elevation of the top of the lighthouse from a ship S is 1∙2°, as shown in the diagram below (not to scale)",
+  "questionText": "The top of the Fastnet lighthouse, F, is 49 m above sea level. (d) The angle of elevation of the top of the lighthouse from a ship S is 1∙2°, as shown in the diagram below (not to scale)",
   "stem": "",
   "figureKey": "maths-2022-OL-paper-p050-i2",
   "labelKey": [],
@@ -11582,7 +11983,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q9-a",
-  "topicId": "maths-2-1",
+  "topicId": "maths-3-4",
   "conceptId": "state-which-statements-most-likely-true",
   "level": "ordinary",
   "year": 2022,
@@ -11719,7 +12120,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q9-e-i",
-  "topicId": "maths-2-1",
+  "topicId": "maths-3-4",
   "conceptId": "correct-decimal-places",
   "level": "ordinary",
   "year": 2022,
@@ -11766,7 +12167,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q9-e-ii",
-  "topicId": "maths-2-1",
+  "topicId": "maths-3-4",
   "conceptId": "acb-angle-roof-makes-point-correct",
   "level": "ordinary",
   "year": 2022,
@@ -11955,7 +12356,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q10-b-iv",
-  "topicId": "maths-3-3",
+  "topicId": "maths-1-5",
   "conceptId": "according-2019-irish-sport-monitor-report",
   "level": "ordinary",
   "year": 2022,
@@ -15532,7 +15933,7 @@
  },
  {
   "id": "maths-2023-ol-p1-q6-a-i",
-  "topicId": "maths-5-2",
+  "topicId": "maths-4-2",
   "conceptId": "value",
   "level": "ordinary",
   "year": 2023,
@@ -18312,7 +18713,7 @@
  },
  {
   "id": "maths-2023-ol-p2-q9-a-iv",
-  "topicId": "maths-1-6",
+  "topicId": "maths-1-7",
   "conceptId": "draw-graph-chart-represent-data-table",
   "level": "ordinary",
   "year": 2023,
@@ -18447,7 +18848,7 @@
  },
  {
   "id": "maths-2023-ol-p2-q9-b-iii",
-  "topicId": "maths-1-6",
+  "topicId": "maths-1-7",
   "conceptId": "iii-general-students-get-rating-excellent",
   "level": "ordinary",
   "year": 2023,
@@ -18494,7 +18895,7 @@
  },
  {
   "id": "maths-2023-ol-p2-q10-a",
-  "topicId": "maths-2-3",
+  "topicId": "maths-1-3",
   "conceptId": "work-out-cba-size-angle-cba",
   "level": "ordinary",
   "year": 2023,
@@ -19336,7 +19737,7 @@
  },
  {
   "id": "maths-2024-hl-p1-q5-c-ii",
-  "topicId": "maths-3-1",
+  "topicId": "maths-4-1",
   "conceptId": "first-value-which",
   "level": "higher",
   "year": 2024,
@@ -20202,7 +20603,7 @@
  },
  {
   "id": "maths-2024-hl-p1-q10-a-i",
-  "topicId": "maths-3-1",
+  "topicId": "maths-5-2",
   "conceptId": "estimate-height-water-spinach-plant-after",
   "level": "higher",
   "year": 2024,
@@ -21027,7 +21428,7 @@
  },
  {
   "id": "maths-2024-hl-p2-q6-a",
-  "topicId": "maths-2-2",
+  "topicId": "maths-1-2",
   "conceptId": "line-segment-point-divides-line-segment",
   "level": "higher",
   "year": 2024,
@@ -22513,7 +22914,7 @@
  },
  {
   "id": "maths-2024-ol-p1-q7-b-i",
-  "topicId": "maths-3-1",
+  "topicId": "maths-5-2",
   "conceptId": "number-bacteria-after-hour-after-hours",
   "level": "ordinary",
   "year": 2024,
@@ -24387,7 +24788,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q8-a-ii",
-  "topicId": "maths-3-4",
+  "topicId": "maths-2-1",
   "conceptId": "size-angle-correct-nearest-degree",
   "level": "ordinary",
   "year": 2024,
@@ -24427,7 +24828,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q8-a-iii",
-  "topicId": "maths-3-4",
+  "topicId": "maths-2-1",
   "conceptId": "iii-second-cable-tied-sign-point",
   "level": "ordinary",
   "year": 2024,
@@ -24472,7 +24873,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q8-b-i",
-  "topicId": "maths-3-4",
+  "topicId": "maths-2-1",
   "conceptId": "part",
   "level": "ordinary",
   "year": 2024,
@@ -24517,7 +24918,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q8-b-ii",
-  "topicId": "maths-3-4",
+  "topicId": "maths-2-1",
   "conceptId": "110",
   "level": "ordinary",
   "year": 2024,
@@ -26895,7 +27296,7 @@
  },
  {
   "id": "maths-2025-hl-p1-q10-d-iii",
-  "topicId": "maths-4-1",
+  "topicId": "maths-2-2",
   "conceptId": "value-which-given-lim-4t2-leaving",
   "level": "higher",
   "year": 2025,
@@ -28864,7 +29265,7 @@
  },
  {
   "id": "maths-2025-ol-p1-q2-b",
-  "topicId": "maths-4-4",
+  "topicId": "maths-3-1",
   "conceptId": "two-complex-numbers",
   "level": "ordinary",
   "year": 2025,

@@ -128,6 +128,23 @@ def _blocks(path):
                 yield text
 
 
+def _opens_a_question(blocks, index):
+    """Does a bare number here start a question, or label a graph?
+
+    A question's first part is (a), or (i), or prose. So if the next part
+    marker after this number is (d), the number is not a head and we are still
+    inside the question that number belongs to. The graph in 2022 HL Paper 1
+    Q7 labels its x-axis up to 8, and that "8" was read as Question 8 -- taking
+    parts (d) to (g) of Question 7 with it. The neighbour test that catches an
+    axis of several labels cannot catch a single one.
+    """
+    for text in blocks[index + 1:index + 7]:
+        letter, roman, _ = _leading(text)
+        if letter or roman:
+            return letter in (None, 'a') and roman in (None, 'i')
+    return True
+
+
 def _leading(text):
     """Strip leading part markers. '(a) (i) Explain x' -> ('a', 'i', 'Explain x')."""
     letter = roman = None
@@ -205,7 +222,8 @@ class Paper:
                 # are only read as a head when the number is the very next
                 # question due — no gap, no tolerance.
                 loose = re.match(r'(\d{1,2})\.?(\s+|$)', text)
-                if loose and index not in axis and int(loose.group(1)) == q + 1:
+                if loose and index not in axis and int(loose.group(1)) == q + 1 \
+                        and _opens_a_question(blocks, index):
                     text = f'{loose.group(1)}. {text[loose.end():]}'.strip()
                     m = QHEAD.match(text) or QHEAD.match(text + ' X')
             if not m:
