@@ -74,4 +74,8 @@ A.card(1, 'a', topic='agsci-3-2', concept='identifying-crop-and-sward-plants',
        notes='The scheme marks each of these essential, so a near miss scores nothing: '
              'the barley is told from wheat by the long awns on the ears.')
 
+A.card(10, 'd', topic='agsci-4-2', concept='where-the-insemination-gun-must-reach',
+       from_run=((10, 'd', None), 0, slice(1, None)), marks=[2],
+       figure='agricultural-science-2021-OL-paper-p13-i0')
+
 A.emit()

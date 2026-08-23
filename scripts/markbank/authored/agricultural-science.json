@@ -33582,6 +33582,31 @@
   "figureKey": "agricultural-science-2021-OL-paper-p03-art"
  },
  {
+  "id": "agsci-2021-ol-q10d",
+  "topicId": "agsci-4-2",
+  "conceptId": "where-the-insemination-gun-must-reach",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "agricultural-science",
+  "section": "A",
+  "questionRef": "2021 OL Q10(d)",
+  "questionText": "A stage in artificial insemination involves placing an insemination gun inside the reproductive tract of the cow. Indicate by placing an X on the diagram exactly where the top of the insemination gun needs to be positioned.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "X on the diagram (must reach cervix)",
+    "marks": 2
+   }
+  ],
+  "stem": "The following is the reproductive system of a cow. Look at the diagram and answer the questions which follow. Vulva Bladder",
+  "figureKey": "agricultural-science-2021-OL-paper-p13-i0"
+ },
+ {
   "id": "agsci-2022-hl-q16ci",
   "topicId": "agsci-3-2",
   "conceptId": "named-grazing-systems",
@@ -34528,6 +34553,50 @@
    }
   ],
   "stem": "Soil particle Water Air"
+ },
+ {
+  "id": "agsci-2023-ol-q15b",
+  "topicId": "agsci-3-1",
+  "conceptId": "layers-of-a-brown-earth-soil",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "agricultural-science",
+  "section": "B",
+  "questionRef": "2023 OL Q15(b)",
+  "questionText": "Brian discovered the soil type to be a brown earth soil as shown in the diagram below. Assist Brian in labelling the diagram.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: Top Soil",
+    "marks": 6
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: Sub soil",
+    "marks": 4
+   }
+  ],
+  "stem": "Organic matter Parent Material Or",
+  "figureKey": "agricultural-science-2023-OL-paper-p28-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Top soil",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Sub soil",
+    "askedInThisQuestion": true
+   }
+  ]
  },
  {
   "id": "agsci-2024-hl-q10a",

@@ -6617,6 +6617,28 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2021-ol-q10d", topicId: "agsci-4-2", conceptId: "where-the-insemination-gun-must-reach",
+    section: "A", questionRef: "2021 OL Q10(d)",
+    stem: "The following is the reproductive system of a cow. Look at the diagram and answer the questions which follow. Vulva Bladder",
+    questionText: "A stage in artificial insemination involves placing an insemination gun inside the reproductive tract of the cow. Indicate by placing an X on the diagram exactly where the top of the insemination gun needs to be positioned.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "X on the diagram (must reach cervix)", marks: 2 },
+    ],
+    figure: {
+          "candId": "agricultural-science-2021-OL-paper-p13-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-OL-paper-p13-i0.png",
+          "srcHash": "d1b95294948f47d9cf490f13ac4850f6",
+          "alt": "Question 10 with a black-and-white line drawing of the reproductive tract of a cow, viewed from the side, drawn in outline with hatched shading. The stem reads: The following is the reproductive system of a cow. Look at the diagram and answer the questions which follow. Two parts are named in black text with thin pointer arrows: Vulva, arrowed from the upper right to the flared opening at the far right end of the tract, and Bladder, arrowed from below to the elongated oval organ lying underneath the tract towards the right. One further part is marked with a thick red horizontal arrow and a bold red capital A, sitting at the middle of the drawing and pointing left into the narrow constricted region where the tubular body of the tract meets the coiled and horned structures on the left of the diagram. Below the drawing are part (a), Name the part labelled A on the diagram, with a blank answer box; part (b), Outline the function of the part labelled A, with a two-row blank answer box; and part (c), State the gestation length and the oestrous cycle length (number of days) of a cow, with the pale green table header cell Number of days visible at the bottom.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2022, level: "ordinary",
     paperFileid: "LC024GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Ordinary Level — © State Examinations Commission.",
@@ -7059,6 +7081,33 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Soil sample – B", marks: 5 },
     { id: "r-2", kind: "point", verbatim: "Reason – less (air) spaces or soil particles closer together", marks: 5 },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC024GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Ordinary Level — © State Examinations Commission.",
+    id: "agsci-2023-ol-q15b", topicId: "agsci-3-1", conceptId: "layers-of-a-brown-earth-soil",
+    section: "B", questionRef: "2023 OL Q15(b)",
+    stem: "Organic matter Parent Material Or",
+    questionText: "Brian discovered the soil type to be a brown earth soil as shown in the diagram below. Assist Brian in labelling the diagram.",
+    tariffModel: {"kind":"fixed","notation":"6 + 4"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A: Top Soil", marks: 6 },
+    { id: "r-2", kind: "point", verbatim: "B: Sub soil", marks: 4 },
+    ],
+    figure: {
+          "candId": "agricultural-science-2023-OL-paper-p28-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-OL-paper-p28-i0.png",
+          "srcHash": "eb7db9705703bca7706870e407abd405",
+          "alt": "A three-dimensional block diagram of a soil profile, drawn as a cut cube of soil with a dense green grass sward growing on its upper surface. Four blue arrows point in from the left, each into a different horizontal layer of the cut face. From the top down: an arrow labelled in words 'Organic matter' points into the thin very dark band immediately beneath the grass; an arrow labelled with a bold red A points into the mid-brown layer below that, which is speckled with small dark fragments; an arrow labelled with a bold red B points into the darker reddish-brown layer beneath, also speckled; an arrow labelled in words 'Parent Material' points into the dark brown lowest soil layer, which contains larger dark stone fragments. Beneath that layer the block finishes in a band of pale angular broken rock. Above the diagram is the printed stem '(b) Brian discovered the soil type to be a brown earth soil as shown in the diagram below. Assist Brian in labelling the diagram.' Below it is a two-row blank answer table with stubs 'A:' and 'B:', then the centred word 'Or' and the start of part (c) 'Complete the graph to show the average organic matter and water composition of a brown earth soil.'",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Top soil","askedInThisQuestion":true},{"letter":"B","meaning":"Sub soil","askedInThisQuestion":true}],
   } as SecCard,
   {
     ...base, kind: "question",

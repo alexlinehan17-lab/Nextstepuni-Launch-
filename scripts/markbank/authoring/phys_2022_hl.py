@@ -123,4 +123,17 @@ A.card(14, 'a', 'ii', topic='phys-u2', concept='apparatus-for-the-resultant-of-t
        notes='The scheme also allows three systems of weights and pulleys in place of '
              'the newtonmeters.')
 
+A.card(11, None, 'iv', topic='phys-2-4', concept='drawing-the-third-harmonic-hl',
+       source='pdf',
+       from_runs=[((11, None, 'iv'), 0, slice(0, 4)),
+                  ((11, None, 'iv'), 0, slice(4, 6))],
+       marks=[4, 2], notation='4 + 2')
+
+A.card(14, 'b', 'ii', topic='phys-2-5', concept='how-the-doppler-effect-arises',
+       source='pdf',
+       from_runs=[((14, 'b', 'ii'), 0, slice(0, 5)),
+                  ((14, 'b', 'ii'), 0, slice(6, 13)),
+                  ((14, 'b', 'ii'), 0, slice(14, 20))],
+       marks=[3, 3, 3], checked='The paper prints the part mark in brackets after the question, so the text ends on a number rather than punctuation. The question itself is complete.')
+
 A.emit()

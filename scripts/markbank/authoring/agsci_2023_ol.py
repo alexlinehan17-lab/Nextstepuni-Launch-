@@ -102,4 +102,12 @@ A.card(15, 'a', 'ii', topic='agsci-3-1', concept='which-soil-sample-is-compacted
                   ((15, 'a', 'ii'), 1, slice(4, 14))],
        marks=[5, 5], notation='5 + 5')
 
+# ── Q15(b): the soil profile ──────────────────────────────────────────────
+# The figure was already catalogued complete and bound; the part was open only
+# because nobody had authored it.
+A.card(15, 'b', topic='agsci-3-1', concept='layers-of-a-brown-earth-soil',
+       use=[0, 1], marks=[6, 4], notation='6 + 4',
+       figure='agricultural-science-2023-OL-paper-p28-i0',
+       labels={'A': 'Top soil', 'B': 'Sub soil'})
+
 A.emit()
