@@ -11,6 +11,7 @@ Three tools, and which one is right for a subject:
 | `partcheck.py` | the five subjects whose papers parse | question text, with the citation as a fallback |
 | `bus_todo.py` | Business | parts read from the scheme's own table by `bus_parts.py` |
 | `econ_todo.py` | Economics | parts reconstructed from the answer booklet by `econ_auto.py` |
+| `whyopen.py` | every open part, any subject | **why** it is open — the bucket, not the total |
 
 `partcheck` names the other two rather than printing a number it cannot stand
 over. `coverage.py` is the older reference-only test and `partcheck` still calls
@@ -84,15 +85,45 @@ Guessing the split has been the recurring error of this work — a `3+1`
 against a "describe two ways" part is four marks total, not four each — so
 a part whose marks are not printed is left rather than estimated.
 
-**187 of them cannot become question-and-answer cards at all.** "Draw a ray
-diagram", "Draw the structure of a molecule of eugenol" — the scheme's answer is
-a drawing, and it extracts as `(6)`. A further 123 need a figure the catalogue
-either lacks or holds only as a truncated crop marked not-live, and 59 are
-equations the scheme sets in a font whose text layer reads as doubled letters.
+**Do not tally the buckets by hand — run `whyopen.py`.** It sorts every open
+part into one bucket, first match wins, and it exists because a hand tally of
+exactly this list was wrong in every column. Current output over the 468:
 
-That is the ceiling as things stand. Roughly 289 parts are reachable with the
-current card format; the other 369 need either a re-cataloguing pass on the
-figures or a card type that can carry a drawing.
+| bucket | count | what to do |
+|---|---:|---|
+| `rubric` | 111 | closed — "apparatus, method, observation", "any valid use" |
+| `mispair` | 83 | **read both documents** — the scheme block answers another question |
+| `mangled` | 63 | closed — the answer does not survive its own font |
+| `author` | 60 | card it |
+| `figure` | 60 | re-crop, look at the PNG, catalogue, bind, card |
+| `drawing+` | 51 | card it — the scheme states what the drawing must contain |
+| `notariff` | 25 | `ladder=`, or leave it |
+| `drawing-` | 15 | closed — a drawing with no stated criteria |
+
+So 111 are cardable as they stand, 85 reachable with work, 83 need a human to
+read the pairing, and 189 are a genuine ceiling.
+
+**`mispair` being the largest actionable bucket is the finding.** A part that
+looks authorable is most often `align_ordered` pairing positionally: the
+Chemistry scheme offers "DEFINE: electronegativity" under "Draw a dot and cross
+diagram for NH3". Where the scheme prints a cue above its answer the tool
+settles it; where it doesn't, reading both documents is the only check there is.
+
+**Four faults that only surfaced once the count had to be reproducible**, each
+of which had been inflating `author` and `drawing+`:
+
+- the scheme reprints the question's *tail*, not its head, so a cue test
+  anchored at the start never fired and left rubric reading as a stated answer;
+- the block reader runs past a short answer into the next part — cut points at
+  the part's **printed tariff**, the same check `lib.Author.card()` makes;
+- the mispair test has to run before anything about the points, because every
+  other bucket asserts that these points answer this question;
+- mangled text is not only the Mathematical Alphanumeric and Oriya blocks — `Ɵ`
+  standing in for the `ti` ligature belongs in the same test.
+
+Every one of those was found by reading ten parts out of `--list`, not by
+reasoning about the code. Spot-check a new subject the same way before trusting
+any bucket.
 
 ## How to author one
 
