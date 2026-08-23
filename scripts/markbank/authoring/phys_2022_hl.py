@@ -96,4 +96,31 @@ A.card(12, 'b', 'v', topic='phys-3-3', concept='converting-a-galvanometer-to-an-
                   ((12, 'b', 'v'), 0, slice(7, 9))],
        marks=[3, 3])
 
+A.card(1, None, 'iii', topic='phys-u2', concept='applying-vertical-forces-to-a-metre-stick',
+       source='pdf',
+       from_runs=[((1, None, 'iii'), 0, slice(0, 4)),
+                  ((1, None, 'iii'), 1, slice(0, 6))],
+       marks=[2, 2], notes='The scheme takes a mark off if the diagram carries no labels.')
+
+A.card(13, 'c', 'iii', topic='phys-2-3', concept='ray-diagram-for-a-virtual-image',
+       source='pdf',
+       from_runs=[((12, 'c', 'iii'), 0, slice(15, 17)),
+                  ((12, 'c', 'iii'), 0, slice(18, 22))],
+       marks=[2, 2],
+       checked='The paper prints the part mark "(7)" after the question, so the text '
+               'ends on a bracketed number rather than punctuation. The sentence about '
+               'Huygens\' telescope in front of it is the question\'s own setup.',
+       notes='The scheme numbers this answer under its own Question 12 while the paper '
+             'prints Question 13. The object must be inside the focal point — that is '
+             'what makes the image virtual.')
+
+A.card(14, 'a', 'ii', topic='phys-u2', concept='apparatus-for-the-resultant-of-two-vectors',
+       source='pdf',
+       from_runs=[((14, 'a', 'ii'), 0, slice(0, None)),
+                  ((14, 'a', 'ii'), 2, slice(0, 2)),
+                  ((14, 'a', 'ii'), 2, slice(3, 5))],
+       marks=[2, 3, 3], checked='The paper prints the part mark in brackets after the question, so the text ends on a number rather than punctuation. The question itself is complete.',
+       notes='The scheme also allows three systems of weights and pulleys in place of '
+             'the newtonmeters.')
+
 A.emit()

@@ -62,4 +62,30 @@ A.card(7, None, 'vii', topic='phys-1-2', concept='forces-on-a-train-at-constant-
        source='pdf', from_run=((7, None, 'vii'), 0, slice(0, 3)), marks=[9],
        notes='The scheme takes a mark off for each of the four forces left out.')
 
+A.card(1, None, 'ii', topic='phys-u2', concept='what-distance-was-measured-on-the-tape',
+       source='pdf', use=[[0, 1, 2]], marks=[3])
+
+A.card(3, None, 'ii', topic='phys-u2', concept='what-length-of-string-was-measured',
+       source='pdf', use=[[0, 1]], marks=[3])
+
+A.card(3, None, 'viii', topic='phys-u2', concept='graph-of-frequency-against-one-over-length',
+       source='pdf',
+       from_runs=[((3, None, 'viii'), 1, slice(0, 2)),
+                  ((3, None, 'viii'), 1, slice(3, 5)),
+                  ((3, None, 'viii'), 1, slice(8, 12))],
+       marks=[3, 6, 3], notation='3 + 6 × 1 + 3', checked='The paper prints the part mark in brackets after the question, so the text ends on a number rather than punctuation. The question itself is complete.')
+
+A.card(9, None, 'ii', topic='phys-2-3', concept='ray-diagram-for-a-magnified-image-ol',
+       source='pdf',
+       from_runs=[((9, None, 'ii'), 1, slice(0, 3)),
+                  ((9, None, 'ii'), 1, slice(4, 7)),
+                  ((9, None, 'ii'), 1, slice(8, 11))],
+       marks=[5, 2, 2])
+
+A.card(9, None, 'vii', topic='phys-2-3', concept='which-side-of-a-convex-mirror-reflects',
+       source='pdf',
+       from_runs=[((9, None, 'vii'), 2, slice(0, 1)),
+                  ((9, None, 'vii'), 2, slice(2, 3))],
+       marks=[3, 3], first_sentence=True)
+
 A.emit()
