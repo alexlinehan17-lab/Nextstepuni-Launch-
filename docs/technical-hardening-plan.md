@@ -1,6 +1,6 @@
 # Technical hardening plan
 
-Last updated: 2026-08-07
+Last updated: 2026-08-23
 
 ## 1. Release integrity
 
@@ -32,13 +32,15 @@ Last updated: 2026-08-07
 - [x] Remove client-side GC role inference from email patterns.
 - [x] Synchronise server-managed role/school into Firebase custom claims.
 - [x] Keep a Firestore-document fallback while existing tokens migrate.
-- [ ] Backfill the administrator custom claim and remove email-based admin
+- [x] Backfill the administrator custom claim and remove email-based admin
       authorization fallbacks.
 
-Firebase App Check is intentionally deferred. This project uses the Firebase
-Web SDK inside its shipped Capacitor apps; enabling web-only reCAPTCHA
-attestation could deny legitimate native traffic. Authentication, custom claims
-and Security Rules remain the active authorization controls.
+Firebase App Check is registered and integrated for every client: reCAPTCHA
+Enterprise on web, App Attest on iOS and Play Integrity on Android. Enforcement
+remains deliberately staged until the updated native builds are released and
+their legitimate traffic is visible in App Check metrics. Authentication,
+server-owned custom claims and Security Rules remain the primary authorization
+controls; App Check is an additional client-attestation boundary.
 
 ## 5. Generated content
 

@@ -107,10 +107,14 @@ attacker and the data. App Check binds Firestore access to attested
 clients. DPIA T-NEW-11 lists this as a Year 2 requirement.
 
 **Your answer (select):**
-- [ ] Enabled with reCAPTCHA Enterprise on web
-- [ ] Enabled with another provider
-- [ ] Configured but not enforced (audit mode)
+- [x] Enabled with reCAPTCHA Enterprise on web
+- [x] Enabled with Play Integrity on Android and App Attest on iOS
+- [x] Configured but not enforced (audit mode)
 - [ ] Not configured
+
+**Engineering verification — 2026-08-23:** Play Integrity and App Attest are
+also registered for the exact native application IDs. Their release builds and
+metrics observation must complete before enforcement is enabled.
 
 ---
 
@@ -302,10 +306,16 @@ compromised.
 
 **Your answer:**
 - Was the key in the leaked builds rotated/revoked after 2026-04-06?
-  Y / N / Unsure : _______
-- Current `.env` contains a `GEMINI_API_KEY` value? Y / N : _______
-- If yes, date last rotated: _______
-- Action: rotate now? Y / N : _______
+  Y / N / Unsure : **Y — verified invalid on 2026-08-23**
+- Current `.env` contains a `GEMINI_API_KEY` value? Y / N : **N**
+- If yes, date last rotated: **Not applicable**
+- Action: rotate now? Y / N : **N — the exposed candidate is already revoked**
+
+**Engineering verification — 2026-08-23:** The candidate recoverable from the
+historical audit commit was tested without printing or persisting its value;
+Google returned `API_KEY_INVALID`. The other historical API-key-shaped value
+is the Firebase browser key, and the Gemini API returns `SERVICE_DISABLED` for
+that project. No current source, environment file or runtime consumes Gemini.
 
 ---
 

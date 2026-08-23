@@ -35,10 +35,10 @@ jobs:
   gates:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
-          node-version: 20
+          node-version: 22
           cache: 'npm'
       - run: npm ci
       - name: Lint (strict)
@@ -51,8 +51,6 @@ jobs:
         run: npx vitest run test/vaultAnchors.test.ts test/paperRegion.test.ts test/vaultTopics.test.ts
       - name: Build
         run: npm run build
-        env:
-          GEMINI_API_KEY: 'dummy-key-for-ci'
 ```
 
 That is the whole thing. Turn it on and forget it.
@@ -100,10 +98,10 @@ jobs:
   refine:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
-          node-version: 20
+          node-version: 22
           cache: 'npm'
       - run: npm ci
 
