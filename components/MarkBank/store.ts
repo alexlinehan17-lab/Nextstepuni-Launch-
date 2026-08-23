@@ -39,6 +39,7 @@ import { db } from '../../firebase';
 import { saveInBackground } from '../../utils/firestoreWrite';
 import { NEW_CARD, type CardMemory } from './scheduler';
 import { isValidCardId } from '../../types/markBank';
+import { DEMO_STUDENT_UID } from '../../data/devStudent';
 
 /** Bumped only for a shape migration. */
 export const DECK_VERSION = 1;
@@ -129,7 +130,7 @@ export function writeLocal(uid: string | undefined, deckId: DeckId, deck: DeckSt
 const inflight = new Map<string, Promise<DeckState | null>>();
 
 export function fetchDeck(uid: string | undefined, deckId: DeckId): Promise<DeckState | null> {
-  if (!uid) return Promise.resolve(null);
+  if (!uid || uid === DEMO_STUDENT_UID) return Promise.resolve(null);
   const key = `${uid}:${deckId}`;
   const existing = inflight.get(key);
   if (existing) return existing;
@@ -172,7 +173,7 @@ export function mergeDecks(local: DeckState, remote: DeckState | null): DeckStat
  * data was silently lost elsewhere in this app.
  */
 export function ensureDeck(uid: string | undefined, deckId: DeckId, now: number): void {
-  if (!uid) return;
+  if (!uid || uid === DEMO_STUDENT_UID) return;
   saveInBackground(
     setDoc(deckPath(uid, deckId), { v: DECK_VERSION, updatedAt: now }, { merge: true }),
     'MarkBank.ensureDeck',
@@ -194,7 +195,7 @@ export function saveCard(
   memory: CardMemory,
   now: number,
 ): void {
-  if (!uid) return;
+  if (!uid || uid === DEMO_STUDENT_UID) return;
   if (!isValidCardId(cardId)) {
     // A dot here would write to a nested field that isn't this card.
     throw new Error(`Mark Bank: unsafe card id for a Firestore field path: "${cardId}"`);
@@ -208,7 +209,7 @@ export function saveCard(
 }
 
 export function saveExamDate(uid: string | undefined, deckId: DeckId, examTs: number, now: number): void {
-  if (!uid) return;
+  if (!uid || uid === DEMO_STUDENT_UID) return;
   saveInBackground(
     setDoc(deckPath(uid, deckId), { examTs, updatedAt: now }, { merge: true }),
     'MarkBank.saveExamDate',

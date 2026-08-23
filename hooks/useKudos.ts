@@ -4,11 +4,11 @@
  */
 
 import { useState, useEffect, useCallback } from 'react';
-import { collection, query, where, orderBy, limit, getDocs, addDoc, serverTimestamp, Timestamp } from 'firebase/firestore';
-import { db } from '../firebase';
-import { awaitWriteOrTimeout } from '../utils/firestoreWrite';
+import { collection, query, where, orderBy, limit, getDocs, Timestamp } from 'firebase/firestore';
+import { getFunctions, httpsCallable } from 'firebase/functions';
+import app, { db } from '../firebase';
 import { KUDOS_MESSAGES } from '../kudosData';
-import { firstName } from '../utils/firstName';
+import { DEMO_STUDENT_UID } from '../data/devStudent';
 
 export interface ReceivedKudos {
   messageId: string;
@@ -17,13 +17,19 @@ export interface ReceivedKudos {
 }
 
 export function useKudos(uid?: string) {
+  const isDemo = uid === DEMO_STUDENT_UID;
   const [kudosCount, setKudosCount] = useState(0);
   const [recentKudos, setRecentKudos] = useState<ReceivedKudos[]>([]);
   const [isLoading, setIsLoading] = useState(false);
 
   // Load kudos received by this user
   useEffect(() => {
-    if (!uid) return;
+    if (!uid || isDemo) {
+      setKudosCount(0);
+      setRecentKudos([]);
+      setIsLoading(false);
+      return;
+    }
     let cancelled = false;
 
     (async () => {
@@ -55,11 +61,11 @@ export function useKudos(uid?: string) {
     })();
 
     return () => { cancelled = true; };
-  }, [uid]);
+  }, [uid, isDemo]);
 
   // Check if we already sent kudos to this peer today
   const canSendKudosTo = useCallback(async (targetUid: string): Promise<boolean> => {
-    if (!uid) return false;
+    if (!uid || isDemo) return false;
     try {
       const startOfDay = new Date();
       startOfDay.setHours(0, 0, 0, 0);
@@ -75,38 +81,30 @@ export function useKudos(uid?: string) {
       return snap.empty;
     } catch (err) {
       console.error('[useKudos] Failed to check kudos eligibility:', err);
-      return true; // Allow on error
+      return false;
     }
-  }, [uid]);
+  }, [uid, isDemo]);
 
   // Send kudos
   const sendKudos = useCallback(async (
     toUid: string,
-    school: string,
+    _school: string,
     messageId: string,
-    fromName: string,
+    _fromName: string,
   ): Promise<boolean> => {
-    if (!uid) return false;
+    if (!uid || isDemo) return false;
     try {
-      // Bounded wait, not an open-ended await: a write promise only settles on
-      // server ack, so offline the Send button used to spin forever. A queued
-      // write WILL reach the peer on reconnect, so 'pending' counts as sent —
-      // only an outright rejection is a failure.
-      const outcome = await awaitWriteOrTimeout(addDoc(collection(db, 'kudos'), {
-        fromUid: uid,
-        // Peers see first name only (data minimisation, 2026-07-18).
-        fromName: firstName(fromName),
-        toUid,
-        school,
-        messageId,
-        createdAt: serverTimestamp(),
-      }), 'useKudos.sendKudos');
-      return outcome !== 'failed';
+      const send = httpsCallable<{ toUid: string; messageId: string }, { success: boolean }>(
+        getFunctions(app),
+        'sendKudos',
+      );
+      await send({ toUid, messageId });
+      return true;
     } catch (err) {
       console.error('[useKudos] Failed to send kudos:', err);
       return false;
     }
-  }, [uid]);
+  }, [uid, isDemo]);
 
   // Get message text by ID
   const getMessageText = useCallback((messageId: string): string => {

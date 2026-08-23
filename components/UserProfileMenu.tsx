@@ -11,6 +11,7 @@ import { type SessionUser, getAvatarUrl, handleAvatarError } from '../utils/auth
 import { type UserSettings } from '../types';
 import { type StreakData } from '../hooks/useStreak';
 import { type FocusRecommendation } from '../hooks/useTodaysFocus';
+import { useModal } from '../hooks/useModal';
 
 interface UserProfileProps {
   user: SessionUser;
@@ -195,6 +196,8 @@ interface MobileProfileSheetProps {
 
 export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, onClose, user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride, streak, recommendation, onSelectModule, onOpenPassport, onGoToDashboard: _onGoToDashboard, onGoToInsights: _onGoToInsights, completedCount, totalCount, onOpenNorthStar, hasNorthStar, unlockedThemes: _unlockedThemes }) => {
   const displayAvatar = avatarOverride || user.avatar;
+  const sheetRef = useRef<HTMLDivElement>(null);
+  useModal(isOpen, onClose, sheetRef);
   return (
     <AnimatePresence>
       {isOpen && (
@@ -210,11 +213,16 @@ export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, 
           />
           {/* Sheet */}
           <motion.div
+            ref={sheetRef}
             key="profile-sheet"
             initial={{ y: '100%' }}
             animate={{ y: 0 }}
             exit={{ y: '100%' }}
             transition={{ type: 'spring', damping: 28, stiffness: 300 }}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="mobile-profile-title"
+            tabIndex={-1}
             className="fixed bottom-0 left-0 right-0 z-[96] md:hidden bg-white dark:bg-zinc-900 rounded-t-2xl border-t border-zinc-200 dark:border-zinc-800 max-h-[85vh] overflow-y-auto"
             style={{ paddingBottom: 'var(--sab, 0px)' }}
           >
@@ -229,11 +237,11 @@ export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, 
                 <div className="flex items-center gap-3">
                   <img src={getAvatarUrl(displayAvatar)} alt="Avatar" className="w-12 h-12 rounded-full bg-zinc-200" onError={(e) => handleAvatarError(e, displayAvatar)} />
                   <div>
-                    <p className="font-bold text-zinc-800 dark:text-white">{user.name}</p>
+                    <h2 id="mobile-profile-title" className="font-bold text-zinc-800 dark:text-white">{user.name}</h2>
                     <p className="text-xs text-zinc-500">Student</p>
                   </div>
                 </div>
-                <button onClick={onClose} className="p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800">
+                <button onClick={onClose} aria-label="Close profile" className="p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800">
                   <X size={18} className="text-zinc-400" />
                 </button>
               </div>

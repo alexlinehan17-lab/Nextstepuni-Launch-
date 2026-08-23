@@ -230,6 +230,7 @@ const YearPlansView: React.FC<YearPlansViewProps> = ({
                     ) : (
                       <button
                         onClick={() => firstIncomplete && onSelectModule(firstIncomplete)}
+                        aria-label={`${completed > 0 ? 'Continue' : 'Start'} ${plan.title}`}
                         className="group inline-flex items-center gap-1.5 transition-colors hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(242,107,31,0.35)] rounded-md"
                         style={{ ...SANS, fontSize: 14, fontWeight: 500, color: '#1a1a1a' }}
                       >
@@ -245,6 +246,7 @@ const YearPlansView: React.FC<YearPlansViewProps> = ({
 
                     <button
                       onClick={() => setExpandedId(isExpanded ? null : plan.id)}
+                      aria-label={`${isExpanded ? 'Hide' : 'View'} modules in ${plan.title}`}
                       className="inline-flex items-center gap-1.5 transition-colors hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(242,107,31,0.35)] rounded-md"
                       style={{ ...SANS, fontSize: 12, color: 'rgba(0,0,0,0.5)' }}
                       aria-expanded={isExpanded}

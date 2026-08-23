@@ -106,10 +106,33 @@ export interface MilestoneRewardStatus {
 }
 
 export function useIslandShop(uid?: string, northStar?: NorthStar | null, completedCount: number = 0) {
-  const { reloadProgress } = useProgress();
-  const { doc: rawProgressDoc, loaded: progressLoaded } = useFreshProgress(uid);
+  const {
+    reloadProgress,
+    rawProgressDoc: sharedProgressDoc,
+    progressLoaded: sharedProgressLoaded,
+    updateDemoProgress,
+  } = useProgress();
+  const isDemo = uid === DEMO_STUDENT_UID;
+  const { doc: freshProgressDoc, loaded: freshProgressLoaded } = useFreshProgress(isDemo ? undefined : uid);
+  const rawProgressDoc = isDemo ? sharedProgressDoc : freshProgressDoc;
+  const progressLoaded = isDemo ? sharedProgressLoaded : freshProgressLoaded;
   const [islandState, setIslandState] = useState<IslandState | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+
+  const commitIslandState = useCallback((nextState: IslandState, pointsSpent = 0) => {
+    setIslandState(nextState);
+    if (!isDemo) return;
+    updateDemoProgress(current => ({
+      ...current,
+      islandState: nextState,
+      ...(pointsSpent > 0 ? {
+        pointsData: {
+          ...current.pointsData,
+          totalSpent: (current.pointsData?.totalSpent ?? 0) + pointsSpent,
+        },
+      } : {}),
+    }));
+  }, [isDemo, updateDemoProgress]);
 
   // Load island state from context
   useEffect(() => {
@@ -130,19 +153,23 @@ export function useIslandShop(uid?: string, northStar?: NorthStar | null, comple
     if (stored && stored.category === northStar.category && Array.isArray(stored.placements)) {
       const migrated = migrateIslandState(stored);
       setIslandState(migrated.state);
-      if (migrated.changed && uid !== DEMO_STUDENT_UID) {
-        setDoc(doc(db, 'progress', uid), { islandState: migrated.state }, { merge: true }).catch(console.error);
+      if (migrated.changed) {
+        if (isDemo) {
+          updateDemoProgress(current => ({ ...current, islandState: migrated.state }));
+        } else {
+          setDoc(doc(db, 'progress', uid), { islandState: migrated.state }, { merge: true }).catch(console.error);
+        }
       }
     } else {
       // No state or North Star changed — initialize with starter pack
       const starter = createStarterState(northStar.category);
-      setIslandState(starter);
-      if (uid !== DEMO_STUDENT_UID) {
+      commitIslandState(starter);
+      if (!isDemo) {
         setDoc(doc(db, 'progress', uid), { islandState: starter }, { merge: true }).catch(console.error);
       }
     }
     setIsLoading(false);
-  }, [uid, northStar?.category, progressLoaded, rawProgressDoc]);
+  }, [uid, northStar?.category, progressLoaded, rawProgressDoc, isDemo, commitIslandState, updateDemoProgress]);
 
   // Water color from starter pack
   const waterColor = useMemo(() => {
@@ -268,7 +295,8 @@ export function useIslandShop(uid?: string, northStar?: NorthStar | null, comple
       purchaseHistory: [...islandState.purchaseHistory, item.id],
       lastPurchaseTimestamp: timestamp,
     };
-    setIslandState(newState);
+    commitIslandState(newState, price);
+    if (isDemo) return true;
     try {
       const outcome = await awaitWriteOrTimeout(updateDoc(doc(db, 'progress', uid), {
         'islandState.placements': arrayUnion(placement),
@@ -285,7 +313,7 @@ export function useIslandShop(uid?: string, northStar?: NorthStar | null, comple
       console.error('Failed to confirm island placement:', error);
       return false;
     }
-  }, [uid, islandState, createPlacementAt, reloadProgress]);
+  }, [uid, islandState, createPlacementAt, reloadProgress, commitIslandState, isDemo]);
 
   const updatePlacement = useCallback(async (
     placementId: string,
@@ -306,7 +334,8 @@ export function useIslandShop(uid?: string, northStar?: NorthStar | null, comple
     );
     const previous = islandState;
     const next = { ...islandState, placements: nextPlacements };
-    setIslandState(next);
+    commitIslandState(next);
+    if (isDemo) return true;
     try {
       const outcome = await awaitWriteOrTimeout(
         updateDoc(doc(db, 'progress', uid), { 'islandState.placements': nextPlacements }),
@@ -319,7 +348,7 @@ export function useIslandShop(uid?: string, northStar?: NorthStar | null, comple
       console.error('Failed to update island placement:', error);
       return false;
     }
-  }, [uid, islandState]);
+  }, [uid, islandState, commitIslandState, isDemo]);
 
   const storePlacement = useCallback(async (placementId: string): Promise<boolean> => {
     if (!uid || !islandState) return false;
@@ -334,7 +363,8 @@ export function useIslandShop(uid?: string, northStar?: NorthStar | null, comple
     const placements = islandState.placements.filter(p => p.placementId !== placementId);
     const inventory = [...(islandState.inventory ?? []), inventoryItem];
     const previous = islandState;
-    setIslandState({ ...islandState, placements, inventory });
+    commitIslandState({ ...islandState, placements, inventory });
+    if (isDemo) return true;
     try {
       const outcome = await awaitWriteOrTimeout(updateDoc(doc(db, 'progress', uid), {
         'islandState.placements': placements,
@@ -347,7 +377,7 @@ export function useIslandShop(uid?: string, northStar?: NorthStar | null, comple
       console.error('Failed to store island placement:', error);
       return false;
     }
-  }, [uid, islandState]);
+  }, [uid, islandState, commitIslandState, isDemo]);
 
   const placeInventoryItem = useCallback(async (
     inventoryId: string,
@@ -364,7 +394,8 @@ export function useIslandShop(uid?: string, northStar?: NorthStar | null, comple
     const inventory = (islandState.inventory ?? []).filter(entry => entry.inventoryId !== inventoryId);
     const placements = [...islandState.placements, placement];
     const previous = islandState;
-    setIslandState({ ...islandState, placements, inventory });
+    commitIslandState({ ...islandState, placements, inventory });
+    if (isDemo) return true;
     try {
       const outcome = await awaitWriteOrTimeout(updateDoc(doc(db, 'progress', uid), {
         'islandState.placements': placements,
@@ -377,7 +408,7 @@ export function useIslandShop(uid?: string, northStar?: NorthStar | null, comple
       console.error('Failed to place inventory item:', error);
       return false;
     }
-  }, [uid, islandState, createPlacementAt]);
+  }, [uid, islandState, createPlacementAt, commitIslandState, isDemo]);
 
   // Purchase an item
   const purchaseItem = useCallback(async (item: EnrichedShopItem | ShopItem, balance: number): Promise<boolean> => {
@@ -395,7 +426,8 @@ export function useIslandShop(uid?: string, northStar?: NorthStar | null, comple
       purchaseHistory: [...islandState.purchaseHistory, item.id],
       lastPurchaseTimestamp: new Date().toISOString(),
     };
-    setIslandState(newState);
+    commitIslandState(newState, price);
+    if (isDemo) return true;
 
     // Atomic deltas (audit item 18): append only the new placement / history /
     // spend rather than overwriting the whole islandState, removing the
@@ -414,7 +446,7 @@ export function useIslandShop(uid?: string, northStar?: NorthStar | null, comple
       });
 
     return true;
-  }, [uid, islandState, placeItem, reloadProgress]);
+  }, [uid, islandState, placeItem, reloadProgress, commitIslandState, isDemo]);
 
   // Claim a milestone reward
   const claimReward = useCallback(async (reward: MilestoneReward): Promise<boolean> => {
@@ -434,7 +466,8 @@ export function useIslandShop(uid?: string, northStar?: NorthStar | null, comple
       claimedRewards: [...(islandState.claimedRewards ?? []), reward.id],
       lastPurchaseTimestamp: new Date().toISOString(),
     };
-    setIslandState(newState);
+    commitIslandState(newState);
+    if (isDemo) return true;
 
     const progressDocRef = doc(db, 'progress', uid);
     try {
@@ -450,7 +483,7 @@ export function useIslandShop(uid?: string, northStar?: NorthStar | null, comple
       console.error('Failed to claim island reward:', error);
       return false;
     }
-  }, [uid, islandState]);
+  }, [uid, islandState, commitIslandState, isDemo]);
 
   // Place a gifted item on the island (no cost)
   const placeGiftItem = useCallback(async (itemId: string): Promise<boolean> => {
@@ -470,7 +503,8 @@ export function useIslandShop(uid?: string, northStar?: NorthStar | null, comple
       inventory: [...(islandState.inventory ?? []), inventoryItem],
       purchaseHistory: [...islandState.purchaseHistory, item.id],
     };
-    setIslandState(newState);
+    commitIslandState(newState);
+    if (isDemo) return true;
 
     const progressDocRef = doc(db, 'progress', uid);
     try {
@@ -485,7 +519,7 @@ export function useIslandShop(uid?: string, northStar?: NorthStar | null, comple
       console.error('Failed to add gifted island item:', error);
       return false;
     }
-  }, [uid, islandState]);
+  }, [uid, islandState, commitIslandState, isDemo]);
 
   return {
     islandState,

@@ -6,10 +6,11 @@
 
 import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { createPortal } from 'react-dom';
-import { Home, Rocket, Dumbbell, Timer, Mountain, User } from 'lucide-react';
+import { Home, Rocket, ChartNoAxesCombined, Timer, Mountain, User } from 'lucide-react';
 import { UserProfile, MobileProfileSheet } from './components/UserProfileMenu';
 import { type CategoryType } from './components/KnowledgeTree';
 import AppRouter from './components/AppRouter';
+import { LoadingSpinner } from './components/LoadingSpinner';
 import OfflineBanner from './components/OfflineBanner';
 import CommandPalette, { TOOL_TITLES } from './components/CommandPalette';
 import ShortcutsOverlay from './components/ShortcutsOverlay';
@@ -55,12 +56,15 @@ import { useNavigation } from './contexts/NavigationContext';
 import { useProgress } from './contexts/ProgressContext';
 import { saveModuleProgress } from './services/progressRepository';
 import { shouldShowStudentChrome } from './utils/studentChrome';
+import { isRankBaselineReady, observeRankForSession, type RankUpTracker } from './utils/rankUpTransition';
+import { isProgressReadyForUser } from './utils/progressHydration';
+import { DEMO_STUDENT_UID } from './data/devStudent';
 
 /* ── Mobile Bottom Navigation Bar ── */
 interface MobileBottomNavProps {
   viewState: string;
   onGoHome: () => void;
-  onGoToTrainingHub: () => void;
+  onGoToProgress: () => void;
   onGoToStudy: () => void;
   onGoToJourney: () => void;
   onGoToInnovationZone: () => void;
@@ -68,10 +72,10 @@ interface MobileBottomNavProps {
   unreadNotifications?: number;
 }
 
-const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ viewState, onGoHome, onGoToTrainingHub, onGoToStudy, onGoToJourney, onGoToInnovationZone, onOpenProfile, unreadNotifications = 0 }) => {
+const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ viewState, onGoHome, onGoToProgress, onGoToStudy, onGoToJourney, onGoToInnovationZone, onOpenProfile, unreadNotifications = 0 }) => {
   const tabs = [
     { id: 'tree', label: 'Home', icon: Home, action: onGoHome },
-    { id: 'gamification-hub', label: 'Training', icon: Dumbbell, action: onGoToTrainingHub },
+    { id: 'dashboard', label: 'Progress', icon: ChartNoAxesCombined, action: onGoToProgress },
     { id: 'study-session', label: 'Study', icon: Timer, action: onGoToStudy },
     { id: 'my-journey', label: 'Journey', icon: Mountain, action: onGoToJourney },
     { id: 'innovation-zone', label: 'Launch', icon: Rocket, action: onGoToInnovationZone },
@@ -146,10 +150,10 @@ const App: React.FC = () => {
     unlockedThemes, setUnlockedThemes,
     unlockedCardStyles, setUnlockedCardStyles,
     dismissedGuides, setDismissedGuides,
-    progressLoaded,
+    progressLoaded, progressDataUid, progressDataStatus,
     studySessions, studyDebriefs, studyReflections,
     topicMasteryV2, unifiedMockResults,
-    reloadProgress,
+    rawProgressDoc, updateDemoProgress, reloadProgress,
   } = progress;
   // Live mirror of studentProfile, for rollbacks that may run long after the
   // handler returned. A queued Firestore write can be rejected minutes later,
@@ -157,6 +161,18 @@ const App: React.FC = () => {
   // whatever the student has done since.
   const studentProfileRef = useRef(studentProfile);
   useEffect(() => { studentProfileRef.current = studentProfile; }, [studentProfile]);
+
+  useEffect(() => {
+    const saved = rawProgressDoc['journey-simulator'] as { endingId?: string; finalStats?: any } | undefined;
+    setJourneyResult(saved?.endingId ? { ...saved, endingId: saved.endingId } : null);
+  }, [rawProgressDoc]);
+
+  const handleJourneyComplete = useCallback((result: { endingId: string; finalStats?: any } | null) => {
+    setJourneyResult(result);
+    if (user?.uid === DEMO_STUDENT_UID) {
+      updateDemoProgress(current => ({ ...current, 'journey-simulator': result }));
+    }
+  }, [updateDemoProgress, user?.uid]);
 
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [passportOpen, setPassportOpen] = useState(false);
@@ -187,7 +203,7 @@ const App: React.FC = () => {
   const [toastQueue, setToastQueue] = useState<AchievementDefinition[]>([]);
   const [currentToast, setCurrentToast] = useState<AchievementDefinition | null>(null);
   const [rankUpModal, setRankUpModal] = useState<AthleteRank | null>(null);
-  const prevRankRef = useRef<string | null>(null);
+  const rankUpTrackerRef = useRef<RankUpTracker>({ uid: null, rank: null });
   const [streakCelebration, setStreakCelebration] = useState<number | null>(null);
   const lastStreakRef = useRef(0);
 
@@ -203,9 +219,9 @@ const App: React.FC = () => {
   // Grant 3 grass tiles on rank-up
   const grantRankUpTiles = async (uid: string) => {
     try {
-      const snap = await getDoc(doc(db, 'progress', uid));
-      const data = snap.data();
-      const island: IslandState | undefined = data?.islandState;
+      const island: IslandState | undefined = uid === DEMO_STUDENT_UID
+        ? rawProgressDoc.islandState
+        : (await getDoc(doc(db, 'progress', uid))).data()?.islandState;
       if (!island || !island.placements) return;
       const occupied = new Set<string>();
       for (const p of island.placements) {
@@ -218,6 +234,17 @@ const App: React.FC = () => {
         occupied.add(`${pos.q},${pos.r}`);
         tiles.push({ itemId: 'terrain-grass', model: 'grass.glb', type: 'hex', q: pos.q, r: pos.r, purchasedAt: now });
       }
+      if (uid === DEMO_STUDENT_UID) {
+        updateDemoProgress(current => ({
+          ...current,
+          islandState: current.islandState ? {
+            ...current.islandState,
+            placements: [...current.islandState.placements, ...tiles],
+            lastPurchaseTimestamp: now,
+          } : current.islandState,
+        }));
+        return;
+      }
       // Atomic append (arrayUnion) so a concurrent purchase/claim can't clobber
       // these rank-up tiles via a whole-array overwrite. (audit item 18)
       saveInBackground(updateDoc(doc(db, 'progress', uid), {
@@ -229,19 +256,47 @@ const App: React.FC = () => {
     }
   };
 
-  // Detect rank changes — skip during initial load to avoid false positives
-  // when gamification data arrives in stages after refresh.
-  const mountTimeRef = useRef(Date.now());
+  // Detect rank changes within one authenticated student session. Loading a
+  // saved points total on login establishes the baseline; logout or switching
+  // accounts resets it. This avoids treating auth hydration as a rank-up.
   useEffect(() => {
-    if (!gamification.isLoaded) return;
-    const currentRankId = gamification.state.currentRank.id;
-    const isInitialLoad = Date.now() - mountTimeRef.current < 3000;
-    if (!isInitialLoad && prevRankRef.current !== null && prevRankRef.current !== currentRankId) {
-      setRankUpModal(gamification.state.currentRank);
-      if (user) grantRankUpTiles(user.uid);
+    const trackingUid = user && !user.isAdmin && !isSchoolStaff(user.role) ? user.uid : null;
+    const persistedPointsValue = rawProgressDoc.pointsData?.totalEarned;
+    const persistedPoints = typeof persistedPointsValue === 'number' && Number.isFinite(persistedPointsValue)
+      ? persistedPointsValue
+      : 0;
+    const previousUid = rankUpTrackerRef.current.uid;
+    const observation = observeRankForSession(
+      rankUpTrackerRef.current,
+      trackingUid,
+      gamification.state.currentRank,
+      isRankBaselineReady(
+        trackingUid,
+        progressDataUid,
+        progressDataStatus === 'loaded',
+        gamification.isLoaded,
+        gamification.state.totalPointsEarned,
+        persistedPoints,
+      ),
+    );
+    rankUpTrackerRef.current = observation.tracker;
+
+    if (previousUid !== trackingUid) {
+      setRankUpModal(null);
     }
-    prevRankRef.current = currentRankId;
-  }, [gamification.state.currentRank.id, gamification.isLoaded]);
+    if (observation.rankUp && trackingUid) {
+      setRankUpModal(observation.rankUp);
+      grantRankUpTiles(trackingUid);
+    }
+  }, [
+    user,
+    progressDataUid,
+    progressDataStatus,
+    rawProgressDoc.pointsData?.totalEarned,
+    gamification.state.currentRank,
+    gamification.state.totalPointsEarned,
+    gamification.isLoaded,
+  ]);
 
   // Detect streak milestones
   useEffect(() => {
@@ -340,12 +395,25 @@ const App: React.FC = () => {
       // offline. The write itself queues and flushes on reconnect, and
       // increment() is still resolved server-side at flush time, so concurrent
       // section completions remain safe.
-      saveInBackground(
-        saveModuleProgress(user.uid, moduleId, newProgress, pointsToAward),
-        'App.saveModuleProgress',
-        // Roll back optimistic update — restore the full previous object, not a minimal stub
-        () => setUserProgress(prev => ({ ...prev, [moduleId]: prevModuleProgress ?? { unlockedSection: 0 } })),
-      );
+      if (user.uid === DEMO_STUDENT_UID) {
+        updateDemoProgress(current => ({
+          ...current,
+          [moduleId]: newProgress,
+          ...(pointsToAward > 0 ? {
+            pointsData: {
+              ...current.pointsData,
+              totalEarned: (current.pointsData?.totalEarned ?? 0) + pointsToAward,
+            },
+          } : {}),
+        }));
+      } else {
+        saveInBackground(
+          saveModuleProgress(user.uid, moduleId, newProgress, pointsToAward),
+          'App.saveModuleProgress',
+          // Roll back optimistic update — restore the full previous object, not a minimal stub
+          () => setUserProgress(prev => ({ ...prev, [moduleId]: prevModuleProgress ?? { unlockedSection: 0 } })),
+        );
+      }
 
       pointsData.reload();
 
@@ -389,12 +457,11 @@ const App: React.FC = () => {
   const handleGoToInnovationZone = () => { nav.navigateToInnovationZone(); };
 
   const handleGoToDashboard = () => { nav.navigateToDashboard(); };
+  const handleGoToMilestones = () => { nav.navigateToDashboard('milestones'); };
 
   const _handleGoToLearningPaths = () => { nav.navigateToLearningPaths(); };
 
   const handleGoToJourney = () => { nav.navigateToJourney(); };
-
-  const handleGoToGamificationHub = () => { nav.navigateToGamificationHub(); };
 
   const handleGoToStudy = () => {
     setTimetableBlockContext(null);
@@ -412,6 +479,32 @@ const App: React.FC = () => {
 
   const handleOnboardingComplete = async (profile: StudentSubjectProfile, northStarData?: NorthStar, essentialsMode?: boolean) => {
     if (!user) return;
+
+    if (user.uid === DEMO_STUDENT_UID) {
+      updateDemoProgress(current => ({
+        ...current,
+        subjectProfile: profile,
+        ...(northStarData ? {
+          northStar: northStarData,
+          directionProfile: createDirectionProfile(northStarData),
+          islandState: createStarterState(northStarData.category),
+        } : {}),
+      }));
+      setStudentProfile(profile);
+      if (northStarData) setNorthStar(northStarData);
+      patchUser({
+        yearGroup: profile.yearGroup,
+        curriculumLevel: profile.curriculumLevel,
+      });
+      if (essentialsMode !== undefined) updateSetting('essentialsMode', essentialsMode);
+      if (transitionToSeniorMode) {
+        setTransitionToSeniorMode(false);
+        showToast('Welcome to senior cycle!', 'success');
+      }
+      markOnboardingComplete();
+      nav.navigateToTree();
+      return;
+    }
     // These writes are fired, NOT awaited.
     //
     // Awaiting them stranded any student who finished onboarding without a
@@ -516,6 +609,14 @@ const App: React.FC = () => {
   const handleNorthStarSave = async (ns: NorthStar) => {
     setNorthStar(ns);
     if (!user) return;
+    if (user.uid === DEMO_STUDENT_UID) {
+      updateDemoProgress(current => ({
+        ...current,
+        northStar: ns,
+        directionProfile: createDirectionProfile(ns),
+      }));
+      return;
+    }
     try {
       const progressDocRef = doc(db, 'progress', user.uid);
       // setNorthStar already ran above — fire the write so an offline student
@@ -551,6 +652,15 @@ const App: React.FC = () => {
     const previousYearGroup = user.yearGroup;
     patchUser({ yearGroup: next });
     showToast(`Welcome to ${next === 'TY' ? 'TY' : next + ' Year'}!`, 'success');
+    if (user.uid === DEMO_STUDENT_UID) {
+      updateDemoProgress(current => ({
+        ...current,
+        subjectProfile: current.subjectProfile
+          ? { ...current.subjectProfile, yearGroup: next }
+          : current.subjectProfile,
+      }));
+      return;
+    }
     saveInBackground(
       setDoc(doc(db, 'users', user.uid), { yearGroup: next }, { merge: true }),
       'App.confirmYearBump',
@@ -566,6 +676,18 @@ const App: React.FC = () => {
   // wrapper so the user picks fresh senior subjects/grades/NS.
   const handleConfirmJCtoSenior = async (target: 'TY' | '5th') => {
     if (!user || !studentProfile) return;
+    if (user.uid === DEMO_STUDENT_UID) {
+      updateDemoProgress(current => {
+        const { subjectProfile: _profile, northStar: _northStar, ...rest } = current;
+        return rest;
+      });
+      patchUser({ yearGroup: target, curriculumLevel: 'senior' });
+      setStudentProfile(null);
+      setNorthStar(null);
+      setTransitionToSeniorMode(true);
+      nav.navigateToOnboarding();
+      return;
+    }
     // Both writes are fired, not awaited. Awaiting them offline left the
     // student in the worst possible state: the modal stayed open, nothing
     // happened, and re-tapping re-ran the whole archive-and-clear. Because the
@@ -654,6 +776,15 @@ const App: React.FC = () => {
     const previousYearGroup = user.yearGroup;
     patchUser({ yearGroup: 'graduated' });
     showToast('Best of luck with what\'s next.', 'success');
+    if (user.uid === DEMO_STUDENT_UID) {
+      updateDemoProgress(current => ({
+        ...current,
+        subjectProfile: current.subjectProfile
+          ? { ...current.subjectProfile, yearGroup: 'graduated' }
+          : current.subjectProfile,
+      }));
+      return;
+    }
     saveInBackground(
       setDoc(doc(db, 'users', user.uid), { yearGroup: 'graduated' }, { merge: true }),
       'App.confirmGraduate',
@@ -675,6 +806,11 @@ const App: React.FC = () => {
     // applies it locally at once and flushes it on reconnect.
     const previousProfile = studentProfile;
     setStudentProfile(profile);
+    if (user.uid === DEMO_STUDENT_UID) {
+      updateDemoProgress(current => ({ ...current, subjectProfile: profile }));
+      showToast('Subjects updated.', 'success');
+      return;
+    }
     const progressDocRef = doc(db, 'progress', user.uid);
     setDoc(progressDocRef, { subjectProfile: profile }, { merge: true })
       .catch(err => {
@@ -689,11 +825,19 @@ const App: React.FC = () => {
   const _handleBackToCategory = () => { nav.goBack(); };
 
   const handleDismissGuide = useCallback(async (guideId: string) => {
-    setDismissedGuides(prev => ({ ...prev, [guideId]: new Date().toISOString() }));
+    const dismissedAt = new Date().toISOString();
+    setDismissedGuides(prev => ({ ...prev, [guideId]: dismissedAt }));
     if (user?.uid) {
+      if (user.uid === DEMO_STUDENT_UID) {
+        updateDemoProgress(current => ({
+          ...current,
+          dismissedGuides: { ...current.dismissedGuides, [guideId]: dismissedAt },
+        }));
+        return;
+      }
       try {
         saveInBackground(setDoc(doc(db, 'progress', user.uid),
-          { dismissedGuides: { [guideId]: new Date().toISOString() } },
+          { dismissedGuides: { [guideId]: dismissedAt } },
           { merge: true }
         ), 'App.dismissGuide', undefined, { silent: true });
       } catch (err) {
@@ -701,7 +845,7 @@ const App: React.FC = () => {
         showToast('Couldn\'t save — check your connection', 'error');
       }
     }
-  }, [user?.uid, showToast]);
+  }, [user?.uid, showToast, updateDemoProgress]);
 
   const handlePurchaseAvatar = useCallback(async (seed: string, price: number): Promise<boolean> => {
     if (!user?.uid) return false;
@@ -710,6 +854,24 @@ const App: React.FC = () => {
     if (pointsData.balance < price) {
       showToast(`You need ${price - pointsData.balance} more JP to unlock this avatar.`, 'error');
       return false;
+    }
+
+    if (user.uid === DEMO_STUDENT_UID) {
+      const nextSeeds = Array.from(new Set([...unlockedAvatarSeeds, seed]));
+      updateDemoProgress(current => ({
+        ...current,
+        pointsData: {
+          ...current.pointsData,
+          totalSpent: (current.pointsData?.totalSpent ?? 0) + price,
+        },
+        cosmeticUnlocks: {
+          ...current.cosmeticUnlocks,
+          avatarSeeds: nextSeeds,
+        },
+      }));
+      setUnlockedAvatarSeeds(nextSeeds);
+      showToast('Avatar unlocked and ready to use.', 'success');
+      return true;
     }
 
     try {
@@ -764,7 +926,14 @@ const App: React.FC = () => {
       pointsData.reload();
       return false;
     }
-  }, [pointsData, setUnlockedAvatarSeeds, showToast, unlockedAvatarSeeds, user?.uid]);
+  }, [pointsData, setUnlockedAvatarSeeds, showToast, unlockedAvatarSeeds, updateDemoProgress, user?.uid]);
+
+  // Do not mount counters or student chrome against the logged-out context
+  // snapshot. If they mount at zero and hydrate a frame later, their normal
+  // count-up animation makes login look like progress was erased and rebuilt.
+  if (user && !isProgressReadyForUser(user.uid, progressLoaded, progressDataUid)) {
+    return <LoadingSpinner />;
+  }
 
   const routerProps = {
     studentProfile, userProgress, northStar, timetableCompletions,
@@ -777,7 +946,7 @@ const App: React.FC = () => {
     recommendation, strategyMastery, weeklyChallenge,
     dismissedGuides, handleDismissGuide,
     timetableBlockContext, setTimetableBlockContext, handleStudyFromTimetable,
-    journeyResult, setJourneyResult,
+    journeyResult, setJourneyResult: handleJourneyComplete,
     handleOnboardingComplete, handleOnboardingSkip,
     transitionToSeniorMode, transitionTargetYear: (transitionToSeniorMode ? (user?.yearGroup === 'TY' ? 'TY' : '5th') : undefined) as 'TY' | '5th' | undefined,
     handleProgressUpdate,
@@ -790,7 +959,7 @@ const App: React.FC = () => {
   return (
     <SettingsContext.Provider value={{ settings, updateSetting, unlockedThemes, unlockedCardStyles }}>
     <OfflineBanner />
-    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 transition-colors duration-500">
+    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950">
       {user && shouldShowStudentChrome(viewState) && !isSchoolStaff(user.role) && !user.isAdmin && (
         <div className={`fixed top-6 right-6 z-[100] ${viewState === 'my-journey' ? 'hidden' : 'hidden md:block'}`}>
           <div className="flex items-center gap-2">
@@ -798,7 +967,7 @@ const App: React.FC = () => {
               {gamification.isLoaded && (
                 <TrainingPulse
                   gamificationState={gamification.state}
-                  onOpenHub={handleGoToGamificationHub}
+                  onOpenProgress={handleGoToMilestones}
                   streak={streak}
                   pointsBalance={pointsData.balance}
                 />
@@ -842,7 +1011,7 @@ const App: React.FC = () => {
         <MobileBottomNav
           viewState={viewState}
           onGoHome={handleGoHome}
-          onGoToTrainingHub={handleGoToGamificationHub}
+          onGoToProgress={handleGoToDashboard}
           onGoToStudy={handleGoToStudy}
           onGoToJourney={handleGoToJourney}
           onGoToInnovationZone={handleGoToInnovationZone}

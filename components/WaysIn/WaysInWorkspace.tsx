@@ -273,7 +273,9 @@ const OneStepView: React.FC<{
             <div className="wi-shape-heading">
               <div>
                 <p className="wi-eyebrow">An empty frame—not an answer</p>
-                <h3>{model.expectedPoints} distinct {model.expectedPoints === 1 ? 'space' : 'spaces'} to think into</h3>
+                <h3>{model.planShape.basis === 'printed'
+                  ? `${model.expectedPoints} distinct ${model.expectedPoints === 1 ? 'space' : 'spaces'} to think into`
+                  : 'One flexible space to start with'}</h3>
               </div>
               {source.answerShape?.totalMarks && <span>{source.answerShape.totalMarks} marks</span>}
             </div>
@@ -308,7 +310,9 @@ const OneStepView: React.FC<{
         const labels = [
           model.command ? `My answer does the job: ${model.command.surface}.` : 'My answer does the job named in the original question.',
           model.constraints.length ? 'I respected the number, source and limits printed in the question.' : 'I checked the exact wording for any limit I may have missed.',
-          `I can see ${model.expectedPoints} distinct ${model.expectedPoints === 1 ? 'idea' : 'ideas'} in my response.`,
+          model.planShape.basis === 'printed'
+            ? `I can see ${model.expectedPoints} distinct ${model.expectedPoints === 1 ? 'idea' : 'ideas'} in my response.`
+            : 'I separated the distinct ideas in my response without inventing a required count.',
         ];
         return (
           <div>
@@ -390,7 +394,9 @@ const ShowMeView: React.FC<{
     },
     {
       label: 'Build',
-      title: `${model.expectedPoints} ${model.expectedPoints === 1 ? 'answer idea' : 'answer ideas'}`,
+      title: model.planShape.basis === 'printed'
+        ? `${model.expectedPoints} ${model.expectedPoints === 1 ? 'answer idea' : 'answer ideas'}`
+        : 'A flexible answer plan',
       detail: source.answerShape?.choice
         ? `Choose ${source.answerShape.choice.answer} from ${source.answerShape.choice.available} available parts.`
         : 'Keep each answer idea distinct so one point does not hide another.',
@@ -463,7 +469,11 @@ const ShowMeView: React.FC<{
             {source.answerShape?.totalMarks && <span>{source.answerShape.totalMarks} marks</span>}
           </div>
           <EmptySlots count={model.expectedPoints} notes={slotNotes} onNote={onSlotNote} editable />
-          <p className="wi-fine-print">The number of spaces comes from the tariff shape. Their contents come from you.</p>
+          <p className="wi-fine-print">
+            {model.planShape.basis === 'printed'
+              ? 'The number of spaces comes from the question’s printed wording. Their contents come from you.'
+              : 'The question prints no safe answer count, so this is one flexible starting space—not a marking rule.'}
+          </p>
           <button type="button" className="wi-primary wi-inline-primary" onClick={() => onUseSteps(4)}>
             Write the attempt one step at a time <ArrowRight size={16} />
           </button>

@@ -288,7 +288,11 @@ const IslandShopDrawer: React.FC<IslandShopDrawerProps> = ({
             <h3 className="text-sm font-semibold text-zinc-900 dark:text-white">Island Shop</h3>
             <div className="flex items-center gap-2">
               <span className="text-sm font-bold text-[var(--accent-hex)]">{pointsBalance} JP</span>
-              <button onClick={onClose} className="p-1 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800">
+              <button
+                onClick={onClose}
+                aria-label={isDesktop ? 'Close Island Shop' : 'Collapse Island Shop'}
+                className="p-1 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800"
+              >
                 {isDesktop ? (
                   <ChevronRight size={16} className="text-zinc-400" />
                 ) : (

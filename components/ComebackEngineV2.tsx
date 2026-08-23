@@ -15,6 +15,8 @@ import { db } from '../firebase';
 import { saveInBackground } from '../utils/firestoreWrite';
 import { useAuth } from '../contexts/AuthContext';
 import { useInnovationData } from '../contexts/InnovationDataContext';
+import { useOptionalProgress } from '../contexts/ProgressContext';
+import { DEMO_STUDENT_UID } from '../data/devStudent';
 import type { StudentSubjectProfile } from './subjectData';
 import { AnimatePresence, MotionDiv } from './Motion';
 import PrimaryActionButton from './ui/PrimaryActionButton';
@@ -88,6 +90,8 @@ const ComebackEngineV2: React.FC<ComebackEngineProps> = ({
   const { user } = useAuth();
   const { showToast } = useToast();
   const { topicMastery, subjectPriorities } = useInnovationData();
+  const progress = useOptionalProgress();
+  const isDemo = uid === DEMO_STUDENT_UID;
   const [isLoading, setIsLoading] = useState(!sessionPlan);
   const [stage, setStage] = useState<Stage>(sessionPlan ? 'plan' : 'setup');
   const [reason, setReason] = useState<RecoveryReason>(sessionPlan?.reason ?? 'unsure');
@@ -100,6 +104,24 @@ const ComebackEngineV2: React.FC<ComebackEngineProps> = ({
   const curriculumLevel = user?.curriculumLevel ?? profile.curriculumLevel ?? 'senior';
 
   useEffect(() => {
+    if (isDemo) {
+      const data = progress?.rawProgressDoc;
+      const saved = data?.comebackRecoveryPlan as RecoveryPlan | undefined;
+      if (saved?.version === 2) {
+        writeSessionPlan(uid, saved);
+        setPlan(saved);
+        setReason(saved.reason);
+        setCapacity(saved.capacity);
+        setStage('plan');
+      } else if ((data?.comebackEngine as { anchor?: string } | undefined)?.anchor) {
+        setLegacyAnchor((data?.comebackEngine as { anchor: string }).anchor);
+      }
+      if (!suppliedCompletions && data?.timetableCompletions) {
+        setLoadedCompletions(data.timetableCompletions);
+      }
+      setIsLoading(false);
+      return;
+    }
     let cancelled = false;
     getDoc(doc(db, 'progress', uid)).then(snapshot => {
       if (cancelled) return;
@@ -125,7 +147,7 @@ const ComebackEngineV2: React.FC<ComebackEngineProps> = ({
       if (!cancelled) setIsLoading(false);
     });
     return () => { cancelled = true; };
-  }, [uid, suppliedCompletions]);
+  }, [uid, suppliedCompletions, isDemo, progress?.rawProgressDoc]);
 
   const draftPlan = useMemo(() => buildRecoveryPlan({
     profile,
@@ -141,6 +163,10 @@ const ComebackEngineV2: React.FC<ComebackEngineProps> = ({
   const savePlan = (next: RecoveryPlan) => {
     setPlan(next);
     writeSessionPlan(uid, next);
+    if (isDemo) {
+      progress?.updateDemoProgress(current => ({ ...current, comebackRecoveryPlan: next }));
+      return;
+    }
     saveInBackground(
       setDoc(doc(db, 'progress', uid), { comebackRecoveryPlan: next }, { merge: true }),
       'ComebackEngineV2.savePlan',
@@ -168,6 +194,10 @@ const ComebackEngineV2: React.FC<ComebackEngineProps> = ({
     setPlan(null);
     writeSessionPlan(uid, null);
     setStage('setup');
+    if (isDemo) {
+      progress?.updateDemoProgress(current => ({ ...current, comebackRecoveryPlan: null }));
+      return;
+    }
     setDoc(doc(db, 'progress', uid), { comebackRecoveryPlan: null }, { merge: true })
       .catch(error => {
         console.error('Failed to clear recovery plan:', error);

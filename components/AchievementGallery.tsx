@@ -71,12 +71,14 @@ interface AchievementGalleryProps {
   unlockedAchievements: string[];
   achievementTimestamps: Record<string, number>;
   curriculumLevel?: CurriculumLevel;
+  showHeader?: boolean;
 }
 
 const AchievementGallery: React.FC<AchievementGalleryProps> = ({
   unlockedAchievements,
   achievementTimestamps,
   curriculumLevel = 'senior',
+  showHeader = true,
 }) => {
   const [activeTab, setActiveTab] = useState<AchievementCategory | 'all'>('all');
   const unlockedSet = new Set(unlockedAchievements);
@@ -93,15 +95,16 @@ const AchievementGallery: React.FC<AchievementGalleryProps> = ({
 
   return (
     <div className="space-y-4">
-      {/* Header */}
-      <div className="flex items-center justify-between">
-        <h3 className="text-sm font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">
-          Achievements
-        </h3>
-        <span className="text-xs font-bold text-zinc-400 dark:text-zinc-500">
-          {unlockedCount}/{visibleTotal}
-        </span>
-      </div>
+      {showHeader && (
+        <div className="flex items-center justify-between">
+          <h3 className="text-sm font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">
+            Achievements
+          </h3>
+          <span className="text-xs font-bold text-zinc-400 dark:text-zinc-500">
+            {unlockedCount}/{visibleTotal}
+          </span>
+        </div>
+      )}
 
       {/* Filter tabs */}
       <div className="flex gap-1.5 overflow-x-auto pb-1 -mx-1 px-1 scrollbar-none">

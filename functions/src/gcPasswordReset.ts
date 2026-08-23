@@ -18,7 +18,7 @@ import {
   schoolIdFromGcAddress,
 } from "./gcPasswordPolicy";
 import { syncAuthorizationClaims } from "./authClaims";
-import { isAdminEmail } from "./adminIdentity";
+import { CALLABLE_OPTIONS, assertSensitiveAuth, isVerifiedAdminToken } from "./security";
 
 /**
  * adminResetGcPassword
@@ -41,15 +41,16 @@ import { isAdminEmail } from "./adminIdentity";
  * (default-deny), so there is a record of who reset which login and when. The
  * password itself is never stored — only returned in the response.
  */
-export const adminResetGcPassword = onCall({ cors: true }, async (request) => {
+export const adminResetGcPassword = onCall(CALLABLE_OPTIONS, async (request) => {
   if (!request.auth) {
     throw new HttpsError("unauthenticated", "Must be logged in.");
   }
   // The one caller allowed. Checked against the token, not a Firestore field,
   // so it cannot be granted by writing a document.
-  if (!isAdminEmail(request.auth.token.email)) {
+  if (!isVerifiedAdminToken(request.auth.token)) {
     throw new HttpsError("permission-denied", "Only the administrator can reset a counsellor login.");
   }
+  await assertSensitiveAuth(request.auth);
 
   const { email, password: supplied, adoptExisting } = request.data as {
     email?: string; password?: string; adoptExisting?: boolean;
@@ -162,8 +163,19 @@ export const adminResetGcPassword = onCall({ cors: true }, async (request) => {
   // window that made the adoption attack above practical. The dashboard tells
   // the administrator the old password stops working immediately; this is what
   // makes that true.
-  await auth.revokeRefreshTokens(uid).catch(err =>
-    logger.error(`adminResetGcPassword: revokeRefreshTokens failed for ${target}`, err));
+  try {
+    await auth.revokeRefreshTokens(uid);
+  } catch (err) {
+    // The password has changed, but an already-issued token would remain able
+    // to call server endpoints until expiry. Never report the rotation as
+    // complete when its session-termination half failed.
+    logger.error(`adminResetGcPassword: revokeRefreshTokens failed for ${target}`, err);
+    throw new HttpsError(
+      "internal",
+      "The password changed but existing sessions could not be ended. Retry before sharing it.",
+    );
+  }
+  const sessionValidAfterSeconds = Math.floor(Date.now() / 1000);
 
   // Record the account as ours, so a later reset can tell if the address has
   // changed hands. Written before the role grant: if anything below fails we
@@ -194,13 +206,20 @@ export const adminResetGcPassword = onCall({ cors: true }, async (request) => {
   {
     const userRef = db.collection("users").doc(uid);
     const existingDoc = (await userRef.get()).data() || {};
-    const patch: Record<string, unknown> = { role: "gc", school: schoolId };
+    const patch: Record<string, unknown> = {
+      role: "gc",
+      school: schoolId,
+      // Firestore does not natively check revoked refresh tokens. Its rules
+      // compare auth_time with this cutoff, so already-issued ID tokens are
+      // denied immediately after a credential rotation.
+      sessionValidAfterSeconds,
+    };
     if (typeof existingDoc.name !== "string" || existingDoc.name.trim() === "") {
       patch.name = `${SCHOOL_NAMES[schoolId]} Guidance`;
     }
     await userRef.set(patch, { merge: true });
-    // Mirror into the signed token so firestore.rules' isSchoolStaff() resolves
-    // from the claim rather than an extra document read on every request.
+    // Claims support app routing; Firestore staff access is resolved from the
+    // current server-managed user document so demotion takes effect at once.
     await syncAuthorizationClaims(uid, { role: "gc", school: schoolId });
     logger.info(`adminResetGcPassword: provisioned ${target} as gc for "${schoolId}"`);
   }
@@ -213,7 +232,7 @@ export const adminResetGcPassword = onCall({ cors: true }, async (request) => {
     resetBy: request.auth.uid,
     passwordGenerated: generated,
     resetAt: FieldValue.serverTimestamp(),
-  }).catch(err => logger.error("adminResetGcPassword: audit write failed", err));
+  });
 
   logger.info(`adminResetGcPassword: reset ${target} by ${request.auth.uid} (${generated ? "generated" : "chosen"})`);
   return { success: true as const, email: target, password, generated };

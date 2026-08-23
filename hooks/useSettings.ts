@@ -7,6 +7,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { type UserSettings } from '../types';
+import { DEMO_STUDENT_UID } from '../data/devStudent';
 
 const STORAGE_KEY = 'nextstep-settings';
 
@@ -45,7 +46,7 @@ export function useSettings(uid?: string, userAvatar?: string) {
 
   // Load from Firestore on mount (Firestore wins on conflict)
   useEffect(() => {
-    if (!uid) {
+    if (!uid || uid === DEMO_STUDENT_UID) {
       setIsLoaded(true);
       return;
     }
@@ -112,7 +113,7 @@ export function useSettings(uid?: string, userAvatar?: string) {
       writeLocalSettings(next);
 
       // Persist to Firestore
-      if (uid) {
+      if (uid && uid !== DEMO_STUDENT_UID) {
         setDoc(doc(db, 'settings', uid), next, { merge: true }).catch(err =>
           console.error('Failed to save settings:', err)
         );

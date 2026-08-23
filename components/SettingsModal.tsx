@@ -47,7 +47,6 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
   pointsBalance = 0, onPurchaseAvatar,
   userName, userSchool, userYearGroup, onChangeSubjects, onResetNorthStar, onAdvanceYear, onLogout,
 }) => {
-  useModal(isOpen, onClose);
   // Junior Cycle always runs in Essentials Mode (simpler, shorter modules) — the
   // toggle is shown as locked-on rather than editable. See useEssentialsMode.
   const isJunior = userYearGroup ? yearGroupToCurriculumLevel(userYearGroup) === 'junior' : false;
@@ -56,6 +55,8 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
   const [dataRightsOpen, setDataRightsOpen] = useState(false);
   const [purchasingAvatar, setPurchasingAvatar] = useState<string | null>(null);
   const flashTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  useModal(isOpen, onClose, dialogRef);
 
   useEffect(() => {
     return () => {
@@ -80,16 +81,21 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
           onClick={onClose}
         >
           <MotionDiv
+            ref={dialogRef}
             initial={{ scale: 0.96, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.96, opacity: 0 }}
             transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="settings-dialog-title"
+            tabIndex={-1}
             className="relative bg-[#FAFBF6] dark:bg-zinc-900 border-[1.5px] border-[#383838] dark:border-zinc-600 rounded-t-[24px] sm:rounded-[24px] w-full max-w-md shadow-[5px_5px_0_0_#383838] overflow-hidden max-h-[92dvh] overflow-y-auto"
             onClick={(e: React.MouseEvent) => e.stopPropagation()}
           >
             {/* Header */}
             <div className="flex items-center justify-between p-6 pb-4 border-b border-[#DDD8D2] dark:border-zinc-700">
-              <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white tracking-tight">
+              <h2 id="settings-dialog-title" className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white tracking-tight">
                 Settings
               </h2>
               <div className="flex items-center gap-3">

@@ -13,11 +13,15 @@ import { db } from '../firebase';
 import { useFreshProgress } from './useFreshProgress';
 import { type CareerPathsState } from '../types/careerPaths';
 import { reportSaveError } from '../utils/logError';
+import { useProgress } from '../contexts/ProgressContext';
+import { DEMO_STUDENT_UID } from '../data/devStudent';
 
 const EMPTY: CareerPathsState = { seenIds: [], savedIds: [], shiftRatings: {}, updatedAt: '' };
 const add = (arr: string[], v: string) => (arr.includes(v) ? arr : [...arr, v]);
 
 export function useCareerPaths(uid?: string) {
+  const { updateDemoProgress } = useProgress();
+  const isDemo = uid === DEMO_STUDENT_UID;
   const { doc: rawProgressDoc, loaded: progressLoaded } = useFreshProgress(uid);
   const [state, setState] = useState<CareerPathsState>(EMPTY);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -34,8 +38,10 @@ export function useCareerPaths(uid?: string) {
   }, [progressLoaded, rawProgressDoc, uid]);
 
   const persist = useCallback((next: CareerPathsState) => {
-    if (uid) setDoc(doc(db, 'progress', uid), { careerPaths: next }, { merge: true }).catch((e) => reportSaveError('useCareerPaths.save', e));
-  }, [uid]);
+    if (!uid) return;
+    if (isDemo) updateDemoProgress(current => ({ ...current, careerPaths: next }));
+    else setDoc(doc(db, 'progress', uid), { careerPaths: next }, { merge: true }).catch((e) => reportSaveError('useCareerPaths.save', e));
+  }, [uid, isDemo, updateDemoProgress]);
 
   const markSeen = useCallback((id: string) => {
     setState((prev) => {

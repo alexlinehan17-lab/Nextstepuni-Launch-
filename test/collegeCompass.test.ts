@@ -7,7 +7,12 @@
  * tests are the regression guard on the "student marks == GC sees" promise.
  */
 import { describe, test, expect } from 'vitest';
-import { computeCompassProgress, itemStatus, JOURNEY_STOPS } from '@/collegeCompassData';
+import {
+  computeCompassProgress,
+  computeStopStates,
+  itemStatus,
+  JOURNEY_STOPS,
+} from '@/collegeCompassData';
 
 // Two distinct item keys from the real trail.
 const allKeys: string[] = [];
@@ -16,6 +21,16 @@ const k0 = allKeys[0];
 const k1 = allKeys[1];
 
 describe('College Compass completion model', () => {
+  test('uses the student profile entry year for a live sixth-year roadmap', () => {
+    const roadmap = computeStopStates(new Date('2026-08-22T12:00:00.000Z'), 'live', 2027);
+    const doorsOpen = roadmap.states.find(stop => stop.id === 'doors-open');
+    const lockIn = roadmap.states.find(stop => stop.id === 'lock-in');
+
+    expect(roadmap.entryYear).toBe(2027);
+    expect(doorsOpen?.start.getFullYear()).toBe(2026);
+    expect(lockIn?.start.getFullYear()).toBe(2027);
+  });
+
   test('itemStatus reads new statuses and tolerates the legacy boolean true', () => {
     expect(itemStatus({ [k0]: 'done' }, k0)).toBe('done');
     expect(itemStatus({ [k0]: 'in-progress' }, k0)).toBe('in-progress');

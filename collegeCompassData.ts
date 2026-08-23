@@ -692,8 +692,11 @@ export interface StopState {
 export function computeStopStates(
   today: Date,
   mode: CompassMode,
+  requestedEntryYear?: number,
 ): { entryYear: number; states: StopState[]; currentIndex: number } {
-  const entryYear = cycleEntryYear(today, mode);
+  const entryYear = requestedEntryYear && Number.isInteger(requestedEntryYear)
+    ? requestedEntryYear
+    : cycleEntryYear(today, mode);
   const states: StopState[] = JOURNEY_STOPS.map(stop => {
     const start = resolveCycleDate(stop.start, entryYear);
     const end = stop.end ? resolveCycleDate(stop.end, entryYear) : null;

@@ -17,6 +17,8 @@ import { useFreshProgress } from './useFreshProgress';
 import { type CatchUpLaneState, type ComebackPlan, type FirstWeekDayProgress } from '../types/catchUpLane';
 import { RECOVERY_CARDS } from '../catchUpLaneData';
 import { reportSaveError } from '../utils/logError';
+import { useProgress } from '../contexts/ProgressContext';
+import { DEMO_STUDENT_UID } from '../data/devStudent';
 
 const EMPTY: CatchUpLaneState = {
   recoveredTopicIds: [],
@@ -28,6 +30,8 @@ const EMPTY: CatchUpLaneState = {
 
 export function useCatchUpLane(uid?: string) {
   const { doc: rawProgressDoc, loaded: progressLoaded } = useFreshProgress(uid);
+  const { updateDemoProgress } = useProgress();
+  const isDemo = uid === DEMO_STUDENT_UID;
   const [state, setState] = useState<CatchUpLaneState>(EMPTY);
   const [isLoaded, setIsLoaded] = useState(false);
   const seededRef = useRef(false);
@@ -47,10 +51,12 @@ export function useCatchUpLane(uid?: string) {
   }, [progressLoaded, rawProgressDoc, uid]);
 
   const persist = useCallback((next: CatchUpLaneState) => {
-    if (uid) {
+    if (isDemo) {
+      updateDemoProgress(current => ({ ...current, catchUpLane: next }));
+    } else if (uid) {
       setDoc(doc(db, 'progress', uid), { catchUpLane: next }, { merge: true }).catch((e) => reportSaveError('useCatchUpLane.save', e));
     }
-  }, [uid]);
+  }, [uid, isDemo, updateDemoProgress]);
 
   const markRecovered = useCallback((topicId: string) => {
     setState(prev => {

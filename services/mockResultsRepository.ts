@@ -1,4 +1,6 @@
-import { type UnifiedMockResult } from '../types';
+import { type UnifiedMockResult, type UnifiedMockResultKind } from '../types';
+import { computeBestSixTotal } from '../components/pointsScenarioStore';
+import type { Grade } from '../components/subjectData';
 import { type ProgressDocument } from './progressRepository';
 
 type LegacyMock = {
@@ -15,6 +17,22 @@ type LegacyMock = {
 
 const today = () => new Date().toISOString().split('T')[0];
 
+function isGrade(value: string): value is Grade {
+  return /^(H|O)[1-8]$/.test(value);
+}
+
+function recomputeFullMockTotal(entries: UnifiedMockResult['entries']): number {
+  return computeBestSixTotal(entries.flatMap(entry => (
+    isGrade(entry.grade) ? [{ subjectName: entry.subjectName, grade: entry.grade }] : []
+  )));
+}
+
+export function resolveMockResultKind(
+  result: Pick<UnifiedMockResult, 'entries' | 'resultKind'>,
+): UnifiedMockResultKind {
+  return result.resultKind ?? (result.entries.length > 1 ? 'full' : 'single');
+}
+
 function legacyToUnified(mock: LegacyMock, source: 'points-passport' | 'war-room', index: number): UnifiedMockResult {
   const entries = mock.grades
     ?? (mock.subject
@@ -28,6 +46,7 @@ function legacyToUnified(mock: LegacyMock, source: 'points-passport' | 'war-room
     entries,
     totalPoints: mock.totalPoints ?? 0,
     timestamp,
+    resultKind: entries.length > 1 ? 'full' : 'single',
   };
 }
 
@@ -49,7 +68,7 @@ export function reconcileMockResults(data: ProgressDocument | null | undefined):
     ...(data.mockResults ?? []),
     ...((data.pointsPassport?.mockResults ?? []).map((mock, index) => legacyToUnified(mock, 'points-passport', index))),
     ...((data.warRoom?.mockResults ?? []).map((mock, index) => legacyToUnified(mock, 'war-room', index))),
-  ];
+  ].map(result => ({ ...result, resultKind: resolveMockResultKind(result) }));
 
   const byKey = new Map<string, UnifiedMockResult>();
   for (const result of candidates) {
@@ -64,14 +83,25 @@ export function reconcileMockResults(data: ProgressDocument | null | undefined):
     // choosing one copy, so reconciliation can never discard an entered grade.
     const entries = [...existing.entries];
     const subjects = new Set(entries.map(entry => entry.subjectName));
+    let entriesChanged = false;
     for (const entry of result.entries) {
-      if (!subjects.has(entry.subjectName)) entries.push(entry);
+      if (!subjects.has(entry.subjectName)) {
+        entries.push(entry);
+        subjects.add(entry.subjectName);
+        entriesChanged = true;
+      }
     }
+    const resultKind = existing.resultKind === 'full' || result.resultKind === 'full'
+      ? 'full'
+      : 'single';
     byKey.set(key, {
       ...existing,
       entries,
-      totalPoints: Math.max(existing.totalPoints, result.totalPoints),
+      totalPoints: resultKind === 'full' && entriesChanged
+        ? recomputeFullMockTotal(entries)
+        : Math.max(existing.totalPoints, result.totalPoints),
       timestamp: Math.max(existing.timestamp, result.timestamp),
+      resultKind,
     });
   }
 
@@ -83,5 +113,18 @@ export function mockResultsStoragePatch(results: UnifiedMockResult[]) {
     unifiedMockResults: results,
     // Temporary compatibility mirror for already-installed app versions.
     mockResults: results,
+  };
+}
+
+/**
+ * Once a deletion is made, clear the retired namespaces as well as writing the
+ * canonical list. Otherwise reconciliation can restore a deleted legacy item
+ * on the next load.
+ */
+export function mockResultsDeletionPatch(results: UnifiedMockResult[]) {
+  return {
+    ...mockResultsStoragePatch(results),
+    pointsPassport: { mockResults: [] },
+    warRoom: { mockResults: [] },
   };
 }

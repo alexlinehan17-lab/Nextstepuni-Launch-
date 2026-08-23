@@ -20,7 +20,7 @@ import {
 } from '../services/progressRepository';
 import { migrateTopicMastery } from '../services/topicMasteryMigration';
 import { reconcileMockResults } from '../services/mockResultsRepository';
-import { DEMO_STUDENT_UID } from '../data/devStudent';
+import { DEMO_STUDENT_UID, persistDemoStudentProgress } from '../data/devStudent';
 
 // ─── Types ──────────────────────────────────────────────────
 
@@ -72,6 +72,9 @@ interface ProgressContextValue {
 
   // True after progress data has been synced at least once from auth
   progressLoaded: boolean;
+  /** UID and status for the data currently represented by this context. */
+  progressDataUid: string | null;
+  progressDataStatus: 'pending' | 'loaded' | 'failed';
 
   // Typed accessors over the raw progress/{uid} doc. Hooks that read these
   // shared fields should use these rather than the underlying doc shape so the
@@ -91,6 +94,10 @@ interface ProgressContextValue {
    *  accessors above. */
   rawProgressDoc: ProgressDocument;
 
+  /** Updates the localhost Demo Account's in-memory progress document. This is
+   *  a no-op for real accounts, whose feature hooks persist through Firestore. */
+  updateDemoProgress: (updater: (current: ProgressDocument) => ProgressDocument) => void;
+
   /** Re-fetches the progress doc from Firestore and updates all derived state.
    *  Replaces the old per-hook reload() pattern. */
   reloadProgress: () => void;
@@ -106,10 +113,13 @@ export const useProgress = (): ProgressContextValue => {
   return ctx;
 };
 
+/** Optional boundary for tools that also support isolated rendering. */
+export const useOptionalProgress = (): ProgressContextValue | null => useContext(ProgressContext);
+
 // ─── Provider ───────────────────────────────────────────────
 
 export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const { user, isLoadingAuth, loadedData } = useAuth();
+  const { user, isLoadingAuth, loadedData, loadedDataUid, loadedDataStatus } = useAuth();
 
   // Core state
   const [userProgress, setUserProgress] = useState<UserProgress>({});
@@ -121,7 +131,10 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   const [unlockedCardStyles, setUnlockedCardStyles] = useState<string[]>([]);
   const [dismissedGuides, setDismissedGuides] = useState<Record<string, string>>({});
   const [progressLoaded, setProgressLoaded] = useState(false);
+  const [progressDataUid, setProgressDataUid] = useState<string | null>(null);
+  const [progressDataStatus, setProgressDataStatus] = useState<'pending' | 'loaded' | 'failed'>('pending');
   const [rawProgressDoc, setRawProgressDoc] = useState<ProgressDocument>({});
+  const rawProgressDocRef = useRef<ProgressDocument>({});
   const [reloadVersion, setReloadVersion] = useState(0);
   // Study sessions live in /progress/{uid}/sessions/{sessionId} subcollection
   // (migrated from the old rawProgressDoc.studySessions array — see Schema
@@ -164,12 +177,52 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     setReloadVersion(v => v + 1);
   }, []);
 
-  // Sync from auth loaded data (initial load)
-  const syncedRef = useRef(false);
   useEffect(() => {
-    if (isLoadingAuth || syncedRef.current) return;
-    if (!user) {
-      syncedRef.current = false;
+    rawProgressDocRef.current = rawProgressDoc;
+  }, [rawProgressDoc]);
+
+  const updateDemoProgress = useCallback((updater: (current: ProgressDocument) => ProgressDocument) => {
+    if (user?.uid !== DEMO_STUDENT_UID) return;
+    const next = updater(rawProgressDocRef.current);
+    rawProgressDocRef.current = next;
+    persistDemoStudentProgress(next);
+    setRawProgressDoc(next);
+    // Keep the convenience fields in the same React batch. Waiting for the
+    // mirror effect below caused subject/timetable changes to show the old
+    // value for one route transition and appear to revert.
+    setUserProgress(extractModuleProgress(next));
+    setStudentProfile((next.subjectProfile as StudentSubjectProfile) ?? null);
+    setNorthStar((next.northStar as NorthStar) ?? null);
+    setTimetableCompletions(next.timetableCompletions ?? {});
+    setUnlockedAvatarSeeds(next.cosmeticUnlocks?.avatarSeeds ?? []);
+    setUnlockedThemes(next.cosmeticUnlocks?.themeColors ?? []);
+    setUnlockedCardStyles(next.cosmeticUnlocks?.cardStyles ?? []);
+    setDismissedGuides(next.dismissedGuides ?? {});
+  }, [user?.uid]);
+
+  // Demo tools all update the shared raw document. Mirror its owned fields
+  // into the context's convenience state immediately so Home, Journey and the
+  // dashboard never show an older profile/timetable after leaving a tool.
+  useEffect(() => {
+    if (user?.uid !== DEMO_STUDENT_UID) return;
+    setUserProgress(extractModuleProgress(rawProgressDoc));
+    setStudentProfile((rawProgressDoc.subjectProfile as StudentSubjectProfile) ?? null);
+    setNorthStar((rawProgressDoc.northStar as NorthStar) ?? null);
+    setTimetableCompletions(rawProgressDoc.timetableCompletions ?? {});
+    setUnlockedAvatarSeeds(rawProgressDoc.cosmeticUnlocks?.avatarSeeds ?? []);
+    setUnlockedThemes(rawProgressDoc.cosmeticUnlocks?.themeColors ?? []);
+    setUnlockedCardStyles(rawProgressDoc.cosmeticUnlocks?.cardStyles ?? []);
+    setDismissedGuides(rawProgressDoc.dismissedGuides ?? {});
+  }, [rawProgressDoc, user?.uid]);
+
+  // Sync from auth loaded data (initial load). LoginPage can publish the user
+  // before AuthContext has loaded that account's progress, so only a matching
+  // loadedDataUid may enter this context.
+  const syncedAuthKeyRef = useRef<string | null>(null);
+  useEffect(() => {
+    if (isLoadingAuth) return;
+
+    const clearProgress = () => {
       setUserProgress({});
       setStudentProfile(null);
       setNorthStar(null);
@@ -178,9 +231,31 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       setUnlockedThemes([]);
       setUnlockedCardStyles([]);
       setDismissedGuides({});
+      rawProgressDocRef.current = {};
       setRawProgressDoc({});
+    };
+
+    if (!user) {
+      syncedAuthKeyRef.current = null;
+      clearProgress();
+      setProgressDataUid(null);
+      setProgressDataStatus('pending');
+      setProgressLoaded(true);
       return;
     }
+
+    if (loadedDataUid !== user.uid || loadedDataStatus === 'pending') {
+      syncedAuthKeyRef.current = null;
+      clearProgress();
+      setProgressDataUid(null);
+      setProgressDataStatus('pending');
+      setProgressLoaded(false);
+      return;
+    }
+
+    const syncKey = `${user.uid}:${loadedDataStatus}`;
+    if (syncedAuthKeyRef.current === syncKey) return;
+
     setUserProgress(loadedData.userProgress);
     setStudentProfile(loadedData.studentProfile);
     setNorthStar(loadedData.northStar);
@@ -189,15 +264,13 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     setUnlockedThemes(loadedData.unlockedThemes);
     setUnlockedCardStyles(loadedData.unlockedCardStyles);
     setDismissedGuides(loadedData.dismissedGuides);
+    rawProgressDocRef.current = loadedData.rawProgressDoc;
     setRawProgressDoc(loadedData.rawProgressDoc);
-    syncedRef.current = true;
+    syncedAuthKeyRef.current = syncKey;
+    setProgressDataUid(user.uid);
+    setProgressDataStatus(loadedDataStatus);
     setProgressLoaded(true);
-  }, [isLoadingAuth, user, loadedData]);
-
-  // Reset sync flag on user change
-  useEffect(() => {
-    syncedRef.current = false;
-  }, [user?.uid]);
+  }, [isLoadingAuth, user, loadedData, loadedDataUid, loadedDataStatus]);
 
   // Reload: re-fetch progress doc from Firestore when reloadVersion bumps.
   // Used after onboarding completion and any write that the GC/student app
@@ -216,6 +289,7 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     getProgressDocument(user.uid).then(pd => {
       if (cancelled) return;
       if (pd) {
+        rawProgressDocRef.current = pd;
         setRawProgressDoc(pd);
         // Cherry-picked field refresh (parity with initial sync above).
         setUserProgress(extractModuleProgress(pd));
@@ -227,6 +301,11 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
         setUnlockedCardStyles(pd.cosmeticUnlocks?.cardStyles || []);
         setDismissedGuides(pd.dismissedGuides || {});
       }
+      // A successful retry (including a valid empty document) can safely
+      // establish the rank baseline that an initial failed read could not.
+      setProgressDataUid(user.uid);
+      setProgressDataStatus('loaded');
+      setProgressLoaded(true);
     }).catch((e) => logError('ProgressContext.load', e));
     return () => { cancelled = true; };
   }, [reloadVersion, user?.uid]);
@@ -296,6 +375,8 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     dismissedGuides,
     setDismissedGuides,
     progressLoaded,
+    progressDataUid,
+    progressDataStatus,
     studySessions,
     studyDebriefs,
     studyReflections,
@@ -304,6 +385,7 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     unifiedMockResults,
     questRewards,
     rawProgressDoc,
+    updateDemoProgress,
     reloadProgress,
   };
 

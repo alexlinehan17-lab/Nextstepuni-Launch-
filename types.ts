@@ -302,6 +302,8 @@ export interface TopicMasteryV2 {
 }
 
 // ── Unified Mock Results ─────────────────────────────────────
+export type UnifiedMockResultKind = 'full' | 'single';
+
 export interface UnifiedMockResult {
   id: string;
   label: string;
@@ -309,6 +311,8 @@ export interface UnifiedMockResult {
   entries: { subjectName: string; grade: string; level: string }[];
   totalPoints: number;
   timestamp: number;
+  /** Added after full sittings and single-subject results began sharing one history. */
+  resultKind?: UnifiedMockResultKind;
 }
 
 // ── College Compass ──────────────────────────────────────────

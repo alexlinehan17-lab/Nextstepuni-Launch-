@@ -4,13 +4,13 @@
  */
 
 import { useState, useEffect, useCallback, useRef } from 'react';
-import { collection, query, where, orderBy, limit, getDocs, writeBatch, doc, serverTimestamp, Timestamp, increment } from 'firebase/firestore';
-import { db } from '../firebase';
-import { saveInBackground, awaitWriteOrTimeout } from '../utils/firestoreWrite';
+import { collection, query, where, orderBy, limit, getDocs, Timestamp } from 'firebase/firestore';
+import { getFunctions, httpsCallable } from 'firebase/functions';
+import app, { db } from '../firebase';
 import { type ShopItem } from '../types';
 import { SHOP_CATALOG } from '../islandShopData';
 import { getJourneyV2BasePrice } from '../journeyEconomyConfig';
-import { firstName } from '../utils/firstName';
+import { DEMO_STUDENT_UID } from '../data/devStudent';
 
 /** Max price for giftable items */
 const GIFT_MAX_PRICE = 50;
@@ -29,6 +29,7 @@ export interface PendingGift {
 }
 
 export function useGifts(uid?: string) {
+  const isDemo = uid === DEMO_STUDENT_UID;
   const [pendingGifts, setPendingGifts] = useState<PendingGift[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const isMountedRef = useRef(true);
@@ -36,7 +37,11 @@ export function useGifts(uid?: string) {
 
   // Load pending gifts for this user
   useEffect(() => {
-    if (!uid) return;
+    if (!uid || isDemo) {
+      setPendingGifts([]);
+      setIsLoading(false);
+      return;
+    }
     let cancelled = false;
 
     (async () => {
@@ -71,11 +76,11 @@ export function useGifts(uid?: string) {
     })();
 
     return () => { cancelled = true; };
-  }, [uid]);
+  }, [uid, isDemo]);
 
   // Check if sender has already sent a gift today
   const canSendGiftToday = useCallback(async (): Promise<boolean> => {
-    if (!uid) return false;
+    if (!uid || isDemo) return false;
     try {
       const startOfDay = new Date();
       startOfDay.setHours(0, 0, 0, 0);
@@ -90,65 +95,44 @@ export function useGifts(uid?: string) {
       return snap.empty;
     } catch (err) {
       console.error('[useGifts] Failed to check gift eligibility:', err);
-      return true;
+      return false;
     }
-  }, [uid]);
+  }, [uid, isDemo]);
 
   // Send a gift to a peer (atomic: create gift doc + deduct points)
   const sendGift = useCallback(async (
     toUid: string,
-    school: string,
+    _school: string,
     item: ShopItem,
-    fromName: string,
+    _fromName: string,
   ): Promise<boolean> => {
-    if (!uid) return false;
+    if (!uid || isDemo) return false;
     try {
-      const batch = writeBatch(db);
-
-      const giftRef = doc(collection(db, 'gifts'));
-      batch.set(giftRef, {
-        fromUid: uid,
-        // Peers see first name only (data minimisation, 2026-07-18).
-        fromName: firstName(fromName),
-        toUid,
-        school,
-        itemId: item.id,
-        status: 'pending',
-        createdAt: serverTimestamp(),
-      });
-
-      // Deduct points from sender
-      const progressRef = doc(db, 'progress', uid);
-      batch.update(progressRef, {
-        'pointsData.totalSpent': increment(getJourneyV2BasePrice(item)),
-      });
-
-      // Bounded wait — see useKudos.sendKudos. A queued batch still reaches the
-      // recipient on reconnect, so only an outright rejection is a failure.
-      const outcome = await awaitWriteOrTimeout(batch.commit(), 'useGifts.sendGift');
-      return outcome !== 'failed';
+      const send = httpsCallable<{ toUid: string; itemId: string }, { success: boolean }>(
+        getFunctions(app),
+        'sendGift',
+      );
+      await send({ toUid, itemId: item.id });
+      return true;
     } catch (err) {
       console.error('[useGifts] Failed to send gift:', err);
       return false;
     }
-  }, [uid]);
+  }, [uid, isDemo]);
 
   // Mark a gift as placed
   const markGiftPlaced = useCallback(async (giftId: string): Promise<void> => {
-    const batch = writeBatch(db);
-    batch.update(doc(db, 'gifts', giftId), { status: 'placed' });
-    // Remove from the pending list immediately; batch.commit() has the same
-    // server-ack semantics as any other write, so awaiting it meant the gift
-    // stayed stuck in "pending" offline and the student could place it twice.
-    const removed = giftId;
-    if (isMountedRef.current) setPendingGifts(prev => prev.filter(g => g.id !== removed));
-    saveInBackground(
-      batch.commit(),
-      'useGifts.markGiftPlaced',
-      undefined,
-      { silent: true },
+    if (isDemo) {
+      if (isMountedRef.current) setPendingGifts(prev => prev.filter(g => g.id !== giftId));
+      return;
+    }
+    const place = httpsCallable<{ giftId: string }, { success: boolean }>(
+      getFunctions(app),
+      'placeGift',
     );
-  }, []);
+    await place({ giftId });
+    if (isMountedRef.current) setPendingGifts(prev => prev.filter(g => g.id !== giftId));
+  }, [isDemo]);
 
   return { pendingGifts, isLoading, canSendGiftToday, sendGift, markGiftPlaced, GIFTABLE_ITEMS };
 }

@@ -335,16 +335,21 @@ const MilestonePanel: React.FC<MilestonePanelProps> = ({ stop, state, mode, chec
 interface CollegeCompassProps {
   uid?: string;
   yearGroup?: YearGroup;
+  examStartDate?: string | null;
 }
 
-const CollegeCompass: React.FC<CollegeCompassProps> = ({ uid, yearGroup }) => {
+const CollegeCompass: React.FC<CollegeCompassProps> = ({ uid, yearGroup, examStartDate }) => {
   const mode: CompassMode = yearGroup === '6th' ? 'live' : 'orientation';
   const preview = mode === 'orientation';
 
   const { state, cycleItemStatus, setHearIndicators, setDareCategory, setTargetInstitutions } = useCollegeCompass(uid);
 
   // Resolve dates/statuses once. `new Date()` is the project "today".
-  const { entryYear, states, currentIndex } = useMemo(() => computeStopStates(new Date(), mode), [mode]);
+  const profileEntryYear = examStartDate ? Number(examStartDate.slice(0, 4)) : undefined;
+  const { entryYear, states, currentIndex } = useMemo(
+    () => computeStopStates(new Date(), mode, profileEntryYear),
+    [mode, profileEntryYear],
+  );
 
   const initialStopId = preview ? JOURNEY_STOPS[0].id : JOURNEY_STOPS[currentIndex]?.id ?? JOURNEY_STOPS[0].id;
   const [selectedStopId, setSelectedStopId] = useState<string>(initialStopId);

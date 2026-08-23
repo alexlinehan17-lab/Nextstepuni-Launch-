@@ -14,12 +14,13 @@ import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { ArrowRight, ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { AnimatePresence, useReducedMotion } from 'framer-motion';
 import { MotionDiv } from './Motion';
+import { useModal } from '../hooks/useModal';
 
 export type GuideAction =
   | 'modules'
   | 'launchpad'
   | 'tool:paper-trail'
-  | 'tool:examiners-chair'
+  | 'tool:mark-bank'
   | 'tool:points-passport'
   | 'dashboard'
   | 'study';
@@ -38,11 +39,11 @@ const CARDS: GuideCard[] = [
     id: 'home',
     chip: 'Start here',
     title: 'Home — your base camp',
-    what: 'Everything starts here: your subjects, your streak, and the two doors — Modules for learning, the Launchpad for exam tools.',
+    what: 'Everything starts here: today’s work, your learning paths and a clear route into study, progress and exam tools.',
     bullets: [
-      'The progress rings show how far you are in each module category.',
-      'Your daily quest and streak live at the top.',
-      'The sidebar gets you anywhere in two taps.',
+      'Today’s focus keeps the next useful action visible.',
+      'Learning paths show where to continue without searching.',
+      'The navigation takes you to Study, My Progress and Launchpad directly.',
     ],
   },
   {
@@ -65,7 +66,7 @@ const CARDS: GuideCard[] = [
     bullets: [
       'Filter by Understand, Plan or Track.',
       'Tools remember your subjects once your profile is set.',
-      'The two flagships: Paper Trail and The Examiner’s Chair.',
+      'Mark Bank, Paper Trail and War Room turn exam evidence into practice.',
     ],
     go: { label: 'Open the Launchpad', action: 'launchpad' },
   },
@@ -82,26 +83,26 @@ const CARDS: GuideCard[] = [
     go: { label: 'Open Paper Trail', action: 'tool:paper-trail' },
   },
   {
-    id: 'examiners-chair',
-    chip: 'Exam tools · Marking',
-    title: 'The Examiner’s Chair',
-    what: 'Sit on the other side of the desk: mark sample scripts against the real SEC rules and learn to see your own answers the way the examiner will.',
+    id: 'mark-bank',
+    chip: 'Exam tools · Practice',
+    title: 'Mark Bank',
+    what: 'Practise real exam questions one at a time, then mark each point against the official scheme and bring weak questions back at the right time.',
     bullets: [
-      'Every marking rule is cited to a real SEC scheme.',
-      'The Daily Mark keeps your marking eye calibrated — one script a day.',
-      'Compare your decision with the official call and see exactly where marks are won or lost.',
+      'Ways In can make dense wording easier to navigate without changing the question.',
+      'Mark point by point instead of relying on a vague right-or-wrong result.',
+      'Your confidence and result decide when the question returns.',
     ],
-    go: { label: 'Take the chair', action: 'tool:examiners-chair' },
+    go: { label: 'Open Mark Bank', action: 'tool:mark-bank' },
   },
   {
     id: 'progress',
     chip: 'Track',
-    title: 'Your progress & the Coach',
-    what: 'Everything you practise turns into numbers you can act on — accuracy by subject, weakest topics, and why your marks die.',
+    title: 'My Progress',
+    what: 'Your study, confidence, mock results and milestones come together in one dashboard so you can see what is changing over time.',
     bullets: [
-      'The Coach composes your next 20 minutes from every tool’s signals.',
-      'The autopsy splits lost marks into knowledge, technique, slips and time — each with a fix.',
-      'Export a report to show a teacher or parent.',
+      'Overview shows study volume, confidence and mock trajectory.',
+      'Insights explain subject trends in plain language.',
+      'Milestones keeps rank, achievements and weekly goals together.',
     ],
     go: { label: 'See your dashboard', action: 'dashboard' },
   },
@@ -184,10 +185,33 @@ const StudyTimerPreview: React.FC = () => (
   </div>
 );
 
+const HomePreview: React.FC = () => (
+  <div className="w-full aspect-[16/10] overflow-hidden rounded-xl border-2 bg-[#FAFBF6] p-4" style={{ borderColor: INK }} role="img" aria-label="Current Home page with today's focus, learning paths and progress shortcuts">
+    <div className="flex items-center justify-between border-b border-[#DDD8D2] pb-2">
+      <div><p className="text-[7px] font-bold uppercase tracking-[0.18em] text-[#9E9186]">Today</p><p className="font-serif text-sm font-semibold text-[#1A1A1A]">Good afternoon</p></div>
+      <span className="rounded-full border border-[#D0CDC8] px-2 py-1 text-[7px] font-bold text-[#C94F10]">My Progress</span>
+    </div>
+    <div className="mt-3 grid grid-cols-[1.25fr_0.75fr] gap-2">
+      <div className="rounded-xl border border-[#D0CDC8] bg-white p-3">
+        <p className="text-[7px] font-bold uppercase tracking-[0.14em] text-[#9E9186]">Today’s focus</p>
+        <p className="mt-1 font-serif text-[13px] font-semibold text-[#1A1A1A]">Keep the streak moving.</p>
+        <div className="mt-3 h-2 rounded-full bg-[#FDE8DB]"><div className="h-full w-2/3 rounded-full bg-[#F26B1F]" /></div>
+      </div>
+      <div className="rounded-xl border-2 border-[#1A1A1A] bg-[#FDEEDF] p-3 shadow-[2px_2px_0_#1A1A1A]">
+        <p className="text-[7px] font-bold uppercase tracking-[0.14em] text-[#8C3A0E]">Study now</p>
+        <p className="mt-1 text-[9px] font-semibold text-[#1A1A1A]">Start a focused session</p>
+      </div>
+    </div>
+    <p className="mt-3 text-[7px] font-bold uppercase tracking-[0.14em] text-[#9E9186]">Learning paths</p>
+    <div className="mt-1.5 grid grid-cols-3 gap-1.5">{['Mind', 'Learning', 'Exam'].map((label, index) => <div key={label} className="rounded-lg border border-[#DDD8D2] bg-white p-2"><div className={`h-1 rounded-full ${index === 0 ? 'bg-[#F26B1F]' : index === 1 ? 'bg-[#5E9C7B]' : 'bg-[#7D82B8]'}`} /><p className="mt-1.5 text-[7px] font-semibold text-[#3A3530]">{label}</p></div>)}</div>
+  </div>
+);
+
 /** Screenshot with a graceful monogram fallback when the asset is missing. */
 const CardImage: React.FC<{ card: GuideCard }> = ({ card }) => {
   const [failed, setFailed] = useState(false);
   if (card.id === 'study') return <StudyTimerPreview />;
+  if (card.id === 'home') return <HomePreview />;
   if (failed) {
     return (
       <div
@@ -221,6 +245,7 @@ interface Props {
 }
 
 const SiteGuide: React.FC<Props> = ({ open, onClose, onGo }) => {
+  useModal(open, onClose);
   const [idx, setIdx] = useState(0);
   const [visited, setVisited] = useState<Set<number>>(() => new Set([0]));
   const reduced = useReducedMotion();
@@ -251,11 +276,10 @@ const SiteGuide: React.FC<Props> = ({ open, onClose, onGo }) => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === 'ArrowRight') goTo(idx + 1);
       else if (e.key === 'ArrowLeft') goTo(idx - 1);
-      else if (e.key === 'Escape') onClose();
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [open, idx, goTo, onClose]);
+  }, [open, idx, goTo]);
 
   if (!open) return null;
   const card = CARDS[idx];

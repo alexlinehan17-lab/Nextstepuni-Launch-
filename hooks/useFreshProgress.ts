@@ -23,6 +23,8 @@
  */
 import { useState, useEffect } from 'react';
 import { getProgressDocument, type ProgressDocument } from '../services/progressRepository';
+import { useProgress } from '../contexts/ProgressContext';
+import { DEMO_STUDENT_UID } from '../data/devStudent';
 
 const inflight = new Map<string, Promise<ProgressDocument | null>>();
 
@@ -37,16 +39,21 @@ function loadProgress(uid: string): Promise<ProgressDocument | null> {
 }
 
 export function useFreshProgress(uid: string | undefined) {
+  const { rawProgressDoc: demoProgressDoc, progressLoaded: demoProgressLoaded } = useProgress();
   const [doc, setDoc] = useState<ProgressDocument | null>(null);
   const [loaded, setLoaded] = useState(false);
+  const isDemo = uid === DEMO_STUDENT_UID;
 
   useEffect(() => {
+    if (isDemo) return;
     let cancelled = false;
     setLoaded(false);
     if (!uid) { setDoc(null); setLoaded(true); return; }
     loadProgress(uid).then((d) => { if (!cancelled) { setDoc(d); setLoaded(true); } });
     return () => { cancelled = true; };
-  }, [uid]);
+  }, [uid, isDemo]);
 
-  return { doc, loaded };
+  return isDemo
+    ? { doc: demoProgressDoc, loaded: demoProgressLoaded }
+    : { doc, loaded };
 }

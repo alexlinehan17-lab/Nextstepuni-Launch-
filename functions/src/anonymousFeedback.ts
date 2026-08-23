@@ -13,6 +13,7 @@ import {
   validateFeedbackRequest,
   type FeedbackRequest,
 } from "./anonymousFeedbackPolicy";
+import { CALLABLE_OPTIONS, assertUnrevokedAuth } from "./security";
 
 /**
  * Accept product feedback without persisting any account identifier.
@@ -24,11 +25,12 @@ import {
  * once every released web/native client has been registered for attestation.
  */
 export const submitAnonymousFeedback = onCall(
-  { cors: true, maxInstances: 10 },
+  { ...CALLABLE_OPTIONS, maxInstances: 10 },
   async request => {
     if (!request.auth) {
       throw new HttpsError("unauthenticated", "Must be logged in.");
     }
+    await assertUnrevokedAuth(request.auth);
 
     const data = (request.data || {}) as FeedbackRequest;
     const validation = validateFeedbackRequest(data);

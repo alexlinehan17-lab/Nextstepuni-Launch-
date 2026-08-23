@@ -35,6 +35,9 @@ import BriefingPanel from './war-room/BriefingPanel';
 import CountdownPanel from './war-room/CountdownPanel';
 import CoveragePanel from './war-room/CoveragePanel';
 import TrajectoryPanel from './war-room/TrajectoryPanel';
+import { useOptionalProgress } from '../contexts/ProgressContext';
+import { DEMO_STUDENT_UID } from '../data/devStudent';
+import { type ProgressDocument } from '../services/progressRepository';
 
 export interface WarRoomStudyBlock {
   subject: string;
@@ -70,6 +73,10 @@ const ALL_REVIEW_TABS: Array<{ id: ReviewPanelId; label: string }> = [
   { id: 'time', label: 'Time plan' },
 ];
 
+const EMPTY_STUDY_SESSIONS: StudySessionRecord[] = [];
+const EMPTY_DEBRIEFS: DebriefEntry[] = [];
+const EMPTY_PROGRESS_DOC: ProgressDocument = {};
+
 function getCurrentWeekDateKeys(reference = new Date()): Set<string> {
   const monday = startOfWeek(reference);
 
@@ -94,6 +101,11 @@ const WarRoom: React.FC<WarRoomProps> = ({
   initialMode = 'focus',
   initialReviewPanel = 'subjects',
 }) => {
+  const progress = useOptionalProgress();
+  const sharedStudySessions = progress?.studySessions ?? EMPTY_STUDY_SESSIONS;
+  const sharedDebriefs = progress?.studyDebriefs ?? EMPTY_DEBRIEFS;
+  const rawProgressDoc = progress?.rawProgressDoc ?? EMPTY_PROGRESS_DOC;
+  const isDemo = uid === DEMO_STUDENT_UID;
   const [mode, setMode] = useState<WorkspaceMode>(initialMode);
   const [reviewPanel, setReviewPanel] = useState<ReviewPanelId>(initialReviewPanel);
   const [studySessions, setStudySessions] = useState<StudySessionRecord[]>([]);
@@ -145,6 +157,14 @@ const WarRoom: React.FC<WarRoomProps> = ({
       return;
     }
 
+    if (isDemo) {
+      setStudySessions(sharedStudySessions);
+      setDebriefs(sharedDebriefs);
+      setSm2States((rawProgressDoc.sm2States as SubjectSM2State[] | undefined) ?? []);
+      setIsLoading(false);
+      return;
+    }
+
     let cancelled = false;
     setIsLoading(true);
     const load = async () => {
@@ -167,7 +187,7 @@ const WarRoom: React.FC<WarRoomProps> = ({
 
     void load();
     return () => { cancelled = true; };
-  }, [uid]);
+  }, [uid, isDemo, sharedStudySessions, sharedDebriefs, rawProgressDoc.sm2States]);
 
   const subjects = profile.subjects;
   const blockDuration = profile.defaultBlockDuration ?? 45;

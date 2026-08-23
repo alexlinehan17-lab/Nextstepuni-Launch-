@@ -19,8 +19,12 @@ import {
 } from '../services/topicMasteryMigration';
 import { examinationYearFromDate, resolveCurriculumSpecification } from '../curriculumRegistry';
 import { reportSaveError } from '../utils/logError';
+import { useProgress } from '../contexts/ProgressContext';
+import { DEMO_STUDENT_UID } from '../data/devStudent';
 
 export function useTopicMastery(uid: string | undefined, examDate?: string | null) {
+  const { updateDemoProgress } = useProgress();
+  const isDemo = uid === DEMO_STUDENT_UID;
   const { doc: rawProgressDoc, loaded: progressLoaded } = useFreshProgress(uid);
   const [mastery, setMastery] = useState<TopicMasteryMap>({});
   const [canonicalMastery, setCanonicalMastery] = useState<TopicMasteryV2>(emptyTopicMasteryV2);
@@ -77,7 +81,8 @@ export function useTopicMastery(uid: string | undefined, examDate?: string | nul
 
       // Save migrated data if we had any old data
       if (Object.keys(merged).length > 0) {
-        setDoc(doc(db, 'progress', uid), { topicMastery: merged }, { merge: true }).catch((e) => reportSaveError('useTopicMastery.save', e));
+        if (isDemo) updateDemoProgress(current => ({ ...current, topicMastery: merged }));
+        else setDoc(doc(db, 'progress', uid), { topicMastery: merged }, { merge: true }).catch((e) => reportSaveError('useTopicMastery.save', e));
       }
     }
     const migratedLegacy = migrateTopicMastery(legacyMastery, examDate);
@@ -92,20 +97,22 @@ export function useTopicMastery(uid: string | undefined, examDate?: string | nul
     setCanonicalMastery(v2);
     setMastery(projected);
     if (!storedV2 && (Object.keys(v2.topics).length || Object.keys(v2.unresolved).length)) {
-      setDoc(doc(db, 'progress', uid), { topicMasteryV2: v2 }, { merge: true })
-        .catch((e) => reportSaveError('useTopicMastery.saveV2Migration', e));
+      if (isDemo) updateDemoProgress(current => ({ ...current, topicMasteryV2: v2 }));
+      else setDoc(doc(db, 'progress', uid), { topicMasteryV2: v2 }, { merge: true })
+          .catch((e) => reportSaveError('useTopicMastery.saveV2Migration', e));
     }
     setIsLoaded(true);
-  }, [uid, progressLoaded, rawProgressDoc, examDate]);
+  }, [uid, progressLoaded, rawProgressDoc, examDate, isDemo, updateDemoProgress]);
 
   const persist = useCallback((nextV2: TopicMasteryV2) => {
     if (!uid) return;
     const nextLegacy = projectTopicMastery(nextV2);
     setCanonicalMastery(nextV2);
     setMastery(nextLegacy);
-    setDoc(doc(db, 'progress', uid), { topicMasteryV2: nextV2, topicMastery: nextLegacy }, { merge: true })
-      .catch((e) => reportSaveError('useTopicMastery.save', e));
-  }, [uid]);
+    if (isDemo) updateDemoProgress(current => ({ ...current, topicMasteryV2: nextV2, topicMastery: nextLegacy }));
+    else setDoc(doc(db, 'progress', uid), { topicMasteryV2: nextV2, topicMastery: nextLegacy }, { merge: true })
+        .catch((e) => reportSaveError('useTopicMastery.save', e));
+  }, [uid, isDemo, updateDemoProgress]);
 
   const setTopicConfidence = useCallback((
     subject: string,

@@ -28,6 +28,7 @@ import { ALL_COURSES } from '../courseData';
 import { type TimetableCompletions } from '../components/subjectData';
 import { saveGamificationFields, unlockAchievements } from '../services/progressRepository';
 import { type CurriculumLevel } from '../utils/authUtils';
+import { DEMO_STUDENT_UID } from '../data/devStudent';
 
 interface UseGamificationOptions {
   uid?: string;
@@ -55,7 +56,8 @@ export function useGamification({
   northStar,
   curriculumLevel = 'senior',
 }: UseGamificationOptions): UseGamificationReturn {
-  const { rawProgressDoc, progressLoaded } = useProgress();
+  const { rawProgressDoc, progressLoaded, updateDemoProgress } = useProgress();
+  const isDemo = uid === DEMO_STUDENT_UID;
   const [gamificationData, setGamificationData] = useState<GamificationFirestoreData>({ ...DEFAULT_GAMIFICATION_DATA });
   const [isLoaded, setIsLoaded] = useState(false);
   const [version, setVersion] = useState(0);
@@ -224,11 +226,18 @@ export function useGamification({
     const merged = { ...gamificationData, ...data };
     // Update local state immediately (optimistic)
     setGamificationData(merged);
+    if (isDemo) {
+      updateDemoProgress(current => ({
+        ...current,
+        gamification: { ...(current.gamification ?? {}), ...data },
+      }));
+      return;
+    }
     // Fire-and-forget Firestore write — queues offline via persistence
     saveGamificationFields(uid, data).catch(err => {
       console.error('Failed to save gamification data:', err);
     });
-  }, [uid, gamificationData]);
+  }, [uid, gamificationData, isDemo, updateDemoProgress]);
 
   // Check and unlock achievements (with in-flight guard to prevent duplicates)
   const checkAndUnlockAchievements = useCallback(async (): Promise<AchievementDefinition[]> => {
@@ -240,7 +249,7 @@ export function useGamification({
       let currentUnlockedIds: string[] = gamificationData.unlockedAchievements;
       let currentTimestamps: Record<string, number> = { ...gamificationData.achievementTimestamps };
 
-      if (uid) {
+      if (uid && !isDemo) {
         try {
           const freshDoc = await getDoc(doc(db, 'progress', uid));
           if (freshDoc.exists()) {
@@ -290,6 +299,26 @@ export function useGamification({
           // arrayUnion handles deduplication server-side — no read needed.
           // increment() handles points atomically — no cache staleness.
           try {
+            if (isDemo) {
+              updateDemoProgress(current => ({
+                ...current,
+                gamification: {
+                  ...(current.gamification ?? {}),
+                  unlockedAchievements: updatedList,
+                  achievementTimestamps: timestamps,
+                },
+                pointsData: {
+                  ...current.pointsData,
+                  totalEarned: (current.pointsData?.totalEarned ?? 0) + totalBonus,
+                },
+              }));
+              setGamificationData(prev => ({
+                ...prev,
+                unlockedAchievements: updatedList,
+                achievementTimestamps: timestamps,
+              }));
+              return newlyUnlocked;
+            }
             // Fired, not awaited: offline this promise never settles, so the
             // student unlocked an achievement and saw nothing — no toast, no
             // points, no badge — until the next full reload.
@@ -320,7 +349,7 @@ export function useGamification({
     } finally {
       checkInFlightRef.current = false;
     }
-  }, [state, gamificationData, uid, pointsData, curriculumLevel]);
+  }, [state, gamificationData, uid, pointsData, curriculumLevel, isDemo, updateDemoProgress]);
 
   // Update weekly goal progress
   const updateWeeklyGoalProgress = useCallback(async (metric: 'sections' | 'sessions' | 'reflections', incrementBy = 1) => {

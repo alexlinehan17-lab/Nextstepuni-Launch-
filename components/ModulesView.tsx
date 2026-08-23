@@ -316,16 +316,17 @@ const CardWrapper: React.FC<CardWrapperProps> = ({ config, isHero, children, onC
     >
       <motion.div
         layout="position"
-        onClick={onClick}
-        role="button"
-        tabIndex={0}
-        onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onClick(); } }}
-        aria-label={ariaLabel}
         whileHover={isHero ? undefined : { y: -2 }}
-        className={`relative h-full overflow-hidden cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-4 focus-visible:ring-offset-[#FAFBF6] ${isHero ? 'rounded-[28px] md:rounded-[32px]' : 'rounded-2xl md:rounded-[22px]'}`}
+        className={`relative h-full overflow-hidden ${isHero ? 'rounded-[28px] md:rounded-[32px]' : 'rounded-2xl md:rounded-[22px]'}`}
         style={{ background, border, boxShadow }}
       >
-        <div className="relative">{children}</div>
+        <button
+          type="button"
+          onClick={onClick}
+          aria-label={ariaLabel}
+          className="absolute inset-0 z-0 cursor-pointer rounded-[inherit] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#F26B1F]"
+        />
+        <div className="pointer-events-none relative z-10 [&_a]:pointer-events-auto [&_button]:pointer-events-auto">{children}</div>
       </motion.div>
     </motion.div>
   );

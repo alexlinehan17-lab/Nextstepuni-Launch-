@@ -13,11 +13,15 @@ import { db } from '../firebase';
 import { reportSaveError } from '../utils/logError';
 import { useFreshProgress } from './useFreshProgress';
 import { type HowTheyDidItState } from '../types/howTheyDidIt';
+import { useProgress } from '../contexts/ProgressContext';
+import { DEMO_STUDENT_UID } from '../data/devStudent';
 
 const EMPTY: HowTheyDidItState = { seenIds: [], savedIds: [], updatedAt: '' };
 const add = (arr: string[], v: string) => (arr.includes(v) ? arr : [...arr, v]);
 
 export function useHowTheyDidIt(uid?: string) {
+  const { updateDemoProgress } = useProgress();
+  const isDemo = uid === DEMO_STUDENT_UID;
   const { doc: rawProgressDoc, loaded: progressLoaded } = useFreshProgress(uid);
   const [state, setState] = useState<HowTheyDidItState>(EMPTY);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -34,8 +38,10 @@ export function useHowTheyDidIt(uid?: string) {
   }, [progressLoaded, rawProgressDoc, uid]);
 
   const persist = useCallback((next: HowTheyDidItState) => {
-    if (uid) setDoc(doc(db, 'progress', uid), { howTheyDidIt: next }, { merge: true }).catch((e) => reportSaveError('useHowTheyDidIt.save', e));
-  }, [uid]);
+    if (!uid) return;
+    if (isDemo) updateDemoProgress(current => ({ ...current, howTheyDidIt: next }));
+    else setDoc(doc(db, 'progress', uid), { howTheyDidIt: next }, { merge: true }).catch((e) => reportSaveError('useHowTheyDidIt.save', e));
+  }, [uid, isDemo, updateDemoProgress]);
 
   const markSeen = useCallback((id: string) => {
     setState(prev => {

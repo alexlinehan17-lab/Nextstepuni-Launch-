@@ -32,6 +32,8 @@ import { COLORS } from '../design/tokens';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useInnovationData } from '../contexts/InnovationDataContext';
+import { useOptionalProgress } from '../contexts/ProgressContext';
+import { DEMO_STUDENT_UID } from '../data/devStudent';
 import { usePlanCues } from '../hooks/usePlanCues';
 import { PLAN_TRIGGERS, PLAN_WHY, defaultThen } from '../planIntentionData';
 
@@ -238,7 +240,8 @@ const StudyBlockCard: React.FC<{
           {isToday && onStudyNow && (
             <button
               onClick={(e) => { e.stopPropagation(); onStudyNow(); }}
-              className="flex items-center gap-1 text-[11px] font-bold px-2.5 py-1 rounded-lg"
+              className="relative z-20 flex items-center gap-1 text-[11px] font-bold px-2.5 py-1 rounded-lg"
+              aria-label={`Study ${block.subjectName} now`}
               style={{ backgroundColor: hex, color: subjectInk(hex) }}
             >
               Study <ArrowRight size={10} />
@@ -256,13 +259,18 @@ const StudyBlockCard: React.FC<{
 
   if (onToggle) {
     return (
-      <MotionButton
-        whileTap={{ scale: 0.98 }}
-        onClick={onToggle}
-        className="w-full text-left"
-      >
+      <div className="relative w-full text-left">
         {inner}
-      </MotionButton>
+        <MotionButton
+          type="button"
+          whileTap={{ scale: 0.98 }}
+          onClick={onToggle}
+          aria-label={`${completed ? 'Mark incomplete' : 'Mark complete'}: ${block.subjectName}, ${typeConfig.label}, ${block.durationMinutes} minutes`}
+          className="absolute inset-0 z-10 rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F26B1F] focus-visible:ring-offset-2"
+        >
+          <span className="sr-only">{completed ? 'Mark incomplete' : 'Mark complete'}</span>
+        </MotionButton>
+      </div>
     );
   }
 
@@ -369,6 +377,8 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
   // isPreExamJunior: 1st/2nd-year JC users have no imminent exam; we frame
   // the timetable as "weekly study plan" with no exam countdown ribbon.
   const { user } = useAuth();
+  const progress = useOptionalProgress();
+  const isDemo = uid === DEMO_STUDENT_UID;
   const curriculumLevel = user?.curriculumLevel ?? profile.curriculumLevel ?? 'senior';
   const isJunior = curriculumLevel === 'junior';
   const yearGroup = user?.yearGroup ?? profile.yearGroup;
@@ -392,6 +402,13 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
   const [sm2States, setSm2States] = useState<SubjectSM2State[]>([]);
   useEffect(() => {
     if (!uid) return;
+    if (isDemo) {
+      const data = progress?.rawProgressDoc.studyDebriefs as DebriefEntry[] | undefined;
+      if (data) setStrategyHints(computeStrategyHints(data));
+      else setStrategyHints({});
+      setSm2States((progress?.rawProgressDoc.sm2States as SubjectSM2State[] | undefined) ?? []);
+      return;
+    }
     let cancelled = false;
     (async () => {
       try {
@@ -405,7 +422,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
       } catch (err) { console.error('Failed to load strategy hints:', err); }
     })();
     return () => { cancelled = true; };
-  }, [uid]);
+  }, [uid, isDemo, progress?.rawProgressDoc.studyDebriefs, progress?.rawProgressDoc.sm2States]);
 
   const toggleRestDay = (day: string) => {
     setRestDays(prev => {
@@ -662,6 +679,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
           <div className="flex items-center gap-1">
             <button
               onClick={() => setWeekOffset(o => o - 1)}
+              aria-label="Previous timetable week"
               disabled={weekOffset <= 0}
               className="p-1.5 rounded-lg transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
               style={{ backgroundColor: 'rgba(0,0,0,0.03)', borderRadius: 8 }}
@@ -670,6 +688,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
             </button>
             <button
               onClick={() => setWeekOffset(o => o + 1)}
+              aria-label="Next timetable week"
               className="p-1.5 rounded-lg transition-colors"
               style={{ backgroundColor: 'rgba(0,0,0,0.03)', borderRadius: 8 }}
             >
@@ -1335,7 +1354,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                   onClick={handleAlreadyStudied}
                   className="w-full py-3 rounded-xl border border-[#CFC9C2] text-sm font-medium transition-all bg-white dark:bg-zinc-900 text-[#6F6861] dark:text-zinc-400"
                 >
-                  Already Studied (+5 pts)
+                  Already studied (+5 JP)
                 </button>
                 <button
                   onClick={() => setBlockActionModal(null)}

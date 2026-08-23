@@ -12,6 +12,8 @@ import { type StudentSubjectProfile } from '../components/subjectData';
 import { type CAOCourse, hydrateCourses } from '../components/futureFinderData';
 import { computeSubjectPriorities, type SubjectPriority } from '../components/timetableAlgorithm';
 import { LC_SUBJECTS, getPointsForGrade, type Grade } from '../components/subjectData';
+import { useProgress } from './ProgressContext';
+import { DEMO_STUDENT_UID } from '../data/devStudent';
 
 // ─── Types ──────────────────────────────────────────────────
 
@@ -54,6 +56,8 @@ interface InnovationDataProviderProps {
 export const InnovationDataProvider: React.FC<InnovationDataProviderProps> = ({
   children, uid, subjectProfile,
 }) => {
+  const { rawProgressDoc } = useProgress();
+  const isDemo = uid === DEMO_STUDENT_UID;
   // Shared hooks — called once here instead of in each tool
   const topicMastery = useTopicMastery(uid, subjectProfile?.examStartDate);
   const mockResults = useMockResults(uid);
@@ -64,6 +68,18 @@ export const InnovationDataProvider: React.FC<InnovationDataProviderProps> = ({
 
   useEffect(() => {
     if (!uid) { setFutureFinderPicks([]); setFutureFinderLoading(false); return; }
+    if (isDemo) {
+      const revamped = rawProgressDoc.futureFinderRevamped as { picks?: string[]; topMatches?: string[] } | undefined;
+      const legacy = rawProgressDoc.futureFinder as { topPicks?: string[] } | undefined;
+      const codes = revamped?.picks?.length
+        ? revamped.picks
+        : revamped?.topMatches?.length
+          ? revamped.topMatches
+          : (legacy?.topPicks ?? []);
+      setFutureFinderPicks(codes.length ? hydrateCourses(codes).slice(0, 5) : []);
+      setFutureFinderLoading(false);
+      return;
+    }
     let cancelled = false;
     setFutureFinderLoading(true);
     getDoc(doc(db, 'progress', uid)).then(snap => {
@@ -87,7 +103,7 @@ export const InnovationDataProvider: React.FC<InnovationDataProviderProps> = ({
       if (!cancelled) setFutureFinderLoading(false);
     });
     return () => { cancelled = true; };
-  }, [uid]);
+  }, [uid, isDemo, rawProgressDoc.futureFinderRevamped, rawProgressDoc.futureFinder]);
 
   // Computed: current CAO points (best 6 from current grades)
   const currentCAOPoints = useMemo(() => {

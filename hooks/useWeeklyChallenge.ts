@@ -12,6 +12,7 @@ import { getWeekNumber, getWeekStartDate } from '../gamificationConfig';
 import { getWeeklyChallenge, type WeeklyChallengeDefinition } from '../weeklyChallengeData';
 import { type StudySessionRecord } from '../utils/strategyRegistry';
 import { normaliseWeeklyChallengeJP } from '../journeyEconomyConfig';
+import { DEMO_STUDENT_UID } from '../data/devStudent';
 
 export interface WeeklyChallengeState {
   /** Null when no challenge is available for the user's curriculum level
@@ -26,7 +27,8 @@ export interface WeeklyChallengeState {
 }
 
 export function useWeeklyChallenge(uid: string | undefined): WeeklyChallengeState {
-  const { rawProgressDoc, progressLoaded } = useProgress();
+  const { rawProgressDoc, progressLoaded, updateDemoProgress } = useProgress();
+  const isDemo = uid === DEMO_STUDENT_UID;
   const weekNumber = getWeekNumber();
   // Phase 5: filter to user's curriculum. JC has no senior-tagged challenges
   // to surface; treat as "no challenge this week" rather than crashing.
@@ -66,12 +68,14 @@ export function useWeeklyChallenge(uid: string | undefined): WeeklyChallengeStat
       // array here meant study-session-based weekly challenges never
       // progressed — audit 2026-06-01. reload() bumps `version`, re-running
       // this effect so a just-saved session is counted immediately.
-      let sessions: StudySessionRecord[] = [];
-      try {
-        const snap = await getDocs(collection(db, 'progress', uid, 'sessions'));
-        sessions = snap.docs.map(d => d.data() as StudySessionRecord);
-      } catch (err) {
-        console.error('Failed to load sessions for weekly challenge:', err);
+      let sessions: StudySessionRecord[] = rawProgressDoc.studySessions ?? [];
+      if (!isDemo) {
+        try {
+          const snap = await getDocs(collection(db, 'progress', uid, 'sessions'));
+          sessions = snap.docs.map(d => d.data() as StudySessionRecord);
+        } catch (err) {
+          console.error('Failed to load sessions for weekly challenge:', err);
+        }
       }
       if (cancelled) return;
 
@@ -130,6 +134,21 @@ export function useWeeklyChallenge(uid: string | undefined): WeeklyChallengeStat
     // Claim button spinning forever offline (a setDoc promise only settles on
     // server ack), so the student could never collect a reward they had earned.
     if (isMountedRef.current) setIsClaimed(true);
+    if (isDemo) {
+      const claimedAt = new Date().toISOString();
+      updateDemoProgress(current => ({
+        ...current,
+        pointsData: {
+          ...current.pointsData,
+          totalEarned: (current.pointsData?.totalEarned ?? 0) + challenge.rewardPoints,
+        },
+        weeklyChallengeRewards: {
+          ...(current.weeklyChallengeRewards ?? {}),
+          [challenge.id]: claimedAt,
+        },
+      }));
+      return;
+    }
     saveInBackground(
       setDoc(doc(db, 'progress', uid), {
         pointsData: { totalEarned: increment(challenge.rewardPoints) },
@@ -138,7 +157,7 @@ export function useWeeklyChallenge(uid: string | undefined): WeeklyChallengeStat
       'useWeeklyChallenge.claimReward',
       () => { if (isMountedRef.current) setIsClaimed(false); },
     );
-  }, [uid, isClaimed, challenge?.id, challenge?.rewardPoints]);
+  }, [uid, isClaimed, challenge?.id, challenge?.rewardPoints, isDemo, updateDemoProgress]);
 
   const isCompleted = challenge ? current >= challenge.target : false;
 

@@ -129,7 +129,6 @@ const CommandPalette: React.FC<Props> = ({ courses }) => {
       { kind: 'page', id: 'dashboard', title: 'My Progress', go: () => nav.navigateToDashboard() },
       { kind: 'page', id: 'learning-paths', title: 'Learning Paths', go: () => nav.navigateToLearningPaths() },
       { kind: 'page', id: 'my-journey', title: 'My Journey', go: () => nav.navigateToJourney() },
-      { kind: 'page', id: 'training-hub', title: 'Training Hub', go: () => nav.navigateToGamificationHub() },
       { kind: 'page', id: 'study-session', title: 'Study Session', go: () => nav.navigateToStudySession() },
       { kind: 'page', id: 'insights', title: 'Insights', go: () => nav.navigateToInsights() },
       { kind: 'page', id: 'accreditation', title: 'References', go: () => nav.navigateToAccreditation() },

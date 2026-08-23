@@ -275,6 +275,7 @@ const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults
   const [fullMockGrades, setFullMockGrades] = useState<Record<string, string>>({});
   const [fullMockLabel, setFullMockLabel] = useState('');
   const [fullMockDate, setFullMockDate] = useState(() => toDateKey(new Date()));
+  const todayDateKey = toDateKey(new Date());
   const [mockFeedback, setMockFeedback] = useState<MockFeedback | null>(null);
   const fullMockTriggerRef = useRef<HTMLButtonElement>(null);
   const singleResultTriggerRef = useRef<HTMLButtonElement>(null);
@@ -286,7 +287,7 @@ const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults
   const formSubjectData = gradeSubjects.find(subject => subject.subjectName === formSubject);
   const gradeOptions = formSubjectData ? getGradesForLevel(formSubjectData.level) : [];
   const canSaveSingleResult = Boolean(
-    formSubjectData && formDate && formGrade && gradeOptions.includes(formGrade as Grade),
+    formSubjectData && formDate && formDate <= todayDateKey && formGrade && gradeOptions.includes(formGrade as Grade),
   );
 
   const gradeForFullMockSubject = (subject: StudentSubjectProfile['subjects'][number]): string => {
@@ -295,6 +296,7 @@ const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults
   };
   const canSaveFullMock = Boolean(
     fullMockDate
+      && fullMockDate <= todayDateKey
       && gradeSubjects.length > 0
       && gradeSubjects.every(subject => Boolean(gradeForFullMockSubject(subject))),
   );
@@ -368,6 +370,7 @@ const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults
       date: formDate,
       entries: [{ subjectName: formSubject, grade: formGrade, level: formSubjectData.level }],
       totalPoints: pointsForSubject(formSubject, formGrade),
+      resultKind: 'single',
     });
     setFormGrade('');
     setFormLabel('');
@@ -422,7 +425,7 @@ const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults
       setMockFeedback(null);
     }
 
-    mockResultsHook.addMockResult({ label, date: fullMockDate, entries, totalPoints });
+    mockResultsHook.addMockResult({ label, date: fullMockDate, entries, totalPoints, resultKind: 'full' });
     closeAddForm();
   };
 
@@ -572,7 +575,7 @@ const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults
                 <div>
                   <label htmlFor="full-mock-date" className="font-sans text-[10px] font-bold uppercase tracking-[0.16em]"
                          style={{ color: INK_MUTE }}>Date</label>
-                  <input id="full-mock-date" type="date" value={fullMockDate} onChange={(e) => setFullMockDate(e.target.value)}
+                  <input id="full-mock-date" type="date" value={fullMockDate} max={todayDateKey} onChange={(e) => setFullMockDate(e.target.value)}
                          className={fieldClass} style={{ ...fieldStyle, marginTop: 4 }} />
                 </div>
               </div>
@@ -646,7 +649,7 @@ const TrajectoryPanel: React.FC<TrajectoryPanelProps> = ({ subjects, mockResults
                 <div>
                   <label htmlFor="single-result-date" className="font-sans text-[10px] font-bold uppercase tracking-[0.16em]"
                          style={{ color: INK_MUTE }}>Date</label>
-                  <input id="single-result-date" type="date" value={formDate} onChange={(e) => setFormDate(e.target.value)}
+                  <input id="single-result-date" type="date" value={formDate} max={todayDateKey} onChange={(e) => setFormDate(e.target.value)}
                          className={fieldClass} style={{ ...fieldStyle, marginTop: 4 }} />
                 </div>
                 <div>

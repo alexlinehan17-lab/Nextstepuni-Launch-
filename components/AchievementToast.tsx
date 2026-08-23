@@ -67,7 +67,7 @@ const AchievementToast: React.FC<AchievementToastProps> = ({ achievement, onDism
                 {achievement.title}
               </p>
               <p className="mt-1 text-[10px] font-medium text-zinc-400 dark:text-zinc-500">
-                Added to your Training Hub
+                Added to My Progress
               </p>
             </div>
           </button>

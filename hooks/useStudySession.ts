@@ -10,6 +10,7 @@ import { useProgress } from '../contexts/ProgressContext';
 import { type StudyConfidenceLabel, type UserProgress } from '../types';
 import { type CourseData } from '../components/Library';
 import { toDateKey } from '../utils/weekDates';
+import { DEMO_STUDENT_UID } from '../data/devStudent';
 import {
   type StrategyPrompt,
   type StudySessionRecord,
@@ -29,6 +30,14 @@ export interface SessionReflectionMetadata {
   reflectionMode: 'quick' | 'full';
 }
 
+/**
+ * Five minutes is the shortest session the setup screen offers. Keep the same
+ * floor at the persistence boundary so an accidental start (or a caller that
+ * bypasses the UI) cannot create a zero-minute session or earn debrief JP.
+ */
+export const MIN_STUDY_SESSION_MINUTES = 5;
+export const MIN_RECORDABLE_SESSION_SECONDS = MIN_STUDY_SESSION_MINUTES * 60;
+
 // Fisher-Yates shuffle
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -46,7 +55,8 @@ export function useStudySession(
   userProgress: UserProgress,
   allCourses: CourseData[],
 ) {
-  const { studySessions, progressLoaded } = useProgress();
+  const { studySessions, progressLoaded, updateDemoProgress } = useProgress();
+  const isDemo = uid === DEMO_STUDENT_UID;
 
   const [phase, setPhase] = useState<SessionPhase>('idle');
   const [subject, setSubject] = useState('');
@@ -199,12 +209,37 @@ export function useStudySession(
 
   // ── End Early ──
 
-  const endSession = useCallback(() => {
+  const canRecordSession = elapsedSeconds >= MIN_RECORDABLE_SESSION_SECONDS;
+
+  const endSession = useCallback((): boolean => {
+    if (elapsedSeconds < MIN_RECORDABLE_SESSION_SECONDS) return false;
     if (intervalRef.current) {
       clearInterval(intervalRef.current);
       intervalRef.current = null;
     }
     setPhase('complete');
+    return true;
+  }, [elapsedSeconds]);
+
+  // Abandoning an unfinished session is deliberately different from ending
+  // early: it returns to setup without creating a session, points or debrief.
+  const cancelSession = useCallback(() => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+      intervalRef.current = null;
+    }
+    if (autoDismissRef.current) {
+      clearTimeout(autoDismissRef.current);
+      autoDismissRef.current = null;
+    }
+    promptQueueRef.current = [];
+    completedPromptsRef.current = new Set();
+    startTimeRef.current = 0;
+    expectedEndRef.current = 0;
+    setElapsedSeconds(0);
+    setCurrentPrompt(null);
+    setPromptShownAt(0);
+    setPhase('idle');
   }, []);
 
   // ── Complete Prompt (user marked "Done") ──
@@ -262,8 +297,8 @@ export function useStudySession(
     reflectionPoints: number = 0,
     extraStrategies?: string[],
     reflectionMetadata?: SessionReflectionMetadata,
-  ): Promise<void> => {
-    if (!uid) return;
+  ): Promise<boolean> => {
+    if (!uid || elapsedSeconds < MIN_RECORDABLE_SESSION_SECONDS) return false;
 
     const now = Date.now();
     // Merge auto-tracked (prompt "Done") with self-reported strategies, deduplicated
@@ -293,6 +328,18 @@ export function useStudySession(
     // Update local state immediately (optimistic)
     setTodaySessions(prev => [...prev, record]);
 
+    if (isDemo) {
+      updateDemoProgress(current => ({
+        ...current,
+        studySessions: [...(current.studySessions ?? []), record],
+        pointsData: {
+          ...current.pointsData,
+          totalEarned: (current.pointsData?.totalEarned ?? 0) + totalPoints,
+        },
+      }));
+      return true;
+    }
+
     // Fire-and-forget Firestore writes — queues offline via persistence.
     // Each session goes in its own subcollection doc so the parent /progress/{uid}
     // document doesn't grow unboundedly on heavy users.
@@ -312,7 +359,8 @@ export function useStudySession(
     } catch (err) {
       console.error('Failed to save study session:', err);
     }
-  }, [uid, subject, sessionType, plannedMinutes, elapsedSeconds, basePointsEarned]);
+    return true;
+  }, [uid, subject, sessionType, plannedMinutes, elapsedSeconds, basePointsEarned, isDemo, updateDemoProgress]);
 
   // ── Reset to idle ──
 
@@ -355,12 +403,14 @@ export function useStudySession(
     currentPrompt,
     promptShownAt,
     basePointsEarned,
+    canRecordSession,
     todaySessions,
     todayTotalMinutes,
     startSession,
     pauseSession,
     resumeSession,
     endSession,
+    cancelSession,
     saveSession,
     resetSession,
     dismissPrompt,

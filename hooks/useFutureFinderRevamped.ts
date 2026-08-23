@@ -17,6 +17,8 @@ import { useState, useEffect, useCallback } from 'react';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { reportSaveError, logError } from '../utils/logError';
+import { useProgress } from '../contexts/ProgressContext';
+import { DEMO_STUDENT_UID } from '../data/devStudent';
 
 export interface FutureFinderRevampedState {
   /** Version of the recommendation policy used to create `topMatches`. */
@@ -62,6 +64,8 @@ function writeCached(uid: string | undefined, value: FutureFinderRevampedState |
 }
 
 export function useFutureFinderRevamped(uid?: string) {
+  const { rawProgressDoc, updateDemoProgress } = useProgress();
+  const isDemo = uid === DEMO_STUDENT_UID;
   // The device cache is the hot path. This prevents an immediate exit/re-entry
   // from racing Firestore's async snapshot inside a native WebView.
   const [saved, setSaved] = useState<FutureFinderRevampedState | null>(() => readCached(uid));
@@ -71,6 +75,15 @@ export function useFutureFinderRevamped(uid?: string) {
     let cancelled = false;
     setIsLoaded(false);
     if (!uid) { setSaved(null); setIsLoaded(true); return; }
+    if (isDemo) {
+      const local = rawProgressDoc.futureFinderRevamped as FutureFinderRevampedState | undefined;
+      if (local?.completedAt) {
+        setSaved(local);
+        writeCached(uid, local);
+      }
+      setIsLoaded(true);
+      return;
+    }
     getDoc(doc(db, 'progress', uid))
       .then((snap) => {
         if (cancelled) return;
@@ -83,19 +96,25 @@ export function useFutureFinderRevamped(uid?: string) {
       })
       .catch((e) => { logError('useFutureFinderRevamped.load', e); if (!cancelled) setIsLoaded(true); });
     return () => { cancelled = true; };
-  }, [uid]);
+  }, [uid, isDemo, rawProgressDoc.futureFinderRevamped]);
 
   const persist = useCallback((next: FutureFinderRevampedState) => {
     setSaved(next);
     writeCached(uid, next);
-    if (uid) setDoc(doc(db, 'progress', uid), { futureFinderRevamped: next }, { merge: true }).catch((e) => reportSaveError('useFutureFinderRevamped.save', e));
-  }, [uid]);
+    if (uid) {
+      if (isDemo) updateDemoProgress(current => ({ ...current, futureFinderRevamped: next }));
+      else setDoc(doc(db, 'progress', uid), { futureFinderRevamped: next }, { merge: true }).catch((e) => reportSaveError('useFutureFinderRevamped.save', e));
+    }
+  }, [uid, isDemo, updateDemoProgress]);
 
   const reset = useCallback(() => {
     setSaved(null);
     writeCached(uid, null);
-    if (uid) setDoc(doc(db, 'progress', uid), { futureFinderRevamped: null }, { merge: true }).catch((e) => reportSaveError('useFutureFinderRevamped.save', e));
-  }, [uid]);
+    if (uid) {
+      if (isDemo) updateDemoProgress(current => ({ ...current, futureFinderRevamped: null }));
+      else setDoc(doc(db, 'progress', uid), { futureFinderRevamped: null }, { merge: true }).catch((e) => reportSaveError('useFutureFinderRevamped.save', e));
+    }
+  }, [uid, isDemo, updateDemoProgress]);
 
   return { saved, isLoaded, persist, reset };
 }

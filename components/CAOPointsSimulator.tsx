@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useMemo, useEffect, useRef } from 'react';
+import React, { useState, useMemo, useEffect, useRef, useCallback } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import {
@@ -19,6 +19,8 @@ import { reportSaveError } from '../utils/logError';
 import { useInnovationData } from '../contexts/InnovationDataContext';
 import { COLORS } from '../design/tokens';
 import { computeBestSixBreakdown } from './pointsScenarioStore';
+import { useProgress } from '../contexts/ProgressContext';
+import { DEMO_STUDENT_UID } from '../data/devStudent';
 
 // ─── Subject Colours ─────────────────────────────────────────────────────────
 
@@ -125,10 +127,21 @@ const PointsCard: React.FC<{
 // ─── CAOPointsSimulator ──────────────────────────────────────────────────────
 
 const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, onOpenSettings }) => {
+  const { updateDemoProgress } = useProgress();
+  const isDemo = uid === DEMO_STUDENT_UID;
   const [activeTab, setActiveTab] = useState<'overview' | 'what-if'>('overview');
   const [showGains, setShowGains] = useState(true);
   const [simSubjects, setSimSubjects] = useState<SimSubject[]>([]);
   const saveTimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+  const persistPatch = useCallback((patch: Record<string, unknown>) => {
+    if (!uid) return;
+    if (isDemo) {
+      updateDemoProgress(current => ({ ...current, ...patch }));
+      return;
+    }
+    setDoc(doc(db, 'progress', uid), patch, { merge: true })
+      .catch((e) => reportSaveError('CAOPointsSimulator.save', e));
+  }, [uid, isDemo, updateDemoProgress]);
 
   // Shared data from InnovationDataContext
   const { mockResults: mockResultsCtx, futureFinderPicks: ffPicks } = useInnovationData();
@@ -220,12 +233,12 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
   useEffect(() => {
     if (!uid || simSubjects.length === 0) return;
     const timer = setTimeout(() => {
-      setDoc(doc(db, 'progress', uid), {
+      persistPatch({
         computedPoints: { current: currentAnalysis.total, target: targetAnalysis.total },
-      }, { merge: true }).catch((e) => reportSaveError('CAOPointsSimulator.save', e));
+      });
     }, 2000);
     return () => clearTimeout(timer);
-  }, [uid, currentAnalysis.total, targetAnalysis.total, simSubjects.length]);
+  }, [uid, currentAnalysis.total, targetAnalysis.total, simSubjects.length, persistPatch]);
 
   const hasMathsHL = simSubjects.some(s => s.isMaths && s.level === 'higher');
 
@@ -247,9 +260,9 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
               pointsGain: getPointsForGrade(s.whatIfGrade, s.isMaths) - getPointsForGrade(s.currentGrade, s.isMaths),
               isMaths: s.isMaths,
             }));
-          setDoc(doc(db, 'progress', uid), {
+          persistPatch({
             caoSimulator: { whatIfScenarios: scenarios, updatedAt: new Date().toISOString() },
-          }, { merge: true }).catch((e) => reportSaveError('CAOPointsSimulator.save', e));
+          });
         }, 1500);
       }
       return next;
@@ -260,9 +273,9 @@ const CAOPointsSimulator: React.FC<CAOPointsSimulatorProps> = ({ profile, uid, o
     setSimSubjects(prev => prev.map(s => ({ ...s, whatIfGrade: s.currentGrade })));
     // Clear saved scenarios
     if (uid) {
-      setDoc(doc(db, 'progress', uid), {
+      persistPatch({
         caoSimulator: { whatIfScenarios: [], updatedAt: new Date().toISOString() },
-      }, { merge: true }).catch((e) => reportSaveError('CAOPointsSimulator.save', e));
+      });
     }
   };
 

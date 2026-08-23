@@ -251,14 +251,16 @@ describe('War Room minimalist workspace', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Single result' }));
 
     expect(screen.getByLabelText('Date')).toHaveValue('2026-06-03');
+    expect(screen.getByLabelText('Date')).toHaveAttribute('max', '2026-06-03');
 
     fireEvent.click(screen.getByRole('button', { name: /Cancel/ }));
     fireEvent.click(screen.getByRole('button', { name: 'Full mock' }));
 
     const fullMockDate = screen.getByLabelText('Date');
     expect(fullMockDate).toHaveValue('2026-06-03');
+    expect(fullMockDate).toHaveAttribute('max', '2026-06-03');
 
-    fireEvent.change(fullMockDate, { target: { value: '' } });
+    fireEvent.change(fullMockDate, { target: { value: '2026-06-04' } });
     expect(screen.getByRole('button', { name: 'Save full mock' })).toBeDisabled();
   });
 
@@ -291,6 +293,7 @@ describe('War Room minimalist workspace', () => {
       date: '2026-08-09',
       entries: [{ subjectName: 'Geography', grade: 'H5', level: 'higher' }],
       totalPoints: 56,
+      resultKind: 'single',
     });
   });
 
@@ -314,6 +317,7 @@ describe('War Room minimalist workspace', () => {
       date: '2026-08-09',
       entries: [{ subjectName: 'Mathematics', grade: 'H6', level: 'higher' }],
       totalPoints: 71,
+      resultKind: 'single',
     });
   });
 

@@ -62,13 +62,17 @@ const StudyPassportModal: React.FC<StudyPassportModalProps> = ({
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.96, opacity: 0 }}
             transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="study-passport-title"
+            tabIndex={-1}
             className="relative bg-[#FAFBF6] dark:bg-zinc-900 border-[1.5px] border-[#383838] dark:border-zinc-600 rounded-t-[24px] sm:rounded-[24px] w-full max-w-lg shadow-[5px_5px_0_0_#383838] overflow-hidden max-h-[92dvh] overflow-y-auto"
             onClick={(e: React.MouseEvent) => e.stopPropagation()}
           >
             {/* Header */}
             <div className="flex items-center justify-between p-6 pb-4 sticky top-0 bg-[#FAFBF6] dark:bg-zinc-900 z-10 border-b border-[#DDD8D2] dark:border-zinc-700">
               <div>
-                <h2 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white tracking-tight">
+                <h2 id="study-passport-title" className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white tracking-tight">
                   Study Passport
                 </h2>
                 <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-1">
@@ -118,7 +122,7 @@ const StudyPassportModal: React.FC<StudyPassportModalProps> = ({
                         {categoryComplete}/{categoryCourses.length}
                       </span>
                     </div>
-                    <div className="grid grid-cols-4 sm:grid-cols-6 gap-3">
+                    <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
                       {categoryCourses.map((course, i) => {
                         const progress = userProgress[course.id];
                         const isComplete = progress && progress.unlockedSection >= course.sectionsCount;
@@ -129,10 +133,10 @@ const StudyPassportModal: React.FC<StudyPassportModalProps> = ({
                             initial={{ opacity: 0, scale: 0.5 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.3, delay: i * 0.03 }}
-                            className="flex flex-col items-center gap-1.5"
+                            className="flex min-w-0 items-center gap-2.5 rounded-xl border border-[#E2DDD6] bg-white px-2.5 py-2.5 text-left dark:border-zinc-700 dark:bg-zinc-800"
                           >
                             <div
-                              className={`w-10 h-10 rounded-full flex items-center justify-center transition-all ${
+                              className={`h-9 w-9 shrink-0 rounded-full flex items-center justify-center transition-all ${
                                 isComplete
                                   ? `${stampBg} text-white ring-4 ${stampRing}`
                                   : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-300 dark:text-zinc-600'
@@ -145,7 +149,7 @@ const StudyPassportModal: React.FC<StudyPassportModalProps> = ({
                                 <Lock size={12} />
                               )}
                             </div>
-                            <p className={`text-[9px] font-medium text-center leading-tight line-clamp-2 ${
+                            <p className={`min-w-0 text-[11px] font-medium leading-snug ${
                               isComplete ? 'text-zinc-700 dark:text-zinc-300' : 'text-zinc-400 dark:text-zinc-600'
                             }`}>
                               {course.title}

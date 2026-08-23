@@ -332,6 +332,19 @@ describe('Firestore writes are shaped so they cannot fail silently', () => {
     store.ensureDeck(undefined, DECK, NOW);
     expect(writes).toHaveLength(0);
   });
+
+  it('keeps Demo Account reviews local and never contacts Firestore', async () => {
+    const demoUid = 'demo-student';
+    const memory = { s: 3, d: 5, last: NOW, reps: 1, lapses: 0, state: 2 as const };
+
+    store.ensureDeck(demoUid, DECK, NOW);
+    store.commitReview(demoUid, DECK, 'bio-c1', memory, NOW);
+    store.saveExamDate(demoUid, DECK, Date.UTC(2027, 5, 9), NOW);
+
+    expect(store.memoryFor(store.readLocal(demoUid, DECK), 'bio-c1')).toEqual(memory);
+    await expect(store.fetchDeck(demoUid, DECK)).resolves.toBeNull();
+    expect(writes).toHaveLength(0);
+  });
 });
 
 describe('two devices converge instead of one clobbering the other', () => {

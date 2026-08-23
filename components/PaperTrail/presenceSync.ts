@@ -12,8 +12,9 @@
  * rules pin every write to a +1 increment.
  */
 
-import { collection, doc, increment, onSnapshot, setDoc } from 'firebase/firestore';
-import { db } from '../../firebase';
+import { collection, doc, onSnapshot } from 'firebase/firestore';
+import { getFunctions, httpsCallable } from 'firebase/functions';
+import app, { db } from '../../firebase';
 
 const BUCKET_MS = 5 * 60_000;
 
@@ -36,7 +37,11 @@ export function startPresence(code: string, now: number): () => void {
     const b = presenceBucket(ts);
     if (b === lastSent) return;
     lastSent = b;
-    setDoc(bucketDoc(c, b), { n: increment(1) }, { merge: true }).catch(() => {});
+    const record = httpsCallable<{ code: string; bucket: number }, { success: boolean }>(
+      getFunctions(app),
+      'recordFocusPresence',
+    );
+    record({ code: c, bucket: b }).catch(() => {});
   };
   send(now);
   const timer = setInterval(() => send(Date.now()), 30_000);

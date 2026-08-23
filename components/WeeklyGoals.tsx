@@ -126,7 +126,7 @@ const WeeklyGoals: React.FC<WeeklyGoalsProps> = ({ goals, progress, weekStartDat
           </div>
         </div>
         <span className="text-xs font-bold text-[var(--accent-hex)]">
-          {bonusEarned > 0 ? `+${bonusEarned} pts earned` : nextBonus > 0 ? `+${nextBonus} pts next` : ''}
+          {bonusEarned > 0 ? `+${bonusEarned} JP earned` : nextBonus > 0 ? `+${nextBonus} JP next` : ''}
         </span>
       </div>
     </div>

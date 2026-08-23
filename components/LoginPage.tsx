@@ -11,17 +11,18 @@ import { Capacitor } from '@capacitor/core';
 import { authorizeWithApple } from '../utils/appleAuth';
 import app, { auth, db } from '../firebase';
 import { shouldReapAccount } from '../utils/registrationRollback';
-import { signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile, deleteUser, sendPasswordResetEmail, sendEmailVerification, GoogleAuthProvider, signInWithPopup, signInWithCredential } from 'firebase/auth';
+import { signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile, deleteUser, sendPasswordResetEmail, sendEmailVerification, signOut, GoogleAuthProvider, signInWithPopup, signInWithCredential } from 'firebase/auth';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { getFunctions, httpsCallable } from 'firebase/functions';
 import { type SessionUser, getAvatarUrl, AVATAR_SEEDS } from '../utils/authUtils';
 import { awaitWriteOrTimeout, saveInBackground } from '../utils/firestoreWrite';
 import { logError } from '../utils/logError';
 import { trackFunnel } from '../utils/funnel';
-import { isAdminEmail, isReservedEmail } from '../utils/adminIdentity';
+import { isReservedEmail, isVerifiedAdminSession } from '../utils/adminIdentity';
 import { beginStaffProvisioning, endStaffProvisioning } from '../utils/staffProvisioning';
 import { SCHOOLS } from '../schoolData';
 import { createDemoStudentSession } from '../data/devStudent';
+import { MAX_PASSWORD_LENGTH, MIN_PASSWORD_LENGTH, passwordLengthError } from '../utils/passwordPolicy';
 import { LegalModal, type LegalDoc, PRIVACY_POLICY_VERSION, CONSENT_BASIS } from './legal/LegalModal';
 
 // Google Sign-In uses signInWithPopup, which has no real popup to open inside
@@ -341,6 +342,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     for (const emailToTry of attempts) {
       try {
         const cred = await signInWithEmailAndPassword(auth, emailToTry, password);
+        const token = await cred.user.getIdTokenResult();
         const userDoc = await getDoc(doc(db, 'users', cred.user.uid));
         if (userDoc.exists()) {
           const data = userDoc.data();
@@ -351,7 +353,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
             // Admin is the verified auth identity, not a doc field — matches
             // AuthContext and firestore.rules' server-side admin check.
             // (Security review 2026-07-16, LOW — single source of truth.)
-            isAdmin: isAdminEmail(cred.user.email),
+            isAdmin: isVerifiedAdminSession(cred.user, token.claims),
             role: data.role || 'student',
             school: data.school || '',
             yearGroup: data.yearGroup,
@@ -373,6 +375,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     try {
       const provider = new GoogleAuthProvider();
       const cred = await signInWithPopup(auth, provider);
+      const token = await cred.user.getIdTokenResult();
       const userRef = doc(db, 'users', cred.user.uid);
       const userDoc = await getDoc(userRef);
       if (userDoc.exists()) {
@@ -383,7 +386,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
           avatar: data.avatar || AVATAR_SEEDS[0],
           // Admin is the verified auth identity, not a doc field. (Security
           // review 2026-07-16, LOW — single source of truth.)
-          isAdmin: isAdminEmail(cred.user.email),
+          isAdmin: isVerifiedAdminSession(cred.user, token.claims),
           role: data.role || 'student',
           school: data.school || '',
           yearGroup: data.yearGroup,
@@ -431,6 +434,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       // re-authentication uses the identical exchange.
       const { credential, result } = await authorizeWithApple();
       const cred = await signInWithCredential(auth, credential);
+      const token = await cred.user.getIdTokenResult();
 
       // Apple returns the user's name ONLY on the first authorization.
       const appleName = [result.givenName, result.familyName]
@@ -444,7 +448,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
           uid: cred.user.uid,
           name: data.name || appleName || cred.user.displayName || 'Student',
           avatar: data.avatar || AVATAR_SEEDS[0],
-          isAdmin: data.isAdmin || false,
+          isAdmin: isVerifiedAdminSession(cred.user, token.claims),
           role: data.role || 'student',
           school: data.school || '',
           yearGroup: data.yearGroup,
@@ -544,7 +548,8 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     if (!name.trim()) { setError('Please enter your name.'); return; }
     const normalisedEmail = email.trim().toLowerCase();
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(normalisedEmail)) { setError('Please enter a valid email address.'); return; }
-    if (password.length < 8) { setError('Password must be at least 8 characters.'); return; }
+    const staffPasswordError = passwordLengthError(password);
+    if (staffPasswordError) { setError(staffPasswordError); return; }
     if (!staffCode.trim()) { setError('Please enter your staff access code.'); return; }
     if (isReservedEmail(normalisedEmail)) { setError('This email is reserved.'); return; }
     setIsLoading(true); setError('');
@@ -563,6 +568,24 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         const cred = await createUserWithEmailAndPassword(auth, normalisedEmail, password);
         uid = cred.user.uid;
         await updateProfile(cred.user, { displayName: name.trim() });
+      }
+      // Staff access exposes school-wide student records, so the callable
+      // requires a verified mailbox. A brand-new Firebase account cannot be
+      // verified in the same request: send the link, leave the invitation
+      // unconsumed, and end this unprivileged session so AppRouter cannot drop
+      // the teacher into student onboarding while they check their email.
+      const staffUser = auth.currentUser;
+      if (!staffUser) throw new Error('The staff sign-in did not complete.');
+      if (staffUser.emailVerified !== true) {
+        try {
+          await sendEmailVerification(staffUser);
+        } finally {
+          await signOut(auth).catch(() => {});
+        }
+        endStaffProvisioning();
+        setError('Check your email and verify this address, then return here with the same details and staff code.');
+        setIsLoading(false);
+        return;
       }
       // Ensure a minimal user doc exists. `role` AND `school` are set
       // server-side by claimStaffAccess (clients can't write either), so the
@@ -612,9 +635,8 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       return true;
     }
     if (registerStep === 2) {
-      // 8-char floor for a platform used by minors. (Security review
-      // 2026-07-16, MEDIUM — weak password policy.)
-      if (password.length < 8) { setError('Password must be at least 8 characters.'); return false; }
+      const passwordError = passwordLengthError(password);
+      if (passwordError) { setError(passwordError); return false; }
       return true;
     }
     return true;
@@ -755,7 +777,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       }
       const msg = String(err?.message || '');
       if (err.code === 'auth/weak-password') {
-        setError('Password must be at least 8 characters.');
+        setError(`Password must be at least ${MIN_PASSWORD_LENGTH} characters.`);
         setRegisterStep(2);
       } else if (err.code === 'auth/email-already-in-use') {
         setError('An account with this email already exists. Try signing in instead.');
@@ -914,22 +936,22 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
               <p className="text-sm mb-8" style={{ color: '#7a7068' }}>Sign in with your email and password.</p>
               <form onSubmit={e => { e.preventDefault(); handleLogin(); }} className="space-y-4">
                 <div>
-                  <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Email</label>
-                  <input type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus autoComplete="email" autoCapitalize="off" autoCorrect="off" inputMode="email" spellCheck={false} />
+                  <label htmlFor="login-email" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Email</label>
+                  <input id="login-email" type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus autoComplete="email" autoCapitalize="off" autoCorrect="off" inputMode="email" spellCheck={false} />
                 </div>
                 <div>
                   <div className="flex items-center justify-between mb-1.5">
-                    <label className="text-xs font-bold uppercase tracking-wider" style={{ color: '#9e9186' }}>Password</label>
+                    <label htmlFor="login-password" className="text-xs font-bold uppercase tracking-wider" style={{ color: '#9e9186' }}>Password</label>
                     <button type="button" onClick={() => { setView('forgot'); setError(''); }} className="text-xs font-semibold transition-colors hover:opacity-80" style={{ color: '#F26B1F' }}>Forgot?</button>
                   </div>
                   <div className="relative">
-                    <input type={showPassword ? 'text' : 'password'} value={password} onChange={e => { setPassword(e.target.value); setError(''); }} placeholder="Enter your password" className={passwordInputClass} autoComplete="current-password" autoCapitalize="off" autoCorrect="off" spellCheck={false} />
-                    <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-3 top-1/2 -translate-y-1/2 transition-colors" style={{ color: '#9e9186' }}>
+                    <input id="login-password" type={showPassword ? 'text' : 'password'} value={password} onChange={e => { setPassword(e.target.value); setError(''); }} placeholder="Enter your password" className={passwordInputClass} autoComplete="current-password" autoCapitalize="off" autoCorrect="off" spellCheck={false} />
+                    <button type="button" onClick={() => setShowPassword(!showPassword)} aria-label={showPassword ? 'Hide password' : 'Show password'} aria-pressed={showPassword} className="absolute right-3 top-1/2 -translate-y-1/2 transition-colors" style={{ color: '#9e9186' }}>
                       {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
                     </button>
                   </div>
                 </div>
-                <AnimatePresence>{error && <MotionDiv {...errorAnim} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
+                <AnimatePresence>{error && <MotionDiv {...errorAnim} role="alert" aria-live="assertive" className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
                 <MotionButton type="submit" disabled={isLoading} whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} className={primaryBtn} style={primaryBtnStyle}>
                   {isLoading ? 'Signing in...' : 'Sign In'}
                 </MotionButton>
@@ -988,9 +1010,9 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
               <p className="text-sm mb-8" style={{ color: '#7a7068' }}>Select your school and enter your password.</p>
               <form onSubmit={e => { e.preventDefault(); handleGCLogin(); }} className="space-y-4">
                 <div>
-                  <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>School</label>
+                  <label htmlFor="gc-school" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>School</label>
                   <div className="relative">
-                    <select value={gcSchool} onChange={e => { setGcSchool(e.target.value); setError(''); }} className={`${inputClass} appearance-none cursor-pointer ${!gcSchool ? 'text-zinc-400' : ''}`} autoFocus>
+                    <select id="gc-school" value={gcSchool} onChange={e => { setGcSchool(e.target.value); setError(''); }} className={`${inputClass} appearance-none cursor-pointer ${!gcSchool ? 'text-zinc-400' : ''}`} autoFocus>
                       <option value="" disabled>Select your school</option>
                       {SCHOOLS.map(s => (<option key={s.id} value={s.id}>{s.name}</option>))}
                     </select>
@@ -998,15 +1020,15 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                   </div>
                 </div>
                 <div>
-                  <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Password</label>
+                  <label htmlFor="gc-password" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Password</label>
                   <div className="relative">
-                    <input type={showPassword ? 'text' : 'password'} value={password} onChange={e => { setPassword(e.target.value); setError(''); }} placeholder="Enter your password" className={passwordInputClass} autoComplete="current-password" autoCapitalize="off" autoCorrect="off" spellCheck={false} />
-                    <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-3 top-1/2 -translate-y-1/2 transition-colors" style={{ color: '#9e9186' }}>
+                    <input id="gc-password" type={showPassword ? 'text' : 'password'} value={password} onChange={e => { setPassword(e.target.value); setError(''); }} placeholder="Enter your password" className={passwordInputClass} autoComplete="current-password" autoCapitalize="off" autoCorrect="off" spellCheck={false} />
+                    <button type="button" onClick={() => setShowPassword(!showPassword)} aria-label={showPassword ? 'Hide password' : 'Show password'} aria-pressed={showPassword} className="absolute right-3 top-1/2 -translate-y-1/2 transition-colors" style={{ color: '#9e9186' }}>
                       {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
                     </button>
                   </div>
                 </div>
-                <AnimatePresence>{error && <MotionDiv {...errorAnim} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
+                <AnimatePresence>{error && <MotionDiv {...errorAnim} role="alert" aria-live="assertive" className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
                 <MotionButton type="submit" disabled={isLoading} whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} className={primaryBtn} style={primaryBtnStyle}>
                   {isLoading ? 'Signing in...' : 'Sign In'}
                 </MotionButton>
@@ -1024,13 +1046,13 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
               <p className="text-sm mb-6" style={{ color: '#7a7068' }}>Enter your details and the staff access code from your school. New to NextStepUni? This creates your staff account. Already have an account? Use the same email and password.</p>
               <form onSubmit={e => { e.preventDefault(); handleStaffAccess(); }} className="space-y-4">
                 <div>
-                  <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Your name</label>
-                  <input type="text" value={name} onChange={e => { setName(e.target.value); setError(''); }} placeholder="Jane Murphy" className={inputClass} autoFocus autoComplete="name" />
+                  <label htmlFor="staff-name" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Your name</label>
+                  <input id="staff-name" type="text" value={name} onChange={e => { setName(e.target.value); setError(''); }} placeholder="Jane Murphy" className={inputClass} autoFocus autoComplete="name" />
                 </div>
                 <div>
-                  <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>School</label>
+                  <label htmlFor="staff-school" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>School</label>
                   <div className="relative">
-                    <select value={school} onChange={e => { setSchool(e.target.value); setError(''); }} className={`${inputClass} appearance-none cursor-pointer ${!school ? 'text-zinc-400' : ''}`}>
+                    <select id="staff-school" value={school} onChange={e => { setSchool(e.target.value); setError(''); }} className={`${inputClass} appearance-none cursor-pointer ${!school ? 'text-zinc-400' : ''}`}>
                       <option value="" disabled>Select your school</option>
                       {SCHOOLS.map(s => (<option key={s.id} value={s.id}>{s.name}</option>))}
                     </select>
@@ -1038,26 +1060,26 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                   </div>
                 </div>
                 <div>
-                  <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Email</label>
-                  <input type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@school.ie" className={inputClass} autoComplete="email" autoCapitalize="off" autoCorrect="off" inputMode="email" spellCheck={false} />
+                  <label htmlFor="staff-email" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Email</label>
+                  <input id="staff-email" type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@school.ie" className={inputClass} autoComplete="email" autoCapitalize="off" autoCorrect="off" inputMode="email" spellCheck={false} />
                 </div>
                 <div>
-                  <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Password</label>
+                  <label htmlFor="staff-password" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Password</label>
                   <div className="relative">
-                    <input type={showPassword ? 'text' : 'password'} value={password} onChange={e => { setPassword(e.target.value); setError(''); }} placeholder="At least 8 characters" className={passwordInputClass} autoComplete="current-password" autoCapitalize="off" autoCorrect="off" spellCheck={false} />
-                    <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-3 top-1/2 -translate-y-1/2 transition-colors" style={{ color: '#9e9186' }}>
+                    <input id="staff-password" type={showPassword ? 'text' : 'password'} value={password} onChange={e => { setPassword(e.target.value); setError(''); }} placeholder={`At least ${MIN_PASSWORD_LENGTH} characters`} minLength={MIN_PASSWORD_LENGTH} maxLength={MAX_PASSWORD_LENGTH} className={passwordInputClass} autoComplete="current-password" autoCapitalize="off" autoCorrect="off" spellCheck={false} />
+                    <button type="button" onClick={() => setShowPassword(!showPassword)} aria-label={showPassword ? 'Hide password' : 'Show password'} aria-pressed={showPassword} className="absolute right-3 top-1/2 -translate-y-1/2 transition-colors" style={{ color: '#9e9186' }}>
                       {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
                     </button>
                   </div>
                 </div>
                 <div>
-                  <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Staff access code</label>
+                  <label htmlFor="staff-code" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Staff access code</label>
                   <div className="relative">
-                    <input type="text" value={staffCode} onChange={e => { setStaffCode(e.target.value); setError(''); }} placeholder="Code from your school" className={`${inputClass} pr-10`} autoCapitalize="characters" autoCorrect="off" spellCheck={false} />
+                    <input id="staff-code" type="text" value={staffCode} onChange={e => { setStaffCode(e.target.value); setError(''); }} placeholder="Code from your school" className={`${inputClass} pr-10`} autoCapitalize="characters" autoCorrect="off" spellCheck={false} />
                     <KeyRound size={16} className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" style={{ color: '#9e9186' }} />
                   </div>
                 </div>
-                <AnimatePresence>{error && <MotionDiv {...errorAnim} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
+                <AnimatePresence>{error && <MotionDiv {...errorAnim} role="alert" aria-live="assertive" className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
                 <MotionButton type="submit" disabled={isLoading} whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} className={primaryBtn} style={primaryBtnStyle}>
                   {isLoading ? 'Verifying...' : 'Get staff access'}
                 </MotionButton>
@@ -1126,10 +1148,10 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
               ) : (
                 <form onSubmit={e => { e.preventDefault(); handleForgotPassword(); }} className="space-y-4">
                   <div>
-                    <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Email</label>
-                    <input type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus autoComplete="email" autoCapitalize="off" autoCorrect="off" inputMode="email" spellCheck={false} />
+                    <label htmlFor="reset-email" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Email</label>
+                    <input id="reset-email" type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus autoComplete="email" autoCapitalize="off" autoCorrect="off" inputMode="email" spellCheck={false} />
                   </div>
-                  <AnimatePresence>{error && <MotionDiv {...errorAnim} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
+                <AnimatePresence>{error && <MotionDiv {...errorAnim} role="alert" aria-live="assertive" className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
                   <MotionButton type="submit" disabled={isLoading} whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} className={primaryBtn} style={primaryBtnStyle}>
                     {isLoading ? 'Sending...' : 'Send Reset Link'}
                   </MotionButton>
@@ -1168,19 +1190,19 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                   <MotionDiv key="step1" custom={stepDirection} variants={slideVariants} initial="enter" animate="center" exit="exit" transition={slideTransition}>
                     <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Let&apos;s get you set up</h2>
                     <p className="text-sm mb-8" style={{ color: '#7a7068' }}>We&apos;ll use your email to create your account and for password resets.</p>
-                    <div className="space-y-4">
+                    <form onSubmit={e => { e.preventDefault(); handleRegisterNext(); }} className="space-y-4">
                       <div>
-                        <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Email</label>
-                        <input type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus autoComplete="email" autoCapitalize="off" autoCorrect="off" inputMode="email" spellCheck={false} />
+                        <label htmlFor="register-email" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Email</label>
+                        <input id="register-email" type="email" value={email} onChange={e => { setEmail(e.target.value); setError(''); }} placeholder="you@example.com" className={inputClass} autoFocus autoComplete="email" autoCapitalize="off" autoCorrect="off" inputMode="email" spellCheck={false} />
                       </div>
                       <div>
-                        <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Your Name</label>
-                        <input type="text" value={name} onChange={e => { setName(e.target.value); setError(''); }} placeholder="e.g. Sean, Emma, Jordan" className={inputClass} autoComplete="given-name" autoCapitalize="words" autoCorrect="off" spellCheck={false} />
+                        <label htmlFor="register-name" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Your Name</label>
+                        <input id="register-name" type="text" value={name} onChange={e => { setName(e.target.value); setError(''); }} placeholder="e.g. Sean, Emma, Jordan" className={inputClass} autoComplete="given-name" autoCapitalize="words" autoCorrect="off" spellCheck={false} />
                       </div>
                       <div>
-                        <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>School</label>
+                        <label htmlFor="register-school" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>School</label>
                         <div className="relative">
-                          <select value={school} onChange={e => { setSchool(e.target.value); setError(''); }} className={`${inputClass} appearance-none cursor-pointer ${!school ? 'text-zinc-400' : ''}`}>
+                          <select id="register-school" value={school} onChange={e => { setSchool(e.target.value); setError(''); }} className={`${inputClass} appearance-none cursor-pointer ${!school ? 'text-zinc-400' : ''}`}>
                             <option value="" disabled>Select your school</option>
                             {SCHOOLS.map(s => (<option key={s.id} value={s.id}>{s.name}</option>))}
                           </select>
@@ -1188,18 +1210,18 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                         </div>
                       </div>
                       <div>
-                        <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>School join code</label>
+                        <label htmlFor="register-join-code" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>School join code</label>
                         <div className="relative">
-                          <input type="text" value={joinCode} onChange={e => { setJoinCode(e.target.value); setError(''); }} placeholder="From your school" className={`${inputClass} pr-10`} autoComplete="off" autoCapitalize="off" autoCorrect="off" spellCheck={false} />
+                          <input id="register-join-code" type="text" value={joinCode} onChange={e => { setJoinCode(e.target.value); setError(''); }} placeholder="From your school" className={`${inputClass} pr-10`} autoComplete="off" autoCapitalize="off" autoCorrect="off" spellCheck={false} />
                           <KeyRound size={16} className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" style={{ color: '#9e9186' }} />
                         </div>
                         <p className="text-xs mt-1.5" style={{ color: '#9e9186' }}>Your school gives you this code. It confirms you belong to your school.</p>
                       </div>
-                      <AnimatePresence>{error && <MotionDiv {...errorAnim} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
-                      <MotionButton whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} onClick={handleRegisterNext} className={primaryBtn} style={primaryBtnStyle}>
+                      <AnimatePresence>{error && <MotionDiv {...errorAnim} role="alert" aria-live="assertive" className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
+                      <MotionButton type="submit" whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} className={primaryBtn} style={primaryBtnStyle}>
                         <span className="flex items-center justify-center gap-2">Continue <ArrowRight size={16} /></span>
                       </MotionButton>
-                    </div>
+                    </form>
                     <p className="text-sm text-center mt-6" style={{ color: '#9e9186' }}>
                       Already have an account?{' '}<button type="button" onClick={() => { resetForm(); setView('login'); }} className="font-semibold transition-colors hover:opacity-80" style={{ color: '#F26B1F' }}>Sign in</button>
                     </p>
@@ -1209,28 +1231,28 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                 {registerStep === 2 && (
                   <MotionDiv key="step2" custom={stepDirection} variants={slideVariants} initial="enter" animate="center" exit="exit" transition={slideTransition}>
                     <h2 className="text-2xl font-semibold tracking-tight mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Create a password</h2>
-                    <p className="text-sm mb-8" style={{ color: '#7a7068' }}>At least 6 characters. You&apos;ll need this to log in.</p>
-                    <div className="space-y-4">
+                    <p className="text-sm mb-8" style={{ color: '#7a7068' }}>Use at least {MIN_PASSWORD_LENGTH} characters. A short phrase is easier to remember and harder to guess.</p>
+                    <form onSubmit={e => { e.preventDefault(); handleRegisterNext(); }} className="space-y-4">
                       <div>
-                        <label className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Password</label>
+                        <label htmlFor="register-password" className="text-xs font-bold uppercase tracking-wider mb-1.5 block" style={{ color: '#9e9186' }}>Password</label>
                         <div className="relative">
-                          <input type={showPassword ? 'text' : 'password'} value={password} onChange={e => { setPassword(e.target.value); setError(''); }} placeholder="Create a password" className={passwordInputClass} autoFocus autoComplete="new-password" autoCapitalize="off" autoCorrect="off" spellCheck={false} />
-                          <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-3 top-1/2 -translate-y-1/2 transition-colors" style={{ color: '#9e9186' }}>
+                          <input id="register-password" type={showPassword ? 'text' : 'password'} value={password} onChange={e => { setPassword(e.target.value); setError(''); }} placeholder="Create a password" minLength={MIN_PASSWORD_LENGTH} maxLength={MAX_PASSWORD_LENGTH} className={passwordInputClass} autoFocus autoComplete="new-password" autoCapitalize="off" autoCorrect="off" spellCheck={false} />
+                          <button type="button" onClick={() => setShowPassword(!showPassword)} aria-label={showPassword ? 'Hide password' : 'Show password'} aria-pressed={showPassword} className="absolute right-3 top-1/2 -translate-y-1/2 transition-colors" style={{ color: '#9e9186' }}>
                             {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
                           </button>
                         </div>
-                        {password.length > 0 && password.length < 8 && (
-                          <p className="text-xs mt-1.5" style={{ color: '#9e9186' }}>{8 - password.length} more character{8 - password.length !== 1 ? 's' : ''} needed</p>
+                        {password.length > 0 && password.length < MIN_PASSWORD_LENGTH && (
+                          <p className="text-xs mt-1.5" style={{ color: '#9e9186' }}>{MIN_PASSWORD_LENGTH - password.length} more character{MIN_PASSWORD_LENGTH - password.length !== 1 ? 's' : ''} needed</p>
                         )}
-                        {password.length >= 8 && (
+                        {password.length >= MIN_PASSWORD_LENGTH && password.length <= MAX_PASSWORD_LENGTH && (
                           <p className="text-xs mt-1.5 flex items-center gap-1" style={{ color: '#F26B1F' }}><Check size={12} /> Looks good</p>
                         )}
                       </div>
-                      <AnimatePresence>{error && <MotionDiv {...errorAnim} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
-                      <MotionButton whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} onClick={handleRegisterNext} className={primaryBtn} style={primaryBtnStyle}>
+                      <AnimatePresence>{error && <MotionDiv {...errorAnim} role="alert" aria-live="assertive" className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
+                      <MotionButton type="submit" whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} className={primaryBtn} style={primaryBtnStyle}>
                         <span className="flex items-center justify-center gap-2">Continue <ArrowRight size={16} /></span>
                       </MotionButton>
-                    </div>
+                    </form>
                   </MotionDiv>
                 )}
 
@@ -1270,7 +1292,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                         Your school provides NextStepUni with your parent or guardian’s permission as part of enrolment. The Privacy Notice explains how your information is used.
                       </p>
                     </div>
-                    <AnimatePresence>{error && <MotionDiv {...errorAnim} className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
+                    <AnimatePresence>{error && <MotionDiv {...errorAnim} role="alert" aria-live="assertive" className="text-sm text-red-500 font-medium">{error}</MotionDiv>}</AnimatePresence>
                     <MotionButton whileHover={btnHover} whileTap={btnTap} transition={SPRING_FAST} onClick={handleRegisterSubmit} disabled={isLoading || !agreedToTerms} className={primaryBtn} style={primaryBtnStyle}>
                       {isLoading ? 'Creating your account...' : 'Create Account'}
                     </MotionButton>

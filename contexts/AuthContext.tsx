@@ -13,8 +13,16 @@ import { generateAutoNotifications } from '../components/gc/gcNotifications';
 import { logError } from '../utils/logError';
 import { getProgressDocument } from '../services/progressRepository';
 import { mergeUserDocument, waitForUserDocument } from '../services/userRepository';
-import { DEMO_STUDENT_UID, createDemoStudentLoadedData } from '../data/devStudent';
-import { isAdminEmail } from '../utils/adminIdentity';
+import {
+  DEMO_STUDENT_UID,
+  clearDemoSession,
+  createDemoStudentSession,
+  hasActiveDemoSession,
+  loadDemoStudentLoadedData,
+  markDemoSessionActive,
+} from '../data/devStudent';
+import { isVerifiedAdminSession } from '../utils/adminIdentity';
+import { clearLocalSessionData } from '../utils/sessionPrivacy';
 
 // ─── Types ──────────────────────────────────────────────────
 
@@ -42,6 +50,13 @@ interface AuthContextValue {
   userResolved: boolean;
   needsOnboarding: boolean;
   loadedData: AuthLoadedData;
+  /** UID whose Firestore progress is represented by `loadedData`. This stays
+   *  null during the eager LoginPage session hand-off, until the auth listener
+   *  has finished loading that account's data. */
+  loadedDataUid: string | null;
+  /** Whether the owning user's initial profile/progress read completed. Failed
+   *  fallback data is intentionally not authoritative for rank baselines. */
+  loadedDataStatus: 'pending' | 'loaded' | 'failed';
   handleLoginSuccess: (user: SessionUser) => void;
   handleLogout: () => Promise<void>;
   /** Called by App.tsx after the onboarding flow saves a subject profile, so
@@ -81,6 +96,8 @@ const AuthContext = createContext<AuthContextValue>({
   userResolved: false,
   needsOnboarding: false,
   loadedData: defaultLoadedData,
+  loadedDataUid: null,
+  loadedDataStatus: 'pending',
   handleLoginSuccess: () => {},
   handleLogout: async () => {},
   markOnboardingComplete: () => {},
@@ -99,6 +116,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [userResolved, setUserResolved] = useState(false);
   const authResolvedRef = useRef(false);
   const [loadedData, setLoadedData] = useState<AuthLoadedData>(defaultLoadedData);
+  const [loadedDataUid, setLoadedDataUid] = useState<string | null>(null);
+  const [loadedDataStatus, setLoadedDataStatus] = useState<'pending' | 'loaded' | 'failed'>('pending');
 
   // Auth listener — handles initial state + ongoing changes (login, logout).
   // userResolved is set at the END of each callback, after all async Firestore
@@ -109,11 +128,23 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   // (IndexedDB) before its first fire, so the first callback is always definitive.
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (firebaseUser: FirebaseUser | null) => {
+      setLoadedDataUid(null);
+      setLoadedDataStatus('pending');
+
       if (firebaseUser) {
+        // Token refresh can fail on a poor connection. Settle the auth listener
+        // deterministically and fail closed for privileged routing: an
+        // unavailable claim set must never become an admin or staff grant.
+        const initialToken = await firebaseUser.getIdTokenResult().catch(err => {
+          console.error('Could not verify the current ID token:', err);
+          return null;
+        });
         // Admin user
-        if (isAdminEmail(firebaseUser.email)) {
+        if (initialToken && isVerifiedAdminSession(firebaseUser, initialToken.claims)) {
           setUser({ uid: firebaseUser.uid, name: 'Admin', avatar: 'Charlie', isAdmin: true });
           setLoadedData({ ...defaultLoadedData });
+          setLoadedDataUid(firebaseUser.uid);
+          setLoadedDataStatus('loaded');
           setIsLoadingAuth(false);
           if (!authResolvedRef.current) {
             authResolvedRef.current = true;
@@ -124,19 +155,12 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         }
 
         // Regular user — fetch profile + progress
+        let loadFailed = false;
         try {
           const [userData, progressData] = await Promise.all([
             waitForUserDocument(firebaseUser.uid),
             getProgressDocument(firebaseUser.uid),
           ]);
-          const token = await firebaseUser.getIdTokenResult();
-          const claimedRole = token.claims.role;
-          const claimedSchool = token.claims.school;
-          const roleFromClaims = claimedRole === 'gc' || claimedRole === 'staff' || claimedRole === 'admin'
-            ? claimedRole
-            : undefined;
-          const schoolFromClaims = typeof claimedSchool === 'string' ? claimedSchool : undefined;
-
           if (userData) {
 
             // ─── Junior Cycle Phase 1: backfill curriculumLevel ──────────
@@ -159,8 +183,11 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
               name: userData.name,
               avatar: userData.avatar || 'Charlie',
               isAdmin: false,
-              role: userData.role ?? roleFromClaims,
-              school: userData.school ?? schoolFromClaims,
+              // Current server-managed profile state is authoritative. Token
+              // claims may remain cached after a demotion and are never used
+              // as a fallback grant.
+              role: userData.role,
+              school: userData.school,
               yearGroup: userData.yearGroup,
               curriculumLevel,
               needsPasswordChange: userData.needsPasswordChange || false,
@@ -202,8 +229,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
               name: fallbackName,
               avatar: 'Charlie',
               isAdmin: false,
-              role: roleFromClaims,
-              school: schoolFromClaims,
             });
             if (progressData) {
               const pd = progressData;
@@ -224,6 +249,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
             }
           }
         } catch (err) {
+          loadFailed = true;
           console.error('Error fetching user data:', err);
           // Not the email local-part: it is wrong for every account that has a
             // real name on file, and it puts part of a school-issued address on
@@ -238,11 +264,25 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
           });
           setLoadedData({ ...defaultLoadedData, needsOnboarding: true });
         }
+        setLoadedDataStatus(loadFailed ? 'failed' : 'loaded');
       } else {
-        setUser(null);
-        setLoadedData({ ...defaultLoadedData });
+        if (hasActiveDemoSession()) {
+          setUser(createDemoStudentSession());
+          setLoadedData(loadDemoStudentLoadedData());
+          setLoadedDataUid(DEMO_STUDENT_UID);
+          setLoadedDataStatus('loaded');
+        } else {
+          // Browser auth uses session persistence, so closing a shared-school
+          // browser ends Firebase sign-in but cannot run our logout handler.
+          // Clear the previous account's device-only drafts on the next
+          // unauthenticated boot before presenting the login screen.
+          await clearLocalSessionData();
+          setUser(null);
+          setLoadedData({ ...defaultLoadedData });
+        }
       }
 
+      if (firebaseUser) setLoadedDataUid(firebaseUser.uid);
       setIsLoadingAuth(false);
       if (!authResolvedRef.current) {
         authResolvedRef.current = true;
@@ -256,7 +296,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const handleLoginSuccess = useCallback((loggedInUser: SessionUser) => {
     if (loggedInUser.uid === DEMO_STUDENT_UID) {
-      setLoadedData(createDemoStudentLoadedData());
+      markDemoSessionActive();
+      setLoadedData(loadDemoStudentLoadedData());
+      setLoadedDataUid(loggedInUser.uid);
+      setLoadedDataStatus('loaded');
     }
     setUser(loggedInUser);
     setUserResolved(true);
@@ -264,12 +307,26 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const handleLogout = useCallback(async () => {
     if (user?.uid === DEMO_STUDENT_UID) {
+      clearDemoSession();
       setUser(null);
       setLoadedData({ ...defaultLoadedData });
+      setLoadedDataUid(null);
+      setLoadedDataStatus('pending');
       setUserResolved(true);
       return;
     }
-    await signOut(auth);
+    try {
+      await signOut(auth);
+    } finally {
+      // A network/auth error must not leave the previous student's drafts,
+      // marks or oral recordings behind on a shared school computer.
+      await clearLocalSessionData();
+    }
+    setUser(null);
+    setLoadedData({ ...defaultLoadedData });
+    setLoadedDataUid(null);
+    setLoadedDataStatus('pending');
+    setUserResolved(true);
   }, [user?.uid]);
 
   const markOnboardingComplete = useCallback(() => {
@@ -291,6 +348,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     userResolved,
     needsOnboarding: loadedData.needsOnboarding,
     loadedData,
+    loadedDataUid,
+    loadedDataStatus,
     handleLoginSuccess,
     handleLogout,
     markOnboardingComplete,

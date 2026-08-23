@@ -25,14 +25,12 @@ import {
   collection,
   doc,
   getDocs,
-  increment,
   onSnapshot,
   query,
-  setDoc,
   where,
 } from 'firebase/firestore';
-import { db } from '../../firebase';
-import { saveInBackground } from '../../utils/firestoreWrite';
+import { getFunctions, httpsCallable } from 'firebase/functions';
+import app, { db } from '../../firebase';
 import type { CohortAgg, CohortRule, MissDelta } from './store';
 
 const codeId = (code: string) => code.trim().toLowerCase();
@@ -40,57 +38,17 @@ const codeId = (code: string) => code.trim().toLowerCase();
 const cohortDoc = (code: string) => doc(db, 'chairCohorts', codeId(code));
 const rulesCol = (code: string) => collection(db, 'chairCohorts', codeId(code), 'rules');
 
-/** Stable, collision-resistant Firestore doc id for an arbitrary rule key
- * (FNV-1a → base36). The human-readable key/subject/label ride as fields. */
-function ruleDocId(key: string): string {
-  let h = 0x811c9dc5;
-  for (let i = 0; i < key.length; i++) {
-    h ^= key.charCodeAt(i);
-    h = Math.imul(h, 0x01000193);
-  }
-  return 'r' + (h >>> 0).toString(36);
-}
-
-/** Collapse a submission's deltas per rule, so each submission counts once per
- * rule (matching aggregateCohort's local behaviour). */
-function collapse(deltas: MissDelta[]): MissDelta[] {
-  const perRule = new Map<string, MissDelta>();
-  for (const d of deltas) {
-    const cur = perRule.get(d.key);
-    if (cur) { cur.over += d.over; cur.under += d.under; }
-    else perRule.set(d.key, { ...d });
-  }
-  return [...perRule.values()];
-}
-
 /** Write one student's session blind-spots to a class code (best-effort).
  * Silent on failure — the local aggregate is the offline fallback. */
 export async function submitToCohortRemote(code: string, deltas: MissDelta[]): Promise<void> {
   const c = code.trim();
   if (!c) return;
   try {
-    // Best-effort by contract — fired, not awaited, so an offline student is
-    // never blocked waiting for a class-aggregate write to be acknowledged.
-    saveInBackground(setDoc(cohortDoc(c), { submissions: increment(1) }, { merge: true }),
-      'cohortSync.submitToCohortRemote', undefined, { silent: true });
-    // Promise.all over writes has the same offline semantics as one write —
-    // it settles only when every member is server-acked. Fired, not awaited.
-    saveInBackground(Promise.all(
-      collapse(deltas).map(d =>
-        setDoc(
-          doc(rulesCol(c), ruleDocId(d.key)),
-          {
-            key: d.key,
-            subject: d.subject,
-            label: d.label,
-            over: increment(d.over),
-            under: increment(d.under),
-            students: increment(1),
-          },
-          { merge: true },
-        ),
-      ),
-    ), 'cohortSync.submitToCohortRemote.rules', undefined, { silent: true });
+    const submit = httpsCallable<{ code: string; deltas: MissDelta[] }, { success: boolean }>(
+      getFunctions(app),
+      'submitChairCohort',
+    );
+    await submit({ code: c, deltas });
   } catch (err) {
     console.error('[Chair] cohort submit failed:', err);
   }
@@ -116,15 +74,11 @@ export async function submitDecisions(code: string, deltas: DecisionDelta[]): Pr
   const c = code.trim();
   if (!c || deltas.length === 0) return;
   try {
-    saveInBackground(Promise.all(
-      deltas.map(d =>
-        setDoc(
-          doc(decisionsCol(c), ruleDocId(`${d.sessionId}|${d.scriptId}|${d.choice}`)),
-          { sessionId: d.sessionId, scriptId: d.scriptId, choice: d.choice, n: increment(1) },
-          { merge: true },
-        ),
-      ),
-    ), 'cohortSync.submitDecisions', undefined, { silent: true });
+    const submit = httpsCallable<{ code: string; deltas: DecisionDelta[] }, { success: boolean }>(
+      getFunctions(app),
+      'submitChairDecisions',
+    );
+    await submit({ code: c, deltas });
   } catch (err) {
     console.error('[Chair] decision submit failed:', err);
   }
@@ -165,14 +119,11 @@ export async function submitDailyBucket(code: string, day: string, bucket: numbe
   const b = Math.max(0, Math.min(10, Math.round(bucket)));
   if (!c || !day) return;
   try {
-    saveInBackground(
-      setDoc(
-        doc(dailyCol(c), `${day}-b${b}`),
-        { day, bucket: b, n: increment(1) },
-        { merge: true },
-      ),
-      'cohortSync.submitDailyBucket', undefined, { silent: true },
+    const submit = httpsCallable<{ code: string; day: string; bucket: number }, { success: boolean }>(
+      getFunctions(app),
+      'submitChairDaily',
     );
+    await submit({ code: c, day, bucket: b });
   } catch (err) {
     console.error('[Chair] daily duel submit failed:', err);
   }

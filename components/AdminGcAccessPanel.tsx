@@ -15,8 +15,9 @@
 import React, { useState } from 'react';
 import { getFunctions, httpsCallable } from 'firebase/functions';
 import { Check, Copy, Eye, EyeOff, KeyRound, LoaderCircle, Shuffle, TriangleAlert, X } from 'lucide-react';
-import app from '../firebase';
+import app, { auth } from '../firebase';
 import { SCHOOLS } from '../schoolData';
+import { reauthMethodFor, reauthenticateCurrentUser } from '../utils/reauthenticate';
 
 /**
  * Mirrors MIN_SUPPLIED_PASSWORD_LENGTH in functions/src/gcPasswordPolicy.ts.
@@ -28,7 +29,7 @@ import { SCHOOLS } from '../schoolData';
  * The server enforces this regardless — the check here only saves a round trip
  * and gives the typist an immediate error.
  */
-const MIN_SUPPLIED_PASSWORD_LENGTH = 10;
+const MIN_SUPPLIED_PASSWORD_LENGTH = 12;
 
 interface ResetResult {
   email: string;
@@ -41,6 +42,7 @@ const AdminGcAccessPanel: React.FC = () => {
   const [openSchool, setOpenSchool] = useState<string | null>(null);
   const [chosen, setChosen] = useState('');
   const [showChosen, setShowChosen] = useState(false);
+  const [currentPassword, setCurrentPassword] = useState('');
   const [pendingAdoption, setPendingAdoption] = useState<
     { schoolId: string; password?: string; message: string } | null
   >(null);
@@ -52,6 +54,7 @@ const AdminGcAccessPanel: React.FC = () => {
     setOpenSchool(null);
     setChosen('');
     setShowChosen(false);
+    setCurrentPassword('');
   };
 
   /**
@@ -70,6 +73,8 @@ const AdminGcAccessPanel: React.FC = () => {
     setPendingAdoption(null);
     setCopied(false);
     try {
+      if (!auth.currentUser) throw new Error('No administrator is signed in.');
+      await reauthenticateCurrentUser(auth.currentUser, currentPassword);
       const fn = httpsCallable<
         { email: string; password?: string; adoptExisting?: boolean },
         ResetResult & { success: true }
@@ -97,6 +102,7 @@ const AdminGcAccessPanel: React.FC = () => {
           + 'deploying an update. Use the password shown, or try again in a few minutes.');
       }
       closeRow();
+      setCurrentPassword('');
     } catch (err) {
       const code = typeof err === 'object' && err && 'code' in err ? String((err as { code?: unknown }).code) : '';
       const message = typeof err === 'object' && err && 'message' in err ? String((err as { message?: unknown }).message) : '';
@@ -237,6 +243,21 @@ const AdminGcAccessPanel: React.FC = () => {
 
             {openSchool === school.id && (
               <div className="w-full border-t border-[#DDD8D2] pt-4">
+                {reauthMethodFor(auth.currentUser) === 'password' && (
+                  <div className="mb-4">
+                    <label htmlFor={`current-pw-${school.id}`} className="block text-[11px] font-bold uppercase tracking-[0.16em] text-[#9E9186]">
+                      Your current administrator password
+                    </label>
+                    <input
+                      id={`current-pw-${school.id}`}
+                      type="password"
+                      value={currentPassword}
+                      onChange={event => setCurrentPassword(event.target.value)}
+                      autoComplete="current-password"
+                      className="mt-2 w-full rounded-xl border-2 border-[#1A1A1A] bg-white px-4 py-2.5 text-sm text-[#1A1A1A] outline-none focus:ring-4 focus:ring-[#F26B1F]/15"
+                    />
+                  </div>
+                )}
                 <label htmlFor={`pw-${school.id}`} className="block text-[11px] font-bold uppercase tracking-[0.16em] text-[#9E9186]">
                   Choose a password
                 </label>
@@ -263,7 +284,7 @@ const AdminGcAccessPanel: React.FC = () => {
                   <button
                     type="button"
                     onClick={() => void reset(school.id, chosen)}
-                    disabled={chosen.length < MIN_SUPPLIED_PASSWORD_LENGTH || busySchool !== null}
+                    disabled={chosen.length < MIN_SUPPLIED_PASSWORD_LENGTH || busySchool !== null || (reauthMethodFor(auth.currentUser) === 'password' && !currentPassword)}
                     className="shrink-0 rounded-full border-2 border-[#1A1A1A] bg-[#1A1A1A] px-4 py-2.5 text-xs font-bold text-white disabled:opacity-40"
                   >
                     Set password
@@ -271,7 +292,7 @@ const AdminGcAccessPanel: React.FC = () => {
                   <button
                     type="button"
                     onClick={() => void reset(school.id)}
-                    disabled={busySchool !== null}
+                    disabled={busySchool !== null || (reauthMethodFor(auth.currentUser) === 'password' && !currentPassword)}
                     className="flex shrink-0 items-center gap-1.5 rounded-full border-2 border-[#1A1A1A] bg-white px-4 py-2.5 text-xs font-bold text-[#1A1A1A] disabled:opacity-40"
                   >
                     <Shuffle size={14} />

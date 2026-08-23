@@ -14,6 +14,8 @@ import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useFreshProgress } from './useFreshProgress';
 import { reportSaveError } from '../utils/logError';
+import { useProgress } from '../contexts/ProgressContext';
+import { DEMO_STUDENT_UID } from '../data/devStudent';
 
 export interface PlanCue {
   /** Fixed situational trigger, e.g. "When I get home and drop my bag". */
@@ -25,6 +27,8 @@ export type PlanCues = Record<string, PlanCue>;
 
 export function usePlanCues(uid?: string) {
   const { doc: rawProgressDoc, loaded } = useFreshProgress(uid);
+  const { updateDemoProgress } = useProgress();
+  const isDemo = uid === DEMO_STUDENT_UID;
   const [cues, setCues] = useState<PlanCues>({});
   const [isLoaded, setIsLoaded] = useState(false);
   const seededRef = useRef(false);
@@ -43,12 +47,14 @@ export function usePlanCues(uid?: string) {
   const setCue = useCallback((blockId: string, cue: PlanCue) => {
     setCues(prev => {
       const next: PlanCues = { ...prev, [blockId]: cue };
-      if (uid) {
+      if (isDemo) {
+        updateDemoProgress(current => ({ ...current, planCues: next }));
+      } else if (uid) {
         setDoc(doc(db, 'progress', uid), { planCues: next }, { merge: true }).catch((e) => reportSaveError('usePlanCues.save', e));
       }
       return next;
     });
-  }, [uid]);
+  }, [uid, isDemo, updateDemoProgress]);
 
   return { cues, isLoaded, setCue };
 }

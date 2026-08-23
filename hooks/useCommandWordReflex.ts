@@ -13,6 +13,8 @@ import { db } from '../firebase';
 import { useFreshProgress } from './useFreshProgress';
 import { type CommandWordState } from '../types/commandWord';
 import { reportSaveError } from '../utils/logError';
+import { useProgress } from '../contexts/ProgressContext';
+import { DEMO_STUDENT_UID } from '../data/devStudent';
 
 const EMPTY: CommandWordState = {
   seenIds: [],
@@ -25,6 +27,8 @@ const EMPTY: CommandWordState = {
 const uniqPush = (arr: string[], v: string) => (arr.includes(v) ? arr : [...arr, v]);
 
 export function useCommandWordReflex(uid?: string) {
+  const { updateDemoProgress } = useProgress();
+  const isDemo = uid === DEMO_STUDENT_UID;
   const { doc: rawProgressDoc, loaded: progressLoaded } = useFreshProgress(uid);
   const [state, setState] = useState<CommandWordState>(EMPTY);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -42,9 +46,10 @@ export function useCommandWordReflex(uid?: string) {
 
   const persist = useCallback((next: CommandWordState) => {
     if (uid) {
-      setDoc(doc(db, 'progress', uid), { commandWordReflex: next }, { merge: true }).catch((e) => reportSaveError('useCommandWordReflex.save', e));
+      if (isDemo) updateDemoProgress(current => ({ ...current, commandWordReflex: next }));
+      else setDoc(doc(db, 'progress', uid), { commandWordReflex: next }, { merge: true }).catch((e) => reportSaveError('useCommandWordReflex.save', e));
     }
-  }, [uid]);
+  }, [uid, isDemo, updateDemoProgress]);
 
   /** Record a completed question: whether it was spotted on the first tap, and the cue word met. */
   const recordResult = useCallback((questionId: string, commandWord: string, firstTry: boolean) => {

@@ -111,7 +111,7 @@ const GiftButton: React.FC<GiftButtonProps> = ({
                       <X size={16} className="text-zinc-400" />
                     </button>
                   </div>
-                  <p className="text-[10px] text-zinc-400 mb-3">Pick a decoration to send. Costs come from your journey points.</p>
+                  <p className="text-[10px] text-zinc-400 mb-3">Pick a decoration to send. Costs come from your JP.</p>
 
                   <div className="overflow-y-auto flex-1" style={{ scrollbarWidth: 'none' }}>
                     <div className="grid grid-cols-2 gap-2">

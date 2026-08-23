@@ -12,7 +12,7 @@
  */
 
 import { describe, test, expect, vi } from 'vitest';
-import { render, screen, fireEvent, within, waitFor } from '@testing-library/react';
+import { act, render, screen, fireEvent, within, waitFor } from '@testing-library/react';
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
@@ -211,10 +211,219 @@ describe('the question comes first and stays', () => {
     expect(screen.getByText('Oesophagus')).toBeInTheDocument();
   });
 
-  test('does not expose the retired Ways In entry point', () => {
+  test('offers Ways In inside the still-closed question flow', () => {
     renderSession([card()]);
-    expect(screen.queryByRole('button', { name: /Ways In/i })).not.toBeInTheDocument();
-    expect(screen.getByText('Name the parts labelled A and B.')).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Open Ways In/i })).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /Open Ways In/i }));
+    expect(screen.getByRole('heading', { name: /Work with the wording/i })).toBeInTheDocument();
+    expect(screen.getAllByText('Name the parts labelled A and B.').length).toBeGreaterThanOrEqual(1);
+    expect(screen.queryByText('Oesophagus')).not.toBeInTheDocument();
+  });
+
+  test('reads numbered question parts with their wording instead of as isolated numbers', () => {
+    renderSession([card({
+      stem: 'Give the collective name for:',
+      questionText: '1. The male reproductive parts of the flower. 2. The female reproductive parts of the flower.',
+    })]);
+    fireEvent.click(screen.getByRole('button', { name: /Open Ways In/i }));
+
+    expect(screen.getByText('1 of 3')).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /Next question line/i }));
+    expect(screen.getByText('1. The male reproductive parts of the flower.')).toBeInTheDocument();
+    expect(screen.queryByText(/^1\.$/)).not.toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole('button', { name: /Next question line/i }));
+    expect(screen.getByText('2. The female reproductive parts of the flower.')).toBeInTheDocument();
+    expect(screen.getByText('3 of 3')).toBeInTheDocument();
+    expect(screen.queryByText(/^2\.$/)).not.toBeInTheDocument();
+  });
+
+  test('builds the plan from printed labels rather than hidden scheme rows', () => {
+    const c = card({
+      rows: [
+        row({ id: 'r0', verbatim: 'Oesophagus', marks: 1 }),
+        row({ id: 'r1', verbatim: 'Stomach', marks: 1 }),
+        row({ id: 'r2', verbatim: 'Small intestine', marks: 1 }),
+        row({ id: 'r3', verbatim: 'Large intestine', marks: 1 }),
+      ],
+    });
+    renderSession([c]);
+    fireEvent.click(screen.getByRole('button', { name: /Open Ways In/i }));
+    fireEvent.click(screen.getByRole('button', { name: /^03Plan$/i }));
+    expect(screen.getAllByRole('textbox', { name: /Plan idea/i })).toHaveLength(2);
+    expect(screen.queryByText(/Small intestine|Large intestine/)).not.toBeInTheDocument();
+  });
+
+  test('keeps each exact printed sub-question beside its planning field', () => {
+    renderSession([card({
+      stem: 'Give the collective name for:',
+      questionText: '1. The male reproductive parts of the flower. 2. The female reproductive parts of the flower.',
+    })]);
+    fireEvent.click(screen.getByRole('button', { name: /Open Ways In/i }));
+    fireEvent.click(screen.getByRole('button', { name: /^03Plan$/i }));
+
+    expect(screen.getByText('1. The male reproductive parts of the flower.')).toBeInTheDocument();
+    expect(screen.getByText('2. The female reproductive parts of the flower.')).toBeInTheDocument();
+    expect(screen.getByRole('textbox', { name: /Plan idea 1: Part 1$/i })).toBeInTheDocument();
+    expect(screen.getByText(/visible parts: 1, 2\./i)).toBeInTheDocument();
+  });
+
+  test('can temporarily hide the full question while keeping the focused line available', () => {
+    renderSession([card()]);
+    fireEvent.click(screen.getByRole('button', { name: /Open Ways In/i }));
+    const questionPane = screen.getByTestId('mark-bank-question-pane');
+    expect(questionPane).not.toHaveAttribute('hidden');
+
+    fireEvent.click(screen.getByRole('button', { name: /Focus on this line/i }));
+    expect(questionPane).toHaveAttribute('hidden');
+    expect(screen.getByText('Line 1 of 1: Name the parts labelled A and B.')).toBeInTheDocument();
+
+    const showFullQuestion = screen.getByRole('button', { name: /Show the full question/i });
+    showFullQuestion.focus();
+    fireEvent.click(showFullQuestion);
+    expect(questionPane).not.toHaveAttribute('hidden');
+    expect(screen.getByRole('button', { name: /Focus on this line/i })).toHaveFocus();
+  });
+
+  test('keeps hook order stable if the current card disappears', () => {
+    const onGrade = vi.fn();
+    const onFinish = vi.fn();
+    const onExit = vi.fn();
+    const current = card();
+    const { rerender } = render(
+      <SessionScreen
+        cards={[current]} subjectLabel="Biology"
+        onGrade={onGrade} onFinish={onFinish} onExit={onExit}
+      />,
+    );
+
+    expect(() => rerender(
+      <SessionScreen
+        cards={[]} subjectLabel="Biology"
+        onGrade={onGrade} onFinish={onFinish} onExit={onExit}
+      />,
+    )).not.toThrow();
+  });
+
+  test('announces stage changes and omits empty task-map categories', () => {
+    renderSession([card({ questionText: 'State one feature.' })]);
+    fireEvent.click(screen.getByRole('button', { name: /Open Ways In/i }));
+    fireEvent.click(screen.getByRole('button', { name: /^02Understand$/i }));
+
+    expect(screen.getByRole('status')).toHaveTextContent(/Understand stage/i);
+    expect(screen.getByText('Instruction')).toBeInTheDocument();
+    expect(screen.queryByText('Information supplied')).not.toBeInTheDocument();
+    expect(screen.queryByText(/No separate lead-in/i)).not.toBeInTheDocument();
+  });
+
+  test('keeps a typed attempt beside the scheme without saving or grading it', () => {
+    const { onGrade } = renderSession([card()]);
+    fireEvent.click(screen.getByRole('button', { name: /Open Ways In/i }));
+    fireEvent.click(screen.getByRole('button', { name: /^03Plan$/i }));
+    fireEvent.change(screen.getByRole('textbox', { name: /Your attempt/i }), {
+      target: { value: 'A is the oesophagus and B is the stomach.' },
+    });
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+    expect(screen.getByRole('heading', { name: /Compare your attempt/i })).toBeInTheDocument();
+    expect(screen.getByText('A is the oesophagus and B is the stomach.')).toBeInTheDocument();
+    expect(onGrade).not.toHaveBeenCalled();
+  });
+
+  test('labels the full draft as optional', () => {
+    renderSession([card()]);
+    fireEvent.click(screen.getByRole('button', { name: /Open Ways In/i }));
+    fireEvent.click(screen.getByRole('button', { name: /^03Plan$/i }));
+    expect(screen.getByText(/Full draft/i)).toHaveTextContent(/optional/i);
+  });
+
+  test('keeps Ways In off by default and lets the student close and reopen it without losing work', async () => {
+    renderSession([card()]);
+    expect(screen.queryByRole('heading', { name: /Work with the wording/i })).not.toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole('button', { name: /Open Ways In/i }));
+    fireEvent.click(screen.getByRole('button', { name: /^03Plan$/i }));
+    fireEvent.change(screen.getByRole('textbox', { name: /Plan idea 1/i }), {
+      target: { value: 'First idea in my own words' },
+    });
+    fireEvent.click(screen.getByRole('button', { name: /Close Ways In/i }));
+
+    const reopen = screen.getByRole('button', { name: /Open Ways In/i });
+    await waitFor(() => expect(reopen).toHaveFocus());
+    fireEvent.click(reopen);
+    fireEvent.click(screen.getByRole('button', { name: /^03Plan$/i }));
+    expect(screen.getByRole('textbox', { name: /Plan idea 1/i })).toHaveValue('First idea in my own words');
+
+    fireEvent.keyDown(window, { key: 'Escape' });
+    expect(screen.queryByRole('heading', { name: /Work with the wording/i })).not.toBeInTheDocument();
+  });
+
+  test('closes Ways In before opening the leave dialog and restores modal focus safely', async () => {
+    renderSession([card()]);
+    fireEvent.click(screen.getByRole('button', { name: /Open Ways In/i }));
+    expect(screen.getByRole('heading', { name: /Work with the wording/i })).toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole('button', { name: /^Leave$/i }));
+    const dialog = screen.getByRole('dialog', { name: /Your completed cards are safe/i });
+    expect(screen.queryByRole('heading', { name: /Work with the wording/i })).not.toBeInTheDocument();
+    const keepReviewing = screen.getByRole('button', { name: /Keep reviewing/i });
+    const leaveSession = screen.getByRole('button', { name: /Leave session/i });
+    expect(keepReviewing).toHaveFocus();
+
+    fireEvent.keyDown(dialog, { key: 'Tab', shiftKey: true });
+    expect(leaveSession).toHaveFocus();
+    fireEvent.keyDown(dialog, { key: 'Tab' });
+    expect(keepReviewing).toHaveFocus();
+
+    fireEvent.keyDown(dialog, { key: 'Escape' });
+    await waitFor(() => expect(screen.getByRole('button', { name: /^Leave$/i })).toHaveFocus());
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
+  });
+
+  test('reads the exact paper instruction and question aloud at a student-selected pace', () => {
+    const speak = vi.fn();
+    const cancel = vi.fn();
+    const previousSpeech = Object.getOwnPropertyDescriptor(window, 'speechSynthesis');
+    class TestUtterance {
+      text: string;
+      lang = '';
+      rate = 1;
+      onboundary: ((event: SpeechSynthesisEvent) => void) | null = null;
+      onend: (() => void) | null = null;
+      onerror: (() => void) | null = null;
+      constructor(text: string) { this.text = text; }
+    }
+    vi.stubGlobal('SpeechSynthesisUtterance', TestUtterance);
+    Object.defineProperty(window, 'speechSynthesis', {
+      configurable: true,
+      value: { cancel, speak },
+    });
+
+    try {
+      renderSession([card({ stem: 'Read the graph carefully.' })]);
+      fireEvent.click(screen.getByRole('button', { name: /Open Ways In/i }));
+      fireEvent.click(screen.getByRole('button', { name: /Read this line/i }));
+      expect(speak).toHaveBeenCalledTimes(1);
+      expect(speak.mock.calls[0][0]).toMatchObject({
+        text: 'Read the graph carefully.',
+        lang: 'en-IE',
+        rate: 0.9,
+      });
+
+      fireEvent.click(screen.getByRole('button', { name: /Next question line/i }));
+      fireEvent.click(screen.getByRole('button', { name: /Read this line/i }));
+      expect(speak.mock.calls[1][0].text).toBe('Name the parts labelled A and B.');
+
+      // A cancelled utterance may report onend late. It must not cancel the
+      // newer utterance or reset its controls.
+      act(() => speak.mock.calls[0][0].onend?.());
+      expect(screen.getByRole('button', { name: /Stop reading/i })).toHaveAttribute('aria-pressed', 'true');
+      act(() => speak.mock.calls[1][0].onend?.());
+      expect(screen.getByRole('button', { name: /Read this line/i })).toHaveAttribute('aria-pressed', 'false');
+    } finally {
+      vi.unstubAllGlobals();
+      if (previousSpeech) Object.defineProperty(window, 'speechSynthesis', previousSpeech);
+      else delete (window as Window & { speechSynthesis?: SpeechSynthesis }).speechSynthesis;
+    }
   });
 
   test('keeps the question on screen after the reveal, because a flip would hide it', () => {
@@ -442,6 +651,27 @@ describe('a diagram card always decodes its figure', () => {
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     expect(screen.queryByText(/Also on the diagram/i)).toBeNull();
   });
+
+  test('keeps the printed figure available when line focus hides the full card', () => {
+    const diagram: SecDiagramCard = {
+      ...card(),
+      kind: 'diagram',
+      figure: {
+        candId: 'cand_focus', src: '/exam-figures/biology/focus.png', srcHash: 'hf',
+        alt: 'Printed cell diagram used by the question',
+        lettersVisible: ['A', 'B'], attribution: 'SEC Biology 2025 HL Q6',
+      },
+      labelKey: [],
+    };
+    renderSession([diagram]);
+    fireEvent.click(screen.getByRole('button', { name: /Open Ways In/i }));
+    fireEvent.click(screen.getByRole('button', { name: /Focus on this line/i }));
+
+    expect(screen.getByTestId('mark-bank-question-pane')).toHaveAttribute('hidden');
+    const focusedFigure = screen.getByRole('img', { name: /Printed cell diagram/i }).closest('figure');
+    expect(focusedFigure).not.toBeNull();
+    expect(within(focusedFigure!).getByText('SEC Biology 2025 HL Q6')).toBeVisible();
+  });
 });
 
 describe('grading', () => {
@@ -480,10 +710,35 @@ describe('grading', () => {
     expect(onGrade).toHaveBeenCalledWith(expect.objectContaining({ grade: 'missed', marksClaimed: 4, marksAvailable: 4 }));
   });
 
+  test('stays neutral until the student interacts with the marking points', () => {
+    renderSession([card()]);
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+
+    expect(screen.getByText(/No points selected yet/i)).toBeInTheDocument();
+    expect(screen.getByText(/Select the points you actually got/i)).toBeInTheDocument();
+    expect(screen.queryByText(/that looks like Missed it/i)).not.toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Missed it' })).not.toHaveAttribute('data-suggested');
+
+    fireEvent.click(screen.getByRole('button', { name: /Oesophagus/ }));
+    expect(screen.getByText(/You claimed 2 of 4 marks — that looks like Shaky/i)).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Shaky' })).toHaveAttribute('data-suggested');
+  });
+
   test('says the decision is the student\'s', () => {
     renderSession([card()]);
     fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
     expect(screen.getByText(/You decide\. Tap any of the three\./)).toBeInTheDocument();
+  });
+
+  test('recommends point selection without blocking a student who chooses Got it', () => {
+    const { onGrade } = renderSession([card()]);
+    fireEvent.click(screen.getByRole('button', { name: /Reveal the marking scheme/i }));
+
+    const gotIt = screen.getByRole('button', { name: 'Got it' });
+    expect(gotIt).toBeEnabled();
+    fireEvent.click(gotIt);
+
+    expect(onGrade).toHaveBeenCalledWith(expect.objectContaining({ grade: 'got', marksClaimed: 0 }));
   });
 
   test('marks the suggestion with shape, never with colour', () => {

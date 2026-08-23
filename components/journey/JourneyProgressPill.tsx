@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { MotionDiv } from '../Motion';
+import { MotionButton } from '../Motion';
 
 interface JourneyProgressPillProps {
   tileCount: number;
@@ -17,7 +17,9 @@ interface JourneyProgressPillProps {
 
 const JourneyProgressPill: React.FC<JourneyProgressPillProps> = ({ tileCount, decoCount, pointsBalance, stageName, stageProgress, onTap }) => {
   return (
-    <MotionDiv
+    <MotionButton
+      type="button"
+      aria-label="Open Journey shop and progress"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 20 }}
@@ -25,7 +27,7 @@ const JourneyProgressPill: React.FC<JourneyProgressPillProps> = ({ tileCount, de
       onClick={onTap}
       // Mobile: sit above the fixed bottom nav (h-16 = 64px) plus the home-indicator
       // safe-area inset. md+: use the smaller bottom-6 inset (no fixed nav there).
-      className="absolute md:bottom-6 left-0 right-0 z-[80] flex justify-center cursor-pointer"
+      className="absolute md:bottom-6 left-0 right-0 z-[80] flex justify-center cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80"
       style={{ bottom: 'calc(80px + var(--sab, 0px))' }}
     >
       <div className="flex items-center gap-3 px-5 py-3 rounded-full bg-[#FFFDF8]/95 dark:bg-[#201F1D]/95 backdrop-blur-lg border-2 border-[#343230] dark:border-[#D8D1C8] shadow-[0_4px_0_#343230] dark:shadow-[0_4px_0_#D8D1C8]">
@@ -38,14 +40,16 @@ const JourneyProgressPill: React.FC<JourneyProgressPillProps> = ({ tileCount, de
         </div>
         <div className="hidden sm:block w-px h-5 bg-[#D8D1C8] dark:bg-[#57524C]" />
         <span className="text-sm font-semibold text-zinc-800 dark:text-zinc-200">
-          {tileCount} tiles · {decoCount} items
+          {tileCount === 0 && decoCount === 0
+            ? 'Starter scene · no additions yet'
+            : `${tileCount} added tile${tileCount === 1 ? '' : 's'} · ${decoCount} placed item${decoCount === 1 ? '' : 's'}`}
         </span>
         <div className="w-px h-4 bg-zinc-200 dark:bg-zinc-700" />
         <span className="text-sm font-bold text-[var(--accent-hex)]">
           {pointsBalance} JP
         </span>
       </div>
-    </MotionDiv>
+    </MotionButton>
   );
 };
 

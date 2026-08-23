@@ -10,6 +10,7 @@ import { Bell, MessageSquare, Flame, TrendingUp, BookOpen, AlertTriangle, Megaph
 import { getNotifications, markNotificationRead, markAllRead, STAFF_ORIGINATED, type AppNotification, type NotificationType } from './gc/gcNotifications';
 import { staffMessageText } from '../data/staffEncouragement';
 import { NOTIFICATION_PANEL_TOGGLE_EVENT } from '../utils/notificationPanel';
+import { DEMO_STUDENT_UID } from '../data/devStudent';
 
 const ICON_MAP: Record<NotificationType, LucideIcon> = {
   'gc-recommendation': BookOpen,
@@ -46,23 +47,30 @@ interface NotificationBellProps {
 }
 
 const NotificationBell: React.FC<NotificationBellProps> = ({ uid, onUnreadCountChange }) => {
+  const isDemo = uid === DEMO_STUDENT_UID;
   const [isOpen, setIsOpen] = useState(false);
   const [notifications, setNotifications] = useState<AppNotification[]>([]);
   const panelRef = useRef<HTMLDivElement>(null);
 
   const loadNotifications = useCallback(async () => {
+    if (isDemo) {
+      setNotifications([]);
+      onUnreadCountChange?.(0);
+      return;
+    }
     const items = await getNotifications(uid);
     setNotifications(items);
     const unread = items.filter(n => !n.read).length;
     onUnreadCountChange?.(unread);
-  }, [uid, onUnreadCountChange]);
+  }, [uid, isDemo, onUnreadCountChange]);
 
   // Initial load + polling every 60s
   useEffect(() => {
     loadNotifications();
+    if (isDemo) return;
     const interval = setInterval(loadNotifications, 60000);
     return () => clearInterval(interval);
-  }, [loadNotifications]);
+  }, [isDemo, loadNotifications]);
 
   // Sidebar and header controls share this one state transition. Keeping the
   // panel state here avoids delayed synthetic clicks that can close and then
@@ -99,13 +107,13 @@ const NotificationBell: React.FC<NotificationBellProps> = ({ uid, onUnreadCountC
   const handleMarkRead = (id: string) => {
     setNotifications(prev => prev.map(n => n.id === id ? { ...n, read: true } : n));
     onUnreadCountChange?.(Math.max(0, unreadCount - 1));
-    void markNotificationRead(uid, id);
+    if (!isDemo) void markNotificationRead(uid, id);
   };
 
   const handleMarkAllRead = () => {
     setNotifications(prev => prev.map(n => ({ ...n, read: true })));
     onUnreadCountChange?.(0);
-    void markAllRead(uid);
+    if (!isDemo) void markAllRead(uid);
   };
 
   return (

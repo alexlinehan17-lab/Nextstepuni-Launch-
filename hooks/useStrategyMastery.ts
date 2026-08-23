@@ -10,6 +10,7 @@ import { useProgress } from '../contexts/ProgressContext';
 import { type UserProgress, type StrategyMasteryMap, type MasteryTier } from '../types';
 import { type CourseData } from '../components/Library';
 import { STRATEGY_REGISTRY, type StudySessionRecord } from '../utils/strategyRegistry';
+import { DEMO_STUDENT_UID } from '../data/devStudent';
 
 export function useStrategyMastery(
   uid: string | undefined,
@@ -17,6 +18,7 @@ export function useStrategyMastery(
   allCourses: CourseData[],
 ): { masteryMap: StrategyMasteryMap; isLoaded: boolean; recompute: () => Promise<void> } {
   const { studySessions, progressLoaded } = useProgress();
+  const isDemo = uid === DEMO_STUDENT_UID;
   const [masteryMap, setMasteryMap] = useState<StrategyMasteryMap>({});
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -86,23 +88,32 @@ export function useStrategyMastery(
     setMasteryMap(map);
     setIsLoaded(true);
 
-    if (uid) {
+    // Demo mastery is derived from its in-memory sessions every time this hook
+    // loads. Writing that same derived map back into ProgressContext changed
+    // rawProgressDoc, rebuilt userProgress, and triggered this effect again in
+    // an endless render loop. Real accounts retain the compatibility mirror;
+    // Demo needs no persisted copy.
+    if (uid && !isDemo) {
       setDoc(doc(db, 'progress', uid), { strategyMastery: map }, { merge: true }).catch(err => {
         console.error('Failed to persist strategy mastery:', err);
       });
     }
-  }, [uid, userProgress, allCourses]);
+  }, [uid, userProgress, allCourses, isDemo]);
 
   // Initial load from context (no Firestore read)
   useEffect(() => {
     if (!uid) { setMasteryMap({}); setIsLoaded(true); return; }
     if (!progressLoaded) return;
     computeAndPersist(studySessions);
-  }, [uid, progressLoaded]);
+  }, [uid, progressLoaded, studySessions, computeAndPersist]);
 
   // Explicit recompute: re-reads from Firestore for fresh data
   const recompute = useCallback(async () => {
     if (!uid) return;
+    if (isDemo) {
+      await computeAndPersist(studySessions);
+      return;
+    }
     try {
       // Sessions live in the /progress/{uid}/sessions subcollection (migrated
       // from the dead rawProgressDoc.studySessions array). Reading the legacy
@@ -115,7 +126,7 @@ export function useStrategyMastery(
       console.error('Failed to recompute strategy mastery:', err);
       setIsLoaded(true);
     }
-  }, [uid, computeAndPersist]);
+  }, [uid, computeAndPersist, isDemo, studySessions]);
 
   return { masteryMap, isLoaded, recompute };
 }

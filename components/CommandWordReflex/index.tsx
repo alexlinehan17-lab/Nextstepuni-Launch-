@@ -137,19 +137,15 @@ const CommandWordReflex: React.FC<{ uid?: string; studentSubjects?: string[]; st
     const mineIds = sortedSubjects.filter(s => studentSet.has(baseName(s.subjectLabel))).map(s => s.subjectId);
     return (
       <div className="w-full max-w-xl mx-auto pb-12">
-        <p className="text-[15px] leading-relaxed mb-5" style={{ color: '#5a5550', fontFamily: "'DM Sans', sans-serif" }}>
-          Half of exam technique is reading the question right. Pick a subject, find the command word in real questions,
-          and learn exactly what each one is telling you to do — and the trap that loses marks.
-        </p>
-
         {/* Higher / Ordinary level filter */}
         <div className="flex items-center gap-2.5 mb-5">
           <span className="text-[11px] font-bold uppercase tracking-[0.12em]" style={{ color: '#9e9186' }}>Your level</span>
-          <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50">
+          <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/50" role="group" aria-label="Question level">
             {(['higher', 'ordinary'] as const).map(lv => (
               <button
                 key={lv}
                 onClick={() => setLevelFilter(lv)}
+                aria-pressed={levelFilter === lv}
                 className={`px-4 py-1.5 rounded-lg text-[13px] transition-all ${levelFilter === lv ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white font-semibold shadow-sm' : 'text-zinc-500 dark:text-zinc-400'}`}
               >
                 {lv === 'higher' ? 'Higher' : 'Ordinary'}

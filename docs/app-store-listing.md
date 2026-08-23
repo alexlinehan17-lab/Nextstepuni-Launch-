@@ -77,12 +77,12 @@ Declare **Data Collected → Linked to the user → used for App Functionality**
 Suggested text:
 > NextStepUni is an educational study app delivered through participating Irish secondary schools for Leaving Certificate students. Accounts are normally provisioned via the school with parental consent obtained at enrolment. For review, a demo account is provided below. Peer interaction is limited to students within the same school and is supervised by a school guidance counsellor: students can send classmates preset "kudos" messages (chosen from a fixed list — there is no free-text peer posting) and see a limited public profile (first name, avatar, chosen goal category, decorations). A student's written reflections and answers are private to them and their counsellor.
 >
-> Demo login: **appreview@nextstepuni.app** / **NextStep-Demo-2026**
+> Demo login: **appreview@nextstepuni.app** / **[retrieve from the release password manager]**
 > (Seeded demo student "Aoife Brennan" — 6th year, 5 subjects, 5 completed modules, populated progress. This is a demo-only account.)
 
 ## Pre-submission asset checklist
 - [ ] App icon 1024×1024 (already in the build) — upload in App Store Connect
 - [x] iPhone 6.7" screenshots (1290×2796) captured — `~/Downloads/_cap/ns-shots2/`: `home`, `progress`, `modules-mind`, `launchpad`, `module-interior` (Training Hub). Fully populated via the seeded demo account.
 - [x] **Privacy Policy URL live** — https://nextstepuni-app.web.app/privacy.html (deployed)
-- [x] **Reviewer demo account created + seeded** — appreview@nextstepuni.app / NextStep-Demo-2026
+- [x] **Reviewer demo account created + seeded** — username recorded here; current password is stored only in the release password manager and App Store Connect
 - [x] Export-compliance handled in Info.plist (`ITSAppUsesNonExemptEncryption=false`) — no per-upload question.

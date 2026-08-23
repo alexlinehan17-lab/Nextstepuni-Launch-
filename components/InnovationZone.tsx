@@ -63,6 +63,9 @@ import LaunchpadGuidance from './LaunchpadGuidance';
 import { trackFunnel } from '../utils/funnel';
 import { staffMessageText } from '../data/staffEncouragement';
 import { TOOL_GUIDANCE, type ToolRecommendation } from './launchpadGuidanceData';
+import { useOptionalProgress } from '../contexts/ProgressContext';
+import { DEMO_STUDENT_UID } from '../data/devStudent';
+import { type ProgressDocument } from '../services/progressRepository';
 
 // ── Editorial chrome registry ──────────────────────────────────────────
 //
@@ -95,7 +98,9 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   'cao-simulator':   { themeColor: '#B8A079', eyebrow: 'Track · Points planning',      subtitle: 'Your points, mock history, grade plans and course reach in one place.',             showHeader: true  },
   'planner':         { themeColor: '#7DA37A', eyebrow: 'Plan · Planner',              subtitle: 'A data-driven study planner powered by your subject goals.',                       showHeader: true  },
   'war-room':        { themeColor: '#F26B1F', eyebrow: 'Plan · Strategy',             subtitle: 'Know what needs attention, understand why, and decide what to do next.', showHeader: true },
-  'comeback':        { themeColor: '#E08938', eyebrow: 'Plan · Comeback',             subtitle: 'Find your quickest wins and build a comeback plan.',                                showHeader: true  },
+  // Comeback Engine owns its editorial page heading; the shared ToolHeader
+  // repeated both the product name and the only h1 on the page.
+  'comeback':        { themeColor: '#E08938', eyebrow: 'Plan · Comeback',             subtitle: 'Find your quickest wins and build a comeback plan.',                                showHeader: false },
   'future-finder':   { themeColor: '#C76489', eyebrow: 'Understand · Career discovery', subtitle: 'Discover the courses, careers, and possible lives that fit who you are.',         showHeader: true  },
   'future-finder-revamped': { themeColor: '#C76489', eyebrow: 'Understand · Interests (RIASEC)', subtitle: 'Discover the courses, careers and lives that fit who you are — your interests matched to CAO courses, points kept honest.', showHeader: true },
   // Compatibility alias: old Syllabus X-Ray links now open War Room directly
@@ -117,7 +122,9 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   'coursework-companion': { themeColor: '#F26B1F', eyebrow: 'Understand · Coursework & projects', subtitle: 'The coursework, project and practical components — marked exactly as the filed SEC scheme prints it.', showHeader: true },
   'command-word-reflex': { themeColor: '#6366F1', eyebrow: 'Technique · Exam skills', subtitle: 'Half of exam technique is reading the question right. Spot the command word in real questions and learn what it’s really asking — and the trap that loses marks.', showHeader: true },
   'how-they-did-it':  { themeColor: '#0E7C6B', eyebrow: 'Mindset · Real stories', subtitle: 'Real people who started where you are — money tight, learning differently, new to the country, first in the family — and the actual moves they made.', showHeader: true },
-  'your-possible-life': { themeColor: '#2E6E8E', eyebrow: 'Understand · Career discovery', subtitle: 'Explore real careers, step inside an ordinary day, and keep routes that feel worth testing.', showHeader: true },
+  // The experience has its own stage header and editorial title on every step.
+  // A second full ToolHeader duplicated both identity and heading hierarchy.
+  'your-possible-life': { themeColor: '#2E6E8E', eyebrow: 'Understand · Career discovery', subtitle: 'Explore real careers, step inside an ordinary day, and keep routes that feel worth testing.', showHeader: false },
   'oral-trainer':    { themeColor: '#4C8C5E', eyebrow: 'Technique · Speaking exam', subtitle: 'The one exam no app prepares you for — the oral. Rehearse it out loud, record yourself, and know exactly where you stand on every part.', showHeader: true },
   'examiners-chair': { themeColor: '#9E4A3E', eyebrow: 'Technique · Marking literacy', subtitle: 'Sit on the other side of the desk. Mark real-style scripts against the real SEC rules, and learn to see your own answers the way the examiner will.', showHeader: true },
 };
@@ -166,11 +173,17 @@ function validatePointsData(raw: unknown): PointsData {
 
 /** Suspense fallback shown while a tool's code-split chunk loads. */
 const ToolLoadingFallback: React.FC = () => <LoadingSpinner />;
+const EMPTY_PROGRESS_DOC: ProgressDocument = {};
+const NOOP_DEMO_UPDATE: (updater: (current: ProgressDocument) => ProgressDocument) => void = () => {};
 
 // ─── InnovationZone ──────────────────────────────────────────────────────────
 
 const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSubjectProfile, savedJourneyResult, onJourneyComplete, settings: _settings, updateSetting: _updateSetting, onCosmeticUnlocksChange, onStudyNow, dismissedGuides: _dismissedGuides, onDismissGuide: _onDismissGuide }) => {
     const { showToast } = useToast();
+    const progress = useOptionalProgress();
+    const rawProgressDoc = progress?.rawProgressDoc ?? EMPTY_PROGRESS_DOC;
+    const updateDemoProgress = progress?.updateDemoProgress ?? NOOP_DEMO_UPDATE;
+    const isDemo = user?.uid === DEMO_STUDENT_UID;
     const nav = useNavigation();
     const activeTool = nav.state.activeTool;
     const setActiveTool = nav.setActiveTool;
@@ -251,6 +264,21 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
             setProfileLoaded(true);
             return;
         }
+        if (isDemo) {
+            const data = rawProgressDoc;
+            if (data.subjectProfile) setSubjectProfile({ restDays: [], ...data.subjectProfile });
+            setTimetableCompletions(data.timetableCompletions ?? {});
+            if (data.timetableStreak) setTimetableStreak(data.timetableStreak);
+            setReflections(data.reflections ?? []);
+            setPointsData(validatePointsData(data.pointsData));
+            setCosmeticUnlocks({
+                avatarSeeds: [], themeColors: [], cardStyles: [],
+                ...(data.cosmeticUnlocks ?? {}),
+            });
+            setEarnedRest({ skippedSessions: [], restDayPasses: [], ...(data.earnedRest ?? {}) } as EarnedRest);
+            setProfileLoaded(true);
+            return;
+        }
         let cancelled = false;
         const loadProfile = async () => {
             try {
@@ -290,11 +318,11 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
         };
         loadProfile();
         return () => { cancelled = true; };
-    }, [user?.uid]);
+    }, [user?.uid, isDemo, rawProgressDoc]);
 
     // Load GC recommendations from notifications
     useEffect(() => {
-        if (!user?.uid) return;
+        if (!user?.uid || isDemo) return;
         let cancelled = false;
         const loadRecommendations = async () => {
             try {
@@ -313,7 +341,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
         };
         loadRecommendations();
         return () => { cancelled = true; };
-    }, [user?.uid]);
+    }, [user?.uid, isDemo]);
 
     const handleOnboardingComplete = useCallback(async (profile: StudentSubjectProfile) => {
         setShowOnboarding(false);
@@ -335,14 +363,16 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
         const previousProfile = subjectProfile;
         setSubjectProfile(profile);
         if (user?.uid) {
-            setDoc(doc(db, 'progress', user.uid), { subjectProfile: profile }, { merge: true })
+            if (isDemo) {
+                updateDemoProgress(current => ({ ...current, subjectProfile: profile }));
+            } else setDoc(doc(db, 'progress', user.uid), { subjectProfile: profile }, { merge: true })
                 .catch(err => {
                     console.error('Failed to save subject profile:', err);
                     showToast('Couldn\'t save your subjects — please try again', 'error');
                     setSubjectProfile(previousProfile);
                 });
         }
-    }, [user?.uid, pendingToolId, setActiveTool, subjectProfile]);
+    }, [user?.uid, pendingToolId, setActiveTool, subjectProfile, isDemo, updateDemoProgress]);
 
     const _getStreakMultiplier = useCallback((streak: number): number => {
         if (streak >= 14) return 2.5;
@@ -351,7 +381,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
         return 1.0;
     }, []);
 
-    const executeToggle = useCallback((dateKey: string, blockId: string, completed: boolean, extraFirestoreData?: Record<string, any>) => {
+    const executeToggle = useCallback((dateKey: string, blockId: string, completed: boolean, extraFirestoreData?: Record<string, any>, demoPointsEarned = 0) => {
         setTimetableCompletions(prev => {
             const updated = { ...prev };
             const dayArr = [...(updated[dateKey] ?? [])];
@@ -375,6 +405,17 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
             setTimetableStreak(newStreak);
 
             if (user?.uid) {
+                if (isDemo) {
+                    updateDemoProgress(current => ({
+                        ...current,
+                        timetableCompletions: updated,
+                        timetableStreak: newStreak,
+                        pointsData: demoPointsEarned > 0
+                            ? { ...current.pointsData, totalEarned: (current.pointsData?.totalEarned ?? 0) + demoPointsEarned }
+                            : current.pointsData,
+                    }));
+                    return updated;
+                }
                 // `delete updated[dateKey]` only removes the day locally — a
                 // merge:true setDoc builds its field mask from the keys that ARE
                 // present, so an omitted key is left untouched on the server.
@@ -395,7 +436,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
 
             return updated;
         });
-    }, [subjectProfile?.restDays, timetableStreak.longestStreak, user?.uid, earnedRest.restDayPasses]);
+    }, [subjectProfile?.restDays, timetableStreak.longestStreak, user?.uid, earnedRest.restDayPasses, isDemo, updateDemoProgress]);
 
     const handleToggleCompletion = useCallback(async (dateKey: string, blockId: string, completed: boolean) => {
         if (completed) {
@@ -427,7 +468,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
             // pointsData.totalSpent written elsewhere is preserved.
             executeToggle(dateKey, blockId, true, {
                 pointsData: { totalEarned: increment(ALREADY_STUDIED_POINTS) },
-            });
+            }, ALREADY_STUDIED_POINTS);
         } else {
             executeToggle(dateKey, blockId, false);
         }
@@ -443,9 +484,24 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
         // The end of the first-run funnel: the student is out of setup and
         // actually using the product. Deduped per session, so this records
         // "reached a tool", not tool popularity.
-        trackFunnel('first_tool_opened');
+        if (!isDemo) trackFunnel('first_tool_opened');
         setActiveTool(toolId);
-    }, [subjectProfile, profileLoaded, setActiveTool]);
+    }, [subjectProfile, profileLoaded, setActiveTool, isDemo]);
+
+    const persistProfileUpdate = useCallback((updated: StudentSubjectProfile) => {
+        const previous = subjectProfile;
+        setSubjectProfile(updated);
+        if (!user?.uid) return;
+        if (isDemo) {
+            updateDemoProgress(current => ({ ...current, subjectProfile: updated }));
+            return;
+        }
+        saveInBackground(
+            setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }),
+            'InnovationZone.saveSubjectProfile',
+            () => setSubjectProfile(previous),
+        );
+    }, [subjectProfile, user?.uid, isDemo, updateDemoProgress]);
 
     // Curriculum level — used by the tools array below for curriculum-aware
     // titles (e.g. Future Finder → "Subject Explorer" for JC users) and by
@@ -478,7 +534,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
             iconBg: 'bg-indigo-100 dark:bg-indigo-900/30', iconColor: 'text-indigo-600 dark:text-indigo-400',
             accentBarColor: 'bg-indigo-500', tagBg: 'bg-indigo-100 dark:bg-indigo-900/30', tagText: 'text-indigo-700 dark:text-indigo-400',
             hoverBorder: 'hover:border-indigo-400/50 dark:hover:border-indigo-500/40',
-            component: subjectProfile ? <SpacedRepetitionTimetable profile={subjectProfile} uid={user?.uid} onOpenSettings={() => setShowOnboarding(true)} completions={timetableCompletions} streak={timetableStreak} onToggleCompletion={handleToggleCompletion} onOpenJournal={() => setShowJournal(true)} skippedSessions={earnedRest.skippedSessions} onStudyNow={onStudyNow} schoolEvents={schoolEvents} onBlockDurationChange={(_s, _t, newDuration) => { const previous = subjectProfile; const updated = { ...subjectProfile, defaultBlockDuration: newDuration }; setSubjectProfile(updated); if (user?.uid) { saveInBackground(setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }), 'InnovationZone.saveBlockDuration', () => setSubjectProfile(previous)); } }} onRestDaysChange={(days) => { const previous = subjectProfile; const updated = { ...subjectProfile, restDays: days }; setSubjectProfile(updated); if (user?.uid) { saveInBackground(setDoc(doc(db, 'progress', user.uid), { subjectProfile: updated }, { merge: true }), 'InnovationZone.saveRestDays', () => setSubjectProfile(previous)); } }} /> : null,
+            component: subjectProfile ? <SpacedRepetitionTimetable profile={subjectProfile} uid={user?.uid} onOpenSettings={() => setShowOnboarding(true)} completions={timetableCompletions} streak={timetableStreak} onToggleCompletion={handleToggleCompletion} onOpenJournal={() => setShowJournal(true)} skippedSessions={earnedRest.skippedSessions} onStudyNow={onStudyNow} schoolEvents={schoolEvents} onBlockDurationChange={(_s, _t, newDuration) => persistProfileUpdate({ ...subjectProfile, defaultBlockDuration: newDuration })} onRestDaysChange={(days) => persistProfileUpdate({ ...subjectProfile, restDays: days })} /> : null,
         },
         {
             id: 'war-room', title: 'War Room', description: 'Your strategic study command centre.', icon: Target, needsProfile: true,
@@ -561,7 +617,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
             iconBg: 'bg-teal-100 dark:bg-teal-900/30', iconColor: 'text-teal-700 dark:text-teal-300',
             accentBarColor: 'bg-teal-600', tagBg: 'bg-teal-100 dark:bg-teal-900/30', tagText: 'text-teal-700 dark:text-teal-400',
             hoverBorder: 'hover:border-teal-400/50 dark:hover:border-teal-500/40',
-            component: <CollegeCompass uid={user?.uid} yearGroup={user?.yearGroup} />,
+            component: <CollegeCompass uid={user?.uid} yearGroup={user?.yearGroup} examStartDate={subjectProfile?.examStartDate} />,
         },
         {
             id: 'catch-up-lane', title: 'Catch-Up Lane', description: 'Missed class? Get caught up, one quick topic at a time.', icon: Waypoints, needsProfile: false,
@@ -785,13 +841,17 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
       >
         <div className="container mx-auto flex min-w-0 items-center justify-between gap-3">
           <div className="flex min-w-0 items-center gap-3 md:gap-8">
-            <MotionButton whileHover={{ y: -1 }} whileTap={{ x: 1, y: 1 }} onClick={activeTool ? () => nav.goBack() : onBack} className="p-2.5 rounded-xl bg-[var(--surface-paper)] border-[1.5px] border-[var(--outline-strong)] shadow-[2px_2px_0_0_var(--outline-strong)] active:shadow-none transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]">
+            <MotionButton type="button" aria-label={activeTool ? 'Back to Launchpad' : 'Back to home'} whileHover={{ y: -1 }} whileTap={{ x: 1, y: 1 }} onClick={activeTool ? () => nav.goBack() : onBack} className="p-2.5 rounded-xl bg-[var(--surface-paper)] border-[1.5px] border-[var(--outline-strong)] shadow-[2px_2px_0_0_var(--outline-strong)] active:shadow-none transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]">
               <ArrowLeft size={18} className="text-zinc-900 dark:text-white" />
             </MotionButton>
             <div className="hidden md:block h-10 w-px bg-[var(--outline-soft)]" />
             <div className="min-w-0">
               <p className="font-mono text-[9px] font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-[0.25em] mb-1">Explore</p>
-              <h1 className="font-serif font-semibold text-lg md:text-2xl tracking-tight text-zinc-900 dark:text-white truncate">The Launchpad</h1>
+              {activeTool ? (
+                <p className="font-serif font-semibold text-lg md:text-2xl tracking-tight text-zinc-900 dark:text-white truncate">The Launchpad</p>
+              ) : (
+                <h1 className="font-serif font-semibold text-lg md:text-2xl tracking-tight text-zinc-900 dark:text-white truncate">The Launchpad</h1>
+              )}
             </div>
           </div>
           {/* Global rank, notifications and profile controls own the top-right.
@@ -899,13 +959,16 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                             const gcRecommended = gcRecommendations[tool.id];
 
                             return (
-                                <MotionDiv
+                                <MotionButton
                                     key={tool.id}
+                                    type="button"
+                                    disabled={disabled}
+                                    aria-label={`${disabled ? 'Locked: ' : 'Open '}${tool.title}`}
                                     initial={{ opacity: 0, y: 16 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.3, delay: i * 0.04 }}
                                     onClick={disabled ? undefined : () => handleToolClick(tool.id, tool.needsProfile)}
-                                    className={`flex flex-col rounded-2xl border-[1.5px] overflow-hidden transition-all ${
+                                    className={`flex flex-col text-left rounded-2xl border-[1.5px] overflow-hidden transition-all ${
                                         disabled
                                             ? 'border-[var(--outline-soft)] cursor-not-allowed'
                                             : 'border-[var(--outline-strong)] hover:-translate-y-0.5 hover:shadow-[3px_3px_0_0_var(--outline-strong)] cursor-pointer'
@@ -979,7 +1042,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                                             </span>
                                         </div>
                                     )}
-                                </MotionDiv>
+                                </MotionButton>
                             );
                         })}
                     </div>

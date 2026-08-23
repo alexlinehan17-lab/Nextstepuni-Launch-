@@ -15,7 +15,7 @@ import { createPortal } from 'react-dom';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { useModal } from '../hooks/useModal';
-import { BookOpen, Timer, Trophy, Gem, MapPin, X, ArrowRight, Sparkles, type LucideIcon } from 'lucide-react';
+import { BookOpen, Timer, Trophy, Gem, MapPin, X, ArrowRight, type LucideIcon } from 'lucide-react';
 import { COLORS } from '../design/tokens';
 import { POINTS } from '../journeyPointsConfig';
 import { STUDY_SESSION_POINTS } from '../studySessionData';
@@ -38,10 +38,10 @@ interface EarnItem {
 }
 
 const EARN_ITEMS: EarnItem[] = [
-  { icon: Timer, label: 'Study session', value: String(STUDY_SESSION_POINTS.PER_10_MINUTES), unit: 'pts / 10 min', highlight: true },
-  { icon: BookOpen, label: 'Module section', value: String(POINTS.SECTION_COMPLETE), unit: 'pts each' },
+  { icon: Timer, label: 'Study session', value: String(STUDY_SESSION_POINTS.PER_10_MINUTES), unit: 'JP / 10 min', highlight: true },
+  { icon: BookOpen, label: 'Module section', value: String(POINTS.SECTION_COMPLETE), unit: 'JP each' },
   { icon: Trophy, label: 'Complete a module', value: `+${POINTS.MODULE_COMPLETE_BONUS}`, unit: 'bonus' },
-  { icon: Gem, label: 'Quests & challenges', value: '20–150', unit: 'pts' },
+  { icon: Gem, label: 'Quests & challenges', value: '20–150', unit: 'JP' },
 ];
 
 interface SpendItem {
@@ -94,16 +94,16 @@ const PointsExplainer: React.FC<PointsExplainerProps> = ({ isOpen, onDismiss }) 
           >
             {/* Header — fixed, painted-blob illustration on the left */}
             <div className="flex items-start gap-4 p-6 pb-5 shrink-0">
-              <BlobIcon Icon={Sparkles} size={56} iconSize={26} />
+              <BlobIcon Icon={Timer} size={56} iconSize={26} />
               <div className="flex-1 min-w-0">
                 <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '10px', fontWeight: 700, letterSpacing: '0.18em', color: 'var(--text-label)', textTransform: 'uppercase', margin: 0 }}>
-                  Your Points
+                  Journey Points
                 </p>
                 <h2 style={{ fontFamily: "'Source Serif 4', serif", fontSize: '24px', fontWeight: 600, color: 'var(--text-primary)', lineHeight: 1.1, margin: '6px 0 4px 0' }}>
                   Study more, earn more
                 </h2>
                 <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '13px', color: 'var(--text-muted)', margin: 0, lineHeight: 1.4 }}>
-                  Every session builds your island.
+                  Earn JP as you study. During a session, short strategy prompts help you apply techniques you have already learned.
                 </p>
               </div>
               <button

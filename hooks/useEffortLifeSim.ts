@@ -14,6 +14,8 @@ import { useFreshProgress } from './useFreshProgress';
 import { type LifeRegion } from '../components/effortLifeModel';
 import { type LifePriority } from '../components/possibleLifeModel';
 import { reportSaveError } from '../utils/logError';
+import { useProgress } from '../contexts/ProgressContext';
+import { DEMO_STUDENT_UID } from '../data/devStudent';
 
 export interface EffortLifeSimState {
   /** The career id the student is exploring (from CAREERS). */
@@ -37,6 +39,8 @@ export interface EffortLifeSimState {
 }
 
 export function useEffortLifeSim(uid?: string) {
+  const { updateDemoProgress } = useProgress();
+  const isDemo = uid === DEMO_STUDENT_UID;
   const { doc: rawProgressDoc, loaded: progressLoaded } = useFreshProgress(uid);
   const [saved, setSaved] = useState<EffortLifeSimState | null>(null);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -54,15 +58,21 @@ export function useEffortLifeSim(uid?: string) {
   const save = useCallback((patch: Partial<EffortLifeSimState>) => {
     setSaved((prev) => {
       const next: EffortLifeSimState = { ...(prev ?? {}), ...patch, updatedAt: new Date().toISOString() };
-      if (uid) setDoc(doc(db, 'progress', uid), { effortLifeSim: next }, { merge: true }).catch((e) => reportSaveError('useEffortLifeSim.save', e));
+      if (uid) {
+        if (isDemo) updateDemoProgress(current => ({ ...current, effortLifeSim: next }));
+        else setDoc(doc(db, 'progress', uid), { effortLifeSim: next }, { merge: true }).catch((e) => reportSaveError('useEffortLifeSim.save', e));
+      }
       return next;
     });
-  }, [uid]);
+  }, [uid, isDemo, updateDemoProgress]);
 
   const reset = useCallback(() => {
     setSaved(null);
-    if (uid) setDoc(doc(db, 'progress', uid), { effortLifeSim: null }, { merge: true }).catch((e) => reportSaveError('useEffortLifeSim.save', e));
-  }, [uid]);
+    if (uid) {
+      if (isDemo) updateDemoProgress(current => ({ ...current, effortLifeSim: null }));
+      else setDoc(doc(db, 'progress', uid), { effortLifeSim: null }, { merge: true }).catch((e) => reportSaveError('useEffortLifeSim.save', e));
+    }
+  }, [uid, isDemo, updateDemoProgress]);
 
   return { saved, isLoaded, save, reset };
 }

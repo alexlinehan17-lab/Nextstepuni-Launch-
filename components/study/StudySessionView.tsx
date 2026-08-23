@@ -3,10 +3,10 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
-import { ArrowLeft, BookOpen, Target, RotateCcw, Play, Pause, Clock, Sparkles, X, ChevronRight, Brain, Repeat, Shuffle, HelpCircle, Compass, Sprout, Shield, Radar, ClipboardCheck, Trophy, CalendarCheck, type LucideIcon } from 'lucide-react';
+import { ArrowLeft, BookOpen, Target, RotateCcw, Play, Pause, Clock, X, ChevronRight, Brain, Repeat, Shuffle, HelpCircle, Compass, Sprout, Shield, Radar, ClipboardCheck, Trophy, CalendarCheck, type LucideIcon } from 'lucide-react';
 import PrimaryActionButton from '../ui/PrimaryActionButton';
 import ChoiceControl from '../ui/ChoiceControl';
 import { ResultStatGrid, StatusNotice } from '../ui/ProductPatterns';
@@ -20,7 +20,7 @@ import { type UserProgress, type StrategyMasteryMap, type MasteryTier, type Stud
 import { type CourseData } from '../Library';
 import { STRATEGY_REGISTRY, PROMPT_AUTO_DISMISS_SECONDS } from '../../studySessionData';
 import { type StreakData } from '../../hooks/useStreak';
-import { useStudySession } from '../../hooks/useStudySession';
+import { MIN_STUDY_SESSION_MINUTES, useStudySession } from '../../hooks/useStudySession';
 import { getSubjectColor, getSubjectHex, DURATION_PRESETS } from '../../studySessionData';
 import StrategyPickerStep from './StrategyPickerStep';
 import ReflectionModal from '../ReflectionModal';
@@ -33,6 +33,9 @@ import { getBlockId, toDateKey } from '../subjectData';
 import { processDebriefSideEffects } from '../../hooks/useDebriefSideEffects';
 import { getSyllabusTopics } from '../syllabusTopics';
 import { logError } from '../../utils/logError';
+import { useProgress } from '../../contexts/ProgressContext';
+import { DEMO_STUDENT_UID } from '../../data/devStudent';
+import { useModal } from '../../hooks/useModal';
 
 const TIER_COLORS: Record<MasteryTier, { text: string; bar: string }> = {
   none: { text: 'text-zinc-400 dark:text-zinc-500', bar: 'bg-zinc-200 dark:bg-zinc-700' },
@@ -121,7 +124,7 @@ interface StudySessionViewProps {
   onBack: () => void;
   onStrategyMasteryRecompute?: () => Promise<void>;
   strategyMastery?: StrategyMasteryMap;
-  onGoToTrainingHub?: () => void;
+  onGoToProgress?: () => void;
   dismissedGuides?: Record<string, string>;
   onDismissGuide?: (id: string) => void;
   weeklyChallenge?: WeeklyChallengeState;
@@ -141,7 +144,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   onBack,
   onStrategyMasteryRecompute,
   strategyMastery,
-  onGoToTrainingHub,
+  onGoToProgress,
   dismissedGuides,
   onDismissGuide,
   weeklyChallenge,
@@ -151,6 +154,8 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   onStudyBlock,
 }) => {
   const session = useStudySession(user.uid, userProgress, allCourses);
+  const { rawProgressDoc, updateDemoProgress } = useProgress();
+  const isDemo = user.uid === DEMO_STUDENT_UID;
 
   // Setup selections — pre-fill from timetable block if provided
   const [selectedSubject, setSelectedSubject] = useState(timetableBlock?.subject ?? '');
@@ -158,6 +163,8 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   const [selectedMinutes, setSelectedMinutes] = useState<number>(timetableBlock?.durationMinutes ?? 0);
   const [_blockCompleteBanner, setBlockCompleteBanner] = useState<{ done: number; total: number } | null>(null);
   const [confirmQuit, setConfirmQuit] = useState(false);
+  const exitDialogRef = useRef<HTMLDivElement>(null);
+  useModal(confirmQuit, () => setConfirmQuit(false), exitDialogRef);
 
   // Re-sync selections when timetable block changes
   useEffect(() => {
@@ -182,6 +189,10 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   const [journalOpen, setJournalOpen] = useState(false);
   const loadReflections = () => {
     if (!user.uid) return;
+    if (isDemo) {
+      setReflections(rawProgressDoc.reflections ?? []);
+      return;
+    }
     getDoc(doc(db, 'progress', user.uid))
       .then(snap => setReflections((snap.data()?.reflections as StudyReflection[] | undefined) ?? []))
       .catch((e) => logError('StudySessionView.loadReflections', e));
@@ -193,6 +204,11 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   const [prevDebriefs, setPrevDebriefs] = useState<DebriefEntry[]>([]);
   useEffect(() => {
     if (!user.uid) return;
+    if (isDemo) {
+      setPrevDebriefs(rawProgressDoc.studyDebriefs ?? []);
+      setReflections(rawProgressDoc.reflections ?? []);
+      return;
+    }
     let cancelled = false;
     getDoc(doc(db, 'progress', user.uid)).then(snap => {
       if (cancelled) return;
@@ -201,7 +217,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
       if (data?.reflections) setReflections(data.reflections as StudyReflection[]);
     }).catch((e) => logError('StudySessionView.loadPrevDebriefs', e));
     return () => { cancelled = true; };
-  }, [user.uid]);
+  }, [user.uid, isDemo, rawProgressDoc.studyDebriefs, rawProgressDoc.reflections]);
 
   // Get the most recent debrief note for the selected subject
   const lastSubjectNote = useMemo(() => {
@@ -256,7 +272,11 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     return getSyllabusTopics(session.subject);
   }, [session.subject]);
 
-  const canStart = selectedSubject && selectedType && selectedMinutes > 0;
+  const canStart = Boolean(
+    selectedSubject
+    && selectedType
+    && selectedMinutes >= MIN_STUDY_SESSION_MINUTES,
+  );
 
   const handleStart = () => {
     if (!canStart || !selectedType) return;
@@ -287,6 +307,11 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   const [reflectionMode, setReflectionMode] = useState<'quick' | 'full'>('quick');
 
   const handleSaveWithReflection = async (reflectionText: string) => {
+    if (!session.canRecordSession) {
+      setReflectionOpen(false);
+      session.cancelSession();
+      return;
+    }
     const bonus = reflectionMode === 'quick' ? QUICK_DEBRIEF_POINTS : FULL_REFLECTION_POINTS;
     const timestamp = Date.now();
     const [confidence, ...reflectionParts] = reflectionText.split('|');
@@ -315,13 +340,20 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
       // `setDoc(..., { merge: true })` also handles the rare case where a
       // student's parent progress document has not been created yet. Keep the
       // UI offline-safe: Firestore queues this locally and flushes on reconnect.
-      saveInBackground(
-        setDoc(doc(db, 'progress', user.uid), {
-          reflections: arrayUnion(reflection),
-        }, { merge: true }),
-        'StudySessionView.saveReflection',
-        () => setReflections(previous => previous.filter(entry => entry.timestamp !== timestamp)),
-      );
+      if (isDemo) {
+        updateDemoProgress(current => ({
+          ...current,
+          reflections: [...(current.reflections ?? []), reflection],
+        }));
+      } else {
+        saveInBackground(
+          setDoc(doc(db, 'progress', user.uid), {
+            reflections: arrayUnion(reflection),
+          }, { merge: true }),
+          'StudySessionView.saveReflection',
+          () => setReflections(previous => previous.filter(entry => entry.timestamp !== timestamp)),
+        );
+      }
 
       await session.saveSession(bonus, selectedStrategies, {
         confidenceAfter,
@@ -344,6 +376,10 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   };
 
   const handleSkipReflection = async () => {
+    if (!session.canRecordSession) {
+      session.cancelSession();
+      return;
+    }
     setIsSaving(true);
     await session.saveSession(0, selectedStrategies);
     completeTimetableBlock();
@@ -357,6 +393,11 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   };
 
   const _handleDebriefSubmit = async (entry: Omit<DebriefEntry, 'id' | 'date'>) => {
+    if (!session.canRecordSession) {
+      setDebriefOpen(false);
+      session.cancelSession();
+      return;
+    }
     setIsSaving(true);
     const fullEntry: DebriefEntry = {
       ...entry,
@@ -456,15 +497,16 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                 />
               </svg>
               <img
-                src="/assets/study/study-session.png"
+                src="/assets/study/study-session-v2.png"
                 alt=""
                 style={{
                   position: 'absolute',
                   left: '50%',
                   top: '50%',
                   transform: 'translate(-50%, -50%)',
-                  width: '126%',
-                  height: '126%',
+                  width: '158%',
+                  height: '158%',
+                  maxWidth: 'none',
                   objectFit: 'contain',
                   zIndex: 1,
                 }}
@@ -507,37 +549,6 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
         {/* Centered content */}
         <div className="flex-1 px-6 pb-28 bg-[#FAFBF6] dark:bg-zinc-950">
           <div className="w-full max-w-md mx-auto space-y-10 pt-6">
-            {/* First-visit intro card */}
-            <AnimatePresence>
-              {!dismissedGuides?.['study-session-intro'] && (
-                <MotionDiv
-                  key="study-session-intro"
-                  initial={{ opacity: 0, y: -8 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -8, transition: { duration: 0.2 } }}
-                  className="rounded-2xl p-5 mb-6 bg-[#FEFDFB] dark:bg-zinc-900 border border-[#EDEBE8] dark:border-zinc-800"
-                  style={{ boxShadow: '0 1px 4px rgba(28,25,23,0.04)' }}
-                >
-                  <div className="flex items-start gap-3">
-                    <Sparkles size={18} className="text-[#F26B1F] shrink-0 mt-0.5" />
-                    <div className="space-y-2">
-                      <p className="font-semibold text-sm text-[#1A1A1A] dark:text-white">Welcome to Study Sessions</p>
-                      <p className="text-sm text-[#78716C] dark:text-zinc-400 leading-relaxed">
-                        During sessions you'll see strategy prompts from modules you've completed. Tap "Done" to track your engagement — this feeds your mastery progress visible below.
-                      </p>
-                      <button
-                        onClick={() => onDismissGuide?.('study-session-intro')}
-                        className="mt-1 text-sm font-medium hover:underline"
-                        style={{ color: '#F26B1F' }}
-                      >
-                        Got it
-                      </button>
-                    </div>
-                  </div>
-                </MotionDiv>
-              )}
-            </AnimatePresence>
-
             {/* Today's timetable blocks — quick-start shortcuts */}
             {computedTodayBlocks.length > 0 && (
               <div className="space-y-3">
@@ -678,6 +689,9 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                               if (!isNaN(v) && v >= 1 && v <= 180) setSelectedMinutes(v);
                               else if (e.target.value === '') setSelectedMinutes(0);
                             }}
+                            aria-label="Custom study duration in minutes"
+                            aria-describedby="custom-study-duration-help"
+                            aria-invalid={selectedMinutes > 0 && selectedMinutes < MIN_STUDY_SESSION_MINUTES}
                             className={`w-full px-4 py-3 rounded-xl text-[13px] font-semibold text-center transition-all outline-none ${
                               isCustomActive
                                 ? 'bg-[rgba(var(--accent),0.08)] text-[var(--accent-hex)] border border-[rgba(var(--accent),0.25)] ring-1 ring-inset ring-[rgba(var(--accent),0.15)]'
@@ -685,6 +699,12 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                             }`}
                           />
                           <span className={`absolute right-3 top-1/2 -translate-y-1/2 text-[11px] pointer-events-none ${isCustomActive ? 'text-[var(--accent-hex)] opacity-60' : 'text-zinc-400'}`}>min</span>
+                          <span id="custom-study-duration-help" className="sr-only">Enter between 5 and 180 minutes.</span>
+                          {selectedMinutes > 0 && selectedMinutes < MIN_STUDY_SESSION_MINUTES && (
+                            <p role="status" className="mt-1.5 text-center text-xs font-medium text-[#8C3A0E]">
+                              Minimum {MIN_STUDY_SESSION_MINUTES} minutes
+                            </p>
+                          )}
                         </>
                       );
                     })()}
@@ -732,12 +752,12 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                     );
                   })}
                 </div>
-                {onGoToTrainingHub && (
+                {onGoToProgress && (
                   <button
-                    onClick={onGoToTrainingHub}
+                    onClick={onGoToProgress}
                     className="w-full flex items-center justify-center gap-1.5 py-2.5 rounded-xl text-xs font-medium text-zinc-500 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800/50 transition-colors"
                   >
-                    View all in Training Hub
+                    View progress and milestones
                     <ChevronRight size={12} />
                   </button>
                 )}
@@ -749,7 +769,10 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
         {/* Points Explainer (first visit) */}
         <PointsExplainer
           isOpen={!dismissedGuides?.['points-explainer']}
-          onDismiss={() => onDismissGuide?.('points-explainer')}
+          onDismiss={() => {
+            onDismissGuide?.('points-explainer');
+            onDismissGuide?.('study-session-intro');
+          }}
         />
 
         {/* Reflection journal — view past reflections */}
@@ -782,8 +805,14 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
       { scale: 2.08, top: '40%', lighten: 43 },
     ];
 
-    const handleQuit = () => {
+    const handleEndEarly = () => {
+      if (!session.canRecordSession) return;
       session.endSession();
+      setConfirmQuit(false);
+    };
+
+    const handleDiscard = () => {
+      session.cancelSession();
       setConfirmQuit(false);
     };
 
@@ -864,6 +893,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
           </p>
           <motion.button
             onClick={session.phase === 'active' ? session.pauseSession : session.resumeSession}
+            aria-label={session.phase === 'active' ? 'Pause study session' : 'Resume study session'}
             className="relative w-20 h-20 md:w-24 md:h-24 rounded-full flex items-center justify-center bg-[#383431] text-white shadow-[0_16px_36px_rgba(38,32,27,.18)]"
             animate={{ scale: session.phase === 'paused' ? 0.92 : 1 }}
             whileHover={{ scale: session.phase === 'paused' ? 0.96 : 1.04 }}
@@ -971,7 +1001,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                   transition={{ duration: PROMPT_AUTO_DISMISS_SECONDS, ease: 'linear' }}
                 />
                 <div className="flex items-center gap-2 mb-2">
-                  <Sparkles size={14} style={{ color: subjectHex }} />
+                  <Brain size={14} style={{ color: subjectHex }} />
                   <span className="text-[10px] font-bold uppercase tracking-widest" style={{ color: subjectHex }}>
                     {session.currentPrompt.strategyName}
                   </span>
@@ -982,15 +1012,14 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                 <div className="flex items-center gap-3 mt-3">
                   <button
                     onClick={session.completePrompt}
-                    className="text-xs font-semibold transition-colors"
-                    style={{ color: subjectHex }}
+                    className="min-h-10 rounded-xl border px-4 text-xs font-semibold transition-colors"
+                    style={{ color: subjectHex, borderColor: subjectHex, backgroundColor: `${subjectHex}12` }}
                   >
                     Done
                   </button>
                   <button
                     onClick={session.dismissPrompt}
-                    className="text-xs transition-colors"
-                    style={{ color: 'rgba(0,0,0,0.35)' }}
+                    className="min-h-10 rounded-xl border border-[#D9D4CE] bg-white px-4 text-xs font-medium text-[#6E6862] transition-colors hover:border-[#8E8780]"
                   >
                     Skip
                   </button>
@@ -1010,6 +1039,8 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
               role="dialog"
               aria-modal="true"
               aria-labelledby="study-exit-title"
+              tabIndex={-1}
+              ref={exitDialogRef}
             >
               <MotionDiv
                 initial={{ opacity: 0, y: 12, scale: 0.98 }}
@@ -1020,7 +1051,11 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
               >
                 <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.16em] text-[#9E9186]">Leave session</p>
                 <h2 id="study-exit-title" className="font-serif text-2xl font-bold text-[#1A1A1A]">End this study session?</h2>
-                <p className="mt-2 text-sm leading-relaxed text-[#7A7068]">The time from this unfinished session won’t be recorded.</p>
+                <p className="mt-2 text-sm leading-relaxed text-[#7A7068]">
+                  {session.canRecordSession
+                    ? 'End early to record the time you have studied and continue to your debrief, or discard the session without saving it.'
+                    : `Study for at least ${MIN_STUDY_SESSION_MINUTES} minutes to record this session. You can keep studying or discard this start.`}
+                </p>
                 <div className="mt-6 grid gap-2">
                   <button
                     type="button"
@@ -1031,10 +1066,20 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                   </button>
                   <button
                     type="button"
-                    onClick={handleQuit}
-                    className="min-h-12 rounded-xl border border-[#D0CDC8] bg-white px-4 font-semibold text-[#3A3530] hover:bg-[#F8F4EC]"
+                    onClick={handleEndEarly}
+                    disabled={!session.canRecordSession}
+                    className="min-h-12 rounded-xl border border-[#D0CDC8] bg-white px-4 font-semibold text-[#3A3530] hover:bg-[#F8F4EC] disabled:cursor-not-allowed disabled:opacity-45"
                   >
-                    End session
+                    {session.canRecordSession
+                      ? 'End early and debrief'
+                      : `End early after ${MIN_STUDY_SESSION_MINUTES} min`}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={handleDiscard}
+                    className="min-h-11 rounded-xl px-4 text-sm font-medium text-[#7A7068] transition-colors hover:bg-[#F2EEE9] hover:text-[#3A3530]"
+                  >
+                    Discard without saving
                   </button>
                 </div>
               </MotionDiv>
@@ -1095,7 +1140,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
             </MotionDiv>
             <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#9E9186] mb-1.5">{isEarlyEnd ? 'Session ended early' : 'Session complete'}</p>
             <h2 className="font-serif text-[32px] leading-tight font-bold text-[#1A1A1A] dark:text-white mb-2">{isEarlyEnd ? 'The work still counts.' : 'Focused work, finished.'}</h2>
-            <p className="text-sm text-[#7A7068] mb-5">{isEarlyEnd ? `You studied for ${actualMinutes} minutes. Take a moment to capture what was useful before you leave.` : 'Your study time has been recorded.'}</p>
+            <p className="text-sm text-[#7A7068] mb-5">{isEarlyEnd ? `You studied for ${actualMinutes} minute${actualMinutes === 1 ? '' : 's'}. Take a moment to capture what was useful before you leave.` : 'Your study time has been recorded.'}</p>
 
             {/* Big animated points */}
             <MotionDiv
@@ -1156,7 +1201,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
           {/* Actions */}
           <div className="space-y-3">
             <PrimaryActionButton
-              label={`Quick debrief (+${QUICK_DEBRIEF_POINTS} pts)`}
+              label={`Quick debrief (+${QUICK_DEBRIEF_POINTS} JP)`}
               onClick={() => { setReflectionMode('quick'); setReflectionOpen(true); }}
               disabled={isSaving}
               className="w-full"
@@ -1166,7 +1211,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
               disabled={isSaving}
               className="w-full py-3 rounded-xl text-sm font-semibold transition-all disabled:opacity-50 bg-white border border-[#D0CDC8] text-[#3A3530] hover:border-[#1A1A1A]"
             >
-              Write a reflection (+{FULL_REFLECTION_POINTS} pts)
+              Write a reflection (+{FULL_REFLECTION_POINTS} JP)
             </button>
             <button
               onClick={handleSkipReflection}

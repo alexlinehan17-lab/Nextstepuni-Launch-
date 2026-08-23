@@ -12,7 +12,29 @@ service cloud.firestore {
     // with utils/adminIdentity.ts and functions/src/adminIdentity.ts.
     function isAdmin() {
       return request.auth != null
-             && request.auth.token.email == 'nextstepuniinfo@gmail.com';
+             && 'admin' in request.auth.token
+             && request.auth.token.admin == true
+             && 'email_verified' in request.auth.token
+             && request.auth.token.email_verified == true
+             && request.auth.token.email == 'nextstepuniinfo@gmail.com'
+             && hasActiveSession();
+    }
+
+    // Password resets and staff revocations advance this server-owned cutoff
+    // on /users/{uid}. Firestore does not consult Auth's refresh-token
+    // revocation timestamp, so checking auth_time here closes the otherwise
+    // hour-long window in which an already-issued ID token can keep reading.
+    // Production Firebase ID tokens always carry an integer auth_time. Missing
+    // or malformed auth_time fails closed; the rules test harness supplies it
+    // explicitly to match a real token.
+    function hasActiveSession() {
+      let caller = get(/databases/$(database)/documents/users/$(request.auth.uid)).data;
+      let cutoff = 'sessionValidAfterSeconds' in caller ? caller.sessionValidAfterSeconds : 0;
+      return request.auth != null
+             && 'auth_time' in request.auth.token
+             && request.auth.token.auth_time is int
+             && request.auth.token.auth_time > cutoff
+             && (!('accountDisabled' in caller) || caller.accountDisabled != true);
     }
 
     // Helper: is the requesting user school staff (guidance counsellor OR
@@ -22,15 +44,49 @@ service cloud.firestore {
     // per-school code); `role` is client-immutable in the /users update rule,
     // so a client can never self-assign 'gc' or 'staff'.
     function isSchoolStaff() {
-      return request.auth.token.get('role', null) in ['gc', 'staff']
-             || get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role in ['gc', 'staff'];
+      let caller = get(/databases/$(database)/documents/users/$(request.auth.uid)).data;
+      return hasActiveSession()
+             && 'role' in caller
+             && caller.role in ['gc', 'staff']
+             && (!('accountDisabled' in caller) || caller.accountDisabled != true);
     }
 
     // Helper: the requesting staff member's own school.
     function callerSchool() {
-      return request.auth.token.get('school', null) != null
-             ? request.auth.token.school
-             : get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school;
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school;
+    }
+
+    // Journey Points are student-facing motivation, not an authorization
+    // credential, but malformed or negative balances still corrupt the shop
+    // and staff analytics. Bound every client delta and require spend to stay
+    // within lifetime earnings. Cross-user value transfers are callable-only.
+    function validPointsMutation() {
+      let before = 'pointsData' in resource.data ? resource.data.pointsData : {};
+      let after = 'pointsData' in request.resource.data ? request.resource.data.pointsData : {};
+      let beforeEarned = 'totalEarned' in before ? before.totalEarned : 0;
+      let beforeSpent = 'totalSpent' in before ? before.totalSpent : 0;
+      let afterEarned = 'totalEarned' in after ? after.totalEarned : 0;
+      let afterSpent = 'totalSpent' in after ? after.totalSpent : 0;
+      return afterEarned is int
+             && afterSpent is int
+             && afterEarned >= beforeEarned
+             && afterEarned <= beforeEarned + 500
+             && afterSpent >= beforeSpent
+             // The largest legitimate landmark purchase is 1,200 JP.
+             && afterSpent <= beforeSpent + 1200
+             && afterSpent <= afterEarned;
+    }
+
+    function validInitialPoints() {
+      let after = 'pointsData' in request.resource.data ? request.resource.data.pointsData : {};
+      let earned = 'totalEarned' in after ? after.totalEarned : 0;
+      let spent = 'totalSpent' in after ? after.totalSpent : 0;
+      return earned is int
+             && spent is int
+             && earned >= 0
+             && earned <= 500
+             && spent >= 0
+             && spent <= earned;
     }
 
     // Users collection: each user can only read/write their own doc
@@ -43,16 +99,28 @@ service cloud.firestore {
       // path needs same-school /users access. GC + admin reads are granted
       // explicitly below (lines for isSchoolStaff()/admin), so the GCDashboard — the
       // only legitimate cross-student consumer — stays authorized.
-      allow read: if request.auth != null && request.auth.uid == userId;
+      allow read: if request.auth != null && request.auth.uid == userId
+                  && hasActiveSession();
       // `school` is NOT accepted from the client on create. It is set only by
       // the claimStudentSchool / claimStaffAccess Cloud Functions after the
       // caller proves a valid per-school join / staff code (security review
       // H-2, 2026-07-18). The update rule keeps it immutable thereafter, so a
       // student can never self-assert or switch schools.
       allow create: if request.auth != null && request.auth.uid == userId
-                   && !('isAdmin' in request.resource.data)
+                   // Older student records may carry the legacy
+                   // `isAdmin: false` field. It has no authorization meaning
+                   // (admin access is token-only), so keep those records
+                   // usable while still making `true` impossible to create.
+                   && (!('isAdmin' in request.resource.data)
+                       || request.resource.data.isAdmin == false)
                    && !('role' in request.resource.data)
                    && !('school' in request.resource.data)
+                   && !request.resource.data.keys().hasAny([
+                     'needsPasswordChange', 'passwordResetAtSeconds',
+                     'passwordResetExpiresAtSeconds', 'temporaryPasswordHash',
+                     'passwordResetBy', 'sessionValidAfterSeconds',
+                     'accountDisabled'
+                   ])
                    && request.resource.data.name is string
                    && request.resource.data.name.size() <= 50
                    && request.resource.data.avatar is string
@@ -74,17 +142,24 @@ service cloud.firestore {
       // so updates only validate name/avatar when those fields are
       // actually present in the post-write state.
       allow update: if request.auth != null && request.auth.uid == userId
-                   && !('isAdmin' in request.resource.data)
-                   && request.resource.data.get('role', null) == resource.data.get('role', null)
-                   && request.resource.data.get('school', null) == resource.data.get('school', null)
+                   && hasActiveSession()
+                   && (!('isAdmin' in request.resource.data)
+                       || request.resource.data.isAdmin == false)
+                   && !request.resource.data.diff(resource.data).affectedKeys().hasAny([
+                     'role', 'school', 'isAdmin', 'needsPasswordChange',
+                     'passwordResetAtSeconds', 'passwordResetExpiresAtSeconds',
+                     'temporaryPasswordHash', 'passwordResetBy',
+                     'sessionValidAfterSeconds', 'accountDisabled'
+                   ])
                    && (!('name' in request.resource.data)
                        || (request.resource.data.name is string && request.resource.data.name.size() <= 50))
                    && (!('avatar' in request.resource.data)
                        || (request.resource.data.avatar is string && request.resource.data.avatar.size() <= 100));
-      // Admin can read all user docs + delete students (for AdminDashboard)
-      allow read, delete: if isAdmin();
-      // GC can read + delete user docs where school matches their own school
-      allow read, delete: if request.auth != null
+      // Destructive deletion is callable-only so the complete GDPR cascade and
+      // audit record cannot be bypassed by deleting individual documents.
+      allow read: if isAdmin();
+      // School staff can read user docs where school matches their own school.
+      allow read: if request.auth != null
                   && isSchoolStaff()
                   && resource.data.school == callerSchool();
     }
@@ -103,11 +178,12 @@ service cloud.firestore {
     // Progress collection: self read + validated writes
     match /progress/{userId} {
       // Self-read
-      allow read: if request.auth != null && request.auth.uid == userId;
-      // Admin can read + delete all progress docs (for AdminDashboard)
-      allow read, delete: if isAdmin();
-      // GC can read + delete progress docs for students in their school
-      allow read, delete: if request.auth != null
+      allow read: if request.auth != null && request.auth.uid == userId
+                  && hasActiveSession();
+      allow read: if isAdmin();
+      // Staff can read progress docs for students in their school. Deletion is
+      // callable-only, alongside the matching Auth/user-data cascade.
+      allow read: if request.auth != null
                   && isSchoolStaff()
                   && get(/databases/$(database)/documents/users/$(userId)).data.school == callerSchool();
       // Remediation 2026-04-29 (DPIA risk R1): the previous same-school
@@ -117,20 +193,13 @@ service cloud.firestore {
 
       // Create: self only, cap initial points
       allow create: if request.auth != null && request.auth.uid == userId
-                   && (!('pointsData' in request.resource.data)
-                       || request.resource.data.pointsData.totalEarned <= 1000);
+                   && hasActiveSession()
+                   && validInitialPoints();
 
       // Update: self + field validation on critical gamification fields
       allow update: if request.auth != null && request.auth.uid == userId
-        // Points earned can only increase, max +1000 per write
-        && (!('pointsData' in resource.data)
-            || !('totalEarned' in resource.data.pointsData)
-            || (request.resource.data.pointsData.totalEarned >= resource.data.pointsData.totalEarned
-                && request.resource.data.pointsData.totalEarned <= resource.data.pointsData.totalEarned + 1000))
-        // Points spent can only increase (no refunds)
-        && (!('pointsData' in resource.data)
-            || !('totalSpent' in resource.data.pointsData)
-            || request.resource.data.pointsData.totalSpent >= resource.data.pointsData.totalSpent)
+        && hasActiveSession()
+        && validPointsMutation()
         // Achievements can only be appended, never removed
         && (!('gamification' in resource.data)
             || !('unlockedAchievements' in resource.data.gamification)
@@ -144,7 +213,8 @@ service cloud.firestore {
       // (Audit 2026-06-01, blocker B3.)
       match /sessions/{sessionId} {
         // Self read + write
-        allow read, write: if request.auth != null && request.auth.uid == userId;
+        allow read, write: if request.auth != null && request.auth.uid == userId
+                           && hasActiveSession();
         // Admin read (AdminDashboard)
         allow read: if isAdmin();
         // GC of the same school can read (mirrors the parent /progress read above)
@@ -165,7 +235,8 @@ service cloud.firestore {
       // appears to reset. This is the same failure mode as audit blocker B3.
       match /srs/{deckId} {
         // Self read + write
-        allow read, write: if request.auth != null && request.auth.uid == userId;
+        allow read, write: if request.auth != null && request.auth.uid == userId
+                           && hasActiveSession();
         // Admin read (AdminDashboard)
         allow read: if isAdmin();
         // GC of the same school can read, so a Guidance Counsellor view can be
@@ -179,8 +250,10 @@ service cloud.firestore {
     // Settings collection: each user can only read/write their own doc
     match /settings/{userId} {
       // Split read/write (audit item 18). Settings hold only small UI prefs.
-      allow read: if request.auth != null && request.auth.uid == userId;
-      allow write: if request.auth != null && request.auth.uid == userId;
+      allow read: if request.auth != null && request.auth.uid == userId
+                  && hasActiveSession();
+      allow write: if request.auth != null && request.auth.uid == userId
+                   && hasActiveSession();
     }
 
     // Responses collection: each user can only read/write their own doc
@@ -188,20 +261,27 @@ service cloud.firestore {
       // Split read/write (audit item 18). Free-text response values are bounded
       // by Firestore's 1MB document cap; a per-field size guard isn't practical
       // given the dynamic { [moduleId]: data } shape.
-      allow read: if request.auth != null && request.auth.uid == userId;
-      allow write: if request.auth != null && request.auth.uid == userId;
+      allow read: if request.auth != null && request.auth.uid == userId
+                  && hasActiveSession();
+      allow write: if request.auth != null && request.auth.uid == userId
+                   && hasActiveSession();
     }
 
     // GC Notes (free-text pastoral notes about students) were REMOVED
     // 2026-07-18 (owner decision). The collection has no rules and falls through
     // to the default-deny catch-all. See compliance/evidence/security-review-2026-07.md.
 
-    // GC Settings: staff can read/write settings for their own school (dismissed
-    // alerts, the staff-access code, etc.)
+    // GC Settings contain non-secret dashboard preferences only. Access-code
+    // material lives in server-only *AccessSecrets collections.
     match /gcSettings/{schoolId} {
-      allow read, write: if request.auth != null
-                         && isSchoolStaff()
-                         && schoolId == callerSchool();
+      allow read: if request.auth != null && isSchoolStaff() && schoolId == callerSchool();
+      allow create: if request.auth != null && isSchoolStaff() && schoolId == callerSchool()
+                    && request.resource.data.keys().hasOnly(['dismissedAlerts'])
+                    && request.resource.data.dismissedAlerts is map;
+      allow update: if request.auth != null && isSchoolStaff() && schoolId == callerSchool()
+                    && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['dismissedAlerts'])
+                    && request.resource.data.dismissedAlerts is map;
+      allow delete: if false;
     }
 
     // Cohort tags (DEIS / At-risk / Priority) — welfare-sensitive labels about
@@ -217,7 +297,9 @@ service cloud.firestore {
     // Notifications: self read/write + GC read/write for same-school students
     match /notifications/{userId} {
       // Any user can read/write their own notifications (mark read, auto-notifications)
-      allow read, create, update: if request.auth != null && request.auth.uid == userId;
+      allow read, create, update: if request.auth != null
+                                 && request.auth.uid == userId
+                                 && hasActiveSession();
 
       // Staff may READ a student's notifications in their own school, but may
       // NOT write them.
@@ -240,37 +322,29 @@ service cloud.firestore {
     match /kudos/{kudosId} {
       // Recipient can read kudos sent to them
       allow read: if request.auth != null
+                  && hasActiveSession()
                   && resource.data.toUid == request.auth.uid;
       // Sender can read kudos they sent (for daily limit check)
       allow read: if request.auth != null
+                  && hasActiveSession()
                   && resource.data.fromUid == request.auth.uid;
-      // Can create if: authed, fromUid is self, toUid != self, same school
-      allow create: if request.auth != null
-                    && request.resource.data.fromUid == request.auth.uid
-                    && request.resource.data.toUid != request.auth.uid
-                    && request.resource.data.school == get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school;
-      allow update, delete: if false;
+      // Composed and rate-limited only by sendKudos (Admin SDK).
+      allow create, update, delete: if false;
     }
 
     // Gifts collection: peer island gifts
     match /gifts/{giftId} {
       // Recipient can read their gifts
       allow read: if request.auth != null
+                  && hasActiveSession()
                   && resource.data.toUid == request.auth.uid;
       // Sender can read gifts they sent (for daily limit check)
       allow read: if request.auth != null
+                  && hasActiveSession()
                   && resource.data.fromUid == request.auth.uid;
-      // Can create if: authed, fromUid is self, toUid != self, same school
-      allow create: if request.auth != null
-                    && request.resource.data.fromUid == request.auth.uid
-                    && request.resource.data.toUid != request.auth.uid
-                    && request.resource.data.school == get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school;
-      // Recipient can update status from pending to placed
-      allow update: if request.auth != null
-                    && resource.data.toUid == request.auth.uid
-                    && resource.data.status == 'pending'
-                    && request.resource.data.status == 'placed';
-      allow delete: if false;
+      // Created/debited by sendGift and transitioned by placeGift. Clients
+      // cannot alter an item's identity, price, recipient or status.
+      allow create, update, delete: if false;
     }
 
     // Teach-backs and SOS Flares (peer free-text sharing) were REMOVED
@@ -289,6 +363,7 @@ service cloud.firestore {
                          && schoolId == callerSchool();
       // Students can read their school's events (for timetable integration)
       allow read: if request.auth != null
+                  && hasActiveSession()
                   && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school == schoolId;
     }
 
@@ -304,6 +379,7 @@ service cloud.firestore {
                          && isSchoolStaff()
                          && schoolId == callerSchool();
       allow read: if request.auth != null
+                  && hasActiveSession()
                   && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school == schoolId;
     }
 
@@ -322,6 +398,7 @@ service cloud.firestore {
     // query is denied even when individual docs would be readable.
     match /islandPublic/{uid} {
       allow read: if request.auth != null
+                  && hasActiveSession()
                   && resource.data.school
                      == get(/databases/$(database)/documents/users/$(request.auth.uid)).data.school;
       allow write: if false;
@@ -337,88 +414,30 @@ service cloud.firestore {
     // submission) to limit tampering, mirroring the teachbacks/flares pattern.
     match /chairCohorts/{classCode} {
       // Parent doc holds only a submissions counter.
-      allow read: if request.auth != null;
-      allow create: if request.auth != null
-                    && request.resource.data.keys().hasOnly(['submissions'])
-                    && request.resource.data.submissions == 1;
-      allow update: if request.auth != null
-                    && request.resource.data.keys().hasOnly(['submissions'])
-                    && request.resource.data.submissions == resource.data.submissions + 1;
-      allow delete: if false;
+      allow read: if request.auth != null && hasActiveSession();
+      allow create, update, delete: if false;
 
       // Moderation Meeting (F5): one counter doc per marking DECISION the class
       // has made on a script — "64% of your class gave this mark" — shown on
       // the reveal so students conference like real SEC markers. Anonymous by
       // construction: identity fields + a single pinned +1 counter, no uids.
       match /decisions/{decisionId} {
-        allow read: if request.auth != null;
-        allow create: if request.auth != null
-                      && request.resource.data.keys().hasOnly(['sessionId', 'scriptId', 'choice', 'n'])
-                      && request.resource.data.sessionId is string
-                      && request.resource.data.sessionId.size() <= 80
-                      && request.resource.data.scriptId is string
-                      && request.resource.data.scriptId.size() <= 80
-                      && request.resource.data.choice is string
-                      && request.resource.data.choice.size() <= 160
-                      && request.resource.data.n == 1;
-        allow update: if request.auth != null
-                      && request.resource.data.keys().hasOnly(['sessionId', 'scriptId', 'choice', 'n'])
-                      && request.resource.data.sessionId == resource.data.sessionId
-                      && request.resource.data.scriptId == resource.data.scriptId
-                      && request.resource.data.choice == resource.data.choice
-                      && request.resource.data.n == resource.data.n + 1;
-        allow delete: if false;
+        allow read: if request.auth != null && hasActiveSession();
+        allow create, update, delete: if false;
       }
 
       // Daily Mark duel (F9): per class code + UTC day, one counter doc per
       // agreement decile bucket (0–10) — an anonymous histogram the class
       // compares against ("you 9/10, class median 6"). No uids.
       match /daily/{bucketId} {
-        allow read: if request.auth != null;
-        allow create: if request.auth != null
-                      && request.resource.data.keys().hasOnly(['day', 'bucket', 'n'])
-                      && request.resource.data.day is string
-                      && request.resource.data.day.size() <= 12
-                      && request.resource.data.bucket is int
-                      && request.resource.data.bucket >= 0 && request.resource.data.bucket <= 10
-                      && request.resource.data.n == 1;
-        allow update: if request.auth != null
-                      && request.resource.data.keys().hasOnly(['day', 'bucket', 'n'])
-                      && request.resource.data.day == resource.data.day
-                      && request.resource.data.bucket == resource.data.bucket
-                      && request.resource.data.n == resource.data.n + 1;
-        allow delete: if false;
+        allow read: if request.auth != null && hasActiveSession();
+        allow create, update, delete: if false;
       }
 
       // One doc per marking rule the class mis-marks — atomic increments.
       match /rules/{ruleId} {
-        allow read: if request.auth != null;
-        allow create: if request.auth != null
-                      && request.resource.data.keys().hasOnly(['key', 'subject', 'label', 'over', 'under', 'students'])
-                      && request.resource.data.key is string
-                      && request.resource.data.key.size() <= 200
-                      && request.resource.data.subject is string
-                      && request.resource.data.subject.size() <= 60
-                      && request.resource.data.label is string
-                      && request.resource.data.label.size() <= 200
-                      && request.resource.data.students == 1
-                      && request.resource.data.over is int
-                      && request.resource.data.over >= 0 && request.resource.data.over <= 100
-                      && request.resource.data.under is int
-                      && request.resource.data.under >= 0 && request.resource.data.under <= 100;
-        allow update: if request.auth != null
-                      && request.resource.data.keys().hasOnly(['key', 'subject', 'label', 'over', 'under', 'students'])
-                      // Identity fields are immutable.
-                      && request.resource.data.key == resource.data.key
-                      && request.resource.data.subject == resource.data.subject
-                      && request.resource.data.label == resource.data.label
-                      // Counts only ever climb, by bounded amounts; +1 student per submission.
-                      && request.resource.data.students == resource.data.students + 1
-                      && request.resource.data.over >= resource.data.over
-                      && request.resource.data.over <= resource.data.over + 100
-                      && request.resource.data.under >= resource.data.under
-                      && request.resource.data.under <= resource.data.under + 100;
-        allow delete: if false;
+        allow read: if request.auth != null && hasActiveSession();
+        allow create, update, delete: if false;
       }
     }
 
@@ -428,14 +447,8 @@ service cloud.firestore {
     // so the current bucket's count IS the presence number. No uids, no
     // leave-tracking, nothing per-student — a stale bucket simply ages out.
     match /focusPresence/{classCode}/buckets/{bucketId} {
-      allow read: if request.auth != null;
-      allow create: if request.auth != null
-                    && request.resource.data.keys().hasOnly(['n'])
-                    && request.resource.data.n == 1;
-      allow update: if request.auth != null
-                    && request.resource.data.keys().hasOnly(['n'])
-                    && request.resource.data.n == resource.data.n + 1;
-      allow delete: if false;
+      allow read: if request.auth != null && hasActiveSession();
+      allow create, update, delete: if false;
     }
 
     // Anonymous product feedback is created only by submitAnonymousFeedback,
@@ -467,6 +480,7 @@ service cloud.firestore {
     match /funnelEvents/{eventId} {
       allow read: if isAdmin();
       allow create: if request.auth != null
+                    && hasActiveSession()
                     && request.resource.data.keys().hasOnly(['step', 'day', 'at', 'platform', 'sessionId'])
                     && request.resource.data.step is string
                     && request.resource.data.step.size() <= 40
