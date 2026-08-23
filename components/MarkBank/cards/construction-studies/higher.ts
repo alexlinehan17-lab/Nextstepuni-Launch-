@@ -180,9 +180,11 @@ export const CARDS: SecCard[] = [
     id: "cons-2016-hl-q10-a", topicId: "cons-4-2", conceptId: "minimising-heat-loss-storing-heat-gain",
     section: "B", questionRef: "2016 HL Q10(a)",
     questionText: "Minimising heat loss and storing heat gain are important considerations in Passive House design. Using notes and freehand sketches, show best practice design detailing to minimise heat loss and maximise heat storage in a Passive House for any two of the following: • foundations • ground floor • walls.",
-    tariffModel: {"kind":"bestNofParts","notation":"1 x 6","answer":1,"ofParts":6,"perPart":6}, totalMarks: 6,
+    tariffModel: {"kind":"fixed","notation":"1 x 6 + 1 x 6 + 1 x 6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 18,
     rows: [
-    { id: "cons-2016-hl-q10-a-r1", kind: "anyN", verbatim: "Ground Floor", marks: 6, contextNote: "Ground floor", openList: true, group: {"claimMax":1,"perOption":6,"options":["thermal mass - increased thickness of screed and tile finish will improve the capacity of the building to absorb and retain heat","high levels of insulation","no thermal bridges","airtightness","traditional system is acceptable provided it meets passive standard and incorporates an appropriate heat store","any other approved system that meets passive standards and incorporates a heat store"]} },
+    { id: "cons-2016-hl-q10-a-r1", kind: "anyN", verbatim: "W/m2 K", marks: 6, contextNote: "W/m2 K", openList: true, group: {"claimMax":1,"perOption":6,"options":["no thermal bridges","very well insulated to minimise heat loss","high compressive strength insulation used","traditional strip foundation with autoclaved aerated concrete blockwork to prevent heat loss","other approved systems that meet passive standards"]} },
+    { id: "cons-2016-hl-q10-a-r2", kind: "anyN", verbatim: "Ground floor", marks: 6, contextNote: "Ground floor", openList: true, group: {"claimMax":1,"perOption":6,"options":["thermal mass - increased thickness of screed and tile finish will improve the capacity of the building to absorb and retain heat","high levels of insulation","no thermal bridges","airtightness","traditional system is acceptable provided it meets passive standard and incorporates an appropriate heat store","any other approved system that meets passive standards and incorporates a heat store"]} },
+    { id: "cons-2016-hl-q10-a-r3", kind: "anyN", verbatim: "Walls", marks: 6, contextNote: "Walls", openList: true, group: {"claimMax":1,"perOption":6,"options":["passive wall to achieve u-value of between 0.10 - 0.15 w/m2 K","high level of insulation","no thermal bridges","airtightness","block inner leaf with internal plaster finish will improve thermal mass of the building","in the case of timber frame passive houses consideration must be given to alternative methods of maximising heat storage such as Trombe wall, high mass floor screeds, internal block walls"]} },
     ],
   } as SecCard,
   {
@@ -197,6 +199,50 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2016-hl-q10-c-r1", kind: "anyN", verbatim: "Advantages of passive house construction", marks: 6, contextNote: "Advantages of passive house construction", openList: true, group: {"claimMax":2,"perOption":3,"options":["low energy consumption - a typical passive house uses 75% less energy than a similar house built to building regulations standards,","comfort - passive house construction provides a consistent level of comfort (a constant comfortable temperature of 20°C is maintained all year round),","economical - a typical passive house significantly cheaper to run than a similar house built to building regulations standards - 75% energy reduction,","reduced environmental impact - lower energy consumption means that passive houses have a much smaller carbon footprint than houses built to building regulations standards - reduced CO2 emissions Disadvantages of passive house construction:","workmanship - a very high level of workmanship is required on site - every member of the construction team must understand what is required to achieve passive house standard and ensure that their work is of the highest possible standard","training - tradespeople and designers need to be trained to ensure they are competent to achieve passive house standards","materials - quality materials, expensive","capital cost - expensive","longer contract time required to complete passive house","a private standard, must pay to have house certified as PassivHaus"]} },
     { id: "cons-2016-hl-q10-c-r2", kind: "anyN", verbatim: "When designing a passive house the heat load is calculated on two sample days", marks: 6, contextNote: "When designing a passive house the heat load is calculated on two sample days", openList: true, group: {"claimMax":2,"perOption":3,"options":["a mild overcast day (high temperature, low solar gain),","a cold clear day (low temperature, high solar gain)","in the passive house standard everything is included (e.g. space heating, water heating, ventilation, lighting, appliances such as the dishwasher and the television) whereas in the building regulations only space heating, water heating, ventilation and lighting are included"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Higher Level — © State Examinations Commission.",
+    id: "cons-2016-hl-q4-c", topicId: "cons-1-1", conceptId: "advantages-disadvantages-building-off-houses-irish",
+    section: "B", questionRef: "2016 HL Q4(c)",
+    questionText: "Discuss in detail two advantages and two disadvantages of building one-off houses in the Irish rural landscape.",
+    tariffModel: {"kind":"fixed","notation":"2 x 3 + 2 x 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    rows: [
+    { id: "cons-2016-hl-q4-c-r1", kind: "anyN", verbatim: "Advantages of one-off houses in the Irish rural landscape – such as", marks: 6, contextNote: "Advantages of one-off houses in the Irish rural landscape – such as", openList: true, group: {"claimMax":2,"perOption":3,"options":["they allow local people to live amongst their neighbours and extended family","they provide a quality of life enjoyed by rural dwellers","they allow people to live in healthy surroundings with clean air","many people value the quietness and solitude of living in this type of house","they can create a network of rural dwellers who can develop community spirit","having extra rural dwellers aids the rural economy","rural dwellers tend the countryside - farmers, ecologists, nature lovers, gardeners etc","rural dwellings give a welcoming feel to the countryside - an inhabited landscape","provide a different paradigm to urban dwelling – it is acceptable to live in the countryside","having more rural dwellers maintains the level of services available"]} },
+    { id: "cons-2016-hl-q4-c-r2", kind: "anyN", verbatim: "Disadvantages of one-off houses in the Irish rural landscape", marks: 6, contextNote: "Disadvantages of one-off houses in the Irish rural landscape", openList: true, group: {"claimMax":2,"perOption":3,"options":["it is unsustainable","construction costs are higher – long distances, increased transport costs","rural dwellings is more expensive to maintain","services such as electricity, water, gas, broadband etc. may not be easily available","transport costs to access all services are increased – towns, schools, churches, leisure, healthcare","regular, reliable public transport may be unavailable","children spend more time travelling to school and may have to use a school bus or be driven","school-going children may find involvement in extra-curricular activities difficult","it may destroy the visual amenity for other citizens, both local and passing","it may become increasingly more unsustainable as fossil fuels become scarce and more expensive","as the householders age they may find it increasingly difficult to access required supports and to remain active as they become more confined due to the remote location of the house. any other relevant points"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Higher Level — © State Examinations Commission.",
+    id: "cons-2016-hl-q6-a", topicId: "cons-6-3", conceptId: "features-design-contribute-house-having-low",
+    section: "B", questionRef: "2016 HL Q6(a)",
+    questionText: "Discuss in detail, using notes and freehand sketches, three features of the design that contribute to the house having low environmental impact.",
+    tariffModel: {"kind":"fixed","notation":"3 x 5 + 3 x 5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 30,
+    rows: [
+    { id: "cons-2016-hl-q6-a-r1", kind: "anyN", verbatim: "Three features of the design that contribute to the house having low environmental impact – such as", marks: 15, contextNote: "Three features of the design that contribute to the house having low environmental impact – such as", openList: true, group: {"claimMax":3,"perOption":5,"options":["the cedar cladding finish on the exterior is carbon neutral and reduces the embodied energy of the house, giving a low-carbon construction","the tree planting indicated reduces the visual impact of the building and help with carbon sequestration","the planting of trees indicated in the drawing softens the contrast between the natural setting and the geometric nature of the architecture","trees to provide shade, food and shelter for birds and humans and aid biodiversity","the cedar cladding needs no preservatives, naturally durable","the use of timber-frame construction leads to renewable materials providing storage of CO2 sequestered from the atmosphere","the large areas of glazing and the double height glazing, which are presumed to be south-facing, lead to solar gains which help to reduce the use of non-renewable fossil fuels for space heating","the smaller windows to the north-facing elevations reduce heat loss and help conserve energy"]} },
+    { id: "cons-2016-hl-q6-a-r2", kind: "anyN", verbatim: "___________________________________________________________________________________________________________", marks: 15, contextNote: "___________________________________________________________________________________________________________", openList: true, group: {"claimMax":3,"perOption":5,"options":["the stove and associated flue are placed against an inner wall of high thermal mass, increasing the storage of heat within the fabric of the house","wood burning stoves are carbon neutral and stoves are up to 70% efficient","open-plan, naturally lighted layout","short circulation areas and corridors","hot press adjacent to bathroom and kitchen, short pipe runs and reduced hot water run off needed","the entrance lobby/storm porch greatly reduces the loss of heated air when the door is used","the compactness of the design reduces the volume of the air to be heated","the area and orientation of the fenestration support the use of passive solar gain to complement space heating","the compact footprint of the building reduces the area of the exterior envelope of the building, helping to conserve materials and heat"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2016, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Higher Level — © State Examinations Commission.",
+    id: "cons-2016-hl-q10-b", topicId: "cons-6-3", conceptId: "passive-house-shown-overheats-summer-reasons",
+    section: "B", questionRef: "2016 HL Q10(b)",
+    questionText: "The Passive House shown overheats in summer. Discuss two reasons why overheating occurs and, using notes and freehand sketches, show two design details for the house that would reduce the possibility of overheating.",
+    tariffModel: {"kind":"fixed","notation":"2 x 6 + 2 x 6 + 3 x 6 + 3 x 6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 60,
+    rows: [
+    { id: "cons-2016-hl-q10-b-r1", kind: "anyN", verbatim: "Extended roof overhang", marks: 12, contextNote: "Extended roof overhang", openList: true, group: {"claimMax":2,"perOption":6,"options":["an overhang / extended eaves / to reduce the amount of solar heat gain in summertime","the angle of the sun is higher during the summer than it is during the winter. By using a correctly designed overhang, the amount of solar heat gained from the summer sun is reduced. due to the lower angle of the winter sun, winter solar heat gain will not be affected","ensure MHRV unit has summer bypass setting","the maximum angle of the summer sun can be calculated by using the following formula 90° - latitude + 23.5° = maximum sun angle","the minimum angle of the winter sun can be calculated by using the following formula 90° - latitude - 23.5° = minimum sun angle","designed to allow purging of overheated air – through and through ventilation with openable windows at both ends of building to allow through draught and cooling","using the above information an appropriate overhang can be designed"]} },
+    { id: "cons-2016-hl-q10-b-r2", kind: "anyN", verbatim: "Brise Soleil", marks: 12, contextNote: "Brise Soleil", openList: true, group: {"claimMax":2,"perOption":6,"options":["this works on the same principle as the overhang and is used to reduce the amount of summer sun entering a building","adjustable brise soleil can be adjusted to suit the weather conditions at a particular time","external roller blinds, awnings and sliding screens are the most common types"]} },
+    { id: "cons-2016-hl-q10-b-r3", kind: "anyN", verbatim: "Dynamic Glass", marks: 18, contextNote: "Dynamic Glass", openList: true, group: {"claimMax":3,"perOption":6,"options":["standard float glass with an electrochromic coating applied on one of the surfaces","automatically adjusts its tint in response to environmental conditions","eliminates the need for blinds or shades","allows visible light to enter the building while filtering out infra-red and ultraviolet light"]} },
+    { id: "cons-2016-hl-q10-b-r4", kind: "anyN", verbatim: "___________________________________________________________________________________________________________", marks: 18, contextNote: "___________________________________________________________________________________________________________", openList: true, group: {"claimMax":3,"perOption":6,"options":["can be used in any situation where excessive solar heat gain is likely to be an issue, for example south facing glazing","dynamic glass allows control over the amount of infra-red as well as solar gain that enters the building","occupants can manually control tint of glass by apps on smart phones / tablets or by wall switches","achieves a reduction of up to 20% in energy consumption","provides an important advancement in sustainable design"]} },
     ],
   } as SecCard,
   {
@@ -466,6 +512,20 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2017, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2017 Higher Level — © State Examinations Commission.",
+    id: "cons-2017-hl-q7-a", topicId: "cons-3-8", conceptId: "vertical-section-through-roof-structure-typical",
+    section: "B", questionRef: "2017 HL Q7(a)",
+    questionText: "To a scale of 1:10, draw a vertical section through the roof structure. Show the typical construction details from a level 400 mm below the ceiling up to ridge level, and include both external walls. Show the typical design detailing at one of the eaves and include battens, membranes and four courses of slate at eaves. Label the components.",
+    tariffModel: {"kind":"fixed","notation":"12 x 4 + 6 x 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 72,
+    rows: [
+    { id: "cons-2017-hl-q7-a-r1", kind: "anyN", verbatim: "Roof Details (any 6 × 4 marks)", marks: 48, contextNote: "Roof Details (any 6 × 4 marks)", openList: true, group: {"claimMax":12,"perOption":4,"options":["Battens 50 × 30 - 40 mm","Prefabricated roof trusses at 400-600 centres","300-600 mm insulation to ceiling","Facia, soffit, gutter (any 2)","Ventilation","Double headplate 200 ×","Insulated service cavity","12.5 mm gypsum plasterboard and hardwall skim finish","Airtight tape at wall and ceiling junction to ensure airtightness","Racking board 9-20 mm OSB or plywood","Breather membrane with taped joints","Both walls","(8 6 4)"]} },
+    { id: "cons-2017-hl-q7-a-r2", kind: "anyN", verbatim: "Wall Details (any 5 × 4 marks)", marks: 24, contextNote: "Wall Details (any 5 × 4 marks)", openList: true, group: {"claimMax":6,"perOption":4,"options":["Double headplate 200 ×","Vertical stud framework 200 × 50 @400 centres","Insulated service cavity","Vapour barrier to ceiling and wall-joints sealed and taped","12.5 mm gypsum plasterboard and hardwall skim finish","Airtight tape at wall and ceiling junction to ensure airtightness","Insulation 200 mm","Racking board 9-20 mm OSB or plywood","Breather membrane with taped joints","Vapour diffusion cavity/wall ties/cavity closer (any two)","100mm concrete block outer leaf","15-20 mm – 2 coats render"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2018, level: "higher",
     paperFileid: "LC029ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
@@ -552,9 +612,9 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2018 HL Q5(a)",
     stem: "The scheme groups its answer under: Heat lost through uninsulated floor; 37350",
     questionText: "Calculate the U-value of the uninsulated concrete ground floor, given the following data: Sand/cement fine screed thickness 50 mm Concrete floor slab thickness 100 mm Radon barrier thickness 0.25 mm Sand blinding thickness 40 mm Hardcore thickness 200 mm Subsoil thickness 300 mm Thermal data of the concrete ground floor: Resistance of internal top surface of floor (R) 0.104 m2 °C/W Resistivity of fine screed (r) 0.710 m °C/W Conductivity of concrete floor slab (k) 1.280 W/m °C Conductivity of radon barrier (k) 0.250 W/m °C Conductivity of sand blinding (k) 0.160 W/m °C Conductivity of hardcore (k) 1.350 W/m °C Conductivity of subsoil (k) 1.600 W/m °C",
-    tariffModel: {"kind":"bestNofParts","notation":"9 x 3","answer":9,"ofParts":10,"perPart":3}, totalMarks: 27,
+    tariffModel: {"kind":"bestNofParts","notation":"9 x 3","answer":9,"ofParts":9,"perPart":3}, totalMarks: 27,
     rows: [
-    { id: "cons-2018-hl-q5-a-r1", kind: "anyN", verbatim: "Calculate the U-value of the uninsulated concrete ground floor, given the following data: Sand/cement fine screed thickn", marks: 27, openList: true, group: {"claimMax":9,"perOption":3,"options":["U-value of external wall (10 points × 3 marks)","Tabulation","Internal top surface resistance","Fine screed","Concrete floor slab","Radon barrier","Sand blinding","Hardcore","Subsoil","Calculation of U-value of ground floor"]} },
+    { id: "cons-2018-hl-q5-a-r1", kind: "anyN", verbatim: "Calculate the U-value of the uninsulated concrete ground floor, given the following data: Sand/cement fine screed thickn", marks: 27, openList: true, group: {"claimMax":9,"perOption":3,"options":["Tabulation","Internal top surface resistance","Fine screed","Concrete floor slab","Radon barrier","Sand blinding","Hardcore","Subsoil","Calculation of U-value of ground floor"]} },
     ],
   } as SecCard,
   {
@@ -659,6 +719,20 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"bestNofParts","notation":"4 x 4","answer":4,"ofParts":5,"perPart":4}, totalMarks: 16,
     rows: [
     { id: "cons-2018-hl-q10-c-r1", kind: "anyN", verbatim: "South but not more than 30° off the East-West axis", marks: 16, contextNote: "South but not more than 30° off the East-West axis", openList: true, group: {"claimMax":4,"perOption":4,"options":["a smaller glazed area to North leads to less thermal energy loss","south-facing roof provides suitably aligned surfaces for solar panels for domestic water heating and photovoltaic panels for energy generation","South-West elevation provides for greater solar gain in the evenings in Ireland","if the ideal orientation not possible, insulation has to be increased","careful positioning of the fenestration to ensure maximum solar gain and minimum heat loss through the building fabric"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2018, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Higher Level — © State Examinations Commission.",
+    id: "cons-2018-hl-q4-b", topicId: "cons-1-3", conceptId: "extract-from-site-location-map-shown",
+    section: "B", questionRef: "2018 HL Q4(b)",
+    stem: "The scheme groups its answer under: South; ___________________________________________________________________________________________________________",
+    questionText: "An extract from a site location map is shown. A and B are possible sites for a new house. Select your preferred site and discuss three considerations you took into account when selecting your site.",
+    tariffModel: {"kind":"bestNofParts","notation":"3 x 5","answer":3,"ofParts":8,"perPart":5}, totalMarks: 15,
+    rows: [
+    { id: "cons-2018-hl-q4-b-r1", kind: "anyN", verbatim: "An extract from a site location map is shown. A and B are possible sites for a new house. Select your preferred site and", marks: 15, openList: true, group: {"claimMax":3,"perOption":5,"options":["house is positioned close to the perimeter fence, so maximum garden space is available to supply house with garden produce – fruit and vegetables grown on site Why site B may be considered suitable for a new house - such as","access can be gained from the main or minor road, so little roadworks are required – environmentally sustainable","greater proximity to dwellings with existing connections to services such as waste management facilities, water, electricity and broadband, bin collection - resulting in cost-effective provision of public services","long sightlines can be achieved on the straight road, which increase safety when entering or exiting the site – usually for a 60 km/hour speed limit, 90 metre sightlines are required for safe access","houses adjacent to site B are in clusters, thus cluster developments are a favourable development and reflect the existing development patterns","reduced distance from leisure facilities, schools and employment","sufficient space exists to facilitate waste-water treatment and percolation area on the site","the long southerly aspect of the site increases design possibilities to optimise solar gain"]} },
     ],
   } as SecCard,
   {
@@ -1229,6 +1303,20 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Higher Level — © State Examinations Commission.",
+    id: "cons-2020-hl-q7-a", topicId: "cons-5-3", conceptId: "vertical-section-through-ground-floor-hearth",
+    section: "B", questionRef: "2020 HL Q7(a)",
+    questionText: "To a scale of 1:5, draw a vertical section through the ground floor, hearth and chimney. Show the typical construction details from 350 mm below the finished floor to a level 300 mm above the top of the cast iron flue from the stove and include the connection to the flue liner in the chimney. Include three typical dimensions on your drawing.",
+    tariffModel: {"kind":"fixed","notation":"9 x 5 + 3 x 1","answer":null,"ofParts":null,"perPart":null}, totalMarks: 48,
+    rows: [
+    { id: "cons-2020-hl-q7-a-r1", kind: "anyN", verbatim: "Ground Floor", marks: 45, contextNote: "Ground Floor", openList: true, group: {"claimMax":9,"perOption":5,"options":["200 mm Internal wall","Floor insulation","Concrete screed","Radon /DPM","Hearth","150 mm Cast iron flue","Lintel / flue gatherer","Metal flue gatherer","Flue liners"]} },
+    { id: "cons-2020-hl-q7-a-r2", kind: "anyN", verbatim: "Hearth / Stove / Chimney", marks: 3, contextNote: "Hearth / Stove / Chimney", openList: true, group: {"claimMax":3,"perOption":1,"options":["Hearth","Stove","150 mm Cast iron flue","Lintel / flue gatherer","Chimney blockwork","Metal flue gatherer","Flue liners","Lime sand fill / vermiculite","Internal plaster"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2021, level: "higher",
     paperFileid: "LC029ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2021 Higher Level — © State Examinations Commission.",
@@ -1514,9 +1602,9 @@ export const CARDS: SecCard[] = [
     id: "cons-2021-hl-q8-a", topicId: "cons-5-3", conceptId: "heating-and-hot-water-layout",
     section: "B", questionRef: "2021 HL Q8(a)",
     questionText: "Using notes and a single-line diagram, show a typical design layout for both the heating system and hot water system. Show two independently controlled heating zones, one on each floor. Include three radiators on each floor and give the typical sizes of the pipework.",
-    tariffModel: {"kind":"bestNofParts","notation":"1 x 4","answer":1,"ofParts":6,"perPart":4}, totalMarks: 4,
+    tariffModel: {"kind":"bestNofParts","notation":"7 x 4","answer":7,"ofParts":8,"perPart":4}, totalMarks: 28,
     rows: [
-    { id: "cons-2021-hl-q8-a-r1", kind: "anyN", verbatim: "Typical sizes of pipework - any two", marks: 4, contextNote: "Typical sizes of pipework", openList: true, group: {"claimMax":1,"perOption":4,"options":["Ø15 mm Cold water rising main","Ø22 mm Primary flow and return to radiator","Ø15 mm Pipes to radiators","Ø22 mm Cold water feed to cylinder","Ø28 mm Hot water feed","Ø28 mm Overflow pipe"]} },
+    { id: "cons-2021-hl-q8-a-r1", kind: "anyN", verbatim: "Typical sizes of pipework", marks: 28, contextNote: "Typical sizes of pipework", openList: true, group: {"claimMax":7,"perOption":4,"options":["Radiators ground floor and first floor","Zone thermostats","Cylinder and coil","Rising main","Feed to expansion tank","Cold feed from expansion tank","Flow pipe to radiators","Typical sizes of pipework - any two"]} },
     ],
   } as SecCard,
   {
@@ -1569,9 +1657,9 @@ export const CARDS: SecCard[] = [
     id: "cons-2021-hl-q9-b", topicId: "cons-5-8", conceptId: "ring-main-circuit-wiring-layout",
     section: "B", questionRef: "2021 HL Q9(b)",
     questionText: "Using notes and freehand sketches, show the design of a typical wiring layout for a ring main circuit to include: • distribution board • three electrical sockets. Indicate the typical sizes and colour coding of the electrical cables.",
-    tariffModel: {"kind":"bestNofParts","notation":"6 x 5","answer":6,"ofParts":7,"perPart":5}, totalMarks: 30,
+    tariffModel: {"kind":"bestNofParts","notation":"6 x 5","answer":6,"ofParts":6,"perPart":5}, totalMarks: 30,
     rows: [
-    { id: "cons-2021-hl-q9-b-r1", kind: "anyN", verbatim: "Ring main circuit – typical detailing", marks: 30, contextNote: "Ring main circuit – typical detailing", openList: true, group: {"claimMax":6,"perOption":5,"options":["Typical wiring layout for ring main circuit (30 marks)","Distribution board","Three sockets","Live cabling","Neutral cabling","Earth cabling","Cable size (2) and colour (3)"]} },
+    { id: "cons-2021-hl-q9-b-r1", kind: "anyN", verbatim: "Ring main circuit – typical detailing", marks: 30, contextNote: "Ring main circuit – typical detailing", openList: true, group: {"claimMax":6,"perOption":5,"options":["Distribution board","Three sockets","Live cabling","Neutral cabling","Earth cabling","Cable size (2) and colour (3)"]} },
     ],
   } as SecCard,
   {
@@ -2446,9 +2534,9 @@ export const CARDS: SecCard[] = [
     id: "cons-2024-hl-q8-a", topicId: "cons-5-2", conceptId: "hot-water-and-heating-layout",
     section: "B", questionRef: "2024 HL Q8(a)",
     questionText: "Using notes and a single-line diagram, show a typical design layout for both the hot water system and the heating system. On the diagram, show two independently controlled heating zones, one on each floor. Include two radiators on each floor and give typical sizes of the pipework.",
-    tariffModel: {"kind":"bestNofParts","notation":"1 x 4","answer":1,"ofParts":6,"perPart":4}, totalMarks: 4,
+    tariffModel: {"kind":"bestNofParts","notation":"7 x 4","answer":7,"ofParts":8,"perPart":4}, totalMarks: 28,
     rows: [
-    { id: "cons-2024-hl-q8-a-r1", kind: "anyN", verbatim: "Typical sizes of pipework - any two", marks: 4, contextNote: "Typical sizes of pipework", openList: true, group: {"claimMax":1,"perOption":4,"options":["Ø15 mm Cold water rising main","Ø22 mm Primary flow and return to radiator","Ø15 mm Pipes to radiators","Ø22 mm Cold water feed to cylinder","Ø28 mm Hot water feed","Ø28 mm Overflow pipe"]} },
+    { id: "cons-2024-hl-q8-a-r1", kind: "anyN", verbatim: "Typical sizes of pipework", marks: 28, contextNote: "Typical sizes of pipework", openList: true, group: {"claimMax":7,"perOption":4,"options":["Wood-burning stove","Zone control panel","Cylinder and coil","Rising main","Overflow pipe","Expansion pipe or vessel","Pump","Typical sizes of pipework - any two"]} },
     ],
   } as SecCard,
   {
@@ -2463,6 +2551,19 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2024-hl-q8-b-r1", kind: "anyN", verbatim: "Solar Collector", marks: 6, contextNote: "Solar Collector", openList: true, group: {"claimMax":1,"perOption":6,"options":["Daylight hits the solar collector and the solar energy is absorbed by the tubes","The solar energy is transferred to the solar collector liquid contained in the solar collector tubes","The heated solar fluid travels to the manifold at the top of the solar collector and passes heat to the water circulated from the hot water cylinder coil","The cold water coming from the cylinder is heated up as it passes through the solar collector manifold - heat exchange","The heated water is circulated back to heat the hot water cylinder through the coil","The cooled heat transfer water then returns to the solar collector for reheating","A control panel controls the hot water temperature in the system and pumping when the required temperatures are reached","The expansion vessel absorbs any excess fluid pressure caused by thermal expansion in the system"]} },
     { id: "cons-2024-hl-q8-b-r2", kind: "anyN", verbatim: "Photovoltaic Panels", marks: 6, contextNote: "Photovoltaic Panels", openList: true, group: {"claimMax":1,"perOption":6,"options":["Photovoltaic panels absorb sunlight and converts it into direct current (D.C.)","This current is converted to alternating current (A.C.) by an inverter","The inverter feeds A.C. into the domestic fuse board","A solar immersion diverter switches the immersion on when the photovoltaic panels are generating more electricity than a house needs","This uses the spare electricity to heat water in the hot water storage cylinder","The solar immersion diverter works by constantly monitoring the electricity usage in a house. This is monitored by the CT sensor clamp","When a house is exporting electricity to Ireland’s","The immersion diverter device heats the water in the water cylinder for free","When the demand in the house increases or the solar generation decreases, the immersion diverter will recognise this and reduce the amount of electricity that it is sending to the immersion"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2024 Higher Level — © State Examinations Commission.",
+    id: "cons-2024-hl-q9-c", topicId: "cons-8-3", conceptId: "approaches-to-reducing-sound-transmission",
+    section: "B", questionRef: "2024 HL Q9(c)",
+    questionText: "Discuss two approaches used to reduce the transmission of sound in the design of a dwelling house. Identify the sound insulation principle associated with each approach.",
+    tariffModel: {"kind":"bestNofParts","notation":"2 x 4","answer":2,"ofParts":3,"perPart":4}, totalMarks: 8,
+    rows: [
+    { id: "cons-2024-hl-q9-c-r1", kind: "anyN", verbatim: "Discuss two approaches used to reduce the transmission of sound in the design of a dwelling house. Identify the sound in", marks: 8, openList: true, group: {"claimMax":2,"perOption":4,"options":["Sound insulation principle: Heaviness","Sound insulation principle: Completeness","Sealants absorb sound energy and prevent it from passing through the gaps and cracks"]} },
     ],
   } as SecCard,
   {

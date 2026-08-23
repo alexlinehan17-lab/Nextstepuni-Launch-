@@ -26,7 +26,10 @@ PLAN = [
     (5, 'c', 'cons-6-1', 'proposed-upgrade-thermal-properties-above-wall'),
     (9, 'a', 'cons-5-8', 'where-electrical-circuits-are-typically-used'),
     (10, 'a', 'cons-4-2', 'minimising-heat-loss-storing-heat-gain'),
-    (10, 'c', 'cons-1-2', 'advantages-disadvantages-making-passive-house-standard'),]
+    (10, 'c', 'cons-1-2', 'advantages-disadvantages-making-passive-house-standard'),
+    (4, 'c', 'cons-1-1', 'advantages-disadvantages-building-off-houses-irish'),
+    (6, 'a', 'cons-6-3', 'features-design-contribute-house-having-low'),
+    (10, 'b', 'cons-6-3', 'passive-house-shown-overheats-summer-reasons'),]
 
 for q, letter, topic, concept in PLAN:
     try:

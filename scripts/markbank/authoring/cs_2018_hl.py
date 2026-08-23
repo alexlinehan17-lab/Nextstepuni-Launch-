@@ -29,7 +29,8 @@ PLAN = [
     (7, 'b', 'cons-6-2', 'clearly-best-practice-design-detailing-ensure'),
     (8, 'c', 'cons-5-3', 'design-considerations-should-taken-into-account'),
     (9, 'c', 'cons-6-2', 'design-prevent-air-leakage-junction-stud'),
-    (10, 'c', 'cons-6-4', 'preferred-orientation-upgraded-design-include-sun'),]
+    (10, 'c', 'cons-6-4', 'preferred-orientation-upgraded-design-include-sun'),
+    (4, 'b', 'cons-1-3', 'extract-from-site-location-map-shown'),]
 
 for q, letter, topic, concept in PLAN:
     try:

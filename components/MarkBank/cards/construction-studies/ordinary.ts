@@ -810,9 +810,9 @@ export const CARDS: SecCard[] = [
     id: "cons-2020-ol-q5-a", topicId: "cons-3-8", conceptId: "vertical-section-through-roof-ridge-typical",
     section: "B", questionRef: "2020 OL Q5(a)",
     questionText: "To a scale of 1:5, draw a vertical section through the roof at the ridge. Show the typical construction details from the top of the ridge to a level 100 mm below the collar ties. The collar ties are positioned 900 mm below ridge level. Include three courses of slate at the ridge. Include three typical dimensions on your drawing.",
-    tariffModel: {"kind":"bestNofParts","notation":"7 x 5","answer":7,"ofParts":13,"perPart":5}, totalMarks: 35,
+    tariffModel: {"kind":"bestNofParts","notation":"7 x 5","answer":7,"ofParts":12,"perPart":5}, totalMarks: 35,
     rows: [
-    { id: "cons-2020-ol-q5-a-r1", kind: "anyN", verbatim: "To a scale of 1:5, draw a vertical section through the roof at the ridge. Show the typical construction details from the", marks: 35, openList: true, group: {"claimMax":7,"perOption":5,"options":["Draw a vertical section through the rafters, collar and the ridge","Ridge tile","Ridge vent","Roofing slates","Battens 50 mm x 35 mm","Breather membrane","Ridge board 275 mm x 32 mm","Rafter 200 mm x 50 mm","Collar tie 200 mm x 50 mm","Insulation between rafters","Airtight membrane","Insulated plasterboard","Plaster skim"]} },
+    { id: "cons-2020-ol-q5-a-r1", kind: "anyN", verbatim: "To a scale of 1:5, draw a vertical section through the roof at the ridge. Show the typical construction details from the", marks: 35, openList: true, group: {"claimMax":7,"perOption":5,"options":["Ridge tile","Ridge vent","Roofing slates","Battens 50 mm x 35 mm","Breather membrane","Ridge board 275 mm x 32 mm","Rafter 200 mm x 50 mm","Collar tie 200 mm x 50 mm","Insulation between rafters","Airtight membrane","Insulated plasterboard","Plaster skim"]} },
     ],
   } as SecCard,
   {

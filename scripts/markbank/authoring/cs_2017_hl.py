@@ -34,7 +34,8 @@ PLAN = [
     (9, 'c', 'cons-1-1', 'test-may-carried-out-measure-consistency'),
     (10, 'a', 'cons-6-2', 'importance-passive-house-design-airtightness-indoor'),
     (10, 'b', 'cons-4-2', 'diagram-shows-ground-floor-plan-semi'),
-    (10, 'c', 'cons-1-2', 'advantages-siting-mhrv-unit-hallway-shown'),]
+    (10, 'c', 'cons-1-2', 'advantages-siting-mhrv-unit-hallway-shown'),
+    (7, 'a', 'cons-3-8', 'vertical-section-through-roof-structure-typical'),]
 
 for q, letter, topic, concept in PLAN:
     try:

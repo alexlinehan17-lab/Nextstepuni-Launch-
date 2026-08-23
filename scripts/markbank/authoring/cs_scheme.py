@@ -177,7 +177,10 @@ def _rewrap(src):
         t = line.strip()
         if not t:
             continue
-        if BULLET.match(t) or not out:
+        if t == BARRIER:
+            out.append(BARRIER)
+            continue
+        if BULLET.match(t) or not out or out[-1] == BARRIER:
             out.append(t)
             continue
         prev = out[-1]
@@ -188,10 +191,12 @@ def _rewrap(src):
             out[-1] = prev.rstrip() + ' ' + t
         else:
             out.append(t)
-    return out
+    return [l for l in out if l != BARRIER]
 
 
 PAGE_MARK = re.compile(r'^##\s*Page\s+(\d+)\s*$', re.I)
+# Marks where page furniture was removed, so nothing is joined across the gap.
+BARRIER = '\x00'
 
 
 def blocks(lines, pages=None):
@@ -235,6 +240,14 @@ def blocks(lines, pages=None):
                         out[(q, letter)].append(pm.group(2).strip())
             continue
         if FURNITURE.match(line):
+            # Leave a barrier where a page header was dropped. Removing it
+            # silently made two lines adjacent that are not adjacent in the
+            # file, and _rewrap then welded a bullet to whatever followed the
+            # header -- "solar panels can also be used for water heating Scrúdú
+            # Ardte..." -- text the provenance gate can never find because the
+            # scheme never printed it contiguously.
+            if q is not None and letter is not None:
+                out.setdefault((q, letter), []).append(BARRIER)
             continue
         p = PART.match(line)
         if p and q is not None:
@@ -272,12 +285,23 @@ class Scheme:
         self.marks = blocks(mark)
 
     def parts(self):
+        """Every (question, letter) either half describes.
+
+        A (q, None) bucket is dropped where ANY half gives that question
+        lettered parts. blocks() filters within one half, so a question lettered
+        in the indicative half but not in the mark half kept a phantom
+        (q, None) — 23 of them, each reported as having no question text
+        because the paper has no such part.
+        """
         # Question keys are ints except the alternative questions, which are
         # '10alt' — sort on a normalised pair so the two kinds can coexist.
         def order(k):
             q, letter = k
             return (int(str(q).replace('alt', '')), str(q).endswith('alt'), letter or '')
-        return sorted(set(self.indicative) | set(self.marks), key=order)
+        keys = set(self.indicative) | set(self.marks)
+        lettered = {q for q, letter in keys if letter is not None}
+        keys = {k for k in keys if k[1] is not None or k[0] not in lettered}
+        return sorted(keys, key=order)
 
     def bullets(self, q, letter, half='marks'):
         """Every answer item the scheme lists for this part.

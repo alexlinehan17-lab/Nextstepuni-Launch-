@@ -719,16 +719,31 @@ class Author:
             else:
                 n, per = self.tariff(q, letter, name, len(options),
                                      gi if multi else None)
-            if n > len(options) and len(gs) == 1:
+            if n > len(options):
                 # The mark table is the fuller list for this part -- see
-                # cs_scheme.mark_items. Only tried where the part has a single
-                # group, because with several the two halves are not the same
-                # list and swapping one for the other would mix them.
-                alt = [it.strip(' .;') for it in self.S.mark_items(q, letter)
-                       if it.strip() and not CONTENT_FREE.match(it.strip(' .;'))]
-                alt = [it for it in alt if _squash(it) in self.raw]
-                if len(alt) >= n:
-                    options = alt
+                # cs_scheme.mark_items. Tried whatever the group count: the
+                # indicative half sometimes groups junk (2016 Higher Q5(a) reads
+                # "Wall A", a calculation string and "1000") while the mark
+                # table names every layer of the wall. Only accepted when it
+                # actually satisfies the tariff, so a worse list cannot win.
+                # PRICED rows first. mark_items() returns every content line,
+                # priced or not, which for a vertical section is twice the list
+                # and lands past the display cap; the priced rows are what the
+                # examiner actually awards and are usually exactly the tariff's
+                # length.
+                # Scaffold rows excluded: "Functional requirement 1/2/3" is
+                # where an answer goes, not an answer, and a card offering those
+                # as its options teaches nothing. Counts cannot show this --
+                # only reading the emitted options can.
+                for source in ([lab for lab, _ in self.S.mark_rows(q, letter)
+                                if not CS.SCAFFOLD_ROW.match(lab)],
+                               self.S.mark_items(q, letter, qtext)):
+                    alt = [it.strip(' .;') for it in source
+                           if it.strip() and not CONTENT_FREE.match(it.strip(' .;'))
+                           and _squash(it) in self.raw]
+                    if n <= len(alt) <= MAX_OPTIONS_SHOWN:
+                        options = alt
+                        break
             if n > len(options):
                 raise Refused(f'Q{q}({letter}) [{name}]: tariff claims {n} of only '
                               f'{len(options)} printed options')
