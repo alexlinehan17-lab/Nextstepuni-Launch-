@@ -143,11 +143,15 @@ def line_text(line):
         # CambriaMath variable beside it -- so a line-wide minimum said the
         # exponent was not raised and "Integrates e^(5x)" read as "e5x".
         prev = spans[i - 1] if i else None
+        # Smaller by 1.5 or more, not strictly more than 1.5: the cosine rule
+        # in 2021 HL Paper 2 Q7(c) sets its exponents at 9pt against a 10.5pt
+        # base, exactly 1.5 apart, and "28^2 + 4^2 - 30^2" shipped as
+        # "282 + 42-302".
         # A superscript is a smaller span that is NOT lower than the one it
         # follows. Demanding it be 0.8pt higher missed this font, which raises
         # its exponents by 0.59: "−2(x²−2x−3)" came out "−2(x2−2x−3)", which is
         # a different expression. A subscript sits LOWER and is still excluded.
-        raised = (s['size'] < base - 1.5 and prev is not None
+        raised = (s['size'] <= base - 1.5 and prev is not None
                   and s['bbox'][1] <= prev['bbox'][1] + 0.2)
         # An exponent is short. Prose set a size smaller than the body -- an
         # examiner's aside, a footnote -- is not an exponent, and wrapping it
@@ -155,7 +159,7 @@ def line_text(line):
         # The other direction: a smaller span sitting LOWER is a subscript. It
         # was excluded outright, which spelled a logarithm's base into the
         # number beside it -- "log_3 7" came out "log37".
-        lowered = (s['size'] < base - 1.5 and prev is not None
+        lowered = (s['size'] <= base - 1.5 and prev is not None
                    and s['bbox'][1] > prev['bbox'][1] + 0.2)
         body = t.strip()
         if len(body) > 8 or re.search(r'[A-Za-z]{2,}', body):
@@ -211,13 +215,68 @@ def _one_line(candidates, key):
     return [w for w in candidates if abs(key(w) - edge) <= LINE_TOL]
 
 
+def _close(cur):
+    x0 = min(bb[0] for bb, _ in cur)
+    y0 = min(bb[1] for bb, _ in cur)
+    x1 = max(bb[2] for bb, _ in cur)
+    y1 = max(bb[3] for bb, _ in cur)
+    return (x0, y0, x1, y1, subscripts(superscripts(''.join(t for _, t in cur))))
+
+
+def words(page):
+    """The page's words, each already read the way line_text() reads a line.
+
+    PyMuPDF's own get_text('words') carries no font size, so an exponent inside
+    a fraction was flattened -- the scheme's "(28^2 + 4^2 - 30^2)/(2(28)(4))"
+    came back as "282 + 42-302/2(28)(4)", a different expression. Built from the
+    character stream instead, so each word knows which of its characters were
+    raised or lowered. Same 5-tuple shape as get_text('words'), so the fraction
+    splice reads it unchanged.
+    """
+    out = []
+    for b in page.get_text('rawdict')['blocks']:
+        for ln in b.get('lines', []):
+            weight = {}
+            for sp in ln.get('spans', []):
+                for ch in sp['chars']:
+                    if ch['c'].strip():
+                        weight[sp['size']] = weight.get(sp['size'], 0) + 1
+            if not weight:
+                continue
+            base = max(weight, key=lambda k: (weight[k], k))
+            cur, prev_y, prev_x1 = [], None, None
+            for sp in ln.get('spans', []):
+                for ch in sp['chars']:
+                    box = ch['bbox']
+                    if not ch['c'].strip() or (prev_x1 is not None
+                                               and box[0] - prev_x1 > 1.2):
+                        if cur:
+                            out.append(_close(cur))
+                            cur = []
+                    prev_x1 = box[2]
+                    if not ch['c'].strip():
+                        continue
+                    t = demangle(ch['c'])
+                    small = sp['size'] <= base - 1.5 and prev_y is not None
+                    if small and box[1] <= prev_y + 0.2:
+                        t = f'^({t})'
+                    elif small and box[1] > prev_y + 0.2:
+                        t = f'_({t})'
+                    else:
+                        prev_y = box[1]
+                    cur.append((box, t))
+            if cur:
+                out.append(_close(cur))
+    return out
+
+
 def fractions(page, cut=300):
     """[(x0, top, bottom, text)] -- each stacked fraction read back into a line."""
-    words = [w for w in page.get_text('words') if w[4].strip()]
+    found = [w for w in words(page) if w[4].strip()]
     out, band = [], []
     for bar in sorted(_bars(page), key=lambda r: (r.y0, r.x0)) + [None]:
         if band and (bar is None or bar.y0 - band[0].y0 > SAME_LINE):
-            piece = _splice(words, band, cut)
+            piece = _splice(found, band, cut)
             if piece:
                 out.append(piece)
             band = []
@@ -257,8 +316,8 @@ def _splice(words, band, cut=300):
         top = hi if top is None else min(top, hi)
         bottom = lo if bottom is None else max(bottom, lo)
         pieces.append((bar.x0, '{}/{}'.format(
-            ' '.join(demangle(w[4]) for w in sorted(num, key=lambda w: w[0])),
-            ' '.join(demangle(w[4]) for w in sorted(den, key=lambda w: w[0])))))
+            ' '.join(w[4] for w in sorted(num, key=lambda w: w[0])),
+            ' '.join(w[4] for w in sorted(den, key=lambda w: w[0])))))
     if not pieces:
         return None
     # The rest of the expression -- the "r(2) =" before the fraction -- is set
@@ -266,7 +325,7 @@ def _splice(words, band, cut=300):
     held = {id(w) for w in claimed}
     for w in words:
         if id(w) not in held and top <= _mid(w) <= bottom:
-            pieces.append((w[0], demangle(w[4])))
+            pieces.append((w[0], w[4]))
     text = ' '.join(t for _, t in sorted(pieces, key=lambda q: q[0]))
     return (min(x for x, _ in pieces), top, bottom,
             spacing(re.sub(r'\s+', ' ', text).strip()))

@@ -85,7 +85,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-OL-paper-p011-i1",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-paper-p011-i1.png",
           "srcHash": "6f8c7ed06b3c9f3e95cfd23401c637c5",
-          "alt": "The marking scheme's printed worked solution for 2021 OL Paper 1 Q3(b), typeset as the State Examinations Commission set it. It reads: f(5) = 25 + 5a + b = 0 f(−2) = 4 −2a + b = 0 5a + b = − 25 2a−b = 4 7a = −21 a = −3 ⇒b = −10 (x−5)(x + 2) = 0 x²−3x−10 = 0 a = −3 ⇒b = −10 2 ± √(−2)2−4(5)(−9)/(2)(5) = 2 ± √184/10 x = 1∙56 or x = −1∙16",
+          "alt": "The marking scheme's printed worked solution for 2021 OL Paper 1 Q3(b), typeset as the State Examinations Commission set it. It reads: f(5) = 25 + 5a + b = 0 f(−2) = 4 −2a + b = 0 5a + b = − 25 2a−b = 4 7a = −21 a = −3 ⇒b = −10 (x−5)(x + 2) = 0 x²−3x−10 = 0 a = −3 ⇒b = −10 2 ± √(−2)² − 4(5)(−9)/(2)(5) = 2 ± √184/10 x = 1∙56 or x = −1∙16",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -358,7 +358,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-OL-paper-p022-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-paper-p022-i0.png",
           "srcHash": "1ddf2403ccfbcd680f780f0872d03d1d",
-          "alt": "The marking scheme's printed worked solution for 2021 OL Paper 1 Q9(iii), typeset as the State Examinations Commission set it. It reads: (iii) S20 = 20/2 [2(1) + (20 −1)1] = 210",
+          "alt": "The marking scheme's printed worked solution for 2021 OL Paper 1 Q9(iii), typeset as the State Examinations Commission set it. It reads: (iii) S₂₀ = 20/2 [2(1) + (20 − 1)1] = 210",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -415,13 +415,13 @@ export const CARDS: SecCard[] = [
     questionText: "Find how long it takes to release 1 million cubic metres (1 000 000 m³) of water. (i) Note 1 m³ = 1000 litres. Give your answer correct to the nearest minute",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2021-ol-p1-q10-a-i-r1", kind: "anyN", verbatim: "10⁹ or equivalent x/250000 where x ≠ 109 Correct answer without supporting work Divides by 1000 Use of 60", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["10⁹ or equivalent x/250000 where x ≠ 109 Correct answer without supporting work Divides by 1000 Use of 60","10⁹  250000 or 4000"],"perOptionSteps":[3,7]} },
+    { id: "maths-2021-ol-p1-q10-a-i-r1", kind: "anyN", verbatim: "10⁹ or equivalent x/2⁵⁰⁰⁰⁰ where x ≠ 10⁹ Correct answer without supporting work Divides by 1000 Use of 60", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["10⁹ or equivalent x/2⁵⁰⁰⁰⁰ where x ≠ 10⁹ Correct answer without supporting work Divides by 1000 Use of 60","10⁹  250000 or 4000"],"perOptionSteps":[3,7]} },
     ],
     figure: {
           "candId": "maths-2021-OL-paper-p025-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-paper-p025-i0.png",
           "srcHash": "900d8949382560c194ea711a74eb12fa",
-          "alt": "The marking scheme's printed worked solution for 2021 OL Paper 1 Q10(a)(i), typeset as the State Examinations Commission set it. It reads: Q10 Model Solution – 50 Marks (i) 109/250000 = 4000 seconds = 66·67 minutes = 67 minutes",
+          "alt": "The marking scheme's printed worked solution for 2021 OL Paper 1 Q10(a)(i), typeset as the State Examinations Commission set it. It reads: Q10 Model Solution – 50 Marks (i) 10⁹/2⁵⁰⁰⁰⁰ = 4000 seconds = 66·67 minutes = 67 minutes",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -604,13 +604,13 @@ export const CARDS: SecCard[] = [
     questionText: "The heights of a given population are normally distributed. 95% of the population fall within the height range [147∙9 cm ↔ 178∙7 cm]. Using the empirical rule, find the mean and the standard deviation of the distribution of heights in the population",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2021-ol-p2-q5-a-r1", kind: "anyN", verbatim: "Mean:", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Mean:","178∙7 + 147∙9/2 = 163∙3","147∙9 + (178∙7/2 −147∙9 ) = 163∙3","Std. Dev.:","4𝜎= 178∙7 −147∙9 ⇒ 𝜎= 7∙7","2𝜎= 178∙7 −163∙3 ⇒ 𝜎= 7∙7","(Scatter Plot below)","Height vs Arm Span","Arm Span (cm)","150 155","Height (cm)","−0∙6"],"perOptionSteps":[2,3]} },
+    { id: "maths-2021-ol-p2-q5-a-r1", kind: "anyN", verbatim: "Mean:", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Mean:","178∙7 + 147∙9/2 = 163∙3","147∙9 + (178∙7 )/2 = 163∙3","Std. Dev.:","4𝜎= 178∙7 −147∙9 ⇒ 𝜎= 7∙7","2𝜎= 178∙7 −163∙3 ⇒ 𝜎= 7∙7","(Scatter Plot below)","Height vs Arm Span","Arm Span (cm)","150 155","Height (cm)","−0∙6"],"perOptionSteps":[2,3]} },
     ],
     figure: {
           "candId": "maths-2021-OL-paper-p040-i0",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-paper-p040-i0.png",
           "srcHash": "74bbb91bf38f753fb888be9c7e5f2b99",
-          "alt": "The marking scheme's printed worked solution for 2021 OL Paper 2 Q5(a), typeset as the State Examinations Commission set it. It reads: Mean: 178∙7 + 147∙9/2 = 163∙3 147∙9 + (178∙7/2 −147∙9 ) = 163∙3 Std. Dev.: 4𝜎= 178∙7 −147∙9 ⇒ 𝜎= 7∙7 2𝜎= 178∙7 −163∙3 ⇒ 𝜎= 7∙7 (Scatter Plot below) Height vs Arm Span Arm Span (cm) 150 155 Height (cm) 0∙2 ✓ 0∙9 −0∙6",
+          "alt": "The marking scheme's printed worked solution for 2021 OL Paper 2 Q5(a), typeset as the State Examinations Commission set it. It reads: Mean: 178∙7 + 147∙9/2 = 163∙3 147∙9 + (178∙7 )/2 = 163∙3 Std. Dev.: 4𝜎= 178∙7 −147∙9 ⇒ 𝜎= 7∙7 2𝜎= 178∙7 −163∙3 ⇒ 𝜎= 7∙7 (Scatter Plot below) Height vs Arm Span Arm Span (cm) 150 155 Height (cm) 0∙2 ✓ 0∙9 −0∙6",
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -799,7 +799,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-OL-paper-p007-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-paper-p007-i0.png",
           "srcHash": "15380910cce91a741db4a25dc56bf033",
-          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 1 Q1(a), typeset as the State Examinations Commission set it.",
+          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 1 Q1(a), typeset as the State Examinations Commission set it. It reads: (a), z₁ = −2 −3i and z₁̅= −2 + 3i Im z₁̅ z₂ -6 -5 -4 -3 -2 -1 -1 -2 z₃ -3 -4",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -904,7 +904,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-OL-paper-p011-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-paper-p011-i0.png",
           "srcHash": "7692ec0669cdcbf141fbeb670084401c",
-          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 1 Q3(c), typeset as the State Examinations Commission set it. It reads: 80 × 12 = €960 total annual increase 60% of increase = €960 1% of increase = 960/60 = 16 100% of increase = 16 × 100 = [€]1600 OR Trial and improvement leading to solution OR Need to show solving using a variable?",
+          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 1 Q3(c), typeset as the State Examinations Commission set it. It reads: 80 × 12 = €960 total annual increase 60% of increase = €960 1% of increase = 960/6⁰ = 16 100% of increase = 16 × 100 = [€]1600 OR Trial and improvement leading to solution OR Need to show solving using a variable?",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -988,7 +988,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-OL-paper-p014-i1",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-paper-p014-i1.png",
           "srcHash": "345645dc9abc495799f8670b87aed3f5",
-          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 1 Q5(b), typeset as the State Examinations Commission set it. It reads: 120 miles in 1 hr = 60 × 60 = 3600 secs 120 × 1∙6 km = 192 km in 3600 secs So 192 000 m in 3600 secs So 1 m in 3600/192000 = 0∙01875 secs So 100 m in 100 × 0∙01875 = 1∙875 secs = 1∙9",
+          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 1 Q5(b), typeset as the State Examinations Commission set it. It reads: 120 miles in 1 hr = 60 × 60 = 3600 secs 120 × 1∙6 km = 192 km in 3600 secs So 192 000 m in 3600 secs So 1 m in 3600/1⁹²⁰⁰⁰ = 0∙01875 secs So 100 m in 100 × 0∙01875 = 1∙875 secs = 1∙9",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1093,7 +1093,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-OL-paper-p017-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-paper-p017-i0.png",
           "srcHash": "b0301f825bfd508dbaa38c64460de5d8",
-          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 1 Q6(c), typeset as the State Examinations Commission set it. It reads: (c) n/2 (−508 + 4n−4) = 0 n ≠ 0, so −512 + 4n = 0 So n = 128",
+          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 1 Q6(c), typeset as the State Examinations Commission set it. It reads: (c) n/2 (−508 + 4n − 4) = 0 n ≠ 0, so −512 + 4n = 0 So n = 128",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1219,7 +1219,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-OL-paper-p020-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-paper-p020-i0.png",
           "srcHash": "2c14f4aa31a5de3cf7af5f3b06c86c3a",
-          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 1 Q7(f), typeset as the State Examinations Commission set it. It reads: Q7 (f) Model Solution – 50 Marks/−5∙2±√5∙22−4(−1∙14)(−0∙13) (f) x = −5∙2±√5∙22−4(−1∙14)(−0∙13)/2(−1∙14) = −5∙2±√26∙4472/−2∙28 = 4∙536 and 0.025 = = 4∙54 [mins]",
+          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 1 Q7(f), typeset as the State Examinations Commission set it. It reads: Q7 (f) Model Solution – 50 Marks/−5∙2±√5∙2²−4(−1∙14)(−0∙13) (f) x = −5∙2±√5∙2²−4(−1∙14)(−0∙13)/2(−1∙14) = −5∙2±_√26∙4472/−2∙28 = 4∙536 and 0.025 = = 4∙54 [mins]",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1234,13 +1234,13 @@ export const CARDS: SecCard[] = [
     questionText: "Work out how many ml of acid are in 200 ml of liquid from Bottle A",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2022-ol-p1-q8-a-i-r1", kind: "anyN", verbatim: "(a) (i) 12/100 × 200 = 24 [ml]", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":1,"perOption":5,"options":["(a) (i) 12/100 × 200 = 24 [ml]"]} },
+    { id: "maths-2022-ol-p1-q8-a-i-r1", kind: "anyN", verbatim: "(a) (i) 12/1⁰⁰ × 200 = 24 [ml]", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":1,"perOption":5,"options":["(a) (i) 12/1⁰⁰ × 200 = 24 [ml]"]} },
     ],
     figure: {
           "candId": "maths-2022-OL-paper-p021-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-paper-p021-i0.png",
           "srcHash": "7744d05c853f15af5187ec7ee6c0adb3",
-          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 1 Q8(a)(i), typeset as the State Examinations Commission set it. It reads: (a) (i) 12/100 × 200 = 24 [ml]",
+          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 1 Q8(a)(i), typeset as the State Examinations Commission set it. It reads: (a) (i) 12/1⁰⁰ × 200 = 24 [ml]",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1303,7 +1303,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-OL-paper-p021-i3",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-paper-p021-i3.png",
           "srcHash": "b5d5f6f2a65aa1f3446a83f076e23b14",
-          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 1 Q8(a)(iv), typeset as the State Examinations Commission set it. It reads: (a) 260−250 250 × 100 = 10/250 × 100 = 4 [%]",
+          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 1 Q8(a)(iv), typeset as the State Examinations Commission set it. It reads: (a) 260−250 250 × 100 = 10/2⁵⁰ × 100 = 4 [%]",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1366,7 +1366,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-OL-paper-p022-i2",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-paper-p022-i2.png",
           "srcHash": "e392bc738c6653df61dd8058b8db038e",
-          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 1 Q8(b)(iii), typeset as the State Examinations Commission set it. It reads: Multiply both sides by 6: 2(6h + 5p) −3(6h + 5p) + 6h + 6p = 12 12h + 10p−18h−15p + 6h + 6p = 12 p = 12 OR 2h + 5/3p−3h− 5/2p + h + p = 2 1/6p = 2 p = 12",
+          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 1 Q8(b)(iii), typeset as the State Examinations Commission set it. It reads: Multiply both sides by 6: 2(6h + 5p) −3(6h + 5p) + 6h + 6p = 12 12h + 10p−18h−15p + 6h + 6p = 12 p = 12 OR 2h + 5/3 p − 3h − 5/2 p + h + p = 2 1/6 p = 2 p = 12",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1402,13 +1402,13 @@ export const CARDS: SecCard[] = [
     questionText: "Show that the value of the car will reduce by 20% in its first year, according to this (ii) model",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2022-ol-p1-q9-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, finds 6000 or 6000/30 000", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, finds 6000 or 6000/30 000","Finds 30 6000/000 × 100 but fails to finish"],"perOptionSteps":[2,3]} },
+    { id: "maths-2022-ol-p1-q9-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, finds 6000 or 6000/30 000", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, finds 6000 or 6000/30 000","Finds 6000/3⁰ ⁰⁰⁰ × 100 but fails to finish"],"perOptionSteps":[2,3]} },
     ],
     figure: {
           "candId": "maths-2022-OL-paper-p023-i1",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-paper-p023-i1.png",
           "srcHash": "01d9ccea71c15bcf7bd4106250475996",
-          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 1 Q9(a)(ii), typeset as the State Examinations Commission set it. It reads: (ii) 30 000−24 000/30 000 × 100 = 30 6000/000 × 100 = 20%",
+          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 1 Q9(a)(ii), typeset as the State Examinations Commission set it. It reads: (ii) 30 000−24 000/30 000 × 100 = 6000/3⁰ ⁰⁰⁰ × 100 = 20%",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1507,13 +1507,13 @@ export const CARDS: SecCard[] = [
     questionText: "Eva drives her car home from the garage, a distance of 12 km",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2022-ol-p1-q9-e-r1", kind: "anyN", verbatim: "One correct relevant fraction, or 12 or 18", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["One correct relevant fraction, or 12 or 18","Finds both times, ie ∙2 and ∙3, or 12 minutes and 18 minutes Consistent error finding both times, but finishes correctly Finds 1∙5 or equivalent, from 60/40 in 2nd method"],"perOptionSteps":[3,7]} },
+    { id: "maths-2022-ol-p1-q9-e-r1", kind: "anyN", verbatim: "One correct relevant fraction, or 12 or 18", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["One correct relevant fraction, or 12 or 18","Finds both times, ie ∙2 and ∙3, or 12 minutes and 18 minutes Consistent error finding both times, but finishes correctly Finds 1∙5 or equivalent, from 60/4⁰ in 2nd method"],"perOptionSteps":[3,7]} },
     ],
     figure: {
           "candId": "maths-2022-OL-paper-p024-i2",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-paper-p024-i2.png",
           "srcHash": "c5370af09105863ab4509ff49ec2d19c",
-          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 1 Q9(e), typeset as the State Examinations Commission set it. It reads: (e) Usual time: 12/60 = 0∙2 hours or 12 minutes Time today: 12/40 = 0∙3 hours or 18 minutes % increase in time: (0∙3−0∙2)/0∙2 × 100 = 50% OR (/40−1) × 60 100 = 50%",
+          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 1 Q9(e), typeset as the State Examinations Commission set it. It reads: (e) Usual time: 12/6⁰ = 0∙2 hours or 12 minutes Time today: 12/4⁰ = 0∙3 hours or 18 minutes % increase in time: (0∙3−0∙2)/0∙2 × 100 = 50% OR (/4⁰ 60 − 1) × 100 = 50%",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1591,13 +1591,13 @@ export const CARDS: SecCard[] = [
     questionText: "Find dℎ dt and hence find how long it took the ball to reach its greatest height",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2022-ol-p1-q10-a-iv-r1", kind: "anyN", verbatim: "Some correct differentiation dℎ/dt = 0", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Some correct differentiation dℎ/dt = 0","dℎ/dt correct, and sets = 0 Work of merit in finding dℎ/dt, finishes correctly"],"perOptionSteps":[3,7]} },
+    { id: "maths-2022-ol-p1-q10-a-iv-r1", kind: "anyN", verbatim: "Some correct differentiation dℎ/d^t = 0", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Some correct differentiation dℎ/d^t = 0","dℎ/d^t correct, and sets = 0 Work of merit in finding dℎ/d^t, finishes correctly"],"perOptionSteps":[3,7]} },
     ],
     figure: {
           "candId": "maths-2022-OL-paper-p026-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-paper-p026-i0.png",
           "srcHash": "21a7d1ebb22509a25e7ef1b1329e996f",
-          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 1 Q10(a)(iv), typeset as the State Examinations Commission set it. It reads: (iv) dℎ/dt = −4t + 5 −4t + 5 = 0 at max So t = 1∙25 [secs]",
+          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 1 Q10(a)(iv), typeset as the State Examinations Commission set it. It reads: (iv) dℎ/d^t = −4t + 5 −4t + 5 = 0 at max So t = 1∙25 [secs]",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1660,7 +1660,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-OL-paper-p027-i1",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-paper-p027-i1.png",
           "srcHash": "50dd3391699202fd2cc82bfc2b89dbf4",
-          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 1 Q10(c)(ii), typeset as the State Examinations Commission set it. It reads: 123% is €49∙50 (ii) 1% is 49∙50/123 = 0∙4024 VAT is 23%, which is: 49∙50/123 × 23 = 9∙256 … 9∙26 [nearest cent] or 926 cent",
+          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 1 Q10(c)(ii), typeset as the State Examinations Commission set it. It reads: 123% is €49∙50 (ii) 1% is 49∙50/1²³ = 0∙4024 VAT is 23%, which is: 49∙50/1²³ × 23 = 9∙256 … 9∙26 [nearest cent] or 926 cent",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1723,7 +1723,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-OL-paper-p036-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-paper-p036-i0.png",
           "srcHash": "527d84aac96b43c51f567a2e8c52927b",
-          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q3(a)(i), typeset as the State Examinations Commission set it. It reads: Mean = 17 + 8 + 9 + 8 + 14 + 11 + 28 = 95/7 (13 ∙5714) = 13 ∙6",
+          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q3(a)(i), typeset as the State Examinations Commission set it. It reads: Mean = 17 + 8 + 9 + 8 + 14 + 11 + 28 = 95/7 (13 ∙ 5714) = 13 ∙6",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1765,7 +1765,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-OL-paper-p036-i2",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-paper-p036-i2.png",
           "srcHash": "52cb71e51244518562e2b55a27cb2025",
-          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q3(a)(iii), typeset as the State Examinations Commission set it. It reads: One New number added suggest median is average of two centre numbers Giving 10 + 11/2 = 10 ∙5 Answer = 10",
+          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q3(a)(iii), typeset as the State Examinations Commission set it. It reads: One New number added suggest median is average of two centre numbers Giving 10 + 11/2 = 10 ∙ 5 Answer = 10",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1817,7 +1817,7 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p2-q4-a", topicId: "maths-3-3", conceptId: "group-students-sat-exam-each-student",
+    id: "maths-2022-ol-p2-q4-a", topicId: "maths-1-6", conceptId: "group-students-sat-exam-each-student",
     section: "B", questionRef: "2022 OL Paper 2 Q4(a)",
     questionText: "A group of students sat an exam. Each student was given a grade. The following table shows how many students got each grade",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
@@ -1828,7 +1828,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-OL-paper-p038-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-paper-p038-i0.png",
           "srcHash": "987e2066fb58b420302f1b3d5012b430",
-          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q4(a), typeset as the State Examinations Commission set it. It reads: High Merit Achieved 60° Distinction 65° 40° 195° Merit 8 + 12 + 39 + 13 = 72 360/72 = 5° for every person OR 40 ÷ 8 = 5° per person 5 × 12 = 60° High Merit 5 × 39 = 195° Merit [5 × 13 = 65° Achieved]",
+          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q4(a), typeset as the State Examinations Commission set it. It reads: High Merit Achieved 60° Distinction 65° 40° 195° Merit 8 + 12 + 39 + 13 = 72 360/7² = 5° for every person OR 40 ÷ 8 = 5° per person 5 × 12 = 60° High Merit 5 × 39 = 195° Merit [5 × 13 = 65° Achieved]",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1891,7 +1891,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-OL-paper-p041-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-paper-p041-i0.png",
           "srcHash": "e76da4d8194a5b7ecda823c2c0b69c0c",
-          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q5(a)(ii), typeset as the State Examinations Commission set it. It reads: 60° Area = 1/2 × 8 × 8 × sin 60 = 16√3 [cm2]",
+          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q5(a)(ii), typeset as the State Examinations Commission set it. It reads: 60° Area = 1/2 × 8 × 8 × sin 60 = 16√3 [cm²]",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1975,7 +1975,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-OL-paper-p043-i1",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-paper-p043-i1.png",
           "srcHash": "ff101c1b07c34df4e9c766476a1b800c",
-          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q6(a)(ii), typeset as the State Examinations Commission set it. It reads: 2X = 130° so X = 65° OR |∠DOB| = 180 −130 = 50° X = 180 −50/2 = 130/2 = 65°",
+          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q6(a)(ii), typeset as the State Examinations Commission set it. It reads: 2X = 130° so X = 65° OR |∠DOB| = 180 −130 = 50° X = 180 − 50/2 = 130/2 = 65°",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1990,13 +1990,13 @@ export const CARDS: SecCard[] = [
     questionText: "(iii) The radius of the circle is 18 cm. Find the length of the arc AD. Give your answer in cm, in terms of 𝜋",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2022-ol-p2-q6-a-iii-r1", kind: "anyN", verbatim: "Work of merit Correct relevant formula written 130/360", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit Correct relevant formula written 130/360","Finds circumference Fully correctly-substituted arc-length formula Answer not in terms of 𝜋 Misreading(-1)  If a different arc is correctly calculated e.g. 50/360 × 2𝜋(18) = 5𝜋"],"perOptionSteps":[3,7]} },
+    { id: "maths-2022-ol-p2-q6-a-iii-r1", kind: "anyN", verbatim: "Work of merit Correct relevant formula written 130/360", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Work of merit Correct relevant formula written 130/360","Finds circumference Fully correctly-substituted arc-length formula Answer not in terms of 𝜋 Misreading(-1)  If a different arc is correctly calculated e.g. 50/3⁶⁰ × 2𝜋(18) = 5𝜋"],"perOptionSteps":[3,7]} },
     ],
     figure: {
           "candId": "maths-2022-OL-paper-p044-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-paper-p044-i0.png",
           "srcHash": "94a7092f0e4c5218e77486db42f217e9",
-          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q6(a)(iii), typeset as the State Examinations Commission set it. It reads: Minor arc: 130/360 × 2𝜋(18) = 13𝜋 [cm] Major arc: (360−130)/360 × 2𝜋(18) = 23𝜋 [cm]",
+          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q6(a)(iii), typeset as the State Examinations Commission set it. It reads: Minor arc: 130/3⁶⁰ × 2𝜋(18) = 13𝜋 [cm] Major arc: (360−130)/360 × 2𝜋(18) = 23𝜋 [cm]",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2090,7 +2090,7 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p2-q7-b", topicId: "maths-1-2", conceptId: "complete-table-filling-four-missing-values",
+    id: "maths-2022-ol-p2-q7-b", topicId: "maths-1-6", conceptId: "complete-table-filling-four-missing-values",
     section: "B", questionRef: "2022 OL Paper 2 Q7(b)",
     questionText: "Complete the table, by filling in the four missing values",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
@@ -2122,7 +2122,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-OL-paper-p046-i1",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-paper-p046-i1.png",
           "srcHash": "3654c01e0ca12e20a96f36ab8f8cc65e",
-          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q7(c)(ii), typeset as the State Examinations Commission set it. It reads: P(cat) = 14/40 or7/20 P(3 male dogs) = 11/40 × 10/39 × 9/38 = 33/1976 (0 ∙0167) = 0 ∙017",
+          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q7(c)(ii), typeset as the State Examinations Commission set it. It reads: P(cat) = 14/40 or 7/20 P(3 male dogs) = 11/40 × 10/39 × 9/38 = 33/1976 (0 ∙ 0167) = 0 ∙017",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2132,7 +2132,7 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p2-q7-d", topicId: "maths-1-2", conceptId: "female-cats-were-put-separate-pens",
+    id: "maths-2022-ol-p2-q7-d", topicId: "maths-1-6", conceptId: "female-cats-were-put-separate-pens",
     section: "B", questionRef: "2022 OL Paper 2 Q7(d)",
     questionText: "The 9 female cats were put in 9 separate pens. Work out the number of ways in which this could have been done (that is, the number of different possible arrangements)",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -2164,7 +2164,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-OL-paper-p047-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-paper-p047-i0.png",
           "srcHash": "597f4156e54dac9b8cf3eeee3b732904",
-          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q7(e), typeset as the State Examinations Commission set it. It reads: 40 −10 = 30 animals at end of week P(dog) = 11/15≡ 22/30 so 22 dogs remain. Thus 30 −22 = 8 cats remain at the end of week Therefore the number of cats left the shelter during the week is : 14 −8 = 6",
+          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q7(e), typeset as the State Examinations Commission set it. It reads: 40 −10 = 30 animals at end of week P(dog) = 11/15 ≡ 22/3⁰ so 22 dogs remain. Thus 30 −22 = 8 cats remain at the end of week Therefore the number of cats left the shelter during the week is : 14 −8 = 6",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2185,7 +2185,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-OL-paper-p048-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-paper-p048-i0.png",
           "srcHash": "22548f35a6a4a86aafad647e0bd510c8",
-          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q8(a)(i), typeset as the State Examinations Commission set it. It reads: (i) V = 2/3𝜋(33) = 18𝜋 [m3]",
+          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q8(a)(i), typeset as the State Examinations Commission set it. It reads: (i) V = 2/3 𝜋(3³) = 18𝜋 [m³]",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2227,7 +2227,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-OL-paper-p049-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-paper-p049-i0.png",
           "srcHash": "d48b78c18a7e57c77d7f8e4dbe3d69fc",
-          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q8(b)(i), typeset as the State Examinations Commission set it. It reads: (i) tan A = 47/7 ∙5 A = tan−1(47/∙5) 7 A = 80 ∙93349° A = 81°[nearest degree]",
+          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q8(b)(i), typeset as the State Examinations Commission set it. It reads: (i) tan A = 47/7 ∙ 5 A = tan^−¹ (/5) 7 ∙ A = 80 ∙93349° A = 81°[nearest degree]",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2248,7 +2248,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-OL-paper-p049-i1",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-paper-p049-i1.png",
           "srcHash": "839f34bdfe50d5cd0e17defad0bb30e2",
-          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q8(b)(ii), typeset as the State Examinations Commission set it. It reads: (ii) 3/7 ∙5 = x/47 x = 18∙8 k = 47 −18∙8 = 28∙2 m OR k/47 = 7∙5−3/7∙5 = 4∙5/7∙5 k = 4∙5/7∙5 × 47 = 28∙2 m OR tan 81° = x/3 x = 3(tan 81) x = 18 ∙94125 k = 47 −18 ∙94125 k = 28 ∙058 k = 28 ∙06 m",
+          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q8(b)(ii), typeset as the State Examinations Commission set it. It reads: (ii) 3/7 ∙ 5 = x/47 x = 18∙8 k = 47 −18∙8 = 28∙2 m OR k/47 = 7∙5−3/7∙5 = 4∙5/7∙5 k = 4∙5/7^∙⁵ × 47 = 28∙2 m OR tan 81° = x/3 x = 3(tan 81) x = 18 ∙94125 k = 47 −18 ∙94125 k = 28 ∙058 k = 28 ∙06 m",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2311,7 +2311,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-OL-paper-p050-i2",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-paper-p050-i2.png",
           "srcHash": "3ae1233a7d99887e833b1f092af6d4e2",
-          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q8(d), typeset as the State Examinations Commission set it. It reads: tan 1∙2° = 49/d d = 49/tan 1 ∙2° d = 2339 ∙2 m d = 2 ∙34 km",
+          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q8(d), typeset as the State Examinations Commission set it. It reads: tan 1∙2° = 49/d d = 49/tan 1 ∙ 2° d = 2339 ∙2 m d = 2 ∙34 km",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2321,7 +2321,7 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p2-q9-a", topicId: "maths-3-4", conceptId: "state-which-statements-most-likely-true",
+    id: "maths-2022-ol-p2-q9-a", topicId: "maths-2-1", conceptId: "state-which-statements-most-likely-true",
     section: "B", questionRef: "2022 OL Paper 2 Q9(a)",
     questionText: "State which of the following statements is most likely to be true, and write down a possible height of Seán that would support your answer. Tick (✓) one box only",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -2353,7 +2353,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-OL-paper-p051-i1",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-paper-p051-i1.png",
           "srcHash": "74d8af90fbced45bbd562bbefa671808",
-          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q9(b), typeset as the State Examinations Commission set it. It reads: V = (Area of the face of the shed) × (length) V = ((7 × 12) + 1/2 (12 × 1 ∙5))18 V = (84 + 9)18 V = (93)18 V = 1674m³ V = (1674)1000 V = 1,674,000 litres [>1,000,000 ]",
+          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q9(b), typeset as the State Examinations Commission set it. It reads: V = (Area of the face of the shed) × (length) V = ((7 × 12) + 1/2 (12 × 1 ∙ 5)) 18 V = (84 + 9)18 V = (93)18 V = 1674m³ V = (1674)1000 V = 1,674,000 litres [>1,000,000 ]",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2374,7 +2374,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-OL-paper-p052-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-paper-p052-i0.png",
           "srcHash": "6a5bcd2e9e68178de9eb3e5692a483de",
-          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q9(c), typeset as the State Examinations Commission set it. It reads: d² = 6² + 1 ∙5² d2 = 38 ∙25 or 153/4 d = √38 ∙25 d = 6 ∙18465 d = 6 ∙2 [m]",
+          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q9(c), typeset as the State Examinations Commission set it. It reads: d² = 6² + 1 ∙5² d² = 38 ∙ 25 or 153/4 d = √38 ∙25 d = 6 ∙18465 d = 6 ∙2 [m]",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2384,7 +2384,7 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p2-q9-e-i", topicId: "maths-3-4", conceptId: "correct-decimal-places",
+    id: "maths-2022-ol-p2-q9-e-i", topicId: "maths-2-1", conceptId: "correct-decimal-places",
     section: "B", questionRef: "2022 OL Paper 2 Q9(e)(i)",
     questionText: "Show that |BC| = 4∙65 m, correct to 2 decimal places",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
@@ -2405,18 +2405,18 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p2-q9-e-ii", topicId: "maths-3-4", conceptId: "acb-angle-roof-makes-point-correct",
+    id: "maths-2022-ol-p2-q9-e-ii", topicId: "maths-2-1", conceptId: "acb-angle-roof-makes-point-correct",
     section: "B", questionRef: "2022 OL Paper 2 Q9(e)(ii)",
     questionText: "Find |∠ ACB| , the angle that the roof makes at the point C. (ii) Give your answer correct to the nearest degree. Remember that |BC| = 4∙65 m, correct to 2 decimal places",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2022-ol-p2-q9-e-ii-r1", kind: "anyN", verbatim: "sin C/3 = sin 30°/4 ∙65", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":2,"options":["sin C/3 = sin 30°/4 ∙65","sin C = 3(sin 30°)/4 ∙65","C = sin−1(10/31)","C = 18 ∙819063 … . .","C = 19°","3² = 7² + 4∙65²-2(7)(4∙65) cos(∠ACB)","9 = 49 + 21∙6225-65∙1 cos(∠ACB)","cos(∠ACB) = 61∙6225/65∙1","|∠ACB| = 18∙8119…"],"perOptionSteps":[2,1,2]} },
+    { id: "maths-2022-ol-p2-q9-e-ii-r1", kind: "anyN", verbatim: "sin C/3 = sin 30°/4 ∙ 65", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":2,"options":["sin C/3 = sin 30°/4 ∙ 65","sin C = 3(sin 30°)/4 ∙ 65","C = sin^−¹ (10/31)","C = 18 ∙819063 … . .","C = 19°","3² = 7² + 4∙65²-2(7)(4∙65) cos(∠ACB)","9 = 49 + 21∙6225-65∙1 cos(∠ACB)","cos(∠ACB) = 61∙6225/65∙1","|∠ACB| = 18∙8119…"],"perOptionSteps":[2,1,2]} },
     ],
     figure: {
           "candId": "maths-2022-OL-paper-p055-i0",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-paper-p055-i0.png",
           "srcHash": "52dc0bb81bf5d028d634b1cd90319a69",
-          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q9(e)(ii), typeset as the State Examinations Commission set it. It reads: sin C/3 = sin 30°/4 ∙65 sin C = 3(sin 30°)/4 ∙65 C = sin−1(10/31) C = 18 ∙819063 … . . C = 19° OR 3² = 7² + 4∙65²-2(7)(4∙65) cos(∠ACB) 9 = 49 + 21∙6225-65∙1 cos(∠ACB) cos(∠ACB) = 61∙6225/65∙1 |∠ACB| = 18∙8119… =19",
+          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q9(e)(ii), typeset as the State Examinations Commission set it. It reads: sin C/3 = sin 30°/4 ∙ 65 sin C = 3(sin 30°)/4 ∙ 65 C = sin^−¹ (10/31) C = 18 ∙819063 … . . C = 19° OR 3² = 7² + 4∙65²-2(7)(4∙65) cos(∠ACB) 9 = 49 + 21∙6225-65∙1 cos(∠ACB) cos(∠ACB) = 61∙6225/65∙1 |∠ACB| = 18∙8119… =19",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2452,7 +2452,7 @@ export const CARDS: SecCard[] = [
     questionText: "A random sample of 1500 people took part in the survey. Show that the margin of error for the survey is 2∙6%, correct to 1 decimal place",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2022-ol-p2-q10-b-i-r1", kind: "anyN", verbatim: "1/√n 1/√n written and stops", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["1/√n 1/√n written and stops","Formula substituted correctly but not evaluated i.e. 1/√1500 1/√1500 Answer given as 0.0258","Correct answer with supporting work"],"perOptionSteps":[2,1,2]} },
+    { id: "maths-2022-ol-p2-q10-b-i-r1", kind: "anyN", verbatim: "1/√ⁿ 1/√ⁿ written and stops", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["1/√ⁿ 1/√ⁿ written and stops","Formula substituted correctly but not evaluated i.e. 1/√1500 1/√1500 Answer given as 0.0258","Correct answer with supporting work"],"perOptionSteps":[2,1,2]} },
     ],
     figure: {
           "candId": "maths-2022-OL-paper-p056-i1",
@@ -2494,7 +2494,7 @@ export const CARDS: SecCard[] = [
     questionText: "(iv) According to the 2019 Irish Sport Monitor Report, 65% of the adults in Ireland walked for recreation",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2022-ol-p2-q10-b-iv-r1", kind: "anyN", verbatim: "Work of merit Interval written as [p̂ − 1/√n, p̂ + 1/√n] in part (iii)and/or(iv). Either lower or upper boundary as 68∙4 or 73∙6 in (iii) Conclusion without reason correct in part (iv) Reason without interpretation knowledge shown in part (iv)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit Interval written as [p̂ − 1/√n, p̂ + 1/√n] in part (iii)and/or(iv). Either lower or upper boundary as 68∙4 or 73∙6 in (iii) Conclusion without reason correct in part (iv) Reason without interpretation knowledge shown in part (iv)","Either part (iii) or part (iv) correct Significant work of merit in both parts (Correct substitution in both parts)","Either part correct and significant work in the other part"],"perOptionSteps":[3,2,5]} },
+    { id: "maths-2022-ol-p2-q10-b-iv-r1", kind: "anyN", verbatim: "Work of merit Interval written as [p̂ − 1/√ⁿ 1/√ⁿ , p̂ + 1/√ⁿ] in part (iii)and/or(iv). Either lower or upper boundary as 68∙4 or 73∙6 in (iii) Conclusion without reason correct in part (iv) Reason without interpretation knowledge shown in part (iv)", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit Interval written as [p̂ − 1/√ⁿ 1/√ⁿ , p̂ + 1/√ⁿ] in part (iii)and/or(iv). Either lower or upper boundary as 68∙4 or 73∙6 in (iii) Conclusion without reason correct in part (iv) Reason without interpretation knowledge shown in part (iv)","Either part (iii) or part (iv) correct Significant work of merit in both parts (Correct substitution in both parts)","Either part correct and significant work in the other part"],"perOptionSteps":[3,2,5]} },
     ],
     figure: {
           "candId": "maths-2022-OL-paper-p057-i0",
@@ -2521,7 +2521,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-OL-paper-p057-i1",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-paper-p057-i1.png",
           "srcHash": "a570180607e9b61df14d4ae7a1e5d0ca",
-          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q10(c), typeset as the State Examinations Commission set it. It reads: Probability (Exactly one adult jogs): = 3[(0 ∙8)(0 ∙8)(0 ∙2)] = 0 ∙384 or (48/125)",
+          "alt": "The marking scheme's printed worked solution for 2022 OL Paper 2 Q10(c), typeset as the State Examinations Commission set it. It reads: Probability (Exactly one adult jogs): = 3[(0 ∙8)(0 ∙8)(0 ∙2)] = 0 ∙ 384 or (/125)",
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2557,7 +2557,7 @@ export const CARDS: SecCard[] = [
     questionText: "There are two price plans for the gym, Silver and Gold, as follows: Silver Gold €420 for the year. €670 for the year. Pay €6 for each class. All classes are free",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2022-ol-p2-q10-e-r1", kind: "anyN", verbatim: "One relevant operation e.g. 670 −420 or 670/6 420 + 6n or similar", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["One relevant operation e.g. 670 −420 or 670/6 420 + 6n or similar","670−420/6 420 + 6n > 670 and further work: finds 6n > 250 or mishandles 420 but divides by 6 to find n Full Credit –1 Finds n, but no or incorrect rounding"],"perOptionSteps":[3,7]} },
+    { id: "maths-2022-ol-p2-q10-e-r1", kind: "anyN", verbatim: "One relevant operation e.g. 670 − 420 or 670/6 420 + 6n or similar", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["One relevant operation e.g. 670 − 420 or 670/6 420 + 6n or similar","670−420/6 420 + 6n > 670 and further work: finds 6n > 250 or mishandles 420 but divides by 6 to find n Full Credit –1 Finds n, but no or incorrect rounding"],"perOptionSteps":[3,7]} },
     ],
     figure: {
           "candId": "maths-2022-OL-paper-p058-i0",
@@ -2578,7 +2578,7 @@ export const CARDS: SecCard[] = [
     questionText: "A third house was valued at €265 000",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p1-q1-c-r1", kind: "anyN", verbatim: "Some correct substitution into F = P(1 + r/100) t", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Some correct substitution into F = P(1 + r/100) t","Fully correct substitution Note: Apply F* for incorrect or no rounding"],"perOptionSteps":[4,6]} },
+    { id: "maths-2023-ol-p1-q1-c-r1", kind: "anyN", verbatim: "Some correct substitution into F = P (1 + r/100) t", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Some correct substitution into F = P (1 + r/100) t","Fully correct substitution Note: Apply F* for incorrect or no rounding"],"perOptionSteps":[4,6]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p007-i0",
@@ -2878,7 +2878,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-OL-paper-p017-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-paper-p017-i0.png",
           "srcHash": "2eda41736d9aa454b9cfb13e0f6c4fe7",
-          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 1 Q6(c), typeset as the State Examinations Commission set it. It reads: Q6 (c) Model Solution – −6 30 Marks/∓√62−4(9)(−5) (c) x = −6 ∓√62−4(9)(−5)/18 x = 0 ∙483 and x = −1 ∙149 x = 0 ∙48 and x = −1 ∙15 Mathematics – Ordinary Level",
+          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 1 Q6(c), typeset as the State Examinations Commission set it. It reads: Q6 (c) Model Solution – −6 30 ∓ Marks/√6² − 4(9)(−5) (c) x = −6 ∓ √6² − 4(9)(−5)/18 x = 0 ∙483 and x = −1 ∙149 x = 0 ∙48 and x = −1 ∙15 Mathematics – Ordinary Level",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2935,13 +2935,13 @@ export const CARDS: SecCard[] = [
     questionText: "(iii) Rearrange the equation to write S in terms of C",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2023-ol-p1-q7-a-iii-r1", kind: "anyN", verbatim: "One term correct when multiplying across by (S + 10) Writes C(S + 10) CS = 1000 −10C Note: S = 1000/C + 10 without work is zero", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["One term correct when multiplying across by (S + 10) Writes C(S + 10) CS = 1000 −10C Note: S = 1000/C + 10 without work is zero"]} },
+    { id: "maths-2023-ol-p1-q7-a-iii-r1", kind: "anyN", verbatim: "One term correct when multiplying across by (S + 10) Writes C(S + 10) CS = 1000 −10C Note: S = 1000/C⁺¹⁰ without work is zero", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["One term correct when multiplying across by (S + 10) Writes C(S + 10) CS = 1000 −10C Note: S = 1000/C⁺¹⁰ without work is zero"]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p018-i2",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-paper-p018-i2.png",
           "srcHash": "a0dd957642f15547feef5a09af4edf9b",
-          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 1 Q7(a)(iii), typeset as the State Examinations Commission set it. It reads: C(S + 10) = 1000 CS + 10C = 1000 CS = 1000 −10C S = 1000 −10C/C Or S = 1000/C −10 Mathematics – Ordinary Level",
+          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 1 Q7(a)(iii), typeset as the State Examinations Commission set it. It reads: C(S + 10) = 1000 CS + 10C = 1000 CS = 1000 −10C S = 1000 − 10C/C Or S = 1000/C − 10 Mathematics – Ordinary Level",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2962,7 +2962,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-OL-paper-p019-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-paper-p019-i0.png",
           "srcHash": "c4a50d90965f45dafcb7b69a2aeb65fb",
-          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 1 Q7(a)(iv), typeset as the State Examinations Commission set it. It reads: (a) (iv) S = 1000 −10(30)/30 = 23 ∙33 … S = 1000 −10(100)/30 = 0 S goes from 0 to 23 ∙3…",
+          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 1 Q7(a)(iv), typeset as the State Examinations Commission set it. It reads: (a) (iv) S = 1000 − 10(30)/30 = 23 ∙ 33 … S = 1000 − 10(100)/30 = 0 S goes from 0 to 23 ∙3…",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3124,13 +3124,13 @@ export const CARDS: SecCard[] = [
     questionText: "Some materials were imported from England by the gardener for resowing the grass. The cost of the materials was £840. This included an Import Duty of 16∙9%. Work out the cost of the materials before the Import Duty was added. Give your answer correct to the nearest penny (that is, to 2 decimal places)",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p1-q8-e-r1", kind: "anyN", verbatim: "Writes 116 ∙9% or 100 + 16 ∙9 or 1 ∙169", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Writes 116 ∙9% or 100 + 16 ∙9 or 1 ∙169","116∙9 × 840 100 or 840/1∙169 Note: Apply F* if incorrect or no rounding"],"perOptionSteps":[4,6]} },
+    { id: "maths-2023-ol-p1-q8-e-r1", kind: "anyN", verbatim: "Writes 116 ∙9% or 100 + 16 ∙9 or 1 ∙169", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Writes 116 ∙9% or 100 + 16 ∙9 or 1 ∙169","1¹⁶^∙⁹ 840 × 100 or 840/1∙169 Note: Apply F* if incorrect or no rounding"],"perOptionSteps":[4,6]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p021-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-paper-p021-i0.png",
           "srcHash": "1aac0cee33d5577baa812e182d111321",
-          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 1 Q8(e), typeset as the State Examinations Commission set it. It reads: (e) 840/116 ∙9 × 100 = 718 ∙5628743 = £718 ∙56 [nearest penny]",
+          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 1 Q8(e), typeset as the State Examinations Commission set it. It reads: (e) 840/116 ∙ 9 × 100 = 718 ∙ 5628743 = £718 ∙56 [nearest penny]",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3145,13 +3145,13 @@ export const CARDS: SecCard[] = [
     questionText: "The gardener paid the £840 in euro. The exchange rate was €1 = £0∙8547. He also paid a fee of 2∙5% of the £840 as a commission",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p1-q8-f-r1", kind: "anyN", verbatim: "(f) 840/0 ∙8547 × 1 ∙025 = 1007 ∙371007", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":4,"options":["(f) 840/0 ∙8547 × 1 ∙025 = 1007 ∙371007","€1007 ∙37","Mathematics – Ordinary Level"],"perOptionSteps":[4,2,4]} },
+    { id: "maths-2023-ol-p1-q8-f-r1", kind: "anyN", verbatim: "(f) 840/0 ∙ 8547 × 1 ∙ 025 = 1007 ∙ 371007", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":4,"options":["(f) 840/0 ∙ 8547 × 1 ∙ 025 = 1007 ∙ 371007","€1007 ∙37","Mathematics – Ordinary Level"],"perOptionSteps":[4,2,4]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p021-i1",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-paper-p021-i1.png",
           "srcHash": "1e1e7868a23927a16aa97e678c0ca24b",
-          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 1 Q8(f), typeset as the State Examinations Commission set it. It reads: (f) 840/0 ∙8547 × 1 ∙025 = 1007 ∙371007 €1007 ∙37 Mathematics – Ordinary Level",
+          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 1 Q8(f), typeset as the State Examinations Commission set it. It reads: (f) 840/0 ∙ 8547 × 1 ∙ 025 = 1007 ∙ 371007 €1007 ∙37 Mathematics – Ordinary Level",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3187,13 +3187,13 @@ export const CARDS: SecCard[] = [
     questionText: "Work out the percentage error in the model’s value for day t = 12. (ii) Use your answer to part (a)(i) above as the actual value for day t = 12. Give your answer correct to the nearest percent",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2023-ol-p1-q9-a-ii-r1", kind: "anyN", verbatim: "(a) (ii) 500/1500 × 100 = 33 ∙33 …", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":2,"perOption":3,"options":["(a) (ii) 500/1500 × 100 = 33 ∙33 …","= 33%"],"perOptionSteps":[3,2]} },
+    { id: "maths-2023-ol-p1-q9-a-ii-r1", kind: "anyN", verbatim: "(a) (ii) 500/1500 × 100 = 33 ∙ 33 …", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":2,"perOption":3,"options":["(a) (ii) 500/1500 × 100 = 33 ∙ 33 …","= 33%"],"perOptionSteps":[3,2]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p022-i1",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-paper-p022-i1.png",
           "srcHash": "a6a2e72e4e38eb23da72dea4e13a8c3b",
-          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 1 Q9(a)(ii), typeset as the State Examinations Commission set it. It reads: (a) (ii) 500/1500 × 100 = 33 ∙33 … = 33%",
+          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 1 Q9(a)(ii), typeset as the State Examinations Commission set it. It reads: (a) (ii) 500/1500 × 100 = 33 ∙ 33 … = 33%",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3298,7 +3298,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-OL-paper-p024-i2",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-paper-p024-i2.png",
           "srcHash": "2dcc86aa310f0e9d1005c90c286eaa39",
-          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 1 Q10(b)(ii), typeset as the State Examinations Commission set it. It reads: (b) (i) 3/8 × 100 = 37 ∙5 % 15/20 × 25 = 18 ∙75 Mathematics – Ordinary Level",
+          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 1 Q10(b)(ii), typeset as the State Examinations Commission set it. It reads: (b) (i) 3/8 × 100 = 37 ∙ 5 % 15/20 × 25 = 18 ∙ 75 Mathematics – Ordinary Level",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3382,7 +3382,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-OL-paper-p025-i3",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-paper-p025-i3.png",
           "srcHash": "ca21338dd977e60253dda8bfa75f322b",
-          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 1 Q10(c)(iii), typeset as the State Examinations Commission set it. It reads: 1000 at 1% = €10 next 9000 at 2% = €180 10 + 180 = €190 435 −190 = €245 the charge in excess of 10 000 245/7500 × 100 = 3 ∙2666 3 ∙3% Mathematics – Ordinary Level",
+          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 1 Q10(c)(iii), typeset as the State Examinations Commission set it. It reads: 1000 at 1% = €10 next 9000 at 2% = €180 10 + 180 = €190 435 −190 = €245 the charge in excess of 10 000 245/7500 × 100 = 3 ∙ 2666 3 ∙3% Mathematics – Ordinary Level",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3403,7 +3403,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-OL-paper-p031-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-paper-p031-i0.png",
           "srcHash": "ada0e85e4b43a13bd1c14023c6a1a77f",
-          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 2 Q1(b), typeset as the State Examinations Commission set it. It reads: y−y₁ = m(x−x₁) y−7 = 1/3 [x−(−2)] 3(y−7) = 1(x + 2) 3y−21 = x + 2 x−3y + 23 = 0 Mathematics – Ordinary Level",
+          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 2 Q1(b), typeset as the State Examinations Commission set it. It reads: y−y₁ = m(x−x₁) y − 7 = 1/3 [x − (−2)] 3(y−7) = 1(x + 2) 3y−21 = x + 2 x−3y + 23 = 0 Mathematics – Ordinary Level",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3445,7 +3445,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-OL-paper-p033-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-paper-p033-i0.png",
           "srcHash": "22a3f9c61defe5d3d9a70f90eb924f19",
-          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 2 Q2(a)(ii), typeset as the State Examinations Commission set it. It reads: Centre = (0 , 0) Radius = 5 & (3)² + (−4)² = 25 9 + 16 = 25 ⟹ On the circle Distance from/√(3 −0)2 + (−4 −0)2 = (0,0) to (3, −4) 5 = radius ⟹on circle",
+          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 2 Q2(a)(ii), typeset as the State Examinations Commission set it. It reads: Centre = (0 , 0) Radius = 5 & (3)² + (−4)² = 25 9 + 16 = 25 ⟹ On the circle Distance from/√(3 − 0)² + (−4 − 0)² (0,0) to (3, −4) = 5 = radius ⟹on circle",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3586,13 +3586,13 @@ export const CARDS: SecCard[] = [
     questionText: "Find the probability that he scores his first 3 free throws",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2023-ol-p2-q4-a-i-r1", kind: "anyN", verbatim: "S . S. S = (0 ∙7)(0 ∙7)(0 ∙7)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":2,"perOption":3,"options":["S . S. S = (0 ∙7)(0 ∙7)(0 ∙7)","= 0 ∙343 or 343/1000 or 34 ∙3%"],"perOptionSteps":[3,2]} },
+    { id: "maths-2023-ol-p2-q4-a-i-r1", kind: "anyN", verbatim: "S . S. S = (0 ∙7)(0 ∙7)(0 ∙7)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":2,"perOption":3,"options":["S . S. S = (0 ∙7)(0 ∙7)(0 ∙7)","= 0 ∙ 343 or 343/1000 or 34 ∙ 3%"],"perOptionSteps":[3,2]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p037-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-paper-p037-i0.png",
           "srcHash": "1c8eafd1d59ec479b2fb84c0791dca46",
-          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 2 Q4(a)(i), typeset as the State Examinations Commission set it. It reads: S . S. S = (0 ∙7)(0 ∙7)(0 ∙7) = 0 ∙343 or 343/1000 or 34 ∙3%",
+          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 2 Q4(a)(i), typeset as the State Examinations Commission set it. It reads: S . S. S = (0 ∙7)(0 ∙7)(0 ∙7) = 0 ∙ 343 or 343/1000 or 34 ∙ 3%",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3607,13 +3607,13 @@ export const CARDS: SecCard[] = [
     questionText: "Find the probability that he scores exactly 2 of his first 3 free throws",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p2-q4-a-ii-r1", kind: "anyN", verbatim: "Work of merit e.g. indicates three arrangements Correct layout with correct substitution Answer as 0 ∙147 or 147/1000", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; Full Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit e.g. indicates three arrangements Correct layout with correct substitution Answer as 0 ∙147 or 147/1000","Correct answers without supporting work Zero Credit: Probability greater than 1"],"perOptionSteps":[4,6]} },
+    { id: "maths-2023-ol-p2-q4-a-ii-r1", kind: "anyN", verbatim: "Work of merit e.g. indicates three arrangements Correct layout with correct substitution Answer as 0 ∙ 147 or 147/1000", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; Full Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit e.g. indicates three arrangements Correct layout with correct substitution Answer as 0 ∙ 147 or 147/1000","Correct answers without supporting work Zero Credit: Probability greater than 1"],"perOptionSteps":[4,6]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p037-i1",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-paper-p037-i1.png",
           "srcHash": "9a2a842c5e959c7ddd2c13a67985ed88",
-          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 2 Q4(a)(ii), typeset as the State Examinations Commission set it. It reads: S . S . F = (0 ∙7)(0 ∙7)(0 ∙3) = 0 ∙147 Three arrangements 0 ∙147 × 3 = 0 ∙441 (441/1000)",
+          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 2 Q4(a)(ii), typeset as the State Examinations Commission set it. It reads: S . S . F = (0 ∙7)(0 ∙7)(0 ∙3) = 0 ∙147 Three arrangements 0 ∙ 147 × 3 = 0 ∙ 441 (/1000)",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3655,7 +3655,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-OL-paper-p038-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-paper-p038-i0.png",
           "srcHash": "128b664584abb4252af76ae69f967b0d",
-          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 2 Q4(b), typeset as the State Examinations Commission set it. It reads: 𝜇= ∑fx/∑f = 4(0) + 5(6) + 4(8) + 2(10) + 3(12) + 1(16) 4 + 5 + 4 + 2 + 3 + 1 = 0 + 30 + 32 + 20 + 36 + 16 = 134/19 = 7 ∙05263 = 7 ∙05 points scored Mathematics – Ordinary Level",
+          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 2 Q4(b), typeset as the State Examinations Commission set it. It reads: 𝜇 = ∑ fx/∑ f = 4(0) + 5(6) + 4(8) + 2(10) + 3(12) + 1(16) 4 + 5 + 4 + 2 + 3 + 1 = 0 + 30 + 32 + 20 + 36 + 16 = 134/19 = 7 ∙ 05263 = 7 ∙05 points scored Mathematics – Ordinary Level",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3691,13 +3691,13 @@ export const CARDS: SecCard[] = [
     questionText: "Work out the percentage of the area of the square that is taken up by the circle c, (c) correct to the nearest percent",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2023-ol-p2-q5-c-r1", kind: "anyN", verbatim: "113∙10/12 × 12 × 100 or 0 ∙7854 Full Credit (-1): Incorrect rounding", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: High Partial Credit; Full Credit .", openList: true, group: {"claimMax":2,"perOption":3,"options":["113∙10/12 × 12 × 100 or 0 ∙7854 Full Credit (-1): Incorrect rounding","Correct answer without supporting work"],"perOptionSteps":[3,2]} },
+    { id: "maths-2023-ol-p2-q5-c-r1", kind: "anyN", verbatim: "113∙10/1²^×¹² × 100 or 0 ∙ 7854 Full Credit (-1): Incorrect rounding", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: High Partial Credit; Full Credit .", openList: true, group: {"claimMax":2,"perOption":3,"options":["113∙10/1²^×¹² × 100 or 0 ∙ 7854 Full Credit (-1): Incorrect rounding","Correct answer without supporting work"],"perOptionSteps":[3,2]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p039-i1",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-paper-p039-i1.png",
           "srcHash": "e865e4e972b6185d7521086298074079",
-          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 2 Q5(c), typeset as the State Examinations Commission set it. It reads: Area circle/Area square = 113 ∙10/12 × 12 = 0 ∙7854 × 100 = 78 ∙54[%] Mathematics – Ordinary Level",
+          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 2 Q5(c), typeset as the State Examinations Commission set it. It reads: Area circle/Area square = 113 ∙ 10/12 × 12 = 0 ∙7854 × 100 = 78 ∙54[%] Mathematics – Ordinary Level",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3880,13 +3880,13 @@ export const CARDS: SecCard[] = [
     questionText: "(iv) Find the size of the angle ∠BAC when the gradient of the road [AB] is 9%. Give your answer correct to the nearest degree",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p2-q7-a-iv-r1", kind: "anyN", verbatim: "Work of merit A = Tan−1( 9/100) Correct answer without supporting work Full Credit (-1): Incorrect rounding Note: Incorrect Calculator Mode (Apply once in paper) Rad: = 0 ∙08975 Grad = 5 ∙714", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Work of merit A = Tan−1( 9/100) Correct answer without supporting work Full Credit (-1): Incorrect rounding Note: Incorrect Calculator Mode (Apply once in paper) Rad: = 0 ∙08975 Grad = 5 ∙714"]} },
+    { id: "maths-2023-ol-p2-q7-a-iv-r1", kind: "anyN", verbatim: "Work of merit A = Tan^−¹ (/100) 9 Correct answer without supporting work Full Credit (-1): Incorrect rounding Note: Incorrect Calculator Mode (Apply once in paper) Rad: = 0 ∙08975 Grad = 5 ∙714", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit.", openList: true, group: {"claimMax":1,"perOption":10,"options":["Work of merit A = Tan^−¹ (/100) 9 Correct answer without supporting work Full Credit (-1): Incorrect rounding Note: Incorrect Calculator Mode (Apply once in paper) Rad: = 0 ∙08975 Grad = 5 ∙714"]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p044-i1",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-paper-p044-i1.png",
           "srcHash": "2f745ed2c964bbb3a4ca245e965cf516",
-          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 2 Q7(a)(iv), typeset as the State Examinations Commission set it. It reads: (iv) TanA = 9/100 A = tan−19/100 A = 5[°] Mathematics – Ordinary Level",
+          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 2 Q7(a)(iv), typeset as the State Examinations Commission set it. It reads: (iv) TanA = 9/100 A = tan^−¹ 9/100 A = 5[°] Mathematics – Ordinary Level",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -3970,7 +3970,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-OL-paper-p046-i2",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-paper-p046-i2.png",
           "srcHash": "f8776476293f716cfeae2218b7370105",
-          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 2 Q8(b)(ii), typeset as the State Examinations Commission set it. It reads: Volume of raised cylinder = 0 ∙375 𝜋r²h = 0 ∙375 𝜋(1 ∙2)²h = 0 ∙375 h = 0 ∙375/𝜋(1 ∙2)2 = 0 ∙0828 = 0 ∙08[m] Mathematics – Ordinary Level",
+          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 2 Q8(b)(ii), typeset as the State Examinations Commission set it. It reads: Volume of raised cylinder = 0 ∙375 𝜋r²h = 0 ∙375 𝜋(1 ∙2)²h = 0 ∙375 h = 0 ∙ 375/𝜋(1 ∙ 2)² = 0 ∙0828 = 0 ∙08[m] Mathematics – Ordinary Level",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4033,7 +4033,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-OL-paper-p048-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-paper-p048-i0.png",
           "srcHash": "9187e800581bf6ebe72615d5552f8ab6",
-          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 2 Q8(c)(iii), typeset as the State Examinations Commission set it. It reads: x = 1 ∙53 m Area of Sector = C.S.A. of Cone ∠A/360 × 𝜋r2 = 6 ∙25 ∠A = 6 ∙25(360)/𝜋(1 ∙53)2 ∠A = 305 ∙949 … ∠A = 306^[^o^] x = 1 ∙53 m Length of Sector = Length of Circular Base ∠A/360 × 2𝜋(1 ∙53) = 2𝜋(1 ∙3) ∠A = 8 ∙168(360)/2𝜋(1 ∙53) ∠A = 305 ∙88. ∠A = 306^[^o^] x = 1 ∙53 m 2𝜋r/2𝜋l = ∠A/360 2𝜋(1 ∙3)/2𝜋(1 ∙53) = ∠A/360 1 ∙3/1 ∙53 = ∠A/360 ∠A = 1 ∙3(360)/1 ∙53 ∠A = 306^[^o^] Mathematics – Ordinary Level",
+          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 2 Q8(c)(iii), typeset as the State Examinations Commission set it. It reads: x = 1 ∙53 m Area of Sector = C.S.A. of Cone ∠A/360 × 𝜋r² = 6 ∙ 25 ∠A = 6 ∙ 25(360)/𝜋(1 ∙ 53)² ∠A = 305 ∙949 … ∠A = 306^[^o^] x = 1 ∙53 m Length of Sector = Length of Circular Base ∠A/360 × 2𝜋(1 ∙ 53) = 2𝜋(1 ∙ 3) ∠A = 8 ∙ 168(360)/2𝜋(1 ∙ 53) ∠A = 305 ∙88. ∠A = 306^[^o^] x = 1 ∙53 m 2𝜋r/2𝜋l = ∠A/360 2𝜋(1 ∙ 3)/2𝜋(1 ∙ 53) = ∠A/360 1 ∙ 3/1 ∙ 53 = ∠A/360 ∠A = 1 ∙ 3(360)/1 ∙ 53 ∠A = 306^[^o^] Mathematics – Ordinary Level",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4111,7 +4111,7 @@ export const CARDS: SecCard[] = [
     questionText: "Work out the percentage of students in this sample who were given a rating of Excellent",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2023-ol-p2-q9-b-i-r1", kind: "anyN", verbatim: "Work of merit e.g. p̂ = 61/500 or × 100", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit e.g. p̂ = 61/500 or × 100","p̂ = 61/500 × 100 or 0 ∙122"],"perOptionSteps":[4,6]} },
+    { id: "maths-2023-ol-p2-q9-b-i-r1", kind: "anyN", verbatim: "Work of merit e.g. p̂ = 61/5⁰⁰ or × 100", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit e.g. p̂ = 61/5⁰⁰ or × 100","p̂ = 61/5⁰⁰ × 100 or 0 ∙ 122"],"perOptionSteps":[4,6]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p050-i1",
@@ -4132,13 +4132,13 @@ export const CARDS: SecCard[] = [
     questionText: "Show that the margin of error for this sample is 4∙5%, correct to 1 decimal place",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2023-ol-p2-q9-b-ii-r1", kind: "anyN", verbatim: "Correct e.g. n = formula 500 or written/√500", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Correct e.g. n = formula 500 or written/√500","Correct formula fully substituted e.g. 1/√500 1/√500"],"perOptionSteps":[3,2]} },
+    { id: "maths-2023-ol-p2-q9-b-ii-r1", kind: "anyN", verbatim: "Correct e.g. n formula = 500 or written/√500", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Correct e.g. n formula = 500 or written/√500","Correct formula fully substituted e.g. 1/√500 1/√500"],"perOptionSteps":[3,2]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p051-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-paper-p051-i0.png",
           "srcHash": "70e6f6110299ac3e397f502fcd7f1c48",
-          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 2 Q9(b)(ii), typeset as the State Examinations Commission set it. It reads: 1/√n = 1/√n = 1/√500 1/√500 = 0 ∙044721359 = 4 ∙5%",
+          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 2 Q9(b)(ii), typeset as the State Examinations Commission set it. It reads: 1/√n 1/√n = 1/√500 1/√500 = 0 ∙044721359 = 4 ∙5%",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4153,7 +4153,7 @@ export const CARDS: SecCard[] = [
     questionText: "(iii) In general, 10% of students get a rating of Excellent on this statistics test",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2023-ol-p2-q9-b-iii-r1", kind: "anyN", verbatim: "Work of merit e.g. Writes answer from (b)(i) or (b)(ii) in this part p̂ ± 1/√n 1/√n p̂ ± 1.96√^p⁽^(1−p)^) n", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit e.g. Writes answer from (b)(i) or (b)(ii) in this part p̂ ± 1/√n 1/√n p̂ ± 1.96√^p⁽^(1−p)^) n","One boundary formed 12 ∙2 −4 ∙5 or 12 ∙2 + 4 ∙5","Both boundaries formed but 12 no ∙2 −4 ∙5 and/conclusion and 12 reason ∙2 + 4 ∙5 Full Credit (-1): Either conclusion or reason missing"],"perOptionSteps":[2,1,2]} },
+    { id: "maths-2023-ol-p2-q9-b-iii-r1", kind: "anyN", verbatim: "Work of merit e.g. Writes answer from (b)(i) or (b)(ii) in this part p̂ ± 1/√n 1/√n p̂ ± 1.96√^p⁽^(1−p)^) n", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 4, four parts for 5. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":2,"options":["Work of merit e.g. Writes answer from (b)(i) or (b)(ii) in this part p̂ ± 1/√n 1/√n p̂ ± 1.96√^p⁽^(1−p)^) n","One boundary formed 12 ∙2 −4 ∙5 or 12 ∙2 + 4 ∙5","Both boundaries formed but 12 no ∙ 2 − 4 ∙ 5 and/conclusion and 12 reason ∙ 2 + 4 ∙ 5 Full Credit (-1): Either conclusion or reason missing"],"perOptionSteps":[2,1,2]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p051-i1",
@@ -4169,7 +4169,7 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p2-q10-a", topicId: "maths-1-2", conceptId: "work-out-cba-size-angle-cba",
+    id: "maths-2023-ol-p2-q10-a", topicId: "maths-2-3", conceptId: "work-out-cba-size-angle-cba",
     section: "B", questionRef: "2023 OL Paper 2 Q10(a)",
     questionText: "Work out |∠CBA|, the size of the angle CBA",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
@@ -4180,7 +4180,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-OL-paper-p052-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-paper-p052-i0.png",
           "srcHash": "625923b98b827e26588d234062f2ae80",
-          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 2 Q10(a), typeset as the State Examinations Commission set it. It reads: 180 −72/2 = 54 |∠ABC| = 54 × 2 = 108[^o]",
+          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 2 Q10(a), typeset as the State Examinations Commission set it. It reads: 180 − 72/2 = 54 |∠ABC| = 54 × 2 = 108[^o]",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4258,13 +4258,13 @@ export const CARDS: SecCard[] = [
     questionText: "(iii) Each time the spinner is spun, each number (1 to 5) is equally likely. Work out the probability of getting a total of either 4 or 5, when the two numbers are added",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2023-ol-p2-q10-c-iii-r1", kind: "anyN", verbatim: "e.g. Indicates correct numerator or", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["e.g. Indicates correct numerator or","Calculates: P(4) = 3/25 and P(5) = 4/25","Correct answer without supporting work"],"perOptionSteps":[3,1,1]} },
+    { id: "maths-2023-ol-p2-q10-c-iii-r1", kind: "anyN", verbatim: "e.g. Indicates correct numerator or", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 4, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["e.g. Indicates correct numerator or","Calculates: P(4) = 3/2⁵ and P(5) = 4/25","Correct answer without supporting work"],"perOptionSteps":[3,1,1]} },
     ],
     figure: {
           "candId": "maths-2023-OL-paper-p054-i0",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-paper-p054-i0.png",
           "srcHash": "83cb5696d93407741dc4da4dd23289df",
-          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 2 Q10(c)(iii), typeset as the State Examinations Commission set it. It reads: Probability (4 or 5): P(4 or 5) = 3/25 + 4/25 = 7/25 or 0 ∙28 or 28%",
+          "alt": "The marking scheme's printed worked solution for 2023 OL Paper 2 Q10(c)(iii), typeset as the State Examinations Commission set it. It reads: Probability (4 or 5): P(4 or 5) = 3/25 + 4/25 = 7/25 or 0 ∙ 28 or 28%",
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4306,7 +4306,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-OL-paper-p007-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p007-i0.png",
           "srcHash": "2b120da6656b0f36b41c1bb7e9190bdc",
-          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 1 Q1(c), typeset as the State Examinations Commission set it. It reads: (c) 52 875/112 ∙5 × 100 = [€]47 000",
+          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 1 Q1(c), typeset as the State Examinations Commission set it. It reads: (c) 52 875/112 ∙ 5 × 100 = [€]47 000",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4327,7 +4327,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-OL-paper-p012-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p012-i0.png",
           "srcHash": "d2edeb96343de6e35fe7ee30f7d8edbd",
-          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 1 Q5(a), typeset as the State Examinations Commission set it. It reads: (a) 3(2) + 5/10 − 1/2 + 3 [11/10 −1/5] = 9/10",
+          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 1 Q5(a), typeset as the State Examinations Commission set it. It reads: (a) 3(2) + 5/10 − 1/2 + 3 [11/10 − 1/5] = 9/10",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4342,7 +4342,7 @@ export const CARDS: SecCard[] = [
     questionText: "The function f is defined as f(x) = 5x² −20x + 2, where x∈ℝ",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 7, 10, 12, 20)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
     rows: [
-    { id: "maths-2024-ol-p1-q5-b-r1", kind: "anyN", verbatim: "Work of merit, for example, indicates differentiation or d/d Some correct differentiation", marks: 20, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 7, two parts for 10, three parts for 12, four parts for 20. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":7,"options":["Work of merit, for example, indicates differentiation or d/d Some correct differentiation","One step correct","Two steps correct"],"perOptionSteps":[7,3,10]} },
+    { id: "maths-2024-ol-p1-q5-b-r1", kind: "anyN", verbatim: "Work of merit, for example, indicates differentiation or dddd/dddd Some correct differentiation", marks: 20, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 7, two parts for 10, three parts for 12, four parts for 20. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":7,"options":["Work of merit, for example, indicates differentiation or dddd/dddd Some correct differentiation","One step correct","Two steps correct"],"perOptionSteps":[7,3,10]} },
     ],
     figure: {
           "candId": "maths-2024-OL-paper-p012-i1",
@@ -4390,7 +4390,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-OL-paper-p013-i1",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p013-i1.png",
           "srcHash": "7c6b049b271271ee810cb1f497c81c84",
-          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 1 Q6(b)(i), typeset as the State Examinations Commission set it. It reads: (b) (i) A = 1/2 [12 + 2 ∙8 + 2(9 + 6 ∙8 + 5 ∙1 + 3 A = 32 ∙1 [units²]",
+          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 1 Q6(b)(i), typeset as the State Examinations Commission set it. It reads: (b) (i) AA = 1/2 [12 + 2 ∙ 8 + 2(9 + 6 ∙ 8 + 5 ∙ 1 + 3 A = 32 ∙1 [units²]",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4411,7 +4411,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-OL-paper-p013-i2",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p013-i2.png",
           "srcHash": "ff82a01e5fc7178174408fe95ab11c29",
-          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 1 Q6(b)(ii), typeset as the State Examinations Commission set it. It reads: (ii) 32 ∙1 −31 ∙8/31 ∙8 × 100 = 0 ∙943 = 0 ∙94[%]",
+          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 1 Q6(b)(ii), typeset as the State Examinations Commission set it. It reads: (ii) 32 ∙ 1 − 31 ∙ 8/31 ∙ 8 × 100 = 0 ∙ 943 = 0 ∙94[%]",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4463,7 +4463,7 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p1-q7-b-i", topicId: "maths-5-2", conceptId: "number-bacteria-after-hour-after-hours",
+    id: "maths-2024-ol-p1-q7-b-i", topicId: "maths-3-1", conceptId: "number-bacteria-after-hour-after-hours",
     section: "B", questionRef: "2024 OL Paper 1 Q7(b)(i)",
     questionText: "Use k(t) to find the number of bacteria after 1 hour and after 2 hours. Give each answer correct to the nearest whole number",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
@@ -4531,13 +4531,13 @@ export const CARDS: SecCard[] = [
     questionText: "Find his speed in km/hour while he was travelling from A to B",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2024-ol-p1-q8-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, one correct value identified S = D/T Relevant work on the diagram", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, one correct value identified S = D/T Relevant work on the diagram","Both values identified and some substitution into S = D/T"],"perOptionSteps":[4,6]} },
+    { id: "maths-2024-ol-p1-q8-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, one correct value identified SS = DD/TT Relevant work on the diagram", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, one correct value identified SS = DD/TT Relevant work on the diagram","Both values identified and some substitution into SS = DD/TT"],"perOptionSteps":[4,6]} },
     ],
     figure: {
           "candId": "maths-2024-OL-paper-p016-i1",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p016-i1.png",
           "srcHash": "ff8386195974007e85346fdf3e18b024",
-          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 1 Q8(a)(ii), typeset as the State Examinations Commission set it. It reads: (ii) S = 12/0∙5 = 24 [km/hour]",
+          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 1 Q8(a)(ii), typeset as the State Examinations Commission set it. It reads: (ii) SS = 12/0^∙⁵ = 24 [km/hour]",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4621,7 +4621,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-OL-paper-p017-i2",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p017-i2.png",
           "srcHash": "5cdd3d3fba16b4f06db283e630ff0859",
-          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 1 Q8(b)(v), typeset as the State Examinations Commission set it. It reads: (iv) & Sn = n/2 [2(6) + (n−1)(1 ∙5)] S10 = 10/2 [12 + (10 −1)(1 ∙5)] S₁₀ = 127 ∙5 [km] OR 6 + 7 ∙5 + 9 + 10 ∙5 + 12 + 13 ∙5 + 15 +16 ∙5 + 18 + 19 ∙5 = 127 ∙5 [km]",
+          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 1 Q8(b)(v), typeset as the State Examinations Commission set it. It reads: (iv) & SSₙₙ = nn/2 [2(6) + (nn − 1)(1 ∙ 5)] SS₁₀ = 10/2 [12 + (10 − 1)(1 ∙ 5)] S₁₀ = 127 ∙5 [km] OR 6 + 7 ∙5 + 9 + 10 ∙5 + 12 + 13 ∙5 + 15 +16 ∙5 + 18 + 19 ∙5 = 127 ∙5 [km]",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4642,7 +4642,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-OL-paper-p018-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p018-i0.png",
           "srcHash": "fb0c27240c46648449044a2b20d4b719",
-          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 1 Q9(a)(ii), typeset as the State Examinations Commission set it. It reads: (i) & 59 ∙5/0 ∙85 = [€]70 70 × 8 = 560 560 × 0 ∙8 = [€]448",
+          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 1 Q9(a)(ii), typeset as the State Examinations Commission set it. It reads: (i) & 59 ∙ 5/0 ∙ 85 = [€]70 70 × 8 = 560 560 × 0 ∙8 = [€]448",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4663,7 +4663,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-OL-paper-p018-i1",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p018-i1.png",
           "srcHash": "dc4d410947bfba644687243f7ab153cc",
-          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 1 Q9(b), typeset as the State Examinations Commission set it. It reads: 28 000 × 394/244 × 1000 = 45 ∙21311 = 45 ∙2 [kg]",
+          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 1 Q9(b), typeset as the State Examinations Commission set it. It reads: 28 000 × 394/244 × 1000 = 45 ∙ 21311 = 45 ∙2 [kg]",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4699,13 +4699,13 @@ export const CARDS: SecCard[] = [
     questionText: "Find the price of a ticket (value of x) for which the attendance would be 12 800",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2024-ol-p1-q9-c-ii-r1", kind: "anyN", verbatim: "A(x) = 12 800 Trial and improvement", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["A(x) = 12 800 Trial and improvement","x = 17 600−12 800/160 and stops"],"perOptionSteps":[4,6]} },
+    { id: "maths-2024-ol-p1-q9-c-ii-r1", kind: "anyN", verbatim: "A(x) = 12 800 Trial and improvement", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["A(x) = 12 800 Trial and improvement","xx = 17 600−12 800/160 and stops"],"perOptionSteps":[4,6]} },
     ],
     figure: {
           "candId": "maths-2024-OL-paper-p019-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p019-i0.png",
           "srcHash": "9bebf10b07357fb74ab21d62122ee10f",
-          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 1 Q9(c)(ii), typeset as the State Examinations Commission set it. It reads: 17 600 −160x = 12 800 x = 17 600 −12800/160 x = [€]30",
+          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 1 Q9(c)(ii), typeset as the State Examinations Commission set it. It reads: 17 600 −160x = 12 800 xx = 17 600 − 12800/160 x = [€]30",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4747,7 +4747,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-OL-paper-p020-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p020-i0.png",
           "srcHash": "11632db38d9c2d7c8382359048b406af",
-          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 1 Q10(a)(ii), typeset as the State Examinations Commission set it. It reads: 48 000 −(7650 + 1920 + 1407) & = [€] 37 023 37 023/48 000 × 100 = 77 ∙13 = 77 [%]",
+          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 1 Q10(a)(ii), typeset as the State Examinations Commission set it. It reads: 48 000 −(7650 + 1920 + 1407) & = [€] 37 023 37 023/48 000 × 100 = 77 ∙ 13 = 77 [%]",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4810,7 +4810,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-OL-paper-p021-i2",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p021-i2.png",
           "srcHash": "1cdadee92857a6883636d497ee557a87",
-          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 1 Q10(c)(ii), typeset as the State Examinations Commission set it. It reads: & (1950 + 400) × 120/365 × 0 ∙3 = 231 ∙7808 = [€]231 ∙78 2250 × d/365 × 0 ∙3 = 135 d = 135 × 365/2250 × 0∙3 = 73 [days]",
+          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 1 Q10(c)(ii), typeset as the State Examinations Commission set it. It reads: & (1950 + 400) × 120/365 × 0 ∙ 3 = 231 ∙7808 = [€]231 ∙78 2250 × dd/365 × 0 ∙ 3 = 135 dd = 135 × 365/2²⁵⁰^×⁰^∙³ = 73 [days]",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4894,7 +4894,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-OL-paper-p028-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p028-i0.png",
           "srcHash": "9a0b181126478be6fa8582157d5af1f8",
-          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q3(a)(ii), typeset as the State Examinations Commission set it. It reads: 1 = 1/2 (4) −1 1 = 1",
+          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q3(a)(ii), typeset as the State Examinations Commission set it. It reads: 1 = 1/2 (4) − 1 1 = 1",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4915,7 +4915,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-OL-paper-p029-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p029-i0.png",
           "srcHash": "268d68db5b947459b4e180ff2a9150c1",
-          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q3(c), typeset as the State Examinations Commission set it. It reads: (c) m = 9 −6/2 −0 = 3/2 y−6 = 3/2 (x−0) OR y−9 = 3/2 (x−2) OR y = 3/2 x + 6 [The line may also be written in the form: 3x−2y + 12 = 0 or similar]",
+          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q3(c), typeset as the State Examinations Commission set it. It reads: (c) mm = 9 − 6/2 − 0 = 3/2 yy − 6 = 3/2 (xx − 0) OR yy − 9 = 3/2 (xx − 2) OR yy = 3/2 xx + 6 [The line may also be written in the form: 3x−2y + 12 = 0 or similar]",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4957,7 +4957,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-OL-paper-p030-i1",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p030-i1.png",
           "srcHash": "f0cfe53c8569f85f40e2eea60d8d547d",
-          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q4(a)(ii), typeset as the State Examinations Commission set it. It reads: (9 −5)² + (2 + 3)² > 25 16 + 25 > 25 ⟹ outside the circle OR Distance from (5, −3) t (9, 2)/√(9 −5)2 + (2 −−3)2 √(9 −5)2 = +/√41 (2 > 5 −−3)2 ⟹ outside the circle",
+          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q4(a)(ii), typeset as the State Examinations Commission set it. It reads: (9 −5)² + (2 + 3)² > 25 16 + 25 > 25 ⟹ outside the circle OR Distance from (5, −3) tttt (9, 2)/√(9 − 5)² + (2 − −3)² √(9 − = 5)² + /√41 (2 > 5 − −3)² ⟹ outside the circle",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5009,7 +5009,7 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p2-q5-a-i", topicId: "maths-3-3", conceptId: "fill-three-missing-numbers-horizontal-axis",
+    id: "maths-2024-ol-p2-q5-a-i", topicId: "maths-1-2", conceptId: "fill-three-missing-numbers-horizontal-axis",
     section: "B", questionRef: "2024 OL Paper 2 Q5(a)(i)",
     questionText: "Fill in the three missing numbers on the horizontal axis",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -5020,7 +5020,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-OL-paper-p032-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p032-i0.png",
           "srcHash": "15297db5bfda220c655e9116fa8540b3",
-          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q5(a)(i), typeset as the State Examinations Commission set it. It reads: (a) (i) = 7 ∙2 + 8 ∙4/2 = 15∙6/2 = 7 ∙8 OR 8∙4 −7∙2 = 1∙2 1∙2 = 2𝜎 𝜎= 0∙6",
+          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q5(a)(i), typeset as the State Examinations Commission set it. It reads: (a) (i) = 7 ∙ 2 + 8 ∙ 4/2 = 15∙6/2 = 7 ∙8 OR 8∙4 −7∙2 = 1∙2 1∙2 = 2𝜎 𝜎= 0∙6",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5104,7 +5104,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-OL-paper-p034-i1",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p034-i1.png",
           "srcHash": "d97df8ff6e669a25a537d09a6c6bbf3e",
-          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q6(b)(ii), typeset as the State Examinations Commission set it. It reads: (i) & = 14/4 = 3 ∙5 6 × 3 ∙5 = 21 21 −6 = 15",
+          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q6(b)(ii), typeset as the State Examinations Commission set it. It reads: (i) & = 14/4 = 3 ∙ 5 6 × 3 ∙5 = 21 21 −6 = 15",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5224,13 +5224,13 @@ export const CARDS: SecCard[] = [
     questionText: "Show that, for this sample, the margin of error for a population proportion is 5∙3%, correct to 1 decimal place",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2024-ol-p2-q7-b-i-r1", kind: "anyN", verbatim: "Work of merit for example n = 355 Correct relevant formula ( 1/√n)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit for example n = 355 Correct relevant formula ( 1/√n)","Correct formula fully substituted Full Credit (-1): Apply a * for no or incorrect rounding"],"perOptionSteps":[2,3]} },
+    { id: "maths-2024-ol-p2-q7-b-i-r1", kind: "anyN", verbatim: "Work of merit for example n = 355 Correct relevant formula ( 1/√nn)", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit for example n = 355 Correct relevant formula ( 1/√nn)","Correct formula fully substituted Full Credit (-1): Apply a * for no or incorrect rounding"],"perOptionSteps":[2,3]} },
     ],
     figure: {
           "candId": "maths-2024-OL-paper-p036-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p036-i0.png",
           "srcHash": "0f40a144b461f4bfb4140d2bb555cb01",
-          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q7(b)(i), typeset as the State Examinations Commission set it. It reads: Margin of error (i) 1/√n = 1/√n = 1/√355 1/√355 = 5 ∙3 [%]",
+          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q7(b)(i), typeset as the State Examinations Commission set it. It reads: Margin of error (i) 1/√nn 1/√nn = 1/√355 1/√355 = 5 ∙3 [%]",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5245,7 +5245,7 @@ export const CARDS: SecCard[] = [
     questionText: "96 of the 355 runners finished the run in under 25 minutes. Work out the percentage of runners in this sample who finished the park run in under 25 minutes. Give your answer correct to the nearest percent",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2024-ol-p2-q7-b-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, 96/355 OR × 100", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, 96/355 OR × 100","96/355 × 100 OR 0.27042 Full Credit (-1): Apply a * for no or incorrect rounding"],"perOptionSteps":[2,3]} },
+    { id: "maths-2024-ol-p2-q7-b-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, 96/3⁵⁵ OR × 100", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, 96/3⁵⁵ OR × 100","96/3⁵⁵ × 100 OR 0.27042 Full Credit (-1): Apply a * for no or incorrect rounding"],"perOptionSteps":[2,3]} },
     ],
     figure: {
           "candId": "maths-2024-OL-paper-p036-i1",
@@ -5266,13 +5266,13 @@ export const CARDS: SecCard[] = [
     questionText: "(iii) A running club commentator said that Galway park run times have changed since 2019. In 2019 it was reported that 24% of all runners finished the park run in under 25 minutes",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2024-ol-p2-q7-b-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, writes answer from (b)(i) or (b)(ii) in this part p̂ ± 1/√n 1/√n", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, writes answer from (b)(i) or (b)(ii) in this part p̂ ± 1/√n 1/√n","One boundary formed: OR 27 + 5 ∙3 27 −5 ∙3","Both boundaries formed: AND 27 + 5 ∙3 27 −5 ∙3 but no conclusion and reason Full Credit (-1): Either conclusion OR reason missing OR incorrect"],"perOptionSteps":[3,2,5]} },
+    { id: "maths-2024-ol-p2-q7-b-iii-r1", kind: "anyN", verbatim: "Work of merit, for example, writes answer from (b)(i) or (b)(ii) in this part pp̂ ± 1/√nn 1/√nn", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, writes answer from (b)(i) or (b)(ii) in this part pp̂ ± 1/√nn 1/√nn","One boundary formed: OR 27 + 5 ∙3 27 −5 ∙3","Both boundaries formed: AND 27 + 5 ∙3 27 −5 ∙3 but no conclusion and reason Full Credit (-1): Either conclusion OR reason missing OR incorrect"],"perOptionSteps":[3,2,5]} },
     ],
     figure: {
           "candId": "maths-2024-OL-paper-p037-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p037-i0.png",
           "srcHash": "768e4d1e922fb36c1cafbdd0b471702d",
-          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q7(b)(iii), typeset as the State Examinations Commission set it. It reads: (iii) p̂ ± 1/√n 1/√n 27 −5 ∙3 ≤ p ≤ 27 + 5 ∙3 Conclusion: No change to the population percentage Reason: 24% is inside the range found. Within the CI.",
+          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q7(b)(iii), typeset as the State Examinations Commission set it. It reads: (iii) pp̂ ± 1/√nn 1/√nn 27 −5 ∙3 ≤ p ≤ 27 + 5 ∙3 Conclusion: No change to the population percentage Reason: 24% is inside the range found. Within the CI.",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5293,7 +5293,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-OL-paper-p038-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p038-i0.png",
           "srcHash": "9b7ab9aed4a2f6226fc2f4d433094a90",
-          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q8(a)(i), typeset as the State Examinations Commission set it. It reads: l² = 1 ∙4² + 3² l2 l = = 10 ∙96/√10 ∙96 l = 3 ∙31058 … l = 3 ∙3 [m]",
+          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q8(a)(i), typeset as the State Examinations Commission set it. It reads: l² = 1 ∙4² + 3² ll² ll = = 10 ∙ 96/√10 ∙ 96 l = 3 ∙31058 … l = 3 ∙3 [m]",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5303,18 +5303,18 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p2-q8-a-ii", topicId: "maths-3-4", conceptId: "size-angle-correct-nearest-degree",
+    id: "maths-2024-ol-p2-q8-a-ii", topicId: "maths-2-1", conceptId: "size-angle-correct-nearest-degree",
     section: "B", questionRef: "2024 OL Paper 2 Q8(a)(ii)",
     questionText: "Show that the size of the angle ∠F = 65°, correct to the nearest degree",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2024-ol-p2-q8-a-ii-r1", kind: "anyN", verbatim: "T A = 3/1∙4 or similar Finds ∠G using trigonometry (25°) Full Credit (-1): Apply a * for no or incorrect rounding", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: High Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["T A = 3/1∙4 or similar Finds ∠G using trigonometry (25°) Full Credit (-1): Apply a * for no or incorrect rounding"]} },
+    { id: "maths-2024-ol-p2-q8-a-ii-r1", kind: "anyN", verbatim: "TTTTTT AA = 3/1^∙⁴ or similar Finds ∠G using trigonometry (25°) Full Credit (-1): Apply a * for no or incorrect rounding", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: High Partial Credit.", openList: true, group: {"claimMax":1,"perOption":5,"options":["TTTTTT AA = 3/1^∙⁴ or similar Finds ∠G using trigonometry (25°) Full Credit (-1): Apply a * for no or incorrect rounding"]} },
     ],
     figure: {
           "candId": "maths-2024-OL-paper-p038-i1",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p038-i1.png",
           "srcHash": "1857d929fcd86263d8555199755da62e",
-          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q8(a)(ii), typeset as the State Examinations Commission set it. It reads: (ii) T A = 3/1 ∙4 A = 64 ∙983 … A = 65[°] Or similar using l = 3∙3",
+          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q8(a)(ii), typeset as the State Examinations Commission set it. It reads: (ii) TTTTTT AA = 3/1 ∙ 4 A = 64 ∙983 … A = 65[°] Or similar using l = 3∙3",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5324,7 +5324,7 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p2-q8-a-iii", topicId: "maths-3-4", conceptId: "iii-second-cable-tied-sign-point",
+    id: "maths-2024-ol-p2-q8-a-iii", topicId: "maths-2-1", conceptId: "iii-second-cable-tied-sign-point",
     section: "B", questionRef: "2024 OL Paper 2 Q8(a)(iii)",
     questionText: "(iii) A second cable from G is tied to the sign, at the point K, where K is half way up the sign [F]",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -5335,7 +5335,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-OL-paper-p038-i2",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p038-i2.png",
           "srcHash": "84cd4b5be92a5f02e81fd5e55f1a6c7e",
-          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q8(a)(iii), typeset as the State Examinations Commission set it. It reads: No Answer: (iii) T A = 1 ∙5/1 ∙4 A = 46 ∙974 … A = 47 [°] 47° ≠1/2 (65°)",
+          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q8(a)(iii), typeset as the State Examinations Commission set it. It reads: No Answer: (iii) TTTTTT AA = 1 ∙ 5/1 ∙ 4 A = 46 ∙974 … A = 47 [°] 47° ≠ 1/2 (65°)",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5345,7 +5345,7 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p2-q8-b-i", topicId: "maths-3-4", conceptId: "part",
+    id: "maths-2024-ol-p2-q8-b-i", topicId: "maths-2-1", conceptId: "part",
     section: "B", questionRef: "2024 OL Paper 2 Q8(b)(i)",
     questionText: "|A| = 12 cm, |A| = 10 cm, and |∠A| = 37°",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 5, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
@@ -5366,7 +5366,7 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p2-q8-b-ii", topicId: "maths-3-4", conceptId: "110",
+    id: "maths-2024-ol-p2-q8-b-ii", topicId: "maths-2-1", conceptId: "110",
     section: "B", questionRef: "2024 OL Paper 2 Q8(b)(ii)",
     questionText: "|C| = 22 cm, |E| = 11·8 cm, and |∠E| = 110°",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 5, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
@@ -5398,7 +5398,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-OL-paper-p039-i2",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p039-i2.png",
           "srcHash": "b1edd30462958fbf34a2d4f12e318264",
-          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q8(b)(iii), typeset as the State Examinations Commission set it. It reads: Area = 1/2 (22)(11 ∙8) sin 110 = 121 ∙972 … Total area = 2 × 121 ∙972 … = 243 ∙944 … = 244 [cm²]",
+          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q8(b)(iii), typeset as the State Examinations Commission set it. It reads: Area = 1/2 (22)(11 ∙ 8) sin 110 = 121 ∙972 … Total area = 2 × 121 ∙972 … = 243 ∙944 … = 244 [cm²]",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5455,13 +5455,13 @@ export const CARDS: SecCard[] = [
     questionText: "A customer is picked at random from the first 100 customers. Find the probability that this customer bought a cone with a flavour other than vanilla",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2024-ol-p2-q9-b-ii-r1", kind: "anyN", verbatim: "(ii) 13/100 or 0 ∙13 or 13%", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":1,"perOption":5,"options":["(ii) 13/100 or 0 ∙13 or 13%"]} },
+    { id: "maths-2024-ol-p2-q9-b-ii-r1", kind: "anyN", verbatim: "(ii) 13/1⁰⁰ or 0 ∙ 13 or 13%", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":1,"perOption":5,"options":["(ii) 13/1⁰⁰ or 0 ∙ 13 or 13%"]} },
     ],
     figure: {
           "candId": "maths-2024-OL-paper-p040-i2",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p040-i2.png",
           "srcHash": "699bc5d887f6de92ea5fba4e1d29d1c6",
-          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q9(b)(ii), typeset as the State Examinations Commission set it. It reads: (ii) 13/100 or 0 ∙13 or 13%",
+          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q9(b)(ii), typeset as the State Examinations Commission set it. It reads: (ii) 13/1⁰⁰ or 0 ∙ 13 or 13%",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5503,7 +5503,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-OL-paper-p041-i1",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p041-i1.png",
           "srcHash": "cc67970bdc3088d151f93d181436ccc0",
-          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q9(d)(i), typeset as the State Examinations Commission set it. It reads: 𝜃= 360 −2(70) 𝜃= 220[°] Arc Length = 220/360 [2𝜋(20)] = 76 ∙79 … = 76 ∙8 [cm]",
+          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q9(d)(i), typeset as the State Examinations Commission set it. It reads: 𝜃= 360 −2(70) 𝜃= 220[°] Arc Length = 220/360 [2𝜋𝜋(20)] = 76 ∙79 … = 76 ∙8 [cm]",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5524,7 +5524,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-OL-paper-p026-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p026-i0.png",
           "srcHash": "c311d054762c1e49994b747a8e9db419",
-          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q10(a)(ii), typeset as the State Examinations Commission set it. It reads: Detailed marking notes Note: The model solutions for each question are not intended to be exhaustive – there may be other correct solutions. Any Examiner unsure of the validity of the approach adopted by a particular candidate to a particular question should contact his / her Advising Examiner. (a) (i) (i)/X 37 42 54 74 76 82 91 Y & Median = 74 Explanation: Half the students scored more than 74 and half scored less",
+          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q10(a)(ii), typeset as the State Examinations Commission set it. It reads: Detailed marking notes Note: The model solutions for each question are not intended to be exhaustive – there may be other correct solutions. Any Examiner unsure of the validity of the approach adopted by a particular candidate to a particular question should contact his / her Advising Examiner. (a) (i) (i)/XX 37 42 54 74 76 82 91 YY & Median = 74 Explanation: Half the students scored more than 74 and half scored less",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5566,7 +5566,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-OL-paper-p026-i2",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p026-i2.png",
           "srcHash": "0259f046b6ffad491f669386d5a36d89",
-          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q10(b), typeset as the State Examinations Commission set it. It reads: 15 + 16 + 19 + t + 26/5 = 19·6 76 + t = 98 t = 22",
+          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q10(b), typeset as the State Examinations Commission set it. It reads: 15 + 16 + 19 + tt + 26/5 = 19·6 76 + t = 98 t = 22",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5587,7 +5587,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-OL-paper-p043-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p043-i0.png",
           "srcHash": "e99f206f89240ebc98860b06e6da117a",
-          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q10(c), typeset as the State Examinations Commission set it. It reads: (c) 4/3 π(3∙4)3 = [164∙636…] 4/3 π(3∙1)3 = [124∙788…] 164 ∙636 −124 ∙788 = 39 ∙8477 … = 39 ∙85 [cm₃]",
+          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q10(c), typeset as the State Examinations Commission set it. It reads: (c) 4/3 π(3∙4)³ = [164∙636…] 4/3 π(3∙1)³ = [124∙788…] 164 ∙636 −124 ∙788 = 39 ∙8477 … = 39 ∙85 [cm₃]",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5671,7 +5671,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-OL-paper-p007-i1",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-paper-p007-i1.png",
           "srcHash": "41000c31232f1c405030d70b0a3de128",
-          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 1 Q2(a)(iii), typeset as the State Examinations Commission set it. It reads: (iii) √12 + /√5 22 1 + i or similar",
+          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 1 Q2(a)(iii), typeset as the State Examinations Commission set it. It reads: (iii) √1² + /√5 2² 1 + i or similar",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5686,13 +5686,13 @@ export const CARDS: SecCard[] = [
     questionText: "u and v are two complex numbers. u= 4 −6i v= 1 + i Write u v in the form a+ b, where a, b∈ℤ. Leaving Certificate, 2025 7",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2025-ol-p1-q2-b-r1", kind: "anyN", verbatim: "Correct substitution AND correct conjugate written Correct substitution AND some correct multiplication by an incorrect conjugate", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Mid Partial Credit; High Partial Credit; Full credit -1.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Correct substitution AND correct conjugate written Correct substitution AND some correct multiplication by an incorrect conjugate","4−6i/1 + i × 1−i/1−i with some correct multiplication","Apply a * if in the form −2−10i/2"],"perOptionSteps":[3,2,5]} },
+    { id: "maths-2025-ol-p1-q2-b-r1", kind: "anyN", verbatim: "Correct substitution AND correct conjugate written Correct substitution AND some correct multiplication by an incorrect conjugate", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Mid Partial Credit; High Partial Credit; Full credit -1.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Correct substitution AND correct conjugate written Correct substitution AND some correct multiplication by an incorrect conjugate","4−6i/1 + i × 1−i/1^−ⁱ with some correct multiplication","Apply a * if in the form −2−10i/2"],"perOptionSteps":[3,2,5]} },
     ],
     figure: {
           "candId": "maths-2025-OL-paper-p008-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-paper-p008-i0.png",
           "srcHash": "137bf8a665916368f060ae06862538e5",
-          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 1 Q2(b), typeset as the State Examinations Commission set it. It reads: 4 −6i/i × 1 + 1 −i/1 −i = −2 −10i/2 = −1 −5i",
+          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 1 Q2(b), typeset as the State Examinations Commission set it. It reads: 4 − 6i/1 + i × 1 − i/1 − i = −2 − 10i/2 = −1 −5i",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5818,7 +5818,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-OL-paper-p011-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-paper-p011-i0.png",
           "srcHash": "5317cddbceab12bf408293ff4198238b",
-          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 1 Q5(a), typeset as the State Examinations Commission set it. It reads: 6x + 4y = 22 x−4y = −1/7x = 21 x = 3 6(3) + 4y = 22 4y = 4 y = 1 OR 3x + 2y = 11 −3x + 12y = 3/14y = 14 y = 1 3x + 2(1) = 11 3x = 9 x = 3",
+          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 1 Q5(a), typeset as the State Examinations Commission set it. It reads: 6x + 4y = 22 x − 4y = −1/7x = 21 x = 3 6(3) + 4y = 22 4y = 4 y = 1 OR 3x + 2y = 11 −3x + 12y = 3/14y = 14 y = 1 3x + 2(1) = 11 3x = 9 x = 3",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5839,7 +5839,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-OL-paper-p011-i1",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-paper-p011-i1.png",
           "srcHash": "9637cca4090e1b6eb39735d1a0c3e7c7",
-          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 1 Q5(b), typeset as the State Examinations Commission set it. It reads: (b) 2 ± √(−2)2 −4(3)(−4)/2(3) x = 1∙5351 … x = −0∙8685 … x = 1∙54 or x = −0∙87",
+          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 1 Q5(b), typeset as the State Examinations Commission set it. It reads: (b) 2 ± √(−2)² − 4(3)(−4)/2(3) x = 1∙5351 … x = −0∙8685 … x = 1∙54 or x = −0∙87",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -5923,7 +5923,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-OL-paper-p014-i2",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-paper-p014-i2.png",
           "srcHash": "34323855d8c0b28f1bc16dbbf9199669",
-          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 1 Q7(c), typeset as the State Examinations Commission set it. It reads: (c) 1∙5/value = true 0∙163 = 9∙202 … = [€]9∙20",
+          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 1 Q7(c), typeset as the State Examinations Commission set it. It reads: (c) 1∙5/true value = 0∙163 = 9∙202 … = [€]9∙20",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6196,7 +6196,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-OL-paper-p019-i1",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-paper-p019-i1.png",
           "srcHash": "ffc2b79d85fb58cfaa31adfc9099074a",
-          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 1 Q9(b)(v), typeset as the State Examinations Commission set it. It reads: (v) Sn = n/2 (2(2) + (n−1)1) [Sn = n(n + 3)/2 ] n(n + 3)/2 = 740 n² + 3n−1480 = 0 n = 37",
+          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 1 Q9(b)(v), typeset as the State Examinations Commission set it. It reads: (v) Sₙ = n/2 (2(2) + (n − 1)1) [Sₙ = n(n + 3)/2 ] n(n + 3)/2 = 740 n² + 3n−1480 = 0 n = 37",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6379,7 +6379,7 @@ export const CARDS: SecCard[] = [
     questionText: "The lengths of two of the sides are x and 10 cm, as shown in the diagram above. Using A = 30°, find the value of x, correct to 2 decimal places",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2025-ol-p2-q2-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, some understanding of trigonometric ratios or sine rule formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, some understanding of trigonometric ratios or sine rule formula","tan 30 = x/10 or similar Full Credit (-1): Apply a * for no or incorrect rounding Apply a * for no units"],"perOptionSteps":[4,6]} },
+    { id: "maths-2025-ol-p2-q2-a-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, some understanding of trigonometric ratios or sine rule formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, some understanding of trigonometric ratios or sine rule formula","tan 30 = x/1⁰ or similar Full Credit (-1): Apply a * for no or incorrect rounding Apply a * for no units"],"perOptionSteps":[4,6]} },
     ],
     figure: {
           "candId": "maths-2025-OL-paper-p027-i1",
@@ -6469,7 +6469,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-OL-paper-p029-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-paper-p029-i0.png",
           "srcHash": "73d7a767e86512cc95a346013d257917",
-          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 2 Q4(a)(i), typeset as the State Examinations Commission set it. It reads: (i) m = 0 −3/2 + 5 m = −3/7",
+          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 2 Q4(a)(i), typeset as the State Examinations Commission set it. It reads: (i) m = 0 − 3/2 + 5 m = − 3/7",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6490,7 +6490,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-OL-paper-p029-i1",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-paper-p029-i1.png",
           "srcHash": "4985453bfbb7bae037135be098748efc",
-          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 2 Q4(a)(ii), typeset as the State Examinations Commission set it. It reads: (a) (ii) y−3 = −3/7 (x−(−5)) 3x + 7y−6 = 0",
+          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 2 Q4(a)(ii), typeset as the State Examinations Commission set it. It reads: (a) (ii) y − 3 = −3/7 (x − (−5)) 3x + 7y−6 = 0",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6511,7 +6511,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-OL-paper-p029-i2",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-paper-p029-i2.png",
           "srcHash": "2880c908ed601491d73ea757c38dbd55",
-          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 2 Q4(a)(iii), typeset as the State Examinations Commission set it. It reads: (iii) Area = 1/2 (9)(3) = 13∙5 units2 OR (2, 0) →(0, 0) (−5, 3) →(−7, 3) (4, 3) →(2, 3) 1/2 |(−7)(3) −(2)(3)| = 13∙5 units² Or similar",
+          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 2 Q4(a)(iii), typeset as the State Examinations Commission set it. It reads: (iii) Area = 1/2 (9)(3) = 13∙5 units² OR (2, 0) →(0, 0) (−5, 3) →(−7, 3) (4, 3) →(2, 3) 1/2 |(−7)(3) − (2)(3)| = 13∙5 units² Or similar",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6532,7 +6532,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-OL-paper-p030-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-paper-p030-i0.png",
           "srcHash": "b16b21b9a41d20b5694fb18cc71d9c47",
-          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 2 Q4(b), typeset as the State Examinations Commission set it. It reads: Neither ml = 2/3 mk = −2/3",
+          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 2 Q4(b), typeset as the State Examinations Commission set it. It reads: Neither m_l = 2/3 m_k = −2/3",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6742,7 +6742,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-OL-paper-p034-i1",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-paper-p034-i1.png",
           "srcHash": "7aebcaa18cb11bf4d9898f52929b16a1",
-          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 2 Q7(c)(i), typeset as the State Examinations Commission set it. It reads: (i) V = 4/3 𝜋(9)3 = 972𝜋 [cm³]",
+          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 2 Q7(c)(i), typeset as the State Examinations Commission set it. It reads: (i) V = 4/3 𝜋(9)³ = 972𝜋 [cm³]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6757,13 +6757,13 @@ export const CARDS: SecCard[] = [
     questionText: "An adult’s football is in the shape of a sphere and has a volume of 5424∙6 cm³",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2025-ol-p2-q7-c-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, volume of sphere formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, volume of sphere formula","4/3 𝜋 r3 = 5424∙6","r³ isolated Full Credit (-1): Apply a * for no or incorrect rounding Apply a * for no units"],"perOptionSteps":[3,2,5]} },
+    { id: "maths-2025-ol-p2-q7-c-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, volume of sphere formula", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["Work of merit, for example, volume of sphere formula","4/3 𝜋 r³ = 5424∙6","r³ isolated Full Credit (-1): Apply a * for no or incorrect rounding Apply a * for no units"],"perOptionSteps":[3,2,5]} },
     ],
     figure: {
           "candId": "maths-2025-OL-paper-p035-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-paper-p035-i0.png",
           "srcHash": "c456205240dec520dec60f41136e313a",
-          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 2 Q7(c)(ii), typeset as the State Examinations Commission set it. It reads: (ii) V = 4/3 𝜋 r3 = 5424∙6 r³ = 1295∙027 … r = 10∙899 …",
+          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 2 Q7(c)(ii), typeset as the State Examinations Commission set it. It reads: (ii) V = 4/3 𝜋 r³ = 5424∙6 r³ = 1295∙027 … r = 10∙899 …",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6883,7 +6883,7 @@ export const CARDS: SecCard[] = [
     questionText: "106 of the 815 new cars bought in 2024 were electric cars. Work out the percentage of new cars in this sample that were electric cars. Give your answer correct to the nearest percent",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2025-ol-p2-q8-c-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, 106/815 OR × 100", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, 106/815 OR × 100","106/815 × 100 OR 0∙13006 … Full Credit (-1): Apply a * for no or incorrect rounding"],"perOptionSteps":[2,3]} },
+    { id: "maths-2025-ol-p2-q8-c-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, 106/8¹⁵ OR × 100", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, 106/8¹⁵ OR × 100","106/8¹⁵ × 100 OR 0∙13006 … Full Credit (-1): Apply a * for no or incorrect rounding"],"perOptionSteps":[2,3]} },
     ],
     figure: {
           "candId": "maths-2025-OL-paper-p037-i2",
@@ -6994,7 +6994,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-OL-paper-p040-i1",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-paper-p040-i1.png",
           "srcHash": "5eb697004cc6d211c998b0ecb84f1c96",
-          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 2 Q9(c)(i), typeset as the State Examinations Commission set it. It reads: (i) 250/360 × 𝜋(160)2 −250/360 × 𝜋(120)2 160 000𝜋/9 −10 000𝜋 70 000𝜋/9 = 24 434∙6 … = 24 435 [cm²] OR 250/360 × [𝜋(160)2 −𝜋(120)2] = 24 434∙6 … = 24 435 [cm²]",
+          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 2 Q9(c)(i), typeset as the State Examinations Commission set it. It reads: (i) 250/360 × 𝜋(160)² − 250/360 × 𝜋(120)² 160 000𝜋/9 − 10 000𝜋 70 000𝜋/9 = 24 434∙6 … = 24 435 [cm²] OR 250/360 × [𝜋(160)² − 𝜋(120)²] = 24 434∙6 … = 24 435 [cm²]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -7009,7 +7009,7 @@ export const CARDS: SecCard[] = [
     questionText: "Each participant attending the demonstration needs at least 60 cm along the outer circumference of the Work Section of the table to carry out the food preparation",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
     rows: [
-    { id: "maths-2025-ol-p2-q9-c-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, or 250/360 or division by 60", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, or 250/360 or division by 60","Correct formula fully substituted Length of arc found (698∙1 …) Full Credit (-1): Apply a * for answer given as 12"],"perOptionSteps":[2,3]} },
+    { id: "maths-2025-ol-p2-q9-c-ii-r1", kind: "anyN", verbatim: "Work of merit, for example, or 250/3⁶⁰ or division by 60", marks: 5, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":2,"options":["Work of merit, for example, or 250/3⁶⁰ or division by 60","Correct formula fully substituted Length of arc found (698∙1 …) Full Credit (-1): Apply a * for answer given as 12"],"perOptionSteps":[2,3]} },
     ],
     figure: {
           "candId": "maths-2025-OL-paper-p040-i2",
@@ -7114,13 +7114,13 @@ export const CARDS: SecCard[] = [
     questionText: "Point A is the nearest point to the shore and is the start and end point for all swims",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2025-ol-p2-q10-b-r1", kind: "anyN", verbatim: "Q1 = 94 + 93/2", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Q1 = 94 + 93/2","Q1 = 187/2","= 93∙5 [mm]","IQR = 183 −93∙5 = 89∙5 [mm]"],"perOptionSteps":[4,2,4]} },
+    { id: "maths-2025-ol-p2-q10-b-r1", kind: "anyN", verbatim: "Q₁ = 94 + 93/2", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":3,"perOption":4,"options":["Q₁ = 94 + 93/2","Q₁ = 187/2","= 93∙5 [mm]","IQR = 183 −93∙5 = 89∙5 [mm]"],"perOptionSteps":[4,2,4]} },
     ],
     figure: {
           "candId": "maths-2025-OL-paper-p026-i2",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-paper-p026-i2.png",
           "srcHash": "62520274962f65c7883e132a7278acdc",
-          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 2 Q10(b), typeset as the State Examinations Commission set it. It reads: Q1 = 94 + 93/2 Q1 = 187/2 = 93∙5 [mm] IQR = 183 −93∙5 = 89∙5 [mm]",
+          "alt": "The marking scheme's printed worked solution for 2025 OL Paper 2 Q10(b), typeset as the State Examinations Commission set it. It reads: Q₁ = 94 + 93/2 Q₁ = 187/2 = 93∙5 [mm] IQR = 183 −93∙5 = 89∙5 [mm]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
