@@ -315,6 +315,82 @@ class Author:
         return sum(mk for lab, mk in self.S.mark_rows(q, letter)
                    if self._is_unstateable(lab, qtext))
 
+    def _explain_each(self, q, letter, qtext, cid, topic, concept, notes, stem):
+        """"Explain any five of the following: • concrete mixer • ridge tile ..."
+
+        Every Ordinary paper sets one of these and the scheme explains EVERY
+        term on the list in full, six bullets apiece. It is the richest question
+        in the paper and it was invisible twice over: the question carries no
+        part letter, so the block reader dropped it, and read as one part it is
+        "name five of nine", which is not what the question asks.
+
+        One card per term. The question is the paper's sentence narrowed to that
+        term by the same rule as any other split -- other items deleted, result
+        proved a subsequence -- and the answer is that term's own bullets. The
+        mark table prices the items identically ("Primary communication of
+        relevant information 6 / Other communication of relevant information
+        4"), so the tariff is read off one cycle of it and applies to each.
+        """
+        m = ANY_N.search(qtext or '')
+        if not m:
+            return None
+        gs = [g for g in self.S.groups(q, letter, 'indicative') if len(g[2]) >= 2 and g[0]]
+        if len(gs) < 3:
+            return None
+        names = [g[0] for g in gs]
+        if any(locate(qtext, n) is None for n in names):
+            return None
+        rows = self.S.mark_rows(q, letter)
+        steps = None
+        if len(rows) >= 4:
+            # One cycle of the repeating per-item tariff.
+            first = rows[0][0]
+            cycle = [rows[0]]
+            for lab, mk in rows[1:]:
+                if lab == first:
+                    break
+                cycle.append((lab, mk))
+            if cycle and not len(rows) % len(cycle) and len(rows) // len(cycle) >= 2:
+                steps = [mk for _, mk in cycle]
+        if steps is None:
+            # No repeating cycle to read, but the question says how many items
+            # are claimable and the scheme prints the part's total, so the
+            # per-item value is arithmetic on two printed numbers. This is the
+            # commoner Higher Level shape: "the importance of any two of the
+            # following (12 marks)" over three named options is three cards
+            # worth six, not one card listing three names.
+            block = ' '.join(self.S.marks.get((q, letter), []))
+            printed = {int(a or b) for a, b in PART_TOTAL.findall(block)}
+            k = N_WORD[m.group(1).lower()]
+            fit = [p for p in printed if k and p % k == 0 and p // k > 1]
+            if not fit or k >= len(gs) + 1:
+                return None
+            steps = [max(fit) // k]
+        per_item = sum(steps)
+        out = None
+        for name, _, items in gs:
+            narrowed = narrow(qtext, names, name)
+            if not narrowed:
+                continue
+            opts = [it.strip(' .;') for it in items
+                    if it.strip() and not CONTENT_FREE.match(it.strip(' .;'))
+                    and _squash(it) in self.raw]
+            if len(opts) < len(steps) or len(opts) > MAX_OPTIONS_SHOWN:
+                continue
+            slug = re.sub(r'[^a-z0-9]+', '-', name.lower()).strip('-')[:44]
+            sub = f'{cid}-{slug}'
+            if sub in self._used:
+                continue
+            row = anyN(f'{sub}-r1', name, per_item, len(steps), steps[0], opts,
+                       name, steps=steps if len(set(steps)) > 1 else None)
+            out = _card(sub, self.year, self.deck_level, topic, f'{concept}-{slug}',
+                        f'{self.ref(q, letter)} — {name}', narrowed,
+                        ' + '.join(str(x) for x in steps), per_item, [row], notes,
+                        stem=stem, tariff_kind='fixed')
+            self.cards.append(out)
+            self._used.add(sub)
+        return out
+
     def _check_total(self, q, letter, total, qtext='', used=None):
         """Returns a note where a NAMED shortfall is allowed, else None."""
         """The card's marks must be the question's marks.
@@ -391,6 +467,9 @@ class Author:
         qtext = self.question(q, letter)
         if not qtext:
             raise Refused(f'Q{q}({letter}): no question text in the paper')
+        each = self._explain_each(q, letter, qtext, cid, topic, concept, notes, stem)
+        if each is not None:
+            return each
         pair = self._choice_and_reasons(q, letter, qtext, cid, topic, concept,
                                         notes, stem)
         if pair is not None:
@@ -722,7 +801,11 @@ def _span(question, item):
     while True:
         before = question[:lo]
         stripped = before.rstrip(' \t')
-        if stripped.endswith(('•', '·')):
+        # \uf0b7 is the same bullet in the Symbol font's private use area, which
+        # is what the 2024 and 2025 papers use. Read as ordinary text it is not
+        # a separator, so every enumerated question in those two papers refused
+        # to split while the identical 2021 question split fine.
+        if stripped.endswith(('•', '·', '\uf0b7', '\uf06c', '\uf0a7')):
             lo = len(stripped) - 1
             cut = True
             break

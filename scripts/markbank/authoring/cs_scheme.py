@@ -50,7 +50,7 @@ QHEAD = re.compile(r'^(?:Leaving Certificate Examination,?\s*\d{4}\s+)?'
 # "(a)" at Higher Level, "Part (a)" at Ordinary. Without the prefix the whole
 # Ordinary mark half parsed to zero parts, and the subject read as Higher-only.
 PART = re.compile(r'^(?:Part\s+)?\(([a-h])\)\s*(.*)$', re.I)
-BULLET = re.compile(r'^[•\-•]\s*')
+BULLET = re.compile(r'^[•\-\uf0b7\uf06c\uf0a7]\s*')
 # "5 x 4 marks", "4 × 4 marks (3 for drawing, 1 for annotation)"
 GROUP_TARIFF = re.compile(r'(\d{1,2})\s*[x×]\s*(\d{1,3})\s*marks?', re.I)
 # "(12 marks)", "(3 + 2 marks)", "(8 + 8 marks)"
@@ -199,8 +199,13 @@ def blocks(lines, pages=None):
             if rest:
                 out[(q, letter)].append(rest)
             continue
-        if q is not None and letter is not None:
-            out[(q, letter)].append(line)
+        if q is not None:
+            # letter is None for a question the paper does not divide -- every
+            # Ordinary paper's Question 8 is one undivided "explain any five of
+            # the following". Dropping those lost a whole question from each of
+            # the five papers, and the richest one in them: the scheme explains
+            # every term on the list in full.
+            out.setdefault((q, letter), []).append(line)
     return out
 
 

@@ -2255,6 +2255,435 @@
   "notes": ""
  },
  {
+  "id": "cons-2021-ol-q8-None-joist-bridging",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-joist-bridging",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2021 OL Q8 — Joist bridging",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • joist bridging.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2021-ol-q8-None-joist-bridging-r1",
+    "kind": "anyN",
+    "verbatim": "Joist bridging",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Joist bridging",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Used to keep joists vertical to prevent twisting",
+      "Stiffens and strengthens the joists by tying then together",
+      "Used to spread the load from one joist to other nearby joists",
+      "Two methods: solid bridging and herringbone bridging"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2021-ol-q8-None-working-drawing",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-working-drawing",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2021 OL Q8 — Working drawing",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • working drawing.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2021-ol-q8-None-working-drawing-r1",
+    "kind": "anyN",
+    "verbatim": "Working drawing",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Working drawing",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "A scaled drawing to use as a guide when constructing furniture or buildings",
+      "Will include an elevation, end elevation, plan, and sectional views",
+      "Will include dimensions and graphical information to aid construction of the building or artefact",
+      "Can be hand drafted or created using"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2021-ol-q8-None-roof-light",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-roof-light",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2021 OL Q8 — Roof light",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • rooflight.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2021-ol-q8-None-roof-light-r1",
+    "kind": "anyN",
+    "verbatim": "Roof light",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Roof light",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Used on roof surfaces for a means of natural light",
+      "Units are fitted with double, triple or quadruple glazing",
+      "Allows attic space to be used as a usable room",
+      "Form an important part of modern house design",
+      "Gives more privacy compared to dormer windows"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2021-ol-q8-None-steel-reinforcement",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-steel-reinforcement",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2021 OL Q8 — Steel reinforcement",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • steel reinforcement.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2021-ol-q8-None-steel-reinforcement-r1",
+    "kind": "anyN",
+    "verbatim": "Steel reinforcement",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Steel reinforcement",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Combined with concrete to create a strong building material called reinforced concrete",
+      "Encased in load-bearing concrete structures to increase strength and hold the concrete in tension",
+      "Placed at a depth of two thirds a foundations thickness",
+      "The steel is usually patterned to improve the bond and grip with the surrounding concrete",
+      "Often referred to as rebar and comes in bars or mesh which can be tied together into cages"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2021-ol-q8-None-heat-pump",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-heat-pump",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2021 OL Q8 — Heat pump",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • heat pump.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2021-ol-q8-None-heat-pump-r1",
+    "kind": "anyN",
+    "verbatim": "Heat pump",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Heat pump",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Used to extract heat from one area to another by means of the refrigeration cycle",
+      "A fan is used to pass air over an evaporator coil which removes the heat energy from the air and passes it to the refrigerant",
+      "The refrigerant is then compressed, which increases the temperature, this heat is transferred to water running through radiators or underfloor heating",
+      "Heat pumps that use the ground for heating are called geothermal heat pumps"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2021-ol-q8-None-ridge-board",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-ridge-board",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2021 OL Q8 — Ridge board",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • ridgeboard.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2021-ol-q8-None-ridge-board-r1",
+    "kind": "anyN",
+    "verbatim": "Ridge board",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Ridge board",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Horizontal member placed between the top end of the rafters",
+      "Forms the apex of a cut roof",
+      "Supported by the rafters or/and at the gable wall",
+      "Gives rigidity and straightness to the roof",
+      "Rafters are nailed to the ridge board",
+      "Typical sizes - 225 × 32 mm, 225 × 25 mm"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2021-ol-q8-None-biscuit-joint",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-biscuit-joint",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2021 OL Q8 — Biscuit joint",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • biscuit joint.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2021-ol-q8-None-biscuit-joint-r1",
+    "kind": "anyN",
+    "verbatim": "Biscuit joint",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Biscuit joint",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Widely used joint in manufacturing modern furniture to butt joint and edge joint",
+      "Joint used to join board of various width and thickness",
+      "Biscuit manufactured from pressed beech and available in different sizes",
+      "Biscuit joiner used to form a groove in opposing edges to allow biscuit to fit",
+      "Forms a larger surface area for gluing hence strengthens joint"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2021-ol-q8-None-room-thermostat",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-room-thermostat",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2021 OL Q8 — Room thermostat",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • room thermostat.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2021-ol-q8-None-room-thermostat-r1",
+    "kind": "anyN",
+    "verbatim": "Room thermostat",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Room thermostat",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Senses the air temperature in the room and communicates with the heating system",
+      "Regulates a desirable temperature throughout the house",
+      "Can be digital, dial or touchscreen controlled",
+      "Smart home thermostats are connected to the"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2021-ol-q8-None-building-energy-rating",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-building-energy-rating",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2021 OL Q8 — Building Energy Rating",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • building energy rating.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2021-ol-q8-None-building-energy-rating-r1",
+    "kind": "anyN",
+    "verbatim": "Building Energy Rating",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Building Energy Rating",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "BER certificates indicates the homes energy performance",
+      "Rates the energy performance of a house from A - G",
+      "An A-rated house is the most energy efficient and will have the lowest energy bills",
+      "BER is calculated on the energy used to space heat, heat water, ventilate, and light a house",
+      "An A-rated house is the current building standard and can improve its appeal to buyers and renters"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "cons-2022-hl-q1-a",
   "topicId": "cons-3-10",
   "conceptId": "vertical-section-external-wall-and-flat-roof",
@@ -4372,6 +4801,442 @@
   "notes": ""
  },
  {
+  "id": "cons-2022-ol-q8-None-strip-foundation",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-strip-foundation",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2022 OL Q8 — Strip foundation",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • strip foundation.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2022-ol-q8-None-strip-foundation-r1",
+    "kind": "anyN",
+    "verbatim": "Strip foundation",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Strip foundation",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Simple and common type of foundation used for domestic homes",
+      "Sustainable and economic use of material",
+      "Concrete is reinforced with steel to improve the foundations tensile strength",
+      "Walls are placed centrally on the foundation and the loads are transmitted at 45⁰ to the supporting ground",
+      "Strip foundations are used where the surrounding soil has a good bearing capacity"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2022-ol-q8-None-fascia-board",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-fascia-board",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2022 OL Q8 — Fascia board",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • fascia board.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2022-ol-q8-None-fascia-board-r1",
+    "kind": "anyN",
+    "verbatim": "Fascia board",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Fascia board",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Gives a finished appearance to the roof",
+      "Protects the interior of the dwelling from weather damage",
+      "Forms part of the eaves of a roof along with the soffit",
+      "Provided a surface for gutters to be fixed too",
+      "Made from a variety of material with wood, PVC and aluminium the most common"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2022-ol-q8-None-airtight-tape",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-airtight-tape",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2022 OL Q8 — Airtight tape",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • airtight tape.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2022-ol-q8-None-airtight-tape-r1",
+    "kind": "anyN",
+    "verbatim": "Airtight tape",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Airtight tape",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Highly adhesive tape which bonds to construction material",
+      "Used in conjunction with airtight membrane to form an airtight and windtight structure",
+      "Used to prevent draughts and to reduce heat loss from a structure",
+      "Used at all junctions where different building elements meet, ceiling to wall, floor to wall",
+      "Used to form an airtight seal at door and window frames"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2022-ol-q8-None-wind-turbine",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-wind-turbine",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2022 OL Q8 — Wind turbine",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • wind turbine.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2022-ol-q8-None-wind-turbine-r1",
+    "kind": "anyN",
+    "verbatim": "Wind turbine",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Wind turbine",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Sustainable and eco-friendly source of energy",
+      "Reduces the reliance on carbon emitting fossil fuel energy sources",
+      "Converts wind energy into mechanical energy which generates electricity",
+      "Wind turbines can be part of a commercial wind farm which provide energy to the National grid",
+      "Smaller domestic wind turbines provide additional energy to homes and farms",
+      "Wind turbines can be horizontal-axis or vertical-axis in form"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2022-ol-q8-None-septic-tank",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-septic-tank",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2022 OL Q8 — Septic tank",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • septic tank.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2022-ol-q8-None-septic-tank-r1",
+    "kind": "anyN",
+    "verbatim": "Septic tank",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Septic tank",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Underground chamber used to collect, store, and treat domestic wastewater",
+      "Designed to remove pollution and release treated water safely back into the environment",
+      "Works by using natural anaerobic bacteria to break down solid waste",
+      "As wastewater makes its way through the tank, solid waste sinks to the bottom and forms sludge",
+      "Water is returned to the ground by the connecting percolation area"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2022-ol-q8-None-dovetail-joint",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-dovetail-joint",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2022 OL Q8 — Dovetail joint",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • dovetail joint.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2022-ol-q8-None-dovetail-joint-r1",
+    "kind": "anyN",
+    "verbatim": "Dovetail joint",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Dovetail joint",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Common joint used in drawer and box construction",
+      "Used in high quality furniture manufacture",
+      "The slope of the tail gives the joint its tensile strength",
+      "The slope for hardwood is 1:8",
+      "The slope for softwood is 1:6",
+      "Can be constructed by hand or by a router jig"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2022-ol-q8-None-wall-tie",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-wall-tie",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2022 OL Q8 — Wall tie",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • wall tie.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2022-ol-q8-None-wall-tie-r1",
+    "kind": "anyN",
+    "verbatim": "Wall tie",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Wall tie",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Fitting used in the construction of cavity walls to create stability",
+      "Holds wall leaves together to form a strong and complete unit",
+      "Traditionally made from stainless steel but basalt fibre material is currently popular due to reduction in thermal bridging",
+      "Comes in a range of lengths depending on the width of the cavity",
+      "Wall ties are embedded in the mortar to ensure a grip is formed with the wall material"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2022-ol-q8-None-cordless-jigsaw",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-cordless-jigsaw",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2022 OL Q8 — Cordless jigsaw",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • cordless jigsaw.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2022-ol-q8-None-cordless-jigsaw-r1",
+    "kind": "anyN",
+    "verbatim": "Cordless jigsaw",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Cordless jigsaw",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Used to cut shapes and curves by the reciprocation action of a blade",
+      "Powered by a rechargeable D.C. battery rather than connection to the A.C. mains",
+      "Base of jigsaw rests on the work surface and pushed along by user",
+      "Versatile tool that can be used on a range of materials",
+      "Cordless nature allows for a safer work environment",
+      "Allows for portability and use away from power sources"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2022-ol-q8-None-underfloor-heating",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-underfloor-heating",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2022 OL Q8 — Underfloor heating",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • underfloor heating.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2022-ol-q8-None-underfloor-heating-r1",
+    "kind": "anyN",
+    "verbatim": "Underfloor heating",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Underfloor heating",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "A circuit of polyethylene pipes are installed beneath the finished floor level",
+      "Water, heated by a heat pump, is circulated through the underfloor pipes",
+      "The floor acts as a large heat source which eliminates cold spots in rooms",
+      "Creates a more comfortable and constant indoor temperature",
+      "Replaces the need for wall hanging radiators",
+      "Energy and cost-effective due to the lower temperatures required to heat areas"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "cons-2023-hl-q1-a",
   "topicId": "cons-3-8",
   "conceptId": "vertical-section-roof-eaves-to-ridge",
@@ -6150,6 +7015,444 @@
   "notes": ""
  },
  {
+  "id": "cons-2023-ol-q8-None-concrete-mixer",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-concrete-mixer",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2023 OL Q8 — Concrete mixer",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • concrete mixer.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2023-ol-q8-None-concrete-mixer-r1",
+    "kind": "anyN",
+    "verbatim": "Concrete mixer",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Concrete mixer",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Concrete mixers have a rotating drum designed to turn raw materials in to concrete without segregation",
+      "Small batch (on-site) mixers can be electrical or operated by a petrol or diesel engine. Mixer is hand loaded and can produce up to 200 litres of concrete per batch on site",
+      "Since small batch mixers are loaded by hand, quality control is difficult to regulate",
+      "Larger quantities of concrete are mixed off site in a mixing plant and transported to site by a ready mixed concrete truck",
+      "Usual capacity of ready-mix trucks is 4 – 6 cubic meters",
+      "Quality control of ready mix is better regulated, mix can be poured directly into work area"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2023-ol-q8-None-smart-radiator-valve",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-smart-radiator-valve",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2023 OL Q8 — Smart radiator valve",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • smart radiator valve.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2023-ol-q8-None-smart-radiator-valve-r1",
+    "kind": "anyN",
+    "verbatim": "Smart radiator valve",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Smart radiator valve",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Smart valves can be fitted to new or existing radiators",
+      "Measures the room temperature using integrated sensors",
+      "Can signal to reduce or to increase the flow of hot water to the radiator",
+      "Smart radiator valves can be controlled from smart devices when home owners are away",
+      "Allows each room to have a different temperature compared to traditional heating systems with only one or two heating zones",
+      "Reduces energy cost and usage as the smart valve will control and retain the set temperature"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2023-ol-q8-None-ridge-tile",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-ridge-tile",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2023 OL Q8 — Ridge tile",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • ridge tile.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2023-ol-q8-None-ridge-tile-r1",
+    "kind": "anyN",
+    "verbatim": "Ridge tile",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Ridge tile",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Sits on the apex of a roof and protects the roof by sealing the intersection of the two roof planes",
+      "Traditionally, ridge tiles are fixed using mortar to bond them to the tiles. Modern tile manufacturers have intergrated fixing systems to secure the ridge tile without mortar",
+      "Ridge tiles are made from similar materials as the roof covering and can come in a variety of colours and profiles",
+      "Some ridge tiles are used as a decorative finish to the horizontal line along the top of the roof"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2023-ol-q8-None-triple-glazing",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-triple-glazing",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2023 OL Q8 — Triple glazing",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • triple glazing.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2023-ol-q8-None-triple-glazing-r1",
+    "kind": "anyN",
+    "verbatim": "Triple glazing",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Triple glazing",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Triple glazing is made up of three panes of glass instead of the traditional one or two panes",
+      "The cavity between each pane of glass is usually filled with an inert gas such as argon, xenon or krypton",
+      "Together with the extra pane, this can help to reduce noise transmission and increase energy efficiency",
+      "Triple glazing is better at insulating homes compared to double glazing, resulting in improved thermal comfort",
+      "Triple glazing is much heavier and thicker than double glazing so may not suit all frame types",
+      "Triple glazing may prevent solar gain into a home so some homeowners may not install triple glazing on the southern elevation of the building"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2023-ol-q8-None-balusters",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-balusters",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2023 OL Q8 — Balusters",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • balusters.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2023-ol-q8-None-balusters-r1",
+    "kind": "anyN",
+    "verbatim": "Balusters",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Balusters",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "A baluster is a vertical member between the handrail and string on a stairs",
+      "The term baluster is interchangeable with the word spindle in stairs construction",
+      "A baluster can be a moulded shaft, square, or lathe-turned in form",
+      "Balusters should not allow a 100 mm diameter sphere pass between them",
+      "Balusters can be manufactured from a range of materials such as wood, iron, and plastic"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2023-ol-q8-None-cedar-cladding",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-cedar-cladding",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2023 OL Q8 — Cedar cladding",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • cedar cladding.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2023-ol-q8-None-cedar-cladding-r1",
+    "kind": "anyN",
+    "verbatim": "Cedar cladding",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Cedar cladding",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Cedar wood has natural durability giving an expected life of over 60 years without preservative treatment",
+      "Treatment of cladding is only necessary if the weathered silver-grey colour is not desired",
+      "Cedar cladding can be secured horizontally or vertically to battens",
+      "Cedar reacts with ferrous materials and should be fixed with stainless steel or galvanised fixings",
+      "Canadian cedar is the most commonly used variety due to its rich warm colours compared to European grown cedar",
+      "Cedar cladding has a low embodied energy compared to other external finishes"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2023-ol-q8-None-bridle-joint",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-bridle-joint",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2023 OL Q8 — Bridle joint",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • bridle joint.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2023-ol-q8-None-bridle-joint-r1",
+    "kind": "anyN",
+    "verbatim": "Bridle joint",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Bridle joint",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "A bridle joint is a common strong woodworking joint with a large gluing area",
+      "The joint can be a Tee-bridle or Corner bridle joint",
+      "Bridle Joints involve the removal of one-third of the material from one piece and two-thirds of the material from the other piece",
+      "Suitable joining method for any corner angle or Tee type of frame joint configuration",
+      "The corner bridle joint can be used in frame construction",
+      "The Tee bridle can be used in table construction to join rails to uprights"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2023-ol-q8-None-wood-pellet-stove",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-wood-pellet-stove",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2023 OL Q8 — Wood pellet stove",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • wood pellet stove.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2023-ol-q8-None-wood-pellet-stove-r1",
+    "kind": "anyN",
+    "verbatim": "Wood pellet stove",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Wood pellet stove",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Provides heat to a home by burning renewable pellets made of condensed biomass materials or compressed wood",
+      "Compressed wood pellets are made from organic matter like sawdust and waste wood from logging, manufacturing, forest debris, and crop waste that is dried and pressed into pellet form",
+      "Similar to other renewable energy systems, a pellet stove can provide considerable savings for home heating costs by enhancing the heat in all or part of your home",
+      "Using an auger to steadily feed fuel from a storage hopper into a burn area, it produces a constant flame that requires little adjustments",
+      "Pellet stoves are a low-cost heating alternative that have a smaller impact on the environment than traditional heating sources",
+      "Pellet fuel expels extremely low emissions making a pellet stove a highly environmentally-friendly and cost-effective option"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2023-ol-q8-None-floor-screed",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-floor-screed",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2023 OL Q8 — Floor screed",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • floor screed.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2023-ol-q8-None-floor-screed-r1",
+    "kind": "anyN",
+    "verbatim": "Floor screed",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Floor screed",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "The final layer of the floor upon which a finished flooring material may be placed",
+      "There are a number of methods to installing floor screed",
+      "Tradition methods use a combination of sand, cement and water, usually in a sand/cement mix ratio of anywhere between 3:1 and 5:1",
+      "Modern methods include free flowing calcium sulphate liquid products which will self-level when poured on to the subfloor",
+      "Most self-levelling screeds are designed to be used with underfloor heating (UFH). Liquid floor screed is ideally placed at depths of between 50 - 75mm in conjunction with UFH",
+      "UFH pipes are clipped to the rigid insulation and the screed poured directly on top of the pipes"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "cons-2024-hl-q1-a",
   "topicId": "cons-3-2",
   "conceptId": "vertical-section-entrance-porch",
@@ -7682,6 +8985,445 @@
   "notes": ""
  },
  {
+  "id": "cons-2024-ol-q8-None-gulley-trap",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-gulley-trap",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2024 OL Q8 — Gulley trap",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • gulley trap.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2024-ol-q8-None-gulley-trap-r1",
+    "kind": "anyN",
+    "verbatim": "Gulley trap",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Gulley trap",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "A gulley trap is a plumbing fixture used in sewage and rain water systems to prevent foul odours from entering a building",
+      "Typically, a U-shaped pipe installed underground",
+      "The trap works by trapping water in the U-bend, which forms a barrier between the sewer gases and the building",
+      "This water barrier prevents foul odours and harmful gases such as methane from entering the building through the sewerage system",
+      "Gully traps require regular maintenance to ensure they remain effective in preventing odours and gases from entering buildings"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2024-ol-q8-None-smart-lighting",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-smart-lighting",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2024 OL Q8 — Smart lighting",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • smart lighting.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2024-ol-q8-None-smart-lighting-r1",
+    "kind": "anyN",
+    "verbatim": "Smart lighting",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Smart lighting",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Smart lighting systems allow users to control various aspects of their lighting remotely and often automatically",
+      "Smart lighting typically uses internet connectivity to be controlled through smartphones, tablets, or voice commands",
+      "Smart lighting systems often include scheduling and automation features. Users can set timers or schedules for their lights to turn on, off, or adjust brightness levels automatically",
+      "By allowing users to easily control and automate their lighting, smart lighting systems can contribute to energy savings",
+      "Users can often customise the colour, brightness, and ambiance of their smart lights to suit their preferences"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2024-ol-q8-None-site-planning-notice",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-site-planning-notice",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2024 OL Q8 — Site planning notice",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • site planning notice.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2024-ol-q8-None-site-planning-notice-r1",
+    "kind": "anyN",
+    "verbatim": "Site planning notice",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Site planning notice",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "A site planning notice is a public notice an applicant must erect at the site of development, when applying for planning permission",
+      "It must be clearly visible and legible to the public from the road",
+      "The notice must contain certain details including the name of the applicant, site address, details on the type of application and nature of the development",
+      "This notice is required under planning regulations and serves to inform the public about the development plans and provide an opportunity for interested parties to submit observations or objections",
+      "The site notice is required to be in place for the first five weeks after the lodgement of the planning application",
+      "Failure to comply with the regulations of the site notice may make the application invalid"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2024-ol-q8-None-halving-joint",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-halving-joint",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2024 OL Q8 — Halving joint",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • halving joint.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2024-ol-q8-None-halving-joint-r1",
+    "kind": "anyN",
+    "verbatim": "Halving joint",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Halving joint",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "A halving joint is common strong woodworking joint with a medium gluing area",
+      "The joint can be a cross halving, corner halving, T-halving or dovetail halving joint",
+      "Halving joints involve half of the material removed from each piece at the joint area",
+      "Halving joints are commonly used for framing construction and in furniture making",
+      "The corner halving joint can be used in frame construction",
+      "The dovetail halving joint is a strong and attractive way of using a halving joint"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2024-ol-q8-None-cordless-drill",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-cordless-drill",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2024 OL Q8 — Cordless drill",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • cordless drill.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2024-ol-q8-None-cordless-drill-r1",
+    "kind": "anyN",
+    "verbatim": "Cordless drill",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Cordless drill",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "A cordless drill is a portable power tool used for drilling holes and driving screws",
+      "Cordless drills are powered by rechargeable batteries",
+      "Cordless drills are more convenient and versatile than corded electric drills",
+      "They are typically powered with lithium-ion batteries",
+      "As they are battery powered, they allow users to work in areas which have no access to a power source",
+      "Modern cordless drills contain additional features such as an LED light and a battery power indicator"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2024-ol-q8-None-cavity-closer",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-cavity-closer",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2024 OL Q8 — Cavity closer",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • cavity closer.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2024-ol-q8-None-cavity-closer-r1",
+    "kind": "anyN",
+    "verbatim": "Cavity closer",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Cavity closer",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "A cavity closer is used at wallplate level and around window and door openings to fill the gap between the inner and outer leaves of a cavity wall",
+      "The cavity closer helps to prevent thermal bridging between the inner and outer leaf",
+      "They also help prevent damp penetration, air infiltration and condensation",
+      "Cavity closers help to improve the thermal performance of the building envelope and contribute to energy efficiency",
+      "Cavity closers are typically made from materials such as insulation foam or rigid insulation boards",
+      "They typically come in widths of 100-150 mm to suit the cavity width"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2024-ol-q8-None-faceplate-turning",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-faceplate-turning",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2024 OL Q8 — Faceplate turning",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • faceplate turning.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2024-ol-q8-None-faceplate-turning-r1",
+    "kind": "anyN",
+    "verbatim": "Faceplate turning",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Faceplate turning",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Faceplate turning is a woodturning method often used to create large flat circular items",
+      "It involves mounting a work piece onto a faceplate and attaching to the headstock of a woodturning lathe",
+      "Faceplate turning allows you create items such as wooden bowls, plates and other shallow items",
+      "As the work piece turns, the tool rest is used to support the lathe chisel which removes material from the wood",
+      "When faceplate turning the speed of the lathe should start slow until the piece is balanced and the speed is then increased",
+      "Faceplate turning is a skilled process and can product beautiful decorative items"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2024-ol-q8-None-plywood",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-plywood",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2024 OL Q8 — Plywood",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • plywood.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2024-ol-q8-None-plywood-r1",
+    "kind": "anyN",
+    "verbatim": "Plywood",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Plywood",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Plywood is a type of engineered wood panel made by gluing together thin layers of wood veneers",
+      "These veneers are usually arranged with their grain direction perpendicular to each other, to enhance its strength",
+      "Plywood is widely used in construction, furniture making and cabinet-making",
+      "Plywood provides a strong and relatively low-cost alternative to solid wood",
+      "Plywood comes in various thicknesses and sizes to suit different applications",
+      "Marine plywood is a type of plywood designed for use in high-moisture environments such as boat building and exterior construction"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2024-ol-q8-None-heat-pump",
+  "topicId": "cons-1-5",
+  "conceptId": "construction-terms-heat-pump",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2024 OL Q8 — Heat pump",
+  "questionText": "Explain, with the aid of notes and freehand sketches, any five of the following: • heat pump.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2024-ol-q8-None-heat-pump-r1",
+    "kind": "anyN",
+    "verbatim": "Heat pump",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Heat pump",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "A heat pump is a device that can transfer heat from one location to another using mechanical means",
+      "It is commonly used for heating or cooling indoor spaces and can be more energy-efficient compared to traditional heating and cooling systems",
+      "Heat pumps work by extracting heat from a heat source such as the air, water, or ground and transferring it into a home",
+      "A heat pump system uses underfloor heating or radiators to transfer heat around the home",
+      "A heat pump uses electricity as its main power source, but they generally have a coefficient of performance ratio (COP) of 3-4",
+      "Grants are available to homeowners to encourage them to change from a fossil fuel heating system to a heat pump"
+     ],
+     "perOptionSteps": [
+      6,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "cons-2025-hl-q1-a",
   "topicId": "cons-3-2",
   "conceptId": "vertical-section-external-wall-ground-floor-window",
@@ -7778,41 +9520,142 @@
   "notes": ""
  },
  {
-  "id": "cons-2025-hl-q2-a",
+  "id": "cons-2025-hl-q2-a-safety-training",
   "topicId": "cons-1-8",
-  "conceptId": "maintaining-a-health-and-safety-culture",
+  "conceptId": "maintaining-a-health-and-safety-culture-safety-training",
   "level": "higher",
   "year": 2025,
   "subjectId": "construction-studies",
   "section": "B",
-  "questionRef": "2025 HL Q2(a)",
-  "questionText": "Discuss in detail the importance of any two of the following in maintaining a positive health and safety culture among workers on a construction site:  safety training  health and safety officer  risk assessment audit.",
+  "questionRef": "2025 HL Q2(a) — Safety training",
+  "questionText": "Discuss in detail the importance of any two of the following in maintaining a positive health and safety culture among workers on a construction site:  safety training.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "bestNofParts",
-   "notation": "2 x 6",
-   "answer": 2,
-   "ofParts": 3,
-   "perPart": 6
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
   },
-  "totalMarks": 12,
+  "totalMarks": 6,
   "rows": [
    {
-    "id": "cons-2025-hl-q2-a-r1",
+    "id": "cons-2025-hl-q2-a-safety-training-r1",
     "kind": "anyN",
-    "verbatim": "Discuss in detail the importance of any two of the following in maintaining a positive health and safety culture among w",
-    "marks": 12,
+    "verbatim": "Safety training",
+    "marks": 6,
     "openList": true,
-    "contextNote": "",
+    "contextNote": "Safety training",
     "group": {
-     "claimMax": 2,
+     "claimMax": 1,
      "perOption": 6,
      "options": [
-      "Safety training",
-      "Health and safety officer",
-      "Risk assessment audit"
+      "A safe pass is mandatory for all workers on a construction site",
+      "Safe pass certification must be maintained through refresher courses",
+      "Training is essential in order to develop awareness amongst workers of possible risks on site",
+      "Specialist training (tickets) is required for specific equipment used on construction sites such as machinery or vehicles",
+      "Safety training is essential to help provide workers with a skillset to be able to identify potential risks on a building site and understand best practice approaches to minimise the risk of accidents",
+      "Work practices should be regularly monitored to ensure all safety protocols are being followed",
+      "Enforcement of all good safe work practices",
+      "Safety training could be a condition of the insurance provider"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2025-hl-q2-a-health-and-safety-officer",
+  "topicId": "cons-1-8",
+  "conceptId": "maintaining-a-health-and-safety-culture-health-and-safety-officer",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2025 HL Q2(a) — Health and safety officer",
+  "questionText": "Discuss in detail the importance of any two of the following in maintaining a positive health and safety culture among workers on a construction site:  health and safety officer.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "cons-2025-hl-q2-a-health-and-safety-officer-r1",
+    "kind": "anyN",
+    "verbatim": "Health and safety officer",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Health and safety officer",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Provides induction training for all new workers on a site",
+      "Provides ongoing training in specific risks e.g. working at heights, machinery use",
+      "Develop and implement emergency response plans e.g. fire, medical emergencies",
+      "Ensure that first aid and other emergency equipment is available and in good condition",
+      "Foster a culture where safety is prioritised at all times",
+      "Ensures all workers are provided with and are wearing the correct PPE",
+      "Carries out safety inspections and risk assessments to try to prevent workplace accidents",
+      "Identifies new and ongoing safety training requirements",
+      "Reviews the safety statement for the site",
+      "Investigates, records and reports all accidents that may occur on a site"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2025-hl-q2-a-risk-assessment-audit",
+  "topicId": "cons-1-8",
+  "conceptId": "maintaining-a-health-and-safety-culture-risk-assessment-audit",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2025 HL Q2(a) — Risk assessment audit",
+  "questionText": "Discuss in detail the importance of any two of the following in maintaining a positive health and safety culture among workers on a construction site:  risk assessment audit.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "cons-2025-hl-q2-a-risk-assessment-audit-r1",
+    "kind": "anyN",
+    "verbatim": "Risk assessment audit",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Risk assessment audit",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Provide a safe working environment for all individuals entering the building site",
+      "Evaluate compliance with safety regulations and policies",
+      "Recommend improvements that enhance engagement and safety attitudes",
+      "To prevent and minimise accidents and injuries",
+      "Identify any hazards and put in place control measures where the risk cannot be fully eliminated",
+      "To reduce liability in the event of an accident",
+      "To identify and select training requirements",
+      "To help identify potential high risk / emergency situations and ensure that appropriate measures are in place e.g. the risk of fire may not be able to be eliminated so appropriate measures would need to be put in place such as fire alarms, signage showing evacuation plans, regular fire drills and fire extinguishers at key locations"
      ]
     }
    }
@@ -8058,29 +9901,29 @@
   "notes": ""
  },
  {
-  "id": "cons-2025-hl-q6-b",
+  "id": "cons-2025-hl-q6-b-indoor-air-quality",
   "topicId": "cons-6-5",
-  "conceptId": "creating-a-healthy-indoor-environment",
+  "conceptId": "creating-a-healthy-indoor-environment-indoor-air-quality",
   "level": "higher",
   "year": 2025,
   "subjectId": "construction-studies",
   "section": "B",
-  "questionRef": "2025 HL Q6(b)",
-  "questionText": "Discuss in detail, how each of the following contribute to the creation of a healthy indoor environment:  indoor air quality  natural light  materials and finishes.",
+  "questionRef": "2025 HL Q6(b) — Indoor air quality",
+  "questionText": "Discuss in detail, how each of the following contribute to the creation of a healthy indoor environment:  indoor air quality.",
   "stem": "",
   "figureKey": "",
   "labelKey": [],
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "1 x 6 + 1 x 6 + 1 x 6",
-   "answer": null,
-   "ofParts": null,
-   "perPart": null
+   "kind": "bestNofParts",
+   "notation": "1 x 6",
+   "answer": 1,
+   "ofParts": 6,
+   "perPart": 6
   },
-  "totalMarks": 18,
+  "totalMarks": 6,
   "rows": [
    {
-    "id": "cons-2025-hl-q6-b-r1",
+    "id": "cons-2025-hl-q6-b-indoor-air-quality-r1",
     "kind": "anyN",
     "verbatim": "Indoor air quality",
     "marks": 6,
@@ -8098,9 +9941,34 @@
       "Install glazed manual openings in all rooms, rather than fixed windows so that air can naturally circulate bringing in fresh air from the outside and removing stale moist air from the inside"
      ]
     }
-   },
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2025-hl-q6-b-natural-light",
+  "topicId": "cons-6-5",
+  "conceptId": "creating-a-healthy-indoor-environment-natural-light",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2025 HL Q6(b) — Natural light",
+  "questionText": "Discuss in detail, how each of the following contribute to the creation of a healthy indoor environment:  natural light.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 x 6",
+   "answer": 1,
+   "ofParts": 6,
+   "perPart": 6
+  },
+  "totalMarks": 6,
+  "rows": [
    {
-    "id": "cons-2025-hl-q6-b-r2",
+    "id": "cons-2025-hl-q6-b-natural-light-r1",
     "kind": "anyN",
     "verbatim": "Natural light",
     "marks": 6,
@@ -8118,9 +9986,34 @@
       "Natural light helps with vitamin D synthesis and for overall health"
      ]
     }
-   },
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2025-hl-q6-b-materials-and-finishes",
+  "topicId": "cons-6-5",
+  "conceptId": "creating-a-healthy-indoor-environment-materials-and-finishes",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2025 HL Q6(b) — Materials and finishes",
+  "questionText": "Discuss in detail, how each of the following contribute to the creation of a healthy indoor environment:  materials and finishes.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 x 6",
+   "answer": 1,
+   "ofParts": 10,
+   "perPart": 6
+  },
+  "totalMarks": 6,
+  "rows": [
    {
-    "id": "cons-2025-hl-q6-b-r3",
+    "id": "cons-2025-hl-q6-b-materials-and-finishes-r1",
     "kind": "anyN",
     "verbatim": "Materials and finishes",
     "marks": 6,
@@ -8342,6 +10235,100 @@
    }
   ],
   "notes": "The scheme awards 34 marks for this part. The 30 on this card are the marks it states answers for; the other 4 go to Cable size (1) and colour (3) (4) — the drawing itself and anything the scheme prices without saying what earns it."
+ },
+ {
+  "id": "cons-2025-hl-q10-a-building-form",
+  "topicId": "cons-6-3",
+  "conceptId": "passive-house-design-building-form",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2025 HL Q10(a) — Building form",
+  "questionText": "Using notes and freehand sketches, discuss the importance of any two of the following in Passive House design:  building form. Discuss the above statement in detail.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 + 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2025-hl-q10-a-building-form-r1",
+    "kind": "anyN",
+    "verbatim": "Building form",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Building form",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Building form should have a narrow plan, one room deep to maximise solar gain",
+      "A compact dwelling which fits in with its landscape and surrounding buildings",
+      "Complicated designs with lots of corners or abutments need more materials to construct and are at a greater risk of heat loss when compared with rectangular form buildings",
+      "The compactness ratio of surface area to the volume contained (A/V) should be 0.7 or less",
+      "Simple rectangular shape to minimise corners and hence the perimeter of the wall to minimise opportunities for heat loss",
+      "To minimise heat loss and cost of construction, it should have the smallest surface area possible",
+      "A compact form will reduce the amount of materials needed in construction which reduces its effect on the environment",
+      "If a deeper plan is utilised it will reduce the benefits of solar gains as it increases the volume of air to be heated",
+      "Clean lines in walls and roof to facilitate easy achievement of airtightness"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2025-hl-q10-a-foundation-design",
+  "topicId": "cons-6-3",
+  "conceptId": "passive-house-design-foundation-design",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2025 HL Q10(a) — Foundation design",
+  "questionText": "Using notes and freehand sketches, discuss the importance of any two of the following in Passive House design:  foundation design. Discuss the above statement in detail.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 + 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2025-hl-q10-a-foundation-design-r1",
+    "kind": "anyN",
+    "verbatim": "Foundation design",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Foundation design",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Ring beam and passive raft foundations are wrapped in insulation to eliminate opportunities for thermal bridging",
+      "In typical strip, pile and raft foundations it is critical to eliminate opportunities for thermal bridging to occur",
+      "The internal leaf should use thermal blocks in their rising walls to prevent heat loss down the inner leaf",
+      "The floor wall junction needs to have an insulation upstand / edge insulation of 50 mm – 100 mm to prevent a thermal bridge occurring",
+      "If block cavity construction is chosen, thermally broken wall ties should be used instead of stainless-steel wall ties where a point thermal bridge would occur",
+      "The wall, attic and floor should have high levels of insulation to maintain all heat gains",
+      "Foundation should be highly insulated to achieve a U- value of between 0.1 - 0.15 W/m2 K"
+     ]
+    }
+   }
+  ],
+  "notes": ""
  },
  {
   "id": "cons-2025-hl-q10-b",

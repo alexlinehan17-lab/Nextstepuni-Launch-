@@ -30,6 +30,7 @@ PLAN = [
     (5, 'b', 'cons-3-4', 'keeping-the-cavity-clear-of-mortar'),
     (7, 'c', 'cons-4-6', 'choosing-a-floor-covering-for-a-utility-room'),
     (9, 'b', 'cons-1-1', 'modifying-a-front-entrance'),
+    (8, None, 'cons-1-5', 'construction-terms'),
 ]
 
 for q, letter, topic, concept in PLAN:

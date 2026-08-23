@@ -30,6 +30,7 @@ PLAN = [
     (5, 'b', 'cons-3-6', 'preventing-moisture-at-the-window-cill'),
     (6, 'b', 'cons-1-8', 'personal-protective-equipment'),
     (7, 'c', 'cons-4-6', 'choosing-a-floor-covering-for-a-bedroom'),
+    (8, None, 'cons-1-5', 'construction-terms'),
 ]
 
 for q, letter, topic, concept in PLAN:
