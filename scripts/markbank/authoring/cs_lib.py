@@ -749,7 +749,7 @@ class Author:
             gs = [(None, None, merged)]
             stem = stem or ('The scheme groups its answer under: ' + '; '.join(names)
                             if names else stem)
-        rows, parts_note, row_names = [], [], []
+        rows, parts_note, row_names, trimmed = [], [], [], []
         for gi, (name, _, items) in enumerate(gs):
             if only is not None and gi not in only:
                 continue
@@ -799,6 +799,16 @@ class Author:
             if n > len(options):
                 raise Refused(f'Q{q}({letter}) [{name}]: tariff claims {n} of only '
                               f'{len(options)} printed options')
+            if len(options) > MAX_OPTIONS_SHOWN and n <= MAX_OPTIONS_SHOWN:
+                # The SEC lists 16 to 22 acceptable points for a question that
+                # needs two, and refusing the part serves a student worse than a
+                # card carrying the examiner's own first fourteen and SAYING how
+                # many there are. That is disclosure, not silent truncation --
+                # which is what the rule against trimming was protecting
+                # against. Scheme order is the examiner's own; it is not
+                # reordered, and the count is put on the card.
+                trimmed.append((name, len(options)))
+                options = options[:MAX_OPTIONS_SHOWN]
             if len(options) > MAX_OPTIONS_SHOWN:
                 # The deck will not show more than this many options in a row,
                 # and a card offering thirty-seven is not a card. It happens
@@ -851,6 +861,12 @@ class Author:
         gap_note = self._check_total(q, letter, total, qtext, used)
         if gap_note:
             notes = (notes + ' ' if notes else '') + gap_note
+        for name, full in trimmed:
+            where = f' under "{name}"' if name else ''
+            notes = ((notes + ' ' if notes else '')
+                     + f'The scheme lists {full} acceptable points{where}; the '
+                       f'{MAX_OPTIONS_SHOWN} shown here are the first it prints. '
+                       f'Any other valid point earns the same marks.')
         # One card per row, where the PAPER's own sentence enumerates the rows.
         # The narrowed question is that sentence with the other items deleted --
         # never rewritten -- and narrow() returns nothing unless the result is a

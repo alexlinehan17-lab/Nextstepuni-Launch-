@@ -29,7 +29,10 @@ PLAN = [
     (9, 'c', 'cons-1-1', 'features-design-ensure-garden-room-eco'),
     (1, 'b', 'cons-6-2', 'typical-design-detailing-prevent-formation-thermal'),
     (5, 'b', 'cons-4-4', 'how-baluster-fitted-securely-thread'),
-    (7, 'b', 'cons-8-3', 'separate-annotated-method-would-help-reduce'),]
+    (7, 'b', 'cons-8-3', 'separate-annotated-method-would-help-reduce'),
+    (1, 'a', 'cons-2-4', 'vertical-section-through-strip-foundation-external'),
+    (6, 'b', 'cons-1-8', 'specific-safety-precautions-observed-when-turning'),
+    (9, 'a', 'cons-3-3', 'wood-external-cladding-reasons-choice-wood'),]
 
 for q, letter, topic, concept in PLAN:
     try:

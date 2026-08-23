@@ -945,6 +945,271 @@
   "notes": ""
  },
  {
+  "id": "cons-2016-hl-q6-b",
+  "topicId": "cons-1-1",
+  "conceptId": "meet-nearly-zero-energy-building-nzeb",
+  "level": "higher",
+  "year": 2016,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2016 HL Q6(b)",
+  "questionText": "To meet the Nearly Zero Energy Building (NZEB) requirements, the production of on-site renewable energy is recommended. Using notes and freehand sketches show one means of generating on-site renewable energy for the dwelling house.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 10",
+   "answer": 2,
+   "ofParts": 14,
+   "perPart": 10
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "cons-2016-hl-q6-b-r1",
+    "kind": "anyN",
+    "verbatim": "Wind charger/micro generator for electricity generation",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "Wind charger/micro generator for electricity generation",
+    "group": {
+     "claimMax": 2,
+     "perOption": 10,
+     "options": [
+      "individual turbines vary in size and power output, ranging from a few hundred watts as used on caravans through 5 or 6 kW turbines, from 1.5 m to 2.0 m in diameter suitable for a single dwelling, to 2-3 megawatts for community-owned turbines or wind farms supplying electricity to the national grid",
+      "wind speed is critical for electricity generation",
+      "height of turbine is also critical: a turbine should be a minimum of 10.0 m above the roof or any other obstruction within 100.0 m - such as buildings or trees, to reduce turbulence, which reduces efficiency and causes undue wear",
+      "a micro turbine between 1.5 m and 2.0 m in diameter will provide about 10% of t he average power use of a house - 4700 kW hr/year",
+      "most small wind turbines generate direct current (DC) electricity",
+      "off-grid systems require battery storage and an inverter to convert DC electricity to AC alternating current, as used for mains electricity",
+      "no battery storage is required if connected to the grid",
+      "a controller is also required to ensure the batteries are not over- or under-charged",
+      "solar panels can also be used for water heating",
+      "evacuated tubes can provide up to 60% of hot water requirements - less electricity used",
+      "the installation of evacuated tubes reduces demand for mains electricity for domestic water heating photovoltaic (PV) panels to generate electricity",
+      "solar energy can also be turned into electricity in a photovoltaic (PV) panel, which converts solar energy into electrical energy using silicon cells",
+      "small photovoltaic panels are often used to power calculators, which require very little power",
+      "photovoltaic panels are used for houses that cannot be supplied from the grid"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 22 acceptable points under \"Wind charger/micro generator for electricity generation\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
+  "id": "cons-2016-hl-q6-c",
+  "topicId": "cons-1-1",
+  "conceptId": "advantages-generating-renewable-energy-site",
+  "level": "higher",
+  "year": 2016,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2016 HL Q6(c)",
+  "questionText": "Discuss in detail two advantages of generating renewable energy on-site.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 5",
+   "answer": 2,
+   "ofParts": 14,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2016-hl-q6-c-r1",
+    "kind": "anyN",
+    "verbatim": "Two advantages of generating renewable energy on-site",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two advantages of generating renewable energy on-site",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "it can be a sustainable alternative to using mains electricity generated mostly from fossil fuels",
+      "the natural resources harnessed to generate the energy are freely available",
+      "payment of carbon taxes is reduced or avoided",
+      "energy losses encountered in transmission of mains electricity are avoided",
+      "the cost of transporting the replaced fossil fuels to the house - oil, coal, wood etc, are avoided",
+      "the provision and maintenance of an appropriate road system for the transport of reduced amounts of fossil fuels becomes easier",
+      "roof slope is often ideal for photovoltaic cells – 30° to 45° slope with southern orientation",
+      "in rural areas, site may be suitable for the erection of wind turbine to generate on-site electricity",
+      "the householder shares in the steps taken to address climate change and the allied satisfaction",
+      "the household becomes less dependent on mains electricity, with the increasing prospect of the use of battery storage and being able to go off-grid",
+      "advances in the development of lithium-ion batteries for the domestic electrical storage - note the development of Tesla batteries for electrical energy storage",
+      "as a rule of thumb allow 1.0 -1.5m2 solar collector area per person for water heating needs",
+      "all pipework to be insulated to avoid heat losses and UV stable if exposed",
+      "performance of collector may be affected by overheating"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 16 acceptable points under \"Two advantages of generating renewable energy on-site\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
+  "id": "cons-2016-hl-q7-a",
+  "topicId": "cons-3-8",
+  "conceptId": "vertical-section-through-chimney-stack-roof",
+  "level": "higher",
+  "year": 2016,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2016 HL Q7(a)",
+  "questionText": "To a scale of 1:5, draw a vertical section through the chimney stack and roof structure. Show the typical construction details of the chimney stack, flue, chimney capping and portion of the adjoining roof structure. Include the design details to prevent the penetration of rainwater between the chimney stack and the adjoining roof surface.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "11 x 4",
+   "answer": 11,
+   "ofParts": 14,
+   "perPart": 4
+  },
+  "totalMarks": 44,
+  "rows": [
+   {
+    "id": "cons-2016-hl-q7-a-r1",
+    "kind": "anyN",
+    "verbatim": "Vertical section through chimney stack and roof structure (11 × 4 marks)",
+    "marks": 44,
+    "openList": true,
+    "contextNote": "Vertical section through chimney stack and roof structure (11 × 4 marks)",
+    "group": {
+     "claimMax": 11,
+     "perOption": 4,
+     "options": [
+      "Blockwork",
+      "Render",
+      "Flue Liners",
+      "Fill",
+      "Chimney capping",
+      "Cover flashing × 2",
+      "Under flashing (apron)",
+      "Flashing to rear gutter",
+      "Apron or tray",
+      "Rafter",
+      "Fillet piece",
+      "Breather membrane",
+      "Battens / Counter battens",
+      "Trimmer"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 15 acceptable points under \"Vertical section through chimney stack and roof structure (11 × 4 marks)\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
+  "id": "cons-2016-hl-q8-a",
+  "topicId": "cons-1-1",
+  "conceptId": "advantages-disadvantages-refurbishing-storeroom-use-home",
+  "level": "higher",
+  "year": 2016,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2016 HL Q8(a)",
+  "questionText": "Discuss two advantages and two disadvantages of refurbishing the storeroom for use as a home office.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 x 5",
+   "answer": 4,
+   "ofParts": 14,
+   "perPart": 5
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "cons-2016-hl-q8-a-r1",
+    "kind": "anyN",
+    "verbatim": "Advantages – such as",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "Advantages – such as",
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "refurbishment usually costs less than new build",
+      "a stone building is refurbished not demolished, maintaining the architectural heritage of the locality",
+      "a value system is maintained – reuse, upcycle but do not demolish",
+      "home office reduces need for daily commute to outside office, saving travel time, saving energy -less energy required to travel – helping save the environment through less CO2",
+      "sustainability principle of reduce and reuse informing the decision to refurbish",
+      "less materials required in refurbishment, foundations, walls, roofing materials already there",
+      "refurbishment as an exemplar of best practice, showing that an old building can be restored for another use",
+      "a building links to heritage of the area",
+      "the existing garden not damaged with large machinery to dig foundations etc",
+      "existing planting enhancing the natural setting of the home office",
+      "an oasis of calm and delight",
+      "separation of office and home – office for work, home for family activities Disadvantages – such as:",
+      "building may be quite derelict, refurbishment may not be advisable or achievable",
+      "slow, costly work to maintain the character and appearance of the existing storeroom"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 19 acceptable points under \"Advantages – such as\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
+  "id": "cons-2016-hl-q9-c",
+  "topicId": "cons-1-1",
+  "conceptId": "features-could-incorporated-into-design-lighting",
+  "level": "higher",
+  "year": 2016,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2016 HL Q9(c)",
+  "questionText": "Show two features that could be incorporated into the design of a lighting system to ensure the economical use of electricity in the house.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 8",
+   "answer": 2,
+   "ofParts": 14,
+   "perPart": 8
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "cons-2016-hl-q9-c-r1",
+    "kind": "anyN",
+    "verbatim": "Economical use of electricity – such as –",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "Economical use of electricity – such as –",
+    "group": {
+     "claimMax": 2,
+     "perOption": 8,
+     "options": [
+      "separate lighting circuits and lights used only as required",
+      "task lighting - specifically for work/study stations, used only as required",
+      "ambient lighting - general mood lighting in a room",
+      "motion and/or heat sensors fitted to ensure lights are off in uninhabited rooms",
+      "app for switching lights on/off remotely, no wastage",
+      "flexible lighting so lights can be moved about as required, both floor and ceiling",
+      "use the most efficient, low-energy bulbs, normally LED lights",
+      "incandescent bulbs emit 98% of the electricity consumed as heat and are now superseded",
+      "LED lights typically emit 80 to 120 lumens per watt while CFLS emit in the region of 55 lumens per watt - for comparison, incandescent bulbs which were used in the past emitted only 14.3 lumens per watt while the figure for halogen bulbs is 24.6 lumens per watt",
+      "use smart metering to give feedback to occupants encouraging economy by switching off lights when not in use",
+      "use LED desk lamps or reading lamps for tasks when full-room lighting is not required",
+      "use motion sensors to switch off lights in unoccupied rooms",
+      "use automatic light sensors to turn lights on/off as required when the room is unoccupied",
+      "avoid the use of artificial light where possible by maximising natural lighting, roof lights etc"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 16 acceptable points under \"Economical use of electricity – such as –\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
   "id": "cons-2016-ol-q2-b",
   "topicId": "cons-3-9",
   "conceptId": "reasons-why-attic-space-chosen-first",
@@ -1746,6 +2011,165 @@
    }
   ],
   "notes": ""
+ },
+ {
+  "id": "cons-2016-ol-q1-a",
+  "topicId": "cons-2-4",
+  "conceptId": "vertical-section-through-strip-foundation-external",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2016 OL Q1(a)",
+  "questionText": "To a scale of 1:5, draw a vertical section through the strip foundation, the external wall and the ground floor. Show the typical construction details from the bottom of the foundation to a level 400 mm above finished floor. Show the position of the radon barrier and include four typical dimensions on your drawing. Show 1.0 metre width of floor.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "9 x 4",
+   "answer": 9,
+   "ofParts": 14,
+   "perPart": 4
+  },
+  "totalMarks": 36,
+  "rows": [
+   {
+    "id": "cons-2016-ol-q1-a-r1",
+    "kind": "anyN",
+    "verbatim": "Specification - typical details",
+    "marks": 36,
+    "openList": true,
+    "contextNote": "Specification - typical details",
+    "group": {
+     "claimMax": 9,
+     "perOption": 4,
+     "options": [
+      "100 mm concrete footpath/ground",
+      "Reinforced concrete slab with level perimeter insulation taped and sealed",
+      "D.P.C to internal plaster",
+      "19 mm external render",
+      "200 mm - 300 mm rigid insulation",
+      "100 mm concrete block outer leaf",
+      "Inside leaf - 100 mm thermal",
+      "200 mm full-fill cavity blocks/Aerated concrete insulation",
+      "Wall tie blocks",
+      "100mm concrete block inner leaf",
+      "Radon barrier or damp proof",
+      "15 mm internal plaster taped and membrane sealed to floor",
+      "50 mm sand blinding",
+      "Skim coat"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 19 acceptable points under \"Specification - typical details\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
+  "id": "cons-2016-ol-q6-b",
+  "topicId": "cons-1-8",
+  "conceptId": "specific-safety-precautions-observed-when-turning",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2016 OL Q6(b)",
+  "questionText": "Using notes and freehand sketches, describe three specific safety precautions to be observed when turning a wooden bowl on a lathe, as shown. Give one reason for each safety precaution outlined.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 x 6",
+   "answer": 3,
+   "ofParts": 14,
+   "perPart": 6
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "cons-2016-ol-q6-b-r1",
+    "kind": "anyN",
+    "verbatim": "Using notes and freehand sketches, describe three specific safety precautions to be observed when turning a wooden bowl ",
+    "marks": 18,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "Know where the on / off switch is located and how to turn on / off the lathe",
+      "Know how to stop the lathe",
+      "The wood should be sound and free of any defects",
+      "Defective piece may break apart during the turning process",
+      "The work B should be properly secured to the faceplate A",
+      "If not properly secured the piece may come loose",
+      "Rotate the piece by hand at first",
+      "This is to ensure the piece will not hit the tool rest",
+      "Clear space A between tool rest and the wooden blank",
+      "Set the correct speed for turning of the bowl",
+      "Using the incorrect speed will may cause serious injury",
+      "Slow for big and fast for small items",
+      "A special visor should be worn when using the lathe",
+      "This offers protection from flying chips or particles"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 22 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
+  "id": "cons-2016-ol-q9-a",
+  "topicId": "cons-3-3",
+  "conceptId": "wood-external-cladding-reasons-choice-wood",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2016 OL Q9(a)",
+  "questionText": "Specify a suitable wood for the external cladding, and give two reasons for your choice of wood.",
+  "stem": "The scheme groups its answer under: Cedar; Larch Douglas Fir",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 x 5",
+   "answer": 3,
+   "ofParts": 14,
+   "perPart": 5
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "cons-2016-ol-q9-a-r1",
+    "kind": "anyN",
+    "verbatim": "Specify a suitable wood for the external cladding, and give two reasons for your choice of wood.",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Cedar has a pleasant appearance",
+      "Cedar is easy to cut, glue and finish",
+      "Cedar is suitable for all weather situations",
+      "It is one of the world’s most durable woods",
+      "It is lightweight which makes it suitable for cladding",
+      "Cedar is easy to finish with oil or other suitable treatment",
+      "Larch is naturally durable for outdoor",
+      "Attractive appearance use",
+      "The wood is reddish brown in colour",
+      "It is resistant to water",
+      "The seasoned wood is durable and",
+      "Attractive in appearance strong",
+      "Resistant to rot and wood eating",
+      "The wood is grown in Ireland organisms"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 18 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
  },
  {
   "id": "cons-2017-hl-q1-b",
@@ -2828,6 +3252,181 @@
   "notes": ""
  },
  {
+  "id": "cons-2017-hl-q3-c",
+  "topicId": "cons-1-1",
+  "conceptId": "advantages-building-extension-farmhouse-shown",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2017 HL Q3(c)",
+  "questionText": "Discuss two advantages of building an extension to the farmhouse shown.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 x 5 + 1 x 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2017-hl-q3-c-r1",
+    "kind": "anyN",
+    "verbatim": "Two advantages of building an extension to the farmhouse shown – such as",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Two advantages of building an extension to the farmhouse shown – such as",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "there is an existing high quality vernacular house on site – extending it maintains the character of the house but enhances its possibilities",
+      "benefit from existing rear garden, trees, shrubs, plants – enhances wellbeing and creates a pleasant indoor atmosphere, close to nature – sounds, sights, smells, changing seasons",
+      "low environment impact – the extension is small in size but increases the flexibility of kitchen/dining/ living space",
+      "low environmental demands – services such as water, electricity, sewage treatment, roads etc. are already on site, minimum disruption needed to greatly enhance the living space",
+      "modest scale, modest costs, low borrowing requirements",
+      "highest thermal standards – orientation, insulation, airtightness – low operating cost to heat and light",
+      "single storey facilitates roof lights for penetration of natural light and sunlight",
+      "minimum energy required to extend – opening with lintels formed in rear wall – no specialised components or steel lintels needed, so minimum environmental impact and low embodied energy",
+      "modest scale is environmentally sustainable - small spans, restricted material requirements, compact form, easy to manage, clean and maintain",
+      "occupants can live in house while extension is being built, extension built first, last task is to form opening between extension and existing house – cost effective",
+      "increases living space and allows for individual requirements and preferences of owners to be incorporated into the farmhouse design and layout",
+      "provides a more light-filled comfortable interior space taking advantage of natural sunlight if extension is appropriately designed",
+      "increased levels of solar gain due to the extra glazing on the southern façade results in a more comfortable living space",
+      "reduction in energy consumption in lighting and heating will decrease the carbon footprint of the farmhouse"
+     ]
+    }
+   },
+   {
+    "id": "cons-2017-hl-q3-c-r2",
+    "kind": "anyN",
+    "verbatim": "___________________________________________________________________________________________________________",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "___________________________________________________________________________________________________________",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "appropriate, well designed extensions to traditional vernacular buildings will serve as exemplars of good practice to those in the locality who may own, or might be considering purchasing such a building",
+      "demonstrates a respect for maintaining vernacular building and tradition and will encourage others in the locality to consider a similar approach"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 16 acceptable points under \"Two advantages of building an extension to the farmhouse shown – such as\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
+  "id": "cons-2017-hl-q4-a",
+  "topicId": "cons-3-3",
+  "conceptId": "functional-requirements-external-wall-new-dwelling",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2017 HL Q4(a)",
+  "questionText": "Discuss, using notes and freehand sketches, three functional requirements of an external wall suitable for a new dwelling house.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "6 x 4",
+   "answer": 6,
+   "ofParts": 14,
+   "perPart": 4
+  },
+  "totalMarks": 24,
+  "rows": [
+   {
+    "id": "cons-2017-hl-q4-a-r1",
+    "kind": "anyN",
+    "verbatim": "Discuss, using notes and freehand sketches, three functional requirements of an external wall suitable for a new dwellin",
+    "marks": 24,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 6,
+     "perOption": 4,
+     "options": [
+      "Concrete block wall",
+      "Timber frame with rainscreen",
+      "Rendered wall of timber frame and hemp-lime construction",
+      "___________________________________________________________________________________________________________",
+      "Positives",
+      "Negatives",
+      "Ease of construction",
+      "Positives: environmental considerations",
+      "Negatives",
+      "Ease of construction - Positives",
+      "Negatives",
+      "Positives",
+      "Negatives",
+      "Ease of construction - Positives"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 15 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
+  "id": "cons-2017-hl-q8-c",
+  "topicId": "cons-3-6",
+  "conceptId": "advances-glazing-technology-make-modern-glazing",
+  "level": "higher",
+  "year": 2017,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2017 HL Q8(c)",
+  "questionText": "Using notes and freehand sketches, discuss three advances in glazing technology that make modern glazing systems more energy efficient.",
+  "stem": "The scheme groups its answer under: Insulated Glazing Units (IGU); Low Emissivity (Low-E) Glazing; Dynamic Glass/Smart Glass; Warm edge spacer",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "6 x 4",
+   "answer": 6,
+   "ofParts": 14,
+   "perPart": 4
+  },
+  "totalMarks": 24,
+  "rows": [
+   {
+    "id": "cons-2017-hl-q8-c-r1",
+    "kind": "anyN",
+    "verbatim": "Using notes and freehand sketches, discuss three advances in glazing technology that make modern glazing systems more en",
+    "marks": 24,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 6,
+     "perOption": 4,
+     "options": [
+      "double or triple glazed units hermetically sealed to form a single unit",
+      "cavity filled with argon or krypton gas giving a much lower u-value",
+      "aerogel technology is being developed which allows even greater insulating properties",
+      "microscopically thin metallic layer is placed on inside surface of glass pane",
+      "low-e coating allows the suns short wave radiation to pass through to the inside",
+      "re-radiated heat from inside the dwelling in long wave form is reflected back into the room",
+      "enables glass to change tint when necessary to reduce glare and heat load",
+      "provides greater levels of comfort for the occupant",
+      "electrochromic : metallic oxide layers fixed to surface of glass",
+      "low voltage electric current passed through layers",
+      "thermochromic glass reacts and tints to the heat of the sun",
+      "warm edge spacer insulate the edges of a sealed unit and keep the panes of glass apart",
+      "warm edge spacers are made of an insulating plastic composite material which acts as a barrier to heat loss",
+      "the insulating plastic has low heat conductivity and thus reduces the amount of heat lost through the sealed unit"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 16 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
   "id": "cons-2017-ol-q2-a",
   "topicId": "cons-1-1",
   "conceptId": "how-inner-leaf-insulated-type-thickness",
@@ -3583,6 +4182,59 @@
   "notes": ""
  },
  {
+  "id": "cons-2017-ol-q1-a",
+  "topicId": "cons-1-5",
+  "conceptId": "vertical-section-through-top-door-showing",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2017 OL Q1(a)",
+  "questionText": "To a scale of 1:5 draw a vertical section through the top of the door, showing the wall, the concrete lintels over the door, the doorframe and the door. Show the typical construction details from 400 mm below the lintels to a level 400 mm above the lintels. Include three typical dimensions on your drawing.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "7 x 5",
+   "answer": 7,
+   "ofParts": 14,
+   "perPart": 5
+  },
+  "totalMarks": 35,
+  "rows": [
+   {
+    "id": "cons-2017-ol-q1-a-r1",
+    "kind": "anyN",
+    "verbatim": "Specification – typical detail",
+    "marks": 35,
+    "openList": true,
+    "contextNote": "Specification – typical detail",
+    "group": {
+     "claimMax": 7,
+     "perOption": 5,
+     "options": [
+      "19 mm external render",
+      "Insulated plasterboard with skim coat",
+      "100 mm concrete block outer leaf",
+      "Proprietary cavity closer",
+      "200 mm full-fill cavity insulation",
+      "150 mm × 70 mm thermally broken",
+      "Damp Proof Course - DPC door frame",
+      "100mm concrete block inner leaf",
+      "Draught proof strips to door",
+      "15 mm internal plaster with skim coat",
+      "90 mm door top rail and insulation",
+      "Reinforced concrete lintels",
+      "12 mm vertical sheeting on both sides",
+      "18 mm plywood of the door"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 15 acceptable points under \"Specification – typical detail\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
   "id": "cons-2018-hl-q1-b",
   "topicId": "cons-1-1",
   "conceptId": "typical-design-detailing-prevent-ingress-rainwater",
@@ -4295,6 +4947,636 @@
   "notes": ""
  },
  {
+  "id": "cons-2018-hl-q1-a",
+  "topicId": "cons-3-8",
+  "conceptId": "vertical-section-through-porch-showing-external",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2018 HL Q1(a)",
+  "questionText": "To a scale of 1:5, draw a vertical section through the porch showing the external wall of the porch, the sloping roof, and the front wall of the house. Show the typical construction details of the porch from a point 300 mm below the wallplate, through the sloping rafters to a level 300 mm above and 200 mm below the abutment of the roof and the front wall of the house. Show three courses of slate at eaves. It is not necessary to show window or door details.",
+  "stem": "The scheme groups its answer under: Wall of main house 4; Roof; Wall of porch – timber clad",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "10 x 4",
+   "answer": 10,
+   "ofParts": 14,
+   "perPart": 4
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "cons-2018-hl-q1-a-r1",
+    "kind": "anyN",
+    "verbatim": "To a scale of 1:5, draw a vertical section through the porch showing the external wall of the porch, the sloping roof, a",
+    "marks": 40,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 10,
+     "perOption": 4,
+     "options": [
+      "external & internal renders",
+      "cavity wall & wall ties - 100 mm external and internal leaf",
+      "full-fill insulated cavity",
+      "lintels",
+      "thermal blocks beneath roof abutment",
+      "timber bearer to wall/ hanger to main wall/metal hanger",
+      "any 4 dimensions",
+      "slate on 35 × 50 mm counter battens, battens & /ventilation on",
+      "breathable roofing membrane,",
+      "on 10mm OSB for wind tightness on",
+      "250 - 300mm rafters or I-joists",
+      "packed with 300mm sheep’s /mineral wool / blown cellulose on",
+      "plasterboard with bonded insulation (polystyrene) with integral 4 vapour control layer",
+      "tilting fillet and ventilation at eaves and roof head"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 25 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
+  "id": "cons-2018-hl-q2-a",
+  "topicId": "cons-1-8",
+  "conceptId": "possible-safety-risk-associated-tasks-construction",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2018 HL Q2(a)",
+  "questionText": "Discuss in detail one possible safety risk associated with each of the following tasks on a construction site: • excavating where there are underground electrical cables • working in a deep trench • working at height when slating a roof.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 x 4",
+   "answer": 3,
+   "ofParts": 14,
+   "perPart": 4
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "cons-2018-hl-q2-a-r1",
+    "kind": "anyN",
+    "verbatim": "Discuss in detail one possible safety risk associated with each of the following tasks on a construction site: • excavat",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "risk of exposing live electrical cables",
+      "safety risk of damaging cables",
+      "safety risk of electric shock or electrocution",
+      "safety risk of coming into contact with live cables of any voltage - including low voltage",
+      "contact with cables of any voltage, even low voltage, can cause fatal injuries and heart damage",
+      "risk of explosion, fire or flames if a cable is pierced or crushed causing the outer cable sheath and the inner conductors of the cable to connect",
+      "risk of severe, potentially fatal burns to hands, face and body",
+      "safety risk of electrical fires due to oil-filled high-voltage cables igniting",
+      "safety risk of spread of fire to other nearby services such as gas pipes",
+      "damage to cables can cause loss of power supply - risking serious consequences for emergency services such as hospitals",
+      "sides of trench collapsing leading to risk of workers being crushed or buried or fatally injured due to instability of trench",
+      "risk of neighbouring structures being undermined leading to collapse of structures",
+      "risk of injury or death resulting from workers or others falling into unguarded trench",
+      "risks from materials falling into trench and injuring or killing workers"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 21 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
+  "id": "cons-2018-hl-q2-b",
+  "topicId": "cons-1-8",
+  "conceptId": "risk-discussed-above-best-practice-guidelines",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2018 HL Q2(b)",
+  "questionText": "For each risk discussed at 2(a) above, show, using notes and freehand sketches, two best practice guidelines that should be observed to reduce the possibility of injury to a worker undertaking each task.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "6 x 6",
+   "answer": 6,
+   "ofParts": 14,
+   "perPart": 6
+  },
+  "totalMarks": 36,
+  "rows": [
+   {
+    "id": "cons-2018-hl-q2-b-r1",
+    "kind": "anyN",
+    "verbatim": "2(c) – promoting a culture of safety among workers - three strategies",
+    "marks": 36,
+    "openList": true,
+    "contextNote": "2(c) – promoting a culture of safety among workers - three strategies",
+    "group": {
+     "claimMax": 6,
+     "perOption": 6,
+     "options": [
+      "buddy system, a new employee be paired with a more experienced worker",
+      "ensure all workers are fully trained to carry out required tasks",
+      "regular appraisal by management to ensure safe practice by all workers",
+      "safe pass course mandatory for all workers",
+      "all workers look out for one another and alert to possible risks",
+      "manual handling course mandatory for all workers",
+      "operators’ licences for machinery e.g. forklift, telly porter etc",
+      "hazardous goods training course",
+      "frequent site safety meetings",
+      "a safety statement must have an emergency plan outlined in the case of an accident. In the event of an emergency immediate action can be taken to ensure the treatment of the injured party",
+      "ensure that all workers and visitors to the site are familiar with the safety statement",
+      "provide visitors to the site with appropriate PPE",
+      "ensure all signage and directional signs are clearly visible",
+      "provide a safer working environment"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 20 acceptable points under \"2(c) – promoting a culture of safety among workers - three strategies\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
+  "id": "cons-2018-hl-q3-b",
+  "topicId": "cons-1-1",
+  "conceptId": "proposed-design-layout-extension-necessary-modifications",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2018 HL Q3(b)",
+  "questionText": "Using notes and freehand sketches, show a proposed design layout for the extension and the necessary modifications to the existing layout of the cottage.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 x 6",
+   "answer": 4,
+   "ofParts": 14,
+   "perPart": 6
+  },
+  "totalMarks": 24,
+  "rows": [
+   {
+    "id": "cons-2018-hl-q3-b-r1",
+    "kind": "anyN",
+    "verbatim": "Using notes and freehand sketches, show a proposed design layout for the extension and the necessary modifications to th",
+    "marks": 24,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 4,
+     "perOption": 6,
+     "options": [
+      "glazed openings that allow a visual connection to nature – biophilic design",
+      "access to the garden through opening / sliding doors, bi-fold doors, floor to ceiling glazing and provide external decking",
+      "glazing to the floor so that the nature can be seen from seated level",
+      "creating an internal planted courtyard in buildings with limited views to nature",
+      "open-plan layouts so the daylight and sunlight can penetrate into the house",
+      "high performance - triple and quadruple low-e glazing - maintains thermal comfort internally and reduces glare",
+      "opening windows allowing natural airflow and fresh air inside that mimic the outside environments - occupants in control of temperature and ventilation and can open to purge overheating",
+      "construction of high thermal mass so that its regulatory properties can increase the internal comfort levels and reduce overheating",
+      "overhangs/brise soleil to the south to reduce glare and overheating during summer",
+      "lower cill levels to allow daylight and sunlight to penetrate deeper into the house",
+      "glass panels to the side of or in the door itself to brighten hallways or main living areas",
+      "bright colours to internal walls and window frames to increase natural light and thus well-being",
+      "strategically placed mirrors can reflect light further into the house",
+      "high ceiling levels or double height spaces can vary the intensity of light and shade and instil fascination"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 26 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
+  "id": "cons-2018-hl-q6-c",
+  "topicId": "cons-6-3",
+  "conceptId": "suggest-modifications-existing-design-would-further",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2018 HL Q6(c)",
+  "questionText": "Suggest, using notes and freehand sketches, two modifications to the existing design that would further reduce the environmental impact of the house and help meet the nearly Zero Energy Building (nZEB) requirements. Justify your design choices.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "6 x 3",
+   "answer": 6,
+   "ofParts": 14,
+   "perPart": 3
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "cons-2018-hl-q6-c-r1",
+    "kind": "anyN",
+    "verbatim": "Suggest, using notes and freehand sketches, two modifications to the existing design that would further reduce the envir",
+    "marks": 18,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 6,
+     "perOption": 3,
+     "options": [
+      "reduce heat loss when front door is opened",
+      "extra insulation at door Increase the thickness of insulation in the external walls –",
+      "the insulation can be fixed to the inside of external leaf",
+      "the rainscreen can also be fixed outside the insulation",
+      "modifications may be needed at the eaves to accommodate the increased wall thickness increase window area in south-facing wall to boost solar gain",
+      "a glazed south-facing area attached to the outer wall",
+      "increased solar gain and greater thermal comfort",
+      "sheltered seating area for all-year use",
+      "add on a purpose designed sunroom erect a partition with glazed doors to separate kitchen and dining areas",
+      "allows both the living and kitchen areas to be zoned for space heating",
+      "reduces demand for heating and improved thermal comfort",
+      "increases acoustic comfort and increases privacy",
+      "sliding doors or bi-fold doors for ease of access",
+      "install air-to-water heat pump and integrate space and hot water heating in conjunction with under-floor space heating"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 27 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
+  "id": "cons-2018-hl-q7-a",
+  "topicId": "cons-4-3",
+  "conceptId": "vertical-section-through-portion-external-wall",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2018 HL Q7(a)",
+  "questionText": "To a scale of 1:5, draw a vertical section through a portion of the external wall, doorframe, door, first floor joists, and floor. Show the typical construction details from a level 400 mm below the top of the door to a level 300 mm above the first floor joists.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 x 4",
+   "answer": 4,
+   "ofParts": 14,
+   "perPart": 4
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "cons-2018-hl-q7-a-r1",
+    "kind": "anyN",
+    "verbatim": "To a scale of 1:5, draw a vertical section through a portion of the external wall, doorframe, door, first floor joists, ",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 4,
+     "perOption": 4,
+     "options": [
+      "450 mm concrete block wall",
+      "Full-fill cavity insulation",
+      "Internal and external plaster/render",
+      "Cavity closer",
+      "Lintels",
+      "Wall tie – basalt coated low conductivity",
+      "Stepped dpc",
+      "Thermally broken frame",
+      "Top rail",
+      "Airtightness tape - doorframe to wall",
+      "Insulation",
+      "Vertical sheeting",
+      "Rebates - double & draught proofing strips",
+      "Floor"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 21 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
+  "id": "cons-2018-hl-q8-a",
+  "topicId": "cons-5-2",
+  "conceptId": "single-line-diagram-typical-design-layout",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2018 HL Q8(a)",
+  "questionText": "Using notes and a single-line diagram, show a typical design layout for both the central heating and the hot water systems. Show two independently controlled heating zones, one on each floor. Include three radiators on each floor and give the typical sizes of the pipework.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "8 x 3",
+   "answer": 8,
+   "ofParts": 14,
+   "perPart": 3
+  },
+  "totalMarks": 24,
+  "rows": [
+   {
+    "id": "cons-2018-hl-q8-a-r1",
+    "kind": "anyN",
+    "verbatim": "Using notes and a single-line diagram, show a typical design layout for both the central heating and the hot water syste",
+    "marks": 24,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 8,
+     "perOption": 3,
+     "options": [
+      "Wood burning stove & radiators",
+      "Zone control mechanism & Zone thermostats",
+      "Header / expansion / storage tank",
+      "Feed to expansion tank",
+      "Cold feed from expansion tank",
+      "Expansion pipe or expansion vessel",
+      "Flow pipes to radiators",
+      "Return pipes from radiators",
+      "Radiator valves",
+      "Pump and valves (pump, 2 isolating valves, drain off - any 2)",
+      "Solar panel",
+      "Flow & Return - with arrows/colour coding/labels",
+      "Solar pump",
+      "Cylinder (twin coil)"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 18 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
+  "id": "cons-2018-hl-q8-b",
+  "topicId": "cons-1-8",
+  "conceptId": "features-ensure-system-operates-safely-all",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2018 HL Q8(b)",
+  "questionText": "Using notes and freehand sketches, describe two features that ensure that the system operates safely at all times. Discuss the importance of each safety feature outlined.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "5 x 4",
+   "answer": 5,
+   "ofParts": 14,
+   "perPart": 4
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "cons-2018-hl-q8-b-r1",
+    "kind": "anyN",
+    "verbatim": "Using notes and freehand sketches, describe two features that ensure that the system operates safely at all times. Discu",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 5,
+     "perOption": 4,
+     "options": [
+      "Safety features of system thermostatic control of the burning rate",
+      "thermostatic control of the burning rate based on temperature of water in the boiler where the appliance uses a boiler",
+      "thermostatic radiator valves (TRVs) should be wired electronically to provide boiler interlock hot water cylinder - thermostatic control",
+      "fitted about one third of the way up the cylinder",
+      "should have clean contact with the metal on the cylinder",
+      "avoids overheating thus ensuring safe temperature of water in taps",
+      "thermostat should be as accessible as possible",
+      "the cylinder thermostat should be wired to provide a boiler interlock vent valve to boiler",
+      "a safety feature that stops too much pressure from damaging the plumbing system and causing injury to a person",
+      "helps to prevent the risk of an explosion due to build-up of pressure ease of cleaning/maintenance",
+      "the opening for this purpose should have a rigid, non-combustible and gastight cover, or a removable section in condensing type appliances carbon monoxide",
+      "the heating appliance must be correctly installed and serviced at regular intervals to ensure efficient combustion and removal of products of combustion",
+      "a carbon monoxide alarm be fitted in vicinity of burning appliance",
+      "detector should have both a visible and audible alarm to alert occupants of the presence of carbon monoxide"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 19 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
+  "id": "cons-2018-hl-q9-a",
+  "topicId": "cons-3-9",
+  "conceptId": "functional-requirements-attic-space-use-bedroom",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2018 HL Q9(a)",
+  "questionText": "Discuss in detail using notes and freehand sketches, three functional requirements of an attic space suitable for use as a bedroom.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "6 x 6",
+   "answer": 6,
+   "ofParts": 14,
+   "perPart": 6
+  },
+  "totalMarks": 36,
+  "rows": [
+   {
+    "id": "cons-2018-hl-q9-a-r1",
+    "kind": "anyN",
+    "verbatim": "Discuss in detail using notes and freehand sketches, three functional requirements of an attic space suitable for use as",
+    "marks": 36,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 6,
+     "perOption": 6,
+     "options": [
+      "ceiling level 2400 mm minimum above floor level",
+      "area at 1500 mm above floor level at least 50% of total floor area adequate natural lighting and ventilation",
+      "roof lights flush with the roof surface may be fitted",
+      "dormer style lighting may require planning permission if on main elevation of house",
+      "permanent ventilation/mechanical ventilation with heat recovery in keeping with the rest of the dwelling",
+      "use of vapour barrier on warm side of insulation/air continuity barrier",
+      "ensure adequate ventilation of the roof structure to avoid condensation",
+      "fire grade high density plasterboard with half hour fire resistance taped, jointed and skimmed",
+      "smoke detection system and alarm, connected to electrical mains",
+      "fire resistant floor construction",
+      "high density fireproof doors with min 0.5 hours fire rating and fitted with self-closing mechanism",
+      "structural members provided with required level of fire resistance, e.g. steel beams, columns encased",
+      "fire retardant thermal insulation",
+      "means of escape in case of fire, roof lights may suffice - as shown sound insulation"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 24 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
+  "id": "cons-2018-hl-q9-b",
+  "topicId": "cons-3-9",
+  "conceptId": "traditional-cut-roof-which-slated-has",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2018 HL Q9(b)",
+  "questionText": "A traditional cut roof, which is slated and has a pitch of 45°, is designed to provide a well-insulated bedroom in the attic space, as shown. Using notes and freehand sketches, show the typical design detailing for such a roof. Include the stud side walls and the insulation. Show clearly the design detailing necessary to ensure the structural stability of the roof. Label the main components and give their typical dimensions.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 x 6 + 3 x 2",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 24,
+  "rows": [
+   {
+    "id": "cons-2018-hl-q9-b-r1",
+    "kind": "anyN",
+    "verbatim": "Structural Stability – typical detailing",
+    "marks": 18,
+    "openList": true,
+    "contextNote": "Structural Stability – typical detailing",
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "floor joists of sufficient size for the full span",
+      "purlins need to be strutted from a suitably mounted wall plates",
+      "ceiling joists/collar ties to be fitted at a height of 2400 mm above the finished floor level – triangulation of roof structure",
+      "backing to rafters to accommodate thickness of thermal insulation and ventilation",
+      "doubling of rafters to provide sufficient support for roof lights",
+      "slates on battens typically 50 × 35 mm",
+      "counter battens 50 × 35 mm to provide ventilation space",
+      "breather membrane sealed and taped",
+      "hygroscopic layer – wood fibre board, OSB or Smartply or similar for wind tightness",
+      "rafters 200 × 40 mm at 400 - 600 mm centres",
+      "collar ties 200 × 40 mm to each rafter",
+      "ceiling joists 200 × 40 mm to each rafter",
+      "vertical struts 200 × 40 mm",
+      "runner at foot of strut - 150 × 70 mm"
+     ]
+    }
+   },
+   {
+    "id": "cons-2018-hl-q9-b-r2",
+    "kind": "anyN",
+    "verbatim": "___________________________________________________________________________________________________________",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "___________________________________________________________________________________________________________",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "insulation 200 mm min at slope of roof",
+      "insulation 600 mm – two layers to ceiling",
+      "2 × 12.5 mm gypsum plasterboard to ceiling with vapour barrier on warm side of insulation",
+      "airtightness tape",
+      "fascia, soffit and gutter with continuous vent at soffit"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 17 acceptable points under \"Structural Stability – typical detailing\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
+  "id": "cons-2018-hl-q10-a",
+  "topicId": "cons-6-3",
+  "conceptId": "importance-passive-house-design-space-heating",
+  "level": "higher",
+  "year": 2018,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2018 HL Q10(a)",
+  "questionText": "Using notes and freehand sketches, discuss the importance of any two of the following in Passive House design: • space heating energy demand • building form • thermal bridging.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 x 4 + 2 x 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "cons-2018-hl-q10-a-r1",
+    "kind": "anyN",
+    "verbatim": "___________________________________________________________________________________________________________",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "___________________________________________________________________________________________________________",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "a building with the same U-values, air change rates and orientation as another may have a different heating demand depending on their respective A/V ratios",
+      "should take full advantage of site aspect, potential solar energy gain, potential for energy conservation",
+      "main windows/elevation South-facing",
+      "windows minimised on North facade",
+      "providing lobby and porch at entrance to conserve energy",
+      "heating appliances kept on inside walls to reduce heat energy loss",
+      "steeper 45° roof pitch to accommodate increased living space and roof-mounted photovoltaic and/or passive solar panels, evacuated tubes thermal bridging",
+      "a thermal /cold bridge is an area of a building that has a higher conductivity than surrounding materials",
+      "and significantly detrimental rate of heat transfer than the surrounding materials, resulting in a significant reduction in the thermal insulation/performance of a building thermal energy flows from a higher to a lower temperature",
+      "flow increases with greater temperature difference",
+      "materials that are more efficient conductors of heat and penetrate the outer envelope lead to greater thermal energy transfer – increase heat loss overall",
+      "local areas of greater energy flow provide cold spots on the inner surfaces and troublesome condensation, including interstitial condensation",
+      "more of a risk where Passive House standard is achieved",
+      "greater risk surrounding openings and where floors and ceilings abut outer walls"
+     ]
+    }
+   },
+   {
+    "id": "cons-2018-hl-q10-a-r2",
+    "kind": "anyN",
+    "verbatim": "Cork, 90° - 55° = 35° in Letterkenny)",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Cork, 90° - 55° = 35° in Letterkenny)",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "increase the window sizes on the front elevation",
+      "taller, larger South-facing windows maximises solar gain to living areas",
+      "fewer and smaller North-facing windows reduces heat loss",
+      "passive heating reduces costs and fossil fuel demand",
+      "large eaves overhang or brise-soleil over South-facing windows increase the window area in kitchen and dining room",
+      "East-facing windows enable morning solar gain to the sitting room",
+      "increases daylighting",
+      "reduces artificial lighting requirement",
+      "reduces heating requirement provide roof lights",
+      "increase daylight",
+      "give longer daylighting period",
+      "reduce need for artificial light",
+      "reduce lighting costs and fossil fuel use provide wood-burning stove",
+      "carbon neutral"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 32 acceptable points under \"___________________________________________________________________________________________________________\"; the 14 shown here are the first it prints. Any other valid point earns the same marks. The scheme lists 22 acceptable points under \"Cork, 90° - 55° = 35° in Letterkenny)\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
   "id": "cons-2018-ol-q1-a",
   "topicId": "cons-2-4",
   "conceptId": "vertical-section-through-strip-foundation-215",
@@ -4950,6 +6232,165 @@
    }
   ],
   "notes": ""
+ },
+ {
+  "id": "cons-2018-ol-q2-c",
+  "topicId": "cons-1-1",
+  "conceptId": "advantage-disadvantage-applying-external-system-insulation",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2018 OL Q2(c)",
+  "questionText": "Discuss one advantage and one disadvantage of applying an external system of insulation to the walls of a house.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 5",
+   "answer": 2,
+   "ofParts": 14,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2018-ol-q2-c-r1",
+    "kind": "anyN",
+    "verbatim": "Advantage Disadvantage",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Advantage Disadvantage",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Energy bills are reduced",
+      "It is an expensive method of adding",
+      "Heat loss through external walls is insulation to a house reduced",
+      "The new finish projects out from",
+      "Improves the BER rating existing walls",
+      "Improves the U-value",
+      "Changes are made to window cills to",
+      "The house will be warmer avoid cold bridge effect",
+      "No loss of internal floor area",
+      "Rainwater downpipes must be",
+      "A range of colours available refitted",
+      "Improves the appearance of the",
+      "Difficult to work with existing soffit house and looks well when complete board",
+      "The internal area of the house is not"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 17 acceptable points under \"Advantage Disadvantage\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
+  "id": "cons-2018-ol-q5-a",
+  "topicId": "cons-3-8",
+  "conceptId": "vertical-section-through-eaves-flat-roof",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2018 OL Q5(a)",
+  "questionText": "To a scale of 1:5, draw a vertical section through the eaves of the flat roof and through the external wall. Show the typical construction details from 500 mm below the roof joists, through the external wall, wallplate, fascia, soffit, and roof joists and include the roof surface. Show 1.5 metres length of roof joist and include three typical dimensions on your drawing.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "7 x 5",
+   "answer": 7,
+   "ofParts": 14,
+   "perPart": 5
+  },
+  "totalMarks": 35,
+  "rows": [
+   {
+    "id": "cons-2018-ol-q5-a-r1",
+    "kind": "anyN",
+    "verbatim": "To a scale of 1:5, draw a vertical section through the eaves of the flat roof and through the external wall. Show the ty",
+    "marks": 35,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 7,
+     "perOption": 5,
+     "options": [
+      "Weather proofing with 3 layers of",
+      "Wallplate 100 mm × 75 mm tied to bituminous felt blockwork with wallplate straps",
+      "Marine plywood decking 18 - 25 mm",
+      "Cavity closed with fire stopping",
+      "Battens 50 × 50 mm on insulation or proprietary cavity barrier",
+      "Firring piece to 1:40 slope or non-combustible tile or slate",
+      "Breathable roofing membrane",
+      "15 mm internal plaster",
+      "Roof / ceiling joists 200 mm × 50 mm",
+      "Concrete block inner leaf 100 mm",
+      "Roof insulation min 200 mm to",
+      "Full-fill cavity insulation comply with current Building",
+      "Concrete block outer leaf 100 mm Regulations",
+      "19 mm external render"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 26 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
+  "id": "cons-2018-ol-q9-b",
+  "topicId": "cons-1-1",
+  "conceptId": "how-doorframe-held-square-while-being",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2018 OL Q9(b)",
+  "questionText": "Show, using notes and freehand sketches, how the doorframe is held square while it is being fitted and show one method of fixing the doorframe to the wall.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 x 4",
+   "answer": 4,
+   "ofParts": 14,
+   "perPart": 4
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "cons-2018-ol-q9-b-r1",
+    "kind": "anyN",
+    "verbatim": "Show, using notes and freehand sketches, how the doorframe is held square while it is being fitted and show one method o",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 4,
+     "perOption": 4,
+     "options": [
+      "Temporary wooden strip is fixed diagonally at one or both corners",
+      "The corners are checked for square",
+      "A strip is fixed at the bottom of the frame to keep the uprights parallel and the correct distance apart",
+      "The frame is now ready for fitting",
+      "These temporary fixtures can be removed when the frame is fixed in place",
+      "Suitable screws are used to fix the doorframe to the wall",
+      "The position for the screws is marked on the frame",
+      "A larger hole is drilled",
+      "The hole for the screws is then drilled through the centre",
+      "The exact position for the screws is then marked on the wall",
+      "Holes are drilled in concrete for the plastic plugs B",
+      "Frame is put back in position",
+      "Screws are then inserted",
+      "Metal frame fixings are also used"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 16 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
  },
  {
   "id": "cons-2019-hl-q1-b",
@@ -6796,6 +8237,59 @@
   "notes": ""
  },
  {
+  "id": "cons-2019-ol-q7-a",
+  "topicId": "cons-1-1",
+  "conceptId": "given-design-preferred-location-kitchen-area",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2019 OL Q7(a)",
+  "questionText": "Draw a freehand sketch of the given design and show your preferred location for each of the following in the kitchen area: • cooker • fridge • sink.",
+  "stem": "The scheme groups its answer under: Sink; Cooker; Fridge",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 x 4",
+   "answer": 4,
+   "ofParts": 14,
+   "perPart": 4
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "cons-2019-ol-q7-a-r1",
+    "kind": "anyN",
+    "verbatim": "Draw a freehand sketch of the given design and show your preferred location for each of the following in the kitchen are",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 4,
+     "perOption": 4,
+     "options": [
+      "Natural light is available to the sink S at the window",
+      "It is pleasant for the person using the sink",
+      "It is close to the cooker, less than 2 metres",
+      "It is good to have a view to the garden or lawn",
+      "It forms part of the triangle design for kitchens",
+      "There is ample worktop space at either side",
+      "There is worktop space at either side of the cooker C",
+      "It forms part of the triangle for kitchen layout",
+      "It avoids crossing the kitchen with hot pans or pots",
+      "It is a safe location in relation to the door opening",
+      "It is within easy reach of the sink",
+      "The fridge F is near the sink for food preparation",
+      "It forms part of the working triangle",
+      "It has worktop space at either side"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 16 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
   "id": "cons-2020-hl-q1-b",
   "topicId": "cons-3-8",
   "conceptId": "typical-design-detailing-ensure-ventilation-roof",
@@ -8030,6 +9524,59 @@
    }
   ],
   "notes": "The scheme awards 24 marks for this part. The 4 on this card are the marks it states answers for; the other 20 go to Notes (6); Sketches (14) — the drawing itself and anything the scheme prices without saying what earns it."
+ },
+ {
+  "id": "cons-2020-hl-q9-b",
+  "topicId": "cons-8-3",
+  "conceptId": "partitions-are-standard-timber-stud-construction",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2020 HL Q9(b)",
+  "questionText": "The partitions are of standard timber stud construction and the first floor is a softwood floor on timber joists, with a plasterboard ceiling beneath. The partitions and the floor are to be upgraded to reduce the transmission of sound from the entertainment room.",
+  "stem": "The scheme groups its answer under: Stud Partition; First Floor; – flexibility",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 x 4",
+   "answer": 4,
+   "ofParts": 14,
+   "perPart": 4
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "cons-2020-hl-q9-b-r1",
+    "kind": "anyN",
+    "verbatim": "The partitions are of standard timber stud construction and the first floor is a softwood floor on timber joists, with a",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 4,
+     "perOption": 4,
+     "options": [
+      "Construct a staggered double stud partition wall with the studs staggered each side",
+      "An absorbent quilt is woven between the studs to absorb airborne sound - flexibility",
+      "Two layers of plasterboard with staggered joints is fixed on each side to reduce the transmittance of sound – this increase the mass of the wall",
+      "All electrical fittings in the wall are sealed and made airtight",
+      "The stud wall is sealed to adjoining walls, floor and ceiling – completeness",
+      "Construct two separate stud walls in which there is no material in contact – isolation",
+      "An absorbent quilt is placed between the stud wall in the cavity – flexibility",
+      "Acoustic isolation strips are placed over the flooring joists",
+      "The flooring is fixed to battens floated over the acoustic strips",
+      "The flooring above and plasterboard below are sealed and made airtight",
+      "Acoustic matting is placed under the finished floating floor above to reduce the transmission of impact sound",
+      "Absorbent quilt is placed between the flooring joists to absorb airborne sound transmission",
+      "Two layers of plasterboard with staggered joints is fixed on each side for the ceiling – this increase the mass of the wall",
+      "Acoustic matting is placed: o between the upper decking and floating floor o between the two plasterboard slabs in the ceiling beneath"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme awards 28 marks for this part. The 16 on this card are the marks it states answers for; the other 12 go to Sketch (6); Sketch (6) — the drawing itself and anything the scheme prices without saying what earns it. The scheme lists 15 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
  },
  {
   "id": "cons-2020-ol-q1-a",
@@ -9349,6 +10896,39 @@
   "notes": ""
  },
  {
+  "id": "cons-2020-ol-q1-b",
+  "topicId": "cons-1-1",
+  "conceptId": "typical-design-detailing-prevent-dampness-entering",
+  "level": "ordinary",
+  "year": 2020,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2020 OL Q1(b)",
+  "questionText": "On your drawing, show the typical design detailing to prevent dampness entering the building through the floor.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "cons-2020-ol-q1-b-r1",
+    "kind": "point",
+    "verbatim": "Damp proof membrane/Radon Barrier",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "cons-2021-hl-q1-a",
   "topicId": "cons-3-2",
   "conceptId": "vertical-section-door-external-wall-ground-floor",
@@ -10126,6 +11706,59 @@
   "notes": ""
  },
  {
+  "id": "cons-2021-hl-q4-b",
+  "topicId": "cons-1-3",
+  "conceptId": "choosing-between-two-rural-sites",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2021 HL Q4(b)",
+  "questionText": "Shown is an extract from a site location map. A and B are possible sites for a new house in a rural setting. Select your preferred site A or B and discuss three considerations you took into account when selecting your site.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 x 4",
+   "answer": 3,
+   "ofParts": 14,
+   "perPart": 4
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "cons-2021-hl-q4-b-r1",
+    "kind": "anyN",
+    "verbatim": "Shown is an extract from a site location map. A and B are possible sites for a new house in a rural setting. Select your",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Less noise pollution as the site is located away from the main road",
+      "No existing houses in close proximity overlooking the property",
+      "Greater privacy as it is not adjacent to the main road",
+      "The lane leading to the site joins the main road on a straight point so clear sight lines can be obtained which increase safety when entering or exiting the site",
+      "Existing natural hedgerow boundary so minimal environmental visual impact",
+      "Existing tall vegetation can act as solar shading and increase privacy",
+      "Unobstructed views of the lake and forest so enhance health and wellbeing of the occupants",
+      "Access can be gained from two site parameter boundaries",
+      "Existing services are in close proximity to the site - neighbouring house already has connections with water, electricity, broadband resulting in cost-effective provision of public services",
+      "Building close to an existing dwelling is favoured by the planning authority",
+      "Reduced distance from leisure facilities, schools and employment",
+      "Site B is the smaller site and would result in minimum area for manicured lawns in the countryside",
+      "Less arable land is used as it is a smaller site",
+      "Sufficient space exists to facilitate waste-water treatment and percolation area on the site"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 15 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
   "id": "cons-2021-hl-q4-c",
   "topicId": "cons-1-3",
   "conceptId": "sketching-a-site-and-its-boundaries",
@@ -10758,6 +12391,85 @@
   "notes": ""
  },
  {
+  "id": "cons-2021-hl-q10-a",
+  "topicId": "cons-6-4",
+  "conceptId": "why-solar-overheating-occurs",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2021 HL Q10(a)",
+  "questionText": "Discuss two reasons why solar overheating may occur in the house shown and discuss two effects solar overheating may have on occupants. Discuss the above statement in detail.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 x 6 + 2 x 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 24,
+  "rows": [
+   {
+    "id": "cons-2021-hl-q10-a-r1",
+    "kind": "anyN",
+    "verbatim": "Why solar overheating may occur in the house",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Why solar overheating may occur in the house",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "House oriented with excessive south facing glazing may accumulate high levels of solar gain",
+      "Inadequate or no solar shading incorporated into the design of the house - overhangs - brise soleil",
+      "Lack of trees or vegetation about the house to provide natural solar shading",
+      "insufficient ventilation – natural or mechanical",
+      "Increasing levels of airtightness can reduce the amount of 'fresh' air entering the house",
+      "Lack of thermal mass within the fabric of the house",
+      "Triple-glazed windows reduce heat losses through conduction – little heat loss",
+      "High levels of insulation in the fabric of the house reduces heat transmission – retains heat",
+      "The activities of occupants such as cooking, bathing, showering all generate additional heat",
+      "Occupants themselves generate heat, the amount of which is dependent on their activity level",
+      "Heat gain from the house services such as - boilers, hot water storage and distribution pipework",
+      "Electrical appliances generate heat when in use - e.g. fridge"
+     ]
+    }
+   },
+   {
+    "id": "cons-2021-hl-q10-a-r2",
+    "kind": "anyN",
+    "verbatim": "Effects solar overheating may have on its occupants",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Effects solar overheating may have on its occupants",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "The occupants would be uncomfortable when using or living in an excessively warm room(s)",
+      "Excessive heat in a house may cause the dehydration of the occupants, this could lead to - headaches, lethargy, and constipation",
+      "Occupant in the house would become exhausted very quickly due to the heat – bodies overheating",
+      "Occupants could get irritable, angry or grumpy in warm indoor conditions as stress hormones may rise in tandem with the temperature",
+      "Overheating may cause occupants to sweating, leading to discomfort",
+      "Heatstroke could affect some occupants if the temperatures were very high which could lead to - red skin, headache, and dizziness",
+      "Overheating could lead to heat stress which can affect occupants in different ways - an inability to concentrate, muscle cramps, heat rash, severe thirst, confusion",
+      "High indoor temperatures affect the quality and continuity of sleep for occupants. Sleep disturbance has been linked to reduced productivity at work, as well as poor physical and mental health",
+      "Occupants’ productivity and concentration may also be reduced when in a hot environment",
+      "Increased cardiovascular strain",
+      "The reuse of local buildings can help to reduce the demand for new housing while also preserving the vernacular design of the area",
+      "Historic buildings of distinctive character need to be preserved as far as possible unchanged",
+      "The re-use or repurposing of buildings should meet the needs of a dwelling today, even if this means that considerable remodelling is needed to make the building suitable for re-use",
+      "Rather than allow a building fall into disrepair and disuse, best-practice guidelines for reuse encourage uses that meet a need today, and remodelling is necessary to make the building suitable for a new use"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 25 acceptable points under \"Effects solar overheating may have on its occupants\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
   "id": "cons-2021-hl-q10-b",
   "topicId": "cons-6-4",
   "conceptId": "reducing-solar-overheating",
@@ -10923,6 +12635,39 @@
       "Required thickness of insulation in mm"
      ]
     }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2021-ol-q1-b",
+  "topicId": "cons-5-4",
+  "conceptId": "rainwater-removal-at-the-eaves",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2021 OL Q1(b)",
+  "questionText": "On your drawing show how rainwater is removed at the eaves.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "cons-2021-ol-q1-b-r1",
+    "kind": "point",
+    "verbatim": "Eaves gutter/ downpipe",
+    "marks": 3,
+    "openList": true,
+    "contextNote": ""
    }
   ],
   "notes": ""
@@ -12782,6 +14527,59 @@
   "notes": ""
  },
  {
+  "id": "cons-2022-hl-q6-a",
+  "topicId": "cons-6-3",
+  "conceptId": "design-features-for-low-environmental-impact",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2022 HL Q6(a)",
+  "questionText": "With reference to the design shown, discuss using notes and freehand sketches, three features of the design that contribute to the house having a low environmental impact.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "6 x 5",
+   "answer": 6,
+   "ofParts": 14,
+   "perPart": 5
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "cons-2022-hl-q6-a-r1",
+    "kind": "anyN",
+    "verbatim": "Three feature of the design that contribute to the house having a low environment impact",
+    "marks": 30,
+    "openList": true,
+    "contextNote": "Three feature of the design that contribute to the house having a low environment impact",
+    "group": {
+     "claimMax": 6,
+     "perOption": 5,
+     "options": [
+      "Timber frame construction from local sources which reduces transport movements; has lower carbon emissions and a reduction in localised air pollution",
+      "Less embodied energy required to produce timber frame construction compared to a double leaf, concrete block, cavity wall construction design detail",
+      "Flame charred larch cladding required no harmful preservatives, is available in Ireland and is naturally durable",
+      "Locally sourced timber cladding (from Ireland) from FSC certified forests are lower in embodied energy than imported timber – suitable for a low environmental building",
+      "Locally sourced timber contributes to carbon sequestration (creates a carbon store/sink) in direct contrast to concrete production",
+      "The house has large south facing glazed openings which fill all main living spaces with natural light – electric light bulbs only needed at night",
+      "Most rooms have dual aspect openings so they utilise the suns benefits throughout the day",
+      "The heat from the sun entering through the large openings reduces the need for using non-renewable methods of heating theses spaces",
+      "Small windows on the north side reduces heat loss and saves energy",
+      "The chimney stack is centrally located - the large thermal mass chimney stack releases heat back into the living space on all four sides",
+      "The woodburning stove inset into the chimney reduces draughts and heat lost through the chimney - stoves are also more efficient than open fires",
+      "The house is constructed using low carbon materials which are both locally sourced and are renewable",
+      "Simple building form that takes advantage of the orientation of the sun",
+      "High levels of insulation in the floor, walls and roof construction"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 18 acceptable points under \"Three feature of the design that contribute to the house having a low environment impact\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
   "id": "cons-2022-hl-q6-b",
   "topicId": "cons-6-3",
   "conceptId": "providing-for-low-environmental-impact",
@@ -13288,6 +15086,59 @@
    }
   ],
   "notes": ""
+ },
+ {
+  "id": "cons-2022-hl-q10-a",
+  "topicId": "cons-6-4",
+  "conceptId": "benefits-of-orientation",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2022 HL Q10(a)",
+  "questionText": "Discuss in detail three benefits to the occupants of considering the orientation of a house at the design stage. Discuss the above statement in detail.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 x 6",
+   "answer": 3,
+   "ofParts": 14,
+   "perPart": 6
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "cons-2022-hl-q10-a-r1",
+    "kind": "anyN",
+    "verbatim": "Benefits",
+    "marks": 18,
+    "openList": true,
+    "contextNote": "Benefits",
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "Improve the comfort of the house by the use of the sun to heat the house – solar gain/passive heating",
+      "Reduce heating and cooling needs of the house – reduce heating costs",
+      "Plan the positioning of the windows in the house to: o to make the most of the sun in the living areas of the house o create pleasant views from the house for occupants",
+      "Create privacy and security for the occupants by orientating the house to avoid overlooking neighbours or busy roads/streets",
+      "Use or plan to use natural shading (trees, hedgerows) on the site for the house",
+      "Plan the garden layout and planting",
+      "Older model boilers that run off kerosene or gas are only about 65 to 75% efficient",
+      "Even more modern condensing boilers are at best 80% efficient",
+      "All these boilers run on fossil fuels like gas and kerosene which generate large volumes of CO2",
+      "The release of this Carbon into the atmosphere is immensely harmful to the Ozone layer",
+      "Recently the cost of fossil fuels has increased significantly due to reductions in supply",
+      "Carbon Dioxide and Sulphur Dioxide emissions are the primary harmful source of damage to the Ozone layer / environment / planet and are generated by the burning of fossil fuels",
+      "Fossil fuels like oil and natural gas are finite resources and only available in limited locations on the planet earth. Consequently, the search for these fossil fuels requires exploration in parts of the planet that are pristine in terms of their environmental qualities, however, the demand for such fossil fuels is such that these environmental oases are under threat of exploration and consequently the risk of catastrophic environmental disasters",
+      "The consequence of this increase is that home heating and cooking costs have increased substantially"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 28 acceptable points under \"Benefits\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
  },
  {
   "id": "cons-2022-hl-q1-b",
@@ -14944,6 +16795,108 @@
   "notes": ""
  },
  {
+  "id": "cons-2023-hl-q2-b-site-access",
+  "topicId": "cons-1-8",
+  "conceptId": "best-practice-guidelines-on-site-site-access",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2023 HL Q2(b) — Site access",
+  "questionText": "Using notes and freehand sketches, outline two specific best practice guidelines that should be observed for each of the following on a construction site: • site access.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 8",
+   "answer": 2,
+   "ofParts": 14,
+   "perPart": 8
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "cons-2023-hl-q2-b-site-access-r1",
+    "kind": "anyN",
+    "verbatim": "Site access",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "Site access",
+    "group": {
+     "claimMax": 2,
+     "perOption": 8,
+     "options": [
+      "Site access should be controlled with security fencing and/or hoarding to prevent unauthorised personnel and vehicles from accessing the site",
+      "All signs must be clearly visible and comply with standards, both at the entrance point and on its approach to warn people of its existence",
+      "Random testing of construction workers should be undertaken to ensure personnel have the ability to carry out onsite operations",
+      "Safe pass and CSCS accreditations should be inspected of any new construction personnel",
+      "All new personnel to the site should undergo a site induction by the safety officer",
+      "Location and contact details of Site Health and Safety officers, contact details and location of local hospital should be highlighted",
+      "The entrance and perimeter of a site must be identified by suitable signs",
+      "There should be appropriate sight lines visible for all vehicles exiting the site",
+      "If possible, the site should be fenced to control access, both for safety purposes, and to prevent damage, theft or vandalism",
+      "Hoarding is a temporary construction, of at least 2.4m that is more difficult to climb than fencing and prevents viewing of the site interior",
+      "Designated turnstiles, security gates, facial recognition technology and site security staff used to ensure that only authorised personnel can enter and exit",
+      "Electronic access control systems (ACS) such as",
+      "ACS provides up-to-date and accurate accounting for on-site personnel and can assist with controlling health and safety",
+      "A sign-in and reception area - located at the site entrance to document any visitors to the site"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 15 acceptable points under \"Site access\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
+  "id": "cons-2023-hl-q2-b-using-a-ladder",
+  "topicId": "cons-1-8",
+  "conceptId": "best-practice-guidelines-on-site-using-a-ladder",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2023 HL Q2(b) — Using a ladder",
+  "questionText": "Using notes and freehand sketches, outline two specific best practice guidelines that should be observed for each of the following on a construction site: • using a ladder.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 8",
+   "answer": 2,
+   "ofParts": 10,
+   "perPart": 8
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "cons-2023-hl-q2-b-using-a-ladder-r1",
+    "kind": "anyN",
+    "verbatim": "Using a ladder",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "Using a ladder",
+    "group": {
+     "claimMax": 2,
+     "perOption": 8,
+     "options": [
+      "A ladder should only be used after a risk assessment has been undertaken and the associated risks are deemed low and the duration of use, short",
+      "A pre-use check should be carried out on the ladder prior to use and at the beginning of each day",
+      "The 1-in-4 rule should be used to ensure the ladder is at the safest angle. This is where the ladder should be one unit of measurement out for every four units up (a 74o angle)",
+      "The ladder should be secured at the bottom and top if it is going to be a permanent structure on site to go between scaffolding levels",
+      "A ladder should only be used on firm level ground. The ladder should be secured to prevent it from slipping either outwards or sideways",
+      "The location of overhead power lines should be noted. No work within 6 m horizontally of any overhead power line unless it has been made dead",
+      "If the task requires being on the ladder for 30 minutes or more, alternative equipment should be used",
+      "The ladder should extend at least 1 metre or three rungs above where the operator is working",
+      "Always maintain three points of contact when climbing or descending",
+      "When carrying something it is essential that the free hand should always be placed on the underside of the ladder uprights. This technique has the advantage of allowing the individual to slide their free hand along the upright which maintains contact with the ladder while climbing or descending"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 15 acceptable points under \"Site access\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
   "id": "cons-2023-hl-q2-c",
   "topicId": "cons-1-8",
   "conceptId": "why-a-site-needs-a-safety-statement",
@@ -15172,6 +17125,59 @@
   "notes": ""
  },
  {
+  "id": "cons-2023-hl-q4-a",
+  "topicId": "cons-1-1",
+  "conceptId": "features-of-vernacular-irish-architecture",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2023 HL Q4(a)",
+  "questionText": "Discuss in detail, using notes and freehand sketches, three features of vernacular Irish architecture evident in the cottage shown.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "6 x 5",
+   "answer": 6,
+   "ofParts": 14,
+   "perPart": 5
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "cons-2023-hl-q4-a-r1",
+    "kind": "anyN",
+    "verbatim": "Discuss in detail, using notes and freehand sketches, three features of vernacular Irish architecture evident in the cot",
+    "marks": 30,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 6,
+     "perOption": 5,
+     "options": [
+      "Single storey structure with a steep pitched simple form roof",
+      "The position of the chimney relative to the front door identified the two types of vernacular dwelling found throughout the Irish landscape. (Direct Entry Type cottage and Lobby Entry Type cottage)",
+      "The proximity of the two chimneys to the front door shown in the graphic suggests this is a Direct Entry Type dwelling",
+      "Rectangular, narrow and one room deep. Narrow design was due to the scarcity of timber for roofing",
+      "Main entrance and window openings placed on the long elevation of the dwelling. These were relatively small in scale which helped to minimise weakening the walls",
+      "A centrally placed chimney to provide heat, meal preparations and an evening communal gathering point for the occupants",
+      "A half-door construction or half door placed outside the full door rather than the door cut in half. For protection from the weather",
+      "Vernacular cottages were built of local stone. In most circumstances these external stone walls would be rendered in a lime render, inside and out",
+      "Uncoursed, random rubble stonework was generally rendered",
+      "Coursed, random rubble stonework was generally left exposed and very much higher quality stonework",
+      "Lime render is breathable and facilitated rain-soaked walls to release the trapped moisture to the outside",
+      "The external walls were whitewashed with lime wash every few years hence the Irish landscape was dotted with such whitewashed buildings Uncoursed random rubble",
+      "Lime wash is caustic, and will burn skin if in contact. It was used stonework because it was cheap, readily available and had the ability to act as a disinfectant",
+      "Windows were timber & typically sash type frames with wide interior cills due to the thickness of the walls"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 21 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
   "id": "cons-2023-hl-q4-b",
   "topicId": "cons-1-2",
   "conceptId": "refurbishing-an-old-cottage",
@@ -15257,6 +17263,112 @@
    }
   ],
   "notes": ""
+ },
+ {
+  "id": "cons-2023-hl-q6-a",
+  "topicId": "cons-6-3",
+  "conceptId": "design-features-for-low-environmental-impact",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2023 HL Q6(a)",
+  "questionText": "With reference to the design shown, discuss using notes and freehand sketches, three features of the design that contribute to the house having a low environmental impact.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "6 x 5",
+   "answer": 6,
+   "ofParts": 14,
+   "perPart": 5
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "cons-2023-hl-q6-a-r1",
+    "kind": "anyN",
+    "verbatim": "Three feature of the design that contribute to the house having a low environment impact",
+    "marks": 30,
+    "openList": true,
+    "contextNote": "Three feature of the design that contribute to the house having a low environment impact",
+    "group": {
+     "claimMax": 6,
+     "perOption": 5,
+     "options": [
+      "Any reference, a note or sketch, that correctly identifies the orientation of the given building",
+      "Timber frame construction from local sources which reduces transport movements; has lower carbon emissions and a reduction in localised air pollution",
+      "Less embodied energy required to produce timber frame construction compared to a double leaf, concrete block, cavity wall construction design detail",
+      "Locally sourced timber cladding Irish Larch, Cedar, Douglas Fir - from FSC certified forests are lower in embodied energy than imported timber & suitable for a low environmental building",
+      "Locally sourced timber contributes to carbon sequestration (creates a carbon store/sink) in direct contrast to concrete production",
+      "The house has large south facing glazed openings which fill all main living spaces with natural light – Narrow, one room wide spaces",
+      "Reduced use of electric light bulbs – power generated currently predominantly using fossil fuels",
+      "The heat from the sun entering through the large openings reduces the need for using non- renewable methods of heating theses spaces",
+      "Small, high-performance windows/glazing on the north side reduces heat loss and saves energy",
+      "Simple building form that takes advantage of the orientation of the sun",
+      "High levels of insulation in the floor, walls and roof construction",
+      "One room deep design enables light and heat from solar gain to enter the single space building via the south, east, and west",
+      "High-performance glazing throughout the dwelling - having a U-value of at least 0.8 w/m2 k - will significantly reduce heating costs",
+      "L-Shape design takes advantage of the buildings orientation and allows light to enter a greater number of rooms throughout the day. It also provides natural shelter from the wind"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 18 acceptable points under \"Three feature of the design that contribute to the house having a low environment impact\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
+  "id": "cons-2023-hl-q6-b",
+  "topicId": "cons-6-3",
+  "conceptId": "reducing-operational-energy-demand",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2023 HL Q6(b)",
+  "questionText": "Reducing operational energy demand is an important consideration in designing for low environmental impact. Using notes and freehand sketches, discuss in detail each of the following technologies and how each would further reduce the energy demand of the house: • photovoltaic panels • air-to-water heat pump • evacuated tubes.",
+  "stem": "The scheme groups its answer under: Photovoltaic panels; May 1st 2023 3; Air-to-water heat pump; Evacuated Tubes",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "6 x 3",
+   "answer": 6,
+   "ofParts": 14,
+   "perPart": 3
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "cons-2023-hl-q6-b-r1",
+    "kind": "anyN",
+    "verbatim": "Reducing operational energy demand is an important consideration in designing for low environmental impact. Using notes ",
+    "marks": 18,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 6,
+     "perOption": 3,
+     "options": [
+      "Solar energy can be turned into electricity using photovoltaic (PV) panels, which converts solar energy/light into electrical energy using silicon cells",
+      "Photovoltaic panels are becoming more economic for domestic electricity generation with the introduction of a zero rate of VAT for the supply and installation of 1 panels for private dwellings since",
+      "PV cells produce direct current (DC). An inverter converts the DC 4 voltage from the panel into alternating current (AC) which is used in homes",
+      "Photovoltaic panels reduce the use of mains electricity, currently largely generated using fossil fuels, by replacing some of the mains 1. Photovoltaic panel power electricity from renewable sources 2. Inverter",
+      "3. Generation meter Average annual consumption of electricity per household is 4.7 kW. 4. Fuse box An area of 21.0 m2 of photovoltaic panels produces on average 3.12 5. Smart meter kW of electricity per annum",
+      "Microgeneration schemes allows homeowners sell any excess electricity back to Ireland’s National grid",
+      "The Air to Water (ATW) system has an outdoor unit. Using a fan, the unit takes heat from the air outside and transfers the heat to a coolant liquid which circulated in a closed pipe system",
+      "A compressor further increases the temperature of the coolant liquid which transfers the heat to a hot water tank via a heat exchanger",
+      "The cooled coolant then returns to the outdoor unit to begin the cycle again",
+      "Meanwhile, the newly heated water in the tank is circulated in a separate system to radiators or underfloor heating pipes, heating the house or fused for domestic hot water",
+      "Currently Air to Water heat pumps have a “Co-efficiency of Performance” (C.O.P.) of between 3 - 4",
+      "Solar evacuated tubes are a type of solar thermal technology that converts sunlight into energy for primarily water heating",
+      "The evacuated tubes consist of a glass outer tube and an inner tube with a heat pipe containing a small amount of liquid",
+      "The air between the two tubes is evacuated to create a vacuum, which minimizes heat loss due to convection and conduction"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 20 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
  },
  {
   "id": "cons-2023-hl-q6-c",
@@ -15666,6 +17778,117 @@
    }
   ],
   "notes": ""
+ },
+ {
+  "id": "cons-2023-hl-q10-a",
+  "topicId": "cons-6-3",
+  "conceptId": "passive-house-design",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2023 HL Q10(a)",
+  "questionText": "Using notes and freehand sketches, discuss the importance of any two of the following in Passive House design: • foundation design • solar shading • thermally efficient building envelope. Discuss the above statement in detail.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 x 5 + 1 x 5 + 1 x 5 + 1 x 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "cons-2023-hl-q10-a-r1",
+    "kind": "anyN",
+    "verbatim": "Foundation design",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Foundation design",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Foundation should be highly insulated to achieve a U- value of between 0.1 - 0.15 W/m²K",
+      "No thermal bridges at the wall-floor junction to prevent heat loss and moisture ingress",
+      "Use aerated concrete blocks at critical junctions",
+      "Use insulation that has high compressive strength",
+      "For insulated Passive raft-type foundations, the concrete slab is entirely surrounded by a ‘bowl’ of insulation. The concrete is never in direct contact with the ground",
+      "The type of foundation system used"
+     ]
+    }
+   },
+   {
+    "id": "cons-2023-hl-q10-a-r2",
+    "kind": "anyN",
+    "verbatim": "Solar shading",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Solar shading",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "The lack of solar shading in a Passive house can lead to overheating within the building",
+      "The method should allow sun to enter during winter months when the sun is lower in the sky but block the stronger summer sun, which is at a steeper angle, from entering during the summer months",
+      "Solar shading can be in the form of an overhang or deeper eaves",
+      "Vertical or horizontal brise-soleil are made from individual components set at an angle fixed to the outside of the building",
+      "Mechanical shading such as adjustable brise- soleil, external roller blinds, awnings and sliding screens can be adjusted and used to control solar gain at different times of the day and year",
+      "A brise-soleil can be any material ranging from metal, plastic or timber",
+      "Internal blinds and shades will reduce solar gain but will also impact the level of natural light entering the building",
+      "Natural vegetation can be effective, environmentally friendly and aesthetically pleasing and come in the form of trees or climbing plants"
+     ]
+    }
+   },
+   {
+    "id": "cons-2023-hl-q10-a-r3",
+    "kind": "anyN",
+    "verbatim": "Thermal efficient building envelope (TEBE)",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Thermal efficient building envelope (TEBE)",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "The envelope of a building is where the passing of energy occurs",
+      "Where a building envelope has been designed to be airtight and thermally efficient, a continuous red Line is shown on the internal side of the external wall on drawings",
+      "All components of the building’s envelope require to be at their optimum thermal performance including foundations, walls, windows and roof",
+      "There should be no break in insulation or airtightness around the entire building",
+      "By reducing the amount of energy that passes through the external envelope, the internal building temperature is more constant and predictable",
+      "The greater the efficiency of the building envelope, the more energy efficient the building",
+      "A TEBE reduces the reliance on the MHRV system to heat or cool the building",
+      "TEBE reduces the energy consumption and costs, but it also gives the homeowner better control over the internal temperature, which increases occupant comfort",
+      "Less energy is needed to heat or cool the building therefore reducing the buildings carbon footprint",
+      "Universal Design caters for changing needs of people over time so that they can continue living in their own homes and communities as they get older or become disabled",
+      "People of diverse abilities should be able to use buildings and places comfortably and safely, as far as possible without special assistance",
+      "Given the diversity of the population, a Universal Design approach, which caters for the broadest range of users from the outset, can result in buildings and places that can be used and enjoyed by everyone and for their entire life",
+      "The proportion of the world’s population aged over 65 is set to more than double by 2050",
+      "Design focussed on principles of extending standard design to a person with some type of performance limitation is to maximize the number of potential people who can readily use a building for the entirety of their life"
+     ]
+    }
+   },
+   {
+    "id": "cons-2023-hl-q10-a-r4",
+    "kind": "anyN",
+    "verbatim": "Older People (NCAOP)",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Older People (NCAOP)",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Benefits of Universal Design include flexibility and ease of adaptability to meet people’s changing needs over time in a cost and energy effective way",
+      "Homes built with Universal Design in mind can create an enabling home environment for the widest possible number of people by providing opportunities for easy adaptations"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 22 acceptable points under \"Thermal efficient building envelope (TEBE)\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
  },
  {
   "id": "cons-2023-hl-q10-c",
@@ -16140,6 +18363,59 @@
   "notes": ""
  },
  {
+  "id": "cons-2023-ol-q5-a",
+  "topicId": "cons-3-10",
+  "conceptId": "vertical-section-wall-and-flat-roof-eaves",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2023 OL Q5(a)",
+  "questionText": "To a scale of 1:5, draw a vertical section through the external wall and the eaves of the flat roof. On your drawing, show the typical construction details from a level 450 mm below the wallplate, through the external wall and eaves. Show 900 mm length of roof joist.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "8 x 5",
+   "answer": 8,
+   "ofParts": 14,
+   "perPart": 5
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "cons-2023-ol-q5-a-r1",
+    "kind": "anyN",
+    "verbatim": "Specification – typical detail",
+    "marks": 40,
+    "openList": true,
+    "contextNote": "Specification – typical detail",
+    "group": {
+     "claimMax": 8,
+     "perOption": 5,
+     "options": [
+      "19 mm external render",
+      "Concrete block outer leaf 100 mm",
+      "Full fill insulated cavity 200 mm",
+      "Wall tie",
+      "Concrete block inner leaf 100 mm",
+      "15 mm internal plaster",
+      "100 mm × 75 mm wall plate",
+      "Cavity closer",
+      "Waterproof membrane",
+      "150 mm insulation",
+      "Breather membrane",
+      "20 mm plywood decking",
+      "Firring piece",
+      "200 × 50 mm insulated ceiling joist"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 17 acceptable points under \"Specification – typical detail\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
   "id": "cons-2023-ol-q6-a",
   "topicId": "cons-9-4",
   "conceptId": "safety-in-the-construction-studies-room",
@@ -16321,6 +18597,112 @@
    }
   ],
   "notes": ""
+ },
+ {
+  "id": "cons-2023-ol-q7-b",
+  "topicId": "cons-1-1",
+  "conceptId": "laying-out-a-utility-room",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2023 OL Q7(b)",
+  "questionText": "Draw a large freehand sketch of the given design and show your preferred location for each of the following in the utility room: • sink • washing machine • storage units • seating / boot area. Give one reason for selecting each location.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 x 5",
+   "answer": 4,
+   "ofParts": 14,
+   "perPart": 5
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "cons-2023-ol-q7-b-r1",
+    "kind": "anyN",
+    "verbatim": "Draw a large freehand sketch of the given design and show your preferred location for each of the following in the utili",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "sink",
+      "washing machine",
+      "storage units",
+      "seating / boot area",
+      "Located close to window to allow natural light access to work area",
+      "Located by window to allow user to have a view of the outdoors",
+      "Located on an external wall for ease of connection to wastewater disposal washing machine",
+      "Located on an external wall for ease of wastewater disposal",
+      "Access to electrical sockets",
+      "Located on external wall for access to water supply storage units",
+      "Located by wall to prevent blocking occupants entering and exiting the home",
+      "Located by wall so the units can be supported and attached for strength and stability",
+      "Located close to the washing machine to allow storage of laundry and washing detergents seating / boot area",
+      "Located by a wall to allow the seating to be fixed securely to it"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme awards 28 marks for this part. The 20 on this card are the marks it states answers for; the other 8 go to Sketch (8) — the drawing itself and anything the scheme prices without saying what earns it. The scheme lists 16 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
+  "id": "cons-2023-ol-q9-a",
+  "topicId": "cons-3-7",
+  "conceptId": "choosing-a-material-for-a-front-door",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2023 OL Q9(a)",
+  "questionText": "Specify a suitable material for a new front door, and give two reasons for your choice.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 x 4",
+   "answer": 3,
+   "ofParts": 14,
+   "perPart": 4
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "cons-2023-ol-q9-a-r1",
+    "kind": "anyN",
+    "verbatim": "Suitable material for front door",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Suitable material for front door",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Cedar",
+      "Larch",
+      "Oak",
+      "Teak",
+      "uPVC",
+      "Aluminium Two reasons for your choice",
+      "Durability",
+      "Some wood species don’t require preservative treatment due to natural oils",
+      "Naturally resistant to insect attack",
+      "Naturally resistant to moisture",
+      "Aluminium and uPVC don’t require regular maintenance",
+      "Install ramp to main entrance of a slope 1:20. (minimum width 1200 mm) with a level landing pad turning circle at the entrance",
+      "Remove driveway material that may cause trips and falls and install a smooth slip resistant material. Patterned concrete, paving stones, tarmacadam",
+      "Glass panel to observe who is at the door"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 18 acceptable points under \"Suitable material for front door\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
  },
  {
   "id": "cons-2023-ol-q9-c",
@@ -17762,6 +20144,103 @@
   "notes": ""
  },
  {
+  "id": "cons-2024-hl-q10-b-indoor-air-quality",
+  "topicId": "cons-6-3",
+  "conceptId": "improvements-when-upgrading-a-dwelling-indoor-air-quality",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2024 HL Q10(b) — Indoor air quality",
+  "questionText": "Using notes and freehand sketches, discuss in detail how each of the following could be improved, when upgrading an existing building to meet the EnerPHit standard: • indoor air quality. Propose three best practice guidelines when selecting materials at the design and construction stages, to reduce the whole of life carbon impact of a dwelling house.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 6",
+   "answer": 2,
+   "ofParts": 5,
+   "perPart": 6
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "cons-2024-hl-q10-b-indoor-air-quality-r1",
+    "kind": "anyN",
+    "verbatim": "Indoor air quality",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Indoor air quality",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "EnerPHit buildings benefit from mechanical ventilation with heat recovery systems (MVHR). These systems ensure a constant supply of fresh air while recovering heat from exhausted air, maintaining energy efficiency. Regular maintenance and filter changes are crucial in keeping systems effective and to ensure fresh air circulation",
+      "Selecting building materials, finishes, and furnishing that have low levels of volatile organic compounds (VOCs) and other pollutants can significantly improve indoor air quality. This includes paints, adhesives, sealants, and flooring materials designed to emit minimal toxins",
+      "Maintaining optimal humidity levels (between 30-50%) helps prevent mould growth which can degrade the indoor air quality. EnerPHit buildings often incorporate humidity-controlled ventilation to keep humidity within this ideal range, especially in bathrooms and kitchens",
+      "Continuous monitoring of indoor air quality through sensors and regular maintenance of ventilation systems ensure issues are identified and addressed promptly",
+      "Install glazed manual openings in all rooms so that air can naturally circulate bringing in fresh air from the outside and removing stale moist air from the inside"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 17 acceptable points under \"Space heating\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
+  "id": "cons-2024-hl-q10-b-space-heating",
+  "topicId": "cons-6-3",
+  "conceptId": "improvements-when-upgrading-a-dwelling-space-heating",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2024 HL Q10(b) — Space heating",
+  "questionText": "Using notes and freehand sketches, discuss in detail how each of the following could be improved, when upgrading an existing building to meet the EnerPHit standard: • space heating. Propose three best practice guidelines when selecting materials at the design and construction stages, to reduce the whole of life carbon impact of a dwelling house.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 6",
+   "answer": 2,
+   "ofParts": 14,
+   "perPart": 6
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "cons-2024-hl-q10-b-space-heating-r1",
+    "kind": "anyN",
+    "verbatim": "Space heating",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Space heating",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Upgrading the insulation in the building envelope is fundamental. High quality continuous insulation in walls, roofs, and floors reduces heat loss",
+      "Installing high performing glazing and doors with low U-values minimises heat loss. Properly sealing all openings will ensure the elimination of drafts at the junction of components. This will reduce load and demand on space heating source",
+      "Implementing highly efficient heating systems, such as air-source or ground-source heat pumps, will significantly improve space heating efficiency. Heat pumps run at a 5:1 co-efficiency of performance",
+      "Using mechanical ventilation with heat recovery ensures heat from outgoing stale air is transferred to incoming fresh air. This reduces the need and demand on additional heating, maintaining a comfortable indoor environment with minimal energy use",
+      "Maximising solar gains through passive solar design helps reduce the load on active heating. This involves strategically placing glazing to capture sunlight during winter and using thermal mass materials to store and slowly release heat. Ensuring proper shading and glazing treatments can prevent overheating during warmer months, maintaining a balanced 20 °C indoor temperature",
+      "Use PHribbon package to calculate the total cradle-to-grave carbon emitted of constructing new dwellings",
+      "Use only products with Environmental Product Declarations (EPD)",
+      "The hierarchy for waste management is: Reduce, Reuse, Recycle. Leaner production can reduce the amount of raw materials used",
+      "Good architectural and structural design, including use of standard sizes can reduce the amount of material needed and resulting waste in construction",
+      "Planning for disassembly at end of building life, allows reuse or recycling. The use of a site waste management plan encourages the contractors and designers to consider all of these issues from the earliest stages of a building project",
+      "To enable products and buildings to become more circular, it is important to consider how they are designed. Important considerations for products include designing for disassembly, the potential for standardisation and modularity, the use of secondary materials, avoiding the use of hazardous and composite materials which may hinder reuse and recycling opportunities",
+      "For buildings, the way the products are assembled and connected together is important. Using mechanical fixings rather than bonding is preferable, as is making sure that shorter lived products are accessible and are not enclosed by longer life material",
+      "Designing for flexibility and adaptability (both in function and form) to enable components and buildings to be used for longer, which avoids the need for new resources",
+      "Government and local authorities should support and actively encourage the re-use and repurposing of existing buildings"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 17 acceptable points under \"Space heating\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
   "id": "cons-2024-hl-q1-b",
   "topicId": "cons-6-5",
   "conceptId": "ventilation-detailing-in-a-roof",
@@ -17915,6 +20394,39 @@
       "Advantage 2 (2 for point, 4 for discussion)"
      ]
     }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2024-ol-q1-b",
+  "topicId": "cons-3-8",
+  "conceptId": "securing-a-wallplate-to-an-external-wall",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2024 OL Q1(b)",
+  "questionText": "On your drawing, show how the wallplate is secured to the external wall.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "cons-2024-ol-q1-b-r1",
+    "kind": "point",
+    "verbatim": "Wallplate strap clearly identified",
+    "marks": 4,
+    "openList": true,
+    "contextNote": ""
    }
   ],
   "notes": ""
@@ -18332,6 +20844,59 @@
    }
   ],
   "notes": ""
+ },
+ {
+  "id": "cons-2024-ol-q7-b",
+  "topicId": "cons-1-1",
+  "conceptId": "laying-out-a-converted-attic",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2024 OL Q7(b)",
+  "questionText": "Draw a large freehand sketch of the given design and show your preferred location for each of the following in the attic bedroom: • access to en suite • double bed • clothes storage unit • study space.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 x 5",
+   "answer": 4,
+   "ofParts": 14,
+   "perPart": 5
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "cons-2024-ol-q7-b-r1",
+    "kind": "anyN",
+    "verbatim": "Draw a large freehand sketch of the given design and show your preferred location for each of the following in the attic",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "access to en-suite",
+      "double bed",
+      "clothes storage unit",
+      "study space",
+      "Located by shower to allow user more room inside the en suite",
+      "Located by shower providing more wall space in the bedroom for storage etc",
+      "Located opposite the sink providing more privacy away from the bed double bed",
+      "Located against wall with room for bedside tables",
+      "Access to electrical sockets and light switch",
+      "Located away from eaves for head height clothes storage unit",
+      "Located by wall to allow adequate space for the bed and to circulate",
+      "Located by wall so the units can be supported and attached for strength and stability",
+      "Located in alcove to make use of underutilised space study area",
+      "Located away from the bed to create a different zone within the bedroom"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme awards 28 marks for this part. The 20 on this card are the marks it states answers for; the other 8 go to Sketch (8) — the drawing itself and anything the scheme prices without saying what earns it. The scheme lists 16 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
  },
  {
   "id": "cons-2024-ol-q9-b",
@@ -19801,6 +22366,59 @@
   "notes": "The scheme awards 34 marks for this part. The 30 on this card are the marks it states answers for; the other 4 go to Cable size (1) and colour (3) (4) — the drawing itself and anything the scheme prices without saying what earns it."
  },
  {
+  "id": "cons-2025-hl-q9-c",
+  "topicId": "cons-5-8",
+  "conceptId": "reducing-household-electricity-consumption",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2025 HL Q9(c)",
+  "questionText": "Discuss two approaches that homeowners could take to reduce the consumption of electricity in the home.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 5",
+   "answer": 2,
+   "ofParts": 14,
+   "perPart": 5
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "cons-2025-hl-q9-c-r1",
+    "kind": "anyN",
+    "verbatim": "Two approaches to reduce electrical consumption in a domestic dwelling",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Two approaches to reduce electrical consumption in a domestic dwelling",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Low wattage LED bulbs to minimise electricity used",
+      "Using sensor lights outside the dwelling so lights only turn on when they are being used",
+      "Motion sensor lights in unoccupied rooms",
+      "Smart lightbulbs which can be controlled from an app on a smartphone or other device",
+      "Using A rated appliances or higher",
+      "Timer switches on outside lights to prevent lights being left on all night",
+      "Separate lighting circuits in open plan rooms",
+      "Only turning on lights as required",
+      "Use smart metering to provide the occupants with insights on their electricity usage",
+      "Under counter sockets on isolator switches e.g. washing machine socket is on an isolator switch so that it can be easily turned off when not in use",
+      "Using bright paint and light-coloured surfaces to reflect natural light around the room to minimise the need for artificial lights",
+      "Awareness of ‘Vampire load’ or ‘phantom load’ where appliances or electronic devices draw power when switched off but may be in standby mode such as TV’s, appliances that incorporate a digital clock",
+      "Where using electricity to heat the home, consider dropping thermostat to reduce power consumption",
+      "Increased levels of insulation to reduce heat loss"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 15 acceptable points under \"Two approaches to reduce electrical consumption in a domestic dwelling\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
+ },
+ {
   "id": "cons-2025-hl-q10-a-building-form",
   "topicId": "cons-6-3",
   "conceptId": "passive-house-design-building-form",
@@ -20183,6 +22801,59 @@
    }
   ],
   "notes": ""
+ },
+ {
+  "id": "cons-2025-ol-q3-a",
+  "topicId": "cons-5-3",
+  "conceptId": "pipework-for-a-heating-system",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2025 OL Q3(a)",
+  "questionText": "Draw a large freehand sketch of the given house and, on your sketch, show the pipework necessary to supply hot water from the stove to the radiators and to heat the water in the cylinder.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "8 x 5",
+   "answer": 8,
+   "ofParts": 14,
+   "perPart": 5
+  },
+  "totalMarks": 40,
+  "rows": [
+   {
+    "id": "cons-2025-ol-q3-a-r1",
+    "kind": "anyN",
+    "verbatim": "Typical details",
+    "marks": 40,
+    "openList": true,
+    "contextNote": "Typical details",
+    "group": {
+     "claimMax": 8,
+     "perOption": 5,
+     "options": [
+      "15mm rising main",
+      "Stop valve",
+      "Insulated storage tank",
+      "Expansion tank / vessel",
+      "Stove",
+      "Cold feed to stove",
+      "250 l cylinder",
+      "Ø22 mm primary flow to cylinder",
+      "Ø22 mm primary return to stove",
+      "Hot feed from cylinder",
+      "Ø22 mm expansion pipe",
+      "Radiators",
+      "Ø22 mm flow to radiators",
+      "Ø22 mm return from radiators"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 15 acceptable points under \"Typical details\"; the 14 shown here are the first it prints. Any other valid point earns the same marks."
  },
  {
   "id": "cons-2025-ol-q3-b",
@@ -20641,6 +23312,59 @@
    }
   ],
   "notes": ""
+ },
+ {
+  "id": "cons-2025-ol-q7-b",
+  "topicId": "cons-1-1",
+  "conceptId": "laying-out-a-garden-office",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2025 OL Q7(b)",
+  "questionText": "Draw a large freehand sketch of the given design and show your preferred location for each of the following in the garden office:  corner desk  two windows  bookcase unit  seating area.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 x 5",
+   "answer": 4,
+   "ofParts": 14,
+   "perPart": 5
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "cons-2025-ol-q7-b-r1",
+    "kind": "anyN",
+    "verbatim": "Draw a large freehand sketch of the given design and show your preferred location for each of the following in the garde",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 4,
+     "perOption": 5,
+     "options": [
+      "corner desk",
+      "two windows",
+      "bookcase unit",
+      "seating area",
+      "Located close to a window for a view",
+      "Located in the brightest area of the office close to a window",
+      "Located away from the door for ease of entry two windows",
+      "Located close to the desk to provide a view while working",
+      "Located at the front to see people as they approach",
+      "Located on two different walls to provide dual aspect bookcase unit",
+      "Located on the back wall to allow adequate space for the desk",
+      "Located near the seating area for convenience when reading",
+      "Located away from the windows to not obstruct the light seating area",
+      "Located away from the desk to create a different zone within the office"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme lists 16 acceptable points; the 14 shown here are the first it prints. Any other valid point earns the same marks."
  },
  {
   "id": "cons-2025-ol-q7-c-advantage",

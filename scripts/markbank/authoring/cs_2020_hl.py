@@ -35,7 +35,8 @@ PLAN = [
     (10, 'a', 'cons-1-1', 'considerations-should-taken-into-account-when'),
     (10, 'c', 'cons-1-2', 'advantages-installing-mvhr-system-into-domestic'),
     (7, 'a', 'cons-5-3', 'vertical-section-through-ground-floor-hearth'),
-    (4, 'b', 'cons-1-1', 'proposed-external-design-house-located-this'),]
+    (4, 'b', 'cons-1-1', 'proposed-external-design-house-located-this'),
+    (9, 'b', 'cons-8-3', 'partitions-are-standard-timber-stud-construction'),]
 
 for q, letter, topic, concept in PLAN:
     try:

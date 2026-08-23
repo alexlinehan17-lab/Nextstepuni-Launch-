@@ -29,7 +29,12 @@ PLAN = [
     (10, 'c', 'cons-1-2', 'advantages-disadvantages-making-passive-house-standard'),
     (4, 'c', 'cons-1-1', 'advantages-disadvantages-building-off-houses-irish'),
     (6, 'a', 'cons-6-3', 'features-design-contribute-house-having-low'),
-    (10, 'b', 'cons-6-3', 'passive-house-shown-overheats-summer-reasons'),]
+    (10, 'b', 'cons-6-3', 'passive-house-shown-overheats-summer-reasons'),
+    (6, 'b', 'cons-1-1', 'meet-nearly-zero-energy-building-nzeb'),
+    (6, 'c', 'cons-1-1', 'advantages-generating-renewable-energy-site'),
+    (7, 'a', 'cons-3-8', 'vertical-section-through-chimney-stack-roof'),
+    (8, 'a', 'cons-1-1', 'advantages-disadvantages-refurbishing-storeroom-use-home'),
+    (9, 'c', 'cons-1-1', 'features-could-incorporated-into-design-lighting'),]
 
 for q, letter, topic, concept in PLAN:
     try:

@@ -34,7 +34,8 @@ PLAN = [
     (8, None, 'cons-2-4', 'explain-five-stud-partition-domino-joint'),
     (9, 'a', 'cons-1-1', 'reasons-why-homeowner-would-build-extension'),
     (9, 'b', 'cons-7-4', 'modifications-extension-would-allow-more-natural'),
-    (9, 'c', 'cons-7-4', 'advantages-occupants-increasing-amount-natural-light'),]
+    (9, 'c', 'cons-7-4', 'advantages-occupants-increasing-amount-natural-light'),
+    (1, 'b', 'cons-1-1', 'typical-design-detailing-prevent-dampness-entering'),]
 
 for q, letter, topic, concept in PLAN:
     try:

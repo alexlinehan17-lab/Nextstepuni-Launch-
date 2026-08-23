@@ -30,7 +30,18 @@ PLAN = [
     (8, 'c', 'cons-5-3', 'design-considerations-should-taken-into-account'),
     (9, 'c', 'cons-6-2', 'design-prevent-air-leakage-junction-stud'),
     (10, 'c', 'cons-6-4', 'preferred-orientation-upgraded-design-include-sun'),
-    (4, 'b', 'cons-1-3', 'extract-from-site-location-map-shown'),]
+    (4, 'b', 'cons-1-3', 'extract-from-site-location-map-shown'),
+    (1, 'a', 'cons-3-8', 'vertical-section-through-porch-showing-external'),
+    (2, 'a', 'cons-1-8', 'possible-safety-risk-associated-tasks-construction'),
+    (2, 'b', 'cons-1-8', 'risk-discussed-above-best-practice-guidelines'),
+    (3, 'b', 'cons-1-1', 'proposed-design-layout-extension-necessary-modifications'),
+    (6, 'c', 'cons-6-3', 'suggest-modifications-existing-design-would-further'),
+    (7, 'a', 'cons-4-3', 'vertical-section-through-portion-external-wall'),
+    (8, 'a', 'cons-5-2', 'single-line-diagram-typical-design-layout'),
+    (8, 'b', 'cons-1-8', 'features-ensure-system-operates-safely-all'),
+    (9, 'a', 'cons-3-9', 'functional-requirements-attic-space-use-bedroom'),
+    (9, 'b', 'cons-3-9', 'traditional-cut-roof-which-slated-has'),
+    (10, 'a', 'cons-6-3', 'importance-passive-house-design-space-heating'),]
 
 for q, letter, topic, concept in PLAN:
     try:

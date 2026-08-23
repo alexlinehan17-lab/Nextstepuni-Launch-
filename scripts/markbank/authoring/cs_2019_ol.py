@@ -33,7 +33,8 @@ PLAN = [
     (9, 'a', 'cons-3-3', 'wood-external-cladding-reasons-choice'),
     (9, 'b', 'cons-1-1', 'home-office-modified-provide-greater-views'),
     (9, 'c', 'cons-1-1', 'advantages-home-office-user-increasing-visual'),
-    (1, 'b', 'cons-3-6', 'clearly-typical-design-detailing-ensure-cavity'),]
+    (1, 'b', 'cons-3-6', 'clearly-typical-design-detailing-ensure-cavity'),
+    (7, 'a', 'cons-1-1', 'given-design-preferred-location-kitchen-area'),]
 
 for q, letter, topic, concept in PLAN:
     try:
