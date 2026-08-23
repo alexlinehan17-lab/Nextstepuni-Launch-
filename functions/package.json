@@ -9,7 +9,7 @@
     "provision:admin": "node scripts/set-admin-claim.mjs"
   },
   "engines": {
-    "node": "20"
+    "node": "22"
   },
   "dependencies": {
     "firebase-admin": "^14.3.0",

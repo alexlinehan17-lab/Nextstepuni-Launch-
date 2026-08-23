@@ -7,8 +7,8 @@
 import { initializeApp } from "firebase/app";
 import { initializeAuth, browserSessionPersistence, indexedDBLocalPersistence } from "firebase/auth";
 import { initializeFirestore, memoryLocalCache } from "firebase/firestore";
-import { initializeAppCheck, ReCaptchaEnterpriseProvider } from "firebase/app-check";
 import { Capacitor } from "@capacitor/core";
+import { configureFirebaseAppCheck } from "./firebaseAppCheck";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -24,19 +24,15 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-// App Check is activated when the console-provisioned Enterprise site key is
-// supplied at build time. Cloud Functions enforcement is independently gated
-// by ENFORCE_APP_CHECK so providers can be rolled out and observed before the
-// backend begins rejecting unattested clients.
+// Web App Check activates when the console-provisioned Enterprise site key is
+// supplied at build time. Native shells use their registered App Attest / Play
+// Integrity providers instead. Cloud Functions enforcement is independently
+// gated by ENFORCE_APP_CHECK so every client can be observed before the backend
+// begins rejecting unattested traffic.
 const appCheckSiteKey = (import.meta as unknown as {
   env?: Record<string, string | undefined>;
 }).env?.VITE_FIREBASE_APPCHECK_SITE_KEY;
-if (!Capacitor.isNativePlatform() && appCheckSiteKey) {
-  initializeAppCheck(app, {
-    provider: new ReCaptchaEnterpriseProvider(appCheckSiteKey),
-    isTokenAutoRefreshEnabled: true,
-  });
-}
+configureFirebaseAppCheck(app, appCheckSiteKey);
 
 // Export the necessary Firebase services to be used throughout the app.
 //

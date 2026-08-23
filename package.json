@@ -3,6 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -16,14 +19,15 @@
     "test:rules": "firebase emulators:exec --only firestore,storage \"vitest run --config vitest.rules.config.ts\"",
     "test:all": "npm test && npm run test:rules",
     "cap:sync": "npm run build && npx cap sync && npm run cap:prune",
-    "cap:ios": "npm run build && npx cap copy ios && npm run cap:prune && npx cap open ios",
-    "cap:android": "npm run build && npx cap copy android && npm run cap:prune && npx cap open android",
+    "cap:ios": "npm run build && npx cap sync ios && npm run cap:prune && npx cap open ios",
+    "cap:android": "npm run build && npx cap sync android && npm run cap:prune && npx cap open android",
     "cap:prune": "node scripts/prune-native-assets.mjs"
   },
   "dependencies": {
-    "@capacitor/android": "^8.3.4",
-    "@capacitor/core": "^8.3.4",
-    "@capacitor/ios": "^8.3.4",
+    "@capacitor-firebase/app-check": "^8.4.0",
+    "@capacitor/android": "^8.5.0",
+    "@capacitor/core": "^8.5.0",
+    "@capacitor/ios": "^8.5.0",
     "@capacitor/status-bar": "^8.0.2",
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.4.0",
@@ -50,7 +54,7 @@
     "websocket-driver": "0.7.5"
   },
   "devDependencies": {
-    "@capacitor/cli": "^8.3.4",
+    "@capacitor/cli": "8.4.2",
     "@eslint/js": "^10.0.1",
     "@firebase/rules-unit-testing": "^5.0.0",
     "@testing-library/jest-dom": "^6.9.1",

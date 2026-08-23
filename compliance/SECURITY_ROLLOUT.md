@@ -4,8 +4,9 @@ Status: the hardened backend, Firestore and Storage rules, Functions, Hosting
 release, administrator claim, Authentication password policy, retention
 policies, browser-key restrictions and web App Check registration were rolled
 out to `nextstepuni-app` on 2026-08-23. The keyless deployment workflow has
-completed successfully and the legacy CI credential has been retired. App
-Check enforcement remains deliberately staged as described below.
+completed successfully and the legacy CI credential has been retired. Native
+App Check providers are now registered and integrated, but enforcement remains
+deliberately staged as described below.
 
 The deployed release now fails closed around revoked sessions, server-owned
 roles, peer actions, account deletion and privileged administration.
@@ -35,6 +36,29 @@ Completed:
 - created and registered a score-based reCAPTCHA Enterprise web key for the
   three production domains, configured a one-hour App Check token lifetime,
   and shipped the site-key identifier in the verified production bundle;
+- registered the exact `com.nextstepuni.app` Android and iOS applications with
+  Firebase App Check, using Play Integrity and App Attest respectively, and
+  configured one-hour native token lifetimes;
+- linked Play Integrity to Google Cloud project `52864318610`, registered the
+  Play app-signing certificate and retained the standard licensing,
+  application-integrity and device-integrity verdicts;
+- restricted the Firebase Android key to the Play-signed package, the Firebase
+  iOS key to the exact bundle ID, and both keys to the same six client APIs as
+  the browser key;
+- integrated the native App Check SDK bridge into the Capacitor shell, added
+  the production App Attest entitlement and verified both an unsigned iOS
+  simulator build and a signed iOS device build with that entitlement;
+- moved the Functions runtime and CI test runtime to Node 22, upgraded the
+  pinned GitHub Actions to their current supported majors and added an Android
+  client compile to the required CI gate;
+- rotated the synthetic App Review account password, revoked every existing
+  session, stored the replacement in the local release Keychain entry, updated
+  the private Google Play review instructions and verified the replacement by
+  signing in to the production app as the expected seeded student;
+- re-tested both API-key candidates recoverable from the historical audit
+  commit without logging their values: the exposed Gemini candidate now
+  returns `API_KEY_INVALID`, while the Firebase browser key is separately
+  blocked from the Gemini API because that service is disabled;
 - created the keyless `github-deployer@nextstepuni-app.iam.gserviceaccount.com`
   deployment identity and a Workload Identity Federation provider restricted
   to this repository's immutable owner/repository IDs and `refs/heads/main`;
@@ -62,15 +86,9 @@ Production acceptance evidence:
 Still staged intentionally:
 
 - App Check enforcement remains off for Functions, Firestore and Storage until
-  iOS and Android providers are registered, released and verified in App Check
-  metrics. Enforcing it now would lock out the current native clients.
-- The historical App Review password must be changed by the account owner in a
-  password manager and the private store-review consoles; no replacement
-  credential may be generated or recorded in this repository.
-- The historical Gemini credential identified by the audit is not a credential
-  of the current Firebase project. Its owning provider/project must be
-  identified from the organisation's secret inventory before it can be
-  revoked safely.
+  the newly integrated iOS and Android builds are released and legitimate
+  traffic is verified in App Check metrics. Enforcing it before that evidence
+  would lock out the current native clients.
 
 ## 1. Deploy identity and authorization changes safely
 
@@ -159,16 +177,16 @@ attestation layer, not an authorization replacement.
   to the exact production and preview origins and only the Firebase APIs the
   application uses. Use package/bundle restrictions for native keys and test
   sign-in, callable, Firestore and Storage flows before removing old rules.
-- Revoke the historical Gemini key referenced in the repository's governance
-  history, even though it is no longer in the current bundle. Search provider
-  usage logs for unexpected calls before deletion and issue a new key only if a
-  reviewed server-side feature actually needs one.
+- Treat the historical Gemini key as retired. A provider request on 2026-08-23
+  returned `API_KEY_INVALID`, the current repository has no `.env`, and the
+  live Firebase browser key cannot call the Gemini API. Issue a new key only if
+  a reviewed server-side feature actually needs one.
 - Review GitHub Actions, Firebase and Google Cloud secrets for unused keys and
   remove them after the federated workflow is proven.
-- Immediately rotate the App Review account password that appeared in the
-  previous tracked play-listing/seed script. Keep the replacement only in the
-  release password manager and the private App Store/Play review consoles;
-  repository history cannot be made safe by deleting the current file alone.
+- Keep the rotated App Review credential only in the release password manager
+  and the private App Store/Play review consoles. The 2026-08-23 rotation also
+  revoked all prior sessions and was verified against production; repository
+  history cannot be made safe by deleting the current file alone.
 
 ## 6. Enable automatic retention
 

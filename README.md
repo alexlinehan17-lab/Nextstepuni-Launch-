@@ -4,7 +4,8 @@ Educational web application delivering a study-skills programme to Irish Leaving
 
 ## Run Locally
 
-**Prerequisites:** Node.js
+**Prerequisites:** Node.js 22 or newer (the supported baseline is recorded in
+`.nvmrc`)
 
 1. Install dependencies: `npm install`
 2. Run the app: `npm run dev`
