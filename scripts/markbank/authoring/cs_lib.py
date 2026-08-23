@@ -17,6 +17,7 @@ actually prints, and if neither is there the part is left uncarded:
 Guessing a tariff has been the recurring error of this whole project, five times
 over. There is no argument to this module that lets a caller supply one.
 """
+import collections
 import os
 import re
 import sys
@@ -160,6 +161,28 @@ class Author:
         # Measured at 168 carded against 173 without it. The allowance belongs
         # in _check_total, where it can only widen what is accepted.
         rows = self.S.mark_rows(q, letter)
+        # NARROWLY exclude the presentation band -- "Draughting, accuracy and
+        # scale (excellent, good, fair) 8", "Quality of sketch ... 8" -- and a
+        # bare "Notes"/"Sketches". These are priced but award nothing nameable,
+        # and their odd mark is what stops the rest of the rows reading as a
+        # single same-mark tariff. Restatements are deliberately NOT excluded
+        # here: doing that too was measured at 168 carded against 173.
+        # ...and only where its mark is an OUTLIER. 2022 Ordinary Q4(a) prices
+        # "Note 4" alongside five construction details at 4 each: it is one of
+        # the six answers, not a label, and dropping it priced a 30-mark part
+        # at 20. A presentation row that shares the majority mark is an answer.
+        # ...and only where its mark is one no ANSWER row carries. 2022
+        # Ordinary Q4(a) prices "Note 4" beside five construction details at 4
+        # each -- it is one of the six answers, not a label, and dropping it
+        # priced a 30-mark part at 20. A majority vote cannot decide this: half
+        # these parts have two rows, where there is no majority.
+        def _label(lab):
+            return CS.DRAFTING.search(lab) or self.UNSTATEABLE.match(lab)
+        answer_marks = {mk for lab, mk in rows if not _label(lab)}
+        kept = [(lab, mk) for lab, mk in rows
+                if not _label(lab) or mk in answer_marks]
+        if kept:
+            rows = kept
         scaffold = [(lab, mk) for lab, mk in rows if CS.SCAFFOLD_ROW.match(lab)]
         printed = {int(a or b) for a, b in PART_TOTAL.findall(block)}
 
@@ -485,6 +508,32 @@ class Author:
         self._used.add(cid)
         return self.cards[-1]
 
+    def _answerish_names(self, gs, qtext):
+        """Group names that read like ANSWERS, not section labels.
+
+        2016 Ordinary Q7(b) names its groups "Reduce the transmittance of sound
+        through the stud partition - Notes" and "Plan views". Offered as a
+        card's options they teach nothing, and the count cannot show it -- only
+        reading the emitted options can. Where too few survive, the caller falls
+        through to the bullets underneath, which are the real answer.
+        """
+        out = []
+        for g in gs:
+            n = g[0]
+            if not n or CS.DRAFTING.search(n) or self.UNSTATEABLE.match(n):
+                continue
+            if re.search(r'[-–]\s*(notes?|sketch(es)?)\s*$', n, re.I):
+                continue
+            if re.fullmatch(r'(plan|elevation|section)\s+views?', n, re.I):
+                continue
+            # Deliberately NOT _is_unstateable: a group name SHOULD echo the
+            # question -- it is a sub-topic of it. Testing that rejected
+            # "Safety training", "Ongoing safety training" and "Collective
+            # responsibility" as options for a question about safety training,
+            # and cost four parts that were carding correctly.
+            out.append(n)
+        return out
+
     def _check_total(self, q, letter, total, qtext='', used=None):
         """Returns a note where a NAMED shortfall is allowed, else None."""
         """The card's marks must be the question's marks.
@@ -683,14 +732,17 @@ class Author:
                     # 29-option menu the deck will not show.
                     k = N_WORD[(ANY_N.search(qtext) or ANY_N.search(block)).group(1).lower()]
                     tot_ = n * per
-                    if 0 < k < len(gs) and tot_ % k == 0:
-                        gs = [(None, None, [g[0] for g in gs])]
+                    nm = self._answerish_names(gs, qtext)
+                    if 0 < k < len(gs) and tot_ % k == 0 and len(nm) >= k:
+                        gs = [(None, None, nm)]
                         multi = False
                         self._forced = (k, tot_ // k)
                 elif n < len(gs):
-                    gs = [(None, None, [g[0] for g in gs])]
-                    multi = False
-                    self._forced = (n, per)
+                    nm = self._answerish_names(gs, qtext)
+                    if len(nm) >= n:
+                        gs = [(None, None, nm)]
+                        multi = False
+                        self._forced = (n, per)
         if self._forced is None and self._forced_each is None and not multi and len(gs) > 1:
             merged = [it for _, _, items in gs for it in items]
             names = [n for n, _, _ in gs if n]

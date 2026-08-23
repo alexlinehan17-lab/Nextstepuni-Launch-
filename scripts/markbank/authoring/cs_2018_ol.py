@@ -20,7 +20,14 @@ PLAN = [
     (4, 'a', 'cons-2-4', 'environmental-reason-why-strip-foundation-considered'),
     (6, 'c', 'cons-1-8', 'recommend-other-item-personal-protective-equipment'),
     (7, 'c', 'cons-1-1', 'advantage-storing-rainwater-underground-tank'),
-    (3, 'a', 'cons-5-2', 'wood-burning-stove-back-boiler-shown'),]
+    (3, 'a', 'cons-5-2', 'wood-burning-stove-back-boiler-shown'),
+    (1, 'b', 'cons-1-1', 'typical-design-detailing-prevent-radon-gas'),
+    (2, 'b', 'cons-4-6', 'clearly-steps-followed-applying-surface-finish'),
+    (5, 'b', 'cons-3-10', 'how-roof-ventilated-eaves'),
+    (6, 'b', 'cons-1-8', 'design-feature-above-safety-items-helps'),
+    (7, 'a', 'cons-5-2', 'given-pipework-necessary-collect-rainwater-from'),
+    (7, 'b', 'cons-5-2', 'stored-rainwater-used-flushing-toilet-pipework'),
+    (9, 'a', 'cons-3-3', 'how-blockwork-over-opening-typically-supported'),]
 
 for q, letter, topic, concept in PLAN:
     try:

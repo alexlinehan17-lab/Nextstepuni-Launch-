@@ -1317,6 +1317,19 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2020, level: "higher",
+    paperFileid: "LC029ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Higher Level — © State Examinations Commission.",
+    id: "cons-2020-hl-q4-b", topicId: "cons-1-1", conceptId: "proposed-external-design-house-located-this",
+    section: "B", questionRef: "2020 HL Q4(b)",
+    questionText: "Using notes and freehand sketches, show a proposed external design for a house to be located on this site, which incorporates each of the characteristics discussed at 4(a) above.",
+    tariffModel: {"kind":"bestNofParts","notation":"1 x 4","answer":1,"ofParts":3,"perPart":4}, totalMarks: 4,
+    rows: [
+    { id: "cons-2020-hl-q4-b-r1", kind: "anyN", verbatim: "Using notes and freehand sketches, show a proposed external design for a house to be located on this site, which incorpo", marks: 4, openList: true, group: {"claimMax":1,"perOption":4,"options":["Materials and finishes","Shape and form","Streetscape"]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2021, level: "higher",
     paperFileid: "LC029ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2021 Higher Level — © State Examinations Commission.",

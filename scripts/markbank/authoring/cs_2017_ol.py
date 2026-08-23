@@ -28,7 +28,8 @@ PLAN = [
     (7, 'a', 'cons-1-1', 'method-preventing-floor-joists-from-twisting'),
     (7, 'c', 'cons-3-9', 'advantage-disadvantage-converting-attic-provide-additional'),
     (9, 'a', 'cons-1-1', 'how-fix-wooden-decking-joists-ensure'),
-    (9, 'b', 'cons-1-1', 'recommend-applied-finish-preserve-external-decking'),]
+    (9, 'b', 'cons-1-1', 'recommend-applied-finish-preserve-external-decking'),
+    (1, 'b', 'cons-3-4', 'clearly-how-prevent-penetration-rainwater-head'),]
 
 for q, letter, topic, concept in PLAN:
     try:

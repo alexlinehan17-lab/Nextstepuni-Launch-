@@ -1613,6 +1613,141 @@
   "notes": ""
  },
  {
+  "id": "cons-2016-ol-q1-b",
+  "topicId": "cons-6-2",
+  "conceptId": "typical-design-detailing-prevent-formation-thermal",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2016 OL Q1(b)",
+  "questionText": "On your drawing, show the typical design detailing to prevent the formation of a thermal bridge at the junction of the external wall and the floor.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 x 2",
+   "answer": 1,
+   "ofParts": 5,
+   "perPart": 2
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "cons-2016-ol-q1-b-r1",
+    "kind": "anyN",
+    "verbatim": "On your drawing, show the typical design detailing to prevent the formation of a thermal bridge at the junction of the e",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "No structural connection between inside and outside leaf",
+      "Continuity of insulation- cavity insulation overlaps floor insulation",
+      "Perimeter insulation at floor level",
+      "Inner leaf built with thermal blocks k value - 0.20 W/m/K - from foundation to floor level",
+      "Flexible seal between wall and floor"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2016-ol-q5-b",
+  "topicId": "cons-4-4",
+  "conceptId": "how-baluster-fitted-securely-thread",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2016 OL Q5(b)",
+  "questionText": "On your drawing, show how one baluster is fitted securely to the thread.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 x 2",
+   "answer": 1,
+   "ofParts": 5,
+   "perPart": 2
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "cons-2016-ol-q5-b-r1",
+    "kind": "anyN",
+    "verbatim": "– Show on the drawing how one baluster is fitted securely to the thread",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "– Show on the drawing how one baluster is fitted securely to the thread",
+    "group": {
+     "claimMax": 1,
+     "perOption": 2,
+     "options": [
+      "The end of the baluster or spindle is turned and fitted into the tread or step",
+      "Mortice and tenon joint between baluster and tread",
+      "Dowel fitted into bottom of spindle and tread",
+      "Occasionally dovetail joint between baluster and step",
+      "The joint is covered with a decorative strip of wood"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2016-ol-q7-b",
+  "topicId": "cons-8-3",
+  "conceptId": "separate-annotated-method-would-help-reduce",
+  "level": "ordinary",
+  "year": 2016,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2016 OL Q7(b)",
+  "questionText": "On a separate annotated sketch, show one method that would help reduce the transmittance of sound through the stud partition.",
+  "stem": "The scheme groups its answer under: Reduce the transmittance of sound through the stud partition - Notes; Plan views",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 x 4",
+   "answer": 1,
+   "ofParts": 8,
+   "perPart": 4
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "cons-2016-ol-q7-b-r1",
+    "kind": "anyN",
+    "verbatim": "On a separate annotated sketch, show one method that would help reduce the transmittance of sound through the stud parti",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Filling the space between the studs with mineral wool or fibre glass quilt will give some reduction in airborne sound",
+      "Two layers of 12.5 mm plasterboards or one plasterboard and acoustic board fitted to both sides of the studs. Joints should be staggered, taped and sealed. This helps reduce airborne sound",
+      "Fitting acoustic board or insulation board with battens and 12.5 mm plasterboard to both sides of the studs. This helps reduce impact and airborne sound",
+      "Staggered stud construction with mineral wool or fibre glass insulation between them",
+      "Applying two layers of sound isolation padding tape to every second exposed stud",
+      "Fixing drywall metal channel with sound isolation mounting clips to the studs. The panels are then screwed to the channel in the normal manner",
+      "The gaps at the ceiling, walls and floor are sealed with acoustical caulk",
+      "Black foam tape is used to seal around the door"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "cons-2017-hl-q1-b",
   "topicId": "cons-4-3",
   "conceptId": "typical-design-detailing-cross-ventilation-suspended",
@@ -3407,6 +3542,47 @@
   "notes": ""
  },
  {
+  "id": "cons-2017-ol-q1-b",
+  "topicId": "cons-3-4",
+  "conceptId": "clearly-how-prevent-penetration-rainwater-head",
+  "level": "ordinary",
+  "year": 2017,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2017 OL Q1(b)",
+  "questionText": "Show clearly on your drawing how to prevent the penetration of rainwater at the head of the door.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 x 4",
+   "answer": 1,
+   "ofParts": 2,
+   "perPart": 4
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "cons-2017-ol-q1-b-r1",
+    "kind": "anyN",
+    "verbatim": "Show clearly on your drawing how to prevent the entry of rainwater at the head of the door",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Show clearly on your drawing how to prevent the entry of rainwater at the head of the door",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Inserting Damp Proof Course (DPC) between the inner and the outer leaf",
+      "Damp Proof Course sloping towards the outside"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "cons-2018-hl-q1-b",
   "topicId": "cons-1-1",
   "conceptId": "typical-design-detailing-prevent-ingress-rainwater",
@@ -4400,6 +4576,375 @@
       "22 mm cold feed from expansion tank and 22 mm expansion pipe",
       "Expansion tank and overflow 22 mm min",
       "Valves"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2018-ol-q1-b",
+  "topicId": "cons-1-1",
+  "conceptId": "typical-design-detailing-prevent-radon-gas",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2018 OL Q1(b)",
+  "questionText": "Show on your drawing the typical design detailing to prevent radon gas from entering the rooms through the floor.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 x 4",
+   "answer": 1,
+   "ofParts": 2,
+   "perPart": 4
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "cons-2018-ol-q1-b-r1",
+    "kind": "anyN",
+    "verbatim": "Show on your drawing the typical design detailing to prevent radon gas from entering the rooms through the floor.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Specification – typical details",
+      "Show clearly on your drawing how to prevent radon gas from entering into the rooms"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2018-ol-q2-b",
+  "topicId": "cons-4-6",
+  "conceptId": "clearly-steps-followed-applying-surface-finish",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2018 OL Q2(b)",
+  "questionText": "On your sketch show clearly the steps to be followed in applying a surface finish to the insulation. Specify the materials to be used for the surface finish.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 x 4",
+   "answer": 3,
+   "ofParts": 10,
+   "perPart": 4
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "cons-2018-ol-q2-b-r1",
+    "kind": "anyN",
+    "verbatim": "The surface finish is applied as follows",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "The surface finish is applied as follows",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "The heads of the fixings are filled with the base coat",
+      "A base coat of acrylic plaster A is applied to the surface of the insulation S",
+      "This coat is applied in the same way as traditional plaster",
+      "A reinforcing mesh B is applied to the wet plaster",
+      "Base coat and mesh is applied around window and door openings",
+      "The next coat C is applied in preparation for the final coat",
+      "The final acrylic coat D is then applied using a steel trowel",
+      "The finish is available in a range of colours",
+      "The new finish is maintenance free for 10-15 years",
+      "Other proprietary finishes are available such as with a brick effect"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2018-ol-q5-b",
+  "topicId": "cons-3-10",
+  "conceptId": "how-roof-ventilated-eaves",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2018 OL Q5(b)",
+  "questionText": "On your drawing show how the roof is ventilated at the eaves.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 x 4",
+   "answer": 1,
+   "ofParts": 2,
+   "perPart": 4
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "cons-2018-ol-q5-b-r1",
+    "kind": "anyN",
+    "verbatim": "– Show on your drawing how the flat roof is ventilated",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "– Show on your drawing how the flat roof is ventilated",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Vents are incorporated in the soffit to allow air flow into flat roof space",
+      "Cross battens allow air to circulate freely between joists"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2018-ol-q6-b",
+  "topicId": "cons-1-8",
+  "conceptId": "design-feature-above-safety-items-helps",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2018 OL Q6(b)",
+  "questionText": "Using notes and freehand sketches, describe one design feature of each of the above safety items that helps to protect the worker from injury.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 x 3 + 1 x 3 + 1 x 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "cons-2018-ol-q6-b-r1",
+    "kind": "anyN",
+    "verbatim": "High-visibility vest",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "High-visibility vest",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "The high visibility vest is made of a bright colour",
+      "The colour gives easy recognition",
+      "Fluorescent/bright orange and fluorescent/bright yellow are the traditional colours for high-visibility vest",
+      "The fluorescent material achieves visibility during the brighter part of the day",
+      "It has vertical and horizontal reflective strips",
+      "The reflective strips are designed to be seen during the darker hours of the day",
+      "To be effective the strips require some form of artificial light",
+      "This creates a retro-reflection"
+     ]
+    }
+   },
+   {
+    "id": "cons-2018-ol-q6-b-r2",
+    "kind": "anyN",
+    "verbatim": "Protective footwear",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Protective footwear",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "The safety boots provide extra safety for workers on the site",
+      "They are of sturdy, durable construction",
+      "This helps protect the foot",
+      "The steel toe cap A protects the toes from falling objects",
+      "Steel, aluminium and plastic toe caps are currently used",
+      "A mid sole plate B is used to protect the sole from punctures below",
+      "The material of the sole protects from corrosive substances",
+      "The heel is further strengthened for added protection",
+      "Heel caps are made from card, bonded leather, thermoplastic foil or thermoplastic rubber",
+      "The heel cap offers protection against turning on the ankle",
+      "The inside of the footwear is padded to give comfort to wearer’s feet"
+     ]
+    }
+   },
+   {
+    "id": "cons-2018-ol-q6-b-r3",
+    "kind": "anyN",
+    "verbatim": "Safety helmet",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Safety helmet",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "The helmet is made of sturdy material and protects the head from falling objects",
+      "The helmet also protects the head from protruding objects",
+      "The shell S of the helmet is usually made from high density polyethylene, thermoplastic or fibreglass",
+      "The nylon harness H is the assembly that provides a means of maintaining the helmet in position on the user's head",
+      "The harness absorbs the kinetic energy within the shell during impact",
+      "This spreads the force evenly over the head",
+      "Some helmets have a sweatband"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2018-ol-q7-a",
+  "topicId": "cons-5-2",
+  "conceptId": "given-pipework-necessary-collect-rainwater-from",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2018 OL Q7(a)",
+  "questionText": "Draw the given sketch and show the pipework necessary to collect the rainwater from the roof and to convey it to the underground storage tank. Label the main components and give their typical sizes.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "3 x 4",
+   "answer": 3,
+   "ofParts": 9,
+   "perPart": 4
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "cons-2018-ol-q7-a-r1",
+    "kind": "anyN",
+    "verbatim": "Draw the given sketch and show the pipework necessary to collect the rainwater from the roof and to convey it to the und",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "125 mm eaves gutter",
+      "65 mm offset bends",
+      "65 mm downpipe",
+      "Gully trap with filter for leaves",
+      "100 mm underground pipe to filter",
+      "Filter with overflow pipe",
+      "100 mm underground pipe from filter to underground tank",
+      "Underground tank",
+      "Overflow pipe"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2018-ol-q7-b",
+  "topicId": "cons-5-2",
+  "conceptId": "stored-rainwater-used-flushing-toilet-pipework",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2018 OL Q7(b)",
+  "questionText": "The stored rainwater is used for flushing a toilet. Show, using notes and freehand sketches, the pipework and pump necessary to take the water from the underground tank to a storage tank in the attic. Show also how to connect the toilet cistern to the storage tank in the attic. Include the necessary valves.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "4 x 4",
+   "answer": 4,
+   "ofParts": 10,
+   "perPart": 4
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "cons-2018-ol-q7-b-r1",
+    "kind": "anyN",
+    "verbatim": "The stored rainwater is used for flushing a toilet. Show, using notes and freehand sketches, the pipework and pump neces",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 4,
+     "perOption": 4,
+     "options": [
+      "12 mm suction pipe with floating filter",
+      "12 mm pipe with rainwater from filter",
+      "Pump, with power supply, to pump to 230 litres minimum tank in the rainwater from underground tank to attic storage tank in the attic",
+      "12 mm pipe to toilet cistern",
+      "12 mm pipe with rainwater to filter",
+      "Control valve",
+      "Stop valve",
+      "Toilet cistern",
+      "Filter",
+      "Typical sizes of components"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cons-2018-ol-q9-a",
+  "topicId": "cons-3-3",
+  "conceptId": "how-blockwork-over-opening-typically-supported",
+  "level": "ordinary",
+  "year": 2018,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2018 OL Q9(a)",
+  "questionText": "Show, using notes and freehand sketches, how the blockwork over the opening is typically supported.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "2 x 4",
+   "answer": 2,
+   "ofParts": 9,
+   "perPart": 4
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "cons-2018-ol-q9-a-r1",
+    "kind": "anyN",
+    "verbatim": "Show, using notes and freehand sketches, how the blockwork over the opening is typically supported.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "The pre-stressed concrete lintel is a method used to support the blockwork",
+      "The concrete lintel rests on opposite sides of the opening",
+      "The concrete lintel projects inwards over the supporting walls for a distance D of 100mm",
+      "The width of the lintel is 100mm with a thickness of 65mm",
+      "The lintel is set on mortar at both ends",
+      "Blockwork is built in at either end and then on top of the lintel",
+      "Smaller blocks are used to bring the levels in line",
+      "A reinforced concrete lintel may be used",
+      "Steel lintel may be used to support the blockwork"
      ]
     }
    }
@@ -6210,6 +6755,47 @@
   "notes": ""
  },
  {
+  "id": "cons-2019-ol-q1-b",
+  "topicId": "cons-3-6",
+  "conceptId": "clearly-typical-design-detailing-ensure-cavity",
+  "level": "ordinary",
+  "year": 2019,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2019 OL Q1(b)",
+  "questionText": "Show clearly on your drawing the typical design detailing to ensure that the cavity is closed at the window head.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 x 3",
+   "answer": 1,
+   "ofParts": 2,
+   "perPart": 3
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "cons-2019-ol-q1-b-r1",
+    "kind": "anyN",
+    "verbatim": "Show clearly on your drawing the typical design detailing to ensure that the cavity is closed at the window head.",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 1,
+     "perOption": 3,
+     "options": [
+      "Fitting a proprietary fire stop cavity closer in the cavity above the window head",
+      "Fixing plasterboard to inside reveal"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "cons-2020-hl-q1-b",
   "topicId": "cons-3-8",
   "conceptId": "typical-design-detailing-ensure-ventilation-roof",
@@ -7402,6 +7988,48 @@
    }
   ],
   "notes": ""
+ },
+ {
+  "id": "cons-2020-hl-q4-b",
+  "topicId": "cons-1-1",
+  "conceptId": "proposed-external-design-house-located-this",
+  "level": "higher",
+  "year": 2020,
+  "subjectId": "construction-studies",
+  "section": "B",
+  "questionRef": "2020 HL Q4(b)",
+  "questionText": "Using notes and freehand sketches, show a proposed external design for a house to be located on this site, which incorporates each of the characteristics discussed at 4(a) above.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 x 4",
+   "answer": 1,
+   "ofParts": 3,
+   "perPart": 4
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "cons-2020-hl-q4-b-r1",
+    "kind": "anyN",
+    "verbatim": "Using notes and freehand sketches, show a proposed external design for a house to be located on this site, which incorpo",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "",
+    "group": {
+     "claimMax": 1,
+     "perOption": 4,
+     "options": [
+      "Materials and finishes",
+      "Shape and form",
+      "Streetscape"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme awards 24 marks for this part. The 4 on this card are the marks it states answers for; the other 20 go to Notes (6); Sketches (14) — the drawing itself and anything the scheme prices without saying what earns it."
  },
  {
   "id": "cons-2020-ol-q1-a",
