@@ -29508,6 +29508,84 @@
   "stem": "In an experiment to measure the speed of sound in air, a student used a cylindrical column of air which was closed at one end, and six different tuning forks. A tuning fork of frequency f was set vibrating and held over the column of air. The length of the column of air was adjusted until the first position of resonance was found and its length l was measured. The procedure was repeated for each tuning fork. The student plotted the following graph based on his recorded data. 0.50 0.40 0.30 l (m) 0.20 0.10 0.00 0.000 0.001 0.002 0.003 0.004 0.005 0.006 -0.10 1/f (Hz-1)"
  },
  {
+  "id": "phys-2025-hl-q5-i",
+  "topicId": "phys-u2",
+  "conceptId": "circuit-for-the-filament-bulb-experiment",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2025 HL Q5(i)",
+  "questionText": "Draw a circuit diagram for this experiment.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "power supply",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "voltmeter in parallel with ﬁlament bulb",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "ammeter in series with ﬁlament bulb",
+    "marks": 3
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "means of changing voltage",
+    "marks": 3
+   }
+  ],
+  "stem": "A student investigated the variation of the current I through a filament bulb for a range of different values of potential difference V. The following data were recorded. V (V) 1 2 3 4 5 6 7 I (mA) 25 47 68 80 91 100 104"
+ },
+ {
+  "id": "phys-2025-hl-q12b-i",
+  "topicId": "phys-3-6",
+  "conceptId": "parts-of-an-ac-generator",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2025 HL Q12(b)(i)",
+  "questionText": "Draw a labelled diagram of an a.c.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "magnet",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "coil",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "slip rings and brushes",
+    "marks": 3
+   }
+  ],
+  "stem": "(ix) Draw a circuit diagram to show how a galvanometer can be converted to a voltmeter. (17) Leaving Certificate, 2025 Physics – Higher Level 15"
+ },
+ {
   "id": "phys-2025-ol-q12b-vii",
   "topicId": "phys-4-6",
   "conceptId": "advantage-of-fusion-over-fission",
@@ -29554,5 +29632,120 @@
    }
   ],
   "stem": "Sound is produced when an object vibrates, causing the particles in the surrounding medium to have vibrational energy. As the particles vibrate, they cause nearby particles to vibrate thus transmitting the sound until it is detected by the ear of a nearby person."
+ },
+ {
+  "id": "phys-2025-ol-q2-v",
+  "topicId": "phys-u2",
+  "conceptId": "plotting-one-over-pressure-against-volume",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2025 OL Q2(v)",
+  "questionText": "Plot a graph, on graph paper, of 1 p against V.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 + 6 × 1 + 3"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "labelled axis",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "points plotted",
+    "marks": 6
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "line of best fit",
+    "marks": 3
+   }
+  ],
+  "stem": "In an experiment to verify Boyle’s law, a student measured the pressure p of a gas at different volumes V. The student recorded the following results. V (cm3) 5 10 15 20 25 30 p (MPa) 0.203 0.108 0.073 0.054 0.043 0.035 1 p (MPa–1) 4.93 9.26 13.70"
+ },
+ {
+  "id": "phys-2025-ol-q7-viii",
+  "topicId": "phys-1-2",
+  "conceptId": "forces-on-a-skydiver-at-constant-velocity",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2025 OL Q7(viii)",
+  "questionText": "After the parachute has opened, the skydiver travels at constant velocity. Draw a labelled diagram to show the forces now acting on the skydiver. (21) The graph shows how the velocity of the skydiver changes with respect to time once she leaves the airplane.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "arrow up",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "arrow down",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "equal and opposite",
+    "marks": 2
+   }
+  ],
+  "stem": "In 1867, Isaac Newton published his ideas on motion in a book called The Principia. In it Newton developed an understanding of the idea of ‘force’. Some time after take‐off, the skydiver jumps out of the plane. The total mass of the skydiver is 70 kg, including the parachute. velocity (m s–1) time (s) A (ix) How can we tell from the graph that the skydiver is accelerating between A and B? (x) Describe the skydiver’s velocity between B and C. (xi) Identify the point that represents when the skydiver opens her parachute. (xii) Why is it safe for the skydiver to land after D? (17) Leaving Certificate, 2025 Physics – Ordinary Level 7"
+ },
+ {
+  "id": "phys-2025-ol-q9-ii",
+  "topicId": "phys-2-3",
+  "conceptId": "ray-diagram-for-a-real-image",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "physics",
+  "section": "A",
+  "questionRef": "2025 OL Q9(ii)",
+  "questionText": "In your answer book, copy and complete the ray diagram below to show the formation of a real image in a concave mirror.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "first incident ray",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "first reflected ray",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "second reflected ray",
+    "marks": 3
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "image formed at intersection of rays",
+    "marks": 2
+   }
+  ],
+  "stem": "A concave mirror can be used to form real or virtual images. f object Calculate the refractive index n of the glass. (ix) State one other use of fibre optic cables. (20) Leaving Certificate, 2025 Physics – Ordinary Level 9"
  }
 ]

@@ -17,4 +17,12 @@ A.card(14, 'c', 'ii', topic='phys-4-4', concept='beta-decay-equation-iodine-131'
 A.card(3, None, 'iv', topic='phys-u2', concept='speed-of-sound-from-a-graph',
        source='pdf', use=[1, 2, 3, 4], marks=[3, 3, 3, 3])
 
+
+# ── Drawing questions whose scheme says what the drawing must show ─────────
+A.card(5, None, 'i', topic='phys-u2', concept='circuit-for-the-filament-bulb-experiment',
+       source='pdf', use=[1, 2, 3, 4], marks=[3, 3, 3, 3])
+
+A.card(12, 'b', 'i', topic='phys-3-6', concept='parts-of-an-ac-generator',
+       source='pdf', use=[1, 2, 3], marks=[3, 3, 3], first_sentence=True)
+
 A.emit()
