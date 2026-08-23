@@ -450,7 +450,7 @@
  },
  {
   "id": "maths-2021-hl-p1-q5-a-i",
-  "topicId": "maths-2-3",
+  "topicId": "maths-5-2",
   "conceptId": "value-value-value",
   "level": "higher",
   "year": 2021,
@@ -591,7 +591,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 HL Paper 1 Q6(a)",
-  "questionText": "Show that h′(x) = −2x² + 4x + 6",
+  "questionText": "Show that h′(x) = −2x² + 4x + 6. y 6 h′(x) x -1 1 2 3",
   "stem": "",
   "figureKey": "maths-2021-HL-paper-p017-i0",
   "labelKey": [],
@@ -1026,7 +1026,7 @@
  },
  {
   "id": "maths-2021-hl-p1-q8-a-i",
-  "topicId": "maths-5-1",
+  "topicId": "maths-5-2",
   "conceptId": "part",
   "level": "higher",
   "year": 2021,
@@ -2195,6 +2195,60 @@
   "notes": ""
  },
  {
+  "id": "maths-2021-hl-p2-q4-a-ii",
+  "topicId": "maths-2-3",
+  "conceptId": "sin",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2021 HL Paper 2 Q4(a)(ii)",
+  "questionText": "sin 𝜃 2= 1 √5 , where 0 ≤𝜃≤𝜋",
+  "stem": "",
+  "figureKey": "maths-2021-HL-paper-p040-i1",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 3, 5, 8, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2021-hl-p2-q4-a-ii-r1",
+    "kind": "anyN",
+    "verbatim": "cos2A = cos²A−sin²A",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 3,
+     "options": [
+      "cos2A = cos²A−sin²A",
+      "2−sin^(2𝜃)",
+      "⇒cos𝜃= cos^(2𝜃)",
+      "using a right-angled triangle cos 𝜃/2 = 2/√5 2/√5",
+      "cos𝜃= (/√5) 2 2 −( 1/√5) 2 = 3/5",
+      "cos𝜃= cos^(2𝜃)",
+      "= (1 −sin^(2𝜃)",
+      "= 1 −2sin2𝜃/2",
+      "= 1 −2 (/√5) 1 2 = 3/5"
+     ],
+     "perOptionSteps": [
+      3,
+      2,
+      3,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "maths-2021-hl-p2-q4-b",
   "topicId": "maths-2-3",
   "conceptId": "solve-equation-tan-150-360",
@@ -2474,7 +2528,7 @@
  },
  {
   "id": "maths-2021-hl-p2-q7-a",
-  "topicId": "maths-3-3",
+  "topicId": "maths-3-4",
   "conceptId": "total-length-course",
   "level": "higher",
   "year": 2021,
@@ -2566,7 +2620,7 @@
  },
  {
   "id": "maths-2021-hl-p2-q7-c",
-  "topicId": "maths-3-3",
+  "topicId": "maths-3-4",
   "conceptId": "acb-116-correct-decimal-place",
   "level": "higher",
   "year": 2021,
@@ -2658,7 +2712,7 @@
  },
  {
   "id": "maths-2021-hl-p2-q7-e",
-  "topicId": "maths-3-3",
+  "topicId": "maths-3-4",
   "conceptId": "shortest-distance-point-side-correct-decimal",
   "level": "higher",
   "year": 2021,
@@ -2703,7 +2757,7 @@
  },
  {
   "id": "maths-2021-hl-p2-q7-f",
-  "topicId": "maths-3-3",
+  "topicId": "maths-3-4",
   "conceptId": "course-viewed-camera-tower-which-rises",
   "level": "higher",
   "year": 2021,
@@ -3342,6 +3396,53 @@
   "notes": ""
  },
  {
+  "id": "maths-2021-hl-p2-q10-a",
+  "topicId": "maths-1-2",
+  "conceptId": "question-continues-next-page-leaving-certificate",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2021 HL Paper 2 Q10(a)",
+  "questionText": "This question continues on the next page. Leaving Certificate, 2021 25",
+  "stem": "",
+  "figureKey": "maths-2021-HL-paper-p034-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 4, 8, 12, 15)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2021-hl-p2-q10-a-r1",
+    "kind": "anyN",
+    "verbatim": "0·15 or 0·85 or 3/20 or 17/20 or 11 x¹⁰ where 0 < x < 1",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12, four parts for 15. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "0·15 or 0·85 or 3/20 or 17/20 or 11 x¹⁰ where 0 < x < 1",
+      "Three terms multiplied, two correct, from 11, (0·15¹), and (0·85¹⁰) (0·15¹) × (0·85¹⁰)",
+      "11 × 0·15¹ × 0·85¹⁰ or equivalent (0·15¹) × (0·85¹⁰) evaluated [0 ∙0295 …]"
+     ],
+     "perOptionSteps": [
+      4,
+      4,
+      7
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "maths-2021-hl-p2-q10-a-i",
   "topicId": "maths-1-2",
   "conceptId": "blood-donation-clinic-ten-donors-blood",
@@ -3853,13 +3954,13 @@
  {
   "id": "maths-2021-ol-p1-q5-b",
   "topicId": "maths-5-1",
-  "conceptId": "value-when",
+  "conceptId": "value-when-leaving-certificate-2021-mathematics",
   "level": "ordinary",
   "year": 2021,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q5(b)",
-  "questionText": "Find the value of x when f(x) = 4",
+  "questionText": "Find the value of x when f(x) = 4. Leaving Certificate, 2021 12",
   "stem": "",
   "figureKey": "maths-2021-OL-paper-p013-i1",
   "labelKey": [],
@@ -5353,6 +5454,53 @@
   "notes": ""
  },
  {
+  "id": "maths-2022-hl-p1-q2-a",
+  "topicId": "maths-5-2",
+  "conceptId": "part",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 HL Paper 1 Q2(a)",
+  "questionText": "g(x) = 2x² + 5x + 6, where x∈ℝ. Find ∫ g(x) dx",
+  "stem": "",
+  "figureKey": "maths-2022-HL-paper-p009-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 2, 3, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-hl-p1-q2-a-r1",
+    "kind": "anyN",
+    "verbatim": "Some correct integration",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit; Full Credit -1.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 2,
+     "options": [
+      "Some correct integration",
+      "3 of the 4 terms correct (including + c as a term)",
+      "+c term missing"
+     ],
+     "perOptionSteps": [
+      2,
+      1,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "maths-2022-hl-p1-q2-b-i",
   "topicId": "maths-5-2",
   "conceptId": "area-region-538-square-units-integration",
@@ -5433,6 +5581,98 @@
      "perOption": 15,
      "options": [
       "2 steps correct"
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "maths-2022-hl-p1-q3-a-i",
+  "topicId": "maths-3-1",
+  "conceptId": "part",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 HL Paper 1 Q3(a)(i)",
+  "questionText": "Show that z−iz = 8 −4i",
+  "stem": "",
+  "figureKey": "maths-2022-HL-paper-p011-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 2, 3, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-hl-p1-q3-a-i-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit, for example, some correct substitution, or z(1 −i)",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Work of merit, for example, some correct substitution, or z(1 −i)",
+      "Mishandles −2i², otherwise correct Multiplies numerator and denominator by conjugate"
+     ],
+     "perOptionSteps": [
+      2,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "maths-2022-hl-p1-q3-a-ii",
+  "topicId": "maths-3-1",
+  "conceptId": "part",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 HL Paper 1 Q3(a)(ii)",
+  "questionText": "Show that |z|² + |iz|² = |z−iz|²",
+  "stem": "",
+  "figureKey": "maths-2022-HL-paper-p011-i1",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 3, 5, 8, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-hl-p1-q3-a-ii-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit, for example, correct formula with some substitution",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "Work of merit, for example, correct formula with some substitution",
+      "Two correct values found, from |z|, |iz| and |z−iz|",
+      "Two correct values found, from |z|², |iz|², and |z−iz|² Full Credit –1 Finds |z|², |iz|², and |z−iz|², but no conclusion of equality"
+     ],
+     "perOptionSteps": [
+      3,
+      2,
+      5
      ]
     }
    }
@@ -5662,6 +5902,52 @@
       3,
       2,
       5
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "maths-2022-hl-p1-q5-a",
+  "topicId": "maths-5-2",
+  "conceptId": "derivative",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 HL Paper 1 Q5(a)",
+  "questionText": "g(x) = x2− 1 x where x∈ℝ. Find g′(x), the derivative of g(x)",
+  "stem": "",
+  "figureKey": "maths-2022-HL-paper-p015-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 2, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-hl-p1-q5-a-r1",
+    "kind": "anyN",
+    "verbatim": "g′(x) = 2x−(−1x^(−2))",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "g′(x) = 2x−(−1x^(−2))",
+      "= 2x + 1/x2",
+      "g′(x) = 2x− x(0)−1(1)/x2 = 2x + 1/x2"
+     ],
+     "perOptionSteps": [
+      2,
+      3
      ]
     }
    }
@@ -6097,6 +6383,51 @@
   "notes": ""
  },
  {
+  "id": "maths-2022-hl-p1-q7-f",
+  "topicId": "maths-5-2",
+  "conceptId": "information-write-terms-first-minutes-session",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 HL Paper 1 Q7(f)",
+  "questionText": "Use this information to write b′(x) in terms of h′(x), where 0 ≤ x ≤ 8, x∈ℝ. For the first 8 minutes of the session, Karen’s heart-rate, k(x), is always 10% less than (ii) Hannah’s heart-rate. Use this information to write k′(x) in terms of h′(x), where 0 ≤ x ≤ 8, x∈ℝ",
+  "stem": "",
+  "figureKey": "maths-2022-HL-paper-p022-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 2, 3, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-hl-p1-q7-f-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit in 1 part, for example, b(x) = h(x) + 15, or k(x) = 0∙9 h(x)",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Work of merit in 1 part, for example, b(x) = h(x) + 15, or k(x) = 0∙9 h(x)",
+      "1 part correct"
+     ],
+     "perOptionSteps": [
+      2,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "maths-2022-hl-p1-q7-g",
   "topicId": "maths-3-1",
   "conceptId": "martha-does-each-exercise-longer-time",
@@ -6192,13 +6523,13 @@
  {
   "id": "maths-2022-hl-p1-q8-c",
   "topicId": "maths-2-3",
-  "conceptId": "period-range",
+  "conceptId": "period-range-period-range",
   "level": "higher",
   "year": 2022,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q8(c)",
-  "questionText": "Find the period and range of h(t)",
+  "questionText": "Find the period and range of h(t). Period = ________________ Range = [ , ]",
   "stem": "",
   "figureKey": "maths-2022-HL-paper-p023-i1",
   "labelKey": [],
@@ -6375,7 +6706,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-a",
-  "topicId": "maths-3-1",
+  "topicId": "maths-2-3",
   "conceptId": "amount-drug-left-alex-body-days",
   "level": "higher",
   "year": 2022,
@@ -6415,7 +6746,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-b",
-  "topicId": "maths-3-1",
+  "topicId": "maths-2-3",
   "conceptId": "how-long-after-single-injection-will",
   "level": "higher",
   "year": 2022,
@@ -6460,7 +6791,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-c",
-  "topicId": "maths-3-1",
+  "topicId": "maths-2-3",
   "conceptId": "explain-why-total-amount-drug-alex",
   "level": "higher",
   "year": 2022,
@@ -6506,7 +6837,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-d",
-  "topicId": "maths-3-1",
+  "topicId": "maths-2-3",
   "conceptId": "total-amount-drug-alex-body-immediately",
   "level": "higher",
   "year": 2022,
@@ -6636,7 +6967,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-f-ii",
-  "topicId": "maths-3-1",
+  "topicId": "maths-2-3",
   "conceptId": "immediately-after-7th-injection-there-drug",
   "level": "higher",
   "year": 2022,
@@ -8467,7 +8798,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q10-a-ii",
-  "topicId": "maths-3-3",
+  "topicId": "maths-1-2",
   "conceptId": "runners-fastest-times-qualified-final-assuming",
   "level": "higher",
   "year": 2022,
@@ -8604,7 +8935,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q10-d",
-  "topicId": "maths-3-3",
+  "topicId": "maths-1-2",
   "conceptId": "300-runners-take-part-road-race",
   "level": "higher",
   "year": 2022,
@@ -8655,7 +8986,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q10-e",
-  "topicId": "maths-3-3",
+  "topicId": "maths-1-2",
   "conceptId": "sorcha-ran-two-different-marathons-windy",
   "level": "higher",
   "year": 2022,
@@ -8701,13 +9032,13 @@
  {
   "id": "maths-2022-ol-p1-q1-a",
   "topicId": "maths-4-4",
-  "conceptId": "using-argand-diagram",
+  "conceptId": "using-argand-diagram-leaving-certificate-2022",
   "level": "ordinary",
   "year": 2022,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q1(a)",
-  "questionText": "Using the Argand diagram:",
+  "questionText": "Using the Argand diagram: Leaving Certificate, 2022 4",
   "stem": "",
   "figureKey": "maths-2022-OL-paper-p007-i0",
   "labelKey": [],
@@ -9473,7 +9804,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q7-c",
-  "topicId": "maths-5-1",
+  "topicId": "maths-3-1",
   "conceptId": "using-same-axes-scales-continue-graph",
   "level": "ordinary",
   "year": 2022,
@@ -9566,7 +9897,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q7-e",
-  "topicId": "maths-5-1",
+  "topicId": "maths-3-1",
   "conceptId": "joseph-has-smart-watch-beeps-every",
   "level": "ordinary",
   "year": 2022,
@@ -9656,7 +9987,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q8-a-i",
-  "topicId": "maths-2-3",
+  "topicId": "maths-3-1",
   "conceptId": "work-out-how-many-acid-200",
   "level": "ordinary",
   "year": 2022,
@@ -9787,7 +10118,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q8-a-iv",
-  "topicId": "maths-2-3",
+  "topicId": "maths-3-1",
   "conceptId": "when-she-making-another-mixture-jessica",
   "level": "ordinary",
   "year": 2022,
@@ -9832,7 +10163,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q8-b-i",
-  "topicId": "maths-2-3",
+  "topicId": "maths-3-1",
   "conceptId": "write-down-values-cube-these-values",
   "level": "ordinary",
   "year": 2022,
@@ -11184,7 +11515,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q6-a-i",
-  "topicId": "maths-2-1",
+  "topicId": "maths-4-1",
   "conceptId": "write-down-adb-size-total-angle",
   "level": "ordinary",
   "year": 2022,
@@ -11227,7 +11558,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q6-a-ii",
-  "topicId": "maths-2-1",
+  "topicId": "maths-4-1",
   "conceptId": "aod-130-work-out-size-angle",
   "level": "ordinary",
   "year": 2022,
@@ -11499,7 +11830,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q7-b",
-  "topicId": "maths-1-6",
+  "topicId": "maths-1-2",
   "conceptId": "complete-table-filling-four-missing-values",
   "level": "ordinary",
   "year": 2022,
@@ -11591,7 +11922,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q7-d",
-  "topicId": "maths-1-6",
+  "topicId": "maths-1-2",
   "conceptId": "female-cats-were-put-separate-pens",
   "level": "ordinary",
   "year": 2022,
@@ -12356,7 +12687,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q10-b-iv",
-  "topicId": "maths-1-5",
+  "topicId": "maths-3-3",
   "conceptId": "according-2019-irish-sport-monitor-report",
   "level": "ordinary",
   "year": 2022,
@@ -12581,13 +12912,13 @@
  {
   "id": "maths-2023-hl-p1-q1-c",
   "topicId": "maths-3-1",
-  "conceptId": "factor",
+  "conceptId": "factor-value-value-leaving-certificate-2023",
   "level": "higher",
   "year": 2023,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q1(c)",
-  "questionText": "x²−px + 1 is a factor of x³−2x−3r, where p, r∈ℝ and p൏0",
+  "questionText": "x²−px + 1 is a factor of x³−2x−3r, where p, r∈ℝ and p൏0. Find the value of p and the value of r. p= ____________ and r= ____________",
   "stem": "",
   "figureKey": "maths-2023-HL-paper-p008-i0",
   "labelKey": [],
@@ -14070,6 +14401,55 @@
   "notes": ""
  },
  {
+  "id": "maths-2023-hl-p2-q1-c",
+  "topicId": "maths-1-2",
+  "conceptId": "olga-plays-game-times-probability-olga",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 2 Q1(c)",
+  "questionText": "Olga plays the game 2 times. Find the probability that Olga gets less than €16 in total from playing the game. Give your answer correct to 4 decimal places. 5",
+  "stem": "",
+  "figureKey": "maths-2023-HL-paper-p039-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 3, 5, 8, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-q1-c-r1",
+    "kind": "anyN",
+    "verbatim": "Relevant probability Relevant work on establishing the condition, for example, indicates P(9,9), or lists three that are in line with the condition (e.g.,(0,0), (0,6), (0,9))",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 8, four parts for 10. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit; Full Credit -1.",
+    "group": {
+     "claimMax": 4,
+     "perOption": 3,
+     "options": [
+      "Relevant probability Relevant work on establishing the condition, for example, indicates P(9,9), or lists three that are in line with the condition (e.g.,(0,0), (0,6), (0,9))",
+      "1/4 × 1/4 indicated Probability calculated correctly for three pairs on the table??",
+      "16 or equivalent Probability calculated correctly for six pairs on the table??",
+      "No rounding or incorrect rounding"
+     ],
+     "perOptionSteps": [
+      3,
+      2,
+      3,
+      2
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "maths-2023-hl-p2-q2-a",
   "topicId": "maths-2-3",
   "conceptId": "prove-sin-sin-acos-cos-asin",
@@ -14216,7 +14596,7 @@
  },
  {
   "id": "maths-2023-hl-p2-q3-b-ii",
-  "topicId": "maths-2-3",
+  "topicId": "maths-2-2",
   "conceptId": "perpendicular-bisector-value-value",
   "level": "higher",
   "year": 2023,
@@ -15297,6 +15677,51 @@
   "notes": ""
  },
  {
+  "id": "maths-2023-hl-p2-q10-a-i",
+  "topicId": "maths-3-4",
+  "conceptId": "part",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 HL Paper 2 Q10(a)(i)",
+  "questionText": "Show that |BE| = 40 cm",
+  "stem": "",
+  "figureKey": "maths-2023-HL-paper-p063-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 4, 7, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-hl-p2-q10-a-i-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit in establishing equation",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Work of merit in establishing equation",
+      "Correct equation set up 40/12 = 50/15 or equivalent"
+     ],
+     "perOptionSteps": [
+      4,
+      6
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "maths-2023-hl-p2-q10-a-ii",
   "topicId": "maths-3-4",
   "conceptId": "total-internal-surface-area-basin-correct",
@@ -15933,7 +16358,7 @@
  },
  {
   "id": "maths-2023-ol-p1-q6-a-i",
-  "topicId": "maths-4-2",
+  "topicId": "maths-4-1",
   "conceptId": "value",
   "level": "ordinary",
   "year": 2023,
@@ -16024,7 +16449,7 @@
  {
   "id": "maths-2023-ol-p1-q6-b",
   "topicId": "maths-4-1",
-  "conceptId": "expand-simplify",
+  "conceptId": "expand-simplify-leaving-certificate-2023-mathematics",
   "level": "ordinary",
   "year": 2023,
   "subjectId": "maths",
@@ -18713,7 +19138,7 @@
  },
  {
   "id": "maths-2023-ol-p2-q9-a-iv",
-  "topicId": "maths-1-7",
+  "topicId": "maths-1-6",
   "conceptId": "draw-graph-chart-represent-data-table",
   "level": "ordinary",
   "year": 2023,
@@ -18848,7 +19273,7 @@
  },
  {
   "id": "maths-2023-ol-p2-q9-b-iii",
-  "topicId": "maths-1-7",
+  "topicId": "maths-1-6",
   "conceptId": "iii-general-students-get-rating-excellent",
   "level": "ordinary",
   "year": 2023,
@@ -18895,7 +19320,7 @@
  },
  {
   "id": "maths-2023-ol-p2-q10-a",
-  "topicId": "maths-1-3",
+  "topicId": "maths-1-5",
   "conceptId": "work-out-cba-size-angle-cba",
   "level": "ordinary",
   "year": 2023,
@@ -19737,7 +20162,7 @@
  },
  {
   "id": "maths-2024-hl-p1-q5-c-ii",
-  "topicId": "maths-4-1",
+  "topicId": "maths-3-1",
   "conceptId": "first-value-which",
   "level": "higher",
   "year": 2024,
@@ -19785,13 +20210,13 @@
  {
   "id": "maths-2024-hl-p1-q6-a",
   "topicId": "maths-3-1",
-  "conceptId": "constant",
+  "conceptId": "constant-value-which-factor",
   "level": "higher",
   "year": 2024,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q6(a)",
-  "questionText": "h(x) = x² + b−12, where x∈ℝ and b is a constant",
+  "questionText": "h(x) = x² + b−12, where x∈ℝ and b is a constant. Find the value of b for which x−4 is a factor of h(x)",
   "stem": "",
   "figureKey": "maths-2024-HL-paper-p014-i0",
   "labelKey": [],
@@ -20001,7 +20426,7 @@
  },
  {
   "id": "maths-2024-hl-p1-q7-b-ii",
-  "topicId": "maths-3-3",
+  "topicId": "maths-5-2",
   "conceptId": "work-out-amount-money-fiadh-her",
   "level": "higher",
   "year": 2024,
@@ -20603,7 +21028,7 @@
  },
  {
   "id": "maths-2024-hl-p1-q10-a-i",
-  "topicId": "maths-5-2",
+  "topicId": "maths-3-1",
   "conceptId": "estimate-height-water-spinach-plant-after",
   "level": "higher",
   "year": 2024,
@@ -21050,14 +21475,14 @@
  },
  {
   "id": "maths-2024-hl-p2-q3-a",
-  "topicId": "maths-2-1",
-  "conceptId": "parallelogram",
+  "topicId": "maths-3-4",
+  "conceptId": "parallelogram-110-area-correct-nearest",
   "level": "higher",
   "year": 2024,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q3(a)",
-  "questionText": "A is a parallelogram",
+  "questionText": "A is a parallelogram. |A| = 10 cm, |B| = 13 cm, and |∠A| = 110°. Find the area of A, correct to the nearest cm²",
   "stem": "",
   "figureKey": "maths-2024-HL-paper-p033-i0",
   "labelKey": [],
@@ -21097,7 +21522,7 @@
  },
  {
   "id": "maths-2024-hl-p2-q3-b",
-  "topicId": "maths-2-1",
+  "topicId": "maths-3-4",
   "conceptId": "angle-360-all-possible-values",
   "level": "higher",
   "year": 2024,
@@ -22316,6 +22741,51 @@
   "notes": ""
  },
  {
+  "id": "maths-2024-hl-p2-q10-a-i",
+  "topicId": "maths-3-4",
+  "conceptId": "120",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 HL Paper 2 Q10(a)(i)",
+  "questionText": "Show that |O| = 120 cm",
+  "stem": "",
+  "figureKey": "maths-2024-HL-paper-p048-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 2, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-hl-p2-q10-a-i-r1",
+    "kind": "anyN",
+    "verbatim": "(a)(i)",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "(a)(i)",
+      "|O| = |O| = 100 + 20 = 120"
+     ],
+     "perOptionSteps": [
+      2,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "maths-2024-hl-p2-q10-a-ii",
   "topicId": "maths-3-4",
   "conceptId": "correct-decimal-place",
@@ -22914,7 +23384,7 @@
  },
  {
   "id": "maths-2024-ol-p1-q7-b-i",
-  "topicId": "maths-5-2",
+  "topicId": "maths-3-1",
   "conceptId": "number-bacteria-after-hour-after-hours",
   "level": "ordinary",
   "year": 2024,
@@ -24788,7 +25258,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q8-a-ii",
-  "topicId": "maths-2-1",
+  "topicId": "maths-3-4",
   "conceptId": "size-angle-correct-nearest-degree",
   "level": "ordinary",
   "year": 2024,
@@ -24828,7 +25298,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q8-a-iii",
-  "topicId": "maths-2-1",
+  "topicId": "maths-3-4",
   "conceptId": "iii-second-cable-tied-sign-point",
   "level": "ordinary",
   "year": 2024,
@@ -24873,7 +25343,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q8-b-i",
-  "topicId": "maths-2-1",
+  "topicId": "maths-3-4",
   "conceptId": "part",
   "level": "ordinary",
   "year": 2024,
@@ -24918,7 +25388,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q8-b-ii",
-  "topicId": "maths-2-1",
+  "topicId": "maths-3-4",
   "conceptId": "110",
   "level": "ordinary",
   "year": 2024,
@@ -27391,15 +27861,60 @@
   "notes": ""
  },
  {
+  "id": "maths-2025-hl-p2-q1-a",
+  "topicId": "maths-2-2",
+  "conceptId": "constant-point-lies-line-value",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 HL Paper 2 Q1(a)",
+  "questionText": "p∈ℝ is a constant. The point (p, 5) lies on the line 3x−2y + 28 = 0. Find the value of p. p = ____________",
+  "stem": "",
+  "figureKey": "maths-2025-HL-paper-p041-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 2, 3, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p2-q1-a-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit, for example, 5 subbed in for y, or p subbed in for x Relevant work to isolate p Finds the slope of the line or another point on the line",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3, three parts for 5. Marked in order: Low Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Work of merit, for example, 5 subbed in for y, or p subbed in for x Relevant work to isolate p Finds the slope of the line or another point on the line",
+      "One error, otherwise correct"
+     ],
+     "perOptionSteps": [
+      2,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "maths-2025-hl-p2-q1-b",
   "topicId": "maths-2-2",
-  "conceptId": "line-has-equation",
+  "conceptId": "line-has-equation-line-has-equation",
   "level": "higher",
   "year": 2025,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 HL Paper 2 Q1(b)",
-  "questionText": "The line l has equation y= − 1 3 x+ 11",
+  "questionText": "The line l has equation y= − 1 3 x+ 11. The line h has equation 2x−5y + 10 = 0. Work out the size of the acute angle between the lines l and h. Give your answer correct to the nearest degree. 4",
   "stem": "",
   "figureKey": "maths-2025-HL-paper-p042-i0",
   "labelKey": [],
@@ -27589,6 +28104,46 @@
       3,
       3,
       5
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
+  "id": "maths-2025-hl-p2-q3-a-i",
+  "topicId": "maths-1-2",
+  "conceptId": "part",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 HL Paper 2 Q3(a)(i)",
+  "questionText": "Show that P(A) = 1 4",
+  "stem": "",
+  "figureKey": "maths-2025-HL-paper-p047-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 2, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p2-q3-a-i-r1",
+    "kind": "anyN",
+    "verbatim": "60/240 and stops",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. Marked in order: Full Credit -1.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "60/240 and stops"
      ]
     }
    }
@@ -27924,6 +28479,53 @@
   "notes": ""
  },
  {
+  "id": "maths-2025-hl-p2-q5-b-i",
+  "topicId": "maths-2-2",
+  "conceptId": "part",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 HL Paper 2 Q5(b)(i)",
+  "questionText": "|XQ| = 8 cm and |Q′| = 4 cm",
+  "stem": "",
+  "figureKey": "maths-2025-HL-paper-p052-i1",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 2, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p2-q5-b-i-r1",
+    "kind": "anyN",
+    "verbatim": "(b)(i)",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. These are the lines of the scheme's own printed solution, in the order it sets them out.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "(b)(i)",
+      "k = |XQ′|/|X|",
+      "= 12/8",
+      "= 1 ∙5"
+     ],
+     "perOptionSteps": [
+      2,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": ""
+ },
+ {
   "id": "maths-2025-hl-p2-q5-b-ii",
   "topicId": "maths-2-2",
   "conceptId": "shown-again-diagram-right",
@@ -28076,13 +28678,13 @@
  {
   "id": "maths-2025-hl-p2-q6-c",
   "topicId": "maths-2-3",
-  "conceptId": "triangle",
+  "conceptId": "triangle-cosine-rule-value-tan-without",
   "level": "higher",
   "year": 2025,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 HL Paper 2 Q6(c)",
-  "questionText": "In the triangle A, |A| = 2, |B| = 3, and |A| = 4",
+  "questionText": "In the triangle A, |A| = 2, |B| = 3, and |A| = 4. C 2 3 A B 4 Use the Cosine Rule to find the value of tan ∠C, without using a calculator. Give your answer in the form √n m , where n, m∈ℤ. Show all your working out. tan ∠C= __________",
   "stem": "",
   "figureKey": "maths-2025-HL-paper-p055-i0",
   "labelKey": [],
@@ -29266,13 +29868,13 @@
  {
   "id": "maths-2025-ol-p1-q2-b",
   "topicId": "maths-3-1",
-  "conceptId": "two-complex-numbers",
+  "conceptId": "two-complex-numbers-write-form-leaving",
   "level": "ordinary",
   "year": 2025,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 OL Paper 1 Q2(b)",
-  "questionText": "u and v are two complex numbers",
+  "questionText": "u and v are two complex numbers. u= 4 −6i v= 1 + i Write u v in the form a+ b, where a, b∈ℤ. Leaving Certificate, 2025 7",
   "stem": "",
   "figureKey": "maths-2025-OL-paper-p008-i0",
   "labelKey": [],

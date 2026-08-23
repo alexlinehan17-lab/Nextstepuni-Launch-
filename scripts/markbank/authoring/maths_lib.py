@@ -97,7 +97,24 @@ class Author:
             return ''
         exact.sort(key=lambda k: (k[1] or '', k[2] or ''))
         joined = ' '.join((P.text(*k) or '').strip() for k in exact)
-        return mathtext.clean_like(P.files, joined)
+        # A part whose first line ends in a full stop stops collecting, so an
+        # ask set on the next line lands in the letter's stem instead: 2022 HL
+        # Paper 1 Q2(a) reads "g(x) = 2x^2 + 5x + 6, where x in R." with "Find
+        # the integral of g(x) dx" underneath, and the part alone is not a
+        # question. Pulled in only when the part cannot stand on its own, and
+        # only for a lettered part -- a roman's stem holds its SIBLINGS' asks,
+        # and Q3(a)'s stem is the wording of Q3(a)(iii).
+        cleaned = mathtext.clean_like(P.files, joined)
+        if roman is None and len(_squash(joined)) < 25:
+            extra = (P.stem(q, letter) or '').strip()
+            if extra:
+                # Cleaned SEPARATELY and then joined. clean_like finds a
+                # fragment in the document and hands back the span-aware
+                # reading of it, so a string glued together from two places
+                # matches nothing and falls back to the unrepaired text --
+                # which is how "2x^2 + 5x + 6" came back as "2x2+ 5x+ 6".
+                cleaned = f'{cleaned} {mathtext.clean_like(P.files, extra)}'.strip()
+        return cleaned
 
     def ref(self, key):
         paper, q, letter, roman = key[0], key[1], key[2], key[3]
@@ -160,7 +177,10 @@ class Author:
         if cid in self._used:
             raise Refused(f'{cid}: already emitted')
         qtext = FURNITURE_TAIL.sub('', self.question(key)).strip(' .;,')
-        if len(_squash(qtext)) < 15:
+        # Squashing keeps only letters and digits, and a Maths question is
+        # mostly neither: "Show that z - iz = 8 - 4i." measures fourteen and is
+        # a whole question. Judged on either measure, not on the squash alone.
+        if len(_squash(qtext)) < 12 and len(qtext) < 24:
             raise Refused(f'{self.ref(key)}: no question text in the paper')
         total, ladder = self.S.tariff(key)
         if not total or not ladder or len(ladder) < 2:
