@@ -54,4 +54,15 @@ A.card(5, 'b', 'vii', topic='chem-1-4', concept='shape-of-a-four-atom-molecule',
        first_sentence=True,
        notes='The scheme accepts tetrahedral, triangular or trigonal as well.')
 
+A.card(7, 'a', 'ii', topic='chem-u1', concept='graph-of-oxygen-volume-against-time',
+       source='pdf',
+       from_runs=[((7, 'a', 'ii'), 0, slice(0, 2)),
+                  ((7, 'a', 'ii'), 0, slice(3, 5)),
+                  ((7, 'a', 'ii'), 0, slice(6, 8)),
+                  ((7, 'a', 'ii'), 0, slice(21, 25))],
+       marks=[3, 3, 6, 3], notation='3 + 3 + 6 × 1 + 3',
+       notes='The scheme caps the plotting marks at three if graph paper is not used, '
+             'and wants a curve of best fit rather than a straight line — the rate falls '
+             'away as the reaction proceeds.')
+
 A.emit()

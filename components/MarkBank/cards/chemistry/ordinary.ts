@@ -5231,4 +5231,21 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "●", marks: 2 },
     ],
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC022GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2024 Ordinary Level — © State Examinations Commission.",
+    id: "chem-2024-ol-q7-a-ii", topicId: "chem-u1", conceptId: "graph-of-oxygen-volume-against-time",
+    section: "A", questionRef: "2024 OL Q7(a)(ii)",
+    stem: "The rate of decomposition of hydrogen peroxide (H2O2) using manganese dioxide as a catalyst was investigated using the apparatus shown below. gas syringe manganese dioxide (catalyst) stopwatch hydrogen peroxide The oxygen (O2) gas produced was collected in the gas syringe. The results are shown in the table below. Time (minutes) 0 2 4 6 8 10 12 14 16 18 Volume of O2 (cm3) 0 29 48 63 73 81 87 90 92 92",
+    questionText: "Draw a graph on graph paper to show how the volume of O2 produced varies with time.",
+    tariffModel: {"kind":"fixed","notation":"3 + 3 + 6 × 1 + 3"}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "labelled axis", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "scaled axes", marks: 3 },
+    { id: "r-3", kind: "point", verbatim: "points ploted", marks: 6 },
+    { id: "r-4", kind: "point", verbatim: "curve of best ﬁt", marks: 3 },
+    ],
+  } as SecCard,
 ];
