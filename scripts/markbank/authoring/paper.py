@@ -143,16 +143,23 @@ def _leading(text):
 class Paper:
     """One paper, indexed by question number and part path."""
 
-    def __init__(self, subject, year, level):
+    def __init__(self, subject, year, level, component=None):
         level = {'higher': 'hl', 'ordinary': 'ol'}.get(level, level)
         self.subject, self.year, self.level = subject, year, level
+        self.component = component
         # A sitting may be printed as several booklets — Biology sets Sections A
         # and B in one and Section C in another — and the question numbering
         # runs on across them, so every component is read in order as one paper.
         root = papers_dir(subject)
+        # `component` reads ONE booklet. Merging is right where the numbering
+        # runs on across booklets, which is what Biology does; Mathematics sets
+        # two papers that both start at Question 1, so merging them collides
+        # every question number in the year.
+        want = rf'{year}-{level}-{component}-paper\.pdf' if component else \
+            rf'{year}-{level}(-\d+)?-paper\.pdf'
         self.files = sorted(
             os.path.join(root, f) for f in os.listdir(root)
-            if re.fullmatch(rf'{year}-{level}(-\d+)?-paper\.pdf', f))
+            if re.fullmatch(want, f))
         if not self.files:
             raise FileNotFoundError(f'no {year} {level} paper for {subject}')
         self.path = self.files[0]

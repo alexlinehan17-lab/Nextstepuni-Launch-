@@ -35,6 +35,15 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 /** Per-subject facts the generated module needs. Adding a subject means adding
  *  a row here, and nothing else in this script changes. */
 const SUBJECTS = {
+  maths: {
+    title: 'Mathematics',
+    /* The syllabus examined from 2015. Its redevelopment is scheduled but not
+     * yet examined, so there is nothing later to tag against. */
+    specVersion: 'lc-maths-2015',
+    specNote: 'Cards are tagged to the strands of the Mathematics syllabus examined from 2015.\n * Higher and Ordinary sit two papers, and a citation names which.',
+    figureDir: 'public/exam-figures/maths',
+    blocked: new Set(),
+  },
   'construction-studies': {
     title: 'Construction Studies',
     /* The syllabus these papers were actually sat under. Its replacement,

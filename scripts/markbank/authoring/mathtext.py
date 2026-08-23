@@ -44,7 +44,8 @@ DIGITS = {'ZERO': '0', 'ONE': '1', 'TWO': '2', 'THREE': '3', 'FOUR': '4',
           'FIVE': '5', 'SIX': '6', 'SEVEN': '7', 'EIGHT': '8', 'NINE': '9'}
 # Glyphs whose ToUnicode map put them in the wrong block entirely.
 GLYPH = {'න': '∫', '൤': '[', '൨': ']', 'ൣ': '[', '൧': ']',
-         '൬': '(', '൰': ')', 'ඈ': '{', 'ඉ': '}',
+         '൬': '(', '൰': ')', 'ඈ': '{', 'ඉ': '}', '൫': '(', '൯': ')',
+         '൛': '(', '൧': ']', 'ඌ': '|',
          'ඥ': '√', 'ඩ': '√', 'ℎ': 'h', '': ''}
 
 
@@ -99,7 +100,7 @@ def line_text(line):
         raised = (s['size'] < base - 1.5 and prev is not None
                   and s['bbox'][1] < prev['bbox'][1] - 0.8)
         out.append(f'^({t.strip()})' if raised and t.strip() else t)
-    return ''.join(out).strip()
+    return superscripts(''.join(out).strip())
 
 
 def columns(page, cut=300):
@@ -125,7 +126,8 @@ def steps_and_scale(notes):
     steps = [(int(m.group(1)), m.group(2).strip())
              for line in notes if (m := STEP.match(line))]
     scale = next((m for line in notes if (m := SCALE.search(line))), None)
-    ladder = [int(v) for v in scale.group(3).split(',')] if scale else None
+    ladder = ([int(v) for v in scale.group(3).split(',') if v.strip().isdigit()]
+               if scale else None)
     return steps, (int(scale.group(1)) if scale else None), ladder
 
 
@@ -142,3 +144,84 @@ if __name__ == '__main__':
     print('\nmodel solution (belongs on the card as an image):')
     for l in sol[:8]:
         print(f'   {l[:70]}')
+
+
+_DOCCACHE = {}
+
+
+def clean_document(paths):
+    """[(clean line, plain line)] for every line of the paper, in order.
+
+    Kept as PARALLEL lines, not two joined strings. The search has to run over
+    the PLAIN text -- that is what paper.py handed us -- while what comes back
+    has to be the CLEAN text. Indexing the clean side instead loses exactly the
+    characters the repair introduced: "4x³" squashes to "4x" where the plain
+    "4x3" squashes to "4x3", so no fragment with an exponent could ever match.
+    """
+    import pymupdf
+    key = tuple(paths)
+    if key in _DOCCACHE:
+        return _DOCCACHE[key]
+    rows = []
+    for path in paths:
+        with pymupdf.open(path) as doc:
+            for page in doc:
+                for b in page.get_text('dict')['blocks']:
+                    for ln in b.get('lines', []):
+                        plain = ''.join(sp['text'] for sp in ln['spans'])
+                        if plain.strip():
+                            rows.append((line_text(ln), plain))
+    _DOCCACHE[key] = rows
+    return rows
+
+
+def _squash(t):
+    return re.sub(r'[^a-z0-9]+', '', (t or '').lower())
+
+
+def clean_like(paths, fragment):
+    """The span-aware form of `fragment` as paper.py extracted it.
+
+    Returns the fragment merely demangled when it cannot be located -- better a
+    readable line than none, though it will be missing its exponents.
+    """
+    rows = clean_document(paths)
+    want = _squash(demangle(fragment))
+    if len(want) < 12:
+        return demangle(fragment)
+    hay, owner = [], []
+    for i, (_, plain) in enumerate(rows):
+        sq = _squash(demangle(plain))
+        hay.append(sq)
+        owner.extend([i] * len(sq))
+    hay = ''.join(hay)
+    at = -1
+    for n in range(min(len(want), 200), 39, -10):
+        at = hay.find(want[:n])
+        if at >= 0:
+            break
+    if at < 0:
+        return demangle(fragment)
+    end = min(at + len(want), len(owner)) - 1
+    lines = rows[owner[at]:owner[end] + 1]
+    return ' '.join(' '.join(c for c, _ in lines).split())
+
+
+SUP = {'0': '⁰', '1': '¹', '2': '²', '3': '³', '4': '⁴', '5': '⁵',
+       '6': '⁶', '7': '⁷', '8': '⁸', '9': '⁹', '+': '⁺', '-': '⁻',
+       'n': 'ⁿ', 'i': 'ⁱ', '(': '⁽', ')': '⁾'}
+
+
+def superscripts(text):
+    """Render "^(2)" as "²" where every character has a superscript form.
+
+    A card shows this to a student, so "4x²" is worth having over "4x^(2)".
+    Anything without a real superscript glyph -- "^(5x)" -- keeps the caret
+    form rather than being flattened, because flattening changes the maths.
+    """
+    def one(m):
+        body = m.group(1)
+        if body and all(c in SUP for c in body):
+            return ''.join(SUP[c] for c in body)
+        return f'^({body})' if len(body) > 1 else f'^{body}'
+    return re.sub(r'\^\(([^)]*)\)', one, text)

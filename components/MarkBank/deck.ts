@@ -630,6 +630,67 @@ export const CONSTRUCTION_STUDIES_STRANDS: StrandRef[] = [
   },
 ];
 
+/**
+ * The Leaving Certificate Mathematics syllabus for examination from 2015 —
+ * five strands, read off the syllabus itself
+ * (curriculumonline.ie/getmedia/f6f2e822-2b0c-461e-bcd4-dfcde6decc0c/
+ * SCSEC25_Maths_syllabus_examination-2015_English.pdf). The strand and topic
+ * numbering is the syllabus's own; the titles are its own too, including where
+ * they are terser than the usual name for the area — it writes "Complex", not
+ * "Complex numbers", and "Expressions", not "Algebraic expressions".
+ *
+ * Higher and Ordinary sit TWO papers and both number their questions from 1,
+ * so a Maths citation names the paper: "2025 HL Paper 1 Q3(c)".
+ */
+export const MATHS_STRANDS: StrandRef[] = [
+  {
+    id: 'ms1', label: 'Strand 1', title: 'Statistics and Probability',
+    topics: [
+      { id: 'maths-1-1', code: '1.1', title: 'Counting' },
+      { id: 'maths-1-2', code: '1.2', title: 'Concepts of probability' },
+      { id: 'maths-1-3', code: '1.3', title: 'Outcomes of simple random processes' },
+      { id: 'maths-1-4', code: '1.4', title: 'Statistical reasoning with an aim' },
+      { id: 'maths-1-5', code: '1.5', title: 'Finding, collecting and organising data' },
+      { id: 'maths-1-6', code: '1.6', title: 'Representing data graphically and numerically' },
+      { id: 'maths-1-7', code: '1.7', title: 'Analysing, interpreting and drawing conclusions from data' },
+    ],
+  },
+  {
+    id: 'ms2', label: 'Strand 2', title: 'Geometry and Trigonometry',
+    topics: [
+      { id: 'maths-2-1', code: '2.1', title: 'Synthetic geometry' },
+      { id: 'maths-2-2', code: '2.2', title: 'Co-ordinate geometry' },
+      { id: 'maths-2-3', code: '2.3', title: 'Trigonometry' },
+      { id: 'maths-2-4', code: '2.4', title: 'Transformation geometry, enlargements' },
+    ],
+  },
+  {
+    id: 'ms3', label: 'Strand 3', title: 'Number',
+    topics: [
+      { id: 'maths-3-1', code: '3.1', title: 'Number systems' },
+      { id: 'maths-3-2', code: '3.2', title: 'Indices' },
+      { id: 'maths-3-3', code: '3.3', title: 'Arithmetic' },
+      { id: 'maths-3-4', code: '3.4', title: 'Length, area and volume' },
+    ],
+  },
+  {
+    id: 'ms4', label: 'Strand 4', title: 'Algebra',
+    topics: [
+      { id: 'maths-4-1', code: '4.1', title: 'Expressions' },
+      { id: 'maths-4-2', code: '4.2', title: 'Solving equations' },
+      { id: 'maths-4-3', code: '4.3', title: 'Inequalities' },
+      { id: 'maths-4-4', code: '4.4', title: 'Complex' },
+    ],
+  },
+  {
+    id: 'ms5', label: 'Strand 5', title: 'Functions',
+    topics: [
+      { id: 'maths-5-1', code: '5.1', title: 'Functions' },
+      { id: 'maths-5-2', code: '5.2', title: 'Calculus' },
+    ],
+  },
+];
+
 export const SUBJECTS = [
   { id: 'biology', title: 'Biology', strands: STRANDS, spec: 'redeveloped specification' },
   { id: 'chemistry', title: 'Chemistry', strands: CHEMISTRY_STRANDS, spec: 'redeveloped specification' },
@@ -639,6 +700,7 @@ export const SUBJECTS = [
   { id: 'home-economics', title: 'Home Economics', strands: HOME_ECONOMICS_STRANDS, spec: 'Scientific and Social syllabus' },
   { id: 'economics', title: 'Economics', strands: ECONOMICS_STRANDS, spec: 'specification examined from 2021' },
   { id: 'construction-studies', title: 'Construction Studies', strands: CONSTRUCTION_STUDIES_STRANDS, spec: 'Ordinary and Higher Level syllabus' },
+  { id: 'maths', title: 'Mathematics', strands: MATHS_STRANDS, spec: 'syllabus for examination from 2015' },
 ] as const;
 
 export type SubjectId = (typeof SUBJECTS)[number]['id'];

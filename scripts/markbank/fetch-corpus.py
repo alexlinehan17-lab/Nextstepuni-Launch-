@@ -53,6 +53,10 @@ SUBJECTS = {
     # drawing must contain — "Breather membrane", "Cavity closer", "Triple
     # glazing" — which is a stated answer and cards well. See stage0.py.
     'construction-studies': 'construction-studies',
+    # Added 23 August 2026. Rejected at Stage 0 for notation that turned to
+    # mush; see mathtext.py, which shows the mangling is a reversible font
+    # fault and that the Marking Notes column is clean English.
+    'maths': 'mathematics',
 }
 
 FILEID = re.compile(r'^LC(\d{3})([AG])LP(\d{3})([EI])V\.pdf$', re.I)
