@@ -47,7 +47,9 @@ SCHEMES = os.path.join(ROOT, 'examiner-reports/construction-studies/schemes')
 # ten mark tables and made the file look half-parsed.
 QHEAD = re.compile(r'^(?:Leaving Certificate Examination,?\s*\d{4}\s+)?'
                    r'Question\s+(\d{1,2})\b\.?\s*(\(Alternative\))?\s*$', re.I)
-PART = re.compile(r'^\(([a-h])\)\s*(.*)$')
+# "(a)" at Higher Level, "Part (a)" at Ordinary. Without the prefix the whole
+# Ordinary mark half parsed to zero parts, and the subject read as Higher-only.
+PART = re.compile(r'^(?:Part\s+)?\(([a-h])\)\s*(.*)$', re.I)
 BULLET = re.compile(r'^[•\-•]\s*')
 # "5 x 4 marks", "4 × 4 marks (3 for drawing, 1 for annotation)"
 GROUP_TARIFF = re.compile(r'(\d{1,2})\s*[x×]\s*(\d{1,3})\s*marks?', re.I)

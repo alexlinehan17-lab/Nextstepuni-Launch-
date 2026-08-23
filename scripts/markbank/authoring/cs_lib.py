@@ -73,11 +73,32 @@ class Author:
         return self.P.ref(k) if k else f'{self.year} {self.level.upper()} Q{q}({letter})'
 
     # ---- the tariff -----------------------------------------------------
-    def tariff(self, q, letter, name, n_items):
-        """(claim, per) from what the scheme prints, or Refused."""
+    def tariff(self, q, letter, name, n_items, index=None):
+        """(claim, per) from what the scheme prints, or Refused.
+
+        Groups are paired between the two halves BY ORDER, not by name. The
+        halves name the same group differently -- the 2025 Higher scheme calls
+        one "Foundation and solid concrete ground floor - typical detailing"
+        where it prints the content and "Foundation + Solid ground floor" where
+        it prints the marks -- so matching on the name refused every grouped
+        drawing question in the paper, which is the best content the subject
+        has. The order is the same in both halves because both are generated
+        from the same list.
+        """
+        block_lines = self.S.marks.get((q, letter), [])
+        tariffs = [(int(a), int(b)) for a, b in CS.GROUP_TARIFF.findall(' '.join(block_lines))]
+        if index is not None and index < len(tariffs):
+            return tariffs[index]
         for gname, t, _ in self.S.groups(q, letter):
             if t and (name is None or _squash(gname or '') == _squash(name)):
                 return t
+        # A group whose mark rows are each priced the same: the scheme sets
+        # "Guideline 1 (3 for note, 3 for sketch) 6 / Guideline 2 ... 6" under
+        # each task, which is two claimable answers at 6 rather than a total.
+        marks = [int(m.group(1)) for l in block_lines
+                 if (m := re.search(r'\s(\d{1,3})\s*$', l.strip()))]
+        if len(marks) >= 2 and len(set(marks)) == 1 and index is None:
+            return (len(marks), marks[0])
         block = ' '.join(self.S.marks.get((q, letter), []))
         # The commonest form by far, and the one groups() cannot reach: the
         # mark table prints "6 x 5 marks" as a line of its own, above rows that
@@ -108,7 +129,7 @@ class Author:
 
     # ---- the card -------------------------------------------------------
     def card(self, q, letter, name, *, cid, topic, concept, qtext, note='', notes='',
-             stem='', claim=None):
+             stem='', claim=None, index=None):
         if cid in self._used:
             raise Refused(f'{cid}: already emitted')
         gs = [g for g in self.S.groups(q, letter, 'indicative')
@@ -128,7 +149,7 @@ class Author:
             options.append(it)
         if len(options) < 2:
             raise Refused(f'Q{q}({letter}) [{name}]: {len(options)} usable option(s)')
-        n, per = self.tariff(q, letter, name, len(options))
+        n, per = self.tariff(q, letter, name, len(options), index)
         if claim is not None:
             n = claim
         if n > len(options):
@@ -162,11 +183,14 @@ if __name__ == '__main__':
     A = Author(year, level)
     ok = refused = 0
     for (q, letter) in A.S.parts():
-        for name, _, items in A.S.groups(q, letter, 'indicative'):
+        gs = A.S.groups(q, letter, 'indicative')
+        multi = len([t for t in CS.GROUP_TARIFF.findall(
+            ' '.join(A.S.marks.get((q, letter), [])))]) > 1
+        for gi, (name, _, items) in enumerate(gs):
             if len(items) < 2:
                 continue
             try:
-                n, per = A.tariff(q, letter, name, len(items))
+                n, per = A.tariff(q, letter, name, len(items), gi if multi else None)
                 print(f'  OK   Q{q}({letter}) [{(name or "-")[:44]:<44}] {n} x {per}'
                       f'  {len(items)} options')
                 ok += 1
