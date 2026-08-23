@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Authoring for Construction Studies. Refuses rather than guesses.
 
-A card here is one GROUP of a part: the scheme answers "draw a vertical section
-through the external wall" with named sub-lists, and each is its own question a
-student can be asked and its own tariff. See cs_scheme.py for why the group is
-the unit.
+A card here is one PART of a question, carrying one row per group the scheme
+names under it. Not one card per group: a group-level card would need a
+group-level question and the paper prints no such sentence, and question text is
+lifted or it is not written. See cs_scheme.py for how the groups are read.
 
 The tariff is never invented. It comes from one of two places the scheme
 actually prints, and if neither is there the part is left uncarded:
@@ -78,8 +78,16 @@ class Author:
         return (self.P.text(*k) or '').strip() if k else ''
 
     def ref(self, q, letter):
+        """"2021 HL Q1(a)" — the citation form every other subject uses.
+
+        paper.ref() returns only the part path. Without the year and level on
+        the front, every paper's Q1(a) is the same string, and the build's
+        one-card-per-question rule then drops all but the first: three papers
+        came out as seventeen cards instead of thirty-four.
+        """
         k = self._paper_key(q, letter)
-        return self.P.ref(k) if k else f'{self.year} {self.level.upper()} Q{q}({letter})'
+        tail = self.P.ref(k) if k else f'Q{q}({letter})'
+        return f'{self.year} {self.level.upper()} {tail}'
 
     # ---- the tariff -----------------------------------------------------
     def tariff(self, q, letter, name, n_items, index=None):
