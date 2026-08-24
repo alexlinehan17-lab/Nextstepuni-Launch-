@@ -7397,12 +7397,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q14a-ii", topicId: "phys-1-1", conceptId: "acceleration-at-constant-velocity",
     section: "B", questionRef: "2024 OL Q14(a)(ii)",
-    stem: "520 N 520 N 1900 kg 680 N 520 N 1900 kg",
+    stem: "Newton’s three laws of motion describe the relationship between the motion of an object and the forces acting on it. A 1900 kg car is moving at 20 m s⁻¹ to the right on a horizontal road. It has balanced forces acting on it in opposite directions as shown.",
     questionText: "What is the acceleration of the car?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "0 m s–2", marks: 2 },
     ],
+    figure: {
+          "candId": "physics-2024-ol-paper-p12-i0",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-paper-p12-i0.png",
+          "srcHash": "a5069baecc3037d92a3400a57d5573d7",
+          "alt": "A 1900 kg car drawn as a box with two horizontal force arrows: 520 N acting to the left and 520 N acting to the right — the balanced-forces diagram for parts (i)-(iii).",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7425,12 +7433,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q14a-iii", topicId: "phys-1-1", conceptId: "velocity-after-constant-acceleration",
     section: "B", questionRef: "2024 OL Q14(a)(iii)",
-    stem: "520 N 520 N 1900 kg 680 N 520 N 1900 kg",
+    stem: "Newton’s three laws of motion describe the relationship between the motion of an object and the forces acting on it. A 1900 kg car is moving at 20 m s⁻¹ to the right on a horizontal road. It has balanced forces acting on it in opposite directions as shown.",
     questionText: "What is the velocity of the car 12 s later?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "20 m s–1", marks: 2 },
     ],
+    figure: {
+          "candId": "physics-2024-ol-paper-p12-i0",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-paper-p12-i0.png",
+          "srcHash": "a5069baecc3037d92a3400a57d5573d7",
+          "alt": "A 1900 kg car drawn as a box with two horizontal force arrows: 520 N acting to the left and 520 N acting to the right — the balanced-forces diagram for parts (i)-(iii).",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7481,12 +7497,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q14a-i", topicId: "phys-1-2", conceptId: "net-force-when-forces-balance",
     section: "B", questionRef: "2024 OL Q14(a)(i)",
-    stem: "520 N 520 N 1900 kg 680 N 520 N 1900 kg",
+    stem: "Newton’s three laws of motion describe the relationship between the motion of an object and the forces acting on it. A 1900 kg car is moving at 20 m s⁻¹ to the right on a horizontal road. It has balanced forces acting on it in opposite directions as shown.",
     questionText: "Calculate the net horizontal force acting on the car.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "520 – 520 = 0 N", marks: 4 },
     ],
+    figure: {
+          "candId": "physics-2024-ol-paper-p12-i0",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-paper-p12-i0.png",
+          "srcHash": "a5069baecc3037d92a3400a57d5573d7",
+          "alt": "A 1900 kg car drawn as a box with two horizontal force arrows: 520 N acting to the left and 520 N acting to the right — the balanced-forces diagram for parts (i)-(iii).",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7495,12 +7519,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q14a-v", topicId: "phys-1-2", conceptId: "net-force-when-forces-do-not-balance",
     section: "B", questionRef: "2024 OL Q14(a)(v)",
-    stem: "520 N 520 N 1900 kg 680 N 520 N 1900 kg",
+    stem: "Newton’s second law of motion states that the rate of change of momentum of an object is proportional to the net force applied to it. The same car is still moving at 20 m s⁻¹ to the right but it now has unbalanced forces acting on it as shown.",
     questionText: "Calculate the net horizontal force acting on the car.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "680 – 520 = 160 N (right)", marks: 5 },
     ],
+    figure: {
+          "candId": "physics-2024-ol-paper-p12-i1",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-paper-p12-i1.png",
+          "srcHash": "dc66d19da93dcb8a1432bbc93432f95d",
+          "alt": "The same 1900 kg car with unbalanced horizontal forces: 520 N acting to the left and 680 N acting to the right — the diagram for parts (v)-(vii).",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7509,12 +7541,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q14a-vii", topicId: "phys-1-1", conceptId: "velocity-under-an-unbalanced-force",
     section: "B", questionRef: "2024 OL Q14(a)(vii)",
-    stem: "520 N 520 N 1900 kg 680 N 520 N 1900 kg",
+    stem: "Newton’s second law of motion states that the rate of change of momentum of an object is proportional to the net force applied to it. The same car is still moving at 20 m s⁻¹ to the right but it now has unbalanced forces acting on it as shown.",
     questionText: "Calculate the velocity of the car after 12 s when the unbalanced forces are acting on the car. (15)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "v = 20 + (0.084)(12) = 21 m s–1", marks: 5 },
     ],
+    figure: {
+          "candId": "physics-2024-ol-paper-p12-i1",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-paper-p12-i1.png",
+          "srcHash": "dc66d19da93dcb8a1432bbc93432f95d",
+          "alt": "The same 1900 kg car with unbalanced horizontal forces: 520 N acting to the left and 680 N acting to the right — the diagram for parts (v)-(vii).",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7909,12 +7949,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q14a-vi", topicId: "phys-1-1", conceptId: "acceleration-under-an-unbalanced-force",
     section: "B", questionRef: "2024 OL Q14(a)(vi)",
-    stem: "520 N 520 N 1900 kg 680 N 520 N 1900 kg",
+    stem: "Newton’s second law of motion states that the rate of change of momentum of an object is proportional to the net force applied to it. The same car is still moving at 20 m s⁻¹ to the right but it now has unbalanced forces acting on it as shown.",
     questionText: "Calculate the acceleration of the car.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "0.084 m s–2", marks: 5 },
     ],
+    figure: {
+          "candId": "physics-2024-ol-paper-p12-i1",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-paper-p12-i1.png",
+          "srcHash": "dc66d19da93dcb8a1432bbc93432f95d",
+          "alt": "The same 1900 kg car with unbalanced horizontal forces: 520 N acting to the left and 680 N acting to the right — the diagram for parts (v)-(vii).",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",

@@ -33538,7 +33538,8 @@
     "marks": 2
    }
   ],
-  "stem": "520 N 520 N 1900 kg 680 N 520 N 1900 kg"
+  "stem": "Newton’s three laws of motion describe the relationship between the motion of an object and the forces acting on it. A 1900 kg car is moving at 20 m s⁻¹ to the right on a horizontal road. It has balanced forces acting on it in opposite directions as shown.",
+  "figureKey": "physics-2024-ol-paper-p12-i0"
  },
  {
   "id": "phys-2024-ol-q13a",
@@ -33586,7 +33587,8 @@
     "marks": 2
    }
   ],
-  "stem": "520 N 520 N 1900 kg 680 N 520 N 1900 kg"
+  "stem": "Newton’s three laws of motion describe the relationship between the motion of an object and the forces acting on it. A 1900 kg car is moving at 20 m s⁻¹ to the right on a horizontal road. It has balanced forces acting on it in opposite directions as shown.",
+  "figureKey": "physics-2024-ol-paper-p12-i0"
  },
  {
   "id": "phys-2024-ol-q3-ii",
@@ -33682,7 +33684,8 @@
     "marks": 4
    }
   ],
-  "stem": "520 N 520 N 1900 kg 680 N 520 N 1900 kg"
+  "stem": "Newton’s three laws of motion describe the relationship between the motion of an object and the forces acting on it. A 1900 kg car is moving at 20 m s⁻¹ to the right on a horizontal road. It has balanced forces acting on it in opposite directions as shown.",
+  "figureKey": "physics-2024-ol-paper-p12-i0"
  },
  {
   "id": "phys-2024-ol-q14a-v",
@@ -33706,7 +33709,8 @@
     "marks": 5
    }
   ],
-  "stem": "520 N 520 N 1900 kg 680 N 520 N 1900 kg"
+  "stem": "Newton’s second law of motion states that the rate of change of momentum of an object is proportional to the net force applied to it. The same car is still moving at 20 m s⁻¹ to the right but it now has unbalanced forces acting on it as shown.",
+  "figureKey": "physics-2024-ol-paper-p12-i1"
  },
  {
   "id": "phys-2024-ol-q14a-vii",
@@ -33730,7 +33734,8 @@
     "marks": 5
    }
   ],
-  "stem": "520 N 520 N 1900 kg 680 N 520 N 1900 kg"
+  "stem": "Newton’s second law of motion states that the rate of change of momentum of an object is proportional to the net force applied to it. The same car is still moving at 20 m s⁻¹ to the right but it now has unbalanced forces acting on it as shown.",
+  "figureKey": "physics-2024-ol-paper-p12-i1"
  },
  {
   "id": "phys-2024-ol-q2-i",
@@ -34536,8 +34541,9 @@
     "marks": 5
    }
   ],
-  "stem": "520 N 520 N 1900 kg 680 N 520 N 1900 kg",
-  "notes": "The scheme sets the working, force over mass, as a stacked fraction the text layer cannot carry, so the card holds the result at the part's full printed tariff."
+  "stem": "Newton’s second law of motion states that the rate of change of momentum of an object is proportional to the net force applied to it. The same car is still moving at 20 m s⁻¹ to the right but it now has unbalanced forces acting on it as shown.",
+  "notes": "The scheme sets the working, force over mass, as a stacked fraction the text layer cannot carry, so the card holds the result at the part's full printed tariff.",
+  "figureKey": "physics-2024-ol-paper-p12-i1"
  },
  {
   "id": "phys-2025-hl-q14c-ii",
