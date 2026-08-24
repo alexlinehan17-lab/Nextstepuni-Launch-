@@ -426,6 +426,35 @@ P.cards.append(card(
     '', tariff_kind='fixed',
     stem='The Irish Government provided free school transport for the 2022/2023 school year.'))
 
+# Q15(b)(iii): should the government worry about a rising euro. econ_excluded
+# records this part as "the yes and no cases are welded onto the cue line and
+# neither separates" — true of the EXTRACTOR's output, not of the scheme, which
+# prints two Yes justifications, an OR, and two No justifications in sequence.
+# Sliced apart here the way 2021 OL Q11(c)(ii) and 2023 OL Q14(c)(i) were when
+# their "welded" verdicts fell to the same knife; the econ_excluded line is now
+# stale. The tariff is the ⟨8⟩ the scheme prints beside the justifications: on
+# the page the ⟨6⟩ above it sits at y=324, still inside (ii)'s span (which ends
+# at (iii)'s marker, y=327), and 8 + 6 + 8 is the 22 the scheme prints against
+# part (b). Either side of the argument earns the 8.
+P.cards.append(card(
+    'econ-2023-hl-q15-b-iii-euro', 2023, 'higher', 'economics-4-2',
+    'effects-of-euro-appreciation', '2023 HL Q15(b)(iii)',
+    'Should the Irish government be concerned if the Euro to Dollar exchange rate is '
+    'appreciating? Justify your answer.',
+    '1 @ 8', 8,
+    [anyN('r-1', 'A justification, on either side — any one', 8, 1, 8,
+          [as_option(block(BODY, 'Price of imports will decrease',
+                           'Price of exports will increase')),
+           as_option(block(BODY, 'Price of exports will increase', 'OR No Increased')),
+           as_option(block(BODY, 'Increased purchasing power / improved standard',
+                           'Reduced inflationary pressures')),
+           as_option(block(BODY, 'Reduced inflationary pressures', '31 | P a g e'))],
+          'One justification, 8 marks. The scheme credits either box: the first two '
+          'justify YES (dearer exports, cheaper imports leaking income abroad), the '
+          'last two justify NO (purchasing power, cooler inflation).')],
+    'The id carries a suffix because econ-2023-hl-q15-b-iii is the trade-protection '
+    'card econ_refs re-cites to Q14(c)(iii).'))
+
 P.cards.append(card(
     'econ-2023-hl-q16-b-i', 2023, 'higher', 'economics-2-2',
     'toxic-waste-and-market-failure', '2023 HL Q16(b)(i)',

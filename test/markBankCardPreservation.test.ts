@@ -53,8 +53,13 @@ const decks = [
   ['business:ordinary', BUSINESS_ORDINARY, 334, '6d62fbc00d4b0f4c411cd23c17d76ddaa63cb066325bb2974c881c8b81073b18'],
   ['home-economics:higher', HOME_EC_HIGHER, 298, '0993532438e360013ca6930c425db0b9c398b886673a4029ad6df0c9c467b49d'],
   ['home-economics:ordinary', HOME_EC_ORDINARY, 273, '5b15bc2e07a475191deb82613d27459fa2e776a0b10a2249aaff4f11f7a7e787'],
-  ['economics:higher', ECON_HIGHER, 234, '5bf329cc43896d7ae5dcb46ffc413255cc72a23f403068be83cc804fce6fecdb'],
-  ['economics:ordinary', ECON_ORDINARY, 152, 'f07a279c83d1a53cf923d42344612cfbaa1c33e324b114a4a6173b872536b6a8'],
+  /* 2026-08-24: economics 234/152 -> 301/243 — the backfill campaign's
+   * first subject. A ten-agent fleet authored every open paper ask; the ledger
+   * (reconcile.py) now reads 100.0%: 498 covered + 160 excluded-with-evidence
+   * = all 658 asks the 2021-2025 papers print. Nothing removed; all prior ids
+   * remain. */
+  ['economics:higher', ECON_HIGHER, 301, 'f69039b493aa5aac10f0f263f9f26fcba18afc9f10003c43960980f667ad852f'],
+  ['economics:ordinary', ECON_ORDINARY, 243, 'be7ff725dc954485c6b54c0db7e680881473129a79ef08f33f8338b53af0a44f'],
   /* 2026-08-23: the two newest subjects had shipped with NO identity baseline
    * at all — found by the ratchet-soundness review, which means every earlier
    * count in this file was guarding seven decks while two rode along
@@ -82,6 +87,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(6694);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(6852);
   });
 });

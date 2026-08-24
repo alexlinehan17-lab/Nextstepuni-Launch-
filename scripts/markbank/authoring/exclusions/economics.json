@@ -1,0 +1,807 @@
+[
+ {
+  "ref": "2021 HL Q11(a)(i)",
+  "reason": "the response is the worked HHI calculation",
+  "evidence": "Scheme: '46²+46²+5²+2²+1² = 4262'"
+ },
+ {
+  "ref": "2021 HL Q13(c)(i)",
+  "reason": "the response is the worked PED calculation",
+  "evidence": "Scheme: PED worked to −1.63"
+ },
+ {
+  "ref": "2021 HL Q14(a)(i)",
+  "reason": "every response describes the shape of the inflation chart printed with it (recorded class)",
+  "evidence": "Scheme: 'Across the entire time Ireland's inflation rate is lower than the Euro Area and UK (apart from 2015 in the UK)…'"
+ },
+ {
+  "ref": "2021 HL Q15(b)(ii)",
+  "reason": "every response reads the GNI chart printed with it",
+  "evidence": "Scheme: 'The period from 2007 to 2009… GNI of both countries is downward sloping'"
+ },
+ {
+  "ref": "2021 HL Q15(c)(ii)",
+  "reason": "the response is the worked multiplier calculation",
+  "evidence": "Scheme: 'MPS = 1 – 0.65 … Multiplier = 1.43'"
+ },
+ {
+  "ref": "2021 HL Q16(a)(i)",
+  "reason": "every response reads the air-passenger chart printed with it",
+  "evidence": "Scheme: 'steady increase from over 9 million… sharp decline… to virtually zero'"
+ },
+ {
+  "ref": "2021 HL Q16(b)(i)",
+  "reason": "the response is the worked percentage calculation",
+  "evidence": "Scheme: '10.20 −9.15 = 1.05 … = 11.48%'"
+ },
+ {
+  "ref": "2021 HL Q16(c)(iii)",
+  "reason": "SRP grading bands; the actual CBA ask prints one sentence under a two-claim tariff, so no clean card (recorded class, reason refined)",
+  "evidence": "Scheme: 'Deduct 1m if no quantitative data', 'The Research Process 40 Marks Excellent Very Good…'; CBA answer is one sentence under ⟨6⟩ ⟨(2 @ 3)⟩"
+ },
+ {
+  "ref": "2021 HL Section A Q1(a)",
+  "reason": "the response is the worked trade-balance calculation",
+  "evidence": "Scheme: 'Total Exports: …=647 … €647m – €410m = €237m / Trade Surplus'"
+ },
+ {
+  "ref": "2021 HL Section A Q10(b)",
+  "reason": "recorded no-responses decision; NOTE: the scheme does print two justified alternatives — the parts extractor loses them to the SECTION B header; revisit as cardable when the extractor is fixed",
+  "evidence": "Scheme prints 'maintain…' OR 'decrease / negative interest rates…' ⟨7⟩"
+ },
+ {
+  "ref": "2021 HL Section A Q2",
+  "reason": "answered by ticking Positive/Normative against each statement",
+  "evidence": "Scheme: tick table across four statements"
+ },
+ {
+  "ref": "2021 HL Section A Q7(a)",
+  "reason": "chart lookup — figures read off the CSO infographic printed with it (recorded class)",
+  "evidence": "Scheme: 'Between 2007 and 2019 the gross debt per person rose by €30,322 per person or 272%…'"
+ },
+ {
+  "ref": "2021 HL Section A Q8(a)",
+  "reason": "the response is the worked equi-marginal calculation",
+  "evidence": "Scheme: '2500 ÷ 200 = 12.5 … 75 ÷ 12.5 = €6'"
+ },
+ {
+  "ref": "2021 HL Section A Q8(b)",
+  "reason": "welded to (a)'s worked €6 — one sentence, no half separates",
+  "evidence": "Scheme: tariff ⟨2 @ 4⟩ over one welded equi-marginal sentence tied to the €6"
+ },
+ {
+  "ref": "2021 HL Section A Q9(a)",
+  "reason": "a table completion — market structure against each firm",
+  "evidence": "Scheme ⟨3 @ 3⟩: banking→Oligopoly, Irish Water→Monopoly, takeaway→Monopolistic Competition"
+ },
+ {
+  "ref": "2021 HL Section A Q9(b)",
+  "reason": "answered against the student's own (a) choices (recorded class)",
+  "evidence": "Scheme: 'The Irish banking sector is dominated by a few large firms, making these firms oligopolies…' — worked to the (a) selections"
+ },
+ {
+  "ref": "2021 OL Q11(a)(i)",
+  "reason": "the responses are differences read/calculated off the HDI tables printed with it",
+  "evidence": "Scheme p.8: the answer table '+ 1 / + 0.2 Years / + 0.2 / Yes' ⟨4 @ 3⟩ — chart-reading, the established leave-alone class."
+ },
+ {
+  "ref": "2021 OL Q12(a)(ii)",
+  "reason": "labels to be placed on a diagram; no wording to show",
+  "evidence": "Scheme p.12: the answers are the placements 'P1/C1 P1/Q1/C1' ⟨2 @ 4⟩ ⟨1 @ 2⟩ on the perfect-competition diagram — same class as the recorded 2022-24 OL Q11(b)(ii) exclusions."
+ },
+ {
+  "ref": "2021 OL Q13(c)(ii)",
+  "reason": "ALREADY RECORDED in econ_excluded.py: 'the responses are figures read out of the CPI table'",
+  "evidence": "Scheme p.16: the answers are '-1.5%', '-0.2%', 'October to November / November to December' ⟨3 @ 6⟩, each read off the CPI chart printed beside the question."
+ },
+ {
+  "ref": "2021 OL Q14(c)(i)",
+  "reason": "answered by reading the income-tax table printed beside it",
+  "evidence": "Scheme p.18: 'The lowest tax Ireland / The highest tax Germany' ⟨2 @ 5⟩ — read straight out of the €18,000-salary table, same class as the recorded 2021 HL Section A Q7(a)."
+ },
+ {
+  "ref": "2021 OL Q15(b)(i)",
+  "reason": "answered by ticking which diagram applies",
+  "evidence": "Scheme p.20: 'Diagram B √' ⟨10⟩ — same class as the recorded 2024 OL Section A Q10 tick-the-diagram exclusion."
+ },
+ {
+  "ref": "2021 OL Section A Q1(i)",
+  "reason": "the response is the worked percentage calculation",
+  "evidence": "Scheme p.4: '8.9/ 89.6 x 100 = 9.93%' ⟨3 @ 4⟩ — the marks are for the arithmetic, so a card would show the answer beside the sum that produces it."
+ },
+ {
+  "ref": "2021 OL Section A Q2",
+  "reason": "answered by ticking positive or normative against each statement",
+  "evidence": "Scheme p.4: a tick table 'Statement Positive Normative' with '√' placed per row, ⟨1 @ 9⟩ ⟨1 @ 6⟩ — same class as the recorded 2022 OL Section A Q4 tick exclusion."
+ },
+ {
+  "ref": "2021 OL Section A Q3(i)",
+  "reason": "the response is the worked elasticity calculation",
+  "evidence": "Scheme p.5: the PED formula worked through '−250 / +50 x (800+850)/(1000+750) … Answer: −4.71' ⟨6 @ 2⟩ ⟨1 @ 2⟩."
+ },
+ {
+  "ref": "2021 OL Section A Q3(ii)",
+  "reason": "the verdict on the elasticity figure worked in (i) — answered off the student's own calculation, worth 1 mark",
+  "evidence": "Scheme p.5: 'It is elastic (the PED is greater than 1 in absolute terms).' ⟨1 @ 1⟩ — unanswerable without the −4.71 worked in part (i)."
+ },
+ {
+  "ref": "2021 OL Section A Q4",
+  "reason": "a table completion — the marks are for the marginal-utility figures, and the follow-up is read off the completed table",
+  "evidence": "Scheme p.5: '38 – 25 = 13 / 47 – 38 = 9' ⟨6 @ 2⟩; 'After 2nd is consumed or before 3rd is consumed.' ⟨1 @ 3⟩."
+ },
+ {
+  "ref": "2021 OL Section A Q7",
+  "reason": "the response is the worked budget calculation",
+  "evidence": "Scheme p.6: 'Total Income (€87.5 bn) - Total Expenditure (€86.1 bn) = €1.4bn. Surplus' ⟨5 @ 3⟩."
+ },
+ {
+  "ref": "2022 HL Q11(b)(i)",
+  "reason": "the explanation beside a diagram, with the tariff covering both (recorded EXCLUDED_TEXT class)",
+  "evidence": "Paper: 'Explain, with the use of a fully labelled diagram how the equilibrium price of land is determined.' Scheme prints the diagram with 'The supply of land is fixed in quantity' welded beside it — recorded in econ_excluded.py EXCLUDED_TEXT."
+ },
+ {
+  "ref": "2022 HL Q12(a)(i)",
+  "reason": "a reading of the HHI figures printed in the chart with it",
+  "evidence": "recorded product decision in econ_excluded.py, made at authoring time against the scheme"
+ },
+ {
+  "ref": "2022 HL Q12(b)(ii)",
+  "reason": "the explanation beside a monopoly diagram, marked 1 per label with the explanation as a block (recorded EXCLUDED_TEXT class)",
+  "evidence": "Paper: 'Explain, with the use of a fully labelled diagram, the long-run equilibrium position of a monopoly firm.' Scheme: 'They sell the output at price P1' welded to the diagram — recorded in econ_excluded.py."
+ },
+ {
+  "ref": "2022 HL Q14(a)(ii)",
+  "reason": "answered by ticking fixed or variable against each item in a table",
+  "evidence": "recorded product decision in econ_excluded.py, made at authoring time against the scheme"
+ },
+ {
+  "ref": "2022 HL Q14(b)(i)",
+  "reason": "the response is the worked cost calculation for the three missing table cells",
+  "evidence": "\"Calculate the missing figures for A, B, and C in the table. Calculations: A: Total Cost B: Average Variable Cost C: Marginal Cost 100,000 400,000 450,000 ⟨9⟩ + 260,000 2 – 400,000 €360,000 €200,000 €50,000\""
+ },
+ {
+  "ref": "2022 HL Q14(b)(ii)",
+  "reason": "a graph to be drawn; the scheme's response is the plotted cost figures with per-curve marks, off the (b)(i) table",
+  "evidence": "\"Using the figures obtained in the table draw and label: the Fixed Costs, Variable Costs, and Total Costs… Cost of Production 600,000 500,000 505,000 TC:5 450,000 400,000 400,000 405,000 VC:5 … 100,000 FC: 2 … Axes 4\""
+ },
+ {
+  "ref": "2022 HL Q14(c)(i)",
+  "reason": "the response is the worked average calculation off the gender-pay-gap chart",
+  "evidence": "\"Based upon the data above calculate the average gender wage gap… Show all your workings. 21.7 + 19.2 + 14 + 11.3 + 1.3 = 67.5 ÷ 5 = 13.5 ⟨8⟩\""
+ },
+ {
+  "ref": "2022 HL Q14(c)(iii)",
+  "reason": "the scheme welds its two sides together and neither separates cleanly",
+  "evidence": "recorded product decision in econ_excluded.py, made at authoring time against the scheme"
+ },
+ {
+  "ref": "2022 HL Q15(a)(iii)",
+  "reason": "the explanation beside a diagram, with the tariff covering both",
+  "evidence": "recorded product decision in econ_excluded.py, made at authoring time against the scheme"
+ },
+ {
+  "ref": "2022 HL Q15(b)(i)",
+  "reason": "answered by reading the euro–sterling exchange-rate chart printed with it",
+  "evidence": "\"Identify one period where the value of the Euro depreciates against the Pound ⟨4 + 4⟩ Sterling. Explain your answer. During the period December 2013 to December 2015. This can be seen as the amount of Sterling which can be bought per Euro declines from 0.80 pence to 0.70 pence approximately. OR During…\""
+ },
+ {
+  "ref": "2022 HL Q15(c)(i)",
+  "reason": "answered by reading two names off the EU-budget chart printed with it",
+  "evidence": "\"Using the data in the graph above, name the country which is the EU's largest contributor and which country is the EU's largest beneficiary. • Largest EU Contributor: GERMANY ⟨4 + 3⟩ • Largest EU Beneficiary: POLAND\""
+ },
+ {
+  "ref": "2022 HL Q16(c)(i)",
+  "reason": "the explanation beside a diagram, marked 10 for the drawing and 5 for the writing, with no split stated across the three effects (recorded EXCLUDED_TEXT class)",
+  "evidence": "Paper: 'Explain, with the use of a fully labelled diagram, how the introduction of minimum pricing...' Scheme: 'Effect on price Through imposing a minimum price' block welded to the diagram — recorded in econ_excluded.py."
+ },
+ {
+  "ref": "2022 HL Section A Q1(a)",
+  "reason": "the response is the worked PED calculation off the face-mask graph printed with it (and the formula reaches the markdown glyph-mangled)",
+  "evidence": "\"Using an appropriate formula, calculate the price elasticity of demand… Show all calculations. ⟨10⟩ ∆𝑄𝑄𝑄𝑄 𝑃𝑃1 + 𝑃𝑃2 ∆𝑃𝑃 × … −4 +1 × (4 + 5) (8 + 4) = −3\" — the scheme's whole answer is the worked sum."
+ },
+ {
+  "ref": "2022 HL Section A Q10(a)",
+  "reason": "a worked reading off the production possibility schedule printed with it (the class the seca docstring already records as deliberately uncarded)",
+  "evidence": "\"⟨6⟩ Calculate the opportunity cost of PepsiCo moving from point D to point H… • Tropicana decreases from 62 million litres to 0 litres. • Thus, the opportunity cost is 62 million litres of Tropicana\""
+ },
+ {
+  "ref": "2022 HL Section A Q2(a)",
+  "reason": "answered by a tick plus figures read off the Balance of Payments data printed with it — the read-the-data and tick classes combined",
+  "evidence": "Scheme p: 'Indicate by means of a tick (✓) whether it is expansionary or contractionary. Answer: Expansionary • Exports have increased by 6.4%...' ⟨9⟩ — the credit is the tick and the readings."
+ },
+ {
+  "ref": "2022 HL Section A Q4(a)",
+  "reason": "answered by ticking injection or leakage against each item in a table; the prose lives in (b), now carded as econ-2022-hl-sa-q4-b",
+  "evidence": "\"⟨3+3+2⟩ … Injection Leakage The Irish government increases public ✔ sector salaries by 1% in 2023. Irish exports increase to record €160 bn ✔ … Irish consumers saved more than ✔ €10bn…\""
+ },
+ {
+  "ref": "2022 HL Section A Q4(c)",
+  "reason": "the either/or slot prints one tariff ⟨3+2+2⟩, which maps onto (b)'s three justifications; no split is stated across (c)'s two reasons, so carding it would invent a tariff",
+  "evidence": "\"Answer either (b) or (c) ⟨3+2+2⟩ (b) In the box below justify each of your choices… [three bullets] OR (c) Outline two reasons why inflows of foreign direct investment…\" — the scheme PDF's marks column prints 3+2+2 once for the pair and nothing beside (c)."
+ },
+ {
+  "ref": "2022 HL Section A Q6(a)(i)",
+  "reason": "the explanation beside a diagram, with the tariff covering both — the printed cells sit against the question head with no split between the drawn answer and the explanation",
+  "evidence": "Scheme PDF p10 marks column prints only \"4 / 2 / 2\" beside the Q6 head lines; the answer is the completed Market/Firm diagram pair plus \"Explanation for the market: As firms outside the industry become aware of the SNPs… supply will shift to the right from S1 to S2…\""
+ },
+ {
+  "ref": "2022 HL Section A Q6(a)(ii)",
+  "reason": "same part-pair as Q6(a)(i): a drawing whose explanation is marked with the diagram under the unsplit 4/2/2",
+  "evidence": "\"Explanation for the firm: As the individual firm is described as a price-taker they must accept the price established by the industry, thus their price also decreases from P1 to P2.\" — no cell of its own in the marks column."
+ },
+ {
+  "ref": "2022 HL Section A Q6(b)",
+  "reason": "the scheme prints no tariff for this part (never guess a tariff), and its two bullets are welded mid-sentence",
+  "evidence": "Marks column empty beside (b) in the scheme PDF; the response reads \"• In the short run if AR is greater than AVC • The firm is making a loss but once it covers its average variable costs it will contributes towards its fixed cost then the loss from shutting down would be greater…\""
+ },
+ {
+  "ref": "2022 HL Section A Q6(c)",
+  "reason": "the scheme prints no tariff for this part",
+  "evidence": "Marks column empty beside (c): \"A firm is most efficient when it is producing at the minimum point of AC. … It will not be earning normal profit and so will be forced due to inefficiency to leave the industry.\" — no mark cell anywhere in the part."
+ },
+ {
+  "ref": "2022 HL Section A Q7(a)(i)",
+  "reason": "answered by ticking which of the two charts printed with it is correct",
+  "evidence": "\"Identify which chart accurately displays the correct trend in in the ECB rate… Choose by means of a tick one of the boxes below. ⟨1⟩ Figure A: Figure B: ✔\""
+ },
+ {
+  "ref": "2022 HL Section A Q7(a)(ii)",
+  "reason": "justifies the tick in (i) against the charts printed with it, and the scheme lists one response against a ⟨2 x 4⟩ tariff — one option for a claim of two",
+  "evidence": "\"(ii) Justify your choice in (i) above. ⟨2 x 4⟩ In the wake of the global financial crisis in 2007/2008 the European Central Bank gradually dropped its base interest rate to zero percent…\" — a single block, keyed to the Figure A/B choice."
+ },
+ {
+  "ref": "2022 OL Q11(a)(i)",
+  "reason": "a table completion answered by reading the streaming-services chart printed with it",
+  "evidence": "Which service has the highest market share? YouTube ⟨9+3⟩ Which service has the lowest market share? Vimeo"
+ },
+ {
+  "ref": "2022 OL Q11(b)(ii)",
+  "reason": "labels to be placed on a diagram; no wording to show (already recorded in econ_excluded.py)",
+  "evidence": "Cleary show and label on the diagram: • The output the firm will produce in equilibrium (use label Q1) ⟨4⟩ • The price the firm will charge for its output (use label P1) ⟨4⟩ • The average cost of producing this output (use point C1) ⟨1⟩"
+ },
+ {
+  "ref": "2022 OL Q12(a)(i)",
+  "reason": "a graph to be drawn from the demand schedule; the scheme's response is the drawn model graph",
+  "evidence": "Using the above information and on one diagram on the graph paper below ... (i) Draw and label the market demand curve for reusable coffee cups. ... Demand and Supply Curves Reusable Coffee Cups ⟨28⟩ ⟨(14 x 2)⟩"
+ },
+ {
+  "ref": "2022 OL Q12(a)(ii)",
+  "reason": "a graph to be drawn from the supply schedule; the scheme's response is the same drawn model graph, 14 marks per curve",
+  "evidence": "(ii) Draw and label the market supply curve for reusable coffee cups. ... ⟨28⟩ ⟨(14 x 2)⟩"
+ },
+ {
+  "ref": "2022 OL Q12(a)(iii)",
+  "reason": "P1 and Q1 marked on the student's own drawn diagram; the scheme prints no separate tariff for this step beyond the drawing block",
+  "evidence": "(iii) Show on your diagram: ▪ The market equilibrium price for reusable coffee cups (use P1) ▪ The market equilibrium quantity (use Q1) — answered only by the model graph, whose sole cells are ⟨28⟩ ⟨(14 x 2)⟩ over the two curves"
+ },
+ {
+  "ref": "2022 OL Q12(b)(ii)",
+  "reason": "a shift to be drawn on the printed diagram; no wording to show",
+  "evidence": "Show, on the above diagram how the change in (i) above might affect the demand ⟨8⟩ curve. Demand curve would shift to the right – D2 above on diagram."
+ },
+ {
+  "ref": "2022 OL Q12(b)(iii)",
+  "reason": "labels to be placed on the printed diagram; no wording to show",
+  "evidence": "Show, on the above diagram, the new equilibrium price (P2) and the new equilibrium ⟨6 + 6⟩ quantity (Q2) as a result of (ii) above – illustrated above."
+ },
+ {
+  "ref": "2022 OL Q13(a)(i)",
+  "reason": "the response is the worked percentage calculation",
+  "evidence": "Calculate current expenditure as a percentage of total government expenditure. Show your workings. €71.82 bn x 100 = 86.61% ⟨16⟩ €82.92 bn"
+ },
+ {
+  "ref": "2022 OL Q13(b)(ii)",
+  "reason": "the response is the worked multiplier calculation",
+  "evidence": "Assume that MPS is 0.1 and MPM is 0.4. Calculate, using the above formula, the size of the multiplier. ⟨12⟩ 0.1 + 0.4 = 2"
+ },
+ {
+  "ref": "2022 OL Q14(a)(i)",
+  "reason": "a table completion — the marks are for filling the factors-of-production table (already recorded in econ_excluded.py)",
+  "evidence": "Complete the table below to show your understanding of the factors of production used in the production of yogurt. Some of the information has been completed. ... ⟨24⟩ ⟨4 x 6⟩ ⟨(4+2)⟩ 1st x 4 2nd x 2"
+ },
+ {
+  "ref": "2022 OL Section A Q1(i)",
+  "reason": "a table completion answered by reading the growth chart printed with it",
+  "evidence": "State the year with the highest rate of economic growth: 2022 ⟨6+3⟩ State the year with the lowest rate of economic growth: 2020"
+ },
+ {
+  "ref": "2022 OL Section A Q4",
+  "reason": "answered by ticking substitute or complementary against each product (already recorded in econ_excluded.py)",
+  "evidence": "identify by placing a tick (✓) which two items are substitute goods ⟨3 x 2⟩ and which two items are complementary goods for the iPhone 13. Substitute Goods Complementary Goods Samsung S21 ✓ iPhone 13 case ✓"
+ },
+ {
+  "ref": "2022 OL Section A Q6(i)",
+  "reason": "answered by reading the unemployment graph printed with it",
+  "evidence": "Identify the two months when the number of people unemployed was at its highest. Month 1: March (2021) ⟨6+3⟩ Month 2: April (2021)"
+ },
+ {
+  "ref": "2022 OL Section A Q7(a)(ii)",
+  "reason": "answered by ticking fixed or variable against each cost in a table; no wording for a card to carry",
+  "evidence": "Indicate by means of a tick (✓) which of the costs in the table below are fixed costs and which costs are variable costs. ⟨4+4+1+1⟩ Fixed Cost Variable Cost Wages €1,000 ✓ Raw Materials €1,500 ✓"
+ },
+ {
+  "ref": "2022 OL Section A Q7(b)(i)",
+  "reason": "the response is the worked total-cost calculation",
+  "evidence": "€1,000 + €1,500 + €300 + €750 = €3,550 ⟨10⟩ -1 if € omitted"
+ },
+ {
+  "ref": "2022 OL Section A Q7(b)(ii)",
+  "reason": "the response is the worked net-profit calculation",
+  "evidence": "Total revenue – Total Costs = Net Profit €5,000 - €3,550 = €1,450 ⟨5⟩ ⟨(2+2+1)⟩"
+ },
+ {
+  "ref": "2022 OL Section A Q9(i)",
+  "reason": "the response is the worked elasticity calculation (already recorded in econ_excluded.py)",
+  "evidence": "∆Q 45,000 – 30,000 = 15,000 ∆P €500 – €750 = -€250 ... = - 1 (must have the – sign) ⟨13⟩"
+ },
+ {
+  "ref": "2023 HL Q11(a)(i)",
+  "reason": "the response is the worked percentage-change calculation (sibling class of the many recorded 'worked calculation' exclusions)",
+  "evidence": "calculate the ⟨8⟩ (i) percentage change in the Irish population from 2016 to 2022. Show your workings. 4761865 × 100 = 7.59 % - 1 Mark if % omitted"
+ },
+ {
+  "ref": "2023 HL Q12(a)(iii)",
+  "reason": "already recorded in econ_excluded.py: 'the explanation is worth 8 over five steps and the scheme states no split'",
+  "evidence": "⟨9⟩⟨8⟩ … Q Quantity 1 mark per label = 9 marks … Explanation: • Equilibrium is at point E (where MC = MR). • Firms produce quantity Q. • They sell the output at price P."
+ },
+ {
+  "ref": "2023 HL Q12(b)(i)",
+  "reason": "the response is the worked HHI calculation (the squares flatten in extraction; cf. the recorded 2025 HL Q11(a)(i) HHI exclusion)",
+  "evidence": "calculate the Herfindahl Hirschman Index for Irish Dairy Producers. Show your workings. 482 + 272 + 82 + 72 + 32 + 32 + 22 + 22 = 3172 ⟨9⟩"
+ },
+ {
+  "ref": "2023 HL Q13(a)(i)",
+  "reason": "labels to be placed on a drawn diagram; the credit is the thirteen labelled components of the circular-flow drawing itself, no separable wording (recorded diagram-labels class)",
+  "evidence": "Scheme p.23: 'Draw a fully labelled diagram showing the Circular Flow of Income... ⟨13 @ 1⟩ Households Firms Purchase of Goods and Services Government Financial Institutions Foreign Markets' — the labels annotate the scheme's own drawing; econ_parts finds no response lines."
+ },
+ {
+  "ref": "2023 HL Q13(b)(i)",
+  "reason": "the response is the worked MPS calculation (worked-calculation class)",
+  "evidence": "Scheme: 'Calculate the marginal propensity to save (MPS)... Show your workings. 1- MPC 1-0.7 ⟨6⟩ MPS = 0.3 ⟨3 @ 2⟩'"
+ },
+ {
+  "ref": "2023 HL Q13(b)(ii)",
+  "reason": "the response is the worked multiplier calculation (worked-calculation class)",
+  "evidence": "Scheme: 'Calculate the value of the multiplier... 1/(MPS+MPM) = 1/(0.3+0.2) = 2 ⟨8⟩ ⟨4 @ 2⟩'"
+ },
+ {
+  "ref": "2023 HL Q13(b)(iii)",
+  "reason": "the response is the worked injection calculation off the multiplier from (b)(ii)",
+  "evidence": "How much will the government have to inject into this economy if it wants the economy to operate at its full employment level? Show your workings. €750m - €500m 2 = €250m 2 250/2 2 = Injection ⟨8⟩ €125m 2"
+ },
+ {
+  "ref": "2023 HL Q14(a)(i)",
+  "reason": "every response reads the unemployment chart printed beside it (established class — the recorded 2021 HL Q14(a)(i) is the same shape)",
+  "evidence": "• Between March 2021 and September 2022, the unemployment rate fell. It fell from 7.6% to approximately 4.4%. This is a decrease of 3.2%. • Between May 2022 and September 2022 the unemployment rate rose. It rose from 4.2% to 4.4%. ⟨8⟩ ⟨(4+4)⟩"
+ },
+ {
+  "ref": "2023 HL Q15(a)(iii)",
+  "reason": "the response is the worked composite price index table — figures and arithmetic, not prose",
+  "evidence": "Using the information in the table below , complete the table … 55 X 100 = 110 x 60% = 66.0 Food 60% 50 55 … Price Index for the ⟨112.2⟩ 100% current Year"
+ },
+ {
+  "ref": "2023 HL Q15(b)(ii)",
+  "reason": "answered by reading the exchange-rate graph printed beside it (established chart-reading class)",
+  "evidence": "0.9 Euro (€) to Stg (£) 0.87 0.86 01/09/2022 01/10/2022 01/11/2022 Answer: Depreciation Explanation: Between 01/09/2022 and 01/11/2022 the conversion rate of the Euro to Pound Sterling falls from 0.90 to 0.86."
+ },
+ {
+  "ref": "2023 HL Q16(a)(i)",
+  "reason": "the scheme attributes no tariff to this part: on scheme p.35 the marks column prints 4, 4, 7, 8, 5 and all of 4/4/7/8 sit between (ii)'s marker (y=170) and (iii)'s (y=566) with nothing beside (i)'s two definitions (y=97–127); (a)'s block total 28 minus (iii)'s 5 leaves no stated split between (i) an",
+  "evidence": "(i) Distinguish between the economic terms individual demand and market demand. 28 • Individual Demand refers to the quantity of a good or service an individual consumer is willing to purchase at various prices. • Market Demand refers to … [marks column beside this part: none]"
+ },
+ {
+  "ref": "2023 HL Q16(a)(ii)",
+  "reason": "already recorded in econ_excluded.py: 'the explanation beside a diagram, with the tariff covering both' — cells read 4/4/7/8 across the part with no stated drawing/prose split",
+  "evidence": "Demonstrate, with the use of a fully labelled diagram, the impact this new scheme will possibly have on the market equilibrium for petrol/diesel cars. … • The demand curve will shift to the left from D1 to D2. … marks column: 4 4 7 8"
+ },
+ {
+  "ref": "2023 HL Section A Q10",
+  "reason": "already recorded in econ_excluded.py: 'the responses are the national-accounts workings, not prose'",
+  "evidence": "Gross National Product (GNP) at Current Market Prices: €323bn + EU subsidies €1.7 bn - EU taxes €0.5bn … Gross National Income at Current Market Prices: €324.2 bn - Adjustments: €89 bn C = Modified Gross National Income ⟨2 @ 6⟩"
+ },
+ {
+  "ref": "2023 HL Section A Q3(a)",
+  "reason": "a table completion with worked figures — the marks are for the utility columns and workings, not prose (same class as the recorded Q4(a))",
+  "evidence": "Complete the missing total utility and marginal utility figures in the table below. Show your workings. … Workings: • 80 – 40 = 40 • 80 + 35 = 115 • 137 – 115 = 22"
+ },
+ {
+  "ref": "2023 HL Section A Q3(b)",
+  "reason": "answered by reading the marginal-utility figures the student calculated in 3(a) — the established leave-alone class of parts worked to the student's own earlier answer",
+  "evidence": "• Answer: on the consumption of the third unit/after the consumption of the second unit. • Marginal utility declines from 40 to 35 utils."
+ },
+ {
+  "ref": "2023 HL Section A Q3(c)",
+  "reason": "the response is the worked equi-marginal ratio calculation (and it needs the printed formula figure besides)",
+  "evidence": "𝑀𝑈𝑥 = 𝑀𝑈𝑦 𝑃𝑥 = 1800 10 𝑃𝑦 = 3600 10 ⟨6⟩ • No, because: • 1800 ÷ 10 = 180 • 3600 ÷ 10 = 360 therefore the ratio is not the same."
+ },
+ {
+  "ref": "2023 HL Section A Q4(a)",
+  "reason": "already recorded in econ_excluded.py: 'a table completion — the marks are for filling the table, not for prose'",
+  "evidence": "Complete the missing average cost and marginal cost figures in the table below. ⟨6⟩ … Workings: • 82 ÷ 2 = 41 • 108 - 82 = 26 • 152 ÷ 4 = 38 • 152 – 108 = 44"
+ },
+ {
+  "ref": "2023 HL Section A Q6(a)",
+  "reason": "answered by ticking direct or indirect against each tax in a table; no wording for a card to carry (established class, cf. 2024 OL Section A Q2(a), 2022 OL Section A Q4)",
+  "evidence": "indicate by placing a tick (✓) whether the tax is an example of direct taxation or indirect taxation. Tax Direct Tax Indirect Tax VAT ✓ PAYE ✓ ⟨6⟩ Customs and Excise Duty ✓"
+ },
+ {
+  "ref": "2023 OL Q11(b)(ii)",
+  "reason": "Already registered in econ_excluded.py: 'labels to be placed on a diagram; no wording to show' — the response is Q1/P1/C1 placed on the printed long-run equilibrium diagram (2022 and 2024 OL siblings registered identically).",
+  "evidence": "Scheme p.13: '• The output the firm will produce in the equilibrium (use label Q1) 1st @ 4 • The price the firm will charge for its output (use label P1) 2nd@ 4 • The average cost of producing this output (using point C1) 3rd @ 1' followed only by the completed diagram."
+ },
+ {
+  "ref": "2023 OL Q12(a)(i)",
+  "reason": "The answer is calculated off the pie chart printed with it and the response is the worked calculation — both registered classes ('2024 HL Section A Q1(a)'; the worked-calculation family).",
+  "evidence": "Scheme p.15: '⟨16⟩ ⟨6 @ 2⟩ Ans:4 €27.5m + €14m + €17m + €27.5m + €2m + €7m = € 95 million. Deduct 1 mark each for omission of € and million.'"
+ },
+ {
+  "ref": "2023 OL Q12(a)(ii)",
+  "reason": "Worked to the student's own earlier answer — the part says 'Using your answer from (i) above' — and the response is the worked percentage calculation.",
+  "evidence": "Scheme p.15: '⟨12⟩ ⟨4 @ 3⟩ €27.5m / €95m x 100 = 28.94% / 29%. Deduct 1 mark for omission of % sign.'"
+ },
+ {
+  "ref": "2023 OL Q13(a)(i)",
+  "reason": "Answered only by reading the bar chart printed beside it.",
+  "evidence": "Scheme p.17: 'State the year with the highest value in food and drink exports from Ireland. 2019 1st@ 8 / State the year with the lowest value in food and drink exports from Ireland. 2016 2nd@ 4' — under the Bord Bia bar chart."
+ },
+ {
+  "ref": "2023 OL Q13(b)(ii)",
+  "reason": "Already registered in econ_excluded.py: 'the response is the worked calculation' — a card would show the answer beside the sum that produces it.",
+  "evidence": "Scheme p.18: 'National Income: ⟨18⟩ ⟨6 @ 3⟩ Y = C + I + G + (X-M); Y = €700m+ €200m + €400m + €300m - €200m; Y = €1,400m. Balance of Trade: ⟨9⟩ ⟨3 @ 3⟩ Exports – Imports; €300m – €200m = €100m.'"
+ },
+ {
+  "ref": "2023 OL Q14(a)(i)",
+  "reason": "Every response describes the shape of the petrol-price line graph printed with it — the registered chart-reading class.",
+  "evidence": "Scheme p.20: '⟨10⟩ ⟨(6+4)⟩ From April to June 2022, petrol prices increased steadily. Prices rose from €1.80 to over €2.10. From June 2022 to September 2022 petrol prices fell.'"
+ },
+ {
+  "ref": "2023 OL Q14(b)(i)",
+  "reason": "The response is the worked total-revenue calculation (registered class, e.g. '2025 HL Q15(b)(i)').",
+  "evidence": "Scheme p.21: '⟨18⟩ ⟨3 @ 6⟩ Total revenue = Price x Quantity = €15 x 400 units = €6,000. Deduct 1 for omission of € sign.'"
+ },
+ {
+  "ref": "2023 OL Q14(b)(ii)",
+  "reason": "The response is the worked profit calculation, and it takes the €6,000 from the student's own answer to (i).",
+  "evidence": "Scheme p.21: '⟨9⟩ ⟨3 @ 3⟩ Profit = Total revenue – Total cost = €6,000 - €4,500 = €1,500. Deduct 1 for omission of € sign.'"
+ },
+ {
+  "ref": "2023 OL Q15(a)(i)",
+  "reason": "Pre-emptive, not on the ask list: this part will fall open the moment the shipped mis-citation of econ-2023-ol-q15-a-i is corrected to Q15(c)(i). It is the worked percentage calculation off the vehicles-licensed infographic — both registered leave-alone classes.",
+  "evidence": "Scheme p.23: '⟨20⟩ ⟨5 @ 4⟩ 101, 853 + 68, 042 / 208 913 x 100 = 81.32%. Deduct 1 mark for omission of % sign.'"
+ },
+ {
+  "ref": "2023 OL Q15(b)(i)",
+  "reason": "A graph to be drawn; the scheme's response is the drawn figure itself with no creditable components itemised in prose — the registered class of '2024 OL Q13(a)(i)' and '2025 OL Q13(b)(i)'. Not figureNeeded: there is no wording to card even with a crop.",
+  "evidence": "Scheme p.24: '(i) Draw and label (include the axes) the market demand curve for electric cars. ⟨16⟩ ⟨4 @ 4⟩' followed only by the drawing: 'Price / D / D2 / Quantity'."
+ },
+ {
+  "ref": "2023 OL Q15(b)(ii)",
+  "reason": "The shift is shown on the student's own (b)(i) diagram and the scheme never says which of the printed 6/3 pays the drawing versus the words — the class of the registered '2024 OL Q15(b)(ii)' and '2025 OL Q15(b)(ii)' ('the explanation beside a diagram'); assigning the split would invent a tariff.",
+  "evidence": "Scheme p.24: '⟨9⟩ ⟨(6+3)⟩ The demand curve shifts to the right. Consumers can afford to buy more.' against 'show how this would affect the market demand curve in (i) above. Explain your answer.'"
+ },
+ {
+  "ref": "2023 OL Section A Q1(i)",
+  "reason": "Answered only by reading the unemployment chart printed beside it — the registered chart-reading class ('2021 HL Q14(a)(i)', '2025 HL Q12(a)(i)'); the card would test chart-reading, not economics.",
+  "evidence": "Scheme p.5: '(i) Identify the month when unemployment was at its lowest. July 2022 ⟨8⟩' — printed directly under the CSO unemployment-rate chart."
+ },
+ {
+  "ref": "2023 OL Section A Q1(ii)",
+  "reason": "Every response reads figures off the unemployment chart printed beside it.",
+  "evidence": "Scheme p.5: 'Overall trend ⟨4⟩ Unemployment rose between July 2022 and January 2023. From 4.3% to 4.4% … In July, unemployment stood at 4.3%. It rose to 4.4% in August and remained at the same rate in September.'"
+ },
+ {
+  "ref": "2023 OL Section A Q4(a)(i)",
+  "reason": "Answered by ticking which firm is in a monopoly — the exact class of the registered '2025 OL Section A Q8(i)': no wording for a card to carry.",
+  "evidence": "Scheme p.8: 'Identify, with a tick (✓), which of the following firms exist in a monopoly market structure in Ireland ⟨8⟩ … Aer Lingus / Iarnród Eireann (Irish Rail) ✓ / VHI'."
+ },
+ {
+  "ref": "2024 HL Q11(a)(i)",
+  "reason": "Already recorded in econ_excluded.py: the response is the worked calculation.",
+  "evidence": "Scheme p.15: 'Workings: 737,600 - 380,000 = 357,600; 357,600/380,000 × 100 = 94.11% / 94% Increase — 1 mark if % omitted' ⟨8⟩."
+ },
+ {
+  "ref": "2024 HL Q11(b)(i)",
+  "reason": "Already recorded in econ_excluded.py: the response is the worked multiplier calculation.",
+  "evidence": "Scheme p.16: '⟨12⟩ Method 1: Workings: MPS = 1- 0.6 = 0.4; 1/(0.22 + 0.3 + 0.4) = 1/0.92; Answer = 1.08', plus a ⟨4⟩ meaning explanation."
+ },
+ {
+  "ref": "2024 HL Q12(b)(i)",
+  "reason": "Answered only by reading the CPI graph printed beside it — the paper instructs 'Use figures from the graph'.",
+  "evidence": "Scheme p.24: 'The overall trend of the CPI between March and October is decreasing. It has decreased by almost 3%. It has decreased from just under 8% in March 2023 to approx.. 5% in October 2023.' ⟨6⟩."
+ },
+ {
+  "ref": "2024 HL Q12(b)(ii)",
+  "reason": "A calculation grid completed on the paper; the scheme's response is the worked composite-price-index table, ⟨19⟩ in one lump with no per-step tariff printed (the bracketed cells are answer values, not marks).",
+  "evidence": "Scheme p.24: 'Food 65% 60 66 — 66/60 × 100 = 110 × 65% ⟨71.5⟩; Transport 45/30 × 100 = 150 × 20% ⟨30.0⟩; Other 96/80 × 100 = 120 × 15% ⟨18⟩; Price Index for the current year ⟨119.5⟩'."
+ },
+ {
+  "ref": "2024 HL Q13(a)(i)",
+  "reason": "The response is the worked percentage calculation off the census table printed with it (mirrors registered '2025 HL Q13(a)(i)': the worked percentage calculation).",
+  "evidence": "Scheme p.27: '190,333/361,671 × 100 = 52.63% ⟨8⟩ (-1 for omission of %)'."
+ },
+ {
+  "ref": "2024 HL Q14(b)(i)",
+  "reason": "Already recorded in econ_excluded.py: the explanation is marked as a block and the scheme states no split.",
+  "evidence": "Scheme p.35: diagram itemised 'Diagram: ⟨12⟩ Price P C Q Qty MR AR AC MC E T A ⟨(12 x 1)⟩' but the six numbered written points (1. Equilibrium … 6. Scarce resources) share a block ⟨9⟩ with no per-point split."
+ },
+ {
+  "ref": "2024 HL Q14(c)(ii)",
+  "reason": "Already recorded in econ_excluded.py: the response is the worked real-interest-rate calculation.",
+  "evidence": "Scheme p.36: 'Nominal interest rate – Inflation rate = Real rate of interest; 2.25% – 5.50% = - 3.25% (-1 for omission of %)' ⟨8⟩."
+ },
+ {
+  "ref": "2024 HL Q15(a)(i)",
+  "reason": "The response is the worked percentage calculation off the chart printed with it (same class as registered '2024 HL Q11(a)(i)').",
+  "evidence": "Scheme p.38: '$43 - $22 = $21; 21/22 × 100 = 95.45% (-1 for omission of %)' ⟨8⟩."
+ },
+ {
+  "ref": "2024 HL Q16(b)(ii)",
+  "reason": "Already recorded in econ_excluded.py: the response is the worked elasticity calculation.",
+  "evidence": "Scheme p.45: '⟨9⟩ Workings: +30/+10,000 × (40,000+50,000)/(150+180) = 90,000/330 = + 0.8', plus a ⟨4⟩ meaning explanation."
+ },
+ {
+  "ref": "2024 HL Q16(b)(iii)",
+  "reason": "Already recorded in econ_excluded.py: the response is the worked elasticity calculation.",
+  "evidence": "Scheme p.45: 'If income falls by 5%, then sales will be expected to fall by (5% x 5.2) = 26%… 26% of 10,000 units = 2,600 units. Expected sales… 10,000 – 2,600 = 7,400 units.' ⟨6⟩."
+ },
+ {
+  "ref": "2024 HL Section A Q1(a)",
+  "reason": "Already recorded in econ_excluded.py: the answer is calculated off the infographic printed with it.",
+  "evidence": "Scheme p.5: 'From the data above, calculate the balance of payments, current account balance… Workings: €76bn + €91bn = €167bn; €38bn + €83bn = €121bn; €46 bn — Surplus or Deficit? Surplus' ⟨6⟩."
+ },
+ {
+  "ref": "2024 HL Section A Q10(a)(i)",
+  "reason": "The paper completes this part for the student — nothing is asked of them.",
+  "evidence": "Paper: 'use the information above to calculate part (ii). Part (i) has been completed for you.' Scheme p.14: '(i) = Gross National Product (GNP) at Current Market Prices Ans: €325 bn'."
+ },
+ {
+  "ref": "2024 HL Section A Q10(a)(ii)",
+  "reason": "The response is the worked national-accounts calculation (mirrors registered '2023 HL Section A Q10': the responses are the national-accounts workings, not prose).",
+  "evidence": "Scheme p.14: 'GNP at CMP €325bn + EU subsidies +€2bn = €327bn – EU taxes -€0.5bn = €326.5bn; (ii) = Gross National Income at Current Market Prices Ans: €326.5 bn' ⟨6⟩."
+ },
+ {
+  "ref": "2024 HL Section A Q3(a)",
+  "reason": "A drawing made on the diagram printed with it; the scheme prints only the altered model diagram under a block ⟨6⟩ with no itemised creditable components.",
+  "evidence": "Scheme p.7: 'Illustrate, on the diagram below, how the European Commission's proposal above would alter the diagram. ⟨6⟩' followed only by the drawn model: 'Price MWh S / Pe / P1 (€200) / Excess Demand / D / S1 Qe D1 Quantity of electricity'."
+ },
+ {
+  "ref": "2024 HL Section A Q4(a)",
+  "reason": "Answered by reading/completing the capital-to-labour ratio table printed with it — the tick and the scenario explanation are worked off the table under a block ⟨6⟩ (mirrors registered '2023 HL Section A Q4(a)': a table completion).",
+  "evidence": "Scheme p.8: '2022 2023 / No. of machines 5 10 / No. of workers 5 5 / RATIO 1:1 2:1 / Capital Widening Capital Deepening ✓ — Capital deepening is occurring in this scenario because in 2023 the firm is employing 2 machines per worker compared to 2022…' ⟨6⟩."
+ },
+ {
+  "ref": "2024 HL Section A Q5(a)",
+  "reason": "The marks are for a drawing; the scheme prints only the model diagram under a block ⟨8⟩, with no itemised creditable components to card.",
+  "evidence": "Scheme p.9: 'Using the information above, illustrate with the aid of a fully labelled diagram how a shortage of tickets for this concert may arise. ⟨8⟩' — the answer is the drawn diagram; the only text the extractor reads off it is '€97.10'."
+ },
+ {
+  "ref": "2024 OL Q11(a)(i)",
+  "reason": "Answered by reading the electricity-price chart printed beside it — the established chart-lookup class (2021 HL Q14(a)(i) etc.).",
+  "evidence": "Scheme p13: '(i) 1st @ 8 / 2nd @ 4 — Which company had the highest price increase? Flogas. Which company had the lowest price increase? Electric Ireland' — both read off the SEAI chart."
+ },
+ {
+  "ref": "2024 OL Q11(b)(ii)",
+  "reason": "Already recorded in econ_excluded.py: labels to be placed on a diagram; no wording to show.",
+  "evidence": "Scheme p15: '(ii) Equilibrium occurs at point E on the diagram above. ⟨3⟩ Clearly show and label on the above diagram: • The output the firm will produce in equilibrium (use label Q1) • The price the firm will charge for its output (use label P1)'."
+ },
+ {
+  "ref": "2024 OL Q12(a)(i)",
+  "reason": "The response is the worked percentage calculation off the employment infographic — the established calculation class (matches the recorded 2024 OL Q14(a)(i)).",
+  "evidence": "Scheme p18: 'Workings: ⟨18⟩ ⟨6 @ 3⟩ 2,574,500 − 2,506,000 = 68,500; 68,500/2,506,000 × 100 = 2.73% (-1 for omission of %)' — and the paper works 'from the data given on the left-hand side of the infographic'."
+ },
+ {
+  "ref": "2024 OL Q12(c)(i)",
+  "reason": "Every response reads the unemployment chart printed with it — the established chart-lookup class (2025 HL Q12(a)(i)).",
+  "evidence": "Scheme p21: '(i) Identify the overall trend in Irish unemployment using figures from the graph above. ⟨6⟩ Based on the above data, the rate of unemployment in Ireland remained broadly stable or slightly increased in 2022. The highest recorded rate peaked at just 4.5% and the lowest rate at 4.3%.'"
+ },
+ {
+  "ref": "2024 OL Q13(a)(i)",
+  "reason": "Already recorded in econ_excluded.py: a graph to be drawn on the answer-book graph paper; the responses are its axis and line values, welded across the data table.",
+  "evidence": "Scheme p22: 'On the graph paper provided, draw and label: • the fixed costs … • the variable costs … ⟨12⟩ Axes: ⟨2 @ 2⟩ FC @ 3 VC @ 5' over the table 'Fixed Costs in € 600 600 600 / Variable Costs in € 500 600 700 ⟨800⟩'."
+ },
+ {
+  "ref": "2024 OL Q13(b)(i)",
+  "reason": "Answered by reading the food-price-inflation chart printed beside it — the chart-lookup class.",
+  "evidence": "Scheme p23: '(i) Which country had the lowest food price inflation? Switzerland (1st @ 8) / Which country had the highest food price inflation? Turkey (2nd@ 5)' — read off the annual food-price-inflation bar chart."
+ },
+ {
+  "ref": "2024 OL Q14(a)(i)",
+  "reason": "Already recorded in econ_excluded.py: the response is the worked percentage calculation (two chained calculations off the expenditure chart).",
+  "evidence": "Scheme p27: '⟨12⟩ ⟨5 @ 1⟩ €23.4bn + €9.63bn + €3.91bn + €3.98bn + €3.30bn = €44.22 billion (-1 for omission of bn and -1 for omission of €)' then '⟨8⟩ ⟨3 @ 1⟩ €9.63bn/€44.22bn × 100 = 21.78%'."
+ },
+ {
+  "ref": "2024 OL Q14(b)(ii)",
+  "reason": "Already recorded in econ_excluded.py: answered by ticking direct or indirect, with one ⟨7⟩ tariff over tick plus explanation and no stated split.",
+  "evidence": "Scheme p29: '(ii) Indicate with a tick (✔) below whether VAT is an example of a direct tax or an indirect tax. Explain your choice. ⟨7⟩ Direct tax / Indirect tax ✔ Explanation: VAT is a tax on spending / on goods and services. It is placed on the consumer / user and is collected through a third party.'"
+ },
+ {
+  "ref": "2024 OL Q14(c)(i)",
+  "reason": "Already recorded in econ_excluded.py: the response is the worked balance-of-trade calculation.",
+  "evidence": "Scheme p31: '⟨16⟩ ⟨4 @ 3⟩ Workings: Balance of trade: Total exports – Total imports = €165.7bn – €103.7bn = €62bn (-1m for omission of € or bn) … Surplus ✔ … The Balance of Trade is a surplus because the exports are greater than the imports. ⟨4⟩'"
+ },
+ {
+  "ref": "2024 OL Q15(a)",
+  "reason": "A table completion — the factor names and explanations are welded across the Name/Explanation/Example columns in the flattened text, so no contiguous slice exists (class of 2023 HL Section A Q4(a), 2022 OL Q14(a)(i)).",
+  "evidence": "Scheme p33: '⟨20:⟩ ⟨3 @ 5⟩ ⟨1 @ 3⟩ ⟨1 @ 2⟩ Complete the table by either naming or explaining each factor of production' — flattening to 'Name of Explanation of Example Factor of Production Factor of Production and Farm Machinery Capital … The one taking a risk in setting Farm Owners Enterprise up the farm in return for profit.'"
+ },
+ {
+  "ref": "2024 OL Q15(b)(i)",
+  "reason": "A supply-curve shift drawn on the diagram printed with the question; the ⟨3 @ 5⟩ names no written components, so there is no wording to show and no split the scheme states.",
+  "evidence": "Scheme p34: '⟨15⟩ ⟨3 @ 5⟩ … (i) As a result, the increase in fertiliser prices has affected the supply of Irish farm output. Show the effect of this development on the diagram above.' — the answer is the drawn S1→S2 shift with E2/Pe2/Qe2 on the printed diagram."
+ },
+ {
+  "ref": "2024 OL Q15(b)(ii)",
+  "reason": "Already recorded in econ_excluded.py (and EXCLUDED_TEXT): the explanation beside a diagram — five chained bullets describing the drawn shift, with no stated split of the ⟨9⟩ across them.",
+  "evidence": "Scheme p34: '(ii) Explain your answer. ⟨9⟩ • As the cost of fertiliser has risen many farmers have had to reduce its usage … • Consequently, the supply curve shifts left from S1 to S2 … • a new higher equilibrium price (Pe2) and • a new lower equilibrium quantity (Qe2).'"
+ },
+ {
+  "ref": "2024 OL Q15(c)(i)",
+  "reason": "Already recorded in econ_excluded.py: the response is the worked elasticity calculation.",
+  "evidence": "Scheme p35: '⟨20⟩ ⟨10 @ 2⟩ Workings: −40/+40 × (100+140)/2 ÷ (90+50)/2 … Answer: -1.71 (-2 for omission of – sign)'."
+ },
+ {
+  "ref": "2024 OL Section A Q10",
+  "reason": "Already recorded in econ_excluded.py: answered by ticking which diagram applies, with the ⟨4⟩ explanation reading the printed diagrams; the extractor also cannot separate its responses from the Section B header beneath them.",
+  "evidence": "Scheme p12: 'Indicate, by means of a tick (✔), whether Diagram A or Diagram B shows its new market equilibrium position … ⟨8⟩ Diagram A ✔ … Explain your answer … ⟨4⟩ • The demand curve shifts to the right (D2). …'"
+ },
+ {
+  "ref": "2024 OL Section A Q2(a)",
+  "reason": "Already recorded in econ_excluded.py: answered by ticking a box in a table, with the explanation half of a 1st@8/2nd@4 tariff welded to the tick.",
+  "evidence": "Scheme p6: 'Indicate using a tick (✔) in the table below if the above measure is an example of a company using price competition or non-price competition. Explain your answer. 1st @ 8 / 2nd @ 4 … Non-price competition ✔ Explanation: Lidl is competing with other supermarkets to increase its sales / market share by means other than changing its prices for all its customers.'"
+ },
+ {
+  "ref": "2024 OL Section A Q3(a)",
+  "reason": "Answered by ticking true or false against each statement; the scheme prints only the two ticks, no wording for a card to carry.",
+  "evidence": "Scheme p8: 'Indicate by means of a tick (✔) whether you regard each statement below to be true or false. Statement True False 1. Barriers to entry exist in the Irish coffee shop market. ✔ [False] 2. The demand curve / average revenue curve … is downward-sloping from left to right. ✔ [True]' (1st @ 8, 2nd @ 4)."
+ },
+ {
+  "ref": "2024 OL Section A Q5",
+  "reason": "Answered by ticking import or export with the reason welded across the table columns — the flattened text interleaves the reason with the row labels, so no contiguous slice exists (same class as 2022 OL Section A Q4).",
+  "evidence": "Scheme p10 flattens to: 'Farmers in This is a visible export. Ireland selling The money leaves Germany and goes 1. beef to the ✔ into the Irish economy / it is an inflow German market. of funds to Ireland.' (⟨2 @ 6⟩)."
+ },
+ {
+  "ref": "2024 OL Section A Q7",
+  "reason": "Answered by ticking positive or normative against each statement; no prose printed at all.",
+  "evidence": "Scheme p11: 'Study the statements below and indicate, by placing a tick (✔) in the correct box which is a positive statement and which is a normative statement. … The introduction of the plastic bag levy … ✔ [Positive] / The government should increase the amount of the old age pension … ✔ [Normative]' (1st @ 8, 2nd@ 4)."
+ },
+ {
+  "ref": "2024 OL Section A Q8(i)",
+  "reason": "NEW candidate: answered by reading the Gini-coefficient chart printed with it — the established chart-read leave-alone class (cf. recorded 2022 HL Section A Q2(a)).",
+  "evidence": "From the data given, state in the boxes below, which country has the lowest level of inequality... (i) Country with the lowest level of inequality. Slovakia [1st @ 8]"
+ },
+ {
+  "ref": "2024 OL Section A Q8(i) and Q8(ii)",
+  "reason": "Both halves are answered by reading the Gini-coefficient chart printed with the question — the established chart-lookup leave-alone class.",
+  "evidence": "Scheme p11: 'From the data given, state in the boxes below, which country has the lowest level of inequality and which country has the highest level of inequality. (i) … Slovakia (ii) … USA' (1st @ 8, 2nd@ 4) — read off the OECD bar chart (Slovakia 0.22, USA 0.38)."
+ },
+ {
+  "ref": "2024 OL Section A Q8(ii)",
+  "reason": "NEW candidate: answered by reading the Gini-coefficient chart printed with it — same chart-read class as Q8(i).",
+  "evidence": "(ii) Country with the highest level of inequality. USA [2nd @ 4]"
+ },
+ {
+  "ref": "2025 HL Q11(a)(i)",
+  "reason": "worked HHI calculation — already recorded in econ_excluded.py",
+  "evidence": "Workings: HHI Model: 49% 492 = 2,401 28% 282 = 784 20% 202 = 400 3% 32 = 9 2,401 + 784 + 400 + 9 = 3,594 Justify: … an HHI greater than 2,500 indicates a highly concentrated market"
+ },
+ {
+  "ref": "2025 HL Q11(b)(i)",
+  "reason": "monopoly diagram to draw, with the ⟨9⟩ explanation spread over six bullet steps and no per-step split stated — already recorded in econ_excluded.py",
+  "evidence": "Explain, with the aid of a fully clearly labeled diagram (including the axes), the long-run equilibrium position … ⟨12⟩ Explanation: ⟨9⟩ • Equilibrium is at point E where MC = MR (and MC is rising). • The company produces Q1. …"
+ },
+ {
+  "ref": "2025 HL Q12(a)(i)",
+  "reason": "every response reads the government-debt chart printed with it — already recorded in econ_excluded.py",
+  "evidence": "There is a clear downward trend in government debt as a percentage of GNI*. • In 2021, it was 101%. • It fell to 82% in 2022. • It continued to decline to 76% in 2023…"
+ },
+ {
+  "ref": "2025 HL Q13(a)(i)",
+  "reason": "worked percentage calculation — already recorded in econ_excluded.py",
+  "evidence": "Workings: Ireland's exports to the US Ireland's total goods exports × 100 … €34 bn x 100 €108 bn … Answer: 31.48% / 32% Deduct 1 mark for omission of %"
+ },
+ {
+  "ref": "2025 HL Q14(b)(i)",
+  "reason": "a graph to be completed on graph paper; the responses are its axis and equilibrium labels — already recorded in econ_excluded.py",
+  "evidence": "complete on the graph paper provided below: ⟨17:⟩ • The market demand curve for Scentastic. ⟨17 x 1⟩ • The market supply curve … Complete Axes: ⟨2⟩ … D:6 S:6 Equil"
+ },
+ {
+  "ref": "2025 HL Q15(b)(i)",
+  "reason": "worked RPPI percentage calculation — already recorded in econ_excluded.py",
+  "evidence": "Workings: 10.1 – 7.4 = 2.7% August 2024 −March 2024 × 100 March 2024 … Answer: 36.48% Deduct 1 mark for omission of %"
+ },
+ {
+  "ref": "2025 HL Q16(a)(i)",
+  "reason": "table completion, marks for the figures — already recorded in econ_excluded.py",
+  "evidence": "Label A (Variable Cost) Workings: Total cost minus Fixed cost = Variable cost €70 - €60 = €10 Label B (Average Cost) Workings: … Answer = €1.92"
+ },
+ {
+  "ref": "2025 HL Q16(a)(ii)",
+  "reason": "worked profit calculation — already recorded in econ_excluded.py",
+  "evidence": "Workings: Revenue: €4.00 x 40 smoothies = €160 Minus Total cost for 40 smoothies: €90 PROFIT €70"
+ },
+ {
+  "ref": "2025 HL Q16(b)(ii)",
+  "reason": "SRAC/LRAC diagram completion (⟨8⟩ = SRAC x 3, Labels x 3, LRAC x 1, Label x 1) with the ⟨8⟩ explanation spread over two headed halves and no per-half split stated. Already recorded in econ_excluded.py, though its recorded reason there ('the response is the worked calculation') mislabels it",
+  "evidence": "Complete the diagram with three more short run average cost curves (SRAC) to show how the long run average cost curve (LRAC) is constructed. … SRAC x 3 Labels x 3 … LRAC x 1 Label x 1 … Explanation: ⟨8⟩ Downward sloping part of the LRAC … Upward sloping part of the LRAC"
+ },
+ {
+  "ref": "2025 HL Section A Q10(a)",
+  "reason": "NEW — answered by inserting A or B read off the real-GDP diagram printed with it, and both justifications describe the chart's shape; the established reads-the-figure class (cf. 2024 OL Section A Q10). Not yet in econ_excluded.py",
+  "evidence": "⟨2 @ 3⟩ … Economic boom A Economic recession B Economic boom justification: … The steady rise in real GDP on the graph shows Ireland's strong economic performance before the financial crisis. … The lowest point in 2011 reflects the depth of the Irish recession"
+ },
+ {
+  "ref": "2025 HL Section A Q2(a)",
+  "reason": "worked calculation — already recorded in econ_excluded.py ('the response is the worked calculation of the savings rate')",
+  "evidence": "Workings: Household savings Household total disposable income × 100 … €6.59 bn X 100 €43.91 bn … Answer: 15 % Deduct 1 mark if % omitted"
+ },
+ {
+  "ref": "2025 HL Section A Q5(b)",
+  "reason": "NEW — answered by ticking positive or normative against each statement; the established tick-the-box class (cf. 2024 OL Section A Q2(a), 2022 OL Section A Q4). Not yet in econ_excluded.py",
+  "evidence": "⟨2 @ 3⟩ … Indicate your choice below by ticking (✓) the relevant box. Positive Normative Economic Statement Statement Statement All citizens in Ireland deserve free healthcare to ✓ 1. ensure equal access to medical services…"
+ },
+ {
+  "ref": "2025 HL Section A Q6(b)",
+  "reason": "diagram completion with the explanation, one ⟨6⟩ covering both — already recorded in econ_excluded.py",
+  "evidence": "⟨6⟩ Complete the diagram below to show how a change to Ireland's current national minimum wage rate … Clearly label any changes you make. Explain your answer. Wage rate SL Unemployment gap / Excess supply of labour NMW / € …"
+ },
+ {
+  "ref": "2025 HL Section A Q7(a)",
+  "reason": "answered by naming a product from the YED table printed with it — already recorded in econ_excluded.py under '2025 HL Section A Q7'. Q7(b), the other half of that recorded key, IS cardable and is now carded",
+  "evidence": "Necessity product – Electricity or Noodles Justify – … The YED value of electricity lies between 0 and 1 … Luxury good – Premium branded clothing … The YED value of premium branded clothing is above 1"
+ },
+ {
+  "ref": "2025 OL Q11(b)(ii)",
+  "reason": "labels to be placed on a diagram; no wording to show (same class as 2022/2023/2024 OL Q11(b)(ii), all registered)",
+  "evidence": "Scheme p16: '(ii) Equilibrium occurs at point E on the diagram above. Clearly show and label on the above diagram: • The output the firm will produce in equilibrium (use label Q1) ⟨4⟩ • The price the firm will charge for its output (use label P1).' — the only answer is P1/Q1 drawn on the printed diagram; the scheme itemises no prose components."
+ },
+ {
+  "ref": "2025 OL Q12(a)(i)",
+  "reason": "the response is the worked percentage calculation, read off the pie chart printed beside it",
+  "evidence": "Scheme p18: '€14.9 bn [6] x 100 [2] = 14.14 % [4] ⟨16⟩ €105.4 bn [4]' — the answer is the worked sum of figures taken from the printed chart; its step marks ride inside the fraction and flatten illegibly."
+ },
+ {
+  "ref": "2025 OL Q12(b)(ii)",
+  "reason": "the response is the worked multiplier calculation (mirrors '2024 HL Q11(b)(i)')",
+  "evidence": "Scheme p19: 'Calculate, using the above formula, the size of the multiplier. Show all your workings. ⟨12⟩ ⟨4 @ 3⟩ 1 [over] 0.2 + 0.3 = [1 over] 0.5 = 2' — the marks are for the worked arithmetic, whose stacked fractions flatten illegibly."
+ },
+ {
+  "ref": "2025 OL Q13(b)(i)",
+  "reason": "already registered in econ_excluded: a graph to be drawn; the responses are its axis values",
+  "evidence": "Scheme p23: 'On the graph paper provided below, draw and label: • the average costs (AC)… • the marginal costs (MC)… • the marginal revenue (MR)…' answered by a drawn chart marked '⟨17⟩ … Axes ⟨2 @ 2⟩ … MC:5 MC:5 MR: 3' — the creditable components are the plotted values, not wording."
+ },
+ {
+  "ref": "2025 OL Q14(c)(i)",
+  "reason": "answered by reading the HDI table printed beside it (the read-the-data class, e.g. '2021 HL Section A Q7(a)')",
+  "evidence": "Scheme p30: ⟨13⟩ 'Ireland's HDI position has Improved as their HDI figure has increased from 0.87 in 2003 to 0.95 in 2022… Accept correct reference to other values improving also… Increased + reference to 2 figures' — the marks are the tick plus figures cited from the printed table."
+ },
+ {
+  "ref": "2025 OL Q15(b)(i)",
+  "reason": "already registered (econ_excluded EXCLUDED_TEXT 'Demand curve shifts to the right (D1)'): labels to be placed on a diagram; no wording to show",
+  "evidence": "Scheme p33: ⟨14⟩ ⟨8+4+2⟩ '• Demand curve shifts to the right (D1). • Increase in equilibrium quantity (Q1). • Increase in equilibrium price (P1).' — the three credited components are marks drawn on the printed supply-and-demand diagram."
+ },
+ {
+  "ref": "2025 OL Q15(b)(ii)",
+  "reason": "already registered in econ_excluded; NOTE the registry line's reason is imprecise for 2025 — the ⟨10⟩ is (ii)'s own cell, separate from (i)'s ⟨14⟩ — but the decision still holds: the four written steps narrate the diagram's own labels (D1, P1, Q1) and the scheme states no split of the 10 across them",
+  "evidence": "Scheme p33: '(ii) Explain your answer. ⟨10⟩ • The increase in population will lead to an increase in demand for housing… • The demand curve will shift to the right (D to D1). • This will increase price to P1 • and Quantity will increase to Q1.' — printed marks column shows 14/8+4+2 for (i) then 10 for (ii)."
+ },
+ {
+  "ref": "2025 OL Q16(b)(ii)",
+  "reason": "answered by reading figures off the CPI chart printed beside it (mirrors '2021 HL Q14(a)(i)' and '2021 OL Q13(c)(ii)')",
+  "evidence": "Scheme p38: ⟨12⟩ 'From May 2024 to Sep 2024 the annual percentage change in inflation decreased. The annual rate of CPI inflation was highest in May 2024 at approx. 2.6% and hit its lowest figure at approx. 0.7% in September 2024 (or a decrease of 1.9%).' — the answer is the trend and figures read from the printed graph."
+ },
+ {
+  "ref": "2025 OL Section A Q7(i)",
+  "reason": "the response is the worked percentage calculation — the established leave-alone class (mirrors '2024 OL Q14(a)(i)' in econ_excluded)",
+  "evidence": "Scheme p12: 'Calculate the percentage increase in number of people aged 65 and over from 2014 to 2024. Show all your workings. 243,700 x 100 = 41.3 % [over] 589,500' with tariff ⟨4⟩ — the answer IS the worked arithmetic, and the vertical fraction flattens illegibly in extraction."
+ },
+ {
+  "ref": "2025 OL Section A Q8(i)",
+  "reason": "already registered in econ_excluded: answered by ticking which firm is in a monopoly",
+  "evidence": "Scheme p13: 'Name of Organisation Tick (✔) which is a Monopoly structure | Ryanair | An Post (mail service for letter post) ✔ | Vodafone' — the whole answer is a tick in a table."
+ },
+ {
+  "ref": "2025 OL Section A Q9",
+  "reason": "answered by ticking substitute or complement against each product, with the reasons welded across the tick cells (mirrors '2024 OL Q14(b)(ii)' and '2022 OL Section A Q4')",
+  "evidence": "The tidy scheme flattens the table as: 'Substitute Complement Reason The apple iPhone can be used along with Apple ✔ the apple watch. iPhone Having one good allows you to use the other good. Samsung The Samsung watch would be purchased Galaxy ✔ instead of the apple watch, making it a Watch 7 substitute.' ⟨2 @ 6⟩ — row labels and ticks are interleaved mid-sentence, so no reason separates as a clean"
+ }
+]

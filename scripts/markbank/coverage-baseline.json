@@ -75,19 +75,19 @@
   "refsHash": "ab5312971b0e0217"
  },
  "economics": {
-  "cards": 386,
-  "contentHash": "64f8812a1dec4d63",
-  "coveragePct": 51.7,
-  "covered": 340,
-  "excluded": 0,
+  "cards": 544,
+  "contentHash": "722869b695cd47bf",
+  "coveragePct": 100.0,
+  "covered": 498,
+  "excluded": 160,
   "leaves": 658,
-  "open": 318,
+  "open": 0,
   "orphans": 0,
   "papers": {
    "count": 10,
    "hash": "d356131d0d2d0e2e"
   },
-  "refsHash": "98f811ec3f53b2ac"
+  "refsHash": "4b6ae53c4a7c5984"
  },
  "home-economics": {
   "cards": 571,

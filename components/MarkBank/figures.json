@@ -22260,5 +22260,27 @@
   "year": 2025,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2021-OL-paper-p07-art": {
+  "src": "/exam-figures/economics/markbank/economics-2021-OL-paper-p07-art.png",
+  "md5": "443f065d862a77c06433649552369469",
+  "alt": "The 2021 Ordinary Level Economics paper's Section A Question 8 as printed: the stimulus ('It is predicted that tourism in Ireland could drop by up to 80% in Summer 2021'), the instruction to illustrate the impact on the demand curve for coaches/car hire, and the blank Price/Quantity diagram with demand curve D that the student draws the shift onto.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2021-HL-paper-p22-art": {
+  "src": "/exam-figures/economics/markbank/economics-2021-HL-paper-p22-art.png",
+  "md5": "213fa2d5bb73d2a07a52a5a7edda373a",
+  "alt": "The 2021 Higher Level Economics paper's Question 13(a)(i) as printed: the PS5 shortage stimulus and the blank Price/Quantity axes the student completes to show excess demand at the €500 retail price.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2021 Higher Level — © State Examinations Commission"
  }
 }

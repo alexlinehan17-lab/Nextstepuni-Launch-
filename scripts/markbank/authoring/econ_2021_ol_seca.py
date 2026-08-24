@@ -108,4 +108,21 @@ P.cards.append(card(
     'The first term explained is paid 9 and the second 6.',
     section='A', tariff_kind='fixed'))
 
+P.cards.append(card(
+    'econ-2021-ol-sa-q8', 2021, 'ordinary', 'economics-1-1', 'demand-shift-tourism-fall',
+    '2021 OL Section A Q8',
+    'It is predicted that tourism in Ireland could drop by up to 80% in Summer 2021. '
+    'Illustrate the impact the above statement could have on the demand curve for '
+    'coaches/car hire in Ireland using the diagram below. Explain your answer.',
+    'fixed', 15,
+    [point('r-shift', sl('Demand shift to left', ' Price'), 9,
+           'The drawing: the demand curve shifted to the left of D (D1 to D2).'),
+     point('r-explain', sl('With reduced tourists visiting Ireland',
+                           ' 9 Answer either'), 6,
+           'The explanation, 6 marks: 3 + 3.')],
+    'The scheme pays 9 for the shifted curve drawn on the diagram and 6 (3 + 3) for the '
+    'explanation.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2021-OL-paper-p07-art'))
+
 P.emit()
