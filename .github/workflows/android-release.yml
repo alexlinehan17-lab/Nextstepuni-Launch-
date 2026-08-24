@@ -1,0 +1,152 @@
+name: Build signed Android release
+
+permissions:
+  contents: read
+
+on:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22
+          cache: 'npm'
+
+      - uses: actions/setup-java@b6effb05e454b25005698d916606bdc6ffcbf961 # v5.7.0
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Type check
+        run: npm run typecheck
+
+      - name: Type check tests
+        run: npm run typecheck:test
+
+      - name: Test application and security rules
+        run: npm run test:all
+
+      - name: Audit web dependencies
+        run: npm audit --audit-level=high
+
+      - run: npm ci
+        working-directory: functions
+
+      - name: Build Cloud Functions
+        run: npm run build
+        working-directory: functions
+
+      - name: Audit Cloud Functions dependencies
+        run: npm audit --audit-level=high
+        working-directory: functions
+
+  build-release:
+    if: github.ref == 'refs/heads/main'
+    needs: verify
+    runs-on: ubuntu-latest
+    environment: android-release
+
+    env:
+      EXPECTED_UPLOAD_CERT_SHA256: 95:AF:C3:40:A1:56:76:DE:47:1F:0D:20:B4:6C:31:25:79:D1:78:3C:9E:0F:45:10:0F:13:14:16:21:48:0D:90
+
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22
+          cache: 'npm'
+
+      - uses: actions/setup-java@b6effb05e454b25005698d916606bdc6ffcbf961 # v5.7.0
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - run: npm ci
+
+      - name: Build web client with production App Check
+        run: npm run build
+        env:
+          VITE_FIREBASE_APPCHECK_SITE_KEY: ${{ secrets.VITE_FIREBASE_APPCHECK_SITE_KEY }}
+
+      - name: Synchronise Android client
+        run: npx --no-install cap sync android
+
+      - name: Prune hosted figure corpus from native bundle
+        run: npm run cap:prune
+
+      - name: Prepare release signing
+        env:
+          KEYSTORE_BASE64: ${{ secrets.ANDROID_UPLOAD_KEYSTORE_BASE64 }}
+          STORE_PASSWORD: ${{ secrets.ANDROID_UPLOAD_STORE_PASSWORD }}
+          KEY_PASSWORD: ${{ secrets.ANDROID_UPLOAD_KEY_PASSWORD }}
+        run: |
+          set -euo pipefail
+          if [[ -z "$KEYSTORE_BASE64" || -z "$STORE_PASSWORD" || -z "$KEY_PASSWORD" ]]; then
+            echo "Android release signing secrets are not configured." >&2
+            exit 1
+          fi
+          umask 077
+          mkdir -p "$RUNNER_TEMP/nextstepuni-signing"
+          printf '%s' "$KEYSTORE_BASE64" | base64 --decode > "$RUNNER_TEMP/nextstepuni-signing/upload-key.jks"
+          {
+            printf 'storeFile=%s\n' "$RUNNER_TEMP/nextstepuni-signing/upload-key.jks"
+            printf 'storePassword=%s\n' "$STORE_PASSWORD"
+            printf 'keyAlias=nextstepuni-upload\n'
+            printf 'keyPassword=%s\n' "$KEY_PASSWORD"
+          } > android/keystore.properties
+
+      - name: Verify upload certificate identity
+        env:
+          STORE_PASSWORD: ${{ secrets.ANDROID_UPLOAD_STORE_PASSWORD }}
+        run: |
+          set -euo pipefail
+          actual_fingerprint="$($JAVA_HOME/bin/keytool -list -v \
+            -keystore "$RUNNER_TEMP/nextstepuni-signing/upload-key.jks" \
+            -alias nextstepuni-upload \
+            -storepass:env STORE_PASSWORD \
+            | sed -n 's/^[[:space:]]*SHA256: //p')"
+          if [[ "$actual_fingerprint" != "$EXPECTED_UPLOAD_CERT_SHA256" ]]; then
+            echo "Android upload certificate does not match the Play recovery certificate." >&2
+            exit 1
+          fi
+
+      - name: Build signed App Bundle
+        run: ./gradlew :app:bundleRelease --no-daemon
+        working-directory: android
+
+      - name: Verify bundle signature
+        env:
+          STORE_PASSWORD: ${{ secrets.ANDROID_UPLOAD_STORE_PASSWORD }}
+        run: |
+          jarsigner -verify -strict \
+            -keystore "$RUNNER_TEMP/nextstepuni-signing/upload-key.jks" \
+            -storepass:env STORE_PASSWORD \
+            android/app/build/outputs/bundle/release/app-release.aab \
+            nextstepuni-upload
+
+      - name: Upload signed App Bundle
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: nextstepuni-android-${{ github.sha }}
+          path: android/app/build/outputs/bundle/release/app-release.aab
+          if-no-files-found: error
+          retention-days: 1
+
+      - name: Remove signing material
+        if: always()
+        run: |
+          rm -f android/keystore.properties
+          rm -rf "$RUNNER_TEMP/nextstepuni-signing"
