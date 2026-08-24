@@ -5672,7 +5672,7 @@
   "year": 2024,
   "section": "A",
   "questionRef": "2024 OL Q2(a)",
-  "stem": "Section A — Question 2, on yeast reproducing by budding. The scheme marks parts (a)–(g) together as 6(3) + 2.",
+  "stem": "Section A — Question 2, on yeast reproducing by budding.",
   "questionText": "Is yeast a unicellular or multicellular organism?",
   "tariffModel": {
    "kind": "orderedSplit",
@@ -5688,7 +5688,7 @@
     "contextNote": "No per-part mark exists: the first six correct responses across (a)–(g) score 3 each and the seventh scores 2. The scheme's table awards 3 marks for one correct response."
    }
   ],
-  "notes": "Skipped from Q2: (c) 'Which part of the yeast cell (X or Y) is the bud?' and (e) 'What is the name of the organelle labelled Z?' — both read lettered parts off the paper's diagram; (f) — a drawing instruction (draw an arrow to the cell wall)."
+  "notes": "Skipped from Q2: (c) 'Which part of the yeast cell (X or Y) is the bud?' and (e) 'What is the name of the organelle labelled Z?' — both read lettered parts off the paper's diagram; (f) — a drawing instruction (draw an arrow to the cell wall). The scheme marks parts (a)–(g) together as 6(3) + 2."
  },
  {
   "id": "bio-2024-ol-q2-b",
@@ -5698,7 +5698,7 @@
   "year": 2024,
   "section": "A",
   "questionRef": "2024 OL Q2(b)",
-  "stem": "Section A — Question 2, on yeast reproducing by budding. The scheme marks parts (a)–(g) together as 6(3) + 2.",
+  "stem": "Section A — Question 2, on yeast reproducing by budding.",
   "questionText": "What is the reason for budding in yeast?",
   "tariffModel": {
    "kind": "orderedSplit",
@@ -5714,7 +5714,7 @@
     "contextNote": "No per-part mark exists: the first six correct responses across (a)–(g) score 3 each and the seventh scores 2. The scheme's table awards 3 marks for one correct response."
    }
   ],
-  "notes": "Budding is asexual reproduction in yeast; the scheme accepts the single word 'Reproduction'."
+  "notes": "Budding is asexual reproduction in yeast; the scheme accepts the single word 'Reproduction'. The scheme marks parts (a)–(g) together as 6(3) + 2."
  },
  {
   "id": "bio-2024-ol-q2-d",
@@ -5724,7 +5724,7 @@
   "year": 2024,
   "section": "A",
   "questionRef": "2024 OL Q2(d)",
-  "stem": "Section A — Question 2, on yeast reproducing by budding. The scheme marks parts (a)–(g) together as 6(3) + 2.",
+  "stem": "Section A — Question 2, on yeast reproducing by budding.",
   "questionText": "Briefly describe what happens to the bud.",
   "tariffModel": {
    "kind": "orderedSplit",
@@ -5744,7 +5744,7 @@
     "contextNote": "Either alternative scores. No per-part mark exists: the first six correct responses across (a)–(g) score 3 each and the seventh scores 2."
    }
   ],
-  "notes": "The paper's Q2 lead-in is 'The diagram shows a yeast cell budding', but this part reads nothing off that diagram — what happens to a bud is general yeast biology and the scheme's answer names no labelled part. The bud itself is identified on the diagram in part (c), 'Which part of the yeast cell (X or Y) is the bud?', which is skipped for exactly that reason."
+  "notes": "The paper's Q2 lead-in is 'The diagram shows a yeast cell budding', but this part reads nothing off that diagram — what happens to a bud is general yeast biology and the scheme's answer names no labelled part. The bud itself is identified on the diagram in part (c), 'Which part of the yeast cell (X or Y) is the bud?', which is skipped for exactly that reason. The scheme marks parts (a)–(g) together as 6(3) + 2."
  },
  {
   "id": "bio-2024-ol-q2-g",
@@ -5754,7 +5754,7 @@
   "year": 2024,
   "section": "A",
   "questionRef": "2024 OL Q2(g)",
-  "stem": "Section A — Question 2, on yeast reproducing by budding. The scheme marks parts (a)–(g) together as 6(3) + 2.",
+  "stem": "Section A — Question 2, on yeast reproducing by budding.",
   "questionText": "Yeast is a member of which kingdom?",
   "tariffModel": {
    "kind": "orderedSplit",
@@ -5770,7 +5770,7 @@
     "contextNote": "Section A rule (scheme p.4): a surplus incorrect answer cancels the marks awarded for a correct one, so naming a second kingdom alongside Fungi loses the mark. No per-part mark exists — the first six correct responses across (a)–(g) score 3 each and the seventh scores 2."
    }
   ],
-  "notes": "Same concept as the 2025 HL card 'To which kingdom of living organisms do yeast belong?', which the HL scheme asterisks (*Fungi); Section A here uses the surplus-answer rule instead."
+  "notes": "Same concept as the 2025 HL card 'To which kingdom of living organisms do yeast belong?', which the HL scheme asterisks (*Fungi); Section A here uses the surplus-answer rule instead. The scheme marks parts (a)–(g) together as 6(3) + 2."
  },
  {
   "id": "bio-2024-ol-q3-e",
@@ -5829,7 +5829,7 @@
   "year": 2024,
   "section": "A",
   "questionRef": "2024 OL Q4(c)",
-  "stem": "Section A — Question 4, on viruses. The scheme marks the five responses in (a)–(d) as 5(4).",
+  "stem": "Section A — Question 4, on viruses.",
   "questionText": "Give an example of how viruses might be beneficial.",
   "tariffModel": {
    "kind": "fixed"
@@ -5849,7 +5849,7 @@
     "contextNote": "'or other correct' means the list is not exhaustive — any other valid beneficial use of viruses scores."
    }
   ],
-  "notes": "Skipped from Q4: (a) 'Name the two main components (A and B) of a virus.' — it names lettered parts of the paper's diagram; (b) 'Give one example of a harmful virus.' — the scheme's answer is the criterion 'One harmful virus named', not a marking point. Tagged bio-1-1: the redeveloped spec places viruses in 1.1 (structure and functions of a virus; their economic and medical importance), not in 3.2, which covers bacteria, Rhizopus and nutrient cycling."
+  "notes": "Skipped from Q4: (a) 'Name the two main components (A and B) of a virus.' — it names lettered parts of the paper's diagram; (b) 'Give one example of a harmful virus.' — the scheme's answer is the criterion 'One harmful virus named', not a marking point. Tagged bio-1-1: the redeveloped spec places viruses in 1.1 (structure and functions of a virus; their economic and medical importance), not in 3.2, which covers bacteria, Rhizopus and nutrient cycling. The scheme marks the five responses in (a)–(d) as 5(4)."
  },
  {
   "id": "bio-2024-ol-q4-d",
@@ -5859,7 +5859,7 @@
   "year": 2024,
   "section": "A",
   "questionRef": "2024 OL Q4(d)",
-  "stem": "Section A — Question 4, on viruses. The scheme marks the five responses in (a)–(d) as 5(4).",
+  "stem": "Section A — Question 4, on viruses.",
   "questionText": "Which of the following sentences describes how viruses replicate?",
   "tariffModel": {
    "kind": "fixed"
@@ -5874,7 +5874,7 @@
     "contextNote": "A tick-box part: the paper offered two sentences and the scheme prints only the correct one, so the distractor is not reproduced here."
    }
   ],
-  "notes": "Multiple-choice part. The scheme prints the correct sentence only. Tagged bio-1-1 — the spec's 3.2 covers bacteria, Rhizopus and nutrient cycling and carries no viruses."
+  "notes": "Multiple-choice part. The scheme prints the correct sentence only. Tagged bio-1-1 — the spec's 3.2 covers bacteria, Rhizopus and nutrient cycling and carries no viruses. The scheme marks the five responses in (a)–(d) as 5(4)."
  },
  {
   "id": "bio-2024-ol-q5-a",
@@ -5884,7 +5884,7 @@
   "year": 2024,
   "section": "A",
   "questionRef": "2024 OL Q5(a)",
-  "stem": "Section A — Question 5, on the human skeleton. The scheme marks parts (a)–(d) together as 6(3) + 2.",
+  "stem": "Section A — Question 5, on the human skeleton.",
   "questionText": "Give two functions of the skeleton.",
   "tariffModel": {
    "kind": "orderedSplit",
@@ -5912,7 +5912,7 @@
     "contextNote": "The scheme's list ends in 'other correct', so other valid functions score. Per-response values come from the question's 6(3) + 2 split, and the scheme's table awards 6 marks for two correct responses."
    }
   ],
-  "notes": "Skipped from Q5: (b) 'Name the bones labelled A, B and C?' and (c) 'Which of the following types of joint is located between the bones of part A?' — both depend on the lettered bones on the paper's diagram."
+  "notes": "Skipped from Q5: (b) 'Name the bones labelled A, B and C?' and (c) 'Which of the following types of joint is located between the bones of part A?' — both depend on the lettered bones on the paper's diagram. The scheme marks parts (a)–(d) together as 6(3) + 2."
  },
  {
   "id": "bio-2024-ol-q5-d",
@@ -5922,7 +5922,7 @@
   "year": 2024,
   "section": "A",
   "questionRef": "2024 OL Q5(d)",
-  "stem": "Section A — Question 5, on the human skeleton. The scheme marks parts (a)–(d) together as 6(3) + 2.",
+  "stem": "Section A — Question 5, on the human skeleton.",
   "questionText": "Which of the following types of joint describes a hinge or ball and socket joint?",
   "tariffModel": {
    "kind": "orderedSplit",
@@ -5942,7 +5942,7 @@
     "contextNote": "Either term scores. No per-part mark exists: the first six correct responses across (a)–(d) score 3 each and the seventh scores 2; the scheme's table awards 3 marks for one correct response."
    }
   ],
-  "notes": "Multiple-choice part; the scheme prints the correct option (and its synonym) only. The paper's tick-box prints it unhyphenated as 'Free moving or synovial'."
+  "notes": "Multiple-choice part; the scheme prints the correct option (and its synonym) only. The paper's tick-box prints it unhyphenated as 'Free moving or synovial'. The scheme marks parts (a)–(d) together as 6(3) + 2."
  },
  {
   "id": "bio-2024-ol-q7",
@@ -8604,7 +8604,7 @@
   "year": 2024,
   "section": "B",
   "questionRef": "2024 HL Q8(b) [1 of 2]",
-  "stem": "Isolation of DNA from a plant tissue — first three method steps the scheme credits.",
+  "stem": "Isolation of DNA from a plant tissue — the first three steps of the method.",
   "questionText": "Describe how you isolated the DNA from a named plant (or tissue)…",
   "tariffModel": {
    "kind": "fixed"
@@ -8649,7 +8649,7 @@
   "year": 2024,
   "section": "B",
   "questionRef": "2024 HL Q8(b) [2 of 2]",
-  "stem": "Isolation of DNA from a plant tissue — final three method steps the scheme credits.",
+  "stem": "Isolation of DNA from a plant tissue — the final three steps of the method.",
   "questionText": "Describe how you isolated the DNA from a named plant (or tissue)…",
   "tariffModel": {
    "kind": "fixed"
@@ -15312,7 +15312,7 @@
   "year": 2023,
   "section": "C",
   "questionRef": "2023 OL Q16(b)(ii)–(v)",
-  "stem": "The paper prints a diagram of the eye. The marking scheme's own part (b)(i) identifies X as the iris, Y as the cornea and Z as the lens.",
+  "stem": "The paper prints a diagram of the eye. X is the iris, Y is the cornea and Z is the lens, named in part (b)(i).",
   "questionText": "What is the function of the part labelled Y? Which labelled part focuses the light rays? Where are light rays usually focused? What would you expect to happen to the diameter of the pupil in bright light?",
   "tariffModel": {
    "kind": "orderedSplit",
@@ -17387,7 +17387,7 @@
   "year": 2022,
   "section": "C",
   "questionRef": "2022 HL Q13(b)(iii)",
-  "stem": "Process K is transcription and molecule L is mRNA (the scheme's own answers to parts (i)–(ii)). ACGTGCTGA is the DNA strand being transcribed.",
+  "stem": "Process K is transcription and molecule L is mRNA, named in parts (i)–(ii). ACGTGCTGA is the DNA strand being transcribed.",
   "questionText": "Write out the complementary sequence of bases of ACGTGCTGA.",
   "tariffModel": {
    "kind": "fixed"
@@ -17498,7 +17498,7 @@
   },
   "id": "bio-2022-hl-q13-b-iv-v",
   "questionRef": "2022 HL Q13(b)(iv)–(v)",
-  "stem": "The diagram illustrates some of the events of protein synthesis. Molecule L is mRNA (the scheme's own answer to part (ii)).",
+  "stem": "The diagram illustrates some of the events of protein synthesis. Molecule L is mRNA, named in part (ii).",
   "questionText": "Give the name of the opening through which molecule L leaves the organelle J. Identify structure M. Name the main molecule from which structure M is made.",
   "totalMarks": 9,
   "rows": [
@@ -17565,7 +17565,7 @@
   "year": 2022,
   "section": "C",
   "questionRef": "2022 HL Q13(b)(vi)",
-  "stem": "Structure M is the ribosome (the scheme's own answer to part (v)).",
+  "stem": "Structure M is the ribosome, named in part (v).",
   "questionText": "Describe the events that occur at structure M, which allow the production of a functioning protein.",
   "tariffModel": {
    "kind": "fixed"
@@ -17738,7 +17738,7 @@
   "year": 2022,
   "section": "C",
   "questionRef": "2022 HL Q14(b)(iv)",
-  "stem": "Molecule Y is NADPH (the scheme's own answer to part (iii)).",
+  "stem": "Molecule Y is NADPH, named in part (iii).",
   "questionText": "Describe how molecule Y is produced.",
   "tariffModel": {
    "kind": "fixed"
@@ -18237,7 +18237,7 @@
   "year": 2022,
   "section": "C",
   "questionRef": "2022 HL Q16(b)(iii)",
-  "stem": "Part R is the optic nerve (the scheme's own answer to part (i)).",
+  "stem": "Part R is the optic nerve, named in part (i).",
   "questionText": "Explain why damage to the part labelled R could result in blindness.",
   "tariffModel": {
    "kind": "fixed"
@@ -27884,7 +27884,7 @@
   "year": 2021,
   "section": "C",
   "questionRef": "2021 OL Q14(b)(iv)",
-  "stem": "The part labelled B on the diagram is the liver (from the scheme's answer to part (b)(i)).",
+  "stem": "The part labelled B on the diagram is the liver, named in part (b)(i).",
   "questionText": "Give any two functions of the part labelled B:",
   "tariffModel": {
    "kind": "fixed"
@@ -33376,7 +33376,7 @@
   "year": 2023,
   "section": "C",
   "questionRef": "2023 OL Q16(b)(ii)–(v)",
-  "stem": "The paper prints a section through a human eye. The scheme's own part (b)(i) gives X as the iris, Y as the cornea and Z as the lens; 'd' on the diagram is the diameter of the pupil.",
+  "stem": "The paper prints a section through a human eye. X is the iris, Y is the cornea and Z is the lens, named in part (b)(i); 'd' on the diagram is the diameter of the pupil.",
   "questionText": "What is the function of the part labelled Y? Which labelled part focuses the light rays? Where are light rays usually focused? What would you expect to happen to the diameter of the pupil in bright light?",
   "tariffModel": {
    "kind": "orderedSplit",
@@ -33497,7 +33497,7 @@
   "year": 2023,
   "section": "C",
   "questionRef": "2023 OL Q16(c)(ii)–(iii)",
-  "stem": "The paper prints a transverse section through a root. The scheme's own part (c)(i) gives A as vascular tissue, B as ground tissue and C as dermal tissue.",
+  "stem": "The paper prints a transverse section through a root. A is vascular tissue, B is ground tissue and C is dermal tissue, named in part (c)(i).",
   "questionText": "Give two substances that are transported by the tissue labelled A. Name a type of cell located in the tissue labelled A.",
   "tariffModel": {
    "kind": "orderedSplit",
@@ -33666,7 +33666,7 @@
   "year": 2023,
   "section": "C",
   "questionRef": "2023 OL Q16(d)(ii)–(iii)",
-  "stem": "The paper prints a cut-away diagram of an insect-pollinated flower. The scheme's own part (d)(i) gives X as the stigma, Y as the ovule and Z as the sepal.",
+  "stem": "The paper prints a cut-away diagram of an insect-pollinated flower. X is the stigma, Y is the ovule and Z is the sepal, named in part (d)(i).",
   "questionText": "What is the function of the part labelled Z? On which labelled part are pollen grains received?",
   "tariffModel": {
    "kind": "orderedSplit",

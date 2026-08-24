@@ -792,7 +792,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2022 Higher Level — © State Examinations Commission.",
     id: "phys-2022-hl-q2-v", topicId: "phys-u2", conceptId: "boyles-law-graph-verification",
     section: "A", questionRef: "2022 HL Q2(v)",
-    stem: "In an experiment to verify Boyle’s law, a student measured the length l of a column of air of fixed mass and uniform diameter, at different values of air pressure p, and drew a suitable graph to verify Boyle’s law (the scheme accepts values plotted for either 1/l or 1/p).",
+    stem: "In an experiment to verify Boyle’s law, a student measured the length l of a column of air of fixed mass and uniform diameter, at different values of air pressure p, and drew a suitable graph to verify Boyle’s law.",
     questionText: "Explain how your graph verifies Boyle’s law.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [

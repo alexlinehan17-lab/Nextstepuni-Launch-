@@ -92,6 +92,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2016-ol-q4-a-r1", kind: "anyN", verbatim: "Discuss two reasons why it is necessary to apply for planning permission to build the sunspace shown.", marks: 12, openList: true, group: {"claimMax":2,"perOption":6,"options":["It is a legal requirement when changing the front elevation of a house","Planning permission informs the public about the development","It controls the height, shape, design and location of the sunspace","It prevents the danger of an unsafe sunspace being built","Ensures that the sunspace is attractive and environmentally friendly","Ensures that the sunspace blends easily with its surroundings","When the development changes the front elevation of the building","The Planning Authority may refuse permission"]} },
     ],
+    figure: {
+          "candId": "construction-studies-2016-ol-paper-p002-i0",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-ol-paper-p002-i0.png",
+          "srcHash": "378a09f1864147eb18b764024174aa3b",
+          "alt": "A tonal perspective sketch of a single-storey pitched-roof dwelling house with a slate roof and a rendered chimney stack. Built against the gable end is a lean-to sunspace with a mono-pitch roof, sloping glazing above and full-height glazed panels below, returning to a further glazed opening on the end wall. A tree stands behind the gable and low shrubs sit against the front and side walls, with a doorway and window visible on the main front elevation.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -251,6 +259,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2016-ol-q6-b-r1", kind: "anyN", verbatim: "Using notes and freehand sketches, describe three specific safety precautions to be observed when turning a wooden bowl ", marks: 18, openList: true, group: {"claimMax":3,"perOption":6,"options":["Know where the on / off switch is located and how to turn on / off the lathe","Know how to stop the lathe","The wood should be sound and free of any defects","Defective piece may break apart during the turning process","The work B should be properly secured to the faceplate A","If not properly secured the piece may come loose","Rotate the piece by hand at first","This is to ensure the piece will not hit the tool rest","Clear space A between tool rest and the wooden blank","Set the correct speed for turning of the bowl","Using the incorrect speed will may cause serious injury","Slow for big and fast for small items","A special visor should be worn when using the lathe","This offers protection from flying chips or particles"]} },
     ],
+    figure: {
+          "candId": "construction-studies-2016-ol-paper-p003-i0",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-ol-paper-p003-i0.png",
+          "srcHash": "7db5f1800732ccb6ad98099d910356e5",
+          "alt": "A tonal sketch of a wood-turning lathe seen from the side: a cast pedestal and headstock on the left carry a cylindrical drive housing, and a shallow wooden bowl is mounted face-out on the faceplate. A tool rest is set close to the bowl on a vertical post rising from the lathe bed, and a long turning gouge with a dark shaped handle lies across the rest with its cutting edge presented to the inside face of the revolving bowl. No labels or annotation text appear in the drawing.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -485,6 +501,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2017-ol-q6-a-r1", kind: "anyN", verbatim: "Discuss two reasons why safety signs must be displayed at the entrance to a construction site", marks: 10, contextNote: "Discuss two reasons why safety signs must be displayed at the entrance to a construction site", openList: true, group: {"claimMax":2,"perOption":5,"options":["Safety signs must be used wherever a potential hazard exists","Construction sites have many danger areas","Safety signs alert people to the dangers on a construction site","Safety signs remind all of Health and Safety on site","The signs show that machinery, work at heights and trenches exist on site","Remind site workers and visitors to wear hard hats and high visibility jackets","Remind site workers to use correct footwear"]} },
     ],
+    figure: {
+          "candId": "construction-studies-2017-ol-paper-p003-i0",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-ol-paper-p003-i0.png",
+          "srcHash": "570b76d0eda59654259c422869a488ab",
+          "alt": "A pencil-and-wash sketch of the entrance to a construction site. A run of temporary steel mesh fence panels standing on concrete block feet closes off the site, with a gated opening in the middle. Four safety signs are fixed to the fence panels: a triangular warning sign on the left-hand panel and three rectangular notice boards further along, their lettering drawn too small to read. Behind the fence stand a partly built multi-storey concrete frame with exposed floor slabs and scaffolding, a tall tower crane with its jib and hook over the building, and a second block under construction on the right. Two workers are sketched walking inside the fenced compound on the right, with rough ground and hoarding shadows in the foreground.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2017 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -742,6 +766,14 @@ export const CARDS: SecCard[] = [
     { id: "cons-2017-ol-q9-c-r7", kind: "anyN", verbatim: "C Manipulative Skills", marks: 4, contextNote: "C Manipulative Skills", openList: true, group: {"claimMax":2,"perOption":2,"options":["Skills in preparation and finishing of materials","Safe use of tools and machines - Hand/Power/CNC","Skills in assembly of materials"]} },
     { id: "cons-2017-ol-q9-c-r8", kind: "anyN", verbatim: "D Presentation of Project", marks: 8, contextNote: "D Presentation of Project", openList: true, group: {"claimMax":2,"perOption":4,"options":["Task completed to acceptable standard","Appropriate use of materials","Satisfactory knowledge of construction technology"]} },
     ],
+    figure: {
+          "candId": "construction-studies-2017-ol-paper-p004-i0",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-ol-paper-p004-i0.png",
+          "srcHash": "12714650456133ed579297250448b28f",
+          "alt": "A pencil-and-wash perspective sketch of the rear of a small pitched-roof dwelling, viewed from above and to one side. A roof window (rooflight) is set into the slated roof slope and a chimney stack rises near the ridge. At ground level a wide sliding door opens from the house onto a raised external patio of timber decking, the boards running away from the wall. On the decking are a dining table with place settings and three or four chairs, a large potted plant against the wall, and two standing figures beside the open sliding doors. Trees and low planting surround the house on both sides and along the front edge of the deck.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2017 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",

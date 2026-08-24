@@ -5484,7 +5484,7 @@
   "subjectId": "agricultural-science",
   "section": "A",
   "questionRef": "2023 HL Q1(a)(ii)",
-  "stem": "Answer either (a) or (b). Part (i) shows photographs of three cattle breeds labelled A, B and C; the scheme gives C as the Simmental. The term underlined in the paper is 'dual-purpose breed'.",
+  "stem": "Answer either (a) or (b). Part (i) shows photographs of three cattle breeds labelled A, B and C; breed C is the Simmental, named in part (i). The term underlined in the paper is 'dual-purpose breed'.",
   "questionText": "Breed C is a dual-purpose breed. Explain the underlined term.",
   "tariffModel": {
    "kind": "fixed"
@@ -11697,7 +11697,7 @@
   "subjectId": "agricultural-science",
   "section": "B",
   "questionRef": "2021 HL Q13(a)(iii) Advantages",
-  "stem": "Question 13 — answer (a) with either (b) or (c). (a) Read the article about multi‐species swards and answer the questions which follow. UCD trials indicate increased ewe milk production and lamb weight gain in flocks grazing multi‐species swards. The definition of multi‐species, is a mixture composed of two or more species, consisting of grasses (e.g. perennial ryegrass and timothy), herbs (e.g. chicory and plantain) and legumes (e.g. white and red clover) used in grazing mixtures. (Adapted from Irish Independent, 2020) Earlier in part (iii) you named a grazing system — the scheme accepts rotational or paddock grazing, block grazing, strip grazing, zero grazing or mixed grazing.",
+  "stem": "Question 13 — answer (a) with either (b) or (c). (a) Read the article about multi‐species swards and answer the questions which follow. UCD trials indicate increased ewe milk production and lamb weight gain in flocks grazing multi‐species swards. The definition of multi‐species, is a mixture composed of two or more species, consisting of grasses (e.g. perennial ryegrass and timothy), herbs (e.g. chicory and plantain) and legumes (e.g. white and red clover) used in grazing mixtures. (Adapted from Irish Independent, 2020) Earlier in part (iii) you named a grazing system.",
   "questionText": "Outline two advantages of the named grazing system in managing the sward.",
   "tariffModel": {
    "kind": "orderedSplit",
@@ -11732,7 +11732,7 @@
     ]
    }
   ],
-  "notes": "Second of the two cards for part (a)(iii); see the 'Name' card for why the part is split. '4+2' against a four-item pool: any two advantages, 4 for the first and 2 for the second, so rows carry marks: null. REVIEWER NOTE: the scheme's second option runs '...or prevents dominance of one species', but the typeset '4+2' marks cell falls between 'one' and 'species' in the extraction, so the row verbatim stops at 'palatable herbs' and the tail is carried in accepts and in the contextNote. Pool is closed, so openList is not set."
+  "notes": "Second of the two cards for part (a)(iii); see the 'Name' card for why the part is split. '4+2' against a four-item pool: any two advantages, 4 for the first and 2 for the second, so rows carry marks: null. REVIEWER NOTE: the scheme's second option runs '...or prevents dominance of one species', but the typeset '4+2' marks cell falls between 'one' and 'species' in the extraction, so the row verbatim stops at 'palatable herbs' and the tail is carried in accepts and in the contextNote. Pool is closed, so openList is not set. MOVED FROM STEM (scheme side only): the scheme accepts rotational or paddock grazing, block grazing, strip grazing, zero grazing or mixed grazing."
  },
  {
   "id": "agsci-2021-hl-q13aiv",
@@ -13392,7 +13392,7 @@
   "subjectId": "agricultural-science",
   "section": "B",
   "questionRef": "2021 HL Q18(a) Soil quality",
-  "stem": "Discuss the effect of each of the following on the productivity of a named crop, giving two points for each heading. The paper prints a 'Named Crop:' line and then two headings, Soil quality and Crop preservation, with two answer lines under each. The scheme accepts Barley / Wheat / Oats / Potatoes / Grass etc., and awards no marks directly for naming the crop.",
+  "stem": "Discuss the effect of each of the following on the productivity of a named crop, giving two points for each heading. The paper prints a 'Named Crop:' line and then two headings, Soil quality and Crop preservation, with two answer lines under each.",
   "questionText": "Discuss the effect of each of the following on the productivity of a named crop, giving two points for each heading. Soil quality:",
   "tariffModel": {
    "kind": "fixed",
@@ -13430,7 +13430,7 @@
     ]
    }
   ],
-  "notes": "Q18(a) prints one instruction over two headings, and the scheme prints a separate 2(2) against each — two tariffs, so two cards. questionText keeps the paper's instruction verbatim and appends the paper's own heading, so no word is invented; the headings and the 'Named Crop:' line are described in the stem. Each point must run soil property -> effect on the crop: the property named alone is not a point. openList is set because the scheme's crop list ends in 'etc.' and it adds '*negative effect on productivity may be accepted as alternative to points above'. The pH option is an accept, not a row, because the '2(2)' mark cell lands inside it."
+  "notes": "Q18(a) prints one instruction over two headings, and the scheme prints a separate 2(2) against each — two tariffs, so two cards. questionText keeps the paper's instruction verbatim and appends the paper's own heading, so no word is invented; the headings and the 'Named Crop:' line are described in the stem. Each point must run soil property -> effect on the crop: the property named alone is not a point. openList is set because the scheme's crop list ends in 'etc.' and it adds '*negative effect on productivity may be accepted as alternative to points above'. The pH option is an accept, not a row, because the '2(2)' mark cell lands inside it. MOVED FROM STEM (scheme side only): The scheme accepts Barley / Wheat / Oats / Potatoes / Grass etc., and awards no marks directly for naming the crop."
  },
  {
   "id": "agsci-2021-hl-q18a-crop-preservation",
@@ -13441,7 +13441,7 @@
   "subjectId": "agricultural-science",
   "section": "B",
   "questionRef": "2021 HL Q18(a) Crop preservation",
-  "stem": "Discuss the effect of each of the following on the productivity of a named crop, giving two points for each heading. The paper prints a 'Named Crop:' line and then two headings, Soil quality and Crop preservation, with two answer lines under each. The scheme accepts Barley / Wheat / Oats / Potatoes / Grass etc., and awards no marks directly for naming the crop.",
+  "stem": "Discuss the effect of each of the following on the productivity of a named crop, giving two points for each heading. The paper prints a 'Named Crop:' line and then two headings, Soil quality and Crop preservation, with two answer lines under each.",
   "questionText": "Discuss the effect of each of the following on the productivity of a named crop, giving two points for each heading. Crop preservation:",
   "tariffModel": {
    "kind": "fixed",
@@ -13492,7 +13492,7 @@
     ]
    }
   ],
-  "notes": "The second 2(2) of Q18(a), carded separately from Soil quality because it carries its own tariff and its own topic (post-harvest handling, agsci-3-3-3). The scheme prints three crop-specific pools separated by OR — grain, potatoes, grass/silage — each of which answers the heading alone. Rows show the grain pool (the scheme's named-crop list opens Barley / Wheat / Oats) and the potato and silage pools sit in accepts, with a contextNote saying the two points must belong to the crop the candidate named. MAX_ROWS is 5, so the three pools cannot be shown as three separate route groups."
+  "notes": "The second 2(2) of Q18(a), carded separately from Soil quality because it carries its own tariff and its own topic (post-harvest handling, agsci-3-3-3). The scheme prints three crop-specific pools separated by OR — grain, potatoes, grass/silage — each of which answers the heading alone. Rows show the grain pool (the scheme's named-crop list opens Barley / Wheat / Oats) and the potato and silage pools sit in accepts, with a contextNote saying the two points must belong to the crop the candidate named. MAX_ROWS is 5, so the three pools cannot be shown as three separate route groups. MOVED FROM STEM (scheme side only): The scheme accepts Barley / Wheat / Oats / Potatoes / Grass etc., and awards no marks directly for naming the crop."
  },
  {
   "id": "agsci-2021-hl-q18b",
@@ -14691,7 +14691,7 @@
   "subjectId": "agricultural-science",
   "section": "B",
   "questionRef": "2021 OL Q15(a)(ii)",
-  "stem": "Question 15 is about making good quality grass silage on a beef farm. Part (a)(i) asked you to list two grasses commonly used for silage production; the scheme's list is PRG (perennial ryegrass), IRG (Italian ryegrass) and hybrid rye grass.",
+  "stem": "Question 15 is about making good quality grass silage on a beef farm. Part (a)(i) asked you to list two grasses commonly used for silage production: the grasses named at part (i) are PRG (perennial ryegrass), IRG (Italian ryegrass) and hybrid rye grass.",
   "questionText": "Outline one reason for using any one of the grasses named at part (i) above.",
   "tariffModel": {
    "kind": "fixed",
@@ -21761,7 +21761,7 @@
   "subjectId": "agricultural-science",
   "section": "B",
   "questionRef": "2023 OL Q13(a)(iii)",
-  "stem": "Question 13 is answered as (a) and (b) with either (c) or (d), for 50 marks in total. Reseeding grassland is an important aspect of ensuring farm sustainability. Part (ii) printed photographs of three plants that may be sown in a newly reseeded pasture, and the scheme names them A = Red clover, B = Perennial ryegrass, C = White clover. Plants A and C are therefore the two clovers.",
+  "stem": "Question 13 is answered as (a) and (b) with either (c) or (d), for 50 marks in total. Reseeding grassland is an important aspect of ensuring farm sustainability. Part (ii) printed photographs of three plants that may be sown in a newly reseeded pasture; A is Red clover, B Perennial ryegrass and C White clover, named in part (ii). Plants A and C are therefore the two clovers.",
   "questionText": "Outline reasons for sowing plants A and C shown in part (ii) in a newly sown sward.",
   "tariffModel": {
    "kind": "orderedSplit",
@@ -22339,7 +22339,7 @@
   "subjectId": "agricultural-science",
   "section": "B",
   "questionRef": "2023 OL Q15(a)(v)",
-  "stem": "Question 15 is answered as (a) with either (b) or (c), for 50 marks in total. Brian bought 120 hectares of land for a mixed tillage and beef enterprise. He collected two soil samples, A and B, and wanted to compare the capillarity of the two. You draw the labelled diagram yourself — the scheme awards these points wherever they appear, on the diagram or in the description.",
+  "stem": "Question 15 is answered as (a) with either (b) or (c), for 50 marks in total. Brian bought 120 hectares of land for a mixed tillage and beef enterprise. He collected two soil samples, A and B, and wanted to compare the capillarity of the two. You draw the labelled diagram yourself.",
   "questionText": "Describe with the aid of a labelled diagram how he carried out this investigation.",
   "tariffModel": {
    "kind": "fixed",
@@ -22390,7 +22390,7 @@
     "contextNote": "A third, different step from the same pool."
    }
   ],
-  "notes": "3(2) = three parts to the answer at 2 marks each = 6, which is what Q15(a) needs to reach 40. Eight method steps are printed in one pool and three are claimable, so three rows carry the first three in the scheme's own order and the remaining five sit in accepts on each row. The labelled diagram is one the candidate draws, not one printed on the paper, so no figure is needed; samples A and B are named in the stem as 'two soil samples' because the paper introduces them at part (ii), which is a diagram part and is skipped — nothing about their appearance is needed here. Matches the shipped 2021 HL treatment of the same investigation (agsci-2021-hl-q2bii)."
+  "notes": "3(2) = three parts to the answer at 2 marks each = 6, which is what Q15(a) needs to reach 40. Eight method steps are printed in one pool and three are claimable, so three rows carry the first three in the scheme's own order and the remaining five sit in accepts on each row. The labelled diagram is one the candidate draws, not one printed on the paper, so no figure is needed; samples A and B are named in the stem as 'two soil samples' because the paper introduces them at part (ii), which is a diagram part and is skipped — nothing about their appearance is needed here. Matches the shipped 2021 HL treatment of the same investigation (agsci-2021-hl-q2bii). MOVED FROM STEM (scheme side only): the scheme awards these points wherever they appear, on the diagram or in the description."
  },
  {
   "id": "agsci-2023-ol-q15a-vi",
@@ -26278,7 +26278,7 @@
   "subjectId": "agricultural-science",
   "section": "B",
   "questionRef": "2024 OL Q17(b)(iii)",
-  "stem": "Part (b) is about a food crop (other than grass) the candidate has named and studied — the scheme works through barley, potatoes and kale — and part (b)(ii) asked how that crop is harvested and stored.",
+  "stem": "Part (b) is about a food crop (other than grass) the candidate has named and studied, and part (b)(ii) asked how that crop is harvested and stored.",
   "questionText": "Outline one safety precaution that should be taken during harvesting this crop.",
   "tariffModel": {
    "kind": "fixed",
@@ -26299,7 +26299,7 @@
     "contextNote": "One precaution only is asked for — any one of these scores the full 4 marks."
    }
   ],
-  "notes": "Flat 4-mark tariff, one precaution asked for, so the solidus list is one point with alternative wordings (LAW 2). The pool closes with 'or any other valid example', so openList is set. Reviewer note: the extracted scheme drops the tariff token '4' between 'turn off machine when' and 'working on it' (line 675 ends '... / turn off machine when 4'), which is why that wording is carried in accepts rather than as the row headline."
+  "notes": "Flat 4-mark tariff, one precaution asked for, so the solidus list is one point with alternative wordings (LAW 2). The pool closes with 'or any other valid example', so openList is set. Reviewer note: the extracted scheme drops the tariff token '4' between 'turn off machine when' and 'working on it' (line 675 ends '... / turn off machine when 4'), which is why that wording is carried in accepts rather than as the row headline. MOVED FROM STEM (scheme side only): the scheme works through barley, potatoes and kale."
  },
  {
   "id": "agsci-2024-ol-q17c",
@@ -30765,7 +30765,7 @@
   "section": "A",
   "questionRef": "2022 HL Q2(a)",
   "questionText": "Identify any four of the following breeds of animals.",
-  "stem": "Section A, Question 2, part (a). Six colour photographs of farm animals are printed in two rows of three: A, B and C captioned above the top row, D, E and F captioned below the bottom row. Under them the paper prints an answer box running A: to F:. Only four of the six have to be named. The scheme's front matter uses this exact question type as its worked example of the surplus-answer rule: a candidate who names five and gets one of them wrong scores 4 - 1 = 3, so there is nothing to gain from filling in all six. Part (b), on selecting a female replacement animal for breeding, is carded separately.",
+  "stem": "Section A, Question 2, part (a). Six colour photographs of farm animals are printed in two rows of three: A, B and C captioned above the top row, D, E and F captioned below the bottom row. Under them the paper prints an answer box running A: to F:. Only four of the six have to be named. Part (b), on selecting a female replacement animal for breeding, is carded separately.",
   "figureKey": "agricultural-science-2022-HL-paper-p05-i0",
   "labelKey": [
    {
@@ -30851,7 +30851,7 @@
     "contextNote": "Photograph F, the black-and-white dairy cow. 'Holstein' is bracketed, so 'Friesian' alone takes the mark."
    }
   ],
-  "notes": "Figure opened before writing: agricultural-science-2022-HL-paper-p05-i0.png is the Question 2 breed grid, six photographs with A, B, C printed above the top row and D, E, F below the bottom row, exactly as the batch's candidate list describes. bestNofParts is used because the card shows all six lettered options while a student can only claim four - that is what the model exists for. 4 x 1 = 4 reconciles the tariff, and Q2 totals 10 with part (b)'s 2(3) = 6. The label key decodes which photograph each letter sits on rather than naming the breed, so the card does not give away its own answer before the student self-marks. Scheme lines: 'A = Landrace / B = Blue Leicester / C = Connemara (pony) / D = Rhode Island red / E = Limousine / F = (Holstein) Friesian', 4(1). Every row's text after the em dash was checked against the normalised scheme and found verbatim."
+  "notes": "Figure opened before writing: agricultural-science-2022-HL-paper-p05-i0.png is the Question 2 breed grid, six photographs with A, B, C printed above the top row and D, E, F below the bottom row, exactly as the batch's candidate list describes. bestNofParts is used because the card shows all six lettered options while a student can only claim four - that is what the model exists for. 4 x 1 = 4 reconciles the tariff, and Q2 totals 10 with part (b)'s 2(3) = 6. The label key decodes which photograph each letter sits on rather than naming the breed, so the card does not give away its own answer before the student self-marks. Scheme lines: 'A = Landrace / B = Blue Leicester / C = Connemara (pony) / D = Rhode Island red / E = Limousine / F = (Holstein) Friesian', 4(1). Every row's text after the em dash was checked against the normalised scheme and found verbatim. MOVED FROM STEM (scheme side only): The scheme's front matter uses this exact question type as its worked example of the surplus-answer rule: a candidate who names five and gets one of them wrong scores 4 - 1 = 3, so there is nothing to gain from filling in all six."
  },
  {
   "id": "agsci-2022-hl-q13aiii",
@@ -30925,7 +30925,7 @@
   "section": "B",
   "questionRef": "2022 HL Q14(c)(i)",
   "questionText": "Identify three aspects of the shed which make it a suitable environment for calves and provide a reason for each aspect identified.",
-  "stem": "Section B, Question 14, which is answered as 'both (a) and (b) with either (c) or (d)'. Part (c) opens: 'Analyse the picture of calf housing below and answer the questions which follow.' The photograph is taken inside a calf shed looking down the length of a straw-bedded pen: black-and-white calves lying and standing on deep clean straw, a low solid wall along the front of the pen with a galvanised barrier above it, spaced vertical timber boarding running along the upper side wall under the eaves, translucent roof panels letting daylight in, and a steel-framed pitched roof well above the calves. Three numbered answer slots are printed (1., 2., 3.), and each has to carry an aspect together with its reason - the question asks for both, and the scheme's options are printed as aspect-and-reason pairs.",
+  "stem": "Section B, Question 14, which is answered as 'both (a) and (b) with either (c) or (d)'. Part (c) opens: 'Analyse the picture of calf housing below and answer the questions which follow.' The photograph is taken inside a calf shed looking down the length of a straw-bedded pen: black-and-white calves lying and standing on deep clean straw, a low solid wall along the front of the pen with a galvanised barrier above it, spaced vertical timber boarding running along the upper side wall under the eaves, translucent roof panels letting daylight in, and a steel-framed pitched roof well above the calves. Three numbered answer slots are printed (1., 2., 3.), and each has to carry an aspect together with its reason - the question asks for both.",
   "figureKey": "agricultural-science-2022-HL-paper-p25-i1",
   "labelKey": [],
   "tariffModel": {
@@ -30977,7 +30977,7 @@
     "contextNote": "A third, different aspect. 'Clean' is bracketed, so it is not required - naming the roof lights and giving natural light as the reason is enough."
    }
   ],
-  "notes": "Figure opened before writing: agricultural-science-2022-HL-paper-p25-i1.png is the Question 14(c) calf-housing photograph with the (c) and (i) instructions above it and the numbered answer grid below. The crop carries no letters, so labelKey is empty and the build files it as a question card carrying a figure rather than a diagram card. Tariff: scheme prints 3(3) = 9, and Q14 reconciles as (a) 10 + 2 + 3 + 3 + 4 = 22, (b) 6 + 8 = 14, (c) 9 + 5 = 14, total 50. The scheme prints six pooled aspect-and-reason pairs separated by solidi, so this is three slot rows with the pool in accepts, not six rows. Each row verbatim was checked against the normalised scheme and found contiguous. 'clean bedding or smooth surfaces for good hygiene or disease reduction' is NOT contiguous - the typeset marks cell '3(3)' lands between 'clean' and 'bedding' - so it appears only in accepts, which the build does not provenance-check."
+  "notes": "Figure opened before writing: agricultural-science-2022-HL-paper-p25-i1.png is the Question 14(c) calf-housing photograph with the (c) and (i) instructions above it and the numbered answer grid below. The crop carries no letters, so labelKey is empty and the build files it as a question card carrying a figure rather than a diagram card. Tariff: scheme prints 3(3) = 9, and Q14 reconciles as (a) 10 + 2 + 3 + 3 + 4 = 22, (b) 6 + 8 = 14, (c) 9 + 5 = 14, total 50. The scheme prints six pooled aspect-and-reason pairs separated by solidi, so this is three slot rows with the pool in accepts, not six rows. Each row verbatim was checked against the normalised scheme and found contiguous. 'clean bedding or smooth surfaces for good hygiene or disease reduction' is NOT contiguous - the typeset marks cell '3(3)' lands between 'clean' and 'bedding' - so it appears only in accepts, which the build does not provenance-check. MOVED FROM STEM (scheme side only): the scheme's options are printed as aspect-and-reason pairs."
  },
  {
   "id": "agsci-2022-ol-q2bi",
@@ -31729,7 +31729,7 @@
   "section": "B",
   "questionRef": "2023 HL Q15(c)(i)",
   "questionText": "State the soil pH that produces the least amount of N20 emissions.",
-  "stem": "A secondary school installed a new garden and polytunnel and the agricultural science class investigated the donated topsoil. Part (c) says 'Analyse the graph showing the effect soil pH has on nitrous oxide (N20) emissions and answer the questions which follow' and prints a bar chart titled 'Effect of soil pH on nitrous oxide (N20) emissions': cumulative N20 emissions in g N20/ha/year up the vertical axis, scaled 0 to 7000 in thousands, against four soil pH values along the bottom — 5.1, 5.4, 6.2 and 6.9. (The paper and the scheme both print nitrous oxide as 'N20'.)",
+  "stem": "A secondary school installed a new garden and polytunnel and the agricultural science class investigated the donated topsoil. Part (c) says 'Analyse the graph showing the effect soil pH has on nitrous oxide (N20) emissions and answer the questions which follow' and prints a bar chart titled 'Effect of soil pH on nitrous oxide (N20) emissions': cumulative N20 emissions in g N20/ha/year up the vertical axis, scaled 0 to 7000 in thousands, against four soil pH values along the bottom — 5.1, 5.4, 6.2 and 6.9. (The paper prints nitrous oxide as 'N20'.)",
   "figureKey": "agricultural-science-2023-HL-paper-p28-i0",
   "labelKey": [],
   "tariffModel": {
@@ -32093,7 +32093,7 @@
   "section": "A",
   "questionRef": "2024 OL Q6(a)(i)",
   "questionText": "Identify any three of the following breeds using the list below.",
-  "stem": "Answer either (a) or (b). The photographs below show some breeds of sheep found on Irish farms, with the word bank Texel, Suffolk, Charolais, Border Leicester printed above them. Only three of the four letters need to be named — and under the scheme's surplus-answer rule a wrong extra answer cancels a correct one. Part (ii) then asks for one reason why a named breed is suitable for sheep meat production.",
+  "stem": "Answer either (a) or (b). The photographs below show some breeds of sheep found on Irish farms, with the word bank Texel, Suffolk, Charolais, Border Leicester printed above them. Only three of the four letters need to be named. Part (ii) then asks for one reason why a named breed is suitable for sheep meat production.",
   "figureKey": "agricultural-science-2024-OL-paper-p08-i1",
   "labelKey": [
    {
@@ -32151,7 +32151,7 @@
     "marks": 2
    }
   ],
-  "notes": "Tariff '3(2)' against 'identify any three', so bestNofParts — four options displayed, three claimable at 2 each = 6, leaving 4 marks for part (a)(ii) out of the 10 for Q6. Figure p08-i1 opened before writing: the word bank plus the two-by-two photograph grid, all four letters legible and uncut. Letter-to-breed mapping is the scheme's. The scheme spells the breed 'Charolais' here and 'Charollais' in part (ii); this card reproduces the (i) spelling as printed."
+  "notes": "Tariff '3(2)' against 'identify any three', so bestNofParts — four options displayed, three claimable at 2 each = 6, leaving 4 marks for part (a)(ii) out of the 10 for Q6. Figure p08-i1 opened before writing: the word bank plus the two-by-two photograph grid, all four letters legible and uncut. Letter-to-breed mapping is the scheme's. The scheme spells the breed 'Charolais' here and 'Charollais' in part (ii); this card reproduces the (i) spelling as printed. MOVED FROM STEM (scheme side only): under the scheme's surplus-answer rule a wrong extra answer cancels a correct one."
  },
  {
   "id": "agsci-2024-ol-q11bii",
@@ -32214,7 +32214,7 @@
   "section": "B",
   "questionRef": "2024 OL Q14(b)(ii)",
   "questionText": "Briefly outline one reason for your choice in part (i).",
-  "stem": "Silage making is a very important aspect of farm life as it is an essential feedstuff for ruminant animals on farms. Part (b)(i) printed the two grass photographs below and asked which shows the correct stage of cutting the grass for silage. The marking points here are the ones credited for choosing photograph B; the scheme adds '(Allow opposite points for A)'.",
+  "stem": "Silage making is a very important aspect of farm life as it is an essential feedstuff for ruminant animals on farms. Part (b)(i) printed the two grass photographs below and asked which shows the correct stage of cutting the grass for silage.",
   "figureKey": "agricultural-science-2024-OL-paper-p22-i1",
   "labelKey": [
    {
@@ -32246,7 +32246,7 @@
     "contextNote": "One reason only — any ONE of the scheme's three scores the full 2 marks. A candidate who ticked A in part (i) scores by naming the opposite point (stemmy, seed heads out, less digestible)."
    }
   ],
-  "notes": "Flat 2-mark tariff, fixed, one row. The scheme's three solidus alternatives are one point stated three ways and live in accepts. Figure p22-i1 opened before binding: it carries the part (b)(i) instruction and both lettered close-ups, A headed out and B leafy — which is exactly what the reason turns on, so the card cannot stand without it. The same crop is bound by the (b)(iii) card, which is allowed because it is the same figure key. Part (b)(i) itself is skipped: its scheme entry is a bare tick with no answer text."
+  "notes": "Flat 2-mark tariff, fixed, one row. The scheme's three solidus alternatives are one point stated three ways and live in accepts. Figure p22-i1 opened before binding: it carries the part (b)(i) instruction and both lettered close-ups, A headed out and B leafy — which is exactly what the reason turns on, so the card cannot stand without it. The same crop is bound by the (b)(iii) card, which is allowed because it is the same figure key. Part (b)(i) itself is skipped: its scheme entry is a bare tick with no answer text. MOVED FROM STEM (scheme side only): The marking points here are the ones credited for choosing photograph B; the scheme adds '(Allow opposite points for A)'."
  },
  {
   "id": "agsci-2024-ol-q14biii",
@@ -32365,7 +32365,7 @@
   "section": "B",
   "questionRef": "2024 OL Q15(b)(iv)",
   "questionText": "Using the colours in the box below, list the colours in order of sequence used by the farmer during mating.",
-  "stem": "Answer both (a) and (b) with either (c) or (d). At mating the farmer straps a raddle on the ram to mark the ewes that have been served, and part (b)(iii) established that the colour is changed every 13–15 days so that any ewe repeating shows up. The answer table on the paper has three rows: 1st colour, 2nd colour, 3rd colour. The scheme accepts either the colour name or the letter of the tub.",
+  "stem": "Answer both (a) and (b) with either (c) or (d). At mating the farmer straps a raddle on the ram to mark the ewes that have been served, and part (b)(iii) established that the colour is changed every 13–15 days so that any ewe repeating shows up. The answer table on the paper has three rows: 1st colour, 2nd colour, 3rd colour.",
   "figureKey": "agricultural-science-2024-OL-paper-p26-i0",
   "labelKey": [
    {
@@ -32410,7 +32410,7 @@
     "marks": null
    }
   ],
-  "notes": "The scheme prints the tariff as '4 + 1 + 1' for a 6-mark part without saying which colour carries which value — under the scheme's own front matter the FIRST correct answer encountered takes the 4 — so this is orderedSplit and every row is marks: null. Putting 4/1/1 on specific rows would be a claim the scheme does not make. Figure p26-i0 opened before binding: three identical 1 kg raddle tubs headed A (green), B (blue), C (yellow), which is what makes the scheme's 'Yellow / C' pairing readable. The solidus in each row separates two wordings of one answer (the colour or its letter), not two marking points."
+  "notes": "The scheme prints the tariff as '4 + 1 + 1' for a 6-mark part without saying which colour carries which value — under the scheme's own front matter the FIRST correct answer encountered takes the 4 — so this is orderedSplit and every row is marks: null. Putting 4/1/1 on specific rows would be a claim the scheme does not make. Figure p26-i0 opened before binding: three identical 1 kg raddle tubs headed A (green), B (blue), C (yellow), which is what makes the scheme's 'Yellow / C' pairing readable. The solidus in each row separates two wordings of one answer (the colour or its letter), not two marking points. MOVED FROM STEM (scheme side only): The scheme accepts either the colour name or the letter of the tub."
  },
  {
   "id": "agsci-2024-ol-q18aiii",
@@ -32644,7 +32644,7 @@
   "section": "A",
   "questionRef": "2021 OL Q10(b)",
   "questionText": "Outline the function of the part labelled A.",
-  "stem": "Question 10 prints a side-view line drawing of the reproductive system of a cow, with the bladder and the vulva named on the drawing and one further structure picked out by a short red arrow labelled A. Part (a) asked you to name A. The scheme scores (a) and (b) as separate 2-mark points, so this mark does not depend on having named A correctly — describe what the structure the arrow points to does.",
+  "stem": "Question 10 prints a side-view line drawing of the reproductive system of a cow, with the bladder and the vulva named on the drawing and one further structure picked out by a short red arrow labelled A. Part (a) asked you to name A. Describe what the structure the arrow points to does.",
   "figureKey": "agricultural-science-2021-OL-paper-p13-i0",
   "labelKey": [
    {
@@ -32670,7 +32670,7 @@
     "contextNote": "Four alternatives for ONE 2-mark point: produces eggs, ovulation, produces oestrogen, or produces progesterone. Any single one carries the whole 2 — the 'or's are alternatives, not separate marks."
    }
   ],
-  "notes": "Figure opened and verified: agricultural-science-2021-OL-paper-p13-i0 shows the whole drawing, the red A arrow, the Bladder and Vulva callouts and the (a), (b) and (c) instructions. Bound because 'the part labelled A' means nothing without the drawing. The scheme's fourth alternative, progesterone, is now claimable through accepts; it cannot be appended to the row verbatim because the scheme file typesets the marks cell inside the phrase ('… produces oestrogen or 2' then 'progesterone'), which I confirmed against the file and against the build's traceability check — accepts is not traceability-checked, so the wording belongs there. The label key no longer names the structure: part (a) on the same figure asks the student to name it and this part asks what it does, so naming it in the key would hand over both."
+  "notes": "Figure opened and verified: agricultural-science-2021-OL-paper-p13-i0 shows the whole drawing, the red A arrow, the Bladder and Vulva callouts and the (a), (b) and (c) instructions. Bound because 'the part labelled A' means nothing without the drawing. The scheme's fourth alternative, progesterone, is now claimable through accepts; it cannot be appended to the row verbatim because the scheme file typesets the marks cell inside the phrase ('… produces oestrogen or 2' then 'progesterone'), which I confirmed against the file and against the build's traceability check — accepts is not traceability-checked, so the wording belongs there. The label key no longer names the structure: part (a) on the same figure asks the student to name it and this part asks what it does, so naming it in the key would hand over both. MOVED FROM STEM (scheme side only): The scheme scores (a) and (b) as separate 2-mark points, so this mark does not depend on having named A correctly."
  },
  {
   "id": "agsci-2021-ol-q11a-iii",

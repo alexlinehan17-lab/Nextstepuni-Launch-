@@ -2410,7 +2410,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2021-ol-q15a-ii", topicId: "agsci-3-3-1", conceptId: "grass-species-selection-reasons",
     section: "B", questionRef: "2021 OL Q15(a)(ii)",
-    stem: "Question 15 is about making good quality grass silage on a beef farm. Part (a)(i) asked you to list two grasses commonly used for silage production; the scheme's list is PRG (perennial ryegrass), IRG (Italian ryegrass) and hybrid rye grass.",
+    stem: "Question 15 is about making good quality grass silage on a beef farm. Part (a)(i) asked you to list two grasses commonly used for silage production: the grasses named at part (i) are PRG (perennial ryegrass), IRG (Italian ryegrass) and hybrid rye grass.",
     questionText: "Outline one reason for using any one of the grasses named at part (i) above.",
     tariffModel: {"kind":"fixed","notation":"4"}, totalMarks: 4,
     rows: [
@@ -3701,7 +3701,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2023-ol-q13a-iii", topicId: "agsci-3-3-1", conceptId: "reasons-for-sowing-clover-in-a-sward",
     section: "B", questionRef: "2023 OL Q13(a)(iii)",
-    stem: "Question 13 is answered as (a) and (b) with either (c) or (d), for 50 marks in total. Reseeding grassland is an important aspect of ensuring farm sustainability. Part (ii) printed photographs of three plants that may be sown in a newly reseeded pasture, and the scheme names them A = Red clover, B = Perennial ryegrass, C = White clover. Plants A and C are therefore the two clovers.",
+    stem: "Question 13 is answered as (a) and (b) with either (c) or (d), for 50 marks in total. Reseeding grassland is an important aspect of ensuring farm sustainability. Part (ii) printed photographs of three plants that may be sown in a newly reseeded pasture; A is Red clover, B Perennial ryegrass and C White clover, named in part (ii). Plants A and C are therefore the two clovers.",
     questionText: "Outline reasons for sowing plants A and C shown in part (ii) in a newly sown sward.",
     tariffModel: {"kind":"orderedSplit","notation":"4+2"}, totalMarks: 6,
     rows: [
@@ -3882,7 +3882,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2023-ol-q15a-v", topicId: "agsci-1-2", conceptId: "capillarity-investigation-method",
     section: "B", questionRef: "2023 OL Q15(a)(v)",
-    stem: "Question 15 is answered as (a) with either (b) or (c), for 50 marks in total. Brian bought 120 hectares of land for a mixed tillage and beef enterprise. He collected two soil samples, A and B, and wanted to compare the capillarity of the two. You draw the labelled diagram yourself — the scheme awards these points wherever they appear, on the diagram or in the description.",
+    stem: "Question 15 is answered as (a) with either (b) or (c), for 50 marks in total. Brian bought 120 hectares of land for a mixed tillage and beef enterprise. He collected two soil samples, A and B, and wanted to compare the capillarity of the two. You draw the labelled diagram yourself.",
     questionText: "Describe with the aid of a labelled diagram how he carried out this investigation.",
     tariffModel: {"kind":"fixed","notation":"3(2)"}, totalMarks: 6,
     rows: [
@@ -4684,7 +4684,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q17biii", topicId: "agsci-1-5", conceptId: "harvesting-safety-precaution",
     section: "B", questionRef: "2024 OL Q17(b)(iii)",
-    stem: "Part (b) is about a food crop (other than grass) the candidate has named and studied — the scheme works through barley, potatoes and kale — and part (b)(ii) asked how that crop is harvested and stored.",
+    stem: "Part (b) is about a food crop (other than grass) the candidate has named and studied, and part (b)(ii) asked how that crop is harvested and stored.",
     questionText: "Outline one safety precaution that should be taken during harvesting this crop.",
     tariffModel: {"kind":"fixed","notation":"4"}, totalMarks: 4,
     rows: [
@@ -6132,7 +6132,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q6ai", topicId: "agsci-4-2", conceptId: "sheep-breed-identification",
     section: "A", questionRef: "2024 OL Q6(a)(i)",
-    stem: "Answer either (a) or (b). The photographs below show some breeds of sheep found on Irish farms, with the word bank Texel, Suffolk, Charolais, Border Leicester printed above them. Only three of the four letters need to be named — and under the scheme's surplus-answer rule a wrong extra answer cancels a correct one. Part (ii) then asks for one reason why a named breed is suitable for sheep meat production.",
+    stem: "Answer either (a) or (b). The photographs below show some breeds of sheep found on Irish farms, with the word bank Texel, Suffolk, Charolais, Border Leicester printed above them. Only three of the four letters need to be named. Part (ii) then asks for one reason why a named breed is suitable for sheep meat production.",
     questionText: "Identify any three of the following breeds using the list below.",
     tariffModel: {"kind":"bestNofParts","notation":"3(2)","answer":3,"ofParts":4,"perPart":2}, totalMarks: 6,
     rows: [
@@ -6190,7 +6190,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q14bii", topicId: "agsci-3-3-3", conceptId: "correct-grass-stage-for-silage",
     section: "B", questionRef: "2024 OL Q14(b)(ii)",
-    stem: "Silage making is a very important aspect of farm life as it is an essential feedstuff for ruminant animals on farms. Part (b)(i) printed the two grass photographs below and asked which shows the correct stage of cutting the grass for silage. The marking points here are the ones credited for choosing photograph B; the scheme adds '(Allow opposite points for A)'.",
+    stem: "Silage making is a very important aspect of farm life as it is an essential feedstuff for ruminant animals on farms. Part (b)(i) printed the two grass photographs below and asked which shows the correct stage of cutting the grass for silage.",
     questionText: "Briefly outline one reason for your choice in part (i).",
     tariffModel: {"kind":"fixed","notation":"2"}, totalMarks: 2,
     rows: [
@@ -6273,7 +6273,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q15biv", topicId: "agsci-4-3-3", conceptId: "raddle-colour-sequence",
     section: "B", questionRef: "2024 OL Q15(b)(iv)",
-    stem: "Answer both (a) and (b) with either (c) or (d). At mating the farmer straps a raddle on the ram to mark the ewes that have been served, and part (b)(iii) established that the colour is changed every 13–15 days so that any ewe repeating shows up. The answer table on the paper has three rows: 1st colour, 2nd colour, 3rd colour. The scheme accepts either the colour name or the letter of the tub.",
+    stem: "Answer both (a) and (b) with either (c) or (d). At mating the farmer straps a raddle on the ram to mark the ewes that have been served, and part (b)(iii) established that the colour is changed every 13–15 days so that any ewe repeating shows up. The answer table on the paper has three rows: 1st colour, 2nd colour, 3rd colour.",
     questionText: "Using the colours in the box below, list the colours in order of sequence used by the farmer during mating.",
     tariffModel: {"kind":"orderedSplit","notation":"4 + 1 + 1"}, totalMarks: 6,
     rows: [
@@ -6373,7 +6373,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2021-ol-q10b", topicId: "agsci-4-1", conceptId: "ovary-function",
     section: "A", questionRef: "2021 OL Q10(b)",
-    stem: "Question 10 prints a side-view line drawing of the reproductive system of a cow, with the bladder and the vulva named on the drawing and one further structure picked out by a short red arrow labelled A. Part (a) asked you to name A. The scheme scores (a) and (b) as separate 2-mark points, so this mark does not depend on having named A correctly — describe what the structure the arrow points to does.",
+    stem: "Question 10 prints a side-view line drawing of the reproductive system of a cow, with the bladder and the vulva named on the drawing and one further structure picked out by a short red arrow labelled A. Part (a) asked you to name A. Describe what the structure the arrow points to does.",
     questionText: "Outline the function of the part labelled A.",
     tariffModel: {"kind":"fixed","notation":"2"}, totalMarks: 2,
     rows: [

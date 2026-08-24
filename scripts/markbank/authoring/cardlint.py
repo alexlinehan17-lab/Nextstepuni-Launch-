@@ -38,14 +38,40 @@ SCHEME_LEAK = re.compile(
     r'scores?|adds?|works|prints?|own)\b'
     r'|\bAccept(?:able)?:|\bAward(?:s)? (?:full |partial )?marks\b|'
     r'\bFull Credit\b|\bPartial Credit\b|\bLPC\b|\bHPC\b|\bMPC\b')
+# A reference is a GHOST only when it points at something ON THE PAGE.
+# Two noun classes, because they behave differently:
+#  PICTORIAL — a diagram/photograph/map cannot be prose, so naming one at all
+#    means the page prints it.
+#  DESCRIBABLE — "the apparatus", "this circuit", "the graph", "the image" are
+#    routinely set out in words ("Name the apparatus used", "the image distance
+#    v"), so they only count when a locative pins them to the page. Without
+#    that split, 71 of physics's 78 flags were false.
+PICTORIAL = r'(?:diagram|figure|extract|photograph|photo|sketch|drawing)'
+DESCRIBABLE = r'(?:apparatus|circuit|arrangement|set-?up|image|graph|table|chart|curve|pattern|map)'
+HERE = r'(?:below|above|opposite|shown|overleaf|on the (?:right|left))'
 FIG_REF = re.compile(
-    r'\bshown\b|\bthe (?:diagram|extract|map|photograph|photo|image|graph|chart) \b|'
-    r'\bdiagram (?:below|above|opposite)\b|\bin the extract\b|\baccompanying\b|'
-    r'\bgiven diagram\b|\bthe drawing shows\b', re.I)
+    r'\bshown\b'
+    rf'|\b(?:the|this|following|above) {PICTORIAL}\b'
+    rf'|\b{PICTORIAL} {HERE}\b'
+    rf'|\b(?:the|this) {DESCRIBABLE} {HERE}\b'
+    r'|\bin the extract\b|\baccompanying\b|\bgiven diagram\b', re.I)
 SELF_WORK = re.compile(
     r'\b(?:on|to|in) your (?:drawing|sketch|graph|diagram|answer)\b|'
     r'\byour answers? (?:to|from|in)\b|\bshown? (?:all )?(?:your|the) work'
-    r'|\bshow (?:your|that|how|the|two|three|one)\b', re.I)
+    r'|\bshow (?:your|that|how|the|two|three|one)\b'
+    r'|\byou have (?:shown|drawn|named)\b', re.I)
+
+
+# The authoring pass sometimes states outright that the artwork is not needed
+# ("Nothing in this part depends on the photograph."). That is a reviewed
+# judgement, recorded on the card, and the lint honours it.
+NO_DEPENDENCY = re.compile(
+    r'\bnothing (?:in this part )?depends on\b|\bdoes not depend on the\b'
+    r'|\bno figure is needed\b', re.I)
+# A card that PRINTS the table it refers to has already shipped it: a run of
+# numbers is the table, inline. Physics 2021 OL Q2 carries its own pressure /
+# volume readings, so "the table above" is satisfied by the card itself.
+INLINE_TABLE = re.compile(r'(?:\b\d[\d.,/]*\b[^\w]{0,4}){6,}')
 
 
 def label_junk(text):
@@ -75,7 +101,11 @@ def lint(subject):
                 flags.append((subject, c['id'], 'scheme-leak',
                               f'{field}: {text[:90]}'))
         joined = f'{stem} {qtext}'
-        if not has_fig and FIG_REF.search(joined) and not SELF_WORK.search(joined):
+        m = FIG_REF.search(joined)
+        table_only = bool(m) and re.search(
+            r'(?:table|chart|graph)\b', m.group(0), re.I) and INLINE_TABLE.search(joined)
+        if (not has_fig and m and not SELF_WORK.search(joined)
+                and not NO_DEPENDENCY.search(joined) and not table_only):
             flags.append((subject, c['id'], 'ghost-figure', joined.strip()[:90]))
         if label_junk(stem):
             flags.append((subject, c['id'], 'label-junk', stem[:90]))

@@ -361,6 +361,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2017-hl-q2-b-r1", kind: "anyN", verbatim: "Advantages – any two of the following – such as", marks: 12, contextNote: "Advantages – any two of the following – such as", openList: true, group: {"claimMax":2,"perOption":6,"options":["conversion cheaper than new build - cost savings on construction – an extension at B with associated costs not needed","little disruption during conversion of office – at front of house so owners can live in house as conversion takes place","external ventilation, window and access from vented lobby already present in front office","the design integrity of the existing dwelling house is maintained","access for visitors to W.C. is more convenient by proximity to the front door","existing office large enough to accommodate wheelchair access – universal design","increased distance of bathroom from food preparation and consumption areas","existing natural light to the utility room at the back of the dwelling is not restricted","links with nature preserved - existing back garden remains undisturbed - existing size, plants, green area and trees maintained, contact with nature good for wellbeing of occupants"]} },
     ],
+    figure: {
+          "candId": "construction-studies-2017-hl-paper-p002-i0",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-hl-paper-p002-i0.png",
+          "srcHash": "66c1d93ba668af3e895403e0f3e41588",
+          "alt": "A furnished ground floor plan of a semi-detached house. An L-shaped kitchen counter with sink and four-ring hob sits along the rear wall, with a round dining table and four chairs to the left and a living area with sofa, coffee table, armchairs and a fireplace to the right. A stairs and hall run down the left side, and a narrow utility off the rear hall holds a washing machine. A room at the front right is labelled A and contains a desk and chair, dimensioned 4,500 by 2,500 millimetres. The letter B is marked in the rear garden just outside the back door, beside a raised deck with steps and shrub planting along both boundaries.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2017 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -426,6 +434,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2017-hl-q5-b-r1", kind: "anyN", verbatim: "It is proposed to upgrade the thermal properties of the above wall, to meet the Passive House standard, by fixing expand", marks: 18, openList: true, group: {"claimMax":6,"perOption":3,"options":["Formula U=1/R","R value for 0.15 using R=1/U","R value for calculated U-Value from part (a)","Difference in resistances (required resistance)","Application of formula R = T/k","Required thickness of insulation"]} },
     ],
+    figure: {
+          "candId": "construction-studies-2017-hl-paper-p003-i0",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-hl-paper-p003-i0.png",
+          "srcHash": "ae5d209140664188fd280744f3e763a7",
+          "alt": "A shaded pictorial cutaway sketch of a single-leaf hollow concrete block wall, drawn in perspective so the hollow voids in the top course of blocks are visible. A layer of insulation board with a coiled/looped hatch is shown against the inner face behind a lining board, and a second, thicker coiled insulation layer is shown applied to the outer face with mechanical fixings through it, finished with a render coat. No dimensions or written labels appear on the sketch.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2017 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -505,6 +521,14 @@ export const CARDS: SecCard[] = [
     { id: "cons-2017-hl-q8-a-r1", kind: "anyN", verbatim: "Natural Light", marks: 8, contextNote: "Natural Light", openList: true, group: {"claimMax":2,"perOption":4,"options":["countertops are the primary task areas in kitchens - careful consideration must be given to the lighting plan for the kitchen","use of light meter to help in the design of lighting plan","design to provide even lighting while avoiding excessive glare","careful placement of windows to reduce dependence on artificial lighting","light from sky above most efficient – roof lights, light tunnels, domes and light panels","natural light aids positive mental attitude and a general sense of well being - phototropic","natural light and sunlight enhance occupant comfort creating a calm environment","natural light connects occupants with the outdoors","natural light enhances clarity and colour definition"]} },
     { id: "cons-2017-hl-q8-a-r2", kind: "anyN", verbatim: "Artifical light", marks: 8, contextNote: "Artifical light", openList: true, group: {"claimMax":2,"perOption":4,"options":["provides safe and effective illumination for preparing, cooking and eating","consideration given to energy efficiency of light source – strip LEDs","provide task lighting to specific locations - sinks, countertops, hobs, islands","use of sensor lighting reduces energy consumption","locate and position lighting to allow ease of maintenance","use of diffused light helps soften atmosphere within the kitchen","can be used to highlight kitchen cabinetry","may be ceiling mounted, wall mounted or fixed to cabinets","lighting may be movable to suit various tasks","glass doors and glass shelves in kitchen cabinets allow diffuse light to filter into room"]} },
     ],
+    figure: {
+          "candId": "construction-studies-2017-hl-paper-p004-i0",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-hl-paper-p004-i0.png",
+          "srcHash": "1b17cacc819bf5c83fa768fab5e2f347",
+          "alt": "A shaded side-elevation sketch of a person standing at a kitchen worktop, hands resting on the counter top. A base unit sits under the worktop with a recessed plinth at floor level, and a wall cabinet is fixed above the worktop with a gap between the two. The wall is shown as a shaded vertical band on the right and the floor as a horizontal band along the bottom. There are no labels or dimensions.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2017 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -518,6 +542,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2017-hl-q8-b-r1", kind: "anyN", verbatim: "A home office, as shown, measures 4.8 metres long by 3.5 metres wide. The office has a vertical window and unobstructed ", marks: 18, openList: true, group: {"claimMax":6,"perOption":3,"options":["Formula","Correct entry into formula","Floor area","Lo × WF × E","Solve for w (window area) line 1","Solve for w (window area) line 2","Window area"]} },
     ],
+    figure: {
+          "candId": "construction-studies-2017-hl-paper-p004-i1",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-hl-paper-p004-i1.png",
+          "srcHash": "2c249569e32fdc78d6beba0b7af97188",
+          "alt": "A shaded pictorial sketch of a home office viewed from behind and above. A person sits on a swivel chair at a desk placed against the corner of two plain walls, working at an open laptop with papers spread on the desk. A tall narrow window is drawn on the left-hand wall and the floor is boarded timber. There are no labels or dimensions.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2017 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -574,6 +606,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2017-hl-q10-b-r1", kind: "anyN", verbatim: "The diagram shows the ground floor plan of a semi-detached house. Also shown is the location M in the hallway, of the Me", marks: 24, openList: true, group: {"claimMax":4,"perOption":6,"options":["Line diagram of room layout","Design for ducting to MHRV unit","Direction of airflow in ducts","Description of how system works"]} },
     ],
+    figure: {
+          "candId": "construction-studies-2017-hl-paper-p005-i0",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-hl-paper-p005-i0.png",
+          "srcHash": "ce5e38e9ecbfb6f4d8b1bfb456742929",
+          "alt": "A furnished ground floor plan of a semi-detached house. Along the rear wall are a kitchen with sink, hob and worktop and a dining area with a round table and four chairs; a small shower room with W.C. and wash basin sits beside them, and a utility with washing machine and a store are on the right. The front of the plan holds a living room with sofa, coffee table, armchairs and a fireplace. A hall with a stairs runs down the left side, and the letter M is printed inside a box drawn in that hallway beside the foot of the stairs. A rear garden with a paved terrace and shrub planting is shown above the house.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2017 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -587,6 +627,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2017-hl-q10-c-r1", kind: "anyN", verbatim: "Discuss two advantages of siting the MHRV unit in the hallway, as shown.", marks: 12, openList: true, group: {"claimMax":2,"perOption":6,"options":["Advantage 1","Advantage 2","Scrúdú Ardteistiméireachta, 2017 Staidéar Foirgníochta, Ardleibhéal"]} },
     ],
+    figure: {
+          "candId": "construction-studies-2017-hl-paper-p005-i0",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-hl-paper-p005-i0.png",
+          "srcHash": "ce5e38e9ecbfb6f4d8b1bfb456742929",
+          "alt": "A furnished ground floor plan of a semi-detached house. Along the rear wall are a kitchen with sink, hob and worktop and a dining area with a round table and four chairs; a small shower room with W.C. and wash basin sits beside them, and a utility with washing machine and a store are on the right. The front of the plan holds a living room with sofa, coffee table, armchairs and a fireplace. A hall with a stairs runs down the left side, and the letter M is printed inside a box drawn in that hallway beside the foot of the stairs. A rear garden with a paved terrace and shrub planting is shown above the house.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2017 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -615,6 +663,14 @@ export const CARDS: SecCard[] = [
     { id: "cons-2017-hl-q3-c-r1", kind: "anyN", verbatim: "Two advantages of building an extension to the farmhouse shown – such as", marks: 5, contextNote: "Two advantages of building an extension to the farmhouse shown – such as", openList: true, group: {"claimMax":1,"perOption":5,"options":["there is an existing high quality vernacular house on site – extending it maintains the character of the house but enhances its possibilities","benefit from existing rear garden, trees, shrubs, plants – enhances wellbeing and creates a pleasant indoor atmosphere, close to nature – sounds, sights, smells, changing seasons","low environment impact – the extension is small in size but increases the flexibility of kitchen/dining/ living space","low environmental demands – services such as water, electricity, sewage treatment, roads etc. are already on site, minimum disruption needed to greatly enhance the living space","modest scale, modest costs, low borrowing requirements","highest thermal standards – orientation, insulation, airtightness – low operating cost to heat and light","single storey facilitates roof lights for penetration of natural light and sunlight","minimum energy required to extend – opening with lintels formed in rear wall – no specialised components or steel lintels needed, so minimum environmental impact and low embodied energy","modest scale is environmentally sustainable - small spans, restricted material requirements, compact form, easy to manage, clean and maintain","occupants can live in house while extension is being built, extension built first, last task is to form opening between extension and existing house – cost effective","increases living space and allows for individual requirements and preferences of owners to be incorporated into the farmhouse design and layout","provides a more light-filled comfortable interior space taking advantage of natural sunlight if extension is appropriately designed","increased levels of solar gain due to the extra glazing on the southern façade results in a more comfortable living space","reduction in energy consumption in lighting and heating will decrease the carbon footprint of the farmhouse"]} },
     { id: "cons-2017-hl-q3-c-r2", kind: "anyN", verbatim: "___________________________________________________________________________________________________________", marks: 5, contextNote: "___________________________________________________________________________________________________________", openList: true, group: {"claimMax":1,"perOption":5,"options":["appropriate, well designed extensions to traditional vernacular buildings will serve as exemplars of good practice to those in the locality who may own, or might be considering purchasing such a building","demonstrates a respect for maintaining vernacular building and tradition and will encourage others in the locality to consider a similar approach"]} },
     ],
+    figure: {
+          "candId": "construction-studies-2017-hl-paper-p002-i1",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-hl-paper-p002-i1.png",
+          "srcHash": "ccacae299ff7268d10030b8909adf458",
+          "alt": "Two drawings of a farmhouse stacked vertically. The upper one is a front elevation: a two-storey house with a shaded pitched roof, a chimney stack at each gable, five vertically-proportioned windows and a panelled front door in a projecting porch with a fanlight. The lower one is a ground floor plan with thick shaded walls, marked A at the left end and A at the right end. The left room is a kitchen/dining space with a range, sink, worktop and a dining table with six chairs, dimensioned 4,000 across and 4,100 deep; the right room is a living room with a sofa and two armchairs. A stairs and small hall with an entrance porch sit between them.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2017 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -797,6 +853,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2018-hl-q6-b-r1", kind: "anyN", verbatim: "___________________________________________________________________________________________________________", marks: 30, contextNote: "___________________________________________________________________________________________________________", openList: true, group: {"claimMax":6,"perOption":5,"options":["the house is small and compact, facilitating ease of construction by self-builders","no need for specially designed beams or supports","one and-a-half storey build maximises living space with minimum of materials","narrow width – can be spanned with standard wooden joists without need for structural steel","lighter building simplifies foundation design and earthworks – environmentally friendly","straightforward roof design for ease of marking-out and erection","light timber frame and external rainscreen cladding obviates need for mechanical lifting equipment","framework can be constructed on site, can be easily cut by hand or with chop saw","early closing-in of frame provides a dry workspace at an early stage of construction","indoor trades can commence early in build process – electrical and plumbing","low moisture, short drying out time, house can be lived in more quickly due to design of construction"]} },
     ],
+    figure: {
+          "candId": "construction-studies-2018-hl-paper-p005-i0",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-hl-paper-p005-i0.png",
+          "srcHash": "ff8e5d18220a496c5db9cc6d7a87128b",
+          "alt": "Two stacked drawings of a narrow eco-friendly house. The upper drawing is a coloured front elevation of a tall two-storey house with a steeply pitched roof, vertical timber board cladding over the whole facade, a metal flue or chimney rising past the left-hand side of the roof, a large square upper-floor window, a glazed front door with a narrow full-height window to its left and a wider horizontal window to its right, and a mature broadleaf tree drawn to the right of the house. The lower drawing is the ground floor plan, dimensioned 10.0 m on the vertical side and 4.0 m across the bottom. The plan shows an open living area at the top with two armchairs, a sofa, a round table and a stove set against the left wall; a dining table with four chairs in the middle; a kitchen run along the right-hand wall with a sink and a hob; a straight staircase against the left wall at the lower end; and a small bathroom in the bottom right corner with a WC and a wash basin, entered through a hallway with two swing doors. Window openings are marked along both long walls.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -862,6 +926,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2018-hl-q4-b-r1", kind: "anyN", verbatim: "An extract from a site location map is shown. A and B are possible sites for a new house. Select your preferred site and", marks: 15, contextNote: "The scheme groups its answer under: South", openList: true, group: {"claimMax":3,"perOption":5,"options":["house is positioned close to the perimeter fence, so maximum garden space is available to supply house with garden produce – fruit and vegetables grown on site Why site B may be considered suitable for a new house - such as","access can be gained from the main or minor road, so little roadworks are required – environmentally sustainable","greater proximity to dwellings with existing connections to services such as waste management facilities, water, electricity and broadband, bin collection - resulting in cost-effective provision of public services","long sightlines can be achieved on the straight road, which increase safety when entering or exiting the site – usually for a 60 km/hour speed limit, 90 metre sightlines are required for safe access","houses adjacent to site B are in clusters, thus cluster developments are a favourable development and reflect the existing development patterns","reduced distance from leisure facilities, schools and employment","sufficient space exists to facilitate waste-water treatment and percolation area on the site","the long southerly aspect of the site increases design possibilities to optimise solar gain"]} },
     ],
+    figure: {
+          "candId": "construction-studies-2018-hl-paper-p003-i0",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2018-hl-paper-p003-i0.png",
+          "srcHash": "9c1a52aadbb8bba3963fe5915b1c4d46",
+          "alt": "A framed extract from a site location map with a north arrow in the top right corner. Two candidate sites are shaded green and lettered: site A is a roughly square plot near the top centre, and site B is a larger plot lower left. A main road with a dashed centre line runs diagonally from the lower right to the upper left across the map, with a second road branching off it towards the top right and narrower lanes and field boundaries dividing the surrounding land. Four existing buildings are drawn as solid dark rectangles, each set back off a lane by a short curved entrance or driveway. Site B fronts directly onto the main road; site A sits back from it behind other fields.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2018 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1098,6 +1170,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2019-hl-q5-c-r1", kind: "anyN", verbatim: "It is proposed to upgrade the thermal properties of the above wall, to meet the Passive House standard, by fixing expand", marks: 15, openList: true, group: {"claimMax":5,"perOption":3,"options":["Resistance for U- value for 0.15Wm2K (using R=1/U)","Resistance from calculated U-value from part (a)","Difference in resistances (required resistance)","Application of formula R = T/k","Required thickness of insulation"]} },
     ],
+    figure: {
+          "candId": "construction-studies-2019-hl-paper-p004-i0",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-hl-paper-p004-i0.png",
+          "srcHash": "90269235b48f2239c89722c8c423c104",
+          "alt": "A cutaway axonometric of an external cavity wall, drawn as a stepped peel-back through the layers: a concrete blockwork outer leaf and a concrete blockwork inner leaf with a hatched insulation board and clear cavity between them, and — the point of the part — an additional continuous slab of external insulation wrapped over the outside face of the outer leaf, covered by a mesh-reinforced coat and a finishing render. A small red disc with a curl and two pale blue oval markers sit on the insulation faces. No text labels or dimensions are printed on the drawing.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1111,6 +1191,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2019-hl-q6-a-r1", kind: "anyN", verbatim: "Three features of the design that contribute to the house having a low environment impact", marks: 30, contextNote: "Three features of the design that contribute to the house having a low environment impact", openList: true, group: {"claimMax":6,"perOption":5,"options":["Large south facing glazed windows and doors to allow maximum sunlight to enter the house naturally heating the internal space and therefore reducing heating costs and dependency on non-renewable fossil fuels","Trees on the south side to provide natural solar shading during summer months and reduce overheating internally","Wood burning stove contributes to the reduction of direct draughts associated with open fireplaces. They are also carbon neutral and more efficient","High thermal mass chimney stack is central to the design so maximum heat can be retained internally and heat is not lost to an external wall","High levels of insulation in the walls reducing heat loss","Small windows on the north elevation reducing heat loss potential and conserving energy","Photovoltaic cells installed on the roof to generate renewable energy","Timber frame construction, which has low embodied energy","Attic space used for additional living quarters without using additional building products and reducing the footprint of the building"]} },
     ],
+    figure: {
+          "candId": "construction-studies-2019-hl-paper-p005-i0",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-hl-paper-p005-i0.png",
+          "srcHash": "13097d56cf6efd8ea7f6b4913f833637",
+          "alt": "Two stacked drawings of the same house. Above: a front elevation of a long single-storey dwelling with a grey clad upper band and roof, a rectangular array of dark blue panels set into the roof slope on the left, a small white rectangular projection above the ridge, a square window and a set of glazed patio doors in orange timber-clad reveals, a further window high in the grey band, and a curved barrel-roofed orange timber-clad section with a large window at the right-hand end; three bare deciduous trees drawn in bright green stand in front of the facade. Below: the ground floor plan of the same house, an L-shaped layout with hatched external walls, an open-plan living/dining/kitchen wing (sofas and an armchair, a dark grey island with a hob, a dining table with six chairs, pink-shaded fitted kitchen units) leading to a stairs and hall, and a wing containing a bathroom with bath and WC and a bedroom with a double bed; three more green trees are drawn to the lower left of the plan. No room names or dimensions are printed on either drawing.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1139,6 +1227,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2019-hl-q6-c-r1", kind: "anyN", verbatim: "Advantages", marks: 12, contextNote: "Advantages", openList: true, group: {"claimMax":2,"perOption":6,"options":["It preserves traditional knowledge and skill for future generations to learn from","It creates a sense of place and pride by availing of skills specific to your locality","Employment is generated in the locality","Families remain in the locality and contribute to community life and events","Local workers will know where to source materials needed locally","If local workers and local materials are utilised- then it reduces the embodied energy of the house","It will help prevent the migration of rural labour to urban centres and give them a reason to stay and earn while preventing loss of skills"]} },
     ],
+    figure: {
+          "candId": "construction-studies-2019-hl-paper-p005-i0",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2019-hl-paper-p005-i0.png",
+          "srcHash": "13097d56cf6efd8ea7f6b4913f833637",
+          "alt": "Two stacked drawings of the same house. Above: a front elevation of a long single-storey dwelling with a grey clad upper band and roof, a rectangular array of dark blue panels set into the roof slope on the left, a small white rectangular projection above the ridge, a square window and a set of glazed patio doors in orange timber-clad reveals, a further window high in the grey band, and a curved barrel-roofed orange timber-clad section with a large window at the right-hand end; three bare deciduous trees drawn in bright green stand in front of the facade. Below: the ground floor plan of the same house, an L-shaped layout with hatched external walls, an open-plan living/dining/kitchen wing (sofas and an armchair, a dark grey island with a hob, a dining table with six chairs, pink-shaded fitted kitchen units) leading to a stairs and hall, and a wing containing a bathroom with bath and WC and a bedroom with a double bed; three more green trees are drawn to the lower left of the plan. No room names or dimensions are printed on either drawing.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2019 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1339,6 +1435,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2020-hl-q3-a-r1", kind: "anyN", verbatim: "Discuss in detail, three design considerations necessary when modifying the internal layout of the house shown to meet t", marks: 18, openList: true, group: {"claimMax":3,"perOption":6,"options":["External / Internal doors","Corridors","Living Room Design","Kitchens","Bedroom Design","Bathroom"]} },
     ],
+    figure: {
+          "candId": "construction-studies-2020-hl-paper-p003-i0",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-hl-paper-p003-i0.png",
+          "srcHash": "af4bd4e1134d5f4a27ed0b9a72b9ce14",
+          "alt": "The front elevation and ground floor plan of a semi-detached bungalow, drawn one above the other. The elevation shows a slated pitched roof with a chimney at the left gable, a small gabled porch over a panelled front door, and a wide multi-pane window on each side of the door. Beneath it the floor plan shows, on the left, a kitchen/dining room with a sink run, hob and a four-seat dining table, and below it a living room with a sofa, two armchairs and a stove set into the outer wall; on the right are two bedrooms, each with a bed and wardrobe, with a bathroom containing a bath, WC and washbasin between them, all reached off a central hallway. The letter A is printed at the left and right margins of the plan, level with the internal wall separating the front and rear rooms, marking the load-bearing wall A-A.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1456,6 +1560,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2020-hl-q6-a-advantages-r1", kind: "anyN", verbatim: "Advantages", marks: 6, contextNote: "Advantages", openList: true, group: {"claimMax":2,"perOption":3,"options":["Ethical responsibility to retain our natural heritage and vernacular architecture by making old buildings habitable","The embodied energy and carbon required to construct a new house are avoided","Not adding visual pollution to the landscape as the structure already exists","The home would have character features and proportions unique to Ireland and its location rather than the generic interior of a new build","Reduced carbon footprint as the structure already exists","Less money required to make it habitable as the main structure is already built","Many old buildings have good thermal mass","Planning permission is not required when carrying out a retrofit only","Maintaining / keeping / retaining Ireland’s historic buildings"]} },
     ],
+    figure: {
+          "candId": "construction-studies-2020-hl-paper-p005-i0",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-hl-paper-p005-i0.png",
+          "srcHash": "6b0b8abdb25a5e2a494474b166126ad0",
+          "alt": "The front elevation and ground floor plan of an Irish vernacular cottage that has been retrofitted and extended, drawn one above the other. The elevation shows a long single-storey white-walled cottage with a shallow ridged roof, a central timber front door and a small square window on each side; to the right a fully glazed link joins it to a taller two-storey extension clad in dark vertical sheeting with a steeply pitched gable, a finial at the ridge and two tall windows. Beneath it the L-shaped ground floor plan shows the original cottage on the left containing two bedrooms with beds and a bathroom with bath, WC and washbasin between them, opening into the extension wing on the right, which contains an open-plan space with a stove set into the rear wall and an armchair angled towards it, an L-shaped sofa, a kitchen island with hob and three stools, a run of units with a sink, a staircase along the right-hand wall, and a six-seat dining table at the front.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1469,6 +1581,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2020-hl-q6-a-disadvantages-r1", kind: "anyN", verbatim: "Disadvantages", marks: 6, contextNote: "Disadvantages", openList: true, group: {"claimMax":2,"perOption":3,"options":["The extent of renovations required is often not realised until the old building has been investigated","The cost associated with the upgrade may be more than initially envisaged","Smaller rooms and layouts may not be suitable for current lifestyles or the needs of the occupants","Bringing the house up to current energy standards can further reduce the size of the rooms","Difficult to fully assess the costs associated with retrofitting an old house","Very difficult to achieve similar thermal insulation levels, airtightness and eliminate thermal bridges compared to a new build","Materials must be carefully chosen when upgrading elements of the house e.g. breathable insulation in the walls","Dampness especially rising damp may be problematic"]} },
     ],
+    figure: {
+          "candId": "construction-studies-2020-hl-paper-p005-i0",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-hl-paper-p005-i0.png",
+          "srcHash": "6b0b8abdb25a5e2a494474b166126ad0",
+          "alt": "The front elevation and ground floor plan of an Irish vernacular cottage that has been retrofitted and extended, drawn one above the other. The elevation shows a long single-storey white-walled cottage with a shallow ridged roof, a central timber front door and a small square window on each side; to the right a fully glazed link joins it to a taller two-storey extension clad in dark vertical sheeting with a steeply pitched gable, a finial at the ridge and two tall windows. Beneath it the L-shaped ground floor plan shows the original cottage on the left containing two bedrooms with beds and a bathroom with bath, WC and washbasin between them, opening into the extension wing on the right, which contains an open-plan space with a stove set into the rear wall and an armchair angled towards it, an L-shaped sofa, a kitchen island with hob and three stools, a run of units with a sink, a staircase along the right-hand wall, and a six-seat dining table at the front.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1482,6 +1602,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2020-hl-q6-b-r1", kind: "anyN", verbatim: "Impact", marks: 30, contextNote: "Impact", openList: true, group: {"claimMax":6,"perOption":5,"options":["Larger windows facing south capturing the suns heat and light therefore reducing heating and lighting costs","Retaining the existing cottage instead of replacing it with a new one, means that the embodied energy and carbon required to construct a new house are avoided","More sustainable to enhance the energy efficiency of the existing cottage through retrofitting","Reduced heat loss by maintaining smaller windows to the north face of the building","Low embodied energy construction materials used for the extension – timber frame","Simple building form – one room deep","Building envelope area minimised to reduce energy loss through external walls","High levels of insulation added to the existing cottage and used in the wall construction of the extension","Attic space is utilised as additional living spaces without having to use carbon negative building materials and increased the building form","Wood burning stove set into the fireplace to reduce draughts and heat loss through the chimney","Utilise thermal mass of existing chimney stack"]} },
     ],
+    figure: {
+          "candId": "construction-studies-2020-hl-paper-p005-i0",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-hl-paper-p005-i0.png",
+          "srcHash": "6b0b8abdb25a5e2a494474b166126ad0",
+          "alt": "The front elevation and ground floor plan of an Irish vernacular cottage that has been retrofitted and extended, drawn one above the other. The elevation shows a long single-storey white-walled cottage with a shallow ridged roof, a central timber front door and a small square window on each side; to the right a fully glazed link joins it to a taller two-storey extension clad in dark vertical sheeting with a steeply pitched gable, a finial at the ridge and two tall windows. Beneath it the L-shaped ground floor plan shows the original cottage on the left containing two bedrooms with beds and a bathroom with bath, WC and washbasin between them, opening into the extension wing on the right, which contains an open-plan space with a stove set into the rear wall and an armchair angled towards it, an L-shaped sofa, a kitchen island with hob and three stools, a run of units with a sink, a staircase along the right-hand wall, and a six-seat dining table at the front.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1495,6 +1623,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2020-hl-q6-c-r1", kind: "anyN", verbatim: "Discuss in detail, using notes and freehand sketches, two modifications to the house shown that would further reduce the", marks: 18, openList: true, group: {"claimMax":6,"perOption":3,"options":["Provide a draught lobby","Planting trees","Construct solar shading","Install evacuated tube / solar panel","Install photovoltaic (PV) panels","Install a wind turbine","Install rainwater harvesting system","Change chimney location"]} },
     ],
+    figure: {
+          "candId": "construction-studies-2020-hl-paper-p005-i0",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2020-hl-paper-p005-i0.png",
+          "srcHash": "6b0b8abdb25a5e2a494474b166126ad0",
+          "alt": "The front elevation and ground floor plan of an Irish vernacular cottage that has been retrofitted and extended, drawn one above the other. The elevation shows a long single-storey white-walled cottage with a shallow ridged roof, a central timber front door and a small square window on each side; to the right a fully glazed link joins it to a taller two-storey extension clad in dark vertical sheeting with a steeply pitched gable, a finial at the ridge and two tall windows. Beneath it the L-shaped ground floor plan shows the original cottage on the left containing two bedrooms with beds and a bathroom with bath, WC and washbasin between them, opening into the extension wing on the right, which contains an open-plan space with a stove set into the rear wall and an armchair angled towards it, an L-shaped sofa, a kitchen island with hob and three stools, a run of units with a sink, a staircase along the right-hand wall, and a six-seat dining table at the front.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2020 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1864,6 +2000,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2021-hl-q4-b-r1", kind: "anyN", verbatim: "Shown is an extract from a site location map. A and B are possible sites for a new house in a rural setting. Select your", marks: 12, openList: true, group: {"claimMax":3,"perOption":4,"options":["Less noise pollution as the site is located away from the main road","No existing houses in close proximity overlooking the property","Greater privacy as it is not adjacent to the main road","The lane leading to the site joins the main road on a straight point so clear sight lines can be obtained which increase safety when entering or exiting the site","Existing natural hedgerow boundary so minimal environmental visual impact","Existing tall vegetation can act as solar shading and increase privacy","Unobstructed views of the lake and forest so enhance health and wellbeing of the occupants","Access can be gained from two site parameter boundaries","Existing services are in close proximity to the site - neighbouring house already has connections with water, electricity, broadband resulting in cost-effective provision of public services","Building close to an existing dwelling is favoured by the planning authority","Reduced distance from leisure facilities, schools and employment","Site B is the smaller site and would result in minimum area for manicured lawns in the countryside","Less arable land is used as it is a smaller site","Sufficient space exists to facilitate waste-water treatment and percolation area on the site"]} },
     ],
+    figure: {
+          "candId": "construction-studies-2021-hl-paper-p003-i0",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-hl-paper-p003-i0.png",
+          "srcHash": "2a7c58515c6243be1bf064580449ba34",
+          "alt": "A framed extract from a site location map, drawn in plan. Two green-shaded plots outlined in red are labelled A (upper right, fronting a grey road that runs down the right-hand side) and B (lower left, at a junction where a dashed-centreline road crosses a second road). Field boundaries are shown as thin black lines, hedgerows and tree lines as thick stippled green bands, existing buildings as dark grey blocks (one near the top left, two beside site B), and a blue water body sits in the top right corner. A red north arrow labelled N is printed at the top right of the frame.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1891,6 +2035,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2021-hl-q6-a-r1", kind: "anyN", verbatim: "With reference to the design shown, discuss using notes and freehand sketches, three features of the design that contrib", marks: 30, openList: true, group: {"claimMax":6,"perOption":5,"options":["Timber frame construction from local sources which reduces transport movements; has lower carbon emissions and a reduction in local air pollution","Less embodied energy required to produce timber frame construction compared to concrete block construction","One room deep design enables light to enter the room from both sides - heat from the sun entering the house will reduce heating costs","High levels of insulation used in the construction will reduce heat loss through the exterior envelope","The absence of a chimney reduces draughts and increases airtightness","Cedar cladding sourced from FSC certified forests used on the front façade","House is heated using a renewable heat source","Simple building form – building envelope area minimised to reduce energy loss through external walls"]} },
     ],
+    figure: {
+          "candId": "construction-studies-2021-hl-paper-p005-i0",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-hl-paper-p005-i0.png",
+          "srcHash": "7197199a3b5d608eface8ffbd3b722e6",
+          "alt": "Two coloured architectural drawings stacked vertically. The upper is a front elevation of a two-storey terraced house, cut with blue break lines at both sides to show the adjoining houses. It has a horizontally banded grey clad upper storey, a white rendered wall at ground level, vertical orange/timber cedar cladding panels, large pale blue glazed windows at both levels, a grey recessed entrance bay in the centre, and green trees drawn behind the roofline. The lower is a ground floor plan in cream fill with hatched cavity walls, showing a kitchen with pink units and a sink at the left, a dining table with four chairs, a small WC with toilet and wash basin, a staircase with a handrail, and a living room at the right with a sofa, an armchair and a rug. Break lines mark the party walls on both sides.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2039,6 +2191,14 @@ export const CARDS: SecCard[] = [
     { id: "cons-2021-hl-q10-a-r1", kind: "anyN", verbatim: "Why solar overheating may occur in the house", marks: 12, contextNote: "Why solar overheating may occur in the house", openList: true, group: {"claimMax":2,"perOption":6,"options":["House oriented with excessive south facing glazing may accumulate high levels of solar gain","Inadequate or no solar shading incorporated into the design of the house - overhangs - brise soleil","Lack of trees or vegetation about the house to provide natural solar shading","insufficient ventilation – natural or mechanical","Increasing levels of airtightness can reduce the amount of 'fresh' air entering the house","Lack of thermal mass within the fabric of the house","Triple-glazed windows reduce heat losses through conduction – little heat loss","High levels of insulation in the fabric of the house reduces heat transmission – retains heat","The activities of occupants such as cooking, bathing, showering all generate additional heat","Occupants themselves generate heat, the amount of which is dependent on their activity level","Heat gain from the house services such as - boilers, hot water storage and distribution pipework","Electrical appliances generate heat when in use - e.g. fridge"]} },
     { id: "cons-2021-hl-q10-a-r2", kind: "anyN", verbatim: "Effects solar overheating may have on its occupants", marks: 12, contextNote: "Effects solar overheating may have on its occupants", openList: true, group: {"claimMax":2,"perOption":6,"options":["The occupants would be uncomfortable when using or living in an excessively warm room(s)","Excessive heat in a house may cause the dehydration of the occupants, this could lead to - headaches, lethargy, and constipation","Occupant in the house would become exhausted very quickly due to the heat – bodies overheating","Occupants could get irritable, angry or grumpy in warm indoor conditions as stress hormones may rise in tandem with the temperature","Overheating may cause occupants to sweating, leading to discomfort","Heatstroke could affect some occupants if the temperatures were very high which could lead to - red skin, headache, and dizziness","Overheating could lead to heat stress which can affect occupants in different ways - an inability to concentrate, muscle cramps, heat rash, severe thirst, confusion","High indoor temperatures affect the quality and continuity of sleep for occupants. Sleep disturbance has been linked to reduced productivity at work, as well as poor physical and mental health","Occupants’ productivity and concentration may also be reduced when in a hot environment","Increased cardiovascular strain","The reuse of local buildings can help to reduce the demand for new housing while also preserving the vernacular design of the area","Historic buildings of distinctive character need to be preserved as far as possible unchanged","The re-use or repurposing of buildings should meet the needs of a dwelling today, even if this means that considerable remodelling is needed to make the building suitable for re-use","Rather than allow a building fall into disrepair and disuse, best-practice guidelines for reuse encourage uses that meet a need today, and remodelling is necessary to make the building suitable for a new use"]} },
     ],
+    figure: {
+          "candId": "construction-studies-2021-hl-paper-p007-i0",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2021-hl-paper-p007-i0.png",
+          "srcHash": "cd60ed0918caac68ebcde9078ff27029",
+          "alt": "A watercolour perspective sketch of a two-storey detached house in a rural setting. The house has a curved barrel-vaulted roof clad in vertical dark grey standing-seam sheeting that sweeps down over the whole gable end, a slim flue pipe at the ridge, and white rendered walls at ground level. The front elevation carries a tall full-height glazed screen of several panes beside the entrance, a large upper-floor window, a wide picture window in a projecting single-storey section at the right, and small square windows to the left. A gravel driveway curves in from the right across a green lawn, with conifers to the left, an autumn-coloured tree and shrubs with red flowers to the right, and blue sky behind.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2146,6 +2306,14 @@ export const CARDS: SecCard[] = [
     { id: "cons-2022-hl-q2-b-r1", kind: "anyN", verbatim: "Kitchen", marks: 12, contextNote: "Kitchen", openList: true, group: {"claimMax":1,"perOption":12,"options":["Kitchen design the layout in a ‘U’ or ‘L’-shape","A turning circle of minimum Ø1500 mm - Ø1800 mm in the work area","Provide between 1200 – 1500 mm to opposite work surfaces of the kitchen area","A working countertop height of 900 mm with the potential to raise or lower the counters","Providing clear knee-space beneath the sink, hob and other areas of the kitchen worktop will allow the full use of the kitchen by someone seated","A clear knee space, 700mm high, 600mm deep and 800mm wide, beside ovens, washing machines, dishwashers, fridges and freezers","Provide pull-out drawers with 600mm deep units, instead of internal shelves","Provide a continuous worktop between sink and hob with at least 300mm on either side","Wall units at a maximum height of 450 mm above worktop level with pull-down mechanism for bringing shelf contents within reach","Tall units, like the oven and fridge freezer housings are located at the end of a run of worktop to avoid interrupting the work space","Flooring material installed, level, non-slip, easy to clean and continued under kitchen base units","Kitchen base units to have a plinth of 250mm high to suit wheelchair users"]} },
     { id: "cons-2022-hl-q2-b-r2", kind: "anyN", verbatim: "Dining", marks: 12, contextNote: "Dining", openList: true, group: {"claimMax":1,"perOption":12,"options":["Room layout clearly defined passage for guests to move out or into the dining/kitchen areas","Dining table is best located close to the kitchen to minimise the distance for carrying food and drinks","A clear space of 1200mm minimum on at least two sides of the table","Dining table supported on central pedestal which enables easy seating for all diners","Dining table with corner legs widely spaced/ absence of bottom rails/ stretcher","External corners of table slightly rounded to avoid injury","Dining chairs to be stable, lightweight and easily moveable","Height of table electronically adjustable c. 700 – 900mm","A clearly defined space between the two areas to enable diner’s guests adequate space prevent accidents","Level floor surface between the kitchen and dining area","Floor material which is slip-resistant and easy to clean"]} },
     ],
+    figure: {
+          "candId": "construction-studies-2022-hl-paper-p002-i0",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-hl-paper-p002-i0.png",
+          "srcHash": "99c7217391c9f6973e4aaca898dfe070",
+          "alt": "A ground floor plan of an open-plan kitchen / dining space, drawn with grey hatched walls and a cream floor. An L-shaped run of pink kitchen units lines the left and lower-left walls, with a sink and drainer set under a window on the left wall and a four-ring hob further along the lower run. Two door openings with quarter-circle swing arcs lead from the kitchen into the dining area on the right, where a rectangular table with four chairs is drawn. A recessed entrance projection at the top of the plan carries a glazed panel on one side and a door with its swing arc on the other. Zig-zag break lines close the plan at the bottom wall. No dimensions or room names are printed on the drawing.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2256,6 +2424,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2022-hl-q6-a-r1", kind: "anyN", verbatim: "Three feature of the design that contribute to the house having a low environment impact", marks: 30, contextNote: "Three feature of the design that contribute to the house having a low environment impact", openList: true, group: {"claimMax":6,"perOption":5,"options":["Timber frame construction from local sources which reduces transport movements; has lower carbon emissions and a reduction in localised air pollution","Less embodied energy required to produce timber frame construction compared to a double leaf, concrete block, cavity wall construction design detail","Flame charred larch cladding required no harmful preservatives, is available in Ireland and is naturally durable","Locally sourced timber cladding (from Ireland) from FSC certified forests are lower in embodied energy than imported timber – suitable for a low environmental building","Locally sourced timber contributes to carbon sequestration (creates a carbon store/sink) in direct contrast to concrete production","The house has large south facing glazed openings which fill all main living spaces with natural light – electric light bulbs only needed at night","Most rooms have dual aspect openings so they utilise the suns benefits throughout the day","The heat from the sun entering through the large openings reduces the need for using non-renewable methods of heating theses spaces","Small windows on the north side reduces heat loss and saves energy","The chimney stack is centrally located - the large thermal mass chimney stack releases heat back into the living space on all four sides","The woodburning stove inset into the chimney reduces draughts and heat lost through the chimney - stoves are also more efficient than open fires","The house is constructed using low carbon materials which are both locally sourced and are renewable","Simple building form that takes advantage of the orientation of the sun","High levels of insulation in the floor, walls and roof construction"]} },
     ],
+    figure: {
+          "candId": "construction-studies-2022-hl-paper-p005-i0",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-hl-paper-p005-i0.png",
+          "srcHash": "6a4f6559ace42795c1c80b49907c5970",
+          "alt": "Two drawings stacked vertically. The upper drawing is a front elevation of a house: a white rendered single-storey pitched-roof block with a chimney on the left, a taller two-storey gable clad in dark vertical timber boarding on the right, and a lower dark-clad linking section between them carrying a flat canopy. Windows are shown in pale blue, including a tall narrow window in the gable, a narrow window in the left block and a large square window on the right, all sitting on a drawn ground line. The lower drawing is the ground floor plan, showing hatched external walls and a cream floor. To the left is a grey paved external courtyard with a run of green planting along the top edge, outdoor seating around a circular firepit or table, and two cars drawn in parking spaces. Inside, the plan shows a living area with sofas and a fireplace, a dining table with six chairs, a kitchen with an island and a run of pink units, a hall with a staircase, a bathroom with WC and wash basin, and a bedroom with a double bed and wardrobes. Red arrows mark two approach or entry directions. No dimensions or room names are printed on the drawing.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2386,6 +2562,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2022-hl-q9-b-r1", kind: "anyN", verbatim: "The drawing shows an outline section through a portion of a house. The house has a truss roof. The wall is of timber fra", marks: 36, openList: true, group: {"claimMax":2,"perOption":18,"options":["Head of window","Wallplate level","Ceiling light fitting"]} },
     ],
+    figure: {
+          "candId": "construction-studies-2022-hl-paper-p006-i0",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2022-hl-paper-p006-i0.png",
+          "srcHash": "88bdf2646d081d39ba90f5deabb25089",
+          "alt": "An outline vertical section through a portion of a house with a truss roof, drawn in ochre for the timber members. A sloping rafter runs from the lower left up to the top right and a horizontal ceiling tie runs across the drawing, meeting the rafter over the wall head at the left. Below the wall head the external wall is shown as a grey shaded leaf sitting on a lighter section that contains a window head with pale blue glazing beneath it. A ceiling light fitting with a blue shade and a small yellow sun symbol hangs from the ceiling tie towards the right. Three red circles are drawn on the section: one at the junction of the rafter and ceiling tie over the wall head, one around the light fitting where it penetrates the ceiling, and one at the wall and window head junction lower down. Green break lines close the drawing at the right-hand side and beneath the wall. No labels or dimensions are printed on the section.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2609,6 +2793,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2023-hl-q4-a-r1", kind: "anyN", verbatim: "Discuss in detail, using notes and freehand sketches, three features of vernacular Irish architecture evident in the cot", marks: 30, openList: true, group: {"claimMax":6,"perOption":5,"options":["Single storey structure with a steep pitched simple form roof","The position of the chimney relative to the front door identified the two types of vernacular dwelling found throughout the Irish landscape. (Direct Entry Type cottage and Lobby Entry Type cottage)","The proximity of the two chimneys to the front door shown in the graphic suggests this is a Direct Entry Type dwelling","Rectangular, narrow and one room deep. Narrow design was due to the scarcity of timber for roofing","Main entrance and window openings placed on the long elevation of the dwelling. These were relatively small in scale which helped to minimise weakening the walls","A centrally placed chimney to provide heat, meal preparations and an evening communal gathering point for the occupants","A half-door construction or half door placed outside the full door rather than the door cut in half. For protection from the weather","Vernacular cottages were built of local stone. In most circumstances these external stone walls would be rendered in a lime render, inside and out","Uncoursed, random rubble stonework was generally rendered","Coursed, random rubble stonework was generally left exposed and very much higher quality stonework","Lime render is breathable and facilitated rain-soaked walls to release the trapped moisture to the outside","The external walls were whitewashed with lime wash every few years hence the Irish landscape was dotted with such whitewashed buildings Uncoursed random rubble","Lime wash is caustic, and will burn skin if in contact. It was used stonework because it was cheap, readily available and had the ability to act as a disinfectant","Windows were timber & typically sash type frames with wide interior cills due to the thickness of the walls"]} },
     ],
+    figure: {
+          "candId": "construction-studies-2023-hl-paper-p003-i0",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2023-hl-paper-p003-i0.png",
+          "srcHash": "a5569abd7ee69a2cbb28d28b13239ff3",
+          "alt": "A colour pen-and-watercolour sketch of a single-storey vernacular Irish cottage seen in three-quarter view. It has a steeply pitched dark slate roof with two rendered chimney stacks on the ridge, whitewashed rendered walls, small green-painted sash windows (two to the left of the door, one to the right) and a green front door set centrally. The gable end is blank with no openings. The cottage sits on a grassy site with a stone/gravel path at the front and a dense conifer treeline filling the background.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2648,6 +2840,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2023-hl-q6-a-r1", kind: "anyN", verbatim: "Three feature of the design that contribute to the house having a low environment impact", marks: 30, contextNote: "Three feature of the design that contribute to the house having a low environment impact", openList: true, group: {"claimMax":6,"perOption":5,"options":["Any reference, a note or sketch, that correctly identifies the orientation of the given building","Timber frame construction from local sources which reduces transport movements; has lower carbon emissions and a reduction in localised air pollution","Less embodied energy required to produce timber frame construction compared to a double leaf, concrete block, cavity wall construction design detail","Locally sourced timber cladding Irish Larch, Cedar, Douglas Fir - from FSC certified forests are lower in embodied energy than imported timber & suitable for a low environmental building","Locally sourced timber contributes to carbon sequestration (creates a carbon store/sink) in direct contrast to concrete production","The house has large south facing glazed openings which fill all main living spaces with natural light – Narrow, one room wide spaces","Reduced use of electric light bulbs – power generated currently predominantly using fossil fuels","The heat from the sun entering through the large openings reduces the need for using non- renewable methods of heating theses spaces","Small, high-performance windows/glazing on the north side reduces heat loss and saves energy","Simple building form that takes advantage of the orientation of the sun","High levels of insulation in the floor, walls and roof construction","One room deep design enables light and heat from solar gain to enter the single space building via the south, east, and west","High-performance glazing throughout the dwelling - having a U-value of at least 0.8 w/m2 k - will significantly reduce heating costs","L-Shape design takes advantage of the buildings orientation and allows light to enter a greater number of rooms throughout the day. It also provides natural shelter from the wind"]} },
     ],
+    figure: {
+          "candId": "construction-studies-2023-hl-paper-p005-i0",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2023-hl-paper-p005-i0.png",
+          "srcHash": "e1bb6f66bac1899ef88b129fc8278cca",
+          "alt": "Two drawings stacked vertically. Above is a front elevation of a long single-storey house: a wide roof shown with fine horizontal banding, a band of three glazed rooflight/clerestory panes set in the roof slope, a stone-clad panel with a projecting lintel band around the entrance area, a dark vertically sheeted front door flanked by blue-tinted glazed side panels, a tall narrow window to the right, and a slender post supporting an overhang at the left end. Below is an L-shaped ground floor plan drawn in colour: a long narrow wing containing three bedrooms (each with a bed symbol), pink-shaded wardrobe/press runs, an en-suite and a bathroom with WC, wash basin and bath, and a wider wing containing an open-plan kitchen/dining/living space with a dining table and eight chairs, a kitchen run with sink and hob, and an L-shaped sofa on an orange rug. Dashed lines mark overhangs/canopies, roof-light chevrons and an arrow are shown over the open-plan wing, and two green tree symbols are drawn in plan to the right of the building.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2835,6 +3035,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2023-hl-q9-b-r1", kind: "anyN", verbatim: "The sketch shows a living room which measures 4.5 metres long by 4.2 metres wide. The living room has a vertical window ", marks: 28, openList: true, group: {"claimMax":7,"perOption":4,"options":["Formula","Correct entry into formula","Floor area","Using formula Li = Lo × WF × E","Solve for w (window area) line 1","Solve for w (window area) line 2","Window area"]} },
     ],
+    figure: {
+          "candId": "construction-studies-2023-hl-paper-p005-i1",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2023-hl-paper-p005-i1.png",
+          "srcHash": "5e4aa89239244ca2fac6a57e11b01233",
+          "alt": "A watercolour sketch of a living room seen from one corner: a wide three-panel window fills the far wall, a panelled door and two framed pictures are on the left-hand wall, and two upholstered armchairs face each other across a low glass-topped coffee table holding a bowl of fruit on a boarded timber floor.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2915,6 +3123,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2024-hl-q4-b-r1", kind: "anyN", verbatim: "Shown is an extract from a site location map. A and B are possible sites for a new dwelling house. Select your preferred", marks: 18, contextNote: "The scheme groups its answer under: Site A – Considerations; Site B – Considerations", openList: true, group: {"claimMax":3,"perOption":6,"options":["Less visual impact on the landscape and environment as there are existing neighbouring buildings","Site is located in a cluster development. Planning authorities favour new dwelling construction close to existing developments","Proximity to neighbouring dwellings will result in cost A effective provision of public services","Site is located close to neighbouring building which may increase security","Long southern axis of site increases design possibility of maximising solar gains","Sustainable development, need for excessive utilities work will be reduced as neighbouring dwelling will previously have utilities. Reduces water mains pipes, reduced need for ESB and fibre broadband poles and cables, etc","Site is not overlooked by existing building","Reduced risk when entering and exiting the site as it is not located on a busy main or secondary road","Site located away from the main roads so reduced noise and air pollution","Planning authorises may allow for more individual and creative building designs as there are no existing building in close proximity B","Greater privacy as it is not adjacent to main road","Larger windows could be facilitated without compromising privacy","Position of site may allow for better scenic view of the countryside compared to Site A"]} },
     ],
+    figure: {
+          "candId": "construction-studies-2024-hl-paper-p003-i0",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2024-hl-paper-p003-i0.png",
+          "srcHash": "469533d14d53e9959d831f037fabe37c",
+          "alt": "A framed extract from a site location map with a red north arrow in the top right corner. Two candidate sites are shaded green and outlined in red: site A, a broadly rectangular plot at the top of the map bounded by hedgerows and reached by a lane, and site B, a taller narrower plot in the lower half fronting onto a road. A main road runs across the middle of the map with a dashed centre line, with a side road branching down the left and another lane serving the upper plots. Several existing dwellings are shown as dark grey building footprints, some set in their own plots off the lanes at the top and others to the right of the map. Field and plot boundaries are drawn as thin black lines, and hedgerows or tree lines are drawn as chains of pale green circles along many of the boundaries and roadsides.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",

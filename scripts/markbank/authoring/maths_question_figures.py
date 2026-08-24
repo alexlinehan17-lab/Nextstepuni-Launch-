@@ -73,8 +73,16 @@ DEAD_TEXT = re.compile(
     r'|^\d{2,3} marks$'
     r'|^Answer (?:all|any) .{0,50}questions?(?: from this section)?\.?$')
 # "Hence", "your answer to part (i)": the ask leans on the siblings before it.
+# The ask CHAINS on an earlier part. "your answer" alone is not enough:
+# "Give your answer in km" is a formatting instruction, and reading it as a
+# chain suppressed the question stem on cards like 2021 OL P2 Q9(a)(i),
+# which then shipped a bare one-line ask with its runway diagram left behind.
+# A real chain names a part.
 NEEDS_SIBLINGS = re.compile(
-    r'\bHence\b|\byour answers?\b|\b(?:in|from|to) parts? \(', re.I)
+    r'\bHence\b'
+    r'|\byour (?:answers?|values?|results?|graph|diagram)\s+(?:to|from|in)\s+part'
+    r'|\b(?:in|from|to) parts? \('
+    r'|\bpart \((?:[ivx]+|[a-h])\)', re.I)
 # The part reaches OUTSIDE its letter, back to the question's own setup: it
 # names the stem's diagram/graph/table or a point/segment the stem defined.
 # "the equation" is deliberately absent — a part that says "solve the
@@ -230,8 +238,13 @@ class Sitting:
                 # A prompt or two ("Show:", "Roots = ( , , )") or a template
                 # of bare labels ("Diagram: / Given: / To Prove: / Proof:")
                 # is furniture; a data table or a labelled plot holds more.
-                if (len(inside) <= 6 and sum(len(l[4]) for l in inside) < 120
-                        and all(len(l[4]) < 28 for l in inside)):
+                # Measure the line's INK, not its length: the answer template
+                # "x = ______ , ______ , or ______" runs 53 characters of
+                # which six are writing, and a raw length test let every 2022
+                # Higher Level answer box through.
+                ink = [re.sub(r'[_\s.·]+', '', l[4]) for l in inside]
+                if (len(inside) <= 6 and sum(len(t) for t in ink) < 60
+                        and all(len(t) < 28 for t in ink)):
                     frames.append(r)
         self._furniture[page] = frames
         rects = []
@@ -312,8 +325,21 @@ class Sitting:
             # A letter part leans on the question's setup as a rule — "find
             # the volume of the cuboid" is unanswerable without the cuboid.
             l_end = next((pos(m) for m in marks[li + 1:] if m[0] == 'letter'), q_end)
-            bands = ([qstem] if qstem and force.get('qstem', True) else [])
-            bands.append((pos(marks[li]), l_end))
+            own = (pos(marks[li]), l_end)
+            # A letter part usually leans on the question's setup — "find the
+            # volume of the cuboid" needs the cuboid — but not always: 2021 HL
+            # P2 Q10(b) is a self-contained expected-value problem printed
+            # under a stem about O-negative blood donors, and carrying that
+            # stem put an 8% distractor above an unrelated ask. Carry it when
+            # the two share a subject, or when the part is too short to stand
+            # on its own.
+            own_text = self.band_text([own], 4000)
+            take = force.get('qstem',
+                             self._shares_subject(own_text,
+                                                  self.band_text([qstem], 4000))
+                             or len(own_text) < 120) if qstem else False
+            bands = [qstem] if take else []
+            bands.append(own)
             bands = self._hunt_definitions(bands, marks, li, qstem, part_text,
                                            force, q_end)
             return bands, 'letter part'
@@ -333,11 +359,18 @@ class Sitting:
         first_roman = next((pos(m) for m in scope if m[0] == 'roman'), None)
 
         bands, ctx = [], []
-        has_letter_stem = bool(letter and first_roman
-                               and first_roman > pos(scope[0]))
-        if has_letter_stem:
-            bands.append((pos(scope[0]), first_roman))   # the letter's setup
-            ctx.append(self.band_text(bands[-1:], 2000))
+        has_letter_stem = False
+        if letter and first_roman and first_roman > pos(scope[0]):
+            stem_band = (pos(scope[0]), first_roman)
+            # A band can be geometrically present and hold nothing at all —
+            # "(a) (i)" set on one line leaves a zero-height letter stem. An
+            # empty band counted as context, so the "nothing else carries
+            # setup" rule never fired and 2021 OL Q9 shipped a bare ask with
+            # its runway diagram left on the page.
+            if self.band_text([stem_band], 40).strip():
+                bands.append(stem_band)
+                ctx.append(self.band_text(bands[-1:], 2000))
+                has_letter_stem = True
         # Siblings ride along when the ask chains on them ("Hence", "your
         # answer") — and also when the letter's setup points BELOW itself
         # ("as shown in the diagram below"): the diagram it promises is
@@ -356,17 +389,50 @@ class Sitting:
         # about a definite thing must not ship bare. The price is an
         # occasionally redundant printed stem, which is faithful noise; a
         # missing diagram is an unanswerable card.
+        # The fallback — carry the question stem when nothing else holds any
+        # setup — must still be RELEVANT. A printed cuboid above a
+        # self-contained logs equation is the exact defect this tool exists to
+        # remove, so the fallback fires only when the ask and the stem share a
+        # content word: "the runway" is answered by the stem that draws the
+        # runway; "find the two roots of f(x) = 3x^2 + 8x - 35" shares nothing
+        # with a cuboid and travels alone.
+        bare = not has_letter_stem and not siblings
         want_qstem = force.get(
             'qstem',
             (not letter)
             or bool(NEEDS_QSTEM.search(' '.join(ctx) + ' ' + part_text))
-            or (not has_letter_stem and not siblings))
+            or (bare and qstem is not None
+                and self._shares_subject(part_text, self.band_text([qstem], 4000))))
         if qstem and want_qstem:
             bands.insert(0, qstem)
         bands.append((pos(scope[ri]), r_end))
         bands = self._hunt_definitions(bands, marks, li, qstem, part_text,
                                        force, q_end)
         return bands, 'roman part'
+
+    # Words every exam question uses; they say nothing about WHICH question.
+    GENERIC = frozenset("""
+        find give show state write down using calculate work answer answers value
+        values correct decimal place places form where hence otherwise also
+        following first second third next same total number numbers point points
+        line lines graph area volume length width height radius diagram table
+        question part parts marks each other into from that this with your these
+        those there their when what which will would could must have been they
+        them then than terms term above below shown solution solutions method
+        nearest units unit degrees exactly least greatest maximum minimum
+        """.split())
+
+    def _shares_subject(self, ask, stem):
+        """Do the ask and the question stem talk about the same thing?
+
+        Content words only: a shared "runway", "lake" or "cuboid" means the
+        stem is this ask's setup; sharing nothing but exam furniture means it
+        is a different question printed above.
+        """
+        def words(t):
+            return {w for w in re.findall(r"[A-Za-z']{4,}", _ascii(t).lower())
+                    if w not in self.GENERIC}
+        return bool(words(ask) & words(stem))
 
     def _hunt_definitions(self, bands, marks, li, qstem, part_text, force, q_end):
         """The ask names a function or quantity — h(x), T(t), V1 — that no
@@ -395,6 +461,7 @@ class Sitting:
                    if not re.search(re.escape(sym)
                                     + r'\s*(?:\(\s*[a-z]\s*\))?\s*[=\u2248]',
                                     included)]
+        bands = self._hunt_artwork(bands, marks, li, qstem, part_text, q_end)
         if not missing:
             return bands
         # Candidate defining regions, in print order: the question stem, then
@@ -417,6 +484,53 @@ class Sitting:
                     added += 1
                     break
             if added >= 2:
+                break
+        return bands
+
+    def _hunt_artwork(self, bands, marks, li, qstem, part_text, q_end):
+        """The ask points at printed artwork ("the graph above", "the diagram")
+        that none of the included bands actually draws.
+
+        The picture is usually printed under an EARLIER sibling — 2022 Higher
+        Level Q7 sets its h(x) graph under part (c) and part (d) says "you may
+        also use information from the graph above" — so the default plan, which
+        skips earlier siblings, shipped the ask with nothing to read. Walk back
+        through the earlier regions and carry the first one that holds ink.
+        """
+        if not NEEDS_QSTEM.search(part_text):
+            return bands
+
+        def pos(m):
+            return (m[2], m[3] - 4.0)
+
+        def has_ink(band):
+            (sp, sy), (ep, ey) = band
+            for page in range(sp, min(ep, self.doc.page_count - 1) + 1):
+                lo = sy if page == sp else Y_TOP
+                hi = ey if page == ep else Y_FOOT
+                for r in self.ink(page):
+                    if r.y0 >= lo - 1 and r.y1 <= hi + 1 and (
+                            r.width > 30 or r.height > 30):
+                        return True
+            return False
+
+        if any(has_ink(b) for b in bands):
+            return bands
+        # Earlier regions, nearest first: every marker segment before ours,
+        # then the question stem.
+        segs = []
+        upto = marks[:li] if li is not None else marks
+        for i, m in enumerate(upto):
+            end = pos(marks[i + 1]) if i + 1 < len(marks) else q_end
+            segs.append((pos(m), end))
+        segs.reverse()
+        if qstem:
+            segs.append(qstem)
+        for seg in segs:
+            if seg in bands:
+                continue
+            if has_ink(seg):
+                bands.insert(1 if qstem and bands and bands[0] == qstem else 0, seg)
                 break
         return bands
 
@@ -471,6 +585,17 @@ class Sitting:
                 if not grew:
                     break
             bottom = min(self.foot.get(page, Y_FOOT), w_hi + 2)
+            # Snap to whole lines. A boundary that lands inside a text row
+            # shaves the glyph tops or bottoms, which reads as damage; the
+            # audit fleet called it out 35 times. Push the edge just clear of
+            # any line it would otherwise cut.
+            for (pg, y0, y1, x0, txt) in self.lines:
+                if pg != page:
+                    continue
+                if y0 < w_lo - 2 < y1:
+                    w_lo = y0 if (y1 - w_lo) > (w_lo - y0) else y1
+                if y0 < bottom < y1:
+                    bottom = y0 if (bottom - y0) < (y1 - bottom) else y1
             windows.append((page, max(Y_TOP, w_lo - 2), bottom))
         return windows
 
@@ -487,9 +612,15 @@ class Sitting:
         # (the sphere's bottom arc crosses the "(ii)" line) — those rows are
         # erased the same way, sparing only the grown ink's own pixels.
         if band_hi is not None:
+            # Only rows that sit CLEARLY below the band. A marker's y is nudged
+            # 4pt up so its own row is not split, which put the boundary a hair
+            # above legitimate rows: masking at band_hi erased the denominator
+            # of a spliced fraction and half of "= 0 + ki, where k in Z",
+            # leaving an unreadable card. The tolerance keeps the band's own
+            # last line — including anything set alongside it — intact.
             frames += [pymupdf.Rect(X0, y0, X1, y1)
                        for (pg, y0, y1, x0, txt) in self.lines
-                       if pg == page and y0 >= band_hi - 0.5
+                       if pg == page and y0 >= band_hi + 7.0
                        and y1 > top + 1 and y0 < bot - 1]
         frames += [pymupdf.Rect(X0, y0, X1, y1)
                    for (pg, y0, y1, x0, txt) in self.dead

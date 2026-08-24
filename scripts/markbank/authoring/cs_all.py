@@ -53,6 +53,26 @@ if failed:
         print('REFUSING', f, file=sys.stderr)
     raise SystemExit('construction-studies.json NOT written')
 
+# A card whose ask points at printed artwork ("the vernacular cottage shown")
+# is unanswerable without it. The crop is bound by KEY here, from a sidecar the
+# figure pass writes; the build resolves the key against the manifest and
+# refuses a key it never inspected, so a bad path cannot be typed in.
+FIGS = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'cs_figures.json')
+if os.path.exists(FIGS):
+    with open(FIGS) as fh:
+        bound = json.load(fh)
+    hit = 0
+    for c in cards:
+        key = bound.get(c['id'])
+        if key:
+            c['figureKey'] = key
+            hit += 1
+    missing = sorted(set(bound) - {c['id'] for c in cards})
+    if missing:
+        print(f'WARNING cs_figures.json names {len(missing)} unknown card id(s): '
+              f'{missing[:3]}', file=sys.stderr)
+    print(f'figures bound to {hit} card(s)', file=sys.stderr)
+
 print(f'{"TOTAL":<20} {len(cards):>3} cards from {len(scripts)} script(s)', file=sys.stderr)
 if '--write' in sys.argv:
     with open(OUT, 'w') as fh:

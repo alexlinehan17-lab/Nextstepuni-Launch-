@@ -4457,7 +4457,7 @@
   "subjectId": "physics",
   "section": "A",
   "questionRef": "2022 HL Q2(v)",
-  "stem": "In an experiment to verify Boyle’s law, a student measured the length l of a column of air of fixed mass and uniform diameter, at different values of air pressure p, and drew a suitable graph to verify Boyle’s law (the scheme accepts values plotted for either 1/l or 1/p).",
+  "stem": "In an experiment to verify Boyle’s law, a student measured the length l of a column of air of fixed mass and uniform diameter, at different values of air pressure p, and drew a suitable graph to verify Boyle’s law.",
   "questionText": "Explain how your graph verifies Boyle’s law.",
   "tariffModel": {
    "kind": "fixed"
@@ -4470,7 +4470,8 @@
     "verbatim": "straight line through origin",
     "marks": 3
    }
-  ]
+  ],
+  "notes": "The scheme accepts values plotted for either 1/l or 1/p."
  },
  {
   "id": "phys-2022-hl-q2-vi",

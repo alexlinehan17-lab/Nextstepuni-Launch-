@@ -41,6 +41,7 @@ const SUBJECT_TITLE = {
   biology: 'Biology', chemistry: 'Chemistry', physics: 'Physics',
   'agricultural-science': 'Agricultural Science', business: 'Business',
   'home-economics': 'Home Economics', economics: 'Economics',
+  'construction-studies': 'Construction Studies',
 };
 
 const argv = process.argv.slice(2);

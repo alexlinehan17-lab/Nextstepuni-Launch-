@@ -1475,7 +1475,7 @@
   "questionRef": "2016 OL Q4(a)",
   "questionText": "Discuss two reasons why it is necessary to apply for planning permission to build the sunspace shown.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "construction-studies-2016-ol-paper-p002-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",
@@ -2117,7 +2117,7 @@
   "questionRef": "2016 OL Q6(b)",
   "questionText": "Using notes and freehand sketches, describe three specific safety precautions to be observed when turning a wooden bowl on a lathe, as shown. Give one reason for each safety precaution outlined.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "construction-studies-2016-ol-paper-p003-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",
@@ -2756,7 +2756,7 @@
   "questionRef": "2017 HL Q2(b)",
   "questionText": "The drawing shows the ground floor plan of a semi-detached house. The dimensions shown are in millimetres. It is proposed to provide a bathroom suitable for lifetime use by converting the office A into a bathroom. Discuss two advantages of converting the existing office A rather than building a new bathroom at location B, as shown.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "construction-studies-2017-hl-paper-p002-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",
@@ -2994,7 +2994,7 @@
   "questionRef": "2017 HL Q5(b)",
   "questionText": "It is proposed to upgrade the thermal properties of the above wall, to meet the Passive House standard, by fixing expanded polystyrene to the external surface, as shown. Using the given thermal data at 5(a) above, calculate the thickness of expanded polystyrene required to achieve a U-value of 0.15 W/m2 °C.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "construction-studies-2017-hl-paper-p003-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",
@@ -3253,7 +3253,7 @@
   "questionRef": "2017 HL Q8(a)",
   "questionText": "Using notes and freehand sketches, discuss the importance of each of the following in providing adequate light on a work surface in a kitchen, as shown: • natural light • artificial light.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "construction-studies-2017-hl-paper-p004-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -3325,7 +3325,7 @@
   "questionRef": "2017 HL Q8(b)",
   "questionText": "A home office, as shown, measures 4.8 metres long by 3.5 metres wide. The office has a vertical window and unobstructed views. An average illumination of 500 lux of daylight is required on the work plane. Determine using the degree of efficiency method, or any other suitable method, the approximate area of glazing required to provide the stated illumination. Assume the illumination of a standard overcast sky to be 5000 lux.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "construction-studies-2017-hl-paper-p004-i1",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",
@@ -3588,7 +3588,7 @@
   "questionRef": "2017 HL Q10(b)",
   "questionText": "The diagram shows the ground floor plan of a semi-detached house. Also shown is the location M in the hallway, of the Mechanical Heat Recovery with Ventilation (MHRV) unit. Draw a line diagram of the given room layout and show a typical design for the ducting to the MHRV unit. Indicate clearly the direction of the airflow in the ducts and describe how the MHRV system works.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "construction-studies-2017-hl-paper-p005-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",
@@ -3631,7 +3631,7 @@
   "questionRef": "2017 HL Q10(c)",
   "questionText": "Discuss two advantages of siting the MHRV unit in the hallway, as shown.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "construction-studies-2017-hl-paper-p005-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",
@@ -3751,7 +3751,7 @@
   "questionRef": "2017 HL Q3(c)",
   "questionText": "Discuss two advantages of building an extension to the farmhouse shown.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "construction-studies-2017-hl-paper-p002-i1",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -4299,7 +4299,7 @@
   "questionRef": "2017 OL Q6(a)",
   "questionText": "Discuss two reasons why safety signs must be displayed at the entrance to a construction site, as shown.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "construction-studies-2017-ol-paper-p003-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",
@@ -5276,7 +5276,7 @@
   "questionRef": "2017 OL Q9(c)",
   "questionText": "An external patio has many advantages for the occupants of a dwelling house. Discuss two advantages of having an external patio, as shown.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "construction-studies-2017-ol-paper-p004-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -5896,7 +5896,7 @@
   "questionRef": "2018 HL Q6(b)",
   "questionText": "Discuss in detail, using notes and freehand sketches, three features of the design shown that make the house suitable as a self-build project.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "construction-studies-2018-hl-paper-p005-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",
@@ -6108,7 +6108,7 @@
   "questionRef": "2018 HL Q4(b)",
   "questionText": "An extract from a site location map is shown. A and B are possible sites for a new house. Select your preferred site and discuss three considerations you took into account when selecting your site.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "construction-studies-2018-hl-paper-p003-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",
@@ -7999,7 +7999,7 @@
   "questionRef": "2019 HL Q5(c)",
   "questionText": "It is proposed to upgrade the thermal properties of the above wall, to meet the Passive House standard, by fixing expanded polystyrene to the external surface, as shown.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "construction-studies-2019-hl-paper-p004-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",
@@ -8043,7 +8043,7 @@
   "questionRef": "2019 HL Q6(a)",
   "questionText": "With reference to the design shown, discuss using notes and freehand sketches, three features of the design that contribute to the house having a low environmental impact.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "construction-studies-2019-hl-paper-p005-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",
@@ -8175,7 +8175,7 @@
   "questionRef": "2019 HL Q6(c)",
   "questionText": "Discuss in detail two advantages of using local craft skills when building the house shown.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "construction-studies-2019-hl-paper-p005-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",
@@ -9906,7 +9906,7 @@
   "questionRef": "2020 HL Q3(a)",
   "questionText": "Discuss in detail, three design considerations necessary when modifying the internal layout of the house shown to meet the needs of a person with limited mobility.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "construction-studies-2020-hl-paper-p003-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",
@@ -10317,7 +10317,7 @@
   "questionRef": "2020 HL Q6(a) — Advantages",
   "questionText": "Discuss two advantages of retrofitting the vernacular cottage shown.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "construction-studies-2020-hl-paper-p005-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",
@@ -10365,7 +10365,7 @@
   "questionRef": "2020 HL Q6(a) — Disadvantages",
   "questionText": "Discuss two disadvantages of retrofitting the vernacular cottage shown.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "construction-studies-2020-hl-paper-p005-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",
@@ -10412,7 +10412,7 @@
   "questionRef": "2020 HL Q6(b)",
   "questionText": "With reference to the design shown, discuss using notes and freehand sketches, three features of the design that contribute to the house having a low environmental impact.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "construction-studies-2020-hl-paper-p005-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",
@@ -10462,7 +10462,7 @@
   "questionRef": "2020 HL Q6(c)",
   "questionText": "Discuss in detail, using notes and freehand sketches, two modifications to the house shown that would further reduce the environmental impact of the house.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "construction-studies-2020-hl-paper-p005-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",
@@ -13186,7 +13186,7 @@
   "questionRef": "2021 HL Q4(b)",
   "questionText": "Shown is an extract from a site location map. A and B are possible sites for a new house in a rural setting. Select your preferred site A or B and discuss three considerations you took into account when selecting your site.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "construction-studies-2021-hl-paper-p003-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",
@@ -13305,7 +13305,7 @@
   "questionRef": "2021 HL Q6(a)",
   "questionText": "With reference to the design shown, discuss using notes and freehand sketches, three features of the design that contribute to the house having a low environmental impact.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "construction-studies-2021-hl-paper-p005-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",
@@ -13871,7 +13871,7 @@
   "questionRef": "2021 HL Q10(a)",
   "questionText": "Discuss two reasons why solar overheating may occur in the house shown and discuss two effects solar overheating may have on occupants.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "construction-studies-2021-hl-paper-p007-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -15486,7 +15486,7 @@
   "questionRef": "2022 HL Q2(b)",
   "questionText": "The drawing shows the ground floor plan of an open-plan kitchen / dining space, that is to be used by a person in a wheelchair. With reference to the design shown, discuss using notes and freehand sketches, two areas of the internal layout that require specific design detailing to ensure ease of use by a person in a wheelchair. Indicate on your sketches typical dimensions as appropriate.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "construction-studies-2022-hl-paper-p002-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -16007,7 +16007,7 @@
   "questionRef": "2022 HL Q6(a)",
   "questionText": "With reference to the design shown, discuss using notes and freehand sketches, three features of the design that contribute to the house having a low environmental impact.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "construction-studies-2022-hl-paper-p005-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",
@@ -16478,7 +16478,7 @@
   "questionRef": "2022 HL Q9(b)",
   "questionText": "The drawing shows an outline section through a portion of a house. The house has a truss roof. The wall is of timber frame construction with an external concrete block leaf and the window frame is thermally broken. Using notes and freehand sketches, show best practice design detailing that will prevent air leakage at any two of the locations circled on the drawing.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "construction-studies-2022-hl-paper-p006-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",
@@ -18605,7 +18605,7 @@
   "questionRef": "2023 HL Q4(a)",
   "questionText": "Discuss in detail, using notes and freehand sketches, three features of vernacular Irish architecture evident in the cottage shown.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "construction-studies-2023-hl-paper-p003-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",
@@ -18745,7 +18745,7 @@
   "questionRef": "2023 HL Q6(a)",
   "questionText": "With reference to the design shown, discuss using notes and freehand sketches, three features of the design that contribute to the house having a low environmental impact.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "construction-studies-2023-hl-paper-p005-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",
@@ -19491,7 +19491,7 @@
   "questionRef": "2023 HL Q9(b)",
   "questionText": "The sketch shows a living room which measures 4.5 metres long by 4.2 metres wide. The living room has a vertical window and unobstructed views. An average illumination of 500 lux of daylight is required on the work plane. Calculate using the degree of efficiency method, or any other suitable method, the appropriate area of glazing required to provide the stated illumination. Assuming the illumination of a standard overcast sky to be 5000 lux.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "construction-studies-2023-hl-paper-p005-i1",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",
@@ -21057,7 +21057,7 @@
   "questionRef": "2024 HL Q4(b)",
   "questionText": "Shown is an extract from a site location map. A and B are possible sites for a new dwelling house. Select your preferred site and discuss three considerations you took into account when selecting your site.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "construction-studies-2024-hl-paper-p003-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",

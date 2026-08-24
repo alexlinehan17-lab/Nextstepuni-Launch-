@@ -1390,7 +1390,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q2-a", topicId: "bio-3-2", conceptId: "yeast-unicellular",
     section: "A", questionRef: "2024 OL Q2(a)",
-    stem: "Section A — Question 2, on yeast reproducing by budding. The scheme marks parts (a)–(g) together as 6(3) + 2.",
+    stem: "Section A — Question 2, on yeast reproducing by budding.",
     questionText: "Is yeast a unicellular or multicellular organism?",
     tariffModel: {"kind":"orderedSplit","notation":"6(3) + 2"}, totalMarks: 3,
     rows: [
@@ -1404,7 +1404,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q2-b", topicId: "bio-3-2", conceptId: "yeast-budding",
     section: "A", questionRef: "2024 OL Q2(b)",
-    stem: "Section A — Question 2, on yeast reproducing by budding. The scheme marks parts (a)–(g) together as 6(3) + 2.",
+    stem: "Section A — Question 2, on yeast reproducing by budding.",
     questionText: "What is the reason for budding in yeast?",
     tariffModel: {"kind":"orderedSplit","notation":"6(3) + 2"}, totalMarks: 3,
     rows: [
@@ -1418,7 +1418,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q2-d", topicId: "bio-3-2", conceptId: "yeast-bud-fate",
     section: "A", questionRef: "2024 OL Q2(d)",
-    stem: "Section A — Question 2, on yeast reproducing by budding. The scheme marks parts (a)–(g) together as 6(3) + 2.",
+    stem: "Section A — Question 2, on yeast reproducing by budding.",
     questionText: "Briefly describe what happens to the bud.",
     tariffModel: {"kind":"orderedSplit","notation":"6(3) + 2"}, totalMarks: 3,
     rows: [
@@ -1432,7 +1432,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q2-g", topicId: "bio-1-1", conceptId: "yeast-kingdom",
     section: "A", questionRef: "2024 OL Q2(g)",
-    stem: "Section A — Question 2, on yeast reproducing by budding. The scheme marks parts (a)–(g) together as 6(3) + 2.",
+    stem: "Section A — Question 2, on yeast reproducing by budding.",
     questionText: "Yeast is a member of which kingdom?",
     tariffModel: {"kind":"orderedSplit","notation":"6(3) + 2"}, totalMarks: 3,
     rows: [
@@ -1474,7 +1474,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q4-c", topicId: "bio-1-1", conceptId: "beneficial-uses-of-viruses",
     section: "A", questionRef: "2024 OL Q4(c)",
-    stem: "Section A — Question 4, on viruses. The scheme marks the five responses in (a)–(d) as 5(4).",
+    stem: "Section A — Question 4, on viruses.",
     questionText: "Give an example of how viruses might be beneficial.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -1488,7 +1488,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q4-d", topicId: "bio-1-1", conceptId: "virus-replication",
     section: "A", questionRef: "2024 OL Q4(d)",
-    stem: "Section A — Question 4, on viruses. The scheme marks the five responses in (a)–(d) as 5(4).",
+    stem: "Section A — Question 4, on viruses.",
     questionText: "Which of the following sentences describes how viruses replicate?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -1502,7 +1502,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q5-a", topicId: "bio-2-4", conceptId: "skeleton-functions",
     section: "A", questionRef: "2024 OL Q5(a)",
-    stem: "Section A — Question 5, on the human skeleton. The scheme marks parts (a)–(d) together as 6(3) + 2.",
+    stem: "Section A — Question 5, on the human skeleton.",
     questionText: "Give two functions of the skeleton.",
     tariffModel: {"kind":"orderedSplit","notation":"6(3) + 2"}, totalMarks: 6,
     rows: [
@@ -1516,7 +1516,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q5-d", topicId: "bio-2-4", conceptId: "synovial-joints",
     section: "A", questionRef: "2024 OL Q5(d)",
-    stem: "Section A — Question 5, on the human skeleton. The scheme marks parts (a)–(d) together as 6(3) + 2.",
+    stem: "Section A — Question 5, on the human skeleton.",
     questionText: "Which of the following types of joint describes a hinge or ball and socket joint?",
     tariffModel: {"kind":"orderedSplit","notation":"6(3) + 2"}, totalMarks: 3,
     rows: [
@@ -7985,7 +7985,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q16b-ii-v-fig", topicId: "bio-2-4", conceptId: "eye-function-focusing-and-pupil-response",
     section: "C", questionRef: "2023 OL Q16(b)(ii)–(v)",
-    stem: "The paper prints a section through a human eye. The scheme's own part (b)(i) gives X as the iris, Y as the cornea and Z as the lens; 'd' on the diagram is the diameter of the pupil.",
+    stem: "The paper prints a section through a human eye. X is the iris, Y is the cornea and Z is the lens, named in part (b)(i); 'd' on the diagram is the diameter of the pupil.",
     questionText: "What is the function of the part labelled Y? Which labelled part focuses the light rays? Where are light rays usually focused? What would you expect to happen to the diameter of the pupil in bright light?",
     tariffModel: {"kind":"orderedSplit","notation":"2(7) + 8(2)"}, totalMarks: 18,
     rows: [
@@ -8045,7 +8045,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q16c-ii-iii-fig", topicId: "bio-2-6", conceptId: "vascular-tissue-transport-and-cells",
     section: "C", questionRef: "2023 OL Q16(c)(ii)–(iii)",
-    stem: "The paper prints a transverse section through a root. The scheme's own part (c)(i) gives A as vascular tissue, B as ground tissue and C as dermal tissue.",
+    stem: "The paper prints a transverse section through a root. A is vascular tissue, B is ground tissue and C is dermal tissue, named in part (c)(i).",
     questionText: "Give two substances that are transported by the tissue labelled A. Name a type of cell located in the tissue labelled A.",
     tariffModel: {"kind":"orderedSplit","notation":"2(7) + 8(2)"}, totalMarks: 16,
     rows: [
@@ -8131,7 +8131,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q16d-ii-iii-fig", topicId: "bio-2-5", conceptId: "sepal-function-and-pollen-reception",
     section: "C", questionRef: "2023 OL Q16(d)(ii)–(iii)",
-    stem: "The paper prints a cut-away diagram of an insect-pollinated flower. The scheme's own part (d)(i) gives X as the stigma, Y as the ovule and Z as the sepal.",
+    stem: "The paper prints a cut-away diagram of an insect-pollinated flower. X is the stigma, Y is the ovule and Z is the sepal, named in part (d)(i).",
     questionText: "What is the function of the part labelled Z? On which labelled part are pollen grains received?",
     tariffModel: {"kind":"orderedSplit","notation":"2(7) + 8(2)"}, totalMarks: 14,
     rows: [

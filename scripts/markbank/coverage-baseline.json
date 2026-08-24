@@ -1,7 +1,7 @@
 {
  "agricultural-science": {
   "cards": 869,
-  "contentHash": "a07e4757a78dd398",
+  "contentHash": "8a4205fa0447c6c1",
   "coveragePct": 93.6,
   "covered": 888,
   "excluded": 3,
@@ -16,7 +16,7 @@
  },
  "biology": {
   "cards": 1229,
-  "contentHash": "10229c065333933d",
+  "contentHash": "2efd0b25f4b5c927",
   "coveragePct": 85.9,
   "covered": 1405,
   "excluded": 0,
@@ -61,7 +61,7 @@
  },
  "construction-studies": {
   "cards": 505,
-  "contentHash": "aee22d98a30e07f9",
+  "contentHash": "a1172f1477219ad9",
   "coveragePct": 81.8,
   "covered": 419,
   "excluded": 0,
@@ -106,7 +106,7 @@
  },
  "maths": {
   "cards": 788,
-  "contentHash": "29212b626bc2f30f",
+  "contentHash": "76b7ce6dcca28d3d",
   "coveragePct": 80.5,
   "covered": 796,
   "excluded": 0,
@@ -121,7 +121,7 @@
  },
  "physics": {
   "cards": 1132,
-  "contentHash": "2d88be3b6d18530f",
+  "contentHash": "c9fb70b79594cc1a",
   "coveragePct": 95.1,
   "covered": 1118,
   "excluded": 46,

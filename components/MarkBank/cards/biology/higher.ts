@@ -1753,7 +1753,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Higher Level — © State Examinations Commission.",
     id: "bio-2024-hl-q8-b1", topicId: "bio-u2", conceptId: "dna-isolation-from-plant-tissue",
     section: "B", questionRef: "2024 HL Q8(b) [1 of 2]",
-    stem: "Isolation of DNA from a plant tissue — first three method steps the scheme credits.",
+    stem: "Isolation of DNA from a plant tissue — the first three steps of the method.",
     questionText: "Describe how you isolated the DNA from a named plant (or tissue)…",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
@@ -1769,7 +1769,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Higher Level — © State Examinations Commission.",
     id: "bio-2024-hl-q8-b2", topicId: "bio-u2", conceptId: "dna-isolation-from-plant-tissue",
     section: "B", questionRef: "2024 HL Q8(b) [2 of 2]",
-    stem: "Isolation of DNA from a plant tissue — final three method steps the scheme credits.",
+    stem: "Isolation of DNA from a plant tissue — the final three steps of the method.",
     questionText: "Describe how you isolated the DNA from a named plant (or tissue)…",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
@@ -4760,7 +4760,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Higher Level — © State Examinations Commission.",
     id: "bio-2022-hl-q13-b-iii", topicId: "bio-2-3", conceptId: "complementary-base-sequence",
     section: "C", questionRef: "2022 HL Q13(b)(iii)",
-    stem: "Process K is transcription and molecule L is mRNA (the scheme's own answers to parts (i)–(ii)). ACGTGCTGA is the DNA strand being transcribed.",
+    stem: "Process K is transcription and molecule L is mRNA, named in parts (i)–(ii). ACGTGCTGA is the DNA strand being transcribed.",
     questionText: "Write out the complementary sequence of bases of ACGTGCTGA.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -4817,7 +4817,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Higher Level — © State Examinations Commission.",
     id: "bio-2022-hl-q13-b-iv-v", topicId: "bio-2-3", conceptId: "complementary-base-sequence",
     section: "C", questionRef: "2022 HL Q13(b)(iv)–(v)",
-    stem: "The diagram illustrates some of the events of protein synthesis. Molecule L is mRNA (the scheme's own answer to part (ii)).",
+    stem: "The diagram illustrates some of the events of protein synthesis. Molecule L is mRNA, named in part (ii).",
     questionText: "Give the name of the opening through which molecule L leaves the organelle J. Identify structure M. Name the main molecule from which structure M is made.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
@@ -4847,7 +4847,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Higher Level — © State Examinations Commission.",
     id: "bio-2022-hl-q13-b-vi", topicId: "bio-2-3", conceptId: "translation-at-the-ribosome",
     section: "C", questionRef: "2022 HL Q13(b)(vi)",
-    stem: "Structure M is the ribosome (the scheme's own answer to part (v)).",
+    stem: "Structure M is the ribosome, named in part (v).",
     questionText: "Describe the events that occur at structure M, which allow the production of a functioning protein.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
@@ -4930,7 +4930,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Higher Level — © State Examinations Commission.",
     id: "bio-2022-hl-q14-b-iv", topicId: "bio-2-2", conceptId: "formation-of-nadph",
     section: "C", questionRef: "2022 HL Q14(b)(iv)",
-    stem: "Molecule Y is NADPH (the scheme's own answer to part (iii)).",
+    stem: "Molecule Y is NADPH, named in part (iii).",
     questionText: "Describe how molecule Y is produced.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [

@@ -1315,7 +1315,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q1aii", topicId: "agsci-4-2", conceptId: "dual-purpose-breed",
     section: "A", questionRef: "2023 HL Q1(a)(ii)",
-    stem: "Answer either (a) or (b). Part (i) shows photographs of three cattle breeds labelled A, B and C; the scheme gives C as the Simmental. The term underlined in the paper is 'dual-purpose breed'.",
+    stem: "Answer either (a) or (b). Part (i) shows photographs of three cattle breeds labelled A, B and C; breed C is the Simmental, named in part (i). The term underlined in the paper is 'dual-purpose breed'.",
     questionText: "Breed C is a dual-purpose breed. Explain the underlined term.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -2708,7 +2708,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q13aiii-adv", topicId: "agsci-3-3-2", conceptId: "rotational-grazing-advantages",
     section: "B", questionRef: "2021 HL Q13(a)(iii) Advantages",
-    stem: "Question 13 — answer (a) with either (b) or (c). (a) Read the article about multi‐species swards and answer the questions which follow. UCD trials indicate increased ewe milk production and lamb weight gain in flocks grazing multi‐species swards. The definition of multi‐species, is a mixture composed of two or more species, consisting of grasses (e.g. perennial ryegrass and timothy), herbs (e.g. chicory and plantain) and legumes (e.g. white and red clover) used in grazing mixtures. (Adapted from Irish Independent, 2020) Earlier in part (iii) you named a grazing system — the scheme accepts rotational or paddock grazing, block grazing, strip grazing, zero grazing or mixed grazing.",
+    stem: "Question 13 — answer (a) with either (b) or (c). (a) Read the article about multi‐species swards and answer the questions which follow. UCD trials indicate increased ewe milk production and lamb weight gain in flocks grazing multi‐species swards. The definition of multi‐species, is a mixture composed of two or more species, consisting of grasses (e.g. perennial ryegrass and timothy), herbs (e.g. chicory and plantain) and legumes (e.g. white and red clover) used in grazing mixtures. (Adapted from Irish Independent, 2020) Earlier in part (iii) you named a grazing system.",
     questionText: "Outline two advantages of the named grazing system in managing the sward.",
     tariffModel: {"kind":"orderedSplit","notation":"4+2"}, totalMarks: 6,
     rows: [
@@ -3251,7 +3251,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q18a-soil-quality", topicId: "agsci-2-2-2", conceptId: "soil-quality-effect-on-crop-productivity",
     section: "B", questionRef: "2021 HL Q18(a) Soil quality",
-    stem: "Discuss the effect of each of the following on the productivity of a named crop, giving two points for each heading. The paper prints a 'Named Crop:' line and then two headings, Soil quality and Crop preservation, with two answer lines under each. The scheme accepts Barley / Wheat / Oats / Potatoes / Grass etc., and awards no marks directly for naming the crop.",
+    stem: "Discuss the effect of each of the following on the productivity of a named crop, giving two points for each heading. The paper prints a 'Named Crop:' line and then two headings, Soil quality and Crop preservation, with two answer lines under each.",
     questionText: "Discuss the effect of each of the following on the productivity of a named crop, giving two points for each heading. Soil quality:",
     tariffModel: {"kind":"fixed","notation":"2(2)"}, totalMarks: 4,
     rows: [
@@ -3266,7 +3266,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Higher Level — © State Examinations Commission.",
     id: "agsci-2021-hl-q18a-crop-preservation", topicId: "agsci-3-3-3", conceptId: "crop-preservation-effect-on-productivity",
     section: "B", questionRef: "2021 HL Q18(a) Crop preservation",
-    stem: "Discuss the effect of each of the following on the productivity of a named crop, giving two points for each heading. The paper prints a 'Named Crop:' line and then two headings, Soil quality and Crop preservation, with two answer lines under each. The scheme accepts Barley / Wheat / Oats / Potatoes / Grass etc., and awards no marks directly for naming the crop.",
+    stem: "Discuss the effect of each of the following on the productivity of a named crop, giving two points for each heading. The paper prints a 'Named Crop:' line and then two headings, Soil quality and Crop preservation, with two answer lines under each.",
     questionText: "Discuss the effect of each of the following on the productivity of a named crop, giving two points for each heading. Crop preservation:",
     tariffModel: {"kind":"fixed","notation":"2(2)"}, totalMarks: 4,
     rows: [
@@ -6278,7 +6278,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
     id: "agsci-2022-hl-q2a", topicId: "agsci-4-2", conceptId: "identifying-livestock-breeds",
     section: "A", questionRef: "2022 HL Q2(a)",
-    stem: "Section A, Question 2, part (a). Six colour photographs of farm animals are printed in two rows of three: A, B and C captioned above the top row, D, E and F captioned below the bottom row. Under them the paper prints an answer box running A: to F:. Only four of the six have to be named. The scheme's front matter uses this exact question type as its worked example of the surplus-answer rule: a candidate who names five and gets one of them wrong scores 4 - 1 = 3, so there is nothing to gain from filling in all six. Part (b), on selecting a female replacement animal for breeding, is carded separately.",
+    stem: "Section A, Question 2, part (a). Six colour photographs of farm animals are printed in two rows of three: A, B and C captioned above the top row, D, E and F captioned below the bottom row. Under them the paper prints an answer box running A: to F:. Only four of the six have to be named. Part (b), on selecting a female replacement animal for breeding, is carded separately.",
     questionText: "Identify any four of the following breeds of animals.",
     tariffModel: {"kind":"bestNofParts","notation":"4(1)","answer":4,"ofParts":6,"perPart":1}, totalMarks: 4,
     rows: [
@@ -6342,7 +6342,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2022 Higher Level — © State Examinations Commission.",
     id: "agsci-2022-hl-q14ci", topicId: "agsci-4-3-3", conceptId: "calf-housing-suitable-environment",
     section: "B", questionRef: "2022 HL Q14(c)(i)",
-    stem: "Section B, Question 14, which is answered as 'both (a) and (b) with either (c) or (d)'. Part (c) opens: 'Analyse the picture of calf housing below and answer the questions which follow.' The photograph is taken inside a calf shed looking down the length of a straw-bedded pen: black-and-white calves lying and standing on deep clean straw, a low solid wall along the front of the pen with a galvanised barrier above it, spaced vertical timber boarding running along the upper side wall under the eaves, translucent roof panels letting daylight in, and a steel-framed pitched roof well above the calves. Three numbered answer slots are printed (1., 2., 3.), and each has to carry an aspect together with its reason - the question asks for both, and the scheme's options are printed as aspect-and-reason pairs.",
+    stem: "Section B, Question 14, which is answered as 'both (a) and (b) with either (c) or (d)'. Part (c) opens: 'Analyse the picture of calf housing below and answer the questions which follow.' The photograph is taken inside a calf shed looking down the length of a straw-bedded pen: black-and-white calves lying and standing on deep clean straw, a low solid wall along the front of the pen with a galvanised barrier above it, spaced vertical timber boarding running along the upper side wall under the eaves, translucent roof panels letting daylight in, and a steel-framed pitched roof well above the calves. Three numbered answer slots are printed (1., 2., 3.), and each has to carry an aspect together with its reason - the question asks for both.",
     questionText: "Identify three aspects of the shed which make it a suitable environment for calves and provide a reason for each aspect identified.",
     tariffModel: {"kind":"fixed","notation":"3(3)"}, totalMarks: 9,
     rows: [
@@ -6506,7 +6506,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Higher Level — © State Examinations Commission.",
     id: "agsci-2023-hl-q15ci", topicId: "agsci-1-3", conceptId: "soil-ph-with-least-n2o-emissions",
     section: "B", questionRef: "2023 HL Q15(c)(i)",
-    stem: "A secondary school installed a new garden and polytunnel and the agricultural science class investigated the donated topsoil. Part (c) says 'Analyse the graph showing the effect soil pH has on nitrous oxide (N20) emissions and answer the questions which follow' and prints a bar chart titled 'Effect of soil pH on nitrous oxide (N20) emissions': cumulative N20 emissions in g N20/ha/year up the vertical axis, scaled 0 to 7000 in thousands, against four soil pH values along the bottom — 5.1, 5.4, 6.2 and 6.9. (The paper and the scheme both print nitrous oxide as 'N20'.)",
+    stem: "A secondary school installed a new garden and polytunnel and the agricultural science class investigated the donated topsoil. Part (c) says 'Analyse the graph showing the effect soil pH has on nitrous oxide (N20) emissions and answer the questions which follow' and prints a bar chart titled 'Effect of soil pH on nitrous oxide (N20) emissions': cumulative N20 emissions in g N20/ha/year up the vertical axis, scaled 0 to 7000 in thousands, against four soil pH values along the bottom — 5.1, 5.4, 6.2 and 6.9. (The paper prints nitrous oxide as 'N20'.)",
     questionText: "State the soil pH that produces the least amount of N20 emissions.",
     tariffModel: {"kind":"fixed","notation":"6"}, totalMarks: 6,
     rows: [
