@@ -116,7 +116,17 @@ class Author:
                 cleaned = f'{cleaned} {mathtext.clean_like(P.files, extra)}'.strip()
         return cleaned
 
+    # A scheme unit keyed by a marker the PAPER does not print. 2021 HL P2's
+    # scheme labels the Q2(c)(i) work (|AC|, D, the translation) as a bare
+    # "(i)", and the card shipped citing "Q2(i)" — an address no paper page
+    # answers to. The citation is corrected here; the card id is NOT (ids
+    # never rename once shipped).
+    RECITE = {
+        (2021, 'hl'): {(2, 2, None, 'i'): (2, 2, 'c', 'i')},
+    }
+
     def ref(self, key):
+        key = self.RECITE.get((self.year, self.level), {}).get(tuple(key[:4]), key)
         paper, q, letter, roman = key[0], key[1], key[2], key[3]
         tail = f'Q{q}'
         if letter:
