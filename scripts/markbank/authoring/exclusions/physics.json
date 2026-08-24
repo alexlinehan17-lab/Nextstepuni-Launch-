@@ -1,0 +1,232 @@
+[
+ {
+  "ref": "2021 HL Q10(ii)",
+  "reason": "Same marking-convention-only shape; no answer content printed.",
+  "evidence": "Scheme: 'Describe an experiment to show the magnetic field around the conductor. apparatus, method, observation (3 × 3)'."
+ },
+ {
+  "ref": "2021 HL Q10(iii)",
+  "reason": "The credit is the drawn figure itself: the scheme's rows are grader labels that name neither the shape nor the direction, unlike Q12(vi) whose scheme names 'parallel field lines' and 'from + to −' (and which is carded).",
+  "evidence": "Scheme: 'Draw the shape and direction of this magnetic field. correct shape (3) correct direction (3)'."
+ },
+ {
+  "ref": "2021 HL Q11(i)",
+  "reason": "The nuclear equation (alpha + Be-9 -> C-12 + n, 11 × 1) is set in a font the text layer mangles; the answer cannot be lifted. Same class as 2022 HL Q10's equations, already recorded as font-mangled.",
+  "evidence": "Text layer yields '4 → C6' under the part, with fragments 'Be4', '9 + He2', '12 + n0' scattered into the neighbouring block; tariff line '(11 × 1) (–3 for each additional incorrect species)'."
+ },
+ {
+  "ref": "2021 HL Q13(a)(iv)",
+  "reason": "Proton–antiproton annihilation equation set with sub/superscripts and an overbar the text layer mangles; not liftable.",
+  "evidence": "Text layer yields '1 = 2γ (7 × 1)' and '1 + pത -1' plus '(–3 for each additional incorrect species)'."
+ },
+ {
+  "ref": "2021 HL Q14(b)(ii)",
+  "reason": "Marking-convention-only, as the script's docstring already records for this part.",
+  "evidence": "Scheme: 'Describe how the Doppler effect can be demonstrated in the laboratory. apparatus, method, observation (3 × 3)'."
+ },
+ {
+  "ref": "2021 HL Q2(iv)",
+  "reason": "The scheme prints only the tariff against the candidate's own drawing; there is no answer content to lift.",
+  "evidence": "Scheme p.7: '(iv) On your diagram, indicate u and v. (2 × 3)' — nothing follows the tariff."
+ },
+ {
+  "ref": "2021 HL Q8(ii)",
+  "reason": "Describe-an-experiment part answered only by the marking convention; nothing to put on the back of a card (rule 2).",
+  "evidence": "Scheme: '(ii) Describe such an experiment. apparatus, method, observation (3 × 3)'."
+ },
+ {
+  "ref": "2021 OL Q11(x)",
+  "reason": "Describe-an-experiment part whose scheme prints only the marking convention with no answer content — the exact case the script's header rule names as uncardable.",
+  "evidence": "Scheme (2021-ol.md, Q11): 'Describe an experiment to compare the rate of conduction through different solids. 3 × 3 apparatus 3 method 3 observation/conclusion 3 partial answer (3)' — no apparatus, method or observation is actually named."
+ },
+ {
+  "ref": "2021 OL Q13(e)",
+  "reason": "The credit is the drawn battery symbol itself; the scheme prints no words for the correct answer — its only content names the WRONG symbols that earn partial credit.",
+  "evidence": "Scheme (2021-ol.md, Q13): '(e) Draw the circuit symbol for a battery. 7 or 4 7 partial answer e.g. capacitor //supply symbol (4)' — the 7-mark answer is the printed symbol image, with no separable wording."
+ },
+ {
+  "ref": "2021 OL Q13(g)",
+  "reason": "The scheme credits the drawn figure with no separable wording — 'correct diagram' names nothing a card can lift.",
+  "evidence": "Scheme (2021-ol.md, Q13): '(g) Sketch the electric field that is formed between two oppositely charged parallel plates. 7 or 4 correct diagram 7 partial answer (4)'."
+ },
+ {
+  "ref": "2021 OL Q14(c)(iii)",
+  "reason": "The scheme credits the drawn figure with no separable wording — 'correct diagram' names nothing a card can lift (contrast Q13(h), whose scheme itemises the drawing's components and was carded).",
+  "evidence": "Scheme (2021-ol.md, Q14(c)): '(iii) Draw a diagram to show the magnetic field around a current-carrying conductor. 6 or3 correct diagram 6 partial answer (3)'."
+ },
+ {
+  "ref": "2022 HL Q10(ii)",
+  "reason": "Nuclear equation set in a bold math font whose text layer doubles every glyph; no legible marking point can be lifted. Same class as the Chemistry formulae already recorded as font-mangled (and already recorded in the script's docstring).",
+  "evidence": "Scheme answer line reads '𝑷𝑷𝑷𝑷 𝟗𝟗𝟗𝟗 𝟐𝟐𝟐𝟐𝟐𝟐 + 𝟐𝟐𝒏𝒏 𝟎𝟎 𝟏𝟏 → 𝑷𝑷𝑷𝑷 𝟗𝟗𝟗𝟗 𝟐𝟐𝟐𝟐 [(5 × 1) + 1]' where the printed page shows Pu-239 + 2n → Pu-241 with nuclide super/subscripts."
+ },
+ {
+  "ref": "2022 HL Q10(iii)",
+  "reason": "Same font-mangled nuclear equation class as Q10(ii): the beta-decay equation's nuclide symbols come out as doubled bold glyphs.",
+  "evidence": "Scheme answer line reads '𝑷𝑷𝑷𝑷 𝟗𝟗𝟗𝟗 𝟐𝟐𝟐𝟐 → 𝑨𝑨𝑨𝑨 𝟗𝟗𝟗𝟗 𝟐𝟐𝟐𝟐 + 𝒆𝒆 −𝟏𝟏 𝟎𝟎 [7 × 1]' where the page shows Pu-241 → Am-241 + an electron."
+ },
+ {
+  "ref": "2022 HL Q12(a)(ii)",
+  "reason": "Same font-mangled nuclear equation class: the lithium-7 + proton → 2 alpha equation's symbols come out as doubled bold glyphs, so no legible answer can be lifted.",
+  "evidence": "Scheme answer line reads '𝑳𝑳𝑳𝑳 𝟑𝟑 𝟕𝟕 + 𝒑𝒑 𝟏𝟏 𝟏𝟏 →𝟐𝟐𝑯𝑯𝑯𝑯 𝟐𝟐 𝟒𝟒 [9 × 1]' where the page shows ⁷Li + ¹p → 2 ⁴He."
+ },
+ {
+  "ref": "2022 HL Q4(iii)",
+  "reason": "Question wording is font-mangled in both documents: the stacked 1/f fraction in the ask cannot be lifted legibly, so the card's questionText would ship mojibake. The scheme's answer lines ('values for 1/f', 'labelled axes', 'correct points plotted', 'line of best fit') are clean, but lib lifts quest",
+  "evidence": "Paper text layer gives 'Draw a graph to show the relationship between l and ଵ ௙.' (Indic glyphs standing in for the typeset fraction 1/f, confirmed against paper page 4); the scheme's own reprint splits it the same way, as 'Draw a graph to show the relationship between l and 1' + '𝑓𝑓.'"
+ },
+ {
+  "ref": "2023 HL Q10(ii)",
+  "reason": "Describe-an-experiment part; the scheme names no apparatus, method or observation — only the 3 × 3 convention.",
+  "evidence": "Scheme p.16 prints exactly 'apparatus [3] method [3] observation [3]' for this part."
+ },
+ {
+  "ref": "2023 HL Q11(iv)",
+  "reason": "Describe-an-experiment part (demonstrate Faraday's or Lenz's law); scheme prints only the convention line.",
+  "evidence": "Scheme p.17 prints exactly 'apparatus [3] method [3] observation [3]' for this part."
+ },
+ {
+  "ref": "2023 HL Q12(b)(iii)",
+  "reason": "The scheme names no actual use of an LED — a card would have to invent the answer, which the lift-never-write rule forbids.",
+  "evidence": "Scheme (filed under its Q11(b)(iii)) prints exactly 'any valid use [3]' as the entire answer."
+ },
+ {
+  "ref": "2023 HL Q13(iii)",
+  "reason": "Describe-an-experiment part (force on a current-carrying conductor); scheme prints only the convention line.",
+  "evidence": "Scheme p.20 prints exactly 'apparatus [3] method [2] observation [2]' for this part."
+ },
+ {
+  "ref": "2023 HL Q14(d)(ii)",
+  "reason": "Describe-an-experiment part (demonstrate the photoelectric effect); scheme prints only the convention line.",
+  "evidence": "Scheme p.23 prints exactly 'apparatus [3] method [3] observation [3]' for this part."
+ },
+ {
+  "ref": "2023 HL Q8(ii)",
+  "reason": "Describe-an-experiment part whose scheme prints only the marking convention, no answer content — rule 2 forbids carding a bare apparatus/method/observation tariff.",
+  "evidence": "Scheme p.14 prints exactly 'apparatus [3] method [3] observation [3]' and nothing else for this part."
+ },
+ {
+  "ref": "2023 OL Q10(iii)",
+  "reason": "Describe-an-experiment part whose scheme prints only the marking convention, no answer content — nothing liftable to card.",
+  "evidence": "Scheme p.15: \"apparatus [4] method [4] observation [4] [accept partial answers for 2 in each case]\" is the entire answer block for the sound-interference experiment."
+ },
+ {
+  "ref": "2023 OL Q11(viii)",
+  "reason": "The credit is the drawn figure itself; the scheme never states in words what the correct shape of the sketch is.",
+  "evidence": "Scheme p.16: \"axis labelled [3] correct shape [3]\" — 'correct shape' names no shape, so there is no separable wording to lift."
+ },
+ {
+  "ref": "2023 OL Q14(b)(ii)",
+  "reason": "Describe-an-experiment part whose scheme prints only the marking convention, no answer content.",
+  "evidence": "Scheme p.19 (total internal reflection demonstration): \"apparatus [4] method [4] observation [4] [accept partial answers for 2 in each case]\"."
+ },
+ {
+  "ref": "2023 OL Q14(c)(iii)",
+  "reason": "Describe-an-experiment part whose scheme prints only the marking convention, no answer content.",
+  "evidence": "Scheme p.20 (Van de Graaff / charge on the outside of a hollow conductor): \"apparatus [4] method [4] observation [4] [accept partial answers for 2 in each case]\"."
+ },
+ {
+  "ref": "2023 OL Q14(d)(ii)",
+  "reason": "Describe-an-experiment part whose scheme prints only the marking convention, no answer content.",
+  "evidence": "Scheme p.21 (plotting the magnetic field around a current-carrying conductor): \"apparatus [6] method [6] [accept partial answers for 3 in each case]\"."
+ },
+ {
+  "ref": "2024 HL Q1(vi)",
+  "reason": "The credit is the drawn figure itself with no separable wording — the scheme prints the expected sketch as a drawing.",
+  "evidence": "Scheme p6: the answer is a printed sketch; the only text the part carries is the axis labels 'a (m s–2)' and 'F (N)' and the tariff '[4]'."
+ },
+ {
+  "ref": "2024 HL Q10(a)(ii)",
+  "reason": "Scheme prints only the marking convention with no answer content.",
+  "evidence": "Scheme p16 under 10.(a)(ii) prints exactly 'apparatus [3] method [3] observation [3]' and nothing else."
+ },
+ {
+  "ref": "2024 HL Q11(ii)",
+  "reason": "Scheme prints only the marking convention with no answer content.",
+  "evidence": "Scheme part for Q11(ii) prints exactly 'apparatus [3] method [3] observation [3]' and nothing else."
+ },
+ {
+  "ref": "2024 HL Q12(b)(iv)",
+  "reason": "The credit is the sketched waveform itself — the single word 'shape' names no separable creditable component (contrast Q12(b)(ii), which itemises 'labelled axes / a.c. shown / d.c. shown' and was carded).",
+  "evidence": "Scheme p19: '(iv) Sketch the graph of the output voltage of this circuit. shape [3]' — no other content printed."
+ },
+ {
+  "ref": "2024 HL Q13(iii)",
+  "reason": "Scheme prints only the marking convention; it names none of the items.",
+  "evidence": "Scheme p20: '(iii) Name two other items that can cause dispersion of light. two items [4 + 3]' — no items named."
+ },
+ {
+  "ref": "2024 HL Q13(vi)",
+  "reason": "Scheme prints only the marking convention; it names no part of the electromagnetic spectrum.",
+  "evidence": "Scheme p20: 'any 4 named [4 × 1] order [3]' — no answer content."
+ },
+ {
+  "ref": "2024 HL Q8(ii)",
+  "reason": "Scheme prints only the marking convention with no answer content.",
+  "evidence": "Scheme part for Q8(ii) prints exactly 'apparatus [3] method [3] observation [3]' and nothing else."
+ },
+ {
+  "ref": "2024 OL Q10(ii)",
+  "reason": "Describe-an-experiment part; the scheme prints only the marking convention with no answer content.",
+  "evidence": "apparatus [4] method [4] observation [4] [accept partial answers for 2 in each case] (scheme p16)"
+ },
+ {
+  "ref": "2024 OL Q14(d)(ii)",
+  "reason": "Describe-an-experiment part; the scheme prints only the marking convention with no answer content.",
+  "evidence": "apparatus [4] method [4] observation [4] [accept partial answers for 2 in each case] (scheme p22)"
+ },
+ {
+  "ref": "2024 OL Q2(vi)",
+  "reason": "The scheme prints only the credit criterion and never gives the value of f, so there is no answer content to lift.",
+  "evidence": "calculation of f [6] [accept partial answer for 3] (scheme p7)"
+ },
+ {
+  "ref": "2024 OL Q6(d)",
+  "reason": "Describe-an-experiment part whose scheme prints only the marking convention with no answer content.",
+  "evidence": "apparatus method observation [3+2+2] (scheme p11)"
+ },
+ {
+  "ref": "2024 OL Q6(k)",
+  "reason": "The scheme names no eye part and states no function; the print is the credit criterion alone.",
+  "evidence": "named part of the eye function [4+3] (scheme p12)"
+ },
+ {
+  "ref": "2024 OL Q6(l)",
+  "reason": "The credit is the drawn magnetic-field figure itself; the scheme prints no separable wording for its components.",
+  "evidence": "shape direction [4+3] (scheme p12)"
+ },
+ {
+  "ref": "2024 OL Q8(iv)",
+  "reason": "Describe-an-experiment part; the scheme prints only the marking convention with no answer content.",
+  "evidence": "apparatus [4] method [4] observation [4] [accept partial answers for 2 in each case] (scheme p14)"
+ },
+ {
+  "ref": "2025 OL Q10(x)",
+  "reason": "Drawing ask whose credit is the drawn a.c. curve itself; the printed words say a curve must be shown but never what curve (the sinusoidal shape IS the answer).",
+  "evidence": "Scheme PDF p.16 (printed page 14): \"(x) Draw a sketch of a graph to show how an a.c. voltage V changes with time t. / labelled axis and curve shown / [6] / [accept partial answer for 3]\"."
+ },
+ {
+  "ref": "2025 OL Q11(vii)",
+  "reason": "The marking point restates the ask verbatim with zero content about solar energy — nothing liftable a student could learn from.",
+  "evidence": "Scheme PDF p.17 (printed page 15): \"(vii) State one advantage and one disadvantage of using solar energy. / one advantage and one disadvantage / [7] / [accept partial answer for 4]\"."
+ },
+ {
+  "ref": "2025 OL Q14(b)(ii)",
+  "reason": "Content-free apparatus/method/observation convention (Doppler lab experiment); a prior wave's card note on Q14(b)(i) records the same judgement.",
+  "evidence": "Scheme PDF p.21 (printed page 19): \"apparatus [4] / method [4] / observation [4] / [accept partial answers for 2 in each case]\"."
+ },
+ {
+  "ref": "2025 OL Q6(h)",
+  "reason": "Pure drawing ask: the credit is the drawn field sketch itself; the scheme's only words name the drawing's presence, not its content.",
+  "evidence": "Scheme PDF p.11 (printed page 9): \"(h) Sketch the electric field lines due to a positive point charge. / correct shape / correct direction / [4 + 3]\" — no model drawing text, no component wording."
+ },
+ {
+  "ref": "2025 OL Q8(i)",
+  "reason": "Experiment-description convention with no answer content; the script's own header rule names this exact pattern as refusal/exclusion.",
+  "evidence": "Scheme PDF p.14 (printed page 12): \"apparatus [4] / method [4] / observation [4] / [accept partial answers for 2 in each case]\" — no apparatus, method or observation is ever named."
+ },
+ {
+  "ref": "2025 OL Q8(viii)",
+  "reason": "Same content-free apparatus/method/observation convention as Q8(i).",
+  "evidence": "Scheme PDF p.14 (printed page 12): \"apparatus [4] / method [4] / observation [4] / [accept partial answers for 2 in each case]\"."
+ }
+]

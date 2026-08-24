@@ -209,12 +209,20 @@ def _opens_a_question(blocks, index, open_letter=None):
     stray figure label accepted as a head because "(i)" followed it, which
     created bare-roman leaves under a question that never printed them.
     """
+    prose = False
     for text in blocks[index + 1:index + 7]:
         letter, roman, _ = _leading(text)
         if letter or roman:
-            if roman and not letter and open_letter is not None:
+            # A roman straight after the bare number while a letter is open is
+            # that letter's own numbering (the Maths figure-label case) — but
+            # only when it arrives IMMEDIATELY. A head followed by paragraphs
+            # of stimulus and THEN (i) is a real passage question: 2025 OL
+            # Physics Q13 opens with five prose blocks before its (i).
+            if roman and not letter and open_letter is not None and not prose:
                 return False
             return letter in (None, 'a') and roman in (None, 'i')
+        if len(text) >= 60:
+            prose = True
     return True
 
 
@@ -322,7 +330,19 @@ class Paper:
                 # heads at all: Agricultural Science writes the literal
                 # 'Question N' everywhere, and a stray '19' in a diagram was
                 # its only bare number — accepted, it invented a Question 19.
-                if loose and dot_heads and index not in axis \
+                # A page number can sit directly beside the question head that
+                # shares its value — 2025 OL Physics prints the footer '13'
+                # above the bare '13' that heads Question 13, and the axis
+                # adjacency rule ate the head, losing the whole question. Two
+                # adjacent lone tokens of EQUAL value are page-number + head;
+                # an axis run's neighbours always differ.
+                twin_page = (index in axis
+                             and loose is not None
+                             and ((index - 1 in axis and blocks[index - 1].strip().rstrip('.')
+                                   == loose.group(1))
+                                  or (index + 1 in axis and blocks[index + 1].strip().rstrip('.')
+                                      == loose.group(1))))
+                if loose and dot_heads and (index not in axis or twin_page) \
                         and int(loose.group(1)) == q + 1 \
                         and _opens_a_question(blocks, index, letter):
                     text = f'{loose.group(1)}. {text[loose.end():]}'.strip()

@@ -40,8 +40,7 @@ A.card(5, None, 'ii', topic='phys-u2', concept='varying-temperature-in-the-resis
        row_kind='criterion')
 
 A.card(1, None, 'v', topic='phys-u2', concept='clockwise-moments-on-a-metre-stick',
-       source='pdf', from_run=((1, None, 'vi'), 0, slice(0, 11)), marks=[6],
-       notes='The scheme numbers this answer one part further on than the paper does.')
+       source='pdf', use=[0], marks=[6])
 
 A.card(14, 'a', 'i', topic='phys-1-2', concept='net-force-when-forces-balance',
        source='pdf', from_run=((14, 'a', 'i'), 0, slice(0, 6)), marks=[4])
@@ -125,13 +124,98 @@ A.card(4, None, 'vi', topic='phys-u2', concept='graph-of-frequency-against-one-o
                   ((4, None, 'vi'), 1, slice(8, 12))],
        marks=[3, 6, 3], notation='3 + 6 × 1 + 3', checked='The paper prints the part mark in brackets after the question, so the text ends on a number rather than punctuation. The question itself is complete.')
 
-A.card(10, None, 'iv', topic='phys-2-1', concept='why-a-freezer-cools-when-liquid-vaporises',
-       source='pdf', from_run=((9, None, 'iv'), 0, slice(17, 19)), marks=[6],
-       checked='The paper prints the part mark and then runs the next two questions on '
-               'in the same block. The trim cannot be confirmed against the scheme '
-               'because the scheme reprints the question with the word fridge where the '
-               'paper writes freezer, so the card carries the paper\'s own wording.',
-       notes='The scheme numbers this answer under its own Question 9 while the paper '
-             'prints Question 10.')
+A.card(10, None, 'iv', topic='phys-2-6', concept='next-harmonic-in-a-closed-pipe',
+       source='pdf', use=[0], marks=[6],
+       context='The pipe is the clarinet of the preceding parts, modelled as a pipe '
+               'closed at one end.')
+
+
+# ── Closing the remaining open parts ───────────────────────────────────────
+A.card(1, None, 'iv', topic='phys-u2', concept='verifying-the-first-law-of-equilibrium',
+       source='pdf', from_run=((1, None, 'iv'), 0, slice(0, 20)), marks=[6])
+
+A.card(1, None, 'vi', topic='phys-u2', concept='anticlockwise-moments-on-a-metre-stick',
+       source='pdf', use=[0], marks=[6])
+
+A.card(1, None, 'vii', topic='phys-u2', concept='verifying-the-second-law-of-equilibrium',
+       source='pdf', use=[0], marks=[4],
+       checked='The paper prints the question total "(22)" after the question, so the '
+               'text ends on a bracketed number rather than punctuation. The question '
+               'itself is complete.')
+
+A.card(2, None, 'ii', topic='phys-u2', concept='labelling-object-and-image-distances',
+       source='pdf', first_sentence=True,
+       from_run=((2, None, 'ii'), 0, slice(0, 4)), marks=[6],
+       notation='4 + 2', row_kind='criterion')
+
+A.card(3, None, 'i', topic='phys-u2',
+       concept='apparatus-for-the-specific-heat-capacity-experiment',
+       source='pdf', from_run=((3, None, 'i'), 0, slice(0, 20)), marks=[10],
+       notation='any 4: 4 + 2 + 2 + 2', row_kind='criterion',
+       notes='The scheme pays for any four of the listed items and takes a mark off '
+             'if the diagram carries no labels.')
+
+A.card(3, None, 'v', topic='phys-u2',
+       concept='completing-the-specific-heat-capacity-calculation',
+       source='pdf',
+       from_runs=[((3, None, 'v'), 0, slice(0, 3)),
+                  ((3, None, 'v'), 0, slice(4, 7)),
+                  ((3, None, 'v'), 0, slice(8, 14))],
+       marks=[4, 4, 4],
+       context='The paper prints the calculation to complete: ∆E = mwater cwater '
+               'Δθwater + mcalorimeter ccopper Δθcalorimeter, filled in as '
+               '3467 = A × cwater × B + 0.106 × 390 × B.')
+
+A.card(4, None, 'v', topic='phys-u2', concept='completing-the-one-over-length-table',
+       source='pdf', from_run=((4, None, 'v'), 2, slice(5, 9)), marks=[4],
+       notation='4 × 1',
+       notes='The four values are the missing entries of the 1/l row, in table '
+             'order; each scores one mark.')
+
+A.card(5, None, 'iii', topic='phys-u2',
+       concept='safety-precaution-in-the-resistance-experiment',
+       source='pdf', first_sentence=True,
+       from_run=((5, None, 'iii'), 0, slice(0, 3)), marks=[4], row_kind='criterion')
+
+A.card(5, None, 'vi', topic='phys-u2', concept='estimating-temperature-from-the-graph',
+       source='pdf', first_sentence=True, use=[0], marks=[3],
+       context='The student used the apparatus to estimate the temperature of an '
+               'unknown liquid; its resistance measured 5.5 Ω.')
+
+A.card(8, None, 'vii', topic='phys-2-3', concept='magnification-of-a-concave-mirror-image',
+       source='pdf', from_run=((8, None, 'vii'), 2, slice(1, 3)), marks=[6],
+       notes='The scheme sets the working, image distance over object distance, as a '
+             'stacked fraction the text layer cannot carry, so the card holds the '
+             'result line alone, its unit as printed.')
+
+A.card(8, None, 'viii', topic='phys-2-3', concept='image-height-from-magnification',
+       source='pdf', use=[0], marks=[6],
+       checked='The paper prints the question total "(29)" after the question, so the '
+               'text ends on a bracketed number rather than punctuation. The question '
+               'itself is complete.')
+
+A.card(9, None, 'vii', topic='phys-2-1', concept='parts-of-a-heat-pump',
+       source='pdf', first_sentence=True,
+       from_runs=[((9, None, 'vii'), 0, slice(0, 2)),
+                  ((9, None, 'vii'), 0, slice(3, 5)),
+                  ((9, None, 'vii'), 0, slice(6, 8))],
+       marks=[3, 3, 3],
+       notes='The scheme takes a mark off if the diagram carries no labels.')
+
+A.card(10, None, 'viii', topic='phys-2-6', concept='fundamental-in-a-pipe-open-at-both-ends',
+       source='pdf', from_run=((10, None, 'viii'), 0, slice(0, 10)), marks=[6])
+
+A.card(12, None, 'vi', topic='phys-4-4', concept='daughter-nucleus-after-alpha-decay',
+       source='pdf', from_run=((12, None, 'vi'), 1, slice(0, 2)), marks=[6],
+       notation='3 × 2',
+       notes='The scheme sets each nuclide with stacked atomic and mass numbers; the '
+             'text layer flattens them to bare digits after the symbol, in the '
+             'question and in the answer alike.')
+
+A.card(14, 'a', 'vi', topic='phys-1-1', concept='acceleration-under-an-unbalanced-force',
+       source='pdf', from_run=((14, 'a', 'vi'), 2, slice(1, 4)), marks=[5],
+       notes='The scheme sets the working, force over mass, as a stacked fraction '
+             'the text layer cannot carry, so the card holds the result at the '
+             'part\'s full printed tariff.')
 
 A.emit()
