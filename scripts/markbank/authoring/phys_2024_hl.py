@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-"""Physics 2024 Higher Level — the charge held by the capacitor."""
+"""Physics 2024 Higher Level — the charge held by the capacitor.
+
+A part whose scheme prints only the marking convention — "apparatus [3]
+method [3] observation [3]", "two items [4 + 3]", "any 4 named [4 × 1]" —
+with no answer content is never carded; there is nothing to lift. The same
+goes for a sketch whose only creditable content is the drawing itself.
+"""
 import os
 import sys
 
@@ -158,5 +164,96 @@ A.card(12, 'b', 'ii', topic='phys-3-6', concept='voltage-time-graphs-for-ac-and-
        marks=[3, 3, 3],
        notes='The scheme numbers this answer under its own Question 11 while the paper '
              'prints Question 12.')
+
+# ── Closing the open coverage ──────────────────────────────────────────────
+A.card(1, None, 'v', topic='phys-u2', concept='mass-from-the-slope-of-a-graph',
+       source='pdf',
+       from_runs=[((1, None, 'v'), 0, slice(0, 2)),
+                  ((1, None, 'v'), 0, slice(3, 7))],
+       marks=[3, 2])
+
+A.card(2, None, 'ii', topic='phys-u2', concept='apparatus-for-the-focal-length-experiment',
+       source='pdf',
+       from_runs=[((2, None, 'ii'), 0, slice(0, 1)),
+                  ((2, None, 'ii'), 0, slice(2, 3)),
+                  ((2, None, 'ii'), 0, slice(4, 5)),
+                  ((2, None, 'ii'), 0, slice(6, 10))],
+       marks=[2, 2, 2, 3])
+
+A.card(2, None, 'iv', topic='phys-u2', concept='focal-length-from-all-of-the-data',
+       source='pdf',
+       from_runs=[((2, None, 'iv'), 0, slice(0, 11)),
+                  ((2, None, 'iv'), 0, slice(12, 19)),
+                  ((2, None, 'iv'), 0, slice(20, 32)),
+                  ((2, None, 'iv'), 0, slice(33, 40))],
+       marks=[3, 3, 3, 3],
+       notes='The // pairs the calculation route with the graph route — either '
+             'side of each line earns its marks, but the two routes cannot be mixed.')
+
+A.card(3, None, 'i', topic='phys-u2', concept='apparatus-for-the-latent-heat-experiment',
+       source='pdf',
+       from_runs=[((3, None, 'i'), 0, slice(0, 1)),
+                  ((3, None, 'i'), 0, slice(2, 5)),
+                  ((3, None, 'i'), 0, slice(6, 7)),
+                  ((3, None, 'i'), 0, slice(8, 9))],
+       marks=[2, 2, 2, 2],
+       notes='The scheme takes a mark off if the diagram carries no labels.')
+
+A.card(4, None, 'iv', topic='phys-u2', concept='graph-of-frequency-against-tension',
+       source='pdf',
+       from_runs=[((4, 'a', 'iv'), 4, slice(0, 2)),
+                  ((4, 'a', 'iv'), 4, slice(3, 6)),
+                  ((4, 'a', 'iv'), 4, slice(7, 11))],
+       marks=[3, 3, 3],
+       notes='The scheme awards a further 3 marks, not shown here, for first '
+             'working out the values to plot — the square of each frequency or '
+             'the square root of each tension; that line is typeset with a '
+             'radical sign the text layer cannot carry.')
+
+# The first row's words are this part's own — the scheme prints "slope
+# formula, f = …" — lifted from Q5(iii)'s identical line to leave the
+# scheme's comma and unrenderable typeset maths behind.
+A.card(4, None, 'vi', topic='phys-u2', concept='mass-per-unit-length-from-the-slope',
+       source='pdf',
+       from_runs=[((5, None, 'iii'), 0, slice(0, 2)),
+                  ((4, 'a', 'vi'), 4, slice(0, 7))],
+       marks=[5, 3], notation='3 + 2 for the slope formula, then 3',
+       checked='The paper prints the part mark in brackets after the question, so the text ends on a number rather than punctuation. The question itself is complete.',
+       notes='The scheme writes the slope formula out in full as typeset maths '
+             'that does not survive the text layer; the 3 + 2 covers stating '
+             'and using it.')
+
+A.card(7, None, 'vi', topic='phys-1-1', concept='resolving-velocity-into-components',
+       source='pdf',
+       from_runs=[((7, None, 'vi'), 0, slice(0, 6)),
+                  ((7, None, 'vi'), 0, slice(7, 12)),
+                  ((7, None, 'vi'), 0, slice(13, 18))],
+       marks=[3, 3, 3],
+       notes='The 27 m s–1 is the speed of the ball as it is released, '
+             'calculated in the previous part.')
+
+A.card(9, 'b', 'iv', topic='phys-3-3', concept='percentage-efficiency-of-a-drill',
+       source='pdf',
+       from_runs=[((8, 'b', 'iv'), 2, slice(2, 5)),
+                  ((8, 'b', 'iv'), 3, slice(0, 2))],
+       marks=[3, 3],
+       checked='The paper prints the part mark in brackets after the question, so the text ends on a number rather than punctuation. The question itself is complete.',
+       notes='The scheme equally accepts the ratio of output power to input '
+             'power for the first mark; it is typeset as maths the text layer '
+             'cannot carry. The input power comes from the previous part.')
+
+A.card(11, None, 'viii', topic='phys-3-2', concept='field-between-the-plates-of-a-capacitor',
+       source='pdf', first_sentence=True,
+       from_runs=[((11, None, 'viii'), 1, slice(0, 1)),
+                  ((11, None, 'viii'), 2, slice(0, 1))],
+       marks=[3, 3])
+
+A.card(12, 'a', 'xi', topic='phys-4-5', concept='pair-annihilation-equation',
+       source='pdf',
+       from_run=((11, None, 'viii'), 11, slice(27, 30)), marks=[6],
+       checked='The paper prints the part mark in brackets after the question, so the text ends on a number rather than punctuation. The question itself is complete.',
+       notes='The scheme equally accepts the annihilation equation written in '
+             'full nuclear notation; its stacked sub- and superscripts do not '
+             'survive the text layer, so the card shows the // alternative.')
 
 A.emit()

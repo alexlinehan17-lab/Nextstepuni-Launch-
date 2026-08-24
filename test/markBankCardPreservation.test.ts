@@ -45,8 +45,15 @@ const decks = [
    * glyph no font table resolves, and refusing beats printing the wrong
    * expression in front of a student. Recoverable once the fraction reader
    * covers the Physics papers; not a deletion of content that was correct. */
-  ['physics:higher', PHYS_HIGHER, 486, 'fc15252875fbe1316ad4bfc5696a988ee9c35a126b0425d256afb47230b67e0f'],
-  ['physics:ordinary', PHYS_ORDINARY, 475, '23f9cfff7c5377f0b7ec70f8b127b50757021456bec847070a4a31735eb3f9d1'],
+  /* 2026-08-24: physics 486/475 -> 567/563 — the backfill fleet's second
+   * subject. Ten agents closed every open paper ask (card, exclusion with
+   * scheme evidence, figure-needed, or named refusal); the ledger reads 95.1%
+   * with the residue catalogued by kind. Two defective 2024 OL cards were
+   * repaired IN PLACE (same ids): q1-v now lifts the clockwise-moments line
+   * its question asks for, q10-iv the closed-pipe harmonic instead of another
+   * part's answer. Nothing removed. */
+  ['physics:higher', PHYS_HIGHER, 569, '463dd2324556ac2c286ed7c722602a9bf5e4f83a9ee43fdd03bcf8b13d97e6fd'],
+  ['physics:ordinary', PHYS_ORDINARY, 563, 'd81eb2853777e6516fb419c484bf35b6500eecc4f4d203ee02304c227b51f506'],
   ['agricultural-science:higher', AGSCI_HIGHER, 438, '31e25662626e35ca1db55e96e1cdfe0492648666c6cd35365f2c1e6d92c35f6a'],
   ['agricultural-science:ordinary', AGSCI_ORDINARY, 431, '2dbd6e7635bb73941a16773ce9d3c654741a863280c002f783fc45cd0d7e8dbd'],
   ['business:higher', BUSINESS_HIGHER, 272, 'a61655818cee2ce61307eb08fe6dad282193791674b4e5e8a893e203b64af976'],
@@ -87,6 +94,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(6852);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7023);
   });
 });

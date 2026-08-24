@@ -120,18 +120,18 @@
   "refsHash": "8d1dbca3a781c4f9"
  },
  "physics": {
-  "cards": 961,
-  "contentHash": "3b546a29e145db4e",
-  "coveragePct": 77.3,
-  "covered": 941,
-  "excluded": 0,
-  "leaves": 1217,
-  "open": 276,
-  "orphans": 14,
+  "cards": 1132,
+  "contentHash": "5a56d2fff77ccc65",
+  "coveragePct": 95.1,
+  "covered": 1118,
+  "excluded": 46,
+  "leaves": 1224,
+  "open": 60,
+  "orphans": 6,
   "papers": {
    "count": 10,
    "hash": "aedd9969b3ce025e"
   },
-  "refsHash": "50dd866a59561c3b"
+  "refsHash": "1302820e5f7327d9"
  }
 }
