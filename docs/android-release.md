@@ -53,6 +53,7 @@ works for debug, but the release bundle will be unsigned and Play will reject it
 ```bash
 npm run build                    # compile the web app into dist/
 npx cap sync android             # copy dist/ into the Android project
+npm run cap:prune                # remove the hosted figure corpus
 cd android && JAVA_HOME="$HOME/.jdks/jdk-21.0.12+8/Contents/Home" ./gradlew bundleRelease
 ```
 
@@ -87,6 +88,22 @@ The bundle lands at:
 ```
 android/app/build/outputs/bundle/release/app-release.aab
 ```
+
+### Verified GitHub build
+
+The preferred store build runs the manually triggered **Build signed Android
+release** workflow. It first reruns the complete application, rules, Functions
+and dependency gates for the selected `main` commit. Only after they pass can
+the protected `android-release` environment be approved. The signing job then
+builds on GitHub's clean Android runner, verifies both the expected upload
+certificate and bundle signature, and retains the `.aab` artifact for one day.
+The workflow reads the upload keystore and passwords from the protected
+`ANDROID_UPLOAD_KEYSTORE_BASE64`, `ANDROID_UPLOAD_STORE_PASSWORD` and
+`ANDROID_UPLOAD_KEY_PASSWORD` environment secrets. Signing material is removed
+from the runner even when the build fails.
+
+The workflow is deliberately manual: ordinary pull requests and production web
+deployments never receive the Android signing key.
 
 That is the file you upload to Play Console.
 
