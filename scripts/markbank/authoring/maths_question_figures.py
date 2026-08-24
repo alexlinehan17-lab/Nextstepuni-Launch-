@@ -48,6 +48,7 @@ CATALOGUE = os.path.join(ROOT, 'scripts', 'markbank', 'authored',
 OVERRIDES = os.path.join(HERE, 'maths_qfig_overrides.json')
 
 DPI = 170
+SCALE = DPI / 72.0
 X0, X1 = 40.0, 556.0        # the text column, with room for diagram overhang
 Y_TOP, Y_FOOT = 46.0, 792.0  # running footer starts at y ~= 799.7 everywhere
 GAP = 18                     # px between stitched regions
@@ -58,6 +59,19 @@ LETTER = re.compile(r'^\(\s*([a-h])\s*\)')
 ROMAN = re.compile(r'^\(\s*([ivx]{1,4})\s*\)')
 QHEAD = re.compile(r'^Question\s+(\d{1,2})$')
 TAIL_PAGE = re.compile(r'^(Page for extra work|Acknowledg|Copyright|Blank Page)', re.I)
+# The running footer's y varies by booklet (783.4 on 2021 P2, 799.7 on 2021
+# P1), so it is matched by TEXT, not by a fixed line: a static cutoff at 792
+# half-cut the low footers into every deep crop on Paper 2.
+FOOTER = re.compile(r'^(Leaving Certificate|Mathematics,? Paper|\d{1,2}$)')
+# Lines that are page apparatus, not question content, wherever they sit:
+# the continuation notice under a deep part, and the next section's banner
+# stitched after a question's last ask.
+DEAD_TEXT = re.compile(
+    r'^This question continues on the next page\.?$'
+    r'|^Section [A-Z]$'
+    r'|^(?:Concepts and Skills|Contexts and Applications)$'
+    r'|^\d{2,3} marks$'
+    r'|^Answer (?:all|any) .{0,50}questions?(?: from this section)?\.?$')
 # "Hence", "your answer to part (i)": the ask leans on the siblings before it.
 NEEDS_SIBLINGS = re.compile(
     r'\bHence\b|\byour answers?\b|\b(?:in|from|to) parts? \(', re.I)
@@ -68,12 +82,17 @@ NEEDS_SIBLINGS = re.compile(
 # cuboid diagram onto a logs question.
 NEEDS_QSTEM = re.compile(
     r'\b(?:the|this) (?:diagram|graph|table|figure|curve|map|pattern|data)\b'
-    r'|\babove\b|\bshown\b|\[\s*[A-Z]{2}\s*\]|\bpoint [A-Z]\b', )
+    # citation-style only: "the model above", "shown above" — never the
+    # spatial prose of "height above level ground".
+    r'|\b(?:shown|given|defined|described)\s+above\b'
+    r'|\b(?:diagram|table|graph|figure|model|equation|function)\s+above\b'
+    r'|\bshown\b|\[\s*[A-Z]{2}\s*\]|\bpoint [A-Z]\b', )
 
 
 def lines_of(doc):
-    """Every printed line: (page, y0, y1, x0, text), footer excluded."""
+    """Printed lines: (page, y0, y1, x0, text), furniture split out."""
     out = []
+    dead = []
     for n in range(doc.page_count):
         for b in doc[n].get_text('dict')['blocks']:
             for ln in b.get('lines', []):
@@ -85,9 +104,46 @@ def lines_of(doc):
                 y1 = max(s['bbox'][3] for s in ln['spans'])
                 if y0 >= Y_FOOT - 4:
                     continue
+                if y0 > 700 and FOOTER.match(txt):
+                    continue
+                if DEAD_TEXT.match(txt):
+                    dead.append((n, y0, y1, x0, txt))
+                    continue
                 out.append((n, y0, y1, x0, txt))
     out.sort(key=lambda l: (l[0], round(l[1], 1), l[3]))
-    return out
+    dead.sort(key=lambda l: (l[0], round(l[1], 1), l[3]))
+    return out, dead
+
+
+def _ascii(text):
+    """Fold mathematical alphanumeric symbols to ASCII for matching.
+
+    The paper's text layer sets variables in Mathematical Italic (U+1D400
+    block) and Planck-constant ℎ for the letter h, so an ASCII search for
+    "h =" finds nothing in the very line that defines h(x)."""
+    out = []
+    for ch in text:
+        o = ord(ch)
+        if 0x1D400 <= o <= 0x1D7FF:
+            for base, first in ((0x1D400, 'A'), (0x1D41A, 'a'), (0x1D434, 'A'),
+                                (0x1D44E, 'a'), (0x1D468, 'A'), (0x1D482, 'a'),
+                                (0x1D5A0, 'A'), (0x1D5BA, 'a'), (0x1D7CE, '0'),
+                                (0x1D7E2, '0')):
+                span = 10 if first == '0' else 26
+                if base <= o < base + span:
+                    out.append(chr(ord(first) + o - base))
+                    break
+            else:
+                out.append(ch)
+        elif ch == '\u210e':
+            out.append('h')
+        elif ch == '\u2113':
+            out.append('l')
+        elif ch == '\u212f':
+            out.append('e')
+        else:
+            out.append(ch)
+    return ''.join(out)
 
 
 def _dark(color):
@@ -100,7 +156,14 @@ class Sitting:
         self.paper_no = 1 if component == 100 else 2
         path = os.path.join(PAPERS, f'{year}-{level}-{component}-paper.pdf')
         self.doc = pymupdf.open(path)
-        self.lines = lines_of(self.doc)
+        self.lines, self.dead = lines_of(self.doc)
+        # Where this booklet's footer actually starts, per page.
+        self.foot = {}
+        for n in range(self.doc.page_count):
+            for b in self.doc[n].get_text('blocks'):
+                t = ' '.join(b[4].split())
+                if b[1] > 700 and FOOTER.match(t):
+                    self.foot[n] = min(self.foot.get(n, Y_FOOT), b[1] - 2)
         self._ink = {}
         self._furniture = {}
         self._index()
@@ -164,7 +227,11 @@ class Sitting:
             if r.width > 420 and r.height > 80:
                 inside = [l for l in text_lines
                           if r.y0 - 2 <= l[1] and l[2] <= r.y1 + 2]
-                if len(inside) <= 3 and sum(len(l[4]) for l in inside) < 60:
+                # A prompt or two ("Show:", "Roots = ( , , )") or a template
+                # of bare labels ("Diagram: / Given: / To Prove: / Proof:")
+                # is furniture; a data table or a labelled plot holds more.
+                if (len(inside) <= 6 and sum(len(l[4]) for l in inside) < 120
+                        and all(len(l[4]) < 28 for l in inside)):
                     frames.append(r)
         self._furniture[page] = frames
         rects = []
@@ -247,6 +314,8 @@ class Sitting:
             l_end = next((pos(m) for m in marks[li + 1:] if m[0] == 'letter'), q_end)
             bands = ([qstem] if qstem and force.get('qstem', True) else [])
             bands.append((pos(marks[li]), l_end))
+            bands = self._hunt_definitions(bands, marks, li, qstem, part_text,
+                                           force, q_end)
             return bands, 'letter part'
 
         scope = marks[li:] if letter else marks
@@ -264,24 +333,92 @@ class Sitting:
         first_roman = next((pos(m) for m in scope if m[0] == 'roman'), None)
 
         bands, ctx = [], []
-        if letter and first_roman and first_roman > pos(scope[0]):
+        has_letter_stem = bool(letter and first_roman
+                               and first_roman > pos(scope[0]))
+        if has_letter_stem:
             bands.append((pos(scope[0]), first_roman))   # the letter's setup
             ctx.append(self.band_text(bands[-1:], 2000))
+        # Siblings ride along when the ask chains on them ("Hence", "your
+        # answer") — and also when the letter's setup points BELOW itself
+        # ("as shown in the diagram below"): the diagram it promises is
+        # printed under an earlier sibling, so the chain must come too.
+        stem_points_down = bool(re.search(
+            r'\b(?:below|following|as shown)\b', ' '.join(ctx)))
         siblings = force.get('siblings',
-                             bool(NEEDS_SIBLINGS.search(part_text))) and ri > 0
+                             bool(NEEDS_SIBLINGS.search(part_text))
+                             or stem_points_down) and ri > 0
         if siblings:
             bands.append((first_roman, pos(scope[ri])))
             ctx.append(self.band_text(bands[-1:], 2000))
-        # The question stem rides along only when the part actually reaches
-        # for it — a printed cuboid above a self-contained logs equation is
-        # noise, and noise is what this tool exists to remove.
+        # The question stem rides along when the part reaches for it by name
+        # ("the diagram", "above") — and, since the 2021 OL "the lake" audit
+        # finding, whenever NOTHING else carries any setup: a one-line ask
+        # about a definite thing must not ship bare. The price is an
+        # occasionally redundant printed stem, which is faithful noise; a
+        # missing diagram is an unanswerable card.
         want_qstem = force.get(
             'qstem',
-            (not letter) or bool(NEEDS_QSTEM.search(' '.join(ctx) + ' ' + part_text)))
+            (not letter)
+            or bool(NEEDS_QSTEM.search(' '.join(ctx) + ' ' + part_text))
+            or (not has_letter_stem and not siblings))
         if qstem and want_qstem:
             bands.insert(0, qstem)
         bands.append((pos(scope[ri]), r_end))
+        bands = self._hunt_definitions(bands, marks, li, qstem, part_text,
+                                       force, q_end)
         return bands, 'roman part'
+
+    def _hunt_definitions(self, bands, marks, li, qstem, part_text, force, q_end):
+        """The ask names a function or quantity — h(x), T(t), V1 — that no
+        included band defines. The definition is printed under an EARLIER
+        letter ('h(x) = 0.001x^3 ...' set in part (a), differentiated in
+        (b)), which the default plan deliberately skips. Hunt it down and
+        carry the defining region along. Overrides may also force whole
+        letters in with {"letters": ["a"]}."""
+
+        def pos(m):
+            return (m[2], m[3] - 4.0)
+
+        # Whole letters forced by override.
+        for want in force.get('letters', []):
+            for i, m in enumerate(marks):
+                if m[0] == 'letter' and m[1] == want:
+                    end = next((pos(x) for x in marks[i + 1:]
+                                if x[0] == 'letter'), q_end)
+                    bands.insert(1 if qstem and bands and bands[0] == qstem
+                                 else 0, (pos(m), end))
+                    break
+        included = _ascii(' '.join(self.band_text([b], 4000) for b in bands))
+        syms = set(re.findall(r'\b([A-Za-z]\w{0,3})\s*[\u2032\u2019\']{0,2}\s*\(\s*[a-z]\s*\)', part_text))
+        syms |= set(re.findall(r'\b([A-Z]\d)\b', part_text))
+        missing = [sym for sym in syms
+                   if not re.search(re.escape(sym)
+                                    + r'\s*(?:\(\s*[a-z]\s*\))?\s*[=\u2248]',
+                                    included)]
+        if not missing:
+            return bands
+        # Candidate defining regions, in print order: the question stem, then
+        # every marker-to-marker segment before our letter.
+        segs = ([qstem] if qstem and qstem not in bands else [])
+        upto = marks[:li] if li is not None else marks
+        for i, m in enumerate(upto):
+            end = pos(marks[i + 1]) if i + 1 < len(marks) else q_end
+            segs.append((pos(m), end))
+        added = 0
+        for sym in missing:
+            for seg in segs:
+                if seg in bands:
+                    continue
+                text = _ascii(self.band_text([seg], 4000))
+                if re.search(re.escape(sym)
+                             + r'\s*(?:\(\s*[a-z]\s*\))?\s*[=\u2248]', text):
+                    bands.insert(1 if qstem and bands and bands[0] == qstem
+                                 else 0, seg)
+                    added += 1
+                    break
+            if added >= 2:
+                break
+        return bands
 
     # ---- rendering ----
 
@@ -311,28 +448,102 @@ class Sitting:
             for _ in range(4):
                 grew = False
                 for r in self.ink(page):
-                    if r.y1 > w_lo + 1 and r.y0 < w_hi - 1 and (
-                            r.y0 < w_lo - 0.5 or r.y1 > w_hi + 0.5):
+                    # A drawing may overflow the band and pull the window with
+                    # it — but only a drawing ANCHORED in the band: one that
+                    # starts inside may finish below (a tall diagram), one that
+                    # ends inside may begin above (the arrow over the marker).
+                    # Ink that merely brushes the window otherwise belongs to a
+                    # neighbouring part, and following it duplicated whole
+                    # blocks into two sibling crops.
+                    up = r.y1 > lo and r.y1 <= hi and r.y0 < w_lo - 0.5
+                    down = r.y0 >= lo and r.y0 < hi and r.y1 > w_hi + 0.5
+                    if up or down:
                         w_lo, w_hi = min(w_lo, r.y0), max(w_hi, r.y1)
                         grew = True
                 for (pg, y0, y1, x0, txt) in self.lines:
-                    if pg == page and y1 > w_lo - 1 and y0 < w_hi + 1 and (
-                            y0 < w_lo - 0.5 or y1 > w_hi + 0.5) and \
+                    # Text joins only ABOVE the band (a diagram's topmost
+                    # label); growing downward through text walks into the
+                    # next part's print.
+                    if pg == page and y0 < w_lo - 0.5 and y1 > w_lo - 14 and \
                             not self.furniture_line(page, y0, y1):
-                        w_lo, w_hi = min(w_lo, y0), max(w_hi, y1)
+                        w_lo = y0
                         grew = True
                 if not grew:
                     break
-            windows.append((page, max(Y_TOP, w_lo - 2), min(Y_FOOT, w_hi + 2)))
+            bottom = min(self.foot.get(page, Y_FOOT), w_hi + 2)
+            windows.append((page, max(Y_TOP, w_lo - 2), bottom))
         return windows
+
+    def _mask_frames(self, img, page, top, bot, band_hi=None):
+        """Paint the answer furniture white where the window could not avoid
+        it. A window's EXTENT never follows a furniture frame, but a tall
+        diagram beside one (the 2021 P2 sphere) can stretch the window across
+        the frame's rows — so the frame is erased pixel-row by pixel-row,
+        sparing the x-spans where kept ink or real text actually prints."""
+        self.ink(page)
+        frames = [f for f in self._furniture.get(page, [])
+                  if f.y1 > top + 1 and f.y0 < bot - 1]
+        # A neighbouring part's text row can sit under ink the band grew over
+        # (the sphere's bottom arc crosses the "(ii)" line) — those rows are
+        # erased the same way, sparing only the grown ink's own pixels.
+        if band_hi is not None:
+            frames += [pymupdf.Rect(X0, y0, X1, y1)
+                       for (pg, y0, y1, x0, txt) in self.lines
+                       if pg == page and y0 >= band_hi - 0.5
+                       and y1 > top + 1 and y0 < bot - 1]
+        frames += [pymupdf.Rect(X0, y0, X1, y1)
+                   for (pg, y0, y1, x0, txt) in self.dead
+                   if pg == page and y1 > top + 1 and y0 < bot - 1]
+        if not frames:
+            return img
+        keep = [r for r in self.ink(page)]
+        keep += [pymupdf.Rect(x0, y0, X1, y1)
+                 for (pg, y0, y1, x0, txt) in self.lines
+                 if pg == page and not self.furniture_line(page, y0, y1)
+                 and (band_hi is None or y0 < band_hi - 0.5)]
+        w, h = img.size
+        px = img.load()
+        for f in frames:
+            fy0 = max(0, _px(max(f.y0 - 1, top), top))
+            fy1 = min(h, _px(min(f.y1 + 1, bot), top))
+            fx0 = max(0, _px(f.x0 - 1, X0))
+            fx1 = min(w, _px(f.x1 + 1, X0))
+            for y in range(fy0, fy1):
+                page_y = top + y / SCALE
+                spans = [(max(fx0, _px(k.x0 - 1, X0)), min(fx1, _px(k.x1 + 1, X0)))
+                         for k in keep if k.y0 - 1 <= page_y <= k.y1 + 1]
+                x = fx0
+                for (kx0, kx1) in sorted(spans):
+                    for xx in range(x, max(x, kx0)):
+                        px[xx, y] = 255
+                    x = max(x, kx1)
+                for xx in range(x, fx1):
+                    px[xx, y] = 255
+        return img
 
     def render(self, bands):
         pieces = []
+        covered = {}
         for band in bands:
+            (_, _), (ep_, ey) = band
             for (page, top, bot) in self._content_windows(band):
+                # A window that overlaps what an earlier band already rendered
+                # is trimmed to the remainder — two bands whose growth met in
+                # the middle were printing the same block twice.
+                for (ct, cb) in covered.get(page, []):
+                    if top < cb and bot > ct:
+                        if top >= ct - 1:
+                            top = max(top, cb)
+                        else:
+                            bot = min(bot, ct)
+                if bot - top < 4:
+                    continue
+                covered.setdefault(page, []).append((top, bot))
                 clip = pymupdf.Rect(X0, top, X1, bot)
                 pix = self.doc[page].get_pixmap(clip=clip, dpi=DPI)
                 img = Image.open(io.BytesIO(pix.tobytes('png'))).convert('L')
+                band_hi = ey if page == ep_ else None
+                img = self._mask_frames(img, page, top, bot, band_hi)
                 img = trim_rows(img)
                 if img is not None:
                     pieces.append(img)
@@ -346,6 +557,13 @@ class Sitting:
             out.paste(p, (0, y))
             y += p.height + GAP
         return out
+
+
+ANON = object()
+
+
+def _px(v, origin):
+    return int(round((v - origin) * SCALE))
 
 
 def trim_rows(img):
