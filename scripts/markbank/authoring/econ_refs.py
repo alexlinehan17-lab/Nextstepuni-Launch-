@@ -88,6 +88,11 @@ CORRECTIONS = {
 # Listed so that a card the checker cannot place is a thing someone decided
 # about, not a thing nobody noticed. A NEW unplaceable card is reported.
 HAND_CHECKED = {
+    # 2021 HL backfill: four-word asks below refcheck's six-token floor, each
+    # verified by hand against the paper (pages 19, 31, 32).
+    'econ-2021-hl-q12-a-i',
+    'econ-2021-hl-q15-b-i',
+    'econ-2021-hl-q15-c-i',
     'econ-2021-hl-q12-a-ii-pos',      # paper asks for both sides in one sentence
     'econ-2021-hl-q12-a-ii-neg',
     'econ-2021-hl-q13-c-ii',          # paper: "Based on the figure you have calculated"

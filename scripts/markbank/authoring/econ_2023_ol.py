@@ -316,16 +316,19 @@ P.cards.append(card(
     'Complete the table below to show your understanding of the factors of production used in '
     'the production of Keogh’s Crisps. Some of the information has been completed for you.',
     '6 @ 4', 24,
-    [point('r-land-ex', 'POTATOES SALT OIL', 4,
-           'The Example cell for LAND — any one of the three.'),
-     point('r-labour', 'LABOUR', 4, 'The factor named in row 2, whose example is Workers.'),
-     point('r-labour-def', 'THE HUMAN EFFORT INVOLVED IN THE PRODUCTION OF A GOOD OR SERVICE.',
-           4, 'The Explanation cell for LABOUR.'),
-     point('r-capital-def', 'ANYTHING MADE BY HUMANS WHICH IS USED IN PRODUCTION.', 4,
-           'The Explanation cell for CAPITAL, whose example is Machinery.'),
-     point('r-enterprise', 'ENTERPRISE', 4,
-           'The factor named in row 4 — takes a risk with an idea in return for profit.'),
-     point('r-enterprise-ex', 'TOM KEOGH', 4, 'The Example cell for ENTERPRISE.')],
+    # One anyN row, not six point rows: six cells at 4 marks each is over the
+    # five-row structural cap for fixed cards, and the table IS a claim-six
+    # menu — each option one blank cell, in the scheme's own capitals.
+    [anyN('r-1', 'A completed cell of the table — all six', 24, 6, 4,
+          ['POTATOES SALT OIL',
+           'LABOUR',
+           'THE HUMAN EFFORT INVOLVED IN THE PRODUCTION OF A GOOD OR SERVICE.',
+           'ANYTHING MADE BY HUMANS WHICH IS USED IN PRODUCTION.',
+           'ENTERPRISE',
+           'TOM KEOGH'],
+          'The blank cells in order: the land example (any one of the three), '
+          'the labour row name and explanation, the capital explanation, and '
+          'the enterprise row name and example — 4 marks each.')],
     'The rows the paper leaves blank: the land example, the labour row’s name and '
     'explanation, the capital explanation, and the enterprise row’s name and example.',
     tariff_kind='fixed',

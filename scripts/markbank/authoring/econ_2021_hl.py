@@ -19,7 +19,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from econ_auto import Paper  # noqa: E402
-from econ_lib import anyN, block, card, defurnish, load, point, tidy  # noqa: E402
+from econ_lib import anyN, as_option, block, bullets, card, defurnish, load, point, tidy  # noqa: E402
 
 P = Paper(2021, 'higher')
 SCAFFOLD = ('Suggested responses', 'Possible responses')
@@ -290,5 +290,167 @@ P.menu('one social reason and one economic reason', 'econ-2021-hl-q16-b-ii-econo
        'An economic reason — any one', 'One reason, 5 marks.',
        ref='2021 HL Q16(b)(ii) — economic', claim=1, per=5,
        drop=SCAFFOLD, after='Economic reasons:')
+
+# ── Third pass: the definition-shaped and welded parts ──────────────────────
+# Each prints one tariff cell over one stated answer (or a short list of
+# alternatives), so these are point/anyN cards sliced with block() — the
+# extractor hands them back with the answer welded to the question, or loses
+# them to a page boundary, and there is nothing for menu() to claim.
+FULL = tidy(load(2021, 'higher'))
+
+P.cards.append(card(
+    'econ-2021-hl-q11-c-i', 2021, 'higher', 'economics-1-5',
+    'what-internal-economies-of-scale-are', '2021 HL Q11(c)(i)',
+    'Boeing and Embraer entered potential merger talks in 2019. If a merger were to occur '
+    'between Boeing and Embraer it is likely they would benefit from Internal Economies of '
+    'Scale. Define Internal Economies of Scale.',
+    '8', 8,
+    [point('r-1', as_option(block(FULL, 'Internal economies of scale refer to the decreases',
+                                  '(ii) Outline possible Internal Economies')), 8,
+           'The definition, 8 marks: falling average total cost as the firm’s own scale of '
+           'production grows.')],
+    '', tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2021-hl-q12-a-i', 2021, 'higher', 'economics-4-1', 'what-globalisation-is',
+    '2021 HL Q12(a)(i)',
+    'Explain the term globalisation.',
+    '1 @ 4', 4,
+    [anyN('r-1', 'A definition of globalisation — any one', 4, 1, 4,
+          [as_option(block(FULL, 'Globalisation is the process by which the world',
+                           'The term globalisation is generally')),
+           as_option(block(FULL, 'The term globalisation is generally used to describe',
+                           'Globalisation is ability to produce')),
+           as_option(block(FULL, 'Globalisation is ability to produce any good or service',
+                           '(ii) Outline two positive impacts'))],
+          'The scheme prints three alternative definitions; any one earns the 4.')],
+    ''))
+
+P.cards.append(card(
+    'econ-2021-hl-q13-a-ii', 2021, 'higher', 'economics-1-0', 'how-excess-demand-occurs',
+    '2021 HL Q13(a)(ii)',
+    'From your diagram above, explain how excess demand occurs.',
+    '3 @ 4', 12,
+    [anyN('r-1', 'How excess demand occurs — all three steps', 12, 3, 4,
+          [as_option(block(FULL, 'At the price of €500 there is more demand',
+                           'This indicates that the price charged')),
+           as_option(block(FULL, 'This indicates that the price charged in this too low',
+                           'By undercharging for the PS5')),
+           as_option(block(FULL, 'By undercharging for the PS5 it created additional demand',
+                           '(b) Technology retailers mislead'))],
+          'Three steps, 4 marks each: demand exceeds the fixed supply at €500, the low price '
+          'presses price up towards equilibrium, and the undercharging itself created the '
+          'excess demand.')],
+    'The diagram completion in (a)(i) carries its own 8 marks and is not this card.',
+    stem='The paper’s supply-and-demand diagram shows the PlayStation 5 market with the '
+         'retail price fixed at €500, below the equilibrium price P1, so quantity demanded '
+         'QX exceeds quantity supplied QE.'))
+
+P.cards.append(card(
+    'econ-2021-hl-q13-b-i', 2021, 'higher', 'economics-2-2',
+    'information-failure-as-market-failure', '2021 HL Q13(b)(i)',
+    'Explain why misinformation to consumers by technology retailers represents a market '
+    'failure in this industry.',
+    '2 @ 5', 10,
+    [anyN('r-1', 'Why it is a market failure — any two', 10, 2, 5,
+          bullets(block(FULL, '• Information failure is a form of market failure',
+                        'Note Market failure occurs')),
+          'Two points, 5 marks each, split 2 and 3.')],
+    '',
+    stem='Technology retailers mislead shoppers with Black Friday ‘deals’. A survey of '
+         '‘before and after’ pricing shows that many products are not discounted as claimed.'))
+
+P.cards.append(card(
+    'econ-2021-hl-q14-c-i', 2021, 'higher', 'economics-4-2',
+    'the-principle-of-comparative-advantage', '2021 HL Q14(c)(i)',
+    'Define the principle of comparative advantage.',
+    '3 + 3', 6,
+    [point('r-1', as_option(block(FULL, 'Comparative Advantage is the ability of a country',
+                                  '(ii) Continued capital investment')), 6,
+           'The scheme splits the 6 as 3 + 3: producing at a lower opportunity cost than '
+           'another country, and the specialisation that relative opportunity cost drives.')],
+    '', tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2021-hl-q15-b-i', 2021, 'higher', 'economics-3-0', 'what-a-recession-is',
+    '2021 HL Q15(b)(i)',
+    'Define the term recession.',
+    '4 + 4', 8,
+    [point('r-1', as_option(block(FULL, 'A recession refers to a period of negative economic '
+                                        'growth',
+                                  '(ii) Based upon the graph')), 8,
+           'The scheme splits the 8 as 4 + 4: negative economic growth, lasting at least two '
+           'quarters.')],
+    '', tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2021-hl-q15-b-iii-percap', 2021, 'higher', 'economics-3-0',
+    'why-per-capita-comparisons-matter', '2021 HL Q15(b)(iii)',
+    'With reference to GNI, why is it important to use per capita measures for comparisons '
+    'between countries?',
+    '1 @ 8', 8,
+    [anyN('r-1', 'Why per capita matters — either account', 8, 1, 8,
+          [as_option(block(FULL, 'GNI per capita is a more useful measure',
+                           ' or If GNI is compared')),
+           as_option(block(FULL, 'If GNI is compared on a nominal level',
+                           ' or Worked example'))],
+          'One answer, 8 marks, split 4 + 4. The scheme also accepts a worked numerical '
+          'example making the same point.')],
+    ''))
+
+P.cards.append(card(
+    'econ-2021-hl-q15-c-i', 2021, 'higher', 'economics-3-0', 'meaning-of-the-multiplier',
+    '2021 HL Q15(c)(i)',
+    'Explain the term multiplier.',
+    '8', 8,
+    [point('r-1', as_option(block(FULL, 'The multiplier effect means that any injection',
+                                  '(ii) Assume that MPM')), 8,
+           'The explanation, 8 marks: an injection raises National Income by more than '
+           'itself, and the example shows the scale.')],
+    'The multiplier calculation in (c)(ii) is not carded — the response is the worked '
+    'formula.', tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2021-hl-q16-a-ii-derived', 2021, 'higher', 'economics-2-1',
+    'derived-demand-for-labour', '2021 HL Q16(a)(ii)',
+    'The demand for labour is said to be a derived demand. Explain this statement in the '
+    'context of the aviation data above.',
+    '9', 9,
+    [point('r-1', as_option(block(FULL, 'The demand for labour in the aviation sector',
+                                  '(iii) Outline two negative implications')), 9,
+           'One explanation, 9 marks: demand for aviation workers depends on the demand for '
+           'flights — labour is demanded for what it produces, not for its own sake.')],
+    'The ids econ-2021-hl-q16-a-i and -a-ii are taken by cards whose citation econ_refs.py '
+    'corrects to Q16(c); this card is the paper’s actual Q16(a)(ii).',
+    tariff_kind='fixed',
+    stem='The paper’s chart shows passengers handled by the main Irish airports in Quarter 2 '
+         'of each year: a steady rise to just over 10 million in 2019, then a collapse to '
+         'virtually zero in Q2 2020.',
+    figure_key='economics-2021-HL-paper-p34-art'))
+
+
+# Q13(a)(i): the completed excess-demand diagram. The scheme itemises eight
+# creditable labelled points at 1 mark each; each option below is a verbatim
+# contiguous slice of that run, so every one traces. The paper's blank axes
+# ride as the card's figure.
+_LBL = block(BODY, 'correctly labelled points = 8 marks ', '(ii) From your diagram')
+_opts = []
+for _cut in ('Price', 'Quantity', 'QE', 'QX', 'D1', 'S1', 'P = €500',
+             'Excess Demand from QE to QX'):
+    _at = _LBL.index(_cut)
+    _opts.append(_LBL[_at:_at + len(_cut)])
+P.cards.append(card(
+    'econ-2021-hl-q13-a-i', 2021, 'higher', 'economics-1-0',
+    'excess-demand-diagram-labels', '2021 HL Q13(a)(i)',
+    'Complete the diagram below to indicate how excess demand is occurring in this '
+    'market. (*Note: The retail price for a PlayStation 5 Gaming Console was €500)',
+    '8 @ 1', 8,
+    [anyN('r-1', 'A correctly labelled point on the diagram — all eight', 8, 8, 1,
+          _opts,
+          'One mark for each correctly labelled point: the axes, the two '
+          'quantities, the curves, the price line, and the excess-demand gap.')],
+    'The scheme prints the completed diagram and pays 1 mark per labelled point.',
+    tariff_kind='fixed',
+    figure_key='economics-2021-HL-paper-p22-art'))
 
 P.emit()

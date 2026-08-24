@@ -204,13 +204,28 @@ P.cards.append(card(
            6, 'The definition, 6 marks.')],
     '', section='A', tariff_kind='fixed'))
 
-P.menu('As landlords leave the market it reduces the supply', 'econ-2023-hl-sa-q7-a',
-       'economics-1-1', 'landlords-leaving-and-the-rental-market',
-       'Explain what happens in the rental market as landlords leave it: to supply, and to '
-       'the equilibrium price.',
-       'A step in the explanation — both of these', 'Two steps, 3 marks each.',
-       ref='2023 HL Section A Q7(a)', claim=2, per=3,
-       drop=('Possible responses', 'Suggested responses',
-             'Price S Pe1 Pe D Qe1 Qe Quantity of rental properties'))
+# Q7(a), repriced. The scheme prints TWO ⟨3⟩ cells for this part: one beside
+# the S1 curve of its model diagram (y=163 on the page) and one beside the
+# explanation bullets (y=354) — 3 for the drawn shift, 3 for the reasoning.
+# The old card claimed "2 @ 3" over the explanation alone, which paid the
+# diagram's marks to prose; and its question was a paraphrase econ_refcheck
+# could not place in the paper. Now the explanation at its printed 3, worded
+# from the paper, on the sa-q1-a pattern (diagram half left uncarded).
+P.cards.append(card(
+    'econ-2023-hl-sa-q7-a', 2023, 'higher', 'economics-1-1',
+    'landlords-leaving-and-the-rental-market', '2023 HL Section A Q7(a)',
+    'Explain how this development will alter the rental market equilibrium position.',
+    '1 @ 3', 3,
+    [point('r-1',
+           as_option(block(BODY, 'As landlords leave the market it reduces the supply',
+                           '(b) The introduction of the vacant property tax')
+                     ).replace(' • ', ' '),
+           3, 'The explanation, 3 marks. The part pays 6: the other 3 are for the '
+              'shift drawn on the supplied diagram, which is not carded.')],
+    'The scheme prints the explanation as three bullets under one ⟨3⟩ cell — a '
+    'sequence, not alternatives — so it is carded as the one contiguous run.',
+    section='A', tariff_kind='fixed',
+    stem='Landlords are leaving the Irish housing market in their thousands, blaming '
+         'excessive taxation, rent control and constantly changing laws.'))
 
 P.emit()
