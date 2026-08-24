@@ -963,6 +963,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
 
   const levelLabel = card.level === 'higher' ? 'HIGHER LEVEL' : 'ORDINARY LEVEL';
   const figure = 'figure' in card ? card.figure : undefined;
+  const questionFigure = 'questionFigure' in card ? card.questionFigure : undefined;
   const labelKey = card.kind === 'diagram' ? card.labelKey : undefined;
 
   const banked = results.reduce((n, r) => n + r.marksClaimed, 0);
@@ -1216,11 +1217,27 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
               </span>
             </div>
 
-            {card.stem && (
+            {card.stem && !questionFigure && (
               <p style={{ margin: '10px 0 0', font: `400 14.5px/1.6 ${SANS}`, color: INK_2 }}>{card.stem}</p>
             )}
 
-            <QuestionText text={card.questionText} />
+            {questionFigure && (
+              /* The SEC's own print of the question — setup, notation and
+                 diagram exactly as the paper sets them. It replaces the text
+                 stem AND the retyped ask: re-telling either alongside the
+                 print could only duplicate or contradict it. */
+              <figure style={{ margin: '14px 0 0' }}>
+                <img
+                  src={figureUrl(questionFigure.src)} alt={questionFigure.alt}
+                  style={{ maxWidth: '100%', maxHeight: 720, objectFit: 'contain', display: 'block' }}
+                />
+                <figcaption style={{ marginTop: 6, font: `400 10.5px/1.4 ${SANS}`, color: LABEL }}>
+                  {questionFigure.attribution}
+                </figcaption>
+              </figure>
+            )}
+
+            {!questionFigure && <QuestionText text={card.questionText} />}
 
             {figure && (revealed || !figure.solution) && (
               /* The crop sits directly on the sheet — no third box competing

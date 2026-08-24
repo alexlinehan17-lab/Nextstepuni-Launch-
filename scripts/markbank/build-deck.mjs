@@ -563,6 +563,20 @@ for (const c of cards) {
     labelKey = lettered ? c.labelKey : null;
   }
 
+  /* The QUESTION-side crop: the SEC's own print of the ask and its setup,
+   * shown before the reveal. Unlike an answer figure it may legitimately be
+   * shared context across sibling cards, so it skips the one-crop-one-card
+   * rule; and it must never be a solution crop, which would print the answer
+   * in the question area. */
+  let questionFigure = null;
+  if (c.questionFigureKey) {
+    const rec = figureRecord(c.questionFigureKey);
+    if (rec.error) { dropped.push(`${c.id}: question figure — ${rec.error}`); continue; }
+    if (rec.solution) { dropped.push(`${c.id}: question figure "${c.questionFigureKey}" is a solution crop`); continue; }
+    questionFigure = { candId: rec.candId, src: rec.src, srcHash: rec.srcHash,
+      alt: rec.alt, lettersVisible: [], attribution: rec.attribution };
+  }
+
   seenId.add(c.id);
   const rows = c.rows.map(r => {
     const parts = [`id: ${q(r.id)}`, `kind: ${q(r.kind)}`, `verbatim: ${q(r.verbatim)}`,
@@ -594,7 +608,7 @@ for (const c of cards) {
     tariffModel: ${JSON.stringify(c.tariffModel)}, totalMarks: ${c.totalMarks},
     rows: [
 ${rows}
-    ],${figure ? `\n    figure: ${JSON.stringify(figure, null, 6).replace(/\n/g, '\n    ')},` : ''}${labelKey ? `\n    labelKey: ${JSON.stringify(labelKey)},` : ''}
+    ],${questionFigure ? `\n    questionFigure: ${JSON.stringify(questionFigure, null, 6).replace(/\n/g, '\n    ')},` : ''}${figure ? `\n    figure: ${JSON.stringify(figure, null, 6).replace(/\n/g, '\n    ')},` : ''}${labelKey ? `\n    labelKey: ${JSON.stringify(labelKey)},` : ''}
   } as SecCard,` });
 }
 
