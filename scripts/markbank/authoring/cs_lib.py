@@ -805,12 +805,19 @@ class Author:
                         gs = [(None, None, nm)]
                         multi = False
                         self._forced = (n, per)
+        group_note = ''
         if self._forced is None and self._forced_each is None and not multi and len(gs) > 1:
             merged = [it for _, _, items in gs for it in items]
-            names = [n for n, _, _ in gs if n]
+            # The grouping is the SCHEME's structure, so it belongs on the
+            # scheme side of the card — as the merged row's contextNote,
+            # revealed with the marking points. As a stem it printed answer
+            # headings in the question area: "The scheme groups its answer
+            # under: South;" told the student the answer before they tried.
+            names = [n for n, _, _ in gs
+                     if n and len(n) < 80 and not re.match(r'^[_\W]+$', n)]
             gs = [(None, None, merged)]
-            stem = stem or ('The scheme groups its answer under: ' + '; '.join(names)
-                            if names else stem)
+            if names:
+                group_note = 'The scheme groups its answer under: ' + '; '.join(names)
         rows, parts_note, row_names, trimmed = [], [], [], []
         for gi, (name, _, items) in enumerate(gs):
             if only is not None and gi not in only:
@@ -881,7 +888,7 @@ class Author:
                               f'the {MAX_OPTIONS_SHOWN} a row may show')
             label = (name or qtext)[:120]
             rows.append(anyN(f'{cid}-r{len(rows) + 1}', label, n * per, n, per,
-                             options, name or ''))
+                             options, name or group_note))
             row_names.append(name)
             parts_note.append(f'{n} x {per}')
         if len(rows) == 1 and rows[0].get('group', {}).get('claimMax') == 1 \

@@ -162,8 +162,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q2-b",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q2-b.png",
-          "srcHash": "5e2dd5ef721c07951051174d2813b687",
-          "alt": "The question as printed on the paper — (𝑥+ 4) is a factor of 𝑓(𝑥) = 𝑥ଷ+ 𝑞𝑥ଶ−22𝑥+ 56, where 𝑥∈ℝ and 𝑞∈ℤ. (b) Show that 𝑞= −5, and find the three roots of 𝑓(𝑥). Show: Roots = ( , , )",
+          "srcHash": "ebd835a73335babf4a8ab0dd3e2ea1c4",
+          "alt": "The question as printed on the paper — (𝑥+ 4) is a factor of 𝑓(𝑥) = 𝑥ଷ+ 𝑞𝑥ଶ−22𝑥+ 56, where 𝑥∈ℝ and 𝑞∈ℤ. (b) Show that 𝑞= −5, and find the three roots of 𝑓(𝑥).",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
     },
@@ -362,7 +362,7 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p1-q5-a-i", topicId: "maths-5-2", conceptId: "value-value-value",
+    id: "maths-2021-hl-p1-q5-a-i", topicId: "maths-2-3", conceptId: "value-value-value",
     section: "B", questionRef: "2021 HL Paper 1 Q5(a)(i)",
     questionText: "Find the value of a, the value of b, and the value of c",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
@@ -972,7 +972,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q9-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q9-a-iii.png",
-          "srcHash": "fbac5cd0cb8b859537727931a9f66c10",
+          "srcHash": "0d45d5a4cf73f3e02888c902fec1d00e",
           "alt": "The question as printed on the paper — A cup of coffee is freshly brewed to 95° C. (a) The temperature, 𝑇, in degrees centigrade, of the coffee as it cools is given by the formula 𝑇(𝑡) = 𝐴𝑒ି଴·଴଼ଵ௧+ 20 where 𝐴 is constant and 𝑡 is time measured in minutes from",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
@@ -1082,7 +1082,7 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p1-q10-a-i", topicId: "maths-5-2", conceptId: "value-when-tank-empties",
+    id: "maths-2021-hl-p1-q10-a-i", topicId: "maths-3-4", conceptId: "value-when-tank-empties",
     section: "B", questionRef: "2021 HL Paper 1 Q10(a)(i)",
     questionText: "Find the value of t when the tank empties",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -1202,7 +1202,7 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p1-q10-b-i", topicId: "maths-5-2", conceptId: "order-model-reasonable-must-satisfy-number",
+    id: "maths-2021-hl-p1-q10-b-i", topicId: "maths-3-4", conceptId: "order-model-reasonable-must-satisfy-number",
     section: "B", questionRef: "2021 HL Paper 1 Q10(b)(i)",
     questionText: "In order for the model to be reasonable it must satisfy a number of conditions. One condition is written below: • The radius of the trees is increasing year on year. Show that r(t) satisfies this condition",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -1232,7 +1232,7 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p1-q10-b-ii", topicId: "maths-5-2", conceptId: "explain-what-means-context-growth-tree",
+    id: "maths-2021-hl-p1-q10-b-ii", topicId: "maths-3-4", conceptId: "explain-what-means-context-growth-tree",
     section: "B", questionRef: "2021 HL Paper 1 Q10(b)(ii)",
     questionText: "Show that I(6) < I(5) and explain what this means in the context of the growth of a tree",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
@@ -1242,7 +1242,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q10-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q10-b-ii.png",
-          "srcHash": "4b47c898d8fae9a6d408262c6f2b0c5d",
+          "srcHash": "f32294fa8680af108b9e8d3807528609",
           "alt": "The question as printed on the paper — (b) Trees of the same age, size and type are growing at the same rate in a forest. It is possible to measure the radius of the trunk of a tree at the end of each growing season. The increase in the radius of the trunks o",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
@@ -1272,7 +1272,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q10-b-iii",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q10-b-iii.png",
-          "srcHash": "e4dcab8f03cd0e960ea8ea3b5ea16e61",
+          "srcHash": "19990c46347f93ec5c86ae3a64eaaa30",
           "alt": "The question as printed on the paper — (b) Trees of the same age, size and type are growing at the same rate in a forest. It is possible to measure the radius of the trunk of a tree at the end of each growing season. The increase in the radius of the trunks o",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
@@ -2623,7 +2623,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-HL-ask-p1-q1-c-ii",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q1-c-ii.png",
           "srcHash": "3e2f45668fe42e0dd149ad4359e392d4",
-          "alt": "The question as printed on the paper — Find the remainder when 3𝑥ଶ+ 2𝑥+ 5 is divided by 𝑥+ 1. (ii) That is, find the value of 𝑐 when 3𝑥ଶ+ 2𝑥+ 5 is written in the form 3𝑥ଶ+ 2𝑥+ 5 = (𝑥+ 1)(𝑎𝑥+ 𝑏) + 𝑐 where 𝑎, 𝑏, 𝑐∈ℤ. Remainder, 𝑐=____________ 5 Leaving Certific",
+          "alt": "The question as printed on the paper — Find the remainder when 3𝑥ଶ+ 2𝑥+ 5 is divided by 𝑥+ 1. (ii) That is, find the value of 𝑐 when 3𝑥ଶ+ 2𝑥+ 5 is written in the form 3𝑥ଶ+ 2𝑥+ 5 = (𝑥+ 1)(𝑎𝑥+ 𝑏) + 𝑐 where 𝑎, 𝑏, 𝑐∈ℤ. 5 Leaving Certificate 2022",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -2833,7 +2833,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-HL-ask-p1-q3-b",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q3-b.png",
           "srcHash": "a34506f31ad7b024ce8a6ed523e3f7a4",
-          "alt": "The question as printed on the paper — ൫√3 −𝑖൯ (b) Use de Moivre’s Theorem to find the value of 𝑎 and the value of 𝑏. 𝑎=____________ 𝑏=____________ 9 Leaving Certificate 2022",
+          "alt": "The question as printed on the paper — ൫√3 −𝑖൯ (b) Use de Moivre’s Theorem to find the value of 𝑎 and the value of 𝑏. 9 Leaving Certificate 2022",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -2983,7 +2983,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2022-HL-ask-p1-q5-b-i",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q5-b-i.png",
           "srcHash": "405ca152c9fd43407d066aad695661f5",
-          "alt": "The question as printed on the paper — 𝑓(𝑥) = 2𝑥ଷ−21𝑥ଶ+ 40𝑥+ 63, where 𝑥∈ℝ. (b) 𝑥+ 1 is a factor of 𝑓(𝑥). Find the three values of 𝑥 for which 𝑓(𝑥) = 0. (i) 𝑥= ____________ , ____________ , or ____________ 12 Leaving Certificate 2022",
+          "alt": "The question as printed on the paper — 𝑓(𝑥) = 2𝑥ଷ−21𝑥ଶ+ 40𝑥+ 63, where 𝑥∈ℝ. (b) 𝑥+ 1 is a factor of 𝑓(𝑥). Find the three values of 𝑥 for which 𝑓(𝑥) = 0. (i) 12 Leaving Certificate 2022",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -3662,7 +3662,7 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p1-q10-a", topicId: "maths-5-1", conceptId: "proportion-digits-recalled-correctly-after-hours",
+    id: "maths-2022-hl-p1-q10-a", topicId: "maths-4-1", conceptId: "proportion-digits-recalled-correctly-after-hours",
     section: "B", questionRef: "2022 HL Paper 1 Q10(a)",
     questionText: "Find the proportion of the digits recalled correctly after 3 hours, according to this model. (a) Give your answer correct to 2 decimal places",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -3692,7 +3692,7 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p1-q10-b", topicId: "maths-5-1", conceptId: "after-how-many-hours-would-exactly",
+    id: "maths-2022-hl-p1-q10-b", topicId: "maths-4-1", conceptId: "after-how-many-hours-would-exactly",
     section: "B", questionRef: "2022 HL Paper 1 Q10(b)",
     questionText: "After how many hours would exactly 55% of the digits be recalled correctly, according to (b) this model?Give your answer correct to 2 decimal places",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
@@ -3812,7 +3812,7 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p1-q10-e-ii", topicId: "maths-5-1", conceptId: "student-got-guitar-exam-after-two",
+    id: "maths-2022-hl-p1-q10-e-ii", topicId: "maths-4-1", conceptId: "student-got-guitar-exam-after-two",
     section: "B", questionRef: "2022 HL Paper 1 Q10(e)(ii)",
     questionText: "A student got 80% on a guitar exam. After two years of not playing the guitar, the student got 47% on the same exam",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -4272,8 +4272,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q7-a",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q7-a.png",
-          "srcHash": "e719d58596194b917fba4494d62de245",
-          "alt": "The question as printed on the paper — A company makes and sells candles of different shapes and sizes. A candle in the shape of a cylinder has a diameter of 10 cm and a volume of 450𝜋 cm3. (a) Work out the height of this candle. 450𝜋 cm3",
+          "srcHash": "ad87f477ccd303cd9e317a9c5bbe162b",
+          "alt": "The question as printed on the paper — A company makes and sells candles of different shapes and sizes. A candle in the shape of a cylinder has a diameter of 10 cm and a volume of 450𝜋 cm3. (a) Work out the height of this candle.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -4482,7 +4482,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q8-a-iv",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q8-a-iv.png",
-          "srcHash": "352785159a2e7e22d49ef166977a8bd7",
+          "srcHash": "86735a2009afcbc4d040e91eb4899e01",
           "alt": "The question as printed on the paper — (a) Jena is researching fuel consumption in cars. She finds the following data for the number of miles per gallon (m/g) for eight different cars, labelled A to H, when driving in the city and on the motorway: Miles per g",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
@@ -4542,7 +4542,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q8-d-i",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q8-d-i.png",
-          "srcHash": "c2785526a7af5ee88a6a4f6693fc2d91",
+          "srcHash": "8ced1cb8da92a81baa2640361817425f",
           "alt": "The question as printed on the paper — (d) John bought a car a number of years ago. The table below gives an estimate of the probability that each of the following three events happens to John’s car in the next year. Event Probability 0∙095 Head gasket blows ",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
@@ -4572,7 +4572,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q8-d-ii",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q8-d-ii.png",
-          "srcHash": "4bc69caf0fd7a0da88a970a9c6b9bd3d",
+          "srcHash": "a15b1ef27843b394ce15038898794570",
           "alt": "The question as printed on the paper — (d) John bought a car a number of years ago. The table below gives an estimate of the probability that each of the following three events happens to John’s car in the next year. Event Probability 0∙095 Head gasket blows ",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
@@ -5022,8 +5022,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q1-c",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q1-c.png",
-          "srcHash": "15432f15da6049ae64641138d4d03140",
-          "alt": "The question as printed on the paper — 𝑥ଶ−𝑝𝑥+ 1 is a factor of 𝑥ଷ−2𝑥−3𝑟, where 𝑝, 𝑟∈ℝ and 𝑝൏0. (c) Find the value of 𝑝 and the value of 𝑟. 𝑝= ____________ and 𝑟= ____________",
+          "srcHash": "904a0f6567cb5defceebf1f183c1ce30",
+          "alt": "The question as printed on the paper — 𝑥ଶ−𝑝𝑥+ 1 is a factor of 𝑥ଷ−2𝑥−3𝑟, where 𝑝, 𝑟∈ℝ and 𝑝൏0. (c) Find the value of 𝑝 and the value of 𝑟.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -5052,8 +5052,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q2-a",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q2-a.png",
-          "srcHash": "a3d528e6377041310dac0abda3414b1c",
-          "alt": "The question as printed on the paper — 𝑓ሺ𝑥ሻ= 𝑥ଶ+ 𝑏𝑥+ 𝑐 , where 𝑏, 𝑐∈ℝ. (a) 𝑓ሺ𝑥ሻ has a local minimum point at ሺ3, −1ሻ. Find the value of 𝑏 and the value of 𝑐. 𝑏= ____________ and 𝑐= ____________",
+          "srcHash": "a8f53ebc21662a43f757fc6f638622ae",
+          "alt": "The question as printed on the paper — 𝑓ሺ𝑥ሻ= 𝑥ଶ+ 𝑏𝑥+ 𝑐 , where 𝑏, 𝑐∈ℝ. (a) 𝑓ሺ𝑥ሻ has a local minimum point at ሺ3, −1ሻ. Find the value of 𝑏 and the value of 𝑐.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -5352,7 +5352,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q5-c-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q5-c-ii.png",
-          "srcHash": "e7cb49a944e91c3b684b6b50ccf09b88",
+          "srcHash": "73aec4188112bd05442e72ea8b8ee0ae",
           "alt": "The question as printed on the paper — The diagram below shows three sets, 𝐴, 𝐵, and 𝐶, and two functions, 𝑓 and 𝑔, where (c) 𝑓: 𝐴→𝐵 and 𝑔: 𝐵→𝐶. #𝐴= #𝐶= 4 and #𝐵= 3. 𝑔 𝑓 𝑥 1  𝑤 2  𝑦 3 𝑧 4  𝐶 𝐴 𝐵 Explain why 𝑔: 𝐵→𝐶 is injective but not surjective (that is, ",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
@@ -5791,7 +5791,7 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Higher Level — © State Examinations Commission.",
-    id: "maths-2023-hl-p1-q9-b-iii", topicId: "maths-3-1", conceptId: "ava-realises-relationship-between",
+    id: "maths-2023-hl-p1-q9-b-iii", topicId: "maths-2-3", conceptId: "ava-realises-relationship-between",
     section: "B", questionRef: "2023 HL Paper 1 Q9(b)(iii)",
     questionText: "Ava realises that the relationship between x and y is y= 12 x",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 5, 10, 15, 20)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
@@ -5860,8 +5860,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q9-c-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q9-c-ii.png",
-          "srcHash": "a9872050d1380e9d0ffe80e5e5a3e9eb",
-          "alt": "The question as printed on the paper — The area of the triangle formed by the 𝑥-axis, the 𝑦-axis, and the tangent (ii) ଵଶ ଶସ 𝑦= − ௣మ 𝑥+ ௣ is always 𝑘 square units, where 𝑘∈ℕ is a constant. Work out the value of 𝑘. ଵଶ ଶସ 𝑦 𝑦= − ௣మ 𝑥+ ௣ 𝑥 𝑘= ____________",
+          "srcHash": "3e93bb5746cdc9b1ccf3c2187a951b53",
+          "alt": "The question as printed on the paper — The area of the triangle formed by the 𝑥-axis, the 𝑦-axis, and the tangent (ii) ଵଶ ଶସ 𝑦= − ௣మ 𝑥+ ௣ is always 𝑘 square units, where 𝑘∈ℕ is a constant. Work out the value of 𝑘. ଵଶ ଶସ 𝑦 𝑦= − ௣మ 𝑥+ ௣ 𝑥",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -6191,7 +6191,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-HL-ask-p2-q3-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q3-b-ii.png",
           "srcHash": "8a2557d43c5803cbf1c7a1dc53c72567",
-          "alt": "The question as printed on the paper — 𝐴(−1, 𝑘) and 𝐵(5, 𝑙) are two points, where 𝑘, 𝑙∈ℚ. (b) ௞ା௟ The perpendicular bisector of ሾ𝐴𝐵ሿ is: (ii) 3𝑥+ 2𝑦−14 = 0 Find the value of 𝑙 and the value of 𝑘. 𝑙= ________________ 𝑘= ________________ 9 Leaving Certificate 2",
+          "alt": "The question as printed on the paper — 𝐴(−1, 𝑘) and 𝐵(5, 𝑙) are two points, where 𝑘, 𝑙∈ℚ. (b) ௞ା௟ The perpendicular bisector of ሾ𝐴𝐵ሿ is: (ii) 3𝑥+ 2𝑦−14 = 0 Find the value of 𝑙 and the value of 𝑘. 9 Leaving Certificate 2023",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -6220,8 +6220,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q4-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q4-ii.png",
-          "srcHash": "c52c6da84f328985945b8038938aa3ed",
-          "alt": "The question as printed on the paper — Write down the centre and radius of the circle 𝑐. (i) Give your answer in terms of ℎ, where appropriate. Centre = ( , ) Radius = ____________ The perpendicular distance from the line 𝑥−4𝑦+ 7 = 0 to the centre of the circ",
+          "srcHash": "9ce54f05f98affa3dc6a297899a70e86",
+          "alt": "The question as printed on the paper — Write down the centre and radius of the circle 𝑐. (i) Give your answer in terms of ℎ, where appropriate. The perpendicular distance from the line 𝑥−4𝑦+ 7 = 0 to the centre of the circle 𝑐 (ii) is 5 units. Work out the tw",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -6250,8 +6250,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q4-a-i",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q4-a-i.png",
-          "srcHash": "7f19c47a7a6d0a0e8c15ad2f33ad5cec",
-          "alt": "The question as printed on the paper — The circle 𝑐 has equation: (a) (𝑥−ℎ)ଶ+ (𝑦+ 3)ଶ= 12 where ℎ∈ℝ. Write down the centre and radius of the circle 𝑐. (i) Give your answer in terms of ℎ, where appropriate. Centre = ( , ) Radius = ____________",
+          "srcHash": "5cc461dca0d7b0e79a198dc01de20b33",
+          "alt": "The question as printed on the paper — The circle 𝑐 has equation: (a) (𝑥−ℎ)ଶ+ (𝑦+ 3)ଶ= 12 where ℎ∈ℝ. Write down the centre and radius of the circle 𝑐. (i) Give your answer in terms of ℎ, where appropriate.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -6370,8 +6370,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q6-a",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q6-a.png",
-          "srcHash": "8fc4144b8873d7c42f33e669d17bec96",
-          "alt": "The question as printed on the paper — (a) State whether the following statement is true or false: Two angles are vertically opposite if, and only if, they are equal in size. Justify your answer. Answer (true or false): Justification:",
+          "srcHash": "ae818d175c3a1e229f3d73deb7b4fa4f",
+          "alt": "The question as printed on the paper — (a) State whether the following statement is true or false: Two angles are vertically opposite if, and only if, they are equal in size. Justify your answer.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -6730,7 +6730,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q9-a-i",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q9-a-i.png",
-          "srcHash": "54e1cdad924f39f684c1311c96b5f8c8",
+          "srcHash": "05f8e9f9fadd84e9f3dc890641821e15",
           "alt": "The question as printed on the paper — (a) First, she looks at two different tilings: one using identical squares and another using identical regular hexagons. (Note: a regular hexagon can be split into 6 congruent equilateral triangles.) Tiling with squares ",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
@@ -7271,7 +7271,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-ask-p1-q3-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q3-b-ii.png",
           "srcHash": "65cbb55bb89d4def23ad4331883afe30",
-          "alt": "The question as printed on the paper — (b) The function 𝑓𝑓 is defined for 𝑥𝑥∈ℝ as: 𝑓𝑓(𝑥𝑥) = 2𝑥𝑥3 −9𝑥𝑥2 + 5𝑥𝑥−11 (ii) Find the 𝑥𝑥 co-ordinate of the point of inflection of 𝑓𝑓. 𝑥𝑥= _________ 8 Leaving Certificate 2024",
+          "alt": "The question as printed on the paper — (b) The function 𝑓𝑓 is defined for 𝑥𝑥∈ℝ as: 𝑓𝑓(𝑥𝑥) = 2𝑥𝑥3 −9𝑥𝑥2 + 5𝑥𝑥−11 (ii) Find the 𝑥𝑥 co-ordinate of the point of inflection of 𝑓𝑓. 8 Leaving Certificate 2024",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -7650,7 +7650,7 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p1-q7-b-ii", topicId: "maths-5-2", conceptId: "work-out-amount-money-fiadh-her",
+    id: "maths-2024-hl-p1-q7-b-ii", topicId: "maths-3-3", conceptId: "work-out-amount-money-fiadh-her",
     section: "B", questionRef: "2024 HL Paper 1 Q7(b)(ii)",
     questionText: "Work out the amount of money that Fiadh and her partner borrowed for their mortgage. Give your answer correct to the nearest euro",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 8, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
@@ -7781,7 +7781,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-ask-p1-q8-b",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q8-b.png",
           "srcHash": "4f3e6109e34c1da8e323e06059cc8de5",
-          "alt": "The question as printed on the paper — (b) Work out the maximum and minimum daily sales of scarves, according to 𝑆𝑆(𝑡𝑡). You do not need to use differentiation. Maximum = ________________ Minimum = ________________ A different function, 𝐶𝐶(𝑡𝑡), can also be us",
+          "alt": "The question as printed on the paper — (b) Work out the maximum and minimum daily sales of scarves, according to 𝑆𝑆(𝑡𝑡). You do not need to use differentiation. A different function, 𝐶𝐶(𝑡𝑡), can also be used to model the daily sales of scarves, where: 𝐶𝐶(𝑡𝑡) ",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -7840,7 +7840,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q8-d",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q8-d.png",
-          "srcHash": "3400a81489e5cfb8aa2576fc54fd49a5",
+          "srcHash": "932ef357075352f3e9419b61a54ff122",
           "alt": "The question as printed on the paper — (d) The graphs, J, K, and L, of three functions are shown below (not to scale). Graph J Graph K Graph L 𝑡𝑡 𝑡𝑡 𝑡𝑡 One of these graphs shows the function 𝐶𝐶(𝑡𝑡) over a number of years, where 𝐶𝐶(𝑡𝑡) = 𝑆𝑆(𝑡𝑡) −2∙4 + 0∙03𝑡𝑡. ",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
@@ -7900,7 +7900,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q9-a",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q9-a.png",
-          "srcHash": "04591fbd761572856123c252cc7087be",
+          "srcHash": "644b8836c50547b8768befc6b40f930e",
           "alt": "The question as printed on the paper — A sphere has a radius of 𝑅𝑅 units. The part of the sphere that is cut off by a flat surface is called a “cap”, and has a volume of: 𝐶𝐶= 𝜋𝜋 𝑘𝑘2 (3𝑅𝑅−𝑘𝑘) 3 Here, 𝐶𝐶 is the volume of the cap and 𝑘𝑘 is the height of the cap,",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
@@ -8140,7 +8140,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q10-c-ii",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q10-c-ii.png",
-          "srcHash": "80b4fe5712bd423d167b671d8a564455",
+          "srcHash": "1c497c66a3262d0f8cce409590214e91",
           "alt": "The question as printed on the paper — A company grows and sells plants. (c) The logo for the company is shown on the co-ordinate diagram below. The logo is the region enclosed by three curves, defined by the following functions 𝑐𝑐, 𝑠𝑠, and 𝑘𝑘 : 𝑐𝑐(𝑥𝑥) = 𝑥𝑥2 ",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
@@ -8530,8 +8530,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q5-a-i",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q5-a-i.png",
-          "srcHash": "eefdec2cf885550b7acd65bd19ef6bc8",
-          "alt": "The question as printed on the paper — (a) The circle 𝑠𝑠 has equation: 𝑥𝑥2 + 𝑦𝑦2 + 4𝑥𝑥−6𝑦𝑦+ 5 = 0 (i) Write down the centre and radius of the circle 𝑠𝑠. Centre = ( , ) Radius = ____________",
+          "srcHash": "fecee22e7c63b932722a85bfc4cd2373",
+          "alt": "The question as printed on the paper — (a) The circle 𝑠𝑠 has equation: 𝑥𝑥2 + 𝑦𝑦2 + 4𝑥𝑥−6𝑦𝑦+ 5 = 0 (i) Write down the centre and radius of the circle 𝑠𝑠.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -8860,7 +8860,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q8-a",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q8-a.png",
-          "srcHash": "80e4985afbd2d27f555cdc9c4eb75454",
+          "srcHash": "e3fefa59a54bf1267cebdfd08000380e",
           "alt": "The question as printed on the paper — Tommy makes ornaments from metal and glass. (a) He makes an open metal cylinder with a height of 15 cm and a radius of 5 cm. The net of this cylinder is a rectangle. Find the dimensions of this rectangle. Give your answe",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
@@ -9730,8 +9730,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q5-a",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q5-a.png",
-          "srcHash": "ea4efb488ea9fc96440d36ca9b5c7e4e",
-          "alt": "The question as printed on the paper — (a) The function 𝑔𝑔(𝑥𝑥) is defined for 𝑥𝑥∈ℝ by: 𝑔𝑔(𝑥𝑥) = 5𝑥𝑥2 + 20𝑥𝑥−12 Write 𝑔𝑔(𝑥𝑥) in the following form, where 𝑎𝑎, ℎ, 𝑘𝑘∈ℤ are constants: 𝑔𝑔(𝑥𝑥) = 𝑎𝑎(𝑥𝑥+ ℎ)2 + 𝑘𝑘 𝑔𝑔(𝑥𝑥) = ____________________________________",
+          "srcHash": "b414c0608e1ef716069cb35181011917",
+          "alt": "The question as printed on the paper — (a) The function 𝑔𝑔(𝑥𝑥) is defined for 𝑥𝑥∈ℝ by: 𝑔𝑔(𝑥𝑥) = 5𝑥𝑥2 + 20𝑥𝑥−12 Write 𝑔𝑔(𝑥𝑥) in the following form, where 𝑎𝑎, ℎ, 𝑘𝑘∈ℤ are constants: 𝑔𝑔(𝑥𝑥) = 𝑎𝑎(𝑥𝑥+ ℎ)2 + 𝑘𝑘",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission"
     },
@@ -9790,7 +9790,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q5-c",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q5-c.png",
-          "srcHash": "db9af4aac00d1798d8ce7c434e251b76",
+          "srcHash": "3228838e91c0d41c59930f15f8b001e0",
           "alt": "The question as printed on the paper — (c) Below is a pair of simultaneous equations in 𝑥𝑥 and 𝑦𝑦, where 𝑛𝑛∈ℝ is a constant. One of the solutions to this pair of equations is on the 𝒚𝒚-axis. Use this information to find the value of 𝑛𝑛. 2𝑥𝑥−𝑦𝑦 = 7 𝑥𝑥2 + 𝑦𝑦+ 2",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission"
@@ -9880,8 +9880,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q6-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q6-b-ii.png",
-          "srcHash": "a6043eb095c41f7527f0fa5b64f1a4b4",
-          "alt": "The question as printed on the paper — (b) ℎ(𝑥𝑥) is the following function of 𝑥𝑥, where 𝑚𝑚 and 𝑟𝑟 are positive constants and 𝑥𝑥∈ℝ : ℎ(𝑥𝑥) = 6𝑚𝑚 𝑥𝑥2 −4𝑟𝑟 𝑥𝑥+ 54𝑚𝑚 (ii) Use the fact that 𝑟𝑟= 9𝑚𝑚 to find the value of this solution. 𝑥𝑥= ___________ Section B Cont",
+          "srcHash": "66e1898ffd666e27ebadfc47431a42cb",
+          "alt": "The question as printed on the paper — (b) ℎ(𝑥𝑥) is the following function of 𝑥𝑥, where 𝑚𝑚 and 𝑟𝑟 are positive constants and 𝑥𝑥∈ℝ : ℎ(𝑥𝑥) = 6𝑚𝑚 𝑥𝑥2 −4𝑟𝑟 𝑥𝑥+ 54𝑚𝑚 (ii) Use the fact that 𝑟𝑟= 9𝑚𝑚 to find the value of this solution. Section B Contexts and Applica",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission"
     },
@@ -10210,7 +10210,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q8-e-iii",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q8-e-iii.png",
-          "srcHash": "95cdd5c24cf87fe345554d34629f72a9",
+          "srcHash": "31aa1bc556014699e854705b106417bc",
           "alt": "The question as printed on the paper — (e) Jacob is going to kayak 𝐹𝐹 𝐵𝐵 𝑥𝑥 km from 𝑆𝑆 to 𝐵𝐵, and then run 𝐴𝐴 8 km from 𝐵𝐵 to 𝐹𝐹. (i) Find an expression in 𝑥𝑥 for 𝑇𝑇, the total time, in hours, that it will take Jacob to get from 𝑆𝑆 to 𝐵𝐵 to 𝐹𝐹. (ii) Jacob kno",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission"
@@ -10570,8 +10570,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2025-HL-ask-p1-q10-e-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q10-e-ii.png",
-          "srcHash": "acf47d8c9ae8eed1a84ac64a7126e1d5",
-          "alt": "The question as printed on the paper — 4 (e) 𝐻𝐻(𝑛𝑛) is the total number of dots in Pattern 𝑛𝑛 of the sequence, for 𝑛𝑛∈ℕ. (ii) Using this fact, prove the identity on the grid below. Use proof by induction. Prove that: 𝐻𝐻(𝑛𝑛) = (𝑛𝑛+ 1)2 for all values of 𝑛𝑛∈ℕ Y",
+          "srcHash": "5ef12b654330dd94ae8388187aebe9ab",
+          "alt": "The question as printed on the paper — 4 (e) 𝐻𝐻(𝑛𝑛) is the total number of dots in Pattern 𝑛𝑛 of the sequence, for 𝑛𝑛∈ℕ. (ii) Using this fact, prove the identity on the grid below. Use proof by induction. You may use this page for extra work. Label any extra ",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission"
     },
@@ -10601,7 +10601,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-ask-p2-q1-a",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q1-a.png",
           "srcHash": "de1c2893670a2e2487937a2378619183",
-          "alt": "The question as printed on the paper — (a) 𝑝𝑝∈ℝ is a constant. The point (𝑝𝑝, 5) lies on the line 3𝑥𝑥−2𝑦𝑦+ 28 = 0. Find the value of 𝑝𝑝. 𝑝𝑝= ____________ 1",
+          "alt": "The question as printed on the paper — (a) 𝑝𝑝∈ℝ is a constant. The point (𝑝𝑝, 5) lies on the line 3𝑥𝑥−2𝑦𝑦+ 28 = 0. Find the value of 𝑝𝑝. 1",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission"
     },
@@ -10690,8 +10690,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q2-a-i",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q2-a-i.png",
-          "srcHash": "4d5d8ccf28c40f89a6c5ebea3cf018ed",
-          "alt": "The question as printed on the paper — A circle 𝑠𝑠 has the equation (𝑥𝑥−4)2 + (𝑦𝑦+ 2)2 = 45. (a) (i) Write down the centre and radius of the circle 𝑠𝑠. Centre = ( , ) Radius = ____________",
+          "srcHash": "a772be2a388410a566c59102b361ab43",
+          "alt": "The question as printed on the paper — A circle 𝑠𝑠 has the equation (𝑥𝑥−4)2 + (𝑦𝑦+ 2)2 = 45. (a) (i) Write down the centre and radius of the circle 𝑠𝑠.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission"
     },
@@ -10721,7 +10721,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-ask-p2-q2-b",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q2-b.png",
           "srcHash": "aec9cf9a8ef9d238f9a937c27cc1f4d2",
-          "alt": "The question as printed on the paper — (b) The circle 𝑡𝑡 has the following equation, where 𝑘𝑘∈ℝ is a constant: 𝑥𝑥2 + 𝑦𝑦2 + 28𝑥𝑥−46𝑦𝑦+ 𝑘𝑘= 0 The horizontal line 𝑦𝑦= 𝑘𝑘 is a tangent to the circle 𝑡𝑡. Find the two possible values of 𝑘𝑘. 𝑘𝑘= ____________ or _____",
+          "alt": "The question as printed on the paper — (b) The circle 𝑡𝑡 has the following equation, where 𝑘𝑘∈ℝ is a constant: 𝑥𝑥2 + 𝑦𝑦2 + 28𝑥𝑥−46𝑦𝑦+ 𝑘𝑘= 0 The horizontal line 𝑦𝑦= 𝑘𝑘 is a tangent to the circle 𝑡𝑡. Find the two possible values of 𝑘𝑘. 7 Leaving Certificate 202",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission"
     },
@@ -10810,7 +10810,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q3-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q3-a-iii.png",
-          "srcHash": "714c410eb51f46e4247d7d042444fce9",
+          "srcHash": "27977c72e218dd44a63ab39023c119ed",
           "alt": "The question as printed on the paper — (a) 240 people were surveyed about which of three countries, 𝐴𝐴, 𝐵𝐵, or 𝐶𝐶, they had been to. The Venn diagram below shows the number of people who had been to each combination of these countries, as well as those who ha",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission"
@@ -11051,7 +11051,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-ask-p2-q6-b",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q6-b.png",
           "srcHash": "64013cf5fdbda01c6f2b0e441103cccb",
-          "alt": "The question as printed on the paper — (b) 𝑓𝑓(𝑥𝑥) is the following function, where 𝑥𝑥∈ℝ is in radians: 𝑓𝑓(𝑥𝑥) = |4 sin 𝑥𝑥| −1 Part of the graph of 𝑦𝑦= 𝑓𝑓(𝑥𝑥) is shown below. Write down the period and range of 𝑓𝑓(𝑥𝑥). 𝑦𝑦 𝑥𝑥 Range = [ , ] Period = ____________ ",
+          "alt": "The question as printed on the paper — (b) 𝑓𝑓(𝑥𝑥) is the following function, where 𝑥𝑥∈ℝ is in radians: 𝑓𝑓(𝑥𝑥) = |4 sin 𝑥𝑥| −1 Part of the graph of 𝑦𝑦= 𝑓𝑓(𝑥𝑥) is shown below. Write down the period and range of 𝑓𝑓(𝑥𝑥). 𝑦𝑦 𝑥𝑥 14 Leaving Certificate 2025",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission"
     },
@@ -11290,7 +11290,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q8-a-i",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q8-a-i.png",
-          "srcHash": "f0ba90b7b6709970e92e726de2afe8ba",
+          "srcHash": "66e2c19858aa59bb302aed1e0e4ab1e1",
           "alt": "The question as printed on the paper — (a) A roof is in the shape of a square-based pyramid, 𝑃𝑃 as shown. The square base, 𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴, has sides of length 6 m. 11 m The diagonals of 𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴 meet at the point 𝑂𝑂. The top of the pyramid, 𝑃𝑃, is directly above 𝑂𝑂",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission"
@@ -11650,7 +11650,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q10-c-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q10-c-ii.png",
-          "srcHash": "30a4bbf55279d9e9dc1daa797975e968",
+          "srcHash": "057ffb4651c9a3475ba18d0175a32ba4",
           "alt": "The question as printed on the paper — A particular test is used to measure how well students around the world can do maths problems. (c) For country Y, researchers carried out a hypothesis test at the 5% level of significance to see if the population mean sc",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission"
@@ -11710,7 +11710,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q10-e",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q10-e.png",
-          "srcHash": "353d467be5255fab7c6aa3e23735c692",
+          "srcHash": "ef2c5ac2dd0455884012d73bc8c8483c",
           "alt": "The question as printed on the paper — A particular test is used to measure how well students around the world can do maths problems. (e) For one of the questions on the test, students are given a mark of 0, 1, 2, or 3. The proportion of students who get each",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission"

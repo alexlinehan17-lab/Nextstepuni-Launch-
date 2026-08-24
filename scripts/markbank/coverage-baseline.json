@@ -61,7 +61,7 @@
  },
  "construction-studies": {
   "cards": 505,
-  "contentHash": "09d7c2a09e999f45",
+  "contentHash": "aee22d98a30e07f9",
   "coveragePct": 81.8,
   "covered": 419,
   "excluded": 0,
@@ -106,7 +106,7 @@
  },
  "maths": {
   "cards": 788,
-  "contentHash": "27bae37ff5d30e3d",
+  "contentHash": "d0ee45d97f426336",
   "coveragePct": 80.4,
   "covered": 795,
   "excluded": 0,

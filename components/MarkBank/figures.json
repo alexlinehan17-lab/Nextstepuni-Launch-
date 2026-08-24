@@ -22329,8 +22329,8 @@
  },
  "maths-2021-HL-ask-p1-q2-b": {
   "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q2-b.png",
-  "md5": "5e2dd5ef721c07951051174d2813b687",
-  "alt": "The question as printed on the paper — (𝑥+ 4) is a factor of 𝑓(𝑥) = 𝑥ଷ+ 𝑞𝑥ଶ−22𝑥+ 56, where 𝑥∈ℝ and 𝑞∈ℤ. (b) Show that 𝑞= −5, and find the three roots of 𝑓(𝑥). Show: Roots = ( , , )",
+  "md5": "ebd835a73335babf4a8ab0dd3e2ea1c4",
+  "alt": "The question as printed on the paper — (𝑥+ 4) is a factor of 𝑓(𝑥) = 𝑥ଷ+ 𝑞𝑥ଶ−22𝑥+ 56, where 𝑥∈ℝ and 𝑞∈ℤ. (b) Show that 𝑞= −5, and find the three roots of 𝑓(𝑥).",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2021 HL Paper 1 Q2(b)",
@@ -22626,7 +22626,7 @@
  },
  "maths-2021-HL-ask-p1-q9-a-iii": {
   "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q9-a-iii.png",
-  "md5": "fbac5cd0cb8b859537727931a9f66c10",
+  "md5": "0d45d5a4cf73f3e02888c902fec1d00e",
   "alt": "The question as printed on the paper — A cup of coffee is freshly brewed to 95° C. (a) The temperature, 𝑇, in degrees centigrade, of the coffee as it cools is given by the formula 𝑇(𝑡) = 𝐴𝑒ି଴·଴଼ଵ௧+ 20 where 𝐴 is constant and 𝑡 is time measured in minutes from",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -22725,7 +22725,7 @@
  },
  "maths-2021-HL-ask-p1-q10-b-ii": {
   "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q10-b-ii.png",
-  "md5": "4b47c898d8fae9a6d408262c6f2b0c5d",
+  "md5": "f32294fa8680af108b9e8d3807528609",
   "alt": "The question as printed on the paper — (b) Trees of the same age, size and type are growing at the same rate in a forest. It is possible to measure the radius of the trunk of a tree at the end of each growing season. The increase in the radius of the trunks o",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -22736,7 +22736,7 @@
  },
  "maths-2021-HL-ask-p1-q10-b-iii": {
   "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q10-b-iii.png",
-  "md5": "e4dcab8f03cd0e960ea8ea3b5ea16e61",
+  "md5": "19990c46347f93ec5c86ae3a64eaaa30",
   "alt": "The question as printed on the paper — (b) Trees of the same age, size and type are growing at the same rate in a forest. It is possible to measure the radius of the trunk of a tree at the end of each growing season. The increase in the radius of the trunks o",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -23298,7 +23298,7 @@
  "maths-2021-OL-ask-p1-q3-b": {
   "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q3-b.png",
   "md5": "cfa49b294b33da1637823c2403ebda41",
-  "alt": "The question as printed on the paper — The equation 𝑥ଶ+ 𝑎𝑥+ 𝑏= 0, where 𝑎, 𝑏∈ℤ, has solutions 𝑥= 5 and 𝑥= −2. (b) Find the value of 𝑎 and the value of 𝑏. 𝑎= 𝑏= 8 Leaving Certificate, 2021",
+  "alt": "The question as printed on the paper — The equation 𝑥ଶ+ 𝑎𝑥+ 𝑏= 0, where 𝑎, 𝑏∈ℤ, has solutions 𝑥= 5 and 𝑥= −2. (b) Find the value of 𝑎 and the value of 𝑏. 8 Leaving Certificate, 2021",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2021 OL Paper 1 Q3(b)",
@@ -23375,7 +23375,7 @@
  "maths-2021-OL-ask-p1-q6": {
   "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q6.png",
   "md5": "03123969666192961554b02d7aba30b9",
-  "alt": "The question as printed on the paper — The first three terms of an arithmetic sequence are −5, 𝑘, 1. (a) Find 𝑘 and hence or otherwise show that the common difference is 3. (i) 𝑘 = Common difference: Find 𝑇ଵ଴, the 10th term in the sequence. (ii) (iii) Find wh",
+  "alt": "The question as printed on the paper — The first three terms of an arithmetic sequence are −5, 𝑘, 1. (a) Find 𝑘 and hence or otherwise show that the common difference is 3. (i) Find 𝑇ଵ଴, the 10th term in the sequence. (ii) (iii) Find which term in the sequenc",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2021 OL Paper 1 Q6",
@@ -23385,8 +23385,8 @@
  },
  "maths-2021-OL-ask-p1-q6-a-i": {
   "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q6-a-i.png",
-  "md5": "e4778d5be92cb0324c588cfce752301e",
-  "alt": "The question as printed on the paper — The first three terms of an arithmetic sequence are −5, 𝑘, 1. (a) Find 𝑘 and hence or otherwise show that the common difference is 3. (i) 𝑘 = Common difference:",
+  "md5": "6848d9c835a05693669148ddaa9eb765",
+  "alt": "The question as printed on the paper — The first three terms of an arithmetic sequence are −5, 𝑘, 1. (a) Find 𝑘 and hence or otherwise show that the common difference is 3. (i)",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2021 OL Paper 1 Q6(a)(i)",
@@ -23473,7 +23473,7 @@
  },
  "maths-2021-OL-ask-p1-q8-a": {
   "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q8-a.png",
-  "md5": "83dda1560add3f718b5683876ef107cf",
+  "md5": "98273e2c085a494f74a2d6079a22bdbe",
   "alt": "The question as printed on the paper — A square sheet of cardboard, of side 10 units, is used to make an open box. Squares of side 𝑥 units, where 𝑥∈ℝ, are removed from each corner of the cardboard and it is then folded along the dotted lines, as shown in the ",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -23583,7 +23583,7 @@
  },
  "maths-2021-OL-ask-p1-q9-b-i": {
   "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q9-b-i.png",
-  "md5": "2dc146c6e0371bc430294cddf12594f7",
+  "md5": "4b09efe4376862ddaed62d9175c57e7b",
   "alt": "The question as printed on the paper — (b) The first two patterns in a sequence of patterns of crosses are shown below. pattern 1 pattern 2 The number of crosses in pattern 𝑛 is 𝑇௡. The general term describing 𝑇௡ can be written in the form: ௡మ 𝑇௡= ଶ +𝑏𝑛+ 𝑐, w",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -23594,7 +23594,7 @@
  },
  "maths-2021-OL-ask-p1-q9-b-ii": {
   "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q9-b-ii.png",
-  "md5": "f41ab200fbd3277c4ae6405117f12315",
+  "md5": "e62f87407be3c2eba7a6e6a11219a2dc",
   "alt": "The question as printed on the paper — (b) The first two patterns in a sequence of patterns of crosses are shown below. pattern 1 pattern 2 The number of crosses in pattern 𝑛 is 𝑇௡. The general term describing 𝑇௡ can be written in the form: ௡మ 𝑇௡= ଶ +𝑏𝑛+ 𝑐, w",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -23781,7 +23781,7 @@
  },
  "maths-2021-OL-ask-p2-q4-a-iv": {
   "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q4-a-iv.png",
-  "md5": "82bed5869cbc20b7c7d0a2407e6ea3c2",
+  "md5": "c731e4472ed8ceb5644a074d3482e626",
   "alt": "The question as printed on the paper — The co-ordinate diagram below shows two points A and B. 𝑦 5 4 3 A 2 1 𝑥 -3 -2 -1 1 2 3 4 5 6 7 8 -1 -2 -3 -4 B -5 -6 (a) (i) Write down the co-ordinates of A and of B. A = ( , ) B = ( , ) (ii) Find the co-ordinates of th",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -23792,7 +23792,7 @@
  },
  "maths-2021-OL-ask-p2-q5-a": {
   "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q5-a.png",
-  "md5": "36c515d11ff01a7596e2fbca00a69807",
+  "md5": "1b334ea119b46ab8ebfc929edbb88a52",
   "alt": "The question as printed on the paper — (a) The heights of a given population are normally distributed. 95% of the population fall within the height range [147∙9 cm ↔ 178∙7 cm]. Using the empirical rule, find the mean and the standard deviation of the distribu",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -23869,7 +23869,7 @@
  },
  "maths-2021-OL-ask-p2-q7-a-iii": {
   "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q7-a-iii.png",
-  "md5": "08d835bdc8d136162aabbcfa2ac1a5b3",
+  "md5": "0be37abacebc70fb9a5426e754202f96",
   "alt": "The question as printed on the paper — (a) The following table shows the age profiles of all of the people in Ireland, aged between 15 and 65, who subscribed to an online streaming platform. 15 −25 25 −35 35 −45 45 −55 55 −65 Age Group Percentage (%) 24 27 25",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -23880,7 +23880,7 @@
  },
  "maths-2021-OL-ask-p2-q7-a-iv": {
   "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q7-a-iv.png",
-  "md5": "58f4538ab1e42ebbd705ff320bc50609",
+  "md5": "627bb0a3af9e996f8e33268db02782ee",
   "alt": "The question as printed on the paper — (a) The following table shows the age profiles of all of the people in Ireland, aged between 15 and 65, who subscribed to an online streaming platform. 15 −25 25 −35 35 −45 45 −55 55 −65 Age Group Percentage (%) 24 27 25",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -23935,8 +23935,8 @@
  },
  "maths-2021-OL-ask-p2-q8-b-i": {
   "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q8-b-i.png",
-  "md5": "baa6172f68c5e74df70a667f9aea93c2",
-  "alt": "The question as printed on the paper — Calculate the volume , in cm3, of a hemisphere of radius 21 cm. (b) (i) Give your answer terms of 𝜋. 21 cm",
+  "md5": "e91d44476c299b9588cc5eccbc3164f9",
+  "alt": "The question as printed on the paper — Calculate the volume , in cm3, of a hemisphere of radius 21 cm. (b) (i) Give your answer terms of 𝜋.",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2021 OL Paper 2 Q8(b)(i)",
@@ -23947,7 +23947,7 @@
  "maths-2021-OL-ask-p2-q8-b-ii": {
   "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q8-b-ii.png",
   "md5": "29d47a4128f8560eb67aad4397e17318",
-  "alt": "The question as printed on the paper — A buoy on the lake is in the shape of a hemisphere of radius 21 cm surmounted by a cone. (ii) The volume of the cone is equal to the volume of the hemisphere. Find ℎ, the total height of the buoy. ℎ 21 cm 20 Leaving Cert",
+  "alt": "The question as printed on the paper — A buoy on the lake is in the shape of a hemisphere of radius 21 cm surmounted by a cone. (ii) The volume of the cone is equal to the volume of the hemisphere. Find ℎ, the total height of the buoy. 20 Leaving Certificate,",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2021 OL Paper 2 Q8(b)(ii)",
@@ -24068,7 +24068,7 @@
  "maths-2022-HL-ask-p1-q1-c-ii": {
   "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q1-c-ii.png",
   "md5": "3e2f45668fe42e0dd149ad4359e392d4",
-  "alt": "The question as printed on the paper — Find the remainder when 3𝑥ଶ+ 2𝑥+ 5 is divided by 𝑥+ 1. (ii) That is, find the value of 𝑐 when 3𝑥ଶ+ 2𝑥+ 5 is written in the form 3𝑥ଶ+ 2𝑥+ 5 = (𝑥+ 1)(𝑎𝑥+ 𝑏) + 𝑐 where 𝑎, 𝑏, 𝑐∈ℤ. Remainder, 𝑐=____________ 5 Leaving Certific",
+  "alt": "The question as printed on the paper — Find the remainder when 3𝑥ଶ+ 2𝑥+ 5 is divided by 𝑥+ 1. (ii) That is, find the value of 𝑐 when 3𝑥ଶ+ 2𝑥+ 5 is written in the form 3𝑥ଶ+ 2𝑥+ 5 = (𝑥+ 1)(𝑎𝑥+ 𝑏) + 𝑐 where 𝑎, 𝑏, 𝑐∈ℤ. 5 Leaving Certificate 2022",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2022 HL Paper 1 Q1(c)(ii)",
@@ -24145,7 +24145,7 @@
  "maths-2022-HL-ask-p1-q3-b": {
   "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q3-b.png",
   "md5": "a34506f31ad7b024ce8a6ed523e3f7a4",
-  "alt": "The question as printed on the paper — ൫√3 −𝑖൯ (b) Use de Moivre’s Theorem to find the value of 𝑎 and the value of 𝑏. 𝑎=____________ 𝑏=____________ 9 Leaving Certificate 2022",
+  "alt": "The question as printed on the paper — ൫√3 −𝑖൯ (b) Use de Moivre’s Theorem to find the value of 𝑎 and the value of 𝑏. 9 Leaving Certificate 2022",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2022 HL Paper 1 Q3(b)",
@@ -24200,7 +24200,7 @@
  "maths-2022-HL-ask-p1-q5-b-i": {
   "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q5-b-i.png",
   "md5": "405ca152c9fd43407d066aad695661f5",
-  "alt": "The question as printed on the paper — 𝑓(𝑥) = 2𝑥ଷ−21𝑥ଶ+ 40𝑥+ 63, where 𝑥∈ℝ. (b) 𝑥+ 1 is a factor of 𝑓(𝑥). Find the three values of 𝑥 for which 𝑓(𝑥) = 0. (i) 𝑥= ____________ , ____________ , or ____________ 12 Leaving Certificate 2022",
+  "alt": "The question as printed on the paper — 𝑓(𝑥) = 2𝑥ଷ−21𝑥ଶ+ 40𝑥+ 63, where 𝑥∈ℝ. (b) 𝑥+ 1 is a factor of 𝑓(𝑥). Find the three values of 𝑥 for which 𝑓(𝑥) = 0. (i) 12 Leaving Certificate 2022",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2022 HL Paper 1 Q5(b)(i)",
@@ -24672,8 +24672,8 @@
  },
  "maths-2022-HL-ask-p2-q7-a": {
   "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q7-a.png",
-  "md5": "e719d58596194b917fba4494d62de245",
-  "alt": "The question as printed on the paper — A company makes and sells candles of different shapes and sizes. A candle in the shape of a cylinder has a diameter of 10 cm and a volume of 450𝜋 cm3. (a) Work out the height of this candle. 450𝜋 cm3",
+  "md5": "ad87f477ccd303cd9e317a9c5bbe162b",
+  "alt": "The question as printed on the paper — A company makes and sells candles of different shapes and sizes. A candle in the shape of a cylinder has a diameter of 10 cm and a volume of 450𝜋 cm3. (a) Work out the height of this candle.",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2022 HL Paper 2 Q7(a)",
@@ -24760,7 +24760,7 @@
  },
  "maths-2022-HL-ask-p2-q8-a-iv": {
   "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q8-a-iv.png",
-  "md5": "352785159a2e7e22d49ef166977a8bd7",
+  "md5": "86735a2009afcbc4d040e91eb4899e01",
   "alt": "The question as printed on the paper — (a) Jena is researching fuel consumption in cars. She finds the following data for the number of miles per gallon (m/g) for eight different cars, labelled A to H, when driving in the city and on the motorway: Miles per g",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -24782,7 +24782,7 @@
  },
  "maths-2022-HL-ask-p2-q8-d-i": {
   "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q8-d-i.png",
-  "md5": "c2785526a7af5ee88a6a4f6693fc2d91",
+  "md5": "8ced1cb8da92a81baa2640361817425f",
   "alt": "The question as printed on the paper — (d) John bought a car a number of years ago. The table below gives an estimate of the probability that each of the following three events happens to John’s car in the next year. Event Probability 0∙095 Head gasket blows ",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -24793,7 +24793,7 @@
  },
  "maths-2022-HL-ask-p2-q8-d-ii": {
   "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q8-d-ii.png",
-  "md5": "4bc69caf0fd7a0da88a970a9c6b9bd3d",
+  "md5": "a15b1ef27843b394ce15038898794570",
   "alt": "The question as printed on the paper — (d) John bought a car a number of years ago. The table below gives an estimate of the probability that each of the following three events happens to John’s car in the next year. Event Probability 0∙095 Head gasket blows ",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -24947,8 +24947,8 @@
  },
  "maths-2022-OL-ask-p1-q1-c": {
   "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q1-c.png",
-  "md5": "bef409a31dd09b014b52bb7bced9f474",
-  "alt": "The question as printed on the paper — The complex number 𝑧ଵ is shown on the Argand diagram below. Im 4 3 2 1 Re -6 -5 -4 -3 -2 -1 1 2 3 4 5 -1 -2 -3 𝑧ଵ -4 Write 𝑧ଶ−𝑧ଷ in the form 𝑎+ 𝑏𝑖, where 𝑎, 𝑏∈ℝ, 𝑖ଶ= −1, and hence find |𝑧ଶ−𝑧ଷ|. (c) 𝑧ଶ−𝑧ଷ= ______________ ",
+  "md5": "319640dcbea811b7fca1727f7260238b",
+  "alt": "The question as printed on the paper — The complex number 𝑧ଵ is shown on the Argand diagram below. Im 4 3 2 1 Re -6 -5 -4 -3 -2 -1 1 2 3 4 5 -1 -2 -3 𝑧ଵ -4 Write 𝑧ଶ−𝑧ଷ in the form 𝑎+ 𝑏𝑖, where 𝑎, 𝑏∈ℝ, 𝑖ଶ= −1, and hence find |𝑧ଶ−𝑧ଷ|. (c)",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2022 OL Paper 1 Q1(c)",
@@ -24958,8 +24958,8 @@
  },
  "maths-2022-OL-ask-p1-q1-d": {
   "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q1-d.png",
-  "md5": "4710dd3015bc70b2a2689a2752a0dbcd",
-  "alt": "The question as printed on the paper — The complex number 𝑧ଵ is shown on the Argand diagram below. Im 4 3 2 1 Re -6 -5 -4 -3 -2 -1 1 2 3 4 5 -1 -2 -3 𝑧ଵ -4 Investigate if 𝑧ଷ= 4 −2𝑖 is a solution of the equation 𝑧ଶ+ 2𝑖𝑧−7𝑖= 0. (d) Conclusion: _________________",
+  "md5": "14d2417c18ec193b3e9a957665cf698d",
+  "alt": "The question as printed on the paper — The complex number 𝑧ଵ is shown on the Argand diagram below. Im 4 3 2 1 Re -6 -5 -4 -3 -2 -1 1 2 3 4 5 -1 -2 -3 𝑧ଵ -4 Investigate if 𝑧ଷ= 4 −2𝑖 is a solution of the equation 𝑧ଶ+ 2𝑖𝑧−7𝑖= 0. (d)",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2022 OL Paper 1 Q1(d)",
@@ -25035,7 +25035,7 @@
  },
  "maths-2022-OL-ask-p1-q4-b-ii": {
   "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q4-b-ii.png",
-  "md5": "0312557adca2755091e48e07f684f8a9",
+  "md5": "c962318fd0a0ba40cebaa043b1eb19b5",
   "alt": "The question as printed on the paper — The graph of the function 𝑦= 𝑢(𝑥) is shown below, for 0 ≤𝑥≤10, 𝑥∈ℝ. (b) 𝑦 3 2 𝑦= 𝑢(𝑥) 1 𝑥 2 4 6 8 10 -1 -2 -3 𝑢ᇱ(𝑥) is the derivative of 𝑢(𝑥). On the diagram above, draw the tangent to 𝑢(𝑥) at the point (4, 2) and use th",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -25090,8 +25090,8 @@
  },
  "maths-2022-OL-ask-p1-q6-b": {
   "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q6-b.png",
-  "md5": "b204bcf6434e9243fd8e5449036f33ef",
-  "alt": "The question as printed on the paper — The 𝑛 th term of an arithmetic sequence is given by the following expression, for 𝑛∈ℕ: 𝑇௡= −254 + (𝑛−1)(4) Find the smallest value of 𝑛∈ℕ for which (b) −254 + (𝑛−1)(4) ൐0 Answer: 𝑛= ___________ ௡",
+  "md5": "c5dade283075c66aade71ec955b7f097",
+  "alt": "The question as printed on the paper — The 𝑛 th term of an arithmetic sequence is given by the following expression, for 𝑛∈ℕ: 𝑇௡= −254 + (𝑛−1)(4) Find the smallest value of 𝑛∈ℕ for which (b) −254 + (𝑛−1)(4) ൐0 ௡",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2022 OL Paper 1 Q6(b)",
@@ -25101,7 +25101,7 @@
  },
  "maths-2022-OL-ask-p1-q6-c": {
   "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q6-c.png",
-  "md5": "c6c3e6450e99bc1677e5475d42c98843",
+  "md5": "f9f5b64e19c0dc83453aad83041f1acf",
   "alt": "The question as printed on the paper — The 𝑛 th term of an arithmetic sequence is given by the following expression, for 𝑛∈ℕ: 𝑇௡= −254 + (𝑛−1)(4) ଶ ሾ2(−254) + 4𝑛−4ሿ. The sum of the first 𝑛 terms of this sequence is given by 𝑆௡= (c) Solve the following equatio",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -25244,7 +25244,7 @@
  },
  "maths-2022-OL-ask-p1-q8-b-iii": {
   "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q8-b-iii.png",
-  "md5": "00bb3abdce1563675fceb6bdffdaadfd",
+  "md5": "5b6d667ee2dcd9d2f1bacaae8feea734",
   "alt": "The question as printed on the paper — (b) If a solid is made up of faces with straight edges, then the following identity is often true: 𝐶−𝐸+ 𝐹= 2 𝐶 is the number of corners, where: 𝐸 is the number of edges, and 𝐹 is the number of faces. (iii) The surface of",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -25531,7 +25531,7 @@
  "maths-2022-OL-ask-p2-q4-c": {
   "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p2-q4-c.png",
   "md5": "133de561952e34284a433ab94b57dcb8",
-  "alt": "The question as printed on the paper — (c) The scores of six people on this test were as follows: 104, 82, 94, 113, 98, 105 Find the range and the standard deviation of these numbers. Give the standard deviation correct to 1 decimal place. Range = ___________",
+  "alt": "The question as printed on the paper — (c) The scores of six people on this test were as follows: 104, 82, 94, 113, 98, 105 Find the range and the standard deviation of these numbers. Give the standard deviation correct to 1 decimal place. 11 Leaving Certific",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2022 OL Paper 2 Q4(c)",
@@ -25772,7 +25772,7 @@
  },
  "maths-2022-OL-ask-p2-q9-a": {
   "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p2-q9-a.png",
-  "md5": "0aed6890a5466c3d0298909d18921ac2",
+  "md5": "51e1da6ce66d45317e8741f5b8949c28",
   "alt": "The question as printed on the paper — Seán has built a shed. The diagrams below show the dimensions of Seán’s shed. The shed is in the shape of a prism. Its front face is in the shape of a triangle on top of a rectangle. Its highest point is directly above t",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -25827,7 +25827,7 @@
  },
  "maths-2022-OL-ask-p2-q10-a": {
   "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p2-q10-a.png",
-  "md5": "2033372785f0feea4fd4a6fd59d679f6",
+  "md5": "76a2de1204c647866c9fb1c1a459a38b",
   "alt": "The question as printed on the paper — A survey was carried out to investigate the amount and type of exercise that adults in Ireland are taking in 2022. This survey was carried out on a sample of adults in Ireland. (a) Write down one advantage and one disadv",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -25860,7 +25860,7 @@
  },
  "maths-2022-OL-ask-p2-q10-b-iv": {
   "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p2-q10-b-iv.png",
-  "md5": "7fe58768072597c28db5cf9d3a7dde0f",
+  "md5": "8bf1748f0b61bea8f8aacdf80bb8ad5d",
   "alt": "The question as printed on the paper — (iv) According to the 2019 Irish Sport Monitor Report, 65% of the adults in Ireland walked for recreation. Carry out a Hypothesis Test, at the 5% level of significance, to find out if this figure of 65% has changed in 20",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -25926,8 +25926,8 @@
  },
  "maths-2023-HL-ask-p1-q1-c": {
   "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q1-c.png",
-  "md5": "15432f15da6049ae64641138d4d03140",
-  "alt": "The question as printed on the paper — 𝑥ଶ−𝑝𝑥+ 1 is a factor of 𝑥ଷ−2𝑥−3𝑟, where 𝑝, 𝑟∈ℝ and 𝑝൏0. (c) Find the value of 𝑝 and the value of 𝑟. 𝑝= ____________ and 𝑟= ____________",
+  "md5": "904a0f6567cb5defceebf1f183c1ce30",
+  "alt": "The question as printed on the paper — 𝑥ଶ−𝑝𝑥+ 1 is a factor of 𝑥ଷ−2𝑥−3𝑟, where 𝑝, 𝑟∈ℝ and 𝑝൏0. (c) Find the value of 𝑝 and the value of 𝑟.",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2023 HL Paper 1 Q1(c)",
@@ -25937,8 +25937,8 @@
  },
  "maths-2023-HL-ask-p1-q2-a": {
   "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q2-a.png",
-  "md5": "a3d528e6377041310dac0abda3414b1c",
-  "alt": "The question as printed on the paper — 𝑓ሺ𝑥ሻ= 𝑥ଶ+ 𝑏𝑥+ 𝑐 , where 𝑏, 𝑐∈ℝ. (a) 𝑓ሺ𝑥ሻ has a local minimum point at ሺ3, −1ሻ. Find the value of 𝑏 and the value of 𝑐. 𝑏= ____________ and 𝑐= ____________",
+  "md5": "a8f53ebc21662a43f757fc6f638622ae",
+  "alt": "The question as printed on the paper — 𝑓ሺ𝑥ሻ= 𝑥ଶ+ 𝑏𝑥+ 𝑐 , where 𝑏, 𝑐∈ℝ. (a) 𝑓ሺ𝑥ሻ has a local minimum point at ሺ3, −1ሻ. Find the value of 𝑏 and the value of 𝑐.",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2023 HL Paper 1 Q2(a)",
@@ -26058,7 +26058,7 @@
  },
  "maths-2023-HL-ask-p1-q5-c-ii": {
   "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q5-c-ii.png",
-  "md5": "e7cb49a944e91c3b684b6b50ccf09b88",
+  "md5": "73aec4188112bd05442e72ea8b8ee0ae",
   "alt": "The question as printed on the paper — The diagram below shows three sets, 𝐴, 𝐵, and 𝐶, and two functions, 𝑓 and 𝑔, where (c) 𝑓: 𝐴→𝐵 and 𝑔: 𝐵→𝐶. #𝐴= #𝐶= 4 and #𝐵= 3. 𝑔 𝑓 𝑥 1  𝑤 2  𝑦 3 𝑧 4  𝐶 𝐴 𝐵 Explain why 𝑔: 𝐵→𝐶 is injective but not surjective (that is, ",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -26267,8 +26267,8 @@
  },
  "maths-2023-HL-ask-p1-q9-c-ii": {
   "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q9-c-ii.png",
-  "md5": "a9872050d1380e9d0ffe80e5e5a3e9eb",
-  "alt": "The question as printed on the paper — The area of the triangle formed by the 𝑥-axis, the 𝑦-axis, and the tangent (ii) ଵଶ ଶସ 𝑦= − ௣మ 𝑥+ ௣ is always 𝑘 square units, where 𝑘∈ℕ is a constant. Work out the value of 𝑘. ଵଶ ଶସ 𝑦 𝑦= − ௣మ 𝑥+ ௣ 𝑥 𝑘= ____________",
+  "md5": "3e93bb5746cdc9b1ccf3c2187a951b53",
+  "alt": "The question as printed on the paper — The area of the triangle formed by the 𝑥-axis, the 𝑦-axis, and the tangent (ii) ଵଶ ଶସ 𝑦= − ௣మ 𝑥+ ௣ is always 𝑘 square units, where 𝑘∈ℕ is a constant. Work out the value of 𝑘. ଵଶ ଶସ 𝑦 𝑦= − ௣మ 𝑥+ ௣ 𝑥",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2023 HL Paper 1 Q9(c)(ii)",
@@ -26400,7 +26400,7 @@
  "maths-2023-HL-ask-p2-q3-b-ii": {
   "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q3-b-ii.png",
   "md5": "8a2557d43c5803cbf1c7a1dc53c72567",
-  "alt": "The question as printed on the paper — 𝐴(−1, 𝑘) and 𝐵(5, 𝑙) are two points, where 𝑘, 𝑙∈ℚ. (b) ௞ା௟ The perpendicular bisector of ሾ𝐴𝐵ሿ is: (ii) 3𝑥+ 2𝑦−14 = 0 Find the value of 𝑙 and the value of 𝑘. 𝑙= ________________ 𝑘= ________________ 9 Leaving Certificate 2",
+  "alt": "The question as printed on the paper — 𝐴(−1, 𝑘) and 𝐵(5, 𝑙) are two points, where 𝑘, 𝑙∈ℚ. (b) ௞ା௟ The perpendicular bisector of ሾ𝐴𝐵ሿ is: (ii) 3𝑥+ 2𝑦−14 = 0 Find the value of 𝑙 and the value of 𝑘. 9 Leaving Certificate 2023",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2023 HL Paper 2 Q3(b)(ii)",
@@ -26410,8 +26410,8 @@
  },
  "maths-2023-HL-ask-p2-q4-ii": {
   "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q4-ii.png",
-  "md5": "c52c6da84f328985945b8038938aa3ed",
-  "alt": "The question as printed on the paper — Write down the centre and radius of the circle 𝑐. (i) Give your answer in terms of ℎ, where appropriate. Centre = ( , ) Radius = ____________ The perpendicular distance from the line 𝑥−4𝑦+ 7 = 0 to the centre of the circ",
+  "md5": "9ce54f05f98affa3dc6a297899a70e86",
+  "alt": "The question as printed on the paper — Write down the centre and radius of the circle 𝑐. (i) Give your answer in terms of ℎ, where appropriate. The perpendicular distance from the line 𝑥−4𝑦+ 7 = 0 to the centre of the circle 𝑐 (ii) is 5 units. Work out the tw",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2023 HL Paper 2 Q4(ii)",
@@ -26421,8 +26421,8 @@
  },
  "maths-2023-HL-ask-p2-q4-a-i": {
   "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q4-a-i.png",
-  "md5": "7f19c47a7a6d0a0e8c15ad2f33ad5cec",
-  "alt": "The question as printed on the paper — The circle 𝑐 has equation: (a) (𝑥−ℎ)ଶ+ (𝑦+ 3)ଶ= 12 where ℎ∈ℝ. Write down the centre and radius of the circle 𝑐. (i) Give your answer in terms of ℎ, where appropriate. Centre = ( , ) Radius = ____________",
+  "md5": "5cc461dca0d7b0e79a198dc01de20b33",
+  "alt": "The question as printed on the paper — The circle 𝑐 has equation: (a) (𝑥−ℎ)ଶ+ (𝑦+ 3)ଶ= 12 where ℎ∈ℝ. Write down the centre and radius of the circle 𝑐. (i) Give your answer in terms of ℎ, where appropriate.",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2023 HL Paper 2 Q4(a)(i)",
@@ -26465,8 +26465,8 @@
  },
  "maths-2023-HL-ask-p2-q6-a": {
   "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q6-a.png",
-  "md5": "8fc4144b8873d7c42f33e669d17bec96",
-  "alt": "The question as printed on the paper — (a) State whether the following statement is true or false: Two angles are vertically opposite if, and only if, they are equal in size. Justify your answer. Answer (true or false): Justification:",
+  "md5": "ae818d175c3a1e229f3d73deb7b4fa4f",
+  "alt": "The question as printed on the paper — (a) State whether the following statement is true or false: Two angles are vertically opposite if, and only if, they are equal in size. Justify your answer.",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2023 HL Paper 2 Q6(a)",
@@ -26597,7 +26597,7 @@
  },
  "maths-2023-HL-ask-p2-q9-a-i": {
   "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q9-a-i.png",
-  "md5": "54e1cdad924f39f684c1311c96b5f8c8",
+  "md5": "05f8e9f9fadd84e9f3dc890641821e15",
   "alt": "The question as printed on the paper — (a) First, she looks at two different tilings: one using identical squares and another using identical regular hexagons. (Note: a regular hexagon can be split into 6 congruent equilateral triangles.) Tiling with squares ",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -26949,7 +26949,7 @@
  },
  "maths-2023-OL-ask-p1-q7-b-ii": {
   "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q7-b-ii.png",
-  "md5": "7b7b11a909f76dd945e0962215ca6ffe",
+  "md5": "9d019b8b75ba3ce49f1405706f82c890",
   "alt": "The question as printed on the paper — Over the course of one day (24 hours), the probability that it is raining in Waterville, 𝑃(𝑡), (b) could be modelled by the following function: 𝑃(𝑡) = 0∙3 + 0∙02 𝑡. Here, 𝑃(𝑡) is the probability that it is raining 𝑡 hour",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -27103,8 +27103,8 @@
  },
  "maths-2023-OL-ask-p1-q10-a-i": {
   "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q10-a-i.png",
-  "md5": "8c16ca4c76a8fbdd6fd9ec6fb5183b32",
-  "alt": "The question as printed on the paper — Find the volume of a cylinder with a diameter of 18 mm and a height of 5 mm. (a) (i) Give your answer correct to the nearest mm3. 5 mm 18 mm",
+  "md5": "b5c9bb79fb0f7480fd2424b9f20937b0",
+  "alt": "The question as printed on the paper — Find the volume of a cylinder with a diameter of 18 mm and a height of 5 mm. (a) (i) Give your answer correct to the nearest mm3.",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2023 OL Paper 1 Q10(a)(i)",
@@ -27114,8 +27114,8 @@
  },
  "maths-2023-OL-ask-p1-q10-a-ii": {
   "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q10-a-ii.png",
-  "md5": "059aa2a03b2833ea8152e78585e88401",
-  "alt": "The question as printed on the paper — Find the volume of a cylinder with a diameter of 18 mm and a height of 5 mm. (a) (i) Give your answer correct to the nearest mm3. 5 mm 18 mm A metal ring could be made by removing a cylinder of diameter 14 mm and height ",
+  "md5": "23ac64991d66d3c0886be4c1d5ca14be",
+  "alt": "The question as printed on the paper — Find the volume of a cylinder with a diameter of 18 mm and a height of 5 mm. (a) (i) Give your answer correct to the nearest mm3. A metal ring could be made by removing a cylinder of diameter 14 mm and height (ii) 5 mm f",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2023 OL Paper 1 Q10(a)(ii)",
@@ -27400,7 +27400,7 @@
  },
  "maths-2023-OL-ask-p2-q6-b": {
   "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q6-b.png",
-  "md5": "46fbc012870eab9e35e9b3dc5e4ff021",
+  "md5": "f42d9bfba1516148670de20cb2b98fe5",
   "alt": "The question as printed on the paper — (b) The diagram below shows another parallelogram (not to scale). The sizes of three of the angles are given, where 𝑥, 𝑦∈ℝ. Use the information in the diagram to work out the value of 𝑥 and the value of 𝑦. (𝑥+ 3𝑦)° (2𝑥−3",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -27412,7 +27412,7 @@
  "maths-2023-OL-ask-p2-q6-c": {
   "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q6-c.png",
   "md5": "0e30a8530c456d6f9f443347d341a203",
-  "alt": "The question as printed on the paper — (c) State whether the following statement is true or false. Justify your answer. Statement: “Every square is a parallelogram.” True or false? True False (Tick one box only) Justification: 15 Leaving Certificate, 2023 Sec",
+  "alt": "The question as printed on the paper — (c) State whether the following statement is true or false. Justify your answer. Statement: “Every square is a parallelogram.” True or false? True False (Tick one box only) 15 Leaving Certificate, 2023 Section B Contexts",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2023 OL Paper 2 Q6(c)",
@@ -27775,7 +27775,7 @@
  "maths-2024-HL-ask-p1-q3-b-ii": {
   "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q3-b-ii.png",
   "md5": "65cbb55bb89d4def23ad4331883afe30",
-  "alt": "The question as printed on the paper — (b) The function 𝑓𝑓 is defined for 𝑥𝑥∈ℝ as: 𝑓𝑓(𝑥𝑥) = 2𝑥𝑥3 −9𝑥𝑥2 + 5𝑥𝑥−11 (ii) Find the 𝑥𝑥 co-ordinate of the point of inflection of 𝑓𝑓. 𝑥𝑥= _________ 8 Leaving Certificate 2024",
+  "alt": "The question as printed on the paper — (b) The function 𝑓𝑓 is defined for 𝑥𝑥∈ℝ as: 𝑓𝑓(𝑥𝑥) = 2𝑥𝑥3 −9𝑥𝑥2 + 5𝑥𝑥−11 (ii) Find the 𝑥𝑥 co-ordinate of the point of inflection of 𝑓𝑓. 8 Leaving Certificate 2024",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2024 HL Paper 1 Q3(b)(ii)",
@@ -27962,7 +27962,7 @@
  "maths-2024-HL-ask-p1-q8-b": {
   "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q8-b.png",
   "md5": "4f3e6109e34c1da8e323e06059cc8de5",
-  "alt": "The question as printed on the paper — (b) Work out the maximum and minimum daily sales of scarves, according to 𝑆𝑆(𝑡𝑡). You do not need to use differentiation. Maximum = ________________ Minimum = ________________ A different function, 𝐶𝐶(𝑡𝑡), can also be us",
+  "alt": "The question as printed on the paper — (b) Work out the maximum and minimum daily sales of scarves, according to 𝑆𝑆(𝑡𝑡). You do not need to use differentiation. A different function, 𝐶𝐶(𝑡𝑡), can also be used to model the daily sales of scarves, where: 𝐶𝐶(𝑡𝑡) ",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2024 HL Paper 1 Q8(b)",
@@ -27983,7 +27983,7 @@
  },
  "maths-2024-HL-ask-p1-q8-d": {
   "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q8-d.png",
-  "md5": "3400a81489e5cfb8aa2576fc54fd49a5",
+  "md5": "932ef357075352f3e9419b61a54ff122",
   "alt": "The question as printed on the paper — (d) The graphs, J, K, and L, of three functions are shown below (not to scale). Graph J Graph K Graph L 𝑡𝑡 𝑡𝑡 𝑡𝑡 One of these graphs shows the function 𝐶𝐶(𝑡𝑡) over a number of years, where 𝐶𝐶(𝑡𝑡) = 𝑆𝑆(𝑡𝑡) −2∙4 + 0∙03𝑡𝑡. ",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -28005,7 +28005,7 @@
  },
  "maths-2024-HL-ask-p1-q9-a": {
   "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q9-a.png",
-  "md5": "04591fbd761572856123c252cc7087be",
+  "md5": "644b8836c50547b8768befc6b40f930e",
   "alt": "The question as printed on the paper — A sphere has a radius of 𝑅𝑅 units. The part of the sphere that is cut off by a flat surface is called a “cap”, and has a volume of: 𝐶𝐶= 𝜋𝜋 𝑘𝑘2 (3𝑅𝑅−𝑘𝑘) 3 Here, 𝐶𝐶 is the volume of the cap and 𝑘𝑘 is the height of the cap,",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -28104,7 +28104,7 @@
  },
  "maths-2024-HL-ask-p1-q10-c-ii": {
   "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q10-c-ii.png",
-  "md5": "80b4fe5712bd423d167b671d8a564455",
+  "md5": "1c497c66a3262d0f8cce409590214e91",
   "alt": "The question as printed on the paper — A company grows and sells plants. (c) The logo for the company is shown on the co-ordinate diagram below. The logo is the region enclosed by three curves, defined by the following functions 𝑐𝑐, 𝑠𝑠, and 𝑘𝑘 : 𝑐𝑐(𝑥𝑥) = 𝑥𝑥2 ",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -28247,8 +28247,8 @@
  },
  "maths-2024-HL-ask-p2-q5-a-i": {
   "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q5-a-i.png",
-  "md5": "eefdec2cf885550b7acd65bd19ef6bc8",
-  "alt": "The question as printed on the paper — (a) The circle 𝑠𝑠 has equation: 𝑥𝑥2 + 𝑦𝑦2 + 4𝑥𝑥−6𝑦𝑦+ 5 = 0 (i) Write down the centre and radius of the circle 𝑠𝑠. Centre = ( , ) Radius = ____________",
+  "md5": "fecee22e7c63b932722a85bfc4cd2373",
+  "alt": "The question as printed on the paper — (a) The circle 𝑠𝑠 has equation: 𝑥𝑥2 + 𝑦𝑦2 + 4𝑥𝑥−6𝑦𝑦+ 5 = 0 (i) Write down the centre and radius of the circle 𝑠𝑠.",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2024 HL Paper 2 Q5(a)(i)",
@@ -28368,7 +28368,7 @@
  },
  "maths-2024-HL-ask-p2-q8-a": {
   "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q8-a.png",
-  "md5": "80e4985afbd2d27f555cdc9c4eb75454",
+  "md5": "e3fefa59a54bf1267cebdfd08000380e",
   "alt": "The question as printed on the paper — Tommy makes ornaments from metal and glass. (a) He makes an open metal cylinder with a height of 15 cm and a radius of 5 cm. The net of this cylinder is a rectangle. Find the dimensions of this rectangle. Give your answe",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -28885,7 +28885,7 @@
  },
  "maths-2024-OL-ask-p2-q1-a-iii": {
   "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q1-a-iii.png",
-  "md5": "192a5eb7d87b35091a471efbb0b47b4e",
+  "md5": "bc995e41ba20ec6decd99aee9e5c609e",
   "alt": "The question as printed on the paper — (a) The scores for 9 students in a history test are given in the table below. 𝑋𝑋 is the lowest score and 𝑌𝑌 is the highest score, where 𝑋𝑋, 𝑌𝑌∈ℕ. 𝑋𝑋 91 76 82 37 42 74 54 𝑌𝑌 (iii) All students received different scores in",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -28973,8 +28973,8 @@
  },
  "maths-2024-OL-ask-p2-q4-a-i": {
   "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q4-a-i.png",
-  "md5": "57ecbc098838c735553c83a191481bdb",
-  "alt": "The question as printed on the paper — (a) The circle 𝑘𝑘 has equation: (𝑥𝑥−5)2 + (𝑦𝑦+ 3)2 = 25 (i) Write down the centre and radius of the circle 𝑘𝑘. Centre = ( , ) Radius = ____________",
+  "md5": "a9b2ddd5d8f6ee08d9efc59dc5ae77a0",
+  "alt": "The question as printed on the paper — (a) The circle 𝑘𝑘 has equation: (𝑥𝑥−5)2 + (𝑦𝑦+ 3)2 = 25 (i) Write down the centre and radius of the circle 𝑘𝑘.",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2024 OL Paper 2 Q4(a)(i)",
@@ -29094,7 +29094,7 @@
  },
  "maths-2024-OL-ask-p2-q7-a-ii": {
   "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q7-a-ii.png",
-  "md5": "19f45881cb442cbc2f1de30b793ba9ce",
+  "md5": "e24411730cf5f8d7e4857c657a3f25ff",
   "alt": "The question as printed on the paper — (a) A company was interested in investigating the fitness of its employees. The table below shows the heart rates of ten employees measured before and after exercise. Their heart rates are measured in beats per minute (b",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -29105,7 +29105,7 @@
  },
  "maths-2024-OL-ask-p2-q7-a-iii": {
   "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q7-a-iii.png",
-  "md5": "8e97b2dd6e873fcc7f9efd9736597e66",
+  "md5": "d63e3e167b067fb0abd5318e21804151",
   "alt": "The question as printed on the paper — (a) A company was interested in investigating the fitness of its employees. The table below shows the heart rates of ten employees measured before and after exercise. Their heart rates are measured in beats per minute (b",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -29270,7 +29270,7 @@
  },
  "maths-2024-OL-ask-p2-q9-d-i": {
   "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q9-d-i.png",
-  "md5": "301111909602df27c0329d5aa3aac4ba",
+  "md5": "d4ffff70a68d51e0d748e334af41f839",
   "alt": "The question as printed on the paper — Diarmuid owns an ice cream van. (d) Diarmuid has a logo of an ice cream cone on the side of his van. 𝑠𝑠 The logo is made up of a sector of a circle with radius 20 cm, and two identical right-angled triangles, as shown in",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -29281,7 +29281,7 @@
  },
  "maths-2024-OL-ask-p2-q9-d-ii": {
   "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q9-d-ii.png",
-  "md5": "10e3fdbb203b01f51d62e4ddac82e857",
+  "md5": "a48415866ce3fdd8ef7fadba1029c414",
   "alt": "The question as printed on the paper — Diarmuid owns an ice cream van. (d) Diarmuid has a logo of an ice cream cone on the side of his van. 𝑠𝑠 The logo is made up of a sector of a circle with radius 20 cm, and two identical right-angled triangles, as shown in",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -29479,8 +29479,8 @@
  },
  "maths-2025-HL-ask-p1-q5-a": {
   "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q5-a.png",
-  "md5": "ea4efb488ea9fc96440d36ca9b5c7e4e",
-  "alt": "The question as printed on the paper — (a) The function 𝑔𝑔(𝑥𝑥) is defined for 𝑥𝑥∈ℝ by: 𝑔𝑔(𝑥𝑥) = 5𝑥𝑥2 + 20𝑥𝑥−12 Write 𝑔𝑔(𝑥𝑥) in the following form, where 𝑎𝑎, ℎ, 𝑘𝑘∈ℤ are constants: 𝑔𝑔(𝑥𝑥) = 𝑎𝑎(𝑥𝑥+ ℎ)2 + 𝑘𝑘 𝑔𝑔(𝑥𝑥) = ____________________________________",
+  "md5": "b414c0608e1ef716069cb35181011917",
+  "alt": "The question as printed on the paper — (a) The function 𝑔𝑔(𝑥𝑥) is defined for 𝑥𝑥∈ℝ by: 𝑔𝑔(𝑥𝑥) = 5𝑥𝑥2 + 20𝑥𝑥−12 Write 𝑔𝑔(𝑥𝑥) in the following form, where 𝑎𝑎, ℎ, 𝑘𝑘∈ℤ are constants: 𝑔𝑔(𝑥𝑥) = 𝑎𝑎(𝑥𝑥+ ℎ)2 + 𝑘𝑘",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2025 HL Paper 1 Q5(a)",
@@ -29501,7 +29501,7 @@
  },
  "maths-2025-HL-ask-p1-q5-c": {
   "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q5-c.png",
-  "md5": "db9af4aac00d1798d8ce7c434e251b76",
+  "md5": "3228838e91c0d41c59930f15f8b001e0",
   "alt": "The question as printed on the paper — (c) Below is a pair of simultaneous equations in 𝑥𝑥 and 𝑦𝑦, where 𝑛𝑛∈ℝ is a constant. One of the solutions to this pair of equations is on the 𝒚𝒚-axis. Use this information to find the value of 𝑛𝑛. 2𝑥𝑥−𝑦𝑦 = 7 𝑥𝑥2 + 𝑦𝑦+ 2",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -29534,8 +29534,8 @@
  },
  "maths-2025-HL-ask-p1-q6-b-ii": {
   "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q6-b-ii.png",
-  "md5": "a6043eb095c41f7527f0fa5b64f1a4b4",
-  "alt": "The question as printed on the paper — (b) ℎ(𝑥𝑥) is the following function of 𝑥𝑥, where 𝑚𝑚 and 𝑟𝑟 are positive constants and 𝑥𝑥∈ℝ : ℎ(𝑥𝑥) = 6𝑚𝑚 𝑥𝑥2 −4𝑟𝑟 𝑥𝑥+ 54𝑚𝑚 (ii) Use the fact that 𝑟𝑟= 9𝑚𝑚 to find the value of this solution. 𝑥𝑥= ___________ Section B Cont",
+  "md5": "66e1898ffd666e27ebadfc47431a42cb",
+  "alt": "The question as printed on the paper — (b) ℎ(𝑥𝑥) is the following function of 𝑥𝑥, where 𝑚𝑚 and 𝑟𝑟 are positive constants and 𝑥𝑥∈ℝ : ℎ(𝑥𝑥) = 6𝑚𝑚 𝑥𝑥2 −4𝑟𝑟 𝑥𝑥+ 54𝑚𝑚 (ii) Use the fact that 𝑟𝑟= 9𝑚𝑚 to find the value of this solution. Section B Contexts and Applica",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2025 HL Paper 1 Q6(b)(ii)",
@@ -29655,7 +29655,7 @@
  },
  "maths-2025-HL-ask-p1-q8-e-iii": {
   "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q8-e-iii.png",
-  "md5": "95cdd5c24cf87fe345554d34629f72a9",
+  "md5": "31aa1bc556014699e854705b106417bc",
   "alt": "The question as printed on the paper — (e) Jacob is going to kayak 𝐹𝐹 𝐵𝐵 𝑥𝑥 km from 𝑆𝑆 to 𝐵𝐵, and then run 𝐴𝐴 8 km from 𝐵𝐵 to 𝐹𝐹. (i) Find an expression in 𝑥𝑥 for 𝑇𝑇, the total time, in hours, that it will take Jacob to get from 𝑆𝑆 to 𝐵𝐵 to 𝐹𝐹. (ii) Jacob kno",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -29787,8 +29787,8 @@
  },
  "maths-2025-HL-ask-p1-q10-e-ii": {
   "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q10-e-ii.png",
-  "md5": "acf47d8c9ae8eed1a84ac64a7126e1d5",
-  "alt": "The question as printed on the paper — 4 (e) 𝐻𝐻(𝑛𝑛) is the total number of dots in Pattern 𝑛𝑛 of the sequence, for 𝑛𝑛∈ℕ. (ii) Using this fact, prove the identity on the grid below. Use proof by induction. Prove that: 𝐻𝐻(𝑛𝑛) = (𝑛𝑛+ 1)2 for all values of 𝑛𝑛∈ℕ Y",
+  "md5": "5ef12b654330dd94ae8388187aebe9ab",
+  "alt": "The question as printed on the paper — 4 (e) 𝐻𝐻(𝑛𝑛) is the total number of dots in Pattern 𝑛𝑛 of the sequence, for 𝑛𝑛∈ℕ. (ii) Using this fact, prove the identity on the grid below. Use proof by induction. You may use this page for extra work. Label any extra ",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2025 HL Paper 1 Q10(e)(ii)",
@@ -29799,7 +29799,7 @@
  "maths-2025-HL-ask-p2-q1-a": {
   "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q1-a.png",
   "md5": "de1c2893670a2e2487937a2378619183",
-  "alt": "The question as printed on the paper — (a) 𝑝𝑝∈ℝ is a constant. The point (𝑝𝑝, 5) lies on the line 3𝑥𝑥−2𝑦𝑦+ 28 = 0. Find the value of 𝑝𝑝. 𝑝𝑝= ____________ 1",
+  "alt": "The question as printed on the paper — (a) 𝑝𝑝∈ℝ is a constant. The point (𝑝𝑝, 5) lies on the line 3𝑥𝑥−2𝑦𝑦+ 28 = 0. Find the value of 𝑝𝑝. 1",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2025 HL Paper 2 Q1(a)",
@@ -29831,8 +29831,8 @@
  },
  "maths-2025-HL-ask-p2-q2-a-i": {
   "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q2-a-i.png",
-  "md5": "4d5d8ccf28c40f89a6c5ebea3cf018ed",
-  "alt": "The question as printed on the paper — A circle 𝑠𝑠 has the equation (𝑥𝑥−4)2 + (𝑦𝑦+ 2)2 = 45. (a) (i) Write down the centre and radius of the circle 𝑠𝑠. Centre = ( , ) Radius = ____________",
+  "md5": "a772be2a388410a566c59102b361ab43",
+  "alt": "The question as printed on the paper — A circle 𝑠𝑠 has the equation (𝑥𝑥−4)2 + (𝑦𝑦+ 2)2 = 45. (a) (i) Write down the centre and radius of the circle 𝑠𝑠.",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2025 HL Paper 2 Q2(a)(i)",
@@ -29843,7 +29843,7 @@
  "maths-2025-HL-ask-p2-q2-b": {
   "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q2-b.png",
   "md5": "aec9cf9a8ef9d238f9a937c27cc1f4d2",
-  "alt": "The question as printed on the paper — (b) The circle 𝑡𝑡 has the following equation, where 𝑘𝑘∈ℝ is a constant: 𝑥𝑥2 + 𝑦𝑦2 + 28𝑥𝑥−46𝑦𝑦+ 𝑘𝑘= 0 The horizontal line 𝑦𝑦= 𝑘𝑘 is a tangent to the circle 𝑡𝑡. Find the two possible values of 𝑘𝑘. 𝑘𝑘= ____________ or _____",
+  "alt": "The question as printed on the paper — (b) The circle 𝑡𝑡 has the following equation, where 𝑘𝑘∈ℝ is a constant: 𝑥𝑥2 + 𝑦𝑦2 + 28𝑥𝑥−46𝑦𝑦+ 𝑘𝑘= 0 The horizontal line 𝑦𝑦= 𝑘𝑘 is a tangent to the circle 𝑡𝑡. Find the two possible values of 𝑘𝑘. 7 Leaving Certificate 202",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2025 HL Paper 2 Q2(b)",
@@ -29875,7 +29875,7 @@
  },
  "maths-2025-HL-ask-p2-q3-a-iii": {
   "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q3-a-iii.png",
-  "md5": "714c410eb51f46e4247d7d042444fce9",
+  "md5": "27977c72e218dd44a63ab39023c119ed",
   "alt": "The question as printed on the paper — (a) 240 people were surveyed about which of three countries, 𝐴𝐴, 𝐵𝐵, or 𝐶𝐶, they had been to. The Venn diagram below shows the number of people who had been to each combination of these countries, as well as those who ha",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -29975,7 +29975,7 @@
  "maths-2025-HL-ask-p2-q6-b": {
   "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q6-b.png",
   "md5": "64013cf5fdbda01c6f2b0e441103cccb",
-  "alt": "The question as printed on the paper — (b) 𝑓𝑓(𝑥𝑥) is the following function, where 𝑥𝑥∈ℝ is in radians: 𝑓𝑓(𝑥𝑥) = |4 sin 𝑥𝑥| −1 Part of the graph of 𝑦𝑦= 𝑓𝑓(𝑥𝑥) is shown below. Write down the period and range of 𝑓𝑓(𝑥𝑥). 𝑦𝑦 𝑥𝑥 Range = [ , ] Period = ____________ ",
+  "alt": "The question as printed on the paper — (b) 𝑓𝑓(𝑥𝑥) is the following function, where 𝑥𝑥∈ℝ is in radians: 𝑓𝑓(𝑥𝑥) = |4 sin 𝑥𝑥| −1 Part of the graph of 𝑦𝑦= 𝑓𝑓(𝑥𝑥) is shown below. Write down the period and range of 𝑓𝑓(𝑥𝑥). 𝑦𝑦 𝑥𝑥 14 Leaving Certificate 2025",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2025 HL Paper 2 Q6(b)",
@@ -30062,7 +30062,7 @@
  },
  "maths-2025-HL-ask-p2-q8-a-i": {
   "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q8-a-i.png",
-  "md5": "f0ba90b7b6709970e92e726de2afe8ba",
+  "md5": "66e2c19858aa59bb302aed1e0e4ab1e1",
   "alt": "The question as printed on the paper — (a) A roof is in the shape of a square-based pyramid, 𝑃𝑃 as shown. The square base, 𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴, has sides of length 6 m. 11 m The diagonals of 𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴 meet at the point 𝑂𝑂. The top of the pyramid, 𝑃𝑃, is directly above 𝑂𝑂",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -30216,7 +30216,7 @@
  },
  "maths-2025-HL-ask-p2-q10-c-ii": {
   "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q10-c-ii.png",
-  "md5": "30a4bbf55279d9e9dc1daa797975e968",
+  "md5": "057ffb4651c9a3475ba18d0175a32ba4",
   "alt": "The question as printed on the paper — A particular test is used to measure how well students around the world can do maths problems. (c) For country Y, researchers carried out a hypothesis test at the 5% level of significance to see if the population mean sc",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -30238,7 +30238,7 @@
  },
  "maths-2025-HL-ask-p2-q10-e": {
   "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q10-e.png",
-  "md5": "353d467be5255fab7c6aa3e23735c692",
+  "md5": "ef2c5ac2dd0455884012d73bc8c8483c",
   "alt": "The question as printed on the paper — A particular test is used to measure how well students around the world can do maths problems. (e) For one of the questions on the test, students are given a mark of 0, 1, 2, or 3. The proportion of students who get each",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -30315,7 +30315,7 @@
  },
  "maths-2025-OL-ask-p1-q3-a": {
   "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q3-a.png",
-  "md5": "9603cc3d651471a7e1af367b423b0a6c",
+  "md5": "aa058c278273b30c7bf734d69cd27914",
   "alt": "The question as printed on the paper — (a) Rickie is buying protein bars. The cost of a single protein bar is €3∙30. A shop has the following two special offers: Offer A Offer B 3 bars for 12 pack of the same bar the price of 2 bars for €29∙99 Which offer is ",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -30337,8 +30337,8 @@
  },
  "maths-2025-OL-ask-p1-q3-c-ii": {
   "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q3-c-ii.png",
-  "md5": "5a08bb48cf38e9c8c17622f70e90e287",
-  "alt": "The question as printed on the paper — (c) 𝑘𝑘× 𝑡𝑡= 12, where 𝑘𝑘, 𝑡𝑡∈ℤ. (i) Write down a possible value of 𝑘𝑘 and the corresponding value of 𝑡𝑡. 𝑘𝑘 = 𝑡𝑡 = (ii) Use your values for 𝑘𝑘 and 𝑡𝑡 from part (c)(i) to find the value of 𝑏𝑏 in the equation below. (𝑥𝑥+ 𝑘",
+  "md5": "3a26f3bd5a539af384fa5c3139b4f33a",
+  "alt": "The question as printed on the paper — (c) 𝑘𝑘× 𝑡𝑡= 12, where 𝑘𝑘, 𝑡𝑡∈ℤ. (i) Write down a possible value of 𝑘𝑘 and the corresponding value of 𝑡𝑡. (ii) Use your values for 𝑘𝑘 and 𝑡𝑡 from part (c)(i) to find the value of 𝑏𝑏 in the equation below. (𝑥𝑥+ 𝑘𝑘)(𝑥𝑥+ 𝑡𝑡)",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2025 OL Paper 1 Q3(c)(ii)",
@@ -30360,7 +30360,7 @@
  "maths-2025-OL-ask-p1-q4-b": {
   "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q4-b.png",
   "md5": "73016562900d4d3dff6f8b1c8cac49a8",
-  "alt": "The question as printed on the paper — The function 𝑓𝑓(𝑥𝑥) is defined as 𝑓𝑓(𝑥𝑥) = 𝑥𝑥3 −3𝑥𝑥2 + 4𝑥𝑥−8, where 𝑥𝑥∈ℝ. (b) Find 𝑓𝑓′(𝑥𝑥), the derivative of 𝑓𝑓(𝑥𝑥). Hence, find the slope of the tangent to 𝑓𝑓(𝑥𝑥) at the point (2, −4). 𝑓𝑓′(𝑥𝑥) = Slope of tangent = 10 L",
+  "alt": "The question as printed on the paper — The function 𝑓𝑓(𝑥𝑥) is defined as 𝑓𝑓(𝑥𝑥) = 𝑥𝑥3 −3𝑥𝑥2 + 4𝑥𝑥−8, where 𝑥𝑥∈ℝ. (b) Find 𝑓𝑓′(𝑥𝑥), the derivative of 𝑓𝑓(𝑥𝑥). Hence, find the slope of the tangent to 𝑓𝑓(𝑥𝑥) at the point (2, −4). 10 Leaving Certificate, 2025",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2025 OL Paper 1 Q4(b)",
@@ -30381,8 +30381,8 @@
  },
  "maths-2025-OL-ask-p1-q5-a": {
   "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q5-a.png",
-  "md5": "c2c7ce61e7abc8ed561ef6beb6d98558",
-  "alt": "The question as printed on the paper — (a) Use algebra to solve the simultaneous equations: 3𝑥𝑥+ 2𝑦𝑦= 11 𝑥𝑥−4𝑦𝑦= −1 𝑥𝑥= 𝑦𝑦=",
+  "md5": "c6567153f33d29287c2b999b699a37a5",
+  "alt": "The question as printed on the paper — (a) Use algebra to solve the simultaneous equations: 3𝑥𝑥+ 2𝑦𝑦= 11 𝑥𝑥−4𝑦𝑦= −1",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2025 OL Paper 1 Q5(a)",
@@ -30425,7 +30425,7 @@
  },
  "maths-2025-OL-ask-p1-q7-b": {
   "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q7-b.png",
-  "md5": "f6345f8324f0f23a24430cbbfacd7444",
+  "md5": "788602b0fd9de0560fea837fc125d0e6",
   "alt": "The question as printed on the paper — The diagram below shows the value of one share for Company A, in euro, on the 1st day of each month from 1st January to 1st July. 10 9 8 Value of one share (€) 7 6 5 4 3 2 1 Feb Mar Apr May Jun Jul Aug Jan Month (b) On 1",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -30480,8 +30480,8 @@
  },
  "maths-2025-OL-ask-p1-q8-a-i": {
   "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q8-a-i.png",
-  "md5": "b9c795885decfee582fd53d5ce4e4065",
-  "alt": "The question as printed on the paper — (a) (i) Find 𝑃𝑃(0) and explain what it means in the context of the question. 𝑃𝑃(0) = Explanation:",
+  "md5": "ed6bb531000d4bc723e5d307d86f550e",
+  "alt": "The question as printed on the paper — (a) (i) Find 𝑃𝑃(0) and explain what it means in the context of the question.",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2025 OL Paper 1 Q8(a)(i)",
@@ -30513,7 +30513,7 @@
  },
  "maths-2025-OL-ask-p1-q8-b-ii": {
   "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q8-b-ii.png",
-  "md5": "b104932017b485e42c88ef9216fa6c98",
+  "md5": "ad65d6512f3a4362464650acad70a7fd",
   "alt": "The question as printed on the paper — (b) The profit of the company for the second year can be modelled by the function: 𝑄𝑄(𝑥𝑥) = −1∙5𝑥𝑥2 + 9∙6𝑥𝑥−3∙5 where 𝑄𝑄(𝑥𝑥) is the profit for the second year (in millions of euro) and 𝑥𝑥 is the number of phones (in tens",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -30645,7 +30645,7 @@
  },
  "maths-2025-OL-ask-p1-q10-c": {
   "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q10-c.png",
-  "md5": "d6cd523d5a11bb178c94b7e52e3b76e1",
+  "md5": "560d9a5019d19828c03b647ac3a9a38c",
   "alt": "The question as printed on the paper — (c) A shop repairs clothes. The charge for a repair is given by the formula: 𝐶𝐶= 20ℎ+ 𝑥𝑥ℎ 𝑑𝑑 where 𝐶𝐶 is the charge for the repair, in euro, ℎ is the number of hours it took to do the repair, 𝑥𝑥 is an extra hourly charge",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -30656,7 +30656,7 @@
  },
  "maths-2025-OL-ask-p1-q10-c-iii": {
   "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q10-c-iii.png",
-  "md5": "f8f7b0ea81479dda6a974b9919baaab5",
+  "md5": "b5cd9c3514de8e3e36ea0672d778fbec",
   "alt": "The question as printed on the paper — (c) A shop repairs clothes. The charge for a repair is given by the formula: 𝐶𝐶= 20ℎ+ 𝑥𝑥ℎ 𝑑𝑑 where 𝐶𝐶 is the charge for the repair, in euro, ℎ is the number of hours it took to do the repair, 𝑥𝑥 is an extra hourly charge",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -30811,7 +30811,7 @@
  "maths-2025-OL-ask-p2-q5-a": {
   "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q5-a.png",
   "md5": "c71fa9dcb6ee7fad91fb27fc8438e3c6",
-  "alt": "The question as printed on the paper — (a) 𝑗𝑗 and 𝑘𝑘 are two parallel lines, as shown in the diagram below. The size of some angles are also shown. 75° 𝑗𝑗 𝐴𝐴 60° 𝐵𝐵 𝑘𝑘 40° 𝐶𝐶 Find the size of the angles 𝐴𝐴, 𝐵𝐵, and 𝐶𝐶. |∠𝐴𝐴 | = |∠𝐵𝐵 | = |∠𝐶𝐶| = 12 Leaving Cer",
+  "alt": "The question as printed on the paper — (a) 𝑗𝑗 and 𝑘𝑘 are two parallel lines, as shown in the diagram below. The size of some angles are also shown. 75° 𝑗𝑗 𝐴𝐴 60° 𝐵𝐵 𝑘𝑘 40° 𝐶𝐶 Find the size of the angles 𝐴𝐴, 𝐵𝐵, and 𝐶𝐶. 12 Leaving Certificate, 2025",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2025 OL Paper 2 Q5(a)",

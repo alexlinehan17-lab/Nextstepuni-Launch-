@@ -102,6 +102,7 @@ class Sitting:
         self.doc = pymupdf.open(path)
         self.lines = lines_of(self.doc)
         self._ink = {}
+        self._furniture = {}
         self._index()
 
     # ---- geometry index ----
@@ -151,14 +152,21 @@ class Sitting:
         text_lines = [l for l in self.lines if l[0] == page]
         drawings = [d for d in p.get_drawings()
                     if _dark(d.get('color')) or _dark(d.get('fill'))]
-        # The empty answer frames first, so ink INSIDE one — the little corner
+        # The answer frames first, so ink INSIDE one — the little corner
         # mark some booklets print in the writing space — dies with its frame.
+        # A frame is furniture even when it is not empty: 2021 P1 Q2(b) prints
+        # "Show:" and a "Roots = ( , , )" template inside its grid. What tells
+        # furniture from a data table or a labelled graph is how LITTLE text
+        # the frame holds — a prompt or two, against a table's many cells.
         frames = []
         for d in drawings:
             r = d['rect']
-            if r.width > 420 and r.height > 80 and not any(
-                    r.y0 - 2 <= l[1] and l[2] <= r.y1 + 2 for l in text_lines):
-                frames.append(r)
+            if r.width > 420 and r.height > 80:
+                inside = [l for l in text_lines
+                          if r.y0 - 2 <= l[1] and l[2] <= r.y1 + 2]
+                if len(inside) <= 3 and sum(len(l[4]) for l in inside) < 60:
+                    frames.append(r)
+        self._furniture[page] = frames
         rects = []
         for d in drawings:
             r = d['rect']
@@ -179,6 +187,13 @@ class Sitting:
         self._ink[page] = rects
         return rects
 
+    def furniture_line(self, page, y0, y1):
+        """True when a text line sits inside an excluded answer frame — the
+        "Show:" prompt must not hold a window open for its dead grid."""
+        self.ink(page)
+        return any(f.y0 - 2 <= y0 and y1 <= f.y1 + 2
+                   for f in self._furniture.get(page, []))
+
     def _q_end(self, qnum):
         nums = list(self.q)
         i = nums.index(qnum)
@@ -190,7 +205,8 @@ class Sitting:
         words = []
         for (sp, sy), (ep, ey) in bands:
             for (page, y0, y1, x0, txt) in self.lines:
-                if (sp, sy - 1) <= (page, y0) and (page, y0) < (ep, ey):
+                if (sp, sy - 1) <= (page, y0) and (page, y0) < (ep, ey) and \
+                        not self.furniture_line(page, y0, y1):
                     words.append(txt)
         flat = ' '.join(' '.join(words).split())
         return flat[:limit]
@@ -282,7 +298,8 @@ class Sitting:
                 continue
             tops, bots = [], []
             for (pg, y0, y1, x0, txt) in self.lines:
-                if pg == page and lo - 1 <= y0 < hi:
+                if pg == page and lo - 1 <= y0 < hi and \
+                        not self.furniture_line(page, y0, y1):
                     tops.append(y0)
                     bots.append(y1)
             if not tops:
@@ -300,7 +317,8 @@ class Sitting:
                         grew = True
                 for (pg, y0, y1, x0, txt) in self.lines:
                     if pg == page and y1 > w_lo - 1 and y0 < w_hi + 1 and (
-                            y0 < w_lo - 0.5 or y1 > w_hi + 0.5):
+                            y0 < w_lo - 0.5 or y1 > w_hi + 0.5) and \
+                            not self.furniture_line(page, y0, y1):
                         w_lo, w_hi = min(w_lo, y0), max(w_hi, y1)
                         grew = True
                 if not grew:
