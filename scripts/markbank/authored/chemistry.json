@@ -10274,84 +10274,6 @@
   "notes": "Scheme adds: \"[Take order of question unless answers clearly labelled.]\""
  },
  {
-  "id": "chem-2023-hl-q10-b-iii",
-  "topicId": "chem-1-4",
-  "conceptId": "find-n-and-molar-mass-succinic-acid",
-  "level": "higher",
-  "year": 2023,
-  "subjectId": "chemistry",
-  "section": "B",
-  "questionRef": "2023 HL Q10(b)(iii)",
-  "stem": "(CH2)n(COOH)2 + 2NaOH → (CH2)n(COONa)2 + 2H2O. When 1.77 g of succinic acid react completely with sodium hydroxide 2.43 g of (CH2)n(COONa)2 (disodium succinate) are formed.",
-  "questionText": "Find the value of n and the mass of one mole of succinic acid.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 7,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "1.77/(14n + 90) = 2.43/(14n + 134)",
-    "accepts": [
-     "24.78n + 237.18 = 34.02n + 218.7",
-     "18.48 = 9.24n"
-    ],
-    "marks": 2
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "n = 2",
-    "marks": 2
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "molar mass of (CH2)n(COOH)2 = 118 g",
-    "marks": 3
-   }
-  ],
-  "notes": "The scheme separates the three points with // (separately-allocated marks under this scheme's preamble) and prints (2), (2), (3). A trial-and-error route letting n = 2 is also allowed, but the scheme forbids mixing and matching marks between the two boxes."
- },
- {
-  "id": "chem-2023-hl-q10-b-iv",
-  "topicId": "chem-1-4",
-  "conceptId": "volume-of-naoh-for-complete-reaction",
-  "level": "higher",
-  "year": 2023,
-  "subjectId": "chemistry",
-  "section": "B",
-  "questionRef": "2023 HL Q10(b)(iv)",
-  "stem": "(CH2)n(COOH)2 + 2NaOH → (CH2)n(COONa)2 + 2H2O, where succinic acid has n = 2 and a molar mass of 118 g.",
-  "questionText": "What volume of a 0.12 M NaOH solution is required for complete reaction with an aqueous solution containing 1.77 g succinic acid?",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 6,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "1.77/118 = 0.015 moles (CH2)n(COOH)2",
-    "marks": 2
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "0.03 moles NaOH",
-    "marks": 2
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "0.03 = (0.12 × V)/1000 ⇒ V = 250 cm³",
-    "marks": 2
-   }
-  ],
-  "notes": "Carded because the scheme awards three discrete stated values (moles of acid, moles of NaOH, final volume with its unit)."
- },
- {
   "id": "chem-2023-hl-q10-c-i",
   "topicId": "chem-1-2",
   "conceptId": "isotopes-definition",
@@ -10534,33 +10456,6 @@
    }
   ],
   "notes": "Q11 is a choice question (\"Answer any two of the parts (a), (b), (c) and (d)\"), each part worth 25 marks, with (d) itself an A-or-B choice; each card carves one part or sub-part with its own printed marks, so the tariff is fixed. Nothing in Q11 was skipped."
- },
- {
-  "id": "chem-2023-hl-q11-a-ii",
-  "topicId": "chem-2-3",
-  "conceptId": "charles-law-consistent-with-pv-nrt",
-  "level": "higher",
-  "year": 2023,
-  "subjectId": "chemistry",
-  "section": "B",
-  "questionRef": "2023 HL Q11(a)(ii)",
-  "questionText": "Explain why Charles's law is consistent with pV = nRT, the equation of state for an ideal gas.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 3,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "alt",
-    "verbatim": "pV = nRT ⇒ V/T = nR/p = constant",
-    "accepts": [
-     "n and R constant for a fixed mass of gas and p also constant"
-    ],
-    "marks": 3
-   }
-  ],
-  "notes": ""
  },
  {
   "id": "chem-2023-hl-q11-a-iii",
@@ -29413,43 +29308,56 @@
   "notes": "Five marking points across (i)-(iii) share one combined allocation (9 + 6 + 3 + 2 + 2 = 22). Q5(b) is skipped entirely: its seven sub-parts share a single combined allocation (9 + 6 + 4 + 3 + 2 + 2 + 2 = 28), but one is a dot-and-cross drawing and one requires reading the electronegativity table, so the remaining parts cannot be given real marks without inventing a split."
  },
  {
-  "id": "chem-2021-ol-q11-a-iii",
-  "topicId": "chem-1-2",
-  "conceptId": "elements-with-the-same-energy-levels",
-  "level": "ordinary",
+  "id": "chem-2021-hl-q6-b-ii",
+  "topicId": "chem-2-4",
+  "conceptId": "how-crude-oil-is-fractionally-distilled",
+  "level": "higher",
   "year": 2021,
   "subjectId": "chemistry",
   "section": "A",
-  "questionRef": "2021 OL Q11(a)(iii)",
-  "questionText": "Identify a metallic element whose atoms have the same number of main energy levels occupied by electrons as boron (B).",
+  "questionRef": "2021 HL Q6(b)(ii)",
+  "questionText": "With the aid of a labelled diagram explain how crude oil is fractionally distilled.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "fixed",
+   "notation": "(3) + ANY TWO: (2 × 3)"
   },
-  "totalMarks": 6,
+  "totalMarks": 9,
   "rows": [
    {
     "id": "r-1",
+    "kind": "point",
+    "verbatim": "larger or higher b.p. molecules at base indicated or stated",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "heated crude oil (furnace) at base of column shown or stated",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
     "kind": "alt",
-    "verbatim": "lithium (Li)",
-    "marks": 6,
+    "verbatim": "column with levels or outlets shown",
+    "marks": 3,
     "accepts": [
-     "beryllium (Be)"
+     "temperature decreases as mixture rises up column shown or stated"
     ]
    }
   ],
-  "stem": "In the periodic table of the elements, what term is used for the elements (i) in the same vertical column, (ii) in the same horizontal row?",
-  "notes": "Either element scores: both lithium and beryllium fill the same two main energy levels that boron does."
+  "stem": "Bio-LPG is a co-product in the manufacture of bio-diesel from renewable crops and domestic and industrial waste. Hydrogen gas is a reagent in the production of these biofuels.",
+  "notes": "A diagram question the scheme answers in words — \"Points of information can be taken from labelled diagram\", and an answer with no diagram at all loses 3. The scheme prints three interchangeable wordings of the opening 3-mark point; the block segmentation truncates two of them, so row 1 is the one that comes back whole. Rows 2 and 3 are the column itself, of which any two of the scheme's three score, which is why row 3 carries the third as an accepted alternative."
  },
  {
-  "id": "chem-2024-hl-q3-b-iii",
-  "topicId": "chem-u2",
-  "conceptId": "what-a-rate-graph-shows",
+  "id": "chem-2021-hl-q6-b-iii",
+  "topicId": "chem-2-4",
+  "conceptId": "where-the-fractions-separate-in-the-column",
   "level": "higher",
-  "year": 2024,
+  "year": 2021,
   "subjectId": "chemistry",
   "section": "A",
-  "questionRef": "2024 HL Q3(b)(iii)",
-  "questionText": "What can be concluded from your graph? (20)",
+  "questionRef": "2021 HL Q6(b)(iii)",
+  "questionText": "Show on your diagram where the refinery gas and gas oil fractions separate. (18)",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -29458,23 +29366,274 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "rate proportional to concentration",
+    "verbatim": "refinery gas (LPG) above gas oil (diesel)",
     "marks": 3
    }
   ],
-  "stem": "The reaction of sodium thiosulfate with hydrochloric acid is described by the following balanced chemical equation: Na2S2O3 + 2HCl  2NaCl + SO2 + S + H2O To investigate the effect of concentration on the rate of this reaction, the experiment was carried out for a number of different concentrations of sodium thiosulfate solution. For each run, a stopwatch was started when 100 cm3 of Na2S2O3 were mixed with 10 cm3 of 3 M HCl. For each run, the reaction was carried out at room temperature and the time taken for the same mass of sulfur to precipitate was measured. The inverse of that time was taken as a measure of the initial rate of reaction. The results are shown in the table below. Concentration of Na2S2O3 (M) 0.10 0.09 0.08 0.07 0.06 0.05 0.04 0.03 Time (s) 50 56 63 72 84 100 125 168 Rate = 1 Time (s–1) 0.020 0.018",
-  "figureKey": "chemistry-2024-hl-paper-p004-i0"
+  "stem": "Bio-LPG is a co-product in the manufacture of bio-diesel from renewable crops and domestic and industrial waste. Hydrogen gas is a reagent in the production of these biofuels.",
+  "notes": "The scheme states the answer as a relative position on the candidate's own part (ii) diagram: \"refinery gas (LPG) above gas oil (diesel) shown in part (ii) diagram\". The card carries the placement itself."
  },
  {
-  "id": "chem-2024-hl-q5-b-vi",
-  "topicId": "chem-1-2",
-  "conceptId": "shape-of-a-p-orbital",
+  "id": "chem-2021-hl-q10-a-i",
+  "topicId": "chem-2-2",
+  "conceptId": "dot-and-cross-diagram-of-ammonia",
   "level": "higher",
-  "year": 2024,
+  "year": 2021,
   "subjectId": "chemistry",
   "section": "A",
-  "questionRef": "2024 HL Q5(b)(vi)",
-  "questionText": "Draw the shape of a p orbital.",
+  "questionRef": "2021 HL Q10(a)(i)",
+  "questionText": "Draw a dot and cross diagram to show the arrangement of the valence electrons in an NH3 molecule.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "(4 + 3)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1 lone pair shown",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "3 bond pairs shown",
+    "marks": null
+   }
+  ],
+  "notes": "A drawing question the scheme answers in words: the two things the dot and cross diagram has to show. The tariff is printed once as \"(4 + 3)\" across the pair, so neither point has a mark of its own and the rows carry none; totalMarks is the 7 the two are worth together. The scheme prints a worked diagram beside them, which is artwork the text layer does not carry — these two points are the whole of what it says in words."
+ },
+ {
+  "id": "chem-2021-hl-q10-a-v",
+  "topicId": "chem-2-2",
+  "conceptId": "bond-angle-evidence-for-repulsion-strength",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2021 HL Q10(a)(v)",
+  "questionText": "What evidence is there in the table to support the claim that bond-pair bond-pair (bp bp) repulsions are weaker than lone-pair bond-pair (lp bp) repulsions? (25)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "NH3 bond angle smaller than that of CH4",
+    "marks": 6,
+    "accepts": [
+     "107° in NH3 smaller than 109.5° in CH4"
+    ]
+   }
+  ],
+  "notes": "The paper prints a four-row table (Formula | Boiling point | Bond angle | Shape) beside parts (i) to (iv), and this part reads its bond-angle column. No figure is bound: the only crop of that table in the figure manifest, chemistry-2021-HL-paper-p11-i0, is recorded there as keeping the header and the CH4 row alone, so a figure pass has to re-crop it. Both of the scheme's two accepted wordings state the comparison in full, and the second gives the two angles, so the answer stands without it."
+ },
+ {
+  "id": "chem-2021-hl-q10-b-ii",
+  "topicId": "chem-3-2",
+  "conceptId": "plotting-two-concentration-time-curves",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2021 HL Q10(b)(ii)",
+  "questionText": "Use the data given to plot, on the same sheet of graph paper and using the same set of axes, curves to compare the changes in concentration of the chloroethane and the hydrogen chloride with time.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4 × 3)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "axes labelled time (seconds, s) and concentration (M, moles per litre)",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "appropriate correct numeric scales on both axes",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "careful plotting of 7 points excluding origin",
+    "marks": 3
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "two smooth curves of correct shape through 8 points including origin",
+    "marks": 3
+   }
+  ],
+  "stem": "C2H5Cl (g) → C2H4 (g) + HCl (g) The following data were obtained at a certain temperature T for the decomposition of the chloroethane and the formation of the hydrogen chloride during this reaction. Time (s) 0 80 160 320 Concentration C2H5Cl (M) 2.00 1.02 0.52 0.13 Concentration HCl (M) 0 0.98 1.48 1.87",
+  "notes": "The four things the graph is marked on, in the scheme's own order. The scheme adds that the marks are not available if the points are joined by straight lines, that a time-versus-concentration graph is equally acceptable, that each of the first three badly plotted points costs 1, and that 6 comes off for using different scales for the two curves, for not using graph paper, for putting the curves on different sheets, or for setting them side by side with separate axes on the one sheet."
+ },
+ {
+  "id": "chem-2021-hl-q10-b-iii",
+  "topicId": "chem-3-2",
+  "conceptId": "instantaneous-rate-from-the-slope-of-a-tangent",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2021 HL Q10(b)(iii)",
+  "questionText": "Find the instantaneous rate of HCl formation (in M s–1) at 120 s. (25)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "slope = 0.0064 M s–1 HCl [0.004 – 0.009] M s–1 HCl",
+    "marks": 3
+   }
+  ],
+  "stem": "C2H5Cl (g) → C2H4 (g) + HCl (g) The following data were obtained at a certain temperature T for the decomposition of the chloroethane and the formation of the hydrogen chloride during this reaction. Time (s) 0 80 160 320 Concentration C2H5Cl (M) 2.00 1.02 0.52 0.13 Concentration HCl (M) 0 0.98 1.48 1.87",
+  "notes": "The part is worth 7; the card carries 3 of them. The scheme's other 4 marks are the point \"good tangent drawn to either curve at 120 s\", which opens the examiner's cue block and is cut away with it by the cue strip, so it cannot be lifted as a row. The 3 marks here are for reading the slope off that tangent, and the scheme prints the accepted range beside the value."
+ },
+ {
+  "id": "chem-2021-hl-q11-a-ii",
+  "topicId": "chem-u2",
+  "conceptId": "apparatus-to-prepare-and-collect-ethene",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2021 HL Q11(a)(ii)",
+  "questionText": "Draw a labelled diagram of an arrangement of apparatus used to prepare and collect a small quantity of ethene in the school laboratory to examine its properties.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "ANY THREE: (3 × 3)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "horizontal (slanting) test tube with delivery tube emerging",
+    "marks": 3,
+    "accepts": [
+     "collection ethene (gas, bubbles) over water or in gas syringe shown"
+    ]
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "ethanol in glass (steel, cotton) wool at end",
+    "marks": 3,
+    "accepts": [
+     "collection ethene (gas, bubbles) over water or in gas syringe shown"
+    ]
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "heat source shown under catalyst (Al2O3) in centre of test-tube",
+    "marks": 3,
+    "accepts": [
+     "collection ethene (gas, bubbles) over water or in gas syringe shown"
+    ]
+   }
+  ],
+  "notes": "A drawing question the scheme answers in words: four features of the apparatus, any three of which score 3 each, so every row carries the fourth as an accepted alternative. The scheme also requires a diagram with at least one chemical or item of apparatus labelled, and takes 3 off an unlabelled one. The paper prints the gas-solubility drawing for part (iv) directly under this part, so the card carries no stem."
+ },
+ {
+  "id": "chem-2021-hl-q11-a-iii",
+  "topicId": "chem-4-2",
+  "conceptId": "organic-product-of-ethene-with-bromine",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2021 HL Q11(a)(iii)",
+  "questionText": "Draw the structure of an organic product of the reaction of ethene in a solution of bromine.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "CH2BrCH2Br",
+    "marks": 6,
+    "accepts": [
+     "BrCH2CH2Br",
+     "CH2BrCH2OH"
+    ]
+   }
+  ],
+  "notes": "The scheme draws three structures and prints the condensed formula beside each; any one scores the 6. The drawings themselves are artwork the text layer does not carry, but the formulae do carry the answer, so the rows are the formulae. The scheme rules out 1,1-dibromoethane and 1-bromoethanol. The paper prints the gas-solubility drawing for part (iv) directly under this part, so the card carries no stem."
+ },
+ {
+  "id": "chem-2021-ol-q3-a",
+  "topicId": "chem-u2",
+  "conceptId": "graph-of-temperature-against-time",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2021 OL Q3(a)",
+  "questionText": "Plot a graph (on graph paper) of temperature versus time (x-axis). (15)",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 x 3"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "axes correctly labelled with unit (⁰C and minute or min) or quantity (temperature and time or t)",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "axes correctly scaled",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "8 points correctly plotted",
+    "marks": 3
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "3 further points correctly plotted",
+    "marks": 3
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "curve correctly drawn through points",
+    "marks": 3
+   }
+  ],
+  "stem": "A thermometer was inserted through the plastic lid of an insulated cup containing 100 cm3 of 1.0 M sodium hydroxide solution. A timer was started and the temperature of the contents of the cup was measured and recorded at 0.5-minute intervals for a total of 5 minutes. Between the 2 minute and 2.5 minute temperature readings, 100 cm3 of 1.0 M hydrochloric acid solution were quickly added to the cup and the mixture was stirred. The initial temperature of the HCl was 16.0 °C. The results are given in the table. The balanced equation for the neutralisation reaction between hydrochloric acid and sodium hydroxide is as follows: HCl + NaOH → NaCl + H2O The overall temperature change observed was used to calculate the heat of reaction (ΔH) for this neutralisation. Time (minutes) 0 0.5 1.0 1.5 2.0 2.5 3.0 3.5 4.0 4.5 5.0 Temperature (°C) 16.0 16.0 16.0 16.0 16.0 22.1 22.7 22.6 22.5 22.4 22.3",
+  "notes": "The scheme takes 3 off if the graph is not drawn on graph paper, accepts the axes the other way round, and on this graph allows the points to be joined by straight lines rather than a curve."
+ },
+ {
+  "id": "chem-2021-ol-q3-b-i",
+  "topicId": "chem-3-1",
+  "conceptId": "maximum-temperature-change",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2021 OL Q3(b)(i)",
+  "questionText": "Estimate the maximum temperature change as a result of the reaction.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -29483,285 +29642,2342 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "correct dumb-bell shape (6) [award 3 marks for drawing that shows overlapping dumb-bell shapes]",
+    "verbatim": "6.7 – 7.0 ⁰C",
     "marks": 6
    }
   ],
-  "stem": "In 1885 the Swiss mathematician Johann Balmer wrote a mathematical formula to describe the wavelengths of the visible line spectrum of atomic hydrogen, which is now named after him. However there was no explanation for the existence of these lines until 1913. green red violet blue wavelength In 1913 Bohr’s model of the hydrogen atom was shown to be consistent with the Balmer series. Bohr’s model was therefore supported by experimental evidence.",
-  "notes": "Three of the six are given for a drawing showing the two lobes overlapping.",
-  "figureKey": "chemistry-2024-hl-paper-p006-i0"
+  "stem": "A thermometer was inserted through the plastic lid of an insulated cup containing 100 cm3 of 1.0 M sodium hydroxide solution. A timer was started and the temperature of the contents of the cup was measured and recorded at 0.5-minute intervals for a total of 5 minutes. Between the 2 minute and 2.5 minute temperature readings, 100 cm3 of 1.0 M hydrochloric acid solution were quickly added to the cup and the mixture was stirred. The initial temperature of the HCl was 16.0 °C. The results are given in the table. The balanced equation for the neutralisation reaction between hydrochloric acid and sodium hydroxide is as follows: HCl + NaOH → NaCl + H2O The overall temperature change observed was used to calculate the heat of reaction (ΔH) for this neutralisation. Time (minutes) 0 0.5 1.0 1.5 2.0 2.5 3.0 3.5 4.0 4.5 5.0 Temperature (°C) 16.0 16.0 16.0 16.0 16.0 22.1 22.7 22.6 22.5 22.4 22.3",
+  "notes": "A range, not a single value: the change is read off the graph plotted in part (a), against an initial temperature of 16.0 °C."
  },
  {
-  "id": "chem-2024-hl-q8-a",
-  "topicId": "chem-1-4",
-  "conceptId": "geometry-change-during-addition",
-  "level": "higher",
-  "year": 2024,
+  "id": "chem-2021-ol-q5-c-iii",
+  "topicId": "chem-2-1",
+  "conceptId": "electron-transfer-in-beo",
+  "level": "ordinary",
+  "year": 2021,
   "subjectId": "chemistry",
   "section": "A",
-  "questionRef": "2024 HL Q8(a)",
-  "questionText": "How does the geometry around the carbon atoms change during reaction A?",
+  "questionRef": "2021 OL Q5(c)(iii)",
+  "questionText": "Using a dot and cross diagram, or otherwise, show how the bonding in BeO arises. (12)",
   "tariffModel": {
    "kind": "fixed",
-   "notation": "3 for the shape it starts as, 2 for what it becomes"
+   "notation": "2 x 3"
   },
-  "totalMarks": 5,
+  "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "planar",
-    "marks": 2
+    "verbatim": "outer two electrons transferred from beryllium atom",
+    "marks": 3
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "120°",
-    "marks": 1
+    "verbatim": "to an (one) oxygen atom",
+    "marks": 3
+   }
+  ],
+  "stem": "Refer to pages 79 and 81 of the Formulae and Tables booklet when answering this question.",
+  "notes": "The scheme prints \"[Diagram not essential.]\", so describing the transfer in words scores the full six; a dot and cross diagram showing the two ions is the other accepted route."
+ },
+ {
+  "id": "chem-2021-ol-q7-a-v",
+  "topicId": "chem-3-4",
+  "conceptId": "effect-of-adding-base-on-ph",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2021 OL Q7(a)(v)",
+  "questionText": "Slaked lime (Ca(OH)2) is the base usually added to acidic water to adjust its pH. Does the pH of water increase or decrease when base is added to it? (24)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "increase",
+    "marks": 3
+   }
+  ],
+  "stem": "Water undergoes various treatments to make it safe for supply as drinking water."
+ },
+ {
+  "id": "chem-2021-ol-q8-a-i",
+  "topicId": "chem-2-4",
+  "conceptId": "homologous-series-of-ethene",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2021 OL Q8(a)(i)",
+  "questionText": "Name the homologous series to which ethene (C2H4) belongs.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 of the 15 the scheme splits 3 + 6 + 6 across Q8(a)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "alkenes",
+    "marks": 3
+   }
+  ],
+  "stem": "Study the reaction scheme and answer the questions that follow."
+ },
+ {
+  "id": "chem-2021-ol-q8-b-i",
+  "topicId": "chem-4-2",
+  "conceptId": "product-of-adding-hydrogen-to-ethene",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2021 OL Q8(b)(i)",
+  "questionText": "Name the product X of the addition of H2 to ethene.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ethane",
+    "marks": 6
+   }
+  ],
+  "stem": "Study the reaction scheme and answer the questions that follow.",
+  "notes": "X is the product of the addition printed on the scheme as \"+ H2\"; the other 6 of the 12 the paper prints for Q8(b) belong to part (ii)."
+ },
+ {
+  "id": "chem-2021-ol-q9-b-i",
+  "topicId": "chem-u2",
+  "conceptId": "graph-of-hydrogen-volume-against-time",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2021 OL Q9(b)(i)",
+  "questionText": "Plot a graph (on graph paper) of volume of H2 versus time (x-axis).",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 x 3"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "axes correctly labelled with unit (cm3 and minute or min) or quantity (volume or vol or V and time or t)",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "axes correctly scaled",
+    "marks": 3
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "to tetrahedral",
-    "marks": 1
+    "verbatim": "4 points correctly plotted",
+    "marks": 3
    },
    {
     "id": "r-4",
     "kind": "point",
-    "verbatim": "109°",
-    "marks": 1
+    "verbatim": "3 further points correctly plotted",
+    "marks": 3
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "smooth curve correctly drawn through points and (0, 0)",
+    "marks": 3
    }
   ],
-  "stem": "Study the reaction scheme below and answer the questions that follow. B A C2H6 C2H5Cl C2H4 Cl2 X elimination Y polymerisation PVC",
-  "notes": "The scheme accepts trigonal or triangular for planar."
+  "stem": "The apparatus shown below was used to investigate the rate of formation of hydrogen gas according to the following balanced equation. Zn + 2HCl → ZnCl2 + H2 The reaction was started by bending the flexible tubing and standing the flask on its base so that the zinc pellets fell into the acid. A stop-watch was started at the same time. The volume of hydrogen gas collected was measured at intervals over a 12-minute period using a gas syringe. A set of results obtained at room temperature in such an investigation is given in the table. Zn pellets gas syringe flexible tubing HCl solution Time (minutes) 0 2 4 6 8 10 12 Volume H2 (cm3) 0 32 50 62 69 72 72",
+  "notes": "The paper prints 21 for Q9(b); 15 of it is this graph and 6 is part (ii). The scheme takes 3 off if the graph is not on graph paper and accepts the axes reversed. Unlike the Question 3 graph, this one has to be a smooth curve and has to pass through the origin.",
+  "figureKey": "chemistry-2021-OL-paper-p10-i0"
  },
  {
-  "id": "chem-2024-ol-q5-b-i",
-  "topicId": "chem-4-3",
-  "conceptId": "naming-a-greenhouse-gas",
+  "id": "chem-2021-ol-q9-c",
+  "topicId": "chem-3-2",
+  "conceptId": "reading-rate-and-volume-from-a-graph",
   "level": "ordinary",
-  "year": 2024,
+  "year": 2021,
   "subjectId": "chemistry",
   "section": "A",
-  "questionRef": "2024 OL Q5(b)(i)",
-  "questionText": "Name another greenhouse gas.",
+  "questionRef": "2021 OL Q9(c)",
+  "questionText": "From your graph find (i) the total volume of hydrogen gas produced, measured at room temperature, (ii) the time taken to produce half this volume of hydrogen, (iii) the average rate of the reaction over the first 5 minutes (in cm3 of H2 per minute at room temperature). (15)",
   "tariffModel": {
    "kind": "fixed",
-   "notation": "9 + 6 + 4 + 3 + 2 + 2 + 2"
+   "notation": "3 + 6 + 6"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "72 cm3",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2.2 – 2.6 minutes",
+    "marks": 6
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "11.0 – 11.4 cm3 H2 per minute",
+    "marks": 6
+   }
+  ],
+  "stem": "The apparatus shown below was used to investigate the rate of formation of hydrogen gas according to the following balanced equation. Zn + 2HCl → ZnCl2 + H2 The reaction was started by bending the flexible tubing and standing the flask on its base so that the zinc pellets fell into the acid. A stop-watch was started at the same time. The volume of hydrogen gas collected was measured at intervals over a 12-minute period using a gas syringe. A set of results obtained at room temperature in such an investigation is given in the table. Zn pellets gas syringe flexible tubing HCl solution Time (minutes) 0 2 4 6 8 10 12 Volume H2 (cm3) 0 32 50 62 69 72 72",
+  "notes": "The rows answer (i), (ii) and (iii) in that order. Two of the three are ranges because they are read off the candidate's own graph. The scheme allows the first 3 of the 6 marks for (ii) to be earned by extrapolating from half the total volume.",
+  "figureKey": "chemistry-2021-OL-paper-p10-i0"
+ },
+ {
+  "id": "chem-2021-ol-q10-a-1",
+  "topicId": "chem-1-2",
+  "conceptId": "atomic-number-mass-number-and-the-neutral-atom",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2021 OL Q10(a)",
+  "questionText": "The following words are omitted from the passage below.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2 x 6 + 4 x 3 + 1 (blanks 1-4)"
+  },
+  "totalMarks": 25,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "atomic",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "mass",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "neutral",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Rutherford",
+    "marks": null
+   }
+  ],
+  "stem": "neutral Rutherford atomic positive Bohr mass negative Write in your answerbook the omitted word corresponding to each of the numbers (1 to 7). The number of protons in an atom is its 1 number and the sum of the protons and neutrons in its nucleus is its 2 number. The number of electrons in the electron cloud of a 3 atom is the same as the number of protons in its nucleus. It was 4 who discovered that an atom has a small dense 5 central nucleus and it was 6 who first described the arrangement of the electrons in energy levels in the electron cloud of an atom. In a chemical reaction an atom becomes charged if it loses one or more of its electrons or gains one or more additional electrons. If the atom gains one or more electrons it becomes a 7 ion. (25)",
+  "notes": "The rows are the words for the blanks, in the order the passage prints them. No row carries a mark of its own: the scheme prices the seven blanks as one lot, 2 x 6 + 4 x 3 + 1, and does not say which blank is worth which, so the mark sits on the part and not on the rows. Split at blank four because a seven-row card does not fit the deck; each half keeps its blanks in the passage's own order."
+ },
+ {
+  "id": "chem-2021-ol-q10-a-2",
+  "topicId": "chem-1-2",
+  "conceptId": "rutherford-and-bohr-models-of-the-atom",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2021 OL Q10(a)",
+  "questionText": "The following words are omitted from the passage below.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2 x 6 + 4 x 3 + 1 (blanks 5-7)"
+  },
+  "totalMarks": 25,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "positive",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Bohr",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "negative",
+    "marks": null
+   }
+  ],
+  "stem": "neutral Rutherford atomic positive Bohr mass negative Write in your answerbook the omitted word corresponding to each of the numbers (1 to 7). The number of protons in an atom is its 1 number and the sum of the protons and neutrons in its nucleus is its 2 number. The number of electrons in the electron cloud of a 3 atom is the same as the number of protons in its nucleus. It was 4 who discovered that an atom has a small dense 5 central nucleus and it was 6 who first described the arrangement of the electrons in energy levels in the electron cloud of an atom. In a chemical reaction an atom becomes charged if it loses one or more of its electrons or gains one or more additional electrons. If the atom gains one or more electrons it becomes a 7 ion. (25)",
+  "notes": "The rows are the words for the blanks, in the order the passage prints them. No row carries a mark of its own: the scheme prices the seven blanks as one lot, 2 x 6 + 4 x 3 + 1, and does not say which blank is worth which, so the mark sits on the part and not on the rows. Split at blank four because a seven-row card does not fit the deck; each half keeps its blanks in the passage's own order."
+ },
+ {
+  "id": "chem-2021-ol-q10-c-iii",
+  "topicId": "chem-1-4",
+  "conceptId": "moles-and-volume-of-gas-at-stp",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2021 OL Q10(c)(iii)",
+  "questionText": "How many moles of NO2 gas react with one mole of urea in the reaction above? What volume does this amount of NO2 occupy, measured at s.t.p.? (25)",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 + 4"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1.5 or 6/4 or 3/2 moles NO2",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "33.6 litres NO2",
+    "marks": 4
+   }
+  ],
+  "stem": "catalyst 4NH2CONH2 + 6NO2 → 7N2 + 8H2O + 4CO2 400 ⁰C",
+  "notes": "The scheme reads the mole ratio straight off the balanced equation printed in the stem, then multiplies by the molar volume at s.t.p.; the four marks for the volume split 2 for the multiplication and 2 for the answer. A candidate who carries forward the 27 moles of urea found in part (ii) is allowed the volume that follows from it."
+ },
+ {
+  "id": "chem-2022-hl-q3-c-i",
+  "topicId": "chem-3-2",
+  "conceptId": "reaction-completion-time-from-a-graph",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 HL Q3(c)(i)",
+  "questionText": "the time taken for this reaction to be complete,",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4 x 3) + 3 + 3 + 3 + 3"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "13 – 14 minutes",
+    "marks": 3
+   }
+  ],
+  "stem": "Time (minutes) 0.0 1.0 3.0 5.0 8.0 10.0 12.0 14.0 16.0 Volume O2 (cm3) 0 30 66 88 104 109 111 112 112 Use this data to plot a graph of volume versus time for the decomposition of the hydrogen peroxide solution under these conditions. Use your graph to find",
+  "notes": "A range, not a single value: it is read off the curve the candidate plotted, at the point where the volume stops rising."
+ },
+ {
+  "id": "chem-2022-hl-q3-c-ii",
+  "topicId": "chem-3-2",
+  "conceptId": "average-rate-from-a-rate-graph",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 HL Q3(c)(ii)",
+  "questionText": "the average rate of the reaction over the first 4.0 minutes (in cm3 O2 per minute at room temperature and pressure),",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4 x 3) + 3 + 3 + 3 + 3"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "19 – 20 cm3 O2 per minute",
+    "marks": 3,
+    "accepts": [
+     "78 ÷ 4 = 19.5 cm3 O2 per minute"
+    ]
+   }
+  ],
+  "stem": "Time (minutes) 0.0 1.0 3.0 5.0 8.0 10.0 12.0 14.0 16.0 Volume O2 (cm3) 0 30 66 88 104 109 111 112 112 Use this data to plot a graph of volume versus time for the decomposition of the hydrogen peroxide solution under these conditions. Use your graph to find",
+  "notes": "The accepted alternative is the scheme's own worked route: total volume divided by total time, which for this data is 78 over 4."
+ },
+ {
+  "id": "chem-2022-hl-q3-c-iii",
+  "topicId": "chem-3-2",
+  "conceptId": "instantaneous-rate-from-a-tangent",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 HL Q3(c)(iii)",
+  "questionText": "the instantaneous rate of the reaction at 4.0 minutes (in cm3 O2 per minute at room temperature and pressure). (24)",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(4 x 3) + 3 + 3 + 3 + 3"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "good tangent drawn to plotted curve at 4 minutes",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "slope = 9.8 cm3 O2 per minute [8.8 – 12.2] cm3 O2 per minute",
+    "marks": 3
+   }
+  ],
+  "stem": "Time (minutes) 0.0 1.0 3.0 5.0 8.0 10.0 12.0 14.0 16.0 Volume O2 (cm3) 0 30 66 88 104 109 111 112 112 Use this data to plot a graph of volume versus time for the decomposition of the hydrogen peroxide solution under these conditions. Use your graph to find",
+  "notes": "Reaching the second 3 marks means reading two points off the tangent, or its rise and run, before the slope. The scheme insists the tangent be drawn for full marks, but will still allow those last 3 for a rate inside the stated range with no tangent drawn, or consequentially for work done on a poor tangent or one placed at the wrong time."
+ },
+ {
+  "id": "chem-2022-hl-q8-b-iv",
+  "topicId": "chem-4-2",
+  "conceptId": "classifying-esterification-as-substitution",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q8(b)(iv)",
+  "questionText": "Classify this esterification reaction as a redox reaction, an acid‐base reaction or a substitution reaction.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "(2 x 6) + (4 x 3) + 2"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "substitution",
+    "marks": null
+   }
+  ],
+  "notes": "Q8(b)(ii) to (vii) share one tariff — the scheme prints \"SEVEN POINTS: [(2 x 6) + (4 x 3) + 2]\" over them — so no part of the block has a mark of its own. totalMarks is what this card's answers are worth at the top rate of the scale. The reaction being classified is the esterification of methanoic acid with ethanol, written out in part (i)."
+ },
+ {
+  "id": "chem-2022-hl-q8-b-vi",
+  "topicId": "chem-4-2",
+  "conceptId": "products-of-base-hydrolysis-of-an-ester",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "B",
+  "questionRef": "2022 HL Q8(b)(vi)",
+  "questionText": "Identify the products of the base hydrolysis reaction between the ester methyl methanoate and an NaOH solution.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "(2 x 6) + (4 x 3) + 2"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "methanol",
+    "marks": null,
+    "accepts": [
+     "CH3OH"
+    ]
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "sodium methanoate",
+    "marks": null,
+    "accepts": [
+     "HCOONa"
+    ]
+   }
+  ],
+  "notes": "Q8(b)(ii) to (vii) share one tariff — the scheme prints \"SEVEN POINTS: [(2 x 6) + (4 x 3) + 2]\" over them — so no part of the block has a mark of its own. totalMarks is what this card's answers are worth at the top rate of the scale. Both products are wanted: the scheme separates them with a double solidus, which is its notation for two separately marked points."
+ },
+ {
+  "id": "chem-2022-ol-q3-b-i",
+  "topicId": "chem-u2",
+  "conceptId": "plotting-the-h2o2-decomposition-graph",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 OL Q3(b)(i)",
+  "questionText": "Plot a graph (on graph paper) of volume of O2 (y‐axis) versus time. From your graph (ii) estimate the time taken to collect 50 cm3 of oxygen, (iii) find the average rate of reaction over the first 2.5 minutes (in cm3 of O2 per minute). (24)",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(5 × 3) + 6 + 3 (the plot)"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "axis correctly labelled cm3 (volume, V)",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "axis correctly labelled minute (min, time, t)",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "axes correctly scaled",
+    "marks": 3
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "7 of the points other than (0, 0) correctly plotted",
+    "marks": 3
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "curve drawn through points and origin",
+    "marks": 3
+   }
+  ],
+  "stem": "flexible tubing O2 H2O2 solution and catalyst Time (minutes) 0 1 2 3 4 4.5 5 6 7 Volume O2 (cm3) 0 37.5 63 82 94 97 98 98 98",
+  "notes": "The paper runs (b)(i)–(iii) together in one block and prices them with a single (24), so the card carries all three: the first five rows are the plotting marks for (i), then (ii)'s estimate and (iii)'s rate. The citation follows the paper's numbering for the head of that block. The scheme adds three conditions: points joined by straight lines are unacceptable, minus 3 if the graph is not on graph paper, and reversed axes are acceptable."
+ },
+ {
+  "id": "chem-2022-ol-q4-k",
+  "topicId": "chem-1-4",
+  "conceptId": "molecular-formula-of-phenol",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 OL Q4(k)",
+  "questionText": "The diagram below shows the structure of a benzene molecule on the left and the structure of a molecule of the antiseptic compound phenol on the right. The molecular formula of benzene is C6H6. Write the molecular formula of phenol.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "C6H6O",
+    "marks": 6,
+    "accepts": [
+     "C6H5OH"
+    ]
+   }
+  ],
+  "stem": "Answer eight of the following (a), (b), (c), etc. (50)",
+  "notes": "The scheme allows 3 of the 6 for an incorrect formula with six carbons and one oxygen. The paper draws the two structures beside the question, but the question itself names phenol and gives benzene's formula, so the drawing prompts the answer rather than carrying it.",
+  "figureKey": "chemistry-2022-ol-paper-p006-i0"
+ },
+ {
+  "id": "chem-2022-ol-q7-b-1",
+  "topicId": "chem-3-4",
+  "conceptId": "the-ph-scale-and-the-ions-that-set-it",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 OL Q7(b)",
+  "questionText": "The following terms are omitted from the passage below.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "(4 x 6) + (3 x 2) (blanks A-D)"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A 0",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B OH–",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C H+",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "D 1",
+    "marks": null
+   }
+  ],
+  "stem": "decreases 0 H+ 1 OH– increases 10 Write in your answerbook the omitted term corresponding to each of the letters A to G. The pH scale ranges from A to 14, where a pH value of 7 means that there are equal numbers of H+ and B ions in a solution. The lower the pH value, the more C ions are present. The calculation referred to above illustrates that because the pH scale is logarithmic, a change in pH of D unit is observed when the concentration of H+ ion in solution changes by a factor of E . It can also be noted from the calculation that when the concentration of H+ ion decreases, the pH value F . During a titration, as more H+ ions are added to an alkaline solution in a conical flask, the pH value of the solution in the flask G until the end point is reached. (30)",
+  "notes": "Each row keeps the scheme's letter in front of its term, because the term only scores against the blank it belongs to. \"(4 x 6) + (3 x 2)\" pays the first four correct terms 6 each and the next three 2 each - the rate depends on how many blanks are right, not on which ones, so no blank has a mark of its own and every row is null. The paper prints the word bank, the instruction and the passage above the question; the block segmentation files all three as this part's stem. Split at blank D because a seven-row card does not fit the deck."
+ },
+ {
+  "id": "chem-2022-ol-q7-b-2",
+  "topicId": "chem-3-4",
+  "conceptId": "how-ph-changes-with-acidity-and-alkalinity",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 OL Q7(b)",
+  "questionText": "The following terms are omitted from the passage below.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "(4 × 6) + (3 × 2)"
+  },
+  "totalMarks": 30,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "E 10",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "F increases",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "G decreases",
+    "marks": null
+   }
+  ],
+  "stem": "decreases 0 H+ 1 OH– increases 10 Write in your answerbook the omitted term corresponding to each of the letters A to G. The pH scale ranges from A to 14, where a pH value of 7 means that there are equal numbers of H+ and B ions in a solution. The lower the pH value, the more C ions are present. The calculation referred to above illustrates that because the pH scale is logarithmic, a change in pH of D unit is observed when the concentration of H+ ion in solution changes by a factor of E . It can also be noted from the calculation that when the concentration of H+ ion decreases, the pH value F . During a titration, as more H+ ions are added to an alkaline solution in a conical flask, the pH value of the solution in the flask G until the end point is reached. (30)",
+  "notes": "Each row keeps the scheme's letter in front of its term, because the term only scores against the blank it belongs to. \"(4 × 6) + (3 × 2)\" pays the first four correct terms 6 each and the next three 2 each — the rate depends on how many blanks are right, not on which ones, so no blank has a mark of its own and every row is null. The paper prints the word bank, the instruction and the passage above the question; the block segmentation files all three as this part's stem."
+ },
+ {
+  "id": "chem-2022-ol-q8-b-i",
+  "topicId": "chem-4-2",
+  "conceptId": "atoms-lost-when-ethanol-becomes-ethanal",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 OL Q8(b)(i)",
+  "questionText": "How many atoms, of which element, are lost when a molecule of ethanol is converted into a molecule of ethanal?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "FOUR POINTS: [6 + 6 + 2 + 1]"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "2",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "hydrogen (H)",
+    "marks": null
+   }
+  ],
+  "notes": "Q8(b) is one pool of FOUR POINTS: [6 + 6 + 2 + 1] = 15 across (i)–(iii), the (15) the paper prints. Two of those four points fall in (i) — the number and the element are separately marked — and k correct points take the top k values, so these two are worth 6 + 6 = 12. The rate depends on how many points are right rather than on which, so both rows are null."
+ },
+ {
+  "id": "chem-2022-ol-q8-c-i",
+  "topicId": "chem-4-2",
+  "conceptId": "atoms-gained-when-ethanal-becomes-ethanoic-acid",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 OL Q8(c)(i)",
+  "questionText": "How many atoms, of which element, are gained when a molecule of ethanal is converted into a molecule of ethanoic acid?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "FIVE POINTS: [6 + 6 + 3 + 2 + 1]"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "oxygen (O)",
+    "marks": null
+   }
+  ],
+  "notes": "Q8(c) is one pool of FIVE POINTS: [6 + 6 + 3 + 2 + 1] = 18 across (i)–(iii), the (18) the paper prints. Two of those five points fall in (i) — the number and the element are separately marked — and k correct points take the top k values, so these two are worth 6 + 6 = 12. Both rows are null because the rate depends on how many points are right rather than on which."
+ },
+ {
+  "id": "chem-2022-ol-q9-a",
+  "topicId": "chem-u2",
+  "conceptId": "flame-test-for-sodium",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 OL Q9(a)",
+  "questionText": "Describe how you could carry out a flame test to confirm the presence of sodium in a sample of a salt. (12)",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "ANY THREE: [6 + 4 + 2]"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "clean a platinum (nichrome) wire* (rod, probe) in HCl (concentrated hydrochloric acid)",
+    "marks": null,
+    "accepts": [
+     "soak wood (splint, stick) overnight in water",
+     "use damp (wet) wood (splint, stick)",
+     "prepare a solution of the given salt"
+    ],
+    "contextNote": "[*Allow ‘metal inoculating loop’, or ‘metal spatula’ for ‘platinum (nichrome) wire’.]"
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "dip wet rod in salt (sample)",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "alt",
+    "verbatim": "hold salt in or over hot (blue) part of Bunsen flame",
+    "marks": null,
+    "accepts": [
+     "spray salt solution onto (into) hot (blue) part of Bunsen flame"
+    ]
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "yellow (amber, orange) colour confirms sodium salt",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme sets three complete methods side by side and awards ANY THREE points from the table at [6 + 4 + 2]: three correct points score 12, two score 10, one scores 6. A point's value depends on how many were given rather than on which, so every row is null. The rows follow Method 1 — clean wire, dip, hold in the flame, read the colour — and the alternatives on the first and third rows are the matching cells of Methods 2 and 3. The asterisk on \"wire\" is the scheme's own footnote marker, quoted in the note on the first row. Method 2's and Method 3's second-row cells are not offered: the parser welded them into one block that cannot be cut apart without splitting a phrase."
+ },
+ {
+  "id": "chem-2022-ol-q10-c-iv",
+  "topicId": "chem-1-4",
+  "conceptId": "moles-of-co2-from-the-mole-ratio",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 OL Q10(c)(iv)",
+  "questionText": "How many moles of carbon dioxide were used up in the electrolysis reaction to produce this quantity of oxygen?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.3375 – 0.34 moles CO2",
+    "marks": 3,
+    "contextNote": "The balanced equation 2CO2 → O2 + 2CO takes two moles of CO2 for every mole of O2, so the working is 0.16875 × 2. The scheme accepts anything in the range shown."
+   }
+  ],
+  "stem": "2CO2  O2 + 2CO In a test conducted in April 2021 on Mars, MOXIE produced 5.4 g of O2 in one hour.",
+  "notes": "chem-2022-ol-q10-c-ii records this part as skipped \"because the scheme's own answer line names CO2 while the following part treats the same 0.3375 moles as CO\". The two lines do not contradict each other: 2CO2 → O2 + 2CO consumes two moles of CO2 and releases two moles of CO for every mole of O2, so 0.16875 mol of O2 accounts for 0.3375 mol of CO2 in and 0.3375 mol of CO out, and the same number is correct in both places."
+ },
+ {
+  "id": "chem-2022-ol-q10-c-v",
+  "topicId": "chem-1-4",
+  "conceptId": "mass-of-co-from-moles",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 OL Q10(c)(v)",
+  "questionText": "What mass of CO by‐product was produced by MOXIE in one hour? (25)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "9.45 – 9.52 g CO",
+    "marks": 4,
+    "contextNote": "Two of the four marks are for Mr CO = 28 with n = m/Mr, and two for the answer, 0.3375 × 28. The scheme accepts anything in the range shown."
+   }
+  ],
+  "stem": "2CO2  O2 + 2CO In a test conducted in April 2021 on Mars, MOXIE produced 5.4 g of O2 in one hour.",
+  "notes": "chem-2022-ol-q10-c-ii records this part as skipped \"because it depends on the answer to (iv)\". The scheme prices it on its own — a banded final answer of 9.45 – 9.52 g CO for 4 — so the card quotes that, in the same shape as the cards for (i) and (ii)."
+ },
+ {
+  "id": "chem-2022-ol-q11-b-iii",
+  "topicId": "chem-1-1",
+  "conceptId": "diffusion-of-smoke-in-air",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 OL Q11(b)(iii)",
+  "questionText": "What term is used to describe the spreading out of smoke in air as shown in the photograph of the 2021 eruption of the Cumbre Vieja volcano in the Canary Islands?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "diffusion",
+    "marks": 3,
+    "accepts": [
+     "dissipation"
+    ]
+   }
+  ],
+  "notes": "chem-2022-ol-q11-b-ii records this part as skipped because the Cumbre Vieja photograph is not reproduced. The question describes the phenomenon in words — \"the spreading out of smoke in air\" — and the term asked for follows from that description, so the photograph illustrates the ask rather than carrying it. Q11(b) is priced (3 × 3) + 3 + 3 + 9 + 1 = 25, the (25) the paper prints, and this roman is the third of those threes.",
+  "figureKey": "chemistry-2022-OL-paper-p12-i0"
+ },
+ {
+  "id": "chem-2023-hl-q1-d-ii",
+  "topicId": "chem-4-1",
+  "conceptId": "moles-of-iron-ii-in-a-25-cm3-portion",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2023 HL Q1(d)(ii)",
+  "questionText": "the number of moles of Fe2+ ion in a 25.0 cm3 portion of the standard solution,",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9 + 3 + 3 + 3 across the four calculations of Q1(d)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.002375 (2.375 × 10–3, 19/8000) moles Fe2+ in 25.0 cm3",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme requires the answer to Q1(d)(i) to be divided by 40 — the 25.0 cm3 portion is a fortieth of the litre that part (i) reports."
+ },
+ {
+  "id": "chem-2023-hl-q1-d-iii",
+  "topicId": "chem-4-1",
+  "conceptId": "moles-of-manganate-vii-reduced",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2023 HL Q1(d)(iii)",
+  "questionText": "the number of moles of potassium manganate(VII) reduced to Mn2+ by this quantity of Fe2+ ion,",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9 + 3 + 3 + 3 across the four calculations of Q1(d)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.000475 (4.75 × 10–4, 19/40000) moles of KMnO4 reduced",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme sets out the mole ratio Fe2+ : potassium manganate(VII) as 5 : 1 above this answer and requires the answer to Q1(d)(ii) to be divided by five."
+ },
+ {
+  "id": "chem-2023-hl-q1-d-iv",
+  "topicId": "chem-4-1",
+  "conceptId": "concentration-of-manganate-vii-solution",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2023 HL Q1(d)(iv)",
+  "questionText": "the concentration of the potassium manganate(VII) solution in moles per litre. (18)",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9 + 3 + 3 + 3 across the four calculations of Q1(d)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.02 – 0.022 M KMnO4",
+    "marks": 3
+   }
+  ],
+  "notes": "A range, not a single value: the scheme accepts anything from 0.02 to 0.022 M. It gets there by putting the moles from Q1(d)(iii) against the 22.6 cm3 average titre the question gives, and it refuses to award all 18 marks of Q1(d) for a correct answer to this part alone."
+ },
+ {
+  "id": "chem-2023-hl-q2-a-i",
+  "topicId": "chem-u2",
+  "conceptId": "preparing-and-collecting-ethyne-apparatus",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2023 HL Q2(a)(i)",
+  "questionText": "Draw a labelled diagram to show a suitable arrangement of apparatus and chemicals for the preparation of ethyne from the reaction of calcium carbide with water and for the collection of the gas in test-tubes over water.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 + 3 + 3"
   },
   "totalMarks": 9,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "carbon dioxide, water, methane, nitrous oxide, ozone, CFCs, HCFCs, etc. [accept formula]",
-    "marks": 9
+    "verbatim": "water (H2O)",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "calcium carbide (CaC2)",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "correct arrangement of apparatus",
+    "marks": 3
    }
   ],
-  "stem": "The periodic table on page 81 of the Formulae and Tables booklet shows the electronegativity values of the elements. Part of this table is shown in the diagram below. 1 18 1 2 H He 2.20 2 13 14 15 16 17 – – 3 4 5 6 7 8 9 10 Li Be B C N O F Ne 0.98 1.57 2.04 2.55 3.04 3.44 3.98 – – 11 12 13 14 15 16 17 18 Na Mg Al Si P S Cl Ar 0.93 1.31 3 4 5 6 7 8 9 10 11 12 1.61 1.90 2.19 2.58 3.16 – – 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr 0.82 1.00 1.36 1.54 1.63 1.66 1.55 1.83 1.88 1.91 1.90 1.65 1.81 2.01 2.18 2.55 2.96 – – Electronegativity values increase across a period of the periodic table.",
-  "figureKey": "chemistry-2024-ol-paper-p006-i0"
+  "notes": "Two of the three marks are for naming the right chemicals in the right places; the third is for the arrangement of the apparatus itself, and the scheme says no more about it than the row does."
  },
  {
-  "id": "chem-2024-ol-q5-b-ii",
-  "topicId": "chem-1-2",
-  "conceptId": "electron-configuration-of-nitrogen",
+  "id": "chem-2023-hl-q6-e-ii",
+  "topicId": "chem-3-1",
+  "conceptId": "delta-h-difference-between-successive-alkanes",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2023 HL Q6(e)(ii)",
+  "questionText": "Estimate from the graph the difference between the values of ΔH of combustion of two successive members of the alkane homologous series. (11)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "600 – 700 kJ mol–1",
+    "marks": 5
+   }
+  ],
+  "notes": "An estimate read off a graph, so the scheme accepts a range rather than a value. The graph itself is not needed to learn what the step between successive alkanes is worth."
+ },
+ {
+  "id": "chem-2023-hl-q9-d-i",
+  "topicId": "chem-3-3",
+  "conceptId": "le-chatelier-on-adding-chlorine-to-the-pcl5-equilibrium",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2023 HL Q9(d)(i)",
+  "questionText": "Explain how the change in concentration of PCl5 (Δx), when equilibrium is re-established after adding the Cl2 to the original equilibrium mixture, is consistent with Le Châtelier’s principle.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 × 3"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "adding chlorine (Cl2) is a stress",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "relieved when chlorine (Cl2) reacts forming more PCl5 (favouring forward reaction, right hand side, greater yield of product)",
+    "marks": 3
+   }
+  ],
+  "stem": "Consider the formation of gaseous PCl5 by the reversible reaction of PCl3 gas with Cl2 gas in a container of fixed volume kept at a certain temperature T. PCl3 (g) + Cl2 (g) ⇌ PCl5",
+  "notes": "The scheme writes the two marks as one point split by its double solidus — the stress, then how the equilibrium relieves it — so the second mark is not available for naming the stress a second time."
+ },
+ {
+  "id": "chem-2023-hl-q10-b-iii",
+  "topicId": "chem-1-4",
+  "conceptId": "find-n-and-molar-mass-succinic-acid",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2023 HL Q10(b)(iii)",
+  "questionText": "Find the value of n and the mass of one mole of succinic acid.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 + 2 + 3"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "18.48 = 9.24n",
+    "marks": 2,
+    "accepts": [
+     "24.78n + 237.18 = 34.02n + 218.7"
+    ]
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "n = 2",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "molar mass of (CH2)n(COOH)2 = 118 g",
+    "marks": 3
+   }
+  ],
+  "notes": "The first row is the equation that comes of setting the two mole expressions of Q10(b)(ii) equal to each other; the scheme prints the expanded and the collected form and takes either. It also allows the whole part to be done by trial and error from n = 2, but marks from the two routes may not be mixed."
+ },
+ {
+  "id": "chem-2023-hl-q10-b-iv",
+  "topicId": "chem-1-4",
+  "conceptId": "volume-of-naoh-for-complete-reaction",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2023 HL Q10(b)(iv)",
+  "questionText": "What volume of a 0.12 M NaOH solution is required for complete reaction with an aqueous solution containing 1.77 g succinic acid? (25)",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 + 2 + 2"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.015 moles (CH2)n(COOH)2",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "0.03 moles NaOH",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "V = 250 cm3",
+    "marks": 2
+   }
+  ],
+  "notes": "Three marked steps rather than one answer: the moles of acid, the moles of sodium hydroxide those need — twice the acid, from the balanced equation in the question — and the volume that holds them."
+ },
+ {
+  "id": "chem-2023-hl-q11-a-ii",
+  "topicId": "chem-2-3",
+  "conceptId": "charles-law-consistent-with-pv-nrt",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2023 HL Q11(a)(ii)",
+  "questionText": "Explain why Charles’s law is consistent with pV = nRT, the equation of state for an ideal gas. The equation pV = nRT provides a good approximation for the behaviour of real gases under many conditions, but it has limitations.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "n and R constant for a fixed mass of gas and p also constant",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme gives this answer twice, once as the rearrangement of pV = nRT and once as the sentence the row carries; the row takes the sentence because the rearranged form survives only as mangled glyphs in the scheme's text layer. The paper sets the lead-in to Q11(a)(iii) directly beneath this part with no marker between them, so the block ends on that sentence about the limitations of pV = nRT; the ask is the first sentence."
+ },
+ {
+  "id": "chem-2023-ol-q1-c-i",
+  "topicId": "chem-2-4",
+  "conceptId": "structure-of-the-ethyne-molecule",
   "level": "ordinary",
+  "year": 2023,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2023 OL Q1(c)(i)",
+  "questionText": "Draw the structure of the ethyne (C2H2) molecule showing all of its atoms and all of its bonds.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 6 + 3 + 3 across Q1(c)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "H–C≡C–H",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme prints the answer as the structural formula on its own line, directly under its \"DRAW:\" cue. The triple bond is what \"showing all of its bonds\" is asking for. The paper sets this part under a diagram of the ethyne generator whose labels the block segmentation reads as the question stem, so the card carries no stem."
+ },
+ {
+  "id": "chem-2023-ol-q2-d-ii",
+  "topicId": "chem-4-1",
+  "conceptId": "average-titre-from-the-accurate-titrations",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2023 OL Q2(d)(ii)",
+  "questionText": "Calculate the average volume of HCl required to neutralise the Na2CO3.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "(22.5 + 22.4) ÷ 2 = 22.45 cm3",
+    "marks": 3,
+    "accepts": [
+     "22.45 cm3"
+    ]
+   }
+  ],
+  "stem": "Rough titration First accurate titration Second accurate titration 23.1 cm3 22.5 cm3 22.4 cm3",
+  "notes": "Q2(d) is priced (3 + 3 + 9) and the paper prints (15) against it. The rough titration is excluded from the average: only the two accurate titres are used. The card's stem is the paper's own table of titres."
+ },
+ {
+  "id": "chem-2023-ol-q2-d-iii",
+  "topicId": "chem-4-1",
+  "conceptId": "concentration-of-hcl-from-the-titration",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2023 OL Q2(d)(iii)",
+  "questionText": "Calculate the concentration, in moles per litre, of the HCl solution. (15)",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 + 3 + 3"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1.25 × 10–3 moles Na2CO3",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "1.25 × 10–3 × 2 = 2.50 × 10–3 moles HCl",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "0.111 mol l–1 HCl",
+    "marks": 3
+   }
+  ],
+  "stem": "Rough titration First accurate titration Second accurate titration 23.1 cm3 22.5 cm3 22.4 cm3",
+  "notes": "The scheme sets each step of the working as a fraction, so the flattened text splits a numerator from its denominator. Row 1 is therefore the moles of Na2CO3 the first step arrives at, cut from the line that carries it, rather than the whole fraction; rows 2 and 3 are printed on one line each and are lifted whole. The 2 : 1 mole ratio in row 2 is the one in the balanced equation the paper prints above the table."
+ },
+ {
+  "id": "chem-2023-ol-q3-a-i",
+  "topicId": "chem-u2",
+  "conceptId": "measuring-suspended-solids-by-filtration",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2023 OL Q3(a)(i)",
+  "questionText": "With the aid of a labelled diagram, describe how the concentration of suspended solids in a sample of this water could have been measured.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8 + 3"
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "filtration diagram with at least one label",
+    "marks": 8
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "known (stated) volume water",
+    "marks": 3,
+    "accepts": [
+     "find mass dried filter paper",
+     "weigh dried filter paper"
+    ]
+   }
+  ],
+  "notes": "A drawing question the scheme answers in words: 8 of the 11 marks are for a labelled filtration diagram and 3 for the measurement itself. The paper sets parts (iii) and (iv) of this question in the block above (a)(i), so the segmentation offers them as a stem and the card is left without one."
+ },
+ {
+  "id": "chem-2023-ol-q3-b-i",
+  "topicId": "chem-4-3",
+  "conceptId": "which-of-the-tested-ions-are-anions",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2023 OL Q3(b)(i)",
+  "questionText": "Identify which of the ions in the first column of the table above are anions.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + [6 × 3] across Q3(b)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "chloride (Cl–)",
+    "marks": 6
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "nitrate (NO3–)",
+    "marks": 3
+   }
+  ],
+  "stem": "Ion Formula Test Chloride ion Cl– Add AgNO3 solution to a sample of estuary water in a test-tube Nitrate ion NO3– Add FeSO4 solution to a sample of estuary water in a test-tube and then add concentrated H2SO4 slowly down the side of the test-tube, giving two layers Sodium ion Na+ Carry out a flame test on the dissolved solids obtained from the estuary water",
+  "notes": "The third ion in the paper's table, the sodium ion (Na+), is a cation and is not part of the answer. The card's stem is the paper's own table of ions, formulas and tests, which is the \"first column\" the question sends the candidate to."
+ },
+ {
+  "id": "chem-2023-ol-q9-b-i",
+  "topicId": "chem-u1",
+  "conceptId": "plotting-mass-of-co2-against-time",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2023 OL Q9(b)(i)",
+  "questionText": "Plot a graph (on graph paper) of the mass of CO2 produced versus time (x-axis).",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 × 3"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "axis correctly labelled g (mass, m)",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "axis correctly labelled minute (min, time, t)",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "axes correctly scaled",
+    "marks": 3
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "7 points other than (0, 0) correctly plotted on graph paper",
+    "marks": 3
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "curve drawn through (very close to) points and origin",
+    "marks": 3
+   }
+  ],
+  "stem": "The apparatus shown below was used to investigate the rate of formation of carbon dioxide gas according to the following balanced equation. 2HCl + CaCO3 → CaCl2 + H2O + CO2 A mass balance was zeroed with a few lumps of solid calcium carbonate, a flask containing excess hydrochloric acid at room temperature, and a cotton wool plug, standing on it. A stopwatch was started when the calcium carbonate was added to the acid and the cotton- wool plug placed in the mouth of the flask. The mass of carbon dioxide gas produced and lost from the flask was measured at one-minute intervals over an 8-minute period using the balance. HCl solution CaCO3 before during A set of results obtained at room temperature in such an investigation is given in the table. Time (minutes) 0 1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0 Mass CO2 (grams) 0 0.26 0.41 0.50 0.56 0.59 0.60 0.60 0.60",
+  "notes": "The scheme will not accept the points joined by straight lines — the curve has to be a smooth one through the points and the origin — and it accepts the axes reversed. The card's stem is the paper's account of the experiment together with its table of results; the words \"HCl solution CaCO3 before during\" inside it are labels on the paper's apparatus diagram that the block segmentation picks up.",
+  "figureKey": "chemistry-2023-ol-paper-p010-i0"
+ },
+ {
+  "id": "chem-2023-ol-q9-c",
+  "topicId": "chem-3-2",
+  "conceptId": "reading-values-off-the-rate-graph",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2023 OL Q9(c)",
+  "questionText": "From your graph find (i) the time taken until the reaction was complete, (ii) the time taken for 0.30 g of CO2 to be produced and lost from the flask, (iii) the mass of CO2 produced over the first 2.5 minutes. (15)",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 6 + 3"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "5.5 – 6.0 minute",
+    "marks": 6
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "1.1 – 1.3 minute",
+    "marks": 6
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "0.41 – 0.49 g CO2",
+    "marks": 3
+   }
+  ],
+  "stem": "The apparatus shown below was used to investigate the rate of formation of carbon dioxide gas according to the following balanced equation. 2HCl + CaCO3 → CaCl2 + H2O + CO2 A mass balance was zeroed with a few lumps of solid calcium carbonate, a flask containing excess hydrochloric acid at room temperature, and a cotton wool plug, standing on it. A stopwatch was started when the calcium carbonate was added to the acid and the cotton- wool plug placed in the mouth of the flask. The mass of carbon dioxide gas produced and lost from the flask was measured at one-minute intervals over an 8-minute period using the balance. HCl solution CaCO3 before during A set of results obtained at room temperature in such an investigation is given in the table. Time (minutes) 0 1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0 Mass CO2 (grams) 0 0.26 0.41 0.50 0.56 0.59 0.60 0.60 0.60",
+  "notes": "Each answer is a range because it is read off the candidate's own graph. The rows run in the paper's order: (i) when the reaction finished, (ii) when 0.30 g of CO2 had been lost, (iii) how much CO2 was lost in the first 2.5 minutes. The reaction is complete where the curve flattens, which the paper's own table shows happening at 0.60 g.",
+  "figureKey": "chemistry-2023-ol-paper-p010-i0"
+ },
+ {
+  "id": "chem-2024-hl-q3-b-i",
+  "topicId": "chem-u2",
+  "conceptId": "rate-values-from-reaction-times",
+  "level": "higher",
   "year": 2024,
   "subjectId": "chemistry",
   "section": "A",
-  "questionRef": "2024 OL Q5(b)(ii)",
-  "questionText": "Write the electron configuration for an atom of nitrogen (N).",
+  "questionRef": "2024 HL Q3(b)(i)",
+  "questionText": "Copy and complete the third row of the table into your answerbook by filling in the missing rate values, correct to three decimal places.",
   "tariffModel": {
    "kind": "fixed",
-   "notation": "9 + 6 + 4 + 3 + 2 + 2 + 2"
+   "notation": "6 × 1"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.016, 0.014, 0.012, 0.010, 0.008, 0.006",
+    "marks": 6
+   }
+  ],
+  "stem": "The reaction of sodium thiosulfate with hydrochloric acid is described by the following balanced chemical equation: Na2S2O3 + 2HCl  2NaCl + SO2 + S + H2O To investigate the effect of concentration on the rate of this reaction, the experiment was carried out for a number of different concentrations of sodium thiosulfate solution. For each run, a stopwatch was started when 100 cm3 of Na2S2O3 were mixed with 10 cm3 of 3 M HCl. For each run, the reaction was carried out at room temperature and the time taken for the same mass of sulfur to precipitate was measured. The inverse of that time was taken as a measure of the initial rate of reaction. The results are shown in the table below. Concentration of Na2S2O3 (M) 0.10 0.09 0.08 0.07 0.06 0.05 0.04 0.03 Time (s) 50 56 63 72 84 100 125 168 Rate = 1 Time (s–1) 0.020 0.018",
+  "notes": "One mark for each of the six values. They fill the third row of the paper's table from left to right, from the 0.08 M run to the 0.03 M run.",
+  "figureKey": "chemistry-2024-hl-paper-p004-i0"
+ },
+ {
+  "id": "chem-2024-hl-q3-b-ii",
+  "topicId": "chem-u2",
+  "conceptId": "graph-of-rate-against-concentration",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2024 HL Q3(b)(ii)",
+  "questionText": "Draw a graph on graph paper to show how the rate of the reaction varies with the concentration of sodium thiosulfate solution.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 + 6 + 2"
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "axes labelled",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "points plotted",
+    "marks": 6
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "line of best fit",
+    "marks": 2
+   }
+  ],
+  "stem": "The reaction of sodium thiosulfate with hydrochloric acid is described by the following balanced chemical equation: Na2S2O3 + 2HCl  2NaCl + SO2 + S + H2O To investigate the effect of concentration on the rate of this reaction, the experiment was carried out for a number of different concentrations of sodium thiosulfate solution. For each run, a stopwatch was started when 100 cm3 of Na2S2O3 were mixed with 10 cm3 of 3 M HCl. For each run, the reaction was carried out at room temperature and the time taken for the same mass of sulfur to precipitate was measured. The inverse of that time was taken as a measure of the initial rate of reaction. The results are shown in the table below. Concentration of Na2S2O3 (M) 0.10 0.09 0.08 0.07 0.06 0.05 0.04 0.03 Time (s) 50 56 63 72 84 100 125 168 Rate = 1 Time (s–1) 0.020 0.018",
+  "notes": "The scheme takes a mark off for each incorrectly plotted point, and caps the plotting marks at three if graph paper is not used."
+ },
+ {
+  "id": "chem-2024-hl-q3-c-i",
+  "topicId": "chem-u2",
+  "conceptId": "estimating-a-rate-from-the-graph",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2024 HL Q3(c)(i)",
+  "questionText": "Use your graph to estimate the rate of reaction if 100 cm3 of 0.015 M Na2S2O3 solution had been used.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 + 4 across Q3(c)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "≈ 0.003 (s–1)",
+    "marks": 4
+   }
+  ],
+  "stem": "The reaction of sodium thiosulfate with hydrochloric acid is described by the following balanced chemical equation: Na2S2O3 + 2HCl  2NaCl + SO2 + S + H2O To investigate the effect of concentration on the rate of this reaction, the experiment was carried out for a number of different concentrations of sodium thiosulfate solution. For each run, a stopwatch was started when 100 cm3 of Na2S2O3 were mixed with 10 cm3 of 3 M HCl. For each run, the reaction was carried out at room temperature and the time taken for the same mass of sulfur to precipitate was measured. The inverse of that time was taken as a measure of the initial rate of reaction. The results are shown in the table below. Concentration of Na2S2O3 (M) 0.10 0.09 0.08 0.07 0.06 0.05 0.04 0.03 Time (s) 50 56 63 72 84 100 125 168 Rate = 1 Time (s–1) 0.020 0.018",
+  "notes": "The scheme prints the value behind an approximation sign, so a reading close to it scores: this is a value read off the candidate's own graph.",
+  "figureKey": "chemistry-2024-hl-paper-p004-i0"
+ },
+ {
+  "id": "chem-2024-hl-q3-c-ii",
+  "topicId": "chem-u2",
+  "conceptId": "time-from-an-estimated-rate",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2024 HL Q3(c)(ii)",
+  "questionText": "Calculate the time taken for the sulfur to precipitate in this case. (8)",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 + 4 across Q3(c)"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "333 (s)",
+    "marks": 4
+   }
+  ],
+  "stem": "The reaction of sodium thiosulfate with hydrochloric acid is described by the following balanced chemical equation: Na2S2O3 + 2HCl  2NaCl + SO2 + S + H2O To investigate the effect of concentration on the rate of this reaction, the experiment was carried out for a number of different concentrations of sodium thiosulfate solution. For each run, a stopwatch was started when 100 cm3 of Na2S2O3 were mixed with 10 cm3 of 3 M HCl. For each run, the reaction was carried out at room temperature and the time taken for the same mass of sulfur to precipitate was measured. The inverse of that time was taken as a measure of the initial rate of reaction. The results are shown in the table below. Concentration of Na2S2O3 (M) 0.10 0.09 0.08 0.07 0.06 0.05 0.04 0.03 Time (s) 50 56 63 72 84 100 125 168 Rate = 1 Time (s–1) 0.020 0.018",
+  "notes": "\"This case\" is the 0.015 M solution of part (c)(i). The scheme writes the working as a fraction whose numerator sits in a block of its own, so the card carries the value the four marks are awarded for rather than an equation the text layer has run together.",
+  "figureKey": "chemistry-2024-hl-paper-p004-i0"
+ },
+ {
+  "id": "chem-2024-hl-q8-c-iii",
+  "topicId": "chem-4-2",
+  "conceptId": "bonds-broken-in-an-elimination",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2024 HL Q8(c)(iii)",
+  "questionText": "Draw the structure of a molecule of X showing all of its atoms and all of its bonds and indicate clearly which of its bonds are broken during the elimination reaction.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 for the structure drawn + 3 for the bonds indicated"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "one C–Cl bond indicated and one C–H bond on the other carbon indicated",
+    "marks": 3
+   }
+  ],
+  "stem": "Study the reaction scheme below and answer the questions that follow. B A C2H6 C2H5Cl C2H4 Cl2 X elimination Y polymerisation PVC",
+  "notes": "Six marks in all. The other three are for the drawn structure of X, which the scheme prints as a diagram and this card cannot show."
+ },
+ {
+  "id": "chem-2024-hl-q8-c-iv",
+  "topicId": "chem-4-2",
+  "conceptId": "bond-formed-in-an-elimination",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2024 HL Q8(c)(iv)",
+  "questionText": "Draw the structure of a molecule of Y showing all of its atoms and all of its bonds and indicate clearly which of its bonds are formed during the elimination reaction.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 for the structure drawn + 3 for the bond indicated"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(one bond of the) C=C double bond indicated",
+    "marks": 3
+   }
+  ],
+  "stem": "Study the reaction scheme below and answer the questions that follow. B A C2H6 C2H5Cl C2H4 Cl2 X elimination Y polymerisation PVC",
+  "notes": "Six marks in all. The other three are for the drawn structure of Y, which the scheme prints as a diagram and this card cannot show."
+ },
+ {
+  "id": "chem-2024-hl-q10-c-ii",
+  "topicId": "chem-2-3",
+  "conceptId": "mass-of-product-from-moles-of-reactant",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2024 HL Q10(c)(ii)",
+  "questionText": "Calculate the mass of Fe2O3 produced.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 + 2 + 2"
   },
   "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
     "kind": "alt",
-    "verbatim": "1s2, 2s2, 2p3",
-    "marks": 6,
+    "verbatim": "Mr = 160",
+    "marks": 2,
     "accepts": [
-     "2, 5"
+     "0.08 (moles of Fe)"
+    ]
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "0.04 (moles of Fe2O3)",
+    "marks": 2,
+    "accepts": [
+     "0.08 × 56 = 4.48 (g of Fe)"
+    ]
+   },
+   {
+    "id": "r-3",
+    "kind": "alt",
+    "verbatim": "0.04 × 160 = 6.4 (g)",
+    "marks": 2,
+    "accepts": [
+     "4.48 + 1.92 = 6.4"
     ]
    }
   ],
-  "stem": "The periodic table on page 81 of the Formulae and Tables booklet shows the electronegativity values of the elements. Part of this table is shown in the diagram below. 1 18 1 2 H He 2.20 2 13 14 15 16 17 – – 3 4 5 6 7 8 9 10 Li Be B C N O F Ne 0.98 1.57 2.04 2.55 3.04 3.44 3.98 – – 11 12 13 14 15 16 17 18 Na Mg Al Si P S Cl Ar 0.93 1.31 3 4 5 6 7 8 9 10 11 12 1.61 1.90 2.19 2.58 3.16 – – 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr 0.82 1.00 1.36 1.54 1.63 1.66 1.55 1.83 1.88 1.91 1.90 1.65 1.81 2.01 2.18 2.55 2.96 – – Electronegativity values increase across a period of the periodic table.",
-  "figureKey": "chemistry-2024-ol-paper-p006-i0"
+  "notes": "The accepts on each row are the scheme's second route, through the mass of iron that reacted rather than the moles of Fe2O3. The paper sets this part under the Q10(c) lead-in, which the block segmentation reads as a part of its own rather than as a stem, so this card carries no stem; the 0.06 moles of O2 the calculation starts from is part (i)'s own answer."
  },
  {
-  "id": "chem-2024-ol-q5-b-iii",
-  "topicId": "chem-1-2",
-  "conceptId": "electron-configuration-of-fluorine",
+  "id": "chem-2024-ol-q2-c-i",
+  "topicId": "chem-4-1",
+  "conceptId": "average-titre-from-accurate-results",
   "level": "ordinary",
   "year": 2024,
   "subjectId": "chemistry",
   "section": "A",
-  "questionRef": "2024 OL Q5(b)(iii)",
-  "questionText": "Write the electron configuration for an atom of fluorine (F).",
+  "questionRef": "2024 OL Q2(c)(i)",
+  "questionText": "Calculate the average volume of HCl needed to neutralise the Na2CO3.",
   "tariffModel": {
    "kind": "fixed",
-   "notation": "9 + 6 + 4 + 3 + 2 + 2 + 2"
+   "notation": "3 + 3"
   },
-  "totalMarks": 4,
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "adding volumes",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "20.55 (cm3)",
+    "marks": 3
+   }
+  ],
+  "stem": "The concentration of hydrochloric acid (HCl) was found by titrating it against a 0.05 M solution of sodium carbonate (Na2CO3).",
+  "notes": "Only the two accurate titrations are averaged; the approximate one is discarded, which is why the answer is 20.55 and not the mean of all three."
+ },
+ {
+  "id": "chem-2024-ol-q3-b-i",
+  "topicId": "chem-u2",
+  "conceptId": "limewater-test-for-carbon-dioxide",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2024 OL Q3(b)(i)",
+  "questionText": "Draw a labelled diagram to show how the gas produced could have been tested with limewater.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 + 4 + 1"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "delivery (tube from reacƟon container)",
+    "marks": 4
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "liquid (limewater) in a container",
+    "marks": 4
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "mouth of tube under the surface of the liquid",
+    "marks": 1
+   }
+  ],
+  "stem": "When a sample of compound A was mixed with dilute hydrochloric acid (HCl) fizzing was observed. The gas produced turned limewater milky. When a sample of compound B was dissolved in water and mixed with a solution of barium chloride (BaCl2) a white precipitate was produced.",
+  "notes": "A drawing question the scheme prices by what the diagram must show, so the three things it wants are the card. The single mark is for the detail that is most often dropped: the mouth of the delivery tube has to be below the surface of the limewater."
+ },
+ {
+  "id": "chem-2024-ol-q7-a-iii",
+  "topicId": "chem-u1",
+  "conceptId": "reading-a-volume-off-the-rate-graph",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2024 OL Q7(a)(iii)",
+  "questionText": "Use your graph to estimate the volume of oxygen collected during the first 7 minutes.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "volume read from graph [≈ 68 cm3]",
+    "marks": 3
+   }
+  ],
+  "stem": "The rate of decomposition of hydrogen peroxide (H2O2) using manganese dioxide as a catalyst was investigated using the apparatus shown below. gas syringe manganese dioxide (catalyst) stopwatch hydrogen peroxide The oxygen (O2) gas produced was collected in the gas syringe. The results are shown in the table below. Time (minutes) 0 2 4 6 8 10 12 14 16 18 Volume of O2 (cm3) 0 29 48 63 73 81 87 90 92 92",
+  "notes": "The three marks are for reading the graph, not for the number: the scheme brackets 68 cm3 as the expected value rather than requiring it.",
+  "figureKey": "chemistry-2024-OL-paper-p08-i0"
+ },
+ {
+  "id": "chem-2024-ol-q7-a-iv",
+  "topicId": "chem-3-2",
+  "conceptId": "average-rate-of-reaction-calculation",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2024 OL Q7(a)(iv)",
+  "questionText": "Calculate the average rate of reaction during the first 4 minutes.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "48 ÷ 4 = 12 (cm3 minute–1)",
+    "marks": 3
+   }
+  ],
+  "stem": "The rate of decomposition of hydrogen peroxide (H2O2) using manganese dioxide as a catalyst was investigated using the apparatus shown below. gas syringe manganese dioxide (catalyst) stopwatch hydrogen peroxide The oxygen (O2) gas produced was collected in the gas syringe. The results are shown in the table below. Time (minutes) 0 2 4 6 8 10 12 14 16 18 Volume of O2 (cm3) 0 29 48 63 73 81 87 90 92 92",
+  "notes": "The 48 is the volume of O2 collected by 4 minutes, read from the table in the stem.",
+  "figureKey": "chemistry-2024-OL-paper-p08-i0"
+ },
+ {
+  "id": "chem-2024-ol-q8-a-iii",
+  "topicId": "chem-4-2",
+  "conceptId": "naming-the-carboxylic-acid-in-the-series",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2024 OL Q8(a)(iii)",
+  "questionText": "Name compound T.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8 + 6 + 2 + 2"
+  },
+  "totalMarks": 2,
   "rows": [
    {
     "id": "r-1",
     "kind": "alt",
-    "verbatim": "1s2, 2s2, 2p5",
-    "marks": 4,
+    "verbatim": "ethanoic acid",
+    "marks": 2,
     "accepts": [
-     "2, 7"
+     "aceƟc acid"
     ]
    }
   ],
-  "stem": "The periodic table on page 81 of the Formulae and Tables booklet shows the electronegativity values of the elements. Part of this table is shown in the diagram below. 1 18 1 2 H He 2.20 2 13 14 15 16 17 – – 3 4 5 6 7 8 9 10 Li Be B C N O F Ne 0.98 1.57 2.04 2.55 3.04 3.44 3.98 – – 11 12 13 14 15 16 17 18 Na Mg Al Si P S Cl Ar 0.93 1.31 3 4 5 6 7 8 9 10 11 12 1.61 1.90 2.19 2.58 3.16 – – 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr 0.82 1.00 1.36 1.54 1.63 1.66 1.55 1.83 1.88 1.91 1.90 1.65 1.81 2.01 2.18 2.55 2.96 – – Electronegativity values increase across a period of the periodic table.",
-  "figureKey": "chemistry-2024-ol-paper-p006-i0"
+  "stem": "Study the series of reactions shown below and answer the following questions. C2H5OH C2H4 S Q R CH3COOH T",
+  "figureKey": "chemistry-2024-ol-paper-p009-i0",
+  "labelKey": [
+   {
+    "askedInThisQuestion": false,
+    "letter": "Q",
+    "meaning": "ethene"
+   },
+   {
+    "askedInThisQuestion": false,
+    "letter": "R",
+    "meaning": "ethanol / ethyl alcohol"
+   },
+   {
+    "askedInThisQuestion": false,
+    "letter": "S",
+    "meaning": "ethanal / acetaldehyde"
+   },
+   {
+    "askedInThisQuestion": true,
+    "letter": "T",
+    "meaning": "ethanoic acid / acetic acid"
+   }
+  ]
  },
  {
-  "id": "chem-2024-ol-q5-b-v",
-  "topicId": "chem-1-3",
-  "conceptId": "electronegativity-difference-n-and-f",
+  "id": "chem-2024-ol-q8-a-iv",
+  "topicId": "chem-4-2",
+  "conceptId": "classifying-the-ethene-to-ethanol-step",
   "level": "ordinary",
   "year": 2024,
   "subjectId": "chemistry",
   "section": "A",
-  "questionRef": "2024 OL Q5(b)(v)",
-  "questionText": "Use the table shown above to calculate the electronegativity difference between N and F.",
+  "questionRef": "2024 OL Q8(a)(iv)",
+  "questionText": "Is the conversion of compound Q to compound R classified as an addition reaction, a substitution reaction or an elimination reaction?",
   "tariffModel": {
    "kind": "fixed",
-   "notation": "9 + 6 + 4 + 3 + 2 + 2 + 2"
+   "notation": "8 + 6 + 2 + 2"
   },
   "totalMarks": 2,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "3.98 – 3.04 = 0.94",
+    "verbatim": "addiƟon",
     "marks": 2
    }
   ],
-  "stem": "The periodic table on page 81 of the Formulae and Tables booklet shows the electronegativity values of the elements. Part of this table is shown in the diagram below. 1 18 1 2 H He 2.20 2 13 14 15 16 17 – – 3 4 5 6 7 8 9 10 Li Be B C N O F Ne 0.98 1.57 2.04 2.55 3.04 3.44 3.98 – – 11 12 13 14 15 16 17 18 Na Mg Al Si P S Cl Ar 0.93 1.31 3 4 5 6 7 8 9 10 11 12 1.61 1.90 2.19 2.58 3.16 – – 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr 0.82 1.00 1.36 1.54 1.63 1.66 1.55 1.83 1.88 1.91 1.90 1.65 1.81 2.01 2.18 2.55 2.96 – – Electronegativity values increase across a period of the periodic table.",
-  "figureKey": "chemistry-2024-ol-paper-p006-i0"
+  "stem": "Study the series of reactions shown below and answer the following questions. C2H5OH C2H4 S Q R CH3COOH T",
+  "figureKey": "chemistry-2024-ol-paper-p009-i0",
+  "labelKey": [
+   {
+    "askedInThisQuestion": true,
+    "letter": "Q",
+    "meaning": "ethene"
+   },
+   {
+    "askedInThisQuestion": true,
+    "letter": "R",
+    "meaning": "ethanol / ethyl alcohol"
+   },
+   {
+    "askedInThisQuestion": false,
+    "letter": "S",
+    "meaning": "ethanal / acetaldehyde"
+   },
+   {
+    "askedInThisQuestion": false,
+    "letter": "T",
+    "meaning": "ethanoic acid / acetic acid"
+   }
+  ]
  },
  {
-  "id": "chem-2024-ol-q5-b-vi",
-  "topicId": "chem-2-2",
-  "conceptId": "bonding-from-electronegativity-difference",
+  "id": "chem-2024-ol-q8-b-i",
+  "topicId": "chem-4-2",
+  "conceptId": "identifying-the-aldehyde-in-the-series",
   "level": "ordinary",
   "year": 2024,
   "subjectId": "chemistry",
   "section": "A",
-  "questionRef": "2024 OL Q5(b)(vi)",
-  "questionText": "Use your answer to (v) to predict the type of bonding between the fluorine atoms and the nitrogen atom in NF3.",
+  "questionRef": "2024 OL Q8(b)(i)",
+  "questionText": "Identify compound S.",
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "9 + 6 + 4 + 3 + 2 + 2 + 2"
+   "kind": "fixed"
   },
-  "totalMarks": 2,
+  "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
     "kind": "alt",
-    "verbatim": "polar",
-    "marks": 2,
+    "verbatim": "ethanal",
+    "marks": 6,
     "accepts": [
-     "polar covalent [accept covalent]"
+     "acetaldehyde"
     ]
    }
   ],
-  "stem": "The periodic table on page 81 of the Formulae and Tables booklet shows the electronegativity values of the elements. Part of this table is shown in the diagram below. 1 18 1 2 H He 2.20 2 13 14 15 16 17 – – 3 4 5 6 7 8 9 10 Li Be B C N O F Ne 0.98 1.57 2.04 2.55 3.04 3.44 3.98 – – 11 12 13 14 15 16 17 18 Na Mg Al Si P S Cl Ar 0.93 1.31 3 4 5 6 7 8 9 10 11 12 1.61 1.90 2.19 2.58 3.16 – – 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr 0.82 1.00 1.36 1.54 1.63 1.66 1.55 1.83 1.88 1.91 1.90 1.65 1.81 2.01 2.18 2.55 2.96 – – Electronegativity values increase across a period of the periodic table."
+  "stem": "Study the series of reactions shown below and answer the following questions. C2H5OH C2H4 S Q R CH3COOH T",
+  "figureKey": "chemistry-2024-ol-paper-p009-i0",
+  "labelKey": [
+   {
+    "askedInThisQuestion": false,
+    "letter": "Q",
+    "meaning": "ethene"
+   },
+   {
+    "askedInThisQuestion": false,
+    "letter": "R",
+    "meaning": "ethanol / ethyl alcohol"
+   },
+   {
+    "askedInThisQuestion": true,
+    "letter": "S",
+    "meaning": "ethanal / acetaldehyde"
+   },
+   {
+    "askedInThisQuestion": false,
+    "letter": "T",
+    "meaning": "ethanoic acid / acetic acid"
+   }
+  ]
  },
  {
-  "id": "chem-2024-ol-q8-a-i",
-  "topicId": "chem-2-4",
-  "conceptId": "homologous-series-of-ethene",
+  "id": "chem-2024-ol-q11-c-ii",
+  "topicId": "chem-u2",
+  "conceptId": "separating-indicators-by-chromatography",
   "level": "ordinary",
   "year": 2024,
   "subjectId": "chemistry",
   "section": "A",
-  "questionRef": "2024 OL Q8(a)(i)",
-  "questionText": "Compound Q is ethene. Name the homologous series to which compound Q belongs.",
+  "questionRef": "2024 OL Q11(c)(ii)",
+  "questionText": "Describe how chromatography could be used to separate a mixture of chemical indicators. (A labelled diagram may help your answer.)",
   "tariffModel": {
    "kind": "fixed",
-   "notation": "8 + 6 + 2 + 2"
+   "notation": "3 + 3 + 3"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "mobile phase, e.g. water",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "staƟonary phase, e.g. ﬁlter paper",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "(separated/unseparated) mixture in correct locaƟon",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme numbers this answer under its own Q11(c)(ii) as well; only the PDF parser's key disagrees."
+ },
+ {
+  "id": "chem-2025-hl-q1-e-iv",
+  "topicId": "chem-4-1",
+  "conceptId": "percentage-by-mass-of-iron-in-a-tablet",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2025 HL Q1(e)(iv)",
+  "questionText": "Calculate the percentage by mass of iron(II) in one tablet. (15)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.2524, × 100 = 25.24 (%)",
+    "marks": 4
+   }
+  ],
+  "stem": "A student carried out an experiment to determine the iron(II) content of an iron supplement tablet. Six iron tablets with a total mass of 2.496 g were dissolved in dilute sulfuric acid. The solution and the washings were transferred to a 250 cm3 volumetric flask and made up to the mark using deionised water. A 25.0 cm3 portion of this solution was transferred into a conical flask and some sulfuric acid was added. The solution was then titrated against a previously standardised solution of potassium manganate(VII) (KMnO4). A number of titrations were carried out. The titration reaction is described by the following balanced equation: MnO4— + 5Fe2+ + 8H+  Mn2+ + 5Fe3+ + 4H2O",
+  "notes": "The scheme writes the first step as a stacked fraction whose numerator sits in a block of its own, so the row starts at the ratio it produced. The scheme adds \"[Allow 3 marks for 0.2524]\", so stopping before the conversion to a percentage still scores three of the four."
+ },
+ {
+  "id": "chem-2025-hl-q2-b-i",
+  "topicId": "chem-u2",
+  "conceptId": "liquid-liquid-extraction-procedure",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2025 HL Q2(b)(i)",
+  "questionText": "Describe, with the aid of a labelled diagram, a suitable procedure for the extraction and collection of eugenol from the distillate.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 3 for any two of the three the scheme lists"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "separating funnel",
+    "marks": 6
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "reference to safe mixing or collection in separate vessels",
+    "marks": 3
+   }
+  ],
+  "stem": "Clove oil is an essential oil with a wide number of uses. Clove oil can be extracted from dried clove buds by steam distillation using apparatus like that shown below. steam from a steam generator cloves distillate",
+  "notes": "The third answer the scheme accepts is the organic layer shown lying over an aqueous layer; the text layer glues the scheme's \"//\" separator to it, so it is not set as a row here. The scheme also prints \"[maximum of 6 marks awarded if diagram not included]\", so the labelled diagram the question asks for is worth three of the nine on its own.",
+  "figureKey": "chemistry-2025-hl-paper-p003-i0"
+ },
+ {
+  "id": "chem-2025-hl-q3-a-i",
+  "topicId": "chem-u2",
+  "conceptId": "plotting-a-volume-time-graph",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2025 HL Q3(a)(i)",
+  "questionText": "Plot a graph on graph paper to show the volume of oxygen produced versus time.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 + (7 × 1) + 2"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "axes labelled",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "points plotted",
+    "marks": 7
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "curve with good fit",
+    "marks": 2
+   }
+  ],
+  "stem": "A student monitored the rate of production of oxygen gas (O2) from hydrogen peroxide (H2O2), using manganese(IV) oxide (MnO2) as a catalyst. A 5.0 cm3 portion of hydrogen peroxide solution was diluted to exactly 20 cm3 with deionised water and then transferred into a reaction flask. 0.5 g of finely‐powdered manganese(IV) oxide was added. The volume of oxygen produced was recorded at intervals over six minutes. The reaction is described by the following balanced chemical equation: 2H2O2  O2 + 2H2O The results are given in the table below. Time (minutes) 0.0 1.0 2.0 3.0 4.0 5.0 6.0 Volume of oxygen (cm3) 0.0 60.0 82.0 92.0 98.0 100.0 100.0",
+  "notes": "One mark for each of the seven points in the paper's table. The scheme caps the plotting marks at three if graph paper is not used."
+ },
+ {
+  "id": "chem-2025-hl-q3-a-ii",
+  "topicId": "chem-3-2",
+  "conceptId": "instantaneous-rate-from-a-tangent",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2025 HL Q3(a)(ii)",
+  "questionText": "Use your graph to find the instantaneous rate of production of oxygen at 2.5 minutes. (18)",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 for the tangent + 3 for the value"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "good tangent drawn at 2.5 minutes",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "≈ 9.8 cm3 min–1",
+    "marks": 3
+   }
+  ],
+  "stem": "A student monitored the rate of production of oxygen gas (O2) from hydrogen peroxide (H2O2), using manganese(IV) oxide (MnO2) as a catalyst. A 5.0 cm3 portion of hydrogen peroxide solution was diluted to exactly 20 cm3 with deionised water and then transferred into a reaction flask. 0.5 g of finely‐powdered manganese(IV) oxide was added. The volume of oxygen produced was recorded at intervals over six minutes. The reaction is described by the following balanced chemical equation: 2H2O2  O2 + 2H2O The results are given in the table below. Time (minutes) 0.0 1.0 2.0 3.0 4.0 5.0 6.0 Volume of oxygen (cm3) 0.0 60.0 82.0 92.0 98.0 100.0 100.0",
+  "notes": "The scheme prints the value behind an approximation sign, so a reading close to it scores: it is read off the candidate's own graph."
+ },
+ {
+  "id": "chem-2025-hl-q3-b-i",
+  "topicId": "chem-3-2",
+  "conceptId": "average-rate-from-a-graph",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2025 HL Q3(b)(i)",
+  "questionText": "Use your graph to find the average rate of production of oxygen in cm3 per minute over the first 2.5 minutes.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 of the 15 marks for Q3(b)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "≈ 34.8 (cm3 min–1)",
+    "marks": 3
+   }
+  ],
+  "stem": "A student monitored the rate of production of oxygen gas (O2) from hydrogen peroxide (H2O2), using manganese(IV) oxide (MnO2) as a catalyst. A 5.0 cm3 portion of hydrogen peroxide solution was diluted to exactly 20 cm3 with deionised water and then transferred into a reaction flask. 0.5 g of finely‐powdered manganese(IV) oxide was added. The volume of oxygen produced was recorded at intervals over six minutes. The reaction is described by the following balanced chemical equation: 2H2O2  O2 + 2H2O The results are given in the table below. Time (minutes) 0.0 1.0 2.0 3.0 4.0 5.0 6.0 Volume of oxygen (cm3) 0.0 60.0 82.0 92.0 98.0 100.0 100.0",
+  "notes": "Again an approximation sign, because the value is read off the candidate's own graph rather than calculated from the table."
+ },
+ {
+  "id": "chem-2025-hl-q6-a-ii",
+  "topicId": "chem-2-4",
+  "conceptId": "fractional-distillation-of-crude-oil",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2025 HL Q6(a)(ii)",
+  "questionText": "Describe, with the aid of a labelled diagram, how refinery gas may be obtained by the fractional distillation of crude oil in an oil refinery.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 + 3 + 3"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "column with outlet pipes (trays) at various levels",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "temperature decreasing from bottom to top of column",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "heated crude oil near the base and refinery gas removed at the top",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme adds \"[maximum of 6 marks awarded if diagram not included]\", so the labelled diagram the question asks for is worth three of the nine on its own. The card carries no stem: the paper prints Q6(a)'s lead-in above (a)(i), and the only prose Paper attaches to Q6(a) is the sentence printed between (a)(iii) and (a)(iv), which is about a different part."
+ },
+ {
+  "id": "chem-2025-hl-q9-b-i",
+  "topicId": "chem-3-3",
+  "conceptId": "initial-moles-of-nitrosyl-bromide",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2025 HL Q9(b)(i)",
+  "questionText": "Calculate the number of moles of nitrosyl bromide sealed into the container, initially.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 + 2"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Mr = 110",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "0.5 (moles of NOBr)",
+    "marks": 2
+   }
+  ],
+  "stem": "Nitrosyl bromide (NOBr) decomposes to form nitrogen monoxide (NO) and bromine gas in a reversible reaction which is described by the following balanced chemical equation: 2NOBr(g) ⇌ 2NO(g) + Br2(g)",
+  "notes": "The paper prints the mass sealed in, the volume of the container and the percentage decomposed in a lead-in above Q9(b)(i), which the block segmentation attaches to no part, so this card's stem is Q9's opening statement rather than that lead-in. The scheme writes the division as a stacked fraction whose numerator sits in a block of its own, so the second row carries the value the two marks are awarded for rather than an equation the text layer has run together."
+ },
+ {
+  "id": "chem-2025-hl-q9-b-ii",
+  "topicId": "chem-3-3",
+  "conceptId": "moles-remaining-at-equilibrium",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2025 HL Q9(b)(ii)",
+  "questionText": "Calculate the number of moles of nitrosyl bromide present in the container at equilibrium.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 + 2"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.5 × 78% = 0.390 (moles decomposed)",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "0.5 – 0.39 = 0.110 (moles of NOBr at equilibrium)",
+    "marks": 2
+   }
+  ],
+  "stem": "Nitrosyl bromide (NOBr) decomposes to form nitrogen monoxide (NO) and bromine gas in a reversible reaction which is described by the following balanced chemical equation: 2NOBr(g) ⇌ 2NO(g) + Br2(g)",
+  "notes": "The paper prints the mass sealed in, the volume of the container and the percentage decomposed in a lead-in above Q9(b)(i), which the block segmentation attaches to no part, so this card's stem is Q9's opening statement rather than that lead-in."
+ },
+ {
+  "id": "chem-2025-hl-q9-b-iv",
+  "topicId": "chem-3-3",
+  "conceptId": "calculating-kc-from-equilibrium-moles",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2025 HL Q9(b)(iv)",
+  "questionText": "Calculate the value of Kc for the equilibrium at temperature T. (24)",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 + 2 + 3 + 3"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.390 (moles of NO)",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "0.195 (moles of Br2)",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "convert moles to moles per litre (÷ 2) i.e. 0.055 of NOBr, 0.195 of NO, 0.0975 of Br2",
+    "marks": 3
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "1.2 (mol L–1)",
+    "marks": 3
+   }
+  ],
+  "stem": "Nitrosyl bromide (NOBr) decomposes to form nitrogen monoxide (NO) and bromine gas in a reversible reaction which is described by the following balanced chemical equation: 2NOBr(g) ⇌ 2NO(g) + Br2(g)",
+  "notes": "The paper prints the mass sealed in, the volume of the container and the percentage decomposed in a lead-in above Q9(b)(i), which the block segmentation attaches to no part, so this card's stem is Q9's opening statement rather than that lead-in. The scheme writes the substitution into the Kc expression as a stacked fraction split across two blocks, so the last row carries the value the final three marks are awarded for rather than the broken equation the text layer returns."
+ },
+ {
+  "id": "chem-2025-hl-q10-b-ii",
+  "topicId": "chem-4-2",
+  "conceptId": "bond-broken-in-ethene-addition",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2025 HL Q10(b)(ii)",
+  "questionText": "Indicate clearly on your diagram which of the bonds in ethene are broken during the addition reaction.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "either one of the C—C bonds clearly labelled",
+    "marks": 3
+   }
+  ],
+  "notes": "Part (b)(i) asks for the structure of ethene to be drawn and this part marks a bond on that drawing, so the card shows what the three marks are awarded for rather than the drawing itself."
+ },
+ {
+  "id": "chem-2025-hl-q10-c-i-mr",
+  "topicId": "chem-1-4",
+  "conceptId": "relative-molecular-masses-and-moles-of-citric-acid",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2025 HL Q10(c)(i)",
+  "questionText": "Calculate the total mass of NaHCO3 required for complete reaction with the two acids in the effervescent tablet.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9 × 2 (first five)"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Mr (C6H8O7) = 192",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Mr (C4H6O6) = 150",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Mr (NaHCO3) = 84",
+    "marks": 2
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "0.0005 (moles of C6H8O7)",
+    "marks": 2
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "0.0005 × 3 = 0.0015 (moles of NaHCO3)",
+    "marks": 2
+   }
+  ],
+  "notes": "The paper prints the two balanced equations and the mass of each acid in the tablet in a lead-in above Q10(c)(i) which the block segmentation attaches to no part, so this card carries no stem. The scheme sets each moles-from-mass step as a stacked fraction whose numerator sits in a block of its own, so the fourth row carries the value the mark is awarded for rather than an equation the text layer has run together. Split from the tartaric route and the total, which the paper prices in the same nine."
+ },
+ {
+  "id": "chem-2025-hl-q10-c-i-total",
+  "topicId": "chem-1-4",
+  "conceptId": "total-mass-of-sodium-hydrogencarbonate-required",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2025 HL Q10(c)(i)",
+  "questionText": "Calculate the total mass of NaHCO3 required for complete reaction with the two acids in the effervescent tablet.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9 × 2 (final four)"
   },
   "totalMarks": 8,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "alkene",
-    "marks": 8
-   }
-  ],
-  "stem": "Study the series of reactions shown below and answer the following questions. C2H5OH C2H4 S Q R CH3COOH T",
-  "figureKey": "chemistry-2024-ol-paper-p009-i0"
- },
- {
-  "id": "chem-2024-ol-q8-a-ii",
-  "topicId": "chem-4-2",
-  "conceptId": "naming-the-alcohol-from-ethene",
-  "level": "ordinary",
-  "year": 2024,
-  "subjectId": "chemistry",
-  "section": "A",
-  "questionRef": "2024 OL Q8(a)(ii)",
-  "questionText": "Name compound R.",
-  "tariffModel": {
-   "kind": "fixed",
-   "notation": "8 + 6 + 2 + 2"
-  },
-  "totalMarks": 6,
-  "rows": [
+    "verbatim": "0.001 (moles of C4H6O6)",
+    "marks": 2
+   },
    {
-    "id": "r-1",
+    "id": "r-2",
     "kind": "point",
-    "verbatim": "ethanol",
-    "marks": 6
+    "verbatim": "0.001 × 2 = 0.002 (moles of NaHCO3)",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "0.0015 + 0.002 = 0.0035 (total moles of NaHCO3)",
+    "marks": 2
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "0.0035 × 84 = 0.294 (g NaHCO3)",
+    "marks": 2
    }
   ],
-  "stem": "Study the series of reactions shown below and answer the following questions. C2H5OH C2H4 S Q R CH3COOH T",
-  "figureKey": "chemistry-2024-ol-paper-p009-i0"
+  "notes": "The paper prints the two balanced equations and the mass of each acid in the tablet in a lead-in above Q10(c)(i) which the block segmentation attaches to no part, so this card carries no stem. The tartaric-acid route and the total, split from the first five of the same nine two-mark steps."
  },
  {
-  "id": "chem-2024-ol-q5-b-vii",
-  "topicId": "chem-1-4",
-  "conceptId": "shape-of-a-four-atom-molecule",
-  "level": "ordinary",
-  "year": 2024,
+  "id": "chem-2025-hl-q10-c-ii",
+  "topicId": "chem-2-3",
+  "conceptId": "volume-of-gas-at-room-temperature-and-pressure",
+  "level": "higher",
+  "year": 2025,
   "subjectId": "chemistry",
   "section": "A",
-  "questionRef": "2024 OL Q5(b)(vii)",
-  "questionText": "Suggest a possible shape for a molecule containing 4 atoms, such as NF3.",
+  "questionRef": "2025 HL Q10(c)(ii)",
+  "questionText": "Calculate the maximum volume of CO2 produced from the tablet at room temperature and pressure.",
   "tariffModel": {
-   "kind": "fixed",
-   "notation": "2 of the 28 the scheme splits 9 + 6 + 4 + 3 + 2 + 2 + 2 across Q5(b)"
+   "kind": "fixed"
   },
   "totalMarks": 2,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "●",
+    "verbatim": "0.0035 × 24 = 0.084 L",
     "marks": 2
    }
   ],
-  "stem": "The periodic table on page 81 of the Formulae and Tables booklet shows the electronegativity values of the elements. Part of this table is shown in the diagram below. 1 18 1 2 H He 2.20 2 13 14 15 16 17 – – 3 4 5 6 7 8 9 10 Li Be B C N O F Ne 0.98 1.57 2.04 2.55 3.04 3.44 3.98 – – 11 12 13 14 15 16 17 18 Na Mg Al Si P S Cl Ar 0.93 1.31 3 4 5 6 7 8 9 10 11 12 1.61 1.90 2.19 2.58 3.16 – – 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr 0.82 1.00 1.36 1.54 1.63 1.66 1.55 1.83 1.88 1.91 1.90 1.65 1.81 2.01 2.18 2.55 2.96 – – Electronegativity values increase across a period of the periodic table.",
-  "notes": "The scheme accepts tetrahedral, triangular or trigonal as well.",
-  "figureKey": "chemistry-2024-ol-paper-p006-i0"
+  "notes": "The paper prints the two balanced equations and the mass of each acid in the tablet in a lead-in above Q10(c)(i) which the block segmentation attaches to no part, so this card carries no stem. The 0.0035 moles the calculation starts from is part (c)(i)'s own answer, and the scheme takes the molar volume at room temperature and pressure from the data book."
  },
  {
-  "id": "chem-2024-ol-q7-a-ii",
-  "topicId": "chem-u1",
-  "conceptId": "graph-of-oxygen-volume-against-time",
-  "level": "ordinary",
-  "year": 2024,
+  "id": "chem-2025-hl-q11-b-iii",
+  "topicId": "chem-1-4",
+  "conceptId": "moles-from-volume-and-molarity",
+  "level": "higher",
+  "year": 2025,
   "subjectId": "chemistry",
   "section": "A",
-  "questionRef": "2024 OL Q7(a)(ii)",
-  "questionText": "Draw a graph on graph paper to show how the volume of O2 produced varies with time.",
+  "questionRef": "2025 HL Q11(b)(iii)",
+  "questionText": "Calculate the number of moles of hydrochloric acid in 80 cm3 of 1.0 M hydrochloric acid solution.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.08 (moles)",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme writes the working as a stacked fraction whose numerator sits in a block of its own, so the row carries the value the six marks are awarded for rather than an equation the text layer has run together. The card has no stem because the paper's stem block for Q11(b) comes back as the page furniture \"(25) This question continues on the next page.\", and the question names its own volume and concentration."
+ },
+ {
+  "id": "chem-2025-ol-q3-b-i",
+  "topicId": "chem-u2",
+  "conceptId": "plotting-concentration-against-rate",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2025 OL Q3(b)(i)",
+  "questionText": "Plot a graph, on graph paper, of concentration of Na2S2O3 versus the rate of reaction.",
   "tariffModel": {
    "kind": "fixed",
    "notation": "3 + 3 + 6 × 1 + 3"
@@ -29783,17 +31999,114 @@
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "points ploted",
+    "verbatim": "points ploƩed",
     "marks": 6
    },
    {
     "id": "r-4",
     "kind": "point",
-    "verbatim": "curve of best ﬁt",
+    "verbatim": "line of best ﬁt",
     "marks": 3
    }
   ],
-  "stem": "The rate of decomposition of hydrogen peroxide (H2O2) using manganese dioxide as a catalyst was investigated using the apparatus shown below. gas syringe manganese dioxide (catalyst) stopwatch hydrogen peroxide The oxygen (O2) gas produced was collected in the gas syringe. The results are shown in the table below. Time (minutes) 0 2 4 6 8 10 12 14 16 18 Volume of O2 (cm3) 0 29 48 63 73 81 87 90 92 92",
-  "notes": "The scheme caps the plotting marks at three if graph paper is not used, and wants a curve of best fit rather than a straight line — the rate falls away as the reaction proceeds."
+  "stem": "10 cm3 of 3 M hydrochloric acid (HCl) were added to a flask containing 100 cm3 of sodium thiosulfate (Na2S2O3) solution. The flask was swirled to mix the solutions. The solution gradually turned pale yellow and cloudy. A timer was used to find the time taken in minutes for a cross marked on a piece of paper placed under the flask to become obscured when looking down through the reaction mixture. cross visible initially cross obscured after t seconds The reaction observed in the flask is described by the following balanced chemical equation: Na2S2O3(aq) + 2HCl(aq) → 2NaCl(aq) + SO2(g) + S(s) + H2O(aq) The rate of reaction (1/minutes) for a number of different concentrations of Na2S2O3 was measured and the data recorded in the table below. All other reaction conditions were kept constant. Concentration of Na2S2O3 (M) 0 0.02 0.04 0.06 0.08 0.1 Rate of reaction (1/minutes) 0 0.4 0.8 1.2 1.6 2.0",
+  "notes": "The six plotting marks are one for each point in the table. The scheme caps the whole part at twelve marks if graph paper is not used. Fifteen of the thirty-three marks the paper prints against Q3(b) are for this plot alone.",
+  "figureKey": "chemistry-2025-ol-paper-p004-i0"
+ },
+ {
+  "id": "chem-2025-ol-q3-b-ii",
+  "topicId": "chem-u2",
+  "conceptId": "estimating-a-rate-from-the-graph",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2025 OL Q3(b)(ii)",
+  "questionText": "Use your graph to estimate the rate of reaction when the concentration of Na2S2O3 was 0.05 M.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "rate read from graph [≈ 1.0 min–1]",
+    "marks": 6
+   }
+  ],
+  "stem": "10 cm3 of 3 M hydrochloric acid (HCl) were added to a flask containing 100 cm3 of sodium thiosulfate (Na2S2O3) solution. The flask was swirled to mix the solutions. The solution gradually turned pale yellow and cloudy. A timer was used to find the time taken in minutes for a cross marked on a piece of paper placed under the flask to become obscured when looking down through the reaction mixture. cross visible initially cross obscured after t seconds The reaction observed in the flask is described by the following balanced chemical equation: Na2S2O3(aq) + 2HCl(aq) → 2NaCl(aq) + SO2(g) + S(s) + H2O(aq) The rate of reaction (1/minutes) for a number of different concentrations of Na2S2O3 was measured and the data recorded in the table below. All other reaction conditions were kept constant. Concentration of Na2S2O3 (M) 0 0.02 0.04 0.06 0.08 0.1 Rate of reaction (1/minutes) 0 0.4 0.8 1.2 1.6 2.0",
+  "notes": "0.05 M is not one of the six concentrations in the table, so the answer has to be interpolated from the line of best fit drawn in part (i). The scheme prints the expected value behind an approximation sign, which is why a reading close to it scores.",
+  "figureKey": "chemistry-2025-ol-paper-p004-i0"
+ },
+ {
+  "id": "chem-2025-ol-q4-h",
+  "topicId": "chem-u2",
+  "conceptId": "mobile-and-stationary-phase-in-chromatography",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2025 OL Q4(h)",
+  "questionText": "Copy and complete the following sentence: ‘Chromatography is a separation technique in which the components of a mixture are carried at different __________ by a mobile phase in contact with a __________ phase.’",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 + 2"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "speeds",
+    "marks": 4
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "stationary",
+    "marks": 2
+   }
+  ],
+  "stem": "Answer eight of the following (a), (b), (c), etc. (50)",
+  "notes": "The two rows fill the paper's two blanks in order: the first is what the components are carried at, the second is the phase the mobile phase is in contact with. The scheme prices them unevenly, 4 then 2."
+ },
+ {
+  "id": "chem-2025-ol-q7-b-iii",
+  "topicId": "chem-3-4",
+  "conceptId": "testing-a-solution-for-a-base",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2025 OL Q7(b)(iii)",
+  "questionText": "Describe how the solution of potassium hydroxide formed could be tested to show that it was basic. (18)",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9 + 3"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "pH meter",
+    "marks": 9,
+    "accepts": [
+     "named indicator"
+    ]
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "pH reading",
+    "marks": 3,
+    "accepts": [
+     "correct matching colour change"
+    ]
+   }
+  ],
+  "stem": "The potassium reacts vigorously with the water to produce soluble potassium hydroxide and bubbles of hydrogen gas. potassium water The reaction is described by the following word equation: potassium + water → potassium hydroxide + hydrogen gas",
+  "notes": "The two rows are matched, not free choice: a named indicator has to be paired with its own colour change, and a pH meter with a pH reading. Three of the twelve marks are for the second row, which is the half candidates leave out — naming the test without saying what it shows."
  }
 ]

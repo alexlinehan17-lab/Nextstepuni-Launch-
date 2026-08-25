@@ -3614,6 +3614,72 @@
    "meaning": "Hydrocarbon B, the hydrocarbon that A may be converted to"
   }
  ],
+ "chem-2024-ol-q8-a-iii": [
+  {
+   "askedInThisQuestion": false,
+   "letter": "Q",
+   "meaning": "ethene"
+  },
+  {
+   "askedInThisQuestion": false,
+   "letter": "R",
+   "meaning": "ethanol / ethyl alcohol"
+  },
+  {
+   "askedInThisQuestion": false,
+   "letter": "S",
+   "meaning": "ethanal / acetaldehyde"
+  },
+  {
+   "askedInThisQuestion": true,
+   "letter": "T",
+   "meaning": "ethanoic acid / acetic acid"
+  }
+ ],
+ "chem-2024-ol-q8-a-iv": [
+  {
+   "askedInThisQuestion": true,
+   "letter": "Q",
+   "meaning": "ethene"
+  },
+  {
+   "askedInThisQuestion": true,
+   "letter": "R",
+   "meaning": "ethanol / ethyl alcohol"
+  },
+  {
+   "askedInThisQuestion": false,
+   "letter": "S",
+   "meaning": "ethanal / acetaldehyde"
+  },
+  {
+   "askedInThisQuestion": false,
+   "letter": "T",
+   "meaning": "ethanoic acid / acetic acid"
+  }
+ ],
+ "chem-2024-ol-q8-b-i": [
+  {
+   "askedInThisQuestion": false,
+   "letter": "Q",
+   "meaning": "ethene"
+  },
+  {
+   "askedInThisQuestion": false,
+   "letter": "R",
+   "meaning": "ethanol / ethyl alcohol"
+  },
+  {
+   "askedInThisQuestion": true,
+   "letter": "S",
+   "meaning": "ethanal / acetaldehyde"
+  },
+  {
+   "askedInThisQuestion": false,
+   "letter": "T",
+   "meaning": "ethanoic acid / acetic acid"
+  }
+ ],
  "chem-2025-ol-q1-b-fig": [
   {
    "askedInThisQuestion": true,

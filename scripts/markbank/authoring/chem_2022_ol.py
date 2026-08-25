@@ -65,10 +65,8 @@ A.card(3, 'b', 'i', topic='chem-u2', concept='plotting-the-h2o2-decomposition-gr
                   ((1, 'b', 'i'), 0, slice(8, 15)),
                   ((1, 'b', 'i'), 0, slice(16, 19)),
                   ((1, 'b', 'i'), 0, slice(20, 30)),
-                  ((1, 'b', 'i'), 0, slice(31, 37)),
-                  ((1, 'b', 'ii'), 0, slice(1, 5)),
-                  ((1, 'b', 'iii'), 0, slice(1, 8))],
-       marks=[3, 3, 3, 3, 3, 6, 3], notation='(5 × 3) + 6 + 3',
+                  ((1, 'b', 'i'), 0, slice(31, 37))],
+       marks=[3, 3, 3, 3, 3], notation='(5 × 3) + 6 + 3 (the plot)',
        checked='Page 4 of the paper was opened. The paper sets (b)(i), (ii) and (iii) as '
                'one block and prints the part mark "(24)" at the end of it, so the lifted '
                'text ends on a bracketed number rather than punctuation. The block is '
@@ -80,6 +78,14 @@ A.card(3, 'b', 'i', topic='chem-u2', concept='plotting-the-h2o2-decomposition-gr
              'scheme adds three conditions: points joined by straight lines are '
              'unacceptable, minus 3 if the graph is not on graph paper, and reversed '
              'axes are acceptable.')
+
+# Not carded: the two values read off the finished graph, which the scheme
+# prices in the same lot as the five plotting criteria ((5 x 3) + 6 + 3). They
+# belong to the paper's own parts (b)(ii) and (b)(iii), but the page sets
+# (b)(i)-(iii) as ONE block, so all three parts share a single lifted question
+# text — and a second card carrying that same text is refused by the
+# duplicate-question guard, rightly. Separating them needs the page-4
+# segmentation fixed in paper.py, not a second card here.
 
 
 # ── Question 4(k): the molecular formula of phenol (paper page 6) ────────────
@@ -106,13 +112,21 @@ A.card(4, 'k', topic='chem-1-4', concept='molecular-formula-of-phenol',
 # omitted from the passage below." as the question text. Nothing is missing —
 # the seven lettered blanks are in the stem where the paper prints them — but
 # the two halves are the wrong way round on the card's face.
-A.card(7, 'b', topic='chem-3-4', concept='reading-the-ph-scale',
+A.card(7, 'b', card_id='chem-2022-ol-q7-b-1', topic='chem-3-4',
+       concept='the-ph-scale-and-the-ions-that-set-it',
        source='pdf',
        from_runs=[((4, 'b', None), 8, slice(1, 3)),
                   ((4, 'b', None), 11, slice(0, 2)),
                   ((4, 'b', None), 12, slice(0, 2)),
-                  ((4, 'b', None), 13, slice(0, 2)),
-                  ((4, 'b', None), 14, slice(0, 2)),
+                  ((4, 'b', None), 13, slice(0, 2))],
+       tariff='orderedSplit', ladder=30,
+       notation='(4 x 6) + (3 x 2) (blanks A-D)',
+       notes='Each row keeps the scheme\'s letter in front of its term, because the term only scores against the blank it belongs to. "(4 x 6) + (3 x 2)" pays the first four correct terms 6 each and the next three 2 each - the rate depends on how many blanks are right, not on which ones, so no blank has a mark of its own and every row is null. The paper prints the word bank, the instruction and the passage above the question; the block segmentation files all three as this part\'s stem. Split at blank D because a seven-row card does not fit the deck.')
+
+A.card(7, 'b', card_id='chem-2022-ol-q7-b-2', topic='chem-3-4',
+       concept='how-ph-changes-with-acidity-and-alkalinity',
+       source='pdf',
+       from_runs=[((4, 'b', None), 14, slice(0, 2)),
                   ((4, 'b', None), 15, slice(0, 2)),
                   ((4, 'b', None), 16, slice(0, 2))],
        tariff='orderedSplit', ladder=30, notation='(4 × 6) + (3 × 2)',

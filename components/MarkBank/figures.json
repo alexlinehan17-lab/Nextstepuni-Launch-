@@ -32149,5 +32149,49 @@
   "year": 2025,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2025-ol-paper-p004-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2025-ol-paper-p004-i0.png",
+  "md5": "91027c565ef9371a3bec7637ed340d2b",
+  "alt": "The Q3 sodium thiosulfate / hydrochloric acid \"disappearing cross\" illustration, complete and free of question text. Two identical conical (Erlenmeyer) flasks are drawn side by side, each standing on a parallelogram sheet of paper that has a bold black cross marked on it. The left flask holds a clear, colourless liquid through which the cross under the flask base is plainly visible, and its caption reads \"cross visible initially\". The right flask holds a pale, milky, opaque liquid filled to the same level; the cross beneath it is hidden apart from two small black tips protruding either side of the flask base, and its caption reads \"cross obscured after t seconds\". Both captions are fully inside the crop, including the italic t. No apparatus, sheet corner, caption or cross is sliced at any edge, and none of the Q3 stem, the balanced equation, the results table or the parts (a)/(b) appears",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q3",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2022-ol-paper-p006-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2022-ol-paper-p006-i0.png",
+  "md5": "198ba01e8b17c190a504c2d0334649e1",
+  "alt": "The two skeletal structures printed with Q4(k), side by side on a white ground and nothing else in the crop. Left: a benzene molecule drawn as a regular hexagon with a plain circle inscribed in it for the delocalised pi ring, no substituents. Right: the antiseptic compound phenol, drawn as the same hexagon-with-inscribed-circle but with a short vertical bond rising from the top ring carbon to a bold 'OH' group. Both hexagons, both inscribed circles, the C-O bond and the complete 'OH' label are inside the crop; no question text is included.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q4(k)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2025-hl-paper-p003-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2025-hl-paper-p003-i0.png",
+  "md5": "055b7e1c147e15349a8c2f4e2f77e3df",
+  "alt": "Line drawing of the steam-distillation apparatus used to extract clove oil from dried clove buds. At the upper left a bold arrow labelled 'steam from a steam generator' feeds a horizontal delivery tube that bends down into a vertical inner tube passing through a ground-glass joint into a round-bottom flask; inside the flask, sitting in the liquid, are the drawn clove buds, arrowed from below by the label 'cloves'. A side-arm leaves the top of the flask assembly and runs down to the right as a water-jacketed Liebig condenser, drawn with its two hose connectors on the underside, ending in a bent outlet that dips through a ground-glass joint into a conical flask at the lower right; a horizontal arrow at that flask points to its contents from the label 'distillate' on the right. All three printed labels present; no question body text in the crop.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q2(b)(i)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2025 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2023-ol-paper-p010-i0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2023-ol-paper-p010-i0.png",
+  "md5": "c6bf9035f805efc2818d9d698000e0ab",
+  "alt": "The Q9 stem apparatus, drawn as two side-by-side panels captioned 'before' (left) and 'during' (right). Left panel: an electronic mass balance — a rectangular unit with a rounded weighing pan on top, a large rectangular display reading '0.00 g' and rounded 'Power' and 'Tare' buttons either side of it, on four small feet. Standing on the pan are a small heap of irregular lumps, a conical (Erlenmeyer) flask holding a clear liquid up to a ruled level line, and a loose ball of cotton wool resting on the pan beside the flask. A bold label 'CaCO3' sits to the upper left with a leader line running down to the heap of lumps; a bold label 'HCl solution' is centred between the two panels with a leader line running down-left into the liquid in the left flask and a second leader line running down-right into the liquid in the right flask. Right panel: an identical balance now reading '-0.26 g'; the s",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q9",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2023 Ordinary Level — © State Examinations Commission"
  }
 }

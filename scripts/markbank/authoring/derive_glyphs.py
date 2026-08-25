@@ -44,6 +44,8 @@ LIGATURE = {
     # at it rather than by trusting an encoding chart:
     '\uf071': '\u03b8',   # SymbolMT 0x71 -- "values of temperature [theta]"
     '\uf044': '\u0394',   # SymbolMT 0x44 -- "[Delta]H = 206" beside a reaction
+    '\uf0b0': '\u00b0',   # SymbolMT 0xB0 -- cropped from 2022 HL Chemistry
+                          # page 1 and looked at: "l^-2 at 25 [deg]C"
     '\uf06c': '\u2022',   # Wingdings 0x6c -- the bullet on "using a scalpel"
     '\uf050': '\u2713',   # Wingdings 2 0x50 -- a tick
     '\uf067': '\u2192',   # Wingdings 3 0x67 -- "6O2 -> 6CO2 + 6H2O"

@@ -40,13 +40,9 @@ from lib import Author  # noqa: E402
 
 A = Author('chemistry', 2021, 'ol')
 
-A.card(11, 'a', 'iii', topic='chem-1-2', concept='elements-with-the-same-energy-levels',
-       source='pdf',
-       from_runs=[((6, 'a', 'iii'), 0, slice(1, None)),
-                  ((6, 'a', 'iii'), 1, slice(0, 2))],
-       marks=[6], use=[[0, 1]],
-       notes='Either element scores: both lithium and beryllium fill the same two main '
-             'energy levels that boron does.')
+# Not carded here: chem-2021-ol-q11-a-iii is already a shipped hand-authored card.
+# merge.py refuses the collision, and it is right to — a script must not
+# quietly replace verified content.
 
 # -- Question 3, the neutralisation calorimetry experiment (paper page 4) ------
 
@@ -145,20 +141,24 @@ A.card(9, 'c', topic='chem-3-2', concept='reading-rate-and-volume-from-a-graph',
 # Seven blanks, one combined tariff. The parse scattered the answers across
 # three addresses because the leading "4" and "6" of the fourth and sixth
 # answers were read as question heads; the run is one list on scheme page 16.
-A.card(10, 'a', topic='chem-1-2', concept='atomic-number-mass-number-and-atomic-models',
+A.card(10, 'a', card_id='chem-2021-ol-q10-a-1', topic='chem-1-2',
+       concept='atomic-number-mass-number-and-the-neutral-atom',
        source='pdf',
        from_runs=[((1, 'a', None), 10, slice(2, 3)),
                   ((1, 'a', None), 11, slice(1, 2)),
                   ((1, 'a', None), 12, slice(1, 2)),
-                  ((4, None, None), 0, slice(0, 1)),
-                  ((4, None, None), 1, slice(1, 2)),
+                  ((4, None, None), 0, slice(0, 1))],
+       tariff='orderedSplit', ladder=25, notation='2 x 6 + 4 x 3 + 1 (blanks 1-4)',
+       notes="The rows are the words for the blanks, in the order the passage prints them. No row carries a mark of its own: the scheme prices the seven blanks as one lot, 2 x 6 + 4 x 3 + 1, and does not say which blank is worth which, so the mark sits on the part and not on the rows. Split at blank four because a seven-row card does not fit the deck; each half keeps its blanks in the passage's own order.")
+
+A.card(10, 'a', card_id='chem-2021-ol-q10-a-2', topic='chem-1-2',
+       concept='rutherford-and-bohr-models-of-the-atom',
+       source='pdf',
+       from_runs=[((4, None, None), 1, slice(1, 2)),
                   ((6, None, None), 0, slice(0, 1)),
                   ((6, None, None), 1, slice(1, 2))],
-       tariff='orderedSplit', ladder=25, notation='2 x 6 + 4 x 3 + 1',
-       notes='The rows are the words for blanks 1 to 7, in the order the passage prints '
-             'them. No row carries a mark of its own: the scheme prices the seven '
-             'blanks as one lot, 2 x 6 + 4 x 3 + 1, and does not say which blank is '
-             'worth which, so the 25 sits on the part and not on the rows.')
+       tariff='orderedSplit', ladder=25, notation='2 x 6 + 4 x 3 + 1 (blanks 5-7)',
+       notes="The rows are the words for the blanks, in the order the passage prints them. No row carries a mark of its own: the scheme prices the seven blanks as one lot, 2 x 6 + 4 x 3 + 1, and does not say which blank is worth which, so the mark sits on the part and not on the rows. Split at blank four because a seven-row card does not fit the deck; each half keeps its blanks in the passage's own order.")
 
 A.card(10, 'c', 'iii', topic='chem-1-4', concept='moles-and-volume-of-gas-at-stp',
        source='pdf',

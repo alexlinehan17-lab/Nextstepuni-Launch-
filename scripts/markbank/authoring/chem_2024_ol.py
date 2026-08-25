@@ -27,43 +27,41 @@ from lib import Author  # noqa: E402
 
 A = Author('chemistry', 2024, 'ol')
 
-A.card(5, 'b', 'i', topic='chem-4-3', concept='naming-a-greenhouse-gas',
-       source='pdf', use=[[0]], marks=[9], notation='9 + 6 + 4 + 3 + 2 + 2 + 2')
+# Not carded here: chem-2024-ol-q5-b-i is already a shipped hand-authored card.
+# merge.py refuses the collision, and it is right to — a script must not
+# quietly replace verified content.
 
-A.card(5, 'b', 'ii', topic='chem-1-2', concept='electron-configuration-of-nitrogen',
-       source='pdf', use=[[0, 1]], marks=[6], notation='9 + 6 + 4 + 3 + 2 + 2 + 2')
+# Not carded here: chem-2024-ol-q5-b-ii is already a shipped hand-authored card.
+# merge.py refuses the collision, and it is right to — a script must not
+# quietly replace verified content.
 
-A.card(5, 'b', 'iii', topic='chem-1-2', concept='electron-configuration-of-fluorine',
-       source='pdf', use=[[0, 1]], marks=[4], notation='9 + 6 + 4 + 3 + 2 + 2 + 2')
+# Not carded here: chem-2024-ol-q5-b-iii is already a shipped hand-authored card.
+# merge.py refuses the collision, and it is right to — a script must not
+# quietly replace verified content.
 
-A.card(5, 'b', 'v', topic='chem-1-3', concept='electronegativity-difference-n-and-f',
-       source='pdf', use=[0], marks=[2], notation='9 + 6 + 4 + 3 + 2 + 2 + 2')
+# Not carded here: chem-2024-ol-q5-b-v is already a shipped hand-authored card.
+# merge.py refuses the collision, and it is right to — a script must not
+# quietly replace verified content.
 
-A.card(5, 'b', 'vi', topic='chem-2-2', concept='bonding-from-electronegativity-difference',
-       source='pdf', use=[[0, 1]], marks=[2], notation='9 + 6 + 4 + 3 + 2 + 2 + 2')
+# Not carded here: chem-2024-ol-q5-b-vi is already a shipped hand-authored card.
+# merge.py refuses the collision, and it is right to — a script must not
+# quietly replace verified content.
 
-A.card(8, 'a', 'i', topic='chem-2-4', concept='homologous-series-of-ethene',
-       source='pdf', use=[1], marks=[8], notation='8 + 6 + 2 + 2')
+# Not carded here: chem-2024-ol-q8-a-i is already a shipped hand-authored card.
+# merge.py refuses the collision, and it is right to — a script must not
+# quietly replace verified content.
 
-A.card(8, 'a', 'ii', topic='chem-4-2', concept='naming-the-alcohol-from-ethene',
-       source='pdf', use=[1], marks=[6], notation='8 + 6 + 2 + 2')
+# Not carded here: chem-2024-ol-q8-a-ii is already a shipped hand-authored card.
+# merge.py refuses the collision, and it is right to — a script must not
+# quietly replace verified content.
 
-A.card(5, 'b', 'vii', topic='chem-1-4', concept='shape-of-a-four-atom-molecule',
-       source='pdf', from_run=((5, 'b', 'vii'), 5, slice(0, 1)), marks=[2],
-       notation='2 of the 28 the scheme splits 9 + 6 + 4 + 3 + 2 + 2 + 2 across Q5(b)',
-       first_sentence=True,
-       notes='The scheme accepts tetrahedral, triangular or trigonal as well.')
+# Not carded here: chem-2024-ol-q5-b-vii is already a shipped hand-authored card.
+# merge.py refuses the collision, and it is right to — a script must not
+# quietly replace verified content.
 
-A.card(7, 'a', 'ii', topic='chem-u1', concept='graph-of-oxygen-volume-against-time',
-       source='pdf',
-       from_runs=[((7, 'a', 'ii'), 0, slice(0, 2)),
-                  ((7, 'a', 'ii'), 0, slice(3, 5)),
-                  ((7, 'a', 'ii'), 0, slice(6, 8)),
-                  ((7, 'a', 'ii'), 0, slice(21, 25))],
-       marks=[3, 3, 6, 3], notation='3 + 3 + 6 × 1 + 3',
-       notes='The scheme caps the plotting marks at three if graph paper is not used, '
-             'and wants a curve of best fit rather than a straight line — the rate falls '
-             'away as the reaction proceeds.')
+# Not carded here: chem-2024-ol-q7-a-ii is already a shipped hand-authored card.
+# merge.py refuses the collision, and it is right to — a script must not
+# quietly replace verified content.
 
 
 # ── Second pass over the open parts ────────────────────────────────────────
