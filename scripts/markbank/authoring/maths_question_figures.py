@@ -297,6 +297,25 @@ class Sitting:
                 if boxlike and not drawn_inside and (
                         not inside or (big and sparse)):
                     frames.append(r)
+        # An erased dotted answer rule leaves its end marks behind: tiny dark
+        # specks sitting alone in the white. A mark under 4pt with no other
+        # ink within 25pt is not part of any drawing, and reads as dirt on
+        # the page. Erase those too.
+        # Neighbours are CONTENT, not furniture: the specks left by an erased
+        # answer rule sit right beside the box they belonged to, so counting
+        # that box as a neighbour kept every speck alive.
+        kept = [d['rect'] for d in drawings
+                if (d['rect'].width >= 4 or d['rect'].height >= 4)
+                and not any(f.x0 - 1 <= d['rect'].x0 and d['rect'].x1 <= f.x1 + 1
+                            and f.y0 - 1 <= d['rect'].y0 and d['rect'].y1 <= f.y1 + 1
+                            for f in frames)]
+        for d in drawings:
+            r = d['rect']
+            if r.width < 4 and r.height < 4 and not any(
+                    o.y0 - 25 <= r.y0 <= o.y1 + 25
+                    and o.x0 - 25 <= r.x0 <= o.x1 + 25 for o in kept):
+                frames.append(pymupdf.Rect(r.x0 - 2, r.y0 - 2,
+                                           r.x1 + 2, r.y1 + 2))
         self._furniture[page] = frames
         rects = []
         for d in drawings:
@@ -779,19 +798,26 @@ class Sitting:
         w, h = img.size
         px = img.load()
         for f in frames:
-            fy0 = max(0, _px(max(f.y0 - 1, top), top))
-            fy1 = min(h, _px(min(f.y1 + 1, bot), top))
-            fx0 = max(0, _px(f.x0 - 1, X0))
-            fx1 = min(w, _px(f.x1 + 1, X0))
+            # 2.5pt of margin, not 1: a box's own border is drawn ON its
+            # bounds, and erasing to the bound left the rule itself behind as
+            # a hairline along the crop's edge.
+            fy0 = max(0, _px(max(f.y0 - 2.5, top), top))
+            fy1 = min(h, _px(min(f.y1 + 2.5, bot), top))
+            fx0 = max(0, _px(f.x0 - 2.5, X0))
+            fx1 = min(w, _px(f.x1 + 2.5, X0))
             for y in range(fy0, fy1):
                 page_y = top + y / SCALE
                 # BOTH ends clamp to the frame. Clamping only the right end
                 # let a keep-rect starting beyond the frame set a paint target
                 # past it: the answer box of 2021 OL P1 Q10(b) reached across
                 # to the circle beside it and erased "Tr" from "Trail".
+                # A dotted answer rule is a run of tiny marks. Sparing them
+                # left a trail of specks across an otherwise erased box, so
+                # ink under 4pt across is not content worth protecting.
                 spans = [(min(fx1, max(fx0, _px(k.x0 - 1, X0))),
                           min(fx1, max(fx0, _px(k.x1 + 1, X0))))
-                         for k in keep if k.y0 - 1 <= page_y <= k.y1 + 1]
+                         for k in keep if k.y0 - 1 <= page_y <= k.y1 + 1
+                         and (k.width >= 4 or k.height >= 4)]
                 x = fx0
                 for (kx0, kx1) in sorted(spans):
                     for xx in range(x, max(x, kx0)):
