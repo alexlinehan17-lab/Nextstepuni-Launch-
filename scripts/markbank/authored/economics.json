@@ -8058,7 +8058,7 @@
   "questionRef": "2022 OL Section A Q1(ii)",
   "questionText": "The diagram shows the forecast growth in the Irish economy for 2020 to 2023. Explain the term economic growth.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "economics-2022-OL-paper-p03-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -20734,7 +20734,7 @@
   "questionRef": "2025 HL Section A Q9(b)",
   "questionText": "With reference to the diagram, explain the shape of the curve labelled 2 — the kinked demand curve facing a firm in an oligopoly market.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "economics-2025-HL-paper-p11-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",

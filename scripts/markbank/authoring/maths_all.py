@@ -44,6 +44,23 @@ if failed:
     for f in failed:
         print('REFUSING', f, file=sys.stderr)
     raise SystemExit('maths.json NOT written')
+# The printed question replaces the text stem. Every card with a question
+# crop shows the SEC's own print, and a retold text stem alongside it could
+# only agree (redundant) or disagree (the cuboid-over-a-logs-equation bug) —
+# so where a crop exists, the stem goes. maths_question_figures.py writes the
+# sidecar; a card it missed keeps whatever stem it had.
+QFIGS = os.path.join(os.path.dirname(OUT), 'maths-question-figures.json')
+if os.path.exists(QFIGS):
+    with open(QFIGS) as fh:
+        qfig = json.load(fh)
+    for c in cards:
+        key = qfig.get(c['id'])
+        if key:
+            c['questionFigureKey'] = key
+            c.pop('stem', None)
+    stamped = sum(1 for c in cards if c.get('questionFigureKey'))
+    print(f'question figures on {stamped}/{len(cards)} cards', file=sys.stderr)
+
 print(f'{"TOTAL":<22} {len(cards):>3} cards from {len(scripts)} script(s)', file=sys.stderr)
 if '--write' in sys.argv:
     with open(OUT, 'w') as fh:

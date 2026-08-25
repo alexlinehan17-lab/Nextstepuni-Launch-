@@ -92,6 +92,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2016-ol-q4-a-r1", kind: "anyN", verbatim: "Discuss two reasons why it is necessary to apply for planning permission to build the sunspace shown.", marks: 12, openList: true, group: {"claimMax":2,"perOption":6,"options":["It is a legal requirement when changing the front elevation of a house","Planning permission informs the public about the development","It controls the height, shape, design and location of the sunspace","It prevents the danger of an unsafe sunspace being built","Ensures that the sunspace is attractive and environmentally friendly","Ensures that the sunspace blends easily with its surroundings","When the development changes the front elevation of the building","The Planning Authority may refuse permission"]} },
     ],
+    figure: {
+          "candId": "construction-studies-2016-ol-paper-p002-i0",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-ol-paper-p002-i0.png",
+          "srcHash": "378a09f1864147eb18b764024174aa3b",
+          "alt": "A tonal perspective sketch of a single-storey pitched-roof dwelling house with a slate roof and a rendered chimney stack. Built against the gable end is a lean-to sunspace with a mono-pitch roof, sloping glazing above and full-height glazed panels below, returning to a further glazed opening on the end wall. A tree stands behind the gable and low shrubs sit against the front and side walls, with a doorway and window visible on the main front elevation.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -220,11 +228,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
     id: "cons-2016-ol-q7-b", topicId: "cons-8-3", conceptId: "separate-annotated-method-would-help-reduce",
     section: "B", questionRef: "2016 OL Q7(b)",
-    stem: "The scheme groups its answer under: Reduce the transmittance of sound through the stud partition - Notes; Plan views",
     questionText: "On a separate annotated sketch, show one method that would help reduce the transmittance of sound through the stud partition.",
     tariffModel: {"kind":"bestNofParts","notation":"1 x 4","answer":1,"ofParts":8,"perPart":4}, totalMarks: 4,
     rows: [
-    { id: "cons-2016-ol-q7-b-r1", kind: "anyN", verbatim: "On a separate annotated sketch, show one method that would help reduce the transmittance of sound through the stud parti", marks: 4, openList: true, group: {"claimMax":1,"perOption":4,"options":["Filling the space between the studs with mineral wool or fibre glass quilt will give some reduction in airborne sound","Two layers of 12.5 mm plasterboards or one plasterboard and acoustic board fitted to both sides of the studs. Joints should be staggered, taped and sealed. This helps reduce airborne sound","Fitting acoustic board or insulation board with battens and 12.5 mm plasterboard to both sides of the studs. This helps reduce impact and airborne sound","Staggered stud construction with mineral wool or fibre glass insulation between them","Applying two layers of sound isolation padding tape to every second exposed stud","Fixing drywall metal channel with sound isolation mounting clips to the studs. The panels are then screwed to the channel in the normal manner","The gaps at the ceiling, walls and floor are sealed with acoustical caulk","Black foam tape is used to seal around the door"]} },
+    { id: "cons-2016-ol-q7-b-r1", kind: "anyN", verbatim: "On a separate annotated sketch, show one method that would help reduce the transmittance of sound through the stud parti", marks: 4, contextNote: "The scheme groups its answer under: Reduce the transmittance of sound through the stud partition - Notes; Plan views", openList: true, group: {"claimMax":1,"perOption":4,"options":["Filling the space between the studs with mineral wool or fibre glass quilt will give some reduction in airborne sound","Two layers of 12.5 mm plasterboards or one plasterboard and acoustic board fitted to both sides of the studs. Joints should be staggered, taped and sealed. This helps reduce airborne sound","Fitting acoustic board or insulation board with battens and 12.5 mm plasterboard to both sides of the studs. This helps reduce impact and airborne sound","Staggered stud construction with mineral wool or fibre glass insulation between them","Applying two layers of sound isolation padding tape to every second exposed stud","Fixing drywall metal channel with sound isolation mounting clips to the studs. The panels are then screwed to the channel in the normal manner","The gaps at the ceiling, walls and floor are sealed with acoustical caulk","Black foam tape is used to seal around the door"]} },
     ],
   } as SecCard,
   {
@@ -252,6 +259,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2016-ol-q6-b-r1", kind: "anyN", verbatim: "Using notes and freehand sketches, describe three specific safety precautions to be observed when turning a wooden bowl ", marks: 18, openList: true, group: {"claimMax":3,"perOption":6,"options":["Know where the on / off switch is located and how to turn on / off the lathe","Know how to stop the lathe","The wood should be sound and free of any defects","Defective piece may break apart during the turning process","The work B should be properly secured to the faceplate A","If not properly secured the piece may come loose","Rotate the piece by hand at first","This is to ensure the piece will not hit the tool rest","Clear space A between tool rest and the wooden blank","Set the correct speed for turning of the bowl","Using the incorrect speed will may cause serious injury","Slow for big and fast for small items","A special visor should be worn when using the lathe","This offers protection from flying chips or particles"]} },
     ],
+    figure: {
+          "candId": "construction-studies-2016-ol-paper-p003-i0",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2016-ol-paper-p003-i0.png",
+          "srcHash": "7db5f1800732ccb6ad98099d910356e5",
+          "alt": "A tonal sketch of a wood-turning lathe seen from the side: a cast pedestal and headstock on the left carry a cylindrical drive housing, and a shallow wooden bowl is mounted face-out on the faceplate. A tool rest is set close to the bowl on a vertical post rising from the lathe bed, and a long turning gouge with a dark shaped handle lies across the rest with its cutting edge presented to the inside face of the revolving bowl. No labels or annotation text appear in the drawing.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2016 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -260,11 +275,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2016 Ordinary Level — © State Examinations Commission.",
     id: "cons-2016-ol-q9-a", topicId: "cons-3-3", conceptId: "wood-external-cladding-reasons-choice-wood",
     section: "B", questionRef: "2016 OL Q9(a)",
-    stem: "The scheme groups its answer under: Cedar; Larch Douglas Fir",
     questionText: "Specify a suitable wood for the external cladding, and give two reasons for your choice of wood.",
     tariffModel: {"kind":"bestNofParts","notation":"3 x 5","answer":3,"ofParts":14,"perPart":5}, totalMarks: 15,
     rows: [
-    { id: "cons-2016-ol-q9-a-r1", kind: "anyN", verbatim: "Specify a suitable wood for the external cladding, and give two reasons for your choice of wood.", marks: 15, openList: true, group: {"claimMax":3,"perOption":5,"options":["Cedar has a pleasant appearance","Cedar is easy to cut, glue and finish","Cedar is suitable for all weather situations","It is one of the world’s most durable woods","It is lightweight which makes it suitable for cladding","Cedar is easy to finish with oil or other suitable treatment","Larch is naturally durable for outdoor","Attractive appearance use","The wood is reddish brown in colour","It is resistant to water","The seasoned wood is durable and","Attractive in appearance strong","Resistant to rot and wood eating","The wood is grown in Ireland organisms"]} },
+    { id: "cons-2016-ol-q9-a-r1", kind: "anyN", verbatim: "Specify a suitable wood for the external cladding, and give two reasons for your choice of wood.", marks: 15, contextNote: "The scheme groups its answer under: Cedar; Larch Douglas Fir", openList: true, group: {"claimMax":3,"perOption":5,"options":["Cedar has a pleasant appearance","Cedar is easy to cut, glue and finish","Cedar is suitable for all weather situations","It is one of the world’s most durable woods","It is lightweight which makes it suitable for cladding","Cedar is easy to finish with oil or other suitable treatment","Larch is naturally durable for outdoor","Attractive appearance use","The wood is reddish brown in colour","It is resistant to water","The seasoned wood is durable and","Attractive in appearance strong","Resistant to rot and wood eating","The wood is grown in Ireland organisms"]} },
     ],
   } as SecCard,
   {
@@ -487,6 +501,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "cons-2017-ol-q6-a-r1", kind: "anyN", verbatim: "Discuss two reasons why safety signs must be displayed at the entrance to a construction site", marks: 10, contextNote: "Discuss two reasons why safety signs must be displayed at the entrance to a construction site", openList: true, group: {"claimMax":2,"perOption":5,"options":["Safety signs must be used wherever a potential hazard exists","Construction sites have many danger areas","Safety signs alert people to the dangers on a construction site","Safety signs remind all of Health and Safety on site","The signs show that machinery, work at heights and trenches exist on site","Remind site workers and visitors to wear hard hats and high visibility jackets","Remind site workers to use correct footwear"]} },
     ],
+    figure: {
+          "candId": "construction-studies-2017-ol-paper-p003-i0",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-ol-paper-p003-i0.png",
+          "srcHash": "570b76d0eda59654259c422869a488ab",
+          "alt": "A pencil-and-wash sketch of the entrance to a construction site. A run of temporary steel mesh fence panels standing on concrete block feet closes off the site, with a gated opening in the middle. Four safety signs are fixed to the fence panels: a triangular warning sign on the left-hand panel and three rectangular notice boards further along, their lettering drawn too small to read. Behind the fence stand a partly built multi-storey concrete frame with exposed floor slabs and scaffolding, a tall tower crane with its jib and hook over the building, and a second block under construction on the right. Two workers are sketched walking inside the fenced compound on the right, with rough ground and hoarding shadows in the foreground.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2017 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -744,6 +766,14 @@ export const CARDS: SecCard[] = [
     { id: "cons-2017-ol-q9-c-r7", kind: "anyN", verbatim: "C Manipulative Skills", marks: 4, contextNote: "C Manipulative Skills", openList: true, group: {"claimMax":2,"perOption":2,"options":["Skills in preparation and finishing of materials","Safe use of tools and machines - Hand/Power/CNC","Skills in assembly of materials"]} },
     { id: "cons-2017-ol-q9-c-r8", kind: "anyN", verbatim: "D Presentation of Project", marks: 8, contextNote: "D Presentation of Project", openList: true, group: {"claimMax":2,"perOption":4,"options":["Task completed to acceptable standard","Appropriate use of materials","Satisfactory knowledge of construction technology"]} },
     ],
+    figure: {
+          "candId": "construction-studies-2017-ol-paper-p004-i0",
+          "src": "/exam-figures/construction-studies/markbank/construction-studies-2017-ol-paper-p004-i0.png",
+          "srcHash": "12714650456133ed579297250448b28f",
+          "alt": "A pencil-and-wash perspective sketch of the rear of a small pitched-roof dwelling, viewed from above and to one side. A roof window (rooflight) is set into the slated roof slope and a chimney stack rises near the ridge. At ground level a wide sliding door opens from the house onto a raised external patio of timber decking, the boards running away from the wall. On the decking are a dining table with place settings and three or four chairs, a large potted plant against the wall, and two standing figures beside the open sliding doors. Trees and low planting surround the house on both sides and along the front edge of the deck.",
+          "attribution": "SEC Leaving Certificate Construction Studies 2017 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -817,11 +847,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2018 Ordinary Level — © State Examinations Commission.",
     id: "cons-2018-ol-q3-a", topicId: "cons-5-2", conceptId: "wood-burning-stove-back-boiler-shown",
     section: "B", questionRef: "2018 OL Q3(a)",
-    stem: "The scheme groups its answer under: Secondary circulation; Primary circulation",
     questionText: "A wood-burning stove with a back boiler, as shown, is used to heat water for a dwelling house. Using a single-line labelled diagram, show the pipework required to supply hot water to a shower. Include the following in your diagram: • wood-burning stove • rising main and cold water storage tank • hot water cylinder and expansion tank • pipework to shower and all necessary valves.",
     tariffModel: {"kind":"bestNofParts","notation":"7 x 5","answer":7,"ofParts":11,"perPart":5}, totalMarks: 35,
     rows: [
-    { id: "cons-2018-ol-q3-a-r1", kind: "anyN", verbatim: "A wood-burning stove with a back boiler, as shown, is used to heat water for a dwelling house. Using a single-line label", marks: 35, openList: true, group: {"claimMax":7,"perOption":5,"options":["15 mm rising main","Water storage tank and overflow 22 mm min","22 mm cold feed from water storage tank to hot water cylinder","Hot water cylinder","22 mm expansion pipe from hot water cylinder","22 mm hot water supply to shower","Wood-burning stove","28 mm primary flow and return to and from wood-burning stove and hot","22 mm cold feed from expansion tank and 22 mm expansion pipe","Expansion tank and overflow 22 mm min","Valves"]} },
+    { id: "cons-2018-ol-q3-a-r1", kind: "anyN", verbatim: "A wood-burning stove with a back boiler, as shown, is used to heat water for a dwelling house. Using a single-line label", marks: 35, contextNote: "The scheme groups its answer under: Secondary circulation; Primary circulation", openList: true, group: {"claimMax":7,"perOption":5,"options":["15 mm rising main","Water storage tank and overflow 22 mm min","22 mm cold feed from water storage tank to hot water cylinder","Hot water cylinder","22 mm expansion pipe from hot water cylinder","22 mm hot water supply to shower","Wood-burning stove","28 mm primary flow and return to and from wood-burning stove and hot","22 mm cold feed from expansion tank and 22 mm expansion pipe","Expansion tank and overflow 22 mm min","Valves"]} },
     ],
   } as SecCard,
   {
@@ -1262,11 +1291,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2019 Ordinary Level — © State Examinations Commission.",
     id: "cons-2019-ol-q7-a", topicId: "cons-1-1", conceptId: "given-design-preferred-location-kitchen-area",
     section: "B", questionRef: "2019 OL Q7(a)",
-    stem: "The scheme groups its answer under: Sink; Cooker; Fridge",
     questionText: "Draw a freehand sketch of the given design and show your preferred location for each of the following in the kitchen area: • cooker • fridge • sink.",
     tariffModel: {"kind":"bestNofParts","notation":"4 x 4","answer":4,"ofParts":14,"perPart":4}, totalMarks: 16,
     rows: [
-    { id: "cons-2019-ol-q7-a-r1", kind: "anyN", verbatim: "Draw a freehand sketch of the given design and show your preferred location for each of the following in the kitchen are", marks: 16, openList: true, group: {"claimMax":4,"perOption":4,"options":["Natural light is available to the sink S at the window","It is pleasant for the person using the sink","It is close to the cooker, less than 2 metres","It is good to have a view to the garden or lawn","It forms part of the triangle design for kitchens","There is ample worktop space at either side","There is worktop space at either side of the cooker C","It forms part of the triangle for kitchen layout","It avoids crossing the kitchen with hot pans or pots","It is a safe location in relation to the door opening","It is within easy reach of the sink","The fridge F is near the sink for food preparation","It forms part of the working triangle","It has worktop space at either side"]} },
+    { id: "cons-2019-ol-q7-a-r1", kind: "anyN", verbatim: "Draw a freehand sketch of the given design and show your preferred location for each of the following in the kitchen are", marks: 16, contextNote: "The scheme groups its answer under: Sink; Cooker; Fridge", openList: true, group: {"claimMax":4,"perOption":4,"options":["Natural light is available to the sink S at the window","It is pleasant for the person using the sink","It is close to the cooker, less than 2 metres","It is good to have a view to the garden or lawn","It forms part of the triangle design for kitchens","There is ample worktop space at either side","There is worktop space at either side of the cooker C","It forms part of the triangle for kitchen layout","It avoids crossing the kitchen with hot pans or pots","It is a safe location in relation to the door opening","It is within easy reach of the sink","The fridge F is near the sink for food preparation","It forms part of the working triangle","It has worktop space at either side"]} },
     ],
   } as SecCard,
   {
@@ -1445,11 +1473,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2020 Ordinary Level — © State Examinations Commission.",
     id: "cons-2020-ol-q7-a", topicId: "cons-5-6", conceptId: "given-design-preferred-location-bathroom-toilet",
     section: "B", questionRef: "2020 OL Q7(a)",
-    stem: "The scheme groups its answer under: Toilet; Wash basin; Shower area",
     questionText: "Draw a freehand sketch of the given design and show your preferred location for each of the following in the bathroom: • toilet • wash basin • shower area. Give one reason for selecting each location.",
     tariffModel: {"kind":"bestNofParts","notation":"4 x 6","answer":4,"ofParts":12,"perPart":6}, totalMarks: 24,
     rows: [
-    { id: "cons-2020-ol-q7-a-r1", kind: "anyN", verbatim: "Draw a freehand sketch of the given design and show your preferred location for each of the following in the bathroom: •", marks: 24, openList: true, group: {"claimMax":4,"perOption":6,"options":["Located on an external wall making waste disposal easier to plumb","It has free space on the side to allow grab rails to be fixed to the wall","Fitted in this location to allow for a 1500 mm turning circle in bathroom","External wall to allow toilet to be fixed securely","There is a wall to allow it to be fixed securely","Fitted in this location to allow for a 1500 mm turning circle","Wall space to attach a mirror over the basin","Adequate wall space to install grab rails if necessary","It avoids the door opening and allows for moving space","It has natural light available","It has external walls to allow for fixtures and fittings to be attached securely","Fitted in this location to allow for a 1500mm turning circle in bathroom"]} },
+    { id: "cons-2020-ol-q7-a-r1", kind: "anyN", verbatim: "Draw a freehand sketch of the given design and show your preferred location for each of the following in the bathroom: •", marks: 24, contextNote: "The scheme groups its answer under: Toilet; Wash basin; Shower area", openList: true, group: {"claimMax":4,"perOption":6,"options":["Located on an external wall making waste disposal easier to plumb","It has free space on the side to allow grab rails to be fixed to the wall","Fitted in this location to allow for a 1500 mm turning circle in bathroom","External wall to allow toilet to be fixed securely","There is a wall to allow it to be fixed securely","Fitted in this location to allow for a 1500 mm turning circle","Wall space to attach a mirror over the basin","Adequate wall space to install grab rails if necessary","It avoids the door opening and allows for moving space","It has natural light available","It has external walls to allow for fixtures and fittings to be attached securely","Fitted in this location to allow for a 1500mm turning circle in bathroom"]} },
     ],
   } as SecCard,
   {
@@ -2150,11 +2177,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Construction Studies 2022 Ordinary Level — © State Examinations Commission.",
     id: "cons-2022-ol-q7-b", topicId: "cons-1-1", conceptId: "laying-out-a-garden",
     section: "B", questionRef: "2022 OL Q7(b)",
-    stem: "The scheme groups its answer under: Outdoor dining/living space; Garden storage; Flower beds; Lawn area",
     questionText: "Draw a large freehand sketch of the given design and show your preferred location for each of the following in the garden area: • outdoor dining/living space • garden storage • flower beds • lawn area.",
     tariffModel: {"kind":"bestNofParts","notation":"5 x 6","answer":5,"ofParts":12,"perPart":6}, totalMarks: 30,
     rows: [
-    { id: "cons-2022-ol-q7-b-r1", kind: "anyN", verbatim: "Draw a large freehand sketch of the given design and show your preferred location for each of the following in the garde", marks: 30, openList: true, group: {"claimMax":5,"perOption":6,"options":["Located close to dwelling to allow ease of indoor and outdoor living","Located to catch south facing sunlight","Located away from the house to prevent shading from dwelling","Located close to entrance gate to allow ease of use when storing garden supplies","Located at the back of the garden to allow freedom of movement around garden","Located close to a side fence to prevent shading the garden area","Located in sight of the dwelling for occupants to enjoy the view","Located to capture sunlight during the day","Located along a boundary fence to allow ease of movement around garden","Located in occupants’ line of vision","Located close to the dwelling to bring nature close in the indoors","Located at the rear of the garden to prevent occupants picking up dirt and water on a wet day"]} },
+    { id: "cons-2022-ol-q7-b-r1", kind: "anyN", verbatim: "Draw a large freehand sketch of the given design and show your preferred location for each of the following in the garde", marks: 30, contextNote: "The scheme groups its answer under: Outdoor dining/living space; Garden storage; Flower beds; Lawn area", openList: true, group: {"claimMax":5,"perOption":6,"options":["Located close to dwelling to allow ease of indoor and outdoor living","Located to catch south facing sunlight","Located away from the house to prevent shading from dwelling","Located close to entrance gate to allow ease of use when storing garden supplies","Located at the back of the garden to allow freedom of movement around garden","Located close to a side fence to prevent shading the garden area","Located in sight of the dwelling for occupants to enjoy the view","Located to capture sunlight during the day","Located along a boundary fence to allow ease of movement around garden","Located in occupants’ line of vision","Located close to the dwelling to bring nature close in the indoors","Located at the rear of the garden to prevent occupants picking up dirt and water on a wet day"]} },
     ],
   } as SecCard,
   {

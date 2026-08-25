@@ -263,6 +263,11 @@ export interface SecCardBase extends CardBase {
 export interface SecQuestionCard extends SecCardBase {
   kind: 'question';
   figure?: CardFigure;
+  /** The SEC's own print of the ask and its setup, cropped from the paper.
+   *  Shown BEFORE the reveal — it is the question, never the answer — and it
+   *  replaces the text stem for Maths, where retold stems attached the wrong
+   *  part's context and flattened the typeset notation. */
+  questionFigure?: CardFigure;
 }
 
 /**

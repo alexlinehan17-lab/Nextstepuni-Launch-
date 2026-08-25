@@ -4047,6 +4047,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "One side of the kink — both of these", marks: 6, contextNote: "Both halves, 3 marks each: what rivals do when the firm raises price, and what they do when it cuts price.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Before the kink – if a firm increases its price, competing firms will not follow by raising their prices. Customers will then switch to competitors, who are keeping their prices unchanged. As a result, quantity demanded will decrease by a greater percentage than the price increase / the firm will lose a lot of consumers. Hence this part of the demand curve is relatively price elastic.","After the kink – if a firm reduces its price, competing firms will match the price cut to avoid losing their customers. Since all firms are lowering prices together, the firm will not gain many new customers. This means quantity demanded will increase by a smaller percentage than the price reduction. Hence, this part of the demand curve is relatively price inelastic."]} },
     ],
+    figure: {
+          "candId": "economics-2025-HL-paper-p11-art",
+          "src": "/exam-figures/economics/markbank/economics-2025-HL-paper-p11-art.png",
+          "srcHash": "e3f7aab02ca447e84f23cc676a085706",
+          "alt": "A kinked demand diagram of a firm in oligopoly at long-run equilibrium. 'Price' on the vertical axis, 'Quantity' on the horizontal. A yellow line runs from the top left, bends at a filled black dot and falls more steeply to the axis; it is numbered 2 in a yellow box near its lower end. A red line runs below it and stops abruptly; it is numbered 3 in a red box. A green U-shaped curve rises through a second filled dot labelled E to the top right; it is numbered 1 in a green box. Blue dashed guides run from the upper dot left to P1 on the price axis and down to Q1 on the quantity axis. Beneath the diagram sit the three-row answer table for items 1 to 3 and part (b) asking for the shape of curve 2.",
+          "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",

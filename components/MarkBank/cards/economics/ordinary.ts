@@ -1236,6 +1236,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "It is the increase in GNP / output (value of goods and services) national income per head of population within a country over a period of time / increased productive capacity of an economy.", marks: 6, contextNote: "The definition, 6 marks; any of the slash-separated wordings.", openList: true },
     ],
+    figure: {
+          "candId": "economics-2022-OL-paper-p03-i0",
+          "src": "/exam-figures/economics/markbank/economics-2022-OL-paper-p03-i0.png",
+          "srcHash": "874701930c8e9f13b50b31a1e8f95fcb",
+          "alt": "A Central Bank of Ireland infographic headed 'Forecast growth* in Irish economy' on a dark teal ground, with a grey silhouette map of Ireland at left and four coloured columns rising left to right, each labelled with its year above and its rate inside: 2020 -4.9% (purple, the only negative), 2021 5.5% (orange), 2022 7.1% (teal), 2023 4.1% (pale green). Footnote '*Modified domestic demand.' and the Banc Ceannais na hÉireann / Central Bank of Ireland logo.",
+          "attribution": "SEC Leaving Certificate Economics 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",

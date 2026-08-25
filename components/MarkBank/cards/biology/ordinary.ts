@@ -1390,7 +1390,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q2-a", topicId: "bio-3-2", conceptId: "yeast-unicellular",
     section: "A", questionRef: "2024 OL Q2(a)",
-    stem: "Section A — Question 2, on yeast reproducing by budding. The scheme marks parts (a)–(g) together as 6(3) + 2.",
+    stem: "Section A — Question 2, on yeast reproducing by budding.",
     questionText: "Is yeast a unicellular or multicellular organism?",
     tariffModel: {"kind":"orderedSplit","notation":"6(3) + 2"}, totalMarks: 3,
     rows: [
@@ -1404,7 +1404,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q2-b", topicId: "bio-3-2", conceptId: "yeast-budding",
     section: "A", questionRef: "2024 OL Q2(b)",
-    stem: "Section A — Question 2, on yeast reproducing by budding. The scheme marks parts (a)–(g) together as 6(3) + 2.",
+    stem: "Section A — Question 2, on yeast reproducing by budding.",
     questionText: "What is the reason for budding in yeast?",
     tariffModel: {"kind":"orderedSplit","notation":"6(3) + 2"}, totalMarks: 3,
     rows: [
@@ -1418,7 +1418,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q2-d", topicId: "bio-3-2", conceptId: "yeast-bud-fate",
     section: "A", questionRef: "2024 OL Q2(d)",
-    stem: "Section A — Question 2, on yeast reproducing by budding. The scheme marks parts (a)–(g) together as 6(3) + 2.",
+    stem: "Section A — Question 2, on yeast reproducing by budding.",
     questionText: "Briefly describe what happens to the bud.",
     tariffModel: {"kind":"orderedSplit","notation":"6(3) + 2"}, totalMarks: 3,
     rows: [
@@ -1432,7 +1432,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q2-g", topicId: "bio-1-1", conceptId: "yeast-kingdom",
     section: "A", questionRef: "2024 OL Q2(g)",
-    stem: "Section A — Question 2, on yeast reproducing by budding. The scheme marks parts (a)–(g) together as 6(3) + 2.",
+    stem: "Section A — Question 2, on yeast reproducing by budding.",
     questionText: "Yeast is a member of which kingdom?",
     tariffModel: {"kind":"orderedSplit","notation":"6(3) + 2"}, totalMarks: 3,
     rows: [
@@ -1474,7 +1474,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q4-c", topicId: "bio-1-1", conceptId: "beneficial-uses-of-viruses",
     section: "A", questionRef: "2024 OL Q4(c)",
-    stem: "Section A — Question 4, on viruses. The scheme marks the five responses in (a)–(d) as 5(4).",
+    stem: "Section A — Question 4, on viruses.",
     questionText: "Give an example of how viruses might be beneficial.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -1488,7 +1488,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q4-d", topicId: "bio-1-1", conceptId: "virus-replication",
     section: "A", questionRef: "2024 OL Q4(d)",
-    stem: "Section A — Question 4, on viruses. The scheme marks the five responses in (a)–(d) as 5(4).",
+    stem: "Section A — Question 4, on viruses.",
     questionText: "Which of the following sentences describes how viruses replicate?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -1502,7 +1502,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q5-a", topicId: "bio-2-4", conceptId: "skeleton-functions",
     section: "A", questionRef: "2024 OL Q5(a)",
-    stem: "Section A — Question 5, on the human skeleton. The scheme marks parts (a)–(d) together as 6(3) + 2.",
+    stem: "Section A — Question 5, on the human skeleton.",
     questionText: "Give two functions of the skeleton.",
     tariffModel: {"kind":"orderedSplit","notation":"6(3) + 2"}, totalMarks: 6,
     rows: [
@@ -1516,7 +1516,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q5-d", topicId: "bio-2-4", conceptId: "synovial-joints",
     section: "A", questionRef: "2024 OL Q5(d)",
-    stem: "Section A — Question 5, on the human skeleton. The scheme marks parts (a)–(d) together as 6(3) + 2.",
+    stem: "Section A — Question 5, on the human skeleton.",
     questionText: "Which of the following types of joint describes a hinge or ball and socket joint?",
     tariffModel: {"kind":"orderedSplit","notation":"6(3) + 2"}, totalMarks: 3,
     rows: [
@@ -3193,6 +3193,37 @@ export const CARDS: SecCard[] = [
     ],
   } as SecCard,
   {
+    ...base, kind: "diagram",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC025GLP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2023-ol-q16b-ii-v", topicId: "bio-2-4", conceptId: "eye-structure-and-function",
+    section: "C", questionRef: "2023 OL Q16(b)(ii)–(v)",
+    stem: "The paper prints a diagram of the eye. X is the iris, Y is the cornea and Z is the lens, named in part (b)(i).",
+    questionText: "What is the function of the part labelled Y? Which labelled part focuses the light rays? Where are light rays usually focused? What would you expect to happen to the diameter of the pupil in bright light?",
+    tariffModel: {"kind":"orderedSplit","notation":"2(7) + 8(2)"}, totalMarks: 18,
+    rows: [
+    { id: "r-cornea", kind: "point", verbatim: "Allows light to enter the eye", marks: null },
+    { id: "r-focus", kind: "alt", verbatim: "Z or lens (allow Y or cornea)", marks: null },
+    { id: "r-retina", kind: "point", verbatim: "Retina", marks: null },
+    { id: "r-pupil", kind: "point", verbatim: "Gets smaller", marks: null },
+    ],
+    figure: {
+          "candId": "biology-2023-OL-paper2-p07-i1",
+          "src": "/exam-figures/biology/markbank/biology-2023-OL-paper2-p07-i1.png",
+          "srcHash": "9d4f83220904179e62f0d7ae726130f8",
+          "alt": "Page crop of Question 16(b). Right: a greyscale horizontal section of the human eyeball facing left, showing the layered coats, the pale round lens behind the front opening, the ciliary body, the vitreous chamber with a fine branching vessel pattern on the back wall, and the nerve leaving the rear. Labels: X arrows in to the dark structure immediately in front of the lens; Y arrows up-right to the outermost curved front layer; Z arrows up-right to the pale round lens; a lower-case 'd' is joined to a short double-headed vertical arrow spanning the front opening (the pupil aperture); leader arrows bring in the printed words 'Retina' (to the inner back wall) and 'Optic nerve' (to the nerve leaving the back). Nothing touches any edge — this crop is clean. Left: question text (b)(i)–(iii) with the terms lens; iris; cornea in bold.",
+          "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "X",
+                "Y",
+                "Z",
+                "d"
+          ]
+    },
+    labelKey: [{"letter":"X","meaning":"Iris","askedInThisQuestion":false},{"letter":"Y","meaning":"Cornea","askedInThisQuestion":true},{"letter":"Z","meaning":"Lens","askedInThisQuestion":true},{"letter":"d","meaning":"the diameter of the pupil","askedInThisQuestion":false}],
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2023, level: "ordinary",
     paperFileid: "LC025GLP040EV",
@@ -4595,6 +4626,34 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Wind / animal (e.g. insect, bird, other correct) / water / self", marks: null, group: {"claimMax":2,"options":["Wind","animal (e.g. insect, bird, other correct)","water","self"]} },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC025GLP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2022-ol-q16-a-ii", topicId: "bio-2-5", conceptId: "testosterone-source",
+    section: "C", questionRef: "2022 OL Q16(a)(ii)",
+    stem: "Structure C is the testes.",
+    questionText: "Name the male hormone produced by the structure labelled C.",
+    tariffModel: {"kind":"orderedSplit","notation":"2(7) + 8(2)"}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Testosterone", marks: null },
+    ],
+    figure: {
+          "candId": "biology-2022-OL-paper2-p07-i0",
+          "src": "/exam-figures/biology/markbank/biology-2022-OL-paper2-p07-i0.png",
+          "srcHash": "c04eaa06b4e0d1f7b90feecac7dd0f7f",
+          "alt": "Complete outline drawing of the human male reproductive system in side view. 'Bladder' is arrowed to the large rounded organ at upper centre; a tube loops down from behind it, and A is arrowed to the upper shaft of the elongated organ at lower left, D is arrowed lower into the tube running along the inside of that same organ, B is arrowed to the looping tube where it descends behind it, and C is arrowed to the coiled/granular mass inside the rounded sac at bottom centre. The heading '(a) The diagram shows the human male reproductive system.' is intact above and '(i) Name the parts labelled A, B, C, D.' is intact below. Nothing is cut off.",
+          "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C",
+                "D"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Penis","askedInThisQuestion":false},{"letter":"B","meaning":"Sperm duct (vas deferens)","askedInThisQuestion":false},{"letter":"C","meaning":"Testes","askedInThisQuestion":true},{"letter":"D","meaning":"Urethra","askedInThisQuestion":false}],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6248,6 +6307,35 @@ export const CARDS: SecCard[] = [
     ],
   } as SecCard,
   {
+    ...base, kind: "diagram",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC025GLP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2021-ol-q14-b-iv", topicId: "bio-2-6", conceptId: "functions-of-the-liver",
+    section: "C", questionRef: "2021 OL Q14(b)(iv)",
+    stem: "The part labelled B on the diagram is the liver, named in part (b)(i).",
+    questionText: "Give any two functions of the part labelled B:",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-a", kind: "anyN", verbatim: "Breakdown red blood cells / make bile / store vitamins / store glycogen / produce heat / detoxify (alcohol) / make blood proteins", marks: null, group: {"claimMax":2,"perOption":3,"options":["Breakdown red blood cells","make bile","store vitamins","store glycogen","produce heat","detoxify (alcohol)","make blood proteins"]} },
+    ],
+    figure: {
+          "candId": "biology-2021-OL-paper2-p05-i0",
+          "src": "/exam-figures/biology/markbank/biology-2021-OL-paper2-p05-i0.png",
+          "srcHash": "a3f54b99b58cc40f4fba9075b06b1e12",
+          "alt": "A clean line drawing of the human digestive system: oesophagus entering a J-shaped stomach top right, a large smooth liver on the left with a small gall bladder beneath it, an elongated ridged pancreas lying below the stomach, a short curved tube leaving the stomach outlet, a coiled small intestine framed by a wider ridged colon, and the rectum below. Five letter labels on straight arrows: B into the liver, C into the stomach, D onto the pancreas, A onto the short curved tube at the stomach outlet, E onto the wide outer loop of gut. A word label \"Gall bladder\" with an arrow points to the small sac under the liver. The diagram and every letter are complete; the following text line, \"(ii) Name the acid released by part C\", is sliced through at the bottom edge of the crop.",
+          "attribution": "SEC Leaving Certificate Biology 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Duodenum (or small intestine)","askedInThisQuestion":false},{"letter":"B","meaning":"Liver","askedInThisQuestion":true},{"letter":"C","meaning":"Stomach","askedInThisQuestion":false},{"letter":"D","meaning":"Pancreas","askedInThisQuestion":false},{"letter":"E","meaning":"Colon (or large intestine)","askedInThisQuestion":false}],
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
     paperFileid: "LC025GLP040EV",
@@ -6353,6 +6441,60 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-a", kind: "point", verbatim: "Minerals (or named mineral)", marks: 3 },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC025GLP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2021-ol-q15-b-v", topicId: "bio-2-6", conceptId: "xylem-adaptations",
+    section: "C", questionRef: "2021 OL Q15(b)(v)",
+    stem: "The vessels labelled B are xylem.",
+    questionText: "Describe two ways the vessels labelled B are adapted to their function:",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-a", kind: "anyN", verbatim: "Narrow / hollow / tubes / lignin / pits", marks: null, group: {"claimMax":2,"perOption":3,"options":["Narrow","hollow","tubes","lignin","pits"]} },
+    ],
+    figure: {
+          "candId": "biology-2021-OL-paper2-p06-i0",
+          "src": "/exam-figures/biology/markbank/biology-2021-OL-paper2-p06-i0.png",
+          "srcHash": "1a284fa6117d26e14370a1c46c488ccd",
+          "alt": "A detailed cutaway drawing of root tissue seen from the side. On the left, four stippled black lumps of soil (word label \"Soil particles\" with two arrows) surround a long thin-walled outgrowth from a surface cell; letter A on a short arrow points to that outgrowth. Grey block arrows then track water inwards across a file of large thin-walled cells, through a narrow file of cells with dashed cross-walls, and into two long vessels drawn with spiral/helical thickening, where two grey arrows turn upwards. Two square brackets under the tissue carry the letters C (under the narrow dashed-plate cells) and B (under the two spirally thickened vessels). The drawing and all three letters are complete with white margin on the right; only the preceding question line, \"(iii) What benefit does phototropism give to a plant? (9)\", is clipped at the top edge.",
+          "attribution": "SEC Leaving Certificate Biology 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Root hair","askedInThisQuestion":false},{"letter":"B","meaning":"Xylem","askedInThisQuestion":true},{"letter":"C","meaning":"Phloem","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC025GLP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2021-ol-q15-b-vi", topicId: "bio-2-6", conceptId: "upward-movement-of-water",
+    section: "C", questionRef: "2021 OL Q15(b)(vi)",
+    stem: "The vessels labelled B are xylem.",
+    questionText: "Name the process responsible for the upward movement of water through the vessels labelled B:",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-a", kind: "alt", verbatim: "Transpiration or root pressure", marks: 3 },
+    ],
+    figure: {
+          "candId": "biology-2021-OL-paper2-p06-i0",
+          "src": "/exam-figures/biology/markbank/biology-2021-OL-paper2-p06-i0.png",
+          "srcHash": "1a284fa6117d26e14370a1c46c488ccd",
+          "alt": "A detailed cutaway drawing of root tissue seen from the side. On the left, four stippled black lumps of soil (word label \"Soil particles\" with two arrows) surround a long thin-walled outgrowth from a surface cell; letter A on a short arrow points to that outgrowth. Grey block arrows then track water inwards across a file of large thin-walled cells, through a narrow file of cells with dashed cross-walls, and into two long vessels drawn with spiral/helical thickening, where two grey arrows turn upwards. Two square brackets under the tissue carry the letters C (under the narrow dashed-plate cells) and B (under the two spirally thickened vessels). The drawing and all three letters are complete with white margin on the right; only the preceding question line, \"(iii) What benefit does phototropism give to a plant? (9)\", is clipped at the top edge.",
+          "attribution": "SEC Leaving Certificate Biology 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Root hair","askedInThisQuestion":false},{"letter":"B","meaning":"Xylem","askedInThisQuestion":true},{"letter":"C","meaning":"Phloem","askedInThisQuestion":false}],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6660,6 +6802,33 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-a", kind: "anyN", verbatim: "(Excess) water / (excess) salts / urea / other correct answer", marks: null, openList: true, group: {"claimMax":2,"perOption":3,"options":["(Excess) water","(excess) salts","urea"]} },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC025GLP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2021-ol-q16d-iv", topicId: "bio-2-6", conceptId: "bladder-function",
+    section: "C", questionRef: "2021 OL Q16(d)(iv)",
+    stem: "The part labelled C is the bladder.",
+    questionText: "Give the function of the part labelled C:",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-a", kind: "point", verbatim: "Store urine", marks: 3 },
+    ],
+    figure: {
+          "candId": "biology-2021-OL-paper2-p08-i0",
+          "src": "/exam-figures/biology/markbank/biology-2021-OL-paper2-p08-i0.png",
+          "srcHash": "172891fa08ddd357b7aa4b523c0dde52",
+          "alt": "A simple outline drawing of the human urinary system: two bean-shaped organs left and right of a central pair of long vessels, a long tube running down from each bean to a rounded sac at the bottom, and a short narrow tube leaving the base of the sac. Letter A on an arrow points to the right-hand bean-shaped organ; letter B points to the right-hand long descending tube; letter C points into the rounded sac; a word label \"Urethra\" points to the short tube leaving the base of the sac. Diagram and all letters complete; the stem line at the top (\"(ii) The diagram shows the human urinary system.\") is shaved at the top edge and the following line \"(iii) Name two substances excreted by part A.\" sits at the very bottom.",
+          "attribution": "SEC Leaving Certificate Biology 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Kidney","askedInThisQuestion":false},{"letter":"B","meaning":"Ureter","askedInThisQuestion":false},{"letter":"C","meaning":"Bladder","askedInThisQuestion":true}],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7073,36 +7242,6 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
-    id: "bio-2021-ol-q14-b-iv-fig", topicId: "bio-2-6", conceptId: "functions-of-the-liver",
-    section: "C", questionRef: "2021 OL Q14(b)(iv)",
-    stem: "The diagram shows the human digestive system.",
-    questionText: "Give any two functions of the part labelled B:",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Breakdown red blood cells / make bile / store vitamins / store glycogen / produce heat / detoxify (alcohol) / make blood proteins", marks: null, group: {"claimMax":2,"perOption":3,"options":["Breakdown red blood cells","make bile","store vitamins","store glycogen","produce heat","detoxify (alcohol)","make blood proteins"]} },
-    ],
-    figure: {
-          "candId": "biology-2021-OL-paper2-p05-i0",
-          "src": "/exam-figures/biology/markbank/biology-2021-OL-paper2-p05-i0.png",
-          "srcHash": "a3f54b99b58cc40f4fba9075b06b1e12",
-          "alt": "A clean line drawing of the human digestive system: oesophagus entering a J-shaped stomach top right, a large smooth liver on the left with a small gall bladder beneath it, an elongated ridged pancreas lying below the stomach, a short curved tube leaving the stomach outlet, a coiled small intestine framed by a wider ridged colon, and the rectum below. Five letter labels on straight arrows: B into the liver, C into the stomach, D onto the pancreas, A onto the short curved tube at the stomach outlet, E onto the wide outer loop of gut. A word label \"Gall bladder\" with an arrow points to the small sac under the liver. The diagram and every letter are complete; the following text line, \"(ii) Name the acid released by part C\", is sliced through at the bottom edge of the crop.",
-          "attribution": "SEC Leaving Certificate Biology 2021 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "Gall bladder"
-          ]
-    },
-    labelKey: [{"letter":"A","meaning":"Duodenum (or small intestine)","askedInThisQuestion":false},{"letter":"B","meaning":"Liver","askedInThisQuestion":true},{"letter":"C","meaning":"Stomach","askedInThisQuestion":false},{"letter":"D","meaning":"Pancreas","askedInThisQuestion":false},{"letter":"E","meaning":"Colon (or large intestine)","askedInThisQuestion":false},{"letter":"Gall bladder","meaning":"Gall bladder","askedInThisQuestion":false}],
-  } as SecCard,
-  {
-    ...base, kind: "diagram",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP040EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
     id: "bio-2021-ol-q15-b-ii-fig", topicId: "bio-2-6", conceptId: "root-hair-water-absorption",
     section: "C", questionRef: "2021 OL Q15(b)(ii)",
     questionText: "Name the structure labelled A that absorbs water from the soil:",
@@ -7136,60 +7275,6 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-a", kind: "point", verbatim: "Xylem", marks: 3 },
-    ],
-    figure: {
-          "candId": "biology-2021-OL-paper2-p06-i0",
-          "src": "/exam-figures/biology/markbank/biology-2021-OL-paper2-p06-i0.png",
-          "srcHash": "1a284fa6117d26e14370a1c46c488ccd",
-          "alt": "A detailed cutaway drawing of root tissue seen from the side. On the left, four stippled black lumps of soil (word label \"Soil particles\" with two arrows) surround a long thin-walled outgrowth from a surface cell; letter A on a short arrow points to that outgrowth. Grey block arrows then track water inwards across a file of large thin-walled cells, through a narrow file of cells with dashed cross-walls, and into two long vessels drawn with spiral/helical thickening, where two grey arrows turn upwards. Two square brackets under the tissue carry the letters C (under the narrow dashed-plate cells) and B (under the two spirally thickened vessels). The drawing and all three letters are complete with white margin on the right; only the preceding question line, \"(iii) What benefit does phototropism give to a plant? (9)\", is clipped at the top edge.",
-          "attribution": "SEC Leaving Certificate Biology 2021 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": [
-                "A",
-                "B",
-                "C",
-                "Soil particles"
-          ]
-    },
-    labelKey: [{"letter":"A","meaning":"Root hair","askedInThisQuestion":false},{"letter":"B","meaning":"Xylem","askedInThisQuestion":true},{"letter":"C","meaning":"Phloem","askedInThisQuestion":false},{"letter":"Soil particles","meaning":"Soil particles","askedInThisQuestion":false}],
-  } as SecCard,
-  {
-    ...base, kind: "diagram",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP040EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
-    id: "bio-2021-ol-q15-b-v-fig", topicId: "bio-2-6", conceptId: "xylem-adaptations",
-    section: "C", questionRef: "2021 OL Q15(b)(v)",
-    questionText: "Describe two ways the vessels labelled B are adapted to their function:",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Narrow / hollow / tubes / lignin / pits", marks: null, group: {"claimMax":2,"perOption":3,"options":["Narrow","hollow","tubes","lignin","pits"]} },
-    ],
-    figure: {
-          "candId": "biology-2021-OL-paper2-p06-i0",
-          "src": "/exam-figures/biology/markbank/biology-2021-OL-paper2-p06-i0.png",
-          "srcHash": "1a284fa6117d26e14370a1c46c488ccd",
-          "alt": "A detailed cutaway drawing of root tissue seen from the side. On the left, four stippled black lumps of soil (word label \"Soil particles\" with two arrows) surround a long thin-walled outgrowth from a surface cell; letter A on a short arrow points to that outgrowth. Grey block arrows then track water inwards across a file of large thin-walled cells, through a narrow file of cells with dashed cross-walls, and into two long vessels drawn with spiral/helical thickening, where two grey arrows turn upwards. Two square brackets under the tissue carry the letters C (under the narrow dashed-plate cells) and B (under the two spirally thickened vessels). The drawing and all three letters are complete with white margin on the right; only the preceding question line, \"(iii) What benefit does phototropism give to a plant? (9)\", is clipped at the top edge.",
-          "attribution": "SEC Leaving Certificate Biology 2021 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": [
-                "A",
-                "B",
-                "C",
-                "Soil particles"
-          ]
-    },
-    labelKey: [{"letter":"A","meaning":"Root hair","askedInThisQuestion":false},{"letter":"B","meaning":"Xylem","askedInThisQuestion":true},{"letter":"C","meaning":"Phloem","askedInThisQuestion":false},{"letter":"Soil particles","meaning":"Soil particles","askedInThisQuestion":false}],
-  } as SecCard,
-  {
-    ...base, kind: "diagram",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP040EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
-    id: "bio-2021-ol-q15-b-vi-fig", topicId: "bio-2-6", conceptId: "upward-movement-of-water",
-    section: "C", questionRef: "2021 OL Q15(b)(vi)",
-    questionText: "Name the process responsible for the upward movement of water through the vessels labelled B:",
-    tariffModel: {"kind":"fixed"}, totalMarks: 3,
-    rows: [
-    { id: "r-a", kind: "point", verbatim: "Transpiration or root pressure", marks: 3 },
     ],
     figure: {
           "candId": "biology-2021-OL-paper2-p06-i0",
@@ -7407,34 +7492,6 @@ export const CARDS: SecCard[] = [
           ]
     },
     labelKey: [{"letter":"A","meaning":"Kidney","askedInThisQuestion":true},{"letter":"B","meaning":"Ureter","askedInThisQuestion":true},{"letter":"C","meaning":"Bladder","askedInThisQuestion":true},{"letter":"Urethra","meaning":"Urethra","askedInThisQuestion":false}],
-  } as SecCard,
-  {
-    ...base, kind: "diagram",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP040EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
-    id: "bio-2021-ol-q16d-iv-fig", topicId: "bio-2-6", conceptId: "bladder-function",
-    section: "C", questionRef: "2021 OL Q16(d)(iv)",
-    stem: "The diagram shows the human urinary system.",
-    questionText: "Give the function of the part labelled C:",
-    tariffModel: {"kind":"fixed"}, totalMarks: 3,
-    rows: [
-    { id: "r-a", kind: "point", verbatim: "Store urine", marks: 3 },
-    ],
-    figure: {
-          "candId": "biology-2021-OL-paper2-p08-i0",
-          "src": "/exam-figures/biology/markbank/biology-2021-OL-paper2-p08-i0.png",
-          "srcHash": "172891fa08ddd357b7aa4b523c0dde52",
-          "alt": "A simple outline drawing of the human urinary system: two bean-shaped organs left and right of a central pair of long vessels, a long tube running down from each bean to a rounded sac at the bottom, and a short narrow tube leaving the base of the sac. Letter A on an arrow points to the right-hand bean-shaped organ; letter B points to the right-hand long descending tube; letter C points into the rounded sac; a word label \"Urethra\" points to the short tube leaving the base of the sac. Diagram and all letters complete; the stem line at the top (\"(ii) The diagram shows the human urinary system.\") is shaved at the top edge and the following line \"(iii) Name two substances excreted by part A.\" sits at the very bottom.",
-          "attribution": "SEC Leaving Certificate Biology 2021 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": [
-                "A",
-                "B",
-                "C",
-                "Urethra"
-          ]
-    },
-    labelKey: [{"letter":"A","meaning":"Kidney","askedInThisQuestion":false},{"letter":"B","meaning":"Ureter","askedInThisQuestion":false},{"letter":"C","meaning":"Bladder","askedInThisQuestion":true},{"letter":"Urethra","meaning":"Urethra","askedInThisQuestion":false}],
   } as SecCard,
   {
     ...base, kind: "diagram",
@@ -7671,34 +7728,6 @@ export const CARDS: SecCard[] = [
           ]
     },
     labelKey: [{"letter":"A","meaning":"Penis","askedInThisQuestion":true},{"letter":"B","meaning":"Sperm duct (vas deferens)","askedInThisQuestion":true},{"letter":"C","meaning":"Testes","askedInThisQuestion":true},{"letter":"D","meaning":"Urethra","askedInThisQuestion":true}],
-  } as SecCard,
-  {
-    ...base, kind: "diagram",
-    year: 2022, level: "ordinary",
-    paperFileid: "LC025GLP040EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
-    id: "bio-2022-ol-q16-a-ii-fig", topicId: "bio-2-5", conceptId: "testosterone-source",
-    section: "C", questionRef: "2022 OL Q16(a)(ii)",
-    stem: "The diagram shows the human male reproductive system.",
-    questionText: "Name the male hormone produced by the structure labelled C.",
-    tariffModel: {"kind":"orderedSplit","notation":"2(7) + 8(2)"}, totalMarks: 7,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Testosterone", marks: null, contextNote: "Q16(a) is marked 2(7) + 8(2) across its ten responses: the first two correct responses score 7 each and every later one scores 2. The scheme's table awards 7 marks for one correct response. Structure C on the diagram is the testes." },
-    ],
-    figure: {
-          "candId": "biology-2022-OL-paper2-p07-i0",
-          "src": "/exam-figures/biology/markbank/biology-2022-OL-paper2-p07-i0.png",
-          "srcHash": "c04eaa06b4e0d1f7b90feecac7dd0f7f",
-          "alt": "Complete outline drawing of the human male reproductive system in side view. 'Bladder' is arrowed to the large rounded organ at upper centre; a tube loops down from behind it, and A is arrowed to the upper shaft of the elongated organ at lower left, D is arrowed lower into the tube running along the inside of that same organ, B is arrowed to the looping tube where it descends behind it, and C is arrowed to the coiled/granular mass inside the rounded sac at bottom centre. The heading '(a) The diagram shows the human male reproductive system.' is intact above and '(i) Name the parts labelled A, B, C, D.' is intact below. Nothing is cut off.",
-          "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": [
-                "A",
-                "B",
-                "C",
-                "D"
-          ]
-    },
-    labelKey: [{"letter":"A","meaning":"Penis","askedInThisQuestion":false},{"letter":"B","meaning":"Sperm duct (vas deferens)","askedInThisQuestion":false},{"letter":"C","meaning":"Testes","askedInThisQuestion":true},{"letter":"D","meaning":"Urethra","askedInThisQuestion":false}],
   } as SecCard,
   {
     ...base, kind: "diagram",
@@ -7983,37 +8012,6 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC025GLP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
-    id: "bio-2023-ol-q16b-ii-v-fig", topicId: "bio-2-4", conceptId: "eye-function-focusing-and-pupil-response",
-    section: "C", questionRef: "2023 OL Q16(b)(ii)–(v)",
-    stem: "The paper prints a section through a human eye. The scheme's own part (b)(i) gives X as the iris, Y as the cornea and Z as the lens; 'd' on the diagram is the diameter of the pupil.",
-    questionText: "What is the function of the part labelled Y? Which labelled part focuses the light rays? Where are light rays usually focused? What would you expect to happen to the diameter of the pupil in bright light?",
-    tariffModel: {"kind":"orderedSplit","notation":"2(7) + 8(2)"}, totalMarks: 18,
-    rows: [
-    { id: "r-cornea-function", kind: "point", verbatim: "Allows light to enter the eye", marks: null },
-    { id: "r-focus-part", kind: "alt", verbatim: "Z or lens (allow Y or cornea)", marks: null },
-    { id: "r-focus-site", kind: "point", verbatim: "Retina", marks: null },
-    { id: "r-pupil", kind: "point", verbatim: "Gets smaller", marks: null },
-    ],
-    figure: {
-          "candId": "biology-2023-OL-paper2-p07-i1",
-          "src": "/exam-figures/biology/markbank/biology-2023-OL-paper2-p07-i1.png",
-          "srcHash": "9d4f83220904179e62f0d7ae726130f8",
-          "alt": "Page crop of Question 16(b). Right: a greyscale horizontal section of the human eyeball facing left, showing the layered coats, the pale round lens behind the front opening, the ciliary body, the vitreous chamber with a fine branching vessel pattern on the back wall, and the nerve leaving the rear. Labels: X arrows in to the dark structure immediately in front of the lens; Y arrows up-right to the outermost curved front layer; Z arrows up-right to the pale round lens; a lower-case 'd' is joined to a short double-headed vertical arrow spanning the front opening (the pupil aperture); leader arrows bring in the printed words 'Retina' (to the inner back wall) and 'Optic nerve' (to the nerve leaving the back). Nothing touches any edge — this crop is clean. Left: question text (b)(i)–(iii) with the terms lens; iris; cornea in bold.",
-          "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": [
-                "X",
-                "Y",
-                "Z",
-                "d"
-          ]
-    },
-    labelKey: [{"letter":"X","meaning":"Iris","askedInThisQuestion":false},{"letter":"Y","meaning":"Cornea","askedInThisQuestion":false},{"letter":"Z","meaning":"Lens","askedInThisQuestion":true},{"letter":"d","meaning":"Diameter of the pupil — the double-headed arrow across the pupil opening; the scheme refers to it only through part (v)","askedInThisQuestion":false}],
-  } as SecCard,
-  {
-    ...base, kind: "diagram",
-    year: 2023, level: "ordinary",
-    paperFileid: "LC025GLP040EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q16c-i-fig", topicId: "bio-2-6", conceptId: "root-tissue-types",
     section: "C", questionRef: "2023 OL Q16(c)(i)",
     stem: "The paper prints a transverse section through a root. A root hair is named on the diagram.",
@@ -8045,7 +8043,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q16c-ii-iii-fig", topicId: "bio-2-6", conceptId: "vascular-tissue-transport-and-cells",
     section: "C", questionRef: "2023 OL Q16(c)(ii)–(iii)",
-    stem: "The paper prints a transverse section through a root. The scheme's own part (c)(i) gives A as vascular tissue, B as ground tissue and C as dermal tissue.",
+    stem: "The paper prints a transverse section through a root. A is vascular tissue, B is ground tissue and C is dermal tissue, named in part (c)(i).",
     questionText: "Give two substances that are transported by the tissue labelled A. Name a type of cell located in the tissue labelled A.",
     tariffModel: {"kind":"orderedSplit","notation":"2(7) + 8(2)"}, totalMarks: 16,
     rows: [
@@ -8131,7 +8129,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
     id: "bio-2023-ol-q16d-ii-iii-fig", topicId: "bio-2-5", conceptId: "sepal-function-and-pollen-reception",
     section: "C", questionRef: "2023 OL Q16(d)(ii)–(iii)",
-    stem: "The paper prints a cut-away diagram of an insect-pollinated flower. The scheme's own part (d)(i) gives X as the stigma, Y as the ovule and Z as the sepal.",
+    stem: "The paper prints a cut-away diagram of an insect-pollinated flower. X is the stigma, Y is the ovule and Z is the sepal, named in part (d)(i).",
     questionText: "What is the function of the part labelled Z? On which labelled part are pollen grains received?",
     tariffModel: {"kind":"orderedSplit","notation":"2(7) + 8(2)"}, totalMarks: 14,
     rows: [
@@ -9249,6 +9247,53 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2021-ol-q7-b", topicId: "bio-2-4", conceptId: "where-a-synovial-joint-is-on-the-skeleton",
+    section: "A", questionRef: "2021 OL Q7(b)",
+    questionText: "Place an X on the diagram in a position to show a free moving or synovial joint.",
+    tariffModel: {"kind":"orderedSplit","notation":"2(6) + 3(2) + 2(1)"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "X located on the shoulder or the elbow or the hip or the knee", marks: null },
+    ],
+    figure: {
+          "candId": "biology-2021-OL-paper1-p07-i0",
+          "src": "/exam-figures/biology/markbank/biology-2021-OL-paper1-p07-i0.png",
+          "srcHash": "62631878a4165bc2cf43144a70ed1efc",
+          "alt": "A page crop combining the Q7 question text (left column) with a grey photo-realistic rendering of a complete human skeleton, front view, arms held slightly out from the body. The only mark printed on the skeleton is the word \"Skull\" at the top right with a short arrow pointing down-left to the cranium. Skull, ribcage, pelvis, both arms with full hands and both legs with full feet are all inside the frame. IMPORTANT: no letters are pre-printed on the skeleton — the visible text asks the candidate to \"Place an X\" (synovial joint) and \"Place an F\" (femur) themselves, so this figure must never be captioned as already carrying X or F. Empty ruled answer boxes for parts (a), (c) and (e) are part of the crop. The last text line, \"Name of disorder:\", and its grey answer box are sliced through at the bottom edge; the skeleton itself is not cut.",
+          "attribution": "SEC Leaving Certificate Biology 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2021-ol-q9-b-i", topicId: "bio-u2", conceptId: "enzyme-used-in-the-ph-investigation",
+    section: "B", questionRef: "2021 OL Q9(b)(i)",
+    questionText: "Name the enzyme you used in the investigation.",
+    tariffModel: {"kind":"orderedSplit","notation":"2(9) + 6(1)"}, totalMarks: 24,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Correctly named enzyme (e.g. catalase or pepsin or amylase)", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC025GLP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2021-ol-q11-b-iv", topicId: "bio-3-1", conceptId: "predator-named-in-the-passage",
+    section: "C", questionRef: "2021 OL Q11(b)(iv)",
+    questionText: "Name a predator mentioned in the passage above.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Pine marten", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2022, level: "ordinary",
     paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
@@ -9366,6 +9411,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Plantain: 3/5 = 60%", marks: 3 },
     { id: "r-2", kind: "point", verbatim: "Dandelion: 2/5 = 40%", marks: 3 },
     ],
+    figure: {
+          "candId": "biology-2022-ol-paper-p008-i0",
+          "src": "/exam-figures/biology/markbank/biology-2022-ol-paper-p008-i0.png",
+          "srcHash": "b0f52c52903cf7feb3798258dc5c532d",
+          "alt": "Six-column ruled data table with a grey-shaded header row and a grey-shaded first column. Header cells read Plant, Station 1, Station 2, Station 3, Station 4, Station 5. The Plantain row carries bold tick marks in Station 2, Station 4 and Station 5; the Daisy row carries ticks in Station 1, Station 2, Station 3 and Station 5; the Dandelion row carries ticks in Station 1 and Station 3. All other cells are blank white.",
+          "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9450,6 +9503,313 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Data", marks: 4 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2022-ol-q4-a", topicId: "bio-2-6", conceptId: "skin-structure-parts",
+    section: "A", questionRef: "2022 OL Q4(a)",
+    stem: "The diagram shows a section through human skin. Blood vessel Sweat gland",
+    questionText: "Name the parts labelled A and B in the diagram.",
+    tariffModel: {"kind":"orderedSplit","notation":"6(3) + 2"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A: Hair", marks: null },
+    { id: "r-2", kind: "point", verbatim: "B: Sebaceous gland", marks: null },
+    ],
+    figure: {
+          "candId": "biology-2022-ol-038-p005-i1",
+          "src": "/exam-figures/biology/markbank/biology-2022-ol-038-p005-i1.png",
+          "srcHash": "06ca248720cff1af6155d0d43d1da17c",
+          "alt": "Labelled section through human skin (booklet 038, page 5). Greyscale line drawing: epidermis over dermis over a layer of fat cells. A single hair shaft runs diagonally from top-left into its follicle, with an arrow labelled A pointing at that shaft above the skin surface. An arrow labelled B points at the small lobed gland sitting against the side of the follicle. Two word labels are printed on the artwork itself: 'Sweat gland' arrowed to the coiled tube at lower left and 'Blood vessel' arrowed to the looped vessel at right. Whole diagram in frame; no question text and no neighbouring artwork.",
+          "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Hair","askedInThisQuestion":true},{"letter":"B","meaning":"Sebaceous gland","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2022-ol-q5-a", topicId: "bio-3-3", conceptId: "matching-a-dna-profile",
+    section: "A", questionRef: "2022 OL Q5(a)",
+    stem: "During an investigation a DNA profile was carried out in order to match a DNA sample from a crime scene with a sample from a suspect. The diagram shows the DNA profiles obtained. Crime scene A B C",
+    questionText: "Which suspect DNA profile, A or B or C matches the DNA sample from the crime scene?",
+    tariffModel: {"kind":"orderedSplit","notation":"6(3) + 2"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "B", marks: null },
+    ],
+    figure: {
+          "candId": "biology-2022-ol-038-p006-i1",
+          "src": "/exam-figures/biology/markbank/biology-2022-ol-038-p006-i1.png",
+          "srcHash": "56b019babc42ea691b3660443f70c8ac",
+          "alt": "DNA profile gel comparison (booklet 038, page 6). Two boxed panels side by side: the narrow left panel is a single lane captioned 'Crime scene'; the wider right panel holds three lanes captioned A, B and C. Every band in all four lanes is in frame, and lane B's banding pattern visibly matches the crime-scene lane. No question text, no neighbouring artwork.",
+          "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2022-ol-q8-b-ii", topicId: "bio-u1", conceptId: "highest-percentage-frequency-from-a-table",
+    section: "A", questionRef: "2022 OL Q8(b)(ii)",
+    stem: "The table below shows the data collected during the survey. Plant Station 1 Station 2 Station 3 Station 4 Station 5 Plantain ✓ ✓ ✓ Daisy ✓ ✓ ✓ ✓ Dandelion ✓ ✓",
+    questionText: "Which plant had the highest % frequency?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Daisy", marks: 3 },
+    ],
+    figure: {
+          "candId": "biology-2022-ol-paper-p008-i0",
+          "src": "/exam-figures/biology/markbank/biology-2022-ol-paper-p008-i0.png",
+          "srcHash": "b0f52c52903cf7feb3798258dc5c532d",
+          "alt": "Six-column ruled data table with a grey-shaded header row and a grey-shaded first column. Header cells read Plant, Station 1, Station 2, Station 3, Station 4, Station 5. The Plantain row carries bold tick marks in Station 2, Station 4 and Station 5; the Daisy row carries ticks in Station 1, Station 2, Station 3 and Station 5; the Dandelion row carries ticks in Station 1 and Station 3. All other cells are blank white.",
+          "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2022-ol-q9-b-i", topicId: "bio-u2", conceptId: "drawing-the-alcohol-preparation-apparatus",
+    section: "A", questionRef: "2022 OL Q9(b)(i)",
+    questionText: "Draw a labelled diagram in the space below of the apparatus that you used to prepare alcohol in the laboratory.",
+    tariffModel: {"kind":"fixed","notation":"3 for the diagram, 2(3) for the labels"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Container and liquid", marks: 3, accepts: ["anaerobic step (e.g. fermentation lock or oil layer)","water bath"] },
+    { id: "r-2", kind: "point", verbatim: "Any two correct labels", marks: 6 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2022-ol-q10-b-v", topicId: "bio-u2", conceptId: "germination-investigation-results",
+    section: "A", questionRef: "2022 OL Q10(b)(v)",
+    questionText: "State the results observed for each test tube.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A: No germination", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "B: Germination", marks: 3 },
+    { id: "r-3", kind: "point", verbatim: "C: No germination", marks: 3 },
+    { id: "r-4", kind: "point", verbatim: "D: No germination (allow some germination)", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2022-ol-q11-b-iii", topicId: "bio-3-1", conceptId: "identifying-a-producer-in-a-food-web",
+    section: "A", questionRef: "2022 OL Q11(b)(iii)",
+    questionText: "Identify a producer from the diagram.",
+    tariffModel: {"kind":"orderedSplit","notation":"3(5) + 6(2)"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Blackberry or grass", marks: null },
+    ],
+    figure: {
+          "candId": "biology-2022-ol-040-p002-i1",
+          "src": "/exam-figures/biology/markbank/biology-2022-ol-040-p002-i1.png",
+          "srcHash": "662d89a2d72f93fe11132f20992aee79",
+          "alt": "Food web of interconnected food chains (booklet 040, page 2). Ten named organisms, each a small engraving with its name printed beside it: Grass and Blackberry along the bottom, then Grasshopper, Aphid, Spider, Shrew, Hare and Blackbird, with Fox and Owl at the top. Arrows run from Grass to Grasshopper, Shrew and Hare; from Blackberry to Shrew, Aphid, Blackbird and Fox; from Aphid to Spider; and upward from Shrew, Hare, Spider and Blackbird into Owl and Fox. Every organism, arrow and caption is in frame; no question text and no part (c) passage.",
+          "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2022-ol-q11-b-iv", topicId: "bio-3-1", conceptId: "identifying-a-carnivore-in-a-food-web",
+    section: "A", questionRef: "2022 OL Q11(b)(iv)",
+    questionText: "Name one carnivore from the diagram.",
+    tariffModel: {"kind":"orderedSplit","notation":"3(5) + 6(2)"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Owl or spider", marks: null },
+    ],
+    figure: {
+          "candId": "biology-2022-ol-040-p002-i1",
+          "src": "/exam-figures/biology/markbank/biology-2022-ol-040-p002-i1.png",
+          "srcHash": "662d89a2d72f93fe11132f20992aee79",
+          "alt": "Food web of interconnected food chains (booklet 040, page 2). Ten named organisms, each a small engraving with its name printed beside it: Grass and Blackberry along the bottom, then Grasshopper, Aphid, Spider, Shrew, Hare and Blackbird, with Fox and Owl at the top. Arrows run from Grass to Grasshopper, Shrew and Hare; from Blackberry to Shrew, Aphid, Blackbird and Fox; from Aphid to Spider; and upward from Shrew, Hare, Spider and Blackbird into Owl and Fox. Every organism, arrow and caption is in frame; no question text and no part (c) passage.",
+          "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2022-ol-q11-b-vi", topicId: "bio-3-1", conceptId: "identifying-an-omnivore-in-a-food-web",
+    section: "A", questionRef: "2022 OL Q11(b)(vi)",
+    questionText: "Name one omnivore from the diagram.",
+    tariffModel: {"kind":"orderedSplit","notation":"3(5) + 6(2)"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Fox or blackbird or shrew", marks: null },
+    ],
+    figure: {
+          "candId": "biology-2022-ol-040-p002-i1",
+          "src": "/exam-figures/biology/markbank/biology-2022-ol-040-p002-i1.png",
+          "srcHash": "662d89a2d72f93fe11132f20992aee79",
+          "alt": "Food web of interconnected food chains (booklet 040, page 2). Ten named organisms, each a small engraving with its name printed beside it: Grass and Blackberry along the bottom, then Grasshopper, Aphid, Spider, Shrew, Hare and Blackbird, with Fox and Owl at the top. Arrows run from Grass to Grasshopper, Shrew and Hare; from Blackberry to Shrew, Aphid, Blackbird and Fox; from Aphid to Spider; and upward from Shrew, Hare, Spider and Blackbird into Owl and Fox. Every organism, arrow and caption is in frame; no question text and no part (c) passage.",
+          "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2022-ol-q13-b-i", topicId: "bio-2-6", conceptId: "breathing-system-parts",
+    section: "B", questionRef: "2022 OL Q13(b)(i)",
+    questionText: "Name the parts A, B, C.",
+    tariffModel: {"kind":"orderedSplit","notation":"3(5) + 6(2)"}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A: Larynx (voice box)", marks: null },
+    { id: "r-2", kind: "point", verbatim: "B: Bronchus", marks: null },
+    { id: "r-3", kind: "point", verbatim: "C: Bronchiole", marks: null },
+    ],
+    figure: {
+          "candId": "biology-2022-ol-040-p004-i0",
+          "src": "/exam-figures/biology/markbank/biology-2022-ol-040-p004-i0.png",
+          "srcHash": "b415329b2037c1d6a3de3df7addfe925",
+          "alt": "Line drawing of the human breathing system: larynx and ridged trachea running down the centre, two lungs (the left one shown as stippled tissue, the right one cut away to show the branching airway tree), the ribs and the domed diaphragm. A arrows to the box-shaped structure at the very top of the trachea, B up to the point where the trachea forks, C to two of the fine terminal branches inside the right lung. Printed word labels 'Muscles', 'Trachea' and 'Small air-sacs' are also shown. No question body text in the crop; nothing sliced.",
+          "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Larynx (voice box)","askedInThisQuestion":true},{"letter":"B","meaning":"Bronchus","askedInThisQuestion":true},{"letter":"C","meaning":"Bronchiole","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2022-ol-q14-b-iv", topicId: "bio-1-2", conceptId: "carbohydrate-general-formula",
+    section: "B", questionRef: "2022 OL Q14(b)(iv)",
+    questionText: "Cx(H2O)y is the general formula for one of the products of photosynthesis. What group of biomolecules does this general formula represent?",
+    tariffModel: {"kind":"orderedSplit","notation":"3(5) + 6(2)"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Carbohydrate (or sugars)", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2022-ol-q14-c-vi", topicId: "bio-1-3", conceptId: "plasmolysis-in-a-plant-cell",
+    section: "B", questionRef: "2022 OL Q14(c)(vi)",
+    stem: "Turgor is also important for plants. The pictures, A and B, show two plants cells. A B Nucleus X Cell membrane",
+    questionText: "Explain in detail what has happened to cell B. (24)",
+    tariffModel: {"kind":"orderedSplit","notation":"2(6) + 6(2)"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Cell membrane has peeled away from the cell wall (or plasmolysis)", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Due to a loss of water", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2022-ol-q15-b-i", topicId: "bio-2-6", conceptId: "dermal-and-ground-tissue-names",
+    section: "B", questionRef: "2022 OL Q15(b)(i)",
+    questionText: "Name the tissues labelled A and B.",
+    tariffModel: {"kind":"orderedSplit","notation":"3(5) + 6(2)"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A: Dermal", marks: null },
+    { id: "r-2", kind: "point", verbatim: "B: Ground", marks: null },
+    ],
+    figure: {
+          "candId": "biology-2022-ol-040-p006-i1",
+          "src": "/exam-figures/biology/markbank/biology-2022-ol-040-p006-i1.png",
+          "srcHash": "37bd7a746186f5ac621fe4baf614a785",
+          "alt": "Transverse section through a dicotyledonous plant stem (booklet 040, page 6). A large circle with eight small oval vascular bundles arranged in a single ring just inside the outline. A leader labelled A points to the outer boundary layer of the circle; an arrow labelled B points into the open central region inside the ring; a square bracket labelled C encloses one of the ring ovals at the bottom. The ring arrangement of the bundles, which is the answer to (b)(vii), is plainly visible. Cropped above the part (c) flower diagram, so no neighbouring artwork is included.",
+          "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Dermal","askedInThisQuestion":true},{"letter":"B","meaning":"Ground","askedInThisQuestion":true},{"letter":"C","meaning":"Vascular bundle","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2022-ol-q15-b-iii", topicId: "bio-2-6", conceptId: "vascular-bundle-name",
+    section: "B", questionRef: "2022 OL Q15(b)(iii)",
+    questionText: "Name the structure labelled C.",
+    tariffModel: {"kind":"orderedSplit","notation":"3(5) + 6(2)"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Vascular bundle", marks: null },
+    ],
+    figure: {
+          "candId": "biology-2022-ol-040-p006-i1",
+          "src": "/exam-figures/biology/markbank/biology-2022-ol-040-p006-i1.png",
+          "srcHash": "37bd7a746186f5ac621fe4baf614a785",
+          "alt": "Transverse section through a dicotyledonous plant stem (booklet 040, page 6). A large circle with eight small oval vascular bundles arranged in a single ring just inside the outline. A leader labelled A points to the outer boundary layer of the circle; an arrow labelled B points into the open central region inside the ring; a square bracket labelled C encloses one of the ring ovals at the bottom. The ring arrangement of the bundles, which is the answer to (b)(vii), is plainly visible. Cropped above the part (c) flower diagram, so no neighbouring artwork is included.",
+          "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Dermal","askedInThisQuestion":false},{"letter":"B","meaning":"Ground","askedInThisQuestion":false},{"letter":"C","meaning":"Vascular bundle","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2022-ol-q15-b-vii", topicId: "bio-2-6", conceptId: "dicot-stem-vascular-bundles",
+    section: "B", questionRef: "2022 OL Q15(b)(vii)",
+    questionText: "State one reason why the diagram above represents a section through a dicotyledonous plant stem. (27)",
+    tariffModel: {"kind":"orderedSplit","notation":"3(5) + 6(2)"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Vascular bundles in a ring", marks: null },
+    ],
+    figure: {
+          "candId": "biology-2022-ol-040-p006-i1",
+          "src": "/exam-figures/biology/markbank/biology-2022-ol-040-p006-i1.png",
+          "srcHash": "37bd7a746186f5ac621fe4baf614a785",
+          "alt": "Transverse section through a dicotyledonous plant stem (booklet 040, page 6). A large circle with eight small oval vascular bundles arranged in a single ring just inside the outline. A leader labelled A points to the outer boundary layer of the circle; an arrow labelled B points into the open central region inside the ring; a square bracket labelled C encloses one of the ring ovals at the bottom. The ring arrangement of the bundles, which is the answer to (b)(vii), is plainly visible. Cropped above the part (c) flower diagram, so no neighbouring artwork is included.",
+          "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2022-ol-q17-d-iv", topicId: "bio-2-6", conceptId: "order-of-the-alimentary-canal",
+    section: "B", questionRef: "2022 OL Q17(d)(iv)",
+    questionText: "The list below shows some of the organs of the alimentary canal. Write them in the correct order, starting with the mouth.",
+    tariffModel: {"kind":"orderedSplit","notation":"2(7) + 8(2)"}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "→ oesophagus → stomach → small intestine → large intestine → rectum", marks: null },
     ],
   } as SecCard,
   {
@@ -9541,6 +9901,123 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed","notation":"6(3) + 2"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "False", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2023-ol-q8-b-iii", topicId: "bio-u2", conceptId: "bar-chart-of-percentage-frequency",
+    section: "B", questionRef: "2023 OL Q8(b)(iii)",
+    questionText: "On the axes below, sketch (using pencil) a bar chart to represent the percentage frequency of dandelion and grass. Label both axes.",
+    tariffModel: {"kind":"orderedSplit","notation":"2(9) + 6(1)"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "x axis: Type of plant (or grass and dandelion)", marks: null },
+    { id: "r-2", kind: "point", verbatim: "y axis: % frequency", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Bars representing dandelion and grass", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2023-ol-q9-b-i", topicId: "bio-u2", conceptId: "osmosis-apparatus-diagram",
+    section: "B", questionRef: "2023 OL Q9(b)(i)",
+    questionText: "Draw a labelled diagram of the apparatus that you used to demonstrate osmosis.",
+    tariffModel: {"kind":"orderedSplit","notation":"2(9) + 6(1)"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Diagram showing two solutions and membrane or tissue", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC025GLP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2023-ol-q15-b-v", topicId: "bio-2-6", conceptId: "breathing-disorders",
+    section: "C", questionRef: "2023 OL Q15(b)(v)",
+    questionText: "Name one breathing disorder and give a possible cause.",
+    tariffModel: {"kind":"orderedSplit","notation":"3(5) + 6(2)"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Name: Bronchitis or asthma or other correct", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC025GLP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2023-ol-q16-a-iii", topicId: "bio-2-6", conceptId: "urinary-system-beyond-the-ureter",
+    section: "C", questionRef: "2023 OL Q16(a)(iii)",
+    questionText: "The ureter connects the kidney to another part of the urinary system. Name this other part.",
+    tariffModel: {"kind":"orderedSplit","notation":"2(7) + 8(2)"}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Bladder", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC025GLP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2023-ol-q16-a-iv", topicId: "bio-2-6", conceptId: "fat-layer-around-the-kidney",
+    section: "C", questionRef: "2023 OL Q16(a)(iv)",
+    questionText: "The kidneys are surrounded by a thick layer of fat. Give one function of this layer of fat.",
+    tariffModel: {"kind":"orderedSplit","notation":"2(7) + 8(2)"}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Protection", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC025GLP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2023-ol-q16-b-vi", topicId: "bio-2-4", conceptId: "where-optic-nerve-impulses-travel",
+    section: "C", questionRef: "2023 OL Q16(b)(vi)",
+    questionText: "The optic nerve carries impulses. To which organ do these impulses travel?",
+    tariffModel: {"kind":"orderedSplit","notation":"2(7) + 8(2)"}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Brain", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC025GLP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2023-ol-q17-b-ii", topicId: "bio-2-4", conceptId: "glands-hormones-and-their-functions",
+    section: "C", questionRef: "2023 OL Q17(b)(ii)",
+    stem: "Name of gland Hormone Function of hormone Thyroxine Adrenaline To prepare the body for “fight or flight” Testes",
+    questionText: "Copy the table below into your answerbook and complete it. Some boxes have been filled in as examples.",
+    tariffModel: {"kind":"orderedSplit","notation":"2(7) + 8(2)"}, totalMarks: 20,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Thyroid Thyroxine (Regulate) metabolism", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Adrenal Adrenaline", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Testes Testosterone Sperm production", marks: null },
+    ],
+    figure: {
+          "candId": "biology-2023-ol-040-p009-i0",
+          "src": "/exam-figures/biology/markbank/biology-2023-ol-040-p009-i0.png",
+          "srcHash": "de1e8e6d32100731c3446c9346540c74",
+          "alt": "The paper's printed endocrine table for Q17(b)(ii): a three-column ruled table headed \"Name of gland | Hormone | Function of hormone\" with three body rows. Four cells are pre-filled as examples — the hormone Thyroxine in row 1, the hormone Adrenaline and the function \"To prepare the body for 'fight or flight'\" in row 2, and the gland Testes in row 3 — leaving five blank boxes for the candidate to complete. Cropped from page 9 of the 040 booklet at top 470pt / bottom 622pt so it excludes the question's body text above it and the Q17(a)(iv) synovial-joint photograph higher up the same page.",
+          "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC025GLP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2023-ol-q17-c-ii", topicId: "bio-3-2", conceptId: "rhizopus-diagram-structures",
+    section: "C", questionRef: "2023 OL Q17(c)(ii)",
+    questionText: "Draw a labelled diagram of Rhizopus.",
+    tariffModel: {"kind":"orderedSplit","notation":"2(7) + 8(2)"}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Diagram: Sporangium and sporangiophore", marks: null },
     ],
   } as SecCard,
   {
@@ -9647,6 +10124,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "(Duplicated chromosomes) line up on the equator of the cell", marks: 4 },
     ],
+    figure: {
+          "candId": "biology-2024-ol-paper-p005-i0",
+          "src": "/exam-figures/biology/markbank/biology-2024-ol-paper-p005-i0.png",
+          "srcHash": "b5aecc29acadaa4e6e1c29915aafcb40",
+          "alt": "Greyscale sequence of six pale cells joined by bold black arrows, read left to right. The first circular cell contains one dark grey rod and one light grey rod, with a bold A arrowed to the dark rod. An arrow captioned 'DNA replication' leads to the cell headed 'Stage 1', where each rod has become a doubled X-shaped chromosome. 'Stage 2' is an elongated oval cell filled with fine curved fibres running pole to pole, both doubled chromosomes lined up across its middle. 'Stage 3' shows the cell pinched in at the waist with the separated halves of each chromosome drawn toward opposite ends among the same fine fibres. A bold B below has two leader lines, one into the fibres of Stage 2 and one into the fibres of Stage 3. Two diverging arrows from Stage 3 lead to a pair of round 'Stage 4' daughter cells stacked one above the other, each holding one dark and one light rod.",
+          "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9661,6 +10146,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "(Chromosomes) are pulled to the ends of the cell or (duplicated chromosomes) separate", marks: 4 },
     ],
+    figure: {
+          "candId": "biology-2024-ol-paper-p005-i0",
+          "src": "/exam-figures/biology/markbank/biology-2024-ol-paper-p005-i0.png",
+          "srcHash": "b5aecc29acadaa4e6e1c29915aafcb40",
+          "alt": "Greyscale sequence of six pale cells joined by bold black arrows, read left to right. The first circular cell contains one dark grey rod and one light grey rod, with a bold A arrowed to the dark rod. An arrow captioned 'DNA replication' leads to the cell headed 'Stage 1', where each rod has become a doubled X-shaped chromosome. 'Stage 2' is an elongated oval cell filled with fine curved fibres running pole to pole, both doubled chromosomes lined up across its middle. 'Stage 3' shows the cell pinched in at the waist with the separated halves of each chromosome drawn toward opposite ends among the same fine fibres. A bold B below has two leader lines, one into the fibres of Stage 2 and one into the fibres of Stage 3. Two diverging arrows from Stage 3 lead to a pair of round 'Stage 4' daughter cells stacked one above the other, each holding one dark and one light rod.",
+          "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9753,7 +10246,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
     id: "bio-2024-ol-q10-b-v", topicId: "bio-u1", conceptId: "a-safety-precaution-in-the-experiment",
     section: "A", questionRef: "2024 OL Q10(b)(v)",
-    stem: "PR BR Resting 60 20 Moderate exercise 100 30 rate Intense exercise 150 60 Choosing either pulse or breathing rate, complete the name of the y-axis and on the grid provided, draw (using pencil) a suitable graph to represent the data of either pulse rate (PR) or breathing rate (BR). Resting Moderate exercise Intense exercise Answerbook for Section C Instructions Questions for Section C are supplied separately. Start each question on a new page. Write the question number in the box at the top of each page. Use the left-hand column to label each part, as shown below. 1 4 There are two pages of graph paper on the next two pages of this answerbook. On pages with graph paper, the box for the question number is at the bottom of the page. You do not need to use all of the pages in this answerbook. If you run out of space in this answerbook, you may ask the superintendent for more paper or graph paper. Write your answers in blue or black pen. You may use a pencil for sketches, graphs and diagrams only. Part Start each question on a new page Question 15 Part Start each question on a new page Question 16 Part Start each question on a new page Question 17 Part Start each question on a new page Question 18 Part Start each question on a new page Question 19 Part Start each question on a new page Question 20 Part Start each question on a new page Question 21 Part Start each question on a new page Question 22 Part Start each question on a new page Question 23 Part Start each question on a new page Question 24 Part Start each question on a new page Question 25 Part Start each question on a new page Question 26 Part Start each question on a new page Question 27 Part Start each question on a new page Question 28 Part Start each question on a new page Question 29 Part Start each question on a new page Question 30 Part Start each question on a new page Question 31 Part Start each question on a new page Question 32 Part Start each question on a new page Question 33 Part Start each question on a new page Question 34 Part Start each question on a new page Question 35 Do not write on this page Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Ordinary Level Biology Sections A and B and Answerbook Tuesday 11 June Afternoon 2:00 - 5:00 2024L025G2EL 2024.M43 Coimisiún na Scrúduithe Stáit State Examinations Commission Section C Ordinary Level Tuesday 11 June Afternoon 2:00 - 5:00 240 marks Do not hand this up. This document will not be returned to the State Examinations Commission. Section C Answer any four questions. Write your answers in the answerbook containing Sections A and B.",
+    stem: "PR BR Resting 60 20 Moderate exercise 100 30 rate Intense exercise 150 60 Choosing either pulse or breathing rate, complete the name of the y-axis and on the grid provided, draw (using pencil) a suitable graph to represent the data of either pulse rate (PR) or breathing rate (BR). Resting Moderate exercise Intense exercise Answerbook for Section C Instructions Questions for Section C are supplied separately. Start each question on a new page. Write the question number in the box at the top of each page. Use the left-hand column to label each part, as shown below. 1 4 There are two pages of graph paper on the next two pages of this answerbook. On pages with graph paper, the box for the question number is at the bottom of the page. You do not need to use all of the pages in this answerbook. If you run out of space in this answerbook, you may ask the superintendent for more paper or graph paper. Write your answers in blue or black pen. You may use a pencil for sketches, graphs and diagrams only. Part Start each question on a new page Question 15 Part Start each question on a new page Question 16 Part Start each question on a new page Question 17 Part Start each question on a new page Question 18 Part Start each question on a new page Question 19 Part Start each question on a new page Question 20 Part Start each question on a new page Question 21 Part Start each question on a new page Question 22 Part Start each question on a new page Question 23 Part Start each question on a new page Question 24 Part Start each question on a new page Question 25 Part Start each question on a new page Question 26 Part Start each question on a new page Question 27 Part Start each question on a new page Question 28 Part Start each question on a new page Question 29 Part Start each question on a new page Question 30 Part Start each question on a new page Question 31 Part Start each question on a new page Question 32 Part Start each question on a new page Question 33 Part Start each question on a new page Question 34 Part Start each question on a new page Question 35 Do not write on this page Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Ordinary Level Biology Sections A and B and Answerbook Tuesday 11 June Afternoon 2:00 - 5:00 2024L025G2EL 2024.M43 Coimisiún na Scrúduithe Stáit State Examinations Commission Section C Ordinary Level Tuesday 11 June Afternoon 2:00 - 5:00 240 marks This document will not be returned to the State Examinations Commission. Section C Answer any four questions. Write your answers in the answerbook containing Sections A and B.",
     questionText: "Describe a safety precaution the student would have taken.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -9773,6 +10266,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "(Spindle) fibre", marks: 3 },
     ],
+    figure: {
+          "candId": "biology-2024-ol-paper-p005-i0",
+          "src": "/exam-figures/biology/markbank/biology-2024-ol-paper-p005-i0.png",
+          "srcHash": "b5aecc29acadaa4e6e1c29915aafcb40",
+          "alt": "Greyscale sequence of six pale cells joined by bold black arrows, read left to right. The first circular cell contains one dark grey rod and one light grey rod, with a bold A arrowed to the dark rod. An arrow captioned 'DNA replication' leads to the cell headed 'Stage 1', where each rod has become a doubled X-shaped chromosome. 'Stage 2' is an elongated oval cell filled with fine curved fibres running pole to pole, both doubled chromosomes lined up across its middle. 'Stage 3' shows the cell pinched in at the waist with the separated halves of each chromosome drawn toward opposite ends among the same fine fibres. A bold B below has two leader lines, one into the fibres of Stage 2 and one into the fibres of Stage 3. Two diverging arrows from Stage 3 lead to a pair of round 'Stage 4' daughter cells stacked one above the other, each holding one dark and one light rod.",
+          "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9790,6 +10291,270 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2024-ol-q1-b", topicId: "bio-1-2", conceptId: "the-fourth-element-in-protein",
+    section: "A", questionRef: "2024 OL Q1(b)",
+    stem: "Use your knowledge of nutrition to answer the following questions.",
+    questionText: "Carbon, hydrogen, oxygen and one other element are always present in proteins. Name the other element.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Nitrogen (or N)", marks: 4 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2024-ol-q3-a", topicId: "bio-1-4", conceptId: "the-structure-made-of-dna-and-protein",
+    section: "A", questionRef: "2024 OL Q3(a)",
+    stem: "The diagram shows DNA replication followed by mitosis. Stage 4 Stage 2 Stage 3 Stage 1 DNA replication",
+    questionText: "Structure A is made of DNA and protein. Name structure A.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Chromosome", marks: 3 },
+    ],
+    figure: {
+          "candId": "biology-2024-ol-paper-p005-i0",
+          "src": "/exam-figures/biology/markbank/biology-2024-ol-paper-p005-i0.png",
+          "srcHash": "b5aecc29acadaa4e6e1c29915aafcb40",
+          "alt": "Greyscale sequence of six pale cells joined by bold black arrows, read left to right. The first circular cell contains one dark grey rod and one light grey rod, with a bold A arrowed to the dark rod. An arrow captioned 'DNA replication' leads to the cell headed 'Stage 1', where each rod has become a doubled X-shaped chromosome. 'Stage 2' is an elongated oval cell filled with fine curved fibres running pole to pole, both doubled chromosomes lined up across its middle. 'Stage 3' shows the cell pinched in at the waist with the separated halves of each chromosome drawn toward opposite ends among the same fine fibres. A bold B below has two leader lines, one into the fibres of Stage 2 and one into the fibres of Stage 3. Two diverging arrows from Stage 3 lead to a pair of round 'Stage 4' daughter cells stacked one above the other, each holding one dark and one light rod.",
+          "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Chromosome","askedInThisQuestion":true},{"letter":"B","meaning":"(Spindle) fibre","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2024-ol-q5-b", topicId: "bio-2-4", conceptId: "bones-of-the-human-skeleton",
+    section: "A", questionRef: "2024 OL Q5(b)",
+    stem: "The diagram shows the human skeleton.",
+    questionText: "Name the parts of the skeleton labelled A, B and C.",
+    tariffModel: {"kind":"orderedSplit","notation":"6(3) + 2"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A: Skull or cranium", marks: null },
+    { id: "r-2", kind: "point", verbatim: "B: Rib", marks: null },
+    { id: "r-3", kind: "point", verbatim: "C: Pelvis", marks: null },
+    ],
+    figure: {
+          "candId": "biology-2024-ol-038-p007-i0",
+          "src": "/exam-figures/biology/markbank/biology-2024-ol-038-p007-i0.png",
+          "srcHash": "52e88d5ddffeb3bfbecaf6ad948fb5ad",
+          "alt": "Full-length line drawing of the human skeleton from page 7 of the Sections A and B booklet, with three leader arrows: A to the skull, B to the ribs, C to the pelvis. Cropped to the right-hand column only so the question's answer boxes and the joint tick-boxes below are excluded.",
+          "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Skull or cranium","askedInThisQuestion":true},{"letter":"B","meaning":"Rib","askedInThisQuestion":true},{"letter":"C","meaning":"Pelvis","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2024-ol-q5-c", topicId: "bio-2-4", conceptId: "the-joint-between-the-bones-of-the-skull",
+    section: "A", questionRef: "2024 OL Q5(c)",
+    stem: "Immovable Slightly movable Free moving or synovial",
+    questionText: "Which of the following types of joint is located between the bones of part A?",
+    tariffModel: {"kind":"orderedSplit","notation":"6(3) + 2"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Immovable", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2024-ol-q9-b-vii", topicId: "bio-u2", conceptId: "labelling-the-axes-of-an-enzyme-rate-graph",
+    section: "A", questionRef: "2024 OL Q9(b)(vii)",
+    stem: "0°C 30°C 60°C 90°C",
+    questionText: "A graph similar to the one shown below was plotted from the results of this investigation. Using the terms Temperature and Rate label axes A and B.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A: Rate", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "B: Temperature", marks: 3 },
+    ],
+    figure: {
+          "candId": "biology-2024-ol-038-p010-i0",
+          "src": "/exam-figures/biology/markbank/biology-2024-ol-038-p010-i0.png",
+          "srcHash": "b20f7f590272711842c0f7b57e276a81",
+          "alt": "The enzyme rate-versus-temperature graph from page 10 of the Sections A and B booklet: a bell curve peaking near 30 degrees C over an x-axis scaled 0, 30, 60, 90 degrees C, with the blank \"A:\" label box printed beside the vertical axis and the blank \"B:\" label box printed beneath the horizontal axis, which is how the paper marks which axis is A and which is B.",
+          "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Rate","askedInThisQuestion":true},{"letter":"B","meaning":"Temperature","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2024-ol-q11-b-ii", topicId: "bio-3-1", conceptId: "a-primary-consumer-in-a-food-web",
+    section: "A", questionRef: "2024 OL Q11(b)(ii)",
+    stem: "Barn owl Badger Fox Bat Robin Grasshopper Mouse Thrush Mosquito Snail Grasses 2. How many feeding (trophic) levels are in your food chain?",
+    questionText: "Name a primary consumer from the food web.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Snail or mouse or grasshopper or mosquito", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2024-ol-q11-b-iii", topicId: "bio-3-1", conceptId: "a-secondary-consumer-in-a-food-web",
+    section: "A", questionRef: "2024 OL Q11(b)(iii)",
+    stem: "Barn owl Badger Fox Bat Robin Grasshopper Mouse Thrush Mosquito Snail Grasses 2. How many feeding (trophic) levels are in your food chain?",
+    questionText: "Name a secondary consumer from the food web.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Thrush or robin or badger or bat or fox or barn owl", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2024-ol-q11-b-iv", topicId: "bio-3-1", conceptId: "what-the-arrows-in-a-food-web-mean",
+    section: "A", questionRef: "2024 OL Q11(b)(iv)",
+    stem: "Barn owl Badger Fox Bat Robin Grasshopper Mouse Thrush Mosquito Snail Grasses 2. How many feeding (trophic) levels are in your food chain?",
+    questionText: "What do the arrows on the diagram mean?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Order of consumption or energy flow", marks: 3 },
+    ],
+    figure: {
+          "candId": "biology-2024-ol-040-p002-i0",
+          "src": "/exam-figures/biology/markbank/biology-2024-ol-040-p002-i0.png",
+          "srcHash": "458ba43073c0bf32ed11ce567fe68d8e",
+          "alt": "The food web from page 2 of the Section C booklet: grasses at the base feeding snail, mouse, grasshopper and mosquito, which in turn feed thrush, robin, bat, fox, barn owl and badger, with every arrow drawn between the organisms. Cropped below the \"The diagram shows a food web\" line so no question text is carried.",
+          "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2024-ol-q13-b-iii", topicId: "bio-1-4", conceptId: "completing-the-f2-punnett-square",
+    section: "B", questionRef: "2024 OL Q13(b)(iii)",
+    stem: "Purple- flowered White- flowered p P Purple- flowered (Pp) Two of the F1 offspring were then self-fertilised. Purple-flowered (Pp) The F2 (second generation) offspring were not all purple-flowered. p P P Purple- flowered (Pp)",
+    questionText: "Copy the Punnett square into your answerbook and complete it to show the genotypes of the F2 offspring.",
+    tariffModel: {"kind":"fixed","notation":"4(3)"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "PP", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Pp", marks: 3 },
+    { id: "r-3", kind: "point", verbatim: "Pp", marks: 3 },
+    { id: "r-4", kind: "point", verbatim: "pp", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2024-ol-q14-b-i", topicId: "bio-3-2", conceptId: "drawing-and-labelling-a-bacterial-cell",
+    section: "B", questionRef: "2024 OL Q14(b)(i)",
+    questionText: "Draw a diagram of a bacterial cell and label the following parts: Cell wall; DNA; Cytosol",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Diagram: Cell wall and cell membrane and DNA", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Labels: Cell wall", marks: 3 },
+    { id: "r-3", kind: "point", verbatim: "DNA", marks: 3 },
+    { id: "r-4", kind: "point", verbatim: "Cytosol", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2024-ol-q14-c-i", topicId: "bio-3-2", conceptId: "amoeba-parts-on-the-diagram",
+    section: "B", questionRef: "2024 OL Q14(c)(i)",
+    questionText: "In your answerbook, match each of the parts labelled A, B and C with the following terms: 1. Pseudopod 2. Nucleus 3. Contractile vacuole",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1. Pseudopod: B", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "2. Nucleus: A", marks: 3 },
+    { id: "r-3", kind: "point", verbatim: "3. Contractile vacuole: C", marks: 3 },
+    ],
+    figure: {
+          "candId": "biology-2024-ol-040-p005-i0",
+          "src": "/exam-figures/biology/markbank/biology-2024-ol-040-p005-i0.png",
+          "srcHash": "2ac7d38fada71ec4e58f0f5743513c71",
+          "alt": "Grey diagram of Amoeba, a single-celled organism with several blunt lobed projections around its edge and small food vacuoles scattered through the cytoplasm. A arrows down to the dark round body near the centre, B to the tip of the lobed projection at the top right, C up to the large pale circle at the lower left. A, B and C all visible and intact; the stem line above was excluded from the crop.",
+          "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Nucleus","askedInThisQuestion":true},{"letter":"B","meaning":"Pseudopod","askedInThisQuestion":true},{"letter":"C","meaning":"Contractile vacuole","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2024-ol-q15-b-v", topicId: "bio-2-5", conceptId: "sketching-a-sperm-cell",
+    section: "B", questionRef: "2024 OL Q15(b)(v)",
+    stem: "B C Endometrium Cervix Vagina",
+    questionText: "Sketch the structure of a sperm cell.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Sketch showing head and tail", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2024-ol-q17-b-ii", topicId: "bio-2-4", conceptId: "ear-parts-on-the-diagram",
+    section: "B", questionRef: "2024 OL Q17(b)(ii)",
+    stem: "Auditory nerve Throat (pharynx) Middle ear Eustachian tube",
+    questionText: "In your answerbook, match each of the parts labelled A, B and C with the following terms: 1. Ossicle 2. Eardrum 3. Cochlea",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1. Ossicle: B", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "2. Eardrum: A", marks: 3 },
+    { id: "r-3", kind: "point", verbatim: "3. Cochlea: C", marks: 3 },
+    ],
+    figure: {
+          "candId": "biology-2024-ol-040-p009-i0",
+          "src": "/exam-figures/biology/markbank/biology-2024-ol-040-p009-i0.png",
+          "srcHash": "bd9b2c1f8d5a39a372931d97baa14c0a",
+          "alt": "Line drawing of a section through the human ear: pinna and auditory canal at the left, the middle-ear cavity, the spiral structure and nerve at the right, and the tube running down to the throat. A arrows up to the taut membrane at the inner end of the auditory canal, B down to the small chain of bones in the middle-ear cavity, C down to the spiral. Printed word labels 'Auditory nerve', 'Throat (pharynx)', 'Middle ear' and 'Eustachian tube' are also shown. A, B and C all visible and intact; no question body text in the crop.",
+          "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Eardrum","askedInThisQuestion":true},{"letter":"B","meaning":"Ossicle","askedInThisQuestion":true},{"letter":"C","meaning":"Cochlea","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2025, level: "ordinary",
     paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
@@ -9799,7 +10564,400 @@ export const CARDS: SecCard[] = [
     questionText: "Write the letters A, B, C, D in the correct order to represent the sequence of events that occurs during mitosis.",
     tariffModel: {"kind":"fixed","notation":"3 for any two in the right place, 6 for all four"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Question 7", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "C, B, D, A", marks: 6 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2025-ol-q7-b", topicId: "bio-2-3", conceptId: "organelle-labelled-in-a-mitosis-image",
+    section: "A", questionRef: "2025 OL Q7(b)",
+    stem: "The images below show and describe the stages of mitosis in a cell. These stages are not in the correct order. X The cell is beginning to divide in two Chromosomes line up on the equator of the cell Chromosomes become visible in the cell Chromosomes are being pulled to the poles of the cell",
+    questionText: "Name the organelle labelled X in image A.",
+    tariffModel: {"kind":"orderedSplit","notation":"6(3) + 2"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Nucleus", marks: null },
+    ],
+    figure: {
+          "candId": "biology-2025-ol-038-p008-i0",
+          "src": "/exam-figures/biology/markbank/biology-2025-ol-038-p008-i0.png",
+          "srcHash": "8884088f9426a143dd9d8a7fd2e9ddb4",
+          "alt": "The single mitosis image headed A from the plate of four in Question 7: a photomicrograph of one cell pinching into two, each half containing a large dark round body. A bold X on an arrow points to the lower of the two dark round bodies. The image's own printed caption is kept beneath it ('The cell is beginning to divide in two'), and its heading letter A is kept above it, so the ask's phrase 'image A' is unambiguous. Images B, C and D were deliberately left out of the crop. Nothing sliced; no question body text.",
+          "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "X"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"the image labelled A, which the scheme places last in the correct order of the stages of mitosis (C, B, D, A)","askedInThisQuestion":false},{"letter":"X","meaning":"Nucleus","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2025-ol-q9-b-vii", topicId: "bio-u2", conceptId: "labelling-the-axes-of-an-enzyme-rate-graph",
+    section: "A", questionRef: "2025 OL Q9(b)(vii)",
+    questionText: "A graph similar to the one shown below was plotted from the results of this investigation. Using the terms pH and Rate label axes A and B.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A: Rate", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "B: pH", marks: 3 },
+    ],
+    figure: {
+          "candId": "biology-2025-ol-038-p010-i0",
+          "src": "/exam-figures/biology/markbank/biology-2025-ol-038-p010-i0.png",
+          "srcHash": "b9f29379381646172082ffc2ee1ed49c",
+          "alt": "Unlabelled enzyme-activity graph from the pH investigation: a bell-shaped curve peaking at about pH 7 over an x-axis scaled 2, 4, 6, 8, 10, 12, with an empty labelled box \"A:\" sitting beside the vertical axis and an empty labelled box \"B:\" sitting under the horizontal axis, so the crop shows which axis each letter belongs to. No question body text, no neighbouring artwork.",
+          "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Rate","askedInThisQuestion":true},{"letter":"B","meaning":"pH","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2025-ol-q11-c-i", topicId: "bio-3-2", conceptId: "naming-the-nitrogen-cycle",
+    section: "A", questionRef: "2025 OL Q11(c)(i)",
+    questionText: "Name the nutrient cycle represented in diagram X.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Nitrogen", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2025-ol-q11-c-ii", topicId: "bio-3-2", conceptId: "nitrogen-cycle-stages-on-the-diagram",
+    section: "A", questionRef: "2025 OL Q11(c)(ii)",
+    questionText: "In your answer book, match the terms, nitrification, nitrogen fixation and nutrition to the letters A, B and C in diagram X.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A: Nitrogen fixation", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "B: Nutrition", marks: 3 },
+    { id: "r-3", kind: "point", verbatim: "C: Nitrification", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2025-ol-q11-c-iii", topicId: "bio-3-2", conceptId: "naming-the-carbon-cycle",
+    section: "A", questionRef: "2025 OL Q11(c)(iii)",
+    questionText: "Name the nutrient cycle represented in diagram Y.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Carbon", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2025-ol-q11-c-iv", topicId: "bio-3-2", conceptId: "carbon-cycle-stages-on-the-diagram",
+    section: "A", questionRef: "2025 OL Q11(c)(iv)",
+    questionText: "In your answer book, match the terms, respiration, photosynthesis and combustion to the letters D, E and F in diagram Y. (24)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "D: Photosynthesis", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "E: Combustion", marks: 3 },
+    { id: "r-3", kind: "point", verbatim: "F: Respiration", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2025-ol-q12-b-iv", topicId: "bio-1-4", conceptId: "whether-two-short-parents-can-give-a-tall-plant",
+    section: "A", questionRef: "2025 OL Q12(b)(iv)",
+    questionText: "A gardener planted pea seeds that came from a cross between two short plants. Is it possible that any of these plants grew up to be tall? Justify your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "No", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Justify: Neither parent possesses the dominant allele (for tallness)", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2025-ol-q12-b-v", topicId: "bio-1-4", conceptId: "whether-two-tall-parents-can-give-a-short-plant",
+    section: "A", questionRef: "2025 OL Q12(b)(v)",
+    questionText: "A gardener planted pea seeds that came from a cross between two tall plants. Is it possible that any of these plants grew up to be short? Justify your answer. (27)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Yes", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Justify: It is possible that the parents were heterozygous or both parents could have a recessive allele (for shortness)", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2025-ol-q12-c-i", topicId: "bio-1-4", conceptId: "replication-transcription-and-translation-diagrams",
+    section: "A", questionRef: "2025 OL Q12(c)(i)",
+    questionText: "In your answerbook, match the diagrams, A, B and C with the following descriptions: 1. The DNA code is transcribed 2. DNA replication 3. The code is translated",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1. The DNA code is transcribed C", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "2. DNA replication A", marks: 3 },
+    { id: "r-3", kind: "point", verbatim: "3. The code is translated B", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2025-ol-q13-a-i", topicId: "bio-2-2", conceptId: "what-metabolism-is",
+    section: "B", questionRef: "2025 OL Q13(a)(i)",
+    questionText: "Which one of the following sentences (A or B) describes metabolism? A: The sum of all chemical reactions in a cell. B: The getting rid of undigested material from the body.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The sum of all chemical reactions in a cell or A.", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2025-ol-q13-c-iv", topicId: "bio-2-2", conceptId: "anaerobic-respiration-in-micro-organisms",
+    section: "B", questionRef: "2025 OL Q13(c)(iv)",
+    questionText: "Anaerobic respiration can also occur in micro-organisms. Which one of the following terms describes this form of anaerobic respiration? Filtration Fermentation Diffusion (24)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Fermentation", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2025-ol-q14-a-ii", topicId: "bio-2-6", conceptId: "shoot-system-on-the-plant-diagram",
+    section: "B", questionRef: "2025 OL Q14(a)(ii)",
+    questionText: "Name the system represented by the letter X.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Shoot", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2025-ol-q15-b-vi", topicId: "bio-2-5", conceptId: "placenta-and-foetus-on-the-diagram",
+    section: "B", questionRef: "2025 OL Q15(b)(vi)",
+    questionText: "The diagram shows a developing foetus. Using the terms placenta and foetus, identify X and Y.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "X: Placenta", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Y: Foetus", marks: 3 },
+    ],
+    figure: {
+          "candId": "biology-2025-ol-040-p006-i0",
+          "src": "/exam-figures/biology/markbank/biology-2025-ol-040-p006-i0.png",
+          "srcHash": "d236cdfdfa0fab858f377af537dcfbbc",
+          "alt": "Sectional diagram of a developing foetus in the uterus, with leader arrows from the letter X (pointing to the tissue lining the upper uterine wall) and the letter Y (pointing to the body of the developing baby). Cropped above the Q15(c) male reproductive diagram on the same page, so no A/B/C artwork bleeds in.",
+          "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "X",
+                "Y"
+          ]
+    },
+    labelKey: [{"letter":"X","meaning":"Placenta","askedInThisQuestion":true},{"letter":"Y","meaning":"Foetus","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2025-ol-q15-c-i", topicId: "bio-2-5", conceptId: "male-reproductive-parts-on-the-diagram",
+    section: "B", questionRef: "2025 OL Q15(c)(i)",
+    stem: "The following questions relate to the human reproductive system.",
+    questionText: "In your answerbook, match each of the parts labelled A, B and C with the following terms: testis, prostate gland, sperm duct.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "1. Testis C", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "2. Prostate gland B", marks: 3 },
+    { id: "r-3", kind: "point", verbatim: "3. Sperm duct A", marks: 3 },
+    ],
+    figure: {
+          "candId": "biology-2025-ol-040-p006-i1",
+          "src": "/exam-figures/biology/markbank/biology-2025-ol-040-p006-i1.png",
+          "srcHash": "1bf5175db7059eed669663a577ffd10e",
+          "alt": "Front-view diagram of the human male reproductive system: two long looping tubes descending from the top to two oval organs at the bottom left and right, a broad organ sitting just under the bladder at the centre, and the central passage running down through the shaft. A arrows in from the right to the upper part of the right-hand looping tube, B labels the rounded structure directly beneath the bladder, C labels the oval organ at the bottom right. A, B and C all visible and intact; the mark allocation '(24)' that sat below was excluded.",
+          "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Sperm duct","askedInThisQuestion":true},{"letter":"B","meaning":"Prostate gland","askedInThisQuestion":true},{"letter":"C","meaning":"Testis","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2025-ol-q15-c-iv", topicId: "bio-2-5", conceptId: "sketching-a-sperm-cell",
+    section: "B", questionRef: "2025 OL Q15(c)(iv)",
+    stem: "The following questions relate to the human reproductive system.",
+    questionText: "Sketch the basic structure of a sperm cell and label the following two parts: head tail (or flagellum).",
+    tariffModel: {"kind":"fixed","notation":"3 + 2(3)"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Sketch showing head and tail", marks: 3 },
+    { id: "r-2", kind: "criterion", verbatim: "Two correctly positioned and named labels", marks: 6 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2025-ol-q16-a-ii", topicId: "bio-2-1", conceptId: "matching-enzymes-to-substrates-and-products",
+    section: "B", questionRef: "2025 OL Q16(a)(ii)",
+    questionText: "Copy the table below into your answerbook. Using the words listed, complete the table. List: Protease Maltose Starch Lipase Substrate Enzyme Product Amylase Lipids Triglycerides Protein Amino acid",
+    tariffModel: {"kind":"fixed","notation":"4(3)"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Starch Amylase Maltose", marks: 6 },
+    { id: "r-2", kind: "point", verbatim: "Lipids Lipase Triglycerides", marks: 3 },
+    { id: "r-3", kind: "point", verbatim: "Protein Protease Amino acids", marks: 3 },
+    ],
+    figure: {
+          "candId": "biology-2025-ol-040-p007-i0",
+          "src": "/exam-figures/biology/markbank/biology-2025-ol-040-p007-i0.png",
+          "srcHash": "857092e66b72e147c3ea82acba1f12da",
+          "alt": "The printed three-column ruled table (Substrate | Enzyme | Product) the candidate must copy and complete: row 1 has only \"Amylase\" in the Enzyme column, row 2 has \"Lipids\" and \"Triglycerides\" with the Enzyme cell blank, row 3 has \"Protein\" and \"Amino acid\" with the Enzyme cell blank. The card's flattened text carries the words but not which cells are empty, which is the whole task, so the ruled table is bound. Header row and all four ruled rows intact; no question body text.",
+          "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2025-ol-q16-d-i", topicId: "bio-3-2", conceptId: "drawing-and-labelling-a-virus",
+    section: "B", questionRef: "2025 OL Q16(d)(i)",
+    questionText: "Draw a diagram of a virus and label the following parts: Protein coat Nucleic acid.",
+    tariffModel: {"kind":"fixed","notation":"3 + 2(3)"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "criterion", verbatim: "Drawing", marks: 3 },
+    { id: "r-2", kind: "criterion", verbatim: "Labels (protein coat and DNA) correctly positioned", marks: 6 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2025-ol-q17-a-i", topicId: "bio-2-6", conceptId: "heart-parts-on-the-diagram",
+    section: "B", questionRef: "2025 OL Q17(a)(i)",
+    questionText: "In your answerbook, match each of the parts labelled A, B and C with the following terms: septum, vena cava, pulmonary artery.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A: Vena cava", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "B: Pulmonary artery", marks: 3 },
+    { id: "r-3", kind: "point", verbatim: "C: Septum", marks: 3 },
+    ],
+    figure: {
+          "candId": "biology-2025-ol-040-p009-i0",
+          "src": "/exam-figures/biology/markbank/biology-2025-ol-040-p009-i0.png",
+          "srcHash": "b577fbf9537f6172d57099ca5ad47cac",
+          "alt": "Sectioned diagram of the human heart with the four chambers open and the great vessels drawn at the top. A arrows to the vessel entering at the upper left, B to the arching vessel just to its right, and a boxed C sits on the thick wall running down the middle between the two ventricles. Printed word labels 'Left atrium' and 'Right ventricle' are also shown. A, B and C all visible and intact; no question body text in the crop.",
+          "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Vena cava","askedInThisQuestion":true},{"letter":"B","meaning":"Pulmonary artery","askedInThisQuestion":true},{"letter":"C","meaning":"Septum","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2025-ol-q17-a-iv", topicId: "bio-2-6", conceptId: "telling-an-artery-from-a-vein",
+    section: "B", questionRef: "2025 OL Q17(a)(iv)",
+    questionText: "The image shows a transverse section of a vein and an artery. Which do you think is the artery, X or Y? Justify your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "X", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Thicker wall or smaller lumen", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2025-ol-q17-c-i", topicId: "bio-2-6", conceptId: "breathing-system-parts-on-the-diagram",
+    section: "B", questionRef: "2025 OL Q17(c)(i)",
+    questionText: "In your answer book, match each of the parts labelled A, B and C with the following terms: trachea, bronchus, intercostal muscle.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A: Intercostal muscle", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "B: Bronchus", marks: 3 },
+    { id: "r-3", kind: "point", verbatim: "C: Trachea", marks: 3 },
+    ],
+    figure: {
+          "candId": "biology-2025-ol-040-p010-i0",
+          "src": "/exam-figures/biology/markbank/biology-2025-ol-040-p010-i0.png",
+          "srcHash": "724170cbf1df5d858ca70f694ff529e2",
+          "alt": "Diagram of the human breathing system: head and throat at the top, the ringed windpipe running down the centre and forking into the two lungs, the ribs drawn as ovals down each side, the domed diaphragm beneath, and an inset box at the top right enlarging a single air sac and its blood vessel. C arrows to the ringed central tube, B to the branch leaving it on the left, A in from the right to the shaded band lying between two of the ribs. Printed word labels 'Capillary', 'Alveolus', 'Rib' and 'Diaphragm' are also shown. A, B and C all visible and intact; the sliced part (i) text line was removed by raising the top of the crop.",
+          "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Intercostal muscle","askedInThisQuestion":true},{"letter":"B","meaning":"Bronchus","askedInThisQuestion":true},{"letter":"C","meaning":"Trachea","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2025-ol-q17-c-iii", topicId: "bio-2-6", conceptId: "how-the-diaphragm-moves-during-inhalation",
+    section: "B", questionRef: "2025 OL Q17(c)(iii)",
+    questionText: "Which one of the following statements (X or Y) describes how the diaphragm moves during inhalation? X: Contracts and moves down. Y: Relaxes and moves up.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "X: Contracts and moves down.", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2025-ol-q17-c-iv", topicId: "bio-2-6", conceptId: "how-the-ribcage-moves-during-inhalation",
+    section: "B", questionRef: "2025 OL Q17(c)(iv)",
+    questionText: "Which one of the following statements (X or Y) describes how the ribcage moves during inhalation? X: Moves downwards and inwards. Y: Moves upwards and outwards.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Y: Moves upwards and outwards.", marks: 3 },
     ],
   } as SecCard,
 ];

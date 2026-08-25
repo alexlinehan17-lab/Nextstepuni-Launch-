@@ -25,6 +25,21 @@ const authored = JSON.parse(
 ) as Array<{ id: string }>;
 const byId = new Map(authored.map(c => [c.id, c]));
 
+/**
+ * A figure is bound AFTER the script runs — stamp_figures.py writes the key a
+ * figure pass verified, because a card whose ask points at printed artwork
+ * ("the table below") is unanswerable without it and the script has no way to
+ * know which crop was inspected. The script therefore emits figureKey: "" for
+ * those cards and the deck carries the key; this mirrors that step so the
+ * comparison stays about the SCHEME content the script is responsible for.
+ */
+const bindingsPath = resolve(DIR, 'figure_bindings.json');
+const bindings: Record<string, string> = existsSync(bindingsPath)
+  ? JSON.parse(readFileSync(bindingsPath, 'utf8'))
+  : {};
+const stamped = (card: { id: string; figureKey?: string }) =>
+  bindings[card.id] ? { ...card, figureKey: bindings[card.id] } : card;
+
 /** Skip cleanly on a machine without python3 rather than failing the suite. */
 const hasPython = (() => {
   try { execFileSync('python3', ['--version'], { stdio: 'ignore' }); return true; }
@@ -49,7 +64,8 @@ describe.skipIf(!hasPython)('mark bank authoring toolkit', () => {
       const emitted = JSON.parse(stdout) as Array<{ id: string }>;
       expect(emitted.length).toBeGreaterThan(0);
       for (const card of emitted) {
-        expect(byId.get(card.id), `${card.id} is not in the authored deck`).toEqual(card);
+        expect(byId.get(card.id), `${card.id} is not in the authored deck`)
+          .toEqual(stamped(card));
       }
     }, 30_000);
   }

@@ -468,6 +468,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Don’t wear loose clothing around the PTO", marks: 2, accepts: ["ensure the PTO is (properly) covered","tanker is serviced regularly","be careful not to inhale fumes from slurry or keep windows of the tractor closed","used by trained operator or drive safely","avoid manholes","make sure area clear of people"], contextNote: "One precaution only – everything listed is an alternative wording of the same single 2-mark point." },
     ],
+    figure: {
+          "candId": "agricultural-science-2022-OL-paper-p03-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-OL-paper-p03-i0.png",
+          "srcHash": "289303a844ae5522a56f862f1819ba49",
+          "alt": "Two colour photographs of farm machinery side by side, each tagged by a thick red arrow drawn onto the photo pointing at the implement. Left photograph, arrow labelled A: a tractor (green cab, black bodywork, yellow wheel rims, driver in the cab) viewed from behind in a green grass field, carrying a rear three-point-linkage-mounted hopper machine — a wide teal-blue hopper with a red lid that tapers downwards to two outlets over a red frame; the hopper carries a white 'SULKY' decal. The shape and brand are those of a twin-disc fertiliser spreader, though no discs are clearly resolvable at this resolution. Right photograph, arrow labelled B: a large green single-axle tanker with a wide flotation tyre standing on a concrete yard in front of a dark conifer hedge; a white manufacturer decal on the barrel (partly legible, ending in '...Technology') and a small model number. Folded upright at the rear of the tanker is a tall vertical boom carrying a dense stack of green flexible hoses ending in black outlet shoes — a trailing shoe / dribble bar slurry applicator in the transport position; a second stack of hoses lies folded at the bottom. Below the photographs the question text '(a) Identify and state the function of machine A and B.' and the top of an answer table with rows 'A:', 'Function:' and 'B:'.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1391,6 +1399,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Colostrum", marks: 4, contextNote: "The tick goes beside Colostrum; the other three options score nothing." },
     ],
+    figure: {
+          "candId": "agricultural-science-2024-OL-paper-p07-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p07-i0.png",
+          "srcHash": "7b7f15bc63b7dd96aac552404e3402e8",
+          "alt": "Question 5, the digestive system of a calf. A colour cartoon of a black-and-white calf standing in side view facing right, with the stomach compartments drawn cut-away in colour inside the body: a large yellow sac filling the upper front of the abdomen, a rounded orange sac in the centre, a large brown-mauve mass low and to the rear (left of the picture), and a second yellow lobe low and forward. A pale blue tube runs from the throat down and back into the compartments and is labelled in black \"Oesophagus\" with a blue leader line coming from the lower right. Four black leader arrows carry bold capitals: A comes down from the upper left to the orange central sac; B comes down from the top to the yellow upper-front sac; C comes up from the lower left to the brown-mauve mass; D comes up from the bottom to the lower yellow lobe. Beneath the drawing: \"(a) Label any three parts of the diagram using the words in the list below.\" and a pale green word bank of four cells reading Omasum, Abomasum, Rumen, Reticulum, then an answer table with rows A:, B:, C: and D:.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1678,6 +1694,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Egg production", marks: 3 },
     ],
+    figure: {
+          "candId": "agricultural-science-2024-ol-paper-p014-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-ol-paper-p014-i0.png",
+          "srcHash": "67990abed49dca1bb41b372d97dd1d52",
+          "alt": "The four-step selective breeding flowchart for laying hens, inside a thin black frame. Step 1, 'Breed two organisms with desired characteristics', shows a blue-tailed cockerel and a tan hen joined by a multiplication sign. A black arrow runs right to step 2, 'Choose the best offspring and breed', where three hens headed A, B and C stand with eggs drawn at their feet - two eggs by A, two by B and three by C. A downward arrow leads to step 3, 'Repeat over many generations', another cockerel-by-hen pairing. A left-pointing arrow leads to step 4, 'Over time characteristic increases', a single speckled hen with three eggs beside her.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2410,7 +2434,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2021-ol-q15a-ii", topicId: "agsci-3-3-1", conceptId: "grass-species-selection-reasons",
     section: "B", questionRef: "2021 OL Q15(a)(ii)",
-    stem: "Question 15 is about making good quality grass silage on a beef farm. Part (a)(i) asked you to list two grasses commonly used for silage production; the scheme's list is PRG (perennial ryegrass), IRG (Italian ryegrass) and hybrid rye grass.",
+    stem: "Question 15 is about making good quality grass silage on a beef farm. Part (a)(i) asked you to list two grasses commonly used for silage production: the grasses named at part (i) are PRG (perennial ryegrass), IRG (Italian ryegrass) and hybrid rye grass.",
     questionText: "Outline one reason for using any one of the grasses named at part (i) above.",
     tariffModel: {"kind":"fixed","notation":"4"}, totalMarks: 4,
     rows: [
@@ -2489,6 +2513,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "29.83%", marks: 4, contextNote: "Dried weight divided by fresh weight, times 100. The scheme allows partial credit: 'If a calculation is shown (37/124 x 100/1) but answer calculated is incorrect award 3 marks', so showing the working is worth 3 of the 4 even when the arithmetic goes wrong." },
     ],
+    figure: {
+          "candId": "agricultural-science-2021-ol-paper-p026-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-ol-paper-p026-i1.png",
+          "srcHash": "dd353e21ca33ade7ada213c5c3058a3c",
+          "alt": "The silage dry-matter data box, two rows by two columns. The pale green left-hand cells are labelled in bold 'Average fresh weight of silage' and 'Average dried weight of silage'; the white right-hand cells give the values 124g and 37g respectively. These are the two figures the DM% calculation is made from.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2504,6 +2536,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "DMD not high enough (67%), will need to feed concentrates", marks: null, accepts: ["concentrates with high protein % (14 ‐ 16%) as silage protein low","poor preservation, not enough lactic acid produced as pH too high"], contextNote: "Each reason has to be tied back to a figure in the table. The scheme awards 3 for the first correct reason and 1 for the second, so the value follows the order." },
     { id: "r-2", kind: "alt", verbatim: "concentrates with high protein % (14 ‐ 16%) as silage protein low", marks: null, accepts: ["DMD not high enough (67%), will need to feed concentrates","poor preservation, not enough lactic acid produced as pH too high"], contextNote: "A second, different reason from the same pool." },
     ],
+    figure: {
+          "candId": "agricultural-science-2021-ol-paper-p026-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-ol-paper-p026-i0.png",
+          "srcHash": "3f83c27a46a5186fb6caf1275fef9396",
+          "alt": "The silage analysis table, three columns by five rows. Two peach-shaded header cells read 'Farmer's analysis' and 'Target analysis' above the value columns, with the row-label column left blank. The four bold row labels are Dry Matter (DM), Dry Matter Digestibility (DMD), Crude protein and pH. The farmer's DM cell is highlighted bright yellow and holds a question mark against a target of 25%; DMD is 67% against 70% +, crude protein is 12% against 15% +, and pH is 4.7 against 3.8 - 4.2.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2519,6 +2559,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Cut at leafy stage to increase sugar for fermentation", marks: null, accepts: ["do not cut during or after rainfall as water dilutes the sugar content","cut in the afternoon as photosynthesis produces more sugar","ensure pit (bales) packed tightly to remove air","allow grass to wilt to increase sugar content","use additive (molasses or acid or inoculants) to achieve correct pH"], contextNote: "Every route to the target pH works either through sugar for lactic-acid fermentation or through excluding air. The scheme awards 4 for the first correct way and 2 for the second, so the value follows the order." },
     { id: "r-2", kind: "alt", verbatim: "allow grass to wilt to increase sugar content", marks: null, accepts: ["Cut at leafy stage to increase sugar for fermentation","do not cut during or after rainfall as water dilutes the sugar content","cut in the afternoon as photosynthesis produces more sugar","ensure pit (bales) packed tightly to remove air","use additive (molasses or acid or inoculants) to achieve correct pH"], contextNote: "A second, different way. The scheme's full wording for the packing point is 'ensure pit (bales) packed tightly to remove air to promote growth of anaerobic bacteria (lactobacillus)', truncated in accepts because the '4+2' marks cell is typeset inside that phrase." },
     ],
+    figure: {
+          "candId": "agricultural-science-2021-ol-paper-p026-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-ol-paper-p026-i0.png",
+          "srcHash": "3f83c27a46a5186fb6caf1275fef9396",
+          "alt": "The silage analysis table, three columns by five rows. Two peach-shaded header cells read 'Farmer's analysis' and 'Target analysis' above the value columns, with the row-label column left blank. The four bold row labels are Dry Matter (DM), Dry Matter Digestibility (DMD), Crude protein and pH. The farmer's DM cell is highlighted bright yellow and holds a question mark against a target of 25%; DMD is 67% against 70% +, crude protein is 12% against 15% +, and pH is 4.7 against 3.8 - 4.2.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3701,13 +3749,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2023-ol-q13a-iii", topicId: "agsci-3-3-1", conceptId: "reasons-for-sowing-clover-in-a-sward",
     section: "B", questionRef: "2023 OL Q13(a)(iii)",
-    stem: "Question 13 is answered as (a) and (b) with either (c) or (d), for 50 marks in total. Reseeding grassland is an important aspect of ensuring farm sustainability. Part (ii) printed photographs of three plants that may be sown in a newly reseeded pasture, and the scheme names them A = Red clover, B = Perennial ryegrass, C = White clover. Plants A and C are therefore the two clovers.",
+    stem: "Question 13 is answered as (a) and (b) with either (c) or (d), for 50 marks in total. Reseeding grassland is an important aspect of ensuring farm sustainability. Part (ii) printed photographs of three plants that may be sown in a newly reseeded pasture; A is Red clover, B Perennial ryegrass and C White clover, named in part (ii). Plants A and C are therefore the two clovers.",
     questionText: "Outline reasons for sowing plants A and C shown in part (ii) in a newly sown sward.",
     tariffModel: {"kind":"orderedSplit","notation":"4+2"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Increased grass quality or production", marks: null, accepts: ["higher milk production","higher liveweight gain or higher output","increased protein","increased mineral content","nitrogen fixation or less artificial fertilizer","reduce weeds","increase biodiversity"], contextNote: "Two reasons score: 4 marks for the first correct one the examiner meets and 2 for the second, whichever they are." },
     { id: "r-2", kind: "point", verbatim: "increased dry matter (DM) (intake) or increased palatability", marks: null, accepts: ["higher milk production","higher liveweight gain or higher output","increased protein","increased mineral content","nitrogen fixation or less artificial fertilizer","reduce weeds","increase biodiversity"], contextNote: "A second, different reason from the same pool." },
     ],
+    figure: {
+          "candId": "agricultural-science-2023-OL-paper-p20-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-OL-paper-p20-i0.png",
+          "srcHash": "ecfa3a9a753050c23d6c792a829b14a9",
+          "alt": "Three colour close-up plant photographs in a row, each with a bold black capital letter centred above it. A: two or three globular flowerheads of deep magenta-pink florets, with green trifoliate (three-part) leaves below them, against a background of green grass. B: a close-up of a grass flowering head against a plain brown background — pale straw and pink-tinged spikelets clustered in dense one-sided bunches along a green stem, the individual florets showing fine bristly awns. C: a single globular flowerhead of white/pale cream florets tinged green at the centre, sitting among broad rounded trifoliate leaves that carry a pale chevron/crescent watermark, in bright green foliage. Above the photographs is the printed instruction '(ii) Identify the plants below that may be sown in a newly reseeded pasture.' and below them a three-cell blank answer table, one cell under each photograph. Beneath that is '(iii) Outline reasons for sowing plants A and C shown in part (ii) in a newly sown sward.' with the start of a blank answer box.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3882,7 +3938,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2023 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2023-ol-q15a-v", topicId: "agsci-1-2", conceptId: "capillarity-investigation-method",
     section: "B", questionRef: "2023 OL Q15(a)(v)",
-    stem: "Question 15 is answered as (a) with either (b) or (c), for 50 marks in total. Brian bought 120 hectares of land for a mixed tillage and beef enterprise. He collected two soil samples, A and B, and wanted to compare the capillarity of the two. You draw the labelled diagram yourself — the scheme awards these points wherever they appear, on the diagram or in the description.",
+    stem: "Question 15 is answered as (a) with either (b) or (c), for 50 marks in total. Brian bought 120 hectares of land for a mixed tillage and beef enterprise. He collected two soil samples, A and B, and wanted to compare the capillarity of the two. You draw the labelled diagram yourself.",
     questionText: "Describe with the aid of a labelled diagram how he carried out this investigation.",
     tariffModel: {"kind":"fixed","notation":"3(2)"}, totalMarks: 6,
     rows: [
@@ -4259,13 +4315,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q13bii", topicId: "agsci-1-3", conceptId: "qualitative-vs-quantitative-data",
     section: "B", questionRef: "2024 OL Q13(b)(ii)",
-    stem: "Lisa was renting 40 hectares of land for her organic dairy farm. She carried out a number of tests to determine its productivity. She investigated the botanical composition of the land with a quadrat thrown ten times, and recorded in a table which plants were present in each throw. Part (b)(i) asked her to calculate the average % frequency of the dock leaf, which was present in 4 of the 10 quadrats: 4/10 x 100/1 = 40%.",
+    stem: "The results from the investigation are shown in the table below.",
     questionText: "State with reason if the results shown in part (i) are qualitative or quantitative.",
     tariffModel: {"kind":"fixed","notation":"2(2)"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Quantitative", marks: 2, contextNote: "State" },
     { id: "r-2", kind: "point", verbatim: "Quantity or number of plants measured.", marks: 2, contextNote: "Reason" },
     ],
+    figure: {
+          "candId": "agricultural-science-2024-ol-paper-p020-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-ol-paper-p020-i0.png",
+          "srcHash": "24683e3e38e857934dab2a170db6e88d",
+          "alt": "The quadrat botanical-composition results table, twelve columns by five rows. A peach header row reads 'Plant', the throw numbers 1 to 10, and 'Average % frequency'. Four green-shaded row headers read Dock leaf, Perennial ryegrass, Nettle and White clover; presence in a throw is marked with a black X. Dock leaf is marked in throws 2, 4, 7 and 10 and its frequency cell is highlighted bright yellow with a bold A in it. Perennial ryegrass is marked in all ten throws and reads 100, Nettle is marked in throws 1, 5 and 10 and reads 30, and White clover is marked in throws 1, 3, 4, 5, 6, 8 and 10 and reads 70.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4274,13 +4338,21 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q13biv", topicId: "agsci-1-3", conceptId: "accuracy-of-an-investigation",
     section: "B", questionRef: "2024 OL Q13(b)(iv)",
-    stem: "Lisa was renting 40 hectares of land for her organic dairy farm. She carried out a number of tests to determine its productivity. Part (a) of this question dealt with the quadrat investigation she used to find the botanical composition of the land, and part (b) analysed the results she recorded from it.",
+    stem: "The results from the investigation are shown in the table below.",
     questionText: "State with reason if this investigation is accurate.",
     tariffModel: {"kind":"fixed","notation":"2(3)"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Accurate or Yes", marks: 3, contextNote: "State - 'Accurate' and 'Yes' are the same point worded two ways." },
     { id: "r-2", kind: "point", verbatim: "Quadrat was thrown multiple times", marks: 3, accepts: ["land areas chosen randomly","average value used","used approved plant key or book or app to identify plants"], contextNote: "Reason - any ONE of the scheme's four reasons scores the 3 marks." },
     ],
+    figure: {
+          "candId": "agricultural-science-2024-ol-paper-p019-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-ol-paper-p019-i0.png",
+          "srcHash": "eb32cbcb4c5f54eae3d7c90acef1a236",
+          "alt": "The investigation results table: rows for Dock leaf, Perennial ryegrass, Nettle and White clover against quadrat columns 1 to 10, with an X marking each quadrat the plant was found in, and a final Average % frequency column reading A (highlighted), 100, 30 and 70 respectively.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4684,7 +4756,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q17biii", topicId: "agsci-1-5", conceptId: "harvesting-safety-precaution",
     section: "B", questionRef: "2024 OL Q17(b)(iii)",
-    stem: "Part (b) is about a food crop (other than grass) the candidate has named and studied — the scheme works through barley, potatoes and kale — and part (b)(ii) asked how that crop is harvested and stored.",
+    stem: "Part (b) is about a food crop (other than grass) the candidate has named and studied, and part (b)(ii) asked how that crop is harvested and stored.",
     questionText: "Outline one safety precaution that should be taken during harvesting this crop.",
     tariffModel: {"kind":"fixed","notation":"4"}, totalMarks: 4,
     rows: [
@@ -5299,6 +5371,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Same amount of soil (clay) or water", marks: 3, accepts: ["type of soil (clay) used in each test tube","shaken for same amount of time"], contextNote: "Only ONE control variable is asked for and the whole 3 marks ride on it; the three wordings the scheme prints are alternatives, not three separate points." },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-ol-paper-p032-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-ol-paper-p032-i0.png",
+          "srcHash": "c54eabd9ec1afbedd297a71cba349815",
+          "alt": "Four bordered panels in a two-by-two grid, each headed with a blue capital letter and holding a laboratory photograph above a peach caption strip. A: two test tubes in a metal rack, one holding dark soil and one holding soil topped with white powder - 'Add calcium carbonate to one of the test tubes'. B: a hand holding two cork-stoppered test tubes, one with dark settled soil and one milky white - 'Add water to each test tube, then stopper and shake the test tubes'. C: two tubes held over a rack, the left one uniformly muddy brown and the right one clear above a settled soil layer - 'Leave to settle, one test tube stays muddy, while one test tube goes clear'. D: two empty test tubes in a rack each holding a small plug of dry brown soil - 'Add clay soil to two test tubes'.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5358,6 +5438,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "BCS: 3", marks: 5 },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-ol-paper-p034-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-ol-paper-p034-i0.png",
+          "srcHash": "8890e37c98a656eaa97d9fcffca54fce",
+          "alt": "The body condition score table, three columns by six rows. A grey header row reads 'Body condition score (BCS)', '% of cows that went in calf at first service' and 'Expected calving period'. The five green-shaded BCS cells run 1 to 5, with % in calf of 35, 55, 70, 65 and 50, and expected calving periods of 24 weeks, 12 weeks, 9 weeks, 12 weeks and 15 weeks - so the figures peak at BCS 3 and fall away on either side.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6132,7 +6220,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q6ai", topicId: "agsci-4-2", conceptId: "sheep-breed-identification",
     section: "A", questionRef: "2024 OL Q6(a)(i)",
-    stem: "Answer either (a) or (b). The photographs below show some breeds of sheep found on Irish farms, with the word bank Texel, Suffolk, Charolais, Border Leicester printed above them. Only three of the four letters need to be named — and under the scheme's surplus-answer rule a wrong extra answer cancels a correct one. Part (ii) then asks for one reason why a named breed is suitable for sheep meat production.",
+    stem: "Answer either (a) or (b). The photographs below show some breeds of sheep found on Irish farms, with the word bank Texel, Suffolk, Charolais, Border Leicester printed above them. Only three of the four letters need to be named. Part (ii) then asks for one reason why a named breed is suitable for sheep meat production.",
     questionText: "Identify any three of the following breeds using the list below.",
     tariffModel: {"kind":"bestNofParts","notation":"3(2)","answer":3,"ofParts":4,"perPart":2}, totalMarks: 6,
     rows: [
@@ -6190,7 +6278,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q14bii", topicId: "agsci-3-3-3", conceptId: "correct-grass-stage-for-silage",
     section: "B", questionRef: "2024 OL Q14(b)(ii)",
-    stem: "Silage making is a very important aspect of farm life as it is an essential feedstuff for ruminant animals on farms. Part (b)(i) printed the two grass photographs below and asked which shows the correct stage of cutting the grass for silage. The marking points here are the ones credited for choosing photograph B; the scheme adds '(Allow opposite points for A)'.",
+    stem: "Silage making is a very important aspect of farm life as it is an essential feedstuff for ruminant animals on farms. Part (b)(i) printed the two grass photographs below and asked which shows the correct stage of cutting the grass for silage.",
     questionText: "Briefly outline one reason for your choice in part (i).",
     tariffModel: {"kind":"fixed","notation":"2"}, totalMarks: 2,
     rows: [
@@ -6273,7 +6361,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q15biv", topicId: "agsci-4-3-3", conceptId: "raddle-colour-sequence",
     section: "B", questionRef: "2024 OL Q15(b)(iv)",
-    stem: "Answer both (a) and (b) with either (c) or (d). At mating the farmer straps a raddle on the ram to mark the ewes that have been served, and part (b)(iii) established that the colour is changed every 13–15 days so that any ewe repeating shows up. The answer table on the paper has three rows: 1st colour, 2nd colour, 3rd colour. The scheme accepts either the colour name or the letter of the tub.",
+    stem: "Answer both (a) and (b) with either (c) or (d). At mating the farmer straps a raddle on the ram to mark the ewes that have been served, and part (b)(iii) established that the colour is changed every 13–15 days so that any ewe repeating shows up. The answer table on the paper has three rows: 1st colour, 2nd colour, 3rd colour.",
     questionText: "Using the colours in the box below, list the colours in order of sequence used by the farmer during mating.",
     tariffModel: {"kind":"orderedSplit","notation":"4 + 1 + 1"}, totalMarks: 6,
     rows: [
@@ -6373,7 +6461,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2021 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2021-ol-q10b", topicId: "agsci-4-1", conceptId: "ovary-function",
     section: "A", questionRef: "2021 OL Q10(b)",
-    stem: "Question 10 prints a side-view line drawing of the reproductive system of a cow, with the bladder and the vulva named on the drawing and one further structure picked out by a short red arrow labelled A. Part (a) asked you to name A. The scheme scores (a) and (b) as separate 2-mark points, so this mark does not depend on having named A correctly — describe what the structure the arrow points to does.",
+    stem: "Question 10 prints a side-view line drawing of the reproductive system of a cow, with the bladder and the vulva named on the drawing and one further structure picked out by a short red arrow labelled A. Part (a) asked you to name A. Describe what the structure the arrow points to does.",
     questionText: "Outline the function of the part labelled A.",
     tariffModel: {"kind":"fixed","notation":"2"}, totalMarks: 2,
     rows: [
@@ -7182,12 +7270,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Agricultural Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "agsci-2024-ol-q13bi", topicId: "agsci-1-3", conceptId: "percentage-frequency-from-quadrats",
     section: "B", questionRef: "2024 OL Q13(b)(i)",
-    stem: "Plant 1 2 3 4 5 6 7 8 9 10 Average % frequency Dock leaf X X X X A Perennial ryegrass X X X X X X X X X X 100 Nettle X X X 30 White clover X X X X X X X 70",
+    stem: "The results from the investigation are shown in the table below.",
     questionText: "Calculate the average % frequency A for the dock leaf.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "4/10 x 100/1 = 40%", marks: 6 },
     ],
+    figure: {
+          "candId": "agricultural-science-2024-ol-paper-p019-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-ol-paper-p019-i0.png",
+          "srcHash": "eb32cbcb4c5f54eae3d7c90acef1a236",
+          "alt": "The investigation results table: rows for Dock leaf, Perennial ryegrass, Nettle and White clover against quadrat columns 1 to 10, with an X marking each quadrat the plant was found in, and a final Average % frequency column reading A (highlighted), 100, 30 and 70 respectively.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",

@@ -727,6 +727,32 @@ export const CARDS: SecCard[] = [
     ],
   } as SecCard,
   {
+    ...base, kind: "diagram",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2021-ol-q9-ix", topicId: "phys-3-3", conceptId: "earth-wire-function",
+    section: "B", questionRef: "2021 OL Q9(ix)",
+    stem: "The parts of an electrical plug.",
+    questionText: "The wire labelled P is yellow and green. What is the function of this wire?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "safety", marks: 4, accepts: ["earth (the equipment)"] },
+    ],
+    figure: {
+          "candId": "physics-2021-ol-paper-p008-i1",
+          "src": "/exam-figures/physics/markbank/physics-2021-ol-paper-p008-i1.png",
+          "srcHash": "1c4f670e679ef7e1b25684ff5c84c326",
+          "alt": "Labelled line diagram of the inside of a three-pin mains plug with its cover removed: rounded plug body outline, grey-shaded internal metalwork, two dark round screw holes near the bottom corners. Three insulated wires enter from a sheathed cable at the bottom, pass under a clamp and fan out to screw terminals - one arcs up to the top terminal, one runs left to a terminal on the left-hand side, one runs right to a terminal beside a cartridge fuse held in clips. Six leader lines label the drawing: 'P' to the wire running up to the top terminal, 'Q' to the wire running to the right-hand terminal, 'Neutral' to the wire running to the left terminal, 'Fuse' to the cartridge fuse, 'Cable grip' to the clamp, and 'Cable' to the sheathed cable leaving the bottom. Diagram only - the right-hand column of printed question text on the page has been cropped away.",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "P",
+                "Q"
+          ]
+    },
+    labelKey: [{"letter":"P","meaning":"safety/ earth (the equipment)","askedInThisQuestion":true},{"letter":"Q","meaning":"live","askedInThisQuestion":false}],
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
     paperFileid: "LC021GLP000EV",
@@ -1230,6 +1256,28 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "set one vibrating and bring the other close", marks: 3, openList: true },
     { id: "r-3", kind: "point", verbatim: "energy transfer e.g. the second tuning fork vibrates", marks: 3, openList: true },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2021-ol-q14d-iii", topicId: "phys-2-6", conceptId: "frequency-inversely-proportional-to-length",
+    section: "B", questionRef: "2021 OL Q14(d)(iii)",
+    questionText: "A sonometer, shown above, can be used to investigate the relationship between the frequency of a stretched string and its length. State this relationship.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "frequency is inversely proportional to the length", marks: 6, route: "a" },
+    { id: "r-2", kind: "point", verbatim: "fl = k", marks: 6, route: "b" },
+    ],
+    figure: {
+          "candId": "physics-2021-OL-paper-p14-i0",
+          "src": "/exam-figures/physics/markbank/physics-2021-OL-paper-p14-i0.png",
+          "srcHash": "4a81ff781d90775641631b0d91b025ce",
+          "alt": "A grey-scale photograph of a sonometer seen at an angle from the lower left: a long rectangular wooden sound box with a circular sound hole in its near face and a second hole further along, a wire stretched along its top surface passing over two movable wedge-shaped bridges, a peg or tensioning assembly with two uprights at the far right end, and a metal end-piece at the near left end from which a cord hangs down. The photograph is centred on the page between the sliced last line of Q14(d)(ii) above it and the line of Q14(d)(iii) below it, which reads \"A sonometer, shown above, can be used to investigate the relationship between\".",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4382,6 +4430,28 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2025-ol-q6-a", topicId: "phys-1-2", conceptId: "moment-of-a-force",
+    section: "B", questionRef: "2025 OL Q6(a)",
+    stem: "From the diagram: force applied = 50 N, distance = 15 cm.",
+    questionText: "The diagram shows a force of 50 N applied to a wrench. Calculate the moment of the force about the fulcrum at the centre of the nut.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "moment = 7.5 N m", marks: 7 },
+    ],
+    figure: {
+          "candId": "physics-2025-OL-paper-p06-i1",
+          "src": "/exam-figures/physics/markbank/physics-2025-OL-paper-p06-i1.png",
+          "srcHash": "59f3a016f1c93e17d612263931e05d73",
+          "alt": "On the left, the opening of Question 6 ('Answer any eight of the following parts') with parts (a) to (d) in prose. On the right is the figure for part (a): a grey shaded 3-D clip-art drawing of an adjustable wrench (spanner) lying horizontally, seen from above/side. Its adjustable jaws are at the left end and grip a hexagonal nut; the long straight handle runs off to the right and ends in a small round hole. A short vertical arrow points straight down onto the far right end of the handle, and the text above it reads 'force applied = 50 N'. Beneath the wrench a double-headed horizontal arrow spans from the nut at the left to the end of the handle at the right, labelled 'distance = 15 cm'.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q6-b", topicId: "phys-1-2", conceptId: "conditions-for-equilibrium",
     section: "B", questionRef: "2025 OL Q6(b)",
     questionText: "State one condition necessary for equilibrium.",
@@ -5716,36 +5786,6 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2021-ol-q9ix-fig", topicId: "phys-3-3", conceptId: "mains-plug-earth-wire",
-    section: "B", questionRef: "2021 OL Q9(ix)",
-    stem: "The diagram on the left shows the parts of an electrical plug.",
-    questionText: "The wire labelled P is yellow and green. What is the function of this wire?",
-    tariffModel: {"kind":"fixed"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "safety/ earth (the equipment)", marks: 4 },
-    ],
-    figure: {
-          "candId": "physics-2021-OL-paper-p08-i1",
-          "src": "/exam-figures/physics/markbank/physics-2021-OL-paper-p08-i1.png",
-          "srcHash": "a2a55b69ae712a5fa98f5ebd449b29d7",
-          "alt": "On the left of the crop is a labelled line diagram of the inside of a three-pin mains plug with its cover removed, drawn as a rounded outline with grey-shaded internal metalwork and two dark round screw holes near the bottom corners. Three insulated wires enter from a sheathed cable at the bottom, pass under a clamp, and fan out to screw terminals: one arcs up to the terminal at the top, one goes left to a terminal on the left-hand side, and one goes right to a terminal beside a cartridge fuse held in clips on the right. Leader lines label: \"P\" to the wire running up to the top terminal, \"Neutral\" to the wire running to the left terminal, \"Fuse\" to the cartridge fuse, \"Q\" to the wire running to the right-hand terminal, \"Cable grip\" to the clamp at the bottom, and \"Cable\" to the sheathed cable leaving the bottom. To the right is the printed text for Q9(ix) and Q9(x) and the mark allocation (8).",
-          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": [
-                "P",
-                "Q",
-                "Fuse",
-                "Neutral",
-                "Cable grip",
-                "Cable"
-          ]
-    },
-    labelKey: [{"letter":"P","meaning":"The earth wire (yellow and green insulation) — runs to the top (earth) pin","askedInThisQuestion":true},{"letter":"Q","meaning":"The live wire (brown insulation) — the wire named in part (x)","askedInThisQuestion":false},{"letter":"Fuse","meaning":"Printed label — the cartridge fuse on the live side of the plug","askedInThisQuestion":false},{"letter":"Neutral","meaning":"Printed label — the neutral wire and its terminal on the left of the plug","askedInThisQuestion":false},{"letter":"Cable grip","meaning":"Printed label — the clamp holding the cable where it enters the plug","askedInThisQuestion":false},{"letter":"Cable","meaning":"Printed label — the three-core flex entering the plug from below","askedInThisQuestion":false}],
-  } as SecCard,
-  {
-    ...base, kind: "diagram",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC021GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
     id: "phys-2021-ol-q9x-fig", topicId: "phys-3-3", conceptId: "mains-plug-live-wire",
     section: "B", questionRef: "2021 OL Q9(x)",
     stem: "The diagram on the left shows the parts of an electrical plug.",
@@ -5789,30 +5829,6 @@ export const CARDS: SecCard[] = [
           "src": "/exam-figures/physics/markbank/physics-2021-OL-paper-p13-i1.png",
           "srcHash": "1c811f7968384d5774ae432554916a48",
           "alt": "On the right of the crop is a single closed pear-shaped outline drawn as a thin grey line on white: rounded and broad at the left, narrowing to a blunt point at the right. Nothing is drawn inside it, and it has no labels, charges or arrows. To the left is the printed text for Q14(b) parts (ii), (iii) and (iv), and the mark allocation (18) at the lower right.",
-          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC021GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2021-ol-q14d-iii-fig", topicId: "phys-2-5", conceptId: "sonometer-frequency-vs-length",
-    section: "B", questionRef: "2021 OL Q14(d)(iii)",
-    stem: "Sounds are produced when something vibrates.",
-    questionText: "A sonometer, shown above, can be used to investigate the relationship between the frequency of a stretched string and its length. State this relationship.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "frequency is inversely proportional to the length", marks: 6, contextNote: "Any one of the three routes scores the full 6. The scheme also allows 'partial answer (3)' as a fallback.", route: "words" },
-    { id: "r-2", kind: "point", verbatim: "fl = k", marks: 6, route: "fl-equals-k" },
-    { id: "r-3", kind: "point", verbatim: "𝑓∝ 𝑙", marks: 6, contextNote: "Extraction flattened a fraction here: in the printed scheme this route reads f ∝ 1/l (frequency proportional to 1 over length) — the displaced '1' sits on the previous line of the extracted markdown. It is NOT f proportional to l.", route: "f-prop-1-over-l" },
-    ],
-    figure: {
-          "candId": "physics-2021-OL-paper-p14-i0",
-          "src": "/exam-figures/physics/markbank/physics-2021-OL-paper-p14-i0.png",
-          "srcHash": "4a81ff781d90775641631b0d91b025ce",
-          "alt": "A grey-scale photograph of a sonometer seen at an angle from the lower left: a long rectangular wooden sound box with a circular sound hole in its near face and a second hole further along, a wire stretched along its top surface passing over two movable wedge-shaped bridges, a peg or tensioning assembly with two uprights at the far right end, and a metal end-piece at the near left end from which a cord hangs down. The photograph is centred on the page between the sliced last line of Q14(d)(ii) above it and the line of Q14(d)(iii) below it, which reads \"A sonometer, shown above, can be used to investigate the relationship between\".",
           "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -6079,32 +6095,6 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC021GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2025-ol-q6a-fig", topicId: "phys-1-2", conceptId: "moment-of-a-force",
-    section: "B", questionRef: "2025 OL Q6(a)",
-    stem: "Answer any eight of the following parts (a), (b), (c), etc.",
-    questionText: "The diagram shows a force of 50 N applied to a wrench. Calculate the moment of the force about the fulcrum at the centre of the nut.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 7,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "moment = 7.5 N m", marks: 7, contextNote: "Scheme tariff [7]; scheme adds '[accept partial answer for 4]'. Q6 instructs 'Answer any eight of the following parts' at (8 x 7), so each part is worth 7 marks." },
-    ],
-    figure: {
-          "candId": "physics-2025-OL-paper-p06-i1",
-          "src": "/exam-figures/physics/markbank/physics-2025-OL-paper-p06-i1.png",
-          "srcHash": "59f3a016f1c93e17d612263931e05d73",
-          "alt": "On the left, the opening of Question 6 ('Answer any eight of the following parts') with parts (a) to (d) in prose. On the right is the figure for part (a): a grey shaded 3-D clip-art drawing of an adjustable wrench (spanner) lying horizontally, seen from above/side. Its adjustable jaws are at the left end and grip a hexagonal nut; the long straight handle runs off to the right and ends in a small round hole. A short vertical arrow points straight down onto the far right end of the handle, and the text above it reads 'force applied = 50 N'. Beneath the wrench a double-headed horizontal arrow spans from the nut at the left to the end of the handle at the right, labelled 'distance = 15 cm'.",
-          "attribution": "SEC Leaving Certificate Physics 2025 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": [
-                "force applied = 50 N",
-                "distance = 15 cm"
-          ]
-    },
-    labelKey: [{"letter":"force applied = 50 N","meaning":"The 50 N force applied to the end of the wrench handle, shown by the downward arrow","askedInThisQuestion":true},{"letter":"distance = 15 cm","meaning":"The distance from the fulcrum at the centre of the nut to the point where the force is applied — this value appears only on the diagram, not in the question prose","askedInThisQuestion":true}],
-  } as SecCard,
-  {
-    ...base, kind: "diagram",
-    year: 2025, level: "ordinary",
-    paperFileid: "LC021GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2025 Ordinary Level — © State Examinations Commission.",
     id: "phys-2025-ol-q10vii-fig", topicId: "phys-3-6", conceptId: "induced-current-moving-magnet",
     section: "B", questionRef: "2025 OL Q10(vii)",
     stem: "An electrical generator is based on the principle of electromagnetic induction. It can be demonstrated by moving a magnet towards a coil as shown.",
@@ -6165,6 +6155,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "waves spreading out from the slit", marks: 6 },
     ],
+    figure: {
+          "candId": "physics-2021-ol-paper-p007-i0",
+          "src": "/exam-figures/physics/markbank/physics-2021-ol-paper-p007-i0.png",
+          "srcHash": "6b95c659e4e54499841fffaa2fbd3fd9",
+          "alt": "Four curved vertical wave fronts, drawn as thin grey lines and evenly spaced, travelling left to right towards a barrier drawn as two thick black vertical bars with a narrow gap between them at mid-height. The space to the right of the barrier is empty white, since the candidate is asked to copy the diagram and complete it to show diffraction through the gap. No lettering.",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6429,6 +6427,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "((12)(60)(60)= ) 43200 s", marks: 3 },
     ],
+    figure: {
+          "candId": "physics-2021-OL-paper-p10-i0",
+          "src": "/exam-figures/physics/markbank/physics-2021-OL-paper-p10-i0.png",
+          "srcHash": "7fdf8619e1127d7b33a920f04b59fb15",
+          "alt": "On the right is a grey-scale photograph of a woman shown in three-quarter profile with her eyes closed, while a gloved hand holds a hand-held infrared thermometer - a pistol-shaped instrument with a small rectangular digital display on top - close to her forehead. The background is dark. To the left is the printed Q11 stem stating that normal human body temperature is 37 degrees C and that the thermometer in the photograph measures infrared radiation emitted from a person's forehead.",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6443,6 +6449,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "E=(1.36 × 103)(43200)(54) = 3.17 × 109 J", marks: 6, contextNote: "The paper gives the solar constant as 1.36 kW m−2 — energy = solar constant × time in seconds × area, using the answers to (vii) and (viii). \"103\" and \"109\" are the flattened 10³ and 10⁹." },
     ],
+    figure: {
+          "candId": "physics-2021-ol-paper-p010-i0",
+          "src": "/exam-figures/physics/markbank/physics-2021-ol-paper-p010-i0.png",
+          "srcHash": "ba9b37f461051a980452a096de896f1e",
+          "alt": "Scale diagram of a rectangular garden: a grey-shaded rectangle, taller than it is wide, drawn in a thick black outline. A dashed double-headed arrow above the rectangle spans its width and is labelled '6 m'; a dashed double-headed arrow to the right of it spans its height and is labelled '9 m'. Nothing else is printed.",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7046,6 +7060,14 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "substitution", marks: 3 },
     { id: "r-3", kind: "point", verbatim: "r = 22.5°", marks: 3 },
     ],
+    figure: {
+          "candId": "physics-2023-ol-paper-p007-i0",
+          "src": "/exam-figures/physics/markbank/physics-2023-ol-paper-p007-i0.png",
+          "srcHash": "85751cd2429eddcb45c7685f132f1f71",
+          "alt": "Ray diagram of light passing through a rectangular glass block drawn in plain outline. An incident ray with an arrowhead comes down from the upper left and meets the top face; a vertical dashed normal is drawn at that point; inside the block the ray bends towards the normal and travels down to the bottom face, where it bends again and leaves as an arrowed ray to the lower right. Leader lines label the incident ray A, the ray inside the block B, and the dashed normal C.",
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7078,6 +7100,14 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "substitution", marks: 3 },
     { id: "r-3", kind: "point", verbatim: "v = 37.5 cm", marks: 3 },
     ],
+    figure: {
+          "candId": "physics-2023-ol-paper-p007-i0",
+          "src": "/exam-figures/physics/markbank/physics-2023-ol-paper-p007-i0.png",
+          "srcHash": "85751cd2429eddcb45c7685f132f1f71",
+          "alt": "Ray diagram of light passing through a rectangular glass block drawn in plain outline. An incident ray with an arrowhead comes down from the upper left and meets the top face; a vertical dashed normal is drawn at that point; inside the block the ray bends towards the normal and travels down to the bottom face, where it bends again and leaves as an arrowed ray to the lower right. Leader lines label the incident ray A, the ray inside the block B, and the dashed normal C.",
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7389,6 +7419,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "criterion", verbatim: "any named conductor", marks: 5 },
     ],
+    figure: {
+          "candId": "physics-2024-OL-paper-p10-i0",
+          "src": "/exam-figures/physics/markbank/physics-2024-OL-paper-p10-i0.png",
+          "srcHash": "7070b7aad28de06ce8e9bce2593c6f36",
+          "alt": "Left side is the Q11 stem and parts (i) to (iii) in print. Right side is a line diagram of the inside of a three-pin mains plug with its cover removed, seen face-on. The rounded triangular plug body is drawn in outline with the three pins shown as two solid black rectangles/circles at the bottom corners and the larger earth pin at the top. Inside, three insulated wires run up from a cable that enters at the bottom, pass under a screwed-down cable grip, and fan out to three screw terminals. A cylindrical cartridge fuse sits in a holder on the right of the body. Six leader lines run to labels around the drawing: bold 'A' at the top left points to the wire going to the top (earth) terminal; 'neutral' on the left points to the wire going to the left-hand terminal; 'fuse' on the right points to the cartridge; bold 'B' on the right points to the wire running to the terminal beside the fuse; 'cable grip' at the bottom left points to the screwed clamp; 'cable' at the bottom right points to the sheathed cable emerging below the plug. All labels, leader lines and the whole plug outline are inside the crop.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7397,12 +7435,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q14a-ii", topicId: "phys-1-1", conceptId: "acceleration-at-constant-velocity",
     section: "B", questionRef: "2024 OL Q14(a)(ii)",
-    stem: "520 N 520 N 1900 kg 680 N 520 N 1900 kg",
+    stem: "Newton’s three laws of motion describe the relationship between the motion of an object and the forces acting on it. A 1900 kg car is moving at 20 m s⁻¹ to the right on a horizontal road. It has balanced forces acting on it in opposite directions as shown.",
     questionText: "What is the acceleration of the car?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "0 m s–2", marks: 2 },
     ],
+    figure: {
+          "candId": "physics-2024-ol-paper-p12-i0",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-paper-p12-i0.png",
+          "srcHash": "a5069baecc3037d92a3400a57d5573d7",
+          "alt": "A 1900 kg car drawn as a box with two horizontal force arrows: 520 N acting to the left and 520 N acting to the right — the balanced-forces diagram for parts (i)-(iii).",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7425,12 +7471,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q14a-iii", topicId: "phys-1-1", conceptId: "velocity-after-constant-acceleration",
     section: "B", questionRef: "2024 OL Q14(a)(iii)",
-    stem: "520 N 520 N 1900 kg 680 N 520 N 1900 kg",
+    stem: "Newton’s three laws of motion describe the relationship between the motion of an object and the forces acting on it. A 1900 kg car is moving at 20 m s⁻¹ to the right on a horizontal road. It has balanced forces acting on it in opposite directions as shown.",
     questionText: "What is the velocity of the car 12 s later?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "20 m s–1", marks: 2 },
     ],
+    figure: {
+          "candId": "physics-2024-ol-paper-p12-i0",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-paper-p12-i0.png",
+          "srcHash": "a5069baecc3037d92a3400a57d5573d7",
+          "alt": "A 1900 kg car drawn as a box with two horizontal force arrows: 520 N acting to the left and 520 N acting to the right — the balanced-forces diagram for parts (i)-(iii).",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7481,12 +7535,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q14a-i", topicId: "phys-1-2", conceptId: "net-force-when-forces-balance",
     section: "B", questionRef: "2024 OL Q14(a)(i)",
-    stem: "520 N 520 N 1900 kg 680 N 520 N 1900 kg",
+    stem: "Newton’s three laws of motion describe the relationship between the motion of an object and the forces acting on it. A 1900 kg car is moving at 20 m s⁻¹ to the right on a horizontal road. It has balanced forces acting on it in opposite directions as shown.",
     questionText: "Calculate the net horizontal force acting on the car.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "520 – 520 = 0 N", marks: 4 },
     ],
+    figure: {
+          "candId": "physics-2024-ol-paper-p12-i0",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-paper-p12-i0.png",
+          "srcHash": "a5069baecc3037d92a3400a57d5573d7",
+          "alt": "A 1900 kg car drawn as a box with two horizontal force arrows: 520 N acting to the left and 520 N acting to the right — the balanced-forces diagram for parts (i)-(iii).",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7495,12 +7557,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q14a-v", topicId: "phys-1-2", conceptId: "net-force-when-forces-do-not-balance",
     section: "B", questionRef: "2024 OL Q14(a)(v)",
-    stem: "520 N 520 N 1900 kg 680 N 520 N 1900 kg",
+    stem: "Newton’s second law of motion states that the rate of change of momentum of an object is proportional to the net force applied to it. The same car is still moving at 20 m s⁻¹ to the right but it now has unbalanced forces acting on it as shown.",
     questionText: "Calculate the net horizontal force acting on the car.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "680 – 520 = 160 N (right)", marks: 5 },
     ],
+    figure: {
+          "candId": "physics-2024-ol-paper-p12-i1",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-paper-p12-i1.png",
+          "srcHash": "dc66d19da93dcb8a1432bbc93432f95d",
+          "alt": "The same 1900 kg car with unbalanced horizontal forces: 520 N acting to the left and 680 N acting to the right — the diagram for parts (v)-(vii).",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7509,12 +7579,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q14a-vii", topicId: "phys-1-1", conceptId: "velocity-under-an-unbalanced-force",
     section: "B", questionRef: "2024 OL Q14(a)(vii)",
-    stem: "520 N 520 N 1900 kg 680 N 520 N 1900 kg",
+    stem: "Newton’s second law of motion states that the rate of change of momentum of an object is proportional to the net force applied to it. The same car is still moving at 20 m s⁻¹ to the right but it now has unbalanced forces acting on it as shown.",
     questionText: "Calculate the velocity of the car after 12 s when the unbalanced forces are acting on the car. (15)",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "v = 20 + (0.084)(12) = 21 m s–1", marks: 5 },
     ],
+    figure: {
+          "candId": "physics-2024-ol-paper-p12-i1",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-paper-p12-i1.png",
+          "srcHash": "dc66d19da93dcb8a1432bbc93432f95d",
+          "alt": "The same 1900 kg car with unbalanced horizontal forces: 520 N acting to the left and 680 N acting to the right — the diagram for parts (v)-(vii).",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7801,6 +7879,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "6.25 7.87 8.77 9.35", marks: 4 },
     ],
+    figure: {
+          "candId": "physics-2024-ol-paper-p004-i0",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-paper-p004-i0.png",
+          "srcHash": "751043cb967980700d0aa9edfbcae6b3",
+          "alt": "Line diagram of a sonometer in side view. A long hollow wooden sound box carries a wire stretched along its top; a solid black triangular bridge stands under the wire near each end, each captioned 'bridge', and a small folded paper rider sits on the wire between them, captioned 'paper rider'. A circular tuning peg is drawn at the left end; at the right the wire passes over a pulley wheel and hangs down to a solid black block captioned 'weights' with an arrow pointing to it. Three part-lines of the question's printed parts (i)-(iii) are visible along the lower left of the crop, beside the hanging weight.",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7909,12 +7995,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2024 Ordinary Level — © State Examinations Commission.",
     id: "phys-2024-ol-q14a-vi", topicId: "phys-1-1", conceptId: "acceleration-under-an-unbalanced-force",
     section: "B", questionRef: "2024 OL Q14(a)(vi)",
-    stem: "520 N 520 N 1900 kg 680 N 520 N 1900 kg",
+    stem: "Newton’s second law of motion states that the rate of change of momentum of an object is proportional to the net force applied to it. The same car is still moving at 20 m s⁻¹ to the right but it now has unbalanced forces acting on it as shown.",
     questionText: "Calculate the acceleration of the car.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "0.084 m s–2", marks: 5 },
     ],
+    figure: {
+          "candId": "physics-2024-ol-paper-p12-i1",
+          "src": "/exam-figures/physics/markbank/physics-2024-ol-paper-p12-i1.png",
+          "srcHash": "dc66d19da93dcb8a1432bbc93432f95d",
+          "alt": "The same 1900 kg car with unbalanced horizontal forces: 520 N acting to the left and 680 N acting to the right — the diagram for parts (v)-(vii).",
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
