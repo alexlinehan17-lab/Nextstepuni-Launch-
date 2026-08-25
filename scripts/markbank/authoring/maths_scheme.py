@@ -77,6 +77,8 @@ class Scheme:
         self.path = os.path.join(SCHEMES, f'{year}-{level}.pdf')
         self.doc = pymupdf.open(self.path)
         self.units = {}
+        # key -> every roman its one scale marks, where that is more than one
+        self.spans = {}
         paper, q = 1, None
         for i, page in enumerate(self.doc):
             m = PAPER.search(page.get_text())
@@ -131,6 +133,7 @@ class Scheme:
                 # The markers that name this unit sit beside its scale, between
                 # the previous scale and the next.
                 letter = roman = None
+                romans = []
                 for y, t in left:
                     if not (lo - 4 <= y < hi):
                         continue
@@ -144,6 +147,8 @@ class Scheme:
                         # scheme sets "(a)" on one line and "(ii)" on the next,
                         # so the two have to be read together.
                         roman = a
+                        if a not in romans:
+                            romans.append(a)
                         continue
                     if letter is not None:
                         # A SECOND letter in this band is the next unit's, not
@@ -154,10 +159,20 @@ class Scheme:
                         # real Q3(c), and one of the two was dropped.
                         break
                     letter, roman = a, (b or None)
+                # One scale, several romans: the scheme heads a unit
+                # "(a) (i) & (ii)" and marks both parts together. Keeping only
+                # the last roman filed the unit under (ii) and left (i) with no
+                # scheme at all — 36 units in the 2024 Ordinary scheme alone.
+                # Key on the FIRST, and remember the span so the card can cite
+                # every part it answers.
+                if letter is not None and len(romans) > 1:
+                    roman = romans[0]
                 key = (paper, q, letter, roman)
                 if key in self.units:
                     key = (paper, q, letter, roman, n)
                 self.units[key] = (i, lo, hi)
+                if letter is not None and len(romans) > 1:
+                    self.spans[key] = list(romans)
 
     def parts(self):
         def order(k):

@@ -132,7 +132,15 @@ class Author:
         if letter:
             tail += f'({letter})'
         if roman:
-            tail += f'({roman})'
+            # One scale, several parts: the scheme heads a unit "(a) (i) & (ii)"
+            # and marks both together, so the card answers both and must say so.
+            # Citing only the first left the rest looking uncovered.
+            span = self.S.spans.get(tuple(key[:4])) if hasattr(self.S, 'spans') else None
+            if span and len(span) > 1:
+                tail += f'({span[0]})–({span[-1]})' if len(span) > 2 \
+                    else f'({span[0]}), ({span[1]})'
+            else:
+                tail += f'({roman})'
         return f'{self.year} {self.level.upper()} Paper {paper} {tail}'
 
     def _flat_scheme(self):
