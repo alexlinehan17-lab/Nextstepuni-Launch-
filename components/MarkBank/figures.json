@@ -22428,7 +22428,7 @@
  },
  "maths-2021-HL-ask-p1-q5-b": {
   "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q5-b.png",
-  "md5": "bd7135dbd2d0fabfa1cf9abc7af04850",
+  "md5": "37d2e225322b77a1471e6d60fe6af8e9",
   "alt": "The question as printed on the paper — (b) The diagram below shows 𝑡, the tangent line to ℎ(𝑥) = 2 sin(2𝑥) , where 0 ≤𝑥≤𝜋, గ at the point where 𝑥= ଺. A(0, 𝑘), where 𝑘∈ℝ, is the point where 𝑡 cuts the 𝑦-axis. Find the value of 𝑘 correct to two decimal places. ",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -23814,7 +23814,7 @@
  },
  "maths-2021-OL-ask-p2-q6": {
   "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q6.png",
-  "md5": "3b8d454b41c8f4c54f50ba8f6284f83b",
+  "md5": "623f0c4e473e8d9ed4669bac1f7eb57e",
   "alt": "The question as printed on the paper — On the diagram below showing the triangle ABC , construct the perpendicular bisector (a) (i) of the side [𝐴𝐶]. Show all your construction lines and arcs clearly. Construct the circumcircle of the given triangle 𝐴𝐵𝐶. (ii)",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -23836,8 +23836,8 @@
  },
  "maths-2021-OL-ask-p2-q6-b-i": {
   "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q6-b-i.png",
-  "md5": "2541575d19c9ccafb9167c669fdf3d75",
-  "alt": "The question as printed on the paper — The triangle 𝑃𝑄𝑅 is the image of the triangle 𝐷𝐸𝐹 under an enlargement. (b) (The diagram is not drawn to scale.) The scale factor of the enlargement, 𝑘, is 2·5. |𝐸𝐹| = 3 cm. 𝑃 𝑅 𝑄 Use the scale factor to find |𝑄𝑅|. (i)",
+  "md5": "29d6988210ff8ef0b4a57e7c470011f6",
+  "alt": "The question as printed on the paper — The triangle 𝑃𝑄𝑅 is the image of the triangle 𝐷𝐸𝐹 under an enlargement. (b) (The diagram is not drawn to scale.) The scale factor of the enlargement, 𝑘, is 2·5. |𝐸𝐹| = 3 cm. 𝑃 𝐷 𝐹 𝐸 3 cm 𝑅 𝑄 Use the scale factor to find ",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2021 OL Paper 2 Q6(b)(i)",
@@ -23946,7 +23946,7 @@
  },
  "maths-2021-OL-ask-p2-q8-b-ii": {
   "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q8-b-ii.png",
-  "md5": "060fbd40304afd8b76ed38246efaef9b",
+  "md5": "fa834dd594f8ced5935543578a209407",
   "alt": "The question as printed on the paper — The diagram on the right shows the plan of a lake. The line segment [𝑃𝑄] represents the distance from the pier, 𝑃, to the far side of the lake. 30 m 30 m At equal intervals of 10 m along this line, 20 m perpendicular mea",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -24243,7 +24243,7 @@
  },
  "maths-2022-HL-ask-p1-q6-c": {
   "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q6-c.png",
-  "md5": "b505c311e9b26a9ec10d9af481a3c48c",
+  "md5": "2e664e91f5841c942178533e2dd74a0b",
   "alt": "The question as printed on the paper — The graph of a cubic function 𝑝(𝑥) is shown in the first diagram below, for 0 ≤𝑥≤4, (c) 𝑥∈ℝ. The maximum value of 𝑝′(𝑥) in this domain is 1, and 𝑝ᇱ(0) = −3, where 𝑝′(𝑥) is the derivative of 𝑝(𝑥). Use this information to ",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -24265,7 +24265,7 @@
  },
  "maths-2022-HL-ask-p1-q7-c": {
   "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q7-c.png",
-  "md5": "39b4966d3bfe8ce92b7c39a3b0265403",
+  "md5": "c3a23e75fe76433199371f2fd081fec7",
   "alt": "The question as printed on the paper — Hannah is doing a training session. During this session, her heart-rate, ℎ(𝑥), is measured in beats per minute (BPM), where 𝑥 is the time in minutes from the start of the session, 𝑥∈ℝ. For the first 8 minutes of the sess",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -24276,7 +24276,7 @@
  },
  "maths-2022-HL-ask-p1-q7-d": {
   "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q7-d.png",
-  "md5": "5cc9c0f262c78157f0cdb21ac6cd34a1",
+  "md5": "ac322962cf59e6aae117d7b6fbb31720",
   "alt": "The question as printed on the paper — Hannah is doing a training session. During this session, her heart-rate, ℎ(𝑥), is measured in beats per minute (BPM), where 𝑥 is the time in minutes from the start of the session, 𝑥∈ℝ. For the first 8 minutes of the sess",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -24650,8 +24650,8 @@
  },
  "maths-2022-HL-ask-p2-q6-a": {
   "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q6-a.png",
-  "md5": "bea35cb09149ea82476b851d8a7ce2d4",
-  "alt": "The question as printed on the paper — Construct the circumcentre of the triangle 𝑋𝑌𝑍 shown below, using only a compass and (a) straight edge. Label the circumcentre 𝐶. Show your construction lines clearly. 𝑍 𝑋 𝐷",
+  "md5": "c749610218b796481950194800055df5",
+  "alt": "The question as printed on the paper — Construct the circumcentre of the triangle 𝑋𝑌𝑍 shown below, using only a compass and (a) straight edge. Label the circumcentre 𝐶. Show your construction lines clearly. 𝑍 𝑌 𝑋 𝐷",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2022 HL Paper 2 Q6(a)",
@@ -24804,7 +24804,7 @@
  },
  "maths-2022-HL-ask-p2-q9-a": {
   "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q9-a.png",
-  "md5": "2acf41078ab44ddd5682252fb668b266",
+  "md5": "472951f0abd101d29d19c1001b056816",
   "alt": "The question as printed on the paper — Oscar is taking some measurements and is using trigonometry to work out some angles, distances, and areas. First, Oscar takes measurements of two adjacent triangular fields, Field 1 (𝐴𝐵𝐶) and Field 2 (𝐵𝐷𝐶), as shown in t",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -24815,7 +24815,7 @@
  },
  "maths-2022-HL-ask-p2-q9-b": {
   "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q9-b.png",
-  "md5": "3ba135be2848d8613b5587c8c41966dd",
+  "md5": "7afe3634f5ff8971c29d5c9214fa6f89",
   "alt": "The question as printed on the paper — Oscar is taking some measurements and is using trigonometry to work out some angles, distances, and areas. First, Oscar takes measurements of two adjacent triangular fields, Field 1 (𝐴𝐵𝐶) and Field 2 (𝐵𝐷𝐶), as shown in t",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -24826,7 +24826,7 @@
  },
  "maths-2022-HL-ask-p2-q9-c-i": {
   "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q9-c-i.png",
-  "md5": "e3b070252ba0340b39c3160ac2b0ac46",
+  "md5": "909ca0d114f443bb651a55ecb3898f03",
   "alt": "The question as printed on the paper — Oscar is taking some measurements and is using trigonometry to work out some angles, distances, and areas. First, Oscar takes measurements of two adjacent triangular fields, Field 1 (𝐴𝐵𝐶) and Field 2 (𝐵𝐷𝐶), as shown in t",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -24837,7 +24837,7 @@
  },
  "maths-2022-HL-ask-p2-q9-c-ii": {
   "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q9-c-ii.png",
-  "md5": "5f9e1e33a05a28694a6046b897d8c499",
+  "md5": "f72247d05797071075651bd7eece700d",
   "alt": "The question as printed on the paper — Oscar is taking some measurements and is using trigonometry to work out some angles, distances, and areas. First, Oscar takes measurements of two adjacent triangular fields, Field 1 (𝐴𝐵𝐶) and Field 2 (𝐵𝐷𝐶), as shown in t",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -24848,7 +24848,7 @@
  },
  "maths-2022-HL-ask-p2-q9-d-i": {
   "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q9-d-i.png",
-  "md5": "b39cbb19718d5af93f70e4cc7f0e97c9",
+  "md5": "88608ec11b14ce855e582dece67c5e7f",
   "alt": "The question as printed on the paper — Oscar is taking some measurements and is using trigonometry to work out some angles, distances, and areas. First, Oscar takes measurements of two adjacent triangular fields, Field 1 (𝐴𝐵𝐶) and Field 2 (𝐵𝐷𝐶), as shown in t",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -24859,7 +24859,7 @@
  },
  "maths-2022-HL-ask-p2-q9-d-ii": {
   "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q9-d-ii.png",
-  "md5": "b087d85388d1cd4710f70152b28c319c",
+  "md5": "69f09325208f2dae97be08b8136eb7fd",
   "alt": "The question as printed on the paper — Oscar is taking some measurements and is using trigonometry to work out some angles, distances, and areas. First, Oscar takes measurements of two adjacent triangular fields, Field 1 (𝐴𝐵𝐶) and Field 2 (𝐵𝐷𝐶), as shown in t",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -25508,7 +25508,7 @@
  },
  "maths-2022-OL-ask-p2-q4-a": {
   "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p2-q4-a.png",
-  "md5": "e4a1269f19f4449a85662b7223a38ca6",
+  "md5": "12920e4bf5742db7263e08dc38e44493",
   "alt": "The question as printed on the paper — (a) A group of students sat an exam. Each student was given a grade. The following table shows how many students got each grade. Grade Distinction High Merit Merit Achieved 8 12 39 13 Number of students Complete the pie ",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -25519,7 +25519,7 @@
  },
  "maths-2022-OL-ask-p2-q4-b-i": {
   "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p2-q4-b-i.png",
-  "md5": "c97a7c682060a9e4692ed54accd7e6d4",
+  "md5": "3ca648df7832c034f95094b8e47324d0",
   "alt": "The question as printed on the paper — (b) A large group of people took a reading test. The scores were normally distributed, with a mean of 100 and a standard deviation of 20. 100 Use the empirical rule to answer parts (b)(i) and (b)(ii). What percentage of ",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -25761,7 +25761,7 @@
  },
  "maths-2022-OL-ask-p2-q8-d": {
   "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p2-q8-d.png",
-  "md5": "cb8673157372abd5ea198dc9e38b341d",
+  "md5": "79d2d65d792ceae421d8b1328dc5fe4a",
   "alt": "The question as printed on the paper — The top of a particular lighthouse is in the shape of a hemisphere on top of a cylinder. The hemisphere and the cylinder both have a radius of 3 m. ℎ 3 m The top of the Fastnet lighthouse, 𝐹, is 49 m above sea level. (d)",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -25805,7 +25805,7 @@
  },
  "maths-2022-OL-ask-p2-q9-e-i": {
   "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p2-q9-e-i.png",
-  "md5": "8bd9b64c5b5712b8c3a3bb0935c96972",
+  "md5": "603b6a6449b6b80e8b9a94ada187ab7e",
   "alt": "The question as printed on the paper — Seán has built a shed. The diagrams below show the dimensions of Seán’s shed. The shed is in the shape of a prism. Its front face is in the shape of a triangle on top of a rectangle. Its highest point is directly above t",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -25816,7 +25816,7 @@
  },
  "maths-2022-OL-ask-p2-q9-e-ii": {
   "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p2-q9-e-ii.png",
-  "md5": "3e2bd2ad854ade493446f22f5ce0426b",
+  "md5": "1d2e465a0d10f38bef9775ad3ea426a9",
   "alt": "The question as printed on the paper — Seán has built a shed. The diagrams below show the dimensions of Seán’s shed. The shed is in the shape of a prism. Its front face is in the shape of a triangle on top of a rectangle. Its highest point is directly above t",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -26025,7 +26025,7 @@
  },
  "maths-2023-HL-ask-p1-q4-c-iii": {
   "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q4-c-iii.png",
-  "md5": "1b94b4871be59556df0dd1c19f79e1db",
+  "md5": "dd3b4145e73d9073b9cff843849e73ee",
   "alt": "The question as printed on the paper — In this question, 𝑖ଶ= −1. The Argand diagram below shows the complex number 𝑢= 𝑎+ 𝑏𝑖, where 𝑎, 𝑏∈ℝ. (c) Im 𝑢= 𝑎+ 𝑏𝑖 Re Write the complex numbers 𝑖𝑢 and 𝑖𝑢 in their simplest form, in terms of 𝑎 and 𝑏, (i) where 𝑖𝑢 is the ",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -26509,7 +26509,7 @@
  },
  "maths-2023-HL-ask-p2-q7-b": {
   "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q7-b.png",
-  "md5": "4b75017a468bbd81d30838563f45797a",
+  "md5": "fbb7c3b51be713bc73c330620c1b2c31",
   "alt": "The question as printed on the paper — Olga is a cyclist. Olga wants to measure the vertical height of a hill. The point 𝐻 is at the top of the hill. (b) The points 𝑅 and 𝑃 are 20 m apart on horizontal ground, at the bottom of the hill. Olga measures the angl",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -26520,7 +26520,7 @@
  },
  "maths-2023-HL-ask-p2-q7-c": {
   "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q7-c.png",
-  "md5": "1bc26656a4edef9f8305a997ce3a3a97",
+  "md5": "9904c2c8e2782f939f9b3e8b97171a7c",
   "alt": "The question as printed on the paper — Olga is a cyclist. Olga wants to measure the vertical height of a hill. The point 𝐻 is at the top of the hill. (b) The points 𝑅 and 𝑃 are 20 m apart on horizontal ground, at the bottom of the hill. Olga measures the angl",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -27037,7 +27037,7 @@
  },
  "maths-2023-OL-ask-p1-q9-a-i": {
   "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q9-a-i.png",
-  "md5": "35cc33ceb6990fd474a7ba79089b44bb",
+  "md5": "1433e7803f32d346cb4f72ab060a4896",
   "alt": "The question as printed on the paper — The diagram below shows the actual daily number of new cases of a disease, from day 𝑡= 0 (a) to day 𝑡= 25. It also shows the number of cases according to a mathematical model over this period of time. actual number model",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -27048,7 +27048,7 @@
  },
  "maths-2023-OL-ask-p1-q9-a-ii": {
   "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q9-a-ii.png",
-  "md5": "395ad3720c79a8974ba17574b78fa095",
+  "md5": "fd7061b4cc533fea8f51d053e545544e",
   "alt": "The question as printed on the paper — The diagram below shows the actual daily number of new cases of a disease, from day 𝑡= 0 (a) to day 𝑡= 25. It also shows the number of cases according to a mathematical model over this period of time. actual number model",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -27059,7 +27059,7 @@
  },
  "maths-2023-OL-ask-p1-q9-a-iii": {
   "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q9-a-iii.png",
-  "md5": "d2f5c895c73fbcb99396ab9762018ae1",
+  "md5": "d8fb5c062f5a1b444c734774268169ee",
   "alt": "The question as printed on the paper — The diagram below shows the actual daily number of new cases of a disease, from day 𝑡= 0 (a) to day 𝑡= 25. It also shows the number of cases according to a mathematical model over this period of time. actual number model",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -27070,7 +27070,7 @@
  },
  "maths-2023-OL-ask-p1-q9-a-iv": {
   "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q9-a-iv.png",
-  "md5": "24b5c77eaa6fd338b798b920c458f1e7",
+  "md5": "0307a436c7058f80ce277a4d3e717b50",
   "alt": "The question as printed on the paper — The diagram below shows the actual daily number of new cases of a disease, from day 𝑡= 0 (a) to day 𝑡= 25. It also shows the number of cases according to a mathematical model over this period of time. actual number model",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -27345,7 +27345,7 @@
  },
  "maths-2023-OL-ask-p2-q5-a": {
   "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q5-a.png",
-  "md5": "4cdafef54d6a2162cab54b45a0525c97",
+  "md5": "ff6102f7816c646c747fbe3af1ef01c6",
   "alt": "The question as printed on the paper — The diagram below (not to scale) shows a square with sides of length 12 cm. The circle 𝑐 is inside the square, and touches the four sides of the square. The circle 𝑘 is outside the square, and goes through the four corne",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -27356,7 +27356,7 @@
  },
  "maths-2023-OL-ask-p2-q5-c": {
   "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q5-c.png",
-  "md5": "8af51e6339baad66b2a11407491185a1",
+  "md5": "6e5dc342a8f6db20656208a975cc2fe2",
   "alt": "The question as printed on the paper — The diagram below (not to scale) shows a square with sides of length 12 cm. The circle 𝑐 is inside the square, and touches the four sides of the square. The circle 𝑘 is outside the square, and goes through the four corne",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -27367,7 +27367,7 @@
  },
  "maths-2023-OL-ask-p2-q5-d": {
   "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q5-d.png",
-  "md5": "d18b090f83ede230260ec577440d7eb5",
+  "md5": "a742a659ca39db9ddc951a12b81ea13d",
   "alt": "The question as printed on the paper — The diagram below (not to scale) shows a square with sides of length 12 cm. The circle 𝑐 is inside the square, and touches the four sides of the square. The circle 𝑘 is outside the square, and goes through the four corne",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -27378,7 +27378,7 @@
  },
  "maths-2023-OL-ask-p2-q5-e": {
   "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q5-e.png",
-  "md5": "b6cd5ee9b12afb28b3696bab17d59d4a",
+  "md5": "2047e0bcda72e470a9f648ab094ed0ec",
   "alt": "The question as printed on the paper — The diagram below (not to scale) shows a square with sides of length 12 cm. The circle 𝑐 is inside the square, and touches the four sides of the square. The circle 𝑘 is outside the square, and goes through the four corne",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -27400,8 +27400,8 @@
  },
  "maths-2023-OL-ask-p2-q6-b": {
   "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q6-b.png",
-  "md5": "aad7a3c8ba7980fc49399b64ea256c92",
-  "alt": "The question as printed on the paper — (b) The diagram below shows another parallelogram (not to scale). The sizes of three of the angles are given, where 𝑥, 𝑦∈ℝ. Use the information in the diagram to work out the value of 𝑥 and the value of 𝑦.",
+  "md5": "f42d9bfba1516148670de20cb2b98fe5",
+  "alt": "The question as printed on the paper — (b) The diagram below shows another parallelogram (not to scale). The sizes of three of the angles are given, where 𝑥, 𝑦∈ℝ. Use the information in the diagram to work out the value of 𝑥 and the value of 𝑦. (𝑥+ 3𝑦)° (2𝑥−3",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2023 OL Paper 2 Q6(b)",
@@ -27466,7 +27466,7 @@
  },
  "maths-2023-OL-ask-p2-q7-b": {
   "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q7-b.png",
-  "md5": "500c1b9496d7e1cc0dca8735f2c7fd87",
+  "md5": "c3cf2f02a7de63c049701fc7d524ec70",
   "alt": "The question as printed on the paper — Olga is a cyclist. She is measuring how long and how steep different roads are. Olga wants to measure the distance between two points, 𝑅 and 𝑂. (b) She marks a point 𝑃 on the ground, so that the distance from 𝑅 to 𝑃 is 2",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -27488,8 +27488,8 @@
  },
  "maths-2023-OL-ask-p2-q8-a": {
   "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q8-a.png",
-  "md5": "85e73787e834b5639589fa94eecd6c51",
-  "alt": "The question as printed on the paper — A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2∙4 m and an internal depth of 0∙9 m. 2∙4 m (a) The instruction manual recommend",
+  "md5": "100f9205c581bb3eb4439e765133fe8f",
+  "alt": "The question as printed on the paper — A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2∙4 m and an internal depth of 0∙9 m. 0∙9 m 2∙4 m (a) The instruction manual rec",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2023 OL Paper 2 Q8(a)",
@@ -27499,8 +27499,8 @@
  },
  "maths-2023-OL-ask-p2-q8-b-i": {
   "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q8-b-i.png",
-  "md5": "d7774baa63971cdaa4eb601e5d36a52c",
-  "alt": "The question as printed on the paper — A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2∙4 m and an internal depth of 0∙9 m. 2∙4 m The family buys 3 pool seats. Each p",
+  "md5": "e55e94c7a126f00c0cc6e94b28d2898e",
+  "alt": "The question as printed on the paper — A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2∙4 m and an internal depth of 0∙9 m. 0∙9 m 2∙4 m The family buys 3 pool seats. ",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2023 OL Paper 2 Q8(b)(i)",
@@ -27510,8 +27510,8 @@
  },
  "maths-2023-OL-ask-p2-q8-b-ii": {
   "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q8-b-ii.png",
-  "md5": "5a53aea99543597a7170c411c87b0d65",
-  "alt": "The question as printed on the paper — A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2∙4 m and an internal depth of 0∙9 m. 2∙4 m The family buys 3 pool seats. Each p",
+  "md5": "be457eccad081e7783a2c988e1ce38d1",
+  "alt": "The question as printed on the paper — A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2∙4 m and an internal depth of 0∙9 m. 0∙9 m 2∙4 m The family buys 3 pool seats. ",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2023 OL Paper 2 Q8(b)(ii)",
@@ -27521,8 +27521,8 @@
  },
  "maths-2023-OL-ask-p2-q8-c-i": {
   "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q8-c-i.png",
-  "md5": "9806afa7b1414721a3f3d32b2c5ea069",
-  "alt": "The question as printed on the paper — A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2∙4 m and an internal depth of 0∙9 m. 2∙4 m (c) The family also buys a cover for",
+  "md5": "da0cec401144965bab6a85e28492ebe5",
+  "alt": "The question as printed on the paper — A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2∙4 m and an internal depth of 0∙9 m. 0∙9 m 2∙4 m (c) The family also buys a cov",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2023 OL Paper 2 Q8(c)(i)",
@@ -27532,8 +27532,8 @@
  },
  "maths-2023-OL-ask-p2-q8-c-ii": {
   "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q8-c-ii.png",
-  "md5": "b2ffea300c8abb5f1a289bd2221ca52c",
-  "alt": "The question as printed on the paper — A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2∙4 m and an internal depth of 0∙9 m. 2∙4 m (c) The family also buys a cover for",
+  "md5": "97c1197cc11b5e66eaa9324520b0576d",
+  "alt": "The question as printed on the paper — A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2∙4 m and an internal depth of 0∙9 m. 0∙9 m 2∙4 m (c) The family also buys a cov",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2023 OL Paper 2 Q8(c)(ii)",
@@ -27543,8 +27543,8 @@
  },
  "maths-2023-OL-ask-p2-q8-c-iii": {
   "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q8-c-iii.png",
-  "md5": "c272e22afb67eb8b9881c45d964453fa",
-  "alt": "The question as printed on the paper — A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2∙4 m and an internal depth of 0∙9 m. 2∙4 m (c) The family also buys a cover for",
+  "md5": "ade2c94348aeef55d1385e16f8b73718",
+  "alt": "The question as printed on the paper — A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2∙4 m and an internal depth of 0∙9 m. 0∙9 m 2∙4 m (c) The family also buys a cov",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2023 OL Paper 2 Q8(c)(iii)",
@@ -28093,7 +28093,7 @@
  },
  "maths-2024-HL-ask-p1-q10-c-i": {
   "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q10-c-i.png",
-  "md5": "cd46d9f22802152dfefdb8bd3d28f668",
+  "md5": "0046d6e69cce421c19f95d11c6eaf982",
   "alt": "The question as printed on the paper — A company grows and sells plants. (c) The logo for the company is shown on the co-ordinate diagram below. The logo is the region enclosed by three curves, defined by the following functions 𝑐𝑐, 𝑠𝑠, and 𝑘𝑘 : 𝑐𝑐(𝑥𝑥) = 𝑥𝑥2 ",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -28104,7 +28104,7 @@
  },
  "maths-2024-HL-ask-p1-q10-c-ii": {
   "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q10-c-ii.png",
-  "md5": "20d4ad9962549f515a519d3b7092c429",
+  "md5": "0904410c7b5d370da7b40c8ce7962595",
   "alt": "The question as printed on the paper — A company grows and sells plants. (c) The logo for the company is shown on the co-ordinate diagram below. The logo is the region enclosed by three curves, defined by the following functions 𝑐𝑐, 𝑠𝑠, and 𝑘𝑘 : 𝑐𝑐(𝑥𝑥) = 𝑥𝑥2 ",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -28390,7 +28390,7 @@
  },
  "maths-2024-HL-ask-p2-q8-c-ii": {
   "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q8-c-ii.png",
-  "md5": "91583be2fcbf1cd0620b22ea8920dc70",
+  "md5": "e097cd7268dfad915b3bef11f87a7ab1",
   "alt": "The question as printed on the paper — (c) Another ornament is made of two cones inscribed in a sphere. The top cone is upright; the bottom cone is inverted. The cones have the same base. A vertical cross-section of the ornament, taken through the centre of t",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -28401,7 +28401,7 @@
  },
  "maths-2024-HL-ask-p2-q8-c-iii": {
   "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q8-c-iii.png",
-  "md5": "ee3e221981a961f883878b1ba6b4a8ed",
+  "md5": "f7b95c48c74ba82350694b0154235573",
   "alt": "The question as printed on the paper — (c) Another ornament is made of two cones inscribed in a sphere. The top cone is upright; the bottom cone is inverted. The cones have the same base. A vertical cross-section of the ornament, taken through the centre of t",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -28412,7 +28412,7 @@
  },
  "maths-2024-HL-ask-p2-q8-c-iv": {
   "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q8-c-iv.png",
-  "md5": "2a91567e3b8c087d1b12c2897209b55b",
+  "md5": "b1c91c7469f30886e9acdf3fbeb183e0",
   "alt": "The question as printed on the paper — (c) Another ornament is made of two cones inscribed in a sphere. The top cone is upright; the bottom cone is inverted. The cones have the same base. A vertical cross-section of the ornament, taken through the centre of t",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -29017,7 +29017,7 @@
  },
  "maths-2024-OL-ask-p2-q5-a-i": {
   "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q5-a-i.png",
-  "md5": "87f4a0296cc051534314068c4b457b10",
+  "md5": "b4b8dd4ae8f58062e56e6667076339f6",
   "alt": "The question as printed on the paper — (a) A large group of 17-year-olds were asked how many hours of sleep they got on the previous night. The results were normally distributed. The middle 𝟔𝟔𝟔𝟔% slept between 7∙2 and 8∙4 hours, as shown on the diagram below.",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -29028,7 +29028,7 @@
  },
  "maths-2024-OL-ask-p2-q5-a-ii": {
   "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q5-a-ii.png",
-  "md5": "a2d79066f4a4aa61828b790e00ba112f",
+  "md5": "6d6096265c8d269153f807acf289ac17",
   "alt": "The question as printed on the paper — (a) A large group of 17-year-olds were asked how many hours of sleep they got on the previous night. The results were normally distributed. The middle 𝟔𝟔𝟔𝟔% slept between 7∙2 and 8∙4 hours, as shown on the diagram below.",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -30183,7 +30183,7 @@
  },
  "maths-2025-HL-ask-p2-q10-a-i": {
   "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q10-a-i.png",
-  "md5": "d637b13a92833b05929323c85a91ff57",
+  "md5": "77d2c28d6eb171626f81fc503f1dc77d",
   "alt": "The question as printed on the paper — A particular test is used to measure how well students around the world can do maths problems. (a) Worldwide, scores on this test are normally distributed with a mean score of 400 and a standard deviation of 60. (i) The ",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -30601,8 +30601,8 @@
  },
  "maths-2025-OL-ask-p1-q10-a-i": {
   "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q10-a-i.png",
-  "md5": "4664fe9d60233dc09529075d0d9a3c96",
-  "alt": "The question as printed on the paper — (a) A factory makes closed boxes. The lengths of the sides of one of the boxes are shown in the diagram below. 70 cm (i) Draw a scaled diagram of a net of the box in the grid below. Use the scale 1: 10. The length of eac",
+  "md5": "5197a8fa6a16ae2c162bf3984f86b41c",
+  "alt": "The question as printed on the paper — (a) A factory makes closed boxes. The lengths of the sides of one of the boxes are shown in the diagram below. 20 cm 30 cm 70 cm (i) Draw a scaled diagram of a net of the box in the grid below. Use the scale 1: 10. The l",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2025 OL Paper 1 Q10(a)(i)",
@@ -30612,8 +30612,8 @@
  },
  "maths-2025-OL-ask-p1-q10-a-ii": {
   "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q10-a-ii.png",
-  "md5": "02c9bfb0a4385e294c59794dc4c1534f",
-  "alt": "The question as printed on the paper — (a) A factory makes closed boxes. The lengths of the sides of one of the boxes are shown in the diagram below. 70 cm (i) Draw a scaled diagram of a net of the box in the grid below. Use the scale 1: 10. The length of eac",
+  "md5": "b493f51653978468e8b3617908a97714",
+  "alt": "The question as printed on the paper — (a) A factory makes closed boxes. The lengths of the sides of one of the boxes are shown in the diagram below. 20 cm 30 cm 70 cm (i) Draw a scaled diagram of a net of the box in the grid below. Use the scale 1: 10. The l",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2025 OL Paper 1 Q10(a)(ii)",
@@ -30623,8 +30623,8 @@
  },
  "maths-2025-OL-ask-p1-q10-a-iii": {
   "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q10-a-iii.png",
-  "md5": "c67d009f968557042100eb5498e719fe",
-  "alt": "The question as printed on the paper — (a) A factory makes closed boxes. The lengths of the sides of one of the boxes are shown in the diagram below. 70 cm (i) Draw a scaled diagram of a net of the box in the grid below. Use the scale 1: 10. The length of eac",
+  "md5": "f37bc8cbf16a215581991bfafe069d19",
+  "alt": "The question as printed on the paper — (a) A factory makes closed boxes. The lengths of the sides of one of the boxes are shown in the diagram below. 20 cm 30 cm 70 cm (i) Draw a scaled diagram of a net of the box in the grid below. Use the scale 1: 10. The l",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2025 OL Paper 1 Q10(a)(iii)",
@@ -30843,7 +30843,7 @@
  },
  "maths-2025-OL-ask-p2-q6-a-i": {
   "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q6-a-i.png",
-  "md5": "f93f706e22f923774805b9c79dd22556",
+  "md5": "d70cea67b64b436098739f03a7a024db",
   "alt": "The question as printed on the paper — (a) The marks in an exam were normally distributed, as shown in the diagram below. The mean mark was 62 and the standard deviation was 14. Use the empirical rule to answer parts (a)(i), (ii) and (iii). (i) Use the mean a",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -30854,7 +30854,7 @@
  },
  "maths-2025-OL-ask-p2-q6-a-iii": {
   "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q6-a-iii.png",
-  "md5": "6cb561e06424c1b05f6e7f01631e72a4",
+  "md5": "f88fc4a5c3268f10df2d21ff75ef72ff",
   "alt": "The question as printed on the paper — (a) The marks in an exam were normally distributed, as shown in the diagram below. The mean mark was 62 and the standard deviation was 14. Use the empirical rule to answer parts (a)(i), (ii) and (iii). (i) Use the mean a",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -30953,7 +30953,7 @@
  },
  "maths-2025-OL-ask-p2-q8-a-ii": {
   "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q8-a-ii.png",
-  "md5": "02357917382300d579644db311446c95",
+  "md5": "7f7374fb20ba99e422a7dc4265e14897",
   "alt": "The question as printed on the paper — (a) The table below shows the number of new private cars sold in 2023 (to the nearest hundred) broken down by fuel type. It also shows the percentage of these cars that were of each fuel type (correct to 2 decimal places",
   "lettersVisible": [],
   "labelMeanings": [],

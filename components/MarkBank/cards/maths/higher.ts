@@ -432,7 +432,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2021-HL-ask-p1-q5-b",
           "src": "/exam-figures/maths/markbank/maths-2021-HL-ask-p1-q5-b.png",
-          "srcHash": "bd7135dbd2d0fabfa1cf9abc7af04850",
+          "srcHash": "37d2e225322b77a1471e6d60fe6af8e9",
           "alt": "The question as printed on the paper — (b) The diagram below shows 𝑡, the tangent line to ℎ(𝑥) = 2 sin(2𝑥) , where 0 ≤𝑥≤𝜋, గ at the point where 𝑥= ଺. A(0, 𝑘), where 𝑘∈ℝ, is the point where 𝑡 cuts the 𝑦-axis. Find the value of 𝑘 correct to two decimal places. ",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Higher Level — © State Examinations Commission"
@@ -752,7 +752,7 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2021 Higher Level — © State Examinations Commission.",
-    id: "maths-2021-hl-p1-q8-a-i", topicId: "maths-5-1", conceptId: "part",
+    id: "maths-2021-hl-p1-q8-a-i", topicId: "maths-5-2", conceptId: "part",
     section: "B", questionRef: "2021 HL Paper 1 Q8(a)(i)",
     questionText: "Use h(10) = 30 to show that p = 3·6",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -2732,7 +2732,7 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p1-q3-a-i", topicId: "maths-2-2", conceptId: "part",
+    id: "maths-2022-hl-p1-q3-a-i", topicId: "maths-3-1", conceptId: "part",
     section: "B", questionRef: "2022 HL Paper 1 Q3(a)(i)",
     questionText: "Show that z−iz = 8 −4i",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -2762,7 +2762,7 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p1-q3-a-ii", topicId: "maths-2-2", conceptId: "part",
+    id: "maths-2022-hl-p1-q3-a-ii", topicId: "maths-3-1", conceptId: "part",
     section: "B", questionRef: "2022 HL Paper 1 Q3(a)(ii)",
     questionText: "Show that |z|² + |iz|² = |z−iz|²",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
@@ -3102,7 +3102,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q6-c",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q6-c.png",
-          "srcHash": "b505c311e9b26a9ec10d9af481a3c48c",
+          "srcHash": "2e664e91f5841c942178533e2dd74a0b",
           "alt": "The question as printed on the paper — The graph of a cubic function 𝑝(𝑥) is shown in the first diagram below, for 0 ≤𝑥≤4, (c) 𝑥∈ℝ. The maximum value of 𝑝′(𝑥) in this domain is 1, and 𝑝ᇱ(0) = −3, where 𝑝′(𝑥) is the derivative of 𝑝(𝑥). Use this information to ",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
@@ -3162,7 +3162,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q7-c",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q7-c.png",
-          "srcHash": "39b4966d3bfe8ce92b7c39a3b0265403",
+          "srcHash": "c3a23e75fe76433199371f2fd081fec7",
           "alt": "The question as printed on the paper — Hannah is doing a training session. During this session, her heart-rate, ℎ(𝑥), is measured in beats per minute (BPM), where 𝑥 is the time in minutes from the start of the session, 𝑥∈ℝ. For the first 8 minutes of the sess",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
@@ -3192,7 +3192,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2022-HL-ask-p1-q7-d",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p1-q7-d.png",
-          "srcHash": "5cc9c0f262c78157f0cdb21ac6cd34a1",
+          "srcHash": "ac322962cf59e6aae117d7b6fbb31720",
           "alt": "The question as printed on the paper — Hannah is doing a training session. During this session, her heart-rate, ℎ(𝑥), is measured in beats per minute (BPM), where 𝑥 is the time in minutes from the start of the session, 𝑥∈ℝ. For the first 8 minutes of the sess",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
@@ -4212,8 +4212,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q6-a",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q6-a.png",
-          "srcHash": "bea35cb09149ea82476b851d8a7ce2d4",
-          "alt": "The question as printed on the paper — Construct the circumcentre of the triangle 𝑋𝑌𝑍 shown below, using only a compass and (a) straight edge. Label the circumcentre 𝐶. Show your construction lines clearly. 𝑍 𝑋 𝐷",
+          "srcHash": "c749610218b796481950194800055df5",
+          "alt": "The question as printed on the paper — Construct the circumcentre of the triangle 𝑋𝑌𝑍 shown below, using only a compass and (a) straight edge. Label the circumcentre 𝐶. Show your construction lines clearly. 𝑍 𝑌 𝑋 𝐷",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
     },
@@ -4472,7 +4472,7 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Higher Level — © State Examinations Commission.",
-    id: "maths-2022-hl-p2-q8-a-iv", topicId: "maths-1-2", conceptId: "based-data-given-would-you-more",
+    id: "maths-2022-hl-p2-q8-a-iv", topicId: "maths-1-6", conceptId: "based-data-given-would-you-more",
     section: "B", questionRef: "2022 HL Paper 2 Q8(a)(iv)",
     questionText: "(iv) Based on the data given, would you be more confident in the value you estimated for K or for L? Give a reason for your answer",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -4602,7 +4602,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q9-a",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q9-a.png",
-          "srcHash": "2acf41078ab44ddd5682252fb668b266",
+          "srcHash": "472951f0abd101d29d19c1001b056816",
           "alt": "The question as printed on the paper — Oscar is taking some measurements and is using trigonometry to work out some angles, distances, and areas. First, Oscar takes measurements of two adjacent triangular fields, Field 1 (𝐴𝐵𝐶) and Field 2 (𝐵𝐷𝐶), as shown in t",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
@@ -4632,7 +4632,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q9-b",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q9-b.png",
-          "srcHash": "3ba135be2848d8613b5587c8c41966dd",
+          "srcHash": "7afe3634f5ff8971c29d5c9214fa6f89",
           "alt": "The question as printed on the paper — Oscar is taking some measurements and is using trigonometry to work out some angles, distances, and areas. First, Oscar takes measurements of two adjacent triangular fields, Field 1 (𝐴𝐵𝐶) and Field 2 (𝐵𝐷𝐶), as shown in t",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
@@ -4662,7 +4662,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q9-c-i",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q9-c-i.png",
-          "srcHash": "e3b070252ba0340b39c3160ac2b0ac46",
+          "srcHash": "909ca0d114f443bb651a55ecb3898f03",
           "alt": "The question as printed on the paper — Oscar is taking some measurements and is using trigonometry to work out some angles, distances, and areas. First, Oscar takes measurements of two adjacent triangular fields, Field 1 (𝐴𝐵𝐶) and Field 2 (𝐵𝐷𝐶), as shown in t",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
@@ -4692,7 +4692,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q9-c-ii",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q9-c-ii.png",
-          "srcHash": "5f9e1e33a05a28694a6046b897d8c499",
+          "srcHash": "f72247d05797071075651bd7eece700d",
           "alt": "The question as printed on the paper — Oscar is taking some measurements and is using trigonometry to work out some angles, distances, and areas. First, Oscar takes measurements of two adjacent triangular fields, Field 1 (𝐴𝐵𝐶) and Field 2 (𝐵𝐷𝐶), as shown in t",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
@@ -4722,7 +4722,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q9-d-i",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q9-d-i.png",
-          "srcHash": "b39cbb19718d5af93f70e4cc7f0e97c9",
+          "srcHash": "88608ec11b14ce855e582dece67c5e7f",
           "alt": "The question as printed on the paper — Oscar is taking some measurements and is using trigonometry to work out some angles, distances, and areas. First, Oscar takes measurements of two adjacent triangular fields, Field 1 (𝐴𝐵𝐶) and Field 2 (𝐵𝐷𝐶), as shown in t",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
@@ -4752,7 +4752,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2022-HL-ask-p2-q9-d-ii",
           "src": "/exam-figures/maths/markbank/maths-2022-HL-ask-p2-q9-d-ii.png",
-          "srcHash": "b087d85388d1cd4710f70152b28c319c",
+          "srcHash": "69f09325208f2dae97be08b8136eb7fd",
           "alt": "The question as printed on the paper — Oscar is taking some measurements and is using trigonometry to work out some angles, distances, and areas. First, Oscar takes measurements of two adjacent triangular fields, Field 1 (𝐴𝐵𝐶) and Field 2 (𝐵𝐷𝐶), as shown in t",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Higher Level — © State Examinations Commission"
@@ -5262,7 +5262,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2023-HL-ask-p1-q4-c-iii",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q4-c-iii.png",
-          "srcHash": "1b94b4871be59556df0dd1c19f79e1db",
+          "srcHash": "dd3b4145e73d9073b9cff843849e73ee",
           "alt": "The question as printed on the paper — In this question, 𝑖ଶ= −1. The Argand diagram below shows the complex number 𝑢= 𝑎+ 𝑏𝑖, where 𝑎, 𝑏∈ℝ. (c) Im 𝑢= 𝑎+ 𝑏𝑖 Re Write the complex numbers 𝑖𝑢 and 𝑖𝑢 in their simplest form, in terms of 𝑎 and 𝑏, (i) where 𝑖𝑢 is the ",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
@@ -6490,7 +6490,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q7-b",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q7-b.png",
-          "srcHash": "4b75017a468bbd81d30838563f45797a",
+          "srcHash": "fbb7c3b51be713bc73c330620c1b2c31",
           "alt": "The question as printed on the paper — Olga is a cyclist. Olga wants to measure the vertical height of a hill. The point 𝐻 is at the top of the hill. (b) The points 𝑅 and 𝑃 are 20 m apart on horizontal ground, at the bottom of the hill. Olga measures the angl",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
@@ -6520,7 +6520,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2023-HL-ask-p2-q7-c",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p2-q7-c.png",
-          "srcHash": "1bc26656a4edef9f8305a997ce3a3a97",
+          "srcHash": "9904c2c8e2782f939f9b3e8b97171a7c",
           "alt": "The question as printed on the paper — Olga is a cyclist. Olga wants to measure the vertical height of a hill. The point 𝐻 is at the top of the hill. (b) The points 𝑅 and 𝑃 are 20 m apart on horizontal ground, at the bottom of the hill. Olga measures the angl",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
@@ -7470,7 +7470,7 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p1-q5-c-ii", topicId: "maths-3-1", conceptId: "first-value-which",
+    id: "maths-2024-hl-p1-q5-c-ii", topicId: "maths-4-1", conceptId: "first-value-which",
     section: "B", questionRef: "2024 HL Paper 1 Q5(c)(ii)",
     questionText: "Find the first value of n for which Fₙ = 0",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 8, 11, 13, 20)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 20,
@@ -8010,7 +8010,7 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Higher Level — © State Examinations Commission.",
-    id: "maths-2024-hl-p1-q10-a-i", topicId: "maths-3-1", conceptId: "estimate-height-water-spinach-plant-after",
+    id: "maths-2024-hl-p1-q10-a-i", topicId: "maths-5-2", conceptId: "estimate-height-water-spinach-plant-after",
     section: "B", questionRef: "2024 HL Paper 1 Q10(a)(i)",
     questionText: "Use W(x) to estimate the height of a water spinach plant after 15 days. Give your answer correct to the nearest mm",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -8110,7 +8110,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q10-c-i",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q10-c-i.png",
-          "srcHash": "cd46d9f22802152dfefdb8bd3d28f668",
+          "srcHash": "0046d6e69cce421c19f95d11c6eaf982",
           "alt": "The question as printed on the paper — A company grows and sells plants. (c) The logo for the company is shown on the co-ordinate diagram below. The logo is the region enclosed by three curves, defined by the following functions 𝑐𝑐, 𝑠𝑠, and 𝑘𝑘 : 𝑐𝑐(𝑥𝑥) = 𝑥𝑥2 ",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
@@ -8140,7 +8140,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q10-c-ii",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q10-c-ii.png",
-          "srcHash": "20d4ad9962549f515a519d3b7092c429",
+          "srcHash": "0904410c7b5d370da7b40c8ce7962595",
           "alt": "The question as printed on the paper — A company grows and sells plants. (c) The logo for the company is shown on the co-ordinate diagram below. The logo is the region enclosed by three curves, defined by the following functions 𝑐𝑐, 𝑠𝑠, and 𝑘𝑘 : 𝑐𝑐(𝑥𝑥) = 𝑥𝑥2 ",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
@@ -8920,7 +8920,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q8-c-ii",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q8-c-ii.png",
-          "srcHash": "91583be2fcbf1cd0620b22ea8920dc70",
+          "srcHash": "e097cd7268dfad915b3bef11f87a7ab1",
           "alt": "The question as printed on the paper — (c) Another ornament is made of two cones inscribed in a sphere. The top cone is upright; the bottom cone is inverted. The cones have the same base. A vertical cross-section of the ornament, taken through the centre of t",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
@@ -8950,7 +8950,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q8-c-iii",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q8-c-iii.png",
-          "srcHash": "ee3e221981a961f883878b1ba6b4a8ed",
+          "srcHash": "f7b95c48c74ba82350694b0154235573",
           "alt": "The question as printed on the paper — (c) Another ornament is made of two cones inscribed in a sphere. The top cone is upright; the bottom cone is inverted. The cones have the same base. A vertical cross-section of the ornament, taken through the centre of t",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
@@ -8980,7 +8980,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2024-HL-ask-p2-q8-c-iv",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q8-c-iv.png",
-          "srcHash": "2a91567e3b8c087d1b12c2897209b55b",
+          "srcHash": "b1c91c7469f30886e9acdf3fbeb183e0",
           "alt": "The question as printed on the paper — (c) Another ornament is made of two cones inscribed in a sphere. The top cone is upright; the bottom cone is inverted. The cones have the same base. A vertical cross-section of the ornament, taken through the centre of t",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
@@ -11560,7 +11560,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q10-a-i",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p2-q10-a-i.png",
-          "srcHash": "d637b13a92833b05929323c85a91ff57",
+          "srcHash": "77d2c28d6eb171626f81fc503f1dc77d",
           "alt": "The question as printed on the paper — A particular test is used to measure how well students around the world can do maths problems. (a) Worldwide, scores on this test are normally distributed with a mean score of 400 and a standard deviation of 60. (i) The ",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission"

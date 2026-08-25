@@ -991,7 +991,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2021 OL Paper 2 Q6(b)(i)",
-  "description": "The question as printed on the paper \u2014 The triangle \ud835\udc43\ud835\udc44\ud835\udc45 is the image of the triangle \ud835\udc37\ud835\udc38\ud835\udc39 under an enlargement. (b) (The diagram is not drawn to scale.) The scale factor of the enlargement, \ud835\udc58, is 2\u00b75. |\ud835\udc38\ud835\udc39| = 3 cm. \ud835\udc43 \ud835\udc45 \ud835\udc44 Use the scale factor to find |\ud835\udc44\ud835\udc45|. (i)"
+  "description": "The question as printed on the paper \u2014 The triangle \ud835\udc43\ud835\udc44\ud835\udc45 is the image of the triangle \ud835\udc37\ud835\udc38\ud835\udc39 under an enlargement. (b) (The diagram is not drawn to scale.) The scale factor of the enlargement, \ud835\udc58, is 2\u00b75. |\ud835\udc38\ud835\udc39| = 3 cm. \ud835\udc43 \ud835\udc37 \ud835\udc39 \ud835\udc38 3 cm \ud835\udc45 \ud835\udc44 Use the scale factor to find "
  },
  {
   "file": "maths-2021-OL-ask-p2-q7-a-i.png",
@@ -1509,7 +1509,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2022 HL Paper 2 Q6(a)",
-  "description": "The question as printed on the paper \u2014 Construct the circumcentre of the triangle \ud835\udc4b\ud835\udc4c\ud835\udc4d shown below, using only a compass and (a) straight edge. Label the circumcentre \ud835\udc36. Show your construction lines clearly. \ud835\udc4d \ud835\udc4b \ud835\udc37"
+  "description": "The question as printed on the paper \u2014 Construct the circumcentre of the triangle \ud835\udc4b\ud835\udc4c\ud835\udc4d shown below, using only a compass and (a) straight edge. Label the circumcentre \ud835\udc36. Show your construction lines clearly. \ud835\udc4d \ud835\udc4c \ud835\udc4b \ud835\udc37"
  },
  {
   "file": "maths-2022-HL-ask-p2-q6-b.png",
@@ -3259,7 +3259,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 OL Paper 2 Q6(b)",
-  "description": "The question as printed on the paper \u2014 (b) The diagram below shows another parallelogram (not to scale). The sizes of three of the angles are given, where \ud835\udc65, \ud835\udc66\u2208\u211d. Use the information in the diagram to work out the value of \ud835\udc65 and the value of \ud835\udc66."
+  "description": "The question as printed on the paper \u2014 (b) The diagram below shows another parallelogram (not to scale). The sizes of three of the angles are given, where \ud835\udc65, \ud835\udc66\u2208\u211d. Use the information in the diagram to work out the value of \ud835\udc65 and the value of \ud835\udc66. (\ud835\udc65+ 3\ud835\udc66)\u00b0 (2\ud835\udc65\u22123"
  },
  {
   "file": "maths-2023-OL-ask-p2-q6-c.png",
@@ -3315,42 +3315,42 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 OL Paper 2 Q8(a)",
-  "description": "The question as printed on the paper \u2014 A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2\u22194 m and an internal depth of 0\u22199 m. 2\u22194 m (a) The instruction manual recommend"
+  "description": "The question as printed on the paper \u2014 A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2\u22194 m and an internal depth of 0\u22199 m. 0\u22199 m 2\u22194 m (a) The instruction manual rec"
  },
  {
   "file": "maths-2023-OL-ask-p2-q8-b-i.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 OL Paper 2 Q8(b)(i)",
-  "description": "The question as printed on the paper \u2014 A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2\u22194 m and an internal depth of 0\u22199 m. 2\u22194 m The family buys 3 pool seats. Each p"
+  "description": "The question as printed on the paper \u2014 A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2\u22194 m and an internal depth of 0\u22199 m. 0\u22199 m 2\u22194 m The family buys 3 pool seats. "
  },
  {
   "file": "maths-2023-OL-ask-p2-q8-b-ii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 OL Paper 2 Q8(b)(ii)",
-  "description": "The question as printed on the paper \u2014 A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2\u22194 m and an internal depth of 0\u22199 m. 2\u22194 m The family buys 3 pool seats. Each p"
+  "description": "The question as printed on the paper \u2014 A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2\u22194 m and an internal depth of 0\u22199 m. 0\u22199 m 2\u22194 m The family buys 3 pool seats. "
  },
  {
   "file": "maths-2023-OL-ask-p2-q8-c-i.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 OL Paper 2 Q8(c)(i)",
-  "description": "The question as printed on the paper \u2014 A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2\u22194 m and an internal depth of 0\u22199 m. 2\u22194 m (c) The family also buys a cover for"
+  "description": "The question as printed on the paper \u2014 A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2\u22194 m and an internal depth of 0\u22199 m. 0\u22199 m 2\u22194 m (c) The family also buys a cov"
  },
  {
   "file": "maths-2023-OL-ask-p2-q8-c-ii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 OL Paper 2 Q8(c)(ii)",
-  "description": "The question as printed on the paper \u2014 A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2\u22194 m and an internal depth of 0\u22199 m. 2\u22194 m (c) The family also buys a cover for"
+  "description": "The question as printed on the paper \u2014 A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2\u22194 m and an internal depth of 0\u22199 m. 0\u22199 m 2\u22194 m (c) The family also buys a cov"
  },
  {
   "file": "maths-2023-OL-ask-p2-q8-c-iii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 OL Paper 2 Q8(c)(iii)",
-  "description": "The question as printed on the paper \u2014 A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2\u22194 m and an internal depth of 0\u22199 m. 2\u22194 m (c) The family also buys a cover for"
+  "description": "The question as printed on the paper \u2014 A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2\u22194 m and an internal depth of 0\u22199 m. 0\u22199 m 2\u22194 m (c) The family also buys a cov"
  },
  {
   "file": "maths-2023-OL-ask-p2-q9-a-ii.png",
@@ -5296,21 +5296,21 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 OL Paper 1 Q10(a)(i)",
-  "description": "The question as printed on the paper \u2014 (a) A factory makes closed boxes. The lengths of the sides of one of the boxes are shown in the diagram below. 70 cm (i) Draw a scaled diagram of a net of the box in the grid below. Use the scale 1: 10. The length of eac"
+  "description": "The question as printed on the paper \u2014 (a) A factory makes closed boxes. The lengths of the sides of one of the boxes are shown in the diagram below. 20 cm 30 cm 70 cm (i) Draw a scaled diagram of a net of the box in the grid below. Use the scale 1: 10. The l"
  },
  {
   "file": "maths-2025-OL-ask-p1-q10-a-ii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 OL Paper 1 Q10(a)(ii)",
-  "description": "The question as printed on the paper \u2014 (a) A factory makes closed boxes. The lengths of the sides of one of the boxes are shown in the diagram below. 70 cm (i) Draw a scaled diagram of a net of the box in the grid below. Use the scale 1: 10. The length of eac"
+  "description": "The question as printed on the paper \u2014 (a) A factory makes closed boxes. The lengths of the sides of one of the boxes are shown in the diagram below. 20 cm 30 cm 70 cm (i) Draw a scaled diagram of a net of the box in the grid below. Use the scale 1: 10. The l"
  },
  {
   "file": "maths-2025-OL-ask-p1-q10-a-iii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 OL Paper 1 Q10(a)(iii)",
-  "description": "The question as printed on the paper \u2014 (a) A factory makes closed boxes. The lengths of the sides of one of the boxes are shown in the diagram below. 70 cm (i) Draw a scaled diagram of a net of the box in the grid below. Use the scale 1: 10. The length of eac"
+  "description": "The question as printed on the paper \u2014 (a) A factory makes closed boxes. The lengths of the sides of one of the boxes are shown in the diagram below. 20 cm 30 cm 70 cm (i) Draw a scaled diagram of a net of the box in the grid below. Use the scale 1: 10. The l"
  },
  {
   "file": "maths-2025-OL-ask-p1-q10-b.png",

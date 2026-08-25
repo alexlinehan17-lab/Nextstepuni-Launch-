@@ -1105,7 +1105,7 @@
  },
  {
   "id": "maths-2021-hl-p1-q8-a-i",
-  "topicId": "maths-5-1",
+  "topicId": "maths-5-2",
   "conceptId": "part",
   "level": "higher",
   "year": 2021,
@@ -7650,7 +7650,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q3-a-i",
-  "topicId": "maths-2-2",
+  "topicId": "maths-3-1",
   "conceptId": "part",
   "level": "higher",
   "year": 2022,
@@ -7695,7 +7695,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q3-a-ii",
-  "topicId": "maths-2-2",
+  "topicId": "maths-3-1",
   "conceptId": "part",
   "level": "higher",
   "year": 2022,
@@ -10272,7 +10272,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q8-a",
-  "topicId": "maths-1-2",
+  "topicId": "maths-1-6",
   "conceptId": "jena-researching-fuel-consumption-cars-she",
   "level": "higher",
   "year": 2022,
@@ -10369,7 +10369,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q8-a-iv",
-  "topicId": "maths-1-2",
+  "topicId": "maths-1-6",
   "conceptId": "based-data-given-would-you-more",
   "level": "higher",
   "year": 2022,
@@ -12108,7 +12108,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q8-a-i",
-  "topicId": "maths-4-2",
+  "topicId": "maths-3-3",
   "conceptId": "work-out-how-many-acid-200",
   "level": "ordinary",
   "year": 2022,
@@ -12239,7 +12239,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q8-a-iv",
-  "topicId": "maths-4-2",
+  "topicId": "maths-3-3",
   "conceptId": "when-she-making-another-mixture-jessica",
   "level": "ordinary",
   "year": 2022,
@@ -12284,7 +12284,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q8-b-i",
-  "topicId": "maths-4-2",
+  "topicId": "maths-3-3",
   "conceptId": "write-down-values-cube-these-values",
   "level": "ordinary",
   "year": 2022,
@@ -13095,7 +13095,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q1-a-ii",
-  "topicId": "maths-2-2",
+  "topicId": "maths-3-1",
   "conceptId": "using-slopes-investigate-perpendicular-justify",
   "level": "ordinary",
   "year": 2022,
@@ -13140,7 +13140,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q1-b-ii",
-  "topicId": "maths-2-2",
+  "topicId": "maths-3-1",
   "conceptId": "write-down-equation-horizontal-line",
   "level": "ordinary",
   "year": 2022,
@@ -13457,7 +13457,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q4-a",
-  "topicId": "maths-3-3",
+  "topicId": "maths-1-6",
   "conceptId": "group-students-sat-exam-each-student",
   "level": "ordinary",
   "year": 2022,
@@ -13735,7 +13735,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q6-a-i",
-  "topicId": "maths-4-1",
+  "topicId": "maths-2-1",
   "conceptId": "write-down-adb-size-total-angle",
   "level": "ordinary",
   "year": 2022,
@@ -13778,7 +13778,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q6-a-ii",
-  "topicId": "maths-4-1",
+  "topicId": "maths-2-1",
   "conceptId": "aod-130-work-out-size-angle",
   "level": "ordinary",
   "year": 2022,
@@ -14050,7 +14050,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q7-b",
-  "topicId": "maths-1-6",
+  "topicId": "maths-1-2",
   "conceptId": "complete-table-filling-four-missing-values",
   "level": "ordinary",
   "year": 2022,
@@ -14144,7 +14144,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q7-d",
-  "topicId": "maths-1-6",
+  "topicId": "maths-1-2",
   "conceptId": "female-cats-were-put-separate-pens",
   "level": "ordinary",
   "year": 2022,
@@ -14907,7 +14907,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q10-b-iv",
-  "topicId": "maths-1-5",
+  "topicId": "maths-3-3",
   "conceptId": "according-2019-irish-sport-monitor-report",
   "level": "ordinary",
   "year": 2022,
@@ -19129,7 +19129,7 @@
  },
  {
   "id": "maths-2023-ol-p1-q6-a-i",
-  "topicId": "maths-4-1",
+  "topicId": "maths-5-2",
   "conceptId": "value",
   "level": "ordinary",
   "year": 2023,
@@ -19893,7 +19893,7 @@
  },
  {
   "id": "maths-2023-ol-p1-q9-a-i",
-  "topicId": "maths-3-1",
+  "topicId": "maths-3-3",
   "conceptId": "diagram-estimate-number-actual-new-cases",
   "level": "ordinary",
   "year": 2023,
@@ -19978,7 +19978,7 @@
  },
  {
   "id": "maths-2023-ol-p1-q9-a-iii",
-  "topicId": "maths-3-1",
+  "topicId": "maths-3-3",
   "conceptId": "iii-takes-approximately-days-daily-number",
   "level": "ordinary",
   "year": 2023,
@@ -20023,7 +20023,7 @@
  },
  {
   "id": "maths-2023-ol-p1-q9-a-iv",
-  "topicId": "maths-3-1",
+  "topicId": "maths-3-3",
   "conceptId": "estimate-what-day-value-number-new",
   "level": "ordinary",
   "year": 2023,
@@ -20115,7 +20115,7 @@
  },
  {
   "id": "maths-2023-ol-p1-q9-b-iii",
-  "topicId": "maths-3-1",
+  "topicId": "maths-3-3",
   "conceptId": "iii-measures-put-place-slow-down",
   "level": "ordinary",
   "year": 2023,
@@ -22305,7 +22305,7 @@
  },
  {
   "id": "maths-2023-ol-p2-q10-a",
-  "topicId": "maths-5-2",
+  "topicId": "maths-2-3",
   "conceptId": "work-out-cba-size-angle-cba",
   "level": "ordinary",
   "year": 2023,
@@ -23293,7 +23293,7 @@
  },
  {
   "id": "maths-2024-hl-p1-q5-c-ii",
-  "topicId": "maths-3-1",
+  "topicId": "maths-4-1",
   "conceptId": "first-value-which",
   "level": "higher",
   "year": 2024,
@@ -24159,7 +24159,7 @@
  },
  {
   "id": "maths-2024-hl-p1-q10-a-i",
-  "topicId": "maths-3-1",
+  "topicId": "maths-5-2",
   "conceptId": "estimate-height-water-spinach-plant-after",
   "level": "higher",
   "year": 2024,
@@ -29021,7 +29021,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q9-a-ii",
-  "topicId": "maths-2-3",
+  "topicId": "maths-1-2",
   "conceptId": "diarmuid-wants-maximise-number-choices-available",
   "level": "ordinary",
   "year": 2024,
@@ -29068,7 +29068,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q9-b-i",
-  "topicId": "maths-2-3",
+  "topicId": "maths-1-2",
   "conceptId": "complete-venn-diagram-number-customers-each",
   "level": "ordinary",
   "year": 2024,
@@ -29156,7 +29156,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q9-c",
-  "topicId": "maths-2-3",
+  "topicId": "maths-1-2",
   "conceptId": "general-sales-ice-creams-increase-weather",
   "level": "ordinary",
   "year": 2024,
@@ -29201,7 +29201,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q9-d-i",
-  "topicId": "maths-2-3",
+  "topicId": "maths-1-2",
   "conceptId": "size-angle-length-arc",
   "level": "ordinary",
   "year": 2024,

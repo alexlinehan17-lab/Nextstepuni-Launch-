@@ -176,6 +176,7 @@ class Sitting:
                     self.foot[n] = min(self.foot.get(n, Y_FOOT), b[1] - 2)
         self._ink = {}
         self._furniture = {}
+        self._rules = {}
         self._index()
 
     # ---- geometry index ----
@@ -248,7 +249,23 @@ class Sitting:
                 # which six are writing, and a raw length test let every 2022
                 # Higher Level answer box through.
                 ink = [re.sub(r'[_\s.·]+', '', l[4]) for l in inside]
-                if (len(inside) <= 6 and sum(len(t) for t in ink) < 60
+                # An answer box is EMPTY: its grid is light grey, so no dark
+                # ink lies inside it. A plot area is the opposite — a curve
+                # and its axes are dark ink inside exactly such a rectangle,
+                # and with only sparse labels ("y", "x", "A(0, k)") it passes
+                # every text test an answer box passes. Without this the mask
+                # painted out the sine curve of 2021 HL Q5(b) and left a
+                # stranded arrowhead.
+                # An answer box IS a rectangle: its path is a single 're'
+                # plus a few rules. A drawn figure is not — the sine curve of
+                # 2021 HL Q5(b) is 39 line segments and 11 béziers, and on
+                # extent alone it looked exactly like an answer box, so the
+                # mask painted the graph out and left a stranded arrowhead.
+                kinds = [i[0] for i in d.get('items', ())]
+                boxlike = ('c' not in kinds
+                           and (kinds.count('re') == 1 or len(kinds) <= 6))
+                if (boxlike and len(inside) <= 6
+                        and sum(len(t) for t in ink) < 60
                         and all(len(t) < 28 for t in ink)):
                     frames.append(r)
         self._furniture[page] = frames
@@ -258,7 +275,13 @@ class Sitting:
             if r.width < 2 and r.height < 2:
                 continue
             if r.width > 420 and r.height < 4:
-                continue               # a full-column rule: page furniture
+                # A long thin rule is page furniture and must not anchor a
+                # window — but it is still INK, and a graph's x-axis looks
+                # exactly like one. Excluding it outright let the mask paint
+                # over the axis of 2021 HL Q5(b), leaving a floating
+                # arrowhead beside a graph with no x-axis.
+                self._rules.setdefault(page, []).append(r)
+                continue
             if any(f.y0 - 1 <= r.y0 and r.y1 <= f.y1 + 1 for f in frames):
                 continue               # the frame, or a mark inside one
             rects.append(r)
@@ -674,7 +697,7 @@ class Sitting:
                    if pg == page and y1 > top + 1 and y0 < bot - 1]
         if not frames:
             return img
-        keep = [r for r in self.ink(page)]
+        keep = list(self.ink(page)) + self._rules.get(page, [])
         keep += [pymupdf.Rect(x0, y0, X1, y1)
                  for (pg, y0, y1, x0, txt) in self.lines
                  if pg == page and not self.furniture_line(page, y0, y1)
