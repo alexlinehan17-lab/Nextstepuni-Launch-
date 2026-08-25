@@ -9190,7 +9190,7 @@ export const CARDS: SecCard[] = [
     ],
   } as SecCard,
   {
-    ...base, kind: "question",
+    ...base, kind: "diagram",
     year: 2021, level: "higher",
     paperFileid: "LC025ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Higher Level — © State Examinations Commission.",
@@ -9202,6 +9202,19 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "On one arrow to soil ammonia (from animals or from pea plants)", marks: 3 },
     ],
+    figure: {
+          "candId": "biology-2021-hl-038-p004-i1",
+          "src": "/exam-figures/biology/markbank/biology-2021-hl-038-p004-i1.png",
+          "srcHash": "f752d8eb93faeaece944dab109131787",
+          "alt": "Flow diagram of the nitrogen cycle from the 2021 Higher Level paper (booklet 038), page 4. Six boxes joined by arrows: Atmospheric nitrogen (top), Soil nitrates, Pea plants, Animals, Soil ammonia and Soil nitrites. Arrows are labelled A (atmospheric nitrogen to soil nitrates, and atmospheric nitrogen to pea plants), B (soil nitrites up to atmospheric nitrogen) and C (soil nitrites to soil nitrates, and soil ammonia to soil nitrites). The letter D is NOT printed on the diagram - Q2(e) asks the candidate to place it on an arrow leading to soil ammonia.",
+          "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Nitrogen fixation","askedInThisQuestion":false},{"letter":"B","meaning":"Denitrification","askedInThisQuestion":false},{"letter":"C","meaning":"Nitrifying (bacteria) (or correctly named bacteria)","askedInThisQuestion":false}],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9560,6 +9573,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "(Lipid digestion) is faster (higher rate) with both lipase and bile salts (than with lipase alone)", marks: null, accepts: ["(Lipid digestion) is slower (lower rate) with lipase alone."] },
     ],
+    figure: {
+          "candId": "biology-2022-hl-038-p008-i1",
+          "src": "/exam-figures/biology/markbank/biology-2022-hl-038-p008-i1.png",
+          "srcHash": "8318e3519787fbf633f0418efdf89395",
+          "alt": "Line graph titled by its axes only: y-axis \"Mass of lipid digested\", x-axis \"Time\". Two curves rise from the origin — a solid curve labelled \"Lipase and bile salts\" that climbs steeply and plateaus early, and a dashed curve labelled \"Lipase\" that climbs more slowly and only approaches the same plateau at the far right. A legend inside the plot area keys both curves. Cropped from page 8 of the 2022 HL Sections A and B booklet (038), y 104-300pt, so the question stem above and part (a) below are excluded.",
+          "attribution": "SEC Leaving Certificate Biology 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9682,7 +9703,7 @@ export const CARDS: SecCard[] = [
     ],
   } as SecCard,
   {
-    ...base, kind: "question",
+    ...base, kind: "diagram",
     year: 2022, level: "higher",
     paperFileid: "LC025ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Higher Level — © State Examinations Commission.",
@@ -9693,6 +9714,19 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Light independent stage (or dark stage or Calvin Cycle)", marks: 3 },
     ],
+    figure: {
+          "candId": "biology-2022-hl-040-p005-i1",
+          "src": "/exam-figures/biology/markbank/biology-2022-hl-040-p005-i1.png",
+          "srcHash": "a36c0d6970661f88ecc2741b3e6f79e2",
+          "alt": "Flow diagram of photosynthesis in two stages. Left: a \"H2O\" box feeds down into a tall \"Stage 1\" box, which is also struck by a wavy arrow from a \"Light energy\" box; \"Stage 1\" outputs down into \"Molecule X\". Right: a \"Gas\" box feeds down into a tall \"Stage 2\" box, which outputs down into \"Molecule Z\". Between the two stage boxes, two curved-arrow cycles link them: the upper cycle runs NADP+ (Stage 2 to Stage 1) and \"Molecule Y\" (Stage 1 to Stage 2); the lower cycle runs \"ADP + P\" (Stage 2 to Stage 1) and \"ATP\" (Stage 1 to Stage 2). Cropped from page 5 of the 2022 HL Section C booklet (040), y 185-395pt, so the part (b) stem above and parts (i)-(viii) below are excluded.",
+          "attribution": "SEC Leaving Certificate Biology 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "X",
+                "Y",
+                "Z"
+          ]
+    },
+    labelKey: [{"letter":"X","meaning":"Oxygen (or O2) — the by-product of the splitting of water","askedInThisQuestion":false},{"letter":"Y","meaning":"NADPH","askedInThisQuestion":false},{"letter":"Z","meaning":"Glucose (or formula) — the end product of stage 2","askedInThisQuestion":false}],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9797,6 +9831,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "(Soil) pH or percentage germination", marks: null },
     ],
+    figure: {
+          "candId": "biology-2023-hl-038-p004-i1",
+          "src": "/exam-figures/biology/markbank/biology-2023-hl-038-p004-i1.png",
+          "srcHash": "cf154d2075fb86b09a2d0ec98666d28c",
+          "alt": "The Q2 stem graph from page 4 of the 2023 HL Sections A and B booklet: a line graph of 'Percentage (%) germination of grass seeds' (y-axis, unscaled) against 'Soil pH' (x-axis, marked 0 to 10). The curve rises from zero at about pH 2, peaks at about pH 6.5, and falls away again by pH 10. No lettered labels appear in this crop. The question's own answer lines and the (a)-(f) part text below are excluded.",
+          "attribution": "SEC Leaving Certificate Biology 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9811,6 +9853,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Rectangle correctly indicating one DNA nucleotide showing one phosphate, one deoxyribose and one base", marks: null },
     ],
+    figure: {
+          "candId": "biology-2023-hl-038-p006-i1",
+          "src": "/exam-figures/biology/markbank/biology-2023-hl-038-p006-i1.png",
+          "srcHash": "f3c86a8a813f4a1bb3bdf54c19ada672",
+          "alt": "The Q4 DNA diagram from page 6 of the 2023 HL Sections A and B booklet: part of a DNA molecule drawn as two antiparallel strands of pentagon sugars joined by circle phosphates. The upper strand is deliberately printed without its bases (that is what part (a) asks the candidate to draw in); the lower strand carries two boxed bases labelled T and G, drawn with dashed bonds reaching up towards the upper strand. An arrow labelled X points at the dashed bonds between the strands. Letters visible in the crop, decoded from the marking scheme even though this card does not ask about them: X = 'Hydrogen or H (bonding)' (scheme, Q4(d)); G = 'Purine' (scheme, Q4(e), where the paper states 'T is a pyrimidine base'). Nothing is sliced; the question head above and the (a)-(g) part text below are excluded.",
+          "attribution": "SEC Leaving Certificate Biology 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9868,6 +9918,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Catabolic", marks: 3 },
     { id: "r-2", kind: "point", verbatim: "Large molecule broken down into smaller molecules or energy released", marks: 3 },
     ],
+    figure: {
+          "candId": "biology-2023-hl-040-p003-i1",
+          "src": "/exam-figures/biology/markbank/biology-2023-hl-040-p003-i1.png",
+          "srcHash": "75eff26d1fd1869f250ae2dd7ae860b4",
+          "alt": "The reaction printed under Q12(a)(ii) on page 3 of the 2023 HL Section C booklet: 'A ——> B + C + Energy'. One reactant on the left, two products plus energy on the right, which is what makes it catabolic (scheme: '*Catabolic ... Large molecule broken down into smaller molecules or energy released'). A, B and C are deliberately unnamed placeholders — the marking scheme never identifies them, and the answer turns on the shape of the reaction, not on what they are — so no letter key is given. The (9) mark allocation and the neighbouring Q12(b) cell diagram are excluded.",
+          "attribution": "SEC Leaving Certificate Biology 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -10136,7 +10194,7 @@ export const CARDS: SecCard[] = [
     },
   } as SecCard,
   {
-    ...base, kind: "question",
+    ...base, kind: "diagram",
     year: 2024, level: "higher",
     paperFileid: "LC025ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Higher Level — © State Examinations Commission.",
@@ -10150,9 +10208,22 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "B: Liver", marks: 1 },
     { id: "r-3", kind: "point", verbatim: "C: Pancreas", marks: 1 },
     ],
+    figure: {
+          "candId": "biology-2024-hl-038-p005-i1",
+          "src": "/exam-figures/biology/markbank/biology-2024-hl-038-p005-i1.png",
+          "srcHash": "fe7e277d76954445852777dcddcc37ff",
+          "alt": "Line drawing of the human alimentary canal (booklet 038, page 5). Shows the mouth/salivary glands, a long tube arrowed A running down to the stomach, a large organ B (left of the stomach), a stippled gland C arrowed beneath the stomach, and the coiled small intestine within the large intestine, with the printed leader label 'Small intestine'. Cropped to the right-hand column so none of the question stem or the answer-line boxes appear.",
+          "attribution": "SEC Leaving Certificate Biology 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Oesophagus","askedInThisQuestion":true},{"letter":"B","meaning":"Liver","askedInThisQuestion":true},{"letter":"C","meaning":"Pancreas","askedInThisQuestion":true}],
   } as SecCard,
   {
-    ...base, kind: "question",
+    ...base, kind: "diagram",
     year: 2024, level: "higher",
     paperFileid: "LC025ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Higher Level — © State Examinations Commission.",
@@ -10164,9 +10235,22 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Function: Transport food to the stomach", marks: null },
     ],
+    figure: {
+          "candId": "biology-2024-hl-038-p005-i1",
+          "src": "/exam-figures/biology/markbank/biology-2024-hl-038-p005-i1.png",
+          "srcHash": "fe7e277d76954445852777dcddcc37ff",
+          "alt": "Line drawing of the human alimentary canal (booklet 038, page 5). Shows the mouth/salivary glands, a long tube arrowed A running down to the stomach, a large organ B (left of the stomach), a stippled gland C arrowed beneath the stomach, and the coiled small intestine within the large intestine, with the printed leader label 'Small intestine'. Cropped to the right-hand column so none of the question stem or the answer-line boxes appear.",
+          "attribution": "SEC Leaving Certificate Biology 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Oesophagus","askedInThisQuestion":true},{"letter":"B","meaning":"Liver","askedInThisQuestion":false},{"letter":"C","meaning":"Pancreas","askedInThisQuestion":false}],
   } as SecCard,
   {
-    ...base, kind: "question",
+    ...base, kind: "diagram",
     year: 2024, level: "higher",
     paperFileid: "LC025ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Higher Level — © State Examinations Commission.",
@@ -10178,6 +10262,19 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Function: Produce bile or stores vitamins or store minerals or stores glycogen or produces plasma proteins or detoxifies or other correct", marks: null },
     ],
+    figure: {
+          "candId": "biology-2024-hl-038-p005-i1",
+          "src": "/exam-figures/biology/markbank/biology-2024-hl-038-p005-i1.png",
+          "srcHash": "fe7e277d76954445852777dcddcc37ff",
+          "alt": "Line drawing of the human alimentary canal (booklet 038, page 5). Shows the mouth/salivary glands, a long tube arrowed A running down to the stomach, a large organ B (left of the stomach), a stippled gland C arrowed beneath the stomach, and the coiled small intestine within the large intestine, with the printed leader label 'Small intestine'. Cropped to the right-hand column so none of the question stem or the answer-line boxes appear.",
+          "attribution": "SEC Leaving Certificate Biology 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Oesophagus","askedInThisQuestion":false},{"letter":"B","meaning":"Liver","askedInThisQuestion":true},{"letter":"C","meaning":"Pancreas","askedInThisQuestion":false}],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -10193,7 +10290,7 @@ export const CARDS: SecCard[] = [
     ],
   } as SecCard,
   {
-    ...base, kind: "question",
+    ...base, kind: "diagram",
     year: 2024, level: "higher",
     paperFileid: "LC025ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Higher Level — © State Examinations Commission.",
@@ -10207,6 +10304,19 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Stage Y: Transformation or introduction of base sequence changes", marks: null },
     { id: "r-3", kind: "point", verbatim: "Stage Z: Expression", marks: null },
     ],
+    figure: {
+          "candId": "biology-2024-hl-038-p009-i1",
+          "src": "/exam-figures/biology/markbank/biology-2024-hl-038-p009-i1.png",
+          "srcHash": "8662922a0a3595d4e4a95654aef64222",
+          "alt": "Flow diagram of genetic engineering (booklet 038, page 9). Cell to Isolation to Chromosome, then a boxed 'Stage X' to the excised Gene; separately Plasmid (vector) through a second boxed 'Stage X' to an opened plasmid ring; both feed into Recombinant DNA, then a boxed 'Stage Y' down into Host cell, which divides into two daughter cells bracketed into a boxed 'Stage Z' giving Product. A key at lower left reads 'Enzyme:' beside the triangle marker used on the cut sites. Cropped above the (a) part so no question body text is included.",
+          "attribution": "SEC Leaving Certificate Biology 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "X",
+                "Y",
+                "Z"
+          ]
+    },
+    labelKey: [{"letter":"X","meaning":"Cutting (accept restriction)","askedInThisQuestion":true},{"letter":"Y","meaning":"Transformation or introduction of base sequence changes","askedInThisQuestion":true},{"letter":"Z","meaning":"Expression","askedInThisQuestion":true}],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -10481,7 +10591,7 @@ export const CARDS: SecCard[] = [
     },
   } as SecCard,
   {
-    ...base, kind: "question",
+    ...base, kind: "diagram",
     year: 2025, level: "higher",
     paperFileid: "LC025ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Higher Level — © State Examinations Commission.",
@@ -10494,6 +10604,18 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Drawing: villus", marks: 3, accepts: ["lacteal","blood vessels"], contextNote: "The scheme wants any two of the three structures drawn." },
     { id: "r-2", kind: "alt", verbatim: "Labels: villus", marks: 2, accepts: ["lacteal","capillary (or blood vessel or named)"] },
     ],
+    figure: {
+          "candId": "biology-2025-hl-038-p008-i1",
+          "src": "/exam-figures/biology/markbank/biology-2025-hl-038-p008-i1.png",
+          "srcHash": "210e5c859d7251c455b7b8d64d75520c",
+          "alt": "Outline of a human torso showing the digestive system: an arrow marks the oesophagus as A, the stomach is marked B, and the pancreas and small intestine are named on the diagram. This is the shared stem diagram printed beside Question 6 on page 8 of the 2025 Higher Level Sections A and B booklet.",
+          "attribution": "SEC Leaving Certificate Biology 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Oesophagus","askedInThisQuestion":false},{"letter":"B","meaning":"Stomach","askedInThisQuestion":false}],
   } as SecCard,
   {
     ...base, kind: "question",

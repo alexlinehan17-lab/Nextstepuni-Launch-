@@ -37767,7 +37767,25 @@
    }
   ],
   "stem": "The diagram below outlines some stages in the nitrogen cycle. Atmospheric nitrogen Soil nitrates Pea plants Soil nitrites Animals Soil ammonia",
-  "notes": "The scheme keys this answer under its own Question 1 while the paper prints Question 2. It is a mark-the-diagram ask, but the scheme answers it in words — the arrows that end at soil ammonia — and the paper stem names every box in the cycle, so the answer stands without the artwork."
+  "notes": "The scheme keys this answer under its own Question 1 while the paper prints Question 2. It is a mark-the-diagram ask, but the scheme answers it in words — the arrows that end at soil ammonia — and the paper stem names every box in the cycle, so the answer stands without the artwork.",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Nitrogen fixation",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Denitrification",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Nitrifying (bacteria) (or correctly named bacteria)",
+    "askedInThisQuestion": false
+   }
+  ],
+  "figureKey": "biology-2021-hl-038-p004-i1"
  },
  {
   "id": "bio-2021-hl-q11-a-i",
@@ -38563,7 +38581,8 @@
    }
   ],
   "stem": "A student carried out an experiment comparing the action of lipase on its own with the action of both lipase and bile salts on lipid digestion over time. The graph below illustrates the student’s experimental results. Mass of lipid digested Lipase and bile salts Lipase Time",
-  "notes": "Q6 is marked 6(3) + 2 across its six parts, so no part carries a printed mark of its own; each correct response is worth 3. The graph itself is not needed to reach the conclusion — the paper names both plotted lines and both axes in the stem the card carries, and the scheme takes the comparison stated either way round."
+  "notes": "Q6 is marked 6(3) + 2 across its six parts, so no part carries a printed mark of its own; each correct response is worth 3. The graph itself is not needed to reach the conclusion — the paper names both plotted lines and both axes in the stem the card carries, and the scheme takes the comparison stated either way round.",
+  "figureKey": "biology-2022-hl-038-p008-i1"
  },
  {
   "id": "bio-2022-hl-q8-b-ii",
@@ -38882,7 +38901,25 @@
     "marks": 3
    }
   ],
-  "notes": "The diagram is not needed to answer this: photosynthesis has two stages, and the paper has already fixed stage 1 in words at (b)(i) as the stage in which water is split using the energy in light."
+  "notes": "The diagram is not needed to answer this: photosynthesis has two stages, and the paper has already fixed stage 1 in words at (b)(i) as the stage in which water is split using the energy in light.",
+  "labelKey": [
+   {
+    "letter": "X",
+    "meaning": "Oxygen (or O2) — the by-product of the splitting of water",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "Y",
+    "meaning": "NADPH",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "Z",
+    "meaning": "Glucose (or formula) — the end product of stage 2",
+    "askedInThisQuestion": false
+   }
+  ],
+  "figureKey": "biology-2022-hl-040-p005-i1"
  },
  {
   "id": "bio-2022-hl-q14-c-iii",
@@ -39525,7 +39562,20 @@
    }
   ],
   "stem": "The diagram shows a section through human skin. Blood vessel Sweat gland",
-  "notes": "A and B are two of the four structures marked on the paper's section through human skin; the other two, blood vessel and sweat gland, are word-labelled on the diagram itself. Q4 carries no per-part mark — its table pays 3, 6, 9, 12, 15, 18, 20 for one to seven correct responses, and this part is two of them."
+  "notes": "A and B are two of the four structures marked on the paper's section through human skin; the other two, blood vessel and sweat gland, are word-labelled on the diagram itself. Q4 carries no per-part mark — its table pays 3, 6, 9, 12, 15, 18, 20 for one to seven correct responses, and this part is two of them.",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Hair",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Sebaceous gland",
+    "askedInThisQuestion": true
+   }
+  ],
+  "figureKey": "biology-2022-ol-038-p005-i1"
  },
  {
   "id": "bio-2022-ol-q5-a",
@@ -39551,7 +39601,8 @@
    }
   ],
   "stem": "During an investigation a DNA profile was carried out in order to match a DNA sample from a crime scene with a sample from a suspect. The diagram shows the DNA profiles obtained. Crime scene A B C",
-  "notes": "The paper prints the crime-scene profile beside three suspect profiles labelled A, B and C. The deck holds no figure for that page, so the letter has to be taken from the scheme rather than read off the bands."
+  "notes": "The paper prints the crime-scene profile beside three suspect profiles labelled A, B and C. The deck holds no figure for that page, so the letter has to be taken from the scheme rather than read off the bands.",
+  "figureKey": "biology-2022-ol-038-p006-i1"
  },
  {
   "id": "bio-2022-ol-q8-b-ii",
@@ -39575,7 +39626,8 @@
     "marks": 3
    }
   ],
-  "stem": "The table below shows the data collected during the survey. Plant Station 1 Station 2 Station 3 Station 4 Station 5 Plantain    Daisy     Dandelion  "
+  "stem": "The table below shows the data collected during the survey. Plant Station 1 Station 2 Station 3 Station 4 Station 5 Plantain    Daisy     Dandelion  ",
+  "figureKey": "biology-2022-ol-paper-p008-i0"
  },
  {
   "id": "bio-2022-ol-q9-b-i",
@@ -39677,7 +39729,8 @@
     "marks": null
    }
   ],
-  "notes": "The organisms are read off the paper's food-web diagram. The deck does not carry that figure — it survives only as two crops with the word \"Shrew\" lost in the gap — so the members come from the scheme. Q11(b) carries no per-part mark: its table pays 5, 10, 15, 17, 19, 21, 23, 25, 27 for one to nine correct responses."
+  "notes": "The organisms are read off the paper's food-web diagram. The deck does not carry that figure — it survives only as two crops with the word \"Shrew\" lost in the gap — so the members come from the scheme. Q11(b) carries no per-part mark: its table pays 5, 10, 15, 17, 19, 21, 23, 25, 27 for one to nine correct responses.",
+  "figureKey": "biology-2022-ol-040-p002-i1"
  },
  {
   "id": "bio-2022-ol-q11-b-iv",
@@ -39702,7 +39755,8 @@
     "marks": null
    }
   ],
-  "notes": "The organisms are read off the paper's food-web diagram. The deck does not carry that figure — it survives only as two crops with the word \"Shrew\" lost in the gap — so the members come from the scheme. Q11(b) carries no per-part mark: its table pays 5, 10, 15, 17, 19, 21, 23, 25, 27 for one to nine correct responses."
+  "notes": "The organisms are read off the paper's food-web diagram. The deck does not carry that figure — it survives only as two crops with the word \"Shrew\" lost in the gap — so the members come from the scheme. Q11(b) carries no per-part mark: its table pays 5, 10, 15, 17, 19, 21, 23, 25, 27 for one to nine correct responses.",
+  "figureKey": "biology-2022-ol-040-p002-i1"
  },
  {
   "id": "bio-2022-ol-q11-b-vi",
@@ -39727,7 +39781,8 @@
     "marks": null
    }
   ],
-  "notes": "The organisms are read off the paper's food-web diagram. The deck does not carry that figure — it survives only as two crops with the word \"Shrew\" lost in the gap — so the members come from the scheme. Q11(b) carries no per-part mark: its table pays 5, 10, 15, 17, 19, 21, 23, 25, 27 for one to nine correct responses."
+  "notes": "The organisms are read off the paper's food-web diagram. The deck does not carry that figure — it survives only as two crops with the word \"Shrew\" lost in the gap — so the members come from the scheme. Q11(b) carries no per-part mark: its table pays 5, 10, 15, 17, 19, 21, 23, 25, 27 for one to nine correct responses.",
+  "figureKey": "biology-2022-ol-040-p002-i1"
  },
  {
   "id": "bio-2022-ol-q13-b-i",
@@ -39901,7 +39956,8 @@
     "marks": null
    }
   ],
-  "notes": "The reason is a feature of the paper's section through a plant stem, and the deck carries no crop of that diagram, so it comes from the scheme. Q15(b) carries no per-part mark: its table pays 5 for the first correct response."
+  "notes": "The reason is a feature of the paper's section through a plant stem, and the deck carries no crop of that diagram, so it comes from the scheme. Q15(b) carries no per-part mark: its table pays 5 for the first correct response.",
+  "figureKey": "biology-2022-ol-040-p006-i1"
  },
  {
   "id": "bio-2022-ol-q17-d-iv",
@@ -39952,7 +40008,8 @@
    }
   ],
   "stem": "A horticulturist was carrying out scientific research into germination. They proposed the following hypothesis: “If soil pH is changed, then germination of grass seeds is affected.” They tested this hypothesis and the results of the investigation are shown in the graph below. Percentage (%) germination of grass seeds Soil pH 0 1 2 3 4 5 6 7 8 9 10",
-  "notes": "Held back before as \"the investigation is printed on the paper and not reproduced in the scheme\". It does not need to be: the paper prints the horticulturist's germination trial as Question 2's own stem, which the card carries, and the scheme answers the part with content — the two quantities the trial actually varied and measured. Question 2 is marked 2(5) + 5(2) across (a)-(f), one ladder for the whole question, so no part of it carries a mark of its own. totalMarks is the scheme table's award for one correct response (5). Neither parser reads this scheme's \"Question 2\" head, so the answer to this part is filed under the parser key (6, c, None) rather than under the paper's own Q2(c). The card lifts from that key and cites the PAPER."
+  "notes": "Held back before as \"the investigation is printed on the paper and not reproduced in the scheme\". It does not need to be: the paper prints the horticulturist's germination trial as Question 2's own stem, which the card carries, and the scheme answers the part with content — the two quantities the trial actually varied and measured. Question 2 is marked 2(5) + 5(2) across (a)-(f), one ladder for the whole question, so no part of it carries a mark of its own. totalMarks is the scheme table's award for one correct response (5). Neither parser reads this scheme's \"Question 2\" head, so the answer to this part is filed under the parser key (6, c, None) rather than under the paper's own Q2(c). The card lifts from that key and cites the PAPER.",
+  "figureKey": "biology-2023-hl-038-p004-i1"
  },
  {
   "id": "bio-2023-hl-q4-b",
@@ -39978,7 +40035,8 @@
    }
   ],
   "stem": "DNA is a complex biological molecule. The diagram shows part of a DNA molecule. X T G",
-  "notes": "A draw-on-the-printed-diagram part, carded on what the scheme says rather than refused for being a drawing: the marking point does not stop at \"rectangle correctly indicating one DNA nucleotide\" but goes on to name the three things that rectangle has to enclose, which is the recallable content and the reason candidates draw the box in the wrong place. The card therefore stands without the printed diagram. Question 4 is marked 2(5) + 5(2) across (a)-(g), one ladder for the whole question, so no part of it carries a mark of its own. totalMarks is the scheme table's award for one correct response (5). Neither parser reads this scheme's \"Question 4\" head, so the answer to this part is filed under the parser key (7, b, None) rather than under the paper's own Q4(b). The card lifts from that key and cites the PAPER."
+  "notes": "A draw-on-the-printed-diagram part, carded on what the scheme says rather than refused for being a drawing: the marking point does not stop at \"rectangle correctly indicating one DNA nucleotide\" but goes on to name the three things that rectangle has to enclose, which is the recallable content and the reason candidates draw the box in the wrong place. The card therefore stands without the printed diagram. Question 4 is marked 2(5) + 5(2) across (a)-(g), one ladder for the whole question, so no part of it carries a mark of its own. totalMarks is the scheme table's award for one correct response (5). Neither parser reads this scheme's \"Question 4\" head, so the answer to this part is filed under the parser key (7, b, None) rather than under the paper's own Q4(b). The card lifts from that key and cites the PAPER.",
+  "figureKey": "biology-2023-hl-038-p006-i1"
  },
  {
   "id": "bio-2023-hl-q5-f-i",
@@ -40110,7 +40168,8 @@
     "marks": 3
    }
   ],
-  "notes": "Two responses, priced 3 each: the scheme starts the naming half with an asterisk, its mark for an answer that must be exact, and answers the \"explain\" half with the property that makes it catabolic. The second row is sliced past the scheme's own cue, \"Explain your answer.\", which it welds onto the front of the marking point. The stem is dropped: the paper block yields only the reaction graphic flattened to \"A B + C Energy +\". Neither parser reads this scheme's \"Question 12\" head, so the answer to this part is filed under the parser key (4, a, ii) rather than under the paper's own Q12(a)(ii). The card lifts from that key and cites the PAPER."
+  "notes": "Two responses, priced 3 each: the scheme starts the naming half with an asterisk, its mark for an answer that must be exact, and answers the \"explain\" half with the property that makes it catabolic. The second row is sliced past the scheme's own cue, \"Explain your answer.\", which it welds onto the front of the marking point. The stem is dropped: the paper block yields only the reaction graphic flattened to \"A B + C Energy +\". Neither parser reads this scheme's \"Question 12\" head, so the answer to this part is filed under the parser key (4, a, ii) rather than under the paper's own Q12(a)(ii). The card lifts from that key and cites the PAPER.",
+  "figureKey": "biology-2023-hl-040-p003-i1"
  },
  {
   "id": "bio-2023-hl-q12-b-v",
@@ -40688,7 +40747,8 @@
    }
   ],
   "stem": "Name of gland Hormone Function of hormone Thyroxine Adrenaline To prepare the body for “fight or flight” Testes",
-  "notes": "A table-completion. The paper prints three rows and pre-fills four cells — the hormones Thyroxine and Adrenaline, the fight-or-flight function, and the gland Testes — leaving five blanks; the stem is the paper's own table, flattened by the text layer into one line, which is why it reads as a run of headings and given cells. The scheme prints the completed table and each row here is one of its rows. The second row is sliced to \"Adrenal Adrenaline\" because the third cell of that row was already filled in on the paper as the example, and because the scheme's own line breaks mid-phrase there. Q17(b) is marked 2(7) + 8(2) across (i)-(iv); totalMarks is the scheme table's award for the five correct responses this card holds (20) — five blanks, not three rows. The scheme prints its answer to this part under the parser key (17, a, ii), not under the paper's own Q17(b)(ii): this scheme drifts a part out of step wherever a mark-band table, a page footer or a bare sub-head sits between two answers. The citation follows the PAPER."
+  "notes": "A table-completion. The paper prints three rows and pre-fills four cells — the hormones Thyroxine and Adrenaline, the fight-or-flight function, and the gland Testes — leaving five blanks; the stem is the paper's own table, flattened by the text layer into one line, which is why it reads as a run of headings and given cells. The scheme prints the completed table and each row here is one of its rows. The second row is sliced to \"Adrenal Adrenaline\" because the third cell of that row was already filled in on the paper as the example, and because the scheme's own line breaks mid-phrase there. Q17(b) is marked 2(7) + 8(2) across (i)-(iv); totalMarks is the scheme table's award for the five correct responses this card holds (20) — five blanks, not three rows. The scheme prints its answer to this part under the parser key (17, a, ii), not under the paper's own Q17(b)(ii): this scheme drifts a part out of step wherever a mark-band table, a page footer or a bare sub-head sits between two answers. The citation follows the PAPER.",
+  "figureKey": "biology-2023-ol-040-p009-i0"
  },
  {
   "id": "bio-2023-ol-q17-c-ii",
@@ -41095,7 +41155,8 @@
     "meaning": "Pancreas",
     "askedInThisQuestion": true
    }
-  ]
+  ],
+  "figureKey": "biology-2024-hl-038-p005-i1"
  },
  {
   "id": "bio-2024-hl-q3-b",
@@ -41126,9 +41187,20 @@
    {
     "letter": "A",
     "meaning": "Oesophagus",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Liver",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Pancreas",
     "askedInThisQuestion": false
    }
-  ]
+  ],
+  "figureKey": "biology-2024-hl-038-p005-i1"
  },
  {
   "id": "bio-2024-hl-q3-c",
@@ -41157,11 +41229,22 @@
   "notes": "The paper prints parts (a) to (f) beside one diagram of the human alimentary canal. Parts (b) to (f) share the tariff \"5(3) + 2\", so no part of that block has a mark of its own; totalMarks is the 3-mark rate the first five correct answers are paid. What organ B is comes from the scheme's own answer to Q3(a) on the same diagram.",
   "labelKey": [
    {
+    "letter": "A",
+    "meaning": "Oesophagus",
+    "askedInThisQuestion": false
+   },
+   {
     "letter": "B",
     "meaning": "Liver",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Pancreas",
     "askedInThisQuestion": false
    }
-  ]
+  ],
+  "figureKey": "biology-2024-hl-038-p005-i1"
  },
  {
   "id": "bio-2024-hl-q3-d",
@@ -41231,7 +41314,25 @@
    }
   ],
   "stem": "Isolation of DNA is the first stage of genetic engineering. Three of the other stages are labelled Stage X, Stage Y and Stage Z in the diagram. Chromosome Cell Gene Isolation Stage X Recombinant DNA Stage X Plasmid (vector) Stage Y Stage Z Host cell Product",
-  "notes": "Question 7 is marked 6(3) + 2 across its seven markable items — (a), the three stages here, and the three parts of (c) — so no item has a mark of its own; totalMarks is three items at the 3-mark rate. The stages are lettered on the paper's flow diagram, and the scheme names each one in full, so the rows carry the naming without it."
+  "notes": "Question 7 is marked 6(3) + 2 across its seven markable items — (a), the three stages here, and the three parts of (c) — so no item has a mark of its own; totalMarks is three items at the 3-mark rate. The stages are lettered on the paper's flow diagram, and the scheme names each one in full, so the rows carry the naming without it.",
+  "labelKey": [
+   {
+    "letter": "X",
+    "meaning": "Cutting (accept restriction)",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "Y",
+    "meaning": "Transformation or introduction of base sequence changes",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "Z",
+    "meaning": "Expression",
+    "askedInThisQuestion": true
+   }
+  ],
+  "figureKey": "biology-2024-hl-038-p009-i1"
  },
  {
   "id": "bio-2024-hl-q10-b-i",
@@ -42320,7 +42421,20 @@
    }
   ],
   "stem": "The diagram shows DNA replication followed by mitosis. Stage 4 Stage 2 Stage 3 Stage 1 DNA replication",
-  "notes": "Q3 prices each part separately and they sum to the 20 the scheme prints: 3 + 3 + 4 + 4 + 3 + 3."
+  "notes": "Q3 prices each part separately and they sum to the 20 the scheme prints: 3 + 3 + 4 + 4 + 3 + 3.",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Chromosome",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "(Spindle) fibre",
+    "askedInThisQuestion": false
+   }
+  ],
+  "figureKey": "biology-2024-ol-paper-p005-i0"
  },
  {
   "id": "bio-2024-ol-q5-b",
@@ -42375,7 +42489,8 @@
     "meaning": "Pelvis",
     "askedInThisQuestion": true
    }
-  ]
+  ],
+  "figureKey": "biology-2024-ol-038-p007-i0"
  },
  {
   "id": "bio-2024-ol-q5-c",
@@ -42450,7 +42565,8 @@
     "meaning": "Temperature",
     "askedInThisQuestion": true
    }
-  ]
+  ],
+  "figureKey": "biology-2024-ol-038-p010-i0"
  },
  {
   "id": "bio-2024-ol-q11-b-ii",
@@ -42522,7 +42638,8 @@
     "marks": 3
    }
   ],
-  "stem": "Barn owl Badger Fox Bat Robin Grasshopper Mouse Thrush Mosquito Snail Grasses 2. How many feeding (trophic) levels are in your food chain?"
+  "stem": "Barn owl Badger Fox Bat Robin Grasshopper Mouse Thrush Mosquito Snail Grasses 2. How many feeding (trophic) levels are in your food chain?",
+  "figureKey": "biology-2024-ol-040-p002-i0"
  },
  {
   "id": "bio-2024-ol-q13-b-iii",
@@ -42831,7 +42948,20 @@
    }
   ],
   "stem": "The diagram shows the human digestive system.",
-  "notes": "Both rows are \"any two\" menus in the scheme, not single answers: the drawing row is worth 3 for any two of the structures listed, the label row 2(1) for any two of its own list. The 2025 Higher Level scheme spells its question heads out in full (\"Question 17\"), which no parser reads, so its answers are filed under the numbered lines of the marking preamble instead of under the question. The citation above is the paper's own numbering."
+  "notes": "Both rows are \"any two\" menus in the scheme, not single answers: the drawing row is worth 3 for any two of the structures listed, the label row 2(1) for any two of its own list. The 2025 Higher Level scheme spells its question heads out in full (\"Question 17\"), which no parser reads, so its answers are filed under the numbered lines of the marking preamble instead of under the question. The citation above is the paper's own numbering.",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Oesophagus",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Stomach",
+    "askedInThisQuestion": false
+   }
+  ],
+  "figureKey": "biology-2025-hl-038-p008-i1"
  },
  {
   "id": "bio-2025-hl-q16-a-iii",
@@ -43059,7 +43189,8 @@
     "meaning": "pH",
     "askedInThisQuestion": true
    }
-  ]
+  ],
+  "figureKey": "biology-2025-ol-038-p010-i0"
  },
  {
   "id": "bio-2025-ol-q11-c-i",
@@ -43420,7 +43551,8 @@
     "meaning": "Foetus",
     "askedInThisQuestion": true
    }
-  ]
+  ],
+  "figureKey": "biology-2025-ol-040-p006-i0"
  },
  {
   "id": "bio-2025-ol-q15-c-i",
@@ -43543,7 +43675,8 @@
     "marks": 3
    }
   ],
-  "notes": "The scheme prices this 4(3) — four words placed at three marks each, twelve in all. The paper leaves two cells blank in the amylase row (Starch and Maltose) and one in each of the other two (Lipase, Protease), which is how the twelve divide across the three rows here. The rows are the completed table; the words the candidate had to place are Protease, Maltose, Starch and Lipase."
+  "notes": "The scheme prices this 4(3) — four words placed at three marks each, twelve in all. The paper leaves two cells blank in the amylase row (Starch and Maltose) and one in each of the other two (Lipase, Protease), which is how the twelve divide across the three rows here. The rows are the completed table; the words the candidate had to place are Protease, Maltose, Starch and Lipase.",
+  "figureKey": "biology-2025-ol-040-p007-i0"
  },
  {
   "id": "bio-2025-ol-q16-d-i",

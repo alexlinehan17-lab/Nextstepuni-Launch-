@@ -9507,6 +9507,33 @@ export const CARDS: SecCard[] = [
     ],
   } as SecCard,
   {
+    ...base, kind: "diagram",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2022-ol-q4-a", topicId: "bio-2-6", conceptId: "skin-structure-parts",
+    section: "A", questionRef: "2022 OL Q4(a)",
+    stem: "The diagram shows a section through human skin. Blood vessel Sweat gland",
+    questionText: "Name the parts labelled A and B in the diagram.",
+    tariffModel: {"kind":"orderedSplit","notation":"6(3) + 2"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A: Hair", marks: null },
+    { id: "r-2", kind: "point", verbatim: "B: Sebaceous gland", marks: null },
+    ],
+    figure: {
+          "candId": "biology-2022-ol-038-p005-i1",
+          "src": "/exam-figures/biology/markbank/biology-2022-ol-038-p005-i1.png",
+          "srcHash": "06ca248720cff1af6155d0d43d1da17c",
+          "alt": "Labelled section through human skin (booklet 038, page 5). Greyscale line drawing: epidermis over dermis over a layer of fat cells. A single hair shaft runs diagonally from top-left into its follicle, with an arrow labelled A pointing at that shaft above the skin surface. An arrow labelled B points at the small lobed gland sitting against the side of the follicle. Two word labels are printed on the artwork itself: 'Sweat gland' arrowed to the coiled tube at lower left and 'Blood vessel' arrowed to the looped vessel at right. Whole diagram in frame; no question text and no neighbouring artwork.",
+          "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Hair","askedInThisQuestion":true},{"letter":"B","meaning":"Sebaceous gland","askedInThisQuestion":true}],
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2022, level: "ordinary",
     paperFileid: "LC025GLP038EV",
@@ -9519,6 +9546,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "B", marks: null },
     ],
+    figure: {
+          "candId": "biology-2022-ol-038-p006-i1",
+          "src": "/exam-figures/biology/markbank/biology-2022-ol-038-p006-i1.png",
+          "srcHash": "56b019babc42ea691b3660443f70c8ac",
+          "alt": "DNA profile gel comparison (booklet 038, page 6). Two boxed panels side by side: the narrow left panel is a single lane captioned 'Crime scene'; the wider right panel holds three lanes captioned A, B and C. Every band in all four lanes is in frame, and lane B's banding pattern visibly matches the crime-scene lane. No question text, no neighbouring artwork.",
+          "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9533,6 +9568,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Daisy", marks: 3 },
     ],
+    figure: {
+          "candId": "biology-2022-ol-paper-p008-i0",
+          "src": "/exam-figures/biology/markbank/biology-2022-ol-paper-p008-i0.png",
+          "srcHash": "b0f52c52903cf7feb3798258dc5c532d",
+          "alt": "Six-column ruled data table with a grey-shaded header row and a grey-shaded first column. Header cells read Plant, Station 1, Station 2, Station 3, Station 4, Station 5. The Plantain row carries bold tick marks in Station 2, Station 4 and Station 5; the Daisy row carries ticks in Station 1, Station 2, Station 3 and Station 5; the Dandelion row carries ticks in Station 1 and Station 3. All other cells are blank white.",
+          "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9576,6 +9619,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Blackberry or grass", marks: null },
     ],
+    figure: {
+          "candId": "biology-2022-ol-040-p002-i1",
+          "src": "/exam-figures/biology/markbank/biology-2022-ol-040-p002-i1.png",
+          "srcHash": "662d89a2d72f93fe11132f20992aee79",
+          "alt": "Food web of interconnected food chains (booklet 040, page 2). Ten named organisms, each a small engraving with its name printed beside it: Grass and Blackberry along the bottom, then Grasshopper, Aphid, Spider, Shrew, Hare and Blackbird, with Fox and Owl at the top. Arrows run from Grass to Grasshopper, Shrew and Hare; from Blackberry to Shrew, Aphid, Blackbird and Fox; from Aphid to Spider; and upward from Shrew, Hare, Spider and Blackbird into Owl and Fox. Every organism, arrow and caption is in frame; no question text and no part (c) passage.",
+          "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9589,6 +9640,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Owl or spider", marks: null },
     ],
+    figure: {
+          "candId": "biology-2022-ol-040-p002-i1",
+          "src": "/exam-figures/biology/markbank/biology-2022-ol-040-p002-i1.png",
+          "srcHash": "662d89a2d72f93fe11132f20992aee79",
+          "alt": "Food web of interconnected food chains (booklet 040, page 2). Ten named organisms, each a small engraving with its name printed beside it: Grass and Blackberry along the bottom, then Grasshopper, Aphid, Spider, Shrew, Hare and Blackbird, with Fox and Owl at the top. Arrows run from Grass to Grasshopper, Shrew and Hare; from Blackberry to Shrew, Aphid, Blackbird and Fox; from Aphid to Spider; and upward from Shrew, Hare, Spider and Blackbird into Owl and Fox. Every organism, arrow and caption is in frame; no question text and no part (c) passage.",
+          "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9602,6 +9661,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Fox or blackbird or shrew", marks: null },
     ],
+    figure: {
+          "candId": "biology-2022-ol-040-p002-i1",
+          "src": "/exam-figures/biology/markbank/biology-2022-ol-040-p002-i1.png",
+          "srcHash": "662d89a2d72f93fe11132f20992aee79",
+          "alt": "Food web of interconnected food chains (booklet 040, page 2). Ten named organisms, each a small engraving with its name printed beside it: Grass and Blackberry along the bottom, then Grasshopper, Aphid, Spider, Shrew, Hare and Blackbird, with Fox and Owl at the top. Arrows run from Grass to Grasshopper, Shrew and Hare; from Blackberry to Shrew, Aphid, Blackbird and Fox; from Aphid to Spider; and upward from Shrew, Hare, Spider and Blackbird into Owl and Fox. Every organism, arrow and caption is in frame; no question text and no part (c) passage.",
+          "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9643,6 +9710,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Vascular bundles in a ring", marks: null },
     ],
+    figure: {
+          "candId": "biology-2022-ol-040-p006-i1",
+          "src": "/exam-figures/biology/markbank/biology-2022-ol-040-p006-i1.png",
+          "srcHash": "37bd7a746186f5ac621fe4baf614a785",
+          "alt": "Transverse section through a dicotyledonous plant stem (booklet 040, page 6). A large circle with eight small oval vascular bundles arranged in a single ring just inside the outline. A leader labelled A points to the outer boundary layer of the circle; an arrow labelled B points into the open central region inside the ring; a square bracket labelled C encloses one of the ring ovals at the bottom. The ring arrangement of the bundles, which is the answer to (b)(vii), is plainly visible. Cropped above the part (c) flower diagram, so no neighbouring artwork is included.",
+          "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9843,6 +9918,14 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Adrenal Adrenaline", marks: null },
     { id: "r-3", kind: "point", verbatim: "Testes Testosterone Sperm production", marks: null },
     ],
+    figure: {
+          "candId": "biology-2023-ol-040-p009-i0",
+          "src": "/exam-figures/biology/markbank/biology-2023-ol-040-p009-i0.png",
+          "srcHash": "de1e8e6d32100731c3446c9346540c74",
+          "alt": "The paper's printed endocrine table for Q17(b)(ii): a three-column ruled table headed \"Name of gland | Hormone | Function of hormone\" with three body rows. Four cells are pre-filled as examples — the hormone Thyroxine in row 1, the hormone Adrenaline and the function \"To prepare the body for 'fight or flight'\" in row 2, and the gland Testes in row 3 — leaving five blank boxes for the candidate to complete. Cropped from page 9 of the 040 booklet at top 470pt / bottom 622pt so it excludes the question's body text above it and the Q17(a)(iv) synovial-joint photograph higher up the same page.",
+          "attribution": "SEC Leaving Certificate Biology 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -10141,7 +10224,7 @@ export const CARDS: SecCard[] = [
     ],
   } as SecCard,
   {
-    ...base, kind: "question",
+    ...base, kind: "diagram",
     year: 2024, level: "ordinary",
     paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
@@ -10153,6 +10236,47 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Chromosome", marks: 3 },
     ],
+    figure: {
+          "candId": "biology-2024-ol-paper-p005-i0",
+          "src": "/exam-figures/biology/markbank/biology-2024-ol-paper-p005-i0.png",
+          "srcHash": "b5aecc29acadaa4e6e1c29915aafcb40",
+          "alt": "Greyscale sequence of six pale cells joined by bold black arrows, read left to right. The first circular cell contains one dark grey rod and one light grey rod, with a bold A arrowed to the dark rod. An arrow captioned 'DNA replication' leads to the cell headed 'Stage 1', where each rod has become a doubled X-shaped chromosome. 'Stage 2' is an elongated oval cell filled with fine curved fibres running pole to pole, both doubled chromosomes lined up across its middle. 'Stage 3' shows the cell pinched in at the waist with the separated halves of each chromosome drawn toward opposite ends among the same fine fibres. A bold B below has two leader lines, one into the fibres of Stage 2 and one into the fibres of Stage 3. Two diverging arrows from Stage 3 lead to a pair of round 'Stage 4' daughter cells stacked one above the other, each holding one dark and one light rod.",
+          "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Chromosome","askedInThisQuestion":true},{"letter":"B","meaning":"(Spindle) fibre","askedInThisQuestion":false}],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC025GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2024-ol-q5-b", topicId: "bio-2-4", conceptId: "bones-of-the-human-skeleton",
+    section: "A", questionRef: "2024 OL Q5(b)",
+    stem: "The diagram shows the human skeleton.",
+    questionText: "Name the parts of the skeleton labelled A, B and C.",
+    tariffModel: {"kind":"orderedSplit","notation":"6(3) + 2"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A: Skull or cranium", marks: null },
+    { id: "r-2", kind: "point", verbatim: "B: Rib", marks: null },
+    { id: "r-3", kind: "point", verbatim: "C: Pelvis", marks: null },
+    ],
+    figure: {
+          "candId": "biology-2024-ol-038-p007-i0",
+          "src": "/exam-figures/biology/markbank/biology-2024-ol-038-p007-i0.png",
+          "srcHash": "52e88d5ddffeb3bfbecaf6ad948fb5ad",
+          "alt": "Full-length line drawing of the human skeleton from page 7 of the Sections A and B booklet, with three leader arrows: A to the skull, B to the ribs, C to the pelvis. Cropped to the right-hand column only so the question's answer boxes and the joint tick-boxes below are excluded.",
+          "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Skull or cranium","askedInThisQuestion":true},{"letter":"B","meaning":"Rib","askedInThisQuestion":true},{"letter":"C","meaning":"Pelvis","askedInThisQuestion":true}],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -10169,7 +10293,7 @@ export const CARDS: SecCard[] = [
     ],
   } as SecCard,
   {
-    ...base, kind: "question",
+    ...base, kind: "diagram",
     year: 2024, level: "ordinary",
     paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Ordinary Level — © State Examinations Commission.",
@@ -10182,6 +10306,18 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "A: Rate", marks: 3 },
     { id: "r-2", kind: "point", verbatim: "B: Temperature", marks: 3 },
     ],
+    figure: {
+          "candId": "biology-2024-ol-038-p010-i0",
+          "src": "/exam-figures/biology/markbank/biology-2024-ol-038-p010-i0.png",
+          "srcHash": "b20f7f590272711842c0f7b57e276a81",
+          "alt": "The enzyme rate-versus-temperature graph from page 10 of the Sections A and B booklet: a bell curve peaking near 30 degrees C over an x-axis scaled 0, 30, 60, 90 degrees C, with the blank \"A:\" label box printed beside the vertical axis and the blank \"B:\" label box printed beneath the horizontal axis, which is how the paper marks which axis is A and which is B.",
+          "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Rate","askedInThisQuestion":true},{"letter":"B","meaning":"Temperature","askedInThisQuestion":true}],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -10224,6 +10360,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Order of consumption or energy flow", marks: 3 },
     ],
+    figure: {
+          "candId": "biology-2024-ol-040-p002-i0",
+          "src": "/exam-figures/biology/markbank/biology-2024-ol-040-p002-i0.png",
+          "srcHash": "458ba43073c0bf32ed11ce567fe68d8e",
+          "alt": "The food web from page 2 of the Section C booklet: grasses at the base feeding snail, mouse, grasshopper and mosquito, which in turn feed thrush, robin, bat, fox, barn owl and badger, with every arrow drawn between the organisms. Cropped below the \"The diagram shows a food web\" line so no question text is carried.",
+          "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -10287,7 +10431,7 @@ export const CARDS: SecCard[] = [
     ],
   } as SecCard,
   {
-    ...base, kind: "question",
+    ...base, kind: "diagram",
     year: 2025, level: "ordinary",
     paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
@@ -10299,6 +10443,18 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "A: Rate", marks: 3 },
     { id: "r-2", kind: "point", verbatim: "B: pH", marks: 3 },
     ],
+    figure: {
+          "candId": "biology-2025-ol-038-p010-i0",
+          "src": "/exam-figures/biology/markbank/biology-2025-ol-038-p010-i0.png",
+          "srcHash": "b9f29379381646172082ffc2ee1ed49c",
+          "alt": "Unlabelled enzyme-activity graph from the pH investigation: a bell-shaped curve peaking at about pH 7 over an x-axis scaled 2, 4, 6, 8, 10, 12, with an empty labelled box \"A:\" sitting beside the vertical axis and an empty labelled box \"B:\" sitting under the horizontal axis, so the crop shows which axis each letter belongs to. No question body text, no neighbouring artwork.",
+          "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Rate","askedInThisQuestion":true},{"letter":"B","meaning":"pH","askedInThisQuestion":true}],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -10439,7 +10595,7 @@ export const CARDS: SecCard[] = [
     ],
   } as SecCard,
   {
-    ...base, kind: "question",
+    ...base, kind: "diagram",
     year: 2025, level: "ordinary",
     paperFileid: "LC025GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2025 Ordinary Level — © State Examinations Commission.",
@@ -10451,6 +10607,18 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "X: Placenta", marks: 3 },
     { id: "r-2", kind: "point", verbatim: "Y: Foetus", marks: 3 },
     ],
+    figure: {
+          "candId": "biology-2025-ol-040-p006-i0",
+          "src": "/exam-figures/biology/markbank/biology-2025-ol-040-p006-i0.png",
+          "srcHash": "d236cdfdfa0fab858f377af537dcfbbc",
+          "alt": "Sectional diagram of a developing foetus in the uterus, with leader arrows from the letter X (pointing to the tissue lining the upper uterine wall) and the letter Y (pointing to the body of the developing baby). Cropped above the Q15(c) male reproductive diagram on the same page, so no A/B/C artwork bleeds in.",
+          "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "X",
+                "Y"
+          ]
+    },
+    labelKey: [{"letter":"X","meaning":"Placenta","askedInThisQuestion":true},{"letter":"Y","meaning":"Foetus","askedInThisQuestion":true}],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -10481,6 +10649,14 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Lipids Lipase Triglycerides", marks: 3 },
     { id: "r-3", kind: "point", verbatim: "Protein Protease Amino acids", marks: 3 },
     ],
+    figure: {
+          "candId": "biology-2025-ol-040-p007-i0",
+          "src": "/exam-figures/biology/markbank/biology-2025-ol-040-p007-i0.png",
+          "srcHash": "857092e66b72e147c3ea82acba1f12da",
+          "alt": "The printed three-column ruled table (Substrate | Enzyme | Product) the candidate must copy and complete: row 1 has only \"Amylase\" in the Enzyme column, row 2 has \"Lipids\" and \"Triglycerides\" with the Enzyme cell blank, row 3 has \"Protein\" and \"Amino acid\" with the Enzyme cell blank. The card's flattened text carries the words but not which cells are empty, which is the whole task, so the ruled table is bound. Header row and all four ruled rows intact; no question body text.",
+          "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",

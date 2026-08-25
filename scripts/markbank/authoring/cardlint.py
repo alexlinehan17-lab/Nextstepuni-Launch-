@@ -79,6 +79,17 @@ INLINE_TABLE = re.compile(r'(?:\b\d[\d.,/]*\b[^\w]{0,4}){6,}')
 FORMULA = re.compile(r'[\u2192\u21cc\u2194=]|\+\s*\S')
 
 
+# A card that names lettered parts is a figure card whatever words it uses:
+# "Name the parts A, B, C" carries no figure-reference word at all, so the
+# ghost-figure rule missed eleven Biology cards that build-deck then dropped.
+# Mirrored from build-deck.mjs's namesLetters gate — a lettered question needs
+# both the crop and a decoded label key.
+NAMES_LETTERS = re.compile(
+    r'\blabelled [A-Z]\b|\bstructures? [A-Z](?:,| and )|\bparts? [A-Z](?:,| and )'
+    r'|\blabelled\s+(?:parts|structures)\b', re.I)
+INVITES_DRAWING = re.compile(r'\b(?:draw|sketch|label the diagram)\b', re.I)
+
+
 def label_junk(text):
     """Mostly short tokens and numbers, no sentence shape."""
     if not text or len(text) < 20:
@@ -127,6 +138,12 @@ def lint(subject):
             flags.append((subject, c['id'], 'ghost-figure', joined.strip()[:90]))
         if label_junk(stem):
             flags.append((subject, c['id'], 'label-junk', stem[:90]))
+        lettered = (NAMES_LETTERS.search(qtext)
+                    and not INVITES_DRAWING.search(qtext))
+        if lettered and c['id'] not in REVIEWED and not (
+                has_fig and c.get('labelKey')):
+            flags.append((subject, c['id'], 'undecoded-letters',
+                          qtext.strip()[:90]))
     return flags
 
 

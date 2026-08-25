@@ -49,7 +49,10 @@ OVERRIDES = os.path.join(HERE, 'maths_qfig_overrides.json')
 
 DPI = 170
 SCALE = DPI / 72.0
-X0, X1 = 40.0, 556.0        # the text column, with room for diagram overhang
+# 28 on the left: a diagram's label can sit outside the prose margin — the
+# "Trail" caption of 2021 OL P1 Q10(b) starts at x~32 and a 40pt clip printed
+# it as "ail".
+X0, X1 = 28.0, 560.0        # the text column, with room for diagram overhang
 Y_TOP, Y_FOOT = 46.0, 792.0  # running footer starts at y ~= 799.7 everywhere
 GAP = 18                     # px between stitched regions
 PAD = 8                      # px of white retained around each trimmed region
@@ -239,7 +242,10 @@ class Sitting:
             # Not every answer box spans the column: 2022 Higher Level
             # Q6(c) sets a half-width grid beside the working, and a
             # 420pt floor let every one of those through.
-            if r.width > 170 and r.height > 60:
+            # 45, not 60: the "Period: / Range:" answer box of 2021 HL P2
+            # Q9(b) is 57pt tall and slipped under the floor. The rect test
+            # and the sparse-text test still do the discriminating.
+            if r.width > 170 and r.height > 45:
                 inside = [l for l in text_lines
                           if r.y0 - 2 <= l[1] and l[2] <= r.y1 + 2]
                 # A prompt or two ("Show:", "Roots = ( , , )") or a template
@@ -714,10 +720,20 @@ class Sitting:
                 for (pg, y0, y1, x0, txt) in self.lines:
                     if pg == page and (sp2, sy2 - 1) <= (pg, y0) < (ep2, ey2):
                         owned.append((y0, y1))
+            # A diagram's own labels ("Trail", "0·5 km", an axis name) belong
+            # to no band — they sit beside the drawing, outside the part's
+            # text — so masking unowned rows ate them, sparing only the few
+            # pixels that happened to overlap the ink and printing "Trail" as
+            # "ail". A row that a kept drawing reaches across is part of that
+            # drawing.
+            def labels_a_drawing(y0, y1):
+                return any(r.y0 - 4 <= y1 and y0 <= r.y1 + 4
+                           for r in self.ink(page))
             frames += [pymupdf.Rect(X0, y0, X1, y1)
                        for (pg, y0, y1, x0, txt) in self.lines
                        if pg == page and y1 > top + 1 and y0 < bot - 1
-                       and not any(abs(y0 - a) < 0.6 for a, _ in owned)]
+                       and not any(abs(y0 - a) < 0.6 for a, _ in owned)
+                       and not labels_a_drawing(y0, y1)]
         if not frames:
             return img
         keep = list(self.ink(page)) + self._rules.get(page, [])
@@ -734,7 +750,12 @@ class Sitting:
             fx1 = min(w, _px(f.x1 + 1, X0))
             for y in range(fy0, fy1):
                 page_y = top + y / SCALE
-                spans = [(max(fx0, _px(k.x0 - 1, X0)), min(fx1, _px(k.x1 + 1, X0)))
+                # BOTH ends clamp to the frame. Clamping only the right end
+                # let a keep-rect starting beyond the frame set a paint target
+                # past it: the answer box of 2021 OL P1 Q10(b) reached across
+                # to the circle beside it and erased "Tr" from "Trail".
+                spans = [(min(fx1, max(fx0, _px(k.x0 - 1, X0))),
+                          min(fx1, max(fx0, _px(k.x1 + 1, X0))))
                          for k in keep if k.y0 - 1 <= page_y <= k.y1 + 1]
                 x = fx0
                 for (kx0, kx1) in sorted(spans):
