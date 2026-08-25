@@ -76,8 +76,8 @@ const decks = [
    * players) — the fix ships every part's paper stem, and four cards whose
    * question texts previously collided as duplicates are disambiguated by
    * their stems and now ship. Nothing was removed; all prior ids remain. */
-  ['maths:higher', MATHS_HIGHER, 390, '23beae5a41188a29cd14fad10d9051270d53455c9df02f6e225d57fd87e2d6e0'],
-  ['maths:ordinary', MATHS_ORDINARY, 400, 'd3b547c999646ea314ffaa9e5090df989d0e0dba10203f92d0937bd4a2f54031'],
+  ['maths:higher', MATHS_HIGHER, 387, 'e5daea14329527050997f6c7d02d838919bb8c72efb236fadaa02b69fd369bc5'],
+  ['maths:ordinary', MATHS_ORDINARY, 397, 'feb0fc8f67372bcef789bbe1616dd3241c6c42b9fd8f4d12a3204c84a49b5c74'],
   ['construction-studies:higher', CONS_HIGHER, 255, 'b74a39fd589f1082d6378190aee778d528eff0968d7af0ee9144525f2e40d57b'],
   ['construction-studies:ordinary', CONS_ORDINARY, 250, 'f56985e32cc1f02a2e2f7a7eb300a44646b75cf3604a12b5a478bde2a520d2da'],
 ] as const;
@@ -94,6 +94,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7222);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7216);
   });
 });

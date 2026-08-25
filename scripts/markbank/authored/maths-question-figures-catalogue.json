@@ -777,10 +777,10 @@
   "description": "The question as printed on the paper \u2014 Complete the table below to show the values of \ud835\udc49(\ud835\udc65) = 4\ud835\udc65\u0b37\u221240\ud835\udc65\u0b36+ 100\ud835\udc65, where \ud835\udc65\u2208\u211d, (d) for the given values of \ud835\udc65 in the domain 0 \u2264\ud835\udc65\u22645. \ud835\udc65 0 0\u00b75 1 1\u00b75 2 2\u00b75 3 3\u00b75 4 4\u00b75 5 40\u00b75 4\u00b75 \ud835\udc49(\ud835\udc65)"
  },
  {
-  "file": "maths-2021-OL-ask-p1-q8-f-iii.png",
+  "file": "maths-2021-OL-ask-p1-q8-f-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2021 OL Paper 1 Q8(f)(iii)",
+  "questionRef": "2021 OL Paper 1 Q8(f)(i)\u2013(iii)",
   "description": "The question as printed on the paper \u2014 A square sheet of cardboard, of side 10 units, is used to make an open box. Squares of side \ud835\udc65 units, where \ud835\udc65\u2208\u211d, are removed from each corner of the cardboard and it is then folded along the dotted lines, as shown in the "
  },
  {
@@ -1134,11 +1134,11 @@
   "description": "The question as printed on the paper \u2014 Explain why the following equation in \ud835\udc65 has no real solutions: (b) (2\ud835\udc65+ 3)\u0b36+ 7 = 0"
  },
  {
-  "file": "maths-2022-HL-ask-p1-q1-c-ii.png",
+  "file": "maths-2022-HL-ask-p1-q1-c-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2022 HL Paper 1 Q1(c)(ii)",
-  "description": "The question as printed on the paper \u2014 Find the remainder when 3\ud835\udc65\u0b36+ 2\ud835\udc65+ 5 is divided by \ud835\udc65+ 1. (ii) That is, find the value of \ud835\udc50 when 3\ud835\udc65\u0b36+ 2\ud835\udc65+ 5 is written in the form 3\ud835\udc65\u0b36+ 2\ud835\udc65+ 5 = (\ud835\udc65+ 1)(\ud835\udc4e\ud835\udc65+ \ud835\udc4f) + \ud835\udc50 where \ud835\udc4e, \ud835\udc4f, \ud835\udc50\u2208\u2124."
+  "questionRef": "2022 HL Paper 1 Q1(c)(i), (ii)",
+  "description": "The question as printed on the paper \u2014 Show that \ud835\udc65= \u22121 is not a solution of 3\ud835\udc65\u0b36+ 2\ud835\udc65+ 5 = 0. (c) (i) Find the remainder when 3\ud835\udc65\u0b36+ 2\ud835\udc65+ 5 is divided by \ud835\udc65+ 1. (ii) That is, find the value of \ud835\udc50 when 3\ud835\udc65\u0b36+ 2\ud835\udc65+ 5 is written in the form 3\ud835\udc65\u0b36+ 2\ud835\udc65+ 5 = (\ud835\udc65+ 1)(\ud835\udc4e\ud835\udc65+ \ud835\udc4f) + \ud835\udc50 "
  },
  {
   "file": "maths-2022-HL-ask-p1-q2-a.png",
@@ -1484,10 +1484,10 @@
   "description": "The question as printed on the paper \u2014 The triangle \ud835\udc34\ud835\udc35\ud835\udc36 is shown in the diagram below. (b) |\ud835\udc34\ud835\udc36| = |\ud835\udc35\ud835\udc36| and |\u2220 \ud835\udc34\ud835\udc36\ud835\udc35| = 45\u00b0. |\ud835\udc34\ud835\udc35| = 10\u0da52 \u2212\u221a2 , as shown. Find the length |\ud835\udc34\ud835\udc36|. \ud835\udc36 45\u00b0 \ud835\udc35 \ud835\udc34 10\u0da72 \u2212\u221a2"
  },
  {
-  "file": "maths-2022-HL-ask-p2-q5-a-ii.png",
+  "file": "maths-2022-HL-ask-p2-q5-a-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2022 HL Paper 2 Q5(a)(ii)",
+  "questionRef": "2022 HL Paper 2 Q5(a)(i), (ii)",
   "description": "The question as printed on the paper \u2014 A survey on remote learning was carried out on a random sample of 400 students. (a) 135 of the students preferred remote learning over in-person learning. For parts (a)(i), (a)(ii), and (a)(iii), give all solutions as de"
  },
  {
@@ -1568,17 +1568,17 @@
   "description": "The question as printed on the paper \u2014 (a) Jena is researching fuel consumption in cars. She finds the following data for the number of miles per gallon (m/g) for eight different cars, labelled A to H, when driving in the city and on the motorway: Miles per g"
  },
  {
-  "file": "maths-2022-HL-ask-p2-q8-a-ii.png",
+  "file": "maths-2022-HL-ask-p2-q8-a-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2022 HL Paper 2 Q8(a)(ii)",
+  "questionRef": "2022 HL Paper 2 Q8(a)(i), (ii)",
   "description": "The question as printed on the paper \u2014 (a) Jena is researching fuel consumption in cars. She finds the following data for the number of miles per gallon (m/g) for eight different cars, labelled A to H, when driving in the city and on the motorway: Miles per g"
  },
  {
-  "file": "maths-2022-HL-ask-p2-q8-a-iv.png",
+  "file": "maths-2022-HL-ask-p2-q8-a-iii.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2022 HL Paper 2 Q8(a)(iv)",
+  "questionRef": "2022 HL Paper 2 Q8(a)(iii), (iv)",
   "description": "The question as printed on the paper \u2014 (a) Jena is researching fuel consumption in cars. She finds the following data for the number of miles per gallon (m/g) for eight different cars, labelled A to H, when driving in the city and on the motorway: Miles per g"
  },
  {
@@ -1750,10 +1750,10 @@
   "description": "The question as printed on the paper \u2014 \ud835\udc54(\ud835\udc65) = \ud835\udc65\u0b37\u22127\ud835\udc65\u0b36+ \ud835\udc65\u221212, where \ud835\udc65\u2208\u211d. (a) (iii) \ud835\udc54\u11f1(5) = 6. Use this to find the equation of the tangent to the curve \ud835\udc66= \ud835\udc54(\ud835\udc65) when \ud835\udc65= 5. Give your answer in the form \ud835\udc4e\ud835\udc65+ \ud835\udc4f\ud835\udc66+ \ud835\udc50= 0, where \ud835\udc4e, \ud835\udc4f, \ud835\udc50\u2208\u211d."
  },
  {
-  "file": "maths-2022-OL-ask-p1-q4-b-ii.png",
+  "file": "maths-2022-OL-ask-p1-q4-b-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2022 OL Paper 1 Q4(b)(ii)",
+  "questionRef": "2022 OL Paper 1 Q4(b)(i), (ii)",
   "description": "The question as printed on the paper \u2014 The graph of the function \ud835\udc66= \ud835\udc62(\ud835\udc65) is shown below, for 0 \u2264\ud835\udc65\u226410, \ud835\udc65\u2208\u211d. (b) \ud835\udc66 3 2 \ud835\udc66= \ud835\udc62(\ud835\udc65) 1 \ud835\udc65 2 4 6 8 10 -1 -2 -3 \ud835\udc62\u11f1(\ud835\udc65) is the derivative of \ud835\udc62(\ud835\udc65). Using the graph, write down a value of \ud835\udc65 for which \ud835\udc62\u2032(\ud835\udc65) is negative. (i) \ud835\udc65= "
  },
  {
@@ -1764,10 +1764,10 @@
   "description": "The question as printed on the paper \u2014 A falcon can dive at a speed of up to 120 miles per hour. (b) 1 mile is approximately 1\u22196 kilometres. Use this to work out how long it would take the falcon to travel 100 metres, when diving at this speed. Give your answ"
  },
  {
-  "file": "maths-2022-OL-ask-p1-q5-c-ii.png",
+  "file": "maths-2022-OL-ask-p1-q5-c-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2022 OL Paper 1 Q5(c)(ii)",
+  "questionRef": "2022 OL Paper 1 Q5(c)(i), (ii)",
   "description": "The question as printed on the paper \u2014 The diagram below shows the graphs of the functions \ud835\udc58(\ud835\udc65) and \ud835\udc5a(\ud835\udc65), for 0 \u2264\ud835\udc65\u22645, \ud835\udc65\u2208\u211d. (c) \ud835\udc66 3 \ud835\udc66= \ud835\udc58(\ud835\udc65) 2 1 \ud835\udc65 1 2 3 4 5 \ud835\udc66= \ud835\udc5a(\ud835\udc65) -1 -2 -3 Use the graphs to estimate each of the following, for 0 \u2264\ud835\udc65\u22645: the two values of \ud835\udc65 for w"
  },
  {
@@ -1799,10 +1799,10 @@
   "description": "The question as printed on the paper \u2014 The \ud835\udc5b th term of an arithmetic sequence is given by the following expression, for \ud835\udc5b\u2208\u2115: \ud835\udc47\u0be1= \u2212254 + (\ud835\udc5b\u22121)(4) \u0b36 \u123e2(\u2212254) + 4\ud835\udc5b\u22124\u123f. The sum of the first \ud835\udc5b terms of this sequence is given by \ud835\udc46\u0be1= (c) Solve the following equatio"
  },
  {
-  "file": "maths-2022-OL-ask-p1-q7-a-ii.png",
+  "file": "maths-2022-OL-ask-p1-q7-a-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2022 OL Paper 1 Q7(a)(ii)",
+  "questionRef": "2022 OL Paper 1 Q7(a)(i), (ii)",
   "description": "The question as printed on the paper \u2014 Joseph is doing a training session. During the session, his heart-rate, \u210e(\ud835\udc65), is measured in beats per minute (BPM). For part of the session, \u210e(\ud835\udc65) can be modelled using the following function: \u210e(\ud835\udc65) = \u2212 0\u221938\ud835\udc65\u0b37+ 2\u22196\ud835\udc65\u0b36\u22120\u221913"
  },
  {
@@ -1918,10 +1918,10 @@
   "description": "The question as printed on the paper \u2014 Brian buys a new car. The graph below represents a model that can be used to predict the value of this car, \ud835\udc49, for the next number of years. This model assumes that the value of the car reduces (depreciates) by a fixed p"
  },
  {
-  "file": "maths-2022-OL-ask-p1-q9-c-ii.png",
+  "file": "maths-2022-OL-ask-p1-q9-c-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2022 OL Paper 1 Q9(c)(ii)",
+  "questionRef": "2022 OL Paper 1 Q9(c)(i), (ii)",
   "description": "The question as printed on the paper \u2014 Brian buys a new car. The graph below represents a model that can be used to predict the value of this car, \ud835\udc49, for the next number of years. This model assumes that the value of the car reduces (depreciates) by a fixed p"
  },
  {
@@ -2002,10 +2002,10 @@
   "description": "The question as printed on the paper \u2014 By using slopes, investigate if \ud835\udc34\ud835\udc36 is perpendicular to \ud835\udc35\ud835\udc36. Justify your answer. (ii) \ud835\udc34\ud835\udc36 is perpendicular \ud835\udc34\ud835\udc36 is not perpendicular Answer: to \ud835\udc35\ud835\udc36 to \ud835\udc35\ud835\udc36 (Tick (\uf0fc) one box only)"
  },
  {
-  "file": "maths-2022-OL-ask-p2-q1-b-ii.png",
+  "file": "maths-2022-OL-ask-p2-q1-b-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2022 OL Paper 2 Q1(b)(ii)",
+  "questionRef": "2022 OL Paper 2 Q1(b)(i), (ii)",
   "description": "The question as printed on the paper \u2014 Parts of the lines \ud835\udc34\ud835\udc36 and \ud835\udc35\ud835\udc36 are shown in the co-ordinate diagram below (not to scale). \ud835\udc66 \ud835\udc36 3 2 1 \ud835\udc35 \ud835\udc65 \ud835\udc34 0 -3 -2 -1 1 2 3 4 5 6 The triangle \ud835\udc3f\ud835\udc40\ud835\udc41 is shown on the co-ordinate diagram below (not to scale). (b) The point \ud835\udc40 ha"
  },
  {
@@ -2072,11 +2072,11 @@
   "description": "The question as printed on the paper \u2014 (c) The scores of six people on this test were as follows: 104, 82, 94, 113, 98, 105 Find the range and the standard deviation of these numbers. Give the standard deviation correct to 1 decimal place."
  },
  {
-  "file": "maths-2022-OL-ask-p2-q5-a-ii.png",
+  "file": "maths-2022-OL-ask-p2-q5-a-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2022 OL Paper 2 Q5(a)(ii)",
-  "description": "The question as printed on the paper \u2014 An equilateral triangle \ud835\udc43\ud835\udc44\ud835\udc45 has sides of length 8 cm. \ud835\udc45 \ud835\udc44 \ud835\udc43 8 cm Show that the area of the triangle \ud835\udc43\ud835\udc44\ud835\udc45 is 16\u221a3 cm2. (ii)"
+  "questionRef": "2022 OL Paper 2 Q5(a)(i), (ii)",
+  "description": "The question as printed on the paper \u2014 Write down the size of the angle \u2220 \ud835\udc43\ud835\udc44\ud835\udc45. (a) (i) Show that the area of the triangle \ud835\udc43\ud835\udc44\ud835\udc45 is 16\u221a3 cm2. (ii)"
  },
  {
   "file": "maths-2022-OL-ask-p2-q5-a-iii.png",
@@ -2114,10 +2114,10 @@
   "description": "The question as printed on the paper \u2014 The circle \ud835\udc50 is shown in the diagram below (not to scale). Its centre is at the point \ud835\udc42. (a) The points \ud835\udc34, \ud835\udc35, and \ud835\udc37 lie on the circle, and \u123e\ud835\udc34\ud835\udc35\u123f is a diameter of the circle. \ud835\udc37 \ud835\udc4b \ud835\udc50 \ud835\udc35 130\u00b0 \ud835\udc42 \ud835\udc34 Write down |\u2220 \ud835\udc34\ud835\udc37\ud835\udc35|, the size o"
  },
  {
-  "file": "maths-2022-OL-ask-p2-q6-b-ii.png",
+  "file": "maths-2022-OL-ask-p2-q6-b-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2022 OL Paper 2 Q6(b)(ii)",
+  "questionRef": "2022 OL Paper 2 Q6(b)(i), (ii)",
   "description": "The question as printed on the paper \u2014 (b) Two statements, A and B, are shown below. For each statement, put a tick (\uf0fc) in the correct box to show if it is true or false. Give a reason for your answer in each case. (i) Statement A: If two triangles are simila"
  },
  {
@@ -2149,11 +2149,11 @@
   "description": "The question as printed on the paper \u2014 An animal shelter takes cats and dogs. (b) Complete the table, by filling in the four missing values. Male Female Total \ud835\udfcf\ud835\udfd2 5 9 Cats 11 Dogs \ud835\udfd2\ud835\udfce Total"
  },
  {
-  "file": "maths-2022-OL-ask-p2-q7-c-ii.png",
+  "file": "maths-2022-OL-ask-p2-q7-c-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2022 OL Paper 2 Q7(c)(ii)",
-  "description": "The question as printed on the paper \u2014 An animal shelter takes cats and dogs. (ii) Find the probability that all three animals picked were male dogs. Give your answer correct to 3 decimal places."
+  "questionRef": "2022 OL Paper 2 Q7(c)(i), (ii)",
+  "description": "The question as printed on the paper \u2014 An animal shelter takes cats and dogs. (c) (i) Find the probability that the first animal picked was a cat. (ii) Find the probability that all three animals picked were male dogs. Give your answer correct to 3 decimal pl"
  },
  {
   "file": "maths-2022-OL-ask-p2-q7-d.png",
@@ -2275,11 +2275,11 @@
   "description": "The question as printed on the paper \u2014 A survey was carried out to investigate the amount and type of exercise that adults in Ireland are taking in 2022. This survey was carried out on a sample of adults in Ireland. 71% of the sample said that they walk for r"
  },
  {
-  "file": "maths-2022-OL-ask-p2-q10-b-iv.png",
+  "file": "maths-2022-OL-ask-p2-q10-b-iii.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2022 OL Paper 2 Q10(b)(iv)",
-  "description": "The question as printed on the paper \u2014 A survey was carried out to investigate the amount and type of exercise that adults in Ireland are taking in 2022. This survey was carried out on a sample of adults in Ireland. (iv) According to the 2019 Irish Sport Moni"
+  "questionRef": "2022 OL Paper 2 Q10(b)(iii), (iv)",
+  "description": "The question as printed on the paper \u2014 A survey was carried out to investigate the amount and type of exercise that adults in Ireland are taking in 2022. This survey was carried out on a sample of adults in Ireland. (iii) Use the percentages given in (b)(i) a"
  },
  {
   "file": "maths-2022-OL-ask-p2-q10-c.png",
@@ -2359,11 +2359,11 @@
   "description": "The question as printed on the paper \u2014 \ud835\udc61 is a positive real number, with: (b) log\u0b37\ud835\udc61+ log\u0b3d\ud835\udc61+ log\u0b36\u0b3b\ud835\udc61+ log\u0b3c\u0b35\ud835\udc61= 10 Find the value of \ud835\udc61. Give your answer in the form 3\u0be5, where \ud835\udc5f\u2208\u211a. \u0b6a\u0b6d\u0b65\u0cce\u0bd5 Hint: use the formula log\u0bd4\ud835\udc4f= \u0b6a\u0b6d\u0b65\u0cce\u0bd4 ."
  },
  {
-  "file": "maths-2023-HL-ask-p1-q3-c-ii.png",
+  "file": "maths-2023-HL-ask-p1-q3-c-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2023 HL Paper 1 Q3(c)(ii)",
-  "description": "The question as printed on the paper \u2014 \ud835\udc5a is a real number, and \ud835\udc5a> 6. (ii) What information does this give about the value of log\u0b3a\ud835\udc5a ?"
+  "questionRef": "2023 HL Paper 1 Q3(c)(i), (ii)",
+  "description": "The question as printed on the paper \u2014 Explain what log\u0b3a\ud835\udc5a means, where \ud835\udc5a is a positive real number. (c) (i) \ud835\udc5a is a real number, and \ud835\udc5a> 6. (ii) What information does this give about the value of log\u0b3a\ud835\udc5a ?"
  },
  {
   "file": "maths-2023-HL-ask-p1-q4-a.png",
@@ -2380,11 +2380,11 @@
   "description": "The question as printed on the paper \u2014 Use De Moivre\u2019s Theorem to find the values of \ud835\udc64 for which \ud835\udc64\u0b36= \u22121 + \u221a3\ud835\udc56. (b) Give each value of \ud835\udc64 in the form \ud835\udc4e+ \ud835\udc4f\ud835\udc56, with \ud835\udc4e, \ud835\udc4f\u2208\u211d."
  },
  {
-  "file": "maths-2023-HL-ask-p1-q4-c-iii.png",
+  "file": "maths-2023-HL-ask-p1-q4-c-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2023 HL Paper 1 Q4(c)(iii)",
-  "description": "The question as printed on the paper \u2014 In this question, \ud835\udc56\u0b36= \u22121. The Argand diagram below shows the complex number \ud835\udc62= \ud835\udc4e+ \ud835\udc4f\ud835\udc56, where \ud835\udc4e, \ud835\udc4f\u2208\u211d. (c) Im \ud835\udc62= \ud835\udc4e+ \ud835\udc4f\ud835\udc56 Re Write the complex numbers \ud835\udc56\ud835\udc62 and \ud835\udc56\ud835\udc62 in their simplest form, in terms of \ud835\udc4e and \ud835\udc4f, (i) where \ud835\udc56\ud835\udc62 is the "
+  "questionRef": "2023 HL Paper 1 Q4(c)(i)\u2013(iii)",
+  "description": "The question as printed on the paper \u2014 The Argand diagram below shows the complex number \ud835\udc62= \ud835\udc4e+ \ud835\udc4f\ud835\udc56, where \ud835\udc4e, \ud835\udc4f\u2208\u211d. (c) Im \ud835\udc62= \ud835\udc4e+ \ud835\udc4f\ud835\udc56 Re Write the complex numbers \ud835\udc56\ud835\udc62 and \ud835\udc56\ud835\udc62 in their simplest form, in terms of \ud835\udc4e and \ud835\udc4f, (i) where \ud835\udc56\ud835\udc62 is the complex conjugate of \ud835\udc56\ud835\udc62. \ud835\udc56"
  },
  {
   "file": "maths-2023-HL-ask-p1-q5-a.png",
@@ -2401,10 +2401,10 @@
   "description": "The question as printed on the paper \u2014 The function \ud835\udc54(\ud835\udc65) is defined as follows, for \ud835\udc65\u2208\u211d, 0 < \ud835\udc65< \ud835\udf0b: (b) \u0beb \ud835\udc54(\ud835\udc65) = \u1240tan \u1240 \u0b36 \u1241\u1241(ln \ud835\udc65) \u0c17 Find the value of \ud835\udc54\u11f1\u1240 \u0b36 \u1241. Give your answer in the form \ud835\udc4e+ ln \ud835\udc4f, where \ud835\udc4e, \ud835\udc4f\u2208\u211d."
  },
  {
-  "file": "maths-2023-HL-ask-p1-q5-c-ii.png",
+  "file": "maths-2023-HL-ask-p1-q5-c-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2023 HL Paper 1 Q5(c)(ii)",
+  "questionRef": "2023 HL Paper 1 Q5(c)(i), (ii)",
   "description": "The question as printed on the paper \u2014 The diagram below shows three sets, \ud835\udc34, \ud835\udc35, and \ud835\udc36, and two functions, \ud835\udc53 and \ud835\udc54, where (c) \ud835\udc53: \ud835\udc34\u2192\ud835\udc35 and \ud835\udc54: \ud835\udc35\u2192\ud835\udc36. #\ud835\udc34= #\ud835\udc36= 4 and #\ud835\udc35= 3. \ud835\udc54 \ud835\udc53 \ud835\udc65 1 \uf0f1 \ud835\udc64 2 \uf0fc \ud835\udc66 3 \ud835\udc67 4 \uf0da \ud835\udc36 \ud835\udc34 \ud835\udc35 Find the value of \ud835\udc54\u0d6b\ud835\udc53(3)\u0d6f. (i) Explain why \ud835\udc54: \ud835\udc35\u2192\ud835\udc36 is injectiv"
  },
  {
@@ -2478,11 +2478,11 @@
   "description": "The question as printed on the paper \u2014 Olga, Chen, Fiona, and Rohan all have bank accounts. Olga puts \u20ac3000 in a savings account. Interest is added annually at a rate of 2\u22194% per year. (a) Work out the amount in Olga\u2019s account after 5 years, correct to the ne"
  },
  {
-  "file": "maths-2023-HL-ask-p1-q8-b-ii.png",
+  "file": "maths-2023-HL-ask-p1-q8-b-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2023 HL Paper 1 Q8(b)(ii)",
-  "description": "The question as printed on the paper \u2014 Olga, Chen, Fiona, and Rohan all have bank accounts. (ii) Chen puts a different amount in a savings account with the same interest rate (2\u22194% per year). After 6 years, Chen has \u20ac4000 in the account. Work out how much mon"
+  "questionRef": "2023 HL Paper 1 Q8(b)(i), (ii)",
+  "description": "The question as printed on the paper \u2014 Explain what is meant by the \u201cpresent value\u201d of a payment of \u20ac1000 in 1 year\u2019s time, (b) (i) at a particular interest rate. (ii) Chen puts a different amount in a savings account with the same interest rate (2\u22194% per yea"
  },
  {
   "file": "maths-2023-HL-ask-p1-q8-c.png",
@@ -2492,10 +2492,10 @@
   "description": "The question as printed on the paper \u2014 Olga, Chen, Fiona, and Rohan all have bank accounts. Fiona is taking out a loan at the same annual interest rate (2\u22194% per year). (c) Fiona makes payments quarterly (that is, 4 times per year). Work out the quarterly int"
  },
  {
-  "file": "maths-2023-HL-ask-p1-q8-d-ii.png",
+  "file": "maths-2023-HL-ask-p1-q8-d-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2023 HL Paper 1 Q8(d)(ii)",
+  "questionRef": "2023 HL Paper 1 Q8(d)(i), (ii)",
   "description": "The question as printed on the paper \u2014 Olga, Chen, Fiona, and Rohan all have bank accounts. (d) Rohan wants to put the same amount of money in a savings account at the start of each month for 36 months so that, at the end of 3 years, he will have a total of \u20ac"
  },
  {
@@ -2520,11 +2520,11 @@
   "description": "The question as printed on the paper \u2014 Ava is investigating factors of different numbers. (a) First, she looks at numbers that can be written as powers of a prime number. List the 5 different factors of 2\u0b38. You can write each one as a power of 2. (i) Work out"
  },
  {
-  "file": "maths-2023-HL-ask-p1-q9-b-iii.png",
+  "file": "maths-2023-HL-ask-p1-q9-b-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2023 HL Paper 1 Q9(b)(iii)",
-  "description": "The question as printed on the paper \u2014 Ava is investigating factors of different numbers. She makes a table to show the pairs of factors of 12 (b) (that is, the pairs of natural numbers \ud835\udc65 and \ud835\udc66 with \ud835\udc65\ud835\udc66= 12). Ava realises that the relationship between \ud835\udc65 and \ud835\udc66 "
+  "questionRef": "2023 HL Paper 1 Q9(b)(i)\u2013(iii)",
+  "description": "The question as printed on the paper \u2014 Ava is investigating factors of different numbers. She makes a table to show the pairs of factors of 12 (b) (that is, the pairs of natural numbers \ud835\udc65 and \ud835\udc66 with \ud835\udc65\ud835\udc66= 12). Complete the table below, showing the 6 pairs of fa"
  },
  {
   "file": "maths-2023-HL-ask-p1-q9-c-i.png",
@@ -2646,10 +2646,10 @@
   "description": "The question as printed on the paper \u2014 The circle \ud835\udc60 passes through the points (b) \ud835\udc60 (8, 1), (\ud835\udc4e, 3), and (\ud835\udc4e, \u22125), as shown in the (\ud835\udc4e, 3) diagram on the right (not to scale), where 0 \u0d4f\ud835\udc4e\u0d4f5, \ud835\udc4e\u2208\u211d. (8, 1) The radius of the circle \ud835\udc60 is \u221a20. \ud835\udc65 Find the equation of th"
  },
  {
-  "file": "maths-2023-HL-ask-p2-q5-a-iii.png",
+  "file": "maths-2023-HL-ask-p2-q5-a-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2023 HL Paper 2 Q5(a)(iii)",
+  "questionRef": "2023 HL Paper 2 Q5(a)(i)\u2013(iii)",
   "description": "The question as printed on the paper \u2014 Rohan has a large number of small cubes. The cubes are identical in size. (a) Some of the cubes are red, some are green, and the rest are blue. Rohan carries out an experiment in which he picks out 5 different cubes at r"
  },
  {
@@ -2849,10 +2849,10 @@
   "description": "The question as printed on the paper \u2014 (c) Use algebra to solve the following simultaneous equations: \ud835\udc65\u2212\ud835\udc66+ 1 = 0 2\ud835\udc65+ 4\ud835\udc66 = 19"
  },
  {
-  "file": "maths-2023-OL-ask-p1-q4-a-iii.png",
+  "file": "maths-2023-OL-ask-p1-q4-a-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2023 OL Paper 1 Q4(a)(iii)",
+  "questionRef": "2023 OL Paper 1 Q4(a)(i)\u2013(iii)",
   "description": "The question as printed on the paper \u2014 The graph of the function \ud835\udc54 is shown on the co-ordinate diagram below, for \u22123 \u2264\ud835\udc65\u22642, (a) \ud835\udc65\u2208\u211d. Use the graph to answer parts (a)(i) to (a)(iv). \ud835\udc66 \ud835\udc66= \ud835\udc54\u123a\ud835\udc65\u123b 9 8 7 6 5 4 3 2 1 1 -3 -1 -2 2 \ud835\udc65 -1 -2 -3 -4 -5 -6 -7 -8 -9 Estimate"
  },
  {
@@ -3052,11 +3052,11 @@
   "description": "The question as printed on the paper \u2014 The diagram below shows the actual daily number of new cases of a disease, from day \ud835\udc61= 0 (a) to day \ud835\udc61= 25. It also shows the number of cases according to a mathematical model over this period of time. actual number model"
  },
  {
-  "file": "maths-2023-OL-ask-p1-q9-b-ii.png",
+  "file": "maths-2023-OL-ask-p1-q9-b-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2023 OL Paper 1 Q9(b)(ii)",
-  "description": "The question as printed on the paper \u2014 (b) The daily number of new cases of a different disease can be modelled using the function: \ud835\udc37(\ud835\udc61) = 2100 \u0d481\u221918\u0be7 where \ud835\udc37 is the daily number of new cases and \ud835\udc61 is the time in days from \ud835\udc61= 0 to \ud835\udc61= 14. Draw the graph of \ud835\udc66= "
+  "questionRef": "2023 OL Paper 1 Q9(b)(i), (ii)",
+  "description": "The question as printed on the paper \u2014 (b) The daily number of new cases of a different disease can be modelled using the function: \ud835\udc37(\ud835\udc61) = 2100 \u0d481\u221918\u0be7 where \ud835\udc37 is the daily number of new cases and \ud835\udc61 is the time in days from \ud835\udc61= 0 to \ud835\udc61= 14. Fill in the table bel"
  },
  {
   "file": "maths-2023-OL-ask-p1-q9-b-iii.png",
@@ -3136,18 +3136,18 @@
   "description": "The question as printed on the paper \u2014 Find the equation of the line through the point (\u22122, 7) with a slope of (b) \u0b37 . Give your answer in the form \ud835\udc4e\ud835\udc65+ \ud835\udc4f\ud835\udc66+ \ud835\udc50= 0, where \ud835\udc4e, \ud835\udc4f, \ud835\udc50\u2208\u2124."
  },
  {
-  "file": "maths-2023-OL-ask-p2-q1-c-ii.png",
+  "file": "maths-2023-OL-ask-p2-q1-c-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2023 OL Paper 2 Q1(c)(ii)",
-  "description": "The question as printed on the paper \u2014 The point (4, 2) is shown in each of the two co-ordinate diagrams below. (c) (ii) 3 on the co-ordinate diagram below, on the domain \u22121 \u0d51\ud835\udc65\u0d517, \ud835\udc65\u2208\u211d. \ud835\udc66 6 5 4 3 2 1 \ud835\udc65 -1 1 2 3 4 5 6 7 -1 -2"
+  "questionRef": "2023 OL Paper 2 Q1(c)(i), (ii)",
+  "description": "The question as printed on the paper \u2014 The point (4, 2) is shown in each of the two co-ordinate diagrams below. (c) Draw the line segment through the point (4, 2) with a slope of 2 on the co-ordinate (i) diagram below, with the range \u22122 \u0d51\ud835\udc66\u0d516, \ud835\udc66\u2208\u211d. \ud835\udc66 6 5 4 3 2"
  },
  {
-  "file": "maths-2023-OL-ask-p2-q2-a-ii.png",
+  "file": "maths-2023-OL-ask-p2-q2-a-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2023 OL Paper 2 Q2(a)(ii)",
-  "description": "The question as printed on the paper \u2014 (a) \ud835\udc60 is the circle \ud835\udc65\u0b36+ \ud835\udc66\u0b36= 25. (ii) Show that the point (3, \u22124) is on the circle \ud835\udc60."
+  "questionRef": "2023 OL Paper 2 Q2(a)(i), (ii)",
+  "description": "The question as printed on the paper \u2014 (a) \ud835\udc60 is the circle \ud835\udc65\u0b36+ \ud835\udc66\u0b36= 25. Write down the centre and radius of the circle \ud835\udc60. (i) (ii) Show that the point (3, \u22124) is on the circle \ud835\udc60."
  },
  {
   "file": "maths-2023-OL-ask-p2-q2-a-iii.png",
@@ -3185,10 +3185,10 @@
   "description": "The question as printed on the paper \u2014 (iii) How many arrangements of 3 different letters can be made from the letters in the word CAMOGIE?"
  },
  {
-  "file": "maths-2023-OL-ask-p2-q3-b-ii.png",
+  "file": "maths-2023-OL-ask-p2-q3-b-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2023 OL Paper 2 Q3(b)(ii)",
+  "questionRef": "2023 OL Paper 2 Q3(b)(i), (ii)",
   "description": "The question as printed on the paper \u2014 (b) Three scatterplots are shown below. They are labelled A, B, and C. Each scatterplot has the same axes and scales. The correlation coefficient for each scatterplot was calculated. The results were 0\u221995, 0\u22196, and \u22120\u221995"
  },
  {
@@ -3353,17 +3353,17 @@
   "description": "The question as printed on the paper \u2014 A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2\u22194 m and an internal depth of 0\u22199 m. 0\u22199 m 2\u22194 m (c) The family also buys a cov"
  },
  {
+  "file": "maths-2023-OL-ask-p2-q9-a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2023 OL Paper 2 Q9(a)(i), (iii)",
+  "description": "The question as printed on the paper \u2014 (a) A group of students decided to investigate the average amount of time that students in Ireland spend reading each day. One Monday morning, they asked the first 200 students who came into their school how long, on ave"
+ },
+ {
   "file": "maths-2023-OL-ask-p2-q9-a-ii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 OL Paper 2 Q9(a)(ii)",
-  "description": "The question as printed on the paper \u2014 (a) A group of students decided to investigate the average amount of time that students in Ireland spend reading each day. One Monday morning, they asked the first 200 students who came into their school how long, on ave"
- },
- {
-  "file": "maths-2023-OL-ask-p2-q9-a-iii.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2023 OL Paper 2 Q9(a)(iii)",
   "description": "The question as printed on the paper \u2014 (a) A group of students decided to investigate the average amount of time that students in Ireland spend reading each day. One Monday morning, they asked the first 200 students who came into their school how long, on ave"
  },
  {
@@ -3472,10 +3472,10 @@
   "description": "The question as printed on the paper \u2014 In this question, \ud835\udc56\ud835\udc562 = \u22121. 9 in the form \ud835\udc4e\ud835\udc4e+ \ud835\udc4f\ud835\udc4f\ud835\udc4f\ud835\udc4f, where \ud835\udc4e\ud835\udc4e, \ud835\udc4f\ud835\udc4f\u2208\u211d. (b) Use de Moivre\u2019s theorem to write \u0d6b1 \u2212\u221a3 \ud835\udc56\ud835\udc56\u0d6f"
  },
  {
-  "file": "maths-2024-HL-ask-p1-q2-c-ii.png",
+  "file": "maths-2024-HL-ask-p1-q2-c-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2024 HL Paper 1 Q2(c)(ii)",
+  "questionRef": "2024 HL Paper 1 Q2(c)(i), (ii)",
   "description": "The question as printed on the paper \u2014 In this question, \ud835\udc56\ud835\udc562 = \u22121. (c) The point \ud835\udc64\ud835\udc64= \u22122 + 2\ud835\udc56\ud835\udc56 is shown in the Argand diagram below. Im 3 \ud835\udc64\ud835\udc64 2 1 Re -3 -2 -1 1 2 3 4 -1 \ud835\udf0b\ud835\udf0b \ud835\udf0b\ud835\udf0b (i) Plot and label the complex number \ud835\udc62\ud835\udc62= 4 \u1240cos 6\u1241 on the diagram, 6 + \ud835\udc56\ud835\udc56sin as accur"
  },
  {
@@ -3542,11 +3542,11 @@
   "description": "The question as printed on the paper \u2014 3 (b) \ud835\udc3a\ud835\udc3a7 = 6 and \ud835\udc3a\ud835\udc3a11 = 8 are the 7th and 11th terms of a geometric sequence, respectively. Find the two possible values of \ud835\udc5f\ud835\udc5f, the common ratio of this sequence, where \ud835\udc5f\ud835\udc5f\u2208\u211d."
  },
  {
-  "file": "maths-2024-HL-ask-p1-q5-c-ii.png",
+  "file": "maths-2024-HL-ask-p1-q5-c-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2024 HL Paper 1 Q5(c)(ii)",
-  "description": "The question as printed on the paper \u2014 (c) A sequence of functions \ud835\udc39\ud835\udc390 , \ud835\udc39\ud835\udc391 , \ud835\udc39\ud835\udc392 , ... is defined as follows, for \ud835\udc65\ud835\udc65\u2208\u211d, \ud835\udc65\ud835\udc65> 0: \u2022 \ud835\udc39\ud835\udc390 = \ud835\udc65\ud835\udc652024 \u2022 For \ud835\udc5b\ud835\udc5b\u22651, the function \ud835\udc39\ud835\udc39\ud835\udc5b\ud835\udc5b is the derivative of \ud835\udc39\ud835\udc39\ud835\udc5b\ud835\udc5b\u22121 with respect to \ud835\udc65\ud835\udc65 (ii) Find the first value of \ud835\udc5b\ud835\udc5b for wh"
+  "questionRef": "2024 HL Paper 1 Q5(c)(i), (ii)",
+  "description": "The question as printed on the paper \u2014 (c) A sequence of functions \ud835\udc39\ud835\udc390 , \ud835\udc39\ud835\udc391 , \ud835\udc39\ud835\udc392 , ... is defined as follows, for \ud835\udc65\ud835\udc65\u2208\u211d, \ud835\udc65\ud835\udc65> 0: \u2022 \ud835\udc39\ud835\udc390 = \ud835\udc65\ud835\udc652024 \u2022 For \ud835\udc5b\ud835\udc5b\u22651, the function \ud835\udc39\ud835\udc39\ud835\udc5b\ud835\udc5b is the derivative of \ud835\udc39\ud835\udc39\ud835\udc5b\ud835\udc5b\u22121 with respect to \ud835\udc65\ud835\udc65 (i) Write \ud835\udc39\ud835\udc391 and \ud835\udc39\ud835\udc392 in terms of \ud835\udc65\ud835\udc65. "
  },
  {
   "file": "maths-2024-HL-ask-p1-q6-a.png",
@@ -3584,10 +3584,10 @@
   "description": "The question as printed on the paper \u2014 (a) Fiadh has a gross annual salary of \u20ac54 000. She pays income tax at a rate of 20% on the first \u20ac40 000 of her salary and at a rate of 40% on the remainder. She has an annual tax credit of \u20ac1775. Work out her net annua"
  },
  {
-  "file": "maths-2024-HL-ask-p1-q7-b-ii.png",
+  "file": "maths-2024-HL-ask-p1-q7-b-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2024 HL Paper 1 Q7(b)(ii)",
+  "questionRef": "2024 HL Paper 1 Q7(b)(i), (ii)",
   "description": "The question as printed on the paper \u2014 (b) Fiadh and her partner take out a 25-year mortgage with a monthly interest rate of 0\u2219279%. They make equal monthly repayments of \u20ac1647\u221975 at the end of each month. They make the first repayment exactly one month after"
  },
  {
@@ -3647,10 +3647,10 @@
   "description": "The question as printed on the paper \u2014 A sphere has a radius of \ud835\udc45\ud835\udc45 units. The part of the sphere that is cut off by a flat surface is called a \u201ccap\u201d, and has a volume of: \ud835\udc36\ud835\udc36= \ud835\udf0b\ud835\udf0b \ud835\udc58\ud835\udc582 (3\ud835\udc45\ud835\udc45\u2212\ud835\udc58\ud835\udc58) 3 Here, \ud835\udc36\ud835\udc36 is the volume of the cap and \ud835\udc58\ud835\udc58 is the height of the cap,"
  },
  {
-  "file": "maths-2024-HL-ask-p1-q9-b-ii.png",
+  "file": "maths-2024-HL-ask-p1-q9-b-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2024 HL Paper 1 Q9(b)(ii)",
+  "questionRef": "2024 HL Paper 1 Q9(b)(i), (ii)",
   "description": "The question as printed on the paper \u2014 A sphere has a radius of \ud835\udc45\ud835\udc45 units. The part of the sphere that is cut off by a flat surface is called a \u201ccap\u201d, and has a volume of: \ud835\udc36\ud835\udc36= \ud835\udf0b\ud835\udf0b \ud835\udc58\ud835\udc582 (3\ud835\udc45\ud835\udc45\u2212\ud835\udc58\ud835\udc58) 3 Here, \ud835\udc36\ud835\udc36 is the volume of the cap and \ud835\udc58\ud835\udc58 is the height of the cap,"
  },
  {
@@ -3715,20 +3715,6 @@
   "truncated": false,
   "questionRef": "2024 HL Paper 1 Q10(d)",
   "description": "The question as printed on the paper \u2014 A company grows and sells plants. (d) In this part, \ud835\udc5d\ud835\udc5d and \ud835\udc5f\ud835\udc5f are constants, with \ud835\udc5d\ud835\udc5d, \ud835\udc5f\ud835\udc5f\u2208\u211d and 0 < \ud835\udc5f\ud835\udc5f< 0\u22199 \ud835\udc5d\ud835\udc5d. The company sells bags of plant food. The usual price of one bag is \u20ac \ud835\udc5d\ud835\udc5d. In a sale, the customer can choose "
- },
- {
-  "file": "maths-2024-HL-ask-p2-q1-a-iii.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2024 HL Paper 2 Q1(a)(iii)",
-  "description": "The question as printed on the paper \u2014 A group of 22 students was tested to see how far, in metres, each of them could swim without stopping for a rest. The results of the testing are shown in the ordered stem and leaf plot below. Four of the entries have bee"
- },
- {
-  "file": "maths-2024-HL-ask-p2-q1-b.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2024 HL Paper 2 Q1(b)",
-  "description": "The question as printed on the paper \u2014 A group of 22 students was tested to see how far, in metres, each of them could swim without stopping for a rest. The results of the testing are shown in the ordered stem and leaf plot below. Four of the entries have bee"
  },
  {
   "file": "maths-2024-HL-ask-p2-q2-a.png",
@@ -3829,10 +3815,10 @@
   "description": "The question as printed on the paper \u2014 (b) Find the perpendicular distance from the point (5, \u22122) to the line: \ud835\udc66\ud835\udc66= 4 3 \ud835\udc65\ud835\udc65\u221211"
  },
  {
-  "file": "maths-2024-HL-ask-p2-q6-c-ii.png",
+  "file": "maths-2024-HL-ask-p2-q6-c-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2024 HL Paper 2 Q6(c)(ii)",
+  "questionRef": "2024 HL Paper 2 Q6(c)(i), (ii)",
   "description": "The question as printed on the paper \u2014 (c) In the co-ordinate diagram below, 16 points are marked with a dot ( ). These are all of the points of the form (\ud835\udc5a\ud835\udc5a, \ud835\udc5b\ud835\udc5b), where \ud835\udc5a\ud835\udc5a, \ud835\udc5b\ud835\udc5b\u2208\u2115 and \ud835\udc5a\ud835\udc5a, \ud835\udc5b\ud835\udc5b\u22644. \ud835\udc66\ud835\udc66 4 3 2 1 \ud835\udc65\ud835\udc65 0 0 1 2 3 4 A pair of these points is picked at rand"
  },
  {
@@ -3885,10 +3871,10 @@
   "description": "The question as printed on the paper \u2014 Tommy makes ornaments from metal and glass. (b) Tommy makes another cylinder with a height of 22 cm and a diameter of 12 cm. This cylinder fits exactly inside a glass sphere. The top and bottom edges of the cylinder touc"
  },
  {
-  "file": "maths-2024-HL-ask-p2-q8-c-ii.png",
+  "file": "maths-2024-HL-ask-p2-q8-c-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2024 HL Paper 2 Q8(c)(ii)",
+  "questionRef": "2024 HL Paper 2 Q8(c)(i), (ii)",
   "description": "The question as printed on the paper \u2014 (c) Another ornament is made of two cones inscribed in a sphere. The top cone is upright; the bottom cone is inverted. The cones have the same base. A vertical cross-section of the ornament, taken through the centre of t"
  },
  {
@@ -3983,17 +3969,17 @@
   "description": "The question as printed on the paper \u2014 A company makes windscreen wipers. In this question, the rectangle \ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43 has a width of 180 cm and a height of 100 cm. \ud835\udc40\ud835\udc40 is the midpoint of [\ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43], \ud835\udc41\ud835\udc41 is the midpoint of [\ud835\udc46\ud835\udc46\ud835\udc46\ud835\udc46], and \ud835\udc42\ud835\udc42\u2208\ud835\udc41\ud835\udc41\ud835\udc41\ud835\udc41. All lengths are given in "
  },
  {
-  "file": "maths-2024-HL-ask-p2-q10-c-iii.png",
+  "file": "maths-2024-HL-ask-p2-q10-c-ii.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2024 HL Paper 2 Q10(c)(iii)",
+  "questionRef": "2024 HL Paper 2 Q10(c)(ii), (iii)",
   "description": "The question as printed on the paper \u2014 A company makes windscreen wipers. In this question, the rectangle \ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43 has a width of 180 cm and a height of 100 cm. \ud835\udc40\ud835\udc40 is the midpoint of [\ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43], \ud835\udc41\ud835\udc41 is the midpoint of [\ud835\udc46\ud835\udc46\ud835\udc46\ud835\udc46], and \ud835\udc42\ud835\udc42\u2208\ud835\udc41\ud835\udc41\ud835\udc41\ud835\udc41. All lengths are given in "
  },
  {
-  "file": "maths-2024-OL-ask-p1-q1-a-ii.png",
+  "file": "maths-2024-OL-ask-p1-q1-a-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2024 OL Paper 1 Q1(a)(ii)",
+  "questionRef": "2024 OL Paper 1 Q1(a)(i), (ii)",
   "description": "The question as printed on the paper \u2014 (a) A farmer buys a new machine for \u20ac30 000. It depreciates (decreases in value) by 20% each year. (i) Find the value of the machine after 1 year. (ii) Hence, or otherwise, find the value of the machine after 2 years."
  },
  {
@@ -4025,38 +4011,17 @@
   "description": "The question as printed on the paper \u2014 The function \ud835\udc53\ud835\udc53 is defined as \ud835\udc53\ud835\udc53(\ud835\udc65\ud835\udc65) = 5\ud835\udc65\ud835\udc652 \u221220\ud835\udc65\ud835\udc65+ 2, where \ud835\udc65\ud835\udc65\u2208\u211d. (b) Use calculus to find the co-ordinates of the local minimum point of \ud835\udc53\ud835\udc53."
  },
  {
-  "file": "maths-2024-OL-ask-p1-q6-a-ii.png",
+  "file": "maths-2024-OL-ask-p1-q7-a-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2024 OL Paper 1 Q6(a)(ii)",
-  "description": "The question as printed on the paper \u2014 The graph of a function \ud835\udc58\ud835\udc58(\ud835\udc65\ud835\udc65) is shown on the co-ordinate diagram below, for 0 \u2264\ud835\udc65\ud835\udc65\u22645, \ud835\udc65\ud835\udc65\u2208\u211d. (a) Use the graph to answer parts (a)(i) and (a)(ii). \ud835\udc66\ud835\udc66 12 11 10 9 8 7 6 5 4 3 \ud835\udc58\ud835\udc58(\ud835\udc65\ud835\udc65) 2 1 \ud835\udc65\ud835\udc65 1 2 3 4 5 0 (ii) Estimate the ran"
- },
- {
-  "file": "maths-2024-OL-ask-p1-q6-b-i.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2024 OL Paper 1 Q6(b)(i)",
-  "description": "The question as printed on the paper \u2014 The graph of a function \ud835\udc58\ud835\udc58(\ud835\udc65\ud835\udc65) is shown on the co-ordinate diagram below, for 0 \u2264\ud835\udc65\ud835\udc65\u22645, \ud835\udc65\ud835\udc65\u2208\u211d. (b) Liam uses the Trapezoidal Rule to estimate the area under the graph of \ud835\udc58\ud835\udc58(\ud835\udc65\ud835\udc65) between 0 and 5. He takes the following measu"
- },
- {
-  "file": "maths-2024-OL-ask-p1-q6-b-ii.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2024 OL Paper 1 Q6(b)(ii)",
-  "description": "The question as printed on the paper \u2014 The graph of a function \ud835\udc58\ud835\udc58(\ud835\udc65\ud835\udc65) is shown on the co-ordinate diagram below, for 0 \u2264\ud835\udc65\ud835\udc65\u22645, \ud835\udc65\ud835\udc65\u2208\u211d. (b) Liam uses the Trapezoidal Rule to estimate the area under the graph of \ud835\udc58\ud835\udc58(\ud835\udc65\ud835\udc65) between 0 and 5. He takes the following measu"
- },
- {
-  "file": "maths-2024-OL-ask-p1-q7-a-ii.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2024 OL Paper 1 Q7(a)(ii)",
+  "questionRef": "2024 OL Paper 1 Q7(a)(i), (ii)",
   "description": "The question as printed on the paper \u2014 (a) During an experiment, the number of bacteria in a dish can be modelled by the function: \ud835\udc5d\ud835\udc5d(\ud835\udc61\ud835\udc61) = \ud835\udc61\ud835\udc613 \u22126\ud835\udc61\ud835\udc612 + 6\ud835\udc61\ud835\udc61+ 20 where \ud835\udc5d\ud835\udc5d(\ud835\udc61\ud835\udc61) is the number of bacteria, in thousands, and \ud835\udc61\ud835\udc61 is the time in hours since the start o"
  },
  {
-  "file": "maths-2024-OL-ask-p1-q7-a-iv.png",
+  "file": "maths-2024-OL-ask-p1-q7-a-iii.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2024 OL Paper 1 Q7(a)(iv)",
+  "questionRef": "2024 OL Paper 1 Q7(a)(iii), (iv)",
   "description": "The question as printed on the paper \u2014 (a) During an experiment, the number of bacteria in a dish can be modelled by the function: \ud835\udc5d\ud835\udc5d(\ud835\udc61\ud835\udc61) = \ud835\udc61\ud835\udc613 \u22126\ud835\udc61\ud835\udc612 + 6\ud835\udc61\ud835\udc61+ 20 where \ud835\udc5d\ud835\udc5d(\ud835\udc61\ud835\udc61) is the number of bacteria, in thousands, and \ud835\udc61\ud835\udc61 is the time in hours since the start o"
  },
  {
@@ -4102,11 +4067,11 @@
   "description": "The question as printed on the paper \u2014 (a) Liam left home at 07: 00. He cycled at a constant speed for 20 km, until he reached the point A. He then changed speed and cycled at a constant speed for a further 12 km, until he reached the point B. The graph shows"
  },
  {
-  "file": "maths-2024-OL-ask-p1-q8-b-ii.png",
+  "file": "maths-2024-OL-ask-p1-q8-b-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2024 OL Paper 1 Q8(b)(ii)",
-  "description": "The question as printed on the paper \u2014 (a) Liam left home at 07: 00. He cycled at a constant speed for 20 km, until he reached the point A. He then changed speed and cycled at a constant speed for a further 12 km, until he reached the point B. The graph shows"
+  "questionRef": "2024 OL Paper 1 Q8(b)(i), (ii)",
+  "description": "The question as printed on the paper \u2014 (b) Ellie takes up running. In the first week she runs 6 km. Each week after this she runs 1\u22195 km more than the previous week. (i) Complete the table below to show the distance Ellie runs each week for the first six week"
  },
  {
   "file": "maths-2024-OL-ask-p1-q8-b-iii.png",
@@ -4116,18 +4081,18 @@
   "description": "The question as printed on the paper \u2014 (a) Liam left home at 07: 00. He cycled at a constant speed for 20 km, until he reached the point A. He then changed speed and cycled at a constant speed for a further 12 km, until he reached the point B. The graph shows"
  },
  {
-  "file": "maths-2024-OL-ask-p1-q8-b-v.png",
+  "file": "maths-2024-OL-ask-p1-q8-b-iv.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2024 OL Paper 1 Q8(b)(v)",
-  "description": "The question as printed on the paper \u2014 (b) Ellie takes up running. In the first week she runs 6 km. Each week after this she runs 1\u22195 km more than the previous week. (i) Complete the table below to show the distance Ellie runs each week for the first six week"
+  "questionRef": "2024 OL Paper 1 Q8(b)(iv), (v)",
+  "description": "The question as printed on the paper \u2014 (b) Ellie takes up running. In the first week she runs 6 km. Each week after this she runs 1\u22195 km more than the previous week. (iv) \ud835\udc46\ud835\udc46\ud835\udc5b\ud835\udc5b is the total distance, in km, run by Ellie after \ud835\udc5b\ud835\udc5b weeks, where \ud835\udc5b\ud835\udc5b\u2208\u2115. Write \ud835\udc46\ud835\udc46\ud835\udc5b\ud835\udc5b i"
  },
  {
-  "file": "maths-2024-OL-ask-p1-q9-a-ii.png",
+  "file": "maths-2024-OL-ask-p1-q9-a-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2024 OL Paper 1 Q9(a)(ii)",
-  "description": "The question as printed on the paper \u2014 (a) A ticket for a concert in Wales costs \u00a359\u221950. (ii) Liam is a member of the venue\u2019s Loyalty Club, so he gets a discount of 20% on all tickets. He buys 8 tickets for the concert. Work out the total cost of the 8 ticket"
+  "questionRef": "2024 OL Paper 1 Q9(a)(i), (ii)",
+  "description": "The question as printed on the paper \u2014 (a) A ticket for a concert in Wales costs \u00a359\u221950. (i) Using the exchange rate \u20ac1 = \u00a30\u221985, find the cost of the concert ticket, in euro. (ii) Liam is a member of the venue\u2019s Loyalty Club, so he gets a discount of 20% on a"
  },
  {
   "file": "maths-2024-OL-ask-p1-q9-b.png",
@@ -4151,24 +4116,24 @@
   "description": "The question as printed on the paper \u2014 (ii) Find the price of a ticket (value of \ud835\udc65\ud835\udc65) for which the attendance would be 12 800."
  },
  {
-  "file": "maths-2024-OL-ask-p1-q9-d-ii.png",
+  "file": "maths-2024-OL-ask-p1-q9-d-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2024 OL Paper 1 Q9(d)(ii)",
-  "description": "The question as printed on the paper \u2014 (d) For a different concert the total tickets sales, in euro, can be modelled by: 15 000\ud835\udc65\ud835\udc65\u2212150\ud835\udc65\ud835\udc652 Again, \ud835\udc65\ud835\udc65 is the price of a ticket, in euro. Solve the equation \ud835\udc65\ud835\udc652 \u2212100\ud835\udc65\ud835\udc65+ 2400 = 0 to find the two possible ticket price"
+  "questionRef": "2024 OL Paper 1 Q9(d)(i), (ii)",
+  "description": "The question as printed on the paper \u2014 (d) For a different concert the total tickets sales, in euro, can be modelled by: 15 000\ud835\udc65\ud835\udc65\u2212150\ud835\udc65\ud835\udc652 Again, \ud835\udc65\ud835\udc65 is the price of a ticket, in euro. (i) For this concert the total tickets sales are \u20ac360 000. Use this informati"
  },
  {
-  "file": "maths-2024-OL-ask-p1-q10-a-ii.png",
+  "file": "maths-2024-OL-ask-p1-q10-a-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2024 OL Paper 1 Q10(a)(ii)",
+  "questionRef": "2024 OL Paper 1 Q10(a)(i), (ii)",
   "description": "The question as printed on the paper \u2014 (a) In 2023 Joseph has a gross annual income of \u20ac48 000. He pays net annual income tax of \u20ac7650, annual PRSI of \u20ac1920, and pays \u20ac1407 in USC each year. He has no further deductions from his gross income. (i) Work out his"
  },
  {
-  "file": "maths-2024-OL-ask-p1-q10-b-ii.png",
+  "file": "maths-2024-OL-ask-p1-q10-b-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2024 OL Paper 1 Q10(b)(ii)",
+  "questionRef": "2024 OL Paper 1 Q10(b)(i), (ii)",
   "description": "The question as printed on the paper \u2014 (b) The two income tax rates in Ireland in 2023 are given in the table below. Annual Income Tax Rate First \u20ac40 000 20% Balance 40% (i) Olivia\u2019s gross annual income is \u20ac34 000 and her annual tax credit is \u20ac3550. Find her "
  },
  {
@@ -4186,10 +4151,10 @@
   "description": "The question as printed on the paper \u2014 (b) The two income tax rates in Ireland in 2023 are given in the table below. Annual Income Tax Rate First \u20ac40 000 20% Balance 40% (i) Olivia\u2019s gross annual income is \u20ac34 000 and her annual tax credit is \u20ac3550. Find her "
  },
  {
-  "file": "maths-2024-OL-ask-p1-q10-c-ii.png",
+  "file": "maths-2024-OL-ask-p1-q10-c-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2024 OL Paper 1 Q10(c)(ii)",
+  "questionRef": "2024 OL Paper 1 Q10(c)(i), (ii)",
   "description": "The question as printed on the paper \u2014 (c) An employee who works from home may qualify for tax relief on their electricity and broadband bills. The amount of tax relief such an employee can claim, \ud835\udc34\ud835\udc34, is calculated using the formula: \ud835\udc51\ud835\udc51 \ud835\udc34\ud835\udc34= (Total annual elec"
  },
  {
@@ -4235,11 +4200,11 @@
   "description": "The question as printed on the paper \u2014 Se\u00e1n is playing a game with 14 cards. 7 of the cards are green (G), numbered 1 to 7. The other 7 cards are red (R), also numbered 1 to 7. (c) Se\u00e1n picks a card at random and doesn\u2019t replace it. It is Red 5 (R5). He then "
  },
  {
-  "file": "maths-2024-OL-ask-p2-q3-a-ii.png",
+  "file": "maths-2024-OL-ask-p2-q3-a-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2024 OL Paper 2 Q3(a)(ii)",
-  "description": "The question as printed on the paper \u2014 (a) A line, \ud835\udc59\ud835\udc59, has the equation: \ud835\udc66\ud835\udc66= 1 2 \ud835\udc65\ud835\udc65\u22121 (ii) Draw the line \ud835\udc59\ud835\udc59 on the co-ordinate diagram below, in the domain \u22124 \u2264\ud835\udc65\ud835\udc65\u22645, \ud835\udc65\ud835\udc65\u2208\u211d. \ud835\udc66\ud835\udc66 2 1 \ud835\udc65\ud835\udc65 -4 -3 -2 -1 1 2 3 4 5 -1 -2 -3 -4"
+  "questionRef": "2024 OL Paper 2 Q3(a)(i), (ii)",
+  "description": "The question as printed on the paper \u2014 (a) A line, \ud835\udc59\ud835\udc59, has the equation: \ud835\udc66\ud835\udc66= 1 2 \ud835\udc65\ud835\udc65\u22121 (i) Show that the point (4, 1) lies on \ud835\udc59\ud835\udc59. (ii) Draw the line \ud835\udc59\ud835\udc59 on the co-ordinate diagram below, in the domain \u22124 \u2264\ud835\udc65\ud835\udc65\u22645, \ud835\udc65\ud835\udc65\u2208\u211d. \ud835\udc66\ud835\udc66 2 1 \ud835\udc65\ud835\udc65 -4 -3 -2 -1 1 2 3 4 5 -1 -2 -3 -4"
  },
  {
   "file": "maths-2024-OL-ask-p2-q3-b.png",
@@ -4298,24 +4263,24 @@
   "description": "The question as printed on the paper \u2014 (a) A large group of 17-year-olds were asked how many hours of sleep they got on the previous night. The results were normally distributed. The middle \ud835\udfd4\ud835\udfd4\ud835\udfd4\ud835\udfd4% slept between 7\u22192 and 8\u22194 hours, as shown on the diagram below."
  },
  {
-  "file": "maths-2024-OL-ask-p2-q5-b-ii.png",
+  "file": "maths-2024-OL-ask-p2-q5-b-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2024 OL Paper 2 Q5(b)(ii)",
-  "description": "The question as printed on the paper \u2014 (b) Owen records the number of hours of sleep that he gets each night for several weeks. Based on this, he calculates that he gets the recommended amount of sleep 10% of the time. (ii) Beginning on a Sunday night, Owen r"
+  "questionRef": "2024 OL Paper 2 Q5(b)(i), (ii)",
+  "description": "The question as printed on the paper \u2014 (b) Owen records the number of hours of sleep that he gets each night for several weeks. Based on this, he calculates that he gets the recommended amount of sleep 10% of the time. (i) What is the probability that he does"
  },
  {
-  "file": "maths-2024-OL-ask-p2-q6-a-ii.png",
+  "file": "maths-2024-OL-ask-p2-q6-a-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2024 OL Paper 2 Q6(a)(ii)",
+  "questionRef": "2024 OL Paper 2 Q6(a)(i), (ii)",
   "description": "The question as printed on the paper \u2014 (a) The diagram below shows the triangle \ud835\udc4b\ud835\udc4b\ud835\udc4b\ud835\udc4b\ud835\udc4b\ud835\udc4b. (i) Construct the bisector of the angle \ud835\udc4b\ud835\udc4b\ud835\udc4b\ud835\udc4b\ud835\udc4b\ud835\udc4b, using only a compass and straight edge. Show all your construction lines and arcs clearly. (ii) Hence, construct the incent"
  },
  {
-  "file": "maths-2024-OL-ask-p2-q6-b-ii.png",
+  "file": "maths-2024-OL-ask-p2-q6-b-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2024 OL Paper 2 Q6(b)(ii)",
+  "questionRef": "2024 OL Paper 2 Q6(b)(i), (ii)",
   "description": "The question as printed on the paper \u2014 (b) The diagram below shows the triangles \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 and \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 (not to scale). The triangle \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 is the image of the triangle \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 under enlargement. Some of the lengths are shown in the diagram. \ud835\udc38\ud835\udc38 14 \ud835\udc36\ud835\udc36 6 4 \ud835\udc34\ud835\udc34 \ud835\udc37\ud835\udc37 \ud835\udc35\ud835\udc35 ("
  },
  {
@@ -4417,11 +4382,11 @@
   "description": "The question as printed on the paper \u2014 (b) The fish shop has a logo with some measurements as shown in the diagram below (not to scale). \ud835\udc39\ud835\udc39 110\u00b0 22 cm 11\u22198 cm \ud835\udc34\ud835\udc34 10 cm \ud835\udc36\ud835\udc36 \ud835\udf03\ud835\udf03 \ud835\udc38\ud835\udc38 12 cm 37\u00b0 \ud835\udc35\ud835\udc35 \ud835\udc37\ud835\udc37 (i) |\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34| = 12 cm, |\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34| = 10 cm, and |\u2220\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34| = 37\u00b0. Work out "
  },
  {
-  "file": "maths-2024-OL-ask-p2-q9-a-ii.png",
+  "file": "maths-2024-OL-ask-p2-q9-a-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2024 OL Paper 2 Q9(a)(ii)",
-  "description": "The question as printed on the paper \u2014 Diarmuid owns an ice cream van. (a) Diarmuid sells: \u2022 7 different flavours of ice cream \u2022 4 different toppings \u2022 2 containers: a choice of a cone or a tub. (ii) Diarmuid wants to maximise the number of choices available "
+  "questionRef": "2024 OL Paper 2 Q9(a)(i), (ii)",
+  "description": "The question as printed on the paper \u2014 Diarmuid owns an ice cream van. (a) Diarmuid sells: \u2022 7 different flavours of ice cream \u2022 4 different toppings \u2022 2 containers: a choice of a cone or a tub. (i) How many different choices are available if you must choose "
  },
  {
   "file": "maths-2024-OL-ask-p2-q9-b-i.png",
@@ -4459,10 +4424,10 @@
   "description": "The question as printed on the paper \u2014 Diarmuid owns an ice cream van. (d) Diarmuid has a logo of an ice cream cone on the side of his van. \ud835\udc60\ud835\udc60 The logo is made up of a sector of a circle with radius 20 cm, and two identical right-angled triangles, as shown in"
  },
  {
-  "file": "maths-2024-OL-ask-p2-q10-a-iii.png",
+  "file": "maths-2024-OL-ask-p2-q10-a-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2024 OL Paper 2 Q10(a)(iii)",
+  "questionRef": "2024 OL Paper 2 Q10(a)(i)\u2013(iii)",
   "description": "The question as printed on the paper \u2014 (a) In Wimbledon Tennis Tournament 2023, the fastest women\u2019s serve was by Aryna Sabalenka at 121 miles per hour. (Source www.wimbledon.org) (i) Use the conversion rate of 1 mile = 1\u221961 km to convert 121 miles to km. (ii)"
  },
  {
@@ -4478,13 +4443,6 @@
   "truncated": false,
   "questionRef": "2024 OL Paper 2 Q10(c)",
   "description": "The question as printed on the paper \u2014 (c) The cross-section of a tennis ball is shown in the diagram on the right. \ud835\udc5f\ud835\udc5f1 The ball is made up of an air-filled centre and a rubber layer of uniform thickness. \ud835\udc5f\ud835\udc5f2 The external radius (\ud835\udc5f\ud835\udc5f1) of the tennis ball is 3\u2219"
- },
- {
-  "file": "maths-2024-OL-ask-p2-q10-d-ii.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2024 OL Paper 2 Q10(d)(ii)",
-  "description": "The question as printed on the paper \u2014 (d) The diagram on the right shows the smallest closed cylindrical container that contains three identical tennis balls, arranged one directly on top of the other. The radius of each tennis ball is 3\u22194 cm. The height of "
  },
  {
   "file": "maths-2024-OL-ask-p2-q10-d-iii.png",
@@ -4529,10 +4487,10 @@
   "description": "The question as printed on the paper \u2014 (a) A function is defined for \ud835\udc65\ud835\udc65\u2208\u211d by: \ud835\udc53\ud835\udc53(\ud835\udc65\ud835\udc65) = 6 + \ud835\udc65\ud835\udc652 + sin 4\ud835\udc65\ud835\udc65 (ii) Find the equation of the tangent to the curve \ud835\udc66\ud835\udc66= \ud835\udc53\ud835\udc53(\ud835\udc65\ud835\udc65) at the point where \ud835\udc65\ud835\udc65= 0. Give your answer in the form \ud835\udc4e\ud835\udc4e\ud835\udc4e\ud835\udc4e+ \ud835\udc4f\ud835\udc4f\ud835\udc4f\ud835\udc4f+ \ud835\udc50\ud835\udc50= 0, where \ud835\udc4e\ud835\udc4e, \ud835\udc4f\ud835\udc4f, \ud835\udc50\ud835\udc50\u2208\u2124"
  },
  {
-  "file": "maths-2025-HL-ask-p1-q2-b-iii.png",
+  "file": "maths-2025-HL-ask-p1-q2-b-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2025 HL Paper 1 Q2(b)(iii)",
+  "questionRef": "2025 HL Paper 1 Q2(b)(i)\u2013(iii)",
   "description": "The question as printed on the paper \u2014 (b) The function \ud835\udc54\ud835\udc54(\ud835\udc65\ud835\udc65) is defined for \ud835\udc66\ud835\udc66 0 \u2264\ud835\udc65\ud835\udc65\u22644, \ud835\udc65\ud835\udc65\u2208\u211d. \ud835\udc54\ud835\udc54(\ud835\udc65\ud835\udc65) 4 Its graph is shown in the diagram on the right, and is made up of two line 3 segments. Use the graph of \ud835\udc54\ud835\udc54(\ud835\udc65\ud835\udc65) to answer parts (b)(i), (b)(ii), and b(iii)"
  },
  {
@@ -4627,10 +4585,10 @@
   "description": "The question as printed on the paper \u2014 Spiders build webs out of silk. This question involves two different models of how a spider might build its web. The functions in each model give lengths in centimetres. (a) In the first model, the web is made in stages."
  },
  {
-  "file": "maths-2025-HL-ask-p1-q7-a-iii.png",
+  "file": "maths-2025-HL-ask-p1-q7-a-ii.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2025 HL Paper 1 Q7(a)(iii)",
+  "questionRef": "2025 HL Paper 1 Q7(a)(ii), (iii)",
   "description": "The question as printed on the paper \u2014 Spiders build webs out of silk. This question involves two different models of how a spider might build its web. The functions in each model give lengths in centimetres. (a) In the first model, the web is made in stages."
  },
  {
@@ -4646,13 +4604,6 @@
   "truncated": false,
   "questionRef": "2025 HL Paper 1 Q7(a)(v)",
   "description": "The question as printed on the paper \u2014 Spiders build webs out of silk. This question involves two different models of how a spider might build its web. The functions in each model give lengths in centimetres. (a) In the first model, the web is made in stages."
- },
- {
-  "file": "maths-2025-HL-ask-p1-q7-b-ii.png",
-  "kind": "figure",
-  "truncated": false,
-  "questionRef": "2025 HL Paper 1 Q7(b)(ii)",
-  "description": "The question as printed on the paper \u2014 Spiders build webs out of silk. This question involves two different models of how a spider might build its web. The functions in each model give lengths in centimetres. (b) In the second model, the web is made \ud835\udc42\ud835\udc423 in la"
  },
  {
   "file": "maths-2025-HL-ask-p1-q7-b-iii.png",
@@ -4704,10 +4655,10 @@
   "description": "The question as printed on the paper \u2014 Dani drives a car. (a) The fuel consumption, \ud835\udc39\ud835\udc39, of Dani\u2019s car depends on the speed of the car, \ud835\udc50\ud835\udc50. For one particular journey, \ud835\udc39\ud835\udc39 is given by: \ud835\udc39\ud835\udc39(\ud835\udc50\ud835\udc50) = 0\u221905 \ud835\udc50\ud835\udc502 \u22128\u22195 \ud835\udc50\ud835\udc50+ 800 where \ud835\udc39\ud835\udc39 is in litres per 10 000 km, and \ud835\udc50\ud835\udc50 i"
  },
  {
-  "file": "maths-2025-HL-ask-p1-q9-a-iii.png",
+  "file": "maths-2025-HL-ask-p1-q9-a-ii.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2025 HL Paper 1 Q9(a)(iii)",
+  "questionRef": "2025 HL Paper 1 Q9(a)(ii), (iii)",
   "description": "The question as printed on the paper \u2014 Dani drives a car. (a) The fuel consumption, \ud835\udc39\ud835\udc39, of Dani\u2019s car depends on the speed of the car, \ud835\udc50\ud835\udc50. For one particular journey, \ud835\udc39\ud835\udc39 is given by: \ud835\udc39\ud835\udc39(\ud835\udc50\ud835\udc50) = 0\u221905 \ud835\udc50\ud835\udc502 \u22128\u22195 \ud835\udc50\ud835\udc50+ 800 where \ud835\udc39\ud835\udc39 is in litres per 10 000 km, and \ud835\udc50\ud835\udc50 i"
  },
  {
@@ -4725,10 +4676,10 @@
   "description": "The question as printed on the paper \u2014 Dani drives a car. (a) The fuel consumption, \ud835\udc39\ud835\udc39, of Dani\u2019s car depends on the speed of the car, \ud835\udc50\ud835\udc50. For one particular journey, \ud835\udc39\ud835\udc39 is given by: \ud835\udc39\ud835\udc39(\ud835\udc50\ud835\udc50) = 0\u221905 \ud835\udc50\ud835\udc502 \u22128\u22195 \ud835\udc50\ud835\udc50+ 800 where \ud835\udc39\ud835\udc39 is in litres per 10 000 km, and \ud835\udc50\ud835\udc50 i"
  },
  {
-  "file": "maths-2025-HL-ask-p1-q9-b-ii.png",
+  "file": "maths-2025-HL-ask-p1-q9-b-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2025 HL Paper 1 Q9(b)(ii)",
+  "questionRef": "2025 HL Paper 1 Q9(b)(i), (ii)",
   "description": "The question as printed on the paper \u2014 Dani drives a car. (b) Over the first 8 seconds that Dani is driving her car, the car\u2019s speed, in km/hour, can be approximated using the following function \ud835\udc63\ud835\udc63(\ud835\udc61\ud835\udc61): 8\ud835\udc52\ud835\udc520\u22194\ud835\udc61\ud835\udc61\u22128 , 0 \u2264\ud835\udc61\ud835\udc61\u22644 \ud835\udc63\ud835\udc63(\ud835\udc61\ud835\udc61) = \u0d5d \u2212\ud835\udc61\ud835\udc612 + 24\ud835\udc61\ud835\udc61\u221248\u22194 , 4 < \ud835\udc61"
  },
  {
@@ -4774,10 +4725,10 @@
   "description": "The question as printed on the paper \u2014 (iii) Find the value of \ud835\udc44\ud835\udc44 \u221e which is given by: \ud835\udc61\ud835\udc612 + 2\ud835\udc61\ud835\udc61+ 1 \ud835\udc44\ud835\udc44 \u221e= lim 4\ud835\udc61\ud835\udc612 \ud835\udc61\ud835\udc61\u2192\u221e"
  },
  {
-  "file": "maths-2025-HL-ask-p1-q10-e-ii.png",
+  "file": "maths-2025-HL-ask-p1-q10-e-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2025 HL Paper 1 Q10(e)(ii)",
+  "questionRef": "2025 HL Paper 1 Q10(e)(i), (ii)",
   "description": "The question as printed on the paper \u2014 The first three patterns in a sequence of patterns are shown below. Each pattern is made up of ) at points in the co-ordinate plane that have integer co-ordinates. dots ( As shown below, Pattern 1 has a dot at all such p"
  },
  {
@@ -4844,11 +4795,11 @@
   "description": "The question as printed on the paper \u2014 (b) Two of the 240 people are picked at random. Find the probability that one of them had been to all three countries, and the other had been to none of the three countries. Give your answer as a fraction in its simplest"
  },
  {
-  "file": "maths-2025-HL-ask-p2-q4-a-ii.png",
+  "file": "maths-2025-HL-ask-p2-q4-a-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2025 HL Paper 2 Q4(a)(ii)",
-  "description": "The question as printed on the paper \u2014 (a) The ages of twelve people in a class are given below. They are in ascending order, and \ud835\udc65\ud835\udc65\u2208\u2115. 11 12 12 14 15 \ud835\udc65\ud835\udc65 18 18 19 22 25 30 (ii) The first quartile (\ud835\udc44\ud835\udc441) is 13. Work out the interquartile range of the ages."
+  "questionRef": "2025 HL Paper 2 Q4(a)(i), (ii)",
+  "description": "The question as printed on the paper \u2014 (a) The ages of twelve people in a class are given below. They are in ascending order, and \ud835\udc65\ud835\udc65\u2208\u2115. 11 12 12 14 15 \ud835\udc65\ud835\udc65 18 18 19 22 25 30 (i) The median age is 17\u22195. Find the value of \ud835\udc65\ud835\udc65. (ii) The first quartile (\ud835\udc44\ud835\udc441) is 13. "
  },
  {
   "file": "maths-2025-HL-ask-p2-q4-b.png",
@@ -4907,10 +4858,10 @@
   "description": "The question as printed on the paper \u2014 (c) In the triangle \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34, |\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34| = 2, |\ud835\udc35\ud835\udc35\ud835\udc35\ud835\udc35| = 3, and |\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34| = 4. \ud835\udc36\ud835\udc36 3 2 \ud835\udc35\ud835\udc35 \ud835\udc34\ud835\udc34 4 Use the Cosine Rule to find the value of tan \u2220\ud835\udc36\ud835\udc36\ud835\udc36\ud835\udc36\ud835\udc36\ud835\udc36, without using a calculator. Give your answer in the form \u221a\ud835\udc5b\ud835\udc5b \ud835\udc5a\ud835\udc5a , where \ud835\udc5b\ud835\udc5b, \ud835\udc5a\ud835\udc5a\u2208\u2124. S"
  },
  {
-  "file": "maths-2025-HL-ask-p2-q7-a-ii.png",
+  "file": "maths-2025-HL-ask-p2-q7-a-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2025 HL Paper 2 Q7(a)(ii)",
+  "questionRef": "2025 HL Paper 2 Q7(a)(i), (ii)",
   "description": "The question as printed on the paper \u2014 (a) Below is a scaled diagram of a submarine. The body of the submarine is roughly in the shape of a cylinder, with a cone at one end and a hemisphere at the other end, as shown. \ud835\udc5f\ud835\udc5f \u210e \ud835\udc51\ud835\udc51 (i) Measure the lengths labelled "
  },
  {
@@ -4921,10 +4872,10 @@
   "description": "The question as printed on the paper \u2014 (b) The diagram below shows the body of a different submarine with a similar design. The dimensions of this submarine are all given in terms of \ud835\udc65\ud835\udc65, where \ud835\udc65\ud835\udc65\u2208\u211d. The hemisphere, cylinder, and cone all have a radius of \ud835\udc65\ud835\udc65. "
  },
  {
-  "file": "maths-2025-HL-ask-p2-q7-c-ii.png",
+  "file": "maths-2025-HL-ask-p2-q7-c-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2025 HL Paper 2 Q7(c)(ii)",
+  "questionRef": "2025 HL Paper 2 Q7(c)(i), (ii)",
   "description": "The question as printed on the paper \u2014 (c) A submarine is within \u221a58 km of a point \ud835\udc34\ud835\udc34 and is within \u221a178 km of a point \ud835\udc35\ud835\udc35. The distance from \ud835\udc34\ud835\udc34 to \ud835\udc35\ud835\udc35 is 20 km. \ud835\udc34\ud835\udc34, \ud835\udc35\ud835\udc35, and the submarine are all at the same depth. This is represented on the co-ordinate diagram"
  },
  {
@@ -4991,10 +4942,10 @@
   "description": "The question as printed on the paper \u2014 (c) Ally is also working out the height of a round tower. She measures the angle of elevation to the top of the tower. She then moves 10 m away from the tower, on horizontal ground, and measures the angle of elevation of"
  },
  {
-  "file": "maths-2025-HL-ask-p2-q9-a-iv.png",
+  "file": "maths-2025-HL-ask-p2-q9-a-iii.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2025 HL Paper 2 Q9(a)(iv)",
+  "questionRef": "2025 HL Paper 2 Q9(a)(iii), (iv)",
   "description": "The question as printed on the paper \u2014 In parts (a) and (b) of this question, give answers correct to \ud835\udfd2\ud835\udfd2 decimal places, where relevant. (a) Assume that 6\u22197% of people in Ireland have diabetes. For a particular test for diabetes, each person tests either posi"
  },
  {
@@ -5047,11 +4998,11 @@
   "description": "The question as printed on the paper \u2014 (ii) Use the normal distribution to work out the proportion of students worldwide who would score above 420 on the test. Give your answer correct to 2 decimal places. A random sample of students is taken from each countr"
  },
  {
-  "file": "maths-2025-HL-ask-p2-q10-c-ii.png",
+  "file": "maths-2025-HL-ask-p2-q10-c-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2025 HL Paper 2 Q10(c)(ii)",
-  "description": "The question as printed on the paper \u2014 A particular test is used to measure how well students around the world can do maths problems. (c) For country Y, researchers carried out a hypothesis test at the 5% level of significance to see if the population mean sc"
+  "questionRef": "2025 HL Paper 2 Q10(c)(i), (ii)",
+  "description": "The question as printed on the paper \u2014 A particular test is used to measure how well students around the world can do maths problems. (ii) Use the normal distribution to work out the proportion of students worldwide who would score above 420 on the test. Give"
  },
  {
   "file": "maths-2025-HL-ask-p2-q10-d.png",
@@ -5082,11 +5033,11 @@
   "description": "The question as printed on the paper \u2014 (a) Se\u00e1n is buying a power bank and a USB-C cable. (ii) Se\u00e1n is going to buy a different power bank that costs \u20ac26, and a USB-C cable that costs \u20ac9. Se\u00e1n sees a special offer to buy the power bank and USB-C cable togethe"
  },
  {
-  "file": "maths-2025-OL-ask-p1-q1-b-ii.png",
+  "file": "maths-2025-OL-ask-p1-q1-b-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2025 OL Paper 1 Q1(b)(ii)",
-  "description": "The question as printed on the paper \u2014 (b) M\u00e1ir\u00e9ad and Diarmuid own a window cleaning business. M\u00e1ir\u00e9ad can clean a standard window in 9 minutes Diarmuid can clean a standard window in 12 minutes. (ii) A building has 35 standard windows. Work out how long it "
+  "questionRef": "2025 OL Paper 1 Q1(b)(i), (ii)",
+  "description": "The question as printed on the paper \u2014 (b) M\u00e1ir\u00e9ad and Diarmuid own a window cleaning business. M\u00e1ir\u00e9ad can clean a standard window in 9 minutes Diarmuid can clean a standard window in 12 minutes. (i) M\u00e1ir\u00e9ad and Diarmuid both start cleaning standard windows "
  },
  {
   "file": "maths-2025-OL-ask-p1-q2-a-i.png",
@@ -5096,11 +5047,11 @@
   "description": "The question as printed on the paper \u2014 In this question, \ud835\udc56\ud835\udc562 = \u22121. (a) \ud835\udc67\ud835\udc671, \ud835\udc67\ud835\udc672 and \ud835\udc67\ud835\udc673 are three complex numbers. \ud835\udc67\ud835\udc671 = \u22121 + 2\ud835\udc56\ud835\udc56 \ud835\udc67\ud835\udc672 = 2 + 3\ud835\udc56\ud835\udc56 \ud835\udc67\ud835\udc673 = 4 \u2212\ud835\udc56\ud835\udc56 (i) The complex number \ud835\udc67\ud835\udc671 is shown on the Argand diagram below. Plot and label \ud835\udc67\ud835\udc672 and \ud835\udc67\ud835\udc673 on the same"
  },
  {
-  "file": "maths-2025-OL-ask-p1-q2-a-iii.png",
+  "file": "maths-2025-OL-ask-p1-q2-a-ii.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2025 OL Paper 1 Q2(a)(iii)",
-  "description": "The question as printed on the paper \u2014 (a) \ud835\udc67\ud835\udc671, \ud835\udc67\ud835\udc672 and \ud835\udc67\ud835\udc673 are three complex numbers. \ud835\udc67\ud835\udc671 = \u22121 + 2\ud835\udc56\ud835\udc56 \ud835\udc67\ud835\udc672 = 2 + 3\ud835\udc56\ud835\udc56 \ud835\udc67\ud835\udc673 = 4 \u2212\ud835\udc56\ud835\udc56 (iii) Write down one possible value of \ud835\udc67\ud835\udc674. Give your answer in the form \ud835\udc4e\ud835\udc4e+ \ud835\udc4f\ud835\udc4f\ud835\udc4f\ud835\udc4f, where \ud835\udc4e\ud835\udc4e, \ud835\udc4f\ud835\udc4f\u2208\u2124."
+  "questionRef": "2025 OL Paper 1 Q2(a)(ii), (iii)",
+  "description": "The question as printed on the paper \u2014 (a) \ud835\udc67\ud835\udc671, \ud835\udc67\ud835\udc672 and \ud835\udc67\ud835\udc673 are three complex numbers. \ud835\udc67\ud835\udc671 = \u22121 + 2\ud835\udc56\ud835\udc56 \ud835\udc67\ud835\udc672 = 2 + 3\ud835\udc56\ud835\udc56 \ud835\udc67\ud835\udc673 = 4 \u2212\ud835\udc56\ud835\udc56 (ii) Work out the modulus of \ud835\udc67\ud835\udc671. That is, find |\ud835\udc67\ud835\udc671|. Give your answer in surd form. \ud835\udc67\ud835\udc674 is a complex number with: |\ud835\udc67\ud835\udc674| < |\ud835\udc67\ud835\udc671| ("
  },
  {
   "file": "maths-2025-OL-ask-p1-q2-b.png",
@@ -5124,10 +5075,10 @@
   "description": "The question as printed on the paper \u2014 (b) Solve the inequality for \ud835\udc65\ud835\udc65\u2208\u211d: 2\ud835\udc65\ud835\udc65+ 4 \u22656\ud835\udc65\ud835\udc65\u22128"
  },
  {
-  "file": "maths-2025-OL-ask-p1-q3-c-ii.png",
+  "file": "maths-2025-OL-ask-p1-q3-c-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2025 OL Paper 1 Q3(c)(ii)",
+  "questionRef": "2025 OL Paper 1 Q3(c)(i), (ii)",
   "description": "The question as printed on the paper \u2014 (c) \ud835\udc58\ud835\udc58\u00d7 \ud835\udc61\ud835\udc61= 12, where \ud835\udc58\ud835\udc58, \ud835\udc61\ud835\udc61\u2208\u2124. (i) Write down a possible value of \ud835\udc58\ud835\udc58 and the corresponding value of \ud835\udc61\ud835\udc61. (ii) Use your values for \ud835\udc58\ud835\udc58 and \ud835\udc61\ud835\udc61 from part (c)(i) to find the value of \ud835\udc4f\ud835\udc4f in the equation below. (\ud835\udc65\ud835\udc65+ \ud835\udc58\ud835\udc58)(\ud835\udc65\ud835\udc65+ \ud835\udc61\ud835\udc61)"
  },
  {
@@ -5145,10 +5096,10 @@
   "description": "The question as printed on the paper \u2014 The function \ud835\udc53\ud835\udc53(\ud835\udc65\ud835\udc65) is defined as \ud835\udc53\ud835\udc53(\ud835\udc65\ud835\udc65) = \ud835\udc65\ud835\udc653 \u22123\ud835\udc65\ud835\udc652 + 4\ud835\udc65\ud835\udc65\u22128, where \ud835\udc65\ud835\udc65\u2208\u211d. (b) Find \ud835\udc53\ud835\udc53\u2032(\ud835\udc65\ud835\udc65), the derivative of \ud835\udc53\ud835\udc53(\ud835\udc65\ud835\udc65). Hence, find the slope of the tangent to \ud835\udc53\ud835\udc53(\ud835\udc65\ud835\udc65) at the point (2, \u22124)."
  },
  {
-  "file": "maths-2025-OL-ask-p1-q4-c-ii.png",
+  "file": "maths-2025-OL-ask-p1-q4-c-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2025 OL Paper 1 Q4(c)(ii)",
+  "questionRef": "2025 OL Paper 1 Q4(c)(i), (ii)",
   "description": "The question as printed on the paper \u2014 (c) The diagram below shows the graph of a cubic function \ud835\udc54\ud835\udc54(\ud835\udc65\ud835\udc65). \ud835\udc43\ud835\udc43, \ud835\udc44\ud835\udc44, and \ud835\udc45\ud835\udc45 are points on the graph of \ud835\udc54\ud835\udc54. (i) Write each of the letters \ud835\udc43\ud835\udc43, \ud835\udc44\ud835\udc44, and \ud835\udc45\ud835\udc45 in the correct place in the table so that each point matches th"
  },
  {
@@ -5166,18 +5117,18 @@
   "description": "The question as printed on the paper \u2014 (b) Solve the following equation in \ud835\udc65\ud835\udc65\u2208\u211d: 3\ud835\udc65\ud835\udc652 \u22122\ud835\udc65\ud835\udc65\u22124 = 0 Give each answer correct to 2 decimal places."
  },
  {
-  "file": "maths-2025-OL-ask-p1-q5-c-ii.png",
+  "file": "maths-2025-OL-ask-p1-q5-c-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2025 OL Paper 1 Q5(c)(ii)",
+  "questionRef": "2025 OL Paper 1 Q5(c)(i), (ii)",
   "description": "The question as printed on the paper \u2014 (c) The graph of a quadratic function \u210e(\ud835\udc65\ud835\udc65) is shown in the diagram below (drawn to scale). The graph is symmetrical about a vertical line. \ud835\udc66\ud835\udc66 \u210e(\ud835\udc65\ud835\udc65) \ud835\udc65\ud835\udc65 (i) Based on the graph, which of the following pairs of values of \ud835\udc65\ud835\udc65"
  },
  {
-  "file": "maths-2025-OL-ask-p1-q7-a-ii.png",
+  "file": "maths-2025-OL-ask-p1-q7-a-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2025 OL Paper 1 Q7(a)(ii)",
-  "description": "The question as printed on the paper \u2014 The diagram below shows the value of one share for Company A, in euro, on the 1st day of each month from 1st January to 1st July. 10 9 8 Value of one share (\u20ac) 7 6 5 4 3 2 1 Feb Mar Apr May Jun Jul Aug Jan Month (ii) Use"
+  "questionRef": "2025 OL Paper 1 Q7(a)(i), (ii)",
+  "description": "The question as printed on the paper \u2014 The diagram below shows the value of one share for Company A, in euro, on the 1st day of each month from 1st January to 1st July. 10 9 8 Value of one share (\u20ac) 7 6 5 4 3 2 1 Feb Mar Apr May Jun Jul Aug Jan Month (a) (i) "
  },
  {
   "file": "maths-2025-OL-ask-p1-q7-b.png",
@@ -5194,10 +5145,10 @@
   "description": "The question as printed on the paper \u2014 The diagram below shows the value of one share for Company A, in euro, on the 1st day of each month from 1st January to 1st July. 10 9 8 Value of one share (\u20ac) 7 6 5 4 3 2 1 Feb Mar Apr May Jun Jul Aug Jan Month (c) Late"
  },
  {
-  "file": "maths-2025-OL-ask-p1-q7-d-ii.png",
+  "file": "maths-2025-OL-ask-p1-q7-d-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2025 OL Paper 1 Q7(d)(ii)",
+  "questionRef": "2025 OL Paper 1 Q7(d)(i), (ii)",
   "description": "The question as printed on the paper \u2014 The diagram below shows the value of one share for Company A, in euro, on the 1st day of each month from 1st January to 1st July. 10 9 8 Value of one share (\u20ac) 7 6 5 4 3 2 1 Feb Mar Apr May Jun Jul Aug Jan Month (d) The "
  },
  {
@@ -5208,10 +5159,10 @@
   "description": "The question as printed on the paper \u2014 The diagram below shows the value of one share for Company A, in euro, on the 1st day of each month from 1st January to 1st July. 10 9 8 Value of one share (\u20ac) 7 6 5 4 3 2 1 Feb Mar Apr May Jun Jul Aug Jan Month (d) The "
  },
  {
-  "file": "maths-2025-OL-ask-p1-q7-e-ii.png",
+  "file": "maths-2025-OL-ask-p1-q7-e-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2025 OL Paper 1 Q7(e)(ii)",
+  "questionRef": "2025 OL Paper 1 Q7(e)(i), (ii)",
   "description": "The question as printed on the paper \u2014 The diagram below shows the value of one share for Company A, in euro, on the 1st day of each month from 1st January to 1st July. 10 9 8 Value of one share (\u20ac) 7 6 5 4 3 2 1 Feb Mar Apr May Jun Jul Aug Jan Month (e) Acco"
  },
  {
@@ -5222,10 +5173,10 @@
   "description": "The question as printed on the paper \u2014 (a) (i) Find \ud835\udc43\ud835\udc43(0) and explain what it means in the context of the question."
  },
  {
-  "file": "maths-2025-OL-ask-p1-q8-a-iii.png",
+  "file": "maths-2025-OL-ask-p1-q8-a-ii.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2025 OL Paper 1 Q8(a)(iii)",
+  "questionRef": "2025 OL Paper 1 Q8(a)(ii), (iii)",
   "description": "The question as printed on the paper \u2014 A company launches a new phone. The company\u2019s profit each year will depend on the number of phones it produces, \ud835\udc65\ud835\udc65. The company\u2019s profit for the first year can be modelled by the function: \ud835\udc43\ud835\udc43(\ud835\udc65\ud835\udc65) = \u22121\u22195\ud835\udc65\ud835\udc652 + 10\u22195\ud835\udc65\ud835\udc65\u22124 whe"
  },
  {
@@ -5236,24 +5187,24 @@
   "description": "The question as printed on the paper \u2014 A company launches a new phone. The company\u2019s profit each year will depend on the number of phones it produces, \ud835\udc65\ud835\udc65. The company\u2019s profit for the first year can be modelled by the function: \ud835\udc43\ud835\udc43(\ud835\udc65\ud835\udc65) = \u22121\u22195\ud835\udc65\ud835\udc652 + 10\u22195\ud835\udc65\ud835\udc65\u22124 whe"
  },
  {
-  "file": "maths-2025-OL-ask-p1-q8-b-ii.png",
+  "file": "maths-2025-OL-ask-p1-q8-b-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2025 OL Paper 1 Q8(b)(ii)",
+  "questionRef": "2025 OL Paper 1 Q8(b)(i), (ii)",
   "description": "The question as printed on the paper \u2014 A company launches a new phone. The company\u2019s profit each year will depend on the number of phones it produces, \ud835\udc65\ud835\udc65. The company\u2019s profit for the first year can be modelled by the function: \ud835\udc43\ud835\udc43(\ud835\udc65\ud835\udc65) = \u22121\u22195\ud835\udc65\ud835\udc652 + 10\u22195\ud835\udc65\ud835\udc65\u22124 whe"
  },
  {
-  "file": "maths-2025-OL-ask-p1-q8-c-ii.png",
+  "file": "maths-2025-OL-ask-p1-q8-c-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2025 OL Paper 1 Q8(c)(ii)",
+  "questionRef": "2025 OL Paper 1 Q8(c)(i), (ii)",
   "description": "The question as printed on the paper \u2014 A company launches a new phone. The company\u2019s profit each year will depend on the number of phones it produces, \ud835\udc65\ud835\udc65. The company\u2019s profit for the first year can be modelled by the function: \ud835\udc43\ud835\udc43(\ud835\udc65\ud835\udc65) = \u22121\u22195\ud835\udc65\ud835\udc652 + 10\u22195\ud835\udc65\ud835\udc65\u22124 whe"
  },
  {
-  "file": "maths-2025-OL-ask-p1-q9-a-ii.png",
+  "file": "maths-2025-OL-ask-p1-q9-a-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2025 OL Paper 1 Q9(a)(ii)",
+  "questionRef": "2025 OL Paper 1 Q9(a)(i), (ii)",
   "description": "The question as printed on the paper \u2014 (a) Evan has \u20ac4500 saved. He put this money in a savings account with a rate of 2\u22198% per annum compound interest. (i) Find how much money will be in the account after 1 year. (ii) Hence, or otherwise, find how much money"
  },
  {
@@ -5278,10 +5229,10 @@
   "description": "The question as printed on the paper \u2014 (b) A pattern is made up of dots and line segments. The dots are evenly spaced on a circle. Each pair of dots is joined by a line segment. The first pattern has two dots and a line segment joining them. Each pattern has "
  },
  {
-  "file": "maths-2025-OL-ask-p1-q9-b-v.png",
+  "file": "maths-2025-OL-ask-p1-q9-b-iv.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2025 OL Paper 1 Q9(b)(v)",
+  "questionRef": "2025 OL Paper 1 Q9(b)(iv), (v)",
   "description": "The question as printed on the paper \u2014 (b) A pattern is made up of dots and line segments. The dots are evenly spaced on a circle. Each pair of dots is joined by a line segment. The first pattern has two dots and a line segment joining them. Each pattern has "
  },
  {
@@ -5390,10 +5341,10 @@
   "description": "The question as printed on the paper \u2014 (b) The circle \ud835\udc50\ud835\udc50 has centre (3, \u22124) and radius 7. Write down the equation of \ud835\udc50\ud835\udc50."
  },
  {
-  "file": "maths-2025-OL-ask-p2-q3-c-ii.png",
+  "file": "maths-2025-OL-ask-p2-q3-c-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2025 OL Paper 2 Q3(c)(ii)",
+  "questionRef": "2025 OL Paper 2 Q3(c)(i), (ii)",
   "description": "The question as printed on the paper \u2014 (c) The circle \ud835\udc58\ud835\udc58 has centre (\u22121, 3). The point (2, 7) is on the circle \ud835\udc58\ud835\udc58, as shown in the diagram below. \ud835\udc66\ud835\udc66 (2, 7) \ud835\udc58\ud835\udc58 (\u22121, 3) \ud835\udc65\ud835\udc65 (i) Find the radius of the circle \ud835\udc58\ud835\udc58. (ii) Hence, or otherwise, write down the co-ordinat"
  },
  {
@@ -5453,10 +5404,10 @@
   "description": "The question as printed on the paper \u2014 (a) The marks in an exam were normally distributed, as shown in the diagram below. The mean mark was 62 and the standard deviation was 14. Use the empirical rule to answer parts (a)(i), (ii) and (iii). (i) Use the mean a"
  },
  {
-  "file": "maths-2025-OL-ask-p2-q6-a-iii.png",
+  "file": "maths-2025-OL-ask-p2-q6-a-ii.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2025 OL Paper 2 Q6(a)(iii)",
+  "questionRef": "2025 OL Paper 2 Q6(a)(ii), (iii)",
   "description": "The question as printed on the paper \u2014 (a) The marks in an exam were normally distributed, as shown in the diagram below. The mean mark was 62 and the standard deviation was 14. Use the empirical rule to answer parts (a)(i), (ii) and (iii). (i) Use the mean a"
  },
  {
@@ -5467,10 +5418,10 @@
   "description": "The question as printed on the paper \u2014 (b) Eoin writes down 5 positive whole numbers, from smallest to largest. For these 5 numbers: \u2022 the median is 9 \u2022 the mode is 6 \u2022 the range is 11 \u2022 the mean is 10. Find the 5 numbers that Eoin writes down. Answer = , , ,"
  },
  {
-  "file": "maths-2025-OL-ask-p2-q7-a-ii.png",
+  "file": "maths-2025-OL-ask-p2-q7-a-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2025 OL Paper 2 Q7(a)(ii)",
+  "questionRef": "2025 OL Paper 2 Q7(a)(i), (ii)",
   "description": "The question as printed on the paper \u2014 (a) Se\u00e1n is playing two tennis matches. He either wins or loses each match. The probability that he wins the first match is 0\u22196 and the probability that he wins the second match is 0\u22197. The outcomes of the two matches ar"
  },
  {
@@ -5481,11 +5432,11 @@
   "description": "The question as printed on the paper \u2014 (a) Se\u00e1n is playing two tennis matches. He either wins or loses each match. The probability that he wins the first match is 0\u22196 and the probability that he wins the second match is 0\u22197. The outcomes of the two matches ar"
  },
  {
-  "file": "maths-2025-OL-ask-p2-q7-b-ii.png",
+  "file": "maths-2025-OL-ask-p2-q7-b-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2025 OL Paper 2 Q7(b)(ii)",
-  "description": "The question as printed on the paper \u2014 (b) Sarah also plays tennis. Each time that Sarah plays a service game, the probability that she wins is 0\u221978. Assume that winning each service game is independent. (ii) What is the probability that the first service gam"
+  "questionRef": "2025 OL Paper 2 Q7(b)(i), (ii)",
+  "description": "The question as printed on the paper \u2014 (b) Sarah also plays tennis. Each time that Sarah plays a service game, the probability that she wins is 0\u221978. Assume that winning each service game is independent. (i) What is the probability that Sarah will lose her ne"
  },
  {
   "file": "maths-2025-OL-ask-p2-q7-c-i.png",
@@ -5523,10 +5474,10 @@
   "description": "The question as printed on the paper \u2014 (a) The table below shows the number of new private cars sold in 2023 (to the nearest hundred) broken down by fuel type. It also shows the percentage of these cars that were of each fuel type (correct to 2 decimal places"
  },
  {
-  "file": "maths-2025-OL-ask-p2-q8-b-ii.png",
+  "file": "maths-2025-OL-ask-p2-q8-b-i.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2025 OL Paper 2 Q8(b)(ii)",
+  "questionRef": "2025 OL Paper 2 Q8(b)(i), (ii)",
   "description": "The question as printed on the paper \u2014 (b) The scatter plot below shows the fuel efficiency of ten popular petrol car types and their engine sizes. 20 18 Fuel efficiency (km per litre) 16 14 12 10 8 6 4 2 0 0 1 2 3 4 5 Engine size (litres) (i) There is a corr"
  },
  {
@@ -5621,10 +5572,10 @@
   "description": "The question as printed on the paper \u2014 Aoibhe is a member of a sea swimming club. The club has six markers in the water, labelled \ud835\udc34\ud835\udc34, \ud835\udc35\ud835\udc35, \ud835\udc36\ud835\udc36, \ud835\udc37\ud835\udc37, \ud835\udc38\ud835\udc38, and \ud835\udc39\ud835\udc39, as shown in the diagram below. \ud835\udc37\ud835\udc37 200 m \ud835\udc36\ud835\udc36 150 m 150 m \ud835\udc38\ud835\udc38 \ud835\udc35\ud835\udc35 110\u00b0 200 m 200 m 200 m \ud835\udc39\ud835\udc39 \ud835\udc34\ud835\udc34 (b) Point \ud835\udc34"
  },
  {
-  "file": "maths-2025-OL-ask-p2-q10-b-iii.png",
+  "file": "maths-2025-OL-ask-p2-q10-b-ii.png",
   "kind": "figure",
   "truncated": false,
-  "questionRef": "2025 OL Paper 2 Q10(b)(iii)",
+  "questionRef": "2025 OL Paper 2 Q10(b)(ii), (iii)",
   "description": "The question as printed on the paper \u2014 Aoibhe is a member of a sea swimming club. The club has six markers in the water, labelled \ud835\udc34\ud835\udc34, \ud835\udc35\ud835\udc35, \ud835\udc36\ud835\udc36, \ud835\udc37\ud835\udc37, \ud835\udc38\ud835\udc38, and \ud835\udc39\ud835\udc39, as shown in the diagram below. \ud835\udc37\ud835\udc37 200 m \ud835\udc36\ud835\udc36 150 m 150 m \ud835\udc38\ud835\udc38 \ud835\udc35\ud835\udc35 110\u00b0 200 m 200 m 200 m \ud835\udc39\ud835\udc39 \ud835\udc34\ud835\udc34 (b) Point \ud835\udc34"
  }
 ]

@@ -24,6 +24,7 @@ Usage:
   python3 maths_question_figures.py --sitting 2021 hl
   python3 maths_question_figures.py --all
 """
+import hashlib
 import io
 import json
 import os
@@ -46,6 +47,7 @@ CATALOGUE = os.path.join(ROOT, 'scripts', 'markbank', 'authored',
 # Per-card corrections to the automatic plan, written after LOOKING at a bad
 # crop: {"card-id": {"qstem": true|false, "siblings": true|false}}.
 OVERRIDES = os.path.join(HERE, 'maths_qfig_overrides.json')
+MANIFEST_JSON = os.path.join(ROOT, 'components', 'MarkBank', 'figures.json')
 
 DPI = 170
 SCALE = DPI / 72.0
@@ -929,6 +931,9 @@ def trim_rows(img):
 
 REF = re.compile(
     r'^(\d{4}) (HL|OL) Paper (\d) Q(\d{1,2})(?:\(([a-h])\))?(?:\(([ivx]{1,4})\))?')
+# "Q1(a)(i), (ii)" — one scale marking two parts, so the crop must print both.
+SPAN = re.compile(r'\(([ivx]{1,4})\)(?:\s*[,–-]\s*\(([ivx]{1,4})\))+')
+LAST_ROMAN = re.compile(r'\(([ivx]{1,4})\)\s*$')
 
 
 def fig_name(year, level, paper, qnum, letter, roman):
@@ -946,6 +951,14 @@ def run(cards, write=True, probe=False):
     sidecar = json.load(open(SIDECAR)) if os.path.exists(SIDECAR) else {}
     catalogue = json.load(open(CATALOGUE)) if os.path.exists(CATALOGUE) else []
     have = {c['file'] for c in catalogue}
+    # Every crop already on disk or in the manifest, by content, so a second
+    # card covering the same span reuses the published name.
+    by_hash = {}
+    if os.path.exists(MANIFEST_JSON):
+        with open(MANIFEST_JSON) as fh:
+            for key, rec in json.load(fh).items():
+                if key.startswith('maths-') and '-ask-' in key:
+                    by_hash[rec['md5']] = key
     fails = []
     for card in cards:
         m = REF.match(card['questionRef'])
@@ -961,6 +974,16 @@ def run(cards, write=True, probe=False):
         S = sittings[key]
         bands, note = S.plan(qnum, letter, roman, card.get('questionText', ''),
                              overrides.get(card['id']))
+        # A span citation answers several parts from one scale. The crop has to
+        # show all of them, so the last band runs to whatever follows the LAST
+        # roman named rather than stopping at the first.
+        tail_m = LAST_ROMAN.search(card['questionRef'])
+        last = tail_m.group(1) if tail_m else None
+        if bands and last and last != roman:
+            wide, _ = S.plan(qnum, letter, last, card.get('questionText', ''),
+                             overrides.get(card['id']))
+            if wide:
+                bands = bands[:-1] + [(bands[-1][0], wide[-1][1])]
         if bands is None:
             fails.append((card['id'], note))
             continue
@@ -983,7 +1006,19 @@ def run(cards, write=True, probe=False):
             continue
         d = os.path.join(OUT, f'{year}-{lvl}')
         os.makedirs(d, exist_ok=True)
-        img.save(os.path.join(d, f'{name}.png'), optimize=True)
+        path = os.path.join(d, f'{name}.png')
+        img.save(path, optimize=True)
+        # Two cards whose spans cover the same region render the same pixels,
+        # and the manifest refuses a second name for identical bytes — rightly,
+        # since that is how a figure gets duplicated under two ids. Point the
+        # card at the crop that already exists instead of publishing a twin.
+        digest = hashlib.md5(open(path, 'rb').read()).hexdigest()
+        twin = by_hash.get(digest)
+        if twin and twin != name:
+            os.remove(path)
+            sidecar[card['id']] = twin
+            continue
+        by_hash[digest] = name
         sidecar[card['id']] = name
         catalogue.append({
             'file': f'{name}.png',
