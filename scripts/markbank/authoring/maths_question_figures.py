@@ -177,6 +177,7 @@ class Sitting:
         self._ink = {}
         self._furniture = {}
         self._rules = {}
+        self._all_bands = []
         self._index()
 
     # ---- geometry index ----
@@ -261,9 +262,14 @@ class Sitting:
                 # 2021 HL Q5(b) is 39 line segments and 11 béziers, and on
                 # extent alone it looked exactly like an answer box, so the
                 # mask painted the graph out and left a stranded arrowhead.
+                # A rectangle in the path is the answer box's signature. Across
+                # the whole corpus 961 answer boxes carry one and not a single
+                # figure does: the 29 candidates without a rect are all
+                # geometry — triangles labelled A, C, D, E, a field diagram
+                # with 35 m and 50 degrees — and a "few items" fallback was
+                # masking every one of them.
                 kinds = [i[0] for i in d.get('items', ())]
-                boxlike = ('c' not in kinds
-                           and (kinds.count('re') == 1 or len(kinds) <= 6))
+                boxlike = 'c' not in kinds and kinds.count('re') >= 1
                 if (boxlike and len(inside) <= 6
                         and sum(len(t) for t in ink) < 60
                         and all(len(t) < 28 for t in ink)):
@@ -670,6 +676,8 @@ class Sitting:
         return windows
 
     def _mask_frames(self, img, page, top, bot, band_hi=None):
+        """(see below) — `self._all_bands` is the whole plan, so a line this
+        window shows but a LATER band owns is never erased."""
         """Paint the answer furniture white where the window could not avoid
         it. A window's EXTENT never follows a furniture frame, but a tall
         diagram beside one (the 2021 P2 sphere) can stretch the window across
@@ -681,7 +689,7 @@ class Sitting:
         # A neighbouring part's text row can sit under ink the band grew over
         # (the sphere's bottom arc crosses the "(ii)" line) — those rows are
         # erased the same way, sparing only the grown ink's own pixels.
-        if band_hi is not None:
+        if band_hi is not None and not self._all_bands:
             # Only rows that sit CLEARLY below the band. A marker's y is nudged
             # 4pt up so its own row is not split, which put the boundary a hair
             # above legitimate rows: masking at band_hi erased the denominator
@@ -695,6 +703,21 @@ class Sitting:
         frames += [pymupdf.Rect(X0, y0, X1, y1)
                    for (pg, y0, y1, x0, txt) in self.dead
                    if pg == page and y1 > top + 1 and y0 < bot - 1]
+        # A window grows past its band to carry a diagram whole, and the text
+        # it then shows may belong to another band of the SAME crop: 2021 HL
+        # P2 Q5(a) grew over the sphere and masking ate two lines of the (i)
+        # ask, leaving "Prove that the volume of the remaining space inside"
+        # hanging. Mask a row only when no band in the plan owns it.
+        if self._all_bands:
+            owned = []
+            for (sp2, sy2), (ep2, ey2) in self._all_bands:
+                for (pg, y0, y1, x0, txt) in self.lines:
+                    if pg == page and (sp2, sy2 - 1) <= (pg, y0) < (ep2, ey2):
+                        owned.append((y0, y1))
+            frames += [pymupdf.Rect(X0, y0, X1, y1)
+                       for (pg, y0, y1, x0, txt) in self.lines
+                       if pg == page and y1 > top + 1 and y0 < bot - 1
+                       and not any(abs(y0 - a) < 0.6 for a, _ in owned)]
         if not frames:
             return img
         keep = list(self.ink(page)) + self._rules.get(page, [])
@@ -756,6 +779,7 @@ class Sitting:
         return ((sp, sy), cut) if indented_before else band
 
     def render(self, bands):
+        self._all_bands = list(bands)
         pieces = []
         covered = {}
         for band in bands:

@@ -68,9 +68,13 @@ def main():
         total += hit
         if hit:
             print(f'{subject}: bound {hit} card(s)')
-    orphan = sorted(set(bind) - seen)
-    if orphan:
-        print(f'WARNING {len(orphan)} binding(s) name no live card: {orphan[:4]}')
+    # Only meaningful when every subject was stamped: stamping one subject
+    # leaves every other subject's bindings "unseen", which reads as breakage
+    # and is not.
+    if len(subjects) == len(SUBJECTS):
+        orphan = sorted(set(bind) - seen)
+        if orphan:
+            print(f'WARNING {len(orphan)} binding(s) name no live card: {orphan[:4]}')
     print(f'stamped {total} card(s) from {len(bind)} binding(s)')
     return 0
 

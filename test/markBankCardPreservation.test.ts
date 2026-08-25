@@ -33,8 +33,8 @@ import { CARDS as CONS_HIGHER } from '../components/MarkBank/cards/construction-
 import { CARDS as CONS_ORDINARY } from '../components/MarkBank/cards/construction-studies/ordinary';
 
 const decks = [
-  ['biology:higher', BIO_HIGHER, 604, '5bbd95e23a2f28cf95c97771a7695a586885c47fca3f11087bb751489d90f783'],
-  ['biology:ordinary', BIO_ORDINARY, 625, '1f9a714bb577aad619f22f26c6f4c8ff2d0b860da4d17d2a92081c07ca7d119a'],
+  ['biology:higher', BIO_HIGHER, 671, '3b731509d1359cbc9192d8a53333ffef31f9f321eea5a21c42825b074fd483e1'],
+  ['biology:ordinary', BIO_ORDINARY, 675, 'f70263df97af2bb5330445412d9be8b58345fa74ee1046506f343530c9c05bda'],
   ['chemistry:higher', CHEM_HIGHER, 443, '422051ce18d791e8cc561982c02cab9b6997556388dfa41a17f3635691ac5dbd'],
   ['chemistry:ordinary', CHEM_ORDINARY, 336, '502fee4823ce54908fc0c8c727c93daebfb9f533274009f018e1a9f5c142ee41'],
   /* 2026-08-23: physics drops from 487/477 to 486/475. Three cards -- one
@@ -94,6 +94,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7023);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7140);
   });
 });

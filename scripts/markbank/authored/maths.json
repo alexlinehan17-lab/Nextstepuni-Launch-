@@ -1609,7 +1609,7 @@
  },
  {
   "id": "maths-2021-hl-p1-q10-a-i",
-  "topicId": "maths-5-2",
+  "topicId": "maths-3-4",
   "conceptId": "value-when-tank-empties",
   "level": "higher",
   "year": 2021,
@@ -1793,7 +1793,7 @@
  },
  {
   "id": "maths-2021-hl-p1-q10-b-i",
-  "topicId": "maths-5-2",
+  "topicId": "maths-3-4",
   "conceptId": "order-model-reasonable-must-satisfy-number",
   "level": "higher",
   "year": 2021,
@@ -1840,7 +1840,7 @@
  },
  {
   "id": "maths-2021-hl-p1-q10-b-ii",
-  "topicId": "maths-5-2",
+  "topicId": "maths-3-4",
   "conceptId": "explain-what-means-context-growth-tree",
   "level": "higher",
   "year": 2021,
@@ -9073,7 +9073,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q10-a",
-  "topicId": "maths-5-2",
+  "topicId": "maths-5-1",
   "conceptId": "proportion-digits-recalled-correctly-after-hours",
   "level": "higher",
   "year": 2022,
@@ -9118,7 +9118,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q10-b",
-  "topicId": "maths-5-2",
+  "topicId": "maths-5-1",
   "conceptId": "after-how-many-hours-would-exactly",
   "level": "higher",
   "year": 2022,
@@ -9300,7 +9300,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q10-e-ii",
-  "topicId": "maths-5-2",
+  "topicId": "maths-5-1",
   "conceptId": "student-got-guitar-exam-after-two",
   "level": "higher",
   "year": 2022,
@@ -10272,7 +10272,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q8-a",
-  "topicId": "maths-1-6",
+  "topicId": "maths-1-2",
   "conceptId": "jena-researching-fuel-consumption-cars-she",
   "level": "higher",
   "year": 2022,
@@ -10369,7 +10369,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q8-a-iv",
-  "topicId": "maths-1-6",
+  "topicId": "maths-1-2",
   "conceptId": "based-data-given-would-you-more",
   "level": "higher",
   "year": 2022,
@@ -11925,7 +11925,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q7-c",
-  "topicId": "maths-5-1",
+  "topicId": "maths-5-2",
   "conceptId": "using-same-axes-scales-continue-graph",
   "level": "ordinary",
   "year": 2022,
@@ -12018,7 +12018,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q7-e",
-  "topicId": "maths-5-1",
+  "topicId": "maths-5-2",
   "conceptId": "joseph-has-smart-watch-beeps-every",
   "level": "ordinary",
   "year": 2022,
@@ -13457,7 +13457,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q4-a",
-  "topicId": "maths-1-6",
+  "topicId": "maths-3-3",
   "conceptId": "group-students-sat-exam-each-student",
   "level": "ordinary",
   "year": 2022,
@@ -14050,7 +14050,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q7-b",
-  "topicId": "maths-1-2",
+  "topicId": "maths-1-6",
   "conceptId": "complete-table-filling-four-missing-values",
   "level": "ordinary",
   "year": 2022,
@@ -14144,7 +14144,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q7-d",
-  "topicId": "maths-1-2",
+  "topicId": "maths-1-6",
   "conceptId": "female-cats-were-put-separate-pens",
   "level": "ordinary",
   "year": 2022,
@@ -14907,7 +14907,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q10-b-iv",
-  "topicId": "maths-3-3",
+  "topicId": "maths-1-5",
   "conceptId": "according-2019-irish-sport-monitor-report",
   "level": "ordinary",
   "year": 2022,
@@ -16552,7 +16552,7 @@
  },
  {
   "id": "maths-2023-hl-p1-q9-b-iii",
-  "topicId": "maths-3-1",
+  "topicId": "maths-2-3",
   "conceptId": "ava-realises-relationship-between",
   "level": "higher",
   "year": 2023,
@@ -17231,7 +17231,7 @@
  },
  {
   "id": "maths-2023-hl-p2-q3-b-ii",
-  "topicId": "maths-2-2",
+  "topicId": "maths-2-3",
   "conceptId": "perpendicular-bisector-value-value",
   "level": "higher",
   "year": 2023,
@@ -19129,7 +19129,7 @@
  },
  {
   "id": "maths-2023-ol-p1-q6-a-i",
-  "topicId": "maths-5-2",
+  "topicId": "maths-4-1",
   "conceptId": "value",
   "level": "ordinary",
   "year": 2023,
@@ -22117,7 +22117,7 @@
  },
  {
   "id": "maths-2023-ol-p2-q9-a-iv",
-  "topicId": "maths-5-2",
+  "topicId": "maths-1-6",
   "conceptId": "draw-graph-chart-represent-data-table",
   "level": "ordinary",
   "year": 2023,
@@ -22252,7 +22252,7 @@
  },
  {
   "id": "maths-2023-ol-p2-q9-b-iii",
-  "topicId": "maths-5-2",
+  "topicId": "maths-1-6",
   "conceptId": "iii-general-students-get-rating-excellent",
   "level": "ordinary",
   "year": 2023,
@@ -24159,7 +24159,7 @@
  },
  {
   "id": "maths-2024-hl-p1-q10-a-i",
-  "topicId": "maths-5-2",
+  "topicId": "maths-3-1",
   "conceptId": "estimate-height-water-spinach-plant-after",
   "level": "higher",
   "year": 2024,
@@ -26757,7 +26757,7 @@
  },
  {
   "id": "maths-2024-ol-p1-q7-b-i",
-  "topicId": "maths-3-1",
+  "topicId": "maths-5-2",
   "conceptId": "number-bacteria-after-hour-after-hours",
   "level": "ordinary",
   "year": 2024,
@@ -28167,7 +28167,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q5-a-i",
-  "topicId": "maths-3-3",
+  "topicId": "maths-1-2",
   "conceptId": "fill-three-missing-numbers-horizontal-axis",
   "level": "ordinary",
   "year": 2024,
@@ -28801,7 +28801,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q8-a-ii",
-  "topicId": "maths-3-4",
+  "topicId": "maths-2-1",
   "conceptId": "size-angle-correct-nearest-degree",
   "level": "ordinary",
   "year": 2024,
@@ -28841,7 +28841,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q8-a-iii",
-  "topicId": "maths-3-4",
+  "topicId": "maths-2-1",
   "conceptId": "iii-second-cable-tied-sign-point",
   "level": "ordinary",
   "year": 2024,
@@ -28886,7 +28886,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q8-b-i",
-  "topicId": "maths-3-4",
+  "topicId": "maths-2-1",
   "conceptId": "part",
   "level": "ordinary",
   "year": 2024,
@@ -28931,7 +28931,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q8-b-ii",
-  "topicId": "maths-3-4",
+  "topicId": "maths-2-1",
   "conceptId": "110",
   "level": "ordinary",
   "year": 2024,

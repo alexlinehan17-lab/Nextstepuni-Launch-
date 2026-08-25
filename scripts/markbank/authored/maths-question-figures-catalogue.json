@@ -326,7 +326,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2021 HL Paper 2 Q2(c)(i)",
-  "description": "The question as printed on the paper \u2014 The points \ud835\udc34(4, 2) and \ud835\udc36(16, 11) are vertices of the triangle \ud835\udc34\ud835\udc35\ud835\udc36 shown below. (c) \ud835\udc37 and \ud835\udc38 are points on [\ud835\udc36\ud835\udc34] and [\ud835\udc36\ud835\udc35] respectively. The ratio |\ud835\udc34\ud835\udc37| \u2236|\ud835\udc37\ud835\udc36| is 2 \u22361. \ud835\udc36 (16, 11) \ud835\udc35 \ud835\udc34 (4, 2)"
+  "description": "The question as printed on the paper \u2014 The points \ud835\udc34(4, 2) and \ud835\udc36(16, 11) are vertices of the triangle \ud835\udc34\ud835\udc35\ud835\udc36 shown below. (c) \ud835\udc37 and \ud835\udc38 are points on [\ud835\udc36\ud835\udc34] and [\ud835\udc36\ud835\udc35] respectively. The ratio |\ud835\udc34\ud835\udc37| \u2236|\ud835\udc37\ud835\udc36| is 2 \u22361. \ud835\udc36 (16, 11) Find |\ud835\udc34\ud835\udc37|. (i) \ud835\udc38 \ud835\udc37 \ud835\udc35 \ud835\udc34 (4, 2)"
  },
  {
   "file": "maths-2021-HL-ask-p2-q2-a.png",
@@ -347,7 +347,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2021 HL Paper 2 Q2(c)(ii)",
-  "description": "The question as printed on the paper \u2014 The points \ud835\udc34(4, 2) and \ud835\udc36(16, 11) are vertices of the triangle \ud835\udc34\ud835\udc35\ud835\udc36 shown below. (c) \ud835\udc37 and \ud835\udc38 are points on [\ud835\udc36\ud835\udc34] and [\ud835\udc36\ud835\udc35] respectively. The ratio |\ud835\udc34\ud835\udc37| \u2236|\ud835\udc37\ud835\udc36| is 2 \u22361. \ud835\udc36 (16, 11) \ud835\udc35 \ud835\udc34 (4, 2) [\ud835\udc34\ud835\udc35]and [\ud835\udc37\ud835\udc38] are horizontal line se"
+  "description": "The question as printed on the paper \u2014 The points \ud835\udc34(4, 2) and \ud835\udc36(16, 11) are vertices of the triangle \ud835\udc34\ud835\udc35\ud835\udc36 shown below. (c) \ud835\udc37 and \ud835\udc38 are points on [\ud835\udc36\ud835\udc34] and [\ud835\udc36\ud835\udc35] respectively. The ratio |\ud835\udc34\ud835\udc37| \u2236|\ud835\udc37\ud835\udc36| is 2 \u22361. \ud835\udc36 (16, 11) Find |\ud835\udc34\ud835\udc37|. (i) \ud835\udc38 \ud835\udc37 \ud835\udc35 \ud835\udc34 (4, 2) [\ud835\udc34\ud835\udc35]and [\ud835\udc37\ud835\udc38] are"
  },
  {
   "file": "maths-2021-HL-ask-p2-q3-a.png",
@@ -417,7 +417,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2021 HL Paper 2 Q6(b)",
-  "description": "The question as printed on the paper \u2014 Prove that if two triangles \u2206\ud835\udc34\ud835\udc35\ud835\udc36 and \u2206\ud835\udc34\u2032\ud835\udc35\u2032\ud835\udc36\u2032 are similar, then the lengths of their sides are (a) proportional in order: |\u0bba\u0bbb| |\u0bbb\u0bbc| |\u0bbc\u0bba| |\u0bba\u11f2\u0bbb\u11f2| = |\u0bbb\u11f2\u0bbc\u11f2| = |\u0bbc\u11f2\u0bba\u11f2|. Diagram: In the diagram below, the lines \ud835\udc43\ud835\udc34, \ud835\udc3b\ud835\udc3e, and \ud835\udc35\ud835\udc45 ar"
+  "description": "The question as printed on the paper \u2014 In the diagram below, the lines \ud835\udc43\ud835\udc34, \ud835\udc3b\ud835\udc3e, and \ud835\udc35\ud835\udc45 are parallel. (b) Prove that |\ud835\udc34\ud835\udc3b| \u00d7 |\ud835\udc44\ud835\udc35| = |\ud835\udc34\ud835\udc43| \u00d7 |\ud835\udc3b\ud835\udc35|. Give a reason for each geometrical statement you use. \ud835\udc34 \ud835\udc43 \ud835\udc3b \ud835\udc3e \ud835\udc35 \ud835\udc36 \ud835\udc44 \ud835\udc45"
  },
  {
   "file": "maths-2021-HL-ask-p2-q7-a.png",
@@ -2538,7 +2538,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 HL Paper 1 Q9(c)(ii)",
-  "description": "The question as printed on the paper \u2014 The area of the triangle formed by the \ud835\udc65-axis, the \ud835\udc66-axis, and the tangent (ii) \u0b35\u0b36 \u0b36\u0b38 \ud835\udc66= \u2212 \u0be3\u0c2e \ud835\udc65+ \u0be3 is always \ud835\udc58 square units, where \ud835\udc58\u2208\u2115 is a constant. Work out the value of \ud835\udc58. \u0b35\u0b36 \u0b36\u0b38 \ud835\udc66 \ud835\udc66= \u2212 \u0be3\u0c2e \ud835\udc65+ \u0be3"
+  "description": "The question as printed on the paper \u2014 The area of the triangle formed by the \ud835\udc65-axis, the \ud835\udc66-axis, and the tangent (ii) \u0b35\u0b36 \u0b36\u0b38 \ud835\udc66= \u2212 \u0be3\u0c2e \ud835\udc65+ \u0be3 is always \ud835\udc58 square units, where \ud835\udc58\u2208\u2115 is a constant. Work out the value of \ud835\udc58. \u0b35\u0b36 \u0b36\u0b38 \ud835\udc66 \ud835\udc66= \u2212 \u0be3\u0c2e \ud835\udc65+ \u0be3 \ud835\udc65"
  },
  {
   "file": "maths-2023-HL-ask-p1-q10-b.png",
@@ -3784,7 +3784,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2024 HL Paper 2 Q4(a)",
-  "description": "The question as printed on the paper \u2014 (a) Construct the centroid of the triangle \ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43 below. Show all your construction lines clearly. Where measurement is used, show all relevant measurements and calculations clearly. \ud835\udc43\ud835\udc43 \ud835\udc44\ud835\udc44"
+  "description": "The question as printed on the paper \u2014 (a) Construct the centroid of the triangle \ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43 below. Show all your construction lines clearly. Where measurement is used, show all relevant measurements and calculations clearly. \ud835\udc43\ud835\udc43 \ud835\udc45\ud835\udc45 \ud835\udc44\ud835\udc44"
  },
  {
   "file": "maths-2024-HL-ask-p2-q4-b.png",
@@ -4316,14 +4316,14 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2024 OL Paper 2 Q6(b)(ii)",
-  "description": "The question as printed on the paper \u2014 (b) The diagram below shows the triangles \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 and \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 (not to scale). The triangle \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 is the image of the triangle \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 under enlargement. Some of the lengths are shown in the diagram. \ud835\udc38\ud835\udc38 \ud835\udc34\ud835\udc34 \ud835\udc37\ud835\udc37 \ud835\udc35\ud835\udc35 (i) Use |\ud835\udc35\ud835\udc35"
+  "description": "The question as printed on the paper \u2014 (b) The diagram below shows the triangles \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 and \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 (not to scale). The triangle \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 is the image of the triangle \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 under enlargement. Some of the lengths are shown in the diagram. \ud835\udc38\ud835\udc38 14 \ud835\udc36\ud835\udc36 6 4 \ud835\udc34\ud835\udc34 \ud835\udc37\ud835\udc37 \ud835\udc35\ud835\udc35 ("
  },
  {
   "file": "maths-2024-OL-ask-p2-q6-b-iii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2024 OL Paper 2 Q6(b)(iii)",
-  "description": "The question as printed on the paper \u2014 (b) The diagram below shows the triangles \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 and \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 (not to scale). The triangle \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 is the image of the triangle \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 under enlargement. Some of the lengths are shown in the diagram. \ud835\udc38\ud835\udc38 \ud835\udc34\ud835\udc34 \ud835\udc37\ud835\udc37 \ud835\udc35\ud835\udc35 (i) Use |\ud835\udc35\ud835\udc35"
+  "description": "The question as printed on the paper \u2014 (b) The diagram below shows the triangles \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 and \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 (not to scale). The triangle \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 is the image of the triangle \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 under enlargement. Some of the lengths are shown in the diagram. \ud835\udc38\ud835\udc38 14 \ud835\udc36\ud835\udc36 6 4 \ud835\udc34\ud835\udc34 \ud835\udc37\ud835\udc37 \ud835\udc35\ud835\udc35 ("
  },
  {
   "file": "maths-2024-OL-ask-p2-q7-a-i.png",
@@ -5359,21 +5359,21 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 OL Paper 2 Q2(a)(i)",
-  "description": "The question as printed on the paper \u2014 (a) There are two angles, \ud835\udc34\ud835\udc34 and 2\ud835\udc34\ud835\udc34, in a right-angled triangle as shown in the diagram below. 10 cm (i) Show that the size of the angle \ud835\udc34\ud835\udc34 is 30\u00b0."
+  "description": "The question as printed on the paper \u2014 (a) There are two angles, \ud835\udc34\ud835\udc34 and 2\ud835\udc34\ud835\udc34, in a right-angled triangle as shown in the diagram below. 2\ud835\udc34\ud835\udc34 \ud835\udc65\ud835\udc65 \ud835\udc34\ud835\udc34 10 cm (i) Show that the size of the angle \ud835\udc34\ud835\udc34 is 30\u00b0."
  },
  {
   "file": "maths-2025-OL-ask-p2-q2-a-ii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 OL Paper 2 Q2(a)(ii)",
-  "description": "The question as printed on the paper \u2014 (a) There are two angles, \ud835\udc34\ud835\udc34 and 2\ud835\udc34\ud835\udc34, in a right-angled triangle as shown in the diagram below. 10 cm (i) Show that the size of the angle \ud835\udc34\ud835\udc34 is 30\u00b0. (ii) The lengths of two of the sides are \ud835\udc65\ud835\udc65 and 10 cm, as shown in the "
+  "description": "The question as printed on the paper \u2014 (a) There are two angles, \ud835\udc34\ud835\udc34 and 2\ud835\udc34\ud835\udc34, in a right-angled triangle as shown in the diagram below. 2\ud835\udc34\ud835\udc34 \ud835\udc65\ud835\udc65 \ud835\udc34\ud835\udc34 10 cm (i) Show that the size of the angle \ud835\udc34\ud835\udc34 is 30\u00b0. (ii) The lengths of two of the sides are \ud835\udc65\ud835\udc65 and 10 cm, as sho"
  },
  {
   "file": "maths-2025-OL-ask-p2-q2-b.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 OL Paper 2 Q2(b)",
-  "description": "The question as printed on the paper \u2014 (b) The triangle \ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43 is shown below. Some of its measurements are also shown. \ud835\udc45\ud835\udc45 \ud835\udc43\ud835\udc43 \ud835\udc44\ud835\udc44 11 cm Work out the distance from \ud835\udc43\ud835\udc43 to \ud835\udc45\ud835\udc45. Give your answer in cm, correct to 1 decimal place."
+  "description": "The question as printed on the paper \u2014 (b) The triangle \ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43 is shown below. Some of its measurements are also shown. \ud835\udc45\ud835\udc45 104\u00b0 41\u00b0 \ud835\udc43\ud835\udc43 \ud835\udc44\ud835\udc44 11 cm Work out the distance from \ud835\udc43\ud835\udc43 to \ud835\udc45\ud835\udc45. Give your answer in cm, correct to 1 decimal place."
  },
  {
   "file": "maths-2025-OL-ask-p2-q3-a.png",
@@ -5401,21 +5401,21 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 OL Paper 2 Q4(a)(i)",
-  "description": "The question as printed on the paper \u2014 (a) \ud835\udc34\ud835\udc34 (\u22125 , 3) and \ud835\udc35\ud835\udc35 (2, 0) are two points on the co-ordinate plane, as shown in the diagram below. \ud835\udc66\ud835\udc66 4 \ud835\udc34\ud835\udc34 \ud835\udc36\ud835\udc36 3 -6 -5 -4 -3 -2 -1 1 2 3 4 5 -1 (i) Find the slope of the line \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34."
+  "description": "The question as printed on the paper \u2014 (a) \ud835\udc34\ud835\udc34 (\u22125 , 3) and \ud835\udc35\ud835\udc35 (2, 0) are two points on the co-ordinate plane, as shown in the diagram below. \ud835\udc66\ud835\udc66 4 \ud835\udc34\ud835\udc34 \ud835\udc36\ud835\udc36 3 2 1 \ud835\udc35\ud835\udc35 \ud835\udc65\ud835\udc65 -6 -5 -4 -3 -2 -1 1 2 3 4 5 -1 (i) Find the slope of the line \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34."
  },
  {
   "file": "maths-2025-OL-ask-p2-q4-a-ii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 OL Paper 2 Q4(a)(ii)",
-  "description": "The question as printed on the paper \u2014 (a) \ud835\udc34\ud835\udc34 (\u22125 , 3) and \ud835\udc35\ud835\udc35 (2, 0) are two points on the co-ordinate plane, as shown in the diagram below. \ud835\udc66\ud835\udc66 4 \ud835\udc34\ud835\udc34 \ud835\udc36\ud835\udc36 3 -6 -5 -4 -3 -2 -1 1 2 3 4 5 -1 (i) Find the slope of the line \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34. (ii) Hence, work out the equation of "
+  "description": "The question as printed on the paper \u2014 (a) \ud835\udc34\ud835\udc34 (\u22125 , 3) and \ud835\udc35\ud835\udc35 (2, 0) are two points on the co-ordinate plane, as shown in the diagram below. \ud835\udc66\ud835\udc66 4 \ud835\udc34\ud835\udc34 \ud835\udc36\ud835\udc36 3 2 1 \ud835\udc35\ud835\udc35 \ud835\udc65\ud835\udc65 -6 -5 -4 -3 -2 -1 1 2 3 4 5 -1 (i) Find the slope of the line \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34. (ii) Hence, work out the eq"
  },
  {
   "file": "maths-2025-OL-ask-p2-q4-a-iii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 OL Paper 2 Q4(a)(iii)",
-  "description": "The question as printed on the paper \u2014 (a) \ud835\udc34\ud835\udc34 (\u22125 , 3) and \ud835\udc35\ud835\udc35 (2, 0) are two points on the co-ordinate plane, as shown in the diagram below. \ud835\udc66\ud835\udc66 4 \ud835\udc34\ud835\udc34 \ud835\udc36\ud835\udc36 3 -6 -5 -4 -3 -2 -1 1 2 3 4 5 -1 (i) Find the slope of the line \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34. (ii) Hence, work out the equation of "
+  "description": "The question as printed on the paper \u2014 (a) \ud835\udc34\ud835\udc34 (\u22125 , 3) and \ud835\udc35\ud835\udc35 (2, 0) are two points on the co-ordinate plane, as shown in the diagram below. \ud835\udc66\ud835\udc66 4 \ud835\udc34\ud835\udc34 \ud835\udc36\ud835\udc36 3 2 1 \ud835\udc35\ud835\udc35 \ud835\udc65\ud835\udc65 -6 -5 -4 -3 -2 -1 1 2 3 4 5 -1 (i) Find the slope of the line \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34. (ii) Hence, work out the eq"
  },
  {
   "file": "maths-2025-OL-ask-p2-q4-b.png",
@@ -5436,14 +5436,14 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 OL Paper 2 Q5(b)(i)",
-  "description": "The question as printed on the paper \u2014 (b) The diagram below shows the isosceles triangle \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34, where |\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34| = |\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34|. \ud835\udc37\ud835\udc37 is the midpoint of [\ud835\udc35\ud835\udc35\ud835\udc35\ud835\udc35]. \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 is perpendicular to \ud835\udc35\ud835\udc35\ud835\udc35\ud835\udc35. |\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34| = 9 cm and |\ud835\udc35\ud835\udc35\ud835\udc35\ud835\udc35| = 5 cm. \ud835\udc34\ud835\udc34 \ud835\udc35\ud835\udc35 \ud835\udc36\ud835\udc36 5 cm \ud835\udc37\ud835\udc37 (i) Use the theorem of Pyth"
+  "description": "The question as printed on the paper \u2014 (b) The diagram below shows the isosceles triangle \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34, where |\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34| = |\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34|. \ud835\udc37\ud835\udc37 is the midpoint of [\ud835\udc35\ud835\udc35\ud835\udc35\ud835\udc35]. \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 is perpendicular to \ud835\udc35\ud835\udc35\ud835\udc35\ud835\udc35. |\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34| = 9 cm and |\ud835\udc35\ud835\udc35\ud835\udc35\ud835\udc35| = 5 cm. \ud835\udc34\ud835\udc34 9 cm \ud835\udc35\ud835\udc35 \ud835\udc36\ud835\udc36 5 cm \ud835\udc37\ud835\udc37 (i) Use the theorem of"
  },
  {
   "file": "maths-2025-OL-ask-p2-q5-b-ii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 OL Paper 2 Q5(b)(ii)",
-  "description": "The question as printed on the paper \u2014 (b) The diagram below shows the isosceles triangle \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34, where |\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34| = |\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34|. \ud835\udc37\ud835\udc37 is the midpoint of [\ud835\udc35\ud835\udc35\ud835\udc35\ud835\udc35]. \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 is perpendicular to \ud835\udc35\ud835\udc35\ud835\udc35\ud835\udc35. |\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34| = 9 cm and |\ud835\udc35\ud835\udc35\ud835\udc35\ud835\udc35| = 5 cm. \ud835\udc34\ud835\udc34 \ud835\udc35\ud835\udc35 \ud835\udc36\ud835\udc36 5 cm \ud835\udc37\ud835\udc37 (i) Use the theorem of Pyth"
+  "description": "The question as printed on the paper \u2014 (b) The diagram below shows the isosceles triangle \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34, where |\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34| = |\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34|. \ud835\udc37\ud835\udc37 is the midpoint of [\ud835\udc35\ud835\udc35\ud835\udc35\ud835\udc35]. \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 is perpendicular to \ud835\udc35\ud835\udc35\ud835\udc35\ud835\udc35. |\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34| = 9 cm and |\ud835\udc35\ud835\udc35\ud835\udc35\ud835\udc35| = 5 cm. \ud835\udc34\ud835\udc34 9 cm \ud835\udc35\ud835\udc35 \ud835\udc36\ud835\udc36 5 cm \ud835\udc37\ud835\udc37 (i) Use the theorem of"
  },
  {
   "file": "maths-2025-OL-ask-p2-q6-a-i.png",

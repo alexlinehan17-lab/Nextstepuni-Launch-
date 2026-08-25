@@ -37744,6 +37744,340 @@
   ]
  },
  {
+  "id": "bio-2021-hl-q2-e",
+  "topicId": "bio-3-2",
+  "conceptId": "where-decomposers-act-in-the-nitrogen-cycle",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2021 HL Q2(e)",
+  "questionText": "On the diagram, place the letter D on one location where decomposers act.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "On one arrow to soil ammonia (from animals or from pea plants)",
+    "marks": 3
+   }
+  ],
+  "stem": "The diagram below outlines some stages in the nitrogen cycle. Atmospheric nitrogen Soil nitrates Pea plants Soil nitrites Animals Soil ammonia",
+  "notes": "The scheme keys this answer under its own Question 1 while the paper prints Question 2. It is a mark-the-diagram ask, but the scheme answers it in words — the arrows that end at soil ammonia — and the paper stem names every box in the cycle, so the answer stands without the artwork."
+ },
+ {
+  "id": "bio-2021-hl-q11-a-i",
+  "topicId": "bio-3-1",
+  "conceptId": "pyramid-of-numbers-for-a-food-chain",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2021 HL Q11(a)(i)",
+  "questionText": "Draw a pyramid of numbers from the following food chain: Cowslips Moth Bat Mites",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Correct organism at each trophic level Cowslips must be at the bottom",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prices this part at 3 + 3. The other 3 is for the shape of the pyramid, which the scheme states by printing three drawn alternatives rather than by describing them, so only the half it puts in words is on this card."
+ },
+ {
+  "id": "bio-2021-hl-q11-b-iii",
+  "topicId": "bio-3-1",
+  "conceptId": "sketching-a-predator-prey-graph",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2021 HL Q11(b)(iii)",
+  "questionText": "A bat and an insect are involved in a predator‐prey relationship. Sketch and fully label a predator‐prey relationship graph to show how the populations of these two species fluctuate.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Axes: Time on horizontal axis and Population (number) on vertical axis",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Graph: Two curves with indication of a repeating cycle",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Bat (predator) showing lower peaks and predator curve showing time lag",
+    "marks": 3
+   }
+  ],
+  "stem": "A single pipistrelle or soprano pipistrelle – our smallest and most common nocturnal bat species, will eat a staggering 3,500 or so midges, mosquitoes, moths and other small insects every night. Without the bats we’d be plagued by much bigger swarms of biting insects on balmy summer evenings. (Adapted from “Batty about Irish bats!” www.irelandswildlife.com, 2012)",
+  "notes": "A drawing question the scheme answers in words: it prices the axes, the pair of repeating curves, and the predator curve sitting lower and lagging behind the prey, at 3 marks each."
+ },
+ {
+  "id": "bio-2021-hl-q12-b-iv",
+  "topicId": "bio-1-4",
+  "conceptId": "punnett-square-for-a-dihybrid-test-cross",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2021 HL Q12(b)(iv)",
+  "questionText": "The plant at part (i) above was crossed with a plant homozygous recessive for both seed shape and seed colour. Show using a Punnet square how the following results were obtained.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 + 3 + 3, the third for the Punnet square itself"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ry",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "RrYy : Rryy : rrYy : rryy Must be in a 1:1:1:1 ratio",
+    "marks": 3
+   }
+  ],
+  "stem": "115 plants with round yellow seeds 115 plants with wrinkled yellow seeds 114 plants with round green seeds 116 plants with wrinkled green seeds",
+  "notes": "Row one is the gametes of the other parent — homozygous recessive for both traits, so it makes only one kind — and row two the genotypes of the offspring. The scheme pays a third 3 marks for the Punnet square itself, before anything is written into it; that row is left off because \"Punnet square\" is the question repeated back, not an answer to learn."
+ },
+ {
+  "id": "bio-2021-hl-q13-b-ix",
+  "topicId": "bio-2-2",
+  "conceptId": "energy-released-with-and-without-oxygen",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2021 HL Q13(b)(ix)",
+  "questionText": "Using your knowledge of respiration, compare the amount of energy released when oxygen is used and not used. (27)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "When O2 is used: high energy or high levels of ATP (released) and when O2 is not used: low energy or low levels of ATP (released)",
+    "marks": 3
+   }
+  ],
+  "stem": "6‐carbon sugar V V Stage 1 3‐carbon molecule 3‐carbon molecule (if O2 not used) (if O2 used) Enters an organelle W Human muscle cells 2‐carbon molecule X Z Y",
+  "notes": "The scheme sets this out on the same line as part (viii), under its own \"(ix)\" cue, and wants both halves of the comparison for the one mark."
+ },
+ {
+  "id": "bio-2021-hl-q14-c-iv",
+  "topicId": "bio-2-6",
+  "conceptId": "ls-of-a-xylem-vessel",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2021 HL Q14(c)(iv)",
+  "questionText": "Draw and label a longitudinal section (L.S.) of a xylem vessel. (24)",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Drawing 3; Labels 3(1)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Drawing: Continuous vessel(s) with lignin or pits",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Pits",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "lignin",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "wall",
+    "marks": 1
+   }
+  ],
+  "notes": "The paper asks for a longitudinal section; the scheme calls it a detailed longitudinal section. The three labels are worth one mark each, to a maximum of three."
+ },
+ {
+  "id": "bio-2021-hl-q15-c-i",
+  "topicId": "bio-2-5",
+  "conceptId": "germination-dispersal-and-dormancy",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2021 HL Q15(c)(i)",
+  "questionText": "Explain each of the underlined terms.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Germination: Growth of seed (or embryo) into a (new) plant (or named parts of plant)",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Dispersal: Carrying (or scattering) of seed away from the parent plant (or described)",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Dormancy: Period of no growth (or reduced growth or low metabolism or inactivity)",
+    "marks": 3
+   }
+  ],
+  "notes": "The underlined terms are germination, dispersal and dormancy, from the sentence the paper prints above the part; the scheme names each one at the head of its own definition, so each row says which term it explains."
+ },
+ {
+  "id": "bio-2021-hl-q17-d-iii",
+  "topicId": "bio-1-3",
+  "conceptId": "comparing-two-bathing-solutions",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2021 HL Q17(d)(iii)",
+  "questionText": "Suggest how solution B differs from solution A.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Solution B has more solute (or example) (than A) or solution B is more concentrated (than A)",
+    "marks": 3
+   }
+  ],
+  "notes": "The cells in panel B have pulled away from their walls, which is what the answer is read off. The scheme interleaves Q17(d) with Q17(a)-(c) because the four options run side by side on its page.",
+  "figureKey": "biology-2021-HL-paper2-p10-i0"
+ },
+ {
+  "id": "bio-2021-hl-q17-d-iv",
+  "topicId": "bio-1-3",
+  "conceptId": "osmosis-out-of-a-plant-cell",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2021 HL Q17(d)(iv)",
+  "questionText": "Name and describe in detail the process which has occurred to the cells in B.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Osmosis",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Water moved from high water concentration to low water concentration",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Across the selectively permeable membrane or from the inside of the cell to the outside",
+    "marks": 3
+   }
+  ],
+  "notes": "Naming the process earns 3; the description earns the other 6, and the scheme wants both the direction of the water and the membrane it crosses.",
+  "figureKey": "biology-2021-HL-paper2-p10-i0"
+ },
+ {
+  "id": "bio-2021-hl-q17-d-v",
+  "topicId": "bio-1-3",
+  "conceptId": "reversing-plasmolysis",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2021 HL Q17(d)(v)",
+  "questionText": "How could these cells in B be restored to the condition shown in A?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Place in water (with little or no solutes)",
+    "marks": 3
+   }
+  ],
+  "figureKey": "biology-2021-HL-paper2-p10-i0"
+ },
+ {
+  "id": "bio-2021-hl-q17-d-vi",
+  "topicId": "bio-1-3",
+  "conceptId": "osmosis-applied-to-food-production",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2021 HL Q17(d)(vi)",
+  "questionText": "Describe how a knowledge of the process shown in the cells in solution B can be applied to food production.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Can kill bacteria (or fungi or microorganisms) (on food) or food can be preserved or (food) can have a longer shelf-life",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme runs the answer straight into part (vii) on the same line, so the lift stops where the \"(vii)\" cue starts.",
+  "figureKey": "biology-2021-HL-paper2-p10-i0"
+ },
+ {
   "id": "bio-2021-hl-q13-b-vii",
   "topicId": "bio-2-2",
   "conceptId": "the-series-of-events-at-y",
@@ -37953,6 +38287,81 @@
   "notes": "Any three of the scheme's six: it also allows the pancreas, the ovaries and the testes."
  },
  {
+  "id": "bio-2021-ol-q7-b",
+  "topicId": "bio-2-4",
+  "conceptId": "where-a-synovial-joint-is-on-the-skeleton",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2021 OL Q7(b)",
+  "questionText": "Place an X on the diagram in a position to show a free moving or synovial joint.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6) + 3(2) + 2(1)"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "X located on the shoulder or the elbow or the hip or the knee",
+    "marks": null
+   }
+  ],
+  "notes": "Same catalogued crop as the shipped Q7(d) card, and the image was opened again for this one: front-view human skeleton, complete on every edge, with Q7(a)-(f) printed down the left column. The ONLY word printed on the skeleton is \"Skull\"; no X and no F are pre-printed, which is why this card carries the figure with no label key — there are no letters to decode. The stem is dropped rather than lifted because the paper block that holds it drags that \"Skull\" label in after the sentence; the crop shows the diagram and its own instruction, so nothing is lost. Q7 is one ordered split over (a)-(f), so the row carries no mark and totalMarks is the question's 20.",
+  "figureKey": "biology-2021-OL-paper1-p07-i0"
+ },
+ {
+  "id": "bio-2021-ol-q9-b-i",
+  "topicId": "bio-u2",
+  "conceptId": "enzyme-used-in-the-ph-investigation",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2021 OL Q9(b)(i)",
+  "questionText": "Name the enzyme you used in the investigation.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(9) + 6(1)"
+  },
+  "totalMarks": 24,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Correctly named enzyme (e.g. catalase or pepsin or amylase)",
+    "marks": null
+   }
+  ],
+  "notes": "Q9(b) is priced as one ordered split, 2(9) + 6(1) = 24 over the seven responses in (b)(i)-(vii), so no part of it has a mark of its own — the same shape as the shipped Q9(b)(ii)-(vi) cards. The stem is dropped rather than lifted: the paper block for it holds only the graph axis labels (\"Rate of enzyme activity pH\") from part (vii) further down the page."
+ },
+ {
+  "id": "bio-2021-ol-q11-b-iv",
+  "topicId": "bio-3-1",
+  "conceptId": "predator-named-in-the-passage",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "biology",
+  "section": "C",
+  "questionRef": "2021 OL Q11(b)(iv)",
+  "questionText": "Name a predator mentioned in the passage above.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Pine marten",
+    "marks": 3
+   }
+  ],
+  "notes": "Q11(b) is a comprehension on a passage about red and grey squirrels in Ireland; the pine marten is the predator it names. Q11(b) is marked 3 a response over nine responses (3 6 9 12 15 18 21 24 27), so the part is worth a flat 3 — the same tariff the shipped Q11(b)(iii), (v) and (vi) cards carry."
+ },
+ {
   "id": "bio-2022-hl-q5-a",
   "topicId": "bio-1-2",
   "conceptId": "copper-is-a-trace-element",
@@ -38126,6 +38535,573 @@
    }
   ],
   "notes": "The scheme answers this by ticking a True/False column and the tick is a glyph the text extraction drops, so it was read from page 9 of the 2022 Higher Level marking scheme. Q5 is marked 6(3) + 2 over seven statements."
+ },
+ {
+  "id": "bio-2022-hl-q6-a",
+  "topicId": "bio-2-6",
+  "conceptId": "bile-salts-and-rate-of-lipid-digestion",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2022 HL Q6(a)",
+  "questionText": "What conclusion could the student make about lipid digestion based on the graph of results shown above?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "(Lipid digestion) is faster (higher rate) with both lipase and bile salts (than with lipase alone)",
+    "marks": null,
+    "accepts": [
+     "(Lipid digestion) is slower (lower rate) with lipase alone."
+    ]
+   }
+  ],
+  "stem": "A student carried out an experiment comparing the action of lipase on its own with the action of both lipase and bile salts on lipid digestion over time. The graph below illustrates the student’s experimental results. Mass of lipid digested Lipase and bile salts Lipase Time",
+  "notes": "Q6 is marked 6(3) + 2 across its six parts, so no part carries a printed mark of its own; each correct response is worth 3. The graph itself is not needed to reach the conclusion — the paper names both plotted lines and both axes in the stem the card carries, and the scheme takes the comparison stated either way round."
+ },
+ {
+  "id": "bio-2022-hl-q8-b-ii",
+  "topicId": "bio-u2",
+  "conceptId": "recognising-plant-tissue-under-the-microscope",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2022 HL Q8(b)(ii)",
+  "questionText": "Give a reason for your answer at part (b) (i) above.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Cell wall present or comment on shape of cells (image B more regular shape or image A more irregular shape) or all cells joined (linked) to each other or any valid comment",
+    "marks": 3,
+    "contextNote": "The paper prints part (b)(i) as \"Which image, A or B, represents plant tissue?\"; this part asks for the reason behind that choice."
+   }
+  ],
+  "notes": "The paper's part (b) stem reads \"A student observed the following images when examining stained cells using a light microscope. Image A was observed at x400 and image B at x100.\" The extractor files that sentence as a part of its own rather than as a stem, so it is quoted here instead of being lost. The named routes the scheme lists are all differences a candidate can state in words, which is why the answer stands without the images themselves."
+ },
+ {
+  "id": "bio-2022-hl-q8-b-v",
+  "topicId": "bio-u2",
+  "conceptId": "calculating-actual-cell-width",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2022 HL Q8(b)(v)",
+  "questionText": "The image of the cell in A was 2 cm wide. What is the actual width of this cell?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.005 (cm) or 2/400 (cm) or 1/200 (cm) or 5 x 10-3 (cm) (accept other units if correct)",
+    "marks": 3,
+    "contextNote": "The paper's part (b) stem reads \"Image A was observed at x400 and image B at x100.\", which is where the 400 in the scheme's answer comes from."
+   }
+  ],
+  "notes": "The scheme prints the working as well as the result — 2/400 (cm) — and the 400 is the magnification of image A, which the PAPER states and the scheme does not. That sentence is quoted on the card because the extractor files it as a part of its own rather than as the stem it is. Any correct unit scores."
+ },
+ {
+  "id": "bio-2022-hl-q9-b-vi",
+  "topicId": "bio-u2",
+  "conceptId": "sketching-photosynthesis-rate-graphs",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2022 HL Q9(b)(vi)",
+  "questionText": "On the axes below, sketch two graphs as described below: 1. Using a solid line ( ), sketch the expected result at 25 °C.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Increasing line (from zero) (eventually levelling off)",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Line on x axis or very close to x axis",
+    "marks": 3
+   }
+  ],
+  "stem": "2. Using a dashed line (- - - - - -), sketch the expected result if the activity had been carried out at 60 °C. Rate of photosynthesis Light intensity or CO2 concentration",
+  "notes": "The paper sets both sketches inside part (vi) — the solid line at 25 °C and the dashed line at 60 °C — and the extractor splits them, so the second requirement arrives on the stem rather than in the question text. One row per line, 3 marks each. Neither mark is for the drawing: they are for the shape of each line."
+ },
+ {
+  "id": "bio-2022-hl-q10-b-ii",
+  "topicId": "bio-u2",
+  "conceptId": "setting-up-the-iaa-investigation",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2022 HL Q10(b)(ii)",
+  "questionText": "Describe how you set up the investigation.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4(3)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Different concentrations (of IAA)",
+    "marks": 3,
+    "accepts": [
+     "leave for suitable time"
+    ]
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "more than one seed or tissue",
+    "marks": 3,
+    "accepts": [
+     "leave for suitable time"
+    ]
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "fair test or described (e.g. equal volumes added)",
+    "marks": 3,
+    "accepts": [
+     "leave for suitable time"
+    ]
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "control described",
+    "marks": 3,
+    "accepts": [
+     "leave for suitable time"
+    ]
+   }
+  ],
+  "notes": "The investigation is the one the scheme heads \"Effect of IAA growth regulator on a plant tissue\". Any four of the scheme's steps score, at 3 marks each, which is why each row carries the others as alternatives. Two of its seven listed steps are not shown: \"named piece of apparatus\" and \"any other correct practical step\" tell a candidate what the examiner wants to see rather than what to write."
+ },
+ {
+  "id": "bio-2022-hl-q11-b-i",
+  "topicId": "bio-3-2",
+  "conceptId": "drawing-a-bacterial-cell",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2022 HL Q11(b)(i)",
+  "questionText": "Draw a large labelled diagram of a typical bacterial cell.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Drawing 3 + Labels 3(1)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Cell wall + cell membrane + indication of nucleic acid",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "cytoplasm",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "chromosome",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "plasmid",
+    "marks": 1
+   }
+  ],
+  "notes": "The scheme prices this part twice over: 3 marks for the drawing, awarded only if cell wall, cell membrane and an indication of nucleic acid are all visible, and then 1 mark for each of any three correct labels. The scheme's label list is cell wall / cell membrane / cytoplasm / chromosome / plasmid / flagella / capsule or slime layer; the three rows shown are the first three of that list the drawing row does not already name."
+ },
+ {
+  "id": "bio-2022-hl-q11-c-iv",
+  "topicId": "bio-3-2",
+  "conceptId": "sketching-the-microbial-growth-curve",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2022 HL Q11(c)(iv)",
+  "questionText": "Sketch a plot of a microorganism growth curve. Label the axes and label the curve with the five phases shown below. Note: the list below is not in the correct order.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "All five phases visible on curve",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Axes labels: x-axis: Time and y-axis: Population or Number of organisms",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Curve labels: Correctly labelled with all five phases in the correct order",
+    "marks": 3
+   }
+  ],
+  "stem": "stationary survival log decline lag (24)",
+  "notes": "The scheme prices this part three ways at 3 marks each: the sketch itself, the axis labels, and the phase labels in the correct order. The five phase names the question asks to be placed on the curve are printed on the paper and arrive on the card as the stem, in the scrambled order the paper gives them."
+ },
+ {
+  "id": "bio-2022-hl-q13-a",
+  "topicId": "bio-1-4",
+  "conceptId": "parts-of-a-nucleotide",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2022 HL Q13(a)",
+  "questionText": "Nucleic acids are composed of subunits called nucleotides. Draw and label the structure of any one nucleotide. (9)",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3(1)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Phosphate (or P)",
+    "marks": 1
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Deoxyribose or ribose",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Base or any one named base or letter",
+    "marks": 1
+   }
+  ],
+  "notes": "The paper numbers this part 13(a); the marking scheme numbers the same answer 13(a)(i), and its annotation table calls it Q13 (a) (i) as well. The citation follows the paper. The part carries 9 marks: 6 for the drawing itself, scored 6, 3 or 0, and then 1 mark for each of the three labels shown here. The scheme prints nothing about the drawing beyond that band, so the three labels are the whole of what it states."
+ },
+ {
+  "id": "bio-2022-hl-q13-c-ii",
+  "topicId": "bio-1-4",
+  "conceptId": "drawing-parental-chromosome-diagrams",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2022 HL Q13(c)(ii)",
+  "questionText": "Draw two chromosome diagrams (one for each parent) showing the position of each allele on homologous chromosomes. Clearly indicate which is homozygous dominant and which is homozygous recessive.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Chromosome diagrams shows 2 pairs of homologous chromosomes for each parent. (Chromosomes for first parent must match chromosomes for second parent)",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "1 parent clearly FFDD or ffdd",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Loci of the alleles for each parent (must be correct and matching)",
+    "marks": 3
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "(Homozygous) recessive and (homozygous) dominant correctly indicated.",
+    "marks": 3
+   }
+  ],
+  "notes": "All 12 marks are in the two diagrams — four separate marking points at 3 marks each, and none of them for writing. The allele letters in the second row are the ones defined in the paper's own part (c) stem, which this card does not reproduce."
+ },
+ {
+  "id": "bio-2022-hl-q14-b-v",
+  "topicId": "bio-2-2",
+  "conceptId": "naming-the-light-independent-stage",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2022 HL Q14(b)(v)",
+  "questionText": "Name stage 2 shown in the diagram above.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Light independent stage (or dark stage or Calvin Cycle)",
+    "marks": 3
+   }
+  ],
+  "notes": "The diagram is not needed to answer this: photosynthesis has two stages, and the paper has already fixed stage 1 in words at (b)(i) as the stage in which water is split using the energy in light."
+ },
+ {
+  "id": "bio-2022-hl-q14-c-iii",
+  "topicId": "bio-2-3",
+  "conceptId": "drawing-anaphase-of-mitosis",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2022 HL Q14(c)(iii)",
+  "questionText": "Draw a large labelled diagram of a cell with a diploid number of four at anaphase of mitosis.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Diagram 2(3) + Labels 3(1)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Eight chromosomes",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Chromosomes being pulled apart",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "spindle",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "equator",
+    "marks": 1
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "poles",
+    "marks": 1
+   }
+  ],
+  "notes": "The scheme prices the diagram twice at 3 marks — eight chromosomes, and those chromosomes being pulled apart — and then 1 mark for each of any three correct labels, from its list of chromosome / spindle / equator / poles / centromere."
+ },
+ {
+  "id": "bio-2022-hl-q15-c-ii",
+  "topicId": "bio-2-6",
+  "conceptId": "drawing-a-root-transverse-section",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2022 HL Q15(c)(ii)",
+  "questionText": "Draw a large diagram of a transverse section of a root and label the following tissues: dermal; ground; vascular.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Drawing 3 + Labels 3(1)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Dermal tissue + Vascular + Root hair",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Dermal",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Ground",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Vascular",
+    "marks": 1
+   }
+  ],
+  "notes": "The drawing scores 3 only if dermal tissue, vascular tissue and a root hair are all shown — note the root hair, which the question does not ask for. The three labels the question itself names are then worth 1 mark each, for 6 in total."
+ },
+ {
+  "id": "bio-2022-hl-q16-a-i",
+  "topicId": "bio-2-4",
+  "conceptId": "two-parts-of-the-nervous-system",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2022 HL Q16(a)(i)",
+  "questionText": "The human nervous system is divided into two parts. Name each of these parts.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Central nervous system (CNS)",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Peripheral nervous system (PNS)",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme sets both answers on one line with 3 marks against each."
+ },
+ {
+  "id": "bio-2022-hl-q16-a-ii",
+  "topicId": "bio-2-4",
+  "conceptId": "drawing-a-neuron",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2022 HL Q16(a)(ii)",
+  "questionText": "Draw a large diagram of a neuron and label the following parts: dendrites; axon; myelin sheath.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Drawing 6, 3, 0 + Labels 3(1)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Cell body + dendrites + axon visible",
+    "marks": 6
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Dendrites",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Axon",
+    "marks": 1
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Myelin sheath",
+    "marks": 1
+   }
+  ],
+  "notes": "The drawing is scored 6, 3 or 0 — the scheme prints \"any one missing = 3\" beside it, so all three features earn 6 and two of the three earn 3. Note that cell body is one of them and the question does not ask for it. Each of the three labels the question does name is then worth 1 mark, for 9 in total."
+ },
+ {
+  "id": "bio-2022-hl-q16-b-iv",
+  "topicId": "bio-2-4",
+  "conceptId": "pupil-size-in-bright-and-dim-light",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2022 HL Q16(b)(iv)",
+  "questionText": "The iris and pupil are affected by light intensity. Sketch two diagrams of the front of the eye to show: 1. the iris and pupil in bright light 2. the iris and pupil in dim light.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Iris and pupil in bright light: Pupil small",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Iris and pupil in dim light: Pupil large",
+    "marks": 3
+   }
+  ],
+  "notes": "Both marks are for the size of the pupil, not for the quality of the sketch."
+ },
+ {
+  "id": "bio-2022-hl-q17-d-v",
+  "topicId": "bio-2-6",
+  "conceptId": "cause-of-heart-sounds",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2022 HL Q17(d)(v)",
+  "questionText": "Each heartbeat creates two audible sounds. What causes these sounds?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Valves closing",
+    "marks": 3
+   }
+  ],
+  "notes": "Two words are the whole of what the scheme prints, and they carry all 3 marks."
  },
  {
   "id": "bio-2022-ol-q6-a",
@@ -38520,6 +39496,826 @@
   "notes": "The scheme prices Q7(a) to (e) on a scale of 4, 8, 12, 16, 20 for one to five correct — evenly, so each is worth four."
  },
  {
+  "id": "bio-2022-ol-q4-a",
+  "topicId": "bio-2-6",
+  "conceptId": "skin-structure-parts",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2022 OL Q4(a)",
+  "questionText": "Name the parts labelled A and B in the diagram.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: Hair",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: Sebaceous gland",
+    "marks": null
+   }
+  ],
+  "stem": "The diagram shows a section through human skin. Blood vessel Sweat gland",
+  "notes": "A and B are two of the four structures marked on the paper's section through human skin; the other two, blood vessel and sweat gland, are word-labelled on the diagram itself. Q4 carries no per-part mark — its table pays 3, 6, 9, 12, 15, 18, 20 for one to seven correct responses, and this part is two of them."
+ },
+ {
+  "id": "bio-2022-ol-q5-a",
+  "topicId": "bio-3-3",
+  "conceptId": "matching-a-dna-profile",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2022 OL Q5(a)",
+  "questionText": "Which suspect DNA profile, A or B or C matches the DNA sample from the crime scene?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "B",
+    "marks": null
+   }
+  ],
+  "stem": "During an investigation a DNA profile was carried out in order to match a DNA sample from a crime scene with a sample from a suspect. The diagram shows the DNA profiles obtained. Crime scene A B C",
+  "notes": "The paper prints the crime-scene profile beside three suspect profiles labelled A, B and C. The deck holds no figure for that page, so the letter has to be taken from the scheme rather than read off the bands."
+ },
+ {
+  "id": "bio-2022-ol-q8-b-ii",
+  "topicId": "bio-u1",
+  "conceptId": "highest-percentage-frequency-from-a-table",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2022 OL Q8(b)(ii)",
+  "questionText": "Which plant had the highest % frequency?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Daisy",
+    "marks": 3
+   }
+  ],
+  "stem": "The table below shows the data collected during the survey. Plant Station 1 Station 2 Station 3 Station 4 Station 5 Plantain    Daisy     Dandelion  "
+ },
+ {
+  "id": "bio-2022-ol-q9-b-i",
+  "topicId": "bio-u2",
+  "conceptId": "drawing-the-alcohol-preparation-apparatus",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2022 OL Q9(b)(i)",
+  "questionText": "Draw a labelled diagram in the space below of the apparatus that you used to prepare alcohol in the laboratory.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 for the diagram, 2(3) for the labels"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Container and liquid",
+    "marks": 3,
+    "accepts": [
+     "anaerobic step (e.g. fermentation lock or oil layer)",
+     "water bath"
+    ]
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Any two correct labels",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme prints the diagram mark as \"3, 0\" — all or nothing on any two of the three items — and does not name the two labels it pays 2(3) for."
+ },
+ {
+  "id": "bio-2022-ol-q10-b-v",
+  "topicId": "bio-u2",
+  "conceptId": "germination-investigation-results",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2022 OL Q10(b)(v)",
+  "questionText": "State the results observed for each test tube.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: No germination",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: Germination",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C: No germination",
+    "marks": 3
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "D: No germination (allow some germination)",
+    "marks": 3
+   }
+  ],
+  "notes": "A, B, C and D are the four test tubes in the paper's apparatus. The scheme's own earlier parts fix three of them: A is the dry cotton wool tube, C the boiled water with an oil layer, D the one held at 4 °C."
+ },
+ {
+  "id": "bio-2022-ol-q11-b-iii",
+  "topicId": "bio-3-1",
+  "conceptId": "identifying-a-producer-in-a-food-web",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2022 OL Q11(b)(iii)",
+  "questionText": "Identify a producer from the diagram.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5) + 6(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Blackberry or grass",
+    "marks": null
+   }
+  ],
+  "notes": "The organisms are read off the paper's food-web diagram. The deck does not carry that figure — it survives only as two crops with the word \"Shrew\" lost in the gap — so the members come from the scheme. Q11(b) carries no per-part mark: its table pays 5, 10, 15, 17, 19, 21, 23, 25, 27 for one to nine correct responses."
+ },
+ {
+  "id": "bio-2022-ol-q11-b-iv",
+  "topicId": "bio-3-1",
+  "conceptId": "identifying-a-carnivore-in-a-food-web",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2022 OL Q11(b)(iv)",
+  "questionText": "Name one carnivore from the diagram.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5) + 6(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Owl or spider",
+    "marks": null
+   }
+  ],
+  "notes": "The organisms are read off the paper's food-web diagram. The deck does not carry that figure — it survives only as two crops with the word \"Shrew\" lost in the gap — so the members come from the scheme. Q11(b) carries no per-part mark: its table pays 5, 10, 15, 17, 19, 21, 23, 25, 27 for one to nine correct responses."
+ },
+ {
+  "id": "bio-2022-ol-q11-b-vi",
+  "topicId": "bio-3-1",
+  "conceptId": "identifying-an-omnivore-in-a-food-web",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2022 OL Q11(b)(vi)",
+  "questionText": "Name one omnivore from the diagram.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5) + 6(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Fox or blackbird or shrew",
+    "marks": null
+   }
+  ],
+  "notes": "The organisms are read off the paper's food-web diagram. The deck does not carry that figure — it survives only as two crops with the word \"Shrew\" lost in the gap — so the members come from the scheme. Q11(b) carries no per-part mark: its table pays 5, 10, 15, 17, 19, 21, 23, 25, 27 for one to nine correct responses."
+ },
+ {
+  "id": "bio-2022-ol-q13-b-i",
+  "topicId": "bio-2-6",
+  "conceptId": "breathing-system-parts",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2022 OL Q13(b)(i)",
+  "questionText": "Name the parts A, B, C.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5) + 6(2)"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: Larynx (voice box)",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: Bronchus",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C: Bronchiole",
+    "marks": null
+   }
+  ],
+  "notes": "The paper prints the part as \"Name the parts A, B, C.\" beside a diagram of the human breathing system; the scheme prints it as \"Name the parts A, B, C in the diagram of the breathing system below.\" Muscles, trachea and the small air-sacs are word-labelled on the same diagram, so the three letters are the ones left to name."
+ },
+ {
+  "id": "bio-2022-ol-q14-b-iv",
+  "topicId": "bio-1-2",
+  "conceptId": "carbohydrate-general-formula",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2022 OL Q14(b)(iv)",
+  "questionText": "Cx(H2O)y is the general formula for one of the products of photosynthesis. What group of biomolecules does this general formula represent?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5) + 6(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Carbohydrate (or sugars)",
+    "marks": null
+   }
+  ]
+ },
+ {
+  "id": "bio-2022-ol-q14-c-vi",
+  "topicId": "bio-1-3",
+  "conceptId": "plasmolysis-in-a-plant-cell",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2022 OL Q14(c)(vi)",
+  "questionText": "Explain in detail what has happened to cell B. (24)",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(6) + 6(2)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Cell membrane has peeled away from the cell wall (or plasmolysis)",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Due to a loss of water",
+    "marks": null
+   }
+  ],
+  "stem": "Turgor is also important for plants. The pictures, A and B, show two plants cells. A B Nucleus X Cell membrane",
+  "notes": "The scheme sets the answer on two lines and the table pays 6 and 12 for one and two correct responses, so both lines are wanted. Cell B is the right-hand cell of the pair drawn in the paper."
+ },
+ {
+  "id": "bio-2022-ol-q15-b-i",
+  "topicId": "bio-2-6",
+  "conceptId": "dermal-and-ground-tissue-names",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2022 OL Q15(b)(i)",
+  "questionText": "Name the tissues labelled A and B.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5) + 6(2)"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: Dermal",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: Ground",
+    "marks": null
+   }
+  ],
+  "notes": "The letters are printed on the paper's section through a plant stem. The deck carries no crop of that diagram, so the letters come from the scheme. Q15(b) carries no per-part mark: its table pays 5, 10, 15, 17, 19, 21, 23, 25, 27 for one to nine correct responses."
+ },
+ {
+  "id": "bio-2022-ol-q15-b-iii",
+  "topicId": "bio-2-6",
+  "conceptId": "vascular-bundle-name",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2022 OL Q15(b)(iii)",
+  "questionText": "Name the structure labelled C.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5) + 6(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Vascular bundle",
+    "marks": null
+   }
+  ],
+  "notes": "The letters are printed on the paper's section through a plant stem. The deck carries no crop of that diagram, so the letters come from the scheme. Q15(b) carries no per-part mark: its table pays 5, 10, 15, 17, 19, 21, 23, 25, 27 for one to nine correct responses."
+ },
+ {
+  "id": "bio-2022-ol-q15-b-vii",
+  "topicId": "bio-2-6",
+  "conceptId": "dicot-stem-vascular-bundles",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2022 OL Q15(b)(vii)",
+  "questionText": "State one reason why the diagram above represents a section through a dicotyledonous plant stem. (27)",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5) + 6(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Vascular bundles in a ring",
+    "marks": null
+   }
+  ],
+  "notes": "The reason is a feature of the paper's section through a plant stem, and the deck carries no crop of that diagram, so it comes from the scheme. Q15(b) carries no per-part mark: its table pays 5 for the first correct response."
+ },
+ {
+  "id": "bio-2022-ol-q17-d-iv",
+  "topicId": "bio-2-6",
+  "conceptId": "order-of-the-alimentary-canal",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2022 OL Q17(d)(iv)",
+  "questionText": "The list below shows some of the organs of the alimentary canal. Write them in the correct order, starting with the mouth.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 8(2)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "→ oesophagus → stomach → small intestine → large intestine → rectum",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme's leading arrow runs from the mouth, which the question itself gives as the starting organ, and it marks the order all or nothing. Q17(d) carries no per-part mark: its table pays 7 for the first correct response."
+ },
+ {
+  "id": "bio-2023-hl-q2-c",
+  "topicId": "bio-u2",
+  "conceptId": "naming-a-variable-in-an-investigation",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2023 HL Q2(c)",
+  "questionText": "State one variable from the investigation described above.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(5) + 5(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(Soil) pH or percentage germination",
+    "marks": null
+   }
+  ],
+  "stem": "A horticulturist was carrying out scientific research into germination. They proposed the following hypothesis: “If soil pH is changed, then germination of grass seeds is affected.” They tested this hypothesis and the results of the investigation are shown in the graph below. Percentage (%) germination of grass seeds Soil pH 0 1 2 3 4 5 6 7 8 9 10",
+  "notes": "Held back before as \"the investigation is printed on the paper and not reproduced in the scheme\". It does not need to be: the paper prints the horticulturist's germination trial as Question 2's own stem, which the card carries, and the scheme answers the part with content — the two quantities the trial actually varied and measured. Question 2 is marked 2(5) + 5(2) across (a)-(f), one ladder for the whole question, so no part of it carries a mark of its own. totalMarks is the scheme table's award for one correct response (5). Neither parser reads this scheme's \"Question 2\" head, so the answer to this part is filed under the parser key (6, c, None) rather than under the paper's own Q2(c). The card lifts from that key and cites the PAPER."
+ },
+ {
+  "id": "bio-2023-hl-q4-b",
+  "topicId": "bio-1-4",
+  "conceptId": "what-makes-up-one-dna-nucleotide",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2023 HL Q4(b)",
+  "questionText": "On the diagram above, draw a rectangle around any one DNA nucleotide.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(5) + 5(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Rectangle correctly indicating one DNA nucleotide showing one phosphate, one deoxyribose and one base",
+    "marks": null
+   }
+  ],
+  "stem": "DNA is a complex biological molecule. The diagram shows part of a DNA molecule. X T G",
+  "notes": "A draw-on-the-printed-diagram part, carded on what the scheme says rather than refused for being a drawing: the marking point does not stop at \"rectangle correctly indicating one DNA nucleotide\" but goes on to name the three things that rectangle has to enclose, which is the recallable content and the reason candidates draw the box in the wrong place. The card therefore stands without the printed diagram. Question 4 is marked 2(5) + 5(2) across (a)-(g), one ladder for the whole question, so no part of it carries a mark of its own. totalMarks is the scheme table's award for one correct response (5). Neither parser reads this scheme's \"Question 4\" head, so the answer to this part is filed under the parser key (7, b, None) rather than under the paper's own Q4(b). The card lifts from that key and cites the PAPER."
+ },
+ {
+  "id": "bio-2023-hl-q5-f-i",
+  "topicId": "bio-3-2",
+  "conceptId": "first-phases-of-a-bacterial-growth-curve",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2023 HL Q5(f)(i)",
+  "questionText": "By drawing on the graph, complete the first part of the curve.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(5) + 5(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Curve showing both lag and log phases",
+    "marks": null
+   }
+  ],
+  "notes": "Held back before as \"a drawing-on-a-graph criterion\". The scheme does not give a criterion here — it names the two phases the drawn curve has to show, which is the answer and is learnable without the printed axes. The stem is dropped: the paper block yields only the graph furniture \"Population Z Time\". Question 5 is marked 2(5) + 5(2) across (a)-(f), one ladder for the whole question, so no part of it carries a mark of its own. totalMarks is the scheme table's award for one correct response (5). Neither parser reads this scheme's \"Question 5\" head, so the answer to this part is filed under the parser key (4, f, i) rather than under the paper's own Q5(f)(i). The card lifts from that key and cites the PAPER."
+ },
+ {
+  "id": "bio-2023-hl-q9-b-i",
+  "topicId": "bio-u2",
+  "conceptId": "apparatus-for-preparing-alcohol-with-yeast",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2023 HL Q9(b)(i)",
+  "questionText": "In the space provided below, draw a labelled diagram showing how you set up the apparatus to prepare alcohol using yeast.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Diagram 2(3) + Labels 3(1)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "container and solution",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "indication of anaerobic conditions (e.g. oil on top or anaerobic lock)",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "alt",
+    "verbatim": "flask or beaker",
+    "marks": 3,
+    "accepts": [
+     "water bath",
+     "another correct piece of apparatus",
+     "yeast",
+     "glucose",
+     "oil or anaerobic lock"
+    ]
+   }
+  ],
+  "notes": "bio-2023-hl-q9-b records this part as \"skipped: it asks for a labelled diagram of the apparatus (drawing)\". The scheme answers it with content on both halves, so it is carded. The drawing is priced 2(3) — a 3-mark point for what is in the vessel and another for the anaerobic condition being shown — and the labels 3(1), any three of the six the scheme lists, which is the third row and its alternatives. The question does not name the labels, so unlike Q15(b)(i) and Q16(d)(iv) the label list here is answer content rather than a copy of the ask. totalMarks 9 is the two tariffs added. Neither parser reads this scheme's \"Question 9\" head, so the answer to this part is filed under the parser key (2, b, i) and (2, b, None) rather than under the paper's own Q9(b)(i). The card lifts from that key and cites the PAPER."
+ },
+ {
+  "id": "bio-2023-hl-q11-b-iv",
+  "topicId": "bio-3-1",
+  "conceptId": "sketching-a-pyramid-of-numbers",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "biology",
+  "section": "C",
+  "questionRef": "2023 HL Q11(b)(iv)",
+  "questionText": "Sketch a pyramid of numbers based on the food chain you gave in part (b) (iii) above.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9(3)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Correct order with Ash on the bottom",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Partially upright pyramid drawn",
+    "marks": 3
+   }
+  ],
+  "stem": "Ash dieback is a serious disease of ash trees caused by the invasive pathogen Hymenoscyphus fraxineus, which originates in Asia and was brought to Europe in the early 1990s. Ash dieback was first detected in the Republic of Ireland in October 2012 on plants imported from continental Europe. The disease is now prevalent throughout most of the island of Ireland and is likely to cause the death of the majority of the ash trees over the next two decades. This will also have an effect on organisms that feed on ash (such as moths) and other animals along the food chain (such as birds, e.g. the robin). Teagasc, the Irish agriculture development authority, is aiming to establish a gene bank composed of genotypes of ash trees that are tolerant or resistant to the deadly pathogen with the future aim of producing planting stocks for forests and hedgerows in Ireland. Adapted from Ash Dieback Disease, www.teagasc.ie 2. Explain the importance of this type of ecological relationship in nature. (27)",
+  "notes": "bio-2023-hl-q11-b-i-ii records this as \"skipped: sketch a pyramid of numbers (drawing)\". The scheme prices the sketch on two things a candidate can be told in advance — which organism goes on the bottom step, and that the pyramid is only partially upright — so it is carded. The scheme sets both on one line and each row here is a slice of it. The stem is kept because the passage is what part (b)(iii)'s food chain was read off, and it is the paper's own; the sentence about \"the importance of this type of ecological relationship\" at the end of it is the tail of part (b)(vi), which the block segmentation swept in. Q11(b) is marked 9(3) across (i)-(vi) and the scheme prints 3 against each of these two responses. Neither parser reads this scheme's \"Question 11\" head, so the answer to this part is filed under the parser key (3, b, iv) rather than under the paper's own Q11(b)(iv). The card lifts from that key and cites the PAPER."
+ },
+ {
+  "id": "bio-2023-hl-q12-a-ii",
+  "topicId": "bio-1-1",
+  "conceptId": "anabolic-or-catabolic-reaction",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "biology",
+  "section": "C",
+  "questionRef": "2023 HL Q12(a)(ii)",
+  "questionText": "Is the reaction shown below an anabolic reaction or a catabolic reaction? Explain your answer.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3(3)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Catabolic",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Large molecule broken down into smaller molecules or energy released",
+    "marks": 3
+   }
+  ],
+  "notes": "Two responses, priced 3 each: the scheme starts the naming half with an asterisk, its mark for an answer that must be exact, and answers the \"explain\" half with the property that makes it catabolic. The second row is sliced past the scheme's own cue, \"Explain your answer.\", which it welds onto the front of the marking point. The stem is dropped: the paper block yields only the reaction graphic flattened to \"A B + C Energy +\". Neither parser reads this scheme's \"Question 12\" head, so the answer to this part is filed under the parser key (4, a, ii) rather than under the paper's own Q12(a)(ii). The card lifts from that key and cites the PAPER."
+ },
+ {
+  "id": "bio-2023-hl-q12-b-v",
+  "topicId": "bio-2-2",
+  "conceptId": "the-atp-word-equation",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "biology",
+  "section": "C",
+  "questionRef": "2023 HL Q12(b)(v)",
+  "questionText": "ATP is produced during respiration. Copy the following word equation into your answerbook and complete the missing parts of the equation.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2(3)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ADP + P + Energy  ATP + H2O",
+    "marks": 6
+   }
+  ],
+  "notes": "The paper prints the equation with two blanks — \"ADP + ______ + Energy -> ATP + ______\" — and the scheme prints it filled in. The arrow is set in the Symbol font and reaches the text layer as U+F067; glyphmap.json maps that character, so build-deck's repairGlyphs renders it as an arrow. Contrast Q11(b)(iii), refused below, whose arrow is U+F08E and is not in the map. The scheme prices this 2(3), one mark per blank filled correctly, which is why the single row carries 6. The stem is dropped: the paper block interleaves the diagram label \"Nucleus\" and the part mark with the equation. Neither parser reads this scheme's \"Question 12\" head, so the answer to this part is filed under the parser key (3, b, v) rather than under the paper's own Q12(b)(v). The card lifts from that key and cites the PAPER."
+ },
+ {
+  "id": "bio-2023-hl-q13-c-ii",
+  "topicId": "bio-1-4",
+  "conceptId": "chromosome-diagrams-for-a-sex-linked-cross",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "biology",
+  "section": "C",
+  "questionRef": "2023 HL Q13(c)(ii)",
+  "questionText": "The letter N can be used to represent the dominant allele and the letter n can be used to represent the recessive haemophilia allele. Draw two fully labelled chromosome diagrams (one for each parent) showing the positions of each allele. Indicate clearly which is female and which is male.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8(3)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Chromosome diagrams showing XX and XY",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Correct alleles and loci for each parent",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Male and/or female correctly indicated",
+    "marks": 3
+   }
+  ],
+  "notes": "bio-2023-hl-q13-c-i records this as \"skipped: draw two labelled chromosome diagrams (drawing)\". The scheme prices the drawing on three separate things and the first of them is content — that the two diagrams are XX and XY — so it is carded. The scheme sets all three on one line, after its own cue, and each row here is a slice of it. Unlike part (iii), nothing in these three marking points is written in the superscript allele notation the text layer flattens. The stem is dropped: the paper block yields only the pedigree chart's key and its person numbers. Neither parser reads this scheme's \"Question 13\" head, so the answer to this part is filed under the parser key (9, c, ii) rather than under the paper's own Q13(c)(ii). The card lifts from that key and cites the PAPER."
+ },
+ {
+  "id": "bio-2023-hl-q15-b-i",
+  "topicId": "bio-2-5",
+  "conceptId": "diagram-of-the-male-reproductive-system",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "biology",
+  "section": "C",
+  "questionRef": "2023 HL Q15(b)(i)",
+  "questionText": "Draw a large diagram of the human male reproductive system, labelling the following parts: testis sperm duct prostate gland epididymis penis scrotum",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3+3"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Penis, testis, urethra and sperm duct",
+    "marks": 6
+   }
+  ],
+  "notes": "bio-2023-hl-q15-b-ii records this as \"skipped: labelled diagram of the male reproductive system (drawing)\". The scheme names the four structures the drawing must contain, and that list is not the same as the six the question asks you to label — urethra is on it and is not in the question — so the marking point carries content the ask does not. Priced 3+3, all six marks for a drawing showing all four, three if one is missing. The separate 6(1) for labels is not shown: those labels are the question's own list. The stem is dropped: the paper block yields the following sub-part, about the sperm cell, not this one. Neither parser reads this scheme's \"Question 15\" head, so the answer to this part is filed under the parser key (3, b, i) rather than under the paper's own Q15(b)(i). The card lifts from that key and cites the PAPER."
+ },
+ {
+  "id": "bio-2023-hl-q16-a-iii",
+  "topicId": "bio-1-3",
+  "conceptId": "sugar-concentration-with-no-change-in-mass",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "biology",
+  "section": "C",
+  "questionRef": "2023 HL Q16(a)(iii)",
+  "questionText": "At what sugar concentration is there no change in the mass of the plant tissue?",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "10(3)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "4 g/100cm3",
+    "marks": 3
+   }
+  ],
+  "notes": "A read-off-the-graph part whose answer the scheme prints as a number with its units, and marks with the asterisk it uses for an answer that has to be exact. The value is the concentration at which water enters and leaves the tissue at the same rate, which the deck already teaches from the other side in bio-2023-hl-q16-a-i-ii-iv, so the card stands without the printed graph. The stem is dropped: the paper block yields the graph's axis furniture and the tail of a neighbouring sub-part. Q16 is answered as any two of (a)-(d), each worth 30, and 16(a) is marked 10(3) across (i)-(vii). Neither parser reads this scheme's \"Question 16\" head, so the answer to this part is filed under the parser key (8, c, iii) rather than under the paper's own Q16(a)(iii). The card lifts from that key and cites the PAPER."
+ },
+ {
+  "id": "bio-2023-hl-q16-d-iv",
+  "topicId": "bio-3-2",
+  "conceptId": "diagram-of-rhizopus",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "biology",
+  "section": "C",
+  "questionRef": "2023 HL Q16(d)(iv)",
+  "questionText": "Draw a diagram showing the basic structure of Rhizopus, labelling the following parts: stolon, rhizoid, sporangium.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3+3"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "stolon and rhizoid and sporangiophore and sporangium",
+    "marks": 6
+   }
+  ],
+  "stem": "Another member of kingdom Fungi is Rhizopus (or common bread mould).",
+  "notes": "bio-2023-hl-q16-d-v-vi records this as \"skipped: diagram of Rhizopus plus its label table (drawing)\". The scheme names four structures the diagram must show and the question asks for three: sporangiophore is in the marking point and not in the ask, so a candidate who draws only what was listed loses marks. That is the content the card carries. Priced 3+3, all six for all four structures and three if one is missing. The separate 3(1) for labels is not shown: it repeats the question's own list. Neither parser reads this scheme's \"Question 16\" head, so the answer to this part is filed under the parser key (3, d, iv) rather than under the paper's own Q16(d)(iv). The card lifts from that key and cites the PAPER."
+ },
+ {
+  "id": "bio-2023-hl-q17-c-ii",
+  "topicId": "bio-2-6",
+  "conceptId": "sketching-an-alveolus-and-gas-movement",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "biology",
+  "section": "C",
+  "questionRef": "2023 HL Q17(c)(ii)",
+  "questionText": "In your answerbook, sketch the structure of an alveolus and its associated blood supply. On your diagram, clearly indicate the overall directions in which oxygen and carbon dioxide are moving.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "10(3)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Alveolus and capillary",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Oxygen from alveolus to blood.",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Carbon dioxide from blood to alveolus.",
+    "marks": 3
+   }
+  ],
+  "notes": "Three separate responses at 3 each: what the sketch has to contain, and then the direction of each gas, which is the half candidates reverse. The second row is sliced past the scheme's own cue, which it welds onto the front of the marking point. The stem is dropped: the paper block yields the tails of the neighbouring sub-parts (c)(i) and (c)(iii). Q17 is answered as any two of (a)-(d), each worth 30, and 17(c) is marked 10(3) across (i)-(iii). Neither parser reads this scheme's \"Question 17\" head, so the answer to this part is filed under the parser key (4, c, ii) rather than under the paper's own Q17(c)(ii). The card lifts from that key and cites the PAPER."
+ },
+ {
+  "id": "bio-2023-hl-q17-d-vi",
+  "topicId": "bio-2-6",
+  "conceptId": "longitudinal-section-of-vascular-tissue",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "biology",
+  "section": "C",
+  "questionRef": "2023 HL Q17(d)(vi)",
+  "questionText": "Draw and label a longitudinal section (L.S.) of either type of vascular tissue you named in part (d) (v) above.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Xylem: Continuous vessel (or tracheid) with either lignin or pits",
+    "marks": 3,
+    "accepts": [
+     "Phloem: Tube with sieve plates and companion cell"
+    ]
+   }
+  ],
+  "notes": "bio-2023-hl-q17-d-iv-v records this as \"skipped: draw and label an L.S. of vascular tissue (drawing), including its label table\". The scheme names what each of the two sections has to show, which is content, so it is carded — as one row with two alternatives, because the question lets a candidate choose either tissue and the scheme prices the drawing once, at 3. The further 3(1) the scheme awards for any three labels on that drawing is not shown: its two lists are xylem labels and phloem labels and only the list matching the chosen drawing can score, which one alternatives row cannot express. The stem is dropped: the paper block yields the page's copyright notice. Neither parser reads this scheme's \"Question 17\" head, so the answer to this part is filed under the parser key (6, d, vi) rather than under the paper's own Q17(d)(vi). The card lifts from that key and cites the PAPER."
+ },
+ {
   "id": "bio-2023-ol-q2-a",
   "topicId": "bio-u2",
   "conceptId": "what-a-hypothesis-is",
@@ -38693,6 +40489,231 @@
    }
   ],
   "notes": "The scheme answers this by ticking a True/False column; the tick was read from its position on page 8 of the 2023 Ordinary Level marking scheme. The paper prints this statement beside another question, so the question text is the statement alone, confirmed against the scheme. Q2 is marked 6(3) + 2 over seven statements."
+ },
+ {
+  "id": "bio-2023-ol-q8-b-iii",
+  "topicId": "bio-u2",
+  "conceptId": "bar-chart-of-percentage-frequency",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2023 OL Q8(b)(iii)",
+  "questionText": "On the axes below, sketch (using pencil) a bar chart to represent the percentage frequency of dandelion and grass. Label both axes.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(9) + 6(1)"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "x axis: Type of plant (or grass and dandelion)",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "y axis: % frequency",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Bars representing dandelion and grass",
+    "marks": null
+   }
+  ],
+  "notes": "A drawing task the scheme answers with content, so it is carded: the marks are for what the axes are called and for the bars being there, not for the values plotted, which is why the card stands without the paper's data table. The scheme sets all three on one line; each row here is a slice of it. The stem is dropped: it is the presence/absence table, whose tick is a private-use glyph the text layer loses. Q8(b) is marked 2(9) + 6(1) across (i)-(iii) and no part carries a mark of its own; totalMarks is the scheme table's award for the three correct responses this card holds (20), not the 24-mark block. The scheme prints its answer to this part under the parser key (7, b, iii), not under the paper's own Q8(b)(iii): this scheme drifts a part out of step wherever a mark-band table, a page footer or a bare sub-head sits between two answers. The citation follows the PAPER."
+ },
+ {
+  "id": "bio-2023-ol-q9-b-i",
+  "topicId": "bio-u2",
+  "conceptId": "osmosis-apparatus-diagram",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2023 OL Q9(b)(i)",
+  "questionText": "Draw a labelled diagram of the apparatus that you used to demonstrate osmosis.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(9) + 6(1)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Diagram showing two solutions and membrane or tissue",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme answers this in two lines and only the first is a marking point: \"Diagram showing two solutions and membrane or tissue\" names what the drawing must show, while \"Any two correct labels\" is a criterion for the examiner and carries no answer, so it is not shown and is not counted. Q9(b) is marked 2(9) + 6(1) across (i)-(iii); totalMarks is the scheme table's award for the one correct response this card holds (9), not the 24-mark block."
+ },
+ {
+  "id": "bio-2023-ol-q15-b-v",
+  "topicId": "bio-2-6",
+  "conceptId": "breathing-disorders",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "biology",
+  "section": "C",
+  "questionRef": "2023 OL Q15(b)(v)",
+  "questionText": "Name one breathing disorder and give a possible cause.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3(5) + 6(2)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Name: Bronchitis or asthma or other correct",
+    "marks": null
+   }
+  ],
+  "notes": "Half of this ask is carded and half is refused. The scheme answers the naming half with real content — \"Name: Bronchitis or asthma or other correct\" — and the causal half only with \"Cause: Matching cause named or described\", a rule for the examiner rather than an answer, so no second row exists to show. The paper welds the part mark \"(27)\" onto the end of this question; first_sentence trims it, and the trim is confirmed against the scheme, which prints the question too. Q15(b) is marked 3(5) + 6(2) across (i)-(v); totalMarks is the scheme table's award for the one correct response this card holds (5). The scheme prints its answer to this part under the parser key (3, None, v), not under the paper's own Q15(b)(v): this scheme drifts a part out of step wherever a mark-band table, a page footer or a bare sub-head sits between two answers. The citation follows the PAPER."
+ },
+ {
+  "id": "bio-2023-ol-q16-a-iii",
+  "topicId": "bio-2-6",
+  "conceptId": "urinary-system-beyond-the-ureter",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "biology",
+  "section": "C",
+  "questionRef": "2023 OL Q16(a)(iii)",
+  "questionText": "The ureter connects the kidney to another part of the urinary system. Name this other part.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 8(2)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Bladder",
+    "marks": null
+   }
+  ],
+  "notes": "Earlier waves held this part back because the scheme prints its cue as the bare \"Name this other part.\" and the referent looked to be on the kidney diagram. It is not: the paper prints the whole ask in words — \"The ureter connects the kidney to another part of the urinary system. Name this other part.\" — so the card stands on the paper text alone and needs no figure. Q16 is answered as any two of (a)-(d), each worth 30, and 16(a) is marked 2(7) + 8(2) across (i)-(vi); totalMarks is the scheme table's award for the one correct response this card holds (7). The scheme prints its answer to this part under the parser key (15, c, iii), not under the paper's own Q16(a)(iii): this scheme drifts a part out of step wherever a mark-band table, a page footer or a bare sub-head sits between two answers. The citation follows the PAPER."
+ },
+ {
+  "id": "bio-2023-ol-q16-a-iv",
+  "topicId": "bio-2-6",
+  "conceptId": "fat-layer-around-the-kidney",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "biology",
+  "section": "C",
+  "questionRef": "2023 OL Q16(a)(iv)",
+  "questionText": "The kidneys are surrounded by a thick layer of fat. Give one function of this layer of fat.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 8(2)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Protection",
+    "marks": null
+   }
+  ],
+  "notes": "Same recovery as (a)(iii): the scheme's cue is the bare \"Give one function of this layer of fat.\" but the paper prints the lead-in — \"The kidneys are surrounded by a thick layer of fat.\" — so the ask is complete in words and no fat layer needs to be visible on the diagram. totalMarks is the scheme table's award for the one correct response this card holds (7); 30 is the whole Q16(a) block. The scheme prints its answer to this part under the parser key (15, c, iv), not under the paper's own Q16(a)(iv): this scheme drifts a part out of step wherever a mark-band table, a page footer or a bare sub-head sits between two answers. The citation follows the PAPER."
+ },
+ {
+  "id": "bio-2023-ol-q16-b-vi",
+  "topicId": "bio-2-4",
+  "conceptId": "where-optic-nerve-impulses-travel",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "biology",
+  "section": "C",
+  "questionRef": "2023 OL Q16(b)(vi)",
+  "questionText": "The optic nerve carries impulses. To which organ do these impulses travel?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 8(2)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Brain",
+    "marks": null
+   }
+  ],
+  "notes": "Held back before because the scheme's cue, \"To which organ do these impulses travel?\", leaves \"these impulses\" undefined. The paper defines them in the same sentence — \"The optic nerve carries impulses.\" — so the card carries the ask whole. The stem is dropped: the paper block yields only the stray diagram letter \"Z\". Q16(b) is marked 2(7) + 8(2) across (i)-(vii); totalMarks is the scheme table's award for the one correct response this card holds (7). The scheme prints its answer to this part under the parser key (16, a, vi), not under the paper's own Q16(b)(vi): this scheme drifts a part out of step wherever a mark-band table, a page footer or a bare sub-head sits between two answers. The citation follows the PAPER."
+ },
+ {
+  "id": "bio-2023-ol-q17-b-ii",
+  "topicId": "bio-2-4",
+  "conceptId": "glands-hormones-and-their-functions",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "biology",
+  "section": "C",
+  "questionRef": "2023 OL Q17(b)(ii)",
+  "questionText": "Copy the table below into your answerbook and complete it. Some boxes have been filled in as examples.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 8(2)"
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Thyroid Thyroxine (Regulate) metabolism",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Adrenal Adrenaline",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Testes Testosterone Sperm production",
+    "marks": null
+   }
+  ],
+  "stem": "Name of gland Hormone Function of hormone Thyroxine Adrenaline To prepare the body for “fight or flight” Testes",
+  "notes": "A table-completion. The paper prints three rows and pre-fills four cells — the hormones Thyroxine and Adrenaline, the fight-or-flight function, and the gland Testes — leaving five blanks; the stem is the paper's own table, flattened by the text layer into one line, which is why it reads as a run of headings and given cells. The scheme prints the completed table and each row here is one of its rows. The second row is sliced to \"Adrenal Adrenaline\" because the third cell of that row was already filled in on the paper as the example, and because the scheme's own line breaks mid-phrase there. Q17(b) is marked 2(7) + 8(2) across (i)-(iv); totalMarks is the scheme table's award for the five correct responses this card holds (20) — five blanks, not three rows. The scheme prints its answer to this part under the parser key (17, a, ii), not under the paper's own Q17(b)(ii): this scheme drifts a part out of step wherever a mark-band table, a page footer or a bare sub-head sits between two answers. The citation follows the PAPER."
+ },
+ {
+  "id": "bio-2023-ol-q17-c-ii",
+  "topicId": "bio-3-2",
+  "conceptId": "rhizopus-diagram-structures",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "biology",
+  "section": "C",
+  "questionRef": "2023 OL Q17(c)(ii)",
+  "questionText": "Draw a labelled diagram of Rhizopus.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2(7) + 8(2)"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Diagram: Sporangium and sporangiophore",
+    "marks": null
+   }
+  ],
+  "notes": "A drawing task, carded on what the scheme says rather than refused for being a drawing: \"Diagram: Sporangium and sporangiophore\" names the two structures the drawing must show. The scheme's second line, \"Labels: Any two correct labels\", is a criterion with no answer in it, so it is neither shown nor counted. Q17(c) is marked 2(7) + 8(2) across (i)-(vi); totalMarks is the scheme table's award for the one correct response this card holds (7). The scheme prints its answer to this part under the parser key (17, b, ii), not under the paper's own Q17(c)(ii): this scheme drifts a part out of step wherever a mark-band table, a page footer or a bare sub-head sits between two answers. The citation follows the PAPER."
  },
  {
   "id": "bio-2024-hl-q5-a",
@@ -38878,7 +40899,7 @@
   "subjectId": "biology",
   "section": "A",
   "questionRef": "2024 HL Q12(c)(iv)",
-  "questionText": "How many trophic levels are in the food chain you wrote in part",
+  "questionText": "How many trophic levels are in the food chain you wrote in part (c) (iii) above?",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -39020,6 +41041,793 @@
   ],
   "notes": "The scheme also allows a lack of predators, or any other correct reason.",
   "figureKey": "biology-2024-hl-paper-p003-i0"
+ },
+ {
+  "id": "bio-2024-hl-q3-a",
+  "topicId": "bio-2-6",
+  "conceptId": "naming-the-parts-of-the-alimentary-canal",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2024 HL Q3(a)",
+  "questionText": "Name tube A, organ B and gland C.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3(1)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: Oesophagus",
+    "marks": 1
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: Liver",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C: Pancreas",
+    "marks": 1
+   }
+  ],
+  "stem": "The diagram shows the human alimentary canal.",
+  "notes": "The scheme sets these three answers in one table cell, so each row is the label and its answer cut from that cell: the mark column (\"1\") and the next row's cue word (\"Organ\", \"Gland\") follow each one in the same cell and are left off. Part (a) is priced 3(1) on its own, apart from the 5(3) + 2 that covers (b) to (f).",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Oesophagus",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Liver",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Pancreas",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2024-hl-q3-b",
+  "topicId": "bio-2-6",
+  "conceptId": "function-of-the-oesophagus",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2024 HL Q3(b)",
+  "questionText": "Give one function of tube A.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Function: Transport food to the stomach",
+    "marks": null
+   }
+  ],
+  "stem": "The diagram shows the human alimentary canal.",
+  "notes": "The paper prints parts (a) to (f) beside one diagram of the human alimentary canal. Parts (b) to (f) share the tariff \"5(3) + 2\", so no part of that block has a mark of its own; totalMarks is the 3-mark rate the first five correct answers are paid. What tube A is comes from the scheme's own answer to Q3(a) on the same diagram.",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Oesophagus",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2024-hl-q3-c",
+  "topicId": "bio-2-6",
+  "conceptId": "function-of-the-liver",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2024 HL Q3(c)",
+  "questionText": "Give one function of organ B.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Function: Produce bile or stores vitamins or store minerals or stores glycogen or produces plasma proteins or detoxifies or other correct",
+    "marks": null
+   }
+  ],
+  "stem": "The diagram shows the human alimentary canal.",
+  "notes": "The paper prints parts (a) to (f) beside one diagram of the human alimentary canal. Parts (b) to (f) share the tariff \"5(3) + 2\", so no part of that block has a mark of its own; totalMarks is the 3-mark rate the first five correct answers are paid. What organ B is comes from the scheme's own answer to Q3(a) on the same diagram.",
+  "labelKey": [
+   {
+    "letter": "B",
+    "meaning": "Liver",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2024-hl-q3-d",
+  "topicId": "bio-2-6",
+  "conceptId": "function-of-the-pancreas-in-digestion",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2024 HL Q3(d)",
+  "questionText": "Give one function of gland C in relation to the digestive system.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "5(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Function: Produces pancreatic juice or correctly named substance or named enzyme",
+    "marks": null
+   }
+  ],
+  "notes": "The paper prints parts (a) to (f) beside one diagram of the human alimentary canal. Parts (b) to (f) share the tariff \"5(3) + 2\", so no part of that block has a mark of its own; totalMarks is the 3-mark rate the first five correct answers are paid. The paper sets the words \"Small intestine\" as a diagram label directly above this part, and the block segmentation reads them as its stem, so the card is left without one. What gland C is comes from the scheme's own answer to Q3(a).",
+  "labelKey": [
+   {
+    "letter": "C",
+    "meaning": "Pancreas",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2024-hl-q7-b",
+  "topicId": "bio-3-3",
+  "conceptId": "naming-the-stages-of-genetic-engineering",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2024 HL Q7(b)",
+  "questionText": "Name each stage X, Y and Z.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Stage X: Cutting (accept restriction)",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Stage Y: Transformation or introduction of base sequence changes",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Stage Z: Expression",
+    "marks": null
+   }
+  ],
+  "stem": "Isolation of DNA is the first stage of genetic engineering. Three of the other stages are labelled Stage X, Stage Y and Stage Z in the diagram. Chromosome Cell Gene Isolation Stage X Recombinant DNA Stage X Plasmid (vector) Stage Y Stage Z Host cell Product",
+  "notes": "Question 7 is marked 6(3) + 2 across its seven markable items — (a), the three stages here, and the three parts of (c) — so no item has a mark of its own; totalMarks is three items at the 3-mark rate. The stages are lettered on the paper's flow diagram, and the scheme names each one in full, so the rows carry the naming without it."
+ },
+ {
+  "id": "bio-2024-hl-q10-b-i",
+  "topicId": "bio-u2",
+  "conceptId": "setting-up-the-seed-digestion-investigation",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2024 HL Q10(b)(i)",
+  "questionText": "Describe how you set up the apparatus for this investigation. You may include a labelled diagram if you wish.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Seeds soaked or seeds sterilised or how sterilised",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Cut (or flat) side facing agar",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Left for a suitable length of time",
+    "marks": 3
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Boiled seed or suitable control described",
+    "marks": 3
+   }
+  ],
+  "notes": "The paper prints this part on the last question page of the answerbook, and the block above it is the answerbook's own instructions, so the card carries no stem. The investigation is the action of digestive enzymes in germinating seeds on starch agar or skimmed milk plates. Marked 5(3): the fifth point is the scheme's general criterion about naming apparatus, a suitable temperature or a safety precaution, which is not an answer and is left off."
+ },
+ {
+  "id": "bio-2024-hl-q11-b-i",
+  "topicId": "bio-2-5",
+  "conceptId": "naming-the-parts-of-a-wind-pollinated-flower",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2024 HL Q11(b)(i)",
+  "questionText": "Name the parts of the flower labelled A, B and C.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3(1)"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Anther",
+    "marks": 1
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Filament",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Stigma",
+    "marks": 1
+   }
+  ],
+  "notes": "The scheme marks each of these three answers with its essential-answer asterisk; the asterisk is an instruction to the examiner and comes off, as it does on every card in the deck. Priced 3(1) — one mark each — separately from the 8(3) that covers the rest of part (b).",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Anther",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Filament",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Stigma",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2024-hl-q11-b-ii",
+  "topicId": "bio-2-5",
+  "conceptId": "adaptations-for-wind-pollination",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2024 HL Q11(b)(ii)",
+  "questionText": "Give one adaptation of this flower (visible or otherwise) that shows it is wind-pollinated.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Large (or long) stamen or large (or feathery) stigmas or stamen exposed or stigma exposed or small or light pollen",
+    "marks": 3
+   }
+  ]
+ },
+ {
+  "id": "bio-2024-hl-q11-b-iii",
+  "topicId": "bio-2-5",
+  "conceptId": "where-pollen-is-formed",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2024 HL Q11(b)(iii)",
+  "questionText": "In which of the labelled parts is pollen formed?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A or anther",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme accepts either the letter or the part's name. What the three letters stand for is the scheme's own answer to Q11(b)(i) on the same diagram.",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Anther",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Filament",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Stigma",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2024-hl-q12-c-vii",
+  "topicId": "bio-3-1",
+  "conceptId": "naming-the-ecological-pyramid",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2024 HL Q12(c)(vii)",
+  "questionText": "Name the type of diagram an ecologist may draw to indicate the relative sizes of the populations at different trophic levels. (24)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Pyramid of numbers or ecological pyramid",
+    "marks": 2
+   }
+  ],
+  "stem": "Orca whale Peregrine falcon Seal Seagull Octopus Salmon Herring Hermit crab Zooplankton Shrimp Seaweed Phytoplankton",
+  "notes": "The scheme prints its own cue in an abbreviated form (\"Name the type of diagram an ecologist may draw…\"); the question text here is the paper's full wording. Parts (v), (vi) and (vii) share the tariff 3(2), which is why this one is worth 2 and not 3. The scheme sets the mark in the same cell as the answer, so the trailing \"2\" is cut with the slice."
+ },
+ {
+  "id": "bio-2024-hl-q13-c-iii",
+  "topicId": "bio-2-2",
+  "conceptId": "fate-of-the-energised-electrons-in-pathway-1",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2024 HL Q13(c)(iii)",
+  "questionText": "Briefly describe what happens to these energised electrons in pathway 1.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Any two 2(3)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Picked up by (electron) acceptor or transferred from carrier to carrier",
+    "marks": 3,
+    "accepts": [
+     "ATP produced from ADP and P",
+     "(electron) returns to chlorophyll"
+    ]
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "energy released",
+    "marks": 3,
+    "accepts": [
+     "ATP produced from ADP and P",
+     "(electron) returns to chlorophyll"
+    ]
+   }
+  ],
+  "notes": "Marked \"Any two 2(3)\": the scheme lists four points and pays 3 for each of the first two, so both rows carry the other two as accepted alternatives. The paper sets this part under a passage about the light stage of photosynthesis splitting into pathway 1 and pathway 2; the block segmentation hands this part the sub-questions of (c)(v) as a stem instead, so the card is left without one."
+ },
+ {
+  "id": "bio-2024-hl-q14-b-i",
+  "topicId": "bio-1-3",
+  "conceptId": "drawing-and-labelling-a-bacterial-cell",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2024 HL Q14(b)(i)",
+  "questionText": "Draw the structure of a bacterial cell and label any three parts.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "diagram 1(3) + any three labels 3(1)"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Diagram: Cell wall and cell membrane and DNA",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "Label: Cell wall",
+    "marks": 3,
+    "accepts": [
+     "cell membrane",
+     "cytosol",
+     "ribosome",
+     "plasmid",
+     "flagellum",
+     "capsule",
+     "chromosome or DNA"
+    ]
+   }
+  ],
+  "notes": "A drawing question the scheme answers in words: 3 for a drawing that shows the three named structures, and 3(1) — a mark each — for any three correct labels, which is why the label row is worth 3 and carries the rest of the scheme's list as alternatives."
+ },
+ {
+  "id": "bio-2024-hl-q15-b-ii",
+  "topicId": "bio-1-4",
+  "conceptId": "genotypes-of-the-parent-plants",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2024 HL Q15(b)(ii)",
+  "questionText": "A homozygous tall, red snapdragon plant is crossed with a dwarf, pink snapdragon plant.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "TTRR",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "ttRr",
+    "marks": 3
+   }
+  ],
+  "stem": "However, the allele for red flower shows incomplete dominance with the allele for white flower. Pink flower is the phenotype that results in the heterozygous condition. The two genes are not linked. Using suitable letters, give the genotypes of both plants in the above cross.",
+  "notes": "The paper prints part (ii) over two lines — the cross on the first and \"Using suitable letters, give the genotypes of both plants in the above cross.\" on the second — and the second line is read as part of the question stem, which is where this card carries it. The scheme adds \"Allow alternative letters for Rr e.g. RW\" beside the second genotype; that is an instruction to the examiner and is not on the card."
+ },
+ {
+  "id": "bio-2024-hl-q15-b-iii",
+  "topicId": "bio-1-4",
+  "conceptId": "offspring-genotypes-and-phenotypes-of-the-cross",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2024 HL Q15(b)(iii)",
+  "questionText": "Using a Punnett square, or otherwise, show the possible genotypes and matching phenotypes of the offspring of the cross described above.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "TtRR",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Tall and Red flowered",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "TtRr",
+    "marks": 3
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Tall and Pink flowered",
+    "marks": 3
+   }
+  ],
+  "stem": "However, the allele for red flower shows incomplete dominance with the allele for white flower. Pink flower is the phenotype that results in the heterozygous condition. The two genes are not linked. Using suitable letters, give the genotypes of both plants in the above cross.",
+  "notes": "The rows run in the scheme's own order: a genotype, then the phenotype that goes with it, twice. The scheme labels each row \"Genotype:\" or \"Phenotype:\" and marks each answer with its essential-answer asterisk; the asterisk comes off and the label is cut, because it belongs to the scheme's table and not to the answer."
+ },
+ {
+  "id": "bio-2024-hl-q15-b-iv",
+  "topicId": "bio-1-4",
+  "conceptId": "percentage-of-pink-offspring",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2024 HL Q15(b)(iv)",
+  "questionText": "What percentage of the offspring of the cross have pink flowers? (27)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "50%",
+    "marks": 3
+   }
+  ],
+  "stem": "However, the allele for red flower shows incomplete dominance with the allele for white flower. Pink flower is the phenotype that results in the heterozygous condition. The two genes are not linked. Using suitable letters, give the genotypes of both plants in the above cross.",
+  "notes": "The scheme sets the cue, the answer and the mark in one cell — \"What percentage of the offspring of the cross have pink flowers? *50% 3\" — so the row is the answer cut from the middle of it."
+ },
+ {
+  "id": "bio-2024-hl-q15-c-i",
+  "topicId": "bio-1-5",
+  "conceptId": "who-proposed-natural-selection",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2024 HL Q15(c)(i)",
+  "questionText": "Name these two famous biologists.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "(Charles) Darwin",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "(Alfred Russell) Wallace",
+    "marks": 3
+   }
+  ],
+  "notes": "The paper sets this under \"Two famous biologists independently developed the theory of evolution by natural selection.\"; that sentence is in a block of its own that the segmentation does not attach to the part, so the card carries no stem."
+ },
+ {
+  "id": "bio-2024-hl-q17-a-i",
+  "topicId": "bio-2-1",
+  "conceptId": "optimal-ph-of-a-stomach-enzyme",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2024 HL Q17(a)(i)",
+  "questionText": "1. What is the optimal pH of enzyme A?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "2",
+    "marks": 4
+   }
+  ],
+  "notes": "The paper numbers two asks under (i) — the optimal pH of enzyme A and of enzyme B — and prints each on its own line; the block segmentation keeps only the first, which is the one this card asks and answers. Marked 2(4), four marks for each of the two."
+ },
+ {
+  "id": "bio-2024-hl-q17-a-ii",
+  "topicId": "bio-2-1",
+  "conceptId": "which-enzyme-works-in-the-stomach",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2024 HL Q17(a)(ii)",
+  "questionText": "Which of these enzymes (A or B) is most likely to be found in the stomach? Justify your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A",
+    "marks": 4
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Justify: pH in the stomach is low or acidic environment in the stomach",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prices the two halves separately — 1(4) for naming the enzyme and 1(3) for the justification — so the rows are worth 4 and 3."
+ },
+ {
+  "id": "bio-2024-hl-q17-b-ii",
+  "topicId": "bio-3-2",
+  "conceptId": "drawing-rhizopus-in-asexual-reproduction",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2024 HL Q17(b)(ii)",
+  "questionText": "Rhizopus is an example of a fungus. Draw a large labelled diagram of Rhizopus during asexual reproduction. Indicate clearly on your diagram which part is involved in asexual reproduction.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "diagram 2(3) + any three labels 3(1) + 1(3) for the indication"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Diagram: sporangiophore and sporangium",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "Labels: stolon",
+    "marks": 3,
+    "accepts": [
+     "rhizoid",
+     "sporangiophore",
+     "sporangium",
+     "spore",
+     "hypha",
+     "mycelium",
+     "apophysis",
+     "columella"
+    ]
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Spores or sporangium indicated",
+    "marks": 3
+   }
+  ],
+  "notes": "A drawing question the scheme answers in words. The part is worth 12 in all; the card carries 9 of them. The scheme's second diagram mark — 3 for showing a stolon or a rhizoid — is set as a bare cell that both parsers read as a mark column, so it cannot be lifted as a row, but both structures are in the label list this card does carry. The paper block above this part is the tail of (b)(iii), so the card has no stem."
+ },
+ {
+  "id": "bio-2024-hl-q17-c-ii",
+  "topicId": "bio-2-6",
+  "conceptId": "drawing-and-labelling-the-nephron",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2024 HL Q17(c)(ii)",
+  "questionText": "The nephron is the functional unit of the kidney. Draw a large labelled diagram of the human nephron and its associated blood supply.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "diagram 2(3) + any six labels 6(1)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Diagram: Bowman’s capsule and (proximal or distal) convoluted tubule and loop of Henle",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Glomerulus or other blood supply",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "alt",
+    "verbatim": "Labels: Any six correct labels e.g. glomerulus",
+    "marks": 6,
+    "accepts": [
+     "Bowman’s capsule",
+     "proximal convoluted tubule",
+     "loop of Henle",
+     "distal convoluted tubule",
+     "collecting duct",
+     "afferent arteriole",
+     "efferent arteriole",
+     "renal venule",
+     "renal arteriole"
+    ]
+   }
+  ],
+  "notes": "A drawing question the scheme answers in words: 3 for the tubule itself, 3 for the blood supply and 6(1) — a mark each — for any six correct labels, which is why the label row is worth 6 and carries the rest of the scheme's list as alternatives. The paper block above this part is the two sub-asks of (c)(iv), so the card has no stem."
+ },
+ {
+  "id": "bio-2024-hl-q17-d-v",
+  "topicId": "bio-2-3",
+  "conceptId": "sketching-a-cell-at-metaphase",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2024 HL Q17(d)(v)",
+  "questionText": "Sketch a diagram of a cell with a diploid number of 4 (i.e. 2n = 4) that is at the stage of mitosis you named at part (d) (iv) above.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Diagram: Cell with 4 duplicated chromosomes on the equator of the cell",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Spindle fibres from chromosomes to the ends (poles) of the cell",
+    "marks": 3
+   }
+  ],
+  "notes": "The stage named at (d)(iv) is metaphase. The scheme abbreviates its own cue to \"Sketch a simple cell with a diploid number of 4 that is at the stage you named above.\"; the question text here is the paper's full wording. The paper block above this part runs into the copyright notice on the back page, so the card carries no stem."
+ },
+ {
+  "id": "bio-2024-hl-q17-d-vii",
+  "topicId": "bio-2-3",
+  "conceptId": "loss-of-control-of-mitosis",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2024 HL Q17(d)(vii)",
+  "questionText": "What name is given to the group of disorders where a cell loses control of mitosis and the number of cell divisions?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Cancer",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme abbreviates its cue to \"What name is given to the group of disorders….?\"; the question text here is the paper's full wording. The paper block above this part runs into the copyright notice on the back page, so the card carries no stem."
  },
  {
   "id": "bio-2024-ol-q6-a",
@@ -39412,7 +42220,7 @@
     "marks": 3
    }
   ],
-  "stem": "PR BR Resting 60 20 Moderate exercise 100 30 rate Intense exercise 150 60 Choosing either pulse or breathing rate, complete the name of the y-axis and on the grid provided, draw (using pencil) a suitable graph to represent the data of either pulse rate (PR) or breathing rate (BR). Resting Moderate exercise Intense exercise Answerbook for Section C Instructions Questions for Section C are supplied separately. Start each question on a new page. Write the question number in the box at the top of each page. Use the left-hand column to label each part, as shown below. 1 4 There are two pages of graph paper on the next two pages of this answerbook. On pages with graph paper, the box for the question number is at the bottom of the page. You do not need to use all of the pages in this answerbook. If you run out of space in this answerbook, you may ask the superintendent for more paper or graph paper. Write your answers in blue or black pen. You may use a pencil for sketches, graphs and diagrams only. Part Start each question on a new page Question 15 Part Start each question on a new page Question 16 Part Start each question on a new page Question 17 Part Start each question on a new page Question 18 Part Start each question on a new page Question 19 Part Start each question on a new page Question 20 Part Start each question on a new page Question 21 Part Start each question on a new page Question 22 Part Start each question on a new page Question 23 Part Start each question on a new page Question 24 Part Start each question on a new page Question 25 Part Start each question on a new page Question 26 Part Start each question on a new page Question 27 Part Start each question on a new page Question 28 Part Start each question on a new page Question 29 Part Start each question on a new page Question 30 Part Start each question on a new page Question 31 Part Start each question on a new page Question 32 Part Start each question on a new page Question 33 Part Start each question on a new page Question 34 Part Start each question on a new page Question 35 Do not write on this page Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Ordinary Level Biology Sections A and B and Answerbook Tuesday 11 June Afternoon 2:00 - 5:00 2024L025G2EL 2024.M43 Coimisiún na Scrúduithe Stáit State Examinations Commission Section C Ordinary Level Tuesday 11 June Afternoon 2:00 - 5:00 240 marks Do not hand this up. This document will not be returned to the State Examinations Commission. Section C Answer any four questions. Write your answers in the answerbook containing Sections A and B."
+  "stem": "PR BR Resting 60 20 Moderate exercise 100 30 rate Intense exercise 150 60 Choosing either pulse or breathing rate, complete the name of the y-axis and on the grid provided, draw (using pencil) a suitable graph to represent the data of either pulse rate (PR) or breathing rate (BR). Resting Moderate exercise Intense exercise Answerbook for Section C Instructions Questions for Section C are supplied separately. Start each question on a new page. Write the question number in the box at the top of each page. Use the left-hand column to label each part, as shown below. 1 4 There are two pages of graph paper on the next two pages of this answerbook. On pages with graph paper, the box for the question number is at the bottom of the page. You do not need to use all of the pages in this answerbook. If you run out of space in this answerbook, you may ask the superintendent for more paper or graph paper. Write your answers in blue or black pen. You may use a pencil for sketches, graphs and diagrams only. Part Start each question on a new page Question 15 Part Start each question on a new page Question 16 Part Start each question on a new page Question 17 Part Start each question on a new page Question 18 Part Start each question on a new page Question 19 Part Start each question on a new page Question 20 Part Start each question on a new page Question 21 Part Start each question on a new page Question 22 Part Start each question on a new page Question 23 Part Start each question on a new page Question 24 Part Start each question on a new page Question 25 Part Start each question on a new page Question 26 Part Start each question on a new page Question 27 Part Start each question on a new page Question 28 Part Start each question on a new page Question 29 Part Start each question on a new page Question 30 Part Start each question on a new page Question 31 Part Start each question on a new page Question 32 Part Start each question on a new page Question 33 Part Start each question on a new page Question 34 Part Start each question on a new page Question 35 Do not write on this page Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Ordinary Level Biology Sections A and B and Answerbook Tuesday 11 June Afternoon 2:00 - 5:00 2024L025G2EL 2024.M43 Coimisiún na Scrúduithe Stáit State Examinations Commission Section C Ordinary Level Tuesday 11 June Afternoon 2:00 - 5:00 240 marks This document will not be returned to the State Examinations Commission. Section C Answer any four questions. Write your answers in the answerbook containing Sections A and B."
  },
  {
   "id": "bio-2024-ol-q3-b",
@@ -39465,6 +42273,439 @@
   "stem": "Barn owl Badger Fox Bat Robin Grasshopper Mouse Thrush Mosquito Snail Grasses 2. How many feeding (trophic) levels are in your food chain?"
  },
  {
+  "id": "bio-2024-ol-q1-b",
+  "topicId": "bio-1-2",
+  "conceptId": "the-fourth-element-in-protein",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2024 OL Q1(b)",
+  "questionText": "Carbon, hydrogen, oxygen and one other element are always present in proteins. Name the other element.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Nitrogen (or N)",
+    "marks": 4
+   }
+  ],
+  "stem": "Use your knowledge of nutrition to answer the following questions.",
+  "notes": "Q1 (a)–(e) is marked 5(4) — five responses at four marks each — and the scheme prints the 4 beside this answer."
+ },
+ {
+  "id": "bio-2024-ol-q3-a",
+  "topicId": "bio-1-4",
+  "conceptId": "the-structure-made-of-dna-and-protein",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2024 OL Q3(a)",
+  "questionText": "Structure A is made of DNA and protein. Name structure A.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Chromosome",
+    "marks": 3
+   }
+  ],
+  "stem": "The diagram shows DNA replication followed by mitosis. Stage 4 Stage 2 Stage 3 Stage 1 DNA replication",
+  "notes": "Q3 prices each part separately and they sum to the 20 the scheme prints: 3 + 3 + 4 + 4 + 3 + 3."
+ },
+ {
+  "id": "bio-2024-ol-q5-b",
+  "topicId": "bio-2-4",
+  "conceptId": "bones-of-the-human-skeleton",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2024 OL Q5(b)",
+  "questionText": "Name the parts of the skeleton labelled A, B and C.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: Skull or cranium",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: Rib",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C: Pelvis",
+    "marks": null
+   }
+  ],
+  "stem": "The diagram shows the human skeleton.",
+  "notes": "The paper asks for \"the parts of the skeleton labelled A, B and C\"; the scheme prints the same part as \"Name the bones labelled A, B and C?\". The citation follows the paper. No per-part mark exists — the scheme's table for Q5 (a)–(d) pays 9 for three correct responses.",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Skull or cranium",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Rib",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Pelvis",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2024-ol-q5-c",
+  "topicId": "bio-2-4",
+  "conceptId": "the-joint-between-the-bones-of-the-skull",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2024 OL Q5(c)",
+  "questionText": "Which of the following types of joint is located between the bones of part A?",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Immovable",
+    "marks": null
+   }
+  ],
+  "stem": "Immovable Slightly movable Free moving or synovial",
+  "notes": "The paper adds \"Put a tick () in the correct box.\" after the question; the tick is a private-use glyph the text layer cannot render, so the card carries the scheme-confirmed first sentence and the paper's three options sit in the stem. What part A is comes from the scheme's own answer to Q5(b) on the same diagram.",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Skull or cranium",
+    "askedInThisQuestion": false
+   }
+  ]
+ },
+ {
+  "id": "bio-2024-ol-q9-b-vii",
+  "topicId": "bio-u2",
+  "conceptId": "labelling-the-axes-of-an-enzyme-rate-graph",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2024 OL Q9(b)(vii)",
+  "questionText": "A graph similar to the one shown below was plotted from the results of this investigation. Using the terms Temperature and Rate label axes A and B.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: Rate",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: Temperature",
+    "marks": 3
+   }
+  ],
+  "stem": "0°C 30°C 60°C 90°C",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Rate",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Temperature",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2024-ol-q11-b-ii",
+  "topicId": "bio-3-1",
+  "conceptId": "a-primary-consumer-in-a-food-web",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2024 OL Q11(b)(ii)",
+  "questionText": "Name a primary consumer from the food web.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Snail or mouse or grasshopper or mosquito",
+    "marks": 3
+   }
+  ],
+  "stem": "Barn owl Badger Fox Bat Robin Grasshopper Mouse Thrush Mosquito Snail Grasses 2. How many feeding (trophic) levels are in your food chain?"
+ },
+ {
+  "id": "bio-2024-ol-q11-b-iii",
+  "topicId": "bio-3-1",
+  "conceptId": "a-secondary-consumer-in-a-food-web",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2024 OL Q11(b)(iii)",
+  "questionText": "Name a secondary consumer from the food web.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Thrush or robin or badger or bat or fox or barn owl",
+    "marks": 3
+   }
+  ],
+  "stem": "Barn owl Badger Fox Bat Robin Grasshopper Mouse Thrush Mosquito Snail Grasses 2. How many feeding (trophic) levels are in your food chain?"
+ },
+ {
+  "id": "bio-2024-ol-q11-b-iv",
+  "topicId": "bio-3-1",
+  "conceptId": "what-the-arrows-in-a-food-web-mean",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2024 OL Q11(b)(iv)",
+  "questionText": "What do the arrows on the diagram mean?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Order of consumption or energy flow",
+    "marks": 3
+   }
+  ],
+  "stem": "Barn owl Badger Fox Bat Robin Grasshopper Mouse Thrush Mosquito Snail Grasses 2. How many feeding (trophic) levels are in your food chain?"
+ },
+ {
+  "id": "bio-2024-ol-q13-b-iii",
+  "topicId": "bio-1-4",
+  "conceptId": "completing-the-f2-punnett-square",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2024 OL Q13(b)(iii)",
+  "questionText": "Copy the Punnett square into your answerbook and complete it to show the genotypes of the F2 offspring.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4(3)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "PP",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Pp",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Pp",
+    "marks": 3
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "pp",
+    "marks": 3
+   }
+  ],
+  "stem": "Purple- flowered White- flowered p P Purple- flowered (Pp) Two of the F1 offspring were then self-fertilised. Purple-flowered (Pp) The F2 (second generation) offspring were not all purple-flowered. p P P Purple- flowered (Pp)",
+  "notes": "The scheme prints the answer as the completed Punnett square; the four cells of the grid are the four rows here."
+ },
+ {
+  "id": "bio-2024-ol-q14-b-i",
+  "topicId": "bio-3-2",
+  "conceptId": "drawing-and-labelling-a-bacterial-cell",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2024 OL Q14(b)(i)",
+  "questionText": "Draw a diagram of a bacterial cell and label the following parts: Cell wall; DNA; Cytosol",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Diagram: Cell wall and cell membrane and DNA",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Labels: Cell wall",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "DNA",
+    "marks": 3
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Cytosol",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme wants the cell membrane in the drawing as well, although the paper names only three parts to label."
+ },
+ {
+  "id": "bio-2024-ol-q14-c-i",
+  "topicId": "bio-3-2",
+  "conceptId": "amoeba-parts-on-the-diagram",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2024 OL Q14(c)(i)",
+  "questionText": "In your answerbook, match each of the parts labelled A, B and C with the following terms: 1. Pseudopod 2. Nucleus 3. Contractile vacuole",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Pseudopod: B",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Nucleus: A",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3. Contractile vacuole: C",
+    "marks": 3
+   }
+  ]
+ },
+ {
+  "id": "bio-2024-ol-q15-b-v",
+  "topicId": "bio-2-5",
+  "conceptId": "sketching-a-sperm-cell",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2024 OL Q15(b)(v)",
+  "questionText": "Sketch the structure of a sperm cell.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Sketch showing head and tail",
+    "marks": 3
+   }
+  ],
+  "stem": "B C Endometrium Cervix Vagina"
+ },
+ {
+  "id": "bio-2024-ol-q17-b-ii",
+  "topicId": "bio-2-4",
+  "conceptId": "ear-parts-on-the-diagram",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2024 OL Q17(b)(ii)",
+  "questionText": "In your answerbook, match each of the parts labelled A, B and C with the following terms: 1. Ossicle 2. Eardrum 3. Cochlea",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Ossicle: B",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Eardrum: A",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3. Cochlea: C",
+    "marks": 3
+   }
+  ],
+  "stem": "Auditory nerve Throat (pharynx) Middle ear Eustachian tube"
+ },
+ {
   "id": "bio-2025-hl-q13-b-iii",
   "topicId": "bio-2-3",
   "conceptId": "cyclic-and-non-cyclic-electron-flow",
@@ -39488,6 +42729,245 @@
   ]
  },
  {
+  "id": "bio-2025-hl-q2-d",
+  "topicId": "bio-2-6",
+  "conceptId": "root-transverse-section",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2025 HL Q2(d)",
+  "questionText": "In the space below, draw and label a transverse section of the root as it would appear if it was cut at the position of the dashed line (-------) in the diagram above.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 + 2(1)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Drawing: circle with vascular tissue clearly visible in the centre",
+    "marks": 3,
+    "contextNote": "The drawing mark is for the section itself; the scheme wants the vascular tissue visible in the centre of the circle."
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "Labels: dermal (tissue)",
+    "marks": 2,
+    "accepts": [
+     "vascular (tissue)",
+     "ground (tissue)",
+     "root hair"
+    ]
+   }
+  ],
+  "stem": "The diagram shows a longitudinal section through the root of a plant.",
+  "notes": "The label row is worth 2(1) — any two of the labels the scheme lists, one mark each — not 2 marks for the first one. The figure is the paper's own Question 2 artwork, which is where the dashed line the question cuts along is printed. The 2025 Higher Level scheme spells its question heads out in full (\"Question 17\"), which no parser reads, so its answers are filed under the numbered lines of the marking preamble instead of under the question. The citation above is the paper's own numbering.",
+  "figureKey": "biology-2025-HL-paper1-p04-i1"
+ },
+ {
+  "id": "bio-2025-hl-q5-e",
+  "topicId": "bio-3-2",
+  "conceptId": "growth-curve-after-nutrients-run-out",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2025 HL Q5(e)",
+  "questionText": "If the population of bacteria in the piece of equipment above were to run out of nutrients, draw on the graph above to show how the line would continue.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Line drops",
+    "marks": 2
+   }
+  ],
+  "notes": "Stem suppressed: the paper sets the graph axis labels in the same block as the Question 5 preamble, so the lifted stem ends \"Y Population X Time\". The figure carries the curve the question asks the candidate to continue. The 2025 Higher Level scheme spells its question heads out in full (\"Question 17\"), which no parser reads, so its answers are filed under the numbered lines of the marking preamble instead of under the question. The citation above is the paper's own numbering.",
+  "figureKey": "biology-2025-HL-paper1-p07-i0"
+ },
+ {
+  "id": "bio-2025-hl-q6-e",
+  "topicId": "bio-2-6",
+  "conceptId": "villus-internal-structure",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2025 HL Q6(e)",
+  "questionText": "The villus is present in the small intestine. In the space below, draw and label the internal structure of a villus.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Any two 3 + Any two 2(1)"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Drawing: villus",
+    "marks": 3,
+    "accepts": [
+     "lacteal",
+     "blood vessels"
+    ],
+    "contextNote": "The scheme wants any two of the three structures drawn."
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "Labels: villus",
+    "marks": 2,
+    "accepts": [
+     "lacteal",
+     "capillary (or blood vessel or named)"
+    ]
+   }
+  ],
+  "stem": "The diagram shows the human digestive system.",
+  "notes": "Both rows are \"any two\" menus in the scheme, not single answers: the drawing row is worth 3 for any two of the structures listed, the label row 2(1) for any two of its own list. The 2025 Higher Level scheme spells its question heads out in full (\"Question 17\"), which no parser reads, so its answers are filed under the numbered lines of the marking preamble instead of under the question. The citation above is the paper's own numbering."
+ },
+ {
+  "id": "bio-2025-hl-q16-a-iii",
+  "topicId": "bio-3-2",
+  "conceptId": "rhizopus-nutrition",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "biology",
+  "section": "C",
+  "questionRef": "2025 HL Q16(a)(iii)",
+  "questionText": "Name the method of nutrition used by Rhizopus.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Saprophytic or heterotrophic",
+    "marks": 3
+   }
+  ],
+  "notes": "Stem suppressed: the paper sets the Question 16(a) preamble in the same block as the (iv) sub-items, so the lifted stem is the wrong text. The 2025 Higher Level scheme spells its question heads out in full (\"Question 17\"), which no parser reads, so its answers are filed under the numbered lines of the marking preamble instead of under the question. The citation above is the paper's own numbering."
+ },
+ {
+  "id": "bio-2025-hl-q17-b-ii",
+  "topicId": "bio-2-4",
+  "conceptId": "how-an-antagonistic-pair-moves-a-joint",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "biology",
+  "section": "C",
+  "questionRef": "2025 HL Q17(b)(ii)",
+  "questionText": "Antagonistic muscle pairs are associated with the skeleton. Name any one antagonistic muscle pair and describe how it functions in creating movement.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "First movement: when one (named) muscle contracts and the joint moves in a particular direction",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Second movement: when the other (named) muscle contracts and the joint moves in the opposite direction to the first movement",
+    "marks": 3
+   }
+  ],
+  "notes": "PARTIAL. The part is worth 9. The scheme's third point, \"Correctly named antagonistic muscle pair\", is a content-free criterion — it credits naming any pair and supplies no answer — so it is not carded and this card covers the remaining 6 marks. The 2025 Higher Level scheme spells its question heads out in full (\"Question 17\"), which no parser reads, so its answers are filed under the numbered lines of the marking preamble instead of under the question. The citation above is the paper's own numbering."
+ },
+ {
+  "id": "bio-2025-hl-q17-b-iii",
+  "topicId": "bio-2-4",
+  "conceptId": "long-bone-internal-structure",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "biology",
+  "section": "C",
+  "questionRef": "2025 HL Q17(b)(iii)",
+  "questionText": "Sketch the internal structure of a long bone and label at least three parts.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6, 3, 0 + 3(1)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Diagram: Epiphysis and diaphysis and medullary cavity",
+    "marks": 6,
+    "contextNote": "The scheme prints \"6, 3, 0\" against the diagram: all three structures scores 6, any one missing scores 3, otherwise nothing."
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "Labels: Medullary cavity",
+    "marks": 3,
+    "accepts": [
+     "cartilage",
+     "compact bone",
+     "spongy bone",
+     "epiphysis",
+     "diaphysis………."
+    ]
+   }
+  ],
+  "notes": "The label row is 3(1) — any three of the labels the scheme lists, one mark each. Rows sum to the 9 the scheme prices the part at. The 2025 Higher Level scheme spells its question heads out in full (\"Question 17\"), which no parser reads, so its answers are filed under the numbered lines of the marking preamble instead of under the question. The citation above is the paper's own numbering."
+ },
+ {
+  "id": "bio-2025-hl-q17-d-i",
+  "topicId": "bio-2-5",
+  "conceptId": "male-reproductive-system-diagram",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "biology",
+  "section": "C",
+  "questionRef": "2025 HL Q17(d)(i)",
+  "questionText": "Draw the structure of the human male reproductive system and label at least three parts. On your diagram, write the letters X, Y and Z to indicate where each of the following occurs: 1. Sperm production (X) 2. Sperm storage (Y) 3. Seminal fluid production (Z)",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6, 3, 0 + 3(1)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Diagram: Penis and testes and sperm duct and urethra",
+    "marks": 6,
+    "contextNote": "The scheme prints \"6, 3, 0\" against the diagram: all four structures scores 6, any one missing scores 3, otherwise nothing."
+   },
+   {
+    "id": "r-2",
+    "kind": "alt",
+    "verbatim": "Labels: Penis",
+    "marks": 3,
+    "accepts": [
+     "testes",
+     "urethra",
+     "sperm duct",
+     "epididymis",
+     "prostate",
+     "seminal vesicles",
+     "scrotum………."
+    ]
+   }
+  ],
+  "notes": "PARTIAL. The part is worth 12: 6 for the diagram, 3(1) for any three labels, and three further 1-mark points for siting X, Y and Z on it. Those last three are not carded — the scheme sets them as table cells the PDF reader collapses into its mark column, so no parser hands them back whole and they would have to be typed. Stem suppressed: the paper block the parser reaches for is the acknowledgements list. The 2025 Higher Level scheme spells its question heads out in full (\"Question 17\"), which no parser reads, so its answers are filed under the numbered lines of the marking preamble instead of under the question. The citation above is the paper's own numbering."
+ },
+ {
   "id": "bio-2025-ol-q7-a",
   "topicId": "bio-1-4",
   "conceptId": "order-of-the-stages-of-mitosis",
@@ -39506,11 +42986,776 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Question 7",
+    "verbatim": "C, B, D, A",
     "marks": 6
    }
   ],
   "stem": "The images below show and describe the stages of mitosis in a cell. These stages are not in the correct order. X The cell is beginning to divide in two Chromosomes line up on the equator of the cell Chromosomes become visible in the cell Chromosomes are being pulled to the poles of the cell",
-  "notes": "The scheme numbers this answer under its own Question 6 while the paper prints Question 7."
+  "notes": "The scheme prints the order as \"C, B, D, A\" and pays 3 for any two letters in the right place, 6 for all four."
+ },
+ {
+  "id": "bio-2025-ol-q7-b",
+  "topicId": "bio-2-3",
+  "conceptId": "organelle-labelled-in-a-mitosis-image",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2025 OL Q7(b)",
+  "questionText": "Name the organelle labelled X in image A.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "6(3) + 2"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Nucleus",
+    "marks": null
+   }
+  ],
+  "stem": "The images below show and describe the stages of mitosis in a cell. These stages are not in the correct order. X The cell is beginning to divide in two Chromosomes line up on the equator of the cell Chromosomes become visible in the cell Chromosomes are being pulled to the poles of the cell",
+  "notes": "Q7 (a)–(e) is marked on one ladder — 6(3) + 2, three marks a response up to six and capped at 20 — so no part of it carries a mark of its own. Image A is the one where the cell is pinched at its waist and X points to the lower of its two new nuclei."
+ },
+ {
+  "id": "bio-2025-ol-q9-b-vii",
+  "topicId": "bio-u2",
+  "conceptId": "labelling-the-axes-of-an-enzyme-rate-graph",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2025 OL Q9(b)(vii)",
+  "questionText": "A graph similar to the one shown below was plotted from the results of this investigation. Using the terms pH and Rate label axes A and B.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: Rate",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: pH",
+    "marks": 3
+   }
+  ],
+  "notes": "The stem is dropped: the paper reader hands Q9(b) the graph's x-axis scale, \"2 4 6 8 10 12\", which is figure furniture rather than prose.",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Rate",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "pH",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2025-ol-q11-c-i",
+  "topicId": "bio-3-2",
+  "conceptId": "naming-the-nitrogen-cycle",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2025 OL Q11(c)(i)",
+  "questionText": "Name the nutrient cycle represented in diagram X.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Nitrogen",
+    "marks": 3
+   }
+  ],
+  "notes": "Diagram X runs nitrogen gas in the atmosphere to nitrates in the soil to plant protein to animal protein to ammonia and back."
+ },
+ {
+  "id": "bio-2025-ol-q11-c-ii",
+  "topicId": "bio-3-2",
+  "conceptId": "nitrogen-cycle-stages-on-the-diagram",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2025 OL Q11(c)(ii)",
+  "questionText": "In your answer book, match the terms, nitrification, nitrogen fixation and nutrition to the letters A, B and C in diagram X.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: Nitrogen fixation",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: Nutrition",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C: Nitrification",
+    "marks": 3
+   }
+  ],
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Nitrogen fixation",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Nutrition",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Nitrification",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2025-ol-q11-c-iii",
+  "topicId": "bio-3-2",
+  "conceptId": "naming-the-carbon-cycle",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2025 OL Q11(c)(iii)",
+  "questionText": "Name the nutrient cycle represented in diagram Y.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Carbon",
+    "marks": 3
+   }
+  ],
+  "notes": "Diagram Y runs carbon dioxide gas in the atmosphere to plant carbohydrate to animal carbohydrate to dead organic matter and fossil fuels."
+ },
+ {
+  "id": "bio-2025-ol-q11-c-iv",
+  "topicId": "bio-3-2",
+  "conceptId": "carbon-cycle-stages-on-the-diagram",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2025 OL Q11(c)(iv)",
+  "questionText": "In your answer book, match the terms, respiration, photosynthesis and combustion to the letters D, E and F in diagram Y. (24)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "D: Photosynthesis",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "E: Combustion",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "F: Respiration",
+    "marks": 3
+   }
+  ],
+  "labelKey": [
+   {
+    "letter": "D",
+    "meaning": "Photosynthesis",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "E",
+    "meaning": "Combustion",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "F",
+    "meaning": "Respiration",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2025-ol-q12-b-iv",
+  "topicId": "bio-1-4",
+  "conceptId": "whether-two-short-parents-can-give-a-tall-plant",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2025 OL Q12(b)(iv)",
+  "questionText": "A gardener planted pea seeds that came from a cross between two short plants. Is it possible that any of these plants grew up to be tall? Justify your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "No",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Justify: Neither parent possesses the dominant allele (for tallness)",
+    "marks": 3
+   }
+  ],
+  "notes": "Tallness (T) is dominant to shortness (t); a short plant can only be tt."
+ },
+ {
+  "id": "bio-2025-ol-q12-b-v",
+  "topicId": "bio-1-4",
+  "conceptId": "whether-two-tall-parents-can-give-a-short-plant",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2025 OL Q12(b)(v)",
+  "questionText": "A gardener planted pea seeds that came from a cross between two tall plants. Is it possible that any of these plants grew up to be short? Justify your answer. (27)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Yes",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Justify: It is possible that the parents were heterozygous or both parents could have a recessive allele (for shortness)",
+    "marks": 3
+   }
+  ],
+  "notes": "Tallness (T) is dominant to shortness (t), so a tall parent may be TT or Tt — which is what makes this the opposite answer to part (iv)."
+ },
+ {
+  "id": "bio-2025-ol-q12-c-i",
+  "topicId": "bio-1-4",
+  "conceptId": "replication-transcription-and-translation-diagrams",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "biology",
+  "section": "A",
+  "questionRef": "2025 OL Q12(c)(i)",
+  "questionText": "In your answerbook, match the diagrams, A, B and C with the following descriptions: 1. The DNA code is transcribed 2. DNA replication 3. The code is translated",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. The DNA code is transcribed C",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. DNA replication A",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3. The code is translated B",
+    "marks": 3
+   }
+  ],
+  "notes": "The three diagrams on the paper are: a DNA helix separating into two identical helices (A), a ribosome with a beaded strand through it (B), and DNA with messenger RNA leaving it (C). The stem is dropped: the paper reader hands Q12(c) the captions of all three diagrams together with the wording of later parts."
+ },
+ {
+  "id": "bio-2025-ol-q13-a-i",
+  "topicId": "bio-2-2",
+  "conceptId": "what-metabolism-is",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2025 OL Q13(a)(i)",
+  "questionText": "Which one of the following sentences (A or B) describes metabolism? A: The sum of all chemical reactions in a cell. B: The getting rid of undigested material from the body.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The sum of all chemical reactions in a cell or A.",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme accepts either the sentence itself or just the letter A."
+ },
+ {
+  "id": "bio-2025-ol-q13-c-iv",
+  "topicId": "bio-2-2",
+  "conceptId": "anaerobic-respiration-in-micro-organisms",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2025 OL Q13(c)(iv)",
+  "questionText": "Anaerobic respiration can also occur in micro-organisms. Which one of the following terms describes this form of anaerobic respiration? Filtration Fermentation Diffusion (24)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Fermentation",
+    "marks": 3
+   }
+  ]
+ },
+ {
+  "id": "bio-2025-ol-q14-a-ii",
+  "topicId": "bio-2-6",
+  "conceptId": "shoot-system-on-the-plant-diagram",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2025 OL Q14(a)(ii)",
+  "questionText": "Name the system represented by the letter X.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Shoot",
+    "marks": 3
+   }
+  ],
+  "notes": "The paper braces the plant twice: the lower brace is labelled \"Root system\" in words, the upper one — spanning stem and leaves — carries the letter X."
+ },
+ {
+  "id": "bio-2025-ol-q15-b-vi",
+  "topicId": "bio-2-5",
+  "conceptId": "placenta-and-foetus-on-the-diagram",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2025 OL Q15(b)(vi)",
+  "questionText": "The diagram shows a developing foetus. Using the terms placenta and foetus, identify X and Y.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "X: Placenta",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Y: Foetus",
+    "marks": 3
+   }
+  ],
+  "notes": "The stem is dropped: the paper reader hands Q15(b) the single letter \"X\" lifted off the diagram.",
+  "labelKey": [
+   {
+    "letter": "X",
+    "meaning": "Placenta",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "Y",
+    "meaning": "Foetus",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2025-ol-q15-c-i",
+  "topicId": "bio-2-5",
+  "conceptId": "male-reproductive-parts-on-the-diagram",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2025 OL Q15(c)(i)",
+  "questionText": "In your answerbook, match each of the parts labelled A, B and C with the following terms: testis, prostate gland, sperm duct.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1. Testis C",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "2. Prostate gland B",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3. Sperm duct A",
+    "marks": 3
+   }
+  ],
+  "stem": "The following questions relate to the human reproductive system.",
+  "notes": "The scheme prints the match the other way round — term first, then the letter — so the rows read \"1. Testis C\" rather than \"C: Testis\".",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Sperm duct",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Prostate gland",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Testis",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2025-ol-q15-c-iv",
+  "topicId": "bio-2-5",
+  "conceptId": "sketching-a-sperm-cell",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2025 OL Q15(c)(iv)",
+  "questionText": "Sketch the basic structure of a sperm cell and label the following two parts: head tail (or flagellum).",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 + 2(3)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Sketch showing head and tail",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "Two correctly positioned and named labels",
+    "marks": 6
+   }
+  ],
+  "stem": "The following questions relate to the human reproductive system.",
+  "notes": "The scheme pays the sketch and the labels separately: three marks for a sketch showing a head and a tail, and 2(3) — two labels at three marks each — for naming and positioning them. The paper prints the part mark \"(24)\" and the diagram letter \"C\" after the question; the card carries the scheme-confirmed first sentence instead."
+ },
+ {
+  "id": "bio-2025-ol-q16-a-ii",
+  "topicId": "bio-2-1",
+  "conceptId": "matching-enzymes-to-substrates-and-products",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2025 OL Q16(a)(ii)",
+  "questionText": "Copy the table below into your answerbook. Using the words listed, complete the table. List: Protease Maltose Starch Lipase Substrate Enzyme Product Amylase Lipids Triglycerides Protein Amino acid",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4(3)"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Starch Amylase Maltose",
+    "marks": 6
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Lipids Lipase Triglycerides",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Protein Protease Amino acids",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme prices this 4(3) — four words placed at three marks each, twelve in all. The paper leaves two cells blank in the amylase row (Starch and Maltose) and one in each of the other two (Lipase, Protease), which is how the twelve divide across the three rows here. The rows are the completed table; the words the candidate had to place are Protease, Maltose, Starch and Lipase."
+ },
+ {
+  "id": "bio-2025-ol-q16-d-i",
+  "topicId": "bio-3-2",
+  "conceptId": "drawing-and-labelling-a-virus",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2025 OL Q16(d)(i)",
+  "questionText": "Draw a diagram of a virus and label the following parts: Protein coat Nucleic acid.",
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 + 2(3)"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "criterion",
+    "verbatim": "Drawing",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "criterion",
+    "verbatim": "Labels (protein coat and DNA) correctly positioned",
+    "marks": 6
+   }
+  ],
+  "notes": "The scheme pays the drawing three and the two labels 2(3) — three marks each. It names the second label \"DNA\" where the paper asks for \"Nucleic acid\". The stem is dropped: the paper reader hands Q16(d) the bacterial shapes wording, which belongs to part (v)."
+ },
+ {
+  "id": "bio-2025-ol-q17-a-i",
+  "topicId": "bio-2-6",
+  "conceptId": "heart-parts-on-the-diagram",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2025 OL Q17(a)(i)",
+  "questionText": "In your answerbook, match each of the parts labelled A, B and C with the following terms: septum, vena cava, pulmonary artery.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: Vena cava",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: Pulmonary artery",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C: Septum",
+    "marks": 3
+   }
+  ],
+  "notes": "The stem is dropped: the paper reader hands Q17(a) the diagram's own labels, \"Right ventricle Y X\".",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Vena cava",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Pulmonary artery",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Septum",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2025-ol-q17-a-iv",
+  "topicId": "bio-2-6",
+  "conceptId": "telling-an-artery-from-a-vein",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2025 OL Q17(a)(iv)",
+  "questionText": "The image shows a transverse section of a vein and an artery. Which do you think is the artery, X or Y? Justify your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "X",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Thicker wall or smaller lumen",
+    "marks": 3
+   }
+  ],
+  "notes": "The scheme wants the letter and the reason separately; either feature of the wall alone earns the second three marks."
+ },
+ {
+  "id": "bio-2025-ol-q17-c-i",
+  "topicId": "bio-2-6",
+  "conceptId": "breathing-system-parts-on-the-diagram",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2025 OL Q17(c)(i)",
+  "questionText": "In your answer book, match each of the parts labelled A, B and C with the following terms: trachea, bronchus, intercostal muscle.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: Intercostal muscle",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: Bronchus",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C: Trachea",
+    "marks": 3
+   }
+  ],
+  "notes": "The stem is dropped: the paper reader hands Q17(c) the wording of part (ii) together with the diagram labels Capillary, Alveolus, Rib and Diaphragm.",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Intercostal muscle",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Bronchus",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Trachea",
+    "askedInThisQuestion": true
+   }
+  ]
+ },
+ {
+  "id": "bio-2025-ol-q17-c-iii",
+  "topicId": "bio-2-6",
+  "conceptId": "how-the-diaphragm-moves-during-inhalation",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2025 OL Q17(c)(iii)",
+  "questionText": "Which one of the following statements (X or Y) describes how the diaphragm moves during inhalation? X: Contracts and moves down. Y: Relaxes and moves up.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "X: Contracts and moves down.",
+    "marks": 3
+   }
+  ]
+ },
+ {
+  "id": "bio-2025-ol-q17-c-iv",
+  "topicId": "bio-2-6",
+  "conceptId": "how-the-ribcage-moves-during-inhalation",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "biology",
+  "section": "B",
+  "questionRef": "2025 OL Q17(c)(iv)",
+  "questionText": "Which one of the following statements (X or Y) describes how the ribcage moves during inhalation? X: Moves downwards and inwards. Y: Moves upwards and outwards.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Y: Moves upwards and outwards.",
+    "marks": 3
+   }
+  ]
  }
 ]

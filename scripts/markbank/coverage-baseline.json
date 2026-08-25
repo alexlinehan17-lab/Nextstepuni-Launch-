@@ -15,19 +15,19 @@
   "refsHash": "967a2d72ff0648b1"
  },
  "biology": {
-  "cards": 1229,
-  "contentHash": "89b8e8e6d2fe7541",
-  "coveragePct": 85.9,
-  "covered": 1405,
+  "cards": 1346,
+  "contentHash": "31a2c4ff72ff1f5c",
+  "coveragePct": 93.0,
+  "covered": 1522,
   "excluded": 0,
   "leaves": 1636,
-  "open": 231,
+  "open": 114,
   "orphans": 0,
   "papers": {
    "count": 20,
    "hash": "55091726a504e556"
   },
-  "refsHash": "9024533f07275350"
+  "refsHash": "c325b513254a7ed3"
  },
  "business": {
   "cards": 606,
@@ -106,7 +106,7 @@
  },
  "maths": {
   "cards": 788,
-  "contentHash": "5fc58378675f992a",
+  "contentHash": "5e7c641595f51e7d",
   "coveragePct": 80.5,
   "covered": 796,
   "excluded": 0,
