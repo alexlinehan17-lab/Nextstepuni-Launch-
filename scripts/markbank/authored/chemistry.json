@@ -22325,7 +22325,15 @@
     "openList": true
    }
   ],
-  "notes": "The scheme pools the marks for (i)-(iv) as a single ordered split (9 + 9 + 2 + 2 + 2 = 24), so all four sub-parts must be carded together with marks: null."
+  "notes": "The scheme pools the marks for (i)-(iv) as a single ordered split (9 + 9 + 2 + 2 + 2 = 24), so all four sub-parts must be carded together with marks: null.",
+  "labelKey": [
+   {
+    "letter": "P",
+    "meaning": "volumetric flask",
+    "askedInThisQuestion": true
+   }
+  ],
+  "figureKey": "chemistry-2025-OL-paper-p03-i0"
  },
  {
   "id": "chem-2025-ol-q2-c",

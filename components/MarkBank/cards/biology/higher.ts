@@ -5179,6 +5179,33 @@ export const CARDS: SecCard[] = [
     ],
   } as SecCard,
   {
+    ...base, kind: "diagram",
+    year: 2022, level: "higher",
+    paperFileid: "LC025ALP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Higher Level — © State Examinations Commission.",
+    id: "bio-2022-hl-q16-b-iii", topicId: "bio-2-4", conceptId: "optic-nerve-damage-blindness",
+    section: "C", questionRef: "2022 HL Q16(b)(iii)",
+    stem: "Part R is the optic nerve, named in part (i).",
+    questionText: "Explain why damage to the part labelled R could result in blindness.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-blindness", kind: "point", verbatim: "No impulse (or message) will be sent to the brain (to be interpreted)", marks: 3 },
+    ],
+    figure: {
+          "candId": "biology-2022-HL-paper2-p07-i0",
+          "src": "/exam-figures/biology/markbank/biology-2022-HL-paper2-p07-i0.png",
+          "srcHash": "e1afb37bce42730f0d4435a2c79d147e",
+          "alt": "A labelled sagittal section of the human eye, drawn in greys and facing right. Printed leader-arrow labels mark \"Retina\" (the inner lining on the left), \"Blind spot\" (where the thick stalk meets the eyeball at the lower left), \"Iris\" (the dark wedge at the front, upper right) and \"Pupil\" (the front opening, arrow coming up from the lower right). A bold \"P\" is printed inside the white oval body sitting immediately behind the pupil; a bold \"Q\" at the far right has a horizontal arrow pointing to the frontmost curved layer of the eye; a bold \"R\" labels the thick stalk leaving the back of the eye at the lower left. The header \"(b) The diagram shows the internal structure of the human eye.\" and the question \"(i) Name the parts of the eye labelled P, Q and R.\" are both fully within the crop and nothing is cut off.",
+          "attribution": "SEC Leaving Certificate Biology 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "P",
+                "Q",
+                "R"
+          ]
+    },
+    labelKey: [{"letter":"P","meaning":"Lens","askedInThisQuestion":false},{"letter":"Q","meaning":"Cornea","askedInThisQuestion":false},{"letter":"R","meaning":"Optic nerve","askedInThisQuestion":true}],
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2022, level: "higher",
     paperFileid: "LC025ALP040EV",
@@ -7959,33 +7986,6 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: "LC025ALP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Higher Level — © State Examinations Commission.",
-    id: "bio-2022-hl-q16-b-iii-fig", topicId: "bio-2-4", conceptId: "optic-nerve-function",
-    section: "C", questionRef: "2022 HL Q16(b)(iii)",
-    stem: "The diagram shows the internal structure of the human eye.",
-    questionText: "Explain why damage to the part labelled R could result in blindness.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 3,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "No impulse (or message) will be sent to the brain (to be interpreted)", marks: 3 },
-    ],
-    figure: {
-          "candId": "biology-2022-HL-paper2-p07-i0",
-          "src": "/exam-figures/biology/markbank/biology-2022-HL-paper2-p07-i0.png",
-          "srcHash": "e1afb37bce42730f0d4435a2c79d147e",
-          "alt": "A labelled sagittal section of the human eye, drawn in greys and facing right. Printed leader-arrow labels mark \"Retina\" (the inner lining on the left), \"Blind spot\" (where the thick stalk meets the eyeball at the lower left), \"Iris\" (the dark wedge at the front, upper right) and \"Pupil\" (the front opening, arrow coming up from the lower right). A bold \"P\" is printed inside the white oval body sitting immediately behind the pupil; a bold \"Q\" at the far right has a horizontal arrow pointing to the frontmost curved layer of the eye; a bold \"R\" labels the thick stalk leaving the back of the eye at the lower left. The header \"(b) The diagram shows the internal structure of the human eye.\" and the question \"(i) Name the parts of the eye labelled P, Q and R.\" are both fully within the crop and nothing is cut off.",
-          "attribution": "SEC Leaving Certificate Biology 2022 Higher Level — © State Examinations Commission",
-          "lettersVisible": [
-                "P",
-                "Q",
-                "R"
-          ]
-    },
-    labelKey: [{"letter":"P","meaning":"Lens","askedInThisQuestion":false},{"letter":"Q","meaning":"Cornea","askedInThisQuestion":false},{"letter":"R","meaning":"Optic nerve","askedInThisQuestion":true}],
-  } as SecCard,
-  {
-    ...base, kind: "diagram",
-    year: 2022, level: "higher",
-    paperFileid: "LC025ALP040EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2022 Higher Level — © State Examinations Commission.",
     id: "bio-2022-hl-q17-d-ii-fig", topicId: "bio-2-6", conceptId: "cardiac-cycle",
     section: "C", questionRef: "2022 HL Q17(d)(ii)",
     stem: "Study these diagrams carefully and answer the questions that follow.",
@@ -10335,6 +10335,34 @@ export const CARDS: SecCard[] = [
     ],
   } as SecCard,
   {
+    ...base, kind: "diagram",
+    year: 2024, level: "higher",
+    paperFileid: "LC025ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Higher Level — © State Examinations Commission.",
+    id: "bio-2024-hl-q11-b-i", topicId: "bio-2-5", conceptId: "naming-the-parts-of-a-wind-pollinated-flower",
+    section: "A", questionRef: "2024 HL Q11(b)(i)",
+    questionText: "Name the parts of the flower labelled A, B and C.",
+    tariffModel: {"kind":"fixed","notation":"3(1)"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Anther", marks: 1 },
+    { id: "r-2", kind: "point", verbatim: "Filament", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "Stigma", marks: 1 },
+    ],
+    figure: {
+          "candId": "biology-2024-hl-040-p002-i0",
+          "src": "/exam-figures/biology/markbank/biology-2024-hl-040-p002-i0.png",
+          "srcHash": "2ecfdc25097f525d460a20dde9039a33",
+          "alt": "Shaded botanical drawing of a wind-pollinated flower: exposed elongated anthers hanging on long slender stalks, two large feathery brush-like stigmas, and a swollen ovary at the base. A arrows down to one of the elongated anthers at the upper left, B up to the thin stalk carrying it, C down to one of the feathery brush-like structures. A, B and C all visible and intact; no question body text in the crop.",
+          "attribution": "SEC Leaving Certificate Biology 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Anther","askedInThisQuestion":true},{"letter":"B","meaning":"Filament","askedInThisQuestion":true},{"letter":"C","meaning":"Stigma","askedInThisQuestion":true}],
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2024, level: "higher",
     paperFileid: "LC025ALP038EV",
@@ -10346,6 +10374,32 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Large (or long) stamen or large (or feathery) stigmas or stamen exposed or stigma exposed or small or light pollen", marks: 3 },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2024, level: "higher",
+    paperFileid: "LC025ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2024 Higher Level — © State Examinations Commission.",
+    id: "bio-2024-hl-q11-b-iii", topicId: "bio-2-5", conceptId: "where-pollen-is-formed",
+    section: "A", questionRef: "2024 HL Q11(b)(iii)",
+    questionText: "In which of the labelled parts is pollen formed?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A or anther", marks: 3 },
+    ],
+    figure: {
+          "candId": "biology-2024-hl-040-p002-i0",
+          "src": "/exam-figures/biology/markbank/biology-2024-hl-040-p002-i0.png",
+          "srcHash": "2ecfdc25097f525d460a20dde9039a33",
+          "alt": "Shaded botanical drawing of a wind-pollinated flower: exposed elongated anthers hanging on long slender stalks, two large feathery brush-like stigmas, and a swollen ovary at the base. A arrows down to one of the elongated anthers at the upper left, B up to the thin stalk carrying it, C down to one of the feathery brush-like structures. A, B and C all visible and intact; no question body text in the crop.",
+          "attribution": "SEC Leaving Certificate Biology 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Anther","askedInThisQuestion":true},{"letter":"B","meaning":"Filament","askedInThisQuestion":false},{"letter":"C","meaning":"Stigma","askedInThisQuestion":false}],
   } as SecCard,
   {
     ...base, kind: "question",

@@ -15363,7 +15363,30 @@
     "marks": null
    }
   ],
-  "notes": "SKIPPED: (b)(i) label matching; (b)(vi) 'these impulses' is defined only on the paper; (b)(vii) is criteria, not marking points. totalMarks 18 is the scheme's own 2(7)+8(2) table value for the 4 correct responses this card carries. Letter decode moved to the stem so it is visible before answering."
+  "notes": "SKIPPED: (b)(i) label matching; (b)(vi) 'these impulses' is defined only on the paper; (b)(vii) is criteria, not marking points. totalMarks 18 is the scheme's own 2(7)+8(2) table value for the 4 correct responses this card carries. Letter decode moved to the stem so it is visible before answering.",
+  "labelKey": [
+   {
+    "letter": "X",
+    "meaning": "Iris",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "Y",
+    "meaning": "Cornea",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "Z",
+    "meaning": "Lens",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "d",
+    "meaning": "the diameter of the pupil",
+    "askedInThisQuestion": false
+   }
+  ],
+  "figureKey": "biology-2023-OL-paper2-p07-i1"
  },
  {
   "id": "bio-2023-ol-q16c-vi",
@@ -18269,7 +18292,25 @@
     "marks": 3
    }
   ],
-  "notes": "Q16(b)(iv) skipped — it asks for two sketched diagrams of the pupil in bright and dim light."
+  "notes": "Q16(b)(iv) skipped — it asks for two sketched diagrams of the pupil in bright and dim light.",
+  "labelKey": [
+   {
+    "letter": "P",
+    "meaning": "Lens",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "Q",
+    "meaning": "Cornea",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "R",
+    "meaning": "Optic nerve",
+    "askedInThisQuestion": true
+   }
+  ],
+  "figureKey": "biology-2022-HL-paper2-p07-i0"
  },
  {
   "id": "bio-2022-hl-q16-b-v",
@@ -21668,7 +21709,30 @@
     "marks": null
    }
   ],
-  "notes": "Q16(a)(i) skipped: parts A–D are labels on the diagram. C is resolved in the stem from the scheme's own (i) answer."
+  "notes": "Q16(a)(i) skipped: parts A–D are labels on the diagram. C is resolved in the stem from the scheme's own (i) answer.",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Penis",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Sperm duct (vas deferens)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Testes",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "D",
+    "meaning": "Urethra",
+    "askedInThisQuestion": false
+   }
+  ],
+  "figureKey": "biology-2022-OL-paper2-p07-i0"
  },
  {
   "id": "bio-2022-ol-q16-a-iii",
@@ -28183,7 +28247,25 @@
      ]
     }
    }
-  ]
+  ],
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Root hair",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Xylem",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Phloem",
+    "askedInThisQuestion": false
+   }
+  ],
+  "figureKey": "biology-2021-OL-paper2-p06-i0"
  },
  {
   "id": "bio-2021-ol-q15-b-vi",
@@ -28206,7 +28288,25 @@
     "verbatim": "Transpiration or root pressure",
     "marks": 3
    }
-  ]
+  ],
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Root hair",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Xylem",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Phloem",
+    "askedInThisQuestion": false
+   }
+  ],
+  "figureKey": "biology-2021-OL-paper2-p06-i0"
  },
  {
   "id": "bio-2021-ol-q15-b-viii",
@@ -28820,7 +28920,25 @@
     "marks": 3
    }
   ],
-  "notes": "Q16(d)(ii) ('Name the parts of the human urinary system labelled A, B, C') is skipped as a pure diagram-label question. Its scheme answer, 'C: Bladder', supplies this card's stem — the stem is scheme-derived, not printed on the question paper."
+  "notes": "Q16(d)(ii) ('Name the parts of the human urinary system labelled A, B, C') is skipped as a pure diagram-label question. Its scheme answer, 'C: Bladder', supplies this card's stem — the stem is scheme-derived, not printed on the question paper.",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Kidney",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Ureter",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Bladder",
+    "askedInThisQuestion": true
+   }
+  ],
+  "figureKey": "biology-2021-OL-paper2-p08-i0"
  },
  {
   "id": "bio-2021-ol-q16d-v",
@@ -39819,7 +39937,25 @@
     "marks": null
    }
   ],
-  "notes": "The paper prints the part as \"Name the parts A, B, C.\" beside a diagram of the human breathing system; the scheme prints it as \"Name the parts A, B, C in the diagram of the breathing system below.\" Muscles, trachea and the small air-sacs are word-labelled on the same diagram, so the three letters are the ones left to name."
+  "notes": "The paper prints the part as \"Name the parts A, B, C.\" beside a diagram of the human breathing system; the scheme prints it as \"Name the parts A, B, C in the diagram of the breathing system below.\" Muscles, trachea and the small air-sacs are word-labelled on the same diagram, so the three letters are the ones left to name.",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Larynx (voice box)",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Bronchus",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Bronchiole",
+    "askedInThisQuestion": true
+   }
+  ],
+  "figureKey": "biology-2022-ol-040-p004-i0"
  },
  {
   "id": "bio-2022-ol-q14-b-iv",
@@ -39906,7 +40042,25 @@
     "marks": null
    }
   ],
-  "notes": "The letters are printed on the paper's section through a plant stem. The deck carries no crop of that diagram, so the letters come from the scheme. Q15(b) carries no per-part mark: its table pays 5, 10, 15, 17, 19, 21, 23, 25, 27 for one to nine correct responses."
+  "notes": "The letters are printed on the paper's section through a plant stem. The deck carries no crop of that diagram, so the letters come from the scheme. Q15(b) carries no per-part mark: its table pays 5, 10, 15, 17, 19, 21, 23, 25, 27 for one to nine correct responses.",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Dermal",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Ground",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Vascular bundle",
+    "askedInThisQuestion": false
+   }
+  ],
+  "figureKey": "biology-2022-ol-040-p006-i1"
  },
  {
   "id": "bio-2022-ol-q15-b-iii",
@@ -39931,7 +40085,25 @@
     "marks": null
    }
   ],
-  "notes": "The letters are printed on the paper's section through a plant stem. The deck carries no crop of that diagram, so the letters come from the scheme. Q15(b) carries no per-part mark: its table pays 5, 10, 15, 17, 19, 21, 23, 25, 27 for one to nine correct responses."
+  "notes": "The letters are printed on the paper's section through a plant stem. The deck carries no crop of that diagram, so the letters come from the scheme. Q15(b) carries no per-part mark: its table pays 5, 10, 15, 17, 19, 21, 23, 25, 27 for one to nine correct responses.",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Dermal",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "B",
+    "meaning": "Ground",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "C",
+    "meaning": "Vascular bundle",
+    "askedInThisQuestion": true
+   }
+  ],
+  "figureKey": "biology-2022-ol-040-p006-i1"
  },
  {
   "id": "bio-2022-ol-q15-b-vii",
@@ -41428,7 +41600,8 @@
     "meaning": "Stigma",
     "askedInThisQuestion": true
    }
-  ]
+  ],
+  "figureKey": "biology-2024-hl-040-p002-i0"
  },
  {
   "id": "bio-2024-hl-q11-b-ii",
@@ -41485,14 +41658,15 @@
    {
     "letter": "B",
     "meaning": "Filament",
-    "askedInThisQuestion": false
+    "askedInThisQuestion": true
    },
    {
     "letter": "C",
     "meaning": "Stigma",
-    "askedInThisQuestion": false
+    "askedInThisQuestion": true
    }
-  ]
+  ],
+  "figureKey": "biology-2024-hl-040-p002-i0"
  },
  {
   "id": "bio-2024-hl-q12-c-vii",
@@ -42760,7 +42934,25 @@
     "verbatim": "3. Contractile vacuole: C",
     "marks": 3
    }
-  ]
+  ],
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Nucleus",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Pseudopod",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Contractile vacuole",
+    "askedInThisQuestion": true
+   }
+  ],
+  "figureKey": "biology-2024-ol-040-p005-i0"
  },
  {
   "id": "bio-2024-ol-q15-b-v",
@@ -42820,7 +43012,25 @@
     "marks": 3
    }
   ],
-  "stem": "Auditory nerve Throat (pharynx) Middle ear Eustachian tube"
+  "stem": "Auditory nerve Throat (pharynx) Middle ear Eustachian tube",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "Eardrum",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "Ossicle",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "C",
+    "meaning": "Cochlea",
+    "askedInThisQuestion": true
+   }
+  ],
+  "figureKey": "biology-2024-ol-040-p009-i0"
  },
  {
   "id": "bio-2025-hl-q13-b-iii",
@@ -43147,7 +43357,20 @@
    }
   ],
   "stem": "The images below show and describe the stages of mitosis in a cell. These stages are not in the correct order. X The cell is beginning to divide in two Chromosomes line up on the equator of the cell Chromosomes become visible in the cell Chromosomes are being pulled to the poles of the cell",
-  "notes": "Q7 (a)–(e) is marked on one ladder — 6(3) + 2, three marks a response up to six and capped at 20 — so no part of it carries a mark of its own. Image A is the one where the cell is pinched at its waist and X points to the lower of its two new nuclei."
+  "notes": "Q7 (a)–(e) is marked on one ladder — 6(3) + 2, three marks a response up to six and capped at 20 — so no part of it carries a mark of its own. Image A is the one where the cell is pinched at its waist and X points to the lower of its two new nuclei.",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "the image labelled A, which the scheme places last in the correct order of the stages of mitosis (C, B, D, A)",
+    "askedInThisQuestion": false
+   },
+   {
+    "letter": "X",
+    "meaning": "Nucleus",
+    "askedInThisQuestion": true
+   }
+  ],
+  "figureKey": "biology-2025-ol-038-p008-i0"
  },
  {
   "id": "bio-2025-ol-q9-b-vii",
@@ -43606,7 +43829,8 @@
     "meaning": "Testis",
     "askedInThisQuestion": true
    }
-  ]
+  ],
+  "figureKey": "biology-2025-ol-040-p006-i1"
  },
  {
   "id": "bio-2025-ol-q15-c-iv",
@@ -43760,7 +43984,8 @@
     "meaning": "Septum",
     "askedInThisQuestion": true
    }
-  ]
+  ],
+  "figureKey": "biology-2025-ol-040-p009-i0"
  },
  {
   "id": "bio-2025-ol-q17-a-iv",
@@ -43843,7 +44068,8 @@
     "meaning": "Trachea",
     "askedInThisQuestion": true
    }
-  ]
+  ],
+  "figureKey": "biology-2025-ol-040-p010-i0"
  },
  {
   "id": "bio-2025-ol-q17-c-iii",

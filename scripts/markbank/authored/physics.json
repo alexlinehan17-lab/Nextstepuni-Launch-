@@ -3025,7 +3025,20 @@
     "marks": 4
    }
   ],
-  "notes": "Answerable without the plug diagram because the question itself gives the wire's colour. Q9(x) ('Name the wire labelled Q.') is SKIPPED — it depends entirely on reading the diagram."
+  "notes": "Answerable without the plug diagram because the question itself gives the wire's colour. Q9(x) ('Name the wire labelled Q.') is SKIPPED — it depends entirely on reading the diagram.",
+  "labelKey": [
+   {
+    "letter": "P",
+    "meaning": "safety/ earth (the equipment)",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "Q",
+    "meaning": "live",
+    "askedInThisQuestion": false
+   }
+  ],
+  "figureKey": "physics-2021-ol-paper-p008-i1"
  },
  {
   "id": "phys-2021-ol-q10-ii",

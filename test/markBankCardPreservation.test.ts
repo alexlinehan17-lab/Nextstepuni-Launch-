@@ -33,10 +33,10 @@ import { CARDS as CONS_HIGHER } from '../components/MarkBank/cards/construction-
 import { CARDS as CONS_ORDINARY } from '../components/MarkBank/cards/construction-studies/ordinary';
 
 const decks = [
-  ['biology:higher', BIO_HIGHER, 671, '3b731509d1359cbc9192d8a53333ffef31f9f321eea5a21c42825b074fd483e1'],
-  ['biology:ordinary', BIO_ORDINARY, 677, '21bb5de605127ad3f512ef155d0c87e6a70cfd4ac43ca5afc2d7a9e3c0cff70b'],
+  ['biology:higher', BIO_HIGHER, 673, '45f278ef15f8d35a8a4393a0e8d01d7e5484e73a881844880dc090daeb9ce836'],
+  ['biology:ordinary', BIO_ORDINARY, 686, '5792567a2b95584be782d44956c9fe7961eeec2e061683c83f32096fdf4de55e'],
   ['chemistry:higher', CHEM_HIGHER, 443, '422051ce18d791e8cc561982c02cab9b6997556388dfa41a17f3635691ac5dbd'],
-  ['chemistry:ordinary', CHEM_ORDINARY, 336, '502fee4823ce54908fc0c8c727c93daebfb9f533274009f018e1a9f5c142ee41'],
+  ['chemistry:ordinary', CHEM_ORDINARY, 336, '9763187e075f9ef4347a0c4a286ab9f6bb056ca870f246d4b7ab8b759eb24ba2'],
   /* 2026-08-23: physics drops from 487/477 to 486/475. Three cards -- one
    * Higher (2021 q13a(v)) and two Ordinary (2022 q3(ii) and q3(viii)) -- quote
    * a stacked fraction the scheme's font renders as a diagonal slash whose
@@ -53,7 +53,7 @@ const decks = [
    * its question asks for, q10-iv the closed-pipe harmonic instead of another
    * part's answer. Nothing removed. */
   ['physics:higher', PHYS_HIGHER, 569, '463dd2324556ac2c286ed7c722602a9bf5e4f83a9ee43fdd03bcf8b13d97e6fd'],
-  ['physics:ordinary', PHYS_ORDINARY, 563, '2514d1a5a254a7865761961db5931a395a89fe458d341be1fc54f5856d33e7f4'],
+  ['physics:ordinary', PHYS_ORDINARY, 563, '67dee7bc4ede4f829b03a569374b5cf94de35dd92bed3af580263667cf2a5f40'],
   ['agricultural-science:higher', AGSCI_HIGHER, 438, '31e25662626e35ca1db55e96e1cdfe0492648666c6cd35365f2c1e6d92c35f6a'],
   ['agricultural-science:ordinary', AGSCI_ORDINARY, 431, '2dbd6e7635bb73941a16773ce9d3c654741a863280c002f783fc45cd0d7e8dbd'],
   ['business:higher', BUSINESS_HIGHER, 272, 'a61655818cee2ce61307eb08fe6dad282193791674b4e5e8a893e203b64af976'],
@@ -77,7 +77,7 @@ const decks = [
    * question texts previously collided as duplicates are disambiguated by
    * their stems and now ship. Nothing was removed; all prior ids remain. */
   ['maths:higher', MATHS_HIGHER, 390, '23beae5a41188a29cd14fad10d9051270d53455c9df02f6e225d57fd87e2d6e0'],
-  ['maths:ordinary', MATHS_ORDINARY, 398, '132d41a755698eb9fade86a22efad0cf1425d6d328938da0c8ace53eef6d8600'],
+  ['maths:ordinary', MATHS_ORDINARY, 400, 'd3b547c999646ea314ffaa9e5090df989d0e0dba10203f92d0937bd4a2f54031'],
   ['construction-studies:higher', CONS_HIGHER, 255, 'b74a39fd589f1082d6378190aee778d528eff0968d7af0ee9144525f2e40d57b'],
   ['construction-studies:ordinary', CONS_ORDINARY, 250, 'f56985e32cc1f02a2e2f7a7eb300a44646b75cf3604a12b5a478bde2a520d2da'],
 ] as const;
@@ -94,6 +94,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7142);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7155);
   });
 });

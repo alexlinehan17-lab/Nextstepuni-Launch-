@@ -2612,6 +2612,35 @@ export const CARDS: SecCard[] = [
     ],
   } as SecCard,
   {
+    ...base, kind: "diagram",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC022GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2025 Ordinary Level — © State Examinations Commission.",
+    id: "chem-2025-ol-q2-b", topicId: "chem-4-1", conceptId: "titration-apparatus-and-burette-technique",
+    section: "A", questionRef: "2025 OL Q2(b)",
+    stem: "A student used a standard solution of sodium carbonate (Na2CO3) to find the concentration of a solution of hydrochloric acid (HCl) by titration. The sodium carbonate solution was supplied in the piece of apparatus labelled P. Some of this solution was placed in a clean, dry beaker. 25.0 cm3 portions were measured using another piece of apparatus and then transferred to a conical flask. The solution was titrated against HCl, which was added from a burette.",
+    questionText: "(i) Identify the piece of apparatus labelled P. (ii) Name a suitable piece of apparatus that can be used to accurately measure out a 25.0 cm3 portion of the sodium carbonate solution. (iii) Describe how the burette was rinsed before use. (iv) State one precaution that could be taken to ensure accuracy when taking a burette reading.",
+    tariffModel: {"kind":"orderedSplit","notation":"9 + 9 + 2 + 2 + 2"}, totalMarks: 24,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "volumetric flask", marks: null, contextNote: "P is the vessel the standard solution was supplied in — identifiable from the stem without the diagram." },
+    { id: "r-2", kind: "alt", verbatim: "pipette", marks: null, accepts: ["burette"] },
+    { id: "r-3", kind: "alt", verbatim: "deionised water", marks: null, accepts: ["distilled water","pure water"], contextNote: "First rinse. The scheme's preamble accepts distilled water or pure water for deionised water." },
+    { id: "r-4", kind: "point", verbatim: "(HCl) solution", marks: null, contextNote: "Second rinse. The scheme prints '[-1 if reversed]' — one mark is lost if the two rinses are given in the wrong order. The bracketed word was not required in 2025." },
+    { id: "r-5", kind: "alt", verbatim: "read from eye level", marks: null, accepts: ["meniscus on mark","burette clamped vertically"], openList: true },
+    ],
+    figure: {
+          "candId": "chemistry-2025-OL-paper-p03-i0",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2025-OL-paper-p03-i0.png",
+          "srcHash": "228f6feec8c9f9c553eef4dc440378a1",
+          "alt": "On the right, a line drawing of a volumetric flask: a pear-shaped bulb with a long narrow neck, a single graduation ring part-way up the neck and a ground-glass stopper in the top. \"250 cm3\" is printed inside the bulb and a bold \"P\" sits directly beneath the flask. The left two-thirds of the crop is the printed stem of Q2 (a titration of Na2CO3 against HCl) with parts (a) and (b)(i)–(iv).",
+          "attribution": "SEC Leaving Certificate Chemistry 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "P"
+          ]
+    },
+    labelKey: [{"letter":"P","meaning":"volumetric flask","askedInThisQuestion":true}],
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2025, level: "ordinary",
     paperFileid: "LC022GLP000EV",
@@ -2990,35 +3019,6 @@ export const CARDS: SecCard[] = [
           ]
     },
     labelKey: [{"letter":"NaOH","meaning":"the warning pictogram found on containers of sodium hydroxide (NaOH)","askedInThisQuestion":true},{"letter":"Ethanol","meaning":"the warning pictogram found on containers of ethanol","askedInThisQuestion":true}],
-  } as SecCard,
-  {
-    ...base, kind: "diagram",
-    year: 2025, level: "ordinary",
-    paperFileid: "LC022GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2025 Ordinary Level — © State Examinations Commission.",
-    id: "chem-2025-ol-q2-b-fig", topicId: "chem-4-1", conceptId: "titration-apparatus-and-burette-technique",
-    section: "A", questionRef: "2025 OL Q2(b)",
-    stem: "A student used a standard solution of sodium carbonate (Na2CO3) to find the concentration of a solution of hydrochloric acid (HCl) by titration. The sodium carbonate solution was supplied in the piece of apparatus labelled P. Some of this solution was placed in a clean, dry beaker. 25.0 cm3 portions were measured using another piece of apparatus and then transferred to a conical flask. The solution was titrated against HCl, which was added from a burette. A number of titrations were carried out.",
-    questionText: "(i) Identify the piece of apparatus labelled P. (ii) Name a suitable piece of apparatus that can be used to accurately measure out a 25.0 cm3 portion of the sodium carbonate solution. (iii) Describe how the burette was rinsed before use. (iv) State one precaution that could be taken to ensure accuracy when taking a burette reading.",
-    tariffModel: {"kind":"orderedSplit","notation":"9 + 9 + 2 + 2 + 2"}, totalMarks: 24,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "P — volumetric flask", marks: null },
-    { id: "r-2", kind: "alt", verbatim: "pipette", marks: null, accepts: ["burette"] },
-    { id: "r-3", kind: "alt", verbatim: "deionised water", marks: null, accepts: ["distilled water","pure water"], contextNote: "First rinse. The scheme's preamble accepts distilled water or pure water for deionised water." },
-    { id: "r-4", kind: "point", verbatim: "(HCl) solution", marks: null, contextNote: "Second rinse. The scheme prints '[-1 if reversed]' — one mark is lost if the two rinses are given in the wrong order. The bracketed word was not required in 2025." },
-    { id: "r-5", kind: "alt", verbatim: "read from eye level", marks: null, accepts: ["meniscus on mark","burette clamped vertically"] },
-    ],
-    figure: {
-          "candId": "chemistry-2025-OL-paper-p03-i0",
-          "src": "/exam-figures/chemistry/markbank/chemistry-2025-OL-paper-p03-i0.png",
-          "srcHash": "228f6feec8c9f9c553eef4dc440378a1",
-          "alt": "On the right, a line drawing of a volumetric flask: a pear-shaped bulb with a long narrow neck, a single graduation ring part-way up the neck and a ground-glass stopper in the top. \"250 cm3\" is printed inside the bulb and a bold \"P\" sits directly beneath the flask. The left two-thirds of the crop is the printed stem of Q2 (a titration of Na2CO3 against HCl) with parts (a) and (b)(i)–(iv).",
-          "attribution": "SEC Leaving Certificate Chemistry 2025 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": [
-                "P"
-          ]
-    },
-    labelKey: [{"letter":"P","meaning":"volumetric flask","askedInThisQuestion":true}],
   } as SecCard,
   {
     ...base, kind: "diagram",

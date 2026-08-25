@@ -8608,6 +8608,41 @@ export const CARDS: SecCard[] = [
     },
   } as SecCard,
   {
+    ...base, kind: "diagram",
+    year: 2024, level: "ordinary",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2024-ol-p2-q3-b", topicId: "maths-2-2", conceptId: "four-lines-drawn-ordinate-diagram-labelled",
+    section: "B", questionRef: "2024 OL Paper 2 Q3(b)",
+    questionText: "Four lines are drawn on the co-ordinate diagram below, labelled a, b, c and d. Their slopes are given in the table below",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 5, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "maths-2024-ol-p2-q3-b-r1", kind: "anyN", verbatim: "Work of merit, for example, definition of slope One slope correctly identified", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 5, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, definition of slope One slope correctly identified","Two slopes correctly identified"],"perOptionSteps":[4,6]} },
+    ],
+    questionFigure: {
+          "candId": "maths-2024-OL-ask-p2-q3-b",
+          "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q3-b.png",
+          "srcHash": "701c5c76c2e0fcdf619b49265e9b60cc",
+          "alt": "The question as printed on the paper — (b) Four lines are drawn on the co-ordinate diagram below, labelled 𝑎𝑎, 𝑏𝑏, 𝑐𝑐 and 𝑑𝑑. Their slopes are given in the table below. Write 𝑎𝑎, 𝑏𝑏, 𝑐𝑐 and 𝑑𝑑 in the correct place in the table to match each line to its slope.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2024-OL-p2-p009-i0",
+          "src": "/exam-figures/maths/markbank/maths-2024-OL-p2-p009-i0.png",
+          "srcHash": "c206eea8b4eb0063ca33aafad25735d3",
+          "alt": "The co-ordinate diagram from page 9 of examiner-reports/maths/papers/2024-ol-200-paper.pdf, cropped at --top 110 --bottom 336 --left 88 --right 310 --keep-charts. Opened and checked by eye: four straight lines on labelled x- and y-axes, each carrying its own italic letter and all four legible — a (falling steeply left-to-right), b (horizontal), c (gently rising), d (very steeply rising, label below the x-axis). Nothing sliced, and the slope table and all question prose sit outside the crop. Written to exam-papers/maths/figures/2024-ol/. NOTE ON THE NAME: the <booklet-or-paper> slot is 'p2', not 'paper', on purpose — every existing maths-<year>-<LEVEL>-paper-pNNN-iK key in components/MarkBank/figures.json is a MARKING-SCHEME crop (their alt text all reads 'The marking scheme's printed worked solution'), so 'paper' is already that namespace and reusing it would mean one file name for two different crops, exactly what crop-question-art.py's docstring warns about. md5 c206eea8b4eb0063ca33aafad25735d3, unique against every md5 already in the manifest, so it will not trip build-deck's one-crop-one-card seenHash rule.",
+          "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "a",
+                "b",
+                "c",
+                "d"
+          ]
+    },
+    labelKey: [{"letter":"a","meaning":"Slope −1","askedInThisQuestion":true},{"letter":"b","meaning":"Slope 0","askedInThisQuestion":true},{"letter":"c","meaning":"Slope 1/2","askedInThisQuestion":true},{"letter":"d","meaning":"Slope 3","askedInThisQuestion":true}],
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2024, level: "ordinary",
     paperFileid: null,
@@ -10916,6 +10951,40 @@ export const CARDS: SecCard[] = [
           "solution": true,
           "lettersVisible": []
     },
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2025, level: "ordinary",
+    paperFileid: null,
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "maths-2025-ol-p2-q3-a", topicId: "maths-2-2", conceptId: "diagram-shows-three-circles-labelled",
+    section: "B", questionRef: "2025 OL Paper 2 Q3(a)",
+    questionText: "The diagram below shows three circles, labelled p, q, and r",
+    tariffModel: {"kind":"fixed","notation":"Scale (0, 5, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "maths-2025-ol-p2-q3-a-r1", kind: "anyN", verbatim: "p, q or r", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 10. These are the lines of the scheme's own printed solution, in the order it sets them out.", openList: true, group: {"claimMax":1,"perOption":10,"options":["p, q or r"]} },
+    ],
+    questionFigure: {
+          "candId": "maths-2025-OL-ask-p2-q3-a",
+          "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q3-a.png",
+          "srcHash": "26febc917d819934084027784b879459",
+          "alt": "The question as printed on the paper — (a) The diagram below shows three circles, labelled 𝑝𝑝, 𝑞𝑞, and 𝑟𝑟. Write each of the letters 𝑝𝑝, 𝑞𝑞, and 𝑟𝑟 in the correct place in the table so that each circle matches its equation. 𝑦𝑦 4 3 𝑞𝑞 𝑟𝑟 2 𝑝𝑝 1 𝑥𝑥 -4 -3 -2 -1 ",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
+    },
+    figure: {
+          "candId": "maths-2025-OL-p2-p008-i0",
+          "src": "/exam-figures/maths/markbank/maths-2025-OL-p2-p008-i0.png",
+          "srcHash": "7394ce9be87cc049049e5c19ec5c0f53",
+          "alt": "The co-ordinate diagram from page 8 of examiner-reports/maths/papers/2025-ol-200-paper.pdf, cropped at --top 130 --bottom 372 --left 90 --right 506 --keep-charts. Opened and checked by eye: three circles on a numbered grid with labelled x- and y-axes — a small circle centred on the origin labelled p, a large circle centred on the origin labelled q, and a circle centred right of the origin labelled r. All three letters legible, no circle clipped by the frame, and the equation table and all question prose sit outside the crop. Written to exam-papers/maths/figures/2025-ol/. NOTE ON THE NAME: 'p2' rather than 'paper' in the <booklet-or-paper> slot is not cosmetic here — the key maths-2025-OL-paper-p008-i0 ALREADY EXISTS in components/MarkBank/figures.json and holds a completely different image (the scheme's worked solution for 2025 OL Paper 1 Q2(b), md5 137bf8a6...). Following the template literally would have collided. md5 7394ce9be87cc049049e5c19ec5c0f53, unique against every md5 already in the manifest.",
+          "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "p",
+                "q",
+                "r"
+          ]
+    },
+    labelKey: [{"letter":"p","meaning":"x² + y² = 1","askedInThisQuestion":true},{"letter":"q","meaning":"x² + y² = 9","askedInThisQuestion":true},{"letter":"r","meaning":"(x−6)² + (y−2)² = 4","askedInThisQuestion":true}],
   } as SecCard,
   {
     ...base, kind: "question",

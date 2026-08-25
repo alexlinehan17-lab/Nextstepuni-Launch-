@@ -15,19 +15,19 @@
   "refsHash": "967a2d72ff0648b1"
  },
  "biology": {
-  "cards": 1348,
-  "contentHash": "54e2214f482d452c",
-  "coveragePct": 93.2,
-  "covered": 1524,
+  "cards": 1359,
+  "contentHash": "f24a6944766a455f",
+  "coveragePct": 93.8,
+  "covered": 1535,
   "excluded": 0,
   "leaves": 1636,
-  "open": 112,
+  "open": 101,
   "orphans": 0,
   "papers": {
    "count": 20,
    "hash": "55091726a504e556"
   },
-  "refsHash": "cadbf0fa41393cff"
+  "refsHash": "2b9fe1cf969dd64a"
  },
  "business": {
   "cards": 606,
@@ -46,7 +46,7 @@
  },
  "chemistry": {
   "cards": 779,
-  "contentHash": "3a324ec3991fd0e6",
+  "contentHash": "c858e0dbb86c8df6",
   "coveragePct": 84.1,
   "covered": 961,
   "excluded": 0,
@@ -57,7 +57,7 @@
    "count": 10,
    "hash": "bf2ca1ce05646d41"
   },
-  "refsHash": "c6cd126448ca144c"
+  "refsHash": "b580e07fead6070a"
  },
  "construction-studies": {
   "cards": 505,
@@ -105,23 +105,23 @@
   "refsHash": "7cddab6869c06c08"
  },
  "maths": {
-  "cards": 788,
-  "contentHash": "4700b6e966d12b11",
-  "coveragePct": 80.5,
-  "covered": 796,
+  "cards": 790,
+  "contentHash": "325c025b2e9e905a",
+  "coveragePct": 80.7,
+  "covered": 798,
   "excluded": 0,
   "leaves": 989,
-  "open": 193,
+  "open": 191,
   "orphans": 6,
   "papers": {
    "count": 20,
    "hash": "dd8222a2e1b8d8d6"
   },
-  "refsHash": "8d698fb533d7a9c3"
+  "refsHash": "c3080f9e320c0f6f"
  },
  "physics": {
   "cards": 1132,
-  "contentHash": "42cd3e22ee4d6f1a",
+  "contentHash": "c199922e4c2e2a2e",
   "coveragePct": 95.1,
   "covered": 1118,
   "excluded": 46,
@@ -132,6 +132,6 @@
    "count": 10,
    "hash": "aedd9969b3ce025e"
   },
-  "refsHash": "d5fcc923d714c743"
+  "refsHash": "adf8dd6c8e143930"
  }
 }

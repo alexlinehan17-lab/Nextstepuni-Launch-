@@ -27903,8 +27903,29 @@
   "section": "B",
   "questionRef": "2024 OL Paper 2 Q3(b)",
   "questionText": "Four lines are drawn on the co-ordinate diagram below, labelled a, b, c and d. Their slopes are given in the table below",
-  "figureKey": "maths-2024-OL-paper-p028-i1",
-  "labelKey": [],
+  "figureKey": "maths-2024-OL-p2-p009-i0",
+  "labelKey": [
+   {
+    "letter": "a",
+    "meaning": "Slope −1",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "b",
+    "meaning": "Slope 0",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "c",
+    "meaning": "Slope 1/2",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "d",
+    "meaning": "Slope 3",
+    "askedInThisQuestion": true
+   }
+  ],
   "tariffModel": {
    "kind": "fixed",
    "notation": "Scale (0, 4, 5, 10)",
@@ -35387,8 +35408,24 @@
   "section": "B",
   "questionRef": "2025 OL Paper 2 Q3(a)",
   "questionText": "The diagram below shows three circles, labelled p, q, and r",
-  "figureKey": "maths-2025-OL-paper-p028-i0",
-  "labelKey": [],
+  "figureKey": "maths-2025-OL-p2-p008-i0",
+  "labelKey": [
+   {
+    "letter": "p",
+    "meaning": "x² + y² = 1",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "q",
+    "meaning": "x² + y² = 9",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "r",
+    "meaning": "(x−6)² + (y−2)² = 4",
+    "askedInThisQuestion": true
+   }
+  ],
   "tariffModel": {
    "kind": "fixed",
    "notation": "Scale (0, 5, 10)",

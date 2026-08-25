@@ -32028,5 +32028,126 @@
   "year": 2022,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "physics-2021-ol-paper-p008-i1": {
+  "src": "/exam-figures/physics/markbank/physics-2021-ol-paper-p008-i1.png",
+  "md5": "1c4f670e679ef7e1b25684ff5c84c326",
+  "alt": "Labelled line diagram of the inside of a three-pin mains plug with its cover removed: rounded plug body outline, grey-shaded internal metalwork, two dark round screw holes near the bottom corners. Three insulated wires enter from a sheathed cable at the bottom, pass under a clamp and fan out to screw terminals - one arcs up to the top terminal, one runs left to a terminal on the left-hand side, one runs right to a terminal beside a cartridge fuse held in clips. Six leader lines label the drawing: 'P' to the wire running up to the top terminal, 'Q' to the wire running to the right-hand terminal, 'Neutral' to the wire running to the left terminal, 'Fuse' to the cartridge fuse, 'Cable grip' to the clamp, and 'Cable' to the sheathed cable leaving the bottom. Diagram only - the right-hand column of printed question text on the page has been cropped away.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q9(ix)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "maths-2024-OL-p2-p009-i0": {
+  "src": "/exam-figures/maths/markbank/maths-2024-OL-p2-p009-i0.png",
+  "md5": "c206eea8b4eb0063ca33aafad25735d3",
+  "alt": "The co-ordinate diagram from page 9 of examiner-reports/maths/papers/2024-ol-200-paper.pdf, cropped at --top 110 --bottom 336 --left 88 --right 310 --keep-charts. Opened and checked by eye: four straight lines on labelled x- and y-axes, each carrying its own italic letter and all four legible — a (falling steeply left-to-right), b (horizontal), c (gently rising), d (very steeply rising, label below the x-axis). Nothing sliced, and the slope table and all question prose sit outside the crop. Written to exam-papers/maths/figures/2024-ol/. NOTE ON THE NAME: the <booklet-or-paper> slot is 'p2', not 'paper', on purpose — every existing maths-<year>-<LEVEL>-paper-pNNN-iK key in components/MarkBank/figures.json is a MARKING-SCHEME crop (their alt text all reads 'The marking scheme's printed worked solution'), so 'paper' is already that namespace and reusing it would mean one file name for two different crops, exactly what crop-question-art.py's docstring warns about. md5 c206eea8b4eb0063ca33aafad25735d3, unique against every md5 already in the manifest, so it will not trip build-deck's one-crop-one-card seenHash rule.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Paper 2 Q3(b)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "maths-2025-OL-p2-p008-i0": {
+  "src": "/exam-figures/maths/markbank/maths-2025-OL-p2-p008-i0.png",
+  "md5": "7394ce9be87cc049049e5c19ec5c0f53",
+  "alt": "The co-ordinate diagram from page 8 of examiner-reports/maths/papers/2025-ol-200-paper.pdf, cropped at --top 130 --bottom 372 --left 90 --right 506 --keep-charts. Opened and checked by eye: three circles on a numbered grid with labelled x- and y-axes — a small circle centred on the origin labelled p, a large circle centred on the origin labelled q, and a circle centred right of the origin labelled r. All three letters legible, no circle clipped by the frame, and the equation table and all question prose sit outside the crop. Written to exam-papers/maths/figures/2025-ol/. NOTE ON THE NAME: 'p2' rather than 'paper' in the <booklet-or-paper> slot is not cosmetic here — the key maths-2025-OL-paper-p008-i0 ALREADY EXISTS in components/MarkBank/figures.json and holds a completely different image (the scheme's worked solution for 2025 OL Paper 1 Q2(b), md5 137bf8a6...). Following the template literally would have collided. md5 7394ce9be87cc049049e5c19ec5c0f53, unique against every md5 already in the manifest.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Paper 2 Q3(a)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "biology-2022-ol-040-p004-i0": {
+  "src": "/exam-figures/biology/markbank/biology-2022-ol-040-p004-i0.png",
+  "md5": "b415329b2037c1d6a3de3df7addfe925",
+  "alt": "Line drawing of the human breathing system: larynx and ridged trachea running down the centre, two lungs (the left one shown as stippled tissue, the right one cut away to show the branching airway tree), the ribs and the domed diaphragm. A arrows to the box-shaped structure at the very top of the trachea, B up to the point where the trachea forks, C to two of the fine terminal branches inside the right lung. Printed word labels 'Muscles', 'Trachea' and 'Small air-sacs' are also shown. No question body text in the crop; nothing sliced.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q13(b)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "biology-2024-hl-040-p002-i0": {
+  "src": "/exam-figures/biology/markbank/biology-2024-hl-040-p002-i0.png",
+  "md5": "2ecfdc25097f525d460a20dde9039a33",
+  "alt": "Shaded botanical drawing of a wind-pollinated flower: exposed elongated anthers hanging on long slender stalks, two large feathery brush-like stigmas, and a swollen ovary at the base. A arrows down to one of the elongated anthers at the upper left, B up to the thin stalk carrying it, C down to one of the feathery brush-like structures. A, B and C all visible and intact; no question body text in the crop.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q11(b)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Biology 2024 Higher Level — © State Examinations Commission"
+ },
+ "biology-2024-ol-040-p005-i0": {
+  "src": "/exam-figures/biology/markbank/biology-2024-ol-040-p005-i0.png",
+  "md5": "2ac7d38fada71ec4e58f0f5743513c71",
+  "alt": "Grey diagram of Amoeba, a single-celled organism with several blunt lobed projections around its edge and small food vacuoles scattered through the cytoplasm. A arrows down to the dark round body near the centre, B to the tip of the lobed projection at the top right, C up to the large pale circle at the lower left. A, B and C all visible and intact; the stem line above was excluded from the crop.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q14(c)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "biology-2024-ol-040-p009-i0": {
+  "src": "/exam-figures/biology/markbank/biology-2024-ol-040-p009-i0.png",
+  "md5": "bd9b2c1f8d5a39a372931d97baa14c0a",
+  "alt": "Line drawing of a section through the human ear: pinna and auditory canal at the left, the middle-ear cavity, the spiral structure and nerve at the right, and the tube running down to the throat. A arrows up to the taut membrane at the inner end of the auditory canal, B down to the small chain of bones in the middle-ear cavity, C down to the spiral. Printed word labels 'Auditory nerve', 'Throat (pharynx)', 'Middle ear' and 'Eustachian tube' are also shown. A, B and C all visible and intact; no question body text in the crop.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q17(b)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "biology-2025-ol-038-p008-i0": {
+  "src": "/exam-figures/biology/markbank/biology-2025-ol-038-p008-i0.png",
+  "md5": "8884088f9426a143dd9d8a7fd2e9ddb4",
+  "alt": "The single mitosis image headed A from the plate of four in Question 7: a photomicrograph of one cell pinching into two, each half containing a large dark round body. A bold X on an arrow points to the lower of the two dark round bodies. The image's own printed caption is kept beneath it ('The cell is beginning to divide in two'), and its heading letter A is kept above it, so the ask's phrase 'image A' is unambiguous. Images B, C and D were deliberately left out of the crop. Nothing sliced; no question body text.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q7(b)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "biology-2025-ol-040-p006-i1": {
+  "src": "/exam-figures/biology/markbank/biology-2025-ol-040-p006-i1.png",
+  "md5": "1bf5175db7059eed669663a577ffd10e",
+  "alt": "Front-view diagram of the human male reproductive system: two long looping tubes descending from the top to two oval organs at the bottom left and right, a broad organ sitting just under the bladder at the centre, and the central passage running down through the shaft. A arrows in from the right to the upper part of the right-hand looping tube, B labels the rounded structure directly beneath the bladder, C labels the oval organ at the bottom right. A, B and C all visible and intact; the mark allocation '(24)' that sat below was excluded.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q15(c)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "biology-2025-ol-040-p009-i0": {
+  "src": "/exam-figures/biology/markbank/biology-2025-ol-040-p009-i0.png",
+  "md5": "b577fbf9537f6172d57099ca5ad47cac",
+  "alt": "Sectioned diagram of the human heart with the four chambers open and the great vessels drawn at the top. A arrows to the vessel entering at the upper left, B to the arching vessel just to its right, and a boxed C sits on the thick wall running down the middle between the two ventricles. Printed word labels 'Left atrium' and 'Right ventricle' are also shown. A, B and C all visible and intact; no question body text in the crop.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q17(a)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "biology-2025-ol-040-p010-i0": {
+  "src": "/exam-figures/biology/markbank/biology-2025-ol-040-p010-i0.png",
+  "md5": "724170cbf1df5d858ca70f694ff529e2",
+  "alt": "Diagram of the human breathing system: head and throat at the top, the ringed windpipe running down the centre and forking into the two lungs, the ribs drawn as ovals down each side, the domed diaphragm beneath, and an inset box at the top right enlarging a single air sac and its blood vessel. C arrows to the ringed central tube, B to the branch leaving it on the left, A in from the right to the shaded band lying between two of the ribs. Printed word labels 'Capillary', 'Alveolus', 'Rib' and 'Diaphragm' are also shown. A, B and C all visible and intact; the sliced part (i) text line was removed by raising the top of the crop.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q17(c)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Biology 2025 Ordinary Level — © State Examinations Commission"
  }
 }

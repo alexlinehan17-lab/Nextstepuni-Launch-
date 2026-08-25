@@ -727,6 +727,32 @@ export const CARDS: SecCard[] = [
     ],
   } as SecCard,
   {
+    ...base, kind: "diagram",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC021GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "phys-2021-ol-q9-ix", topicId: "phys-3-3", conceptId: "earth-wire-function",
+    section: "B", questionRef: "2021 OL Q9(ix)",
+    stem: "The parts of an electrical plug.",
+    questionText: "The wire labelled P is yellow and green. What is the function of this wire?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "safety", marks: 4, accepts: ["earth (the equipment)"] },
+    ],
+    figure: {
+          "candId": "physics-2021-ol-paper-p008-i1",
+          "src": "/exam-figures/physics/markbank/physics-2021-ol-paper-p008-i1.png",
+          "srcHash": "1c4f670e679ef7e1b25684ff5c84c326",
+          "alt": "Labelled line diagram of the inside of a three-pin mains plug with its cover removed: rounded plug body outline, grey-shaded internal metalwork, two dark round screw holes near the bottom corners. Three insulated wires enter from a sheathed cable at the bottom, pass under a clamp and fan out to screw terminals - one arcs up to the top terminal, one runs left to a terminal on the left-hand side, one runs right to a terminal beside a cartridge fuse held in clips. Six leader lines label the drawing: 'P' to the wire running up to the top terminal, 'Q' to the wire running to the right-hand terminal, 'Neutral' to the wire running to the left terminal, 'Fuse' to the cartridge fuse, 'Cable grip' to the clamp, and 'Cable' to the sheathed cable leaving the bottom. Diagram only - the right-hand column of printed question text on the page has been cropped away.",
+          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "P",
+                "Q"
+          ]
+    },
+    labelKey: [{"letter":"P","meaning":"safety/ earth (the equipment)","askedInThisQuestion":true},{"letter":"Q","meaning":"live","askedInThisQuestion":false}],
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
     paperFileid: "LC021GLP000EV",
@@ -5754,36 +5780,6 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
-  } as SecCard,
-  {
-    ...base, kind: "diagram",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC021GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Physics 2021 Ordinary Level — © State Examinations Commission.",
-    id: "phys-2021-ol-q9ix-fig", topicId: "phys-3-3", conceptId: "mains-plug-earth-wire",
-    section: "B", questionRef: "2021 OL Q9(ix)",
-    stem: "The diagram on the left shows the parts of an electrical plug.",
-    questionText: "The wire labelled P is yellow and green. What is the function of this wire?",
-    tariffModel: {"kind":"fixed"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "safety/ earth (the equipment)", marks: 4 },
-    ],
-    figure: {
-          "candId": "physics-2021-OL-paper-p08-i1",
-          "src": "/exam-figures/physics/markbank/physics-2021-OL-paper-p08-i1.png",
-          "srcHash": "a2a55b69ae712a5fa98f5ebd449b29d7",
-          "alt": "On the left of the crop is a labelled line diagram of the inside of a three-pin mains plug with its cover removed, drawn as a rounded outline with grey-shaded internal metalwork and two dark round screw holes near the bottom corners. Three insulated wires enter from a sheathed cable at the bottom, pass under a clamp, and fan out to screw terminals: one arcs up to the terminal at the top, one goes left to a terminal on the left-hand side, and one goes right to a terminal beside a cartridge fuse held in clips on the right. Leader lines label: \"P\" to the wire running up to the top terminal, \"Neutral\" to the wire running to the left terminal, \"Fuse\" to the cartridge fuse, \"Q\" to the wire running to the right-hand terminal, \"Cable grip\" to the clamp at the bottom, and \"Cable\" to the sheathed cable leaving the bottom. To the right is the printed text for Q9(ix) and Q9(x) and the mark allocation (8).",
-          "attribution": "SEC Leaving Certificate Physics 2021 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": [
-                "P",
-                "Q",
-                "Fuse",
-                "Neutral",
-                "Cable grip",
-                "Cable"
-          ]
-    },
-    labelKey: [{"letter":"P","meaning":"The earth wire (yellow and green insulation) — runs to the top (earth) pin","askedInThisQuestion":true},{"letter":"Q","meaning":"The live wire (brown insulation) — the wire named in part (x)","askedInThisQuestion":false},{"letter":"Fuse","meaning":"Printed label — the cartridge fuse on the live side of the plug","askedInThisQuestion":false},{"letter":"Neutral","meaning":"Printed label — the neutral wire and its terminal on the left of the plug","askedInThisQuestion":false},{"letter":"Cable grip","meaning":"Printed label — the clamp holding the cable where it enters the plug","askedInThisQuestion":false},{"letter":"Cable","meaning":"Printed label — the three-core flex entering the plug from below","askedInThisQuestion":false}],
   } as SecCard,
   {
     ...base, kind: "diagram",
