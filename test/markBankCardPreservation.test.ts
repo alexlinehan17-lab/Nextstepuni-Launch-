@@ -34,7 +34,7 @@ import { CARDS as CONS_ORDINARY } from '../components/MarkBank/cards/constructio
 
 const decks = [
   ['biology:higher', BIO_HIGHER, 671, '3b731509d1359cbc9192d8a53333ffef31f9f321eea5a21c42825b074fd483e1'],
-  ['biology:ordinary', BIO_ORDINARY, 675, 'f70263df97af2bb5330445412d9be8b58345fa74ee1046506f343530c9c05bda'],
+  ['biology:ordinary', BIO_ORDINARY, 677, '21bb5de605127ad3f512ef155d0c87e6a70cfd4ac43ca5afc2d7a9e3c0cff70b'],
   ['chemistry:higher', CHEM_HIGHER, 443, '422051ce18d791e8cc561982c02cab9b6997556388dfa41a17f3635691ac5dbd'],
   ['chemistry:ordinary', CHEM_ORDINARY, 336, '502fee4823ce54908fc0c8c727c93daebfb9f533274009f018e1a9f5c142ee41'],
   /* 2026-08-23: physics drops from 487/477 to 486/475. Three cards -- one
@@ -94,6 +94,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7140);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7142);
   });
 });
