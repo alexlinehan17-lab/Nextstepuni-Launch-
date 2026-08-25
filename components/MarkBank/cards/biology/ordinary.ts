@@ -6248,6 +6248,35 @@ export const CARDS: SecCard[] = [
     ],
   } as SecCard,
   {
+    ...base, kind: "diagram",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC025GLP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
+    id: "bio-2021-ol-q14-b-iv", topicId: "bio-2-6", conceptId: "functions-of-the-liver",
+    section: "C", questionRef: "2021 OL Q14(b)(iv)",
+    stem: "The part labelled B on the diagram is the liver, named in part (b)(i).",
+    questionText: "Give any two functions of the part labelled B:",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-a", kind: "anyN", verbatim: "Breakdown red blood cells / make bile / store vitamins / store glycogen / produce heat / detoxify (alcohol) / make blood proteins", marks: null, group: {"claimMax":2,"perOption":3,"options":["Breakdown red blood cells","make bile","store vitamins","store glycogen","produce heat","detoxify (alcohol)","make blood proteins"]} },
+    ],
+    figure: {
+          "candId": "biology-2021-OL-paper2-p05-i0",
+          "src": "/exam-figures/biology/markbank/biology-2021-OL-paper2-p05-i0.png",
+          "srcHash": "a3f54b99b58cc40f4fba9075b06b1e12",
+          "alt": "A clean line drawing of the human digestive system: oesophagus entering a J-shaped stomach top right, a large smooth liver on the left with a small gall bladder beneath it, an elongated ridged pancreas lying below the stomach, a short curved tube leaving the stomach outlet, a coiled small intestine framed by a wider ridged colon, and the rectum below. Five letter labels on straight arrows: B into the liver, C into the stomach, D onto the pancreas, A onto the short curved tube at the stomach outlet, E onto the wide outer loop of gut. A word label \"Gall bladder\" with an arrow points to the small sac under the liver. The diagram and every letter are complete; the following text line, \"(ii) Name the acid released by part C\", is sliced through at the bottom edge of the crop.",
+          "attribution": "SEC Leaving Certificate Biology 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Duodenum (or small intestine)","askedInThisQuestion":false},{"letter":"B","meaning":"Liver","askedInThisQuestion":true},{"letter":"C","meaning":"Stomach","askedInThisQuestion":false},{"letter":"D","meaning":"Pancreas","askedInThisQuestion":false},{"letter":"E","meaning":"Colon (or large intestine)","askedInThisQuestion":false}],
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2021, level: "ordinary",
     paperFileid: "LC025GLP040EV",
@@ -7067,36 +7096,6 @@ export const CARDS: SecCard[] = [
           ]
     },
     labelKey: [{"letter":"A","meaning":"Duodenum (or small intestine)","askedInThisQuestion":true},{"letter":"B","meaning":"Liver","askedInThisQuestion":true},{"letter":"C","meaning":"Stomach","askedInThisQuestion":true},{"letter":"D","meaning":"Pancreas","askedInThisQuestion":true},{"letter":"E","meaning":"Colon (or large intestine)","askedInThisQuestion":true},{"letter":"Gall bladder","meaning":"Gall bladder","askedInThisQuestion":false}],
-  } as SecCard,
-  {
-    ...base, kind: "diagram",
-    year: 2021, level: "ordinary",
-    paperFileid: "LC025GLP040EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2021 Ordinary Level — © State Examinations Commission.",
-    id: "bio-2021-ol-q14-b-iv-fig", topicId: "bio-2-6", conceptId: "functions-of-the-liver",
-    section: "C", questionRef: "2021 OL Q14(b)(iv)",
-    stem: "The diagram shows the human digestive system.",
-    questionText: "Give any two functions of the part labelled B:",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Breakdown red blood cells / make bile / store vitamins / store glycogen / produce heat / detoxify (alcohol) / make blood proteins", marks: null, group: {"claimMax":2,"perOption":3,"options":["Breakdown red blood cells","make bile","store vitamins","store glycogen","produce heat","detoxify (alcohol)","make blood proteins"]} },
-    ],
-    figure: {
-          "candId": "biology-2021-OL-paper2-p05-i0",
-          "src": "/exam-figures/biology/markbank/biology-2021-OL-paper2-p05-i0.png",
-          "srcHash": "a3f54b99b58cc40f4fba9075b06b1e12",
-          "alt": "A clean line drawing of the human digestive system: oesophagus entering a J-shaped stomach top right, a large smooth liver on the left with a small gall bladder beneath it, an elongated ridged pancreas lying below the stomach, a short curved tube leaving the stomach outlet, a coiled small intestine framed by a wider ridged colon, and the rectum below. Five letter labels on straight arrows: B into the liver, C into the stomach, D onto the pancreas, A onto the short curved tube at the stomach outlet, E onto the wide outer loop of gut. A word label \"Gall bladder\" with an arrow points to the small sac under the liver. The diagram and every letter are complete; the following text line, \"(ii) Name the acid released by part C\", is sliced through at the bottom edge of the crop.",
-          "attribution": "SEC Leaving Certificate Biology 2021 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": [
-                "A",
-                "B",
-                "C",
-                "D",
-                "E",
-                "Gall bladder"
-          ]
-    },
-    labelKey: [{"letter":"A","meaning":"Duodenum (or small intestine)","askedInThisQuestion":false},{"letter":"B","meaning":"Liver","askedInThisQuestion":true},{"letter":"C","meaning":"Stomach","askedInThisQuestion":false},{"letter":"D","meaning":"Pancreas","askedInThisQuestion":false},{"letter":"E","meaning":"Colon (or large intestine)","askedInThisQuestion":false},{"letter":"Gall bladder","meaning":"Gall bladder","askedInThisQuestion":false}],
   } as SecCard,
   {
     ...base, kind: "diagram",
@@ -9366,6 +9365,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Plantain: 3/5 = 60%", marks: 3 },
     { id: "r-2", kind: "point", verbatim: "Dandelion: 2/5 = 40%", marks: 3 },
     ],
+    figure: {
+          "candId": "biology-2022-ol-paper-p008-i0",
+          "src": "/exam-figures/biology/markbank/biology-2022-ol-paper-p008-i0.png",
+          "srcHash": "b0f52c52903cf7feb3798258dc5c532d",
+          "alt": "Six-column ruled data table with a grey-shaded header row and a grey-shaded first column. Header cells read Plant, Station 1, Station 2, Station 3, Station 4, Station 5. The Plantain row carries bold tick marks in Station 2, Station 4 and Station 5; the Daisy row carries ticks in Station 1, Station 2, Station 3 and Station 5; the Dandelion row carries ticks in Station 1 and Station 3. All other cells are blank white.",
+          "attribution": "SEC Leaving Certificate Biology 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9647,6 +9654,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "(Duplicated chromosomes) line up on the equator of the cell", marks: 4 },
     ],
+    figure: {
+          "candId": "biology-2024-ol-paper-p005-i0",
+          "src": "/exam-figures/biology/markbank/biology-2024-ol-paper-p005-i0.png",
+          "srcHash": "b5aecc29acadaa4e6e1c29915aafcb40",
+          "alt": "Greyscale sequence of six pale cells joined by bold black arrows, read left to right. The first circular cell contains one dark grey rod and one light grey rod, with a bold A arrowed to the dark rod. An arrow captioned 'DNA replication' leads to the cell headed 'Stage 1', where each rod has become a doubled X-shaped chromosome. 'Stage 2' is an elongated oval cell filled with fine curved fibres running pole to pole, both doubled chromosomes lined up across its middle. 'Stage 3' shows the cell pinched in at the waist with the separated halves of each chromosome drawn toward opposite ends among the same fine fibres. A bold B below has two leader lines, one into the fibres of Stage 2 and one into the fibres of Stage 3. Two diverging arrows from Stage 3 lead to a pair of round 'Stage 4' daughter cells stacked one above the other, each holding one dark and one light rod.",
+          "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9661,6 +9676,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "(Chromosomes) are pulled to the ends of the cell or (duplicated chromosomes) separate", marks: 4 },
     ],
+    figure: {
+          "candId": "biology-2024-ol-paper-p005-i0",
+          "src": "/exam-figures/biology/markbank/biology-2024-ol-paper-p005-i0.png",
+          "srcHash": "b5aecc29acadaa4e6e1c29915aafcb40",
+          "alt": "Greyscale sequence of six pale cells joined by bold black arrows, read left to right. The first circular cell contains one dark grey rod and one light grey rod, with a bold A arrowed to the dark rod. An arrow captioned 'DNA replication' leads to the cell headed 'Stage 1', where each rod has become a doubled X-shaped chromosome. 'Stage 2' is an elongated oval cell filled with fine curved fibres running pole to pole, both doubled chromosomes lined up across its middle. 'Stage 3' shows the cell pinched in at the waist with the separated halves of each chromosome drawn toward opposite ends among the same fine fibres. A bold B below has two leader lines, one into the fibres of Stage 2 and one into the fibres of Stage 3. Two diverging arrows from Stage 3 lead to a pair of round 'Stage 4' daughter cells stacked one above the other, each holding one dark and one light rod.",
+          "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9773,6 +9796,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "(Spindle) fibre", marks: 3 },
     ],
+    figure: {
+          "candId": "biology-2024-ol-paper-p005-i0",
+          "src": "/exam-figures/biology/markbank/biology-2024-ol-paper-p005-i0.png",
+          "srcHash": "b5aecc29acadaa4e6e1c29915aafcb40",
+          "alt": "Greyscale sequence of six pale cells joined by bold black arrows, read left to right. The first circular cell contains one dark grey rod and one light grey rod, with a bold A arrowed to the dark rod. An arrow captioned 'DNA replication' leads to the cell headed 'Stage 1', where each rod has become a doubled X-shaped chromosome. 'Stage 2' is an elongated oval cell filled with fine curved fibres running pole to pole, both doubled chromosomes lined up across its middle. 'Stage 3' shows the cell pinched in at the waist with the separated halves of each chromosome drawn toward opposite ends among the same fine fibres. A bold B below has two leader lines, one into the fibres of Stage 2 and one into the fibres of Stage 3. Two diverging arrows from Stage 3 lead to a pair of round 'Stage 4' daughter cells stacked one above the other, each holding one dark and one light rod.",
+          "attribution": "SEC Leaving Certificate Biology 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",

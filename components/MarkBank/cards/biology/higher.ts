@@ -3541,6 +3541,34 @@ export const CARDS: SecCard[] = [
     ],
   } as SecCard,
   {
+    ...base, kind: "diagram",
+    year: 2023, level: "higher",
+    paperFileid: "LC025ALP040EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Higher Level — © State Examinations Commission.",
+    id: "bio-2023-hl-q14-b-ii", topicId: "bio-2-5", conceptId: "stigma-anther-functions",
+    section: "C", questionRef: "2023 HL Q14(b)(ii)",
+    stem: "In the diagram of the animal-pollinated flower, structure A is the stigma and structure B is the anther.",
+    questionText: "Give one function for each structure A and B.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-a", kind: "point", verbatim: "A (stigma) — Trap pollen or described", marks: 3 },
+    { id: "r-b", kind: "point", verbatim: "B (anther) — Produce (or release) pollen", marks: 3 },
+    ],
+    figure: {
+          "candId": "biology-2023-HL-paper2-p05-i0",
+          "src": "/exam-figures/biology/markbank/biology-2023-HL-paper2-p05-i0.png",
+          "srcHash": "72638cfdb0bf9a5187c4c0c89aff0c05",
+          "alt": "A greyscale longitudinal-section diagram of a typical animal-pollinated flower: a cut-away showing spreading petals, four stamens (filament plus a shaded anther head), a central carpel with a swollen ovary containing a large ovule, and small pointed structures below the petals. Three parts are pre-printed with leader lines — \"Style\" to the central stalk, \"Filament\" to a stamen stalk, \"Ovule\" to the body inside the ovary — and three parts are lettered with arrows: A points to the very top of the central style, B points to the head of a stamen, C points to one of the small pointed structures beneath the petals. All three letters are bold and fully readable. The stem line above (\"The diagram shows a typical animal-pollinated flower.\") and the line below (\"(i) Name the structures A, B and C.\") are sliced by the crop edges; the diagram itself is complete.",
+          "attribution": "SEC Leaving Certificate Biology 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B",
+                "C"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"Stigma","askedInThisQuestion":true},{"letter":"B","meaning":"Anther","askedInThisQuestion":true},{"letter":"C","meaning":"Sepal","askedInThisQuestion":false}],
+  } as SecCard,
+  {
     ...base, kind: "question",
     year: 2023, level: "higher",
     paperFileid: "LC025ALP040EV",
@@ -8099,34 +8127,6 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC025ALP040EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Higher Level — © State Examinations Commission.",
-    id: "bio-2023-hl-q14-b-ii-fig", topicId: "bio-2-5", conceptId: "flower-part-functions",
-    section: "C", questionRef: "2023 HL Q14(b)(ii)",
-    stem: "The diagram shows a typical animal-pollinated flower.",
-    questionText: "Give one function for each structure A and B.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-a", kind: "point", verbatim: "A — Trap pollen or described", marks: 3, accepts: ["Trap pollen"] },
-    { id: "r-b", kind: "point", verbatim: "B — Produce (or release) pollen", marks: 3, accepts: ["Produce pollen","Release pollen"] },
-    ],
-    figure: {
-          "candId": "biology-2023-HL-paper2-p05-i0",
-          "src": "/exam-figures/biology/markbank/biology-2023-HL-paper2-p05-i0.png",
-          "srcHash": "72638cfdb0bf9a5187c4c0c89aff0c05",
-          "alt": "A greyscale longitudinal-section diagram of a typical animal-pollinated flower: a cut-away showing spreading petals, four stamens (filament plus a shaded anther head), a central carpel with a swollen ovary containing a large ovule, and small pointed structures below the petals. Three parts are pre-printed with leader lines — \"Style\" to the central stalk, \"Filament\" to a stamen stalk, \"Ovule\" to the body inside the ovary — and three parts are lettered with arrows: A points to the very top of the central style, B points to the head of a stamen, C points to one of the small pointed structures beneath the petals. All three letters are bold and fully readable. The stem line above (\"The diagram shows a typical animal-pollinated flower.\") and the line below (\"(i) Name the structures A, B and C.\") are sliced by the crop edges; the diagram itself is complete.",
-          "attribution": "SEC Leaving Certificate Biology 2023 Higher Level — © State Examinations Commission",
-          "lettersVisible": [
-                "A",
-                "B",
-                "C"
-          ]
-    },
-    labelKey: [{"letter":"A","meaning":"Stigma","askedInThisQuestion":true},{"letter":"B","meaning":"Anther","askedInThisQuestion":true},{"letter":"C","meaning":"Sepal","askedInThisQuestion":false}],
-  } as SecCard,
-  {
-    ...base, kind: "diagram",
-    year: 2023, level: "higher",
-    paperFileid: "LC025ALP040EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Biology 2023 Higher Level — © State Examinations Commission.",
     id: "bio-2023-hl-q16-c-i-fig", topicId: "bio-3-2", conceptId: "virus-structure",
     section: "C", questionRef: "2023 HL Q16(c)(i)",
     stem: "The diagram shows a typical spherical-shaped virus.",
@@ -9124,6 +9124,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Glycolysis", marks: 3 },
     ],
+    figure: {
+          "candId": "biology-2021-hl-paper-p004-i0",
+          "src": "/exam-figures/biology/markbank/biology-2021-hl-paper-p004-i0.png",
+          "srcHash": "f71496b00fb52c84d479c3ab66e0b197",
+          "alt": "Black-and-white respiration flow chart. '6-carbon sugar' sits at the top above a bold inverted-V apex labelled 'Stage 1'; a curved arrow on each side of the apex releases a molecule labelled V. The left arm leads to '3-carbon molecule (if O2 not used)', then a downward arrow to 'Human muscle cells', then a further arrow to a bold letter Z. The right arm leads to '3-carbon molecule (if O2 used)', then 'Enters an organelle W', then '2-carbon molecule X', then an arrow into a circle of arrowheads running clockwise around the bold letter Y. A vertical dashed line separates the two arms. No axis, no shading, line art only.",
+          "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9208,6 +9216,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Lactic acid (or lactate)", marks: 3 },
     ],
+    figure: {
+          "candId": "biology-2021-hl-paper-p004-i0",
+          "src": "/exam-figures/biology/markbank/biology-2021-hl-paper-p004-i0.png",
+          "srcHash": "f71496b00fb52c84d479c3ab66e0b197",
+          "alt": "Black-and-white respiration flow chart. '6-carbon sugar' sits at the top above a bold inverted-V apex labelled 'Stage 1'; a curved arrow on each side of the apex releases a molecule labelled V. The left arm leads to '3-carbon molecule (if O2 not used)', then a downward arrow to 'Human muscle cells', then a further arrow to a bold letter Z. The right arm leads to '3-carbon molecule (if O2 used)', then 'Enters an organelle W', then '2-carbon molecule X', then an arrow into a circle of arrowheads running clockwise around the bold letter Y. A vertical dashed line separates the two arms. No axis, no shading, line art only.",
+          "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -9503,6 +9519,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Healthcare", marks: 4 },
     { id: "r-2", kind: "point", verbatim: "food supply", marks: 4 },
     ],
+    figure: {
+          "candId": "biology-2024-hl-paper-p003-i0",
+          "src": "/exam-figures/biology/markbank/biology-2024-hl-paper-p003-i0.png",
+          "srcHash": "20e437e3838a65a6956f9f17422cf7fa",
+          "alt": "Unscaled line graph with heavy black axes: the vertical axis is labelled 'Numbers of organisms' in bold rotated text and the horizontal axis 'Time'; neither carries tick marks or numbers. A single thick smooth wave runs left to right starting high, dipping and rising through roughly three peaks and ending part-way down a fall. An arrow from the word 'Prey' points into the descending limb after the second peak. Near the right-hand end a bold letter X sits above a short downward arrow that meets the time axis.",
+          "attribution": "SEC Leaving Certificate Biology 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",

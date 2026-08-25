@@ -1980,7 +1980,8 @@
     "marks": 3
    }
   ],
-  "notes": "Three discrete checkable marking points (mole ratio, Mr, final mass)."
+  "notes": "Three discrete checkable marking points (mole ratio, Mr, final mass).",
+  "figureKey": "chemistry-2021-HL-paper-p03-i1"
  },
  {
   "id": "chem-2021-hl-q3-a",
@@ -6571,7 +6572,8 @@
     "marks": 6
    }
   ],
-  "notes": "Printed tariff (6). The verbatim question names Y but defines it in the same sentence, so it is answerable without the reaction scheme."
+  "notes": "Printed tariff (6). The verbatim question names Y but defines it in the same sentence, so it is answerable without the reaction scheme.",
+  "figureKey": "chemistry-2021-ol-paper-p009-i0"
  },
  {
   "id": "chem-2021-ol-q8-e-i",
@@ -17279,7 +17281,8 @@
     "verbatim": "of an electron (in an atom)",
     "marks": 3
    }
-  ]
+  ],
+  "figureKey": "chemistry-2024-hl-paper-p006-i0"
  },
  {
   "id": "chem-2024-hl-q5-a-ii",
@@ -22196,7 +22199,8 @@
     "marks": 6
    }
   ],
-  "notes": "Both parts name a diagram, but each carries a self-sufficient description of what the technique does ('heat without loss of solvent', 'separate the ethanol'), so neither answer depends on seeing the figure. SKIPPED Q1(c)(i) 'Name the piece of apparatus labelled C in the diagrams' and Q1(c)(ii) 'Identify the change of state that occurs in C' — both depend entirely on a label in a diagram that this wave does not carry."
+  "notes": "Both parts name a diagram, but each carries a self-sufficient description of what the technique does ('heat without loss of solvent', 'separate the ethanol'), so neither answer depends on seeing the figure. SKIPPED Q1(c)(i) 'Name the piece of apparatus labelled C in the diagrams' and Q1(c)(ii) 'Identify the change of state that occurs in C' — both depend entirely on a label in a diagram that this wave does not carry.",
+  "figureKey": "chemistry-2025-OL-paper-p02-i0"
  },
  {
   "id": "chem-2025-ol-q1-d",
@@ -27666,7 +27670,8 @@
     "marks": 3
    }
   ],
-  "notes": "The paper prints the equation with C2H2 already in it, so nothing is inferred and the card stands without the table of structures A–E. 'compound C' is kept as the paper wrote it, glossed with (ethyne) — confirmed by the scheme's Q6(b) answer 'C: ethyne'. Rows sum to the printed (9). Supersedes the duplicate card that carried the same id under topicId chem-1-4."
+  "notes": "The paper prints the equation with C2H2 already in it, so nothing is inferred and the card stands without the table of structures A–E. 'compound C' is kept as the paper wrote it, glossed with (ethyne) — confirmed by the scheme's Q6(b) answer 'C: ethyne'. Rows sum to the printed (9). Supersedes the duplicate card that carried the same id under topicId chem-1-4.",
+  "figureKey": "chemistry-2022-ol-paper-p008-i0"
  },
  {
   "id": "chem-2022-ol-q7-a-i-ii",
@@ -28522,7 +28527,8 @@
     "marks": 4
    }
   ],
-  "notes": "The scheme prints the three answers separated by soliduses, i.e. they are equally acceptable alternatives; any one earns the full 4 marks."
+  "notes": "The scheme prints the three answers separated by soliduses, i.e. they are equally acceptable alternatives; any one earns the full 4 marks.",
+  "figureKey": "chemistry-2024-OL-paper-p02-i0"
  },
  {
   "id": "chem-2024-ol-q1-a-ii",
@@ -29448,7 +29454,8 @@
     "marks": 3
    }
   ],
-  "stem": "The reaction of sodium thiosulfate with hydrochloric acid is described by the following balanced chemical equation: Na2S2O3 + 2HCl  2NaCl + SO2 + S + H2O To investigate the effect of concentration on the rate of this reaction, the experiment was carried out for a number of different concentrations of sodium thiosulfate solution. For each run, a stopwatch was started when 100 cm3 of Na2S2O3 were mixed with 10 cm3 of 3 M HCl. For each run, the reaction was carried out at room temperature and the time taken for the same mass of sulfur to precipitate was measured. The inverse of that time was taken as a measure of the initial rate of reaction. The results are shown in the table below. Concentration of Na2S2O3 (M) 0.10 0.09 0.08 0.07 0.06 0.05 0.04 0.03 Time (s) 50 56 63 72 84 100 125 168 Rate = 1 Time (s–1) 0.020 0.018"
+  "stem": "The reaction of sodium thiosulfate with hydrochloric acid is described by the following balanced chemical equation: Na2S2O3 + 2HCl  2NaCl + SO2 + S + H2O To investigate the effect of concentration on the rate of this reaction, the experiment was carried out for a number of different concentrations of sodium thiosulfate solution. For each run, a stopwatch was started when 100 cm3 of Na2S2O3 were mixed with 10 cm3 of 3 M HCl. For each run, the reaction was carried out at room temperature and the time taken for the same mass of sulfur to precipitate was measured. The inverse of that time was taken as a measure of the initial rate of reaction. The results are shown in the table below. Concentration of Na2S2O3 (M) 0.10 0.09 0.08 0.07 0.06 0.05 0.04 0.03 Time (s) 50 56 63 72 84 100 125 168 Rate = 1 Time (s–1) 0.020 0.018",
+  "figureKey": "chemistry-2024-hl-paper-p004-i0"
  },
  {
   "id": "chem-2024-hl-q5-b-vi",
@@ -29473,7 +29480,8 @@
    }
   ],
   "stem": "In 1885 the Swiss mathematician Johann Balmer wrote a mathematical formula to describe the wavelengths of the visible line spectrum of atomic hydrogen, which is now named after him. However there was no explanation for the existence of these lines until 1913. green red violet blue wavelength In 1913 Bohr’s model of the hydrogen atom was shown to be consistent with the Balmer series. Bohr’s model was therefore supported by experimental evidence.",
-  "notes": "Three of the six are given for a drawing showing the two lobes overlapping."
+  "notes": "Three of the six are given for a drawing showing the two lobes overlapping.",
+  "figureKey": "chemistry-2024-hl-paper-p006-i0"
  },
  {
   "id": "chem-2024-hl-q8-a",
@@ -29542,7 +29550,8 @@
     "marks": 9
    }
   ],
-  "stem": "The periodic table on page 81 of the Formulae and Tables booklet shows the electronegativity values of the elements. Part of this table is shown in the diagram below. 1 18 1 2 H He 2.20 2 13 14 15 16 17 – – 3 4 5 6 7 8 9 10 Li Be B C N O F Ne 0.98 1.57 2.04 2.55 3.04 3.44 3.98 – – 11 12 13 14 15 16 17 18 Na Mg Al Si P S Cl Ar 0.93 1.31 3 4 5 6 7 8 9 10 11 12 1.61 1.90 2.19 2.58 3.16 – – 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr 0.82 1.00 1.36 1.54 1.63 1.66 1.55 1.83 1.88 1.91 1.90 1.65 1.81 2.01 2.18 2.55 2.96 – – Electronegativity values increase across a period of the periodic table."
+  "stem": "The periodic table on page 81 of the Formulae and Tables booklet shows the electronegativity values of the elements. Part of this table is shown in the diagram below. 1 18 1 2 H He 2.20 2 13 14 15 16 17 – – 3 4 5 6 7 8 9 10 Li Be B C N O F Ne 0.98 1.57 2.04 2.55 3.04 3.44 3.98 – – 11 12 13 14 15 16 17 18 Na Mg Al Si P S Cl Ar 0.93 1.31 3 4 5 6 7 8 9 10 11 12 1.61 1.90 2.19 2.58 3.16 – – 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr 0.82 1.00 1.36 1.54 1.63 1.66 1.55 1.83 1.88 1.91 1.90 1.65 1.81 2.01 2.18 2.55 2.96 – – Electronegativity values increase across a period of the periodic table.",
+  "figureKey": "chemistry-2024-ol-paper-p006-i0"
  },
  {
   "id": "chem-2024-ol-q5-b-ii",
@@ -29570,7 +29579,8 @@
     ]
    }
   ],
-  "stem": "The periodic table on page 81 of the Formulae and Tables booklet shows the electronegativity values of the elements. Part of this table is shown in the diagram below. 1 18 1 2 H He 2.20 2 13 14 15 16 17 – – 3 4 5 6 7 8 9 10 Li Be B C N O F Ne 0.98 1.57 2.04 2.55 3.04 3.44 3.98 – – 11 12 13 14 15 16 17 18 Na Mg Al Si P S Cl Ar 0.93 1.31 3 4 5 6 7 8 9 10 11 12 1.61 1.90 2.19 2.58 3.16 – – 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr 0.82 1.00 1.36 1.54 1.63 1.66 1.55 1.83 1.88 1.91 1.90 1.65 1.81 2.01 2.18 2.55 2.96 – – Electronegativity values increase across a period of the periodic table."
+  "stem": "The periodic table on page 81 of the Formulae and Tables booklet shows the electronegativity values of the elements. Part of this table is shown in the diagram below. 1 18 1 2 H He 2.20 2 13 14 15 16 17 – – 3 4 5 6 7 8 9 10 Li Be B C N O F Ne 0.98 1.57 2.04 2.55 3.04 3.44 3.98 – – 11 12 13 14 15 16 17 18 Na Mg Al Si P S Cl Ar 0.93 1.31 3 4 5 6 7 8 9 10 11 12 1.61 1.90 2.19 2.58 3.16 – – 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr 0.82 1.00 1.36 1.54 1.63 1.66 1.55 1.83 1.88 1.91 1.90 1.65 1.81 2.01 2.18 2.55 2.96 – – Electronegativity values increase across a period of the periodic table.",
+  "figureKey": "chemistry-2024-ol-paper-p006-i0"
  },
  {
   "id": "chem-2024-ol-q5-b-iii",
@@ -29598,7 +29608,8 @@
     ]
    }
   ],
-  "stem": "The periodic table on page 81 of the Formulae and Tables booklet shows the electronegativity values of the elements. Part of this table is shown in the diagram below. 1 18 1 2 H He 2.20 2 13 14 15 16 17 – – 3 4 5 6 7 8 9 10 Li Be B C N O F Ne 0.98 1.57 2.04 2.55 3.04 3.44 3.98 – – 11 12 13 14 15 16 17 18 Na Mg Al Si P S Cl Ar 0.93 1.31 3 4 5 6 7 8 9 10 11 12 1.61 1.90 2.19 2.58 3.16 – – 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr 0.82 1.00 1.36 1.54 1.63 1.66 1.55 1.83 1.88 1.91 1.90 1.65 1.81 2.01 2.18 2.55 2.96 – – Electronegativity values increase across a period of the periodic table."
+  "stem": "The periodic table on page 81 of the Formulae and Tables booklet shows the electronegativity values of the elements. Part of this table is shown in the diagram below. 1 18 1 2 H He 2.20 2 13 14 15 16 17 – – 3 4 5 6 7 8 9 10 Li Be B C N O F Ne 0.98 1.57 2.04 2.55 3.04 3.44 3.98 – – 11 12 13 14 15 16 17 18 Na Mg Al Si P S Cl Ar 0.93 1.31 3 4 5 6 7 8 9 10 11 12 1.61 1.90 2.19 2.58 3.16 – – 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr 0.82 1.00 1.36 1.54 1.63 1.66 1.55 1.83 1.88 1.91 1.90 1.65 1.81 2.01 2.18 2.55 2.96 – – Electronegativity values increase across a period of the periodic table.",
+  "figureKey": "chemistry-2024-ol-paper-p006-i0"
  },
  {
   "id": "chem-2024-ol-q5-b-v",
@@ -29623,7 +29634,8 @@
     "marks": 2
    }
   ],
-  "stem": "The periodic table on page 81 of the Formulae and Tables booklet shows the electronegativity values of the elements. Part of this table is shown in the diagram below. 1 18 1 2 H He 2.20 2 13 14 15 16 17 – – 3 4 5 6 7 8 9 10 Li Be B C N O F Ne 0.98 1.57 2.04 2.55 3.04 3.44 3.98 – – 11 12 13 14 15 16 17 18 Na Mg Al Si P S Cl Ar 0.93 1.31 3 4 5 6 7 8 9 10 11 12 1.61 1.90 2.19 2.58 3.16 – – 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr 0.82 1.00 1.36 1.54 1.63 1.66 1.55 1.83 1.88 1.91 1.90 1.65 1.81 2.01 2.18 2.55 2.96 – – Electronegativity values increase across a period of the periodic table."
+  "stem": "The periodic table on page 81 of the Formulae and Tables booklet shows the electronegativity values of the elements. Part of this table is shown in the diagram below. 1 18 1 2 H He 2.20 2 13 14 15 16 17 – – 3 4 5 6 7 8 9 10 Li Be B C N O F Ne 0.98 1.57 2.04 2.55 3.04 3.44 3.98 – – 11 12 13 14 15 16 17 18 Na Mg Al Si P S Cl Ar 0.93 1.31 3 4 5 6 7 8 9 10 11 12 1.61 1.90 2.19 2.58 3.16 – – 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr 0.82 1.00 1.36 1.54 1.63 1.66 1.55 1.83 1.88 1.91 1.90 1.65 1.81 2.01 2.18 2.55 2.96 – – Electronegativity values increase across a period of the periodic table.",
+  "figureKey": "chemistry-2024-ol-paper-p006-i0"
  },
  {
   "id": "chem-2024-ol-q5-b-vi",
@@ -29676,7 +29688,8 @@
     "marks": 8
    }
   ],
-  "stem": "Study the series of reactions shown below and answer the following questions. C2H5OH C2H4 S Q R CH3COOH T"
+  "stem": "Study the series of reactions shown below and answer the following questions. C2H5OH C2H4 S Q R CH3COOH T",
+  "figureKey": "chemistry-2024-ol-paper-p009-i0"
  },
  {
   "id": "chem-2024-ol-q8-a-ii",
@@ -29701,7 +29714,8 @@
     "marks": 6
    }
   ],
-  "stem": "Study the series of reactions shown below and answer the following questions. C2H5OH C2H4 S Q R CH3COOH T"
+  "stem": "Study the series of reactions shown below and answer the following questions. C2H5OH C2H4 S Q R CH3COOH T",
+  "figureKey": "chemistry-2024-ol-paper-p009-i0"
  },
  {
   "id": "chem-2024-ol-q5-b-vii",
@@ -29727,7 +29741,8 @@
    }
   ],
   "stem": "The periodic table on page 81 of the Formulae and Tables booklet shows the electronegativity values of the elements. Part of this table is shown in the diagram below. 1 18 1 2 H He 2.20 2 13 14 15 16 17 – – 3 4 5 6 7 8 9 10 Li Be B C N O F Ne 0.98 1.57 2.04 2.55 3.04 3.44 3.98 – – 11 12 13 14 15 16 17 18 Na Mg Al Si P S Cl Ar 0.93 1.31 3 4 5 6 7 8 9 10 11 12 1.61 1.90 2.19 2.58 3.16 – – 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr 0.82 1.00 1.36 1.54 1.63 1.66 1.55 1.83 1.88 1.91 1.90 1.65 1.81 2.01 2.18 2.55 2.96 – – Electronegativity values increase across a period of the periodic table.",
-  "notes": "The scheme accepts tetrahedral, triangular or trigonal as well."
+  "notes": "The scheme accepts tetrahedral, triangular or trigonal as well.",
+  "figureKey": "chemistry-2024-ol-paper-p006-i0"
  },
  {
   "id": "chem-2024-ol-q7-a-ii",

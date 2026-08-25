@@ -33,10 +33,10 @@ import { CARDS as CONS_HIGHER } from '../components/MarkBank/cards/construction-
 import { CARDS as CONS_ORDINARY } from '../components/MarkBank/cards/construction-studies/ordinary';
 
 const decks = [
-  ['biology:higher', BIO_HIGHER, 604, '0463b882c88149b96f94d709918f3a4c0aa86f385d947f036324de072d9f36da'],
-  ['biology:ordinary', BIO_ORDINARY, 625, 'dbad8369d6ba60dee04009663a5502da490e9606630dc8fa8c78bfb84d7ca833'],
-  ['chemistry:higher', CHEM_HIGHER, 443, '713b7ef8560702e78ed246adca8800057ca9eafd6e4e45ed583404be169709ae'],
-  ['chemistry:ordinary', CHEM_ORDINARY, 336, 'bd98c8dc0d83bbb2fb009b5b10e6dbf39bdb1c407b0408758182648ef9210e7e'],
+  ['biology:higher', BIO_HIGHER, 604, '5bbd95e23a2f28cf95c97771a7695a586885c47fca3f11087bb751489d90f783'],
+  ['biology:ordinary', BIO_ORDINARY, 625, '1f9a714bb577aad619f22f26c6f4c8ff2d0b860da4d17d2a92081c07ca7d119a'],
+  ['chemistry:higher', CHEM_HIGHER, 443, '422051ce18d791e8cc561982c02cab9b6997556388dfa41a17f3635691ac5dbd'],
+  ['chemistry:ordinary', CHEM_ORDINARY, 336, '502fee4823ce54908fc0c8c727c93daebfb9f533274009f018e1a9f5c142ee41'],
   /* 2026-08-23: physics drops from 487/477 to 486/475. Three cards -- one
    * Higher (2021 q13a(v)) and two Ordinary (2022 q3(ii) and q3(viii)) -- quote
    * a stacked fraction the scheme's font renders as a diagonal slash whose
@@ -53,7 +53,7 @@ const decks = [
    * its question asks for, q10-iv the closed-pipe harmonic instead of another
    * part's answer. Nothing removed. */
   ['physics:higher', PHYS_HIGHER, 569, '463dd2324556ac2c286ed7c722602a9bf5e4f83a9ee43fdd03bcf8b13d97e6fd'],
-  ['physics:ordinary', PHYS_ORDINARY, 563, 'd81eb2853777e6516fb419c484bf35b6500eecc4f4d203ee02304c227b51f506'],
+  ['physics:ordinary', PHYS_ORDINARY, 563, '2514d1a5a254a7865761961db5931a395a89fe458d341be1fc54f5856d33e7f4'],
   ['agricultural-science:higher', AGSCI_HIGHER, 438, '31e25662626e35ca1db55e96e1cdfe0492648666c6cd35365f2c1e6d92c35f6a'],
   ['agricultural-science:ordinary', AGSCI_ORDINARY, 431, '2dbd6e7635bb73941a16773ce9d3c654741a863280c002f783fc45cd0d7e8dbd'],
   ['business:higher', BUSINESS_HIGHER, 272, 'a61655818cee2ce61307eb08fe6dad282193791674b4e5e8a893e203b64af976'],

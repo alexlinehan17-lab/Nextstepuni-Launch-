@@ -4201,7 +4201,8 @@
     "route": "b"
    }
   ],
-  "notes": "The photograph is not needed to answer. The scheme prints a third //-separated form (f proportional to 1/l) but it is broken across lines in the extracted text, so it is omitted rather than reconstructed."
+  "notes": "The photograph is not needed to answer. The scheme prints a third //-separated form (f proportional to 1/l) but it is broken across lines in the extracted text, so it is omitted rather than reconstructed.",
+  "figureKey": "physics-2021-OL-paper-p14-i0"
  },
  {
   "id": "phys-2021-ol-q14d-iv-v",
@@ -21975,7 +21976,8 @@
     "marks": 7
    }
   ],
-  "notes": "Kept because the paper prints both diagram labels (force applied = 50 N, distance = 15 cm) and the scheme reproduces them, so the card needs no figure. Scheme adds '[accept partial answer for 4]'. No units-deduction note is carried: that rule appears only in the Higher Level scheme, not the Ordinary Level one."
+  "notes": "Kept because the paper prints both diagram labels (force applied = 50 N, distance = 15 cm) and the scheme reproduces them, so the card needs no figure. Scheme adds '[accept partial answer for 4]'. No units-deduction note is carried: that rule appears only in the Higher Level scheme, not the Ordinary Level one.",
+  "figureKey": "physics-2025-OL-paper-p06-i1"
  },
  {
   "id": "phys-2025-ol-q6-b",
@@ -26661,7 +26663,8 @@
     "marks": 3
    }
   ],
-  "stem": "The Wimshurst machine is an electrostatic generator for generating high voltages. It uses the principles of charging by induction and point discharge to store energy in two large capacitors. Wimshurst machines provided a source of high voltage for early X‐ray tubes."
+  "stem": "The Wimshurst machine is an electrostatic generator for generating high voltages. It uses the principles of charging by induction and point discharge to store energy in two large capacitors. Wimshurst machines provided a source of high voltage for early X‐ray tubes.",
+  "figureKey": "physics-2021-hl-paper-p011-i0"
  },
  {
   "id": "phys-2021-hl-q4-iii",
@@ -26776,7 +26779,8 @@
     "marks": 3
    }
   ],
-  "stem": "Ice is used as a coolant due to the high specific heat capacities of ice and water and the high specific latent heat of fusion of ice. It is the principal coolant used in ice packs for insulated picnic boxes, such as the one shown. Freezers and refrigerators operate by use of a heat pump."
+  "stem": "Ice is used as a coolant due to the high specific heat capacities of ice and water and the high specific latent heat of fusion of ice. It is the principal coolant used in ice packs for insulated picnic boxes, such as the one shown. Freezers and refrigerators operate by use of a heat pump.",
+  "figureKey": "physics-2021-HL-paper-p08-i0"
  },
  {
   "id": "phys-2021-hl-q13b-ii",
@@ -27437,7 +27441,8 @@
    }
   ],
   "stem": "The photograph shown was taken during a meeting of the Deutsche Bunsen‐Gesellschaft (German Bunsen Society) in 1932. The three people sitting at the left of the table are James Chadwick, Hans Geiger and Ernest Rutherford. Lise Meitner and Otto Hahn are standing behind Rutherford. The careers of Chadwick and Geiger were very similar. They both worked under Rutherford early in their careers. Later they were on opposite sides in the efforts to build the first nuclear bombs, Chadwick with the Manhattan Project in America and Geiger with the Uranium Club in Germany. Shortly before this photograph was taken, Chadwick had discovered the neutron. In his experiment an alpha particle was absorbed by a beryllium–9 nucleus and a neutron was emitted.",
-  "notes": "The event is the one the stem describes — an alpha particle absorbed by a beryllium-9 nucleus, emitting a neutron. The nuclide masses come from the formulae and tables booklet; the paper prints none."
+  "notes": "The event is the one the stem describes — an alpha particle absorbed by a beryllium-9 nucleus, emitting a neutron. The nuclide masses come from the formulae and tables booklet; the paper prints none.",
+  "figureKey": "physics-2021-HL-paper-p10-i0"
  },
  {
   "id": "phys-2021-hl-q11-iv",
@@ -27477,7 +27482,8 @@
    }
   ],
   "stem": "The photograph shown was taken during a meeting of the Deutsche Bunsen‐Gesellschaft (German Bunsen Society) in 1932. The three people sitting at the left of the table are James Chadwick, Hans Geiger and Ernest Rutherford. Lise Meitner and Otto Hahn are standing behind Rutherford. The careers of Chadwick and Geiger were very similar. They both worked under Rutherford early in their careers. Later they were on opposite sides in the efforts to build the first nuclear bombs, Chadwick with the Manhattan Project in America and Geiger with the Uranium Club in Germany. Shortly before this photograph was taken, Chadwick had discovered the neutron. In his experiment an alpha particle was absorbed by a beryllium–9 nucleus and a neutron was emitted.",
-  "notes": "Each row carries three mutually exclusive routes separated by the scheme's double solidus: a G-M tube, a solid-state detector, a charged gold leaf electroscope — the paper's part (iii) names the first two. On the first line the scheme offers gas and anode as alternatives for the G-M route. It takes a mark off if there is no diagram."
+  "notes": "Each row carries three mutually exclusive routes separated by the scheme's double solidus: a G-M tube, a solid-state detector, a charged gold leaf electroscope — the paper's part (iii) names the first two. On the first line the scheme offers gas and anode as alternatives for the G-M route. It takes a mark off if there is no diagram.",
+  "figureKey": "physics-2021-HL-paper-p10-i0"
  },
  {
   "id": "phys-2021-hl-q11-v",
@@ -27508,7 +27514,8 @@
    }
   ],
   "stem": "The photograph shown was taken during a meeting of the Deutsche Bunsen‐Gesellschaft (German Bunsen Society) in 1932. The three people sitting at the left of the table are James Chadwick, Hans Geiger and Ernest Rutherford. Lise Meitner and Otto Hahn are standing behind Rutherford. The careers of Chadwick and Geiger were very similar. They both worked under Rutherford early in their careers. Later they were on opposite sides in the efforts to build the first nuclear bombs, Chadwick with the Manhattan Project in America and Geiger with the Uranium Club in Germany. Shortly before this photograph was taken, Chadwick had discovered the neutron. In his experiment an alpha particle was absorbed by a beryllium–9 nucleus and a neutron was emitted.",
-  "notes": "The scheme takes a mark off if there is no diagram."
+  "notes": "The scheme takes a mark off if there is no diagram.",
+  "figureKey": "physics-2021-HL-paper-p10-i0"
  },
  {
   "id": "phys-2021-ol-q8-vii",
@@ -27534,7 +27541,8 @@
    }
   ],
   "stem": "A wave can be described as a travelling disturbance that transports energy from one point to another.",
-  "notes": "The scheme numbers this answer under its own Question 2 while the paper prints Question 8."
+  "notes": "The scheme numbers this answer under its own Question 2 while the paper prints Question 8.",
+  "figureKey": "physics-2021-ol-paper-p007-i0"
  },
  {
   "id": "phys-2021-ol-q1-i",
@@ -28119,7 +28127,8 @@
     "marks": 3
    }
   ],
-  "stem": "The normal human body temperature is 37 °C. This temperature increases when a person is fighting an infection. The thermometer in the photograph on the right measures infrared radiation emitted from a person’s forehead. The diagram on the right shows a rectangular garden. On a particular day, sunlight falls on the garden for exactly 12 hours. 9 m"
+  "stem": "The normal human body temperature is 37 °C. This temperature increases when a person is fighting an infection. The thermometer in the photograph on the right measures infrared radiation emitted from a person’s forehead. The diagram on the right shows a rectangular garden. On a particular day, sunlight falls on the garden for exactly 12 hours. 9 m",
+  "figureKey": "physics-2021-OL-paper-p10-i0"
  },
  {
   "id": "phys-2021-ol-q11-ix",
@@ -28145,7 +28154,8 @@
     "contextNote": "The paper gives the solar constant as 1.36 kW m−2 — energy = solar constant × time in seconds × area, using the answers to (vii) and (viii). \"103\" and \"109\" are the flattened 10³ and 10⁹."
    }
   ],
-  "stem": "The normal human body temperature is 37 °C. This temperature increases when a person is fighting an infection. The thermometer in the photograph on the right measures infrared radiation emitted from a person’s forehead. The diagram on the right shows a rectangular garden. On a particular day, sunlight falls on the garden for exactly 12 hours. 9 m"
+  "stem": "The normal human body temperature is 37 °C. This temperature increases when a person is fighting an infection. The thermometer in the photograph on the right measures infrared radiation emitted from a person’s forehead. The diagram on the right shows a rectangular garden. On a particular day, sunlight falls on the garden for exactly 12 hours. 9 m",
+  "figureKey": "physics-2021-ol-paper-p010-i0"
  },
  {
   "id": "phys-2021-ol-q12-v",
@@ -30592,7 +30602,8 @@
     "marks": 3
    }
   ],
-  "stem": "5 Ω 5 Ω 5 Ω"
+  "stem": "5 Ω 5 Ω 5 Ω",
+  "figureKey": "physics-2023-hl-paper-p015-i0"
  },
  {
   "id": "phys-2023-hl-q14c-iv",
@@ -31729,7 +31740,8 @@
     "marks": 3
    }
   ],
-  "stem": "The diagram below shows how a ray of light travels through a rectangular glass block."
+  "stem": "The diagram below shows how a ray of light travels through a rectangular glass block.",
+  "figureKey": "physics-2023-ol-paper-p007-i0"
  },
  {
   "id": "phys-2023-ol-q7-v",
@@ -31802,7 +31814,8 @@
     "marks": 3
    }
   ],
-  "stem": "The diagram below shows how a ray of light travels through a rectangular glass block."
+  "stem": "The diagram below shows how a ray of light travels through a rectangular glass block.",
+  "figureKey": "physics-2023-ol-paper-p007-i0"
  },
  {
   "id": "phys-2023-ol-q11-v",
@@ -33515,7 +33528,8 @@
     "marks": 5
    }
   ],
-  "stem": "Electric current is the movement of charged particles through a conductor. fuse neutral cable grip cable A fuse is used as a safety precaution. A miniature circuit breaker (MCB) is another device used for safety. Z coil of wire (b) The electrical component Z is a variable resistor. Explain why a variable resistor is used in the circuit when demonstrating Ohm’s law. X Y Previous results from the experiment have shown the resistance of the coil of wire is 2.5 Ω."
+  "stem": "Electric current is the movement of charged particles through a conductor. fuse neutral cable grip cable A fuse is used as a safety precaution. A miniature circuit breaker (MCB) is another device used for safety. Z coil of wire (b) The electrical component Z is a variable resistor. Explain why a variable resistor is used in the circuit when demonstrating Ohm’s law. X Y Previous results from the experiment have shown the resistance of the coil of wire is 2.5 Ω.",
+  "figureKey": "physics-2024-OL-paper-p10-i0"
  },
  {
   "id": "phys-2024-ol-q14a-ii",
@@ -34333,7 +34347,8 @@
    }
   ],
   "stem": "A student carried out an experiment to investigate how the fundamental frequency f of a stretched string changes with length l. The student set a length of string vibrating and adjusted the length until resonance occurred. The tension of the string was kept constant throughout the experiment. paper rider bridge bridge On the right is a diagram of the apparatus used in this experiment. f (Hz) 256 320 341 427 480 512 l (m) 0.214 0.171 0.160 0.127 0.114 0.107 1 l (m–1) 4.67 5.85",
-  "notes": "The four values are the missing entries of the 1/l row, in table order; each scores one mark."
+  "notes": "The four values are the missing entries of the 1/l row, in table order; each scores one mark.",
+  "figureKey": "physics-2024-ol-paper-p004-i0"
  },
  {
   "id": "phys-2024-ol-q5-iii",
@@ -35041,7 +35056,8 @@
     "verbatim": "t = 1 s",
     "marks": 2
    }
-  ]
+  ],
+  "figureKey": "physics-2025-hl-paper-p007-i0"
  },
  {
   "id": "phys-2025-hl-q6-e",

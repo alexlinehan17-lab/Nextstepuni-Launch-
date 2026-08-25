@@ -1,7 +1,7 @@
 {
  "agricultural-science": {
   "cards": 869,
-  "contentHash": "8a4205fa0447c6c1",
+  "contentHash": "9dc05cfc178fa7fa",
   "coveragePct": 93.6,
   "covered": 888,
   "excluded": 3,
@@ -16,7 +16,7 @@
  },
  "biology": {
   "cards": 1229,
-  "contentHash": "2efd0b25f4b5c927",
+  "contentHash": "89b8e8e6d2fe7541",
   "coveragePct": 85.9,
   "covered": 1405,
   "excluded": 0,
@@ -27,11 +27,11 @@
    "count": 20,
    "hash": "55091726a504e556"
   },
-  "refsHash": "42eeb25d476dca17"
+  "refsHash": "9024533f07275350"
  },
  "business": {
   "cards": 606,
-  "contentHash": "4ef9fc54b65316a3",
+  "contentHash": "96521c958202d8fc",
   "coveragePct": 94.6,
   "covered": 677,
   "excluded": 0,
@@ -46,7 +46,7 @@
  },
  "chemistry": {
   "cards": 779,
-  "contentHash": "045ff2de9ac8fed8",
+  "contentHash": "3a324ec3991fd0e6",
   "coveragePct": 84.1,
   "covered": 961,
   "excluded": 0,
@@ -57,7 +57,7 @@
    "count": 10,
    "hash": "bf2ca1ce05646d41"
   },
-  "refsHash": "f294b1d87c22d990"
+  "refsHash": "c6cd126448ca144c"
  },
  "construction-studies": {
   "cards": 505,
@@ -76,7 +76,7 @@
  },
  "economics": {
   "cards": 544,
-  "contentHash": "722869b695cd47bf",
+  "contentHash": "f48473cbba0ccc7a",
   "coveragePct": 100.0,
   "covered": 498,
   "excluded": 160,
@@ -91,7 +91,7 @@
  },
  "home-economics": {
   "cards": 571,
-  "contentHash": "17212890d5ceff72",
+  "contentHash": "58dd065233e9313f",
   "coveragePct": 95.3,
   "covered": 545,
   "excluded": 0,
@@ -106,7 +106,7 @@
  },
  "maths": {
   "cards": 788,
-  "contentHash": "76b7ce6dcca28d3d",
+  "contentHash": "b9e5bdbfdf1165d3",
   "coveragePct": 80.5,
   "covered": 796,
   "excluded": 0,
@@ -121,7 +121,7 @@
  },
  "physics": {
   "cards": 1132,
-  "contentHash": "c9fb70b79594cc1a",
+  "contentHash": "42cd3e22ee4d6f1a",
   "coveragePct": 95.1,
   "covered": 1118,
   "excluded": 46,
@@ -132,6 +132,6 @@
    "count": 10,
    "hash": "aedd9969b3ce025e"
   },
-  "refsHash": "1302820e5f7327d9"
+  "refsHash": "d5fcc923d714c743"
  }
 }

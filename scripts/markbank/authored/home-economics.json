@@ -1497,7 +1497,7 @@
   "questionRef": "2022 HL Section A Q2",
   "questionText": "Complete the table below in relation to the digestion of carbohydrates.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "home-economics-2022-hl-answerbook-p03-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -7654,7 +7654,7 @@
   "questionRef": "2025 HL Section B Q1(a)",
   "questionText": "Using the information provided in the chart above and having regard to current healthy eating guidelines, comment and elaborate on four sources of energy in the diet of adults in Ireland.",
   "stem": "In 2024, a survey identified the main food sources of energy in the diet of adults in Ireland. (adapted from National Adult Nutrition Survey II, Summary Report, 2024)",
-  "figureKey": "",
+  "figureKey": "home-economics-2025-hl-paper-p02-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",
@@ -10201,7 +10201,7 @@
   "questionRef": "2024 OL Section B Q1(a)",
   "questionText": "Using the information presented in the table, discuss five factors that affect a person’s food choices.",
   "stem": "'All around the world, people choose to eat different food for many different reasons.' (www.foodfactoflife.org.uk) The diagram lists factors affecting food choice: work patterns, food availability, emotions, likes and dislikes, cooking skills, money, time.",
-  "figureKey": "",
+  "figureKey": "home-economics-2024-ol-paper-p02-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",
@@ -10247,7 +10247,7 @@
   "questionRef": "2024 OL Section B Q1(b)",
   "questionText": "Give an account of carbohydrates under each of the following headings: classification; functions in the body; dietary sources.",
   "stem": "'All around the world, people choose to eat different food for many different reasons.' (www.foodfactoflife.org.uk) The diagram lists factors affecting food choice: work patterns, food availability, emotions, likes and dislikes, cooking skills, money, time.",
-  "figureKey": "",
+  "figureKey": "home-economics-2024-ol-paper-p02-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -10343,7 +10343,7 @@
   "questionRef": "2024 OL Section B Q1(c)",
   "questionText": "Outline three different ways a person can increase the amount of fibre in their diet.",
   "stem": "'All around the world, people choose to eat different food for many different reasons.' (www.foodfactoflife.org.uk) The diagram lists factors affecting food choice: work patterns, food availability, emotions, likes and dislikes, cooking skills, money, time.",
-  "figureKey": "",
+  "figureKey": "home-economics-2024-ol-paper-p02-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",
@@ -10388,7 +10388,7 @@
   "questionRef": "2024 OL Section B Q1(d)",
   "questionText": "Describe four ways consumers can reduce food waste when planning meals and purchasing foods.",
   "stem": "'All around the world, people choose to eat different food for many different reasons.' (www.foodfactoflife.org.uk) The diagram lists factors affecting food choice: work patterns, food availability, emotions, likes and dislikes, cooking skills, money, time.",
-  "figureKey": "",
+  "figureKey": "home-economics-2024-ol-paper-p02-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",
@@ -15668,7 +15668,7 @@
   "questionRef": "2022 OL Section C E1 Q1(a)(ii)",
   "questionText": "Discuss three factors that should be considered when planning a lighting system for an open plan kitchen/living room.",
   "stem": "A popular open plan kitchen/living space is shown below. (www.roomsketcher.com)",
-  "figureKey": "",
+  "figureKey": "home-economics-2022-ol-paper-p05-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",
@@ -15720,7 +15720,7 @@
   "questionRef": "2022 OL Section C E1 Q1(a)(iii)",
   "questionText": "Give details of three types of contemporary lighting in the home.",
   "stem": "A popular open plan kitchen/living space is shown below. (www.roomsketcher.com)",
-  "figureKey": "",
+  "figureKey": "home-economics-2022-ol-paper-p05-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",
@@ -20634,7 +20634,7 @@
   "questionRef": "2021 OL Section C E1 Q1(a)(i)",
   "questionText": "State four advantages of having a house well insulated.",
   "stem": "The diagram below shows the average heat loss for a family home. (www.ors.ie)",
-  "figureKey": "",
+  "figureKey": "home-economics-2021-ol-paper-p05-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",
@@ -20683,7 +20683,7 @@
   "questionRef": "2021 OL Section C E1 Q1(a)(ii)",
   "questionText": "Name and describe the method of insulation you would recommend for each of the following: attic; walls; windows.",
   "stem": "The diagram below shows the average heat loss for a family home. (www.ors.ie)",
-  "figureKey": "",
+  "figureKey": "home-economics-2021-ol-paper-p05-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -20762,7 +20762,7 @@
   "questionRef": "2021 OL Section C E1 Q1(a)(iii)",
   "questionText": "State the advantages and/or the disadvantages of solar energy.",
   "stem": "The diagram below shows the average heat loss for a family home. (www.ors.ie)",
-  "figureKey": "",
+  "figureKey": "home-economics-2021-ol-paper-p05-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",
@@ -32337,7 +32337,7 @@
   "questionRef": "2023 OL Section C E1 Q1(a)(ii)",
   "questionText": "Discuss three factors which should be considered when choosing a heating system for the home.",
   "stem": "A contemporary bathroom design is shown below.",
-  "figureKey": "",
+  "figureKey": "home-economics-2023-ol-paper-p05-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",

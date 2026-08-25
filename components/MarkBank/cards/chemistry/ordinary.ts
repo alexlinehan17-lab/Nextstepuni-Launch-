@@ -743,6 +743,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "poly(ethene) / polythene / polyethylene", marks: 6, accepts: ["poly(ethene)","polythene","polyethylene"] },
     ],
+    figure: {
+          "candId": "chemistry-2021-ol-paper-p009-i0",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2021-ol-paper-p009-i0.png",
+          "srcHash": "f5d2f86f52a155d517daa9bca14425f3",
+          "alt": "Ethene reaction scheme drawn as six shaded rectangles joined by arrows. A central box reads 'ethene'. Above it a box reads 'ethanol' with a downward arrow labelled Al2O3 into ethene. An arrow up-left labelled A reaches a box reading '1,2-dibromoethane'; an arrow up-right labelled B reaches a box reading 'chloroethane'. A left arrow labelled '+ H2' reaches a box marked X, and a right arrow reaches a box reading 'polymer Y'.",
+          "attribution": "SEC Leaving Certificate Chemistry 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2556,6 +2564,29 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC022GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2025 Ordinary Level — © State Examinations Commission.",
+    id: "chem-2025-ol-q1-b", topicId: "chem-u2", conceptId: "reflux-and-distillation-techniques",
+    section: "A", questionRef: "2025 OL Q1(b)",
+    stem: "A student mixed suitable amounts of substance A with solid NaOH in a solvent mixture of water and ethanol. The mixture was heated gently for about 20 minutes using a hot-water bath, as shown in Diagram 1. Ethanol was then removed from the reaction mixture as shown in Diagram 2.",
+    questionText: "(i) Name the technique shown in Diagram 1, which is used to heat the reaction mixture without loss of solvent. (ii) Name the technique shown in Diagram 2, which is used to separate the ethanol from the reaction mixture.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "reflux", marks: 6 },
+    { id: "r-2", kind: "point", verbatim: "distillation", marks: 6 },
+    ],
+    figure: {
+          "candId": "chemistry-2025-OL-paper-p02-i0",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2025-OL-paper-p02-i0.png",
+          "srcHash": "34619bd065b4fabef206d0f8a0a59492",
+          "alt": "Two labelled glassware set-ups side by side. Diagram 1 (left): a round-bottomed flask holding the reaction mixture stands in a rectangular trough of hot water; a long vertical water-jacketed condenser with two side arms is fitted upright into the flask neck. An arrow labelled C points at this vertical condenser; further arrows label \"reaction mixture\" (the liquid in the flask) and \"hot water\" (the bath). Diagram 2 (right): a round-bottomed flask sits in a trough labelled \"boiling water\"; a still head on the flask carries a graduated thermometer standing vertically, and a long condenser sloping down to the right, labelled C by an arrow, with two side arms; the condenser ends in a bent adapter that delivers into a small conical flask receiver at the bottom right. Printed question text runs above and below the diagrams.",
+          "attribution": "SEC Leaving Certificate Chemistry 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC022GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2025 Ordinary Level — © State Examinations Commission.",
     id: "chem-2025-ol-q1-d", topicId: "chem-u2", conceptId: "brine-and-separating-soap-precipitate",
     section: "A", questionRef: "2025 OL Q1(d)",
     stem: "Some boiling water was used to transfer the residue in the round-bottomed flask into brine in a beaker, precipitating soap.",
@@ -2903,34 +2934,6 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "isotope", marks: null },
     { id: "r-2", kind: "point", verbatim: "different numbers of neutrons in the nucleus", marks: null },
     ],
-  } as SecCard,
-  {
-    ...base, kind: "diagram",
-    year: 2025, level: "ordinary",
-    paperFileid: "LC022GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2025 Ordinary Level — © State Examinations Commission.",
-    id: "chem-2025-ol-q1-b-fig", topicId: "chem-u2", conceptId: "reflux-vs-distillation-apparatus",
-    section: "A", questionRef: "2025 OL Q1(b)",
-    stem: "Soap is a product of the reaction between a solution of sodium hydroxide (NaOH) and a common household substance A. A student mixed suitable amounts of substance A with solid NaOH in a solvent mixture of water and ethanol. The mixture was heated gently for about 20 minutes using a hot-water bath, as shown in Diagram 1. Ethanol was then removed from the reaction mixture as shown in Diagram 2.",
-    questionText: "(i) Name the technique shown in Diagram 1, which is used to heat the reaction mixture without loss of solvent. (ii) Name the technique shown in Diagram 2, which is used to separate the ethanol from the reaction mixture.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 12,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Diagram 1 — reflux", marks: 6 },
-    { id: "r-2", kind: "point", verbatim: "Diagram 2 — distillation", marks: 6 },
-    ],
-    figure: {
-          "candId": "chemistry-2025-OL-paper-p02-i0",
-          "src": "/exam-figures/chemistry/markbank/chemistry-2025-OL-paper-p02-i0.png",
-          "srcHash": "34619bd065b4fabef206d0f8a0a59492",
-          "alt": "Two labelled glassware set-ups side by side. Diagram 1 (left): a round-bottomed flask holding the reaction mixture stands in a rectangular trough of hot water; a long vertical water-jacketed condenser with two side arms is fitted upright into the flask neck. An arrow labelled C points at this vertical condenser; further arrows label \"reaction mixture\" (the liquid in the flask) and \"hot water\" (the bath). Diagram 2 (right): a round-bottomed flask sits in a trough labelled \"boiling water\"; a still head on the flask carries a graduated thermometer standing vertically, and a long condenser sloping down to the right, labelled C by an arrow, with two side arms; the condenser ends in a bent adapter that delivers into a small conical flask receiver at the bottom right. Printed question text runs above and below the diagrams.",
-          "attribution": "SEC Leaving Certificate Chemistry 2025 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": [
-                "Diagram 1",
-                "Diagram 2",
-                "C"
-          ]
-    },
-    labelKey: [{"letter":"Diagram 1","meaning":"the set-up in which the mixture was heated gently for about 20 minutes using a hot-water bath","askedInThisQuestion":true},{"letter":"Diagram 2","meaning":"the set-up by which ethanol was removed from the reaction mixture","askedInThisQuestion":true},{"letter":"C","meaning":"(liebig) condenser","askedInThisQuestion":false}],
   } as SecCard,
   {
     ...base, kind: "diagram",
@@ -4409,6 +4412,14 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "H2O", marks: 3, contextNote: "PRODUCTS: (2 × 3) — the second product mark." },
     { id: "r-3", kind: "alt", verbatim: "C2H2 + 2½O2 → 2CO2 + H2O", marks: 3, accepts: ["2C2H2 + 5O2 → 4CO2 + 2H2O"], contextNote: "BALANCING: (3) — awarded separately from the products; either the half-coefficient form or the doubled whole-number form scores." },
     ],
+    figure: {
+          "candId": "chemistry-2022-ol-paper-p008-i0",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2022-ol-paper-p008-i0.png",
+          "srcHash": "e24cbfc2271fd936fd22871cccbc165d",
+          "alt": "A ruled five-row table with a narrow shaded left column holding the letters A to E and a wide right column holding one structural formula per row. A is two carbons each with three hydrogens joined by a single bond (ethane). B is two carbons joined by a double bond, each carrying two hydrogens (ethene). C is H-C(triple bond)C-H drawn on one line (ethyne). D is a hexagon with an inscribed circle (benzene). E is the same hexagon with a circle and a CH3 group bonded at the top vertex (methylbenzene).",
+          "attribution": "SEC Leaving Certificate Chemistry 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4740,6 +4751,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "double bond", marks: 4, accepts: ["triple bond","can undergo addition reaction"] },
     ],
+    figure: {
+          "candId": "chemistry-2024-OL-paper-p02-i0",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2024-OL-paper-p02-i0.png",
+          "srcHash": "f0c28ce388b85f51577c839328241fba",
+          "alt": "Line drawing of a laboratory gas-preparation and collection set-up. Top left: a pear-shaped dropping funnel, drawn with a liquid level in it and with its stem left open at the top of the artwork, feeding through a stopcock/tap and then through a hatched rubber stopper into the neck of a conical (Erlenmeyer) flask; an arrow labelled \"water\" points into the funnel. A few small dark lumps sit on the flat bottom of the flask, with an arrow labelled \"solid X\" pointing at them. A short side tube leaves the flask just under the neck, runs right as a delivery tube, then bends down over the rim of a rectangular trough of water, dips below the water line and turns up under the open mouth of a tall round-topped tube (gas jar / boiling tube) that stands upright on a small block inside the trough; two tiny bubbles are drawn inside that tube and an arrow labelled \"ethyne\" points into its gas space. Gas is therefore being collected over water.",
+          "attribution": "SEC Leaving Certificate Chemistry 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5132,6 +5151,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "carbon dioxide, water, methane, nitrous oxide, ozone, CFCs, HCFCs, etc. [accept formula]", marks: 9 },
     ],
+    figure: {
+          "candId": "chemistry-2024-ol-paper-p006-i0",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2024-ol-paper-p006-i0.png",
+          "srcHash": "87dcab5873eea134c0e8026164a40580",
+          "alt": "A cut-down periodic table showing the first four periods in the classic stepped outline, with group numbers 1, 2, 13 to 18 across the top and 3 to 12 above the transition block. Each cell carries an atomic number, an element symbol in bold, and an electronegativity value beneath it: H 2.20, Li 0.98, Be 1.57, B 2.04, C 2.55, N 3.04, O 3.44, F 3.98, Na 0.93, Mg 1.31, Al 1.61 through Cl 3.16, and K 0.82 through Br 2.96. Every noble-gas cell shows a dash instead of a number.",
+          "attribution": "SEC Leaving Certificate Chemistry 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5146,6 +5173,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "1s2, 2s2, 2p3", marks: 6, accepts: ["2, 5"] },
     ],
+    figure: {
+          "candId": "chemistry-2024-ol-paper-p006-i0",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2024-ol-paper-p006-i0.png",
+          "srcHash": "87dcab5873eea134c0e8026164a40580",
+          "alt": "A cut-down periodic table showing the first four periods in the classic stepped outline, with group numbers 1, 2, 13 to 18 across the top and 3 to 12 above the transition block. Each cell carries an atomic number, an element symbol in bold, and an electronegativity value beneath it: H 2.20, Li 0.98, Be 1.57, B 2.04, C 2.55, N 3.04, O 3.44, F 3.98, Na 0.93, Mg 1.31, Al 1.61 through Cl 3.16, and K 0.82 through Br 2.96. Every noble-gas cell shows a dash instead of a number.",
+          "attribution": "SEC Leaving Certificate Chemistry 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5160,6 +5195,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "1s2, 2s2, 2p5", marks: 4, accepts: ["2, 7"] },
     ],
+    figure: {
+          "candId": "chemistry-2024-ol-paper-p006-i0",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2024-ol-paper-p006-i0.png",
+          "srcHash": "87dcab5873eea134c0e8026164a40580",
+          "alt": "A cut-down periodic table showing the first four periods in the classic stepped outline, with group numbers 1, 2, 13 to 18 across the top and 3 to 12 above the transition block. Each cell carries an atomic number, an element symbol in bold, and an electronegativity value beneath it: H 2.20, Li 0.98, Be 1.57, B 2.04, C 2.55, N 3.04, O 3.44, F 3.98, Na 0.93, Mg 1.31, Al 1.61 through Cl 3.16, and K 0.82 through Br 2.96. Every noble-gas cell shows a dash instead of a number.",
+          "attribution": "SEC Leaving Certificate Chemistry 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5174,6 +5217,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "3.98 – 3.04 = 0.94", marks: 2 },
     ],
+    figure: {
+          "candId": "chemistry-2024-ol-paper-p006-i0",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2024-ol-paper-p006-i0.png",
+          "srcHash": "87dcab5873eea134c0e8026164a40580",
+          "alt": "A cut-down periodic table showing the first four periods in the classic stepped outline, with group numbers 1, 2, 13 to 18 across the top and 3 to 12 above the transition block. Each cell carries an atomic number, an element symbol in bold, and an electronegativity value beneath it: H 2.20, Li 0.98, Be 1.57, B 2.04, C 2.55, N 3.04, O 3.44, F 3.98, Na 0.93, Mg 1.31, Al 1.61 through Cl 3.16, and K 0.82 through Br 2.96. Every noble-gas cell shows a dash instead of a number.",
+          "attribution": "SEC Leaving Certificate Chemistry 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5202,6 +5253,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "alkene", marks: 8 },
     ],
+    figure: {
+          "candId": "chemistry-2024-ol-paper-p009-i0",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2024-ol-paper-p009-i0.png",
+          "srcHash": "61e9a46e88ab602c4216d86befa9870c",
+          "alt": "A reaction scheme of four shaded rectangles joined by plain arrows, each box tagged with a bold letter underneath. Along the top row a box reading C2H4 tagged Q has a right arrow to a box reading C2H5OH tagged R, which has a right arrow to an empty box tagged S. From box S a downward arrow drops to a lower box reading CH3COOH tagged T. No reagents are printed on any arrow.",
+          "attribution": "SEC Leaving Certificate Chemistry 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5216,6 +5275,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "ethanol", marks: 6 },
     ],
+    figure: {
+          "candId": "chemistry-2024-ol-paper-p009-i0",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2024-ol-paper-p009-i0.png",
+          "srcHash": "61e9a46e88ab602c4216d86befa9870c",
+          "alt": "A reaction scheme of four shaded rectangles joined by plain arrows, each box tagged with a bold letter underneath. Along the top row a box reading C2H4 tagged Q has a right arrow to a box reading C2H5OH tagged R, which has a right arrow to an empty box tagged S. From box S a downward arrow drops to a lower box reading CH3COOH tagged T. No reagents are printed on any arrow.",
+          "attribution": "SEC Leaving Certificate Chemistry 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5230,6 +5297,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "●", marks: 2 },
     ],
+    figure: {
+          "candId": "chemistry-2024-ol-paper-p006-i0",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2024-ol-paper-p006-i0.png",
+          "srcHash": "87dcab5873eea134c0e8026164a40580",
+          "alt": "A cut-down periodic table showing the first four periods in the classic stepped outline, with group numbers 1, 2, 13 to 18 across the top and 3 to 12 above the transition block. Each cell carries an atomic number, an element symbol in bold, and an electronegativity value beneath it: H 2.20, Li 0.98, Be 1.57, B 2.04, C 2.55, N 3.04, O 3.44, F 3.98, Na 0.93, Mg 1.31, Al 1.61 through Cl 3.16, and K 0.82 through Br 2.96. Every noble-gas cell shows a dash instead of a number.",
+          "attribution": "SEC Leaving Certificate Chemistry 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",

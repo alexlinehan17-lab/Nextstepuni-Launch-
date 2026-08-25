@@ -223,7 +223,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-OL-ask-p1-q3-a",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q3-a.png",
           "srcHash": "62d446572ed9a30757393a05d3f8f20b",
-          "alt": "The question as printed on the paper — Show that 𝑥= 4 is a solution of the equation 𝑥ଶ−2𝑥−8 = 0. (a)",
+          "alt": "The question as printed on the paper — Show that 𝑥= 4 is a solution of the equation 𝑥ଶ−2𝑥−8 = 0.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -373,7 +373,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-OL-ask-p1-q5-a",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q5-a.png",
           "srcHash": "235fa59a6887e4cb6abe0137d9272ba1",
-          "alt": "The question as printed on the paper — The function, 𝑓 is defined as 𝑓(𝑥) = 3𝑥ଶ−6𝑥+ 7, where 𝑥∈ℝ. Find 𝑓(0∙67), correct to 2 decimal places. (a)",
+          "alt": "The question as printed on the paper — The function, 𝑓 is defined as 𝑓(𝑥) = 3𝑥ଶ−6𝑥+ 7, where 𝑥∈ℝ. Find 𝑓(0∙67), correct to 2 decimal places.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -403,7 +403,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2021-OL-ask-p1-q5-b",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q5-b.png",
           "srcHash": "8790976105efec202952269eed0ab786",
-          "alt": "The question as printed on the paper — The function, 𝑓 is defined as 𝑓(𝑥) = 3𝑥ଶ−6𝑥+ 7, where 𝑥∈ℝ. Find the value of 𝑥 when 𝑓(𝑥) = 4. (b)",
+          "alt": "The question as printed on the paper — The function, 𝑓 is defined as 𝑓(𝑥) = 3𝑥ଶ−6𝑥+ 7, where 𝑥∈ℝ. Find the value of 𝑥 when 𝑓(𝑥) = 4.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -582,7 +582,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q7",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q7.png",
-          "srcHash": "cf68c3ccb67bb378667665dee8444cf6",
+          "srcHash": "32fb1ec066bd1ae17d35480705f4dbef",
           "alt": "The question as printed on the paper — The rates and thresholds of the Universal Social Charge (USC) in Ireland (excluding the top rate) during 2020 are given in the table below. Standard rates and thresholds for USC 2020 Annual Income Rate 0·5% First €12 012",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
@@ -612,7 +612,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q7-a",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q7-a.png",
-          "srcHash": "9fa512b1915da129c7a582b2da0a29af",
+          "srcHash": "3e805dfa53600952f8a4cdabf3f67427",
           "alt": "The question as printed on the paper — The rates and thresholds of the Universal Social Charge (USC) in Ireland (excluding the top rate) during 2020 are given in the table below. Standard rates and thresholds for USC 2020 Annual Income Rate 0·5% First €12 012",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
@@ -1152,8 +1152,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2021-OL-ask-p1-q10-b-i",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q10-b-i.png",
-          "srcHash": "8d6f4e4cec575c0b537a762547f71b10",
-          "alt": "The question as printed on the paper — John walks around a circular trail of radius 0·5 km at a steady speed of 6 km/h. (b) (i) How long will it take him to complete 3 full circuits of the trail? Give your answer correct to the nearest minute. Trail 0·5 km",
+          "srcHash": "ca8ebfe42a255a30240088ac2357e141",
+          "alt": "The question as printed on the paper — John walks around a circular trail of radius 0·5 km at a steady speed of 6 km/h. (b) (i) How long will it take him to complete 3 full circuits of the trail? Give your answer correct to the nearest minute.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -1302,8 +1302,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q1-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q1-b-ii.png",
-          "srcHash": "5a36fba58b461886599f787ebcf5f4ee",
-          "alt": "The question as printed on the paper — (b) Kate spins each spinner once. What is the probability that she must use: (ii) a red or yellow coloured spot?",
+          "srcHash": "372e58ca02b74cf26703dc8c2e45b3a6",
+          "alt": "The question as printed on the paper — The game “Twister” is played using two spinners and a mat with coloured spots. The two spinners needed for the game are shown below. Both consist of four equal sections. A player spins both spinners and must then place t",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -1332,8 +1332,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q1-c-i",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q1-c-i.png",
-          "srcHash": "1402247f94a8e1d0913aeece65b3b148",
-          "alt": "The question as printed on the paper — (c) Jack spins each spinner once. What is the probability that the outcome is: (i) his right hand and a blue spot?",
+          "srcHash": "c0657abd0e98073c4eb39bd8f38fe007",
+          "alt": "The question as printed on the paper — The game “Twister” is played using two spinners and a mat with coloured spots. The two spinners needed for the game are shown below. Both consist of four equal sections. A player spins both spinners and must then place t",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -1662,7 +1662,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q6",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q6.png",
-          "srcHash": "623f0c4e473e8d9ed4669bac1f7eb57e",
+          "srcHash": "3b8d454b41c8f4c54f50ba8f6284f83b",
           "alt": "The question as printed on the paper — On the diagram below showing the triangle ABC , construct the perpendicular bisector (a) (i) of the side [𝐴𝐶]. Show all your construction lines and arcs clearly. Construct the circumcircle of the given triangle 𝐴𝐵𝐶. (ii)",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
@@ -1722,8 +1722,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q6-b-i",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q6-b-i.png",
-          "srcHash": "29d6988210ff8ef0b4a57e7c470011f6",
-          "alt": "The question as printed on the paper — The triangle 𝑃𝑄𝑅 is the image of the triangle 𝐷𝐸𝐹 under an enlargement. (b) (The diagram is not drawn to scale.) The scale factor of the enlargement, 𝑘, is 2·5. |𝐸𝐹| = 3 cm. 𝑃 𝐷 𝐹 𝐸 3 cm 𝑅 𝑄 Use the scale factor to find ",
+          "srcHash": "2541575d19c9ccafb9167c669fdf3d75",
+          "alt": "The question as printed on the paper — The triangle 𝑃𝑄𝑅 is the image of the triangle 𝐷𝐸𝐹 under an enlargement. (b) (The diagram is not drawn to scale.) The scale factor of the enlargement, 𝑘, is 2·5. |𝐸𝐹| = 3 cm. 𝑃 𝑅 𝑄 Use the scale factor to find |𝑄𝑅|. (i)",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -2022,7 +2022,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q8-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q8-b-ii.png",
-          "srcHash": "fa834dd594f8ced5935543578a209407",
+          "srcHash": "060fbd40304afd8b76ed38246efaef9b",
           "alt": "The question as printed on the paper — The diagram on the right shows the plan of a lake. The line segment [𝑃𝑄] represents the distance from the pier, 𝑃, to the far side of the lake. 30 m 30 m At equal intervals of 10 m along this line, 20 m perpendicular mea",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
@@ -2112,8 +2112,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2021-OL-ask-p2-q9-b-i",
           "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q9-b-i.png",
-          "srcHash": "3fc96a6b9bded3b5d04cc67f409092cb",
-          "alt": "The question as printed on the paper — The aircraft flies from airport 𝐴 to airport 𝐵, (b) and then on to airport 𝐶, at the same altitude. 𝐵 The pilot records the flight summary on the 97° given diagram. Find the distance from airport 𝐵 (i) to airport 𝐶. Give",
+          "srcHash": "098e03b5930a6247e4c69fbf1203fa22",
+          "alt": "The question as printed on the paper — The line segment [ SE ], shown below, represents an airport runway. The point S and the point E represent the start and end points of the runway respectively. The diagram is drawn to a scale of 1 unit = 250 metres. 1 uni",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
     },
@@ -2292,7 +2292,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q1-a",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q1-a.png",
-          "srcHash": "ce320704d836746c9de90ed286588f13",
+          "srcHash": "151754873734c8eb8d8179d07e410b16",
           "alt": "The question as printed on the paper — The complex number 𝑧ଵ is shown on the Argand diagram below. Im 4 3 2 1 Re -6 -5 -4 -3 -2 -1 1 2 3 4 5 -1 -2 -3 𝑧ଵ -4 (a) Using the Argand diagram: write down the values of 𝑧ଵ and 𝑧ଵഥ , where 𝑧ଵഥ is the complex conjugate ",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
@@ -2942,7 +2942,7 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p1-q8-a-i", topicId: "maths-3-3", conceptId: "work-out-how-many-acid-200",
+    id: "maths-2022-ol-p1-q8-a-i", topicId: "maths-4-2", conceptId: "work-out-how-many-acid-200",
     section: "B", questionRef: "2022 OL Paper 1 Q8(a)(i)",
     questionText: "Work out how many ml of acid are in 200 ml of liquid from Bottle A",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -3032,7 +3032,7 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p1-q8-a-iv", topicId: "maths-3-3", conceptId: "when-she-making-another-mixture-jessica",
+    id: "maths-2022-ol-p1-q8-a-iv", topicId: "maths-4-2", conceptId: "when-she-making-another-mixture-jessica",
     section: "B", questionRef: "2022 OL Paper 1 Q8(a)(iv)",
     questionText: "(iv) When she is making another mixture, Jessica makes a mistake in measuring. She wants to measure out 250 ml but she measures out 260 ml instead",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -3062,7 +3062,7 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p1-q8-b-i", topicId: "maths-3-3", conceptId: "write-down-values-cube-these-values",
+    id: "maths-2022-ol-p1-q8-b-i", topicId: "maths-4-2", conceptId: "write-down-values-cube-these-values",
     section: "B", questionRef: "2022 OL Paper 1 Q8(b)(i)",
     questionText: "Write down the values of C, E, and F for a cube, and show that C−E+ F= 2 for these values",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -3252,8 +3252,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q9-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q9-b-ii.png",
-          "srcHash": "f87501f7884008686c6e7044bc41ff52",
-          "alt": "The question as printed on the paper — Based on this model, write a formula for 𝑉(𝑡), the value of Brian’s car after 𝑡 years, (b) (i) in terms of the age of the car (𝑡). Use the fact that the value decreases by 20% each year. Hence, or otherwise, work out the",
+          "srcHash": "9724f01e79c6faeb77f0d1e83b5986e3",
+          "alt": "The question as printed on the paper — Brian buys a new car. The graph below represents a model that can be used to predict the value of this car, 𝑉, for the next number of years. This model assumes that the value of the car reduces (depreciates) by a fixed p",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -3372,8 +3372,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q10-a-i",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q10-a-i.png",
-          "srcHash": "32c883ee361aa0b711f3841d858bc0d6",
-          "alt": "The question as printed on the paper — (a) During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: ℎ= −2𝑡ଶ+ 5t + 1∙2 where ℎ is the height of the ball, in metres, 𝑡 seconds after being h",
+          "srcHash": "f73a6bea23c0426c79c69eb65702ea1e",
+          "alt": "The question as printed on the paper — Keith plays hurling. (a) During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: ℎ= −2𝑡ଶ+ 5t + 1∙2 where ℎ is the height of the ball, in metres, 𝑡 ",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -3402,8 +3402,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q10-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q10-a-ii.png",
-          "srcHash": "b5f783d28b02403005a451ca0de800ad",
-          "alt": "The question as printed on the paper — (a) During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: ℎ= −2𝑡ଶ+ 5t + 1∙2 where ℎ is the height of the ball, in metres, 𝑡 seconds after being h",
+          "srcHash": "7b4c64bd2263fc1c80cc5e5aadd297ed",
+          "alt": "The question as printed on the paper — Keith plays hurling. (a) During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: ℎ= −2𝑡ଶ+ 5t + 1∙2 where ℎ is the height of the ball, in metres, 𝑡 ",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -3432,8 +3432,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q10-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q10-a-iii.png",
-          "srcHash": "89d60f5bc2413b93c8cc238dfa3a35a2",
-          "alt": "The question as printed on the paper — (a) During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: ℎ= −2𝑡ଶ+ 5t + 1∙2 where ℎ is the height of the ball, in metres, 𝑡 seconds after being h",
+          "srcHash": "50abea0c2204fe69b8ef8afa87284e59",
+          "alt": "The question as printed on the paper — Keith plays hurling. (a) During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: ℎ= −2𝑡ଶ+ 5t + 1∙2 where ℎ is the height of the ball, in metres, 𝑡 ",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -3462,8 +3462,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2022-OL-ask-p1-q10-a-iv",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p1-q10-a-iv.png",
-          "srcHash": "7c4f52136292813baa9084485f4b1d54",
-          "alt": "The question as printed on the paper — (a) During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: ℎ= −2𝑡ଶ+ 5t + 1∙2 where ℎ is the height of the ball, in metres, 𝑡 seconds after being h",
+          "srcHash": "575f608022734c755b7ceeafc4cf25fd",
+          "alt": "The question as printed on the paper — Keith plays hurling. (a) During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: ℎ= −2𝑡ଶ+ 5t + 1∙2 where ℎ is the height of the ball, in metres, 𝑡 ",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -3602,7 +3602,7 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p2-q1-a-ii", topicId: "maths-3-1", conceptId: "using-slopes-investigate-perpendicular-justify",
+    id: "maths-2022-ol-p2-q1-a-ii", topicId: "maths-2-2", conceptId: "using-slopes-investigate-perpendicular-justify",
     section: "B", questionRef: "2022 OL Paper 2 Q1(a)(ii)",
     questionText: "By using slopes, investigate if AC is perpendicular to BC. Justify your answer",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
@@ -3632,7 +3632,7 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p2-q1-b-ii", topicId: "maths-3-1", conceptId: "write-down-equation-horizontal-line",
+    id: "maths-2022-ol-p2-q1-b-ii", topicId: "maths-2-2", conceptId: "write-down-equation-horizontal-line",
     section: "B", questionRef: "2022 OL Paper 2 Q1(b)(ii)",
     questionText: "Write down the equation of the horizontal line LM",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -3842,7 +3842,7 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p2-q4-a", topicId: "maths-1-6", conceptId: "group-students-sat-exam-each-student",
+    id: "maths-2022-ol-p2-q4-a", topicId: "maths-3-3", conceptId: "group-students-sat-exam-each-student",
     section: "B", questionRef: "2022 OL Paper 2 Q4(a)",
     questionText: "A group of students sat an exam. Each student was given a grade. The following table shows how many students got each grade",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 8, 12, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
@@ -3852,7 +3852,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2022-OL-ask-p2-q4-a",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p2-q4-a.png",
-          "srcHash": "12920e4bf5742db7263e08dc38e44493",
+          "srcHash": "e4a1269f19f4449a85662b7223a38ca6",
           "alt": "The question as printed on the paper — (a) A group of students sat an exam. Each student was given a grade. The following table shows how many students got each grade. Grade Distinction High Merit Merit Achieved 8 12 39 13 Number of students Complete the pie ",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
@@ -3882,7 +3882,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2022-OL-ask-p2-q4-b-i",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p2-q4-b-i.png",
-          "srcHash": "b6fe5e4eef6c4c7e21c42121013fecb5",
+          "srcHash": "c97a7c682060a9e4692ed54accd7e6d4",
           "alt": "The question as printed on the paper — (b) A large group of people took a reading test. The scores were normally distributed, with a mean of 100 and a standard deviation of 20. 100 Use the empirical rule to answer parts (b)(i) and (b)(ii). What percentage of ",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
@@ -3972,8 +3972,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2022-OL-ask-p2-q5-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p2-q5-a-iii.png",
-          "srcHash": "75ae4e5cf73844b07d04ba3a4c60510f",
-          "alt": "The question as printed on the paper — Write down the size of the angle ∠ 𝑃𝑄𝑅. (a) (i) Show that the area of the triangle 𝑃𝑄𝑅 is 16√3 cm2. (ii) (iii) Hence, or otherwise, find the perpendicular height of the triangle 𝑃𝑄𝑅, taking 𝑃𝑄 as the base. Give your answ",
+          "srcHash": "6b72acee88a1b7b6f7425b6a2daecd9f",
+          "alt": "The question as printed on the paper — An equilateral triangle 𝑃𝑄𝑅 has sides of length 8 cm. 𝑅 𝑄 𝑃 8 cm Write down the size of the angle ∠ 𝑃𝑄𝑅. (a) (i) Show that the area of the triangle 𝑃𝑄𝑅 is 16√3 cm2. (ii) (iii) Hence, or otherwise, find the perpendicular ",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -4152,8 +4152,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2022-OL-ask-p2-q7-a-i",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p2-q7-a-i.png",
-          "srcHash": "a453e7db4c82a448a8a1dde9ce99247a",
-          "alt": "The question as printed on the paper — (a) The staff record the weight of each animal in the shelter on two different days: the day they are taken in to the shelter (Day X) and a number of days later (Day Y). The table below shows the weights of 10 dogs (labe",
+          "srcHash": "080fc40322e7f33d2cfd8b309ea77089",
+          "alt": "The question as printed on the paper — An animal shelter takes cats and dogs. (a) The staff record the weight of each animal in the shelter on two different days: the day they are taken in to the shelter (Day X) and a number of days later (Day Y). The table b",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -4182,8 +4182,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2022-OL-ask-p2-q7-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p2-q7-a-ii.png",
-          "srcHash": "e69ce5953937cb1fcba841e75564e1b9",
-          "alt": "The question as printed on the paper — (a) The staff record the weight of each animal in the shelter on two different days: the day they are taken in to the shelter (Day X) and a number of days later (Day Y). The table below shows the weights of 10 dogs (labe",
+          "srcHash": "175014ff7bbb02a4bf13825b23f1d001",
+          "alt": "The question as printed on the paper — An animal shelter takes cats and dogs. (a) The staff record the weight of each animal in the shelter on two different days: the day they are taken in to the shelter (Day X) and a number of days later (Day Y). The table b",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -4212,7 +4212,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2022-OL-ask-p2-q7-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p2-q7-a-iii.png",
-          "srcHash": "1652adae93e3c623c43803d4f34a21e9",
+          "srcHash": "a059ff0c81bf099b8f428337f3851a86",
           "alt": "The question as printed on the paper — An animal shelter takes cats and dogs. (a) The staff record the weight of each animal in the shelter on two different days: the day they are taken in to the shelter (Day X) and a number of days later (Day Y). The table b",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
@@ -4242,8 +4242,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2022-OL-ask-p2-q7-b",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p2-q7-b.png",
-          "srcHash": "8e2bbe92de6a3fff939bc68aeb562933",
-          "alt": "The question as printed on the paper — An animal shelter takes cats and dogs. (b) Complete the table, by filling in the four missing values. Male Female Total 𝟏𝟒 5 9 Cats 11 Dogs 𝟒𝟎 Total Three different animals were picked at random from the animals in the s",
+          "srcHash": "28a40697a7dd67032638f696e3264719",
+          "alt": "The question as printed on the paper — An animal shelter takes cats and dogs. (b) Complete the table, by filling in the four missing values. Male Female Total 𝟏𝟒 5 9 Cats 11 Dogs 𝟒𝟎 Total",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -4482,8 +4482,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2022-OL-ask-p2-q8-c-i",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p2-q8-c-i.png",
-          "srcHash": "ebbe9ee69cf8a95dfd3c0fbfef19a052",
-          "alt": "The question as printed on the paper — (c) Assume that the Fastnet lighthouse can be seen from anywhere within a circle of radius 50 km. (i) Work out the area of the circle within which the Fastnet lighthouse can be seen. Give your answer correct to the neare",
+          "srcHash": "b197c9bddf884a9191a22e61ede13e5c",
+          "alt": "The question as printed on the paper — The top of a particular lighthouse is in the shape of a hemisphere on top of a cylinder. The hemisphere and the cylinder both have a radius of 3 m. ℎ 3 m (c) Assume that the Fastnet lighthouse can be seen from anywhere w",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -4512,8 +4512,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2022-OL-ask-p2-q8-c-ii",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p2-q8-c-ii.png",
-          "srcHash": "fe37862bda54eff8992ecae8ae13c7c0",
-          "alt": "The question as printed on the paper — (c) Assume that the Fastnet lighthouse can be seen from anywhere within a circle of radius 50 km. (ii) 50 km = 27 nautical miles. Use this to work out how many km are in 1 nautical mile. Give your answer correct to 4 sig",
+          "srcHash": "1c18be48e126398512bc2453a7261f06",
+          "alt": "The question as printed on the paper — The top of a particular lighthouse is in the shape of a hemisphere on top of a cylinder. The hemisphere and the cylinder both have a radius of 3 m. ℎ 3 m (c) Assume that the Fastnet lighthouse can be seen from anywhere w",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
     },
@@ -4542,7 +4542,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2022-OL-ask-p2-q8-d",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p2-q8-d.png",
-          "srcHash": "79d2d65d792ceae421d8b1328dc5fe4a",
+          "srcHash": "cb8673157372abd5ea198dc9e38b341d",
           "alt": "The question as printed on the paper — The top of a particular lighthouse is in the shape of a hemisphere on top of a cylinder. The hemisphere and the cylinder both have a radius of 3 m. ℎ 3 m The top of the Fastnet lighthouse, 𝐹, is 49 m above sea level. (d)",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
@@ -4562,7 +4562,7 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p2-q9-a", topicId: "maths-2-1", conceptId: "state-which-statements-most-likely-true",
+    id: "maths-2022-ol-p2-q9-a", topicId: "maths-3-4", conceptId: "state-which-statements-most-likely-true",
     section: "B", questionRef: "2022 OL Paper 2 Q9(a)",
     questionText: "State which of the following statements is most likely to be true, and write down a possible height of Seán that would support your answer. Tick (✓) one box only",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -4602,7 +4602,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2022-OL-ask-p2-q9-b",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p2-q9-b.png",
-          "srcHash": "1a166e3fa226cf26d4c31467e0b4df2a",
+          "srcHash": "c96866ec5942b0f7baa8250cb861c1c4",
           "alt": "The question as printed on the paper — Seán has built a shed. The diagrams below show the dimensions of Seán’s shed. The shed is in the shape of a prism. Its front face is in the shape of a triangle on top of a rectangle. Its highest point is directly above t",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
@@ -4652,7 +4652,7 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p2-q9-e-i", topicId: "maths-2-1", conceptId: "correct-decimal-places",
+    id: "maths-2022-ol-p2-q9-e-i", topicId: "maths-3-4", conceptId: "correct-decimal-places",
     section: "B", questionRef: "2022 OL Paper 2 Q9(e)(i)",
     questionText: "Show that |BC| = 4∙65 m, correct to 2 decimal places",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
@@ -4662,7 +4662,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2022-OL-ask-p2-q9-e-i",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p2-q9-e-i.png",
-          "srcHash": "603b6a6449b6b80e8b9a94ada187ab7e",
+          "srcHash": "8bd9b64c5b5712b8c3a3bb0935c96972",
           "alt": "The question as printed on the paper — Seán has built a shed. The diagrams below show the dimensions of Seán’s shed. The shed is in the shape of a prism. Its front face is in the shape of a triangle on top of a rectangle. Its highest point is directly above t",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
@@ -4682,7 +4682,7 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p2-q9-e-ii", topicId: "maths-2-1", conceptId: "acb-angle-roof-makes-point-correct",
+    id: "maths-2022-ol-p2-q9-e-ii", topicId: "maths-3-4", conceptId: "acb-angle-roof-makes-point-correct",
     section: "B", questionRef: "2022 OL Paper 2 Q9(e)(ii)",
     questionText: "Find |∠ ACB| , the angle that the roof makes at the point C. (ii) Give your answer correct to the nearest degree. Remember that |BC| = 4∙65 m, correct to 2 decimal places",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -4692,7 +4692,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2022-OL-ask-p2-q9-e-ii",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p2-q9-e-ii.png",
-          "srcHash": "1d2e465a0d10f38bef9775ad3ea426a9",
+          "srcHash": "3e2bd2ad854ade493446f22f5ce0426b",
           "alt": "The question as printed on the paper — Seán has built a shed. The diagrams below show the dimensions of Seán’s shed. The shed is in the shape of a prism. Its front face is in the shape of a triangle on top of a rectangle. Its highest point is directly above t",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
@@ -4802,7 +4802,7 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2022 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2022-ol-p2-q10-b-iv", topicId: "maths-3-3", conceptId: "according-2019-irish-sport-monitor-report",
+    id: "maths-2022-ol-p2-q10-b-iv", topicId: "maths-1-5", conceptId: "according-2019-irish-sport-monitor-report",
     section: "B", questionRef: "2022 OL Paper 2 Q10(b)(iv)",
     questionText: "(iv) According to the 2019 Irish Sport Monitor Report, 65% of the adults in Ireland walked for recreation",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 8, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
@@ -4842,7 +4842,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2022-OL-ask-p2-q10-c",
           "src": "/exam-figures/maths/markbank/maths-2022-OL-ask-p2-q10-c.png",
-          "srcHash": "f6573b9a384eef29463b5d97a9440dbb",
+          "srcHash": "29bd32504cf00ebdad2507d4b29fa883",
           "alt": "The question as printed on the paper — A survey was carried out to investigate the amount and type of exercise that adults in Ireland are taking in 2022. This survey was carried out on a sample of adults in Ireland. Assume that 20% of adults in Ireland jog fo",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2022 Ordinary Level — © State Examinations Commission"
@@ -5383,7 +5383,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-OL-ask-p1-q6-b",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q6-b.png",
           "srcHash": "91a483c1e591a7725a19e5b460126c25",
-          "alt": "The question as printed on the paper — Expand and simplify (2𝑥−4)ଶ−6. (b)",
+          "alt": "The question as printed on the paper — Expand and simplify (2𝑥−4)ଶ−6.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -5822,7 +5822,7 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p1-q9-a-i", topicId: "maths-3-3", conceptId: "diagram-estimate-number-actual-new-cases",
+    id: "maths-2023-ol-p1-q9-a-i", topicId: "maths-3-1", conceptId: "diagram-estimate-number-actual-new-cases",
     section: "B", questionRef: "2023 OL Paper 1 Q9(a)(i)",
     questionText: "From the diagram, estimate the number of actual new cases there were on day t = 12, using the relevant dot",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
@@ -5832,7 +5832,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q9-a-i",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q9-a-i.png",
-          "srcHash": "1433e7803f32d346cb4f72ab060a4896",
+          "srcHash": "35cc33ceb6990fd474a7ba79089b44bb",
           "alt": "The question as printed on the paper — The diagram below shows the actual daily number of new cases of a disease, from day 𝑡= 0 (a) to day 𝑡= 25. It also shows the number of cases according to a mathematical model over this period of time. actual number model",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
@@ -5862,7 +5862,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q9-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q9-a-ii.png",
-          "srcHash": "fd7061b4cc533fea8f51d053e545544e",
+          "srcHash": "395ad3720c79a8974ba17574b78fa095",
           "alt": "The question as printed on the paper — The diagram below shows the actual daily number of new cases of a disease, from day 𝑡= 0 (a) to day 𝑡= 25. It also shows the number of cases according to a mathematical model over this period of time. actual number model",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
@@ -5882,7 +5882,7 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p1-q9-a-iii", topicId: "maths-3-3", conceptId: "iii-takes-approximately-days-daily-number",
+    id: "maths-2023-ol-p1-q9-a-iii", topicId: "maths-3-1", conceptId: "iii-takes-approximately-days-daily-number",
     section: "B", questionRef: "2023 OL Paper 1 Q9(a)(iii)",
     questionText: "(iii) Show that it takes approximately 5 days for the daily number of new cases to double, according to the model (that is, according to the curve in the diagram)",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -5892,7 +5892,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q9-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q9-a-iii.png",
-          "srcHash": "d8fb5c062f5a1b444c734774268169ee",
+          "srcHash": "d2f5c895c73fbcb99396ab9762018ae1",
           "alt": "The question as printed on the paper — The diagram below shows the actual daily number of new cases of a disease, from day 𝑡= 0 (a) to day 𝑡= 25. It also shows the number of cases according to a mathematical model over this period of time. actual number model",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
@@ -5912,7 +5912,7 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p1-q9-a-iv", topicId: "maths-3-3", conceptId: "estimate-what-day-value-number-new",
+    id: "maths-2023-ol-p1-q9-a-iv", topicId: "maths-3-1", conceptId: "estimate-what-day-value-number-new",
     section: "B", questionRef: "2023 OL Paper 1 Q9(a)(iv)",
     questionText: "(iv) Hence, estimate on what day (value of t) the number of new cases will first be at least 100 000, according to the model. Show your working out",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -5922,7 +5922,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2023-OL-ask-p1-q9-a-iv",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p1-q9-a-iv.png",
-          "srcHash": "0307a436c7058f80ce277a4d3e717b50",
+          "srcHash": "24b5c77eaa6fd338b798b920c458f1e7",
           "alt": "The question as printed on the paper — The diagram below shows the actual daily number of new cases of a disease, from day 𝑡= 0 (a) to day 𝑡= 25. It also shows the number of cases according to a mathematical model over this period of time. actual number model",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
@@ -5972,7 +5972,7 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p1-q9-b-iii", topicId: "maths-3-3", conceptId: "iii-measures-put-place-slow-down",
+    id: "maths-2023-ol-p1-q9-b-iii", topicId: "maths-3-1", conceptId: "iii-measures-put-place-slow-down",
     section: "B", questionRef: "2023 OL Paper 1 Q9(b)(iii)",
     questionText: "(iii) Measures are put in place to slow down the spread of the disease. From t = 14 days onwards, the number of new daily cases starts to decrease",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -6552,8 +6552,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q4-a-i",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q4-a-i.png",
-          "srcHash": "524f6c73d44a0d94c9a51685c7501754",
-          "alt": "The question as printed on the paper — (a) During a match, Rohan takes a number of free throws. He scores 70% of his free throws, on average. Assume that scoring his free throws are independent events. Find the probability that he scores his first 3 free thro",
+          "srcHash": "b6835cdd3433189175a6c38682886ce2",
+          "alt": "The question as printed on the paper — Rohan plays basketball. (a) During a match, Rohan takes a number of free throws. He scores 70% of his free throws, on average. Assume that scoring his free throws are independent events. Find the probability that he scor",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -6582,8 +6582,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q4-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q4-a-ii.png",
-          "srcHash": "13259782220e1b4bc37a16facf677ea3",
-          "alt": "The question as printed on the paper — (a) During a match, Rohan takes a number of free throws. He scores 70% of his free throws, on average. Assume that scoring his free throws are independent events. Find the probability that he scores exactly 2 of his firs",
+          "srcHash": "d154c4ed016b06f90ded944c865ba01e",
+          "alt": "The question as printed on the paper — Rohan plays basketball. (a) During a match, Rohan takes a number of free throws. He scores 70% of his free throws, on average. Assume that scoring his free throws are independent events. Find the probability that he scor",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -6612,8 +6612,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q4-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q4-a-iii.png",
-          "srcHash": "58eac9bd53cd9c0b26b158f3ff8779f8",
-          "alt": "The question as printed on the paper — (a) During a match, Rohan takes a number of free throws. He scores 70% of his free throws, on average. Assume that scoring his free throws are independent events. (iii) Give one reason why scoring his free throws might n",
+          "srcHash": "bcbe0af1174499d68358939045f37ab3",
+          "alt": "The question as printed on the paper — Rohan plays basketball. (a) During a match, Rohan takes a number of free throws. He scores 70% of his free throws, on average. Assume that scoring his free throws are independent events. (iii) Give one reason why scoring",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -6672,7 +6672,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q5-a",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q5-a.png",
-          "srcHash": "ff6102f7816c646c747fbe3af1ef01c6",
+          "srcHash": "4cdafef54d6a2162cab54b45a0525c97",
           "alt": "The question as printed on the paper — The diagram below (not to scale) shows a square with sides of length 12 cm. The circle 𝑐 is inside the square, and touches the four sides of the square. The circle 𝑘 is outside the square, and goes through the four corne",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
@@ -6702,7 +6702,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q5-c",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q5-c.png",
-          "srcHash": "6e5dc342a8f6db20656208a975cc2fe2",
+          "srcHash": "8af51e6339baad66b2a11407491185a1",
           "alt": "The question as printed on the paper — The diagram below (not to scale) shows a square with sides of length 12 cm. The circle 𝑐 is inside the square, and touches the four sides of the square. The circle 𝑘 is outside the square, and goes through the four corne",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
@@ -6732,7 +6732,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q5-d",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q5-d.png",
-          "srcHash": "a742a659ca39db9ddc951a12b81ea13d",
+          "srcHash": "d18b090f83ede230260ec577440d7eb5",
           "alt": "The question as printed on the paper — The diagram below (not to scale) shows a square with sides of length 12 cm. The circle 𝑐 is inside the square, and touches the four sides of the square. The circle 𝑘 is outside the square, and goes through the four corne",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
@@ -6762,7 +6762,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q5-e",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q5-e.png",
-          "srcHash": "2047e0bcda72e470a9f648ab094ed0ec",
+          "srcHash": "b6cd5ee9b12afb28b3696bab17d59d4a",
           "alt": "The question as printed on the paper — The diagram below (not to scale) shows a square with sides of length 12 cm. The circle 𝑐 is inside the square, and touches the four sides of the square. The circle 𝑘 is outside the square, and goes through the four corne",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
@@ -6822,8 +6822,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q6-b",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q6-b.png",
-          "srcHash": "f42d9bfba1516148670de20cb2b98fe5",
-          "alt": "The question as printed on the paper — (b) The diagram below shows another parallelogram (not to scale). The sizes of three of the angles are given, where 𝑥, 𝑦∈ℝ. Use the information in the diagram to work out the value of 𝑥 and the value of 𝑦. (𝑥+ 3𝑦)° (2𝑥−3",
+          "srcHash": "aad7a3c8ba7980fc49399b64ea256c92",
+          "alt": "The question as printed on the paper — (b) The diagram below shows another parallelogram (not to scale). The sizes of three of the angles are given, where 𝑥, 𝑦∈ℝ. Use the information in the diagram to work out the value of 𝑥 and the value of 𝑦.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -6942,8 +6942,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q7-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q7-a-iii.png",
-          "srcHash": "b21270536e4d1b4dcc148418af7e6edb",
-          "alt": "The question as printed on the paper — The diagram below shows a road ሾ𝐴𝐵ሿ. 𝐴𝐶 is horizontal and 𝐵𝐶 is vertical. (a) The diagram is not to scale. 𝐵 Road 𝐴 𝐶 The gradient of the road ሾ𝐴𝐵ሿ is: |𝐵𝐶| |𝐴𝐶| written as a percentage. It is a measure of how steep the ",
+          "srcHash": "a5a68b68cc499c3b5703d5424b628a22",
+          "alt": "The question as printed on the paper — Olga is a cyclist. She is measuring how long and how steep different roads are. The diagram below shows a road ሾ𝐴𝐵ሿ. 𝐴𝐶 is horizontal and 𝐵𝐶 is vertical. (a) The diagram is not to scale. 𝐵 Road 𝐴 𝐶 The gradient of the ro",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -7002,7 +7002,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q7-b",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q7-b.png",
-          "srcHash": "c3cf2f02a7de63c049701fc7d524ec70",
+          "srcHash": "500c1b9496d7e1cc0dca8735f2c7fd87",
           "alt": "The question as printed on the paper — Olga is a cyclist. She is measuring how long and how steep different roads are. Olga wants to measure the distance between two points, 𝑅 and 𝑂. (b) She marks a point 𝑃 on the ground, so that the distance from 𝑅 to 𝑃 is 2",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
@@ -7032,8 +7032,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q8-a",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q8-a.png",
-          "srcHash": "100f9205c581bb3eb4439e765133fe8f",
-          "alt": "The question as printed on the paper — A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2∙4 m and an internal depth of 0∙9 m. 0∙9 m 2∙4 m (a) The instruction manual rec",
+          "srcHash": "85e73787e834b5639589fa94eecd6c51",
+          "alt": "The question as printed on the paper — A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2∙4 m and an internal depth of 0∙9 m. 2∙4 m (a) The instruction manual recommend",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -7062,8 +7062,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q8-b-i",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q8-b-i.png",
-          "srcHash": "354e374835d291b2470ad965fb84d439",
-          "alt": "The question as printed on the paper — The family buys 3 pool seats. Each pool seat is a cube, with sides of length 0∙5 m. (b) Show that the total volume of the 3 pool seats is 0∙375 m3. (i)",
+          "srcHash": "d7774baa63971cdaa4eb601e5d36a52c",
+          "alt": "The question as printed on the paper — A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2∙4 m and an internal depth of 0∙9 m. 2∙4 m The family buys 3 pool seats. Each p",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -7092,8 +7092,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q8-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q8-b-ii.png",
-          "srcHash": "bec9c631c298b730556ea64c6142d499",
-          "alt": "The question as printed on the paper — The family buys 3 pool seats. Each pool seat is a cube, with sides of length 0∙5 m. (b) The pool is filled with water to a height of 0∙6 m. (ii) The 3 pool seats are put into the pool, so that each seat is fully covered ",
+          "srcHash": "5a53aea99543597a7170c411c87b0d65",
+          "alt": "The question as printed on the paper — A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2∙4 m and an internal depth of 0∙9 m. 2∙4 m The family buys 3 pool seats. Each p",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -7122,8 +7122,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q8-c-i",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q8-c-i.png",
-          "srcHash": "3f64e91e01e78a1b85b0802d7e5c61cc",
-          "alt": "The question as printed on the paper — A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2∙4 m and an internal depth of 0∙9 m. 0∙9 m 2∙4 m (c) The family also buys a cov",
+          "srcHash": "9806afa7b1414721a3f3d32b2c5ea069",
+          "alt": "The question as printed on the paper — A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2∙4 m and an internal depth of 0∙9 m. 2∙4 m (c) The family also buys a cover for",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -7152,8 +7152,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q8-c-ii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q8-c-ii.png",
-          "srcHash": "34328c8793b607b7b9ea38f10641b7e2",
-          "alt": "The question as printed on the paper — (c) The family also buys a cover for the pool, to help keep the water clean. It is in the shape of a right circular cone, with a radius of 1∙3 m and a vertical height of 0∙8 m. 𝑙 0∙8 m 1∙3 m (ii) Work out the curved surf",
+          "srcHash": "b2ffea300c8abb5f1a289bd2221ca52c",
+          "alt": "The question as printed on the paper — A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2∙4 m and an internal depth of 0∙9 m. 2∙4 m (c) The family also buys a cover for",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -7182,8 +7182,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2023-OL-ask-p2-q8-c-iii",
           "src": "/exam-figures/maths/markbank/maths-2023-OL-ask-p2-q8-c-iii.png",
-          "srcHash": "ae06096228123199b1daa18caba9cce3",
-          "alt": "The question as printed on the paper — (c) The family also buys a cover for the pool, to help keep the water clean. It is in the shape of a right circular cone, with a radius of 1∙3 m and a vertical height of 0∙8 m. 𝑙 0∙8 m 1∙3 m (iii) The diagram below shows",
+          "srcHash": "c272e22afb67eb8b9881c45d964453fa",
+          "alt": "The question as printed on the paper — A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2∙4 m and an internal depth of 0∙9 m. 2∙4 m (c) The family also buys a cover for",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Ordinary Level — © State Examinations Commission"
     },
@@ -7262,7 +7262,7 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p2-q9-a-iv", topicId: "maths-3-3", conceptId: "draw-graph-chart-represent-data-table",
+    id: "maths-2023-ol-p2-q9-a-iv", topicId: "maths-5-2", conceptId: "draw-graph-chart-represent-data-table",
     section: "B", questionRef: "2023 OL Paper 2 Q9(a)(iv)",
     questionText: "(iv) Draw a graph or chart to represent the data in the table. Show clearly any relevant calculations. Label your graph or chart clearly",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 5, 10, 15)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
@@ -7352,7 +7352,7 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p2-q9-b-iii", topicId: "maths-3-3", conceptId: "iii-general-students-get-rating-excellent",
+    id: "maths-2023-ol-p2-q9-b-iii", topicId: "maths-5-2", conceptId: "iii-general-students-get-rating-excellent",
     section: "B", questionRef: "2023 OL Paper 2 Q9(b)(iii)",
     questionText: "(iii) In general, 10% of students get a rating of Excellent on this statistics test",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -7382,7 +7382,7 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2023 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2023-ol-p2-q10-a", topicId: "maths-1-5", conceptId: "work-out-cba-size-angle-cba",
+    id: "maths-2023-ol-p2-q10-a", topicId: "maths-5-2", conceptId: "work-out-cba-size-angle-cba",
     section: "B", questionRef: "2023 OL Paper 2 Q10(a)",
     questionText: "Work out |∠CBA|, the size of the angle CBA",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
@@ -7892,7 +7892,7 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p1-q7-b-i", topicId: "maths-5-2", conceptId: "number-bacteria-after-hour-after-hours",
+    id: "maths-2024-ol-p1-q7-b-i", topicId: "maths-3-1", conceptId: "number-bacteria-after-hour-after-hours",
     section: "B", questionRef: "2024 OL Paper 1 Q7(b)(i)",
     questionText: "Use k(t) to find the number of bacteria after 1 hour and after 2 hours. Give each answer correct to the nearest whole number",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
@@ -7902,7 +7902,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q7-b-i",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q7-b-i.png",
-          "srcHash": "edb35b465890de36e0f0ac9d90f8582e",
+          "srcHash": "942603b90b6bdd8982510b544f91ba5e",
           "alt": "The question as printed on the paper — (b) The number of bacteria in a different experiment can be modelled by the function: 𝑘𝑘(𝑡𝑡) = 3000 × 2·720∙5𝑡𝑡 where 𝑘𝑘(𝑡𝑡) is the number of bacteria and 𝑡𝑡 is the time in hours since the start of the experiment, with 0",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
@@ -8172,7 +8172,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2024-OL-ask-p1-q9-b",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q9-b.png",
-          "srcHash": "89ae1d2f71b17654453fa5830017524b",
+          "srcHash": "9c51fb9f03a49c9206fbc320a9956bb8",
           "alt": "The question as printed on the paper — (b) Liam flies to the concert. He finds the following information: • The aeroplane emits 28 000 grams of carbon per km, during the flight • His total flight distance is 394 km • There are 244 passengers on the flight. Wo",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
@@ -8562,7 +8562,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q2-c",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q2-c.png",
-          "srcHash": "ee247ef56f4394ad5babe76569ebf2cc",
+          "srcHash": "33deb93d1faf6749b26784ef7671bf8a",
           "alt": "The question as printed on the paper — Seán is playing a game with 14 cards. 7 of the cards are green (G), numbered 1 to 7. The other 7 cards are red (R), also numbered 1 to 7. (c) Seán picks a card at random and doesn’t replace it. It is Red 5 (R5). He then ",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
@@ -8772,7 +8772,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q5-a-i",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q5-a-i.png",
-          "srcHash": "b4b8dd4ae8f58062e56e6667076339f6",
+          "srcHash": "87f4a0296cc051534314068c4b457b10",
           "alt": "The question as printed on the paper — (a) A large group of 17-year-olds were asked how many hours of sleep they got on the previous night. The results were normally distributed. The middle 𝟔𝟔𝟔𝟔% slept between 7∙2 and 8∙4 hours, as shown on the diagram below.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
@@ -8802,7 +8802,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q5-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q5-a-ii.png",
-          "srcHash": "6d6096265c8d269153f807acf289ac17",
+          "srcHash": "a2d79066f4a4aa61828b790e00ba112f",
           "alt": "The question as printed on the paper — (a) A large group of 17-year-olds were asked how many hours of sleep they got on the previous night. The results were normally distributed. The middle 𝟔𝟔𝟔𝟔% slept between 7∙2 and 8∙4 hours, as shown on the diagram below.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
@@ -8862,7 +8862,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q6-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q6-a-ii.png",
-          "srcHash": "5343cc42fc707faa811fdd6adf9d145f",
+          "srcHash": "cae1b784d6f5bc3ee88fd720af22c34e",
           "alt": "The question as printed on the paper — (a) The diagram below shows the triangle 𝑋𝑋𝑋𝑋𝑋𝑋. (i) Construct the bisector of the angle 𝑋𝑋𝑋𝑋𝑋𝑋, using only a compass and straight edge. Show all your construction lines and arcs clearly. (ii) Hence, construct the incent",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
@@ -8892,8 +8892,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q6-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q6-b-ii.png",
-          "srcHash": "78201cb8b8d1a1bf4507d1291bd31da0",
-          "alt": "The question as printed on the paper — (b) The diagram below shows the triangles 𝐴𝐴𝐴𝐴𝐴𝐴 and 𝐴𝐴𝐴𝐴𝐴𝐴 (not to scale). The triangle 𝐴𝐴𝐴𝐴𝐴𝐴 is the image of the triangle 𝐴𝐴𝐴𝐴𝐴𝐴 under enlargement. Some of the lengths are shown in the diagram. 𝐸𝐸 14 𝐶𝐶 6 4 𝐴𝐴 𝐷𝐷 𝐵𝐵 (",
+          "srcHash": "07be005b56ac38de9d573eb37e9b3fba",
+          "alt": "The question as printed on the paper — (b) The diagram below shows the triangles 𝐴𝐴𝐴𝐴𝐴𝐴 and 𝐴𝐴𝐴𝐴𝐴𝐴 (not to scale). The triangle 𝐴𝐴𝐴𝐴𝐴𝐴 is the image of the triangle 𝐴𝐴𝐴𝐴𝐴𝐴 under enlargement. Some of the lengths are shown in the diagram. 𝐸𝐸 𝐴𝐴 𝐷𝐷 𝐵𝐵 (i) Use |𝐵𝐵",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -8922,8 +8922,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q6-b-iii",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q6-b-iii.png",
-          "srcHash": "4fcd479147edbf9b4bbc00b1e1ea9b48",
-          "alt": "The question as printed on the paper — (b) The diagram below shows the triangles 𝐴𝐴𝐴𝐴𝐴𝐴 and 𝐴𝐴𝐴𝐴𝐴𝐴 (not to scale). The triangle 𝐴𝐴𝐴𝐴𝐴𝐴 is the image of the triangle 𝐴𝐴𝐴𝐴𝐴𝐴 under enlargement. Some of the lengths are shown in the diagram. 𝐸𝐸 14 𝐶𝐶 6 4 𝐴𝐴 𝐷𝐷 𝐵𝐵 (",
+          "srcHash": "69bab48a9f2485d431367dc63761086a",
+          "alt": "The question as printed on the paper — (b) The diagram below shows the triangles 𝐴𝐴𝐴𝐴𝐴𝐴 and 𝐴𝐴𝐴𝐴𝐴𝐴 (not to scale). The triangle 𝐴𝐴𝐴𝐴𝐴𝐴 is the image of the triangle 𝐴𝐴𝐴𝐴𝐴𝐴 under enlargement. Some of the lengths are shown in the diagram. 𝐸𝐸 𝐴𝐴 𝐷𝐷 𝐵𝐵 (i) Use |𝐵𝐵",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -9182,7 +9182,7 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p2-q8-a-ii", topicId: "maths-2-1", conceptId: "size-angle-correct-nearest-degree",
+    id: "maths-2024-ol-p2-q8-a-ii", topicId: "maths-3-4", conceptId: "size-angle-correct-nearest-degree",
     section: "B", questionRef: "2024 OL Paper 2 Q8(a)(ii)",
     questionText: "Show that the size of the angle ∠F = 65°, correct to the nearest degree",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -9212,7 +9212,7 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p2-q8-a-iii", topicId: "maths-2-1", conceptId: "iii-second-cable-tied-sign-point",
+    id: "maths-2024-ol-p2-q8-a-iii", topicId: "maths-3-4", conceptId: "iii-second-cable-tied-sign-point",
     section: "B", questionRef: "2024 OL Paper 2 Q8(a)(iii)",
     questionText: "(iii) A second cable from G is tied to the sign, at the point K, where K is half way up the sign [F]",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -9242,7 +9242,7 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p2-q8-b-i", topicId: "maths-2-1", conceptId: "part",
+    id: "maths-2024-ol-p2-q8-b-i", topicId: "maths-3-4", conceptId: "part",
     section: "B", questionRef: "2024 OL Paper 2 Q8(b)(i)",
     questionText: "|A| = 12 cm, |A| = 10 cm, and |∠A| = 37°",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 5, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
@@ -9272,7 +9272,7 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2024 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2024-ol-p2-q8-b-ii", topicId: "maths-2-1", conceptId: "110",
+    id: "maths-2024-ol-p2-q8-b-ii", topicId: "maths-3-4", conceptId: "110",
     section: "B", questionRef: "2024 OL Paper 2 Q8(b)(ii)",
     questionText: "|C| = 22 cm, |E| = 11·8 cm, and |∠E| = 110°",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 5, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
@@ -9342,8 +9342,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q9-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q9-a-ii.png",
-          "srcHash": "daf79814389734cfd0643c07955d9a2e",
-          "alt": "The question as printed on the paper — (a) Diarmuid sells: • 7 different flavours of ice cream • 4 different toppings • 2 containers: a choice of a cone or a tub. (ii) Diarmuid wants to maximise the number of choices available to his customers. He can only ad",
+          "srcHash": "e7fb0eaedb6844514c26a0165d9f8606",
+          "alt": "The question as printed on the paper — Diarmuid owns an ice cream van. (a) Diarmuid sells: • 7 different flavours of ice cream • 4 different toppings • 2 containers: a choice of a cone or a tub. (ii) Diarmuid wants to maximise the number of choices available ",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -9372,7 +9372,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q9-b-i",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q9-b-i.png",
-          "srcHash": "a733a3185bdb8d3f5e724e7354335f64",
+          "srcHash": "3ba0e161d3e3335744fb29504149755f",
           "alt": "The question as printed on the paper — Diarmuid owns an ice cream van. (b) One day, Diarmuid recorded the ice cream choices of the first 100 customers. • Vanilla (𝑉𝑉) flavour was bought by 42 customers. • A cone (𝐶𝐶) was bought by 37 customers. • 45 customers",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
@@ -9402,7 +9402,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2024-OL-ask-p2-q9-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p2-q9-b-ii.png",
-          "srcHash": "6ef22738b69b95aa2fc9b224aa5657aa",
+          "srcHash": "f3f24bc7173e8e4e0016c9d9519f84ce",
           "alt": "The question as printed on the paper — Diarmuid owns an ice cream van. (b) One day, Diarmuid recorded the ice cream choices of the first 100 customers. • Vanilla (𝑉𝑉) flavour was bought by 42 customers. • A cone (𝐶𝐶) was bought by 37 customers. • 45 customers",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
@@ -10302,7 +10302,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q8-a-iv",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q8-a-iv.png",
-          "srcHash": "7517411aa700c20543b0fdce79c5b519",
+          "srcHash": "ba7c06cbb30ff7a3434076d1b48436ec",
           "alt": "The question as printed on the paper — A company launches a new phone. The company’s profit each year will depend on the number of phones it produces, 𝑥𝑥. The company’s profit for the first year can be modelled by the function: 𝑃𝑃(𝑥𝑥) = −1∙5𝑥𝑥2 + 10∙5𝑥𝑥−4 whe",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
@@ -10332,8 +10332,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q8-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q8-b-ii.png",
-          "srcHash": "c80c294f5111bb5221dd5cb59151e1ec",
-          "alt": "The question as printed on the paper — (b) The profit of the company for the second year can be modelled by the function: 𝑄𝑄(𝑥𝑥) = −1∙5𝑥𝑥2 + 9∙6𝑥𝑥−3∙5 where 𝑄𝑄(𝑥𝑥) is the profit for the second year (in millions of euro) and 𝑥𝑥 is the number of phones (in tens",
+          "srcHash": "d2a12bf316908c20495b74dc8d6e4b23",
+          "alt": "The question as printed on the paper — A company launches a new phone. The company’s profit each year will depend on the number of phones it produces, 𝑥𝑥. The company’s profit for the first year can be modelled by the function: 𝑃𝑃(𝑥𝑥) = −1∙5𝑥𝑥2 + 10∙5𝑥𝑥−4 whe",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -10572,8 +10572,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q10-a-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q10-a-i.png",
-          "srcHash": "5197a8fa6a16ae2c162bf3984f86b41c",
-          "alt": "The question as printed on the paper — (a) A factory makes closed boxes. The lengths of the sides of one of the boxes are shown in the diagram below. 20 cm 30 cm 70 cm (i) Draw a scaled diagram of a net of the box in the grid below. Use the scale 1: 10. The l",
+          "srcHash": "4664fe9d60233dc09529075d0d9a3c96",
+          "alt": "The question as printed on the paper — (a) A factory makes closed boxes. The lengths of the sides of one of the boxes are shown in the diagram below. 70 cm (i) Draw a scaled diagram of a net of the box in the grid below. Use the scale 1: 10. The length of eac",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -10602,8 +10602,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q10-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q10-a-ii.png",
-          "srcHash": "b493f51653978468e8b3617908a97714",
-          "alt": "The question as printed on the paper — (a) A factory makes closed boxes. The lengths of the sides of one of the boxes are shown in the diagram below. 20 cm 30 cm 70 cm (i) Draw a scaled diagram of a net of the box in the grid below. Use the scale 1: 10. The l",
+          "srcHash": "02c9bfb0a4385e294c59794dc4c1534f",
+          "alt": "The question as printed on the paper — (a) A factory makes closed boxes. The lengths of the sides of one of the boxes are shown in the diagram below. 70 cm (i) Draw a scaled diagram of a net of the box in the grid below. Use the scale 1: 10. The length of eac",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -10632,8 +10632,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2025-OL-ask-p1-q10-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p1-q10-a-iii.png",
-          "srcHash": "f37bc8cbf16a215581991bfafe069d19",
-          "alt": "The question as printed on the paper — (a) A factory makes closed boxes. The lengths of the sides of one of the boxes are shown in the diagram below. 20 cm 30 cm 70 cm (i) Draw a scaled diagram of a net of the box in the grid below. Use the scale 1: 10. The l",
+          "srcHash": "c67d009f968557042100eb5498e719fe",
+          "alt": "The question as printed on the paper — (a) A factory makes closed boxes. The lengths of the sides of one of the boxes are shown in the diagram below. 70 cm (i) Draw a scaled diagram of a net of the box in the grid below. Use the scale 1: 10. The length of eac",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -10842,8 +10842,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q2-a-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q2-a-i.png",
-          "srcHash": "e96a6a10f7f7f33518fbf31a1d2ca85d",
-          "alt": "The question as printed on the paper — (a) There are two angles, 𝐴𝐴 and 2𝐴𝐴, in a right-angled triangle as shown in the diagram below. 2𝐴𝐴 𝑥𝑥 𝐴𝐴 10 cm (i) Show that the size of the angle 𝐴𝐴 is 30°.",
+          "srcHash": "bf11e5b97b6b65eb64d3295a93c67e38",
+          "alt": "The question as printed on the paper — (a) There are two angles, 𝐴𝐴 and 2𝐴𝐴, in a right-angled triangle as shown in the diagram below. 10 cm (i) Show that the size of the angle 𝐴𝐴 is 30°.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -10872,8 +10872,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q2-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q2-a-ii.png",
-          "srcHash": "55741b092c5fd7f3d1891bc4553e62df",
-          "alt": "The question as printed on the paper — (a) There are two angles, 𝐴𝐴 and 2𝐴𝐴, in a right-angled triangle as shown in the diagram below. 2𝐴𝐴 𝑥𝑥 𝐴𝐴 10 cm (i) Show that the size of the angle 𝐴𝐴 is 30°. (ii) The lengths of two of the sides are 𝑥𝑥 and 10 cm, as sho",
+          "srcHash": "73bfe5f555c2099f6e204cedb6e8657e",
+          "alt": "The question as printed on the paper — (a) There are two angles, 𝐴𝐴 and 2𝐴𝐴, in a right-angled triangle as shown in the diagram below. 10 cm (i) Show that the size of the angle 𝐴𝐴 is 30°. (ii) The lengths of two of the sides are 𝑥𝑥 and 10 cm, as shown in the ",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -10902,8 +10902,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q2-b",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q2-b.png",
-          "srcHash": "ac398735914f6905dd9ca9fece706ff2",
-          "alt": "The question as printed on the paper — (b) The triangle 𝑃𝑃𝑃𝑃𝑃𝑃 is shown below. Some of its measurements are also shown. 𝑅𝑅 104° 41° 𝑃𝑃 𝑄𝑄 11 cm Work out the distance from 𝑃𝑃 to 𝑅𝑅. Give your answer in cm, correct to 1 decimal place.",
+          "srcHash": "2972948470aab2fa24857b32153d7b49",
+          "alt": "The question as printed on the paper — (b) The triangle 𝑃𝑃𝑃𝑃𝑃𝑃 is shown below. Some of its measurements are also shown. 𝑅𝑅 𝑃𝑃 𝑄𝑄 11 cm Work out the distance from 𝑃𝑃 to 𝑅𝑅. Give your answer in cm, correct to 1 decimal place.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -10992,8 +10992,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q4-a-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q4-a-i.png",
-          "srcHash": "06887c593b3b211fe008b4babd8031ca",
-          "alt": "The question as printed on the paper — (a) 𝐴𝐴 (−5 , 3) and 𝐵𝐵 (2, 0) are two points on the co-ordinate plane, as shown in the diagram below. 𝑦𝑦 4 𝐴𝐴 𝐶𝐶 3 2 1 𝐵𝐵 𝑥𝑥 -6 -5 -4 -3 -2 -1 1 2 3 4 5 -1 (i) Find the slope of the line 𝐴𝐴𝐴𝐴.",
+          "srcHash": "02844ab38370c9be78fcee1e0e2417fe",
+          "alt": "The question as printed on the paper — (a) 𝐴𝐴 (−5 , 3) and 𝐵𝐵 (2, 0) are two points on the co-ordinate plane, as shown in the diagram below. 𝑦𝑦 4 𝐴𝐴 𝐶𝐶 3 -6 -5 -4 -3 -2 -1 1 2 3 4 5 -1 (i) Find the slope of the line 𝐴𝐴𝐴𝐴.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -11022,8 +11022,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q4-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q4-a-ii.png",
-          "srcHash": "caa98c32a2d8e66b414f762ee7629f51",
-          "alt": "The question as printed on the paper — (a) 𝐴𝐴 (−5 , 3) and 𝐵𝐵 (2, 0) are two points on the co-ordinate plane, as shown in the diagram below. 𝑦𝑦 4 𝐴𝐴 𝐶𝐶 3 2 1 𝐵𝐵 𝑥𝑥 -6 -5 -4 -3 -2 -1 1 2 3 4 5 -1 (i) Find the slope of the line 𝐴𝐴𝐴𝐴. (ii) Hence, work out the eq",
+          "srcHash": "e89dd5b50391dafa1f088de799400e8d",
+          "alt": "The question as printed on the paper — (a) 𝐴𝐴 (−5 , 3) and 𝐵𝐵 (2, 0) are two points on the co-ordinate plane, as shown in the diagram below. 𝑦𝑦 4 𝐴𝐴 𝐶𝐶 3 -6 -5 -4 -3 -2 -1 1 2 3 4 5 -1 (i) Find the slope of the line 𝐴𝐴𝐴𝐴. (ii) Hence, work out the equation of ",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -11052,8 +11052,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q4-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q4-a-iii.png",
-          "srcHash": "608418c1f94ee607ec2aeb8b5d99f66c",
-          "alt": "The question as printed on the paper — (a) 𝐴𝐴 (−5 , 3) and 𝐵𝐵 (2, 0) are two points on the co-ordinate plane, as shown in the diagram below. 𝑦𝑦 4 𝐴𝐴 𝐶𝐶 3 2 1 𝐵𝐵 𝑥𝑥 -6 -5 -4 -3 -2 -1 1 2 3 4 5 -1 (i) Find the slope of the line 𝐴𝐴𝐴𝐴. (ii) Hence, work out the eq",
+          "srcHash": "913f1c444739ca4435b670918973e9ef",
+          "alt": "The question as printed on the paper — (a) 𝐴𝐴 (−5 , 3) and 𝐵𝐵 (2, 0) are two points on the co-ordinate plane, as shown in the diagram below. 𝑦𝑦 4 𝐴𝐴 𝐶𝐶 3 -6 -5 -4 -3 -2 -1 1 2 3 4 5 -1 (i) Find the slope of the line 𝐴𝐴𝐴𝐴. (ii) Hence, work out the equation of ",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -11142,8 +11142,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q5-b-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q5-b-i.png",
-          "srcHash": "7ce25a396379ec3b9434dde6f0e8c28b",
-          "alt": "The question as printed on the paper — (b) The diagram below shows the isosceles triangle 𝐴𝐴𝐴𝐴𝐴𝐴, where |𝐴𝐴𝐴𝐴| = |𝐴𝐴𝐴𝐴|. 𝐷𝐷 is the midpoint of [𝐵𝐵𝐵𝐵]. 𝐴𝐴𝐴𝐴 is perpendicular to 𝐵𝐵𝐵𝐵. |𝐴𝐴𝐴𝐴| = 9 cm and |𝐵𝐵𝐵𝐵| = 5 cm. 𝐴𝐴 9 cm 𝐵𝐵 𝐶𝐶 5 cm 𝐷𝐷 (i) Use the theorem of",
+          "srcHash": "cf3f6e79c88cd8a5e244e1db72128303",
+          "alt": "The question as printed on the paper — (b) The diagram below shows the isosceles triangle 𝐴𝐴𝐴𝐴𝐴𝐴, where |𝐴𝐴𝐴𝐴| = |𝐴𝐴𝐴𝐴|. 𝐷𝐷 is the midpoint of [𝐵𝐵𝐵𝐵]. 𝐴𝐴𝐴𝐴 is perpendicular to 𝐵𝐵𝐵𝐵. |𝐴𝐴𝐴𝐴| = 9 cm and |𝐵𝐵𝐵𝐵| = 5 cm. 𝐴𝐴 𝐵𝐵 𝐶𝐶 5 cm 𝐷𝐷 (i) Use the theorem of Pyth",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -11172,8 +11172,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q5-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q5-b-ii.png",
-          "srcHash": "65c23d3a8b1a85e00a65b5715c0caedf",
-          "alt": "The question as printed on the paper — (b) The diagram below shows the isosceles triangle 𝐴𝐴𝐴𝐴𝐴𝐴, where |𝐴𝐴𝐴𝐴| = |𝐴𝐴𝐴𝐴|. 𝐷𝐷 is the midpoint of [𝐵𝐵𝐵𝐵]. 𝐴𝐴𝐴𝐴 is perpendicular to 𝐵𝐵𝐵𝐵. |𝐴𝐴𝐴𝐴| = 9 cm and |𝐵𝐵𝐵𝐵| = 5 cm. 𝐴𝐴 9 cm 𝐵𝐵 𝐶𝐶 5 cm 𝐷𝐷 (i) Use the theorem of",
+          "srcHash": "3b9995aed31b47e4efab81a03d9e0344",
+          "alt": "The question as printed on the paper — (b) The diagram below shows the isosceles triangle 𝐴𝐴𝐴𝐴𝐴𝐴, where |𝐴𝐴𝐴𝐴| = |𝐴𝐴𝐴𝐴|. 𝐷𝐷 is the midpoint of [𝐵𝐵𝐵𝐵]. 𝐴𝐴𝐴𝐴 is perpendicular to 𝐵𝐵𝐵𝐵. |𝐴𝐴𝐴𝐴| = 9 cm and |𝐵𝐵𝐵𝐵| = 5 cm. 𝐴𝐴 𝐵𝐵 𝐶𝐶 5 cm 𝐷𝐷 (i) Use the theorem of Pyth",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -11502,7 +11502,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q8-a-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q8-a-ii.png",
-          "srcHash": "7f7374fb20ba99e422a7dc4265e14897",
+          "srcHash": "02357917382300d579644db311446c95",
           "alt": "The question as printed on the paper — (a) The table below shows the number of new private cars sold in 2023 (to the nearest hundred) broken down by fuel type. It also shows the percentage of these cars that were of each fuel type (correct to 2 decimal places",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
@@ -11652,7 +11652,7 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q9-a",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q9-a.png",
-          "srcHash": "c3d89be23122d51e317e3dff433f8bdf",
+          "srcHash": "59ecb136fa83b8b6b56efd887bd7b375",
           "alt": "The question as printed on the paper — (a) Clodagh is making a wooden table for her woodwork class. The triangle 𝐴𝐴𝐴𝐴𝐴𝐴 below is a scaled diagram of the table-top. The table-top is supported by one leg attached to the centroid, as shown in the diagram on the ",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
@@ -11790,7 +11790,7 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p2-q10-a-i", topicId: "maths-3-4", conceptId: "aoibhe-swims-back",
+    id: "maths-2025-ol-p2-q10-a-i", topicId: "maths-2-3", conceptId: "aoibhe-swims-back",
     section: "B", questionRef: "2025 OL Paper 2 Q10(a)(i)",
     questionText: "Aoibhe swims from A to B, to C, to D, to E, to F, and back to A",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 5, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
@@ -11800,8 +11800,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q10-a-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q10-a-i.png",
-          "srcHash": "a45b22caa7fe652d3642f55fc8c3b9f7",
-          "alt": "The question as printed on the paper — (a) 𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴 is a six-sided shape where: 𝐴𝐴𝐴𝐴 is parallel to 𝐶𝐶𝐶𝐶 and 𝐴𝐴𝐴𝐴 is perpendicular to 𝐴𝐴𝐴𝐴. |𝐴𝐴𝐴𝐴| = |𝐶𝐶𝐶𝐶| = |𝐸𝐸𝐸𝐸| = |𝐹𝐹𝐹𝐹| = 200 m, and |𝐵𝐵𝐵𝐵| = |𝐷𝐷𝐷𝐷| = 150 m. (i) Aoibhe swims from 𝐴𝐴 to 𝐵𝐵, to 𝐶𝐶, to 𝐷",
+          "srcHash": "15903905977d90918a95a1dc5af43bbd",
+          "alt": "The question as printed on the paper — Aoibhe is a member of a sea swimming club. The club has six markers in the water, labelled 𝐴𝐴, 𝐵𝐵, 𝐶𝐶, 𝐷𝐷, 𝐸𝐸, and 𝐹𝐹, as shown in the diagram below. 𝐷𝐷 200 m 𝐶𝐶 150 m 150 m 𝐸𝐸 𝐵𝐵 110° 200 m 200 m 200 m 𝐹𝐹 𝐴𝐴 (a) 𝐴𝐴𝐴𝐴𝐴𝐴𝐴",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -11850,7 +11850,7 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p2-q10-a-iii", topicId: "maths-3-4", conceptId: "iii-aoibhe-swims-straight-cosine-rule",
+    id: "maths-2025-ol-p2-q10-a-iii", topicId: "maths-2-3", conceptId: "iii-aoibhe-swims-straight-cosine-rule",
     section: "B", questionRef: "2025 OL Paper 2 Q10(a)(iii)",
     questionText: "(iii) Aoibhe swims straight from A to C. Use the cosine rule to work out the distance from A to C. Give your answer correct to the nearest metre",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
@@ -11860,8 +11860,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q10-a-iii",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q10-a-iii.png",
-          "srcHash": "bf58bf723d516448181f82dd9da98ebe",
-          "alt": "The question as printed on the paper — (a) 𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴 is a six-sided shape where: 𝐴𝐴𝐴𝐴 is parallel to 𝐶𝐶𝐶𝐶 and 𝐴𝐴𝐴𝐴 is perpendicular to 𝐴𝐴𝐴𝐴. |𝐴𝐴𝐴𝐴| = |𝐶𝐶𝐶𝐶| = |𝐸𝐸𝐸𝐸| = |𝐹𝐹𝐹𝐹| = 200 m, and |𝐵𝐵𝐵𝐵| = |𝐷𝐷𝐷𝐷| = 150 m. (iii) Aoibhe swims straight from 𝐴𝐴 to 𝐶𝐶. ",
+          "srcHash": "e4a4eb256370ac0582294eabc3fcbd84",
+          "alt": "The question as printed on the paper — Aoibhe is a member of a sea swimming club. The club has six markers in the water, labelled 𝐴𝐴, 𝐵𝐵, 𝐶𝐶, 𝐷𝐷, 𝐸𝐸, and 𝐹𝐹, as shown in the diagram below. 𝐷𝐷 200 m 𝐶𝐶 150 m 150 m 𝐸𝐸 𝐵𝐵 110° 200 m 200 m 200 m 𝐹𝐹 𝐴𝐴 (a) 𝐴𝐴𝐴𝐴𝐴𝐴𝐴",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -11910,7 +11910,7 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p2-q10-b-i", topicId: "maths-3-4", conceptId: "another-example-such-route-aoibhe-could",
+    id: "maths-2025-ol-p2-q10-b-i", topicId: "maths-2-3", conceptId: "another-example-such-route-aoibhe-could",
     section: "B", questionRef: "2025 OL Paper 2 Q10(b)(i)",
     questionText: "Give another example of such a route Aoibhe could swim",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 5, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
@@ -11920,8 +11920,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q10-b-i",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q10-b-i.png",
-          "srcHash": "6c6c985c5e23a4980817483adeb6053a",
-          "alt": "The question as printed on the paper — (b) Point 𝐴𝐴 is the nearest point to the shore and is the start and end point for all swims. 𝐷𝐷 𝐶𝐶 𝐸𝐸 𝐵𝐵 𝐴𝐴 (Start/End Point) 𝐹𝐹 Aoibhe wants to see how many routes she could swim, starting at 𝐴𝐴, by swimming to each of ",
+          "srcHash": "532aef46592d06512299a3393c8e67c2",
+          "alt": "The question as printed on the paper — Aoibhe is a member of a sea swimming club. The club has six markers in the water, labelled 𝐴𝐴, 𝐵𝐵, 𝐶𝐶, 𝐷𝐷, 𝐸𝐸, and 𝐹𝐹, as shown in the diagram below. 𝐷𝐷 200 m 𝐶𝐶 150 m 150 m 𝐸𝐸 𝐵𝐵 110° 200 m 200 m 200 m 𝐹𝐹 𝐴𝐴 (b) Point 𝐴",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },
@@ -11940,7 +11940,7 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: null,
     schemeCitation: "Marking points quoted from the SEC marking scheme, Mathematics 2025 Ordinary Level — © State Examinations Commission.",
-    id: "maths-2025-ol-p2-q10-b-iii", topicId: "maths-3-4", conceptId: "iii-particular-day-aoibhe-wants-start",
+    id: "maths-2025-ol-p2-q10-b-iii", topicId: "maths-2-3", conceptId: "iii-particular-day-aoibhe-wants-start",
     section: "B", questionRef: "2025 OL Paper 2 Q10(b)(iii)",
     questionText: "(iii) On a particular day Aoibhe wants to start at A, swim to two markers other than A, and then return to A. For example, Aoibhe could swim the route: A E B A Work out how many such routes are possible",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 2, 3, 4, 5)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
@@ -11950,8 +11950,8 @@ export const CARDS: SecCard[] = [
     questionFigure: {
           "candId": "maths-2025-OL-ask-p2-q10-b-iii",
           "src": "/exam-figures/maths/markbank/maths-2025-OL-ask-p2-q10-b-iii.png",
-          "srcHash": "9a8c0ea613f973beae33ee9a606f7fc2",
-          "alt": "The question as printed on the paper — (b) Point 𝐴𝐴 is the nearest point to the shore and is the start and end point for all swims. 𝐷𝐷 𝐶𝐶 𝐸𝐸 𝐵𝐵 𝐴𝐴 (Start/End Point) 𝐹𝐹 Aoibhe wants to see how many routes she could swim, starting at 𝐴𝐴, by swimming to each of ",
+          "srcHash": "e22d04f008bbfa83dfa93f3740107d7b",
+          "alt": "The question as printed on the paper — Aoibhe is a member of a sea swimming club. The club has six markers in the water, labelled 𝐴𝐴, 𝐵𝐵, 𝐶𝐶, 𝐷𝐷, 𝐸𝐸, and 𝐹𝐹, as shown in the diagram below. 𝐷𝐷 200 m 𝐶𝐶 150 m 150 m 𝐸𝐸 𝐵𝐵 110° 200 m 200 m 200 m 𝐹𝐹 𝐴𝐴 (b) Point 𝐴",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
     },

@@ -40,7 +40,8 @@
     ]
    }
   ],
-  "notes": "Part (a) of Q1 is a plant-identification photograph and is skipped; its three answers (buttercup, thistle, dock) are carried in the stem so the 'other than the plants shown at part (a)' constraint is not a dangling reference. The scheme prints the tariff as '2' and '1+1' beside the instruction 'Definition of one of annual or biennial for 2 and two marks for the other with a named example' — 4 marks in total, which is what the paper allots (Q1 = 10 = 6 for part (a) + 4 here). Row 3's example pool is the biennial one because it pairs with the 1-mark biennial definition; the annual pool is carried in accepts since the split is symmetric."
+  "notes": "Part (a) of Q1 is a plant-identification photograph and is skipped; its three answers (buttercup, thistle, dock) are carried in the stem so the 'other than the plants shown at part (a)' constraint is not a dangling reference. The scheme prints the tariff as '2' and '1+1' beside the instruction 'Definition of one of annual or biennial for 2 and two marks for the other with a named example' — 4 marks in total, which is what the paper allots (Q1 = 10 = 6 for part (a) + 4 here). Row 3's example pool is the biennial one because it pairs with the 1-mark biennial definition; the annual pool is carried in accepts since the split is symmetric.",
+  "figureKey": "agricultural-science-2021-HL-paper-p03-i1"
  },
  {
   "id": "agsci-2021-hl-q2ai",
@@ -4394,7 +4395,8 @@
     "contextNote": "One precaution only – everything listed is an alternative wording of the same single 2-mark point."
    }
   ],
-  "notes": "Q1(a) (identify machines A and B from the photographs) is figure-dependent and is not carded. The stem states what machine B is so this part stands alone. The scheme prints the whole answer as one solidus-separated alternatives list for a single 2-mark point, so this is one row, not seven."
+  "notes": "Q1(a) (identify machines A and B from the photographs) is figure-dependent and is not carded. The stem states what machine B is so this part stands alone. The scheme prints the whole answer as one solidus-separated alternatives list for a single 2-mark point, so this is one row, not seven.",
+  "figureKey": "agricultural-science-2022-OL-paper-p03-i0"
  },
  {
   "id": "agsci-2022-ol-q2biii",
@@ -7725,7 +7727,8 @@
     "marks": 1
    }
   ],
-  "notes": "Q3(a) totals 10: (i) 1, (ii) 1, (iii) 2(4) = 8. Each part carries its own printed tariff, so each is its own card. The paper's diagram also shows drawn root systems, but the grazing-period / recovery-allowed rows are printed as text and are what this part turns on, so the card is answerable without the artwork; a later figure wave could attach the crop."
+  "notes": "Q3(a) totals 10: (i) 1, (ii) 1, (iii) 2(4) = 8. Each part carries its own printed tariff, so each is its own card. The paper's diagram also shows drawn root systems, but the grazing-period / recovery-allowed rows are printed as text and are what this part turns on, so the card is answerable without the artwork; a later figure wave could attach the crop.",
+  "figureKey": "agricultural-science-2024-hl-paper-p006-i0"
  },
  {
   "id": "agsci-2024-hl-q3aii",
@@ -7791,7 +7794,8 @@
     "marks": 4
    }
   ],
-  "notes": "\"2(4)\" = two parts, 4 marks each = 8. This is the largest slice of Q3(a)'s 10 marks (1 + 1 + 8). Each slot is worth 4 whichever order it is answered in, so the model is `fixed`, not orderedSplit; the notation string is dropped because the fixed variant of TariffModel does not carry one. Rows are written in the \"Label — answer\" form the deck gate expects — it splits on \" — \" and traces only the answer segment, so the label identifies the table row without weakening provenance."
+  "notes": "\"2(4)\" = two parts, 4 marks each = 8. This is the largest slice of Q3(a)'s 10 marks (1 + 1 + 8). Each slot is worth 4 whichever order it is answered in, so the model is `fixed`, not orderedSplit; the notation string is dropped because the fixed variant of TariffModel does not carry one. Rows are written in the \"Label — answer\" form the deck gate expects — it splits on \" — \" and traces only the answer segment, so the label identifies the table row without weakening provenance.",
+  "figureKey": "agricultural-science-2024-hl-paper-p006-i0"
  },
  {
   "id": "agsci-2024-hl-q3b",
@@ -7966,7 +7970,8 @@
     "contextNote": "One 3-mark point; the solidi are five accepted wordings of the same advice. The third option reads in full \"could contain wild oats\" (the mark column splits it in the extraction)."
    }
   ],
-  "notes": "Flat 3-mark tariff, so the five solidus-separated phrases are alternatives on one row, not five points."
+  "notes": "Flat 3-mark tariff, so the five solidus-separated phrases are alternatives on one row, not five points.",
+  "figureKey": "agricultural-science-2024-hl-paper-p009-i0"
  },
  {
   "id": "agsci-2024-hl-q6a",
@@ -8880,7 +8885,8 @@
     "contextNote": "The tick goes beside Colostrum; the other three options score nothing."
    }
   ],
-  "notes": "Flat 4-mark tariff for a single tick. Carded without the diagram because the four options are printed on the paper and the answer does not depend on the ruminant-stomach figure; Q5(a) (labelling that figure) is skipped for a later figure wave."
+  "notes": "Flat 4-mark tariff for a single tick. Carded without the diagram because the four options are printed on the paper and the answer does not depend on the ruminant-stomach figure; Q5(a) (labelling that figure) is skipped for a later figure wave.",
+  "figureKey": "agricultural-science-2024-OL-paper-p07-i0"
  },
  {
   "id": "agsci-2024-ol-q6aii",
@@ -9513,7 +9519,8 @@
     "marks": 3
    }
   ],
-  "notes": "Flat 3-mark tariff. Carded without the diagram because the paper's own instruction names the context ('Analyse the diagram in relation to egg production') and the four diagram steps are text, reproduced in the stem. Part (a)(ii) is skipped — picking the best hen requires reading the figure."
+  "notes": "Flat 3-mark tariff. Carded without the diagram because the paper's own instruction names the context ('Analyse the diagram in relation to egg production') and the four diagram steps are text, reproduced in the stem. Part (a)(ii) is skipped — picking the best hen requires reading the figure.",
+  "figureKey": "agricultural-science-2024-ol-paper-p014-i0"
  },
  {
   "id": "agsci-2024-ol-q11aiii",
@@ -14912,7 +14919,8 @@
     "contextNote": "Dried weight divided by fresh weight, times 100. The scheme allows partial credit: 'If a calculation is shown (37/124 x 100/1) but answer calculated is incorrect award 3 marks', so showing the working is worth 3 of the 4 even when the arithmetic goes wrong."
    }
   ],
-  "notes": "REVIEWER: this part depends on a small numeric table printed in the paper, which is transcribed into the stem in full (both weights and the whole quality analysis) so the card stands alone with no dangling reference - no figure extraction is needed. The 3-mark working allowance is carried as a contextNote rather than a second row, because it is partial credit for the SAME point, not an additional marking point."
+  "notes": "REVIEWER: this part depends on a small numeric table printed in the paper, which is transcribed into the stem in full (both weights and the whole quality analysis) so the card stands alone with no dangling reference - no figure extraction is needed. The 3-mark working allowance is carried as a contextNote rather than a second row, because it is partial credit for the SAME point, not an additional marking point.",
+  "figureKey": "agricultural-science-2021-ol-paper-p026-i1"
  },
  {
   "id": "agsci-2021-ol-q15c-ii",
@@ -14954,7 +14962,8 @@
     "contextNote": "A second, different reason from the same pool."
    }
   ],
-  "notes": "REVIEWER: the analysis table is transcribed into the stem so 'the results above' is not a dangling reference - the scheme's own answers quote the table's figures (67% DMD, low protein, high pH), so a card without them would be unanswerable. Three printed reasons, any two credited at 3 then 1, hence two rows. BUILD: orderedSplit, so rows must carry marks: null."
+  "notes": "REVIEWER: the analysis table is transcribed into the stem so 'the results above' is not a dangling reference - the scheme's own answers quote the table's figures (67% DMD, low protein, high pH), so a card without them would be unanswerable. Three printed reasons, any two credited at 3 then 1, hence two rows. BUILD: orderedSplit, so rows must carry marks: null.",
+  "figureKey": "agricultural-science-2021-ol-paper-p026-i0"
  },
  {
   "id": "agsci-2021-ol-q15c-iii",
@@ -15002,7 +15011,8 @@
     "contextNote": "A second, different way. The scheme's full wording for the packing point is 'ensure pit (bales) packed tightly to remove air to promote growth of anaerobic bacteria (lactobacillus)', truncated in accepts because the '4+2' marks cell is typeset inside that phrase."
    }
   ],
-  "notes": "Six printed ways, any two credited at 4 then 2, hence two rows totalling the printed 6 marks. The stem carries the analysis table so 'the target analysis' (pH 3.8 to 4.2 against the farmer's 4.7) is not a dangling reference. BUILD: orderedSplit, so rows must carry marks: null."
+  "notes": "Six printed ways, any two credited at 4 then 2, hence two rows totalling the printed 6 marks. The stem carries the analysis table so 'the target analysis' (pH 3.8 to 4.2 against the farmer's 4.7) is not a dangling reference. BUILD: orderedSplit, so rows must carry marks: null.",
+  "figureKey": "agricultural-science-2021-ol-paper-p026-i0"
  },
  {
   "id": "agsci-2021-ol-q15c-iv",
@@ -21802,7 +21812,8 @@
     "contextNote": "A second, different reason from the same pool."
    }
   ],
-  "notes": "Part (ii) is a photograph-identification part and is skipped, but its answers (A = Red clover, B = Perennial ryegrass, C = White clover) are carried in the stem so that 'plants A and C' is not a dangling reference — the same device used on the shipped card agsci-2021-hl-q1b. Once A and C are named the part is a text question about sowing clover in a new sward. REVIEWER: this is the one card in the batch that decodes a lettered figure in the stem rather than skipping; if the wave's rule is stricter than agsci-2021-hl-q1b's precedent, drop this card. Tariff 4+2 is an ordered split by the scheme's front matter (p.4), so both rows carry marks: null. Nine reasons are printed in one pool and two are claimable, so two rows plus accepts."
+  "notes": "Part (ii) is a photograph-identification part and is skipped, but its answers (A = Red clover, B = Perennial ryegrass, C = White clover) are carried in the stem so that 'plants A and C' is not a dangling reference — the same device used on the shipped card agsci-2021-hl-q1b. Once A and C are named the part is a text question about sowing clover in a new sward. REVIEWER: this is the one card in the batch that decodes a lettered figure in the stem rather than skipping; if the wave's rule is stricter than agsci-2021-hl-q1b's precedent, drop this card. Tariff 4+2 is an ordered split by the scheme's front matter (p.4), so both rows carry marks: null. Nine reasons are printed in one pool and two are claimable, so two rows plus accepts.",
+  "figureKey": "agricultural-science-2023-OL-paper-p20-i0"
  },
  {
   "id": "agsci-2023-ol-q13b-iii",
@@ -25098,7 +25109,7 @@
   "subjectId": "agricultural-science",
   "section": "B",
   "questionRef": "2024 OL Q13(b)(ii)",
-  "stem": "Lisa was renting 40 hectares of land for her organic dairy farm. She carried out a number of tests to determine its productivity. She investigated the botanical composition of the land with a quadrat thrown ten times, and recorded in a table which plants were present in each throw. Part (b)(i) asked her to calculate the average % frequency of the dock leaf, which was present in 4 of the 10 quadrats: 4/10 x 100/1 = 40%.",
+  "stem": "The results from the investigation are shown in the table below.",
   "questionText": "State with reason if the results shown in part (i) are qualitative or quantitative.",
   "tariffModel": {
    "kind": "fixed",
@@ -25121,7 +25132,8 @@
     "contextNote": "Reason"
    }
   ],
-  "notes": "Tariff 2(2) = two parts at two marks: State (2) + Reason (2) = 4, so fixed. Part (b)(i) itself is skipped because it cannot be answered without the results table printed in the paper — but (b)(ii) only needs to know that the result was a NUMBER, so the stem carries that context explicitly (the 4-of-10 count is read off the paper's table; the 40% is the scheme's own answer to (b)(i)). Reviewer should confirm they are happy with that stem, which is editorial scene-setting rather than paper prose."
+  "notes": "Tariff 2(2) = two parts at two marks: State (2) + Reason (2) = 4, so fixed. Part (b)(i) itself is skipped because it cannot be answered without the results table printed in the paper — but (b)(ii) only needs to know that the result was a NUMBER, so the stem carries that context explicitly (the 4-of-10 count is read off the paper's table; the 40% is the scheme's own answer to (b)(i)). Reviewer should confirm they are happy with that stem, which is editorial scene-setting rather than paper prose.",
+  "figureKey": "agricultural-science-2024-ol-paper-p020-i0"
  },
  {
   "id": "agsci-2024-ol-q13biv",
@@ -25132,7 +25144,7 @@
   "subjectId": "agricultural-science",
   "section": "B",
   "questionRef": "2024 OL Q13(b)(iv)",
-  "stem": "Lisa was renting 40 hectares of land for her organic dairy farm. She carried out a number of tests to determine its productivity. Part (a) of this question dealt with the quadrat investigation she used to find the botanical composition of the land, and part (b) analysed the results she recorded from it.",
+  "stem": "The results from the investigation are shown in the table below.",
   "questionText": "State with reason if this investigation is accurate.",
   "tariffModel": {
    "kind": "fixed",
@@ -25160,7 +25172,8 @@
     "contextNote": "Reason - any ONE of the scheme's four reasons scores the 3 marks."
    }
   ],
-  "notes": "Tariff 2(3) = two parts at three marks: State (3) + Reason (3) = 6, fixed. The scheme's four solidus-separated reasons are a pool for ONE 3-mark reason, so they are one row with the others in accepts. The stem deliberately does NOT restate the quadrat method, because that method is the answer to part (a)(i) on a separate card."
+  "notes": "Tariff 2(3) = two parts at three marks: State (3) + Reason (3) = 6, fixed. The scheme's four solidus-separated reasons are a pool for ONE 3-mark reason, so they are one row with the others in accepts. The stem deliberately does NOT restate the quadrat method, because that method is the answer to part (a)(i) on a separate card.",
+  "figureKey": "agricultural-science-2024-ol-paper-p019-i0"
  },
  {
   "id": "agsci-2024-ol-q14ai",
@@ -27127,7 +27140,8 @@
     "contextNote": "The scheme's pool also carries 'leave for a suitable valid time' and closes with 'other valid method', so a sound step of your own that is not printed here still scores."
    }
   ],
-  "notes": "The paper prints 17 for this part: 4x4 for the method plus one mark for stating the result. The result entry reads '*Result: valid result for investigation described' — a tariff with no answer in it, which cannot be a row, so the card covers the 16 method marks and totalMarks is 16 rather than 17. Reviewer should note that gap. bestNofParts because the scheme lists more steps than the four that score. Row 2 stops at 'obtain dry soil sample' because the 4x4 mark cell is typeset inside that step in the extracted markdown; the full step is in its contextNote. 'leave for a suitable valid time' is left out of the rows as a time instruction rather than an answer."
+  "notes": "The paper prints 17 for this part: 4x4 for the method plus one mark for stating the result. The result entry reads '*Result: valid result for investigation described' — a tariff with no answer in it, which cannot be a row, so the card covers the 16 method marks and totalMarks is 16 rather than 17. Reviewer should note that gap. bestNofParts because the scheme lists more steps than the four that score. Row 2 stops at 'obtain dry soil sample' because the 4x4 mark cell is typeset inside that step in the extracted markdown; the full step is in its contextNote. 'leave for a suitable valid time' is left out of the rows as a time instruction rather than an answer.",
+  "figureKey": "agricultural-science-2025-hl-paper-p025-i0"
  },
  {
   "id": "agsci-2025-hl-q14bii",
@@ -27280,7 +27294,8 @@
     ]
    }
   ],
-  "notes": "4+2 means exactly two ways score, from a printed pool of eleven. Two ordered rows with the whole pool in accepts on each — showing eleven rows would breach the five-row cap and would read as eleven claimable points on a six-mark question. Reviewer note: 'rotational grazing to reduce time spent on land by livestock' is quoted in accepts as the scheme prints it, but the 4+2 mark cell is typeset inside that phrase in the extracted markdown, so a substring check will not find it."
+  "notes": "4+2 means exactly two ways score, from a printed pool of eleven. Two ordered rows with the whole pool in accepts on each — showing eleven rows would breach the five-row cap and would read as eleven claimable points on a six-mark question. Reviewer note: 'rotational grazing to reduce time spent on land by livestock' is quoted in accepts as the scheme prints it, but the 4+2 mark cell is typeset inside that phrase in the extracted markdown, so a substring check will not find it.",
+  "figureKey": "agricultural-science-2025-hl-paper-p025-i0"
  },
  {
   "id": "agsci-2025-hl-q14d",
@@ -27321,7 +27336,8 @@
     ]
    }
   ],
-  "notes": "4+2, so two ways score. One judgement call for a reviewer: 'Poaching/use of heavy machinery' is kept as a single row because its solidus is unspaced where the scheme's other separators are spaced; splitting it would invent a fourth marking point. 'continuous ploughing at the same depth (causing a plough pan)' sits in accepts because the 4+2 mark cell is typeset inside it in the extracted markdown."
+  "notes": "4+2, so two ways score. One judgement call for a reviewer: 'Poaching/use of heavy machinery' is kept as a single row because its solidus is unspaced where the scheme's other separators are spaced; splitting it would invent a fourth marking point. 'continuous ploughing at the same depth (causing a plough pan)' sits in accepts because the 4+2 mark cell is typeset inside it in the extracted markdown.",
+  "figureKey": "agricultural-science-2025-hl-paper-p025-i0"
  },
  {
   "id": "agsci-2025-hl-q15ai",
@@ -27882,7 +27898,8 @@
     "marks": 2
    }
   ],
-  "notes": "Q17(a) opens on an unlettered lifecycle diagram, but none of its five parts asks anything about the picture, so the parts are carded and the diagram is described in the stem rather than left as a dangling reference. Age and dentition are the scheme's two equivalent wordings of one 2-mark point, so they stay on one row."
+  "notes": "Q17(a) opens on an unlettered lifecycle diagram, but none of its five parts asks anything about the picture, so the parts are carded and the diagram is described in the stem rather than left as a dangling reference. Age and dentition are the scheme's two equivalent wordings of one 2-mark point, so they stay on one row.",
+  "figureKey": "agricultural-science-2025-HL-paper-p35-i0"
  },
  {
   "id": "agsci-2025-hl-q17aii",
@@ -27908,7 +27925,8 @@
     "contextNote": "A range is accepted; the paper asks for days, so give days rather than 'about five months'."
    }
   ],
-  "notes": "A recall answer carrying 4 marks - the largest return per word on this question."
+  "notes": "A recall answer carrying 4 marks - the largest return per word on this question.",
+  "figureKey": "agricultural-science-2025-HL-paper-p35-i0"
  },
  {
   "id": "agsci-2025-hl-q17aiii",
@@ -27955,7 +27973,8 @@
     ]
    }
   ],
-  "notes": "Seven practices are printed and two score under the 4+2 ordered split, so the card shows two rows each carrying the remaining pool in accepts. The question says 'describe', so a bare word like 'flushing' is safer expanded. 'use a raddle to establish which ewes have been mated' is genuine scheme text split across the marks column in the PDF extraction, so it is named in the contextNote rather than in accepts."
+  "notes": "Seven practices are printed and two score under the 4+2 ordered split, so the card shows two rows each carrying the remaining pool in accepts. The question says 'describe', so a bare word like 'flushing' is safer expanded. 'use a raddle to establish which ewes have been mated' is genuine scheme text split across the marks column in the PDF extraction, so it is named in the contextNote rather than in accepts.",
+  "figureKey": "agricultural-science-2025-HL-paper-p35-i0"
  },
  {
   "id": "agsci-2025-hl-q17aiv",
@@ -28006,7 +28025,8 @@
     ]
    }
   ],
-  "notes": "Eight characteristics printed, two claimable at 4+2. The paper's wording is 'a suitable replacement in a ewe lamb'; the scheme heads it 'a replacement ewe lamb'. Row 1 is the scheme's first-listed characteristic, which is why a one-word answer sits on a 4-mark row - the value follows position, not the characteristic."
+  "notes": "Eight characteristics printed, two claimable at 4+2. The paper's wording is 'a suitable replacement in a ewe lamb'; the scheme heads it 'a replacement ewe lamb'. Row 1 is the scheme's first-listed characteristic, which is why a one-word answer sits on a 4-mark row - the value follows position, not the characteristic.",
+  "figureKey": "agricultural-science-2025-HL-paper-p35-i0"
  },
  {
   "id": "agsci-2025-hl-q17av",
@@ -28039,7 +28059,8 @@
     "contextNote": "Entire ram lambs left with the flock can mate ewes and ewe lambs out of season, wrecking a planned compact lambing."
    }
   ],
-  "notes": "Unlike the pool parts on this question, the 4+2 here is two DIFFERENT things - the stated verdict and its reason - so the rows carry 4 and 2 as the scheme prints them rather than being interchangeable. The verdict alone is worth two-thirds of the part, so it must be written down explicitly."
+  "notes": "Unlike the pool parts on this question, the 4+2 here is two DIFFERENT things - the stated verdict and its reason - so the rows carry 4 and 2 as the scheme prints them rather than being interchangeable. The verdict alone is worth two-thirds of the part, so it must be written down explicitly.",
+  "figureKey": "agricultural-science-2025-HL-paper-p35-i0"
  },
  {
   "id": "agsci-2025-hl-q17bi",
@@ -29871,7 +29892,8 @@
     "contextNote": "Only ONE control variable is asked for and the whole 3 marks ride on it; the three wordings the scheme prints are alternatives, not three separate points."
    }
   ],
-  "notes": "Part (ii) itself is skipped (its answer is the letter order D-A-B-C against four photographed boxes), but its four steps are printed as text in the paper and are reproduced in this card's stem, so the card stands alone with no dangling reference. Single 3-mark answer, one row, alternatives in accepts."
+  "notes": "Part (ii) itself is skipped (its answer is the letter order D-A-B-C against four photographed boxes), but its four steps are printed as text in the paper and are reproduced in this card's stem, so the card stands alone with no dangling reference. Single 3-mark answer, one row, alternatives in accepts.",
+  "figureKey": "agricultural-science-2025-ol-paper-p032-i0"
  },
  {
   "id": "agsci-2025-ol-q17biv",
@@ -29995,7 +30017,8 @@
     "marks": 5
    }
   ],
-  "notes": "The table is printed as a plain data table in the paper and every value extracted cleanly, so it is reproduced in the stem and the card carries no dangling reference to a figure. Single answer worth the whole 5-mark tariff."
+  "notes": "The table is printed as a plain data table in the paper and every value extracted cleanly, so it is reproduced in the stem and the card carries no dangling reference to a figure. Single answer worth the whole 5-mark tariff.",
+  "figureKey": "agricultural-science-2025-ol-paper-p034-i0"
  },
  {
   "id": "agsci-2025-ol-q18aiii",
@@ -34098,7 +34121,8 @@
    }
   ],
   "stem": "Nitrate Levels in Soil Water Amount of Nitrate (mg/l) 300 250 200 150 100 50 0 Control Protected urea Unprotected urea Analyse the graph and briefly describe the conclusion the student made from his investigation.",
-  "notes": "The scheme goes on to say what a farmer should do about it: use protected urea, because less nitrate leaches from it."
+  "notes": "The scheme goes on to say what a farmer should do about it: use protected urea, because less nitrate leaches from it.",
+  "figureKey": "agricultural-science-2023-HL-paper-p11-i1"
  },
  {
   "id": "agsci-2023-hl-q16aii",
@@ -34929,7 +34953,8 @@
     "marks": 4
    }
   ],
-  "stem": "Sample number Treatment group Colostrum IgG Average birthweight (kg) Average weaning (mg/ml) weight (kg) Sample 1 Pooled colostrum 100.7 34.0 94.0 Sample 2 Own dam colostrum 99.4 33.3 93.7 Sample 3 Colostrum from another dam 95.2 34.3 91.7 (Adapted from Teagasc, 2019)"
+  "stem": "Sample number Treatment group Colostrum IgG Average birthweight (kg) Average weaning (mg/ml) weight (kg) Sample 1 Pooled colostrum 100.7 34.0 94.0 Sample 2 Own dam colostrum 99.4 33.3 93.7 Sample 3 Colostrum from another dam 95.2 34.3 91.7 (Adapted from Teagasc, 2019)",
+  "figureKey": "agricultural-science-2024-hl-paper-p032-i0"
  },
  {
   "id": "agsci-2024-hl-q18aiii",
@@ -34960,7 +34985,8 @@
     "marks": 2
    }
   ],
-  "notes": "The scheme also allows a white face, white legs and belly, a pink nose or the tail switch."
+  "notes": "The scheme also allows a white face, white legs and belly, a pink nose or the tail switch.",
+  "figureKey": "agricultural-science-2024-hl-paper-p037-i0"
  },
  {
   "id": "agsci-2024-ol-q1b",
@@ -35069,8 +35095,9 @@
     "marks": 6
    }
   ],
-  "stem": "Plant 1 2 3 4 5 6 7 8 9 10 Average % frequency Dock leaf X X X X A Perennial ryegrass X X X X X X X X X X 100 Nettle X X X 30 White clover X X X X X X X 70",
-  "notes": "The scheme allows all six for the answer alone and three where the working is shown but the answer is wrong."
+  "stem": "The results from the investigation are shown in the table below.",
+  "notes": "The scheme allows all six for the answer alone and three where the working is shown but the answer is wrong.",
+  "figureKey": "agricultural-science-2024-ol-paper-p019-i0"
  },
  {
   "id": "agsci-2024-ol-q2biii",

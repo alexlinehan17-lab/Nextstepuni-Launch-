@@ -42,6 +42,14 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Biennial ‐ plants that complete their lifecycle in 2 years or valid description of life cycle", marks: 1 },
     { id: "r-3", kind: "point", verbatim: "Some examples: ‐ Potatoes, Ragwort, Sugar beet, Carrots, Kale, Italian Ryegrass or other valid example.", marks: 1, accepts: ["Some examples: ‐ Barley, Wheat, Oats, Peas, Beans, Maize or other valid example."], openList: true },
     ],
+    figure: {
+          "candId": "agricultural-science-2021-HL-paper-p03-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2021-HL-paper-p03-i1.png",
+          "srcHash": "6004259cc6b33b4669ee5dd8d6474ff7",
+          "alt": "The Question 1(a) plant-identification figure, cropped tightly. Heading \"Question 1\" and \"(a) Identify each of the following plants.\", then three colour photographs in a row, each captioned with a bold capital letter above it. A: a bright yellow five-petalled glossy flower with a central boss of yellow stamens, among divided green leaves and grass. B: several thistle plants with purple-mauve brush-like flowerheads on green globular spiny heads, spiny stems and prickly leaves, against a dark green background. C: a broadleaf rosette plant in grass with large smooth lance-shaped/oval leaves with wavy margins and a pale prominent midrib, small credit watermark bottom-right. Below is the three-row bordered answer table printed \"A:\", \"B:\", \"C:\". The first words of part (b) appear at the very bottom and are sliced.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1885,6 +1893,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Short (1-2 days)", marks: 1 },
     ],
+    figure: {
+          "candId": "agricultural-science-2024-hl-paper-p006-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-hl-paper-p006-i0.png",
+          "srcHash": "0c2f9528af200e41fd2420c185beed14",
+          "alt": "The grassland post-grazing recovery diagram. Three tussocks of green grass stand on a brown soil line, getting shorter left to right, with their root systems drawn in black below the line and getting sparser and shallower left to right. A red bracket at the left is labelled 'Post grazing stubble 4cm' and an orange bracket at the right 'Post grazing stubble 2cm'; a blue bracket below the soil line is labelled 'Root responses'. Directly beneath is a bordered two-row table: the green row 'Grazing period' reads Short (1 - 2 days), Long (6 - 7 days), Continuous (2 - 3 months), and the blue row 'Recovery allowed' reads Long, Short, None.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1914,6 +1930,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Short — Rotational or zero", marks: 4, accepts: ["Rotational","zero"], contextNote: "Either \"rotational\" or \"zero\" scores the full 4 — the scheme prints them as alternatives for the one slot." },
     { id: "r-2", kind: "point", verbatim: "Continuous — Set stocking", marks: 4 },
     ],
+    figure: {
+          "candId": "agricultural-science-2024-hl-paper-p006-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-hl-paper-p006-i0.png",
+          "srcHash": "0c2f9528af200e41fd2420c185beed14",
+          "alt": "The grassland post-grazing recovery diagram. Three tussocks of green grass stand on a brown soil line, getting shorter left to right, with their root systems drawn in black below the line and getting sparser and shallower left to right. A red bracket at the left is labelled 'Post grazing stubble 4cm' and an orange bracket at the right 'Post grazing stubble 2cm'; a blue bracket below the soil line is labelled 'Root responses'. Directly beneath is a bordered two-row table: the green row 'Grazing period' reads Short (1 - 2 days), Long (6 - 7 days), Continuous (2 - 3 months), and the blue row 'Recovery allowed' reads Long, Short, None.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1961,6 +1985,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Not certified seed", marks: 3, accepts: ["no guarantee of germination","wild oats","not 98% pure","not treated with fungicide or pesticide"], contextNote: "One 3-mark point; the solidi are five accepted wordings of the same advice. The third option reads in full \"could contain wild oats\" (the mark column splits it in the extraction)." },
     ],
+    figure: {
+          "candId": "agricultural-science-2024-hl-paper-p009-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-hl-paper-p009-i0.png",
+          "srcHash": "af669e8cc81a63e5c25983d334e7f483",
+          "alt": "The cereal identification plate. Bold capitals A, B and C head three columns, and a red 1 and a red 2 label the two rows. Row 1 is three colour close-ups of a leaf collar on a green cereal stem; a white callout box labelled 'Auricles' has white arrows pointing into photographs B and C. Under row 1 are the navy captions 'No auricles and leaf margins are hairless', 'Well-developed hairy auricles' and 'Large, hairless auricles'. Row 2 is three ripening-crop photographs: a field of drooping oat panicles, golden bearded-looking wheat ears against blue sky, and a long-awned barley ear against green foliage.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5663,6 +5695,14 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "place both tubes in equal amounts of water", marks: 4 },
     { id: "r-5", kind: "point", verbatim: "measure or observe the level of water in each tube", marks: 4, contextNote: "The scheme's pool also carries 'leave for a suitable valid time' and closes with 'other valid method', so a sound step of your own that is not printed here still scores.", openList: true },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-hl-paper-p025-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-hl-paper-p025-i0.png",
+          "srcHash": "0fc1383873680248beb5168669233160",
+          "alt": "Two side-by-side cross-section illustrations of a maize-like crop plant growing in soil, with a bordered row underneath carrying the bold letters A (left) and B (right). In A the plant is tall and vigorous with broad green leaves; the topsoil is drawn as loose rounded orange-brown crumbs and a dense white root system spreads widely through it and pushes down into the cracked red-brown subsoil. In B the plant is short and pale with drooping leaves; the crumb layer is thin, a compacted grey-brown band lies directly beneath it, and only a few short black roots turn sideways and stop at that band.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5711,6 +5751,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "subsoiling", marks: 4, accepts: ["Ploughing","add organic matter to soil","use min-till or conservation tillage","use machinery with wide tracks or tyres","install drainage","do not graze or use machinery on land when there is a high chance of poaching","rotational grazing to reduce time spent on land by livestock","do not overstock (reduce stocking rate)","sow a multi-species sward","use drones to avoid machinery compacting land"], contextNote: "Any one way from the scheme's pool of eleven; 4 marks for the first correct way and 2 for the second, so the value follows the position." },
     { id: "r-2", kind: "alt", verbatim: "add organic matter to soil", marks: 2, accepts: ["Ploughing","subsoiling","use min-till or conservation tillage","use machinery with wide tracks or tyres","install drainage","do not graze or use machinery on land when there is a high chance of poaching","rotational grazing to reduce time spent on land by livestock","do not overstock (reduce stocking rate)","sow a multi-species sward","use drones to avoid machinery compacting land"] },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-hl-paper-p025-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-hl-paper-p025-i0.png",
+          "srcHash": "0fc1383873680248beb5168669233160",
+          "alt": "Two side-by-side cross-section illustrations of a maize-like crop plant growing in soil, with a bordered row underneath carrying the bold letters A (left) and B (right). In A the plant is tall and vigorous with broad green leaves; the topsoil is drawn as loose rounded orange-brown crumbs and a dense white root system spreads widely through it and pushes down into the cracked red-brown subsoil. In B the plant is short and pale with drooping leaves; the crumb layer is thin, a compacted grey-brown band lies directly beneath it, and only a few short black roots turn sideways and stop at that band.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5726,6 +5774,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Poaching/use of heavy machinery", marks: 4, accepts: ["continuous ploughing at the same depth (causing a plough pan)","lack of organic matter content"], contextNote: "The scheme prints 'Poaching/use of heavy machinery' with no spaces around this solidus, unlike the spaced soliduses that separate its other points — read here as one point answerable either way. 4 marks for the first correct way and 2 for the second." },
     { id: "r-2", kind: "alt", verbatim: "lack of organic matter content", marks: 2, accepts: ["Poaching/use of heavy machinery","continuous ploughing at the same depth (causing a plough pan)"] },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-hl-paper-p025-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-hl-paper-p025-i0.png",
+          "srcHash": "0fc1383873680248beb5168669233160",
+          "alt": "Two side-by-side cross-section illustrations of a maize-like crop plant growing in soil, with a bordered row underneath carrying the bold letters A (left) and B (right). In A the plant is tall and vigorous with broad green leaves; the topsoil is drawn as loose rounded orange-brown crumbs and a dense white root system spreads widely through it and pushes down into the cracked red-brown subsoil. In B the plant is short and pale with drooping leaves; the crumb layer is thin, a compacted grey-brown band lies directly beneath it, and only a few short black roots turn sideways and stop at that band.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6023,6 +6079,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "A sheep that is 1-2 years old or two permanent teeth", marks: 2 },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-HL-paper-p35-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-p35-i0.png",
+          "srcHash": "6618be93d753e36045cf442788350bd3",
+          "alt": "The sheep life-cycle diagram for Question 17(a). Printed above: 'Question 17', '(a) The lifecycle of a sheep is outlined in the diagram below.' and 'Analyse the diagram and answer the questions that follow.' The diagram is a landscape rectangle with a flat taupe/greige background carrying the bold black title 'Stages of the Sheep Life Cycle' at its centre. Four illustrated sheep are arranged around that title in a ring, joined by four thick curved black arrows that run clockwise from one to the next. At the top is a cream, heavily fleeced, deep-bellied ewe drawn side-on with a small head turned towards the viewer, labelled beneath in bold 'Gestation sheep'. At the right is a small white lamb with an oversized fluffy fleece, dark eyes and pale hooves, labelled beneath 'Lambs'. At the bottom is a young white sheep with a rounded fleece and a pinkish face turned to the right, labelled beneath 'Hoggets'. At the left is a large cream adult sheep drawn side-on with a plain face and slender legs, labelled beneath 'Adulthood'. Below the diagram are part (i) 'Explain what is meant by the term hogget.' with a three-row blank answer table, and the printed line '(ii) State the gestation length (in days) of a sheep.' at the very bottom edge.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6037,6 +6101,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "145-150 days", marks: 4, contextNote: "A range is accepted; the paper asks for days, so give days rather than 'about five months'." },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-HL-paper-p35-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-p35-i0.png",
+          "srcHash": "6618be93d753e36045cf442788350bd3",
+          "alt": "The sheep life-cycle diagram for Question 17(a). Printed above: 'Question 17', '(a) The lifecycle of a sheep is outlined in the diagram below.' and 'Analyse the diagram and answer the questions that follow.' The diagram is a landscape rectangle with a flat taupe/greige background carrying the bold black title 'Stages of the Sheep Life Cycle' at its centre. Four illustrated sheep are arranged around that title in a ring, joined by four thick curved black arrows that run clockwise from one to the next. At the top is a cream, heavily fleeced, deep-bellied ewe drawn side-on with a small head turned towards the viewer, labelled beneath in bold 'Gestation sheep'. At the right is a small white lamb with an oversized fluffy fleece, dark eyes and pale hooves, labelled beneath 'Lambs'. At the bottom is a young white sheep with a rounded fleece and a pinkish face turned to the right, labelled beneath 'Hoggets'. At the left is a large cream adult sheep drawn side-on with a plain face and slender legs, labelled beneath 'Adulthood'. Below the diagram are part (i) 'Explain what is meant by the term hogget.' with a three-row blank answer table, and the printed line '(ii) State the gestation length (in days) of a sheep.' at the very bottom edge.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6052,6 +6124,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Ensure sheep are at the correct BCS", marks: 4, accepts: ["check for any health issues","synchronise breeding for a compact lambing season","have an appropriate ram: ewe ratio","flushing","proven ram fertility"], contextNote: "Two practices score, at 4 then 2 in the order the examiner meets them - the rows are not tied to particular practices. Using a raddle to establish which ewes have been mated is also on the scheme's list." },
     { id: "r-2", kind: "alt", verbatim: "check for any health issues", marks: 2, accepts: ["Ensure sheep are at the correct BCS","synchronise breeding for a compact lambing season","have an appropriate ram: ewe ratio","flushing","proven ram fertility"] },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-HL-paper-p35-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-p35-i0.png",
+          "srcHash": "6618be93d753e36045cf442788350bd3",
+          "alt": "The sheep life-cycle diagram for Question 17(a). Printed above: 'Question 17', '(a) The lifecycle of a sheep is outlined in the diagram below.' and 'Analyse the diagram and answer the questions that follow.' The diagram is a landscape rectangle with a flat taupe/greige background carrying the bold black title 'Stages of the Sheep Life Cycle' at its centre. Four illustrated sheep are arranged around that title in a ring, joined by four thick curved black arrows that run clockwise from one to the next. At the top is a cream, heavily fleeced, deep-bellied ewe drawn side-on with a small head turned towards the viewer, labelled beneath in bold 'Gestation sheep'. At the right is a small white lamb with an oversized fluffy fleece, dark eyes and pale hooves, labelled beneath 'Lambs'. At the bottom is a young white sheep with a rounded fleece and a pinkish face turned to the right, labelled beneath 'Hoggets'. At the left is a large cream adult sheep drawn side-on with a plain face and slender legs, labelled beneath 'Adulthood'. Below the diagram are part (i) 'Explain what is meant by the term hogget.' with a three-row blank answer table, and the printed line '(ii) State the gestation length (in days) of a sheep.' at the very bottom edge.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6067,6 +6147,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Age", marks: 4, accepts: ["free from disease","body condition score","good conformation","udder with no defects","mouth and teeth with no deformities","good feet","genetic merit"], contextNote: "Two characteristics score, at 4 then 2 in the order the examiner meets them." },
     { id: "r-2", kind: "alt", verbatim: "free from disease", marks: 2, accepts: ["Age","body condition score","good conformation","udder with no defects","mouth and teeth with no deformities","good feet","genetic merit"] },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-HL-paper-p35-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-p35-i0.png",
+          "srcHash": "6618be93d753e36045cf442788350bd3",
+          "alt": "The sheep life-cycle diagram for Question 17(a). Printed above: 'Question 17', '(a) The lifecycle of a sheep is outlined in the diagram below.' and 'Analyse the diagram and answer the questions that follow.' The diagram is a landscape rectangle with a flat taupe/greige background carrying the bold black title 'Stages of the Sheep Life Cycle' at its centre. Four illustrated sheep are arranged around that title in a ring, joined by four thick curved black arrows that run clockwise from one to the next. At the top is a cream, heavily fleeced, deep-bellied ewe drawn side-on with a small head turned towards the viewer, labelled beneath in bold 'Gestation sheep'. At the right is a small white lamb with an oversized fluffy fleece, dark eyes and pale hooves, labelled beneath 'Lambs'. At the bottom is a young white sheep with a rounded fleece and a pinkish face turned to the right, labelled beneath 'Hoggets'. At the left is a large cream adult sheep drawn side-on with a plain face and slender legs, labelled beneath 'Adulthood'. Below the diagram are part (i) 'Explain what is meant by the term hogget.' with a three-row blank answer table, and the printed line '(ii) State the gestation length (in days) of a sheep.' at the very bottom edge.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6082,6 +6170,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "State: No", marks: 4 },
     { id: "r-2", kind: "point", verbatim: "Reason: Could interfere with breeding program", marks: 2, contextNote: "Entire ram lambs left with the flock can mate ewes and ewe lambs out of season, wrecking a planned compact lambing." },
     ],
+    figure: {
+          "candId": "agricultural-science-2025-HL-paper-p35-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-p35-i0.png",
+          "srcHash": "6618be93d753e36045cf442788350bd3",
+          "alt": "The sheep life-cycle diagram for Question 17(a). Printed above: 'Question 17', '(a) The lifecycle of a sheep is outlined in the diagram below.' and 'Analyse the diagram and answer the questions that follow.' The diagram is a landscape rectangle with a flat taupe/greige background carrying the bold black title 'Stages of the Sheep Life Cycle' at its centre. Four illustrated sheep are arranged around that title in a ring, joined by four thick curved black arrows that run clockwise from one to the next. At the top is a cream, heavily fleeced, deep-bellied ewe drawn side-on with a small head turned towards the viewer, labelled beneath in bold 'Gestation sheep'. At the right is a small white lamb with an oversized fluffy fleece, dark eyes and pale hooves, labelled beneath 'Lambs'. At the bottom is a young white sheep with a rounded fleece and a pinkish face turned to the right, labelled beneath 'Hoggets'. At the left is a large cream adult sheep drawn side-on with a plain face and slender legs, labelled beneath 'Adulthood'. Below the diagram are part (i) 'Explain what is meant by the term hogget.' with a three-row blank answer table, and the printed line '(ii) State the gestation length (in days) of a sheep.' at the very bottom edge.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6990,6 +7086,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "There is a large amount of nitrate present in the water from the unprotected urea (250mg/l) compared to protected urea (50mg/l)", marks: 3 },
     ],
+    figure: {
+          "candId": "agricultural-science-2023-HL-paper-p11-i1",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-HL-paper-p11-i1.png",
+          "srcHash": "f7045abcca48c91ab4483d08bdc724a3",
+          "alt": "A vertical bar chart titled 'Nitrate Levels in Soil Water', drawn over a faded photograph of the bottle-leaching apparatus as background. The vertical axis is labelled 'Amount of Nitrate (mg/l)' and is scaled 0, 50, 100, 150, 200, 250, 300 with horizontal gridlines. The horizontal axis has three unlabelled-unit categories: 'Control', 'Protected urea' and 'Unprotected urea'. The bars are filled with a blue rippled-water texture. There is no visible bar above zero for Control; the Protected urea bar reaches approximately 50 mg/l; the Unprotected urea bar is much the tallest, reaching approximately 250 mg/l. Above the chart is the printed instruction '(c) The student tested the leachate using nitrate strips and recorded the results shown below.' and beneath it 'Analyse the graph and briefly describe the conclusion the student made from his investigation.' followed by a four-row empty answer table.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7220,6 +7324,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Pooled colostrum is best or valid comparison with Sample 2 or", marks: 4 },
     ],
+    figure: {
+          "candId": "agricultural-science-2024-hl-paper-p032-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-hl-paper-p032-i0.png",
+          "srcHash": "a5b58a6fbbd9ed6db2e088d01edea445",
+          "alt": "The colostrum investigation results table, four columns by four rows. A pink header row reads 'Sample number Treatment group', 'Colostrum IgG (mg/ml)', 'Average birthweight (kg)' and 'Average weaning weight (kg)'. Three lavender-shaded row headers read Sample 1 Pooled colostrum, Sample 2 Own dam colostrum and Sample 3 Colostrum from another dam, with values 100.7 / 34.0 / 94.0, 99.4 / 33.3 / 93.7 and 95.2 / 34.3 / 91.7. The italic attribution '(Adapted from Teagasc, 2019)' sits under the table at the right.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7234,6 +7346,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Black coat colour", marks: 6 },
     { id: "r-2", kind: "point", verbatim: "coat pattern", marks: 2 },
     ],
+    figure: {
+          "candId": "agricultural-science-2024-hl-paper-p037-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-hl-paper-p037-i0.png",
+          "srcHash": "57a643ecb8aab17a7e096fa40da1debd",
+          "alt": "The crossbreeding plate for Question 18(a). At the top the line '(ii) Identify the breeds shown in A and B.' over two photographs: A is a deep red-brown bull in profile on grass with a white face, white belly and white legs, wearing a halter; B is a black-and-white cow standing side-on in long grass, with black patches over the shoulder and hindquarters, a white belly and legs, yellow ear tags and a large freeze brand on the flank. An empty two-cell answer row sits under them. Below, the line '(iii) Isobel crossed breeds A and B in part (ii) above. The resulting offspring is shown in C below.' heads a photograph of calf C in a straw-bedded pen: a black-bodied calf with a completely white face, white lower legs and yellow ear tags.",
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "diagram",

@@ -1167,6 +1167,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Discuss five factors that affect a person’s food choices", marks: 20, contextNote: "Five of the seven factors in the diagram, 4 marks each, graded 4:2:0 — named is 2, discussed is 4, nothing in between. The factors are given to you on the page, so the 2 is nearly free and every mark that matters is in the second half. Time and work patterns overlap heavily; taking both and saying the same thing about convenience food twice earns one 4, not two.", openList: true, group: {"claimMax":5,"perOption":4,"options":["Emotions buy more food when in an unhappy mood; buy food to celebrate happy times; will comfort eat; etc.","Cooking skills people with greater cooking skills are more likely to make a meal from scratch; unskilled cooks will use more convenience foods; many buy quick to cook foods; etc.","Time: busy lifestyle; use of convenience foods; take away foods; type of work; hours worked; etc.","Money price wars; increased competition; recession; discount stores; disposable income; seasonality; many cheaper foods are highly processed, and may contain high levels of salt, sugar, and fat; etc.","Likes and dislikes may have a preference for foods high in sugar; may take a dislike to food due to allergies; appeals to senses; etc.","Food availability foods in season are cheaper and fresher; foods can be imported leading to year- round availability; carbon footprint; location; special diets; diverse cultural requirements; etc.","Work patterns busy lifestyle can lead to greater reliance on takeaways and convenience foods; etc."]} },
     ],
+    figure: {
+          "candId": "home-economics-2024-ol-paper-p02-art",
+          "src": "/exam-figures/home-economics/markbank/home-economics-2024-ol-paper-p02-art.png",
+          "srcHash": "ce03762ae3d7933a04deff0adb28c1fc",
+          "alt": "A framed spider diagram. A cream-filled oval in the centre reads 'Factors affecting food choice', and seven black arrows radiate from it to seven captioned colour photographs: 'Food availability' (strawberries, raspberries and blueberries), 'Work patterns' (a woman at a desktop computer on a video call), 'Emotions' (a smiling woman in a pink top against a white wall), 'Cooking skills' (a chef's hands slicing cucumber on a board with peppers and tomatoes), 'Likes and dislikes' (two heads of broccoli), 'Money' (a pile of loose euro and cent coins) and 'Time' (a round white wall clock).",
+          "attribution": "SEC Leaving Certificate Home Economics 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1183,6 +1191,14 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "anyN", verbatim: "Functions in the body", marks: 10, contextNote: "Only two functions but 5 marks each — the opposite shape to the rest of this question, and the strand where a one-word answer costs most. Graded 5:3:0, so \"energy\" is a 3 and saying what the body does with it is the 5.", openList: true, group: {"claimMax":2,"perOption":5,"options":["heat","energy","stimulate peristalsis","prevents constipation","prevents bowel disorders","acts as a protein sparer","insulation, excess carbohydrate stored as adipose tissue","glycogen reserve","fibre gives a feeling of fullness"]} },
     { id: "r-3", kind: "anyN", verbatim: "Dietary sources", marks: 12, contextNote: "Three sources at 4 marks. Worth noticing this is the biggest strand of the three at 12 marks — more than classification and worth naming a food and saying which carbohydrate it provides, since the 2 is for the food and the other 2 for the link.", openList: true, group: {"claimMax":3,"perOption":4,"options":["breakfast cereals","rice","pasta","potatoes","bread","fruit","vegetables","nuts","seeds","honey","cakes","biscuits","sweets","popcorn"]} },
     ],
+    figure: {
+          "candId": "home-economics-2024-ol-paper-p02-art",
+          "src": "/exam-figures/home-economics/markbank/home-economics-2024-ol-paper-p02-art.png",
+          "srcHash": "ce03762ae3d7933a04deff0adb28c1fc",
+          "alt": "A framed spider diagram. A cream-filled oval in the centre reads 'Factors affecting food choice', and seven black arrows radiate from it to seven captioned colour photographs: 'Food availability' (strawberries, raspberries and blueberries), 'Work patterns' (a woman at a desktop computer on a video call), 'Emotions' (a smiling woman in a pink top against a white wall), 'Cooking skills' (a chef's hands slicing cucumber on a board with peppers and tomatoes), 'Likes and dislikes' (two heads of broccoli), 'Money' (a pile of loose euro and cent coins) and 'Time' (a round white wall clock).",
+          "attribution": "SEC Leaving Certificate Home Economics 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1197,6 +1213,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Outline three different ways a person can increase the amount of fibre in their diet", marks: 12, contextNote: "Three ways at 4 marks. \"Different\" is doing the work again: brown bread, brown pasta and brown rice are one way — swapping white for wholegrain — not three. Spread the answer across cereals, fruit and vegetables, and wholegrain swaps.", openList: true, group: {"claimMax":3,"perOption":4,"options":["add bran/fruit to breakfast cereals","increase intake of fruit/vegetables","eat skins of fruit and vegetables","eat brown bread/pasta/rice","add seeds/nuts to food","use brown flour instead of white flour"]} },
     ],
+    figure: {
+          "candId": "home-economics-2024-ol-paper-p02-art",
+          "src": "/exam-figures/home-economics/markbank/home-economics-2024-ol-paper-p02-art.png",
+          "srcHash": "ce03762ae3d7933a04deff0adb28c1fc",
+          "alt": "A framed spider diagram. A cream-filled oval in the centre reads 'Factors affecting food choice', and seven black arrows radiate from it to seven captioned colour photographs: 'Food availability' (strawberries, raspberries and blueberries), 'Work patterns' (a woman at a desktop computer on a video call), 'Emotions' (a smiling woman in a pink top against a white wall), 'Cooking skills' (a chef's hands slicing cucumber on a board with peppers and tomatoes), 'Likes and dislikes' (two heads of broccoli), 'Money' (a pile of loose euro and cent coins) and 'Time' (a round white wall clock).",
+          "attribution": "SEC Leaving Certificate Home Economics 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1211,6 +1235,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Describe four ways consumers can reduce food waste when planning meals and purchasing foods", marks: 20, contextNote: "Four ways at 5 marks, and the distribution is fixed: at least one on planning, at least one on purchasing, then two of either. Four excellent planning points cannot reach 20. Note the unusual ladder, 5:4:3:0 — there is no 1 or 2, so a way that is recognisable at all is worth at least 3, and the top two marks come from describing how it stops food being thrown out.", openList: true, group: {"claimMax":4,"perOption":5,"options":["check stocks in the kitchen before going shopping","move more perishable items or with upcoming expiry dates to the front of the fridge/cupboard to use them first","make a meal plan for the week","shop using list","buy online","use leftovers for next day’s lunch or freeze them","use leftover fruits/vegetables to make preserves","use planning apps","buy in useable/small quantities","check expiry dates","buy only what you need","examine foods before buying to ensure freshness","extend meals with meat alternatives","consider using pulses as a protein source"]} },
     ],
+    figure: {
+          "candId": "home-economics-2024-ol-paper-p02-art",
+          "src": "/exam-figures/home-economics/markbank/home-economics-2024-ol-paper-p02-art.png",
+          "srcHash": "ce03762ae3d7933a04deff0adb28c1fc",
+          "alt": "A framed spider diagram. A cream-filled oval in the centre reads 'Factors affecting food choice', and seven black arrows radiate from it to seven captioned colour photographs: 'Food availability' (strawberries, raspberries and blueberries), 'Work patterns' (a woman at a desktop computer on a video call), 'Emotions' (a smiling woman in a pink top against a white wall), 'Cooking skills' (a chef's hands slicing cucumber on a board with peppers and tomatoes), 'Likes and dislikes' (two heads of broccoli), 'Money' (a pile of loose euro and cent coins) and 'Time' (a round white wall clock).",
+          "attribution": "SEC Leaving Certificate Home Economics 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1729,6 +1761,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Factors when planning a lighting system", marks: 15, contextNote: "Three factors at 5 marks, graded 5:3:0. Open plan is the word to answer - one room doing several jobs, so it needs different light over the hob than over the sofa. Name the factor and say what it means for this room.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Function of the room","sufficient light to avoid eye strain","amount of natural light entering the room","size and shape of room","colour scheme","ambience","focal point of room","flexibility e.g. moveable lamps","LED lighting to save energy","avoiding glare on TV","safety","easy maintenance","ease of access to replace bulbs"]} },
     ],
+    figure: {
+          "candId": "home-economics-2022-ol-paper-p05-i0",
+          "src": "/exam-figures/home-economics/markbank/home-economics-2022-ol-paper-p05-i0.png",
+          "srcHash": "212d4e293b5c6e56950d9ec4237a901e",
+          "alt": "A colour 3D floor plan of an open plan kitchen/living space, viewed from above with the ceiling removed. The living zone is on the left: a large grey L-shaped corner sofa against the top wall, a leafy pot plant beside it, a flat-screen television mounted on the left wall, a low white coffee table, a round tan tub armchair, and a spherical pendant light hanging on a long flex. The dining zone is centre-right: a white rectangular table with a bowl on it and four black chairs, two along each long side. The kitchen runs along the bottom and right: a hob with two black burner rings, a grey cooker with an extractor above it, a run of worktop, an inset sink with a drainer, and a tall bank of white floor-to-ceiling units on the right wall. The same pale wood-effect flooring runs unbroken through all three zones with no threshold strip between them. A long window fills the lower left wall. There is no visible toy storage and no breakfast counter seating.",
+          "attribution": "SEC Leaving Certificate Home Economics 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1743,6 +1783,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Types of contemporary lighting in the home", marks: 15, contextNote: "Three types at 5 marks, graded 5:3:0. The scheme names them only, so all 15 marks are in your details - where it goes and what it is for. Recessed ceiling lights, pendants and under-cabinet lighting are three genuinely different ones.", openList: true, group: {"claimMax":3,"perOption":5,"options":["Recess ceiling lights","hanging pendants","rise and fall lights","ceramic and plaster-based wall lights","under counter and cabinet lights","picture display lights","LED lighting","track lighting","spotlights","mood lighting","rope lighting","use of smart technology to turn on/off lights"]} },
     ],
+    figure: {
+          "candId": "home-economics-2022-ol-paper-p05-i0",
+          "src": "/exam-figures/home-economics/markbank/home-economics-2022-ol-paper-p05-i0.png",
+          "srcHash": "212d4e293b5c6e56950d9ec4237a901e",
+          "alt": "A colour 3D floor plan of an open plan kitchen/living space, viewed from above with the ceiling removed. The living zone is on the left: a large grey L-shaped corner sofa against the top wall, a leafy pot plant beside it, a flat-screen television mounted on the left wall, a low white coffee table, a round tan tub armchair, and a spherical pendant light hanging on a long flex. The dining zone is centre-right: a white rectangular table with a bowl on it and four black chairs, two along each long side. The kitchen runs along the bottom and right: a hob with two black burner rings, a grey cooker with an extractor above it, a run of worktop, an inset sink with a drainer, and a tall bank of white floor-to-ceiling units on the right wall. The same pale wood-effect flooring runs unbroken through all three zones with no threshold strip between them. A long window fills the lower left wall. There is no visible toy storage and no breakfast counter seating.",
+          "attribution": "SEC Leaving Certificate Home Economics 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2327,6 +2375,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Advantages of a well insulated house", marks: 20, contextNote: "Four advantages at 5 marks, graded 5:3:0 - 20 marks, the biggest part here. The scheme runs three ways: money (lower bills), comfort (steady temperature, less noise), and environment (less energy used, lower CO2, better BER). Take from all three rather than saying \"saves money\" four ways.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Reduces heating bills","reduces heat loss","saves energy","acts as a noise/sound barrier","maintains a constant comfortable temperature","reduces the use of energy resources","results in less CO₂ emissions","creates a more comfortable home","can contribute to sustainable and responsible living","higher BER rating/improvement in energy efficiency"]} },
     ],
+    figure: {
+          "candId": "home-economics-2021-ol-paper-p05-art",
+          "src": "/exam-figures/home-economics/markbank/home-economics-2021-ol-paper-p05-art.png",
+          "srcHash": "669359bbc35f6bc07abba841b4cca20d",
+          "alt": "A boxed heat-loss diagram of a grey two-storey detached house drawn in 3/4 view, with thick red arrows leaving it: 25% straight up through the roof beside the chimney, 35% out horizontally through the left-hand gable wall, 15% out through a right-hand ground-floor window, 10% out through the front door and 15% angled down through the floor. The credit (www.ors.ie) is printed in italics inside the frame at the bottom right.",
+          "attribution": "SEC Leaving Certificate Home Economics 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2343,6 +2399,14 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "anyN", verbatim: "Walls", marks: 5, contextNote: "Name and describe one, 5 marks. Cavity wall is the classic: two layers of block 5-10cm apart with the air gap acting as the insulator, or foam and beads pumped into that cavity. Dry lining and external render are the alternatives for solid walls.", openList: true, group: {"claimMax":1,"perOption":5,"options":["cavity walls: two layers of blocks, 5-10cm apart, air in the space acts as insulator","polystyrene sheets can be inserted at the building stage","polystyrene foam or beads are pumped into the cavity","internal solid walls: insulation sheets, dry lining applying insulating boards to the inside of external walls","external walls: sheets of insulating material to the outer surface of the wall and covered with a render to provide water resistance, a steel mesh is embedded in the render to provide strength"]} },
     { id: "r-3", kind: "anyN", verbatim: "Windows", marks: 5, contextNote: "Name and describe one, 5 marks. Double or triple glazing - two or three sheets of glass with an air or argon gap. Low-emissivity glass reflects heat back into the room, and heavy lined curtains count too.", openList: true, group: {"claimMax":1,"perOption":5,"options":["double or triple glaze: two/three sheets of glass with an air space between them, the space can be filled with an inert gas e.g. argon","low emissivity glass has an invisible coating that reduces heat transfer and reflects heat back into the room etc. curtains: heavy lined, fitted"]} },
     ],
+    figure: {
+          "candId": "home-economics-2021-ol-paper-p05-art",
+          "src": "/exam-figures/home-economics/markbank/home-economics-2021-ol-paper-p05-art.png",
+          "srcHash": "669359bbc35f6bc07abba841b4cca20d",
+          "alt": "A boxed heat-loss diagram of a grey two-storey detached house drawn in 3/4 view, with thick red arrows leaving it: 25% straight up through the roof beside the chimney, 35% out horizontally through the left-hand gable wall, 15% out through a right-hand ground-floor window, 10% out through the front door and 15% angled down through the floor. The credit (www.ors.ie) is printed in italics inside the frame at the bottom right.",
+          "attribution": "SEC Leaving Certificate Home Economics 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2357,6 +2421,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Advantages and/or disadvantages of solar energy", marks: 15, contextNote: "Three points at 5 marks, graded 5:3:0. \"And/or\" means all three may come from one side, so you are not forced to balance them - but two advantages and one disadvantage reads as a fuller answer. The SEAI grant and the BER increase are the two most students forget.", openList: true, group: {"claimMax":3,"perOption":5,"options":["provides a plentiful supply of hot water","no smoke/carbon monoxide emissions","supplies home with own electricity","can reduce heating requirement by 80%","renewable environmentally friendly energy source","SEAI grant available for cost of installing","increases the property value by raising the Building Energy Rating (BER)","expensive to purchase/install","undependable supply of sunshine, other form of energy required","house must be orientated towards the sun","unsightly on the roof"]} },
     ],
+    figure: {
+          "candId": "home-economics-2021-ol-paper-p05-art",
+          "src": "/exam-figures/home-economics/markbank/home-economics-2021-ol-paper-p05-art.png",
+          "srcHash": "669359bbc35f6bc07abba841b4cca20d",
+          "alt": "A boxed heat-loss diagram of a grey two-storey detached house drawn in 3/4 view, with thick red arrows leaving it: 25% straight up through the roof beside the chimney, 35% out horizontally through the left-hand gable wall, 15% out through a right-hand ground-floor window, 10% out through the front door and 15% angled down through the floor. The credit (www.ors.ie) is printed in italics inside the frame at the bottom right.",
+          "attribution": "SEC Leaving Certificate Home Economics 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3538,6 +3610,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Factors to consider when choosing a heating system", marks: 15, contextNote: "Three factors at 5 marks, graded 5:3:0 - no 4, so a factor named without a reason drops to 3. The scheme prints eight factors, so take three genuinely different ones: cost, how it is controlled, and what it does to the environment.", openList: true, group: {"claimMax":3,"perOption":5,"options":["installation; running and maintenance","is the source renewable","automatic timer that is easy to use; thermostat to control heating; smart technology","constant temperature","priority for family with young children","immersion with a timer to save electricity; instantaneous heaters","underfloor heating; types of radiators","gas and smokeless fuel produce less pollution"]} },
     ],
+    figure: {
+          "candId": "home-economics-2023-ol-paper-p05-i0",
+          "src": "/exam-figures/home-economics/markbank/home-economics-2023-ol-paper-p05-i0.png",
+          "srcHash": "8fb2e75645df754e743e6b6514138d5f",
+          "alt": "A colour photograph of a contemporary bathroom, wide format. On the left a dark wood ladder-frame shelving unit holds folded white towels and toiletries. Behind it a large window with a roman blind looks onto greenery, with a tiled mosaic splashback and toiletry bottles on the sill. Centre-left stands a freestanding oval bath in grey and white with a floor-mounted mixer tap and a wooden bath caddy. A navy dressing gown hangs on a wall hook beside a small wooden stool stacked with folded yellow towels. Centre-right is a large walk-in shower enclosure with clear glass doors, a chrome frame, a fixed rainfall head, a handheld shower and a wall control panel, set against pale grey tiling. On the right wall are a rectangular mirror, four small framed botanical prints, a wall-mounted white basin with a chrome tap, and a wall-hung white toilet. The floor is a continuous pale surface with a mustard yellow textured rug in front of the bath, and a round woven basket sits beside the shower.",
+          "attribution": "SEC Leaving Certificate Home Economics 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",

@@ -6305,6 +6305,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "(common) area increases by a factor of 3 (and C is proportional to A)", marks: 3 },
     ],
+    figure: {
+          "candId": "physics-2021-hl-paper-p011-i0",
+          "src": "/exam-figures/physics/markbank/physics-2021-hl-paper-p011-i0.png",
+          "srcHash": "38833ce09cc14cad3bb2969301934333",
+          "alt": "Circuit diagram of three identical capacitors connected in parallel. A horizontal wire runs in from the left edge and out to the right edge; between two vertical bus wires three capacitor symbols are stacked one above the other, each drawn as a pair of short thick parallel vertical plates separated by a gap. No component values or letters are printed on the diagram.",
+          "attribution": "SEC Leaving Certificate Physics 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6354,6 +6362,14 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "(expansion) valve indicated", marks: 3 },
     { id: "r-3", kind: "point", verbatim: "correct arrangement of liquid/vapour indicated", marks: 3 },
     ],
+    figure: {
+          "candId": "physics-2021-HL-paper-p08-i0",
+          "src": "/exam-figures/physics/markbank/physics-2021-HL-paper-p08-i0.png",
+          "srcHash": "5604f1849519b5e54db0ea679712e9f5",
+          "alt": "Question 9. On the left is the question text about ice as a coolant and about insulated picnic boxes. On the right is a colour product photograph of a dark insulated picnic cool-box with a lighter-coloured lid, a folding carrying handle arching over the top, and two flat rectangular ice packs standing upright against its right-hand side. No scale, labels or measurements appear on the photograph.",
+          "attribution": "SEC Leaving Certificate Physics 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6637,6 +6653,14 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "mass defect calculation", marks: 3 },
     { id: "r-4", kind: "point", verbatim: "conversion to J (9.13 × 10−13 J)", marks: 3 },
     ],
+    figure: {
+          "candId": "physics-2021-HL-paper-p10-i0",
+          "src": "/exam-figures/physics/markbank/physics-2021-HL-paper-p10-i0.png",
+          "srcHash": "df82b586335966ede0f0de1c6681f66e",
+          "alt": "Question 11. On the left is the question text naming Chadwick, Geiger, Rutherford, Meitner and Hahn. On the right is a black-and-white 1932 group photograph taken outdoors: about ten men and women in 1930s dress arranged around a long table laid with a patterned cloth, plates and cups, with dense trees and shrubs behind them. Five people sit along the near side of the table, three stand at the back (two women in cloche hats, one man holding a cigarette), and a further man stands at the right. A faint 'SCIENCE SOURCE' agency watermark is tiled across the image. Nobody in the photograph is labelled or numbered.",
+          "attribution": "SEC Leaving Certificate Physics 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6653,6 +6677,14 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "ionisation // electron-hole pair // ionisation", marks: 3 },
     { id: "r-3", kind: "point", verbatim: "current // current // leaves collapse", marks: 3 },
     ],
+    figure: {
+          "candId": "physics-2021-HL-paper-p10-i0",
+          "src": "/exam-figures/physics/markbank/physics-2021-HL-paper-p10-i0.png",
+          "srcHash": "df82b586335966ede0f0de1c6681f66e",
+          "alt": "Question 11. On the left is the question text naming Chadwick, Geiger, Rutherford, Meitner and Hahn. On the right is a black-and-white 1932 group photograph taken outdoors: about ten men and women in 1930s dress arranged around a long table laid with a patterned cloth, plates and cups, with dense trees and shrubs behind them. Five people sit along the near side of the table, three stand at the back (two women in cloche hats, one man holding a cigarette), and a further man stands at the right. A faint 'SCIENCE SOURCE' agency watermark is tiled across the image. Nobody in the photograph is labelled or numbered.",
+          "attribution": "SEC Leaving Certificate Physics 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6668,6 +6700,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "alpha source and gold target", marks: 3 },
     { id: "r-2", kind: "point", verbatim: "flashes of light on detector", marks: 3 },
     ],
+    figure: {
+          "candId": "physics-2021-HL-paper-p10-i0",
+          "src": "/exam-figures/physics/markbank/physics-2021-HL-paper-p10-i0.png",
+          "srcHash": "df82b586335966ede0f0de1c6681f66e",
+          "alt": "Question 11. On the left is the question text naming Chadwick, Geiger, Rutherford, Meitner and Hahn. On the right is a black-and-white 1932 group photograph taken outdoors: about ten men and women in 1930s dress arranged around a long table laid with a patterned cloth, plates and cups, with dense trees and shrubs behind them. Five people sit along the near side of the table, three stand at the back (two women in cloche hats, one man holding a cigarette), and a further man stands at the right. A faint 'SCIENCE SOURCE' agency watermark is tiled across the image. Nobody in the photograph is labelled or numbered.",
+          "attribution": "SEC Leaving Certificate Physics 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7223,6 +7263,14 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Rp = 2.5 (Ω)", marks: 3 },
     { id: "r-3", kind: "point", verbatim: "RT = 7.5 Ω", marks: 3 },
     ],
+    figure: {
+          "candId": "physics-2023-hl-paper-p015-i0",
+          "src": "/exam-figures/physics/markbank/physics-2023-hl-paper-p015-i0.png",
+          "srcHash": "dfcb1a654d2c05ba10143f6574935dcf",
+          "alt": "A circuit drawn as one rectangular loop. A battery symbol - one long thin plate above one short thick plate - sits in the top wire. A rectangular resistor box labelled '5 Ohm' sits in the bottom wire. At the right-hand end two further resistor boxes stand side by side as a parallel pair between the top and bottom wires, each labelled '5 Ohm' with the text set vertically.",
+          "attribution": "SEC Leaving Certificate Physics 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -8387,6 +8435,14 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "sX = 15t + ½(–9.8)t2 or sY = 5t + ½(9.8)t2", marks: 2 },
     { id: "r-3", kind: "point", verbatim: "t = 1 s", marks: 2 },
     ],
+    figure: {
+          "candId": "physics-2025-hl-paper-p007-i0",
+          "src": "/exam-figures/physics/markbank/physics-2025-hl-paper-p007-i0.png",
+          "srcHash": "b5c1c830f657fbaea8e6604c89ce7db7",
+          "alt": "Two horizontal solid lines, one at the bottom of the figure representing the ground and one parallel to it above. A dashed double-headed vertical arrow between the two lines is labelled '20 m'. A solid dot labelled X sits on the lower line with a solid arrow pointing upwards from it, labelled '15 m s-1'. A solid dot labelled Y sits on the upper line with a short solid arrow pointing downwards from it, labelled '5 m s-1'.",
+          "attribution": "SEC Leaving Certificate Physics 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",

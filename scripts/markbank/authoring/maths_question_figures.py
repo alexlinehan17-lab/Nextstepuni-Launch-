@@ -71,7 +71,9 @@ DEAD_TEXT = re.compile(
     r'|^Section [A-Z]$'
     r'|^(?:Concepts and Skills|Contexts and Applications)$'
     r'|^\d{2,3} marks$'
-    r'|^Answer (?:all|any) .{0,50}questions?(?: from this section)?\.?$')
+    r'|^Answer (?:all|any) .{0,50}questions?(?: from this section)?\.?$'
+    r'|^There is space for (?:more|extra) work .{0,40}$'
+    r'|^\(?Continued (?:overleaf|on the next page)\)?\.?$')
 # "Hence", "your answer to part (i)": the ask leans on the siblings before it.
 # The ask CHAINS on an earlier part. "your answer" alone is not enough:
 # "Give your answer in km" is a formatting instruction, and reading it as a
@@ -232,7 +234,10 @@ class Sitting:
         frames = []
         for d in drawings:
             r = d['rect']
-            if r.width > 420 and r.height > 80:
+            # Not every answer box spans the column: 2022 Higher Level
+            # Q6(c) sets a half-width grid beside the working, and a
+            # 420pt floor let every one of those through.
+            if r.width > 170 and r.height > 60:
                 inside = [l for l in text_lines
                           if r.y0 - 2 <= l[1] and l[2] <= r.y1 + 2]
                 # A prompt or two ("Show:", "Roots = ( , , )") or a template
@@ -315,6 +320,14 @@ class Sitting:
         first_marker = pos(marks[0]) if marks else q_end
         qstem = ((head_page, head_y1), first_marker) \
             if first_marker > (head_page, head_y1) else None
+        # A band between the head and the first marker is not automatically a
+        # question stem. 2021 HL Q1 sets part (a)'s fraction on two lines that
+        # begin ABOVE the "(a)" marker, so the band holds nothing but the spill
+        # of a sibling — and shipping it put an unrelated complex-division
+        # problem on top of every other part of Q1. A real stem is set at the
+        # margin (x <= 60) or is a drawing; part text is indented past 80.
+        if qstem and not self._stem_is_real(qstem):
+            qstem = None
 
         li = next((i for i, m in enumerate(marks)
                    if m[0] == 'letter' and m[1] == letter), None)
@@ -325,7 +338,8 @@ class Sitting:
             # A letter part leans on the question's setup as a rule — "find
             # the volume of the cuboid" is unanswerable without the cuboid.
             l_end = next((pos(m) for m in marks[li + 1:] if m[0] == 'letter'), q_end)
-            own = (pos(marks[li]), l_end)
+            nxt = next((m for m in marks[li + 1:] if m[0] == 'letter'), None)
+            own = self._trim_next_setup((pos(marks[li]), l_end), nxt)
             # A letter part usually leans on the question's setup — "find the
             # volume of the cuboid" needs the cuboid — but not always: 2021 HL
             # P2 Q10(b) is a self-contained expected-value problem printed
@@ -377,6 +391,10 @@ class Sitting:
         # printed under an earlier sibling, so the chain must come too.
         stem_points_down = bool(re.search(
             r'\b(?:below|following|as shown)\b', ' '.join(ctx)))
+        # Sibling parts ride along only on an explicit chain. Shared content
+        # words are useless here — parts of one question always talk about the
+        # same thing, so that test pulled every earlier sibling into every
+        # crop and the audit fleet called it irrelevant context 120 times.
         siblings = force.get('siblings',
                              bool(NEEDS_SIBLINGS.search(part_text))
                              or stem_points_down) and ri > 0
@@ -397,15 +415,27 @@ class Sitting:
         # runway; "find the two roots of f(x) = 3x^2 + 8x - 35" shares nothing
         # with a cuboid and travels alone.
         bare = not has_letter_stem and not siblings
+        # The question stem rides along when the part reaches for it by name
+        # ("the diagram", "shown above") OR when it is plainly this ask's
+        # subject — 2021 HL Q7(b) asks about swings whose 45 cm arc and 90%
+        # ratio are printed only in the Q7 stem, and requiring the ask to be
+        # otherwise BARE kept that stem off every card under a lettered part.
+        # Shared content words decide: the cuboid stays with "find the volume
+        # of the cuboid" and stays off a logs equation.
+        qstem_text = self.band_text([qstem], 4000) if qstem else ''
         want_qstem = force.get(
             'qstem',
             (not letter)
             or bool(NEEDS_QSTEM.search(' '.join(ctx) + ' ' + part_text))
-            or (bare and qstem is not None
-                and self._shares_subject(part_text, self.band_text([qstem], 4000))))
+            or (qstem is not None
+                and self._shares_subject(' '.join(ctx) + ' ' + part_text,
+                                         qstem_text)))
         if qstem and want_qstem:
             bands.insert(0, qstem)
-        bands.append((pos(scope[ri]), r_end))
+        nxt = (scope[ri + 1] if ri + 1 < len(scope)
+               else next((m for m in marks[li + 1:] if m[0] == 'letter'), None)
+               if letter else None)
+        bands.append(self._trim_next_setup((pos(scope[ri]), r_end), nxt))
         bands = self._hunt_definitions(bands, marks, li, qstem, part_text,
                                        force, q_end)
         return bands, 'roman part'
@@ -433,6 +463,23 @@ class Sitting:
             return {w for w in re.findall(r"[A-Za-z']{4,}", _ascii(t).lower())
                     if w not in self.GENERIC}
         return bool(words(ask) & words(stem))
+
+    def _stem_is_real(self, band):
+        """Does this band hold question-level setup, or a sibling's spill?"""
+        (sp, sy), (ep, ey) = band
+        for (pg, y0, y1, x0, txt) in self.lines:
+            if (sp, sy - 1) <= (pg, y0) < (ep, ey) and x0 <= 60.0 \
+                    and not QHEAD.match(txt) and not LETTER.match(txt) \
+                    and not ROMAN.match(txt) and len(txt) > 12:
+                return True
+        for page in range(sp, min(ep, self.doc.page_count - 1) + 1):
+            lo = sy if page == sp else Y_TOP
+            hi = ey if page == ep else Y_FOOT
+            for r in self.ink(page):
+                if r.y0 >= lo - 1 and r.y1 <= hi + 1 and (
+                        r.width > 30 or r.height > 30):
+                    return True
+        return False
 
     def _hunt_definitions(self, bands, marks, li, qstem, part_text, force, q_end):
         """The ask names a function or quantity — h(x), T(t), V1 — that no
@@ -651,6 +698,39 @@ class Sitting:
                 for xx in range(x, fx1):
                     px[xx, y] = 255
         return img
+
+    def _trim_next_setup(self, band, next_marker):
+        """Drop a trailing paragraph that is really the NEXT part's setup.
+
+        Maths prints a part's lead-in ABOVE its marker — "Bruno, Karen, and
+        Martha start a training session..." sits over the "(f)" — so it falls
+        inside the previous part's band and shipped as that part's context.
+        The paper distinguishes the two by indent: a part's own text is set in
+        from the margin (x >= 80) while question- and letter-level setup runs
+        at the margin (x ~= 56.7). A run of margin-set lines immediately above
+        the next marker introduces that marker, not the band it sits in.
+        """
+        if next_marker is None:
+            return band
+        (sp, sy), (ep, ey) = band
+        inside = [l for l in self.lines
+                  if (sp, sy - 1) <= (l[0], l[1]) < (ep, ey)]
+        if len(inside) < 2:
+            return band
+        cut = None
+        for l in reversed(inside):
+            if l[3] <= 60.0:            # margin-set: setup prose
+                cut = (l[0], l[1])
+            elif l[3] >= 80.0:          # indented: this part's own text
+                break
+        # The cut is a PAGE and a y. Keeping only the y and pairing it with the
+        # band's end page turned a trim into an extension whenever a band
+        # spanned a page break, which is how 2021 HL Q3(a) came to carry the
+        # whole of part (b).
+        if cut is None or cut <= (sp, sy + 1):
+            return band
+        indented_before = any(l[3] >= 80.0 and (l[0], l[1]) < cut for l in inside)
+        return ((sp, sy), cut) if indented_before else band
 
     def render(self, bands):
         pieces = []

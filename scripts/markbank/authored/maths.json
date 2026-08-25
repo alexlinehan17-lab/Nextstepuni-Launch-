@@ -510,7 +510,7 @@
  },
  {
   "id": "maths-2021-hl-p1-q5-a-i",
-  "topicId": "maths-2-3",
+  "topicId": "maths-5-2",
   "conceptId": "value-value-value",
   "level": "higher",
   "year": 2021,
@@ -1609,7 +1609,7 @@
  },
  {
   "id": "maths-2021-hl-p1-q10-a-i",
-  "topicId": "maths-3-4",
+  "topicId": "maths-5-2",
   "conceptId": "value-when-tank-empties",
   "level": "higher",
   "year": 2021,
@@ -1793,7 +1793,7 @@
  },
  {
   "id": "maths-2021-hl-p1-q10-b-i",
-  "topicId": "maths-3-4",
+  "topicId": "maths-5-2",
   "conceptId": "order-model-reasonable-must-satisfy-number",
   "level": "higher",
   "year": 2021,
@@ -1840,7 +1840,7 @@
  },
  {
   "id": "maths-2021-hl-p1-q10-b-ii",
-  "topicId": "maths-3-4",
+  "topicId": "maths-5-2",
   "conceptId": "explain-what-means-context-growth-tree",
   "level": "higher",
   "year": 2021,
@@ -7650,7 +7650,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q3-a-i",
-  "topicId": "maths-3-1",
+  "topicId": "maths-2-2",
   "conceptId": "part",
   "level": "higher",
   "year": 2022,
@@ -7695,7 +7695,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q3-a-ii",
-  "topicId": "maths-3-1",
+  "topicId": "maths-2-2",
   "conceptId": "part",
   "level": "higher",
   "year": 2022,
@@ -8767,7 +8767,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-a",
-  "topicId": "maths-2-3",
+  "topicId": "maths-3-1",
   "conceptId": "amount-drug-left-alex-body-days",
   "level": "higher",
   "year": 2022,
@@ -8807,7 +8807,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-b",
-  "topicId": "maths-2-3",
+  "topicId": "maths-3-1",
   "conceptId": "how-long-after-single-injection-will",
   "level": "higher",
   "year": 2022,
@@ -8852,7 +8852,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-c",
-  "topicId": "maths-2-3",
+  "topicId": "maths-3-1",
   "conceptId": "explain-why-total-amount-drug-alex",
   "level": "higher",
   "year": 2022,
@@ -8898,7 +8898,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-d",
-  "topicId": "maths-2-3",
+  "topicId": "maths-3-1",
   "conceptId": "total-amount-drug-alex-body-immediately",
   "level": "higher",
   "year": 2022,
@@ -9028,7 +9028,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-f-ii",
-  "topicId": "maths-2-3",
+  "topicId": "maths-3-1",
   "conceptId": "immediately-after-7th-injection-there-drug",
   "level": "higher",
   "year": 2022,
@@ -12108,7 +12108,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q8-a-i",
-  "topicId": "maths-3-3",
+  "topicId": "maths-4-2",
   "conceptId": "work-out-how-many-acid-200",
   "level": "ordinary",
   "year": 2022,
@@ -12239,7 +12239,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q8-a-iv",
-  "topicId": "maths-3-3",
+  "topicId": "maths-4-2",
   "conceptId": "when-she-making-another-mixture-jessica",
   "level": "ordinary",
   "year": 2022,
@@ -12284,7 +12284,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q8-b-i",
-  "topicId": "maths-3-3",
+  "topicId": "maths-4-2",
   "conceptId": "write-down-values-cube-these-values",
   "level": "ordinary",
   "year": 2022,
@@ -13095,7 +13095,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q1-a-ii",
-  "topicId": "maths-3-1",
+  "topicId": "maths-2-2",
   "conceptId": "using-slopes-investigate-perpendicular-justify",
   "level": "ordinary",
   "year": 2022,
@@ -13140,7 +13140,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q1-b-ii",
-  "topicId": "maths-3-1",
+  "topicId": "maths-2-2",
   "conceptId": "write-down-equation-horizontal-line",
   "level": "ordinary",
   "year": 2022,
@@ -13457,7 +13457,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q4-a",
-  "topicId": "maths-1-6",
+  "topicId": "maths-3-3",
   "conceptId": "group-students-sat-exam-each-student",
   "level": "ordinary",
   "year": 2022,
@@ -14538,7 +14538,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q9-a",
-  "topicId": "maths-2-1",
+  "topicId": "maths-3-4",
   "conceptId": "state-which-statements-most-likely-true",
   "level": "ordinary",
   "year": 2022,
@@ -14677,7 +14677,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q9-e-i",
-  "topicId": "maths-2-1",
+  "topicId": "maths-3-4",
   "conceptId": "correct-decimal-places",
   "level": "ordinary",
   "year": 2022,
@@ -14724,7 +14724,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q9-e-ii",
-  "topicId": "maths-2-1",
+  "topicId": "maths-3-4",
   "conceptId": "acb-angle-roof-makes-point-correct",
   "level": "ordinary",
   "year": 2022,
@@ -14907,7 +14907,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q10-b-iv",
-  "topicId": "maths-3-3",
+  "topicId": "maths-1-5",
   "conceptId": "according-2019-irish-sport-monitor-report",
   "level": "ordinary",
   "year": 2022,
@@ -16552,7 +16552,7 @@
  },
  {
   "id": "maths-2023-hl-p1-q9-b-iii",
-  "topicId": "maths-2-3",
+  "topicId": "maths-3-1",
   "conceptId": "ava-realises-relationship-between",
   "level": "higher",
   "year": 2023,
@@ -17231,7 +17231,7 @@
  },
  {
   "id": "maths-2023-hl-p2-q3-b-ii",
-  "topicId": "maths-2-3",
+  "topicId": "maths-2-2",
   "conceptId": "perpendicular-bisector-value-value",
   "level": "higher",
   "year": 2023,
@@ -19893,7 +19893,7 @@
  },
  {
   "id": "maths-2023-ol-p1-q9-a-i",
-  "topicId": "maths-3-3",
+  "topicId": "maths-3-1",
   "conceptId": "diagram-estimate-number-actual-new-cases",
   "level": "ordinary",
   "year": 2023,
@@ -19978,7 +19978,7 @@
  },
  {
   "id": "maths-2023-ol-p1-q9-a-iii",
-  "topicId": "maths-3-3",
+  "topicId": "maths-3-1",
   "conceptId": "iii-takes-approximately-days-daily-number",
   "level": "ordinary",
   "year": 2023,
@@ -20023,7 +20023,7 @@
  },
  {
   "id": "maths-2023-ol-p1-q9-a-iv",
-  "topicId": "maths-3-3",
+  "topicId": "maths-3-1",
   "conceptId": "estimate-what-day-value-number-new",
   "level": "ordinary",
   "year": 2023,
@@ -20115,7 +20115,7 @@
  },
  {
   "id": "maths-2023-ol-p1-q9-b-iii",
-  "topicId": "maths-3-3",
+  "topicId": "maths-3-1",
   "conceptId": "iii-measures-put-place-slow-down",
   "level": "ordinary",
   "year": 2023,
@@ -22117,7 +22117,7 @@
  },
  {
   "id": "maths-2023-ol-p2-q9-a-iv",
-  "topicId": "maths-3-3",
+  "topicId": "maths-5-2",
   "conceptId": "draw-graph-chart-represent-data-table",
   "level": "ordinary",
   "year": 2023,
@@ -22252,7 +22252,7 @@
  },
  {
   "id": "maths-2023-ol-p2-q9-b-iii",
-  "topicId": "maths-3-3",
+  "topicId": "maths-5-2",
   "conceptId": "iii-general-students-get-rating-excellent",
   "level": "ordinary",
   "year": 2023,
@@ -22305,7 +22305,7 @@
  },
  {
   "id": "maths-2023-ol-p2-q10-a",
-  "topicId": "maths-1-5",
+  "topicId": "maths-5-2",
   "conceptId": "work-out-cba-size-angle-cba",
   "level": "ordinary",
   "year": 2023,
@@ -25078,7 +25078,7 @@
  },
  {
   "id": "maths-2024-hl-p2-q6-a",
-  "topicId": "maths-1-2",
+  "topicId": "maths-2-2",
   "conceptId": "line-segment-point-divides-line-segment",
   "level": "higher",
   "year": 2024,
@@ -26757,7 +26757,7 @@
  },
  {
   "id": "maths-2024-ol-p1-q7-b-i",
-  "topicId": "maths-5-2",
+  "topicId": "maths-3-1",
   "conceptId": "number-bacteria-after-hour-after-hours",
   "level": "ordinary",
   "year": 2024,
@@ -28801,7 +28801,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q8-a-ii",
-  "topicId": "maths-2-1",
+  "topicId": "maths-3-4",
   "conceptId": "size-angle-correct-nearest-degree",
   "level": "ordinary",
   "year": 2024,
@@ -28841,7 +28841,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q8-a-iii",
-  "topicId": "maths-2-1",
+  "topicId": "maths-3-4",
   "conceptId": "iii-second-cable-tied-sign-point",
   "level": "ordinary",
   "year": 2024,
@@ -28886,7 +28886,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q8-b-i",
-  "topicId": "maths-2-1",
+  "topicId": "maths-3-4",
   "conceptId": "part",
   "level": "ordinary",
   "year": 2024,
@@ -28931,7 +28931,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q8-b-ii",
-  "topicId": "maths-2-1",
+  "topicId": "maths-3-4",
   "conceptId": "110",
   "level": "ordinary",
   "year": 2024,
@@ -31357,7 +31357,7 @@
  },
  {
   "id": "maths-2025-hl-p1-q10-d-iii",
-  "topicId": "maths-4-1",
+  "topicId": "maths-2-2",
   "conceptId": "value-which-given-lim-4t2",
   "level": "higher",
   "year": 2025,
@@ -36745,7 +36745,7 @@
  },
  {
   "id": "maths-2025-ol-p2-q10-a-i",
-  "topicId": "maths-3-4",
+  "topicId": "maths-2-3",
   "conceptId": "aoibhe-swims-back",
   "level": "ordinary",
   "year": 2025,
@@ -36830,7 +36830,7 @@
  },
  {
   "id": "maths-2025-ol-p2-q10-a-iii",
-  "topicId": "maths-3-4",
+  "topicId": "maths-2-3",
   "conceptId": "iii-aoibhe-swims-straight-cosine-rule",
   "level": "ordinary",
   "year": 2025,
@@ -36920,7 +36920,7 @@
  },
  {
   "id": "maths-2025-ol-p2-q10-b-i",
-  "topicId": "maths-3-4",
+  "topicId": "maths-2-3",
   "conceptId": "another-example-such-route-aoibhe-could",
   "level": "ordinary",
   "year": 2025,
@@ -36961,7 +36961,7 @@
  },
  {
   "id": "maths-2025-ol-p2-q10-b-iii",
-  "topicId": "maths-3-4",
+  "topicId": "maths-2-3",
   "conceptId": "iii-particular-day-aoibhe-wants-start",
   "level": "ordinary",
   "year": 2025,

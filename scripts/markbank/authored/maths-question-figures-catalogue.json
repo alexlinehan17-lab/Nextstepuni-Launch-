@@ -4,14 +4,14 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2021 HL Paper 1 Q1(a)",
-  "description": "The question as printed on the paper \u2014 (\u0b38\u0b3f\u0b36\u0bdc) (\u0b36\u0b3e\u0b38\u0bdc) = 0 + \ud835\udc58\ud835\udc56, where \ud835\udc58\u2208\u2124, and \ud835\udc56\u0b36= \u22121. Find the value of \ud835\udc58. (\u0b36\u0b3e\u0b38\u0bdc) = 0 + \ud835\udc58\ud835\udc56, where \ud835\udc58\u2208\u2124, and \ud835\udc56\u0b36= \u22121. Find the value of \ud835\udc58. (a)"
+  "description": "The question as printed on the paper \u2014 (\u0b36\u0b3e\u0b38\u0bdc) = 0 + \ud835\udc58\ud835\udc56, where \ud835\udc58\u2208\u2124, and \ud835\udc56\u0b36= \u22121. Find the value of \ud835\udc58."
  },
  {
   "file": "maths-2021-HL-ask-p1-q1-b.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2021 HL Paper 1 Q1(b)",
-  "description": "The question as printed on the paper \u2014 (\u0b38\u0b3f\u0b36\u0bdc) (\u0b36\u0b3e\u0b38\u0bdc) = 0 + \ud835\udc58\ud835\udc56, where \ud835\udc58\u2208\u2124, and \ud835\udc56\u0b36= \u22121. Find the value of \ud835\udc58. Find \u221a\u22125 + 12\ud835\udc56. (b) Give both of your answers in the form \ud835\udc4e+ \ud835\udc4f\ud835\udc56, where \ud835\udc4e, \ud835\udc4f\u2208\u211d."
+  "description": "The question as printed on the paper \u2014 Find \u221a\u22125 + 12\ud835\udc56. (b) Give both of your answers in the form \ud835\udc4e+ \ud835\udc4f\ud835\udc56, where \ud835\udc4e, \ud835\udc4f\u2208\u211d."
  },
  {
   "file": "maths-2021-HL-ask-p1-q1-c.png",
@@ -25,7 +25,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2021 HL Paper 1 Q2(a)",
-  "description": "The question as printed on the paper \u2014 Given that \ud835\udc65= \u22123 is a solution to |\ud835\udc65+ \ud835\udc5d| = 5, find the two values of \ud835\udc5d, where \ud835\udc5d\u2208\u2124. (a)"
+  "description": "The question as printed on the paper \u2014 Given that \ud835\udc65= \u22123 is a solution to |\ud835\udc65+ \ud835\udc5d| = 5, find the two values of \ud835\udc5d, where \ud835\udc5d\u2208\u2124."
  },
  {
   "file": "maths-2021-HL-ask-p1-q2-b.png",
@@ -39,14 +39,14 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2021 HL Paper 1 Q3(a)",
-  "description": "The question as printed on the paper \u2014 The diagram shows a cuboid with dimensions \ud835\udc65, \ud835\udc66 and \ud835\udc67 cm. The areas, in cm2, of three of its faces are also shown. 4\u221a3 \ud835\udc67 8\u221a6 2\u221a2 \ud835\udc66 \ud835\udc65 Find the volume of the cuboid in the form \ud835\udc4e\u221a\ud835\udc4f cm3, where \ud835\udc4e, \ud835\udc4f\u2208\u2115. (a)"
+  "description": "The question as printed on the paper \u2014 The diagram shows a cuboid with dimensions \ud835\udc65, \ud835\udc66 and \ud835\udc67 cm. The areas, in cm2, of three of its faces are also shown. 4\u221a3 \ud835\udc67 8\u221a6 2\u221a2 \ud835\udc66 \ud835\udc65 Find the volume of the cuboid in the form \ud835\udc4e\u221a\ud835\udc4f cm3, where \ud835\udc4e, \ud835\udc4f\u2208\u2115."
  },
  {
   "file": "maths-2021-HL-ask-p1-q3-b-i.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2021 HL Paper 1 Q3(b)(i)",
-  "description": "The question as printed on the paper \u2014 Given that \ud835\udc53(\ud835\udc65) = 3\ud835\udc65\u0b36+ 8\ud835\udc65\u221235, where \ud835\udc65\u2208\u211d, find the two roots of \ud835\udc53(\ud835\udc65) = 0. (b) (i)"
+  "description": "The question as printed on the paper \u2014 Given that \ud835\udc53(\ud835\udc65) = 3\ud835\udc65\u0b36+ 8\ud835\udc65\u221235, where \ud835\udc65\u2208\u211d, find the two roots of \ud835\udc53(\ud835\udc65) = 0."
  },
  {
   "file": "maths-2021-HL-ask-p1-q3-b-ii.png",
@@ -60,7 +60,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2021 HL Paper 1 Q4(a)",
-  "description": "The question as printed on the paper \u2014 Prove using induction that 2\u0b37\u0be1\u0b3f\u0b35+ 3 is divisible by 7 for all \ud835\udc5b\u2208\u2115. (a)"
+  "description": "The question as printed on the paper \u2014 Prove using induction that 2\u0b37\u0be1\u0b3f\u0b35+ 3 is divisible by 7 for all \ud835\udc5b\u2208\u2115."
  },
  {
   "file": "maths-2021-HL-ask-p1-q4-b-i.png",
@@ -102,14 +102,14 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2021 HL Paper 1 Q6(a)",
-  "description": "The question as printed on the paper \u2014 The diagram below shows the graph of \u210e\u2032(\ud835\udc65) the derivative of a cubic function \u210e(\ud835\udc65). \ud835\udc66 6 \u210e\u2032(\ud835\udc65) \ud835\udc65 -1 1 2 3 Show that \u210e\u11f1(\ud835\udc65) = \u22122\ud835\udc65\u0b36+ 4\ud835\udc65+ 6. (a)"
+  "description": "The question as printed on the paper \u2014 The diagram below shows the graph of \u210e\u2032(\ud835\udc65) the derivative of a cubic function \u210e(\ud835\udc65). \ud835\udc66 6 \u210e\u2032(\ud835\udc65) \ud835\udc65 -1 1 2 3 Show that \u210e\u11f1(\ud835\udc65) = \u22122\ud835\udc65\u0b36+ 4\ud835\udc65+ 6."
  },
  {
   "file": "maths-2021-HL-ask-p1-q6-b.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2021 HL Paper 1 Q6(b)",
-  "description": "The question as printed on the paper \u2014 The diagram below shows the graph of \u210e\u2032(\ud835\udc65) the derivative of a cubic function \u210e(\ud835\udc65). \ud835\udc66 6 \u210e\u2032(\ud835\udc65) \ud835\udc65 -1 1 2 3 Use \u210e\u2032(\ud835\udc65) to find the maximum positive value of the slope of a tangent to \u210e(\ud835\udc65). (b)"
+  "description": "The question as printed on the paper \u2014 The diagram below shows the graph of \u210e\u2032(\ud835\udc65) the derivative of a cubic function \u210e(\ud835\udc65). \ud835\udc66 6 \u210e\u2032(\ud835\udc65) \ud835\udc65 -1 1 2 3 Use \u210e\u2032(\ud835\udc65) to find the maximum positive value of the slope of a tangent to \u210e(\ud835\udc65)."
  },
  {
   "file": "maths-2021-HL-ask-p1-q6-c.png",
@@ -158,14 +158,14 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2021 HL Paper 1 Q7(b)(ii)",
-  "description": "The question as printed on the paper \u2014 If the length of the pendulum is 1 m, show that the angle, \ud835\udf03, of swing 1 of the (b) (i) pendulum is 26\u00b0, correct to the nearest degree. (ii) Hence, find the total accumulated angle that the pendulum swings through (i.e. "
+  "description": "The question as printed on the paper \u2014 The tip of the pendulum of a grandfather clock swings initially through an arc length of 45 cm. On each successive swing the length of the arc is 90% of the previous length. \ud835\udf03 Swing 1 Swing 2 45 cm 45(0\u00b79) cm If the leng"
  },
  {
   "file": "maths-2021-HL-ask-p1-q7-b-iii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2021 HL Paper 1 Q7(b)(iii)",
-  "description": "The question as printed on the paper \u2014 If the length of the pendulum is 1 m, show that the angle, \ud835\udf03, of swing 1 of the (b) (i) pendulum is 26\u00b0, correct to the nearest degree. (ii) Hence, find the total accumulated angle that the pendulum swings through (i.e. "
+  "description": "The question as printed on the paper \u2014 The tip of the pendulum of a grandfather clock swings initially through an arc length of 45 cm. On each successive swing the length of the arc is 90% of the previous length. \ud835\udf03 Swing 1 Swing 2 45 cm 45(0\u00b79) cm If the leng"
  },
  {
   "file": "maths-2021-HL-ask-p1-q8-a-i.png",
@@ -326,14 +326,14 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2021 HL Paper 2 Q2(c)(i)",
-  "description": "The question as printed on the paper \u2014 \u0b36\u0bde\u0b3e\u0b36 The line 3\ud835\udc65\u22126\ud835\udc66+ 2 = 0 contains the point \u1240\ud835\udc58, \u0b37\u1241, where \ud835\udc58\u2208\u211d. The points \ud835\udc34(4, 2) and \ud835\udc36(16, 11) are vertices of the triangle \ud835\udc34\ud835\udc35\ud835\udc36 shown below. (c) \ud835\udc37 and \ud835\udc38 are points on [\ud835\udc36\ud835\udc34] and [\ud835\udc36\ud835\udc35] respectively. The ratio |\ud835\udc34\ud835\udc37| \u2236|\ud835\udc37\ud835\udc36| i"
+  "description": "The question as printed on the paper \u2014 The points \ud835\udc34(4, 2) and \ud835\udc36(16, 11) are vertices of the triangle \ud835\udc34\ud835\udc35\ud835\udc36 shown below. (c) \ud835\udc37 and \ud835\udc38 are points on [\ud835\udc36\ud835\udc34] and [\ud835\udc36\ud835\udc35] respectively. The ratio |\ud835\udc34\ud835\udc37| \u2236|\ud835\udc37\ud835\udc36| is 2 \u22361. \ud835\udc36 (16, 11) \ud835\udc35 \ud835\udc34 (4, 2)"
  },
  {
   "file": "maths-2021-HL-ask-p2-q2-a.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2021 HL Paper 2 Q2(a)",
-  "description": "The question as printed on the paper \u2014 \u0b36\u0bde\u0b3e\u0b36 The line 3\ud835\udc65\u22126\ud835\udc66+ 2 = 0 contains the point \u1240\ud835\udc58, \u0b37\u1241, where \ud835\udc58\u2208\u211d. The line 3\ud835\udc65\u22126\ud835\udc66+ 2 = 0 contains the point \u1240\ud835\udc58, \u0b37\u1241, where \ud835\udc58\u2208\u211d. (a) Find the value of \ud835\udc58."
+  "description": "The question as printed on the paper \u2014 The line 3\ud835\udc65\u22126\ud835\udc66+ 2 = 0 contains the point \u1240\ud835\udc58, \u0b37\u1241, where \ud835\udc58\u2208\u211d. (a) Find the value of \ud835\udc58."
  },
  {
   "file": "maths-2021-HL-ask-p2-q2-b.png",
@@ -347,7 +347,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2021 HL Paper 2 Q2(c)(ii)",
-  "description": "The question as printed on the paper \u2014 \u0b36\u0bde\u0b3e\u0b36 The line 3\ud835\udc65\u22126\ud835\udc66+ 2 = 0 contains the point \u1240\ud835\udc58, \u0b37\u1241, where \ud835\udc58\u2208\u211d. The points \ud835\udc34(4, 2) and \ud835\udc36(16, 11) are vertices of the triangle \ud835\udc34\ud835\udc35\ud835\udc36 shown below. (c) \ud835\udc37 and \ud835\udc38 are points on [\ud835\udc36\ud835\udc34] and [\ud835\udc36\ud835\udc35] respectively. The ratio |\ud835\udc34\ud835\udc37| \u2236|\ud835\udc37\ud835\udc36| i"
+  "description": "The question as printed on the paper \u2014 The points \ud835\udc34(4, 2) and \ud835\udc36(16, 11) are vertices of the triangle \ud835\udc34\ud835\udc35\ud835\udc36 shown below. (c) \ud835\udc37 and \ud835\udc38 are points on [\ud835\udc36\ud835\udc34] and [\ud835\udc36\ud835\udc35] respectively. The ratio |\ud835\udc34\ud835\udc37| \u2236|\ud835\udc37\ud835\udc36| is 2 \u22361. \ud835\udc36 (16, 11) \ud835\udc35 \ud835\udc34 (4, 2) [\ud835\udc34\ud835\udc35]and [\ud835\udc37\ud835\udc38] are horizontal line se"
  },
  {
   "file": "maths-2021-HL-ask-p2-q3-a.png",
@@ -417,7 +417,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2021 HL Paper 2 Q6(b)",
-  "description": "The question as printed on the paper \u2014 In the diagram below, the lines \ud835\udc43\ud835\udc34, \ud835\udc3b\ud835\udc3e, and \ud835\udc35\ud835\udc45 are parallel. (b) Prove that |\ud835\udc34\ud835\udc3b| \u00d7 |\ud835\udc44\ud835\udc35| = |\ud835\udc34\ud835\udc43| \u00d7 |\ud835\udc3b\ud835\udc35|. Give a reason for each geometrical statement you use. \ud835\udc34 \ud835\udc43 \ud835\udc3b \ud835\udc3e \ud835\udc35 \ud835\udc36 \ud835\udc44 \ud835\udc45"
+  "description": "The question as printed on the paper \u2014 Prove that if two triangles \u2206\ud835\udc34\ud835\udc35\ud835\udc36 and \u2206\ud835\udc34\u2032\ud835\udc35\u2032\ud835\udc36\u2032 are similar, then the lengths of their sides are (a) proportional in order: |\u0bba\u0bbb| |\u0bbb\u0bbc| |\u0bbc\u0bba| |\u0bba\u11f2\u0bbb\u11f2| = |\u0bbb\u11f2\u0bbc\u11f2| = |\u0bbc\u11f2\u0bba\u11f2|. Diagram: In the diagram below, the lines \ud835\udc43\ud835\udc34, \ud835\udc3b\ud835\udc3e, and \ud835\udc35\ud835\udc45 ar"
  },
  {
   "file": "maths-2021-HL-ask-p2-q7-a.png",
@@ -641,7 +641,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2021 OL Paper 1 Q3(a)",
-  "description": "The question as printed on the paper \u2014 Show that \ud835\udc65= 4 is a solution of the equation \ud835\udc65\u0b36\u22122\ud835\udc65\u22128 = 0. (a)"
+  "description": "The question as printed on the paper \u2014 Show that \ud835\udc65= 4 is a solution of the equation \ud835\udc65\u0b36\u22122\ud835\udc65\u22128 = 0."
  },
  {
   "file": "maths-2021-OL-ask-p1-q3-b.png",
@@ -676,14 +676,14 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2021 OL Paper 1 Q5(a)",
-  "description": "The question as printed on the paper \u2014 The function, \ud835\udc53 is defined as \ud835\udc53(\ud835\udc65) = 3\ud835\udc65\u0b36\u22126\ud835\udc65+ 7, where \ud835\udc65\u2208\u211d. Find \ud835\udc53(0\u221967), correct to 2 decimal places. (a)"
+  "description": "The question as printed on the paper \u2014 The function, \ud835\udc53 is defined as \ud835\udc53(\ud835\udc65) = 3\ud835\udc65\u0b36\u22126\ud835\udc65+ 7, where \ud835\udc65\u2208\u211d. Find \ud835\udc53(0\u221967), correct to 2 decimal places."
  },
  {
   "file": "maths-2021-OL-ask-p1-q5-b.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2021 OL Paper 1 Q5(b)",
-  "description": "The question as printed on the paper \u2014 The function, \ud835\udc53 is defined as \ud835\udc53(\ud835\udc65) = 3\ud835\udc65\u0b36\u22126\ud835\udc65+ 7, where \ud835\udc65\u2208\u211d. Find the value of \ud835\udc65 when \ud835\udc53(\ud835\udc65) = 4. (b)"
+  "description": "The question as printed on the paper \u2014 The function, \ud835\udc53 is defined as \ud835\udc53(\ud835\udc65) = 3\ud835\udc65\u0b36\u22126\ud835\udc65+ 7, where \ud835\udc65\u2208\u211d. Find the value of \ud835\udc65 when \ud835\udc53(\ud835\udc65) = 4."
  },
  {
   "file": "maths-2021-OL-ask-p1-q5-c.png",
@@ -858,7 +858,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2021 OL Paper 1 Q10(b)(i)",
-  "description": "The question as printed on the paper \u2014 John walks around a circular trail of radius 0\u00b75 km at a steady speed of 6 km/h. (b) (i) How long will it take him to complete 3 full circuits of the trail? Give your answer correct to the nearest minute. Trail 0\u00b75 km"
+  "description": "The question as printed on the paper \u2014 John walks around a circular trail of radius 0\u00b75 km at a steady speed of 6 km/h. (b) (i) How long will it take him to complete 3 full circuits of the trail? Give your answer correct to the nearest minute."
  },
  {
   "file": "maths-2021-OL-ask-p1-q10-b-ii.png",
@@ -893,14 +893,14 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2021 OL Paper 2 Q1(b)(ii)",
-  "description": "The question as printed on the paper \u2014 (b) Kate spins each spinner once. What is the probability that she must use: (ii) a red or yellow coloured spot?"
+  "description": "The question as printed on the paper \u2014 The game \u201cTwister\u201d is played using two spinners and a mat with coloured spots. The two spinners needed for the game are shown below. Both consist of four equal sections. A player spins both spinners and must then place t"
  },
  {
   "file": "maths-2021-OL-ask-p2-q1-c-i.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2021 OL Paper 2 Q1(c)(i)",
-  "description": "The question as printed on the paper \u2014 (c) Jack spins each spinner once. What is the probability that the outcome is: (i) his right hand and a blue spot?"
+  "description": "The question as printed on the paper \u2014 The game \u201cTwister\u201d is played using two spinners and a mat with coloured spots. The two spinners needed for the game are shown below. Both consist of four equal sections. A player spins both spinners and must then place t"
  },
  {
   "file": "maths-2021-OL-ask-p2-q2-a-i.png",
@@ -991,7 +991,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2021 OL Paper 2 Q6(b)(i)",
-  "description": "The question as printed on the paper \u2014 The triangle \ud835\udc43\ud835\udc44\ud835\udc45 is the image of the triangle \ud835\udc37\ud835\udc38\ud835\udc39 under an enlargement. (b) (The diagram is not drawn to scale.) The scale factor of the enlargement, \ud835\udc58, is 2\u00b75. |\ud835\udc38\ud835\udc39| = 3 cm. \ud835\udc43 \ud835\udc37 \ud835\udc39 \ud835\udc38 3 cm \ud835\udc45 \ud835\udc44 Use the scale factor to find "
+  "description": "The question as printed on the paper \u2014 The triangle \ud835\udc43\ud835\udc44\ud835\udc45 is the image of the triangle \ud835\udc37\ud835\udc38\ud835\udc39 under an enlargement. (b) (The diagram is not drawn to scale.) The scale factor of the enlargement, \ud835\udc58, is 2\u00b75. |\ud835\udc38\ud835\udc39| = 3 cm. \ud835\udc43 \ud835\udc45 \ud835\udc44 Use the scale factor to find |\ud835\udc44\ud835\udc45|. (i)"
  },
  {
   "file": "maths-2021-OL-ask-p2-q7-a-i.png",
@@ -1082,7 +1082,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2021 OL Paper 2 Q9(b)(i)",
-  "description": "The question as printed on the paper \u2014 The aircraft flies from airport \ud835\udc34 to airport \ud835\udc35, (b) and then on to airport \ud835\udc36, at the same altitude. \ud835\udc35 The pilot records the flight summary on the 97\u00b0 given diagram. Find the distance from airport \ud835\udc35 (i) to airport \ud835\udc36. Give"
+  "description": "The question as printed on the paper \u2014 The line segment [ SE ], shown below, represents an airport runway. The point S and the point E represent the start and end points of the runway respectively. The diagram is drawn to a scale of 1 unit = 250 metres. 1 uni"
  },
  {
   "file": "maths-2021-OL-ask-p2-q10-a-ii.png",
@@ -1215,7 +1215,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2022 HL Paper 1 Q5(a)",
-  "description": "The question as printed on the paper \u2014 \u0b35 \ud835\udc54(\ud835\udc65) = \ud835\udc65\u0b36\u2212 \u0beb where \ud835\udc65\u2208\u211d. (a) Find \ud835\udc54\u2032(\ud835\udc65), the derivative of \ud835\udc54(\ud835\udc65)."
+  "description": "The question as printed on the paper \u2014 \ud835\udc54(\ud835\udc65) = \ud835\udc65\u0b36\u2212 \u0beb where \ud835\udc65\u2208\u211d. (a) Find \ud835\udc54\u2032(\ud835\udc65), the derivative of \ud835\udc54(\ud835\udc65)."
  },
  {
   "file": "maths-2022-HL-ask-p1-q5-b-i.png",
@@ -1236,7 +1236,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2022 HL Paper 1 Q6(a)",
-  "description": "The question as printed on the paper \u2014 Differentiate \ud835\udc53(\ud835\udc65) = 2\ud835\udc65\u0b36+ 4\ud835\udc65 with respect to \ud835\udc65, from first principles. (a)"
+  "description": "The question as printed on the paper \u2014 Differentiate \ud835\udc53(\ud835\udc65) = 2\ud835\udc65\u0b36+ 4\ud835\udc65 with respect to \ud835\udc65, from first principles."
  },
  {
   "file": "maths-2022-HL-ask-p1-q6-b.png",
@@ -1369,14 +1369,14 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2022 HL Paper 1 Q9(f)(i)",
-  "description": "The question as printed on the paper \u2014 (f) Jessica also gets daily injections of a medicinal drug at the same time every day. She gets \ud835\udc51 mg of the drug in each injection, where \ud835\udc51\u2208\u211d. Each day, the amount of the drug left in Jessica\u2019s body from an injection dec"
+  "description": "The question as printed on the paper \u2014 Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex\u2019s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex\u2019s b"
  },
  {
   "file": "maths-2022-HL-ask-p1-q9-f-ii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2022 HL Paper 1 Q9(f)(ii)",
-  "description": "The question as printed on the paper \u2014 (f) Jessica also gets daily injections of a medicinal drug at the same time every day. She gets \ud835\udc51 mg of the drug in each injection, where \ud835\udc51\u2208\u211d. Each day, the amount of the drug left in Jessica\u2019s body from an injection dec"
+  "description": "The question as printed on the paper \u2014 Alex gets injections of a medicinal drug. Each injection has 15 mg of the drug. Each day, the amount of the drug left in Alex\u2019s body from an injection decreases by 40%. So, the amount of the drug (in mg) left in Alex\u2019s b"
  },
  {
   "file": "maths-2022-HL-ask-p1-q10-a.png",
@@ -1509,7 +1509,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2022 HL Paper 2 Q6(a)",
-  "description": "The question as printed on the paper \u2014 Construct the circumcentre of the triangle \ud835\udc4b\ud835\udc4c\ud835\udc4d shown below, using only a compass and (a) straight edge. Label the circumcentre \ud835\udc36. Show your construction lines clearly. \ud835\udc4d \ud835\udc4c \ud835\udc4b \ud835\udc37"
+  "description": "The question as printed on the paper \u2014 Construct the circumcentre of the triangle \ud835\udc4b\ud835\udc4c\ud835\udc4d shown below, using only a compass and (a) straight edge. Label the circumcentre \ud835\udc36. Show your construction lines clearly. \ud835\udc4d \ud835\udc4b \ud835\udc37"
  },
  {
   "file": "maths-2022-HL-ask-p2-q6-b.png",
@@ -1621,7 +1621,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2022 HL Paper 2 Q9(c)(i)",
-  "description": "The question as printed on the paper \u2014 Sound travels at a speed of roughly 343 metres per second in air. (c) (i) As the airplane flies, its engine makes noise. It takes some time for this sound to reach Oscar. Use the information in Diagram 1 to show that it "
+  "description": "The question as printed on the paper \u2014 Oscar is taking some measurements and is using trigonometry to work out some angles, distances, and areas. First, Oscar takes measurements of two adjacent triangular fields, Field 1 (\ud835\udc34\ud835\udc35\ud835\udc36) and Field 2 (\ud835\udc35\ud835\udc37\ud835\udc36), as shown in t"
  },
  {
   "file": "maths-2022-HL-ask-p2-q9-c-ii.png",
@@ -1915,7 +1915,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2022 OL Paper 1 Q9(b)(ii)",
-  "description": "The question as printed on the paper \u2014 Based on this model, write a formula for \ud835\udc49(\ud835\udc61), the value of Brian\u2019s car after \ud835\udc61 years, (b) (i) in terms of the age of the car (\ud835\udc61). Use the fact that the value decreases by 20% each year. Hence, or otherwise, work out the"
+  "description": "The question as printed on the paper \u2014 Brian buys a new car. The graph below represents a model that can be used to predict the value of this car, \ud835\udc49, for the next number of years. This model assumes that the value of the car reduces (depreciates) by a fixed p"
  },
  {
   "file": "maths-2022-OL-ask-p1-q9-c-ii.png",
@@ -1943,28 +1943,28 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2022 OL Paper 1 Q10(a)(i)",
-  "description": "The question as printed on the paper \u2014 (a) During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: \u210e= \u22122\ud835\udc61\u0b36+ 5t + 1\u22192 where \u210e is the height of the ball, in metres, \ud835\udc61 seconds after being h"
+  "description": "The question as printed on the paper \u2014 Keith plays hurling. (a) During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: \u210e= \u22122\ud835\udc61\u0b36+ 5t + 1\u22192 where \u210e is the height of the ball, in metres, \ud835\udc61 "
  },
  {
   "file": "maths-2022-OL-ask-p1-q10-a-ii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2022 OL Paper 1 Q10(a)(ii)",
-  "description": "The question as printed on the paper \u2014 (a) During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: \u210e= \u22122\ud835\udc61\u0b36+ 5t + 1\u22192 where \u210e is the height of the ball, in metres, \ud835\udc61 seconds after being h"
+  "description": "The question as printed on the paper \u2014 Keith plays hurling. (a) During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: \u210e= \u22122\ud835\udc61\u0b36+ 5t + 1\u22192 where \u210e is the height of the ball, in metres, \ud835\udc61 "
  },
  {
   "file": "maths-2022-OL-ask-p1-q10-a-iii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2022 OL Paper 1 Q10(a)(iii)",
-  "description": "The question as printed on the paper \u2014 (a) During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: \u210e= \u22122\ud835\udc61\u0b36+ 5t + 1\u22192 where \u210e is the height of the ball, in metres, \ud835\udc61 seconds after being h"
+  "description": "The question as printed on the paper \u2014 Keith plays hurling. (a) During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: \u210e= \u22122\ud835\udc61\u0b36+ 5t + 1\u22192 where \u210e is the height of the ball, in metres, \ud835\udc61 "
  },
  {
   "file": "maths-2022-OL-ask-p1-q10-a-iv.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2022 OL Paper 1 Q10(a)(iv)",
-  "description": "The question as printed on the paper \u2014 (a) During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: \u210e= \u22122\ud835\udc61\u0b36+ 5t + 1\u22192 where \u210e is the height of the ball, in metres, \ud835\udc61 seconds after being h"
+  "description": "The question as printed on the paper \u2014 Keith plays hurling. (a) During a match, Keith hits the ball with his hurl. The height of the ball could be modelled by the following quadratic function: \u210e= \u22122\ud835\udc61\u0b36+ 5t + 1\u22192 where \u210e is the height of the ball, in metres, \ud835\udc61 "
  },
  {
   "file": "maths-2022-OL-ask-p1-q10-b.png",
@@ -2083,7 +2083,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2022 OL Paper 2 Q5(a)(iii)",
-  "description": "The question as printed on the paper \u2014 Write down the size of the angle \u2220 \ud835\udc43\ud835\udc44\ud835\udc45. (a) (i) Show that the area of the triangle \ud835\udc43\ud835\udc44\ud835\udc45 is 16\u221a3 cm2. (ii) (iii) Hence, or otherwise, find the perpendicular height of the triangle \ud835\udc43\ud835\udc44\ud835\udc45, taking \ud835\udc43\ud835\udc44 as the base. Give your answ"
+  "description": "The question as printed on the paper \u2014 An equilateral triangle \ud835\udc43\ud835\udc44\ud835\udc45 has sides of length 8 cm. \ud835\udc45 \ud835\udc44 \ud835\udc43 8 cm Write down the size of the angle \u2220 \ud835\udc43\ud835\udc44\ud835\udc45. (a) (i) Show that the area of the triangle \ud835\udc43\ud835\udc44\ud835\udc45 is 16\u221a3 cm2. (ii) (iii) Hence, or otherwise, find the perpendicular "
  },
  {
   "file": "maths-2022-OL-ask-p2-q5-b.png",
@@ -2125,14 +2125,14 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2022 OL Paper 2 Q7(a)(i)",
-  "description": "The question as printed on the paper \u2014 (a) The staff record the weight of each animal in the shelter on two different days: the day they are taken in to the shelter (Day X) and a number of days later (Day Y). The table below shows the weights of 10 dogs (labe"
+  "description": "The question as printed on the paper \u2014 An animal shelter takes cats and dogs. (a) The staff record the weight of each animal in the shelter on two different days: the day they are taken in to the shelter (Day X) and a number of days later (Day Y). The table b"
  },
  {
   "file": "maths-2022-OL-ask-p2-q7-a-ii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2022 OL Paper 2 Q7(a)(ii)",
-  "description": "The question as printed on the paper \u2014 (a) The staff record the weight of each animal in the shelter on two different days: the day they are taken in to the shelter (Day X) and a number of days later (Day Y). The table below shows the weights of 10 dogs (labe"
+  "description": "The question as printed on the paper \u2014 An animal shelter takes cats and dogs. (a) The staff record the weight of each animal in the shelter on two different days: the day they are taken in to the shelter (Day X) and a number of days later (Day Y). The table b"
  },
  {
   "file": "maths-2022-OL-ask-p2-q7-a-iii.png",
@@ -2146,7 +2146,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2022 OL Paper 2 Q7(b)",
-  "description": "The question as printed on the paper \u2014 An animal shelter takes cats and dogs. (b) Complete the table, by filling in the four missing values. Male Female Total \ud835\udfcf\ud835\udfd2 5 9 Cats 11 Dogs \ud835\udfd2\ud835\udfce Total Three different animals were picked at random from the animals in the s"
+  "description": "The question as printed on the paper \u2014 An animal shelter takes cats and dogs. (b) Complete the table, by filling in the four missing values. Male Female Total \ud835\udfcf\ud835\udfd2 5 9 Cats 11 Dogs \ud835\udfd2\ud835\udfce Total"
  },
  {
   "file": "maths-2022-OL-ask-p2-q7-c-ii.png",
@@ -2202,14 +2202,14 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2022 OL Paper 2 Q8(c)(i)",
-  "description": "The question as printed on the paper \u2014 (c) Assume that the Fastnet lighthouse can be seen from anywhere within a circle of radius 50 km. (i) Work out the area of the circle within which the Fastnet lighthouse can be seen. Give your answer correct to the neare"
+  "description": "The question as printed on the paper \u2014 The top of a particular lighthouse is in the shape of a hemisphere on top of a cylinder. The hemisphere and the cylinder both have a radius of 3 m. \u210e 3 m (c) Assume that the Fastnet lighthouse can be seen from anywhere w"
  },
  {
   "file": "maths-2022-OL-ask-p2-q8-c-ii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2022 OL Paper 2 Q8(c)(ii)",
-  "description": "The question as printed on the paper \u2014 (c) Assume that the Fastnet lighthouse can be seen from anywhere within a circle of radius 50 km. (ii) 50 km = 27 nautical miles. Use this to work out how many km are in 1 nautical mile. Give your answer correct to 4 sig"
+  "description": "The question as printed on the paper \u2014 The top of a particular lighthouse is in the shape of a hemisphere on top of a cylinder. The hemisphere and the cylinder both have a radius of 3 m. \u210e 3 m (c) Assume that the Fastnet lighthouse can be seen from anywhere w"
  },
  {
   "file": "maths-2022-OL-ask-p2-q8-d.png",
@@ -2307,7 +2307,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 HL Paper 1 Q1(a)",
-  "description": "The question as printed on the paper \u2014 Find the two values of \ud835\udc5a\u2208\u211d for which |5 + 3\ud835\udc5a| = 11. (a)"
+  "description": "The question as printed on the paper \u2014 Find the two values of \ud835\udc5a\u2208\u211d for which |5 + 3\ud835\udc5a| = 11."
  },
  {
   "file": "maths-2023-HL-ask-p1-q1-b.png",
@@ -2349,7 +2349,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 HL Paper 1 Q3(a)",
-  "description": "The question as printed on the paper \u2014 Prove that \u221a2 is not a rational number. (a)"
+  "description": "The question as printed on the paper \u2014 Prove that \u221a2 is not a rational number."
  },
  {
   "file": "maths-2023-HL-ask-p1-q3-b.png",
@@ -2496,7 +2496,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 HL Paper 1 Q8(d)(ii)",
-  "description": "The question as printed on the paper \u2014 (d) Rohan wants to put the same amount of money in a savings account at the start of each month for 36 months so that, at the end of 3 years, he will have a total of \u20ac12 000 in the account. Interest is calculated at a ra"
+  "description": "The question as printed on the paper \u2014 Olga, Chen, Fiona, and Rohan all have bank accounts. (d) Rohan wants to put the same amount of money in a savings account at the start of each month for 36 months so that, at the end of 3 years, he will have a total of \u20ac"
  },
  {
   "file": "maths-2023-HL-ask-p1-q8-e.png",
@@ -2524,7 +2524,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 HL Paper 1 Q9(b)(iii)",
-  "description": "The question as printed on the paper \u2014 She makes a table to show the pairs of factors of 12 (b) (that is, the pairs of natural numbers \ud835\udc65 and \ud835\udc66 with \ud835\udc65\ud835\udc66= 12). Ava realises that the relationship between \ud835\udc65 and \ud835\udc66 is \ud835\udc66= (iii) \u0beb . \u0b35\u0b36 On the co-ordinate diagram above"
+  "description": "The question as printed on the paper \u2014 Ava is investigating factors of different numbers. She makes a table to show the pairs of factors of 12 (b) (that is, the pairs of natural numbers \ud835\udc65 and \ud835\udc66 with \ud835\udc65\ud835\udc66= 12). Ava realises that the relationship between \ud835\udc65 and \ud835\udc66 "
  },
  {
   "file": "maths-2023-HL-ask-p1-q9-c-i.png",
@@ -2538,7 +2538,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 HL Paper 1 Q9(c)(ii)",
-  "description": "The question as printed on the paper \u2014 The area of the triangle formed by the \ud835\udc65-axis, the \ud835\udc66-axis, and the tangent (ii) \u0b35\u0b36 \u0b36\u0b38 \ud835\udc66= \u2212 \u0be3\u0c2e \ud835\udc65+ \u0be3 is always \ud835\udc58 square units, where \ud835\udc58\u2208\u2115 is a constant. Work out the value of \ud835\udc58. \u0b35\u0b36 \u0b36\u0b38 \ud835\udc66 \ud835\udc66= \u2212 \u0be3\u0c2e \ud835\udc65+ \u0be3 \ud835\udc65"
+  "description": "The question as printed on the paper \u2014 The area of the triangle formed by the \ud835\udc65-axis, the \ud835\udc66-axis, and the tangent (ii) \u0b35\u0b36 \u0b36\u0b38 \ud835\udc66= \u2212 \u0be3\u0c2e \ud835\udc65+ \u0be3 is always \ud835\udc58 square units, where \ud835\udc58\u2208\u2115 is a constant. Work out the value of \ud835\udc58. \u0b35\u0b36 \u0b36\u0b38 \ud835\udc66 \ud835\udc66= \u2212 \u0be3\u0c2e \ud835\udc65+ \u0be3"
  },
  {
   "file": "maths-2023-HL-ask-p1-q10-b.png",
@@ -2559,14 +2559,14 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 HL Paper 1 Q10(e)(i)",
-  "description": "The question as printed on the paper \u2014 Diagram A below shows a square-based pyramid, with base sides of length \ud835\udc50 units. (e) The base of the pyramid is horizontal, and its perpendicular height is \u210e units (where \ud835\udc50, \u210e\u2208\u211d). Diagram B below shows the same pyramid. "
+  "description": "The question as printed on the paper \u2014 A triangle has a base of length 2 units and a perpendicular height of 8 units, as shown in the diagram on the right. The diagrams below show \ud835\udc47\u0b35, \ud835\udc47\u0b36, and \ud835\udc47\u0b37, the first three shapes in a sequence 8 of shapes based on this "
  },
  {
   "file": "maths-2023-HL-ask-p1-q10-e-ii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 HL Paper 1 Q10(e)(ii)",
-  "description": "The question as printed on the paper \u2014 Diagram A below shows a square-based pyramid, with base sides of length \ud835\udc50 units. (e) The base of the pyramid is horizontal, and its perpendicular height is \u210e units (where \ud835\udc50, \u210e\u2208\u211d). Diagram B below shows the same pyramid. "
+  "description": "The question as printed on the paper \u2014 A triangle has a base of length 2 units and a perpendicular height of 8 units, as shown in the diagram on the right. The diagrams below show \ud835\udc47\u0b35, \ud835\udc47\u0b36, and \ud835\udc47\u0b37, the first three shapes in a sequence 8 of shapes based on this "
  },
  {
   "file": "maths-2023-HL-ask-p2-q1-a.png",
@@ -2594,7 +2594,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 HL Paper 2 Q2(a)",
-  "description": "The question as printed on the paper \u2014 Prove that sin\u123a\ud835\udc34+ \ud835\udc35\u123b= sin \ud835\udc34cos \ud835\udc35+ cos \ud835\udc34sin \ud835\udc35. (a)"
+  "description": "The question as printed on the paper \u2014 Prove that sin\u123a\ud835\udc34+ \ud835\udc35\u123b= sin \ud835\udc34cos \ud835\udc35+ cos \ud835\udc34sin \ud835\udc35."
  },
  {
   "file": "maths-2023-HL-ask-p2-q2-c.png",
@@ -2608,7 +2608,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 HL Paper 2 Q3(a)",
-  "description": "The question as printed on the paper \u2014 Find the area of the triangle with vertices (4, 6), (\u22123, \u22121), and (0, 11). (a)"
+  "description": "The question as printed on the paper \u2014 Find the area of the triangle with vertices (4, 6), (\u22123, \u22121), and (0, 11)."
  },
  {
   "file": "maths-2023-HL-ask-p2-q3-b-i.png",
@@ -2650,7 +2650,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 HL Paper 2 Q5(a)(iii)",
-  "description": "The question as printed on the paper \u2014 (a) Some of the cubes are red, some are green, and the rest are blue. Rohan carries out an experiment in which he picks out 5 different cubes at random. He records the number of cubes of each colour, and replaces the 5 c"
+  "description": "The question as printed on the paper \u2014 Rohan has a large number of small cubes. The cubes are identical in size. (a) Some of the cubes are red, some are green, and the rest are blue. Rohan carries out an experiment in which he picks out 5 different cubes at r"
  },
  {
   "file": "maths-2023-HL-ask-p2-q5-b.png",
@@ -2706,14 +2706,14 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 HL Paper 2 Q7(e)(i)",
-  "description": "The question as printed on the paper \u2014 Use the formula \ud835\udc49(\ud835\udc61) = 2 \u22120\u22194 cos \u1240 \u0b36\ud835\udc61\u1241 to find each of the following, when Olga is resting. (e) Give each answer correct to 3 decimal places. Find the volume of air in Olga\u2019s lungs, half a second after \ud835\udc61= 0. (i)"
+  "description": "The question as printed on the paper \u2014 Olga is a cyclist. Use the formula \ud835\udc49(\ud835\udc61) = 2 \u22120\u22194 cos \u1240 \u0b36\ud835\udc61\u1241 to find each of the following, when Olga is resting. (e) Give each answer correct to 3 decimal places. Find the volume of air in Olga\u2019s lungs, half a second afte"
  },
  {
   "file": "maths-2023-HL-ask-p2-q7-e-ii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 HL Paper 2 Q7(e)(ii)",
-  "description": "The question as printed on the paper \u2014 Use the formula \ud835\udc49(\ud835\udc61) = 2 \u22120\u22194 cos \u1240 \u0b36\ud835\udc61\u1241 to find each of the following, when Olga is resting. (e) Give each answer correct to 3 decimal places. Find the volume of air in Olga\u2019s lungs, half a second after \ud835\udc61= 0. (i) (ii) Fi"
+  "description": "The question as printed on the paper \u2014 Olga is a cyclist. Use the formula \ud835\udc49(\ud835\udc61) = 2 \u22120\u22194 cos \u1240 \u0b36\ud835\udc61\u1241 to find each of the following, when Olga is resting. (e) Give each answer correct to 3 decimal places. Find the volume of air in Olga\u2019s lungs, half a second afte"
  },
  {
   "file": "maths-2023-HL-ask-p2-q7-f.png",
@@ -2748,21 +2748,21 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 HL Paper 2 Q9(a)(i)",
-  "description": "The question as printed on the paper \u2014 (a) First, she looks at two different tilings: one using identical squares and another using identical regular hexagons. (Note: a regular hexagon can be split into 6 congruent equilateral triangles.) Tiling with squares "
+  "description": "The question as printed on the paper \u2014 Ava is looking at different tilings, that is, different ways of covering a region with shapes. (a) First, she looks at two different tilings: one using identical squares and another using identical regular hexagons. (Not"
  },
  {
   "file": "maths-2023-HL-ask-p2-q9-a-ii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 HL Paper 2 Q9(a)(ii)",
-  "description": "The question as printed on the paper \u2014 (a) First, she looks at two different tilings: one using identical squares and another using identical regular hexagons. (Note: a regular hexagon can be split into 6 congruent equilateral triangles.) Tiling with squares "
+  "description": "The question as printed on the paper \u2014 Ava is looking at different tilings, that is, different ways of covering a region with shapes. (a) First, she looks at two different tilings: one using identical squares and another using identical regular hexagons. (Not"
  },
  {
   "file": "maths-2023-HL-ask-p2-q9-b-i.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 HL Paper 2 Q9(b)(i)",
-  "description": "The question as printed on the paper \u2014 (b) Next, Ava looks at more complicated tilings. The tiling below is made up of two shapes: an arrowhead (\ud835\udc34\ud835\udc35\ud835\udc38\ud835\udc37) and a quadrilateral (\ud835\udc38\ud835\udc35\ud835\udc36\ud835\udc37). The point \ud835\udc38 lies on the line \ud835\udc34\ud835\udc36, and both shapes are symmetrical about \ud835\udc34\ud835\udc36 (diagr"
+  "description": "The question as printed on the paper \u2014 Ava is looking at different tilings, that is, different ways of covering a region with shapes. (b) Next, Ava looks at more complicated tilings. The tiling below is made up of two shapes: an arrowhead (\ud835\udc34\ud835\udc35\ud835\udc38\ud835\udc37) and a quadril"
  },
  {
   "file": "maths-2023-HL-ask-p2-q9-b-ii.png",
@@ -2923,7 +2923,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 OL Paper 1 Q6(b)",
-  "description": "The question as printed on the paper \u2014 Expand and simplify (2\ud835\udc65\u22124)\u0b36\u22126. (b)"
+  "description": "The question as printed on the paper \u2014 Expand and simplify (2\ud835\udc65\u22124)\u0b36\u22126."
  },
  {
   "file": "maths-2023-OL-ask-p1-q6-c.png",
@@ -3196,21 +3196,21 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 OL Paper 2 Q4(a)(i)",
-  "description": "The question as printed on the paper \u2014 (a) During a match, Rohan takes a number of free throws. He scores 70% of his free throws, on average. Assume that scoring his free throws are independent events. Find the probability that he scores his first 3 free thro"
+  "description": "The question as printed on the paper \u2014 Rohan plays basketball. (a) During a match, Rohan takes a number of free throws. He scores 70% of his free throws, on average. Assume that scoring his free throws are independent events. Find the probability that he scor"
  },
  {
   "file": "maths-2023-OL-ask-p2-q4-a-ii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 OL Paper 2 Q4(a)(ii)",
-  "description": "The question as printed on the paper \u2014 (a) During a match, Rohan takes a number of free throws. He scores 70% of his free throws, on average. Assume that scoring his free throws are independent events. Find the probability that he scores exactly 2 of his firs"
+  "description": "The question as printed on the paper \u2014 Rohan plays basketball. (a) During a match, Rohan takes a number of free throws. He scores 70% of his free throws, on average. Assume that scoring his free throws are independent events. Find the probability that he scor"
  },
  {
   "file": "maths-2023-OL-ask-p2-q4-a-iii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 OL Paper 2 Q4(a)(iii)",
-  "description": "The question as printed on the paper \u2014 (a) During a match, Rohan takes a number of free throws. He scores 70% of his free throws, on average. Assume that scoring his free throws are independent events. (iii) Give one reason why scoring his free throws might n"
+  "description": "The question as printed on the paper \u2014 Rohan plays basketball. (a) During a match, Rohan takes a number of free throws. He scores 70% of his free throws, on average. Assume that scoring his free throws are independent events. (iii) Give one reason why scoring"
  },
  {
   "file": "maths-2023-OL-ask-p2-q4-b.png",
@@ -3259,7 +3259,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 OL Paper 2 Q6(b)",
-  "description": "The question as printed on the paper \u2014 (b) The diagram below shows another parallelogram (not to scale). The sizes of three of the angles are given, where \ud835\udc65, \ud835\udc66\u2208\u211d. Use the information in the diagram to work out the value of \ud835\udc65 and the value of \ud835\udc66. (\ud835\udc65+ 3\ud835\udc66)\u00b0 (2\ud835\udc65\u22123"
+  "description": "The question as printed on the paper \u2014 (b) The diagram below shows another parallelogram (not to scale). The sizes of three of the angles are given, where \ud835\udc65, \ud835\udc66\u2208\u211d. Use the information in the diagram to work out the value of \ud835\udc65 and the value of \ud835\udc66."
  },
  {
   "file": "maths-2023-OL-ask-p2-q6-c.png",
@@ -3287,7 +3287,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 OL Paper 2 Q7(a)(iii)",
-  "description": "The question as printed on the paper \u2014 The diagram below shows a road \u123e\ud835\udc34\ud835\udc35\u123f. \ud835\udc34\ud835\udc36 is horizontal and \ud835\udc35\ud835\udc36 is vertical. (a) The diagram is not to scale. \ud835\udc35 Road \ud835\udc34 \ud835\udc36 The gradient of the road \u123e\ud835\udc34\ud835\udc35\u123f is: |\ud835\udc35\ud835\udc36| |\ud835\udc34\ud835\udc36| written as a percentage. It is a measure of how steep the "
+  "description": "The question as printed on the paper \u2014 Olga is a cyclist. She is measuring how long and how steep different roads are. The diagram below shows a road \u123e\ud835\udc34\ud835\udc35\u123f. \ud835\udc34\ud835\udc36 is horizontal and \ud835\udc35\ud835\udc36 is vertical. (a) The diagram is not to scale. \ud835\udc35 Road \ud835\udc34 \ud835\udc36 The gradient of the ro"
  },
  {
   "file": "maths-2023-OL-ask-p2-q7-a-iv.png",
@@ -3315,42 +3315,42 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 OL Paper 2 Q8(a)",
-  "description": "The question as printed on the paper \u2014 A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2\u22194 m and an internal depth of 0\u22199 m. 0\u22199 m 2\u22194 m (a) The instruction manual rec"
+  "description": "The question as printed on the paper \u2014 A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2\u22194 m and an internal depth of 0\u22199 m. 2\u22194 m (a) The instruction manual recommend"
  },
  {
   "file": "maths-2023-OL-ask-p2-q8-b-i.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 OL Paper 2 Q8(b)(i)",
-  "description": "The question as printed on the paper \u2014 The family buys 3 pool seats. Each pool seat is a cube, with sides of length 0\u22195 m. (b) Show that the total volume of the 3 pool seats is 0\u2219375 m3. (i)"
+  "description": "The question as printed on the paper \u2014 A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2\u22194 m and an internal depth of 0\u22199 m. 2\u22194 m The family buys 3 pool seats. Each p"
  },
  {
   "file": "maths-2023-OL-ask-p2-q8-b-ii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 OL Paper 2 Q8(b)(ii)",
-  "description": "The question as printed on the paper \u2014 The family buys 3 pool seats. Each pool seat is a cube, with sides of length 0\u22195 m. (b) The pool is filled with water to a height of 0\u22196 m. (ii) The 3 pool seats are put into the pool, so that each seat is fully covered "
+  "description": "The question as printed on the paper \u2014 A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2\u22194 m and an internal depth of 0\u22199 m. 2\u22194 m The family buys 3 pool seats. Each p"
  },
  {
   "file": "maths-2023-OL-ask-p2-q8-c-i.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 OL Paper 2 Q8(c)(i)",
-  "description": "The question as printed on the paper \u2014 A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2\u22194 m and an internal depth of 0\u22199 m. 0\u22199 m 2\u22194 m (c) The family also buys a cov"
+  "description": "The question as printed on the paper \u2014 A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2\u22194 m and an internal depth of 0\u22199 m. 2\u22194 m (c) The family also buys a cover for"
  },
  {
   "file": "maths-2023-OL-ask-p2-q8-c-ii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 OL Paper 2 Q8(c)(ii)",
-  "description": "The question as printed on the paper \u2014 (c) The family also buys a cover for the pool, to help keep the water clean. It is in the shape of a right circular cone, with a radius of 1\u22193 m and a vertical height of 0\u22198 m. \ud835\udc59 0\u22198 m 1\u22193 m (ii) Work out the curved surf"
+  "description": "The question as printed on the paper \u2014 A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2\u22194 m and an internal depth of 0\u22199 m. 2\u22194 m (c) The family also buys a cover for"
  },
  {
   "file": "maths-2023-OL-ask-p2-q8-c-iii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 OL Paper 2 Q8(c)(iii)",
-  "description": "The question as printed on the paper \u2014 (c) The family also buys a cover for the pool, to help keep the water clean. It is in the shape of a right circular cone, with a radius of 1\u22193 m and a vertical height of 0\u22198 m. \ud835\udc59 0\u22198 m 1\u22193 m (iii) The diagram below shows"
+  "description": "The question as printed on the paper \u2014 A family decides to buy a small paddling pool for their back garden. The pool is in the shape of a cylinder. It has an internal diameter of 2\u22194 m and an internal depth of 0\u22199 m. 2\u22194 m (c) The family also buys a cover for"
  },
  {
   "file": "maths-2023-OL-ask-p2-q9-a-ii.png",
@@ -3490,7 +3490,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2024 HL Paper 1 Q3(b)(i)",
-  "description": "The question as printed on the paper \u2014 (a) Find the integral: \u0db1cos 6\ud835\udc65\ud835\udc65 \ud835\udc51\ud835\udc51\ud835\udc51\ud835\udc51 (b) The function \ud835\udc53\ud835\udc53 is defined for \ud835\udc65\ud835\udc65\u2208\u211d as: \ud835\udc53\ud835\udc53(\ud835\udc65\ud835\udc65) = 2\ud835\udc65\ud835\udc653 \u22129\ud835\udc65\ud835\udc652 + 5\ud835\udc65\ud835\udc65\u221211 (i) Find the equation of the tangent to the graph of \ud835\udc53\ud835\udc53 at the point where \ud835\udc65\ud835\udc65= 2. You do not need to simplify "
+  "description": "The question as printed on the paper \u2014 (b) The function \ud835\udc53\ud835\udc53 is defined for \ud835\udc65\ud835\udc65\u2208\u211d as: \ud835\udc53\ud835\udc53(\ud835\udc65\ud835\udc65) = 2\ud835\udc65\ud835\udc653 \u22129\ud835\udc65\ud835\udc652 + 5\ud835\udc65\ud835\udc65\u221211 (i) Find the equation of the tangent to the graph of \ud835\udc53\ud835\udc53 at the point where \ud835\udc65\ud835\udc65= 2. You do not need to simplify your answer."
  },
  {
   "file": "maths-2024-HL-ask-p1-q3-b-ii.png",
@@ -3651,7 +3651,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2024 HL Paper 1 Q9(b)(ii)",
-  "description": "The question as printed on the paper \u2014 (b) A different sphere has a radius of 8 units and a cap with a height of \ud835\udc66\ud835\udc66units, with 0 < \ud835\udc66\ud835\udc66 \u2264 8. The volume of this cap is (36\ud835\udf0b\ud835\udf0b \ud835\udc66\ud835\udc66) units3. \ud835\udc66\ud835\udc66 (ii) Multiply out and solve the equation 3 (24 \u2212\ud835\udc66\ud835\udc66) = 36 to find the heig"
+  "description": "The question as printed on the paper \u2014 A sphere has a radius of \ud835\udc45\ud835\udc45 units. The part of the sphere that is cut off by a flat surface is called a \u201ccap\u201d, and has a volume of: \ud835\udc36\ud835\udc36= \ud835\udf0b\ud835\udf0b \ud835\udc58\ud835\udc582 (3\ud835\udc45\ud835\udc45\u2212\ud835\udc58\ud835\udc58) 3 Here, \ud835\udc36\ud835\udc36 is the volume of the cap and \ud835\udc58\ud835\udc58 is the height of the cap,"
  },
  {
   "file": "maths-2024-HL-ask-p1-q9-c.png",
@@ -3784,7 +3784,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2024 HL Paper 2 Q4(a)",
-  "description": "The question as printed on the paper \u2014 (a) Construct the centroid of the triangle \ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43 below. Show all your construction lines clearly. Where measurement is used, show all relevant measurements and calculations clearly. \ud835\udc43\ud835\udc43 \ud835\udc45\ud835\udc45 \ud835\udc44\ud835\udc44"
+  "description": "The question as printed on the paper \u2014 (a) Construct the centroid of the triangle \ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43 below. Show all your construction lines clearly. Where measurement is used, show all relevant measurements and calculations clearly. \ud835\udc43\ud835\udc43 \ud835\udc44\ud835\udc44"
  },
  {
   "file": "maths-2024-HL-ask-p2-q4-b.png",
@@ -3840,21 +3840,21 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2024 HL Paper 2 Q7(a)(i)",
-  "description": "The question as printed on the paper \u2014 (a) The ages of the people who stayed in a PK Hotel in 2023 are roughly normally distributed, with a mean age of 48\u22192 years and a standard deviation of 10\u22196 years. (i) One person is picked at random from the people who s"
+  "description": "The question as printed on the paper \u2014 PK Hotels is a hotel chain in Europe. (a) The ages of the people who stayed in a PK Hotel in 2023 are roughly normally distributed, with a mean age of 48\u22192 years and a standard deviation of 10\u22196 years. (i) One person is "
  },
  {
   "file": "maths-2024-HL-ask-p2-q7-b-i.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2024 HL Paper 2 Q7(b)(i)",
-  "description": "The question as printed on the paper \u2014 1 (b) During their most recent stay, 5 of PK Hotel customers used the pool. Use this to answer parts (b)(i) and (b)(ii). (i) 6 of the PK Hotel customers are picked at random. Find the probability that exactly 2 of them u"
+  "description": "The question as printed on the paper \u2014 PK Hotels is a hotel chain in Europe. 1 (b) During their most recent stay, 5 of PK Hotel customers used the pool. Use this to answer parts (b)(i) and (b)(ii). (i) 6 of the PK Hotel customers are picked at random. Find th"
  },
  {
   "file": "maths-2024-HL-ask-p2-q7-b-ii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2024 HL Paper 2 Q7(b)(ii)",
-  "description": "The question as printed on the paper \u2014 1 (b) During their most recent stay, 5 of PK Hotel customers used the pool. Use this to answer parts (b)(i) and (b)(ii). (ii) \ud835\udc5b\ud835\udc5b of the PK Hotel customers are picked at random, where \ud835\udc5b\ud835\udc5b\u2208\u2115. The probability that none of th"
+  "description": "The question as printed on the paper \u2014 PK Hotels is a hotel chain in Europe. 1 (b) During their most recent stay, 5 of PK Hotel customers used the pool. Use this to answer parts (b)(i) and (b)(ii). (ii) \ud835\udc5b\ud835\udc5b of the PK Hotel customers are picked at random, where"
  },
  {
   "file": "maths-2024-HL-ask-p2-q7-c.png",
@@ -4316,14 +4316,14 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2024 OL Paper 2 Q6(b)(ii)",
-  "description": "The question as printed on the paper \u2014 (b) The diagram below shows the triangles \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 and \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 (not to scale). The triangle \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 is the image of the triangle \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 under enlargement. Some of the lengths are shown in the diagram. \ud835\udc38\ud835\udc38 14 \ud835\udc36\ud835\udc36 6 4 \ud835\udc34\ud835\udc34 \ud835\udc37\ud835\udc37 \ud835\udc35\ud835\udc35 ("
+  "description": "The question as printed on the paper \u2014 (b) The diagram below shows the triangles \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 and \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 (not to scale). The triangle \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 is the image of the triangle \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 under enlargement. Some of the lengths are shown in the diagram. \ud835\udc38\ud835\udc38 \ud835\udc34\ud835\udc34 \ud835\udc37\ud835\udc37 \ud835\udc35\ud835\udc35 (i) Use |\ud835\udc35\ud835\udc35"
  },
  {
   "file": "maths-2024-OL-ask-p2-q6-b-iii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2024 OL Paper 2 Q6(b)(iii)",
-  "description": "The question as printed on the paper \u2014 (b) The diagram below shows the triangles \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 and \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 (not to scale). The triangle \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 is the image of the triangle \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 under enlargement. Some of the lengths are shown in the diagram. \ud835\udc38\ud835\udc38 14 \ud835\udc36\ud835\udc36 6 4 \ud835\udc34\ud835\udc34 \ud835\udc37\ud835\udc37 \ud835\udc35\ud835\udc35 ("
+  "description": "The question as printed on the paper \u2014 (b) The diagram below shows the triangles \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 and \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 (not to scale). The triangle \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 is the image of the triangle \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 under enlargement. Some of the lengths are shown in the diagram. \ud835\udc38\ud835\udc38 \ud835\udc34\ud835\udc34 \ud835\udc37\ud835\udc37 \ud835\udc35\ud835\udc35 (i) Use |\ud835\udc35\ud835\udc35"
  },
  {
   "file": "maths-2024-OL-ask-p2-q7-a-i.png",
@@ -4421,7 +4421,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2024 OL Paper 2 Q9(a)(ii)",
-  "description": "The question as printed on the paper \u2014 (a) Diarmuid sells: \u2022 7 different flavours of ice cream \u2022 4 different toppings \u2022 2 containers: a choice of a cone or a tub. (ii) Diarmuid wants to maximise the number of choices available to his customers. He can only ad"
+  "description": "The question as printed on the paper \u2014 Diarmuid owns an ice cream van. (a) Diarmuid sells: \u2022 7 different flavours of ice cream \u2022 4 different toppings \u2022 2 containers: a choice of a cone or a tub. (ii) Diarmuid wants to maximise the number of choices available "
  },
  {
   "file": "maths-2024-OL-ask-p2-q9-b-i.png",
@@ -4701,28 +4701,28 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 HL Paper 1 Q9(a)(i)",
-  "description": "The question as printed on the paper \u2014 (a) The fuel consumption, \ud835\udc39\ud835\udc39, of Dani\u2019s car depends on the speed of the car, \ud835\udc50\ud835\udc50. For one particular journey, \ud835\udc39\ud835\udc39 is given by: \ud835\udc39\ud835\udc39(\ud835\udc50\ud835\udc50) = 0\u221905 \ud835\udc50\ud835\udc502 \u22128\u22195 \ud835\udc50\ud835\udc50+ 800 where \ud835\udc39\ud835\udc39 is in litres per 10 000 km, and \ud835\udc50\ud835\udc50 is in km/hour, with "
+  "description": "The question as printed on the paper \u2014 Dani drives a car. (a) The fuel consumption, \ud835\udc39\ud835\udc39, of Dani\u2019s car depends on the speed of the car, \ud835\udc50\ud835\udc50. For one particular journey, \ud835\udc39\ud835\udc39 is given by: \ud835\udc39\ud835\udc39(\ud835\udc50\ud835\udc50) = 0\u221905 \ud835\udc50\ud835\udc502 \u22128\u22195 \ud835\udc50\ud835\udc50+ 800 where \ud835\udc39\ud835\udc39 is in litres per 10 000 km, and \ud835\udc50\ud835\udc50 i"
  },
  {
   "file": "maths-2025-HL-ask-p1-q9-a-iii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 HL Paper 1 Q9(a)(iii)",
-  "description": "The question as printed on the paper \u2014 (a) The fuel consumption, \ud835\udc39\ud835\udc39, of Dani\u2019s car depends on the speed of the car, \ud835\udc50\ud835\udc50. For one particular journey, \ud835\udc39\ud835\udc39 is given by: \ud835\udc39\ud835\udc39(\ud835\udc50\ud835\udc50) = 0\u221905 \ud835\udc50\ud835\udc502 \u22128\u22195 \ud835\udc50\ud835\udc50+ 800 where \ud835\udc39\ud835\udc39 is in litres per 10 000 km, and \ud835\udc50\ud835\udc50 is in km/hour, with "
+  "description": "The question as printed on the paper \u2014 Dani drives a car. (a) The fuel consumption, \ud835\udc39\ud835\udc39, of Dani\u2019s car depends on the speed of the car, \ud835\udc50\ud835\udc50. For one particular journey, \ud835\udc39\ud835\udc39 is given by: \ud835\udc39\ud835\udc39(\ud835\udc50\ud835\udc50) = 0\u221905 \ud835\udc50\ud835\udc502 \u22128\u22195 \ud835\udc50\ud835\udc50+ 800 where \ud835\udc39\ud835\udc39 is in litres per 10 000 km, and \ud835\udc50\ud835\udc50 i"
  },
  {
   "file": "maths-2025-HL-ask-p1-q9-a-iv.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 HL Paper 1 Q9(a)(iv)",
-  "description": "The question as printed on the paper \u2014 (a) The fuel consumption, \ud835\udc39\ud835\udc39, of Dani\u2019s car depends on the speed of the car, \ud835\udc50\ud835\udc50. For one particular journey, \ud835\udc39\ud835\udc39 is given by: \ud835\udc39\ud835\udc39(\ud835\udc50\ud835\udc50) = 0\u221905 \ud835\udc50\ud835\udc502 \u22128\u22195 \ud835\udc50\ud835\udc50+ 800 where \ud835\udc39\ud835\udc39 is in litres per 10 000 km, and \ud835\udc50\ud835\udc50 is in km/hour, with "
+  "description": "The question as printed on the paper \u2014 Dani drives a car. (a) The fuel consumption, \ud835\udc39\ud835\udc39, of Dani\u2019s car depends on the speed of the car, \ud835\udc50\ud835\udc50. For one particular journey, \ud835\udc39\ud835\udc39 is given by: \ud835\udc39\ud835\udc39(\ud835\udc50\ud835\udc50) = 0\u221905 \ud835\udc50\ud835\udc502 \u22128\u22195 \ud835\udc50\ud835\udc50+ 800 where \ud835\udc39\ud835\udc39 is in litres per 10 000 km, and \ud835\udc50\ud835\udc50 i"
  },
  {
   "file": "maths-2025-HL-ask-p1-q9-a-v.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 HL Paper 1 Q9(a)(v)",
-  "description": "The question as printed on the paper \u2014 (a) The fuel consumption, \ud835\udc39\ud835\udc39, of Dani\u2019s car depends on the speed of the car, \ud835\udc50\ud835\udc50. For one particular journey, \ud835\udc39\ud835\udc39 is given by: \ud835\udc39\ud835\udc39(\ud835\udc50\ud835\udc50) = 0\u221905 \ud835\udc50\ud835\udc502 \u22128\u22195 \ud835\udc50\ud835\udc50+ 800 where \ud835\udc39\ud835\udc39 is in litres per 10 000 km, and \ud835\udc50\ud835\udc50 is in km/hour, with "
+  "description": "The question as printed on the paper \u2014 Dani drives a car. (a) The fuel consumption, \ud835\udc39\ud835\udc39, of Dani\u2019s car depends on the speed of the car, \ud835\udc50\ud835\udc50. For one particular journey, \ud835\udc39\ud835\udc39 is given by: \ud835\udc39\ud835\udc39(\ud835\udc50\ud835\udc50) = 0\u221905 \ud835\udc50\ud835\udc502 \u22128\u22195 \ud835\udc50\ud835\udc50+ 800 where \ud835\udc39\ud835\udc39 is in litres per 10 000 km, and \ud835\udc50\ud835\udc50 i"
  },
  {
   "file": "maths-2025-HL-ask-p1-q9-b-ii.png",
@@ -4757,7 +4757,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 HL Paper 1 Q10(d)(i)",
-  "description": "The question as printed on the paper \u2014 (d) (i) Rearrange the formula \ud835\udc61\ud835\udc61= 2\ud835\udc5b\ud835\udc5b+ 1 to write \ud835\udc5b\ud835\udc5b in terms of \ud835\udc61\ud835\udc61. \ud835\udc5b\ud835\udc5b= ________________ \ud835\udc44\ud835\udc44(\ud835\udc5b\ud835\udc5b) is given by the following formula, for any \ud835\udc5b\ud835\udc5b\u2208\u2115: \ud835\udc44\ud835\udc44(\ud835\udc5b\ud835\udc5b) = (\ud835\udc5b\ud835\udc5b+ 1)2 (2\ud835\udc5b\ud835\udc5b+ 1)2"
+  "description": "The question as printed on the paper \u2014 (d) (i) Rearrange the formula \ud835\udc61\ud835\udc61= 2\ud835\udc5b\ud835\udc5b+ 1 to write \ud835\udc5b\ud835\udc5b in terms of \ud835\udc61\ud835\udc61. \ud835\udc44\ud835\udc44(\ud835\udc5b\ud835\udc5b) is given by the following formula, for any \ud835\udc5b\ud835\udc5b\u2208\u2115: \ud835\udc44\ud835\udc44(\ud835\udc5b\ud835\udc5b) = (\ud835\udc5b\ud835\udc5b+ 1)2 (2\ud835\udc5b\ud835\udc5b+ 1)2"
  },
  {
   "file": "maths-2025-HL-ask-p1-q10-d-ii.png",
@@ -4778,7 +4778,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 HL Paper 1 Q10(e)(ii)",
-  "description": "The question as printed on the paper \u2014 4 (e) \ud835\udc3b\ud835\udc3b(\ud835\udc5b\ud835\udc5b) is the total number of dots in Pattern \ud835\udc5b\ud835\udc5b of the sequence, for \ud835\udc5b\ud835\udc5b\u2208\u2115. (ii) Using this fact, prove the identity on the grid below. Use proof by induction. Prove that: \ud835\udc3b\ud835\udc3b(\ud835\udc5b\ud835\udc5b) = (\ud835\udc5b\ud835\udc5b+ 1)2 for all values of \ud835\udc5b\ud835\udc5b\u2208\u2115 Y"
+  "description": "The question as printed on the paper \u2014 The first three patterns in a sequence of patterns are shown below. Each pattern is made up of ) at points in the co-ordinate plane that have integer co-ordinates. dots ( As shown below, Pattern 1 has a dot at all such p"
  },
  {
   "file": "maths-2025-HL-ask-p2-q1-a.png",
@@ -4995,7 +4995,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 HL Paper 2 Q9(a)(iv)",
-  "description": "The question as printed on the paper \u2014 (a) Assume that 6\u22197% of people in Ireland have diabetes. For a particular test for diabetes, each person tests either positive or negative. The probability that someone who has diabetes gets a correct positive result is "
+  "description": "The question as printed on the paper \u2014 In parts (a) and (b) of this question, give answers correct to \ud835\udfd2\ud835\udfd2 decimal places, where relevant. (a) Assume that 6\u22197% of people in Ireland have diabetes. For a particular test for diabetes, each person tests either posi"
  },
  {
   "file": "maths-2025-HL-ask-p2-q9-b.png",
@@ -5037,7 +5037,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 HL Paper 2 Q10(a)(ii)",
-  "description": "The question as printed on the paper \u2014 (a) Worldwide, scores on this test are normally distributed with a mean score of 400 and a standard deviation of 60. (ii) Use the normal distribution to work out the proportion of students worldwide who would score above"
+  "description": "The question as printed on the paper \u2014 A particular test is used to measure how well students around the world can do maths problems. (a) Worldwide, scores on this test are normally distributed with a mean score of 400 and a standard deviation of 60. (ii) Use"
  },
  {
   "file": "maths-2025-HL-ask-p2-q10-b.png",
@@ -5240,7 +5240,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 OL Paper 1 Q8(b)(ii)",
-  "description": "The question as printed on the paper \u2014 (b) The profit of the company for the second year can be modelled by the function: \ud835\udc44\ud835\udc44(\ud835\udc65\ud835\udc65) = \u22121\u22195\ud835\udc65\ud835\udc652 + 9\u22196\ud835\udc65\ud835\udc65\u22123\u22195 where \ud835\udc44\ud835\udc44(\ud835\udc65\ud835\udc65) is the profit for the second year (in millions of euro) and \ud835\udc65\ud835\udc65 is the number of phones (in tens"
+  "description": "The question as printed on the paper \u2014 A company launches a new phone. The company\u2019s profit each year will depend on the number of phones it produces, \ud835\udc65\ud835\udc65. The company\u2019s profit for the first year can be modelled by the function: \ud835\udc43\ud835\udc43(\ud835\udc65\ud835\udc65) = \u22121\u22195\ud835\udc65\ud835\udc652 + 10\u22195\ud835\udc65\ud835\udc65\u22124 whe"
  },
  {
   "file": "maths-2025-OL-ask-p1-q8-c-ii.png",
@@ -5296,21 +5296,21 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 OL Paper 1 Q10(a)(i)",
-  "description": "The question as printed on the paper \u2014 (a) A factory makes closed boxes. The lengths of the sides of one of the boxes are shown in the diagram below. 20 cm 30 cm 70 cm (i) Draw a scaled diagram of a net of the box in the grid below. Use the scale 1: 10. The l"
+  "description": "The question as printed on the paper \u2014 (a) A factory makes closed boxes. The lengths of the sides of one of the boxes are shown in the diagram below. 70 cm (i) Draw a scaled diagram of a net of the box in the grid below. Use the scale 1: 10. The length of eac"
  },
  {
   "file": "maths-2025-OL-ask-p1-q10-a-ii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 OL Paper 1 Q10(a)(ii)",
-  "description": "The question as printed on the paper \u2014 (a) A factory makes closed boxes. The lengths of the sides of one of the boxes are shown in the diagram below. 20 cm 30 cm 70 cm (i) Draw a scaled diagram of a net of the box in the grid below. Use the scale 1: 10. The l"
+  "description": "The question as printed on the paper \u2014 (a) A factory makes closed boxes. The lengths of the sides of one of the boxes are shown in the diagram below. 70 cm (i) Draw a scaled diagram of a net of the box in the grid below. Use the scale 1: 10. The length of eac"
  },
  {
   "file": "maths-2025-OL-ask-p1-q10-a-iii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 OL Paper 1 Q10(a)(iii)",
-  "description": "The question as printed on the paper \u2014 (a) A factory makes closed boxes. The lengths of the sides of one of the boxes are shown in the diagram below. 20 cm 30 cm 70 cm (i) Draw a scaled diagram of a net of the box in the grid below. Use the scale 1: 10. The l"
+  "description": "The question as printed on the paper \u2014 (a) A factory makes closed boxes. The lengths of the sides of one of the boxes are shown in the diagram below. 70 cm (i) Draw a scaled diagram of a net of the box in the grid below. Use the scale 1: 10. The length of eac"
  },
  {
   "file": "maths-2025-OL-ask-p1-q10-b.png",
@@ -5359,21 +5359,21 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 OL Paper 2 Q2(a)(i)",
-  "description": "The question as printed on the paper \u2014 (a) There are two angles, \ud835\udc34\ud835\udc34 and 2\ud835\udc34\ud835\udc34, in a right-angled triangle as shown in the diagram below. 2\ud835\udc34\ud835\udc34 \ud835\udc65\ud835\udc65 \ud835\udc34\ud835\udc34 10 cm (i) Show that the size of the angle \ud835\udc34\ud835\udc34 is 30\u00b0."
+  "description": "The question as printed on the paper \u2014 (a) There are two angles, \ud835\udc34\ud835\udc34 and 2\ud835\udc34\ud835\udc34, in a right-angled triangle as shown in the diagram below. 10 cm (i) Show that the size of the angle \ud835\udc34\ud835\udc34 is 30\u00b0."
  },
  {
   "file": "maths-2025-OL-ask-p2-q2-a-ii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 OL Paper 2 Q2(a)(ii)",
-  "description": "The question as printed on the paper \u2014 (a) There are two angles, \ud835\udc34\ud835\udc34 and 2\ud835\udc34\ud835\udc34, in a right-angled triangle as shown in the diagram below. 2\ud835\udc34\ud835\udc34 \ud835\udc65\ud835\udc65 \ud835\udc34\ud835\udc34 10 cm (i) Show that the size of the angle \ud835\udc34\ud835\udc34 is 30\u00b0. (ii) The lengths of two of the sides are \ud835\udc65\ud835\udc65 and 10 cm, as sho"
+  "description": "The question as printed on the paper \u2014 (a) There are two angles, \ud835\udc34\ud835\udc34 and 2\ud835\udc34\ud835\udc34, in a right-angled triangle as shown in the diagram below. 10 cm (i) Show that the size of the angle \ud835\udc34\ud835\udc34 is 30\u00b0. (ii) The lengths of two of the sides are \ud835\udc65\ud835\udc65 and 10 cm, as shown in the "
  },
  {
   "file": "maths-2025-OL-ask-p2-q2-b.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 OL Paper 2 Q2(b)",
-  "description": "The question as printed on the paper \u2014 (b) The triangle \ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43 is shown below. Some of its measurements are also shown. \ud835\udc45\ud835\udc45 104\u00b0 41\u00b0 \ud835\udc43\ud835\udc43 \ud835\udc44\ud835\udc44 11 cm Work out the distance from \ud835\udc43\ud835\udc43 to \ud835\udc45\ud835\udc45. Give your answer in cm, correct to 1 decimal place."
+  "description": "The question as printed on the paper \u2014 (b) The triangle \ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43\ud835\udc43 is shown below. Some of its measurements are also shown. \ud835\udc45\ud835\udc45 \ud835\udc43\ud835\udc43 \ud835\udc44\ud835\udc44 11 cm Work out the distance from \ud835\udc43\ud835\udc43 to \ud835\udc45\ud835\udc45. Give your answer in cm, correct to 1 decimal place."
  },
  {
   "file": "maths-2025-OL-ask-p2-q3-a.png",
@@ -5401,21 +5401,21 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 OL Paper 2 Q4(a)(i)",
-  "description": "The question as printed on the paper \u2014 (a) \ud835\udc34\ud835\udc34 (\u22125 , 3) and \ud835\udc35\ud835\udc35 (2, 0) are two points on the co-ordinate plane, as shown in the diagram below. \ud835\udc66\ud835\udc66 4 \ud835\udc34\ud835\udc34 \ud835\udc36\ud835\udc36 3 2 1 \ud835\udc35\ud835\udc35 \ud835\udc65\ud835\udc65 -6 -5 -4 -3 -2 -1 1 2 3 4 5 -1 (i) Find the slope of the line \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34."
+  "description": "The question as printed on the paper \u2014 (a) \ud835\udc34\ud835\udc34 (\u22125 , 3) and \ud835\udc35\ud835\udc35 (2, 0) are two points on the co-ordinate plane, as shown in the diagram below. \ud835\udc66\ud835\udc66 4 \ud835\udc34\ud835\udc34 \ud835\udc36\ud835\udc36 3 -6 -5 -4 -3 -2 -1 1 2 3 4 5 -1 (i) Find the slope of the line \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34."
  },
  {
   "file": "maths-2025-OL-ask-p2-q4-a-ii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 OL Paper 2 Q4(a)(ii)",
-  "description": "The question as printed on the paper \u2014 (a) \ud835\udc34\ud835\udc34 (\u22125 , 3) and \ud835\udc35\ud835\udc35 (2, 0) are two points on the co-ordinate plane, as shown in the diagram below. \ud835\udc66\ud835\udc66 4 \ud835\udc34\ud835\udc34 \ud835\udc36\ud835\udc36 3 2 1 \ud835\udc35\ud835\udc35 \ud835\udc65\ud835\udc65 -6 -5 -4 -3 -2 -1 1 2 3 4 5 -1 (i) Find the slope of the line \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34. (ii) Hence, work out the eq"
+  "description": "The question as printed on the paper \u2014 (a) \ud835\udc34\ud835\udc34 (\u22125 , 3) and \ud835\udc35\ud835\udc35 (2, 0) are two points on the co-ordinate plane, as shown in the diagram below. \ud835\udc66\ud835\udc66 4 \ud835\udc34\ud835\udc34 \ud835\udc36\ud835\udc36 3 -6 -5 -4 -3 -2 -1 1 2 3 4 5 -1 (i) Find the slope of the line \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34. (ii) Hence, work out the equation of "
  },
  {
   "file": "maths-2025-OL-ask-p2-q4-a-iii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 OL Paper 2 Q4(a)(iii)",
-  "description": "The question as printed on the paper \u2014 (a) \ud835\udc34\ud835\udc34 (\u22125 , 3) and \ud835\udc35\ud835\udc35 (2, 0) are two points on the co-ordinate plane, as shown in the diagram below. \ud835\udc66\ud835\udc66 4 \ud835\udc34\ud835\udc34 \ud835\udc36\ud835\udc36 3 2 1 \ud835\udc35\ud835\udc35 \ud835\udc65\ud835\udc65 -6 -5 -4 -3 -2 -1 1 2 3 4 5 -1 (i) Find the slope of the line \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34. (ii) Hence, work out the eq"
+  "description": "The question as printed on the paper \u2014 (a) \ud835\udc34\ud835\udc34 (\u22125 , 3) and \ud835\udc35\ud835\udc35 (2, 0) are two points on the co-ordinate plane, as shown in the diagram below. \ud835\udc66\ud835\udc66 4 \ud835\udc34\ud835\udc34 \ud835\udc36\ud835\udc36 3 -6 -5 -4 -3 -2 -1 1 2 3 4 5 -1 (i) Find the slope of the line \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34. (ii) Hence, work out the equation of "
  },
  {
   "file": "maths-2025-OL-ask-p2-q4-b.png",
@@ -5436,14 +5436,14 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 OL Paper 2 Q5(b)(i)",
-  "description": "The question as printed on the paper \u2014 (b) The diagram below shows the isosceles triangle \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34, where |\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34| = |\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34|. \ud835\udc37\ud835\udc37 is the midpoint of [\ud835\udc35\ud835\udc35\ud835\udc35\ud835\udc35]. \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 is perpendicular to \ud835\udc35\ud835\udc35\ud835\udc35\ud835\udc35. |\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34| = 9 cm and |\ud835\udc35\ud835\udc35\ud835\udc35\ud835\udc35| = 5 cm. \ud835\udc34\ud835\udc34 9 cm \ud835\udc35\ud835\udc35 \ud835\udc36\ud835\udc36 5 cm \ud835\udc37\ud835\udc37 (i) Use the theorem of"
+  "description": "The question as printed on the paper \u2014 (b) The diagram below shows the isosceles triangle \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34, where |\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34| = |\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34|. \ud835\udc37\ud835\udc37 is the midpoint of [\ud835\udc35\ud835\udc35\ud835\udc35\ud835\udc35]. \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 is perpendicular to \ud835\udc35\ud835\udc35\ud835\udc35\ud835\udc35. |\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34| = 9 cm and |\ud835\udc35\ud835\udc35\ud835\udc35\ud835\udc35| = 5 cm. \ud835\udc34\ud835\udc34 \ud835\udc35\ud835\udc35 \ud835\udc36\ud835\udc36 5 cm \ud835\udc37\ud835\udc37 (i) Use the theorem of Pyth"
  },
  {
   "file": "maths-2025-OL-ask-p2-q5-b-ii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 OL Paper 2 Q5(b)(ii)",
-  "description": "The question as printed on the paper \u2014 (b) The diagram below shows the isosceles triangle \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34, where |\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34| = |\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34|. \ud835\udc37\ud835\udc37 is the midpoint of [\ud835\udc35\ud835\udc35\ud835\udc35\ud835\udc35]. \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 is perpendicular to \ud835\udc35\ud835\udc35\ud835\udc35\ud835\udc35. |\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34| = 9 cm and |\ud835\udc35\ud835\udc35\ud835\udc35\ud835\udc35| = 5 cm. \ud835\udc34\ud835\udc34 9 cm \ud835\udc35\ud835\udc35 \ud835\udc36\ud835\udc36 5 cm \ud835\udc37\ud835\udc37 (i) Use the theorem of"
+  "description": "The question as printed on the paper \u2014 (b) The diagram below shows the isosceles triangle \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34, where |\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34| = |\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34|. \ud835\udc37\ud835\udc37 is the midpoint of [\ud835\udc35\ud835\udc35\ud835\udc35\ud835\udc35]. \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 is perpendicular to \ud835\udc35\ud835\udc35\ud835\udc35\ud835\udc35. |\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34| = 9 cm and |\ud835\udc35\ud835\udc35\ud835\udc35\ud835\udc35| = 5 cm. \ud835\udc34\ud835\udc34 \ud835\udc35\ud835\udc35 \ud835\udc36\ud835\udc36 5 cm \ud835\udc37\ud835\udc37 (i) Use the theorem of Pyth"
  },
  {
   "file": "maths-2025-OL-ask-p2-q6-a-i.png",
@@ -5590,7 +5590,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 OL Paper 2 Q10(a)(i)",
-  "description": "The question as printed on the paper \u2014 (a) \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 is a six-sided shape where: \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 is parallel to \ud835\udc36\ud835\udc36\ud835\udc36\ud835\udc36 and \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 is perpendicular to \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34. |\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34| = |\ud835\udc36\ud835\udc36\ud835\udc36\ud835\udc36| = |\ud835\udc38\ud835\udc38\ud835\udc38\ud835\udc38| = |\ud835\udc39\ud835\udc39\ud835\udc39\ud835\udc39| = 200 m, and |\ud835\udc35\ud835\udc35\ud835\udc35\ud835\udc35| = |\ud835\udc37\ud835\udc37\ud835\udc37\ud835\udc37| = 150 m. (i) Aoibhe swims from \ud835\udc34\ud835\udc34 to \ud835\udc35\ud835\udc35, to \ud835\udc36\ud835\udc36, to \ud835\udc37"
+  "description": "The question as printed on the paper \u2014 Aoibhe is a member of a sea swimming club. The club has six markers in the water, labelled \ud835\udc34\ud835\udc34, \ud835\udc35\ud835\udc35, \ud835\udc36\ud835\udc36, \ud835\udc37\ud835\udc37, \ud835\udc38\ud835\udc38, and \ud835\udc39\ud835\udc39, as shown in the diagram below. \ud835\udc37\ud835\udc37 200 m \ud835\udc36\ud835\udc36 150 m 150 m \ud835\udc38\ud835\udc38 \ud835\udc35\ud835\udc35 110\u00b0 200 m 200 m 200 m \ud835\udc39\ud835\udc39 \ud835\udc34\ud835\udc34 (a) \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34"
  },
  {
   "file": "maths-2025-OL-ask-p2-q10-a-ii.png",
@@ -5604,7 +5604,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 OL Paper 2 Q10(a)(iii)",
-  "description": "The question as printed on the paper \u2014 (a) \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 is a six-sided shape where: \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 is parallel to \ud835\udc36\ud835\udc36\ud835\udc36\ud835\udc36 and \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34 is perpendicular to \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34. |\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34| = |\ud835\udc36\ud835\udc36\ud835\udc36\ud835\udc36| = |\ud835\udc38\ud835\udc38\ud835\udc38\ud835\udc38| = |\ud835\udc39\ud835\udc39\ud835\udc39\ud835\udc39| = 200 m, and |\ud835\udc35\ud835\udc35\ud835\udc35\ud835\udc35| = |\ud835\udc37\ud835\udc37\ud835\udc37\ud835\udc37| = 150 m. (iii) Aoibhe swims straight from \ud835\udc34\ud835\udc34 to \ud835\udc36\ud835\udc36. "
+  "description": "The question as printed on the paper \u2014 Aoibhe is a member of a sea swimming club. The club has six markers in the water, labelled \ud835\udc34\ud835\udc34, \ud835\udc35\ud835\udc35, \ud835\udc36\ud835\udc36, \ud835\udc37\ud835\udc37, \ud835\udc38\ud835\udc38, and \ud835\udc39\ud835\udc39, as shown in the diagram below. \ud835\udc37\ud835\udc37 200 m \ud835\udc36\ud835\udc36 150 m 150 m \ud835\udc38\ud835\udc38 \ud835\udc35\ud835\udc35 110\u00b0 200 m 200 m 200 m \ud835\udc39\ud835\udc39 \ud835\udc34\ud835\udc34 (a) \ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34\ud835\udc34"
  },
  {
   "file": "maths-2025-OL-ask-p2-q10-a-iv.png",
@@ -5618,13 +5618,13 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 OL Paper 2 Q10(b)(i)",
-  "description": "The question as printed on the paper \u2014 (b) Point \ud835\udc34\ud835\udc34 is the nearest point to the shore and is the start and end point for all swims. \ud835\udc37\ud835\udc37 \ud835\udc36\ud835\udc36 \ud835\udc38\ud835\udc38 \ud835\udc35\ud835\udc35 \ud835\udc34\ud835\udc34 (Start/End Point) \ud835\udc39\ud835\udc39 Aoibhe wants to see how many routes she could swim, starting at \ud835\udc34\ud835\udc34, by swimming to each of "
+  "description": "The question as printed on the paper \u2014 Aoibhe is a member of a sea swimming club. The club has six markers in the water, labelled \ud835\udc34\ud835\udc34, \ud835\udc35\ud835\udc35, \ud835\udc36\ud835\udc36, \ud835\udc37\ud835\udc37, \ud835\udc38\ud835\udc38, and \ud835\udc39\ud835\udc39, as shown in the diagram below. \ud835\udc37\ud835\udc37 200 m \ud835\udc36\ud835\udc36 150 m 150 m \ud835\udc38\ud835\udc38 \ud835\udc35\ud835\udc35 110\u00b0 200 m 200 m 200 m \ud835\udc39\ud835\udc39 \ud835\udc34\ud835\udc34 (b) Point \ud835\udc34"
  },
  {
   "file": "maths-2025-OL-ask-p2-q10-b-iii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 OL Paper 2 Q10(b)(iii)",
-  "description": "The question as printed on the paper \u2014 (b) Point \ud835\udc34\ud835\udc34 is the nearest point to the shore and is the start and end point for all swims. \ud835\udc37\ud835\udc37 \ud835\udc36\ud835\udc36 \ud835\udc38\ud835\udc38 \ud835\udc35\ud835\udc35 \ud835\udc34\ud835\udc34 (Start/End Point) \ud835\udc39\ud835\udc39 Aoibhe wants to see how many routes she could swim, starting at \ud835\udc34\ud835\udc34, by swimming to each of "
+  "description": "The question as printed on the paper \u2014 Aoibhe is a member of a sea swimming club. The club has six markers in the water, labelled \ud835\udc34\ud835\udc34, \ud835\udc35\ud835\udc35, \ud835\udc36\ud835\udc36, \ud835\udc37\ud835\udc37, \ud835\udc38\ud835\udc38, and \ud835\udc39\ud835\udc39, as shown in the diagram below. \ud835\udc37\ud835\udc37 200 m \ud835\udc36\ud835\udc36 150 m 150 m \ud835\udc38\ud835\udc38 \ud835\udc35\ud835\udc35 110\u00b0 200 m 200 m 200 m \ud835\udc39\ud835\udc39 \ud835\udc34\ud835\udc34 (b) Point \ud835\udc34"
  }
 ]

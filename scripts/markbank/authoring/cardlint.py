@@ -48,12 +48,12 @@ SCHEME_LEAK = re.compile(
 #    that split, 71 of physics's 78 flags were false.
 PICTORIAL = r'(?:diagram|figure|extract|photograph|photo|sketch|drawing)'
 DESCRIBABLE = r'(?:apparatus|circuit|arrangement|set-?up|image|graph|table|chart|curve|pattern|map)'
-HERE = r'(?:below|above|opposite|shown|overleaf|on the (?:right|left))'
+LOCATIVE = r'(?:below|above|opposite|shown|overleaf|on the (?:right|left))'
 FIG_REF = re.compile(
     r'\bshown\b'
     rf'|\b(?:the|this|following|above) {PICTORIAL}\b'
-    rf'|\b{PICTORIAL} {HERE}\b'
-    rf'|\b(?:the|this) {DESCRIBABLE} {HERE}\b'
+    rf'|\b{PICTORIAL} {LOCATIVE}\b'
+    rf'|\b(?:the|this) {DESCRIBABLE} {LOCATIVE}\b'
     r'|\bin the extract\b|\baccompanying\b|\bgiven diagram\b', re.I)
 SELF_WORK = re.compile(
     r'\b(?:on|to|in) your (?:drawing|sketch|graph|diagram|answer)\b|'
@@ -74,15 +74,32 @@ NO_DEPENDENCY = re.compile(
 INLINE_TABLE = re.compile(r'(?:\b\d[\d.,/]*\b[^\w]{0,4}){6,}')
 
 
+# A chemical equation or an algebraic identity is short-token dense by
+# nature — "H2 (g) + 1/2 O2 (g) -> H2O (l)" is the question, not label soup.
+FORMULA = re.compile(r'[\u2192\u21cc\u2194=]|\+\s*\S')
+
+
 def label_junk(text):
     """Mostly short tokens and numbers, no sentence shape."""
     if not text or len(text) < 20:
+        return False
+    if FORMULA.search(text):
         return False
     words = text.split()
     if len(words) < 8:
         return False
     short = sum(1 for w in words if len(w) <= 3)
     return short / len(words) > 0.72 and text.count('.') == 0
+
+
+# Cards a figure pass OPENED the paper for and found nothing to show: the
+# "diagram below" is a blank answer frame the candidate fills in, or "the
+# table below" is a two-cell box holding one datum the card already carries.
+# Each entry records the reason, the same evidence discipline the exclusions
+# files use — an unexplained silence would be indistinguishable from a miss.
+REVIEWED_PATH = os.path.join(HERE, 'cardlint-reviewed.json')
+REVIEWED = (json.load(open(REVIEWED_PATH))
+            if os.path.exists(REVIEWED_PATH) else {})
 
 
 def lint(subject):
@@ -105,7 +122,8 @@ def lint(subject):
         table_only = bool(m) and re.search(
             r'(?:table|chart|graph)\b', m.group(0), re.I) and INLINE_TABLE.search(joined)
         if (not has_fig and m and not SELF_WORK.search(joined)
-                and not NO_DEPENDENCY.search(joined) and not table_only):
+                and not NO_DEPENDENCY.search(joined) and not table_only
+                and c['id'] not in REVIEWED):
             flags.append((subject, c['id'], 'ghost-figure', joined.strip()[:90]))
         if label_junk(stem):
             flags.append((subject, c['id'], 'label-junk', stem[:90]))

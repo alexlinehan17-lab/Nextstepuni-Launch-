@@ -413,6 +413,30 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: "LC022ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2021 Higher Level — © State Examinations Commission.",
+    id: "chem-2021-hl-q2-e", topicId: "chem-1-4", conceptId: "theoretical-yield-from-moles-and-mr",
+    section: "A", questionRef: "2021 HL Q2(e)",
+    stem: "Sodium cocoate soap is manufactured by the base hydrolysis of tri-ester molecules in coconut oil. The balanced equation is: tri-ester + 3NaOH → 3CH3(CH2)10COONa + co-product.",
+    questionText: "When 0.03 moles of the tri-ester shown in the equation above are hydrolysed, what is the theoretical yield, in grams, of CH3(CH2)10COONa?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "0.03 moles tri-ester → 0.09 moles soap", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Mr soap = 222", marks: 3, contextNote: "[Addition must be shown for error to be treated as slip. Mr of 222.294 and subsequent work based on Ar values in Formula and Tables booklet acceptable.]" },
+    { id: "r-3", kind: "point", verbatim: "0.09 × 222 = 19.98 g (19.98 – 20 g) CH3(CH2)10COONa", marks: 3 },
+    ],
+    figure: {
+          "candId": "chemistry-2021-HL-paper-p03-i1",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2021-HL-paper-p03-i1.png",
+          "srcHash": "7e6936ff7970aada03e19e39b1a9f4d4",
+          "alt": "The balanced equation for the base hydrolysis of a coconut-oil tri-ester, drawn as structural formulae. On the left, a three-carbon backbone written vertically — three C atoms each bonded to an H on the right, with an H above the top carbon and an H below the bottom carbon — and each of the three carbons carries a CH3(CH2)10COO— group on its left; this structure is captioned \"tri-ester\". Then \"+ 3NaOH\", a single reaction arrow, then \"3CH3(CH2)10COONa\" captioned \"soap\", a \"+\", and on the right a second vertical three-carbon backbone in which each carbon carries an HO— group, with an H above and an H below, captioned \"co-product\". Along the very top edge the tail of the printed stem line \"in coconut oil.\" is sliced horizontally through the middle of the type.",
+          "attribution": "SEC Leaving Certificate Chemistry 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC022ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2021 Higher Level — © State Examinations Commission.",
     id: "chem-2021-hl-q3-a", topicId: "chem-u2", conceptId: "flame-tests-to-distinguish-two-salts",
     section: "A", questionRef: "2021 HL Q3(a)",
     stem: "Two unlabelled white crystalline salts are provided on separate clock glasses.",
@@ -4638,6 +4662,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "fixed energy / quantised energy / energy in an orbit / energy in a shell", marks: 3 },
     { id: "r-2", kind: "point", verbatim: "of an electron (in an atom)", marks: 3 },
     ],
+    figure: {
+          "candId": "chemistry-2024-hl-paper-p006-i0",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2024-hl-paper-p006-i0.png",
+          "srcHash": "e87daeb2a6d186e609b6df69389407bd",
+          "alt": "The visible line spectrum of atomic hydrogen drawn as a horizontal arrow pointing right, captioned 'wavelength' beneath it. Four vertical lines of unequal darkness stand on the arrow: three bunched towards the left end, labelled violet, blue and green from left to right, and a single pale line far over at the right end labelled red. The gaps between the lines widen towards the red end.",
+          "attribution": "SEC Leaving Certificate Chemistry 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6514,30 +6546,6 @@ export const CARDS: SecCard[] = [
     },
   } as SecCard,
   {
-    ...base, kind: "question",
-    year: 2021, level: "higher",
-    paperFileid: "LC022ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2021 Higher Level — © State Examinations Commission.",
-    id: "chem-2021-hl-q2-e-fig", topicId: "chem-1-4", conceptId: "theoretical-yield-from-tri-ester-hydrolysis",
-    section: "A", questionRef: "2021 HL Q2(e)",
-    stem: "Sodium cocoate soap is manufactured by the base hydrolysis of tri-ester molecules in coconut oil.  The following is a balanced equation for the hydrolysis of a tri-ester molecule in coconut oil.",
-    questionText: "When 0.03 moles of the tri-ester shown in the equation above are hydrolysed, what is the theoretical yield, in grams, of CH3(CH2)10COONa?",
-    tariffModel: {"kind":"fixed"}, totalMarks: 9,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "0.03 moles tri-ester → 0.09 moles soap", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "Mr soap = 222", marks: 3, contextNote: "Scheme: [*Addition must be shown for error to be treated as slip.  Mr of 222.294 and subsequent work based on Ar values in Formula and Tables booklet acceptable.]" },
-    { id: "r-3", kind: "point", verbatim: "0.09 × 222 = 19.98 g (19.98 – 20 g) CH3(CH2)10COONa", marks: 3 },
-    ],
-    figure: {
-          "candId": "chemistry-2021-HL-paper-p03-i1",
-          "src": "/exam-figures/chemistry/markbank/chemistry-2021-HL-paper-p03-i1.png",
-          "srcHash": "7e6936ff7970aada03e19e39b1a9f4d4",
-          "alt": "The balanced equation for the base hydrolysis of a coconut-oil tri-ester, drawn as structural formulae. On the left, a three-carbon backbone written vertically — three C atoms each bonded to an H on the right, with an H above the top carbon and an H below the bottom carbon — and each of the three carbons carries a CH3(CH2)10COO— group on its left; this structure is captioned \"tri-ester\". Then \"+ 3NaOH\", a single reaction arrow, then \"3CH3(CH2)10COONa\" captioned \"soap\", a \"+\", and on the right a second vertical three-carbon backbone in which each carbon carries an HO— group, with an H above and an H below, captioned \"co-product\". Along the very top edge the tail of the printed stem line \"in coconut oil.\" is sliced horizontally through the middle of the type.",
-          "attribution": "SEC Leaving Certificate Chemistry 2021 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
     ...base, kind: "diagram",
     year: 2021, level: "higher",
     paperFileid: "LC022ALP000EV",
@@ -6840,6 +6848,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "rate proportional to concentration", marks: 3 },
     ],
+    figure: {
+          "candId": "chemistry-2024-hl-paper-p004-i0",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2024-hl-paper-p004-i0.png",
+          "srcHash": "beeae4ebd0d81387bed10f198cef8f7a",
+          "alt": "A three-row ruled results table. Row one, 'Concentration of Na2S2O3 (M)', holds eight values falling from 0.10 to 0.03 in steps of 0.01. Row two, 'Time (s)', holds 50, 56, 63, 72, 84, 100, 125 and 168. Row three, 'Rate = 1/Time (s to the minus one)', shows only 0.020 and 0.018 in the first two cells; the remaining six cells are blank for the candidate to fill in.",
+          "attribution": "SEC Leaving Certificate Chemistry 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6854,6 +6870,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "correct dumb-bell shape (6) [award 3 marks for drawing that shows overlapping dumb-bell shapes]", marks: 6 },
     ],
+    figure: {
+          "candId": "chemistry-2024-hl-paper-p006-i0",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2024-hl-paper-p006-i0.png",
+          "srcHash": "e87daeb2a6d186e609b6df69389407bd",
+          "alt": "The visible line spectrum of atomic hydrogen drawn as a horizontal arrow pointing right, captioned 'wavelength' beneath it. Four vertical lines of unequal darkness stand on the arrow: three bunched towards the left end, labelled violet, blue and green from left to right, and a single pale line far over at the right end labelled red. The gaps between the lines widen towards the red end.",
+          "attribution": "SEC Leaving Certificate Chemistry 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",

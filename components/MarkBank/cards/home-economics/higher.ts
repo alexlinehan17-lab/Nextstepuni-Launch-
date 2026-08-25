@@ -246,6 +246,14 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Starch", marks: 2, contextNote: "Substrate column - what the enzyme acts on. 2 marks, graded 2:0." },
     { id: "r-3", kind: "point", verbatim: "Maltose", marks: 2, contextNote: "Product column. 2 marks, graded 2:0. The scheme prints Maltose only - glucose is the later product of maltase in the small intestine, not of amylase." },
     ],
+    figure: {
+          "candId": "home-economics-2022-hl-answerbook-p03-art",
+          "src": "/exam-figures/home-economics/markbank/home-economics-2022-hl-answerbook-p03-art.png",
+          "srcHash": "f2a4cca7ee9542987275740cef79f385",
+          "alt": "A blank four-column exam table with a shaded grey header row reading Secretion, Enzyme, Substrate, Product. Below it a single taller data row whose first cell is already filled in with 'Pancreatic juice'; the Enzyme, Substrate and Product cells of that row are empty for the candidate to complete.",
+          "attribution": "SEC Leaving Certificate Home Economics 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1018,6 +1026,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Comment and elaborate on four sources of energy in the diet of adults in Ireland", marks: 20, contextNote: "Four of the eight food groups the chart shows, 5 marks each. The grading is 5:4:3:2:1:0 — the only part of this question marked in single steps rather than all-or-nothing — so a source you can say five things about earns five and a source you name and drop earns one. \"Comment and elaborate\" is what that ladder prices: naming the group and quoting its percentage is the first mark, and the four after it come from the nutritional detail. Each option below carries its own group's indicative material, so points borrowed from another food group do not pay.", openList: true, group: {"claimMax":4,"perOption":5,"options":["Bread, potatoes, pasta, rice & grains 23% endosperm provides starch; Low GI and High GI options available; wholegrain varieties and potato skins provide fibre; contains LBV protein; contains non- haem iron; contains Vitamin B; staple food ingredient for breakfast, packed lunches, dinners; requires little preparation; wide range of options available; pre-cooked options available for convenience; many culinary uses; cheap energy source; provides energy for heat generation; etc.","Sugar, drinks, biscuits & cakes 21% high sugar foods & drinks provide empty kilocalories; high GI foods/drinks give rapid burst of energy; white chocolate higher in calories than dark; high salt content; quick/easy to eat on the go; eaten while relaxing; wide variety available; relatively low cost; energy needed for cellular activity; etc.","Others 16% eggs, fish; contain HBV protein; butter, cheese, cream; high in saturated fat; mayonnaise, nuts, seeds, hummus, oils; contain unsaturated fats; dressings, coleslaws/salads; higher in calories; etc.","Meat & meat products 14% provides HBV protein; provides saturated fat in visible and invisible fat; poultry contains saturated fat in skin; contains haem iron; contains Vitamin B; cooking method chosen can increase or decrease calorie content; widely used food ingredient for cooked breakfasts, packed lunches, dinners; included in wide range of meals; wide range of options available; promotion of Irish meat sector; provides energy for physical activities; etc.","Fruit & vegetables 9% many can be eaten raw; can be used for side dishes and main dishes; olives and avocados contain unsaturated fat; fruits naturally contain high sugar content; vegetables good source of starch; good source of fibre especially if skins are eaten; good source of Vitamin A; Vitamin C; Vitamin B; etc.","Milk & yogurt 7% excellent source of calcium and Vitamin D; provides HBV protein; source of saturated fat; provides Vitamin A; provides Vitamin B; milk provides lactose; useful to stimulate muscle repair after exercise; wide range of options available; many culinary uses; promotion of Irish dairy industry; lactose intolerant; little preparation required; source of probiotics; suitable for packed lunches and snacks; calorie content depends on type chosen; energy needed for functioning of internal organs; etc.","Breakfast cereals 5% endosperm provides starch; wholegrain varieties provide fibre; calorie content can be increased if sugar, honey or chocolate added; contains LBV protein; often fortified with folic acid; contains non-haem iron; cheap energy source; widely used for breakfast or snack options; wide range of options available; can be used to form toppings/coatings for other dishes; energy support cellular growth; etc.","Soups & sauces 3% thickening agent provides energy; milk-based sauces provide a source of calcium and Vitamin D; provides HBV protein; vegetables used in soups provide vitamins; convenience products can have a higher sodium content; can contain MSG; can lack fibre; etc."]} },
     ],
+    figure: {
+          "candId": "home-economics-2025-hl-paper-p02-art",
+          "src": "/exam-figures/home-economics/markbank/home-economics-2025-hl-paper-p02-art.png",
+          "srcHash": "4b2aae68d6cf480796afba37b226091e",
+          "alt": "A pie chart titled 'Sources of Energy' with eight coloured wedges, each carrying its percentage inside and its name in a label outside: Bread, potatoes, pasta, rice & grains 23% (orange); Meat & meat products 14% (red); Breakfast cereals 5% (purple); Fruit & vegetables 9% (green); Sugar, drinks, biscuits & cakes 21% (olive); Others 16% (blue); Milk & yogurt 7% (cyan); Soups & sauces 3% (yellow).",
+          "attribution": "SEC Leaving Certificate Home Economics 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
