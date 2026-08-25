@@ -84,9 +84,14 @@ FORMULA = re.compile(r'[\u2192\u21cc\u2194=]|\+\s*\S')
 # ghost-figure rule missed eleven Biology cards that build-deck then dropped.
 # Mirrored from build-deck.mjs's namesLetters gate — a lettered question needs
 # both the crop and a decoded label key.
+# Case matters: a labelled PART is a capital ("the parts labelled A, B and C"),
+# while lower-case letters on a diagram are quantities to measure or use —
+# "Measure the lengths labelled r, d, and h" needs no decode at all.
 NAMES_LETTERS = re.compile(
-    r'\blabelled [A-Z]\b|\bstructures? [A-Z](?:,| and )|\bparts? [A-Z](?:,| and )'
-    r'|\blabelled\s+(?:parts|structures)\b', re.I)
+    r'(?i:\blabelled )[A-Z]\b'
+    r'|(?i:\bstructures? )[A-Z](?:,| and )'
+    r'|(?i:\bparts? )[A-Z](?:,| and )'
+    r'|(?i:\blabelled\s+(?:parts|structures)\b)')
 INVITES_DRAWING = re.compile(r'\b(?:draw|sketch|label the diagram)\b', re.I)
 
 
