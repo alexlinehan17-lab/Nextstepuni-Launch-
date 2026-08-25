@@ -113,6 +113,7 @@ def lines_of(doc):
                 if not txt:
                     continue
                 x0 = min(s['bbox'][0] for s in ln['spans'])
+                x1 = max(s['bbox'][2] for s in ln['spans'])
                 y0 = min(s['bbox'][1] for s in ln['spans'])
                 y1 = max(s['bbox'][3] for s in ln['spans'])
                 if y0 >= Y_FOOT - 4:
@@ -120,9 +121,9 @@ def lines_of(doc):
                 if y0 > 700 and FOOTER.match(txt):
                     continue
                 if DEAD_TEXT.match(txt):
-                    dead.append((n, y0, y1, x0, txt))
+                    dead.append((n, y0, y1, x0, txt, x1))
                     continue
-                out.append((n, y0, y1, x0, txt))
+                out.append((n, y0, y1, x0, txt, x1))
     out.sort(key=lambda l: (l[0], round(l[1], 1), l[3]))
     dead.sort(key=lambda l: (l[0], round(l[1], 1), l[3]))
     return out, dead
@@ -194,7 +195,7 @@ class Sitting:
                 break
         self.q = OrderedDict()
         current = None
-        for (page, y0, y1, x0, txt) in self.lines:
+        for (page, y0, y1, x0, txt, x1) in self.lines:
             if self.tail and (page, y0) >= self.tail:
                 break
             h = QHEAD.match(txt)
@@ -242,12 +243,20 @@ class Sitting:
             # Not every answer box spans the column: 2022 Higher Level
             # Q6(c) sets a half-width grid beside the working, and a
             # 420pt floor let every one of those through.
-            # 45, not 60: the "Period: / Range:" answer box of 2021 HL P2
-            # Q9(b) is 57pt tall and slipped under the floor. The rect test
-            # and the sparse-text test still do the discriminating.
-            if r.width > 170 and r.height > 45:
+            # Answer boxes come in every size: the "Period: / Range:" box of
+            # 2021 HL P2 Q9(b) is 57pt tall, and 2021 OL P1 Q8(f) sets three
+            # 138x34 boxes beside its sub-parts. What they share is being an
+            # EMPTY RECTANGLE — a rect in the path, no bézier, no text and no
+            # drawing inside. A figure fails at least one of those.
+            if r.width > 80 and r.height > 20:
+                # Inside means inside BOTH ways. Testing only the vertical
+                # span counted a neighbouring figure's labels as the box's
+                # contents: the Argand diagram beside 2021 OL P1 Q2's answer
+                # box lent it 17 axis numbers, so the box read as a data
+                # table and shipped blank on every card of that question.
                 inside = [l for l in text_lines
-                          if r.y0 - 2 <= l[1] and l[2] <= r.y1 + 2]
+                          if r.y0 - 2 <= l[1] and l[2] <= r.y1 + 2
+                          and r.x0 - 2 <= l[3] <= r.x1 + 2]
                 # A prompt or two ("Show:", "Roots = ( , , )") or a template
                 # of bare labels ("Diagram: / Given: / To Prove: / Proof:")
                 # is furniture; a data table or a labelled plot holds more.
@@ -276,9 +285,17 @@ class Sitting:
                 # masking every one of them.
                 kinds = [i[0] for i in d.get('items', ())]
                 boxlike = 'c' not in kinds and kinds.count('re') >= 1
-                if (boxlike and len(inside) <= 6
-                        and sum(len(t) for t in ink) < 60
-                        and all(len(t) < 28 for t in ink)):
+                drawn_inside = any(
+                    o is not d
+                    and r.x0 - 1 <= o['rect'].x0 and o['rect'].x1 <= r.x1 + 1
+                    and r.y0 - 1 <= o['rect'].y0 and o['rect'].y1 <= r.y1 + 1
+                    and (o['rect'].width > 10 or o['rect'].height > 10)
+                    for o in drawings)
+                sparse = (len(inside) <= 6 and sum(len(t) for t in ink) < 60
+                          and all(len(t) < 28 for t in ink))
+                big = r.width > 170 and r.height > 45
+                if boxlike and not drawn_inside and (
+                        not inside or (big and sparse)):
                     frames.append(r)
         self._furniture[page] = frames
         rects = []
@@ -307,11 +324,17 @@ class Sitting:
         self._ink[page] = rects
         return rects
 
-    def furniture_line(self, page, y0, y1):
+    def furniture_line(self, page, y0, y1, x0=None):
         """True when a text line sits inside an excluded answer frame — the
-        "Show:" prompt must not hold a window open for its dead grid."""
+        "Show:" prompt must not hold a window open for its dead grid.
+
+        Inside means inside BOTH ways. Judging on the vertical span alone
+        made an ask furniture because a small answer box sat beside it at the
+        same height: 2021 OL P1 Q8(f)(iii) lost its own question that way.
+        """
         self.ink(page)
         return any(f.y0 - 2 <= y0 and y1 <= f.y1 + 2
+                   and (x0 is None or f.x0 - 2 <= x0 <= f.x1 + 2)
                    for f in self._furniture.get(page, []))
 
     def _q_end(self, qnum):
@@ -324,9 +347,9 @@ class Sitting:
     def band_text(self, bands, limit=220):
         words = []
         for (sp, sy), (ep, ey) in bands:
-            for (page, y0, y1, x0, txt) in self.lines:
+            for (page, y0, y1, x0, txt, x1) in self.lines:
                 if (sp, sy - 1) <= (page, y0) and (page, y0) < (ep, ey) and \
-                        not self.furniture_line(page, y0, y1):
+                        not self.furniture_line(page, y0, y1, x0):
                     words.append(txt)
         flat = ' '.join(' '.join(words).split())
         return flat[:limit]
@@ -424,8 +447,14 @@ class Sitting:
         # answer") — and also when the letter's setup points BELOW itself
         # ("as shown in the diagram below"): the diagram it promises is
         # printed under an earlier sibling, so the chain must come too.
+        # "Use your graph to estimate each of the following values" introduces
+        # the sub-parts, not printed matter below them — reading "following"
+        # as a pointer pulled every sibling into every crop of 2021 OL Q8(f)
+        # and its like. A real pointer names what is below.
         stem_points_down = bool(re.search(
-            r'\b(?:below|following|as shown)\b', ' '.join(ctx)))
+            r'\b(?:shown|diagram|graph|table|figure|picture|drawing)\s+below\b'
+            r'|\bbelow\s+(?:shows?|is|are)\b|\bas shown\b',
+            ' '.join(ctx), re.I))
         # Sibling parts ride along only on an explicit chain. Shared content
         # words are useless here — parts of one question always talk about the
         # same thing, so that test pulled every earlier sibling into every
@@ -502,7 +531,7 @@ class Sitting:
     def _stem_is_real(self, band):
         """Does this band hold question-level setup, or a sibling's spill?"""
         (sp, sy), (ep, ey) = band
-        for (pg, y0, y1, x0, txt) in self.lines:
+        for (pg, y0, y1, x0, txt, x1) in self.lines:
             if (sp, sy - 1) <= (pg, y0) < (ep, ey) and x0 <= 60.0 \
                     and not QHEAD.match(txt) and not LETTER.match(txt) \
                     and not ROMAN.match(txt) and len(txt) > 12:
@@ -630,9 +659,9 @@ class Sitting:
             if hi - lo < 3:
                 continue
             tops, bots = [], []
-            for (pg, y0, y1, x0, txt) in self.lines:
+            for (pg, y0, y1, x0, txt, x1) in self.lines:
                 if pg == page and lo - 1 <= y0 < hi and \
-                        not self.furniture_line(page, y0, y1):
+                        not self.furniture_line(page, y0, y1, x0):
                     tops.append(y0)
                     bots.append(y1)
             if not tops:
@@ -656,12 +685,12 @@ class Sitting:
                     if up or down:
                         w_lo, w_hi = min(w_lo, r.y0), max(w_hi, r.y1)
                         grew = True
-                for (pg, y0, y1, x0, txt) in self.lines:
+                for (pg, y0, y1, x0, txt, x1) in self.lines:
                     # Text joins only ABOVE the band (a diagram's topmost
                     # label); growing downward through text walks into the
                     # next part's print.
                     if pg == page and y0 < w_lo - 0.5 and y1 > w_lo - 14 and \
-                            not self.furniture_line(page, y0, y1):
+                            not self.furniture_line(page, y0, y1, x0):
                         w_lo = y0
                         grew = True
                 if not grew:
@@ -671,13 +700,17 @@ class Sitting:
             # shaves the glyph tops or bottoms, which reads as damage; the
             # audit fleet called it out 35 times. Push the edge just clear of
             # any line it would otherwise cut.
-            for (pg, y0, y1, x0, txt) in self.lines:
+            for (pg, y0, y1, x0, txt, x1) in self.lines:
                 if pg != page:
                     continue
                 if y0 < w_lo - 2 < y1:
                     w_lo = y0 if (y1 - w_lo) > (w_lo - y0) else y1
                 if y0 < bottom < y1:
-                    bottom = y0 if (bottom - y0) < (y1 - bottom) else y1
+                    # Snap to whichever edge keeps the crop honest: a row this
+                    # band owns is taken whole, a row belonging to the NEXT
+                    # part is cut above rather than sliced through its glyphs.
+                    owns = (page, y0) < (ep, ey)
+                    bottom = y1 if owns else y0
             windows.append((page, max(Y_TOP, w_lo - 2), bottom))
         return windows
 
@@ -703,11 +736,11 @@ class Sitting:
             # leaving an unreadable card. The tolerance keeps the band's own
             # last line — including anything set alongside it — intact.
             frames += [pymupdf.Rect(X0, y0, X1, y1)
-                       for (pg, y0, y1, x0, txt) in self.lines
+                       for (pg, y0, y1, x0, txt, x1) in self.lines
                        if pg == page and y0 >= band_hi + 7.0
                        and y1 > top + 1 and y0 < bot - 1]
         frames += [pymupdf.Rect(X0, y0, X1, y1)
-                   for (pg, y0, y1, x0, txt) in self.dead
+                   for (pg, y0, y1, x0, txt, x1) in self.dead
                    if pg == page and y1 > top + 1 and y0 < bot - 1]
         # A window grows past its band to carry a diagram whole, and the text
         # it then shows may belong to another band of the SAME crop: 2021 HL
@@ -717,7 +750,7 @@ class Sitting:
         if self._all_bands:
             owned = []
             for (sp2, sy2), (ep2, ey2) in self._all_bands:
-                for (pg, y0, y1, x0, txt) in self.lines:
+                for (pg, y0, y1, x0, txt, x1) in self.lines:
                     if pg == page and (sp2, sy2 - 1) <= (pg, y0) < (ep2, ey2):
                         owned.append((y0, y1))
             # A diagram's own labels ("Trail", "0·5 km", an axis name) belong
@@ -730,16 +763,18 @@ class Sitting:
                 return any(r.y0 - 4 <= y1 and y0 <= r.y1 + 4
                            for r in self.ink(page))
             frames += [pymupdf.Rect(X0, y0, X1, y1)
-                       for (pg, y0, y1, x0, txt) in self.lines
+                       for (pg, y0, y1, x0, txt, x1) in self.lines
                        if pg == page and y1 > top + 1 and y0 < bot - 1
                        and not any(abs(y0 - a) < 0.6 for a, _ in owned)
                        and not labels_a_drawing(y0, y1)]
         if not frames:
             return img
         keep = list(self.ink(page)) + self._rules.get(page, [])
-        keep += [pymupdf.Rect(x0, y0, X1, y1)
-                 for (pg, y0, y1, x0, txt) in self.lines
-                 if pg == page and not self.furniture_line(page, y0, y1)
+        # A row's keep-span ends where the row ends. Running it to the page
+        # edge spared every answer box printed beside a line of question text.
+        keep += [pymupdf.Rect(x0, y0, x1, y1)
+                 for (pg, y0, y1, x0, txt, x1) in self.lines
+                 if pg == page and not self.furniture_line(page, y0, y1, x0)
                  and (band_hi is None or y0 < band_hi - 0.5)]
         w, h = img.size
         px = img.load()

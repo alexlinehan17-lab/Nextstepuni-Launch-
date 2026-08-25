@@ -25,6 +25,11 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 AUTHORED = os.path.join(HERE, '..', 'authored')
 BINDINGS = os.path.join(HERE, 'figure_bindings.json')
+# A lettered question needs its letters DECODED as well as its crop shown, and
+# the decode is lifted from the scheme's own naming part. It lives beside the
+# bindings for the same reason: an authoring script rewrites its subject's
+# JSON and would otherwise drop it.
+LABELS = os.path.join(HERE, 'label_keys.json')
 MANIFEST = os.path.join(HERE, '..', '..', '..', 'components', 'MarkBank', 'figures.json')
 
 SUBJECTS = ['maths', 'physics', 'biology', 'chemistry', 'economics', 'business',
@@ -38,6 +43,10 @@ def main():
         return 0
     with open(BINDINGS) as fh:
         bind = json.load(fh)
+    labels = {}
+    if os.path.exists(LABELS):
+        with open(LABELS) as fh:
+            labels = json.load(fh)
     with open(MANIFEST) as fh:
         manifest = json.load(fh)
 
@@ -62,6 +71,10 @@ def main():
                 hit += 1
             if key:
                 seen.add(c['id'])
+            lk = labels.get(c['id'])
+            if lk and c.get('labelKey') != lk:
+                c['labelKey'] = lk
+                hit += 1
         if hit:
             with open(path, 'w') as fh:
                 json.dump(cards, fh, ensure_ascii=False, indent=1)

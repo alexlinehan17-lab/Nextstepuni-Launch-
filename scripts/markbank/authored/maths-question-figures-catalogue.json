@@ -410,7 +410,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2021 HL Paper 2 Q6(a)",
-  "description": "The question as printed on the paper \u2014 Prove that if two triangles \u2206\ud835\udc34\ud835\udc35\ud835\udc36 and \u2206\ud835\udc34\u2032\ud835\udc35\u2032\ud835\udc36\u2032 are similar, then the lengths of their sides are (a) proportional in order: |\u0bba\u0bbb| |\u0bbb\u0bbc| |\u0bbc\u0bba| |\u0bba\u11f2\u0bbb\u11f2| = |\u0bbb\u11f2\u0bbc\u11f2| = |\u0bbc\u11f2\u0bba\u11f2|. Diagram:"
+  "description": "The question as printed on the paper \u2014 Prove that if two triangles \u2206\ud835\udc34\ud835\udc35\ud835\udc36 and \u2206\ud835\udc34\u2032\ud835\udc35\u2032\ud835\udc36\u2032 are similar, then the lengths of their sides are (a) proportional in order: |\u0bba\u0bbb| |\u0bbb\u0bbc| |\u0bbc\u0bba| |\u0bba\u11f2\u0bbb\u11f2| = |\u0bbb\u11f2\u0bbc\u11f2| = |\u0bbc\u11f2\u0bba\u11f2|. Diagram: Given: To Prove: Construction: Proof:"
  },
  {
   "file": "maths-2021-HL-ask-p2-q6-b.png",
@@ -620,14 +620,14 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2021 OL Paper 1 Q2",
-  "description": "The question as printed on the paper \u2014 \ud835\udc67\u0b35= \u22123 + 4\ud835\udc56 and \ud835\udc67\u0b36= 4 + 3\ud835\udc56, Im where \ud835\udc56\u0b36= \u22121. 7 Plot and label \ud835\udc67\u0b35, \ud835\udc67\u0b36, and \ud835\udc67\u0b35+ \ud835\udc67\u0b36 on 6 (a) the Argand Diagram. 5 \ud835\udc67\u0b35+ \ud835\udc67\u0b36= 4 3 2 1 Re -4 -3 -2 -1 1 2 3 4 -1 -2 -3 -4 -5 \u0bed\u0c2d \ud835\udc67\u0b37= . Find \ud835\udc67\u0b37 in the form \ud835\udc4e+ \ud835\udc4f\ud835\udc56, where \ud835\udc4e, \ud835\udc4f\u2208\u2124. (b) "
+  "description": "The question as printed on the paper \u2014 \ud835\udc67\u0b35= \u22123 + 4\ud835\udc56 and \ud835\udc67\u0b36= 4 + 3\ud835\udc56, Im where \ud835\udc56\u0b36= \u22121. 7 Plot and label \ud835\udc67\u0b35, \ud835\udc67\u0b36, and \ud835\udc67\u0b35+ \ud835\udc67\u0b36 on 6 (a) the Argand Diagram. 5 4 3 2 1 Re -4 -3 -2 -1 1 2 3 4 -1 -2 -3 -4 -5 \u0bed\u0c2d \ud835\udc67\u0b37= . Find \ud835\udc67\u0b37 in the form \ud835\udc4e+ \ud835\udc4f\ud835\udc56, where \ud835\udc4e, \ud835\udc4f\u2208\u2124. (b) \u0bed\u0c2e Find "
  },
  {
   "file": "maths-2021-OL-ask-p1-q2-a.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2021 OL Paper 1 Q2(a)",
-  "description": "The question as printed on the paper \u2014 Plot and label \ud835\udc67\u0b35, \ud835\udc67\u0b36, and \ud835\udc67\u0b35+ \ud835\udc67\u0b36 on 6 (a) the Argand Diagram. 5 \ud835\udc67\u0b35+ \ud835\udc67\u0b36= 4 3 2 1 Re -4 -3 -2 -1 1 2 3 4 -1 -2 -3 -4 -5 \u0bed\u0c2d"
+  "description": "The question as printed on the paper \u2014 \ud835\udc67\u0b35= \u22123 + 4\ud835\udc56 and \ud835\udc67\u0b36= 4 + 3\ud835\udc56, Im where \ud835\udc56\u0b36= \u22121. 7 Plot and label \ud835\udc67\u0b35, \ud835\udc67\u0b36, and \ud835\udc67\u0b35+ \ud835\udc67\u0b36 on 6 (a) the Argand Diagram. 5 4 3 2 1 Re -4 -3 -2 -1 1 2 3 4 -1 -2 -3 -4 -5 \u0bed\u0c2d"
  },
  {
   "file": "maths-2021-OL-ask-p1-q2-c.png",
@@ -858,7 +858,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2021 OL Paper 1 Q10(b)(i)",
-  "description": "The question as printed on the paper \u2014 John walks around a circular trail of radius 0\u00b75 km at a steady speed of 6 km/h. (b) (i) How long will it take him to complete 3 full circuits of the trail? Give your answer correct to the nearest minute."
+  "description": "The question as printed on the paper \u2014 John walks around a circular trail of radius 0\u00b75 km at a steady speed of 6 km/h. (b) (i) How long will it take him to complete 3 full circuits of the trail? Give your answer correct to the nearest minute. Trail 0\u00b75 km"
  },
  {
   "file": "maths-2021-OL-ask-p1-q10-b-ii.png",
@@ -1054,7 +1054,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2021 OL Paper 2 Q8(b)(i)",
-  "description": "The question as printed on the paper \u2014 Calculate the volume , in cm3, of a hemisphere of radius 21 cm. (b) (i) Give your answer terms of \ud835\udf0b."
+  "description": "The question as printed on the paper \u2014 Calculate the volume , in cm3, of a hemisphere of radius 21 cm. (b) (i) Give your answer terms of \ud835\udf0b. 21 cm"
  },
  {
   "file": "maths-2021-OL-ask-p2-q8-b-ii.png",
@@ -1523,7 +1523,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2022 HL Paper 2 Q7(a)",
-  "description": "The question as printed on the paper \u2014 A candle in the shape of a cylinder has a diameter of 10 cm and a volume of 450\ud835\udf0b cm3. (a) Work out the height of this candle."
+  "description": "The question as printed on the paper \u2014 A candle in the shape of a cylinder has a diameter of 10 cm and a volume of 450\ud835\udf0b cm3. (a) Work out the height of this candle. 450\ud835\udf0b cm3"
  },
  {
   "file": "maths-2022-HL-ask-p2-q7-b.png",
@@ -1880,14 +1880,14 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2022 OL Paper 1 Q8(b)(ii)",
-  "description": "The question as printed on the paper \u2014 (b) If a solid is made up of faces with straight edges, then the following identity is often true: \ud835\udc36\u2212\ud835\udc38+ \ud835\udc39= 2 \ud835\udc36 is the number of corners, where: \ud835\udc38 is the number of edges, and \ud835\udc39 is the number of faces. Write down the value"
+  "description": "The question as printed on the paper \u2014 (b) If a solid is made up of faces with straight edges, then the following identity is often true: \ud835\udc36\u2212\ud835\udc38+ \ud835\udc39= 2 \ud835\udc36 is the number of corners, where: \ud835\udc38 is the number of edges, and \ud835\udc39 is the number of faces. Each of the faces of"
  },
  {
   "file": "maths-2022-OL-ask-p1-q8-b-iii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2022 OL Paper 1 Q8(b)(iii)",
-  "description": "The question as printed on the paper \u2014 (b) If a solid is made up of faces with straight edges, then the following identity is often true: \ud835\udc36\u2212\ud835\udc38+ \ud835\udc39= 2 \ud835\udc36 is the number of corners, where: \ud835\udc38 is the number of edges, and \ud835\udc39 is the number of faces. Write down the value"
+  "description": "The question as printed on the paper \u2014 (b) If a solid is made up of faces with straight edges, then the following identity is often true: \ud835\udc36\u2212\ud835\udc38+ \ud835\udc39= 2 \ud835\udc36 is the number of corners, where: \ud835\udc38 is the number of edges, and \ud835\udc39 is the number of faces. (iii) The surface of"
  },
  {
   "file": "maths-2022-OL-ask-p1-q9-a-i.png",
@@ -2685,7 +2685,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 HL Paper 2 Q7(a)",
-  "description": "The question as printed on the paper \u2014 The diagram below shows a road \u123e\ud835\udc34\ud835\udc35\u123f, which is not to scale. (a) \ud835\udc34\ud835\udc36 is horizontal and \ud835\udc35\ud835\udc36 is vertical. |\ud835\udc35\ud835\udc36| = 9 m and |\ud835\udc34\ud835\udc35| = 70 m. \ud835\udc35 \ud835\udc34 \ud835\udc36 |\u0bbb\u0bbc| The gradient of the road \u123e\ud835\udc34\ud835\udc35\u123f is |\u0bba\u0bbc| written as a percentage. Find the gradient"
+  "description": "The question as printed on the paper \u2014 The diagram below shows a road \u123e\ud835\udc34\ud835\udc35\u123f, which is not to scale. (a) \ud835\udc34\ud835\udc36 is horizontal and \ud835\udc35\ud835\udc36 is vertical. |\ud835\udc35\ud835\udc36| = 9 m and |\ud835\udc34\ud835\udc35| = 70 m. \ud835\udc35 70 m 9 m \ud835\udc34 \ud835\udc36 |\u0bbb\u0bbc| The gradient of the road \u123e\ud835\udc34\ud835\udc35\u123f is |\u0bba\u0bbc| written as a percentage. Find the"
  },
  {
   "file": "maths-2023-HL-ask-p2-q7-b.png",
@@ -2713,7 +2713,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 HL Paper 2 Q7(e)(ii)",
-  "description": "The question as printed on the paper \u2014 Olga is a cyclist. Use the formula \ud835\udc49(\ud835\udc61) = 2 \u22120\u22194 cos \u1240 \u0b36\ud835\udc61\u1241 to find each of the following, when Olga is resting. (e) Give each answer correct to 3 decimal places. Find the volume of air in Olga\u2019s lungs, half a second afte"
+  "description": "The question as printed on the paper \u2014 Olga is a cyclist. Use the formula \ud835\udc49(\ud835\udc61) = 2 \u22120\u22194 cos \u1240 \u0b36\ud835\udc61\u1241 to find each of the following, when Olga is resting. (e) Give each answer correct to 3 decimal places. (ii) Find the rate at which the volume of air in Olga\u2019s lu"
  },
  {
   "file": "maths-2023-HL-ask-p2-q7-f.png",
@@ -2874,7 +2874,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 OL Paper 1 Q4(b)(ii)",
-  "description": "The question as printed on the paper \u2014 A different function, \u210e(\ud835\udc65), has the following equation: (b) \u210e(\ud835\udc65) = \ud835\udc65\u0b37+ 2\ud835\udc65\u0b36\u2212\ud835\udc65\u22128 Find \u210e\u2032(\ud835\udc65), the derivative of \u210e(\ud835\udc65). (i) Find the equation of the tangent to \u210e(\ud835\udc65) at the point (2, 6). (ii)"
+  "description": "The question as printed on the paper \u2014 A different function, \u210e(\ud835\udc65), has the following equation: (b) \u210e(\ud835\udc65) = \ud835\udc65\u0b37+ 2\ud835\udc65\u0b36\u2212\ud835\udc65\u22128 Find the equation of the tangent to \u210e(\ud835\udc65) at the point (2, 6). (ii)"
  },
  {
   "file": "maths-2023-OL-ask-p1-q5-a-i.png",
@@ -2916,7 +2916,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 OL Paper 1 Q6(a)(ii)",
-  "description": "The question as printed on the paper \u2014 \ud835\udc54(\ud835\udc65) is the following function in \ud835\udc65\u2208\u211d: (a) \ud835\udc54(\ud835\udc65) = \ud835\udc65\u0b36+ 8\ud835\udc65\u22126 Find the value of \ud835\udc54(\u22125). (i) Use calculus to find the value of \ud835\udc65 which gives the minimum value of \ud835\udc54(\ud835\udc65). (ii)"
+  "description": "The question as printed on the paper \u2014 \ud835\udc54(\ud835\udc65) is the following function in \ud835\udc65\u2208\u211d: (a) \ud835\udc54(\ud835\udc65) = \ud835\udc65\u0b36+ 8\ud835\udc65\u22126 Use calculus to find the value of \ud835\udc65 which gives the minimum value of \ud835\udc54(\ud835\udc65). (ii)"
  },
  {
   "file": "maths-2023-OL-ask-p1-q6-b.png",
@@ -3070,14 +3070,14 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 OL Paper 1 Q10(a)(i)",
-  "description": "The question as printed on the paper \u2014 Find the volume of a cylinder with a diameter of 18 mm and a height of 5 mm. (a) (i) Give your answer correct to the nearest mm3."
+  "description": "The question as printed on the paper \u2014 Find the volume of a cylinder with a diameter of 18 mm and a height of 5 mm. (a) (i) Give your answer correct to the nearest mm3. 5 mm 18 mm"
  },
  {
   "file": "maths-2023-OL-ask-p1-q10-a-ii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 OL Paper 1 Q10(a)(ii)",
-  "description": "The question as printed on the paper \u2014 Find the volume of a cylinder with a diameter of 18 mm and a height of 5 mm. (a) (i) Give your answer correct to the nearest mm3. A metal ring could be made by removing a cylinder of diameter 14 mm and height (ii) 5 mm f"
+  "description": "The question as printed on the paper \u2014 Find the volume of a cylinder with a diameter of 18 mm and a height of 5 mm. (a) (i) Give your answer correct to the nearest mm3. 5 mm 18 mm A metal ring could be made by removing a cylinder of diameter 14 mm and height "
  },
  {
   "file": "maths-2023-OL-ask-p1-q10-b-ii.png",
@@ -3140,7 +3140,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 OL Paper 2 Q1(c)(ii)",
-  "description": "The question as printed on the paper \u2014 The point (4, 2) is shown in each of the two co-ordinate diagrams below. (c) Draw the line segment through the point (4, 2) with a slope of 2 on the co-ordinate (i) diagram below, with the range \u22122 \u0d51\ud835\udc66\u0d516, \ud835\udc66\u2208\u211d. \ud835\udc66 6 5 4 3 2"
+  "description": "The question as printed on the paper \u2014 The point (4, 2) is shown in each of the two co-ordinate diagrams below. (c) (ii) 3 on the co-ordinate diagram below, on the domain \u22121 \u0d51\ud835\udc65\u0d517, \ud835\udc65\u2208\u211d. \ud835\udc66 6 5 4 3 2 1 \ud835\udc65 -1 1 2 3 4 5 6 7 -1 -2"
  },
  {
   "file": "maths-2023-OL-ask-p2-q2-a-ii.png",
@@ -3273,28 +3273,28 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 OL Paper 2 Q7(a)(i)",
-  "description": "The question as printed on the paper \u2014 Olga is a cyclist. She is measuring how long and how steep different roads are. The diagram below shows a road \u123e\ud835\udc34\ud835\udc35\u123f. \ud835\udc34\ud835\udc36 is horizontal and \ud835\udc35\ud835\udc36 is vertical. (a) The diagram is not to scale. \ud835\udc35 \ud835\udc34 \ud835\udc36 The gradient of the road \u123e\ud835\udc34"
+  "description": "The question as printed on the paper \u2014 Olga is a cyclist. She is measuring how long and how steep different roads are. The diagram below shows a road \u123e\ud835\udc34\ud835\udc35\u123f. \ud835\udc34\ud835\udc36 is horizontal and \ud835\udc35\ud835\udc36 is vertical. (a) The diagram is not to scale. \ud835\udc35 Road \ud835\udc34 \ud835\udc36 The gradient of the ro"
  },
  {
   "file": "maths-2023-OL-ask-p2-q7-a-ii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 OL Paper 2 Q7(a)(ii)",
-  "description": "The question as printed on the paper \u2014 Olga is a cyclist. She is measuring how long and how steep different roads are. The diagram below shows a road \u123e\ud835\udc34\ud835\udc35\u123f. \ud835\udc34\ud835\udc36 is horizontal and \ud835\udc35\ud835\udc36 is vertical. (a) The diagram is not to scale. \ud835\udc35 \ud835\udc34 \ud835\udc36 The gradient of the road \u123e\ud835\udc34"
+  "description": "The question as printed on the paper \u2014 Olga is a cyclist. She is measuring how long and how steep different roads are. The diagram below shows a road \u123e\ud835\udc34\ud835\udc35\u123f. \ud835\udc34\ud835\udc36 is horizontal and \ud835\udc35\ud835\udc36 is vertical. (a) The diagram is not to scale. \ud835\udc35 Road \ud835\udc34 \ud835\udc36 The gradient of the ro"
  },
  {
   "file": "maths-2023-OL-ask-p2-q7-a-iii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 OL Paper 2 Q7(a)(iii)",
-  "description": "The question as printed on the paper \u2014 Olga is a cyclist. She is measuring how long and how steep different roads are. The diagram below shows a road \u123e\ud835\udc34\ud835\udc35\u123f. \ud835\udc34\ud835\udc36 is horizontal and \ud835\udc35\ud835\udc36 is vertical. (a) The diagram is not to scale. \ud835\udc35 \ud835\udc34 \ud835\udc36 The gradient of the road \u123e\ud835\udc34"
+  "description": "The question as printed on the paper \u2014 Olga is a cyclist. She is measuring how long and how steep different roads are. The diagram below shows a road \u123e\ud835\udc34\ud835\udc35\u123f. \ud835\udc34\ud835\udc36 is horizontal and \ud835\udc35\ud835\udc36 is vertical. (a) The diagram is not to scale. \ud835\udc35 Road \ud835\udc34 \ud835\udc36 The gradient of the ro"
  },
  {
   "file": "maths-2023-OL-ask-p2-q7-a-iv.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2023 OL Paper 2 Q7(a)(iv)",
-  "description": "The question as printed on the paper \u2014 Olga is a cyclist. She is measuring how long and how steep different roads are. The diagram below shows a road \u123e\ud835\udc34\ud835\udc35\u123f. \ud835\udc34\ud835\udc36 is horizontal and \ud835\udc35\ud835\udc36 is vertical. (a) The diagram is not to scale. \ud835\udc35 \ud835\udc34 \ud835\udc36 The gradient of the road \u123e\ud835\udc34"
+  "description": "The question as printed on the paper \u2014 Olga is a cyclist. She is measuring how long and how steep different roads are. The diagram below shows a road \u123e\ud835\udc34\ud835\udc35\u123f. \ud835\udc34\ud835\udc36 is horizontal and \ud835\udc35\ud835\udc36 is vertical. (a) The diagram is not to scale. \ud835\udc35 Road \ud835\udc34 \ud835\udc36 The gradient of the ro"
  },
  {
   "file": "maths-2023-OL-ask-p2-q7-b.png",
@@ -4106,14 +4106,14 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2024 OL Paper 1 Q8(b)(ii)",
-  "description": "The question as printed on the paper \u2014 (iii) Use the following information to complete the graph on the diagram above to show the rest of Liam\u2019s journey: \u2022 Liam stopped at B for 30 minutes \u2022 He then cycled the 32 km back home at a constant speed. This took hi"
+  "description": "The question as printed on the paper \u2014 (a) Liam left home at 07: 00. He cycled at a constant speed for 20 km, until he reached the point A. He then changed speed and cycled at a constant speed for a further 12 km, until he reached the point B. The graph shows"
  },
  {
   "file": "maths-2024-OL-ask-p1-q8-b-iii.png",
   "kind": "figure",
   "truncated": false,
   "questionRef": "2024 OL Paper 1 Q8(b)(iii)",
-  "description": "The question as printed on the paper \u2014 (iii) Use the following information to complete the graph on the diagram above to show the rest of Liam\u2019s journey: \u2022 Liam stopped at B for 30 minutes \u2022 He then cycled the 32 km back home at a constant speed. This took hi"
+  "description": "The question as printed on the paper \u2014 (a) Liam left home at 07: 00. He cycled at a constant speed for 20 km, until he reached the point A. He then changed speed and cycled at a constant speed for a further 12 km, until he reached the point B. The graph shows"
  },
  {
   "file": "maths-2024-OL-ask-p1-q8-b-v.png",
@@ -4617,7 +4617,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 HL Paper 1 Q6(b)(ii)",
-  "description": "The question as printed on the paper \u2014 (b) \u210e(\ud835\udc65\ud835\udc65) is the following function of \ud835\udc65\ud835\udc65, where \ud835\udc5a\ud835\udc5a and \ud835\udc5f\ud835\udc5f are positive constants and \ud835\udc65\ud835\udc65\u2208\u211d : \u210e(\ud835\udc65\ud835\udc65) = 6\ud835\udc5a\ud835\udc5a \ud835\udc65\ud835\udc652 \u22124\ud835\udc5f\ud835\udc5f \ud835\udc65\ud835\udc65+ 54\ud835\udc5a\ud835\udc5a (i) The equation \u210e(\ud835\udc65\ud835\udc65) = 0 has exactly one solution. Use this to show that \ud835\udc5f\ud835\udc5f= 9\ud835\udc5a\ud835\udc5a. (ii) Use the "
+  "description": "The question as printed on the paper \u2014 (b) \u210e(\ud835\udc65\ud835\udc65) is the following function of \ud835\udc65\ud835\udc65, where \ud835\udc5a\ud835\udc5a and \ud835\udc5f\ud835\udc5f are positive constants and \ud835\udc65\ud835\udc65\u2208\u211d : \u210e(\ud835\udc65\ud835\udc65) = 6\ud835\udc5a\ud835\udc5a \ud835\udc65\ud835\udc652 \u22124\ud835\udc5f\ud835\udc5f \ud835\udc65\ud835\udc65+ 54\ud835\udc5a\ud835\udc5a (ii) Use the fact that \ud835\udc5f\ud835\udc5f= 9\ud835\udc5a\ud835\udc5a to find the value of this solution."
  },
  {
   "file": "maths-2025-HL-ask-p1-q7-a-i.png",
@@ -4848,7 +4848,7 @@
   "kind": "figure",
   "truncated": false,
   "questionRef": "2025 HL Paper 2 Q4(a)(ii)",
-  "description": "The question as printed on the paper \u2014 (a) The ages of twelve people in a class are given below. They are in ascending order, and \ud835\udc65\ud835\udc65\u2208\u2115. 11 12 12 14 15 \ud835\udc65\ud835\udc65 18 18 19 22 25 30 (i) The median age is 17\u22195. Find the value of \ud835\udc65\ud835\udc65. (ii) The first quartile (\ud835\udc44\ud835\udc441) is 13. "
+  "description": "The question as printed on the paper \u2014 (a) The ages of twelve people in a class are given below. They are in ascending order, and \ud835\udc65\ud835\udc65\u2208\u2115. 11 12 12 14 15 \ud835\udc65\ud835\udc65 18 18 19 22 25 30 (ii) The first quartile (\ud835\udc44\ud835\udc441) is 13. Work out the interquartile range of the ages."
  },
  {
   "file": "maths-2025-HL-ask-p2-q4-b.png",
