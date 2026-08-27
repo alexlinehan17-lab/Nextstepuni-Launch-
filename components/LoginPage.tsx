@@ -20,6 +20,7 @@ import { logError } from '../utils/logError';
 import { trackFunnel } from '../utils/funnel';
 import { isReservedEmail, isVerifiedAdminSession } from '../utils/adminIdentity';
 import { beginStaffProvisioning, endStaffProvisioning } from '../utils/staffProvisioning';
+import { beginRegistrationProvisioning, endRegistrationProvisioning } from '../utils/registrationProvisioning';
 import { SCHOOLS } from '../schoolData';
 import { createDemoStudentSession } from '../data/devStudent';
 import { MAX_PASSWORD_LENGTH, MIN_PASSWORD_LENGTH, passwordLengthError } from '../utils/passwordPolicy';
@@ -669,6 +670,11 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
     // reaped. The write itself does not -- see the catch.
     let userDocStarted = false;
     try {
+      // Hold the router BEFORE the account exists. createUserWithEmailAndPassword
+      // signs the student in immediately, and AuthContext's no-user-doc fallback
+      // then routes them into Onboarding ~1s later -- while the rollback below can
+      // still delete the account underneath them. See utils/registrationProvisioning.
+      beginRegistrationProvisioning();
       const cred = await createUserWithEmailAndPassword(auth, registrationEmail, password);
       createdUser = cred.user;
       await updateProfile(createdUser, { displayName: name.trim() });
@@ -794,6 +800,11 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       } else {
         setError('Registration failed. Try again.');
       }
+    } finally {
+      // Always release the hold: on success, on a handled failure, and on the
+      // early return in the catch. A marker left set would sit a later student
+      // on a spinner until it self-expires.
+      endRegistrationProvisioning();
     }
     setIsLoading(false);
   };
