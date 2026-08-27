@@ -117,28 +117,72 @@ const SUBJECT_HEX: Record<string, string> = {
 };
 
 /**
- * Which ink to put on a subject's colour.
+ * Deepen a subject's colour until white text clears AA on it.
  *
- * The subject palette sits at Tailwind's 500 level, which is mid-luminance:
- * white text clears AA on only 6 of the 30 subjects and lands as low as 2.2:1
- * on the yellows. Picking whichever ink has more contrast clears 27 of them.
- * The three that clear neither (Mathematics, Applied Maths, History — all
- * mid-violet) still get the better of the two.
+ * The raw palette sits at Tailwind's 500 level, which is mid-luminance. Ink
+ * chosen per-subject (white on the dark ones, near-black on the light ones)
+ * was accessible but read badly: 22 of the 30 subjects got near-black text,
+ * so a timetable of six subjects was a patchwork of two different label
+ * styles, and the black-on-yellow and black-on-lime chips looked muddy.
+ *
+ * Deepening the fill instead means one ink everywhere. The hue is preserved,
+ * so a subject stays recognisably "its" colour; only lightness comes down,
+ * with saturation damped slightly in step so the result reads as a rich tone
+ * rather than a neon one. Subjects that already clear AA (the greys, the
+ * blues, the violets) come back untouched.
  */
-export function subjectInk(fillHex: string): string {
+const SUBJECT_FILL_CACHE = new Map<string, string>();
+
+export function subjectFill(rawHex: string): string {
+  const cached = SUBJECT_FILL_CACHE.get(rawHex);
+  if (cached) return cached;
+
   const lin = (v: number) => (v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4));
-  const lum = (hex: string) => {
+  const contrastWithWhite = (hex: string) => {
     const [r, g, b] = [1, 3, 5].map(i => lin(parseInt(hex.slice(i, i + 2), 16) / 255));
-    return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+    const l = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+    return 1.05 / (l + 0.05);
   };
-  const against = (ink: string) => {
-    const [a, b] = [lum(ink), lum(fillHex)].sort((x, y) => y - x);
-    return (a + 0.05) / (b + 0.05);
+
+  const toHsl = (hex: string): [number, number, number] => {
+    const [r, g, b] = [1, 3, 5].map(i => parseInt(hex.slice(i, i + 2), 16) / 255);
+    const max = Math.max(r, g, b), min = Math.min(r, g, b);
+    const l = (max + min) / 2;
+    if (max === min) return [0, 0, l];
+    const d = max - min;
+    const s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+    const h = max === r ? ((g - b) / d + (g < b ? 6 : 0))
+      : max === g ? (b - r) / d + 2
+        : (r - g) / d + 4;
+    return [h / 6, s, l];
   };
-  // The token, not the literal. The dark compat layer rewrites an inline
-  // `color: #1A1A1A` onto --ink-primary on the assumption it is legacy
-  // light-mode text, which turns the label near-white on a mid-tone chip.
-  return against('#FFFFFF') >= against('#1A1A1A') ? '#FFFFFF' : 'var(--ink-on-accent)';
+
+  const toHex = (h: number, s: number, l: number): string => {
+    const f = (n: number) => {
+      const k = (n + h * 12) % 12;
+      const a = s * Math.min(l, 1 - l);
+      const v = l - a * Math.max(-1, Math.min(k - 3, 9 - k, 1));
+      return Math.round(v * 255).toString(16).padStart(2, '0');
+    };
+    return `#${f(0)}${f(8)}${f(4)}`;
+  };
+
+  // 4.6 rather than a bare 4.5, so rounding to 8-bit channels cannot drop a
+  // subject back under AA.
+  const TARGET = 4.6;
+  const SATURATION_DAMP = 0.35;
+  const [h, s, l] = toHsl(rawHex);
+
+  let out = rawHex;
+  for (let step = 0; step <= 100; step++) {
+    const f = step / 100;
+    const candidate = step === 0 ? rawHex : toHex(h, s * (1 - f * SATURATION_DAMP), l * (1 - f));
+    if (contrastWithWhite(candidate) >= TARGET) { out = candidate; break; }
+    out = candidate;
+  }
+
+  SUBJECT_FILL_CACHE.set(rawHex, out);
+  return out;
 }
 
 function getSubjectHexColor(name: string): string {
@@ -202,6 +246,8 @@ const StudyBlockCard: React.FC<{
   }
 
   const hex = getSubjectHexColor(block.subjectName);
+  // Deepened so one ink (white) carries every subject — see subjectFill.
+  const fill = subjectFill(hex);
   const TypeIcon = typeConfig.icon;
 
   const inner = completed ? (
@@ -218,15 +264,14 @@ const StudyBlockCard: React.FC<{
       </div>
     </div>
   ) : (
-    <div className="rounded-xl overflow-hidden" style={{ border: `1px solid ${hex}20`, borderRadius: 12 }}>
+    <div className="rounded-xl overflow-hidden" style={{ border: `1px solid ${fill}20`, borderRadius: 12 }}>
       {/* Coloured header strip */}
-      <div className="flex items-center justify-between px-3 py-2" style={{ backgroundColor: hex, color: subjectInk(hex) }}>
+      <div className="flex items-center justify-between px-3 py-2" style={{ backgroundColor: fill, color: '#FFFFFF' }}>
         <span className="text-[13px] font-bold truncate">{block.subjectName}</span>
-        {/* The badge tints the chip it sits on, so the overlay has to move the
-            background AWAY from the ink -- darken under white ink, lighten under
-            dark ink. Tinting toward the ink dropped 17 of the 33 subject
-            colours below 4.5:1. */}
-        <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full flex-shrink-0 ml-2" style={{ backgroundColor: subjectInk(hex) === '#FFFFFF' ? 'rgba(0,0,0,0.18)' : 'rgba(255,255,255,0.30)', color: subjectInk(hex) }}>
+        {/* The badge tints the chip it sits on, so the overlay moves the
+            background away from the ink — always darker, since the ink is
+            always white now that the fill is deepened to carry it. */}
+        <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full flex-shrink-0 ml-2" style={{ backgroundColor: 'rgba(0,0,0,0.18)', color: '#FFFFFF' }}>
           <span className="flex items-center gap-1"><TypeIcon size={10} />{typeConfig.label}</span>
         </span>
       </div>
@@ -242,7 +287,7 @@ const StudyBlockCard: React.FC<{
               onClick={(e) => { e.stopPropagation(); onStudyNow(); }}
               className="relative z-20 flex items-center gap-1 text-[11px] font-bold px-2.5 py-1 rounded-lg"
               aria-label={`Study ${block.subjectName} now`}
-              style={{ backgroundColor: hex, color: subjectInk(hex) }}
+              style={{ backgroundColor: fill, color: '#FFFFFF' }}
             >
               Study <ArrowRight size={10} />
             </button>
@@ -1004,16 +1049,20 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                             onClick={() => { setViewMode('day'); setSelectedDay(i); }}
                             className="w-full text-left rounded-lg transition-all hover:opacity-90 overflow-hidden"
                             style={{
-                              backgroundColor: isCompleted ? 'rgba(107,143,113,0.1)' : getSubjectHexColor(block.subjectName),
+                              backgroundColor: isCompleted ? 'rgba(107,143,113,0.1)' : subjectFill(getSubjectHexColor(block.subjectName)),
                               borderRadius: 8,
                               opacity: isCompleted ? 0.6 : 1,
                             }}
                           >
                             <div className="px-2 py-1.5">
-                              <span className={`text-[11px] font-bold truncate block ${isCompleted ? 'line-through' : ''}`} style={{ color: isCompleted ? '#4F7256' : subjectInk(getSubjectHexColor(block.subjectName)) }}>
+                              <span className={`text-[11px] font-bold truncate block ${isCompleted ? 'line-through' : ''}`} style={{ color: isCompleted ? '#4F7256' : '#FFFFFF' }}>
                                 {block.subjectName}
                               </span>
-                              <span className="text-[9px] block" style={{ color: isCompleted ? '#4F7256' : 'rgba(255,255,255,0.7)' }}>
+                              {/* Was hardcoded white while the name above used a
+                                  per-subject ink, so on the light subjects this
+                                  sat white-on-yellow under near-black text.
+                                  One ink now, and 0.85 keeps it legible. */}
+                              <span className="text-[9px] block" style={{ color: isCompleted ? '#4F7256' : 'rgba(255,255,255,0.85)' }}>
                                 {SESSION_TYPE_CONFIG[block.sessionType].label}
                               </span>
                             </div>
