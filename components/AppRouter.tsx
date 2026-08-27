@@ -10,6 +10,7 @@ import { useNavigation } from '../contexts/NavigationContext';
 import { useAuth } from '../contexts/AuthContext';
 import { type SessionUser, isLcaYear, isSchoolStaff } from '../utils/authUtils';
 import { endStaffProvisioning, isStaffProvisioning } from '../utils/staffProvisioning';
+import { isRegistrationProvisioning } from '../utils/registrationProvisioning';
 import { LoadingSpinner } from './LoadingSpinner';
 import { KnowledgeTree, type CategoryType } from './KnowledgeTree';
 import { Library } from './Library';
@@ -330,6 +331,12 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     // instead; the flow reloads into the Staff Dashboard when it resolves, and
     // the marker self-expires so a failed attempt cannot strand a real student.
     if (isStaffProvisioning()) return <LoadingSpinner />;
+    // Same hold for a student mid-registration. They are signed in, but the
+    // registration flow has not yet reached the users/{uid} write, so a rejected
+    // join code or callable can still roll the account back with deleteUser().
+    // Showing Onboarding here is what let that rollback evict a student who was
+    // two steps in, and drop them on a fresh LoginPage with no error.
+    if (isRegistrationProvisioning()) return <LoadingSpinner />;
     return (
       <Suspense fallback={<LoadingSpinner />}>
         <Onboarding userId={user.uid} userName={user.name} onComplete={handleOnboardingComplete} onSkip={handleOnboardingSkip} mode={transitionToSeniorMode ? "transition-to-senior" : "fresh"} transitionTargetYear={transitionTargetYear} />
