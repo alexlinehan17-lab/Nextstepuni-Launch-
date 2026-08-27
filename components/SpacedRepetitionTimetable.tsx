@@ -101,7 +101,8 @@ function getSubjectColor(name: string) {
   return SUBJECT_COLORS[name] || DEFAULT_COLOR;
 }
 
-const SUBJECT_HEX: Record<string, string> = {
+/** Exported so the contrast test drives off the real palette, not a copy of it. */
+export const SUBJECT_HEX: Record<string, string> = {
   'English': '#3b82f6', 'Irish': '#10b981', 'Mathematics': '#6366f1',
   'French': '#0ea5e9', 'German': '#eab308', 'Spanish': '#f97316',
   'Italian': '#ef4444', 'Japanese': '#ec4899', 'Physics': '#06b6d4',
@@ -116,69 +117,96 @@ const SUBJECT_HEX: Record<string, string> = {
   'Design & Communication Graphics': '#818cf8',
 };
 
+const relativeLuminance = (hex: string): number => {
+  const lin = (v: number) => (v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4));
+  const [r, g, b] = [1, 3, 5].map(i => lin(parseInt(hex.slice(i, i + 2), 16) / 255));
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+};
+
+const contrastWithWhite = (hex: string): number => 1.05 / (relativeLuminance(hex) + 0.05);
+
+const toHsl = (hex: string): [number, number, number] => {
+  const [r, g, b] = [1, 3, 5].map(i => parseInt(hex.slice(i, i + 2), 16) / 255);
+  const max = Math.max(r, g, b), min = Math.min(r, g, b);
+  const l = (max + min) / 2;
+  if (max === min) return [0, 0, l];
+  const d = max - min;
+  const s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+  const h = max === r ? ((g - b) / d + (g < b ? 6 : 0))
+    : max === g ? (b - r) / d + 2
+      : (r - g) / d + 4;
+  return [h / 6, s, l];
+};
+
+const hslToHex = (h: number, s: number, l: number): string => {
+  const f = (n: number) => {
+    const k = (n + h * 12) % 12;
+    const a = s * Math.min(l, 1 - l);
+    const v = l - a * Math.max(-1, Math.min(k - 3, 9 - k, 1));
+    return Math.round(v * 255).toString(16).padStart(2, '0');
+  };
+  return `#${f(0)}${f(8)}${f(4)}`;
+};
+
 /**
- * Deepen a subject's colour until white text clears AA on it.
+ * Per-subject contrast targets, spread rather than flat.
+ *
+ * Deepening every subject to the SAME contrast necessarily lands them all on
+ * the same luminance — contrast against white is a function of luminance — so
+ * a flat target squeezed the whole palette into one band and collapsed pairs
+ * that had only ever been separated by lightness: Japanese and Music came out
+ * 4 RGB units apart, Accounting and Economics 8. Chip colour is the
+ * at-a-glance subject cue on the week grid, so that was a real loss.
+ *
+ * Spreading the target across the palette in the palette's own lightness order
+ * keeps the relative ordering and restores the separation, while still putting
+ * every subject clear of AA. Originally-lighter subjects get the nearest
+ * target, so they move least.
+ */
+const MIN_TARGET = 4.6;   // 4.6 not 4.5, so 8-bit rounding cannot drop below AA
+const MAX_TARGET = 7.2;
+const SATURATION_DAMP = 0.35;
+
+const FILL_TARGETS: Map<string, number> = (() => {
+  const targets = new Map<string, number>();
+  const palette = Array.from(new Set(Object.values(SUBJECT_HEX)))
+    .sort((a, b) => relativeLuminance(b) - relativeLuminance(a));
+  const span = Math.max(palette.length - 1, 1);
+  palette.forEach((hex, i) => targets.set(hex, MIN_TARGET + (MAX_TARGET - MIN_TARGET) * (i / span)));
+  return targets;
+})();
+
+const SUBJECT_FILL_CACHE = new Map<string, string>();
+
+/**
+ * Deepen a subject's colour so white text reads on it.
  *
  * The raw palette sits at Tailwind's 500 level, which is mid-luminance. Ink
  * chosen per-subject (white on the dark ones, near-black on the light ones)
- * was accessible but read badly: 22 of the 30 subjects got near-black text,
- * so a timetable of six subjects was a patchwork of two different label
- * styles, and the black-on-yellow and black-on-lime chips looked muddy.
+ * was accessible but read badly: 22 of the 30 subjects got near-black text, so
+ * a timetable of six subjects was a patchwork of two label styles, and the
+ * black-on-yellow and black-on-lime chips looked muddy.
  *
- * Deepening the fill instead means one ink everywhere. The hue is preserved,
- * so a subject stays recognisably "its" colour; only lightness comes down,
- * with saturation damped slightly in step so the result reads as a rich tone
- * rather than a neon one. Subjects that already clear AA (the greys, the
- * blues, the violets) come back untouched.
+ * Deepening the fill instead means one ink everywhere. Hue is preserved, so a
+ * subject stays recognisably "its" colour; lightness comes down to its target
+ * above, with saturation damped in step so the result reads as a rich tone
+ * rather than a neon one. Only the six subjects that already sit at or past
+ * their target — the four greys, Construction Studies and Technology — come
+ * back unchanged.
  */
-const SUBJECT_FILL_CACHE = new Map<string, string>();
-
 export function subjectFill(rawHex: string): string {
   const cached = SUBJECT_FILL_CACHE.get(rawHex);
   if (cached) return cached;
 
-  const lin = (v: number) => (v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4));
-  const contrastWithWhite = (hex: string) => {
-    const [r, g, b] = [1, 3, 5].map(i => lin(parseInt(hex.slice(i, i + 2), 16) / 255));
-    const l = 0.2126 * r + 0.7152 * g + 0.0722 * b;
-    return 1.05 / (l + 0.05);
-  };
-
-  const toHsl = (hex: string): [number, number, number] => {
-    const [r, g, b] = [1, 3, 5].map(i => parseInt(hex.slice(i, i + 2), 16) / 255);
-    const max = Math.max(r, g, b), min = Math.min(r, g, b);
-    const l = (max + min) / 2;
-    if (max === min) return [0, 0, l];
-    const d = max - min;
-    const s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
-    const h = max === r ? ((g - b) / d + (g < b ? 6 : 0))
-      : max === g ? (b - r) / d + 2
-        : (r - g) / d + 4;
-    return [h / 6, s, l];
-  };
-
-  const toHex = (h: number, s: number, l: number): string => {
-    const f = (n: number) => {
-      const k = (n + h * 12) % 12;
-      const a = s * Math.min(l, 1 - l);
-      const v = l - a * Math.max(-1, Math.min(k - 3, 9 - k, 1));
-      return Math.round(v * 255).toString(16).padStart(2, '0');
-    };
-    return `#${f(0)}${f(8)}${f(4)}`;
-  };
-
-  // 4.6 rather than a bare 4.5, so rounding to 8-bit channels cannot drop a
-  // subject back under AA.
-  const TARGET = 4.6;
-  const SATURATION_DAMP = 0.35;
+  const target = FILL_TARGETS.get(rawHex) ?? MIN_TARGET;
   const [h, s, l] = toHsl(rawHex);
 
   let out = rawHex;
   for (let step = 0; step <= 100; step++) {
     const f = step / 100;
-    const candidate = step === 0 ? rawHex : toHex(h, s * (1 - f * SATURATION_DAMP), l * (1 - f));
-    if (contrastWithWhite(candidate) >= TARGET) { out = candidate; break; }
+    const candidate = step === 0 ? rawHex : hslToHex(h, s * (1 - f * SATURATION_DAMP), l * (1 - f));
     out = candidate;
+    if (contrastWithWhite(candidate) >= target) break;
   }
 
   SUBJECT_FILL_CACHE.set(rawHex, out);
@@ -361,7 +389,7 @@ const PriorityRow: React.FC<{ alloc: SessionAllocation; maxSessions: number }> =
       <div className="flex-1 h-3 rounded-full overflow-hidden" style={{ backgroundColor: '#EDEAE6' }}>
         <motion.div
           className="h-full rounded-full"
-          style={{ backgroundColor: getSubjectHexColor(alloc.subjectName) }}
+          style={{ backgroundColor: subjectFill(getSubjectHexColor(alloc.subjectName)) }}
           initial={{ width: 0 }}
           animate={{ width: `${barWidth}%` }}
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
@@ -1060,9 +1088,11 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                               </span>
                               {/* Was hardcoded white while the name above used a
                                   per-subject ink, so on the light subjects this
-                                  sat white-on-yellow under near-black text.
-                                  One ink now, and 0.85 keeps it legible. */}
-                              <span className="text-[9px] block" style={{ color: isCompleted ? '#4F7256' : 'rgba(255,255,255,0.85)' }}>
+                                  sat white-on-yellow under near-black text. Full
+                                  white, not a translucent one: at 9px an alpha
+                                  white measured 3.6-4.2:1 and still failed AA,
+                                  and the fill is deepened to carry pure white. */}
+                              <span className="text-[9px] block" style={{ color: isCompleted ? '#4F7256' : '#FFFFFF' }}>
                                 {SESSION_TYPE_CONFIG[block.sessionType].label}
                               </span>
                             </div>
@@ -1201,7 +1231,7 @@ const SpacedRepetitionTimetable: React.FC<SpacedRepetitionTimetableProps> = ({ p
                         <div className="h-1.5 rounded-full overflow-hidden mb-2.5" style={{ backgroundColor: '#EDEAE6' }}>
                           <motion.div
                             className="h-full rounded-full"
-                            style={{ backgroundColor: getSubjectHexColor(p.subjectName) }}
+                            style={{ backgroundColor: subjectFill(getSubjectHexColor(p.subjectName)) }}
                             initial={{ width: 0 }}
                             animate={{ width: `${barPct}%` }}
                             transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}

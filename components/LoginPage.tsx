@@ -20,7 +20,12 @@ import { logError } from '../utils/logError';
 import { trackFunnel } from '../utils/funnel';
 import { isReservedEmail, isVerifiedAdminSession } from '../utils/adminIdentity';
 import { beginStaffProvisioning, endStaffProvisioning } from '../utils/staffProvisioning';
-import { beginRegistrationProvisioning, endRegistrationProvisioning } from '../utils/registrationProvisioning';
+import {
+  beginRegistrationProvisioning,
+  endRegistrationProvisioning,
+  stashRegistrationError,
+  takeRegistrationError,
+} from '../utils/registrationProvisioning';
 import { SCHOOLS } from '../schoolData';
 import { createDemoStudentSession } from '../data/devStudent';
 import { MAX_PASSWORD_LENGTH, MIN_PASSWORD_LENGTH, passwordLengthError } from '../utils/passwordPolicy';
@@ -288,7 +293,11 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const [staffCode, setStaffCode] = useState('');
   const [avatar, setAvatar] = useState('');
   const [showPassword, setShowPassword] = useState(false);
-  const [error, setError] = useState('');
+  // A failed registration deletes the account it just created, which signs the
+  // student out and unmounts THIS component -- so setError below lands on a
+  // dead instance and the replacement renders blank. That silent bounce is the
+  // symptom students actually reported. Hand the message to the next instance.
+  const [error, setError] = useState(() => takeRegistrationError());
   const [isLoading, setIsLoading] = useState(false);
   const [resetSent, setResetSent] = useState(false);
   const [resendCountdown, setResendCountdown] = useState(0);
@@ -779,26 +788,38 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       if (shouldReapAccount({ hasAccount: !!createdUser, userDocStarted })) {
         try { await deleteUser(createdUser); } catch (rollbackErr) {
           console.error('Failed to clean up auth account after registration failure:', rollbackErr);
+          // deleteUser failing is CORRELATED with the failure that triggered the
+          // reap -- a dropped connection causes both. Recovery from the router
+          // hold depends on an auth-state change, and a swallowed rejection
+          // produces none, which would leave the student on a spinner with no
+          // way out. Sign out instead: same escape the staff flow uses above.
+          await signOut(auth).catch(() => {});
         }
       }
       const msg = String(err?.message || '');
+      // If the account was reaped, this component is already unmounted and
+      // setError paints nothing -- so stash the message too. Whichever
+      // instance is alive shows it; takeRegistrationError clears it either way.
+      const report = (message: string, step?: 1 | 2) => {
+        stashRegistrationError(message);
+        setError(message);
+        if (step) setRegisterStep(step);
+      };
       if (err.code === 'auth/weak-password') {
-        setError(`Password must be at least ${MIN_PASSWORD_LENGTH} characters.`);
-        setRegisterStep(2);
+        report(`Password must be at least ${MIN_PASSWORD_LENGTH} characters.`, 2);
       } else if (err.code === 'auth/email-already-in-use') {
-        setError('An account with this email already exists. Try signing in instead.');
-        setRegisterStep(1);
+        report('An account with this email already exists. Try signing in instead.', 1);
       } else if (err.code === 'auth/invalid-email') {
-        setError('Please enter a valid email address.');
-        setRegisterStep(1);
+        report('Please enter a valid email address.', 1);
       } else if (/join code is not correct/i.test(msg)) {
-        setError('That school join code is not correct. Check the code from your school.');
-        setRegisterStep(1);
+        report('That school join code is not correct. Check the code from your school.', 1);
+      } else if (/not been set up for this school/i.test(msg)) {
+        // The unprovisioned-school case: nothing the student can fix by retyping.
+        report('Your school has not set up a join code yet. Ask your guidance counsellor for the current code.', 1);
       } else if (/Too many attempts/i.test(msg)) {
-        setError('Too many attempts. Please wait a few minutes and try again.');
-        setRegisterStep(1);
+        report('Too many attempts. Please wait a few minutes and try again.', 1);
       } else {
-        setError('Registration failed. Try again.');
+        report('Registration failed. Try again.');
       }
     } finally {
       // Always release the hold: on success, on a handled failure, and on the
