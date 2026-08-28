@@ -32,7 +32,17 @@ export const claimStudentSchool = onCall(CALLABLE_OPTIONS, async (request) => {
   if (!isSupportedSchoolId(school)) {
     throw new HttpsError("invalid-argument", "A valid school is required.");
   }
-  if (!code || typeof code !== "string" || code.length < 10 || code.length > 64) {
+  // Floor is 8, not the 10 the generated codes imply, so a school can set a
+  // short human-memorable join code of its own rather than distributing the
+  // 14-character generated one. Note this is the length BEFORE
+  // normaliseAccessCode strips punctuation, so a code's real entropy is only
+  // its alphanumerics -- "Marino01!" is eight characters of secret, not nine.
+  //
+  // Deliberately student-only. The staff code (staffAccess.ts) keeps its floor
+  // of 10: it grants access to school-wide student records, where this one only
+  // binds a new account to a school. The brute-force throttle below (6 failures
+  // per 15 minutes per account) is what makes a short code tolerable here.
+  if (!code || typeof code !== "string" || code.length < 8 || code.length > 64) {
     throw new HttpsError("invalid-argument", "A valid join code is required.");
   }
 
