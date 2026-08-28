@@ -13,13 +13,13 @@ import SiteGuide, { type GuideAction } from './SiteGuide';
 import FirstVisitCoachMarks, { coachMarksSeen } from './FirstVisitCoachMarks';
 import ResumeCard from './ResumeCard';
 import FeedbackModal from './FeedbackModal';
-import { getAvatarUrl } from '../utils/authUtils';
 import { type CourseData } from './Library';
 import { type UserSettings } from '../types';
 import { toDateKey } from './subjectData';
 import { getSubjectHex } from '../utils/subjectColors';
 import { SectionCard } from './SectionCard';
 import { ModulesIcon, InnovationZoneIcon, MyProgressIcon, LearningPathsIcon, MyJourneyIcon } from './sectionIcons';
+import Avatar from './Avatar';
 import { COLORS } from '../design/tokens';
 import { toggleNotificationPanel } from '../utils/notificationPanel';
 
@@ -276,7 +276,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
         >
           <div className="w-9 h-9 rounded-xl border-[1.5px] border-[#383838] overflow-hidden shrink-0 bg-white dark:bg-zinc-700 flex items-center justify-center">
             {userAvatarSeed ? (
-              <img src={getAvatarUrl(userAvatarSeed)} alt="Avatar" className="w-full h-full object-cover" />
+              <Avatar seed={userAvatarSeed} alt="Avatar" className="w-full h-full object-cover" />
             ) : (
               <User size={18} strokeWidth={1.5} className="text-zinc-400 dark:text-zinc-500" />
             )}
