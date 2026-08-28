@@ -301,6 +301,31 @@ async function writeUserDoc(
 const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   // ── Top-level mode ──
   const [view, setView] = useState<'welcome' | 'login' | 'register' | 'gc' | 'staff' | 'forgot'>('welcome');
+
+  // Boot the join-code function while the student is still typing.
+  //
+  // claimStudentSchool is the only callable on the signup path and it scales to
+  // zero: measured 3.02s cold against 0.165s warm, and every bit of that sits
+  // behind the "Setting up your account" screen, because registration cannot
+  // call it any earlier — it needs an account that does not exist yet. What it
+  // CAN do is start the container early. This ping is rejected by the very
+  // first line of the function (`if (!request.auth) throw unauthenticated`),
+  // before it reads Firestore, touches the brute-force counter or opens a
+  // transaction, so it has no side effect whatsoever; the rejection is the
+  // expected outcome and the boot is the point. Filling in name, email,
+  // password, school and join code takes far longer than the ~3s boot, so by
+  // submit time the container is warm.
+  //
+  // This is the cheap half of the cold-start fix. The other half is
+  // minInstances on the function, which removes the cold start for everyone
+  // (including the first GC of the morning) but bills continuously — an
+  // owner's call, not one to make in a patch.
+  const prewarmedRef = useRef(false);
+  useEffect(() => {
+    if (view !== 'register' || prewarmedRef.current) return;
+    prewarmedRef.current = true;
+    httpsCallable(getFunctions(app), 'claimStudentSchool')({}).catch(() => {});
+  }, [view]);
   const [registerStep, setRegisterStep] = useState(1); // 1: email+name+school, 2: password, 3: avatar
 
   // ── Form state ──
