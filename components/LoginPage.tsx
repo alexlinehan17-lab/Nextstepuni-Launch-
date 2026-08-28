@@ -301,6 +301,31 @@ async function writeUserDoc(
 const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   // ── Top-level mode ──
   const [view, setView] = useState<'welcome' | 'login' | 'register' | 'gc' | 'staff' | 'forgot'>('welcome');
+
+  // Boot the join-code function while the student is still typing.
+  //
+  // claimStudentSchool is the only callable on the signup path and it scales to
+  // zero: measured 3.02s cold against 0.165s warm, and every bit of that sits
+  // behind the "Setting up your account" screen, because registration cannot
+  // call it any earlier — it needs an account that does not exist yet. What it
+  // CAN do is start the container early. This ping is rejected by the very
+  // first line of the function (`if (!request.auth) throw unauthenticated`),
+  // before it reads Firestore, touches the brute-force counter or opens a
+  // transaction, so it has no side effect whatsoever; the rejection is the
+  // expected outcome and the boot is the point. Filling in name, email,
+  // password, school and join code takes far longer than the ~3s boot, so by
+  // submit time the container is warm.
+  //
+  // This is the cheap half of the cold-start fix. The other half is
+  // minInstances on the function, which removes the cold start for everyone
+  // (including the first GC of the morning) but bills continuously — an
+  // owner's call, not one to make in a patch.
+  const prewarmedRef = useRef(false);
+  useEffect(() => {
+    if (view !== 'register' || prewarmedRef.current) return;
+    prewarmedRef.current = true;
+    httpsCallable(getFunctions(app), 'claimStudentSchool')({}).catch(() => {});
+  }, [view]);
   const [registerStep, setRegisterStep] = useState(1); // 1: email+name+school, 2: password, 3: avatar
 
   // ── Form state ──
@@ -708,9 +733,16 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       // then routes them into Onboarding ~1s later -- while the rollback below can
       // still delete the account underneath them. See utils/registrationProvisioning.
       beginRegistrationProvisioning();
+      // Warm the onboarding chunk while the account is being provisioned. Every
+      // student who gets past this line lands in Onboarding, and AppRouter
+      // lazy-loads it — so without this the 44KB fetch starts only once the
+      // setup screen finally clears, adding itself to the end of the wait
+      // instead of overlapping it. Same module specifier as AppRouter's lazy()
+      // import, so this populates the very module the router then asks for.
+      // Fire-and-forget: a failed prefetch just means the normal lazy load runs.
+      void import('./Onboarding').catch(() => {});
       const cred = await createUserWithEmailAndPassword(auth, registrationEmail, password);
       createdUser = cred.user;
-      await updateProfile(createdUser, { displayName: name.trim() });
       // Send a verification email (fire-and-forget) so the address is provable.
       // Non-blocking: registration still proceeds (security review 2026-07-16,
       // L-5). Deliverability failures must not block sign-up.
@@ -720,8 +752,31 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       // client — the /users rules forbid a client-supplied school. A wrong code
       // throws here and the account is rolled back below.
       const joinFn = httpsCallable<{ school: string; code: string }, { success: boolean }>(getFunctions(app), 'claimStudentSchool');
-      await joinFn({ school, code: joinCode.trim() });
-      await createdUser.getIdToken(true);
+      // Concurrent, not sequential. Neither reads the other's result, so
+      // awaiting them in series bought nothing but a round trip the student
+      // spends staring at a setup screen.
+      //
+      // Both are still awaited, because the account-rollback below keys off
+      // whether we got this far. Note what awaiting does NOT buy: it does not
+      // order updateProfile against AuthContext's displayName fallback.
+      // onAuthStateChanged does not re-fire for a profile update — it notifies
+      // only when the uid changes — so AuthContext samples displayName exactly
+      // once per sign-in, whenever its own read settles, and nothing here can
+      // move that. The fallback race is pre-existing and unchanged either way.
+      await Promise.all([
+        updateProfile(createdUser, { displayName: name.trim() }),
+        joinFn({ school, code: joinCode.trim() }),
+      ]);
+      // No getIdToken(true) here, deliberately. It was copied from the staff
+      // path, where claimStaffAccess DOES set role/school custom claims and the
+      // token genuinely must be refreshed to see them. claimStudentSchool sets
+      // no claim at all — syncAuthorizationClaims mirrors role and school into a
+      // token only for 'gc' and 'staff', and explicitly deletes both for a
+      // student, because student tenancy is resolved from the live user document
+      // instead. So the refreshed token was byte-for-byte equivalent in every
+      // claim the app reads: a full round trip to securetoken.googleapis.com
+      // that could not change any decision, on the critical path of every
+      // signup. If a student claim is ever introduced, this has to come back.
       const userDocPayload = {
         name: name.trim(),
         avatar: selectedAvatar,
@@ -765,6 +820,14 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         );
       };
       userDocStarted = true;
+      // The rollback is disarmed the instant this flag flips — shouldReapAccount
+      // returns false from here on — so the router hold has nothing left to
+      // protect against and can come down now rather than after the write.
+      // writeUserDoc waits on a SERVER acknowledgement (up to 8s on a poor
+      // connection), and making a student stare at a setup screen for that is
+      // pointless when the account is already safe. The finally below still
+      // clears the marker; this is just the earliest correct moment.
+      endRegistrationProvisioning();
       await writeUserDoc(
         setDoc(doc(db, 'users', createdUser.uid), userDocPayload, { merge: true }),
         'LoginPage.registerUserDoc',
