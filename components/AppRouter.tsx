@@ -10,6 +10,7 @@ import { useNavigation } from '../contexts/NavigationContext';
 import { useAuth } from '../contexts/AuthContext';
 import { type SessionUser, isLcaYear, isSchoolStaff } from '../utils/authUtils';
 import { endStaffProvisioning, isStaffProvisioning } from '../utils/staffProvisioning';
+import { isRegistrationProvisioning, registrationHoldRemainingMs } from '../utils/registrationProvisioning';
 import { LoadingSpinner } from './LoadingSpinner';
 import { KnowledgeTree, type CategoryType } from './KnowledgeTree';
 import { Library } from './Library';
@@ -202,8 +203,32 @@ export interface AppRouterProps {
   setUnlockedCardStyles: (styles: string[]) => void;
 }
 
+/**
+ * The registration hold, as state rather than a bare read.
+ *
+ * AppRouter holds no state of its own, so a marker read only during render
+ * would never be re-read when it clears or expires -- both are plain
+ * sessionStorage writes that schedule no React update. On the paths where no
+ * auth-state change follows (a rejected rollback, an orphaned marker) that
+ * would leave the student on a spinner with nothing to end it. Scheduling a
+ * repaint for the hold's remaining lifetime makes the expiry a real deadline.
+ */
+function useRegistrationHold(): boolean {
+  const [, bump] = useState(0);
+  const held = isRegistrationProvisioning();
+  useEffect(() => {
+    if (!held) return;
+    const remaining = registrationHoldRemainingMs();
+    if (remaining <= 0) { bump(n => n + 1); return; }
+    const timer = window.setTimeout(() => bump(n => n + 1), remaining + 50);
+    return () => window.clearTimeout(timer);
+  }, [held]);
+  return held;
+}
+
 const AppRouter: React.FC<AppRouterProps> = (props) => {
   const nav = useNavigation();
+  const registrationHeld = useRegistrationHold();
   const { updateDemoProgress, setTimetableCompletions, progressLoaded, progressDataUid } = useProgress();
   const { viewState, dashboardSection, currentCategory, currentModuleId, cameFromJourney } = nav.state;
   const { user, userResolved, needsOnboarding, handleLoginSuccess, handleLogout } = useAuth();
@@ -284,7 +309,14 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     );
   }
 
-  if (!user) {
+  // `|| registrationHeld` keeps LoginPage MOUNTED through registration, rather
+  // than swapping it for a spinner. createUserWithEmailAndPassword publishes a
+  // user about a second in, and the old gate then unmounted LoginPage while the
+  // flow was still running — so when a rejected join code set an error, it set
+  // it on a dead component and the student landed on a blank form with no
+  // reason given. That silent bounce is the reported symptom. Staying mounted
+  // means the form keeps its own in-flight state and its errors actually paint.
+  if (!user || registrationHeld) {
     return <Suspense fallback={<LoadingSpinner />}><LoginPage handleLoginSuccess={handleLoginSuccess} /></Suspense>;
   }
 
@@ -330,6 +362,10 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     // instead; the flow reloads into the Staff Dashboard when it resolves, and
     // the marker self-expires so a failed attempt cannot strand a real student.
     if (isStaffProvisioning()) return <LoadingSpinner />;
+    // A student mid-registration never reaches here — the gate above keeps
+    // LoginPage mounted for the whole window in which the rollback can still
+    // call deleteUser() on their live account. Left as a note rather than a
+    // second check, because duplicating the condition here would be dead code.
     return (
       <Suspense fallback={<LoadingSpinner />}>
         <Onboarding userId={user.uid} userName={user.name} onComplete={handleOnboardingComplete} onSkip={handleOnboardingSkip} mode={transitionToSeniorMode ? "transition-to-senior" : "fresh"} transitionTargetYear={transitionTargetYear} />

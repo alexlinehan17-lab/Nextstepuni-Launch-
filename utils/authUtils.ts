@@ -151,14 +151,28 @@ export function getAvatarUrl(seed: string): string {
   return `https://api.dicebear.com/9.x/notionists-neutral/svg?seed=${encodeURIComponent(seed)}&backgroundColor=d1e8d5,c4d5f2,f2d5c4,d5c4f2,f2e6c4,c4e8f2,f2c4d1,e8e4d1`;
 }
 
-/** Fallback avatar as a data URI — initials on a coloured circle. Used when DiceBear fails (e.g. offline). */
+/**
+ * Fallback avatar as a data URI — initials on a coloured disc. Used when
+ * DiceBear fails (offline, or a school network that blocks the CDN).
+ *
+ * TWO initials, not one. Four of the eight picker seeds begin with M — Mary
+ * Baker, Ma Rainey, Maud Nathan, Maya Angelou — so a single initial rendered
+ * them as the same avatar, and a student on a blocked network could not tell
+ * the options apart well enough to choose one. Two initials separate all eight,
+ * and read correctly for real names too.
+ */
 export function getAvatarFallback(seed: string): string {
-  const initial = (seed.charAt(0) || '?').toUpperCase();
+  const words = seed.trim().split(/\s+/).filter(Boolean);
+  const initials = (words.length > 1
+    ? `${words[0].charAt(0)}${words[1].charAt(0)}`
+    : (words[0] || '?').slice(0, 2)
+  ).toUpperCase() || '?';
   const colors = ['#2A7D6F', '#E84393', '#0984E3', '#E67E22', '#6C5CE7', '#00B894', '#D63031', '#FDCB6E'];
   let hash = 0;
   for (let i = 0; i < seed.length; i++) hash = seed.charCodeAt(i) + ((hash << 5) - hash);
   const bg = colors[Math.abs(hash) % colors.length];
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><circle cx="32" cy="32" r="32" fill="${bg}"/><text x="32" y="32" dy=".35em" text-anchor="middle" fill="#fff" font-family="DM Sans,sans-serif" font-size="28" font-weight="700">${initial}</text></svg>`;
+  const fontSize = initials.length > 1 ? 24 : 28;
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><circle cx="32" cy="32" r="32" fill="${bg}"/><text x="32" y="32" dy=".35em" text-anchor="middle" fill="#fff" font-family="DM Sans,sans-serif" font-size="${fontSize}" font-weight="700">${initials}</text></svg>`;
   return `data:image/svg+xml,${encodeURIComponent(svg)}`;
 }
 

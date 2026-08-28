@@ -11,8 +11,9 @@ import { X, Check, Lock, Sun, Moon, RefreshCw, LogOut, ChevronRight, Compass, Gr
 import { useModal } from '../hooks/useModal';
 import { LegalModal, type LegalDoc } from './legal/LegalModal';
 import { DataRightsModal } from './account/DataRightsModal';
-import { AVATAR_SEEDS, getAvatarUrl, nextYearAction, yearGroupLabel, yearGroupToCurriculumLevel } from '../utils/authUtils';
+import { AVATAR_SEEDS, nextYearAction, yearGroupLabel, yearGroupToCurriculumLevel } from '../utils/authUtils';
 import { type YearGroup } from './subjectData';
+import Avatar from './Avatar';
 
 const EXTRA_AVATAR_SEEDS = ['Luna', 'Kai', 'Suki', 'Dara', 'Nico', 'Asha', 'Finn', 'Yuki'];
 const AVATAR_PRICE_JP = 120;
@@ -160,7 +161,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                           : 'bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] hover:ring-zinc-300 dark:hover:ring-white/[0.15]'
                       }`}
                     >
-                      <img src={getAvatarUrl(seed)} alt={seed} className="w-full h-full rounded-lg" />
+                      <Avatar seed={seed} alt={seed} className="w-full h-full rounded-lg" />
                     </button>
                   ))}
                   {EXTRA_AVATAR_SEEDS.map(seed => {
@@ -198,8 +199,8 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                               : 'bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] hover:ring-[#383838] focus-visible:ring-[#383838]'
                           }`}
                         >
-                          <img
-                            src={getAvatarUrl(seed)}
+                          <Avatar
+                            seed={seed}
                             alt={seed}
                             className={`w-full h-full rounded-lg transition-all ${!isUnlocked ? 'grayscale opacity-35 group-hover:opacity-20 group-focus-within:opacity-20' : ''}`}
                           />

@@ -17,9 +17,9 @@ import {
 import { type CategoryType } from './KnowledgeTree';
 import { type NorthStar, type CardStyleId } from '../types';
 import { type StudentSubjectProfile } from './subjectData';
+import Avatar from './Avatar';
 import { useSettingsContext } from '../contexts/SettingsContext';
 import { CARD_STYLES } from '../themeData';
-import { getAvatarUrl } from '../utils/authUtils';
 import { toggleNotificationPanel } from '../utils/notificationPanel';
 // Lazy-loaded: ModuleShowcase pulls in ~442KB of subjectContent data; loading
 // it eagerly folded that into the entry chunk (audit 2026-06-01).
@@ -238,7 +238,7 @@ export const Library: React.FC<LibraryProps> = ({ title, courses, onSelectCourse
           >
             <div className="w-9 h-9 rounded-lg overflow-hidden shrink-0 bg-zinc-200 dark:bg-zinc-700 flex items-center justify-center">
               {userAvatarSeed ? (
-                <img src={getAvatarUrl(userAvatarSeed)} alt="Avatar" className="w-full h-full object-cover" />
+                <Avatar seed={userAvatarSeed} alt="Avatar" className="w-full h-full object-cover" />
               ) : (
                 <User size={18} strokeWidth={1.5} className="text-zinc-400 dark:text-zinc-500" />
               )}
