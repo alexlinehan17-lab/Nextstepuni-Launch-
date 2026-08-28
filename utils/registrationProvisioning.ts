@@ -113,32 +113,59 @@ export function isRegistrationProvisioning(now: number = Date.now()): boolean {
   return registrationHoldRemainingMs(now) > 0;
 }
 
-// ─── Carrying the failure message across the remount ────────────────────────
+// ─── Carrying the failure reason across the remount ─────────────────────────
 
 const ERROR_KEY = 'nsu:registration-error';
 
 /**
- * When a registration fails after the account was created, the rollback signs
- * the student out — which unmounts LoginPage before its setError can paint.
- * The replacement instance would render a blank form, so the student sees only
- * an unexplained bounce back to the login screen. Stash the message here and
- * let the next instance pick it up.
+ * Why a registration failed, as a code rather than a message.
+ *
+ * A code, deliberately: the copy is resolved at the point of render instead of
+ * being persisted. Storing the rendered text meant putting a string built from
+ * MIN_PASSWORD_LENGTH into sessionStorage, which is both a CodeQL
+ * clear-text-storage finding and the wrong shape — UI copy should not be
+ * durable state, and a message stashed by one build should not be replayed by
+ * the next.
  */
-export function stashRegistrationError(message: string): void {
+export type RegistrationErrorCode =
+  | 'weak-password'
+  | 'email-in-use'
+  | 'invalid-email'
+  | 'bad-join-code'
+  | 'school-unconfigured'
+  | 'too-many-attempts'
+  | 'generic';
+
+const CODES: readonly RegistrationErrorCode[] = [
+  'weak-password', 'email-in-use', 'invalid-email',
+  'bad-join-code', 'school-unconfigured', 'too-many-attempts', 'generic',
+];
+
+/**
+ * When a registration fails after the account was created, the rollback signs
+ * the student out — which can unmount LoginPage before its setError paints.
+ * The replacement instance would render a blank form, so the student sees only
+ * an unexplained bounce back to the login screen. Stash the reason here and let
+ * the next instance say it.
+ */
+export function stashRegistrationError(code: RegistrationErrorCode): void {
   try {
-    window.sessionStorage.setItem(ERROR_KEY, message);
+    window.sessionStorage.setItem(ERROR_KEY, code);
   } catch {
     /* storage unavailable — the student sees the bounce without the reason */
   }
 }
 
-/** Read and clear a stashed message. Read-once, so it cannot haunt later visits. */
-export function takeRegistrationError(): string {
+/** Read and clear a stashed reason. Read-once, so it cannot haunt a later visit. */
+export function takeRegistrationError(): RegistrationErrorCode | null {
   try {
-    const message = window.sessionStorage.getItem(ERROR_KEY);
-    if (message) window.sessionStorage.removeItem(ERROR_KEY);
-    return message || '';
+    const raw = window.sessionStorage.getItem(ERROR_KEY);
+    if (!raw) return null;
+    window.sessionStorage.removeItem(ERROR_KEY);
+    // Anything unrecognised came from another build or was hand-edited; ignore
+    // it rather than rendering it, so this can never become an injection point.
+    return (CODES as readonly string[]).includes(raw) ? (raw as RegistrationErrorCode) : null;
   } catch {
-    return '';
+    return null;
   }
 }

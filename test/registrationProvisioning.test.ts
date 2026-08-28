@@ -96,19 +96,35 @@ describe('registration error hand-off', () => {
   });
 
   it('carries the reason across the remount the rollback causes', () => {
-    // The reap signs the student out, unmounting the LoginPage whose setError
-    // would have shown this. Without the hand-off they get a blank form.
-    stashRegistrationError('That school join code is not correct.');
-    expect(takeRegistrationError()).toBe('That school join code is not correct.');
+    // The reap signs the student out, which can unmount the LoginPage whose
+    // setError would have shown this. Without the hand-off they get a blank form.
+    stashRegistrationError('bad-join-code');
+    expect(takeRegistrationError()).toBe('bad-join-code');
   });
 
   it('is read-once, so it cannot haunt a later visit', () => {
-    stashRegistrationError('Registration failed. Try again.');
+    stashRegistrationError('generic');
     takeRegistrationError();
-    expect(takeRegistrationError()).toBe('');
+    expect(takeRegistrationError()).toBeNull();
   });
 
-  it('returns empty when nothing was stashed', () => {
-    expect(takeRegistrationError()).toBe('');
+  it('returns null when nothing was stashed', () => {
+    expect(takeRegistrationError()).toBeNull();
+  });
+
+  it('stores a code, never rendered copy', () => {
+    // Persisting the message meant writing a string built from
+    // MIN_PASSWORD_LENGTH into storage — a clear-text-storage finding, and UI
+    // copy has no business being durable state.
+    stashRegistrationError('weak-password');
+    const stored = window.sessionStorage.getItem('nsu:registration-error');
+    expect(stored).toBe('weak-password');
+    expect(stored).not.toMatch(/password must be|characters/i);
+  });
+
+  it('ignores an unrecognised value rather than rendering it', () => {
+    // Another build's code, or a hand-edited one, must not reach the UI.
+    window.sessionStorage.setItem('nsu:registration-error', '<img src=x onerror=alert(1)>');
+    expect(takeRegistrationError()).toBeNull();
   });
 });

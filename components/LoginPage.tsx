@@ -25,6 +25,7 @@ import {
   endRegistrationProvisioning,
   stashRegistrationError,
   takeRegistrationError,
+  type RegistrationErrorCode,
 } from '../utils/registrationProvisioning';
 import { SCHOOLS } from '../schoolData';
 import { createDemoStudentSession } from '../data/devStudent';
@@ -243,6 +244,24 @@ const LoginCard: React.FC<{ children: React.ReactNode; devButton?: React.ReactNo
   </div>
 );
 
+/**
+ * Copy for a registration failure, resolved at render rather than persisted.
+ * Keeping the mapping here means the only thing that crosses the remount is a
+ * code, so no rendered string — including one built from MIN_PASSWORD_LENGTH —
+ * is ever written to storage.
+ */
+function registrationErrorMessage(code: RegistrationErrorCode): string {
+  switch (code) {
+    case 'weak-password': return `Password must be at least ${MIN_PASSWORD_LENGTH} characters.`;
+    case 'email-in-use': return 'An account with this email already exists. Try signing in instead.';
+    case 'invalid-email': return 'Please enter a valid email address.';
+    case 'bad-join-code': return 'That school join code is not correct. Check the code from your school.';
+    case 'school-unconfigured': return 'Your school has not set up a join code yet. Ask your guidance counsellor for the current code.';
+    case 'too-many-attempts': return 'Too many attempts. Please wait a few minutes and try again.';
+    default: return 'Registration failed. Try again.';
+  }
+}
+
 interface LoginPageProps {
   handleLoginSuccess: (u: SessionUser) => void;
 }
@@ -295,10 +314,14 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
   const [avatar, setAvatar] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   // A failed registration deletes the account it just created, which signs the
-  // student out and unmounts THIS component -- so setError below lands on a
+  // student out and can unmount THIS component -- so setError below lands on a
   // dead instance and the replacement renders blank. That silent bounce is the
-  // symptom students actually reported. Hand the message to the next instance.
-  const [error, setError] = useState(() => takeRegistrationError());
+  // symptom students actually reported. The reason is handed over as a code and
+  // the copy resolved here, so no rendered string is ever persisted.
+  const [error, setError] = useState(() => {
+    const code = takeRegistrationError();
+    return code ? registrationErrorMessage(code) : '';
+  });
   const [isLoading, setIsLoading] = useState(false);
   const [resetSent, setResetSent] = useState(false);
   const [resendCountdown, setResendCountdown] = useState(0);
@@ -801,26 +824,26 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       // If the account was reaped, this component is already unmounted and
       // setError paints nothing -- so stash the message too. Whichever
       // instance is alive shows it; takeRegistrationError clears it either way.
-      const report = (message: string, step?: 1 | 2) => {
-        stashRegistrationError(message);
-        setError(message);
+      const report = (code: RegistrationErrorCode, step?: 1 | 2) => {
+        stashRegistrationError(code);
+        setError(registrationErrorMessage(code));
         if (step) setRegisterStep(step);
       };
       if (err.code === 'auth/weak-password') {
-        report(`Password must be at least ${MIN_PASSWORD_LENGTH} characters.`, 2);
+        report('weak-password', 2);
       } else if (err.code === 'auth/email-already-in-use') {
-        report('An account with this email already exists. Try signing in instead.', 1);
+        report('email-in-use', 1);
       } else if (err.code === 'auth/invalid-email') {
-        report('Please enter a valid email address.', 1);
+        report('invalid-email', 1);
       } else if (/join code is not correct/i.test(msg)) {
-        report('That school join code is not correct. Check the code from your school.', 1);
+        report('bad-join-code', 1);
       } else if (/not been set up for this school/i.test(msg)) {
         // The unprovisioned-school case: nothing the student can fix by retyping.
-        report('Your school has not set up a join code yet. Ask your guidance counsellor for the current code.', 1);
+        report('school-unconfigured', 1);
       } else if (/Too many attempts/i.test(msg)) {
-        report('Too many attempts. Please wait a few minutes and try again.', 1);
+        report('too-many-attempts', 1);
       } else {
-        report('Registration failed. Try again.');
+        report('generic');
       }
     } finally {
       // Always release the hold: on success, on a handled failure, and on the
