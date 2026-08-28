@@ -299,14 +299,11 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
   // This prevents flashing LoginPage when onAuthStateChanged fires null first
   // during token refresh / IndexedDB rehydration.
   if (!userResolved) {
-    return (
-      <div className="flex items-center justify-center min-h-screen w-full bg-[#FAFBF6] dark:bg-zinc-950">
-        <svg className="animate-spin" width="36" height="36" viewBox="0 0 36 36" fill="none">
-          <circle cx="18" cy="18" r="15" stroke="#e0dbd4" strokeWidth="3" />
-          <path d="M18 3a15 15 0 0 1 15 15" stroke="#F26B1F" strokeWidth="3" strokeLinecap="round" />
-        </svg>
-      </div>
-    );
+    // The first screen on every app open, and the one a student sees while
+    // signing in. Neutral copy on purpose: at this point we do not yet know
+    // whether there is a session, so promising a workspace would be wrong for
+    // anyone about to be shown the login form.
+    return <LoadingSpinner overlay kicker="NextStepUni" label="Getting things ready" />;
   }
 
   // Registration is still provisioning: the account exists and the student is
