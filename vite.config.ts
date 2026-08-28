@@ -168,10 +168,34 @@ export default defineConfig(() => {
             ],
           },
           workbox: {
-        // pdf.js and Diagram Vault are lazy-tool-only: keep their large chunks
-        // out of the SW precache so non-users never download them. The runtime
-        // app-chunks rule still caches each chunk after a student opens the tool.
-        globIgnores: ['**/pdf.worker*.js', '**/vendor-pdfjs*.js', '**/DiagramVault*.js'],
+        // Keep lazy-tool payloads OUT of the precache. The runtime app-chunks
+        // rule (NetworkFirst on /assets/*.js) still caches each one the moment a
+        // student actually opens the tool, so the only thing given up is having
+        // it available offline before first use.
+        //
+        // Why this matters more than it looks. Every deploy rewrites every asset
+        // hash, so the whole precache is re-downloaded by every returning
+        // browser. Measured against the live site on 2026-08-28, the precache was
+        // 4.4MB compressed and took ~4s to pull on a fast connection with six
+        // parallel connections — and it runs in the background exactly while a
+        // student is trying to log in or sign up, competing with the auth and
+        // callable requests they are waiting on. Half of it, 2.24MB across 21
+        // files, was exam corpus and lazy tool data that nobody on the login
+        // screen has any use for.
+        //
+        // The subject corpora (higher-*/ordinary-*), Catch-Up Lane, Command Word
+        // and three.js are all behind lazy routes. Precaching them bought
+        // offline-before-first-use and cost every user a slow session after
+        // every deploy. Bad trade; they are runtime-cached instead.
+        globIgnores: [
+          '**/pdf.worker*.js', '**/vendor-pdfjs*.js', '**/DiagramVault*.js',
+          '**/higher-*.js', '**/ordinary-*.js',
+          '**/catchUpLaneData*.js', '**/commandWordData*.js',
+          '**/vendor-three*.js',
+          // PDF export libraries — only pulled in when a student or GC actually
+          // exports something.
+          '**/vendor-jspdf*.js', '**/html2canvas*.js',
+        ],
             maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
             navigateFallback: 'index.html',
             // Legal pages are real static files (privacy.html / terms.html) emitted
