@@ -309,14 +309,35 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     );
   }
 
-  // `|| registrationHeld` keeps LoginPage MOUNTED through registration, rather
-  // than swapping it for a spinner. createUserWithEmailAndPassword publishes a
-  // user about a second in, and the old gate then unmounted LoginPage while the
-  // flow was still running — so when a rejected join code set an error, it set
-  // it on a dead component and the student landed on a blank form with no
-  // reason given. That silent bounce is the reported symptom. Staying mounted
-  // means the form keeps its own in-flight state and its errors actually paint.
-  if (!user || registrationHeld) {
+  // Registration is still provisioning: the account exists and the student is
+  // signed in, but the flow has not reached the users/{uid} write, so the
+  // rollback can still delete the account under them.
+  //
+  // A full-screen overlay rather than an early return, because `user` is set by
+  // this point and App.tsx renders the student chrome on `user &&` (App.tsx:963
+  // onwards). Returning LoginPage here put a login form inside a signed-in
+  // shell, which read as having been logged out — and returning a bare spinner
+  // left the header and points pill visible behind it. Covering the viewport is
+  // the only version that looks deliberate.
+  //
+  // LoginPage does not need to stay mounted for its error to survive: the
+  // failure reason crosses the remount through sessionStorage, and the fresh
+  // instance picks it up (see registrationProvisioning's error hand-off).
+  if (user && registrationHeld) {
+    return (
+      <div className="fixed inset-0 z-[200] flex flex-col items-center justify-center gap-5 bg-[#FAFBF6] dark:bg-zinc-950">
+        <svg className="animate-spin" width="36" height="36" viewBox="0 0 36 36" fill="none">
+          <circle cx="18" cy="18" r="15" stroke="#e0dbd4" strokeWidth="3" />
+          <path d="M18 3a15 15 0 0 1 15 15" stroke="#F26B1F" strokeWidth="3" strokeLinecap="round" />
+        </svg>
+        <p className="text-[15px]" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>
+          Setting up your account&hellip;
+        </p>
+      </div>
+    );
+  }
+
+  if (!user) {
     return <Suspense fallback={<LoadingSpinner />}><LoginPage handleLoginSuccess={handleLoginSuccess} /></Suspense>;
   }
 
