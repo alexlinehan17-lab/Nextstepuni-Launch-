@@ -727,13 +727,17 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       // client — the /users rules forbid a client-supplied school. A wrong code
       // throws here and the account is rolled back below.
       const joinFn = httpsCallable<{ school: string; code: string }, { success: boolean }>(getFunctions(app), 'claimStudentSchool');
-      // Concurrent, not sequential. Both need only the new account, neither
-      // reads the other's result, and every round trip here is one the student
-      // spends staring at a setup screen. Awaiting them in series bought
-      // nothing. updateProfile is still awaited rather than fired and forgotten
-      // because AuthContext falls back to displayName when the user document is
-      // not yet readable, and a student who saw "Student" instead of their name
-      // would be a worse bug than the wait.
+      // Concurrent, not sequential. Neither reads the other's result, so
+      // awaiting them in series bought nothing but a round trip the student
+      // spends staring at a setup screen.
+      //
+      // Both are still awaited, because the account-rollback below keys off
+      // whether we got this far. Note what awaiting does NOT buy: it does not
+      // order updateProfile against AuthContext's displayName fallback.
+      // onAuthStateChanged does not re-fire for a profile update — it notifies
+      // only when the uid changes — so AuthContext samples displayName exactly
+      // once per sign-in, whenever its own read settles, and nothing here can
+      // move that. The fallback race is pre-existing and unchanged either way.
       await Promise.all([
         updateProfile(createdUser, { displayName: name.trim() }),
         joinFn({ school, code: joinCode.trim() }),
