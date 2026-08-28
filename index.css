@@ -1066,6 +1066,61 @@ html:not(.dark) [class*="text-[#A0978D]"] {
   animation: system-route-loader 1s cubic-bezier(.4, 0, .2, 1) infinite;
 }
 
+/* ── The loading rule ──────────────────────────────────────────────
+   The app's single loading state, used inline for Suspense and full-bleed
+   for the signup provisioning hold.
+
+   Typographic rather than a spinner, because a spinning circle is the one
+   loading idiom that belongs to no brand in particular, and this product is
+   editorial everywhere else: serif line, letter-spaced kicker, and a rule
+   that sweeps beneath the text the way a reader's finger tracks it.
+
+   CSS keyframes, not Framer Motion, and that is the point rather than a
+   shortcut. This animation plays precisely while the main thread is busiest —
+   account creation, the join-code callable, progress hydration — and a
+   JS-driven animation stutters exactly then, which reads as the app having
+   hung. transform-only keyframes run on the compositor and stay smooth
+   through all of it.
+
+   Two sweeps at different durations, so they drift in and out of phase and the
+   loop never lands on an obvious repeat. The global prefers-reduced-motion
+   block already reduces these to a single frame. */
+.nsu-loader-rail {
+  position: relative;
+  width: 176px;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--outline-soft);
+  overflow: hidden;
+}
+
+.nsu-loader-sweep {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 38%;
+  border-radius: 999px;
+  background: var(--accent-hex);
+  will-change: transform;
+}
+
+.nsu-loader-sweep--lead { animation: nsu-loader-sweep 1.15s cubic-bezier(.65, 0, .35, 1) infinite; }
+.nsu-loader-sweep--echo { opacity: .28; animation: nsu-loader-sweep 1.9s cubic-bezier(.65, 0, .35, 1) infinite; }
+
+@keyframes nsu-loader-sweep {
+  from { transform: translateX(-120%); }
+  to   { transform: translateX(280%); }
+}
+
+/* One-time entrance, so the loader resolves in rather than popping. `both`
+   holds the start frame during the delay-free first paint. */
+.nsu-loader-in { animation: nsu-loader-in .45s cubic-bezier(.2, .7, .3, 1) both; }
+
+@keyframes nsu-loader-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: none; }
+}
+
 /* ── Chunky range sliders ── */
 .chunky-slider {
   -webkit-appearance: none;

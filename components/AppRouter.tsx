@@ -324,17 +324,11 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
   // failure reason crosses the remount through sessionStorage, and the fresh
   // instance picks it up (see registrationProvisioning's error hand-off).
   if (user && registrationHeld) {
-    return (
-      <div className="fixed inset-0 z-[200] flex flex-col items-center justify-center gap-5 bg-[#FAFBF6] dark:bg-zinc-950">
-        <svg className="animate-spin" width="36" height="36" viewBox="0 0 36 36" fill="none">
-          <circle cx="18" cy="18" r="15" stroke="#e0dbd4" strokeWidth="3" />
-          <path d="M18 3a15 15 0 0 1 15 15" stroke="#F26B1F" strokeWidth="3" strokeLinecap="round" />
-        </svg>
-        <p className="text-[15px]" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>
-          Setting up your account&hellip;
-        </p>
-      </div>
-    );
+    // Same loader as everywhere else, covering the viewport. The hand-rolled
+    // spinning circle this replaced was the only screen in the product that
+    // looked like a generic app, and it was the one a new student sat and
+    // watched for the whole of provisioning.
+    return <LoadingSpinner overlay kicker="One moment" label="Setting up your account" />;
   }
 
   if (!user) {
