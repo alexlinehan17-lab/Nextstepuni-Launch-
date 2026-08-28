@@ -346,7 +346,13 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
   // rendering the app in that gap flashes 0 JP and empty progress. Hold the
   // route until the progress snapshot explicitly belongs to this account.
   if (!isProgressReadyForUser(user.uid, progressLoaded, progressDataUid)) {
-    return <LoadingSpinner />;
+    // A student who has just registered has no workspace yet, so the default
+    // returning-user copy is wrong here — and it is the screen they sit on for
+    // the tail of signup, so it is the one they actually read. Match the
+    // wording of the registration hold that precedes it.
+    return needsOnboarding
+      ? <LoadingSpinner kicker="Almost there" label="Setting up your account" />
+      : <LoadingSpinner />;
   }
 
   // Force password change if flagged by GC reset

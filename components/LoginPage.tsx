@@ -765,6 +765,14 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         );
       };
       userDocStarted = true;
+      // The rollback is disarmed the instant this flag flips — shouldReapAccount
+      // returns false from here on — so the router hold has nothing left to
+      // protect against and can come down now rather than after the write.
+      // writeUserDoc waits on a SERVER acknowledgement (up to 8s on a poor
+      // connection), and making a student stare at a setup screen for that is
+      // pointless when the account is already safe. The finally below still
+      // clears the marker; this is just the earliest correct moment.
+      endRegistrationProvisioning();
       await writeUserDoc(
         setDoc(doc(db, 'users', createdUser.uid), userDocPayload, { merge: true }),
         'LoginPage.registerUserDoc',
