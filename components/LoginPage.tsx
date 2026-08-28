@@ -708,9 +708,16 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       // then routes them into Onboarding ~1s later -- while the rollback below can
       // still delete the account underneath them. See utils/registrationProvisioning.
       beginRegistrationProvisioning();
+      // Warm the onboarding chunk while the account is being provisioned. Every
+      // student who gets past this line lands in Onboarding, and AppRouter
+      // lazy-loads it — so without this the 44KB fetch starts only once the
+      // setup screen finally clears, adding itself to the end of the wait
+      // instead of overlapping it. Same module specifier as AppRouter's lazy()
+      // import, so this populates the very module the router then asks for.
+      // Fire-and-forget: a failed prefetch just means the normal lazy load runs.
+      void import('./Onboarding').catch(() => {});
       const cred = await createUserWithEmailAndPassword(auth, registrationEmail, password);
       createdUser = cred.user;
-      await updateProfile(createdUser, { displayName: name.trim() });
       // Send a verification email (fire-and-forget) so the address is provable.
       // Non-blocking: registration still proceeds (security review 2026-07-16,
       // L-5). Deliverability failures must not block sign-up.
@@ -720,8 +727,27 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
       // client — the /users rules forbid a client-supplied school. A wrong code
       // throws here and the account is rolled back below.
       const joinFn = httpsCallable<{ school: string; code: string }, { success: boolean }>(getFunctions(app), 'claimStudentSchool');
-      await joinFn({ school, code: joinCode.trim() });
-      await createdUser.getIdToken(true);
+      // Concurrent, not sequential. Both need only the new account, neither
+      // reads the other's result, and every round trip here is one the student
+      // spends staring at a setup screen. Awaiting them in series bought
+      // nothing. updateProfile is still awaited rather than fired and forgotten
+      // because AuthContext falls back to displayName when the user document is
+      // not yet readable, and a student who saw "Student" instead of their name
+      // would be a worse bug than the wait.
+      await Promise.all([
+        updateProfile(createdUser, { displayName: name.trim() }),
+        joinFn({ school, code: joinCode.trim() }),
+      ]);
+      // No getIdToken(true) here, deliberately. It was copied from the staff
+      // path, where claimStaffAccess DOES set role/school custom claims and the
+      // token genuinely must be refreshed to see them. claimStudentSchool sets
+      // no claim at all — syncAuthorizationClaims mirrors role and school into a
+      // token only for 'gc' and 'staff', and explicitly deletes both for a
+      // student, because student tenancy is resolved from the live user document
+      // instead. So the refreshed token was byte-for-byte equivalent in every
+      // claim the app reads: a full round trip to securetoken.googleapis.com
+      // that could not change any decision, on the critical path of every
+      // signup. If a student claim is ever introduced, this has to come back.
       const userDocPayload = {
         name: name.trim(),
         avatar: selectedAvatar,
