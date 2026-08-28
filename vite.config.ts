@@ -240,12 +240,26 @@ export default defineConfig(() => {
                 handler: 'CacheFirst',
                 options: { cacheName: 'google-fonts-files', expiration: { maxAgeSeconds: 60 * 60 * 24 * 365 } },
               },
-              // DiceBear avatars
-              {
-                urlPattern: /^https:\/\/api\.dicebear\.com\/.*/i,
-                handler: 'CacheFirst',
-                options: { cacheName: 'dicebear-avatars', expiration: { maxAgeSeconds: 60 * 60 * 24 * 30 } },
-              },
+              // DiceBear avatars are deliberately NOT cached here.
+              //
+              // There was a CacheFirst rule for api.dicebear.com, and it broke
+              // every avatar in the app. Routing the host through the worker
+              // means the request is served by fetch() inside the worker rather
+              // than as a plain <img> load — and that fetch failed, so
+              // CacheFirst (which throws when it has no cached entry and the
+              // fetch does not resolve) rejected every avatar request. Verified
+              // in the browser: with the worker controlling the page all eight
+              // picker avatars fail; on the same build with the worker not in
+              // control, all eight load. The dicebear-avatars cache had never
+              // been created, in any client, because nothing ever succeeded.
+              //
+              // Without a rule here the request never reaches the worker: it is
+              // an ordinary cross-origin image load, governed by img-src, which
+              // has always allowed this host. The browser's own HTTP cache still
+              // covers repeat views, so the only thing given up is offline
+              // avatars — and offline already falls back to initials (see
+              // components/Avatar.tsx). Not worth a total outage of every
+              // avatar to save re-requesting a 3KB SVG.
             ],
           },
         }),

@@ -65,4 +65,17 @@ describe('CSP covers every host the service worker fetches', () => {
     // tidy-up that drops it would silently break every avatar again.
     expect(allowedByConnectSrc('api.dicebear.com', connectSrcHosts())).toBe(true);
   });
+
+  it('does not route avatars through the service worker', () => {
+    // The outage: a CacheFirst rule for api.dicebear.com meant the request was
+    // served by fetch() inside the worker instead of as a plain <img> load, and
+    // CacheFirst throws when it has no cached entry and the fetch does not
+    // resolve — so every avatar in the app failed. Verified in-browser: worker
+    // in control, all eight fail; worker not in control, all eight load.
+    //
+    // Re-adding a rule for this host would reintroduce that, so keep avatars as
+    // ordinary image loads. img-src allows the host; the browser's HTTP cache
+    // covers repeat views; offline falls back to initials in Avatar.tsx.
+    expect(serviceWorkerHosts()).not.toContain('api.dicebear.com');
+  });
 });
