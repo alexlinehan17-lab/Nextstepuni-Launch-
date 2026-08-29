@@ -311,6 +311,7 @@ export const PersonalStory = ({ children, name, role, junior }: PersonalStoryPro
   const shownName = useJunior ? (junior!.name ?? name) : name;
   const shownRole = useJunior ? junior!.role : role;
   const shownChildren = useJunior ? junior!.children : children;
+  const isFounderStory = /founder/i.test(shownRole ?? '');
   return (
   <MotionDiv
     initial={{ opacity: 0, y: 8 }}
@@ -334,15 +335,15 @@ export const PersonalStory = ({ children, name, role, junior }: PersonalStoryPro
               <span className="text-[10px] font-semibold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 ml-2">{shownRole}</span>
             )}
           </div>
-          {/* Honesty label: these voices are illustrative composites drawn from
+          {/* Honesty label: student voices are illustrative composites drawn from
               common student experiences, not quotes from identifiable named
               students. Rendered app-wide so no PersonalStory implies a real,
               traceable individual. See docs/module-content-audit-2026-07-21.md. */}
           <span
             className="ml-auto shrink-0 text-[9px] font-semibold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 border border-zinc-200 dark:border-zinc-700 rounded-full px-2 py-0.5"
-            title="An illustrative example based on common student experiences — not a quote from a specific named student."
+            title={isFounderStory ? 'A first-person note from the NextStepUni founder.' : 'An illustrative example based on common student experiences — not a quote from a specific named student.'}
           >
-            Illustrative
+            {isFounderStory ? 'Founder’s note' : 'Illustrative'}
           </span>
         </div>
         <div className="text-[15px] leading-[1.8] text-zinc-600 dark:text-zinc-400 italic font-serif">

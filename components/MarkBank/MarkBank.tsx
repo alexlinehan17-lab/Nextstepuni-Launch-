@@ -78,6 +78,7 @@ type Screen =
 
 export interface MarkBankProps {
   uid?: string;
+  studentSubjects?: Array<{ subjectName: string; level?: string }>;
   /** Injected for tests. */
   now?: () => number;
 }
@@ -193,13 +194,41 @@ const MarkBar: React.FC<{ secure: number; met: number; total: number }> = ({ sec
 
 /* ------------------------------------------------------------------ tool ---- */
 
-const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
+const normaliseSubjectName = (name: string) => name.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]/g, '');
+const MARK_BANK_SUBJECT_ALIASES: Record<string, string> = {
+  maths: 'mathematics',
+  mathematic: 'mathematics',
+  agscience: 'agriculturalscience',
+  homeec: 'homeeconomics',
+  construction: 'constructionstudies',
+};
+
+export function profileDeckChoice(studentSubjects?: MarkBankProps['studentSubjects']): { subjectId: string; level: Level } | null {
+  for (const profileSubject of studentSubjects ?? []) {
+    const raw = normaliseSubjectName(profileSubject.subjectName);
+    const wanted = MARK_BANK_SUBJECT_ALIASES[raw] ?? raw;
+    const subject = SUBJECTS.find(candidate => normaliseSubjectName(candidate.title) === wanted);
+    if (!subject) continue;
+    const level: Level = profileSubject.level?.toLowerCase().startsWith('ordinary') ? 'ordinary' : 'higher';
+    if (deckSize(subject.id, level) > 0) return { subjectId: subject.id, level };
+  }
+  return null;
+}
+
+const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => Date.now() }) => {
   /* Read synchronously on mount. A Chemistry Ordinary student must never watch
      the tool open on Biology Higher and correct it — that is two clicks every
      session, forever. */
   const saved = useMemo(() => readChoice(uid), [uid]);
-  const [subjectId, setSubjectId] = useState<string>(saved?.subjectId ?? SUBJECTS[0].id);
-  const [level, setLevel] = useState<Level>(saved?.level ?? 'higher');
+  const profileDefault = useMemo(() => profileDeckChoice(studentSubjects), [studentSubjects]);
+  const savedIsValid = Boolean(
+    saved
+    && SUBJECTS.some(subject => subject.id === saved.subjectId)
+    && deckSize(saved.subjectId, saved.level) > 0,
+  );
+  const initialChoice = savedIsValid && saved ? saved : profileDefault ?? { subjectId: SUBJECTS[0].id, level: 'higher' as Level };
+  const [subjectId, setSubjectId] = useState<string>(initialChoice.subjectId);
+  const [level, setLevel] = useState<Level>(initialChoice.level);
   const chooseSubject = useCallback((id: string) => {
     setSubjectId(id);
     writeChoice(uid, { subjectId: id, level });
@@ -462,6 +491,8 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
      readout and one button — that is a rail, not a screen. */
   const dueCount = dueIds.length;
   const strands = strandsFor(subjectId);
+  const coveredTopics = strands.flatMap(strand => strand.topics).filter(topic => cardsForTopic(topic.id, cards).length > 0).length;
+  const totalTopics = strands.reduce((sum, strand) => sum + strand.topics.length, 0);
   const dueTopics = strands.flatMap(s => s.topics).filter(t => {
     const tc = cardsForTopic(t.id, cards);
     return tc.some(c => { const m = memories[c.id]; return m?.last ? isDue(c.id, m, now(), retention) : false; });
@@ -498,6 +529,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
           position: wide ? 'sticky' : 'static', top: 24,
           marginBottom: wide ? 0 : 22,
         }}>
+          <div style={{ marginBottom: 5 }}><Eyebrow>Mark Bank · exam practice</Eyebrow></div>
           <h2 style={{ font: `700 24px/1.15 ${SERIF}`, color: INK, margin: '0 0 3px' }}>
             {subject.title}
           </h2>
@@ -600,6 +632,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, now = () => Date.now() }) => {
                 <p style={{ margin: '20px 0 0', font: `400 11.5px/1.5 ${SANS}`, color: LABEL }}>
                   {cards.length} questions from the {examYears} Leaving Certificate papers,
                   each marked against the real State Examinations Commission scheme.
+                  {' '}Coverage currently spans {coveredTopics} of {totalTopics} syllabus topics.
                 </p>
               )}
             </>

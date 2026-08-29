@@ -6,12 +6,15 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Sun, Moon, LogOut, Settings, Flame, ChevronRight, Trophy, Award, BarChart3, Star, X } from 'lucide-react';
+import { Sun, Moon, LogOut, Settings, Flame, ChevronRight, Trophy, Award, BarChart3, Star, X, BookOpen, CalendarRange, HelpCircle, MessageSquare } from 'lucide-react';
 import { type SessionUser, getAvatarUrl, handleAvatarError } from '../utils/authUtils';
 import { type UserSettings } from '../types';
 import { type StreakData } from '../hooks/useStreak';
 import { type FocusRecommendation } from '../hooks/useTodaysFocus';
 import { useModal } from '../hooks/useModal';
+import NotificationBell from './NotificationBell';
+
+const streakLabel = (count: number): string => `${count} ${count === 1 ? 'day' : 'days'} streak`;
 
 interface UserProfileProps {
   user: SessionUser;
@@ -77,7 +80,7 @@ export const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settin
               </div>
               <div className="flex-1">
                 <p className="text-sm font-semibold text-zinc-800 dark:text-white">
-                  {streak.currentStreak} day streak
+                  {streakLabel(streak.currentStreak)}
                 </p>
                 {streak.longestStreak > 1 && (
                   <p className="text-[10px] text-zinc-400 dark:text-zinc-500">
@@ -142,7 +145,7 @@ export const UserProfile: React.FC<UserProfileProps> = ({ user, onLogout, settin
                   <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300 flex-1 text-left">My North Star</span>
                 </button>
               )}
-              <button onClick={() => updateSetting('darkMode', !settings.darkMode)} className="w-full flex items-center justify-between p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-white/5">
+              <button role="switch" aria-checked={settings.darkMode} onClick={() => updateSetting('darkMode', !settings.darkMode)} className="w-full flex items-center justify-between p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-white/5">
                   <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300">{settings.darkMode ? 'Light Mode (Beta)' : 'Dark Mode (Beta)'}</span>
                    <AnimatePresence mode="wait">
                       {settings.darkMode ? (
@@ -187,6 +190,10 @@ interface MobileProfileSheetProps {
   onOpenPassport: () => void;
   onGoToDashboard: () => void;
   onGoToInsights: () => void;
+  onGoToReferences: () => void;
+  onGoToYearPlans: () => void;
+  onOpenSiteGuide: () => void;
+  onOpenFeedback: () => void;
   completedCount: number;
   totalCount: number;
   onOpenNorthStar: () => void;
@@ -194,7 +201,7 @@ interface MobileProfileSheetProps {
   unlockedThemes: string[];
 }
 
-export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, onClose, user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride, streak, recommendation, onSelectModule, onOpenPassport, onGoToDashboard: _onGoToDashboard, onGoToInsights: _onGoToInsights, completedCount, totalCount, onOpenNorthStar, hasNorthStar, unlockedThemes: _unlockedThemes }) => {
+export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, onClose, user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride, streak, recommendation, onSelectModule, onOpenPassport, onGoToDashboard: _onGoToDashboard, onGoToInsights: _onGoToInsights, onGoToReferences, onGoToYearPlans, onOpenSiteGuide, onOpenFeedback, completedCount, totalCount, onOpenNorthStar, hasNorthStar, unlockedThemes: _unlockedThemes }) => {
   const displayAvatar = avatarOverride || user.avatar;
   const sheetRef = useRef<HTMLDivElement>(null);
   useModal(isOpen, onClose, sheetRef);
@@ -252,7 +259,7 @@ export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, 
                   <Flame size={16} className="text-orange-500" />
                 </div>
                 <div className="flex-1">
-                  <p className="text-sm font-semibold text-zinc-800 dark:text-white">{streak.currentStreak} day streak</p>
+                  <p className="text-sm font-semibold text-zinc-800 dark:text-white">{streakLabel(streak.currentStreak)}</p>
                   {streak.longestStreak > 1 && (
                     <p className="text-[10px] text-zinc-400 dark:text-zinc-500">Longest: {streak.longestStreak} days</p>
                   )}
@@ -285,13 +292,30 @@ export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, 
                   <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300 flex-1 text-left">Study Passport</span>
                   <span className="text-xs font-bold text-zinc-400 dark:text-zinc-500">{completedCount}/{totalCount}</span>
                 </button>
+                <NotificationBell uid={user.uid} variant="menu" />
+                <button onClick={() => { onClose(); onGoToReferences(); }} className="w-full flex items-center gap-3 p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-50 dark:bg-blue-500/10"><BookOpen size={16} className="text-blue-500" /></div>
+                  <span className="flex-1 text-left text-sm font-medium text-zinc-700 dark:text-zinc-300">References</span>
+                </button>
+                <button onClick={() => { onClose(); onGoToYearPlans(); }} className="w-full flex items-center gap-3 p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-50 dark:bg-emerald-500/10"><CalendarRange size={16} className="text-emerald-600" /></div>
+                  <span className="flex-1 text-left text-sm font-medium text-zinc-700 dark:text-zinc-300">Year Plans</span>
+                </button>
+                <button onClick={() => { onClose(); onOpenSiteGuide(); }} className="w-full flex items-center gap-3 p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-orange-50 dark:bg-orange-500/10"><HelpCircle size={16} className="text-[#F26B1F]" /></div>
+                  <span className="flex-1 text-left text-sm font-medium text-zinc-700 dark:text-zinc-300">How the app works</span>
+                </button>
+                <button onClick={() => { onClose(); onOpenFeedback(); }} className="w-full flex items-center gap-3 p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-zinc-100 dark:bg-zinc-800"><MessageSquare size={16} className="text-zinc-500" /></div>
+                  <span className="flex-1 text-left text-sm font-medium text-zinc-700 dark:text-zinc-300">Help us improve</span>
+                </button>
                 {hasNorthStar && (
                   <button onClick={() => { onClose(); onOpenNorthStar(); }} className="w-full flex items-center gap-3 p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
                     <div className="w-8 h-8 rounded-lg bg-amber-50 dark:bg-amber-500/10 flex items-center justify-center"><Star size={16} className="text-amber-500" /></div>
                     <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300 flex-1 text-left">My North Star</span>
                   </button>
                 )}
-                <button onClick={() => updateSetting('darkMode', !settings.darkMode)} className="w-full flex items-center gap-3 p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
+                <button role="switch" aria-checked={settings.darkMode} onClick={() => updateSetting('darkMode', !settings.darkMode)} className="w-full flex items-center gap-3 p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
                   <div className="w-8 h-8 rounded-lg bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center">
                     {settings.darkMode ? <Sun size={16} className="text-amber-400" /> : <Moon size={16} className="text-zinc-600" />}
                   </div>

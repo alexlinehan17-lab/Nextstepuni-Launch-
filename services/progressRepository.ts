@@ -26,6 +26,9 @@ import {
 export interface ProgressDocument {
   northStar?: NorthStar;
   subjectProfile?: StudentSubjectProfile;
+  /** A student may deliberately enter the app before creating a subject
+   * profile. Persist that choice so refreshes do not restart onboarding. */
+  onboardingSkippedAt?: string | null;
   cosmeticUnlocks?: {
     avatarSeeds?: string[];
     themeColors?: string[];
@@ -55,6 +58,11 @@ export interface ProgressDocument {
   islandState?: IslandState;
   gamification?: Partial<GamificationFirestoreData>;
   [field: string]: unknown;
+}
+
+/** The single source of truth for the account-setup gate. */
+export function progressNeedsOnboarding(progress: ProgressDocument | null): boolean {
+  return !progress?.subjectProfile && !progress?.onboardingSkippedAt;
 }
 
 interface LegacyMockResult {

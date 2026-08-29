@@ -252,7 +252,7 @@ describe('student analytics dashboard', () => {
     expect(screen.getByRole('img', { name: 'Topic readiness breakdown' })).toBeInTheDocument();
 
     fireEvent.click(screen.getByRole('tab', { name: 'Study' }));
-    expect(screen.getByRole('img', { name: 'Thirteen week study rhythm calendar' })).toBeInTheDocument();
+    expect(screen.getByRole('img', { name: /^Thirteen week study rhythm:/ })).toBeInTheDocument();
     expect(screen.getByRole('img', { name: 'Session type allocation' })).toBeInTheDocument();
   });
 
@@ -285,5 +285,46 @@ describe('student analytics dashboard', () => {
     expect(screen.getByText('Active Recall')).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: 'Best efforts' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: 'Achievements' })).toBeInTheDocument();
+  });
+
+  test('gives a new student one useful first action instead of empty analytics', () => {
+    const onStartStudy = vi.fn();
+    render(
+      <DashboardView
+        userProgress={{}}
+        allCourses={COURSES}
+        categoryTitles={{} as never}
+        streak={{ currentStreak: 0, longestStreak: 0, lastActiveDate: '' }}
+        recommendation={null}
+        onSelectModule={vi.fn()}
+        onBack={vi.fn()}
+        onStartStudy={onStartStudy}
+        pointsEarned={0}
+      />,
+    );
+
+    expect(screen.getByRole('heading', { name: 'Start with one focused session.' })).toBeInTheDocument();
+    expect(screen.queryByRole('img', { name: 'Study activity bar chart showing sessions' })).not.toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: /Start a study session/ }));
+    expect(onStartStudy).toHaveBeenCalledTimes(1);
+  });
+
+  test('exposes the theme control as a switch', () => {
+    render(
+      <DashboardView
+        userProgress={{}}
+        allCourses={COURSES}
+        categoryTitles={{} as never}
+        streak={{ currentStreak: 0, longestStreak: 0, lastActiveDate: '' }}
+        recommendation={null}
+        onSelectModule={vi.fn()}
+        onBack={vi.fn()}
+        pointsEarned={0}
+        darkMode
+        onToggleTheme={vi.fn()}
+      />,
+    );
+
+    expect(screen.getByRole('switch', { name: 'Switch to light mode (Beta)' })).toHaveAttribute('aria-checked', 'true');
   });
 });

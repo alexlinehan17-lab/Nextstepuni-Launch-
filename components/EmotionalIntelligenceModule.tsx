@@ -468,7 +468,7 @@ const ArousalReappraisal = () => {
                    className="p-4 bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-800/50 rounded-xl text-sm"
                  >
                    <p className="font-bold text-emerald-700 dark:text-emerald-300 mb-1">Easy path.</p>
-                   <p className="text-emerald-600 dark:text-emerald-400 text-xs">Anxiety and excitement feel the same in your body -- same racing heart, same adrenaline. You only need to change the label, not the state. People who say "I'm excited" before a test actually perform noticeably better than those who try to calm down.</p>
+                   <p className="text-emerald-600 dark:text-emerald-400 text-xs">Anxiety and excitement feel the same in your body — same racing heart, same adrenaline. You only need to change the label, not the state. People who say "I'm excited" before a test actually perform noticeably better than those who try to calm down.</p>
                  </motion.div>
                )}
              </AnimatePresence>
@@ -653,7 +653,7 @@ const EmotionalIntelligenceModule: React.FC<{ onBack: () => void; progress: Modu
       moduleNumber="13"
       moduleTitle="Emotional Intelligence"
       moduleSubtitle="The Stress Management Toolkit"
-      moduleDescription={`Understand why your brain freaks out during exams and learn practical techniques -- both mental and physical -- to turn stress into something that works for you, not against you.`}
+      moduleDescription={`Understand why your brain freaks out during exams and learn practical techniques — both mental and physical — to turn stress into something that works for you, not against you.`}
       theme={theme}
       sections={sections}
       references={EMOTIONAL_INTELLIGENCE_REFERENCE_LIST}
@@ -673,8 +673,8 @@ const EmotionalIntelligenceModule: React.FC<{ onBack: () => void; progress: Modu
                 </>
               ) : (
                 <>
-                  <p>Exam stress isn't a character flaw -- it's your brain doing exactly what it's designed to do. Your body has a built-in alarm system called the <Highlight description="Your body's built-in alarm system. When your brain senses danger (like opening an exam paper), it fires off a chain reaction that floods you with stress hormones, especially cortisol." theme={theme}>HPA Axis</Highlight>, and it floods you with stress hormones like cortisol. A small hit of cortisol actually sharpens your focus. But a season of big exams isn't one scary moment -- it's months of pressure, and that's where things go wrong.</p>
-                  <p>When stress stays high for weeks, all that cortisol basically takes your <Highlight description="Think of this as the 'boss' part of your brain. It handles planning, logic, and holding information in your head. It's still developing in your teens, which is why stress can knock it offline so easily at your age." theme={theme}>Prefrontal Cortex (PFC)</Highlight> offline.<Cite n={1} /> That's the part of your brain you need for thinking, planning, and remembering. This is the real reason you "go blank" in an exam -- your brain has switched into survival mode and shut down the thinking part. Understanding this isn't an excuse; it's the first step to taking back control.</p>
+                  <p>Exam stress isn't a character flaw — it's your brain doing exactly what it's designed to do. Your body has a built-in alarm system called the <Highlight description="Your body's built-in alarm system. When your brain senses danger (like opening an exam paper), it fires off a chain reaction that floods you with stress hormones, especially cortisol." theme={theme}>HPA Axis</Highlight>, and it floods you with stress hormones like cortisol. A small hit of cortisol actually sharpens your focus. But a season of big exams isn't one scary moment — it's months of pressure, and that's where things go wrong.</p>
+                  <p>When stress stays high for weeks, all that cortisol basically takes your <Highlight description="Think of this as the 'boss' part of your brain. It handles planning, logic, and holding information in your head. It's still developing in your teens, which is why stress can knock it offline so easily at your age." theme={theme}>Prefrontal Cortex (PFC)</Highlight> offline.<Cite n={1} /> That's the part of your brain you need for thinking, planning, and remembering. This is the real reason you "go blank" in an exam — your brain has switched into survival mode and shut down the thinking part. Understanding this isn't an excuse; it's the first step to taking back control.</p>
                 </>
               )}
               <StressResponseComparison />
@@ -687,7 +687,7 @@ const EmotionalIntelligenceModule: React.FC<{ onBack: () => void; progress: Modu
                 <p>Emotional intelligence means noticing what you feel, understanding why, and doing something useful about it.<Cite n={2} /> You can train three skills: spotting stress early, naming the feeling, and using techniques to manage it.</p>
               ) : (
                 <>
-                  <p><Highlight description="Being able to notice what you're feeling, understand why, and then do something useful about it instead of just reacting on autopilot." theme={theme}>Emotional Intelligence (EI)</Highlight> isn't about being "nice." It's a practical set of skills for noticing what's going on inside you and doing something useful about it.<Cite n={2} /> Having good EI doesn't mean you don't feel stress -- it means you can turn that stress into fuel (<Highlight description="The good kind of stress -- the buzz you get before a match or a performance that actually helps you do better. Same racing heart, but it's working for you, not against you." theme={theme}>eustress</Highlight>) instead of letting it wreck your performance.</p>
+                  <p><Highlight description="Being able to notice what you're feeling, understand why, and then do something useful about it instead of just reacting on autopilot." theme={theme}>Emotional Intelligence (EI)</Highlight> isn't about being "nice." It's a practical set of skills for noticing what's going on inside you and doing something useful about it.<Cite n={2} /> Having good EI doesn't mean you don't feel stress — it means you can turn that stress into fuel (<Highlight description="The good kind of stress — the buzz you get before a match or a performance that actually helps you do better. Same racing heart, but it's working for you, not against you." theme={theme}>eustress</Highlight>) instead of letting it wreck your performance.</p>
                   <p>For big exams, we can break EI into three skills you can actually train:</p>
                 </>
               )}
@@ -722,8 +722,8 @@ const EmotionalIntelligenceModule: React.FC<{ onBack: () => void; progress: Modu
                 <p>Your body spots stress before your brain does. Learn to notice your early warning signs: tight stomach, shallow breathing, racing heart. A daily body scan builds this skill. Catch stress early and you can deal with it before panic takes over.</p>
               ) : (
                 <>
-                  <p>You can't manage what you don't notice. The first step is learning to read your own body -- what we call <Highlight description="Getting good at reading your own body -- noticing things like your heart speeding up, your breathing going shallow, or your shoulders tensing. It's like having an early warning system for stress." theme={theme}>Somatic Literacy</Highlight>. Your body usually picks up on stress before your brain does. Those early physical signs -- the tight stomach, the shallow breathing -- are your <Highlight description="Those physical feelings -- like a knot in your stomach or sweaty palms -- that show up before you even realise you're stressed. Your body is basically tapping you on the shoulder saying 'heads up.'" theme={theme}>Somatic Markers</Highlight>.<Cite n={3} /></p>
-                  <p>A quick daily "Body Scan" trains you to notice these signals. If you can catch stress early, you can deal with it before it spirals into full-on panic. It's the difference between "I'm freaking out" and "OK, my heart is racing -- I know what to do about that."</p>
+                  <p>You can't manage what you don't notice. The first step is learning to read your own body — what we call <Highlight description="Getting good at reading your own body — noticing things like your heart speeding up, your breathing going shallow, or your shoulders tensing. It's like having an early warning system for stress." theme={theme}>Somatic Literacy</Highlight>. Your body usually picks up on stress before your brain does. Those early physical signs — the tight stomach, the shallow breathing — are your <Highlight description="Those physical feelings — like a knot in your stomach or sweaty palms — that show up before you even realise you're stressed. Your body is basically tapping you on the shoulder saying 'heads up.'" theme={theme}>Somatic Markers</Highlight>.<Cite n={3} /></p>
+                  <p>A quick daily "Body Scan" trains you to notice these signals. If you can catch stress early, you can deal with it before it spirals into full-on panic. It's the difference between "I'm freaking out" and "OK, my heart is racing — I know what to do about that."</p>
                 </>
               )}
             </ReadingSection>
@@ -734,8 +734,8 @@ const EmotionalIntelligenceModule: React.FC<{ onBack: () => void; progress: Modu
                 <p>Say "I am excited" instead of "I am anxious." They feel the same in your body. Relabelling is easier than calming down — and people who do it tend to perform better.<Cite n={4} /> When your brain says "I will fail," challenge it like a lawyer. What is the actual evidence?<Cite n={5} /> Try the tool below.</p>
               ) : (
                 <>
-                  <p>Once you've spotted the feeling, you need to manage it with your mind. This is <Highlight description="Using your thinking to change how you feel. Basically, your mind talks your body down from the ledge." theme={theme}>Top-Down Regulation</Highlight>. One surprisingly powerful trick is <Highlight description="Relabelling your nerves as excitement. Anxiety and excitement feel almost identical in your body -- same racing heart, same adrenaline. The only real difference is the story you tell yourself about what's happening." theme={theme}>Arousal Reappraisal</Highlight>. It's actually much easier for your brain to switch from "anxious" to "excited" than it is to just "calm down" — and in studies, people who reappraised their nerves as excitement performed better.<Cite n={4} /></p>
-                  <p>The second tool is <Highlight description="When your brain tells you something catastrophic like 'I'm going to fail everything,' you stop and challenge it like a lawyer -- what's the actual evidence? Usually the panic is way bigger than the reality." theme={theme}>Cognitive Restructuring</Highlight>.<Cite n={5} /> When your brain screams "I'm going to fail everything," you treat that thought like you're a defence lawyer -- what's the actual evidence? Is it really true, or is panic doing the talking?</p>
+                  <p>Once you've spotted the feeling, you need to manage it with your mind. This is <Highlight description="Using your thinking to change how you feel. Basically, your mind talks your body down from the ledge." theme={theme}>Top-Down Regulation</Highlight>. One surprisingly powerful trick is <Highlight description="Relabelling your nerves as excitement. Anxiety and excitement feel almost identical in your body — same racing heart, same adrenaline. The only real difference is the story you tell yourself about what's happening." theme={theme}>Arousal Reappraisal</Highlight>. It's actually much easier for your brain to switch from "anxious" to "excited" than it is to just "calm down" — and in studies, people who reappraised their nerves as excitement performed better.<Cite n={4} /></p>
+                  <p>The second tool is <Highlight description="When your brain tells you something catastrophic like 'I'm going to fail everything,' you stop and challenge it like a lawyer — what's the actual evidence? Usually the panic is way bigger than the reality." theme={theme}>Cognitive Restructuring</Highlight>.<Cite n={5} /> When your brain screams "I'm going to fail everything," you treat that thought like you're a defence lawyer — what's the actual evidence? Is it really true, or is panic doing the talking?</p>
                 </>
               )}
               <ArousalReappraisal/>
@@ -747,7 +747,7 @@ const EmotionalIntelligenceModule: React.FC<{ onBack: () => void; progress: Modu
                 <p>When you are too stressed to think, use your body. Box Breathing is your emergency tool: breathe in 4 seconds, hold 4, out 4, hold 4.<Cite n={6} /> It is invisible. It breaks the panic loop in under a minute. Practice it below.</p>
               ) : (
                 <>
-                  <p>Sometimes, your mind is too flooded to think straight. When that happens, trying to reason your way out won't work -- you need to use your body to calm your mind instead. This is <Highlight description="Using your body to calm your mind. When you're too stressed to think straight, physical tricks like breathing exercises can break the panic cycle for you." theme={theme}>Bottom-Up Regulation</Highlight>. The fastest tool you have is your breathing.</p>
+                  <p>Sometimes, your mind is too flooded to think straight. When that happens, trying to reason your way out won't work — you need to use your body to calm your mind instead. This is <Highlight description="Using your body to calm your mind. When you're too stressed to think straight, physical tricks like breathing exercises can break the panic cycle for you." theme={theme}>Bottom-Up Regulation</Highlight>. The fastest tool you have is your breathing.</p>
                   <p><Highlight description="A dead simple breathing pattern: 4 seconds in, hold 4, out 4, hold 4. It activates your body's built-in calm-down system. You can do it silently in the exam hall and nobody will even notice." theme={theme}>Box Breathing</Highlight> is your emergency move for the exam hall. Slow, deliberate breathing measurably lowers physiological arousal,<Cite n={6} /> it's invisible, takes less than a minute, and it breaks the panic loop so your thinking brain can come back online.</p>
                 </>
               )}
@@ -760,8 +760,8 @@ const EmotionalIntelligenceModule: React.FC<{ onBack: () => void; progress: Modu
                 <p>Your brain cannot manage stress if you are tired, hungry, or dehydrated. Eat slow-release food like porridge. Drink water. Sleep properly. Use short NSDR breaks (guided rest, 10-20 minutes) to reset during long study days.</p>
               ) : (
                 <>
-                  <p>Managing your emotions takes real energy. A tired, dehydrated, or hungry brain can't keep its cool, no matter how many techniques you know. Looking after the basics isn't optional -- it's the foundation everything else is built on.</p>
-                  <p>For food, focus on slow-release energy like porridge and omega-3s from fish or walnuts to keep you steady. Even being slightly dehydrated tanks your concentration. And sleep is when your brain locks in what you've learned.<Cite n={7} /> During study days, short breaks using <Highlight description="Non-Sleep Deep Rest -- basically a guided relaxation where you lie down for 10-20 minutes without actually sleeping. It's a quick reset button that helps you feel sharper and less wrecked during a long study day." theme={theme}>NSDR</Highlight> are a great way to reset without losing your whole afternoon.</p>
+                  <p>Managing your emotions takes real energy. A tired, dehydrated, or hungry brain can't keep its cool, no matter how many techniques you know. Looking after the basics isn't optional — it's the foundation everything else is built on.</p>
+                  <p>For food, focus on slow-release energy like porridge and omega-3s from fish or walnuts to keep you steady. Even being slightly dehydrated tanks your concentration. And sleep is when your brain locks in what you've learned.<Cite n={7} /> During study days, short breaks using <Highlight description="Non-Sleep Deep Rest — basically a guided relaxation where you lie down for 10-20 minutes without actually sleeping. It's a quick reset button that helps you feel sharper and less wrecked during a long study day." theme={theme}>NSDR</Highlight> are a great way to reset without losing your whole afternoon.</p>
                 </>
               )}
             </ReadingSection>
@@ -771,7 +771,7 @@ const EmotionalIntelligenceModule: React.FC<{ onBack: () => void; progress: Modu
               {essentials ? (
                 <p>Months before: practice body scans and box breathing daily. Morning of: eat well, avoid panicked friends, say "I am excited." In the hall: stop, breathe, clench and release toes, start with easiest question. After: never compare answers.</p>
               ) : (
-                <p>You now have a full toolkit -- techniques that use your mind and techniques that use your body. The final step is knowing when to use what.</p>
+                <p>You now have a full toolkit — techniques that use your mind and techniques that use your body. The final step is knowing when to use what.</p>
               )}
               <div className="my-10 rounded-2xl p-5 md:p-6 space-y-3" style={{ backgroundColor: '#F8F8F8', borderRadius: 18 }}>
                 <div className="p-4 flex items-start gap-4" style={{ backgroundColor: '#93C5FD', border: '2.5px solid #2563EB', borderRadius: 16, boxShadow: '4px 4px 0px 0px #2563EB' }}>
@@ -799,12 +799,12 @@ const EmotionalIntelligenceModule: React.FC<{ onBack: () => void; progress: Modu
                   <div className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 text-lg font-serif font-bold text-white" style={{ backgroundColor: '#059669' }}>4</div>
                   <div>
                     <p className="text-sm font-bold" style={{ color: '#064E3B' }}>Post-Exam</p>
-                    <p className="text-[13px] mt-0.5" style={{ color: '#064E3B', opacity: 0.8 }}>Do not -- absolutely do not -- compare answers with friends afterwards. It only fuels anxiety for the next paper.</p>
+                    <p className="text-[13px] mt-0.5" style={{ color: '#064E3B', opacity: 0.8 }}>Do not — absolutely do not — compare answers with friends afterwards. It only fuels anxiety for the next paper.</p>
                   </div>
                 </div>
               </div>
               <SupportSignpost />
-              <MicroCommitment theme={theme}><p>Pick one technique from this module. Commit to practising it for 5 minutes every day for one week. This isn't just studying -- you're building a skill that kicks in automatically when you need it most.</p></MicroCommitment>
+              <MicroCommitment theme={theme}><p>Pick one technique from this module. Commit to practising it for 5 minutes every day for one week. This isn't just studying — you're building a skill that kicks in automatically when you need it most.</p></MicroCommitment>
             </ReadingSection>
           )}
         </>

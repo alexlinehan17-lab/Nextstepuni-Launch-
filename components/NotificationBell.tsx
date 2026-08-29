@@ -44,9 +44,10 @@ function relativeTime(ts: number): string {
 interface NotificationBellProps {
   uid: string;
   onUnreadCountChange?: (count: number) => void;
+  variant?: 'icon' | 'menu';
 }
 
-const NotificationBell: React.FC<NotificationBellProps> = ({ uid, onUnreadCountChange }) => {
+const NotificationBell: React.FC<NotificationBellProps> = ({ uid, onUnreadCountChange, variant = 'icon' }) => {
   const isDemo = uid === DEMO_STUDENT_UID;
   const [isOpen, setIsOpen] = useState(false);
   const [notifications, setNotifications] = useState<AppNotification[]>([]);
@@ -117,7 +118,7 @@ const NotificationBell: React.FC<NotificationBellProps> = ({ uid, onUnreadCountC
   };
 
   return (
-    <div className="relative" ref={panelRef}>
+    <div className={variant === 'menu' ? 'relative w-full' : 'relative'} ref={panelRef}>
       <button
         data-notification-bell
         data-notification-toggle
@@ -125,10 +126,22 @@ const NotificationBell: React.FC<NotificationBellProps> = ({ uid, onUnreadCountC
         aria-label={isOpen ? 'Close notifications' : 'Open notifications'}
         aria-expanded={isOpen}
         onClick={() => setIsOpen(!isOpen)}
-        className="relative flex h-11 w-11 items-center justify-center rounded-xl border-[1.5px] border-[#D0CDC8] bg-[#FAFBF6] text-zinc-600 shadow-none transition-colors hover:bg-[#F4F2EE] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]"
+        className={variant === 'menu'
+          ? 'relative flex min-h-14 w-full items-center gap-3 rounded-xl p-3 text-left text-zinc-700 transition-colors hover:bg-zinc-50 dark:text-zinc-300 dark:hover:bg-zinc-800/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]'
+          : 'relative flex h-11 w-11 items-center justify-center rounded-xl border-[1.5px] border-[#D0CDC8] bg-[#FAFBF6] text-zinc-600 shadow-none transition-colors hover:bg-[#F4F2EE] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]'}
       >
-        <Bell size={19} strokeWidth={1.8} aria-hidden="true" />
-        {unreadCount > 0 && (
+        {variant === 'menu' ? (
+          <>
+            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-amber-50 dark:bg-amber-500/10">
+              <Bell size={16} strokeWidth={1.8} className="text-amber-500" aria-hidden="true" />
+            </span>
+            <span className="flex-1 text-sm font-medium">Notifications</span>
+            {unreadCount > 0 && <span className="rounded-full bg-rose-500 px-2 py-0.5 text-[10px] font-bold text-white">{unreadCount > 99 ? '99+' : unreadCount}</span>}
+          </>
+        ) : (
+          <Bell size={19} strokeWidth={1.8} aria-hidden="true" />
+        )}
+        {variant === 'icon' && unreadCount > 0 && (
           <span className="absolute -top-1 -right-1 min-w-[18px] h-[18px] flex items-center justify-center rounded-full bg-rose-500 text-white text-[10px] font-bold px-1">
             {unreadCount > 99 ? '99+' : unreadCount}
           </span>
@@ -142,7 +155,7 @@ const NotificationBell: React.FC<NotificationBellProps> = ({ uid, onUnreadCountC
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -8, scale: 0.95 }}
             transition={{ duration: 0.2 }}
-            className="absolute top-full right-0 mt-2 w-80 sm:w-96 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-2xl shadow-xl overflow-hidden z-50"
+            className={`${variant === 'menu' ? 'relative mt-2 w-full' : 'absolute right-0 top-full mt-2 w-80 sm:w-96'} z-50 overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-xl dark:border-zinc-800 dark:bg-zinc-900`}
           >
             {/* Header */}
             <div className="flex items-center justify-between px-4 py-3 border-b border-zinc-100 dark:border-zinc-800">
@@ -160,7 +173,7 @@ const NotificationBell: React.FC<NotificationBellProps> = ({ uid, onUnreadCountC
             {/* Body */}
             <div className="max-h-[400px] overflow-y-auto">
               {notifications.length === 0 ? (
-                <div className="py-10 text-center">
+                <div className="py-7 text-center">
                   <Bell size={24} className="mx-auto text-zinc-300 dark:text-zinc-600 mb-2" />
                   <p className="text-sm text-zinc-400 dark:text-zinc-500">No notifications yet</p>
                 </div>

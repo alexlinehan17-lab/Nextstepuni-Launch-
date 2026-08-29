@@ -373,7 +373,7 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
                   <ActivityRing progress={progressPercentage} size={32} strokeWidth={3} color={'var(--accent-hex)'} />
                   <p className="text-sm font-semibold text-zinc-900 dark:text-white">Sections</p>
                 </div>
-                <button onClick={() => setMobileSectionsOpen(false)} className="p-1.5 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800">
+                <button onClick={() => setMobileSectionsOpen(false)} aria-label="Close module sections" className="p-1.5 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800">
                   <X size={16} className="text-zinc-400" />
                 </button>
               </div>
@@ -431,13 +431,16 @@ export const ModuleLayout: React.FC<ModuleLayoutProps> = ({
               transition={{ duration: 0.4, ease: [0.25, 1, 0.5, 1] }}
             >
               {children(activeSection)}
-              <footer className="mt-16 flex items-center justify-between pt-8 pb-6">
+              <footer className="mt-16 flex items-end justify-between gap-4 pt-8 pb-6">
                 <button onClick={handlePrev} disabled={activeSection === 0} className={`flex items-center gap-3 bg-[#FEFDFB] dark:bg-zinc-800 text-zinc-600 dark:text-white px-6 py-3.5 rounded-xl font-semibold text-[11px] uppercase tracking-widest transition-all hover:scale-[1.02] active:scale-[0.98] border border-[#EDEBE8] dark:border-zinc-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)] focus-visible:ring-offset-2 ${activeSection === 0 ? 'invisible' : ''}`}>
                   <ArrowLeft size={16} /> Prev
                 </button>
-                <button onClick={handleCompleteSection} className="flex items-center gap-3 bg-[#FEFDFB] dark:bg-zinc-800 text-zinc-600 dark:text-white px-6 py-3.5 rounded-xl font-semibold text-[11px] uppercase tracking-widest transition-all hover:scale-[1.02] active:scale-[0.98] border border-[#EDEBE8] dark:border-zinc-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)] focus-visible:ring-offset-2">
-                  {activeSection === sections.length - 1 ? finishButtonText : 'Continue'} <ArrowRight size={16} />
-                </button>
+                <div className="flex flex-col items-end gap-2">
+                  <p className="max-w-[220px] text-right text-[10px] leading-relaxed text-zinc-400 dark:text-zinc-500">Activities are optional and can be revisited.</p>
+                  <button onClick={handleCompleteSection} aria-label={activeSection === sections.length - 1 ? finishButtonText : 'Continue to the next section'} className="flex items-center gap-3 bg-[#FEFDFB] dark:bg-zinc-800 text-zinc-600 dark:text-white px-6 py-3.5 rounded-xl font-semibold text-[11px] uppercase tracking-widest transition-all hover:scale-[1.02] active:scale-[0.98] border border-[#EDEBE8] dark:border-zinc-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)] focus-visible:ring-offset-2">
+                    {activeSection === sections.length - 1 ? finishButtonText : 'Continue'} <ArrowRight size={16} />
+                  </button>
+                </div>
               </footer>
             </motion.div>
           </AnimatePresence>

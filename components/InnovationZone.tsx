@@ -636,7 +636,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
             iconBg: 'bg-emerald-100 dark:bg-emerald-900/30', iconColor: 'text-emerald-900 dark:text-emerald-300',
             accentBarColor: 'bg-emerald-800', tagBg: 'bg-emerald-100 dark:bg-emerald-900/30', tagText: 'text-emerald-900 dark:text-emerald-400',
             hoverBorder: 'hover:border-emerald-400/50 dark:hover:border-emerald-500/40',
-            component: <MarkBank uid={user?.uid} />,
+            component: <MarkBank uid={user?.uid} studentSubjects={subjectProfile?.subjects} />,
         },
         {
             id: 'paper-trail', title: 'Paper Trail', description: 'Every SEC past paper and marking scheme — three taps away.', icon: FileSearch, needsProfile: false,
@@ -789,7 +789,10 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
     const filteredTools = activeFilter === 'all'
         ? curriculumVisibleTools
         : curriculumVisibleTools.filter(t => TOOL_CATEGORIES[t.id] === activeFilter);
-    const curriculumVisibleToolIds = curriculumVisibleTools.map(tool => tool.id).join('|');
+    const recommendationAvailableToolIds = curriculumVisibleTools
+      .filter(tool => !tool.needsProfile || Boolean(subjectProfile))
+      .map(tool => tool.id);
+    const recommendationAvailableToolIdsKey = recommendationAvailableToolIds.join('|');
 
     useEffect(() => {
       try {
@@ -799,7 +802,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
           return;
         }
         const parsed = JSON.parse(stored) as ToolRecommendation;
-        const stillAvailable = curriculumVisibleToolIds.split('|').includes(parsed.toolId);
+        const stillAvailable = recommendationAvailableToolIdsKey.split('|').includes(parsed.toolId);
         setToolRecommendation(stillAvailable ? parsed : null);
         if (!stillAvailable) window.localStorage.removeItem(recommendationStorageKey);
       } catch {
@@ -808,7 +811,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
       }
       // The visible catalogue can change with the student's curriculum/year.
       // The ids string is stable; tool records include JSX and are rebuilt.
-    }, [recommendationStorageKey, curriculumVisibleToolIds]);
+    }, [recommendationStorageKey, recommendationAvailableToolIdsKey]);
 
     const handleRecommendationChange = useCallback((next: ToolRecommendation | null) => {
       setToolRecommendation(next);
@@ -886,6 +889,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                         tag: tool.tag,
                         needsProfile: tool.needsProfile,
                       }))}
+                      availableToolIds={recommendationAvailableToolIds}
                       recommendation={toolRecommendation}
                       onRecommendationChange={handleRecommendationChange}
                       onOpenTool={handleToolClick}
@@ -955,21 +959,22 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                     {/* Bento card grid */}
                     <div style={{ display: filteredTools.length === 0 ? 'none' : 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '16px' }}>
                         {filteredTools.map((tool, i) => {
-                            const disabled = (tool.needsProfile && !profileLoaded) || (tool.needsProfile && !subjectProfile);
+                            const profilePending = tool.needsProfile && !profileLoaded;
+                            const locked = tool.needsProfile && profileLoaded && !subjectProfile;
                             const gcRecommended = gcRecommendations[tool.id];
 
                             return (
                                 <MotionButton
                                     key={tool.id}
                                     type="button"
-                                    disabled={disabled}
-                                    aria-label={`${disabled ? 'Locked: ' : 'Open '}${tool.title}`}
+                                    disabled={profilePending}
+                                    aria-label={profilePending ? `Loading profile for ${tool.title}` : locked ? `Set up profile to unlock ${tool.title}` : `Open ${tool.title}`}
                                     initial={{ opacity: 0, y: 16 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.3, delay: i * 0.04 }}
-                                    onClick={disabled ? undefined : () => handleToolClick(tool.id, tool.needsProfile)}
+                                    onClick={profilePending ? undefined : () => handleToolClick(tool.id, tool.needsProfile)}
                                     className={`flex flex-col text-left rounded-2xl border-[1.5px] overflow-hidden transition-all ${
-                                        disabled
+                                        profilePending
                                             ? 'border-[var(--outline-soft)] cursor-not-allowed'
                                             : 'border-[var(--outline-strong)] hover:-translate-y-0.5 hover:shadow-[3px_3px_0_0_var(--outline-strong)] cursor-pointer'
                                     } bg-[var(--surface-paper)]`}
@@ -979,7 +984,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                                             falls back to the muted lock tile so locked tools still
                                             communicate gating without showing the bright illustration. */}
                                         <div className="mb-4">
-                                            {disabled ? (
+                                            {profilePending || locked ? (
                                                 <div
                                                     className="flex items-center justify-center"
                                                     style={{
@@ -998,34 +1003,32 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                                         </div>
 
                                         {/* Category label */}
-                                        <p className={`text-[10px] font-bold uppercase tracking-widest mb-1.5 ${
-                                            disabled ? 'text-zinc-300 dark:text-zinc-600' : 'text-zinc-400 dark:text-zinc-500'
-                                        }`}>
-                                            {disabled ? 'Needs Profile' : tool.tag}
+                                        <p className="text-[10px] font-bold uppercase tracking-widest mb-1.5 text-zinc-400 dark:text-zinc-500">
+                                            {profilePending ? 'Checking profile' : locked ? 'Needs Profile' : tool.tag}
                                         </p>
 
                                         {/* Title */}
                                         <h3 className={`text-base font-semibold mb-1.5 ${
-                                            disabled ? 'text-zinc-300 dark:text-zinc-600' : 'text-zinc-900 dark:text-white'
+                                            profilePending ? 'text-zinc-400 dark:text-zinc-600' : 'text-zinc-900 dark:text-white'
                                         }`}>
                                             {tool.title}
                                         </h3>
 
                                         {/* Description */}
                                         <p className={`text-xs leading-relaxed flex-1 ${
-                                            disabled ? 'text-zinc-300 dark:text-zinc-600' : 'text-zinc-500 dark:text-zinc-400'
+                                            profilePending ? 'text-zinc-400 dark:text-zinc-600' : 'text-zinc-500 dark:text-zinc-400'
                                         }`}>
-                                            {disabled ? 'Complete your Subject Profile to unlock.' : tool.description}
+                                            {profilePending ? 'Checking your subject profile…' : locked ? 'Add your subjects to unlock this tool.' : tool.description}
                                         </p>
 
-                                        {!disabled && TOOL_GUIDANCE[tool.id] && (
+                                        {!profilePending && !locked && TOOL_GUIDANCE[tool.id] && (
                                             <p className="mt-3 border-t border-[var(--outline-soft)] pt-3 text-[11px] leading-relaxed text-[var(--ink-secondary)]">
                                                 <span className="font-semibold text-[var(--ink-primary)]">Best when</span> {TOOL_GUIDANCE[tool.id].bestWhen}.
                                             </p>
                                         )}
 
                                         {/* GC recommendation badge if present */}
-                                        {gcRecommended && !disabled && (
+                                        {gcRecommended && !profilePending && !locked && (
                                             <div className="mt-3 px-3 py-2 rounded-lg bg-indigo-50 dark:bg-indigo-900/20 border border-indigo-200/60 dark:border-indigo-800/40">
                                                 <p className="text-[11px] font-semibold text-indigo-600 dark:text-indigo-400">
                                                     Recommended by {gcRecommended.fromName || 'your counsellor'}
@@ -1035,13 +1038,11 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                                     </div>
 
                                     {/* Bottom section with divider */}
-                                    {!disabled && (
-                                        <div className="px-6 py-3 border-t border-zinc-100 dark:border-zinc-800/60">
-                                            <span className="text-xs font-medium text-zinc-400 dark:text-zinc-500">
-                                                Launch tool
-                                            </span>
-                                        </div>
-                                    )}
+                                    <div className="px-6 py-3 border-t border-zinc-100 dark:border-zinc-800/60">
+                                        <span className="text-xs font-medium text-zinc-500 dark:text-zinc-400">
+                                            {profilePending ? 'Loading profile…' : locked ? 'Set up profile' : 'Launch tool'}
+                                        </span>
+                                    </div>
                                 </MotionButton>
                             );
                         })}

@@ -212,6 +212,8 @@ export interface AppRouterProps {
   unlockedThemes: string[];
   setUnlockedThemes: (themes: string[]) => void;
   setUnlockedCardStyles: (styles: string[]) => void;
+  onOpenSiteGuide: () => void;
+  onOpenFeedback: () => void;
 }
 
 /**
@@ -265,6 +267,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     setUnlockedAvatarSeeds,
     unlockedThemes, setUnlockedThemes,
     setUnlockedCardStyles,
+    onOpenSiteGuide, onOpenFeedback,
   } = props;
 
   // Navigation handlers from context
@@ -419,6 +422,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
           onStrategyMasteryRecompute={strategyMastery.recompute}
           strategyMastery={strategyMastery.masteryMap}
           onGoToProgress={handleGoToMilestones}
+          onSetUpProfile={() => nav.navigateToOnboarding()}
           dismissedGuides={dismissedGuides}
           onDismissGuide={handleDismissGuide}
           weeklyChallenge={weeklyChallenge}
@@ -530,7 +534,8 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
           userProgress={userProgress}
           onSelectModule={handleSelectModule}
           onBack={handleBackToTree}
-          isLca={isLcaYear(user?.yearGroup)}
+          isLca={isLcaYear(user?.yearGroup ?? studentProfile?.yearGroup)}
+          currentYearGroup={user?.yearGroup ?? studentProfile?.yearGroup}
         />
       </Suspense>
     );
@@ -650,6 +655,8 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
       }}
       onOpenTool={toolId => nav.navigateToInnovationZone(toolId)}
       uid={user?.uid}
+      onOpenSiteGuide={onOpenSiteGuide}
+      onOpenFeedback={onOpenFeedback}
     />;
   }
 
