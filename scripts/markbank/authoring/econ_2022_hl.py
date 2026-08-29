@@ -460,4 +460,44 @@ P.cards.append(card(
     tariff_kind='fixed',
     figure_key='economics-2022-HL-scheme-p27-q14aii-ticks'))
 
+# ── Backfill: asks the scheme answers in full ──────────────────────────────
+# Excluded under labels describing the ANSWER rather than any blocker. Tariff
+# and response are printed for each; catalogued crops ride where the figures
+# come off printed artwork.
+
+P.cards.append(card(
+    'econ-2022-hl-q12-a-i', 2022, 'higher', 'economics-2-0',
+    'what-a-falling-hhi-shows', '2022 HL Q12(a)(i)',
+    'Comment on what the Herfindahl-Hirschman Index (HHI) results outlined above indicate about '
+    'the market concentration in this industry over this time period.',
+    '9', 9,
+    [point('r-1', as_option(block(BODY, 'By 2019 the concentration has decreased to 3,328',
+                                  '(ii)')), 9,
+           'Two moves at once, and the scheme wants both: concentration FELL as firms entered, '
+           'AND it is still above 2,500, so the market remains highly concentrated. A comment '
+           'that reports only the fall has described the direction and missed the level.')],
+    'A falling HHI is not the same as a competitive market. At 3,328 the top three firms still '
+    'hold over 80%, so the industry has become less concentrated while staying concentrated.',
+    tariff_kind='fixed',
+    figure_key='economics-2022-HL-paper-p18-art'))
+
+P.cards.append(card(
+    'econ-2022-hl-q15-c-i', 2022, 'higher', 'economics-4-2',
+    'the-eus-largest-contributor-and-beneficiary', '2022 HL Q15(c)(i)',
+    'Using the data in the graph above, name the country which is the EU\u2019s largest '
+    'contributor and which country is the EU\u2019s largest beneficiary.',
+    '1 @ 4+1 @ 3', 7,
+    [anyN('r-1', 'The two countries \u2014 both', None, 2, 4,
+          [as_option(block(BODY, 'Largest EU Contributor: GERMANY', 'Largest EU Beneficiary')),
+           as_option(block(BODY, 'Largest EU Beneficiary: POLAND', '(ii) Justify why countries'))],
+          'Both are read straight off the net-benefit bars, and the scheme prices them unevenly '
+          '\u2014 4 for the first and 3 for the second.',
+          steps=[4, 3])],
+    'The chart plots NET position, so the largest contributor is the deepest negative bar and '
+    'the largest beneficiary the tallest positive one. Reading it as gross payments reverses the '
+    'answer. The crop was catalogued under Q16(c)(i), which the paper shows is the fast-fashion '
+    'minimum-pricing question; the manifest ref has been corrected to this part.',
+    tariff_kind='fixed',
+    figure_key='economics-2022-HL-paper-p33-art'))
+
 P.emit()

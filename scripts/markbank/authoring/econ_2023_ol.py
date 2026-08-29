@@ -373,4 +373,37 @@ P.cards.append(card(
     figure_key='economics-2023-OL-paper-p19-art'))
 
 
+# ── Backfill: asks the scheme answers in full ──────────────────────────────
+
+P.cards.append(card(
+    'econ-2023-ol-q12-a-i', 2023, 'ordinary', 'economics-3-1',
+    'total-planned-government-revenue', '2023 OL Q12(a)(i)',
+    'Using the figures in the pie chart above, calculate how much the government is expecting to '
+    'receive in revenue. Show your workings.',
+    '16', 16,
+    [point('r-1', as_option(block(BODY, '\u20ac27.5m + \u20ac14m + \u20ac17m',
+                                  'Deduct 1 mark each for omission')), 16,
+           'Every slice is added, including the two small ones. The scheme deducts a mark each '
+           'for dropping the \u20ac or the "million", so the units are part of the answer rather '
+           'than decoration.')],
+    'Six slices, and the two smallest are easy to skip \u2014 leaving either out changes the '
+    'total the NEXT part divides by.',
+    tariff_kind='fixed',
+    figure_key='economics-2023-OL-paper-p13-i0'))
+
+P.cards.append(card(
+    'econ-2023-ol-q12-a-ii', 2023, 'ordinary', 'economics-3-1',
+    'income-tax-as-a-share-of-revenue', '2023 OL Q12(a)(ii)',
+    'Using your answer from (i) above calculate what percentage of government revenue will be '
+    'received in income tax. Show your workings.',
+    '12', 12,
+    [point('r-1', as_option(block(BODY, '\u20ac27.5m / \u20ac95m x 100 = 28.94%',
+                                  '(iii)')), 12,
+           'Income tax over the TOTAL from part (i), not over any single other slice. A wrong '
+           'total in (i) carries straight through, which is why the scheme prints the €95m again '
+           'here.')],
+    'The answer depends on the previous part, so an error in the total is paid for twice.',
+    tariff_kind='fixed',
+    figure_key='economics-2023-OL-paper-p13-i0'))
+
 P.emit()

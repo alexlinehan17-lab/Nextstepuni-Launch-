@@ -1,23 +1,8 @@
 [
  {
-  "ref": "2021 HL Q11(a)(i)",
-  "reason": "the response is the worked HHI calculation",
-  "evidence": "Scheme: '46²+46²+5²+2²+1² = 4262'"
- },
- {
-  "ref": "2021 HL Q15(b)(ii)",
-  "reason": "every response reads the GNI chart printed with it",
-  "evidence": "Scheme: 'The period from 2007 to 2009… GNI of both countries is downward sloping'"
- },
- {
   "ref": "2021 HL Q16(c)(iii)",
   "reason": "SRP grading bands; the actual CBA ask prints one sentence under a two-claim tariff, so no clean card (recorded class, reason refined)",
   "evidence": "Scheme: 'Deduct 1m if no quantitative data', 'The Research Process 40 Marks Excellent Very Good…'; CBA answer is one sentence under ⟨6⟩ ⟨(2 @ 3)⟩"
- },
- {
-  "ref": "2021 HL Section A Q1(a)",
-  "reason": "the response is the worked trade-balance calculation",
-  "evidence": "Scheme: 'Total Exports: …=647 … €647m – €410m = €237m / Trade Surplus'"
  },
  {
   "ref": "2021 HL Section A Q10(b)",
@@ -28,21 +13,6 @@
   "ref": "2021 HL Section A Q2",
   "reason": "answered by ticking Positive/Normative against each statement",
   "evidence": "Scheme: tick table across four statements"
- },
- {
-  "ref": "2021 HL Section A Q8(b)",
-  "reason": "welded to (a)'s worked €6 — one sentence, no half separates",
-  "evidence": "Scheme: tariff ⟨2 @ 4⟩ over one welded equi-marginal sentence tied to the €6"
- },
- {
-  "ref": "2021 HL Section A Q9(a)",
-  "reason": "a table completion — market structure against each firm",
-  "evidence": "Scheme ⟨3 @ 3⟩: banking→Oligopoly, Irish Water→Monopoly, takeaway→Monopolistic Competition"
- },
- {
-  "ref": "2021 HL Section A Q9(b)",
-  "reason": "answered against the student's own (a) choices (recorded class)",
-  "evidence": "Scheme: 'The Irish banking sector is dominated by a few large firms, making these firms oligopolies…' — worked to the (a) selections"
  },
  {
   "ref": "2021 OL Q11(a)(i)",
@@ -100,11 +70,6 @@
   "evidence": "Paper: 'Explain, with the use of a fully labelled diagram how the equilibrium price of land is determined.' Scheme prints the diagram with 'The supply of land is fixed in quantity' welded beside it — recorded in econ_excluded.py EXCLUDED_TEXT."
  },
  {
-  "ref": "2022 HL Q12(a)(i)",
-  "reason": "a reading of the HHI figures printed in the chart with it",
-  "evidence": "recorded product decision in econ_excluded.py, made at authoring time against the scheme"
- },
- {
   "ref": "2022 HL Q12(b)(ii)",
   "reason": "the explanation beside a monopoly diagram, marked 1 per label with the explanation as a block (recorded EXCLUDED_TEXT class)",
   "evidence": "Paper: 'Explain, with the use of a fully labelled diagram, the long-run equilibrium position of a monopoly firm.' Scheme: 'They sell the output at price P1' welded to the diagram — recorded in econ_excluded.py."
@@ -140,11 +105,6 @@
   "evidence": "\"Identify one period where the value of the Euro depreciates against the Pound ⟨4 + 4⟩ Sterling. Explain your answer. During the period December 2013 to December 2015. This can be seen as the amount of Sterling which can be bought per Euro declines from 0.80 pence to 0.70 pence approximately. OR During…\""
  },
  {
-  "ref": "2022 HL Q15(c)(i)",
-  "reason": "answered by reading two names off the EU-budget chart printed with it",
-  "evidence": "\"Using the data in the graph above, name the country which is the EU's largest contributor and which country is the EU's largest beneficiary. • Largest EU Contributor: GERMANY ⟨4 + 3⟩ • Largest EU Beneficiary: POLAND\""
- },
- {
   "ref": "2022 HL Q16(c)(i)",
   "reason": "the explanation beside a diagram, marked 10 for the drawing and 5 for the writing, with no split stated across the three effects (recorded EXCLUDED_TEXT class)",
   "evidence": "Paper: 'Explain, with the use of a fully labelled diagram, how the introduction of minimum pricing...' Scheme: 'Effect on price Through imposing a minimum price' block welded to the diagram — recorded in econ_excluded.py."
@@ -153,16 +113,6 @@
   "ref": "2022 HL Section A Q1(a)",
   "reason": "the response is the worked PED calculation off the face-mask graph printed with it (and the formula reaches the markdown glyph-mangled)",
   "evidence": "\"Using an appropriate formula, calculate the price elasticity of demand… Show all calculations. ⟨10⟩ ∆𝑄𝑄𝑄𝑄 𝑃𝑃1 + 𝑃𝑃2 ∆𝑃𝑃 × … −4 +1 × (4 + 5) (8 + 4) = −3\" — the scheme's whole answer is the worked sum."
- },
- {
-  "ref": "2022 HL Section A Q10(a)",
-  "reason": "a worked reading off the production possibility schedule printed with it (the class the seca docstring already records as deliberately uncarded)",
-  "evidence": "\"⟨6⟩ Calculate the opportunity cost of PepsiCo moving from point D to point H… • Tropicana decreases from 62 million litres to 0 litres. • Thus, the opportunity cost is 62 million litres of Tropicana\""
- },
- {
-  "ref": "2022 HL Section A Q2(a)",
-  "reason": "answered by a tick plus figures read off the Balance of Payments data printed with it — the read-the-data and tick classes combined",
-  "evidence": "Scheme p: 'Indicate by means of a tick (✓) whether it is expansionary or contractionary. Answer: Expansionary • Exports have increased by 6.4%...' ⟨9⟩ — the credit is the tick and the readings."
  },
  {
   "ref": "2022 HL Section A Q4(c)",
@@ -335,16 +285,6 @@
   "evidence": "Scheme p.13: '• The output the firm will produce in the equilibrium (use label Q1) 1st @ 4 • The price the firm will charge for its output (use label P1) 2nd@ 4 • The average cost of producing this output (using point C1) 3rd @ 1' followed only by the completed diagram."
  },
  {
-  "ref": "2023 OL Q12(a)(i)",
-  "reason": "The answer is calculated off the pie chart printed with it and the response is the worked calculation — both registered classes ('2024 HL Section A Q1(a)'; the worked-calculation family).",
-  "evidence": "Scheme p.15: '⟨16⟩ ⟨6 @ 2⟩ Ans:4 €27.5m + €14m + €17m + €27.5m + €2m + €7m = € 95 million. Deduct 1 mark each for omission of € and million.'"
- },
- {
-  "ref": "2023 OL Q12(a)(ii)",
-  "reason": "Worked to the student's own earlier answer — the part says 'Using your answer from (i) above' — and the response is the worked percentage calculation.",
-  "evidence": "Scheme p.15: '⟨12⟩ ⟨4 @ 3⟩ €27.5m / €95m x 100 = 28.94% / 29%. Deduct 1 mark for omission of % sign.'"
- },
- {
   "ref": "2023 OL Q13(a)(i)",
   "reason": "Answered only by reading the bar chart printed beside it.",
   "evidence": "Scheme p.17: 'State the year with the highest value in food and drink exports from Ireland. 2019 1st@ 8 / State the year with the lowest value in food and drink exports from Ireland. 2016 2nd@ 4' — under the Bord Bia bar chart."
@@ -383,16 +323,6 @@
   "ref": "2023 OL Section A Q1(i)",
   "reason": "Answered only by reading the unemployment chart printed beside it — the registered chart-reading class ('2021 HL Q14(a)(i)', '2025 HL Q12(a)(i)'); the card would test chart-reading, not economics.",
   "evidence": "Scheme p.5: '(i) Identify the month when unemployment was at its lowest. July 2022 ⟨8⟩' — printed directly under the CSO unemployment-rate chart."
- },
- {
-  "ref": "2023 OL Section A Q1(ii)",
-  "reason": "Every response reads figures off the unemployment chart printed beside it.",
-  "evidence": "Scheme p.5: 'Overall trend ⟨4⟩ Unemployment rose between July 2022 and January 2023. From 4.3% to 4.4% … In July, unemployment stood at 4.3%. It rose to 4.4% in August and remained at the same rate in September.'"
- },
- {
-  "ref": "2023 OL Section A Q4(a)(i)",
-  "reason": "Answered by ticking which firm is in a monopoly — the exact class of the registered '2025 OL Section A Q8(i)': no wording for a card to carry.",
-  "evidence": "Scheme p.8: 'Identify, with a tick (✓), which of the following firms exist in a monopoly market structure in Ireland ⟨8⟩ … Aer Lingus / Iarnród Eireann (Irish Rail) ✓ / VHI'."
  },
  {
   "ref": "2024 HL Q11(b)(i)",

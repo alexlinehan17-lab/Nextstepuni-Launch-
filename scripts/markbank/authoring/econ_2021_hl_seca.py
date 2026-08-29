@@ -239,4 +239,73 @@ P.cards.append(card(
     'first \u2014 both give the same utility-per-euro.',
     tariff_kind='fixed', section='A'))
 
+# ── Backfill: asks the scheme answers in full ──────────────────────────────
+# Each was excluded under a label that described the ANSWER — a worked
+# calculation, a chart lookup, a table — rather than any blocker. The scheme
+# prints a tariff and a response for every one, and where the figures come off
+# printed artwork the catalogued crop rides with the card.
+
+P.cards.append(card(
+    'econ-2021-hl-seca-q1-a', 2021, 'higher', 'economics-4-2',
+    'calculating-the-balance-of-trade', '2021 HL Section A Q1(a)',
+    'Calculate the balance of trade for the period 2015 \u2013 2019. Identify whether it is a '
+    'surplus or a deficit.',
+    '7', 7,
+    [point('r-1', as_option(block(BODY, 'Total Exports: 112+119+123+141+152=647',
+                                  '(b) Outline two reasons')), 7,
+           'Both series are totalled across the whole period before subtracting, and the verdict '
+           'is part of the answer: exports exceed imports, so it is a SURPLUS. A figure without '
+           'the word is half of it.')],
+    'The chart plots five years of each series and the question asks for the period, not a year, '
+    'so ten figures are read off before any arithmetic happens.',
+    tariff_kind='fixed', section='A',
+    figure_key='economics-2021-HL-paper-p03-i0'))
+
+P.cards.append(card(
+    'econ-2021-hl-seca-q8-b', 2021, 'higher', 'economics-1-4',
+    'why-the-equi-marginal-price-is-paid', '2021 HL Section A Q8(b)',
+    'Explain why John would pay this price.',
+    '2 @ 4', 8,
+    [point('r-1', as_option(block(BODY, 'He would pay this price in order to maximise',
+                                  '9. (a) What is the corresponding market structure')), 8,
+           'Two things at 4 each: that he is maximising utility, and the rule that does it \u2014 '
+           'the ratio of marginal utility to price equal across every good. Saying only that he '
+           'wants the most utility misses the mechanism.')],
+    'The equi-marginal principle is a RATIO condition. It is satisfied when the last euro spent '
+    'on each good buys the same utility, not when the goods cost the same.',
+    stem='Part (a) works out the price John would pay for one unit of good Z from the '
+         'utility-per-euro he gets elsewhere.',
+    tariff_kind='fixed', section='A'))
+
+P.cards.append(card(
+    'econ-2021-hl-seca-q9-a', 2021, 'higher', 'economics-2-0',
+    'naming-the-market-structure', '2021 HL Section A Q9(a)',
+    'Identify the corresponding market structure for each of these products/firms: A the Irish '
+    'banking sector; B Irish Water (the company); C a takeaway food outlet.',
+    '3 @ 3', 9,
+    [point('r-1', as_option(block(BODY, 'A The Irish banking sector Oligopoly',
+                                  '(b) Give one reason')), 9,
+           'Three at 3 each. The sequence runs down the concentration scale \u2014 a few large '
+           'banks (oligopoly), a single supplier (monopoly), many small outlets selling close '
+           'but differentiated substitutes (monopolistic competition).')],
+    'None of the three is perfect competition, which is the structure that almost never has a '
+    'real-world example.',
+    tariff_kind='fixed', section='A',
+    figure_key='economics-2021-HL-paper-p13-i0'))
+
+P.cards.append(card(
+    'econ-2021-hl-seca-q9-b', 2021, 'higher', 'economics-2-0',
+    'reasons-for-each-market-structure', '2021 HL Section A Q9(b)',
+    'Give one reason for each of your chosen market structures above.',
+    '6', 6,
+    [point('r-1', as_option(block(BODY, 'The Irish banking sector is dominated by a few large firms',
+                                  '10 | P a g e')), 6,
+           'One reason per structure, and each names the FEATURE that defines it: a few large '
+           'firms, a sole provider, many sellers of close substitutes with some price control.')],
+    'The reason has to be the defining feature, not a fact about the industry. "Banks are big" '
+    'is not why banking is an oligopoly; "a few firms hold the market" is.',
+    stem='Part (a) names the structures: the Irish banking sector, Irish Water and a takeaway '
+         'food outlet.',
+    tariff_kind='fixed', section='A'))
+
 P.emit()

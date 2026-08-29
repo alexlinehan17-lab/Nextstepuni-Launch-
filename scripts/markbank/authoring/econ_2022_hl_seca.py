@@ -269,4 +269,44 @@ P.cards.append(card(
     figure_key='economics-2022-HL-paper-p10-i0'))
 
 
+# ── Backfill: asks the scheme answers in full ──────────────────────────────
+# Excluded under labels describing the ANSWER rather than any blocker. Tariff
+# and response are printed for each; catalogued crops ride where the figures
+# come off printed artwork.
+
+P.cards.append(card(
+    'econ-2022-hl-seca-q2-a', 2022, 'higher', 'economics-4-2',
+    'is-the-balance-of-payments-expansionary', '2022 HL Section A Q2(a)',
+    'Using the data above, explain whether the Balance of Payments is likely to have an overall '
+    'expansionary or contractionary effect. Refer to relevant figures in the diagram above to '
+    'explain your answer. Indicate by means of a tick (\u2713) whether it is expansionary or '
+    'contractionary.',
+    '9', 9,
+    [point('r-1', as_option(block(BODY, 'Answer: Expansionary',
+                                  '(b) Outline one factor which could have influenced')), 9,
+           'The verdict AND the figures that carry it. Exports rose 6.4% against imports at 5.4%, '
+           'so the injection is the larger of the two and the net effect is expansionary. The '
+           'gap is only one percentage point, which is exactly why the figures have to be quoted '
+           'rather than the direction asserted.')],
+    'Both exports and imports rose. What decides the answer is which rose FASTER, so an answer '
+    'that notes only the export growth has not compared anything.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2022-HL-paper-p04-i0'))
+
+P.cards.append(card(
+    'econ-2022-hl-seca-q10-a', 2022, 'higher', 'economics-0-0',
+    'opportunity-cost-along-the-ppf', '2022 HL Section A Q10(a)',
+    'Calculate the opportunity cost of PepsiCo moving production from point D to point H on the '
+    'Production Possibility Frontier (PPF) curve.',
+    '6', 6,
+    [point('r-1', as_option(block(BODY, 'Tropicana decreases from 62 million litres',
+                                  '(b) The point X (20,20)')), 6,
+           'Opportunity cost is what is GIVEN UP, so the answer is the fall in Tropicana \u2014 '
+           '62 million litres down to zero \u2014 not the gain in the other product. Naming the '
+           'thing produced more of is answering the opposite question.')],
+    'At point H the firm makes no Tropicana at all, so the whole 62 million litres is the cost '
+    'of getting there.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2022-HL-paper-p13-i0'))
+
 P.emit()

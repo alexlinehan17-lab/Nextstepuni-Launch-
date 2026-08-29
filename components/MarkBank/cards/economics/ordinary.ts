@@ -1979,6 +1979,48 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC034GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2023-ol-q12-a-i", topicId: "economics-3-1", conceptId: "total-planned-government-revenue",
+    section: "B", questionRef: "2023 OL Q12(a)(i)",
+    questionText: "Using the figures in the pie chart above, calculate how much the government is expecting to receive in revenue. Show your workings.",
+    tariffModel: {"kind":"fixed","notation":"16","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "€27.5m + €14m + €17m + €27.5m + €2m + €7m = € 95 million", marks: 16, contextNote: "Every slice is added, including the two small ones. The scheme deducts a mark each for dropping the € or the \"million\", so the units are part of the answer rather than decoration.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2023-OL-paper-p13-i0",
+          "src": "/exam-figures/economics/markbank/economics-2023-OL-paper-p13-i0.png",
+          "srcHash": "64fdd09394b4a03f416e473397a5eab7",
+          "alt": "A pie chart headed 'Budget Planned Revenue 2023 in € millions' with six labelled slices and a legend: Corporation Tax €14 m, VAT €17 m, Income Tax €27.5 m, Stamp Duties €2 m, Excise Duties €7 m, Other €27.5 m.",
+          "attribution": "SEC Leaving Certificate Economics 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2023-ol-q12-a-ii", topicId: "economics-3-1", conceptId: "income-tax-as-a-share-of-revenue",
+    section: "B", questionRef: "2023 OL Q12(a)(ii)",
+    questionText: "Using your answer from (i) above calculate what percentage of government revenue will be received in income tax. Show your workings.",
+    tariffModel: {"kind":"fixed","notation":"12","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "€27.5m / €95m x 100 = 28.94% / 29%. Deduct 1 mark for omission of % sign.", marks: 12, contextNote: "Income tax over the TOTAL from part (i), not over any single other slice. A wrong total in (i) carries straight through, which is why the scheme prints the €95m again here.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2023-OL-paper-p13-i0",
+          "src": "/exam-figures/economics/markbank/economics-2023-OL-paper-p13-i0.png",
+          "srcHash": "64fdd09394b4a03f416e473397a5eab7",
+          "alt": "A pie chart headed 'Budget Planned Revenue 2023 in € millions' with six labelled slices and a legend: Corporation Tax €14 m, VAT €17 m, Income Tax €27.5 m, Stamp Duties €2 m, Excise Duties €7 m, Other €27.5 m.",
+          "attribution": "SEC Leaving Certificate Economics 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2023 Ordinary Level — © State Examinations Commission.",
     id: "econ-2023-ol-sa-q2-b", topicId: "economics-3-4", conceptId: "functions-of-the-central-bank-ol",
     section: "A", questionRef: "2023 OL Section A Q2(b)",
     stem: "In 2021 KBC Bank and Ulster Bank announced their intentions to withdraw from the Irish market.",
@@ -2199,6 +2241,48 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "anyN", verbatim: "The definition — either wording", marks: 8, contextNote: "One definition, 8 marks; the scheme also accepts a fully explained example.", openList: true, group: {"claimMax":1,"perOption":8,"options":["The cost of the foregone alternatives or the use of a fully explained example.","The cost of passing up the next best choice when making a decision."]} },
     { id: "r-2", kind: "point", verbatim: "The Irish government could have spent the money on something else e.g. investment in education, development of the hospitals, improving infrastructure etc.", marks: 4, contextNote: "One opportunity cost of the housing spend, 4 marks.", openList: true },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2023-ol-seca-q1-ii", topicId: "economics-3-2", conceptId: "commenting-on-the-unemployment-rate",
+    section: "A", questionRef: "2023 OL Section A Q1(ii)",
+    questionText: "Comment on the unemployment rate between July 2022 and January 2023, using figures from the above chart.",
+    tariffModel: {"kind":"fixed","notation":"4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Unemployment rose between July 2022 and January 2023. From 4.3% to 4.4% Monthly trends In July, unemployment stood at 4.3%. It rose to 4.4% in August and remained at the same rate in September. It increased again in October to 4.5% and the rate was then static in November. It dipped again in December to 4.4% and was the same in Jan 2023.", marks: 4, contextNote: "The overall move first — 4.3% to 4.4% — and then the month-by-month path, which is not a straight climb: it rises, holds, rises again, then dips back.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2023-OL-paper-p03-i0",
+          "src": "/exam-figures/economics/markbank/economics-2023-OL-paper-p03-i0.png",
+          "srcHash": "6d6da2ca5198264dca2778b67b83c346",
+          "alt": "A line chart headed 'Seasonally adjusted monthly unemployment rate', y-axis %, x-axis 'Months' from JUL-22 to JAN-23. Seven labelled markers: 4.3 in July, 4.4 in August, 4.4 in September, 4.5 in October, 4.5 in November, 4.4 in December, 4.4 in January. Source 'Adapted from the CSO'.",
+          "attribution": "SEC Leaving Certificate Economics 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2023-ol-seca-q4-a-i", topicId: "economics-2-0", conceptId: "which-irish-firm-is-a-monopoly",
+    section: "A", questionRef: "2023 OL Section A Q4(a)(i)",
+    questionText: "Identify, with a tick (✓), which one of the following firms exist in a monopoly market structure in Ireland: Aer Lingus; Iarnród Éireann (Irish Rail); VHI.",
+    tariffModel: {"kind":"fixed","notation":"8","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Name of Organisation Tick (✓) which is a monopoly structure Aer Lingus Iarnród Eireann (Irish Rail) ✓ VHI", marks: 8, contextNote: "Irish Rail is the one ticked: it is the sole provider of rail services in the State. Aer Lingus competes with other airlines and VHI with other health insurers, so neither is a monopoly however familiar the name.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2023-OL-paper-p06-i0",
+          "src": "/exam-figures/economics/markbank/economics-2023-OL-paper-p06-i0.png",
+          "srcHash": "8d47cbfd62fb7c481920e1c9b2bf7d22",
+          "alt": "A three-row table headed Name of Organisation | Tick which is a monopoly structure. The organisations are Aer Lingus, Iarnród Eireann (Irish Rail) and VHI. The tick column is empty.",
+          "attribution": "SEC Leaving Certificate Economics 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",

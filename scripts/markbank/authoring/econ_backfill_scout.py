@@ -62,16 +62,32 @@ def bucket(reason):
     return 'OTHER'
 
 
-def anchors_from(question, n=3):
-    """Distinctive openers for the scheme lookup, longest first.
+def anchors_from(question, width=7):
+    """Phrases from the paper's wording to look the scheme block up by.
 
-    A scheme welds its answer onto the tail of its own question cue, so the
-    first clause of the paper's wording is usually present verbatim above the
-    responses. Several lengths are tried because the scheme sometimes rewrites
-    the tail ("Sept. 22" for "September 2022").
+    A scheme reprints each question above its answer, so anchoring on the
+    paper's own words makes the pairing self-confirming. But it reprints them
+    LOOSELY: "Using the data provided above, calculate the Herfindahl Hirschman
+    Index" in the paper is set without the opening clause in the scheme, and
+    dates get abbreviated ("Sept. 22" for "September 2022").
+
+    Anchoring on the opening alone therefore failed on 39 asks that the scheme
+    does contain — the reworded part is nearly always the START, because that
+    is where the cue sits. So slide a window across the whole question rather
+    than trying prefixes: the first window that matches wins, and a window from
+    the middle of a sentence is if anything better evidence than one from its
+    edge.
     """
     words = re.sub(r'\s+', ' ', question or '').split()
-    return [' '.join(words[i:i + 9]) for i in (0, 1, 2)][:n] + [' '.join(words[:6])]
+    if not words:
+        return []
+    out = []
+    for size in (9, width, 5):
+        for start in range(0, max(1, len(words) - size + 1)):
+            phrase = ' '.join(words[start:start + size])
+            if len(phrase) >= 18 and phrase not in out:
+                out.append(phrase)
+    return out
 
 
 def figures_for(ref, byref):

@@ -211,4 +211,37 @@ P.cards.append(card(
          'Budget 2023.',
     section='A', tariff_kind='fixed'))
 
+# ── Backfill: asks the scheme answers in full ──────────────────────────────
+
+P.cards.append(card(
+    'econ-2023-ol-seca-q1-ii', 2023, 'ordinary', 'economics-3-2',
+    'commenting-on-the-unemployment-rate', '2023 OL Section A Q1(ii)',
+    'Comment on the unemployment rate between July 2022 and January 2023, using figures from the '
+    'above chart.',
+    '4', 4,
+    [point('r-1', as_option(block(BODY, 'Unemployment rose between July 2022 and January 2023',
+                                  '2.')), 4,
+           'The overall move first \u2014 4.3% to 4.4% \u2014 and then the month-by-month path, '
+           'which is not a straight climb: it rises, holds, rises again, then dips back.')],
+    'The rate ends only 0.1 points above where it started, so "unemployment rose" is true and '
+    'thin. The marks are in the figures.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2023-OL-paper-p03-i0'))
+
+P.cards.append(card(
+    'econ-2023-ol-seca-q4-a-i', 2023, 'ordinary', 'economics-2-0',
+    'which-irish-firm-is-a-monopoly', '2023 OL Section A Q4(a)(i)',
+    'Identify, with a tick (\u2713), which one of the following firms exist in a monopoly market '
+    'structure in Ireland: Aer Lingus; Iarnr\u00f3d \u00c9ireann (Irish Rail); VHI.',
+    '8', 8,
+    [point('r-1', as_option(block(BODY, 'Name of Organisation Tick (\u2713) which is a monopoly '
+                                        'structure Aer Lingus', '(ii)')), 8,
+           'Irish Rail is the one ticked: it is the sole provider of rail services in the State. '
+           'Aer Lingus competes with other airlines and VHI with other health insurers, so '
+           'neither is a monopoly however familiar the name.')],
+    'All three are large, well-known Irish organisations. Only one has no competitor, and that '
+    'is the whole test.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2023-OL-paper-p06-i0'))
+
 P.emit()

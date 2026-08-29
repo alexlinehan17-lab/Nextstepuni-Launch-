@@ -1760,6 +1760,72 @@
   "notes": "Ireland sits below both comparators for almost the whole period, and dips BELOW zero in 2016 while the UK is rising. The chart’s interest is in where the three lines diverge, not in any single one of them."
  },
  {
+  "id": "econ-2021-hl-q11-a-i",
+  "topicId": "economics-2-0",
+  "conceptId": "calculating-the-hhi-for-the-aircraft-market",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 HL Q11(a)(i)",
+  "questionText": "Using the data provided above, calculate the Herfindahl Hirschman Index (HHI) for the Global Aircraft Market in 2018. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2021-HL-paper-p15-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "7",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "462 + 462 + 52 + 22 + 12 = 4262",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "Read the squares: extraction flattens 46² to 462, so the line is 46² + 46² + 5² + 2² + 1² = 4262. Every share is SQUARED before adding, which is the whole point of the index — it is what makes two firms on 46% each score far above five firms on 20%."
+   }
+  ],
+  "notes": "Squaring is what turns market share into concentration. Adding the percentages instead gives 100 for every market ever measured."
+ },
+ {
+  "id": "econ-2021-hl-q15-b-ii",
+  "topicId": "economics-3-5",
+  "conceptId": "reading-a-recession-off-a-gni-chart",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 HL Q15(b)(ii)",
+  "questionText": "Based upon the graph below, identify the years when both Ireland and the United States were in recession. Explain your answer.",
+  "stem": "",
+  "figureKey": "economics-2021-HL-paper-p31-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The period from 2007 to 2009 sees both countries experience an economic recession. During this period, it can be seen that the GNI of both countries is downward sloping indicating that the size of their economies were shrinking i.e. experiencing a recession.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The years and the reason, ⟨8⟩ written (4 + 4). What identifies a recession on this chart is the DIRECTION of GNI per capita, not its level: both lines are high by world standards throughout and both slope downwards from 2007 to 2009."
+   }
+  ],
+  "notes": "A falling line on a chart of GNI per capita is a shrinking economy. Students who look for the LOWEST point instead of the falling stretch pick the wrong years."
+ },
+ {
   "id": "econ-2021-hl-sa-q1-b",
   "topicId": "economics-4-2",
   "conceptId": "why-a-trade-surplus-is-an-aim",
@@ -2359,6 +2425,138 @@
    }
   ],
   "notes": "The calculation runs in two stages, and the scheme accepts either of the two goods for the first — both give the same utility-per-euro."
+ },
+ {
+  "id": "econ-2021-hl-seca-q1-a",
+  "topicId": "economics-4-2",
+  "conceptId": "calculating-the-balance-of-trade",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2021 HL Section A Q1(a)",
+  "questionText": "Calculate the balance of trade for the period 2015 – 2019. Identify whether it is a surplus or a deficit.",
+  "stem": "",
+  "figureKey": "economics-2021-HL-paper-p03-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "7",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Total Exports: 112+119+123+141+152=647 Total Imports: 70+74+83+92+91=410 €647m – €410m = €237m / Trade Surplus",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "Both series are totalled across the whole period before subtracting, and the verdict is part of the answer: exports exceed imports, so it is a SURPLUS. A figure without the word is half of it."
+   }
+  ],
+  "notes": "The chart plots five years of each series and the question asks for the period, not a year, so ten figures are read off before any arithmetic happens."
+ },
+ {
+  "id": "econ-2021-hl-seca-q8-b",
+  "topicId": "economics-1-4",
+  "conceptId": "why-the-equi-marginal-price-is-paid",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2021 HL Section A Q8(b)",
+  "questionText": "Explain why John would pay this price.",
+  "stem": "Part (a) works out the price John would pay for one unit of good Z from the utility-per-euro he gets elsewhere.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 @ 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "He would pay this price in order to maximise his utility as he spends his income in line with the equi-marginal principle of consumer behavior i.e. the ratio of marginal utility to price is the same for every unit of every good consumed.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Two things at 4 each: that he is maximising utility, and the rule that does it — the ratio of marginal utility to price equal across every good. Saying only that he wants the most utility misses the mechanism."
+   }
+  ],
+  "notes": "The equi-marginal principle is a RATIO condition. It is satisfied when the last euro spent on each good buys the same utility, not when the goods cost the same."
+ },
+ {
+  "id": "econ-2021-hl-seca-q9-a",
+  "topicId": "economics-2-0",
+  "conceptId": "naming-the-market-structure",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2021 HL Section A Q9(a)",
+  "questionText": "Identify the corresponding market structure for each of these products/firms: A the Irish banking sector; B Irish Water (the company); C a takeaway food outlet.",
+  "stem": "",
+  "figureKey": "economics-2021-HL-paper-p13-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 @ 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A The Irish banking sector Oligopoly B Irish Water (the company) Monopoly C A takeaway food outlet Monopolistic Competition",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "Three at 3 each. The sequence runs down the concentration scale — a few large banks (oligopoly), a single supplier (monopoly), many small outlets selling close but differentiated substitutes (monopolistic competition)."
+   }
+  ],
+  "notes": "None of the three is perfect competition, which is the structure that almost never has a real-world example."
+ },
+ {
+  "id": "econ-2021-hl-seca-q9-b",
+  "topicId": "economics-2-0",
+  "conceptId": "reasons-for-each-market-structure",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2021 HL Section A Q9(b)",
+  "questionText": "Give one reason for each of your chosen market structures above.",
+  "stem": "Part (a) names the structures: the Irish banking sector, Irish Water and a takeaway food outlet.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The Irish banking sector is dominated by a few large firms, making these firms oligopolies. • There is only one firm in charge of water provision in Ireland, making it a monopoly. • There are many small takeaway food outlets around the country which sell close substitutes and they can control their own prices, meaning this firm is imperfectly competitive/monopolistically competitive.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One reason per structure, and each names the FEATURE that defines it: a few large firms, a sole provider, many sellers of close substitutes with some price control."
+   }
+  ],
+  "notes": "The reason has to be the defining feature, not a fact about the industry. \"Banks are big\" is not why banking is an oligopoly; \"a few firms hold the market\" is."
  },
  {
   "id": "econ-2021-ol-q11-b-iii",
@@ -6033,6 +6231,84 @@
   "notes": "The carpenters row is the interesting one: the scheme concedes that labour can be fixed if contracted at a set price, so the classification follows the contract, not the input."
  },
  {
+  "id": "econ-2022-hl-q12-a-i",
+  "topicId": "economics-2-0",
+  "conceptId": "what-a-falling-hhi-shows",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q12(a)(i)",
+  "questionText": "Comment on what the Herfindahl-Hirschman Index (HHI) results outlined above indicate about the market concentration in this industry over this time period.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-paper-p18-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "By 2019 the concentration has decreased to 3,328 as more firms have entered the industry. • However, as this number is still greater than 2,500 and is still highly concentrated e.g., top 3 firms control over 80% of the industry.",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "Two moves at once, and the scheme wants both: concentration FELL as firms entered, AND it is still above 2,500, so the market remains highly concentrated. A comment that reports only the fall has described the direction and missed the level."
+   }
+  ],
+  "notes": "A falling HHI is not the same as a competitive market. At 3,328 the top three firms still hold over 80%, so the industry has become less concentrated while staying concentrated."
+ },
+ {
+  "id": "econ-2022-hl-q15-c-i",
+  "topicId": "economics-4-2",
+  "conceptId": "the-eus-largest-contributor-and-beneficiary",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q15(c)(i)",
+  "questionText": "Using the data in the graph above, name the country which is the EU’s largest contributor and which country is the EU’s largest beneficiary.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-paper-p33-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 @ 4+1 @ 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The two countries — both",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Both are read straight off the net-benefit bars, and the scheme prices them unevenly — 4 for the first and 3 for the second.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Largest EU Contributor: GERMANY •",
+      "Largest EU Beneficiary: POLAND"
+     ],
+     "perOptionSteps": [
+      4,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "The chart plots NET position, so the largest contributor is the deepest negative bar and the largest beneficiary the tallest positive one. Reading it as gross payments reverses the answer. The crop was catalogued under Q16(c)(i), which the paper shows is the fast-fashion minimum-pricing question; the manifest ref has been corrected to this part."
+ },
+ {
   "id": "econ-2022-hl-sa-q2-b",
   "topicId": "economics-1-1",
   "conceptId": "what-moves-personal-consumption",
@@ -6720,6 +6996,72 @@
    }
   ],
   "notes": "Part (i) asks which of two printed charts shows the real trend; this part asks why that one is right. The answer is a policy story, not a reading of the line: rates fell because the ECB was trying to restart a stalled economy."
+ },
+ {
+  "id": "econ-2022-hl-seca-q2-a",
+  "topicId": "economics-4-2",
+  "conceptId": "is-the-balance-of-payments-expansionary",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q2(a)",
+  "questionText": "Using the data above, explain whether the Balance of Payments is likely to have an overall expansionary or contractionary effect. Refer to relevant figures in the diagram above to explain your answer. Indicate by means of a tick (✓) whether it is expansionary or contractionary.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-paper-p04-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Answer: Expansionary • Exports have increased by 6.4% and imports have increased by 5.4%. • The increase in exports is (1%) larger than the increase in imports thus the injections are larger than leakages which with have an overall expansionary effect on the economy.",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "The verdict AND the figures that carry it. Exports rose 6.4% against imports at 5.4%, so the injection is the larger of the two and the net effect is expansionary. The gap is only one percentage point, which is exactly why the figures have to be quoted rather than the direction asserted."
+   }
+  ],
+  "notes": "Both exports and imports rose. What decides the answer is which rose FASTER, so an answer that notes only the export growth has not compared anything."
+ },
+ {
+  "id": "econ-2022-hl-seca-q10-a",
+  "topicId": "economics-0-0",
+  "conceptId": "opportunity-cost-along-the-ppf",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q10(a)",
+  "questionText": "Calculate the opportunity cost of PepsiCo moving production from point D to point H on the Production Possibility Frontier (PPF) curve.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-paper-p13-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Tropicana decreases from 62 million litres to 0 litres. • Thus, the opportunity cost is 62 million litres of Tropicana3",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Opportunity cost is what is GIVEN UP, so the answer is the fall in Tropicana — 62 million litres down to zero — not the gain in the other product. Naming the thing produced more of is answering the opposite question."
+   }
+  ],
+  "notes": "At point H the firm makes no Tropicana at all, so the whole 62 million litres is the cost of getting there."
  },
  {
   "id": "econ-2022-ol-q11-a-ii",
@@ -13049,6 +13391,72 @@
   "notes": "The graph rises to a June peak and falls back after it, so \"petrol got dearer in 2022\" is only half of what the line shows."
  },
  {
+  "id": "econ-2023-ol-q12-a-i",
+  "topicId": "economics-3-1",
+  "conceptId": "total-planned-government-revenue",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q12(a)(i)",
+  "questionText": "Using the figures in the pie chart above, calculate how much the government is expecting to receive in revenue. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2023-OL-paper-p13-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "16",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "€27.5m + €14m + €17m + €27.5m + €2m + €7m = € 95 million",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "Every slice is added, including the two small ones. The scheme deducts a mark each for dropping the € or the \"million\", so the units are part of the answer rather than decoration."
+   }
+  ],
+  "notes": "Six slices, and the two smallest are easy to skip — leaving either out changes the total the NEXT part divides by."
+ },
+ {
+  "id": "econ-2023-ol-q12-a-ii",
+  "topicId": "economics-3-1",
+  "conceptId": "income-tax-as-a-share-of-revenue",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q12(a)(ii)",
+  "questionText": "Using your answer from (i) above calculate what percentage of government revenue will be received in income tax. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2023-OL-paper-p13-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "12",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "€27.5m / €95m x 100 = 28.94% / 29%. Deduct 1 mark for omission of % sign.",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Income tax over the TOTAL from part (i), not over any single other slice. A wrong total in (i) carries straight through, which is why the scheme prints the €95m again here."
+   }
+  ],
+  "notes": "The answer depends on the previous part, so an error in the total is paid for twice."
+ },
+ {
   "id": "econ-2023-ol-sa-q2-b",
   "topicId": "economics-3-4",
   "conceptId": "functions-of-the-central-bank-ol",
@@ -13761,6 +14169,72 @@
    }
   ],
   "notes": ""
+ },
+ {
+  "id": "econ-2023-ol-seca-q1-ii",
+  "topicId": "economics-3-2",
+  "conceptId": "commenting-on-the-unemployment-rate",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2023 OL Section A Q1(ii)",
+  "questionText": "Comment on the unemployment rate between July 2022 and January 2023, using figures from the above chart.",
+  "stem": "",
+  "figureKey": "economics-2023-OL-paper-p03-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Unemployment rose between July 2022 and January 2023. From 4.3% to 4.4% Monthly trends In July, unemployment stood at 4.3%. It rose to 4.4% in August and remained at the same rate in September. It increased again in October to 4.5% and the rate was then static in November. It dipped again in December to 4.4% and was the same in Jan 2023.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The overall move first — 4.3% to 4.4% — and then the month-by-month path, which is not a straight climb: it rises, holds, rises again, then dips back."
+   }
+  ],
+  "notes": "The rate ends only 0.1 points above where it started, so \"unemployment rose\" is true and thin. The marks are in the figures."
+ },
+ {
+  "id": "econ-2023-ol-seca-q4-a-i",
+  "topicId": "economics-2-0",
+  "conceptId": "which-irish-firm-is-a-monopoly",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2023 OL Section A Q4(a)(i)",
+  "questionText": "Identify, with a tick (✓), which one of the following firms exist in a monopoly market structure in Ireland: Aer Lingus; Iarnród Éireann (Irish Rail); VHI.",
+  "stem": "",
+  "figureKey": "economics-2023-OL-paper-p06-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Name of Organisation Tick (✓) which is a monopoly structure Aer Lingus Iarnród Eireann (Irish Rail) ✓ VHI",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Irish Rail is the one ticked: it is the sole provider of rail services in the State. Aer Lingus competes with other airlines and VHI with other health insurers, so neither is a monopoly however familiar the name."
+   }
+  ],
+  "notes": "All three are large, well-known Irish organisations. Only one has no competitor, and that is the whole test."
  },
  {
   "id": "econ-2024-hl-q11-a-iii",
