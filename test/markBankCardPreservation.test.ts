@@ -65,6 +65,12 @@ const decks = [
    * (reconcile.py) now reads 100.0%: 498 covered + 160 excluded-with-evidence
    * = all 658 asks the 2021-2025 papers print. Nothing removed; all prior ids
    * remain. */
+  /* 2026-08-29 (seventh wave): economics 320/257 -> 322/259. Four more tick
+   * tables, none removed. Two of them carry a Reason column, where the scheme
+   * prints prose AND states the categorisation with a drawn ✔ — extraction
+   * interleaves the two into "Farmers in This is a visible export. Ireland
+   * selling The money leaves Germany", so the crop is the only faithful form.
+   * Coverage 531/658 -> 535/658, exclusions 127 -> 123. */
   /* 2026-08-29 (sixth wave): economics 319/253 -> 320/257. Five more tick
    * tables, none removed. Each is the scheme's completed table cropped and
    * bound as a solution figure, because the ✔ is drawn and extraction loses the
@@ -111,8 +117,8 @@ const decks = [
    * The -trend suffix on the first is forced: econ-2021-hl-q16-a-i is taken by
    * a card whose citation econ_refs.py corrects to Q16(c)(i), and an id is
    * never renamed because it keys a student's review history. */
-  ['economics:higher', ECON_HIGHER, 320, 'b8ef29dee9f1ef981b711ba18aa5cef70918995f4706e6ef850b3f17a720fb65'],
-  ['economics:ordinary', ECON_ORDINARY, 257, 'f5b4cfce36281ac8754f79d571c713a36823d0fdffbab3a6407e4dab8ff3ae31'],
+  ['economics:higher', ECON_HIGHER, 322, '03cdcfad0b6bd7bb337d7160ab61ba167af8184c6b7dbc17fc5ba443a999aa72'],
+  ['economics:ordinary', ECON_ORDINARY, 259, '8659d07522103236850ce69cac46bdc584a18d4d44b20374e3e08f1a81090c67'],
   /* 2026-08-23: the two newest subjects had shipped with NO identity baseline
    * at all — found by the ratchet-soundness review, which means every earlier
    * count in this file was guarding seven decks while two rode along
@@ -140,6 +146,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7249);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7253);
   });
 });
