@@ -4,6 +4,7 @@
 */
 
 import type React from 'react';
+import { createPortal } from 'react-dom';
 
 /**
  * The app's single loading state.
@@ -25,22 +26,25 @@ import type React from 'react';
  * stutter while the JavaScript thread is busy. The entrance is also delayed in
  * CSS, which means very short waits finish before any loading chrome flashes.
  *
- * `overlay` covers the viewport. The provisioning hold needs that: rendering a
- * bare inline loader there left the app header and points pill visible behind
- * it, and returning the login form put a sign-in screen inside a signed-in
- * shell, which read as having been logged out.
+ * Every instance is anchored to the viewport and portaled to `document.body`.
+ * Route fallbacks can sit inside animated or transformed layouts, where a
+ * normal `position: fixed` element is fixed to that ancestor instead of the
+ * screen. The portal keeps the assembly geometrically centred in every route.
+ * `overlay` only raises it above global app chrome during account provisioning.
  */
 export const LoadingSpinner: React.FC<{
   label?: string;
   kicker?: string;
   overlay?: boolean;
-}> = ({ label = 'Loading your workspace', kicker = 'Opening', overlay = false }) => (
-  <div
+}> = ({ label = 'Loading your workspace', kicker = 'Opening', overlay = false }) => {
+  const loadingSurface = (
+    <div
     role="status"
     aria-live="polite"
+    data-loader-placement="viewport"
     className={[
-      'theme-compat flex w-full items-center justify-center bg-[var(--surface-canvas)] px-6 text-center',
-      overlay ? 'fixed inset-0 z-[200] h-full' : 'min-h-[45vh]',
+      'theme-compat fixed inset-0 flex min-h-[100dvh] w-full items-center justify-center bg-[var(--surface-canvas)] px-6 text-center',
+      overlay ? 'z-[200]' : 'z-[80]',
     ].join(' ')}
   >
     <div className="nsu-loader-in w-full max-w-[430px]">
@@ -104,5 +108,10 @@ export const LoadingSpinner: React.FC<{
         <p className="mt-2.5 font-serif text-[22px] font-semibold leading-snug text-[var(--ink-primary)]">{label}</p>
       </div>
     </div>
-  </div>
-);
+    </div>
+  );
+
+  return typeof document === 'undefined'
+    ? loadingSurface
+    : createPortal(loadingSurface, document.body);
+};

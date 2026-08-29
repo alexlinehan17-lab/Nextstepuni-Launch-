@@ -6424,6 +6424,130 @@
   "notes": "A minimum price only bites when it is set above the market price, and the consequence is unsold goods rather than a tidier market — which is the trade-off the question is about."
  },
  {
+  "id": "econ-2022-hl-q15-a-iii",
+  "topicId": "economics-1-0",
+  "conceptId": "how-grant-aid-shifts-the-supply-of-milk",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q15(a)(iii)",
+  "questionText": "Explain, with the use of a fully labelled diagram below, how this grant aid will have impacted on the equilibrium price and quantity of milk.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-paper-p31-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9 + 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Price S1 S2 EA P1 P2 EB D1 Q1 Q2 Quantity",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "Nine labels. Both equilibria have to be marked — EA before the grant and EB after — because the answer is the MOVE between them, not either point alone."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "• This grant should help reduce costs &/or become more efficient. • This causes the supply curve to shift to the right from S1 to S2. • The equilibrium price decreases (from P1 to P2). • The quantity supplied increases (from Q1 to Q2).",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The chain: the grant cuts costs, so SUPPLY shifts right (S1 to S2), so price falls and quantity rises. It is the supply curve that moves — a grant to producers does not change what consumers want."
+   }
+  ],
+  "notes": "Subsidising producers lowers the price consumers pay. That surprises students who expect a payment to the seller to push prices up."
+ },
+ {
+  "id": "econ-2022-hl-q15-b-i",
+  "topicId": "economics-4-2",
+  "conceptId": "spotting-a-depreciating-euro-on-a-chart",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q15(b)(i)",
+  "questionText": "Identify one period where the value of the Euro depreciates against the Pound Sterling. Explain your answer.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-paper-p32-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 8",
+   "answer": 1,
+   "ofParts": 3,
+   "perPart": 8
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A period of depreciation, with the figures — any one",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Any one of three periods earns the ⟨4 + 4⟩: four for naming it and four for the figures. Depreciation means each Euro buys LESS Sterling, so the rate falls — 0.80 down to 0.70, and so on.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 8,
+     "options": [
+      "During the period December 2013 to December 2015. This can be seen as the amount of Sterling which can be bought per Euro declines from 0.80 pence to 0.70 pence approximately.",
+      "During the period December 2018 to December 2019. This can be seen as the amount of Sterling which can be bought per Euro declines from 0.90 pence to 0.85 pence approximately.",
+      "During the period December 2020 to December 2021. This can be seen as the amount of Sterling which can be bought per Euro declines from 0.90 pence to 0.85 pence approximately."
+     ]
+    }
+   }
+  ],
+  "notes": "A falling line here is a WEAKER euro, which is the reading students invert: the axis is Sterling per Euro, so down means the euro buys less."
+ },
+ {
+  "id": "econ-2022-hl-q14-c-iii",
+  "topicId": "economics-2-1",
+  "conceptId": "arguments-for-and-against-a-living-wage",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q14(c)(iii)",
+  "questionText": "Discuss one argument for and one argument against the implementation of the ‘Living Wage’ €12.90 per hour as the National Minimum Wage for 2023.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Arguments for: Introduce a more equitable distribution of income. People who were on lower levels of pay will now receive a higher minimum level of pay and this helps to re-distribute wealth within a country. Protection of the most vulnerable under law. Workers who may be vulnerable are now better protected by law from exploitation by unfair employers. Reduce problem of poverty. An increased minimum wage will ensure that wages from paid work will result in a living wage and this will help reduce poverty within the country. Increase worker’s standard of living. By providing for an increased minimum wage workers disposable income increases and their standard of living increases. Increase the incentive to work. When workers see that pay levels are rising then it may attract more people into the workforce / help retain current workers / help increase productivity. Boost economic growth. Higher incomes will mean increased spending within the economy and will help boost economic growth / employment.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One argument FOR, priced ⟨2+2⟩ — two for the point and two for developing it. The scheme offers a redistribution argument, protection of vulnerable workers, poverty reduction and living standards."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Arguments against: Increases the cost of business. Businesses and unions may argue against the implementation of the Living Wage as it would lead to an increase in their cost of production which may make it harder for businesses to survive. Cost push inflation. Increasing the minimum wage up to the Living Wage may lead to increased cost of production which may be passed on to the consumer in the form of higher prices. May lead to decreased employment. Whilst more employees may be willing to work, leading to an expanded labour force, firms may decide to counteract the increasing costs through rationalisation of their workforce. This may leave fewer people employed than before the Living Wage was implemented. May be a deterrent for FDI. Firms who have invested into Ireland from abroad may find the increase in the cost of production to be a deterrent to operating here. Existing firms may decide to relocate to other low-cost countries. New firms might not consider Ireland as an option for FDI.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One argument AGAINST, priced the same way. The business case is higher production costs and the cost-push inflation that can follow — note that the second is an economy-wide effect, not a firm-level one."
+   }
+  ],
+  "notes": "Both halves are required and each is worth the same, so an essay on one side scores at most half however good it is."
+ },
+ {
   "id": "econ-2022-hl-sa-q2-b",
   "topicId": "economics-1-1",
   "conceptId": "what-moves-personal-consumption",
@@ -22196,6 +22320,47 @@
    }
   ],
   "notes": "The patent is what makes it long-run: no entrant can compete the supernormal profit away, so unlike perfect competition the SNP block survives."
+ },
+ {
+  "id": "econ-2025-hl-q16-b-ii",
+  "topicId": "economics-1-5",
+  "conceptId": "constructing-and-reading-the-lrac",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q16(b)(ii)",
+  "questionText": "Complete the diagram with three more short run average cost curves (SRAC) to show how the long run average cost curve (LRAC) is constructed. Label your diagram fully. Explain the shape of the LRAC curve you have drawn.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8 + 8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "SRAC 5 Average cost SRAC 1 SRAC 4 LRAC SRAC x 3 Labels x 3 SRAC 2 SRAC 3 LRAC x 1 Label x 1 Q1 Q2 Q3 Q4 Q5 Output",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme itemises the eight: three SRAC curves, three labels, the LRAC itself and its label. The LRAC is the envelope of the short-run curves, so it has to touch them rather than cut through."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Downward sloping part of the LRAC The downward sloping part of the Long Run Average Cost (LRAC) curve, from Q₁ to Q₃, shows economies of scale are more dominant than diseconomies of scale. More specialised equipment may be used, which helps reduce costs in the long run. Upward sloping part of the LRAC The upward sloping part of the Long Run Average Cost (LRAC) curve after Q3 shows diseconomies of scale are more dominant than economies of scale. Further example of diseconomy of scale other than mention in",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The shape is a contest between two forces. Falling to Q3, economies of scale dominate; rising after Q3, diseconomies do. The turning point is where they balance — not a point where costs stop existing."
+   }
+  ],
+  "notes": "The U-shape is not the same U as the short-run curve. This one is built from the bottoms of many short-run curves, each a different plant size."
  },
  {
   "id": "econ-2025-hl-sa-q1-a-for",

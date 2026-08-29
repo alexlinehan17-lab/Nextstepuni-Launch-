@@ -5,9 +5,8 @@
  * The loading state is the screen a brand-new student stares at for the whole
  * of account provisioning, so its easy-to-break properties are pinned here:
  * the copy is caller-supplied (the default is a RETURNING-user message and is
- * wrong during signup), the visual remains decorative, and the overlay variant
- * actually covers the viewport (an inline loader there left the app header and
- * points pill visible behind it, which read as a half-loaded app).
+ * wrong during signup), the visual remains decorative, and every instance is
+ * portaled to the viewport so transformed route layouts cannot shift its centre.
  */
 import { render, screen } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
@@ -28,17 +27,17 @@ describe('LoadingSpinner', () => {
   });
 
   it('announces itself once, and does not narrate the animation', () => {
-    const { container } = render(<LoadingSpinner label="Setting up your account" />);
+    const { baseElement } = render(<LoadingSpinner label="Setting up your account" />);
     const status = screen.getByRole('status');
     expect(status.getAttribute('aria-live')).toBe('polite');
     // The miniature dashboard is decoration; the copy already carries the state.
-    expect(container.querySelector('.nsu-dashboard-assembly')?.getAttribute('aria-hidden')).toBe('true');
+    expect(baseElement.querySelector('.nsu-dashboard-assembly')?.getAttribute('aria-hidden')).toBe('true');
     expect(screen.queryByRole('progressbar')).toBeNull();
   });
 
   it('assembles the three product-specific dashboard cards', () => {
-    const { container } = render(<LoadingSpinner />);
-    const cards = Array.from(container.querySelectorAll('[data-loader-card]'));
+    const { baseElement } = render(<LoadingSpinner />);
+    const cards = Array.from(baseElement.querySelectorAll('[data-loader-card]'));
     expect(cards.map(card => card.getAttribute('data-loader-card'))).toEqual([
       'course',
       'calendar',
@@ -46,13 +45,31 @@ describe('LoadingSpinner', () => {
     ]);
   });
 
-  it('covers the viewport only in the overlay variant', () => {
-    const { container: inline } = render(<LoadingSpinner />);
-    expect(inline.firstElementChild?.className).toContain('min-h-[45vh]');
-    expect(inline.firstElementChild?.className).not.toContain('fixed');
+  it('centres every variant against the dynamic viewport', () => {
+    const { rerender } = render(<LoadingSpinner />);
+    const status = screen.getByRole('status');
+    expect(status.className).toContain('fixed');
+    expect(status.className).toContain('inset-0');
+    expect(status.className).toContain('min-h-[100dvh]');
+    expect(status.className).toContain('items-center');
+    expect(status.className).toContain('justify-center');
+    expect(status.className).toContain('z-[80]');
 
-    const { container: overlay } = render(<LoadingSpinner overlay />);
-    expect(overlay.firstElementChild?.className).toContain('fixed');
-    expect(overlay.firstElementChild?.className).toContain('inset-0');
+    rerender(<LoadingSpinner overlay />);
+    expect(screen.getByRole('status').className).toContain('z-[200]');
+  });
+
+  it('escapes transformed route containers before positioning', () => {
+    render(
+      <div data-testid="transformed-route" style={{ transform: 'translateY(80px)' }}>
+        <LoadingSpinner />
+      </div>,
+    );
+
+    const route = screen.getByTestId('transformed-route');
+    const status = screen.getByRole('status');
+    expect(route.contains(status)).toBe(false);
+    expect(status.parentElement).toBe(document.body);
+    expect(status.getAttribute('data-loader-placement')).toBe('viewport');
   });
 });

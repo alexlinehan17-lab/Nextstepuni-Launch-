@@ -653,4 +653,26 @@ P.cards.append(card(
     'unlike perfect competition the SNP block survives.',
     tariff_kind='fixed'))
 
+# ── Two-cell part: build the LRAC, then explain its shape ──────────────────
+P.cards.append(card(
+    'econ-2025-hl-q16-b-ii', 2025, 'higher', 'economics-1-5',
+    'constructing-and-reading-the-lrac', '2025 HL Q16(b)(ii)',
+    'Complete the diagram with three more short run average cost curves (SRAC) to show how the '
+    'long run average cost curve (LRAC) is constructed. Label your diagram fully. Explain the '
+    'shape of the LRAC curve you have drawn.',
+    '8 + 8', 16,
+    [point('r-1', as_option(block(_MIXED, 'SRAC 5 Average cost \u27e88\u27e9 SRAC 1',
+                                  'Explanation:')), 8,
+           'The scheme itemises the eight: three SRAC curves, three labels, the LRAC itself and '
+           'its label. The LRAC is the envelope of the short-run curves, so it has to touch them '
+           'rather than cut through.'),
+     point('r-2', as_option(block(_MIXED, 'Downward sloping part of the LRAC',
+                                  '(i) Outline two economic measures')), 8,
+           'The shape is a contest between two forces. Falling to Q3, economies of scale dominate; '
+           'rising after Q3, diseconomies do. The turning point is where they balance \u2014 not '
+           'a point where costs stop existing.')],
+    'The U-shape is not the same U as the short-run curve. This one is built from the bottoms of '
+    'many short-run curves, each a different plant size.',
+    tariff_kind='fixed'))
+
 P.emit()

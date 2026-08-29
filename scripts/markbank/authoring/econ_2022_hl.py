@@ -572,4 +572,65 @@ P.cards.append(card(
     'unsold goods rather than a tidier market \u2014 which is the trade-off the question is about.',
     tariff_kind='fixed'))
 
+# ── More two-cell parts ────────────────────────────────────────────────────
+P.cards.append(card(
+    'econ-2022-hl-q15-a-iii', 2022, 'higher', 'economics-1-0',
+    'how-grant-aid-shifts-the-supply-of-milk', '2022 HL Q15(a)(iii)',
+    'Explain, with the use of a fully labelled diagram below, how this grant aid will have '
+    'impacted on the equilibrium price and quantity of milk.',
+    '9 + 5', 14,
+    [point('r-1', as_option(block(BODY, 'Price S1 S2 \u27e89\u27e9 EA P1 P2 EB D1 Q1 Q2 Quantity',
+                                  '\u2022 This grant should help reduce costs')), 9,
+           'Nine labels. Both equilibria have to be marked \u2014 EA before the grant and EB '
+           'after \u2014 because the answer is the MOVE between them, not either point alone.'),
+     point('r-2', as_option(block(BODY, '\u2022 This grant should help reduce costs',
+                                  '31 | P a g e')), 5,
+           'The chain: the grant cuts costs, so SUPPLY shifts right (S1 to S2), so price falls and '
+           'quantity rises. It is the supply curve that moves \u2014 a grant to producers does '
+           'not change what consumers want.')],
+    'Subsidising producers lowers the price consumers pay. That surprises students who expect a '
+    'payment to the seller to push prices up.',
+    figure_key='economics-2022-HL-paper-p31-art',
+    tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2022-hl-q15-b-i', 2022, 'higher', 'economics-4-2',
+    'spotting-a-depreciating-euro-on-a-chart', '2022 HL Q15(b)(i)',
+    'Identify one period where the value of the Euro depreciates against the Pound Sterling. '
+    'Explain your answer.',
+    '1 @ 8', 8,
+    [anyN('r-1', 'A period of depreciation, with the figures \u2014 any one', 8, 1, 8,
+          [as_option(block(BODY, 'During the period December 2013 to December 2015',
+                           'OR During the period December 2018')),
+           as_option(block(BODY, 'During the period December 2018 to December 2019',
+                           'OR During the period December 2020')),
+           as_option(block(BODY, 'During the period December 2020 to December 2021',
+                           'Apart from the change in exchange rates'))],
+          'Any one of three periods earns the \u27e84 + 4\u27e9: four for naming it and four for '
+          'the figures. Depreciation means each Euro buys LESS Sterling, so the rate falls \u2014 '
+          '0.80 down to 0.70, and so on.')],
+    'A falling line here is a WEAKER euro, which is the reading students invert: the axis is '
+    'Sterling per Euro, so down means the euro buys less.',
+    figure_key='economics-2022-HL-paper-p32-art'))
+
+P.cards.append(card(
+    'econ-2022-hl-q14-c-iii', 2022, 'higher', 'economics-2-1',
+    'arguments-for-and-against-a-living-wage', '2022 HL Q14(c)(iii)',
+    'Discuss one argument for and one argument against the implementation of the \u2018Living '
+    'Wage\u2019 \u20ac12.90 per hour as the National Minimum Wage for 2023.',
+    '4 + 4', 8,
+    [point('r-1', as_option(block(BODY, 'Arguments for: \u27e84\u27e9 Introduce a more equitable',
+                                  'Arguments against:')), 4,
+           'One argument FOR, priced \u27e82+2\u27e9 \u2014 two for the point and two for '
+           'developing it. The scheme offers a redistribution argument, protection of vulnerable '
+           'workers, poverty reduction and living standards.'),
+     point('r-2', as_option(block(BODY, 'Arguments against: \u27e84\u27e9 Increases the cost of business',
+                                  '29 | P a g e')), 4,
+           'One argument AGAINST, priced the same way. The business case is higher production '
+           'costs and the cost-push inflation that can follow \u2014 note that the second is an '
+           'economy-wide effect, not a firm-level one.')],
+    'Both halves are required and each is worth the same, so an essay on one side scores at most '
+    'half however good it is.',
+    tariff_kind='fixed'))
+
 P.emit()

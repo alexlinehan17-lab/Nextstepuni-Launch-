@@ -80,21 +80,6 @@
   "evidence": "\"Using the figures obtained in the table draw and label: the Fixed Costs, Variable Costs, and Total Costs… Cost of Production 600,000 500,000 505,000 TC:5 450,000 400,000 400,000 405,000 VC:5 … 100,000 FC: 2 … Axes 4\""
  },
  {
-  "ref": "2022 HL Q14(c)(iii)",
-  "reason": "the scheme welds its two sides together and neither separates cleanly",
-  "evidence": "recorded product decision in econ_excluded.py, made at authoring time against the scheme"
- },
- {
-  "ref": "2022 HL Q15(a)(iii)",
-  "reason": "the explanation beside a diagram, with the tariff covering both",
-  "evidence": "recorded product decision in econ_excluded.py, made at authoring time against the scheme"
- },
- {
-  "ref": "2022 HL Q15(b)(i)",
-  "reason": "answered by reading the euro–sterling exchange-rate chart printed with it",
-  "evidence": "\"Identify one period where the value of the Euro depreciates against the Pound ⟨4 + 4⟩ Sterling. Explain your answer. During the period December 2013 to December 2015. This can be seen as the amount of Sterling which can be bought per Euro declines from 0.80 pence to 0.70 pence approximately. OR During…\""
- },
- {
   "ref": "2022 HL Section A Q1(a)",
   "reason": "the response is the worked PED calculation off the face-mask graph printed with it (and the formula reaches the markdown glyph-mangled)",
   "evidence": "\"Using an appropriate formula, calculate the price elasticity of demand… Show all calculations. ⟨10⟩ ∆𝑄𝑄𝑄𝑄 𝑃𝑃1 + 𝑃𝑃2 ∆𝑃𝑃 × … −4 +1 × (4 + 5) (8 + 4) = −3\" — the scheme's whole answer is the worked sum."
@@ -408,11 +393,6 @@
   "ref": "2025 HL Q15(b)(i)",
   "reason": "worked RPPI percentage calculation — already recorded in econ_excluded.py",
   "evidence": "Workings: 10.1 – 7.4 = 2.7% August 2024 −March 2024 × 100 March 2024 … Answer: 36.48% Deduct 1 mark for omission of %"
- },
- {
-  "ref": "2025 HL Q16(b)(ii)",
-  "reason": "SRAC/LRAC diagram completion (⟨8⟩ = SRAC x 3, Labels x 3, LRAC x 1, Label x 1) with the ⟨8⟩ explanation spread over two headed halves and no per-half split stated. Already recorded in econ_excluded.py, though its recorded reason there ('the response is the worked calculation') mislabels it",
-  "evidence": "Complete the diagram with three more short run average cost curves (SRAC) to show how the long run average cost curve (LRAC) is constructed. … SRAC x 3 Labels x 3 … LRAC x 1 Label x 1 … Explanation: ⟨8⟩ Downward sloping part of the LRAC … Upward sloping part of the LRAC"
  },
  {
   "ref": "2025 OL Q11(b)(ii)",
