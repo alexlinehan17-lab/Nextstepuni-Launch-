@@ -339,4 +339,22 @@ P.cards.append(card(
     section='A', tariff_kind='fixed',
     figure_key='economics-2022-OL-scheme-p09-q7bii-working'))
 
+P.cards.append(card(
+    'econ-2022-ol-sa-q1-i', 2022, 'ordinary', 'economics-3-5',
+    'highest-and-lowest-forecast-growth-years', '2022 OL Section A Q1(i)',
+    'Using the information above, complete the table below. State the year with the highest '
+    'rate of economic growth. State the year with the lowest rate of economic growth.',
+    'fixed', 9,
+    [point('r-1', as_option(block(BODY, 'State the year with the highest rate of economic growth: 2022',
+                                  '\u27e86+3\u27e9')), 6,
+           'The first answer carries 6. The chart is a FORECAST, so the highest year is one of '
+           'the projected ones, not a historical peak.'),
+     point('r-2', as_option(block(BODY, 'State the year with the lowest rate of economic growth: 2020',
+                                  '(ii) Explain the term economic growth')), 3,
+           'The second answer carries 3. 2020 is the pandemic year and the shortest column.')],
+    'Four columns, each labelled with its rate. The lowest is still growth \u2014 the question '
+    'asks for the smallest rate, not for a contraction.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2022-OL-paper-p03-i0'))
+
 P.emit()

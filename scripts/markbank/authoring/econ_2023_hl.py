@@ -624,4 +624,20 @@ P.cards.append(card(
     tariff_kind='fixed',
     figure_key='economics-2023-HL-scheme-p32-q15aiii-working'))
 
+P.cards.append(card(
+    'econ-2023-hl-q15-b-ii-depreciation', 2023, 'higher', 'economics-4-2',
+    'reading-appreciation-or-depreciation-off-an-exchange-rate-chart', '2023 HL Q15(b)(ii)',
+    'Does the trend on the graph below indicate appreciation or depreciation of the Euro '
+    '(\u20ac) to Pound Sterling (\u00a3)? Appreciation: Depreciation: Explain your answer.',
+    '6', 6,
+    [point('r-1', as_option(block(BODY, 'Answer: Depreciation',
+                                  '(iii) Should the Irish government be concerned')), 6,
+           'The chart is quoted as Sterling PER Euro, so a falling line means each Euro buys '
+           'less Sterling \u2014 that is depreciation. The explanation has to name the two '
+           'dates and the two rates.')],
+    'A falling line looks like the pound weakening until you read the axis. It is Euro to '
+    'Sterling, so the currency that is losing value is the one on top.',
+    tariff_kind='fixed',
+    figure_key='economics-2023-HL-paper-p31-art'))
+
 P.emit()

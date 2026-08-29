@@ -536,4 +536,64 @@ P.cards.append(card(
     tariff_kind='fixed',
     figure_key='economics-2024-OL-scheme-p35-q15ci-working'))
 
+P.cards.append(card(
+    'econ-2024-ol-q11-a-i', 2024, 'ordinary', 'economics-3-3',
+    'highest-and-lowest-electricity-price-increases', '2024 OL Q11(a)(i)',
+    'Which company had the highest price increase? Which company had the lowest price increase?',
+    'fixed', 12,
+    [point('r-1', as_option(block(BODY, 'Which company had the highest price increase? Flogas',
+                                  '2nd @ 4')), 8,
+           'The first answer carries 8. The bars are not labelled with their values, so this one '
+           'is read against the % axis.'),
+     point('r-2', as_option(block(BODY, 'Which company had the lowest price increase? Electric Ireland',
+                                  '(ii) Outline one possible economic effect')), 4,
+           'The second answer carries 4. Lowest still means an increase of nearly half \u2014 '
+           'every bar on this chart rises.')],
+    'The chart plots the INCREASE, not the price. A company with the lowest increase may still '
+    'be the dearest, and nothing here says which is which.',
+    tariff_kind='fixed',
+    figure_key='economics-2024-OL-paper-p10-art'))
+
+P.cards.append(card(
+    'econ-2024-ol-q13-b-i', 2024, 'ordinary', 'economics-3-3',
+    'highest-and-lowest-food-price-inflation', '2024 OL Q13(b)(i)',
+    'Which country had the lowest food price inflation? Which country had the highest food '
+    'price inflation?',
+    'fixed', 13,
+    [point('r-1', as_option(block(BODY, 'Which country had the lowest food price inflation? Switzerland',
+                                  '1st @ 8')), 8,
+           'The first answer carries 8. The bars run left to right against a % change axis, so '
+           'the shortest bar is the lowest rate.'),
+     point('r-2', as_option(block(BODY, 'Which country had the highest food price inflation? Turkey',
+                                  '(ii) Explain one possible economic effect food price')), 5,
+           'The second answer carries 5. Turkey is above 100%, which is off the scale of the '
+           'others and is the point of the chart.')],
+    'The axis runs to 120% because of one country. Ireland at about 7% looks flat only by '
+    'comparison, so a student reading the shape rather than the axis can call it zero.',
+    tariff_kind='fixed',
+    figure_key='economics-2024-OL-paper-p17-art'))
+
+P.cards.append(card(
+    'econ-2024-ol-q14-a-i', 2024, 'ordinary', 'economics-3-1',
+    'total-government-spending-and-educations-share', '2024 OL Q14(a)(i)',
+    'Using the figures in the chart above answer the following questions. Show all your '
+    'workings. Calculate how much the government planned to spend in total on the above 5 areas '
+    'in \u20acbn\u2019s. Using your answer from (i) above calculate what percentage (%) of '
+    'government spending was planned to be spent on Education.',
+    'fixed', 20,
+    [point('r-1', as_option(block(BODY, '\u20ac23.4bn + \u20ac9.63bn',
+                                  '(-1 for omission of bn')), 12,
+           'Five figures at a mark each and seven for the answer. Every one of the five is read '
+           'off a bar; none is in the wording.'),
+     point('r-2', as_option(block(BODY, '\u20ac9.63bn \u20ac44.22bn \u00d7 100 = 21.78%',
+                                  '(-1 for omission of %)')), 8,
+           'Three marks for the working and five for the answer. Read the run as \u20ac9.63bn '
+           'over \u20ac44.22bn: the Education bar goes over the TOTAL just calculated, so an '
+           'error in the first half carries straight into the second.')],
+    'The second calculation depends on the first, which is why the paper says \u201cusing your '
+    'answer from (i)\u201d. Dividing by the largest single bar rather than by the total is the '
+    'usual slip, and it gives a plausible-looking percentage.',
+    tariff_kind='fixed',
+    figure_key='economics-2024-OL-paper-p19-i0'))
+
 emit(cards + P.cards)

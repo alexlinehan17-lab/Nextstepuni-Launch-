@@ -474,4 +474,23 @@ P.cards.append(card(
     tariff_kind='fixed',
     figure_key='economics-2023-OL-paper-p20-i0'))
 
+P.cards.append(card(
+    'econ-2023-ol-q13-a-i', 2023, 'ordinary', 'economics-4-2',
+    'highest-and-lowest-years-for-food-and-drink-exports', '2023 OL Q13(a)(i)',
+    'Using the bar chart above, answer the following questions. State the year with the highest '
+    'value in food and drink exports from Ireland. State the year with the lowest value in food '
+    'and drink exports from Ireland.',
+    'fixed', 12,
+    [point('r-1', as_option(block(BODY, 'State the year with the highest value in food and drink '
+                                       'exports from Ireland. 2019', '1st@ 8')), 8,
+           'The first answer carries 8. The peak is 13.85, and it is not the last year on the '
+           'chart \u2014 exports fall back after it.'),
+     point('r-2', as_option(block(BODY, 'State the year with the lowest value in food and drink '
+                                       'exports from Ireland. 2016', '2nd@ 4')), 4,
+           'The second answer carries 4. The lowest is 10.6, the earliest year plotted.')],
+    'Every bar is labelled with its value, so this is read and not estimated \u2014 but 2018 at '
+    '12.35 sits below 2017 at 12.5, so the chart does not simply rise.',
+    tariff_kind='fixed',
+    figure_key='economics-2023-OL-paper-p16-art'))
+
 P.emit()

@@ -288,4 +288,21 @@ P.cards.append(card(
     section='A', tariff_kind='fixed',
     figure_key='economics-2023-HL-scheme-p08-q3a-working'))
 
+P.cards.append(card(
+    'econ-2023-hl-sa-q3-b', 2023, 'higher', 'economics-1-1',
+    'where-diminishing-marginal-utility-sets-in', '2023 HL Section A Q3(b)',
+    'Based upon the marginal utility figures calculated above, at what point does the law of '
+    'diminishing marginal utility set in? Explain your answer.',
+    '6', 6,
+    [point('r-1', as_option(block(BODY, '\u2022 Answer: on the consumption of the third unit',
+                                  'OR (c) Does the formula above obey')), 6,
+           'The point is where marginal utility first FALLS \u2014 40 to 35, on the third unit. '
+           'The explanation has to quote those two figures; naming the unit alone does not carry '
+           'the marks.')],
+    'The scheme accepts either wording of the same moment \u2014 on the third unit, or after '
+    'the second. What it will not accept is the point where TOTAL utility turns, which is a '
+    'different thing and happens later.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2023-HL-scheme-p08-q3a-working'))
+
 P.emit()

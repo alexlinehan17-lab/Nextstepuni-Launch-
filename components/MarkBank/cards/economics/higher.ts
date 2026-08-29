@@ -2009,6 +2009,27 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2022 Higher Level — © State Examinations Commission.",
+    id: "econ-2022-hl-sa-q1-a", topicId: "economics-1-4", conceptId: "price-elasticity-of-demand-off-a-demand-curve",
+    section: "A", questionRef: "2022 HL Section A Q1(a)",
+    questionText: "Using an appropriate formula, calculate the price elasticity of demand depicted in the graph below where the original price of the packet of face masks is €4 and then increases to €5. Show all calculations.",
+    tariffModel: {"kind":"fixed","notation":"10","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "−4 +1 × (4 + 5) (8 + 4) = −3", marks: 10, contextNote: "The scheme sets this as two fractions side by side — the change in quantity over the change in price, times the SUM of the prices over the SUM of the quantities — so read the run as −4 over +1, times (4 + 5) over (8 + 4). Nothing in the wording gives the quantities: 8 and 4 are read off the graph.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2022-HL-paper-p03-art",
+          "src": "/exam-figures/economics/markbank/economics-2022-HL-paper-p03-art.png",
+          "srcHash": "76e2dd33b83f19d509c540e6622191bb",
+          "alt": "A demand curve headed 'DEMAND FOR FACE MASKS', y-axis 'PRICE IN EURO €' from 0 to 7, x-axis 'QUANTITY DEMANDED' from 0 to 20. A thick red line falls from €6 at quantity 2 to €1 at quantity 20, with two red dots marking the points the question uses: €5 at quantity 4 and €4 at quantity 8. Above it the Section A header ('Short Response Questions, 75 marks, Answer 5 out of 10 questions') and the Question 1(a) stem.",
+          "attribution": "SEC Leaving Certificate Economics 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2023, level: "higher",
     paperFileid: "LC034ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2023 Higher Level — © State Examinations Commission.",
@@ -2707,6 +2728,27 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC034ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2023 Higher Level — © State Examinations Commission.",
+    id: "econ-2023-hl-q15-b-ii-depreciation", topicId: "economics-4-2", conceptId: "reading-appreciation-or-depreciation-off-an-exchange-rate-chart",
+    section: "B", questionRef: "2023 HL Q15(b)(ii)",
+    questionText: "Does the trend on the graph below indicate appreciation or depreciation of the Euro (€) to Pound Sterling (£)? Appreciation: Depreciation: Explain your answer.",
+    tariffModel: {"kind":"fixed","notation":"6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Answer: Depreciation Explanation: Between 01/09/2022 and 01/11/2022 the conversion rate of the Euro to Pound Sterling falls from 0.90 to 0.86. This means that every Euro is now worth less i.e. 86 pence instead of 90 pence.", marks: 6, contextNote: "The chart is quoted as Sterling PER Euro, so a falling line means each Euro buys less Sterling — that is depreciation. The explanation has to name the two dates and the two rates.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2023-HL-paper-p31-art",
+          "src": "/exam-figures/economics/markbank/economics-2023-HL-paper-p31-art.png",
+          "srcHash": "ef80638d9d64f6e3f8e9c0abf837f473",
+          "alt": "A line chart headed 'Euro to Sterling', y-axis labelled 'Euro to Stg' with no numbered scale, x-axis showing three dates. Three plotted points, each carrying its value in a blue circle: 0.9 at 01/09/2022, 0.87 at 01/10/2022 and 0.86 at 01/11/2022. The line falls steadily from left to right.",
+          "attribution": "SEC Leaving Certificate Economics 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2023 Higher Level — © State Examinations Commission.",
     id: "econ-2023-hl-sa-q1-a", topicId: "economics-1-2", conceptId: "supply-of-a-fixed-capacity-good",
     section: "A", questionRef: "2023 HL Section A Q1(a)",
     questionText: "France will host the Rugby World Cup in 2023. Explain the supply curve for tickets for this event.",
@@ -2986,6 +3028,28 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed","notation":"3 @ 2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "• 80 – 40 = 40 • 80 + 35 = 115 • 137 – 115 = 22", marks: 6, contextNote: "Three cells, three workings, two marks each. Marginal utility is the DIFFERENCE between consecutive totals, so it runs both ways: subtract to get a marginal from two totals, add to get the next total from a marginal.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2023-HL-scheme-p08-q3a-working",
+          "src": "/exam-figures/economics/markbank/economics-2023-HL-scheme-p08-q3a-working.png",
+          "srcHash": "27fd37cd7f66edbc59044ea17cfb35c2",
+          "alt": "The marking scheme's completed utility table with the three filled-in cells shaded green. Number of units consumed runs 1, 2, 3, 4. Total Utility in Units per Utils reads 40, 80, 115 and 137, with 115 the filled cell. Marginal Utility reads 40, 40, 35 and 22, with 40 and 22 the filled cells. Below, under the heading Workings, three bullets: 80 minus 40 equals 40; 80 plus 35 equals 115; 137 minus 115 equals 22.",
+          "attribution": "SEC Leaving Certificate Economics 2023 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2023 Higher Level — © State Examinations Commission.",
+    id: "econ-2023-hl-sa-q3-b", topicId: "economics-1-1", conceptId: "where-diminishing-marginal-utility-sets-in",
+    section: "A", questionRef: "2023 HL Section A Q3(b)",
+    questionText: "Based upon the marginal utility figures calculated above, at what point does the law of diminishing marginal utility set in? Explain your answer.",
+    tariffModel: {"kind":"fixed","notation":"6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "• Answer: on the consumption of the third unit/after the consumption of the second unit. • Marginal utility declines from 40 to 35 utils.", marks: 6, contextNote: "The point is where marginal utility first FALLS — 40 to 35, on the third unit. The explanation has to quote those two figures; naming the unit alone does not carry the marks.", openList: true },
     ],
     figure: {
           "candId": "economics-2023-HL-scheme-p08-q3a-working",
@@ -3788,6 +3852,27 @@ export const CARDS: SecCard[] = [
           "alt": "The marking scheme's fully completed composite price index worksheet. Food, weight 65 percent, price 60 rising to 66: 66 over 60 times 100 over 1 equals 110, times 65 percent, result 71.5. Transport, weight 20 percent, 30 rising to 45: 45 over 30 times 100 over 1 equals 150, times 20 percent, result 30.0. Other Items, weight 15 percent, 80 rising to 96: 96 over 80 times 100 over 1 equals 120, times 15 percent, result 18. The last row totals the weights at 100 percent and gives the Price Index for the current year in bold as 119.5.",
           "attribution": "SEC Leaving Certificate Economics 2024 Higher Level — © State Examinations Commission",
           "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2024 Higher Level — © State Examinations Commission.",
+    id: "econ-2024-hl-q12-b-i", topicId: "economics-3-3", conceptId: "describing-the-trend-in-cpi-annual-change",
+    section: "B", questionRef: "2024 HL Q12(b)(i)",
+    questionText: "Outline the overall trend of the CPI annual % change in data as shown in the graph above. Use figures from the graph.",
+    tariffModel: {"kind":"fixed","notation":"6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The overall trend of the CPI between March and October is decreasing. It has decreased by almost 3%. It has decreased from just under 8% in March 2023 to approx.. 5% in October 2023.", marks: 6, contextNote: "The paper says USE FIGURES, so the direction on its own is not the answer: the start value, the end value and the size of the fall all have to appear.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2024-HL-paper-p18-art",
+          "src": "/exam-figures/economics/markbank/economics-2024-HL-paper-p18-art.png",
+          "srcHash": "7170d1178560bbcfb8ec54e68e618cd0",
+          "alt": "A line chart headed 'CPI - all items - annual % change', y-axis '%' running 0 to 10, x-axis eight months from March to Oct. The line starts just under 8 in March and falls to about 5.8 in July, rises slightly to about 6.4 by September, then drops to about 5.1 in October. No point is labelled with its value.",
+          "attribution": "SEC Leaving Certificate Economics 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
   } as SecCard,

@@ -65,6 +65,13 @@ const decks = [
    * (reconcile.py) now reads 100.0%: 498 covered + 160 excluded-with-evidence
    * = all 658 asks the 2021-2025 papers print. Nothing removed; all prior ids
    * remain. */
+  /* 2026-08-29 (eighteenth wave): economics 364/280 -> 368/290. The
+   * CHART-LOOKUP bucket, 15 asks, cleared. Six of these charts had never been
+   * extracted at all — a chart drawn in vector strokes is invisible to the
+   * raster extractor — so they were cropped from the paper and bound. One
+   * exclusion, "2024 OL Section A Q8(i) and Q8(ii)", was a COMPOUND ref that is
+   * not a census ask at all and had been inflating the exclusion count by one.
+   * Coverage 598/658 -> 612/658, exclusions 60 -> 46. Nothing removed. */
   /* 2026-08-29 (seventeenth wave): economics 354/268 -> 364/280. The whole
    * WORKED-CALCULATION bucket, 23 asks, cleared. Most needed a picture and not
    * a text row: set as fractions or with superscripts, the scheme's own working
@@ -172,8 +179,8 @@ const decks = [
    * The -trend suffix on the first is forced: econ-2021-hl-q16-a-i is taken by
    * a card whose citation econ_refs.py corrects to Q16(c)(i), and an id is
    * never renamed because it keys a student's review history. */
-  ['economics:higher', ECON_HIGHER, 364, '9db238d3137ddcec512729613d850836fd0a8258188ed41b02abedf126390253'],
-  ['economics:ordinary', ECON_ORDINARY, 280, '02fe3ba3852b692964fd098197d986ad5985d636aaa4ce13d60dd6d6ccdcb826'],
+  ['economics:higher', ECON_HIGHER, 368, '9c4d21faa427adf75c3bbae1cc9467250387a2fa1a23c947da3936ccbf4ba8db'],
+  ['economics:ordinary', ECON_ORDINARY, 290, '7dc559c26092146dd480a43cf1f0735d57dd440f15081defddd7f555b6a40de7'],
   /* 2026-08-23: the two newest subjects had shipped with NO identity baseline
    * at all — found by the ratchet-soundness review, which means every earlier
    * count in this file was guarding seven decks while two rode along
@@ -201,6 +208,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7316);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7330);
   });
 });

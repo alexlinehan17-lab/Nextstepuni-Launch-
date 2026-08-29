@@ -450,4 +450,23 @@ P.cards.append(card(
     tariff_kind='fixed',
     figure_key='economics-2022-OL-scheme-p20-q13bii-working'))
 
+P.cards.append(card(
+    'econ-2022-ol-q11-a-i', 2022, 'ordinary', 'economics-2-0',
+    'highest-and-lowest-market-share-in-streaming', '2022 OL Q11(a)(i)',
+    'Using the data above complete the table below: Which service has the highest market share? '
+    'Which service has the lowest market share?',
+    'fixed', 12,
+    [point('r-1', as_option(block(BODY, 'Which service has the highest market share? YouTube',
+                                  '\u27e89+3\u27e9')), 9,
+           'The first answer carries 9. YouTube is about 164 million users, more than three '
+           'times the next service.'),
+     point('r-2', as_option(block(BODY, 'Which service has the lowest market share? Vimeo',
+                                  '(ii) Outline two advantages')), 3,
+           'The second answer carries 3. Vimeo at about 15 million is just below Amazon Prime '
+           'Video, so the two shortest bars have to be compared rather than glanced at.')],
+    'The bars are unlabelled, so both answers are read against the axis. The gap between the '
+    'bottom two is small enough that the order matters.',
+    tariff_kind='fixed',
+    figure_key='economics-2022-OL-paper-p10-art'))
+
 P.emit()

@@ -764,4 +764,19 @@ P.cards.append(card(
     tariff_kind='fixed',
     figure_key='economics-2024-HL-scheme-p24-q12bii-working'))
 
+P.cards.append(card(
+    'econ-2024-hl-q12-b-i', 2024, 'higher', 'economics-3-3',
+    'describing-the-trend-in-cpi-annual-change', '2024 HL Q12(b)(i)',
+    'Outline the overall trend of the CPI annual % change in data as shown in the graph above. '
+    'Use figures from the graph.',
+    '6', 6,
+    [point('r-1', as_option(block(BODY, 'The overall trend of the CPI between March and October is decreasing',
+                                  '(ii) The table below shows')), 6,
+           'The paper says USE FIGURES, so the direction on its own is not the answer: the start '
+           'value, the end value and the size of the fall all have to appear.')],
+    'The chart plots the annual RATE of change, so a falling line means prices are still rising, '
+    'just more slowly. Reading it as prices falling is the trap this question is built on.',
+    tariff_kind='fixed',
+    figure_key='economics-2024-HL-paper-p18-art'))
+
 emit(cards + P.cards)

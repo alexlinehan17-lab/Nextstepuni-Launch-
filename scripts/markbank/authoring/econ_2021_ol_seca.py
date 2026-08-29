@@ -184,4 +184,24 @@ P.cards.append(card(
     '€1.4bn with no verdict is an incomplete answer.',
     section='A', tariff_kind='fixed'))
 
+P.cards.append(card(
+    'econ-2021-ol-sa-q4', 2021, 'ordinary', 'economics-1-1',
+    'completing-a-marginal-utility-table-and-finding-the-turn', '2021 OL Section A Q4',
+    'Complete the blank spaces below and answer the question that follows. Show your workings. '
+    'Based on the table above: At what point does the point of diminishing marginal utility set '
+    'in?',
+    'fixed', 15,
+    [point('r-1', sl('38 \u2013 25 = 13', 'Based on the table above'), 12,
+           'Six figures at two marks each. Marginal utility is the DIFFERENCE between one total '
+           'and the one before it, so each blank is a subtraction down the total utility row.'),
+     point('r-2', sl('After 2nd is consumed or before 3rd is consumed', '5 Sony released'), 3,
+           'Diminishing marginal utility sets in where the marginal figures start to FALL '
+           '\u2014 15 down to 13 \u2014 not where total utility falls. Total utility is still '
+           'rising throughout this table.')],
+    'Total utility rises all the way to 47, so a student watching the wrong row sees no turning '
+    'point at all. The turn is in the marginal row, and it happens while the total is still '
+    'climbing.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2021-OL-scheme-p05-q4-working'))
+
 P.emit()

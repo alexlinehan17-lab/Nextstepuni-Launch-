@@ -4640,6 +4640,47 @@
   "notes": "Income above expenditure is a SURPLUS. The word is worth marks on its own, so a correct €1.4bn with no verdict is an incomplete answer."
  },
  {
+  "id": "econ-2021-ol-sa-q4",
+  "topicId": "economics-1-1",
+  "conceptId": "completing-a-marginal-utility-table-and-finding-the-turn",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2021 OL Section A Q4",
+  "questionText": "Complete the blank spaces below and answer the question that follows. Show your workings. Based on the table above: At what point does the point of diminishing marginal utility set in?",
+  "stem": "",
+  "figureKey": "economics-2021-OL-scheme-p05-q4-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "38 – 25 = 13 47 – 38 = 9",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Six figures at two marks each. Marginal utility is the DIFFERENCE between one total and the one before it, so each blank is a subtraction down the total utility row."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "After 2nd is consumed or before 3rd is consumed.",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Diminishing marginal utility sets in where the marginal figures start to FALL — 15 down to 13 — not where total utility falls. Total utility is still rising throughout this table."
+   }
+  ],
+  "notes": "Total utility rises all the way to 47, so a student watching the wrong row sees no turning point at all. The turn is in the marginal row, and it happens while the total is still climbing."
+ },
+ {
   "id": "econ-2022-hl-q11-a-ii",
   "topicId": "economics-3-5",
   "conceptId": "balanced-regional-development",
@@ -7451,6 +7492,39 @@
   "notes": "At point H the firm makes no Tropicana at all, so the whole 62 million litres is the cost of getting there."
  },
  {
+  "id": "econ-2022-hl-sa-q1-a",
+  "topicId": "economics-1-4",
+  "conceptId": "price-elasticity-of-demand-off-a-demand-curve",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q1(a)",
+  "questionText": "Using an appropriate formula, calculate the price elasticity of demand depicted in the graph below where the original price of the packet of face masks is €4 and then increases to €5. Show all calculations.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-paper-p03-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "10",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "−4 +1 × (4 + 5) (8 + 4) = −3",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme sets this as two fractions side by side — the change in quantity over the change in price, times the SUM of the prices over the SUM of the quantities — so read the run as −4 over +1, times (4 + 5) over (8 + 4). Nothing in the wording gives the quantities: 8 and 4 are read off the graph."
+   }
+  ],
+  "notes": "The price rise is given but the quantity fall is not, so the whole numerator has to come off the curve. A PED of −3 means demand is elastic, and the minus sign is part of the answer."
+ },
+ {
   "id": "econ-2022-ol-q11-a-ii",
   "topicId": "economics-2-0",
   "conceptId": "advantages-of-many-firms-for-consumers",
@@ -9049,6 +9123,47 @@
   "notes": "The scheme prints this as a fraction with 1 above the line, so the flat text reads “0.1 + 0.4 = 2” — which is why the scheme’s own working rides with the card as a picture."
  },
  {
+  "id": "econ-2022-ol-q11-a-i",
+  "topicId": "economics-2-0",
+  "conceptId": "highest-and-lowest-market-share-in-streaming",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 OL Q11(a)(i)",
+  "questionText": "Using the data above complete the table below: Which service has the highest market share? Which service has the lowest market share?",
+  "stem": "",
+  "figureKey": "economics-2022-OL-paper-p10-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Which service has the highest market share? YouTube",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "The first answer carries 9. YouTube is about 164 million users, more than three times the next service."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Which service has the lowest market share? Vimeo",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The second answer carries 3. Vimeo at about 15 million is just below Amazon Prime Video, so the two shortest bars have to be compared rather than glanced at."
+   }
+  ],
+  "notes": "The bars are unlabelled, so both answers are read against the axis. The gap between the bottom two is small enough that the order matters."
+ },
+ {
   "id": "econ-2022-ol-sa-q2-ii",
   "topicId": "economics-1-3",
   "conceptId": "what-the-census-is-used-for",
@@ -9800,6 +9915,47 @@
    }
   ],
   "notes": "The scheme prints the deduction note beside the working, so the two interleave in extraction — the picture is the faithful form. A mark goes for the € sign."
+ },
+ {
+  "id": "econ-2022-ol-sa-q1-i",
+  "topicId": "economics-3-5",
+  "conceptId": "highest-and-lowest-forecast-growth-years",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 OL Section A Q1(i)",
+  "questionText": "Using the information above, complete the table below. State the year with the highest rate of economic growth. State the year with the lowest rate of economic growth.",
+  "stem": "",
+  "figureKey": "economics-2022-OL-paper-p03-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "State the year with the highest rate of economic growth: 2022",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The first answer carries 6. The chart is a FORECAST, so the highest year is one of the projected ones, not a historical peak."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "State the year with the lowest rate of economic growth: 2020",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The second answer carries 3. 2020 is the pandemic year and the shortest column."
+   }
+  ],
+  "notes": "Four columns, each labelled with its rate. The lowest is still growth — the question asks for the smallest rate, not for a contraction."
  },
  {
   "id": "econ-2023-hl-q11-a-ii",
@@ -11832,6 +11988,39 @@
   "notes": "The weights are what make it composite: food moves the index almost four times as much as other items. Averaging the three simple indices ignores that and is the usual wrong answer."
  },
  {
+  "id": "econ-2023-hl-q15-b-ii-depreciation",
+  "topicId": "economics-4-2",
+  "conceptId": "reading-appreciation-or-depreciation-off-an-exchange-rate-chart",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 HL Q15(b)(ii)",
+  "questionText": "Does the trend on the graph below indicate appreciation or depreciation of the Euro (€) to Pound Sterling (£)? Appreciation: Depreciation: Explain your answer.",
+  "stem": "",
+  "figureKey": "economics-2023-HL-paper-p31-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Answer: Depreciation Explanation: Between 01/09/2022 and 01/11/2022 the conversion rate of the Euro to Pound Sterling falls from 0.90 to 0.86. This means that every Euro is now worth less i.e. 86 pence instead of 90 pence.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The chart is quoted as Sterling PER Euro, so a falling line means each Euro buys less Sterling — that is depreciation. The explanation has to name the two dates and the two rates."
+   }
+  ],
+  "notes": "A falling line looks like the pound weakening until you read the axis. It is Euro to Sterling, so the currency that is losing value is the one on top."
+ },
+ {
   "id": "econ-2023-hl-sa-q1-a",
   "topicId": "economics-1-2",
   "conceptId": "supply-of-a-fixed-capacity-good",
@@ -12637,6 +12826,39 @@
    }
   ],
   "notes": "The blanks alternate between the two rows on purpose, so the same relationship has to be used forwards and backwards. Reading marginal utility as a total is what breaks it."
+ },
+ {
+  "id": "econ-2023-hl-sa-q3-b",
+  "topicId": "economics-1-1",
+  "conceptId": "where-diminishing-marginal-utility-sets-in",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2023 HL Section A Q3(b)",
+  "questionText": "Based upon the marginal utility figures calculated above, at what point does the law of diminishing marginal utility set in? Explain your answer.",
+  "stem": "",
+  "figureKey": "economics-2023-HL-scheme-p08-q3a-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "• Answer: on the consumption of the third unit/after the consumption of the second unit. • Marginal utility declines from 40 to 35 utils.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The point is where marginal utility first FALLS — 40 to 35, on the third unit. The explanation has to quote those two figures; naming the unit alone does not carry the marks."
+   }
+  ],
+  "notes": "The scheme accepts either wording of the same moment — on the third unit, or after the second. What it will not accept is the point where TOTAL utility turns, which is a different thing and happens later."
  },
  {
   "id": "econ-2023-ol-q11-a-i",
@@ -14355,6 +14577,47 @@
   "notes": "Profit is what is LEFT after cost, so the subtraction runs revenue minus cost. Reversing it gives the right magnitude with the wrong sign, and the table already shows a loss at zero output to make the distinction matter."
  },
  {
+  "id": "econ-2023-ol-q13-a-i",
+  "topicId": "economics-4-2",
+  "conceptId": "highest-and-lowest-years-for-food-and-drink-exports",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q13(a)(i)",
+  "questionText": "Using the bar chart above, answer the following questions. State the year with the highest value in food and drink exports from Ireland. State the year with the lowest value in food and drink exports from Ireland.",
+  "stem": "",
+  "figureKey": "economics-2023-OL-paper-p16-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "State the year with the highest value in food and drink exports from Ireland. 2019",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The first answer carries 8. The peak is 13.85, and it is not the last year on the chart — exports fall back after it."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "State the year with the lowest value in food and drink exports from Ireland. 2016",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The second answer carries 4. The lowest is 10.6, the earliest year plotted."
+   }
+  ],
+  "notes": "Every bar is labelled with its value, so this is read and not estimated — but 2018 at 12.35 sits below 2017 at 12.5, so the chart does not simply rise."
+ },
+ {
   "id": "econ-2023-ol-sa-q2-b",
   "topicId": "economics-3-4",
   "conceptId": "functions-of-the-central-bank-ol",
@@ -15133,6 +15396,39 @@
    }
   ],
   "notes": "All three are large, well-known Irish organisations. Only one has no competitor, and that is the whole test."
+ },
+ {
+  "id": "econ-2023-ol-sa-q1-i",
+  "topicId": "economics-3-2",
+  "conceptId": "reading-the-lowest-month-off-an-unemployment-chart",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2023 OL Section A Q1(i)",
+  "questionText": "Identify the month when unemployment was at its lowest.",
+  "stem": "",
+  "figureKey": "economics-2023-OL-paper-p03-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Identify the month when unemployment was at its lowest. July 2022",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The chart labels its months JUL-22 to JAN-23, so the answer has to be given as a month and a year, not as a rate."
+   }
+  ],
+  "notes": "The lowest point is the FIRST month plotted, so the line only rises across the chart. Students who scan for a dip find none and hunt for the wrong thing."
  },
  {
   "id": "econ-2024-hl-q11-a-iii",
@@ -17559,6 +17855,39 @@
    }
   ],
   "notes": "Transport rose by half but carries a fifth of the weight, so it moves the composite less than food, which rose a tenth on a 65% weight. Averaging the three simple indices ignores exactly that and is the usual wrong answer."
+ },
+ {
+  "id": "econ-2024-hl-q12-b-i",
+  "topicId": "economics-3-3",
+  "conceptId": "describing-the-trend-in-cpi-annual-change",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 HL Q12(b)(i)",
+  "questionText": "Outline the overall trend of the CPI annual % change in data as shown in the graph above. Use figures from the graph.",
+  "stem": "",
+  "figureKey": "economics-2024-HL-paper-p18-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The overall trend of the CPI between March and October is decreasing. It has decreased by almost 3%. It has decreased from just under 8% in March 2023 to approx.. 5% in October 2023.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The paper says USE FIGURES, so the direction on its own is not the answer: the start value, the end value and the size of the fall all have to appear."
+   }
+  ],
+  "notes": "The chart plots the annual RATE of change, so a falling line means prices are still rising, just more slowly. Reading it as prices falling is the trap this question is built on."
  },
  {
   "id": "econ-2024-hl-sa-q2-b",
@@ -20176,6 +20505,129 @@
   "notes": "The scheme prints this as stacked fractions, so the working rides with the card as a picture. Flattened it reads as one long addition and stops being a division at all."
  },
  {
+  "id": "econ-2024-ol-q11-a-i",
+  "topicId": "economics-3-3",
+  "conceptId": "highest-and-lowest-electricity-price-increases",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q11(a)(i)",
+  "questionText": "Which company had the highest price increase? Which company had the lowest price increase?",
+  "stem": "",
+  "figureKey": "economics-2024-OL-paper-p10-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Which company had the highest price increase? Flogas",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The first answer carries 8. The bars are not labelled with their values, so this one is read against the % axis."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Which company had the lowest price increase? Electric Ireland",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The second answer carries 4. Lowest still means an increase of nearly half — every bar on this chart rises."
+   }
+  ],
+  "notes": "The chart plots the INCREASE, not the price. A company with the lowest increase may still be the dearest, and nothing here says which is which."
+ },
+ {
+  "id": "econ-2024-ol-q13-b-i",
+  "topicId": "economics-3-3",
+  "conceptId": "highest-and-lowest-food-price-inflation",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q13(b)(i)",
+  "questionText": "Which country had the lowest food price inflation? Which country had the highest food price inflation?",
+  "stem": "",
+  "figureKey": "economics-2024-OL-paper-p17-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 13,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Which country had the lowest food price inflation? Switzerland",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The first answer carries 8. The bars run left to right against a % change axis, so the shortest bar is the lowest rate."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Which country had the highest food price inflation? Turkey",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The second answer carries 5. Turkey is above 100%, which is off the scale of the others and is the point of the chart."
+   }
+  ],
+  "notes": "The axis runs to 120% because of one country. Ireland at about 7% looks flat only by comparison, so a student reading the shape rather than the axis can call it zero."
+ },
+ {
+  "id": "econ-2024-ol-q14-a-i",
+  "topicId": "economics-3-1",
+  "conceptId": "total-government-spending-and-educations-share",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q14(a)(i)",
+  "questionText": "Using the figures in the chart above answer the following questions. Show all your workings. Calculate how much the government planned to spend in total on the above 5 areas in €bn’s. Using your answer from (i) above calculate what percentage (%) of government spending was planned to be spent on Education.",
+  "stem": "",
+  "figureKey": "economics-2024-OL-paper-p19-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "€23.4bn + €9.63bn + €3.91bn + €3.98bn + €3.30bn = €44.22 billion",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Five figures at a mark each and seven for the answer. Every one of the five is read off a bar; none is in the wording."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "€9.63bn €44.22bn × 100 = 21.78%",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Three marks for the working and five for the answer. Read the run as €9.63bn over €44.22bn: the Education bar goes over the TOTAL just calculated, so an error in the first half carries straight into the second."
+   }
+  ],
+  "notes": "The second calculation depends on the first, which is why the paper says “using your answer from (i)”. Dividing by the largest single bar rather than by the total is the usual slip, and it gives a plausible-looking percentage."
+ },
+ {
   "id": "econ-2024-ol-sa-q1-i",
   "topicId": "economics-0-2",
   "conceptId": "oceans-as-an-economic-resource",
@@ -20634,6 +21086,72 @@
    }
   ],
   "notes": "Both rows are about Ireland trading with a European neighbour, so only the direction of the payment separates them. A service counts as invisible whether or not anyone crosses a border to consume it."
+ },
+ {
+  "id": "econ-2024-ol-sa-q8-i",
+  "topicId": "economics-4-0",
+  "conceptId": "lowest-inequality-on-a-gini-chart",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2024 OL Section A Q8(i)",
+  "questionText": "Using the data given, state which country has the lowest level of inequality.",
+  "stem": "",
+  "figureKey": "economics-2024-OL-paper-p08-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Country with the lowest level of inequality. Slovakia",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "A LOWER Gini coefficient means LESS inequality, so the shortest bar wins. The scale runs 0 to 1, where 0 would be complete equality."
+   }
+  ],
+  "notes": "The reflex is to pick the country you recognise or the bar that looks biggest. Slovakia at 0.22 is below Ireland at 0.29, and the direction of the scale is the whole question."
+ },
+ {
+  "id": "econ-2024-ol-sa-q8-ii",
+  "topicId": "economics-4-0",
+  "conceptId": "highest-inequality-on-a-gini-chart",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2024 OL Section A Q8(ii)",
+  "questionText": "Using the data given, state which country has the highest level of inequality.",
+  "stem": "",
+  "figureKey": "economics-2024-OL-paper-p08-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Country with the highest level of inequality. USA",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The longest bar, 0.38. The second part is worth half the first, so it is the cheaper half of the same reading."
+   }
+  ],
+  "notes": "Same chart, opposite end. The Gini rises with inequality, so the highest coefficient is the most unequal country — not the richest one."
  },
  {
   "id": "econ-2025-hl-q11-a-ii",

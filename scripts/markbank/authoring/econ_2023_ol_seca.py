@@ -244,4 +244,18 @@ P.cards.append(card(
     section='A', tariff_kind='fixed',
     figure_key='economics-2023-OL-paper-p06-i0'))
 
+P.cards.append(card(
+    'econ-2023-ol-sa-q1-i', 2023, 'ordinary', 'economics-3-2',
+    'reading-the-lowest-month-off-an-unemployment-chart', '2023 OL Section A Q1(i)',
+    'Identify the month when unemployment was at its lowest.',
+    '8', 8,
+    [point('r-1', as_option(block(BODY, 'Identify the month when unemployment was at its lowest. July 2022',
+                                  '(ii) Comment on the unemployment rate')), 8,
+           'The chart labels its months JUL-22 to JAN-23, so the answer has to be given as a '
+           'month and a year, not as a rate.')],
+    'The lowest point is the FIRST month plotted, so the line only rises across the chart. '
+    'Students who scan for a dip find none and hunt for the wrong thing.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2023-OL-paper-p03-i0'))
+
 P.emit()

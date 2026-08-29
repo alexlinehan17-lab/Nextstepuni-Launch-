@@ -309,4 +309,23 @@ P.cards.append(card(
     section='A', tariff_kind='fixed',
     figure_key='economics-2022-HL-paper-p13-i0'))
 
+P.cards.append(card(
+    'econ-2022-hl-sa-q1-a', 2022, 'higher', 'economics-1-4',
+    'price-elasticity-of-demand-off-a-demand-curve', '2022 HL Section A Q1(a)',
+    'Using an appropriate formula, calculate the price elasticity of demand depicted in the '
+    'graph below where the original price of the packet of face masks is \u20ac4 and then '
+    'increases to \u20ac5. Show all calculations.',
+    '10', 10,
+    [point('r-1', as_option(block(BODY, '\u22124 +1 \u00d7 (4 + 5)',
+                                  '(b) With reference to the graph above')), 10,
+           'The scheme sets this as two fractions side by side \u2014 the change in quantity '
+           'over the change in price, times the SUM of the prices over the SUM of the quantities '
+           '\u2014 so read the run as \u22124 over +1, times (4 + 5) over (8 + 4). Nothing in '
+           'the wording gives the quantities: 8 and 4 are read off the graph.')],
+    'The price rise is given but the quantity fall is not, so the whole numerator has to come '
+    'off the curve. A PED of \u22123 means demand is elastic, and the minus sign is part of the '
+    'answer.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2022-HL-paper-p03-art'))
+
 P.emit()

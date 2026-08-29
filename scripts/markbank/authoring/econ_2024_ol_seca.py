@@ -189,4 +189,32 @@ P.cards.append(card(
     section='A', tariff_kind='fixed',
     figure_key='economics-2024-OL-scheme-p10-q5-ticks'))
 
+P.cards.append(card(
+    'econ-2024-ol-sa-q8-i', 2024, 'ordinary', 'economics-4-0',
+    'lowest-inequality-on-a-gini-chart', '2024 OL Section A Q8(i)',
+    'Using the data given, state which country has the lowest level of inequality.',
+    '8', 8,
+    [point('r-1', as_option(block(T, 'Country with the lowest level of inequality. Slovakia',
+                                  '(ii) Country with the highest')), 8,
+           'A LOWER Gini coefficient means LESS inequality, so the shortest bar wins. The scale '
+           'runs 0 to 1, where 0 would be complete equality.')],
+    'The reflex is to pick the country you recognise or the bar that looks biggest. Slovakia at '
+    '0.22 is below Ireland at 0.29, and the direction of the scale is the whole question.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2024-OL-paper-p08-art'))
+
+P.cards.append(card(
+    'econ-2024-ol-sa-q8-ii', 2024, 'ordinary', 'economics-4-0',
+    'highest-inequality-on-a-gini-chart', '2024 OL Section A Q8(ii)',
+    'Using the data given, state which country has the highest level of inequality.',
+    '4', 4,
+    [point('r-1', as_option(block(T, 'Country with the highest level of inequality. USA',
+                                  '9. The following data shows')), 4,
+           'The longest bar, 0.38. The second part is worth half the first, so it is the cheaper '
+           'half of the same reading.')],
+    'Same chart, opposite end. The Gini rises with inequality, so the highest coefficient is the '
+    'most unequal country \u2014 not the richest one.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2024-OL-paper-p08-art'))
+
 P.emit()

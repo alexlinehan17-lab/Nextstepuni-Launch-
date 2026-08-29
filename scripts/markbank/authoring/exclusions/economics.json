@@ -45,11 +45,6 @@
   "evidence": "Scheme p.5: 'It is elastic (the PED is greater than 1 in absolute terms).' ⟨1 @ 1⟩ — unanswerable without the −4.71 worked in part (i)."
  },
  {
-  "ref": "2021 OL Section A Q4",
-  "reason": "a table completion — the marks are for the marginal-utility figures, and the follow-up is read off the completed table",
-  "evidence": "Scheme p.5: '38 – 25 = 13 / 47 – 38 = 9' ⟨6 @ 2⟩; 'After 2nd is consumed or before 3rd is consumed.' ⟨1 @ 3⟩."
- },
- {
   "ref": "2022 HL Q11(b)(i)",
   "reason": "the explanation beside a diagram, with the tariff covering both (recorded EXCLUDED_TEXT class)",
   "evidence": "Paper: 'Explain, with the use of a fully labelled diagram how the equilibrium price of land is determined.' Scheme prints the diagram with 'The supply of land is fixed in quantity' welded beside it — recorded in econ_excluded.py EXCLUDED_TEXT."
@@ -58,11 +53,6 @@
   "ref": "2022 HL Q14(b)(ii)",
   "reason": "a graph to be drawn; the scheme's response is the plotted cost figures with per-curve marks, off the (b)(i) table",
   "evidence": "\"Using the figures obtained in the table draw and label: the Fixed Costs, Variable Costs, and Total Costs… Cost of Production 600,000 500,000 505,000 TC:5 450,000 400,000 400,000 405,000 VC:5 … 100,000 FC: 2 … Axes 4\""
- },
- {
-  "ref": "2022 HL Section A Q1(a)",
-  "reason": "the response is the worked PED calculation off the face-mask graph printed with it (and the formula reaches the markdown glyph-mangled)",
-  "evidence": "\"Using an appropriate formula, calculate the price elasticity of demand… Show all calculations. ⟨10⟩ ∆𝑄𝑄𝑄𝑄 𝑃𝑃1 + 𝑃𝑃2 ∆𝑃𝑃 × … −4 +1 × (4 + 5) (8 + 4) = −3\" — the scheme's whole answer is the worked sum."
  },
  {
   "ref": "2022 HL Section A Q4(c)",
@@ -93,11 +83,6 @@
   "ref": "2022 HL Section A Q7(a)(i)",
   "reason": "The paper prints Figure A and Figure B side by side and asks which shows the real ECB trend. Only Figure B is catalogued, so a student would be asked to choose between two charts while seeing one. Needs a crop of the PAIR before it can be carded; the tick itself is readable off the scheme.",
   "evidence": "\"Identify which chart accurately displays the correct trend in in the ECB rate… Choose by means of a tick one of the boxes below. ⟨1⟩ Figure A: Figure B: ✔\""
- },
- {
-  "ref": "2022 OL Q11(a)(i)",
-  "reason": "a table completion answered by reading the streaming-services chart printed with it",
-  "evidence": "Which service has the highest market share? YouTube ⟨9+3⟩ Which service has the lowest market share? Vimeo"
  },
  {
   "ref": "2022 OL Q11(b)(ii)",
@@ -135,19 +120,9 @@
   "evidence": "Complete the table below to show your understanding of the factors of production used in the production of yogurt. Some of the information has been completed. ... ⟨24⟩ ⟨4 x 6⟩ ⟨(4+2)⟩ 1st x 4 2nd x 2"
  },
  {
-  "ref": "2022 OL Section A Q1(i)",
-  "reason": "a table completion answered by reading the growth chart printed with it",
-  "evidence": "State the year with the highest rate of economic growth: 2022 ⟨6+3⟩ State the year with the lowest rate of economic growth: 2020"
- },
- {
   "ref": "2023 HL Q13(a)(i)",
   "reason": "labels to be placed on a drawn diagram; the credit is the thirteen labelled components of the circular-flow drawing itself, no separable wording (recorded diagram-labels class)",
   "evidence": "Scheme p.23: 'Draw a fully labelled diagram showing the Circular Flow of Income... ⟨13 @ 1⟩ Households Firms Purchase of Goods and Services Government Financial Institutions Foreign Markets' — the labels annotate the scheme's own drawing; econ_parts finds no response lines."
- },
- {
-  "ref": "2023 HL Q15(b)(ii)",
-  "reason": "answered by reading the exchange-rate graph printed beside it (established chart-reading class)",
-  "evidence": "0.9 Euro (€) to Stg (£) 0.87 0.86 01/09/2022 01/10/2022 01/11/2022 Answer: Depreciation Explanation: Between 01/09/2022 and 01/11/2022 the conversion rate of the Euro to Pound Sterling falls from 0.90 to 0.86."
  },
  {
   "ref": "2023 HL Q16(a)(i)",
@@ -165,11 +140,6 @@
   "evidence": "Gross National Product (GNP) at Current Market Prices: €323bn + EU subsidies €1.7 bn - EU taxes €0.5bn … Gross National Income at Current Market Prices: €324.2 bn - Adjustments: €89 bn C = Modified Gross National Income ⟨2 @ 6⟩"
  },
  {
-  "ref": "2023 HL Section A Q3(b)",
-  "reason": "answered by reading the marginal-utility figures the student calculated in 3(a) — the established leave-alone class of parts worked to the student's own earlier answer",
-  "evidence": "• Answer: on the consumption of the third unit/after the consumption of the second unit. • Marginal utility declines from 40 to 35 utils."
- },
- {
   "ref": "2023 HL Section A Q4(a)",
   "reason": "already recorded in econ_excluded.py: 'a table completion — the marks are for filling the table, not for prose'",
   "evidence": "Complete the missing average cost and marginal cost figures in the table below. ⟨6⟩ … Workings: • 82 ÷ 2 = 41 • 108 - 82 = 26 • 152 ÷ 4 = 38 • 152 – 108 = 44"
@@ -180,11 +150,6 @@
   "evidence": "Scheme p.13: '• The output the firm will produce in the equilibrium (use label Q1) 1st @ 4 • The price the firm will charge for its output (use label P1) 2nd@ 4 • The average cost of producing this output (using point C1) 3rd @ 1' followed only by the completed diagram."
  },
  {
-  "ref": "2023 OL Q13(a)(i)",
-  "reason": "Answered only by reading the bar chart printed beside it.",
-  "evidence": "Scheme p.17: 'State the year with the highest value in food and drink exports from Ireland. 2019 1st@ 8 / State the year with the lowest value in food and drink exports from Ireland. 2016 2nd@ 4' — under the Bord Bia bar chart."
- },
- {
   "ref": "2023 OL Q15(b)(i)",
   "reason": "A graph to be drawn; the scheme's response is the drawn figure itself with no creditable components itemised in prose — the registered class of '2024 OL Q13(a)(i)' and '2025 OL Q13(b)(i)'. Not figureNeeded: there is no wording to card even with a crop.",
   "evidence": "Scheme p.24: '(i) Draw and label (include the axes) the market demand curve for electric cars. ⟨16⟩ ⟨4 @ 4⟩' followed only by the drawing: 'Price / D / D2 / Quantity'."
@@ -193,16 +158,6 @@
   "ref": "2023 OL Q15(b)(ii)",
   "reason": "The shift is shown on the student's own (b)(i) diagram and the scheme never says which of the printed 6/3 pays the drawing versus the words — the class of the registered '2024 OL Q15(b)(ii)' and '2025 OL Q15(b)(ii)' ('the explanation beside a diagram'); assigning the split would invent a tariff.",
   "evidence": "Scheme p.24: '⟨9⟩ ⟨(6+3)⟩ The demand curve shifts to the right. Consumers can afford to buy more.' against 'show how this would affect the market demand curve in (i) above. Explain your answer.'"
- },
- {
-  "ref": "2023 OL Section A Q1(i)",
-  "reason": "Answered only by reading the unemployment chart printed beside it — the registered chart-reading class ('2021 HL Q14(a)(i)', '2025 HL Q12(a)(i)'); the card would test chart-reading, not economics.",
-  "evidence": "Scheme p.5: '(i) Identify the month when unemployment was at its lowest. July 2022 ⟨8⟩' — printed directly under the CSO unemployment-rate chart."
- },
- {
-  "ref": "2024 HL Q12(b)(i)",
-  "reason": "Answered only by reading the CPI graph printed beside it — the paper instructs 'Use figures from the graph'.",
-  "evidence": "Scheme p.24: 'The overall trend of the CPI between March and October is decreasing. It has decreased by almost 3%. It has decreased from just under 8% in March 2023 to approx.. 5% in October 2023.' ⟨6⟩."
  },
  {
   "ref": "2024 HL Section A Q10(a)(i)",
@@ -220,11 +175,6 @@
   "evidence": "Scheme p.9: 'Using the information above, illustrate with the aid of a fully labelled diagram how a shortage of tickets for this concert may arise. ⟨8⟩' — the answer is the drawn diagram; the only text the extractor reads off it is '€97.10'."
  },
  {
-  "ref": "2024 OL Q11(a)(i)",
-  "reason": "Answered by reading the electricity-price chart printed beside it — the established chart-lookup class (2021 HL Q14(a)(i) etc.).",
-  "evidence": "Scheme p13: '(i) 1st @ 8 / 2nd @ 4 — Which company had the highest price increase? Flogas. Which company had the lowest price increase? Electric Ireland' — both read off the SEAI chart."
- },
- {
   "ref": "2024 OL Q11(b)(ii)",
   "reason": "Already recorded in econ_excluded.py: labels to be placed on a diagram; no wording to show.",
   "evidence": "Scheme p15: '(ii) Equilibrium occurs at point E on the diagram above. ⟨3⟩ Clearly show and label on the above diagram: • The output the firm will produce in equilibrium (use label Q1) • The price the firm will charge for its output (use label P1)'."
@@ -233,16 +183,6 @@
   "ref": "2024 OL Q13(a)(i)",
   "reason": "Already recorded in econ_excluded.py: a graph to be drawn on the answer-book graph paper; the responses are its axis and line values, welded across the data table.",
   "evidence": "Scheme p22: 'On the graph paper provided, draw and label: • the fixed costs … • the variable costs … ⟨12⟩ Axes: ⟨2 @ 2⟩ FC @ 3 VC @ 5' over the table 'Fixed Costs in € 600 600 600 / Variable Costs in € 500 600 700 ⟨800⟩'."
- },
- {
-  "ref": "2024 OL Q13(b)(i)",
-  "reason": "Answered by reading the food-price-inflation chart printed beside it — the chart-lookup class.",
-  "evidence": "Scheme p23: '(i) Which country had the lowest food price inflation? Switzerland (1st @ 8) / Which country had the highest food price inflation? Turkey (2nd@ 5)' — read off the annual food-price-inflation bar chart."
- },
- {
-  "ref": "2024 OL Q14(a)(i)",
-  "reason": "Already recorded in econ_excluded.py: the response is the worked percentage calculation (two chained calculations off the expenditure chart).",
-  "evidence": "Scheme p27: '⟨12⟩ ⟨5 @ 1⟩ €23.4bn + €9.63bn + €3.91bn + €3.98bn + €3.30bn = €44.22 billion (-1 for omission of bn and -1 for omission of €)' then '⟨8⟩ ⟨3 @ 1⟩ €9.63bn/€44.22bn × 100 = 21.78%'."
  },
  {
   "ref": "2024 OL Q15(a)",
@@ -268,21 +208,6 @@
   "ref": "2024 OL Section A Q2(a)",
   "reason": "Already recorded in econ_excluded.py: answered by ticking a box in a table, with the explanation half of a 1st@8/2nd@4 tariff welded to the tick.",
   "evidence": "Scheme p6: 'Indicate using a tick (✔) in the table below if the above measure is an example of a company using price competition or non-price competition. Explain your answer. 1st @ 8 / 2nd @ 4 … Non-price competition ✔ Explanation: Lidl is competing with other supermarkets to increase its sales / market share by means other than changing its prices for all its customers.'"
- },
- {
-  "ref": "2024 OL Section A Q8(i)",
-  "reason": "NEW candidate: answered by reading the Gini-coefficient chart printed with it — the established chart-read leave-alone class (cf. recorded 2022 HL Section A Q2(a)).",
-  "evidence": "From the data given, state in the boxes below, which country has the lowest level of inequality... (i) Country with the lowest level of inequality. Slovakia [1st @ 8]"
- },
- {
-  "ref": "2024 OL Section A Q8(i) and Q8(ii)",
-  "reason": "Both halves are answered by reading the Gini-coefficient chart printed with the question — the established chart-lookup leave-alone class.",
-  "evidence": "Scheme p11: 'From the data given, state in the boxes below, which country has the lowest level of inequality and which country has the highest level of inequality. (i) … Slovakia (ii) … USA' (1st @ 8, 2nd@ 4) — read off the OECD bar chart (Slovakia 0.22, USA 0.38)."
- },
- {
-  "ref": "2024 OL Section A Q8(ii)",
-  "reason": "NEW candidate: answered by reading the Gini-coefficient chart printed with it — same chart-read class as Q8(i).",
-  "evidence": "(ii) Country with the highest level of inequality. USA [2nd @ 4]"
  },
  {
   "ref": "2025 HL Q14(b)(i)",

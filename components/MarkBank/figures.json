@@ -33385,5 +33385,72 @@
   "year": 2025,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Economics 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2023-OL-paper-p16-art": {
+  "src": "/exam-figures/economics/markbank/economics-2023-OL-paper-p16-art.png",
+  "md5": "94734314289f437e1e330bf540796905",
+  "alt": "A column chart headed 'Value of food & drink exports - Ireland in euro billions', y-axis 'euro bn's' running 0 to 16, x-axis 'Year'. Six bars, each carrying its value above it: 2016 is 10.6 in orange, 2017 is 12.5 in red, 2018 is 12.35 in green, 2019 is 13.85 in blue, 2020 is 13 in purple and 2021 is 13.2 in yellow.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q13(a)(i)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2024-OL-paper-p10-art": {
+  "src": "/exam-figures/economics/markbank/economics-2024-OL-paper-p10-art.png",
+  "md5": "09b74fa3b916dc56cb5724956ad6baee",
+  "alt": "A column chart headed 'Electricity Price Increases in Ireland From 2020 to 2022', y-axis '% Increase' running 0% to 150%. Four unlabelled bars read against the axis, identified by a colour key beneath: Electric Ireland in blue at roughly 47%, Energia in orange at roughly 72%, Flogas in grey at roughly 118% and SSE Airtricity in yellow at roughly 67%.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q11(a)(i)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2022-OL-paper-p10-art": {
+  "src": "/exam-figures/economics/markbank/economics-2022-OL-paper-p10-art.png",
+  "md5": "c968d185157119dbcf980c0ba91214b4",
+  "alt": "A horizontal bar chart headed 'Streaming services in the US', x-axis 'Number of users in millions' running 0 to 180. Five labelled bars: YouTube in purple at about 164, Vimeo in blue at about 15, hulu in red at about 27, Amazon Prime Video in green at about 16, and Netflix in yellow at about 47.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q11(a)(i)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2023-HL-paper-p31-art": {
+  "src": "/exam-figures/economics/markbank/economics-2023-HL-paper-p31-art.png",
+  "md5": "ef80638d9d64f6e3f8e9c0abf837f473",
+  "alt": "A line chart headed 'Euro to Sterling', y-axis labelled 'Euro to Stg' with no numbered scale, x-axis showing three dates. Three plotted points, each carrying its value in a blue circle: 0.9 at 01/09/2022, 0.87 at 01/10/2022 and 0.86 at 01/11/2022. The line falls steadily from left to right.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q15(b)(ii)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2023 Higher Level — © State Examinations Commission"
+ },
+ "economics-2024-HL-paper-p18-art": {
+  "src": "/exam-figures/economics/markbank/economics-2024-HL-paper-p18-art.png",
+  "md5": "7170d1178560bbcfb8ec54e68e618cd0",
+  "alt": "A line chart headed 'CPI - all items - annual % change', y-axis '%' running 0 to 10, x-axis eight months from March to Oct. The line starts just under 8 in March and falls to about 5.8 in July, rises slightly to about 6.4 by September, then drops to about 5.1 in October. No point is labelled with its value.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q12(b)(i)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2024 Higher Level — © State Examinations Commission"
+ },
+ "economics-2021-OL-scheme-p05-q4-working": {
+  "src": "/exam-figures/economics/markbank/economics-2021-OL-scheme-p05-q4-working.png",
+  "md5": "c33747b3fe3a4b678d8e7e6d372ca31e",
+  "alt": "The marking scheme's completed crisps utility table. Bags of Crisps Consumed runs 1, 2, 3, 4. Total Utility in Units per Util reads 10, 25, 38, 47. Marginal Utility in Units per Util reads 10, 15, then 13 and 9 in the two heavily outlined cells the student had to fill. Below the table the two workings: 38 minus 25 equals 13, and 47 minus 38 equals 9.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Section A Q4",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2021 Ordinary Level — © State Examinations Commission"
  }
 }
