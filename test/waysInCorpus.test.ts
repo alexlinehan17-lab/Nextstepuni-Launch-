@@ -14,19 +14,32 @@ import { CARDS as businessHigher } from '@/components/MarkBank/cards/business/hi
 import { CARDS as businessOrdinary } from '@/components/MarkBank/cards/business/ordinary';
 import { CARDS as chemistryHigher } from '@/components/MarkBank/cards/chemistry/higher';
 import { CARDS as chemistryOrdinary } from '@/components/MarkBank/cards/chemistry/ordinary';
+import { CARDS as constructionHigher } from '@/components/MarkBank/cards/construction-studies/higher';
+import { CARDS as constructionOrdinary } from '@/components/MarkBank/cards/construction-studies/ordinary';
+import { CARDS as economicsHigher } from '@/components/MarkBank/cards/economics/higher';
+import { CARDS as economicsOrdinary } from '@/components/MarkBank/cards/economics/ordinary';
 import { CARDS as homeEconomicsHigher } from '@/components/MarkBank/cards/home-economics/higher';
 import { CARDS as homeEconomicsOrdinary } from '@/components/MarkBank/cards/home-economics/ordinary';
+import { CARDS as mathsHigher } from '@/components/MarkBank/cards/maths/higher';
+import { CARDS as mathsOrdinary } from '@/components/MarkBank/cards/maths/ordinary';
 import { CARDS as physicsHigher } from '@/components/MarkBank/cards/physics/higher';
 import { CARDS as physicsOrdinary } from '@/components/MarkBank/cards/physics/ordinary';
 import { buildQuestionModel } from '@/components/WaysIn/questionModel';
 import { waysInSourceFromMarkBank } from '@/components/WaysIn/sources';
 
+// Every built subject, not a hand-kept subset. Economics, Construction Studies
+// and Maths were absent, so nothing checked their cards through this handoff —
+// and Economics turned out to be the deck the interpreter served worst, with
+// 109 cards whose printed answer count it could not see.
 const cards = [
   ...agHigher, ...agOrdinary,
   ...biologyHigher, ...biologyOrdinary,
   ...businessHigher, ...businessOrdinary,
   ...chemistryHigher, ...chemistryOrdinary,
+  ...constructionHigher, ...constructionOrdinary,
+  ...economicsHigher, ...economicsOrdinary,
   ...homeEconomicsHigher, ...homeEconomicsOrdinary,
+  ...mathsHigher, ...mathsOrdinary,
   ...physicsHigher, ...physicsOrdinary,
 ];
 
