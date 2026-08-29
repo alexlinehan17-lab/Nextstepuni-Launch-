@@ -252,4 +252,91 @@ P.cards.append(card(
     figure_key='economics-2023-HL-scheme-p11-q6a-ticks'))
 
 
+# ── Backfill ───────────────────────────────────────────────────────────────
+# NOTE on the sibling part (b): the scout's sliding-window anchor matched it to
+# a block about the law of diminishing marginal RETURNS, but (b) asks about
+# marginal UTILITY — a different concept in a different question. Widening the
+# anchor raises the hit rate and with it the risk of hitting the wrong block, so
+# the subject of the located block is checked, not just its existence. (b) is
+# left uncarded until its own block is found.
+P.cards.append(card(
+    'econ-2023-hl-seca-q3-c', 2023, 'higher', 'economics-1-4',
+    'testing-the-equi-marginal-principle', '2023 HL Section A Q3(c)',
+    'Does the formula above obey the Equi-Marginal Principle of consumer behaviour? Explain your '
+    'answer.',
+    '6', 6,
+    [point('r-1', as_option(block(BODY, '\u2022 No, because:', '6 | P a g e')), 6,
+           'Work both ratios and compare: 1800 \u00f7 10 = 180 against 3600 \u00f7 10 = 360. The '
+           'principle is satisfied only when marginal utility per euro is EQUAL across goods, so '
+           'unequal ratios mean it is not obeyed \u2014 and the answer is No.')],
+    'Both goods cost the same \u20ac10 here, which makes it tempting to say the condition holds. '
+    'It is the utility per euro that must match, not the price.',
+    section='A', tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2023-hl-sa-q3-a', 2023, 'higher', 'economics-1-1',
+    'filling-in-total-and-marginal-utility', '2023 HL Section A Q3(a)',
+    'Complete the missing total utility and marginal utility figures in the table below. Show '
+    'your workings.',
+    '3 @ 2', 6,
+    [point('r-1', as_option(block(BODY, '\u2022 80 \u2013 40 = 40', 'Answer (b) or (c)')), 6,
+           'Three cells, three workings, two marks each. Marginal utility is the DIFFERENCE '
+           'between consecutive totals, so it runs both ways: subtract to get a marginal from '
+           'two totals, add to get the next total from a marginal.')],
+    'The blanks alternate between the two rows on purpose, so the same relationship has to be '
+    'used forwards and backwards. Reading marginal utility as a total is what breaks it.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2023-HL-scheme-p08-q3a-working'))
+
+P.cards.append(card(
+    'econ-2023-hl-sa-q3-b', 2023, 'higher', 'economics-1-1',
+    'where-diminishing-marginal-utility-sets-in', '2023 HL Section A Q3(b)',
+    'Based upon the marginal utility figures calculated above, at what point does the law of '
+    'diminishing marginal utility set in? Explain your answer.',
+    '6', 6,
+    [point('r-1', as_option(block(BODY, '\u2022 Answer: on the consumption of the third unit',
+                                  'OR (c) Does the formula above obey')), 6,
+           'The point is where marginal utility first FALLS \u2014 40 to 35, on the third unit. '
+           'The explanation has to quote those two figures; naming the unit alone does not carry '
+           'the marks.')],
+    'The scheme accepts either wording of the same moment \u2014 on the third unit, or after '
+    'the second. What it will not accept is the point where TOTAL utility turns, which is a '
+    'different thing and happens later.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2023-HL-scheme-p08-q3a-working'))
+
+P.cards.append(card(
+    'econ-2023-hl-sa-q4-a', 2023, 'higher', 'economics-1-5',
+    'filling-in-average-and-marginal-cost', '2023 HL Section A Q4(a)',
+    'Complete the missing average cost and marginal cost figures in the table below.',
+    '6', 6,
+    [point('r-1', as_option(block(BODY, 'Workings: \u2022 82 \u00f7 2 = 41',
+                                  'Answer (b) or (c)')), 6,
+           'Four blanks, four workings. Average cost DIVIDES total cost by output; marginal cost '
+           'SUBTRACTS one total cost from the next. The two are different operations on the same '
+           'row and mixing them is the whole error.')],
+    'Marginal cost is N/A at one unit because there is no previous output to compare with. At '
+    'four units marginal cost is 44 while average cost is only 38 \u2014 the marginal figure '
+    'has overtaken the average, which is why the average starts to rise.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2023-HL-scheme-p09-q4a-table'))
+
+P.cards.append(card(
+    'econ-2023-hl-sa-q10', 2023, 'higher', 'economics-3-0',
+    'from-gnp-to-gni-and-modified-gni', '2023 HL Section A Q10',
+    'Given that Gross Domestic Product (GDP) at Current Market Prices (CMP) was \u20ac426bn, '
+    'use the information above to calculate the following terms B, and C. A has been completed '
+    'for you. State the relationships and show all your workings.',
+    '2 @ 6', 12,
+    [point('r-1', as_option(block(BODY, 'Gross National Product (GNP) at Current Market Prices: \u20ac323bn',
+                                  '12 | P a g e')), 12,
+           'Two steps at six marks each, and each starts from the figure the step above produced. '
+           'B adds EU subsidies and subtracts EU taxes to GNP; C then subtracts the \u20ac89bn '
+           'of adjustments from B.')],
+    'Modified GNI exists because the ordinary figures are distorted by redomiciled companies, '
+    'aircraft leasing and intellectual property \u2014 the \u20ac89bn taken out at the last '
+    'step. It is the measure that comes closest to what the Irish economy actually produces.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2023-HL-paper-p12-i0'))
+
 P.emit()

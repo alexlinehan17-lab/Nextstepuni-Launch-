@@ -465,4 +465,133 @@ P.cards.append(card(
     tariff_kind='fixed',
     figure_key='economics-2025-OL-paper-p24-art'))
 
+# ── Backfill: asks the scheme answers in full ──────────────────────────────
+
+P.cards.append(card(
+    'econ-2025-ol-q14-c-i', 2025, 'ordinary', 'economics-3-1',
+    'has-irelands-hdi-position-improved', '2025 OL Q14(c)(i)',
+    'Based on the data in the table above, state if Ireland\u2019s HDI position has improved or '
+    'disimproved. Indicate with a tick (\u2714) in the relevant box below. Justify your '
+    'decision.',
+    '13', 13,
+    [point('r-1', as_option(block(BODY, 'disimproved. Indicate with a tick', '(ii)')), 13,
+           'IMPROVED, and the justification is the figure: the HDI rises from 0.87 to 0.95. '
+           'Every component in the table moves the same way \u2014 income, life expectancy and '
+           'years of schooling all rise \u2014 which is what the composite index is built from.')],
+    'HDI is a composite of income, health and education, so the table gives the three ingredients '
+    'as well as the result. Quoting the 0.87 to 0.95 move is what the marks are for.',
+    tariff_kind='fixed',
+    figure_key='economics-2025-OL-paper-p22-i0'))
+
+# ── Backfill: asks the scheme answers in full ──────────────────────────────
+
+P.cards.append(card(
+    'econ-2025-ol-q16-b-ii', 2025, 'ordinary', 'economics-3-1',
+    'the-trend-in-irish-price-inflation', '2025 OL Q16(b)(ii)',
+    'Identify the overall trend of price Inflation in Ireland between May 2024 and September '
+    '2024, using figures from the graph above.',
+    '12', 12,
+    [point('r-1', as_option(block(BODY, 'From May 2024 to Sep 2024 the annual percentage change',
+                                  '(iii)')), 12,
+           'Inflation FELL over the period \u2014 from about 2.6% in May to its low in September. '
+           'Note what that does not mean: prices still rose, just more slowly. A falling '
+           'inflation rate is not falling prices.')],
+    'This is the distinction the chart invites students to miss. The line goes down and the cost '
+    'of living still goes up, because the line measures the RATE of increase.',
+    tariff_kind='fixed',
+    figure_key='economics-2025-OL-paper-p27-art'))
+
+# ── Backfill ───────────────────────────────────────────────────────────────
+
+P.cards.append(card(
+    'econ-2025-ol-q12-a-i', 2025, 'ordinary', 'economics-3-1',
+    'capital-spending-as-a-share-of-the-total', '2025 OL Q12(a)(i)',
+    'Calculate capital expenditure as a percentage of total government expenditure. Show all '
+    'your workings.',
+    '16', 16,
+    [point('r-1', as_option(block(BODY, '\u20ac14.9 bn', '(ii)')), 16,
+           'Capital over the WHOLE \u20ac105.4bn, not over the current slice. The pie prints the '
+           'total in its heading rather than as a slice, so the denominator has to be found '
+           'before any division happens.')],
+    'Capital spending is the small slice \u2014 about a seventh of the total \u2014 so an answer '
+    'far above 15% means the wrong denominator was used.',
+    tariff_kind='fixed',
+    figure_key='economics-2025-OL-paper-p14-art'))
+
+P.cards.append(card(
+    'econ-2025-ol-q12-b-ii', 2025, 'ordinary', 'economics-3-0',
+    'the-size-of-the-multiplier-in-an-open-economy', '2025 OL Q12(b)(ii)',
+    'The Multiplier for an open economy is: 1 / (MPS + MPM). Assume that MPS is 0.2 and MPM is '
+    '0.3. Calculate, using the above formula, the size of the multiplier. Show all your workings.',
+    '4 @ 3', 12,
+    [point('r-1', as_option(block(BODY, '1 1 0.2 + 0.3 = 0.5 = 2',
+                                  '(iii) Ireland is a small open economy')), 12,
+           'Four steps at three marks each. The two leakages are added FIRST, giving 0.5, and '
+           'only then is 1 divided by it \u2014 the intermediate 0.5 is a step the scheme prints '
+           'and pays for.')],
+    'The scheme sets this as a fraction, so the flat text reads \u201c0.2 + 0.3 = 0.5 = 2\u201d '
+    'and the division disappears. Bigger leakages mean a SMALLER multiplier, which is the '
+    'relationship the arithmetic is testing.',
+    tariff_kind='fixed',
+    figure_key='economics-2025-OL-scheme-p21-q12bii-working'))
+
+P.cards.append(card(
+    'econ-2025-ol-q11-b-ii', 2025, 'ordinary', 'economics-2-0',
+    'marking-output-and-price-in-perfect-competition', '2025 OL Q11(b)(ii)',
+    'Equilibrium occurs at point E on the diagram above. Clearly show and label on the above '
+    'diagram: the output the firm will produce in equilibrium (use label Q1); the price the '
+    'firm will charge for its output (use label P1).',
+    '4', 4,
+    [point('r-1', as_option(block(BODY, 'The output the firm will produce in equilibrium (use label Q1)',
+                                  '\u27e84\u27e9')), 4,
+           'The scheme prints ONE cell of 4 for both labels together \u2014 it sits between the '
+           'two bullets. Output drops from E to the quantity axis; the price is the horizontal '
+           'D = AR = MR line, because a firm in perfect competition takes the market price.')],
+    'E is where MC cuts the price line, and in long-run equilibrium that is also the lowest '
+    'point of AC. Both readings come off the same point, so getting E wrong costs the whole '
+    'part.',
+    tariff_kind='fixed',
+    figure_key='economics-2025-OL-scheme-p18-q11b-diagram'))
+
+P.cards.append(card(
+    'econ-2025-ol-q13-b-i', 2025, 'ordinary', 'economics-1-5',
+    'plotting-average-marginal-cost-and-marginal-revenue', '2025 OL Q13(b)(i)',
+    'You have been given the data below for a firm. On the graph paper provided below, draw and '
+    'label: the average costs (AC) for this firm; the marginal costs (MC) for this firm; the '
+    'marginal revenue (MR) for this firm. Note: You must complete/fill in the quantity axis and '
+    'the costs axis.',
+    '17', 17,
+    [point('r-1', as_option(block(BODY, 'AC1 MC:5 MC:5 MR: 3 200 MR1 Cost 150 1 2 3 4 Quantity',
+                                  '(iii) Explain the meaning')), 17,
+           'The scheme prints its split beside the curves: 2 marks per axis, 5 for each cost '
+           'curve and 3 for marginal revenue. Marginal revenue is FLAT at \u20ac200 \u2014 the '
+           'firm gets the same for every unit \u2014 while AC falls then rises.')],
+    'All three lines meet at \u20ac200 where output is three units, which is the profit-'
+    'maximising point the next parts turn on. If they do not meet there, one of the three is '
+    'plotted wrong.',
+    tariff_kind='fixed',
+    figure_key='economics-2025-OL-scheme-p25-q13bi-diagram'))
+
+P.cards.append(card(
+    'econ-2025-ol-q15-b-i', 2025, 'ordinary', 'economics-1-1',
+    'showing-a-demand-shift-from-population-growth', '2025 OL Q15(b)(i)',
+    'The forecasted increase in population is expected to affect the demand for housing. Show '
+    'the effect of this development on the diagram above.',
+    '8+4+2', 14,
+    [point('r-1', as_option(block(BODY, '\u2022 Demand curve shifts to the right (D1)',
+                                  '\u2022 Increase in equilibrium quantity')), 8,
+           'Eight marks \u2014 more than half the part \u2014 for the shift itself. More people '
+           'means more demand at EVERY price, so the whole curve moves right to D1.'),
+     point('r-2', as_option(block(BODY, '\u2022 Increase in equilibrium quantity (Q1)',
+                                  '\u2022 Increase in equilibrium price')), 4,
+           'Four marks for the new quantity, read where D1 crosses the unchanged supply curve.'),
+     point('r-3', as_option(block(BODY, '\u2022 Increase in equilibrium price (P1)',
+                                  '(ii) Explain your answer')), 2,
+           'Two marks for the new price. Supply has not moved, so the new equilibrium slides UP '
+           'the supply curve and both price and quantity rise together.')],
+    'The scheme pays 8, 4 and 2 in that order, so the shift is worth four times the price label. '
+    'Drawing D1 without marking the new equilibrium leaves six marks on the table.',
+    tariff_kind='fixed',
+    figure_key='economics-2025-OL-scheme-p34-q15b-diagram'))
+
 P.emit()

@@ -460,4 +460,230 @@ P.cards.append(card(
     tariff_kind='fixed',
     figure_key='economics-2022-HL-scheme-p27-q14aii-ticks'))
 
+# ── Backfill: asks the scheme answers in full ──────────────────────────────
+# Excluded under labels describing the ANSWER rather than any blocker. Tariff
+# and response are printed for each; catalogued crops ride where the figures
+# come off printed artwork.
+
+P.cards.append(card(
+    'econ-2022-hl-q12-a-i', 2022, 'higher', 'economics-2-0',
+    'what-a-falling-hhi-shows', '2022 HL Q12(a)(i)',
+    'Comment on what the Herfindahl-Hirschman Index (HHI) results outlined above indicate about '
+    'the market concentration in this industry over this time period.',
+    '9', 9,
+    [point('r-1', as_option(block(BODY, 'By 2019 the concentration has decreased to 3,328',
+                                  '(ii)')), 9,
+           'Two moves at once, and the scheme wants both: concentration FELL as firms entered, '
+           'AND it is still above 2,500, so the market remains highly concentrated. A comment '
+           'that reports only the fall has described the direction and missed the level.')],
+    'A falling HHI is not the same as a competitive market. At 3,328 the top three firms still '
+    'hold over 80%, so the industry has become less concentrated while staying concentrated.',
+    tariff_kind='fixed',
+    figure_key='economics-2022-HL-paper-p18-art'))
+
+P.cards.append(card(
+    'econ-2022-hl-q15-c-i', 2022, 'higher', 'economics-4-2',
+    'the-eus-largest-contributor-and-beneficiary', '2022 HL Q15(c)(i)',
+    'Using the data in the graph above, name the country which is the EU\u2019s largest '
+    'contributor and which country is the EU\u2019s largest beneficiary.',
+    '1 @ 4+1 @ 3', 7,
+    [anyN('r-1', 'The two countries \u2014 both', None, 2, 4,
+          [as_option(block(BODY, 'Largest EU Contributor: GERMANY', 'Largest EU Beneficiary')),
+           as_option(block(BODY, 'Largest EU Beneficiary: POLAND', '(ii) Justify why countries'))],
+          'Both are read straight off the net-benefit bars, and the scheme prices them unevenly '
+          '\u2014 4 for the first and 3 for the second.',
+          steps=[4, 3])],
+    'The chart plots NET position, so the largest contributor is the deepest negative bar and '
+    'the largest beneficiary the tallest positive one. Reading it as gross payments reverses the '
+    'answer. The crop was catalogued under Q16(c)(i), which the paper shows is the fast-fashion '
+    'minimum-pricing question; the manifest ref has been corrected to this part.',
+    tariff_kind='fixed',
+    figure_key='economics-2022-HL-paper-p33-art'))
+
+# ── Backfill ───────────────────────────────────────────────────────────────
+
+P.cards.append(card(
+    'econ-2022-hl-q14-c-i', 2022, 'higher', 'economics-2-1',
+    'average-gender-wage-gap-across-five-countries', '2022 HL Q14(c)(i)',
+    'Based upon the data above calculate the average gender wage gap across these five European '
+    'countries. Show all your workings.',
+    '8', 8,
+    [point('r-1', as_option(block(BODY, '21.7 + 19.2 + 14 + 11.3 + 1.3 = 67.5',
+                                  '(ii)')), 8,
+           'All five gaps are added and divided by five. It is a simple mean, so the only way to '
+           'go wrong is to read a bar off the chart incorrectly or to divide by the wrong count.')],
+    'The five countries range from 21.7% down to 1.3%, so the average sits well below the widest '
+    'gap \u2014 one country is not the story.',
+    tariff_kind='fixed',
+    figure_key='economics-2022-HL-paper-p28-i0'))
+
+# ── A diagram-and-explanation part, priced as TWO cells ────────────────────
+# The scout reported this as "2 bare totals — cannot tell which prices this
+# part". That was a misreading of the shape, not a real ambiguity: BOTH cells
+# price it. The scheme puts ⟨11⟩ against the diagram — and says so outright,
+# "1 mark per label = 11 marks" — and ⟨8⟩ against the explanation beneath it.
+# The part is worth 19 and takes two rows.
+#
+# The lesson generalises: where a part asks for a labelled diagram AND an
+# explanation, two mark cells beside it are the two halves of one ask, not two
+# candidates for one tariff.
+P.cards.append(card(
+    'econ-2022-hl-q12-b-ii', 2022, 'higher', 'economics-2-0',
+    'long-run-equilibrium-of-a-monopoly', '2022 HL Q12(b)(ii)',
+    'Explain, with the use of a fully labelled diagram, the long run equilibrium position of a '
+    'monopoly firm.',
+    '11 + 8', 19,
+    [point('r-1', as_option(block(BODY, '1 mark per label = 11 marks',
+                                  '\u2022 Equilibrium is at point E')), 11,
+           'Eleven labels, one mark each, and the scheme says so in as many words. The axes count: '
+           'Price and Quantity are two of the eleven, which is why "fully labelled" is not a '
+           'stylistic instruction.'),
+     point('r-2', as_option(block(BODY, '\u2022 Equilibrium is at point E',
+                                  '(iii) Explain two changes in market conditions')), 8,
+           'The explanation is worth 8 on top of the drawing. It runs in order: equilibrium where '
+           'MC = MR, the quantity that follows, the price charged, the cost level, the supernormal '
+           'profit that AR above AC produces \u2014 and the inefficiency, because a monopoly does '
+           'not sit at the bottom of its AC curve.')],
+    'A monopoly earns supernormal profit IN THE LONG RUN, which is what separates this diagram '
+    'from perfect competition: no entry competes the profit away, so the SNP block stays.',
+    tariff_kind='fixed'))
+
+
+# ── Diagram-and-explanation parts, priced as TWO cells ─────────────────────
+# Two mark cells beside a part that asks for a labelled diagram AND an
+# explanation are the two halves of one ask, not two candidates for one tariff.
+# The scout read them as ambiguous; the scheme page shows they are not.
+
+P.cards.append(card(
+    'econ-2022-hl-q16-c-i', 2022, 'higher', 'economics-1-3',
+    'minimum-pricing-on-fast-fashion', '2022 HL Q16(c)(i)',
+    'Explain, with the use of a fully labelled diagram, how the introduction of minimum pricing '
+    '(above the market equilibrium price) on fast fashion will impact on the market for fast '
+    'fashion.',
+    '10 + 5', 15,
+    [point('r-1', as_option(block(BODY, 'Surplus Price S1 Pmin E PE', 'Effect on price')), 10,
+           'Ten labels. The minimum price Pmin sits ABOVE the equilibrium PE \u2014 drawn below '
+           'it the diagram shows a price floor that does nothing, which is the usual error.'),
+     point('r-2', as_option(block(BODY, 'Effect on price Through imposing', '39 | P a g e')), 5,
+           'Three effects in a chain: price forced up from PE to Pmin, demand falls from QE to QD, '
+           'and the gap between QS and QD is a SURPLUS. A floor above equilibrium always leaves '
+           'unsold stock.')],
+    'A minimum price only bites when it is set above the market price, and the consequence is '
+    'unsold goods rather than a tidier market \u2014 which is the trade-off the question is about.',
+    tariff_kind='fixed'))
+
+# ── More two-cell parts ────────────────────────────────────────────────────
+P.cards.append(card(
+    'econ-2022-hl-q15-a-iii', 2022, 'higher', 'economics-1-0',
+    'how-grant-aid-shifts-the-supply-of-milk', '2022 HL Q15(a)(iii)',
+    'Explain, with the use of a fully labelled diagram below, how this grant aid will have '
+    'impacted on the equilibrium price and quantity of milk.',
+    '9 + 5', 14,
+    [point('r-1', as_option(block(BODY, 'Price S1 S2 \u27e89\u27e9 EA P1 P2 EB D1 Q1 Q2 Quantity',
+                                  '\u2022 This grant should help reduce costs')), 9,
+           'Nine labels. Both equilibria have to be marked \u2014 EA before the grant and EB '
+           'after \u2014 because the answer is the MOVE between them, not either point alone.'),
+     point('r-2', as_option(block(BODY, '\u2022 This grant should help reduce costs',
+                                  '31 | P a g e')), 5,
+           'The chain: the grant cuts costs, so SUPPLY shifts right (S1 to S2), so price falls and '
+           'quantity rises. It is the supply curve that moves \u2014 a grant to producers does '
+           'not change what consumers want.')],
+    'Subsidising producers lowers the price consumers pay. That surprises students who expect a '
+    'payment to the seller to push prices up.',
+    figure_key='economics-2022-HL-paper-p31-art',
+    tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2022-hl-q15-b-i', 2022, 'higher', 'economics-4-2',
+    'spotting-a-depreciating-euro-on-a-chart', '2022 HL Q15(b)(i)',
+    'Identify one period where the value of the Euro depreciates against the Pound Sterling. '
+    'Explain your answer.',
+    '1 @ 8', 8,
+    [anyN('r-1', 'A period of depreciation, with the figures \u2014 any one', 8, 1, 8,
+          [as_option(block(BODY, 'During the period December 2013 to December 2015',
+                           'OR During the period December 2018')),
+           as_option(block(BODY, 'During the period December 2018 to December 2019',
+                           'OR During the period December 2020')),
+           as_option(block(BODY, 'During the period December 2020 to December 2021',
+                           'Apart from the change in exchange rates'))],
+          'Any one of three periods earns the \u27e84 + 4\u27e9: four for naming it and four for '
+          'the figures. Depreciation means each Euro buys LESS Sterling, so the rate falls \u2014 '
+          '0.80 down to 0.70, and so on.')],
+    'A falling line here is a WEAKER euro, which is the reading students invert: the axis is '
+    'Sterling per Euro, so down means the euro buys less.',
+    figure_key='economics-2022-HL-paper-p32-art'))
+
+P.cards.append(card(
+    'econ-2022-hl-q14-c-iii', 2022, 'higher', 'economics-2-1',
+    'arguments-for-and-against-a-living-wage', '2022 HL Q14(c)(iii)',
+    'Discuss one argument for and one argument against the implementation of the \u2018Living '
+    'Wage\u2019 \u20ac12.90 per hour as the National Minimum Wage for 2023.',
+    '4 + 4', 8,
+    [point('r-1', as_option(block(BODY, 'Arguments for: \u27e84\u27e9 Introduce a more equitable',
+                                  'Arguments against:')), 4,
+           'One argument FOR, priced \u27e82+2\u27e9 \u2014 two for the point and two for '
+           'developing it. The scheme offers a redistribution argument, protection of vulnerable '
+           'workers, poverty reduction and living standards.'),
+     point('r-2', as_option(block(BODY, 'Arguments against: \u27e84\u27e9 Increases the cost of business',
+                                  '29 | P a g e')), 4,
+           'One argument AGAINST, priced the same way. The business case is higher production '
+           'costs and the cost-push inflation that can follow \u2014 note that the second is an '
+           'economy-wide effect, not a firm-level one.')],
+    'Both halves are required and each is worth the same, so an essay on one side scores at most '
+    'half however good it is.',
+    tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2022-hl-q14-b-i', 2022, 'higher', 'economics-1-5',
+    'filling-in-total-average-variable-and-marginal-cost', '2022 HL Q14(b)(i)',
+    'Calculate the missing figures for A, B, and C in the table below.',
+    '9', 9,
+    [point('r-1', as_option(block(BODY, 'A: Total Cost B: Average Variable Cost C: Marginal Cost',
+                                  '(ii) Using the figures obtained in the table')), 9,
+           'Three different cost concepts, three different operations. Total cost ADDS fixed to '
+           'variable; average variable cost DIVIDES variable cost by output; marginal cost is the '
+           'DIFFERENCE between one total cost and the one before it.')],
+    'The scheme sets the three calculations in three columns, so flattened into a line the '
+    'figures run together \u2014 the working rides with the card as a picture. Marginal cost is '
+    'the step between two totals, not a total divided by anything.',
+    tariff_kind='fixed',
+    figure_key='economics-2022-HL-scheme-p28-q14bi-working'))
+
+P.cards.append(card(
+    'econ-2022-hl-q11-b-i', 2022, 'higher', 'economics-2-1',
+    'how-the-equilibrium-price-of-land-is-determined', '2022 HL Q11(b)(i)',
+    'Explain, with the use of a fully labelled diagram how the equilibrium price of land is '
+    'determined.',
+    'fixed', 11,
+    [point('r-1', as_option(block(BODY, 'D QE Quantity The supply of land is fixed in quantity at S',
+                                  'The equilibrium price PE is established')), 6,
+           'Six marks for the diagram. The supply of land is VERTICAL \u2014 fixed in quantity, '
+           'so no price will bring more of it into existence. Everything else about the diagram '
+           'follows from that one line.'),
+     point('r-2', as_option(block(BODY, 'The equilibrium price PE is established where D is equal to S',
+                                  '(ii) Other than land being fixed in supply')), 5,
+           'Five marks for the explanation. With supply fixed, the equilibrium price is set '
+           'entirely by DEMAND \u2014 the price is demand-determined, which is what makes land '
+           'different from the other factors.')],
+    'A vertical supply curve is the whole point. Drawing land\u2019s supply as an ordinary '
+    'upward slope makes the diagram say the opposite of what the question is about.',
+    tariff_kind='fixed',
+    figure_key='economics-2022-HL-scheme-p15-q11bi-diagram'))
+
+P.cards.append(card(
+    'econ-2022-hl-q14-b-ii', 2022, 'higher', 'economics-1-5',
+    'plotting-fixed-variable-and-total-costs', '2022 HL Q14(b)(ii)',
+    'Using the figures obtained in the table above draw and label: the Fixed Costs, Variable '
+    'Costs, and Total Costs on the graph paper below.',
+    'fixed', 16,
+    [point('r-1', as_option(block(BODY, 'Cost of Production 600,000',
+                                  '(iii) If the firm earns \u20ac55,000')), 16,
+           'The scheme writes its split onto the graph: TC:5, VC:5, FC:2 and Axes 4. Total cost '
+           'is the SUM of the other two, so the total-cost line runs exactly \u20ac100,000 above '
+           'the variable-cost line at every output \u2014 that gap is the check.')],
+    'Fixed cost is flat at \u20ac100,000 whatever the output. The three figures worked in (b)(i) '
+    'are the ones plotted here, so an error there reappears as a kink in this graph.',
+    tariff_kind='fixed',
+    figure_key='economics-2022-HL-scheme-p28-q14bii-graph'))
+
 P.emit()

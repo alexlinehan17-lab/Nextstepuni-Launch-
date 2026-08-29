@@ -522,4 +522,159 @@ P.cards.append(card(
     tariff_kind='fixed',
     figure_key='economics-2023-HL-paper-p22-i0'))
 
+# ── Two-cell part: a labelled diagram and its explanation ──────────────────
+P.cards.append(card(
+    'econ-2023-hl-q12-a-iii', 2023, 'higher', 'economics-2-0',
+    'long-run-equilibrium-in-perfect-competition', '2023 HL Q12(a)(iii)',
+    'Explain, with the use of a fully labelled diagram (including the axes), the long run '
+    'equilibrium of a firm in perfect competition.',
+    '9 + 8', 17,
+    [point('r-1', as_option(block(BODY, 'Price MC AC E P/C D = AR = MR', 'Explanation:')), 9,
+           'Nine labels, one mark each, and the scheme says so. Note D = AR = MR is a SINGLE '
+           'horizontal line here: a price-taking firm sells every unit at the market price, which '
+           'is what separates this diagram from every other market structure.'),
+     point('r-2', as_option(block(BODY, '\u2022 Equilibrium is at point E (where MC = MR).',
+                                  '18 | P a g e')), 8,
+           'The long-run outcome is NORMAL profit, because AR = AC \u2014 free entry has competed '
+           'any surplus away. And the firm sits at the minimum of its ATC curve, so it is '
+           'productively efficient, which monopoly and monopolistic competition are not.')],
+    'This is the benchmark diagram the other three are judged against: normal profit, efficient '
+    'output, and a flat demand curve at the market price.',
+    tariff_kind='fixed'))
+
+# ── Worked calculations whose printed form does not survive extraction ─────
+# Every one of these is set as a FRACTION or with SUPERSCRIPTS on the page, and
+# flat text does not merely dull them, it falsifies them: the HHI working comes
+# out "482 + 272 + ..." once the squares are lost, the multiplier comes out
+# "0.3 + 0.2 = 2", and the percentage change loses its numerator outright and
+# reads "4761865 x 100 = 7.59 %". So the scheme's own working is cropped and
+# rides with the card as a solution figure, the mechanism the tick tables use.
+
+P.cards.append(card(
+    'econ-2023-hl-q11-a-i', 2023, 'higher', 'economics-3-5',
+    'percentage-change-in-the-irish-population', '2023 HL Q11(a)(i)',
+    'Using the data in the table below (extracted from the infographic above), calculate the '
+    'percentage change in the Irish population from 2016 to 2022. Show your workings.',
+    '8', 8,
+    [point('r-1', as_option(block(BODY, '4761865 \u00d7 100 = 7.59 %', '- 1 Mark if %')), 8,
+           'The base is the EARLIER population, so the change divides by the 2016 figure, not '
+           'the 2022 one. A mark goes for the % sign.')],
+    'The table gives the total change outright, so the arithmetic is one division \u2014 but '
+    'dividing by the wrong year is the standard slip, and it makes the answer look plausible.',
+    tariff_kind='fixed',
+    figure_key='economics-2023-HL-scheme-p15-q11ai-working'))
+
+P.cards.append(card(
+    'econ-2023-hl-q12-b-i', 2023, 'higher', 'economics-2-0',
+    'calculating-the-herfindahl-hirschman-index', '2023 HL Q12(b)(i)',
+    'Based upon the figures in the bar chart above, calculate the Herfindahl Hirschman Index '
+    'for Irish Dairy Producers. Show your workings.',
+    '9', 9,
+    [point('r-1', as_option(block(BODY, '482 + 272 + 82 + 72 + 32 + 32 + 22 + 22 = 3172',
+                                  '(ii) Would you consider this market')), 9,
+           'Every share is SQUARED before adding \u2014 that is what makes the index sensitive '
+           'to the big firms. Adding the shares unsquared gives 100 for any market at all.')],
+    'The shares are read off the bar chart, and all eight go in. Squaring is the whole point: it '
+    'is why two firms on 48 and 27 dominate the index.',
+    tariff_kind='fixed',
+    figure_key='economics-2023-HL-scheme-p21-q12bi-working'))
+
+P.cards.append(card(
+    'econ-2023-hl-q13-b-i-mps', 2023, 'higher', 'economics-3-0',
+    'marginal-propensity-to-save-from-the-mpc', '2023 HL Q13(b)(i)',
+    'Calculate the marginal propensity to save (MPS) for this economy. Show your workings.',
+    '3 @ 2', 6,
+    [point('r-1', as_option(block(BODY, '1- MPC 1-0.7', 'Calculate the value of the multiplier')), 6,
+           'Three steps at two marks each: the relationship, the substitution and the figure. '
+           'MPS is what is left of a marginal euro after consumption \u2014 imports do not come '
+           'into it, so the MPM of 0.2 in the table is not used here.')],
+    'The table supplies MPC and MPM together, which invites subtracting both. Saving is 1 minus '
+    'the propensity to CONSUME.',
+    tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2023-hl-q13-b-ii-multiplier', 2023, 'higher', 'economics-3-0',
+    'the-multiplier-in-an-open-economy', '2023 HL Q13(b)(ii)',
+    'Calculate the value of the multiplier in this open economy. Show your workings.',
+    '4 @ 2', 8,
+    [point('r-1', as_option(block(BODY, '1 \U0001d440\U0001d443\U0001d446+ \U0001d440\U0001d443\U0001d440',
+                                  '(iii) How much will the government')), 8,
+           'Both leakages go in the denominator TOGETHER, then 1 is divided by the sum. The '
+           'scheme prints a second acceptable form built from MPC and MPM, and both reach 2.')],
+    'An open economy leaks to saving AND to imports, so a multiplier worked from MPS alone is '
+    'too big. The two forms the scheme accepts are the same statement rearranged.',
+    tariff_kind='fixed',
+    figure_key='economics-2023-HL-scheme-p24-q13bii-working'))
+
+P.cards.append(card(
+    'econ-2023-hl-q15-a-iii', 2023, 'higher', 'economics-3-3',
+    'building-a-weighted-composite-price-index', '2023 HL Q15(a)(iii)',
+    'The table below shows a country\u2019s composite price index for the following categories '
+    'of expenditure: food; transport; and other items. Using the information in the table below '
+    'to calculate the price index for the current year. The base value is 100. Show your '
+    'workings.',
+    '19', 19,
+    [point('r-1', as_option(block(BODY, 'item (s) \u20ac year \u20ac 55 X 100 = 110 x 60% = 66.0',
+                                  '(b) 22')), 19,
+           'Each category gets its own simple index first \u2014 current price over base price '
+           'times 100 \u2014 and only THEN is it weighted. The composite is the sum of the '
+           'weighted results, not an average of the simple indices.')],
+    'The weights are what make it composite: food moves the index almost four times as much as '
+    'other items. Averaging the three simple indices ignores that and is the usual wrong answer.',
+    tariff_kind='fixed',
+    figure_key='economics-2023-HL-scheme-p32-q15aiii-working'))
+
+P.cards.append(card(
+    'econ-2023-hl-q15-b-ii-depreciation', 2023, 'higher', 'economics-4-2',
+    'reading-appreciation-or-depreciation-off-an-exchange-rate-chart', '2023 HL Q15(b)(ii)',
+    'Does the trend on the graph below indicate appreciation or depreciation of the Euro '
+    '(\u20ac) to Pound Sterling (\u00a3)? Appreciation: Depreciation: Explain your answer.',
+    '6', 6,
+    [point('r-1', as_option(block(BODY, 'Answer: Depreciation',
+                                  '(iii) Should the Irish government be concerned')), 6,
+           'The chart is quoted as Sterling PER Euro, so a falling line means each Euro buys '
+           'less Sterling \u2014 that is depreciation. The explanation has to name the two '
+           'dates and the two rates.')],
+    'A falling line looks like the pound weakening until you read the axis. It is Euro to '
+    'Sterling, so the currency that is losing value is the one on top.',
+    tariff_kind='fixed',
+    figure_key='economics-2023-HL-paper-p31-art'))
+
+P.cards.append(card(
+    'econ-2023-hl-q13-a-i', 2023, 'higher', 'economics-3-0',
+    'drawing-the-circular-flow-for-an-open-economy', '2023 HL Q13(a)(i)',
+    'Draw a fully labelled diagram showing the Circular Flow of Income for an open economy.',
+    '13 @ 1', 13,
+    [point('r-1', as_option(block(BODY, 'Households Firms Purchase of Goods and Services',
+                                  '(ii) Explain the terms injections')), 13,
+           'Thirteen labels at a mark each, and they are the whole answer. The two inner flows '
+           'run between Households and Firms in OPPOSITE directions; taxation, savings and '
+           'imports leave the flow, and government spending, investment and exports re-enter it.')],
+    'What makes it an OPEN economy is the foreign markets box with imports out and exports in. A '
+    'diagram with only households and firms is the closed two-sector version and forfeits most '
+    'of the thirteen.',
+    tariff_kind='fixed',
+    figure_key='economics-2023-HL-scheme-p23-q13ai-circular-flow'))
+
+P.cards.append(card(
+    'econ-2023-hl-q16-a-ii', 2023, 'higher', 'economics-1-1',
+    'what-free-school-transport-does-to-the-car-market', '2023 HL Q16(a)(ii)',
+    'The Irish Government has provided free School transport for the 2022/2023 school year. '
+    'Demonstrate, with the use of a fully labelled diagram, the impact this new scheme will '
+    'possibly have on the market equilibrium for petrol/diesel cars.',
+    'fixed', 23,
+    [point('r-1', as_option(block(BODY, 'Price S1 E1 P1 E2', '\u27e87\u27e9')), 15,
+           'Three of the four cells \u2014 4, 4 and 7 \u2014 sit beside the question and the '
+           'drawing. Demand shifts LEFT to D2 while supply stays put, so the new equilibrium E2 '
+           'sits below and to the left of E1.'),
+     point('r-2', as_option(block(BODY, '\u2022 The demand curve will shift to the left from D1 to D2',
+                                  '\u27e88\u27e9')), 8,
+           'The fourth cell, printed beside the bullets. The reason is SUBSTITUTION: free bus '
+           'transport is a substitute for the car, so some households no longer need one.')],
+    'The scheme prints four cells for this part and no stated drawing/prose split; the 15 and the '
+    '8 are read off where each cell sits on the page. Both price and quantity FALL here \u2014 a '
+    'leftward demand shift moves them the same way.',
+    tariff_kind='fixed',
+    figure_key='economics-2023-HL-scheme-p35-q16aii-diagram'))
+
 P.emit()

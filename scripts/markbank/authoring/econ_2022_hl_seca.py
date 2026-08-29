@@ -269,4 +269,130 @@ P.cards.append(card(
     figure_key='economics-2022-HL-paper-p10-i0'))
 
 
+# ── Backfill: asks the scheme answers in full ──────────────────────────────
+# Excluded under labels describing the ANSWER rather than any blocker. Tariff
+# and response are printed for each; catalogued crops ride where the figures
+# come off printed artwork.
+
+P.cards.append(card(
+    'econ-2022-hl-seca-q2-a', 2022, 'higher', 'economics-4-2',
+    'is-the-balance-of-payments-expansionary', '2022 HL Section A Q2(a)',
+    'Using the data above, explain whether the Balance of Payments is likely to have an overall '
+    'expansionary or contractionary effect. Refer to relevant figures in the diagram above to '
+    'explain your answer. Indicate by means of a tick (\u2713) whether it is expansionary or '
+    'contractionary.',
+    '9', 9,
+    [point('r-1', as_option(block(BODY, 'Answer: Expansionary',
+                                  '(b) Outline one factor which could have influenced')), 9,
+           'The verdict AND the figures that carry it. Exports rose 6.4% against imports at 5.4%, '
+           'so the injection is the larger of the two and the net effect is expansionary. The '
+           'gap is only one percentage point, which is exactly why the figures have to be quoted '
+           'rather than the direction asserted.')],
+    'Both exports and imports rose. What decides the answer is which rose FASTER, so an answer '
+    'that notes only the export growth has not compared anything.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2022-HL-paper-p04-i0'))
+
+P.cards.append(card(
+    'econ-2022-hl-seca-q10-a', 2022, 'higher', 'economics-0-0',
+    'opportunity-cost-along-the-ppf', '2022 HL Section A Q10(a)',
+    'Calculate the opportunity cost of PepsiCo moving production from point D to point H on the '
+    'Production Possibility Frontier (PPF) curve.',
+    '6', 6,
+    [point('r-1', as_option(block(BODY, 'Tropicana decreases from 62 million litres',
+                                  '(b) The point X (20,20)')), 6,
+           'Opportunity cost is what is GIVEN UP, so the answer is the fall in Tropicana \u2014 '
+           '62 million litres down to zero \u2014 not the gain in the other product. Naming the '
+           'thing produced more of is answering the opposite question.')],
+    'At point H the firm makes no Tropicana at all, so the whole 62 million litres is the cost '
+    'of getting there.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2022-HL-paper-p13-i0'))
+
+P.cards.append(card(
+    'econ-2022-hl-sa-q1-a', 2022, 'higher', 'economics-1-4',
+    'price-elasticity-of-demand-off-a-demand-curve', '2022 HL Section A Q1(a)',
+    'Using an appropriate formula, calculate the price elasticity of demand depicted in the '
+    'graph below where the original price of the packet of face masks is \u20ac4 and then '
+    'increases to \u20ac5. Show all calculations.',
+    '10', 10,
+    [point('r-1', as_option(block(BODY, '\u22124 +1 \u00d7 (4 + 5)',
+                                  '(b) With reference to the graph above')), 10,
+           'The scheme sets this as two fractions side by side \u2014 the change in quantity '
+           'over the change in price, times the SUM of the prices over the SUM of the quantities '
+           '\u2014 so read the run as \u22124 over +1, times (4 + 5) over (8 + 4). Nothing in '
+           'the wording gives the quantities: 8 and 4 are read off the graph.')],
+    'The price rise is given but the quantity fall is not, so the whole numerator has to come '
+    'off the curve. A PED of \u22123 means demand is elastic, and the minus sign is part of the '
+    'answer.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2022-HL-paper-p03-art'))
+
+# ── The price-taker pair ───────────────────────────────────────────────────
+# The scheme prints three cells stacked at the head of Q6(a) — 4, 2, 2 — over
+# four answer components: two diagrams (The Market, The Firm) and two
+# explanations. The two explanations take a 2 each. The 4 covers the two
+# printed diagrams jointly, and is halved between them: a printed total over a
+# printed count, which is the one case where splitting is allowed here.
+
+P.cards.append(card(
+    'econ-2022-hl-sa-q6-a-i', 2022, 'higher', 'economics-2-0',
+    'what-entry-does-to-the-market-equilibrium', '2022 HL Section A Q6(a)(i)',
+    'Firms in Perfect Competition are said to be Price-Takers. On the diagrams below label and '
+    'illustrate what happens to the market equilibrium as more firms enter the market. Explain '
+    'each of your diagrams below.',
+    'fixed', 4,
+    [point('r-1', as_option(block(BODY, 'The Market The Firm Price S1 Price S2',
+                                  'Explanation for the market')), 2,
+           'Half of the scheme\u2019s 4 for the two printed diagrams. On the MARKET diagram, '
+           'entry shifts SUPPLY right from S1 to S2 \u2014 demand does not move.'),
+     point('r-2', as_option(block(BODY, 'Explanation for the market: As firms outside the industry',
+                                  'Explanation for the firm')), 2,
+           'Two marks for the words. The chain is supernormal profits, no barriers to entry, '
+           'more firms, supply right, quantity up from Q1 to Q2 and price down from P1 to P2.')],
+    'Entry is attracted by supernormal profit and ends by competing it away. It is SUPPLY that '
+    'shifts \u2014 more firms means more of the good at every price, not more buyers.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2022-HL-scheme-p10-q6a-diagrams'))
+
+P.cards.append(card(
+    'econ-2022-hl-sa-q6-a-ii', 2022, 'higher', 'economics-2-0',
+    'why-the-individual-firms-price-falls-as-firms-enter', '2022 HL Section A Q6(a)(ii)',
+    'Firms in Perfect Competition are said to be Price-Takers. On the diagrams below label and '
+    'illustrate what happens to the individual firm\u2019s price as more firms enter the '
+    'market. Explain each of your diagrams below.',
+    'fixed', 4,
+    [point('r-1', as_option(block(BODY, 'P2 D1 D2=AR2=MR2 Q1 Q2 Quantity Quantity',
+                                  'Explanation for the market')), 2,
+           'The other half of the scheme\u2019s 4 for the two printed diagrams. On the FIRM\u2019s '
+           'diagram the price line simply drops, from D1 = AR1 = MR1 down to D2 = AR2 = MR2 '
+           '\u2014 it stays HORIZONTAL at both levels.'),
+     point('r-2', as_option(block(BODY, 'Explanation for the firm: As the individual firm is described',
+                                  '(b) Answer either (b) or (c)')), 2,
+           'Two marks for the words, and the phrase that earns them is PRICE-TAKER: the firm '
+           'accepts whatever the industry sets, so its price falls from P1 to P2 because the '
+           'market price did.')],
+    'The firm\u2019s demand curve is horizontal because it can sell any amount at the going '
+    'price and nothing above it. Sloping it downward turns a perfect competitor into a '
+    'monopolist.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2022-HL-scheme-p10-q6a-diagrams'))
+
+P.cards.append(card(
+    'econ-2022-hl-sa-q7-a-i', 2022, 'higher', 'economics-3-3',
+    'which-chart-shows-the-real-ecb-rate-trend', '2022 HL Section A Q7(a)(i)',
+    'Only one of the charts below accurately displays the trend in the ECB rate from 2000 to '
+    '2021. Identify which chart accurately displays the correct trend in the ECB rate from 2000 '
+    'to 2021. Choose by means of a tick one of the boxes below.',
+    '1', 1,
+    [point('r-1', as_option(block(BODY, 'Figure A: Figure B: \u2714', '(ii) Justify your choice')), 1,
+           'Figure B. One mark for the tick \u2014 the justification is the next part and is '
+           'worth eight. The ECB rate FELL after the 2007/2008 crisis and sat at zero for years, '
+           'which is B\u2019s shape; A has it rising into the 2010s.')],
+    'The two charts are mirror images in the years that matter. Cheap money after the financial '
+    'crisis is the fact being tested, and a chart showing rates climbing through the 2010s has '
+    'the decade upside down.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2022-HL-paper-p10-art'))
+
 P.emit()

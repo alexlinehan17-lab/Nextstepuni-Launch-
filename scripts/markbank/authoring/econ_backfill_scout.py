@@ -62,16 +62,56 @@ def bucket(reason):
     return 'OTHER'
 
 
-def anchors_from(question, n=3):
-    """Distinctive openers for the scheme lookup, longest first.
+def anchors_from(question, width=7):
+    """Phrases from the paper's wording to look the scheme block up by.
 
-    A scheme welds its answer onto the tail of its own question cue, so the
-    first clause of the paper's wording is usually present verbatim above the
-    responses. Several lengths are tried because the scheme sometimes rewrites
-    the tail ("Sept. 22" for "September 2022").
+    A scheme reprints each question above its answer, so anchoring on the
+    paper's own words makes the pairing self-confirming. But it reprints them
+    LOOSELY: "Using the data provided above, calculate the Herfindahl Hirschman
+    Index" in the paper is set without the opening clause in the scheme, and
+    dates get abbreviated ("Sept. 22" for "September 2022").
+
+    Anchoring on the opening alone therefore failed on 39 asks that the scheme
+    does contain — the reworded part is nearly always the START, because that
+    is where the cue sits. So slide a window across the whole question rather
+    than trying prefixes: the first window that matches wins, and a window from
+    the middle of a sentence is if anything better evidence than one from its
+    edge.
     """
     words = re.sub(r'\s+', ' ', question or '').split()
-    return [' '.join(words[i:i + 9]) for i in (0, 1, 2)][:n] + [' '.join(words[:6])]
+    if not words:
+        return []
+    out = []
+    for size in (9, width, 5):
+        for start in range(0, max(1, len(words) - size + 1)):
+            phrase = ' '.join(words[start:start + size])
+            if len(phrase) >= 18 and phrase not in out:
+                out.append(phrase)
+    return out
+
+
+def figures_for(ref, byref):
+    """Crops keyed to this ask, or to any ask that CONTAINS it.
+
+    A crop is catalogued against whatever ref the inspecting agent judged it to
+    belong to, and that is often the parent: the chart printed above
+    "2025 HL Q12" serves (a)(i), (a)(ii) and (b) alike, so it is keyed to the
+    question rather than repeated against each part.
+
+    Matching only the exact ref and one level up reported 43 asks as needing a
+    crop that had never been taken. Walking the whole way up — part, letter,
+    bare question — found figures for all but a handful of them. The lesson is
+    the pipeline's own: a refusal is a hypothesis, and that includes a refusal
+    this scout produces.
+    """
+    seen, out = [], []
+    for candidate in (ref,
+                      re.sub(r'\([ivx]+\)$', '', ref).strip(),
+                      re.sub(r'\([a-h]\)(\([ivx]+\))?$', '', ref).strip()):
+        if candidate and candidate not in seen:
+            seen.append(candidate)
+            out.extend(byref.get(candidate) or [])
+    return out
 
 
 def main():
@@ -124,7 +164,7 @@ def main():
             except Exception:                        # noqa: BLE001
                 continue
 
-        cands = byref.get(ref) or byref.get(re.sub(r'\([ivx]+\)$', '', ref).strip()) or []
+        cands = figures_for(ref, byref)
         print('=' * 100)
         print(f'REF     {ref}   [{b}]')
         print(f'REASON  {(e.get("reason") or "")[:150]}')

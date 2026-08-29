@@ -481,4 +481,204 @@ P.cards.append(card(
     tariff_kind='fixed'))
 
 
+# ── Backfill: asks the scheme answers in full ──────────────────────────────
+
+P.cards.append(card(
+    'econ-2024-ol-q12-a-i', 2024, 'ordinary', 'economics-3-2',
+    'percentage-increase-in-people-in-employment', '2024 OL Q12(a)(i)',
+    'From the data given on the left-hand side of the infographic above (orange part), calculate '
+    'the percentage increase in the number of people in employment. Show your workings.',
+    '18', 18,
+    [point('r-1', as_option(block(T, '2,574,500 \u2212 2,506,000 = 68,500',
+                                  'Percentage increase: 2.73%')), 18,
+           'The rise first, then that rise over the EARLIER quarter. Dividing by the later figure '
+           'is the usual slip and gives a slightly smaller answer that still looks plausible.')],
+    'The two quarters differ by less than 3%, so the arithmetic has to be exact \u2014 there is '
+    'no sanity check from the size of the answer.',
+    tariff_kind='fixed',
+    figure_key='economics-2024-OL-paper-p13-i0'))
+
+P.cards.append(card(
+    'econ-2024-ol-q14-c-i', 2024, 'ordinary', 'economics-4-2',
+    'balance-of-trade-surplus-or-deficit', '2024 OL Q14(c)(i)',
+    'Using the information in the table above, calculate Ireland\u2019s Balance of Trade in '
+    '2021. Indicate with a tick whether it was a surplus or a deficit. Show all your workings. '
+    'Explain your answer.',
+    'fixed', 16,
+    [point('r-1', as_option(block(BODY, 'Workings: Balance of trade: Total exports \u2013 Total imports',
+                                  '( -1m for omission of \u20ac or bn)')), 12,
+           'Four steps at three marks each, and only the TOTAL rows are used \u2014 the country '
+           'breakdown is there to be summed past, not added one region at a time.'),
+     point('r-2', as_option(block(BODY, 'Answer: \u20ac62bn Surplus: or Deficit:',
+                                  '31 | P a g e')), 4,
+           'The tick and the reason carry four marks between them. Exports above imports is a '
+           'surplus, and saying which is greater is the explanation the scheme wants.')],
+    'Balance of TRADE is goods only, and the table gives the totals outright. A mark comes off '
+    'for dropping the \u20ac or the bn.',
+    tariff_kind='fixed',
+    figure_key='economics-2024-OL-paper-p21-i0'))
+
+P.cards.append(card(
+    'econ-2024-ol-q15-c-i', 2024, 'ordinary', 'economics-1-4',
+    'price-elasticity-of-demand-for-chocolate', '2024 OL Q15(c)(i)',
+    'Using the formula supplied, calculate the consumers price elasticity of demand when the '
+    'price of a bar of chocolate changes due to increases in the costs of production. Show all '
+    'your workings.',
+    '10 @ 2', 20,
+    [point('r-1', as_option(block(BODY, '\u221240', '( -2 for omission')), 20,
+           'Ten figures at two marks each, and the scheme prints no split between the working '
+           'and the answer \u2014 so the row is the whole thing. The formula the paper supplies '
+           'uses the SUMS of the prices and quantities, so 100 + 140 and 90 + 50 both go in, not '
+           'the starting values on their own. The sign is part of the answer: quantity fell as '
+           'price rose, and two marks come off if the minus is dropped.')],
+    'The scheme prints this as stacked fractions, so the working rides with the card as a '
+    'picture. Flattened it reads as one long addition and stops being a division at all.',
+    tariff_kind='fixed',
+    figure_key='economics-2024-OL-scheme-p35-q15ci-working'))
+
+P.cards.append(card(
+    'econ-2024-ol-q11-a-i', 2024, 'ordinary', 'economics-3-3',
+    'highest-and-lowest-electricity-price-increases', '2024 OL Q11(a)(i)',
+    'Which company had the highest price increase? Which company had the lowest price increase?',
+    'fixed', 12,
+    [point('r-1', as_option(block(BODY, 'Which company had the highest price increase? Flogas',
+                                  '2nd @ 4')), 8,
+           'The first answer carries 8. The bars are not labelled with their values, so this one '
+           'is read against the % axis.'),
+     point('r-2', as_option(block(BODY, 'Which company had the lowest price increase? Electric Ireland',
+                                  '(ii) Outline one possible economic effect')), 4,
+           'The second answer carries 4. Lowest still means an increase of nearly half \u2014 '
+           'every bar on this chart rises.')],
+    'The chart plots the INCREASE, not the price. A company with the lowest increase may still '
+    'be the dearest, and nothing here says which is which.',
+    tariff_kind='fixed',
+    figure_key='economics-2024-OL-paper-p10-art'))
+
+P.cards.append(card(
+    'econ-2024-ol-q13-b-i', 2024, 'ordinary', 'economics-3-3',
+    'highest-and-lowest-food-price-inflation', '2024 OL Q13(b)(i)',
+    'Which country had the lowest food price inflation? Which country had the highest food '
+    'price inflation?',
+    'fixed', 13,
+    [point('r-1', as_option(block(BODY, 'Which country had the lowest food price inflation? Switzerland',
+                                  '1st @ 8')), 8,
+           'The first answer carries 8. The bars run left to right against a % change axis, so '
+           'the shortest bar is the lowest rate.'),
+     point('r-2', as_option(block(BODY, 'Which country had the highest food price inflation? Turkey',
+                                  '(ii) Explain one possible economic effect food price')), 5,
+           'The second answer carries 5. Turkey is above 100%, which is off the scale of the '
+           'others and is the point of the chart.')],
+    'The axis runs to 120% because of one country. Ireland at about 7% looks flat only by '
+    'comparison, so a student reading the shape rather than the axis can call it zero.',
+    tariff_kind='fixed',
+    figure_key='economics-2024-OL-paper-p17-art'))
+
+P.cards.append(card(
+    'econ-2024-ol-q14-a-i', 2024, 'ordinary', 'economics-3-1',
+    'total-government-spending-and-educations-share', '2024 OL Q14(a)(i)',
+    'Using the figures in the chart above answer the following questions. Show all your '
+    'workings. Calculate how much the government planned to spend in total on the above 5 areas '
+    'in \u20acbn\u2019s. Using your answer from (i) above calculate what percentage (%) of '
+    'government spending was planned to be spent on Education.',
+    'fixed', 20,
+    [point('r-1', as_option(block(BODY, '\u20ac23.4bn + \u20ac9.63bn',
+                                  '(-1 for omission of bn')), 12,
+           'Five figures at a mark each and seven for the answer. Every one of the five is read '
+           'off a bar; none is in the wording.'),
+     point('r-2', as_option(block(BODY, '\u20ac9.63bn \u20ac44.22bn \u00d7 100 = 21.78%',
+                                  '(-1 for omission of %)')), 8,
+           'Three marks for the working and five for the answer. Read the run as \u20ac9.63bn '
+           'over \u20ac44.22bn: the Education bar goes over the TOTAL just calculated, so an '
+           'error in the first half carries straight into the second.')],
+    'The second calculation depends on the first, which is why the paper says \u201cusing your '
+    'answer from (i)\u201d. Dividing by the largest single bar rather than by the total is the '
+    'usual slip, and it gives a plausible-looking percentage.',
+    tariff_kind='fixed',
+    figure_key='economics-2024-OL-paper-p19-i0'))
+
+P.cards.append(card(
+    'econ-2024-ol-q11-b-ii', 2024, 'ordinary', 'economics-2-0',
+    'reading-output-and-price-off-a-kinked-demand-curve', '2024 OL Q11(b)(ii)',
+    'Equilibrium occurs at point E on the diagram above. Clearly show and label on the above '
+    'diagram: the output the firm will produce in equilibrium (use label Q1); the price the '
+    'firm will charge for its output (use label P1).',
+    '3', 3,
+    [point('r-1', as_option(block(BODY, 'The output the firm will produce in equilibrium (use label Q1)',
+                                  '(iii) The electricity market')), 3,
+           'One cell, three marks, covering both labels. Output comes straight down from E; the '
+           'price comes across from the KINK in the average revenue curve, which sits above E.')],
+    'In oligopoly the marginal revenue curve BREAKS under the kink, and E is where marginal cost '
+    'passes through that gap. The price is not read off E \u2014 it is read off the demand curve '
+    'above it, which is why the kink is drawn where it is.',
+    tariff_kind='fixed',
+    figure_key='economics-2024-OL-scheme-p15-q11b-diagram'))
+
+P.cards.append(card(
+    'econ-2024-ol-q13-a-i', 2024, 'ordinary', 'economics-1-5',
+    'plotting-fixed-and-variable-costs-against-output', '2024 OL Q13(a)(i)',
+    'You have been given the data below for a firm. On the graph paper provided, draw and '
+    'label: the fixed costs for this firm and the variable costs for this firm. Note: you must '
+    'complete/fill in the quantity axis and the costs axis.',
+    '12', 12,
+    [point('r-1', as_option(block(BODY, 'FC @ 3 VC @ 5', '(ii) Explain the difference')), 12,
+           'The scheme states its own split: the two axes carry 2 marks each, the fixed-cost '
+           'line 3 and the variable-cost line 5. Filling in the axes is worth a third of the '
+           'part, and the question says so.')],
+    'Fixed costs are FLAT \u2014 \u20ac600 whatever the output \u2014 so that line is '
+    'horizontal, while variable costs rise from \u20ac500 to \u20ac800. The two cross just '
+    'before two units, which is the check that both are plotted right.',
+    tariff_kind='fixed',
+    figure_key='economics-2024-OL-scheme-p22-q13ai-diagram'))
+
+P.cards.append(card(
+    'econ-2024-ol-q15-b-i', 2024, 'ordinary', 'economics-1-2',
+    'showing-a-supply-shift-after-a-cost-rise', '2024 OL Q15(b)(i)',
+    'As a result, the increase in fertiliser prices has affected the supply of Irish farm '
+    'output. Show the effect of this development on the diagram above.',
+    '3 @ 5', 15,
+    [point('r-1', as_option(block(BODY, 'S2 Price S1 E2 Pe2 E1 Pe1 D Qe2 Qe1 Quantity',
+                                  'The price of fertiliser in Ireland increased')), 15,
+           'Three drawn things at five marks each: the new supply curve, the new equilibrium '
+           'price and the new equilibrium quantity. Dearer inputs mean LESS supplied at every '
+           'price, so S shifts LEFT \u2014 to S2 above S1.')],
+    'A leftward supply shift raises price and cuts quantity at the same time. Students who shift '
+    'supply right have read the cost rise as a boost to output.',
+    tariff_kind='fixed',
+    figure_key='economics-2024-OL-scheme-p34-q15b-diagram'))
+
+P.cards.append(card(
+    'econ-2024-ol-q15-b-ii', 2024, 'ordinary', 'economics-1-2',
+    'explaining-the-fertiliser-supply-shift', '2024 OL Q15(b)(ii)',
+    'Explain your answer.',
+    '9', 9,
+    [point('r-1', as_option(block(BODY, 'Explanation: \u2022 As the cost of fertiliser has risen',
+                                  '(iii) Almond milk can be classed')), 9,
+           'The scheme wants the CHAIN, not the conclusion: dearer fertiliser, less used, lower '
+           'yields, so supply shifts left, so a higher price and a smaller quantity. Each link '
+           'is a bullet.')],
+    'The explanation has to reach the market outcome, not stop at the farm. Naming the cost rise '
+    'without saying what it does to equilibrium leaves most of the nine marks behind.',
+    tariff_kind='fixed',
+    figure_key='economics-2024-OL-scheme-p34-q15b-diagram'))
+
+P.cards.append(card(
+    'econ-2024-ol-q15-a', 2024, 'ordinary', 'economics-0-1',
+    'naming-and-explaining-the-factors-on-a-farm', '2024 OL Q15(a)',
+    'The table below concerns factors of production which may be found on a farm. Complete the '
+    'table by either naming or explaining each factor of production. Some parts have already '
+    'been completed for you.',
+    'fixed', 20,
+    [point('r-1', as_option(block(BODY, 'Farm Machinery Capital Labour Farm Workers',
+                                  'The one taking a risk in setting')), 15,
+           'Three names at five marks each. Machinery is CAPITAL \u2014 man-made and used to '
+           'produce with; the workers are LABOUR; the owners are ENTERPRISE, the risk-takers.'),
+     point('r-2', as_option(block(BODY, 'The one taking a risk in setting',
+                                  '33 | P a g e')), 5,
+           'Two explanations, three marks and two. Enterprise is defined by the RISK taken in '
+           'return for profit, and land by being supplied by nature rather than made.')],
+    'The table mixes what it gives you: some rows name the factor and want the explanation, '
+    'others do the reverse. Reading which cell is blank before answering is half the work.',
+    tariff_kind='fixed',
+    figure_key='economics-2024-OL-scheme-p33-q15a-table'))
+
 emit(cards + P.cards)

@@ -373,4 +373,180 @@ P.cards.append(card(
     figure_key='economics-2023-OL-paper-p19-art'))
 
 
+# ── Backfill: asks the scheme answers in full ──────────────────────────────
+
+P.cards.append(card(
+    'econ-2023-ol-q12-a-i', 2023, 'ordinary', 'economics-3-1',
+    'total-planned-government-revenue', '2023 OL Q12(a)(i)',
+    'Using the figures in the pie chart above, calculate how much the government is expecting to '
+    'receive in revenue. Show your workings.',
+    '16', 16,
+    [point('r-1', as_option(block(BODY, '\u20ac27.5m + \u20ac14m + \u20ac17m',
+                                  'Deduct 1 mark each for omission')), 16,
+           'Every slice is added, including the two small ones. The scheme deducts a mark each '
+           'for dropping the \u20ac or the "million", so the units are part of the answer rather '
+           'than decoration.')],
+    'Six slices, and the two smallest are easy to skip \u2014 leaving either out changes the '
+    'total the NEXT part divides by.',
+    tariff_kind='fixed',
+    figure_key='economics-2023-OL-paper-p13-i0'))
+
+P.cards.append(card(
+    'econ-2023-ol-q12-a-ii', 2023, 'ordinary', 'economics-3-1',
+    'income-tax-as-a-share-of-revenue', '2023 OL Q12(a)(ii)',
+    'Using your answer from (i) above calculate what percentage of government revenue will be '
+    'received in income tax. Show your workings.',
+    '12', 12,
+    [point('r-1', as_option(block(BODY, '\u20ac27.5m / \u20ac95m x 100 = 28.94%',
+                                  '(iii)')), 12,
+           'Income tax over the TOTAL from part (i), not over any single other slice. A wrong '
+           'total in (i) carries straight through, which is why the scheme prints the €95m again '
+           'here.')],
+    'The answer depends on the previous part, so an error in the total is paid for twice.',
+    tariff_kind='fixed',
+    figure_key='economics-2023-OL-paper-p13-i0'))
+
+# ── Backfill: asks the scheme answers in full ──────────────────────────────
+
+P.cards.append(card(
+    'econ-2023-ol-q15-a-i-percentage', 2023, 'ordinary', 'economics-3-3',
+    'private-cars-as-a-share-of-vehicles-licensed', '2023 OL Q15(a)(i)',
+    'Using the information in the table above, calculate the percentage (%) of private cars (new '
+    'and used), as a percentage of the total vehicles licensed for the first time in 2021. Show '
+    'your workings.',
+    '20', 20,
+    [point('r-1', as_option(block(BODY, '101, 853 + 68, 042', 'Deduct 1 mark for')), 20,
+           'New and used private cars are ADDED before dividing \u2014 the question asks for one '
+           'category made of two rows. The denominator is every vehicle licensed, not just cars.')],
+    'The plain id econ-2023-ol-q15-a-i is held by another card and an id is never renamed, since '
+    'it keys a student\u2019s review history \u2014 hence the suffix. '
+    'Two of the infographic\u2019s rows make the numerator and all of them make the denominator, '
+    'so the same figures are used twice in different roles.',
+    tariff_kind='fixed',
+    figure_key='economics-2023-OL-paper-p22-i0'))
+
+P.cards.append(card(
+    'econ-2023-ol-q13-b-ii', 2023, 'ordinary', 'economics-3-0',
+    'national-income-and-the-balance-of-trade-from-one-table', '2023 OL Q13(b)(ii)',
+    'Using the formula in (i) above and the figures below calculate: the level of National '
+    'Income in 2023 and the Balance of Trade. Show your workings.',
+    'fixed', 27,
+    [point('r-1', as_option(block(BODY, 'Y = C + I + G + (X-M)',
+                                  'Deduct 1 mark each for omission of \u20ac and million')), 18,
+           'Six steps at three marks each. Imports are SUBTRACTED \u2014 the bracket (X\u2013M) '
+           'is one term, so adding both trade figures is the standard error.'),
+     point('r-2', as_option(block(BODY, 'Exports \u2013 Imports \u20ac300m \u2013 \u20ac200m = \u20ac100m',
+                                  'Deduct 1 mark each for omission of \u20ac and million')), 9,
+           'Three steps at three. The balance of trade uses only the two trade figures \u2014 '
+           'consumption, investment and government spending have no part in it.')],
+    'One table answers two different questions, and the trade figures do double duty: inside the '
+    'bracket for national income, on their own for the balance of trade. A mark goes for the '
+    '\u20ac and a mark for the million.',
+    tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2023-ol-q14-b-i', 2023, 'ordinary', 'economics-1-5',
+    'total-revenue-from-price-and-quantity', '2023 OL Q14(b)(i)',
+    'Calculate the total revenue if the firm sells 400 units. Show your workings.',
+    '3 @ 6', 18,
+    [point('r-1', as_option(block(BODY, 'Total revenue = Price x Quantity',
+                                  'Deduct 1 for omission of \u20ac sign')), 18,
+           'Three steps at six marks each: the relationship, the substitution and the figure. '
+           'The price is not in the wording \u2014 it comes from the table, where 200 units '
+           'bring in \u20ac3,000.')],
+    'Total revenue is price times quantity, not the total cost row beside it. The table prints '
+    'both, and reading across the wrong row gives a plausible wrong answer.',
+    tariff_kind='fixed',
+    figure_key='economics-2023-OL-paper-p20-i0'))
+
+P.cards.append(card(
+    'econ-2023-ol-q14-b-ii', 2023, 'ordinary', 'economics-1-5',
+    'profit-from-total-revenue-and-total-cost', '2023 OL Q14(b)(ii)',
+    'Calculate the profit earned when the firm sells 400 units. Show your workings.',
+    '3 @ 3', 9,
+    [point('r-1', as_option(block(BODY, 'Profit = Total revenue \u2013 Total cost',
+                                  'Deduct 1 for omission of \u20ac sign')), 9,
+           'Three steps at three marks each. The \u20ac6,000 is carried from (i) and the '
+           '\u20ac4,500 is read off the table \u2014 so an error in (i) travels into this part.')],
+    'Profit is what is LEFT after cost, so the subtraction runs revenue minus cost. Reversing it '
+    'gives the right magnitude with the wrong sign, and the table already shows a loss at zero '
+    'output to make the distinction matter.',
+    tariff_kind='fixed',
+    figure_key='economics-2023-OL-paper-p20-i0'))
+
+P.cards.append(card(
+    'econ-2023-ol-q13-a-i', 2023, 'ordinary', 'economics-4-2',
+    'highest-and-lowest-years-for-food-and-drink-exports', '2023 OL Q13(a)(i)',
+    'Using the bar chart above, answer the following questions. State the year with the highest '
+    'value in food and drink exports from Ireland. State the year with the lowest value in food '
+    'and drink exports from Ireland.',
+    'fixed', 12,
+    [point('r-1', as_option(block(BODY, 'State the year with the highest value in food and drink '
+                                       'exports from Ireland. 2019', '1st@ 8')), 8,
+           'The first answer carries 8. The peak is 13.85, and it is not the last year on the '
+           'chart \u2014 exports fall back after it.'),
+     point('r-2', as_option(block(BODY, 'State the year with the lowest value in food and drink '
+                                       'exports from Ireland. 2016', '2nd@ 4')), 4,
+           'The second answer carries 4. The lowest is 10.6, the earliest year plotted.')],
+    'Every bar is labelled with its value, so this is read and not estimated \u2014 but 2018 at '
+    '12.35 sits below 2017 at 12.5, so the chart does not simply rise.',
+    tariff_kind='fixed',
+    figure_key='economics-2023-OL-paper-p16-art'))
+
+P.cards.append(card(
+    'econ-2023-ol-q11-b-ii', 2023, 'ordinary', 'economics-2-0',
+    'marking-output-price-and-cost-at-long-run-equilibrium', '2023 OL Q11(b)(ii)',
+    'Equilibrium occurs at point E on the diagram above. Clearly show and label on the above '
+    'diagram: the output the firm will produce in the equilibrium (use label Q1); the price the '
+    'firm will charge for its output (use label P1); the average cost of producing this output '
+    '(using point C1).',
+    'fixed', 9,
+    [point('r-1', as_option(block(BODY, 'The output the firm will produce in the equilibrium (use label Q1)',
+                                  '1st @ 4')), 4,
+           'Four marks. E is where marginal cost cuts marginal revenue, and the output is read '
+           'straight down from E \u2014 not from where MC cuts average cost at W.'),
+     point('r-2', as_option(block(BODY, 'The price the firm will charge for its output (use label P1)',
+                                  '2nd@ 4')), 4,
+           'Four marks. The price is read UP from Q1 to the average revenue curve, then across '
+           'to the axis.'),
+     point('r-3', as_option(block(BODY, 'The average cost of producing this output (using point C1)',
+                                  'Price Costs')), 1,
+           'One mark, and it lands on the same spot as P1: at long-run equilibrium AC just '
+           'touches AR above Q1, so average cost equals price and the firm earns normal profit '
+           'only.')],
+    'Two different points are marked on this diagram, E and W, and only E gives the equilibrium '
+    'output. W is the lowest point of average cost, which the firm does NOT produce at.',
+    tariff_kind='fixed',
+    figure_key='economics-2023-OL-scheme-p13-q11bii-diagram'))
+
+P.cards.append(card(
+    'econ-2023-ol-q15-b-i', 2023, 'ordinary', 'economics-1-1',
+    'drawing-a-labelled-market-demand-curve', '2023 OL Q15(b)(i)',
+    'Draw and label (include the axes) the market demand curve for electric cars.',
+    '4 @ 4', 16,
+    [point('r-1', as_option(block(BODY, 'Price D D2 Quantity', '(ii) If consumers income increases')), 16,
+           'Four things at four marks each: the two axes, the curve and its label. The axes '
+           'carry marks of their own here \u2014 the question says so \u2014 and Price goes on '
+           'the vertical, Quantity on the horizontal.')],
+    'A demand curve slopes DOWN, and the marks are as much for labelling as for drawing: an '
+    'unlabelled correct curve loses more than half the part.',
+    tariff_kind='fixed',
+    figure_key='economics-2023-OL-scheme-p24-q15b-diagram'))
+
+P.cards.append(card(
+    'econ-2023-ol-q15-b-ii', 2023, 'ordinary', 'economics-1-1',
+    'shifting-demand-when-incomes-rise', '2023 OL Q15(b)(ii)',
+    'If consumers income increases, show how this would affect the market demand curve in (i) '
+    'above. Explain your answer.',
+    '9 (6+3)', 9,
+    [point('r-1', as_option(block(BODY, 'The demand curve shifts to the right. Consumers can afford to buy more',
+                                  '(iii) Explain one factor')), 9,
+           'Six for the drawing and three for the words. Income is a non-price determinant, so '
+           'the whole curve moves right to D2 \u2014 a movement ALONG the old curve would mean '
+           'the price of electric cars had changed, and it has not.')],
+    'Electric cars are a normal good here, so more income means more demand at every price. The '
+    'explanation is only three of the nine marks, but without it the drawing is unexplained.',
+    tariff_kind='fixed',
+    figure_key='economics-2023-OL-scheme-p24-q15b-diagram'))
+
 P.emit()

@@ -125,4 +125,101 @@ P.cards.append(card(
     section='A', tariff_kind='fixed',
     figure_key='economics-2021-OL-paper-p07-art'))
 
+# ── Worked calculations the scheme prints in full ──────────────────────
+# Ordinary Section A prints no per-part marks, so every tariff here is attributed
+# by COORDINATE in the scheme rather than by the order the extractor emits: a
+# mark cell sits in the right margin on the same row as the line it prices. Read
+# that way, each of these questions sums to 15, which is what the paper pays for
+# a Section A question — the check that the attribution is right.
+
+P.cards.append(card(
+    'econ-2021-ol-sa-q1-i', 2021, 'ordinary', 'economics-3-1',
+    'education-as-a-percentage-of-government-spending', '2021 OL Section A Q1(i)',
+    'The estimated government expenditure for all departments is €89.6 billion. Calculate '
+    'the estimated expenditure on Education as a percentage of total government expenditure '
+    'for 2021. Show your workings.',
+    '3 @ 4', 12,
+    [point('r-1', sl('8.9/ 89.6 x 100 = 9.93%', '(ii) Give two examples'), 12,
+           'Three steps at four marks each: the Education figure over the total, times 100, '
+           'and the result. The 8.9 is not in the wording — it is read off the chart.')],
+    'Nothing in the question gives you 8.9; it comes off the Education bar. Students who work '
+    'from the wording alone have no numerator.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2021-OL-paper-p03-i0'))
+
+P.cards.append(card(
+    'econ-2021-ol-sa-q3-i', 2021, 'ordinary', 'economics-1-4',
+    'price-elasticity-of-demand-for-kerosene', '2021 OL Section A Q3(i)',
+    'Using the formula supplied, calculate the consumers price elasticity of demand when the '
+    'price of Kerosene (home fuel heating oil) changes due to an increase in carbon tax.',
+    'fixed', 15,
+    [point('r-1', sl('Changes -250 litres +50', '⟨6 @ 2⟩'), 12,
+           'Six figures at two marks each — the two quantities, the two prices and the two '
+           'changes. The Changes row is worked first: quantity falls 250, price rises 50.'),
+     point('r-2', sl('+50 𝑥 800 + 850 1000 + 750', 'Answer: - 4.71'), 2,
+           'The substitution itself. PED is the change in quantity over the change in price, '
+           'times the SUM of the prices over the SUM of the quantities — the midpoint form '
+           'the paper supplies, not the simple percentage form.'),
+     point('r-3', sl('Answer: - 4.71', '(ii) Indicate if the demand'), 1,
+           'One mark for the figure. It is negative because quantity and price moved in '
+           'opposite directions, and the sign is part of the answer.')],
+    'The scheme prints this as stacked fractions, which is why the working rides with the card '
+    'as a picture. Flattened into a line of text the numerator and denominator run together and '
+    'the calculation stops being readable.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2021-OL-scheme-p05-q3i-working'))
+
+P.cards.append(card(
+    'econ-2021-ol-sa-q7', 2021, 'ordinary', 'economics-3-1',
+    'working-out-a-budget-surplus-or-deficit', '2021 OL Section A Q7',
+    'Using the following figures, calculate the expected budgetary position for Ireland in '
+    '2022. Indicate if it is a surplus or a deficit. Total income: €87.5 billion Total '
+    'expenditure: €86.1 billion',
+    '5 @ 3', 15,
+    [point('r-1', sl('Total Income (€87.5 bn) - Total Expenditure', '5 | P a g e'), 15,
+           'Five steps at three marks each, and the verdict is one of them: the arithmetic '
+           'alone does not answer the question, which asks whether it is a surplus or a '
+           'deficit.')],
+    'Income above expenditure is a SURPLUS. The word is worth marks on its own, so a correct '
+    '€1.4bn with no verdict is an incomplete answer.',
+    section='A', tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2021-ol-sa-q4', 2021, 'ordinary', 'economics-1-1',
+    'completing-a-marginal-utility-table-and-finding-the-turn', '2021 OL Section A Q4',
+    'Complete the blank spaces below and answer the question that follows. Show your workings. '
+    'Based on the table above: At what point does the point of diminishing marginal utility set '
+    'in?',
+    'fixed', 15,
+    [point('r-1', sl('38 \u2013 25 = 13', 'Based on the table above'), 12,
+           'Six figures at two marks each. Marginal utility is the DIFFERENCE between one total '
+           'and the one before it, so each blank is a subtraction down the total utility row.'),
+     point('r-2', sl('After 2nd is consumed or before 3rd is consumed', '5 Sony released'), 3,
+           'Diminishing marginal utility sets in where the marginal figures start to FALL '
+           '\u2014 15 down to 13 \u2014 not where total utility falls. Total utility is still '
+           'rising throughout this table.')],
+    'Total utility rises all the way to 47, so a student watching the wrong row sees no turning '
+    'point at all. The turn is in the marginal row, and it happens while the total is still '
+    'climbing.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2021-OL-scheme-p05-q4-working'))
+
+P.cards.append(card(
+    'econ-2021-ol-sa-q2', 2021, 'ordinary', 'economics-0-0',
+    'positive-or-normative-statement', '2021 OL Section A Q2',
+    'Study the statements below and indicate by placing a tick (\u221a) in the correct box '
+    'which is a positive statement and which is a normative statement.',
+    'fixed', 15,
+    [point('r-1', sl('Statement Positive Normative 1. In 2022 exports in Ireland will grow',
+                     '3 | P a g e'), 15,
+           'Two statements, the first worth 9 and the second 6. A POSITIVE statement is a factual '
+           'claim that could be checked; a NORMATIVE one is a judgement about what should be '
+           'done.')],
+    'A forecast is POSITIVE \u2014 it can be checked once 2022 has happened. The second '
+    'statement claims a policy will produce a good outcome, which is a value judgement. The '
+    'answer is which column the tick sits in, and extraction loses the column, so the completed '
+    'table rides with the card as a picture.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2021-OL-scheme-p04-q2-ticks'))
+
 P.emit()

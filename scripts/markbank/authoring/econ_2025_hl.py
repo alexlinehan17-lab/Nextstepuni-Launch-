@@ -560,4 +560,154 @@ P.cards.append(card(
     'the question.',
     tariff_kind='fixed'))
 
+# ── Chart parts whose crop was catalogued against the QUESTION ─────────────
+# Keyed "2025 HL Q12" rather than to this part; found once the scout learned to
+# walk up the ref hierarchy.
+P.cards.append(card(
+    'econ-2025-hl-q12-a-i', 2025, 'higher', 'economics-3-1',
+    'the-trend-in-irelands-government-debt', '2025 HL Q12(a)(i)',
+    'Outline the overall trend in Ireland\u2019s general government debt, as shown in the '
+    'diagram above, using data from the chart. Indicate which overall trend you are commenting '
+    'on by ticking the relevant box: Government debt as a % of GNI*, or Government debt as a % '
+    'of GDP.',
+    '6', 6,
+    [anyN('r-1', 'The trend for the measure you ticked \u2014 either one', 6, 1, 6,
+          [as_option(block(_MIXED, 'Government Debt as a % of GNI*: There is a clear downward trend',
+                           'Government Debt as a % of GDP:')),
+           as_option(block(_MIXED, 'Government Debt as a % of GDP: There is a downward trend',
+                           'Downward + Reference to two distinct figures'))],
+          'Either measure earns the 6, but the scheme is explicit about what a full answer needs: '
+          '"Downward + Reference to two distinct figures or overall percentage decrease". Naming '
+          'the direction without numbers is half of it.')],
+    'Both measures fall, but not equally \u2014 debt as a share of GNI* drops 31 percentage '
+    'points against 15 for GDP. Ticking a box and then quoting the other series\u2019 figures is '
+    'the error the two-column layout invites.',
+    tariff_kind='fixed',
+    figure_key='economics-2025-HL-paper-p17-i0'))
+
+# ── Backfill: asks the scheme answers in full ──────────────────────────────
+
+P.cards.append(card(
+    'econ-2025-hl-q11-a-i', 2025, 'higher', 'economics-2-0',
+    'hhi-for-irish-health-insurance', '2025 HL Q11(a)(i)',
+    'Using the data provided above, calculate the Herfindahl Hirschman Index (HHI) to determine '
+    'whether the market is competitive or highly concentrated. Indicate your choice with a tick '
+    'and justify your answer.',
+    '8', 8,
+    [point('r-1', as_option(block(_MIXED, 'HHI Model: 49%', '(ii)')), 8,
+           'Read the squares: extraction flattens 49\u00b2 to 492, so the line is '
+           '49\u00b2 + 28\u00b2 + 20\u00b2 + 3\u00b2 = 3,594. Above 2,500 counts as highly '
+           'concentrated, and the scheme cites the European Commission and US Department of '
+           'Justice for that threshold \u2014 so the justification is the benchmark, not an '
+           'opinion about the number.')],
+    'Three insurers hold 97% between them. The arithmetic only confirms what the pie chart '
+    'already shows, but the threshold is what turns a number into an answer.',
+    tariff_kind='fixed',
+    figure_key='economics-2025-HL-paper-p13-i0'))
+
+P.cards.append(card(
+    'econ-2025-hl-q16-a-i', 2025, 'higher', 'economics-1-5',
+    'filling-in-variable-and-average-cost', '2025 HL Q16(a)(i)',
+    'Complete the variable cost and average cost, labelled A and B, in the table below. Show all '
+    'your workings.',
+    '6', 6,
+    [point('r-1', as_option(block(_MIXED, 'Label A (Variable Cost) Workings:',
+                                  '(ii) If the outlet charges')), 6,
+           'Two different operations. A is a SUBTRACTION \u2014 total cost less fixed cost. B is '
+           'a DIVISION \u2014 total cost over output. Using the same move for both is the '
+           'standard error, and the two labels sit in the same table.')],
+    'Fixed cost stays at €60 whatever the output, so variable cost is whatever is left of total '
+    'cost. Average cost then spreads the whole total over the units.',
+    tariff_kind='fixed',
+    figure_key='economics-2025-HL-paper-p33-i0',
+    # What each letter POINTS AT, never what it is worth: A and B are the two
+    # green cells the student has to fill, and naming €10 or €1.92 here would
+    # print the answer on the question side of the card.
+    label_key=[{'letter': 'A', 'meaning': 'the missing Variable Cost cell, at an output of 20 '
+                                          'smoothies', 'askedInThisQuestion': True},
+               {'letter': 'B', 'meaning': 'the missing Average Cost cell, at an output of 60 '
+                                          'smoothies', 'askedInThisQuestion': True}]))
+
+# ── Diagram-and-explanation parts, priced as TWO cells ─────────────────────
+# Two mark cells beside a part that asks for a labelled diagram AND an
+# explanation are the two halves of one ask, not two candidates for one tariff.
+# The scout read them as ambiguous; the scheme page shows they are not.
+
+P.cards.append(card(
+    'econ-2025-hl-q11-b-i', 2025, 'higher', 'economics-2-0',
+    'long-run-equilibrium-of-a-patent-monopoly', '2025 HL Q11(b)(i)',
+    'A patent gives a pharmaceutical company the sole right to produce and sell a new drug. '
+    'Explain, with the aid of a fully labelled diagram (including the axes), the long run '
+    'equilibrium position of a pharmaceutical company operating in a monopoly market.',
+    '12 + 9', 21,
+    [point('r-1', as_option(block(_MIXED, 'Price / Cost \u20ac P1 Z SNPs', 'Explanation:')), 12,
+           'The labels ARE the marks here \u2014 twelve of them, axes included, which is why the '
+           'paper says "including the axes". MR, AR, MC and AC all have to appear, and the '
+           'supernormal-profit block has to be identified on the drawing.'),
+     point('r-2', as_option(block(_MIXED, '\u2022 Equilibrium is at point E where MC = MR',
+                                  '25 | P a g e')), 9,
+           'The explanation runs in order: equilibrium where MC = MR, the quantity that follows, '
+           'the price charged, the cost level, the supernormal profit that AR above AC produces, '
+           'and the inefficiency \u2014 costs are not at the minimum of the AC curve.')],
+    'The patent is what makes it long-run: no entrant can compete the supernormal profit away, so '
+    'unlike perfect competition the SNP block survives.',
+    tariff_kind='fixed'))
+
+# ── Two-cell part: build the LRAC, then explain its shape ──────────────────
+P.cards.append(card(
+    'econ-2025-hl-q16-b-ii', 2025, 'higher', 'economics-1-5',
+    'constructing-and-reading-the-lrac', '2025 HL Q16(b)(ii)',
+    'Complete the diagram with three more short run average cost curves (SRAC) to show how the '
+    'long run average cost curve (LRAC) is constructed. Label your diagram fully. Explain the '
+    'shape of the LRAC curve you have drawn.',
+    '8 + 8', 16,
+    [point('r-1', as_option(block(_MIXED, 'SRAC 5 Average cost \u27e88\u27e9 SRAC 1',
+                                  'Explanation:')), 8,
+           'The scheme itemises the eight: three SRAC curves, three labels, the LRAC itself and '
+           'its label. The LRAC is the envelope of the short-run curves, so it has to touch them '
+           'rather than cut through.'),
+     point('r-2', as_option(block(_MIXED, 'Downward sloping part of the LRAC',
+                                  '(i) Outline two economic measures')), 8,
+           'The shape is a contest between two forces. Falling to Q3, economies of scale dominate; '
+           'rising after Q3, diseconomies do. The turning point is where they balance \u2014 not '
+           'a point where costs stop existing.')],
+    'The U-shape is not the same U as the short-run curve. This one is built from the bottoms of '
+    'many short-run curves, each a different plant size.',
+    tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2025-hl-q15-b-i', 2025, 'higher', 'economics-3-3',
+    'percentage-increase-in-the-residential-property-price-index', '2025 HL Q15(b)(i)',
+    'Using the data in the chart above, calculate the percentage increase in the RPPI from '
+    'March 2024 to August 2024. Show all your workings.',
+    '8', 8,
+    [point('r-1', as_option(block(_MIXED, 'Workings: 10.1 \u2013 7.4 = 2.7%',
+                                  'Deduct 1 mark for omission of %')), 8,
+           'The base is MARCH, the earlier month, so the difference is divided by 7.4 and not by '
+           '10.1. Both figures are read off the chart; neither is in the wording.')],
+    'The chart already plots percentage changes, so the answer is a percentage change OF a '
+    'percentage change \u2014 2.7 points of movement is a 36.48% increase, and quoting 2.7% is '
+    'the trap the question is built on.',
+    tariff_kind='fixed',
+    figure_key='economics-2025-HL-scheme-p58-q15bi-working'))
+
+P.cards.append(card(
+    'econ-2025-hl-q14-b-i', 2025, 'higher', 'economics-1-0',
+    'plotting-demand-and-supply-and-finding-equilibrium', '2025 HL Q14(b)(i)',
+    'Using the data above, complete on the graph paper provided below: the market demand curve '
+    'for Scentastic; the market supply curve for Scentastic; clearly label the point of '
+    'equilibrium as E; show the equilibrium price (Pe) and the equilibrium quantity (Qe) on the '
+    'graph. Note: You must complete/fill in the price axis and the quantity axis.',
+    '17', 17,
+    [point('r-1', as_option(block(_MIXED, '\u20ac Pe D:6 \u20ac1.50 S:6 Equil D Pe',
+                                  '50 | P a g e')), 17,
+           'The scheme writes its split into the margin: 2 for the axes, 6 for the demand curve, '
+           '6 for the supply curve and 3 for the equilibrium. Filling in the two axes is worth '
+           'marks on its own, and the question says so.')],
+    'The two curves cross at \u20ac2.00 and 30,000 units \u2014 the one row of the schedule '
+    'where quantity demanded equals quantity supplied. If the plotted crossing is anywhere else, '
+    'one of the curves is wrong.',
+    tariff_kind='fixed',
+    figure_key='economics-2025-HL-scheme-p51-q14bi-graph'))
+
 P.emit()

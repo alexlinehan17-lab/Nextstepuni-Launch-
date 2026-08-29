@@ -65,6 +65,76 @@ const decks = [
    * (reconcile.py) now reads 100.0%: 498 covered + 160 excluded-with-evidence
    * = all 658 asks the 2021-2025 papers print. Nothing removed; all prior ids
    * remain. */
+  /* 2026-08-29 (twenty-first wave): economics 377/306 -> 383/314. The TICK,
+   * TABLE and OTHER buckets. Six completed tick tables and three completed
+   * tables cropped as solution figures — a drawn tick keeps its glyph and loses
+   * its COLUMN in extraction, and the column is the answer. Coverage 637/658 ->
+   * 651/658, exclusions 21 -> 7. Nothing removed. */
+  /* 2026-08-29 (twentieth wave): economics 368/299 -> 377/306. The rest of the
+   * DIAGRAM bucket, Higher and Ordinary. Sixteen more model diagrams cropped
+   * from the schemes and bound as solution figures. Coverage 621/658 ->
+   * 637/658, exclusions 37 -> 21. Nothing removed. */
+  /* 2026-08-29 (nineteenth wave): economics 368/290 -> 368/299. The first nine
+   * DIAGRAM asks, all Ordinary Level. The scheme answers these graphically, so
+   * the crop of its completed diagram is the card's solution figure and the row
+   * carries whatever contiguous run the scheme prints. Coverage 612/658 ->
+   * 621/658, exclusions 46 -> 37. Nothing removed. */
+  /* 2026-08-29 (eighteenth wave): economics 364/280 -> 368/290. The
+   * CHART-LOOKUP bucket, 15 asks, cleared. Six of these charts had never been
+   * extracted at all — a chart drawn in vector strokes is invisible to the
+   * raster extractor — so they were cropped from the paper and bound. One
+   * exclusion, "2024 OL Section A Q8(i) and Q8(ii)", was a COMPOUND ref that is
+   * not a census ask at all and had been inflating the exclusion count by one.
+   * Coverage 598/658 -> 612/658, exclusions 60 -> 46. Nothing removed. */
+  /* 2026-08-29 (seventeenth wave): economics 354/268 -> 364/280. The whole
+   * WORKED-CALCULATION bucket, 23 asks, cleared. Most needed a picture and not
+   * a text row: set as fractions or with superscripts, the scheme's own working
+   * flattens into something not merely ugly but FALSE — the HHI reads
+   * "482 + 272 + ... = 3172" once the squares are lost, the multiplier reads
+   * "0.1 + 0.4 = 2", and the 2023 census percentage loses its numerator
+   * outright. Thirteen crops of the scheme's working now ride with those cards
+   * as solution figures, the mechanism the tick tables already use. Coverage
+   * 576/658 -> 598/658, exclusions 82 -> 60. Nothing removed. */
+  /* 2026-08-29 (sixteenth wave): economics 350/268 -> 354/268. Four more, all
+   * two-cell diagram-and-explanation parts, plus the blank market diagram the
+   * 2022 HL paper prints in the Q15(a)(iii) answer space — cropped from its
+   * vector strokes, which the raster extractor cannot see. Coverage
+   * 572/658 -> 576/658, exclusions 86 -> 82. */
+  /* 2026-08-29 (fifteenth wave): economics 348/268 -> 350/268. Two more of the
+   * diagram-and-explanation class. Coverage 570/658 -> 572/658, exclusions
+   * 88 -> 86. */
+  /* 2026-08-29 (fourteenth wave): economics 343/268 -> 348/268. Five cards from
+   * a class I had been reading wrong. Two mark cells beside a part that asks for
+   * a labelled diagram AND an explanation are the two HALVES of one ask, not two
+   * candidates for one tariff — the scheme even says so ("1 mark per label = 11
+   * marks"). Reported as "cannot tell which prices this part" and refused; they
+   * are two rows. Coverage 565/658 -> 570/658, exclusions 93 -> 88. */
+  /* 2026-08-29 (thirteenth wave): economics 342/267 -> 343/268. Two cards, both
+   * unblocked by correcting a mis-keyed crop: the gender-pay-gap chart was
+   * catalogued under Q15(a)(i) (which asks about MILK production) and the
+   * €105.4bn expenditure pie under Q13(a)(i) (which asks about the factor of
+   * production labour). Fifth and sixth such correction. Coverage 563/658 ->
+   * 565/658, exclusions 95 -> 93. */
+  /* 2026-08-29 (twelfth wave): economics 341/267 -> 342/267. One card: the YED
+   * necessity/luxury part, carried as ONE row of ⟨6⟩ rather than split 3 and 3,
+   * because the scheme prints one total over two asks and halving it would be
+   * arithmetic rather than a printed split. Coverage 562/658 -> 563/658. */
+  /* 2026-08-29 (eleventh wave): economics 335/263 -> 341/267. Ten cards, none
+   * removed. Coverage 552/658 -> 562/658, exclusions 106 -> 96. A fourth
+   * mis-keyed crop was corrected on the way (the 2025 OL HDI table, catalogued
+   * under Q15 when the paper prints it on page 22 under Q14(c)). */
+  /* 2026-08-29 (tenth wave): economics 325/259 -> 335/263. Fourteen cards, none
+   * removed. The backfill run proper: a drafter proposes a tariff from the
+   * scheme's own cells and a figure from the ref hierarchy, and every proposal
+   * is checked before it is used. Coverage 538/658 -> 552/658, exclusions
+   * 120 -> 106. */
+  /* 2026-08-29 (ninth wave): economics 323/259 -> 325/259. Two cards added,
+   * both unblocked by a TOOL fix rather than by new authoring: a crop is
+   * catalogued against whatever ref the inspecting agent judged it to belong
+   * to, and that is usually the parent question, so the scout's ref matching
+   * had to walk the whole hierarchy instead of one level. It had been
+   * reporting 43 asks as needing a crop that was never taken; the real number
+   * is far smaller. Coverage 536/658 -> 538/658, exclusions 122 -> 120. */
   /* 2026-08-29 (eighth wave): economics 322/259 -> 323/259. One card added:
    * 2022 HL Section A Q7(a)(ii), the justification half of a "which chart"
    * pair. Part (i) is deliberately NOT carded — the paper prints Figure A and
@@ -123,8 +193,8 @@ const decks = [
    * The -trend suffix on the first is forced: econ-2021-hl-q16-a-i is taken by
    * a card whose citation econ_refs.py corrects to Q16(c)(i), and an id is
    * never renamed because it keys a student's review history. */
-  ['economics:higher', ECON_HIGHER, 323, 'c99012ce544830b814683dd03bfc3c25df7f95441d8440bd91e799201da8939a'],
-  ['economics:ordinary', ECON_ORDINARY, 259, '8659d07522103236850ce69cac46bdc584a18d4d44b20374e3e08f1a81090c67'],
+  ['economics:higher', ECON_HIGHER, 383, '5b20aa9c7995f859109e8fedd3a0c83918da8830f7669f2cfc99987768630de8'],
+  ['economics:ordinary', ECON_ORDINARY, 314, '57849527e60dbbe653c00a4a050629661184c6d805e8c654fc8d0bb20334ffd0'],
   /* 2026-08-23: the two newest subjects had shipped with NO identity baseline
    * at all — found by the ratchet-soundness review, which means every earlier
    * count in this file was guarding seven decks while two rode along
@@ -152,6 +222,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7254);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7369);
   });
 });

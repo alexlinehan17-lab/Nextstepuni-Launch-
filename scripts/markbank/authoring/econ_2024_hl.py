@@ -650,4 +650,133 @@ P.cards.append(card(
     'sales, which is what the multiplication by 5.2 is doing.',
     tariff_kind='fixed'))
 
+# ── Backfill: asks the scheme answers in full ──────────────────────────────
+
+P.cards.append(card(
+    'econ-2024-hl-q15-a-i', 2024, 'higher', 'economics-4-1',
+    'percentage-rise-in-ldc-debt-servicing', '2024 HL Q15(a)(i)',
+    'Calculate the percentage increase in debt repayment between 2016 and 2022. Show your '
+    'workings.',
+    '8', 8,
+    [point('r-1', as_option(block(T, '$43 - $22 = $21',
+                                  '(ii) Outline one step which could be taken')), 8,
+           'The rise over the ORIGINAL figure: $21 on a base of $22, not on the $43 it grew to. '
+           'A mark goes for the % sign.')],
+    'Debt servicing almost doubled in six years, which is why the answer is close to 100% and a '
+    'student who divides by the later figure gets roughly half of it.',
+    tariff_kind='fixed',
+    figure_key='economics-2024-HL-paper-p29-i0'))
+
+# ── Backfill: asks the scheme answers in full ──────────────────────────────
+
+P.cards.append(card(
+    'econ-2024-hl-q13-a-i', 2024, 'higher', 'economics-3-3',
+    'net-migration-as-a-share-of-population-change', '2024 HL Q13(a)(i)',
+    'Using the data in the table below (extracted from the infographic above), calculate what '
+    'percentage of the change in the population between 2016 and 2022 consisted of net '
+    'migration. Show your workings.',
+    '8', 8,
+    [point('r-1', as_option(block(T, '190,333 x 100 = 52.63%', '27 | P a g e')), 8,
+           'Read it as a fraction: 190,333 over 361,671, times 100. The denominator is the TOTAL '
+           'change in population, not the 2016 or 2022 population \u2014 the table prints all '
+           'four figures and only two belong in this ratio.')],
+    'Just over half the population growth came from migration rather than births, which is the '
+    'point the figure is making.',
+    tariff_kind='fixed',
+    figure_key='economics-2024-HL-paper-p21-i1'))
+
+# ── Two-cell parts: a drawing (or a calculation) and its explanation ───────
+P.cards.append(card(
+    'econ-2024-hl-q14-b-i', 2024, 'higher', 'economics-2-0',
+    'long-run-equilibrium-in-monopolistic-competition', '2024 HL Q14(b)(i)',
+    'Explain, with the aid of a fully labelled diagram (including the axes), the long-run '
+    'equilibrium of a firm operating in monopolistic competition.',
+    '12 + 9', 21,
+    [point('r-1', as_option(block(T, 'T P/C Q Diagram:', 'or \u2022 1. Equilibrium:')), 12,
+           'Twelve labels at one mark each \u2014 the scheme prices them \u27e812 x 1\u27e9 and '
+           'counts both axes among them, which is why the paper says "including the axes".'),
+     point('r-2', as_option(block(T, '\u2022 1. Equilibrium:', '(ii)')), 9,
+           'Five numbered steps: equilibrium where MC = MR, the output, the price, the cost level, '
+           'and what the gap between price and cost means. In the LONG run that gap has closed \u2014 '
+           'entry competes supernormal profit away, so the firm earns normal profit only.')],
+    'This is the diagram students confuse with monopoly. Both have a downward-sloping AR, but in '
+    'monopolistic competition free entry drags AC up to touch AR, so no supernormal profit '
+    'survives.',
+    tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2024-hl-q11-b-i', 2024, 'higher', 'economics-3-0',
+    'the-multiplier-and-what-it-means', '2024 HL Q11(b)(i)',
+    'Based on the information stated above and using an appropriate formula, calculate the value '
+    'of the multiplier in the Irish economy and explain the economic significance of your answer.',
+    '12 + 4', 16,
+    [point('r-1', as_option(block(T, 'Method 1: Workings: MPS = 1- 0.6 = 0.4',
+                                  'Explanation:')), 12,
+           'Two routes to the same 1.08. Method 1 derives MPS first and adds the three leakages; '
+           'Method 2 subtracts them from 1 inside the bracket. Either earns the marks \u2014 they '
+           'are the same denominator written two ways.'),
+     point('r-2', as_option(block(T, 'Explanation: \u2022 In this case if there is an injection',
+                                  '(ii)')), 4,
+           'What the NUMBER means: \u20ac1 injected raises national income by \u20ac1.08. A '
+           'multiplier barely above 1 says most of each euro leaks straight back out \u2014 which '
+           'for a small open economy like Ireland is the point.')],
+    'Calculating 1.08 and stopping answers half the question: the ask says "and explain the '
+    'economic significance", and the significance is how SMALL the figure is.',
+    tariff_kind='fixed'))
+
+
+# ── Two-cell part: a calculation and what its answer means ─────────────────
+P.cards.append(card(
+    'econ-2024-hl-q16-b-ii', 2024, 'higher', 'economics-1-1',
+    'income-elasticity-and-what-it-means', '2024 HL Q16(b)(ii)',
+    'Using an appropriate formula and the figures in the table below, calculate the income '
+    'elasticity of demand (YED) for this good. Explain the economic meaning of your answer. Show '
+    'your workings.',
+    '9 + 4', 13,
+    [point('r-1', as_option(block(T, 'Workings: \u27e89\u27e9 +30 x 40,000', 'Explanation:')) if False else
+                  as_option(block(T, '+30 x 40,000', 'Explanation:')), 9,
+           'The midpoint form again: the change in quantity over the change in income, times the '
+           'sum of incomes over the sum of quantities. The answer is +0.8.'),
+     point('r-2', as_option(block(T, 'The good is inelastic \u2013 the percentage change',
+                                  '(iii) Assume income elasticity')), 4,
+           'TWO things follow from +0.8 and the scheme wants both. It is income INELASTIC because '
+           'the figure is below 1 \u2014 a necessity. And it is a NORMAL good because the figure '
+           'is positive \u2014 demand rose with income. Sign and size say different things.')],
+    'A single number carries two facts here: the sign tells you normal or inferior, the size tells '
+    'you necessity or luxury. Reporting only "inelastic" leaves half the meaning behind.',
+    tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2024-hl-q12-b-ii', 2024, 'higher', 'economics-3-3',
+    'weighting-simple-price-indices-into-a-composite', '2024 HL Q12(b)(ii)',
+    'The table below shows a country\u2019s composite price index for the following categories '
+    'of expenditure: food; transport; and other items. Use the information in the table below to '
+    'calculate the price index for the current year. The base value is 100. Show your workings.',
+    '19', 19,
+    [point('r-1', as_option(block(BODY, 'Food 65% 60 66 66 x 100 = 110 x 65%',
+                                  '24 | P a g e')), 19,
+           'Each category gets a SIMPLE index first \u2014 current price over base price times '
+           '100 \u2014 and the weight is applied to that index, not to the prices. The composite '
+           'is the sum of the three weighted results.')],
+    'Transport rose by half but carries a fifth of the weight, so it moves the composite less '
+    'than food, which rose a tenth on a 65% weight. Averaging the three simple indices ignores '
+    'exactly that and is the usual wrong answer.',
+    tariff_kind='fixed',
+    figure_key='economics-2024-HL-scheme-p24-q12bii-working'))
+
+P.cards.append(card(
+    'econ-2024-hl-q12-b-i', 2024, 'higher', 'economics-3-3',
+    'describing-the-trend-in-cpi-annual-change', '2024 HL Q12(b)(i)',
+    'Outline the overall trend of the CPI annual % change in data as shown in the graph above. '
+    'Use figures from the graph.',
+    '6', 6,
+    [point('r-1', as_option(block(BODY, 'The overall trend of the CPI between March and October is decreasing',
+                                  '(ii) The table below shows')), 6,
+           'The paper says USE FIGURES, so the direction on its own is not the answer: the start '
+           'value, the end value and the size of the fall all have to appear.')],
+    'The chart plots the annual RATE of change, so a falling line means prices are still rising, '
+    'just more slowly. Reading it as prices falling is the trap this question is built on.',
+    tariff_kind='fixed',
+    figure_key='economics-2024-HL-paper-p18-art'))
+
 emit(cards + P.cards)

@@ -1712,6 +1712,153 @@
   "notes": "The answer is negative because price and quantity move opposite ways, and the sign is part of the answer rather than a detail to be dropped."
  },
  {
+  "id": "econ-2021-hl-q14-a-i",
+  "topicId": "economics-3-1",
+  "conceptId": "irelands-inflation-against-the-uk-and-euro-area",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 HL Q14(a)(i)",
+  "questionText": "Analyse the trend of Ireland’s inflation rate in relation to the UK and the Euro Area from 2014-2019.",
+  "stem": "",
+  "figureKey": "economics-2021-HL-paper-p26-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 @ 6+1 @ 3+1 @ 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A trend read off the chart — any three",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Three observations, priced unevenly: the first is worth 6 and the next two 3 each. The question says \"in RELATION to\" — so a trend that describes Ireland alone, without setting it against the other two series, is not answering it.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "Across the entire time Ireland’s inflation rate is lower than the Euro Area and UK (apart from 2015 in the UK) at just above 0.5%. •",
+      "From 2014 to 2016 the inflation rate fell in both the Euro Area and Ireland, whereas it started to rise in 2015 in the UK. •",
+      "From 2015 in the UK and 2016 in the Euro area and Ireland the inflation rate started to rise. •",
+      "In 2018 the inflation rate in the UK and Euro Areas began to fall."
+     ],
+     "perOptionSteps": [
+      6,
+      3,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "Ireland sits below both comparators for almost the whole period, and dips BELOW zero in 2016 while the UK is rising. The chart’s interest is in where the three lines diverge, not in any single one of them."
+ },
+ {
+  "id": "econ-2021-hl-q11-a-i",
+  "topicId": "economics-2-0",
+  "conceptId": "calculating-the-hhi-for-the-aircraft-market",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 HL Q11(a)(i)",
+  "questionText": "Using the data provided above, calculate the Herfindahl Hirschman Index (HHI) for the Global Aircraft Market in 2018. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2021-HL-paper-p15-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "7",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "462 + 462 + 52 + 22 + 12 = 4262",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "Read the squares: extraction flattens 46² to 462, so the line is 46² + 46² + 5² + 2² + 1² = 4262. Every share is SQUARED before adding, which is the whole point of the index — it is what makes two firms on 46% each score far above five firms on 20%."
+   }
+  ],
+  "notes": "Squaring is what turns market share into concentration. Adding the percentages instead gives 100 for every market ever measured."
+ },
+ {
+  "id": "econ-2021-hl-q15-b-ii",
+  "topicId": "economics-3-5",
+  "conceptId": "reading-a-recession-off-a-gni-chart",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 HL Q15(b)(ii)",
+  "questionText": "Based upon the graph below, identify the years when both Ireland and the United States were in recession. Explain your answer.",
+  "stem": "",
+  "figureKey": "economics-2021-HL-paper-p31-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The period from 2007 to 2009 sees both countries experience an economic recession. During this period, it can be seen that the GNI of both countries is downward sloping indicating that the size of their economies were shrinking i.e. experiencing a recession.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The years and the reason, ⟨8⟩ written (4 + 4). What identifies a recession on this chart is the DIRECTION of GNI per capita, not its level: both lines are high by world standards throughout and both slope downwards from 2007 to 2009."
+   }
+  ],
+  "notes": "A falling line on a chart of GNI per capita is a shrinking economy. Students who look for the LOWEST point instead of the falling stretch pick the wrong years."
+ },
+ {
+  "id": "econ-2021-hl-q16-c-iii",
+  "topicId": "economics-3-1",
+  "conceptId": "why-use-a-cost-benefit-analysis-before-spending",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 HL Q16(c)(iii)",
+  "questionText": "In budget 2020 the Minister for Public Expenditure announced funding for the construction of 9,500 new social housing units. Explain why the Department for Public Expenditure might have used a cost-benefit analysis before deciding on this expenditure for social housing units.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 @ 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To ensure that the benefits of this expenditure (economic and social) exceed or equal the costs of this expenditure so that the best possible benefits accrue to the taxpayers.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two claims at three marks each. A cost-benefit analysis weighs SOCIAL costs and benefits as well as private ones — that is why the state uses it where a firm would use ordinary profit."
+   }
+  ],
+  "notes": "The test is whether benefits at least equal costs, not whether the project makes money. Social housing may never turn a profit and still pass, because the benefits counted are the ones accruing to taxpayers as a whole."
+ },
+ {
   "id": "econ-2021-hl-sa-q1-b",
   "topicId": "economics-4-2",
   "conceptId": "why-a-trade-surplus-is-an-aim",
@@ -2311,6 +2458,212 @@
    }
   ],
   "notes": "The calculation runs in two stages, and the scheme accepts either of the two goods for the first — both give the same utility-per-euro."
+ },
+ {
+  "id": "econ-2021-hl-seca-q1-a",
+  "topicId": "economics-4-2",
+  "conceptId": "calculating-the-balance-of-trade",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2021 HL Section A Q1(a)",
+  "questionText": "Calculate the balance of trade for the period 2015 – 2019. Identify whether it is a surplus or a deficit.",
+  "stem": "",
+  "figureKey": "economics-2021-HL-paper-p03-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "7",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Total Exports: 112+119+123+141+152=647 Total Imports: 70+74+83+92+91=410 €647m – €410m = €237m / Trade Surplus",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "Both series are totalled across the whole period before subtracting, and the verdict is part of the answer: exports exceed imports, so it is a SURPLUS. A figure without the word is half of it."
+   }
+  ],
+  "notes": "The chart plots five years of each series and the question asks for the period, not a year, so ten figures are read off before any arithmetic happens."
+ },
+ {
+  "id": "econ-2021-hl-seca-q8-b",
+  "topicId": "economics-1-4",
+  "conceptId": "why-the-equi-marginal-price-is-paid",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2021 HL Section A Q8(b)",
+  "questionText": "Explain why John would pay this price.",
+  "stem": "Part (a) works out the price John would pay for one unit of good Z from the utility-per-euro he gets elsewhere.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 @ 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "He would pay this price in order to maximise his utility as he spends his income in line with the equi-marginal principle of consumer behavior i.e. the ratio of marginal utility to price is the same for every unit of every good consumed.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Two things at 4 each: that he is maximising utility, and the rule that does it — the ratio of marginal utility to price equal across every good. Saying only that he wants the most utility misses the mechanism."
+   }
+  ],
+  "notes": "The equi-marginal principle is a RATIO condition. It is satisfied when the last euro spent on each good buys the same utility, not when the goods cost the same."
+ },
+ {
+  "id": "econ-2021-hl-seca-q9-a",
+  "topicId": "economics-2-0",
+  "conceptId": "naming-the-market-structure",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2021 HL Section A Q9(a)",
+  "questionText": "Identify the corresponding market structure for each of these products/firms: A the Irish banking sector; B Irish Water (the company); C a takeaway food outlet.",
+  "stem": "",
+  "figureKey": "economics-2021-HL-paper-p13-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 @ 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A The Irish banking sector Oligopoly B Irish Water (the company) Monopoly C A takeaway food outlet Monopolistic Competition",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "Three at 3 each. The sequence runs down the concentration scale — a few large banks (oligopoly), a single supplier (monopoly), many small outlets selling close but differentiated substitutes (monopolistic competition)."
+   }
+  ],
+  "notes": "None of the three is perfect competition, which is the structure that almost never has a real-world example."
+ },
+ {
+  "id": "econ-2021-hl-seca-q9-b",
+  "topicId": "economics-2-0",
+  "conceptId": "reasons-for-each-market-structure",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2021 HL Section A Q9(b)",
+  "questionText": "Give one reason for each of your chosen market structures above.",
+  "stem": "Part (a) names the structures: the Irish banking sector, Irish Water and a takeaway food outlet.",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The Irish banking sector is dominated by a few large firms, making these firms oligopolies. • There is only one firm in charge of water provision in Ireland, making it a monopoly. • There are many small takeaway food outlets around the country which sell close substitutes and they can control their own prices, meaning this firm is imperfectly competitive/monopolistically competitive.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One reason per structure, and each names the FEATURE that defines it: a few large firms, a sole provider, many sellers of close substitutes with some price control."
+   }
+  ],
+  "notes": "The reason has to be the defining feature, not a fact about the industry. \"Banks are big\" is not why banking is an oligopoly; \"a few firms hold the market\" is."
+ },
+ {
+  "id": "econ-2021-hl-sa-q2",
+  "topicId": "economics-0-0",
+  "conceptId": "sorting-positive-from-normative-statements",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2021 HL Section A Q2",
+  "questionText": "Select, using a tick (✔), whether each of the following statements are Normative statements or Positive statements.",
+  "stem": "",
+  "figureKey": "economics-2021-HL-scheme-p04-q2-ticks",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Statement Positive Normative Statement Statement If the Irish government increase jobseeker’s allowance by 5% in the 2022 budget, unemployment in Ireland will increase ✔ by at least 2% by 2023. We have to do more for the less well off in society. ✔ The government should have increased unemployment ✔ benefit by more than €0.10 this year. Sales of new cars in Ireland decreased during 2020. ✔",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Four statements, priced 4, 4, 4 and 3. A POSITIVE statement is one that could be tested against the facts, whether or not it turns out true; a NORMATIVE one says what OUGHT to happen and no evidence can settle it."
+   }
+  ],
+  "notes": "The giveaway words are should and have to — both normative. A prediction about unemployment is positive even though nobody knows yet whether it will happen, because it is the KIND of claim evidence could settle. The scheme states its answer by which column the tick sits in, and that column does not survive extraction, so the completed table rides with the card as a picture."
+ },
+ {
+  "id": "econ-2021-hl-sa-q10-b",
+  "topicId": "economics-3-3",
+  "conceptId": "what-you-would-advise-the-ecb-to-do-with-a-zero-rate",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2021 HL Section A Q10(b)",
+  "questionText": "Outline whether you would advise the European Central Bank to: increase, decrease, or maintain the current interest rate of 0%. Justify your choice.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 @ 7",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A course of action for the ECB, with its justification — any one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "Seven marks for one recommendation properly justified. The scheme takes either answer — it is the reasoning that is marked, not the choice.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "During these economically volatile times in the wake of the Covid-19 Pandemic the ECB is likely to maintain the low interest rate of 0%. This measure was initially brought about in the wake of the great recession to discourage saving and encourage spending and borrowing in an attempt to stimulate the European economy again. Economic conditions are similar now to then and thus it makes sense to maintain this interest rate.",
+      "ECB could decrease interest rates / have negative interest rates. This policy would create a large deterrent to save and may encourage consumers to spend instead. This policy may also lead to lenders reducing interest rates for borrowing and thus create an incentive for people to borrow and spend / invest into the economy. This is quite an extreme policy that the ECB will only make use of if there are low levels of economic growth and inflation."
+     ]
+    }
+   }
+  ],
+  "notes": "Both accepted answers rest on the same mechanism: a low or negative rate discourages saving and encourages borrowing and spending. What separates them is how far the ECB should push it, and the scheme calls a negative rate an extreme measure for weak growth and low inflation."
  },
  {
   "id": "econ-2021-ol-q11-b-iii",
@@ -3930,6 +4283,154 @@
   "notes": "The pairing is the point: the same salary carries nine times the tax in Germany that it does in Ireland."
  },
  {
+  "id": "econ-2021-ol-q12-a-ii",
+  "topicId": "economics-2-0",
+  "conceptId": "marking-price-output-and-cost-in-long-run-perfect-competition",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 OL Q12(a)(ii)",
+  "questionText": "Equilibrium occurs at the point B on the diagram above. Show on the diagram above: the price the firm will charge for its output (use label P1); the output the firm will produce in equilibrium (use label Q1); the average cost of producing this output (use point C1).",
+  "stem": "",
+  "figureKey": "economics-2021-OL-scheme-p12-q12a-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The price the firm will charge for its output (use label P1)",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Four marks. In perfect competition the firm is a price TAKER, so the price is the horizontal D = AR = MR line — it does not read off a downward-sloping curve."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The output the firm will produce in equilibrium (use label Q1)",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Four marks. Output is found by dropping from B — where MC cuts the AR line — straight down to the quantity axis."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "The average cost of producing this output (use point C1)",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Two marks, and this is the point of the question: in LONG-RUN equilibrium average cost equals price, so C1 sits at the same height as P1. The scheme labels the axis P1 / C1 for exactly that reason."
+   }
+  ],
+  "notes": "Long run means normal profit only, so price and average cost coincide. A student who marks C1 below P1 has drawn a supernormal profit that cannot survive free entry — and the scheme’s split, 4 and 4 for P1 and Q1 but only 2 for C1, still costs them the mark."
+ },
+ {
+  "id": "econ-2021-ol-q15-b-i",
+  "topicId": "economics-1-1",
+  "conceptId": "which-diagram-shows-a-successful-ad-campaign",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 OL Q15(b)(i)",
+  "questionText": "Nike is famous for its ‘Just do it’ advertising campaign. Indicate by means of a tick (✓) which diagram accurately reflects the impact this highly successful advertising campaign had on the equilibrium of Nike products.",
+  "stem": "",
+  "figureKey": "economics-2021-OL-paper-p23-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "10",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Diagram A Diagram B Diagram B √",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Diagram B. A successful campaign makes people want MORE at every price, so demand shifts RIGHT — the D2 line has to sit to the right of D1, which is what B shows and A does not."
+   }
+  ],
+  "notes": "Both diagrams are drawn the same way apart from which side D2 falls on, so the whole question is the DIRECTION of the shift. Advertising is a non-price determinant, so the curve moves rather than the market sliding along it."
+ },
+ {
+  "id": "econ-2021-ol-q11-a-i",
+  "topicId": "economics-4-0",
+  "conceptId": "reading-the-change-in-irelands-hdi-position",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 OL Q11(a)(i)",
+  "questionText": "Using the data provided in the tables above calculate the difference between Ireland’s ranking on the HDI index from 2019 to 2020. Indicate if Ireland’s position has improved.",
+  "stem": "",
+  "figureKey": "economics-2021-OL-paper-p10-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 @ 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Difference in Difference in Difference in Has Ireland’s position HDI Rank life expectancy Mean Years of improved between (2019-2020) at birth Schooling 2019 and 2020? + 1 + 0.2 Years + 0.2 Yes",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Four cells at three marks each: the change in rank, in life expectancy, in mean years of schooling, and the verdict. A rank moving from 3 to 2 is an IMPROVEMENT even though the number got smaller — that is the whole point of the last column."
+   }
+  ],
+  "notes": "Rank runs the opposite way to the other two columns: a smaller number is better. Reading the +1 as a fall is the standard error, and it makes the final Yes come out as No."
+ },
+ {
+  "id": "econ-2021-ol-q13-c-ii-cpi",
+  "topicId": "economics-3-3",
+  "conceptId": "reading-inflation-rates-off-a-cpi-chart",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 OL Q13(c)(ii)",
+  "questionText": "The diagram below shows the changing inflation rates from the Consumer Price Index (CPI) Ireland from August to December 2020. Using the data answer the questions in the table below.",
+  "stem": "",
+  "figureKey": "economics-2021-OL-paper-p18-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 @ 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "What was the percentage change in inflation in -1.5% October 2020? What was the change in the annual percentage -0.2% change in inflation between August and September 2020? During what months was there an increase in the October to November annual percentage change in inflation? November to December",
+    "marks": 18,
+    "openList": true,
+    "contextNote": "Three readings at six marks each. The last one asks for the months where the annual change INCREASED — that is where the line rises, from -1.5 up to -1.1 and then to -1, even though every figure on the chart is still negative."
+   }
+  ],
+  "notes": "Every value is below zero, so prices were FALLING throughout. An increase in the annual percentage change here means the fall got smaller, not that prices rose."
+ },
+ {
   "id": "econ-2021-ol-sa-q10-b",
   "topicId": "economics-2-1",
   "conceptId": "why-wages-differ-between-jobs",
@@ -4277,6 +4778,195 @@
    }
   ],
   "notes": "The scheme pays 9 for the shifted curve drawn on the diagram and 6 (3 + 3) for the explanation."
+ },
+ {
+  "id": "econ-2021-ol-sa-q1-i",
+  "topicId": "economics-3-1",
+  "conceptId": "education-as-a-percentage-of-government-spending",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2021 OL Section A Q1(i)",
+  "questionText": "The estimated government expenditure for all departments is €89.6 billion. Calculate the estimated expenditure on Education as a percentage of total government expenditure for 2021. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2021-OL-paper-p03-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 @ 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "8.9/ 89.6 x 100 = 9.93%",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Three steps at four marks each: the Education figure over the total, times 100, and the result. The 8.9 is not in the wording — it is read off the chart."
+   }
+  ],
+  "notes": "Nothing in the question gives you 8.9; it comes off the Education bar. Students who work from the wording alone have no numerator."
+ },
+ {
+  "id": "econ-2021-ol-sa-q3-i",
+  "topicId": "economics-1-4",
+  "conceptId": "price-elasticity-of-demand-for-kerosene",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2021 OL Section A Q3(i)",
+  "questionText": "Using the formula supplied, calculate the consumers price elasticity of demand when the price of Kerosene (home fuel heating oil) changes due to an increase in carbon tax.",
+  "stem": "",
+  "figureKey": "economics-2021-OL-scheme-p05-q3i-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Changes -250 litres +50 −250",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Six figures at two marks each — the two quantities, the two prices and the two changes. The Changes row is worked first: quantity falls 250, price rises 50."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "+50 𝑥 800 + 850 1000 + 750",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The substitution itself. PED is the change in quantity over the change in price, times the SUM of the prices over the SUM of the quantities — the midpoint form the paper supplies, not the simple percentage form."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Answer: - 4.71",
+    "marks": 1,
+    "openList": true,
+    "contextNote": "One mark for the figure. It is negative because quantity and price moved in opposite directions, and the sign is part of the answer."
+   }
+  ],
+  "notes": "The scheme prints this as stacked fractions, which is why the working rides with the card as a picture. Flattened into a line of text the numerator and denominator run together and the calculation stops being readable."
+ },
+ {
+  "id": "econ-2021-ol-sa-q7",
+  "topicId": "economics-3-1",
+  "conceptId": "working-out-a-budget-surplus-or-deficit",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2021 OL Section A Q7",
+  "questionText": "Using the following figures, calculate the expected budgetary position for Ireland in 2022. Indicate if it is a surplus or a deficit. Total income: €87.5 billion Total expenditure: €86.1 billion",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 @ 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Total Income (€87.5 bn) - Total Expenditure (€86.1 bn) = €1.4bn. Surplus",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Five steps at three marks each, and the verdict is one of them: the arithmetic alone does not answer the question, which asks whether it is a surplus or a deficit."
+   }
+  ],
+  "notes": "Income above expenditure is a SURPLUS. The word is worth marks on its own, so a correct €1.4bn with no verdict is an incomplete answer."
+ },
+ {
+  "id": "econ-2021-ol-sa-q4",
+  "topicId": "economics-1-1",
+  "conceptId": "completing-a-marginal-utility-table-and-finding-the-turn",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2021 OL Section A Q4",
+  "questionText": "Complete the blank spaces below and answer the question that follows. Show your workings. Based on the table above: At what point does the point of diminishing marginal utility set in?",
+  "stem": "",
+  "figureKey": "economics-2021-OL-scheme-p05-q4-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "38 – 25 = 13 47 – 38 = 9",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Six figures at two marks each. Marginal utility is the DIFFERENCE between one total and the one before it, so each blank is a subtraction down the total utility row."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "After 2nd is consumed or before 3rd is consumed.",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "Diminishing marginal utility sets in where the marginal figures start to FALL — 15 down to 13 — not where total utility falls. Total utility is still rising throughout this table."
+   }
+  ],
+  "notes": "Total utility rises all the way to 47, so a student watching the wrong row sees no turning point at all. The turn is in the marginal row, and it happens while the total is still climbing."
+ },
+ {
+  "id": "econ-2021-ol-sa-q2",
+  "topicId": "economics-0-0",
+  "conceptId": "positive-or-normative-statement",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2021 OL Section A Q2",
+  "questionText": "Study the statements below and indicate by placing a tick (√) in the correct box which is a positive statement and which is a normative statement.",
+  "stem": "",
+  "figureKey": "economics-2021-OL-scheme-p04-q2-ticks",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Statement Positive Normative 1. In 2022 exports in Ireland will grow by 10% due to √ Brexit. 2. Increased government expenditure on drug abuse √ will reduce the number of deaths.",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Two statements, the first worth 9 and the second 6. A POSITIVE statement is a factual claim that could be checked; a NORMATIVE one is a judgement about what should be done."
+   }
+  ],
+  "notes": "A forecast is POSITIVE — it can be checked once 2022 has happened. The second statement claims a policy will produce a good outcome, which is a value judgement. The answer is which column the tick sits in, and extraction loses the column, so the completed table rides with the card as a picture."
  },
  {
   "id": "econ-2022-hl-q11-a-ii",
@@ -5985,6 +6675,430 @@
   "notes": "The carpenters row is the interesting one: the scheme concedes that labour can be fixed if contracted at a set price, so the classification follows the contract, not the input."
  },
  {
+  "id": "econ-2022-hl-q12-a-i",
+  "topicId": "economics-2-0",
+  "conceptId": "what-a-falling-hhi-shows",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q12(a)(i)",
+  "questionText": "Comment on what the Herfindahl-Hirschman Index (HHI) results outlined above indicate about the market concentration in this industry over this time period.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-paper-p18-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "By 2019 the concentration has decreased to 3,328 as more firms have entered the industry. • However, as this number is still greater than 2,500 and is still highly concentrated e.g., top 3 firms control over 80% of the industry.",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "Two moves at once, and the scheme wants both: concentration FELL as firms entered, AND it is still above 2,500, so the market remains highly concentrated. A comment that reports only the fall has described the direction and missed the level."
+   }
+  ],
+  "notes": "A falling HHI is not the same as a competitive market. At 3,328 the top three firms still hold over 80%, so the industry has become less concentrated while staying concentrated."
+ },
+ {
+  "id": "econ-2022-hl-q15-c-i",
+  "topicId": "economics-4-2",
+  "conceptId": "the-eus-largest-contributor-and-beneficiary",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q15(c)(i)",
+  "questionText": "Using the data in the graph above, name the country which is the EU’s largest contributor and which country is the EU’s largest beneficiary.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-paper-p33-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 @ 4+1 @ 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The two countries — both",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Both are read straight off the net-benefit bars, and the scheme prices them unevenly — 4 for the first and 3 for the second.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Largest EU Contributor: GERMANY •",
+      "Largest EU Beneficiary: POLAND"
+     ],
+     "perOptionSteps": [
+      4,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "The chart plots NET position, so the largest contributor is the deepest negative bar and the largest beneficiary the tallest positive one. Reading it as gross payments reverses the answer. The crop was catalogued under Q16(c)(i), which the paper shows is the fast-fashion minimum-pricing question; the manifest ref has been corrected to this part."
+ },
+ {
+  "id": "econ-2022-hl-q14-c-i",
+  "topicId": "economics-2-1",
+  "conceptId": "average-gender-wage-gap-across-five-countries",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q14(c)(i)",
+  "questionText": "Based upon the data above calculate the average gender wage gap across these five European countries. Show all your workings.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-paper-p28-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "21.7 + 19.2 + 14 + 11.3 + 1.3 = 67.5 ÷ 5 = 13.5",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "All five gaps are added and divided by five. It is a simple mean, so the only way to go wrong is to read a bar off the chart incorrectly or to divide by the wrong count."
+   }
+  ],
+  "notes": "The five countries range from 21.7% down to 1.3%, so the average sits well below the widest gap — one country is not the story."
+ },
+ {
+  "id": "econ-2022-hl-q12-b-ii",
+  "topicId": "economics-2-0",
+  "conceptId": "long-run-equilibrium-of-a-monopoly",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q12(b)(ii)",
+  "questionText": "Explain, with the use of a fully labelled diagram, the long run equilibrium position of a monopoly firm.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "11 + 8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 19,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1 mark per label = 11 marks Price Quantity P1 Q1 C1 E D/AR MR MC AC SNP",
+    "marks": 11,
+    "openList": true,
+    "contextNote": "Eleven labels, one mark each, and the scheme says so in as many words. The axes count: Price and Quantity are two of the eleven, which is why \"fully labelled\" is not a stylistic instruction."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "• Equilibrium is at point E (where MC=MR). • Firms produce quantity Q1. • They sell the output at price P1. • Costs are at the level C1 (Y). • Firms earn supernormal profits as AR is greater than AC. • Inefficiency occurs as costs are not at the minimum point of the AC curve.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The explanation is worth 8 on top of the drawing. It runs in order: equilibrium where MC = MR, the quantity that follows, the price charged, the cost level, the supernormal profit that AR above AC produces — and the inefficiency, because a monopoly does not sit at the bottom of its AC curve."
+   }
+  ],
+  "notes": "A monopoly earns supernormal profit IN THE LONG RUN, which is what separates this diagram from perfect competition: no entry competes the profit away, so the SNP block stays."
+ },
+ {
+  "id": "econ-2022-hl-q16-c-i",
+  "topicId": "economics-1-3",
+  "conceptId": "minimum-pricing-on-fast-fashion",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q16(c)(i)",
+  "questionText": "Explain, with the use of a fully labelled diagram, how the introduction of minimum pricing (above the market equilibrium price) on fast fashion will impact on the market for fast fashion.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "10 + 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Surplus Price S1 Pmin E PE D1 Quantity QD QE QS",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Ten labels. The minimum price Pmin sits ABOVE the equilibrium PE — drawn below it the diagram shows a price floor that does nothing, which is the usual error."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Effect on price Through imposing a minimum price on these products, the price will be legally forced upwards from PE to Pmin. Effect on demand With the increase in price there will be a fall in demand for these products from QE to QD. Effect on market This will result in a surplus of fast fashion clothes as indicated above.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Three effects in a chain: price forced up from PE to Pmin, demand falls from QE to QD, and the gap between QS and QD is a SURPLUS. A floor above equilibrium always leaves unsold stock."
+   }
+  ],
+  "notes": "A minimum price only bites when it is set above the market price, and the consequence is unsold goods rather than a tidier market — which is the trade-off the question is about."
+ },
+ {
+  "id": "econ-2022-hl-q15-a-iii",
+  "topicId": "economics-1-0",
+  "conceptId": "how-grant-aid-shifts-the-supply-of-milk",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q15(a)(iii)",
+  "questionText": "Explain, with the use of a fully labelled diagram below, how this grant aid will have impacted on the equilibrium price and quantity of milk.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-paper-p31-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9 + 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Price S1 S2 EA P1 P2 EB D1 Q1 Q2 Quantity",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "Nine labels. Both equilibria have to be marked — EA before the grant and EB after — because the answer is the MOVE between them, not either point alone."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "• This grant should help reduce costs &/or become more efficient. • This causes the supply curve to shift to the right from S1 to S2. • The equilibrium price decreases (from P1 to P2). • The quantity supplied increases (from Q1 to Q2).",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The chain: the grant cuts costs, so SUPPLY shifts right (S1 to S2), so price falls and quantity rises. It is the supply curve that moves — a grant to producers does not change what consumers want."
+   }
+  ],
+  "notes": "Subsidising producers lowers the price consumers pay. That surprises students who expect a payment to the seller to push prices up."
+ },
+ {
+  "id": "econ-2022-hl-q15-b-i",
+  "topicId": "economics-4-2",
+  "conceptId": "spotting-a-depreciating-euro-on-a-chart",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q15(b)(i)",
+  "questionText": "Identify one period where the value of the Euro depreciates against the Pound Sterling. Explain your answer.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-paper-p32-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 8",
+   "answer": 1,
+   "ofParts": 3,
+   "perPart": 8
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A period of depreciation, with the figures — any one",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Any one of three periods earns the ⟨4 + 4⟩: four for naming it and four for the figures. Depreciation means each Euro buys LESS Sterling, so the rate falls — 0.80 down to 0.70, and so on.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 8,
+     "options": [
+      "During the period December 2013 to December 2015. This can be seen as the amount of Sterling which can be bought per Euro declines from 0.80 pence to 0.70 pence approximately.",
+      "During the period December 2018 to December 2019. This can be seen as the amount of Sterling which can be bought per Euro declines from 0.90 pence to 0.85 pence approximately.",
+      "During the period December 2020 to December 2021. This can be seen as the amount of Sterling which can be bought per Euro declines from 0.90 pence to 0.85 pence approximately."
+     ]
+    }
+   }
+  ],
+  "notes": "A falling line here is a WEAKER euro, which is the reading students invert: the axis is Sterling per Euro, so down means the euro buys less."
+ },
+ {
+  "id": "econ-2022-hl-q14-c-iii",
+  "topicId": "economics-2-1",
+  "conceptId": "arguments-for-and-against-a-living-wage",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q14(c)(iii)",
+  "questionText": "Discuss one argument for and one argument against the implementation of the ‘Living Wage’ €12.90 per hour as the National Minimum Wage for 2023.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Arguments for: Introduce a more equitable distribution of income. People who were on lower levels of pay will now receive a higher minimum level of pay and this helps to re-distribute wealth within a country. Protection of the most vulnerable under law. Workers who may be vulnerable are now better protected by law from exploitation by unfair employers. Reduce problem of poverty. An increased minimum wage will ensure that wages from paid work will result in a living wage and this will help reduce poverty within the country. Increase worker’s standard of living. By providing for an increased minimum wage workers disposable income increases and their standard of living increases. Increase the incentive to work. When workers see that pay levels are rising then it may attract more people into the workforce / help retain current workers / help increase productivity. Boost economic growth. Higher incomes will mean increased spending within the economy and will help boost economic growth / employment.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One argument FOR, priced ⟨2+2⟩ — two for the point and two for developing it. The scheme offers a redistribution argument, protection of vulnerable workers, poverty reduction and living standards."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Arguments against: Increases the cost of business. Businesses and unions may argue against the implementation of the Living Wage as it would lead to an increase in their cost of production which may make it harder for businesses to survive. Cost push inflation. Increasing the minimum wage up to the Living Wage may lead to increased cost of production which may be passed on to the consumer in the form of higher prices. May lead to decreased employment. Whilst more employees may be willing to work, leading to an expanded labour force, firms may decide to counteract the increasing costs through rationalisation of their workforce. This may leave fewer people employed than before the Living Wage was implemented. May be a deterrent for FDI. Firms who have invested into Ireland from abroad may find the increase in the cost of production to be a deterrent to operating here. Existing firms may decide to relocate to other low-cost countries. New firms might not consider Ireland as an option for FDI.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "One argument AGAINST, priced the same way. The business case is higher production costs and the cost-push inflation that can follow — note that the second is an economy-wide effect, not a firm-level one."
+   }
+  ],
+  "notes": "Both halves are required and each is worth the same, so an essay on one side scores at most half however good it is."
+ },
+ {
+  "id": "econ-2022-hl-q14-b-i",
+  "topicId": "economics-1-5",
+  "conceptId": "filling-in-total-average-variable-and-marginal-cost",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q14(b)(i)",
+  "questionText": "Calculate the missing figures for A, B, and C in the table below.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-scheme-p28-q14bi-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: Total Cost B: Average Variable Cost C: Marginal Cost 100,000 400,000 450,000 + 260,000 2 – 400,000 €360,000 €200,000 €50,000",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "Three different cost concepts, three different operations. Total cost ADDS fixed to variable; average variable cost DIVIDES variable cost by output; marginal cost is the DIFFERENCE between one total cost and the one before it."
+   }
+  ],
+  "notes": "The scheme sets the three calculations in three columns, so flattened into a line the figures run together — the working rides with the card as a picture. Marginal cost is the step between two totals, not a total divided by anything."
+ },
+ {
+  "id": "econ-2022-hl-q11-b-i",
+  "topicId": "economics-2-1",
+  "conceptId": "how-the-equilibrium-price-of-land-is-determined",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q11(b)(i)",
+  "questionText": "Explain, with the use of a fully labelled diagram how the equilibrium price of land is determined.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-scheme-p15-q11bi-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "D QE Quantity The supply of land is fixed in quantity at S. The demand for land is downward sloping from left to right- D.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Six marks for the diagram. The supply of land is VERTICAL — fixed in quantity, so no price will bring more of it into existence. Everything else about the diagram follows from that one line."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The equilibrium price PE is established where D is equal to S.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Five marks for the explanation. With supply fixed, the equilibrium price is set entirely by DEMAND — the price is demand-determined, which is what makes land different from the other factors."
+   }
+  ],
+  "notes": "A vertical supply curve is the whole point. Drawing land’s supply as an ordinary upward slope makes the diagram say the opposite of what the question is about."
+ },
+ {
+  "id": "econ-2022-hl-q14-b-ii",
+  "topicId": "economics-1-5",
+  "conceptId": "plotting-fixed-variable-and-total-costs",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q14(b)(ii)",
+  "questionText": "Using the figures obtained in the table above draw and label: the Fixed Costs, Variable Costs, and Total Costs on the graph paper below.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-scheme-p28-q14bii-graph",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Cost of Production 600,000 500,000 505,000 TC:5 450,000 400,000 400,000 405,000 VC:5 360,000 350,000 300,000 300,000 260,000 200,000 100,000 100,000 100,000 100,000 100,000 FC: 2 1 2 3 4 Fixed Cost (€) Variable Cost (€) Total Cost (€) Axes 4",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "The scheme writes its split onto the graph: TC:5, VC:5, FC:2 and Axes 4. Total cost is the SUM of the other two, so the total-cost line runs exactly €100,000 above the variable-cost line at every output — that gap is the check."
+   }
+  ],
+  "notes": "Fixed cost is flat at €100,000 whatever the output. The three figures worked in (b)(i) are the ones plotted here, so an error there reappears as a kink in this graph."
+ },
+ {
   "id": "econ-2022-hl-sa-q2-b",
   "topicId": "economics-1-1",
   "conceptId": "what-moves-personal-consumption",
@@ -6672,6 +7786,220 @@
    }
   ],
   "notes": "Part (i) asks which of two printed charts shows the real trend; this part asks why that one is right. The answer is a policy story, not a reading of the line: rates fell because the ECB was trying to restart a stalled economy."
+ },
+ {
+  "id": "econ-2022-hl-seca-q2-a",
+  "topicId": "economics-4-2",
+  "conceptId": "is-the-balance-of-payments-expansionary",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q2(a)",
+  "questionText": "Using the data above, explain whether the Balance of Payments is likely to have an overall expansionary or contractionary effect. Refer to relevant figures in the diagram above to explain your answer. Indicate by means of a tick (✓) whether it is expansionary or contractionary.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-paper-p04-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Answer: Expansionary • Exports have increased by 6.4% and imports have increased by 5.4%. • The increase in exports is (1%) larger than the increase in imports thus the injections are larger than leakages which with have an overall expansionary effect on the economy.",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "The verdict AND the figures that carry it. Exports rose 6.4% against imports at 5.4%, so the injection is the larger of the two and the net effect is expansionary. The gap is only one percentage point, which is exactly why the figures have to be quoted rather than the direction asserted."
+   }
+  ],
+  "notes": "Both exports and imports rose. What decides the answer is which rose FASTER, so an answer that notes only the export growth has not compared anything."
+ },
+ {
+  "id": "econ-2022-hl-seca-q10-a",
+  "topicId": "economics-0-0",
+  "conceptId": "opportunity-cost-along-the-ppf",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q10(a)",
+  "questionText": "Calculate the opportunity cost of PepsiCo moving production from point D to point H on the Production Possibility Frontier (PPF) curve.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-paper-p13-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Tropicana decreases from 62 million litres to 0 litres. • Thus, the opportunity cost is 62 million litres of Tropicana3",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Opportunity cost is what is GIVEN UP, so the answer is the fall in Tropicana — 62 million litres down to zero — not the gain in the other product. Naming the thing produced more of is answering the opposite question."
+   }
+  ],
+  "notes": "At point H the firm makes no Tropicana at all, so the whole 62 million litres is the cost of getting there."
+ },
+ {
+  "id": "econ-2022-hl-sa-q1-a",
+  "topicId": "economics-1-4",
+  "conceptId": "price-elasticity-of-demand-off-a-demand-curve",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q1(a)",
+  "questionText": "Using an appropriate formula, calculate the price elasticity of demand depicted in the graph below where the original price of the packet of face masks is €4 and then increases to €5. Show all calculations.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-paper-p03-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "10",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "−4 +1 × (4 + 5) (8 + 4) = −3",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme sets this as two fractions side by side — the change in quantity over the change in price, times the SUM of the prices over the SUM of the quantities — so read the run as −4 over +1, times (4 + 5) over (8 + 4). Nothing in the wording gives the quantities: 8 and 4 are read off the graph."
+   }
+  ],
+  "notes": "The price rise is given but the quantity fall is not, so the whole numerator has to come off the curve. A PED of −3 means demand is elastic, and the minus sign is part of the answer."
+ },
+ {
+  "id": "econ-2022-hl-sa-q6-a-i",
+  "topicId": "economics-2-0",
+  "conceptId": "what-entry-does-to-the-market-equilibrium",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q6(a)(i)",
+  "questionText": "Firms in Perfect Competition are said to be Price-Takers. On the diagrams below label and illustrate what happens to the market equilibrium as more firms enter the market. Explain each of your diagrams below.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-scheme-p10-q6a-diagrams",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The Market The Firm Price S1 Price S2 P1 P1 D1=AR1=MR1 P2 P2 D1 D2=AR2=MR2 Q1 Q2 Quantity Quantity",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Half of the scheme’s 4 for the two printed diagrams. On the MARKET diagram, entry shifts SUPPLY right from S1 to S2 — demand does not move."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Explanation for the market: As firms outside the industry become aware of the SNPs earned in the industry these firms will enter the industry which they can do as there are no barriers to entry. As these firms enter the market supply will shift to the right from S1 to S2. This quantity supplied increases from Q1 to Q2 and decreases the price from P1 to P2.",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Two marks for the words. The chain is supernormal profits, no barriers to entry, more firms, supply right, quantity up from Q1 to Q2 and price down from P1 to P2."
+   }
+  ],
+  "notes": "Entry is attracted by supernormal profit and ends by competing it away. It is SUPPLY that shifts — more firms means more of the good at every price, not more buyers."
+ },
+ {
+  "id": "econ-2022-hl-sa-q6-a-ii",
+  "topicId": "economics-2-0",
+  "conceptId": "why-the-individual-firms-price-falls-as-firms-enter",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q6(a)(ii)",
+  "questionText": "Firms in Perfect Competition are said to be Price-Takers. On the diagrams below label and illustrate what happens to the individual firm’s price as more firms enter the market. Explain each of your diagrams below.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-scheme-p10-q6a-diagrams",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "P2 D1 D2=AR2=MR2 Q1 Q2 Quantity Quantity",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The other half of the scheme’s 4 for the two printed diagrams. On the FIRM’s diagram the price line simply drops, from D1 = AR1 = MR1 down to D2 = AR2 = MR2 — it stays HORIZONTAL at both levels."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Explanation for the firm: As the individual firm is described as a price-taker they must accept the price established by the industry, thus their price also decreases from P1 to P2.",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Two marks for the words, and the phrase that earns them is PRICE-TAKER: the firm accepts whatever the industry sets, so its price falls from P1 to P2 because the market price did."
+   }
+  ],
+  "notes": "The firm’s demand curve is horizontal because it can sell any amount at the going price and nothing above it. Sloping it downward turns a perfect competitor into a monopolist."
+ },
+ {
+  "id": "econ-2022-hl-sa-q7-a-i",
+  "topicId": "economics-3-3",
+  "conceptId": "which-chart-shows-the-real-ecb-rate-trend",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q7(a)(i)",
+  "questionText": "Only one of the charts below accurately displays the trend in the ECB rate from 2000 to 2021. Identify which chart accurately displays the correct trend in the ECB rate from 2000 to 2021. Choose by means of a tick one of the boxes below.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-paper-p10-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Figure A: Figure B: ✔",
+    "marks": 1,
+    "openList": true,
+    "contextNote": "Figure B. One mark for the tick — the justification is the next part and is worth eight. The ECB rate FELL after the 2007/2008 crisis and sat at zero for years, which is B’s shape; A has it rising into the 2010s."
+   }
+  ],
+  "notes": "The two charts are mirror images in the years that matter. Cheap money after the financial crisis is the fact being tested, and a chart showing rates climbing through the 2010s has the decade upside down."
  },
  {
   "id": "econ-2022-ol-q11-a-ii",
@@ -8239,6 +9567,294 @@
   "notes": "The plain id econ-2022-ol-q13-a-i is taken by a card citing 2022 OL Q14(c)(i), and an id is never renamed because it keys a student’s review history — hence the suffix. The pie prints current and capital separately and the total in its heading, so the denominator has to be recognised before any arithmetic happens."
  },
  {
+  "id": "econ-2022-ol-q13-b-ii",
+  "topicId": "economics-3-0",
+  "conceptId": "calculating-the-multiplier-in-an-open-economy",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 OL Q13(b)(ii)",
+  "questionText": "The multiplier formula for an open economy is: 1 / (MPS + MPM). Assume that MPS is 0.1 and MPM is 0.4. Calculate, using the above formula, the size of the multiplier.",
+  "stem": "",
+  "figureKey": "economics-2022-OL-scheme-p20-q13bii-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "12",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.1 + 0.4 = 2",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "The two leakages are ADDED first, then divided into 1. Adding the multipliers of each leakage separately, or dividing 1 by each in turn, is the usual way this goes wrong."
+   }
+  ],
+  "notes": "The scheme prints this as a fraction with 1 above the line, so the flat text reads “0.1 + 0.4 = 2” — which is why the scheme’s own working rides with the card as a picture."
+ },
+ {
+  "id": "econ-2022-ol-q11-a-i",
+  "topicId": "economics-2-0",
+  "conceptId": "highest-and-lowest-market-share-in-streaming",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 OL Q11(a)(i)",
+  "questionText": "Using the data above complete the table below: Which service has the highest market share? Which service has the lowest market share?",
+  "stem": "",
+  "figureKey": "economics-2022-OL-paper-p10-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Which service has the highest market share? YouTube",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "The first answer carries 9. YouTube is about 164 million users, more than three times the next service."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Which service has the lowest market share? Vimeo",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The second answer carries 3. Vimeo at about 15 million is just below Amazon Prime Video, so the two shortest bars have to be compared rather than glanced at."
+   }
+  ],
+  "notes": "The bars are unlabelled, so both answers are read against the axis. The gap between the bottom two is small enough that the order matters."
+ },
+ {
+  "id": "econ-2022-ol-q11-b-ii",
+  "topicId": "economics-2-0",
+  "conceptId": "marking-output-price-and-average-cost-on-a-monopoly-diagram",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 OL Q11(b)(ii)",
+  "questionText": "Equilibrium occurs at the point G on the diagram above. Clearly show and label on the above diagram: the output the firm will produce in equilibrium (use label Q1); the price the firm will charge for its output (use label P1); the average cost of producing this output (use point C1).",
+  "stem": "",
+  "figureKey": "economics-2022-OL-scheme-p14-q11bii-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The output the firm will produce in equilibrium (use label Q1)",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Four marks. G is where MC cuts MR, and the output is found by dropping STRAIGHT DOWN from G to the quantity axis — not by reading across from it."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The price the firm will charge for its output (use label P1)",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Four marks. The price is read off the AVERAGE REVENUE curve above Q1, not off G itself. This is the step most often missed: the firm sets output where MC = MR but charges what the demand curve will bear."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "The average cost of producing this output (use point C1)",
+    "marks": 1,
+    "openList": true,
+    "contextNote": "One mark. Average cost is read off AC above the same Q1, which puts C1 below P1 — and the gap between them is the profit per unit."
+   }
+  ],
+  "notes": "Three readings off ONE vertical line at Q1: the quantity below it, the price where it meets AR, the cost where it meets AC. Reading the price off point G is the classic error, and it is worth four of the nine marks."
+ },
+ {
+  "id": "econ-2022-ol-q12-a-i",
+  "topicId": "economics-1-1",
+  "conceptId": "plotting-a-market-demand-curve-from-a-schedule",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 OL Q12(a)(i)",
+  "questionText": "Using the above information and on one diagram on the graph paper below, draw and label the market demand curve for reusable coffee cups.",
+  "stem": "",
+  "figureKey": "economics-2022-OL-scheme-p16-q12a-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "14",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "5 Q1 D 0 10 20 30 40 50 60 Units (000's)",
+    "marks": 14,
+    "openList": true,
+    "contextNote": "Fourteen marks for this curve — the scheme prints one cell for the whole diagram, 28 at 14 per curve. Demand falls as price rises, so the curve runs from €9 at 10,000 units down to €5 at 50,000, and it has to be LABELLED D."
+   }
+  ],
+  "notes": "Both curves go on one diagram, and the schedule gives the demand column and the supply column side by side. Plotting the wrong column produces a curve sloping the wrong way."
+ },
+ {
+  "id": "econ-2022-ol-q12-a-ii",
+  "topicId": "economics-1-2",
+  "conceptId": "plotting-a-market-supply-curve-from-a-schedule",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 OL Q12(a)(ii)",
+  "questionText": "Using the above information and on one diagram on the graph paper below, draw and label the market supply curve for reusable coffee cups.",
+  "stem": "",
+  "figureKey": "economics-2022-OL-scheme-p16-q12a-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "14",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Demand and Supply Curves Reusable Coffee Cups 9 S Price (€) 7 P1",
+    "marks": 14,
+    "openList": true,
+    "contextNote": "Fourteen marks, the second half of the scheme’s 28 at 14 per curve. Supply RISES with price — 10,000 units at €5 up to 50,000 at €9 — and the curve has to be labelled S."
+   }
+  ],
+  "notes": "Supply and demand come off the same schedule and cross at €7 and 30,000 units, the one row where the two quantities are equal. That row is the check that both curves are plotted right."
+ },
+ {
+  "id": "econ-2022-ol-q12-b-ii",
+  "topicId": "economics-1-1",
+  "conceptId": "showing-a-demand-shift-after-a-celebrity-endorsement",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 OL Q12(b)(ii)",
+  "questionText": "Show, on the above diagram how the change in (i) above might affect the demand curve.",
+  "stem": "",
+  "figureKey": "economics-2022-OL-scheme-p17-q12b-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Demand curve would shift to the right – D2 above on diagram.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Eight marks, and the scheme prints the 8 on the diagram beside D2. More demand at every price means the WHOLE curve moves right — it is a shift, not a slide along the old curve."
+   }
+  ],
+  "notes": "A celebrity endorsement changes tastes, which is a non-price determinant, so the curve moves. Moving along the existing curve would mean the price had changed, and nothing here says it has."
+ },
+ {
+  "id": "econ-2022-ol-q12-b-iii",
+  "topicId": "economics-1-0",
+  "conceptId": "reading-the-new-equilibrium-after-a-demand-shift",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 OL Q12(b)(iii)",
+  "questionText": "Show, on the above diagram, the new equilibrium price (P2) and the new equilibrium quantity (Q2) as a result of (ii) above.",
+  "stem": "",
+  "figureKey": "economics-2022-OL-scheme-p17-q12b-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "D2 8 D Q1 Q2 6 Quantity",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Six for P2 and six for Q2 — the scheme prints both figures on the diagram itself. The new equilibrium is where D2 cuts the UNCHANGED supply curve, so both price and quantity rise."
+   }
+  ],
+  "notes": "Supply has not moved, so the new crossing point slides UP the existing S curve. Students who shift supply as well end up with a quantity change and no price change."
+ },
+ {
+  "id": "econ-2022-ol-q14-a-i",
+  "topicId": "economics-0-1",
+  "conceptId": "the-four-factors-of-production-in-a-yogurt-plant",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 OL Q14(a)(i)",
+  "questionText": "Complete the table below to show your understanding of the factors of production used in the production of yogurt. Some of the information has been completed for you.",
+  "stem": "",
+  "figureKey": "economics-2022-OL-scheme-p22-q14ai-table",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 x 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 24,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "2. LABOUR The human effort involved in the production of Workers yogurt. The workers who make the yogurt.",
+    "marks": 24,
+    "openList": true,
+    "contextNote": "Four factors at six marks each. LAND is anything supplied by nature — which here means the milk and berries as well as the ground; CAPITAL is what people have MADE to produce with; ENTERPRISE is the risk-taker, the Cleary family."
+   }
+  ],
+  "notes": "The trap is Land: students read it as the site only. In economics it is every natural resource that goes in, which is why milk, sugar and berries are its examples and the factory building belongs to Capital instead."
+ },
+ {
   "id": "econ-2022-ol-sa-q2-ii",
   "topicId": "economics-1-3",
   "conceptId": "what-the-census-is-used-for",
@@ -8924,6 +10540,113 @@
    }
   ],
   "notes": "Three of the four are variable, so a student splitting them evenly gets one wrong before thinking about any of them."
+ },
+ {
+  "id": "econ-2022-ol-sa-q7-b-i",
+  "topicId": "economics-1-5",
+  "conceptId": "adding-up-a-bakerys-total-cost-for-the-week",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 OL Section A Q7(b)(i)",
+  "questionText": "A bakery receives €5,000 in total from its sales in a week. Calculate the total cost of operating the bakery for the week.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "10 (5 x 2)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "€1,000 + €1,500 + €300 + €750 = €3,550",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Five steps at two marks each. Total cost is FIXED plus VARIABLE — every cost in the table goes in, whichever column it sits in."
+   }
+  ],
+  "notes": "The scheme deducts a mark if the € sign is omitted. The table sorts the costs into fixed and variable, and the sorting tempts students to total only one column."
+ },
+ {
+  "id": "econ-2022-ol-sa-q7-b-ii",
+  "topicId": "economics-1-5",
+  "conceptId": "net-profit-from-total-revenue-and-total-cost",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 OL Section A Q7(b)(ii)",
+  "questionText": "Calculate the net profit the bakery earned in the week. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2022-OL-scheme-p09-q7bii-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 (2+2+1)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Total revenue – Total Costs = Net Profit",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Two marks for the relationship, two for the substitution and one for the figure. The €5,000 is revenue, given in the question; the cost is the €3,550 worked in (i), so an error there carries into here."
+   }
+  ],
+  "notes": "The scheme prints the deduction note beside the working, so the two interleave in extraction — the picture is the faithful form. A mark goes for the € sign."
+ },
+ {
+  "id": "econ-2022-ol-sa-q1-i",
+  "topicId": "economics-3-5",
+  "conceptId": "highest-and-lowest-forecast-growth-years",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 OL Section A Q1(i)",
+  "questionText": "Using the information above, complete the table below. State the year with the highest rate of economic growth. State the year with the lowest rate of economic growth.",
+  "stem": "",
+  "figureKey": "economics-2022-OL-paper-p03-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "State the year with the highest rate of economic growth: 2022",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The first answer carries 6. The chart is a FORECAST, so the highest year is one of the projected ones, not a historical peak."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "State the year with the lowest rate of economic growth: 2020",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "The second answer carries 3. 2020 is the pandemic year and the shortest column."
+   }
+  ],
+  "notes": "Four columns, each labelled with its rate. The lowest is still growth — the question asks for the smallest rate, not for a contraction."
  },
  {
   "id": "econ-2023-hl-q11-a-ii",
@@ -10750,6 +12473,319 @@
   "notes": "The gap is €250m but the injection is €125m. Answering €250m is answering a different question: it ignores that the injection multiplies through the economy."
  },
  {
+  "id": "econ-2023-hl-q12-a-iii",
+  "topicId": "economics-2-0",
+  "conceptId": "long-run-equilibrium-in-perfect-competition",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 HL Q12(a)(iii)",
+  "questionText": "Explain, with the use of a fully labelled diagram (including the axes), the long run equilibrium of a firm in perfect competition.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9 + 8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 17,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Price MC AC E P/C D = AR = MR Q Quantity 1 mark per label = 9 marks Price Quantity P C Q MC AC D/AR/MR E",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "Nine labels, one mark each, and the scheme says so. Note D = AR = MR is a SINGLE horizontal line here: a price-taking firm sells every unit at the market price, which is what separates this diagram from every other market structure."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "• Equilibrium is at point E (where MC = MR). • Firms produce quantity Q. • They sell the output at price P. • Costs occur at level C. • The firm earns normal profit as AR = AC. • The firm is efficient as costs are at a minimum point of the ATC curve.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The long-run outcome is NORMAL profit, because AR = AC — free entry has competed any surplus away. And the firm sits at the minimum of its ATC curve, so it is productively efficient, which monopoly and monopolistic competition are not."
+   }
+  ],
+  "notes": "This is the benchmark diagram the other three are judged against: normal profit, efficient output, and a flat demand curve at the market price."
+ },
+ {
+  "id": "econ-2023-hl-q11-a-i",
+  "topicId": "economics-3-5",
+  "conceptId": "percentage-change-in-the-irish-population",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 HL Q11(a)(i)",
+  "questionText": "Using the data in the table below (extracted from the infographic above), calculate the percentage change in the Irish population from 2016 to 2022. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2023-HL-scheme-p15-q11ai-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "4761865 × 100 = 7.59 %",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The base is the EARLIER population, so the change divides by the 2016 figure, not the 2022 one. A mark goes for the % sign."
+   }
+  ],
+  "notes": "The table gives the total change outright, so the arithmetic is one division — but dividing by the wrong year is the standard slip, and it makes the answer look plausible."
+ },
+ {
+  "id": "econ-2023-hl-q12-b-i",
+  "topicId": "economics-2-0",
+  "conceptId": "calculating-the-herfindahl-hirschman-index",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 HL Q12(b)(i)",
+  "questionText": "Based upon the figures in the bar chart above, calculate the Herfindahl Hirschman Index for Irish Dairy Producers. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2023-HL-scheme-p21-q12bi-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "482 + 272 + 82 + 72 + 32 + 32 + 22 + 22 = 3172",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "Every share is SQUARED before adding — that is what makes the index sensitive to the big firms. Adding the shares unsquared gives 100 for any market at all."
+   }
+  ],
+  "notes": "The shares are read off the bar chart, and all eight go in. Squaring is the whole point: it is why two firms on 48 and 27 dominate the index."
+ },
+ {
+  "id": "econ-2023-hl-q13-b-i-mps",
+  "topicId": "economics-3-0",
+  "conceptId": "marginal-propensity-to-save-from-the-mpc",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 HL Q13(b)(i)",
+  "questionText": "Calculate the marginal propensity to save (MPS) for this economy. Show your workings.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 @ 2",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1- MPC 1-0.7 MPS = 0.3",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Three steps at two marks each: the relationship, the substitution and the figure. MPS is what is left of a marginal euro after consumption — imports do not come into it, so the MPM of 0.2 in the table is not used here."
+   }
+  ],
+  "notes": "The table supplies MPC and MPM together, which invites subtracting both. Saving is 1 minus the propensity to CONSUME."
+ },
+ {
+  "id": "econ-2023-hl-q13-b-ii-multiplier",
+  "topicId": "economics-3-0",
+  "conceptId": "the-multiplier-in-an-open-economy",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 HL Q13(b)(ii)",
+  "questionText": "Calculate the value of the multiplier in this open economy. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2023-HL-scheme-p24-q13bii-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 @ 2",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1 𝑀𝑃𝑆+ 𝑀𝑃𝑀 = 0.3 + 0.2 = 2 OR 1 1 (1 −(𝑀𝑃𝐶−𝑀𝑃𝑀) = (1 −(0.7 −0.2) = 2",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Both leakages go in the denominator TOGETHER, then 1 is divided by the sum. The scheme prints a second acceptable form built from MPC and MPM, and both reach 2."
+   }
+  ],
+  "notes": "An open economy leaks to saving AND to imports, so a multiplier worked from MPS alone is too big. The two forms the scheme accepts are the same statement rearranged."
+ },
+ {
+  "id": "econ-2023-hl-q15-a-iii",
+  "topicId": "economics-3-3",
+  "conceptId": "building-a-weighted-composite-price-index",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 HL Q15(a)(iii)",
+  "questionText": "The table below shows a country’s composite price index for the following categories of expenditure: food; transport; and other items. Using the information in the table below to calculate the price index for the current year. The base value is 100. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2023-HL-scheme-p32-q15aiii-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "19",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 19,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "item (s) € year € 55 X 100 = 110 x 60% = 66.0 Food 60% 50 55 50 24 X 100 = 120 x 25% = 30.0 Transport 25% 20 24 20 Other 81 X 100 = 108 x 15% = 16.2 Items 15% 75 81 75 Price Index for the 100% current Year",
+    "marks": 19,
+    "openList": true,
+    "contextNote": "Each category gets its own simple index first — current price over base price times 100 — and only THEN is it weighted. The composite is the sum of the weighted results, not an average of the simple indices."
+   }
+  ],
+  "notes": "The weights are what make it composite: food moves the index almost four times as much as other items. Averaging the three simple indices ignores that and is the usual wrong answer."
+ },
+ {
+  "id": "econ-2023-hl-q15-b-ii-depreciation",
+  "topicId": "economics-4-2",
+  "conceptId": "reading-appreciation-or-depreciation-off-an-exchange-rate-chart",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 HL Q15(b)(ii)",
+  "questionText": "Does the trend on the graph below indicate appreciation or depreciation of the Euro (€) to Pound Sterling (£)? Appreciation: Depreciation: Explain your answer.",
+  "stem": "",
+  "figureKey": "economics-2023-HL-paper-p31-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Answer: Depreciation Explanation: Between 01/09/2022 and 01/11/2022 the conversion rate of the Euro to Pound Sterling falls from 0.90 to 0.86. This means that every Euro is now worth less i.e. 86 pence instead of 90 pence.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The chart is quoted as Sterling PER Euro, so a falling line means each Euro buys less Sterling — that is depreciation. The explanation has to name the two dates and the two rates."
+   }
+  ],
+  "notes": "A falling line looks like the pound weakening until you read the axis. It is Euro to Sterling, so the currency that is losing value is the one on top."
+ },
+ {
+  "id": "econ-2023-hl-q13-a-i",
+  "topicId": "economics-3-0",
+  "conceptId": "drawing-the-circular-flow-for-an-open-economy",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 HL Q13(a)(i)",
+  "questionText": "Draw a fully labelled diagram showing the Circular Flow of Income for an open economy.",
+  "stem": "",
+  "figureKey": "economics-2023-HL-scheme-p23-q13ai-circular-flow",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "13 @ 1",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 13,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Households Firms Purchase of Goods and Services Government Financial Institutions Foreign Markets",
+    "marks": 13,
+    "openList": true,
+    "contextNote": "Thirteen labels at a mark each, and they are the whole answer. The two inner flows run between Households and Firms in OPPOSITE directions; taxation, savings and imports leave the flow, and government spending, investment and exports re-enter it."
+   }
+  ],
+  "notes": "What makes it an OPEN economy is the foreign markets box with imports out and exports in. A diagram with only households and firms is the closed two-sector version and forfeits most of the thirteen."
+ },
+ {
+  "id": "econ-2023-hl-q16-a-ii",
+  "topicId": "economics-1-1",
+  "conceptId": "what-free-school-transport-does-to-the-car-market",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 HL Q16(a)(ii)",
+  "questionText": "The Irish Government has provided free School transport for the 2022/2023 school year. Demonstrate, with the use of a fully labelled diagram, the impact this new scheme will possibly have on the market equilibrium for petrol/diesel cars.",
+  "stem": "",
+  "figureKey": "economics-2023-HL-scheme-p35-q16aii-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 23,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Price S1 E1 P1 E2",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three of the four cells — 4, 4 and 7 — sit beside the question and the drawing. Demand shifts LEFT to D2 while supply stays put, so the new equilibrium E2 sits below and to the left of E1."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "• The demand curve will shift to the left from D1 to D2. • Why? Buses are substitute goods for cars. Some households will feel reduced need for a car as school transport has been provided. They will switch to the free transport. • The equilibrium price will decrease from P1 to P2.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The fourth cell, printed beside the bullets. The reason is SUBSTITUTION: free bus transport is a substitute for the car, so some households no longer need one."
+   }
+  ],
+  "notes": "The scheme prints four cells for this part and no stated drawing/prose split; the 15 and the 8 are read off where each cell sits on the page. Both price and quantity FALL here — a leftward demand shift moves them the same way."
+ },
+ {
   "id": "econ-2023-hl-sa-q1-a",
   "topicId": "economics-1-2",
   "conceptId": "supply-of-a-fixed-capacity-good",
@@ -11489,6 +13525,171 @@
    }
   ],
   "notes": "Two of the three are indirect, so a student splitting them evenly gets one wrong on symmetry alone."
+ },
+ {
+  "id": "econ-2023-hl-seca-q3-c",
+  "topicId": "economics-1-4",
+  "conceptId": "testing-the-equi-marginal-principle",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2023 HL Section A Q3(c)",
+  "questionText": "Does the formula above obey the Equi-Marginal Principle of consumer behaviour? Explain your answer.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "• No, because: • 1800 ÷ 10 = 180 • 3600 ÷ 10 = 360 therefore the ratio is not the same.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Work both ratios and compare: 1800 ÷ 10 = 180 against 3600 ÷ 10 = 360. The principle is satisfied only when marginal utility per euro is EQUAL across goods, so unequal ratios mean it is not obeyed — and the answer is No."
+   }
+  ],
+  "notes": "Both goods cost the same €10 here, which makes it tempting to say the condition holds. It is the utility per euro that must match, not the price."
+ },
+ {
+  "id": "econ-2023-hl-sa-q3-a",
+  "topicId": "economics-1-1",
+  "conceptId": "filling-in-total-and-marginal-utility",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2023 HL Section A Q3(a)",
+  "questionText": "Complete the missing total utility and marginal utility figures in the table below. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2023-HL-scheme-p08-q3a-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 @ 2",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "• 80 – 40 = 40 • 80 + 35 = 115 • 137 – 115 = 22",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Three cells, three workings, two marks each. Marginal utility is the DIFFERENCE between consecutive totals, so it runs both ways: subtract to get a marginal from two totals, add to get the next total from a marginal."
+   }
+  ],
+  "notes": "The blanks alternate between the two rows on purpose, so the same relationship has to be used forwards and backwards. Reading marginal utility as a total is what breaks it."
+ },
+ {
+  "id": "econ-2023-hl-sa-q3-b",
+  "topicId": "economics-1-1",
+  "conceptId": "where-diminishing-marginal-utility-sets-in",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2023 HL Section A Q3(b)",
+  "questionText": "Based upon the marginal utility figures calculated above, at what point does the law of diminishing marginal utility set in? Explain your answer.",
+  "stem": "",
+  "figureKey": "economics-2023-HL-scheme-p08-q3a-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "• Answer: on the consumption of the third unit/after the consumption of the second unit. • Marginal utility declines from 40 to 35 utils.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The point is where marginal utility first FALLS — 40 to 35, on the third unit. The explanation has to quote those two figures; naming the unit alone does not carry the marks."
+   }
+  ],
+  "notes": "The scheme accepts either wording of the same moment — on the third unit, or after the second. What it will not accept is the point where TOTAL utility turns, which is a different thing and happens later."
+ },
+ {
+  "id": "econ-2023-hl-sa-q4-a",
+  "topicId": "economics-1-5",
+  "conceptId": "filling-in-average-and-marginal-cost",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2023 HL Section A Q4(a)",
+  "questionText": "Complete the missing average cost and marginal cost figures in the table below.",
+  "stem": "",
+  "figureKey": "economics-2023-HL-scheme-p09-q4a-table",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Workings: • 82 ÷ 2 = 41 • 108 - 82 = 26 • 152 ÷ 4 = 38 • 152 – 108 = 44",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Four blanks, four workings. Average cost DIVIDES total cost by output; marginal cost SUBTRACTS one total cost from the next. The two are different operations on the same row and mixing them is the whole error."
+   }
+  ],
+  "notes": "Marginal cost is N/A at one unit because there is no previous output to compare with. At four units marginal cost is 44 while average cost is only 38 — the marginal figure has overtaken the average, which is why the average starts to rise."
+ },
+ {
+  "id": "econ-2023-hl-sa-q10",
+  "topicId": "economics-3-0",
+  "conceptId": "from-gnp-to-gni-and-modified-gni",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2023 HL Section A Q10",
+  "questionText": "Given that Gross Domestic Product (GDP) at Current Market Prices (CMP) was €426bn, use the information above to calculate the following terms B, and C. A has been completed for you. State the relationships and show all your workings.",
+  "stem": "",
+  "figureKey": "economics-2023-HL-paper-p12-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 @ 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Gross National Product (GNP) at Current Market Prices: €323bn + EU subsidies €1.7 bn - EU taxes €0.5 bn B = Gross National Income at Current Market Prices €324.2 bn Relationships / Workings: Gross National Income at Current Market Prices: €324.2 bn - Adjustments: €89 bn C = Modified Gross National Income at Current Market Prices €235.2 bn",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Two steps at six marks each, and each starts from the figure the step above produced. B adds EU subsidies and subtracts EU taxes to GNP; C then subtracts the €89bn of adjustments from B."
+   }
+  ],
+  "notes": "Modified GNI exists because the ordinary figures are distorted by redomiciled companies, aircraft leasing and intellectual property — the €89bn taken out at the last step. It is the measure that comes closest to what the Irish economy actually produces."
  },
  {
   "id": "econ-2023-ol-q11-a-i",
@@ -13001,6 +15202,368 @@
   "notes": "The graph rises to a June peak and falls back after it, so \"petrol got dearer in 2022\" is only half of what the line shows."
  },
  {
+  "id": "econ-2023-ol-q12-a-i",
+  "topicId": "economics-3-1",
+  "conceptId": "total-planned-government-revenue",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q12(a)(i)",
+  "questionText": "Using the figures in the pie chart above, calculate how much the government is expecting to receive in revenue. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2023-OL-paper-p13-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "16",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "€27.5m + €14m + €17m + €27.5m + €2m + €7m = € 95 million",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "Every slice is added, including the two small ones. The scheme deducts a mark each for dropping the € or the \"million\", so the units are part of the answer rather than decoration."
+   }
+  ],
+  "notes": "Six slices, and the two smallest are easy to skip — leaving either out changes the total the NEXT part divides by."
+ },
+ {
+  "id": "econ-2023-ol-q12-a-ii",
+  "topicId": "economics-3-1",
+  "conceptId": "income-tax-as-a-share-of-revenue",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q12(a)(ii)",
+  "questionText": "Using your answer from (i) above calculate what percentage of government revenue will be received in income tax. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2023-OL-paper-p13-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "12",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "€27.5m / €95m x 100 = 28.94% / 29%. Deduct 1 mark for omission of % sign.",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Income tax over the TOTAL from part (i), not over any single other slice. A wrong total in (i) carries straight through, which is why the scheme prints the €95m again here."
+   }
+  ],
+  "notes": "The answer depends on the previous part, so an error in the total is paid for twice."
+ },
+ {
+  "id": "econ-2023-ol-q15-a-i-percentage",
+  "topicId": "economics-3-3",
+  "conceptId": "private-cars-as-a-share-of-vehicles-licensed",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q15(a)(i)",
+  "questionText": "Using the information in the table above, calculate the percentage (%) of private cars (new and used), as a percentage of the total vehicles licensed for the first time in 2021. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2023-OL-paper-p22-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "20",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "101, 853 + 68, 042 208 913 x 100 = 81.32%",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "New and used private cars are ADDED before dividing — the question asks for one category made of two rows. The denominator is every vehicle licensed, not just cars."
+   }
+  ],
+  "notes": "The plain id econ-2023-ol-q15-a-i is held by another card and an id is never renamed, since it keys a student’s review history — hence the suffix. Two of the infographic’s rows make the numerator and all of them make the denominator, so the same figures are used twice in different roles."
+ },
+ {
+  "id": "econ-2023-ol-q13-b-ii",
+  "topicId": "economics-3-0",
+  "conceptId": "national-income-and-the-balance-of-trade-from-one-table",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q13(b)(ii)",
+  "questionText": "Using the formula in (i) above and the figures below calculate: the level of National Income in 2023 and the Balance of Trade. Show your workings.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 27,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Y = C + I + G + (X-M) Y = €700m+ €200m + €400m + €300m - €200m Y = €1,400m",
+    "marks": 18,
+    "openList": true,
+    "contextNote": "Six steps at three marks each. Imports are SUBTRACTED — the bracket (X–M) is one term, so adding both trade figures is the standard error."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Exports – Imports €300m – €200m = €100m",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "Three steps at three. The balance of trade uses only the two trade figures — consumption, investment and government spending have no part in it."
+   }
+  ],
+  "notes": "One table answers two different questions, and the trade figures do double duty: inside the bracket for national income, on their own for the balance of trade. A mark goes for the € and a mark for the million."
+ },
+ {
+  "id": "econ-2023-ol-q14-b-i",
+  "topicId": "economics-1-5",
+  "conceptId": "total-revenue-from-price-and-quantity",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q14(b)(i)",
+  "questionText": "Calculate the total revenue if the firm sells 400 units. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2023-OL-paper-p20-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 @ 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Total revenue = Price x Quantity = €15 x 400 units = €6,000",
+    "marks": 18,
+    "openList": true,
+    "contextNote": "Three steps at six marks each: the relationship, the substitution and the figure. The price is not in the wording — it comes from the table, where 200 units bring in €3,000."
+   }
+  ],
+  "notes": "Total revenue is price times quantity, not the total cost row beside it. The table prints both, and reading across the wrong row gives a plausible wrong answer."
+ },
+ {
+  "id": "econ-2023-ol-q14-b-ii",
+  "topicId": "economics-1-5",
+  "conceptId": "profit-from-total-revenue-and-total-cost",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q14(b)(ii)",
+  "questionText": "Calculate the profit earned when the firm sells 400 units. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2023-OL-paper-p20-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 @ 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Profit = Total revenue – Total cost = €6,000 - €4,500 = €1,500",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "Three steps at three marks each. The €6,000 is carried from (i) and the €4,500 is read off the table — so an error in (i) travels into this part."
+   }
+  ],
+  "notes": "Profit is what is LEFT after cost, so the subtraction runs revenue minus cost. Reversing it gives the right magnitude with the wrong sign, and the table already shows a loss at zero output to make the distinction matter."
+ },
+ {
+  "id": "econ-2023-ol-q13-a-i",
+  "topicId": "economics-4-2",
+  "conceptId": "highest-and-lowest-years-for-food-and-drink-exports",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q13(a)(i)",
+  "questionText": "Using the bar chart above, answer the following questions. State the year with the highest value in food and drink exports from Ireland. State the year with the lowest value in food and drink exports from Ireland.",
+  "stem": "",
+  "figureKey": "economics-2023-OL-paper-p16-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "State the year with the highest value in food and drink exports from Ireland. 2019",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The first answer carries 8. The peak is 13.85, and it is not the last year on the chart — exports fall back after it."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "State the year with the lowest value in food and drink exports from Ireland. 2016",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The second answer carries 4. The lowest is 10.6, the earliest year plotted."
+   }
+  ],
+  "notes": "Every bar is labelled with its value, so this is read and not estimated — but 2018 at 12.35 sits below 2017 at 12.5, so the chart does not simply rise."
+ },
+ {
+  "id": "econ-2023-ol-q11-b-ii",
+  "topicId": "economics-2-0",
+  "conceptId": "marking-output-price-and-cost-at-long-run-equilibrium",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q11(b)(ii)",
+  "questionText": "Equilibrium occurs at point E on the diagram above. Clearly show and label on the above diagram: the output the firm will produce in the equilibrium (use label Q1); the price the firm will charge for its output (use label P1); the average cost of producing this output (using point C1).",
+  "stem": "",
+  "figureKey": "economics-2023-OL-scheme-p13-q11bii-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The output the firm will produce in the equilibrium (use label Q1)",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Four marks. E is where marginal cost cuts marginal revenue, and the output is read straight down from E — not from where MC cuts average cost at W."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The price the firm will charge for its output (use label P1)",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Four marks. The price is read UP from Q1 to the average revenue curve, then across to the axis."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "The average cost of producing this output (using point C1)",
+    "marks": 1,
+    "openList": true,
+    "contextNote": "One mark, and it lands on the same spot as P1: at long-run equilibrium AC just touches AR above Q1, so average cost equals price and the firm earns normal profit only."
+   }
+  ],
+  "notes": "Two different points are marked on this diagram, E and W, and only E gives the equilibrium output. W is the lowest point of average cost, which the firm does NOT produce at."
+ },
+ {
+  "id": "econ-2023-ol-q15-b-i",
+  "topicId": "economics-1-1",
+  "conceptId": "drawing-a-labelled-market-demand-curve",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q15(b)(i)",
+  "questionText": "Draw and label (include the axes) the market demand curve for electric cars.",
+  "stem": "",
+  "figureKey": "economics-2023-OL-scheme-p24-q15b-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 @ 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Price D D2 Quantity",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "Four things at four marks each: the two axes, the curve and its label. The axes carry marks of their own here — the question says so — and Price goes on the vertical, Quantity on the horizontal."
+   }
+  ],
+  "notes": "A demand curve slopes DOWN, and the marks are as much for labelling as for drawing: an unlabelled correct curve loses more than half the part."
+ },
+ {
+  "id": "econ-2023-ol-q15-b-ii",
+  "topicId": "economics-1-1",
+  "conceptId": "shifting-demand-when-incomes-rise",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q15(b)(ii)",
+  "questionText": "If consumers income increases, show how this would affect the market demand curve in (i) above. Explain your answer.",
+  "stem": "",
+  "figureKey": "economics-2023-OL-scheme-p24-q15b-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9 (6+3)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The demand curve shifts to the right. Consumers can afford to buy more.",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "Six for the drawing and three for the words. Income is a non-price determinant, so the whole curve moves right to D2 — a movement ALONG the old curve would mean the price of electric cars had changed, and it has not."
+   }
+  ],
+  "notes": "Electric cars are a normal good here, so more income means more demand at every price. The explanation is only three of the nine marks, but without it the drawing is unexplained."
+ },
+ {
   "id": "econ-2023-ol-sa-q2-b",
   "topicId": "economics-3-4",
   "conceptId": "functions-of-the-central-bank-ol",
@@ -13713,6 +16276,105 @@
    }
   ],
   "notes": ""
+ },
+ {
+  "id": "econ-2023-ol-seca-q1-ii",
+  "topicId": "economics-3-2",
+  "conceptId": "commenting-on-the-unemployment-rate",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2023 OL Section A Q1(ii)",
+  "questionText": "Comment on the unemployment rate between July 2022 and January 2023, using figures from the above chart.",
+  "stem": "",
+  "figureKey": "economics-2023-OL-paper-p03-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Unemployment rose between July 2022 and January 2023. From 4.3% to 4.4% Monthly trends In July, unemployment stood at 4.3%. It rose to 4.4% in August and remained at the same rate in September. It increased again in October to 4.5% and the rate was then static in November. It dipped again in December to 4.4% and was the same in Jan 2023.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The overall move first — 4.3% to 4.4% — and then the month-by-month path, which is not a straight climb: it rises, holds, rises again, then dips back."
+   }
+  ],
+  "notes": "The rate ends only 0.1 points above where it started, so \"unemployment rose\" is true and thin. The marks are in the figures."
+ },
+ {
+  "id": "econ-2023-ol-seca-q4-a-i",
+  "topicId": "economics-2-0",
+  "conceptId": "which-irish-firm-is-a-monopoly",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2023 OL Section A Q4(a)(i)",
+  "questionText": "Identify, with a tick (✓), which one of the following firms exist in a monopoly market structure in Ireland: Aer Lingus; Iarnród Éireann (Irish Rail); VHI.",
+  "stem": "",
+  "figureKey": "economics-2023-OL-paper-p06-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Name of Organisation Tick (✓) which is a monopoly structure Aer Lingus Iarnród Eireann (Irish Rail) ✓ VHI",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Irish Rail is the one ticked: it is the sole provider of rail services in the State. Aer Lingus competes with other airlines and VHI with other health insurers, so neither is a monopoly however familiar the name."
+   }
+  ],
+  "notes": "All three are large, well-known Irish organisations. Only one has no competitor, and that is the whole test."
+ },
+ {
+  "id": "econ-2023-ol-sa-q1-i",
+  "topicId": "economics-3-2",
+  "conceptId": "reading-the-lowest-month-off-an-unemployment-chart",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2023 OL Section A Q1(i)",
+  "questionText": "Identify the month when unemployment was at its lowest.",
+  "stem": "",
+  "figureKey": "economics-2023-OL-paper-p03-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Identify the month when unemployment was at its lowest. July 2022",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The chart labels its months JUL-22 to JAN-23, so the answer has to be given as a month and a year, not as a rate."
+   }
+  ],
+  "notes": "The lowest point is the FIRST month plotted, so the line only rises across the chart. Students who scan for a dip find none and hunt for the wrong thing."
  },
  {
   "id": "econ-2024-hl-q11-a-iii",
@@ -15919,6 +18581,261 @@
   "notes": "A YED of +5.2 makes this a luxury: a small income fall produces a much larger fall in sales, which is what the multiplication by 5.2 is doing."
  },
  {
+  "id": "econ-2024-hl-q15-a-i",
+  "topicId": "economics-4-1",
+  "conceptId": "percentage-rise-in-ldc-debt-servicing",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 HL Q15(a)(i)",
+  "questionText": "Calculate the percentage increase in debt repayment between 2016 and 2022. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2024-HL-paper-p29-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "$43 - $22 = $21 21 x 100 = 95.45% ( -1 for omission of %)",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The rise over the ORIGINAL figure: $21 on a base of $22, not on the $43 it grew to. A mark goes for the % sign."
+   }
+  ],
+  "notes": "Debt servicing almost doubled in six years, which is why the answer is close to 100% and a student who divides by the later figure gets roughly half of it."
+ },
+ {
+  "id": "econ-2024-hl-q13-a-i",
+  "topicId": "economics-3-3",
+  "conceptId": "net-migration-as-a-share-of-population-change",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 HL Q13(a)(i)",
+  "questionText": "Using the data in the table below (extracted from the infographic above), calculate what percentage of the change in the population between 2016 and 2022 consisted of net migration. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2024-HL-paper-p21-i1",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "190,333 x 100 = 52.63% 361,671 1 (-1 for omission of %)",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Read it as a fraction: 190,333 over 361,671, times 100. The denominator is the TOTAL change in population, not the 2016 or 2022 population — the table prints all four figures and only two belong in this ratio."
+   }
+  ],
+  "notes": "Just over half the population growth came from migration rather than births, which is the point the figure is making."
+ },
+ {
+  "id": "econ-2024-hl-q14-b-i",
+  "topicId": "economics-2-0",
+  "conceptId": "long-run-equilibrium-in-monopolistic-competition",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 HL Q14(b)(i)",
+  "questionText": "Explain, with the aid of a fully labelled diagram (including the axes), the long-run equilibrium of a firm operating in monopolistic competition.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "12 + 9",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 21,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "T P/C Q Diagram: Price P C Q Qty MR AR AC MC E T A axis axis",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Twelve labels at one mark each — the scheme prices them ⟨12 x 1⟩ and counts both axes among them, which is why the paper says \"including the axes\"."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "• 1. Equilibrium: • Occurs at point E where • MC = MR (and MC is rising faster) 2. Output: • The firm produces Q. 3. Price: The price charged is P. 4. Cost: • Costs or production are shown at point C. 5. Profit: • The firm is earning normal profit • because AR = AC. 6. Scarce resources: • The firm is wasting scarce resources / it is inefficient • as they are not producing at the lowest point of the AC.",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "Five numbered steps: equilibrium where MC = MR, the output, the price, the cost level, and what the gap between price and cost means. In the LONG run that gap has closed — entry competes supernormal profit away, so the firm earns normal profit only."
+   }
+  ],
+  "notes": "This is the diagram students confuse with monopoly. Both have a downward-sloping AR, but in monopolistic competition free entry drags AC up to touch AR, so no supernormal profit survives."
+ },
+ {
+  "id": "econ-2024-hl-q11-b-i",
+  "topicId": "economics-3-0",
+  "conceptId": "the-multiplier-and-what-it-means",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 HL Q11(b)(i)",
+  "questionText": "Based on the information stated above and using an appropriate formula, calculate the value of the multiplier in the Irish economy and explain the economic significance of your answer.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "12 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Method 1: Workings: MPS = 1- 0.6 = 0.4 1 1 0.22 + 0.3 + 0.4 0.92 Answer = 1.08 Method 2: 1 1 1 – (0.6 - 0.22 - 0.3) 0.92 Answer = 1.08",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Two routes to the same 1.08. Method 1 derives MPS first and adds the three leakages; Method 2 subtracts them from 1 inside the bracket. Either earns the marks — they are the same denominator written two ways."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Explanation: • In this case if there is an injection of €1 into the circular flow of income, national income will increase by 1.08 times . • Any initial injection of spending will cause a greater increase in the circular flow of income by 1.08 times.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "What the NUMBER means: €1 injected raises national income by €1.08. A multiplier barely above 1 says most of each euro leaks straight back out — which for a small open economy like Ireland is the point."
+   }
+  ],
+  "notes": "Calculating 1.08 and stopping answers half the question: the ask says \"and explain the economic significance\", and the significance is how SMALL the figure is."
+ },
+ {
+  "id": "econ-2024-hl-q16-b-ii",
+  "topicId": "economics-1-1",
+  "conceptId": "income-elasticity-and-what-it-means",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 HL Q16(b)(ii)",
+  "questionText": "Using an appropriate formula and the figures in the table below, calculate the income elasticity of demand (YED) for this good. Explain the economic meaning of your answer. Show your workings.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 13,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "+30 x 40,000 + 50,000 (90,000) = + 0.8 +10,000 150 + 180 1 (330)",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "The midpoint form again: the change in quantity over the change in income, times the sum of incomes over the sum of quantities. The answer is +0.8."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The good is inelastic – the percentage change in quantity demanded is less than the percentage change in income. This means that the good is a necessity. It is less than 1. The good is a normal good – it has a positive income effect – as income went up more was demanded.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "TWO things follow from +0.8 and the scheme wants both. It is income INELASTIC because the figure is below 1 — a necessity. And it is a NORMAL good because the figure is positive — demand rose with income. Sign and size say different things."
+   }
+  ],
+  "notes": "A single number carries two facts here: the sign tells you normal or inferior, the size tells you necessity or luxury. Reporting only \"inelastic\" leaves half the meaning behind."
+ },
+ {
+  "id": "econ-2024-hl-q12-b-ii",
+  "topicId": "economics-3-3",
+  "conceptId": "weighting-simple-price-indices-into-a-composite",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 HL Q12(b)(ii)",
+  "questionText": "The table below shows a country’s composite price index for the following categories of expenditure: food; transport; and other items. Use the information in the table below to calculate the price index for the current year. The base value is 100. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2024-HL-scheme-p24-q12bii-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "19",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 19,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Food 65% 60 66 66 x 100 = 110 x 65% 60 1 Transport 20% 30 45 45 x 100 = 150 x 20% 30 1 Other 96 x 100 = 120 x 15% 15% 80 96 Items 80 1 Price Index 100% for the current year",
+    "marks": 19,
+    "openList": true,
+    "contextNote": "Each category gets a SIMPLE index first — current price over base price times 100 — and the weight is applied to that index, not to the prices. The composite is the sum of the three weighted results."
+   }
+  ],
+  "notes": "Transport rose by half but carries a fifth of the weight, so it moves the composite less than food, which rose a tenth on a 65% weight. Averaging the three simple indices ignores exactly that and is the usual wrong answer."
+ },
+ {
+  "id": "econ-2024-hl-q12-b-i",
+  "topicId": "economics-3-3",
+  "conceptId": "describing-the-trend-in-cpi-annual-change",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 HL Q12(b)(i)",
+  "questionText": "Outline the overall trend of the CPI annual % change in data as shown in the graph above. Use figures from the graph.",
+  "stem": "",
+  "figureKey": "economics-2024-HL-paper-p18-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The overall trend of the CPI between March and October is decreasing. It has decreased by almost 3%. It has decreased from just under 8% in March 2023 to approx.. 5% in October 2023.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The paper says USE FIGURES, so the direction on its own is not the answer: the start value, the end value and the size of the fall all have to appear."
+   }
+  ],
+  "notes": "The chart plots the annual RATE of change, so a falling line means prices are still rising, just more slowly. Reading it as prices falling is the trap this question is built on."
+ },
+ {
   "id": "econ-2024-hl-sa-q2-b",
   "topicId": "economics-3-2",
   "conceptId": "why-full-employment-is-an-aim",
@@ -16774,6 +19691,105 @@
    }
   ],
   "notes": "Both answers involve buying machines, so counting the machines settles nothing. Only the ratio distinguishes them."
+ },
+ {
+  "id": "econ-2024-hl-sa-q10-a-ii",
+  "topicId": "economics-3-0",
+  "conceptId": "from-gnp-to-gross-national-income",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2024 HL Section A Q10(a)(ii)",
+  "questionText": "Using the data in the table, calculate Gross National Income at Current Market Prices.",
+  "stem": "",
+  "figureKey": "economics-2024-HL-scheme-p14-q10aii-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Gross National Product (GNP) at CMP €325bn + EU subsidies + €2bn €327bn – EU taxes - €0.5bn €326.5bn",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Subsidies are ADDED and taxes SUBTRACTED, because the EU flows change what the country actually receives. The step before this one — GDP to GNP — is worked for you on the paper, so the €325bn is a given, not something to recompute."
+   }
+  ],
+  "notes": "The ladder only works in order: each line starts from the figure the line above produced. Applying both EU adjustments to GDP rather than to GNP is the slip the printed first step is there to prevent."
+ },
+ {
+  "id": "econ-2024-hl-sa-q3-a",
+  "topicId": "economics-1-3",
+  "conceptId": "drawing-a-price-ceiling-and-its-excess-demand",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2024 HL Section A Q3(a)",
+  "questionText": "Illustrate, on the diagram below, how the European Commission’s proposal above would alter the diagram.",
+  "stem": "",
+  "figureKey": "economics-2024-HL-scheme-p07-q3a-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Price MWh S Pe P1 (€200) Excess Demand D S1 Qe D1 Quantity of electricity",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "A price ceiling is drawn as a HORIZONTAL line BELOW the equilibrium price — above it would bind on nothing. At that price the quantity supplied (S1) is less than the quantity demanded (D1), and the gap between them is the excess demand."
+   }
+  ],
+  "notes": "A maximum price set above equilibrium changes nothing, which is why the line has to go below Pe. The shortage is the horizontal distance at the capped price, not a vertical one."
+ },
+ {
+  "id": "econ-2024-hl-sa-q5-a",
+  "topicId": "economics-1-0",
+  "conceptId": "why-a-sold-out-concert-shows-a-shortage",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2024 HL Section A Q5(a)",
+  "questionText": "Using the information above, illustrate with the aid of a fully labelled diagram (including the axes) how a shortage of tickets for this concert may arise.",
+  "stem": "",
+  "figureKey": "economics-2024-HL-scheme-p09-q5a-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "€97.10",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme answers this one graphically, and the shape is the point: supply is a VERTICAL line at 80,000 because the venue cannot hold more, whatever the price. The €97.10 the tickets actually sold for is drawn BELOW where demand meets that line, and the gap out to Qx is the shortage."
+   }
+  ],
+  "notes": "A fixed capacity means a perfectly inelastic supply curve. Drawing an ordinary upward-sloping supply curve makes the sell-out impossible to explain, because the market would simply supply more."
  },
  {
   "id": "econ-2024-ol-q11-a-ii",
@@ -18394,6 +21410,409 @@
   "notes": "A direct tax is paid to the Revenue by the person who bears it; VAT is not, which is the whole distinction. Naming the box without that reason earns the tick and little else."
  },
  {
+  "id": "econ-2024-ol-q12-a-i",
+  "topicId": "economics-3-2",
+  "conceptId": "percentage-increase-in-people-in-employment",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q12(a)(i)",
+  "questionText": "From the data given on the left-hand side of the infographic above (orange part), calculate the percentage increase in the number of people in employment. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2024-OL-paper-p13-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "18",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "2,574,500 − 2,506,000 = 68,500 68,500 2,506,000 × 100 ∗ = 2.73%",
+    "marks": 18,
+    "openList": true,
+    "contextNote": "The rise first, then that rise over the EARLIER quarter. Dividing by the later figure is the usual slip and gives a slightly smaller answer that still looks plausible."
+   }
+  ],
+  "notes": "The two quarters differ by less than 3%, so the arithmetic has to be exact — there is no sanity check from the size of the answer."
+ },
+ {
+  "id": "econ-2024-ol-q14-c-i",
+  "topicId": "economics-4-2",
+  "conceptId": "balance-of-trade-surplus-or-deficit",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q14(c)(i)",
+  "questionText": "Using the information in the table above, calculate Ireland’s Balance of Trade in 2021. Indicate with a tick whether it was a surplus or a deficit. Show all your workings. Explain your answer.",
+  "stem": "",
+  "figureKey": "economics-2024-OL-paper-p21-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Workings: Balance of trade: Total exports – Total imports Balance of trade: €165.7bn – €103.7bn = €62bn",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Four steps at three marks each, and only the TOTAL rows are used — the country breakdown is there to be summed past, not added one region at a time."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Answer: €62bn Surplus: or Deficit: ✔ The Balance of Trade is a surplus because the exports are greater than the imports.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The tick and the reason carry four marks between them. Exports above imports is a surplus, and saying which is greater is the explanation the scheme wants."
+   }
+  ],
+  "notes": "Balance of TRADE is goods only, and the table gives the totals outright. A mark comes off for dropping the € or the bn."
+ },
+ {
+  "id": "econ-2024-ol-q15-c-i",
+  "topicId": "economics-1-4",
+  "conceptId": "price-elasticity-of-demand-for-chocolate",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q15(c)(i)",
+  "questionText": "Using the formula supplied, calculate the consumers price elasticity of demand when the price of a bar of chocolate changes due to increases in the costs of production. Show all your workings.",
+  "stem": "",
+  "figureKey": "economics-2024-OL-scheme-p35-q15ci-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "10 @ 2",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "−40 + 40 × 100 + 140 (240) 90 + 50 (140) Answer: -1.71",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "Ten figures at two marks each, and the scheme prints no split between the working and the answer — so the row is the whole thing. The formula the paper supplies uses the SUMS of the prices and quantities, so 100 + 140 and 90 + 50 both go in, not the starting values on their own. The sign is part of the answer: quantity fell as price rose, and two marks come off if the minus is dropped."
+   }
+  ],
+  "notes": "The scheme prints this as stacked fractions, so the working rides with the card as a picture. Flattened it reads as one long addition and stops being a division at all."
+ },
+ {
+  "id": "econ-2024-ol-q11-a-i",
+  "topicId": "economics-3-3",
+  "conceptId": "highest-and-lowest-electricity-price-increases",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q11(a)(i)",
+  "questionText": "Which company had the highest price increase? Which company had the lowest price increase?",
+  "stem": "",
+  "figureKey": "economics-2024-OL-paper-p10-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Which company had the highest price increase? Flogas",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The first answer carries 8. The bars are not labelled with their values, so this one is read against the % axis."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Which company had the lowest price increase? Electric Ireland",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The second answer carries 4. Lowest still means an increase of nearly half — every bar on this chart rises."
+   }
+  ],
+  "notes": "The chart plots the INCREASE, not the price. A company with the lowest increase may still be the dearest, and nothing here says which is which."
+ },
+ {
+  "id": "econ-2024-ol-q13-b-i",
+  "topicId": "economics-3-3",
+  "conceptId": "highest-and-lowest-food-price-inflation",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q13(b)(i)",
+  "questionText": "Which country had the lowest food price inflation? Which country had the highest food price inflation?",
+  "stem": "",
+  "figureKey": "economics-2024-OL-paper-p17-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 13,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Which country had the lowest food price inflation? Switzerland",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The first answer carries 8. The bars run left to right against a % change axis, so the shortest bar is the lowest rate."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Which country had the highest food price inflation? Turkey",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The second answer carries 5. Turkey is above 100%, which is off the scale of the others and is the point of the chart."
+   }
+  ],
+  "notes": "The axis runs to 120% because of one country. Ireland at about 7% looks flat only by comparison, so a student reading the shape rather than the axis can call it zero."
+ },
+ {
+  "id": "econ-2024-ol-q14-a-i",
+  "topicId": "economics-3-1",
+  "conceptId": "total-government-spending-and-educations-share",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q14(a)(i)",
+  "questionText": "Using the figures in the chart above answer the following questions. Show all your workings. Calculate how much the government planned to spend in total on the above 5 areas in €bn’s. Using your answer from (i) above calculate what percentage (%) of government spending was planned to be spent on Education.",
+  "stem": "",
+  "figureKey": "economics-2024-OL-paper-p19-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "€23.4bn + €9.63bn + €3.91bn + €3.98bn + €3.30bn = €44.22 billion",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Five figures at a mark each and seven for the answer. Every one of the five is read off a bar; none is in the wording."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "€9.63bn €44.22bn × 100 = 21.78%",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Three marks for the working and five for the answer. Read the run as €9.63bn over €44.22bn: the Education bar goes over the TOTAL just calculated, so an error in the first half carries straight into the second."
+   }
+  ],
+  "notes": "The second calculation depends on the first, which is why the paper says “using your answer from (i)”. Dividing by the largest single bar rather than by the total is the usual slip, and it gives a plausible-looking percentage."
+ },
+ {
+  "id": "econ-2024-ol-q11-b-ii",
+  "topicId": "economics-2-0",
+  "conceptId": "reading-output-and-price-off-a-kinked-demand-curve",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q11(b)(ii)",
+  "questionText": "Equilibrium occurs at point E on the diagram above. Clearly show and label on the above diagram: the output the firm will produce in equilibrium (use label Q1); the price the firm will charge for its output (use label P1).",
+  "stem": "",
+  "figureKey": "economics-2024-OL-scheme-p15-q11b-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The output the firm will produce in equilibrium (use label Q1) • The price the firm will charge for its output (use label P1)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "One cell, three marks, covering both labels. Output comes straight down from E; the price comes across from the KINK in the average revenue curve, which sits above E."
+   }
+  ],
+  "notes": "In oligopoly the marginal revenue curve BREAKS under the kink, and E is where marginal cost passes through that gap. The price is not read off E — it is read off the demand curve above it, which is why the kink is drawn where it is."
+ },
+ {
+  "id": "econ-2024-ol-q13-a-i",
+  "topicId": "economics-1-5",
+  "conceptId": "plotting-fixed-and-variable-costs-against-output",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q13(a)(i)",
+  "questionText": "You have been given the data below for a firm. On the graph paper provided, draw and label: the fixed costs for this firm and the variable costs for this firm. Note: you must complete/fill in the quantity axis and the costs axis.",
+  "stem": "",
+  "figureKey": "economics-2024-OL-scheme-p22-q13ai-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "12",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "FC @ 3 VC @ 5",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "The scheme states its own split: the two axes carry 2 marks each, the fixed-cost line 3 and the variable-cost line 5. Filling in the axes is worth a third of the part, and the question says so."
+   }
+  ],
+  "notes": "Fixed costs are FLAT — €600 whatever the output — so that line is horizontal, while variable costs rise from €500 to €800. The two cross just before two units, which is the check that both are plotted right."
+ },
+ {
+  "id": "econ-2024-ol-q15-b-i",
+  "topicId": "economics-1-2",
+  "conceptId": "showing-a-supply-shift-after-a-cost-rise",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q15(b)(i)",
+  "questionText": "As a result, the increase in fertiliser prices has affected the supply of Irish farm output. Show the effect of this development on the diagram above.",
+  "stem": "",
+  "figureKey": "economics-2024-OL-scheme-p34-q15b-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 @ 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "S2 Price S1 E2 Pe2 E1 Pe1 D Qe2 Qe1 Quantity",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three drawn things at five marks each: the new supply curve, the new equilibrium price and the new equilibrium quantity. Dearer inputs mean LESS supplied at every price, so S shifts LEFT — to S2 above S1."
+   }
+  ],
+  "notes": "A leftward supply shift raises price and cuts quantity at the same time. Students who shift supply right have read the cost rise as a boost to output."
+ },
+ {
+  "id": "econ-2024-ol-q15-b-ii",
+  "topicId": "economics-1-2",
+  "conceptId": "explaining-the-fertiliser-supply-shift",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q15(b)(ii)",
+  "questionText": "Explain your answer.",
+  "stem": "",
+  "figureKey": "economics-2024-OL-scheme-p34-q15b-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Explanation: • As the cost of fertiliser has risen many farmers have had to reduce its usage to cut expenses. • The fall in fertiliser use has resulted in lower crop yields on farms. • Consequently, the supply curve shifts left from S1 to S2 to reflect the fall in farm output. • There is now a new market equilibrium causing a new higher equilibrium price (Pe2) and • a new lower equilibrium quantity (Qe2).",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "The scheme wants the CHAIN, not the conclusion: dearer fertiliser, less used, lower yields, so supply shifts left, so a higher price and a smaller quantity. Each link is a bullet."
+   }
+  ],
+  "notes": "The explanation has to reach the market outcome, not stop at the farm. Naming the cost rise without saying what it does to equilibrium leaves most of the nine marks behind."
+ },
+ {
+  "id": "econ-2024-ol-q15-a",
+  "topicId": "economics-0-1",
+  "conceptId": "naming-and-explaining-the-factors-on-a-farm",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q15(a)",
+  "questionText": "The table below concerns factors of production which may be found on a farm. Complete the table by either naming or explaining each factor of production. Some parts have already been completed for you.",
+  "stem": "",
+  "figureKey": "economics-2024-OL-scheme-p33-q15a-table",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Farm Machinery Capital Labour Farm Workers",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three names at five marks each. Machinery is CAPITAL — man-made and used to produce with; the workers are LABOUR; the owners are ENTERPRISE, the risk-takers."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The one taking a risk in setting Farm Owners Enterprise up the farm in return for profit. Anything supplied by nature which helps in producing the Farm Land output from the farm. The ground on which the farm is located / is built.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Two explanations, three marks and two. Enterprise is defined by the RISK taken in return for profit, and land by being supplied by nature rather than made."
+   }
+  ],
+  "notes": "The table mixes what it gives you: some rows name the factor and want the explanation, others do the reverse. Reading which cell is blank before answering is half the work."
+ },
+ {
   "id": "econ-2024-ol-sa-q1-i",
   "topicId": "economics-0-2",
   "conceptId": "oceans-as-an-economic-resource",
@@ -18852,6 +22271,154 @@
    }
   ],
   "notes": "Both rows are about Ireland trading with a European neighbour, so only the direction of the payment separates them. A service counts as invisible whether or not anyone crosses a border to consume it."
+ },
+ {
+  "id": "econ-2024-ol-sa-q8-i",
+  "topicId": "economics-4-0",
+  "conceptId": "lowest-inequality-on-a-gini-chart",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2024 OL Section A Q8(i)",
+  "questionText": "Using the data given, state which country has the lowest level of inequality.",
+  "stem": "",
+  "figureKey": "economics-2024-OL-paper-p08-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Country with the lowest level of inequality. Slovakia",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "A LOWER Gini coefficient means LESS inequality, so the shortest bar wins. The scale runs 0 to 1, where 0 would be complete equality."
+   }
+  ],
+  "notes": "The reflex is to pick the country you recognise or the bar that looks biggest. Slovakia at 0.22 is below Ireland at 0.29, and the direction of the scale is the whole question."
+ },
+ {
+  "id": "econ-2024-ol-sa-q8-ii",
+  "topicId": "economics-4-0",
+  "conceptId": "highest-inequality-on-a-gini-chart",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2024 OL Section A Q8(ii)",
+  "questionText": "Using the data given, state which country has the highest level of inequality.",
+  "stem": "",
+  "figureKey": "economics-2024-OL-paper-p08-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Country with the highest level of inequality. USA",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The longest bar, 0.38. The second part is worth half the first, so it is the cheaper half of the same reading."
+   }
+  ],
+  "notes": "Same chart, opposite end. The Gini rises with inequality, so the highest coefficient is the most unequal country — not the richest one."
+ },
+ {
+  "id": "econ-2024-ol-sa-q2-a",
+  "topicId": "economics-2-0",
+  "conceptId": "price-or-non-price-competition",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2024 OL Section A Q2(a)",
+  "questionText": "Lidl now offer discount coupons (special offers) to customers who download the Lidl Plus app. Indicate using a tick (✔) in the table below if the above measure is an example of a company using price competition or non-price competition. Explain your answer.",
+  "stem": "",
+  "figureKey": "economics-2024-OL-scheme-p06-q2a-ticks",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Price competition Non-price competition ✔",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Eight marks for the tick: NON-price competition. A coupon for app users is not a price cut for everyone — the shelf price is unchanged for anyone who has not downloaded it."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Explanation: Lidl is competing with other supermarkets to increase its sales / market share by means other than changing its prices for all its customers.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Four marks for the reason. The measure competes for market share by a means OTHER than changing prices for all customers, which is the definition being tested."
+   }
+  ],
+  "notes": "The trap is that a coupon looks like a discount. Price competition means moving the price itself; anything else that attracts customers — loyalty apps, quality, advertising, service — is non-price."
+ },
+ {
+  "id": "econ-2024-ol-sa-q10",
+  "topicId": "economics-1-1",
+  "conceptId": "which-diagram-shows-the-new-matcha-equilibrium",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2024 OL Section A Q10",
+  "questionText": "Assume the market for matcha tea is in equilibrium (E1). Indicate, by means of a tick (✔), whether Diagram A or Diagram B shows its new market equilibrium position following media coverage of its positive health effects. Explain your answer including the effects on equilibrium price and equilibrium quantity.",
+  "stem": "",
+  "figureKey": "economics-2024-OL-paper-p09-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Diagram A ✔ Diagram B",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Eight marks for the tick: Diagram A, the one where DEMAND shifts right to D2. Good publicity changes tastes, so it is the demand curve that moves, not supply."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Explanation: • The demand curve shifts to the right (D2). • The demand for matcha tea will increase due to its health benefits being reported in the media, which increase consumers’ taste/preference for the drink. • The increase in demand will result in an excess demand or a shortage, which will drive up the new equilibrium price. • There will be a new higher equilibrium price. • There will be a new higher equilibrium quantity.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Four marks, and the question asks for BOTH effects: the shortage at the old price drives the equilibrium price up, and the equilibrium quantity rises with it."
+   }
+  ],
+  "notes": "Diagram B moves the supply curve, which is what a change in production costs would do. Media coverage reaches buyers, not producers — so the demand side is what moves."
  },
  {
   "id": "econ-2025-hl-q11-a-ii",
@@ -21073,6 +24640,272 @@
   "notes": "Profit is what is left, so the answer is neither the €160 of revenue nor the €90 of cost — a student who stops at either has done most of the arithmetic and none of the question."
  },
  {
+  "id": "econ-2025-hl-q12-a-i",
+  "topicId": "economics-3-1",
+  "conceptId": "the-trend-in-irelands-government-debt",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q12(a)(i)",
+  "questionText": "Outline the overall trend in Ireland’s general government debt, as shown in the diagram above, using data from the chart. Indicate which overall trend you are commenting on by ticking the relevant box: Government debt as a % of GNI*, or Government debt as a % of GDP.",
+  "stem": "",
+  "figureKey": "economics-2025-HL-paper-p17-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The trend for the measure you ticked — either one",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Either measure earns the 6, but the scheme is explicit about what a full answer needs: \"Downward + Reference to two distinct figures or overall percentage decrease\". Naming the direction without numbers is half of it.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Government Debt as a % of GNI*: There is a clear downward trend in government debt as a percentage of GNI*. • In 2021, it was 101%. • It fell to 82% in 2022. • It continued to decline to 76% in 2023. • Forecasts for 2024 (72%) and 2025 (70%) show a further reduction. • It falls by 31 percentage points over the course of the chart.",
+      "Government Debt as a % of GDP: There is a downward trend in government debt as a percentage of GDP. • In 2021, it was 54%. • It dropped to 44% in 2022 and remained at 44% in 2023. • Forecasts predict a slight decline to 42% in 2024 and 39% in 2025. • It falls by 15 percentage points over the course of the chart."
+     ]
+    }
+   }
+  ],
+  "notes": "Both measures fall, but not equally — debt as a share of GNI* drops 31 percentage points against 15 for GDP. Ticking a box and then quoting the other series’ figures is the error the two-column layout invites."
+ },
+ {
+  "id": "econ-2025-hl-q11-a-i",
+  "topicId": "economics-2-0",
+  "conceptId": "hhi-for-irish-health-insurance",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q11(a)(i)",
+  "questionText": "Using the data provided above, calculate the Herfindahl Hirschman Index (HHI) to determine whether the market is competitive or highly concentrated. Indicate your choice with a tick and justify your answer.",
+  "stem": "",
+  "figureKey": "economics-2025-HL-paper-p13-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "HHI Model: 49% 492 = 2,401 28% 282 = 784 20% 202 = 400 3% 32 = 9 2,401 + 784 + 400 + 9 = 3,594 Justify: According to the European Commission and the US Department of Justice, a Herfindahl-Hirschman Index (HHI) greater than 2,500 indicates a highly concentrated market. This industry is dominated by three major firms accounting for 97% of the market. New health insurance provider, Level Health, to enter the Irish market this week. Irish Independent, November 2024",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Read the squares: extraction flattens 49² to 492, so the line is 49² + 28² + 20² + 3² = 3,594. Above 2,500 counts as highly concentrated, and the scheme cites the European Commission and US Department of Justice for that threshold — so the justification is the benchmark, not an opinion about the number."
+   }
+  ],
+  "notes": "Three insurers hold 97% between them. The arithmetic only confirms what the pie chart already shows, but the threshold is what turns a number into an answer."
+ },
+ {
+  "id": "econ-2025-hl-q16-a-i",
+  "topicId": "economics-1-5",
+  "conceptId": "filling-in-variable-and-average-cost",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q16(a)(i)",
+  "questionText": "Complete the variable cost and average cost, labelled A and B, in the table below. Show all your workings.",
+  "stem": "",
+  "figureKey": "economics-2025-HL-paper-p33-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "the missing Variable Cost cell, at an output of 20 smoothies",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "the missing Average Cost cell, at an output of 60 smoothies",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Label A (Variable Cost) Workings: Total cost minus Fixed cost = Variable cost €70 - €60 = €10 Label B (Average Cost) Workings: Total cost Average cost = Output of smoothies Average cost = €115 Answer = €1.92",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two different operations. A is a SUBTRACTION — total cost less fixed cost. B is a DIVISION — total cost over output. Using the same move for both is the standard error, and the two labels sit in the same table."
+   }
+  ],
+  "notes": "Fixed cost stays at €60 whatever the output, so variable cost is whatever is left of total cost. Average cost then spreads the whole total over the units."
+ },
+ {
+  "id": "econ-2025-hl-q11-b-i",
+  "topicId": "economics-2-0",
+  "conceptId": "long-run-equilibrium-of-a-patent-monopoly",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q11(b)(i)",
+  "questionText": "A patent gives a pharmaceutical company the sole right to produce and sell a new drug. Explain, with the aid of a fully labelled diagram (including the axes), the long run equilibrium position of a pharmaceutical company operating in a monopoly market.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "12 + 9",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 21,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Price / Cost € P1 Z SNPs C1 Y W E = D Q1 Quantity MR P Q MR AR MC AC E Q1 P1 C1 SNPs",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "The labels ARE the marks here — twelve of them, axes included, which is why the paper says \"including the axes\". MR, AR, MC and AC all have to appear, and the supernormal-profit block has to be identified on the drawing."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "• Equilibrium is at point E where MC = MR (and MC is rising). • The company produces Q1. • It sells its output at P1. • Costs are at the level C1 (point Y). • The company earns supernormal profits (SNPs) as AR is greater than AC. • The company is inefficient / wastes resources as costs are not at the minimum point of the AC curve (W).",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "The explanation runs in order: equilibrium where MC = MR, the quantity that follows, the price charged, the cost level, the supernormal profit that AR above AC produces, and the inefficiency — costs are not at the minimum of the AC curve."
+   }
+  ],
+  "notes": "The patent is what makes it long-run: no entrant can compete the supernormal profit away, so unlike perfect competition the SNP block survives."
+ },
+ {
+  "id": "econ-2025-hl-q16-b-ii",
+  "topicId": "economics-1-5",
+  "conceptId": "constructing-and-reading-the-lrac",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q16(b)(ii)",
+  "questionText": "Complete the diagram with three more short run average cost curves (SRAC) to show how the long run average cost curve (LRAC) is constructed. Label your diagram fully. Explain the shape of the LRAC curve you have drawn.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8 + 8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "SRAC 5 Average cost SRAC 1 SRAC 4 LRAC SRAC x 3 Labels x 3 SRAC 2 SRAC 3 LRAC x 1 Label x 1 Q1 Q2 Q3 Q4 Q5 Output",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme itemises the eight: three SRAC curves, three labels, the LRAC itself and its label. The LRAC is the envelope of the short-run curves, so it has to touch them rather than cut through."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Downward sloping part of the LRAC The downward sloping part of the Long Run Average Cost (LRAC) curve, from Q₁ to Q₃, shows economies of scale are more dominant than diseconomies of scale. More specialised equipment may be used, which helps reduce costs in the long run. Upward sloping part of the LRAC The upward sloping part of the Long Run Average Cost (LRAC) curve after Q3 shows diseconomies of scale are more dominant than economies of scale. Further example of diseconomy of scale other than mention in",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The shape is a contest between two forces. Falling to Q3, economies of scale dominate; rising after Q3, diseconomies do. The turning point is where they balance — not a point where costs stop existing."
+   }
+  ],
+  "notes": "The U-shape is not the same U as the short-run curve. This one is built from the bottoms of many short-run curves, each a different plant size."
+ },
+ {
+  "id": "econ-2025-hl-q15-b-i",
+  "topicId": "economics-3-3",
+  "conceptId": "percentage-increase-in-the-residential-property-price-index",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q15(b)(i)",
+  "questionText": "Using the data in the chart above, calculate the percentage increase in the RPPI from March 2024 to August 2024. Show all your workings.",
+  "stem": "",
+  "figureKey": "economics-2025-HL-scheme-p58-q15bi-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Workings: 10.1 – 7.4 = 2.7% August 2024 −March 2024 × 100 March 2024 1 10.1 – 7.4 x 100 7.4 1 Answer: 36.48%",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The base is MARCH, the earlier month, so the difference is divided by 7.4 and not by 10.1. Both figures are read off the chart; neither is in the wording."
+   }
+  ],
+  "notes": "The chart already plots percentage changes, so the answer is a percentage change OF a percentage change — 2.7 points of movement is a 36.48% increase, and quoting 2.7% is the trap the question is built on."
+ },
+ {
+  "id": "econ-2025-hl-q14-b-i",
+  "topicId": "economics-1-0",
+  "conceptId": "plotting-demand-and-supply-and-finding-equilibrium",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q14(b)(i)",
+  "questionText": "Using the data above, complete on the graph paper provided below: the market demand curve for Scentastic; the market supply curve for Scentastic; clearly label the point of equilibrium as E; show the equilibrium price (Pe) and the equilibrium quantity (Qe) on the graph. Note: You must complete/fill in the price axis and the quantity axis.",
+  "stem": "",
+  "figureKey": "economics-2025-HL-scheme-p51-q14bi-graph",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "17",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 17,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "€ Pe D:6 €1.50 S:6 Equil D Pe €1.00 Qe €0.50 10,000 20,000 30,000 40,000 50,000 Quantity Qe",
+    "marks": 17,
+    "openList": true,
+    "contextNote": "The scheme writes its split into the margin: 2 for the axes, 6 for the demand curve, 6 for the supply curve and 3 for the equilibrium. Filling in the two axes is worth marks on its own, and the question says so."
+   }
+  ],
+  "notes": "The two curves cross at €2.00 and 30,000 units — the one row of the schedule where quantity demanded equals quantity supplied. If the plotted crossing is anywhere else, one of the curves is wrong."
+ },
+ {
   "id": "econ-2025-hl-sa-q1-a-for",
   "topicId": "economics-3-5",
   "conceptId": "the-case-for-hosting-a-major-event",
@@ -22067,6 +25900,83 @@
    }
   ],
   "notes": "The trap is assuming a positive statement must be TRUE. Statement 2 forecasts a precise 25% fall that may never happen; it is positive because evidence could settle it."
+ },
+ {
+  "id": "econ-2025-hl-seca-q10-a",
+  "topicId": "economics-3-5",
+  "conceptId": "reading-boom-and-recession-off-the-cycle",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2025 HL Section A Q10(a)",
+  "questionText": "Identify from the diagram above which option (A or B) represents an economic boom and which represents an economic recession. Indicate your choice below and justify your choice in each case.",
+  "stem": "",
+  "figureKey": "economics-2025-HL-paper-p12-art",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "a point on the rising stretch of the cycle curve, before 2008",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "a point on the falling stretch of the cycle curve, after 2008",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 @ 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Economic boom A Economic recession B Economic boom justification: In this period, leading up to 2008, Ireland’s economy was known as the Celtic Tiger. It was a time of rapid economic growth driven by foreign investment, strong consumer spending, and a booming property market. The steady rise in real GDP on the graph shows Ireland's strong economic performance before the financial crisis. (over a number of consecutive quarters). Economic recession justification: After the 2008 global financial crisis, Ireland experienced a severe downturn, which resulted in a severe banking crisis, rising unemployment, and a sharp decline in economic output / GDP. The lowest point in 2011 reflects the depth of the Irish recession, when the country had to seek a bailout from the troika to stabilise the economy. (for two or more consecutive quarters).",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "A is the boom and B the recession, and the justification is the SHAPE of the curve at each point: output rising steeply to 2008, then falling. Naming the letters without saying what the curve is doing there answers half of it."
+   }
+  ],
+  "notes": "The cycle drawing runs 2000 to 2020, so the two letters sit either side of the 2008 turning point. Ireland’s own history is the giveaway."
+ },
+ {
+  "id": "econ-2025-hl-seca-q7-a",
+  "topicId": "economics-1-1",
+  "conceptId": "spotting-a-necessity-and-a-luxury-from-yed",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2025 HL Section A Q7(a)",
+  "questionText": "Identify one necessity and one luxury good from the above table, using the Income Elasticity of Demand (YED) data provided. Justify both of your answers.",
+  "stem": "",
+  "figureKey": "economics-2025-HL-paper-p09-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Necessity product – Electricity or Noodles Justify – A necessity product is a product, which consumers need and will continue to buy even when their income changes. The YED value of electricity lies between 0 and 1, indicating that it has income inelastic demand. A percentage change in income will cause a smaller percentage change in demand. For example: YED of +0.1 means that for every 1% change in income, demand for electricity will change by 0.1%. If income rises by 1%, demand will increase by 0.1%. If income falls by 1%, demand will decrease by 0.1%.\" Luxury good – Premium branded clothing Justify – A luxury good is a non-essential product which consumers buy more of when their income increases. The YED value of premium branded clothing is above 1, indicating that it has income elastic demand. A percentage change in income will cause a greater percentage change in demand in the same direction. YED of +4.1 means that for every 1% change in income, demand for premium branded clothing will change by 4.1% in the same direction. If income rises by 1%, demand will increase by 4.1%. If income falls by 1%, demand will decrease by 4.1%.\"",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The YED VALUE decides it, not the product. Between 0 and 1 means income inelastic, so demand barely moves with income — a necessity. Above 1 means income elastic, so demand moves more than income does — a luxury. Electricity at +0.1 and premium clothing at +4.1 sit either side of that line."
+   }
+  ],
+  "notes": "Noodles carry a NEGATIVE YED of −0.5, which makes them inferior rather than merely a necessity — demand falls as income rises. The scheme accepts them alongside electricity, but the two are inelastic for different reasons."
  },
  {
   "id": "econ-2025-ol-q13-c",
@@ -23700,6 +27610,253 @@
    }
   ],
   "notes": "The paper prints this part as the bare words \"Explain your answer.\", so the stem carries what is being explained — without it the question is unreadable on its own. The diagram it refers to was catalogued under 2025 OL Q16(b); the paper puts it on page 24 under Q15(b), and the manifest ref has been corrected to match."
+ },
+ {
+  "id": "econ-2025-ol-q14-c-i",
+  "topicId": "economics-3-1",
+  "conceptId": "has-irelands-hdi-position-improved",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 OL Q14(c)(i)",
+  "questionText": "Based on the data in the table above, state if Ireland’s HDI position has improved or disimproved. Indicate with a tick (✔) in the relevant box below. Justify your decision.",
+  "stem": "",
+  "figureKey": "economics-2025-OL-paper-p22-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "13",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 13,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "disimproved. Indicate with a tick (✔) in the relevant box below. Justify your decision. Improved Disimproved ✔ Ireland's HDI position has Improved as their HDI figure has increased from 0.87 in 2003 to 0.95 in 2022. The higher the HDI figure the better it is for a country. Accept correct reference to other values improving also i.e. GNP has increased / life expectancy has improved / people are spending longer in education. Increased + reference to 2 figures",
+    "marks": 13,
+    "openList": true,
+    "contextNote": "IMPROVED, and the justification is the figure: the HDI rises from 0.87 to 0.95. Every component in the table moves the same way — income, life expectancy and years of schooling all rise — which is what the composite index is built from."
+   }
+  ],
+  "notes": "HDI is a composite of income, health and education, so the table gives the three ingredients as well as the result. Quoting the 0.87 to 0.95 move is what the marks are for."
+ },
+ {
+  "id": "econ-2025-ol-q16-b-ii",
+  "topicId": "economics-3-1",
+  "conceptId": "the-trend-in-irish-price-inflation",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 OL Q16(b)(ii)",
+  "questionText": "Identify the overall trend of price Inflation in Ireland between May 2024 and September 2024, using figures from the graph above.",
+  "stem": "",
+  "figureKey": "economics-2025-OL-paper-p27-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "12",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "From May 2024 to Sep 2024 the annual percentage change in inflation decreased. The annual rate of CPI inflation was highest in May 2024 at approx. 2.6% and hit its lowest figure at approx. 0.7% in September 2024 ( or a decrease of 1.9%).",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Inflation FELL over the period — from about 2.6% in May to its low in September. Note what that does not mean: prices still rose, just more slowly. A falling inflation rate is not falling prices."
+   }
+  ],
+  "notes": "This is the distinction the chart invites students to miss. The line goes down and the cost of living still goes up, because the line measures the RATE of increase."
+ },
+ {
+  "id": "econ-2025-ol-q12-a-i",
+  "topicId": "economics-3-1",
+  "conceptId": "capital-spending-as-a-share-of-the-total",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 OL Q12(a)(i)",
+  "questionText": "Calculate capital expenditure as a percentage of total government expenditure. Show all your workings.",
+  "stem": "",
+  "figureKey": "economics-2025-OL-paper-p14-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "16",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "€14.9 bn 6 x 100 2 = 14.14 % 4 €105.4 bn 4",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "Capital over the WHOLE €105.4bn, not over the current slice. The pie prints the total in its heading rather than as a slice, so the denominator has to be found before any division happens."
+   }
+  ],
+  "notes": "Capital spending is the small slice — about a seventh of the total — so an answer far above 15% means the wrong denominator was used."
+ },
+ {
+  "id": "econ-2025-ol-q12-b-ii",
+  "topicId": "economics-3-0",
+  "conceptId": "the-size-of-the-multiplier-in-an-open-economy",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 OL Q12(b)(ii)",
+  "questionText": "The Multiplier for an open economy is: 1 / (MPS + MPM). Assume that MPS is 0.2 and MPM is 0.3. Calculate, using the above formula, the size of the multiplier. Show all your workings.",
+  "stem": "",
+  "figureKey": "economics-2025-OL-scheme-p21-q12bii-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 @ 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1 1 0.2 + 0.3 = 0.5 = 2",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Four steps at three marks each. The two leakages are added FIRST, giving 0.5, and only then is 1 divided by it — the intermediate 0.5 is a step the scheme prints and pays for."
+   }
+  ],
+  "notes": "The scheme sets this as a fraction, so the flat text reads “0.2 + 0.3 = 0.5 = 2” and the division disappears. Bigger leakages mean a SMALLER multiplier, which is the relationship the arithmetic is testing."
+ },
+ {
+  "id": "econ-2025-ol-q11-b-ii",
+  "topicId": "economics-2-0",
+  "conceptId": "marking-output-and-price-in-perfect-competition",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 OL Q11(b)(ii)",
+  "questionText": "Equilibrium occurs at point E on the diagram above. Clearly show and label on the above diagram: the output the firm will produce in equilibrium (use label Q1); the price the firm will charge for its output (use label P1).",
+  "stem": "",
+  "figureKey": "economics-2025-OL-scheme-p18-q11b-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The output the firm will produce in equilibrium (use label Q1)",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The scheme prints ONE cell of 4 for both labels together — it sits between the two bullets. Output drops from E to the quantity axis; the price is the horizontal D = AR = MR line, because a firm in perfect competition takes the market price."
+   }
+  ],
+  "notes": "E is where MC cuts the price line, and in long-run equilibrium that is also the lowest point of AC. Both readings come off the same point, so getting E wrong costs the whole part."
+ },
+ {
+  "id": "econ-2025-ol-q13-b-i",
+  "topicId": "economics-1-5",
+  "conceptId": "plotting-average-marginal-cost-and-marginal-revenue",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 OL Q13(b)(i)",
+  "questionText": "You have been given the data below for a firm. On the graph paper provided below, draw and label: the average costs (AC) for this firm; the marginal costs (MC) for this firm; the marginal revenue (MR) for this firm. Note: You must complete/fill in the quantity axis and the costs axis.",
+  "stem": "",
+  "figureKey": "economics-2025-OL-scheme-p25-q13bi-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "17",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 17,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "AC1 MC:5 MC:5 MR: 3 200 MR1 Cost 150 1 2 3 4 Quantity",
+    "marks": 17,
+    "openList": true,
+    "contextNote": "The scheme prints its split beside the curves: 2 marks per axis, 5 for each cost curve and 3 for marginal revenue. Marginal revenue is FLAT at €200 — the firm gets the same for every unit — while AC falls then rises."
+   }
+  ],
+  "notes": "All three lines meet at €200 where output is three units, which is the profit-maximising point the next parts turn on. If they do not meet there, one of the three is plotted wrong."
+ },
+ {
+  "id": "econ-2025-ol-q15-b-i",
+  "topicId": "economics-1-1",
+  "conceptId": "showing-a-demand-shift-from-population-growth",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 OL Q15(b)(i)",
+  "questionText": "The forecasted increase in population is expected to affect the demand for housing. Show the effect of this development on the diagram above.",
+  "stem": "",
+  "figureKey": "economics-2025-OL-scheme-p34-q15b-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8+4+2",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "• Demand curve shifts to the right (D1).",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Eight marks — more than half the part — for the shift itself. More people means more demand at EVERY price, so the whole curve moves right to D1."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "• Increase in equilibrium quantity (Q1).",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Four marks for the new quantity, read where D1 crosses the unchanged supply curve."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "• Increase in equilibrium price (P1).",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Two marks for the new price. Supply has not moved, so the new equilibrium slides UP the supply curve and both price and quantity rise together."
+   }
+  ],
+  "notes": "The scheme pays 8, 4 and 2 in that order, so the shift is worth four times the price label. Drawing D1 without marking the new equilibrium leaves six marks on the table."
  },
  {
   "id": "econ-2025-ol-sa-q1-ii",

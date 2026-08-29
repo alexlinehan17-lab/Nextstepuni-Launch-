@@ -516,5 +516,81 @@ P.cards.append(card(
     tariff_kind='fixed',
     figure_key='economics-2021-OL-paper-p21-i0'))
 
+P.cards.append(card(
+    'econ-2021-ol-q12-a-ii', 2021, 'ordinary', 'economics-2-0',
+    'marking-price-output-and-cost-in-long-run-perfect-competition', '2021 OL Q12(a)(ii)',
+    'Equilibrium occurs at the point B on the diagram above. Show on the diagram above: the '
+    'price the firm will charge for its output (use label P1); the output the firm will produce '
+    'in equilibrium (use label Q1); the average cost of producing this output (use point C1).',
+    'fixed', 10,
+    [point('r-1', as_option(block(BODY, 'The price the firm will charge for its output (use label P1)',
+                                  '\u2022 The output the firm will produce in equilibrium')), 4,
+           'Four marks. In perfect competition the firm is a price TAKER, so the price is the '
+           'horizontal D = AR = MR line \u2014 it does not read off a downward-sloping curve.'),
+     point('r-2', as_option(block(BODY, 'The output the firm will produce in equilibrium (use label Q1)',
+                                  '\u2022 The average cost of producing this output')), 4,
+           'Four marks. Output is found by dropping from B \u2014 where MC cuts the AR line '
+           '\u2014 straight down to the quantity axis.'),
+     point('r-3', as_option(block(BODY, 'The average cost of producing this output (use point C1)',
+                                  '11 | P a g e')), 2,
+           'Two marks, and this is the point of the question: in LONG-RUN equilibrium average '
+           'cost equals price, so C1 sits at the same height as P1. The scheme labels the axis '
+           'P1 / C1 for exactly that reason.')],
+    'Long run means normal profit only, so price and average cost coincide. A student who marks '
+    'C1 below P1 has drawn a supernormal profit that cannot survive free entry \u2014 and the '
+    'scheme\u2019s split, 4 and 4 for P1 and Q1 but only 2 for C1, still costs them the mark.',
+    tariff_kind='fixed',
+    figure_key='economics-2021-OL-scheme-p12-q12a-diagram'))
+
+P.cards.append(card(
+    'econ-2021-ol-q15-b-i', 2021, 'ordinary', 'economics-1-1',
+    'which-diagram-shows-a-successful-ad-campaign', '2021 OL Q15(b)(i)',
+    'Nike is famous for its \u2018Just do it\u2019 advertising campaign. Indicate by means of '
+    'a tick (\u2713) which diagram accurately reflects the impact this highly successful '
+    'advertising campaign had on the equilibrium of Nike products.',
+    '10', 10,
+    [point('r-1', as_option(block(BODY, 'Diagram A Diagram B Diagram B \u221a', '\u27e810\u27e9')), 10,
+           'Diagram B. A successful campaign makes people want MORE at every price, so demand '
+           'shifts RIGHT \u2014 the D2 line has to sit to the right of D1, which is what B '
+           'shows and A does not.')],
+    'Both diagrams are drawn the same way apart from which side D2 falls on, so the whole '
+    'question is the DIRECTION of the shift. Advertising is a non-price determinant, so the '
+    'curve moves rather than the market sliding along it.',
+    tariff_kind='fixed',
+    figure_key='economics-2021-OL-paper-p23-art'))
+
+P.cards.append(card(
+    'econ-2021-ol-q11-a-i', 2021, 'ordinary', 'economics-4-0',
+    'reading-the-change-in-irelands-hdi-position', '2021 OL Q11(a)(i)',
+    'Using the data provided in the tables above calculate the difference between Ireland\u2019s '
+    'ranking on the HDI index from 2019 to 2020. Indicate if Ireland\u2019s position has '
+    'improved.',
+    '4 @ 3', 12,
+    [point('r-1', as_option(block(BODY, 'Difference in Difference in Difference in',
+                                  '(ii) Given your answers in (i) above')), 12,
+           'Four cells at three marks each: the change in rank, in life expectancy, in mean years '
+           'of schooling, and the verdict. A rank moving from 3 to 2 is an IMPROVEMENT even '
+           'though the number got smaller \u2014 that is the whole point of the last column.')],
+    'Rank runs the opposite way to the other two columns: a smaller number is better. Reading '
+    'the +1 as a fall is the standard error, and it makes the final Yes come out as No.',
+    tariff_kind='fixed',
+    figure_key='economics-2021-OL-paper-p10-i0'))
+
+P.cards.append(card(
+    'econ-2021-ol-q13-c-ii-cpi', 2021, 'ordinary', 'economics-3-3',
+    'reading-inflation-rates-off-a-cpi-chart', '2021 OL Q13(c)(ii)',
+    'The diagram below shows the changing inflation rates from the Consumer Price Index (CPI) '
+    'Ireland from August to December 2020. Using the data answer the questions in the table '
+    'below.',
+    '3 @ 6', 18,
+    [point('r-1', as_option(block(BODY, 'What was the percentage change in inflation in -1.5%',
+                                  '(iii) The general prices of goods')), 18,
+           'Three readings at six marks each. The last one asks for the months where the annual '
+           'change INCREASED \u2014 that is where the line rises, from -1.5 up to -1.1 and then '
+           'to -1, even though every figure on the chart is still negative.')],
+    'Every value is below zero, so prices were FALLING throughout. An increase in the annual '
+    'percentage change here means the fall got smaller, not that prices rose.',
+    tariff_kind='fixed',
+    figure_key='economics-2021-OL-paper-p18-art'))
 
 P.emit()

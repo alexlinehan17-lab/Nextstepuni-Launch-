@@ -544,4 +544,87 @@ P.cards.append(card(
     'of the answer rather than a detail to be dropped.',
     tariff_kind='fixed'))
 
+# ── Chart parts whose crop was catalogued against the QUESTION ─────────────
+# The crop for the whole of Question 14 is keyed "2021 HL Q14", not to the part
+# that needs it, which is why the backfill scout reported this ask as having no
+# figure until its ref matching was widened to walk up the hierarchy. The chart
+# was there all along.
+P.cards.append(card(
+    'econ-2021-hl-q14-a-i', 2021, 'higher', 'economics-3-1',
+    'irelands-inflation-against-the-uk-and-euro-area', '2021 HL Q14(a)(i)',
+    'Analyse the trend of Ireland\u2019s inflation rate in relation to the UK and the Euro Area '
+    'from 2014-2019.',
+    '1 @ 6+1 @ 3+1 @ 3', 12,
+    [anyN('r-1', 'A trend read off the chart \u2014 any three', None, 3, 6,
+          [as_option(block(FULL, 'Across the entire time Ireland', 'From 2014 to 2016 the inflation rate fell')),
+           as_option(block(FULL, 'From 2014 to 2016 the inflation rate fell', 'From 2015 in the UK and 2016')),
+           as_option(block(FULL, 'From 2015 in the UK and 2016 in the Euro area', 'In 2018 the inflation rate in the UK')),
+           as_option(block(FULL, 'In 2018 the inflation rate in the UK and Euro Areas began to fall'))],
+          'Three observations, priced unevenly: the first is worth 6 and the next two 3 each. The '
+          'question says "in RELATION to" \u2014 so a trend that describes Ireland alone, without '
+          'setting it against the other two series, is not answering it.',
+          steps=[6, 3, 3])],
+    'Ireland sits below both comparators for almost the whole period, and dips BELOW zero in '
+    '2016 while the UK is rising. The chart\u2019s interest is in where the three lines diverge, '
+    'not in any single one of them.',
+    tariff_kind='fixed',
+    figure_key='economics-2021-HL-paper-p26-art'))
+
+# ── Backfill: asks the scheme answers in full ──────────────────────────────
+# Each was excluded under a label that described the ANSWER — a worked
+# calculation, a chart lookup, a table — rather than any blocker. The scheme
+# prints a tariff and a response for every one, and where the figures come off
+# printed artwork the catalogued crop rides with the card.
+
+P.cards.append(card(
+    'econ-2021-hl-q11-a-i', 2021, 'higher', 'economics-2-0',
+    'calculating-the-hhi-for-the-aircraft-market', '2021 HL Q11(a)(i)',
+    'Using the data provided above, calculate the Herfindahl Hirschman Index (HHI) for the '
+    'Global Aircraft Market in 2018. Show your workings.',
+    '7', 7,
+    [point('r-1', as_option(block(FULL, '462 + 462 + 52 + 22 + 12 = 4262',
+                                  '(ii) Would you consider this market')), 7,
+           'Read the squares: extraction flattens 46\u00b2 to 462, so the line is '
+           '46\u00b2 + 46\u00b2 + 5\u00b2 + 2\u00b2 + 1\u00b2 = 4262. Every share is SQUARED '
+           'before adding, which is the whole point of the index \u2014 it is what makes two '
+           'firms on 46% each score far above five firms on 20%.')],
+    'Squaring is what turns market share into concentration. Adding the percentages instead '
+    'gives 100 for every market ever measured.',
+    tariff_kind='fixed',
+    figure_key='economics-2021-HL-paper-p15-i0'))
+
+P.cards.append(card(
+    'econ-2021-hl-q15-b-ii', 2021, 'higher', 'economics-3-5',
+    'reading-a-recession-off-a-gni-chart', '2021 HL Q15(b)(ii)',
+    'Based upon the graph below, identify the years when both Ireland and the United States '
+    'were in recession. Explain your answer.',
+    '8', 8,
+    [point('r-1', as_option(block(FULL, 'The period from 2007 to 2009 sees both countries',
+                                  '28 | P a g e')), 8,
+           'The years and the reason, \u27e88\u27e9 written (4 + 4). What identifies a recession '
+           'on this chart is the DIRECTION of GNI per capita, not its level: both lines are high '
+           'by world standards throughout and both slope downwards from 2007 to 2009.')],
+    'A falling line on a chart of GNI per capita is a shrinking economy. Students who look for '
+    'the LOWEST point instead of the falling stretch pick the wrong years.',
+    tariff_kind='fixed',
+    figure_key='economics-2021-HL-paper-p31-art'))
+
+P.cards.append(card(
+    'econ-2021-hl-q16-c-iii', 2021, 'higher', 'economics-3-1',
+    'why-use-a-cost-benefit-analysis-before-spending', '2021 HL Q16(c)(iii)',
+    'In budget 2020 the Minister for Public Expenditure announced funding for the construction '
+    'of 9,500 new social housing units. Explain why the Department for Public Expenditure might '
+    'have used a cost-benefit analysis before deciding on this expenditure for social housing '
+    'units.',
+    '2 @ 3', 6,
+    [point('r-1', as_option(block(BODY, 'To ensure that the benefits of this expenditure',
+                                  '34 | P a g e')), 6,
+           'Two claims at three marks each. A cost-benefit analysis weighs SOCIAL costs and '
+           'benefits as well as private ones \u2014 that is why the state uses it where a firm '
+           'would use ordinary profit.')],
+    'The test is whether benefits at least equal costs, not whether the project makes money. '
+    'Social housing may never turn a profit and still pass, because the benefits counted are the '
+    'ones accruing to taxpayers as a whole.',
+    tariff_kind='fixed'))
+
 P.emit()

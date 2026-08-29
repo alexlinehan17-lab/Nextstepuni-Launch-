@@ -24,7 +24,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from econ_auto import Paper  # noqa: E402
-from econ_lib import as_option, block, card, load, point, tidy  # noqa: E402
+from econ_lib import anyN, as_option, block, card, load, point, tidy  # noqa: E402
 
 P = Paper(2021, 'higher', 'A')
 SCAFFOLD = ('Possible responses', 'Suggested responses')
@@ -238,5 +238,111 @@ P.cards.append(card(
     'The calculation runs in two stages, and the scheme accepts either of the two goods for the '
     'first \u2014 both give the same utility-per-euro.',
     tariff_kind='fixed', section='A'))
+
+# ── Backfill: asks the scheme answers in full ──────────────────────────────
+# Each was excluded under a label that described the ANSWER — a worked
+# calculation, a chart lookup, a table — rather than any blocker. The scheme
+# prints a tariff and a response for every one, and where the figures come off
+# printed artwork the catalogued crop rides with the card.
+
+P.cards.append(card(
+    'econ-2021-hl-seca-q1-a', 2021, 'higher', 'economics-4-2',
+    'calculating-the-balance-of-trade', '2021 HL Section A Q1(a)',
+    'Calculate the balance of trade for the period 2015 \u2013 2019. Identify whether it is a '
+    'surplus or a deficit.',
+    '7', 7,
+    [point('r-1', as_option(block(BODY, 'Total Exports: 112+119+123+141+152=647',
+                                  '(b) Outline two reasons')), 7,
+           'Both series are totalled across the whole period before subtracting, and the verdict '
+           'is part of the answer: exports exceed imports, so it is a SURPLUS. A figure without '
+           'the word is half of it.')],
+    'The chart plots five years of each series and the question asks for the period, not a year, '
+    'so ten figures are read off before any arithmetic happens.',
+    tariff_kind='fixed', section='A',
+    figure_key='economics-2021-HL-paper-p03-i0'))
+
+P.cards.append(card(
+    'econ-2021-hl-seca-q8-b', 2021, 'higher', 'economics-1-4',
+    'why-the-equi-marginal-price-is-paid', '2021 HL Section A Q8(b)',
+    'Explain why John would pay this price.',
+    '2 @ 4', 8,
+    [point('r-1', as_option(block(BODY, 'He would pay this price in order to maximise',
+                                  '9. (a) What is the corresponding market structure')), 8,
+           'Two things at 4 each: that he is maximising utility, and the rule that does it \u2014 '
+           'the ratio of marginal utility to price equal across every good. Saying only that he '
+           'wants the most utility misses the mechanism.')],
+    'The equi-marginal principle is a RATIO condition. It is satisfied when the last euro spent '
+    'on each good buys the same utility, not when the goods cost the same.',
+    stem='Part (a) works out the price John would pay for one unit of good Z from the '
+         'utility-per-euro he gets elsewhere.',
+    tariff_kind='fixed', section='A'))
+
+P.cards.append(card(
+    'econ-2021-hl-seca-q9-a', 2021, 'higher', 'economics-2-0',
+    'naming-the-market-structure', '2021 HL Section A Q9(a)',
+    'Identify the corresponding market structure for each of these products/firms: A the Irish '
+    'banking sector; B Irish Water (the company); C a takeaway food outlet.',
+    '3 @ 3', 9,
+    [point('r-1', as_option(block(BODY, 'A The Irish banking sector Oligopoly',
+                                  '(b) Give one reason')), 9,
+           'Three at 3 each. The sequence runs down the concentration scale \u2014 a few large '
+           'banks (oligopoly), a single supplier (monopoly), many small outlets selling close '
+           'but differentiated substitutes (monopolistic competition).')],
+    'None of the three is perfect competition, which is the structure that almost never has a '
+    'real-world example.',
+    tariff_kind='fixed', section='A',
+    figure_key='economics-2021-HL-paper-p13-i0'))
+
+P.cards.append(card(
+    'econ-2021-hl-seca-q9-b', 2021, 'higher', 'economics-2-0',
+    'reasons-for-each-market-structure', '2021 HL Section A Q9(b)',
+    'Give one reason for each of your chosen market structures above.',
+    '6', 6,
+    [point('r-1', as_option(block(BODY, 'The Irish banking sector is dominated by a few large firms',
+                                  '10 | P a g e')), 6,
+           'One reason per structure, and each names the FEATURE that defines it: a few large '
+           'firms, a sole provider, many sellers of close substitutes with some price control.')],
+    'The reason has to be the defining feature, not a fact about the industry. "Banks are big" '
+    'is not why banking is an oligopoly; "a few firms hold the market" is.',
+    stem='Part (a) names the structures: the Irish banking sector, Irish Water and a takeaway '
+         'food outlet.',
+    tariff_kind='fixed', section='A'))
+
+P.cards.append(card(
+    'econ-2021-hl-sa-q2', 2021, 'higher', 'economics-0-0',
+    'sorting-positive-from-normative-statements', '2021 HL Section A Q2',
+    'Select, using a tick (\u2714), whether each of the following statements are Normative '
+    'statements or Positive statements.',
+    'fixed', 15,
+    [point('r-1', as_option(block(BODY, 'Statement Positive Normative Statement Statement',
+                                  '3 | P a g e')), 15,
+           'Four statements, priced 4, 4, 4 and 3. A POSITIVE statement is one that could be '
+           'tested against the facts, whether or not it turns out true; a NORMATIVE one says what '
+           'OUGHT to happen and no evidence can settle it.')],
+    'The giveaway words are should and have to \u2014 both normative. A prediction about '
+    'unemployment is positive even though nobody knows yet whether it will happen, because it is '
+    'the KIND of claim evidence could settle. The scheme states its answer by which column the '
+    'tick sits in, and that column does not survive extraction, so the completed table rides '
+    'with the card as a picture.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2021-HL-scheme-p04-q2-ticks'))
+
+P.cards.append(card(
+    'econ-2021-hl-sa-q10-b', 2021, 'higher', 'economics-3-3',
+    'what-you-would-advise-the-ecb-to-do-with-a-zero-rate', '2021 HL Section A Q10(b)',
+    'Outline whether you would advise the European Central Bank to: increase, decrease, or '
+    'maintain the current interest rate of 0%. Justify your choice.',
+    '1 @ 7', 7,
+    [anyN('r-1', 'A course of action for the ECB, with its justification \u2014 any one', 7, 1, 7,
+          [o.strip(' \u2022') for o in
+           as_option(block(BODY, 'During these economically volatile times',
+                           '11 | P a g e')).split(' OR ') if o.strip(' \u2022')],
+          'Seven marks for one recommendation properly justified. The scheme takes either '
+          'answer \u2014 it is the reasoning that is marked, not the choice.')],
+    'Both accepted answers rest on the same mechanism: a low or negative rate discourages saving '
+    'and encourages borrowing and spending. What separates them is how far the ECB should push '
+    'it, and the scheme calls a negative rate an extreme measure for weak growth and low '
+    'inflation.',
+    section='A', tariff_kind='fixed'))
 
 P.emit()
