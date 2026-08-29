@@ -6,7 +6,7 @@
 import { renderHook, waitFor } from '@testing-library/react';
 import { describe, expect, test, vi } from 'vitest';
 import { DEMO_STUDENT_UID } from '@/data/devStudent';
-import { useStrategyMastery } from '@/hooks/useStrategyMastery';
+import { createStrategyMasteryRecord, useStrategyMastery } from '@/hooks/useStrategyMastery';
 
 const EMPTY_PROGRESS = {};
 const NO_COURSES: [] = [];
@@ -40,5 +40,29 @@ describe('Demo strategy mastery', () => {
     await waitFor(() => expect(result.current.isLoaded).toBe(true));
     expect(mocks.updateDemoProgress).not.toHaveBeenCalled();
     expect(mocks.setDoc).not.toHaveBeenCalled();
+  });
+
+  test('omits missing milestone dates before a mastery record reaches Firestore', () => {
+    const record = createStrategyMasteryRecord('learned', 0, [], {
+      learnedAt: undefined,
+      appliedAt: undefined,
+      habitualAt: undefined,
+    });
+
+    expect(record).toEqual({ tier: 'learned', sessionCount: 0, subjectsSeen: [] });
+    expect(Object.values(record)).not.toContain(undefined);
+  });
+
+  test('retains milestone dates that have been earned', () => {
+    expect(createStrategyMasteryRecord('applied', 3, ['English', 'Irish'], {
+      learnedAt: '2026-08-01',
+      appliedAt: '2026-08-08',
+    })).toEqual({
+      tier: 'applied',
+      sessionCount: 3,
+      subjectsSeen: ['English', 'Irish'],
+      learnedAt: '2026-08-01',
+      appliedAt: '2026-08-08',
+    });
   });
 });
