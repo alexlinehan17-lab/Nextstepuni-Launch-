@@ -580,6 +580,27 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC034GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2021 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2021-ol-q14-c-i", topicId: "economics-3-1", conceptId: "comparing-income-tax-across-countries",
+    section: "B", questionRef: "2021 OL Q14(c)(i)",
+    questionText: "Using the data above name the countries where an employee would pay the lowest tax and the highest tax.",
+    tariffModel: {"kind":"fixed","notation":"2 @ 5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The lowest tax Ireland The highest tax Germany", marks: 10, contextNote: "Both countries, 5 marks each. The table prices the same €18,000 salary in five countries, so the answer is read straight off it — Ireland lowest at €510, Germany highest at €4,770.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2021-OL-paper-p21-i0",
+          "src": "/exam-figures/economics/markbank/economics-2021-OL-paper-p21-i0.png",
+          "srcHash": "a0d9fa871f4fba800cea195a16da2570",
+          "alt": "A five-row table of income tax paid on a salary of €18,000 in different countries: Germany €4,770; France €4,015; UK €2,119; Switzerland €1,120; Ireland €510.",
+          "attribution": "SEC Leaving Certificate Economics 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2021 Ordinary Level — © State Examinations Commission.",
     id: "econ-2021-ol-sa-q10-b", topicId: "economics-2-1", conceptId: "why-wages-differ-between-jobs",
     section: "A", questionRef: "2021 OL Section A Q10(b)",
     questionText: "Explain one reason why different wages are paid for different jobs.",
@@ -1236,14 +1257,6 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "It is the increase in GNP / output (value of goods and services) national income per head of population within a country over a period of time / increased productive capacity of an economy.", marks: 6, contextNote: "The definition, 6 marks; any of the slash-separated wordings.", openList: true },
     ],
-    figure: {
-          "candId": "economics-2022-OL-paper-p03-i0",
-          "src": "/exam-figures/economics/markbank/economics-2022-OL-paper-p03-i0.png",
-          "srcHash": "874701930c8e9f13b50b31a1e8f95fcb",
-          "alt": "A Central Bank of Ireland infographic headed 'Forecast growth* in Irish economy' on a dark teal ground, with a grey silhouette map of Ireland at left and four coloured columns rising left to right, each labelled with its year above and its rate inside: 2020 -4.9% (purple, the only negative), 2021 5.5% (orange), 2022 7.1% (teal), 2023 4.1% (pale green). Footnote '*Modified domestic demand.' and the Banc Ceannais na hÉireann / Central Bank of Ireland logo.",
-          "attribution": "SEC Leaving Certificate Economics 2022 Ordinary Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1366,6 +1379,27 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "The definition — either wording", marks: 15, contextNote: "One definition, 15 marks (9+3+3).", openList: true, group: {"claimMax":1,"perOption":15,"options":["Refers to the total amount of government borrowing which is outstanding / owed.","Refers to the total amount of money borrowed by the government which is owed."]} },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2022-ol-seca-q6-i", topicId: "economics-3-2", conceptId: "peak-months-of-unemployment",
+    section: "A", questionRef: "2022 OL Section A Q6(i)",
+    questionText: "Identify the two months when the number of people unemployed was at its highest.",
+    tariffModel: {"kind":"fixed","notation":"1 @ 6+1 @ 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The two peak months — both", marks: null, contextNote: "Both months are wanted and the scheme prices them unevenly: ⟨6+3⟩, six for the first and three for the second. The chart peaks across the spring 2021 lockdown.", openList: true, group: {"claimMax":2,"perOption":6,"options":["Month 1: March (2021)","Month 2: April (2021)"],"perOptionSteps":[6,3]} },
+    ],
+    figure: {
+          "candId": "economics-2022-OL-paper-p06-i0",
+          "src": "/exam-figures/economics/markbank/economics-2022-OL-paper-p06-i0.png",
+          "srcHash": "e089aff5e87de0bd58d21d7750838c40",
+          "alt": "A line chart headed 'Number of people unemployed: Nov 20 - Nov 21', y-axis 'Number of people' 0 to 250,000, x-axis 'Months' from Nov-20 to Nov-21. The green line starts near 150,000, holds through December, climbs to a peak just under 192,000 in March 2021, stays there in April, then falls steadily to about 133,000 by September and flattens near 135,000 to November.",
+          "attribution": "SEC Leaving Certificate Economics 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1832,6 +1866,27 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Economies of scale arise as the firm increases its size of production and leads to a reduction in the long run average cost. It leads to a fall in the cost per unit as the business expands or grows in size.", marks: 7, contextNote: "One explanation, 7 marks.", openList: true },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2023 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2023-ol-q14-a-i", topicId: "economics-3-3", conceptId: "trend-in-petrol-prices",
+    section: "B", questionRef: "2023 OL Q14(a)(i)",
+    questionText: "Comment on one key trend in the price of petrol in the line graph above, using information from the line graph.",
+    tariffModel: {"kind":"bestNofParts","notation":"1 @ 10","answer":1,"ofParts":2,"perPart":10}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "One key trend, quoted off the graph — any one", marks: 10, contextNote: "One trend, 10 marks, written (6+4): 6 for the trend and 4 for the figures taken off the graph. The two halves of the year run opposite ways and either is accepted.", openList: true, group: {"claimMax":1,"perOption":10,"options":["From April to June 2022, petrol prices increased steadily. Prices rose from €1.80 to over €2.10.","From June 2022 to September 2022 petrol prices fell. The decline was sharpest between June at €2.10 to under €1.90 in August. (ii)"]} },
+    ],
+    figure: {
+          "candId": "economics-2023-OL-paper-p19-art",
+          "src": "/exam-figures/economics/markbank/economics-2023-OL-paper-p19-art.png",
+          "srcHash": "10f1994353bcc293e1c211fa67703279",
+          "alt": "A line chart headed 'Petrol Prices in Ireland: April - September 2022', y-axis 'Price in cent (€)' from 160.00 to 220.00, x-axis 'Months' from Apr-22 to Sep-22. The line rises from about 181 in April to 192 in May and peaks near 213 in June, then falls back through about 199 in July to 187 in August and 184 in September. Source 'Adapted from theaa.ie'.",
+          "attribution": "SEC Leaving Certificate Economics 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",

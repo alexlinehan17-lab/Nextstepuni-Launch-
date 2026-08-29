@@ -404,6 +404,27 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: "LC034ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2021 Higher Level — © State Examinations Commission.",
+    id: "econ-2021-hl-q16-a-i-trend", topicId: "economics-3-2", conceptId: "trend-in-air-passenger-numbers",
+    section: "B", questionRef: "2021 HL Q16(a)(i)",
+    questionText: "Using the data provided above, analyse the trend in the number of passengers handled by the main Irish airports between 2017 and 2020.",
+    tariffModel: {"kind":"fixed","notation":"7","answer":null,"ofParts":null,"perPart":null}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Between Q2 2017 and Q2 2019 there is a steady increase from over 9 million passengers to just over 10 million passengers. • Between Q2 2019 to Q2 2020 there is a sharp decline the passengers from just over 10 million down to virtually zero.", marks: 7, contextNote: "One analysis worth 7. The scheme prints the rise and the collapse as a single response rather than as alternatives, so the trend is not analysed until both movements are named — and the marks are for quoting the figures, not for the adjective.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2021-HL-paper-p34-art",
+          "src": "/exam-figures/economics/markbank/economics-2021-HL-paper-p34-art.png",
+          "srcHash": "a13a128c9f7b62fac1ce4587405ab631",
+          "alt": "A line chart headed 'Number of Passengers', y-axis 'Millions' 0 to 12, x-axis 'Period' with four points: Q2 2017 about 9.4, Q2 2018 about 10.0, Q2 2019 about 10.5, and Q2 2020 almost zero. The line rises gently for three years and then falls almost vertically.",
+          "attribution": "SEC Leaving Certificate Economics 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2021 Higher Level — © State Examinations Commission.",
     id: "econ-2021-hl-q11-c-i", topicId: "economics-1-5", conceptId: "what-internal-economies-of-scale-are",
     section: "B", questionRef: "2021 HL Q11(c)(i)",
     questionText: "Boeing and Embraer entered potential merger talks in 2019. If a merger were to occur between Boeing and Embraer it is likely they would benefit from Internal Economies of Scale. Define Internal Economies of Scale.",
@@ -2030,6 +2051,27 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Market failure occurs when the price mechanism in the free market leads to an inefficient / inequitable allocation of resources. The production of these goods has led to negative externalities for third parties such as individuals who aren’t involved in the production or consumption of these goods have suffered the negative consequences of pollution and ill health.", marks: 5, contextNote: "The scheme answers YES. The justification, 5 marks.", openList: true },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2023 Higher Level — © State Examinations Commission.",
+    id: "econ-2023-hl-q14-a-i", topicId: "economics-3-2", conceptId: "trend-in-the-monthly-unemployment-rate",
+    section: "B", questionRef: "2023 HL Q14(a)(i)",
+    questionText: "From the graph above analyse one trend in Ireland’s monthly unemployment rate from March 2021 to September 2022, using figures from the above graph.",
+    tariffModel: {"kind":"bestNofParts","notation":"1 @ 8","answer":1,"ofParts":3,"perPart":8}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "One trend, quoted off the graph — any one", marks: 8, contextNote: "The question asks for ONE trend and the scheme prints three, so any one earns the 8. The tariff is written (4+4): half for naming the direction, half for the figures that evidence it — a trend named without numbers is half an answer. Note the third option runs the other way; the graph does not fall throughout.", openList: true, group: {"claimMax":1,"perOption":8,"options":["Between March 2021 and September 2022, the unemployment rate fell. It fell from 7.6% to approximately 4.4%. This is a decrease of 3.2%. •","Between March 2021 and May 2022 the unemployment rate fell. It fell from 7.6% to approximately 4.2%. This is a decrease of 3.4%. •","Between May 2022 and September 2022 the unemployment rate rose. It rose from 4.2% to 4.4%. This is an increase of 0.2%. (ii)"]} },
+    ],
+    figure: {
+          "candId": "economics-2023-HL-paper-p25-i0",
+          "src": "/exam-figures/economics/markbank/economics-2023-HL-paper-p25-i0.png",
+          "srcHash": "4ec6bdef6c266446d60c4d0c2e69cce4",
+          "alt": "A line chart on a blue ground headed 'SEASONALLY ADJUSTED MONTHLY UNEMPLOYMENT RATE', y-axis % from 0 to 8, x-axis by month from Mar-21 to Sep-22. Labelled values fall across the period: 7.6, 7, 5.9, 5.3, 5.2, 4.9, 4.9, 4.2, 4.3, 4.4.",
+          "attribution": "SEC Leaving Certificate Economics 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4047,14 +4089,6 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "One side of the kink — both of these", marks: 6, contextNote: "Both halves, 3 marks each: what rivals do when the firm raises price, and what they do when it cuts price.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Before the kink – if a firm increases its price, competing firms will not follow by raising their prices. Customers will then switch to competitors, who are keeping their prices unchanged. As a result, quantity demanded will decrease by a greater percentage than the price increase / the firm will lose a lot of consumers. Hence this part of the demand curve is relatively price elastic.","After the kink – if a firm reduces its price, competing firms will match the price cut to avoid losing their customers. Since all firms are lowering prices together, the firm will not gain many new customers. This means quantity demanded will increase by a smaller percentage than the price reduction. Hence, this part of the demand curve is relatively price inelastic."]} },
     ],
-    figure: {
-          "candId": "economics-2025-HL-paper-p11-art",
-          "src": "/exam-figures/economics/markbank/economics-2025-HL-paper-p11-art.png",
-          "srcHash": "e3f7aab02ca447e84f23cc676a085706",
-          "alt": "A kinked demand diagram of a firm in oligopoly at long-run equilibrium. 'Price' on the vertical axis, 'Quantity' on the horizontal. A yellow line runs from the top left, bends at a filled black dot and falls more steeply to the axis; it is numbered 2 in a yellow box near its lower end. A red line runs below it and stops abruptly; it is numbered 3 in a red box. A green U-shaped curve rises through a second filled dot labelled E to the top right; it is numbered 1 in a green box. Blue dashed guides run from the upper dot left to P1 on the price axis and down to Q1 on the quantity axis. Beneath the diagram sit the three-row answer table for items 1 to 3 and part (b) asking for the shape of curve 2.",
-          "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
   } as SecCard,
   {
     ...base, kind: "question",

@@ -298,6 +298,33 @@ P.menu('one social reason and one economic reason', 'econ-2021-hl-q16-b-ii-econo
 # them to a page boundary, and there is nothing for menu() to claim.
 FULL = tidy(load(2021, 'higher'))
 
+# ── Fourth pass: the parts whose question IS a chart ────────────────────────
+# These were excluded as "every response reads the chart printed with it", which
+# was true and was never a reason: the chart is catalogued, carries verified alt
+# text and an md5 the build re-checks, and 159 of this subject's 161 crops
+# already name the part they belong to. With the figure bound the student has
+# exactly what the candidate in the hall had, and the scheme's responses are
+# ordinary prose that quotes the figures off it.
+P.cards.append(card(
+    'econ-2021-hl-q16-a-i-trend', 2021, 'higher', 'economics-3-2',
+    'trend-in-air-passenger-numbers', '2021 HL Q16(a)(i)',
+    'Using the data provided above, analyse the trend in the number of passengers handled by '
+    'the main Irish airports between 2017 and 2020.',
+    '7', 7,
+    [point('r-1', as_option(block(FULL, 'Between Q2 2017 and Q2 2019 there is a steady increase',
+                                  '(ii) The demand for labour')), 7,
+           'One analysis worth 7. The scheme prints the rise and the collapse as a single '
+           'response rather than as alternatives, so the trend is not analysed until both '
+           'movements are named — and the marks are for quoting the figures, not for the '
+           'adjective.')],
+    'The id carries a -trend suffix because econ-2021-hl-q16-a-i is taken by a card whose '
+    'citation econ_refs.py corrects to Q16(c)(i); an id is never renamed, since it keys a '
+    'student\u2019s review history. '
+    'The chart is the question. The scheme\u2019s own wording puts the passenger numbers either '
+    'side of Q2 2019, which is the shape the graph makes: three years of gentle growth and '
+    'then a near-vertical fall.',
+    figure_key='economics-2021-HL-paper-p34-art', tariff_kind='fixed'))
+
 P.cards.append(card(
     'econ-2021-hl-q11-c-i', 2021, 'higher', 'economics-1-5',
     'what-internal-economies-of-scale-are', '2021 HL Q11(c)(i)',
