@@ -3598,6 +3598,27 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC034GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2025-ol-q12-a-i", topicId: "economics-3-1", conceptId: "capital-spending-as-a-share-of-the-total",
+    section: "B", questionRef: "2025 OL Q12(a)(i)",
+    questionText: "Calculate capital expenditure as a percentage of total government expenditure. Show all your workings.",
+    tariffModel: {"kind":"fixed","notation":"16","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "€14.9 bn 6 x 100 2 = 14.14 % 4 €105.4 bn 4", marks: 16, contextNote: "Capital over the WHOLE €105.4bn, not over the current slice. The pie prints the total in its heading rather than as a slice, so the denominator has to be found before any division happens.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2025-OL-paper-p14-art",
+          "src": "/exam-figures/economics/markbank/economics-2025-OL-paper-p14-art.png",
+          "srcHash": "edff28bd87126ee56fd81874314c631e",
+          "alt": "A pie chart headed 'Total Government Expenditure: €105.4 billion' with two slices, the smaller pulled out: Current Expenditure €90.5 billion in dark teal and Capital Expenditure €14.9 billion in orange, with a legend beneath. Below it the part asking the student to calculate capital expenditure as a percentage of the total, and part (ii) on whether €360 million for walking and cycling infrastructure is current or capital expenditure.",
+          "attribution": "SEC Leaving Certificate Economics 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "econ-2025-ol-sa-q1-ii", topicId: "economics-1-1", conceptId: "benefits-of-cheaper-electricity",
     section: "A", questionRef: "2025 OL Section A Q1(ii)",
     questionText: "Outline one economic benefit for Irish consumers of lower electricity prices.",

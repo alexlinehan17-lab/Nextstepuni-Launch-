@@ -85,11 +85,6 @@
   "evidence": "\"Using the figures obtained in the table draw and label: the Fixed Costs, Variable Costs, and Total Costs… Cost of Production 600,000 500,000 505,000 TC:5 450,000 400,000 400,000 405,000 VC:5 … 100,000 FC: 2 … Axes 4\""
  },
  {
-  "ref": "2022 HL Q14(c)(i)",
-  "reason": "the response is the worked average calculation off the gender-pay-gap chart",
-  "evidence": "\"Based upon the data above calculate the average gender wage gap… Show all your workings. 21.7 + 19.2 + 14 + 11.3 + 1.3 = 67.5 ÷ 5 = 13.5 ⟨8⟩\""
- },
- {
   "ref": "2022 HL Q14(c)(iii)",
   "reason": "the scheme welds its two sides together and neither separates cleanly",
   "evidence": "recorded product decision in econ_excluded.py, made at authoring time against the scheme"
@@ -458,11 +453,6 @@
   "ref": "2025 OL Q11(b)(ii)",
   "reason": "labels to be placed on a diagram; no wording to show (same class as 2022/2023/2024 OL Q11(b)(ii), all registered)",
   "evidence": "Scheme p16: '(ii) Equilibrium occurs at point E on the diagram above. Clearly show and label on the above diagram: • The output the firm will produce in equilibrium (use label Q1) ⟨4⟩ • The price the firm will charge for its output (use label P1).' — the only answer is P1/Q1 drawn on the printed diagram; the scheme itemises no prose components."
- },
- {
-  "ref": "2025 OL Q12(a)(i)",
-  "reason": "the response is the worked percentage calculation, read off the pie chart printed beside it",
-  "evidence": "Scheme p18: '€14.9 bn [6] x 100 [2] = 14.14 % [4] ⟨16⟩ €105.4 bn [4]' — the answer is the worked sum of figures taken from the printed chart; its step marks ride inside the fraction and flatten illegibly."
  },
  {
   "ref": "2025 OL Q12(b)(ii)",

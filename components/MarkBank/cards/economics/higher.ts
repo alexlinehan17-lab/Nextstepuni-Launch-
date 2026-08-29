@@ -1571,6 +1571,27 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: "LC034ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2022 Higher Level — © State Examinations Commission.",
+    id: "econ-2022-hl-q14-c-i", topicId: "economics-2-1", conceptId: "average-gender-wage-gap-across-five-countries",
+    section: "B", questionRef: "2022 HL Q14(c)(i)",
+    questionText: "Based upon the data above calculate the average gender wage gap across these five European countries. Show all your workings.",
+    tariffModel: {"kind":"fixed","notation":"8","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "21.7 + 19.2 + 14 + 11.3 + 1.3 = 67.5 ÷ 5 = 13.5", marks: 8, contextNote: "All five gaps are added and divided by five. It is a simple mean, so the only way to go wrong is to read a bar off the chart incorrectly or to divide by the wrong count.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2022-HL-paper-p28-i0",
+          "src": "/exam-figures/economics/markbank/economics-2022-HL-paper-p28-i0.png",
+          "srcHash": "1777fcd05026920a6df87f01d88eecb8",
+          "alt": "A horizontal bar chart headed 'Gender Pay Gap: How much less do women earn than men?' with five bars, each labelled with its value: Estonia 21.7 (black), Germany 19.2 (orange), Denmark 14 (red), Ireland 11.3 (green), Luxemburg 1.3 (pale blue). Source 'Adapted from Eurostat'. The question text below reads '(i) Based upon the data above calculate the average gender wage gap across these five European countries. Show all your workings.'",
+          "attribution": "SEC Leaving Certificate Economics 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2022 Higher Level — © State Examinations Commission.",
     id: "econ-2022-hl-sa-q2-b", topicId: "economics-1-1", conceptId: "what-moves-personal-consumption",
     section: "A", questionRef: "2022 HL Section A Q2(b)",
     stem: "The Quarterly National Accounts for Quarter 2 of 2021 — the quarter Ireland came out of its third lockdown — showed personal consumption rising.",

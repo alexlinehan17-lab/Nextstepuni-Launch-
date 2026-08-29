@@ -6309,6 +6309,39 @@
   "notes": "The chart plots NET position, so the largest contributor is the deepest negative bar and the largest beneficiary the tallest positive one. Reading it as gross payments reverses the answer. The crop was catalogued under Q16(c)(i), which the paper shows is the fast-fashion minimum-pricing question; the manifest ref has been corrected to this part."
  },
  {
+  "id": "econ-2022-hl-q14-c-i",
+  "topicId": "economics-2-1",
+  "conceptId": "average-gender-wage-gap-across-five-countries",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q14(c)(i)",
+  "questionText": "Based upon the data above calculate the average gender wage gap across these five European countries. Show all your workings.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-paper-p28-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "21.7 + 19.2 + 14 + 11.3 + 1.3 = 67.5 ÷ 5 = 13.5",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "All five gaps are added and divided by five. It is a simple mean, so the only way to go wrong is to read a bar off the chart incorrectly or to divide by the wrong count."
+   }
+  ],
+  "notes": "The five countries range from 21.7% down to 1.3%, so the average sits well below the widest gap — one country is not the story."
+ },
+ {
   "id": "econ-2022-hl-sa-q2-b",
   "topicId": "economics-1-1",
   "conceptId": "what-moves-personal-consumption",
@@ -24648,6 +24681,39 @@
    }
   ],
   "notes": "This is the distinction the chart invites students to miss. The line goes down and the cost of living still goes up, because the line measures the RATE of increase."
+ },
+ {
+  "id": "econ-2025-ol-q12-a-i",
+  "topicId": "economics-3-1",
+  "conceptId": "capital-spending-as-a-share-of-the-total",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 OL Q12(a)(i)",
+  "questionText": "Calculate capital expenditure as a percentage of total government expenditure. Show all your workings.",
+  "stem": "",
+  "figureKey": "economics-2025-OL-paper-p14-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "16",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "€14.9 bn 6 x 100 2 = 14.14 % 4 €105.4 bn 4",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "Capital over the WHOLE €105.4bn, not over the current slice. The pie prints the total in its heading rather than as a slice, so the denominator has to be found before any division happens."
+   }
+  ],
+  "notes": "Capital spending is the small slice — about a seventh of the total — so an answer far above 15% means the wrong denominator was used."
  },
  {
   "id": "econ-2025-ol-sa-q1-ii",

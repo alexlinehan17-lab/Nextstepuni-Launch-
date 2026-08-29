@@ -501,4 +501,21 @@ P.cards.append(card(
     tariff_kind='fixed',
     figure_key='economics-2025-OL-paper-p27-art'))
 
+# ── Backfill ───────────────────────────────────────────────────────────────
+
+P.cards.append(card(
+    'econ-2025-ol-q12-a-i', 2025, 'ordinary', 'economics-3-1',
+    'capital-spending-as-a-share-of-the-total', '2025 OL Q12(a)(i)',
+    'Calculate capital expenditure as a percentage of total government expenditure. Show all '
+    'your workings.',
+    '16', 16,
+    [point('r-1', as_option(block(BODY, '\u20ac14.9 bn', '(ii)')), 16,
+           'Capital over the WHOLE \u20ac105.4bn, not over the current slice. The pie prints the '
+           'total in its heading rather than as a slice, so the denominator has to be found '
+           'before any division happens.')],
+    'Capital spending is the small slice \u2014 about a seventh of the total \u2014 so an answer '
+    'far above 15% means the wrong denominator was used.',
+    tariff_kind='fixed',
+    figure_key='economics-2025-OL-paper-p14-art'))
+
 P.emit()

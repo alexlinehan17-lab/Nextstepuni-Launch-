@@ -500,4 +500,21 @@ P.cards.append(card(
     tariff_kind='fixed',
     figure_key='economics-2022-HL-paper-p33-art'))
 
+# ── Backfill ───────────────────────────────────────────────────────────────
+
+P.cards.append(card(
+    'econ-2022-hl-q14-c-i', 2022, 'higher', 'economics-2-1',
+    'average-gender-wage-gap-across-five-countries', '2022 HL Q14(c)(i)',
+    'Based upon the data above calculate the average gender wage gap across these five European '
+    'countries. Show all your workings.',
+    '8', 8,
+    [point('r-1', as_option(block(BODY, '21.7 + 19.2 + 14 + 11.3 + 1.3 = 67.5',
+                                  '(ii)')), 8,
+           'All five gaps are added and divided by five. It is a simple mean, so the only way to '
+           'go wrong is to read a bar off the chart incorrectly or to divide by the wrong count.')],
+    'The five countries range from 21.7% down to 1.3%, so the average sits well below the widest '
+    'gap \u2014 one country is not the story.',
+    tariff_kind='fixed',
+    figure_key='economics-2022-HL-paper-p28-i0'))
+
 P.emit()
