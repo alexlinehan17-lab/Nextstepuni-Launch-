@@ -35,6 +35,8 @@ from collections import OrderedDict
 import pymupdf
 from PIL import Image
 
+import mathtext
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, '..', '..', '..'))
 PAPERS = os.path.join(ROOT, 'examiner-reports', 'maths', 'papers')
@@ -171,6 +173,7 @@ class Sitting:
         self.year, self.level, self.component = year, level, component
         self.paper_no = 1 if component == 100 else 2
         path = os.path.join(PAPERS, f'{year}-{level}-{component}-paper.pdf')
+        self.path = path
         self.doc = pymupdf.open(path)
         self.lines, self.dead = lines_of(self.doc)
         # Where this booklet's footer actually starts, per page.
@@ -373,6 +376,13 @@ class Sitting:
                         not self.furniture_line(page, y0, y1, x0):
                     words.append(txt)
         flat = ' '.join(' '.join(words).split())
+        # This is a screen reader's only description of the crop, and raw it is
+        # the font's mangling verbatim: "(\u0b36\u0b3e\u0b38\u0b5c) = 0 + \U0001d458\U0001d456, where
+        # \U0001d458\u2208\u2124". Demangled it says what the paper says.
+        try:
+            flat = mathtext.clean_like([self.path], flat) or flat
+        except Exception:                                   # noqa: BLE001
+            flat = mathtext.demangle(flat)
         return flat[:limit]
 
     # ---- the per-card plan ----

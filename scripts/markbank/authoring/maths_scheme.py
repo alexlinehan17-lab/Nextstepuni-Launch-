@@ -47,11 +47,28 @@ FURNITURE = re.compile(
     r'|Leaving Certificate.*|Coimisi.*|State Examinations.*'
     r'|Page \d+|\[?\d{1,3}\]?|Marking Notes|Marking scheme.*|Model Solution.*)\s*$', re.I)
 
-CREDIT = re.compile(r'^(Low|Mid|High)\s+Partial\s+Credit\s*:?\s*$', re.I)
-FULL = re.compile(r'^Full\s+Credit\s*(-\s*\d+)?\s*:?\s*$', re.I)
+# A two-rung scale (10B) heads its one band "Partial Credit:" with no
+# Low/Mid/High qualifier. Requiring the qualifier meant the band never
+# opened and its marking point was dropped on the floor -- 2025 OL Paper 1
+# Q2(a)(i) shipped the DEDUCTION rule as the thing to claim, because that
+# was the only header the reader recognised on the part.
+CREDIT = re.compile(r'^(Low|Mid|High)?\s*Partial\s+Credit\s*:?\s*$', re.I)
+FULL = re.compile(r'^Full\s+Credit\s*([-\u2010-\u2015\u2212]\s*\d+)?\s*:?\s*$', re.I)
+# "Full Credit -1:" is a DEDUCTION rule, not a rung on the ladder. The scheme
+# prints it with an EN DASH, so the hyphen-only pattern above never matched it
+# and its bullet was swept into the band before it -- which is how
+# 2021 HL P1 Q1(a)'s High Partial Credit option ended with "Full Credit -1: 0
+# -i or -1i as solution, with k not identified."
+DEDUCTION = re.compile(r'^Full\s+Credit\s*[-\u2010-\u2015\u2212]\s*\d+\s*:?\s*$', re.I)
 
 
 SCALE_LINE = re.compile(r'Scale\s+\d+[A-Z]?\s*\(', re.I)
+# Marking INSTRUCTIONS, printed in the same column at the same indent as the
+# bullets. They are not alternatives a student can claim, and appending them to
+# the bullet above -- which is what a plain continuation rule does -- produced
+# "List with more than 10 terms but T10 = 22 not clearly identified Note: Accept
+# correct answer without supporting work" on 25 cards.
+ASIDE = re.compile(r'^(Note\s*:|Misreading|F\*\s|Accept\b|If\b.*:$)', re.I)
 # "(a)", "(i)", and "(b)(i)" -- the scheme frequently prints the letter and the
 # roman on ONE line, sometimes with the solution's first words after them.
 # Requiring the whole line to be a single marker left those units unnamed, and
@@ -79,6 +96,8 @@ class Scheme:
         self.units = {}
         # key -> every roman its one scale marks, where that is more than one
         self.spans = {}
+        # key -> the part's marking instructions, filled in by _bands()
+        self._asides = {}
         paper, q = 1, None
         for i, page in enumerate(self.doc):
             m = PAPER.search(page.get_text())
@@ -200,25 +219,81 @@ class Scheme:
         _, total, ladder = mathtext.steps_and_scale(self.notes(key))
         return total, ladder
 
+    def _bands(self, key):
+        """[(label, [bullet, ...])] — the notes column, keeping its structure.
+
+        A credit band lists the ALTERNATIVE ways to reach that rung, one per
+        bullet, and a bullet may wrap onto following lines. Joining every line
+        in a band into one string welded those alternatives together: 2021 HL
+        Paper 1 Q1(b)'s Low Partial Credit came out as "(a + bi)² = -5 + 12i a
+        + bi = (-5 + 12i) 1/2 r or θ found -5 + 12i plotted on Argand diagram.
+        Shows some knowledge of De Moivre's theorem" -- five separate ways to
+        earn the rung, read as one sentence. 274 of the 799 cards said
+        something like that.
+
+        So a line beginning with the bullet OPENS an alternative and any line
+        after it that does not continues the one before.
+        """
+        out, label, bullets, asides, in_aside = [], None, [], [], False
+        for line in self.notes(key):
+            t = line.strip()
+            if CREDIT.match(t) or FULL.match(t):
+                if label is not None:
+                    out.append((label, bullets))
+                label, bullets, in_aside = t.rstrip(':'), [], False
+                continue
+            if not t or t.startswith('Scale') or t == 'Marking Notes':
+                continue
+            if ASIDE.match(t):
+                asides.append(t)
+                in_aside = True
+                continue
+            if label is None:
+                # Before the first band the scheme states the part's marking
+                # instructions -- 2021 HL P1 Q5(b) sets out the four steps the
+                # scale is counting. Dropping them lost real marking content.
+                if asides:
+                    asides[-1] = f'{asides[-1]} {t}'.strip()
+                else:
+                    asides.append(t)
+                continue
+            if t.startswith('\u2022'):
+                bullets.append(t.lstrip('\u2022 ').strip())
+                in_aside = False
+            elif in_aside and asides:
+                asides[-1] = f'{asides[-1]} {t}'.strip()
+            elif bullets:
+                bullets[-1] = f'{bullets[-1]} {t}'.strip()
+            else:
+                bullets.append(t)
+        if label is not None:
+            out.append((label, bullets))
+        self._asides[key] = [a for a in asides if a]
+        return [(lab, [b for b in bs if b]) for lab, bs in out]
+
+    def part_notes(self, key):
+        """The scheme's marking instructions for the part, in its own words."""
+        if key not in self._asides:
+            self._bands(key)
+        return self._asides.get(key, [])
+
+    def deductions(self, key):
+        """The scheme's "Full Credit -1" rules — marking instructions, not rungs."""
+        return [(lab, bs) for lab, bs in self._bands(key) if DEDUCTION.match(lab + ':')]
+
     def answer_rows(self, key):
-        """[(label, text)] — the marking notes as a card's answer."""
+        """[(label, text)] — the marking notes as a card's answer.
+
+        One row per credit band, because that is what the ladder prices. The
+        band's alternatives stay on separate lines inside it; the squash the
+        provenance gate makes drops whitespace, so this still traces.
+        """
         notes = self.notes(key)
         steps, _, _ = mathtext.steps_and_scale(notes)
         if steps:
             return [(f'Step {n}', t) for n, t in steps]
-        out, label, buf = [], None, []
-        for line in notes:
-            t = line.strip()
-            if CREDIT.match(t) or FULL.match(t):
-                if label and buf:
-                    out.append((label, ' '.join(buf).strip()))
-                label, buf = t.rstrip(':'), []
-                continue
-            if label and t and not t.startswith('Scale') and t != 'Marking Notes':
-                buf.append(t.lstrip('• ').strip())
-        if label and buf:
-            out.append((label, ' '.join(buf).strip()))
-        return out
+        return [(lab, '\n'.join(bs)) for lab, bs in self._bands(key)
+                if bs and not DEDUCTION.match(lab + ':')]
 
 
 if __name__ == '__main__':

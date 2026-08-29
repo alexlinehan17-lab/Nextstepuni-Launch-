@@ -280,10 +280,33 @@ class Author:
                          'solution, in the order it sets them out.')
         else:
             rung_note = ' Marked in order: ' + '; '.join(lab for lab, _ in rows) + '.'
+        # Enumerate only as many rungs as the card actually SHOWS. The ladder
+        # can have more rungs than the scheme names bands for, and printing
+        # "three parts for 10" beside two options told the student a third
+        # option existed and they had missed it.
+        shown = ladder[:claim + 1]
         note = ('The scheme marks this on a sliding scale: '
                 + ', '.join(f'{n} for {v}' for n, v in
                             zip(('nothing', 'one part', 'two parts', 'three parts',
-                                 'four parts', 'five parts'), ladder)) + '.')
+                                 'four parts', 'five parts'), shown)) + '.')
+        if len(shown) < len(ladder):
+            note += f' The full scale runs to {ladder[-1]}.'
+        # "Full Credit -1" is a deduction the examiner applies, not a rung to
+        # claim, so it belongs in the note and never in the options. The same
+        # goes for the part's marking instructions -- the scheme's own "Note:"
+        # lines, which were being appended to whichever bullet they followed.
+        def _sentence(t):
+            t = t.strip()
+            return t if t.endswith(('.', ':', '?')) else t + '.'
+        for lab, bullets in self.S.deductions(key):
+            note += ' ' + _sentence(f'{lab}: ' + '; '.join(bullets))
+        for aside in self.S.part_notes(key):
+            # A note is worth having only if it is readable. Some carry a glyph
+            # the font subset never mapped -- "(2233.3\u1236 m\u00b2)" -- and the build
+            # rightly refuses the whole card for it. Drop the note, keep the card.
+            if any(0x0530 <= ord(ch) <= 0x1FFF for ch in aside):
+                continue
+            note += ' ' + _sentence(aside if aside.lower().startswith('note') else f'Note: {aside}')
         row = anyN(f'{cid}-r1', options[0], total, claim, steps[0], options,
                    note + rung_note,
                    steps=steps if len(set(steps)) > 1 else None)

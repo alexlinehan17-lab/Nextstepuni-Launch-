@@ -307,6 +307,21 @@ def _over(w, x0, x1):
     return lap > 0 and lap >= 0.5 * min(w[2] - w[0], x1 - x0)
 
 
+def _bracket(side):
+    """Parenthesise a fraction's numerator or denominator when it needs it.
+
+    A stacked fraction becomes "num/den" on one line, and with a multi-token
+    side that says the wrong thing: the scheme's (4-2i) over (2+4i) came out as
+    "4-2i/2 + 4i", which reads as 4 minus 2i/2 plus 4i. The brackets are the
+    printed layout stated in one dimension, and they cost nothing at the
+    provenance gate, which squashes to letters and digits before comparing.
+    """
+    s = side.strip()
+    if not s or (s.startswith('(') and s.endswith(')') and s.count('(') == s.count(')')):
+        return s
+    return f'({s})' if re.search(r'[\s+\u2212\u2013\u2014-]', s) else s
+
+
 def _splice(words, band, cut=300):
     pieces, claimed, top, bottom = [], [], None, None
     side = band[0].x0 >= cut
@@ -328,8 +343,8 @@ def _splice(words, band, cut=300):
         top = hi if top is None else min(top, hi)
         bottom = lo if bottom is None else max(bottom, lo)
         pieces.append((bar.x0, '{}/{}'.format(
-            ' '.join(w[4] for w in sorted(num, key=lambda w: w[0])),
-            ' '.join(w[4] for w in sorted(den, key=lambda w: w[0])))))
+            _bracket(' '.join(w[4] for w in sorted(num, key=lambda w: w[0]))),
+            _bracket(' '.join(w[4] for w in sorted(den, key=lambda w: w[0]))))))
     if not pieces:
         return None
     # The rest of the expression -- the "r(2) =" before the fraction -- is set
@@ -495,8 +510,41 @@ def clean_document(paths):
     return rows
 
 
+# A superscript or subscript digit is the digit it already means. Left as its
+# own codepoint it is stripped as non-alphanumeric, so "i2" and "i²" squashed to
+# different strings and a repaired row never matched the tail it had repaired.
+_DIGITS = str.maketrans('\u2070\u00b9\u00b2\u00b3\u2074\u2075\u2076\u2077\u2078\u2079'
+                        '\u2080\u2081\u2082\u2083\u2084\u2085\u2086\u2087\u2088\u2089',
+                        '01234567890123456789')
+
+
 def _squash(t):
-    return re.sub(r'[^a-z0-9]+', '', (t or '').lower())
+    return re.sub(r'[^a-z0-9]+', '', (t or '').lower().translate(_DIGITS))
+
+
+MARKER_ONLY = re.compile(r'^\(?\s*(?:[a-h]|i{1,3}|iv|vi{0,3})\s*\)?\s*$', re.I)
+
+
+_HAYCACHE = {}
+_LIKECACHE = {}
+
+
+def _haystack(paths, rows):
+    """The document squashed once, with a position -> row index map.
+
+    Rebuilding this per lookup made the repair pass quadratic: the search below
+    tries a descending prefix every two characters, and the tail repair calls
+    it up to eight more times for one fragment.
+    """
+    key = tuple(paths)
+    if key not in _HAYCACHE:
+        hay, owner = [], []
+        for i, (_, plain) in enumerate(rows):
+            sq = _squash(demangle(plain))
+            hay.append(sq)
+            owner.extend([i] * len(sq))
+        _HAYCACHE[key] = (''.join(hay), owner)
+    return _HAYCACHE[key]
 
 
 def clean_like(paths, fragment):
@@ -505,29 +553,86 @@ def clean_like(paths, fragment):
     Returns the fragment merely demangled when it cannot be located -- better a
     readable line than none, though it will be missing its exponents.
     """
+    ck = (tuple(paths), fragment)
+    if ck in _LIKECACHE:
+        return _LIKECACHE[ck]
+    out = _clean_like(paths, fragment)
+    _LIKECACHE[ck] = out
+    return out
+
+
+def _clean_like(paths, fragment):
     rows = clean_document(paths)
     want = _squash(demangle(fragment))
     if len(want) < 12:
         return demangle(fragment)
-    hay, owner = [], []
-    for i, (_, plain) in enumerate(rows):
-        sq = _squash(demangle(plain))
-        hay.append(sq)
-        owner.extend([i] * len(sq))
-    hay = ''.join(hay)
+    hay, owner = _haystack(paths, rows)
     # The floor has to be below len(want), or the range is EMPTY and the match
     # never runs: a 34-character fragment against a floor of 40 gave range(34,
     # 39, -10), no iterations, and a silent fallback to the unrepaired text.
-    at, floor = -1, min(40, len(want)) - 1
-    for n in range(min(len(want), 200), floor, -10):
-        at = hay.find(want[:n])
-        if at >= 0:
-            break
+    # Find the LONGEST prefix of the fragment that the document contains. A
+    # fixed step walks past the only length that would have matched -- 2021 HL
+    # Paper 1 Q1(c) matches at 40 characters and at nothing between 49 and its
+    # full 89, because its two sentences are not adjacent rows -- and it then
+    # fell back to the unrepaired text, shipping "z3= -8" where the paper
+    # prints z cubed. A prefix that matches implies every shorter one does, so
+    # the answer is monotone in n and a bisection finds it exactly, in six
+    # searches of the page rather than thirty.
+    lo, hi, at = min(40, len(want)) - 1, min(len(want), 200), -1
+    while lo < hi:
+        mid = (lo + hi + 1) // 2
+        found = hay.find(want[:mid])
+        if found >= 0:
+            at, lo = found, mid
+        else:
+            hi = mid - 1
     if at < 0:
+        # The whole fragment is not one contiguous run of rows -- a large
+        # bracket or a part marker splits it. Repair it a SENTENCE at a time
+        # before giving up: each sentence usually does sit on rows of its own,
+        # and the plain fallback below loses every exponent in the line.
+        parts = [p for p in re.split(r'(?<=[.?])\s+', fragment) if p.strip()]
+        if len(parts) > 1:
+            done = [_clean_like(paths, p) for p in parts]
+            if any(_squash(a) != _squash(b) for a, b in zip(done, parts)):
+                return spacing(' '.join(' '.join(done).split()))
+        # 2022 HL Paper 1 Q3(b) prints "(√3 - i)" and its exponent 9 on
+        # separate rows, and the exponent comes out FIRST, so no prefix of the
+        # fragment is contiguous in the document. Repair the tail that is: it
+        # still recovers "i² = -1" from a line that would otherwise ship "i2".
+        # Only worth trying where there is something to recover. The repair
+        # exists to put back an exponent or an index the plain fallback drops,
+        # which shows up as a digit welded to a letter ("z3", "i2"); running it
+        # on every fragment that merely fails to match made the pass an order
+        # of magnitude slower for nothing.
+        if not re.search(r'[A-Za-z]\d', demangle(fragment)):
+            return demangle(fragment)
+        toks = fragment.split()
+        for drop in range(1, min(len(toks), 5)):
+            tail = ' '.join(toks[drop:])
+            if len(_squash(demangle(tail))) < 30:
+                break
+            fixed = _clean_like(paths, tail)
+            sq = _squash(demangle(tail))
+            # The repaired row may CARRY a character the demangled tail lost --
+            # the exponent 9 is a glyph squash drops -- so the tail is required
+            # to sit inside the repair, not to equal it.
+            # A repair may RECOVER a character the tail had lost, but it must
+            # not bring a neighbouring row in with it: dropping one token too
+            # few spliced "Space for part (a)(iii)." into the middle of the
+            # question. So the repair may grow by a glyph or two, no more.
+            if (sq and sq in _squash(fixed) and fixed != demangle(tail)
+                    and len(_squash(fixed)) - len(sq) <= 3):
+                return spacing(' '.join(
+                    (demangle(' '.join(toks[:drop])) + ' ' + fixed).split()))
         return demangle(fragment)
     end = min(at + len(want), len(owner)) - 1
     lines = rows[owner[at]:owner[end] + 1]
-    return spacing(' '.join(' '.join(c for c, _ in lines).split()))
+    # A question whose sentences are not adjacent rows has the part marker
+    # sitting between them, and joining the span verbatim reads "...roots of
+    # z3 = -8. (c) Give each of your answers...". The marker is furniture.
+    kept = [c for c, _ in lines if not MARKER_ONLY.match(c.strip())]
+    return spacing(' '.join(' '.join(kept or [c for c, _ in lines]).split()))
 
 
 SUP = {'0': '⁰', '1': '¹', '2': '²', '3': '³', '4': '⁴', '5': '⁵',
