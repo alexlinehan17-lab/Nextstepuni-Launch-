@@ -33,7 +33,20 @@ if (Capacitor.isNativePlatform()) {
 if (!Capacitor.isNativePlatform()) {
   // @ts-expect-error — virtual module provided by vite-plugin-pwa at build time
   import('virtual:pwa-register')
-    .then(({ registerSW }) => registerSW({ immediate: true }))
+    .then(({ registerSW }) => registerSW({
+      immediate: true,
+      onRegisteredSW: (_workerUrl, registration) => {
+        if (!registration) return;
+
+        // Calling register() alone may reuse the browser's recent soft-update
+        // result for up to 24 hours. Check explicitly at launch so an open PWA
+        // cannot keep booting yesterday's hashed app shell after a deployment.
+        // Keep long-running study tabs current as well.
+        const checkForUpdate = () => registration.update().catch(() => {});
+        void checkForUpdate();
+        window.setInterval(checkForUpdate, 60 * 60 * 1000);
+      },
+    }))
     .catch(() => {});
 }
 

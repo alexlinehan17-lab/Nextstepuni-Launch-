@@ -30,6 +30,12 @@ describe('service worker auto-update handoff', () => {
     expect(viteConfig).toMatch(/workbox:\s*\{[\s\S]*?clientsClaim:\s*true/);
   });
 
+  it('explicitly checks for a newer worker at launch and while the app stays open', () => {
+    expect(indexEntry).toContain('onRegisteredSW:');
+    expect(indexEntry).toContain('registration.update()');
+    expect(indexEntry).toMatch(/window\.setInterval\(checkForUpdate,\s*60 \* 60 \* 1000\)/);
+  });
+
   it('does not let the browser cache the worker update check', () => {
     const workerHeaders = firebaseConfig.hosting.headers.find(({ source }) => source === '/sw.js')?.headers ?? [];
     const cacheControl = workerHeaders.find(({ key }) => key.toLowerCase() === 'cache-control')?.value ?? '';
