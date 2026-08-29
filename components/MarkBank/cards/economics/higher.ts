@@ -1598,6 +1598,28 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2022 Higher Level — © State Examinations Commission.",
+    id: "econ-2022-hl-seca-q4-a-ticks", topicId: "economics-3-0", conceptId: "injections-and-leakages-in-the-circular-flow",
+    section: "A", questionRef: "2022 HL Section A Q4(a)",
+    questionText: "Categorise each of the following as either an injection, or a leakage from the circular flow of income: the Irish government increases public sector salaries by 1% in 2023; Irish exports increase to record €160 bn despite the Covid 19 Pandemic; Irish consumers saved more than €10bn in first quarter of 2021.",
+    tariffModel: {"kind":"fixed","notation":"3+3+2","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Injection Leakage The Irish government increases public ✔ sector salaries by 1% in 2023. Irish exports increase to record €160 bn ✔ despite the Covid 19 Pandemic. Irish consumers saved more than ✔ €10bn in first quarter of 2021.", marks: 8, contextNote: "Read the completed table below — in flat text the three ticks carry no column. Government spending and exports are INJECTIONS, money entering the domestic flow; saving is a LEAKAGE, income received but not spent. The test is direction of travel, not whether the sum is large or welcome.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2022-HL-scheme-p07-q4a-ticks",
+          "src": "/exam-figures/economics/markbank/economics-2022-HL-scheme-p07-q4a-ticks.png",
+          "srcHash": "253a10cbfa868066cb2ec866c58c3776",
+          "alt": "The marking scheme's completed answer table for 2022 HL Section A Q4(a), as the State Examinations Commission set it. A green header row reads Injection | Leakage. Three rows follow, each carrying a single black tick: 'The Irish government increases public sector salaries by 1% in 2023.' ticked under Injection; 'Irish exports increase to record €160 bn despite the Covid 19 Pandemic.' ticked under Injection; 'Irish consumers saved more than €10bn in first quarter of 2021.' ticked under Leakage.",
+          "attribution": "SEC Leaving Certificate Economics 2022 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2023, level: "higher",
     paperFileid: "LC034ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2023 Higher Level — © State Examinations Commission.",

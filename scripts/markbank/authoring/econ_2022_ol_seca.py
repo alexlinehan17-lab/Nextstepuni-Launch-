@@ -283,4 +283,25 @@ P.cards.append(card(
     figure_key='economics-2022-OL-scheme-p06-q4-ticks'))
 
 
+# ── Tick tables, answered by the scheme's own completed table ──────────────
+# See econ_tick_crop.py: the ✔ is drawn, so extraction keeps it and loses the
+# column. The completed table is bound as a SOLUTION crop, hidden until reveal.
+
+P.cards.append(card(
+    'econ-2022-ol-seca-q7-a-ii-ticks', 2022, 'ordinary', 'economics-1-5',
+    'sorting-fixed-and-variable-costs', '2022 OL Section A Q7(a)(ii)',
+    'Indicate by means of a tick (\u2713) which of the costs in the table below are fixed costs '
+    'and which are variable costs: Wages \u20ac1,000; Raw Materials \u20ac1,500; Light & Heat '
+    '\u20ac300; Rent of the premises \u20ac750.',
+    '4+4+1+1', 10,
+    [point('r-1', as_option(block(BODY, 'Fixed Cost Variable Cost Wages', '(b) OR A bakery')), 10,
+           'Read the completed table below. Only the rent is FIXED \u2014 it is owed whether the '
+           'bakery bakes or not. Wages, raw materials and light & heat all move with output, so '
+           'all three are variable. The tariff is uneven, \u27e84+4+1+1\u27e9: the first two '
+           'right are worth four each and the last two one each.')],
+    'Three of the four are variable, so a student splitting them evenly gets one wrong before '
+    'thinking about any of them.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2022-OL-scheme-p09-q7aii-ticks'))
+
 P.emit()

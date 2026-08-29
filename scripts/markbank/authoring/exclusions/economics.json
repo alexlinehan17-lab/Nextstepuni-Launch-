@@ -175,11 +175,6 @@
   "evidence": "Scheme p: 'Indicate by means of a tick (✓) whether it is expansionary or contractionary. Answer: Expansionary • Exports have increased by 6.4%...' ⟨9⟩ — the credit is the tick and the readings."
  },
  {
-  "ref": "2022 HL Section A Q4(a)",
-  "reason": "answered by ticking injection or leakage against each item in a table; the prose lives in (b), now carded as econ-2022-hl-sa-q4-b",
-  "evidence": "\"⟨3+3+2⟩ … Injection Leakage The Irish government increases public ✔ sector salaries by 1% in 2023. Irish exports increase to record €160 bn ✔ … Irish consumers saved more than ✔ €10bn…\""
- },
- {
   "ref": "2022 HL Section A Q4(c)",
   "reason": "the either/or slot prints one tariff ⟨3+2+2⟩, which maps onto (b)'s three justifications; no split is stated across (c)'s two reasons, so carding it would invent a tariff",
   "evidence": "\"Answer either (b) or (c) ⟨3+2+2⟩ (b) In the box below justify each of your choices… [three bullets] OR (c) Outline two reasons why inflows of foreign direct investment…\" — the scheme PDF's marks column prints 3+2+2 once for the pair and nothing beside (c)."
@@ -263,11 +258,6 @@
   "ref": "2022 OL Section A Q1(i)",
   "reason": "a table completion answered by reading the growth chart printed with it",
   "evidence": "State the year with the highest rate of economic growth: 2022 ⟨6+3⟩ State the year with the lowest rate of economic growth: 2020"
- },
- {
-  "ref": "2022 OL Section A Q7(a)(ii)",
-  "reason": "answered by ticking fixed or variable against each cost in a table; no wording for a card to carry",
-  "evidence": "Indicate by means of a tick (✓) which of the costs in the table below are fixed costs and which costs are variable costs. ⟨4+4+1+1⟩ Fixed Cost Variable Cost Wages €1,000 ✓ Raw Materials €1,500 ✓"
  },
  {
   "ref": "2022 OL Section A Q7(b)(i)",
@@ -545,19 +535,9 @@
   "evidence": "Scheme p6: 'Indicate using a tick (✔) in the table below if the above measure is an example of a company using price competition or non-price competition. Explain your answer. 1st @ 8 / 2nd @ 4 … Non-price competition ✔ Explanation: Lidl is competing with other supermarkets to increase its sales / market share by means other than changing its prices for all its customers.'"
  },
  {
-  "ref": "2024 OL Section A Q3(a)",
-  "reason": "Answered by ticking true or false against each statement; the scheme prints only the two ticks, no wording for a card to carry.",
-  "evidence": "Scheme p8: 'Indicate by means of a tick (✔) whether you regard each statement below to be true or false. Statement True False 1. Barriers to entry exist in the Irish coffee shop market. ✔ [False] 2. The demand curve / average revenue curve … is downward-sloping from left to right. ✔ [True]' (1st @ 8, 2nd @ 4)."
- },
- {
   "ref": "2024 OL Section A Q5",
   "reason": "Answered by ticking import or export with the reason welded across the table columns — the flattened text interleaves the reason with the row labels, so no contiguous slice exists (same class as 2022 OL Section A Q4).",
   "evidence": "Scheme p10 flattens to: 'Farmers in This is a visible export. Ireland selling The money leaves Germany and goes 1. beef to the ✔ into the Irish economy / it is an inflow German market. of funds to Ireland.' (⟨2 @ 6⟩)."
- },
- {
-  "ref": "2024 OL Section A Q7",
-  "reason": "Answered by ticking positive or normative against each statement; no prose printed at all.",
-  "evidence": "Scheme p11: 'Study the statements below and indicate, by placing a tick (✔) in the correct box which is a positive statement and which is a normative statement. … The introduction of the plastic bag levy … ✔ [Positive] / The government should increase the amount of the old age pension … ✔ [Normative]' (1st @ 8, 2nd@ 4)."
  },
  {
   "ref": "2024 OL Section A Q8(i)",
@@ -653,11 +633,6 @@
   "ref": "2025 OL Q16(b)(ii)",
   "reason": "answered by reading figures off the CPI chart printed beside it (mirrors '2021 HL Q14(a)(i)' and '2021 OL Q13(c)(ii)')",
   "evidence": "Scheme p38: ⟨12⟩ 'From May 2024 to Sep 2024 the annual percentage change in inflation decreased. The annual rate of CPI inflation was highest in May 2024 at approx. 2.6% and hit its lowest figure at approx. 0.7% in September 2024 (or a decrease of 1.9%).' — the answer is the trend and figures read from the printed graph."
- },
- {
-  "ref": "2025 OL Section A Q8(i)",
-  "reason": "already registered in econ_excluded: answered by ticking which firm is in a monopoly",
-  "evidence": "Scheme p13: 'Name of Organisation Tick (✔) which is a Monopoly structure | Ryanair | An Post (mail service for letter post) ✔ | Vodafone' — the whole answer is a tick in a table."
  },
  {
   "ref": "2025 OL Section A Q9",
