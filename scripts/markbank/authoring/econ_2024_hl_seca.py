@@ -249,4 +249,26 @@ P.cards.append(card(
            'home MINUS foreign factor income repatriated out.')],
     '', section='A', tariff_kind='fixed'))
 
+# ── The part whose question IS a chart ─────────────────────────────────────
+# Excluded until now as a lookup off the figure printed with it. That described
+# the response, not a blocker: the crop is catalogued with verified alt text and
+# an md5 the build re-checks, so binding it gives the student what the candidate
+# in the hall had.
+
+P.cards.append(card(
+    'econ-2024-hl-seca-q1-a', 2024, 'higher', 'economics-4-2',
+    'calculating-the-current-account-balance', '2024 HL Section A Q1(a)',
+    'From the data above, calculate the balance of payments, current account balance. State '
+    'whether it is a surplus or a deficit. Show all your workings.',
+    '6', 6,
+    [point('r-1', as_option(block(BODY, 'Workings: \u20ac76bn + \u20ac91bn', 'Q2')), 6,
+           'The workings and the verdict, 6 marks as one block \u2014 the scheme prints no '
+           'split between them. Credits and debits are each totalled off the infographic '
+           'before they are subtracted, which is where the arithmetic usually goes wrong.')],
+    'Every figure comes off the CSO infographic; nothing is given in the wording. The answer '
+    'is a surplus, so a student who subtracts the wrong way round gets the sign as well as the '
+    'verdict wrong.',
+    tariff_kind='fixed', section='A',
+    figure_key='economics-2024-HL-paper-p03-i0'))
+
 P.emit()

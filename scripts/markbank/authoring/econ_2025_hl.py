@@ -519,4 +519,45 @@ P.menu('Do you agree or disagree with The Finance', 'econ-2025-hl-q15-a-i-cash-d
        ref='2025 HL Q15(a)(i) — disagree', claim=1, per=6, stem=CASH,
        drop=SCAFFOLD, after='Encourages criminal activity')
 
+# ── Worked calculations the scheme prints in full ──────────────────────────
+# Excluded until now as "the response is the worked calculation". That is a
+# description of the answer, not a blocker: the scheme sets out the formula, the
+# substitution and the result, so every step a student is credited for is on the
+# page and traces. Where the figures come off a chart the crop rides with the
+# card, because the arithmetic is unanswerable without it.
+
+P.cards.append(card(
+    'econ-2025-hl-q13-a-i', 2025, 'higher', 'economics-4-2',
+    'share-of-goods-exports-to-the-united-states', '2025 HL Q13(a)(i)',
+    'Calculate the percentage of Ireland\u2019s total goods exports that entered the United '
+    'States. Show all your workings.',
+    '8', 8,
+    [point('r-1', as_option(block(_MIXED, 'Workings: Ireland\u2032s exports to the US',
+                                  'Deduct 1 mark for omission of %')), 8,
+           'The scheme prints the ratio, the substitution and the answer, and the total is the '
+           'denominator \u2014 \u20ac108 billion is the whole chart, not one of its bars.')],
+    'The €108bn total sits in the chart\u2019s heading rather than on a bar, which is what '
+    'makes this one easy to get wrong: the denominator has to be found before the division.',
+    tariff_kind='fixed',
+    figure_key='economics-2025-HL-paper-p21-i0'))
+
+# ── Worked calculations the scheme prints in full ──────────────────────────
+# "The response is the worked calculation" describes the answer, not a blocker.
+# The scheme sets out formula, substitution and result, so every step a student
+# is credited for is on the page and traces.
+
+P.cards.append(card(
+    'econ-2025-hl-q16-a-ii', 2025, 'higher', 'economics-1-5',
+    'calculating-profit-from-revenue-and-cost', '2025 HL Q16(a)(ii)',
+    'If the outlet charges \u20ac4.00 for a fresh smoothie, calculate the profit it earns if it '
+    'sells 40 smoothies in a day. Show all your workings.',
+    '5', 5,
+    [point('r-1', as_option(block(_MIXED, 'Revenue: \u20ac4.00 x 40 smoothies', '64 |')), 5,
+           'Revenue first, then total cost taken off it. The cost of 40 smoothies comes from the '
+           'table rather than from multiplying a unit cost.')],
+    'Profit is what is left, so the answer is neither the \u20ac160 of revenue nor the \u20ac90 '
+    'of cost \u2014 a student who stops at either has done most of the arithmetic and none of '
+    'the question.',
+    tariff_kind='fixed'))
+
 P.emit()

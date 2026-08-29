@@ -239,4 +239,25 @@ P.cards.append(card(
     '',
     section='A', tariff_kind='bestNofParts'))
 
+# ── Worked calculations the scheme prints in full ──────────────────────────
+# Excluded until now as "the response is the worked calculation". That is a
+# description of the answer, not a blocker: the scheme sets out the formula, the
+# substitution and the result, so every step a student is credited for is on the
+# page and traces. Where the figures come off a chart the crop rides with the
+# card, because the arithmetic is unanswerable without it.
+
+P.cards.append(card(
+    'econ-2025-ol-seca-q7-i', 2025, 'ordinary', 'economics-3-1',
+    'percentage-increase-in-the-over-65-population', '2025 OL Section A Q7(i)',
+    'The number of people aged 65 and over has increased by 243,700. Calculate the percentage '
+    'increase in number of people aged 65 and over from 2014 to 2024. Show all your workings.',
+    '4', 4,
+    [point('r-1', as_option(block(T, '243,700 x 100 = 41.3',
+                                  '(ii) Outline one possible economic effect')), 4,
+           'The increase is given; the 2014 population is the denominator. Dividing by the 2024 '
+           'figure instead is the standard error here.')],
+    'The question hands over the change but not the base, so the base has to be taken from the '
+    'table before the division can happen.',
+    tariff_kind='fixed', section='A'))
+
 P.emit()

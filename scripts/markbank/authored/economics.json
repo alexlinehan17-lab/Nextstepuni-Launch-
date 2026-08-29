@@ -1613,6 +1613,72 @@
   "notes": "The scheme prints the completed diagram and pays 1 mark per labelled point."
  },
  {
+  "id": "econ-2021-hl-q15-c-ii",
+  "topicId": "economics-3-0",
+  "conceptId": "calculating-the-multiplier",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 HL Q15(c)(ii)",
+  "questionText": "Assume that MPM is 0.25 and MPC is 0.65 and MPT is 0.10. Calculate the multiplier. Show all your workings.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "MPS = 1 – 0.65 = 0.35 . 1 . . 1_______ (1-MPC) + MPM + MPT MPS + MPM + MPT . 1 . _ 1 _ . (1- 0.65) + 0.25 + 0.10 0.35 + 0.25 + 0.10 Multiplier = 1.43 Multiplier = 1.43",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "MPS has to be derived from MPC before the formula can be used, and the scheme shows the multiplier written both ways — over (1-MPC)+MPM+MPT and over MPS+MPM+MPT — because they are the same denominator."
+   }
+  ],
+  "notes": "The question gives MPM, MPC and MPT but the formula wants MPS, so the first line of the answer is a step the question does not ask for."
+ },
+ {
+  "id": "econ-2021-hl-q16-b-i",
+  "topicId": "economics-2-1",
+  "conceptId": "percentage-increase-in-the-minimum-wage",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 HL Q16(b)(i)",
+  "questionText": "Calculate the percentage increase in the minimum wage rate between 2016 and 2021.",
+  "stem": "",
+  "figureKey": "economics-2021-HL-paper-p35-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "10.20 −9.15 = 1.05 9.15 × 100 = 11.48% OR 10.20 9.15 × 100 = 111.48 −100 = 11.48%",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "The scheme prints two routes to the same 11.48%: the rise over the base, or the ratio of the two rates less 100. Both start from the 2016 rate as the base."
+   }
+  ],
+  "notes": "Both wage rates are read off the chart. The base is 2016, the earlier year, so dividing by the 2021 rate is the usual error."
+ },
+ {
   "id": "econ-2021-hl-sa-q1-b",
   "topicId": "economics-4-2",
   "conceptId": "why-a-trade-surplus-is-an-aim",
@@ -2138,6 +2204,80 @@
    }
   ],
   "notes": ""
+ },
+ {
+  "id": "econ-2021-hl-seca-q7-a",
+  "topicId": "economics-3-1",
+  "conceptId": "gross-debt-per-person-2007-to-2019",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2021 HL Section A Q7(a)",
+  "questionText": "Compare the level of Gross Debt per Person from 2007 to 2019 and outline one possible reason for this increase in the gross debt per person.",
+  "stem": "",
+  "figureKey": "economics-2021-HL-paper-p10-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Between 2007 and 2019 the gross debt per person rose by €30,322 per person or 272%. Between 2007 and 2013 the gross debt per person rose by €35,742 per person or 321%. Between 2013 and 2019 the gross debt per person fell by €5,420 per person or 11.6%.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The comparison, 5 marks. The infographic prints three debt-per-person figures and the scheme quotes the movement between them, so the marks are for the numbers as much as for the direction — and the middle of the period runs the other way from the ends."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Reason: Between 2007 and 2013 the Irish economy fell into recession which was brought about through a housing bubble and financial crisis. The government needed to bail out some banks and nationalise others leading to large increases in gross debt per person. Answer Question",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The reason, 4 marks. The scheme wants the bank bailout and the borrowing that paid for it, not a general statement that debt rose."
+   }
+  ],
+  "notes": "The question says \"this increase\", but the chart does not only increase: debt per person rises steeply to 2013 and then falls back. The scheme rewards saying so."
+ },
+ {
+  "id": "econ-2021-hl-seca-q8-a",
+  "topicId": "economics-1-4",
+  "conceptId": "price-from-the-equi-marginal-principle",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2021 HL Section A Q8(a)",
+  "questionText": "Calculate the price John would be willing to pay for one unit of good Z. Complete your calculations in the box below.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "7",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "2500 ÷ 200 = 12.5 or 1250 ÷ 100 = 12.5 75 ÷ 12.5 = €6",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "Utility per euro is established from a good whose price is known, and that rate is then applied to good Z. The scheme prints two routes to the same 12.5."
+   }
+  ],
+  "notes": "The calculation runs in two stages, and the scheme accepts either of the two goods for the first — both give the same utility-per-euro."
  },
  {
   "id": "econ-2021-ol-q11-b-iii",
@@ -8520,6 +8660,39 @@
    }
   ],
   "notes": "The two peaks sit together at the top of the curve, so the pair has to be read off the chart rather than recalled."
+ },
+ {
+  "id": "econ-2022-ol-seca-q9-i",
+  "topicId": "economics-1-1",
+  "conceptId": "working-the-ped-formula",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 OL Section A Q9(i)",
+  "questionText": "Using the formula above, complete the workings to calculate the Price Elasticity of Demand (PED) for these iPads.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "13",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 13,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "∆Q 45,000 – 30,000 = 15,000 ∆P €500 – €750 = -€250 P1 + P2 €750 + €500 = €1250 Q1 + Q2 30,000 + 45,000 = 75,000 15000 X €1250 -€250 75,000 = - 1 1 (must have the – sign)",
+    "marks": 13,
+    "openList": true,
+    "contextNote": "Each of the four inputs is worked separately before the formula is assembled, and the scheme is explicit that the answer must carry its minus sign — a positive 1 is not the same answer."
+   }
+  ],
+  "notes": "The paper prints the formula and the workings frame; the marks are for filling it in the right order, which is why the scheme works ∆Q, ∆P and both sums separately."
  },
  {
   "id": "econ-2023-hl-q11-a-ii",
@@ -15350,6 +15523,105 @@
   "notes": ""
  },
  {
+  "id": "econ-2024-hl-q11-a-i",
+  "topicId": "economics-4-1",
+  "conceptId": "percentage-increase-in-foreign-tourists",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 HL Q11(a)(i)",
+  "questionText": "Calculate the percentage increase in foreign tourists in August 2023 compared to July 2021. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2024-HL-paper-p13-i1",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Workings: 737,600 - 380,000 = 357,600 357,600 ------------- X 100 = 94.11% / 94% Increase 380,000 - 1 mark if % omitted",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The workings carry the marks, not the answer alone. Note the scheme deducts a mark for omitting the % sign — the number on its own is not the answer."
+   }
+  ],
+  "notes": "Both figures are read off the bars; nothing is given in the wording. The base is the EARLIER month, so dividing by the larger figure is the usual way this goes wrong."
+ },
+ {
+  "id": "econ-2024-hl-q14-c-ii",
+  "topicId": "economics-3-1",
+  "conceptId": "calculating-the-real-rate-of-interest",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 HL Q14(c)(ii)",
+  "questionText": "Calculate the real rate of interest if the nominal interest rate was 2.25% and the inflation rate was 5.5%. Show your workings.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Nominal interest rate – Inflation rate = Real rate of interest 2.25% – 5.50% = - 3.25% ( -1 for omission of %)",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme prints the relationship before the substitution. The answer is NEGATIVE — inflation above the nominal rate means money in the account loses value — and a mark goes for the % sign."
+   }
+  ],
+  "notes": "A negative real rate is the point of the question, not an error to be tidied away: at 2.25% nominal against 5.5% inflation, saving loses purchasing power."
+ },
+ {
+  "id": "econ-2024-hl-q16-b-iii",
+  "topicId": "economics-1-1",
+  "conceptId": "using-yed-to-forecast-sales",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 HL Q16(b)(iii)",
+  "questionText": "Assume the income elasticity of demand (YED) for a PlayStation 5 is +5.2 and total sales in 2023 were 10,000 units. Calculate the expected total sales for the year if consumers’ incomes are expected to fall by 5% in 2024. Show your workings.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Workings: If income falls by 5%, then sales will be expected to fall by (5% x 5.2) = 26%. Sales will fall by 26% in 2023. 26% of 10,000 units = 2,600 units. Expected sales in 2023 will be 10,000 – 2,600 = 7,400 units. Answer: 7,400 units",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two steps. The YED turns the 5% income fall into a 26% fall in demand; only then is that percentage taken off the 10,000 units. The answer is the remaining sales, not the fall itself."
+   }
+  ],
+  "notes": "A YED of +5.2 makes this a luxury: a small income fall produces a much larger fall in sales, which is what the multiplication by 5.2 is doing."
+ },
+ {
   "id": "econ-2024-hl-sa-q2-b",
   "topicId": "economics-3-2",
   "conceptId": "why-full-employment-is-an-aim",
@@ -16139,6 +16411,39 @@
    }
   ],
   "notes": ""
+ },
+ {
+  "id": "econ-2024-hl-seca-q1-a",
+  "topicId": "economics-4-2",
+  "conceptId": "calculating-the-current-account-balance",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2024 HL Section A Q1(a)",
+  "questionText": "From the data above, calculate the balance of payments, current account balance. State whether it is a surplus or a deficit. Show all your workings.",
+  "stem": "",
+  "figureKey": "economics-2024-HL-paper-p03-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Workings: €76bn + €91bn = €167bn €38bn + €83bn = €121bn €46 bn Surplus or Deficit? Surplus",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The workings and the verdict, 6 marks as one block — the scheme prints no split between them. Credits and debits are each totalled off the infographic before they are subtracted, which is where the arithmetic usually goes wrong."
+   }
+  ],
+  "notes": "Every figure comes off the CSO infographic; nothing is given in the wording. The answer is a surplus, so a student who subtracts the wrong way round gets the sign as well as the verdict wrong."
  },
  {
   "id": "econ-2024-ol-q11-a-ii",
@@ -17724,6 +18029,39 @@
    }
   ],
   "notes": "The bars barely move, and the scheme rewards saying so precisely: \"broadly stable or slightly increased\" with 4.5 and 4.3 quoted is a better answer than calling it a rise."
+ },
+ {
+  "id": "econ-2024-ol-q14-b-ii",
+  "topicId": "economics-3-1",
+  "conceptId": "why-vat-is-an-indirect-tax",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q14(b)(ii)",
+  "questionText": "Indicate with a tick (✔) below whether VAT is an example of a direct tax or an indirect tax. Explain your choice.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "7",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Direct tax Indirect tax ✔ Explanation: VAT is a tax on spending / on goods and services. It is placed on the consumer / user and is collected through a third party.",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "The choice and the reason together, 7 marks; the scheme prints no split. What makes it indirect is WHO pays it to the state — the consumer bears it but a third party collects and remits it."
+   }
+  ],
+  "notes": "A direct tax is paid to the Revenue by the person who bears it; VAT is not, which is the whole distinction. Naming the box without that reason earns the tick and little else."
  },
  {
   "id": "econ-2024-ol-sa-q1-i",
@@ -20240,6 +20578,72 @@
   "notes": ""
  },
  {
+  "id": "econ-2025-hl-q13-a-i",
+  "topicId": "economics-4-2",
+  "conceptId": "share-of-goods-exports-to-the-united-states",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q13(a)(i)",
+  "questionText": "Calculate the percentage of Ireland’s total goods exports that entered the United States. Show all your workings.",
+  "stem": "",
+  "figureKey": "economics-2025-HL-paper-p21-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Workings: Ireland′s exports to the US Ireland′s total goods exports × 100 1 €34 bn x 100 €108 bn 1 €34 billion €108 billion × 100 1 Answer: 31.48% / 32%",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme prints the ratio, the substitution and the answer, and the total is the denominator — €108 billion is the whole chart, not one of its bars."
+   }
+  ],
+  "notes": "The €108bn total sits in the chart’s heading rather than on a bar, which is what makes this one easy to get wrong: the denominator has to be found before the division."
+ },
+ {
+  "id": "econ-2025-hl-q16-a-ii",
+  "topicId": "economics-1-5",
+  "conceptId": "calculating-profit-from-revenue-and-cost",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q16(a)(ii)",
+  "questionText": "If the outlet charges €4.00 for a fresh smoothie, calculate the profit it earns if it sells 40 smoothies in a day. Show all your workings.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Revenue: €4.00 x 40 smoothies = €160 Minus Total cost for 40 smoothies: €90 PROFIT €70",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Revenue first, then total cost taken off it. The cost of 40 smoothies comes from the table rather than from multiplying a unit cost."
+   }
+  ],
+  "notes": "Profit is what is left, so the answer is neither the €160 of revenue nor the €90 of cost — a student who stops at either has done most of the arithmetic and none of the question."
+ },
+ {
   "id": "econ-2025-hl-sa-q1-a-for",
   "topicId": "economics-3-5",
   "conceptId": "the-case-for-hosting-a-major-event",
@@ -21135,6 +21539,39 @@
    }
   ],
   "notes": ""
+ },
+ {
+  "id": "econ-2025-hl-seca-q2-a",
+  "topicId": "economics-3-0",
+  "conceptId": "household-percentage-savings-rate",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2025 HL Section A Q2(a)",
+  "questionText": "From the data in the above table, calculate the household percentage savings rate for Quarter 1, 2024. Show all your workings.",
+  "stem": "",
+  "figureKey": "economics-2025-HL-paper-p04-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Workings: Household savings Household total disposable income × 100 1 €6.59 bn X 100 €43.91 bn 1 Answer: 15 %",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Savings over DISPOSABLE INCOME, not over consumption. The table prints all three figures, so the mark is for choosing the right denominator."
+   }
+  ],
+  "notes": "The table gives income, consumption and savings, and only two of the three belong in this ratio."
  },
  {
   "id": "econ-2025-ol-q13-c",
@@ -23523,5 +23960,38 @@
    }
   ],
   "notes": ""
+ },
+ {
+  "id": "econ-2025-ol-seca-q7-i",
+  "topicId": "economics-3-1",
+  "conceptId": "percentage-increase-in-the-over-65-population",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2025 OL Section A Q7(i)",
+  "questionText": "The number of people aged 65 and over has increased by 243,700. Calculate the percentage increase in number of people aged 65 and over from 2014 to 2024. Show all your workings.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "243,700 x 100 = 41.3 % 589,500 1",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The increase is given; the 2014 population is the denominator. Dividing by the 2024 figure instead is the standard error here."
+   }
+  ],
+  "notes": "The question hands over the change but not the base, so the base has to be taken from the table before the division can happen."
  }
 ]

@@ -480,4 +480,44 @@ P.cards.append(card(
     tariff_kind='fixed',
     figure_key='economics-2021-HL-paper-p22-art'))
 
+# ── Worked calculations the scheme prints in full ──────────────────────────
+# Excluded until now as "the response is the worked calculation". That is a
+# description of the answer, not a blocker: the scheme sets out the formula, the
+# substitution and the result, so every step a student is credited for is on the
+# page and traces. Where the figures come off a chart the crop rides with the
+# card, because the arithmetic is unanswerable without it.
+
+P.cards.append(card(
+    'econ-2021-hl-q15-c-ii', 2021, 'higher', 'economics-3-0',
+    'calculating-the-multiplier', '2021 HL Q15(c)(ii)',
+    'Assume that MPM is 0.25 and MPC is 0.65 and MPT is 0.10. Calculate the multiplier. Show '
+    'all your workings.',
+    '8', 8,
+    [point('r-1', as_option(block(FULL, 'MPS = 1 \u2013 0.65 = 0.35', '29 |')), 8,
+           'MPS has to be derived from MPC before the formula can be used, and the scheme shows '
+           'the multiplier written both ways \u2014 over (1-MPC)+MPM+MPT and over MPS+MPM+MPT '
+           '\u2014 because they are the same denominator.')],
+    'The question gives MPM, MPC and MPT but the formula wants MPS, so the first line of the '
+    'answer is a step the question does not ask for.',
+    tariff_kind='fixed'))
+
+# ── Worked calculations the scheme prints in full ──────────────────────────
+# "The response is the worked calculation" describes the answer, not a blocker.
+# The scheme sets out formula, substitution and result, so every step a student
+# is credited for is on the page and traces.
+
+P.cards.append(card(
+    'econ-2021-hl-q16-b-i', 2021, 'higher', 'economics-2-1',
+    'percentage-increase-in-the-minimum-wage', '2021 HL Q16(b)(i)',
+    'Calculate the percentage increase in the minimum wage rate between 2016 and 2021.',
+    '9', 9,
+    [point('r-1', as_option(block(FULL, '10.20 \u22129.15 = 1.05',
+                                  '(ii) Explain one social reason')), 9,
+           'The scheme prints two routes to the same 11.48%: the rise over the base, or the '
+           'ratio of the two rates less 100. Both start from the 2016 rate as the base.')],
+    'Both wage rates are read off the chart. The base is 2016, the earlier year, so dividing by '
+    'the 2021 rate is the usual error.',
+    tariff_kind='fixed',
+    figure_key='economics-2021-HL-paper-p35-i0'))
+
 P.emit()
