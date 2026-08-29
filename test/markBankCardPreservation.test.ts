@@ -65,6 +65,10 @@ const decks = [
    * (reconcile.py) now reads 100.0%: 498 covered + 160 excluded-with-evidence
    * = all 658 asks the 2021-2025 papers print. Nothing removed; all prior ids
    * remain. */
+  /* 2026-08-29 (twelfth wave): economics 341/267 -> 342/267. One card: the YED
+   * necessity/luxury part, carried as ONE row of ⟨6⟩ rather than split 3 and 3,
+   * because the scheme prints one total over two asks and halving it would be
+   * arithmetic rather than a printed split. Coverage 562/658 -> 563/658. */
   /* 2026-08-29 (eleventh wave): economics 335/263 -> 341/267. Ten cards, none
    * removed. Coverage 552/658 -> 562/658, exclusions 106 -> 96. A fourth
    * mis-keyed crop was corrected on the way (the 2025 OL HDI table, catalogued
@@ -139,7 +143,7 @@ const decks = [
    * The -trend suffix on the first is forced: econ-2021-hl-q16-a-i is taken by
    * a card whose citation econ_refs.py corrects to Q16(c)(i), and an id is
    * never renamed because it keys a student's review history. */
-  ['economics:higher', ECON_HIGHER, 341, '7a65d7b66f2f1796d99f94f7fa865aeb9f58649fb0ea524791254984d3ab93c7'],
+  ['economics:higher', ECON_HIGHER, 342, 'a45a1864b40e2cfb7c38a6e7417bca4ea4738becb4f23dce329b899d5c051704'],
   ['economics:ordinary', ECON_ORDINARY, 267, '346c17dbc3a32234b078c272514ee1276f13006894f619a7c8f2b25c38668032'],
   /* 2026-08-23: the two newest subjects had shipped with NO identity baseline
    * at all — found by the ratchet-soundness review, which means every earlier
@@ -168,6 +172,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7280);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7281);
   });
 });

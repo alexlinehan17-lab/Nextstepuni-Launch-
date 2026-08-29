@@ -22918,6 +22918,39 @@
   "notes": "The cycle drawing runs 2000 to 2020, so the two letters sit either side of the 2008 turning point. Ireland’s own history is the giveaway."
  },
  {
+  "id": "econ-2025-hl-seca-q7-a",
+  "topicId": "economics-1-1",
+  "conceptId": "spotting-a-necessity-and-a-luxury-from-yed",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2025 HL Section A Q7(a)",
+  "questionText": "Identify one necessity and one luxury good from the above table, using the Income Elasticity of Demand (YED) data provided. Justify both of your answers.",
+  "stem": "",
+  "figureKey": "economics-2025-HL-paper-p09-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Necessity product – Electricity or Noodles Justify – A necessity product is a product, which consumers need and will continue to buy even when their income changes. The YED value of electricity lies between 0 and 1, indicating that it has income inelastic demand. A percentage change in income will cause a smaller percentage change in demand. For example: YED of +0.1 means that for every 1% change in income, demand for electricity will change by 0.1%. If income rises by 1%, demand will increase by 0.1%. If income falls by 1%, demand will decrease by 0.1%.\" Luxury good – Premium branded clothing Justify – A luxury good is a non-essential product which consumers buy more of when their income increases. The YED value of premium branded clothing is above 1, indicating that it has income elastic demand. A percentage change in income will cause a greater percentage change in demand in the same direction. YED of +4.1 means that for every 1% change in income, demand for premium branded clothing will change by 4.1% in the same direction. If income rises by 1%, demand will increase by 4.1%. If income falls by 1%, demand will decrease by 4.1%.\"",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "The YED VALUE decides it, not the product. Between 0 and 1 means income inelastic, so demand barely moves with income — a necessity. Above 1 means income elastic, so demand moves more than income does — a luxury. Electricity at +0.1 and premium clothing at +4.1 sit either side of that line."
+   }
+  ],
+  "notes": "Noodles carry a NEGATIVE YED of −0.5, which makes them inferior rather than merely a necessity — demand falls as income rises. The scheme accepts them alongside electricity, but the two are inelastic for different reasons."
+ },
+ {
   "id": "econ-2025-ol-q13-c",
   "topicId": "economics-3-1",
   "conceptId": "uses-of-the-apple-tax-money",
