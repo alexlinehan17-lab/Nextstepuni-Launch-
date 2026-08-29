@@ -157,9 +157,11 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
 
   const handleGuideGo = (action: GuideAction) => {
     if (action === 'modules') onGoToModules();
+    else if (action === 'learning-paths') onGoToLearningPaths();
     else if (action === 'launchpad') onGoToInnovationZone();
     else if (action === 'dashboard') onGoToDashboard();
     else if (action === 'study') onGoToStudy?.();
+    else if (action === 'journey') onGoToJourney();
     else if (action.startsWith('tool:')) {
       const toolId = action.slice(5);
       if (onOpenTool) onOpenTool(toolId);
