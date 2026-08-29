@@ -260,4 +260,23 @@ P.cards.append(card(
     'table before the division can happen.',
     tariff_kind='fixed', section='A'))
 
+# ── Tick tables, answered by the scheme's own completed table ──────────────
+# See econ_tick_crop.py: the ✔ is drawn, so extraction keeps it and loses the
+# column. The completed table is bound as a SOLUTION crop, hidden until reveal.
+
+P.cards.append(card(
+    'econ-2025-ol-seca-q8-i-ticks', 2025, 'ordinary', 'economics-2-0',
+    'which-firm-is-a-monopoly', '2025 OL Section A Q8(i)',
+    'Identify, with a tick (\u2714), which one of the following firms exist in a monopoly '
+    'market structure: Ryanair; An Post (mail service for letter post); Vodafone.',
+    '1st @ 8+2nd @ 4', 12,
+    [point('r-1', as_option(block(T, 'Name of Organisation Tick', '(ii) In a monopoly market')), 12,
+           'Read the completed table below. Only An Post\u2019s letter post is ticked: it is '
+           'the sole legal supplier, which is what a monopoly means. Ryanair and Vodafone are '
+           'large and well known but both compete with rivals, and size is not market structure.')],
+    'The trap is reading "monopoly" as "big". Ryanair carries far more passengers than An Post '
+    'carries letters, and it is still not a monopoly.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2025-OL-scheme-p14-q8i-ticks'))
+
 P.emit()

@@ -218,4 +218,29 @@ P.cards.append(card(
          'their most popular products.',
     figure_key='economics-2022-HL-paper-p13-i0'))
 
+# ── Tick tables, answered by the scheme's own completed table ──────────────
+# See econ_tick_crop.py: the ✔ is drawn, not set in the text layer, so
+# extraction keeps the tick and loses the column it sits in — and the column is
+# the answer. The completed table is bound as a SOLUTION crop, hidden until
+# reveal, the way the Maths deck carries a printed model solution.
+
+P.cards.append(card(
+    'econ-2022-hl-seca-q4-a-ticks', 2022, 'higher', 'economics-3-0',
+    'injections-and-leakages-in-the-circular-flow', '2022 HL Section A Q4(a)',
+    'Categorise each of the following as either an injection, or a leakage from the circular '
+    'flow of income: the Irish government increases public sector salaries by 1% in 2023; Irish '
+    'exports increase to record \u20ac160 bn despite the Covid 19 Pandemic; Irish consumers '
+    'saved more than \u20ac10bn in first quarter of 2021.',
+    '3+3+2', 8,
+    [point('r-1', as_option(block(BODY, 'Injection Leakage The Irish government',
+                                  'Answer either (b) or (c)')), 8,
+           'Read the completed table below \u2014 in flat text the three ticks carry no column. '
+           'Government spending and exports are INJECTIONS, money entering the domestic flow; '
+           'saving is a LEAKAGE, income received but not spent. The test is direction of travel, '
+           'not whether the sum is large or welcome.')],
+    'Saving is the one students misplace: it is money that stayed out of the flow, so it leaks '
+    'even though nobody spent it abroad.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2022-HL-scheme-p07-q4a-ticks'))
+
 P.emit()

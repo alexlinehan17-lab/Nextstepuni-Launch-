@@ -115,4 +115,50 @@ P.cards.append(card(
          'growth for 2023: Real GDP 4.7% and Real GNI 0.4%.',
     section='A', tariff_kind='fixed'))
 
+# ── Tick tables, answered by the scheme's own completed table ──────────────
+# See econ_tick_crop.py: the ✔ is drawn, not set in the text layer, so
+# extraction keeps the tick and loses the column it sits in — and the column is
+# the answer. The completed table is bound as a SOLUTION crop, hidden until
+# reveal, the way the Maths deck carries a printed model solution.
+
+P.cards.append(card(
+    'econ-2024-ol-seca-q7-ticks', 2024, 'ordinary', 'economics-0-1',
+    'sorting-positive-and-normative-statements', '2024 OL Section A Q7',
+    'Study the statements below and indicate, by placing a tick (\u2714) in the correct box '
+    'which is a positive statement and which is a normative statement. 1. The introduction of '
+    'the plastic bag levy has led to a decrease in the number of plastic bags being bought by '
+    'consumers when shopping. 2. The government should increase the amount of the old age '
+    'pension to reduce poverty levels.',
+    '1st @ 8+2nd @ 4', 12,
+    [point('r-1', as_option(block(T, 'Statement Positive Normative The introduction of the '
+                                     'plastic bag', '8. The Gini Coefficient')), 12,
+           'Read the completed table below. The levy statement is POSITIVE \u2014 it claims '
+           'something happened, and sales figures could confirm or refute it. The pension '
+           'statement is NORMATIVE: "should" is a value judgement and no data settles it. The '
+           'tariff is eight for the first right and four for the second.')],
+    'Both statements are about government policy, so the subject matter is no guide. Only the '
+    'word "should" separates them.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2024-OL-scheme-p11-q7-ticks'))
+
+P.cards.append(card(
+    'econ-2024-ol-seca-q3-a-ticks', 2024, 'ordinary', 'economics-2-0',
+    'monopolistic-competition-true-or-false', '2024 OL Section A Q3(a)',
+    'Coffee shops in Ireland operate in monopolistic competition. Indicate by means of a tick '
+    '(\u2714) whether you regard each statement below to be true or false. 1. Barriers to entry '
+    'exist in the Irish coffee shop market. 2. The demand curve / average revenue curve for '
+    'coffee in an Irish coffee shop is downward-sloping from left to right.',
+    '1st @ 8+2nd @ 4', 12,
+    [point('r-1', as_option(block(T, 'Statement True False 1. Barriers to entry',
+                                  'OR (b) Competitive advertising')), 12,
+           'Read the completed table below. Statement 1 is FALSE: free entry and exit is what '
+           'defines monopolistic competition, which is why long-run profits are competed away. '
+           'Statement 2 is TRUE: each shop\u2019s product is slightly differentiated, so it '
+           'faces a downward-sloping demand curve rather than the horizontal one of perfect '
+           'competition. Eight for the first right, four for the second.')],
+    'The pair is one idea asked twice: many small firms, free entry, but differentiated products '
+    '\u2014 so no barriers, and a downward-sloping curve all the same.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2024-OL-scheme-p08-q3a-ticks'))
+
 P.emit()

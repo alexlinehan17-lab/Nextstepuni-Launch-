@@ -1467,6 +1467,28 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2022-ol-seca-q7-a-ii-ticks", topicId: "economics-1-5", conceptId: "sorting-fixed-and-variable-costs",
+    section: "A", questionRef: "2022 OL Section A Q7(a)(ii)",
+    questionText: "Indicate by means of a tick (✓) which of the costs in the table below are fixed costs and which are variable costs: Wages €1,000; Raw Materials €1,500; Light & Heat €300; Rent of the premises €750.",
+    tariffModel: {"kind":"fixed","notation":"4+4+1+1","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Fixed Cost Variable Cost Wages €1,000 ✓ Raw Materials €1,500 ✓ Light & Heat €300 ✓ Rent of the premises €750 ✓", marks: 10, contextNote: "Read the completed table below. Only the rent is FIXED — it is owed whether the bakery bakes or not. Wages, raw materials and light & heat all move with output, so all three are variable. The tariff is uneven, ⟨4+4+1+1⟩: the first two right are worth four each and the last two one each.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2022-OL-scheme-p09-q7aii-ticks",
+          "src": "/exam-figures/economics/markbank/economics-2022-OL-scheme-p09-q7aii-ticks.png",
+          "srcHash": "55d680ef3a854b5845c5c97127e44a15",
+          "alt": "The marking scheme's completed answer table for 2022 OL Section A Q7(a)(ii), as the State Examinations Commission set it. A green header row reads Fixed Cost | Variable Cost. Four rows follow, each carrying a single black tick: Wages €1,000 ticked under Variable Cost; Raw Materials €1,500 ticked under Variable Cost; Light & Heat €300 ticked under Variable Cost; Rent of the premises €750 ticked under Fixed Cost.",
+          "attribution": "SEC Leaving Certificate Economics 2022 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2023, level: "ordinary",
     paperFileid: "LC034GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2023 Ordinary Level — © State Examinations Commission.",
@@ -2801,6 +2823,50 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2024-ol-seca-q7-ticks", topicId: "economics-0-1", conceptId: "sorting-positive-and-normative-statements",
+    section: "A", questionRef: "2024 OL Section A Q7",
+    questionText: "Study the statements below and indicate, by placing a tick (✔) in the correct box which is a positive statement and which is a normative statement. 1. The introduction of the plastic bag levy has led to a decrease in the number of plastic bags being bought by consumers when shopping. 2. The government should increase the amount of the old age pension to reduce poverty levels.",
+    tariffModel: {"kind":"fixed","notation":"1st @ 8+2nd @ 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Statement Positive Normative The introduction of the plastic bag levy has led to a decrease in the number of plastic bags being bought ✔ by consumers when shopping. The government should increase the amount of the ✔ old age pension to reduce poverty levels.", marks: 12, contextNote: "Read the completed table below. The levy statement is POSITIVE — it claims something happened, and sales figures could confirm or refute it. The pension statement is NORMATIVE: \"should\" is a value judgement and no data settles it. The tariff is eight for the first right and four for the second.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2024-OL-scheme-p11-q7-ticks",
+          "src": "/exam-figures/economics/markbank/economics-2024-OL-scheme-p11-q7-ticks.png",
+          "srcHash": "74e3228d4155c6e133974c4439e5349c",
+          "alt": "The marking scheme's completed answer table for 2024 OL Section A Q7, as the State Examinations Commission set it. A green header row reads Statement | Positive | Normative. Two rows follow, each carrying a single black tick: 'The introduction of the plastic bag levy has led to a decrease in the number of plastic bags being bought by consumers when shopping.' ticked under Positive; 'The government should increase the amount of the old age pension to reduce poverty levels.' ticked under Normative.",
+          "attribution": "SEC Leaving Certificate Economics 2024 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2024-ol-seca-q3-a-ticks", topicId: "economics-2-0", conceptId: "monopolistic-competition-true-or-false",
+    section: "A", questionRef: "2024 OL Section A Q3(a)",
+    questionText: "Coffee shops in Ireland operate in monopolistic competition. Indicate by means of a tick (✔) whether you regard each statement below to be true or false. 1. Barriers to entry exist in the Irish coffee shop market. 2. The demand curve / average revenue curve for coffee in an Irish coffee shop is downward-sloping from left to right.",
+    tariffModel: {"kind":"fixed","notation":"1st @ 8+2nd @ 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Statement True False 1. Barriers to entry exist in the Irish coffee shop market. ✔ The demand curve / average revenue curve for coffee in an ✔ 2. Irish coffee shop is downward-sloping from left to right.", marks: 12, contextNote: "Read the completed table below. Statement 1 is FALSE: free entry and exit is what defines monopolistic competition, which is why long-run profits are competed away. Statement 2 is TRUE: each shop’s product is slightly differentiated, so it faces a downward-sloping demand curve rather than the horizontal one of perfect competition. Eight for the first right, four for the second.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2024-OL-scheme-p08-q3a-ticks",
+          "src": "/exam-figures/economics/markbank/economics-2024-OL-scheme-p08-q3a-ticks.png",
+          "srcHash": "e82d3476ac57e4f75726dd2317d9451e",
+          "alt": "The marking scheme's completed answer table for 2024 OL Section A Q3(a), as the State Examinations Commission set it. A pale green header row reads Statement | True | False. Two numbered rows follow, each carrying a single black tick: statement 1, 'Barriers to entry exist in the Irish coffee shop market.', ticked under False; statement 2, 'The demand curve / average revenue curve for coffee in an Irish coffee shop is downward-sloping from left to right.', ticked under True.",
+          "attribution": "SEC Leaving Certificate Economics 2024 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2025, level: "ordinary",
     paperFileid: "LC034GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2025 Ordinary Level — © State Examinations Commission.",
@@ -3619,5 +3685,27 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "243,700 x 100 = 41.3 % 589,500 1", marks: 4, contextNote: "The increase is given; the 2014 population is the denominator. Dividing by the 2024 figure instead is the standard error here.", openList: true },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2025-ol-seca-q8-i-ticks", topicId: "economics-2-0", conceptId: "which-firm-is-a-monopoly",
+    section: "A", questionRef: "2025 OL Section A Q8(i)",
+    questionText: "Identify, with a tick (✔), which one of the following firms exist in a monopoly market structure: Ryanair; An Post (mail service for letter post); Vodafone.",
+    tariffModel: {"kind":"fixed","notation":"1st @ 8+2nd @ 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Name of Organisation Tick (✔) which is a Monopoly structure Ryanair An Post (mail service for letter post) ✔ Vodafone", marks: 12, contextNote: "Read the completed table below. Only An Post’s letter post is ticked: it is the sole legal supplier, which is what a monopoly means. Ryanair and Vodafone are large and well known but both compete with rivals, and size is not market structure.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2025-OL-scheme-p14-q8i-ticks",
+          "src": "/exam-figures/economics/markbank/economics-2025-OL-scheme-p14-q8i-ticks.png",
+          "srcHash": "3b19f99dfd15444cd1a9b4d86a0f679e",
+          "alt": "The marking scheme's completed answer table for 2025 OL Section A Q8(i), as the State Examinations Commission set it. The header row reads Name of Organisation | Tick which is a Monopoly structure. Three rows follow: Ryanair, with an empty tick cell; An Post (mail service for letter post), carrying a single black tick; and Vodafone, with an empty tick cell.",
+          "attribution": "SEC Leaving Certificate Economics 2025 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
   } as SecCard,
 ];

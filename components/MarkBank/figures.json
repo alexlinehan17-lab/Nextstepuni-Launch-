@@ -33098,5 +33098,65 @@
   "year": 2023,
   "level": "higher",
   "attribution": "SEC Leaving Certificate Economics 2023 Higher Level — © State Examinations Commission"
+ },
+ "economics-2022-HL-scheme-p07-q4a-ticks": {
+  "src": "/exam-figures/economics/markbank/economics-2022-HL-scheme-p07-q4a-ticks.png",
+  "md5": "253a10cbfa868066cb2ec866c58c3776",
+  "alt": "The marking scheme's completed answer table for 2022 HL Section A Q4(a), as the State Examinations Commission set it. A green header row reads Injection | Leakage. Three rows follow, each carrying a single black tick: 'The Irish government increases public sector salaries by 1% in 2023.' ticked under Injection; 'Irish exports increase to record €160 bn despite the Covid 19 Pandemic.' ticked under Injection; 'Irish consumers saved more than €10bn in first quarter of 2021.' ticked under Leakage.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Section A Q4(a)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2022 Higher Level — © State Examinations Commission"
+ },
+ "economics-2024-OL-scheme-p11-q7-ticks": {
+  "src": "/exam-figures/economics/markbank/economics-2024-OL-scheme-p11-q7-ticks.png",
+  "md5": "74e3228d4155c6e133974c4439e5349c",
+  "alt": "The marking scheme's completed answer table for 2024 OL Section A Q7, as the State Examinations Commission set it. A green header row reads Statement | Positive | Normative. Two rows follow, each carrying a single black tick: 'The introduction of the plastic bag levy has led to a decrease in the number of plastic bags being bought by consumers when shopping.' ticked under Positive; 'The government should increase the amount of the old age pension to reduce poverty levels.' ticked under Normative.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Section A Q7",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2024-OL-scheme-p08-q3a-ticks": {
+  "src": "/exam-figures/economics/markbank/economics-2024-OL-scheme-p08-q3a-ticks.png",
+  "md5": "e82d3476ac57e4f75726dd2317d9451e",
+  "alt": "The marking scheme's completed answer table for 2024 OL Section A Q3(a), as the State Examinations Commission set it. A pale green header row reads Statement | True | False. Two numbered rows follow, each carrying a single black tick: statement 1, 'Barriers to entry exist in the Irish coffee shop market.', ticked under False; statement 2, 'The demand curve / average revenue curve for coffee in an Irish coffee shop is downward-sloping from left to right.', ticked under True.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Section A Q3(a)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2025-OL-scheme-p14-q8i-ticks": {
+  "src": "/exam-figures/economics/markbank/economics-2025-OL-scheme-p14-q8i-ticks.png",
+  "md5": "3b19f99dfd15444cd1a9b4d86a0f679e",
+  "alt": "The marking scheme's completed answer table for 2025 OL Section A Q8(i), as the State Examinations Commission set it. The header row reads Name of Organisation | Tick which is a Monopoly structure. Three rows follow: Ryanair, with an empty tick cell; An Post (mail service for letter post), carrying a single black tick; and Vodafone, with an empty tick cell.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Section A Q8(i)",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2022-OL-scheme-p09-q7aii-ticks": {
+  "src": "/exam-figures/economics/markbank/economics-2022-OL-scheme-p09-q7aii-ticks.png",
+  "md5": "55d680ef3a854b5845c5c97127e44a15",
+  "alt": "The marking scheme's completed answer table for 2022 OL Section A Q7(a)(ii), as the State Examinations Commission set it. A green header row reads Fixed Cost | Variable Cost. Four rows follow, each carrying a single black tick: Wages €1,000 ticked under Variable Cost; Raw Materials €1,500 ticked under Variable Cost; Light & Heat €300 ticked under Variable Cost; Rent of the premises €750 ticked under Fixed Cost.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Section A Q7(a)(ii)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2022 Ordinary Level — © State Examinations Commission"
  }
 }

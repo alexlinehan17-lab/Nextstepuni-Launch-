@@ -6575,6 +6575,39 @@
   "notes": ""
  },
  {
+  "id": "econ-2022-hl-seca-q4-a-ticks",
+  "topicId": "economics-3-0",
+  "conceptId": "injections-and-leakages-in-the-circular-flow",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q4(a)",
+  "questionText": "Categorise each of the following as either an injection, or a leakage from the circular flow of income: the Irish government increases public sector salaries by 1% in 2023; Irish exports increase to record €160 bn despite the Covid 19 Pandemic; Irish consumers saved more than €10bn in first quarter of 2021.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-scheme-p07-q4a-ticks",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3+3+2",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Injection Leakage The Irish government increases public ✔ sector salaries by 1% in 2023. Irish exports increase to record €160 bn ✔ despite the Covid 19 Pandemic. Irish consumers saved more than ✔ €10bn in first quarter of 2021.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Read the completed table below — in flat text the three ticks carry no column. Government spending and exports are INJECTIONS, money entering the domestic flow; saving is a LEAKAGE, income received but not spent. The test is direction of travel, not whether the sum is large or welcome."
+   }
+  ],
+  "notes": "Saving is the one students misplace: it is money that stayed out of the flow, so it leaks even though nobody spent it abroad."
+ },
+ {
   "id": "econ-2022-ol-q11-a-ii",
   "topicId": "economics-2-0",
   "conceptId": "advantages-of-many-firms-for-consumers",
@@ -8792,6 +8825,39 @@
    }
   ],
   "notes": "Both substitutes are phones and both complements are accessories, which is the test: a substitute satisfies the same want, a complement is used with it."
+ },
+ {
+  "id": "econ-2022-ol-seca-q7-a-ii-ticks",
+  "topicId": "economics-1-5",
+  "conceptId": "sorting-fixed-and-variable-costs",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 OL Section A Q7(a)(ii)",
+  "questionText": "Indicate by means of a tick (✓) which of the costs in the table below are fixed costs and which are variable costs: Wages €1,000; Raw Materials €1,500; Light & Heat €300; Rent of the premises €750.",
+  "stem": "",
+  "figureKey": "economics-2022-OL-scheme-p09-q7aii-ticks",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4+4+1+1",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Fixed Cost Variable Cost Wages €1,000 ✓ Raw Materials €1,500 ✓ Light & Heat €300 ✓ Rent of the premises €750 ✓",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Read the completed table below. Only the rent is FIXED — it is owed whether the bakery bakes or not. Wages, raw materials and light & heat all move with output, so all three are variable. The tariff is uneven, ⟨4+4+1+1⟩: the first two right are worth four each and the last two one each."
+   }
+  ],
+  "notes": "Three of the four are variable, so a student splitting them evenly gets one wrong before thinking about any of them."
  },
  {
   "id": "econ-2023-hl-q11-a-ii",
@@ -18590,6 +18656,72 @@
   "notes": "The scheme pays the four blanks in paper order: 1st @ 4, 2nd @ 4, 3rd @ 2, 4th @ 2."
  },
  {
+  "id": "econ-2024-ol-seca-q7-ticks",
+  "topicId": "economics-0-1",
+  "conceptId": "sorting-positive-and-normative-statements",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2024 OL Section A Q7",
+  "questionText": "Study the statements below and indicate, by placing a tick (✔) in the correct box which is a positive statement and which is a normative statement. 1. The introduction of the plastic bag levy has led to a decrease in the number of plastic bags being bought by consumers when shopping. 2. The government should increase the amount of the old age pension to reduce poverty levels.",
+  "stem": "",
+  "figureKey": "economics-2024-OL-scheme-p11-q7-ticks",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1st @ 8+2nd @ 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Statement Positive Normative The introduction of the plastic bag levy has led to a decrease in the number of plastic bags being bought ✔ by consumers when shopping. The government should increase the amount of the ✔ old age pension to reduce poverty levels.",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Read the completed table below. The levy statement is POSITIVE — it claims something happened, and sales figures could confirm or refute it. The pension statement is NORMATIVE: \"should\" is a value judgement and no data settles it. The tariff is eight for the first right and four for the second."
+   }
+  ],
+  "notes": "Both statements are about government policy, so the subject matter is no guide. Only the word \"should\" separates them."
+ },
+ {
+  "id": "econ-2024-ol-seca-q3-a-ticks",
+  "topicId": "economics-2-0",
+  "conceptId": "monopolistic-competition-true-or-false",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2024 OL Section A Q3(a)",
+  "questionText": "Coffee shops in Ireland operate in monopolistic competition. Indicate by means of a tick (✔) whether you regard each statement below to be true or false. 1. Barriers to entry exist in the Irish coffee shop market. 2. The demand curve / average revenue curve for coffee in an Irish coffee shop is downward-sloping from left to right.",
+  "stem": "",
+  "figureKey": "economics-2024-OL-scheme-p08-q3a-ticks",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1st @ 8+2nd @ 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Statement True False 1. Barriers to entry exist in the Irish coffee shop market. ✔ The demand curve / average revenue curve for coffee in an ✔ 2. Irish coffee shop is downward-sloping from left to right.",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Read the completed table below. Statement 1 is FALSE: free entry and exit is what defines monopolistic competition, which is why long-run profits are competed away. Statement 2 is TRUE: each shop’s product is slightly differentiated, so it faces a downward-sloping demand curve rather than the horizontal one of perfect competition. Eight for the first right, four for the second."
+   }
+  ],
+  "notes": "The pair is one idea asked twice: many small firms, free entry, but differentiated products — so no barriers, and a downward-sloping curve all the same."
+ },
+ {
   "id": "econ-2025-hl-q11-a-ii",
   "topicId": "economics-2-0",
   "conceptId": "effects-of-new-market-entrant",
@@ -24257,5 +24389,38 @@
    }
   ],
   "notes": "The question hands over the change but not the base, so the base has to be taken from the table before the division can happen."
+ },
+ {
+  "id": "econ-2025-ol-seca-q8-i-ticks",
+  "topicId": "economics-2-0",
+  "conceptId": "which-firm-is-a-monopoly",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2025 OL Section A Q8(i)",
+  "questionText": "Identify, with a tick (✔), which one of the following firms exist in a monopoly market structure: Ryanair; An Post (mail service for letter post); Vodafone.",
+  "stem": "",
+  "figureKey": "economics-2025-OL-scheme-p14-q8i-ticks",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1st @ 8+2nd @ 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Name of Organisation Tick (✔) which is a Monopoly structure Ryanair An Post (mail service for letter post) ✔ Vodafone",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Read the completed table below. Only An Post’s letter post is ticked: it is the sole legal supplier, which is what a monopoly means. Ryanair and Vodafone are large and well known but both compete with rivals, and size is not market structure."
+   }
+  ],
+  "notes": "The trap is reading \"monopoly\" as \"big\". Ryanair carries far more passengers than An Post carries letters, and it is still not a monopoly."
  }
 ]
