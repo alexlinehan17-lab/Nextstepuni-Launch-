@@ -535,11 +535,6 @@
   "evidence": "Scheme p27: '⟨12⟩ ⟨5 @ 1⟩ €23.4bn + €9.63bn + €3.91bn + €3.98bn + €3.30bn = €44.22 billion (-1 for omission of bn and -1 for omission of €)' then '⟨8⟩ ⟨3 @ 1⟩ €9.63bn/€44.22bn × 100 = 21.78%'."
  },
  {
-  "ref": "2024 OL Q14(b)(ii)",
-  "reason": "Already recorded in econ_excluded.py: answered by ticking direct or indirect, with one ⟨7⟩ tariff over tick plus explanation and no stated split.",
-  "evidence": "Scheme p29: '(ii) Indicate with a tick (✔) below whether VAT is an example of a direct tax or an indirect tax. Explain your choice. ⟨7⟩ Direct tax / Indirect tax ✔ Explanation: VAT is a tax on spending / on goods and services. It is placed on the consumer / user and is collected through a third party.'"
- },
- {
   "ref": "2024 OL Q14(c)(i)",
   "reason": "Already recorded in econ_excluded.py: the response is the worked balance-of-trade calculation.",
   "evidence": "Scheme p31: '⟨16⟩ ⟨4 @ 3⟩ Workings: Balance of trade: Total exports – Total imports = €165.7bn – €103.7bn = €62bn (-1m for omission of € or bn) … Surplus ✔ … The Balance of Trade is a surplus because the exports are greater than the imports. ⟨4⟩'"

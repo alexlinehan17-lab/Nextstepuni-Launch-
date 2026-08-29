@@ -18031,6 +18031,39 @@
   "notes": "The bars barely move, and the scheme rewards saying so precisely: \"broadly stable or slightly increased\" with 4.5 and 4.3 quoted is a better answer than calling it a rise."
  },
  {
+  "id": "econ-2024-ol-q14-b-ii",
+  "topicId": "economics-3-1",
+  "conceptId": "why-vat-is-an-indirect-tax",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q14(b)(ii)",
+  "questionText": "Indicate with a tick (✔) below whether VAT is an example of a direct tax or an indirect tax. Explain your choice.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "7",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Direct tax Indirect tax ✔ Explanation: VAT is a tax on spending / on goods and services. It is placed on the consumer / user and is collected through a third party.",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "The choice and the reason together, 7 marks; the scheme prints no split. What makes it indirect is WHO pays it to the state — the consumer bears it but a third party collects and remits it."
+   }
+  ],
+  "notes": "A direct tax is paid to the Revenue by the person who bears it; VAT is not, which is the whole distinction. Naming the box without that reason earns the tick and little else."
+ },
+ {
   "id": "econ-2024-ol-sa-q1-i",
   "topicId": "economics-0-2",
   "conceptId": "oceans-as-an-economic-resource",

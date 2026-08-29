@@ -458,4 +458,27 @@ P.cards.append(card(
     figure_key='economics-2024-OL-paper-p15-i0'))
 
 
+# ── A tick answered in prose ───────────────────────────────────────────────
+# Excluded as "answered by ticking direct or indirect". The tick is only half
+# the ask: the paper also says "Explain your choice", and the scheme prints
+# that explanation as ordinary prose. Taking the scheme's run from the column
+# headings through the explanation keeps the tick's position visible — the ✔
+# sits after "Indirect tax" — so the card carries the choice AND its reason
+# without either being written here.
+P.cards.append(card(
+    'econ-2024-ol-q14-b-ii', 2024, 'ordinary', 'economics-3-1',
+    'why-vat-is-an-indirect-tax', '2024 OL Q14(b)(ii)',
+    'Indicate with a tick (\u2714) below whether VAT is an example of a direct tax or an '
+    'indirect tax. Explain your choice.',
+    '7', 7,
+    [point('r-1', as_option(block(BODY, 'Direct tax Indirect tax \u2714 Explanation: VAT is a '
+                                        'tax on spending', '29 |')), 7,
+           'The choice and the reason together, 7 marks; the scheme prints no split. What makes '
+           'it indirect is WHO pays it to the state \u2014 the consumer bears it but a third '
+           'party collects and remits it.')],
+    'A direct tax is paid to the Revenue by the person who bears it; VAT is not, which is the '
+    'whole distinction. Naming the box without that reason earns the tick and little else.',
+    tariff_kind='fixed'))
+
+
 emit(cards + P.cards)
