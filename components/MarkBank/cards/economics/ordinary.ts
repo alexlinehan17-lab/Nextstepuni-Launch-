@@ -2596,6 +2596,27 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC034GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2024-ol-q12-c-i", topicId: "economics-3-2", conceptId: "overall-trend-in-irish-unemployment",
+    section: "B", questionRef: "2024 OL Q12(c)(i)",
+    questionText: "Identify the overall trend in Irish unemployment using figures from the graph above.",
+    tariffModel: {"kind":"fixed","notation":"6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Based on the above data, the rate of unemployment in Ireland remained broadly stable or slightly increased in 2022. The highest recorded rate peaked at just 4.5% and the lowest rate at 4.3%. Unemployment increased by 0.1%.", marks: 6, contextNote: "One statement of the trend, 6 marks. The scheme wants the direction AND the figures that show it — the peak, the floor and the movement between them.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2024-OL-paper-p15-i0",
+          "src": "/exam-figures/economics/markbank/economics-2024-OL-paper-p15-i0.png",
+          "srcHash": "6359e384a23d7a6dc7c634c78e3efe1e",
+          "alt": "A column chart headed 'Seasonally Adjusted Monthly Unemployment Rate', y-axis %, x-axis 'Months' from JUL-22 to JAN-23, each bar labelled: 4.3, 4.4, 4.4, 4.5, 4.5, 4.4, 4.4. Source 'Adapted from the CSO'.",
+          "attribution": "SEC Leaving Certificate Economics 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2024 Ordinary Level — © State Examinations Commission.",
     id: "econ-2024-ol-sa-q1-i", topicId: "economics-0-2", conceptId: "oceans-as-an-economic-resource",
     section: "A", questionRef: "2024 OL Section A Q1(i)",
     stem: "UN Sustainable Development Goal 14 is to conserve and sustainably use the oceans, seas and marine resources.",

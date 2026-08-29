@@ -437,4 +437,25 @@ P.cards.append(card(
          'to −1.71.',
     tariff_kind='fixed'))
 
+# ── The part whose question IS a chart ─────────────────────────────────────
+# Excluded until now as "answered by reading the unemployment chart printed
+# beside it". The crop is catalogued with verified alt text and an md5 the
+# build re-checks, so binding it gives the student what the candidate had, and
+# the scheme's response is ordinary prose quoting figures off the bars.
+P.cards.append(card(
+    'econ-2024-ol-q12-c-i', 2024, 'ordinary', 'economics-3-2',
+    'overall-trend-in-irish-unemployment', '2024 OL Q12(c)(i)',
+    'Identify the overall trend in Irish unemployment using figures from the graph above.',
+    '6', 6,
+    [point('r-1', as_option(block(BODY,
+        'Based on the above data, the rate of unemployment in Ireland remained broadly stable',
+        'Outline one')), 6,
+        'One statement of the trend, 6 marks. The scheme wants the direction AND the figures '
+        'that show it \u2014 the peak, the floor and the movement between them.')],
+    'The bars barely move, and the scheme rewards saying so precisely: "broadly stable or '
+    'slightly increased" with 4.5 and 4.3 quoted is a better answer than calling it a rise.',
+    tariff_kind='fixed',
+    figure_key='economics-2024-OL-paper-p15-i0'))
+
+
 emit(cards + P.cards)
