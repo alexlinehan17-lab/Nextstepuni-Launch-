@@ -6,8 +6,9 @@
  * "?" in the home sidebar (or the ? key). One sleek card per page: a real
  * screenshot in a framed mock, what the page is, up to three things you do
  * there, and a "Take me there" deep link. Arrows + ←/→ on desktop, swipe on
- * touch, dots throughout. Images live in /assets/guide/<id>.jpg and degrade
- * gracefully to a monogram tile if one is missing.
+ * touch, dots throughout. Every image in /assets/guide/<id>.jpg is captured
+ * from the running app. A missing asset shows a plain notice, never simulated
+ * product UI.
  */
 
 import React, { useCallback, useEffect, useRef, useState } from 'react';
@@ -18,12 +19,14 @@ import { useModal } from '../hooks/useModal';
 
 export type GuideAction =
   | 'modules'
+  | 'learning-paths'
   | 'launchpad'
   | 'tool:paper-trail'
   | 'tool:mark-bank'
   | 'tool:points-passport'
   | 'dashboard'
-  | 'study';
+  | 'study'
+  | 'journey';
 
 interface GuideCard {
   id: string;
@@ -39,34 +42,58 @@ const CARDS: GuideCard[] = [
     id: 'home',
     chip: 'Start here',
     title: 'Home — your base camp',
-    what: 'Everything starts here: today’s work, your learning paths and a clear route into study, progress and exam tools.',
+    what: 'Your real home screen is the map: continue where you left off, or move straight into learning, tools, progress and your journey.',
     bullets: [
-      'Today’s focus keeps the next useful action visible.',
-      'Learning paths show where to continue without searching.',
-      'The navigation takes you to Study, My Progress and Launchpad directly.',
+      'Pick up where you left off without finding the page again.',
+      'Five clear destinations keep the full app easy to scan.',
+      'The sidebar keeps Study, My Progress and Year Plans one tap away.',
     ],
   },
   {
     id: 'modules',
     chip: 'Learn',
     title: 'Modules & the Library',
-    what: 'Interactive lessons that teach you how to learn — memory, focus, exam craft — unlocking section by section as you work through them.',
+    what: 'Five learning worlds cover mindset, growth, learning science, subject skills and exam performance — all at your own pace.',
     bullets: [
-      'Pick a category, then a module from its library grid.',
-      'Each section unlocks the next — no skimming, real reps.',
+      'Continue the exact section you last reached.',
+      'Move between the five worlds from one visual library.',
       'Every claim inside is backed by cited research.',
     ],
     go: { label: 'Browse the modules', action: 'modules' },
   },
   {
+    id: 'learning-paths',
+    chip: 'Guided learning',
+    title: 'Learning Paths',
+    what: 'Curated routes group the right modules into a clear sequence when you want direction instead of choosing lesson by lesson.',
+    bullets: [
+      'Start with foundations or choose a focused exam sprint.',
+      'Continue from your next unfinished module in one tap.',
+      'Each path shows its real progress and remaining modules.',
+    ],
+    go: { label: 'Explore Learning Paths', action: 'learning-paths' },
+  },
+  {
+    id: 'study',
+    chip: 'Daily habit',
+    title: 'Study Session & Focus',
+    what: 'Choose the subject, session type and length, then work inside a calm full-screen timer with a useful learning prompt.',
+    bullets: [
+      'The full-screen timer removes everything except the work.',
+      'Strategy prompts turn techniques from the modules into action.',
+      'Finished sessions feed your history, streak and Journey Points.',
+    ],
+    go: { label: 'Start a session', action: 'study' },
+  },
+  {
     id: 'launchpad',
     chip: 'Exam tools',
     title: 'The Launchpad',
-    what: 'The tool shelf: everything built for the exams themselves — past papers, marking practice, points planning, orals, and more.',
+    what: 'The complete tool shelf for understanding, practising, planning and tracking — including guidance when you are not sure where to begin.',
     bullets: [
-      'Filter by Understand, Plan or Track.',
-      'Tools remember your subjects once your profile is set.',
-      'Mark Bank, Paper Trail and War Room turn exam evidence into practice.',
+      'Filter the shelf by Understand, Practice, Plan or Track.',
+      'Get a recommendation from two quick questions.',
+      'Your subjects and goals carry into the tools automatically.',
     ],
     go: { label: 'Open the Launchpad', action: 'launchpad' },
   },
@@ -98,137 +125,63 @@ const CARDS: GuideCard[] = [
     id: 'progress',
     chip: 'Track',
     title: 'My Progress',
-    what: 'Your study, confidence, mock results and milestones come together in one dashboard so you can see what is changing over time.',
+    what: 'Your study rhythm, confidence, practice evidence and programme milestones come together in one real learning record.',
     bullets: [
-      'Overview shows study volume, confidence and mock trajectory.',
-      'Insights explain subject trends in plain language.',
-      'Milestones keeps rank, achievements and weekly goals together.',
+      'Switch between week, month and year views.',
+      'Filter the dashboard to understand one subject at a time.',
+      'Insights turn charts into clear next moves.',
     ],
     go: { label: 'See your dashboard', action: 'dashboard' },
   },
   {
-    id: 'future',
+    id: 'points-passport',
     chip: 'Plan',
-    title: 'Points Passport & your future',
-    what: 'The CAO side of the house: track mock results, run safe/target/stretch scenarios, and explore the courses and careers that fit you.',
+    title: 'Points Passport',
+    what: 'Turn your current and target grades into a practical points plan, with trends, scenarios and the most valuable next grade moves.',
     bullets: [
-      'Points Passport shows your trend and the cheapest grade jumps.',
-      'Future Finder matches your interests to real CAO courses.',
-      'College Compass keeps every deadline in order.',
+      'See your current points, target and remaining gap immediately.',
+      'Track mocks and compare realistic grade scenarios.',
+      'Best Moves highlights where another grade is worth the most.',
     ],
     go: { label: 'Open Points Passport', action: 'tool:points-passport' },
   },
   {
-    id: 'study',
-    chip: 'Daily habit',
-    title: 'Study Session & Focus',
-    what: 'Where the daily work happens: choose what you are studying, set a focused block and let the full-screen timer keep the session clear and calm.',
+    id: 'journey',
+    chip: 'Build your world',
+    title: 'My Journey',
+    what: 'Your effort becomes a world you can see: studying and completing modules earns Journey Points that build an island of your own.',
     bullets: [
-      'The subject-coloured screen shows exactly how much time is left.',
-      'Pause or resume from the centre without leaving your session.',
-      'Finished sessions feed into your study history, progress and streak.',
+      'Your island grows from the progress you make elsewhere in the app.',
+      'Journey Points unlock additions in the build shop.',
+      'Your north-star goal stays visible at the heart of the world.',
     ],
-    go: { label: 'Start a session', action: 'study' },
+    go: { label: 'Visit My Journey', action: 'journey' },
   },
 ];
 
 const INK = '#1a1a1a';
 const ACCENT = '#F26B1F';
 
-/** A compact recreation of the current full-screen study timer. */
-const StudyTimerPreview: React.FC = () => (
-  <div
-    className="relative w-full aspect-[16/10] overflow-hidden rounded-xl border-2"
-    style={{ borderColor: INK, backgroundColor: '#d7f0e6' }}
-    role="img"
-    aria-label="Study session timer showing time remaining on a layered subject-coloured background"
-  >
-    <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
-      <div className="absolute left-1/2 top-[63%] h-[150%] w-[130%] -translate-x-1/2 rounded-[50%] bg-[#42c2aa]" />
-      <div className="absolute left-1/2 top-[54%] h-[172%] w-[154%] -translate-x-1/2 rounded-[50%] bg-[#69ceb9]" />
-      <div className="absolute left-1/2 top-[45%] h-[194%] w-[178%] -translate-x-1/2 rounded-[50%] bg-[#91dac9]" />
-      <div className="absolute left-1/2 top-[36%] h-[216%] w-[202%] -translate-x-1/2 rounded-[50%] bg-[#b9e6d9]" />
-    </div>
-
-    <div className="absolute inset-x-0 top-0 z-10 flex items-center justify-between px-4 pt-3 text-[9px] font-semibold text-[#292522] sm:px-5 sm:pt-4 sm:text-[10px]">
-      <span className="flex h-6 w-6 items-center justify-center rounded-full bg-black/5" aria-hidden="true">×</span>
-      <span className="inline-flex items-center gap-1.5">
-        <span className="h-1.5 w-1.5 rounded-full bg-[#20a88e]" />
-        Focus
-      </span>
-    </div>
-
-    <div className="absolute inset-x-0 top-[22%] z-10 text-center text-[#1A1A1A]">
-      <p className="text-[15px] font-bold leading-none sm:text-[18px]" style={{ fontFamily: "'Source Serif 4', serif" }}>Geography</p>
-      <p className="mt-1 text-[7px] font-bold uppercase tracking-[0.16em] sm:text-[8px]">Focus · 25 min</p>
-    </div>
-
-    <div className="absolute inset-0 z-10 flex flex-col items-center justify-center pt-6 text-[#1A1A1A]">
-      <p className="font-mono text-[31px] font-bold tabular-nums tracking-[-0.06em] sm:text-[39px]">18:42</p>
-      <p className="mt-0.5 text-[7px] font-bold uppercase tracking-[0.16em] sm:text-[8px]">Time remaining</p>
-      <span className="mt-2.5 flex h-9 w-9 items-center justify-center rounded-full bg-[#383431] shadow-lg sm:h-11 sm:w-11" aria-hidden="true">
-        <span className="mr-1 h-3.5 w-1 rounded-sm bg-white sm:h-4" />
-        <span className="h-3.5 w-1 rounded-sm bg-white sm:h-4" />
-      </span>
-    </div>
-
-    <div className="absolute inset-x-4 bottom-3 z-10 sm:inset-x-5 sm:bottom-4" aria-hidden="true">
-      <div className="relative h-0.5 rounded-full bg-black/15">
-        <div className="h-full w-[26%] rounded-full bg-black/55" />
-        <span className="absolute left-[26%] top-1/2 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#1A1A1A]" />
-      </div>
-      <div className="mt-1.5 flex justify-between text-[7px] font-medium tabular-nums text-black/65 sm:text-[8px]">
-        <span>06:18 elapsed</span>
-        <span>18:42 remaining</span>
-      </div>
-    </div>
-  </div>
-);
-
-const HomePreview: React.FC = () => (
-  <div className="w-full aspect-[16/10] overflow-hidden rounded-xl border-2 bg-[#FAFBF6] p-4" style={{ borderColor: INK }} role="img" aria-label="Current Home page with today's focus, learning paths and progress shortcuts">
-    <div className="flex items-center justify-between border-b border-[#DDD8D2] pb-2">
-      <div><p className="text-[7px] font-bold uppercase tracking-[0.18em] text-[#9E9186]">Today</p><p className="font-serif text-sm font-semibold text-[#1A1A1A]">Good afternoon</p></div>
-      <span className="rounded-full border border-[#D0CDC8] px-2 py-1 text-[7px] font-bold text-[#C94F10]">My Progress</span>
-    </div>
-    <div className="mt-3 grid grid-cols-[1.25fr_0.75fr] gap-2">
-      <div className="rounded-xl border border-[#D0CDC8] bg-white p-3">
-        <p className="text-[7px] font-bold uppercase tracking-[0.14em] text-[#9E9186]">Today’s focus</p>
-        <p className="mt-1 font-serif text-[13px] font-semibold text-[#1A1A1A]">Keep the streak moving.</p>
-        <div className="mt-3 h-2 rounded-full bg-[#FDE8DB]"><div className="h-full w-2/3 rounded-full bg-[#F26B1F]" /></div>
-      </div>
-      <div className="rounded-xl border-2 border-[#1A1A1A] bg-[#FDEEDF] p-3 shadow-[2px_2px_0_#1A1A1A]">
-        <p className="text-[7px] font-bold uppercase tracking-[0.14em] text-[#8C3A0E]">Study now</p>
-        <p className="mt-1 text-[9px] font-semibold text-[#1A1A1A]">Start a focused session</p>
-      </div>
-    </div>
-    <p className="mt-3 text-[7px] font-bold uppercase tracking-[0.14em] text-[#9E9186]">Learning paths</p>
-    <div className="mt-1.5 grid grid-cols-3 gap-1.5">{['Mind', 'Learning', 'Exam'].map((label, index) => <div key={label} className="rounded-lg border border-[#DDD8D2] bg-white p-2"><div className={`h-1 rounded-full ${index === 0 ? 'bg-[#F26B1F]' : index === 1 ? 'bg-[#5E9C7B]' : 'bg-[#7D82B8]'}`} /><p className="mt-1.5 text-[7px] font-semibold text-[#3A3530]">{label}</p></div>)}</div>
-  </div>
-);
-
-/** Screenshot with a graceful monogram fallback when the asset is missing. */
+/** A real app capture. Missing assets fail to a plain notice, never simulated UI. */
 const CardImage: React.FC<{ card: GuideCard }> = ({ card }) => {
   const [failed, setFailed] = useState(false);
-  if (card.id === 'study') return <StudyTimerPreview />;
-  if (card.id === 'home') return <HomePreview />;
   if (failed) {
     return (
       <div
-        className="w-full aspect-[16/10] rounded-xl border-2 flex items-center justify-center"
-        style={{ borderColor: INK, backgroundColor: '#FDEEDF' }}
-        aria-hidden
+        className="flex aspect-[16/10] w-full items-center justify-center rounded-xl border-2 bg-[#F3F0EB] px-6 text-center"
+        style={{ borderColor: INK }}
+        role="img"
+        aria-label={`${card.title} screenshot unavailable`}
       >
-        <span className="text-[64px] font-bold" style={{ fontFamily: "'Source Serif 4', serif", color: ACCENT }}>
-          {card.title.replace(/^The /, '').charAt(0)}
-        </span>
+        <span className="text-xs font-semibold text-[#6F6861]">Screen capture unavailable</span>
       </div>
     );
   }
   return (
     <img
       src={`/assets/guide/${card.id}.jpg`}
-      alt={`${card.title} — screenshot`}
+      alt={`${card.title} — real screenshot from the app`}
+      data-guide-capture="real-app"
       className="w-full aspect-[16/10] object-cover object-top rounded-xl border-2"
       style={{ borderColor: INK }}
       onError={() => setFailed(true)}
