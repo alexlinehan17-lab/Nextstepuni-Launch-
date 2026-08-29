@@ -2416,6 +2416,28 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2023 Higher Level — © State Examinations Commission.",
+    id: "econ-2023-hl-seca-q6-a", topicId: "economics-3-1", conceptId: "sorting-taxes-direct-and-indirect",
+    section: "A", questionRef: "2023 HL Section A Q6(a)",
+    questionText: "In each case below, indicate by placing a tick (✓) whether the tax is an example of direct taxation or indirect taxation: VAT; PAYE; Customs and Excise Duty.",
+    tariffModel: {"kind":"fixed","notation":"6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Tax Direct Tax Indirect Tax VAT ✓ PAYE ✓ Customs and Excise Duty ✓", marks: 6, contextNote: "Read the completed table below: in flat text the ticks carry no column at all. VAT and Customs and Excise Duty are INDIRECT — taxes on spending, borne by the consumer but collected and remitted by someone else — while PAYE is DIRECT, deducted from income and paid over by the person who bears it. Who hands the money to Revenue is the test, not who ends up poorer.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2023-HL-scheme-p11-q6a-ticks",
+          "src": "/exam-figures/economics/markbank/economics-2023-HL-scheme-p11-q6a-ticks.png",
+          "srcHash": "515d205a15fef7a080b5146e45e614cd",
+          "alt": "The marking scheme's completed answer table for 2023 HL Section A Q6(a), as the State Examinations Commission set it. A pale blue header row reads Tax | Direct Tax | Indirect Tax. Three rows follow, each carrying a single black tick: VAT ticked under Indirect Tax; PAYE ticked under Direct Tax; Customs and Excise Duty ticked under Indirect Tax.",
+          "attribution": "SEC Leaving Certificate Economics 2023 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2024, level: "higher",
     paperFileid: "LC034ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2024 Higher Level — © State Examinations Commission.",
@@ -4396,6 +4418,28 @@ export const CARDS: SecCard[] = [
           "srcHash": "128c8c9c1343be3f5ce243675aa21960",
           "alt": "A labour market diagram. 'Wage rate' on the vertical axis, 'Quantity of workers' on the horizontal. A red downward-sloping line labelled D-sub-L crosses a blue upward-sloping line labelled S-sub-L at a filled black dot, with pale blue dashed arrows running left to W-sub-E on the wage axis and down to Q-sub-E on the quantity axis. Above the diagram sit the answer box for part (a)'s 'Price floor:' definition and the part (b) instruction to complete the diagram for a minimum wage above W-sub-E; beneath it, the ruled Explanation box.",
           "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2025 Higher Level — © State Examinations Commission.",
+    id: "econ-2025-hl-seca-q5-b", topicId: "economics-0-1", conceptId: "positive-and-normative-statements-sorted",
+    section: "A", questionRef: "2025 HL Section A Q5(b)",
+    questionText: "Determine whether each of the economic statements below is a positive statement or a normative statement. Indicate your choice below by ticking (✓) the relevant box. 1. All citizens in Ireland deserve free healthcare to ensure equal access to medical services. 2. If the Irish government were to raise the corporation tax rate by 3%, it would reduce foreign direct investment in the country by at least 25%.",
+    tariffModel: {"kind":"fixed","notation":"2 @ 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Economic Statement Statement Statement All citizens in Ireland deserve free healthcare to ✓ 1. ensure equal access to medical services. If the Irish government were to raise the 2. corporation tax rate by 3%, it would reduce foreign ✓ direct investment in the country by at least 25%.", marks: 6, contextNote: "Read the completed table below rather than the line above it — in flat text the ticks land mid-sentence and name no column. Statement 1 is NORMATIVE: \"deserve\" is a value judgement and nothing could test it. Statement 2 is POSITIVE despite being a prediction and quite possibly wrong: it is falsifiable, and testability rather than truth is what makes a statement positive. Three marks each.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2025-HL-scheme-p16-q5b-ticks",
+          "src": "/exam-figures/economics/markbank/economics-2025-HL-scheme-p16-q5b-ticks.png",
+          "srcHash": "b7c9268ab3e4b1fdb38f447315d63bd1",
+          "alt": "The marking scheme's completed answer table for 2025 HL Section A Q5(b), as the State Examinations Commission set it. A pale yellow header row reads Economic Statement | Positive Statement | Normative Statement. Statement 1, 'All citizens in Ireland deserve free healthcare to ensure equal access to medical services.', carries a black tick under Normative Statement. Statement 2, 'If the Irish government were to raise the corporation tax rate by 3%, it would reduce foreign direct investment in the country by at least 25%.', carries a black tick under Positive Statement.",
+          "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission",
+          "solution": true,
           "lettersVisible": []
     },
   } as SecCard,

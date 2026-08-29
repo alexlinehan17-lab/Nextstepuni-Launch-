@@ -284,4 +284,34 @@ P.cards.append(card(
     tariff_kind='fixed', section='A',
     figure_key='economics-2025-HL-paper-p08-art'))
 
+# ── A tick table, answered by the scheme's own completed table ─────────────
+# See econ_tick_crop.py for why: the ✔ is drawn, not set in the text layer, so
+# extraction keeps it and loses the column it sits in. Here the flat run reads
+# "All citizens in Ireland deserve free healthcare to ✓ 1. ensure equal access"
+# — the tick lands mid-sentence and names no column at all. The scheme states
+# this answer graphically, so it is taken graphically: the completed table is
+# bound as a SOLUTION crop, hidden until reveal, the way the Maths deck carries
+# a printed model solution.
+P.cards.append(card(
+    'econ-2025-hl-seca-q5-b', 2025, 'higher', 'economics-0-1',
+    'positive-and-normative-statements-sorted', '2025 HL Section A Q5(b)',
+    'Determine whether each of the economic statements below is a positive statement or a '
+    'normative statement. Indicate your choice below by ticking (\u2713) the relevant box. '
+    '1. All citizens in Ireland deserve free healthcare to ensure equal access to medical '
+    'services. 2. If the Irish government were to raise the corporation tax rate by 3%, it '
+    'would reduce foreign direct investment in the country by at least 25%.',
+    '2 @ 3', 6,
+    [point('r-1', as_option(block(BODY, 'Economic Statement Statement Statement All citizens',
+                                  '15 | P a g e')), 6,
+           'Read the completed table below rather than the line above it \u2014 in flat text '
+           'the ticks land mid-sentence and name no column. Statement 1 is NORMATIVE: '
+           '"deserve" is a value judgement and nothing could test it. Statement 2 is POSITIVE '
+           'despite being a prediction and quite possibly wrong: it is falsifiable, and '
+           'testability rather than truth is what makes a statement positive. Three marks each.')],
+    'The trap is assuming a positive statement must be TRUE. Statement 2 forecasts a precise 25% '
+    'fall that may never happen; it is positive because evidence could settle it.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2025-HL-scheme-p16-q5b-ticks'))
+
+
 P.emit()

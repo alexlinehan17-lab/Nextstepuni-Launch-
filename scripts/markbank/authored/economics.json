@@ -8761,6 +8761,39 @@
   "notes": "The paper prints the formula and the workings frame; the marks are for filling it in the right order, which is why the scheme works ∆Q, ∆P and both sums separately."
  },
  {
+  "id": "econ-2022-ol-seca-q4-ticks",
+  "topicId": "economics-1-1",
+  "conceptId": "substitutes-and-complements-for-the-iphone",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 OL Section A Q4",
+  "questionText": "Apple released the iPhone 13 in September 2021. In the table below, identify by placing a tick (✓) which two items are substitute goods and which two items are complementary goods for the iPhone 13: Samsung S21; iPhone 13 case; iPhone charging plug; Google Pixel 4A smartphone.",
+  "stem": "",
+  "figureKey": "economics-2022-OL-scheme-p06-q4-ticks",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "15",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Substitute Goods Complementary Goods Samsung S21 ✓ iPhone 13 case ✓ iPhone charging plug ✓ Google Pixel 4A smartphone ✓",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Read the completed table below, not the line above it: the ticks survive extraction but their COLUMNS do not, so in flat text all four appear to sit together. The scheme ticks Samsung S21 and the Google Pixel as substitutes — rival handsets you would buy INSTEAD of an iPhone — and the case and the charging plug as complements, bought ALONGSIDE it. The tariff is ⟨1st x 9⟩ then ⟨3 x 2⟩: nine for the first correct categorisation and two for each of the other three, so the first one right is worth more than the rest together."
+   }
+  ],
+  "notes": "Both substitutes are phones and both complements are accessories, which is the test: a substitute satisfies the same want, a complement is used with it."
+ },
+ {
   "id": "econ-2023-hl-q11-a-ii",
   "topicId": "economics-3-5",
   "conceptId": "drivers-of-population-growth",
@@ -11291,6 +11324,39 @@
    }
   ],
   "notes": "The scheme prints the explanation as three bullets under one ⟨3⟩ cell — a sequence, not alternatives — so it is carded as the one contiguous run."
+ },
+ {
+  "id": "econ-2023-hl-seca-q6-a",
+  "topicId": "economics-3-1",
+  "conceptId": "sorting-taxes-direct-and-indirect",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2023 HL Section A Q6(a)",
+  "questionText": "In each case below, indicate by placing a tick (✓) whether the tax is an example of direct taxation or indirect taxation: VAT; PAYE; Customs and Excise Duty.",
+  "stem": "",
+  "figureKey": "economics-2023-HL-scheme-p11-q6a-ticks",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Tax Direct Tax Indirect Tax VAT ✓ PAYE ✓ Customs and Excise Duty ✓",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Read the completed table below: in flat text the ticks carry no column at all. VAT and Customs and Excise Duty are INDIRECT — taxes on spending, borne by the consumer but collected and remitted by someone else — while PAYE is DIRECT, deducted from income and paid over by the person who bears it. Who hands the money to Revenue is the test, not who ends up poorer."
+   }
+  ],
+  "notes": "Two of the three are indirect, so a student splitting them evenly gets one wrong on symmetry alone."
  },
  {
   "id": "econ-2023-ol-q11-a-i",
@@ -21704,6 +21770,39 @@
    }
   ],
   "notes": "The trade-off is the answer: some workers earn more and others lose hours or jobs. A response that only says \"wages go up\" has drawn the line without reading the diagram."
+ },
+ {
+  "id": "econ-2025-hl-seca-q5-b",
+  "topicId": "economics-0-1",
+  "conceptId": "positive-and-normative-statements-sorted",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2025 HL Section A Q5(b)",
+  "questionText": "Determine whether each of the economic statements below is a positive statement or a normative statement. Indicate your choice below by ticking (✓) the relevant box. 1. All citizens in Ireland deserve free healthcare to ensure equal access to medical services. 2. If the Irish government were to raise the corporation tax rate by 3%, it would reduce foreign direct investment in the country by at least 25%.",
+  "stem": "",
+  "figureKey": "economics-2025-HL-scheme-p16-q5b-ticks",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 @ 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Economic Statement Statement Statement All citizens in Ireland deserve free healthcare to ✓ 1. ensure equal access to medical services. If the Irish government were to raise the 2. corporation tax rate by 3%, it would reduce foreign ✓ direct investment in the country by at least 25%.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Read the completed table below rather than the line above it — in flat text the ticks land mid-sentence and name no column. Statement 1 is NORMATIVE: \"deserve\" is a value judgement and nothing could test it. Statement 2 is POSITIVE despite being a prediction and quite possibly wrong: it is falsifiable, and testability rather than truth is what makes a statement positive. Three marks each."
+   }
+  ],
+  "notes": "The trap is assuming a positive statement must be TRUE. Statement 2 forecasts a precise 25% fall that may never happen; it is positive because evidence could settle it."
  },
  {
   "id": "econ-2025-ol-q13-c",
