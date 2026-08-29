@@ -145,7 +145,7 @@ export default function ModuleShowcase({
     ? startSection.eyebrow.split(' // ').slice(1).join(' // ')
     : '';
 
-  const ctaLabel = isCompleted ? 'Review module' : isInProgress ? 'Continue module' : 'Begin module';
+  const ctaLabel = isCompleted ? 'Review module' : isInProgress ? 'Continue module' : 'Start module';
 
   const goTo = useCallback((idx: number) => {
     if (idx < 0 || idx >= courses.length || idx === safeIndex) return;

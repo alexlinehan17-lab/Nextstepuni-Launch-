@@ -19,6 +19,7 @@ import PageHeader from './ui/PageHeader';
 import { type CourseData } from './Library';
 import { YEAR_PLANS, type YearPlan } from '../yearPlans';
 import { useSettingsContext } from '../contexts/SettingsContext';
+import { type YearGroup } from './subjectData';
 
 type UserProgress = {
   [moduleId: string]: { unlockedSection: number };
@@ -31,6 +32,7 @@ interface YearPlansViewProps {
   onBack: () => void;
   /** LCA students see the two LCA year plans instead of the six LC/JC years. */
   isLca?: boolean;
+  currentYearGroup?: YearGroup;
 }
 
 // Muted per-cycle accents in the LearningPathsView register — tiny details
@@ -61,10 +63,17 @@ const YearPlansView: React.FC<YearPlansViewProps> = ({
   onSelectModule,
   onBack,
   isLca = false,
+  currentYearGroup,
 }) => {
   const cycleInk = useCycleInk();
   const [expandedId, setExpandedId] = useState<string | null>(null);
   const plans = YEAR_PLANS.filter(p => (isLca ? p.cycle === 'lca' : p.cycle !== 'lca'));
+  const currentPlanId = currentYearGroup === 'LCA1' ? 'lca-year-1'
+    : currentYearGroup === 'LCA2' ? 'lca-year-2'
+      : currentYearGroup === 'TY' ? 'year-4'
+        : currentYearGroup && currentYearGroup !== 'graduated'
+          ? `year-${Number.parseInt(currentYearGroup, 10)}`
+          : null;
 
   const isModuleComplete = (moduleId: string) => {
     const course = allCourses.find(c => c.id === moduleId);
@@ -107,6 +116,7 @@ const YearPlansView: React.FC<YearPlansViewProps> = ({
             const isExpanded = expandedId === plan.id;
             const firstIncomplete = getFirstIncomplete(plan);
             const isComplete = total > 0 && !firstIncomplete;
+            const isCurrent = plan.id === currentPlanId;
 
             return (
               <MotionDiv
@@ -117,9 +127,9 @@ const YearPlansView: React.FC<YearPlansViewProps> = ({
                 className="overflow-hidden relative"
                 style={{
                   background: '#FFFFFF',
-                  border: '1px solid #E8E2D8',
+                  border: isCurrent ? '2px solid #F26B1F' : '1px solid #E8E2D8',
                   borderRadius: 22,
-                  boxShadow: '0 4px 28px rgba(28,25,23,0.06), 0 1px 3px rgba(28,25,23,0.04)',
+                  boxShadow: isCurrent ? '4px 4px 0 #1A1A1A' : '0 4px 28px rgba(28,25,23,0.06), 0 1px 3px rgba(28,25,23,0.04)',
                 }}
               >
                 {/* Hand-drawn year numeral — upper right, marker-style PNG */}
@@ -134,6 +144,7 @@ const YearPlansView: React.FC<YearPlansViewProps> = ({
 
                 <div className="p-7 md:p-8">
                   {/* Eyebrow */}
+                  <div className="flex items-center gap-2">
                   <p
                     className="uppercase"
                     style={{
@@ -147,6 +158,8 @@ const YearPlansView: React.FC<YearPlansViewProps> = ({
                   >
                     {meta.eyebrow}
                   </p>
+                  {isCurrent && <span className="rounded-full bg-[#FDEBDD] px-2 py-1 text-[9px] font-bold uppercase tracking-wider text-[#9A3B0E]">Your current plan</span>}
+                  </div>
 
                   {/* Title */}
                   <h3

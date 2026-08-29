@@ -436,11 +436,7 @@ const HeroInner: React.FC<HeroInnerProps> = ({ config, stats, nextUp, onContinue
               <button
                 onClick={(e) => {
                   e.stopPropagation();
-                  if (nextUp.isContinue) {
-                    onContinue(nextUp.course.id);
-                  } else {
-                    onOpenCategory();
-                  }
+                  onContinue(nextUp.course.id);
                 }}
                 className="group/cta inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full text-[14px] font-semibold transition-all duration-300 hover:gap-3.5"
                 style={{
@@ -448,7 +444,7 @@ const HeroInner: React.FC<HeroInnerProps> = ({ config, stats, nextUp, onContinue
                   boxShadow: `0 6px 16px ${world.cta(config).background}55`,
                 }}
               >
-                {nextUp.isContinue ? 'Continue' : 'Begin'}
+                {nextUp.isContinue ? 'Continue' : 'Start module'}
                 <IconArrowRight size={16} />
               </button>
               <button
@@ -683,7 +679,7 @@ export const ModulesView: React.FC<ModulesViewProps> = ({
                     config={cat}
                     isHero={isHero}
                     onClick={() => isHero ? onSelectCategory(cat.id) : setHeroId(cat.id)}
-                    ariaLabel={isHero ? `Open ${cat.name} world` : `Promote ${cat.name} to hero`}
+                    ariaLabel={isHero ? `Open ${cat.name} world` : `Preview ${cat.name} world`}
                   >
                     {isHero ? (
                       <HeroInner

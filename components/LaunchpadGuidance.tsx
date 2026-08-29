@@ -27,6 +27,10 @@ export interface LaunchpadToolSummary {
 
 interface LaunchpadGuidanceProps {
   tools: LaunchpadToolSummary[];
+  /** Tools the student can launch in their current setup state. The explainer
+   * still shows the full catalogue, but recommendations never point at a
+   * profile-gated dead end. */
+  availableToolIds?: string[];
   recommendation: ToolRecommendation | null;
   onRecommendationChange: (recommendation: ToolRecommendation | null) => void;
   onOpenTool: (toolId: string, needsProfile: boolean) => void;
@@ -38,6 +42,7 @@ const ACCENT = '#F26B1F';
 
 const LaunchpadGuidance: React.FC<LaunchpadGuidanceProps> = ({
   tools,
+  availableToolIds,
   recommendation,
   onRecommendationChange,
   onOpenTool,
@@ -46,11 +51,16 @@ const LaunchpadGuidance: React.FC<LaunchpadGuidanceProps> = ({
   const [toolIndex, setToolIndex] = useState(0);
   const [goalId, setGoalId] = useState<RecommendationGoalId | null>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
-  const availableIds = useMemo(() => tools.map(tool => tool.id), [tools]);
+  const availableIds = useMemo(
+    () => availableToolIds ?? tools.map(tool => tool.id),
+    [availableToolIds, tools],
+  );
   const goals = useMemo(() => availableRecommendationGoals(availableIds), [availableIds]);
   const activeGoal = goals.find(goal => goal.id === goalId) ?? null;
   const explainedTool = tools[Math.min(toolIndex, Math.max(0, tools.length - 1))];
-  const recommendedTool = recommendation ? tools.find(tool => tool.id === recommendation.toolId) : null;
+  const recommendedTool = recommendation && availableIds.includes(recommendation.toolId)
+    ? tools.find(tool => tool.id === recommendation.toolId)
+    : null;
 
   const open = (nextMode: GuidanceMode) => {
     setMode(nextMode);
@@ -135,7 +145,7 @@ const LaunchpadGuidance: React.FC<LaunchpadGuidanceProps> = ({
       {createPortal(<AnimatePresence>
         {mode && (
           <div className="fixed inset-0 z-[220] flex items-end justify-center sm:items-center sm:p-5" role="dialog" aria-modal="true" aria-labelledby="launchpad-guidance-title">
-            <button type="button" aria-label="Close" onClick={close} className="absolute inset-0 bg-[#1A1A1A]/60" />
+            <div aria-hidden="true" onClick={close} className="absolute inset-0 bg-[#1A1A1A]/60" />
             <MotionDiv
               initial={{ opacity: 0, y: 24, scale: 0.99 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}

@@ -101,6 +101,27 @@ const paperLabel = (label: string) => label.replace(/\s*\([A-Z]{2}\)\s*$/, '').t
 
 const subjectById = new Map(PAPER_TRAIL_SUBJECTS.map(s => [s.id, s]));
 
+// The SEC archive contains a small number of distinct syllabuses whose
+// cycle-filtered display names collapse to the same label (for example,
+// "History" and "History (Early Modern)"). Keep the short label everywhere
+// it is unambiguous, but preserve the qualifier when stripping it would create
+// two indistinguishable subjects.
+const subjectLabelCounts = PAPER_TRAIL_SUBJECTS.reduce((counts, subject) => {
+  const key = `${subject.cycle}:${displayName(subject.name)}`;
+  counts.set(key, (counts.get(key) ?? 0) + 1);
+  return counts;
+}, new Map<string, number>());
+
+export const paperTrailSubjectLabel = (subject: PaperTrailSubject) =>
+  (subjectLabelCounts.get(`${subject.cycle}:${displayName(subject.name)}`) ?? 0) > 1
+    ? subject.name
+    : displayName(subject.name);
+
+const subjectLabelForId = (id: string) => {
+  const subject = subjectById.get(id);
+  return subject ? paperTrailSubjectLabel(subject) : displayName(id);
+};
+
 
 // Deep-link params are snapshotted at boot by utils/bootParams (this lazy
 // chunk loads long after NavigationContext rewrites the URL). Applied at most
@@ -216,11 +237,11 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
     );
     const main = inCycle
       .filter(s => (junior ? true : s.cycle === 'lc'))
-      .sort((a, b) => displayName(a.name).localeCompare(displayName(b.name)));
+      .sort((a, b) => paperTrailSubjectLabel(a).localeCompare(paperTrailSubjectLabel(b)));
     // The LCA archive group only surfaces for LCA students — everyone else
     // never sees Leaving Cert Applied subjects in their picker.
     const lca = (junior || !isLca ? [] : inCycle.filter(s => s.cycle === 'lca')).sort((a, b) =>
-      displayName(a.name).localeCompare(displayName(b.name)),
+      paperTrailSubjectLabel(a).localeCompare(paperTrailSubjectLabel(b)),
     );
     const mineIds = [
       ...main.filter(s => matchesStudent(s, mineNames)).map(s => s.id),
@@ -405,7 +426,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
       kind: 'tool',
       id: 'paper-trail',
       label: 'Paper Trail',
-      sub: `${displayName(subj.name)} · ${view.year} · ${LEVEL_LABEL[view.level]}`,
+      sub: `${paperTrailSubjectLabel(subj)} · ${view.year} · ${LEVEL_LABEL[view.level]}`,
     });
     bumpRails(n => n + 1);
   }, [view, uid]);
@@ -468,7 +489,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
         : null) ?? undefined;
     return (
       <Viewer
-        title={`${displayName(subj.name)} · ${view.year}`}
+        title={`${paperTrailSubjectLabel(subj)} · ${view.year}`}
         subtitle={`${paperLabel(view.item.label)} · ${LEVEL_LABEL[view.level]}${view.lang === 'iv' ? ' · Gaeilge' : ''}`}
         paper={{ url: url('paper', view.item.doc.f), label: paperLabel(view.item.label), bytes: view.item.doc.b }}
         scheme={
@@ -503,14 +524,14 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
     const inCycleTagged = taggedSubjects()
       .map(id => subjectById.get(id))
       .filter((s): s is PaperTrailSubject => !!s && (junior ? s.cycle === 'jc' : s.cycle !== 'jc'))
-      .sort((a, b) => displayName(a.name).localeCompare(displayName(b.name)));
+      .sort((a, b) => paperTrailSubjectLabel(a).localeCompare(paperTrailSubjectLabel(b)));
     const mineNames = new Set((studentSubjects ?? []).map(baseName));
     return (
       <ReviseByTopic
-        subjects={inCycleTagged.map(s => ({ id: s.id, label: displayName(s.name) }))}
+        subjects={inCycleTagged.map(s => ({ id: s.id, label: paperTrailSubjectLabel(s) }))}
         mineIds={inCycleTagged.filter(s => matchesStudent(s, mineNames)).map(s => s.id)}
         uid={uid}
-        subjectLabel={id => displayName(subjectById.get(id)?.name ?? id)}
+        subjectLabel={subjectLabelForId}
         restore={view.restore}
         onOpenQuestion={openCrossYear}
         onBack={() => setView({ v: 'home' })}
@@ -523,15 +544,15 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
     const inCycleTagged = taggedSubjects()
       .map(id => subjectById.get(id))
       .filter((s): s is PaperTrailSubject => !!s && (junior ? s.cycle === 'jc' : s.cycle !== 'jc'))
-      .sort((a, b) => displayName(a.name).localeCompare(displayName(b.name)));
+      .sort((a, b) => paperTrailSubjectLabel(a).localeCompare(paperTrailSubjectLabel(b)));
     const mineNames = new Set((studentSubjects ?? []).map(baseName));
     return (
       <MockExamBuilder
         uid={uid}
         now={Date.now()}
-        subjects={inCycleTagged.map(s => ({ id: s.id, label: displayName(s.name) }))}
+        subjects={inCycleTagged.map(s => ({ id: s.id, label: paperTrailSubjectLabel(s) }))}
         mineIds={inCycleTagged.filter(s => matchesStudent(s, mineNames)).map(s => s.id)}
-        subjectLabel={id => displayName(subjectById.get(id)?.name ?? id)}
+        subjectLabel={subjectLabelForId}
         onOpenQuestion={openCrossYear}
         onBack={() => setView({ v: 'home' })}
       />
@@ -549,7 +570,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
       <ReviewSession
         uid={uid}
         now={Date.now()}
-        subjectLabel={id => displayName(subjectById.get(id)?.name ?? id)}
+        subjectLabel={subjectLabelForId}
         onOpenQuestion={openCrossYear}
         onBack={() => setView({ v: 'home' })}
       />
@@ -562,7 +583,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
       <ProgressDashboard
         uid={uid}
         now={Date.now()}
-        subjectLabel={id => displayName(subjectById.get(id)?.name ?? id)}
+        subjectLabel={subjectLabelForId}
         onDrill={openCrossYear}
         onBack={() => setView({ v: 'home' })}
         onStart={() => setView({ v: 'home' })}
@@ -629,7 +650,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
         </button>
 
         <h2 className="text-2xl font-semibold mb-1" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>
-          {displayName(subj.name)}
+          {paperTrailSubjectLabel(subj)}
           {subj.cycle === 'lca' && (
             <span className="ml-2 text-[12px] font-sans font-bold uppercase tracking-wide align-middle" style={{ color: '#9e9186' }}>
               LCA
@@ -901,7 +922,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
       >
         <button onClick={() => openStoredRef(r)} className="block w-full text-left px-3.5 py-3 pr-8">
           <p className="text-[13px] font-bold leading-tight" style={{ color: '#1a1a1a' }}>
-            {displayName(s.name)} {r.year}
+            {paperTrailSubjectLabel(s)} {r.year}
           </p>
           <p className="text-[11px] mt-0.5 flex items-center gap-1" style={{ color: '#7a7068' }}>
             <Clock3 size={11} aria-hidden />
@@ -914,7 +935,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
         <button
           onClick={() => handleTogglePin(r)}
           aria-pressed={pinned}
-          aria-label={pinned ? `Unpin ${displayName(s.name)} ${r.year}` : `Pin ${displayName(s.name)} ${r.year} to your favourites`}
+          aria-label={pinned ? `Unpin ${paperTrailSubjectLabel(s)} ${r.year}` : `Pin ${paperTrailSubjectLabel(s)} ${r.year} to your favourites`}
           className="absolute top-2 right-2 p-1 rounded-lg transition-transform active:translate-y-0.5"
         >
           <Star size={13} fill={pinned ? '#F26B1F' : 'none'} color={pinned ? '#F26B1F' : '#d0cdc8'} aria-hidden />
@@ -976,7 +997,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
                   }}
                   className="w-full text-left px-4 py-3 text-[14px] font-medium text-zinc-800 dark:text-zinc-100 hover:bg-zinc-50 dark:hover:bg-zinc-800 border-b border-zinc-100 dark:border-zinc-800 last:border-0"
                 >
-                  {displayName(sug.subject.name)}
+                  {paperTrailSubjectLabel(sug.subject)}
                   {sug.subject.cycle === 'lca' && <span className="ml-1.5 text-[11px] text-zinc-400">LCA</span>}
                   {(sug.year || sug.level) && (
                     <span className="ml-1.5 text-[12px] text-zinc-400">
@@ -1111,7 +1132,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
           student has self-marked at least one question. */}
       <WeaknessMap
         uid={uid}
-        subjectName={id => displayName(subjectById.get(id)?.name ?? id)}
+        subjectName={subjectLabelForId}
         onDrill={openCrossYear}
         onOpenDashboard={() => setView({ v: 'progress' })}
       />
@@ -1128,7 +1149,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
           headingLabel="Pick a subject"
           subjects={groups.main.map(s => ({
             id: s.id,
-            label: displayName(s.name),
+            label: paperTrailSubjectLabel(s),
             sublabel: paperCount(s.id),
           }))}
           mineIds={groups.mineIds.filter(id => groups.main.some(s => s.id === id))}
@@ -1151,7 +1172,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
           <SubjectTilePicker
             subjects={groups.lca.map(s => ({
               id: s.id,
-              label: displayName(s.name),
+              label: paperTrailSubjectLabel(s),
               sublabel: paperCount(s.id),
             }))}
             scope="all"

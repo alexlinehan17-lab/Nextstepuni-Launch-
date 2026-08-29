@@ -366,6 +366,10 @@ const DashboardView: React.FC<DashboardViewProps> = ({
   const totalMinutes = Math.round(sessionsInRange.reduce((sum, session) => sum + Math.max(0, session.actualSeconds), 0) / 60);
   const activeDays = new Set(sessionsInRange.map(session => session.date)).size;
   const avgConfidence = averageConfidence(confidencePoints);
+  const hasLearningEvidence = studySessions.length > 0
+    || studyDebriefs.length > 0
+    || studyReflections.length > 0
+    || mockResults.length > 0;
   const subjectLabel = subject === 'all' ? 'All subjects' : subject;
   const activityInsights = useMemo(
     () => buildActivityInsights(activityBuckets, metric, subjectLabel),
@@ -617,6 +621,8 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                 {onToggleTheme && (
                   <button
                     type="button"
+                    role="switch"
+                    aria-checked={darkMode}
                     onClick={onToggleTheme}
                     aria-label={darkMode ? 'Switch to light mode (Beta)' : 'Switch to dark mode (Beta)'}
                     className="flex h-10 w-10 items-center justify-center rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-paper)] text-[var(--ink-secondary)] transition-colors hover:border-[var(--outline-strong)] hover:text-[var(--ink-primary)]"
@@ -628,16 +634,17 @@ const DashboardView: React.FC<DashboardViewProps> = ({
             )}
           </div>
 
-          <div className="grid grid-cols-2 gap-x-4 gap-y-6 border-b border-[var(--outline-soft)] py-6 sm:grid-cols-3 lg:grid-cols-5">
+          <div className="grid grid-cols-2 gap-x-4 gap-y-6 border-b border-[var(--outline-soft)] py-6 sm:grid-cols-5">
             <StatCell eyebrow="Sessions" value={String(sessionsInRange.length)} meta={`${activeDays} active day${activeDays === 1 ? '' : 's'}`} accent />
             <StatCell eyebrow="Focus time" value={formatMinutes(totalMinutes)} meta={rangeBounds.label} />
             <StatCell eyebrow="Confidence" value={avgConfidence === null ? '—' : avgConfidence.toFixed(1)} meta={avgConfidence === null ? 'awaiting debriefs' : 'average out of 5'} />
             <StatCell eyebrow="Streak" value={String(streak.currentStreak)} meta="days running" />
-            <StatCell eyebrow="Journey points" value={String(pointsEarned)} meta="earned to date" />
+            <div className="col-span-2 sm:col-span-1"><StatCell eyebrow="Journey points" value={String(pointsEarned)} meta="earned to date" /></div>
           </div>
 
-          <div className="mb-5 mt-6 overflow-x-auto border-b border-[var(--outline-soft)]" role="tablist" aria-label="Dashboard sections">
-            <div className="flex min-w-max gap-7">
+          <div className="relative mb-5 mt-6 border-b border-[var(--outline-soft)]">
+            <div className="overflow-x-auto pr-8" role="tablist" aria-label="Dashboard sections">
+            <div className="flex min-w-max gap-5 sm:gap-7">
               {TABS.map(item => (
                 <button
                   key={item.id}
@@ -648,18 +655,33 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                     if (activeTab === undefined) setLocalTab(item.id);
                     onTabChange?.(item.id);
                   }}
-                  className={`relative pb-3 text-xs font-semibold transition-colors ${tab === item.id ? 'text-[var(--ink-primary)]' : 'text-[var(--ink-muted)] hover:text-[var(--ink-secondary)]'}`}
+                  className={`relative shrink-0 whitespace-nowrap pb-3 text-xs font-semibold transition-colors ${tab === item.id ? 'text-[var(--ink-primary)]' : 'text-[var(--ink-muted)] hover:text-[var(--ink-secondary)]'}`}
                 >
                   {item.label}
                   {tab === item.id && <span className="absolute inset-x-0 -bottom-px h-0.5 bg-[var(--accent-hex)]" />}
                 </button>
               ))}
             </div>
+            </div>
+            <div aria-hidden="true" className="pointer-events-none absolute inset-y-0 right-0 w-8 bg-gradient-to-l from-[var(--surface-canvas)] to-transparent sm:hidden" />
           </div>
 
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-12">
             {tab === 'overview' && (
               <>
+                {!hasLearningEvidence ? (
+                  <Panel eyebrow="Your learning record" title="Start with one focused session." detail="This dashboard becomes useful as soon as there is real work to reflect back to you." className="lg:col-span-12">
+                    <div className="flex flex-col items-start justify-between gap-6 py-2 sm:flex-row sm:items-center">
+                      <p className="max-w-2xl font-serif text-2xl font-semibold leading-tight text-[var(--ink-primary)]">Choose a subject, set a short timer and complete your first session. Your rhythm, confidence and study evidence will begin here.</p>
+                      {onStartStudy && (
+                        <button onClick={onStartStudy} className="inline-flex min-h-12 shrink-0 items-center gap-2 rounded-xl border-[1.5px] border-[var(--outline-strong)] bg-[var(--accent-hex)] px-5 text-sm font-bold text-white shadow-[3px_3px_0_0_var(--outline-strong)]">
+                          Start a study session <ArrowRight size={15} />
+                        </button>
+                      )}
+                    </div>
+                  </Panel>
+                ) : (
+                  <>
                 {activityPanel}
                 <Panel eyebrow="Today" title={nextBlock ? nextBlock.subjectName : 'Choose your next move'} detail={nextBlock ? `${nextBlock.durationMinutes} min · ${nextBlock.sessionType.replace('-', ' ')}` : 'Keep the momentum small and specific.'} className="lg:col-span-4">
                   <div className="flex min-h-[244px] flex-col justify-between">
@@ -708,6 +730,9 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                   <RankedBarChart values={strategyUsage} unit="uses" emptyTitle="No techniques tracked yet" emptyDetail="Select the methods you used at the end of a study session." />
                 </Panel>
                 {mockPanel}
+                  </>
+                )}
+                {!hasLearningEvidence && programmePanel}
               </>
             )}
 
@@ -775,6 +800,11 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                   </div>
                   <div className="mt-5 h-2 overflow-hidden rounded-full bg-[var(--dashboard-track)]" aria-label={`${gamificationState.rankProgress}% rank progress`}>
                     <div className="h-full rounded-full bg-[var(--accent-hex)]" style={{ width: `${gamificationState.rankProgress}%` }} />
+                  </div>
+                  <div className="mt-5 border-t border-[var(--outline-soft)] pt-4 text-xs leading-relaxed text-[var(--ink-muted)]">
+                    <p><strong className="text-[var(--ink-secondary)]">XP</strong> is your lifetime activity score and sets your rank.</p>
+                    <p className="mt-2"><strong className="text-[var(--ink-secondary)]">JP</strong> is the spendable balance used to build My Journey.</p>
+                    <p className="mt-2"><strong className="text-[var(--ink-secondary)]">Passport stamps</strong> mark modules you have completed.</p>
                   </div>
                 </Panel>
 

@@ -11,7 +11,7 @@ import { type UserProgress, type NorthStar } from '../types';
 import { type StudentSubjectProfile } from '../components/subjectData';
 import { generateAutoNotifications } from '../components/gc/gcNotifications';
 import { logError } from '../utils/logError';
-import { getProgressDocument } from '../services/progressRepository';
+import { getProgressDocument, progressNeedsOnboarding } from '../services/progressRepository';
 import { mergeUserDocument, waitForUserDocument } from '../services/userRepository';
 import {
   DEMO_STUDENT_UID,
@@ -204,7 +204,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
                 userProgress: pd as UserProgress,
                 northStar: pd.northStar ? (pd.northStar as NorthStar) : null,
                 studentProfile: pd.subjectProfile ? (pd.subjectProfile as StudentSubjectProfile) : null,
-                needsOnboarding: !pd.subjectProfile,
+                needsOnboarding: progressNeedsOnboarding(pd),
                 unlockedAvatarSeeds: pd.cosmeticUnlocks?.avatarSeeds || [],
                 unlockedThemes: pd.cosmeticUnlocks?.themeColors || [],
                 unlockedCardStyles: pd.cosmeticUnlocks?.cardStyles || [],
@@ -241,7 +241,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
                 userProgress: pd as UserProgress,
                 northStar: pd.northStar ? (pd.northStar as NorthStar) : null,
                 studentProfile: pd.subjectProfile ? (pd.subjectProfile as StudentSubjectProfile) : null,
-                needsOnboarding: !pd.subjectProfile,
+                needsOnboarding: progressNeedsOnboarding(pd),
                 unlockedAvatarSeeds: pd.cosmeticUnlocks?.avatarSeeds || [],
                 unlockedThemes: pd.cosmeticUnlocks?.themeColors || [],
                 unlockedCardStyles: pd.cosmeticUnlocks?.cardStyles || [],

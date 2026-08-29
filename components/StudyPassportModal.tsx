@@ -3,11 +3,11 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React from 'react';
+import React, { useMemo, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
-import { X, Check, Lock } from 'lucide-react';
+import { X, Check, Lock, ChevronDown } from 'lucide-react';
 import { useModal } from '../hooks/useModal';
 import { type CategoryType } from './KnowledgeTree';
 import { type CourseData } from './Library';
@@ -22,6 +22,7 @@ interface StudyPassportModalProps {
   userProgress: UserProgress;
   allCourses: CourseData[];
   categoryTitles: Record<CategoryType, string>;
+  onSelectModule?: (moduleId: string) => void;
 }
 
 // Category display order and stamp colors (literal Tailwind classes for CDN)
@@ -39,13 +40,30 @@ const StudyPassportModal: React.FC<StudyPassportModalProps> = ({
   userProgress,
   allCourses,
   categoryTitles,
+  onSelectModule,
 }) => {
   useModal(isOpen, onClose);
+  const [filter, setFilter] = useState<'all' | 'remaining' | 'complete'>('all');
+  const [openCategories, setOpenCategories] = useState<Set<CategoryType>>(() => new Set(['architecture-mindset']));
   const totalModules = allCourses.length;
   const completedModules = allCourses.filter(course => {
     const progress = userProgress[course.id];
     return progress && progress.unlockedSection >= course.sectionsCount;
   }).length;
+  const titleCounts = useMemo(() => {
+    const counts = new Map<string, number>();
+    allCourses.forEach(course => counts.set(course.title, (counts.get(course.title) ?? 0) + 1));
+    return counts;
+  }, [allCourses]);
+
+  const toggleCategory = (category: CategoryType) => {
+    setOpenCategories(current => {
+      const next = new Set(current);
+      if (next.has(category)) next.delete(category);
+      else next.add(category);
+      return next;
+    });
+  };
 
   return createPortal(
     <AnimatePresence>
@@ -99,6 +117,23 @@ const StudyPassportModal: React.FC<StudyPassportModalProps> = ({
                   transition={{ duration: 1, delay: 0.3, ease: 'easeOut' }}
                 />
               </div>
+              <div className="mt-4 flex rounded-xl border border-[#DDD8D2] bg-white p-1 dark:border-zinc-700 dark:bg-zinc-800" role="group" aria-label="Filter passport stamps">
+                {([
+                  ['all', 'All'],
+                  ['remaining', 'Remaining'],
+                  ['complete', 'Complete'],
+                ] as const).map(([id, label]) => (
+                  <button
+                    key={id}
+                    type="button"
+                    aria-pressed={filter === id}
+                    onClick={() => setFilter(id)}
+                    className={`min-h-9 flex-1 rounded-lg px-2 text-[11px] font-semibold ${filter === id ? 'bg-[#1A1A1A] text-white dark:bg-white dark:text-zinc-900' : 'text-zinc-500 dark:text-zinc-400'}`}
+                  >
+                    {label}
+                  </button>
+                ))}
+              </div>
             </div>
 
             {/* Stamp grid by category */}
@@ -111,21 +146,34 @@ const StudyPassportModal: React.FC<StudyPassportModalProps> = ({
                   const p = userProgress[c.id];
                   return p && p.unlockedSection >= c.sectionsCount;
                 }).length;
+                const visibleCourses = categoryCourses.filter(course => {
+                  const progress = userProgress[course.id];
+                  const complete = Boolean(progress && progress.unlockedSection >= course.sectionsCount);
+                  return filter === 'all' || (filter === 'complete' ? complete : !complete);
+                });
+                const isExpanded = openCategories.has(key);
 
                 return (
                   <div key={key}>
-                    <div className="flex items-center justify-between mb-3">
-                      <h3 className="text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">
-                        {categoryTitles[key]}
-                      </h3>
-                      <span className="text-[10px] font-bold text-zinc-400 dark:text-zinc-500">
+                    <button
+                      type="button"
+                      onClick={() => toggleCategory(key)}
+                      aria-expanded={isExpanded}
+                      className="mb-3 flex min-h-11 w-full items-center justify-between rounded-xl px-2 text-left hover:bg-white dark:hover:bg-zinc-800"
+                    >
+                      <h3 className="text-xs font-semibold uppercase tracking-widest text-zinc-500 dark:text-zinc-400">{categoryTitles[key]}</h3>
+                      <span className="flex items-center gap-2 text-[10px] font-bold text-zinc-400 dark:text-zinc-500">
                         {categoryComplete}/{categoryCourses.length}
+                        <ChevronDown size={15} className={`transition-transform ${isExpanded ? 'rotate-180' : ''}`} aria-hidden="true" />
                       </span>
-                    </div>
-                    <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
-                      {categoryCourses.map((course, i) => {
+                    </button>
+                    {isExpanded && (visibleCourses.length > 0 ? <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
+                      {visibleCourses.map((course, i) => {
                         const progress = userProgress[course.id];
                         const isComplete = progress && progress.unlockedSection >= course.sectionsCount;
+                        const displayTitle = (titleCounts.get(course.title) ?? 0) > 1 && course.subtitle
+                          ? `${course.title} · ${course.subtitle}`
+                          : course.title;
 
                         return (
                           <MotionDiv
@@ -133,15 +181,21 @@ const StudyPassportModal: React.FC<StudyPassportModalProps> = ({
                             initial={{ opacity: 0, scale: 0.5 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.3, delay: i * 0.03 }}
-                            className="flex min-w-0 items-center gap-2.5 rounded-xl border border-[#E2DDD6] bg-white px-2.5 py-2.5 text-left dark:border-zinc-700 dark:bg-zinc-800"
+                            className="min-w-0"
                           >
+                            <button
+                              type="button"
+                              onClick={() => { onClose(); onSelectModule?.(course.id); }}
+                              aria-label={`Open ${displayTitle}`}
+                              className="flex h-full w-full min-w-0 items-center gap-2.5 rounded-xl border border-[#E2DDD6] bg-white px-2.5 py-2.5 text-left transition-colors hover:border-[#383838] dark:border-zinc-700 dark:bg-zinc-800 dark:hover:border-zinc-500"
+                            >
                             <div
                               className={`h-9 w-9 shrink-0 rounded-full flex items-center justify-center transition-all ${
                                 isComplete
                                   ? `${stampBg} text-white ring-4 ${stampRing}`
                                   : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-300 dark:text-zinc-600'
                               }`}
-                              title={course.title}
+                              title={displayTitle}
                             >
                               {isComplete ? (
                                 <Check size={18} strokeWidth={2.5} />
@@ -152,12 +206,13 @@ const StudyPassportModal: React.FC<StudyPassportModalProps> = ({
                             <p className={`min-w-0 text-[11px] font-medium leading-snug ${
                               isComplete ? 'text-zinc-700 dark:text-zinc-300' : 'text-zinc-400 dark:text-zinc-600'
                             }`}>
-                              {course.title}
+                              {displayTitle}
                             </p>
+                            </button>
                           </MotionDiv>
                         );
                       })}
-                    </div>
+                    </div> : <p className="rounded-xl border border-dashed border-zinc-300 px-4 py-5 text-center text-xs text-zinc-400 dark:border-zinc-700">No {filter === 'complete' ? 'completed' : 'remaining'} stamps in this world.</p>)}
                   </div>
                 );
               })}

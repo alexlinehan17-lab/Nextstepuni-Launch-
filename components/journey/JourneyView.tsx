@@ -265,32 +265,48 @@ const JourneyView: React.FC<JourneyViewProps> = ({
   // No North Star set
   if (!northStar) {
     return (
-      <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 flex flex-col items-center justify-center px-6 text-center">
+      <div className="min-h-screen bg-[#FAFBF6] px-5 pb-28 pt-5 text-left dark:bg-zinc-950 sm:px-8 sm:pt-8">
+        <button
+          type="button"
+          onClick={onBack}
+          aria-label="Back to home"
+          className="inline-flex h-11 w-11 items-center justify-center rounded-xl border-[1.5px] border-[#383838] bg-white text-[#1A1A1A] shadow-[2px_2px_0_0_#383838] dark:border-zinc-600 dark:bg-zinc-900 dark:text-white"
+        >
+          <ArrowLeft size={18} aria-hidden="true" />
+        </button>
         <MotionDiv
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="max-w-md"
+          className="mx-auto mt-8 grid max-w-5xl items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16"
         >
-          <div className="w-20 h-20 rounded-2xl bg-[rgba(var(--accent),0.15)] text-[var(--accent-hex)] flex items-center justify-center mx-auto mb-6">
-            <Mountain size={40} />
+          <div className="overflow-hidden rounded-[24px] border-[1.5px] border-[#383838] bg-white p-2 shadow-[5px_5px_0_0_#383838] dark:border-zinc-600 dark:bg-zinc-900">
+            <img
+              src="/assets/guide/journey.jpg"
+              alt="My Journey island preview from the app"
+              className="aspect-[16/10] w-full rounded-[18px] object-cover object-top"
+            />
           </div>
-          <h2 className="font-serif text-3xl font-semibold text-zinc-900 dark:text-white mb-3">Set Your North Star</h2>
-          <p className="text-zinc-500 dark:text-zinc-400 text-sm leading-relaxed mb-8">
-            Your North Star defines what you're working towards. Set it to unlock your personal journey and start building towards your goals.
-          </p>
-          <button
-            onClick={onOpenNorthStar}
-            className="px-6 py-3 rounded-xl bg-[var(--accent-hex)] text-white font-semibold text-sm hover:opacity-90 transition-opacity"
-          >
-            Choose My North Star
-          </button>
-          <button
-            onClick={onBack}
-            className="block mx-auto mt-4 text-sm text-zinc-400 dark:text-zinc-500 hover:text-zinc-600 dark:hover:text-zinc-300"
-          >
-            Go Back
-          </button>
+          <div>
+            <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#B94712] dark:text-orange-300">My Journey</p>
+            <h1 className="mt-3 max-w-xl font-serif text-4xl font-semibold leading-[1.05] tracking-tight text-[#1A1A1A] dark:text-white sm:text-5xl">Build a world around what matters to you.</h1>
+            <p className="mt-5 max-w-lg text-base leading-relaxed text-zinc-600 dark:text-zinc-400">Choose a North Star—the reason you want to keep going—and your progress will begin shaping an island of your own.</p>
+            <ul className="mt-6 space-y-3 text-sm text-zinc-700 dark:text-zinc-300">
+              {['Turn study and module progress into Journey Points.', 'Unlock details that make the island feel like yours.', 'Keep your goal visible when motivation dips.'].map(item => (
+                <li key={item} className="flex items-start gap-3"><Check size={17} className="mt-0.5 shrink-0 text-[#F26B1F]" aria-hidden="true" />{item}</li>
+              ))}
+            </ul>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <button
+                onClick={onOpenNorthStar}
+                className="inline-flex min-h-12 items-center gap-2 rounded-xl border-[1.5px] border-[#1A1A1A] bg-[#F26B1F] px-6 text-sm font-semibold text-white shadow-[3px_3px_0_0_#1A1A1A] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none"
+              >
+                Choose my North Star
+                <Mountain size={16} aria-hidden="true" />
+              </button>
+              <button onClick={onBack} className="min-h-12 rounded-xl px-5 text-sm font-semibold text-zinc-600 hover:bg-zinc-100 dark:text-zinc-400 dark:hover:bg-zinc-900">Back to home</button>
+            </div>
+          </div>
         </MotionDiv>
       </div>
     );

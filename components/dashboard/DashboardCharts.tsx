@@ -77,7 +77,7 @@ export const ActivityChart: React.FC<{
   const labelEvery = buckets.length > 20 ? (width < 480 ? 6 : 4) : (buckets.length > 10 && width < 480 ? 2 : 1);
 
   const yFor = (value: number) => margin.top + plotHeight - ((value / maxValue) * plotHeight);
-  const gridTicks = [0, 0.5, 1];
+  const gridValues = Array.from(new Set([0, Math.round(maxValue / 2), maxValue])).sort((a, b) => a - b);
 
   return (
     <div ref={ref} className="relative w-full">
@@ -90,11 +90,10 @@ export const ActivityChart: React.FC<{
       >
         <title>Study activity</title>
         <desc>{hasData ? `${countWithUnit(values.reduce((sum, value) => sum + value, 0), unit)} in this period.` : `No ${unit} recorded in this period.`}</desc>
-        {gridTicks.map(tick => {
-          const y = margin.top + plotHeight - (tick * plotHeight);
-          const value = Math.round(maxValue * tick);
+        {gridValues.map(value => {
+          const y = margin.top + plotHeight - ((value / maxValue) * plotHeight);
           return (
-            <g key={tick}>
+            <g key={value}>
               <line x1={margin.left} y1={y} x2={width - margin.right} y2={y} stroke="var(--dashboard-grid)" strokeWidth="1" />
               <text x={margin.left - 8} y={y + 4} textAnchor="end" fontSize="11" fill="var(--ink-muted)">{value}</text>
             </g>
@@ -370,6 +369,9 @@ export const SessionMixChart: React.FC<{ values: RankedValue[] }> = ({ values })
 
 export const StudyRhythmChart: React.FC<{ weeks: RhythmDay[][] }> = ({ weeks }) => {
   const hasData = weeks.some(week => week.some(day => day.sessions > 0));
+  const visibleDays = weeks.flat().filter(day => !day.isFuture);
+  const totalSessions = visibleDays.reduce((sum, day) => sum + day.sessions, 0);
+  const activeDays = visibleDays.filter(day => day.sessions > 0).length;
   const cellColor = (day: RhythmDay) => {
     if (day.isFuture) return 'transparent';
     if (day.sessions === 0) return 'var(--dashboard-track)';
@@ -378,12 +380,12 @@ export const StudyRhythmChart: React.FC<{ weeks: RhythmDay[][] }> = ({ weeks }) 
     return 'var(--accent-hex)';
   };
   return (
-    <div className="flex min-h-[210px] flex-col justify-center" role="img" aria-label="Thirteen week study rhythm calendar">
+    <div className="flex min-h-[210px] flex-col justify-center" role="img" aria-label={`Thirteen week study rhythm: ${totalSessions} sessions across ${activeDays} active ${activeDays === 1 ? 'day' : 'days'}`}>
       <div className="flex items-stretch gap-2">
         <div className="grid grid-rows-7 gap-1 pt-px text-[9px] text-[var(--ink-muted)]" aria-hidden="true">
           {['M', '', 'W', '', 'F', '', 'S'].map((label, index) => <span key={index} className="flex h-full min-h-[12px] items-center">{label}</span>)}
         </div>
-        <div className="grid min-w-0 flex-1 gap-1" style={{ gridTemplateColumns: `repeat(${weeks.length}, minmax(0, 1fr))` }}>
+        <div aria-hidden="true" className="grid min-w-0 flex-1 gap-1" style={{ gridTemplateColumns: `repeat(${weeks.length}, minmax(0, 1fr))` }}>
           {weeks.map((week, weekIndex) => (
             <div key={weekIndex} className="grid grid-rows-7 gap-1">
               {week.map(day => (

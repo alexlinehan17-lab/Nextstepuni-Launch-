@@ -31,6 +31,9 @@ interface SettingsModalProps {
   unlockedCardStyles?: string[];
   userName?: string;
   userSchool?: string;
+  hasStudyProfile?: boolean;
+  hasNorthStar?: boolean;
+  onStartProfileSetup?: () => void;
   /** Phase 8: current year group, used by the School Year section to
    *  render the "I'm now in X" forward-progression button. */
   userYearGroup?: YearGroup;
@@ -46,7 +49,8 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
   isOpen, onClose, settings, updateSetting,
   unlockedAvatarSeeds = [], unlockedThemes: _unlockedThemes = [], unlockedCardStyles: _unlockedCardStyles = [],
   pointsBalance = 0, onPurchaseAvatar,
-  userName, userSchool, userYearGroup, onChangeSubjects, onResetNorthStar, onAdvanceYear, onLogout,
+  userName, userSchool, userYearGroup, hasStudyProfile = true, hasNorthStar = true,
+  onStartProfileSetup, onChangeSubjects, onResetNorthStar, onAdvanceYear, onLogout,
 }) => {
   // Junior Cycle always runs in Essentials Mode (simpler, shorter modules) — the
   // toggle is shown as locked-on rather than editable. See useEssentialsMode.
@@ -69,6 +73,12 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
     setShowSaved(true);
     flashTimerRef.current = setTimeout(() => setShowSaved(false), 1200);
   };
+
+  const schoolLabel = userSchool
+    ? userSchool
+        .replace(/[_-]+/g, ' ')
+        .replace(/\b\w/g, character => character.toUpperCase())
+    : '';
 
   return createPortal(
     <>
@@ -95,7 +105,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
             onClick={(e: React.MouseEvent) => e.stopPropagation()}
           >
             {/* Header */}
-            <div className="flex items-center justify-between p-6 pb-4 border-b border-[#DDD8D2] dark:border-zinc-700">
+            <div className="sticky top-0 z-20 flex items-center justify-between border-b border-[#DDD8D2] bg-[#FAFBF6]/95 p-6 pb-4 backdrop-blur dark:border-zinc-700 dark:bg-zinc-900/95">
               <h2 id="settings-dialog-title" className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white tracking-tight">
                 Settings
               </h2>
@@ -132,8 +142,24 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                   </h3>
                   <div className="p-3 rounded-xl bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06]">
                     {userName && <p className="text-sm font-medium text-zinc-700 dark:text-zinc-200">{userName}</p>}
-                    {userSchool && <p className="text-[11px] text-zinc-400 dark:text-zinc-500 mt-0.5">{userSchool}</p>}
+                    {userSchool && <p className="text-[11px] text-zinc-400 dark:text-zinc-500 mt-0.5">School · {schoolLabel}</p>}
                   </div>
+                </section>
+              )}
+
+              {(!hasStudyProfile || !userYearGroup) && onStartProfileSetup && (
+                <section className="rounded-2xl border-[1.5px] border-[#383838] bg-[#FDF1E8] p-4 shadow-[3px_3px_0_0_#383838] dark:bg-orange-950/20">
+                  <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#B94712] dark:text-orange-300">Personalise your app</p>
+                  <h3 className="mt-1 font-serif text-lg font-semibold text-[#1A1A1A] dark:text-white">Finish your study profile.</h3>
+                  <p className="mt-1 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">Add your year and subjects to unlock tailored sessions, recommendations and exam tools.</p>
+                  <button
+                    type="button"
+                    onClick={() => { onClose(); onStartProfileSetup(); }}
+                    className="mt-4 inline-flex min-h-11 items-center gap-2 rounded-xl border-[1.5px] border-[#1A1A1A] bg-[#F26B1F] px-4 text-sm font-semibold text-white shadow-[2px_2px_0_0_#1A1A1A] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none"
+                  >
+                    Set up my profile
+                    <ArrowRight size={15} aria-hidden="true" />
+                  </button>
                 </section>
               )}
 
@@ -148,9 +174,10 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                   </span>
                 </div>
                 <div className="grid grid-cols-4 gap-2.5">
-                  {AVATAR_SEEDS.map(seed => (
+                  {AVATAR_SEEDS.map((seed, index) => (
                     <button
                       key={seed}
+                      aria-label={`Select avatar option ${index + 1}`}
                       onClick={() => {
                         updateSetting('avatar', seed);
                         flash();
@@ -161,7 +188,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                           : 'bg-zinc-50 dark:bg-white/[0.04] ring-1 ring-zinc-200 dark:ring-white/[0.06] hover:ring-zinc-300 dark:hover:ring-white/[0.15]'
                       }`}
                     >
-                      <Avatar seed={seed} alt={seed} className="w-full h-full rounded-lg" />
+                      <Avatar seed={seed} alt="" className="w-full h-full rounded-lg" />
                     </button>
                   ))}
                   {EXTRA_AVATAR_SEEDS.map(seed => {
@@ -169,7 +196,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                     const canAfford = pointsBalance >= AVATAR_PRICE_JP;
                     const isPurchasing = purchasingAvatar === seed;
                     return (
-                      <div key={seed} className="group relative" title={isUnlocked ? seed : `${AVATAR_PRICE_JP} JP`}>
+                      <div key={seed} className="group relative" title={isUnlocked ? 'Unlocked avatar' : `${AVATAR_PRICE_JP} JP`}>
                         <button
                           onClick={async () => {
                             if (isUnlocked) {
@@ -189,7 +216,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                               setPurchasingAvatar(null);
                             }
                           }}
-                          aria-label={isUnlocked ? `Select ${seed} avatar` : `Unlock ${seed} avatar for ${AVATAR_PRICE_JP} JP`}
+                          aria-label={isUnlocked ? `Select avatar option ${AVATAR_SEEDS.length + EXTRA_AVATAR_SEEDS.indexOf(seed) + 1}` : `Unlock avatar option ${AVATAR_SEEDS.length + EXTRA_AVATAR_SEEDS.indexOf(seed) + 1} for ${AVATAR_PRICE_JP} JP`}
                           disabled={isPurchasing}
                           className={`w-full rounded-xl aspect-square p-1.5 transition-all ${
                             isUnlocked
@@ -201,7 +228,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                         >
                           <Avatar
                             seed={seed}
-                            alt={seed}
+                            alt=""
                             className={`w-full h-full rounded-lg transition-all ${!isUnlocked ? 'grayscale opacity-35 group-hover:opacity-20 group-focus-within:opacity-20' : ''}`}
                           />
                           {!isUnlocked && (
@@ -234,6 +261,9 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                 <div className="space-y-2">
                   {/* Dark Mode */}
                   <button
+                    role="switch"
+                    aria-checked={settings.darkMode}
+                    aria-label={settings.darkMode ? 'Use light mode' : 'Use dark mode'}
                     onClick={() => {
                       updateSetting('darkMode', !settings.darkMode);
                       flash();
@@ -256,6 +286,9 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                   {/* Essentials mode toggle. Junior Cycle is always on (locked);
                       senior students can toggle it. */}
                   <button
+                    role="switch"
+                    aria-checked={isJunior || settings.essentialsMode}
+                    aria-label={isJunior ? 'Essentials Mode is always on for Junior Cycle' : 'Use Essentials Mode'}
                     onClick={() => {
                       if (isJunior) return;
                       updateSetting('essentialsMode', !settings.essentialsMode);
@@ -306,7 +339,15 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                               : `You're in ${yearGroupLabel(userYearGroup)}.`}
                         </p>
                       </div>
-                      {!action || action.kind === 'terminal' ? (
+                      {!action && onStartProfileSetup ? (
+                        <button
+                          type="button"
+                          onClick={() => { onClose(); onStartProfileSetup(); }}
+                          className="w-full rounded-xl border-[1.5px] border-[#1A1A1A] bg-white px-4 py-3 text-sm font-semibold text-[#1A1A1A] shadow-[2px_2px_0_0_#1A1A1A] dark:bg-zinc-800 dark:text-white"
+                        >
+                          Add my school year
+                        </button>
+                      ) : !action || action.kind === 'terminal' ? (
                         <p className="text-xs text-zinc-500 dark:text-zinc-400 italic">
                           {action?.label ?? 'Set your school year so we can tune content to where you are.'}
                         </p>
@@ -425,7 +466,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                     >
                       <div className="flex items-center gap-3">
                         <Compass size={16} className="text-zinc-400" />
-                        <p className="text-sm font-medium text-zinc-700 dark:text-zinc-200">Edit North Star</p>
+                        <p className="text-sm font-medium text-zinc-700 dark:text-zinc-200">{hasNorthStar ? 'Edit North Star' : 'Set North Star'}</p>
                       </div>
                       <ChevronRight size={14} className="text-zinc-300 dark:text-zinc-600" />
                     </button>

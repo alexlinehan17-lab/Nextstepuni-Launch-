@@ -4,7 +4,7 @@
 */
 
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence, useReducedMotion } from 'framer-motion';
 import { MotionButton, MotionDiv, MotionSpan } from './Motion';
 import { ArrowRight, RotateCcw } from 'lucide-react';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
@@ -355,10 +355,15 @@ const PhaseTransition: React.FC<{ phase: Phase; onComplete: () => void }> = ({ p
 
 const TypingText: React.FC<{ text: string; sceneId: string }> = ({ text, sceneId }) => {
     const words = text.split(' ');
-    const [visibleCount, setVisibleCount] = useState(0);
+    const reducedMotion = useReducedMotion();
+    const [visibleCount, setVisibleCount] = useState(reducedMotion ? words.length : 0);
     const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
     useEffect(() => {
+        if (reducedMotion) {
+            setVisibleCount(words.length);
+            return;
+        }
         setVisibleCount(0);
         intervalRef.current = setInterval(() => {
             setVisibleCount(prev => {
@@ -367,15 +372,18 @@ const TypingText: React.FC<{ text: string; sceneId: string }> = ({ text, sceneId
             });
         }, 35);
         return () => { if (intervalRef.current) clearInterval(intervalRef.current); };
-    }, [sceneId, words.length]);
+    }, [sceneId, words.length, reducedMotion]);
 
     return (
         <p className="font-serif text-[16px] sm:text-[17px] leading-[1.5] italic" style={{ color: INK }}>
+            <span className="sr-only">{text}</span>
+            <span aria-hidden="true">
             {words.map((word, i) => (
                 <MotionSpan key={`${sceneId}-${i}`} initial={false} animate={{ opacity: i < visibleCount ? 1 : 0 }} transition={{ duration: 0.15 }} className="inline">
                     {word}{' '}
                 </MotionSpan>
             ))}
+            </span>
         </p>
     );
 };
