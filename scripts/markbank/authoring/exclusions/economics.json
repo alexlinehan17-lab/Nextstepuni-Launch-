@@ -11,12 +11,12 @@
  },
  {
   "ref": "2022 HL Section A Q6(b)",
-  "reason": "the scheme prints no tariff for this part (never guess a tariff), and its two bullets are welded mid-sentence",
+  "reason": "the scheme prints no tariff for this part. Read at SPAN level, scheme p.10 carries exactly three mark cells — 4, 2 and 2 at y=42, 57 and 71, all stacked at the head of (a) — and nothing at all beside (b) at y=501 or (c) at y=618. (The 1 and 2 further down the column are subscripts from the diagram labels D1=AR1=MR1, not cells.) The scheme does print the response; nothing prices it.",
   "evidence": "Marks column empty beside (b) in the scheme PDF; the response reads \"• In the short run if AR is greater than AVC • The firm is making a loss but once it covers its average variable costs it will contributes towards its fixed cost then the loss from shutting down would be greater…\""
  },
  {
   "ref": "2022 HL Section A Q6(c)",
-  "reason": "the scheme prints no tariff for this part",
+  "reason": "the scheme prints no tariff for this part — see the note on Q6(b). Scheme p.10 carries three cells, all at the head of (a), and nothing beside (c) at y=618.",
   "evidence": "Marks column empty beside (c): \"A firm is most efficient when it is producing at the minimum point of AC. … It will not be earning normal profit and so will be forced due to inefficiency to leave the industry.\" — no mark cell anywhere in the part."
  },
  {
@@ -31,7 +31,7 @@
  },
  {
   "ref": "2024 HL Section A Q10(a)(i)",
-  "reason": "The paper completes this part for the student — nothing is asked of them.",
+  "reason": "the paper completes this part for the student. The national-accounts ladder prints the GDP-to-GNP step already worked — 430.00 plus or minus (105.00), Ans: €325bn — as the example that shows how to do (a)(ii). Nothing is asked of the candidate here, so there is no ask to card.",
   "evidence": "Paper: 'use the information above to calculate part (ii). Part (i) has been completed for you.' Scheme p.14: '(i) = Gross National Product (GNP) at Current Market Prices Ans: €325 bn'."
  }
 ]
