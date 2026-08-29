@@ -15,7 +15,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from econ_auto import Paper  # noqa: E402
-from econ_lib import anyN, block, bullets, card, load, point, tidy  # noqa: E402
+from econ_lib import anyN, as_option, block, bullets, card, load, point, tidy  # noqa: E402
 
 P = Paper(2022, 'ordinary', 'A')
 SCAFFOLD = ('Possible responses', 'Suggested responses')
@@ -204,5 +204,26 @@ P.cards.append(card(
     'The paper offers Q10 as (a) or (b); the (a) comparison is carded as '
     'econ-2022-ol-sa-q10-a.',
     section='A'))
+
+# ── The part whose question IS a chart ─────────────────────────────────────
+# Excluded until now as answered by reading the unemployment chart. The crop is
+# catalogued with verified alt text, so binding it gives the student what the
+# candidate in the hall had, and the scheme names the two months outright.
+P.cards.append(card(
+    'econ-2022-ol-seca-q6-i', 2022, 'ordinary', 'economics-3-2',
+    'peak-months-of-unemployment', '2022 OL Section A Q6(i)',
+    'Identify the two months when the number of people unemployed was at its highest.',
+    '1 @ 6+1 @ 3', 9,
+    [anyN('r-1', 'The two peak months \u2014 both', None, 2, 6,
+          [as_option(block(BODY, 'Month 1: March (2021)', '\u27e8')),
+           as_option(block(BODY, 'Month 2: April (2021)', '(ii) Outline one reason'))],
+          'Both months are wanted and the scheme prices them unevenly: \u27e86+3\u27e9, six for '
+          'the first and three for the second. The chart peaks across the spring 2021 lockdown.',
+          steps=[6, 3])],
+    'The two peaks sit together at the top of the curve, so the pair has to be read off the '
+    'chart rather than recalled.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2022-OL-paper-p06-i0'))
+
 
 P.emit()

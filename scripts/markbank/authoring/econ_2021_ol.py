@@ -493,4 +493,28 @@ P.cards.append(card(
     'failure — each with its example.',
     stem='The Irish government raised over €33 million in sugar tax in 2019.'))
 
+# ── The parts whose question IS a chart ────────────────────────────────────
+# Excluded until now as "every response reads the chart printed with it". That
+# was true of the response and was never a reason to leave the part out: the
+# crop is catalogued, carries verified alt text and an md5 the build re-checks,
+# and the scheme's responses are ordinary prose that quotes figures off it.
+# With the figure bound the student has exactly what the candidate in the hall
+# had.
+
+P.cards.append(card(
+    'econ-2021-ol-q14-c-i', 2021, 'ordinary', 'economics-3-1',
+    'comparing-income-tax-across-countries', '2021 OL Q14(c)(i)',
+    'Using the data above name the countries where an employee would pay the lowest tax and '
+    'the highest tax.',
+    '2 @ 5', 10,
+    [point('r-1', as_option(block(BODY, 'The lowest tax Ireland', '(ii) Is Value Added Tax')), 10,
+           'Both countries, 5 marks each. The table prices the same \u20ac18,000 salary in five '
+           'countries, so the answer is read straight off it \u2014 Ireland lowest at \u20ac510, '
+           'Germany highest at \u20ac4,770.')],
+    'The pairing is the point: the same salary carries nine times the tax in Germany that it '
+    'does in Ireland.',
+    tariff_kind='fixed',
+    figure_key='economics-2021-OL-paper-p21-i0'))
+
+
 P.emit()

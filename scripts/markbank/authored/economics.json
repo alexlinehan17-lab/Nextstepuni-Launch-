@@ -1201,6 +1201,39 @@
   "notes": ""
  },
  {
+  "id": "econ-2021-hl-q16-a-i-trend",
+  "topicId": "economics-3-2",
+  "conceptId": "trend-in-air-passenger-numbers",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 HL Q16(a)(i)",
+  "questionText": "Using the data provided above, analyse the trend in the number of passengers handled by the main Irish airports between 2017 and 2020.",
+  "stem": "",
+  "figureKey": "economics-2021-HL-paper-p34-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "7",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Between Q2 2017 and Q2 2019 there is a steady increase from over 9 million passengers to just over 10 million passengers. • Between Q2 2019 to Q2 2020 there is a sharp decline the passengers from just over 10 million down to virtually zero.",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "One analysis worth 7. The scheme prints the rise and the collapse as a single response rather than as alternatives, so the trend is not analysed until both movements are named — and the marks are for quoting the figures, not for the adjective."
+   }
+  ],
+  "notes": "The id carries a -trend suffix because econ-2021-hl-q16-a-i is taken by a card whose citation econ_refs.py corrects to Q16(c)(i); an id is never renamed, since it keys a student’s review history. The chart is the question. The scheme’s own wording puts the passenger numbers either side of Q2 2019, which is the shape the graph makes: three years of gentle growth and then a near-vertical fall."
+ },
+ {
   "id": "econ-2021-hl-q11-c-i",
   "topicId": "economics-1-5",
   "conceptId": "what-internal-economies-of-scale-are",
@@ -3689,6 +3722,39 @@
    }
   ],
   "notes": "The scheme accepts the general account or either named form — complete or partial failure — each with its example."
+ },
+ {
+  "id": "econ-2021-ol-q14-c-i",
+  "topicId": "economics-3-1",
+  "conceptId": "comparing-income-tax-across-countries",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 OL Q14(c)(i)",
+  "questionText": "Using the data above name the countries where an employee would pay the lowest tax and the highest tax.",
+  "stem": "",
+  "figureKey": "economics-2021-OL-paper-p21-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 @ 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The lowest tax Ireland The highest tax Germany",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Both countries, 5 marks each. The table prices the same €18,000 salary in five countries, so the answer is read straight off it — Ireland lowest at €510, Germany highest at €4,770."
+   }
+  ],
+  "notes": "The pairing is the point: the same salary carries nine times the tax in Germany that it does in Ireland."
  },
  {
   "id": "econ-2021-ol-sa-q10-b",
@@ -8058,7 +8124,7 @@
   "questionRef": "2022 OL Section A Q1(ii)",
   "questionText": "The diagram shows the forecast growth in the Irish economy for 2020 to 2023. Explain the term economic growth.",
   "stem": "",
-  "figureKey": "economics-2022-OL-paper-p03-i0",
+  "figureKey": "",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -8409,6 +8475,51 @@
    }
   ],
   "notes": "The paper offers Q10 as (a) or (b); the (a) comparison is carded as econ-2022-ol-sa-q10-a."
+ },
+ {
+  "id": "econ-2022-ol-seca-q6-i",
+  "topicId": "economics-3-2",
+  "conceptId": "peak-months-of-unemployment",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 OL Section A Q6(i)",
+  "questionText": "Identify the two months when the number of people unemployed was at its highest.",
+  "stem": "",
+  "figureKey": "economics-2022-OL-paper-p06-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 @ 6+1 @ 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The two peak months — both",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Both months are wanted and the scheme prices them unevenly: ⟨6+3⟩, six for the first and three for the second. The chart peaks across the spring 2021 lockdown.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 6,
+     "options": [
+      "Month 1: March (2021)",
+      "Month 2: April (2021)"
+     ],
+     "perOptionSteps": [
+      6,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "The two peaks sit together at the top of the curve, so the pair has to be read off the chart rather than recalled."
  },
  {
   "id": "econ-2023-hl-q11-a-ii",
@@ -10158,6 +10269,48 @@
    }
   ],
   "notes": ""
+ },
+ {
+  "id": "econ-2023-hl-q14-a-i",
+  "topicId": "economics-3-2",
+  "conceptId": "trend-in-the-monthly-unemployment-rate",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 HL Q14(a)(i)",
+  "questionText": "From the graph above analyse one trend in Ireland’s monthly unemployment rate from March 2021 to September 2022, using figures from the above graph.",
+  "stem": "",
+  "figureKey": "economics-2023-HL-paper-p25-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 8",
+   "answer": 1,
+   "ofParts": 3,
+   "perPart": 8
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "One trend, quoted off the graph — any one",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The question asks for ONE trend and the scheme prints three, so any one earns the 8. The tariff is written (4+4): half for naming the direction, half for the figures that evidence it — a trend named without numbers is half an answer. Note the third option runs the other way; the graph does not fall throughout.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 8,
+     "options": [
+      "Between March 2021 and September 2022, the unemployment rate fell. It fell from 7.6% to approximately 4.4%. This is a decrease of 3.2%. •",
+      "Between March 2021 and May 2022 the unemployment rate fell. It fell from 7.6% to approximately 4.2%. This is a decrease of 3.4%. •",
+      "Between May 2022 and September 2022 the unemployment rate rose. It rose from 4.2% to 4.4%. This is an increase of 0.2%. (ii)"
+     ]
+    }
+   }
+  ],
+  "notes": "The scheme is explicit that a rise counts as readily as a fall. A student who spots the uptick from May 2022 has analysed a trend just as well as one who takes the whole period."
  },
  {
   "id": "econ-2023-hl-sa-q1-a",
@@ -12335,6 +12488,47 @@
    }
   ],
   "notes": ""
+ },
+ {
+  "id": "econ-2023-ol-q14-a-i",
+  "topicId": "economics-3-3",
+  "conceptId": "trend-in-petrol-prices",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q14(a)(i)",
+  "questionText": "Comment on one key trend in the price of petrol in the line graph above, using information from the line graph.",
+  "stem": "",
+  "figureKey": "economics-2023-OL-paper-p19-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "bestNofParts",
+   "notation": "1 @ 10",
+   "answer": 1,
+   "ofParts": 2,
+   "perPart": 10
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "One key trend, quoted off the graph — any one",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "One trend, 10 marks, written (6+4): 6 for the trend and 4 for the figures taken off the graph. The two halves of the year run opposite ways and either is accepted.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 10,
+     "options": [
+      "From April to June 2022, petrol prices increased steadily. Prices rose from €1.80 to over €2.10.",
+      "From June 2022 to September 2022 petrol prices fell. The decline was sharpest between June at €2.10 to under €1.90 in August. (ii)"
+     ]
+    }
+   }
+  ],
+  "notes": "The graph rises to a June peak and falls back after it, so \"petrol got dearer in 2022\" is only half of what the line shows."
  },
  {
   "id": "econ-2023-ol-sa-q2-b",
@@ -20734,7 +20928,7 @@
   "questionRef": "2025 HL Section A Q9(b)",
   "questionText": "With reference to the diagram, explain the shape of the curve labelled 2 — the kinked demand curve facing a firm in an oligopoly market.",
   "stem": "",
-  "figureKey": "economics-2025-HL-paper-p11-art",
+  "figureKey": "",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",

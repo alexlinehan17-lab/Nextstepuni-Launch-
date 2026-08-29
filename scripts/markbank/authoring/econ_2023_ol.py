@@ -347,4 +347,30 @@ P.cards.append(card(
     stem='Keogh’s Crisps are due to increase production capacity by 50%.',
     tariff_kind='fixed'))
 
+# ── The parts whose question IS a chart ────────────────────────────────────
+# Excluded until now as "every response reads the chart printed with it". That
+# was true of the response and was never a reason to leave the part out: the
+# crop is catalogued, carries verified alt text and an md5 the build re-checks,
+# and the scheme's responses are ordinary prose that quotes figures off it.
+# With the figure bound the student has exactly what the candidate in the hall
+# had.
+
+P.cards.append(card(
+    'econ-2023-ol-q14-a-i', 2023, 'ordinary', 'economics-3-3',
+    'trend-in-petrol-prices', '2023 OL Q14(a)(i)',
+    'Comment on one key trend in the price of petrol in the line graph above, using '
+    'information from the line graph.',
+    '1 @ 10', 10,
+    [anyN('r-1', 'One key trend, quoted off the graph \u2014 any one', 10, 1, 10,
+          [as_option(block(BODY, 'From April to June 2022, petrol prices increased steadily',
+                           'From June 2022 to September 2022 petrol prices fell')),
+           as_option(block(BODY, 'From June 2022 to September 2022 petrol prices fell',
+                           'Outline one reason why the price of petrol changed'))],
+          'One trend, 10 marks, written (6+4): 6 for the trend and 4 for the figures taken off '
+          'the graph. The two halves of the year run opposite ways and either is accepted.')],
+    'The graph rises to a June peak and falls back after it, so "petrol got dearer in 2022" is '
+    'only half of what the line shows.',
+    figure_key='economics-2023-OL-paper-p19-art'))
+
+
 P.emit()

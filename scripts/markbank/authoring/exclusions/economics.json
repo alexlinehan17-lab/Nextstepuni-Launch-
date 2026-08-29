@@ -25,11 +25,6 @@
   "evidence": "Scheme: 'MPS = 1 – 0.65 … Multiplier = 1.43'"
  },
  {
-  "ref": "2021 HL Q16(a)(i)",
-  "reason": "every response reads the air-passenger chart printed with it",
-  "evidence": "Scheme: 'steady increase from over 9 million… sharp decline… to virtually zero'"
- },
- {
   "ref": "2021 HL Q16(b)(i)",
   "reason": "the response is the worked percentage calculation",
   "evidence": "Scheme: '10.20 −9.15 = 1.05 … = 11.48%'"
@@ -93,11 +88,6 @@
   "ref": "2021 OL Q13(c)(ii)",
   "reason": "ALREADY RECORDED in econ_excluded.py: 'the responses are figures read out of the CPI table'",
   "evidence": "Scheme p.16: the answers are '-1.5%', '-0.2%', 'October to November / November to December' ⟨3 @ 6⟩, each read off the CPI chart printed beside the question."
- },
- {
-  "ref": "2021 OL Q14(c)(i)",
-  "reason": "answered by reading the income-tax table printed beside it",
-  "evidence": "Scheme p.18: 'The lowest tax Ireland / The highest tax Germany' ⟨2 @ 5⟩ — read straight out of the €18,000-salary table, same class as the recorded 2021 HL Section A Q7(a)."
  },
  {
   "ref": "2021 OL Q15(b)(i)",
@@ -310,11 +300,6 @@
   "evidence": "identify by placing a tick (✓) which two items are substitute goods ⟨3 x 2⟩ and which two items are complementary goods for the iPhone 13. Substitute Goods Complementary Goods Samsung S21 ✓ iPhone 13 case ✓"
  },
  {
-  "ref": "2022 OL Section A Q6(i)",
-  "reason": "answered by reading the unemployment graph printed with it",
-  "evidence": "Identify the two months when the number of people unemployed was at its highest. Month 1: March (2021) ⟨6+3⟩ Month 2: April (2021)"
- },
- {
   "ref": "2022 OL Section A Q7(a)(ii)",
   "reason": "answered by ticking fixed or variable against each cost in a table; no wording for a card to carry",
   "evidence": "Indicate by means of a tick (✓) which of the costs in the table below are fixed costs and which costs are variable costs. ⟨4+4+1+1⟩ Fixed Cost Variable Cost Wages €1,000 ✓ Raw Materials €1,500 ✓"
@@ -368,11 +353,6 @@
   "ref": "2023 HL Q13(b)(iii)",
   "reason": "the response is the worked injection calculation off the multiplier from (b)(ii)",
   "evidence": "How much will the government have to inject into this economy if it wants the economy to operate at its full employment level? Show your workings. €750m - €500m 2 = €250m 2 250/2 2 = Injection ⟨8⟩ €125m 2"
- },
- {
-  "ref": "2023 HL Q14(a)(i)",
-  "reason": "every response reads the unemployment chart printed beside it (established class — the recorded 2021 HL Q14(a)(i) is the same shape)",
-  "evidence": "• Between March 2021 and September 2022, the unemployment rate fell. It fell from 7.6% to approximately 4.4%. This is a decrease of 3.2%. • Between May 2022 and September 2022 the unemployment rate rose. It rose from 4.2% to 4.4%. ⟨8⟩ ⟨(4+4)⟩"
  },
  {
   "ref": "2023 HL Q15(a)(iii)",
@@ -448,11 +428,6 @@
   "ref": "2023 OL Q13(b)(ii)",
   "reason": "Already registered in econ_excluded.py: 'the response is the worked calculation' — a card would show the answer beside the sum that produces it.",
   "evidence": "Scheme p.18: 'National Income: ⟨18⟩ ⟨6 @ 3⟩ Y = C + I + G + (X-M); Y = €700m+ €200m + €400m + €300m - €200m; Y = €1,400m. Balance of Trade: ⟨9⟩ ⟨3 @ 3⟩ Exports – Imports; €300m – €200m = €100m.'"
- },
- {
-  "ref": "2023 OL Q14(a)(i)",
-  "reason": "Every response describes the shape of the petrol-price line graph printed with it — the registered chart-reading class.",
-  "evidence": "Scheme p.20: '⟨10⟩ ⟨(6+4)⟩ From April to June 2022, petrol prices increased steadily. Prices rose from €1.80 to over €2.10. From June 2022 to September 2022 petrol prices fell.'"
  },
  {
   "ref": "2023 OL Q14(b)(i)",

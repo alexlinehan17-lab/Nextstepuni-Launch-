@@ -75,11 +75,11 @@
   "refsHash": "ab5312971b0e0217"
  },
  "economics": {
-  "cards": 544,
-  "contentHash": "f48473cbba0ccc7a",
+  "cards": 549,
+  "contentHash": "11b878fca744452f",
   "coveragePct": 100.0,
-  "covered": 498,
-  "excluded": 160,
+  "covered": 503,
+  "excluded": 155,
   "leaves": 658,
   "open": 0,
   "orphans": 0,
@@ -87,7 +87,7 @@
    "count": 10,
    "hash": "d356131d0d2d0e2e"
   },
-  "refsHash": "4b6ae53c4a7c5984"
+  "refsHash": "715c6ca65c72eed5"
  },
  "home-economics": {
   "cards": 571,

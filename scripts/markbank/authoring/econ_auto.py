@@ -82,7 +82,7 @@ class Paper:
 
     def menu(self, key, cid, topic, concept, qtext, verbatim, note='',
              *, ref=None, drop=(), stop=None, after=None, claim=None, per=None, steps=None,
-             notes='', stem='', cap=None, trim=None):
+             notes='', stem='', cap=None, trim=None, figure=None, labels=None):
         """One card from one part.
 
         `drop` removes an option containing any of these strings — the scheme's
@@ -92,6 +92,19 @@ class Paper:
         begins it at the first option containing it — which is how the second
         half of a two-sided part is taken without naming every response in the
         first half.
+
+        `figure` names a crop from components/MarkBank/figures.json by KEY. The
+        Economics papers set a chart or table beside a great many parts and the
+        card is unanswerable without it — "analyse one trend in the monthly
+        unemployment rate, using figures from the above graph" is not a question
+        a student can meet from the wording alone. 159 of the subject's 161
+        catalogued crops already carry the questionRef they belong to, so the
+        binding is a lookup rather than a judgement; the build re-hashes the file
+        and refuses if its bytes have moved since the crop was inspected.
+
+        `labels` is the labelKey for a lettered diagram. The build requires one
+        whenever a card names letters, and each meaning describes what the label
+        POINTS AT — never what it is for, which would be the answer.
 
         `trim` cuts each option at a string. Where the two halves of a two-sided
         part are headed rather than bulleted — "AGREE:" … "DISAGREE:" — the
@@ -146,7 +159,8 @@ class Paper:
             '+'.join(f'1 @ {x}' for x in st) if st else f'{n} @ {m}', total,
             [anyN('r-1', verbatim, None if st else total, n, m, opts, note, steps=st)],
             notes, stem=stem, section=self.section,
-            tariff_kind='fixed' if st else 'bestNofParts'))
+            tariff_kind='fixed' if st else 'bestNofParts',
+            figure_key=figure or '', label_key=labels))
         return self.cards[-1]
 
     def _ref(self, cid):
