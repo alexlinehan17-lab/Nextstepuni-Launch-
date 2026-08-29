@@ -6342,6 +6342,88 @@
   "notes": "The five countries range from 21.7% down to 1.3%, so the average sits well below the widest gap — one country is not the story."
  },
  {
+  "id": "econ-2022-hl-q12-b-ii",
+  "topicId": "economics-2-0",
+  "conceptId": "long-run-equilibrium-of-a-monopoly",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q12(b)(ii)",
+  "questionText": "Explain, with the use of a fully labelled diagram, the long run equilibrium position of a monopoly firm.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "11 + 8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 19,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1 mark per label = 11 marks Price Quantity P1 Q1 C1 E D/AR MR MC AC SNP",
+    "marks": 11,
+    "openList": true,
+    "contextNote": "Eleven labels, one mark each, and the scheme says so in as many words. The axes count: Price and Quantity are two of the eleven, which is why \"fully labelled\" is not a stylistic instruction."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "• Equilibrium is at point E (where MC=MR). • Firms produce quantity Q1. • They sell the output at price P1. • Costs are at the level C1 (Y). • Firms earn supernormal profits as AR is greater than AC. • Inefficiency occurs as costs are not at the minimum point of the AC curve.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The explanation is worth 8 on top of the drawing. It runs in order: equilibrium where MC = MR, the quantity that follows, the price charged, the cost level, the supernormal profit that AR above AC produces — and the inefficiency, because a monopoly does not sit at the bottom of its AC curve."
+   }
+  ],
+  "notes": "A monopoly earns supernormal profit IN THE LONG RUN, which is what separates this diagram from perfect competition: no entry competes the profit away, so the SNP block stays."
+ },
+ {
+  "id": "econ-2022-hl-q16-c-i",
+  "topicId": "economics-1-3",
+  "conceptId": "minimum-pricing-on-fast-fashion",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q16(c)(i)",
+  "questionText": "Explain, with the use of a fully labelled diagram, how the introduction of minimum pricing (above the market equilibrium price) on fast fashion will impact on the market for fast fashion.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "10 + 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Surplus Price S1 Pmin E PE D1 Quantity QD QE QS",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Ten labels. The minimum price Pmin sits ABOVE the equilibrium PE — drawn below it the diagram shows a price floor that does nothing, which is the usual error."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Effect on price Through imposing a minimum price on these products, the price will be legally forced upwards from PE to Pmin. Effect on demand With the increase in price there will be a fall in demand for these products from QE to QD. Effect on market This will result in a surplus of fast fashion clothes as indicated above.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Three effects in a chain: price forced up from PE to Pmin, demand falls from QE to QD, and the gap between QS and QD is a SURPLUS. A floor above equilibrium always leaves unsold stock."
+   }
+  ],
+  "notes": "A minimum price only bites when it is set above the market price, and the consequence is unsold goods rather than a tidier market — which is the trade-off the question is about."
+ },
+ {
   "id": "econ-2022-hl-sa-q2-b",
   "topicId": "economics-1-1",
   "conceptId": "what-moves-personal-consumption",
@@ -16606,6 +16688,88 @@
   "notes": "Just over half the population growth came from migration rather than births, which is the point the figure is making."
  },
  {
+  "id": "econ-2024-hl-q14-b-i",
+  "topicId": "economics-2-0",
+  "conceptId": "long-run-equilibrium-in-monopolistic-competition",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 HL Q14(b)(i)",
+  "questionText": "Explain, with the aid of a fully labelled diagram (including the axes), the long-run equilibrium of a firm operating in monopolistic competition.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "12 + 9",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 21,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "T P/C Q Diagram: Price P C Q Qty MR AR AC MC E T A axis axis",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Twelve labels at one mark each — the scheme prices them ⟨12 x 1⟩ and counts both axes among them, which is why the paper says \"including the axes\"."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "• 1. Equilibrium: • Occurs at point E where • MC = MR (and MC is rising faster) 2. Output: • The firm produces Q. 3. Price: The price charged is P. 4. Cost: • Costs or production are shown at point C. 5. Profit: • The firm is earning normal profit • because AR = AC. 6. Scarce resources: • The firm is wasting scarce resources / it is inefficient • as they are not producing at the lowest point of the AC.",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "Five numbered steps: equilibrium where MC = MR, the output, the price, the cost level, and what the gap between price and cost means. In the LONG run that gap has closed — entry competes supernormal profit away, so the firm earns normal profit only."
+   }
+  ],
+  "notes": "This is the diagram students confuse with monopoly. Both have a downward-sloping AR, but in monopolistic competition free entry drags AC up to touch AR, so no supernormal profit survives."
+ },
+ {
+  "id": "econ-2024-hl-q11-b-i",
+  "topicId": "economics-3-0",
+  "conceptId": "the-multiplier-and-what-it-means",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 HL Q11(b)(i)",
+  "questionText": "Based on the information stated above and using an appropriate formula, calculate the value of the multiplier in the Irish economy and explain the economic significance of your answer.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "12 + 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Method 1: Workings: MPS = 1- 0.6 = 0.4 1 1 0.22 + 0.3 + 0.4 0.92 Answer = 1.08 Method 2: 1 1 1 – (0.6 - 0.22 - 0.3) 0.92 Answer = 1.08",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Two routes to the same 1.08. Method 1 derives MPS first and adds the three leakages; Method 2 subtracts them from 1 inside the bracket. Either earns the marks — they are the same denominator written two ways."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Explanation: • In this case if there is an injection of €1 into the circular flow of income, national income will increase by 1.08 times . • Any initial injection of spending will cause a greater increase in the circular flow of income by 1.08 times.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "What the NUMBER means: €1 injected raises national income by €1.08. A multiplier barely above 1 says most of each euro leaks straight back out — which for a small open economy like Ireland is the point."
+   }
+  ],
+  "notes": "Calculating 1.08 and stopping answers half the question: the ask says \"and explain the economic significance\", and the significance is how SMALL the figure is."
+ },
+ {
   "id": "econ-2024-hl-sa-q2-b",
   "topicId": "economics-3-2",
   "conceptId": "why-full-employment-is-an-aim",
@@ -21909,6 +22073,47 @@
    }
   ],
   "notes": "Fixed cost stays at €60 whatever the output, so variable cost is whatever is left of total cost. Average cost then spreads the whole total over the units."
+ },
+ {
+  "id": "econ-2025-hl-q11-b-i",
+  "topicId": "economics-2-0",
+  "conceptId": "long-run-equilibrium-of-a-patent-monopoly",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q11(b)(i)",
+  "questionText": "A patent gives a pharmaceutical company the sole right to produce and sell a new drug. Explain, with the aid of a fully labelled diagram (including the axes), the long run equilibrium position of a pharmaceutical company operating in a monopoly market.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "12 + 9",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 21,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Price / Cost € P1 Z SNPs C1 Y W E = D Q1 Quantity MR P Q MR AR MC AC E Q1 P1 C1 SNPs",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "The labels ARE the marks here — twelve of them, axes included, which is why the paper says \"including the axes\". MR, AR, MC and AC all have to appear, and the supernormal-profit block has to be identified on the drawing."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "• Equilibrium is at point E where MC = MR (and MC is rising). • The company produces Q1. • It sells its output at P1. • Costs are at the level C1 (point Y). • The company earns supernormal profits (SNPs) as AR is greater than AC. • The company is inefficient / wastes resources as costs are not at the minimum point of the AC curve (W).",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "The explanation runs in order: equilibrium where MC = MR, the quantity that follows, the price charged, the cost level, the supernormal profit that AR above AC produces, and the inefficiency — costs are not at the minimum of the AC curve."
+   }
+  ],
+  "notes": "The patent is what makes it long-run: no entrant can compete the supernormal profit away, so unlike perfect competition the SNP block survives."
  },
  {
   "id": "econ-2025-hl-sa-q1-a-for",

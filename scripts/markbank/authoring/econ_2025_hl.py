@@ -628,4 +628,29 @@ P.cards.append(card(
                {'letter': 'B', 'meaning': 'the missing Average Cost cell, at an output of 60 '
                                           'smoothies', 'askedInThisQuestion': True}]))
 
+# ── Diagram-and-explanation parts, priced as TWO cells ─────────────────────
+# Two mark cells beside a part that asks for a labelled diagram AND an
+# explanation are the two halves of one ask, not two candidates for one tariff.
+# The scout read them as ambiguous; the scheme page shows they are not.
+
+P.cards.append(card(
+    'econ-2025-hl-q11-b-i', 2025, 'higher', 'economics-2-0',
+    'long-run-equilibrium-of-a-patent-monopoly', '2025 HL Q11(b)(i)',
+    'A patent gives a pharmaceutical company the sole right to produce and sell a new drug. '
+    'Explain, with the aid of a fully labelled diagram (including the axes), the long run '
+    'equilibrium position of a pharmaceutical company operating in a monopoly market.',
+    '12 + 9', 21,
+    [point('r-1', as_option(block(_MIXED, 'Price / Cost \u20ac P1 Z SNPs', 'Explanation:')), 12,
+           'The labels ARE the marks here \u2014 twelve of them, axes included, which is why the '
+           'paper says "including the axes". MR, AR, MC and AC all have to appear, and the '
+           'supernormal-profit block has to be identified on the drawing.'),
+     point('r-2', as_option(block(_MIXED, '\u2022 Equilibrium is at point E where MC = MR',
+                                  '25 | P a g e')), 9,
+           'The explanation runs in order: equilibrium where MC = MR, the quantity that follows, '
+           'the price charged, the cost level, the supernormal profit that AR above AC produces, '
+           'and the inefficiency \u2014 costs are not at the minimum of the AC curve.')],
+    'The patent is what makes it long-run: no entrant can compete the supernormal profit away, so '
+    'unlike perfect competition the SNP block survives.',
+    tariff_kind='fixed'))
+
 P.emit()

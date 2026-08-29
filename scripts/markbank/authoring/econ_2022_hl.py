@@ -517,4 +517,59 @@ P.cards.append(card(
     tariff_kind='fixed',
     figure_key='economics-2022-HL-paper-p28-i0'))
 
+# ── A diagram-and-explanation part, priced as TWO cells ────────────────────
+# The scout reported this as "2 bare totals — cannot tell which prices this
+# part". That was a misreading of the shape, not a real ambiguity: BOTH cells
+# price it. The scheme puts ⟨11⟩ against the diagram — and says so outright,
+# "1 mark per label = 11 marks" — and ⟨8⟩ against the explanation beneath it.
+# The part is worth 19 and takes two rows.
+#
+# The lesson generalises: where a part asks for a labelled diagram AND an
+# explanation, two mark cells beside it are the two halves of one ask, not two
+# candidates for one tariff.
+P.cards.append(card(
+    'econ-2022-hl-q12-b-ii', 2022, 'higher', 'economics-2-0',
+    'long-run-equilibrium-of-a-monopoly', '2022 HL Q12(b)(ii)',
+    'Explain, with the use of a fully labelled diagram, the long run equilibrium position of a '
+    'monopoly firm.',
+    '11 + 8', 19,
+    [point('r-1', as_option(block(BODY, '1 mark per label = 11 marks',
+                                  '\u2022 Equilibrium is at point E')), 11,
+           'Eleven labels, one mark each, and the scheme says so in as many words. The axes count: '
+           'Price and Quantity are two of the eleven, which is why "fully labelled" is not a '
+           'stylistic instruction.'),
+     point('r-2', as_option(block(BODY, '\u2022 Equilibrium is at point E',
+                                  '(iii) Explain two changes in market conditions')), 8,
+           'The explanation is worth 8 on top of the drawing. It runs in order: equilibrium where '
+           'MC = MR, the quantity that follows, the price charged, the cost level, the supernormal '
+           'profit that AR above AC produces \u2014 and the inefficiency, because a monopoly does '
+           'not sit at the bottom of its AC curve.')],
+    'A monopoly earns supernormal profit IN THE LONG RUN, which is what separates this diagram '
+    'from perfect competition: no entry competes the profit away, so the SNP block stays.',
+    tariff_kind='fixed'))
+
+
+# ── Diagram-and-explanation parts, priced as TWO cells ─────────────────────
+# Two mark cells beside a part that asks for a labelled diagram AND an
+# explanation are the two halves of one ask, not two candidates for one tariff.
+# The scout read them as ambiguous; the scheme page shows they are not.
+
+P.cards.append(card(
+    'econ-2022-hl-q16-c-i', 2022, 'higher', 'economics-1-3',
+    'minimum-pricing-on-fast-fashion', '2022 HL Q16(c)(i)',
+    'Explain, with the use of a fully labelled diagram, how the introduction of minimum pricing '
+    '(above the market equilibrium price) on fast fashion will impact on the market for fast '
+    'fashion.',
+    '10 + 5', 15,
+    [point('r-1', as_option(block(BODY, 'Surplus Price S1 Pmin E PE', 'Effect on price')), 10,
+           'Ten labels. The minimum price Pmin sits ABOVE the equilibrium PE \u2014 drawn below '
+           'it the diagram shows a price floor that does nothing, which is the usual error.'),
+     point('r-2', as_option(block(BODY, 'Effect on price Through imposing', '39 | P a g e')), 5,
+           'Three effects in a chain: price forced up from PE to Pmin, demand falls from QE to QD, '
+           'and the gap between QS and QD is a SURPLUS. A floor above equilibrium always leaves '
+           'unsold stock.')],
+    'A minimum price only bites when it is set above the market price, and the consequence is '
+    'unsold goods rather than a tidier market \u2014 which is the trade-off the question is about.',
+    tariff_kind='fixed'))
+
 P.emit()

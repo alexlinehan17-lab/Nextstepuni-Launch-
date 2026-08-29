@@ -70,11 +70,6 @@
   "evidence": "Paper: 'Explain, with the use of a fully labelled diagram how the equilibrium price of land is determined.' Scheme prints the diagram with 'The supply of land is fixed in quantity' welded beside it — recorded in econ_excluded.py EXCLUDED_TEXT."
  },
  {
-  "ref": "2022 HL Q12(b)(ii)",
-  "reason": "the explanation beside a monopoly diagram, marked 1 per label with the explanation as a block (recorded EXCLUDED_TEXT class)",
-  "evidence": "Paper: 'Explain, with the use of a fully labelled diagram, the long-run equilibrium position of a monopoly firm.' Scheme: 'They sell the output at price P1' welded to the diagram — recorded in econ_excluded.py."
- },
- {
   "ref": "2022 HL Q14(b)(i)",
   "reason": "the response is the worked cost calculation for the three missing table cells",
   "evidence": "\"Calculate the missing figures for A, B, and C in the table. Calculations: A: Total Cost B: Average Variable Cost C: Marginal Cost 100,000 400,000 450,000 ⟨9⟩ + 260,000 2 – 400,000 €360,000 €200,000 €50,000\""
@@ -98,11 +93,6 @@
   "ref": "2022 HL Q15(b)(i)",
   "reason": "answered by reading the euro–sterling exchange-rate chart printed with it",
   "evidence": "\"Identify one period where the value of the Euro depreciates against the Pound ⟨4 + 4⟩ Sterling. Explain your answer. During the period December 2013 to December 2015. This can be seen as the amount of Sterling which can be bought per Euro declines from 0.80 pence to 0.70 pence approximately. OR During…\""
- },
- {
-  "ref": "2022 HL Q16(c)(i)",
-  "reason": "the explanation beside a diagram, marked 10 for the drawing and 5 for the writing, with no split stated across the three effects (recorded EXCLUDED_TEXT class)",
-  "evidence": "Paper: 'Explain, with the use of a fully labelled diagram, how the introduction of minimum pricing...' Scheme: 'Effect on price Through imposing a minimum price' block welded to the diagram — recorded in econ_excluded.py."
  },
  {
   "ref": "2022 HL Section A Q1(a)",
@@ -310,11 +300,6 @@
   "evidence": "Scheme p.5: '(i) Identify the month when unemployment was at its lowest. July 2022 ⟨8⟩' — printed directly under the CSO unemployment-rate chart."
  },
  {
-  "ref": "2024 HL Q11(b)(i)",
-  "reason": "Already recorded in econ_excluded.py: the response is the worked multiplier calculation.",
-  "evidence": "Scheme p.16: '⟨12⟩ Method 1: Workings: MPS = 1- 0.6 = 0.4; 1/(0.22 + 0.3 + 0.4) = 1/0.92; Answer = 1.08', plus a ⟨4⟩ meaning explanation."
- },
- {
   "ref": "2024 HL Q12(b)(i)",
   "reason": "Answered only by reading the CPI graph printed beside it — the paper instructs 'Use figures from the graph'.",
   "evidence": "Scheme p.24: 'The overall trend of the CPI between March and October is decreasing. It has decreased by almost 3%. It has decreased from just under 8% in March 2023 to approx.. 5% in October 2023.' ⟨6⟩."
@@ -323,11 +308,6 @@
   "ref": "2024 HL Q12(b)(ii)",
   "reason": "A calculation grid completed on the paper; the scheme's response is the worked composite-price-index table, ⟨19⟩ in one lump with no per-step tariff printed (the bracketed cells are answer values, not marks).",
   "evidence": "Scheme p.24: 'Food 65% 60 66 — 66/60 × 100 = 110 × 65% ⟨71.5⟩; Transport 45/30 × 100 = 150 × 20% ⟨30.0⟩; Other 96/80 × 100 = 120 × 15% ⟨18⟩; Price Index for the current year ⟨119.5⟩'."
- },
- {
-  "ref": "2024 HL Q14(b)(i)",
-  "reason": "Already recorded in econ_excluded.py: the explanation is marked as a block and the scheme states no split.",
-  "evidence": "Scheme p.35: diagram itemised 'Diagram: ⟨12⟩ Price P C Q Qty MR AR AC MC E T A ⟨(12 x 1)⟩' but the six numbered written points (1. Equilibrium … 6. Scarce resources) share a block ⟨9⟩ with no per-point split."
  },
  {
   "ref": "2024 HL Q16(b)(ii)",
@@ -428,11 +408,6 @@
   "ref": "2024 OL Section A Q8(ii)",
   "reason": "NEW candidate: answered by reading the Gini-coefficient chart printed with it — same chart-read class as Q8(i).",
   "evidence": "(ii) Country with the highest level of inequality. USA [2nd @ 4]"
- },
- {
-  "ref": "2025 HL Q11(b)(i)",
-  "reason": "monopoly diagram to draw, with the ⟨9⟩ explanation spread over six bullet steps and no per-step split stated — already recorded in econ_excluded.py",
-  "evidence": "Explain, with the aid of a fully clearly labeled diagram (including the axes), the long-run equilibrium position … ⟨12⟩ Explanation: ⟨9⟩ • Equilibrium is at point E where MC = MR (and MC is rising). • The company produces Q1. …"
  },
  {
   "ref": "2025 HL Q14(b)(i)",

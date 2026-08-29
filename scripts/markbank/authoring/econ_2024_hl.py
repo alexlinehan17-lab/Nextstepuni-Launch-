@@ -685,4 +685,44 @@ P.cards.append(card(
     tariff_kind='fixed',
     figure_key='economics-2024-HL-paper-p21-i1'))
 
+# ── Two-cell parts: a drawing (or a calculation) and its explanation ───────
+P.cards.append(card(
+    'econ-2024-hl-q14-b-i', 2024, 'higher', 'economics-2-0',
+    'long-run-equilibrium-in-monopolistic-competition', '2024 HL Q14(b)(i)',
+    'Explain, with the aid of a fully labelled diagram (including the axes), the long-run '
+    'equilibrium of a firm operating in monopolistic competition.',
+    '12 + 9', 21,
+    [point('r-1', as_option(block(T, 'T P/C Q Diagram:', 'or \u2022 1. Equilibrium:')), 12,
+           'Twelve labels at one mark each \u2014 the scheme prices them \u27e812 x 1\u27e9 and '
+           'counts both axes among them, which is why the paper says "including the axes".'),
+     point('r-2', as_option(block(T, '\u2022 1. Equilibrium:', '(ii)')), 9,
+           'Five numbered steps: equilibrium where MC = MR, the output, the price, the cost level, '
+           'and what the gap between price and cost means. In the LONG run that gap has closed \u2014 '
+           'entry competes supernormal profit away, so the firm earns normal profit only.')],
+    'This is the diagram students confuse with monopoly. Both have a downward-sloping AR, but in '
+    'monopolistic competition free entry drags AC up to touch AR, so no supernormal profit '
+    'survives.',
+    tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2024-hl-q11-b-i', 2024, 'higher', 'economics-3-0',
+    'the-multiplier-and-what-it-means', '2024 HL Q11(b)(i)',
+    'Based on the information stated above and using an appropriate formula, calculate the value '
+    'of the multiplier in the Irish economy and explain the economic significance of your answer.',
+    '12 + 4', 16,
+    [point('r-1', as_option(block(T, 'Method 1: Workings: MPS = 1- 0.6 = 0.4',
+                                  'Explanation:')), 12,
+           'Two routes to the same 1.08. Method 1 derives MPS first and adds the three leakages; '
+           'Method 2 subtracts them from 1 inside the bracket. Either earns the marks \u2014 they '
+           'are the same denominator written two ways.'),
+     point('r-2', as_option(block(T, 'Explanation: \u2022 In this case if there is an injection',
+                                  '(ii)')), 4,
+           'What the NUMBER means: \u20ac1 injected raises national income by \u20ac1.08. A '
+           'multiplier barely above 1 says most of each euro leaks straight back out \u2014 which '
+           'for a small open economy like Ireland is the point.')],
+    'Calculating 1.08 and stopping answers half the question: the ask says "and explain the '
+    'economic significance", and the significance is how SMALL the figure is.',
+    tariff_kind='fixed'))
+
+
 emit(cards + P.cards)
