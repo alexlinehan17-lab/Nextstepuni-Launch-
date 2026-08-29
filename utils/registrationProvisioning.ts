@@ -34,7 +34,11 @@
  *      marker left behind by a JS context that no longer exists is recognised
  *      as dead and cleared on the next read. That context's registration
  *      cannot still be running, so there is nothing left to hold for.
- *   2. remainingMs() lets the reader schedule its own repaint, so the expiry
+ *   2. Every marker change notifies reactive readers. sessionStorage writes do
+ *      not schedule a React render by themselves; without this, clearing the
+ *      hold before the user-document write still left onboarding waiting for
+ *      that write's server acknowledgement to cause some unrelated render.
+ *   3. remainingMs() lets the reader schedule its own repaint, so the expiry
  *      below is a real deadline rather than one that is only noticed if
  *      something else happens to re-render.
  *
@@ -44,6 +48,30 @@
  */
 
 const KEY = 'nsu:registration-provisioning';
+const CHANGE_EVENT = 'nsu:registration-provisioning-change';
+
+/**
+ * Notify React readers after the current stack has settled.
+ *
+ * registrationHoldRemainingMs() can clear a stale marker while a component is
+ * rendering. Dispatching synchronously there would make the listener set React
+ * state during render, so use a microtask. On the normal signup path this still
+ * releases the loading screen before the background Firestore write settles.
+ */
+function notifyRegistrationProvisioningChange(): void {
+  if (typeof window === 'undefined') return;
+  queueMicrotask(() => {
+    if (typeof window !== 'undefined') window.dispatchEvent(new Event(CHANGE_EVENT));
+  });
+}
+
+/** Subscribe to begin/end/expiry changes so storage-backed state is reactive. */
+export function subscribeToRegistrationProvisioning(listener: () => void): () => void {
+  if (typeof window === 'undefined') return () => {};
+  const handleChange = () => listener();
+  window.addEventListener(CHANGE_EVENT, handleChange);
+  return () => window.removeEventListener(CHANGE_EVENT, handleChange);
+}
 
 /**
  * How long the marker is honoured. Long enough for a cold-start callable plus
@@ -66,6 +94,7 @@ export function beginRegistrationProvisioning(now: number = Date.now()): void {
   } catch {
     /* storage unavailable — worst case the student sees the old flash */
   }
+  notifyRegistrationProvisioningChange();
 }
 
 /** Clear the marker: the registration finished, or failed and we are back on the form. */
@@ -75,6 +104,7 @@ export function endRegistrationProvisioning(): void {
   } catch {
     /* nothing to do */
   }
+  notifyRegistrationProvisioningChange();
 }
 
 /**
