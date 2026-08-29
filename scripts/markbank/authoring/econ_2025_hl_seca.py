@@ -237,4 +237,26 @@ P.cards.append(card(
 # explanation, and the scheme does not split them. Four written steps at 1 mark
 # each was my arithmetic, not the scheme's.
 
+# ── Worked calculations the scheme prints in full ──────────────────────────
+# Excluded until now as "the response is the worked calculation". That is a
+# description of the answer, not a blocker: the scheme sets out the formula, the
+# substitution and the result, so every step a student is credited for is on the
+# page and traces. Where the figures come off a chart the crop rides with the
+# card, because the arithmetic is unanswerable without it.
+
+P.cards.append(card(
+    'econ-2025-hl-seca-q2-a', 2025, 'higher', 'economics-3-0',
+    'household-percentage-savings-rate', '2025 HL Section A Q2(a)',
+    'From the data in the above table, calculate the household percentage savings rate for '
+    'Quarter 1, 2024. Show all your workings.',
+    '6', 6,
+    [point('r-1', as_option(block(BODY, 'Workings: Household savings',
+                                  'Deduct 1 mark if % omitted')), 6,
+           'Savings over DISPOSABLE INCOME, not over consumption. The table prints all three '
+           'figures, so the mark is for choosing the right denominator.')],
+    'The table gives income, consumption and savings, and only two of the three belong in this '
+    'ratio.',
+    tariff_kind='fixed', section='A',
+    figure_key='economics-2025-HL-paper-p04-i0'))
+
 P.emit()

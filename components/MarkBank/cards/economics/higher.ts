@@ -574,6 +574,40 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: "LC034ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2021 Higher Level — © State Examinations Commission.",
+    id: "econ-2021-hl-q15-c-ii", topicId: "economics-3-0", conceptId: "calculating-the-multiplier",
+    section: "B", questionRef: "2021 HL Q15(c)(ii)",
+    questionText: "Assume that MPM is 0.25 and MPC is 0.65 and MPT is 0.10. Calculate the multiplier. Show all your workings.",
+    tariffModel: {"kind":"fixed","notation":"8","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "MPS = 1 – 0.65 = 0.35 . 1 . . 1_______ (1-MPC) + MPM + MPT MPS + MPM + MPT . 1 . _ 1 _ . (1- 0.65) + 0.25 + 0.10 0.35 + 0.25 + 0.10 Multiplier = 1.43 Multiplier = 1.43", marks: 8, contextNote: "MPS has to be derived from MPC before the formula can be used, and the scheme shows the multiplier written both ways — over (1-MPC)+MPM+MPT and over MPS+MPM+MPT — because they are the same denominator.", openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2021 Higher Level — © State Examinations Commission.",
+    id: "econ-2021-hl-q16-b-i", topicId: "economics-2-1", conceptId: "percentage-increase-in-the-minimum-wage",
+    section: "B", questionRef: "2021 HL Q16(b)(i)",
+    questionText: "Calculate the percentage increase in the minimum wage rate between 2016 and 2021.",
+    tariffModel: {"kind":"fixed","notation":"9","answer":null,"ofParts":null,"perPart":null}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "10.20 −9.15 = 1.05 9.15 × 100 = 11.48% OR 10.20 9.15 × 100 = 111.48 −100 = 11.48%", marks: 9, contextNote: "The scheme prints two routes to the same 11.48%: the rise over the base, or the ratio of the two rates less 100. Both start from the 2016 rate as the base.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2021-HL-paper-p35-i0",
+          "src": "/exam-figures/economics/markbank/economics-2021-HL-paper-p35-i0.png",
+          "srcHash": "7ab401dad0dab084c16e71733bf70e3d",
+          "alt": "A line chart headed 'National Minimum Wage Rate', y-axis 'wage rate in €'s', x-axis 'Year' from 2016 to 2021. Six orange markers rise steadily left to right, each with its value beside it: €9.15 in 2016, €9.25 in 2017, €9.55 in 2018, €9.80 in 2019, €10.10 in 2020, €10.20 in 2021. Source 'Adapted from the CSO'. The crop carries the question stem above and the start of the Workings box below.",
+          "attribution": "SEC Leaving Certificate Economics 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2021 Higher Level — © State Examinations Commission.",
     id: "econ-2021-hl-sa-q1-b", topicId: "economics-4-2", conceptId: "why-a-trade-surplus-is-an-aim",
     section: "A", questionRef: "2021 HL Section A Q1(b)",
     questionText: "Outline two reasons why achieving a trade surplus is an objective of the Irish government.",
@@ -762,6 +796,41 @@ export const CARDS: SecCard[] = [
           "attribution": "SEC Leaving Certificate Economics 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2021 Higher Level — © State Examinations Commission.",
+    id: "econ-2021-hl-seca-q7-a", topicId: "economics-3-1", conceptId: "gross-debt-per-person-2007-to-2019",
+    section: "A", questionRef: "2021 HL Section A Q7(a)",
+    questionText: "Compare the level of Gross Debt per Person from 2007 to 2019 and outline one possible reason for this increase in the gross debt per person.",
+    tariffModel: {"kind":"fixed","notation":"5 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Between 2007 and 2019 the gross debt per person rose by €30,322 per person or 272%. Between 2007 and 2013 the gross debt per person rose by €35,742 per person or 321%. Between 2013 and 2019 the gross debt per person fell by €5,420 per person or 11.6%.", marks: 5, contextNote: "The comparison, 5 marks. The infographic prints three debt-per-person figures and the scheme quotes the movement between them, so the marks are for the numbers as much as for the direction — and the middle of the period runs the other way from the ends.", openList: true },
+    { id: "r-2", kind: "point", verbatim: "Reason: Between 2007 and 2013 the Irish economy fell into recession which was brought about through a housing bubble and financial crisis. The government needed to bail out some banks and nationalise others leading to large increases in gross debt per person. Answer Question", marks: 4, contextNote: "The reason, 4 marks. The scheme wants the bank bailout and the borrowing that paid for it, not a general statement that debt rose.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2021-HL-paper-p10-art",
+          "src": "/exam-figures/economics/markbank/economics-2021-HL-paper-p10-art.png",
+          "srcHash": "ab17d37936c0a8f3e1d7f16b62ed12cc",
+          "alt": "A CSO infographic headed 'Government Finance Statistics 2019'. On the left, under 'Government Balance 2019', two jars of gold coins labelled IN and OUT feed a pale circle reading 'Government Surplus €1.3bn (0.4% of GDP)'. On the right, under 'Gross Debt per Person', three dark spheres of increasing size are dragged by cartoon figures on chains: 2007 €11,138, 2013 €46,880 and 2019 €41,460. Source line 'Adapted from the CSO'.",
+          "attribution": "SEC Leaving Certificate Economics 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2021 Higher Level — © State Examinations Commission.",
+    id: "econ-2021-hl-seca-q8-a", topicId: "economics-1-4", conceptId: "price-from-the-equi-marginal-principle",
+    section: "A", questionRef: "2021 HL Section A Q8(a)",
+    questionText: "Calculate the price John would be willing to pay for one unit of good Z. Complete your calculations in the box below.",
+    tariffModel: {"kind":"fixed","notation":"7","answer":null,"ofParts":null,"perPart":null}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "2500 ÷ 200 = 12.5 or 1250 ÷ 100 = 12.5 75 ÷ 12.5 = €6", marks: 7, contextNote: "Utility per euro is established from a good whose price is known, and that rate is then applied to good Z. The scheme prints two routes to the same 12.5.", openList: true },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2957,6 +3026,53 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC034ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2024 Higher Level — © State Examinations Commission.",
+    id: "econ-2024-hl-q11-a-i", topicId: "economics-4-1", conceptId: "percentage-increase-in-foreign-tourists",
+    section: "B", questionRef: "2024 HL Q11(a)(i)",
+    questionText: "Calculate the percentage increase in foreign tourists in August 2023 compared to July 2021. Show your workings.",
+    tariffModel: {"kind":"fixed","notation":"8","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Workings: 737,600 - 380,000 = 357,600 357,600 ------------- X 100 = 94.11% / 94% Increase 380,000 - 1 mark if % omitted", marks: 8, contextNote: "The workings carry the marks, not the answer alone. Note the scheme deducts a mark for omitting the % sign — the number on its own is not the answer.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2024-HL-paper-p13-i1",
+          "src": "/exam-figures/economics/markbank/economics-2024-HL-paper-p13-i1.png",
+          "srcHash": "6841a3775c47005d3f58771900a521ed",
+          "alt": "A two-bar column chart headed 'Number of foreign tourists' in red: 380,000 for July 2021 and 737,600 for August 2023, each value printed inside its bar. The question below reads '(a)(i) Calculate the percentage increase in foreign tourists in August 2023 compared to July 2021. Show your workings.'",
+          "attribution": "SEC Leaving Certificate Economics 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2024 Higher Level — © State Examinations Commission.",
+    id: "econ-2024-hl-q14-c-ii", topicId: "economics-3-1", conceptId: "calculating-the-real-rate-of-interest",
+    section: "B", questionRef: "2024 HL Q14(c)(ii)",
+    questionText: "Calculate the real rate of interest if the nominal interest rate was 2.25% and the inflation rate was 5.5%. Show your workings.",
+    tariffModel: {"kind":"fixed","notation":"8","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Nominal interest rate – Inflation rate = Real rate of interest 2.25% – 5.50% = - 3.25% ( -1 for omission of %)", marks: 8, contextNote: "The scheme prints the relationship before the substitution. The answer is NEGATIVE — inflation above the nominal rate means money in the account loses value — and a mark goes for the % sign.", openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2024 Higher Level — © State Examinations Commission.",
+    id: "econ-2024-hl-q16-b-iii", topicId: "economics-1-1", conceptId: "using-yed-to-forecast-sales",
+    section: "B", questionRef: "2024 HL Q16(b)(iii)",
+    questionText: "Assume the income elasticity of demand (YED) for a PlayStation 5 is +5.2 and total sales in 2023 were 10,000 units. Calculate the expected total sales for the year if consumers’ incomes are expected to fall by 5% in 2024. Show your workings.",
+    tariffModel: {"kind":"fixed","notation":"6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Workings: If income falls by 5%, then sales will be expected to fall by (5% x 5.2) = 26%. Sales will fall by 26% in 2023. 26% of 10,000 units = 2,600 units. Expected sales in 2023 will be 10,000 – 2,600 = 7,400 units. Answer: 7,400 units", marks: 6, contextNote: "Two steps. The YED turns the 5% income fall into a 26% fall in demand; only then is that percentage taken off the 10,000 units. The answer is the remaining sales, not the fall itself.", openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2024 Higher Level — © State Examinations Commission.",
     id: "econ-2024-hl-sa-q2-b", topicId: "economics-3-2", conceptId: "why-full-employment-is-an-aim",
     section: "A", questionRef: "2024 HL Section A Q2(b)",
     stem: "Ireland’s seasonally adjusted unemployment rate for October 2023 was 4.8%, which may be regarded as full employment.",
@@ -3217,6 +3333,27 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Net factor income is the income earned by Irish factors of production abroad and sent home (repatriated) minus income earned by foreign factors of production in Ireland and sent back (repatriated) to their own country.", marks: 6, contextNote: "One definition, 6 marks, and it runs both ways: Irish factor income repatriated home MINUS foreign factor income repatriated out.", openList: true },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2024 Higher Level — © State Examinations Commission.",
+    id: "econ-2024-hl-seca-q1-a", topicId: "economics-4-2", conceptId: "calculating-the-current-account-balance",
+    section: "A", questionRef: "2024 HL Section A Q1(a)",
+    questionText: "From the data above, calculate the balance of payments, current account balance. State whether it is a surplus or a deficit. Show all your workings.",
+    tariffModel: {"kind":"fixed","notation":"6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Workings: €76bn + €91bn = €167bn €38bn + €83bn = €121bn €46 bn Surplus or Deficit? Surplus", marks: 6, contextNote: "The workings and the verdict, 6 marks as one block — the scheme prints no split between them. Credits and debits are each totalled off the infographic before they are subtracted, which is where the arithmetic usually goes wrong.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2024-HL-paper-p03-i0",
+          "src": "/exam-figures/economics/markbank/economics-2024-HL-paper-p03-i0.png",
+          "srcHash": "a5667e7030053c0033d47b6d01e0e006",
+          "alt": "A CSO infographic on a teal ground headed by the CSO logo, made of overlapping circles. The first reads 'Ireland's Economic Interactions with the Rest of the World' over a world map. The second is headed Goods, with a container ship for each side: Exports €76bn, Imports €38bn. The third is headed Services, with a desk-worker illustration for each side: Exports €91bn, Imports €83bn. A fourth circle is cropped by the infographic's own frame at the right edge, as printed.",
+          "attribution": "SEC Leaving Certificate Economics 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3870,6 +4007,40 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC034ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2025 Higher Level — © State Examinations Commission.",
+    id: "econ-2025-hl-q13-a-i", topicId: "economics-4-2", conceptId: "share-of-goods-exports-to-the-united-states",
+    section: "B", questionRef: "2025 HL Q13(a)(i)",
+    questionText: "Calculate the percentage of Ireland’s total goods exports that entered the United States. Show all your workings.",
+    tariffModel: {"kind":"fixed","notation":"8","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Workings: Ireland′s exports to the US Ireland′s total goods exports × 100 1 €34 bn x 100 €108 bn 1 €34 billion €108 billion × 100 1 Answer: 31.48% / 32%", marks: 8, contextNote: "The scheme prints the ratio, the substitution and the answer, and the total is the denominator — €108 billion is the whole chart, not one of its bars.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2025-HL-paper-p21-i0",
+          "src": "/exam-figures/economics/markbank/economics-2025-HL-paper-p21-i0.png",
+          "srcHash": "a2e30d73c2ae6cd9ba37c25f7d81a3b5",
+          "alt": "A column chart on a yellow ground headed \"Value of Ireland's Exported Goods By Region - From January to June, 2024 (Total: €108 billion)\", y-axis 'VALUE OF EXPORTS, € BILLION' 0 to 50. Five labelled bars: European Union 42, Great Britain 8, Northern Ireland 3, United States 34, Rest of the World 21. Source 'Adapted from the CSO'.",
+          "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2025 Higher Level — © State Examinations Commission.",
+    id: "econ-2025-hl-q16-a-ii", topicId: "economics-1-5", conceptId: "calculating-profit-from-revenue-and-cost",
+    section: "B", questionRef: "2025 HL Q16(a)(ii)",
+    questionText: "If the outlet charges €4.00 for a fresh smoothie, calculate the profit it earns if it sells 40 smoothies in a day. Show all your workings.",
+    tariffModel: {"kind":"fixed","notation":"5","answer":null,"ofParts":null,"perPart":null}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Revenue: €4.00 x 40 smoothies = €160 Minus Total cost for 40 smoothies: €90 PROFIT €70", marks: 5, contextNote: "Revenue first, then total cost taken off it. The cost of 40 smoothies comes from the table rather than from multiplying a unit cost.", openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2025 Higher Level — © State Examinations Commission.",
     id: "econ-2025-hl-sa-q1-a-for", topicId: "economics-3-5", conceptId: "the-case-for-hosting-a-major-event",
     section: "A", questionRef: "2025 HL Section A Q1(a) — argument for",
     stem: "Germany hosted the European Football Championship in 2024. 2.7 million people attended the 51 matches.",
@@ -4143,5 +4314,26 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Phone pouches in secondary schools are considered a merit good because students may underestimate their personal benefits, such as improved focus / better learning outcomes and so pouches may be underused / under consumed. Pouches create positive externalities, as a more focused learning environment benefits students, teachers, and society in general by helping to develop a more skilled and productive workforce.", marks: 6, contextNote: "One explanation, 6 marks: why the good would be under-consumed, and the positive externalities it creates.", openList: true },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2025 Higher Level — © State Examinations Commission.",
+    id: "econ-2025-hl-seca-q2-a", topicId: "economics-3-0", conceptId: "household-percentage-savings-rate",
+    section: "A", questionRef: "2025 HL Section A Q2(a)",
+    questionText: "From the data in the above table, calculate the household percentage savings rate for Quarter 1, 2024. Show all your workings.",
+    tariffModel: {"kind":"fixed","notation":"6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Workings: Household savings Household total disposable income × 100 1 €6.59 bn X 100 €43.91 bn 1 Answer: 15 %", marks: 6, contextNote: "Savings over DISPOSABLE INCOME, not over consumption. The table prints all three figures, so the mark is for choosing the right denominator.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2025-HL-paper-p04-i0",
+          "src": "/exam-figures/economics/markbank/economics-2025-HL-paper-p04-i0.png",
+          "srcHash": "6eda0e5df680b567fd05a667a51d57ff",
+          "alt": "A three-row table on pale blue: Household Disposable Income €43.91 billion; Household Consumption Expenditure €37.32 billion; Household Savings €6.59 billion.",
+          "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
 ];

@@ -226,4 +226,24 @@ P.cards.append(card(
     figure_key='economics-2022-OL-paper-p06-i0'))
 
 
+# ── Worked calculations the scheme prints in full ──────────────────────────
+# "The response is the worked calculation" describes the answer, not a blocker.
+# The scheme sets out formula, substitution and result, so every step a student
+# is credited for is on the page and traces.
+
+P.cards.append(card(
+    'econ-2022-ol-seca-q9-i', 2022, 'ordinary', 'economics-1-1',
+    'working-the-ped-formula', '2022 OL Section A Q9(i)',
+    'Using the formula above, complete the workings to calculate the Price Elasticity of '
+    'Demand (PED) for these iPads.',
+    '13', 13,
+    [point('r-1', as_option(block(BODY, '\u2206Q 45,000 \u2013 30,000 = 15,000',
+                                  'Once the correct figures are inserted')), 13,
+           'Each of the four inputs is worked separately before the formula is assembled, and '
+           'the scheme is explicit that the answer must carry its minus sign \u2014 a positive '
+           '1 is not the same answer.')],
+    'The paper prints the formula and the workings frame; the marks are for filling it in the '
+    'right order, which is why the scheme works \u2206Q, \u2206P and both sums separately.',
+    tariff_kind='fixed', section='A'))
+
 P.emit()

@@ -1403,6 +1403,19 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2022-ol-seca-q9-i", topicId: "economics-1-1", conceptId: "working-the-ped-formula",
+    section: "A", questionRef: "2022 OL Section A Q9(i)",
+    questionText: "Using the formula above, complete the workings to calculate the Price Elasticity of Demand (PED) for these iPads.",
+    tariffModel: {"kind":"fixed","notation":"13","answer":null,"ofParts":null,"perPart":null}, totalMarks: 13,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "∆Q 45,000 – 30,000 = 15,000 ∆P €500 – €750 = -€250 P1 + P2 €750 + €500 = €1250 Q1 + Q2 30,000 + 45,000 = 75,000 15000 X €1250 -€250 75,000 = - 1 1 (must have the – sign)", marks: 13, contextNote: "Each of the four inputs is worked separately before the formula is assembled, and the scheme is explicit that the answer must carry its minus sign — a positive 1 is not the same answer.", openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2023, level: "ordinary",
     paperFileid: "LC034GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2023 Ordinary Level — © State Examinations Commission.",
@@ -3506,6 +3519,19 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"bestNofParts","notation":"1 @ 4","answer":1,"ofParts":8,"perPart":4}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "A barrier to entry — any one", marks: 4, contextNote: "One barrier, 4 marks.", openList: true, group: {"claimMax":1,"perOption":4,"options":["The Government may grant a company the sole right to produce a good or supply a service","A patent / copyright will confer the sole right on a business to a particular manufacturing process for a particular commodity.","Firms may enter trade agreements with other suppliers i.e. collude with them so that no other firm can supply the product or service in the market.","A company may acquire the sole right to the available raw materials thereby becoming a monopoly in that particular industry e.g. oil exploration company.","For some industries the capital required to get established in that industry is so large that only the company which can raise the necessary capital can operate in the market.","By merging with a competitor or buying out the competitor a firm may become a monopoly supplier in that industry.","An individual or group of individuals may, by fear, force or threats, stop other individuals competing with the supplier e.g. the supply of illegal drugs.","A monopolist can set prices so low that new entrants cannot compete with these prices and are forced out of the market."]} },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2025-ol-seca-q7-i", topicId: "economics-3-1", conceptId: "percentage-increase-in-the-over-65-population",
+    section: "A", questionRef: "2025 OL Section A Q7(i)",
+    questionText: "The number of people aged 65 and over has increased by 243,700. Calculate the percentage increase in number of people aged 65 and over from 2014 to 2024. Show all your workings.",
+    tariffModel: {"kind":"fixed","notation":"4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "243,700 x 100 = 41.3 % 589,500 1", marks: 4, contextNote: "The increase is given; the 2014 population is the denominator. Dividing by the 2024 figure instead is the standard error here.", openList: true },
     ],
   } as SecCard,
 ];

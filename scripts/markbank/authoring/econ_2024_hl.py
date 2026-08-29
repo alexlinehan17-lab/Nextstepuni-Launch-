@@ -593,4 +593,61 @@ P.menu('Low collection cost', 'econ-2024-hl-q16-c-iii-disadvantage',
        drop=SCAF2 + ('The Research Process', 'Data (Application'),
        after='Will increase inflation')
 
+# ── Worked calculations the scheme prints in full ──────────────────────────
+# Excluded until now as "the response is the worked calculation". That is a
+# description of the answer, not a blocker: the scheme sets out the formula, the
+# substitution and the result, so every step a student is credited for is on the
+# page and traces. Where the figures come off a chart the crop rides with the
+# card, because the arithmetic is unanswerable without it.
+
+P.cards.append(card(
+    'econ-2024-hl-q11-a-i', 2024, 'higher', 'economics-4-1',
+    'percentage-increase-in-foreign-tourists', '2024 HL Q11(a)(i)',
+    'Calculate the percentage increase in foreign tourists in August 2023 compared to July '
+    '2021. Show your workings.',
+    '8', 8,
+    [point('r-1', as_option(block(BODY, 'Workings: 737,600 - 380,000',
+                                  '(ii) Outline the effect of this increase in tourism')), 8,
+           'The workings carry the marks, not the answer alone. Note the scheme deducts a mark '
+           'for omitting the % sign \u2014 the number on its own is not the answer.')],
+    'Both figures are read off the bars; nothing is given in the wording. The base is the '
+    'EARLIER month, so dividing by the larger figure is the usual way this goes wrong.',
+    tariff_kind='fixed',
+    figure_key='economics-2024-HL-paper-p13-i1'))
+
+# ── Worked calculations the scheme prints in full ──────────────────────────
+# "The response is the worked calculation" describes the answer, not a blocker.
+# The scheme sets out formula, substitution and result, so every step a student
+# is credited for is on the page and traces.
+
+P.cards.append(card(
+    'econ-2024-hl-q14-c-ii', 2024, 'higher', 'economics-3-1',
+    'calculating-the-real-rate-of-interest', '2024 HL Q14(c)(ii)',
+    'Calculate the real rate of interest if the nominal interest rate was 2.25% and the '
+    'inflation rate was 5.5%. Show your workings.',
+    '8', 8,
+    [point('r-1', as_option(block(T, 'Nominal interest rate \u2013 Inflation rate = Real rate '
+                                     'of interest', '36 |')), 8,
+           'The scheme prints the relationship before the substitution. The answer is NEGATIVE '
+           '\u2014 inflation above the nominal rate means money in the account loses value \u2014 '
+           'and a mark goes for the % sign.')],
+    'A negative real rate is the point of the question, not an error to be tidied away: at 2.25% '
+    'nominal against 5.5% inflation, saving loses purchasing power.',
+    tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2024-hl-q16-b-iii', 2024, 'higher', 'economics-1-1',
+    'using-yed-to-forecast-sales', '2024 HL Q16(b)(iii)',
+    'Assume the income elasticity of demand (YED) for a PlayStation 5 is +5.2 and total sales '
+    'in 2023 were 10,000 units. Calculate the expected total sales for the year if '
+    'consumers\u2019 incomes are expected to fall by 5% in 2024. Show your workings.',
+    '6', 6,
+    [point('r-1', as_option(block(T, 'Workings: If income falls by 5%', '45 |')), 6,
+           'Two steps. The YED turns the 5% income fall into a 26% fall in demand; only then is '
+           'that percentage taken off the 10,000 units. The answer is the remaining sales, not '
+           'the fall itself.')],
+    'A YED of +5.2 makes this a luxury: a small income fall produces a much larger fall in '
+    'sales, which is what the multiplication by 5.2 is doing.',
+    tariff_kind='fixed'))
+
 emit(cards + P.cards)

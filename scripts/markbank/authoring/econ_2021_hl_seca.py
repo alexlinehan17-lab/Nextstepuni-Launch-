@@ -191,4 +191,52 @@ P.cards.append(card(
     figure_key='economics-2021-HL-paper-p14-art'))
 
 
+# ── The part whose question IS a chart ─────────────────────────────────────
+# Excluded until now as a lookup off the figure printed with it. That described
+# the response, not a blocker: the crop is catalogued with verified alt text and
+# an md5 the build re-checks, so binding it gives the student what the candidate
+# in the hall had.
+
+P.cards.append(card(
+    'econ-2021-hl-seca-q7-a', 2021, 'higher', 'economics-3-1',
+    'gross-debt-per-person-2007-to-2019', '2021 HL Section A Q7(a)',
+    'Compare the level of Gross Debt per Person from 2007 to 2019 and outline one possible '
+    'reason for this increase in the gross debt per person.',
+    '5 + 4', 9,
+    [point('r-1', as_option(block(BODY, 'Between 2007 and 2019 the gross debt per person rose',
+                                  'Reason:')), 5,
+           'The comparison, 5 marks. The infographic prints three debt-per-person figures and '
+           'the scheme quotes the movement between them, so the marks are for the numbers as '
+           'much as for the direction \u2014 and the middle of the period runs the other way '
+           'from the ends.'),
+     point('r-2', as_option(block(BODY, 'Reason: Between 2007 and 2013 the Irish economy fell '
+                                        'into recession')), 4,
+           'The reason, 4 marks. The scheme wants the bank bailout and the borrowing that paid '
+           'for it, not a general statement that debt rose.')],
+    'The question says "this increase", but the chart does not only increase: debt per person '
+    'rises steeply to 2013 and then falls back. The scheme rewards saying so.',
+    tariff_kind='fixed', section='A',
+    figure_key='economics-2021-HL-paper-p10-art'))
+
+# ── Worked calculations the scheme prints in full ──────────────────────────
+# Excluded until now as "the response is the worked calculation". That is a
+# description of the answer, not a blocker: the scheme sets out the formula, the
+# substitution and the result, so every step a student is credited for is on the
+# page and traces. Where the figures come off a chart the crop rides with the
+# card, because the arithmetic is unanswerable without it.
+
+P.cards.append(card(
+    'econ-2021-hl-seca-q8-a', 2021, 'higher', 'economics-1-4',
+    'price-from-the-equi-marginal-principle', '2021 HL Section A Q8(a)',
+    'Calculate the price John would be willing to pay for one unit of good Z. Complete your '
+    'calculations in the box below.',
+    '7', 7,
+    [point('r-1', as_option(block(BODY, '2500 \u00f7 200 = 12.5',
+                                  '(b) Explain why John would pay this price')), 7,
+           'Utility per euro is established from a good whose price is known, and that rate is '
+           'then applied to good Z. The scheme prints two routes to the same 12.5.')],
+    'The calculation runs in two stages, and the scheme accepts either of the two goods for the '
+    'first \u2014 both give the same utility-per-euro.',
+    tariff_kind='fixed', section='A'))
+
 P.emit()

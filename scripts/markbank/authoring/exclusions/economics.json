@@ -20,16 +20,6 @@
   "evidence": "Scheme: 'The period from 2007 to 2009… GNI of both countries is downward sloping'"
  },
  {
-  "ref": "2021 HL Q15(c)(ii)",
-  "reason": "the response is the worked multiplier calculation",
-  "evidence": "Scheme: 'MPS = 1 – 0.65 … Multiplier = 1.43'"
- },
- {
-  "ref": "2021 HL Q16(b)(i)",
-  "reason": "the response is the worked percentage calculation",
-  "evidence": "Scheme: '10.20 −9.15 = 1.05 … = 11.48%'"
- },
- {
   "ref": "2021 HL Q16(c)(iii)",
   "reason": "SRP grading bands; the actual CBA ask prints one sentence under a two-claim tariff, so no clean card (recorded class, reason refined)",
   "evidence": "Scheme: 'Deduct 1m if no quantitative data', 'The Research Process 40 Marks Excellent Very Good…'; CBA answer is one sentence under ⟨6⟩ ⟨(2 @ 3)⟩"
@@ -48,16 +38,6 @@
   "ref": "2021 HL Section A Q2",
   "reason": "answered by ticking Positive/Normative against each statement",
   "evidence": "Scheme: tick table across four statements"
- },
- {
-  "ref": "2021 HL Section A Q7(a)",
-  "reason": "chart lookup — figures read off the CSO infographic printed with it (recorded class)",
-  "evidence": "Scheme: 'Between 2007 and 2019 the gross debt per person rose by €30,322 per person or 272%…'"
- },
- {
-  "ref": "2021 HL Section A Q8(a)",
-  "reason": "the response is the worked equi-marginal calculation",
-  "evidence": "Scheme: '2500 ÷ 200 = 12.5 … 75 ÷ 12.5 = €6'"
  },
  {
   "ref": "2021 HL Section A Q8(b)",
@@ -315,11 +295,6 @@
   "evidence": "Total revenue – Total Costs = Net Profit €5,000 - €3,550 = €1,450 ⟨5⟩ ⟨(2+2+1)⟩"
  },
  {
-  "ref": "2022 OL Section A Q9(i)",
-  "reason": "the response is the worked elasticity calculation (already recorded in econ_excluded.py)",
-  "evidence": "∆Q 45,000 – 30,000 = 15,000 ∆P €500 – €750 = -€250 ... = - 1 (must have the – sign) ⟨13⟩"
- },
- {
   "ref": "2023 HL Q11(a)(i)",
   "reason": "the response is the worked percentage-change calculation (sibling class of the many recorded 'worked calculation' exclusions)",
   "evidence": "calculate the ⟨8⟩ (i) percentage change in the Irish population from 2016 to 2022. Show your workings. 4761865 × 100 = 7.59 % - 1 Mark if % omitted"
@@ -470,11 +445,6 @@
   "evidence": "Scheme p.8: 'Identify, with a tick (✓), which of the following firms exist in a monopoly market structure in Ireland ⟨8⟩ … Aer Lingus / Iarnród Eireann (Irish Rail) ✓ / VHI'."
  },
  {
-  "ref": "2024 HL Q11(a)(i)",
-  "reason": "Already recorded in econ_excluded.py: the response is the worked calculation.",
-  "evidence": "Scheme p.15: 'Workings: 737,600 - 380,000 = 357,600; 357,600/380,000 × 100 = 94.11% / 94% Increase — 1 mark if % omitted' ⟨8⟩."
- },
- {
   "ref": "2024 HL Q11(b)(i)",
   "reason": "Already recorded in econ_excluded.py: the response is the worked multiplier calculation.",
   "evidence": "Scheme p.16: '⟨12⟩ Method 1: Workings: MPS = 1- 0.6 = 0.4; 1/(0.22 + 0.3 + 0.4) = 1/0.92; Answer = 1.08', plus a ⟨4⟩ meaning explanation."
@@ -500,11 +470,6 @@
   "evidence": "Scheme p.35: diagram itemised 'Diagram: ⟨12⟩ Price P C Q Qty MR AR AC MC E T A ⟨(12 x 1)⟩' but the six numbered written points (1. Equilibrium … 6. Scarce resources) share a block ⟨9⟩ with no per-point split."
  },
  {
-  "ref": "2024 HL Q14(c)(ii)",
-  "reason": "Already recorded in econ_excluded.py: the response is the worked real-interest-rate calculation.",
-  "evidence": "Scheme p.36: 'Nominal interest rate – Inflation rate = Real rate of interest; 2.25% – 5.50% = - 3.25% (-1 for omission of %)' ⟨8⟩."
- },
- {
   "ref": "2024 HL Q15(a)(i)",
   "reason": "The response is the worked percentage calculation off the chart printed with it (same class as registered '2024 HL Q11(a)(i)').",
   "evidence": "Scheme p.38: '$43 - $22 = $21; 21/22 × 100 = 95.45% (-1 for omission of %)' ⟨8⟩."
@@ -513,16 +478,6 @@
   "ref": "2024 HL Q16(b)(ii)",
   "reason": "Already recorded in econ_excluded.py: the response is the worked elasticity calculation.",
   "evidence": "Scheme p.45: '⟨9⟩ Workings: +30/+10,000 × (40,000+50,000)/(150+180) = 90,000/330 = + 0.8', plus a ⟨4⟩ meaning explanation."
- },
- {
-  "ref": "2024 HL Q16(b)(iii)",
-  "reason": "Already recorded in econ_excluded.py: the response is the worked elasticity calculation.",
-  "evidence": "Scheme p.45: 'If income falls by 5%, then sales will be expected to fall by (5% x 5.2) = 26%… 26% of 10,000 units = 2,600 units. Expected sales… 10,000 – 2,600 = 7,400 units.' ⟨6⟩."
- },
- {
-  "ref": "2024 HL Section A Q1(a)",
-  "reason": "Already recorded in econ_excluded.py: the answer is calculated off the infographic printed with it.",
-  "evidence": "Scheme p.5: 'From the data above, calculate the balance of payments, current account balance… Workings: €76bn + €91bn = €167bn; €38bn + €83bn = €121bn; €46 bn — Surplus or Deficit? Surplus' ⟨6⟩."
  },
  {
   "ref": "2024 HL Section A Q10(a)(i)",
@@ -665,11 +620,6 @@
   "evidence": "There is a clear downward trend in government debt as a percentage of GNI*. • In 2021, it was 101%. • It fell to 82% in 2022. • It continued to decline to 76% in 2023…"
  },
  {
-  "ref": "2025 HL Q13(a)(i)",
-  "reason": "worked percentage calculation — already recorded in econ_excluded.py",
-  "evidence": "Workings: Ireland's exports to the US Ireland's total goods exports × 100 … €34 bn x 100 €108 bn … Answer: 31.48% / 32% Deduct 1 mark for omission of %"
- },
- {
   "ref": "2025 HL Q14(b)(i)",
   "reason": "a graph to be completed on graph paper; the responses are its axis and equilibrium labels — already recorded in econ_excluded.py",
   "evidence": "complete on the graph paper provided below: ⟨17:⟩ • The market demand curve for Scentastic. ⟨17 x 1⟩ • The market supply curve … Complete Axes: ⟨2⟩ … D:6 S:6 Equil"
@@ -685,11 +635,6 @@
   "evidence": "Label A (Variable Cost) Workings: Total cost minus Fixed cost = Variable cost €70 - €60 = €10 Label B (Average Cost) Workings: … Answer = €1.92"
  },
  {
-  "ref": "2025 HL Q16(a)(ii)",
-  "reason": "worked profit calculation — already recorded in econ_excluded.py",
-  "evidence": "Workings: Revenue: €4.00 x 40 smoothies = €160 Minus Total cost for 40 smoothies: €90 PROFIT €70"
- },
- {
   "ref": "2025 HL Q16(b)(ii)",
   "reason": "SRAC/LRAC diagram completion (⟨8⟩ = SRAC x 3, Labels x 3, LRAC x 1, Label x 1) with the ⟨8⟩ explanation spread over two headed halves and no per-half split stated. Already recorded in econ_excluded.py, though its recorded reason there ('the response is the worked calculation') mislabels it",
   "evidence": "Complete the diagram with three more short run average cost curves (SRAC) to show how the long run average cost curve (LRAC) is constructed. … SRAC x 3 Labels x 3 … LRAC x 1 Label x 1 … Explanation: ⟨8⟩ Downward sloping part of the LRAC … Upward sloping part of the LRAC"
@@ -698,11 +643,6 @@
   "ref": "2025 HL Section A Q10(a)",
   "reason": "NEW — answered by inserting A or B read off the real-GDP diagram printed with it, and both justifications describe the chart's shape; the established reads-the-figure class (cf. 2024 OL Section A Q10). Not yet in econ_excluded.py",
   "evidence": "⟨2 @ 3⟩ … Economic boom A Economic recession B Economic boom justification: … The steady rise in real GDP on the graph shows Ireland's strong economic performance before the financial crisis. … The lowest point in 2011 reflects the depth of the Irish recession"
- },
- {
-  "ref": "2025 HL Section A Q2(a)",
-  "reason": "worked calculation — already recorded in econ_excluded.py ('the response is the worked calculation of the savings rate')",
-  "evidence": "Workings: Household savings Household total disposable income × 100 … €6.59 bn X 100 €43.91 bn … Answer: 15 % Deduct 1 mark if % omitted"
  },
  {
   "ref": "2025 HL Section A Q5(b)",
@@ -758,11 +698,6 @@
   "ref": "2025 OL Q16(b)(ii)",
   "reason": "answered by reading figures off the CPI chart printed beside it (mirrors '2021 HL Q14(a)(i)' and '2021 OL Q13(c)(ii)')",
   "evidence": "Scheme p38: ⟨12⟩ 'From May 2024 to Sep 2024 the annual percentage change in inflation decreased. The annual rate of CPI inflation was highest in May 2024 at approx. 2.6% and hit its lowest figure at approx. 0.7% in September 2024 (or a decrease of 1.9%).' — the answer is the trend and figures read from the printed graph."
- },
- {
-  "ref": "2025 OL Section A Q7(i)",
-  "reason": "the response is the worked percentage calculation — the established leave-alone class (mirrors '2024 OL Q14(a)(i)' in econ_excluded)",
-  "evidence": "Scheme p12: 'Calculate the percentage increase in number of people aged 65 and over from 2014 to 2024. Show all your workings. 243,700 x 100 = 41.3 % [over] 589,500' with tariff ⟨4⟩ — the answer IS the worked arithmetic, and the vertical fraction flattens illegibly in extraction."
  },
  {
   "ref": "2025 OL Section A Q8(i)",
