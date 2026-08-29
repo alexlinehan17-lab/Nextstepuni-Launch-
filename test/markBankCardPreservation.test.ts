@@ -65,6 +65,11 @@ const decks = [
    * (reconcile.py) now reads 100.0%: 498 covered + 160 excluded-with-evidence
    * = all 658 asks the 2021-2025 papers print. Nothing removed; all prior ids
    * remain. */
+  /* 2026-08-29 (twenty-first wave): economics 377/306 -> 383/314. The TICK,
+   * TABLE and OTHER buckets. Six completed tick tables and three completed
+   * tables cropped as solution figures — a drawn tick keeps its glyph and loses
+   * its COLUMN in extraction, and the column is the answer. Coverage 637/658 ->
+   * 651/658, exclusions 21 -> 7. Nothing removed. */
   /* 2026-08-29 (twentieth wave): economics 368/299 -> 377/306. The rest of the
    * DIAGRAM bucket, Higher and Ordinary. Sixteen more model diagrams cropped
    * from the schemes and bound as solution figures. Coverage 621/658 ->
@@ -188,8 +193,8 @@ const decks = [
    * The -trend suffix on the first is forced: econ-2021-hl-q16-a-i is taken by
    * a card whose citation econ_refs.py corrects to Q16(c)(i), and an id is
    * never renamed because it keys a student's review history. */
-  ['economics:higher', ECON_HIGHER, 377, '3267511af9602baf19592c97be46d5bdcae192bf9110c0fc3c3c5d49cc8b0495'],
-  ['economics:ordinary', ECON_ORDINARY, 306, 'fa85b3197538de84b0abaa7a3ee6d97e1ffc633339cea8227091d9537ed609be'],
+  ['economics:higher', ECON_HIGHER, 383, '5b20aa9c7995f859109e8fedd3a0c83918da8830f7669f2cfc99987768630de8'],
+  ['economics:ordinary', ECON_ORDINARY, 314, '57849527e60dbbe653c00a4a050629661184c6d805e8c654fc8d0bb20334ffd0'],
   /* 2026-08-23: the two newest subjects had shipped with NO identity baseline
    * at all — found by the ratchet-soundness review, which means every earlier
    * count in this file was guarding seven decks while two rode along
@@ -217,6 +222,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7355);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7369);
   });
 });

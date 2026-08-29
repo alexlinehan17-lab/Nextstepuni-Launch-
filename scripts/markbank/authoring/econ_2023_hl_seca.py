@@ -305,4 +305,38 @@ P.cards.append(card(
     section='A', tariff_kind='fixed',
     figure_key='economics-2023-HL-scheme-p08-q3a-working'))
 
+P.cards.append(card(
+    'econ-2023-hl-sa-q4-a', 2023, 'higher', 'economics-1-5',
+    'filling-in-average-and-marginal-cost', '2023 HL Section A Q4(a)',
+    'Complete the missing average cost and marginal cost figures in the table below.',
+    '6', 6,
+    [point('r-1', as_option(block(BODY, 'Workings: \u2022 82 \u00f7 2 = 41',
+                                  'Answer (b) or (c)')), 6,
+           'Four blanks, four workings. Average cost DIVIDES total cost by output; marginal cost '
+           'SUBTRACTS one total cost from the next. The two are different operations on the same '
+           'row and mixing them is the whole error.')],
+    'Marginal cost is N/A at one unit because there is no previous output to compare with. At '
+    'four units marginal cost is 44 while average cost is only 38 \u2014 the marginal figure '
+    'has overtaken the average, which is why the average starts to rise.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2023-HL-scheme-p09-q4a-table'))
+
+P.cards.append(card(
+    'econ-2023-hl-sa-q10', 2023, 'higher', 'economics-3-0',
+    'from-gnp-to-gni-and-modified-gni', '2023 HL Section A Q10',
+    'Given that Gross Domestic Product (GDP) at Current Market Prices (CMP) was \u20ac426bn, '
+    'use the information above to calculate the following terms B, and C. A has been completed '
+    'for you. State the relationships and show all your workings.',
+    '2 @ 6', 12,
+    [point('r-1', as_option(block(BODY, 'Gross National Product (GNP) at Current Market Prices: \u20ac323bn',
+                                  '12 | P a g e')), 12,
+           'Two steps at six marks each, and each starts from the figure the step above produced. '
+           'B adds EU subsidies and subtracts EU taxes to GNP; C then subtracts the \u20ac89bn '
+           'of adjustments from B.')],
+    'Modified GNI exists because the ordinary figures are distorted by redomiciled companies, '
+    'aircraft leasing and intellectual property \u2014 the \u20ac89bn taken out at the last '
+    'step. It is the measure that comes closest to what the Irish economy actually produces.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2023-HL-paper-p12-i0'))
+
 P.emit()

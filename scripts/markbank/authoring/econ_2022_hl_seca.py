@@ -378,4 +378,21 @@ P.cards.append(card(
     section='A', tariff_kind='fixed',
     figure_key='economics-2022-HL-scheme-p10-q6a-diagrams'))
 
+P.cards.append(card(
+    'econ-2022-hl-sa-q7-a-i', 2022, 'higher', 'economics-3-3',
+    'which-chart-shows-the-real-ecb-rate-trend', '2022 HL Section A Q7(a)(i)',
+    'Only one of the charts below accurately displays the trend in the ECB rate from 2000 to '
+    '2021. Identify which chart accurately displays the correct trend in the ECB rate from 2000 '
+    'to 2021. Choose by means of a tick one of the boxes below.',
+    '1', 1,
+    [point('r-1', as_option(block(BODY, 'Figure A: Figure B: \u2714', '(ii) Justify your choice')), 1,
+           'Figure B. One mark for the tick \u2014 the justification is the next part and is '
+           'worth eight. The ECB rate FELL after the 2007/2008 crisis and sat at zero for years, '
+           'which is B\u2019s shape; A has it rising into the 2010s.')],
+    'The two charts are mirror images in the years that matter. Cheap money after the financial '
+    'crisis is the fact being tested, and a chart showing rates climbing through the 2010s has '
+    'the decade upside down.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2022-HL-paper-p10-art'))
+
 P.emit()

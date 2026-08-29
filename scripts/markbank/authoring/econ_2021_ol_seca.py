@@ -204,4 +204,22 @@ P.cards.append(card(
     section='A', tariff_kind='fixed',
     figure_key='economics-2021-OL-scheme-p05-q4-working'))
 
+P.cards.append(card(
+    'econ-2021-ol-sa-q2', 2021, 'ordinary', 'economics-0-0',
+    'positive-or-normative-statement', '2021 OL Section A Q2',
+    'Study the statements below and indicate by placing a tick (\u221a) in the correct box '
+    'which is a positive statement and which is a normative statement.',
+    'fixed', 15,
+    [point('r-1', sl('Statement Positive Normative 1. In 2022 exports in Ireland will grow',
+                     '3 | P a g e'), 15,
+           'Two statements, the first worth 9 and the second 6. A POSITIVE statement is a factual '
+           'claim that could be checked; a NORMATIVE one is a judgement about what should be '
+           'done.')],
+    'A forecast is POSITIVE \u2014 it can be checked once 2022 has happened. The second '
+    'statement claims a policy will produce a good outcome, which is a value judgement. The '
+    'answer is which column the tick sits in, and extraction loses the column, so the completed '
+    'table rides with the card as a picture.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2021-OL-scheme-p04-q2-ticks'))
+
 P.emit()

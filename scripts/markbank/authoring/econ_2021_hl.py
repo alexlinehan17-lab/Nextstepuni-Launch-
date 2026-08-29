@@ -609,4 +609,22 @@ P.cards.append(card(
     tariff_kind='fixed',
     figure_key='economics-2021-HL-paper-p31-art'))
 
+P.cards.append(card(
+    'econ-2021-hl-q16-c-iii', 2021, 'higher', 'economics-3-1',
+    'why-use-a-cost-benefit-analysis-before-spending', '2021 HL Q16(c)(iii)',
+    'In budget 2020 the Minister for Public Expenditure announced funding for the construction '
+    'of 9,500 new social housing units. Explain why the Department for Public Expenditure might '
+    'have used a cost-benefit analysis before deciding on this expenditure for social housing '
+    'units.',
+    '2 @ 3', 6,
+    [point('r-1', as_option(block(BODY, 'To ensure that the benefits of this expenditure',
+                                  '34 | P a g e')), 6,
+           'Two claims at three marks each. A cost-benefit analysis weighs SOCIAL costs and '
+           'benefits as well as private ones \u2014 that is why the state uses it where a firm '
+           'would use ordinary profit.')],
+    'The test is whether benefits at least equal costs, not whether the project makes money. '
+    'Social housing may never turn a profit and still pass, because the benefits counted are the '
+    'ones accruing to taxpayers as a whole.',
+    tariff_kind='fixed'))
+
 P.emit()

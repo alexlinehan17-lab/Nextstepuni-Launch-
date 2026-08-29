@@ -1826,6 +1826,39 @@
   "notes": "A falling line on a chart of GNI per capita is a shrinking economy. Students who look for the LOWEST point instead of the falling stretch pick the wrong years."
  },
  {
+  "id": "econ-2021-hl-q16-c-iii",
+  "topicId": "economics-3-1",
+  "conceptId": "why-use-a-cost-benefit-analysis-before-spending",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 HL Q16(c)(iii)",
+  "questionText": "In budget 2020 the Minister for Public Expenditure announced funding for the construction of 9,500 new social housing units. Explain why the Department for Public Expenditure might have used a cost-benefit analysis before deciding on this expenditure for social housing units.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 @ 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To ensure that the benefits of this expenditure (economic and social) exceed or equal the costs of this expenditure so that the best possible benefits accrue to the taxpayers.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two claims at three marks each. A cost-benefit analysis weighs SOCIAL costs and benefits as well as private ones — that is why the state uses it where a firm would use ordinary profit."
+   }
+  ],
+  "notes": "The test is whether benefits at least equal costs, not whether the project makes money. Social housing may never turn a profit and still pass, because the benefits counted are the ones accruing to taxpayers as a whole."
+ },
+ {
   "id": "econ-2021-hl-sa-q1-b",
   "topicId": "economics-4-2",
   "conceptId": "why-a-trade-surplus-is-an-aim",
@@ -2557,6 +2590,80 @@
    }
   ],
   "notes": "The reason has to be the defining feature, not a fact about the industry. \"Banks are big\" is not why banking is an oligopoly; \"a few firms hold the market\" is."
+ },
+ {
+  "id": "econ-2021-hl-sa-q2",
+  "topicId": "economics-0-0",
+  "conceptId": "sorting-positive-from-normative-statements",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2021 HL Section A Q2",
+  "questionText": "Select, using a tick (✔), whether each of the following statements are Normative statements or Positive statements.",
+  "stem": "",
+  "figureKey": "economics-2021-HL-scheme-p04-q2-ticks",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Statement Positive Normative Statement Statement If the Irish government increase jobseeker’s allowance by 5% in the 2022 budget, unemployment in Ireland will increase ✔ by at least 2% by 2023. We have to do more for the less well off in society. ✔ The government should have increased unemployment ✔ benefit by more than €0.10 this year. Sales of new cars in Ireland decreased during 2020. ✔",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Four statements, priced 4, 4, 4 and 3. A POSITIVE statement is one that could be tested against the facts, whether or not it turns out true; a NORMATIVE one says what OUGHT to happen and no evidence can settle it."
+   }
+  ],
+  "notes": "The giveaway words are should and have to — both normative. A prediction about unemployment is positive even though nobody knows yet whether it will happen, because it is the KIND of claim evidence could settle. The scheme states its answer by which column the tick sits in, and that column does not survive extraction, so the completed table rides with the card as a picture."
+ },
+ {
+  "id": "econ-2021-hl-sa-q10-b",
+  "topicId": "economics-3-3",
+  "conceptId": "what-you-would-advise-the-ecb-to-do-with-a-zero-rate",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2021 HL Section A Q10(b)",
+  "questionText": "Outline whether you would advise the European Central Bank to: increase, decrease, or maintain the current interest rate of 0%. Justify your choice.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 @ 7",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A course of action for the ECB, with its justification — any one",
+    "marks": 7,
+    "openList": true,
+    "contextNote": "Seven marks for one recommendation properly justified. The scheme takes either answer — it is the reasoning that is marked, not the choice.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 7,
+     "options": [
+      "During these economically volatile times in the wake of the Covid-19 Pandemic the ECB is likely to maintain the low interest rate of 0%. This measure was initially brought about in the wake of the great recession to discourage saving and encourage spending and borrowing in an attempt to stimulate the European economy again. Economic conditions are similar now to then and thus it makes sense to maintain this interest rate.",
+      "ECB could decrease interest rates / have negative interest rates. This policy would create a large deterrent to save and may encourage consumers to spend instead. This policy may also lead to lenders reducing interest rates for borrowing and thus create an incentive for people to borrow and spend / invest into the economy. This is quite an extreme policy that the ECB will only make use of if there are low levels of economic growth and inflation."
+     ]
+    }
+   }
+  ],
+  "notes": "Both accepted answers rest on the same mechanism: a low or negative rate discourages saving and encourages borrowing and spending. What separates them is how far the ECB should push it, and the scheme calls a negative rate an extreme measure for weak growth and low inflation."
  },
  {
   "id": "econ-2021-ol-q11-b-iii",
@@ -4225,6 +4332,105 @@
   "notes": "Long run means normal profit only, so price and average cost coincide. A student who marks C1 below P1 has drawn a supernormal profit that cannot survive free entry — and the scheme’s split, 4 and 4 for P1 and Q1 but only 2 for C1, still costs them the mark."
  },
  {
+  "id": "econ-2021-ol-q15-b-i",
+  "topicId": "economics-1-1",
+  "conceptId": "which-diagram-shows-a-successful-ad-campaign",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 OL Q15(b)(i)",
+  "questionText": "Nike is famous for its ‘Just do it’ advertising campaign. Indicate by means of a tick (✓) which diagram accurately reflects the impact this highly successful advertising campaign had on the equilibrium of Nike products.",
+  "stem": "",
+  "figureKey": "economics-2021-OL-paper-p23-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "10",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Diagram A Diagram B Diagram B √",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Diagram B. A successful campaign makes people want MORE at every price, so demand shifts RIGHT — the D2 line has to sit to the right of D1, which is what B shows and A does not."
+   }
+  ],
+  "notes": "Both diagrams are drawn the same way apart from which side D2 falls on, so the whole question is the DIRECTION of the shift. Advertising is a non-price determinant, so the curve moves rather than the market sliding along it."
+ },
+ {
+  "id": "econ-2021-ol-q11-a-i",
+  "topicId": "economics-4-0",
+  "conceptId": "reading-the-change-in-irelands-hdi-position",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 OL Q11(a)(i)",
+  "questionText": "Using the data provided in the tables above calculate the difference between Ireland’s ranking on the HDI index from 2019 to 2020. Indicate if Ireland’s position has improved.",
+  "stem": "",
+  "figureKey": "economics-2021-OL-paper-p10-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 @ 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Difference in Difference in Difference in Has Ireland’s position HDI Rank life expectancy Mean Years of improved between (2019-2020) at birth Schooling 2019 and 2020? + 1 + 0.2 Years + 0.2 Yes",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Four cells at three marks each: the change in rank, in life expectancy, in mean years of schooling, and the verdict. A rank moving from 3 to 2 is an IMPROVEMENT even though the number got smaller — that is the whole point of the last column."
+   }
+  ],
+  "notes": "Rank runs the opposite way to the other two columns: a smaller number is better. Reading the +1 as a fall is the standard error, and it makes the final Yes come out as No."
+ },
+ {
+  "id": "econ-2021-ol-q13-c-ii-cpi",
+  "topicId": "economics-3-3",
+  "conceptId": "reading-inflation-rates-off-a-cpi-chart",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 OL Q13(c)(ii)",
+  "questionText": "The diagram below shows the changing inflation rates from the Consumer Price Index (CPI) Ireland from August to December 2020. Using the data answer the questions in the table below.",
+  "stem": "",
+  "figureKey": "economics-2021-OL-paper-p18-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 @ 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "What was the percentage change in inflation in -1.5% October 2020? What was the change in the annual percentage -0.2% change in inflation between August and September 2020? During what months was there an increase in the October to November annual percentage change in inflation? November to December",
+    "marks": 18,
+    "openList": true,
+    "contextNote": "Three readings at six marks each. The last one asks for the months where the annual change INCREASED — that is where the line rises, from -1.5 up to -1.1 and then to -1, even though every figure on the chart is still negative."
+   }
+  ],
+  "notes": "Every value is below zero, so prices were FALLING throughout. An increase in the annual percentage change here means the fall got smaller, not that prices rose."
+ },
+ {
   "id": "econ-2021-ol-sa-q10-b",
   "topicId": "economics-2-1",
   "conceptId": "why-wages-differ-between-jobs",
@@ -4728,6 +4934,39 @@
    }
   ],
   "notes": "Total utility rises all the way to 47, so a student watching the wrong row sees no turning point at all. The turn is in the marginal row, and it happens while the total is still climbing."
+ },
+ {
+  "id": "econ-2021-ol-sa-q2",
+  "topicId": "economics-0-0",
+  "conceptId": "positive-or-normative-statement",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2021 OL Section A Q2",
+  "questionText": "Study the statements below and indicate by placing a tick (√) in the correct box which is a positive statement and which is a normative statement.",
+  "stem": "",
+  "figureKey": "economics-2021-OL-scheme-p04-q2-ticks",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Statement Positive Normative 1. In 2022 exports in Ireland will grow by 10% due to √ Brexit. 2. Increased government expenditure on drug abuse √ will reduce the number of deaths.",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Two statements, the first worth 9 and the second 6. A POSITIVE statement is a factual claim that could be checked; a NORMATIVE one is a judgement about what should be done."
+   }
+  ],
+  "notes": "A forecast is POSITIVE — it can be checked once 2022 has happened. The second statement claims a policy will produce a good outcome, which is a value judgement. The answer is which column the tick sits in, and extraction loses the column, so the completed table rides with the card as a picture."
  },
  {
   "id": "econ-2022-hl-q11-a-ii",
@@ -7730,6 +7969,39 @@
   "notes": "The firm’s demand curve is horizontal because it can sell any amount at the going price and nothing above it. Sloping it downward turns a perfect competitor into a monopolist."
  },
  {
+  "id": "econ-2022-hl-sa-q7-a-i",
+  "topicId": "economics-3-3",
+  "conceptId": "which-chart-shows-the-real-ecb-rate-trend",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q7(a)(i)",
+  "questionText": "Only one of the charts below accurately displays the trend in the ECB rate from 2000 to 2021. Identify which chart accurately displays the correct trend in the ECB rate from 2000 to 2021. Choose by means of a tick one of the boxes below.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-paper-p10-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Figure A: Figure B: ✔",
+    "marks": 1,
+    "openList": true,
+    "contextNote": "Figure B. One mark for the tick — the justification is the next part and is worth eight. The ECB rate FELL after the 2007/2008 crisis and sat at zero for years, which is B’s shape; A has it rising into the 2010s."
+   }
+  ],
+  "notes": "The two charts are mirror images in the years that matter. Cheap money after the financial crisis is the fact being tested, and a chart showing rates climbing through the 2010s has the decade upside down."
+ },
+ {
   "id": "econ-2022-ol-q11-a-ii",
   "topicId": "economics-2-0",
   "conceptId": "advantages-of-many-firms-for-consumers",
@@ -9548,6 +9820,39 @@
    }
   ],
   "notes": "Supply has not moved, so the new crossing point slides UP the existing S curve. Students who shift supply as well end up with a quantity change and no price change."
+ },
+ {
+  "id": "econ-2022-ol-q14-a-i",
+  "topicId": "economics-0-1",
+  "conceptId": "the-four-factors-of-production-in-a-yogurt-plant",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 OL Q14(a)(i)",
+  "questionText": "Complete the table below to show your understanding of the factors of production used in the production of yogurt. Some of the information has been completed for you.",
+  "stem": "",
+  "figureKey": "economics-2022-OL-scheme-p22-q14ai-table",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 x 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 24,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "2. LABOUR The human effort involved in the production of Workers yogurt. The workers who make the yogurt.",
+    "marks": 24,
+    "openList": true,
+    "contextNote": "Four factors at six marks each. LAND is anything supplied by nature — which here means the milk and berries as well as the ground; CAPITAL is what people have MADE to produce with; ENTERPRISE is the risk-taker, the Cleary family."
+   }
+  ],
+  "notes": "The trap is Land: students read it as the site only. In economics it is every natural resource that goes in, which is why milk, sugar and berries are its examples and the factory building belongs to Capital instead."
  },
  {
   "id": "econ-2022-ol-sa-q2-ii",
@@ -13319,6 +13624,72 @@
    }
   ],
   "notes": "The scheme accepts either wording of the same moment — on the third unit, or after the second. What it will not accept is the point where TOTAL utility turns, which is a different thing and happens later."
+ },
+ {
+  "id": "econ-2023-hl-sa-q4-a",
+  "topicId": "economics-1-5",
+  "conceptId": "filling-in-average-and-marginal-cost",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2023 HL Section A Q4(a)",
+  "questionText": "Complete the missing average cost and marginal cost figures in the table below.",
+  "stem": "",
+  "figureKey": "economics-2023-HL-scheme-p09-q4a-table",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Workings: • 82 ÷ 2 = 41 • 108 - 82 = 26 • 152 ÷ 4 = 38 • 152 – 108 = 44",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Four blanks, four workings. Average cost DIVIDES total cost by output; marginal cost SUBTRACTS one total cost from the next. The two are different operations on the same row and mixing them is the whole error."
+   }
+  ],
+  "notes": "Marginal cost is N/A at one unit because there is no previous output to compare with. At four units marginal cost is 44 while average cost is only 38 — the marginal figure has overtaken the average, which is why the average starts to rise."
+ },
+ {
+  "id": "econ-2023-hl-sa-q10",
+  "topicId": "economics-3-0",
+  "conceptId": "from-gnp-to-gni-and-modified-gni",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2023 HL Section A Q10",
+  "questionText": "Given that Gross Domestic Product (GDP) at Current Market Prices (CMP) was €426bn, use the information above to calculate the following terms B, and C. A has been completed for you. State the relationships and show all your workings.",
+  "stem": "",
+  "figureKey": "economics-2023-HL-paper-p12-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 @ 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Gross National Product (GNP) at Current Market Prices: €323bn + EU subsidies €1.7 bn - EU taxes €0.5 bn B = Gross National Income at Current Market Prices €324.2 bn Relationships / Workings: Gross National Income at Current Market Prices: €324.2 bn - Adjustments: €89 bn C = Modified Gross National Income at Current Market Prices €235.2 bn",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Two steps at six marks each, and each starts from the figure the step above produced. B adds EU subsidies and subtracts EU taxes to GNP; C then subtracts the €89bn of adjustments from B."
+   }
+  ],
+  "notes": "Modified GNI exists because the ordinary figures are distorted by redomiciled companies, aircraft leasing and intellectual property — the €89bn taken out at the last step. It is the measure that comes closest to what the Irish economy actually produces."
  },
  {
   "id": "econ-2023-ol-q11-a-i",
@@ -21401,6 +21772,47 @@
   "notes": "The explanation has to reach the market outcome, not stop at the farm. Naming the cost rise without saying what it does to equilibrium leaves most of the nine marks behind."
  },
  {
+  "id": "econ-2024-ol-q15-a",
+  "topicId": "economics-0-1",
+  "conceptId": "naming-and-explaining-the-factors-on-a-farm",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q15(a)",
+  "questionText": "The table below concerns factors of production which may be found on a farm. Complete the table by either naming or explaining each factor of production. Some parts have already been completed for you.",
+  "stem": "",
+  "figureKey": "economics-2024-OL-scheme-p33-q15a-table",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Farm Machinery Capital Labour Farm Workers",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three names at five marks each. Machinery is CAPITAL — man-made and used to produce with; the workers are LABOUR; the owners are ENTERPRISE, the risk-takers."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The one taking a risk in setting Farm Owners Enterprise up the farm in return for profit. Anything supplied by nature which helps in producing the Farm Land output from the farm. The ground on which the farm is located / is built.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Two explanations, three marks and two. Enterprise is defined by the RISK taken in return for profit, and land by being supplied by nature rather than made."
+   }
+  ],
+  "notes": "The table mixes what it gives you: some rows name the factor and want the explanation, others do the reverse. Reading which cell is blank before answering is half the work."
+ },
+ {
   "id": "econ-2024-ol-sa-q1-i",
   "topicId": "economics-0-2",
   "conceptId": "oceans-as-an-economic-resource",
@@ -21925,6 +22337,88 @@
    }
   ],
   "notes": "Same chart, opposite end. The Gini rises with inequality, so the highest coefficient is the most unequal country — not the richest one."
+ },
+ {
+  "id": "econ-2024-ol-sa-q2-a",
+  "topicId": "economics-2-0",
+  "conceptId": "price-or-non-price-competition",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2024 OL Section A Q2(a)",
+  "questionText": "Lidl now offer discount coupons (special offers) to customers who download the Lidl Plus app. Indicate using a tick (✔) in the table below if the above measure is an example of a company using price competition or non-price competition. Explain your answer.",
+  "stem": "",
+  "figureKey": "economics-2024-OL-scheme-p06-q2a-ticks",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Price competition Non-price competition ✔",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Eight marks for the tick: NON-price competition. A coupon for app users is not a price cut for everyone — the shelf price is unchanged for anyone who has not downloaded it."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Explanation: Lidl is competing with other supermarkets to increase its sales / market share by means other than changing its prices for all its customers.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Four marks for the reason. The measure competes for market share by a means OTHER than changing prices for all customers, which is the definition being tested."
+   }
+  ],
+  "notes": "The trap is that a coupon looks like a discount. Price competition means moving the price itself; anything else that attracts customers — loyalty apps, quality, advertising, service — is non-price."
+ },
+ {
+  "id": "econ-2024-ol-sa-q10",
+  "topicId": "economics-1-1",
+  "conceptId": "which-diagram-shows-the-new-matcha-equilibrium",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2024 OL Section A Q10",
+  "questionText": "Assume the market for matcha tea is in equilibrium (E1). Indicate, by means of a tick (✔), whether Diagram A or Diagram B shows its new market equilibrium position following media coverage of its positive health effects. Explain your answer including the effects on equilibrium price and equilibrium quantity.",
+  "stem": "",
+  "figureKey": "economics-2024-OL-paper-p09-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Diagram A ✔ Diagram B",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Eight marks for the tick: Diagram A, the one where DEMAND shifts right to D2. Good publicity changes tastes, so it is the demand curve that moves, not supply."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Explanation: • The demand curve shifts to the right (D2). • The demand for matcha tea will increase due to its health benefits being reported in the media, which increase consumers’ taste/preference for the drink. • The increase in demand will result in an excess demand or a shortage, which will drive up the new equilibrium price. • There will be a new higher equilibrium price. • There will be a new higher equilibrium quantity.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Four marks, and the question asks for BOTH effects: the shortage at the old price drives the equilibrium price up, and the equilibrium quantity rises with it."
+   }
+  ],
+  "notes": "Diagram B moves the supply curve, which is what a change in production costs would do. Media coverage reaches buyers, not producers — so the demand side is what moves."
  },
  {
   "id": "econ-2025-hl-q11-a-ii",

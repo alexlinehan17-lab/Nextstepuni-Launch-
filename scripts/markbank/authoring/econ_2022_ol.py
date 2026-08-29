@@ -566,4 +566,21 @@ P.cards.append(card(
     tariff_kind='fixed',
     figure_key='economics-2022-OL-scheme-p17-q12b-diagram'))
 
+P.cards.append(card(
+    'econ-2022-ol-q14-a-i', 2022, 'ordinary', 'economics-0-1',
+    'the-four-factors-of-production-in-a-yogurt-plant', '2022 OL Q14(a)(i)',
+    'Complete the table below to show your understanding of the factors of production used in '
+    'the production of yogurt. Some of the information has been completed for you.',
+    '4 x 6', 24,
+    [point('r-1', as_option(block(BODY, '2. LABOUR The human effort involved in the production of',
+                                  'Machinery')), 24,
+           'Four factors at six marks each. LAND is anything supplied by nature \u2014 which '
+           'here means the milk and berries as well as the ground; CAPITAL is what people have '
+           'MADE to produce with; ENTERPRISE is the risk-taker, the Cleary family.')],
+    'The trap is Land: students read it as the site only. In economics it is every natural '
+    'resource that goes in, which is why milk, sugar and berries are its examples and the '
+    'factory building belongs to Capital instead.',
+    tariff_kind='fixed',
+    figure_key='economics-2022-OL-scheme-p22-q14ai-table'))
+
 P.emit()

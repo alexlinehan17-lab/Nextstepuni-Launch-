@@ -10149,7 +10149,7 @@
   "alt": "A single-row table extracted from the Human Development Index for 2019, columns Rank, Country, Human Development Index (HDI) (value), Life expectancy at birth (years) SDG 3, Mean years of schooling (years) SDG 4.6. The row reads 3, Ireland, 0.951, 82.1, 12.5.",
   "lettersVisible": [],
   "labelMeanings": [],
-  "questionRef": "2021 OL Q13(a)(i)",
+  "questionRef": "2021 OL Q11(a)(i)",
   "year": 2021,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Economics 2021 Ordinary Level — © State Examinations Commission"
@@ -10160,7 +10160,7 @@
   "alt": "The matching single-row HDI table for 2020, same columns, reading 2, Ireland, 0.955, 82.3, 12.7.",
   "lettersVisible": [],
   "labelMeanings": [],
-  "questionRef": "2021 OL Q13(a)(i)",
+  "questionRef": "2021 OL Q11(a)(i)",
   "year": 2021,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Economics 2021 Ordinary Level — © State Examinations Commission"
@@ -33692,5 +33692,110 @@
   "year": 2025,
   "level": "higher",
   "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission"
+ },
+ "economics-2021-HL-scheme-p04-q2-ticks": {
+  "src": "/exam-figures/economics/markbank/economics-2021-HL-scheme-p04-q2-ticks.png",
+  "md5": "57f78755c41e7a4454f57d3197f28dfb",
+  "alt": "The marking scheme's completed table, three columns headed Statement, Positive Statement and Normative Statement. Row one, that raising jobseeker's allowance 5% will increase unemployment by at least 2% by 2023, is ticked under POSITIVE. Row two, that we have to do more for the less well off in society, is ticked under NORMATIVE. Row three, that the government should have increased unemployment benefit by more than 10 cent this year, is ticked under NORMATIVE. Row four, that sales of new cars in Ireland decreased during 2020, is ticked under POSITIVE.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Section A Q2",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2021 Higher Level — © State Examinations Commission"
+ },
+ "economics-2021-OL-scheme-p04-q2-ticks": {
+  "src": "/exam-figures/economics/markbank/economics-2021-OL-scheme-p04-q2-ticks.png",
+  "md5": "8bbc4181f4ed0f6f2bfa2617eed81ced",
+  "alt": "The marking scheme's completed table, columns headed Statement, Positive and Normative. Statement 1, that in 2022 exports in Ireland will grow by 10% due to Brexit, carries its tick in the POSITIVE column. Statement 2, that increased government expenditure on drug abuse will reduce the number of deaths, carries its tick in the NORMATIVE column.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Section A Q2",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2021-OL-paper-p23-art": {
+  "src": "/exam-figures/economics/markbank/economics-2021-OL-paper-p23-art.png",
+  "md5": "8fdec0cd97575dce4e1beaa013160602",
+  "alt": "Two demand and supply diagrams side by side, each with Price on the vertical axis and Quantity on the horizontal, an upward-sloping line labelled S1 and a thin downward-sloping line labelled D1. Diagram A adds a thick downward-sloping line labelled D2 to the LEFT of D1. Diagram B adds a thick downward-sloping line labelled D2 to the RIGHT of D1. Neither diagram marks a price or a quantity.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q15(b)(i)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2022-HL-paper-p10-art": {
+  "src": "/exam-figures/economics/markbank/economics-2022-HL-paper-p10-art.png",
+  "md5": "736351d0eddf0ad49a71e92e22d2cd34",
+  "alt": "Two line charts side by side, each headed Base Interest Rate with a y-axis 'Base % Interest Rate' from 0 to 5 and an x-axis 'Year' in two-year steps from 2000 to 2020. Figure A, in red, starts at 0 and stays flat to 2006, then climbs to a peak of 4 around 2012, falls to 2, and finishes at 3 in 2020. Figure B, in blue, starts at 3, dips to 2 between 2004 and 2006, peaks at 4 around 2008, then falls steadily to 1 by 2010 and to 0 from 2014 onward.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Section A Q7(a)(i)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2022 Higher Level — © State Examinations Commission"
+ },
+ "economics-2024-OL-scheme-p06-q2a-ticks": {
+  "src": "/exam-figures/economics/markbank/economics-2024-OL-scheme-p06-q2a-ticks.png",
+  "md5": "f9f6685c4c94650bb97f221c3a7e4b46",
+  "alt": "The marking scheme's completed table, two labelled rows with a tick box beside each. The row reading Price competition is left EMPTY. The row reading Non-price competition carries the tick.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Section A Q2(a)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2022-OL-scheme-p22-q14ai-table": {
+  "src": "/exam-figures/economics/markbank/economics-2022-OL-scheme-p22-q14ai-table.png",
+  "md5": "ba39c9fdaeddd0f5461c10bbd59a28a7",
+  "alt": "The marking scheme's completed factors-of-production table for yogurt, columns Factor of Production, Explanation and Example. What the paper already supplied is printed in blue and what the candidate had to add in black. Row 1 Land: explanation, anything supplied by nature which helps in the production of yogurt, the ground the Glenisk factory is built on, and raw materials; examples milk, sugar, berries. Row 2 LABOUR: the human effort involved, the workers who make the yogurt; example workers, in blue. Row 3 Capital: man-made items used to produce the yogurt; examples machinery, equipment, vehicles, the factory building. Row 4 ENTERPRISE: takes a risk with an idea in setting up a business in return for profit, in blue; example the Cleary Family.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q14(a)(i)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2023-HL-scheme-p09-q4a-table": {
+  "src": "/exam-figures/economics/markbank/economics-2023-HL-scheme-p09-q4a-table.png",
+  "md5": "3b0d69794e06dda3e5200fe5a9120fe4",
+  "alt": "The marking scheme's completed cost table, with the four filled-in cells outlined in blue. Output runs 1 to 4 units. Total Cost in euro reads 55, 82, 108, 152. Average Cost reads 55, then 41, 36 and 38. Marginal Cost reads N/A in red for the first unit, then 27, 26 and 44. Under the heading Workings the first bullet reads 82 divided by 2 equals 41.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Section A Q4(a)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2023 Higher Level — © State Examinations Commission"
+ },
+ "economics-2024-OL-scheme-p33-q15a-table": {
+  "src": "/exam-figures/economics/markbank/economics-2024-OL-scheme-p33-q15a-table.png",
+  "md5": "171a27192f47b15596d2a9aec4778381",
+  "alt": "The marking scheme's factors-of-production table for a farm, columns Example, Name of Factor of Production and Explanation of Factor of Production. Only the cells the candidate had to supply are filled: Farm Machinery is named Capital, Farm Workers is named Labour, Farm Owners is named Enterprise and explained as the one taking a risk in setting up the farm in return for profit, and Farm Land is explained as anything supplied by nature which helps in producing the output from the farm, or the ground on which the farm is located. The cells the paper had already completed are left blank here.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q15(a)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2021-OL-paper-p18-art": {
+  "src": "/exam-figures/economics/markbank/economics-2021-OL-paper-p18-art.png",
+  "md5": "92a3dd2c8658321db029ae5f24478295",
+  "alt": "A line chart headed 'Annual % change in inflation. Aug - Dec 2020', y-axis '% change' running 0 down to -2, x-axis 'Period' with five months. Every point is labelled with its value: Aug-20 at -1, Sep-20 at -1.2, Oct-20 at -1.5, Nov-20 at -1.1 and Dec-20 at -1. The line falls to its lowest point in October and rises again through November and December. Every value is NEGATIVE.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q13(c)(ii)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2021 Ordinary Level — © State Examinations Commission"
  }
 }

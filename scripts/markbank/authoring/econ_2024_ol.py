@@ -661,4 +661,24 @@ P.cards.append(card(
     tariff_kind='fixed',
     figure_key='economics-2024-OL-scheme-p34-q15b-diagram'))
 
+P.cards.append(card(
+    'econ-2024-ol-q15-a', 2024, 'ordinary', 'economics-0-1',
+    'naming-and-explaining-the-factors-on-a-farm', '2024 OL Q15(a)',
+    'The table below concerns factors of production which may be found on a farm. Complete the '
+    'table by either naming or explaining each factor of production. Some parts have already '
+    'been completed for you.',
+    'fixed', 20,
+    [point('r-1', as_option(block(BODY, 'Farm Machinery Capital Labour Farm Workers',
+                                  'The one taking a risk in setting')), 15,
+           'Three names at five marks each. Machinery is CAPITAL \u2014 man-made and used to '
+           'produce with; the workers are LABOUR; the owners are ENTERPRISE, the risk-takers.'),
+     point('r-2', as_option(block(BODY, 'The one taking a risk in setting',
+                                  '33 | P a g e')), 5,
+           'Two explanations, three marks and two. Enterprise is defined by the RISK taken in '
+           'return for profit, and land by being supplied by nature rather than made.')],
+    'The table mixes what it gives you: some rows name the factor and want the explanation, '
+    'others do the reverse. Reading which cell is blank before answering is half the work.',
+    tariff_kind='fixed',
+    figure_key='economics-2024-OL-scheme-p33-q15a-table'))
+
 emit(cards + P.cards)

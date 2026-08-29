@@ -542,4 +542,55 @@ P.cards.append(card(
     tariff_kind='fixed',
     figure_key='economics-2021-OL-scheme-p12-q12a-diagram'))
 
+P.cards.append(card(
+    'econ-2021-ol-q15-b-i', 2021, 'ordinary', 'economics-1-1',
+    'which-diagram-shows-a-successful-ad-campaign', '2021 OL Q15(b)(i)',
+    'Nike is famous for its \u2018Just do it\u2019 advertising campaign. Indicate by means of '
+    'a tick (\u2713) which diagram accurately reflects the impact this highly successful '
+    'advertising campaign had on the equilibrium of Nike products.',
+    '10', 10,
+    [point('r-1', as_option(block(BODY, 'Diagram A Diagram B Diagram B \u221a', '\u27e810\u27e9')), 10,
+           'Diagram B. A successful campaign makes people want MORE at every price, so demand '
+           'shifts RIGHT \u2014 the D2 line has to sit to the right of D1, which is what B '
+           'shows and A does not.')],
+    'Both diagrams are drawn the same way apart from which side D2 falls on, so the whole '
+    'question is the DIRECTION of the shift. Advertising is a non-price determinant, so the '
+    'curve moves rather than the market sliding along it.',
+    tariff_kind='fixed',
+    figure_key='economics-2021-OL-paper-p23-art'))
+
+P.cards.append(card(
+    'econ-2021-ol-q11-a-i', 2021, 'ordinary', 'economics-4-0',
+    'reading-the-change-in-irelands-hdi-position', '2021 OL Q11(a)(i)',
+    'Using the data provided in the tables above calculate the difference between Ireland\u2019s '
+    'ranking on the HDI index from 2019 to 2020. Indicate if Ireland\u2019s position has '
+    'improved.',
+    '4 @ 3', 12,
+    [point('r-1', as_option(block(BODY, 'Difference in Difference in Difference in',
+                                  '(ii) Given your answers in (i) above')), 12,
+           'Four cells at three marks each: the change in rank, in life expectancy, in mean years '
+           'of schooling, and the verdict. A rank moving from 3 to 2 is an IMPROVEMENT even '
+           'though the number got smaller \u2014 that is the whole point of the last column.')],
+    'Rank runs the opposite way to the other two columns: a smaller number is better. Reading '
+    'the +1 as a fall is the standard error, and it makes the final Yes come out as No.',
+    tariff_kind='fixed',
+    figure_key='economics-2021-OL-paper-p10-i0'))
+
+P.cards.append(card(
+    'econ-2021-ol-q13-c-ii-cpi', 2021, 'ordinary', 'economics-3-3',
+    'reading-inflation-rates-off-a-cpi-chart', '2021 OL Q13(c)(ii)',
+    'The diagram below shows the changing inflation rates from the Consumer Price Index (CPI) '
+    'Ireland from August to December 2020. Using the data answer the questions in the table '
+    'below.',
+    '3 @ 6', 18,
+    [point('r-1', as_option(block(BODY, 'What was the percentage change in inflation in -1.5%',
+                                  '(iii) The general prices of goods')), 18,
+           'Three readings at six marks each. The last one asks for the months where the annual '
+           'change INCREASED \u2014 that is where the line rises, from -1.5 up to -1.1 and then '
+           'to -1, even though every figure on the chart is still negative.')],
+    'Every value is below zero, so prices were FALLING throughout. An increase in the annual '
+    'percentage change here means the fall got smaller, not that prices rose.',
+    tariff_kind='fixed',
+    figure_key='economics-2021-OL-paper-p18-art'))
+
 P.emit()

@@ -217,4 +217,47 @@ P.cards.append(card(
     section='A', tariff_kind='fixed',
     figure_key='economics-2024-OL-paper-p08-art'))
 
+P.cards.append(card(
+    'econ-2024-ol-sa-q2-a', 2024, 'ordinary', 'economics-2-0',
+    'price-or-non-price-competition', '2024 OL Section A Q2(a)',
+    'Lidl now offer discount coupons (special offers) to customers who download the Lidl Plus '
+    'app. Indicate using a tick (\u2714) in the table below if the above measure is an example '
+    'of a company using price competition or non-price competition. Explain your answer.',
+    'fixed', 12,
+    [point('r-1', as_option(block(T, 'Price competition Non-price competition \u2714',
+                                  'Explanation:')), 8,
+           'Eight marks for the tick: NON-price competition. A coupon for app users is not a '
+           'price cut for everyone \u2014 the shelf price is unchanged for anyone who has not '
+           'downloaded it.'),
+     point('r-2', as_option(block(T, 'Explanation: Lidl is competing with other supermarkets',
+                                  '6 | P a g e')), 4,
+           'Four marks for the reason. The measure competes for market share by a means OTHER '
+           'than changing prices for all customers, which is the definition being tested.')],
+    'The trap is that a coupon looks like a discount. Price competition means moving the price '
+    'itself; anything else that attracts customers \u2014 loyalty apps, quality, advertising, '
+    'service \u2014 is non-price.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2024-OL-scheme-p06-q2a-ticks'))
+
+P.cards.append(card(
+    'econ-2024-ol-sa-q10', 2024, 'ordinary', 'economics-1-1',
+    'which-diagram-shows-the-new-matcha-equilibrium', '2024 OL Section A Q10',
+    'Assume the market for matcha tea is in equilibrium (E1). Indicate, by means of a tick '
+    '(\u2714), whether Diagram A or Diagram B shows its new market equilibrium position '
+    'following media coverage of its positive health effects. Explain your answer including the '
+    'effects on equilibrium price and equilibrium quantity.',
+    'fixed', 12,
+    [point('r-1', as_option(block(T, 'Diagram A \u2714 Diagram B',
+                                  'Explain your answer including the effects')), 8,
+           'Eight marks for the tick: Diagram A, the one where DEMAND shifts right to D2. Good '
+           'publicity changes tastes, so it is the demand curve that moves, not supply.'),
+     point('r-2', as_option(block(T, 'Explanation: \u2022 The demand curve shifts to the right (D2)',
+                                  '12 | P a g e')), 4,
+           'Four marks, and the question asks for BOTH effects: the shortage at the old price '
+           'drives the equilibrium price up, and the equilibrium quantity rises with it.')],
+    'Diagram B moves the supply curve, which is what a change in production costs would do. '
+    'Media coverage reaches buyers, not producers \u2014 so the demand side is what moves.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2024-OL-paper-p09-i0'))
+
 P.emit()

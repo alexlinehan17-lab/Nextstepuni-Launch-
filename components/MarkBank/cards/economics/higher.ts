@@ -684,6 +684,19 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: "LC034ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2021 Higher Level — © State Examinations Commission.",
+    id: "econ-2021-hl-q16-c-iii", topicId: "economics-3-1", conceptId: "why-use-a-cost-benefit-analysis-before-spending",
+    section: "B", questionRef: "2021 HL Q16(c)(iii)",
+    questionText: "In budget 2020 the Minister for Public Expenditure announced funding for the construction of 9,500 new social housing units. Explain why the Department for Public Expenditure might have used a cost-benefit analysis before deciding on this expenditure for social housing units.",
+    tariffModel: {"kind":"fixed","notation":"2 @ 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "To ensure that the benefits of this expenditure (economic and social) exceed or equal the costs of this expenditure so that the best possible benefits accrue to the taxpayers.", marks: 6, contextNote: "Two claims at three marks each. A cost-benefit analysis weighs SOCIAL costs and benefits as well as private ones — that is why the state uses it where a firm would use ordinary profit.", openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2021 Higher Level — © State Examinations Commission.",
     id: "econ-2021-hl-sa-q1-b", topicId: "economics-4-2", conceptId: "why-a-trade-surplus-is-an-aim",
     section: "A", questionRef: "2021 HL Section A Q1(b)",
     questionText: "Outline two reasons why achieving a trade surplus is an objective of the Irish government.",
@@ -976,6 +989,41 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed","notation":"6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The Irish banking sector is dominated by a few large firms, making these firms oligopolies. • There is only one firm in charge of water provision in Ireland, making it a monopoly. • There are many small takeaway food outlets around the country which sell close substitutes and they can control their own prices, meaning this firm is imperfectly competitive/monopolistically competitive.", marks: 6, contextNote: "One reason per structure, and each names the FEATURE that defines it: a few large firms, a sole provider, many sellers of close substitutes with some price control.", openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2021 Higher Level — © State Examinations Commission.",
+    id: "econ-2021-hl-sa-q2", topicId: "economics-0-0", conceptId: "sorting-positive-from-normative-statements",
+    section: "A", questionRef: "2021 HL Section A Q2",
+    questionText: "Select, using a tick (✔), whether each of the following statements are Normative statements or Positive statements.",
+    tariffModel: {"kind":"fixed","notation":"fixed","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Statement Positive Normative Statement Statement If the Irish government increase jobseeker’s allowance by 5% in the 2022 budget, unemployment in Ireland will increase ✔ by at least 2% by 2023. We have to do more for the less well off in society. ✔ The government should have increased unemployment ✔ benefit by more than €0.10 this year. Sales of new cars in Ireland decreased during 2020. ✔", marks: 15, contextNote: "Four statements, priced 4, 4, 4 and 3. A POSITIVE statement is one that could be tested against the facts, whether or not it turns out true; a NORMATIVE one says what OUGHT to happen and no evidence can settle it.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2021-HL-scheme-p04-q2-ticks",
+          "src": "/exam-figures/economics/markbank/economics-2021-HL-scheme-p04-q2-ticks.png",
+          "srcHash": "57f78755c41e7a4454f57d3197f28dfb",
+          "alt": "The marking scheme's completed table, three columns headed Statement, Positive Statement and Normative Statement. Row one, that raising jobseeker's allowance 5% will increase unemployment by at least 2% by 2023, is ticked under POSITIVE. Row two, that we have to do more for the less well off in society, is ticked under NORMATIVE. Row three, that the government should have increased unemployment benefit by more than 10 cent this year, is ticked under NORMATIVE. Row four, that sales of new cars in Ireland decreased during 2020, is ticked under POSITIVE.",
+          "attribution": "SEC Leaving Certificate Economics 2021 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2021 Higher Level — © State Examinations Commission.",
+    id: "econ-2021-hl-sa-q10-b", topicId: "economics-3-3", conceptId: "what-you-would-advise-the-ecb-to-do-with-a-zero-rate",
+    section: "A", questionRef: "2021 HL Section A Q10(b)",
+    questionText: "Outline whether you would advise the European Central Bank to: increase, decrease, or maintain the current interest rate of 0%. Justify your choice.",
+    tariffModel: {"kind":"fixed","notation":"1 @ 7","answer":null,"ofParts":null,"perPart":null}, totalMarks: 7,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A course of action for the ECB, with its justification — any one", marks: 7, contextNote: "Seven marks for one recommendation properly justified. The scheme takes either answer — it is the reasoning that is marked, not the choice.", openList: true, group: {"claimMax":1,"perOption":7,"options":["During these economically volatile times in the wake of the Covid-19 Pandemic the ECB is likely to maintain the low interest rate of 0%. This measure was initially brought about in the wake of the great recession to discourage saving and encourage spending and borrowing in an attempt to stimulate the European economy again. Economic conditions are similar now to then and thus it makes sense to maintain this interest rate.","ECB could decrease interest rates / have negative interest rates. This policy would create a large deterrent to save and may encourage consumers to spend instead. This policy may also lead to lenders reducing interest rates for borrowing and thus create an incentive for people to borrow and spend / invest into the economy. This is quite an extreme policy that the ECB will only make use of if there are low levels of economic growth and inflation."]} },
     ],
   } as SecCard,
   {
@@ -2121,6 +2169,27 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2022 Higher Level — © State Examinations Commission.",
+    id: "econ-2022-hl-sa-q7-a-i", topicId: "economics-3-3", conceptId: "which-chart-shows-the-real-ecb-rate-trend",
+    section: "A", questionRef: "2022 HL Section A Q7(a)(i)",
+    questionText: "Only one of the charts below accurately displays the trend in the ECB rate from 2000 to 2021. Identify which chart accurately displays the correct trend in the ECB rate from 2000 to 2021. Choose by means of a tick one of the boxes below.",
+    tariffModel: {"kind":"fixed","notation":"1","answer":null,"ofParts":null,"perPart":null}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Figure A: Figure B: ✔", marks: 1, contextNote: "Figure B. One mark for the tick — the justification is the next part and is worth eight. The ECB rate FELL after the 2007/2008 crisis and sat at zero for years, which is B’s shape; A has it rising into the 2010s.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2022-HL-paper-p10-art",
+          "src": "/exam-figures/economics/markbank/economics-2022-HL-paper-p10-art.png",
+          "srcHash": "736351d0eddf0ad49a71e92e22d2cd34",
+          "alt": "Two line charts side by side, each headed Base Interest Rate with a y-axis 'Base % Interest Rate' from 0 to 5 and an x-axis 'Year' in two-year steps from 2000 to 2020. Figure A, in red, starts at 0 and stays flat to 2006, then climbs to a peak of 4 around 2012, falls to 2, and finishes at 3 in 2020. Figure B, in blue, starts at 3, dips to 2 between 2004 and 2006, peaks at 4 around 2008, then falls steadily to 1 by 2010 and to 0 from 2014 onward.",
+          "attribution": "SEC Leaving Certificate Economics 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2023, level: "higher",
     paperFileid: "LC034ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2023 Higher Level — © State Examinations Commission.",
@@ -3194,6 +3263,49 @@ export const CARDS: SecCard[] = [
           "alt": "The marking scheme's completed utility table with the three filled-in cells shaded green. Number of units consumed runs 1, 2, 3, 4. Total Utility in Units per Utils reads 40, 80, 115 and 137, with 115 the filled cell. Marginal Utility reads 40, 40, 35 and 22, with 40 and 22 the filled cells. Below, under the heading Workings, three bullets: 80 minus 40 equals 40; 80 plus 35 equals 115; 137 minus 115 equals 22.",
           "attribution": "SEC Leaving Certificate Economics 2023 Higher Level — © State Examinations Commission",
           "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2023 Higher Level — © State Examinations Commission.",
+    id: "econ-2023-hl-sa-q4-a", topicId: "economics-1-5", conceptId: "filling-in-average-and-marginal-cost",
+    section: "A", questionRef: "2023 HL Section A Q4(a)",
+    questionText: "Complete the missing average cost and marginal cost figures in the table below.",
+    tariffModel: {"kind":"fixed","notation":"6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Workings: • 82 ÷ 2 = 41 • 108 - 82 = 26 • 152 ÷ 4 = 38 • 152 – 108 = 44", marks: 6, contextNote: "Four blanks, four workings. Average cost DIVIDES total cost by output; marginal cost SUBTRACTS one total cost from the next. The two are different operations on the same row and mixing them is the whole error.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2023-HL-scheme-p09-q4a-table",
+          "src": "/exam-figures/economics/markbank/economics-2023-HL-scheme-p09-q4a-table.png",
+          "srcHash": "3b0d69794e06dda3e5200fe5a9120fe4",
+          "alt": "The marking scheme's completed cost table, with the four filled-in cells outlined in blue. Output runs 1 to 4 units. Total Cost in euro reads 55, 82, 108, 152. Average Cost reads 55, then 41, 36 and 38. Marginal Cost reads N/A in red for the first unit, then 27, 26 and 44. Under the heading Workings the first bullet reads 82 divided by 2 equals 41.",
+          "attribution": "SEC Leaving Certificate Economics 2023 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2023 Higher Level — © State Examinations Commission.",
+    id: "econ-2023-hl-sa-q10", topicId: "economics-3-0", conceptId: "from-gnp-to-gni-and-modified-gni",
+    section: "A", questionRef: "2023 HL Section A Q10",
+    questionText: "Given that Gross Domestic Product (GDP) at Current Market Prices (CMP) was €426bn, use the information above to calculate the following terms B, and C. A has been completed for you. State the relationships and show all your workings.",
+    tariffModel: {"kind":"fixed","notation":"2 @ 6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Gross National Product (GNP) at Current Market Prices: €323bn + EU subsidies €1.7 bn - EU taxes €0.5 bn B = Gross National Income at Current Market Prices €324.2 bn Relationships / Workings: Gross National Income at Current Market Prices: €324.2 bn - Adjustments: €89 bn C = Modified Gross National Income at Current Market Prices €235.2 bn", marks: 12, contextNote: "Two steps at six marks each, and each starts from the figure the step above produced. B adds EU subsidies and subtracts EU taxes to GNP; C then subtracts the €89bn of adjustments from B.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2023-HL-paper-p12-i0",
+          "src": "/exam-figures/economics/markbank/economics-2023-HL-paper-p12-i0.png",
+          "srcHash": "adaa233e2b3dfab6ead95ecac48b477a",
+          "alt": "A table adapted from Ireland's National Accounts with columns Description and Value. Net factor income from abroad -€103bn; EU Subsidies €1.7bn; EU Taxes €0.5bn; and Adjustments €89bn, itemised as factor income of redomiciled companies, depreciation on R&D imports and trade in IP, and depreciation on aircraft leasing.",
+          "attribution": "SEC Leaving Certificate Economics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
   } as SecCard,

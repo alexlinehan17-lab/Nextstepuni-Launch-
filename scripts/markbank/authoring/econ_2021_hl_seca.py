@@ -24,7 +24,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from econ_auto import Paper  # noqa: E402
-from econ_lib import as_option, block, card, load, point, tidy  # noqa: E402
+from econ_lib import anyN, as_option, block, card, load, point, tidy  # noqa: E402
 
 P = Paper(2021, 'higher', 'A')
 SCAFFOLD = ('Possible responses', 'Suggested responses')
@@ -307,5 +307,42 @@ P.cards.append(card(
     stem='Part (a) names the structures: the Irish banking sector, Irish Water and a takeaway '
          'food outlet.',
     tariff_kind='fixed', section='A'))
+
+P.cards.append(card(
+    'econ-2021-hl-sa-q2', 2021, 'higher', 'economics-0-0',
+    'sorting-positive-from-normative-statements', '2021 HL Section A Q2',
+    'Select, using a tick (\u2714), whether each of the following statements are Normative '
+    'statements or Positive statements.',
+    'fixed', 15,
+    [point('r-1', as_option(block(BODY, 'Statement Positive Normative Statement Statement',
+                                  '3 | P a g e')), 15,
+           'Four statements, priced 4, 4, 4 and 3. A POSITIVE statement is one that could be '
+           'tested against the facts, whether or not it turns out true; a NORMATIVE one says what '
+           'OUGHT to happen and no evidence can settle it.')],
+    'The giveaway words are should and have to \u2014 both normative. A prediction about '
+    'unemployment is positive even though nobody knows yet whether it will happen, because it is '
+    'the KIND of claim evidence could settle. The scheme states its answer by which column the '
+    'tick sits in, and that column does not survive extraction, so the completed table rides '
+    'with the card as a picture.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2021-HL-scheme-p04-q2-ticks'))
+
+P.cards.append(card(
+    'econ-2021-hl-sa-q10-b', 2021, 'higher', 'economics-3-3',
+    'what-you-would-advise-the-ecb-to-do-with-a-zero-rate', '2021 HL Section A Q10(b)',
+    'Outline whether you would advise the European Central Bank to: increase, decrease, or '
+    'maintain the current interest rate of 0%. Justify your choice.',
+    '1 @ 7', 7,
+    [anyN('r-1', 'A course of action for the ECB, with its justification \u2014 any one', 7, 1, 7,
+          [o.strip(' \u2022') for o in
+           as_option(block(BODY, 'During these economically volatile times',
+                           '11 | P a g e')).split(' OR ') if o.strip(' \u2022')],
+          'Seven marks for one recommendation properly justified. The scheme takes either '
+          'answer \u2014 it is the reasoning that is marked, not the choice.')],
+    'Both accepted answers rest on the same mechanism: a low or negative rate discourages saving '
+    'and encourages borrowing and spending. What separates them is how far the ECB should push '
+    'it, and the scheme calls a negative rate an extreme measure for weak growth and low '
+    'inflation.',
+    section='A', tariff_kind='fixed'))
 
 P.emit()

@@ -1,40 +1,5 @@
 [
  {
-  "ref": "2021 HL Q16(c)(iii)",
-  "reason": "SRP grading bands; the actual CBA ask prints one sentence under a two-claim tariff, so no clean card (recorded class, reason refined)",
-  "evidence": "Scheme: 'Deduct 1m if no quantitative data', 'The Research Process 40 Marks Excellent Very Good…'; CBA answer is one sentence under ⟨6⟩ ⟨(2 @ 3)⟩"
- },
- {
-  "ref": "2021 HL Section A Q10(b)",
-  "reason": "recorded no-responses decision; NOTE: the scheme does print two justified alternatives — the parts extractor loses them to the SECTION B header; revisit as cardable when the extractor is fixed",
-  "evidence": "Scheme prints 'maintain…' OR 'decrease / negative interest rates…' ⟨7⟩"
- },
- {
-  "ref": "2021 HL Section A Q2",
-  "reason": "answered by ticking Positive/Normative against each statement",
-  "evidence": "Scheme: tick table across four statements"
- },
- {
-  "ref": "2021 OL Q11(a)(i)",
-  "reason": "the responses are differences read/calculated off the HDI tables printed with it",
-  "evidence": "Scheme p.8: the answer table '+ 1 / + 0.2 Years / + 0.2 / Yes' ⟨4 @ 3⟩ — chart-reading, the established leave-alone class."
- },
- {
-  "ref": "2021 OL Q13(c)(ii)",
-  "reason": "ALREADY RECORDED in econ_excluded.py: 'the responses are figures read out of the CPI table'",
-  "evidence": "Scheme p.16: the answers are '-1.5%', '-0.2%', 'October to November / November to December' ⟨3 @ 6⟩, each read off the CPI chart printed beside the question."
- },
- {
-  "ref": "2021 OL Q15(b)(i)",
-  "reason": "answered by ticking which diagram applies",
-  "evidence": "Scheme p.20: 'Diagram B √' ⟨10⟩ — same class as the recorded 2024 OL Section A Q10 tick-the-diagram exclusion."
- },
- {
-  "ref": "2021 OL Section A Q2",
-  "reason": "answered by ticking positive or normative against each statement",
-  "evidence": "Scheme p.4: a tick table 'Statement Positive Normative' with '√' placed per row, ⟨1 @ 9⟩ ⟨1 @ 6⟩ — same class as the recorded 2022 OL Section A Q4 tick exclusion."
- },
- {
   "ref": "2021 OL Section A Q3(ii)",
   "reason": "the scheme attributes no tariff to this part. Question 3 prints three mark cells and they sum to 15, the full value of a Section A question (1(i)+1(ii) and 5 both do the same); read by COORDINATE on scheme page 5 all three sit above the (ii) marker at y=244 — the 6@2 on the substitution row at y=180, the 1@2 at y=215 and the 1@1 on the same row as \"Answer: - 4.71\" at y=229. The scheme does print the response (\"It is elastic\"), but nothing prices it.",
   "evidence": "Scheme p.5: 'It is elastic (the PED is greater than 1 in absolute terms).' ⟨1 @ 1⟩ — unanswerable without the −4.71 worked in part (i)."
@@ -55,19 +20,9 @@
   "evidence": "Marks column empty beside (c): \"A firm is most efficient when it is producing at the minimum point of AC. … It will not be earning normal profit and so will be forced due to inefficiency to leave the industry.\" — no mark cell anywhere in the part."
  },
  {
-  "ref": "2022 HL Section A Q7(a)(i)",
-  "reason": "The paper prints Figure A and Figure B side by side and asks which shows the real ECB trend. Only Figure B is catalogued, so a student would be asked to choose between two charts while seeing one. Needs a crop of the PAIR before it can be carded; the tick itself is readable off the scheme.",
-  "evidence": "\"Identify which chart accurately displays the correct trend in in the ECB rate… Choose by means of a tick one of the boxes below. ⟨1⟩ Figure A: Figure B: ✔\""
- },
- {
   "ref": "2022 OL Q12(a)(iii)",
   "reason": "the scheme prints one cell for the whole of Q12(a) — 28, at 14 x 2 — against a single model diagram that answers (i), (ii) and (iii) together. The 14 x 2 maps onto the two curves named in (i) and (ii), which are now carded at 14 each; nothing prices the marking of P1 and Q1 separately, and the paper prints no per-part marks for Section B at Ordinary Level.",
   "evidence": "(iii) Show on your diagram: ▪ The market equilibrium price for reusable coffee cups (use P1) ▪ The market equilibrium quantity (use Q1) — answered only by the model graph, whose sole cells are ⟨28⟩ ⟨(14 x 2)⟩ over the two curves"
- },
- {
-  "ref": "2022 OL Q14(a)(i)",
-  "reason": "a table completion — the marks are for filling the factors-of-production table (already recorded in econ_excluded.py)",
-  "evidence": "Complete the table below to show your understanding of the factors of production used in the production of yogurt. Some of the information has been completed. ... ⟨24⟩ ⟨4 x 6⟩ ⟨(4+2)⟩ 1st x 4 2nd x 2"
  },
  {
   "ref": "2023 HL Q16(a)(i)",
@@ -75,33 +30,8 @@
   "evidence": "(i) Distinguish between the economic terms individual demand and market demand. 28 • Individual Demand refers to the quantity of a good or service an individual consumer is willing to purchase at various prices. • Market Demand refers to … [marks column beside this part: none]"
  },
  {
-  "ref": "2023 HL Section A Q10",
-  "reason": "already recorded in econ_excluded.py: 'the responses are the national-accounts workings, not prose'",
-  "evidence": "Gross National Product (GNP) at Current Market Prices: €323bn + EU subsidies €1.7 bn - EU taxes €0.5bn … Gross National Income at Current Market Prices: €324.2 bn - Adjustments: €89 bn C = Modified Gross National Income ⟨2 @ 6⟩"
- },
- {
-  "ref": "2023 HL Section A Q4(a)",
-  "reason": "already recorded in econ_excluded.py: 'a table completion — the marks are for filling the table, not for prose'",
-  "evidence": "Complete the missing average cost and marginal cost figures in the table below. ⟨6⟩ … Workings: • 82 ÷ 2 = 41 • 108 - 82 = 26 • 152 ÷ 4 = 38 • 152 – 108 = 44"
- },
- {
   "ref": "2024 HL Section A Q10(a)(i)",
   "reason": "The paper completes this part for the student — nothing is asked of them.",
   "evidence": "Paper: 'use the information above to calculate part (ii). Part (i) has been completed for you.' Scheme p.14: '(i) = Gross National Product (GNP) at Current Market Prices Ans: €325 bn'."
- },
- {
-  "ref": "2024 OL Q15(a)",
-  "reason": "A table completion — the factor names and explanations are welded across the Name/Explanation/Example columns in the flattened text, so no contiguous slice exists (class of 2023 HL Section A Q4(a), 2022 OL Q14(a)(i)).",
-  "evidence": "Scheme p33: '⟨20:⟩ ⟨3 @ 5⟩ ⟨1 @ 3⟩ ⟨1 @ 2⟩ Complete the table by either naming or explaining each factor of production' — flattening to 'Name of Explanation of Example Factor of Production Factor of Production and Farm Machinery Capital … The one taking a risk in setting Farm Owners Enterprise up the farm in return for profit.'"
- },
- {
-  "ref": "2024 OL Section A Q10",
-  "reason": "Already recorded in econ_excluded.py: answered by ticking which diagram applies, with the ⟨4⟩ explanation reading the printed diagrams; the extractor also cannot separate its responses from the Section B header beneath them.",
-  "evidence": "Scheme p12: 'Indicate, by means of a tick (✔), whether Diagram A or Diagram B shows its new market equilibrium position … ⟨8⟩ Diagram A ✔ … Explain your answer … ⟨4⟩ • The demand curve shifts to the right (D2). …'"
- },
- {
-  "ref": "2024 OL Section A Q2(a)",
-  "reason": "Already recorded in econ_excluded.py: answered by ticking a box in a table, with the explanation half of a 1st@8/2nd@4 tariff welded to the tick.",
-  "evidence": "Scheme p6: 'Indicate using a tick (✔) in the table below if the above measure is an example of a company using price competition or non-price competition. Explain your answer. 1st @ 8 / 2nd @ 4 … Non-price competition ✔ Explanation: Lidl is competing with other supermarkets to increase its sales / market share by means other than changing its prices for all its customers.'"
  }
 ]
