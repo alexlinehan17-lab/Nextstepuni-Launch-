@@ -314,4 +314,26 @@ P.cards.append(card(
     figure_key='economics-2025-HL-scheme-p16-q5b-ticks'))
 
 
+# ── Backfill: asks the scheme answers in full ──────────────────────────────
+
+P.cards.append(card(
+    'econ-2025-hl-seca-q10-a', 2025, 'higher', 'economics-3-5',
+    'reading-boom-and-recession-off-the-cycle', '2025 HL Section A Q10(a)',
+    'Identify from the diagram above which option (A or B) represents an economic boom and which '
+    'represents an economic recession. Indicate your choice below and justify your choice in '
+    'each case.',
+    '2 @ 3', 6,
+    [point('r-1', as_option(block(BODY, 'Economic boom A Economic recession B', '(b)')), 6,
+           'A is the boom and B the recession, and the justification is the SHAPE of the curve '
+           'at each point: output rising steeply to 2008, then falling. Naming the letters '
+           'without saying what the curve is doing there answers half of it.')],
+    'The cycle drawing runs 2000 to 2020, so the two letters sit either side of the 2008 turning '
+    'point. Ireland\u2019s own history is the giveaway.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2025-HL-paper-p12-art',
+    label_key=[{'letter': 'A', 'meaning': 'a point on the rising stretch of the cycle curve, '
+                                          'before 2008', 'askedInThisQuestion': True},
+               {'letter': 'B', 'meaning': 'a point on the falling stretch of the cycle curve, '
+                                          'after 2008', 'askedInThisQuestion': True}]))
+
 P.emit()

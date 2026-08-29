@@ -252,4 +252,26 @@ P.cards.append(card(
     figure_key='economics-2023-HL-scheme-p11-q6a-ticks'))
 
 
+# ── Backfill ───────────────────────────────────────────────────────────────
+# NOTE on the sibling part (b): the scout's sliding-window anchor matched it to
+# a block about the law of diminishing marginal RETURNS, but (b) asks about
+# marginal UTILITY — a different concept in a different question. Widening the
+# anchor raises the hit rate and with it the risk of hitting the wrong block, so
+# the subject of the located block is checked, not just its existence. (b) is
+# left uncarded until its own block is found.
+P.cards.append(card(
+    'econ-2023-hl-seca-q3-c', 2023, 'higher', 'economics-1-4',
+    'testing-the-equi-marginal-principle', '2023 HL Section A Q3(c)',
+    'Does the formula above obey the Equi-Marginal Principle of consumer behaviour? Explain your '
+    'answer.',
+    '6', 6,
+    [point('r-1', as_option(block(BODY, '\u2022 No, because:', '6 | P a g e')), 6,
+           'Work both ratios and compare: 1800 \u00f7 10 = 180 against 3600 \u00f7 10 = 360. The '
+           'principle is satisfied only when marginal utility per euro is EQUAL across goods, so '
+           'unequal ratios mean it is not obeyed \u2014 and the answer is No.')],
+    'Both goods cost the same \u20ac10 here, which makes it tempting to say the condition holds. '
+    'It is the utility per euro that must match, not the price.',
+    section='A', tariff_kind='fixed'))
+
+
 P.emit()

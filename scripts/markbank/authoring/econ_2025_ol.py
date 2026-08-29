@@ -465,4 +465,40 @@ P.cards.append(card(
     tariff_kind='fixed',
     figure_key='economics-2025-OL-paper-p24-art'))
 
+# ── Backfill: asks the scheme answers in full ──────────────────────────────
+
+P.cards.append(card(
+    'econ-2025-ol-q14-c-i', 2025, 'ordinary', 'economics-3-1',
+    'has-irelands-hdi-position-improved', '2025 OL Q14(c)(i)',
+    'Based on the data in the table above, state if Ireland\u2019s HDI position has improved or '
+    'disimproved. Indicate with a tick (\u2714) in the relevant box below. Justify your '
+    'decision.',
+    '13', 13,
+    [point('r-1', as_option(block(BODY, 'disimproved. Indicate with a tick', '(ii)')), 13,
+           'IMPROVED, and the justification is the figure: the HDI rises from 0.87 to 0.95. '
+           'Every component in the table moves the same way \u2014 income, life expectancy and '
+           'years of schooling all rise \u2014 which is what the composite index is built from.')],
+    'HDI is a composite of income, health and education, so the table gives the three ingredients '
+    'as well as the result. Quoting the 0.87 to 0.95 move is what the marks are for.',
+    tariff_kind='fixed',
+    figure_key='economics-2025-OL-paper-p22-i0'))
+
+# ── Backfill: asks the scheme answers in full ──────────────────────────────
+
+P.cards.append(card(
+    'econ-2025-ol-q16-b-ii', 2025, 'ordinary', 'economics-3-1',
+    'the-trend-in-irish-price-inflation', '2025 OL Q16(b)(ii)',
+    'Identify the overall trend of price Inflation in Ireland between May 2024 and September '
+    '2024, using figures from the graph above.',
+    '12', 12,
+    [point('r-1', as_option(block(BODY, 'From May 2024 to Sep 2024 the annual percentage change',
+                                  '(iii)')), 12,
+           'Inflation FELL over the period \u2014 from about 2.6% in May to its low in September. '
+           'Note what that does not mean: prices still rose, just more slowly. A falling '
+           'inflation rate is not falling prices.')],
+    'This is the distinction the chart invites students to miss. The line goes down and the cost '
+    'of living still goes up, because the line measures the RATE of increase.',
+    tariff_kind='fixed',
+    figure_key='economics-2025-OL-paper-p27-art'))
+
 P.emit()

@@ -270,11 +270,6 @@
   "evidence": "• Answer: on the consumption of the third unit/after the consumption of the second unit. • Marginal utility declines from 40 to 35 utils."
  },
  {
-  "ref": "2023 HL Section A Q3(c)",
-  "reason": "the response is the worked equi-marginal ratio calculation (and it needs the printed formula figure besides)",
-  "evidence": "𝑀𝑈𝑥 = 𝑀𝑈𝑦 𝑃𝑥 = 1800 10 𝑃𝑦 = 3600 10 ⟨6⟩ • No, because: • 1800 ÷ 10 = 180 • 3600 ÷ 10 = 360 therefore the ratio is not the same."
- },
- {
   "ref": "2023 HL Section A Q4(a)",
   "reason": "already recorded in econ_excluded.py: 'a table completion — the marks are for filling the table, not for prose'",
   "evidence": "Complete the missing average cost and marginal cost figures in the table below. ⟨6⟩ … Workings: • 82 ÷ 2 = 41 • 108 - 82 = 26 • 152 ÷ 4 = 38 • 152 – 108 = 44"
@@ -303,11 +298,6 @@
   "ref": "2023 OL Q14(b)(ii)",
   "reason": "The response is the worked profit calculation, and it takes the €6,000 from the student's own answer to (i).",
   "evidence": "Scheme p.21: '⟨9⟩ ⟨3 @ 3⟩ Profit = Total revenue – Total cost = €6,000 - €4,500 = €1,500. Deduct 1 for omission of € sign.'"
- },
- {
-  "ref": "2023 OL Q15(a)(i)",
-  "reason": "Pre-emptive, not on the ask list: this part will fall open the moment the shipped mis-citation of econ-2023-ol-q15-a-i is corrected to Q15(c)(i). It is the worked percentage calculation off the vehicles-licensed infographic — both registered leave-alone classes.",
-  "evidence": "Scheme p.23: '⟨20⟩ ⟨5 @ 4⟩ 101, 853 + 68, 042 / 208 913 x 100 = 81.32%. Deduct 1 mark for omission of % sign.'"
  },
  {
   "ref": "2023 OL Q15(b)(i)",
@@ -340,19 +330,9 @@
   "evidence": "Scheme p.24: 'Food 65% 60 66 — 66/60 × 100 = 110 × 65% ⟨71.5⟩; Transport 45/30 × 100 = 150 × 20% ⟨30.0⟩; Other 96/80 × 100 = 120 × 15% ⟨18⟩; Price Index for the current year ⟨119.5⟩'."
  },
  {
-  "ref": "2024 HL Q13(a)(i)",
-  "reason": "The response is the worked percentage calculation off the census table printed with it (mirrors registered '2025 HL Q13(a)(i)': the worked percentage calculation).",
-  "evidence": "Scheme p.27: '190,333/361,671 × 100 = 52.63% ⟨8⟩ (-1 for omission of %)'."
- },
- {
   "ref": "2024 HL Q14(b)(i)",
   "reason": "Already recorded in econ_excluded.py: the explanation is marked as a block and the scheme states no split.",
   "evidence": "Scheme p.35: diagram itemised 'Diagram: ⟨12⟩ Price P C Q Qty MR AR AC MC E T A ⟨(12 x 1)⟩' but the six numbered written points (1. Equilibrium … 6. Scarce resources) share a block ⟨9⟩ with no per-point split."
- },
- {
-  "ref": "2024 HL Q15(a)(i)",
-  "reason": "The response is the worked percentage calculation off the chart printed with it (same class as registered '2024 HL Q11(a)(i)').",
-  "evidence": "Scheme p.38: '$43 - $22 = $21; 21/22 × 100 = 95.45% (-1 for omission of %)' ⟨8⟩."
  },
  {
   "ref": "2024 HL Q16(b)(ii)",
@@ -388,11 +368,6 @@
   "ref": "2024 OL Q11(b)(ii)",
   "reason": "Already recorded in econ_excluded.py: labels to be placed on a diagram; no wording to show.",
   "evidence": "Scheme p15: '(ii) Equilibrium occurs at point E on the diagram above. ⟨3⟩ Clearly show and label on the above diagram: • The output the firm will produce in equilibrium (use label Q1) • The price the firm will charge for its output (use label P1)'."
- },
- {
-  "ref": "2024 OL Q12(a)(i)",
-  "reason": "The response is the worked percentage calculation off the employment infographic — the established calculation class (matches the recorded 2024 OL Q14(a)(i)).",
-  "evidence": "Scheme p18: 'Workings: ⟨18⟩ ⟨6 @ 3⟩ 2,574,500 − 2,506,000 = 68,500; 68,500/2,506,000 × 100 = 2.73% (-1 for omission of %)' — and the paper works 'from the data given on the left-hand side of the infographic'."
  },
  {
   "ref": "2024 OL Q13(a)(i)",
@@ -460,11 +435,6 @@
   "evidence": "(ii) Country with the highest level of inequality. USA [2nd @ 4]"
  },
  {
-  "ref": "2025 HL Q11(a)(i)",
-  "reason": "worked HHI calculation — already recorded in econ_excluded.py",
-  "evidence": "Workings: HHI Model: 49% 492 = 2,401 28% 282 = 784 20% 202 = 400 3% 32 = 9 2,401 + 784 + 400 + 9 = 3,594 Justify: … an HHI greater than 2,500 indicates a highly concentrated market"
- },
- {
   "ref": "2025 HL Q11(b)(i)",
   "reason": "monopoly diagram to draw, with the ⟨9⟩ explanation spread over six bullet steps and no per-step split stated — already recorded in econ_excluded.py",
   "evidence": "Explain, with the aid of a fully clearly labeled diagram (including the axes), the long-run equilibrium position … ⟨12⟩ Explanation: ⟨9⟩ • Equilibrium is at point E where MC = MR (and MC is rising). • The company produces Q1. …"
@@ -480,19 +450,9 @@
   "evidence": "Workings: 10.1 – 7.4 = 2.7% August 2024 −March 2024 × 100 March 2024 … Answer: 36.48% Deduct 1 mark for omission of %"
  },
  {
-  "ref": "2025 HL Q16(a)(i)",
-  "reason": "table completion, marks for the figures — already recorded in econ_excluded.py",
-  "evidence": "Label A (Variable Cost) Workings: Total cost minus Fixed cost = Variable cost €70 - €60 = €10 Label B (Average Cost) Workings: … Answer = €1.92"
- },
- {
   "ref": "2025 HL Q16(b)(ii)",
   "reason": "SRAC/LRAC diagram completion (⟨8⟩ = SRAC x 3, Labels x 3, LRAC x 1, Label x 1) with the ⟨8⟩ explanation spread over two headed halves and no per-half split stated. Already recorded in econ_excluded.py, though its recorded reason there ('the response is the worked calculation') mislabels it",
   "evidence": "Complete the diagram with three more short run average cost curves (SRAC) to show how the long run average cost curve (LRAC) is constructed. … SRAC x 3 Labels x 3 … LRAC x 1 Label x 1 … Explanation: ⟨8⟩ Downward sloping part of the LRAC … Upward sloping part of the LRAC"
- },
- {
-  "ref": "2025 HL Section A Q10(a)",
-  "reason": "NEW — answered by inserting A or B read off the real-GDP diagram printed with it, and both justifications describe the chart's shape; the established reads-the-figure class (cf. 2024 OL Section A Q10). Not yet in econ_excluded.py",
-  "evidence": "⟨2 @ 3⟩ … Economic boom A Economic recession B Economic boom justification: … The steady rise in real GDP on the graph shows Ireland's strong economic performance before the financial crisis. … The lowest point in 2011 reflects the depth of the Irish recession"
  },
  {
   "ref": "2025 HL Section A Q7(a)",
@@ -520,18 +480,8 @@
   "evidence": "Scheme p23: 'On the graph paper provided below, draw and label: • the average costs (AC)… • the marginal costs (MC)… • the marginal revenue (MR)…' answered by a drawn chart marked '⟨17⟩ … Axes ⟨2 @ 2⟩ … MC:5 MC:5 MR: 3' — the creditable components are the plotted values, not wording."
  },
  {
-  "ref": "2025 OL Q14(c)(i)",
-  "reason": "answered by reading the HDI table printed beside it (the read-the-data class, e.g. '2021 HL Section A Q7(a)')",
-  "evidence": "Scheme p30: ⟨13⟩ 'Ireland's HDI position has Improved as their HDI figure has increased from 0.87 in 2003 to 0.95 in 2022… Accept correct reference to other values improving also… Increased + reference to 2 figures' — the marks are the tick plus figures cited from the printed table."
- },
- {
   "ref": "2025 OL Q15(b)(i)",
   "reason": "already registered (econ_excluded EXCLUDED_TEXT 'Demand curve shifts to the right (D1)'): labels to be placed on a diagram; no wording to show",
   "evidence": "Scheme p33: ⟨14⟩ ⟨8+4+2⟩ '• Demand curve shifts to the right (D1). • Increase in equilibrium quantity (Q1). • Increase in equilibrium price (P1).' — the three credited components are marks drawn on the printed supply-and-demand diagram."
- },
- {
-  "ref": "2025 OL Q16(b)(ii)",
-  "reason": "answered by reading figures off the CPI chart printed beside it (mirrors '2021 HL Q14(a)(i)' and '2021 OL Q13(c)(ii)')",
-  "evidence": "Scheme p38: ⟨12⟩ 'From May 2024 to Sep 2024 the annual percentage change in inflation decreased. The annual rate of CPI inflation was highest in May 2024 at approx. 2.6% and hit its lowest figure at approx. 0.7% in September 2024 (or a decrease of 1.9%).' — the answer is the trend and figures read from the printed graph."
  }
 ]

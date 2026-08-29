@@ -406,4 +406,23 @@ P.cards.append(card(
     tariff_kind='fixed',
     figure_key='economics-2023-OL-paper-p13-i0'))
 
+# ── Backfill: asks the scheme answers in full ──────────────────────────────
+
+P.cards.append(card(
+    'econ-2023-ol-q15-a-i-percentage', 2023, 'ordinary', 'economics-3-3',
+    'private-cars-as-a-share-of-vehicles-licensed', '2023 OL Q15(a)(i)',
+    'Using the information in the table above, calculate the percentage (%) of private cars (new '
+    'and used), as a percentage of the total vehicles licensed for the first time in 2021. Show '
+    'your workings.',
+    '20', 20,
+    [point('r-1', as_option(block(BODY, '101, 853 + 68, 042', 'Deduct 1 mark for')), 20,
+           'New and used private cars are ADDED before dividing \u2014 the question asks for one '
+           'category made of two rows. The denominator is every vehicle licensed, not just cars.')],
+    'The plain id econ-2023-ol-q15-a-i is held by another card and an id is never renamed, since '
+    'it keys a student\u2019s review history \u2014 hence the suffix. '
+    'Two of the infographic\u2019s rows make the numerator and all of them make the denominator, '
+    'so the same figures are used twice in different roles.',
+    tariff_kind='fixed',
+    figure_key='economics-2023-OL-paper-p22-i0'))
+
 P.emit()

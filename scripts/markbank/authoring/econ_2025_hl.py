@@ -585,4 +585,47 @@ P.cards.append(card(
     tariff_kind='fixed',
     figure_key='economics-2025-HL-paper-p17-i0'))
 
+# ── Backfill: asks the scheme answers in full ──────────────────────────────
+
+P.cards.append(card(
+    'econ-2025-hl-q11-a-i', 2025, 'higher', 'economics-2-0',
+    'hhi-for-irish-health-insurance', '2025 HL Q11(a)(i)',
+    'Using the data provided above, calculate the Herfindahl Hirschman Index (HHI) to determine '
+    'whether the market is competitive or highly concentrated. Indicate your choice with a tick '
+    'and justify your answer.',
+    '8', 8,
+    [point('r-1', as_option(block(_MIXED, 'HHI Model: 49%', '(ii)')), 8,
+           'Read the squares: extraction flattens 49\u00b2 to 492, so the line is '
+           '49\u00b2 + 28\u00b2 + 20\u00b2 + 3\u00b2 = 3,594. Above 2,500 counts as highly '
+           'concentrated, and the scheme cites the European Commission and US Department of '
+           'Justice for that threshold \u2014 so the justification is the benchmark, not an '
+           'opinion about the number.')],
+    'Three insurers hold 97% between them. The arithmetic only confirms what the pie chart '
+    'already shows, but the threshold is what turns a number into an answer.',
+    tariff_kind='fixed',
+    figure_key='economics-2025-HL-paper-p13-i0'))
+
+P.cards.append(card(
+    'econ-2025-hl-q16-a-i', 2025, 'higher', 'economics-1-5',
+    'filling-in-variable-and-average-cost', '2025 HL Q16(a)(i)',
+    'Complete the variable cost and average cost, labelled A and B, in the table below. Show all '
+    'your workings.',
+    '6', 6,
+    [point('r-1', as_option(block(_MIXED, 'Label A (Variable Cost) Workings:',
+                                  '(ii) If the outlet charges')), 6,
+           'Two different operations. A is a SUBTRACTION \u2014 total cost less fixed cost. B is '
+           'a DIVISION \u2014 total cost over output. Using the same move for both is the '
+           'standard error, and the two labels sit in the same table.')],
+    'Fixed cost stays at €60 whatever the output, so variable cost is whatever is left of total '
+    'cost. Average cost then spreads the whole total over the units.',
+    tariff_kind='fixed',
+    figure_key='economics-2025-HL-paper-p33-i0',
+    # What each letter POINTS AT, never what it is worth: A and B are the two
+    # green cells the student has to fill, and naming €10 or €1.92 here would
+    # print the answer on the question side of the card.
+    label_key=[{'letter': 'A', 'meaning': 'the missing Variable Cost cell, at an output of 20 '
+                                          'smoothies', 'askedInThisQuestion': True},
+               {'letter': 'B', 'meaning': 'the missing Average Cost cell, at an output of 60 '
+                                          'smoothies', 'askedInThisQuestion': True}]))
+
 P.emit()

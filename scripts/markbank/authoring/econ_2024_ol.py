@@ -481,4 +481,21 @@ P.cards.append(card(
     tariff_kind='fixed'))
 
 
+# ── Backfill: asks the scheme answers in full ──────────────────────────────
+
+P.cards.append(card(
+    'econ-2024-ol-q12-a-i', 2024, 'ordinary', 'economics-3-2',
+    'percentage-increase-in-people-in-employment', '2024 OL Q12(a)(i)',
+    'From the data given on the left-hand side of the infographic above (orange part), calculate '
+    'the percentage increase in the number of people in employment. Show your workings.',
+    '18', 18,
+    [point('r-1', as_option(block(T, '2,574,500 \u2212 2,506,000 = 68,500',
+                                  'Percentage increase: 2.73%')), 18,
+           'The rise first, then that rise over the EARLIER quarter. Dividing by the later figure '
+           'is the usual slip and gives a slightly smaller answer that still looks plausible.')],
+    'The two quarters differ by less than 3%, so the arithmetic has to be exact \u2014 there is '
+    'no sanity check from the size of the answer.',
+    tariff_kind='fixed',
+    figure_key='economics-2024-OL-paper-p13-i0'))
+
 emit(cards + P.cards)

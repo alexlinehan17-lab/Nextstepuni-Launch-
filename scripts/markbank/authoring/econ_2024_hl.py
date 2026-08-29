@@ -650,4 +650,39 @@ P.cards.append(card(
     'sales, which is what the multiplication by 5.2 is doing.',
     tariff_kind='fixed'))
 
+# ── Backfill: asks the scheme answers in full ──────────────────────────────
+
+P.cards.append(card(
+    'econ-2024-hl-q15-a-i', 2024, 'higher', 'economics-4-1',
+    'percentage-rise-in-ldc-debt-servicing', '2024 HL Q15(a)(i)',
+    'Calculate the percentage increase in debt repayment between 2016 and 2022. Show your '
+    'workings.',
+    '8', 8,
+    [point('r-1', as_option(block(T, '$43 - $22 = $21',
+                                  '(ii) Outline one step which could be taken')), 8,
+           'The rise over the ORIGINAL figure: $21 on a base of $22, not on the $43 it grew to. '
+           'A mark goes for the % sign.')],
+    'Debt servicing almost doubled in six years, which is why the answer is close to 100% and a '
+    'student who divides by the later figure gets roughly half of it.',
+    tariff_kind='fixed',
+    figure_key='economics-2024-HL-paper-p29-i0'))
+
+# ── Backfill: asks the scheme answers in full ──────────────────────────────
+
+P.cards.append(card(
+    'econ-2024-hl-q13-a-i', 2024, 'higher', 'economics-3-3',
+    'net-migration-as-a-share-of-population-change', '2024 HL Q13(a)(i)',
+    'Using the data in the table below (extracted from the infographic above), calculate what '
+    'percentage of the change in the population between 2016 and 2022 consisted of net '
+    'migration. Show your workings.',
+    '8', 8,
+    [point('r-1', as_option(block(T, '190,333 x 100 = 52.63%', '27 | P a g e')), 8,
+           'Read it as a fraction: 190,333 over 361,671, times 100. The denominator is the TOTAL '
+           'change in population, not the 2016 or 2022 population \u2014 the table prints all '
+           'four figures and only two belong in this ratio.')],
+    'Just over half the population growth came from migration rather than births, which is the '
+    'point the figure is making.',
+    tariff_kind='fixed',
+    figure_key='economics-2024-HL-paper-p21-i1'))
+
 emit(cards + P.cards)

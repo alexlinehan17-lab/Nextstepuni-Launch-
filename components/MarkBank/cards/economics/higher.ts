@@ -2721,6 +2721,19 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2023 Higher Level — © State Examinations Commission.",
+    id: "econ-2023-hl-seca-q3-c", topicId: "economics-1-4", conceptId: "testing-the-equi-marginal-principle",
+    section: "A", questionRef: "2023 HL Section A Q3(c)",
+    questionText: "Does the formula above obey the Equi-Marginal Principle of consumer behaviour? Explain your answer.",
+    tariffModel: {"kind":"fixed","notation":"6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "• No, because: • 1800 ÷ 10 = 180 • 3600 ÷ 10 = 360 therefore the ratio is not the same.", marks: 6, contextNote: "Work both ratios and compare: 1800 ÷ 10 = 180 against 3600 ÷ 10 = 360. The principle is satisfied only when marginal utility per euro is EQUAL across goods, so unequal ratios mean it is not obeyed — and the answer is No.", openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2024, level: "higher",
     paperFileid: "LC034ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2024 Higher Level — © State Examinations Commission.",
@@ -3406,6 +3419,48 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Workings: If income falls by 5%, then sales will be expected to fall by (5% x 5.2) = 26%. Sales will fall by 26% in 2023. 26% of 10,000 units = 2,600 units. Expected sales in 2023 will be 10,000 – 2,600 = 7,400 units. Answer: 7,400 units", marks: 6, contextNote: "Two steps. The YED turns the 5% income fall into a 26% fall in demand; only then is that percentage taken off the 10,000 units. The answer is the remaining sales, not the fall itself.", openList: true },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2024 Higher Level — © State Examinations Commission.",
+    id: "econ-2024-hl-q15-a-i", topicId: "economics-4-1", conceptId: "percentage-rise-in-ldc-debt-servicing",
+    section: "B", questionRef: "2024 HL Q15(a)(i)",
+    questionText: "Calculate the percentage increase in debt repayment between 2016 and 2022. Show your workings.",
+    tariffModel: {"kind":"fixed","notation":"8","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "$43 - $22 = $21 21 x 100 = 95.45% ( -1 for omission of %)", marks: 8, contextNote: "The rise over the ORIGINAL figure: $21 on a base of $22, not on the $43 it grew to. A mark goes for the % sign.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2024-HL-paper-p29-i0",
+          "src": "/exam-figures/economics/markbank/economics-2024-HL-paper-p29-i0.png",
+          "srcHash": "7d6587986557085ea1872c42319ec47f",
+          "alt": "A two-bar column chart headed 'Debt servicing levels of LDCs 2016 - 2022 ($bn)' in red: $22 for 2016 and $43 for 2022, each value printed inside its bar. Source 'Adapted from UNCTAD.org'.",
+          "attribution": "SEC Leaving Certificate Economics 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2024 Higher Level — © State Examinations Commission.",
+    id: "econ-2024-hl-q13-a-i", topicId: "economics-3-3", conceptId: "net-migration-as-a-share-of-population-change",
+    section: "B", questionRef: "2024 HL Q13(a)(i)",
+    questionText: "Using the data in the table below (extracted from the infographic above), calculate what percentage of the change in the population between 2016 and 2022 consisted of net migration. Show your workings.",
+    tariffModel: {"kind":"fixed","notation":"8","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "190,333 x 100 = 52.63% 361,671 1 (-1 for omission of %)", marks: 8, contextNote: "Read it as a fraction: 190,333 over 361,671, times 100. The denominator is the TOTAL change in population, not the 2016 or 2022 population — the table prints all four figures and only two belong in this ratio.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2024-HL-paper-p21-i1",
+          "src": "/exam-figures/economics/markbank/economics-2024-HL-paper-p21-i1.png",
+          "srcHash": "b4c4d5be8241da9544ec3c2999c3d625",
+          "alt": "A four-row table extracted from the census infographic: Population 2016 4,761,865; Population 2022 5,123,536; Total Change 361,671; Net Migration 190,333.",
+          "attribution": "SEC Leaving Certificate Economics 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4423,6 +4478,52 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC034ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2025 Higher Level — © State Examinations Commission.",
+    id: "econ-2025-hl-q11-a-i", topicId: "economics-2-0", conceptId: "hhi-for-irish-health-insurance",
+    section: "B", questionRef: "2025 HL Q11(a)(i)",
+    questionText: "Using the data provided above, calculate the Herfindahl Hirschman Index (HHI) to determine whether the market is competitive or highly concentrated. Indicate your choice with a tick and justify your answer.",
+    tariffModel: {"kind":"fixed","notation":"8","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "HHI Model: 49% 492 = 2,401 28% 282 = 784 20% 202 = 400 3% 32 = 9 2,401 + 784 + 400 + 9 = 3,594 Justify: According to the European Commission and the US Department of Justice, a Herfindahl-Hirschman Index (HHI) greater than 2,500 indicates a highly concentrated market. This industry is dominated by three major firms accounting for 97% of the market. New health insurance provider, Level Health, to enter the Irish market this week. Irish Independent, November 2024", marks: 8, contextNote: "Read the squares: extraction flattens 49² to 492, so the line is 49² + 28² + 20² + 3² = 3,594. Above 2,500 counts as highly concentrated, and the scheme cites the European Commission and US Department of Justice for that threshold — so the justification is the benchmark, not an opinion about the number.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2025-HL-paper-p13-i0",
+          "src": "/exam-figures/economics/markbank/economics-2025-HL-paper-p13-i0.png",
+          "srcHash": "5098d86f7539e666462fa80105ccb46b",
+          "alt": "A pie chart headed 'Market Share of Irish Private Health Insurance Providers, Q2, 2024' with four labelled slices and a legend: VHI 49% (green), Laya Healthcare 28% (blue), Irish Life Health 20% (yellow), Other 3% (purple). Source 'Adapted from hia.ie'.",
+          "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2025, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2025 Higher Level — © State Examinations Commission.",
+    id: "econ-2025-hl-q16-a-i", topicId: "economics-1-5", conceptId: "filling-in-variable-and-average-cost",
+    section: "B", questionRef: "2025 HL Q16(a)(i)",
+    questionText: "Complete the variable cost and average cost, labelled A and B, in the table below. Show all your workings.",
+    tariffModel: {"kind":"fixed","notation":"6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Label A (Variable Cost) Workings: Total cost minus Fixed cost = Variable cost €70 - €60 = €10 Label B (Average Cost) Workings: Total cost Average cost = Output of smoothies Average cost = €115 Answer = €1.92", marks: 6, contextNote: "Two different operations. A is a SUBTRACTION — total cost less fixed cost. B is a DIVISION — total cost over output. Using the same move for both is the standard error, and the two labels sit in the same table.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2025-HL-paper-p33-i0",
+          "src": "/exam-figures/economics/markbank/economics-2025-HL-paper-p33-i0.png",
+          "srcHash": "560ddb3312f08233f387e4b766f440ea",
+          "alt": "A cost table with an orange header: Output of Smoothies 0, 20, 40, 60; Fixed Cost (€) 60 throughout; Variable Cost (€) 0, A (highlighted green), 30, 55; Total Cost (€) 60, 70, 90, 115; Average Cost (€) dash, 3.50, 2.25, B (highlighted green).",
+          "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"the missing Variable Cost cell, at an output of 20 smoothies","askedInThisQuestion":true},{"letter":"B","meaning":"the missing Average Cost cell, at an output of 60 smoothies","askedInThisQuestion":true}],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2025 Higher Level — © State Examinations Commission.",
     id: "econ-2025-hl-sa-q1-a-for", topicId: "economics-3-5", conceptId: "the-case-for-hosting-a-major-event",
     section: "A", questionRef: "2025 HL Section A Q1(a) — argument for",
     stem: "Germany hosted the European Football Championship in 2024. 2.7 million people attended the 51 matches.",
@@ -4768,5 +4869,30 @@ export const CARDS: SecCard[] = [
           "solution": true,
           "lettersVisible": []
     },
+  } as SecCard,
+  {
+    ...base, kind: "diagram",
+    year: 2025, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2025 Higher Level — © State Examinations Commission.",
+    id: "econ-2025-hl-seca-q10-a", topicId: "economics-3-5", conceptId: "reading-boom-and-recession-off-the-cycle",
+    section: "A", questionRef: "2025 HL Section A Q10(a)",
+    questionText: "Identify from the diagram above which option (A or B) represents an economic boom and which represents an economic recession. Indicate your choice below and justify your choice in each case.",
+    tariffModel: {"kind":"fixed","notation":"2 @ 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Economic boom A Economic recession B Economic boom justification: In this period, leading up to 2008, Ireland’s economy was known as the Celtic Tiger. It was a time of rapid economic growth driven by foreign investment, strong consumer spending, and a booming property market. The steady rise in real GDP on the graph shows Ireland's strong economic performance before the financial crisis. (over a number of consecutive quarters). Economic recession justification: After the 2008 global financial crisis, Ireland experienced a severe downturn, which resulted in a severe banking crisis, rising unemployment, and a sharp decline in economic output / GDP. The lowest point in 2011 reflects the depth of the Irish recession, when the country had to seek a bailout from the troika to stabilise the economy. (for two or more consecutive quarters).", marks: 6, contextNote: "A is the boom and B the recession, and the justification is the SHAPE of the curve at each point: output rising steeply to 2008, then falling. Naming the letters without saying what the curve is doing there answers half of it.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2025-HL-paper-p12-art",
+          "src": "/exam-figures/economics/markbank/economics-2025-HL-paper-p12-art.png",
+          "srcHash": "61c44c752feb028b5680c60b9157ebe7",
+          "alt": "A drawing of Ireland's economic cycle. 'Output / Real GDP' on the vertical axis, years 2000 to 2020 on the horizontal. A blue curve rises from 2000 to a red-dotted peak marked 2008, labelled A on its rising section; falls steeply to a red-dotted trough marked 2011, labelled B on the falling section; runs flat to about 2013, then climbs steeply to 2015 and on to a high plateau around 2021 before turning down at the right edge. Beneath, the parts asking the student to say which of A or B is an economic boom and which a recession and to justify each, and to outline one factor behind the change in output from 2008 to 2011.",
+          "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": [
+                "A",
+                "B"
+          ]
+    },
+    labelKey: [{"letter":"A","meaning":"a point on the rising stretch of the cycle curve, before 2008","askedInThisQuestion":true},{"letter":"B","meaning":"a point on the falling stretch of the cycle curve, after 2008","askedInThisQuestion":true}],
   } as SecCard,
 ];

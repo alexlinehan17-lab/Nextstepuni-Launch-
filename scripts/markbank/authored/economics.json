@@ -11881,6 +11881,39 @@
   "notes": "Two of the three are indirect, so a student splitting them evenly gets one wrong on symmetry alone."
  },
  {
+  "id": "econ-2023-hl-seca-q3-c",
+  "topicId": "economics-1-4",
+  "conceptId": "testing-the-equi-marginal-principle",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2023 HL Section A Q3(c)",
+  "questionText": "Does the formula above obey the Equi-Marginal Principle of consumer behaviour? Explain your answer.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "• No, because: • 1800 ÷ 10 = 180 • 3600 ÷ 10 = 360 therefore the ratio is not the same.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Work both ratios and compare: 1800 ÷ 10 = 180 against 3600 ÷ 10 = 360. The principle is satisfied only when marginal utility per euro is EQUAL across goods, so unequal ratios mean it is not obeyed — and the answer is No."
+   }
+  ],
+  "notes": "Both goods cost the same €10 here, which makes it tempting to say the condition holds. It is the utility per euro that must match, not the price."
+ },
+ {
   "id": "econ-2023-ol-q11-a-i",
   "topicId": "economics-2-0",
   "conceptId": "monopolistic-competition-identified",
@@ -13455,6 +13488,39 @@
    }
   ],
   "notes": "The answer depends on the previous part, so an error in the total is paid for twice."
+ },
+ {
+  "id": "econ-2023-ol-q15-a-i-percentage",
+  "topicId": "economics-3-3",
+  "conceptId": "private-cars-as-a-share-of-vehicles-licensed",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q15(a)(i)",
+  "questionText": "Using the information in the table above, calculate the percentage (%) of private cars (new and used), as a percentage of the total vehicles licensed for the first time in 2021. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2023-OL-paper-p22-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "20",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "101, 853 + 68, 042 208 913 x 100 = 81.32%",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "New and used private cars are ADDED before dividing — the question asks for one category made of two rows. The denominator is every vehicle licensed, not just cars."
+   }
+  ],
+  "notes": "The plain id econ-2023-ol-q15-a-i is held by another card and an id is never renamed, since it keys a student’s review history — hence the suffix. Two of the infographic’s rows make the numerator and all of them make the denominator, so the same figures are used twice in different roles."
  },
  {
   "id": "econ-2023-ol-sa-q2-b",
@@ -16441,6 +16507,72 @@
   "notes": "A YED of +5.2 makes this a luxury: a small income fall produces a much larger fall in sales, which is what the multiplication by 5.2 is doing."
  },
  {
+  "id": "econ-2024-hl-q15-a-i",
+  "topicId": "economics-4-1",
+  "conceptId": "percentage-rise-in-ldc-debt-servicing",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 HL Q15(a)(i)",
+  "questionText": "Calculate the percentage increase in debt repayment between 2016 and 2022. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2024-HL-paper-p29-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "$43 - $22 = $21 21 x 100 = 95.45% ( -1 for omission of %)",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The rise over the ORIGINAL figure: $21 on a base of $22, not on the $43 it grew to. A mark goes for the % sign."
+   }
+  ],
+  "notes": "Debt servicing almost doubled in six years, which is why the answer is close to 100% and a student who divides by the later figure gets roughly half of it."
+ },
+ {
+  "id": "econ-2024-hl-q13-a-i",
+  "topicId": "economics-3-3",
+  "conceptId": "net-migration-as-a-share-of-population-change",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 HL Q13(a)(i)",
+  "questionText": "Using the data in the table below (extracted from the infographic above), calculate what percentage of the change in the population between 2016 and 2022 consisted of net migration. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2024-HL-paper-p21-i1",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "190,333 x 100 = 52.63% 361,671 1 (-1 for omission of %)",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Read it as a fraction: 190,333 over 361,671, times 100. The denominator is the TOTAL change in population, not the 2016 or 2022 population — the table prints all four figures and only two belong in this ratio."
+   }
+  ],
+  "notes": "Just over half the population growth came from migration rather than births, which is the point the figure is making."
+ },
+ {
   "id": "econ-2024-hl-sa-q2-b",
   "topicId": "economics-3-2",
   "conceptId": "why-full-employment-is-an-aim",
@@ -18914,6 +19046,39 @@
    }
   ],
   "notes": "A direct tax is paid to the Revenue by the person who bears it; VAT is not, which is the whole distinction. Naming the box without that reason earns the tick and little else."
+ },
+ {
+  "id": "econ-2024-ol-q12-a-i",
+  "topicId": "economics-3-2",
+  "conceptId": "percentage-increase-in-people-in-employment",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q12(a)(i)",
+  "questionText": "From the data given on the left-hand side of the infographic above (orange part), calculate the percentage increase in the number of people in employment. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2024-OL-paper-p13-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "18",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "2,574,500 − 2,506,000 = 68,500 68,500 2,506,000 × 100 ∗ = 2.73%",
+    "marks": 18,
+    "openList": true,
+    "contextNote": "The rise first, then that rise over the EARLIER quarter. Dividing by the later figure is the usual slip and gives a slightly smaller answer that still looks plausible."
+   }
+  ],
+  "notes": "The two quarters differ by less than 3%, so the arithmetic has to be exact — there is no sanity check from the size of the answer."
  },
  {
   "id": "econ-2024-ol-sa-q1-i",
@@ -21636,6 +21801,83 @@
   "notes": "Both measures fall, but not equally — debt as a share of GNI* drops 31 percentage points against 15 for GDP. Ticking a box and then quoting the other series’ figures is the error the two-column layout invites."
  },
  {
+  "id": "econ-2025-hl-q11-a-i",
+  "topicId": "economics-2-0",
+  "conceptId": "hhi-for-irish-health-insurance",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q11(a)(i)",
+  "questionText": "Using the data provided above, calculate the Herfindahl Hirschman Index (HHI) to determine whether the market is competitive or highly concentrated. Indicate your choice with a tick and justify your answer.",
+  "stem": "",
+  "figureKey": "economics-2025-HL-paper-p13-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "HHI Model: 49% 492 = 2,401 28% 282 = 784 20% 202 = 400 3% 32 = 9 2,401 + 784 + 400 + 9 = 3,594 Justify: According to the European Commission and the US Department of Justice, a Herfindahl-Hirschman Index (HHI) greater than 2,500 indicates a highly concentrated market. This industry is dominated by three major firms accounting for 97% of the market. New health insurance provider, Level Health, to enter the Irish market this week. Irish Independent, November 2024",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Read the squares: extraction flattens 49² to 492, so the line is 49² + 28² + 20² + 3² = 3,594. Above 2,500 counts as highly concentrated, and the scheme cites the European Commission and US Department of Justice for that threshold — so the justification is the benchmark, not an opinion about the number."
+   }
+  ],
+  "notes": "Three insurers hold 97% between them. The arithmetic only confirms what the pie chart already shows, but the threshold is what turns a number into an answer."
+ },
+ {
+  "id": "econ-2025-hl-q16-a-i",
+  "topicId": "economics-1-5",
+  "conceptId": "filling-in-variable-and-average-cost",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q16(a)(i)",
+  "questionText": "Complete the variable cost and average cost, labelled A and B, in the table below. Show all your workings.",
+  "stem": "",
+  "figureKey": "economics-2025-HL-paper-p33-i0",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "the missing Variable Cost cell, at an output of 20 smoothies",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "the missing Average Cost cell, at an output of 60 smoothies",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Label A (Variable Cost) Workings: Total cost minus Fixed cost = Variable cost €70 - €60 = €10 Label B (Average Cost) Workings: Total cost Average cost = Output of smoothies Average cost = €115 Answer = €1.92",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Two different operations. A is a SUBTRACTION — total cost less fixed cost. B is a DIVISION — total cost over output. Using the same move for both is the standard error, and the two labels sit in the same table."
+   }
+  ],
+  "notes": "Fixed cost stays at €60 whatever the output, so variable cost is whatever is left of total cost. Average cost then spreads the whole total over the units."
+ },
+ {
   "id": "econ-2025-hl-sa-q1-a-for",
   "topicId": "economics-3-5",
   "conceptId": "the-case-for-hosting-a-major-event",
@@ -22630,6 +22872,50 @@
    }
   ],
   "notes": "The trap is assuming a positive statement must be TRUE. Statement 2 forecasts a precise 25% fall that may never happen; it is positive because evidence could settle it."
+ },
+ {
+  "id": "econ-2025-hl-seca-q10-a",
+  "topicId": "economics-3-5",
+  "conceptId": "reading-boom-and-recession-off-the-cycle",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2025 HL Section A Q10(a)",
+  "questionText": "Identify from the diagram above which option (A or B) represents an economic boom and which represents an economic recession. Indicate your choice below and justify your choice in each case.",
+  "stem": "",
+  "figureKey": "economics-2025-HL-paper-p12-art",
+  "labelKey": [
+   {
+    "letter": "A",
+    "meaning": "a point on the rising stretch of the cycle curve, before 2008",
+    "askedInThisQuestion": true
+   },
+   {
+    "letter": "B",
+    "meaning": "a point on the falling stretch of the cycle curve, after 2008",
+    "askedInThisQuestion": true
+   }
+  ],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 @ 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Economic boom A Economic recession B Economic boom justification: In this period, leading up to 2008, Ireland’s economy was known as the Celtic Tiger. It was a time of rapid economic growth driven by foreign investment, strong consumer spending, and a booming property market. The steady rise in real GDP on the graph shows Ireland's strong economic performance before the financial crisis. (over a number of consecutive quarters). Economic recession justification: After the 2008 global financial crisis, Ireland experienced a severe downturn, which resulted in a severe banking crisis, rising unemployment, and a sharp decline in economic output / GDP. The lowest point in 2011 reflects the depth of the Irish recession, when the country had to seek a bailout from the troika to stabilise the economy. (for two or more consecutive quarters).",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "A is the boom and B the recession, and the justification is the SHAPE of the curve at each point: output rising steeply to 2008, then falling. Naming the letters without saying what the curve is doing there answers half of it."
+   }
+  ],
+  "notes": "The cycle drawing runs 2000 to 2020, so the two letters sit either side of the 2008 turning point. Ireland’s own history is the giveaway."
  },
  {
   "id": "econ-2025-ol-q13-c",
@@ -24263,6 +24549,72 @@
    }
   ],
   "notes": "The paper prints this part as the bare words \"Explain your answer.\", so the stem carries what is being explained — without it the question is unreadable on its own. The diagram it refers to was catalogued under 2025 OL Q16(b); the paper puts it on page 24 under Q15(b), and the manifest ref has been corrected to match."
+ },
+ {
+  "id": "econ-2025-ol-q14-c-i",
+  "topicId": "economics-3-1",
+  "conceptId": "has-irelands-hdi-position-improved",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 OL Q14(c)(i)",
+  "questionText": "Based on the data in the table above, state if Ireland’s HDI position has improved or disimproved. Indicate with a tick (✔) in the relevant box below. Justify your decision.",
+  "stem": "",
+  "figureKey": "economics-2025-OL-paper-p22-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "13",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 13,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "disimproved. Indicate with a tick (✔) in the relevant box below. Justify your decision. Improved Disimproved ✔ Ireland's HDI position has Improved as their HDI figure has increased from 0.87 in 2003 to 0.95 in 2022. The higher the HDI figure the better it is for a country. Accept correct reference to other values improving also i.e. GNP has increased / life expectancy has improved / people are spending longer in education. Increased + reference to 2 figures",
+    "marks": 13,
+    "openList": true,
+    "contextNote": "IMPROVED, and the justification is the figure: the HDI rises from 0.87 to 0.95. Every component in the table moves the same way — income, life expectancy and years of schooling all rise — which is what the composite index is built from."
+   }
+  ],
+  "notes": "HDI is a composite of income, health and education, so the table gives the three ingredients as well as the result. Quoting the 0.87 to 0.95 move is what the marks are for."
+ },
+ {
+  "id": "econ-2025-ol-q16-b-ii",
+  "topicId": "economics-3-1",
+  "conceptId": "the-trend-in-irish-price-inflation",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 OL Q16(b)(ii)",
+  "questionText": "Identify the overall trend of price Inflation in Ireland between May 2024 and September 2024, using figures from the graph above.",
+  "stem": "",
+  "figureKey": "economics-2025-OL-paper-p27-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "12",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "From May 2024 to Sep 2024 the annual percentage change in inflation decreased. The annual rate of CPI inflation was highest in May 2024 at approx. 2.6% and hit its lowest figure at approx. 0.7% in September 2024 ( or a decrease of 1.9%).",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Inflation FELL over the period — from about 2.6% in May to its low in September. Note what that does not mean: prices still rose, just more slowly. A falling inflation rate is not falling prices."
+   }
+  ],
+  "notes": "This is the distinction the chart invites students to miss. The line goes down and the cost of living still goes up, because the line measures the RATE of increase."
  },
  {
   "id": "econ-2025-ol-sa-q1-ii",
