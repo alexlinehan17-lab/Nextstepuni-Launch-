@@ -825,14 +825,58 @@ const NUMBER_WORDS: Record<string, number> = {
   one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8,
 };
 
+/**
+ * Nouns that name a countable ANSWER, never a unit of measurement.
+ *
+ * The allowlist is the whole safety mechanism, so it is worth saying what may
+ * not join it. "Correct to two decimal places" and "the first 2.5 minutes"
+ * print a number in front of a noun and mean nothing of the kind; adding
+ * `places`, `values`, `minutes` or any unit would turn a rounding instruction
+ * into two planning rows. Measured over the built corpus, keeping units out is
+ * what stops the Maths deck filling with invented tasks.
+ */
 const COUNTED_ANSWER_NOUNS = [
-  'advantages?', 'arguments?', 'benefits?', 'causes?', 'characteristics?', 'consequences?',
-  'details?', 'differences?', 'disadvantages?', 'effects?', 'elements?',
-  'examples?', 'factors?', 'features?', 'functions?', 'ideas?', 'items?',
-  'measures?', 'methods?', 'observations?', 'points?', 'problems?', 'properties?',
-  'reasons?', 'recommendations?', 'results?', 'roles?', 'similarities?',
-  'solutions?', 'steps?', 'terms?', 'treatments?', 'uses?', 'ways?',
+  'advantages?', 'applications?', 'arguments?', 'benefits?', 'causes?',
+  'challenges?', 'characteristics?', 'components?', 'consequences?',
+  'considerations?', 'details?', 'differences?', 'disadvantages?', 'effects?',
+  'elements?', 'examples?', 'factors?', 'features?', 'functions?',
+  'guidelines?', 'ideas?', 'impacts?', 'implications?', 'items?',
+  'measures?', 'methods?', 'objectives?', 'observations?', 'points?',
+  'practices?', 'precautions?', 'problems?', 'products?', 'properties?',
+  'reasons?', 'recommendations?', 'requirements?', 'results?', 'roles?',
+  'similarities?', 'solutions?', 'sources?', 'stages?', 'steps?', 'terms?',
+  'treatments?', 'types?', 'uses?', 'ways?',
 ].join('|');
+
+/**
+ * Words allowed to sit between the count and the noun it counts.
+ *
+ * Papers almost never write "two effects". They write "two possible economic
+ * effects", "three safety precautions", "two other factors". The pattern used
+ * to admit only `distinct` and `different`, so every one of those collapsed to
+ * a single planning row — 375 cards across nine subjects, and 106 of them in
+ * Economics alone, where the house style is "outline two possible economic
+ * effects of ...". The question printed its own count and the planner ignored
+ * it, which is the one thing this function exists not to do.
+ *
+ * Function words are excluded because they signal a different construction:
+ * "two of the following reasons" is a choice, not a run of modifiers, and
+ * "the two stages" names a subject rather than an answer count (already caught
+ * by the preceding-word guard below).
+ */
+const COUNT_MODIFIER_STOP_WORDS = [
+  'a', 'an', 'and', 'are', 'as', 'at', 'by', 'for', 'from', 'in', 'is', 'of',
+  'on', 'or', 'that', 'the', 'these', 'this', 'those', 'to', 'which', 'with',
+];
+const COUNT_MODIFIER_LIMIT = 2;
+/**
+ * Excluded inside the pattern rather than filtered afterwards, so the engine
+ * backtracks to the shorter valid reading instead of producing a match that is
+ * then thrown away. "Outline two functions of product packaging" otherwise
+ * matched `two functions of product` — modifiers "functions of", noun
+ * "product" — and rejecting that lost the plain `two functions` underneath it.
+ */
+const COUNT_MODIFIER_WORD = `(?:(?!(?:${COUNT_MODIFIER_STOP_WORDS.join('|')})\\b)[A-Za-z-]+\\s+)`;
 
 const countValue = (token: string): number | null => {
   const value = NUMBER_WORDS[token.toLowerCase()] ?? Number(token);
@@ -910,8 +954,10 @@ export function findPrintedPlanShape(text: string): WaysInQuestionModel['planSha
   }
 
   const number = '(one|two|three|four|five|six|seven|eight|[1-8])';
+  // `modifiers` captures the words between the count and its noun so they can
+  // be vetted below; the noun itself still has to be on the allowlist.
   const countedPattern = new RegExp(
-    `\\b(any\\s+)?${number}\\s+(?:distinct\\s+|different\\s+)?(?:${COUNTED_ANSWER_NOUNS})\\b`,
+    `\\b(any\\s+)?${number}\\s+(${COUNT_MODIFIER_WORD}{0,${COUNT_MODIFIER_LIMIT}})(?:${COUNTED_ANSWER_NOUNS})\\b`,
     'gi',
   );
   const commands = commandMatches(text);
@@ -945,6 +991,24 @@ export function findPrintedPlanShape(text: string): WaysInQuestionModel['planSha
         count,
         basis: 'printed',
         evidence: preferred[0],
+        structure: 'count-phrase',
+      };
+    }
+  }
+
+  // Several counts under one instruction are separate demands, not rival
+  // readings of the same one: "describe one benefit and one challenge" wants
+  // two lines, "two reasons why it overheats and two design details" wants
+  // four. Summing them is only safe once the nested "any three of the five"
+  // shape above has had its turn, which is why this sits below it.
+  if (counted.length >= 2) {
+    const values = counted.map(match => countValue(match[2]));
+    const total = values.reduce<number>((sum, value) => sum + (value ?? 0), 0);
+    if (values.every(Boolean) && total >= 2 && total <= 8) {
+      return {
+        count: total,
+        basis: 'printed',
+        evidence: counted.map(match => match[0]).join(', '),
         structure: 'count-phrase',
       };
     }
