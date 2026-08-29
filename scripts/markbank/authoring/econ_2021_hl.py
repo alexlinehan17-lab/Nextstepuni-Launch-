@@ -520,4 +520,28 @@ P.cards.append(card(
     tariff_kind='fixed',
     figure_key='economics-2021-HL-paper-p35-i0'))
 
+# ── Worked calculations the scheme prints in full ──────────────────────────
+# The scheme sets a fraction as a stacked 2-D layout, so extraction flattens it:
+# the numerator and the answer come out on one line and the denominator after
+# them. Nothing is missing and nothing is added — the note on each card says how
+# to read the order, which is the honest fix for a layout the text layer cannot
+# preserve.
+
+P.cards.append(card(
+    'econ-2021-hl-q13-c-i', 2021, 'higher', 'economics-1-1',
+    'ped-of-apple-airpods', '2021 HL Q13(c)(i)',
+    'Apple AirPods (earphones) price fell from \u20ac160 to \u20ac125 online. The quantity '
+    'demanded increased from 10,000 units to 15,000 units. Calculate the Price Elasticity of '
+    'Demand of Apple AirPods.',
+    '15', 15,
+    [point('r-1', as_option(block(FULL, '+5000 160 + 125 (285)',
+                                  '(ii) Based on the figure you have calculated')), 15,
+           'Four quantities, set as two stacked fractions and flattened by extraction: the '
+           'change in quantity (+5,000) over the change in price (\u221235), times the sum of '
+           'the prices (285) over the sum of the quantities (25,000). That midpoint form is why '
+           'both prices and both quantities are added.')],
+    'The answer is negative because price and quantity move opposite ways, and the sign is part '
+    'of the answer rather than a detail to be dropped.',
+    tariff_kind='fixed'))
+
 P.emit()

@@ -439,4 +439,30 @@ P.cards.append(card(
            'Two letters to complete: the first paid 3 and the second 2; the I is given.')],
     '', tariff_kind='fixed'))
 
+# ── Diagram parts whose explanation the scheme prints ──────────────────────
+# Excluded as diagram completions. The drawing is only half the ask — the paper
+# also says "Explain" — and the scheme prints that explanation as ordinary
+# prose. The paper's own diagram rides as the card's figure, so the student has
+# the axes and curves the question is about.
+
+P.cards.append(card(
+    'econ-2025-ol-q15-b-ii', 2025, 'ordinary', 'economics-1-0',
+    'how-a-rising-population-shifts-housing-demand', '2025 OL Q15(b)(ii)',
+    'Explain your answer.',
+    '10', 10,
+    [point('r-1', as_option(block(BODY, 'The increase in population will lead to an increase in '
+                                        'demand for housing', '33 | P a g e')), 10,
+           'The chain runs cause, curve, price, quantity: more people able to buy, so demand '
+           'shifts RIGHT (D to D1), so both the price and the quantity settle higher. Naming '
+           'the shift without the two effects stops halfway.')],
+    'The paper prints this part as the bare words "Explain your answer.", so the stem carries '
+    'what is being explained \u2014 without it the question is unreadable on its own. The '
+    'diagram it refers to was catalogued under 2025 OL Q16(b); the paper puts it on page 24 '
+    'under Q15(b), and the manifest ref has been corrected to match.',
+    stem='Ireland\u2019s population is forecast to grow to 5.9 million by 2030. Part (b)(i) asks '
+         'for the effect of that on the housing market shown below; this part asks for the '
+         'reasoning behind it.',
+    tariff_kind='fixed',
+    figure_key='economics-2025-OL-paper-p24-art'))
+
 P.emit()

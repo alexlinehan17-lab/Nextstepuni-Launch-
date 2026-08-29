@@ -499,4 +499,27 @@ P.cards.append(card(
     figure_key='economics-2023-HL-paper-p25-i0'))
 
 
+# ── Worked calculations the scheme prints in full ──────────────────────────
+# The scheme sets a fraction as a stacked 2-D layout, so extraction flattens it:
+# the numerator and the answer come out on one line and the denominator after
+# them. Nothing is missing and nothing is added — the note on each card says how
+# to read the order, which is the honest fix for a layout the text layer cannot
+# preserve.
+
+P.cards.append(card(
+    'econ-2023-hl-q13-b-iii', 2023, 'higher', 'economics-3-0',
+    'the-injection-needed-to-reach-full-employment', '2023 HL Q13(b)(iii)',
+    'How much will the government have to inject into this economy if it wants the economy to '
+    'operate at its full employment level? Show your workings.',
+    '8', 8,
+    [point('r-1', as_option(block(BODY, '\u20ac750m - \u20ac500m', '22 | P a g e')), 8,
+           'The 2s between the steps are the marks: four steps at 2 each make the \u27e88\u27e9. '
+           'Find the deflationary gap first (\u20ac750m \u2212 \u20ac500m), then divide by the '
+           'multiplier \u2014 the injection is SMALLER than the gap, because the multiplier does '
+           'the rest of the work.')],
+    'The gap is €250m but the injection is €125m. Answering €250m is answering a different '
+    'question: it ignores that the injection multiplies through the economy.',
+    tariff_kind='fixed',
+    figure_key='economics-2023-HL-paper-p22-i0'))
+
 P.emit()
