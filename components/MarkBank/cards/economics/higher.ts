@@ -4378,4 +4378,25 @@ export const CARDS: SecCard[] = [
           "lettersVisible": []
     },
   } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2025 Higher Level — © State Examinations Commission.",
+    id: "econ-2025-hl-seca-q6-b", topicId: "economics-2-1", conceptId: "a-minimum-wage-above-the-equilibrium",
+    section: "A", questionRef: "2025 HL Section A Q6(b)",
+    questionText: "The diagram below shows a free labour market. Complete the diagram below to show how a change to Ireland’s current national minimum wage rate, at a rate higher than WE in the diagram below, will affect the market for labour. Clearly label any changes you make. Explain your answer.",
+    tariffModel: {"kind":"fixed","notation":"6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Wage rate: the national minimum wage rate (NMW) lies above the free-market equilibrium wage rate (WE). Supply increases: at the higher minimum wage rate, more workers want to work / the supply of labour increases, compared to the free market level (QE). Demand falls: however, since businesses must now pay a higher wage, they demand fewer workers / the demand for labour decreases at the minimum wage level compared to the free market level (QE). Excess supply / unemployment: this results in unemployment, as the number of job seekers (QS) exceeds available jobs (QD) . While some workers will earn more, others may lose their jobs or have reduced hours as businesses adjust to the higher labour costs.", marks: 6, contextNote: "Four steps, and the order is the argument: the minimum sits ABOVE equilibrium, so supply of labour rises and demand for it falls, and the gap between them is the unemployment. The ⟨6⟩ covers the drawing and the explanation together.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2025-HL-paper-p08-art",
+          "src": "/exam-figures/economics/markbank/economics-2025-HL-paper-p08-art.png",
+          "srcHash": "128c8c9c1343be3f5ce243675aa21960",
+          "alt": "A labour market diagram. 'Wage rate' on the vertical axis, 'Quantity of workers' on the horizontal. A red downward-sloping line labelled D-sub-L crosses a blue upward-sloping line labelled S-sub-L at a filled black dot, with pale blue dashed arrows running left to W-sub-E on the wage axis and down to Q-sub-E on the quantity axis. Above the diagram sit the answer box for part (a)'s 'Price floor:' definition and the part (b) instruction to complete the diagram for a minimum wage above W-sub-E; beneath it, the ruled Explanation box.",
+          "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
 ];

@@ -3298,6 +3298,28 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC034GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2025-ol-q15-b-ii", topicId: "economics-1-0", conceptId: "how-a-rising-population-shifts-housing-demand",
+    section: "B", questionRef: "2025 OL Q15(b)(ii)",
+    stem: "Ireland’s population is forecast to grow to 5.9 million by 2030. Part (b)(i) asks for the effect of that on the housing market shown below; this part asks for the reasoning behind it.",
+    questionText: "Explain your answer.",
+    tariffModel: {"kind":"fixed","notation":"10","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The increase in population will lead to an increase in demand for housing as there will be more people willing and able to buy houses. • The demand curve will shift to the right (D to D1). • This will increase price to P1 • and Quantity will increase to Q1.", marks: 10, contextNote: "The chain runs cause, curve, price, quantity: more people able to buy, so demand shifts RIGHT (D to D1), so both the price and the quantity settle higher. Naming the shift without the two effects stops halfway.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2025-OL-paper-p24-art",
+          "src": "/exam-figures/economics/markbank/economics-2025-OL-paper-p24-art.png",
+          "srcHash": "a37096cfcd088cacc11f445aed5d2d28",
+          "alt": "A demand and supply diagram of the housing market. Price on the vertical axis, Quantity on the horizontal. A red downward-sloping line labelled D crosses a blue upward-sloping line labelled S at a filled dot labelled E, with grey arrows running left to Pe and down to Qe. Beneath it the parts asking the student to show the effect of a forecast population increase on the diagram, explain it, and give a positive or negative effect of the Dublin Quays traffic restrictions.",
+          "attribution": "SEC Leaving Certificate Economics 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2025 Ordinary Level — © State Examinations Commission.",
     id: "econ-2025-ol-sa-q1-ii", topicId: "economics-1-1", conceptId: "benefits-of-cheaper-electricity",
     section: "A", questionRef: "2025 OL Section A Q1(ii)",
     questionText: "Outline one economic benefit for Irish consumers of lower electricity prices.",

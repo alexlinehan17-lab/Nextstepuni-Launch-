@@ -630,11 +630,6 @@
   "evidence": "⟨2 @ 3⟩ … Indicate your choice below by ticking (✓) the relevant box. Positive Normative Economic Statement Statement Statement All citizens in Ireland deserve free healthcare to ✓ 1. ensure equal access to medical services…"
  },
  {
-  "ref": "2025 HL Section A Q6(b)",
-  "reason": "diagram completion with the explanation, one ⟨6⟩ covering both — already recorded in econ_excluded.py",
-  "evidence": "⟨6⟩ Complete the diagram below to show how a change to Ireland's current national minimum wage rate … Clearly label any changes you make. Explain your answer. Wage rate SL Unemployment gap / Excess supply of labour NMW / € …"
- },
- {
   "ref": "2025 HL Section A Q7(a)",
   "reason": "answered by naming a product from the YED table printed with it — already recorded in econ_excluded.py under '2025 HL Section A Q7'. Q7(b), the other half of that recorded key, IS cardable and is now carded",
   "evidence": "Necessity product – Electricity or Noodles Justify – … The YED value of electricity lies between 0 and 1 … Luxury good – Premium branded clothing … The YED value of premium branded clothing is above 1"
@@ -668,11 +663,6 @@
   "ref": "2025 OL Q15(b)(i)",
   "reason": "already registered (econ_excluded EXCLUDED_TEXT 'Demand curve shifts to the right (D1)'): labels to be placed on a diagram; no wording to show",
   "evidence": "Scheme p33: ⟨14⟩ ⟨8+4+2⟩ '• Demand curve shifts to the right (D1). • Increase in equilibrium quantity (Q1). • Increase in equilibrium price (P1).' — the three credited components are marks drawn on the printed supply-and-demand diagram."
- },
- {
-  "ref": "2025 OL Q15(b)(ii)",
-  "reason": "already registered in econ_excluded; NOTE the registry line's reason is imprecise for 2025 — the ⟨10⟩ is (ii)'s own cell, separate from (i)'s ⟨14⟩ — but the decision still holds: the four written steps narrate the diagram's own labels (D1, P1, Q1) and the scheme states no split of the 10 across them",
-  "evidence": "Scheme p33: '(ii) Explain your answer. ⟨10⟩ • The increase in population will lead to an increase in demand for housing… • The demand curve will shift to the right (D to D1). • This will increase price to P1 • and Quantity will increase to Q1.' — printed marks column shows 14/8+4+2 for (i) then 10 for (ii)."
  },
  {
   "ref": "2025 OL Q16(b)(ii)",
