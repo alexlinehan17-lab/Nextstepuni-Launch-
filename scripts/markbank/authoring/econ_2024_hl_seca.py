@@ -271,4 +271,26 @@ P.cards.append(card(
     tariff_kind='fixed', section='A',
     figure_key='economics-2024-HL-paper-p03-i0'))
 
+# ── Tick tables, answered by the scheme's own completed table ──────────────
+# See econ_tick_crop.py: the ✔ is drawn, so extraction keeps the tick and loses
+# the column. The completed table is bound as a SOLUTION crop.
+
+P.cards.append(card(
+    'econ-2024-hl-seca-q4-a-ticks', 2024, 'higher', 'economics-1-5',
+    'capital-deepening-or-widening', '2024 HL Section A Q4(a)',
+    'The table below shows a firm\u2019s capital to labour ratio for the previous two years '
+    '\u2014 machines 5 then 10, workers 5 then 5, ratio 1:1 then 2:1. Indicate by means of a '
+    'tick whether capital widening or capital deepening is occurring.',
+    '6', 6,
+    [point('r-1', as_option(block(BODY, 'Capital Widening Capital Deepening',
+                                  '(b) Outline two factors which may affect')), 6,
+           'Read the completed answer below. It is capital DEEPENING: machines double while the '
+           'workforce stays at five, so capital PER WORKER rises from 1:1 to 2:1. Widening would '
+           'be more machines AND more workers with the ratio unchanged \u2014 the ratio row is '
+           'the whole test.')],
+    'Both answers involve buying machines, so counting the machines settles nothing. Only the '
+    'ratio distinguishes them.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2024-HL-scheme-p08-q4a-ticks'))
+
 P.emit()

@@ -437,4 +437,27 @@ P.cards.append(card(
                {'letter': 'C', 'meaning': 'marginal cost of the third unit — 50,000',
                 'askedInThisQuestion': False}]))
 
+# ── Tick tables, answered by the scheme's own completed table ──────────────
+# See econ_tick_crop.py: the ✔ is drawn, so extraction keeps the tick and loses
+# the column. The completed table is bound as a SOLUTION crop.
+
+P.cards.append(card(
+    'econ-2022-hl-q14-a-ii-ticks', 2022, 'higher', 'economics-1-5',
+    'fixed-and-variable-building-costs', '2022 HL Q14(a)(ii)',
+    'Choose by means of a tick (\u2713) which type of cost best describes each of the '
+    'following. Explain your choice: bags of cement; carpenters (labour); purchase price of a '
+    'construction site.',
+    '(2+4)+(2+4)+(2+4)', 18,
+    [point('r-1', as_option(block(BODY, 'Building Expense Fixed', '26 | P a g e')), 18,
+           'Read the completed table below. Cement and carpenters are VARIABLE \u2014 build more '
+           'houses and you need more of both. The site is FIXED: it costs the same whether it '
+           'holds one house or a hundred. Each row is priced \u27e82+4\u27e9, two for the tick '
+           'and four for the explanation, so the reasoning carries twice the marks of the choice. '
+           'Note the scheme itself allows labour as a FIXED cost if it is on a fixed-price '
+           'contract.')],
+    'The carpenters row is the interesting one: the scheme concedes that labour can be fixed if '
+    'contracted at a set price, so the classification follows the contract, not the input.',
+    tariff_kind='fixed',
+    figure_key='economics-2022-HL-scheme-p27-q14aii-ticks'))
+
 P.emit()

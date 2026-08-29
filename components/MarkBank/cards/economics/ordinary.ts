@@ -2867,6 +2867,28 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2024 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2024-ol-seca-q5-ticks", topicId: "economics-4-2", conceptId: "imports-and-exports-visible-and-invisible",
+    section: "A", questionRef: "2024 OL Section A Q5",
+    questionText: "Indicate by means of a tick (✔) which of the following are either an import into or an export from the Irish economy. Explain the reason for your choice in each case. 1. Farmers in Ireland selling beef to the German market. 2. Irish tourists staying in hotels in France.",
+    tariffModel: {"kind":"fixed","notation":"2 @ 6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Import Export Reason Farmers in This is a visible export. Ireland selling The money leaves Germany and goes 1. beef to the ✔ into the Irish economy / it is an inflow German market. of funds to Ireland. This is an invisible import. The sale of an intangible foreign Irish tourists service (hotels) to Irish citizens. 2. staying in hotels ✔ The payments for the hotels go into in France. the French economy / they are an outflow of funds from Ireland to France.", marks: 12, contextNote: "Read the completed table below — in flat text the row labels, ticks and reasons are shuffled together. Beef to Germany is a VISIBLE EXPORT: goods leave and money flows in. Irish tourists in French hotels is an INVISIBLE IMPORT: a service bought abroad, money flowing out. Follow the MONEY, not the people — the tourists travel out, which is why this one is so often called an export.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2024-OL-scheme-p10-q5-ticks",
+          "src": "/exam-figures/economics/markbank/economics-2024-OL-scheme-p10-q5-ticks.png",
+          "srcHash": "31a92aff205219964b9a4eef152954fa",
+          "alt": "The marking scheme's completed answer table for 2024 OL Section A Q5, as the State Examinations Commission set it. A red header row reads Import | Export | Reason. Row 1, 'Farmers in Ireland selling beef to the German market.', carries a black tick under Export with the reason 'This is a visible export. The money leaves Germany and goes into the Irish economy / it is an inflow of funds to Ireland.' Row 2, 'Irish tourists staying in hotels in France.', carries a black tick under Import with the reason 'This is an invisible import. The sale of an intangible foreign service (hotels) to Irish citizens. The payments for the hotels go into the French economy / they are an outflow of funds from Ireland to France.'",
+          "attribution": "SEC Leaving Certificate Economics 2024 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2025, level: "ordinary",
     paperFileid: "LC034GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2025 Ordinary Level — © State Examinations Commission.",
@@ -3703,6 +3725,28 @@ export const CARDS: SecCard[] = [
           "src": "/exam-figures/economics/markbank/economics-2025-OL-scheme-p14-q8i-ticks.png",
           "srcHash": "3b19f99dfd15444cd1a9b4d86a0f679e",
           "alt": "The marking scheme's completed answer table for 2025 OL Section A Q8(i), as the State Examinations Commission set it. The header row reads Name of Organisation | Tick which is a Monopoly structure. Three rows follow: Ryanair, with an empty tick cell; An Post (mail service for letter post), carrying a single black tick; and Vodafone, with an empty tick cell.",
+          "attribution": "SEC Leaving Certificate Economics 2025 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2025-ol-seca-q9-ticks", topicId: "economics-1-1", conceptId: "substitute-or-complement-for-the-apple-watch",
+    section: "A", questionRef: "2025 OL Section A Q9",
+    questionText: "In September 2024, Apple released the new Apple Watch series 10. In the table below, indicate by means of a tick (✔) which of the following are either a substitute to or a complement for the Apple Watch series 10. Explain the reason for your choice in each case: Apple iPhone 16; Samsung Galaxy Watch 7.",
+    tariffModel: {"kind":"fixed","notation":"2 @ 6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Substitute Complement Reason The apple iPhone can be used along with Apple ✔ the apple watch. iPhone Having one good allows you to use the other good. Samsung The Samsung watch would be purchased Galaxy ✔ instead of the apple watch, making it a Watch 7 substitute.", marks: 12, contextNote: "Read the completed table below. The iPhone is a COMPLEMENT — it is used alongside the watch, and owning one makes the other more useful. The Samsung watch is a SUBSTITUTE, bought instead of it. The test is whether the two are used together or chosen between, not whether they come from the same maker.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2025-OL-scheme-p15-q9-ticks",
+          "src": "/exam-figures/economics/markbank/economics-2025-OL-scheme-p15-q9-ticks.png",
+          "srcHash": "7a088e9fe741d4cd81c41d45aba4cea5",
+          "alt": "The marking scheme's completed answer table for 2025 OL Section A Q9, as the State Examinations Commission set it. A blue header row reads Substitute | Complement | Reason. Row 1, Apple iPhone 16, carries a black tick under Complement with the reason 'The apple iPhone can be used along with the apple watch. Having one good allows you to use the other good.' Row 2, Samsung Galaxy Watch 7, carries a black tick under Substitute with the reason 'The Samsung watch would be purchased instead of the apple watch, making it a substitute.'",
           "attribution": "SEC Leaving Certificate Economics 2025 Ordinary Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []

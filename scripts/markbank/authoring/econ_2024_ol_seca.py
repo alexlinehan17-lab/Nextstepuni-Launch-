@@ -161,4 +161,32 @@ P.cards.append(card(
     section='A', tariff_kind='fixed',
     figure_key='economics-2024-OL-scheme-p08-q3a-ticks'))
 
+# ── Tick tables with a Reason column ───────────────────────────────────────
+# The scheme prints the reasons as prose AND states the categorisation with a
+# drawn ✔. Extraction interleaves the two: "Farmers in This is a visible export.
+# Ireland selling The money leaves Germany and goes 1. beef to the ✔ into the
+# Irish economy" — the row label, the tick and the reason are shuffled together
+# and no column survives. The completed table is bound as a SOLUTION crop.
+
+P.cards.append(card(
+    'econ-2024-ol-seca-q5-ticks', 2024, 'ordinary', 'economics-4-2',
+    'imports-and-exports-visible-and-invisible', '2024 OL Section A Q5',
+    'Indicate by means of a tick (\u2714) which of the following are either an import into or '
+    'an export from the Irish economy. Explain the reason for your choice in each case. '
+    '1. Farmers in Ireland selling beef to the German market. 2. Irish tourists staying in '
+    'hotels in France.',
+    '2 @ 6', 12,
+    [point('r-1', as_option(block(T, 'Import Export Reason Farmers in',
+                                  '6. The Deposit Return Scheme')), 12,
+           'Read the completed table below \u2014 in flat text the row labels, ticks and '
+           'reasons are shuffled together. Beef to Germany is a VISIBLE EXPORT: goods leave and '
+           'money flows in. Irish tourists in French hotels is an INVISIBLE IMPORT: a service '
+           'bought abroad, money flowing out. Follow the MONEY, not the people \u2014 the '
+           'tourists travel out, which is why this one is so often called an export.')],
+    'Both rows are about Ireland trading with a European neighbour, so only the direction of '
+    'the payment separates them. A service counts as invisible whether or not anyone crosses '
+    'a border to consume it.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2024-OL-scheme-p10-q5-ticks'))
+
 P.emit()

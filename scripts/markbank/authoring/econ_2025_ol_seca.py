@@ -279,4 +279,30 @@ P.cards.append(card(
     section='A', tariff_kind='fixed',
     figure_key='economics-2025-OL-scheme-p14-q8i-ticks'))
 
+# ── Tick tables with a Reason column ───────────────────────────────────────
+# The scheme prints the reasons as prose AND states the categorisation with a
+# drawn ✔. Extraction interleaves the two: "Farmers in This is a visible export.
+# Ireland selling The money leaves Germany and goes 1. beef to the ✔ into the
+# Irish economy" — the row label, the tick and the reason are shuffled together
+# and no column survives. The completed table is bound as a SOLUTION crop.
+
+P.cards.append(card(
+    'econ-2025-ol-seca-q9-ticks', 2025, 'ordinary', 'economics-1-1',
+    'substitute-or-complement-for-the-apple-watch', '2025 OL Section A Q9',
+    'In September 2024, Apple released the new Apple Watch series 10. In the table below, '
+    'indicate by means of a tick (\u2714) which of the following are either a substitute to or '
+    'a complement for the Apple Watch series 10. Explain the reason for your choice in each '
+    'case: Apple iPhone 16; Samsung Galaxy Watch 7.',
+    '2 @ 6', 12,
+    [point('r-1', as_option(block(T, 'Substitute Complement Reason The apple iPhone',
+                                  '14 | P a g e')), 12,
+           'Read the completed table below. The iPhone is a COMPLEMENT \u2014 it is used '
+           'alongside the watch, and owning one makes the other more useful. The Samsung watch '
+           'is a SUBSTITUTE, bought instead of it. The test is whether the two are used '
+           'together or chosen between, not whether they come from the same maker.')],
+    'Both items are Apple-adjacent consumer tech, so brand is no guide at all: one Apple product '
+    'is the complement and the rival watch is the substitute.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2025-OL-scheme-p15-q9-ticks'))
+
 P.emit()

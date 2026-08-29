@@ -33158,5 +33158,53 @@
   "year": 2022,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Economics 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2024-OL-scheme-p10-q5-ticks": {
+  "src": "/exam-figures/economics/markbank/economics-2024-OL-scheme-p10-q5-ticks.png",
+  "md5": "31a92aff205219964b9a4eef152954fa",
+  "alt": "The marking scheme's completed answer table for 2024 OL Section A Q5, as the State Examinations Commission set it. A red header row reads Import | Export | Reason. Row 1, 'Farmers in Ireland selling beef to the German market.', carries a black tick under Export with the reason 'This is a visible export. The money leaves Germany and goes into the Irish economy / it is an inflow of funds to Ireland.' Row 2, 'Irish tourists staying in hotels in France.', carries a black tick under Import with the reason 'This is an invisible import. The sale of an intangible foreign service (hotels) to Irish citizens. The payments for the hotels go into the French economy / they are an outflow of funds from Ireland to France.'",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Section A Q5",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2025-OL-scheme-p15-q9-ticks": {
+  "src": "/exam-figures/economics/markbank/economics-2025-OL-scheme-p15-q9-ticks.png",
+  "md5": "7a088e9fe741d4cd81c41d45aba4cea5",
+  "alt": "The marking scheme's completed answer table for 2025 OL Section A Q9, as the State Examinations Commission set it. A blue header row reads Substitute | Complement | Reason. Row 1, Apple iPhone 16, carries a black tick under Complement with the reason 'The apple iPhone can be used along with the apple watch. Having one good allows you to use the other good.' Row 2, Samsung Galaxy Watch 7, carries a black tick under Substitute with the reason 'The Samsung watch would be purchased instead of the apple watch, making it a substitute.'",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Section A Q9",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2024-HL-scheme-p08-q4a-ticks": {
+  "src": "/exam-figures/economics/markbank/economics-2024-HL-scheme-p08-q4a-ticks.png",
+  "md5": "178a412684bf1db07027caae07e0fddf",
+  "alt": "The marking scheme's completed answer for 2024 HL Section A Q4(a), as the State Examinations Commission set it. A table compares 2022 and 2023: No. of machines 5 then 10; No. of workers 5 then 5; RATIO 1:1 then 2:1, with the ratio row outlined in bold. Beneath it two labelled boxes read Capital Widening, left empty, and Capital Deepening, carrying a single black tick.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Section A Q4(a)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2024 Higher Level — © State Examinations Commission"
+ },
+ "economics-2022-HL-scheme-p27-q14aii-ticks": {
+  "src": "/exam-figures/economics/markbank/economics-2022-HL-scheme-p27-q14aii-ticks.png",
+  "md5": "37f7ce62a57a455eefb80514dd6725ca",
+  "alt": "The marking scheme's completed answer table for 2022 HL Q14(a)(ii), as the State Examinations Commission set it. A green header row reads Building Expense | Fixed Cost | Variable Cost | Explanation. Bags of Cement carries a tick under Variable Cost, explained as more cement being needed as more houses are produced. Carpenters (Labour) carries a tick under Variable Cost, with a note that it may be a fixed cost if part of a fixed price contract. Purchase price of a construction site carries a tick under Fixed Cost, explained as costing the same whether the site holds 1 house or 100.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q14(a)(ii)",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2022 Higher Level — © State Examinations Commission"
  }
 }

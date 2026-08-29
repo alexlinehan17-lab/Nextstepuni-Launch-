@@ -5952,6 +5952,39 @@
   "notes": ""
  },
  {
+  "id": "econ-2022-hl-q14-a-ii-ticks",
+  "topicId": "economics-1-5",
+  "conceptId": "fixed-and-variable-building-costs",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q14(a)(ii)",
+  "questionText": "Choose by means of a tick (✓) which type of cost best describes each of the following. Explain your choice: bags of cement; carpenters (labour); purchase price of a construction site.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-scheme-p27-q14aii-ticks",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "(2+4)+(2+4)+(2+4)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Building Expense Fixed Variable Explanation Cost Cost Bags of Cement As more output, houses, are produced more of the raw ✓ material, cement, will be needed. As output increases, so does the cost of production, therefore it is a variable cost. As more output, houses, are Carpenters (Labour) produced more of labour is needed to produce them. As output increases, so does the cost ✓ of production, therefore it is a variable cost. Note: Maybe a FC if it is part of a fixed price contract. Regardless of whether more or Purchase price of a less houses are produced the construction site purchase of the site will still need to be paid for. Whether the site ✓ contains 1 house or 100 houses its cost remains the same. As output increases, the site cost remains the same, therefore it is a fixed cost.",
+    "marks": 18,
+    "openList": true,
+    "contextNote": "Read the completed table below. Cement and carpenters are VARIABLE — build more houses and you need more of both. The site is FIXED: it costs the same whether it holds one house or a hundred. Each row is priced ⟨2+4⟩, two for the tick and four for the explanation, so the reasoning carries twice the marks of the choice. Note the scheme itself allows labour as a FIXED cost if it is on a fixed-price contract."
+   }
+  ],
+  "notes": "The carpenters row is the interesting one: the scheme concedes that labour can be fixed if contracted at a set price, so the classification follows the contract, not the input."
+ },
+ {
   "id": "econ-2022-hl-sa-q2-b",
   "topicId": "economics-1-1",
   "conceptId": "what-moves-personal-consumption",
@@ -16677,6 +16710,39 @@
   "notes": "Every figure comes off the CSO infographic; nothing is given in the wording. The answer is a surplus, so a student who subtracts the wrong way round gets the sign as well as the verdict wrong."
  },
  {
+  "id": "econ-2024-hl-seca-q4-a-ticks",
+  "topicId": "economics-1-5",
+  "conceptId": "capital-deepening-or-widening",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2024 HL Section A Q4(a)",
+  "questionText": "The table below shows a firm’s capital to labour ratio for the previous two years — machines 5 then 10, workers 5 then 5, ratio 1:1 then 2:1. Indicate by means of a tick whether capital widening or capital deepening is occurring.",
+  "stem": "",
+  "figureKey": "economics-2024-HL-scheme-p08-q4a-ticks",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Capital Widening Capital Deepening ✓ Capital deepening is occurring in this scenario because in 2023 the firm is employing 2 machines per worker compared to 2022 when it was only employing 1 machine per worker. Capital deepening occurs when an increase in the capital stock leads to more capital per worker.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Read the completed answer below. It is capital DEEPENING: machines double while the workforce stays at five, so capital PER WORKER rises from 1:1 to 2:1. Widening would be more machines AND more workers with the ratio unchanged — the ratio row is the whole test."
+   }
+  ],
+  "notes": "Both answers involve buying machines, so counting the machines settles nothing. Only the ratio distinguishes them."
+ },
+ {
   "id": "econ-2024-ol-q11-a-ii",
   "topicId": "economics-1-2",
   "conceptId": "effect-of-energy-costs-on-business",
@@ -18720,6 +18786,39 @@
    }
   ],
   "notes": "The pair is one idea asked twice: many small firms, free entry, but differentiated products — so no barriers, and a downward-sloping curve all the same."
+ },
+ {
+  "id": "econ-2024-ol-seca-q5-ticks",
+  "topicId": "economics-4-2",
+  "conceptId": "imports-and-exports-visible-and-invisible",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2024 OL Section A Q5",
+  "questionText": "Indicate by means of a tick (✔) which of the following are either an import into or an export from the Irish economy. Explain the reason for your choice in each case. 1. Farmers in Ireland selling beef to the German market. 2. Irish tourists staying in hotels in France.",
+  "stem": "",
+  "figureKey": "economics-2024-OL-scheme-p10-q5-ticks",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 @ 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Import Export Reason Farmers in This is a visible export. Ireland selling The money leaves Germany and goes 1. beef to the ✔ into the Irish economy / it is an inflow German market. of funds to Ireland. This is an invisible import. The sale of an intangible foreign Irish tourists service (hotels) to Irish citizens. 2. staying in hotels ✔ The payments for the hotels go into in France. the French economy / they are an outflow of funds from Ireland to France.",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Read the completed table below — in flat text the row labels, ticks and reasons are shuffled together. Beef to Germany is a VISIBLE EXPORT: goods leave and money flows in. Irish tourists in French hotels is an INVISIBLE IMPORT: a service bought abroad, money flowing out. Follow the MONEY, not the people — the tourists travel out, which is why this one is so often called an export."
+   }
+  ],
+  "notes": "Both rows are about Ireland trading with a European neighbour, so only the direction of the payment separates them. A service counts as invisible whether or not anyone crosses a border to consume it."
  },
  {
   "id": "econ-2025-hl-q11-a-ii",
@@ -24422,5 +24521,38 @@
    }
   ],
   "notes": "The trap is reading \"monopoly\" as \"big\". Ryanair carries far more passengers than An Post carries letters, and it is still not a monopoly."
+ },
+ {
+  "id": "econ-2025-ol-seca-q9-ticks",
+  "topicId": "economics-1-1",
+  "conceptId": "substitute-or-complement-for-the-apple-watch",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2025 OL Section A Q9",
+  "questionText": "In September 2024, Apple released the new Apple Watch series 10. In the table below, indicate by means of a tick (✔) which of the following are either a substitute to or a complement for the Apple Watch series 10. Explain the reason for your choice in each case: Apple iPhone 16; Samsung Galaxy Watch 7.",
+  "stem": "",
+  "figureKey": "economics-2025-OL-scheme-p15-q9-ticks",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "2 @ 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Substitute Complement Reason The apple iPhone can be used along with Apple ✔ the apple watch. iPhone Having one good allows you to use the other good. Samsung The Samsung watch would be purchased Galaxy ✔ instead of the apple watch, making it a Watch 7 substitute.",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Read the completed table below. The iPhone is a COMPLEMENT — it is used alongside the watch, and owning one makes the other more useful. The Samsung watch is a SUBSTITUTE, bought instead of it. The test is whether the two are used together or chosen between, not whether they come from the same maker."
+   }
+  ],
+  "notes": "Both items are Apple-adjacent consumer tech, so brand is no guide at all: one Apple product is the complement and the rival watch is the substitute."
  }
 ]

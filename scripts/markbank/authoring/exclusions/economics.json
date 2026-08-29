@@ -115,11 +115,6 @@
   "evidence": "Paper: 'Explain, with the use of a fully labelled diagram, the long-run equilibrium position of a monopoly firm.' Scheme: 'They sell the output at price P1' welded to the diagram — recorded in econ_excluded.py."
  },
  {
-  "ref": "2022 HL Q14(a)(ii)",
-  "reason": "answered by ticking fixed or variable against each item in a table",
-  "evidence": "recorded product decision in econ_excluded.py, made at authoring time against the scheme"
- },
- {
   "ref": "2022 HL Q14(b)(i)",
   "reason": "the response is the worked cost calculation for the three missing table cells",
   "evidence": "\"Calculate the missing figures for A, B, and C in the table. Calculations: A: Total Cost B: Average Variable Cost C: Marginal Cost 100,000 400,000 450,000 ⟨9⟩ + 260,000 2 – 400,000 €360,000 €200,000 €50,000\""
@@ -460,11 +455,6 @@
   "evidence": "Scheme p.7: 'Illustrate, on the diagram below, how the European Commission's proposal above would alter the diagram. ⟨6⟩' followed only by the drawn model: 'Price MWh S / Pe / P1 (€200) / Excess Demand / D / S1 Qe D1 Quantity of electricity'."
  },
  {
-  "ref": "2024 HL Section A Q4(a)",
-  "reason": "Answered by reading/completing the capital-to-labour ratio table printed with it — the tick and the scenario explanation are worked off the table under a block ⟨6⟩ (mirrors registered '2023 HL Section A Q4(a)': a table completion).",
-  "evidence": "Scheme p.8: '2022 2023 / No. of machines 5 10 / No. of workers 5 5 / RATIO 1:1 2:1 / Capital Widening Capital Deepening ✓ — Capital deepening is occurring in this scenario because in 2023 the firm is employing 2 machines per worker compared to 2022…' ⟨6⟩."
- },
- {
   "ref": "2024 HL Section A Q5(a)",
   "reason": "The marks are for a drawing; the scheme prints only the model diagram under a block ⟨8⟩, with no itemised creditable components to card.",
   "evidence": "Scheme p.9: 'Using the information above, illustrate with the aid of a fully labelled diagram how a shortage of tickets for this concert may arise. ⟨8⟩' — the answer is the drawn diagram; the only text the extractor reads off it is '€97.10'."
@@ -533,11 +523,6 @@
   "ref": "2024 OL Section A Q2(a)",
   "reason": "Already recorded in econ_excluded.py: answered by ticking a box in a table, with the explanation half of a 1st@8/2nd@4 tariff welded to the tick.",
   "evidence": "Scheme p6: 'Indicate using a tick (✔) in the table below if the above measure is an example of a company using price competition or non-price competition. Explain your answer. 1st @ 8 / 2nd @ 4 … Non-price competition ✔ Explanation: Lidl is competing with other supermarkets to increase its sales / market share by means other than changing its prices for all its customers.'"
- },
- {
-  "ref": "2024 OL Section A Q5",
-  "reason": "Answered by ticking import or export with the reason welded across the table columns — the flattened text interleaves the reason with the row labels, so no contiguous slice exists (same class as 2022 OL Section A Q4).",
-  "evidence": "Scheme p10 flattens to: 'Farmers in This is a visible export. Ireland selling The money leaves Germany and goes 1. beef to the ✔ into the Irish economy / it is an inflow German market. of funds to Ireland.' (⟨2 @ 6⟩)."
  },
  {
   "ref": "2024 OL Section A Q8(i)",
@@ -633,10 +618,5 @@
   "ref": "2025 OL Q16(b)(ii)",
   "reason": "answered by reading figures off the CPI chart printed beside it (mirrors '2021 HL Q14(a)(i)' and '2021 OL Q13(c)(ii)')",
   "evidence": "Scheme p38: ⟨12⟩ 'From May 2024 to Sep 2024 the annual percentage change in inflation decreased. The annual rate of CPI inflation was highest in May 2024 at approx. 2.6% and hit its lowest figure at approx. 0.7% in September 2024 (or a decrease of 1.9%).' — the answer is the trend and figures read from the printed graph."
- },
- {
-  "ref": "2025 OL Section A Q9",
-  "reason": "answered by ticking substitute or complement against each product, with the reasons welded across the tick cells (mirrors '2024 OL Q14(b)(ii)' and '2022 OL Section A Q4')",
-  "evidence": "The tidy scheme flattens the table as: 'Substitute Complement Reason The apple iPhone can be used along with Apple ✔ the apple watch. iPhone Having one good allows you to use the other good. Samsung The Samsung watch would be purchased Galaxy ✔ instead of the apple watch, making it a Watch 7 substitute.' ⟨2 @ 6⟩ — row labels and ticks are interleaved mid-sentence, so no reason separates as a clean"
  }
 ]

@@ -1374,6 +1374,28 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: "LC034ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2022 Higher Level — © State Examinations Commission.",
+    id: "econ-2022-hl-q14-a-ii-ticks", topicId: "economics-1-5", conceptId: "fixed-and-variable-building-costs",
+    section: "B", questionRef: "2022 HL Q14(a)(ii)",
+    questionText: "Choose by means of a tick (✓) which type of cost best describes each of the following. Explain your choice: bags of cement; carpenters (labour); purchase price of a construction site.",
+    tariffModel: {"kind":"fixed","notation":"(2+4)+(2+4)+(2+4)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 18,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Building Expense Fixed Variable Explanation Cost Cost Bags of Cement As more output, houses, are produced more of the raw ✓ material, cement, will be needed. As output increases, so does the cost of production, therefore it is a variable cost. As more output, houses, are Carpenters (Labour) produced more of labour is needed to produce them. As output increases, so does the cost ✓ of production, therefore it is a variable cost. Note: Maybe a FC if it is part of a fixed price contract. Regardless of whether more or Purchase price of a less houses are produced the construction site purchase of the site will still need to be paid for. Whether the site ✓ contains 1 house or 100 houses its cost remains the same. As output increases, the site cost remains the same, therefore it is a fixed cost.", marks: 18, contextNote: "Read the completed table below. Cement and carpenters are VARIABLE — build more houses and you need more of both. The site is FIXED: it costs the same whether it holds one house or a hundred. Each row is priced ⟨2+4⟩, two for the tick and four for the explanation, so the reasoning carries twice the marks of the choice. Note the scheme itself allows labour as a FIXED cost if it is on a fixed-price contract.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2022-HL-scheme-p27-q14aii-ticks",
+          "src": "/exam-figures/economics/markbank/economics-2022-HL-scheme-p27-q14aii-ticks.png",
+          "srcHash": "37f7ce62a57a455eefb80514dd6725ca",
+          "alt": "The marking scheme's completed answer table for 2022 HL Q14(a)(ii), as the State Examinations Commission set it. A green header row reads Building Expense | Fixed Cost | Variable Cost | Explanation. Bags of Cement carries a tick under Variable Cost, explained as more cement being needed as more houses are produced. Carpenters (Labour) carries a tick under Variable Cost, with a note that it may be a fixed cost if part of a fixed price contract. Purchase price of a construction site carries a tick under Fixed Cost, explained as costing the same whether the site holds 1 house or 100.",
+          "attribution": "SEC Leaving Certificate Economics 2022 Higher Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2022 Higher Level — © State Examinations Commission.",
     id: "econ-2022-hl-sa-q2-b", topicId: "economics-1-1", conceptId: "what-moves-personal-consumption",
     section: "A", questionRef: "2022 HL Section A Q2(b)",
     stem: "The Quarterly National Accounts for Quarter 2 of 2021 — the quarter Ireland came out of its third lockdown — showed personal consumption rising.",
@@ -3430,6 +3452,28 @@ export const CARDS: SecCard[] = [
           "srcHash": "a5667e7030053c0033d47b6d01e0e006",
           "alt": "A CSO infographic on a teal ground headed by the CSO logo, made of overlapping circles. The first reads 'Ireland's Economic Interactions with the Rest of the World' over a world map. The second is headed Goods, with a container ship for each side: Exports €76bn, Imports €38bn. The third is headed Services, with a desk-worker illustration for each side: Exports €91bn, Imports €83bn. A fourth circle is cropped by the infographic's own frame at the right edge, as printed.",
           "attribution": "SEC Leaving Certificate Economics 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2024 Higher Level — © State Examinations Commission.",
+    id: "econ-2024-hl-seca-q4-a-ticks", topicId: "economics-1-5", conceptId: "capital-deepening-or-widening",
+    section: "A", questionRef: "2024 HL Section A Q4(a)",
+    questionText: "The table below shows a firm’s capital to labour ratio for the previous two years — machines 5 then 10, workers 5 then 5, ratio 1:1 then 2:1. Indicate by means of a tick whether capital widening or capital deepening is occurring.",
+    tariffModel: {"kind":"fixed","notation":"6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Capital Widening Capital Deepening ✓ Capital deepening is occurring in this scenario because in 2023 the firm is employing 2 machines per worker compared to 2022 when it was only employing 1 machine per worker. Capital deepening occurs when an increase in the capital stock leads to more capital per worker.", marks: 6, contextNote: "Read the completed answer below. It is capital DEEPENING: machines double while the workforce stays at five, so capital PER WORKER rises from 1:1 to 2:1. Widening would be more machines AND more workers with the ratio unchanged — the ratio row is the whole test.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2024-HL-scheme-p08-q4a-ticks",
+          "src": "/exam-figures/economics/markbank/economics-2024-HL-scheme-p08-q4a-ticks.png",
+          "srcHash": "178a412684bf1db07027caae07e0fddf",
+          "alt": "The marking scheme's completed answer for 2024 HL Section A Q4(a), as the State Examinations Commission set it. A table compares 2022 and 2023: No. of machines 5 then 10; No. of workers 5 then 5; RATIO 1:1 then 2:1, with the ratio row outlined in bold. Beneath it two labelled boxes read Capital Widening, left empty, and Capital Deepening, carrying a single black tick.",
+          "attribution": "SEC Leaving Certificate Economics 2024 Higher Level — © State Examinations Commission",
+          "solution": true,
           "lettersVisible": []
     },
   } as SecCard,
