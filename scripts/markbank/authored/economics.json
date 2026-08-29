@@ -17693,6 +17693,39 @@
   "notes": "The calculation itself (20 marks) is not carded — the scheme’s response is the worked arithmetic. What is carded is reading the answer."
  },
  {
+  "id": "econ-2024-ol-q12-c-i",
+  "topicId": "economics-3-2",
+  "conceptId": "overall-trend-in-irish-unemployment",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q12(c)(i)",
+  "questionText": "Identify the overall trend in Irish unemployment using figures from the graph above.",
+  "stem": "",
+  "figureKey": "economics-2024-OL-paper-p15-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Based on the above data, the rate of unemployment in Ireland remained broadly stable or slightly increased in 2022. The highest recorded rate peaked at just 4.5% and the lowest rate at 4.3%. Unemployment increased by 0.1%.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "One statement of the trend, 6 marks. The scheme wants the direction AND the figures that show it — the peak, the floor and the movement between them."
+   }
+  ],
+  "notes": "The bars barely move, and the scheme rewards saying so precisely: \"broadly stable or slightly increased\" with 4.5 and 4.3 quoted is a better answer than calling it a rise."
+ },
+ {
   "id": "econ-2024-ol-sa-q1-i",
   "topicId": "economics-0-2",
   "conceptId": "oceans-as-an-economic-resource",

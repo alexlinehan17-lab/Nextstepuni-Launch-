@@ -565,11 +565,6 @@
   "evidence": "Scheme p18: 'Workings: ⟨18⟩ ⟨6 @ 3⟩ 2,574,500 − 2,506,000 = 68,500; 68,500/2,506,000 × 100 = 2.73% (-1 for omission of %)' — and the paper works 'from the data given on the left-hand side of the infographic'."
  },
  {
-  "ref": "2024 OL Q12(c)(i)",
-  "reason": "Every response reads the unemployment chart printed with it — the established chart-lookup class (2025 HL Q12(a)(i)).",
-  "evidence": "Scheme p21: '(i) Identify the overall trend in Irish unemployment using figures from the graph above. ⟨6⟩ Based on the above data, the rate of unemployment in Ireland remained broadly stable or slightly increased in 2022. The highest recorded rate peaked at just 4.5% and the lowest rate at 4.3%.'"
- },
- {
   "ref": "2024 OL Q13(a)(i)",
   "reason": "Already recorded in econ_excluded.py: a graph to be drawn on the answer-book graph paper; the responses are its axis and line values, welded across the data table.",
   "evidence": "Scheme p22: 'On the graph paper provided, draw and label: • the fixed costs … • the variable costs … ⟨12⟩ Axes: ⟨2 @ 2⟩ FC @ 3 VC @ 5' over the table 'Fixed Costs in € 600 600 600 / Variable Costs in € 500 600 700 ⟨800⟩'."
