@@ -11,6 +11,7 @@ import { Capacitor } from '@capacitor/core';
 import { authorizeWithApple } from '../utils/appleAuth';
 import app, { auth, db } from '../firebase';
 import { shouldReapAccount } from '../utils/registrationRollback';
+import { type LoginSuccessOptions } from '../contexts/AuthContext';
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile, deleteUser, sendPasswordResetEmail, sendEmailVerification, signOut, GoogleAuthProvider, signInWithPopup, signInWithCredential } from 'firebase/auth';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { getFunctions, httpsCallable } from 'firebase/functions';
@@ -263,7 +264,7 @@ function registrationErrorMessage(code: RegistrationErrorCode): string {
 }
 
 interface LoginPageProps {
-  handleLoginSuccess: (u: SessionUser) => void;
+  handleLoginSuccess: (u: SessionUser, options?: LoginSuccessOptions) => void;
 }
 
 /**
@@ -464,7 +465,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
           avatar: newAvatar,
           school: '',
           role: 'student',
-        });
+        }, { requiresOnboarding: true });
       }
     } catch (err: any) {
       if (err.code === 'auth/popup-closed-by-user' || err.code === 'auth/cancelled-popup-request') {
@@ -536,7 +537,10 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
             basis: CONSENT_BASIS,
           },
         }), 'LoginPage.appleCreateUserDoc');
-        handleLoginSuccess({ uid: cred.user.uid, name: newName, avatar: newAvatar, school: '', role: 'student' });
+        handleLoginSuccess(
+          { uid: cred.user.uid, name: newName, avatar: newAvatar, school: '', role: 'student' },
+          { requiresOnboarding: true },
+        );
       }
     } catch (err: any) {
       // The plugin rejects with code 'USER_CANCELLED' when the user dismisses the sheet.
@@ -840,7 +844,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         avatar: selectedAvatar,
         school,
         role: 'student',
-      });
+      }, { requiresOnboarding: true });
     } catch (err: any) {
       // A failed /users write must NEVER cost the student their account.
       //
@@ -865,7 +869,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
           avatar: selectedAvatar,
           school,
           role: 'student',
-        });
+        }, { requiresOnboarding: true });
         setIsLoading(false);
         return;
       }

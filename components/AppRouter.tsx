@@ -64,6 +64,13 @@ const InsightsView = lazy(() => import('./InsightsView'));
 const CutContentPage = lazy(() => import('./CutContentPage'));
 const AccreditationPage = lazy(() => import('./AccreditationPage'));
 
+// Reuse the exact same presentation through registration, progress hydration
+// and the lazy onboarding handoff. Stable copy and full-screen treatment stop
+// a one-second "Loading your workspace" interstitial appearing between them.
+const ACCOUNT_SETUP_LOADING = (
+  <LoadingSpinner overlay kicker="One moment" label="Setting up your account" />
+);
+
 /* ── Module Error Boundary ── */
 
 interface ModuleErrorBoundaryProps {
@@ -334,7 +341,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     // spinning circle this replaced was the only screen in the product that
     // looked like a generic app, and it was the one a new student sat and
     // watched for the whole of provisioning.
-    return <LoadingSpinner overlay kicker="One moment" label="Setting up your account" />;
+    return ACCOUNT_SETUP_LOADING;
   }
 
   if (!user) {
@@ -350,9 +357,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     // returning-user copy is wrong here — and it is the screen they sit on for
     // the tail of signup, so it is the one they actually read. Match the
     // wording of the registration hold that precedes it.
-    return needsOnboarding
-      ? <LoadingSpinner kicker="Almost there" label="Setting up your account" />
-      : <LoadingSpinner />;
+    return needsOnboarding ? ACCOUNT_SETUP_LOADING : <LoadingSpinner />;
   }
 
   // Force password change if flagged by GC reset
@@ -394,7 +399,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     // call deleteUser() on their live account. Left as a note rather than a
     // second check, because duplicating the condition here would be dead code.
     return (
-      <Suspense fallback={<LoadingSpinner />}>
+      <Suspense fallback={ACCOUNT_SETUP_LOADING}>
         <Onboarding userId={user.uid} userName={user.name} onComplete={handleOnboardingComplete} onSkip={handleOnboardingSkip} mode={transitionToSeniorMode ? "transition-to-senior" : "fresh"} transitionTargetYear={transitionTargetYear} />
       </Suspense>
     );

@@ -40,6 +40,11 @@ interface AuthLoadedData {
   rawProgressDoc: Record<string, any>;
 }
 
+export interface LoginSuccessOptions {
+  /** Preserve the new-account route while AuthContext finishes its own reads. */
+  requiresOnboarding?: boolean;
+}
+
 interface AuthContextValue {
   user: SessionUser | null;
   isLoadingAuth: boolean;
@@ -57,7 +62,7 @@ interface AuthContextValue {
   /** Whether the owning user's initial profile/progress read completed. Failed
    *  fallback data is intentionally not authoritative for rank baselines. */
   loadedDataStatus: 'pending' | 'loaded' | 'failed';
-  handleLoginSuccess: (user: SessionUser) => void;
+  handleLoginSuccess: (user: SessionUser, options?: LoginSuccessOptions) => void;
   handleLogout: () => Promise<void>;
   /** Called by App.tsx after the onboarding flow saves a subject profile, so
    *  the redirect at App.tsx:252 doesn't fire again on the next render. */
@@ -294,12 +299,18 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     return () => unsubscribe();
   }, []);
 
-  const handleLoginSuccess = useCallback((loggedInUser: SessionUser) => {
+  const handleLoginSuccess = useCallback((loggedInUser: SessionUser, options?: LoginSuccessOptions) => {
     if (loggedInUser.uid === DEMO_STUDENT_UID) {
       markDemoSessionActive();
       setLoadedData(loadDemoStudentLoadedData());
       setLoadedDataUid(loggedInUser.uid);
       setLoadedDataStatus('loaded');
+    } else if (options?.requiresOnboarding) {
+      // LoginPage knows synchronously that this is a newly-created account.
+      // Keep that intent while the auth listener and ProgressContext finish
+      // mirroring Firestore; otherwise their default `false` value briefly
+      // swaps the account-setup loader for "Loading your workspace".
+      setLoadedData(previous => ({ ...previous, needsOnboarding: true }));
     }
     setUser(loggedInUser);
     setUserResolved(true);
