@@ -1445,6 +1445,28 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2022-ol-seca-q4-ticks", topicId: "economics-1-1", conceptId: "substitutes-and-complements-for-the-iphone",
+    section: "A", questionRef: "2022 OL Section A Q4",
+    questionText: "Apple released the iPhone 13 in September 2021. In the table below, identify by placing a tick (✓) which two items are substitute goods and which two items are complementary goods for the iPhone 13: Samsung S21; iPhone 13 case; iPhone charging plug; Google Pixel 4A smartphone.",
+    tariffModel: {"kind":"fixed","notation":"15","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Substitute Goods Complementary Goods Samsung S21 ✓ iPhone 13 case ✓ iPhone charging plug ✓ Google Pixel 4A smartphone ✓", marks: 15, contextNote: "Read the completed table below, not the line above it: the ticks survive extraction but their COLUMNS do not, so in flat text all four appear to sit together. The scheme ticks Samsung S21 and the Google Pixel as substitutes — rival handsets you would buy INSTEAD of an iPhone — and the case and the charging plug as complements, bought ALONGSIDE it. The tariff is ⟨1st x 9⟩ then ⟨3 x 2⟩: nine for the first correct categorisation and two for each of the other three, so the first one right is worth more than the rest together.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2022-OL-scheme-p06-q4-ticks",
+          "src": "/exam-figures/economics/markbank/economics-2022-OL-scheme-p06-q4-ticks.png",
+          "srcHash": "6bc0edf143f3193b34632a962f4d28a3",
+          "alt": "The marking scheme's completed answer table for 2022 OL Section A Q4, as the State Examinations Commission set it. A green header row reads Substitute Goods | Complementary Goods. Four item rows follow, each carrying a single black tick: Samsung S21 ticked under Substitute Goods; iPhone 13 case ticked under Complementary Goods; iPhone charging plug ticked under Complementary Goods; Google Pixel 4A smartphone ticked under Substitute Goods.",
+          "attribution": "SEC Leaving Certificate Economics 2022 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2023, level: "ordinary",
     paperFileid: "LC034GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2023 Ordinary Level — © State Examinations Commission.",

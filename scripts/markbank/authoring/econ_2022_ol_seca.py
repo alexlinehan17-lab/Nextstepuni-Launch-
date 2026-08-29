@@ -249,4 +249,38 @@ P.cards.append(card(
     'right order, which is why the scheme works \u2206Q, \u2206P and both sums separately.',
     tariff_kind='fixed', section='A'))
 
+# ── A tick table, answered by the scheme's own completed table ─────────────
+# The ✔ is DRAWN, not set in the text layer, so extraction keeps the ticks but
+# loses the column each one sits in: the flat run below reads as though all four
+# items were ticked in the same column. Nothing in text can fix that, because
+# the column IS the answer and the answer is graphical.
+#
+# So the scheme's completed table is cropped and bound as a SOLUTION figure —
+# the same mechanism the Maths deck uses for a printed model solution, hidden
+# until reveal and rendered large to be read. The row keeps the scheme's own
+# contiguous run so the claim still traces to its document, and the note says
+# plainly that the alignment is in the picture, not in the sentence.
+P.cards.append(card(
+    'econ-2022-ol-seca-q4-ticks', 2022, 'ordinary', 'economics-1-1',
+    'substitutes-and-complements-for-the-iphone', '2022 OL Section A Q4',
+    'Apple released the iPhone 13 in September 2021. In the table below, identify by placing a '
+    'tick (\u2713) which two items are substitute goods and which two items are complementary '
+    'goods for the iPhone 13: Samsung S21; iPhone 13 case; iPhone charging plug; Google Pixel '
+    '4A smartphone.',
+    '15', 15,
+    [point('r-1', as_option(block(BODY, 'Substitute Goods Complementary Goods Samsung S21',
+                                  '5 | P a g e')), 15,
+           'Read the completed table below, not the line above it: the ticks survive extraction '
+           'but their COLUMNS do not, so in flat text all four appear to sit together. The '
+           'scheme ticks Samsung S21 and the Google Pixel as substitutes \u2014 rival handsets '
+           'you would buy INSTEAD of an iPhone \u2014 and the case and the charging plug as '
+           'complements, bought ALONGSIDE it. The tariff is \u27e81st x 9\u27e9 then '
+           '\u27e83 x 2\u27e9: nine for the first correct categorisation and two for each of '
+           'the other three, so the first one right is worth more than the rest together.')],
+    'Both substitutes are phones and both complements are accessories, which is the test: a '
+    'substitute satisfies the same want, a complement is used with it.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2022-OL-scheme-p06-q4-ticks'))
+
+
 P.emit()
