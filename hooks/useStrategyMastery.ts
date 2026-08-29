@@ -7,10 +7,36 @@ import { useState, useEffect, useCallback } from 'react';
 import { collection, doc, getDocs, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useProgress } from '../contexts/ProgressContext';
-import { type UserProgress, type StrategyMasteryMap, type MasteryTier } from '../types';
+import {
+  type UserProgress,
+  type StrategyMasteryMap,
+  type StrategyMasteryRecord,
+  type MasteryTier,
+} from '../types';
 import { type CourseData } from '../components/Library';
 import { STRATEGY_REGISTRY, type StudySessionRecord } from '../utils/strategyRegistry';
 import { DEMO_STUDENT_UID } from '../data/devStudent';
+
+export function createStrategyMasteryRecord(
+  tier: MasteryTier,
+  sessionCount: number,
+  subjectsSeen: string[],
+  milestones: Pick<StrategyMasteryRecord, 'learnedAt' | 'appliedAt' | 'habitualAt'> = {},
+): StrategyMasteryRecord {
+  const { learnedAt, appliedAt, habitualAt } = milestones;
+
+  // Firestore rejects JavaScript undefined values, including values nested in
+  // maps. Older accounts can legitimately have a completed strategy with no
+  // matching study session yet, so omit absent milestone fields entirely.
+  return {
+    tier,
+    sessionCount,
+    subjectsSeen,
+    ...(learnedAt === undefined ? {} : { learnedAt }),
+    ...(appliedAt === undefined ? {} : { appliedAt }),
+    ...(habitualAt === undefined ? {} : { habitualAt }),
+  };
+}
 
 export function useStrategyMastery(
   uid: string | undefined,
@@ -75,14 +101,11 @@ export function useStrategyMastery(
         }
       }
 
-      map[moduleId] = {
-        tier,
+      map[moduleId] = createStrategyMasteryRecord(tier, sessionCount, subjectsSeen, {
         learnedAt: relevantSessions.length > 0 ? relevantSessions[0].date : undefined,
         appliedAt,
         habitualAt,
-        sessionCount,
-        subjectsSeen,
-      };
+      });
     }
 
     setMasteryMap(map);
