@@ -6786,6 +6786,80 @@
   "notes": "The scheme sets the three calculations in three columns, so flattened into a line the figures run together — the working rides with the card as a picture. Marginal cost is the step between two totals, not a total divided by anything."
  },
  {
+  "id": "econ-2022-hl-q11-b-i",
+  "topicId": "economics-2-1",
+  "conceptId": "how-the-equilibrium-price-of-land-is-determined",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q11(b)(i)",
+  "questionText": "Explain, with the use of a fully labelled diagram how the equilibrium price of land is determined.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-scheme-p15-q11bi-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "D QE Quantity The supply of land is fixed in quantity at S. The demand for land is downward sloping from left to right- D.",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Six marks for the diagram. The supply of land is VERTICAL — fixed in quantity, so no price will bring more of it into existence. Everything else about the diagram follows from that one line."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The equilibrium price PE is established where D is equal to S.",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Five marks for the explanation. With supply fixed, the equilibrium price is set entirely by DEMAND — the price is demand-determined, which is what makes land different from the other factors."
+   }
+  ],
+  "notes": "A vertical supply curve is the whole point. Drawing land’s supply as an ordinary upward slope makes the diagram say the opposite of what the question is about."
+ },
+ {
+  "id": "econ-2022-hl-q14-b-ii",
+  "topicId": "economics-1-5",
+  "conceptId": "plotting-fixed-variable-and-total-costs",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q14(b)(ii)",
+  "questionText": "Using the figures obtained in the table above draw and label: the Fixed Costs, Variable Costs, and Total Costs on the graph paper below.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-scheme-p28-q14bii-graph",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Cost of Production 600,000 500,000 505,000 TC:5 450,000 400,000 400,000 405,000 VC:5 360,000 350,000 300,000 300,000 260,000 200,000 100,000 100,000 100,000 100,000 100,000 FC: 2 1 2 3 4 Fixed Cost (€) Variable Cost (€) Total Cost (€) Axes 4",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "The scheme writes its split onto the graph: TC:5, VC:5, FC:2 and Axes 4. Total cost is the SUM of the other two, so the total-cost line runs exactly €100,000 above the variable-cost line at every output — that gap is the check."
+   }
+  ],
+  "notes": "Fixed cost is flat at €100,000 whatever the output. The three figures worked in (b)(i) are the ones plotted here, so an error there reappears as a kink in this graph."
+ },
+ {
   "id": "econ-2022-hl-sa-q2-b",
   "topicId": "economics-1-1",
   "conceptId": "what-moves-personal-consumption",
@@ -7572,6 +7646,88 @@
    }
   ],
   "notes": "The price rise is given but the quantity fall is not, so the whole numerator has to come off the curve. A PED of −3 means demand is elastic, and the minus sign is part of the answer."
+ },
+ {
+  "id": "econ-2022-hl-sa-q6-a-i",
+  "topicId": "economics-2-0",
+  "conceptId": "what-entry-does-to-the-market-equilibrium",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q6(a)(i)",
+  "questionText": "Firms in Perfect Competition are said to be Price-Takers. On the diagrams below label and illustrate what happens to the market equilibrium as more firms enter the market. Explain each of your diagrams below.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-scheme-p10-q6a-diagrams",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The Market The Firm Price S1 Price S2 P1 P1 D1=AR1=MR1 P2 P2 D1 D2=AR2=MR2 Q1 Q2 Quantity Quantity",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Half of the scheme’s 4 for the two printed diagrams. On the MARKET diagram, entry shifts SUPPLY right from S1 to S2 — demand does not move."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Explanation for the market: As firms outside the industry become aware of the SNPs earned in the industry these firms will enter the industry which they can do as there are no barriers to entry. As these firms enter the market supply will shift to the right from S1 to S2. This quantity supplied increases from Q1 to Q2 and decreases the price from P1 to P2.",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Two marks for the words. The chain is supernormal profits, no barriers to entry, more firms, supply right, quantity up from Q1 to Q2 and price down from P1 to P2."
+   }
+  ],
+  "notes": "Entry is attracted by supernormal profit and ends by competing it away. It is SUPPLY that shifts — more firms means more of the good at every price, not more buyers."
+ },
+ {
+  "id": "econ-2022-hl-sa-q6-a-ii",
+  "topicId": "economics-2-0",
+  "conceptId": "why-the-individual-firms-price-falls-as-firms-enter",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 HL Section A Q6(a)(ii)",
+  "questionText": "Firms in Perfect Competition are said to be Price-Takers. On the diagrams below label and illustrate what happens to the individual firm’s price as more firms enter the market. Explain each of your diagrams below.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-scheme-p10-q6a-diagrams",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "P2 D1 D2=AR2=MR2 Q1 Q2 Quantity Quantity",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The other half of the scheme’s 4 for the two printed diagrams. On the FIRM’s diagram the price line simply drops, from D1 = AR1 = MR1 down to D2 = AR2 = MR2 — it stays HORIZONTAL at both levels."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Explanation for the firm: As the individual firm is described as a price-taker they must accept the price established by the industry, thus their price also decreases from P1 to P2.",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Two marks for the words, and the phrase that earns them is PRICE-TAKER: the firm accepts whatever the industry sets, so its price falls from P1 to P2 because the market price did."
+   }
+  ],
+  "notes": "The firm’s demand curve is horizontal because it can sell any amount at the going price and nothing above it. Sloping it downward turns a perfect competitor into a monopolist."
  },
  {
   "id": "econ-2022-ol-q11-a-ii",
@@ -12249,6 +12405,80 @@
    }
   ],
   "notes": "A falling line looks like the pound weakening until you read the axis. It is Euro to Sterling, so the currency that is losing value is the one on top."
+ },
+ {
+  "id": "econ-2023-hl-q13-a-i",
+  "topicId": "economics-3-0",
+  "conceptId": "drawing-the-circular-flow-for-an-open-economy",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 HL Q13(a)(i)",
+  "questionText": "Draw a fully labelled diagram showing the Circular Flow of Income for an open economy.",
+  "stem": "",
+  "figureKey": "economics-2023-HL-scheme-p23-q13ai-circular-flow",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "13 @ 1",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 13,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Households Firms Purchase of Goods and Services Government Financial Institutions Foreign Markets",
+    "marks": 13,
+    "openList": true,
+    "contextNote": "Thirteen labels at a mark each, and they are the whole answer. The two inner flows run between Households and Firms in OPPOSITE directions; taxation, savings and imports leave the flow, and government spending, investment and exports re-enter it."
+   }
+  ],
+  "notes": "What makes it an OPEN economy is the foreign markets box with imports out and exports in. A diagram with only households and firms is the closed two-sector version and forfeits most of the thirteen."
+ },
+ {
+  "id": "econ-2023-hl-q16-a-ii",
+  "topicId": "economics-1-1",
+  "conceptId": "what-free-school-transport-does-to-the-car-market",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 HL Q16(a)(ii)",
+  "questionText": "The Irish Government has provided free School transport for the 2022/2023 school year. Demonstrate, with the use of a fully labelled diagram, the impact this new scheme will possibly have on the market equilibrium for petrol/diesel cars.",
+  "stem": "",
+  "figureKey": "economics-2023-HL-scheme-p35-q16aii-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 23,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Price S1 E1 P1 E2",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three of the four cells — 4, 4 and 7 — sit beside the question and the drawing. Demand shifts LEFT to D2 while supply stays put, so the new equilibrium E2 sits below and to the left of E1."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "• The demand curve will shift to the left from D1 to D2. • Why? Buses are substitute goods for cars. Some households will feel reduced need for a car as school transport has been provided. They will switch to the free transport. • The equilibrium price will decrease from P1 to P2.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The fourth cell, printed beside the bullets. The reason is SUBSTITUTION: free bus transport is a substitute for the car, so some households no longer need one."
+   }
+  ],
+  "notes": "The scheme prints four cells for this part and no stated drawing/prose split; the 15 and the 8 are read off where each cell sits on the page. Both price and quantity FALL here — a leftward demand shift moves them the same way."
  },
  {
   "id": "econ-2023-hl-sa-q1-a",
@@ -19125,6 +19355,72 @@
   "notes": "The ladder only works in order: each line starts from the figure the line above produced. Applying both EU adjustments to GDP rather than to GNP is the slip the printed first step is there to prevent."
  },
  {
+  "id": "econ-2024-hl-sa-q3-a",
+  "topicId": "economics-1-3",
+  "conceptId": "drawing-a-price-ceiling-and-its-excess-demand",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2024 HL Section A Q3(a)",
+  "questionText": "Illustrate, on the diagram below, how the European Commission’s proposal above would alter the diagram.",
+  "stem": "",
+  "figureKey": "economics-2024-HL-scheme-p07-q3a-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Price MWh S Pe P1 (€200) Excess Demand D S1 Qe D1 Quantity of electricity",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "A price ceiling is drawn as a HORIZONTAL line BELOW the equilibrium price — above it would bind on nothing. At that price the quantity supplied (S1) is less than the quantity demanded (D1), and the gap between them is the excess demand."
+   }
+  ],
+  "notes": "A maximum price set above equilibrium changes nothing, which is why the line has to go below Pe. The shortage is the horizontal distance at the capped price, not a vertical one."
+ },
+ {
+  "id": "econ-2024-hl-sa-q5-a",
+  "topicId": "economics-1-0",
+  "conceptId": "why-a-sold-out-concert-shows-a-shortage",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2024 HL Section A Q5(a)",
+  "questionText": "Using the information above, illustrate with the aid of a fully labelled diagram (including the axes) how a shortage of tickets for this concert may arise.",
+  "stem": "",
+  "figureKey": "economics-2024-HL-scheme-p09-q5a-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "€97.10",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The scheme answers this one graphically, and the shape is the point: supply is a VERTICAL line at 80,000 because the venue cannot hold more, whatever the price. The €97.10 the tickets actually sold for is drawn BELOW where demand meets that line, and the gap out to Qx is the shortage."
+   }
+  ],
+  "notes": "A fixed capacity means a perfectly inelastic supply curve. Drawing an ordinary upward-sloping supply curve makes the sell-out impossible to explain, because the market would simply supply more."
+ },
+ {
   "id": "econ-2024-ol-q11-a-ii",
   "topicId": "economics-1-2",
   "conceptId": "effect-of-energy-costs-on-business",
@@ -20971,6 +21267,138 @@
    }
   ],
   "notes": "The second calculation depends on the first, which is why the paper says “using your answer from (i)”. Dividing by the largest single bar rather than by the total is the usual slip, and it gives a plausible-looking percentage."
+ },
+ {
+  "id": "econ-2024-ol-q11-b-ii",
+  "topicId": "economics-2-0",
+  "conceptId": "reading-output-and-price-off-a-kinked-demand-curve",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q11(b)(ii)",
+  "questionText": "Equilibrium occurs at point E on the diagram above. Clearly show and label on the above diagram: the output the firm will produce in equilibrium (use label Q1); the price the firm will charge for its output (use label P1).",
+  "stem": "",
+  "figureKey": "economics-2024-OL-scheme-p15-q11b-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The output the firm will produce in equilibrium (use label Q1) • The price the firm will charge for its output (use label P1)",
+    "marks": 3,
+    "openList": true,
+    "contextNote": "One cell, three marks, covering both labels. Output comes straight down from E; the price comes across from the KINK in the average revenue curve, which sits above E."
+   }
+  ],
+  "notes": "In oligopoly the marginal revenue curve BREAKS under the kink, and E is where marginal cost passes through that gap. The price is not read off E — it is read off the demand curve above it, which is why the kink is drawn where it is."
+ },
+ {
+  "id": "econ-2024-ol-q13-a-i",
+  "topicId": "economics-1-5",
+  "conceptId": "plotting-fixed-and-variable-costs-against-output",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q13(a)(i)",
+  "questionText": "You have been given the data below for a firm. On the graph paper provided, draw and label: the fixed costs for this firm and the variable costs for this firm. Note: you must complete/fill in the quantity axis and the costs axis.",
+  "stem": "",
+  "figureKey": "economics-2024-OL-scheme-p22-q13ai-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "12",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "FC @ 3 VC @ 5",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "The scheme states its own split: the two axes carry 2 marks each, the fixed-cost line 3 and the variable-cost line 5. Filling in the axes is worth a third of the part, and the question says so."
+   }
+  ],
+  "notes": "Fixed costs are FLAT — €600 whatever the output — so that line is horizontal, while variable costs rise from €500 to €800. The two cross just before two units, which is the check that both are plotted right."
+ },
+ {
+  "id": "econ-2024-ol-q15-b-i",
+  "topicId": "economics-1-2",
+  "conceptId": "showing-a-supply-shift-after-a-cost-rise",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q15(b)(i)",
+  "questionText": "As a result, the increase in fertiliser prices has affected the supply of Irish farm output. Show the effect of this development on the diagram above.",
+  "stem": "",
+  "figureKey": "economics-2024-OL-scheme-p34-q15b-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 @ 5",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "S2 Price S1 E2 Pe2 E1 Pe1 D Qe2 Qe1 Quantity",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Three drawn things at five marks each: the new supply curve, the new equilibrium price and the new equilibrium quantity. Dearer inputs mean LESS supplied at every price, so S shifts LEFT — to S2 above S1."
+   }
+  ],
+  "notes": "A leftward supply shift raises price and cuts quantity at the same time. Students who shift supply right have read the cost rise as a boost to output."
+ },
+ {
+  "id": "econ-2024-ol-q15-b-ii",
+  "topicId": "economics-1-2",
+  "conceptId": "explaining-the-fertiliser-supply-shift",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q15(b)(ii)",
+  "questionText": "Explain your answer.",
+  "stem": "",
+  "figureKey": "economics-2024-OL-scheme-p34-q15b-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Explanation: • As the cost of fertiliser has risen many farmers have had to reduce its usage to cut expenses. • The fall in fertiliser use has resulted in lower crop yields on farms. • Consequently, the supply curve shifts left from S1 to S2 to reflect the fall in farm output. • There is now a new market equilibrium causing a new higher equilibrium price (Pe2) and • a new lower equilibrium quantity (Qe2).",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "The scheme wants the CHAIN, not the conclusion: dearer fertiliser, less used, lower yields, so supply shifts left, so a higher price and a smaller quantity. Each link is a bullet."
+   }
+  ],
+  "notes": "The explanation has to reach the market outcome, not stop at the farm. Naming the cost rise without saying what it does to equilibrium leaves most of the nine marks behind."
  },
  {
   "id": "econ-2024-ol-sa-q1-i",
@@ -23951,6 +24379,39 @@
   "notes": "The chart already plots percentage changes, so the answer is a percentage change OF a percentage change — 2.7 points of movement is a 36.48% increase, and quoting 2.7% is the trap the question is built on."
  },
  {
+  "id": "econ-2025-hl-q14-b-i",
+  "topicId": "economics-1-0",
+  "conceptId": "plotting-demand-and-supply-and-finding-equilibrium",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q14(b)(i)",
+  "questionText": "Using the data above, complete on the graph paper provided below: the market demand curve for Scentastic; the market supply curve for Scentastic; clearly label the point of equilibrium as E; show the equilibrium price (Pe) and the equilibrium quantity (Qe) on the graph. Note: You must complete/fill in the price axis and the quantity axis.",
+  "stem": "",
+  "figureKey": "economics-2025-HL-scheme-p51-q14bi-graph",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "17",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 17,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "€ Pe D:6 €1.50 S:6 Equil D Pe €1.00 Qe €0.50 10,000 20,000 30,000 40,000 50,000 Quantity Qe",
+    "marks": 17,
+    "openList": true,
+    "contextNote": "The scheme writes its split into the margin: 2 for the axes, 6 for the demand curve, 6 for the supply curve and 3 for the equilibrium. Filling in the two axes is worth marks on its own, and the question says so."
+   }
+  ],
+  "notes": "The two curves cross at €2.00 and 30,000 units — the one row of the schedule where quantity demanded equals quantity supplied. If the plotted crossing is anywhere else, one of the curves is wrong."
+ },
+ {
   "id": "econ-2025-hl-sa-q1-a-for",
   "topicId": "economics-3-5",
   "conceptId": "the-case-for-hosting-a-major-event",
@@ -26787,6 +27248,121 @@
    }
   ],
   "notes": "The scheme sets this as a fraction, so the flat text reads “0.2 + 0.3 = 0.5 = 2” and the division disappears. Bigger leakages mean a SMALLER multiplier, which is the relationship the arithmetic is testing."
+ },
+ {
+  "id": "econ-2025-ol-q11-b-ii",
+  "topicId": "economics-2-0",
+  "conceptId": "marking-output-and-price-in-perfect-competition",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 OL Q11(b)(ii)",
+  "questionText": "Equilibrium occurs at point E on the diagram above. Clearly show and label on the above diagram: the output the firm will produce in equilibrium (use label Q1); the price the firm will charge for its output (use label P1).",
+  "stem": "",
+  "figureKey": "economics-2025-OL-scheme-p18-q11b-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The output the firm will produce in equilibrium (use label Q1)",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The scheme prints ONE cell of 4 for both labels together — it sits between the two bullets. Output drops from E to the quantity axis; the price is the horizontal D = AR = MR line, because a firm in perfect competition takes the market price."
+   }
+  ],
+  "notes": "E is where MC cuts the price line, and in long-run equilibrium that is also the lowest point of AC. Both readings come off the same point, so getting E wrong costs the whole part."
+ },
+ {
+  "id": "econ-2025-ol-q13-b-i",
+  "topicId": "economics-1-5",
+  "conceptId": "plotting-average-marginal-cost-and-marginal-revenue",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 OL Q13(b)(i)",
+  "questionText": "You have been given the data below for a firm. On the graph paper provided below, draw and label: the average costs (AC) for this firm; the marginal costs (MC) for this firm; the marginal revenue (MR) for this firm. Note: You must complete/fill in the quantity axis and the costs axis.",
+  "stem": "",
+  "figureKey": "economics-2025-OL-scheme-p25-q13bi-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "17",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 17,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "AC1 MC:5 MC:5 MR: 3 200 MR1 Cost 150 1 2 3 4 Quantity",
+    "marks": 17,
+    "openList": true,
+    "contextNote": "The scheme prints its split beside the curves: 2 marks per axis, 5 for each cost curve and 3 for marginal revenue. Marginal revenue is FLAT at €200 — the firm gets the same for every unit — while AC falls then rises."
+   }
+  ],
+  "notes": "All three lines meet at €200 where output is three units, which is the profit-maximising point the next parts turn on. If they do not meet there, one of the three is plotted wrong."
+ },
+ {
+  "id": "econ-2025-ol-q15-b-i",
+  "topicId": "economics-1-1",
+  "conceptId": "showing-a-demand-shift-from-population-growth",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 OL Q15(b)(i)",
+  "questionText": "The forecasted increase in population is expected to affect the demand for housing. Show the effect of this development on the diagram above.",
+  "stem": "",
+  "figureKey": "economics-2025-OL-scheme-p34-q15b-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8+4+2",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "• Demand curve shifts to the right (D1).",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Eight marks — more than half the part — for the shift itself. More people means more demand at EVERY price, so the whole curve moves right to D1."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "• Increase in equilibrium quantity (Q1).",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Four marks for the new quantity, read where D1 crosses the unchanged supply curve."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "• Increase in equilibrium price (P1).",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Two marks for the new price. Supply has not moved, so the new equilibrium slides UP the supply curve and both price and quantity rise together."
+   }
+  ],
+  "notes": "The scheme pays 8, 4 and 2 in that order, so the shift is worth four times the price label. Drawing D1 without marking the new equilibrium leaves six marks on the table."
  },
  {
   "id": "econ-2025-ol-sa-q1-ii",

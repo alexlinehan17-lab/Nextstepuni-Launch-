@@ -328,4 +328,54 @@ P.cards.append(card(
     section='A', tariff_kind='fixed',
     figure_key='economics-2022-HL-paper-p03-art'))
 
+# ── The price-taker pair ───────────────────────────────────────────────────
+# The scheme prints three cells stacked at the head of Q6(a) — 4, 2, 2 — over
+# four answer components: two diagrams (The Market, The Firm) and two
+# explanations. The two explanations take a 2 each. The 4 covers the two
+# printed diagrams jointly, and is halved between them: a printed total over a
+# printed count, which is the one case where splitting is allowed here.
+
+P.cards.append(card(
+    'econ-2022-hl-sa-q6-a-i', 2022, 'higher', 'economics-2-0',
+    'what-entry-does-to-the-market-equilibrium', '2022 HL Section A Q6(a)(i)',
+    'Firms in Perfect Competition are said to be Price-Takers. On the diagrams below label and '
+    'illustrate what happens to the market equilibrium as more firms enter the market. Explain '
+    'each of your diagrams below.',
+    'fixed', 4,
+    [point('r-1', as_option(block(BODY, 'The Market The Firm Price S1 Price S2',
+                                  'Explanation for the market')), 2,
+           'Half of the scheme\u2019s 4 for the two printed diagrams. On the MARKET diagram, '
+           'entry shifts SUPPLY right from S1 to S2 \u2014 demand does not move.'),
+     point('r-2', as_option(block(BODY, 'Explanation for the market: As firms outside the industry',
+                                  'Explanation for the firm')), 2,
+           'Two marks for the words. The chain is supernormal profits, no barriers to entry, '
+           'more firms, supply right, quantity up from Q1 to Q2 and price down from P1 to P2.')],
+    'Entry is attracted by supernormal profit and ends by competing it away. It is SUPPLY that '
+    'shifts \u2014 more firms means more of the good at every price, not more buyers.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2022-HL-scheme-p10-q6a-diagrams'))
+
+P.cards.append(card(
+    'econ-2022-hl-sa-q6-a-ii', 2022, 'higher', 'economics-2-0',
+    'why-the-individual-firms-price-falls-as-firms-enter', '2022 HL Section A Q6(a)(ii)',
+    'Firms in Perfect Competition are said to be Price-Takers. On the diagrams below label and '
+    'illustrate what happens to the individual firm\u2019s price as more firms enter the '
+    'market. Explain each of your diagrams below.',
+    'fixed', 4,
+    [point('r-1', as_option(block(BODY, 'P2 D1 D2=AR2=MR2 Q1 Q2 Quantity Quantity',
+                                  'Explanation for the market')), 2,
+           'The other half of the scheme\u2019s 4 for the two printed diagrams. On the FIRM\u2019s '
+           'diagram the price line simply drops, from D1 = AR1 = MR1 down to D2 = AR2 = MR2 '
+           '\u2014 it stays HORIZONTAL at both levels.'),
+     point('r-2', as_option(block(BODY, 'Explanation for the firm: As the individual firm is described',
+                                  '(b) Answer either (b) or (c)')), 2,
+           'Two marks for the words, and the phrase that earns them is PRICE-TAKER: the firm '
+           'accepts whatever the industry sets, so its price falls from P1 to P2 because the '
+           'market price did.')],
+    'The firm\u2019s demand curve is horizontal because it can sell any amount at the going '
+    'price and nothing above it. Sloping it downward turns a perfect competitor into a '
+    'monopolist.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2022-HL-scheme-p10-q6a-diagrams'))
+
 P.emit()

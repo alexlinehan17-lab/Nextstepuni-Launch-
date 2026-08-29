@@ -310,4 +310,37 @@ P.cards.append(card(
     section='A', tariff_kind='fixed',
     figure_key='economics-2024-HL-scheme-p14-q10aii-working'))
 
+P.cards.append(card(
+    'econ-2024-hl-sa-q3-a', 2024, 'higher', 'economics-1-3',
+    'drawing-a-price-ceiling-and-its-excess-demand', '2024 HL Section A Q3(a)',
+    'Illustrate, on the diagram below, how the European Commission\u2019s proposal above would '
+    'alter the diagram.',
+    '6', 6,
+    [point('r-1', as_option(block(BODY, 'Price MWh S Pe P1 (\u20ac200) Excess Demand',
+                                  '(b) Explain your understanding')), 6,
+           'A price ceiling is drawn as a HORIZONTAL line BELOW the equilibrium price \u2014 '
+           'above it would bind on nothing. At that price the quantity supplied (S1) is less than '
+           'the quantity demanded (D1), and the gap between them is the excess demand.')],
+    'A maximum price set above equilibrium changes nothing, which is why the line has to go '
+    'below Pe. The shortage is the horizontal distance at the capped price, not a vertical one.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2024-HL-scheme-p07-q3a-diagram'))
+
+P.cards.append(card(
+    'econ-2024-hl-sa-q5-a', 2024, 'higher', 'economics-1-0',
+    'why-a-sold-out-concert-shows-a-shortage', '2024 HL Section A Q5(a)',
+    'Using the information above, illustrate with the aid of a fully labelled diagram '
+    '(including the axes) how a shortage of tickets for this concert may arise.',
+    '8', 8,
+    [point('r-1', as_option(block(BODY, '\u20ac97.10', '(b) Explain your diagram above', 1)), 8,
+           'The scheme answers this one graphically, and the shape is the point: supply is a '
+           'VERTICAL line at 80,000 because the venue cannot hold more, whatever the price. The '
+           '\u20ac97.10 the tickets actually sold for is drawn BELOW where demand meets that '
+           'line, and the gap out to Qx is the shortage.')],
+    'A fixed capacity means a perfectly inelastic supply curve. Drawing an ordinary upward-'
+    'sloping supply curve makes the sell-out impossible to explain, because the market would '
+    'simply supply more.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2024-HL-scheme-p09-q5a-diagram'))
+
 P.emit()

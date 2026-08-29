@@ -40,29 +40,9 @@
   "evidence": "Scheme p.5: 'It is elastic (the PED is greater than 1 in absolute terms).' ⟨1 @ 1⟩ — unanswerable without the −4.71 worked in part (i)."
  },
  {
-  "ref": "2022 HL Q11(b)(i)",
-  "reason": "the explanation beside a diagram, with the tariff covering both (recorded EXCLUDED_TEXT class)",
-  "evidence": "Paper: 'Explain, with the use of a fully labelled diagram how the equilibrium price of land is determined.' Scheme prints the diagram with 'The supply of land is fixed in quantity' welded beside it — recorded in econ_excluded.py EXCLUDED_TEXT."
- },
- {
-  "ref": "2022 HL Q14(b)(ii)",
-  "reason": "a graph to be drawn; the scheme's response is the plotted cost figures with per-curve marks, off the (b)(i) table",
-  "evidence": "\"Using the figures obtained in the table draw and label: the Fixed Costs, Variable Costs, and Total Costs… Cost of Production 600,000 500,000 505,000 TC:5 450,000 400,000 400,000 405,000 VC:5 … 100,000 FC: 2 … Axes 4\""
- },
- {
   "ref": "2022 HL Section A Q4(c)",
   "reason": "the either/or slot prints one tariff ⟨3+2+2⟩, which maps onto (b)'s three justifications; no split is stated across (c)'s two reasons, so carding it would invent a tariff",
   "evidence": "\"Answer either (b) or (c) ⟨3+2+2⟩ (b) In the box below justify each of your choices… [three bullets] OR (c) Outline two reasons why inflows of foreign direct investment…\" — the scheme PDF's marks column prints 3+2+2 once for the pair and nothing beside (c)."
- },
- {
-  "ref": "2022 HL Section A Q6(a)(i)",
-  "reason": "the explanation beside a diagram, with the tariff covering both — the printed cells sit against the question head with no split between the drawn answer and the explanation",
-  "evidence": "Scheme PDF p10 marks column prints only \"4 / 2 / 2\" beside the Q6 head lines; the answer is the completed Market/Firm diagram pair plus \"Explanation for the market: As firms outside the industry become aware of the SNPs… supply will shift to the right from S1 to S2…\""
- },
- {
-  "ref": "2022 HL Section A Q6(a)(ii)",
-  "reason": "same part-pair as Q6(a)(i): a drawing whose explanation is marked with the diagram under the unsplit 4/2/2",
-  "evidence": "\"Explanation for the firm: As the individual firm is described as a price-taker they must accept the price established by the industry, thus their price also decreases from P1 to P2.\" — no cell of its own in the marks column."
  },
  {
   "ref": "2022 HL Section A Q6(b)",
@@ -90,19 +70,9 @@
   "evidence": "Complete the table below to show your understanding of the factors of production used in the production of yogurt. Some of the information has been completed. ... ⟨24⟩ ⟨4 x 6⟩ ⟨(4+2)⟩ 1st x 4 2nd x 2"
  },
  {
-  "ref": "2023 HL Q13(a)(i)",
-  "reason": "labels to be placed on a drawn diagram; the credit is the thirteen labelled components of the circular-flow drawing itself, no separable wording (recorded diagram-labels class)",
-  "evidence": "Scheme p.23: 'Draw a fully labelled diagram showing the Circular Flow of Income... ⟨13 @ 1⟩ Households Firms Purchase of Goods and Services Government Financial Institutions Foreign Markets' — the labels annotate the scheme's own drawing; econ_parts finds no response lines."
- },
- {
   "ref": "2023 HL Q16(a)(i)",
-  "reason": "the scheme attributes no tariff to this part: on scheme p.35 the marks column prints 4, 4, 7, 8, 5 and all of 4/4/7/8 sit between (ii)'s marker (y=170) and (iii)'s (y=566) with nothing beside (i)'s two definitions (y=97–127); (a)'s block total 28 minus (iii)'s 5 leaves no stated split between (i) an",
+  "reason": "the scheme attributes no tariff to this part. Read at SPAN level on scheme p.35 the marks column is EMPTY beside (i) — its two definitions sit at y=63-141 and the first cell is a 4 at y=180, level with (ii)’s opening line; the four cells 4/4/7/8 all fall inside (ii) (y=170-527) and the 5 belongs to (iii) at y=661. An earlier version of this reason cited \"(a)’s block total 28\"; that 28 is the PAPER PAGE reference the scheme prints in its left margin at x=37, not a mark total, and the arithmetic built on it was wrong.",
   "evidence": "(i) Distinguish between the economic terms individual demand and market demand. 28 • Individual Demand refers to the quantity of a good or service an individual consumer is willing to purchase at various prices. • Market Demand refers to … [marks column beside this part: none]"
- },
- {
-  "ref": "2023 HL Q16(a)(ii)",
-  "reason": "already recorded in econ_excluded.py: 'the explanation beside a diagram, with the tariff covering both' — cells read 4/4/7/8 across the part with no stated drawing/prose split",
-  "evidence": "Demonstrate, with the use of a fully labelled diagram, the impact this new scheme will possibly have on the market equilibrium for petrol/diesel cars. … • The demand curve will shift to the left from D1 to D2. … marks column: 4 4 7 8"
  },
  {
   "ref": "2023 HL Section A Q10",
@@ -120,39 +90,9 @@
   "evidence": "Paper: 'use the information above to calculate part (ii). Part (i) has been completed for you.' Scheme p.14: '(i) = Gross National Product (GNP) at Current Market Prices Ans: €325 bn'."
  },
  {
-  "ref": "2024 HL Section A Q3(a)",
-  "reason": "A drawing made on the diagram printed with it; the scheme prints only the altered model diagram under a block ⟨6⟩ with no itemised creditable components.",
-  "evidence": "Scheme p.7: 'Illustrate, on the diagram below, how the European Commission's proposal above would alter the diagram. ⟨6⟩' followed only by the drawn model: 'Price MWh S / Pe / P1 (€200) / Excess Demand / D / S1 Qe D1 Quantity of electricity'."
- },
- {
-  "ref": "2024 HL Section A Q5(a)",
-  "reason": "The marks are for a drawing; the scheme prints only the model diagram under a block ⟨8⟩, with no itemised creditable components to card.",
-  "evidence": "Scheme p.9: 'Using the information above, illustrate with the aid of a fully labelled diagram how a shortage of tickets for this concert may arise. ⟨8⟩' — the answer is the drawn diagram; the only text the extractor reads off it is '€97.10'."
- },
- {
-  "ref": "2024 OL Q11(b)(ii)",
-  "reason": "Already recorded in econ_excluded.py: labels to be placed on a diagram; no wording to show.",
-  "evidence": "Scheme p15: '(ii) Equilibrium occurs at point E on the diagram above. ⟨3⟩ Clearly show and label on the above diagram: • The output the firm will produce in equilibrium (use label Q1) • The price the firm will charge for its output (use label P1)'."
- },
- {
-  "ref": "2024 OL Q13(a)(i)",
-  "reason": "Already recorded in econ_excluded.py: a graph to be drawn on the answer-book graph paper; the responses are its axis and line values, welded across the data table.",
-  "evidence": "Scheme p22: 'On the graph paper provided, draw and label: • the fixed costs … • the variable costs … ⟨12⟩ Axes: ⟨2 @ 2⟩ FC @ 3 VC @ 5' over the table 'Fixed Costs in € 600 600 600 / Variable Costs in € 500 600 700 ⟨800⟩'."
- },
- {
   "ref": "2024 OL Q15(a)",
   "reason": "A table completion — the factor names and explanations are welded across the Name/Explanation/Example columns in the flattened text, so no contiguous slice exists (class of 2023 HL Section A Q4(a), 2022 OL Q14(a)(i)).",
   "evidence": "Scheme p33: '⟨20:⟩ ⟨3 @ 5⟩ ⟨1 @ 3⟩ ⟨1 @ 2⟩ Complete the table by either naming or explaining each factor of production' — flattening to 'Name of Explanation of Example Factor of Production Factor of Production and Farm Machinery Capital … The one taking a risk in setting Farm Owners Enterprise up the farm in return for profit.'"
- },
- {
-  "ref": "2024 OL Q15(b)(i)",
-  "reason": "A supply-curve shift drawn on the diagram printed with the question; the ⟨3 @ 5⟩ names no written components, so there is no wording to show and no split the scheme states.",
-  "evidence": "Scheme p34: '⟨15⟩ ⟨3 @ 5⟩ … (i) As a result, the increase in fertiliser prices has affected the supply of Irish farm output. Show the effect of this development on the diagram above.' — the answer is the drawn S1→S2 shift with E2/Pe2/Qe2 on the printed diagram."
- },
- {
-  "ref": "2024 OL Q15(b)(ii)",
-  "reason": "Already recorded in econ_excluded.py (and EXCLUDED_TEXT): the explanation beside a diagram — five chained bullets describing the drawn shift, with no stated split of the ⟨9⟩ across them.",
-  "evidence": "Scheme p34: '(ii) Explain your answer. ⟨9⟩ • As the cost of fertiliser has risen many farmers have had to reduce its usage … • Consequently, the supply curve shifts left from S1 to S2 … • a new higher equilibrium price (Pe2) and • a new lower equilibrium quantity (Qe2).'"
  },
  {
   "ref": "2024 OL Section A Q10",
@@ -163,25 +103,5 @@
   "ref": "2024 OL Section A Q2(a)",
   "reason": "Already recorded in econ_excluded.py: answered by ticking a box in a table, with the explanation half of a 1st@8/2nd@4 tariff welded to the tick.",
   "evidence": "Scheme p6: 'Indicate using a tick (✔) in the table below if the above measure is an example of a company using price competition or non-price competition. Explain your answer. 1st @ 8 / 2nd @ 4 … Non-price competition ✔ Explanation: Lidl is competing with other supermarkets to increase its sales / market share by means other than changing its prices for all its customers.'"
- },
- {
-  "ref": "2025 HL Q14(b)(i)",
-  "reason": "a graph to be completed on graph paper; the responses are its axis and equilibrium labels — already recorded in econ_excluded.py",
-  "evidence": "complete on the graph paper provided below: ⟨17:⟩ • The market demand curve for Scentastic. ⟨17 x 1⟩ • The market supply curve … Complete Axes: ⟨2⟩ … D:6 S:6 Equil"
- },
- {
-  "ref": "2025 OL Q11(b)(ii)",
-  "reason": "labels to be placed on a diagram; no wording to show (same class as 2022/2023/2024 OL Q11(b)(ii), all registered)",
-  "evidence": "Scheme p16: '(ii) Equilibrium occurs at point E on the diagram above. Clearly show and label on the above diagram: • The output the firm will produce in equilibrium (use label Q1) ⟨4⟩ • The price the firm will charge for its output (use label P1).' — the only answer is P1/Q1 drawn on the printed diagram; the scheme itemises no prose components."
- },
- {
-  "ref": "2025 OL Q13(b)(i)",
-  "reason": "already registered in econ_excluded: a graph to be drawn; the responses are its axis values",
-  "evidence": "Scheme p23: 'On the graph paper provided below, draw and label: • the average costs (AC)… • the marginal costs (MC)… • the marginal revenue (MR)…' answered by a drawn chart marked '⟨17⟩ … Axes ⟨2 @ 2⟩ … MC:5 MC:5 MR: 3' — the creditable components are the plotted values, not wording."
- },
- {
-  "ref": "2025 OL Q15(b)(i)",
-  "reason": "already registered (econ_excluded EXCLUDED_TEXT 'Demand curve shifts to the right (D1)'): labels to be placed on a diagram; no wording to show",
-  "evidence": "Scheme p33: ⟨14⟩ ⟨8+4+2⟩ '• Demand curve shifts to the right (D1). • Increase in equilibrium quantity (Q1). • Increase in equilibrium price (P1).' — the three credited components are marks drawn on the printed supply-and-demand diagram."
  }
 ]

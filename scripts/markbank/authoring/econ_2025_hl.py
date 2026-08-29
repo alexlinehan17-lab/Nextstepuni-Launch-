@@ -691,4 +691,23 @@ P.cards.append(card(
     tariff_kind='fixed',
     figure_key='economics-2025-HL-scheme-p58-q15bi-working'))
 
+P.cards.append(card(
+    'econ-2025-hl-q14-b-i', 2025, 'higher', 'economics-1-0',
+    'plotting-demand-and-supply-and-finding-equilibrium', '2025 HL Q14(b)(i)',
+    'Using the data above, complete on the graph paper provided below: the market demand curve '
+    'for Scentastic; the market supply curve for Scentastic; clearly label the point of '
+    'equilibrium as E; show the equilibrium price (Pe) and the equilibrium quantity (Qe) on the '
+    'graph. Note: You must complete/fill in the price axis and the quantity axis.',
+    '17', 17,
+    [point('r-1', as_option(block(_MIXED, '\u20ac Pe D:6 \u20ac1.50 S:6 Equil D Pe',
+                                  '50 | P a g e')), 17,
+           'The scheme writes its split into the margin: 2 for the axes, 6 for the demand curve, '
+           '6 for the supply curve and 3 for the equilibrium. Filling in the two axes is worth '
+           'marks on its own, and the question says so.')],
+    'The two curves cross at \u20ac2.00 and 30,000 units \u2014 the one row of the schedule '
+    'where quantity demanded equals quantity supplied. If the plotted crossing is anywhere else, '
+    'one of the curves is wrong.',
+    tariff_kind='fixed',
+    figure_key='economics-2025-HL-scheme-p51-q14bi-graph'))
+
 P.emit()

@@ -640,4 +640,41 @@ P.cards.append(card(
     tariff_kind='fixed',
     figure_key='economics-2023-HL-paper-p31-art'))
 
+P.cards.append(card(
+    'econ-2023-hl-q13-a-i', 2023, 'higher', 'economics-3-0',
+    'drawing-the-circular-flow-for-an-open-economy', '2023 HL Q13(a)(i)',
+    'Draw a fully labelled diagram showing the Circular Flow of Income for an open economy.',
+    '13 @ 1', 13,
+    [point('r-1', as_option(block(BODY, 'Households Firms Purchase of Goods and Services',
+                                  '(ii) Explain the terms injections')), 13,
+           'Thirteen labels at a mark each, and they are the whole answer. The two inner flows '
+           'run between Households and Firms in OPPOSITE directions; taxation, savings and '
+           'imports leave the flow, and government spending, investment and exports re-enter it.')],
+    'What makes it an OPEN economy is the foreign markets box with imports out and exports in. A '
+    'diagram with only households and firms is the closed two-sector version and forfeits most '
+    'of the thirteen.',
+    tariff_kind='fixed',
+    figure_key='economics-2023-HL-scheme-p23-q13ai-circular-flow'))
+
+P.cards.append(card(
+    'econ-2023-hl-q16-a-ii', 2023, 'higher', 'economics-1-1',
+    'what-free-school-transport-does-to-the-car-market', '2023 HL Q16(a)(ii)',
+    'The Irish Government has provided free School transport for the 2022/2023 school year. '
+    'Demonstrate, with the use of a fully labelled diagram, the impact this new scheme will '
+    'possibly have on the market equilibrium for petrol/diesel cars.',
+    'fixed', 23,
+    [point('r-1', as_option(block(BODY, 'Price S1 E1 P1 E2', '\u27e87\u27e9')), 15,
+           'Three of the four cells \u2014 4, 4 and 7 \u2014 sit beside the question and the '
+           'drawing. Demand shifts LEFT to D2 while supply stays put, so the new equilibrium E2 '
+           'sits below and to the left of E1.'),
+     point('r-2', as_option(block(BODY, '\u2022 The demand curve will shift to the left from D1 to D2',
+                                  '\u27e88\u27e9')), 8,
+           'The fourth cell, printed beside the bullets. The reason is SUBSTITUTION: free bus '
+           'transport is a substitute for the car, so some households no longer need one.')],
+    'The scheme prints four cells for this part and no stated drawing/prose split; the 15 and the '
+    '8 are read off where each cell sits on the page. Both price and quantity FALL here \u2014 a '
+    'leftward demand shift moves them the same way.',
+    tariff_kind='fixed',
+    figure_key='economics-2023-HL-scheme-p35-q16aii-diagram'))
+
 P.emit()

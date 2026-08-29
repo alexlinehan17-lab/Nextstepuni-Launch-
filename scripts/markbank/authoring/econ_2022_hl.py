@@ -649,4 +649,41 @@ P.cards.append(card(
     tariff_kind='fixed',
     figure_key='economics-2022-HL-scheme-p28-q14bi-working'))
 
+P.cards.append(card(
+    'econ-2022-hl-q11-b-i', 2022, 'higher', 'economics-2-1',
+    'how-the-equilibrium-price-of-land-is-determined', '2022 HL Q11(b)(i)',
+    'Explain, with the use of a fully labelled diagram how the equilibrium price of land is '
+    'determined.',
+    'fixed', 11,
+    [point('r-1', as_option(block(BODY, 'D QE Quantity The supply of land is fixed in quantity at S',
+                                  'The equilibrium price PE is established')), 6,
+           'Six marks for the diagram. The supply of land is VERTICAL \u2014 fixed in quantity, '
+           'so no price will bring more of it into existence. Everything else about the diagram '
+           'follows from that one line.'),
+     point('r-2', as_option(block(BODY, 'The equilibrium price PE is established where D is equal to S',
+                                  '(ii) Other than land being fixed in supply')), 5,
+           'Five marks for the explanation. With supply fixed, the equilibrium price is set '
+           'entirely by DEMAND \u2014 the price is demand-determined, which is what makes land '
+           'different from the other factors.')],
+    'A vertical supply curve is the whole point. Drawing land\u2019s supply as an ordinary '
+    'upward slope makes the diagram say the opposite of what the question is about.',
+    tariff_kind='fixed',
+    figure_key='economics-2022-HL-scheme-p15-q11bi-diagram'))
+
+P.cards.append(card(
+    'econ-2022-hl-q14-b-ii', 2022, 'higher', 'economics-1-5',
+    'plotting-fixed-variable-and-total-costs', '2022 HL Q14(b)(ii)',
+    'Using the figures obtained in the table above draw and label: the Fixed Costs, Variable '
+    'Costs, and Total Costs on the graph paper below.',
+    'fixed', 16,
+    [point('r-1', as_option(block(BODY, 'Cost of Production 600,000',
+                                  '(iii) If the firm earns \u20ac55,000')), 16,
+           'The scheme writes its split onto the graph: TC:5, VC:5, FC:2 and Axes 4. Total cost '
+           'is the SUM of the other two, so the total-cost line runs exactly \u20ac100,000 above '
+           'the variable-cost line at every output \u2014 that gap is the check.')],
+    'Fixed cost is flat at \u20ac100,000 whatever the output. The three figures worked in (b)(i) '
+    'are the ones plotted here, so an error there reappears as a kink in this graph.',
+    tariff_kind='fixed',
+    figure_key='economics-2022-HL-scheme-p28-q14bii-graph'))
+
 P.emit()

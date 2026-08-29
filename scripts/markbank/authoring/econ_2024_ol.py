@@ -596,4 +596,69 @@ P.cards.append(card(
     tariff_kind='fixed',
     figure_key='economics-2024-OL-paper-p19-i0'))
 
+P.cards.append(card(
+    'econ-2024-ol-q11-b-ii', 2024, 'ordinary', 'economics-2-0',
+    'reading-output-and-price-off-a-kinked-demand-curve', '2024 OL Q11(b)(ii)',
+    'Equilibrium occurs at point E on the diagram above. Clearly show and label on the above '
+    'diagram: the output the firm will produce in equilibrium (use label Q1); the price the '
+    'firm will charge for its output (use label P1).',
+    '3', 3,
+    [point('r-1', as_option(block(BODY, 'The output the firm will produce in equilibrium (use label Q1)',
+                                  '(iii) The electricity market')), 3,
+           'One cell, three marks, covering both labels. Output comes straight down from E; the '
+           'price comes across from the KINK in the average revenue curve, which sits above E.')],
+    'In oligopoly the marginal revenue curve BREAKS under the kink, and E is where marginal cost '
+    'passes through that gap. The price is not read off E \u2014 it is read off the demand curve '
+    'above it, which is why the kink is drawn where it is.',
+    tariff_kind='fixed',
+    figure_key='economics-2024-OL-scheme-p15-q11b-diagram'))
+
+P.cards.append(card(
+    'econ-2024-ol-q13-a-i', 2024, 'ordinary', 'economics-1-5',
+    'plotting-fixed-and-variable-costs-against-output', '2024 OL Q13(a)(i)',
+    'You have been given the data below for a firm. On the graph paper provided, draw and '
+    'label: the fixed costs for this firm and the variable costs for this firm. Note: you must '
+    'complete/fill in the quantity axis and the costs axis.',
+    '12', 12,
+    [point('r-1', as_option(block(BODY, 'FC @ 3 VC @ 5', '(ii) Explain the difference')), 12,
+           'The scheme states its own split: the two axes carry 2 marks each, the fixed-cost '
+           'line 3 and the variable-cost line 5. Filling in the axes is worth a third of the '
+           'part, and the question says so.')],
+    'Fixed costs are FLAT \u2014 \u20ac600 whatever the output \u2014 so that line is '
+    'horizontal, while variable costs rise from \u20ac500 to \u20ac800. The two cross just '
+    'before two units, which is the check that both are plotted right.',
+    tariff_kind='fixed',
+    figure_key='economics-2024-OL-scheme-p22-q13ai-diagram'))
+
+P.cards.append(card(
+    'econ-2024-ol-q15-b-i', 2024, 'ordinary', 'economics-1-2',
+    'showing-a-supply-shift-after-a-cost-rise', '2024 OL Q15(b)(i)',
+    'As a result, the increase in fertiliser prices has affected the supply of Irish farm '
+    'output. Show the effect of this development on the diagram above.',
+    '3 @ 5', 15,
+    [point('r-1', as_option(block(BODY, 'S2 Price S1 E2 Pe2 E1 Pe1 D Qe2 Qe1 Quantity',
+                                  'The price of fertiliser in Ireland increased')), 15,
+           'Three drawn things at five marks each: the new supply curve, the new equilibrium '
+           'price and the new equilibrium quantity. Dearer inputs mean LESS supplied at every '
+           'price, so S shifts LEFT \u2014 to S2 above S1.')],
+    'A leftward supply shift raises price and cuts quantity at the same time. Students who shift '
+    'supply right have read the cost rise as a boost to output.',
+    tariff_kind='fixed',
+    figure_key='economics-2024-OL-scheme-p34-q15b-diagram'))
+
+P.cards.append(card(
+    'econ-2024-ol-q15-b-ii', 2024, 'ordinary', 'economics-1-2',
+    'explaining-the-fertiliser-supply-shift', '2024 OL Q15(b)(ii)',
+    'Explain your answer.',
+    '9', 9,
+    [point('r-1', as_option(block(BODY, 'Explanation: \u2022 As the cost of fertiliser has risen',
+                                  '(iii) Almond milk can be classed')), 9,
+           'The scheme wants the CHAIN, not the conclusion: dearer fertiliser, less used, lower '
+           'yields, so supply shifts left, so a higher price and a smaller quantity. Each link '
+           'is a bullet.')],
+    'The explanation has to reach the market outcome, not stop at the farm. Naming the cost rise '
+    'without saying what it does to equilibrium leaves most of the nine marks behind.',
+    tariff_kind='fixed',
+    figure_key='economics-2024-OL-scheme-p34-q15b-diagram'))
+
 emit(cards + P.cards)

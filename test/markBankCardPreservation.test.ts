@@ -65,6 +65,10 @@ const decks = [
    * (reconcile.py) now reads 100.0%: 498 covered + 160 excluded-with-evidence
    * = all 658 asks the 2021-2025 papers print. Nothing removed; all prior ids
    * remain. */
+  /* 2026-08-29 (twentieth wave): economics 368/299 -> 377/306. The rest of the
+   * DIAGRAM bucket, Higher and Ordinary. Sixteen more model diagrams cropped
+   * from the schemes and bound as solution figures. Coverage 621/658 ->
+   * 637/658, exclusions 37 -> 21. Nothing removed. */
   /* 2026-08-29 (nineteenth wave): economics 368/290 -> 368/299. The first nine
    * DIAGRAM asks, all Ordinary Level. The scheme answers these graphically, so
    * the crop of its completed diagram is the card's solution figure and the row
@@ -184,8 +188,8 @@ const decks = [
    * The -trend suffix on the first is forced: econ-2021-hl-q16-a-i is taken by
    * a card whose citation econ_refs.py corrects to Q16(c)(i), and an id is
    * never renamed because it keys a student's review history. */
-  ['economics:higher', ECON_HIGHER, 368, '9c4d21faa427adf75c3bbae1cc9467250387a2fa1a23c947da3936ccbf4ba8db'],
-  ['economics:ordinary', ECON_ORDINARY, 299, '77c4f64c31d0d6f768780c411e714ce9418ace8f5499db653f2f6d8f32f279ed'],
+  ['economics:higher', ECON_HIGHER, 377, '3267511af9602baf19592c97be46d5bdcae192bf9110c0fc3c3c5d49cc8b0495'],
+  ['economics:ordinary', ECON_ORDINARY, 306, 'fa85b3197538de84b0abaa7a3ee6d97e1ffc633339cea8227091d9537ed609be'],
   /* 2026-08-23: the two newest subjects had shipped with NO identity baseline
    * at all — found by the ratchet-soundness review, which means every earlier
    * count in this file was guarding seven decks while two rode along
@@ -213,6 +217,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7339);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7355);
   });
 });
