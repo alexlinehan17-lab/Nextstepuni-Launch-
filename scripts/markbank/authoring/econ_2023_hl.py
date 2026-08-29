@@ -542,4 +542,86 @@ P.cards.append(card(
     'output, and a flat demand curve at the market price.',
     tariff_kind='fixed'))
 
+# ── Worked calculations whose printed form does not survive extraction ─────
+# Every one of these is set as a FRACTION or with SUPERSCRIPTS on the page, and
+# flat text does not merely dull them, it falsifies them: the HHI working comes
+# out "482 + 272 + ..." once the squares are lost, the multiplier comes out
+# "0.3 + 0.2 = 2", and the percentage change loses its numerator outright and
+# reads "4761865 x 100 = 7.59 %". So the scheme's own working is cropped and
+# rides with the card as a solution figure, the mechanism the tick tables use.
+
+P.cards.append(card(
+    'econ-2023-hl-q11-a-i', 2023, 'higher', 'economics-3-5',
+    'percentage-change-in-the-irish-population', '2023 HL Q11(a)(i)',
+    'Using the data in the table below (extracted from the infographic above), calculate the '
+    'percentage change in the Irish population from 2016 to 2022. Show your workings.',
+    '8', 8,
+    [point('r-1', as_option(block(BODY, '4761865 \u00d7 100 = 7.59 %', '- 1 Mark if %')), 8,
+           'The base is the EARLIER population, so the change divides by the 2016 figure, not '
+           'the 2022 one. A mark goes for the % sign.')],
+    'The table gives the total change outright, so the arithmetic is one division \u2014 but '
+    'dividing by the wrong year is the standard slip, and it makes the answer look plausible.',
+    tariff_kind='fixed',
+    figure_key='economics-2023-HL-scheme-p15-q11ai-working'))
+
+P.cards.append(card(
+    'econ-2023-hl-q12-b-i', 2023, 'higher', 'economics-2-0',
+    'calculating-the-herfindahl-hirschman-index', '2023 HL Q12(b)(i)',
+    'Based upon the figures in the bar chart above, calculate the Herfindahl Hirschman Index '
+    'for Irish Dairy Producers. Show your workings.',
+    '9', 9,
+    [point('r-1', as_option(block(BODY, '482 + 272 + 82 + 72 + 32 + 32 + 22 + 22 = 3172',
+                                  '(ii) Would you consider this market')), 9,
+           'Every share is SQUARED before adding \u2014 that is what makes the index sensitive '
+           'to the big firms. Adding the shares unsquared gives 100 for any market at all.')],
+    'The shares are read off the bar chart, and all eight go in. Squaring is the whole point: it '
+    'is why two firms on 48 and 27 dominate the index.',
+    tariff_kind='fixed',
+    figure_key='economics-2023-HL-scheme-p21-q12bi-working'))
+
+P.cards.append(card(
+    'econ-2023-hl-q13-b-i-mps', 2023, 'higher', 'economics-3-0',
+    'marginal-propensity-to-save-from-the-mpc', '2023 HL Q13(b)(i)',
+    'Calculate the marginal propensity to save (MPS) for this economy. Show your workings.',
+    '3 @ 2', 6,
+    [point('r-1', as_option(block(BODY, '1- MPC 1-0.7', 'Calculate the value of the multiplier')), 6,
+           'Three steps at two marks each: the relationship, the substitution and the figure. '
+           'MPS is what is left of a marginal euro after consumption \u2014 imports do not come '
+           'into it, so the MPM of 0.2 in the table is not used here.')],
+    'The table supplies MPC and MPM together, which invites subtracting both. Saving is 1 minus '
+    'the propensity to CONSUME.',
+    tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2023-hl-q13-b-ii-multiplier', 2023, 'higher', 'economics-3-0',
+    'the-multiplier-in-an-open-economy', '2023 HL Q13(b)(ii)',
+    'Calculate the value of the multiplier in this open economy. Show your workings.',
+    '4 @ 2', 8,
+    [point('r-1', as_option(block(BODY, '1 \U0001d440\U0001d443\U0001d446+ \U0001d440\U0001d443\U0001d440',
+                                  '(iii) How much will the government')), 8,
+           'Both leakages go in the denominator TOGETHER, then 1 is divided by the sum. The '
+           'scheme prints a second acceptable form built from MPC and MPM, and both reach 2.')],
+    'An open economy leaks to saving AND to imports, so a multiplier worked from MPS alone is '
+    'too big. The two forms the scheme accepts are the same statement rearranged.',
+    tariff_kind='fixed',
+    figure_key='economics-2023-HL-scheme-p24-q13bii-working'))
+
+P.cards.append(card(
+    'econ-2023-hl-q15-a-iii', 2023, 'higher', 'economics-3-3',
+    'building-a-weighted-composite-price-index', '2023 HL Q15(a)(iii)',
+    'The table below shows a country\u2019s composite price index for the following categories '
+    'of expenditure: food; transport; and other items. Using the information in the table below '
+    'to calculate the price index for the current year. The base value is 100. Show your '
+    'workings.',
+    '19', 19,
+    [point('r-1', as_option(block(BODY, 'item (s) \u20ac year \u20ac 55 X 100 = 110 x 60% = 66.0',
+                                  '(b) 22')), 19,
+           'Each category gets its own simple index first \u2014 current price over base price '
+           'times 100 \u2014 and only THEN is it weighted. The composite is the sum of the '
+           'weighted results, not an average of the simple indices.')],
+    'The weights are what make it composite: food moves the index almost four times as much as '
+    'other items. Averaging the three simple indices ignores that and is the usual wrong answer.',
+    tariff_kind='fixed',
+    figure_key='economics-2023-HL-scheme-p32-q15aiii-working'))
+
 P.emit()

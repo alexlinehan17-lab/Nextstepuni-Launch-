@@ -633,4 +633,20 @@ P.cards.append(card(
     'half however good it is.',
     tariff_kind='fixed'))
 
+P.cards.append(card(
+    'econ-2022-hl-q14-b-i', 2022, 'higher', 'economics-1-5',
+    'filling-in-total-average-variable-and-marginal-cost', '2022 HL Q14(b)(i)',
+    'Calculate the missing figures for A, B, and C in the table below.',
+    '9', 9,
+    [point('r-1', as_option(block(BODY, 'A: Total Cost B: Average Variable Cost C: Marginal Cost',
+                                  '(ii) Using the figures obtained in the table')), 9,
+           'Three different cost concepts, three different operations. Total cost ADDS fixed to '
+           'variable; average variable cost DIVIDES variable cost by output; marginal cost is the '
+           'DIFFERENCE between one total cost and the one before it.')],
+    'The scheme sets the three calculations in three columns, so flattened into a line the '
+    'figures run together \u2014 the working rides with the card as a picture. Marginal cost is '
+    'the step between two totals, not a total divided by anything.',
+    tariff_kind='fixed',
+    figure_key='economics-2022-HL-scheme-p28-q14bi-working'))
+
 P.emit()

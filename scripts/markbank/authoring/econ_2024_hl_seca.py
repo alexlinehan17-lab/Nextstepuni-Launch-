@@ -293,4 +293,21 @@ P.cards.append(card(
     section='A', tariff_kind='fixed',
     figure_key='economics-2024-HL-scheme-p08-q4a-ticks'))
 
+P.cards.append(card(
+    'econ-2024-hl-sa-q10-a-ii', 2024, 'higher', 'economics-3-0',
+    'from-gnp-to-gross-national-income', '2024 HL Section A Q10(a)(ii)',
+    'Using the data in the table, calculate Gross National Income at Current Market Prices.',
+    '6', 6,
+    [point('r-1', as_option(block(BODY, 'Gross National Product (GNP) at CMP \u20ac325bn',
+                                  '(b) Explain the term net factor income')), 6,
+           'Subsidies are ADDED and taxes SUBTRACTED, because the EU flows change what the '
+           'country actually receives. The step before this one \u2014 GDP to GNP \u2014 is '
+           'worked for you on the paper, so the \u20ac325bn is a given, not something to '
+           'recompute.')],
+    'The ladder only works in order: each line starts from the figure the line above produced. '
+    'Applying both EU adjustments to GDP rather than to GNP is the slip the printed first step '
+    'is there to prevent.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2024-HL-scheme-p14-q10aii-working'))
+
 P.emit()

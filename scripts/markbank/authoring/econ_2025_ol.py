@@ -518,4 +518,21 @@ P.cards.append(card(
     tariff_kind='fixed',
     figure_key='economics-2025-OL-paper-p14-art'))
 
+P.cards.append(card(
+    'econ-2025-ol-q12-b-ii', 2025, 'ordinary', 'economics-3-0',
+    'the-size-of-the-multiplier-in-an-open-economy', '2025 OL Q12(b)(ii)',
+    'The Multiplier for an open economy is: 1 / (MPS + MPM). Assume that MPS is 0.2 and MPM is '
+    '0.3. Calculate, using the above formula, the size of the multiplier. Show all your workings.',
+    '4 @ 3', 12,
+    [point('r-1', as_option(block(BODY, '1 1 0.2 + 0.3 = 0.5 = 2',
+                                  '(iii) Ireland is a small open economy')), 12,
+           'Four steps at three marks each. The two leakages are added FIRST, giving 0.5, and '
+           'only then is 1 divided by it \u2014 the intermediate 0.5 is a step the scheme prints '
+           'and pays for.')],
+    'The scheme sets this as a fraction, so the flat text reads \u201c0.2 + 0.3 = 0.5 = 2\u201d '
+    'and the division disappears. Bigger leakages mean a SMALLER multiplier, which is the '
+    'relationship the arithmetic is testing.',
+    tariff_kind='fixed',
+    figure_key='economics-2025-OL-scheme-p21-q12bii-working'))
+
 P.emit()

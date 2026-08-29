@@ -746,4 +746,22 @@ P.cards.append(card(
     'you necessity or luxury. Reporting only "inelastic" leaves half the meaning behind.',
     tariff_kind='fixed'))
 
+P.cards.append(card(
+    'econ-2024-hl-q12-b-ii', 2024, 'higher', 'economics-3-3',
+    'weighting-simple-price-indices-into-a-composite', '2024 HL Q12(b)(ii)',
+    'The table below shows a country\u2019s composite price index for the following categories '
+    'of expenditure: food; transport; and other items. Use the information in the table below to '
+    'calculate the price index for the current year. The base value is 100. Show your workings.',
+    '19', 19,
+    [point('r-1', as_option(block(BODY, 'Food 65% 60 66 66 x 100 = 110 x 65%',
+                                  '24 | P a g e')), 19,
+           'Each category gets a SIMPLE index first \u2014 current price over base price times '
+           '100 \u2014 and the weight is applied to that index, not to the prices. The composite '
+           'is the sum of the three weighted results.')],
+    'Transport rose by half but carries a fifth of the weight, so it moves the composite less '
+    'than food, which rose a tenth on a 65% weight. Averaging the three simple indices ignores '
+    'exactly that and is the usual wrong answer.',
+    tariff_kind='fixed',
+    figure_key='economics-2024-HL-scheme-p24-q12bii-working'))
+
 emit(cards + P.cards)

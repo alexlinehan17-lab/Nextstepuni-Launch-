@@ -425,4 +425,53 @@ P.cards.append(card(
     tariff_kind='fixed',
     figure_key='economics-2023-OL-paper-p22-i0'))
 
+P.cards.append(card(
+    'econ-2023-ol-q13-b-ii', 2023, 'ordinary', 'economics-3-0',
+    'national-income-and-the-balance-of-trade-from-one-table', '2023 OL Q13(b)(ii)',
+    'Using the formula in (i) above and the figures below calculate: the level of National '
+    'Income in 2023 and the Balance of Trade. Show your workings.',
+    'fixed', 27,
+    [point('r-1', as_option(block(BODY, 'Y = C + I + G + (X-M)',
+                                  'Deduct 1 mark each for omission of \u20ac and million')), 18,
+           'Six steps at three marks each. Imports are SUBTRACTED \u2014 the bracket (X\u2013M) '
+           'is one term, so adding both trade figures is the standard error.'),
+     point('r-2', as_option(block(BODY, 'Exports \u2013 Imports \u20ac300m \u2013 \u20ac200m = \u20ac100m',
+                                  'Deduct 1 mark each for omission of \u20ac and million')), 9,
+           'Three steps at three. The balance of trade uses only the two trade figures \u2014 '
+           'consumption, investment and government spending have no part in it.')],
+    'One table answers two different questions, and the trade figures do double duty: inside the '
+    'bracket for national income, on their own for the balance of trade. A mark goes for the '
+    '\u20ac and a mark for the million.',
+    tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2023-ol-q14-b-i', 2023, 'ordinary', 'economics-1-5',
+    'total-revenue-from-price-and-quantity', '2023 OL Q14(b)(i)',
+    'Calculate the total revenue if the firm sells 400 units. Show your workings.',
+    '3 @ 6', 18,
+    [point('r-1', as_option(block(BODY, 'Total revenue = Price x Quantity',
+                                  'Deduct 1 for omission of \u20ac sign')), 18,
+           'Three steps at six marks each: the relationship, the substitution and the figure. '
+           'The price is not in the wording \u2014 it comes from the table, where 200 units '
+           'bring in \u20ac3,000.')],
+    'Total revenue is price times quantity, not the total cost row beside it. The table prints '
+    'both, and reading across the wrong row gives a plausible wrong answer.',
+    tariff_kind='fixed',
+    figure_key='economics-2023-OL-paper-p20-i0'))
+
+P.cards.append(card(
+    'econ-2023-ol-q14-b-ii', 2023, 'ordinary', 'economics-1-5',
+    'profit-from-total-revenue-and-total-cost', '2023 OL Q14(b)(ii)',
+    'Calculate the profit earned when the firm sells 400 units. Show your workings.',
+    '3 @ 3', 9,
+    [point('r-1', as_option(block(BODY, 'Profit = Total revenue \u2013 Total cost',
+                                  'Deduct 1 for omission of \u20ac sign')), 9,
+           'Three steps at three marks each. The \u20ac6,000 is carried from (i) and the '
+           '\u20ac4,500 is read off the table \u2014 so an error in (i) travels into this part.')],
+    'Profit is what is LEFT after cost, so the subtraction runs revenue minus cost. Reversing it '
+    'gives the right magnitude with the wrong sign, and the table already shows a loss at zero '
+    'output to make the distinction matter.',
+    tariff_kind='fixed',
+    figure_key='economics-2023-OL-paper-p20-i0'))
+
 P.emit()

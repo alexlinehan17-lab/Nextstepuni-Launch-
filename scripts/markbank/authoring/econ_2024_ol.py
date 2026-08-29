@@ -498,4 +498,42 @@ P.cards.append(card(
     tariff_kind='fixed',
     figure_key='economics-2024-OL-paper-p13-i0'))
 
+P.cards.append(card(
+    'econ-2024-ol-q14-c-i', 2024, 'ordinary', 'economics-4-2',
+    'balance-of-trade-surplus-or-deficit', '2024 OL Q14(c)(i)',
+    'Using the information in the table above, calculate Ireland\u2019s Balance of Trade in '
+    '2021. Indicate with a tick whether it was a surplus or a deficit. Show all your workings. '
+    'Explain your answer.',
+    'fixed', 16,
+    [point('r-1', as_option(block(BODY, 'Workings: Balance of trade: Total exports \u2013 Total imports',
+                                  '( -1m for omission of \u20ac or bn)')), 12,
+           'Four steps at three marks each, and only the TOTAL rows are used \u2014 the country '
+           'breakdown is there to be summed past, not added one region at a time.'),
+     point('r-2', as_option(block(BODY, 'Answer: \u20ac62bn Surplus: or Deficit:',
+                                  '31 | P a g e')), 4,
+           'The tick and the reason carry four marks between them. Exports above imports is a '
+           'surplus, and saying which is greater is the explanation the scheme wants.')],
+    'Balance of TRADE is goods only, and the table gives the totals outright. A mark comes off '
+    'for dropping the \u20ac or the bn.',
+    tariff_kind='fixed',
+    figure_key='economics-2024-OL-paper-p21-i0'))
+
+P.cards.append(card(
+    'econ-2024-ol-q15-c-i', 2024, 'ordinary', 'economics-1-4',
+    'price-elasticity-of-demand-for-chocolate', '2024 OL Q15(c)(i)',
+    'Using the formula supplied, calculate the consumers price elasticity of demand when the '
+    'price of a bar of chocolate changes due to increases in the costs of production. Show all '
+    'your workings.',
+    '10 @ 2', 20,
+    [point('r-1', as_option(block(BODY, '\u221240', '( -2 for omission')), 20,
+           'Ten figures at two marks each, and the scheme prints no split between the working '
+           'and the answer \u2014 so the row is the whole thing. The formula the paper supplies '
+           'uses the SUMS of the prices and quantities, so 100 + 140 and 90 + 50 both go in, not '
+           'the starting values on their own. The sign is part of the answer: quantity fell as '
+           'price rose, and two marks come off if the minus is dropped.')],
+    'The scheme prints this as stacked fractions, so the working rides with the card as a '
+    'picture. Flattened it reads as one long addition and stops being a division at all.',
+    tariff_kind='fixed',
+    figure_key='economics-2024-OL-scheme-p35-q15ci-working'))
+
 emit(cards + P.cards)

@@ -434,4 +434,20 @@ P.cards.append(card(
     tariff_kind='fixed',
     figure_key='economics-2022-OL-paper-p16-i0'))
 
+P.cards.append(card(
+    'econ-2022-ol-q13-b-ii', 2022, 'ordinary', 'economics-3-0',
+    'calculating-the-multiplier-in-an-open-economy', '2022 OL Q13(b)(ii)',
+    'The multiplier formula for an open economy is: 1 / (MPS + MPM). Assume that MPS is 0.1 '
+    'and MPM is 0.4. Calculate, using the above formula, the size of the multiplier.',
+    '12', 12,
+    [point('r-1', as_option(block(BODY, '0.1 + 0.4 = 2',
+                                  '(iii) Explain the economic meaning of the figure')), 12,
+           'The two leakages are ADDED first, then divided into 1. Adding the multipliers of each '
+           'leakage separately, or dividing 1 by each in turn, is the usual way this goes wrong.')],
+    'The scheme prints this as a fraction with 1 above the line, so the flat text reads '
+    '\u201c0.1 + 0.4 = 2\u201d \u2014 which is why the scheme\u2019s own working rides with '
+    'the card as a picture.',
+    tariff_kind='fixed',
+    figure_key='economics-2022-OL-scheme-p20-q13bii-working'))
+
 P.emit()

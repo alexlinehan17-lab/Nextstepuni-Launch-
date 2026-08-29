@@ -4525,6 +4525,121 @@
   "notes": "The scheme pays 9 for the shifted curve drawn on the diagram and 6 (3 + 3) for the explanation."
  },
  {
+  "id": "econ-2021-ol-sa-q1-i",
+  "topicId": "economics-3-1",
+  "conceptId": "education-as-a-percentage-of-government-spending",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2021 OL Section A Q1(i)",
+  "questionText": "The estimated government expenditure for all departments is €89.6 billion. Calculate the estimated expenditure on Education as a percentage of total government expenditure for 2021. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2021-OL-paper-p03-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 @ 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "8.9/ 89.6 x 100 = 9.93%",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Three steps at four marks each: the Education figure over the total, times 100, and the result. The 8.9 is not in the wording — it is read off the chart."
+   }
+  ],
+  "notes": "Nothing in the question gives you 8.9; it comes off the Education bar. Students who work from the wording alone have no numerator."
+ },
+ {
+  "id": "econ-2021-ol-sa-q3-i",
+  "topicId": "economics-1-4",
+  "conceptId": "price-elasticity-of-demand-for-kerosene",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2021 OL Section A Q3(i)",
+  "questionText": "Using the formula supplied, calculate the consumers price elasticity of demand when the price of Kerosene (home fuel heating oil) changes due to an increase in carbon tax.",
+  "stem": "",
+  "figureKey": "economics-2021-OL-scheme-p05-q3i-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Changes -250 litres +50 −250",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Six figures at two marks each — the two quantities, the two prices and the two changes. The Changes row is worked first: quantity falls 250, price rises 50."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "+50 𝑥 800 + 850 1000 + 750",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "The substitution itself. PED is the change in quantity over the change in price, times the SUM of the prices over the SUM of the quantities — the midpoint form the paper supplies, not the simple percentage form."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Answer: - 4.71",
+    "marks": 1,
+    "openList": true,
+    "contextNote": "One mark for the figure. It is negative because quantity and price moved in opposite directions, and the sign is part of the answer."
+   }
+  ],
+  "notes": "The scheme prints this as stacked fractions, which is why the working rides with the card as a picture. Flattened into a line of text the numerator and denominator run together and the calculation stops being readable."
+ },
+ {
+  "id": "econ-2021-ol-sa-q7",
+  "topicId": "economics-3-1",
+  "conceptId": "working-out-a-budget-surplus-or-deficit",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2021 OL Section A Q7",
+  "questionText": "Using the following figures, calculate the expected budgetary position for Ireland in 2022. Indicate if it is a surplus or a deficit. Total income: €87.5 billion Total expenditure: €86.1 billion",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 @ 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Total Income (€87.5 bn) - Total Expenditure (€86.1 bn) = €1.4bn. Surplus",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Five steps at three marks each, and the verdict is one of them: the arithmetic alone does not answer the question, which asks whether it is a surplus or a deficit."
+   }
+  ],
+  "notes": "Income above expenditure is a SURPLUS. The word is worth marks on its own, so a correct €1.4bn with no verdict is an incomplete answer."
+ },
+ {
   "id": "econ-2022-hl-q11-a-ii",
   "topicId": "economics-3-5",
   "conceptId": "balanced-regional-development",
@@ -6546,6 +6661,39 @@
    }
   ],
   "notes": "Both halves are required and each is worth the same, so an essay on one side scores at most half however good it is."
+ },
+ {
+  "id": "econ-2022-hl-q14-b-i",
+  "topicId": "economics-1-5",
+  "conceptId": "filling-in-total-average-variable-and-marginal-cost",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 HL Q14(b)(i)",
+  "questionText": "Calculate the missing figures for A, B, and C in the table below.",
+  "stem": "",
+  "figureKey": "economics-2022-HL-scheme-p28-q14bi-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: Total Cost B: Average Variable Cost C: Marginal Cost 100,000 400,000 450,000 + 260,000 2 – 400,000 €360,000 €200,000 €50,000",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "Three different cost concepts, three different operations. Total cost ADDS fixed to variable; average variable cost DIVIDES variable cost by output; marginal cost is the DIFFERENCE between one total cost and the one before it."
+   }
+  ],
+  "notes": "The scheme sets the three calculations in three columns, so flattened into a line the figures run together — the working rides with the card as a picture. Marginal cost is the step between two totals, not a total divided by anything."
  },
  {
   "id": "econ-2022-hl-sa-q2-b",
@@ -8868,6 +9016,39 @@
   "notes": "The plain id econ-2022-ol-q13-a-i is taken by a card citing 2022 OL Q14(c)(i), and an id is never renamed because it keys a student’s review history — hence the suffix. The pie prints current and capital separately and the total in its heading, so the denominator has to be recognised before any arithmetic happens."
  },
  {
+  "id": "econ-2022-ol-q13-b-ii",
+  "topicId": "economics-3-0",
+  "conceptId": "calculating-the-multiplier-in-an-open-economy",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 OL Q13(b)(ii)",
+  "questionText": "The multiplier formula for an open economy is: 1 / (MPS + MPM). Assume that MPS is 0.1 and MPM is 0.4. Calculate, using the above formula, the size of the multiplier.",
+  "stem": "",
+  "figureKey": "economics-2022-OL-scheme-p20-q13bii-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "12",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "0.1 + 0.4 = 2",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "The two leakages are ADDED first, then divided into 1. Adding the multipliers of each leakage separately, or dividing 1 by each in turn, is the usual way this goes wrong."
+   }
+  ],
+  "notes": "The scheme prints this as a fraction with 1 above the line, so the flat text reads “0.1 + 0.4 = 2” — which is why the scheme’s own working rides with the card as a picture."
+ },
+ {
   "id": "econ-2022-ol-sa-q2-ii",
   "topicId": "economics-1-3",
   "conceptId": "what-the-census-is-used-for",
@@ -9553,6 +9734,72 @@
    }
   ],
   "notes": "Three of the four are variable, so a student splitting them evenly gets one wrong before thinking about any of them."
+ },
+ {
+  "id": "econ-2022-ol-sa-q7-b-i",
+  "topicId": "economics-1-5",
+  "conceptId": "adding-up-a-bakerys-total-cost-for-the-week",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 OL Section A Q7(b)(i)",
+  "questionText": "A bakery receives €5,000 in total from its sales in a week. Calculate the total cost of operating the bakery for the week.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "10 (5 x 2)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "€1,000 + €1,500 + €300 + €750 = €3,550",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "Five steps at two marks each. Total cost is FIXED plus VARIABLE — every cost in the table goes in, whichever column it sits in."
+   }
+  ],
+  "notes": "The scheme deducts a mark if the € sign is omitted. The table sorts the costs into fixed and variable, and the sorting tempts students to total only one column."
+ },
+ {
+  "id": "econ-2022-ol-sa-q7-b-ii",
+  "topicId": "economics-1-5",
+  "conceptId": "net-profit-from-total-revenue-and-total-cost",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2022 OL Section A Q7(b)(ii)",
+  "questionText": "Calculate the net profit the bakery earned in the week. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2022-OL-scheme-p09-q7bii-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "5 (2+2+1)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Total revenue – Total Costs = Net Profit",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "Two marks for the relationship, two for the substitution and one for the figure. The €5,000 is revenue, given in the question; the cost is the €3,550 worked in (i), so an error there carries into here."
+   }
+  ],
+  "notes": "The scheme prints the deduction note beside the working, so the two interleave in extraction — the picture is the faithful form. A mark goes for the € sign."
  },
  {
   "id": "econ-2023-hl-q11-a-ii",
@@ -11420,6 +11667,171 @@
   "notes": "This is the benchmark diagram the other three are judged against: normal profit, efficient output, and a flat demand curve at the market price."
  },
  {
+  "id": "econ-2023-hl-q11-a-i",
+  "topicId": "economics-3-5",
+  "conceptId": "percentage-change-in-the-irish-population",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 HL Q11(a)(i)",
+  "questionText": "Using the data in the table below (extracted from the infographic above), calculate the percentage change in the Irish population from 2016 to 2022. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2023-HL-scheme-p15-q11ai-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "4761865 × 100 = 7.59 %",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The base is the EARLIER population, so the change divides by the 2016 figure, not the 2022 one. A mark goes for the % sign."
+   }
+  ],
+  "notes": "The table gives the total change outright, so the arithmetic is one division — but dividing by the wrong year is the standard slip, and it makes the answer look plausible."
+ },
+ {
+  "id": "econ-2023-hl-q12-b-i",
+  "topicId": "economics-2-0",
+  "conceptId": "calculating-the-herfindahl-hirschman-index",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 HL Q12(b)(i)",
+  "questionText": "Based upon the figures in the bar chart above, calculate the Herfindahl Hirschman Index for Irish Dairy Producers. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2023-HL-scheme-p21-q12bi-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "482 + 272 + 82 + 72 + 32 + 32 + 22 + 22 = 3172",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "Every share is SQUARED before adding — that is what makes the index sensitive to the big firms. Adding the shares unsquared gives 100 for any market at all."
+   }
+  ],
+  "notes": "The shares are read off the bar chart, and all eight go in. Squaring is the whole point: it is why two firms on 48 and 27 dominate the index."
+ },
+ {
+  "id": "econ-2023-hl-q13-b-i-mps",
+  "topicId": "economics-3-0",
+  "conceptId": "marginal-propensity-to-save-from-the-mpc",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 HL Q13(b)(i)",
+  "questionText": "Calculate the marginal propensity to save (MPS) for this economy. Show your workings.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 @ 2",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1- MPC 1-0.7 MPS = 0.3",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Three steps at two marks each: the relationship, the substitution and the figure. MPS is what is left of a marginal euro after consumption — imports do not come into it, so the MPM of 0.2 in the table is not used here."
+   }
+  ],
+  "notes": "The table supplies MPC and MPM together, which invites subtracting both. Saving is 1 minus the propensity to CONSUME."
+ },
+ {
+  "id": "econ-2023-hl-q13-b-ii-multiplier",
+  "topicId": "economics-3-0",
+  "conceptId": "the-multiplier-in-an-open-economy",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 HL Q13(b)(ii)",
+  "questionText": "Calculate the value of the multiplier in this open economy. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2023-HL-scheme-p24-q13bii-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 @ 2",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1 𝑀𝑃𝑆+ 𝑀𝑃𝑀 = 0.3 + 0.2 = 2 OR 1 1 (1 −(𝑀𝑃𝐶−𝑀𝑃𝑀) = (1 −(0.7 −0.2) = 2",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Both leakages go in the denominator TOGETHER, then 1 is divided by the sum. The scheme prints a second acceptable form built from MPC and MPM, and both reach 2."
+   }
+  ],
+  "notes": "An open economy leaks to saving AND to imports, so a multiplier worked from MPS alone is too big. The two forms the scheme accepts are the same statement rearranged."
+ },
+ {
+  "id": "econ-2023-hl-q15-a-iii",
+  "topicId": "economics-3-3",
+  "conceptId": "building-a-weighted-composite-price-index",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 HL Q15(a)(iii)",
+  "questionText": "The table below shows a country’s composite price index for the following categories of expenditure: food; transport; and other items. Using the information in the table below to calculate the price index for the current year. The base value is 100. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2023-HL-scheme-p32-q15aiii-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "19",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 19,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "item (s) € year € 55 X 100 = 110 x 60% = 66.0 Food 60% 50 55 50 24 X 100 = 120 x 25% = 30.0 Transport 25% 20 24 20 Other 81 X 100 = 108 x 15% = 16.2 Items 15% 75 81 75 Price Index for the 100% current Year",
+    "marks": 19,
+    "openList": true,
+    "contextNote": "Each category gets its own simple index first — current price over base price times 100 — and only THEN is it weighted. The composite is the sum of the weighted results, not an average of the simple indices."
+   }
+  ],
+  "notes": "The weights are what make it composite: food moves the index almost four times as much as other items. Averaging the three simple indices ignores that and is the usual wrong answer."
+ },
+ {
   "id": "econ-2023-hl-sa-q1-a",
   "topicId": "economics-1-2",
   "conceptId": "supply-of-a-fixed-capacity-good",
@@ -12192,6 +12604,39 @@
    }
   ],
   "notes": "Both goods cost the same €10 here, which makes it tempting to say the condition holds. It is the utility per euro that must match, not the price."
+ },
+ {
+  "id": "econ-2023-hl-sa-q3-a",
+  "topicId": "economics-1-1",
+  "conceptId": "filling-in-total-and-marginal-utility",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2023 HL Section A Q3(a)",
+  "questionText": "Complete the missing total utility and marginal utility figures in the table below. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2023-HL-scheme-p08-q3a-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 @ 2",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "• 80 – 40 = 40 • 80 + 35 = 115 • 137 – 115 = 22",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Three cells, three workings, two marks each. Marginal utility is the DIFFERENCE between consecutive totals, so it runs both ways: subtract to get a marginal from two totals, add to get the next total from a marginal."
+   }
+  ],
+  "notes": "The blanks alternate between the two rows on purpose, so the same relationship has to be used forwards and backwards. Reading marginal utility as a total is what breaks it."
  },
  {
   "id": "econ-2023-ol-q11-a-i",
@@ -13801,6 +14246,113 @@
    }
   ],
   "notes": "The plain id econ-2023-ol-q15-a-i is held by another card and an id is never renamed, since it keys a student’s review history — hence the suffix. Two of the infographic’s rows make the numerator and all of them make the denominator, so the same figures are used twice in different roles."
+ },
+ {
+  "id": "econ-2023-ol-q13-b-ii",
+  "topicId": "economics-3-0",
+  "conceptId": "national-income-and-the-balance-of-trade-from-one-table",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q13(b)(ii)",
+  "questionText": "Using the formula in (i) above and the figures below calculate: the level of National Income in 2023 and the Balance of Trade. Show your workings.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 27,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Y = C + I + G + (X-M) Y = €700m+ €200m + €400m + €300m - €200m Y = €1,400m",
+    "marks": 18,
+    "openList": true,
+    "contextNote": "Six steps at three marks each. Imports are SUBTRACTED — the bracket (X–M) is one term, so adding both trade figures is the standard error."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Exports – Imports €300m – €200m = €100m",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "Three steps at three. The balance of trade uses only the two trade figures — consumption, investment and government spending have no part in it."
+   }
+  ],
+  "notes": "One table answers two different questions, and the trade figures do double duty: inside the bracket for national income, on their own for the balance of trade. A mark goes for the € and a mark for the million."
+ },
+ {
+  "id": "econ-2023-ol-q14-b-i",
+  "topicId": "economics-1-5",
+  "conceptId": "total-revenue-from-price-and-quantity",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q14(b)(i)",
+  "questionText": "Calculate the total revenue if the firm sells 400 units. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2023-OL-paper-p20-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 @ 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Total revenue = Price x Quantity = €15 x 400 units = €6,000",
+    "marks": 18,
+    "openList": true,
+    "contextNote": "Three steps at six marks each: the relationship, the substitution and the figure. The price is not in the wording — it comes from the table, where 200 units bring in €3,000."
+   }
+  ],
+  "notes": "Total revenue is price times quantity, not the total cost row beside it. The table prints both, and reading across the wrong row gives a plausible wrong answer."
+ },
+ {
+  "id": "econ-2023-ol-q14-b-ii",
+  "topicId": "economics-1-5",
+  "conceptId": "profit-from-total-revenue-and-total-cost",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q14(b)(ii)",
+  "questionText": "Calculate the profit earned when the firm sells 400 units. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2023-OL-paper-p20-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "3 @ 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Profit = Total revenue – Total cost = €6,000 - €4,500 = €1,500",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "Three steps at three marks each. The €6,000 is carried from (i) and the €4,500 is read off the table — so an error in (i) travels into this part."
+   }
+  ],
+  "notes": "Profit is what is LEFT after cost, so the subtraction runs revenue minus cost. Reversing it gives the right magnitude with the wrong sign, and the table already shows a loss at zero output to make the distinction matter."
  },
  {
   "id": "econ-2023-ol-sa-q2-b",
@@ -16976,6 +17528,39 @@
   "notes": "A single number carries two facts here: the sign tells you normal or inferior, the size tells you necessity or luxury. Reporting only \"inelastic\" leaves half the meaning behind."
  },
  {
+  "id": "econ-2024-hl-q12-b-ii",
+  "topicId": "economics-3-3",
+  "conceptId": "weighting-simple-price-indices-into-a-composite",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 HL Q12(b)(ii)",
+  "questionText": "The table below shows a country’s composite price index for the following categories of expenditure: food; transport; and other items. Use the information in the table below to calculate the price index for the current year. The base value is 100. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2024-HL-scheme-p24-q12bii-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "19",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 19,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Food 65% 60 66 66 x 100 = 110 x 65% 60 1 Transport 20% 30 45 45 x 100 = 150 x 20% 30 1 Other 96 x 100 = 120 x 15% 15% 80 96 Items 80 1 Price Index 100% for the current year",
+    "marks": 19,
+    "openList": true,
+    "contextNote": "Each category gets a SIMPLE index first — current price over base price times 100 — and the weight is applied to that index, not to the prices. The composite is the sum of the three weighted results."
+   }
+  ],
+  "notes": "Transport rose by half but carries a fifth of the weight, so it moves the composite less than food, which rose a tenth on a 65% weight. Averaging the three simple indices ignores exactly that and is the usual wrong answer."
+ },
+ {
   "id": "econ-2024-hl-sa-q2-b",
   "topicId": "economics-3-2",
   "conceptId": "why-full-employment-is-an-aim",
@@ -17831,6 +18416,39 @@
    }
   ],
   "notes": "Both answers involve buying machines, so counting the machines settles nothing. Only the ratio distinguishes them."
+ },
+ {
+  "id": "econ-2024-hl-sa-q10-a-ii",
+  "topicId": "economics-3-0",
+  "conceptId": "from-gnp-to-gross-national-income",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "A",
+  "questionRef": "2024 HL Section A Q10(a)(ii)",
+  "questionText": "Using the data in the table, calculate Gross National Income at Current Market Prices.",
+  "stem": "",
+  "figureKey": "economics-2024-HL-scheme-p14-q10aii-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Gross National Product (GNP) at CMP €325bn + EU subsidies + €2bn €327bn – EU taxes - €0.5bn €326.5bn",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Subsidies are ADDED and taxes SUBTRACTED, because the EU flows change what the country actually receives. The step before this one — GDP to GNP — is worked for you on the paper, so the €325bn is a given, not something to recompute."
+   }
+  ],
+  "notes": "The ladder only works in order: each line starts from the figure the line above produced. Applying both EU adjustments to GDP rather than to GNP is the slip the printed first step is there to prevent."
  },
  {
   "id": "econ-2024-ol-q11-a-ii",
@@ -19482,6 +20100,80 @@
    }
   ],
   "notes": "The two quarters differ by less than 3%, so the arithmetic has to be exact — there is no sanity check from the size of the answer."
+ },
+ {
+  "id": "econ-2024-ol-q14-c-i",
+  "topicId": "economics-4-2",
+  "conceptId": "balance-of-trade-surplus-or-deficit",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q14(c)(i)",
+  "questionText": "Using the information in the table above, calculate Ireland’s Balance of Trade in 2021. Indicate with a tick whether it was a surplus or a deficit. Show all your workings. Explain your answer.",
+  "stem": "",
+  "figureKey": "economics-2024-OL-paper-p21-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Workings: Balance of trade: Total exports – Total imports Balance of trade: €165.7bn – €103.7bn = €62bn",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Four steps at three marks each, and only the TOTAL rows are used — the country breakdown is there to be summed past, not added one region at a time."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Answer: €62bn Surplus: or Deficit: ✔ The Balance of Trade is a surplus because the exports are greater than the imports.",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "The tick and the reason carry four marks between them. Exports above imports is a surplus, and saying which is greater is the explanation the scheme wants."
+   }
+  ],
+  "notes": "Balance of TRADE is goods only, and the table gives the totals outright. A mark comes off for dropping the € or the bn."
+ },
+ {
+  "id": "econ-2024-ol-q15-c-i",
+  "topicId": "economics-1-4",
+  "conceptId": "price-elasticity-of-demand-for-chocolate",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2024 OL Q15(c)(i)",
+  "questionText": "Using the formula supplied, calculate the consumers price elasticity of demand when the price of a bar of chocolate changes due to increases in the costs of production. Show all your workings.",
+  "stem": "",
+  "figureKey": "economics-2024-OL-scheme-p35-q15ci-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "10 @ 2",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 20,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "−40 + 40 × 100 + 140 (240) 90 + 50 (140) Answer: -1.71",
+    "marks": 20,
+    "openList": true,
+    "contextNote": "Ten figures at two marks each, and the scheme prints no split between the working and the answer — so the row is the whole thing. The formula the paper supplies uses the SUMS of the prices and quantities, so 100 + 140 and 90 + 50 both go in, not the starting values on their own. The sign is part of the answer: quantity fell as price rose, and two marks come off if the minus is dropped."
+   }
+  ],
+  "notes": "The scheme prints this as stacked fractions, so the working rides with the card as a picture. Flattened it reads as one long addition and stops being a division at all."
  },
  {
   "id": "econ-2024-ol-sa-q1-i",
@@ -22363,6 +23055,39 @@
   "notes": "The U-shape is not the same U as the short-run curve. This one is built from the bottoms of many short-run curves, each a different plant size."
  },
  {
+  "id": "econ-2025-hl-q15-b-i",
+  "topicId": "economics-3-3",
+  "conceptId": "percentage-increase-in-the-residential-property-price-index",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q15(b)(i)",
+  "questionText": "Using the data in the chart above, calculate the percentage increase in the RPPI from March 2024 to August 2024. Show all your workings.",
+  "stem": "",
+  "figureKey": "economics-2025-HL-scheme-p58-q15bi-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Workings: 10.1 – 7.4 = 2.7% August 2024 −March 2024 × 100 March 2024 1 10.1 – 7.4 x 100 7.4 1 Answer: 36.48%",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The base is MARCH, the earlier month, so the difference is divided by 7.4 and not by 10.1. Both figures are read off the chart; neither is in the wording."
+   }
+  ],
+  "notes": "The chart already plots percentage changes, so the answer is a percentage change OF a percentage change — 2.7 points of movement is a 36.48% increase, and quoting 2.7% is the trap the question is built on."
+ },
+ {
   "id": "econ-2025-hl-sa-q1-a-for",
   "topicId": "economics-3-5",
   "conceptId": "the-case-for-hosting-a-major-event",
@@ -25166,6 +25891,39 @@
    }
   ],
   "notes": "Capital spending is the small slice — about a seventh of the total — so an answer far above 15% means the wrong denominator was used."
+ },
+ {
+  "id": "econ-2025-ol-q12-b-ii",
+  "topicId": "economics-3-0",
+  "conceptId": "the-size-of-the-multiplier-in-an-open-economy",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 OL Q12(b)(ii)",
+  "questionText": "The Multiplier for an open economy is: 1 / (MPS + MPM). Assume that MPS is 0.2 and MPM is 0.3. Calculate, using the above formula, the size of the multiplier. Show all your workings.",
+  "stem": "",
+  "figureKey": "economics-2025-OL-scheme-p21-q12bii-working",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 @ 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1 1 0.2 + 0.3 = 0.5 = 2",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Four steps at three marks each. The two leakages are added FIRST, giving 0.5, and only then is 1 divided by it — the intermediate 0.5 is a step the scheme prints and pays for."
+   }
+  ],
+  "notes": "The scheme sets this as a fraction, so the flat text reads “0.2 + 0.3 = 0.5 = 2” and the division disappears. Bigger leakages mean a SMALLER multiplier, which is the relationship the arithmetic is testing."
  },
  {
   "id": "econ-2025-ol-sa-q1-ii",

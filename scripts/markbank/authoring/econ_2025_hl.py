@@ -675,4 +675,20 @@ P.cards.append(card(
     'many short-run curves, each a different plant size.',
     tariff_kind='fixed'))
 
+P.cards.append(card(
+    'econ-2025-hl-q15-b-i', 2025, 'higher', 'economics-3-3',
+    'percentage-increase-in-the-residential-property-price-index', '2025 HL Q15(b)(i)',
+    'Using the data in the chart above, calculate the percentage increase in the RPPI from '
+    'March 2024 to August 2024. Show all your workings.',
+    '8', 8,
+    [point('r-1', as_option(block(_MIXED, 'Workings: 10.1 \u2013 7.4 = 2.7%',
+                                  'Deduct 1 mark for omission of %')), 8,
+           'The base is MARCH, the earlier month, so the difference is divided by 7.4 and not by '
+           '10.1. Both figures are read off the chart; neither is in the wording.')],
+    'The chart already plots percentage changes, so the answer is a percentage change OF a '
+    'percentage change \u2014 2.7 points of movement is a 36.48% increase, and quoting 2.7% is '
+    'the trap the question is built on.',
+    tariff_kind='fixed',
+    figure_key='economics-2025-HL-scheme-p58-q15bi-working'))
+
 P.emit()

@@ -304,4 +304,39 @@ P.cards.append(card(
     section='A', tariff_kind='fixed',
     figure_key='economics-2022-OL-scheme-p09-q7aii-ticks'))
 
+# ── The bakery\u2019s two worked calculations ─────────────────────────────────
+# The tariffs are attributed by COORDINATE on scheme page 9, not by extraction
+# order: the marks column runs 5, 4+4+1+1, 10 (5 x 2), 5 (2+2+1) against parts
+# (a)(i), (a)(ii), (b)(i), (b)(ii). Read that way (a) sums to 15 and (b) sums to
+# 15, which is what a Section A question is worth \u2014 the check on the pairing.
+
+P.cards.append(card(
+    'econ-2022-ol-sa-q7-b-i', 2022, 'ordinary', 'economics-1-5',
+    'adding-up-a-bakerys-total-cost-for-the-week', '2022 OL Section A Q7(b)(i)',
+    'A bakery receives \u20ac5,000 in total from its sales in a week. Calculate the total cost '
+    'of operating the bakery for the week.',
+    '10 (5 x 2)', 10,
+    [point('r-1', as_option(block(BODY, '\u20ac1,000 + \u20ac1,500 + \u20ac300 + \u20ac750',
+                                  '\u27e810\u27e9')), 10,
+           'Five steps at two marks each. Total cost is FIXED plus VARIABLE \u2014 every cost in '
+           'the table goes in, whichever column it sits in.')],
+    'The scheme deducts a mark if the \u20ac sign is omitted. The table sorts the costs into '
+    'fixed and variable, and the sorting tempts students to total only one column.',
+    section='A', tariff_kind='fixed'))
+
+P.cards.append(card(
+    'econ-2022-ol-sa-q7-b-ii', 2022, 'ordinary', 'economics-1-5',
+    'net-profit-from-total-revenue-and-total-cost', '2022 OL Section A Q7(b)(ii)',
+    'Calculate the net profit the bakery earned in the week. Show your workings.',
+    '5 (2+2+1)', 5,
+    [point('r-1', as_option(block(BODY, 'Total revenue \u2013 Total Costs = Net Profit',
+                                  '-1 if \u20ac')), 5,
+           'Two marks for the relationship, two for the substitution and one for the figure. The '
+           '\u20ac5,000 is revenue, given in the question; the cost is the \u20ac3,550 worked '
+           'in (i), so an error there carries into here.')],
+    'The scheme prints the deduction note beside the working, so the two interleave in extraction '
+    '\u2014 the picture is the faithful form. A mark goes for the \u20ac sign.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2022-OL-scheme-p09-q7bii-working'))
+
 P.emit()

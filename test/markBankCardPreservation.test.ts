@@ -65,6 +65,15 @@ const decks = [
    * (reconcile.py) now reads 100.0%: 498 covered + 160 excluded-with-evidence
    * = all 658 asks the 2021-2025 papers print. Nothing removed; all prior ids
    * remain. */
+  /* 2026-08-29 (seventeenth wave): economics 354/268 -> 364/280. The whole
+   * WORKED-CALCULATION bucket, 23 asks, cleared. Most needed a picture and not
+   * a text row: set as fractions or with superscripts, the scheme's own working
+   * flattens into something not merely ugly but FALSE — the HHI reads
+   * "482 + 272 + ... = 3172" once the squares are lost, the multiplier reads
+   * "0.1 + 0.4 = 2", and the 2023 census percentage loses its numerator
+   * outright. Thirteen crops of the scheme's working now ride with those cards
+   * as solution figures, the mechanism the tick tables already use. Coverage
+   * 576/658 -> 598/658, exclusions 82 -> 60. Nothing removed. */
   /* 2026-08-29 (sixteenth wave): economics 350/268 -> 354/268. Four more, all
    * two-cell diagram-and-explanation parts, plus the blank market diagram the
    * 2022 HL paper prints in the Q15(a)(iii) answer space — cropped from its
@@ -163,8 +172,8 @@ const decks = [
    * The -trend suffix on the first is forced: econ-2021-hl-q16-a-i is taken by
    * a card whose citation econ_refs.py corrects to Q16(c)(i), and an id is
    * never renamed because it keys a student's review history. */
-  ['economics:higher', ECON_HIGHER, 354, '34c4a8bf18d920aac45aa8ab586ea3a1cb022f1e9d6b88cf4a63923314b2a297'],
-  ['economics:ordinary', ECON_ORDINARY, 268, 'ec49e61360c651facd59bad3268c60236b9802b271c69e0d4540f56c734a33e1'],
+  ['economics:higher', ECON_HIGHER, 364, '9db238d3137ddcec512729613d850836fd0a8258188ed41b02abedf126390253'],
+  ['economics:ordinary', ECON_ORDINARY, 280, '02fe3ba3852b692964fd098197d986ad5985d636aaa4ce13d60dd6d6ccdcb826'],
   /* 2026-08-23: the two newest subjects had shipped with NO identity baseline
    * at all — found by the ratchet-soundness review, which means every earlier
    * count in this file was guarding seven decks while two rode along
@@ -192,6 +201,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7294);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7316);
   });
 });

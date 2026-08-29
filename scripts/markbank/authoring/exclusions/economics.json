@@ -35,23 +35,13 @@
   "evidence": "Scheme p.20: 'Diagram B √' ⟨10⟩ — same class as the recorded 2024 OL Section A Q10 tick-the-diagram exclusion."
  },
  {
-  "ref": "2021 OL Section A Q1(i)",
-  "reason": "the response is the worked percentage calculation",
-  "evidence": "Scheme p.4: '8.9/ 89.6 x 100 = 9.93%' ⟨3 @ 4⟩ — the marks are for the arithmetic, so a card would show the answer beside the sum that produces it."
- },
- {
   "ref": "2021 OL Section A Q2",
   "reason": "answered by ticking positive or normative against each statement",
   "evidence": "Scheme p.4: a tick table 'Statement Positive Normative' with '√' placed per row, ⟨1 @ 9⟩ ⟨1 @ 6⟩ — same class as the recorded 2022 OL Section A Q4 tick exclusion."
  },
  {
-  "ref": "2021 OL Section A Q3(i)",
-  "reason": "the response is the worked elasticity calculation",
-  "evidence": "Scheme p.5: the PED formula worked through '−250 / +50 x (800+850)/(1000+750) … Answer: −4.71' ⟨6 @ 2⟩ ⟨1 @ 2⟩."
- },
- {
   "ref": "2021 OL Section A Q3(ii)",
-  "reason": "the verdict on the elasticity figure worked in (i) — answered off the student's own calculation, worth 1 mark",
+  "reason": "the scheme attributes no tariff to this part. Question 3 prints three mark cells and they sum to 15, the full value of a Section A question (1(i)+1(ii) and 5 both do the same); read by COORDINATE on scheme page 5 all three sit above the (ii) marker at y=244 — the 6@2 on the substitution row at y=180, the 1@2 at y=215 and the 1@1 on the same row as \"Answer: - 4.71\" at y=229. The scheme does print the response (\"It is elastic\"), but nothing prices it.",
   "evidence": "Scheme p.5: 'It is elastic (the PED is greater than 1 in absolute terms).' ⟨1 @ 1⟩ — unanswerable without the −4.71 worked in part (i)."
  },
  {
@@ -60,19 +50,9 @@
   "evidence": "Scheme p.5: '38 – 25 = 13 / 47 – 38 = 9' ⟨6 @ 2⟩; 'After 2nd is consumed or before 3rd is consumed.' ⟨1 @ 3⟩."
  },
  {
-  "ref": "2021 OL Section A Q7",
-  "reason": "the response is the worked budget calculation",
-  "evidence": "Scheme p.6: 'Total Income (€87.5 bn) - Total Expenditure (€86.1 bn) = €1.4bn. Surplus' ⟨5 @ 3⟩."
- },
- {
   "ref": "2022 HL Q11(b)(i)",
   "reason": "the explanation beside a diagram, with the tariff covering both (recorded EXCLUDED_TEXT class)",
   "evidence": "Paper: 'Explain, with the use of a fully labelled diagram how the equilibrium price of land is determined.' Scheme prints the diagram with 'The supply of land is fixed in quantity' welded beside it — recorded in econ_excluded.py EXCLUDED_TEXT."
- },
- {
-  "ref": "2022 HL Q14(b)(i)",
-  "reason": "the response is the worked cost calculation for the three missing table cells",
-  "evidence": "\"Calculate the missing figures for A, B, and C in the table. Calculations: A: Total Cost B: Average Variable Cost C: Marginal Cost 100,000 400,000 450,000 ⟨9⟩ + 260,000 2 – 400,000 €360,000 €200,000 €50,000\""
  },
  {
   "ref": "2022 HL Q14(b)(ii)",
@@ -150,11 +130,6 @@
   "evidence": "Show, on the above diagram, the new equilibrium price (P2) and the new equilibrium ⟨6 + 6⟩ quantity (Q2) as a result of (ii) above – illustrated above."
  },
  {
-  "ref": "2022 OL Q13(b)(ii)",
-  "reason": "the response is the worked multiplier calculation",
-  "evidence": "Assume that MPS is 0.1 and MPM is 0.4. Calculate, using the above formula, the size of the multiplier. ⟨12⟩ 0.1 + 0.4 = 2"
- },
- {
   "ref": "2022 OL Q14(a)(i)",
   "reason": "a table completion — the marks are for filling the factors-of-production table (already recorded in econ_excluded.py)",
   "evidence": "Complete the table below to show your understanding of the factors of production used in the production of yogurt. Some of the information has been completed. ... ⟨24⟩ ⟨4 x 6⟩ ⟨(4+2)⟩ 1st x 4 2nd x 2"
@@ -165,44 +140,9 @@
   "evidence": "State the year with the highest rate of economic growth: 2022 ⟨6+3⟩ State the year with the lowest rate of economic growth: 2020"
  },
  {
-  "ref": "2022 OL Section A Q7(b)(i)",
-  "reason": "the response is the worked total-cost calculation",
-  "evidence": "€1,000 + €1,500 + €300 + €750 = €3,550 ⟨10⟩ -1 if € omitted"
- },
- {
-  "ref": "2022 OL Section A Q7(b)(ii)",
-  "reason": "the response is the worked net-profit calculation",
-  "evidence": "Total revenue – Total Costs = Net Profit €5,000 - €3,550 = €1,450 ⟨5⟩ ⟨(2+2+1)⟩"
- },
- {
-  "ref": "2023 HL Q11(a)(i)",
-  "reason": "the response is the worked percentage-change calculation (sibling class of the many recorded 'worked calculation' exclusions)",
-  "evidence": "calculate the ⟨8⟩ (i) percentage change in the Irish population from 2016 to 2022. Show your workings. 4761865 × 100 = 7.59 % - 1 Mark if % omitted"
- },
- {
-  "ref": "2023 HL Q12(b)(i)",
-  "reason": "the response is the worked HHI calculation (the squares flatten in extraction; cf. the recorded 2025 HL Q11(a)(i) HHI exclusion)",
-  "evidence": "calculate the Herfindahl Hirschman Index for Irish Dairy Producers. Show your workings. 482 + 272 + 82 + 72 + 32 + 32 + 22 + 22 = 3172 ⟨9⟩"
- },
- {
   "ref": "2023 HL Q13(a)(i)",
   "reason": "labels to be placed on a drawn diagram; the credit is the thirteen labelled components of the circular-flow drawing itself, no separable wording (recorded diagram-labels class)",
   "evidence": "Scheme p.23: 'Draw a fully labelled diagram showing the Circular Flow of Income... ⟨13 @ 1⟩ Households Firms Purchase of Goods and Services Government Financial Institutions Foreign Markets' — the labels annotate the scheme's own drawing; econ_parts finds no response lines."
- },
- {
-  "ref": "2023 HL Q13(b)(i)",
-  "reason": "the response is the worked MPS calculation (worked-calculation class)",
-  "evidence": "Scheme: 'Calculate the marginal propensity to save (MPS)... Show your workings. 1- MPC 1-0.7 ⟨6⟩ MPS = 0.3 ⟨3 @ 2⟩'"
- },
- {
-  "ref": "2023 HL Q13(b)(ii)",
-  "reason": "the response is the worked multiplier calculation (worked-calculation class)",
-  "evidence": "Scheme: 'Calculate the value of the multiplier... 1/(MPS+MPM) = 1/(0.3+0.2) = 2 ⟨8⟩ ⟨4 @ 2⟩'"
- },
- {
-  "ref": "2023 HL Q15(a)(iii)",
-  "reason": "the response is the worked composite price index table — figures and arithmetic, not prose",
-  "evidence": "Using the information in the table below , complete the table … 55 X 100 = 110 x 60% = 66.0 Food 60% 50 55 … Price Index for the ⟨112.2⟩ 100% current Year"
  },
  {
   "ref": "2023 HL Q15(b)(ii)",
@@ -225,11 +165,6 @@
   "evidence": "Gross National Product (GNP) at Current Market Prices: €323bn + EU subsidies €1.7 bn - EU taxes €0.5bn … Gross National Income at Current Market Prices: €324.2 bn - Adjustments: €89 bn C = Modified Gross National Income ⟨2 @ 6⟩"
  },
  {
-  "ref": "2023 HL Section A Q3(a)",
-  "reason": "a table completion with worked figures — the marks are for the utility columns and workings, not prose (same class as the recorded Q4(a))",
-  "evidence": "Complete the missing total utility and marginal utility figures in the table below. Show your workings. … Workings: • 80 – 40 = 40 • 80 + 35 = 115 • 137 – 115 = 22"
- },
- {
   "ref": "2023 HL Section A Q3(b)",
   "reason": "answered by reading the marginal-utility figures the student calculated in 3(a) — the established leave-alone class of parts worked to the student's own earlier answer",
   "evidence": "• Answer: on the consumption of the third unit/after the consumption of the second unit. • Marginal utility declines from 40 to 35 utils."
@@ -248,21 +183,6 @@
   "ref": "2023 OL Q13(a)(i)",
   "reason": "Answered only by reading the bar chart printed beside it.",
   "evidence": "Scheme p.17: 'State the year with the highest value in food and drink exports from Ireland. 2019 1st@ 8 / State the year with the lowest value in food and drink exports from Ireland. 2016 2nd@ 4' — under the Bord Bia bar chart."
- },
- {
-  "ref": "2023 OL Q13(b)(ii)",
-  "reason": "Already registered in econ_excluded.py: 'the response is the worked calculation' — a card would show the answer beside the sum that produces it.",
-  "evidence": "Scheme p.18: 'National Income: ⟨18⟩ ⟨6 @ 3⟩ Y = C + I + G + (X-M); Y = €700m+ €200m + €400m + €300m - €200m; Y = €1,400m. Balance of Trade: ⟨9⟩ ⟨3 @ 3⟩ Exports – Imports; €300m – €200m = €100m.'"
- },
- {
-  "ref": "2023 OL Q14(b)(i)",
-  "reason": "The response is the worked total-revenue calculation (registered class, e.g. '2025 HL Q15(b)(i)').",
-  "evidence": "Scheme p.21: '⟨18⟩ ⟨3 @ 6⟩ Total revenue = Price x Quantity = €15 x 400 units = €6,000. Deduct 1 for omission of € sign.'"
- },
- {
-  "ref": "2023 OL Q14(b)(ii)",
-  "reason": "The response is the worked profit calculation, and it takes the €6,000 from the student's own answer to (i).",
-  "evidence": "Scheme p.21: '⟨9⟩ ⟨3 @ 3⟩ Profit = Total revenue – Total cost = €6,000 - €4,500 = €1,500. Deduct 1 for omission of € sign.'"
  },
  {
   "ref": "2023 OL Q15(b)(i)",
@@ -285,19 +205,9 @@
   "evidence": "Scheme p.24: 'The overall trend of the CPI between March and October is decreasing. It has decreased by almost 3%. It has decreased from just under 8% in March 2023 to approx.. 5% in October 2023.' ⟨6⟩."
  },
  {
-  "ref": "2024 HL Q12(b)(ii)",
-  "reason": "A calculation grid completed on the paper; the scheme's response is the worked composite-price-index table, ⟨19⟩ in one lump with no per-step tariff printed (the bracketed cells are answer values, not marks).",
-  "evidence": "Scheme p.24: 'Food 65% 60 66 — 66/60 × 100 = 110 × 65% ⟨71.5⟩; Transport 45/30 × 100 = 150 × 20% ⟨30.0⟩; Other 96/80 × 100 = 120 × 15% ⟨18⟩; Price Index for the current year ⟨119.5⟩'."
- },
- {
   "ref": "2024 HL Section A Q10(a)(i)",
   "reason": "The paper completes this part for the student — nothing is asked of them.",
   "evidence": "Paper: 'use the information above to calculate part (ii). Part (i) has been completed for you.' Scheme p.14: '(i) = Gross National Product (GNP) at Current Market Prices Ans: €325 bn'."
- },
- {
-  "ref": "2024 HL Section A Q10(a)(ii)",
-  "reason": "The response is the worked national-accounts calculation (mirrors registered '2023 HL Section A Q10': the responses are the national-accounts workings, not prose).",
-  "evidence": "Scheme p.14: 'GNP at CMP €325bn + EU subsidies +€2bn = €327bn – EU taxes -€0.5bn = €326.5bn; (ii) = Gross National Income at Current Market Prices Ans: €326.5 bn' ⟨6⟩."
  },
  {
   "ref": "2024 HL Section A Q3(a)",
@@ -335,11 +245,6 @@
   "evidence": "Scheme p27: '⟨12⟩ ⟨5 @ 1⟩ €23.4bn + €9.63bn + €3.91bn + €3.98bn + €3.30bn = €44.22 billion (-1 for omission of bn and -1 for omission of €)' then '⟨8⟩ ⟨3 @ 1⟩ €9.63bn/€44.22bn × 100 = 21.78%'."
  },
  {
-  "ref": "2024 OL Q14(c)(i)",
-  "reason": "Already recorded in econ_excluded.py: the response is the worked balance-of-trade calculation.",
-  "evidence": "Scheme p31: '⟨16⟩ ⟨4 @ 3⟩ Workings: Balance of trade: Total exports – Total imports = €165.7bn – €103.7bn = €62bn (-1m for omission of € or bn) … Surplus ✔ … The Balance of Trade is a surplus because the exports are greater than the imports. ⟨4⟩'"
- },
- {
   "ref": "2024 OL Q15(a)",
   "reason": "A table completion — the factor names and explanations are welded across the Name/Explanation/Example columns in the flattened text, so no contiguous slice exists (class of 2023 HL Section A Q4(a), 2022 OL Q14(a)(i)).",
   "evidence": "Scheme p33: '⟨20:⟩ ⟨3 @ 5⟩ ⟨1 @ 3⟩ ⟨1 @ 2⟩ Complete the table by either naming or explaining each factor of production' — flattening to 'Name of Explanation of Example Factor of Production Factor of Production and Farm Machinery Capital … The one taking a risk in setting Farm Owners Enterprise up the farm in return for profit.'"
@@ -353,11 +258,6 @@
   "ref": "2024 OL Q15(b)(ii)",
   "reason": "Already recorded in econ_excluded.py (and EXCLUDED_TEXT): the explanation beside a diagram — five chained bullets describing the drawn shift, with no stated split of the ⟨9⟩ across them.",
   "evidence": "Scheme p34: '(ii) Explain your answer. ⟨9⟩ • As the cost of fertiliser has risen many farmers have had to reduce its usage … • Consequently, the supply curve shifts left from S1 to S2 … • a new higher equilibrium price (Pe2) and • a new lower equilibrium quantity (Qe2).'"
- },
- {
-  "ref": "2024 OL Q15(c)(i)",
-  "reason": "Already recorded in econ_excluded.py: the response is the worked elasticity calculation.",
-  "evidence": "Scheme p35: '⟨20⟩ ⟨10 @ 2⟩ Workings: −40/+40 × (100+140)/2 ÷ (90+50)/2 … Answer: -1.71 (-2 for omission of – sign)'."
  },
  {
   "ref": "2024 OL Section A Q10",
@@ -390,19 +290,9 @@
   "evidence": "complete on the graph paper provided below: ⟨17:⟩ • The market demand curve for Scentastic. ⟨17 x 1⟩ • The market supply curve … Complete Axes: ⟨2⟩ … D:6 S:6 Equil"
  },
  {
-  "ref": "2025 HL Q15(b)(i)",
-  "reason": "worked RPPI percentage calculation — already recorded in econ_excluded.py",
-  "evidence": "Workings: 10.1 – 7.4 = 2.7% August 2024 −March 2024 × 100 March 2024 … Answer: 36.48% Deduct 1 mark for omission of %"
- },
- {
   "ref": "2025 OL Q11(b)(ii)",
   "reason": "labels to be placed on a diagram; no wording to show (same class as 2022/2023/2024 OL Q11(b)(ii), all registered)",
   "evidence": "Scheme p16: '(ii) Equilibrium occurs at point E on the diagram above. Clearly show and label on the above diagram: • The output the firm will produce in equilibrium (use label Q1) ⟨4⟩ • The price the firm will charge for its output (use label P1).' — the only answer is P1/Q1 drawn on the printed diagram; the scheme itemises no prose components."
- },
- {
-  "ref": "2025 OL Q12(b)(ii)",
-  "reason": "the response is the worked multiplier calculation (mirrors '2024 HL Q11(b)(i)')",
-  "evidence": "Scheme p19: 'Calculate, using the above formula, the size of the multiplier. Show all your workings. ⟨12⟩ ⟨4 @ 3⟩ 1 [over] 0.2 + 0.3 = [1 over] 0.5 = 2' — the marks are for the worked arithmetic, whose stacked fractions flatten illegibly."
  },
  {
   "ref": "2025 OL Q13(b)(i)",

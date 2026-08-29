@@ -273,5 +273,19 @@ P.cards.append(card(
     'It is the utility per euro that must match, not the price.',
     section='A', tariff_kind='fixed'))
 
+P.cards.append(card(
+    'econ-2023-hl-sa-q3-a', 2023, 'higher', 'economics-1-1',
+    'filling-in-total-and-marginal-utility', '2023 HL Section A Q3(a)',
+    'Complete the missing total utility and marginal utility figures in the table below. Show '
+    'your workings.',
+    '3 @ 2', 6,
+    [point('r-1', as_option(block(BODY, '\u2022 80 \u2013 40 = 40', 'Answer (b) or (c)')), 6,
+           'Three cells, three workings, two marks each. Marginal utility is the DIFFERENCE '
+           'between consecutive totals, so it runs both ways: subtract to get a marginal from '
+           'two totals, add to get the next total from a marginal.')],
+    'The blanks alternate between the two rows on purpose, so the same relationship has to be '
+    'used forwards and backwards. Reading marginal utility as a total is what breaks it.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2023-HL-scheme-p08-q3a-working'))
 
 P.emit()
