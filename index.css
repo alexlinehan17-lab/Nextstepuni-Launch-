@@ -1066,59 +1066,360 @@ html:not(.dark) [class*="text-[#A0978D]"] {
   animation: system-route-loader 1s cubic-bezier(.4, 0, .2, 1) infinite;
 }
 
-/* ── The loading rule ──────────────────────────────────────────────
-   The app's single loading state, used inline for Suspense and full-bleed
-   for the signup provisioning hold.
+/* ── Dashboard assembly loader ─────────────────────────────────────
+   Course, Calendar and Progress dock into a miniature dashboard. The visual
+   language now previews the product rather than borrowing a generic spinner.
 
-   Typographic rather than a spinner, because a spinning circle is the one
-   loading idiom that belongs to no brand in particular, and this product is
-   editorial everywhere else: serif line, letter-spaced kicker, and a rule
-   that sweeps beneath the text the way a reader's finger tracks it.
+   Everything that moves is CSS-driven. Loading appears while auth, account
+   creation and progress hydration are keeping JavaScript busiest, so the
+   animation stays on the compositor and cannot make a healthy app look hung.
+   The delayed `both` entrance also means sub-180ms waits end before loading
+   chrome flashes; navigation is never held to finish the sequence. */
+.nsu-loader-in {
+  --nsu-loader-shadow: rgba(26, 26, 26, .09);
+  --nsu-loader-shadow-deep: rgba(26, 26, 26, .13);
+  --nsu-loader-aura: rgba(242, 107, 31, .16);
+  animation: nsu-loader-in .42s .18s cubic-bezier(.22, 1, .36, 1) both;
+}
 
-   CSS keyframes, not Framer Motion, and that is the point rather than a
-   shortcut. This animation plays precisely while the main thread is busiest —
-   account creation, the join-code callable, progress hydration — and a
-   JS-driven animation stutters exactly then, which reads as the app having
-   hung. transform-only keyframes run on the compositor and stay smooth
-   through all of it.
+.dark .nsu-loader-in {
+  --nsu-loader-shadow: rgba(0, 0, 0, .24);
+  --nsu-loader-shadow-deep: rgba(0, 0, 0, .34);
+  --nsu-loader-aura: rgba(242, 107, 31, .12);
+}
 
-   Two sweeps at different durations, so they drift in and out of phase and the
-   loop never lands on an obvious repeat. The global prefers-reduced-motion
-   block already reduces these to a single frame. */
-.nsu-loader-rail {
+.nsu-dashboard-assembly {
   position: relative;
-  width: 176px;
-  height: 2px;
+  display: grid;
+  min-height: 218px;
+  place-items: center;
+  isolation: isolate;
+}
+
+.nsu-assembly-aura {
+  position: absolute;
+  z-index: -1;
+  width: min(76vw, 330px);
+  height: 132px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, var(--nsu-loader-aura) 0%, rgba(242, 107, 31, 0) 70%);
+  filter: blur(18px);
+  opacity: .72;
+  transform: translateY(24px) scale(.96);
+  animation: nsu-assembly-breathe 3.8s 1.35s ease-in-out infinite;
+}
+
+.nsu-assembly-board {
+  position: relative;
+  width: min(360px, calc(100vw - 48px));
+  aspect-ratio: 1.72;
+  padding: clamp(13px, 3.8vw, 16px);
+  overflow: hidden;
+  border: 1px solid var(--outline-soft);
+  border-radius: clamp(20px, 6vw, 25px);
+  background:
+    radial-gradient(circle at 10% 4%, rgba(242, 107, 31, .075), transparent 34%),
+    linear-gradient(145deg, var(--surface-paper), var(--surface-soft));
+  box-shadow:
+    0 28px 72px var(--nsu-loader-shadow),
+    0 2px 8px var(--nsu-loader-shadow);
+  transform-origin: 50% 60%;
+  animation: nsu-assembly-board-in .58s .18s cubic-bezier(.22, 1, .36, 1) both;
+}
+
+.nsu-assembly-board::after {
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(255, 255, 255, .52);
+  border-radius: inherit;
+  content: '';
+  pointer-events: none;
+}
+
+.dark .nsu-assembly-board::after { border-color: rgba(255, 255, 255, .045); }
+
+.nsu-assembly-masthead {
+  display: flex;
+  height: clamp(16px, 4vw, 19px);
+  align-items: center;
+  gap: 6px;
+}
+
+.nsu-assembly-mark {
+  width: 8px;
+  height: 8px;
+  border-radius: 3px;
+  background: var(--accent-hex);
+  box-shadow: 0 3px 8px rgba(242, 107, 31, .24);
+}
+
+.nsu-assembly-wordmark {
+  width: 39px;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--ink-primary);
+  opacity: .78;
+}
+
+.nsu-assembly-control {
+  width: 14px;
+  height: 5px;
+  margin-left: auto;
+  border-radius: 999px;
+  background: var(--ink-muted);
+  opacity: .34;
+}
+
+.nsu-assembly-control--quiet {
+  width: 5px;
+  margin-left: 0;
+}
+
+.nsu-assembly-grid {
+  display: grid;
+  height: calc(100% - clamp(23px, 6vw, 29px));
+  grid-template-columns: minmax(0, 1.36fr) minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1.08fr) minmax(0, .82fr);
+  gap: clamp(7px, 2.2vw, 10px);
+  padding-top: clamp(7px, 2vw, 9px);
+}
+
+.nsu-assembly-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--outline-soft);
+  background: var(--surface-paper);
+  box-shadow:
+    0 13px 30px var(--nsu-loader-shadow-deep),
+    0 2px 5px var(--nsu-loader-shadow);
+  will-change: transform, opacity;
+}
+
+.nsu-assembly-course {
+  display: flex;
+  grid-row: 1 / 3;
+  flex-direction: column;
+  padding: clamp(11px, 3vw, 15px);
+  border-radius: clamp(13px, 4vw, 17px);
+  animation: nsu-course-card-in .64s .27s cubic-bezier(.22, 1, .36, 1) both;
+}
+
+.nsu-assembly-calendar {
+  padding: clamp(8px, 2.4vw, 11px);
+  border-radius: clamp(12px, 3.8vw, 15px);
+  animation: nsu-calendar-card-in .64s .36s cubic-bezier(.22, 1, .36, 1) both;
+}
+
+.nsu-assembly-progress {
+  display: flex;
+  align-items: center;
+  gap: clamp(7px, 2vw, 10px);
+  padding: clamp(7px, 2.2vw, 10px);
+  border-radius: clamp(12px, 3.8vw, 15px);
+  animation: nsu-progress-card-in .64s .45s cubic-bezier(.22, 1, .36, 1) both;
+}
+
+.nsu-assembly-card-heading {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--ink-muted);
+  font-size: clamp(7px, 2vw, 9px);
+  font-weight: 700;
+  letter-spacing: .12em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.nsu-assembly-card-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent-hex);
+}
+
+.nsu-assembly-card-dot--teal { background: var(--dashboard-series-2); }
+
+.nsu-course-lines {
+  display: grid;
+  gap: clamp(6px, 1.8vw, 8px);
+  margin-top: clamp(15px, 4.5vw, 22px);
+}
+
+.nsu-course-line,
+.nsu-progress-line {
+  display: block;
+  height: clamp(3px, .9vw, 4px);
   border-radius: 999px;
   background: var(--outline-soft);
+}
+
+.nsu-course-line--title {
+  width: 70%;
+  height: clamp(5px, 1.5vw, 6px);
+  background: var(--ink-primary);
+  opacity: .82;
+}
+
+.nsu-course-line--body { width: 88%; }
+.nsu-course-line--short { width: 58%; }
+
+.nsu-course-track {
+  height: clamp(5px, 1.4vw, 6px);
+  margin-top: auto;
   overflow: hidden;
-}
-
-.nsu-loader-sweep {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 38%;
   border-radius: 999px;
+  background: var(--dashboard-track);
+}
+
+.nsu-course-fill {
+  display: block;
+  width: 68%;
+  height: 100%;
+  border-radius: inherit;
   background: var(--accent-hex);
-  will-change: transform;
+  transform-origin: left;
+  animation: nsu-course-fill-in .72s .83s cubic-bezier(.22, 1, .36, 1) both;
 }
 
-.nsu-loader-sweep--lead { animation: nsu-loader-sweep 1.15s cubic-bezier(.65, 0, .35, 1) infinite; }
-.nsu-loader-sweep--echo { opacity: .28; animation: nsu-loader-sweep 1.9s cubic-bezier(.65, 0, .35, 1) infinite; }
-
-@keyframes nsu-loader-sweep {
-  from { transform: translateX(-120%); }
-  to   { transform: translateX(280%); }
+.nsu-calendar-week {
+  display: grid;
+  height: calc(100% - 13px);
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  align-items: end;
+  gap: clamp(2px, .8vw, 4px);
+  padding-top: clamp(7px, 2vw, 10px);
 }
 
-/* One-time entrance, so the loader resolves in rather than popping. `both`
-   holds the start frame during the delay-free first paint. */
-.nsu-loader-in { animation: nsu-loader-in .45s cubic-bezier(.2, .7, .3, 1) both; }
+.nsu-calendar-day {
+  display: grid;
+  min-width: 0;
+  height: 100%;
+  place-items: end center;
+  color: var(--ink-muted);
+  font-size: clamp(5px, 1.5vw, 7px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.nsu-calendar-day i {
+  display: block;
+  width: 100%;
+  height: 45%;
+  max-height: 15px;
+  border-radius: 3px;
+  background: var(--surface-soft);
+}
+
+.nsu-calendar-day--active { color: var(--accent-text); }
+
+.nsu-calendar-day--active i {
+  background: var(--accent-tint);
+  box-shadow: inset 0 -2px 0 var(--accent-hex);
+  transform-origin: bottom;
+  animation: nsu-calendar-focus-in .5s .91s cubic-bezier(.22, 1, .36, 1) both;
+}
+
+.nsu-progress-ring {
+  position: relative;
+  width: clamp(24px, 7vw, 31px);
+  height: clamp(24px, 7vw, 31px);
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: conic-gradient(var(--accent-hex) 0 72%, var(--dashboard-track) 72% 100%);
+  animation: nsu-progress-ring-in .62s .78s cubic-bezier(.22, 1, .36, 1) both;
+}
+
+.nsu-progress-ring::after {
+  position: absolute;
+  inset: clamp(4px, 1.2vw, 6px);
+  border-radius: inherit;
+  background: var(--surface-paper);
+  content: '';
+}
+
+.nsu-progress-copy {
+  display: grid;
+  min-width: 0;
+  flex: 1;
+  gap: 4px;
+}
+
+.nsu-progress-label {
+  overflow: hidden;
+  color: var(--ink-muted);
+  font-size: clamp(7px, 2vw, 9px);
+  font-weight: 700;
+  letter-spacing: .08em;
+  line-height: 1.1;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.nsu-progress-line { width: 92%; }
+.nsu-progress-line--short { width: 62%; }
+
+.nsu-loader-copy { margin-top: clamp(18px, 4vw, 24px); }
 
 @keyframes nsu-loader-in {
-  from { opacity: 0; transform: translateY(6px); }
-  to   { opacity: 1; transform: none; }
+  from { opacity: 0; transform: translateY(7px); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes nsu-assembly-board-in {
+  from { opacity: 0; transform: translateY(8px) scale(.985); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes nsu-course-card-in {
+  from { opacity: 0; transform: translate3d(-14px, 13px, 0) rotate(-1.8deg) scale(.97); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes nsu-calendar-card-in {
+  from { opacity: 0; transform: translate3d(13px, -8px, 0) rotate(1.6deg) scale(.965); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes nsu-progress-card-in {
+  from { opacity: 0; transform: translate3d(14px, 11px, 0) rotate(1.4deg) scale(.965); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes nsu-course-fill-in {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+@keyframes nsu-calendar-focus-in {
+  from { opacity: .35; transform: scaleY(.35); }
+  to { opacity: 1; transform: scaleY(1); }
+}
+
+@keyframes nsu-progress-ring-in {
+  from { opacity: 0; transform: rotate(-32deg) scale(.78); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes nsu-assembly-breathe {
+  0%, 100% { opacity: .64; transform: translateY(24px) scale(.96); }
+  50% { opacity: .82; transform: translateY(23px) scale(1.025); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nsu-loader-in,
+  .nsu-assembly-aura,
+  .nsu-assembly-board,
+  .nsu-assembly-card,
+  .nsu-course-fill,
+  .nsu-calendar-day--active i,
+  .nsu-progress-ring {
+    animation-delay: 0ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }
 
 /* ── Chunky range sliders ── */

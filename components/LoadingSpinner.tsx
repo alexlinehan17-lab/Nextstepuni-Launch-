@@ -19,8 +19,14 @@ import type React from 'react';
  * during signup is both wrong and slightly alarming when it sits there for a
  * few seconds. Callers on the signup path pass their own wording.
  *
+ * The visual is a miniature dashboard assembling itself: Course, Calendar and
+ * Progress settle into the same editorial grid the student is about to enter.
+ * It is CSS-only so account creation and hydration cannot make the motion
+ * stutter while the JavaScript thread is busy. The entrance is also delayed in
+ * CSS, which means very short waits finish before any loading chrome flashes.
+ *
  * `overlay` covers the viewport. The provisioning hold needs that: rendering a
- * bare inline spinner there left the app header and points pill visible behind
+ * bare inline loader there left the app header and points pill visible behind
  * it, and returning the login form put a sign-in screen inside a signed-in
  * shell, which read as having been logged out.
  */
@@ -37,14 +43,65 @@ export const LoadingSpinner: React.FC<{
       overlay ? 'fixed inset-0 z-[200] h-full' : 'min-h-[45vh]',
     ].join(' ')}
   >
-    <div className="nsu-loader-in w-full max-w-xs">
-      <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--ink-muted)]">{kicker}</p>
-      <p className="mt-3 font-serif text-[22px] font-semibold leading-snug text-[var(--ink-primary)]">{label}</p>
-      {/* Decorative: the copy above already announces the state to assistive
-          tech, and a second live description of a spinner is noise. */}
-      <div className="nsu-loader-rail mx-auto mt-6" aria-hidden="true">
-        <span className="nsu-loader-sweep nsu-loader-sweep--echo" />
-        <span className="nsu-loader-sweep nsu-loader-sweep--lead" />
+    <div className="nsu-loader-in w-full max-w-[430px]">
+      {/* Decorative: the copy below already announces the state to assistive
+          tech, and narrating every miniature dashboard card would be noise. */}
+      <div className="nsu-dashboard-assembly" aria-hidden="true">
+        <div className="nsu-assembly-aura" />
+        <div className="nsu-assembly-board">
+          <div className="nsu-assembly-masthead">
+            <span className="nsu-assembly-mark" />
+            <span className="nsu-assembly-wordmark" />
+            <span className="nsu-assembly-control" />
+            <span className="nsu-assembly-control nsu-assembly-control--quiet" />
+          </div>
+
+          <div className="nsu-assembly-grid">
+            <div className="nsu-assembly-card nsu-assembly-course" data-loader-card="course">
+              <div className="nsu-assembly-card-heading">
+                <span className="nsu-assembly-card-dot" />
+                <span>Course</span>
+              </div>
+              <div className="nsu-course-lines">
+                <span className="nsu-course-line nsu-course-line--title" />
+                <span className="nsu-course-line nsu-course-line--body" />
+                <span className="nsu-course-line nsu-course-line--short" />
+              </div>
+              <div className="nsu-course-track">
+                <span className="nsu-course-fill" />
+              </div>
+            </div>
+
+            <div className="nsu-assembly-card nsu-assembly-calendar" data-loader-card="calendar">
+              <div className="nsu-assembly-card-heading">
+                <span className="nsu-assembly-card-dot nsu-assembly-card-dot--teal" />
+                <span>Calendar</span>
+              </div>
+              <div className="nsu-calendar-week">
+                {['M', 'T', 'W', 'T', 'F'].map((day, index) => (
+                  <span key={`${day}-${index}`} className={index === 2 ? 'nsu-calendar-day nsu-calendar-day--active' : 'nsu-calendar-day'}>
+                    <span>{day}</span>
+                    <i />
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="nsu-assembly-card nsu-assembly-progress" data-loader-card="progress">
+              <span className="nsu-progress-ring" />
+              <span className="nsu-progress-copy">
+                <span className="nsu-progress-label">Progress</span>
+                <span className="nsu-progress-line" />
+                <span className="nsu-progress-line nsu-progress-line--short" />
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="nsu-loader-copy">
+        <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--ink-muted)]">{kicker}</p>
+        <p className="mt-2.5 font-serif text-[22px] font-semibold leading-snug text-[var(--ink-primary)]">{label}</p>
       </div>
     </div>
   </div>
