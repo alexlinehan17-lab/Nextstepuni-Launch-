@@ -20,6 +20,7 @@ import {
   isRegistrationProvisioning,
   registrationHoldRemainingMs,
   stashRegistrationError,
+  subscribeToRegistrationProvisioning,
   takeRegistrationError,
 } from '@/utils/registrationProvisioning';
 
@@ -47,6 +48,21 @@ describe('registration provisioning marker', () => {
     beginRegistrationProvisioning(1_000_000);
     endRegistrationProvisioning();
     expect(isRegistrationProvisioning(1_000_000)).toBe(false);
+  });
+
+  it('notifies reactive readers immediately when the hold starts and ends', async () => {
+    const states: boolean[] = [];
+    const unsubscribe = subscribeToRegistrationProvisioning(() => {
+      states.push(isRegistrationProvisioning());
+    });
+
+    beginRegistrationProvisioning();
+    await Promise.resolve();
+    endRegistrationProvisioning();
+    await Promise.resolve();
+
+    unsubscribe();
+    expect(states).toEqual([true, false]);
   });
 
   it('self-expires, so a crashed attempt cannot strand a later student', () => {
