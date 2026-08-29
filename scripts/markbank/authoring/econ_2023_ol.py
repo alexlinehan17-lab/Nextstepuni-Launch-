@@ -493,4 +493,60 @@ P.cards.append(card(
     tariff_kind='fixed',
     figure_key='economics-2023-OL-paper-p16-art'))
 
+P.cards.append(card(
+    'econ-2023-ol-q11-b-ii', 2023, 'ordinary', 'economics-2-0',
+    'marking-output-price-and-cost-at-long-run-equilibrium', '2023 OL Q11(b)(ii)',
+    'Equilibrium occurs at point E on the diagram above. Clearly show and label on the above '
+    'diagram: the output the firm will produce in the equilibrium (use label Q1); the price the '
+    'firm will charge for its output (use label P1); the average cost of producing this output '
+    '(using point C1).',
+    'fixed', 9,
+    [point('r-1', as_option(block(BODY, 'The output the firm will produce in the equilibrium (use label Q1)',
+                                  '1st @ 4')), 4,
+           'Four marks. E is where marginal cost cuts marginal revenue, and the output is read '
+           'straight down from E \u2014 not from where MC cuts average cost at W.'),
+     point('r-2', as_option(block(BODY, 'The price the firm will charge for its output (use label P1)',
+                                  '2nd@ 4')), 4,
+           'Four marks. The price is read UP from Q1 to the average revenue curve, then across '
+           'to the axis.'),
+     point('r-3', as_option(block(BODY, 'The average cost of producing this output (using point C1)',
+                                  'Price Costs')), 1,
+           'One mark, and it lands on the same spot as P1: at long-run equilibrium AC just '
+           'touches AR above Q1, so average cost equals price and the firm earns normal profit '
+           'only.')],
+    'Two different points are marked on this diagram, E and W, and only E gives the equilibrium '
+    'output. W is the lowest point of average cost, which the firm does NOT produce at.',
+    tariff_kind='fixed',
+    figure_key='economics-2023-OL-scheme-p13-q11bii-diagram'))
+
+P.cards.append(card(
+    'econ-2023-ol-q15-b-i', 2023, 'ordinary', 'economics-1-1',
+    'drawing-a-labelled-market-demand-curve', '2023 OL Q15(b)(i)',
+    'Draw and label (include the axes) the market demand curve for electric cars.',
+    '4 @ 4', 16,
+    [point('r-1', as_option(block(BODY, 'Price D D2 Quantity', '(ii) If consumers income increases')), 16,
+           'Four things at four marks each: the two axes, the curve and its label. The axes '
+           'carry marks of their own here \u2014 the question says so \u2014 and Price goes on '
+           'the vertical, Quantity on the horizontal.')],
+    'A demand curve slopes DOWN, and the marks are as much for labelling as for drawing: an '
+    'unlabelled correct curve loses more than half the part.',
+    tariff_kind='fixed',
+    figure_key='economics-2023-OL-scheme-p24-q15b-diagram'))
+
+P.cards.append(card(
+    'econ-2023-ol-q15-b-ii', 2023, 'ordinary', 'economics-1-1',
+    'shifting-demand-when-incomes-rise', '2023 OL Q15(b)(ii)',
+    'If consumers income increases, show how this would affect the market demand curve in (i) '
+    'above. Explain your answer.',
+    '9 (6+3)', 9,
+    [point('r-1', as_option(block(BODY, 'The demand curve shifts to the right. Consumers can afford to buy more',
+                                  '(iii) Explain one factor')), 9,
+           'Six for the drawing and three for the words. Income is a non-price determinant, so '
+           'the whole curve moves right to D2 \u2014 a movement ALONG the old curve would mean '
+           'the price of electric cars had changed, and it has not.')],
+    'Electric cars are a normal good here, so more income means more demand at every price. The '
+    'explanation is only three of the nine marks, but without it the drawing is unexplained.',
+    tariff_kind='fixed',
+    figure_key='economics-2023-OL-scheme-p24-q15b-diagram'))
+
 P.emit()

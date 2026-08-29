@@ -469,4 +469,101 @@ P.cards.append(card(
     tariff_kind='fixed',
     figure_key='economics-2022-OL-paper-p10-art'))
 
+# ── Drawings, answered by the scheme's own model diagram ───────────────────
+# The scheme answers these graphically, so the crop of its completed diagram is
+# the card's solution figure — the mechanism the tick tables use. Where the
+# scheme prints its marks ON the diagram (2022 OL Q12(b): an 8 beside D2, a 6
+# beside P2, a 6 beside Q2) that is the tariff, and it settles a split the flat
+# text leaves ambiguous.
+
+P.cards.append(card(
+    'econ-2022-ol-q11-b-ii', 2022, 'ordinary', 'economics-2-0',
+    'marking-output-price-and-average-cost-on-a-monopoly-diagram', '2022 OL Q11(b)(ii)',
+    'Equilibrium occurs at the point G on the diagram above. Clearly show and label on the '
+    'above diagram: the output the firm will produce in equilibrium (use label Q1); the price '
+    'the firm will charge for its output (use label P1); the average cost of producing this '
+    'output (use point C1).',
+    'fixed', 9,
+    [point('r-1', as_option(block(BODY, 'The output the firm will produce in equilibrium (use label Q1)',
+                                  '\u2022 The price the firm will charge')), 4,
+           'Four marks. G is where MC cuts MR, and the output is found by dropping STRAIGHT DOWN '
+           'from G to the quantity axis \u2014 not by reading across from it.'),
+     point('r-2', as_option(block(BODY, 'The price the firm will charge for its output (use label P1)',
+                                  '\u2022 The average cost of producing')), 4,
+           'Four marks. The price is read off the AVERAGE REVENUE curve above Q1, not off G '
+           'itself. This is the step most often missed: the firm sets output where MC = MR but '
+           'charges what the demand curve will bear.'),
+     point('r-3', as_option(block(BODY, 'The average cost of producing this output (use point C1)',
+                                  '13 | P a g e')), 1,
+           'One mark. Average cost is read off AC above the same Q1, which puts C1 below P1 '
+           '\u2014 and the gap between them is the profit per unit.')],
+    'Three readings off ONE vertical line at Q1: the quantity below it, the price where it meets '
+    'AR, the cost where it meets AC. Reading the price off point G is the classic error, and it '
+    'is worth four of the nine marks.',
+    tariff_kind='fixed',
+    figure_key='economics-2022-OL-scheme-p14-q11bii-diagram'))
+
+P.cards.append(card(
+    'econ-2022-ol-q12-a-i', 2022, 'ordinary', 'economics-1-1',
+    'plotting-a-market-demand-curve-from-a-schedule', '2022 OL Q12(a)(i)',
+    'Using the above information and on one diagram on the graph paper below, draw and label '
+    'the market demand curve for reusable coffee cups.',
+    '14', 14,
+    [point('r-1', as_option(block(BODY, '5 Q1 D 0 10 20 30 40 50 60', '15 | P a g e')), 14,
+           'Fourteen marks for this curve \u2014 the scheme prints one cell for the whole '
+           'diagram, 28 at 14 per curve. Demand falls as price rises, so the curve runs from '
+           '\u20ac9 at 10,000 units down to \u20ac5 at 50,000, and it has to be LABELLED D.')],
+    'Both curves go on one diagram, and the schedule gives the demand column and the supply '
+    'column side by side. Plotting the wrong column produces a curve sloping the wrong way.',
+    tariff_kind='fixed',
+    figure_key='economics-2022-OL-scheme-p16-q12a-diagram'))
+
+P.cards.append(card(
+    'econ-2022-ol-q12-a-ii', 2022, 'ordinary', 'economics-1-2',
+    'plotting-a-market-supply-curve-from-a-schedule', '2022 OL Q12(a)(ii)',
+    'Using the above information and on one diagram on the graph paper below, draw and label '
+    'the market supply curve for reusable coffee cups.',
+    '14', 14,
+    [point('r-1', as_option(block(BODY, 'Demand and Supply Curves Reusable Coffee Cups',
+                                  '\u27e828\u27e9')), 14,
+           'Fourteen marks, the second half of the scheme\u2019s 28 at 14 per curve. Supply '
+           'RISES with price \u2014 10,000 units at \u20ac5 up to 50,000 at \u20ac9 \u2014 '
+           'and the curve has to be labelled S.')],
+    'Supply and demand come off the same schedule and cross at \u20ac7 and 30,000 units, the '
+    'one row where the two quantities are equal. That row is the check that both curves are '
+    'plotted right.',
+    tariff_kind='fixed',
+    figure_key='economics-2022-OL-scheme-p16-q12a-diagram'))
+
+P.cards.append(card(
+    'econ-2022-ol-q12-b-ii', 2022, 'ordinary', 'economics-1-1',
+    'showing-a-demand-shift-after-a-celebrity-endorsement', '2022 OL Q12(b)(ii)',
+    'Show, on the above diagram how the change in (i) above might affect the demand curve.',
+    '8', 8,
+    [point('r-1', as_option(block(BODY, 'Demand curve would shift to the right',
+                                  '(iii) Show, on the above diagram, the new equilibrium price')), 8,
+           'Eight marks, and the scheme prints the 8 on the diagram beside D2. More demand at '
+           'every price means the WHOLE curve moves right \u2014 it is a shift, not a slide '
+           'along the old curve.')],
+    'A celebrity endorsement changes tastes, which is a non-price determinant, so the curve '
+    'moves. Moving along the existing curve would mean the price had changed, and nothing here '
+    'says it has.',
+    tariff_kind='fixed',
+    figure_key='economics-2022-OL-scheme-p17-q12b-diagram'))
+
+P.cards.append(card(
+    'econ-2022-ol-q12-b-iii', 2022, 'ordinary', 'economics-1-0',
+    'reading-the-new-equilibrium-after-a-demand-shift', '2022 OL Q12(b)(iii)',
+    'Show, on the above diagram, the new equilibrium price (P2) and the new equilibrium '
+    'quantity (Q2) as a result of (ii) above.',
+    '6 + 6', 12,
+    [point('r-1', as_option(block(BODY, 'D2 8 D Q1 Q2 6 Quantity', '(i) If a celebrity')), 12,
+           'Six for P2 and six for Q2 \u2014 the scheme prints both figures on the diagram '
+           'itself. The new equilibrium is where D2 cuts the UNCHANGED supply curve, so both '
+           'price and quantity rise.')],
+    'Supply has not moved, so the new crossing point slides UP the existing S curve. Students '
+    'who shift supply as well end up with a quantity change and no price change.',
+    tariff_kind='fixed',
+    figure_key='economics-2022-OL-scheme-p17-q12b-diagram'))
+
 P.emit()

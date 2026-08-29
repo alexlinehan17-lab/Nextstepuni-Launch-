@@ -20,11 +20,6 @@
   "evidence": "Scheme p.8: the answer table '+ 1 / + 0.2 Years / + 0.2 / Yes' ⟨4 @ 3⟩ — chart-reading, the established leave-alone class."
  },
  {
-  "ref": "2021 OL Q12(a)(ii)",
-  "reason": "labels to be placed on a diagram; no wording to show",
-  "evidence": "Scheme p.12: the answers are the placements 'P1/C1 P1/Q1/C1' ⟨2 @ 4⟩ ⟨1 @ 2⟩ on the perfect-competition diagram — same class as the recorded 2022-24 OL Q11(b)(ii) exclusions."
- },
- {
   "ref": "2021 OL Q13(c)(ii)",
   "reason": "ALREADY RECORDED in econ_excluded.py: 'the responses are figures read out of the CPI table'",
   "evidence": "Scheme p.16: the answers are '-1.5%', '-0.2%', 'October to November / November to December' ⟨3 @ 6⟩, each read off the CPI chart printed beside the question."
@@ -85,34 +80,9 @@
   "evidence": "\"Identify which chart accurately displays the correct trend in in the ECB rate… Choose by means of a tick one of the boxes below. ⟨1⟩ Figure A: Figure B: ✔\""
  },
  {
-  "ref": "2022 OL Q11(b)(ii)",
-  "reason": "labels to be placed on a diagram; no wording to show (already recorded in econ_excluded.py)",
-  "evidence": "Cleary show and label on the diagram: • The output the firm will produce in equilibrium (use label Q1) ⟨4⟩ • The price the firm will charge for its output (use label P1) ⟨4⟩ • The average cost of producing this output (use point C1) ⟨1⟩"
- },
- {
-  "ref": "2022 OL Q12(a)(i)",
-  "reason": "a graph to be drawn from the demand schedule; the scheme's response is the drawn model graph",
-  "evidence": "Using the above information and on one diagram on the graph paper below ... (i) Draw and label the market demand curve for reusable coffee cups. ... Demand and Supply Curves Reusable Coffee Cups ⟨28⟩ ⟨(14 x 2)⟩"
- },
- {
-  "ref": "2022 OL Q12(a)(ii)",
-  "reason": "a graph to be drawn from the supply schedule; the scheme's response is the same drawn model graph, 14 marks per curve",
-  "evidence": "(ii) Draw and label the market supply curve for reusable coffee cups. ... ⟨28⟩ ⟨(14 x 2)⟩"
- },
- {
   "ref": "2022 OL Q12(a)(iii)",
-  "reason": "P1 and Q1 marked on the student's own drawn diagram; the scheme prints no separate tariff for this step beyond the drawing block",
+  "reason": "the scheme prints one cell for the whole of Q12(a) — 28, at 14 x 2 — against a single model diagram that answers (i), (ii) and (iii) together. The 14 x 2 maps onto the two curves named in (i) and (ii), which are now carded at 14 each; nothing prices the marking of P1 and Q1 separately, and the paper prints no per-part marks for Section B at Ordinary Level.",
   "evidence": "(iii) Show on your diagram: ▪ The market equilibrium price for reusable coffee cups (use P1) ▪ The market equilibrium quantity (use Q1) — answered only by the model graph, whose sole cells are ⟨28⟩ ⟨(14 x 2)⟩ over the two curves"
- },
- {
-  "ref": "2022 OL Q12(b)(ii)",
-  "reason": "a shift to be drawn on the printed diagram; no wording to show",
-  "evidence": "Show, on the above diagram how the change in (i) above might affect the demand ⟨8⟩ curve. Demand curve would shift to the right – D2 above on diagram."
- },
- {
-  "ref": "2022 OL Q12(b)(iii)",
-  "reason": "labels to be placed on the printed diagram; no wording to show",
-  "evidence": "Show, on the above diagram, the new equilibrium price (P2) and the new equilibrium ⟨6 + 6⟩ quantity (Q2) as a result of (ii) above – illustrated above."
  },
  {
   "ref": "2022 OL Q14(a)(i)",
@@ -143,21 +113,6 @@
   "ref": "2023 HL Section A Q4(a)",
   "reason": "already recorded in econ_excluded.py: 'a table completion — the marks are for filling the table, not for prose'",
   "evidence": "Complete the missing average cost and marginal cost figures in the table below. ⟨6⟩ … Workings: • 82 ÷ 2 = 41 • 108 - 82 = 26 • 152 ÷ 4 = 38 • 152 – 108 = 44"
- },
- {
-  "ref": "2023 OL Q11(b)(ii)",
-  "reason": "Already registered in econ_excluded.py: 'labels to be placed on a diagram; no wording to show' — the response is Q1/P1/C1 placed on the printed long-run equilibrium diagram (2022 and 2024 OL siblings registered identically).",
-  "evidence": "Scheme p.13: '• The output the firm will produce in the equilibrium (use label Q1) 1st @ 4 • The price the firm will charge for its output (use label P1) 2nd@ 4 • The average cost of producing this output (using point C1) 3rd @ 1' followed only by the completed diagram."
- },
- {
-  "ref": "2023 OL Q15(b)(i)",
-  "reason": "A graph to be drawn; the scheme's response is the drawn figure itself with no creditable components itemised in prose — the registered class of '2024 OL Q13(a)(i)' and '2025 OL Q13(b)(i)'. Not figureNeeded: there is no wording to card even with a crop.",
-  "evidence": "Scheme p.24: '(i) Draw and label (include the axes) the market demand curve for electric cars. ⟨16⟩ ⟨4 @ 4⟩' followed only by the drawing: 'Price / D / D2 / Quantity'."
- },
- {
-  "ref": "2023 OL Q15(b)(ii)",
-  "reason": "The shift is shown on the student's own (b)(i) diagram and the scheme never says which of the printed 6/3 pays the drawing versus the words — the class of the registered '2024 OL Q15(b)(ii)' and '2025 OL Q15(b)(ii)' ('the explanation beside a diagram'); assigning the split would invent a tariff.",
-  "evidence": "Scheme p.24: '⟨9⟩ ⟨(6+3)⟩ The demand curve shifts to the right. Consumers can afford to buy more.' against 'show how this would affect the market demand curve in (i) above. Explain your answer.'"
  },
  {
   "ref": "2024 HL Section A Q10(a)(i)",

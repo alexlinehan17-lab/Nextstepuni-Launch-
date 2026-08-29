@@ -4176,6 +4176,55 @@
   "notes": "The pairing is the point: the same salary carries nine times the tax in Germany that it does in Ireland."
  },
  {
+  "id": "econ-2021-ol-q12-a-ii",
+  "topicId": "economics-2-0",
+  "conceptId": "marking-price-output-and-cost-in-long-run-perfect-competition",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 OL Q12(a)(ii)",
+  "questionText": "Equilibrium occurs at the point B on the diagram above. Show on the diagram above: the price the firm will charge for its output (use label P1); the output the firm will produce in equilibrium (use label Q1); the average cost of producing this output (use point C1).",
+  "stem": "",
+  "figureKey": "economics-2021-OL-scheme-p12-q12a-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The price the firm will charge for its output (use label P1)",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Four marks. In perfect competition the firm is a price TAKER, so the price is the horizontal D = AR = MR line — it does not read off a downward-sloping curve."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The output the firm will produce in equilibrium (use label Q1)",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Four marks. Output is found by dropping from B — where MC cuts the AR line — straight down to the quantity axis."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "The average cost of producing this output (use point C1)",
+    "marks": 2,
+    "openList": true,
+    "contextNote": "Two marks, and this is the point of the question: in LONG-RUN equilibrium average cost equals price, so C1 sits at the same height as P1. The scheme labels the axis P1 / C1 for exactly that reason."
+   }
+  ],
+  "notes": "Long run means normal profit only, so price and average cost coincide. A student who marks C1 below P1 has drawn a supernormal profit that cannot survive free entry — and the scheme’s split, 4 and 4 for P1 and Q1 but only 2 for C1, still costs them the mark."
+ },
+ {
   "id": "econ-2021-ol-sa-q10-b",
   "topicId": "economics-2-1",
   "conceptId": "why-wages-differ-between-jobs",
@@ -9162,6 +9211,187 @@
    }
   ],
   "notes": "The bars are unlabelled, so both answers are read against the axis. The gap between the bottom two is small enough that the order matters."
+ },
+ {
+  "id": "econ-2022-ol-q11-b-ii",
+  "topicId": "economics-2-0",
+  "conceptId": "marking-output-price-and-average-cost-on-a-monopoly-diagram",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 OL Q11(b)(ii)",
+  "questionText": "Equilibrium occurs at the point G on the diagram above. Clearly show and label on the above diagram: the output the firm will produce in equilibrium (use label Q1); the price the firm will charge for its output (use label P1); the average cost of producing this output (use point C1).",
+  "stem": "",
+  "figureKey": "economics-2022-OL-scheme-p14-q11bii-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The output the firm will produce in equilibrium (use label Q1)",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Four marks. G is where MC cuts MR, and the output is found by dropping STRAIGHT DOWN from G to the quantity axis — not by reading across from it."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The price the firm will charge for its output (use label P1)",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Four marks. The price is read off the AVERAGE REVENUE curve above Q1, not off G itself. This is the step most often missed: the firm sets output where MC = MR but charges what the demand curve will bear."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "The average cost of producing this output (use point C1)",
+    "marks": 1,
+    "openList": true,
+    "contextNote": "One mark. Average cost is read off AC above the same Q1, which puts C1 below P1 — and the gap between them is the profit per unit."
+   }
+  ],
+  "notes": "Three readings off ONE vertical line at Q1: the quantity below it, the price where it meets AR, the cost where it meets AC. Reading the price off point G is the classic error, and it is worth four of the nine marks."
+ },
+ {
+  "id": "econ-2022-ol-q12-a-i",
+  "topicId": "economics-1-1",
+  "conceptId": "plotting-a-market-demand-curve-from-a-schedule",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 OL Q12(a)(i)",
+  "questionText": "Using the above information and on one diagram on the graph paper below, draw and label the market demand curve for reusable coffee cups.",
+  "stem": "",
+  "figureKey": "economics-2022-OL-scheme-p16-q12a-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "14",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "5 Q1 D 0 10 20 30 40 50 60 Units (000's)",
+    "marks": 14,
+    "openList": true,
+    "contextNote": "Fourteen marks for this curve — the scheme prints one cell for the whole diagram, 28 at 14 per curve. Demand falls as price rises, so the curve runs from €9 at 10,000 units down to €5 at 50,000, and it has to be LABELLED D."
+   }
+  ],
+  "notes": "Both curves go on one diagram, and the schedule gives the demand column and the supply column side by side. Plotting the wrong column produces a curve sloping the wrong way."
+ },
+ {
+  "id": "econ-2022-ol-q12-a-ii",
+  "topicId": "economics-1-2",
+  "conceptId": "plotting-a-market-supply-curve-from-a-schedule",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 OL Q12(a)(ii)",
+  "questionText": "Using the above information and on one diagram on the graph paper below, draw and label the market supply curve for reusable coffee cups.",
+  "stem": "",
+  "figureKey": "economics-2022-OL-scheme-p16-q12a-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "14",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Demand and Supply Curves Reusable Coffee Cups 9 S Price (€) 7 P1",
+    "marks": 14,
+    "openList": true,
+    "contextNote": "Fourteen marks, the second half of the scheme’s 28 at 14 per curve. Supply RISES with price — 10,000 units at €5 up to 50,000 at €9 — and the curve has to be labelled S."
+   }
+  ],
+  "notes": "Supply and demand come off the same schedule and cross at €7 and 30,000 units, the one row where the two quantities are equal. That row is the check that both curves are plotted right."
+ },
+ {
+  "id": "econ-2022-ol-q12-b-ii",
+  "topicId": "economics-1-1",
+  "conceptId": "showing-a-demand-shift-after-a-celebrity-endorsement",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 OL Q12(b)(ii)",
+  "questionText": "Show, on the above diagram how the change in (i) above might affect the demand curve.",
+  "stem": "",
+  "figureKey": "economics-2022-OL-scheme-p17-q12b-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Demand curve would shift to the right – D2 above on diagram.",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "Eight marks, and the scheme prints the 8 on the diagram beside D2. More demand at every price means the WHOLE curve moves right — it is a shift, not a slide along the old curve."
+   }
+  ],
+  "notes": "A celebrity endorsement changes tastes, which is a non-price determinant, so the curve moves. Moving along the existing curve would mean the price had changed, and nothing here says it has."
+ },
+ {
+  "id": "econ-2022-ol-q12-b-iii",
+  "topicId": "economics-1-0",
+  "conceptId": "reading-the-new-equilibrium-after-a-demand-shift",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 OL Q12(b)(iii)",
+  "questionText": "Show, on the above diagram, the new equilibrium price (P2) and the new equilibrium quantity (Q2) as a result of (ii) above.",
+  "stem": "",
+  "figureKey": "economics-2022-OL-scheme-p17-q12b-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6 + 6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "D2 8 D Q1 Q2 6 Quantity",
+    "marks": 12,
+    "openList": true,
+    "contextNote": "Six for P2 and six for Q2 — the scheme prints both figures on the diagram itself. The new equilibrium is where D2 cuts the UNCHANGED supply curve, so both price and quantity rise."
+   }
+  ],
+  "notes": "Supply has not moved, so the new crossing point slides UP the existing S curve. Students who shift supply as well end up with a quantity change and no price change."
  },
  {
   "id": "econ-2022-ol-sa-q2-ii",
@@ -14616,6 +14846,121 @@
    }
   ],
   "notes": "Every bar is labelled with its value, so this is read and not estimated — but 2018 at 12.35 sits below 2017 at 12.5, so the chart does not simply rise."
+ },
+ {
+  "id": "econ-2023-ol-q11-b-ii",
+  "topicId": "economics-2-0",
+  "conceptId": "marking-output-price-and-cost-at-long-run-equilibrium",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q11(b)(ii)",
+  "questionText": "Equilibrium occurs at point E on the diagram above. Clearly show and label on the above diagram: the output the firm will produce in the equilibrium (use label Q1); the price the firm will charge for its output (use label P1); the average cost of producing this output (using point C1).",
+  "stem": "",
+  "figureKey": "economics-2023-OL-scheme-p13-q11bii-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "fixed",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The output the firm will produce in the equilibrium (use label Q1)",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Four marks. E is where marginal cost cuts marginal revenue, and the output is read straight down from E — not from where MC cuts average cost at W."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The price the firm will charge for its output (use label P1)",
+    "marks": 4,
+    "openList": true,
+    "contextNote": "Four marks. The price is read UP from Q1 to the average revenue curve, then across to the axis."
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "The average cost of producing this output (using point C1)",
+    "marks": 1,
+    "openList": true,
+    "contextNote": "One mark, and it lands on the same spot as P1: at long-run equilibrium AC just touches AR above Q1, so average cost equals price and the firm earns normal profit only."
+   }
+  ],
+  "notes": "Two different points are marked on this diagram, E and W, and only E gives the equilibrium output. W is the lowest point of average cost, which the firm does NOT produce at."
+ },
+ {
+  "id": "econ-2023-ol-q15-b-i",
+  "topicId": "economics-1-1",
+  "conceptId": "drawing-a-labelled-market-demand-curve",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q15(b)(i)",
+  "questionText": "Draw and label (include the axes) the market demand curve for electric cars.",
+  "stem": "",
+  "figureKey": "economics-2023-OL-scheme-p24-q15b-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "4 @ 4",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Price D D2 Quantity",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "Four things at four marks each: the two axes, the curve and its label. The axes carry marks of their own here — the question says so — and Price goes on the vertical, Quantity on the horizontal."
+   }
+  ],
+  "notes": "A demand curve slopes DOWN, and the marks are as much for labelling as for drawing: an unlabelled correct curve loses more than half the part."
+ },
+ {
+  "id": "econ-2023-ol-q15-b-ii",
+  "topicId": "economics-1-1",
+  "conceptId": "shifting-demand-when-incomes-rise",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 OL Q15(b)(ii)",
+  "questionText": "If consumers income increases, show how this would affect the market demand curve in (i) above. Explain your answer.",
+  "stem": "",
+  "figureKey": "economics-2023-OL-scheme-p24-q15b-diagram",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "9 (6+3)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 9,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The demand curve shifts to the right. Consumers can afford to buy more.",
+    "marks": 9,
+    "openList": true,
+    "contextNote": "Six for the drawing and three for the words. Income is a non-price determinant, so the whole curve moves right to D2 — a movement ALONG the old curve would mean the price of electric cars had changed, and it has not."
+   }
+  ],
+  "notes": "Electric cars are a normal good here, so more income means more demand at every price. The explanation is only three of the nine marks, but without it the drawing is unexplained."
  },
  {
   "id": "econ-2023-ol-sa-q2-b",

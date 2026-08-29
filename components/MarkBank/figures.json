@@ -33452,5 +33452,77 @@
   "year": 2021,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Economics 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2022-OL-scheme-p16-q12a-diagram": {
+  "src": "/exam-figures/economics/markbank/economics-2022-OL-scheme-p16-q12a-diagram.png",
+  "md5": "45d7e6809b10b1cd1c61740e315471ad",
+  "alt": "The marking scheme's completed graph, headed 'Demand and Supply Curves Reusable Coffee Cups'. Price in euro runs 4 to 10 up the vertical axis, Units in thousands 0 to 60 along the horizontal. An orange downward-sloping line labelled D is plotted through the demand points, from 9 euro at 10 thousand units to 5 euro at 50 thousand. A blue upward-sloping line labelled S is plotted through the supply points, from 5 euro at 10 thousand to 9 euro at 50 thousand. The two cross at 7 euro and 30 thousand units, where P1 is marked on the price axis and Q1 on the quantity axis.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q12(a)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2022-OL-scheme-p14-q11bii-diagram": {
+  "src": "/exam-figures/economics/markbank/economics-2022-OL-scheme-p14-q11bii-diagram.png",
+  "md5": "9bd075072dea93f691da3cc4b196435b",
+  "alt": "The marking scheme's completed monopoly diagram. The vertical axis is labelled P/C and the horizontal Q. A U-shaped average cost curve labelled AC, a rising marginal cost curve labelled MC, a thick downward-sloping average revenue curve labelled AR and a steeper downward-sloping marginal revenue curve labelled MR. Point G is where MC cuts MR; a vertical line drops from G to the quantity axis at Q1. Where that line meets AR a dot is taken across to the price axis at P1, and where it meets AC a second dot is taken across to C1, which sits below P1.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q11(b)(ii)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2022-OL-scheme-p17-q12b-diagram": {
+  "src": "/exam-figures/economics/markbank/economics-2022-OL-scheme-p17-q12b-diagram.png",
+  "md5": "afe8ae911a15fdabd9ec3da0002e228d",
+  "alt": "The marking scheme's completed Gym + Coffee diagram, Price up the vertical axis and Quantity along the horizontal. An upward-sloping line labelled S, an original downward-sloping line labelled D crossing it at P1 and Q1, and a thick new downward-sloping line labelled D2 to the right of D, crossing S at a higher price P2 and a larger quantity Q2. The scheme prints its marks on the diagram itself: an 8 beside D2, a 6 beside P2 and a 6 beside Q2.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q12(b)",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2021-OL-scheme-p12-q12a-diagram": {
+  "src": "/exam-figures/economics/markbank/economics-2021-OL-scheme-p12-q12a-diagram.png",
+  "md5": "f1d14b76c2c791addba3a88e6acf7bc6",
+  "alt": "The marking scheme's completed perfect-competition diagram at long-run equilibrium, with Quantity along the horizontal axis. A rising marginal cost curve labelled MC and a U-shaped average cost curve labelled AC. A horizontal line labelled D = AR = MR runs across at the level of AC's lowest point, and MC cuts both there at the point marked B. A vertical line drops from B to the quantity axis at Q1, and the horizontal line meets the price axis at a single label reading P1 / C1 — price and average cost are the same figure.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Q12(a)(ii)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2023-OL-scheme-p13-q11bii-diagram": {
+  "src": "/exam-figures/economics/markbank/economics-2023-OL-scheme-p13-q11bii-diagram.png",
+  "md5": "96458d6dc9689964ae4a51e274a0cff2",
+  "alt": "The marking scheme's completed long-run equilibrium diagram for a firm, axis labelled Price Costs in euro. A blue U-shaped average cost curve numbered 1, a yellow downward-sloping average revenue curve numbered 2, a green rising marginal cost curve labelled MC, and a red steeper downward-sloping marginal revenue curve labelled MR. Point E is where MC cuts MR; a vertical line rises from E to where AC touches AR, and that point is taken across to the price axis at a single label reading P1 / C1. Q1 is marked where the vertical line meets the quantity axis, numbered 3. Point W marks the lowest point of the average cost curve.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q11(b)(ii)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2023-OL-scheme-p24-q15b-diagram": {
+  "src": "/exam-figures/economics/markbank/economics-2023-OL-scheme-p24-q15b-diagram.png",
+  "md5": "3ac6f6d80e85aeaa9fa5fc3d0632d406",
+  "alt": "The marking scheme's completed electric-car demand diagram, Price up the vertical axis and Quantity along the horizontal, both axes drawn and labelled. A downward-sloping line labelled D, and a second downward-sloping line parallel to it and to its right labelled D2, showing the shift after an increase in consumer income.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q15(b)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2023 Ordinary Level — © State Examinations Commission"
  }
 }
