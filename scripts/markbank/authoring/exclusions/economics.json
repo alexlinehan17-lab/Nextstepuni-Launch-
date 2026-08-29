@@ -5,11 +5,6 @@
   "evidence": "Scheme: '46²+46²+5²+2²+1² = 4262'"
  },
  {
-  "ref": "2021 HL Q13(c)(i)",
-  "reason": "the response is the worked PED calculation",
-  "evidence": "Scheme: PED worked to −1.63"
- },
- {
   "ref": "2021 HL Q14(a)(i)",
   "reason": "every response describes the shape of the inflation chart printed with it (recorded class)",
   "evidence": "Scheme: 'Across the entire time Ireland's inflation rate is lower than the Euro Area and UK (apart from 2015 in the UK)…'"
@@ -255,11 +250,6 @@
   "evidence": "Show, on the above diagram, the new equilibrium price (P2) and the new equilibrium ⟨6 + 6⟩ quantity (Q2) as a result of (ii) above – illustrated above."
  },
  {
-  "ref": "2022 OL Q13(a)(i)",
-  "reason": "the response is the worked percentage calculation",
-  "evidence": "Calculate current expenditure as a percentage of total government expenditure. Show your workings. €71.82 bn x 100 = 86.61% ⟨16⟩ €82.92 bn"
- },
- {
   "ref": "2022 OL Q13(b)(ii)",
   "reason": "the response is the worked multiplier calculation",
   "evidence": "Assume that MPS is 0.1 and MPM is 0.4. Calculate, using the above formula, the size of the multiplier. ⟨12⟩ 0.1 + 0.4 = 2"
@@ -323,11 +313,6 @@
   "ref": "2023 HL Q13(b)(ii)",
   "reason": "the response is the worked multiplier calculation (worked-calculation class)",
   "evidence": "Scheme: 'Calculate the value of the multiplier... 1/(MPS+MPM) = 1/(0.3+0.2) = 2 ⟨8⟩ ⟨4 @ 2⟩'"
- },
- {
-  "ref": "2023 HL Q13(b)(iii)",
-  "reason": "the response is the worked injection calculation off the multiplier from (b)(ii)",
-  "evidence": "How much will the government have to inject into this economy if it wants the economy to operate at its full employment level? Show your workings. €750m - €500m 2 = €250m 2 250/2 2 = Injection ⟨8⟩ €125m 2"
  },
  {
   "ref": "2023 HL Q15(a)(iii)",
@@ -645,11 +630,6 @@
   "evidence": "⟨2 @ 3⟩ … Indicate your choice below by ticking (✓) the relevant box. Positive Normative Economic Statement Statement Statement All citizens in Ireland deserve free healthcare to ✓ 1. ensure equal access to medical services…"
  },
  {
-  "ref": "2025 HL Section A Q6(b)",
-  "reason": "diagram completion with the explanation, one ⟨6⟩ covering both — already recorded in econ_excluded.py",
-  "evidence": "⟨6⟩ Complete the diagram below to show how a change to Ireland's current national minimum wage rate … Clearly label any changes you make. Explain your answer. Wage rate SL Unemployment gap / Excess supply of labour NMW / € …"
- },
- {
   "ref": "2025 HL Section A Q7(a)",
   "reason": "answered by naming a product from the YED table printed with it — already recorded in econ_excluded.py under '2025 HL Section A Q7'. Q7(b), the other half of that recorded key, IS cardable and is now carded",
   "evidence": "Necessity product – Electricity or Noodles Justify – … The YED value of electricity lies between 0 and 1 … Luxury good – Premium branded clothing … The YED value of premium branded clothing is above 1"
@@ -683,11 +663,6 @@
   "ref": "2025 OL Q15(b)(i)",
   "reason": "already registered (econ_excluded EXCLUDED_TEXT 'Demand curve shifts to the right (D1)'): labels to be placed on a diagram; no wording to show",
   "evidence": "Scheme p33: ⟨14⟩ ⟨8+4+2⟩ '• Demand curve shifts to the right (D1). • Increase in equilibrium quantity (Q1). • Increase in equilibrium price (P1).' — the three credited components are marks drawn on the printed supply-and-demand diagram."
- },
- {
-  "ref": "2025 OL Q15(b)(ii)",
-  "reason": "already registered in econ_excluded; NOTE the registry line's reason is imprecise for 2025 — the ⟨10⟩ is (ii)'s own cell, separate from (i)'s ⟨14⟩ — but the decision still holds: the four written steps narrate the diagram's own labels (D1, P1, Q1) and the scheme states no split of the 10 across them",
-  "evidence": "Scheme p33: '(ii) Explain your answer. ⟨10⟩ • The increase in population will lead to an increase in demand for housing… • The demand curve will shift to the right (D to D1). • This will increase price to P1 • and Quantity will increase to Q1.' — printed marks column shows 14/8+4+2 for (i) then 10 for (ii)."
  },
  {
   "ref": "2025 OL Q16(b)(ii)",

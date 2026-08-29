@@ -32,12 +32,22 @@ SUBJECTS = ['maths', 'physics', 'biology', 'chemistry', 'economics', 'business',
 # Agricultural Science paper about joining a suckler scheme is not a leak),
 # and "Award" alone matched a Green Impact Award. What marks a leak is the
 # SCHEME DOING something to marks in the question area.
-SCHEME_LEAK = re.compile(
+_LEAK_CORE = (
     r"\b[Tt]he (?:marking )?scheme(?:'s|\u2019s)?\s+"
     r'(?:marks?|accepts?|credits?|awards?|groups?|gives?|identifi|names?|'
     r'scores?|adds?|works|prints?|own)\b'
     r'|\bAccept(?:able)?:|\bAward(?:s)? (?:full |partial )?marks\b|'
-    r'\bFull Credit\b|\bPartial Credit\b|\bLPC\b|\bHPC\b|\bMPC\b')
+    r'\bFull Credit\b|\bPartial Credit\b|\bLPC\b|\bHPC\b')
+SCHEME_LEAK = re.compile(_LEAK_CORE + r'|\bMPC\b')
+
+# MPC is a marking band (Middle Partial Credit) in most schemes and the
+# Marginal Propensity to Consume in Economics, where it is printed on the
+# question paper itself: "Assume that MPM is 0.25 and MPC is 0.65". Measured
+# across every authored deck, the ONLY question-side occurrence of LPC, HPC or
+# MPC in the bank is that Economics card — so the token has never caught a real
+# leak and here it flags a correct question. Dropped for this subject only,
+# rather than weakened for all of them.
+SCHEME_LEAK_BY_SUBJECT = {'economics': re.compile(_LEAK_CORE)}
 # A reference is a GHOST only when it points at something ON THE PAGE.
 # Two noun classes, because they behave differently:
 #  PICTORIAL — a diagram/photograph/map cannot be prose, so naming one at all
@@ -129,8 +139,9 @@ def lint(subject):
         stem = c.get('stem') or ''
         qtext = c.get('questionText') or ''
         has_fig = bool(c.get('figureKey') or c.get('questionFigureKey'))
+        leak = SCHEME_LEAK_BY_SUBJECT.get(subject, SCHEME_LEAK)
         for field, text in (('stem', stem), ('questionText', qtext)):
-            if SCHEME_LEAK.search(text):
+            if leak.search(text):
                 flags.append((subject, c['id'], 'scheme-leak',
                               f'{field}: {text[:90]}'))
         joined = f'{stem} {qtext}'

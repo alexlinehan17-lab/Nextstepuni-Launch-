@@ -608,6 +608,19 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: "LC034ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2021 Higher Level — © State Examinations Commission.",
+    id: "econ-2021-hl-q13-c-i", topicId: "economics-1-1", conceptId: "ped-of-apple-airpods",
+    section: "B", questionRef: "2021 HL Q13(c)(i)",
+    questionText: "Apple AirPods (earphones) price fell from €160 to €125 online. The quantity demanded increased from 10,000 units to 15,000 units. Calculate the Price Elasticity of Demand of Apple AirPods.",
+    tariffModel: {"kind":"fixed","notation":"15","answer":null,"ofParts":null,"perPart":null}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "+5000 160 + 125 (285) −35 × 10,000 + 15,000 (25,000) = −1.63", marks: 15, contextNote: "Four quantities, set as two stacked fractions and flattened by extraction: the change in quantity (+5,000) over the change in price (−35), times the sum of the prices (285) over the sum of the quantities (25,000). That midpoint form is why both prices and both quantities are added.", openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2021 Higher Level — © State Examinations Commission.",
     id: "econ-2021-hl-sa-q1-b", topicId: "economics-4-2", conceptId: "why-a-trade-surplus-is-an-aim",
     section: "A", questionRef: "2021 HL Section A Q1(b)",
     questionText: "Outline two reasons why achieving a trade surplus is an objective of the Irish government.",
@@ -2138,6 +2151,27 @@ export const CARDS: SecCard[] = [
           "src": "/exam-figures/economics/markbank/economics-2023-HL-paper-p25-i0.png",
           "srcHash": "4ec6bdef6c266446d60c4d0c2e69cce4",
           "alt": "A line chart on a blue ground headed 'SEASONALLY ADJUSTED MONTHLY UNEMPLOYMENT RATE', y-axis % from 0 to 8, x-axis by month from Mar-21 to Sep-22. Labelled values fall across the period: 7.6, 7, 5.9, 5.3, 5.2, 4.9, 4.9, 4.2, 4.3, 4.4.",
+          "attribution": "SEC Leaving Certificate Economics 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2023 Higher Level — © State Examinations Commission.",
+    id: "econ-2023-hl-q13-b-iii", topicId: "economics-3-0", conceptId: "the-injection-needed-to-reach-full-employment",
+    section: "B", questionRef: "2023 HL Q13(b)(iii)",
+    questionText: "How much will the government have to inject into this economy if it wants the economy to operate at its full employment level? Show your workings.",
+    tariffModel: {"kind":"fixed","notation":"8","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "€750m - €500m 2 = €250m 2 250/2 2 = Injection €125m 2", marks: 8, contextNote: "The 2s between the steps are the marks: four steps at 2 each make the ⟨8⟩. Find the deflationary gap first (€750m − €500m), then divide by the multiplier — the injection is SMALLER than the gap, because the multiplier does the rest of the work.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2023-HL-paper-p22-i0",
+          "src": "/exam-figures/economics/markbank/economics-2023-HL-paper-p22-i0.png",
+          "srcHash": "c4ba4e8d02a42764428acec5740fb758",
+          "alt": "A four-row data table: Marginal Propensity to Consume (MPC) 0.7; Marginal Propensity to Import (MPM) 0.2; Current equilibrium level of National Income €500m; Level of National Income that would give full employment €750m.",
           "attribution": "SEC Leaving Certificate Economics 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -4260,6 +4294,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "One side of the kink — both of these", marks: 6, contextNote: "Both halves, 3 marks each: what rivals do when the firm raises price, and what they do when it cuts price.", openList: true, group: {"claimMax":2,"perOption":3,"options":["Before the kink – if a firm increases its price, competing firms will not follow by raising their prices. Customers will then switch to competitors, who are keeping their prices unchanged. As a result, quantity demanded will decrease by a greater percentage than the price increase / the firm will lose a lot of consumers. Hence this part of the demand curve is relatively price elastic.","After the kink – if a firm reduces its price, competing firms will match the price cut to avoid losing their customers. Since all firms are lowering prices together, the firm will not gain many new customers. This means quantity demanded will increase by a smaller percentage than the price reduction. Hence, this part of the demand curve is relatively price inelastic."]} },
     ],
+    figure: {
+          "candId": "economics-2025-HL-paper-p11-art",
+          "src": "/exam-figures/economics/markbank/economics-2025-HL-paper-p11-art.png",
+          "srcHash": "e3f7aab02ca447e84f23cc676a085706",
+          "alt": "A kinked demand diagram of a firm in oligopoly at long-run equilibrium. 'Price' on the vertical axis, 'Quantity' on the horizontal. A yellow line runs from the top left, bends at a filled black dot and falls more steeply to the axis; it is numbered 2 in a yellow box near its lower end. A red line runs below it and stops abruptly; it is numbered 3 in a red box. A green U-shaped curve rises through a second filled dot labelled E to the top right; it is numbered 1 in a green box. Blue dashed guides run from the upper dot left to P1 on the price axis and down to Q1 on the quantity axis. Beneath the diagram sit the three-row answer table for items 1 to 3 and part (b) asking for the shape of curve 2.",
+          "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4332,6 +4374,27 @@ export const CARDS: SecCard[] = [
           "src": "/exam-figures/economics/markbank/economics-2025-HL-paper-p04-i0.png",
           "srcHash": "6eda0e5df680b567fd05a667a51d57ff",
           "alt": "A three-row table on pale blue: Household Disposable Income €43.91 billion; Household Consumption Expenditure €37.32 billion; Household Savings €6.59 billion.",
+          "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2025 Higher Level — © State Examinations Commission.",
+    id: "econ-2025-hl-seca-q6-b", topicId: "economics-2-1", conceptId: "a-minimum-wage-above-the-equilibrium",
+    section: "A", questionRef: "2025 HL Section A Q6(b)",
+    questionText: "The diagram below shows a free labour market. Complete the diagram below to show how a change to Ireland’s current national minimum wage rate, at a rate higher than WE in the diagram below, will affect the market for labour. Clearly label any changes you make. Explain your answer.",
+    tariffModel: {"kind":"fixed","notation":"6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Wage rate: the national minimum wage rate (NMW) lies above the free-market equilibrium wage rate (WE). Supply increases: at the higher minimum wage rate, more workers want to work / the supply of labour increases, compared to the free market level (QE). Demand falls: however, since businesses must now pay a higher wage, they demand fewer workers / the demand for labour decreases at the minimum wage level compared to the free market level (QE). Excess supply / unemployment: this results in unemployment, as the number of job seekers (QS) exceeds available jobs (QD) . While some workers will earn more, others may lose their jobs or have reduced hours as businesses adjust to the higher labour costs.", marks: 6, contextNote: "Four steps, and the order is the argument: the minimum sits ABOVE equilibrium, so supply of labour rises and demand for it falls, and the gap between them is the unemployment. The ⟨6⟩ covers the drawing and the explanation together.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2025-HL-paper-p08-art",
+          "src": "/exam-figures/economics/markbank/economics-2025-HL-paper-p08-art.png",
+          "srcHash": "128c8c9c1343be3f5ce243675aa21960",
+          "alt": "A labour market diagram. 'Wage rate' on the vertical axis, 'Quantity of workers' on the horizontal. A red downward-sloping line labelled D-sub-L crosses a blue upward-sloping line labelled S-sub-L at a filled black dot, with pale blue dashed arrows running left to W-sub-E on the wage axis and down to Q-sub-E on the quantity axis. Above the diagram sit the answer box for part (a)'s 'Price floor:' definition and the part (b) instruction to complete the diagram for a minimum wage above W-sub-E; beneath it, the ruled Explanation box.",
           "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },

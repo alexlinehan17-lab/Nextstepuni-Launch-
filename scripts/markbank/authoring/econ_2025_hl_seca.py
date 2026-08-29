@@ -180,7 +180,8 @@ P.menu('explain the shape of the curve labelled', 'econ-2025-hl-sa-q9-b',
        'One side of the kink — both of these',
        'Both halves, 3 marks each: what rivals do when the firm raises price, and what they do '
        'when it cuts price.',
-       ref='2025 HL Section A Q9(b)', claim=2, per=3, drop=SCAFFOLD)
+       ref='2025 HL Section A Q9(b)', claim=2, per=3, drop=SCAFFOLD,
+       figure='economics-2025-HL-paper-p11-art')
 
 P.menu('economic factor which led to a change in Ireland', 'econ-2025-hl-sa-q10-b',
        'economics-3-5', 'what-caused-the-irish-downturn',
@@ -258,5 +259,29 @@ P.cards.append(card(
     'ratio.',
     tariff_kind='fixed', section='A',
     figure_key='economics-2025-HL-paper-p04-i0'))
+
+# ── Diagram parts whose explanation the scheme prints ──────────────────────
+# Excluded as diagram completions. The drawing is only half the ask — the paper
+# also says "Explain" — and the scheme prints that explanation as ordinary
+# prose. The paper's own diagram rides as the card's figure, so the student has
+# the axes and curves the question is about.
+
+P.cards.append(card(
+    'econ-2025-hl-seca-q6-b', 2025, 'higher', 'economics-2-1',
+    'a-minimum-wage-above-the-equilibrium', '2025 HL Section A Q6(b)',
+    'The diagram below shows a free labour market. Complete the diagram below to show how a '
+    'change to Ireland\u2019s current national minimum wage rate, at a rate higher than WE in '
+    'the diagram below, will affect the market for labour. Clearly label any changes you make. '
+    'Explain your answer.',
+    '6', 6,
+    [point('r-1', as_option(block(BODY, 'Wage rate: the national minimum wage rate (NMW) lies '
+                                        'above', '16 | P a g e')), 6,
+           'Four steps, and the order is the argument: the minimum sits ABOVE equilibrium, so '
+           'supply of labour rises and demand for it falls, and the gap between them is the '
+           'unemployment. The \u27e86\u27e9 covers the drawing and the explanation together.')],
+    'The trade-off is the answer: some workers earn more and others lose hours or jobs. A '
+    'response that only says "wages go up" has drawn the line without reading the diagram.',
+    tariff_kind='fixed', section='A',
+    figure_key='economics-2025-HL-paper-p08-art'))
 
 P.emit()

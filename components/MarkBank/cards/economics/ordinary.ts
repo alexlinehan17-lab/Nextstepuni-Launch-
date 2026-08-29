@@ -1196,6 +1196,27 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC034GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2022 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2022-ol-q13-a-i-percentage", topicId: "economics-3-1", conceptId: "current-spending-as-a-share-of-total-expenditure",
+    section: "B", questionRef: "2022 OL Q13(a)(i)",
+    questionText: "Calculate current expenditure as a percentage of total government expenditure. Show your workings.",
+    tariffModel: {"kind":"fixed","notation":"16","answer":null,"ofParts":null,"perPart":null}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "€71.82 bn x 100 = 86.61% €82.92 bn", marks: 16, contextNote: "Read as a fraction: €71.82bn over €82.92bn, times 100. The scheme stacks it, so extraction puts the denominator last. The total is the WHOLE pie, not the capital slice — dividing by €11.1bn is the usual error.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2022-OL-paper-p16-i0",
+          "src": "/exam-figures/economics/markbank/economics-2022-OL-paper-p16-i0.png",
+          "srcHash": "fe531cf62c6541e17957ca4474a4b0de",
+          "alt": "A pie chart headed 'Total Government Expenditure: €82.92 Billion' with two slices, the smaller pulled out: Current €71.82 Billion in blue and Capital €11.1 Billion in orange, with a legend at right. Source 'Adapted from gov.ie'. The question below reads '(a)(i) Calculate current expenditure as a percentage of total government expenditure. Show your workings.'",
+          "attribution": "SEC Leaving Certificate Economics 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2022 Ordinary Level — © State Examinations Commission.",
     id: "econ-2022-ol-sa-q2-ii", topicId: "economics-1-3", conceptId: "what-the-census-is-used-for",
     section: "A", questionRef: "2022 OL Section A Q2(ii)",
     stem: "In April 2022 the CSO conducted a census, an official count of Ireland’s population.",
@@ -1257,6 +1278,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "It is the increase in GNP / output (value of goods and services) national income per head of population within a country over a period of time / increased productive capacity of an economy.", marks: 6, contextNote: "The definition, 6 marks; any of the slash-separated wordings.", openList: true },
     ],
+    figure: {
+          "candId": "economics-2022-OL-paper-p03-i0",
+          "src": "/exam-figures/economics/markbank/economics-2022-OL-paper-p03-i0.png",
+          "srcHash": "874701930c8e9f13b50b31a1e8f95fcb",
+          "alt": "A Central Bank of Ireland infographic headed 'Forecast growth* in Irish economy' on a dark teal ground, with a grey silhouette map of Ireland at left and four coloured columns rising left to right, each labelled with its year above and its rate inside: 2020 -4.9% (purple, the only negative), 2021 5.5% (orange), 2022 7.1% (teal), 2023 4.1% (pale green). Footnote '*Modified domestic demand.' and the Banc Ceannais na hÉireann / Central Bank of Ireland logo.",
+          "attribution": "SEC Leaving Certificate Economics 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3263,6 +3292,28 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Consumer Price Index", marks: 5, contextNote: "Two letters to complete: the first paid 3 and the second 2; the I is given.", openList: true },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC034GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2025 Ordinary Level — © State Examinations Commission.",
+    id: "econ-2025-ol-q15-b-ii", topicId: "economics-1-0", conceptId: "how-a-rising-population-shifts-housing-demand",
+    section: "B", questionRef: "2025 OL Q15(b)(ii)",
+    stem: "Ireland’s population is forecast to grow to 5.9 million by 2030. Part (b)(i) asks for the effect of that on the housing market shown below; this part asks for the reasoning behind it.",
+    questionText: "Explain your answer.",
+    tariffModel: {"kind":"fixed","notation":"10","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The increase in population will lead to an increase in demand for housing as there will be more people willing and able to buy houses. • The demand curve will shift to the right (D to D1). • This will increase price to P1 • and Quantity will increase to Q1.", marks: 10, contextNote: "The chain runs cause, curve, price, quantity: more people able to buy, so demand shifts RIGHT (D to D1), so both the price and the quantity settle higher. Naming the shift without the two effects stops halfway.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2025-OL-paper-p24-art",
+          "src": "/exam-figures/economics/markbank/economics-2025-OL-paper-p24-art.png",
+          "srcHash": "a37096cfcd088cacc11f445aed5d2d28",
+          "alt": "A demand and supply diagram of the housing market. Price on the vertical axis, Quantity on the horizontal. A red downward-sloping line labelled D crosses a blue upward-sloping line labelled S at a filled dot labelled E, with grey arrows running left to Pe and down to Qe. Beneath it the parts asking the student to show the effect of a forecast population increase on the diagram, explain it, and give a positive or negative effect of the Dublin Quays traffic restrictions.",
+          "attribution": "SEC Leaving Certificate Economics 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
