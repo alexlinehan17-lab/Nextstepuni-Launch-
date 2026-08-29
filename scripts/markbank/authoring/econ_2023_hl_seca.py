@@ -228,4 +228,28 @@ P.cards.append(card(
     stem='Landlords are leaving the Irish housing market in their thousands, blaming '
          'excessive taxation, rent control and constantly changing laws.'))
 
+# ── A tick table, answered by the scheme's own completed table ─────────────
+# See econ_tick_crop.py. The flat run reads "VAT ✓ PAYE ✓ ⟨6⟩ Customs and Excise
+# Duty ✓" — three ticks, no columns, and the mark cell sitting between two of
+# them. The completed table is bound as a SOLUTION crop instead, hidden until
+# reveal.
+P.cards.append(card(
+    'econ-2023-hl-seca-q6-a', 2023, 'higher', 'economics-3-1',
+    'sorting-taxes-direct-and-indirect', '2023 HL Section A Q6(a)',
+    'In each case below, indicate by placing a tick (\u2713) whether the tax is an example of '
+    'direct taxation or indirect taxation: VAT; PAYE; Customs and Excise Duty.',
+    '6', 6,
+    [point('r-1', as_option(block(BODY, 'Tax Direct Tax Indirect Tax VAT',
+                                  '(b) Outline three canons')), 6,
+           'Read the completed table below: in flat text the ticks carry no column at all. VAT '
+           'and Customs and Excise Duty are INDIRECT \u2014 taxes on spending, borne by the '
+           'consumer but collected and remitted by someone else \u2014 while PAYE is DIRECT, '
+           'deducted from income and paid over by the person who bears it. Who hands the money '
+           'to Revenue is the test, not who ends up poorer.')],
+    'Two of the three are indirect, so a student splitting them evenly gets one wrong on '
+    'symmetry alone.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2023-HL-scheme-p11-q6a-ticks'))
+
+
 P.emit()

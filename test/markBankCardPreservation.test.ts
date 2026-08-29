@@ -65,6 +65,13 @@ const decks = [
    * (reconcile.py) now reads 100.0%: 498 covered + 160 excluded-with-evidence
    * = all 658 asks the 2021-2025 papers print. Nothing removed; all prior ids
    * remain. */
+  /* 2026-08-29 (fifth wave): economics 317/252 -> 319/253. Three cards ADDED,
+   * none removed — the first tick tables in the deck. Their ✔ is DRAWN, not set
+   * in the text layer, so extraction keeps the tick and loses the column it
+   * sits in, and the column is the whole answer. The scheme's completed table
+   * is cropped and bound as a SOLUTION figure instead (the mechanism the Maths
+   * deck already uses for 819 printed model solutions: hidden until reveal,
+   * rendered large). Coverage 523/658 -> 526/658, exclusions 135 -> 132. */
   /* 2026-08-29 (fourth wave): economics 316/251 -> 317/252. Two cards ADDED,
    * none removed. Diagram parts where the paper also says "Explain" and the
    * scheme prints that explanation as prose — the drawing was never the whole
@@ -100,8 +107,8 @@ const decks = [
    * The -trend suffix on the first is forced: econ-2021-hl-q16-a-i is taken by
    * a card whose citation econ_refs.py corrects to Q16(c)(i), and an id is
    * never renamed because it keys a student's review history. */
-  ['economics:higher', ECON_HIGHER, 317, 'f29eca07fd524ec2b356824e98183dc5e600b092c3676efd12a49c70be21d428'],
-  ['economics:ordinary', ECON_ORDINARY, 252, 'c394b736b05addcf99ffe265da9c2185a89cddea6d0a03585540904fa2d22faa'],
+  ['economics:higher', ECON_HIGHER, 319, 'c40cf76bd2a36d25693a71260bc0f75a24098237651f6b5c53ea27b0d7cb4c8d'],
+  ['economics:ordinary', ECON_ORDINARY, 253, '5e68926437d1a9917c31eefc4f35da6d8027fecc48fab65ffbbc61f2aa8202d1'],
   /* 2026-08-23: the two newest subjects had shipped with NO identity baseline
    * at all — found by the ratchet-soundness review, which means every earlier
    * count in this file was guarding seven decks while two rode along
@@ -129,6 +136,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7241);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7244);
   });
 });

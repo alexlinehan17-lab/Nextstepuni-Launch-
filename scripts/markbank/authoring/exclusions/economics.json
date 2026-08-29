@@ -265,11 +265,6 @@
   "evidence": "State the year with the highest rate of economic growth: 2022 ⟨6+3⟩ State the year with the lowest rate of economic growth: 2020"
  },
  {
-  "ref": "2022 OL Section A Q4",
-  "reason": "answered by ticking substitute or complementary against each product (already recorded in econ_excluded.py)",
-  "evidence": "identify by placing a tick (✓) which two items are substitute goods ⟨3 x 2⟩ and which two items are complementary goods for the iPhone 13. Substitute Goods Complementary Goods Samsung S21 ✓ iPhone 13 case ✓"
- },
- {
   "ref": "2022 OL Section A Q7(a)(ii)",
   "reason": "answered by ticking fixed or variable against each cost in a table; no wording for a card to carry",
   "evidence": "Indicate by means of a tick (✓) which of the costs in the table below are fixed costs and which costs are variable costs. ⟨4+4+1+1⟩ Fixed Cost Variable Cost Wages €1,000 ✓ Raw Materials €1,500 ✓"
@@ -358,11 +353,6 @@
   "ref": "2023 HL Section A Q4(a)",
   "reason": "already recorded in econ_excluded.py: 'a table completion — the marks are for filling the table, not for prose'",
   "evidence": "Complete the missing average cost and marginal cost figures in the table below. ⟨6⟩ … Workings: • 82 ÷ 2 = 41 • 108 - 82 = 26 • 152 ÷ 4 = 38 • 152 – 108 = 44"
- },
- {
-  "ref": "2023 HL Section A Q6(a)",
-  "reason": "answered by ticking direct or indirect against each tax in a table; no wording for a card to carry (established class, cf. 2024 OL Section A Q2(a), 2022 OL Section A Q4)",
-  "evidence": "indicate by placing a tick (✓) whether the tax is an example of direct taxation or indirect taxation. Tax Direct Tax Indirect Tax VAT ✓ PAYE ✓ ⟨6⟩ Customs and Excise Duty ✓"
  },
  {
   "ref": "2023 OL Q11(b)(ii)",
@@ -623,11 +613,6 @@
   "ref": "2025 HL Section A Q10(a)",
   "reason": "NEW — answered by inserting A or B read off the real-GDP diagram printed with it, and both justifications describe the chart's shape; the established reads-the-figure class (cf. 2024 OL Section A Q10). Not yet in econ_excluded.py",
   "evidence": "⟨2 @ 3⟩ … Economic boom A Economic recession B Economic boom justification: … The steady rise in real GDP on the graph shows Ireland's strong economic performance before the financial crisis. … The lowest point in 2011 reflects the depth of the Irish recession"
- },
- {
-  "ref": "2025 HL Section A Q5(b)",
-  "reason": "NEW — answered by ticking positive or normative against each statement; the established tick-the-box class (cf. 2024 OL Section A Q2(a), 2022 OL Section A Q4). Not yet in econ_excluded.py",
-  "evidence": "⟨2 @ 3⟩ … Indicate your choice below by ticking (✓) the relevant box. Positive Normative Economic Statement Statement Statement All citizens in Ireland deserve free healthcare to ✓ 1. ensure equal access to medical services…"
  },
  {
   "ref": "2025 HL Section A Q7(a)",

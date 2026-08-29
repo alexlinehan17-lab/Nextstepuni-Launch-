@@ -33062,5 +33062,41 @@
   "year": 2025,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2022-OL-scheme-p06-q4-ticks": {
+  "src": "/exam-figures/economics/markbank/economics-2022-OL-scheme-p06-q4-ticks.png",
+  "md5": "6bc0edf143f3193b34632a962f4d28a3",
+  "alt": "The marking scheme's completed answer table for 2022 OL Section A Q4, as the State Examinations Commission set it. A green header row reads Substitute Goods | Complementary Goods. Four item rows follow, each carrying a single black tick: Samsung S21 ticked under Substitute Goods; iPhone 13 case ticked under Complementary Goods; iPhone charging plug ticked under Complementary Goods; Google Pixel 4A smartphone ticked under Substitute Goods.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Section A Q4",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Economics 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "economics-2025-HL-scheme-p16-q5b-ticks": {
+  "src": "/exam-figures/economics/markbank/economics-2025-HL-scheme-p16-q5b-ticks.png",
+  "md5": "b7c9268ab3e4b1fdb38f447315d63bd1",
+  "alt": "The marking scheme's completed answer table for 2025 HL Section A Q5(b), as the State Examinations Commission set it. A pale yellow header row reads Economic Statement | Positive Statement | Normative Statement. Statement 1, 'All citizens in Ireland deserve free healthcare to ensure equal access to medical services.', carries a black tick under Normative Statement. Statement 2, 'If the Irish government were to raise the corporation tax rate by 3%, it would reduce foreign direct investment in the country by at least 25%.', carries a black tick under Positive Statement.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Section A Q5(b)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission"
+ },
+ "economics-2023-HL-scheme-p11-q6a-ticks": {
+  "src": "/exam-figures/economics/markbank/economics-2023-HL-scheme-p11-q6a-ticks.png",
+  "md5": "515d205a15fef7a080b5146e45e614cd",
+  "alt": "The marking scheme's completed answer table for 2023 HL Section A Q6(a), as the State Examinations Commission set it. A pale blue header row reads Tax | Direct Tax | Indirect Tax. Three rows follow, each carrying a single black tick: VAT ticked under Indirect Tax; PAYE ticked under Direct Tax; Customs and Excise Duty ticked under Indirect Tax.",
+  "solution": true,
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Section A Q6(a)",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Economics 2023 Higher Level — © State Examinations Commission"
  }
 }
