@@ -180,7 +180,8 @@ P.menu('explain the shape of the curve labelled', 'econ-2025-hl-sa-q9-b',
        'One side of the kink — both of these',
        'Both halves, 3 marks each: what rivals do when the firm raises price, and what they do '
        'when it cuts price.',
-       ref='2025 HL Section A Q9(b)', claim=2, per=3, drop=SCAFFOLD)
+       ref='2025 HL Section A Q9(b)', claim=2, per=3, drop=SCAFFOLD,
+       figure='economics-2025-HL-paper-p11-art')
 
 P.menu('economic factor which led to a change in Ireland', 'econ-2025-hl-sa-q10-b',
        'economics-3-5', 'what-caused-the-irish-downturn',

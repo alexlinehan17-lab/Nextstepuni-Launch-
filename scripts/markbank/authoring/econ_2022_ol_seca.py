@@ -68,8 +68,11 @@ P.cards.append(card(
                   'income per head of population within a country over a period of time / '
                   'increased productive capacity of an economy.', 6,
            'The definition, 6 marks; any of the slash-separated wordings.')],
-    'Part (i), completing the table, is answered by reading the growth chart and is not '
-    'carded.', section='A', tariff_kind='fixed'))
+    'The chart is the Central Bank\u2019s forecast, and the definition has to hold for it: '
+    'growth is the RATE of increase, so the four rising columns are growth even where the '
+    'column is shorter than the one before it.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2022-OL-paper-p03-i0'))
 
 P.cards.append(card(
     'econ-2022-ol-sa-q2-i', 2022, 'ordinary', 'economics-1-3', 'what-the-cso-is',

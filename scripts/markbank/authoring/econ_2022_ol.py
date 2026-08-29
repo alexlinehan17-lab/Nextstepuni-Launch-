@@ -8,7 +8,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from econ_auto import Paper  # noqa: E402
-from econ_lib import anyN, block, bullets, card, load, point, tidy  # noqa: E402
+from econ_lib import anyN, as_option, block, bullets, card, load, point, tidy  # noqa: E402
 
 P = Paper(2022, 'ordinary')
 SCAFFOLD = ('Possible responses', 'Suggested responses', 'Minimum Unit Price for A')
@@ -408,5 +408,30 @@ P.cards.append(card(
           bullets(block(BODY, 'Loss of revenue to the government', 'Student Research Project')),
           'One effect, 8 marks.')],
     ''))
+
+# ── Worked calculations the scheme prints in full ──────────────────────────
+# The scheme sets a fraction as a stacked 2-D layout, so extraction flattens it:
+# the numerator and the answer come out on one line and the denominator after
+# them. Nothing is missing and nothing is added — the note on each card says how
+# to read the order, which is the honest fix for a layout the text layer cannot
+# preserve.
+
+P.cards.append(card(
+    'econ-2022-ol-q13-a-i-percentage', 2022, 'ordinary', 'economics-3-1',
+    'current-spending-as-a-share-of-total-expenditure', '2022 OL Q13(a)(i)',
+    'Calculate current expenditure as a percentage of total government expenditure. Show your '
+    'workings.',
+    '16', 16,
+    [point('r-1', as_option(block(BODY, '\u20ac71.82 bn x 100 = 86.61',
+                                  '(ii) Explain current OR capital')), 16,
+           'Read as a fraction: \u20ac71.82bn over \u20ac82.92bn, times 100. The scheme stacks '
+           'it, so extraction puts the denominator last. The total is the WHOLE pie, not the '
+           'capital slice \u2014 dividing by \u20ac11.1bn is the usual error.')],
+    'The plain id econ-2022-ol-q13-a-i is taken by a card citing 2022 OL Q14(c)(i), and an id '
+    'is never renamed because it keys a student\u2019s review history \u2014 hence the suffix. '
+    'The pie prints current and capital separately and the total in its heading, so the '
+    'denominator has to be recognised before any arithmetic happens.',
+    tariff_kind='fixed',
+    figure_key='economics-2022-OL-paper-p16-i0'))
 
 P.emit()

@@ -65,6 +65,13 @@ const decks = [
    * (reconcile.py) now reads 100.0%: 498 covered + 160 excluded-with-evidence
    * = all 658 asks the 2021-2025 papers print. Nothing removed; all prior ids
    * remain. */
+  /* 2026-08-29 (third wave): economics 314/250 -> 316/251. Three cards ADDED,
+   * none removed. Worked calculations whose scheme sets the fraction as a
+   * stacked 2-D layout — extraction flattens it, putting the denominator after
+   * the answer, so each card's note says how to read the order rather than
+   * pretending the layout survived. Coverage 518/658 -> 521/658, exclusions
+   * 140 -> 137. Two pre-existing cards also gained the figure they had always
+   * referred to ("The diagram shows...") and card lint is now clean. */
   /* 2026-08-29 (second wave): economics 303/247 -> 314/250. Fourteen cards
    * ADDED, none removed or renamed. All thirteen came out of the exclusion
    * list, where they had been recorded as "answered by reading the chart" or
@@ -89,8 +96,8 @@ const decks = [
    * The -trend suffix on the first is forced: econ-2021-hl-q16-a-i is taken by
    * a card whose citation econ_refs.py corrects to Q16(c)(i), and an id is
    * never renamed because it keys a student's review history. */
-  ['economics:higher', ECON_HIGHER, 314, '88c4268d2959b83ca00655cf71e5a9102ab63d1cdd69416ab875e12042262ced'],
-  ['economics:ordinary', ECON_ORDINARY, 250, 'e48369a9dbcdc23d215ace287178dcd487914471c0b2868fdf9fdb4608775926'],
+  ['economics:higher', ECON_HIGHER, 316, '0d5278118a29e8ca6db75c03e92f3f37d677c635a78d68a3cbcd50865c7f1cf1'],
+  ['economics:ordinary', ECON_ORDINARY, 251, 'b41771ee3ec40f92c64f5ad65fb54ed7aefb7d77dac4f901f1cc89e347d74f1d'],
   /* 2026-08-23: the two newest subjects had shipped with NO identity baseline
    * at all — found by the ratchet-soundness review, which means every earlier
    * count in this file was guarding seven decks while two rode along
@@ -118,6 +125,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7236);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7239);
   });
 });

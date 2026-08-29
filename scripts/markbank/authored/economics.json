@@ -1679,6 +1679,39 @@
   "notes": "Both wage rates are read off the chart. The base is 2016, the earlier year, so dividing by the 2021 rate is the usual error."
  },
  {
+  "id": "econ-2021-hl-q13-c-i",
+  "topicId": "economics-1-1",
+  "conceptId": "ped-of-apple-airpods",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 HL Q13(c)(i)",
+  "questionText": "Apple AirPods (earphones) price fell from €160 to €125 online. The quantity demanded increased from 10,000 units to 15,000 units. Calculate the Price Elasticity of Demand of Apple AirPods.",
+  "stem": "",
+  "figureKey": "",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "15",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "+5000 160 + 125 (285) −35 × 10,000 + 15,000 (25,000) = −1.63",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "Four quantities, set as two stacked fractions and flattened by extraction: the change in quantity (+5,000) over the change in price (−35), times the sum of the prices (285) over the sum of the quantities (25,000). That midpoint form is why both prices and both quantities are added."
+   }
+  ],
+  "notes": "The answer is negative because price and quantity move opposite ways, and the sign is part of the answer rather than a detail to be dropped."
+ },
+ {
   "id": "econ-2021-hl-sa-q1-b",
   "topicId": "economics-4-2",
   "conceptId": "why-a-trade-surplus-is-an-aim",
@@ -8074,6 +8107,39 @@
   "notes": ""
  },
  {
+  "id": "econ-2022-ol-q13-a-i-percentage",
+  "topicId": "economics-3-1",
+  "conceptId": "current-spending-as-a-share-of-total-expenditure",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2022 OL Q13(a)(i)",
+  "questionText": "Calculate current expenditure as a percentage of total government expenditure. Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2022-OL-paper-p16-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "16",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "€71.82 bn x 100 = 86.61% €82.92 bn",
+    "marks": 16,
+    "openList": true,
+    "contextNote": "Read as a fraction: €71.82bn over €82.92bn, times 100. The scheme stacks it, so extraction puts the denominator last. The total is the WHOLE pie, not the capital slice — dividing by €11.1bn is the usual error."
+   }
+  ],
+  "notes": "The plain id econ-2022-ol-q13-a-i is taken by a card citing 2022 OL Q14(c)(i), and an id is never renamed because it keys a student’s review history — hence the suffix. The pie prints current and capital separately and the total in its heading, so the denominator has to be recognised before any arithmetic happens."
+ },
+ {
   "id": "econ-2022-ol-sa-q2-ii",
   "topicId": "economics-1-3",
   "conceptId": "what-the-census-is-used-for",
@@ -8264,7 +8330,7 @@
   "questionRef": "2022 OL Section A Q1(ii)",
   "questionText": "The diagram shows the forecast growth in the Irish economy for 2020 to 2023. Explain the term economic growth.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "economics-2022-OL-paper-p03-i0",
   "labelKey": [],
   "tariffModel": {
    "kind": "fixed",
@@ -8284,7 +8350,7 @@
     "contextNote": "The definition, 6 marks; any of the slash-separated wordings."
    }
   ],
-  "notes": "Part (i), completing the table, is answered by reading the growth chart and is not carded."
+  "notes": "The chart is the Central Bank’s forecast, and the definition has to hold for it: growth is the RATE of increase, so the four rising columns are growth even where the column is shorter than the one before it."
  },
  {
   "id": "econ-2022-ol-sa-q2-i",
@@ -10484,6 +10550,39 @@
    }
   ],
   "notes": "The scheme is explicit that a rise counts as readily as a fall. A student who spots the uptick from May 2022 has analysed a trend just as well as one who takes the whole period."
+ },
+ {
+  "id": "econ-2023-hl-q13-b-iii",
+  "topicId": "economics-3-0",
+  "conceptId": "the-injection-needed-to-reach-full-employment",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2023 HL Q13(b)(iii)",
+  "questionText": "How much will the government have to inject into this economy if it wants the economy to operate at its full employment level? Show your workings.",
+  "stem": "",
+  "figureKey": "economics-2023-HL-paper-p22-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "8",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "€750m - €500m 2 = €250m 2 250/2 2 = Injection €125m 2",
+    "marks": 8,
+    "openList": true,
+    "contextNote": "The 2s between the steps are the marks: four steps at 2 each make the ⟨8⟩. Find the deflationary gap first (€750m − €500m), then divide by the multiplier — the injection is SMALLER than the gap, because the multiplier does the rest of the work."
+   }
+  ],
+  "notes": "The gap is €250m but the injection is €125m. Answering €250m is answering a different question: it ignores that the injection multiplies through the economy."
  },
  {
   "id": "econ-2023-hl-sa-q1-a",
@@ -21365,7 +21464,7 @@
   "questionRef": "2025 HL Section A Q9(b)",
   "questionText": "With reference to the diagram, explain the shape of the curve labelled 2 — the kinked demand curve facing a firm in an oligopoly market.",
   "stem": "",
-  "figureKey": "",
+  "figureKey": "economics-2025-HL-paper-p11-art",
   "labelKey": [],
   "tariffModel": {
    "kind": "bestNofParts",
