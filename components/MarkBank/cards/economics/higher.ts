@@ -1642,6 +1642,28 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2022 Higher Level — © State Examinations Commission.",
+    id: "econ-2022-hl-seca-q7-a-ii", topicId: "economics-3-1", conceptId: "why-the-ecb-cut-rates-to-zero",
+    section: "A", questionRef: "2022 HL Section A Q7(a)(ii)",
+    stem: "The chart shows the ECB base interest rate from 2000 to 2021, falling from about 3% at the start of the period to zero.",
+    questionText: "Justify your choice in (i) above.",
+    tariffModel: {"kind":"fixed","notation":"2 x 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "In the wake of the global financial crisis in 2007/2008 the European Central Bank gradually dropped its base interest rate to zero percent in order to discourage saving and encourage borrowing in the hopes of stimulating investment /economic growth in the European economy again.", marks: 8, contextNote: "Two things earn the marks: WHAT the ECB did — cut the base rate gradually to zero after 2007/2008 — and WHY, to make saving unattractive and borrowing cheap, so investment and growth would pick up. Naming the fall without its purpose is half an answer.", openList: true },
+    ],
+    figure: {
+          "candId": "economics-2022-HL-paper-p10-i0",
+          "src": "/exam-figures/economics/markbank/economics-2022-HL-paper-p10-i0.png",
+          "srcHash": "9226cb175e6a5b85811a040ed50d8ea4",
+          "alt": "A line chart headed 'Figure B: Base Interest Rate', y-axis 'Base % Interest Rate' 0 to 5, x-axis 'Year' in two-year steps from 2000 to 2020. The line starts at 3, holds to 2002, falls to 2 by 2004, holds to 2006, spikes to 4 at 2008, falls sharply to 1 by 2010, holds to 2012, then falls to 0 by 2014 and runs flat along the axis to 2020.",
+          "attribution": "SEC Leaving Certificate Economics 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2023, level: "higher",
     paperFileid: "LC034ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2023 Higher Level — © State Examinations Commission.",

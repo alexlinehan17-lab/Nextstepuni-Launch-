@@ -243,4 +243,30 @@ P.cards.append(card(
     section='A', tariff_kind='fixed',
     figure_key='economics-2022-HL-scheme-p07-q4a-ticks'))
 
+# ── The justification half of a "which chart" pair ─────────────────────────
+# Part (i) asks the student to tick which of two printed charts shows the real
+# ECB trend. It is NOT carded: the paper prints Figure A and Figure B side by
+# side and only Figure B is catalogued, so a student would be asked to choose
+# between two charts while seeing one. Part (ii) is self-contained — it asks
+# why, and the scheme answers in prose — so Figure B rides as its context.
+P.cards.append(card(
+    'econ-2022-hl-seca-q7-a-ii', 2022, 'higher', 'economics-3-1',
+    'why-the-ecb-cut-rates-to-zero', '2022 HL Section A Q7(a)(ii)',
+    'Justify your choice in (i) above.',
+    '2 x 4', 8,
+    [point('r-1', as_option(block(BODY, 'In the wake of the global financial crisis in 2007/2008',
+                                  '(b)')), 8,
+           'Two things earn the marks: WHAT the ECB did \u2014 cut the base rate gradually to '
+           'zero after 2007/2008 \u2014 and WHY, to make saving unattractive and borrowing '
+           'cheap, so investment and growth would pick up. Naming the fall without its purpose '
+           'is half an answer.')],
+    'Part (i) asks which of two printed charts shows the real trend; this part asks why that one '
+    'is right. The answer is a policy story, not a reading of the line: rates fell because the '
+    'ECB was trying to restart a stalled economy.',
+    stem='The chart shows the ECB base interest rate from 2000 to 2021, falling from about 3% at '
+         'the start of the period to zero.',
+    section='A', tariff_kind='fixed',
+    figure_key='economics-2022-HL-paper-p10-i0'))
+
+
 P.emit()
