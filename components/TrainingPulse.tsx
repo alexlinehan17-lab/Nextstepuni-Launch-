@@ -134,6 +134,8 @@ const TrainingPulse: React.FC<TrainingPulseProps> = ({
       {/* Desktop: Horizontal pill */}
       <MotionButton
         onClick={onOpenProgress}
+        aria-label={`${currentRank.title}; ${rankProgress}% to ${nextRank?.title ?? 'the highest rank'}; ${pointsBalance} Journey Points. Open milestones.`}
+        title="Open progress and milestones"
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
         className="hidden md:flex items-center gap-3 px-4 py-2 rounded-full bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-shadow cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]"
@@ -151,7 +153,7 @@ const TrainingPulse: React.FC<TrainingPulseProps> = ({
 
         {/* XP progress bar */}
         {nextRank && (
-          <div className="w-16 h-1.5 bg-zinc-100 dark:bg-zinc-800 rounded-full overflow-hidden">
+          <div className="w-16 h-1.5 bg-zinc-100 dark:bg-zinc-800 rounded-full overflow-hidden" role="progressbar" aria-label="Rank progress" aria-valuemin={0} aria-valuemax={100} aria-valuenow={rankProgress}>
             <motion.div
               className="h-full rounded-full"
               style={{ backgroundColor: currentRank.colorHex }}
@@ -180,6 +182,7 @@ const TrainingPulse: React.FC<TrainingPulseProps> = ({
       {/* Mobile: Compact badge — shown inline in header area */}
       <MotionButton
         onClick={onOpenProgress}
+        aria-label={`${currentRank.title}; ${rankProgress}% rank progress. Open milestones.`}
         whileTap={{ scale: 0.95 }}
         className="flex md:hidden items-center gap-2 px-3 py-1.5 rounded-full bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-sm cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.5)]"
       >
@@ -192,7 +195,7 @@ const TrainingPulse: React.FC<TrainingPulseProps> = ({
         </div>
 
         {/* Mini progress ring */}
-        <svg className="w-5 h-5 -rotate-90" viewBox="0 0 24 24">
+        <svg aria-hidden="true" className="w-5 h-5 -rotate-90" viewBox="0 0 24 24">
           <circle cx="12" cy="12" r="9" stroke={currentRank.colorHex} strokeWidth="2.5" fill="transparent" className="opacity-15" />
           <circle
             cx="12" cy="12" r="9"

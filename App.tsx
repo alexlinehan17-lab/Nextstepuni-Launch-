@@ -58,6 +58,8 @@ import { shouldShowStudentChrome } from './utils/studentChrome';
 import { isRankBaselineReady, observeRankForSession, type RankUpTracker } from './utils/rankUpTransition';
 import { isProgressReadyForUser } from './utils/progressHydration';
 import { DEMO_STUDENT_UID } from './data/devStudent';
+import SiteGuide, { type GuideAction } from './components/SiteGuide';
+import FeedbackModal from './components/FeedbackModal';
 
 /* ── Mobile Bottom Navigation Bar ── */
 interface MobileBottomNavProps {
@@ -174,6 +176,8 @@ const App: React.FC = () => {
   }, [updateDemoProgress, user?.uid]);
 
   const [settingsOpen, setSettingsOpen] = useState(false);
+  const [siteGuideOpen, setSiteGuideOpen] = useState(false);
+  const [feedbackOpen, setFeedbackOpen] = useState(false);
   const [passportOpen, setPassportOpen] = useState(false);
   const [northStarEditOpen, setNorthStarEditOpen] = useState(false);
   const [changeSubjectsOpen, setChangeSubjectsOpen] = useState(false);
@@ -476,6 +480,16 @@ const App: React.FC = () => {
 
   const handleGoHome = () => { nav.navigateToTree(); };
 
+  const handleGuideGo = useCallback((action: GuideAction) => {
+    if (action === 'modules') nav.navigateToModules();
+    else if (action === 'learning-paths') nav.navigateToLearningPaths();
+    else if (action === 'launchpad') nav.navigateToInnovationZone();
+    else if (action === 'dashboard') nav.navigateToDashboard();
+    else if (action === 'study') nav.navigateToStudySession();
+    else if (action === 'journey') nav.navigateToJourney();
+    else if (action.startsWith('tool:')) nav.navigateToInnovationZone(action.slice(5));
+  }, [nav]);
+
   const handleOnboardingComplete = async (profile: StudentSubjectProfile, northStarData?: NorthStar, essentialsMode?: boolean) => {
     if (!user) return;
 
@@ -483,6 +497,7 @@ const App: React.FC = () => {
       updateDemoProgress(current => ({
         ...current,
         subjectProfile: profile,
+        onboardingSkippedAt: null,
         ...(northStarData ? {
           northStar: northStarData,
           directionProfile: createDirectionProfile(northStarData),
@@ -558,7 +573,7 @@ const App: React.FC = () => {
     };
 
     const progressDocRef = doc(db, 'progress', user.uid);
-    const saveData: Record<string, any> = { subjectProfile: profile };
+    const saveData: Record<string, any> = { subjectProfile: profile, onboardingSkippedAt: null };
     if (northStarData) {
       saveData.northStar = northStarData;
       saveData.directionProfile = createDirectionProfile(northStarData);
@@ -628,8 +643,23 @@ const App: React.FC = () => {
   };
 
   const handleOnboardingSkip = () => {
+    if (!user) return;
+    const skippedAt = new Date().toISOString();
     markOnboardingComplete();
     nav.navigateToTree();
+    if (user.uid === DEMO_STUDENT_UID) {
+      updateDemoProgress(current => ({ ...current, onboardingSkippedAt: skippedAt }));
+      return;
+    }
+    saveInBackground(
+      setDoc(doc(db, 'progress', user.uid), { onboardingSkippedAt: skippedAt }, { merge: true }),
+      'App.skipOnboarding',
+      () => {
+        markOnboardingNeeded();
+        nav.navigateToOnboarding();
+        showToast("We couldn't save that choice. Please try again.", 'error');
+      },
+    );
   };
 
   // ─── Phase 8: year-progression handlers ─────────────────────────────
@@ -954,6 +984,8 @@ const App: React.FC = () => {
     setUnlockedAvatarSeeds,
     unlockedThemes, setUnlockedThemes,
     setUnlockedCardStyles,
+    onOpenSiteGuide: () => setSiteGuideOpen(true),
+    onOpenFeedback: () => setFeedbackOpen(true),
   };
 
   return (
@@ -999,6 +1031,13 @@ const App: React.FC = () => {
 
       <AppRouter {...routerProps} />
 
+      {user && userProgressReady && !user.isAdmin && !isSchoolStaff(user.role) && (
+        <>
+          <SiteGuide open={siteGuideOpen} onClose={() => setSiteGuideOpen(false)} onGo={handleGuideGo} />
+          <FeedbackModal open={feedbackOpen} onClose={() => setFeedbackOpen(false)} context={{ surface: viewState }} />
+        </>
+      )}
+
       {/* Global QoL overlays — ⌘K jump-to + "?" shortcut card (students only) */}
       {user && userProgressReady && !user.isAdmin && !isSchoolStaff(user.role) && viewState !== 'onboarding' && (
         <>
@@ -1036,6 +1075,10 @@ const App: React.FC = () => {
           onOpenPassport={() => setPassportOpen(true)}
           onGoToDashboard={handleGoToDashboard}
           onGoToInsights={handleGoToInsights}
+          onGoToReferences={() => nav.navigateToAccreditation()}
+          onGoToYearPlans={() => nav.navigateToYearPlans()}
+          onOpenSiteGuide={() => setSiteGuideOpen(true)}
+          onOpenFeedback={() => setFeedbackOpen(true)}
           completedCount={completedCount}
           totalCount={studentCourses.length}
           onOpenNorthStar={() => setNorthStarEditOpen(true)}
@@ -1058,7 +1101,10 @@ const App: React.FC = () => {
             unlockedCardStyles={unlockedCardStyles}
             userName={user?.name}
             userSchool={user?.school}
-            userYearGroup={user?.yearGroup}
+            userYearGroup={user?.yearGroup ?? studentProfile?.yearGroup}
+            hasStudyProfile={studentProfile !== null}
+            hasNorthStar={northStar !== null}
+            onStartProfileSetup={() => { setSettingsOpen(false); nav.navigateToOnboarding(); }}
             onChangeSubjects={studentProfile ? () => { setSettingsOpen(false); setChangeSubjectsOpen(true); } : undefined}
             onResetNorthStar={() => { setSettingsOpen(false); setNorthStarEditOpen(true); }}
             onAdvanceYear={() => { setSettingsOpen(false); setYearTransitionOpen(true); }}
@@ -1067,7 +1113,7 @@ const App: React.FC = () => {
           <YearTransitionFlow
             isOpen={yearTransitionOpen}
             onClose={() => setYearTransitionOpen(false)}
-            currentYearGroup={user?.yearGroup}
+            currentYearGroup={user?.yearGroup ?? studentProfile?.yearGroup}
             onConfirmBump={handleConfirmYearBump}
             onConfirmJCtoSenior={handleConfirmJCtoSenior}
             onConfirmGraduate={handleConfirmGraduate}
@@ -1078,6 +1124,7 @@ const App: React.FC = () => {
             userProgress={userProgress}
             allCourses={studentCourses}
             categoryTitles={categoryTitles}
+            onSelectModule={moduleId => { setPassportOpen(false); handleSelectModule(moduleId); }}
           />
           <NorthStarEditModal
             isOpen={northStarEditOpen}

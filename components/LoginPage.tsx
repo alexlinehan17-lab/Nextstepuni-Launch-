@@ -824,9 +824,23 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         );
       };
       userDocStarted = true;
-      // The rollback is disarmed the instant this flag flips — shouldReapAccount
-      // returns false from here on — so the router hold has nothing left to
-      // protect against and can come down now rather than after the write.
+      // Publish the new-account destination BEFORE releasing the router hold.
+      // Auth and progress hydrate independently, so releasing first creates a
+      // render where the router sees a signed-in user but does not yet know
+      // they need onboarding. That single render used the returning-user copy
+      // ("Loading your workspace") between this setup screen and onboarding.
+      handleLoginSuccess({
+        uid: createdUser.uid,
+        name: name.trim(),
+        avatar: selectedAvatar,
+        school,
+        role: 'student',
+      }, { requiresOnboarding: true });
+
+      // The rollback is disarmed the instant userDocStarted flips —
+      // shouldReapAccount returns false from here on — so the router hold has
+      // nothing left to protect against and can come down after the onboarding
+      // intent above is already available.
       // writeUserDoc waits on a SERVER acknowledgement (up to 8s on a poor
       // connection), and making a student stare at a setup screen for that is
       // pointless when the account is already safe. The finally below still
@@ -838,13 +852,6 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         retryUserDoc,
       );
       trackFunnel('register_succeeded');
-      handleLoginSuccess({
-        uid: createdUser.uid,
-        name: name.trim(),
-        avatar: selectedAvatar,
-        school,
-        role: 'student',
-      }, { requiresOnboarding: true });
     } catch (err: any) {
       // A failed /users write must NEVER cost the student their account.
       //
@@ -863,13 +870,8 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
         // write itself, so it has already fired for THIS rejection. Retrying
         // again would just issue a duplicate setDoc.
         trackFunnel('register_succeeded');
-        handleLoginSuccess({
-          uid: createdUser.uid,
-          name: name.trim(),
-          avatar: selectedAvatar,
-          school,
-          role: 'student',
-        }, { requiresOnboarding: true });
+        // Onboarding intent was published synchronously before the hold came
+        // down, so this recovery path can keep that same visual handoff.
         setIsLoading(false);
         return;
       }

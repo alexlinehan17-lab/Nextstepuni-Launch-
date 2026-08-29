@@ -9,10 +9,8 @@ import {
   ArrowRight,
   User, Home, PanelLeft, ChartNoAxesCombined, Award, BookOpen, CalendarRange, Settings, LogOut, Sun, Moon, RefreshCw, Timer, Bell, MessageSquare, HelpCircle
 } from 'lucide-react';
-import SiteGuide, { type GuideAction } from './SiteGuide';
 import FirstVisitCoachMarks, { coachMarksSeen } from './FirstVisitCoachMarks';
 import ResumeCard from './ResumeCard';
-import FeedbackModal from './FeedbackModal';
 import { type CourseData } from './Library';
 import { type UserSettings } from '../types';
 import { toDateKey } from './subjectData';
@@ -75,12 +73,14 @@ interface KnowledgeTreeProps {
   onOpenTool?: (toolId: string) => void;
   /** Stable per-account key for one-time coach marks. */
   uid?: string;
+  onOpenSiteGuide?: () => void;
+  onOpenFeedback?: () => void;
 }
 
+const noop = () => {};
 
-export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: _onSelectCategory, onGoToModules, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, onGoToInsights: _onGoToInsights, onGoToAccreditation, onGoToYearPlans, allCourses, onSelectModule, categoryTitles: _categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes: _unlockedThemes = [], completedCount, totalCount, streak, pointsBalance, northStar, studentProfile, timetableCompletions, smartRecommendation, questState, onClaimQuestReward, onRecommendationAction, onOpenTool, uid }) => {
+export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: _onSelectCategory, onGoToModules, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, onGoToInsights: _onGoToInsights, onGoToAccreditation, onGoToYearPlans, allCourses, onSelectModule, categoryTitles: _categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes: _unlockedThemes = [], completedCount, totalCount, streak, pointsBalance, northStar, studentProfile, timetableCompletions, smartRecommendation, questState, onClaimQuestReward, onRecommendationAction, onOpenTool, uid, onOpenSiteGuide = noop, onOpenFeedback = noop }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [feedbackOpen, setFeedbackOpen] = useState(false);
   const reduceMotion = useReducedMotion();
   // The former inline home panel has moved into the full student dashboard.
   // Keep the legacy preference dormant so an old `showDashboard: true` value
@@ -89,7 +89,6 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
   const dashboardRef = useRef<HTMLDivElement | null>(null);
   const dashboardRevealRequested = useRef(false);
   // Site Guide (the "?") + one-time first-visit coach marks.
-  const [guideOpen, setGuideOpen] = useState(false);
   const [coachActive, setCoachActive] = useState(false);
   // "What's new" popover + its unseen-dot state.
 
@@ -141,31 +140,19 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
   const finishCoachMarks = useCallback(() => setCoachActive(false), []);
   const openGuideFromCoachMarks = useCallback(() => {
     setCoachActive(false);
-    setGuideOpen(true);
-  }, []);
+    onOpenSiteGuide();
+  }, [onOpenSiteGuide]);
 
   // Press "?" anywhere on the home page to open the guide.
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       const t = e.target as HTMLElement | null;
       if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable)) return;
-      if (e.key === '?') setGuideOpen(true);
+      if (e.key === '?') onOpenSiteGuide();
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, []);
-
-  const handleGuideGo = (action: GuideAction) => {
-    if (action === 'modules') onGoToModules();
-    else if (action === 'launchpad') onGoToInnovationZone();
-    else if (action === 'dashboard') onGoToDashboard();
-    else if (action === 'study') onGoToStudy?.();
-    else if (action.startsWith('tool:')) {
-      const toolId = action.slice(5);
-      if (onOpenTool) onOpenTool(toolId);
-      else onGoToInnovationZone();
-    }
-  };
+  }, [onOpenSiteGuide]);
 
   const sidebarItems = [
     { icon: Home, label: 'Home', onClick: () => {}, active: true },
@@ -353,6 +340,10 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
 
           {/* Dark / Light mode toggle */}
           <button
+            type="button"
+            role="switch"
+            aria-checked={settings.darkMode}
+            aria-label={settings.darkMode ? 'Use light mode (Beta)' : 'Use dark mode (Beta)'}
             onClick={() => updateSetting('darkMode', !settings.darkMode)}
             className="w-full flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
           >
@@ -371,7 +362,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
           {/* How the app works — the Site Guide */}
           <button
             data-coach="help"
-            onClick={() => setGuideOpen(true)}
+            onClick={onOpenSiteGuide}
             className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
           >
             <div className="shrink-0 flex items-center justify-center w-[18px]">
@@ -384,7 +375,7 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
 
           {/* Anonymous product feedback */}
           <button
-            onClick={() => setFeedbackOpen(true)}
+            onClick={onOpenFeedback}
             className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
           >
             <div className="shrink-0 flex items-center justify-center w-[18px]">
@@ -771,13 +762,8 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
       </div>
       </div>
 
-      <FeedbackModal open={feedbackOpen} onClose={() => setFeedbackOpen(false)} context={{ surface: 'home' }} />
-
-      {/* The Site Guide — a swipeable tour of the core pages (the "?"). */}
-      <SiteGuide open={guideOpen} onClose={() => setGuideOpen(false)} onGo={handleGuideGo} />
-
       {/* One-time first-visit coach marks — end by pointing at the "?". */}
-      {coachActive && !guideOpen && (
+      {coachActive && (
         <FirstVisitCoachMarks
           uid={uid}
           onFinish={finishCoachMarks}

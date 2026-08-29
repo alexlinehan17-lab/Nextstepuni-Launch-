@@ -132,6 +132,7 @@ interface StudySessionViewProps {
   onTimetableBlockComplete?: (dateKey: string, blockId: string, actualMinutes: number) => void;
   todayBlocks?: TimetableBlockContext[];
   onStudyBlock?: (block: TimetableBlockContext) => void;
+  onSetUpProfile?: () => void;
 }
 
 const StudySessionView: React.FC<StudySessionViewProps> = ({
@@ -152,6 +153,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
   onTimetableBlockComplete,
   todayBlocks = [],
   onStudyBlock,
+  onSetUpProfile,
 }) => {
   const session = useStudySession(user.uid, userProgress, allCourses);
   const { rawProgressDoc, updateDemoProgress } = useProgress();
@@ -610,7 +612,27 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                   );
                 })}
                 {subjects.length === 0 && (
-                  <p className="text-sm text-zinc-400 dark:text-zinc-500">No subjects set up yet. Complete onboarding first.</p>
+                  <div className="w-full rounded-2xl border-[1.5px] border-[#1A1A1A] bg-[#FDF8F0] p-5 text-left dark:border-zinc-600 dark:bg-zinc-900">
+                    <div className="flex items-start gap-3">
+                      <span className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#FDEBDD] text-[#B94712] dark:bg-orange-950/40 dark:text-orange-300">
+                        <BookOpen size={19} aria-hidden="true" />
+                      </span>
+                      <div className="min-w-0 flex-1">
+                        <p className="font-serif text-lg font-semibold text-[#1A1A1A] dark:text-white">Add your subjects to begin.</p>
+                        <p className="mt-1 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">We use them to tailor sessions, strategies and progress.</p>
+                        {onSetUpProfile && (
+                          <button
+                            type="button"
+                            onClick={onSetUpProfile}
+                            className="mt-4 inline-flex min-h-11 items-center gap-2 rounded-xl border-[1.5px] border-[#1A1A1A] bg-[#F26B1F] px-4 text-sm font-semibold text-white shadow-[2px_2px_0_0_#1A1A1A] transition-transform active:translate-x-0.5 active:translate-y-0.5 active:shadow-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2"
+                          >
+                            Set up subjects
+                            <ChevronRight size={16} aria-hidden="true" />
+                          </button>
+                        )}
+                      </div>
+                    </div>
+                  </div>
                 )}
               </div>
             </div>
@@ -733,7 +755,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                     return (
                       <div key={strategy.moduleId} className="flex items-center gap-3">
                         <Icon size={14} className={colors.text} />
-                        <span className="text-xs font-medium text-zinc-600 dark:text-zinc-400 w-24 truncate">{strategy.strategyName}</span>
+                        <span className="min-w-0 flex-1 text-xs font-medium leading-snug text-zinc-600 dark:text-zinc-400 sm:w-32 sm:flex-none">{strategy.strategyName}</span>
                         <div className="flex-1 grid grid-cols-4 gap-0.5">
                           {TIER_ORDER.map((t, i) => (
                             <div

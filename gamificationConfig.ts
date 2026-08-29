@@ -100,7 +100,7 @@ const GOAL_VARIATIONS: { label: string; metric: WeeklyGoal['metric']; icon: stri
   ],
   [
     { label: 'Unlock new content', metric: 'sections', icon: 'Layers', targetKey: 'sections' },
-    { label: 'Study session hours', metric: 'sessions', icon: 'Timer', targetKey: 'sessions' },
+    { label: 'Complete study sessions', metric: 'sessions', icon: 'Timer', targetKey: 'sessions' },
     { label: 'Reflect on learning', metric: 'reflections', icon: 'MessageSquare', targetKey: 'reflections' },
   ],
   [
@@ -250,4 +250,3 @@ export const MILESTONE_SURPRISES: MilestoneSurprise[] = [
   { threshold: 2500, label: 'Unstoppable',         bonusPoints: 100 },
   { threshold: 4000, label: 'Legend in the Making', bonusPoints: 150 },
 ];
-

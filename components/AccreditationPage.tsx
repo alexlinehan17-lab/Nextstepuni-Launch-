@@ -304,10 +304,10 @@ const AccreditationPage: React.FC<AccreditationPageProps> = ({ onBack, onOpenMod
                   <p className="text-xs text-[var(--ink-muted)]">Research and official guidance</p>
                 </div>
                 <h1 className="mt-4 max-w-3xl font-serif text-[clamp(38px,6vw,68px)] font-semibold leading-[0.96] tracking-[-0.045em] text-[var(--ink-primary)]">
-                  The evidence behind{' '}<br />every module.
+                  The evidence behind{' '}<br />every research-led module.
                 </h1>
                 <p className="mt-4 max-w-2xl text-sm leading-relaxed text-[var(--ink-secondary)] sm:text-[15px]">
-                  Explore what each module is designed to teach, why it helps, and the source record supporting it.
+                  Explore what each research-led module is designed to teach, why it helps, and the source record supporting it. Subject modules draw on curriculum specifications, past papers and marking guidance as their reviews are completed.
                 </p>
               </div>
 
@@ -323,7 +323,7 @@ const AccreditationPage: React.FC<AccreditationPageProps> = ({ onBack, onOpenMod
             </div>
 
             <div className="grid grid-cols-2 gap-x-5 gap-y-6 border-b border-[var(--outline-soft)] py-6 sm:grid-cols-4">
-              <StatCell eyebrow="Modules" value={String(navOrder.length)} meta="with reviewed evidence" accent />
+              <StatCell eyebrow="Modules" value={String(navOrder.length)} meta="research-led modules reviewed" accent />
               <StatCell eyebrow="Unique sources" value={String(sourceStats.total)} meta="across the library" />
               <StatCell eyebrow="Peer-reviewed" value={String(sourceStats.peerReviewed)} meta="research records" />
               <StatCell eyebrow="Official" value={String(sourceStats.official)} meta="institutional sources" />
@@ -510,7 +510,7 @@ const AccreditationPage: React.FC<AccreditationPageProps> = ({ onBack, onOpenMod
                     </p>
                   </section>
 
-                  <nav className="mt-4 grid grid-cols-2 gap-3" aria-label="Browse accredited modules">
+                  <nav className="mt-4 grid grid-cols-2 gap-3" aria-label="Browse reviewed modules">
                     {([-1, 1] as const).map(direction => {
                       const target = navOrder[navIndex + direction];
                       const course = target ? ALL_COURSES.find(item => item.id === target) : undefined;

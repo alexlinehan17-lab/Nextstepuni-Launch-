@@ -168,6 +168,16 @@ export default defineConfig(() => {
             ],
           },
           workbox: {
+            // `injectRegister: false` is required for the Capacitor guard above,
+            // but vite-plugin-pwa only adds these two auto-update settings when
+            // it injects the registration itself. Without them, a newly built
+            // worker installs and then waits behind every open tab. Refreshing
+            // one of those tabs keeps serving the previous app shell — including
+            // stale loading-screen layout — until every old tab is closed.
+            // Activate the new worker immediately and take control so the
+            // `autoUpdate` client can reload each tab onto the current bundle.
+            skipWaiting: true,
+            clientsClaim: true,
         // Keep lazy-tool payloads OUT of the precache. The runtime app-chunks
         // rule (NetworkFirst on /assets/*.js) still caches each one the moment a
         // student actually opens the tool, so the only thing given up is having

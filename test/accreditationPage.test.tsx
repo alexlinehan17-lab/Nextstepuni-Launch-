@@ -8,7 +8,7 @@ describe('References page', () => {
     const openModule = vi.fn();
     render(<AccreditationPage onBack={vi.fn()} onOpenModule={openModule} />);
 
-    expect(screen.getByRole('heading', { name: /The evidence behind\s*every module\./i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /The evidence behind\s*every research-led module\./i })).toBeInTheDocument();
     expect(screen.getByRole('tablist', { name: 'Evidence collections' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: "The Driver's Manual", level: 2 })).toBeInTheDocument();
     expect(screen.getByRole('region', { name: 'Module evidence' })).toBeInTheDocument();

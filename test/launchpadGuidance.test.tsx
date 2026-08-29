@@ -100,4 +100,25 @@ describe('Launchpad guidance', () => {
     expect(onOpenTool).toHaveBeenCalledWith('war-room', true);
     expect(screen.getByText('Your current recommendation')).toBeInTheDocument();
   });
+
+  test('never recommends a profile-gated tool when the profile is unfinished', () => {
+    const onRecommendationChange = vi.fn();
+    render(
+      <LaunchpadGuidance
+        tools={TOOLS}
+        availableToolIds={['catch-up-lane', 'paper-trail']}
+        recommendation={null}
+        onRecommendationChange={onRecommendationChange}
+        onOpenTool={vi.fn()}
+      />,
+    );
+
+    fireEvent.click(screen.getByRole('button', { name: /Recommend a tool/ }));
+    fireEvent.click(screen.getByRole('button', { name: 'I don’t know what to study' }));
+    expect(screen.queryByRole('button', { name: 'Give me one priority for today' })).not.toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: 'Build me a plan for the whole week' })).not.toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'Show me my syllabus gaps' }));
+
+    expect(onRecommendationChange).toHaveBeenCalledWith(expect.objectContaining({ toolId: 'paper-trail' }));
+  });
 });

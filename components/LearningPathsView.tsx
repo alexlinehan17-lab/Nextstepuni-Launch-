@@ -11,7 +11,7 @@
  * (progress fill, terracotta CTA arrow).
  */
 
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import { Check, ChevronDown } from 'lucide-react';
@@ -86,6 +86,22 @@ const LearningPathsView: React.FC<LearningPathsViewProps> = ({
     const course = allCourses.find(c => c.id === moduleId);
     return course?.title ?? moduleId;
   };
+
+  const recommendedPathId = useMemo(() => {
+    const unfinished = LEARNING_PATHS.filter(path => getFirstIncomplete(path));
+    if (unfinished.length === 0) return null;
+    return unfinished
+      .map(path => {
+        const completed = path.moduleIds.filter(id => isModuleComplete(id)).length;
+        const hasActiveModule = path.moduleIds.some(id => {
+          const course = allCourses.find(candidate => candidate.id === id);
+          const progress = userProgress[id];
+          return Boolean(course && progress && progress.unlockedSection > 0 && progress.unlockedSection < course.sectionsCount);
+        });
+        return { id: path.id, score: (hasActiveModule ? 100 : 0) + (completed / Math.max(1, path.moduleIds.length)) };
+      })
+      .sort((a, b) => b.score - a.score)[0]?.id ?? null;
+  }, [allCourses, userProgress]);
 
   return (
     <div className="product-shell learning-paths-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--ink-primary)] pb-32 transition-colors duration-500">
@@ -172,7 +188,7 @@ const LearningPathsView: React.FC<LearningPathsViewProps> = ({
                       margin: 0,
                     }}
                   >
-                    {meta.eyebrow}
+                    {meta.eyebrow}{recommendedPathId === path.id ? ' · Recommended next' : ''}
                   </p>
 
                   {/* Title */}

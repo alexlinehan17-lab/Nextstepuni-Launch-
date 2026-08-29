@@ -42,6 +42,14 @@ describe('onboarding loading handoff', () => {
 
     expect(auth).toContain('options?.requiresOnboarding');
     expect(auth).toContain('setLoadedData(previous => ({ ...previous, needsOnboarding: true }))');
-    expect(login.match(/requiresOnboarding: true/g)).toHaveLength(4);
+    expect(login.match(/requiresOnboarding: true/g)).toHaveLength(3);
+
+    const emailRegistration = login.indexOf('userDocStarted = true;');
+    const onboardingIntent = login.indexOf('{ requiresOnboarding: true }', emailRegistration);
+    const provisioningRelease = login.indexOf('endRegistrationProvisioning();', emailRegistration);
+
+    expect(emailRegistration).toBeGreaterThan(-1);
+    expect(onboardingIntent).toBeGreaterThan(emailRegistration);
+    expect(provisioningRelease).toBeGreaterThan(onboardingIntent);
   });
 });
