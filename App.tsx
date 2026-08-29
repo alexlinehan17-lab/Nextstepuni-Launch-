@@ -10,7 +10,6 @@ import { Home, Rocket, ChartNoAxesCombined, Timer, Mountain, User } from 'lucide
 import { UserProfile, MobileProfileSheet } from './components/UserProfileMenu';
 import { type CategoryType } from './components/KnowledgeTree';
 import AppRouter from './components/AppRouter';
-import { LoadingSpinner } from './components/LoadingSpinner';
 import OfflineBanner from './components/OfflineBanner';
 import CommandPalette, { TOOL_TITLES } from './components/CommandPalette';
 import ShortcutsOverlay from './components/ShortcutsOverlay';
@@ -928,12 +927,13 @@ const App: React.FC = () => {
     }
   }, [pointsData, setUnlockedAvatarSeeds, showToast, unlockedAvatarSeeds, updateDemoProgress, user?.uid]);
 
-  // Do not mount counters or student chrome against the logged-out context
-  // snapshot. If they mount at zero and hydrate a frame later, their normal
-  // count-up animation makes login look like progress was erased and rebuilt.
-  if (user && !isProgressReadyForUser(user.uid, progressLoaded, progressDataUid)) {
-    return <LoadingSpinner />;
-  }
+  // AppRouter owns the progress-hydration loading state so the account-setup
+  // animation stays mounted continuously from registration into onboarding.
+  // Keep every piece of student chrome gated here: mounting counters against
+  // the logged-out snapshot would still make them animate from zero once the
+  // matching account data arrives.
+  const userProgressReady = user !== null
+    && isProgressReadyForUser(user.uid, progressLoaded, progressDataUid);
 
   const routerProps = {
     studentProfile, userProgress, northStar, timetableCompletions,
@@ -960,7 +960,7 @@ const App: React.FC = () => {
     <SettingsContext.Provider value={{ settings, updateSetting, unlockedThemes, unlockedCardStyles }}>
     <OfflineBanner />
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950">
-      {user && shouldShowStudentChrome(viewState) && !isSchoolStaff(user.role) && !user.isAdmin && (
+      {user && userProgressReady && shouldShowStudentChrome(viewState) && !isSchoolStaff(user.role) && !user.isAdmin && (
         <div className={`fixed top-6 right-6 z-[100] ${viewState === 'my-journey' ? 'hidden' : 'hidden md:block'}`}>
           <div className="flex items-center gap-2">
             <div>
@@ -986,7 +986,7 @@ const App: React.FC = () => {
       {/* Mobile achievement toast — TrainingPulse removed on mobile per design feedback.
           AchievementToast still needs a mount point on mobile so it appears
           unobtrusively at top-left when a new achievement fires. */}
-      {user && shouldShowStudentChrome(viewState) && !isSchoolStaff(user.role) && !user.isAdmin && (
+      {user && userProgressReady && shouldShowStudentChrome(viewState) && !isSchoolStaff(user.role) && !user.isAdmin && (
         <div className="fixed top-4 left-4 z-[100] md:hidden pointer-events-none">
           <div className="pointer-events-auto">
             <AchievementToast
@@ -1000,14 +1000,14 @@ const App: React.FC = () => {
       <AppRouter {...routerProps} />
 
       {/* Global QoL overlays — ⌘K jump-to + "?" shortcut card (students only) */}
-      {user && !user.isAdmin && !isSchoolStaff(user.role) && viewState !== 'onboarding' && (
+      {user && userProgressReady && !user.isAdmin && !isSchoolStaff(user.role) && viewState !== 'onboarding' && (
         <>
           <CommandPalette courses={studentCourses} />
           <ShortcutsOverlay suppressQuestionKey={viewState === 'tree'} />
         </>
       )}
 
-      {user && shouldShowStudentChrome(viewState) && !user.isAdmin && !isSchoolStaff(user.role) && (
+      {user && userProgressReady && shouldShowStudentChrome(viewState) && !user.isAdmin && !isSchoolStaff(user.role) && (
         <MobileBottomNav
           viewState={viewState}
           onGoHome={handleGoHome}
@@ -1020,7 +1020,7 @@ const App: React.FC = () => {
         />
       )}
 
-      {user && !user.isAdmin && !isSchoolStaff(user.role) && (
+      {user && userProgressReady && !user.isAdmin && !isSchoolStaff(user.role) && (
         <MobileProfileSheet
           isOpen={mobileProfileOpen}
           onClose={() => setMobileProfileOpen(false)}
@@ -1044,7 +1044,7 @@ const App: React.FC = () => {
         />
       )}
 
-      {user && (
+      {user && userProgressReady && (
         <>
           <SettingsModal
             isOpen={settingsOpen}
@@ -1098,29 +1098,33 @@ const App: React.FC = () => {
       )}
 
       {/* Gamification overlays */}
-      <RankUpModal
-        isOpen={rankUpModal !== null}
-        newRank={rankUpModal}
-        onClose={() => setRankUpModal(null)}
-        onGoToJourney={() => { setRankUpModal(null); handleGoToJourney(); }}
-      />
+      {userProgressReady && (
+        <RankUpModal
+          isOpen={rankUpModal !== null}
+          newRank={rankUpModal}
+          onClose={() => setRankUpModal(null)}
+          onGoToJourney={() => { setRankUpModal(null); handleGoToJourney(); }}
+        />
+      )}
 
       {/* Streak celebration */}
-      <StreakCelebration
-        streakCount={streakCelebration ?? 0}
-        isOpen={streakCelebration !== null}
-        onDismiss={() => setStreakCelebration(null)}
-        weekDays={(() => {
-          const today = new Date();
-          const currentDayIdx = today.getDay() === 0 ? 6 : today.getDay() - 1;
-          return [0,1,2,3,4,5,6].map(i => {
-            const d = new Date(today);
-            d.setDate(today.getDate() - (currentDayIdx - i));
-            const key = d.toISOString().split('T')[0];
-            return (timetableCompletions?.[key]?.length ?? 0) > 0;
-          });
-        })()}
-      />
+      {userProgressReady && (
+        <StreakCelebration
+          streakCount={streakCelebration ?? 0}
+          isOpen={streakCelebration !== null}
+          onDismiss={() => setStreakCelebration(null)}
+          weekDays={(() => {
+            const today = new Date();
+            const currentDayIdx = today.getDay() === 0 ? 6 : today.getDay() - 1;
+            return [0,1,2,3,4,5,6].map(i => {
+              const d = new Date(today);
+              d.setDate(today.getDate() - (currentDayIdx - i));
+              const key = d.toISOString().split('T')[0];
+              return (timetableCompletions?.[key]?.length ?? 0) > 0;
+            });
+          })()}
+        />
+      )}
     </div>
     </SettingsContext.Provider>
   );
