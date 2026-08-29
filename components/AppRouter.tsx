@@ -10,7 +10,11 @@ import { useNavigation } from '../contexts/NavigationContext';
 import { useAuth } from '../contexts/AuthContext';
 import { type SessionUser, isLcaYear, isSchoolStaff } from '../utils/authUtils';
 import { endStaffProvisioning, isStaffProvisioning } from '../utils/staffProvisioning';
-import { isRegistrationProvisioning, registrationHoldRemainingMs } from '../utils/registrationProvisioning';
+import {
+  isRegistrationProvisioning,
+  registrationHoldRemainingMs,
+  subscribeToRegistrationProvisioning,
+} from '../utils/registrationProvisioning';
 import { LoadingSpinner } from './LoadingSpinner';
 import { KnowledgeTree, type CategoryType } from './KnowledgeTree';
 import { Library } from './Library';
@@ -208,14 +212,19 @@ export interface AppRouterProps {
  *
  * AppRouter holds no state of its own, so a marker read only during render
  * would never be re-read when it clears or expires -- both are plain
- * sessionStorage writes that schedule no React update. On the paths where no
- * auth-state change follows (a rejected rollback, an orphaned marker) that
- * would leave the student on a spinner with nothing to end it. Scheduling a
- * repaint for the hold's remaining lifetime makes the expiry a real deadline.
+ * sessionStorage writes that schedule no React update. Subscribe to marker
+ * changes so a successful registration reaches onboarding as soon as its
+ * safety hold clears, rather than waiting for the following Firestore write to
+ * cause an unrelated render. The deadline remains a fallback for a crashed
+ * attempt whose marker is never explicitly cleared.
  */
 function useRegistrationHold(): boolean {
   const [, bump] = useState(0);
   const held = isRegistrationProvisioning();
+  useEffect(
+    () => subscribeToRegistrationProvisioning(() => bump(n => n + 1)),
+    [],
+  );
   useEffect(() => {
     if (!held) return;
     const remaining = registrationHoldRemainingMs();
