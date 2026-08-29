@@ -74,6 +74,30 @@ def anchors_from(question, n=3):
     return [' '.join(words[i:i + 9]) for i in (0, 1, 2)][:n] + [' '.join(words[:6])]
 
 
+def figures_for(ref, byref):
+    """Crops keyed to this ask, or to any ask that CONTAINS it.
+
+    A crop is catalogued against whatever ref the inspecting agent judged it to
+    belong to, and that is often the parent: the chart printed above
+    "2025 HL Q12" serves (a)(i), (a)(ii) and (b) alike, so it is keyed to the
+    question rather than repeated against each part.
+
+    Matching only the exact ref and one level up reported 43 asks as needing a
+    crop that had never been taken. Walking the whole way up — part, letter,
+    bare question — found figures for all but a handful of them. The lesson is
+    the pipeline's own: a refusal is a hypothesis, and that includes a refusal
+    this scout produces.
+    """
+    seen, out = [], []
+    for candidate in (ref,
+                      re.sub(r'\([ivx]+\)$', '', ref).strip(),
+                      re.sub(r'\([a-h]\)(\([ivx]+\))?$', '', ref).strip()):
+        if candidate and candidate not in seen:
+            seen.append(candidate)
+            out.extend(byref.get(candidate) or [])
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--bucket')
@@ -124,7 +148,7 @@ def main():
             except Exception:                        # noqa: BLE001
                 continue
 
-        cands = byref.get(ref) or byref.get(re.sub(r'\([ivx]+\)$', '', ref).strip()) or []
+        cands = figures_for(ref, byref)
         print('=' * 100)
         print(f'REF     {ref}   [{b}]')
         print(f'REASON  {(e.get("reason") or "")[:150]}')

@@ -560,4 +560,29 @@ P.cards.append(card(
     'the question.',
     tariff_kind='fixed'))
 
+# ── Chart parts whose crop was catalogued against the QUESTION ─────────────
+# Keyed "2025 HL Q12" rather than to this part; found once the scout learned to
+# walk up the ref hierarchy.
+P.cards.append(card(
+    'econ-2025-hl-q12-a-i', 2025, 'higher', 'economics-3-1',
+    'the-trend-in-irelands-government-debt', '2025 HL Q12(a)(i)',
+    'Outline the overall trend in Ireland\u2019s general government debt, as shown in the '
+    'diagram above, using data from the chart. Indicate which overall trend you are commenting '
+    'on by ticking the relevant box: Government debt as a % of GNI*, or Government debt as a % '
+    'of GDP.',
+    '6', 6,
+    [anyN('r-1', 'The trend for the measure you ticked \u2014 either one', 6, 1, 6,
+          [as_option(block(_MIXED, 'Government Debt as a % of GNI*: There is a clear downward trend',
+                           'Government Debt as a % of GDP:')),
+           as_option(block(_MIXED, 'Government Debt as a % of GDP: There is a downward trend',
+                           'Downward + Reference to two distinct figures'))],
+          'Either measure earns the 6, but the scheme is explicit about what a full answer needs: '
+          '"Downward + Reference to two distinct figures or overall percentage decrease". Naming '
+          'the direction without numbers is half of it.')],
+    'Both measures fall, but not equally \u2014 debt as a share of GNI* drops 31 percentage '
+    'points against 15 for GDP. Ticking a box and then quoting the other series\u2019 figures is '
+    'the error the two-column layout invites.',
+    tariff_kind='fixed',
+    figure_key='economics-2025-HL-paper-p17-i0'))
+
 P.emit()

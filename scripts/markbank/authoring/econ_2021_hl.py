@@ -544,4 +544,30 @@ P.cards.append(card(
     'of the answer rather than a detail to be dropped.',
     tariff_kind='fixed'))
 
+# ── Chart parts whose crop was catalogued against the QUESTION ─────────────
+# The crop for the whole of Question 14 is keyed "2021 HL Q14", not to the part
+# that needs it, which is why the backfill scout reported this ask as having no
+# figure until its ref matching was widened to walk up the hierarchy. The chart
+# was there all along.
+P.cards.append(card(
+    'econ-2021-hl-q14-a-i', 2021, 'higher', 'economics-3-1',
+    'irelands-inflation-against-the-uk-and-euro-area', '2021 HL Q14(a)(i)',
+    'Analyse the trend of Ireland\u2019s inflation rate in relation to the UK and the Euro Area '
+    'from 2014-2019.',
+    '1 @ 6+1 @ 3+1 @ 3', 12,
+    [anyN('r-1', 'A trend read off the chart \u2014 any three', None, 3, 6,
+          [as_option(block(FULL, 'Across the entire time Ireland', 'From 2014 to 2016 the inflation rate fell')),
+           as_option(block(FULL, 'From 2014 to 2016 the inflation rate fell', 'From 2015 in the UK and 2016')),
+           as_option(block(FULL, 'From 2015 in the UK and 2016 in the Euro area', 'In 2018 the inflation rate in the UK')),
+           as_option(block(FULL, 'In 2018 the inflation rate in the UK and Euro Areas began to fall'))],
+          'Three observations, priced unevenly: the first is worth 6 and the next two 3 each. The '
+          'question says "in RELATION to" \u2014 so a trend that describes Ireland alone, without '
+          'setting it against the other two series, is not answering it.',
+          steps=[6, 3, 3])],
+    'Ireland sits below both comparators for almost the whole period, and dips BELOW zero in '
+    '2016 while the UK is rising. The chart\u2019s interest is in where the three lines diverge, '
+    'not in any single one of them.',
+    tariff_kind='fixed',
+    figure_key='economics-2021-HL-paper-p26-art'))
+
 P.emit()

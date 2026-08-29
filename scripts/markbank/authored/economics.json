@@ -1712,6 +1712,54 @@
   "notes": "The answer is negative because price and quantity move opposite ways, and the sign is part of the answer rather than a detail to be dropped."
  },
  {
+  "id": "econ-2021-hl-q14-a-i",
+  "topicId": "economics-3-1",
+  "conceptId": "irelands-inflation-against-the-uk-and-euro-area",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2021 HL Q14(a)(i)",
+  "questionText": "Analyse the trend of Ireland’s inflation rate in relation to the UK and the Euro Area from 2014-2019.",
+  "stem": "",
+  "figureKey": "economics-2021-HL-paper-p26-art",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "1 @ 6+1 @ 3+1 @ 3",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "A trend read off the chart — any three",
+    "marks": null,
+    "openList": true,
+    "contextNote": "Three observations, priced unevenly: the first is worth 6 and the next two 3 each. The question says \"in RELATION to\" — so a trend that describes Ireland alone, without setting it against the other two series, is not answering it.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 6,
+     "options": [
+      "Across the entire time Ireland’s inflation rate is lower than the Euro Area and UK (apart from 2015 in the UK) at just above 0.5%. •",
+      "From 2014 to 2016 the inflation rate fell in both the Euro Area and Ireland, whereas it started to rise in 2015 in the UK. •",
+      "From 2015 in the UK and 2016 in the Euro area and Ireland the inflation rate started to rise. •",
+      "In 2018 the inflation rate in the UK and Euro Areas began to fall."
+     ],
+     "perOptionSteps": [
+      6,
+      3,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "Ireland sits below both comparators for almost the whole period, and dips BELOW zero in 2016 while the UK is rising. The chart’s interest is in where the three lines diverge, not in any single one of them."
+ },
+ {
   "id": "econ-2021-hl-sa-q1-b",
   "topicId": "economics-4-2",
   "conceptId": "why-a-trade-surplus-is-an-aim",
@@ -21071,6 +21119,47 @@
    }
   ],
   "notes": "Profit is what is left, so the answer is neither the €160 of revenue nor the €90 of cost — a student who stops at either has done most of the arithmetic and none of the question."
+ },
+ {
+  "id": "econ-2025-hl-q12-a-i",
+  "topicId": "economics-3-1",
+  "conceptId": "the-trend-in-irelands-government-debt",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "economics",
+  "section": "B",
+  "questionRef": "2025 HL Q12(a)(i)",
+  "questionText": "Outline the overall trend in Ireland’s general government debt, as shown in the diagram above, using data from the chart. Indicate which overall trend you are commenting on by ticking the relevant box: Government debt as a % of GNI*, or Government debt as a % of GDP.",
+  "stem": "",
+  "figureKey": "economics-2025-HL-paper-p17-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "6",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "The trend for the measure you ticked — either one",
+    "marks": 6,
+    "openList": true,
+    "contextNote": "Either measure earns the 6, but the scheme is explicit about what a full answer needs: \"Downward + Reference to two distinct figures or overall percentage decrease\". Naming the direction without numbers is half of it.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 6,
+     "options": [
+      "Government Debt as a % of GNI*: There is a clear downward trend in government debt as a percentage of GNI*. • In 2021, it was 101%. • It fell to 82% in 2022. • It continued to decline to 76% in 2023. • Forecasts for 2024 (72%) and 2025 (70%) show a further reduction. • It falls by 31 percentage points over the course of the chart.",
+      "Government Debt as a % of GDP: There is a downward trend in government debt as a percentage of GDP. • In 2021, it was 54%. • It dropped to 44% in 2022 and remained at 44% in 2023. • Forecasts predict a slight decline to 42% in 2024 and 39% in 2025. • It falls by 15 percentage points over the course of the chart."
+     ]
+    }
+   }
+  ],
+  "notes": "Both measures fall, but not equally — debt as a share of GNI* drops 31 percentage points against 15 for GDP. Ticking a box and then quoting the other series’ figures is the error the two-column layout invites."
  },
  {
   "id": "econ-2025-hl-sa-q1-a-for",

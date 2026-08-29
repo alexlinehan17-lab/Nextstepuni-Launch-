@@ -5,11 +5,6 @@
   "evidence": "Scheme: '46²+46²+5²+2²+1² = 4262'"
  },
  {
-  "ref": "2021 HL Q14(a)(i)",
-  "reason": "every response describes the shape of the inflation chart printed with it (recorded class)",
-  "evidence": "Scheme: 'Across the entire time Ireland's inflation rate is lower than the Euro Area and UK (apart from 2015 in the UK)…'"
- },
- {
   "ref": "2021 HL Q15(b)(ii)",
   "reason": "every response reads the GNI chart printed with it",
   "evidence": "Scheme: 'The period from 2007 to 2009… GNI of both countries is downward sloping'"
@@ -543,11 +538,6 @@
   "ref": "2025 HL Q11(b)(i)",
   "reason": "monopoly diagram to draw, with the ⟨9⟩ explanation spread over six bullet steps and no per-step split stated — already recorded in econ_excluded.py",
   "evidence": "Explain, with the aid of a fully clearly labeled diagram (including the axes), the long-run equilibrium position … ⟨12⟩ Explanation: ⟨9⟩ • Equilibrium is at point E where MC = MR (and MC is rising). • The company produces Q1. …"
- },
- {
-  "ref": "2025 HL Q12(a)(i)",
-  "reason": "every response reads the government-debt chart printed with it — already recorded in econ_excluded.py",
-  "evidence": "There is a clear downward trend in government debt as a percentage of GNI*. • In 2021, it was 101%. • It fell to 82% in 2022. • It continued to decline to 76% in 2023…"
  },
  {
   "ref": "2025 HL Q14(b)(i)",

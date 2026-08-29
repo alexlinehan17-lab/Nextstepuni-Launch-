@@ -65,6 +65,13 @@ const decks = [
    * (reconcile.py) now reads 100.0%: 498 covered + 160 excluded-with-evidence
    * = all 658 asks the 2021-2025 papers print. Nothing removed; all prior ids
    * remain. */
+  /* 2026-08-29 (ninth wave): economics 323/259 -> 325/259. Two cards added,
+   * both unblocked by a TOOL fix rather than by new authoring: a crop is
+   * catalogued against whatever ref the inspecting agent judged it to belong
+   * to, and that is usually the parent question, so the scout's ref matching
+   * had to walk the whole hierarchy instead of one level. It had been
+   * reporting 43 asks as needing a crop that was never taken; the real number
+   * is far smaller. Coverage 536/658 -> 538/658, exclusions 122 -> 120. */
   /* 2026-08-29 (eighth wave): economics 322/259 -> 323/259. One card added:
    * 2022 HL Section A Q7(a)(ii), the justification half of a "which chart"
    * pair. Part (i) is deliberately NOT carded — the paper prints Figure A and
@@ -123,7 +130,7 @@ const decks = [
    * The -trend suffix on the first is forced: econ-2021-hl-q16-a-i is taken by
    * a card whose citation econ_refs.py corrects to Q16(c)(i), and an id is
    * never renamed because it keys a student's review history. */
-  ['economics:higher', ECON_HIGHER, 323, 'c99012ce544830b814683dd03bfc3c25df7f95441d8440bd91e799201da8939a'],
+  ['economics:higher', ECON_HIGHER, 325, 'd6df4e5bfb818b0a5704f7801a809304cb521f0a91f07ced0b810eeb17fc247d'],
   ['economics:ordinary', ECON_ORDINARY, 259, '8659d07522103236850ce69cac46bdc584a18d4d44b20374e3e08f1a81090c67'],
   /* 2026-08-23: the two newest subjects had shipped with NO identity baseline
    * at all — found by the ratchet-soundness review, which means every earlier
@@ -152,6 +159,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7254);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7256);
   });
 });

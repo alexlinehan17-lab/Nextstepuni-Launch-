@@ -621,6 +621,27 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: "LC034ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2021 Higher Level — © State Examinations Commission.",
+    id: "econ-2021-hl-q14-a-i", topicId: "economics-3-1", conceptId: "irelands-inflation-against-the-uk-and-euro-area",
+    section: "B", questionRef: "2021 HL Q14(a)(i)",
+    questionText: "Analyse the trend of Ireland’s inflation rate in relation to the UK and the Euro Area from 2014-2019.",
+    tariffModel: {"kind":"fixed","notation":"1 @ 6+1 @ 3+1 @ 3","answer":null,"ofParts":null,"perPart":null}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "A trend read off the chart — any three", marks: null, contextNote: "Three observations, priced unevenly: the first is worth 6 and the next two 3 each. The question says \"in RELATION to\" — so a trend that describes Ireland alone, without setting it against the other two series, is not answering it.", openList: true, group: {"claimMax":3,"perOption":6,"options":["Across the entire time Ireland’s inflation rate is lower than the Euro Area and UK (apart from 2015 in the UK) at just above 0.5%. •","From 2014 to 2016 the inflation rate fell in both the Euro Area and Ireland, whereas it started to rise in 2015 in the UK. •","From 2015 in the UK and 2016 in the Euro area and Ireland the inflation rate started to rise. •","In 2018 the inflation rate in the UK and Euro Areas began to fall."],"perOptionSteps":[6,3,3]} },
+    ],
+    figure: {
+          "candId": "economics-2021-HL-paper-p26-art",
+          "src": "/exam-figures/economics/markbank/economics-2021-HL-paper-p26-art.png",
+          "srcHash": "bebece0d5a1b23bec82b20e490dd1566",
+          "alt": "A line chart headed 'HICP average inflation rate, 2014-2019' with three series named in a legend: UK (blue), Ireland (orange) and Euro Area (grey). Y-axis 'AVERAGE INFLATION RATE' from -0.50 to 3.00. The UK runs 1.5, 0.0, 0.8, 2.7, 2.5, 1.9. Ireland runs 0.4, 0.2, -0.3, 0.4, 0.6, 0.7. The Euro Area runs 0.45, 0.4, 0.4, 1.6, 1.7, 0.9. Source 'Adapted from Eurostat - Irish Competitiveness Council Scorecard'.",
+          "attribution": "SEC Leaving Certificate Economics 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2021 Higher Level — © State Examinations Commission.",
     id: "econ-2021-hl-sa-q1-b", topicId: "economics-4-2", conceptId: "why-a-trade-surplus-is-an-aim",
     section: "A", questionRef: "2021 HL Section A Q1(b)",
     questionText: "Outline two reasons why achieving a trade surplus is an objective of the Irish government.",
@@ -4179,6 +4200,27 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Revenue: €4.00 x 40 smoothies = €160 Minus Total cost for 40 smoothies: €90 PROFIT €70", marks: 5, contextNote: "Revenue first, then total cost taken off it. The cost of 40 smoothies comes from the table rather than from multiplying a unit cost.", openList: true },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2025 Higher Level — © State Examinations Commission.",
+    id: "econ-2025-hl-q12-a-i", topicId: "economics-3-1", conceptId: "the-trend-in-irelands-government-debt",
+    section: "B", questionRef: "2025 HL Q12(a)(i)",
+    questionText: "Outline the overall trend in Ireland’s general government debt, as shown in the diagram above, using data from the chart. Indicate which overall trend you are commenting on by ticking the relevant box: Government debt as a % of GNI*, or Government debt as a % of GDP.",
+    tariffModel: {"kind":"fixed","notation":"6","answer":null,"ofParts":null,"perPart":null}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The trend for the measure you ticked — either one", marks: 6, contextNote: "Either measure earns the 6, but the scheme is explicit about what a full answer needs: \"Downward + Reference to two distinct figures or overall percentage decrease\". Naming the direction without numbers is half of it.", openList: true, group: {"claimMax":1,"perOption":6,"options":["Government Debt as a % of GNI*: There is a clear downward trend in government debt as a percentage of GNI*. • In 2021, it was 101%. • It fell to 82% in 2022. • It continued to decline to 76% in 2023. • Forecasts for 2024 (72%) and 2025 (70%) show a further reduction. • It falls by 31 percentage points over the course of the chart.","Government Debt as a % of GDP: There is a downward trend in government debt as a percentage of GDP. • In 2021, it was 54%. • It dropped to 44% in 2022 and remained at 44% in 2023. • Forecasts predict a slight decline to 42% in 2024 and 39% in 2025. • It falls by 15 percentage points over the course of the chart."]} },
+    ],
+    figure: {
+          "candId": "economics-2025-HL-paper-p17-i0",
+          "src": "/exam-figures/economics/markbank/economics-2025-HL-paper-p17-i0.png",
+          "srcHash": "23112502dfc517235851390c3c129746",
+          "alt": "A column chart headed \"Ireland's General Government Debt - As % of GNI* & % of GDP, from 2021 to 2025\", y-axis 'Percentage' 0 to 120, paired bars for each year. As a % of GNI*: 101, 82, 76, 72, 70. As a % of GDP: 54, 44, 44, 42, 39. The last two years are marked 2024f and 2025f. Source 'Adapted from the NTMA'.",
+          "attribution": "SEC Leaving Certificate Economics 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
