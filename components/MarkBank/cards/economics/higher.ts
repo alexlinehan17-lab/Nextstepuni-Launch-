@@ -2513,6 +2513,20 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC034ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2023 Higher Level — © State Examinations Commission.",
+    id: "econ-2023-hl-q12-a-iii", topicId: "economics-2-0", conceptId: "long-run-equilibrium-in-perfect-competition",
+    section: "B", questionRef: "2023 HL Q12(a)(iii)",
+    questionText: "Explain, with the use of a fully labelled diagram (including the axes), the long run equilibrium of a firm in perfect competition.",
+    tariffModel: {"kind":"fixed","notation":"9 + 8","answer":null,"ofParts":null,"perPart":null}, totalMarks: 17,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Price MC AC E P/C D = AR = MR Q Quantity 1 mark per label = 9 marks Price Quantity P C Q MC AC D/AR/MR E", marks: 9, contextNote: "Nine labels, one mark each, and the scheme says so. Note D = AR = MR is a SINGLE horizontal line here: a price-taking firm sells every unit at the market price, which is what separates this diagram from every other market structure.", openList: true },
+    { id: "r-2", kind: "point", verbatim: "• Equilibrium is at point E (where MC = MR). • Firms produce quantity Q. • They sell the output at price P. • Costs occur at level C. • The firm earns normal profit as AR = AC. • The firm is efficient as costs are at a minimum point of the ATC curve.", marks: 8, contextNote: "The long-run outcome is NORMAL profit, because AR = AC — free entry has competed any surplus away. And the firm sits at the minimum of its ATC curve, so it is productively efficient, which monopoly and monopolistic competition are not.", openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2023 Higher Level — © State Examinations Commission.",
     id: "econ-2023-hl-sa-q1-a", topicId: "economics-1-2", conceptId: "supply-of-a-fixed-capacity-good",
     section: "A", questionRef: "2023 HL Section A Q1(a)",
     questionText: "France will host the Rugby World Cup in 2023. Explain the supply curve for tickets for this event.",
@@ -3537,6 +3551,20 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Method 1: Workings: MPS = 1- 0.6 = 0.4 1 1 0.22 + 0.3 + 0.4 0.92 Answer = 1.08 Method 2: 1 1 1 – (0.6 - 0.22 - 0.3) 0.92 Answer = 1.08", marks: 12, contextNote: "Two routes to the same 1.08. Method 1 derives MPS first and adds the three leakages; Method 2 subtracts them from 1 inside the bracket. Either earns the marks — they are the same denominator written two ways.", openList: true },
     { id: "r-2", kind: "point", verbatim: "Explanation: • In this case if there is an injection of €1 into the circular flow of income, national income will increase by 1.08 times . • Any initial injection of spending will cause a greater increase in the circular flow of income by 1.08 times.", marks: 4, contextNote: "What the NUMBER means: €1 injected raises national income by €1.08. A multiplier barely above 1 says most of each euro leaks straight back out — which for a small open economy like Ireland is the point.", openList: true },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC034ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Economics 2024 Higher Level — © State Examinations Commission.",
+    id: "econ-2024-hl-q16-b-ii", topicId: "economics-1-1", conceptId: "income-elasticity-and-what-it-means",
+    section: "B", questionRef: "2024 HL Q16(b)(ii)",
+    questionText: "Using an appropriate formula and the figures in the table below, calculate the income elasticity of demand (YED) for this good. Explain the economic meaning of your answer. Show your workings.",
+    tariffModel: {"kind":"fixed","notation":"9 + 4","answer":null,"ofParts":null,"perPart":null}, totalMarks: 13,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "+30 x 40,000 + 50,000 (90,000) = + 0.8 +10,000 150 + 180 1 (330)", marks: 9, contextNote: "The midpoint form again: the change in quantity over the change in income, times the sum of incomes over the sum of quantities. The answer is +0.8.", openList: true },
+    { id: "r-2", kind: "point", verbatim: "The good is inelastic – the percentage change in quantity demanded is less than the percentage change in income. This means that the good is a necessity. It is less than 1. The good is a normal good – it has a positive income effect – as income went up more was demanded.", marks: 4, contextNote: "TWO things follow from +0.8 and the scheme wants both. It is income INELASTIC because the figure is below 1 — a necessity. And it is a NORMAL good because the figure is positive — demand rose with income. Sign and size say different things.", openList: true },
     ],
   } as SecCard,
   {

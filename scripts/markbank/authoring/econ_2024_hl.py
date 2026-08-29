@@ -725,4 +725,25 @@ P.cards.append(card(
     tariff_kind='fixed'))
 
 
+# ── Two-cell part: a calculation and what its answer means ─────────────────
+P.cards.append(card(
+    'econ-2024-hl-q16-b-ii', 2024, 'higher', 'economics-1-1',
+    'income-elasticity-and-what-it-means', '2024 HL Q16(b)(ii)',
+    'Using an appropriate formula and the figures in the table below, calculate the income '
+    'elasticity of demand (YED) for this good. Explain the economic meaning of your answer. Show '
+    'your workings.',
+    '9 + 4', 13,
+    [point('r-1', as_option(block(T, 'Workings: \u27e89\u27e9 +30 x 40,000', 'Explanation:')) if False else
+                  as_option(block(T, '+30 x 40,000', 'Explanation:')), 9,
+           'The midpoint form again: the change in quantity over the change in income, times the '
+           'sum of incomes over the sum of quantities. The answer is +0.8.'),
+     point('r-2', as_option(block(T, 'The good is inelastic \u2013 the percentage change',
+                                  '(iii) Assume income elasticity')), 4,
+           'TWO things follow from +0.8 and the scheme wants both. It is income INELASTIC because '
+           'the figure is below 1 \u2014 a necessity. And it is a NORMAL good because the figure '
+           'is positive \u2014 demand rose with income. Sign and size say different things.')],
+    'A single number carries two facts here: the sign tells you normal or inferior, the size tells '
+    'you necessity or luxury. Reporting only "inelastic" leaves half the meaning behind.',
+    tariff_kind='fixed'))
+
 emit(cards + P.cards)

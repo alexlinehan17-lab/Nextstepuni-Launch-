@@ -522,4 +522,24 @@ P.cards.append(card(
     tariff_kind='fixed',
     figure_key='economics-2023-HL-paper-p22-i0'))
 
+# ── Two-cell part: a labelled diagram and its explanation ──────────────────
+P.cards.append(card(
+    'econ-2023-hl-q12-a-iii', 2023, 'higher', 'economics-2-0',
+    'long-run-equilibrium-in-perfect-competition', '2023 HL Q12(a)(iii)',
+    'Explain, with the use of a fully labelled diagram (including the axes), the long run '
+    'equilibrium of a firm in perfect competition.',
+    '9 + 8', 17,
+    [point('r-1', as_option(block(BODY, 'Price MC AC E P/C D = AR = MR', 'Explanation:')), 9,
+           'Nine labels, one mark each, and the scheme says so. Note D = AR = MR is a SINGLE '
+           'horizontal line here: a price-taking firm sells every unit at the market price, which '
+           'is what separates this diagram from every other market structure.'),
+     point('r-2', as_option(block(BODY, '\u2022 Equilibrium is at point E (where MC = MR).',
+                                  '18 | P a g e')), 8,
+           'The long-run outcome is NORMAL profit, because AR = AC \u2014 free entry has competed '
+           'any surplus away. And the firm sits at the minimum of its ATC curve, so it is '
+           'productively efficient, which monopoly and monopolistic competition are not.')],
+    'This is the benchmark diagram the other three are judged against: normal profit, efficient '
+    'output, and a flat demand curve at the market price.',
+    tariff_kind='fixed'))
+
 P.emit()
