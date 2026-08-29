@@ -65,6 +65,12 @@ const decks = [
    * (reconcile.py) now reads 100.0%: 498 covered + 160 excluded-with-evidence
    * = all 658 asks the 2021-2025 papers print. Nothing removed; all prior ids
    * remain. */
+  /* 2026-08-29 (eighth wave): economics 322/259 -> 323/259. One card added:
+   * 2022 HL Section A Q7(a)(ii), the justification half of a "which chart"
+   * pair. Part (i) is deliberately NOT carded — the paper prints Figure A and
+   * Figure B side by side and only Figure B is catalogued, so a student would
+   * be asked to choose between two charts while seeing one. Its exclusion
+   * reason now says that rather than calling it a tick question. */
   /* 2026-08-29 (seventh wave): economics 320/257 -> 322/259. Four more tick
    * tables, none removed. Two of them carry a Reason column, where the scheme
    * prints prose AND states the categorisation with a drawn ✔ — extraction
@@ -117,7 +123,7 @@ const decks = [
    * The -trend suffix on the first is forced: econ-2021-hl-q16-a-i is taken by
    * a card whose citation econ_refs.py corrects to Q16(c)(i), and an id is
    * never renamed because it keys a student's review history. */
-  ['economics:higher', ECON_HIGHER, 322, '03cdcfad0b6bd7bb337d7160ab61ba167af8184c6b7dbc17fc5ba443a999aa72'],
+  ['economics:higher', ECON_HIGHER, 323, 'c99012ce544830b814683dd03bfc3c25df7f95441d8440bd91e799201da8939a'],
   ['economics:ordinary', ECON_ORDINARY, 259, '8659d07522103236850ce69cac46bdc584a18d4d44b20374e3e08f1a81090c67'],
   /* 2026-08-23: the two newest subjects had shipped with NO identity baseline
    * at all — found by the ratchet-soundness review, which means every earlier
@@ -146,6 +152,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7253);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7254);
   });
 });
