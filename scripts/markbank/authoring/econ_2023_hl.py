@@ -469,4 +469,34 @@ P.cards.append(card(
          'have it dumped illegally in Côte d’Ivoire, leaving more than 100,000 people in '
          'need of medical assistance.'))
 
+# ── The parts whose question IS a chart ────────────────────────────────────
+# Excluded until now as "every response reads the chart printed with it". That
+# was true of the response and was never a reason to leave the part out: the
+# crop is catalogued, carries verified alt text and an md5 the build re-checks,
+# and the scheme's responses are ordinary prose that quotes figures off it.
+# With the figure bound the student has exactly what the candidate in the hall
+# had.
+
+P.cards.append(card(
+    'econ-2023-hl-q14-a-i', 2023, 'higher', 'economics-3-2',
+    'trend-in-the-monthly-unemployment-rate', '2023 HL Q14(a)(i)',
+    'From the graph above analyse one trend in Ireland\u2019s monthly unemployment rate from '
+    'March 2021 to September 2022, using figures from the above graph.',
+    '1 @ 8', 8,
+    [anyN('r-1', 'One trend, quoted off the graph \u2014 any one', 8, 1, 8,
+          [as_option(block(BODY, 'Between March 2021 and September 2022, the unemployment rate fell',
+                           'Between March 2021 and May 2022')),
+           as_option(block(BODY, 'Between March 2021 and May 2022 the unemployment rate fell',
+                           'Between May 2022 and September 2022')),
+           as_option(block(BODY, 'Between May 2022 and September 2022 the unemployment rate rose',
+                           'Another method of measuring unemployment'))],
+          'The question asks for ONE trend and the scheme prints three, so any one earns the 8. '
+          'The tariff is written (4+4): half for naming the direction, half for the figures that '
+          'evidence it \u2014 a trend named without numbers is half an answer. Note the third '
+          'option runs the other way; the graph does not fall throughout.')],
+    'The scheme is explicit that a rise counts as readily as a fall. A student who spots the '
+    'uptick from May 2022 has analysed a trend just as well as one who takes the whole period.',
+    figure_key='economics-2023-HL-paper-p25-i0'))
+
+
 P.emit()
