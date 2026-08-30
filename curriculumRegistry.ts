@@ -395,6 +395,42 @@ const CONSTRUCTION_STUDIES_GROUPS = [
  * terser than the usual name for the area -- it writes "Complex", not "Complex
  * numbers".
  */
+const COMPUTER_SCIENCE_GROUPS = [
+  {
+    id: 'cs1',
+    code: '1',
+    title: 'Practices and principles',
+    topics: [
+      { id: 'cs-1-1', code: 'S1', title: 'Computational thinking' },
+      { id: 'cs-1-2', code: 'S1', title: 'Computers and society' },
+      { id: 'cs-1-3', code: 'S1', title: 'Designing and developing' },
+    ],
+  },
+  {
+    id: 'cs2',
+    code: '2',
+    title: 'Core concepts',
+    topics: [
+      { id: 'cs-2-1', code: 'S2', title: 'Abstraction' },
+      { id: 'cs-2-2', code: 'S2', title: 'Algorithms' },
+      { id: 'cs-2-3', code: 'S2', title: 'Computer systems' },
+      { id: 'cs-2-4', code: 'S2', title: 'Data' },
+      { id: 'cs-2-5', code: 'S2', title: 'Evaluation and testing' },
+    ],
+  },
+  {
+    id: 'cs3',
+    code: '3',
+    title: 'Computer science in practice',
+    topics: [
+      { id: 'cs-3-1', code: 'ALT1', title: 'Interactive information systems' },
+      { id: 'cs-3-2', code: 'ALT2', title: 'Analytics' },
+      { id: 'cs-3-3', code: 'ALT3', title: 'Modelling and simulation' },
+      { id: 'cs-3-4', code: 'ALT4', title: 'Embedded systems' },
+    ],
+  },
+];
+
 const MATHS_GROUPS = [
   {
     id: 'ms1',
@@ -1418,6 +1454,7 @@ function patchLegacySpecification(spec: CanonicalCurriculumSpecification): Canon
       id: 'computer-science:2025',
       title: 'Leaving Certificate Computer Science — updated specification for examination in 2025 and beyond',
       status: 'verified',
+      groups: COMPUTER_SCIENCE_GROUPS,
       sources: [
         { authority: 'Curriculum Online', title: 'Computer Science', url: OFFICIAL.computerScience, role: 'content' },
         { authority: 'NCCA', title: 'Computer Science assessment', url: OFFICIAL.computerScienceAssessment, role: 'assessment' },

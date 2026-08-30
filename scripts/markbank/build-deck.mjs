@@ -35,6 +35,17 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 /** Per-subject facts the generated module needs. Adding a subject means adding
  *  a row here, and nothing else in this script changes. */
 const SUBJECTS = {
+  'computer-science': {
+    title: 'Computer Science',
+    /* The specification first examined in 2020 -- the one these papers were
+     * sat under, and the current one. Three strands: the practices and
+     * principles, the five core concepts, and the four applied learning
+     * tasks. Read from the specification PDF; see COMPUTER_SCIENCE_STRANDS. */
+    specVersion: 'lc-computer-science-2020',
+    specNote: 'Cards are tagged to the strands of the Computer Science specification examined from 2020.\n * Sections A and B sit in one booklet and Section C, the programming task, in another.',
+    figureDir: 'public/exam-figures/computer-science',
+    blocked: new Set(),
+  },
   maths: {
     title: 'Mathematics',
     /* The syllabus examined from 2015. Its redevelopment is scheduled but not

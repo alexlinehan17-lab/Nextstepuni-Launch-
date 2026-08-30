@@ -34,5 +34,9 @@
  "maths": {
   "higher": 398,
   "ordinary": 435
+ },
+ "computer-science": {
+  "higher": 136,
+  "ordinary": 79
  }
 }

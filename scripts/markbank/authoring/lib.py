@@ -142,6 +142,41 @@ ROMAN_ORDER = {r: i for i, r in enumerate(
     ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x', 'xi', 'xii'])}
 
 
+
+class _CsSource:
+    """cs_scheme.CsScheme behind the interface Author expects of a scheme.
+
+    points() returns the scheme's marking points with the credit BANDS already
+    removed -- "Very good explanation - clear understanding demonstrated" is
+    the rubric, and a card built from it would tell a student how they were
+    graded rather than what the answer was.
+    """
+
+    def __init__(self, scheme, md):
+        self._scheme, self._md = scheme, md
+        # The build's provenance gate reads the MARKDOWN scheme, so a claim
+        # lifted from the PDF is checked against that.
+        self.path = md.path
+
+    def points(self, q, letter=None, roman=None):
+        return self._scheme.points(q, letter, roman)
+
+    def marks(self, q, letter=None, roman=None):
+        t = self._scheme.tariff(q, letter, roman)
+        return [t] if t else []
+
+    def tariff(self, q, letter=None, roman=None):
+        return self._scheme.tariff(q, letter, roman)
+
+    def bands(self, q, letter=None, roman=None):
+        return self._scheme.bands(q, letter, roman)
+
+    def verify(self, claims):
+        return self._md.verify(claims)
+
+    def paths(self):
+        return self._scheme.parts()
+
 class Author:
     def __init__(self, subject, year, level):
         level = {'higher': 'hl', 'ordinary': 'ol'}.get(level, level)
@@ -152,7 +187,14 @@ class Author:
         self.scheme = Scheme(subject, year, level)
         # The PDF-backed parser, for parts the flattened markdown mangles. See
         # agsci_scheme_pdf: neither parser dominates, so the choice is per part.
-        self.scheme_pdf = SchemePdf(subject, year, level)
+        # Tolerated, not required: SchemePdf raises UnboundLocalError on the
+        # Computer Science schemes, and that subject reads its own table
+        # through cs_scheme instead. A parser that cannot open a subject must
+        # not stop the subject being authored.
+        try:
+            self.scheme_pdf = SchemePdf(subject, year, level)
+        except Exception:                                    # noqa: BLE001
+            self.scheme_pdf = None
         # Chemistry's schemes are a five-column table that neither generic
         # parser reads correctly. chem_scheme keys the table the way the PAPER
         # numbers it and reads its super/subscripts from the baseline, which is
@@ -162,6 +204,9 @@ class Author:
             from chem_scheme import ChemScheme
             self.scheme_table = _TableSource(ChemScheme(year, level),
                                              self.paper, self.scheme)
+        elif subject == 'computer-science':
+            from cs_scheme import CsScheme
+            self.scheme_table = _CsSource(CsScheme(year, level), self.scheme)
         self.cards = []
 
     def _source(self, source):
