@@ -234,18 +234,8 @@ export interface SecCardBase extends CardBase {
   stem?: string;
   /** Verbatim from the QUESTION PAPER — not the scheme. Required, always. */
   questionText: string;
-  tariffModel: TariffModel;
   /** The tariff printed on the paper. Row marks must reconcile against this. */
   totalMarks: number;
-  /** Capped at five REQUIRED rows: it keeps one card close to one memory, forces
-   *  dependency splitting, and is what makes the card fit a 360px phone.
-   *
-   *  A best-N-of-M card is the one exception, capped at MAX_OPTION_ROWS instead.
-   *  Its extra rows are a menu the student chooses from, not a list they must
-   *  recall — "identify any four of these six breeds" shows six photographs
-   *  because that is what the paper prints, and trimming to five would
-   *  misrepresent the question rather than lighten it. */
-  rows: MarkRow[];
   schemeCitation: string;
   /** Pixel escape hatch into the real scheme PDF, so any card can be checked
    *  against its source in one tap. Keeps faith with Paper Trail's charter. */
@@ -259,8 +249,78 @@ export interface SecCardBase extends CardBase {
   qa: { gates: string[]; humanReviewedBy: string; humanReviewedAt: string };
 }
 
+/**
+ * The established exact-point assessment used by sciences, Business and the
+ * other subjects whose schemes price identifiable answers.
+ *
+ * Kept out of `SecCardBase` deliberately: an English PCLM answer is not a bag
+ * of binary marking points. Making every SEC card carry rows encouraged the
+ * exact failure Mark Bank exists to prevent — turning non-exhaustive English
+ * indicative material into a fabricated answer checklist.
+ */
+export interface SecPointCardBase extends SecCardBase {
+  tariffModel: TariffModel;
+  /** Capped at five REQUIRED rows: it keeps one card close to one memory, forces
+   *  dependency splitting, and is what makes the card fit a 360px phone.
+   *
+   *  A best-N-of-M card is the one exception, capped at MAX_OPTION_ROWS instead.
+   *  Its extra rows are a menu the student chooses from, not a list they must
+   *  recall — "identify any four of these six breeds" shows six photographs
+   *  because that is what the paper prints, and trimming to five would
+   *  misrepresent the question rather than lighten it. */
+  rows: MarkRow[];
+}
+
+export type PclmCriterionId = 'purpose' | 'coherence' | 'language' | 'mechanics';
+
+/** One score family exactly as the SEC grade grid prints it. */
+export interface PclmGradeBand {
+  grade: 'H1' | 'H2' | 'H3' | 'H4' | 'H5' | 'H6' | 'H7' | 'H8';
+  /** Every mark the published grid permits in this band. */
+  marks: number[];
+}
+
+export interface PclmCriterion {
+  id: PclmCriterionId;
+  label: string;
+  maxMarks: number;
+  /** SEC task-specific guidance, not an invented generic success criterion. */
+  guidance: string[];
+  /** Marks selectable on the published grade grid for this criterion. */
+  permittedMarks: number[];
+}
+
+export type PclmAssessment =
+  | {
+      /** Short Paper 1 answers are judged as one combined mark. */
+      mode: 'combined';
+      bands: PclmGradeBand[];
+      criteria: string[];
+    }
+  | {
+      /** Longer responses receive separate P, C, L and M marks. */
+      mode: 'discrete';
+      bands: PclmGradeBand[];
+      criteria: PclmCriterion[];
+      /** C and L may not exceed P. */
+      primacyOfPurpose: true;
+    };
+
+export interface PclmRubric {
+  system: 'pclm';
+  /** Things the printed task explicitly requires. They carry no marks alone. */
+  taskRequirements: string[];
+  assessment: PclmAssessment;
+  /**
+   * Examples the SEC gives examiners. Never rendered as claimable answers and
+   * always accompanied by `indicativeMaterialNote`.
+   */
+  indicativeMaterial?: string[];
+  indicativeMaterialNote: string;
+}
+
 /** A prose/short-answer SEC card. */
-export interface SecQuestionCard extends SecCardBase {
+export interface SecQuestionCard extends SecPointCardBase {
   kind: 'question';
   figure?: CardFigure;
   /** The SEC's own print of the ask and its setup, cropped from the paper.
@@ -275,10 +335,21 @@ export interface SecQuestionCard extends SecCardBase {
  * is the type-level fix for the complaint that a diagram card never told the
  * student what its labels meant.
  */
-export interface SecDiagramCard extends SecCardBase {
+export interface SecDiagramCard extends SecPointCardBase {
   kind: 'diagram';
   figure: CardFigure;
   labelKey: LabelKey[];
+}
+
+/**
+ * A real SEC English question marked holistically with the published PCLM
+ * grammar. This variant has a renderer and scoring path of its own; it does
+ * not expose `rows`, so indicative examples cannot accidentally become binary
+ * marks in some future consumer.
+ */
+export interface SecRubricCard extends SecCardBase {
+  kind: 'rubric';
+  rubric: PclmRubric;
 }
 
 /**
@@ -296,10 +367,13 @@ export interface StudentCard extends CardBase {
   addedTs: number;
 }
 
-export type MarkBankCard = SecQuestionCard | SecDiagramCard | StudentCard;
-export type SecCard = SecQuestionCard | SecDiagramCard;
+export type MarkBankCard = SecQuestionCard | SecDiagramCard | SecRubricCard | StudentCard;
+export type SecPointCard = SecQuestionCard | SecDiagramCard;
+export type SecCard = SecPointCard | SecRubricCard;
 
 export const isSecCard = (c: MarkBankCard): c is SecCard => c.source === 'sec';
+export const isPointCard = (c: SecCard): c is SecPointCard => c.kind === 'question' || c.kind === 'diagram';
+export const isRubricCard = (c: SecCard): c is SecRubricCard => c.kind === 'rubric';
 export const isDiagramCard = (c: MarkBankCard): c is SecDiagramCard =>
   c.source === 'sec' && c.kind === 'diagram';
 
@@ -417,6 +491,23 @@ export function groupMarks(g: { claimMax: number; perOption: number; perOptionSt
 }
 
 export function tariffReconciles(card: SecCard): boolean {
+  if (isRubricCard(card)) {
+    const { assessment } = card.rubric;
+    if (assessment.mode === 'combined') {
+      const marks = assessment.bands.flatMap(band => band.marks);
+      return marks.length > 0
+        && Math.min(...marks) === 0
+        && Math.max(...marks) === card.totalMarks
+        && new Set(marks).size === marks.length;
+    }
+    const max = assessment.criteria.reduce((sum, criterion) => sum + criterion.maxMarks, 0);
+    return max === card.totalMarks
+      && assessment.criteria.every(criterion =>
+        criterion.permittedMarks.length > 0
+        && Math.min(...criterion.permittedMarks) === 0
+        && Math.max(...criterion.permittedMarks) === criterion.maxMarks
+        && new Set(criterion.permittedMarks).size === criterion.permittedMarks.length);
+  }
   const { tariffModel: t, rows, totalMarks } = card;
   if (t.kind === 'orderedSplit') return rows.every(r => r.marks === null);
   if (t.kind === 'bestNofParts') return t.answer * t.perPart === totalMarks;

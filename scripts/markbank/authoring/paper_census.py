@@ -61,6 +61,10 @@ SUBJECTS = {
     'economics': {'mode': 'merged'},
     'construction-studies': {'mode': 'merged'},
     'maths': {'mode': 'papers', 'papers': {'100': 'Paper 1', '200': 'Paper 2'}},
+    # English choices and holistic subparts cannot be represented by the
+    # generic leaf parser. `english_census.py` is its paper-only denominator;
+    # this entry keeps it inside every `--all` coverage run.
+    'english': {'mode': 'english'},
     'business': {'mode': 'sections'},
     'home-economics': {'mode': 'sections'},
     # Two booklets: 038 carries Section A (short answer, attempt any nine) and
@@ -465,6 +469,29 @@ def census_sections(subject, year, level):
 
 def census_subject(subject):
     cfg = SUBJECTS.get(subject, {'mode': 'merged'})
+    if cfg['mode'] == 'english':
+        # Import lazily so the ordinary census remains independent of PyMuPDF
+        # until English is actually requested.
+        from english_census import build as build_english  # noqa: E402
+        payload = build_english()
+        papers = []
+        for source in payload['papers']:
+            paper_number = int(source['component']) // 100
+            asks = [ask for ask in payload['asks']
+                    if ask['year'] == source['year']
+                    and ask['level'] == source['level']
+                    and ask['paper'] == paper_number]
+            papers.append({
+                'year': source['year'], 'level': source['level'],
+                'paper': f'Paper {paper_number}',
+                'leafCount': len(asks),
+                'leaves': [{
+                    'key': [ask['id']], 'label': ask['questionRef'],
+                    'text': '', 'status': ask['status'],
+                } for ask in asks],
+                'marksSum': None, 'marksQuestions': 0, 'flags': [],
+            })
+        return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}
     papers = []
     for year, level, comps in sittings(subject):
         if cfg['mode'] == 'papers':

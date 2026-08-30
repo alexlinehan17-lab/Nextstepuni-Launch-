@@ -24,11 +24,11 @@ import SessionScreen, {
   showsRowMarks,
   suggestGrade,
 } from '@/components/MarkBank/SessionScreen';
-import { tariffReconciles, type MarkRow, type SecCard, type SecDiagramCard } from '@/types/markBank';
+import { tariffReconciles, type MarkRow, type SecCard, type SecDiagramCard, type SecQuestionCard } from '@/types/markBank';
 
 const row = (o: Partial<MarkRow> = {}): MarkRow => ({ id: 'r0', kind: 'point', verbatim: 'Oesophagus', marks: 2, ...o });
 
-const card = (o: Partial<SecCard> = {}): SecCard => ({
+const card = (o: Partial<SecQuestionCard> = {}): SecQuestionCard => ({
   source: 'sec', kind: 'question',
   id: 'bio-2025-hl-q6-ab', subjectId: 'biology', level: 'higher',
   topicId: 'biology-2-3', conceptId: 'digestive-parts',
@@ -41,7 +41,7 @@ const card = (o: Partial<SecCard> = {}): SecCard => ({
   specVersion: 'lc-biology-2002',
   qa: { gates: [], humanReviewedBy: 'al', humanReviewedAt: '2026-07-30' },
   ...o,
-} as SecCard);
+} as SecQuestionCard);
 
 const renderSession = (cards: SecCard[], reviewPool?: { total: number; label: string }) => {
   const onGrade = vi.fn();

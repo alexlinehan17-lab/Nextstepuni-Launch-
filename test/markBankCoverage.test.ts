@@ -38,6 +38,14 @@ const deckCards = (subject: string): { id: string; ref: string }[] => {
     } catch {
       continue;
     }
+    if (subject === 'english') {
+      for (const chunk of text.split(/\bmakeCard\(\{/).slice(1)) {
+        const id = chunk.match(/\bid:\s*'([^']+)'/);
+        const ref = chunk.match(/\bref:\s*'([^']+)'/);
+        if (id && ref) out.push({ id: id[1], ref: ref[1] });
+      }
+      continue;
+    }
     for (const chunk of text.split(/\.\.\.base,\s*kind:/).slice(1)) {
       const id = chunk.match(/\bid: "([^"]+)"/);
       const ref = chunk.match(/questionRef: "([^"]+)"/);
@@ -85,6 +93,9 @@ describe('Mark Bank paper-coverage ratchet', () => {
   it.each(SUBJECTS)('%s citations all parse under the grammar', (subject) => {
     const bad = deckCards(subject)
       .filter(({ ref }) => {
+        if (subject === 'english') {
+          return !/^\d{4} (?:HL|OL) Paper [12] (?:Text [1-3] QA\((?:i|ii|iii)\)|Text [1-3] QB|Composing [1-7])$/.test(ref);
+        }
         const core = ref.split(/\s+[—–-]\s+/)[0];
         const m = core.match(HEAD);
         return !m || !TAIL.test(core.slice(m[0].length));

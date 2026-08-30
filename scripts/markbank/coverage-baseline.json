@@ -89,6 +89,21 @@
   },
   "refsHash": "ffceb66a16576771"
  },
+ "english": {
+  "cards": 19,
+  "contentHash": "86b31b04e8424524",
+  "coveragePct": 3.0,
+  "covered": 19,
+  "excluded": 0,
+  "leaves": 630,
+  "open": 611,
+  "orphans": 0,
+  "papers": {
+   "count": 20,
+   "hash": "5a9e0ab3f863aa4f"
+  },
+  "refsHash": "8b61ad20c56c4e73"
+ },
  "home-economics": {
   "cards": 571,
   "contentHash": "58dd065233e9313f",

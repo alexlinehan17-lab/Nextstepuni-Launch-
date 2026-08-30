@@ -46,6 +46,10 @@ SUBJECTS = {
     'business': 'business',
     'chemistry': 'chemistry',
     'economics': 'economics',
+    # English uses a bespoke card model: the paper supplies the prompt while
+    # the scheme supplies a PCLM rubric and non-exhaustive indicative material.
+    # See authoring/ENGLISH.md and authoring/english_census.py.
+    'english': 'english',
     'home-economics': 'home-economics-s-and-s',
     'physics': 'physics',
     # Added 23 August 2026. Stage 0 passed on the drawing+ pattern: the scheme
