@@ -45,19 +45,19 @@
   "refsHash": "4ad16765c129d1c4"
  },
  "chemistry": {
-  "cards": 846,
-  "contentHash": "01e93fd543912913",
-  "coveragePct": 89.8,
-  "covered": 1088,
+  "cards": 863,
+  "contentHash": "bc69e874f1b56d11",
+  "coveragePct": 91.2,
+  "covered": 1105,
   "excluded": 0,
   "leaves": 1211,
-  "open": 123,
+  "open": 106,
   "orphans": 0,
   "papers": {
    "count": 10,
    "hash": "bf2ca1ce05646d41"
   },
-  "refsHash": "52762dd6b4e78756"
+  "refsHash": "750e2d95f56f6f28"
  },
  "construction-studies": {
   "cards": 505,

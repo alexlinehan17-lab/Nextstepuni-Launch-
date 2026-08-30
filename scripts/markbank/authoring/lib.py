@@ -97,6 +97,51 @@ class Refused(Exception):
     """A card that would have shipped wrong."""
 
 
+
+class _TableSource:
+    """chem_scheme.ChemScheme behind the interface Author expects of a scheme.
+
+    Only points() differs: the 2024 and 2025 Chemistry schemes REPRINT the ask
+    above its answer, at the same indent, so nothing in the geometry separates
+    them. The paper's own wording does, and it is passed in here so the split
+    is confirmed by a second document rather than guessed from layout.
+    """
+
+    def __init__(self, scheme, paper, md):
+        self._scheme, self._paper, self._md = scheme, paper, md
+        # The build's provenance gate reads the MARKDOWN scheme, so that is
+        # what a claim lifted from the PDF has to be checked against -- and it
+        # is the right check: text the two documents disagree about should not
+        # ship. normalise() folds super and subscript digits, so "20.0 cm³"
+        # matches the markdown's "20.0 cm3".
+        self.path = md.path
+
+    def points(self, q, letter=None, roman=None):
+        try:
+            ask = self._paper.text(q, letter, roman) or ''
+        except Exception:                                    # noqa: BLE001
+            ask = ''
+        return self._scheme.marking_points(q, letter, roman, ask=ask)
+
+    def marks(self, q, letter=None, roman=None):
+        return self._scheme.marks(q, letter, roman)
+
+    def asides(self, q, letter=None, roman=None):
+        return self._scheme.asides(q, letter, roman)
+
+    def tariff(self, q, letter=None, roman=None, rows=None):
+        return self._scheme.tariff(q, letter, roman, rows=rows)
+
+    def verify(self, claims):
+        return self._md.verify(claims)
+
+    def paths(self):
+        return self._scheme.parts()
+
+ROMAN_ORDER = {r: i for i, r in enumerate(
+    ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x', 'xi', 'xii'])}
+
+
 class Author:
     def __init__(self, subject, year, level):
         level = {'higher': 'hl', 'ordinary': 'ol'}.get(level, level)
@@ -108,11 +153,25 @@ class Author:
         # The PDF-backed parser, for parts the flattened markdown mangles. See
         # agsci_scheme_pdf: neither parser dominates, so the choice is per part.
         self.scheme_pdf = SchemePdf(subject, year, level)
+        # Chemistry's schemes are a five-column table that neither generic
+        # parser reads correctly. chem_scheme keys the table the way the PAPER
+        # numbers it and reads its super/subscripts from the baseline, which is
+        # what an ion charge depends on. Offered as source='table'.
+        self.scheme_table = None
+        if subject == 'chemistry':
+            from chem_scheme import ChemScheme
+            self.scheme_table = _TableSource(ChemScheme(year, level),
+                                             self.paper, self.scheme)
         self.cards = []
 
     def _source(self, source):
+        if source == 'table':
+            if self.scheme_table is None:
+                raise Refused('source="table" is Chemistry only')
+            return self.scheme_table
         if source not in ('md', 'pdf'):
-            raise Refused(f'unknown scheme source {source!r} — use "md" or "pdf"')
+            raise Refused(f'unknown scheme source {source!r} — use "md", "pdf" '
+                          f'or "table"')
         return self.scheme_pdf if source == 'pdf' else self.scheme
 
     # -- the scheme's offer, for deciding what to card -----------------------
@@ -146,6 +205,23 @@ class Author:
         question = self.paper.text(q, letter, roman)
         if not question:
             raise Refused(f'{ref}: the paper has no text for this part')
+
+        # A part that is only a CUE hands its ask to the romans beneath it:
+        # 2021 OL Chemistry Q9(c) reads "From your graph find" and (i) and (ii)
+        # complete the sentence. A card citing the parent has to carry what the
+        # parent actually asks, so the children are joined onto it -- still the
+        # paper's own words, in the paper's own order. Only where the part
+        # cannot stand on its own; a part with a real question of its own keeps
+        # it, and a card citing a CHILD is untouched.
+        if roman is None and len(' '.join(question.split())) < 40:
+            kids = [k for k in self.paper.parts
+                    if k[0] == q and k[1] == letter and k[2]]
+            if kids:
+                kids.sort(key=lambda k: ROMAN_ORDER.get(k[2], 99))
+                tail = ' '.join(f'({k[2]}) {(self.paper.text(*k) or "").strip()}'
+                                for k in kids)
+                if tail.strip():
+                    question = f'{question.rstrip()} {tail}'.strip()
 
         # Where a paper sets two questions side by side, the block segmentation
         # welds the neighbour's text onto this one: 2023 OL Q2(c) comes out as

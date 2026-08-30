@@ -383,6 +383,34 @@ class ChemScheme:
             out.append(line)
         return out or points
 
+    def marking_points(self, q, letter=None, roman=None, ask=None):
+        """The answer as MARKING POINTS, not as printed lines.
+
+        A point wraps across lines, and the scheme says where with its own
+        notation: a line ending in "/" or "//" is offering another way to earn
+        the SAME mark, so the line under it continues that point. A line that
+        ends without one closes it.
+
+          "P: up /" / "T: up /" / "C: down"     -> ONE point, three ways
+          "A: bromine (Br₂)" / "B: hydrogen chloride (HCl)"  -> TWO points
+
+        Getting this wrong is not cosmetic in either direction. Split, the card
+        claims three marking points where the scheme prices one. Joined
+        wholesale, it states a single answer the examiner never accepted as
+        one -- the mistake that put 274 Maths cards' credit bands into one
+        sentence.
+        """
+        lines = self.answer(q, letter, roman, ask=ask)
+        points, cur = [], []
+        for line in lines:
+            cur.append(line)
+            if not re.search(r'/\s*$', line):
+                points.append(' '.join(cur).strip())
+                cur = []
+        if cur:
+            points.append(' '.join(cur).strip())
+        return [p for p in points if p]
+
     def alternatives(self, q, letter=None, roman=None):
         """The accepted answers as the scheme separates them: " / " and " // ".
 

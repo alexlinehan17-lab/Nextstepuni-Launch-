@@ -29960,6 +29960,84 @@
   "notes": "The scheme reads the mole ratio straight off the balanced equation printed in the stem, then multiplies by the molar volume at s.t.p.; the four marks for the volume split 2 for the multiplication and 2 for the answer. A candidate who carries forward the 27 moles of urea found in part (ii) is allowed the volume that follows from it."
  },
  {
+  "id": "chem-2021-ol-q8-b-ii",
+  "topicId": "chem-2-4",
+  "conceptId": "substances-added-to-ethene-in-two-addition-reactions",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2021 OL Q8(b)(ii)",
+  "questionText": "A and B are two other addition reactions of ethene. Identify the substance added to ethene in each case. (12)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: bromine (Br₂)",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: hydrogen chloride (HCl)",
+    "marks": 3
+   }
+  ],
+  "stem": "Study the reaction scheme and answer the questions that follow."
+ },
+ {
+  "id": "chem-2021-ol-q11-a-iii",
+  "topicId": "chem-1-2",
+  "conceptId": "metal-with-the-same-occupied-energy-levels-as-boron",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2021 OL Q11(a)(iii)",
+  "questionText": "Identify a metallic element whose atoms have the same number of main energy levels occupied by electrons as boron (B).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "lithium (Li) / beryllium (Be)",
+    "marks": 6
+   }
+  ],
+  "stem": "In the periodic table of the elements, what term is used for the elements"
+ },
+ {
+  "id": "chem-2021-ol-q11-b-iii",
+  "topicId": "chem-3-3",
+  "conceptId": "principle-named-when-an-equilibrium-is-disturbed",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2021 OL Q11(b)(iii)",
+  "questionText": "Supply the missing words in the following statement: ‘If this equilibrium is disturbed by increasing the concentration of carbonic acid (H2CO3), then according to __________ principle, the concentration of the hydrogencarbonate ion (HCO3–) is observed to __________.’ Marine shellfish and coral use carbonate ions (CO32–) to make calcium carbonate (CaCO3) shell. Human activity over the past 170 years or so, in particular burning fossil fuels, has resulted in a continuously increasing concentration of carbonic acid in seawater.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Le Châtelier’s // increase",
+    "marks": 6
+   }
+  ],
+  "stem": "H2CO3 (aq) + CO32– (aq) ⇌ 2HCO3– (aq)"
+ },
+ {
   "id": "chem-2022-hl-q3-c-i",
   "topicId": "chem-3-2",
   "conceptId": "reaction-completion-time-from-a-graph",
@@ -30109,6 +30187,131 @@
   "notes": "Q8(b)(ii) to (vii) share one tariff — the scheme prints \"SEVEN POINTS: [(2 x 6) + (4 x 3) + 2]\" over them — so no part of the block has a mark of its own. totalMarks is what this card's answers are worth at the top rate of the scale. Both products are wanted: the scheme separates them with a double solidus, which is its notation for two separately marked points."
  },
  {
+  "id": "chem-2022-hl-q5-d-iii",
+  "topicId": "chem-1-2",
+  "conceptId": "why-lead-cannot-be-changed-to-gold-chemically",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 HL Q5(d)(iii)",
+  "questionText": "Suggest a reason why it is not possible to change lead (Pb) atoms into gold (Au) atoms by a chemical reaction or a series of chemical reactions. (12)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "lead into gold involves nuclear reaction (change to nucleus, change of atomic number,",
+    "marks": 1
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "change of Z, change in number of protons) / chemical reactions involve electrons only / transmutation (changing atoms of one element into atoms of another) not a chemical",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "reaction",
+    "marks": 1
+   }
+  ],
+  "stem": "Knowledge of atomic structure is fundamental to understanding the properties of the elements, chemical reactivity, and nuclear reactions."
+ },
+ {
+  "id": "chem-2022-hl-q9-d-i",
+  "topicId": "chem-3-4",
+  "conceptId": "volume-of-naoh-that-neutralised-solution-a",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 HL Q9(d)(i)",
+  "questionText": "What volume of the NaOH solution neutralised solution A?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "20.0 cm³",
+    "marks": 3
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-q9-d-ii",
+  "topicId": "chem-3-4",
+  "conceptId": "molar-concentrations-of-four-titrated-solutions",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 HL Q9(d)(ii)",
+  "questionText": "Deduce the molar concentrations of solutions A, B, C and D.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A: 1.0 M",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "B: 0.5 M",
+    "marks": 3
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "C: 1.0 M",
+    "marks": 3
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "D: 1.0 M",
+    "marks": 3
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-hl-q11-a-vi",
+  "topicId": "chem-3-5",
+  "conceptId": "reducing-agent-in-a-manganese-bismuth-reaction",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 HL Q11(a)(vi)",
+  "questionText": "Identify the reducing agent in the reaction above. (25)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "reducing agent: Mn²⁺ / Mn(II)",
+    "marks": 3,
+    "contextNote": "The unbalanced equation for the reaction is set out at the head of Q11(a) on the paper."
+   }
+  ],
+  "stem": "Mn2+ + BiO3– + H+  MnO4– + Bi3+ + H2O Assign oxidation numbers and, hence or otherwise, balance this equation."
+ },
+ {
   "id": "chem-2022-ol-q3-b-i",
   "topicId": "chem-u2",
   "conceptId": "plotting-the-h2o2-decomposition-graph",
@@ -30117,7 +30320,7 @@
   "subjectId": "chemistry",
   "section": "A",
   "questionRef": "2022 OL Q3(b)(i)",
-  "questionText": "Plot a graph (on graph paper) of volume of O2 (y‐axis) versus time. From your graph (ii) estimate the time taken to collect 50 cm3 of oxygen, (iii) find the average rate of reaction over the first 2.5 minutes (in cm3 of O2 per minute). (24)",
+  "questionText": "Plot a graph (on graph paper) of volume of O2 (y‐axis) versus time. From your graph",
   "tariffModel": {
    "kind": "fixed",
    "notation": "(5 × 3) + 6 + 3 (the plot)"
@@ -30462,6 +30665,259 @@
   ],
   "notes": "chem-2022-ol-q11-b-ii records this part as skipped because the Cumbre Vieja photograph is not reproduced. The question describes the phenomenon in words — \"the spreading out of smoke in air\" — and the term asked for follows from that description, so the photograph illustrates the ask rather than carrying it. Q11(b) is priced (3 × 3) + 3 + 3 + 9 + 1 = 25, the (25) the paper prints, and this roman is the third of those threes.",
   "figureKey": "chemistry-2022-OL-paper-p12-i0"
+ },
+ {
+  "id": "chem-2022-ol-q3-b-ii",
+  "topicId": "chem-3-2",
+  "conceptId": "time-to-collect-50-cm3-of-oxygen",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 OL Q3(b)(ii)",
+  "questionText": "estimate the time taken to collect 50 cm3 of oxygen,",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1.3 – 1.7 minute",
+    "marks": 6,
+    "contextNote": "Part (i) sets the cue this ask completes: \"Plot a graph (on graph paper) of volume of O2 (y-axis) versus time. From your graph\"."
+   }
+  ],
+  "stem": "flexible tubing O2 H2O2 solution and catalyst Time (minutes) 0 1 2 3 4 4.5 5 6 7 Volume O2 (cm3) 0 37.5 63 82 94 97 98 98 98"
+ },
+ {
+  "id": "chem-2022-ol-q3-b-iii",
+  "topicId": "chem-3-2",
+  "conceptId": "average-rate-of-reaction-over-the-first-25-minutes",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 OL Q3(b)(iii)",
+  "questionText": "find the average rate of reaction over the first 2.5 minutes (in cm3 of O2 per minute). (24)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "27.0 – 30.4 cm³ O₂ per minute",
+    "marks": 1,
+    "contextNote": "Part (i) sets the cue this ask completes: \"Plot a graph (on graph paper) of volume of O2 (y-axis) versus time. From your graph\"."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "68 – 76 cm³",
+    "marks": 1
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "volume ÷ 2.5 = 27.0 – 30.4 cm³ O₂ per minute",
+    "marks": 1
+   }
+  ],
+  "stem": "flexible tubing O2 H2O2 solution and catalyst Time (minutes) 0 1 2 3 4 4.5 5 6 7 Volume O2 (cm3) 0 37.5 63 82 94 97 98 98 98"
+ },
+ {
+  "id": "chem-2022-ol-q9-b-iii",
+  "topicId": "chem-3-5",
+  "conceptId": "reducing-agent-in-a-redox-reaction",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 OL Q9(b)(iii)",
+  "questionText": "Identify the reducing agent in the redox reaction above. (12)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "sodium (Na)",
+    "marks": 3,
+    "contextNote": "The redox equation is printed above the ask in Q9(b)."
+   }
+  ]
+ },
+ {
+  "id": "chem-2022-ol-q10-c-iii",
+  "topicId": "chem-1-4",
+  "conceptId": "number-of-molecules-in-a-quantity-of-oxygen",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 OL Q10(c)(iii)",
+  "questionText": "How many molecules are there in this quantity of oxygen?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "1.0 × 10²³ – 1.02 × 10²³ molecules O₂",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "0.16875 × 6 × 10²³",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "= 1.0125 × 10²³ molecules O₂",
+    "marks": 2
+   }
+  ],
+  "stem": "2CO2  O2 + 2CO In a test conducted in April 2021 on Mars, MOXIE produced 5.4 g of O2 in one hour."
+ },
+ {
+  "id": "chem-2022-ol-q11-c-ii",
+  "topicId": "chem-4-3",
+  "conceptId": "purpose-of-the-glass-wool-plug-in-column-chromatography",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 OL Q11(c)(ii)",
+  "questionText": "In C what is the purpose of the glass wool plug?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ensure stationary phase (solid) stays in (not washed out of) column",
+    "marks": 7,
+    "contextNote": "C is the column chromatography apparatus of Q11(c)."
+   }
+  ],
+  "stem": "glass wool plug S P T or"
+ },
+ {
+  "id": "chem-2022-ol-q11-c-iii",
+  "topicId": "chem-4-3",
+  "conceptId": "stationary-phase-in-a-chromatographic-separation",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 OL Q11(c)(iii)",
+  "questionText": "State what material acts as the stationary phase in the separation you have drawn.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "P: paper and water / paper and water",
+    "marks": 3,
+    "contextNote": "The scheme answers for each of the three separations a candidate may have drawn: P paper, T thin-layer, C column."
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "T: silica (SiO₂) / alumina (aluminium oxide, Al₂O₃) / C: silica (SiO₂) / alumina (aluminium oxide, Al₂O₃)",
+    "marks": 3
+   }
+  ],
+  "stem": "glass wool plug S P T or"
+ },
+ {
+  "id": "chem-2022-ol-q11-c-iv",
+  "topicId": "chem-4-3",
+  "conceptId": "direction-the-mobile-phase-moves",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 OL Q11(c)(iv)",
+  "questionText": "Does the mobile phase move up or down through the stationary phase in the separation you have drawn?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "P: up / T: up / C: down",
+    "marks": 3,
+    "contextNote": "The scheme answers for each of the three separations a candidate may have drawn: P paper, T thin-layer, C column."
+   }
+  ],
+  "stem": "glass wool plug S P T or"
+ },
+ {
+  "id": "chem-2022-ol-q11-c-vi",
+  "topicId": "chem-4-3",
+  "conceptId": "component-carried-fastest-by-the-mobile-phase",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 OL Q11(c)(vi)",
+  "questionText": "Label with a Y on your diagram the component carried fastest by the mobile phase.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "P: highest / T: highest / C: lowest",
+    "marks": 3,
+    "contextNote": "The scheme answers for each of the three separations a candidate may have drawn: P paper, T thin-layer, C column."
+   }
+  ],
+  "stem": "glass wool plug S P T or"
+ },
+ {
+  "id": "chem-2022-ol-q11-c-vii",
+  "topicId": "chem-4-3",
+  "conceptId": "result-when-every-component-is-insoluble-in-the-mobile-phase",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 OL Q11(c)(vii)",
+  "questionText": "Describe the result you would expect to get if the components of the mixture were all insoluble in the mobile phase. (25) This question continues on the next page.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "no separation / no bands / no spots / all mixture remains at bottom (doesn’t move up) in P and T / all mixture remains at the top (doesn’t move down) in C",
+    "marks": 3,
+    "contextNote": "The scheme answers for each of the three separations a candidate may have drawn: P paper, T thin-layer, C column."
+   }
+  ],
+  "stem": "glass wool plug S P T or"
  },
  {
   "id": "chem-2023-hl-q1-d-ii",
@@ -30979,6 +31435,30 @@
   "stem": "The apparatus shown below was used to investigate the rate of formation of carbon dioxide gas according to the following balanced equation. 2HCl + CaCO3 → CaCl2 + H2O + CO2 A mass balance was zeroed with a few lumps of solid calcium carbonate, a flask containing excess hydrochloric acid at room temperature, and a cotton wool plug, standing on it. A stopwatch was started when the calcium carbonate was added to the acid and the cotton- wool plug placed in the mouth of the flask. The mass of carbon dioxide gas produced and lost from the flask was measured at one-minute intervals over an 8-minute period using the balance. HCl solution CaCO3 before during A set of results obtained at room temperature in such an investigation is given in the table. Time (minutes) 0 1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0 Mass CO2 (grams) 0 0.26 0.41 0.50 0.56 0.59 0.60 0.60 0.60",
   "notes": "Each answer is a range because it is read off the candidate's own graph. The rows run in the paper's order: (i) when the reaction finished, (ii) when 0.30 g of CO2 had been lost, (iii) how much CO2 was lost in the first 2.5 minutes. The reaction is complete where the curve flattens, which the paper's own table shows happening at 0.60 g.",
   "figureKey": "chemistry-2023-ol-paper-p010-i0"
+ },
+ {
+  "id": "chem-2023-ol-q3-a-ii",
+  "topicId": "chem-4-3",
+  "conceptId": "determining-the-concentration-of-dissolved-solids",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2023 OL Q3(a)(ii)",
+  "questionText": "Describe how the concentration of dissolved solids could then have been determined.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "evaporate to dryness // known (stated) volume // filtered water // in beaker (evaporating basin, etc) // find mass residue / weigh residue // calculate the concentration",
+    "marks": 18
+   }
+  ],
+  "stem": "It was found that 500 cm3 of the water contained 0.04 g of suspended solids. Express this concentration in"
  },
  {
   "id": "chem-2024-hl-q3-b-i",
