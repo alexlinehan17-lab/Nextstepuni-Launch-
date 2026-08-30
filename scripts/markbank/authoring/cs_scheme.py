@@ -1,672 +1,279 @@
 #!/usr/bin/env python3
-"""The Construction Studies marking scheme, read as its two halves.
+"""The Computer Science marking scheme, read by its own column grid.
 
-    python3 scripts/markbank/authoring/cs_scheme.py 2025 hl        # summary
-    python3 scripts/markbank/authoring/cs_scheme.py 2025 hl --dump # every part
+    python3 scripts/markbank/authoring/cs_scheme.py 2024 hl        # summary
+    python3 scripts/markbank/authoring/cs_scheme.py 2024 hl 13 a i # one part
 
-An SEC Construction Studies scheme is two documents in one file:
+Why not the generic readers: scheme.Scheme flattens the page, so Question 2
+comes back as "Answer: 27 30 33 Each correct value in order (x 4) 1 mark Space
+between each value 2 marks" -- the answer, the criteria and the mark cells run
+together in one string. Worse, it reads Question 1's logic-gate OUTPUTS, the
+column of 0s and 1s the candidate has to fill in, as the question's mark
+values. SchemePdf raises UnboundLocalError on the first scheme it is given.
 
-  1. INDICATIVE CONTENT (pages 3-36) — for each part, the details an answer
-     should contain, set as bullets under named sub-headings:
+The page is a three-column grid and reading it as one is straightforward:
 
-         Foundation and solid concrete ground floor - typical detailing
-         - R.C. strip foundation
-         - Dead blockwork and cavity wall above foundation
-         ...
+    Question 13                                    38 (11, 15, 12) marks
+    (a)                                            11 (3,3,3, 2) marks
+        (i)                                                    3 marks
+    Any response that captures the essence of any of the following:
+      * Artificial intelligence can be defined as the science and ...
+      * The design and study of systems that appear to mimic ...
+    Very good explanation - clear understanding demonstrated       3 marks
+    Fair explanation - limited understanding                       2 marks
 
-  2. THE MARK TABLE (pages 37+) — the same bullets again, this time under
-     "PERFORMANCE CRITERIA / MAXIMUM MARK", with the tariff printed on the
-     group heading rather than the bullet:
+The marker sits at the left, the TARIFF in the right margin, and between them
+the answer. Two things follow from that layout and both matter:
 
-         Foundation + Solid ground floor   External wall   Window detail
-         5 x 4 marks                       4 x 4 marks     3 x 4 marks
+  * The tariff is printed for every part AND split on the head above it, so
+    nothing here is ever inferred. "38 (11, 15, 12)" is the question's total
+    over its three letters; "11 (3,3,3, 2)" is (a)'s total over its parts.
+  * The credit BANDS at the foot of a part -- "Very good explanation ...
+    3 marks" -- are the rubric, not the answer. They say how well the thing
+    was done, never what it was. They are kept apart from the marking points
+    and returned by bands(), because a card built from "Fair explanation"
+    tells a student nothing.
 
-     "5 x 4 marks" against an eleven-bullet list is a best-N-of tariff: name
-     any five of the eleven and each is worth 4. That is the tariff kind the
-     bank already has, and it is why this subject cards well — the bullets ARE
-     the answer, and which details a student omits is exactly what costs marks.
-
-The mark table is the authority, because it is the half that prices. The
-indicative half is kept because it carries sub-headings the mark table
-sometimes drops, and because two independent copies of the same list is a
-provenance check nothing else in this subject offers.
-
-The two halves are separated by the mark table restarting the question
-numbering. Nothing else in the file does that.
+The bullet is Symbol-font U+F0B7, not U+2022; it is folded here so a marking
+point does not ship with a private-use glyph in it.
 """
+import collections
 import os
 import re
 import sys
 
-ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(
-    os.path.abspath(__file__)))))
-SCHEMES = os.path.join(ROOT, 'examiner-reports/construction-studies/schemes')
+import pymupdf
 
-# Case varies inside one document: the 2024 Higher scheme prints "QUESTION 3"
-# and "Question 4" on facing pages. Matching case-sensitively lost three of the
-# ten mark tables and made the file look half-parsed.
-# "Question 1", "QUESTION 3", "Question 10 (Alternative)" -- and "Ceist 1." in
-# the 2016-2018 schemes, which are bilingual: the headings are Irish and the
-# content underneath them is English. Those three years read as having no
-# questions at all, so five whole papers were unreachable.
-#
-# The head also carries its own text in those years -- "Ceist 2 (a) one possible
-# safety risk associated with each of the following" -- so trailing text is
-# allowed and any part marker in it is handed straight to the part reader.
-QHEAD = re.compile(r'^(?:Leaving Certificate Examination,?\s*\d{4}\s+)?'
-                   r'(?:Question|Ceist)\s+(\d{1,2})\b\.?\s*'
-                   r'(\(Alternative\))?(?P<rest>\s+\S.*)?$', re.I)
-# "(a)" at Higher Level, "Part (a)" at Ordinary. Without the prefix the whole
-# Ordinary mark half parsed to zero parts, and the subject read as Higher-only.
-PART = re.compile(r'^(?:Part\s+)?\(([a-h])\)\s*(.*)$', re.I)
-BULLET = re.compile(r'^[•\-\uf0b7\uf06c\uf0a7]\s*')
-# "5 x 4 marks", "4 × 4 marks (3 for drawing, 1 for annotation)"
-# Two ways the same tariff is written. "7 x 5 marks" in the recent papers, and
-# "Any 7 of the above details ( 5 marks each)" in the older ones -- no multiply
-# sign at all, which is why five whole papers priced nothing and 2018 Ordinary
-# produced four cards.
-GROUP_TARIFF = re.compile(
-    r'(\d{1,2})\s*[x×]\s*(\d{1,3})\s*marks?'
-    r'|(?:any\s+)?(\d{1,2})\s+of the above[^()]{0,40}\(\s*(\d{1,3})\s*marks?\s*each',
-    re.I)
+DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, DIR)
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(DIR)))
+SCHEMES = os.path.join(ROOT, 'examiner-reports', 'computer-science', 'schemes')
+
+QUESTION = re.compile(r'^Question\s+(\d{1,2})\b', re.I)
+LETTER = re.compile(r'^\(([a-h])\)\s*$')
+ROMAN = re.compile(r'^\((i{1,3}|iv|v|vi{0,3}|ix|x)\)\s*$')
+# "6 marks", "38 (11, 15, 12) marks", "11 (3,3,3, 2) marks", "2 mark".
+TARIFF = re.compile(r'^(\d{1,3})\s*(?:\(([\d,\s]+)\))?\s*marks?\s*$', re.I)
+# The rubric at the foot of a part. It grades the response; it never states it.
+BAND = re.compile(r'^\s*(very good|good|fair|excellent|weak|poor|full correct|'
+                  r'response with some merit|correct|incorrect|no |partially|'
+                  r'almost|some merit|any \d+ (?:from|of)|award)',
+                  re.I)
+SECTION = re.compile(r'^Section\s+([A-C])\b')
+PAGE_NO = re.compile(r'^\d{1,3}$')
+ROMAN_ORDER = {r: i + 1 for i, r in enumerate(
+    ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x'])}
+BULLET = ''
 
 
-def group_tariffs(text):
-    """[(n, per)] for every tariff in `text`, in the order printed."""
+def _lines(page):
+    """(x, y, text) for every printed line, page number dropped."""
     out = []
-    for m in GROUP_TARIFF.finditer(text or ''):
-        a, b = (m.group(1), m.group(2)) if m.group(1) else (m.group(3), m.group(4))
-        if a and b:
-            out.append((int(a), int(b)))
-    return out
-# "(12 marks)", "(3 + 2 marks)", "(8 + 8 marks)"
-PART_TARIFF = re.compile(r'\(\s*((?:\d{1,3}\s*\+\s*)*\d{1,3})\s*marks?\s*\)', re.I)
-FOLD = re.compile(r'^<!--\s*markbank:')
-PRACTICAL = re.compile(r'^Practical Test\b', re.I)
-# A line that is only a tariff, so it is never mistaken for a group heading.
-TARIFF_ONLY = re.compile(r'^[\d\s×x+•()\-]*marks?\b.*$', re.I)
-# The drafting/scale band printed under every drawing question, and its numbers.
-SCALE_TAIL = re.compile(r'^(Scale\s*[-–]|Drafting\s*[-–]|[\d\s]+$)', re.I)
-# The presentation band every drawing question closes with. Priced, but not a
-# named answer, so it is never one of a card's options.
-DRAFTING = re.compile(r'\b(draughting|drafting)\b|\bexcellent, ?good, ?fair\b', re.I)
-# The mark column bleeding onto the end of a bullet: "R.C. strip foundation 4".
-MARK_TAIL = re.compile(r'\s+\d{1,3}\s*$')
-TOTAL_ONLY = re.compile(r'^(total|sub-?total|notes?|sketches?'
-                        r'|\(?\d+\s+for\s+\w+)\b', re.I)
-TOTALS = re.compile(r'\b(sub-?\s*total|total)\b', re.I)
-# "(8 + 5 marks)", "(3 + 3 marks)" printed inside a row's label.
-MARK_EXPR = re.compile(r'\(\s*\d{1,3}(?:\s*\+\s*\d{1,3})*\s*marks?\s*\)', re.I)
-# A row that names nothing: the scheme's way of saying "N interchangeable
-# answers go here". "Advantage 1", "Reason 2", "Design Consideration 3".
-SCAFFOLD_ROW = re.compile(
-    r'^(advantage|disadvantage|reason|risk|feature|guideline|point|method|'
-    r'consideration|answer|discussion point|benefit|way|factor|use|example|'
-    r'design consideration|safety precaution|precaution|approach|'
-    r'functional requirement|requirement|area|aspect|task|option|step|'
-    r'stage|element|item|detail)s?\s*(?:\d+|one|two|three|four|five|six)?'
-    r'\s*[-–:]?$', re.I)
-# A group heading: short, title-ish, no closing punctuation, no bullet.
-HEADING_LOOK = re.compile(r'^[A-Z][^.:;•]{0,58}$')
-# Lines that sit where a heading sits but name nothing. The question's own text
-# wraps onto a line ending in a full stop ("...requirements.", "...the house."),
-# and the SEC closes most lists with a catch-all. Both became group names.
-# "Notes" and "Sketches" sit exactly where a heading sits -- unpriced, with a
-# priced line under them -- and taking them as group names split three parts
-# into fragments of two options each, none of which could satisfy its own
-# tariff. They are presentation labels, never a group.
-NOT_A_HEADING = re.compile(r'^(any other relevant|notes?\b|sketch(es)?\b'
-                           r'|drawing\b|presentation\b|discussion\b'
-                           r'|n\.?b\.?\b|alternative\b'
-                           r'|.*[a-z]\.\s*$|.*\bsuch as\s*$|.*\bincluding\s*$'
-                           r'|discussion of\b|.*\bmay include\s*$)', re.I)
-# A heading in this scheme is always title-case. A line opening lower-case is a
-# bullet that wrapped -- "available for immediate contact" became a fourth group
-# of 2021 Higher Q2(c), which has three, and a group count that is wrong by one
-# breaks the tariff split that depends on it dividing evenly.
-LOWER_START = re.compile(r'^[a-z]')
-FURNITURE = re.compile(
-    r'^(##\s*Page|Leaving Certificate|Coimisi|State Examinations|-\s*\d+\s*-'
-    r'|\d{1,3}\s*$|PERFORMANCE CRITERIA|MAXIMUM|MARK\s*$|TOTAL\b'
-    r'|Construction Studies|Theory\s*[-–]|Marking Scheme\s*$)', re.I)
-
-
-def _lines(year, level):
-    """Document lines only — the appended fold blocks are a different text.
-
-    The four append-scheme-*.py tools add re-extractions of the same pages at
-    the end of the file. They are there for provenance, not structure, and
-    reading them as document reported question heads that do not exist.
-    """
-    path = os.path.join(SCHEMES, f'{year}-{level}.md')
-    out = []
-    for line in open(path, errors='ignore'):
-        t = line.strip()
-        if FOLD.match(t):
-            break
-        # The Practical Test scheme is bound into the same PDF and marks a
-        # coursework project, not the written paper. Left in, its pages ran on
-        # under the last theory part and turned Question 10(b) into 55 groups.
-        if PRACTICAL.match(t):
-            break
-        out.append(line.rstrip())
+    for bl in page.get_text('dict')['blocks']:
+        for ln in bl.get('lines', []):
+            text = ''.join(s['text'] for s in ln['spans'])
+            text = ' '.join(text.replace(BULLET, '•').split())
+            if not text:
+                continue
+            x, y = ln['bbox'][0], ln['bbox'][1]
+            if y > 750 and PAGE_NO.match(text):
+                continue
+            out.append((x, y, text))
+    out.sort(key=lambda r: (round(r[1], 1), r[0]))
     return out
 
 
-def split_halves(lines):
-    """(indicative, marks) — the mark table restarts the question numbering."""
-    ones = [i for i, l in enumerate(lines)
-            if (m := QHEAD.match(l.strip())) and m.group(1) == '1']
-    if len(ones) < 2:
-        raise SystemExit('cannot find the mark table: expected two Question 1 heads')
-    return lines[ones[0]:ones[-1]], lines[ones[-1]:]
+class CsScheme:
+    """One Computer Science marking scheme, keyed as the paper numbers it."""
 
-
-def _rewrap(src):
-    """Join a bullet to the lines it wrapped onto.
-
-    The indicative half sets its bullets in a narrow column, so one point runs
-    over two or three lines — "Use of a trench box or shuttering to strengthen
-    and stabilise the / sides of the trench to prevent a collapse happening".
-    Read line by line, that is two answers and neither is one the SEC printed.
-    A line continues the bullet above it when it does not open a bullet and
-    does not look like a heading: headings are short and unpunctuated, wrapped
-    text is neither, or begins lower-case.
-    """
-    out = []
-    for line in src:
-        t = line.strip()
-        if not t:
-            continue
-        if t == BARRIER:
-            out.append(BARRIER)
-            continue
-        if BULLET.match(t) or not out or out[-1] == BARRIER:
-            out.append(t)
-            continue
-        prev = out[-1]
-        continues = (t[0].islower()
-                     or (BULLET.match(prev) and not prev.rstrip().endswith(('.', ':'))
-                         and len(t.split()) > 2 and not HEADING_LOOK.match(t)))
-        if continues and BULLET.match(prev):
-            out[-1] = prev.rstrip() + ' ' + t
-        else:
-            out.append(t)
-    return [l for l in out if l != BARRIER]
-
-
-PAGE_MARK = re.compile(r'^##\s*Page\s+(\d+)\s*$', re.I)
-# Marks where page furniture was removed, so nothing is joined across the gap.
-BARRIER = '\x00'
-
-
-def blocks(lines, pages=None):
-    """{(question, letter): [line, ...]} for one half.
-
-    `pages`, when given, is filled with {(question, letter): pdf page index} so
-    a caller can go back to the PDF for a part whose table the flat text
-    destroys -- the two-column "material / reason" tables of the Ordinary
-    papers read as "Tiles Easy to clean" and cannot be split on text alone.
-    """
-    out, q, letter, page = {}, None, None, None
-    for raw in lines:
-        line = raw.strip()
-        m = PAGE_MARK.match(line)
-        if m:
-            page = int(m.group(1)) - 1
-            continue
-        if not line:
-            continue
-        m = QHEAD.match(line)
-        if m and not (m.group('rest') and not PART.match(m.group('rest').strip())
-                      and not m.group('rest').strip()[0].isupper()
-                      and len(m.group('rest')) > 90):
-            # "Question 10 (Alternative)" is a DIFFERENT question a candidate
-            # may answer instead, with its own parts and its own marks. Merged
-            # into Question 10 it silently doubled that question's content.
-            q = f'{m.group(1)}alt' if m.group(2) else int(m.group(1))
-            letter = None
-            rest = (m.group('rest') or '').strip()
-            if rest:
-                # The bilingual years weld the part marker and its text onto the
-                # question head. Re-read the remainder as a part so neither is
-                # lost -- without this every one of those parts vanished.
-                pm = PART.match(rest)
-                if pm:
-                    letter = pm.group(1)
-                    out.setdefault((q, letter), [])
-                    if pages is not None and page is not None:
-                        pages.setdefault((q, letter), page)
-                    if pm.group(2).strip():
-                        out[(q, letter)].append(pm.group(2).strip())
-            continue
-        if FURNITURE.match(line):
-            # Leave a barrier where a page header was dropped. Removing it
-            # silently made two lines adjacent that are not adjacent in the
-            # file, and _rewrap then welded a bullet to whatever followed the
-            # header -- "solar panels can also be used for water heating Scrúdú
-            # Ardte..." -- text the provenance gate can never find because the
-            # scheme never printed it contiguously.
-            if q is not None and letter is not None:
-                out.setdefault((q, letter), []).append(BARRIER)
-            continue
-        p = PART.match(line)
-        if p and q is not None:
-            letter = p.group(1)
-            rest = p.group(2).strip()
-            out.setdefault((q, letter), [])
-            if pages is not None and page is not None:
-                pages.setdefault((q, letter), page)
-            if rest:
-                out[(q, letter)].append(rest)
-            continue
-        if q is not None:
-            # letter is None for a question the paper does not divide -- every
-            # Ordinary paper's Question 8 is one undivided "explain any five of
-            # the following". Dropping those lost a whole question from each of
-            # the five papers, and the richest one in them: the scheme explains
-            # every term on the list in full.
-            out.setdefault((q, letter), []).append(line)
-    # A (q, None) bucket is only a real part where the question has no lettered
-    # parts at all. Everywhere else it is just the lines between the question
-    # head and its first "(a)", and keeping those invented one phantom part per
-    # question -- 61 of them across the 2016-2020 papers, every one reported as
-    # having no question text because the paper has no such part.
-    lettered = {q for q, letter in out if letter is not None}
-    return {k: v for k, v in out.items() if k[1] is not None or k[0] not in lettered}
-
-
-class Scheme:
     def __init__(self, year, level):
         self.year, self.level = year, level
-        lines = _lines(year, level)
-        ind, mark = split_halves(lines)
-        self.pages = {}
-        self.indicative = blocks(ind, self.pages)
-        self.marks = blocks(mark)
+        self.path = os.path.join(SCHEMES, f'{year}-{level}.pdf')
+        if not os.path.exists(self.path):
+            raise FileNotFoundError(self.path)
+        self.doc = pymupdf.open(self.path)
+        self._points = collections.defaultdict(list)
+        self._bands = collections.defaultdict(list)
+        self._tariff = {}
+        self._split = {}
+        self._section = {}
+        self._read()
 
-    def parts(self):
-        """Every (question, letter) either half describes.
+    @staticmethod
+    def _rows(page):
+        """The page's lines grouped into printed ROWS, left to right.
 
-        A (q, None) bucket is dropped where ANY half gives that question
-        lettered parts. blocks() filters within one half, so a question lettered
-        in the indicative half but not in the mark half kept a phantom
-        (q, None) — 23 of them, each reported as having no question text
-        because the paper has no such part.
+        A part's tariff is the mark cell on its OWN row -- the layout sets
+        "Question 13" and "38 (11, 15, 12) marks" on one line, "(a)" and
+        "11 (3,3,3, 2) marks" on the next. That is exact, where a column
+        threshold is not: mark cells appear at a dozen different x positions
+        in one scheme (60, 283, 396, 425, 482) because the bands beneath a
+        part carry their own, and taking the leftmost as the boundary put it
+        at x=40 and swallowed the whole page.
         """
-        # Question keys are ints except the alternative questions, which are
-        # '10alt' — sort on a normalised pair so the two kinds can coexist.
-        def order(k):
-            q, letter = k
-            return (int(str(q).replace('alt', '')), str(q).endswith('alt'), letter or '')
-        keys = set(self.indicative) | set(self.marks)
-        lettered = {q for q, letter in keys if letter is not None}
-        keys = {k for k in keys if k[1] is not None or k[0] not in lettered}
-        return sorted(keys, key=order)
+        rows, cur = [], []
+        for cell in _lines(page):
+            if cur and cell[1] - cur[0][1] > 4.0:
+                rows.append(sorted(cur, key=lambda c: c[0]))
+                cur = []
+            cur.append(cell)
+        if cur:
+            rows.append(sorted(cur, key=lambda c: c[0]))
+        return rows
 
-    def bullets(self, q, letter, half='marks'):
-        """Every answer item the scheme lists for this part.
-
-        Two columns are frequently set on one line — "19 mm external render
-        Cavity closer" — so a line is split on its bullet characters as well as
-        broken at line ends.
-        """
-        src = (self.marks if half == 'marks' else self.indicative).get((q, letter), [])
-        out = []
-        for line in src:
-            for piece in re.split(r'\s*[••]\s*', line):
-                piece = BULLET.sub('', piece).strip()
-                if piece:
-                    out.append(piece)
-        return out
-
-    def groups(self, q, letter, half='marks'):
-        """[(name, (n, per), bullets)] — the unit a card is actually made from.
-
-        A drawing part is priced per GROUP, not per part. Question 1 of the
-        2025 Higher paper prices one vertical section three ways:
-
-            Foundation + Solid ground floor  External wall   Window detail
-            5 x 4 marks                      4 x 4 marks     3 x 4 marks
-
-        and then repeats each group name as a heading above its own bullets.
-        Reading the part as one list loses that, and a card asking for "five
-        details" off a 37-item list of three different things is wrong twice
-        over. The tariff row and the repeated headings are paired by ORDER,
-        which is what the flattened column layout preserves.
-
-        Where the part names no groups, the whole part is one group.
-        """
-        src = (self.marks if half == 'marks' else self.indicative).get((q, letter), [])
-        if not src:
-            return []
-        src = _rewrap(src)
-        # Headings: a non-bullet line with at least one bullet under it -- or,
-        # where the block uses no bullets at all, a line carrying NO mark with
-        # priced rows under it. The 2018 Ordinary mark tables set their groups
-        # that way ("Secondary circulation" over six rows at five marks each,
-        # then "Primary circulation" over six more), so bullet-only heading
-        # detection returned no groups and the part fell back to the indicative
-        # half's welded list of eighteen.
-        tariffs = group_tariffs(' '.join(src))
-        if half == 'marks' and not any(BULLET.match(l) for l in src):
-            priced = re.compile(r'\s\d{1,3}\s*$')
-            heads = []
-            for i, line in enumerate(src):
-                t = line.strip()
-                if priced.search(t) or TARIFF_ONLY.match(t) or TOTALS.search(t):
-                    continue
-                nxt = src[i + 1].strip() if i + 1 < len(src) else ''
-                # A heading starts upper-case and is short. Without that,
-                # "water cylinder" -- the tail of a line that wrapped -- became
-                # a third group of 2018 Ordinary Q3(a), splitting a six-row
-                # group into fragments too small for their own tariff and
-                # costing four parts elsewhere that had been carding fine.
-                if (priced.search(nxt) and not NOT_A_HEADING.match(t)
-                        and not LOWER_START.match(t) and len(t) <= 60):
-                    heads.append((i, t.rstrip(':').strip()))
-            if len(heads) > 1:
-                out = []
-                for n, (i, name) in enumerate(heads):
-                    hi = heads[n + 1][0] if n + 1 < len(heads) else len(src)
-                    items = []
-                    for line in src[i + 1:hi]:
-                        t = line.strip()
-                        if not priced.search(t) or SCALE_TAIL.match(t) or TOTALS.search(t):
-                            continue
-                        t = MARK_TAIL.sub('', t).strip(' .;')
-                        if len(t) > 2 and not DRAFTING.search(t):
-                            items.append(t)
-                    # Three, not two. Where the mark column is printed on
-                    # alternate lines an unpriced ITEM looks exactly like a
-                    # heading -- "String 250 mm x 50 mm" over "Tread ... 5" --
-                    # and a two-item group is what that mistake produces. A
-                    # real group heading has a real list under it.
-                    if len(items) >= 3:
-                        out.append((name, tariffs[n] if n < len(tariffs) else None, items))
-                if len(out) > 1 and sum(len(g[2]) for g in out) >= len(heads) * 3:
-                    return out
-
-        heads = []
-        for i, line in enumerate(src):
-            if (BULLET.match(line) or TARIFF_ONLY.match(line)
-                    or NOT_A_HEADING.match(line.strip())
-                    or LOWER_START.match(line.strip())):
-                continue
-            nxt = src[i + 1] if i + 1 < len(src) else ''
-            if BULLET.match(nxt):
-                heads.append((i, line.strip().rstrip(':').strip()))
-
-        def items(lo, hi):
-            out = []
-            for line in src[lo + 1:hi]:
-                if not BULLET.match(line):
-                    if SCALE_TAIL.match(line.strip()):
+    def _read(self):
+        q = letter = roman = None
+        key = None
+        section = None
+        for n in range(len(self.doc)):
+            for row in self._rows(self.doc[n]):
+                head_x, _, head_t = row[0]
+                # The tariff on THIS row, if the row carries one to its right.
+                tar = None
+                for x, _, t in row[1:]:
+                    m = TARIFF.match(t)
+                    if m and x > head_x + 40:
+                        tar = m
                         break
+
+                sec = SECTION.match(head_t)
+                if sec and head_x < 100:
+                    section = sec.group(1)
                     continue
-                for piece in re.split(r'\s*[•●]\s*', BULLET.sub('', line)):
-                    piece = MARK_TAIL.sub('', piece).strip(' .;')
-                    if len(piece) > 2:
-                        out.append(piece)
-            return out
 
-        if not heads:
-            # One unnamed group: the bullets sit straight under the tariff line.
-            first = next((i for i, l in enumerate(src) if BULLET.match(l)), None)
-            if first is None:
-                return []
-            b = items(first - 1, len(src))
-            return [(None, tariffs[0] if tariffs else None, b)] if b else []
+                opened = False
+                hm = QUESTION.match(head_t)
+                if hm and head_x < 100:
+                    q, letter, roman = int(hm.group(1)), None, None
+                    key, opened = (q, None, None), True
+                elif q is not None:
+                    lm = LETTER.match(head_t)
+                    rm = ROMAN.match(head_t)
+                    if lm and head_x < 100:
+                        letter, roman = lm.group(1), None
+                        key, opened = (q, letter, None), True
+                    elif rm and head_x < 130:
+                        roman = rm.group(1)
+                        key, opened = (q, letter, roman), True
+                if opened:
+                    self._points.setdefault(key, [])
+                    self._section[key] = section
+                    if tar:
+                        self._tariff[key] = int(tar.group(1))
+                        if tar.group(2):
+                            self._split[key] = [int(v) for v in
+                                                re.findall(r'\d+', tar.group(2))]
+                    continue
 
-        out = []
-        for n, (i, name) in enumerate(heads):
-            hi = heads[n + 1][0] if n + 1 < len(heads) else len(src)
-            b = items(i, hi)
-            if not b:
-                continue
-            t = tariffs[n] if n < len(tariffs) else (tariffs[0] if len(tariffs) == 1 else None)
-            out.append((name, t, b))
-        return out
+                if q is None or key is None:
+                    continue
+                # Everything else on the row is answer or rubric. A row that is
+                # ONLY a mark cell prices the band above it and states nothing.
+                body = ' '.join(t for _, _, t in row if not TARIFF.match(t)).strip()
+                if not body:
+                    continue
+                if BAND.match(body):
+                    self._bands[key].append(body)
+                else:
+                    self._points[key].append(body)
 
-    def mark_rows(self, q, letter):
-        """[(label, marks)] — the mark table's priced rows for this part.
+    # ── the interface ─────────────────────────────────────────────────────
+    def parts(self):
+        return sorted(self._points, key=lambda k: (k[0], k[1] or '', k[2] or ''))
 
-        Totals are excluded. Leaving "Sub-total 10" in was why the tariff
-        inference failed on most of Ordinary Level: the rows read [5, 5, 10],
-        which is not "every row carries the same mark", so a part the scheme
-        prices plainly as two answers at five was reported as having no tariff
-        at all. Eighty-seven parts were refused on that.
+    def points(self, q, letter=None, roman=None):
+        """The scheme's stated answer for this part, as MARKING POINTS.
+
+        A point is a bullet and the lines that wrap under it. A part whose
+        answer is prose with no bullets returns its lines unchanged.
         """
-        out = []
-        for line in _rewrap(self.marks.get((q, letter), [])):
-            t = BULLET.sub('', line).strip()
-            # A total or a tariff is not an answer row wherever it sits on the
-            # line. "Any 7 x 5 marks Sub-total 35" closes every Ordinary Level
-            # vertical section; counted as a row its 35 broke the "every row
-            # carries the same mark" test and lost the richest question in the
-            # paper, five times over.
-            if not t or SCALE_TAIL.match(t) or TOTALS.search(t) or GROUP_TARIFF.search(t):
-                continue
-            m = re.search(r'^(.*?)\s+(\d{1,3})\s*$', t)
-            if not m:
-                continue
-            label = MARK_EXPR.sub('', m.group(1)).strip(' .;:')
-            if label:
-                out.append((label, int(m.group(2))))
-        return out
+        raw = self._points.get((q, letter, roman), [])
+        out, cur = [], []
+        for line in raw:
+            if line.startswith('•'):
+                if cur:
+                    out.append(' '.join(cur))
+                cur = [line.lstrip('• ').strip()]
+            elif cur:
+                cur.append(line)
+            else:
+                out.append(line)
+        if cur:
+            out.append(' '.join(cur))
+        return [p for p in out if p.strip()]
 
-    def mark_items(self, q, letter, question=None):
-        """The mark table's own answer rows, where IT is the fuller list.
+    def bands(self, q, letter=None, roman=None):
+        """The rubric lines. Never an answer -- kept so a caller can see them."""
+        return list(self._bands.get((q, letter, roman), []))
 
-        For most parts the indicative half carries the content and the mark
-        table only prices it. For the services and wiring layouts it is the
-        other way round: the 2021 Higher Q9(b) mark table names the six things
-        a ring main drawing must show, and the indicative half lists something
-        else entirely under "Ring main circuit - typical detailing".
+    def tariff(self, q, letter=None, roman=None):
+        """What the paper pays for this part, or None.
+
+        Printed on the part's own row wherever the scheme states it. Where it
+        does not, the PARENT's row prints the split -- 2024 HL Q11 heads
+        "6 (4, 2) marks" over its (a) and (b) -- and the component in this
+        part's position is taken from it. That is a printed total over a
+        printed count, which is the one division the rules allow, and only
+        where the split has exactly one entry per sibling. Never inferred any
+        other way: 2024 HL Q16(a) is 50 marks over seven romans with no split
+        printed, and every one of those returns None.
         """
-        out = []
-        for line in _rewrap(self.marks.get((q, letter), [])):
-            t = BULLET.sub('', line).strip()
-            if (not t or TARIFF_ONLY.match(t) or SCALE_TAIL.match(t)
-                    or TOTALS.search(t) or GROUP_TARIFF.search(t) or DRAFTING.search(t)):
-                continue
-            t = MARK_TAIL.sub('', t).strip(' .;')
-            if len(t) > 2 and not TOTAL_ONLY.match(t):
-                out.append(t)
-        # The block usually opens by restating the question, and that line is
-        # not an answer. But not always: the Ordinary vertical sections open
-        # straight into "Slates 600 mm x 300 mm on battens", and dropping it
-        # unconditionally lost a real detail off every one of them. Dropped only
-        # when it actually reads as the question.
-        if out and question:
-            a, b = PCS(out[0]), PCS(question)
-            if a and b and (a[:30] in b or b[:30] in a):
-                return out[1:]
-        return out
+        own = self._tariff.get((q, letter, roman))
+        if own is not None:
+            return own
+        if letter is None and roman is None:
+            return None
+        parent = (q, None, None) if roman is None else (q, letter, None)
+        split = self._split.get(parent)
+        if not split:
+            return None
+        sibs = [k for k in self._points
+                if k[0] == q
+                and (k[1] == letter if roman is not None else k[1] is not None)
+                and (k[2] is not None if roman is not None else k[2] is None)]
+        sibs.sort(key=lambda k: (k[1] or '', ROMAN_ORDER.get(k[2], 0)))
+        if len(sibs) != len(split):
+            return None
+        try:
+            return split[sibs.index((q, letter, roman))]
+        except ValueError:
+            return None
 
-    def tariff(self, q, letter):
-        """(kind, n, per) from the mark table, or None if it prints none."""
-        text = ' '.join(self.marks.get((q, letter), []))
-        g = group_tariffs(text)
-        if g:
-            return ('bestNofParts', g[0][0], g[0][1])
-        p = PART_TARIFF.search(text)
-        if p:
-            vals = [int(v) for v in re.split(r'\s*\+\s*', p.group(1))]
-            return ('fixed', len(vals), vals[0]) if len(vals) > 1 else ('total', 1, vals[0])
-        return None
+    def split(self, q, letter=None, roman=None):
+        """The per-part split the head prints, e.g. [11, 15, 12]."""
+        return list(self._split.get((q, letter, roman), []))
+
+    def section(self, q, letter=None, roman=None):
+        return self._section.get((q, letter, roman))
+
+
+def main():
+    if len(sys.argv) < 3:
+        print(__doc__.strip().splitlines()[2].strip())
+        raise SystemExit(2)
+    year, level = int(sys.argv[1]), sys.argv[2]
+    S = CsScheme(year, level)
+    if len(sys.argv) > 3:
+        q = int(sys.argv[3])
+        letter = sys.argv[4] if len(sys.argv) > 4 and sys.argv[4] != '-' else None
+        roman = sys.argv[5] if len(sys.argv) > 5 and sys.argv[5] != '-' else None
+        print(f'{year} {level.upper()} Q{q}'
+              + (f'({letter})' if letter else '') + (f'({roman})' if roman else '')
+              + f'   section {S.section(q, letter, roman)}')
+        print(f'  tariff  {S.tariff(q, letter, roman)}  split {S.split(q, letter, roman)}')
+        for p in S.points(q, letter, roman):
+            print(f'  point   {p[:150]}')
+        for b in S.bands(q, letter, roman):
+            print(f'  band    {b[:120]}')
+        return
+    parts = S.parts()
+    priced = sum(1 for k in parts if S.tariff(*k))
+    stated = sum(1 for k in parts if S.points(*k))
+    print(f'{year} {level}: {len(parts)} parts, {priced} priced, {stated} with text')
+    for k in parts[:8]:
+        print(f'   Q{k[0]}({k[1] or "-"})({k[2] or "-"}) {S.tariff(*k)}m '
+              f'{len(S.points(*k))} point(s)  {(S.points(*k) or [""])[0][:60]!r}')
 
 
 if __name__ == '__main__':
-    year, level = int(sys.argv[1]), sys.argv[2]
-    S = Scheme(year, level)
-    dump = '--dump' in sys.argv
-    half = 'indicative' if '--indicative' in sys.argv else 'marks'
-    print(f'{year} {level.upper()}  indicative parts {len(S.indicative)}   '
-          f'mark-table parts {len(S.marks)}')
-    for key in S.parts():
-        q, letter = key
-        gs = S.groups(q, letter, half)
-        print(f'  Q{q}({letter})  {len(gs)} group(s)')
-        for name, t, b in gs:
-            print(f'      [{name or "-"}]  tariff={t}  items={len(b)}')
-            if dump:
-                for x in b[:6]:
-                    print(f'          * {x[:100]}')
-
-
-# A numbered answer slot, with or without a trailing mark and with or without
-# the rest of the sentence: "Functional Requirement 2", "Method 1 to reduce
-# solar overheating", "Guideline 3". Read off the RAW block, because a slot is
-# frequently priced on the lines beneath it rather than on its own line and so
-# never reaches mark_rows() at all.
-SLOT_LINE = re.compile(
-    r'^(advantage|disadvantage|reason|risk|feature|guideline|point|method|'
-    r'consideration|answer|discussion point|benefit|way|factor|use|example|'
-    r'design consideration|safety precaution|safety procedure|precaution|'
-    r'approach|functional requirement|requirement|item|element|area|aspect|'
-    r'section|task|option|type|material|detail|step|stage|part)s?\s+(\d{1,2})\b',
-    re.I)
-
-
-def slot_labels(lines):
-    """The numbered answer slots a part's mark block sets out, by name.
-
-    "Functional Requirement 1/2/3" is the scheme saying three answers of the
-    same kind go here. Where they all share a name and the part prints a total,
-    the count and the total are both printed and the per-answer mark is
-    arithmetic on them rather than a guess.
-    """
-    out = []
-    for line in lines:
-        m = SLOT_LINE.match(line.strip())
-        if m:
-            out.append(m.group(1).lower())
-    return out
-
-
-def PCS(t):
-    """Squashed to letters and digits, for comparing two printings of one line."""
-    return re.sub(r'[^a-z0-9]+', '', (t or '').lower())
-
-
-_COLCACHE = {}
-
-
-def columns(subject_year_level, page, min_gap=60):
-    """The lines of one scheme page, grouped into columns by x position.
-
-    The SEC sets its "specify a material / give two reasons" tables as two
-    columns, and the flat extraction reads across them: "Slate Aesthetically
-    pleasing" is a material and a reason welded together, and neither survives
-    as an answer. The x coordinate separates them cleanly -- column one sits at
-    62pt and column two at 202pt on every one of these pages -- so the columns
-    are recovered from the PDF rather than guessed at from the text.
-
-    Returns [[line, ...], ...], one list per column, left to right.
-    """
-    import pymupdf
-    year, level = subject_year_level
-    key = (year, level, page)
-    if key in _COLCACHE:
-        return _COLCACHE[key]
-    path = os.path.join(SCHEMES, f'{year}-{level}.pdf')
-    if not os.path.exists(path):
-        return []
-    rows = []
-    with pymupdf.open(path) as doc:
-        if page >= len(doc):
-            return []
-        for b in doc[page].get_text('dict')['blocks']:
-            for ln in b.get('lines', []):
-                txt = ''.join(sp['text'] for sp in ln['spans']).strip()
-                if txt:
-                    rows.append((min(sp['bbox'][0] for sp in ln['spans']),
-                                 min(sp['bbox'][1] for sp in ln['spans']), txt))
-    if not rows:
-        return []
-    # Cluster the left edges; a gap wider than min_gap starts a new column.
-    xs = sorted({round(x) for x, _, _ in rows})
-    edges, run = [], [xs[0]]
-    for a, b in zip(xs, xs[1:]):
-        if b - a > min_gap:
-            edges.append(run)
-            run = []
-        run.append(b)
-    edges.append(run)
-    out = []
-    for grp in edges:
-        lo, hi = min(grp) - 2, max(grp) + 2
-        col = [t for x, y, t in sorted(rows, key=lambda r: r[1]) if lo <= x <= hi]
-        out.append(col)
-    _COLCACHE[key] = out
-    return out
-
-
-_PAIRCACHE = {}
-_STOP_ROW = re.compile(r'^(\(?[a-h]\)|Question\s+\d|Leaving Certificate|Any other)', re.I)
-
-
-def paired_table(year, level, page, letter=None):
-    """(left column, right column) of a "specify X / give a reason" table.
-
-    The Ordinary papers answer "Specify a suitable roof finish material and give
-    two reasons" with a two-column table: the material on the left, its reasons
-    on the right. Flattened to text it reads "Slate Aesthetically pleasing", so
-    neither column is an answer a card can carry.
-
-    The part is found by its own "(c)" marker and ends at the next marker, and
-    the two columns are then separated by clustering the left edges. An earlier
-    version keyed on a "Reason" heading, which half these tables do not print.
-
-    Returns ([], []) where the part's rows do not form two columns.
-    """
-    import pymupdf
-    key = (year, level, page, letter)
-    if key in _PAIRCACHE:
-        return _PAIRCACHE[key]
-    path = os.path.join(SCHEMES, f'{year}-{level}.pdf')
-    if not os.path.exists(path) or page is None:
-        return [], []
-    rows = []
-    with pymupdf.open(path) as doc:
-        if page >= len(doc):
-            return [], []
-        for b in doc[page].get_text('dict')['blocks']:
-            for ln in b.get('lines', []):
-                txt = ''.join(sp['text'] for sp in ln['spans']).strip()
-                if txt:
-                    rows.append((min(sp['bbox'][0] for sp in ln['spans']),
-                                 min(sp['bbox'][1] for sp in ln['spans']), txt))
-    rows.sort(key=lambda r: r[1])
-    lo, hi = 0.0, 1e9
-    if letter:
-        here = re.compile(rf'^\(?{letter}\)')
-        nxt = re.compile(r'^\(?[a-h]\)|^Question\s+\d')
-        for i, (_, y, t) in enumerate(rows):
-            if here.match(t):
-                lo = y
-                for _, y2, t2 in rows[i + 1:]:
-                    if y2 > y and nxt.match(t2) and not here.match(t2):
-                        hi = y2
-                        break
-                break
-    span = [(x, t) for x, y, t in rows
-            if lo <= y < hi and len(t) > 2 and not _STOP_ROW.match(t)]
-    if len(span) < 4:
-        _PAIRCACHE[key] = ([], [])
-        return [], []
-    xs = sorted({round(x) for x, _ in span})
-    cut = None
-    for a, b in zip(xs, xs[1:]):
-        if b - a > 60:
-            cut = (a + b) / 2
-            break
-    if cut is None:
-        _PAIRCACHE[key] = ([], [])
-        return [], []
-    left = [t for x, t in span if x < cut]
-    right = [t for x, t in span if x >= cut]
-    out = (left, right) if left and right else ([], [])
-    _PAIRCACHE[key] = out
-    return out
+    main()
