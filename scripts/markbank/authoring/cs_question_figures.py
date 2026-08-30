@@ -279,6 +279,14 @@ def answer_table_top(page, x0, y0, x1, y1, text_rows):
         return None
     for d in page.get_drawings():
         r = d['rect']
+        # A ROW of the table is not content in it. Agricultural Science draws
+        # its answer boxes as one rectangle per ruled line, and counting those
+        # as "something is drawn in the body" made every blank box on the
+        # paper read as a table with content -- a card for "Identify the
+        # correct explanation for marbling by placing a tick in the correct
+        # box" came out carrying an empty two-line box.
+        if r.width >= 0.8 * (top[2] - top[0]) and r.height <= 30.0:
+            continue
         if (r.width > 4 and r.height > 4 and body_top < r.y0
                 and r.y1 < y1 + 2 and top[0] - 4 < r.x0 and r.x1 < top[2] + 4):
             return None
@@ -337,6 +345,16 @@ def trim_blank_box_right(page, x0, y0, x1, y1, text_rows):
             if r.height < 0.5 * (y1 - y0) or r.width < 40.0:
                 continue
             if not is_blank_box(page, r, text_rows):
+                continue
+            # A blank COLUMN of the same table is not a box standing beside
+            # it. Agricultural Science's tick-box tables put the options in
+            # one column and the box to tick in the next, and cutting the
+            # second left the student a table with its answer column sliced
+            # off. A horizontal rule that runs from the band's left edge
+            # across the box is the table's own rule, and says so.
+            if any(row[0] <= x0 + 4 and row[2] >= r.x1 - 4
+                   and r.y0 - 4 <= row[1] <= r.y1 + 4
+                   for row in rule_rows(page)):
                 continue
             cut = r.x0 - 8.0 if cut is None else min(cut, r.x0 - 8.0)
         if cut is None or cut <= x0:
@@ -549,7 +567,8 @@ def is_answer_grid(page, band):
     return not any(ln[1] > y0 + 0.3 * (y1 - y0) for ln in inside)
 
 
-def is_a_figure(labels, has_image, placed=(), page=None, band=None):
+def is_a_figure(labels, has_image, placed=(), page=None, band=None,
+                text_rows=()):
     """Does this band hold PRINTED MATTER, or is it an empty answer box?
 
     Four things say printed matter, and a band needs one of them: it contains
@@ -568,6 +587,19 @@ def is_a_figure(labels, has_image, placed=(), page=None, band=None):
     if columns(placed) >= 2:
         return not (page is not None and band is not None
                     and is_answer_grid(page, band))
+    # A ruled table whose BODY HOLDS WORDS is printed matter, whatever its
+    # column count. This is the exact inverse of answer_table_top(), which
+    # refuses a table whose body is empty under a filled header, and without
+    # it a single-column table of options reads as an answer box: Agricultural
+    # Science asks "Identify the conditions necessary for germination by
+    # placing a tick in the correct box" over three rows reading "Light, heat
+    # and oxygen", "Water, light and heat", "Water, heat and oxygen", and a
+    # card that cannot show them cannot be answered.
+    if page is not None and band is not None:
+        rows = [r for r in rule_rows(page)
+                if band[1] - 4 <= r[1] <= band[3] + 4]
+        if len(rows) >= 2 and answer_table_top(page, *band, text_rows) is None:
+            return True
     if page is not None and band is not None and has_drawn_shape(page, band):
         return True
     return False
@@ -610,6 +642,19 @@ def figure_bands(page, mono):
         x1 = max(r[2] for r in g)
         y1 = max(r[3] for r in g)
         y1 = follow_table(page, x0, y0, x1, y1, prose)
+        # A table is as wide as its own RULES. artwork() keeps only strokes
+        # over 2pt, which is right for finding bands and wrong for the width:
+        # Agricultural Science shades the option cells of a tick-box table and
+        # draws the box to tick as thin outlines, so the band stopped at the
+        # options and the crop showed a table with its answer column sliced
+        # off. Only rules that already overlap the band count, so a rule
+        # belonging to something else on the page cannot widen it.
+        spanning = [r for r in rule_rows(page)
+                    if y0 - 4 <= r[1] <= y1 + 4
+                    and min(r[2], x1) - max(r[0], x0) > 0]
+        if spanning:
+            x0 = min([x0] + [r[0] for r in spanning])
+            x1 = max([x1] + [r[2] for r in spanning])
         if x1 - x0 < MIN_W or y1 - y0 < MIN_H:
             continue
         # Wholly inside a code run already cropped: that is its shading.
@@ -666,7 +711,8 @@ def figure_bands(page, mono):
         has_image = any(ix0 >= x0 - 2 and ix1 <= x1 + 2
                         and iy0 >= y0 - 2 and iy1 <= y1 + 2
                         for ix0, iy0, ix1, iy1 in images)
-        if not is_a_figure(labels, has_image, placed, page, (x0, y0, x1, y1)):
+        if not is_a_figure(labels, has_image, placed, page, (x0, y0, x1, y1),
+                           text_rows):
             continue
         if y1 - y0 >= MIN_H:
             out.append((x0, y0, x1, y1, labels))

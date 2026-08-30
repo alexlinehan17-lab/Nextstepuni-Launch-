@@ -100,11 +100,24 @@ def card_text(card):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--write', action='store_true')
+    ap.add_argument('--from-catalogue',
+                    help='a question_art.py catalogue: attach each crop to the '
+                         'card it was cropped FOR, by id')
     ap.add_argument('subjects', nargs='*')
     args = ap.parse_args()
 
     manifest = json.load(open(MANIFEST, encoding='utf-8'))
     solution = {k for k, v in manifest.items() if v.get('solution')}
+
+    # A crop cut FOR a named card, by question_art.py. Joined by id rather
+    # than by ref, because that is what the cropper recorded and it cannot be
+    # ambiguous.
+    for_card = {}
+    if args.from_catalogue:
+        for entry in json.load(open(args.from_catalogue, encoding='utf-8')):
+            key = entry['file'][:-4]
+            if entry.get('cardId') and key in manifest:
+                for_card[entry['cardId']] = key
 
     # The eleven files build-deck consumes. The authored directory also holds
     # working lists -- "-figures", "-held", "-skipped", "-script-ids" -- and
@@ -134,6 +147,12 @@ def main():
                 continue
             text = card_text(card)
             if not POINTS_AT.search(text):
+                continue
+            if card['id'] in for_card:
+                attached[subject] += 1
+                changed += 1
+                if args.write:
+                    card['questionFigureKey'] = for_card[card['id']]
                 continue
             siblings = by_question.get(question_of(card.get('questionRef') or ''))
             # ONE crop for the question is unambiguous. Where its parts carry
