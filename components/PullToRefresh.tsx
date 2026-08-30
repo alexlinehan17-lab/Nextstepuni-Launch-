@@ -36,6 +36,16 @@ const PullToRefresh: React.FC<PullToRefreshProps> = ({ children }) => {
     if (!native) return;
 
     const onTouchStart = (e: TouchEvent) => {
+      // Immersive flows with their own scroll container (notably onboarding)
+      // must own the gesture. Starting a global reload while that inner region
+      // is at its top was both too easy and could interrupt a just-selected
+      // stage before it had been persisted.
+      const target = e.target instanceof Element ? e.target : null;
+      if (target?.closest('[data-prevent-pull-to-refresh="true"]')) {
+        tracking.current = false;
+        startY.current = null;
+        return;
+      }
       if (window.scrollY > 0) return;
       startY.current = e.touches[0].clientY;
       tracking.current = true;

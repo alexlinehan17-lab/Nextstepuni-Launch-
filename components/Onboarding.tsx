@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useMemo, useEffect, useRef } from 'react';
+import React, { useState, useMemo, useEffect, useLayoutEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MotionDiv, MotionP, MotionSpan } from './Motion';
 import { ArrowRight, ArrowLeft, Check, Calendar, CalendarOff, BookOpen, Layers } from 'lucide-react';
@@ -57,6 +57,10 @@ interface OnboardingDraft {
 }
 
 const onboardingDraftKey = (userId: string, mode: string) => `nextstepuni:onboarding-draft:v1:${userId}:${mode}`;
+
+function writeOnboardingDraft(userId: string, mode: string, draft: OnboardingDraft): void {
+  try { localStorage.setItem(onboardingDraftKey(userId, mode), JSON.stringify(draft)); } catch { /* storage may be unavailable */ }
+}
 
 function readOnboardingDraft(userId: string, mode: string): OnboardingDraft | null {
   try {
@@ -259,6 +263,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
   // pick, so the year picker never renders.
   const [step, setStep] = useState<Step>(draft?.step ?? (isTransition ? 5 : 1));
   const [direction, setDirection] = useState(1);
+  const scrollRegionRef = useRef<HTMLDivElement>(null);
+  const latestDraftRef = useRef<OnboardingDraft | null>(null);
 
   // Subject selection
   const [selectedSubjects, setSelectedSubjects] = useState<Set<string>>(() => new Set(draft?.selectedSubjects ?? []));
@@ -289,16 +295,78 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
   // Rest days
   const [restDays, setRestDays] = useState<Set<string>>(() => new Set(draft?.restDays ?? []));
 
-  // iOS can reload or evict a Capacitor WebView with little warning. Keep a
-  // synchronous local draft so that never resets a partially completed flow.
-  useEffect(() => {
+  // iOS can reload or evict a Capacitor WebView with little warning. Persist in
+  // a layout effect so a newly selected step is written before the next frame,
+  // rather than waiting for a normal effect after the transition has painted.
+  useLayoutEffect(() => {
     const next: OnboardingDraft = {
       version: 1, step, selectedSubjects: Array.from(selectedSubjects),
       subjectConfigs, subjectBands, examDate, yearGroup, essentialsMode,
       northStarData, restDays: Array.from(restDays),
     };
-    try { localStorage.setItem(onboardingDraftKey(userId, mode), JSON.stringify(next)); } catch { /* storage may be unavailable */ }
+    latestDraftRef.current = next;
+    writeOnboardingDraft(userId, mode, next);
   }, [userId, mode, step, selectedSubjects, subjectConfigs, subjectBands, examDate, yearGroup, essentialsMode, northStarData, restDays]);
+
+  // Preserve the latest synchronous snapshot when iOS backgrounds or evicts
+  // the WebView. pagehide covers reload/navigation; visibilitychange covers an
+  // app moving to the background before iOS has decided whether to retain it.
+  useEffect(() => {
+    const persistLatestDraft = () => {
+      if (latestDraftRef.current) writeOnboardingDraft(userId, mode, latestDraftRef.current);
+    };
+    const persistWhenHidden = () => {
+      if (document.visibilityState === 'hidden') persistLatestDraft();
+    };
+    window.addEventListener('pagehide', persistLatestDraft);
+    document.addEventListener('visibilitychange', persistWhenHidden);
+    return () => {
+      window.removeEventListener('pagehide', persistLatestDraft);
+      document.removeEventListener('visibilitychange', persistWhenHidden);
+    };
+  }, [userId, mode]);
+
+  // Every stage is a new screen. Carrying the previous stage's scroll offset
+  // into the next one made the content appear to open halfway down the page.
+  useLayoutEffect(() => {
+    if (scrollRegionRef.current) scrollRegionRef.current.scrollTop = 0;
+  }, [step]);
+
+  // Keep a vertical gesture inside the onboarding scroller. At its top or
+  // bottom, absorb only the outward part of a predominantly vertical drag so
+  // it cannot become browser/WebView pull-to-refresh; normal scrolling and
+  // horizontal controls remain untouched.
+  useEffect(() => {
+    const scrollRegion = scrollRegionRef.current;
+    if (!scrollRegion) return;
+
+    let touchStartX = 0;
+    let touchStartY = 0;
+    const onTouchStart = (event: TouchEvent) => {
+      const touch = event.touches[0];
+      if (!touch) return;
+      touchStartX = touch.clientX;
+      touchStartY = touch.clientY;
+    };
+    const onTouchMove = (event: TouchEvent) => {
+      const touch = event.touches[0];
+      if (!touch) return;
+      const deltaX = touch.clientX - touchStartX;
+      const deltaY = touch.clientY - touchStartY;
+      if (Math.abs(deltaY) <= Math.abs(deltaX)) return;
+
+      const atTop = scrollRegion.scrollTop <= 0;
+      const atBottom = Math.ceil(scrollRegion.scrollTop + scrollRegion.clientHeight) >= scrollRegion.scrollHeight;
+      if ((atTop && deltaY > 0) || (atBottom && deltaY < 0)) event.preventDefault();
+    };
+
+    scrollRegion.addEventListener('touchstart', onTouchStart, { passive: true });
+    scrollRegion.addEventListener('touchmove', onTouchMove, { passive: false });
+    return () => {
+      scrollRegion.removeEventListener('touchstart', onTouchStart);
+      scrollRegion.removeEventListener('touchmove', onTouchMove);
+    };
+  }, []);
 
   // First-run funnel. "Reached" rather than "completed" for the mid-steps: the
   // JC flow skips some of them, so how FAR a student got is the honest and
@@ -586,7 +654,7 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
   const welcomeWords = `Welcome, ${userName}`.split(' ');
 
   return (
-    <div className="theme-compat fixed inset-0 flex flex-col z-[60] overflow-hidden">
+    <div className="theme-compat fixed inset-0 z-[60] flex touch-pan-y flex-col overflow-hidden overscroll-none" data-prevent-pull-to-refresh="true">
 
       {/* ─── Solid background — matches Library (module selection) screen ─── */}
       <div className="fixed inset-0 pointer-events-none dark:bg-zinc-900" aria-hidden="true" style={{ backgroundColor: '#FAFBF6' }} />
@@ -618,8 +686,12 @@ const Onboarding: React.FC<OnboardingProps> = ({ userId, userName, onComplete, o
       </div>
 
       {/* ─── Scrollable Content ─── */}
-      <div className="flex-1 overflow-y-auto min-h-0 relative z-10">
-        <div className="max-w-2xl mx-auto px-7 sm:px-6 py-10">
+      <div
+        ref={scrollRegionRef}
+        data-testid="onboarding-scroll-region"
+        className="relative z-10 min-h-0 flex-1 touch-pan-y overflow-y-auto overscroll-contain [-webkit-overflow-scrolling:touch]"
+      >
+        <div className="mx-auto max-w-2xl px-7 py-6 sm:px-6 sm:py-10">
           <AnimatePresence mode="wait" custom={direction}>
 
             {/* Step 1: Welcome — staggered entrance, glass card, preview chips */}

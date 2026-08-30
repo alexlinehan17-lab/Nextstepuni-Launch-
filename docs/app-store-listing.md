@@ -47,8 +47,8 @@ _Draft for the NextStepUni iOS submission. Fill these into App Store Connect onc
 ## Keywords (≤100 chars total, comma-separated, no spaces after commas)
 `leaving cert,study,revision,exam,LC,study skills,study planner,exams,grinds,maths,irish,exam prep`
 
-## What's New (version 1.0)
-> First release of NextStepUni — science-backed, examiner-grounded study for the Leaving Cert. We'd love your feedback at nextstepuniinfo@gmail.com.
+## What's New (version 1.0.2)
+> A polished mobile sign-in experience, cleaner avatar selection, smoother onboarding, and reliability improvements that keep setup progress safe.
 
 ## Age rating questionnaire — recommended answers
 - Violence / sexual content / profanity / drugs etc.: **None**
