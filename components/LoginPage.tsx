@@ -1507,10 +1507,21 @@ const LoginPage: React.FC<LoginPageProps> = ({ handleLoginSuccess }) => {
                   <MotionDiv key="step3" custom={stepDirection} variants={slideVariants} initial="enter" animate="center" exit="exit" transition={slideTransition}>
                     <h2 className="mb-1 text-3xl font-semibold tracking-tight md:text-2xl" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>Choose your avatar</h2>
                     <p className="text-sm mb-6" style={{ color: '#7a7068' }}>Pick one that feels like you. You can change it later.</p>
-                    <div className="grid grid-cols-4 gap-3 mb-6">
+                    <div className="mb-6 grid grid-cols-4 gap-3">
                       {AVATAR_SEEDS.map(seed => (
-                        <button key={seed} type="button" onClick={() => setAvatar(seed)} className={`rounded-xl aspect-square p-1 transition-all ${selectedAvatar === seed ? 'ring-2 ring-offset-2 bg-[#FDEEDF]' : 'hover:ring-1 hover:ring-zinc-300 bg-white'}`} style={selectedAvatar === seed ? { borderColor: '#F26B1F', border: '2px solid #F26B1F' } : { border: '2px solid #d0cdc8' }}>
-                          <Avatar seed={seed} alt={seed} className="w-full h-full rounded-lg" />
+                        <button
+                          key={seed}
+                          type="button"
+                          aria-pressed={selectedAvatar === seed}
+                          aria-label={`Choose ${seed} avatar`}
+                          onClick={() => setAvatar(seed)}
+                          className={`aspect-square overflow-hidden rounded-2xl border-2 bg-white transition-[border-color,box-shadow,transform] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--focus-ring)] active:scale-[0.97] ${
+                            selectedAvatar === seed
+                              ? 'border-[#F26B1F] shadow-[0_0_0_3px_rgba(242,107,31,0.22)]'
+                              : 'border-[#D0CDC8] hover:border-[#9E9186]'
+                          }`}
+                        >
+                          <Avatar seed={seed} alt="" className="block h-full w-full object-cover" />
                         </button>
                       ))}
                     </div>
