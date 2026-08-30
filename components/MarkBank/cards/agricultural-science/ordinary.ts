@@ -1117,6 +1117,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Rhizobium", marks: 2, contextNote: "The scheme ticks Rhizobium. The tick is a Wingdings glyph the text extraction drops, so this was confirmed against the marking-scheme PDF (p.14), where the tick sits on the Rhizobium row." },
     ],
+    questionFigure: {
+          "candId": "agricultural-science-2023-OL-paper-q8bi-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-OL-paper-q8bi-art.png",
+          "srcHash": "f6e37b2a5c025e0268a9de1e365a8399",
+          "alt": "The table or diagram printed with 2023 OL Question 8(b)(i), as the State Examinations Commission set it. It reads: Bacteria, Rhizobium, E. coli, Pseudomonas.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",

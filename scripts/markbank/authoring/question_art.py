@@ -64,6 +64,25 @@ REF = re.compile(r'^(\d{4})\s+(HL|OL)\s+(?:(?:Paper|Section)\s*\w+\s+)?'
                  r'Q(\d{1,2})'
                  r'(?:\(([a-hj-z])\))?(?:\(([ivxlc]+)\))?', re.I)
 MARKER = re.compile(r'^\(([a-z]{1,4})\)')
+# A card whose choices are printed in its OWN words needs no crop, and asking
+# for one gets a wrong answer: 2025 OL Q2 lists its true/false statements in
+# its text and the cropper handed it a soil-temperature bar chart belonging to
+# another question. Mirrors attach-question-figures.py.
+OPTIONS_INLINE = re.compile(r':\s*[^:]{3,}?\s+/\s+[^:]{3,}|true or false'
+                            r'|\btrue\b.*\bfalse\b', re.I)
+
+
+def carries_its_own_text(card):
+    """Is the thing the card points at already ON the card, as its stem?
+
+    Business's Applied Business Question says "Explain the term co-operative
+    as mentioned in the text above", and the text above is the card's own
+    stem: "Or-Real Irish Butter was launched in October 2021 ... a
+    farmer-owned co-operative." Those cards are answerable as they stand, and
+    cropping for them got the wrong section's page entirely.
+    """
+    stem = ' '.join((card.get('stem') or '').split())
+    return len(stem) >= 150
 
 
 def worklist(subject):
@@ -75,7 +94,9 @@ def worklist(subject):
             continue
         text = ' '.join(f"{card.get('questionText') or ''} "
                         f"{card.get('stem') or ''}".split())
-        if not POINTS_AT.search(text):
+        if not POINTS_AT.search(text) or OPTIONS_INLINE.search(text):
+            continue
+        if carries_its_own_text(card):
             continue
         m = REF.match(card.get('questionRef') or '')
         if not m:
@@ -173,6 +194,64 @@ def pages_for(P, q):
     return out
 
 
+# A card that reads FROM A PASSAGE. Physics sets "Read the following passage
+# and answer the questions below", Business the Applied Business Question's
+# text. The thing it needs is prose, not artwork, so figure_bands never sees
+# it: the crop is the TEXT REGION between the question's head and its first
+# part.
+READS_PASSAGE = re.compile(
+    r'\b(?:read the following|the following passage|the passage above|'
+    r'the text above|the information above|read the information|'
+    r'with reference to the text|from the text above|'
+    r'the article above|the extract above)\b', re.I)
+
+
+def crop_passage(subject, year, level, q, letter, roman, write=False):
+    """The question's prose stimulus: its head down to its first part."""
+    P = PP.Paper(subject, year, level)
+    for path, n, span_top, span_bot in pages_for(P, q):
+        with pymupdf.open(path) as doc:
+            page = doc[n]
+            rows = [r for r in G.text_lines(page)
+                    if span_top - 2 <= r[0][1] <= span_bot + 2]
+            if not rows:
+                continue
+            first_part = None
+            for (x0, y0, x1, y1), text in rows:
+                if MARKER.match(text.strip()) and x0 < page.rect.width * 0.35:
+                    first_part = y0 if first_part is None else min(first_part, y0)
+            body = [r for r in rows
+                    if first_part is None or r[0][3] <= first_part - 2]
+            # Prose, not a heading and not a stray line. A passage runs to
+            # several lines of real sentences; anything shorter is the ask
+            # itself and the card already carries that.
+            words = sum(len(t.split()) for _, t in body)
+            if len(body) < 4 or words < 40:
+                continue
+            x0 = min(r[0][0] for r in body)
+            y0 = min(r[0][1] for r in body)
+            x1 = max(r[0][2] for r in body)
+            y1 = max(r[0][3] for r in body)
+            rect = pymupdf.Rect(max(0.0, x0 - PAD), max(0.0, y0 - PAD),
+                                min(page.rect.width, x1 + PAD),
+                                min(page.rect.height, y1 + PAD))
+            if (rect.width * rect.height
+                    > 0.75 * page.rect.width * page.rect.height):
+                continue
+            part = (f'q{q}' + (f'{letter}' if letter else '')
+                    + (f'{roman}' if roman else ''))
+            name = f'{subject}-{year}-{level.upper()}-paper-{part}-passage'
+            if write:
+                d = os.path.join(ROOT, 'exam-papers', subject, 'figures',
+                                 f'{year}-{level}')
+                os.makedirs(d, exist_ok=True)
+                page.get_pixmap(clip=rect, dpi=DPI).save(
+                    os.path.join(d, f'{name}.png'))
+            opening = ' '.join(' '.join(t for _, t in body[:2]).split())[:90]
+            return name, rect, [opening]
+    return None
+
+
 def crop_part(subject, year, level, q, letter, roman, write=False):
     """The one crop this part needs, or None."""
     P = PP.Paper(subject, year, level)
@@ -184,8 +263,17 @@ def crop_part(subject, year, level, q, letter, roman, write=False):
                 continue
             top, bottom = band
             runs = G.mono_runs(page)
-            bands = [b for b in G.figure_bands(page, runs)
-                     if b[1] >= top - 6 and b[3] <= bottom + 6]
+            found = G.figure_bands(page, runs)
+            bands = [b for b in found if b[1] >= top - 6 and b[3] <= bottom + 6]
+            if not bands:
+                # A part can be one ROW of a table the whole question shares:
+                # Agricultural Science 2021 OL Q7 prints one table and (a) to
+                # (e) are its rows, so nothing fits INSIDE the part's slice
+                # and the crop has to be the table that CONTAINS it. That is
+                # the question's stimulus, which every part under it may show.
+                bands = [b for b in found
+                         if b[1] <= top + 6 and b[3] >= bottom - 6
+                         and b[3] - b[1] < 0.75 * page.rect.height]
             if not bands:
                 continue
             # Several bands are one picture only if what lies BETWEEN them is
@@ -266,11 +354,18 @@ def main():
     ap.add_argument('--catalogue', action='store_true')
     args = ap.parse_args()
 
+    cards = {c['id']: c for c in json.load(open(os.path.join(
+        ROOT, 'scripts', 'markbank', 'authored', f'{args.subject}.json'),
+        encoding='utf-8'))}
     made, missed, catalogue = [], [], []
     for year, level, q, letter, roman, cid in worklist(args.subject):
+        card = cards.get(cid, {})
+        text = ' '.join(f"{card.get('questionText') or ''} "
+                        f"{card.get('stem') or ''}".split())
+        cut = crop_passage if READS_PASSAGE.search(text) else crop_part
         try:
-            got = crop_part(args.subject, year, level, q, letter, roman,
-                            write=args.write or args.catalogue)
+            got = cut(args.subject, year, level, q, letter, roman,
+                      write=args.write or args.catalogue)
         except Exception as exc:                             # noqa: BLE001
             print(f'{cid}: {type(exc).__name__}: {exc}', file=sys.stderr)
             got = None

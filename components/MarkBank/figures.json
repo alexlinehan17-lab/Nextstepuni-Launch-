@@ -36483,5 +36483,49 @@
   "year": 2025,
   "level": "higher",
   "attribution": "SEC Leaving Certificate Home Economics 2025 Higher Level — © State Examinations Commission"
+ },
+ "agricultural-science-2023-OL-paper-q8bi-art": {
+  "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-OL-paper-q8bi-art.png",
+  "md5": "f6e37b2a5c025e0268a9de1e365a8399",
+  "alt": "The table or diagram printed with 2023 OL Question 8(b)(i), as the State Examinations Commission set it. It reads: Bacteria, Rhizobium, E. coli, Pseudomonas.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q8(b)(i)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Agricultural Science 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "agricultural-science-2025-HL-paper-q17ci-art": {
+  "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-q17ci-art.png",
+  "md5": "90ec45211fd17bed43e81d5c9d186404",
+  "alt": "The table or diagram printed with 2025 HL Question 17(c)(i), as the State Examinations Commission set it. It reads: Kale variety, Regal, 14.7, 14.3, 13.9, 14.2, 14.8, Caledonia, 16.0, 15.5, 15.0, 16.5, 17.5.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Q17(c)(i)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission"
+ },
+ "physics-2023-OL-paper-q13v-passage": {
+  "src": "/exam-figures/physics/markbank/physics-2023-OL-paper-q13v-passage.png",
+  "md5": "cc1d7af6033aa9658a647aeec38bdc1e",
+  "alt": "The table or diagram printed with 2023 OL Question 13(v), as the State Examinations Commission set it. It reads: 13. Read the following passage and answer the questions below..",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q13(v)",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "physics-2024-OL-paper-q13a-passage": {
+  "src": "/exam-figures/physics/markbank/physics-2024-OL-paper-q13a-passage.png",
+  "md5": "2570df25543b43a71cc70ff8c791810b",
+  "alt": "The table or diagram printed with 2024 OL Question 13(a), as the State Examinations Commission set it. It reads: 13. Read the following passage and answer the questions below..",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q13(a)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level — © State Examinations Commission"
  }
 }

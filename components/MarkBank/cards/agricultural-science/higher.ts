@@ -6250,6 +6250,14 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "Correct scale both axes", marks: 2 },
     { id: "r-5", kind: "point", verbatim: "6 points plotted for Caledonia", marks: 2, contextNote: "Caledonia only - the question does not ask for Regal." },
     ],
+    questionFigure: {
+          "candId": "agricultural-science-2025-HL-paper-q17ci-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-HL-paper-q17ci-art.png",
+          "srcHash": "90ec45211fd17bed43e81d5c9d186404",
+          "alt": "The table or diagram printed with 2025 HL Question 17(c)(i), as the State Examinations Commission set it. It reads: Kale variety, Regal, 14.7, 14.3, 13.9, 14.2, 14.8, Caledonia, 16.0, 15.5, 15.0, 16.5, 17.5.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",

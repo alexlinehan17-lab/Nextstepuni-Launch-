@@ -72,6 +72,14 @@ POINTS_AT = re.compile(
 # another form.
 DRAWS_IT = re.compile(r'\b(draw|sketch|copy and complete|in your answerbook|'
                       r'complete the (?:table|diagram)|plot)\b', re.I)
+# ... unless it draws FROM something the paper gives it. "Using the data given
+# above, plot a graph showing the DM yield" makes the student draw, but the
+# data it draws from is printed and the card is useless without it.
+FROM_GIVEN = re.compile(
+    r'\b(?:using|from|with)\s+(?:the|your|all of the)\s+'
+    r'(?:data|results?|information|figures|values|graph|table)\b'
+    r'|\b(?:data|results?|information)\s+(?:given|shown|provided|in the table)\b',
+    re.I)
 # The options are printed in the question's OWN words: "Identify the correct
 # explanation for marbling by placing a tick in the correct box: Distribution
 # of fat within the muscle / Fat around the outside of the muscle". A tick-box
@@ -104,6 +112,19 @@ def question_of(ref):
         if nxt == out:
             return out
         out = nxt
+
+
+def carries_its_own_text(card):
+    """Is the thing the card points at already ON the card, as its stem?
+
+    Business's Applied Business Question says "Explain the term co-operative
+    as mentioned in the text above", and the text above is the card's own
+    stem: "Or-Real Irish Butter was launched in October 2021 ... a
+    farmer-owned co-operative." Those cards are answerable as they stand, and
+    cropping for them got the wrong section's page entirely.
+    """
+    stem = ' '.join((card.get('stem') or '').split())
+    return len(stem) >= 150
 
 
 def card_text(card):
@@ -162,7 +183,9 @@ def main():
             text = card_text(card)
             if not POINTS_AT.search(text):
                 continue
-            if DRAWS_IT.search(text) or OPTIONS_INLINE.search(text):
+            if OPTIONS_INLINE.search(text) or carries_its_own_text(card):
+                continue
+            if DRAWS_IT.search(text) and not FROM_GIVEN.search(text):
                 continue
             if card['id'] in for_card:
                 attached[subject] += 1

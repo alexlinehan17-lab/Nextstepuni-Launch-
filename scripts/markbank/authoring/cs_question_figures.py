@@ -622,7 +622,17 @@ def figure_bands(page, mono):
     a shaded box, and that box is a drawing rectangle -- without excluding it
     the same program ships twice, once as code and once as a figure.
     """
-    rects = sorted(artwork(page), key=lambda r: r[1])
+    # Rule rows seed a band as well as rects do. artwork() keeps only strokes
+    # over 2pt, so a table drawn ENTIRELY in hairlines -- no shading, no
+    # boxes -- produced no band at all and its question could not be cropped.
+    # Agricultural Science 2021 HL Q6(a)(i) prints its options that way.
+    # Nothing is loosened by this: is_a_figure still has to find words in the
+    # table, so a blank ruled answer box is rejected exactly as before.
+    seeds = list(artwork(page))
+    for r in rule_rows(page):
+        if r[2] - r[0] >= 40.0:
+            seeds.append((r[0], r[1], r[2], r[3]))
+    rects = sorted(seeds, key=lambda r: r[1])
     if not rects:
         return []
     images = []

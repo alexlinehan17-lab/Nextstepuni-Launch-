@@ -6982,6 +6982,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "He2 3", marks: 3 },
     ],
+    questionFigure: {
+          "candId": "physics-2023-OL-paper-q13v-passage",
+          "src": "/exam-figures/physics/markbank/physics-2023-OL-paper-q13v-passage.png",
+          "srcHash": "cc1d7af6033aa9658a647aeec38bdc1e",
+          "alt": "The table or diagram printed with 2023 OL Question 13(v), as the State Examinations Commission set it. It reads: 13. Read the following passage and answer the questions below..",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Physics 2023 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7479,6 +7487,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "322 km", marks: 7 },
     ],
+    questionFigure: {
+          "candId": "physics-2024-OL-paper-q13a-passage",
+          "src": "/exam-figures/physics/markbank/physics-2024-OL-paper-q13a-passage.png",
+          "srcHash": "2570df25543b43a71cc70ff8c791810b",
+          "alt": "The table or diagram printed with 2024 OL Question 13(a), as the State Examinations Commission set it. It reads: 13. Read the following passage and answer the questions below..",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Physics 2024 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",

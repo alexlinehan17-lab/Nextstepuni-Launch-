@@ -7099,7 +7099,8 @@
     "contextNote": "The scheme ticks Rhizobium. The tick is a Wingdings glyph the text extraction drops, so this was confirmed against the marking-scheme PDF (p.14), where the tick sits on the Rhizobium row."
    }
   ],
-  "notes": "Route (b) of Q8 is 2 + 2(4) = 10. The three options are printed as text on the paper, so they are reproduced in the stem and no figure is needed."
+  "notes": "Route (b) of Q8 is 2 + 2(4) = 10. The three options are printed as text on the paper, so they are reproduced in the stem and no figure is needed.",
+  "questionFigureKey": "agricultural-science-2023-OL-paper-q8bi-art"
  },
  {
   "id": "agsci-2023-ol-q8b-ii",
@@ -28216,7 +28217,8 @@
     "contextNote": "Caledonia only - the question does not ask for Regal."
    }
   ],
-  "notes": "10 marks - a fifth of the question - for drawing one graph, and every mark is a mechanical check a student can self-mark. '5x2' is five items at 2 marks each and the scheme prints exactly five, so the tariff is fixed. The kale table is text and is transcribed into the stem; the student draws the graph, so no figure is needed. The scheme's line 'Graph could be plotted as trend graph, histogram, bar chart' is examiner guidance attached to the 'appropriate graph' mark, not a sixth marking point, so it is carried as a contextNote. Rows are ordered so the choice of graph comes first; the scheme lists it fourth."
+  "notes": "10 marks - a fifth of the question - for drawing one graph, and every mark is a mechanical check a student can self-mark. '5x2' is five items at 2 marks each and the scheme prints exactly five, so the tariff is fixed. The kale table is text and is transcribed into the stem; the student draws the graph, so no figure is needed. The scheme's line 'Graph could be plotted as trend graph, histogram, bar chart' is examiner guidance attached to the 'appropriate graph' mark, not a sixth marking point, so it is carried as a contextNote. Rows are ordered so the choice of graph comes first; the scheme lists it fourth.",
+  "questionFigureKey": "agricultural-science-2025-HL-paper-q17ci-art"
  },
  {
   "id": "agsci-2025-hl-q17cii",

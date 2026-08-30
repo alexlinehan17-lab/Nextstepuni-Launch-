@@ -1,7 +1,7 @@
 {
  "agricultural-science": {
   "cards": 869,
-  "contentHash": "74230c2ead6d1fe8",
+  "contentHash": "773765a7ef6395cc",
   "coveragePct": 93.6,
   "covered": 888,
   "excluded": 3,
@@ -151,7 +151,7 @@
  },
  "physics": {
   "cards": 1133,
-  "contentHash": "25340a89783a2c6e",
+  "contentHash": "fcc33a47c1735893",
   "coveragePct": 95.2,
   "covered": 1119,
   "excluded": 46,
