@@ -47,12 +47,12 @@
  "chemistry": {
   "cards": 846,
   "contentHash": "01e93fd543912913",
-  "coveragePct": 89.9,
-  "covered": 1028,
+  "coveragePct": 89.8,
+  "covered": 1088,
   "excluded": 0,
-  "leaves": 1143,
-  "open": 115,
-  "orphans": 5,
+  "leaves": 1211,
+  "open": 123,
+  "orphans": 0,
   "papers": {
    "count": 10,
    "hash": "bf2ca1ce05646d41"
