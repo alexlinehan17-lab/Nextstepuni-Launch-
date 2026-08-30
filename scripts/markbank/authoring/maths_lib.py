@@ -147,7 +147,17 @@ class Author:
         paper, q, letter, roman = key[0], key[1], key[2], key[3]
         tail = f'Q{q}'
         if letter:
-            tail += f'({letter})'
+            # One scale, several LETTERS: the scheme heads a unit "(a), (b)"
+            # and marks both together, the letter twin of the roman span
+            # below. 2022 OL Paper 1 Q1 does this; citing only (a) left (b)
+            # reading as uncovered when the card already answers it.
+            lspan = self.S.letter_spans.get(tuple(key[:4])) \
+                if hasattr(self.S, 'letter_spans') else None
+            if lspan and len(lspan) > 1 and not roman:
+                tail += f'({lspan[0]})–({lspan[-1]})' if len(lspan) > 2 \
+                    else f'({lspan[0]}), ({lspan[1]})'
+            else:
+                tail += f'({letter})'
         if roman:
             # One scale, several parts: the scheme heads a unit "(a) (i) & (ii)"
             # and marks both together, so the card answers both and must say so.
