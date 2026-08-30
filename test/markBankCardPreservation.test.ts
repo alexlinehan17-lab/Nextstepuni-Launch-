@@ -29,6 +29,8 @@ import { CARDS as ECON_HIGHER } from '../components/MarkBank/cards/economics/hig
 import { CARDS as ECON_ORDINARY } from '../components/MarkBank/cards/economics/ordinary';
 import { CARDS as MATHS_HIGHER } from '../components/MarkBank/cards/maths/higher';
 import { CARDS as MATHS_ORDINARY } from '../components/MarkBank/cards/maths/ordinary';
+import { CARDS as CS_HIGHER } from '../components/MarkBank/cards/computer-science/higher';
+import { CARDS as CS_ORDINARY } from '../components/MarkBank/cards/computer-science/ordinary';
 import { CARDS as CONS_HIGHER } from '../components/MarkBank/cards/construction-studies/higher';
 import { CARDS as CONS_ORDINARY } from '../components/MarkBank/cards/construction-studies/ordinary';
 
@@ -359,6 +361,11 @@ const decks = [
    * refused. It cites "Q8(c), (d)" now. 939/989 -> 941/989, open 50 -> 48. */
   ['maths:higher', MATHS_HIGHER, 398, '39e8bdf9425336b1d19f5827df8fb9b811f117781b610adf6456ed9213583d25'],
   ['maths:ordinary', MATHS_ORDINARY, 435, '1739cbe00b51bbe9aed6df6e1226780777f965ec94c9492743cf2ec8df35990e'],
+  /* 2026-08-30: Computer Science opened. 259 cards, 293/484 asks covered,
+   * 0 orphans, card lint clean. A new subject is pinned from its first build;
+   * there is no earlier count to compare it against. */
+  ['computer-science:higher', CS_HIGHER, 164, '9a157315f10b7aa94fcf37ea195e8814dd082f0f1984ec89a8cf3ba651431691'],
+  ['computer-science:ordinary', CS_ORDINARY, 95, '58b307de23ce3b4054853d002f5dc641fcb54868e495f269b7f1aab3d9db9e72'],
   ['construction-studies:higher', CONS_HIGHER, 255, 'b74a39fd589f1082d6378190aee778d528eff0968d7af0ee9144525f2e40d57b'],
   ['construction-studies:ordinary', CONS_ORDINARY, 250, 'f56985e32cc1f02a2e2f7a7eb300a44646b75cf3604a12b5a478bde2a520d2da'],
 ] as const;
@@ -375,6 +382,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7450);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7709);
   });
 });

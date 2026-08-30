@@ -97,7 +97,7 @@
  },
  {
   "id": "cs-2021-hl-q13-b-v",
-  "topicId": "cs-2-2",
+  "topicId": "cs-2-3",
   "conceptId": "after-code-has-been-changed-important",
   "level": "higher",
   "year": 2021,
@@ -168,6 +168,252 @@
   "stem": "16 if ((not test_eircode[1].isdigit()) or (not test_eircode[2].isdigit())): If we let P represent the possible boolean values for test_eircode[1].isdigit() and Q represent the possible boolean values for test_eircode[2].isdigit(), complete the truth table below for the expression, not P or not Q. P Q not P not Q not P or not Q False False False True True False True True P Q P and Q not (P and Q) False False False True True False True True This question continues on the next page. 16 if ((not test_eircode[1].isdigit()) or (not test_eircode[2].isdigit())):"
  },
  {
+  "id": "cs-2021-hl-q14-a-i",
+  "topicId": "cs-1-1",
+  "conceptId": "why-3-losing-position",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2021 HL Q14(a)(i)",
+  "questionText": "Explain why 3 is a losing position.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "3 is a losing position because the only options are to take 1 or 2 matchsticks. Both",
+    "marks": 2
+   }
+  ],
+  "stem": "A winning position (W) is a position from which a player cannot lose if she/he makes all the optimal moves until the end of the game. For example, 2 is a winning position because if the player whose turn it is, makes the optimal move (i.e. removes the two remaining matchsticks) they will win that game. A losing position (L) is a position from which a player cannot win (assuming that their opponent makes all the optimal moves until the game is over). The win/loss table below depicts winning and losing positions for the scenarios where there are 0, 1, 2, 3 or 4 matchsticks left on the board. No. of matchsticks remaining 0 1 2 3 4 Position (W or L) L W W L W This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 Position (W or L) L W W L W Calculations This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 7 8 9 Position (W or L) L Calculations This question continues on the next page."
+ },
+ {
+  "id": "cs-2021-hl-q14-a-ii",
+  "topicId": "cs-1-1",
+  "conceptId": "why-4-winning-position",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2021 HL Q14(a)(ii)",
+  "questionText": "Explain why 4 is a winning position.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "4 is a winning position because player can take 1 matchstick to leave their opponent",
+    "marks": 1
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "with 3, which is a losing position (as per part (i) of the question).",
+    "marks": 1
+   }
+  ],
+  "stem": "A winning position (W) is a position from which a player cannot lose if she/he makes all the optimal moves until the end of the game. For example, 2 is a winning position because if the player whose turn it is, makes the optimal move (i.e. removes the two remaining matchsticks) they will win that game. A losing position (L) is a position from which a player cannot win (assuming that their opponent makes all the optimal moves until the game is over). The win/loss table below depicts winning and losing positions for the scenarios where there are 0, 1, 2, 3 or 4 matchsticks left on the board. No. of matchsticks remaining 0 1 2 3 4 Position (W or L) L W W L W This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 Position (W or L) L W W L W Calculations This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 7 8 9 Position (W or L) L Calculations This question continues on the next page."
+ },
+ {
+  "id": "cs-2021-hl-q14-a-iii",
+  "topicId": "cs-1-1",
+  "conceptId": "calculate-whether-5-6-winning-or",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2021 HL Q14(a)(iii)",
+  "questionText": "Calculate whether 5 and 6 are winning or losing positions and place your answers in the table below.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "5 is winning positon as a move to take two matchsticks leaves the next player in a losing",
+    "marks": 2
+   }
+  ],
+  "stem": "A winning position (W) is a position from which a player cannot lose if she/he makes all the optimal moves until the end of the game. For example, 2 is a winning position because if the player whose turn it is, makes the optimal move (i.e. removes the two remaining matchsticks) they will win that game. A losing position (L) is a position from which a player cannot win (assuming that their opponent makes all the optimal moves until the game is over). The win/loss table below depicts winning and losing positions for the scenarios where there are 0, 1, 2, 3 or 4 matchsticks left on the board. No. of matchsticks remaining 0 1 2 3 4 Position (W or L) L W W L W This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 Position (W or L) L W W L W Calculations This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 7 8 9 Position (W or L) L Calculations This question continues on the next page."
+ },
+ {
+  "id": "cs-2021-hl-q14-a-iv",
+  "topicId": "cs-1-1",
+  "conceptId": "assume-you-about-start-new-game",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2021 HL Q14(a)(iv)",
+  "questionText": "Assume you are about to start a new game with 21 matchsticks. If your opponent offered you the choice of going first or second, which would you choose? Justify your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Decision: I would ask my opponent to go first. (I would go second.)",
+    "marks": 2
+   }
+  ],
+  "stem": "A winning position (W) is a position from which a player cannot lose if she/he makes all the optimal moves until the end of the game. For example, 2 is a winning position because if the player whose turn it is, makes the optimal move (i.e. removes the two remaining matchsticks) they will win that game. A losing position (L) is a position from which a player cannot win (assuming that their opponent makes all the optimal moves until the game is over). The win/loss table below depicts winning and losing positions for the scenarios where there are 0, 1, 2, 3 or 4 matchsticks left on the board. No. of matchsticks remaining 0 1 2 3 4 Position (W or L) L W W L W This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 Position (W or L) L W W L W Calculations This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 7 8 9 Position (W or L) L Calculations This question continues on the next page."
+ },
+ {
+  "id": "cs-2021-hl-q14-a-v",
+  "topicId": "cs-1-1",
+  "conceptId": "strategy-would-you-recommend-game-started",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2021 HL Q14(a)(v)",
+  "questionText": "What strategy would you recommend in a game that started off with 20 matchsticks? Justify your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "My strategy would be to leave my opponent with a multiple of 3 matchsticks on every",
+    "marks": 2
+   }
+  ],
+  "stem": "A winning position (W) is a position from which a player cannot lose if she/he makes all the optimal moves until the end of the game. For example, 2 is a winning position because if the player whose turn it is, makes the optimal move (i.e. removes the two remaining matchsticks) they will win that game. A losing position (L) is a position from which a player cannot win (assuming that their opponent makes all the optimal moves until the game is over). The win/loss table below depicts winning and losing positions for the scenarios where there are 0, 1, 2, 3 or 4 matchsticks left on the board. No. of matchsticks remaining 0 1 2 3 4 Position (W or L) L W W L W This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 Position (W or L) L W W L W Calculations This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 7 8 9 Position (W or L) L Calculations This question continues on the next page."
+ },
+ {
+  "id": "cs-2021-hl-q14-a-vi",
+  "topicId": "cs-1-1",
+  "conceptId": "assume-rules-game-amended-so-players",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2021 HL Q14(a)(vi)",
+  "questionText": "Assume the rules of the game are amended so that players can remove 3 matches (as well as 1 or 2). Calculate whether or not each position in a game with 9 matchsticks is a winning or losing position and place your answers in the table below.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "No. of matchsticks remaining 0 1 2 3 4 5 6 7 8 9",
+    "marks": 2
+   }
+  ],
+  "stem": "A winning position (W) is a position from which a player cannot lose if she/he makes all the optimal moves until the end of the game. For example, 2 is a winning position because if the player whose turn it is, makes the optimal move (i.e. removes the two remaining matchsticks) they will win that game. A losing position (L) is a position from which a player cannot win (assuming that their opponent makes all the optimal moves until the game is over). The win/loss table below depicts winning and losing positions for the scenarios where there are 0, 1, 2, 3 or 4 matchsticks left on the board. No. of matchsticks remaining 0 1 2 3 4 Position (W or L) L W W L W This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 Position (W or L) L W W L W Calculations This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 7 8 9 Position (W or L) L Calculations This question continues on the next page."
+ },
+ {
+  "id": "cs-2021-hl-q14-b-ii",
+  "topicId": "cs-1-1",
+  "conceptId": "based-completed-diagram-player-s-best",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2021 HL Q14(b)(ii)",
+  "questionText": "Based on the completed diagram which is player A’s best move? Why?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "AY1 is the best move for player A as it is the only move that leads to certain victory for",
+    "marks": 2
+   }
+  ],
+  "stem": "For example, in a game where pile X contains 10 matchsticks and pile Y contains 9 matchsticks, a player may decide to remove 9 matchsticks from pile Y on their go. The player who removes the last matchstick(s) wins the game. This question continues on the next page. This question continues on the next page."
+ },
+ {
+  "id": "cs-2021-hl-q14-b-iii",
+  "topicId": "cs-1-1",
+  "conceptId": "describe-winning-move-2-3",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2021 HL Q14(b)(iii)",
+  "questionText": "Describe a winning move from state (2, 3).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A winning move for player A from state (2, 3) would be AY1.",
+    "marks": 2
+   }
+  ],
+  "stem": "For example, in a game where pile X contains 10 matchsticks and pile Y contains 9 matchsticks, a player may decide to remove 9 matchsticks from pile Y on their go. The player who removes the last matchstick(s) wins the game. This question continues on the next page. This question continues on the next page."
+ },
+ {
+  "id": "cs-2021-hl-q14-b-iv",
+  "topicId": "cs-1-1",
+  "conceptId": "hence-or-otherwise-describe-winning-strategy",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2021 HL Q14(b)(iv)",
+  "questionText": "Hence, or otherwise, describe a winning strategy from state ሺ𝑛, 𝑚ሻ, where 𝑛്𝑚.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A winning strategy from state (𝒏𝒏, 𝒎𝒎) where 𝒏𝒏≠𝒎𝒎 would be to even the piles. Leave (n,",
+    "marks": 2
+   }
+  ],
+  "stem": "For example, in a game where pile X contains 10 matchsticks and pile Y contains 9 matchsticks, a player may decide to remove 9 matchsticks from pile Y on their go. The player who removes the last matchstick(s) wins the game. This question continues on the next page. This question continues on the next page."
+ },
+ {
+  "id": "cs-2021-hl-q14-b-v",
+  "topicId": "cs-1-1",
+  "conceptId": "why-winning-position-game-where-3",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2021 HL Q14(b)(v)",
+  "questionText": "Explain why ሺ𝑛, 𝑛, 𝑛ሻ is a winning position in a game where 3 piles are used?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Since (n, n) is a winning position a winning strategy would be to remove one of the piles.",
+    "marks": 2
+   }
+  ],
+  "stem": "For example, in a game where pile X contains 10 matchsticks and pile Y contains 9 matchsticks, a player may decide to remove 9 matchsticks from pile Y on their go. The player who removes the last matchstick(s) wins the game. This question continues on the next page. This question continues on the next page."
+ },
+ {
   "id": "cs-2021-hl-q14-c",
   "topicId": "cs-2-1",
   "conceptId": "use-any-one-decomposition-abstraction-or",
@@ -189,6 +435,30 @@
     "marks": 5
    }
   ]
+ },
+ {
+  "id": "cs-2021-hl-q15-a-i",
+  "topicId": "cs-2-3",
+  "conceptId": "terms-hardware-software-provide-two-examples",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2021 HL Q15(a)(i)",
+  "questionText": "Explain the terms hardware and software. Provide two examples of each.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Hardware is the physical components of a computer system – computer components.",
+    "marks": 6
+   }
+  ],
+  "stem": "Embedded systems are a combination of hardware and software designed to perform a specific function. They are called ‘embedded’ because they are often used as part of a larger system. Many embedded systems use sensors to receive analogue or digital inputs. The input data which is often supplied in real time is then processed resulting in some sort of output. While not every embedded system will have a user interface, some are designed to meet the principles of universal design. This question continues on the next page. This question continues on the next page."
  },
  {
   "id": "cs-2021-hl-q15-a-ii",
@@ -359,6 +629,198 @@
   "stem": "Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Acknowledgements Images Image on page 8: www.iemoji.com/view/emoji/56/smileys‐people/thumbs‐up Image on page 18: www.dreamstime.com/photos‐images/pile‐matches.html Image on page 24: history.aip.org/phn/11506034.html Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third‐party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Sections A & B Saturday 22 May Morning 9:30 – 11:00 2021L219A2EL 2021. M110C Coimisiún na Scrúduithe Stáit State Examinations Commission Computer Science Section C Higher Level Saturday 22 May Morning 11:30 – 12:30 50 marks Instructions There is one section in this paper. Section C Programming One question 50 marks Calculators may be used during this section of the examination. The Formulae and Tables booklet cannot be used for this section of the examination. The superintendent will give you a copy of the Python Reference Guide. Ensure that you save your work regularly and when you complete each question part. Save your files using the naming structure described at the beginning of each question part. If you are unable to get some code to work correctly, you can comment out the code so that you can proceed. The code that has been commented out will be reviewed by the examiner. Rough work pages are provided at the end of this booklet. Please note that this booklet is not to be handed up and will not be reviewed by an examiner. At the end of the examination it is your responsibility to ensure that you have saved all of your files onto your external media. You will be provided with a brown envelope for your external media. Write your examination number on this envelope and place your external media into it before sealing. Place this envelope in the pouch at the front of the red envelope that contains your examination booklet from Section A and B. Do not hand this paper up Section C Programming 50 marks"
  },
  {
+  "id": "cs-2021-hl-q2",
+  "topicId": "cs-2-3",
+  "conceptId": "why-data-stored-computers-binary-format",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2021 HL Q2",
+  "questionText": "(a) Explain why data is stored in computers in binary format. (i) How many unique pieces of information could be represented using four bits? (ii) What is the minimum number of bits required to represent eight unique pieces of information? (b) A single bit can be used to represent two pieces of information.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "The circuits in a computer's processor are made up of transistors. A transistor is a switch that is activated by the electronic signals it receives. Signals can be 0V or 5V. The digits 1 and 0 used in binary reflect the on and off states of a transistor.",
+    "marks": 5,
+    "accepts": [
+     "As there are only two possible states, binary is more reliable than any other number systems.",
+     "(i) 𝟐𝟐𝟒𝟒= 𝟏𝟏𝟏𝟏 unique pieces of information can be represented using four-bits."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "cs-2021-hl-q3",
+  "topicId": "cs-2-3",
+  "conceptId": "two-differences-between-ram-rom-b",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2021 HL Q3",
+  "questionText": "(a) State two differences between RAM and ROM. (b) Explain how increasing the amount of RAM on a computer might improve its performance.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "RAM can be written, whereas ROM is read-only.",
+    "marks": 5,
+    "accepts": [
+     "RAM chips can be read faster than ROM.",
+     "ROM is non-volatile storage (does not require a constant source of power to retain information stored on it) whereas RAM is volatile and requires a constant source of power to retain information.",
+     "Data/information in ROM is permanent whereas RAM is used to store temporary information.",
+     "CPU cannot access data that is stored in ROM directly – must be transferred to RAM first.",
+     "ROM is used primarily in the start-up process of a computer, whereas RAM is used in the normal operations of a computer after starting up and loading the operating system.",
+     "Capacity. RAM can store multiple gigabytes (GB) of data (typical range is 1-256GB per chip). ROM typically stores only several megabytes (MB) of data, typically 4-8MB per chip.",
+     "Physically RAM chips are bigger than ROM chips (of the same capacity).",
+     "The cost of RAM chips tends to be higher than ROM.",
+     "Or any similar relevant difference. Each correct response",
+     "More RAM means more applications can be loaded in RAM at the same time. This means the CPU spends less time loading RAM from secondary storage and/or paging/thrashing. This in turn means that the CPU can spend more time running user applications.",
+     "Better performance means applications run faster / quicker response times for user."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "cs-2021-hl-q5",
+  "topicId": "cs-2-2",
+  "conceptId": "using-inputs-7-3-8-n",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2021 HL Q5",
+  "questionText": "(a) Using inputs of 7, 3 and 8 for n, complete the trace table showing the execution of the algorithm. (b) What output does the algorithm display?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "n total count",
+    "marks": 5,
+    "accepts": [
+     "0 0 0",
+     "7 7 1",
+     "3 10 2",
+     "8 18 3",
+     "First correct column"
+    ]
+   }
+  ],
+  "stem": "The flowchart in Figure 1 is a representation of an algorithm. Figure 1"
+ },
+ {
+  "id": "cs-2021-hl-q7",
+  "topicId": "cs-2-3",
+  "conceptId": "differentiate-between-http-https-b-how",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2021 HL Q7",
+  "questionText": "(a) Differentiate between HTTP and HTTPS. (b) Explain how the TCP communication protocol provides reliable communication between computers.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "HTTP is unsecured while HTTPS is secured.",
+    "marks": 5,
+    "accepts": [
+     "HTTP sends data over port 80 while HTTPS uses port 443.",
+     "HTTP operates at application layer, while HTTPS operates at transport layer.",
+     "No SSL certificates are required for HTTP, with HTTPS it is required that you have an SSL certificate and it is signed by a CA.",
+     "TCP breaks messages into chunks called packets and then passes these chunks onto the IP",
+     "layer. At the receiving end the TCP software reassembles the packets into the correct",
+     "order (based on an assigned sequence number). Reliability is achieved by a system of",
+     "acknowledgments and timeouts. If an acknowledgement is not received within the",
+     "required timeout the TCP software resends individual packets or the entire message."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "cs-2021-hl-q10",
+  "topicId": "cs-2-3",
+  "conceptId": "two-tasks-would-be-undertaken-project",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2021 HL Q10",
+  "questionText": "(a) State two tasks that would be undertaken by a project manager in a software design process. (b) Some programming roles require the knowledge of low‐level programming. How does a low‐ level computer program differ from a high‐level computer program?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "To agree requirements with customer.",
+    "marks": 5,
+    "accepts": [
+     "To ensure system/project is delivered on time and within budget.",
+     "To oversee project schedule – planning - set key dates/milestones.",
+     "To resource project – staffing, equipment, finance etc.",
+     "To assign tasks related to design, implementation, testing etc.",
+     "To communicate with and motivate team and ongoing liaison with customer.",
+     "To monitor project progress.",
+     "Any relevant task. For each correctly stated task",
+     "High level languages such as Python and JavaScript use English like words e.g. while, if. Programs written in these languages are translated into machine code using a compiler or interpreter. High level languages are machine independent.",
+     "Low level languages are used to write code for a specific processor architecture. The instruction is constrained by a processor’s instruction set. Examples are assembly languages and machine code (code written only using 1’s and 0’s)."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "cs-2021-hl-q11",
+  "topicId": "cs-2-2",
+  "conceptId": "two-benefits-computer-modelling-b-how",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2021 HL Q11",
+  "questionText": "(a) State two benefits of computer modelling. (b) Explain how agent‐based modelling may have been used during the COVID‐19 pandemic to influence public health policy.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "To test the feasibility of some idea (i.e. testing ideas before committing to them. Refinements can be made more quickly, more safely and for less money e.g. is it worthwhile to vaccinate?",
+    "marks": 5,
+    "accepts": [
+     "To make predictions/demonstrate emergent behaviour (e.g. population growth, the spread of a virus, infection rates) so that decisions can be better informed (e.g. where to build hospitals, roads, schools or whether it is necessary to vaccinate against the spread of a virus).",
+     "To run simulations and be used as a basis for discussion and gaining a better understanding of a phenomena.",
+     "To enable solutions to problems that are difficult to solve analytically (e.g. because of scale or complexity).",
+     "Or similar. For each correctly stated benefit",
+     "Agent-based modelling (ABM) for COVID 19 could have behavioural rules corresponding to infection conditions and also include an individual profile for each agent, which defines its main social characteristics and health conditions used during its interactions.",
+     "ABMs can be used to predict outcomes for certain scenarios thereby allowing policy makers to make informed decisions such as those relating to social distancing, washing hands, setting lockdowns, easing restrictions, levels 1-5, crowd controls, indoor vs. outdoor activities, foreign travel etc."
+    ]
+   }
+  ]
+ },
+ {
   "id": "cs-2021-ol-q2",
   "topicId": "cs-2-3",
   "conceptId": "convert-binary-number-1101-decimal-number",
@@ -474,6 +936,30 @@
     "kind": "point",
     "verbatim": "Example Activities:",
     "marks": 6
+   }
+  ],
+  "stem": "Figure 4 This question continues on the next page. This question continues on the next page."
+ },
+ {
+  "id": "cs-2021-ol-q13-a-ii",
+  "topicId": "cs-2-3",
+  "conceptId": "irish-covid-tracker-app-developed-irish",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2021 OL Q13(a)(ii)",
+  "questionText": "The Irish COVID Tracker app was developed by an Irish company called NearForm. Name and describe two possible roles of people involved in the development of the app.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Software Developer, Project Manager, Team Leader, Product Manager/Owner, Graphic",
+    "marks": 10
    }
   ],
   "stem": "Figure 4 This question continues on the next page. This question continues on the next page."
@@ -737,6 +1223,38 @@
   "stem": "Figure 9 Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Acknowledgements Images Image on page 4: www.roboticsbusinessreview.com/wp‐content/uploads/2019/09/AdobeStock_271589151‐ 600x343.jpeg Image on page 5: en.wikipedia.org/wiki/Client%E2%80%93server_model Image on page 17: www.flickr.com/photos/ncreedplayer/4123522747/ Image on page 20: 3dwarehouse.sketchup.com/model/ae548048‐7188‐4956‐a327‐d97b7c2cd3e2/INTEL‐4004 Texts Article on page 10 : https://www.zdnet.com/article/contact‐tracing‐ireland‐launches‐its‐app‐following‐apple‐and‐ googles‐model/ Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third‐party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Ordinary Level Computer Science – Sections A & B Saturday 22 May Morning 9:30 – 11:00 2021L219G2EL 2021. M109C Coimisiún na Scrúduithe Stáit State Examinations Commission Computer Science Section C Ordinary Level Saturday 22 May Morning 11:30 – 12:30 50 marks Junior Cycle Final Examination 2019 previous page running Instructions There is one section in this paper. Section C Programming One question 50 marks Calculators may be used during this section of the examination. The Formulae and Tables booklet cannot be used for this section of the examination. The superintendent will give you a copy of the Python Reference Guide. Ensure that you save your work regularly and when you complete each question part. Save your files using the naming structure described at the beginning of each question part. If you are unable to get some code to work correctly, you can comment out the code so that you can proceed. The code that has been commented out will be reviewed by the examiner. Rough work pages are provided at the end of this booklet. Please note that this booklet is not to be handed up and will not be reviewed by an examiner. At the end of the examination it is your responsibility to ensure that you have saved all of your files onto your external media. You will be provided with a brown envelope for your external media. Write your examination number on this envelope and place your external media into it before sealing. Place this envelope in the pouch at the front of the red envelope that contains your examination booklet from Section A and B. Do not hand this paper up Leaving Certificate – 2021 2 Computer Science, Section C – Ordinary level Section C Programming 50 marks"
  },
  {
+  "id": "cs-2021-ol-q6",
+  "topicId": "cs-2-3",
+  "conceptId": "answer-following-question-putting-tick-relevant",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2021 OL Q6",
+  "questionText": "(a) Answer the following question by putting a tick () in the relevant box. Tick one box only. (b) Describe one difference between the World Wide Web (WWW) and the Internet.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "the language used to program web pages",
+    "marks": 5,
+    "accepts": [
+     "the method for encoding data securely",
+     "the web browser",
+     "the protocol for transferring hypertext for webpages ",
+     "(Incorrect if more than 1 box is ticked)",
+     "The internet is a global system of interconnected computers (uses TCP/IP).",
+     "The world wide web is online content (webpages) – formatted in HTML and uses the HTTP",
+     "protocol."
+    ]
+   }
+  ]
+ },
+ {
   "id": "cs-2022-hl-q6",
   "topicId": "cs-2-3",
   "conceptId": "figure-2-shows-example-client-server",
@@ -762,7 +1280,7 @@
  },
  {
   "id": "cs-2022-hl-q8",
-  "topicId": "cs-1-2",
+  "topicId": "cs-2-3",
   "conceptId": "cloud-computing-has-been-described-third",
   "level": "higher",
   "year": 2022,
@@ -786,7 +1304,7 @@
  },
  {
   "id": "cs-2022-hl-q13-a-i",
-  "topicId": "cs-2-4",
+  "topicId": "cs-2-3",
   "conceptId": "information-system",
   "level": "higher",
   "year": 2022,
@@ -840,7 +1358,7 @@
  },
  {
   "id": "cs-2022-hl-q13-a-iii",
-  "topicId": "cs-1-3",
+  "topicId": "cs-2-3",
   "conceptId": "identify-two-key-stakeholders-their-respective",
   "level": "higher",
   "year": 2022,
@@ -864,7 +1382,7 @@
  },
  {
   "id": "cs-2022-hl-q13-a-iv",
-  "topicId": "cs-1-3",
+  "topicId": "cs-2-3",
   "conceptId": "outline-briefly-two-topics-relating-project",
   "level": "higher",
   "year": 2022,
@@ -911,6 +1429,30 @@
   "stem": "This question continues on the next page. This question continues on the next page."
  },
  {
+  "id": "cs-2022-hl-q13-a-vi",
+  "topicId": "cs-2-3",
+  "conceptId": "why-choice-software-development-process-important",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2022 HL Q13(a)(vi)",
+  "questionText": "Explain why the choice of software development process is important when it comes to designing and developing software systems.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The choice of software development process/methodology (e.g. waterfall, agile etc.) is",
+    "marks": 3
+   }
+  ],
+  "stem": "This question continues on the next page. This question continues on the next page."
+ },
+ {
   "id": "cs-2022-hl-q13-b-ii",
   "topicId": "cs-1-3",
   "conceptId": "describe-two-user-centred-design-features",
@@ -936,7 +1478,7 @@
  },
  {
   "id": "cs-2022-hl-q13-b-iii",
-  "topicId": "cs-2-4",
+  "topicId": "cs-2-3",
   "conceptId": "two-differences-between-wireframes-prototypes",
   "level": "higher",
   "year": 2022,
@@ -1482,7 +2024,7 @@
  },
  {
   "id": "cs-2022-hl-q16-a-vii",
-  "topicId": "cs-2-2",
+  "topicId": "cs-2-3",
   "conceptId": "extend-program-display-horizontal-bar-chart",
   "level": "higher",
   "year": 2022,
@@ -1503,6 +2045,170 @@
    }
   ],
   "stem": "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program simulates the rolling of a die 100 times. The result of each roll (throw) is stored in a variable called throw_result. Each of the 100 results are appended to a list called results as they are generated. The program also contains code to keep track of the number of times a one and a two are rolled. These are stored in a list called frequencies. 1 # Question 16(a) 2 # Examination Number: 3 from random import randint 4 5 print(\"Dice simulation program\") 6 results = [] 7 frequencies = [0, 0, 0, 0, 0, 0] 8 9 # Loop 100 times 10 for i in range (100): 11 throw_result = randint(1,6) # store a random value between 1 and 6 12 results.append(throw_result) # append each value to results 13 14 # Start to build up a list of frequencies for each value thrown 15 if throw_result == 1: 16 frequencies[0] = frequencies[0] + 1 17 elif throw_result == 2: 18 frequencies[1] = frequencies[1] + 1 19 20 print() 21 print(\"Results:\", results) This question continues on the next page. When the program is run, the output may look as follows: (Your output will be different because the dice numbers are generated randomly.) Dice simulation program Results: [1, 4, 1, 4, 2, 3, 2, 2, 2, 4, 3, 1, 6, 1, 3, 3, 5, 1, 1, 3, 2, 2, 4, 1, 6, 4, 4, 5, 2, 2, 4, 2, 1, 2, 4, 2, 6, 6, 5, 4, 3, 5, 5, 1, 1, 6, 5, 1, 3, 3, 5, 3, 1, 5, 3, 5, 3, 2, 1, 1, 1, 1, 4, 2, 5, 6, 4, 3, 4, 6, 4, 5, 2, 5, 5, 3, 1, 5, 4, 3, 2, 2, 6, 2, 2, 3, 3, 2, 3, 1, 5, 2, 5, 4, 6, 4, 3, 5, 5, 2] Make the following changes to the program: Change the program so that the first line in the output is Dice simulation and analysis program. When the program is run the output may now look as follows: Dice simulation and analysis program Results: [1, 4, 1, 5, 3, 6, 2, 6, 6, 1, 3, 6, 4, 5, 1, 2, 5, 3, 5, 6, 5, 6, 5, 3, 3, 3, 4, 1, 2, 6, 1, 2, 4, 4, 6, 2, 4, 6, 5, 3, 4, 6, 4, 1, 4, 5, 6, 1, 1, 3, 5, 6, 6, 1, 2, 2, 5, 4, 3, 2, 6, 2, 2, 2, 2, 1, 2, 3, 4, 3, 3, 4, 3, 1, 6, 4, 1, 2, 4, 1, 3, 4, 1, 5, 3, 3, 5, 4, 4, 1, 2, 4, 4, 5, 6, 5, 6, 1, 5, 3] When the program is run the output may now look as follows: Dice simulation and analysis program Results: [1, 3, 5, 1, 5, 1, 2, 4, 2, 5, 5, 5, 6, 4, 1, 1, 6, 4, 2, 1, 2, 6, 5, 3, 6, 5, 3, 6, 3, 3, 2, 1, 4, 2, 3, 4, 6, 6, 3, 3, 6, 5, 6, 6, 6, 5, 3, 2, 1, 3, 3, 6, 1, 4, 2, 5, 6, 4, 2, 1, 6, 6, 6, 4, 2, 2, 4, 5, 6, 3, 2, 6, 2, 2, 3, 3, 3, 1, 5, 6, 3, 6, 2, 5, 5, 1, 4, 5, 4, 1, 5, 4, 6, 4, 4, 5, 3, 3, 1, 4] Frequencies: [14, 15, 0, 0, 0, 0] The frequencies list tells us that the number one has been rolled 14 times and the number two has been rolled 15 times. The frequencies for the numbers three, four, five and six are not calculated by the program yet. This is the reason they are all zero. This question continues on the next page. When the program is run the output may now look as follows: Dice simulation and analysis program Results: [2, 4, 6, 2, 1, 4, 1, 3, 1, 3, 3, 6, 5, 5, 4, 3, 2, 2, 2, 1, 3, 4, 4, 3, 4, 6, 4, 2, 3, 1, 3, 3, 1, 5, 3, 3, 6, 5, 4, 6, 1, 5, 3, 4, 2, 1, 6, 6, 5, 2, 6, 4, 5, 2, 2, 6, 6, 5, 5, 6, 2, 3, 5, 6, 4, 1, 6, 2, 2, 6, 2, 6, 3, 3, 4, 2, 5, 5, 5, 3, 1, 2, 3, 4, 2, 6, 2, 1, 5, 6, 6, 2, 5, 2, 3, 2, 5, 2, 2, 6] Frequencies: [11, 23, 18, 13, 16, 19] In this case the frequencies list tells us that the number one has been rolled 11 times, the number two has been rolled 23 times, the number three has been rolled 18 times, the number four has been rolled 13 times, the number five has been rolled 16 times and the number six has been rolled 19 times. When the program is run the output may now look as follows: Dice simulation and analysis program Frequencies: [17, 21, 17, 18, 11, 16] Dice simulation and analysis program Frequencies: [15, 10, 25, 15, 15, 20] Dice Frequency ---- --------- 1 15 2 10 3 25 4 15 5 15 6 20 This question continues on the next page. When the program is run the output may now look as follows: Dice simulation and analysis program Frequencies: [16, 14, 12, 20, 25, 13] Dice Frequency ---- --------- 1 16 2 14 3 12 4 20 5 25 6 13 5 was rolled the most often (25 times) The number of asterisks (*) in each row should correspond to each frequency. For example, in the output below there are eight asterisks in row one because the frequency for the number one is eight. Each asterisk (*) can be printed using the single statement: print(\"*\", end=\"\") When the program is run the output may now look as follows: Dice simulation and analysis program Dice frequencies: [8, 12, 22, 26, 22, 10] Dice Frequency ---- --------- 1 8 2 12 3 22 4 26 5 22 6 10 4 was rolled most often - 26 times ******** ************ ********************** **************************** ********************** ********** Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Acknowledgements Images Image on P. 4: https://freesvg.org/vector-image-of-game-dice-close-up This document will not be returned to the State Examinations Commission. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Wednesday 25 May Morning 11:30 – 12:30"
+ },
+ {
+  "id": "cs-2022-hl-q2",
+  "topicId": "cs-2-3",
+  "conceptId": "volatile-memory-b-describe-two-differences",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2022 HL Q2",
+  "questionText": "(a) What is volatile memory? (b) Describe two differences between registers and RAM.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "A type of memory used to store data/programs when the computer is switched on/running.",
+    "marks": 5,
+    "accepts": [
+     "Called volatile because entire contents are cleared when the computer is switched off.",
+     "Physical location. Registers are located inside (part of) the CPU – RAM is not physically as close to the CPU.",
+     "Access time/speeds. Contents of registers can be accessed much faster by CPU than contents of RAM.",
+     "Cost. Registers are more expensive than RAM (per byte).",
+     "Capacity. Registers hold less than RAM (because of cost).",
+     "Material. Made from different materials.",
+     "Any other valid difference. 1 marks for each difference clearly described"
+    ]
+   }
+  ],
+  "stem": "Registers and RAM are both types of volatile memory."
+ },
+ {
+  "id": "cs-2022-hl-q3",
+  "topicId": "cs-2-3",
+  "conceptId": "terms-transistor-integrated-circuit-b-one",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2022 HL Q3",
+  "questionText": "(a) Explain the terms transistor and integrated circuit. (b) State one reason why Moore’s Law might not remain accurate in the future.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Transistor",
+    "marks": 5,
+    "accepts": [
+     "A transistor is type of electronic switch.",
+     "A transistor is a semiconductor device used to amplify or switch electronic signals and electrical power. It is composed of semiconductor material usually with at least three terminals for connection to an external circuit.",
+     "A transistor is the fundamental building block of gates, logic circuits (adders, multiplexors etc.), integrated circuits and microprocessors.",
+     "Transistors are used to represent binary 1’s and 0’s. Integrated Circuit",
+     "An integrated circuit (chip) is an electronic component that contains multiple discrete components combined together into logic circuits on a single silicon board. For each term:",
+     "There is a physical limitation to the number of transistors that can fit on a single chip."
+    ]
+   }
+  ],
+  "stem": "In 1965 Gordon Moore, co-founder of Intel Corporation, predicted that the number of transistors on an integrated circuit will approximately double every two years. This prediction became known as Moore’s Law and has turned out to be very accurate to the present day."
+ },
+ {
+  "id": "cs-2022-hl-q4",
+  "topicId": "cs-2-3",
+  "conceptId": "complete-truth-table-logical-statement-b",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2022 HL Q4",
+  "questionText": "(a) Complete the truth table for the logical statement A AND (B OR C). (b) Use the relevant gate symbols to draw the circuit diagram for this system.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "A B C A AND (B OR C)",
+    "marks": 5,
+    "accepts": [
+     "0 0 0 0",
+     "0 0 1 0",
+     "0 1 0 0",
+     "0 1 1 0",
+     "1 0 0 0"
+    ]
+   }
+  ],
+  "stem": "An automatic garage door has three inputs: - A, the master ON/OFF switch - B, a sensor on the left hand side - C, a sensor on the right hand side Once the master switch has been set ON, either sensor can trigger the door. This scenario can be represented by the logical statement: A AND (B OR C)."
+ },
+ {
+  "id": "cs-2022-hl-q7",
+  "topicId": "cs-2-3",
+  "conceptId": "term-ransomware-b-two-measures-individuals",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2022 HL Q7",
+  "questionText": "(a) Explain the term ransomware. (b) State two measures individuals or companies can take to reduce the risk of a cyberattack.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Ransomware is a type of malicious software (malware) that threatens to publish or blocks access to data or a computer system, usually by encrypting it, until the victim pays a ransom fee to the attacker. In many cases, the ransom demand comes with a deadline. If the victim doesn’t pay in time, the data is gone forever or the ransom increases.",
+    "marks": 5,
+    "accepts": [
+     "Company policy and procedures (people controls).",
+     "Password policies.",
+     "Anti-virus software.",
+     "Security systems (e.g. firewall, VPN).",
+     "Encryption.",
+     "Cloud (security services may be better than local organisations).",
+     "Any acceptable measure. Each correct response"
+    ]
+   }
+  ],
+  "stem": "On 14 May 2021, the Health Service Executive (HSE) of Ireland suffered a major ransomware cyberattack which caused all of its IT systems nationwide to be shut down."
+ },
+ {
+  "id": "cs-2022-hl-q9",
+  "topicId": "cs-2-2",
+  "conceptId": "provide-two-examples-how-machine-learning",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2022 HL Q9",
+  "questionText": "(a) Provide two examples of how machine learning can be used to benefit society. (b) Outline briefly the issue of ‘bias’ in relation to machine learning.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Self-driving vehicles – safety/more accessible.",
+    "marks": 5,
+    "accepts": [
+     "Healthcare – early detection of chronic illnesses, modelling disease spread etc.",
+     "Entertainment – music/concert/movie/book recommender systems etc.",
+     "Online shopping – product recommender systems, ads etc.",
+     "Facial recognition in home/business security systems.",
+     "Environmental protection.",
+     "Fairer justice systems.",
+     "Arts – music/literature.",
+     "Education.",
+     "Any valid example of how machine learning can be used to benefit society. Each correct response",
+     "If the data on which the algorithm makes its decision contains bias, the algorithm’s output will also be biased."
+    ]
+   }
+  ]
  },
  {
   "id": "cs-2022-ol-q4",
@@ -1798,6 +2504,66 @@
   "stem": "Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Acknowledgements Images Image on page 3: www.activeme.ie/tourism-media-services/coakley-consulting-engineers/traffic-and-transport- reports/ Image 1 on page 9: www.instructables.com/Resistors/ Image 2 on page 9: www.indiamart.com/proddetail/100-uf-electrolytic-capacitor-21635733762.html Image 3 on page 9: www.indiamart.com/proddetail/mje13003d-npn-power-transistor-19498797562.html Image on page 11: www.banggood.com/12-LED-Display-Alarm-Clock-Timer-AMFM-Radio-24-Hour-System-Multi- function-p-1349571.html?cur_warehouse=CN Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Ordinary Level Computer Science – Sections A & B Wednesday 25 May Morning 9:30 – 11:00 2022L219G2EL 2022. M109C Coimisiún na Scrúduithe Stáit State Examinations Commission Computer Science Section C Ordinary Level Wednesday 25 May Morning 11:30 – 12:30 50 marks This document will not be returned to the State Examinations Commission. Junior Cycle Final Examination 2019 previous page running Instructions There is one section in this paper. Section C Programming One question 50 marks Calculators may be used during this section of the examination. The Formulae and Tables booklet cannot be used for this section of the examination. The superintendent will give you a copy of the Python Reference Guide. Ensure that you save your work regularly. Save your files using the naming structure described at the beginning of the question. If you are unable to get some code to work correctly, you can comment out the code so that you can proceed. The code that has been commented out will be reviewed by the examiner. Rough work pages are provided at the end of this booklet. Please note that this booklet is not to be handed up and will not be reviewed by an examiner. At the end of the examination it is your responsibility to ensure that you have saved your file onto your external media. You will be provided with a brown envelope for your external media. Write your examination number on this envelope and place your external media into it before sealing. Place this envelope in the pouch at the front of the red envelope that contains your examination booklet from Section A and B. Section C Programming 50 marks"
  },
  {
+  "id": "cs-2022-ol-q5",
+  "topicId": "cs-2-2",
+  "conceptId": "index-value-will-be-returned-if",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2022 OL Q5",
+  "questionText": "(a) What index value will be returned if you search for the number 94? (b) Describe a limitation of the linear search algorithm.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "3",
+    "marks": 5,
+    "accepts": [
+     "Not an efficient way of searching.",
+     "In big data sets it will take a long time to complete the search."
+    ]
+   }
+  ],
+  "stem": "A linear search algorithm, written in Python, is used to search the following list of integers. list = [11, 52, 37, 94, 12, 73, 62, 47]"
+ },
+ {
+  "id": "cs-2022-ol-q8",
+  "topicId": "cs-1-2",
+  "conceptId": "describe-one-way-digital-technology-has",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2022 OL Q8",
+  "questionText": "(a) Describe one way digital technology has helped us during the COVID-19 Pandemic. (b) Explain what is meant by the term “digital divide”.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "COVID Tracker App",
+    "marks": 5,
+    "accepts": [
+     "Online Video Calls.",
+     "Entertainment online.",
+     "Communicate with other people.",
+     "Getting information to stay informed.",
+     "Online working and schooling. Any one of the above or similar:",
+     "Some people can afford or get access to technology and others cannot."
+    ]
+   }
+  ],
+  "stem": "COVID-19 has had a significant impact on the use of technology and the Internet for remote work in business and education. It has also highlighted issues in the area known as the “digital divide”."
+ },
+ {
   "id": "cs-2023-hl-q5",
   "topicId": "cs-2-3",
   "conceptId": "transmission-control-protocol-internet-protocol-tcp",
@@ -1871,7 +2637,7 @@
  },
  {
   "id": "cs-2023-hl-q13-a-iii",
-  "topicId": "cs-1-2",
+  "topicId": "cs-2-3",
   "conceptId": "ensure-digital-hubs-accessible-anyone-who",
   "level": "higher",
   "year": 2023,
@@ -1961,7 +2727,7 @@
  },
  {
   "id": "cs-2023-hl-q13-c",
-  "topicId": "cs-1-2",
+  "topicId": "cs-2-3",
   "conceptId": "2022-irish-government-announced-plans-introduce",
   "level": "higher",
   "year": 2023,
@@ -2111,7 +2877,7 @@
  },
  {
   "id": "cs-2023-hl-q14-b-iii",
-  "topicId": "cs-1-2",
+  "topicId": "cs-2-3",
   "conceptId": "school-software-development-project-sarah-has",
   "level": "higher",
   "year": 2023,
@@ -2584,6 +3350,166 @@
   "stem": "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program defines a function called guess_game which simulates a guessing game. When the function is called, the program generates a secret number between 1 and 5 inclusive. This is stored in a variable called secret_number. The program then enters a loop in which the user is prompted to guess the number. The user’s guess is stored in the variable user_guess. Every time the user enters a guess the program increases the variable guess_count by one. If the user’s guess matches the computer’s secret number, the message ‘Congratulations! You win!’ is displayed. The loop continues until the user guesses the secret number. 1 # Question 16(a) 2 # Examination Number: 3 from random import randint 4 5 def guess_game(max_guesses_allowed): 6 7 secret_number = randint(1, 5) 8 guess_count = 0 9 user_guess = 0 10 11 while (user_guess != secret_number): 12 13 user_guess = int(input(\"Enter your guess: \")) 14 guess_count += 1 #Increase guess_count by 1 15 if user_guess == secret_number: 16 print(\"Congratulations! You win!\") 17 18 print(\"Welcome to the guessing game!\") 19 guess_game(3) This question continues on the next page. When the program is run, the output may look as follows. Your output may be different as the secret number is generated randomly. Welcome to the guessing game! Enter your guess: 2 Enter your guess: 3 Enter your guess: 1 Congratulations! You win! Make the following changes to the program: When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 2 Enter your guess: 3 Enter your guess: 1 Congratulations! You win! You took 3 guesses. Change the program so that it displays one of the following messages as a hint to the user: ‘Sorry! Your guess was too low’ or ‘Sorry! Your guess was too high’ When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Enter your guess: 3 Sorry! Your guess was too low Enter your guess: 4 Congratulations! You win! You took 4 guesses. This question continues on the next page. Hint: You will need to change the loop so that it continues as long as the user’s guess is not equal to the secret number and the number of guesses is less than max_guesses_allowed. When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Enter your guess: 2 Sorry! Your guess was too low Modify the program so that the user is presented with the prompt: Enter the maximum number of guesses allowed. Store the value entered as an integer and pass this value into the function guess_game. When the program is run the output may now look as follows: Welcome to the guessing game! Enter the maximum number of guesses allowed: 2 Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Modify the program so that it prompts the user to enter a difficulty level – ‘E’ for easy and ‘H’ for hard. If the user chooses ‘H’ the secret number should be between 1 and 100 inclusive. A value of anything other than ‘H’ can be interpreted as easy. When the program is run the output may now look as follows: Welcome to the guessing game! Enter the maximum number of guesses allowed: 3 Enter difficulty E(asy) or H(ard): H Enter your guess: 50 Sorry! Your guess was too low Enter your guess: 75 Sorry! Your guess was too low Enter your guess: 95 Sorry! Your guess was too low This question continues on the next page. This question continues on the next page."
  },
  {
+  "id": "cs-2023-hl-q2",
+  "topicId": "cs-2-3",
+  "conceptId": "one-advantage-using-hexadecimal-numbers-b",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2023 HL Q2",
+  "questionText": "(a) Explain one advantage of using hexadecimal numbers. (b) Convert the hexadecimal number C9 into a decimal number.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Hexadecimal is very concise. This means that it can be used to express most numbers using fewer digits/characters than would be needed in other number systems.",
+    "marks": 6,
+    "accepts": [
+     "Every hexadecimal digit/character can be represented using a group of four binary digits. This grouping makes it relatively easy and fast to convert between hexadecimal numbers and binary. It is also one of the reasons why hexadecimal numbers are considered more human-friendly than other number systems.",
+     "Because of their conciseness, humans are less likely to make mistakes when writing hexadecimal numbers.",
+     "Hexadecimal notation is commonly used as a convenient way to represent memory addresses, machine code/instructions, data, error codes, colours etc.",
+     "Cx161+ 9x160 = 12x16+ 9x1 = 192+9 = 201 OR",
+     "STEP 1. Convert to binary: C9 = 1100 1001"
+    ]
+   }
+  ],
+  "stem": "Information systems can represent numbers in decimal, binary and hexadecimal format. Many software developers use hexadecimal numbers."
+ },
+ {
+  "id": "cs-2023-hl-q4",
+  "topicId": "cs-1-2",
+  "conceptId": "meant-term-user-interface-b-describe",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2023 HL Q4",
+  "questionText": "(a) What is meant by the term ‘user interface’? (b) Name and describe one type of user interface that a computer system might use.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "A user interface is the means by which the user provides input to a computer and the",
+    "marks": 6,
+    "accepts": [
+     "computer conveys output to the user. Specifically, it is the point of interaction between a",
+     "user and a computer through the use of i/o devices.",
+     "Graphical user interface (GUI) - an environment with windows, icons, menus and controlled by a pointing device (WIMP). This type of interface is called the graphical user interface (GUI) because the user interacts with images through a mouse, keyboard or touchscreen. Used on most computers & smartphones.",
+     "Command line interface (CLI) - provides a method of interaction that is non-graphical, called the command line interface (CLI). This is a text-only service with feedback from the OS appearing in text. Using a CLI requires knowledge of the commands available on a particular machine.",
+     "Menu driven interfaces - user can select from a number of options, then typically only move up, down, back & forward. Often used in menus for food, tickets etc.",
+     "Touch user interface - this is a type of interaction between a user and a computer- based device. This interaction is by doing a physical touch on the screen and the computer responds to this touch interaction.",
+     "Natural Language interface (NLI) / Voice user interfaces (VUI) - these allow the user to interact with a system through voice or speech commands. Virtual assistants, such as Siri, Google Assistant, and Alexa, are examples of these type of interfaces."
+    ]
+   }
+  ],
+  "stem": "User interfaces have evolved constantly over the past 40 years to become more user-friendly and accessible."
+ },
+ {
+  "id": "cs-2023-hl-q6",
+  "topicId": "cs-2-3",
+  "conceptId": "two-examples-embedded-systems-you-might",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2023 HL Q6",
+  "questionText": "(a) State two examples of embedded systems you might find in a smart home. (b) Describe two characteristics of embedded systems that distinguish them from general computer systems.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Programmable appliances e.g. washing machine, dishwasher, dryers, kettle, fridge",
+    "marks": 6,
+    "accepts": [
+     "Heating, ventilation and air conditioning system.",
+     "Lighting control system.",
+     "Alarm/security systems.",
+     "Home robots e.g. Roomba, companion robots, window cleaners, lawnmowers",
+     "Leak detection, smoke and carbon monoxide detectors.",
+     "Home safety for the elderly and disabled.",
+     "Pet and baby care.",
+     "Voice control devices like Amazon Alexa or Google Home used to control home appliances or systems.",
+     "Any acceptable smart home embedded system. Note: Do not accept Micro:bit, Raspberry Pi as valid examples. Each correct example",
+     "Embedded systems perform some specific function or tasks. Unlike computer systems they cannot be programmed to do anything beyond the scope which they were designed for.",
+     "Low Cost – the price of embedded systems is relatively inexpensive."
+    ]
+   }
+  ],
+  "stem": "Smart homes make use of embedded systems to make living spaces more enjoyable and convenient for home owners."
+ },
+ {
+  "id": "cs-2023-hl-q10",
+  "topicId": "cs-2-2",
+  "conceptId": "using-leftmost-element-pivot-show-contents",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2023 HL Q10",
+  "questionText": "(a) Using the leftmost element as the pivot, show the contents of the list after the initial partition by the quicksort algorithm. You should assume that the elements in the left and right sub-lists are not re-ordered. (b) Explain why 90 would have been a poor choice of pivot to partition the list shown in Figure 5.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "30 40 10 50 20 60 80 70 90",
+    "marks": 6,
+    "accepts": [
+     "OR",
+     "50 30 20 40 10 60 80 70 90",
+     "Elements split about the pivot",
+     "Left sub-list correct"
+    ]
+   }
+  ],
+  "stem": "Quicksort is widely recognised as one of the most efficient sorting algorithms. It works by recursively partitioning a list about one of the elements known as the pivot. Consider the unsorted list of integers shown in Figure 5 below and answer the questions that follow. 60 30 80 40 10 50 20 70 90 Figure 5"
+ },
+ {
+  "id": "cs-2023-hl-q11",
+  "topicId": "cs-2-2",
+  "conceptId": "one-input-one-output-algorithm-b",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2023 HL Q11",
+  "questionText": "(a) Name one input and one output of the algorithm. (b) Referring to the relevant step(s) in the flowchart explain how the algorithm uses string slicing and string concatenation.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Valid inputs: first_name, surname, date_of_birth.",
+    "marks": 6,
+    "accepts": [
+     "Valid output: username. Note: No marks awarded for actual names, dates or usernames (even if in correct format e.g. Joe Soap 26112003 and JoSoap2003) Each correct response (1 input and 1 output)",
+     "String slicing: o Step 5 of the algorithm slices the first two characters of the first_name. o Step 6 of the algorithm slices characters from positon 4 to 7 inclusive. Assuming ddmmyyyy format, this extracts the 4-digit year of birth from the date of birth.",
+     "String concatenation: o Step 7 of the algorithm concatenates the 2 characters from the first name followed by the surname followed by the 4 digit year of birth to determine the username. For each explanation:"
+    ]
+   }
+  ],
+  "stem": "Figure 6 depicts a flowchart of a Python algorithm which can be used to generate new usernames for students. You can assume that the date is in the format: ddmmyyyy. Figure 6"
+ },
+ {
   "id": "cs-2023-ol-q4",
   "topicId": "cs-2-3",
   "conceptId": "convert-decimal-number-14-binary-number",
@@ -2686,8 +3612,38 @@
   "stem": "Over the past year RTÉ have been looking into updating their RTÉ Player app. When a new piece of software is created for such a large organisation there are many different stages of the software development lifecycle to go through and also many different people involved. This question continues on the next page."
  },
  {
+  "id": "cs-2023-ol-q14-a-ii",
+  "topicId": "cs-2-3",
+  "conceptId": "describe-two-different-roles-software-development",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2023 OL Q14(a)(ii)",
+  "questionText": "Name and describe two different roles in a software development project such as this.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Role 1: Tester Description 1: Tests the software at different stages throughout the process to look for errors.",
+    "marks": 4
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Role 2: Project Manager Description 2: Makes sure that all of the team members know what they need to do, also makes sure everything is running on time. There are many other roles / terms within software development such as Product Owner, Business Analyst, System Analyst, Designer, Developer/ Programmer/ Coder. Accept any relevant role and description. Note: Where two separate roles are considered equivalent/to have the same meaning, marks are awarded for the best response only. Zero is awarded for the other response. Apply marks for each (2) role: Valid role identified",
+    "marks": 4
+   }
+  ],
+  "stem": "Over the past year RTÉ have been looking into updating their RTÉ Player app. When a new piece of software is created for such a large organisation there are many different stages of the software development lifecycle to go through and also many different people involved. This question continues on the next page."
+ },
+ {
   "id": "cs-2023-ol-q14-b-i",
-  "topicId": "cs-2-2",
+  "topicId": "cs-2-3",
   "conceptId": "describe-one-activity-will-take-place",
   "level": "ordinary",
   "year": 2023,
@@ -2711,6 +3667,30 @@
     "kind": "point",
     "verbatim": "Document o Documentation of system requirements for software o Creation of user guide document o Creation of user maintenance document o Creation of frequently asked questions o Accept any other valid tasks that take place within the document stage.",
     "marks": 3
+   }
+  ],
+  "stem": "Figure 5 This question continues on the next page."
+ },
+ {
+  "id": "cs-2023-ol-q14-b-ii",
+  "topicId": "cs-2-3",
+  "conceptId": "often-suggested-agile-or-iterative-approach",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2023 OL Q14(b)(ii)",
+  "questionText": "It is often suggested that an agile or iterative approach to systems development is better than a traditional waterfall approach. List two advantages of using the agile or iterative approach over the waterfall approach.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Flexibility – short sprint-scrum cycles",
+    "marks": 6
    }
   ],
   "stem": "Figure 5 This question continues on the next page."
@@ -2746,7 +3726,7 @@
  },
  {
   "id": "cs-2023-ol-q14-c-ii",
-  "topicId": "cs-2-4",
+  "topicId": "cs-2-3",
   "conceptId": "beta-testing-gives-large-number-real",
   "level": "ordinary",
   "year": 2023,
@@ -2844,6 +3824,128 @@
    }
   ],
   "stem": "Before making any changes, you should save your working copy of the file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program below produces a times table for a specific number. A times table is a multiplication table in a list that shows the multiples of a specific number. The code below works by using a for loop to multiply the number seven by zero, then by one, then by two until the loop repeats ten times in total. 1 # Question 16(a) 2 # Examination Number: 3 4 print(\"Multiplication program\") 5 6 number = 7 7 8 print(\"Multiplications of \", number) 9 10 for i in range(10): 11 print(number*i) Make the following changes to the program: Leaving Certificate – 2023 4 Computer Science, Section C – Ordinary level This question continues on the next page. Leaving Certificate – 2023 5 Computer Science, Section C – Ordinary level Leaving Certificate – 2023 6 Computer Science, Section C – Ordinary level"
+ },
+ {
+  "id": "cs-2023-ol-q2",
+  "topicId": "cs-2-3",
+  "conceptId": "describe-main-difference-between-general-purpose",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2023 OL Q2",
+  "questionText": "(a) Describe the main difference between a general-purpose computer and an embedded system. (b) Name one example of an embedded system you might find in your home.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "General-purpose computers can have many uses, embedded systems have a limited or specific number of uses",
+    "marks": 6,
+    "accepts": [
+     "General-purpose computers can be easily reprogrammed, embedded systems can’t easily be upgraded",
+     "General-purpose computers are generally higher cost, embedded systems are relatively low cost",
+     "Examples of Embedded Systems can be any digital device created for specific tasks – these include domestic appliances such as washing machines, dish washers, etc."
+    ]
+   }
+  ],
+  "stem": "print(a == b) print(b != a) print(a > b) print(b <= a) print(a == 10) print(b != 21)"
+ },
+ {
+  "id": "cs-2023-ol-q8",
+  "topicId": "cs-2-3",
+  "conceptId": "if-binary-search-algorithm-used-search",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2023 OL Q8",
+  "questionText": "(a) If a binary search algorithm is used to search for the name “Chan” what name will first be identified as the Mid (middle) item? (b) Why is the binary search algorithm sometimes referred to as a “divide and conquer” method?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Dara",
+    "marks": 6,
+    "accepts": [
+     "Binary search looks at the middle item of a list & checks if that Is the item it is searching for. If the item is not found it then it splits the list in half, meaning there are less items to search. This process is repeated until item is found or there is nothing left to search.",
+     "Binary search works by dividing the list into two halves, eliminating one half and conquering the other half by repeating this process."
+    ]
+   }
+  ],
+  "stem": "Below is a sorted list of student names. Ava Cara Chan Dara Julie Kevin Senan"
+ },
+ {
+  "id": "cs-2023-ol-q11",
+  "topicId": "cs-2-2",
+  "conceptId": "output-program-if-user-enters-19",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2023 OL Q11",
+  "questionText": "(a) What is the output of the program if the user enters 19 when asked for the number of marks? (b) What is the output of the program if the user makes a mistake and enters 110 when asked for the number of marks? (c) What is the purpose of the int function in line 1 of the code?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Not Graded",
+    "marks": 6,
+    "accepts": [
+     "Distinction",
+     "Converts (casts) the text entered to an integer",
+     "Ensures that the datatype of the variable percentage will be an integer"
+    ]
+   }
+  ],
+  "stem": "The Python code below is being used to calculate a Junior Cycle grade descriptor from a percentage. Examine the code carefully and answer the questions below. 1 percentage = int(input(\"How many marks out of 100? \")) 2 3 grade = \"\" 4 if percentage >= 90: 5 grade = \"Distinction\" 6 elif percentage >= 75: 7 grade = \"Higher Merit\" 8 elif percentage >= 55: 9 grade = \"Merit\" 10 elif percentage >= 40: 11 grade = \"Achieved\" 12 elif percentage >= 20: 13 grade = \"Partially Achieved\" 14 else: 15 grade = \"Not Graded\" 16 17 print(grade)"
+ },
+ {
+  "id": "cs-2023-ol-q13",
+  "topicId": "cs-2-2",
+  "conceptId": "i-select-correct-computer-science-term",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2023 OL Q13",
+  "questionText": "(i) Select the correct computer science term from the following list and place it in Column B to match the definitition in Column A in the table below. (ii) While loops are used in computer science to iterate over certain blocks of code. Examine the code below and complete the trace table that tracks the progress of the code being executed. (a)  (i) What cost will be printed when a customer has a car battery with a charge of 25% and no loyalty card? (ii) What cost will be printed when a customer has a car battery with a charge of 50% and a loyalty card? (iii) What cost will be printed when a customer has a car battery with a charge of 80% and no loyalty card? (iv) What is the lowest possible cost that this algorithm can print? (b) A public electric car charging point uses an algorithm to work out the cost for a customer to charge their car battery to 100%. Regular customers with loyalty cards get a discount. Examine the flowchart for the algorithm, shown in Figure 4 below, and answer the questions that follow. (i) What is the shortest time needed to fully recharge the three electric vehicles? Show your workings below. (ii) Name and explain a computational thinking skill you used to try and solve this problem. (c) Three cars arrive at an electric vehicle charging point location. There are two charge stations so only two cars can be charged at the same time. None of the three electric vehicle’s batteries have any charge. It takes one hour to fully charge each electric vehicle but this does not need to be done all in one go. Note: you do not need to account for time taken to change which car is being charged.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 38,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Column A Column B",
+    "marks": 38,
+    "accepts": [
+     "Definition Term",
+     "A data structure that can store a collection of elements of the",
+     "Array",
+     "same data type",
+     "A character that represents a mathematical or logical action Operator",
+     "A command for handling a decision Conditional",
+     "A memory location that can store a value Variable",
+     "Each correct item",
+     "i j while i < j print(i)",
+     "1 1 10 True 1",
+     "2 2 9 True 2"
+    ]
+   }
+  ]
  },
  {
   "id": "cs-2024-hl-q3",
@@ -3104,7 +4206,7 @@
  },
  {
   "id": "cs-2024-hl-q13-a-iv",
-  "topicId": "cs-2-2",
+  "topicId": "cs-2-3",
   "conceptId": "two-types-output-can-be-produced",
   "level": "higher",
   "year": 2024,
@@ -4548,6 +5650,96 @@
   "stem": "Before making any changes, you should use the format CandidateNumberQuestion16_B.py to save your file. For example, you would save the file as 123456Question16_B.py if your candidate number was 123456. Enter your Examination Number in the space provided on Line 2. Implement a program that will help you to split a restaurant bill with your friends. You should use comments throughout your program to explain your code. You may wish to reuse some of the code you used in part (a) as part of your solution. Your program should do the following:  The program should display an output of “Split Bill Calculator” at the start.  The user can enter the total amount of the bill.  The user can enter the number of people that will be splitting the bill.  Divide the total amount of the bill by the number of people. The amount owed by each person should be printed with a suitable message. Split Bill Calculator How much is the bill?: 100 How many people?: 5 You each owe 20.0 Save your file using the format CandidateNumberQuestion16_B.py. For example, you would save the file as 123456Question16_B.py if your candidate number was 123456. Leaving Certificate – 2024 6 Computer Science, Section C – Ordinary level Space for rough work. This page will not be reviewed by an examiner. Leaving Certificate – 2024 7 Computer Science, Section C – Ordinary level Acknowledgements Images Image on page 4: https://static.aviva.io/content/dam/aviva-public/ie/articles/car/your-driving-licence-debunked- article-2.jpg Image on page 6: https://www.louisianafcu.org/articles/the-polite-persons-guide-to-splitting-the-bill Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. This document will not be returned to the State Examinations Commission. Leaving Certificate – Ordinary Level Computer Science – Section C Leaving Certificate – 2024 8 Computer Science, Section C – Ordinary level Wednesday 22 May Morning 11:30 – 12:30"
  },
  {
+  "id": "cs-2024-ol-q2",
+  "topicId": "cs-2-3",
+  "conceptId": "largest-binary-number-can-be-represented",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2024 OL Q2",
+  "questionText": "(a) What is the largest binary number that can be represented by a nibble? (b) Convert the binary number from part (a) above into a decimal value.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "1111",
+    "marks": 6,
+    "accepts": [
+     "15"
+    ]
+   }
+  ],
+  "stem": "In computer science four bits of binary data is known as a ‘nibble’."
+ },
+ {
+  "id": "cs-2024-ol-q3",
+  "topicId": "cs-2-3",
+  "conceptId": "choose-appropriate-electronic-component-list-below",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2024 OL Q3",
+  "questionText": "(a) Choose the appropriate electronic component from the list below and place it in Column B to match the correct component image in Column A. Resistor Transistor Capacitor Column A Component Image Column B Component Name (b) Select any one of these electronic components and explain its purpose.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Column A Column B",
+    "marks": 6,
+    "accepts": [
+     "Component Image Component Name",
+     "Capacitor",
+     "Resistor",
+     "Transistor",
+     "Each correct item",
+     "Leaving Certificate 2024",
+     "Computer Science, Marking Scheme – Ordinary level",
+     "Resistor – Creates resistance to the flow of current. Creates a voltage difference.",
+     "Transistor – Amplifies or switches on or off current. Controls current or voltage flow.",
+     "Capacitor – Can build up and store energy. Can release large amounts of built up energy."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "cs-2024-ol-q8",
+  "topicId": "cs-2-4",
+  "conceptId": "why-int-function-used-lines-1",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2024 OL Q8",
+  "questionText": "(a) Why is the int function used in lines 1 and 2? (b) What is an appropriate print statement that could be entered in line 8?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Casts the input to an integer",
+    "marks": 6,
+    "accepts": [
+     "int sets the data type to an integer/ number/ whole number",
+     "Numbers are equal / the same / match Valid print statement 3 marks"
+    ]
+   }
+  ],
+  "stem": "Examine the incomplete Python program below and answer the questions that follow. 1 num1 = int(input(\"Enter first number: \")) 2 num2 = int(input(\"Enter second number: \")) 3 if num1 > num2: 4 print(num1, \"is greater\") 5 elif num2 > num1: 6 print(num2, \"is greater\") 7 else: 8"
+ },
+ {
   "id": "cs-2025-hl-q2",
   "topicId": "cs-2-3",
   "conceptId": "ascii-unicode-both-examples-character-encoding",
@@ -4777,7 +5969,7 @@
  },
  {
   "id": "cs-2025-hl-q13-b-i",
-  "topicId": "cs-1-3",
+  "topicId": "cs-2-3",
   "conceptId": "each-stakeholder-outline-one-goal-they",
   "level": "higher",
   "year": 2025,
@@ -4921,7 +6113,7 @@
  },
  {
   "id": "cs-2025-hl-q13-c-i",
-  "topicId": "cs-1-2",
+  "topicId": "cs-2-3",
   "conceptId": "read-following-scenario-answer-question-follows",
   "level": "higher",
   "year": 2025,
@@ -4945,7 +6137,7 @@
  },
  {
   "id": "cs-2025-hl-q13-c-ii",
-  "topicId": "cs-2-2",
+  "topicId": "cs-2-3",
   "conceptId": "system-will-need-be-thoroughly-tested",
   "level": "higher",
   "year": 2025,
@@ -5347,7 +6539,7 @@
  },
  {
   "id": "cs-2025-ol-q2",
-  "topicId": "cs-1-2",
+  "topicId": "cs-2-3",
   "conceptId": "common-people-store-files-cloud-two",
   "level": "ordinary",
   "year": 2025,
@@ -5401,7 +6593,7 @@
  },
  {
   "id": "cs-2025-ol-q4",
-  "topicId": "cs-2-4",
+  "topicId": "cs-2-3",
   "conceptId": "unicode-has-largely-replaced-ascii-worldwide",
   "level": "ordinary",
   "year": 2025,
@@ -5526,6 +6718,30 @@
   "stem": "Figure 4"
  },
  {
+  "id": "cs-2025-ol-q13-b-i",
+  "topicId": "cs-2-3",
+  "conceptId": "purpose-application-hardware-layers",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2025 OL Q13(b)(i)",
+  "questionText": "Explain the purpose of the application and hardware layers.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Application Layer: This is to provide the programs and apps that people use to do specific tasks",
+    "marks": 6
+   }
+  ],
+  "stem": "Figure 5 This question continues on the next page."
+ },
+ {
   "id": "cs-2025-ol-q13-b-ii",
   "topicId": "cs-2-3",
   "conceptId": "apple-ios-microsoft-windows-android-os",
@@ -5647,7 +6863,7 @@
  },
  {
   "id": "cs-2025-ol-q14-b-iii",
-  "topicId": "cs-2-2",
+  "topicId": "cs-2-3",
   "conceptId": "stage-software-testing-other-than-unit",
   "level": "ordinary",
   "year": 2025,
@@ -5884,5 +7100,75 @@
    }
   ],
   "stem": "Before making any changes, you should use the format ExaminationNumberQuestion16_B.py to save your file. For example, you would save the file as 123456Question16_B.py if your examination number was 123456. Enter your examination number in the space provided on line 2. Write a Python program that will calculate the total cost of tiles for a new house. You should use comments throughout your program to explain your code. You may wish to reuse some of the code you used in part (a) as part of your solution. Your program should meet the following requirements: 1. A message should be printed to the screen stating the following: “Tile Cost Calculator” 2. The user should be asked to enter the price of tiles per square metre. This amount can be a decimal number. 3. The user should be asked for the number of rooms to be tiled. 4. For each room, the number of the room should be printed and the user should be asked to enter the length and width of the room. The length and width can be a decimal number. 5. The total cost of the tiles should be printed to the screen. The amount should be rounded to 2 decimal places. Tile Cost Calculator How much do the tiles cost per square metre? 19.75 How many rooms do you want to tile? 3 Room 1 What width is the room?: 12 What length is the room?: 8 Room 2 What width is the room?: 9 What length is the room?: 6 Room 3 What width is the room?: 8.5 What length is the room?: 6.5 The total cost is EUR 4053.69 Save your file using the format ExaminationNumberQuestion16_B.py. For example, you would save the file as 123456Question16_B.py if your examination number was 123456. Leaving Certificate – 2025 7 Computer Science, Section C – Ordinary level Space for rough work. This page will not be reviewed by an examiner. Leaving Certificate – 2025 8 Computer Science, Section C – Ordinary level Space for rough work. This page will not be reviewed by an examiner. Leaving Certificate – 2025 9 Computer Science, Section C – Ordinary level Space for rough work. This page will not be reviewed by an examiner. Leaving Certificate – 2025 10 Computer Science, Section C – Ordinary level Space for rough work. This page will not be reviewed by an examiner. Leaving Certificate – 2025 11 Computer Science, Section C – Ordinary level Acknowledgements Images Image on page 4: https://picryl.com/media/worker-tile-tiler-industry-craft-2acc00 Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Ordinary Level Computer Science – Section C Leaving Certificate – 2025 12 Computer Science, Section C – Ordinary level Wednesday 21 May Morning 11:30 – 12:30"
+ },
+ {
+  "id": "cs-2025-ol-q3",
+  "topicId": "cs-2-3",
+  "conceptId": "choose-appropriate-number-system-list-below",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2025 OL Q3",
+  "questionText": "(a) Choose the appropriate number system from the list below and place it in Column B to match the correct base value in Column A. (b) Explain why computers use the binary number system rather than the decimal number system.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Column A Column B",
+    "marks": 6,
+    "accepts": [
+     "Base Value Number system",
+     "2 Binary",
+     "10 Decimal",
+     "16 Hexadecimal",
+     "Each correct item",
+     "Simplicity for Hardware: Computers use electrical circuits, which have two states: on (1) and off (0).",
+     "Reliability: Using just two states (1 and 0) reduces the chance of errors or misinterpretations.",
+     "Efficiency in Processing: The binary system allows computers to perform operations and calculations much faster because it only needs to handle two states.",
+     "Compatibility with Logic: Binary aligns with Boolean logic (true/false), which is the foundation of programming and decision-making in computers."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "cs-2025-ol-q7",
+  "topicId": "cs-2-1",
+  "conceptId": "list-two-ways-abstraction-has-been",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2025 OL Q7",
+  "questionText": "(a) List two ways in which abstraction has been used in the map in Figure 1. (b) What is meant by the term ‘abstraction’ in relation to computer science?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Simplified items on the map are considered forms of abstraction such as:",
+    "marks": 6,
+    "accepts": [
+     "Removing unnecessary details such as buildings, trees etc",
+     "Simplified roads",
+     "Simplified river",
+     "Simplified railway line",
+     "Green areas",
+     "Text labels on street names / road numbers",
+     "Symbols for bus stops",
+     "Place names for important buildings",
+     "Accept any other valid forms of validation given Each correct item",
+     "Abstraction means simplifying complex systems by focusing only on the important details and"
+    ]
+   }
+  ],
+  "stem": "Abstraction is used in maps, such as that in Figure 1 below, to help users read them with more ease. Figure 1"
  }
 ]

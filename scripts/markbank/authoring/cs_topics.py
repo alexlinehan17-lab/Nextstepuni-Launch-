@@ -38,6 +38,10 @@ RULES = [
                    r'\brom\b|cache|fetch[- ]decode|von neumann|transistor|'
                    r'resistor|capacitor|voltage|current|circuit|binary adder|'
                    r'operating system|hardware component|'
+                   # "Operating system layers: Hardware, OS, Application, User"
+                   # is the spec's own list against 2.11-2.13.
+                   r'hardware|software\b|firmware|peripheral|storage device|'
+                   r'input device|output device|motherboard|clock speed|'
                    r'binary(?: number| format| digit)?|hexadecimal|denary|'
                    r'\bbits?\b|\bbytes?\b|base 2|base 16|'
                    r'\bhttps?\b|\btcp\b|\bip\b|\bvoip\b|protocol|'
@@ -77,9 +81,15 @@ RULES = [
                   r'assign\w* roles|work(?:ing)? in a team|collaborat\w+|'
                   r'stakeholder|end users?|requirements?|version control|'
                   r'project management|prototyp\w+|reflect\w* on the design)\b'),
+    # 1.4 "solve problems using skills of logic" and 1.5 "evaluate
+    # alternative solutions to computational problems": a game-strategy
+    # question is a logic problem, which is where the spec puts it.
     ('cs-1-1', 8, r'\b(computational thinking|problem solving|logical thinking|'
                   r'algorithmic thinking|heuristic|simulation|modelling|'
-                  r'automat\w+|systematic (?:process|approach))\b'),
+                  r'automat\w+|systematic (?:process|approach)|'
+                  r'winning (?:position|move|strategy)|losing position|'
+                  r'best move|strategy would you|deconstruct\w*|'
+                  r'alternative solution|trade[- ]?off)\b'),
     # ── Strand 3: the four applied learning tasks ──────────────────────────
     ('cs-3-4', 10, r'\b(embedded system|microprocessor|micro:?bit|arduino|'
                    r'sensor|actuator|analogue input|digital (?:input|output)|'

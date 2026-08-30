@@ -159,7 +159,19 @@ class _CsSource:
         self.path = md.path
 
     def points(self, q, letter=None, roman=None):
-        return self._scheme.points(q, letter, roman)
+        own = self._scheme.points(q, letter, roman)
+        if own or letter is not None or roman is not None:
+            return own
+        # A whole-question key whose answers are printed under its PARTS.
+        # Computer Science prices Section A at the question ("5 marks") and
+        # then states the answer under (a) and (b), so a card citing the
+        # question has to gather what its parts hold. Still the scheme's own
+        # text, in the scheme's own order.
+        out = []
+        for k in self._scheme.parts():
+            if k[0] == q and (k[1] is not None or k[2] is not None):
+                out.extend(self._scheme.points(*k))
+        return out
 
     def marks(self, q, letter=None, roman=None):
         t = self._scheme.tariff(q, letter, roman)
@@ -248,8 +260,6 @@ class Author:
         ref = part_ref(self.year, self.level, q, letter, roman)
 
         question = self.paper.text(q, letter, roman)
-        if not question:
-            raise Refused(f'{ref}: the paper has no text for this part')
 
         # A part that is only a CUE hands its ask to the romans beneath it:
         # 2021 OL Chemistry Q9(c) reads "From your graph find" and (i) and (ii)
@@ -258,15 +268,26 @@ class Author:
         # paper's own words, in the paper's own order. Only where the part
         # cannot stand on its own; a part with a real question of its own keeps
         # it, and a card citing a CHILD is untouched.
-        if roman is None and len(' '.join(question.split())) < 40:
+        # Tested BEFORE the empty check, not after: a question that states
+        # nothing of its own is exactly the case that needs its children.
+        # Computer Science prices Section A at the question and prints the ask
+        # only under (a) and (b), so the parent's own text is empty and a card
+        # citing the question was refused for having no question text at all.
+        if roman is None and len(' '.join((question or '').split())) < 40:
             kids = [k for k in self.paper.parts
-                    if k[0] == q and k[1] == letter and k[2]]
+                    if k[0] == q
+                    and (k[1] == letter if letter else k[1] is not None or k[2])
+                    and (k[1], k[2]) != (letter, roman)]
             if kids:
-                kids.sort(key=lambda k: ROMAN_ORDER.get(k[2], 99))
-                tail = ' '.join(f'({k[2]}) {(self.paper.text(*k) or "").strip()}'
-                                for k in kids)
+                kids.sort(key=lambda k: (k[1] or '', ROMAN_ORDER.get(k[2], 99)))
+                tail = ' '.join(
+                    f'({k[2] or k[1]}) {(self.paper.text(*k) or "").strip()}'
+                    for k in kids)
                 if tail.strip():
-                    question = f'{question.rstrip()} {tail}'.strip()
+                    question = f'{(question or "").rstrip()} {tail}'.strip()
+
+        if not question:
+            raise Refused(f'{ref}: the paper has no text for this part')
 
         # Where a paper sets two questions side by side, the block segmentation
         # welds the neighbour's text onto this one: 2023 OL Q2(c) comes out as

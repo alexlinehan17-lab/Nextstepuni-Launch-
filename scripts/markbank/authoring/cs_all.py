@@ -51,6 +51,36 @@ NOT_PROSE = re.compile(r'^[\W\d]+$')
 MAX_ROWS = 12
 
 
+# An "ask" that is a row of a printed table, a code fragment or a serial-number
+# column the paper reader lifted as prose: "GA5 AOK1", "X234 Y56", "8XT A43Y".
+# It has no verb and no sentence, and filing it under a topic would be filing
+# noise. Refused with its own reason so the count is not read as a gap in the
+# topic rules.
+NOT_AN_ASK = re.compile(r'^(?=.*[A-Z0-9])(?:[A-Z0-9][A-Za-z0-9]*\s*){1,6}$')
+
+
+def looks_like_an_ask(text):
+    t = ' '.join((text or '').split())
+    if not t or NOT_AN_ASK.match(t):
+        return False
+    return len(re.findall(r'[a-z]{3,}', t)) >= 2
+
+
+def points_at_printed_matter(joined):
+    """Card lint's own two gates, applied before the card is written.
+
+    FIG_REF catches "shown in Figure 3" and "the following code"; NAMES_LETTERS
+    catches a question that names a lettered part ("the symbol labelled A")
+    without using a figure word at all, which is the case that reaches the deck
+    looking answerable and is not.
+    """
+    return bool(
+        (cardlint.FIG_REF.search(joined)
+         and not cardlint.SELF_WORK.search(joined)
+         and not cardlint.NO_DEPENDENCY.search(joined))
+        or cardlint.NAMES_LETTERS.search(joined))
+
+
 def cardable(points):
     """The marking points a card may claim, lead-in and noise removed."""
     out = []
@@ -76,6 +106,7 @@ def main():
     for (year, level, _), leaves in sorted(idx.items()):
         A = Author('computer-science', year, level)
         table = A._source('table')
+        unpriced = collections.defaultdict(list)
         for leaf in sorted(leaves):
             section, q, letter, roman = leaf[0], leaf[1], leaf[2], leaf[3]
             ref = (f'{year} {level.upper()} Q{q}'
@@ -97,11 +128,18 @@ def main():
             if not ask.strip():
                 note('the paper reader recovers no ask')
                 continue
+            if not looks_like_an_ask(ask):
+                note('the ask is a table row or code fragment, not a question')
+                continue
             if not rows:
                 note('the scheme states nothing at this key')
                 continue
             if not tariff:
-                note('no tariff that reads one way')
+                # Held for the whole-question pass below rather than refused
+                # outright: the QUESTION is priced even where its parts are
+                # not, and a card citing the question covers everything
+                # beneath it -- reconcile's own rule for a shallower ref.
+                unpriced[(section, q)].append(leaf)
                 continue
             if not topic:
                 note('files under no syllabus topic')
@@ -121,9 +159,7 @@ def main():
             except Exception:                                # noqa: BLE001
                 pass
             joined = ' '.join(f'{stem} {ask}'.split())
-            if (cardlint.FIG_REF.search(joined)
-                    and not cardlint.SELF_WORK.search(joined)
-                    and not cardlint.NO_DEPENDENCY.search(joined)):
+            if points_at_printed_matter(joined):
                 note('points at printed matter the card cannot carry')
                 continue
             if len(rows) > MAX_ROWS:
@@ -144,6 +180,66 @@ def main():
                        use=use, marks=marks, tariff='fixed', card_id=cid)
             except Refused as exc:
                 note(str(exc).split(':', 1)[-1].strip()[:60])
+        # ── whole-question pass ───────────────────────────────────────────
+        # Section A prices the question and states the answer under its parts,
+        # and the marks are not split across them. Splitting 5 over two parts
+        # is a guess; citing the question is not, and the card then holds what
+        # both parts hold. The rows are ONE alt group carrying the question's
+        # whole tariff, because claiming a per-part division the scheme never
+        # printed is the thing being avoided.
+        for (section, q), held in sorted(unpriced.items()):
+            tariff = table.tariff(q)
+            rows = cardable(table.points(q))
+            # The same join A.card will make. paper.text() on a question that
+            # states nothing of its own returns empty, so checking it here
+            # rejected every one of these before the card was even attempted.
+            try:
+                ask = A.paper.text(q, None, None) or ''
+                if len(' '.join(ask.split())) < 40:
+                    kids = sorted((k for k in A.paper.parts if k[0] == q
+                                   and (k[1] is not None or k[2] is not None)),
+                                  key=lambda k: (k[1] or '', k[2] or ''))
+                    tail = ' '.join(f'({k[2] or k[1]}) '
+                                    f'{(A.paper.text(*k) or "").strip()}'
+                                    for k in kids)
+                    ask = f'{ask.rstrip()} {tail}'.strip()
+            except Exception:                                # noqa: BLE001
+                ask = ''
+            ref = f'{year} {level.upper()} Q{q}'
+            if not (tariff and rows and ask.strip()):
+                for _ in held:
+                    refused['no tariff that reads one way'] += 1
+                continue
+            topic, _ = topic_for(ask + ' ' + ' '.join(rows))
+            if not topic:
+                for _ in held:
+                    refused['files under no syllabus topic'] += 1
+                continue
+            stem = ''
+            try:
+                stem = A.paper.stem(q) or ''
+            except Exception:                                # noqa: BLE001
+                pass
+            joined = ' '.join(f'{stem} {ask}'.split())
+            if points_at_printed_matter(joined):
+                for _ in held:
+                    refused['points at printed matter the card cannot carry'] += 1
+                continue
+            try:
+                A.card(q, None, None, topic=topic, concept=concept_for(ask),
+                       source='table', use=[list(range(len(rows[:MAX_ROWS])))],
+                       marks=[tariff], tariff='fixed',
+                       card_id=f'cs-{year}-{level}-q{q}',
+                       checked='The question states nothing of its own: the '
+                               'paper prints the ask only under its parts, and '
+                               'the card carries them joined in the paper\'s '
+                               'own order, each behind its own marker. That is '
+                               'what the paper prints and what this card '
+                               'answers, since it cites the question rather '
+                               'than either part.')
+            except Refused as exc:
+                for _ in held:
+                    refused[str(exc).split(':', 1)[-1].strip()[:60]] += 1
         cards.extend(A.cards)
 
     if args.report:
