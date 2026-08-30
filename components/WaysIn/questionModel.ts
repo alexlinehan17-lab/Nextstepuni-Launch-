@@ -372,6 +372,131 @@ const ADDITIONAL_COMMANDS: CommandDemand[] = ADDITIONAL_COMMAND_GROUPS.flatMap(g
   }))
 ));
 
+/**
+ * Gaeilge instructions used on the Leaving Certificate Irish papers.
+ *
+ * These are deliberately modelled as demands rather than translated text.
+ * Ways In can therefore explain the shape of the job in English while the
+ * exact SEC wording remains untouched on the card and in every citation.
+ */
+const IRISH_COMMAND_GROUPS: Array<{
+  surfaces: string[];
+  requiredAction: string;
+  answerShape: string;
+  commonTrap: string;
+}> = [
+  {
+    surfaces: ['déan plé', 'pléigh', 'é sin a phlé'],
+    requiredAction: 'Develop a focused discussion of the exact statement or idea named, using relevant evidence from the text.',
+    answerShape: 'Clear position or main idea → developed points → accurate evidence → links back to the wording of the question.',
+    commonTrap: 'Retelling the text without discussing the particular statement or idea in the question.',
+  },
+  {
+    surfaces: ['déan cur síos', 'cuir síos', 'tabhair cuntas'],
+    requiredAction: 'Describe the requested person, image, sequence or events accurately and in a clear order.',
+    answerShape: 'Relevant detail or event → supporting detail from the named text, repeated in a logical order where needed.',
+    commonTrap: 'Giving a general summary while missing the exact person, period, image or events named.',
+  },
+  {
+    surfaces: ['scríobh síos', 'luaigh', 'tabhair'],
+    requiredAction: 'Supply exactly the information requested, using a separate response for every item the question prints.',
+    answerShape: 'One direct, distinct item for each requested point, reason, example or detail.',
+    commonTrap: 'Repeating one idea in different words or overlooking the number of items requested.',
+  },
+  {
+    surfaces: ['aimsigh', 'ainmnigh'],
+    requiredAction: 'Identify the precise example, feature, person or form requested.',
+    answerShape: 'The exact item → its location or supporting wording where the question asks for it.',
+    commonTrap: 'Explaining the surrounding passage without identifying the requested item itself.',
+  },
+  {
+    surfaces: ['mínigh'],
+    requiredAction: 'Explain the requested idea, image or reason and make the connection clear.',
+    answerShape: 'Main explanation → relevant detail or evidence → link showing how it answers the question.',
+    commonTrap: 'Naming a detail without explaining what it shows or why it matters.',
+  },
+  {
+    surfaces: ['léirigh'],
+    requiredAction: 'Show the requested feature clearly with an accurate example from the named source.',
+    answerShape: 'Feature or claim → precise example → short explanation of how the example demonstrates it.',
+    commonTrap: 'Giving an example without connecting it to the feature being demonstrated.',
+  },
+  {
+    surfaces: ['cuir i gcomparáid'],
+    requiredAction: 'Compare the named things directly, using corresponding details for each side.',
+    answerShape: 'First item is … whereas the second is …, repeated for each relevant comparison.',
+    commonTrap: 'Describing the two things separately without making the comparison explicit.',
+  },
+  {
+    surfaces: ['líon isteach', 'comhlánaigh'],
+    requiredAction: 'Complete every requested blank, row or field in the printed structure.',
+    answerShape: 'Work through the supplied structure in order and enter one unambiguous response in every required place.',
+    commonTrap: 'Answering the first field but overlooking a later row or heading.',
+  },
+  {
+    surfaces: ['roghnaigh'],
+    requiredAction: 'Choose the item or option that meets the condition in the question.',
+    answerShape: 'A clear selection using the paper’s own title, label or wording, followed by support where requested.',
+    commonTrap: 'Listing several possibilities instead of making the requested choice.',
+  },
+  {
+    surfaces: ['scríobh', 'ceap', 'freagair'],
+    requiredAction: 'Produce the requested response in the exact form, audience and topic set by the paper.',
+    answerShape: 'Required form and audience → relevant developed content → an appropriate, coherent finish.',
+    commonTrap: 'Writing on the general topic while overlooking the required format, audience or chosen title.',
+  },
+  {
+    surfaces: ['ríomh'],
+    requiredAction: 'Work out the requested value from the information supplied and show a clear route to it.',
+    answerShape: 'Relevant values → method or calculation → result with its appropriate unit.',
+    commonTrap: 'Giving only a final number without showing how it was obtained.',
+  },
+  {
+    surfaces: ['tarraing'],
+    requiredAction: 'Draw the requested diagram, graph or representation with its essential labels and conventions.',
+    answerShape: 'Accurate overall form → required features → labels, scale or units where requested.',
+    commonTrap: 'Drawing a recognisable shape but omitting the labels or conventions that carry marks.',
+  },
+  {
+    surfaces: ['cén fáth', 'cad chuige'],
+    requiredAction: 'Give the reason that answers the exact situation named in the question.',
+    answerShape: 'Relevant reason → short link to the event, decision or result in the question.',
+    commonTrap: 'Repeating what happened without explaining why it happened.',
+  },
+  {
+    surfaces: ['cé mhéad', 'cá fhad'],
+    requiredAction: 'Supply the exact quantity, duration or amount requested.',
+    answerShape: 'One precise amount or duration, including its unit where the source supplies one.',
+    commonTrap: 'Giving related detail without committing to the requested quantity.',
+  },
+  {
+    surfaces: ['cén', 'cad é', 'cad atá', 'cad', 'cé acu', 'cé', 'céard', 'conas', 'cá', 'cár', 'cathain'],
+    requiredAction: 'Give the direct identity, detail, place, time or method requested by the question.',
+    answerShape: 'A direct response to the exact interrogative phrase, with support only where requested.',
+    commonTrap: 'Writing relevant background without supplying the particular information asked for.',
+  },
+  {
+    surfaces: ['an dóigh leat', 'an maith leat', 'an bhfuil', 'ar thaitin'],
+    requiredAction: 'Make a clear judgement and support it with the number of reasons or examples requested.',
+    answerShape: 'Clear judgement → relevant reason or evidence → explicit link back to the question.',
+    commonTrap: 'Giving evidence without stating your own answer to the judgement question.',
+  },
+];
+
+const IRISH_COMMANDS: CommandDemand[] = IRISH_COMMAND_GROUPS.flatMap(group => (
+  group.surfaces.map(surface => ({
+    surface,
+    requiredAction: group.requiredAction,
+    answerShape: group.answerShape,
+    commonTrap: group.commonTrap,
+  }))
+));
+const IRISH_COMMAND_SURFACES = new Set(IRISH_COMMANDS.map(command => command.surface));
+const IRISH_QUESTION_COMMANDS = new Set(IRISH_COMMAND_GROUPS.slice(-4).flatMap(group => group.surfaces));
+const IRISH_HEADING_FOLLOWING_COMMANDS = new Set([
+  'déan cur síos', 'déan plé', 'é sin a phlé', 'freagair', 'pléigh', 'tabhair cuntas',
+]);
+
 const commandDemands: CommandDemand[] = [
   ...COMMAND_WORDS.flatMap(entry => [entry.word, ...(entry.aliases ?? [])].map(surface => ({
     surface,
@@ -381,6 +506,7 @@ const commandDemands: CommandDemand[] = [
   }))),
   ...EXTRA_COMMANDS,
   ...ADDITIONAL_COMMANDS,
+  ...IRISH_COMMANDS,
 ].sort((a, b) => b.surface.length - a.surface.length);
 
 const STOP_WORDS = new Set([
@@ -389,6 +515,11 @@ const STOP_WORDS = new Set([
   'each', 'explain', 'following', 'given', 'identify', 'including', 'into',
   'itself', 'marks', 'other', 'question', 'should', 'state', 'their', 'there',
   'these', 'they', 'those', 'through', 'using', 'which', 'while', 'with', 'would',
+  // High-frequency Gaeilge function words. Keeping these out makes the
+  // keyword view useful rather than a list of articles and prepositions.
+  'ach', 'agus', 'an', 'ar', 'atá', 'beidh', 'bhí', 'cuid', 'dar', 'de', 'den',
+  'do', 'faoi', 'faoin', 'gach', 'go', 'iad', 'idir', 'leis', 'leat', 'lena',
+  'maidir', 'mar', 'nach', 'ní', 'nó', 'seo', 'sin', 'síos', 'thíos', 'thuas',
 ]);
 
 const clean = (value: string) => value.replace(/\s+/g, ' ').trim();
@@ -509,7 +640,7 @@ export function splitQuestionLines(text: string): string[] {
   const out: string[] = [];
   for (const line of physical) {
     const parts = splitAtPrintedPartLabels(line).flatMap(part => part.split(
-      /(?<=[?!.;:])\s+(?=(?:(?:\((?:[a-hA-H]|[ivxIVX]+|[1-8])\)|(?:[a-hA-H]|[ivxIVX]+|[1-8])[.)])\s+)?[A-Z])/,
+      /(?<=[?!.;:])\s+(?=(?:(?:\((?:[a-hA-H]|[ivxIVX]+|[1-8])\)|(?:[a-hA-H]|[ivxIVX]+|[1-8])[.)])\s+)?[A-ZÁÉÍÓÚ])/,
     )).map(clean).filter(Boolean);
     for (let index = 0; index < parts.length; index += 1) {
       const value = parts[index];
@@ -586,7 +717,39 @@ function isLikelyCommandUse(text: string, index: number, match: string): boolean
   const before = text.slice(0, index);
   const after = text.slice(index + match.length);
   const clausePrefix = clausePrefixBefore(text, index);
-  const prefix = clausePrefix.trim();
+  // A command immediately after a closed quotation is still at the start of
+  // the instruction: “…” Déan plé …. Remove only the quote furniture here;
+  // the verbatim question is never altered.
+  const prefix = clausePrefix.trim().replace(/^[‘’“”'"]+|[‘’“”'"]+$/gu, '').trim();
+
+  if (IRISH_QUESTION_COMMANDS.has(key)) {
+    if (!endsAsQuestion(text, index)) return false;
+    if (!prefix) return true;
+    if (/^(?:ag|ar|as|de|do|faoi|i|le|ó|trí)\s+$/iu.test(prefix)) return true;
+    if (/^(?:bunaithe ar|de réir|i do thuairim|i d’fhocail féin|maidir le|ón eolas|ón sliocht|sa sliocht|thuas)\b[^,]{0,220},\s*$/iu.test(prefix)) {
+      return true;
+    }
+    return false;
+  }
+
+  if (IRISH_COMMAND_SURFACES.has(key)) {
+    if (!prefix) return true;
+    if (/(?:,|[—–]|(?:^|\s)-|[‘’“”'"])\s*$/.test(clausePrefix)) return true;
+    if (/\b(?:agus|ansin|nó)\s+$/iu.test(clausePrefix)) return true;
+    // Prescribed-work questions often print the title as an unpunctuated
+    // heading immediately before the task: “Oisín i dTír na nÓg Déan plé …”.
+    // Restrict this allowance to unmistakable task phrases and reject an
+    // interrogative prefix, so “Cén fáth ar scríobh …” stays one question.
+    if (
+      IRISH_HEADING_FOLLOWING_COMMANDS.has(key)
+      && index <= 120
+      && !/^(?:an bhfuil|ar thaitin|cad|cá|cár|cathain|cé|cén|conas)\b/iu.test(prefix)
+    ) return true;
+    if (/^(?:bunaithe ar|de réir|i d’fhocail féin|maidir le|ón eolas|ón sliocht|sa sliocht|thuas)\b.{0,220}$/iu.test(prefix)) {
+      return true;
+    }
+    return false;
+  }
 
   // “the outline diagram”, “a list of terms” and “the label on the bottle”
   // are nouns. Treating them as imperatives hid the real Identify/Match/State
@@ -655,7 +818,13 @@ function isLikelyCommandUse(text: string, index: number, match: string): boolean
 function commandMatches(text: string): CommandMatch[] {
   const candidates: CommandMatch[] = [];
   for (const demand of commandDemands) {
-    const re = new RegExp(`\\b${escapeRe(demand.surface)}\\b`, 'gi');
+    // JavaScript's `\b` boundary is ASCII-only, so it cannot safely surround
+    // commands ending in á/é/í/ó/ú. Unicode letter guards work for both the
+    // established English vocabulary and the Gaeilge forms.
+    const re = new RegExp(
+      `(?<![\\p{L}\\p{N}_])${escapeRe(demand.surface)}(?![\\p{L}\\p{N}_])`,
+      'giu',
+    );
     for (const match of text.matchAll(re)) {
       if (match.index === undefined || !isLikelyCommandUse(text, match.index, match[0])) continue;
       candidates.push({
@@ -683,7 +852,7 @@ function commandMatches(text: string): CommandMatch[] {
     if (previous) {
       const between = text.slice(previous.end, candidate.index);
       const newClause = /[.?!;:]|\((?:[ivx]+|[a-h])\)/i.test(between);
-      const joinedInstruction = /\b(?:and|then)\s+$/i.test(text.slice(0, candidate.index));
+      const joinedInstruction = /\b(?:agus|and|ansin|then)\s+$/iu.test(text.slice(0, candidate.index));
       if (!newClause && !joinedInstruction) continue;
     }
     selected.push(candidate);
@@ -705,6 +874,8 @@ function findConstraints(text: string, source: WaysInQuestionSource): string[] {
     /\b(?:any\s+)?(?:one|two|three|four|five|six|seven|eight|[1-8])\s+(?:distinct\s+|different\s+)?(?:features?|reasons?|examples?|advantages?|disadvantages?|differences?|similarities?|points?|factors?|ways?|items?|uses?|steps?|terms?|methods?|properties?|functions?)\b[^.;?]*/gi,
     /\b(?:both|each|respectively)\b[^.;?]*/gi,
     /\b(?:with reference to|using|based on|according to|from the (?:diagram|graph|table|passage))\b[^.;?]*/gi,
+    /\b(?:aon|amháin|dhá|dá|trí|ceithre|cúig|sé|seacht|ocht|[1-8])\s+(?:[\p{L}’'-]+\s+){0,2}(?:cháilíochtaí?|chúiseanna?|chuspóirí?|dheiseanna?|dhúshláin?|fháthanna?|ghnéithe?|íomhánna?|imeachtaí?|phíosaí?|phointí?|rudaí?|shamplaí?|shaintréithe?|shlí|shlite|thréithe?|athruithe?|bearta?|ceachtanna?|mothúcháin?|teicnící?|úsáidí?)\b[^.;?]*/giu,
+    /\b(?:bunaithe ar|dar leat|de réir|i d’fhocail féin|is leor\s+\d+\s+focal|mar thacaíocht le)\b[^.;?]*/giu,
   ];
   for (const pattern of patterns) {
     for (const match of text.matchAll(pattern)) {
@@ -785,10 +956,13 @@ function findKeywords(text: string, commands: CommandDemand[]): string[] {
     text.matchAll(/[A-Za-zÀ-ÖØ-öø-ÿ][A-Za-zÀ-ÖØ-öø-ÿ'-]{3,}/g),
     match => match[0],
   );
+  const commandTokens = new Set(commands.flatMap(command => (
+    command.surface.toLowerCase().match(/[A-Za-zÀ-ÖØ-öø-ÿ]+/g) ?? []
+  )));
   const counts = new Map<string, { label: string; count: number; first: number }>();
   words.forEach((word, index) => {
     const key = word.toLowerCase();
-    if (STOP_WORDS.has(key) || commands.some(command => key === command.surface.toLowerCase())) return;
+    if (STOP_WORDS.has(key) || commandTokens.has(key)) return;
     const current = counts.get(key);
     counts.set(key, current ? { ...current, count: current.count + 1 } : { label: word, count: 1, first: index });
   });
@@ -823,6 +997,7 @@ function buildHighlights(text: string, commands: CommandDemand[], constraints: s
 
 const NUMBER_WORDS: Record<string, number> = {
   one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8,
+  aon: 1, amháin: 1, dhá: 2, dá: 2, trí: 3, ceithre: 4, cúig: 5, sé: 6, seacht: 7, ocht: 8,
 };
 
 /**
@@ -911,6 +1086,21 @@ export function findPrintedPlanShape(text: string): WaysInQuestionModel['planSha
     }
   }
 
+  const irishChoice = /\b((ceann amháin|dhá cheann|trí cinn|ceithre cinn)\s+(?:de|díobh)\s+(?:na\s+|seo\s+|sin\s+)?(?:cinn|hábhair|roghanna|seo|sin)?)/iu.exec(text);
+  if (irishChoice) {
+    const count = irishChoice[2].toLowerCase() === 'ceann amháin'
+      ? 1
+      : countValue(irishChoice[2].split(/\s+/u)[0]);
+    if (count) {
+      return {
+        count,
+        basis: 'printed',
+        evidence: irishChoice[1],
+        structure: 'choice',
+      };
+    }
+  }
+
   const blanks = text.match(/_{3,}/g) ?? [];
   if (blanks.length >= 1 && blanks.length <= 8) {
     return {
@@ -953,6 +1143,54 @@ export function findPrintedPlanShape(text: string): WaysInQuestionModel['planSha
     }
   }
 
+  const commands = commandMatches(text);
+  const irishCountNouns = [
+    'cháilíochtaí?', 'chúiseanna?', 'chuspóirí?', 'dheiseanna?', 'dhúshláin?',
+    'fháthanna?', 'ghnéithe?', 'íomhánna?', 'imeachtaí?', 'phíosaí?',
+    'phoint(?:e|í)(?:\\s+eolais)?', 'rudaí?', 'shamplaí?', 'shaintréithe?',
+    'shlí', 'shlite', 'thréithe?', 'athruithe?', 'bearta?', 'ceachtanna?',
+    'mothúcháin?', 'teicnící?', 'úsáidí?',
+  ].join('|');
+  const irishPreCount = new RegExp(
+    `(?<![\\p{L}\\p{N}_])(aon|dhá|dá|trí|ceithre|cúig|sé|seacht|ocht|[1-8])\\s+(?:[\\p{L}’'-]+\\s+){0,2}(?:${irishCountNouns})(?![\\p{L}\\p{N}_])`,
+    'giu',
+  );
+  const irishPostCount = new RegExp(
+    `(?<![\\p{L}\\p{N}_])(?:pointe(?:\\s+eolais)?|rud|cúis|fáth|sampla|úsáid|beart|deis|dúshlán|ceacht|tréith|íomhá|mothúchán|teicníc)\\s+amháin(?![\\p{L}\\p{N}_])`,
+    'giu',
+  );
+  const irishCounts = commands.length === 1
+    ? [
+        ...[...text.matchAll(irishPreCount)].map(match => ({
+          count: countValue(match[1]),
+          evidence: match[0],
+        })),
+        ...[...text.matchAll(irishPostCount)].map(match => ({
+          count: 1,
+          evidence: match[0],
+        })),
+      ].filter((item): item is { count: number; evidence: string } => item.count !== null)
+    : [];
+  if (irishCounts.length === 1) {
+    return {
+      count: irishCounts[0].count,
+      basis: 'printed',
+      evidence: irishCounts[0].evidence,
+      structure: 'count-phrase',
+    };
+  }
+  if (irishCounts.length >= 2) {
+    const total = irishCounts.reduce((sum, item) => sum + item.count, 0);
+    if (total >= 2 && total <= 8) {
+      return {
+        count: total,
+        basis: 'printed',
+        evidence: irishCounts.map(item => item.evidence).join(', '),
+        structure: 'count-phrase',
+      };
+    }
+  }
+
   const number = '(one|two|three|four|five|six|seven|eight|[1-8])';
   // `modifiers` captures the words between the count and its noun so they can
   // be vetted below; the noun itself still has to be on the allowlist.
@@ -960,7 +1198,6 @@ export function findPrintedPlanShape(text: string): WaysInQuestionModel['planSha
     `\\b(any\\s+)?${number}\\s+(${COUNT_MODIFIER_WORD}{0,${COUNT_MODIFIER_LIMIT}})(?:${COUNTED_ANSWER_NOUNS})\\b`,
     'gi',
   );
-  const commands = commandMatches(text);
   const counted = (commands.length === 1 ? [...text.matchAll(countedPattern)] : []).filter(match => {
     if (match.index === undefined) return false;
     const before = text.slice(0, match.index);
@@ -1029,12 +1266,19 @@ export function findPrintedPlanShape(text: string): WaysInQuestionModel['planSha
   return { count: 1, basis: 'flexible' };
 }
 
-const CALCULATION_COMMANDS = new Set(['calculate', 'convert', 'derive', 'estimate']);
-const COMPARISON_COMMANDS = new Set(['compare', 'contrast', 'differentiate', 'distinguish', 'what distinguishes']);
-const EXPLANATION_COMMANDS = new Set([
-  'account for', 'comment', 'discuss', 'evaluate', 'explain', 'justify', 'predict', 'suggest', 'why',
+const CALCULATION_COMMANDS = new Set(['calculate', 'convert', 'derive', 'estimate', 'ríomh']);
+const COMPARISON_COMMANDS = new Set([
+  'compare', 'contrast', 'cuir i gcomparáid', 'differentiate', 'distinguish', 'what distinguishes',
 ]);
-const PROCEDURE_COMMANDS = new Set(['construct', 'describe', 'devise', 'draft', 'how can', 'how does', 'how would', 'outline', 'set out']);
+const EXPLANATION_COMMANDS = new Set([
+  'account for', 'an dóigh leat', 'an maith leat', 'ar thaitin', 'cén fáth', 'cad chuige',
+  'comment', 'déan plé', 'discuss', 'é sin a phlé', 'evaluate', 'explain', 'justify',
+  'léirigh', 'mínigh', 'pléigh', 'predict', 'suggest', 'why',
+]);
+const PROCEDURE_COMMANDS = new Set([
+  'construct', 'déan cur síos', 'describe', 'devise', 'draft', 'how can', 'how does',
+  'how would', 'outline', 'set out', 'tabhair cuntas',
+]);
 
 const prompt = (
   id: string,
@@ -1161,7 +1405,7 @@ function buildPlanPrompts(
   }
 
   if (surfaces.some(surface => PROCEDURE_COMMANDS.has(surface))
-    && /\b(?:how|method|procedure|steps?|prepare|carry out|dilut|experiment|investigat)\b/i.test(`${source.stem ?? ''} ${source.questionText}`)) {
+    && /(?:\b(?:how|method|procedure|steps?|prepare|carry out|dilut|experiment|investigat)\b|\b(?:conas|modh|céimeanna?|ullmhaigh|turgnamh)\b)/iu.test(`${source.stem ?? ''} ${source.questionText}`)) {
     return {
       kind: 'procedure',
       prompts: [

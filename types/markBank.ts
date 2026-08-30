@@ -210,6 +210,31 @@ export interface CardSourceMaterial {
   presentationNote: string;
 }
 
+/**
+ * A real recording required to answer a listening-comprehension card.
+ *
+ * Audio is deliberately modelled separately from a PDF source.  Treating the
+ * listening booklet as if it were the source would leave the question looking
+ * complete while withholding the one thing the student actually has to hear.
+ * `playbackUrl` points at a verified mirror of the SEC recording; the canonical
+ * SEC identity remains explicit so a mirror can be replaced without changing
+ * the card or its progress history.
+ */
+export interface CardAudioMaterial {
+  kind: 'source-audio';
+  /** The paper's own section identity, e.g. "Cuid B · Comhrá a hAon". */
+  label: string;
+  title: string;
+  /** Verified playback copy of the official recording. */
+  playbackUrl: string;
+  /** Stable filename published by the State Examinations Commission. */
+  secFileid: string;
+  /** Canonical SEC archive URL, retained even when its hot-link is gated. */
+  canonicalUrl: string;
+  attribution: string;
+  presentationNote: string;
+}
+
 /** Fields every card shares, whatever its provenance. */
 interface CardBase {
   /** No dots: a dot is a Firestore field-path separator, and card ids are used as
@@ -258,6 +283,8 @@ export interface SecCardBase extends CardBase {
   /** Required reading carried by the question. It is available before reveal
    *  and is rendered page-for-page from `paperFileid`. */
   sourceMaterial?: CardSourceMaterial;
+  /** Required listening recording, available on the question side. */
+  audioMaterial?: CardAudioMaterial;
   /** Verbatim from the QUESTION PAPER — not the scheme. Required, always. */
   questionText: string;
   /** The tariff printed on the paper. Row marks must reconcile against this. */
@@ -386,6 +413,43 @@ export interface PclmRubric {
   indicativeMaterialNote: string;
 }
 
+export type IrishGuidanceKind =
+  /** A bounded answer or tariff printed by the scheme. */
+  | 'exact'
+  /** Non-exhaustive possible content which must never become a checklist. */
+  | 'indicative'
+  /** A published quality band such as Cumas/Cruinneas Gaeilge. */
+  | 'quality';
+
+/** One independently placed part of the SEC Irish marking scheme. */
+export interface IrishCriterion {
+  id: string;
+  label: string;
+  /** Awards add to the mark; deductions are subtracted from it. */
+  kind: 'award' | 'deduction';
+  maxMarks: number;
+  permittedMarks: number[];
+  guidanceKind: IrishGuidanceKind;
+  /** Verbatim or tightly bounded scheme guidance, never invented content. */
+  guidance: string[];
+}
+
+/**
+ * Irish has its own published grammar: Eolas/Ábhar, Cumas Gaeilge, task/style
+ * marks and (at Ordinary Level literature) explicit language deductions.  It
+ * is not PCLM and cannot truthfully be rendered as English's grade grid.
+ */
+export interface IrishRubric {
+  system: 'irish';
+  /** Things the printed task explicitly requires. They carry no marks alone. */
+  taskRequirements: string[];
+  criteria: IrishCriterion[];
+  /** Explains whether displayed examples are exhaustive or indicative. */
+  markingGuideNote: string;
+}
+
+export type SecRubric = PclmRubric | IrishRubric;
+
 /** A prose/short-answer SEC card. */
 export interface SecQuestionCard extends SecPointCardBase {
   kind: 'question';
@@ -416,7 +480,7 @@ export interface SecDiagramCard extends SecPointCardBase {
  */
 export interface SecRubricCard extends SecCardBase {
   kind: 'rubric';
-  rubric: PclmRubric;
+  rubric: SecRubric;
 }
 
 /**
@@ -559,6 +623,20 @@ export function groupMarks(g: { claimMax: number; perOption: number; perOptionSt
 
 export function tariffReconciles(card: SecCard): boolean {
   if (isRubricCard(card)) {
+    if (card.rubric.system === 'irish') {
+      const { criteria } = card.rubric;
+      const awardMaximum = criteria
+        .filter(criterion => criterion.kind === 'award')
+        .reduce((sum, criterion) => sum + criterion.maxMarks, 0);
+      return criteria.length > 0
+        && new Set(criteria.map(criterion => criterion.id)).size === criteria.length
+        && awardMaximum === card.totalMarks
+        && criteria.every(criterion =>
+          criterion.permittedMarks.length > 0
+          && Math.min(...criterion.permittedMarks) === 0
+          && Math.max(...criterion.permittedMarks) === criterion.maxMarks
+          && new Set(criterion.permittedMarks).size === criterion.permittedMarks.length);
+    }
     const { assessment } = card.rubric;
     const bandsReconcile = (bands: PclmGradeBand[], total: number) => {
       const marks = bands.flatMap(band => band.marks);

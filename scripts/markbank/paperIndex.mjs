@@ -64,10 +64,11 @@ const CORPUS_KEY = {
   'home-economics': 'home-economics-s-and-s',
 };
 
-/** The English-language sitting of one subject, year and level. */
+/** The sitting of one subject, year and level in its authored paper language. */
 export const paperEntry = (subjectId, year, level) =>
   (paperIndex[CORPUS_KEY[subjectId] ?? subjectId] ?? [])
-    .find(e => e.year === year && e.level === level && e.lang === 'ev');
+    .find(e => e.year === year && e.level === level
+      && e.lang === (subjectId === 'irish' ? 'iv' : 'ev'));
 
 /**
  * The sections a paper's label covers: "Section A&B" -> {A, B}, "Section 2 & 3"
@@ -109,5 +110,16 @@ export function resolvePaperFileid(subjectId, year, level, section) {
   if (!entry?.papers?.length) return null;
   // One paper for the year means there is nothing to choose between.
   if (entry.papers.length === 1) return stripPdf(entry.papers[0].doc?.f);
-  return stripPdf(entry.papers.find(p => labelCovers(p.label).has(section))?.doc?.f);
+  const direct = entry.papers.find(p => labelCovers(p.label).has(section));
+  if (direct) return stripPdf(direct.doc?.f);
+  // The 2022 Irish OL Paper 1 is labelled only "Exam Paper" in the SEC index,
+  // beside an explicitly labelled Paper Two.  The sole unnumbered sibling is
+  // therefore Paper 1; this evidence-based fallback stays null for ambiguous
+  // multi-document entries.
+  const unnumbered = entry.papers.filter(p => labelCovers(p.label).size === 0);
+  if (section === '1' && unnumbered.length === 1
+      && entry.papers.some(p => labelCovers(p.label).has('2'))) {
+    return stripPdf(unnumbered[0].doc?.f);
+  }
+  return null;
 }

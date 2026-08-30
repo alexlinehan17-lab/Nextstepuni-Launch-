@@ -48,6 +48,8 @@ export interface StrandRef {
  */
 const englishCurriculum = CURRICULUM.find(subject => subject.id === 'english');
 if (!englishCurriculum) throw new Error('Canonical English curriculum is missing');
+const irishCurriculum = CURRICULUM.find(subject => subject.id === 'irish');
+if (!irishCurriculum) throw new Error('Canonical Irish curriculum is missing');
 
 // Put the live Paper 1 areas first. The canonical curriculum starts with the
 // much larger Paper 2 catalogue, which otherwise buries all 19 available
@@ -72,6 +74,25 @@ export const ENGLISH_STRANDS: StrandRef[] = [...englishCurriculum.strands]
       title: topic.name,
     })),
   }));
+
+/**
+ * The 2021–2025 Irish papers use the outgoing syllabus.  Keep the canonical
+ * Gaeilge names and taxonomy; Mark Bank hides oral and 2027+ rows because this
+ * completed written-paper corpus contains no card against them.
+ */
+export const IRISH_STRANDS: StrandRef[] = irishCurriculum.strands.map(strand => ({
+  id: strand.id,
+  label: strand.id === 'irish-1' || strand.id === 'irish-2' ? 'Páipéar 1' :
+    strand.id === 'irish-0' ? 'Béaltriail' : 'Páipéar 2',
+  title: strand.name,
+  topics: strand.subtopics
+    .filter((topic): topic is { id: string; name: string } => Boolean(topic.id))
+    .map(topic => ({
+      id: topic.id,
+      code: topic.id.replace(/^irish-(\d+)-/, '$1.'),
+      title: topic.name,
+    })),
+}));
 
 /** The redeveloped specification's own structure, verbatim from the spec. */
 export const STRANDS: StrandRef[] = [
@@ -738,6 +759,7 @@ export const SUBJECTS = [
   { id: 'construction-studies', title: 'Construction Studies', strands: CONSTRUCTION_STUDIES_STRANDS, spec: 'Ordinary and Higher Level syllabus' },
   { id: 'maths', title: 'Mathematics', strands: MATHS_STRANDS, spec: 'syllabus for examination from 2015' },
   { id: 'english', title: 'English', strands: ENGLISH_STRANDS, spec: 'outgoing syllabus examined through 2028' },
+  { id: 'irish', title: 'Irish', strands: IRISH_STRANDS, spec: 'outgoing Leaving Certificate syllabus' },
 ] as const;
 
 export type SubjectId = (typeof SUBJECTS)[number]['id'];
@@ -986,6 +1008,10 @@ const DECKS: Record<string, Record<Level, () => Promise<{ CARDS: SecCard[] }>>> 
   english: {
     higher: () => import('./cards/english/higher'),
     ordinary: () => import('./cards/english/ordinary'),
+  },
+  irish: {
+    higher: () => import('./cards/irish/higher'),
+    ordinary: () => import('./cards/irish/ordinary'),
   },
 };
 

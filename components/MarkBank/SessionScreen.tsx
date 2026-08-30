@@ -41,9 +41,11 @@ import {
   isPointCard,
   isRubricCard,
   rowId,
+  type IrishCriterion,
   type LabelKey,
   type MarkRow,
   type PclmCriterionId,
+  type PclmRubric,
   type SecCard,
   type SecRubricCard,
 } from '../../types/markBank';
@@ -56,6 +58,7 @@ import WaysInPanel, {
   type WaysInWork,
 } from './WaysInPanel';
 import SourceMaterialReader from './SourceMaterialReader';
+import AudioSourcePlayer from './AudioSourcePlayer';
 
 const EASE = [0.16, 1, 0.3, 1] as number[];
 
@@ -267,6 +270,9 @@ export type PclmScoreId =
   | `component:${string}`
   | `component:${string}:${PclmCriterionId}`;
 export type PclmScores = Partial<Record<PclmScoreId, number>>;
+export type IrishScoreId = `irish:${string}`;
+export type RubricScoreId = PclmScoreId | IrishScoreId;
+export type RubricScores = Partial<Record<RubricScoreId, number>>;
 
 const componentCombinedId = (componentId: string) =>
   `component:${componentId}` as const;
@@ -280,6 +286,7 @@ const componentCriterionId = (componentId: string, criterionId: PclmCriterionId)
  * never award C or L above P.
  */
 export function effectivePclmScores(card: SecRubricCard, scores: PclmScores): PclmScores {
+  if (card.rubric.system !== 'pclm') return {};
   const assessment = card.rubric.assessment;
   if (assessment.mode === 'combined') {
     return { combined: scores.combined ?? 0 };
@@ -316,6 +323,7 @@ export function effectivePclmScores(card: SecRubricCard, scores: PclmScores): Pc
 }
 
 export function pclmMarks(card: SecRubricCard, scores: PclmScores): number {
+  if (card.rubric.system !== 'pclm') return 0;
   const effective = effectivePclmScores(card, scores);
   const assessment = card.rubric.assessment;
   if (assessment.mode === 'combined') return effective.combined ?? 0;
@@ -339,6 +347,33 @@ export function pclmMarks(card: SecRubricCard, scores: PclmScores): number {
 /** Translate the official mark placement into the scheduler's three memories. */
 export function suggestPclmGrade(card: SecRubricCard, scores: PclmScores): MarkBankGrade {
   const ratio = pclmMarks(card, scores) / card.totalMarks;
+  if (ratio >= 0.7) return 'got';
+  if (ratio >= 0.4) return 'shaky';
+  return 'missed';
+}
+
+export const irishScoreId = (criterionId: string) =>
+  `irish:${criterionId}` as const;
+
+/** Awards add to the Irish mark; the scheme's explicit language penalties subtract. */
+export function irishMarks(card: SecRubricCard, scores: RubricScores): number {
+  if (card.rubric.system !== 'irish') return 0;
+  const total = card.rubric.criteria.reduce((sum, criterion) => {
+    const value = scores[irishScoreId(criterion.id)] ?? 0;
+    return criterion.kind === 'deduction' ? sum - value : sum + value;
+  }, 0);
+  return Math.max(0, Math.min(card.totalMarks, total));
+}
+
+export function rubricMarks(card: SecRubricCard, scores: RubricScores): number {
+  return card.rubric.system === 'irish'
+    ? irishMarks(card, scores)
+    : pclmMarks(card, scores as PclmScores);
+}
+
+/** Translate either published rubric into the scheduler's three memories. */
+export function suggestRubricGrade(card: SecRubricCard, scores: RubricScores): MarkBankGrade {
+  const ratio = rubricMarks(card, scores) / card.totalMarks;
   if (ratio >= 0.7) return 'got';
   if (ratio >= 0.4) return 'shaky';
   return 'missed';
@@ -662,8 +697,8 @@ const MarkRowView: React.FC<{
 
 /* ---------------------------------------------------------- PCLM rubric ---- */
 
-const RubricPanel: React.FC<{
-  card: SecRubricCard;
+const PclmRubricPanel: React.FC<{
+  card: SecRubricCard & { rubric: PclmRubric };
   scores: PclmScores;
   requirementChecks: Record<number, boolean>;
   onScore: (id: PclmScoreId, marks: number) => void;
@@ -954,6 +989,228 @@ const RubricPanel: React.FC<{
   );
 };
 
+/* --------------------------------------------------------- Irish rubric ---- */
+
+const IrishRubricPanel: React.FC<{
+  card: SecRubricCard & { rubric: Extract<SecRubricCard['rubric'], { system: 'irish' }> };
+  scores: RubricScores;
+  requirementChecks: Record<number, boolean>;
+  onScore: (id: RubricScoreId, marks: number) => void;
+  onRequirement: (index: number) => void;
+}> = ({ card, scores, requirementChecks, onScore, onRequirement }) => {
+  const { rubric } = card;
+  const total = irishMarks(card, scores);
+
+  const guidanceLabel = (criterion: IrishCriterion) => {
+    if (criterion.guidanceKind === 'exact') return 'Official answers and tariff';
+    if (criterion.guidanceKind === 'quality') return 'Published quality description';
+    return 'Possible directions — not a checklist';
+  };
+
+  const scoreControl = (criterion: IrishCriterion) => {
+    const id = irishScoreId(criterion.id);
+    const selected = scores[id] ?? 0;
+    const prefix = criterion.kind === 'deduction' ? '−' : '';
+
+    if (criterion.permittedMarks.length <= 11) {
+      return (
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5 }}>
+          {criterion.permittedMarks.map(mark => {
+            const active = scores[id] === mark;
+            return (
+              <button
+                key={mark}
+                type="button"
+                aria-pressed={active}
+                onClick={() => onScore(id, mark)}
+                style={{
+                  minWidth: 34, height: 32, padding: '0 8px', borderRadius: 8,
+                  border: `1.5px solid ${active ? INK : MUTED_BORDER}`,
+                  background: active ? INK : 'var(--mb-paper)',
+                  color: active ? 'var(--mb-paper)' : INK_2,
+                  font: `700 11px/1 ${MONO}`, cursor: 'pointer',
+                  fontVariantNumeric: 'tabular-nums',
+                }}
+              >
+                {prefix}{mark}
+              </button>
+            );
+          })}
+        </div>
+      );
+    }
+
+    const anchors = [...new Set([0, .25, .5, .75, 1]
+      .map(ratio => Math.round(criterion.maxMarks * ratio)))]
+      .filter(mark => criterion.permittedMarks.includes(mark));
+    return (
+      <div>
+        <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10 }}>
+          <span style={{ font: `600 10.5px/1.4 ${SANS}`, color: MUTED }}>
+            {criterion.kind === 'deduction' ? 'Deduction selected' : 'Mark selected'}
+          </span>
+          <strong style={{ font: `750 18px/1 ${MONO}`, color: INK, fontVariantNumeric: 'tabular-nums' }}>
+            {prefix}{selected}
+          </strong>
+        </div>
+        <input
+          type="range"
+          min={0}
+          max={criterion.maxMarks}
+          step={1}
+          value={selected}
+          aria-label={`${criterion.label} mark`}
+          onChange={event => onScore(id, Number(event.currentTarget.value))}
+          style={{ width: '100%', margin: '9px 0 7px', accentColor: INK }}
+        />
+        <div style={{ display: 'flex', justifyContent: 'space-between', gap: 5 }}>
+          {anchors.map(mark => (
+            <button
+              key={mark}
+              type="button"
+              onClick={() => onScore(id, mark)}
+              aria-label={`Set ${criterion.label} to ${mark}`}
+              style={{
+                border: 0, background: 'none', padding: '2px 0', color: LABEL,
+                font: `650 9.5px/1 ${MONO}`, cursor: 'pointer',
+              }}
+            >
+              {prefix}{mark}
+            </button>
+          ))}
+        </div>
+      </div>
+    );
+  };
+
+  return (
+    <div>
+      <div style={{ margin: '0 0 16px', padding: '0 0 15px', borderBottom: `1px solid ${HAIRLINE_2}` }}>
+        <span style={{ font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.12em', textTransform: 'uppercase', color: LABEL }}>
+          Task check · no marks added here
+        </span>
+        <p style={{ margin: '5px 0 10px', font: `600 17px/1.3 ${SERIF}`, color: INK }}>
+          Ar fhreagair tú an cheist a cuireadh?
+        </p>
+        <div style={{ display: 'grid', gap: 7 }}>
+          {rubric.taskRequirements.map((requirement, index) => {
+            const checked = !!requirementChecks[index];
+            return (
+              <button
+                key={requirement}
+                type="button"
+                aria-pressed={checked}
+                onClick={() => onRequirement(index)}
+                style={{
+                  display: 'grid', gridTemplateColumns: '24px 1fr', gap: 9,
+                  alignItems: 'start', width: '100%', padding: '10px 11px', textAlign: 'left',
+                  borderRadius: 10, border: `1.5px solid ${checked ? SUCCESS : MUTED_BORDER}`,
+                  background: checked ? SUCCESS_TINT : 'var(--mb-paper)',
+                  color: checked ? SUCCESS_TEXT : INK_2,
+                  font: `500 12.5px/1.45 ${SANS}`, cursor: 'pointer',
+                }}
+              >
+                <span aria-hidden style={{
+                  display: 'grid', placeItems: 'center', width: 20, height: 20, borderRadius: 6,
+                  border: `1.5px solid ${checked ? SUCCESS : MUTED_BORDER}`,
+                  background: checked ? SUCCESS : 'transparent', color: '#fff',
+                }}>
+                  {checked ? <span style={{
+                    width: 6, height: 10, borderRight: '2px solid currentColor',
+                    borderBottom: '2px solid currentColor', transform: 'rotate(45deg) translate(-1px, -1px)',
+                  }} /> : null}
+                </span>
+                <span>{requirement}</span>
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
+      <div>
+        <span style={{ font: `700 9.5px/1.5 ${SANS}`, letterSpacing: '.12em', textTransform: 'uppercase', color: LABEL }}>
+          Scéim mharcála an CSS
+        </span>
+        <p style={{ margin: '5px 0 4px', font: `600 17px/1.3 ${SERIF}`, color: INK }}>
+          Place your answer on the published Irish scale.
+        </p>
+        <p style={{ margin: '0 0 12px', font: `400 12px/1.5 ${SANS}`, color: MUTED }}>
+          Award Eolas/Ábhar and Gaeilge separately where the SEC does; a deduction is never shown as an award.
+        </p>
+
+        <div style={{ display: 'grid', gap: 10 }}>
+          {rubric.criteria.map(criterion => (
+            <section key={criterion.id} style={{ padding: '11px', borderRadius: 11, border: `1px solid ${MUTED_BORDER}` }}>
+              <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 8 }}>
+                <strong style={{ font: `650 13px/1.3 ${SANS}`, color: INK }}>
+                  {criterion.label}
+                </strong>
+                <span style={{ font: `700 10px/1 ${MONO}`, color: LABEL }}>
+                  {criterion.kind === 'deduction' ? '0 to −' : '/ '}{criterion.maxMarks}
+                </span>
+              </div>
+              <span style={{
+                display: 'inline-block', marginTop: 7, padding: '3px 6px', borderRadius: 5,
+                background: 'var(--mb-raised)', color: LABEL,
+                font: `750 8.5px/1.2 ${SANS}`, letterSpacing: '.075em', textTransform: 'uppercase',
+              }}>
+                {guidanceLabel(criterion)}
+              </span>
+              {criterion.guidance.length > 0 && (
+                <ul style={{ margin: '7px 0 10px', paddingLeft: 17, color: MUTED, font: `400 11.5px/1.48 ${SANS}` }}>
+                  {criterion.guidance.map((note, index) => <li key={`${criterion.id}-${index}`}>{note}</li>)}
+                </ul>
+              )}
+              {scoreControl(criterion)}
+            </section>
+          ))}
+        </div>
+
+        <div style={{
+          display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: 12,
+          marginTop: 12, padding: '12px', borderRadius: 11, background: 'var(--mb-raised)',
+        }}>
+          <span style={{ font: `600 12px/1.4 ${SANS}`, color: INK_2 }}>Your placement</span>
+          <strong style={{ font: `700 17px/1 ${MONO}`, color: INK, fontVariantNumeric: 'tabular-nums' }}>
+            {total} / {card.totalMarks}
+          </strong>
+        </div>
+      </div>
+
+      <aside style={{ marginTop: 12, padding: '12px', borderRadius: 11, background: 'var(--mb-raised)', border: `1px solid ${MUTED_BORDER}` }}>
+        <strong style={{ display: 'block', font: `700 10px/1.4 ${SANS}`, letterSpacing: '.08em', textTransform: 'uppercase', color: INK_2 }}>
+          How to use this guide
+        </strong>
+        <p style={{ margin: '5px 0 0', font: `400 11.5px/1.5 ${SANS}`, color: MUTED }}>
+          {rubric.markingGuideNote}
+        </p>
+      </aside>
+    </div>
+  );
+};
+
+const RubricPanel: React.FC<{
+  card: SecRubricCard;
+  scores: RubricScores;
+  requirementChecks: Record<number, boolean>;
+  onScore: (id: RubricScoreId, marks: number) => void;
+  onRequirement: (index: number) => void;
+}> = props => {
+  if (props.card.rubric.system === 'irish') {
+    return <IrishRubricPanel {...props} card={props.card as SecRubricCard & {
+      rubric: Extract<SecRubricCard['rubric'], { system: 'irish' }>;
+    }} />;
+  }
+  return (
+    <PclmRubricPanel
+      {...props}
+      card={props.card as SecRubricCard & { rubric: PclmRubric }}
+      scores={props.scores as PclmScores}
+      onScore={(id, marks) => props.onScore(id, marks)}
+    />
+  );
+};
+
 /* ------------------------------------------------------------ label key ----- */
 
 /**
@@ -1190,7 +1447,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const [revealed, setRevealed] = useState(false);
   const [claims, setClaims] = useState<Record<string, RowClaim>>({});
   const [picks, setPicks] = useState<Record<string, number[]>>({});
-  const [pclmScores, setPclmScores] = useState<PclmScores>({});
+  const [rubricScores, setRubricScores] = useState<RubricScores>({});
   const [requirementChecks, setRequirementChecks] = useState<Record<number, boolean>>({});
   const [results, setResults] = useState<SessionCardResult[]>([]);
   const [whisper, setWhisper] = useState<string | null>(null);
@@ -1220,7 +1477,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
 
   const total = card ? claimableTotal(card) : 0;
   const got = card
-    ? isRubricCard(card) ? pclmMarks(card, pclmScores) : marksClaimed(card, rowClaims, picks)
+    ? isRubricCard(card) ? rubricMarks(card, rubricScores) : marksClaimed(card, rowClaims, picks)
     : 0;
   const left = Math.max(0, total - got);
 
@@ -1256,8 +1513,11 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const unclaimedNames = unclaimed.slice(0, 3);
   const unclaimedMore = unclaimed.length - unclaimedNames.length;
   const suggested = card
-    ? isRubricCard(card) ? suggestPclmGrade(card, pclmScores) : suggestGrade(card, rowClaims, picks)
+    ? isRubricCard(card) ? suggestRubricGrade(card, rubricScores) : suggestGrade(card, rowClaims, picks)
     : 'shaky';
+  const rubricLabel = card && isRubricCard(card)
+    ? card.rubric.system === 'pclm' ? 'PCLM' : 'Irish rubric'
+    : 'rubric';
   const routeTaken = card ? committedRoute(card, rowClaims) : null;
 
   const setClaim = useCallback((id: string, next: RowClaim) => {
@@ -1265,9 +1525,9 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     setClaims(prev => ({ ...prev, [id]: next }));
   }, []);
 
-  const setPclmScore = useCallback((id: PclmScoreId, marks: number) => {
+  const setRubricScore = useCallback((id: RubricScoreId, marks: number) => {
     setSchemeInteracted(true);
-    setPclmScores(prev => {
+    setRubricScores(prev => {
       const next = { ...prev, [id]: marks };
       // The SEC's cap is a rule, not a warning. Lowering Purpose also lowers a
       // previously selected C/L mark so the visible state can never imply an
@@ -1379,7 +1639,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     setQueue(nextQueue);
     setClaims({});
     setPicks({});
-    setPclmScores({});
+    setRubricScores({});
     setRequirementChecks({});
     setRevealed(false);
     setWaysInOpen(false);
@@ -1422,6 +1682,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const figure = 'figure' in card ? card.figure : undefined;
   const questionFigure = 'questionFigure' in card ? card.questionFigure : undefined;
   const sourceMaterial = card.sourceMaterial;
+  const audioMaterial = card.audioMaterial;
   const labelKey = card.kind === 'diagram' ? card.labelKey : undefined;
 
   const banked = results.reduce((n, r) => n + r.marksClaimed, 0);
@@ -1729,6 +1990,8 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                 paperFileid={card.paperFileid}
               />
             )}
+
+            {audioMaterial && <AudioSourcePlayer source={audioMaterial} />}
           </div>
         </MotionDiv>
         </div>
@@ -1875,9 +2138,9 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                   ) : (
                     <RubricPanel
                       card={card}
-                      scores={pclmScores}
+                      scores={rubricScores}
                       requirementChecks={requirementChecks}
-                      onScore={setPclmScore}
+                      onScore={setRubricScore}
                       onRequirement={toggleRequirement}
                     />
                   )}
@@ -2004,10 +2267,10 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                   <p id="mark-bank-grade-guidance" style={{ margin: '0 0 9px', font: `400 12px/1.45 ${SANS}`, color: INK_2 }}>
                     {!schemeInteracted
                       ? isRubricCard(card)
-                        ? <>No PCLM placement selected yet. Use the SEC grid above for a mark-based suggestion, or choose your own grade now.</>
+                        ? <>No {rubricLabel} placement selected yet. Use the SEC grid above for a mark-based suggestion, or choose your own grade now.</>
                         : <>No points selected yet. Select them above for a mark-based suggestion, or choose your own grade now.</>
                       : isRubricCard(card)
-                        ? <>Your PCLM placement is {got} of {total} marks — that looks like {GRADE_COPY[suggested]}.</>
+                        ? <>Your {rubricLabel} placement is {got} of {total} marks — that looks like {GRADE_COPY[suggested]}.</>
                         : showsRowMarks(card)
                         ? <>You claimed {got} of {total} marks — that looks like {GRADE_COPY[suggested]}.</>
                         : <>That looks like {GRADE_COPY[suggested]}.</>}

@@ -26,12 +26,18 @@ import { resolve } from 'node:path';
 import baseline from '../scripts/markbank/coverage-baseline.json';
 import { CARDS as ENGLISH_HIGHER } from '../components/MarkBank/cards/english/higher';
 import { CARDS as ENGLISH_ORDINARY } from '../components/MarkBank/cards/english/ordinary';
+import { CARDS as IRISH_HIGHER } from '../components/MarkBank/cards/irish/higher';
+import { CARDS as IRISH_ORDINARY } from '../components/MarkBank/cards/irish/ordinary';
 
 const SUBJECTS = Object.keys(baseline) as (keyof typeof baseline)[];
 
 const deckCards = (subject: string): { id: string; ref: string }[] => {
   if (subject === 'english') {
     return [...ENGLISH_HIGHER, ...ENGLISH_ORDINARY]
+      .map(({ id, questionRef: ref }) => ({ id, ref }));
+  }
+  if (subject === 'irish') {
+    return [...IRISH_HIGHER, ...IRISH_ORDINARY]
       .map(({ id, questionRef: ref }) => ({ id, ref }));
   }
   const out: { id: string; ref: string }[] = [];
@@ -83,7 +89,7 @@ describe('Mark Bank paper-coverage ratchet', () => {
     // English overlays 19 hand-enriched cards onto a generated corpus, so its
     // display ordering is not the manifest ordering. Coverage pins identity,
     // not presentation order.
-    if (subject === 'english') identities.sort();
+    if (subject === 'english' || subject === 'irish') identities.sort();
     const digest = createHash('sha256')
       .update(identities.join('\n'))
       .digest('hex').slice(0, 16);
@@ -98,6 +104,9 @@ describe('Mark Bank paper-coverage ratchet', () => {
       .filter(({ ref }) => {
         if (subject === 'english') {
           return !/^\d{4} (?:HL|OL) Paper [12] (?:Text [1-3] QA\((?:i|ii|iii)(?:\)\((?:a|b))?\)|Text [1-3] QB|Composing [1-7]|Single Text [A-I](?:\((?:i|ii)\)| Q[1-4])|Comparative [A-C] Q[12]|Unseen Poetry Q[12]|Prescribed Poetry (?:[1-5]|[A-F] Q(?:1|2\((?:i|ii|iii)\))))$/.test(ref);
+        }
+        if (subject === 'irish') {
+          return !/^\d{4} (?:HL|OL) Paper [12] (?:Cluastuiscint Cuid [ABC] · .+|Ceapadóireacht [A-D]\((?:[a-e]|i{1,3})\)|Léamhthuiscint [AB] · Ceist [1-6]|(?:Prose|Poetry) [23][AB]\([a-c]\)|Literature 4\([a-f]\))$/.test(ref);
         }
         const core = ref.split(/\s+[—–-]\s+/)[0];
         const m = core.match(HEAD);
@@ -127,7 +136,7 @@ describe('Mark Bank paper-coverage ratchet', () => {
         __dirname, '..', 'components', 'MarkBank', 'cards', subject, `${level}.ts`);
       try { h.update(readFileSync(path)); } catch { /* single-level deck */ }
     }
-    if (subject === 'english') {
+    if (subject === 'english' || subject === 'irish') {
       for (const name of ['factory.ts', 'authored.json']) {
         h.update(readFileSync(resolve(
           __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));

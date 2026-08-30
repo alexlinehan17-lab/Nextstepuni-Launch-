@@ -119,6 +119,21 @@
   },
   "refsHash": "7cddab6869c06c08"
  },
+ "irish": {
+  "cards": 400,
+  "contentHash": "125a2d03a608051f",
+  "coveragePct": 100.0,
+  "covered": 400,
+  "excluded": 0,
+  "leaves": 400,
+  "open": 0,
+  "orphans": 0,
+  "papers": {
+   "count": 30,
+   "hash": "9d84f99397f0fb11"
+  },
+  "refsHash": "02b0f7ad91f8e59d"
+ },
  "maths": {
   "cards": 833,
   "contentHash": "39c2f5c60ad3e61c",

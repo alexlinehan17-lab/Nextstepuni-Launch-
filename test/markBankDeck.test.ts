@@ -44,6 +44,8 @@ import { CARDS as ECON_HIGHER } from '../components/MarkBank/cards/economics/hig
 import { CARDS as ECON_ORDINARY } from '../components/MarkBank/cards/economics/ordinary';
 import { CARDS as ENGLISH_HIGHER } from '../components/MarkBank/cards/english/higher';
 import { CARDS as ENGLISH_ORDINARY } from '../components/MarkBank/cards/english/ordinary';
+import { CARDS as IRISH_HIGHER } from '../components/MarkBank/cards/irish/higher';
+import { CARDS as IRISH_ORDINARY } from '../components/MarkBank/cards/irish/ordinary';
 
 /** Every deck at once. The app loads one at a time; the guards check them all,
  *  so a new subject inherits the whole net the day its first cards land.
@@ -58,6 +60,7 @@ const SAMPLE_CARDS = [
   ...PHYS_HIGHER, ...PHYS_ORDINARY, ...AGSCI_HIGHER, ...AGSCI_ORDINARY,
   ...BUS_HIGHER, ...BUS_ORDINARY, ...HE_HIGHER, ...HE_ORDINARY,
   ...ECON_HIGHER, ...ECON_ORDINARY, ...ENGLISH_HIGHER, ...ENGLISH_ORDINARY,
+  ...IRISH_HIGHER, ...IRISH_ORDINARY,
 ];
 import {
   isDiagramCard, isContentFreeRow, isPointCard, looksLikeSectionLabel, tariffReconciles,
@@ -371,6 +374,8 @@ describe('the size manifest matches the decks it describes', () => {
     ['physics', 'ordinary', PHYS_ORDINARY],
     ['english', 'higher', ENGLISH_HIGHER],
     ['english', 'ordinary', ENGLISH_ORDINARY],
+    ['irish', 'higher', IRISH_HIGHER],
+    ['irish', 'ordinary', IRISH_ORDINARY],
   ] as const)('%s %s', (subjectId, level, cards) => {
     expect(deckSize(subjectId, level)).toBe(cards.length);
   });
@@ -429,6 +434,7 @@ describe('the taxonomy is the redeveloped specification', () => {
       'construction-studies': 'cons-',
       maths: 'maths-',
       english: 'english-',
+      irish: 'irish-',
     };
     for (const subject of SUBJECTS) {
       const prefix = PREFIX[subject.id];
