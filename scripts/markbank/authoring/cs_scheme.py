@@ -61,6 +61,15 @@ BAND = re.compile(r'^\s*(very good|good|fair|excellent|weak|poor|full correct|'
                   re.I)
 SECTION = re.compile(r'^Section\s+([A-C])\b')
 PAGE_NO = re.compile(r'^\d{1,3}$')
+# "Section A / Short Answer Questions / Attempt any nine questions / 54 marks /
+# All questions carry equal marks" -- the paper's own pricing of a section whose
+# questions the scheme prices individually nowhere.
+SECTION_RUBRIC = re.compile(
+    r'Section\s+([AB])\s+(?:Short Answer Questions|Long Questions)\s+'
+    r'Attempt any (\w+) questions?\s+(\d{1,3})\s*marks\s+'
+    r'(All questions carry equal marks)?', re.I)
+COUNT_WORD = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5,
+              'six': 6, 'seven': 7, 'eight': 8, 'nine': 9, 'ten': 10}
 ROMAN_ORDER = {r: i + 1 for i, r in enumerate(
     ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x'])}
 BULLET = ''
@@ -92,12 +101,36 @@ class CsScheme:
         if not os.path.exists(self.path):
             raise FileNotFoundError(self.path)
         self.doc = pymupdf.open(self.path)
+        self._rate = self._section_rates()
         self._points = collections.defaultdict(list)
         self._bands = collections.defaultdict(list)
         self._tariff = {}
         self._split = {}
         self._section = {}
         self._read()
+
+    def _section_rates(self):
+        """{section: marks per question} from the PAPER's own rubric.
+
+        Section A prints "Short Answer Questions / Attempt any nine questions /
+        54 marks / All questions carry equal marks", and the scheme then prices
+        none of those nine individually. A printed total over a printed count,
+        with the paper stating in as many words that the questions are equal,
+        is the one division the rules allow -- and it is the only thing that
+        prices Section A at all. Recorded ONLY where that clause is present.
+        """
+        paper = os.path.join(ROOT, 'examiner-reports', 'computer-science',
+                             'papers', f'{self.year}-{self.level}-038-paper.pdf')
+        if not os.path.exists(paper):
+            return {}
+        with pymupdf.open(paper) as doc:
+            head = ' '.join(doc[1].get_text().split()) if doc.page_count > 1 else ''
+        out = {}
+        for sec, word, marks, equal in SECTION_RUBRIC.findall(head):
+            n = COUNT_WORD.get(word.lower())
+            if n and equal and int(marks) % n == 0:
+                out[sec] = int(marks) // n
+        return out
 
     @staticmethod
     def _rows(page):
@@ -222,7 +255,9 @@ class CsScheme:
         if own is not None:
             return own
         if letter is None and roman is None:
-            return None
+            # A whole question the scheme never prices: the paper's rubric
+            # does, at the section's equal-marks rate.
+            return self._rate.get(self._section.get((q, None, None)))
         parent = (q, None, None) if roman is None else (q, letter, None)
         split = self._split.get(parent)
         if not split:
