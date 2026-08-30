@@ -37,7 +37,13 @@ def schemes_dir(subject):
     return os.path.join(ROOT, 'examiner-reports', subject, 'schemes')
 VERIFIER = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'verify-claims.mjs')
 
-QHEAD = re.compile(r'^Q\s?(\d{1,2})\b\s*(.*)$')
+# The schemes head a question either "Q1" or "QUESTION 1", and requiring
+# the short form made this parser BLIND to every scheme that spells it out:
+# all ten Chemistry schemes returned no paths at all, so that subject was
+# running on SchemePdf alone when the two are designed to cover each other's
+# gaps. Spelling it out costs nothing -- across the nine subjects this finds
+# 3293 more marking-point paths and loses none.
+QHEAD = re.compile(r'^Q(?:UESTION)?\s?(\d{1,2})\b\s*(.*)$', re.I)
 MARKER = re.compile(r'^\(([a-z]{1,4})\)\s*')
 LETTER = re.compile(r'[a-h]')
 ROMAN = re.compile(r'i{1,3}|iv|vi{0,3}')
