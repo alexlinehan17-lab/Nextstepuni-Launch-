@@ -696,7 +696,7 @@ export const CURRICULUM: CurriculumSubject[] = [
           },
           {
             "id": "english-11-32",
-            "name": "Alison Joseph"
+            "name": "Allison Joseph"
           },
           {
             "id": "english-11-33",
@@ -757,6 +757,30 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "english-11-47",
             "name": "Benjamin Zephaniah"
+          },
+          {
+            "id": "english-11-48",
+            "name": "Andrew Hudgins"
+          },
+          {
+            "id": "english-11-49",
+            "name": "Gary Soto"
+          },
+          {
+            "id": "english-11-50",
+            "name": "Ted Hughes"
+          },
+          {
+            "id": "english-11-51",
+            "name": "Tom French"
+          },
+          {
+            "id": "english-11-52",
+            "name": "Wisława Szymborska"
+          },
+          {
+            "id": "english-11-53",
+            "name": "Liz Lochhead"
           }
         ]
       },
@@ -887,6 +911,10 @@ export const CURRICULUM: CurriculumSubject[] = [
           {
             "id": "english-12-30",
             "name": "Wuthering Heights (Emily Brontë)"
+          },
+          {
+            "id": "english-12-31",
+            "name": "Silas Marner (George Eliot)"
           }
         ]
       }

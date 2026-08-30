@@ -261,7 +261,18 @@ export function suggestGrade(
 }
 
 /** The student's self-placement on an English PCLM grid. */
-export type PclmScores = Partial<Record<PclmCriterionId | 'combined', number>>;
+export type PclmScoreId =
+  | PclmCriterionId
+  | 'combined'
+  | `component:${string}`
+  | `component:${string}:${PclmCriterionId}`;
+export type PclmScores = Partial<Record<PclmScoreId, number>>;
+
+const componentCombinedId = (componentId: string) =>
+  `component:${componentId}` as const;
+
+const componentCriterionId = (componentId: string, criterionId: PclmCriterionId) =>
+  `component:${componentId}:${criterionId}` as const;
 
 /**
  * Apply the SEC's primacy-of-Purpose rule. The UI also prevents an over-cap
@@ -269,8 +280,31 @@ export type PclmScores = Partial<Record<PclmCriterionId | 'combined', number>>;
  * never award C or L above P.
  */
 export function effectivePclmScores(card: SecRubricCard, scores: PclmScores): PclmScores {
-  if (card.rubric.assessment.mode === 'combined') {
+  const assessment = card.rubric.assessment;
+  if (assessment.mode === 'combined') {
     return { combined: scores.combined ?? 0 };
+  }
+  if (assessment.mode === 'composite') {
+    const effective: PclmScores = {};
+    for (const component of assessment.components) {
+      if (component.mode === 'combined') {
+        const id = componentCombinedId(component.id);
+        effective[id] = scores[id] ?? 0;
+        continue;
+      }
+      const purposeId = componentCriterionId(component.id, 'purpose');
+      const purpose = scores[purposeId] ?? 0;
+      effective[purposeId] = purpose;
+      for (const criterion of component.criteria) {
+        if (criterion.id === 'purpose') continue;
+        const id = componentCriterionId(component.id, criterion.id);
+        const value = scores[id] ?? 0;
+        effective[id] = criterion.id === 'coherence' || criterion.id === 'language'
+          ? Math.min(value, purpose)
+          : value;
+      }
+    }
+    return effective;
   }
   const purpose = scores.purpose ?? 0;
   return {
@@ -283,8 +317,21 @@ export function effectivePclmScores(card: SecRubricCard, scores: PclmScores): Pc
 
 export function pclmMarks(card: SecRubricCard, scores: PclmScores): number {
   const effective = effectivePclmScores(card, scores);
-  if (card.rubric.assessment.mode === 'combined') return effective.combined ?? 0;
-  return card.rubric.assessment.criteria.reduce(
+  const assessment = card.rubric.assessment;
+  if (assessment.mode === 'combined') return effective.combined ?? 0;
+  if (assessment.mode === 'composite') {
+    return assessment.components.reduce((sum, component) => {
+      if (component.mode === 'combined') {
+        return sum + (effective[componentCombinedId(component.id)] ?? 0);
+      }
+      return sum + component.criteria.reduce(
+        (componentTotal, criterion) => componentTotal
+          + (effective[componentCriterionId(component.id, criterion.id)] ?? 0),
+        0,
+      );
+    }, 0);
+  }
+  return assessment.criteria.reduce(
     (sum, criterion) => sum + (effective[criterion.id] ?? 0), 0,
   );
 }
@@ -619,7 +666,7 @@ const RubricPanel: React.FC<{
   card: SecRubricCard;
   scores: PclmScores;
   requirementChecks: Record<number, boolean>;
-  onScore: (id: PclmCriterionId | 'combined', marks: number) => void;
+  onScore: (id: PclmScoreId, marks: number) => void;
   onRequirement: (index: number) => void;
 }> = ({ card, scores, requirementChecks, onScore, onRequirement }) => {
   const { rubric } = card;
@@ -628,7 +675,7 @@ const RubricPanel: React.FC<{
   const purpose = scores.purpose;
 
   const scoreButton = (
-    id: PclmCriterionId | 'combined', marks: number, disabled = false,
+    id: PclmScoreId, marks: number, disabled = false,
   ) => {
     const selected = scores[id] === marks;
     return (
@@ -736,6 +783,111 @@ const RubricPanel: React.FC<{
               </ul>
             </div>
           </>
+        ) : assessment.mode === 'composite' ? (
+          <div style={{ display: 'grid', gap: 10 }}>
+            {assessment.components.map(component => {
+              if (component.mode === 'combined') {
+                const scoreId = componentCombinedId(component.id);
+                return (
+                  <section
+                    key={component.id}
+                    style={{ padding: '11px', borderRadius: 11, border: `1px solid ${MUTED_BORDER}` }}
+                  >
+                    <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 8 }}>
+                      <strong style={{ font: `650 13px/1.3 ${SANS}`, color: INK }}>
+                        {component.label}
+                      </strong>
+                      <span style={{ font: `700 10px/1 ${MONO}`, color: LABEL }}>/ {component.totalMarks}</span>
+                    </div>
+                    <p style={{ margin: '5px 0 9px', font: `400 11.5px/1.45 ${SANS}`, color: MUTED }}>
+                      This part receives its own combined PCLM mark.
+                    </p>
+                    <div style={{ display: 'grid', gap: 6 }}>
+                      {component.bands.map(band => (
+                        <div key={band.grade} style={{
+                          display: 'grid', gridTemplateColumns: '36px 1fr', gap: 8, alignItems: 'center',
+                          padding: '7px 8px', borderRadius: 9, background: 'var(--mb-raised)',
+                        }}>
+                          <strong style={{ font: `700 10.5px/1 ${SANS}`, color: INK_2 }}>{band.grade}</strong>
+                          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5 }}>
+                            {band.marks.map(mark => scoreButton(scoreId, mark))}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </section>
+                );
+              }
+
+              const purposeId = componentCriterionId(component.id, 'purpose');
+              const componentPurpose = scores[purposeId];
+              return (
+                <section
+                  key={component.id}
+                  style={{ padding: '11px', borderRadius: 11, border: `1px solid ${MUTED_BORDER}` }}
+                >
+                  <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 8 }}>
+                    <strong style={{ font: `650 13px/1.3 ${SANS}`, color: INK }}>
+                      {component.label}
+                    </strong>
+                    <span style={{ font: `700 10px/1 ${MONO}`, color: LABEL }}>/ {component.totalMarks}</span>
+                  </div>
+                  <p style={{ margin: '5px 0 9px', font: `400 11.5px/1.45 ${SANS}`, color: MUTED }}>
+                    This part receives separate Purpose, Coherence, Language and Mechanics marks.
+                  </p>
+                  <div style={{ display: 'grid', gap: 8 }}>
+                    {component.criteria.map(criterion => {
+                      const scoreId = componentCriterionId(component.id, criterion.id);
+                      const capped = criterion.id === 'coherence' || criterion.id === 'language';
+                      const waitingForPurpose = capped && componentPurpose === undefined;
+                      return (
+                        <div key={criterion.id} style={{
+                          padding: '9px', borderRadius: 9, background: 'var(--mb-raised)',
+                        }}>
+                          <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 8 }}>
+                            <strong style={{ font: `650 11.5px/1.3 ${SANS}`, color: INK_2 }}>
+                              {criterion.label}
+                            </strong>
+                            <span style={{ font: `700 9.5px/1 ${MONO}`, color: LABEL }}>/ {criterion.maxMarks}</span>
+                          </div>
+                          <ul style={{ margin: '6px 0 8px', paddingLeft: 16, color: MUTED, font: `400 10.5px/1.42 ${SANS}` }}>
+                            {criterion.guidance.map(note => <li key={note}>{note}</li>)}
+                          </ul>
+                          {waitingForPurpose && (
+                            <p style={{ margin: '0 0 7px', font: `600 10px/1.4 ${SANS}`, color: LABEL }}>
+                              Set Purpose first — it caps this criterion.
+                            </p>
+                          )}
+                          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5 }}>
+                            {criterion.permittedMarks.map(mark => scoreButton(
+                              scoreId,
+                              mark,
+                              waitingForPurpose
+                                || (capped && componentPurpose !== undefined && mark > componentPurpose),
+                            ))}
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </section>
+              );
+            })}
+            {(() => {
+              const combined = assessment.components.find(component => component.mode === 'combined');
+              if (!combined || combined.mode !== 'combined') return null;
+              return (
+                <div style={{ padding: '10px 11px', borderRadius: 10, border: `1px solid ${MUTED_BORDER}` }}>
+                  <strong style={{ display: 'block', marginBottom: 5, font: `650 11.5px/1.4 ${SANS}`, color: INK_2 }}>
+                    Each short combined part considers
+                  </strong>
+                  <ul style={{ margin: 0, paddingLeft: 17, color: MUTED, font: `400 11.5px/1.5 ${SANS}` }}>
+                    {combined.criteria.map(criterion => <li key={criterion}>{criterion}</li>)}
+                  </ul>
+                </div>
+              );
+            })()}
+          </div>
         ) : (
           <div style={{ display: 'grid', gap: 10 }}>
             {assessment.criteria.map(criterion => {
@@ -1113,7 +1265,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
     setClaims(prev => ({ ...prev, [id]: next }));
   }, []);
 
-  const setPclmScore = useCallback((id: PclmCriterionId | 'combined', marks: number) => {
+  const setPclmScore = useCallback((id: PclmScoreId, marks: number) => {
     setSchemeInteracted(true);
     setPclmScores(prev => {
       const next = { ...prev, [id]: marks };

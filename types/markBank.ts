@@ -301,7 +301,9 @@ export type PclmCriterionId = 'purpose' | 'coherence' | 'language' | 'mechanics'
 
 /** One score family exactly as the SEC grade grid prints it. */
 export interface PclmGradeBand {
-  grade: 'H1' | 'H2' | 'H3' | 'H4' | 'H5' | 'H6' | 'H7' | 'H8';
+  grade:
+    | 'H1' | 'H2' | 'H3' | 'H4' | 'H5' | 'H6' | 'H7' | 'H8'
+    | 'O1' | 'O2' | 'O3' | 'O4' | 'O5' | 'O6' | 'O7' | 'O8';
   /** Every mark the published grid permits in this band. */
   marks: number[];
 }
@@ -315,6 +317,33 @@ export interface PclmCriterion {
   /** Marks selectable on the published grade grid for this criterion. */
   permittedMarks: number[];
 }
+
+/** Shared identity for one separately marked part of a linked English question. */
+interface PclmComponentBase {
+  /** Stable within the card, e.g. `a`, `a-i` or `b`. */
+  id: string;
+  /** The paper's own part label. */
+  label: string;
+  totalMarks: number;
+}
+
+/** A short linked part which receives one mark on the SEC combined grid. */
+export interface PclmCombinedComponent extends PclmComponentBase {
+  mode: 'combined';
+  bands: PclmGradeBand[];
+  criteria: string[];
+}
+
+/** A substantial linked part which receives separate P, C, L and M marks. */
+export interface PclmDiscreteComponent extends PclmComponentBase {
+  mode: 'discrete';
+  bands: PclmGradeBand[];
+  criteria: PclmCriterion[];
+  /** C and L may not exceed P within this component. */
+  primacyOfPurpose: true;
+}
+
+export type PclmComponent = PclmCombinedComponent | PclmDiscreteComponent;
 
 export type PclmAssessment =
   | {
@@ -330,6 +359,18 @@ export type PclmAssessment =
       criteria: PclmCriterion[];
       /** C and L may not exceed P. */
       primacyOfPurpose: true;
+    }
+  | {
+      /**
+       * A selected question containing compulsory parts that the SEC marks on
+       * separate grids.  A component can itself be combined (for example OL
+       * Single Text Q1(a)) or discrete (for example the 40-mark part of an OL
+       * Comparative question).  The parts stay together because later wording
+       * often depends on an earlier choice, but their marks must never be
+       * collapsed into a fabricated holistic total.
+       */
+      mode: 'composite';
+      components: PclmComponent[];
     };
 
 export interface PclmRubric {
@@ -519,12 +560,33 @@ export function groupMarks(g: { claimMax: number; perOption: number; perOptionSt
 export function tariffReconciles(card: SecCard): boolean {
   if (isRubricCard(card)) {
     const { assessment } = card.rubric;
-    if (assessment.mode === 'combined') {
-      const marks = assessment.bands.flatMap(band => band.marks);
+    const bandsReconcile = (bands: PclmGradeBand[], total: number) => {
+      const marks = bands.flatMap(band => band.marks);
       return marks.length > 0
         && Math.min(...marks) === 0
-        && Math.max(...marks) === card.totalMarks
+        && Math.max(...marks) === total
         && new Set(marks).size === marks.length;
+    };
+    if (assessment.mode === 'combined') {
+      return bandsReconcile(assessment.bands, card.totalMarks);
+    }
+    if (assessment.mode === 'composite') {
+      const criteriaReconcile = (criteria: PclmCriterion[], total: number) =>
+        criteria.reduce((sum, criterion) => sum + criterion.maxMarks, 0) === total
+        && criteria.every(criterion =>
+          criterion.permittedMarks.length > 0
+          && Math.min(...criterion.permittedMarks) === 0
+          && Math.max(...criterion.permittedMarks) === criterion.maxMarks
+          && new Set(criterion.permittedMarks).size === criterion.permittedMarks.length);
+      return assessment.components.length > 0
+        && new Set(assessment.components.map(component => component.id)).size
+          === assessment.components.length
+        && assessment.components.reduce((sum, component) => sum + component.totalMarks, 0)
+          === card.totalMarks
+        && assessment.components.every(component =>
+          bandsReconcile(component.bands, component.totalMarks)
+          && (component.mode === 'combined'
+            || criteriaReconcile(component.criteria, component.totalMarks)));
     }
     const max = assessment.criteria.reduce((sum, criterion) => sum + criterion.maxMarks, 0);
     return max === card.totalMarks

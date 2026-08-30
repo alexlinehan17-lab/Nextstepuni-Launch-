@@ -21,6 +21,7 @@ import type {
   PclmGradeBand,
   SecRubricCard,
 } from '../../../../types/markBank';
+import { generatedCardsForLevel } from './factory';
 
 const range = (from: number, to: number) =>
   Array.from({ length: to - from + 1 }, (_, index) => from + index);
@@ -174,7 +175,7 @@ const makeCard = (args: CardArgs): SecRubricCard => ({
   },
 });
 
-export const CARDS: SecRubricCard[] = [
+const REVIEWED_2025_PAPER_1: SecRubricCard[] = [
   // ── Text 1 · The Underdog Effect ──────────────────────────────────────────
   makeCard({
     id: 'english-2025-hl-p1-t1-a-i', conceptId: 'english-comprehending-insights',
@@ -371,3 +372,18 @@ export const CARDS: SecRubricCard[] = [
     coherence: ['Successfully shape, develop and sustain the narrative', 'Sequence and manage ideas effectively'],
   }),
 ];
+
+const reviewedIds = new Set(REVIEWED_2025_PAPER_1.map(card => card.id));
+
+/**
+ * The original, individually reviewed 2025 Paper 1 cards retain their richer
+ * SEC-derived possible directions.  The corpus factory supplies every other
+ * Higher Level choice, then the whole deck is ordered newest-paper-first.
+ */
+export const CARDS: SecRubricCard[] = [
+  ...REVIEWED_2025_PAPER_1,
+  ...generatedCardsForLevel('higher').filter(card => !reviewedIds.has(card.id)),
+].sort((left, right) =>
+  right.year - left.year
+  || left.section.localeCompare(right.section)
+  || left.questionRef.localeCompare(right.questionRef, undefined, { numeric: true }));

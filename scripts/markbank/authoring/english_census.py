@@ -51,9 +51,10 @@ def paper_text(path: str) -> tuple[fitz.Document, str]:
 def record(*, year: int, level: str, paper: int, key: str, ref: str,
            section: str, marks: int, parts: list[str] | None = None) -> dict:
     card_id = f'english-{year}-{level}-p{paper}-{key}'
-    # The first batch is one complete paper. Every other row is explicit queue,
-    # never an omission disguised as "not applicable".
-    status = 'authored' if year == 2025 and level == 'hl' and paper == 1 else 'queued'
+    # The complete paper corpus has a live manifest entry.  Keeping the status
+    # on the question-paper denominator makes a missing runtime card fail the
+    # one-to-one coverage test rather than disappear into an implicit queue.
+    status = 'authored'
     return {
         'id': card_id,
         'year': year,
@@ -190,9 +191,16 @@ def assert_ol_paper_2(doc: fitz.Document, text: str, path: str) -> None:
         raise AssertionError(f'{path}: both compulsory Unseen Poetry questions are required')
     for page_no in range(15, 21):
         page = doc[page_no - 1].get_text('text')
+        compact_page = compact(page)
+        if not re.search(r'1\.\s*\(a\)', compact_page, re.I):
+            raise AssertionError(f'{path}: Prescribed Poetry page {page_no} lacks Q1(a)')
+        if not re.search(r'\(b\)', compact_page, re.I):
+            raise AssertionError(f'{path}: Prescribed Poetry page {page_no} lacks Q1(b)')
+        if not re.search(r'2\.\s*Answer\s+ONE', compact_page, re.I):
+            raise AssertionError(f'{path}: Prescribed Poetry page {page_no} lacks the Q2 choice')
         for roman in ROMANS:
             if not re.search(rf'\({roman}\)', page, re.I):
-                raise AssertionError(f'{path}: Prescribed Poetry page {page_no} lacks ({roman})')
+                raise AssertionError(f'{path}: Prescribed Poetry page {page_no} lacks Q2({roman})')
 
 
 def ol_paper_2(year: int, doc: fitz.Document, text: str, path: str) -> list[dict]:
@@ -221,11 +229,18 @@ def ol_paper_2(year: int, doc: fitz.Document, text: str, path: str) -> list[dict
             section='Unseen Poetry', marks=10,
         ))
     for poet in LETTERS_6:
-        for roman, marks in zip(ROMANS, (15, 15, 20)):
+        out.append(record(
+            year=year, level='ol', paper=2,
+            key=f'prescribed-{poet}-q1', ref=f'{year} OL Paper 2 Prescribed Poetry {poet.upper()} Q1',
+            section='Prescribed Poetry', marks=30,
+            parts=['(a) 15 marks', '(b) 15 marks'],
+        ))
+        for roman in ROMANS:
             out.append(record(
                 year=year, level='ol', paper=2,
-                key=f'prescribed-{poet}-{roman}', ref=f'{year} OL Paper 2 Prescribed Poetry {poet.upper()}({roman})',
-                section='Prescribed Poetry', marks=marks,
+                key=f'prescribed-{poet}-q2-{roman}',
+                ref=f'{year} OL Paper 2 Prescribed Poetry {poet.upper()} Q2({roman})',
+                section='Prescribed Poetry', marks=20,
             ))
     return out
 
@@ -273,8 +288,8 @@ def build() -> dict:
     ids = [ask['id'] for ask in asks]
     if len(ids) != len(set(ids)):
         raise AssertionError('duplicate English census ids')
-    if len(asks) != 630:
-        raise AssertionError(f'expected 630 independently selectable card units, found {len(asks)}')
+    if len(asks) != 660:
+        raise AssertionError(f'expected 660 independently selectable card units, found {len(asks)}')
     return {
         'subject': 'english',
         'sourceRule': 'Question papers only; marking schemes never contribute to the denominator.',

@@ -493,6 +493,19 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
   const strands = strandsFor(subjectId);
   const coveredTopics = strands.flatMap(strand => strand.topics).filter(topic => cardsForTopic(topic.id, cards).length > 0).length;
   const totalTopics = strands.reduce((sum, strand) => sum + strand.topics.length, 0);
+  // English is reconciled against every selectable response in all twenty
+  // 2021–2025 papers. Empty taxonomy rows there mean "not examined in this
+  // corpus", not "unfinished". Showing dozens of disabled poets and roll-up
+  // categories made a complete subject look half-built and buried the useful
+  // choices on mobile.
+  const visibleStrands = subjectId === 'english'
+    ? strands
+      .map(strand => ({
+        ...strand,
+        topics: strand.topics.filter(topic => cardsForTopic(topic.id, cards).length > 0),
+      }))
+      .filter(strand => strand.topics.length > 0)
+    : strands;
   const dueTopics = strands.flatMap(s => s.topics).filter(t => {
     const tc = cardsForTopic(t.id, cards);
     return tc.some(c => { const m = memories[c.id]; return m?.last ? isDue(c.id, m, now(), retention) : false; });
@@ -632,7 +645,9 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
                 <p style={{ margin: '20px 0 0', font: `400 11.5px/1.5 ${SANS}`, color: LABEL }}>
                   {cards.length} questions from the {examYears} Leaving Certificate papers,
                   each marked against the real State Examinations Commission scheme.
-                  {' '}Coverage currently spans {coveredTopics} of {totalTopics} syllabus topics.
+                  {subjectId === 'english'
+                    ? <> Every selectable response is included across {coveredTopics} examined syllabus topics.</>
+                    : <> Coverage currently spans {coveredTopics} of {totalTopics} syllabus topics.</>}
                 </p>
               )}
             </>
@@ -656,7 +671,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
                   </div>
                 ))}
               </div>
-            ) : strands.map((strand, si) => (
+            ) : visibleStrands.map((strand, si) => (
               <section key={strand.id} id={`strand-${strand.id}`}>
                 <div style={{
                   height: 44, display: 'flex', alignItems: 'center', gap: 9,
