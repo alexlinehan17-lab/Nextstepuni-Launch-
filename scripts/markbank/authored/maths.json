@@ -518,7 +518,7 @@
  },
  {
   "id": "maths-2021-hl-p1-q5-a-i",
-  "topicId": "maths-2-3",
+  "topicId": "maths-5-2",
   "conceptId": "value-value-value",
   "level": "higher",
   "year": 2021,
@@ -1608,7 +1608,7 @@
  },
  {
   "id": "maths-2021-hl-p1-q10-a-i",
-  "topicId": "maths-3-4",
+  "topicId": "maths-5-2",
   "conceptId": "value-when-tank-empties",
   "level": "higher",
   "year": 2021,
@@ -1778,7 +1778,7 @@
  },
  {
   "id": "maths-2021-hl-p1-q10-b-i",
-  "topicId": "maths-3-4",
+  "topicId": "maths-5-2",
   "conceptId": "order-model-reasonable-must-satisfy-number",
   "level": "higher",
   "year": 2021,
@@ -1818,7 +1818,7 @@
  },
  {
   "id": "maths-2021-hl-p1-q10-b-ii",
-  "topicId": "maths-3-4",
+  "topicId": "maths-5-2",
   "conceptId": "explain-what-means-context-growth-tree",
   "level": "higher",
   "year": 2021,
@@ -2374,7 +2374,6 @@
   "section": "B",
   "questionRef": "2021 HL Paper 2 Q3(b)(ii)",
   "questionText": "There are an infinite number of circles which touch circle c externally at the same point that s touches c. Find the coordinates of the centre of one of these circles, apart from circle s",
-  "stem": "",
   "figureKey": "maths-2021-HL-paper-p039-i0",
   "labelKey": [],
   "tariffModel": {
@@ -2402,7 +2401,8 @@
     }
    }
   ],
-  "notes": ""
+  "notes": "",
+  "questionFigureKey": "maths-2021-HL-ask-p2-q3-b-ii"
  },
  {
   "id": "maths-2021-hl-p2-q4-a-i",
@@ -2778,7 +2778,7 @@
  },
  {
   "id": "maths-2021-hl-p2-q7-a",
-  "topicId": "maths-3-4",
+  "topicId": "maths-3-3",
   "conceptId": "total-length-course",
   "level": "higher",
   "year": 2021,
@@ -2870,7 +2870,7 @@
  },
  {
   "id": "maths-2021-hl-p2-q7-c",
-  "topicId": "maths-3-4",
+  "topicId": "maths-3-3",
   "conceptId": "acb-116-correct-decimal-place",
   "level": "higher",
   "year": 2021,
@@ -2962,7 +2962,7 @@
  },
  {
   "id": "maths-2021-hl-p2-q7-e",
-  "topicId": "maths-3-4",
+  "topicId": "maths-3-3",
   "conceptId": "shortest-distance-point-side-correct-decimal",
   "level": "higher",
   "year": 2021,
@@ -3007,7 +3007,7 @@
  },
  {
   "id": "maths-2021-hl-p2-q7-f",
-  "topicId": "maths-3-4",
+  "topicId": "maths-3-3",
   "conceptId": "course-viewed-camera-tower-which-rises",
   "level": "higher",
   "year": 2021,
@@ -4061,13 +4061,13 @@
  {
   "id": "maths-2021-ol-p1-q2",
   "topicId": "maths-4-4",
-  "conceptId": "plot-label-argand-diagram-form-form",
+  "conceptId": "plot-label-argand-diagram-form-complex",
   "level": "ordinary",
   "year": 2021,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 1 Q2",
-  "questionText": "Plot and label z1, z2, and z1 + z2 on the Argand Diagram. z3 = ௭1 ௭2 . (b) z₃ = ௭₁/. Find z₃ in the form a + bi, where a, b∈ℤ. (c) Find Give |z̅₁ your − answer z₂|, where in the z̅₁ form is the complex/p√q, where conjugate p |z̅₁−z₂|, where z̅₁ is the complex conjugate of z₁. your answer in the form p√q, where p and q∈ℕ. (c) Find Give |z̅₁ your − answer z₂|, where in the z̅₁ form is the complex/p√q, where conjugate p |z̅₁−z₂|, where z̅₁ is the complex conjugate of z₁. your answer in the form p√q, where p and q∈ℕ",
+  "questionText": "Plot and label z1, z2, and z1+ z2 on the Argand Diagram. z3= ௭1 ௭2 . Find z3 in the form a+ bi, where a, b∈ℤ. Find |z̅1−z2|, where z̅1 is the complex conjugate of z1. Give your answer in the form p√q, where p and q∈ℕ",
   "figureKey": "maths-2021-OL-paper-p009-i0",
   "labelKey": [],
   "tariffModel": {
@@ -5505,7 +5505,7 @@
  },
  {
   "id": "maths-2021-ol-p1-q10-a-i",
-  "topicId": "maths-3-3",
+  "topicId": "maths-2-3",
   "conceptId": "how-long-takes-release-million-cubic",
   "level": "ordinary",
   "year": 2021,
@@ -6123,13 +6123,13 @@
  {
   "id": "maths-2021-ol-p2-q4-ii",
   "topicId": "maths-2-2",
-  "conceptId": "write-down-ordinates-ordinates-midpoint-iii",
+  "conceptId": "write-down-ordinates-ordinates-midpoint-compass",
   "level": "ordinary",
   "year": 2021,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 2 Q4(ii)",
-  "questionText": "Write down the co-ordinates of A and of B. Find the co-ordinates of the midpoint of [AB]. (iii) Use a compass to construct the circle c, which has AB as its diameter on the diagram above. (iv) Find the length of the radius of the circle c, and hence write down the equation of c. The point P(2, k) is in the first quadrant and is on c. Use algebra to find the value of k and plot the point P on the diagram on the previous page",
+  "questionText": "Write down the co-ordinates of A and of B. Find the co-ordinates of the midpoint of [AB]. Use a compass to construct the circle c, which has AB as its diameter on the diagram above. Find the length of the radius of the circle c, and hence write down the equation of c. The point P(2, k) is in the first quadrant and is on c. Use algebra to find the value of k and plot the point P on the diagram on the previous page",
   "figureKey": "maths-2021-OL-paper-p037-i0",
   "labelKey": [],
   "tariffModel": {
@@ -7132,7 +7132,6 @@
   "section": "B",
   "questionRef": "2021 OL Paper 2 Q10(a)(i)",
   "questionText": "Treasure is hidden at location T(−2, −5). Mark T on the map where this treasure can be found",
-  "stem": "A TY maths class has created a game involving a co-ordinate treasure map, as shown below. The game consists of tasks that involve directions, distances, and locations. The tasks in the game are based on the map. y 6 5 l 4 3 2 C(−3, 2) 1 x -6 -5 -4 -3 -2 -1 1 2 3 4 5 6 7 8 9 10 -1 -2 -3 -4 -5 -6",
   "figureKey": "maths-2021-OL-paper-p053-i0",
   "labelKey": [],
   "tariffModel": {
@@ -7160,7 +7159,8 @@
     }
    }
   ],
-  "notes": ""
+  "notes": "",
+  "questionFigureKey": "maths-2021-OL-ask-p2-q10-a-i"
  },
  {
   "id": "maths-2021-ol-p2-q10-a-ii",
@@ -7255,13 +7255,13 @@
  {
   "id": "maths-2021-ol-p2-q10-b-ii",
   "topicId": "maths-2-2",
-  "conceptId": "meeting-distance-point-point-axis-meeting",
+  "conceptId": "meeting-point-axis-distance-point-value",
   "level": "ordinary",
   "year": 2021,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2021 OL Paper 2 Q10(b)(ii)",
-  "questionText": "(ii) A P meeting is a distance point of P(2,/√41 m) from is below point B(6, the x-axis. meeting point P(2, m) is below the x-axis. is a distance of √41 from point B(6, 4). (ii) A P meeting is a distance point of P(2,/√41 m) from is below point B(6, the x-axis. meeting point P(2, m) is below the x-axis. is a distance of √41 from point B(6, 4). Find the value of m and plot P on the map above",
+  "questionText": "A meeting point P(2, m) is below the x-axis. P is a distance of √41 from point B(6, 4). Find the value of m and plot P on the map above",
   "figureKey": "maths-2021-OL-paper-p054-i1",
   "labelKey": [],
   "tariffModel": {
@@ -7662,7 +7662,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q3-a-i",
-  "topicId": "maths-3-1",
+  "topicId": "maths-2-2",
   "conceptId": "part",
   "level": "higher",
   "year": 2022,
@@ -7707,7 +7707,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q3-a-ii",
-  "topicId": "maths-3-1",
+  "topicId": "maths-2-2",
   "conceptId": "part",
   "level": "higher",
   "year": 2022,
@@ -7847,13 +7847,13 @@
  {
   "id": "maths-2022-hl-p1-q4-a",
   "topicId": "maths-3-1",
-  "conceptId": "sequence-defined-follows-defined-follows-write",
+  "conceptId": "sequence-defined-follows-write-form",
   "level": "higher",
   "year": 2022,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 1 Q4(a)",
-  "questionText": "A sequence u₁ , u₂ , u₃ , ... is defined as follows, for n∈ℕ: is defined as follows, for n∈ℕ: u1 = 2, u2 = 64, un + 1 = √ un un−1 Write u3 in the form 2p , where p∈ℝ",
+  "questionText": "A sequence u1 , u2 , u3 , ... is defined as follows, for n∈ℕ: u1= 2, u2= 64, un+1= √ un un−1 Write u3 in the form 2p , where p∈ℝ",
   "figureKey": "maths-2022-HL-paper-p013-i0",
   "labelKey": [],
   "tariffModel": {
@@ -8767,7 +8767,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-a",
-  "topicId": "maths-3-1",
+  "topicId": "maths-2-3",
   "conceptId": "amount-drug-left-alex-body-days",
   "level": "higher",
   "year": 2022,
@@ -8807,7 +8807,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-b",
-  "topicId": "maths-3-1",
+  "topicId": "maths-2-3",
   "conceptId": "how-long-after-single-injection-will",
   "level": "higher",
   "year": 2022,
@@ -8852,7 +8852,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-c",
-  "topicId": "maths-3-1",
+  "topicId": "maths-2-3",
   "conceptId": "explain-why-total-amount-drug-alex",
   "level": "higher",
   "year": 2022,
@@ -8898,7 +8898,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-d",
-  "topicId": "maths-3-1",
+  "topicId": "maths-2-3",
   "conceptId": "total-amount-drug-alex-body-immediately",
   "level": "higher",
   "year": 2022,
@@ -9028,7 +9028,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-f-ii",
-  "topicId": "maths-3-1",
+  "topicId": "maths-2-3",
   "conceptId": "immediately-after-7th-injection-there-drug",
   "level": "higher",
   "year": 2022,
@@ -9523,15 +9523,152 @@
   "questionFigureKey": "maths-2022-HL-ask-p2-q1-c"
  },
  {
+  "id": "maths-2022-hl-p2-q2-a",
+  "topicId": "maths-2-2",
+  "conceptId": "points-endpoints-line-segment",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 HL Paper 2 Q2(a)",
+  "questionText": "The points A (8, −4) and B (−1, 3) are the endpoints of the line segment [AB]",
+  "figureKey": "maths-2022-HL-paper-p037-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 3, 7, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-hl-p2-q2-a-r1",
+    "kind": "anyN",
+    "verbatim": "Correct formula with some substitution\nValue from formula explicitly identified (a, b, x₁, y₁, x₂, y₂)\nRecognises 9 steps for x or 7 steps for y\nPlots both points on a set of axes",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Correct formula with some substitution\nValue from formula explicitly identified (a, b, x₁, y₁, x₂, y₂)\nRecognises 9 steps for x or 7 steps for y\nPlots both points on a set of axes",
+      "Fully correct substitution into formula\n8 + 4/5 (−1 − 8) and −4 + 4/5 (3 − (−4)), or equivalent"
+     ],
+     "perOptionSteps": [
+      3,
+      7
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2022-HL-ask-p2-q2-a"
+ },
+ {
+  "id": "maths-2022-hl-p2-q2-b",
+  "topicId": "maths-2-2",
+  "conceptId": "line-has-slope-contains-point-all",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 HL Paper 2 Q2(b)",
+  "questionText": "The line l has a slope of m and contains the point (q, r), where m, q, r∈ℝ are all positive. Find the co-ordinates of the point where l cuts the y-axis, in terms of m, q, and r",
+  "figureKey": "maths-2022-HL-paper-p037-i1",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 2, 3, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-hl-p2-q2-b-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit, for example, equation of line formula (accept m as substitution), or indicates distance q or r correctly on diagram, or indicates x = 0",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Full Credit –1: Correct values for x and y, but not given as co-ordinates of a point. Marked in order: Low Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Work of merit, for example, equation of line formula (accept m as substitution), or indicates distance q or r correctly on diagram, or indicates x = 0",
+      "States x = 0 and work of merit towards finding y\nCorrect y-value found"
+     ],
+     "perOptionSteps": [
+      2,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2022-HL-ask-p2-q2-b"
+ },
+ {
+  "id": "maths-2022-hl-p2-q2-c",
+  "topicId": "maths-2-2",
+  "conceptId": "line-has-slope-line-makes-angle",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 HL Paper 2 Q2(c)",
+  "questionText": "The line k has a slope of −2. The line j makes an angle of 30° with k",
+  "figureKey": "maths-2022-HL-paper-p038-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 4, 8, 12, 15)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2022-hl-p2-q2-c-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit, for example, formula for tan 𝜃 with substitution for given slope, or tan 30° indicated\nIndicates tan^(−1)(−2) or 116∙5 … °",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. Full Credit –1: Correct value for slope, but not in required form. Note: 1. Subs in 30 or −2 2. Fully substituted formula (30 and −2) 3. Eliminate fractions and expands 4. Find slope. Note: A solution based on tan^(−1)(−2) = 116∙5 … ° is awarded at most. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Work of merit, for example, formula for tan 𝜃 with substitution for given slope, or tan 30° indicated\nIndicates tan^(−1)(−2) or 116∙5 … °",
+      "2 steps correct\nSets 30 = (−2−m₂)/(1−2m2) and finishes correctly",
+      "3 steps correct"
+     ],
+     "perOptionSteps": [
+      4,
+      4,
+      7
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2022-HL-ask-p2-q2-c"
+ },
+ {
   "id": "maths-2022-hl-p2-q3-a",
   "topicId": "maths-3-1",
-  "conceptId": "radius-circle-has-equation-circle-has",
+  "conceptId": "circle-has-equation-radius",
   "level": "higher",
   "year": 2022,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q3(a)",
-  "questionText": "(a) The The radius circle c of has c is equation/5√3 . x² + y² − 2x + 8y circle c has equation x² + y²−2x + 8y + k = 0, where k∈ℝ. of c is 5√3 . (a) The The radius circle c of has c is equation/5√3 . x² + y² − 2x + 8y circle c has equation x² + y²−2x + 8y + k = 0, where k∈ℝ. of c is 5√3",
+  "questionText": "The circle c has equation x2+ y2−2x+ 8y+ k= 0, where k∈ℝ. The radius of c is 5√3",
   "figureKey": "maths-2022-HL-paper-p039-i0",
   "labelKey": [],
   "tariffModel": {
@@ -9993,7 +10130,6 @@
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q6(c)",
   "questionText": "Prove that O cannot be inside the triangle PQR",
-  "stem": "k If you are proving this by contradiction, your first line should be: “Assume that O is inside the triangle PQR.” 15 Leaving Certificate 2022 Mathematics, Paper 2 – Higher Level",
   "figureKey": "maths-2022-HL-paper-p046-i1",
   "labelKey": [],
   "tariffModel": {
@@ -10021,7 +10157,8 @@
     }
    }
   ],
-  "notes": ""
+  "notes": "",
+  "questionFigureKey": "maths-2022-HL-ask-p2-q6-c"
  },
  {
   "id": "maths-2022-hl-p2-q7-a",
@@ -10302,7 +10439,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q8-a",
-  "topicId": "maths-1-2",
+  "topicId": "maths-1-6",
   "conceptId": "jena-researching-fuel-consumption-cars-she",
   "level": "higher",
   "year": 2022,
@@ -10387,7 +10524,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q8-a-iii",
-  "topicId": "maths-1-2",
+  "topicId": "maths-1-6",
   "conceptId": "iii-two-other-cars-have-miles",
   "level": "higher",
   "year": 2022,
@@ -11029,7 +11166,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 HL Paper 2 Q10(d)",
-  "questionText": "300 runners take part in a road race. Each runner has a number, from 1 to 300 inclusive. No two runners have the same number. Each runner has a number, from 1 to 300 inclusive. No two runners have the same number",
+  "questionText": "300 runners take part in a road race. Each runner has a number, from 1 to 300 inclusive. No two runners have the same number",
   "figureKey": "maths-2022-HL-paper-p057-i1",
   "labelKey": [],
   "tariffModel": {
@@ -11254,6 +11391,138 @@
   ],
   "notes": "",
   "questionFigureKey": "maths-2022-OL-ask-p1-q1-d"
+ },
+ {
+  "id": "maths-2022-ol-p1-q2-a",
+  "topicId": "maths-4-2",
+  "conceptId": "solve-equation",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 1 Q2(a)",
+  "questionText": "Solve the following equation in x: 2(3x−5) + 8 = 4x−5",
+  "figureKey": "maths-2022-OL-paper-p009-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 3, 7, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-q2-a-r1",
+    "kind": "anyN",
+    "verbatim": "Carries out some relevant correct operation",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 3,
+     "options": [
+      "Carries out some relevant correct operation",
+      "Correctly has x on one side and constants on other side\nOne error, for example, error in transposing but finishes correctly"
+     ],
+     "perOptionSteps": [
+      3,
+      7
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q2-a"
+ },
+ {
+  "id": "maths-2022-ol-p1-q2-b",
+  "topicId": "maths-3-1",
+  "conceptId": "write-form",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 1 Q2(b)",
+  "questionText": "Write (34)5 36 in the form 3k , where k∈ℝ",
+  "figureKey": "maths-2022-OL-paper-p009-i1",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 2, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-q2-b-r1",
+    "kind": "anyN",
+    "verbatim": "Writes answer of 4,782,969 or 3486784401\nShows relevant understanding of indices, for example, indicates that 3⁶ = 3 × 3 × 3 × 3 × 3 × 3, or that power of 6 should be subtracted, or indicates 3⁴^×⁵\n14 or 20 written",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. NOTE: Accept correct answer without supporting work. Marked in order: Partial Credit.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Writes answer of 4,782,969 or 3486784401\nShows relevant understanding of indices, for example, indicates that 3⁶ = 3 × 3 × 3 × 3 × 3 × 3, or that power of 6 should be subtracted, or indicates 3⁴^×⁵\n14 or 20 written"
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q2-b"
+ },
+ {
+  "id": "maths-2022-ol-p1-q2-c",
+  "topicId": "maths-4-2",
+  "conceptId": "solve-simultaneous-equations-value-value",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 1 Q2(c)",
+  "questionText": "Solve the simultaneous equations below to find the value of x and the value of y",
+  "figureKey": "maths-2022-OL-paper-p009-i2",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 4, 8, 12, 15)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p1-q2-c-r1",
+    "kind": "anyN",
+    "verbatim": "Some work of merit, for example, relevant work in isolating one variable in one equation, or indicates multiplying one equation by a constant",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 8, three parts for 12. The full scale runs to 15. Note: 4 steps Involved in solution 1. Multiplies equation(s) so that 1 variable will cancel / express one variable in terms of the other 2. Produce one equation in one variable 3. Find value of one variable 4. Find value of second variable. Note: depending on method, step 3 may be automatically done when step 2 is completed. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Some work of merit, for example, relevant work in isolating one variable in one equation, or indicates multiplying one equation by a constant",
+      "2 steps correct",
+      "3 steps correct"
+     ],
+     "perOptionSteps": [
+      4,
+      4,
+      7
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2022-OL-ask-p1-q2-c"
  },
  {
   "id": "maths-2022-ol-p1-q3-a",
@@ -12100,7 +12369,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q8-a-i",
-  "topicId": "maths-4-2",
+  "topicId": "maths-3-3",
   "conceptId": "work-out-how-many-acid-200",
   "level": "ordinary",
   "year": 2022,
@@ -12225,7 +12494,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q8-a-iv",
-  "topicId": "maths-4-2",
+  "topicId": "maths-3-3",
   "conceptId": "when-she-making-another-mixture-jessica",
   "level": "ordinary",
   "year": 2022,
@@ -12270,7 +12539,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q8-b-i",
-  "topicId": "maths-4-2",
+  "topicId": "maths-3-3",
   "conceptId": "write-down-values-cube-these-values",
   "level": "ordinary",
   "year": 2022,
@@ -12940,7 +13209,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2022 OL Paper 1 Q10(c)(i)",
-  "questionText": "Keith buys a new hurl. It usually costs €33. Keith buys a new hurl. It usually costs €33. Keith gets a student discount of 15%. Work out the price Keith pays for the hurl",
+  "questionText": "Keith buys a new hurl. It usually costs €33. Keith gets a student discount of 15%. Work out the price Keith pays for the hurl",
   "figureKey": "maths-2022-OL-paper-p027-i0",
   "labelKey": [],
   "tariffModel": {
@@ -13206,6 +13475,190 @@
   "questionFigureKey": "maths-2022-OL-ask-p2-q1-b-iii"
  },
  {
+  "id": "maths-2022-ol-p2-q2-a-i",
+  "topicId": "maths-2-2",
+  "conceptId": "write-down-centre-radius-circle",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 2 Q2(a)(i)",
+  "questionText": "Write down the centre and radius of the circle k",
+  "figureKey": "maths-2022-OL-paper-p034-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 3, 7, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p2-q2-a-i-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit e.g. indicates h, k, or r², or centre given as (−4,2)",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "Work of merit e.g. indicates h, k, or r², or centre given as (−4,2)",
+      "Centre or radius correct Full Credit (–1):\nAnswer as √169",
+      "Correct answer without supporting work"
+     ],
+     "perOptionSteps": [
+      3,
+      4,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q2-a-i"
+ },
+ {
+  "id": "maths-2022-ol-p2-q2-a-ii",
+  "topicId": "maths-2-2",
+  "conceptId": "point-circle-inside-circle-outside-circle",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 2 Q2(a)(ii)",
+  "questionText": "Is the point (11, 10) on the circle k, inside the circle k, or outside the circle k? Show your working out",
+  "figureKey": "maths-2022-OL-paper-p034-i1",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 2, 3, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p2-q2-a-ii-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit\nCorrect answer with no supporting work\nCorrect relevant formula written",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Marked in order: Low Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Work of merit\nCorrect answer with no supporting work\nCorrect relevant formula written",
+      "Answer correct and significant work of merit in determining length of radius\nFully substituted equation of circle or formula for distance, but incorrect or omitted conclusion Full Credit (–1):\nFully correct work but box not ticked"
+     ],
+     "perOptionSteps": [
+      2,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q2-a-ii"
+ },
+ {
+  "id": "maths-2022-ol-p2-q2-b-i",
+  "topicId": "maths-2-2",
+  "conceptId": "ordinates-another-point-circle-other-than",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 2 Q2(b)(i)",
+  "questionText": "Find the co-ordinates of another point on the circle s, other than (12, 11)",
+  "figureKey": "maths-2022-OL-paper-p035-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 2, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p2-q2-b-i-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit e.g. indicates translation through the centre, or axial symmetry in horizontal or vertical line through the centre\nOne co-ordinate correct in the context of significant correct work",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 5. Marked in order: Partial Credit; Full Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Work of merit e.g. indicates translation through the centre, or axial symmetry in horizontal or vertical line through the centre\nOne co-ordinate correct in the context of significant correct work",
+      "Correct answer without supporting work"
+     ],
+     "perOptionSteps": [
+      2,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q2-b-i"
+ },
+ {
+  "id": "maths-2022-ol-p2-q2-b-ii",
+  "topicId": "maths-2-2",
+  "conceptId": "radius-circle-half-radius-ordinates-centre",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2022 OL Paper 2 Q2(b)(ii)",
+  "questionText": "The radius of the circle t is half the radius of s. Find the co-ordinates of the centre of the circle t",
+  "figureKey": "maths-2022-OL-paper-p035-i1",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 3, 7, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2022-ol-p2-q2-b-ii-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit e.g Indicates required translation (or double required translation)",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 7, three parts for 10. Marked in order: Low Partial Credit; High Partial Credit; Full Credit.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "Work of merit e.g Indicates required translation (or double required translation)",
+      "Finds endpoint of diameter\nFully specifies required translation (that is, necessary action to x and y co-ordinates)",
+      "Correct answer without supporting work"
+     ],
+     "perOptionSteps": [
+      3,
+      4,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2022-OL-ask-p2-q2-b-ii"
+ },
+ {
   "id": "maths-2022-ol-p2-q3-a-i",
   "topicId": "maths-1-6",
   "conceptId": "mean-these-numbers-correct-decimal-place",
@@ -13431,7 +13884,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q4-a",
-  "topicId": "maths-1-6",
+  "topicId": "maths-3-3",
   "conceptId": "group-students-sat-exam-each-student",
   "level": "ordinary",
   "year": 2022,
@@ -13707,7 +14160,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q6-a-i",
-  "topicId": "maths-2-1",
+  "topicId": "maths-4-1",
   "conceptId": "write-down-adb-size-total-angle",
   "level": "ordinary",
   "year": 2022,
@@ -13750,7 +14203,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q6-a-ii",
-  "topicId": "maths-2-1",
+  "topicId": "maths-4-1",
   "conceptId": "aod-130-work-out-size-angle",
   "level": "ordinary",
   "year": 2022,
@@ -14522,7 +14975,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q9-a",
-  "topicId": "maths-2-1",
+  "topicId": "maths-3-4",
   "conceptId": "state-which-statements-most-likely-true",
   "level": "ordinary",
   "year": 2022,
@@ -14656,7 +15109,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q9-e-i",
-  "topicId": "maths-2-1",
+  "topicId": "maths-3-4",
   "conceptId": "correct-decimal-places",
   "level": "ordinary",
   "year": 2022,
@@ -14703,7 +15156,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q9-e-ii",
-  "topicId": "maths-2-1",
+  "topicId": "maths-3-4",
   "conceptId": "acb-angle-roof-makes-point-correct",
   "level": "ordinary",
   "year": 2022,
@@ -15415,7 +15868,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q3(b)",
-  "questionText": "t is a positive real number, with: log3t + log9t + log27t + log81t = 10 Find the value of t. Find the value of t. Give your answer in the form 3^r, where r∈ℚ",
+  "questionText": "t is a positive real number, with: log3t+ log9t+ log27t+ log81t= 10 Find the value of t. Give your answer in the form 3r, where r∈ℚ",
   "figureKey": "maths-2023-HL-paper-p011-i1",
   "labelKey": [],
   "tariffModel": {
@@ -15647,13 +16100,13 @@
  {
   "id": "maths-2023-hl-p1-q5-a",
   "topicId": "maths-5-2",
-  "conceptId": "function-defined-follows-5x2-derivative-derivative",
+  "conceptId": "function-defined-follows-5x2-derivative-its",
   "level": "higher",
   "year": 2023,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q5(a)",
-  "questionText": "The function f is defined as follows, for x∈ℝ: f(x) = 1 5x2 + 7 Find f′(x), the derivative of f. Find f′(x), the derivative of f. Give your answer in its simplest form",
+  "questionText": "The function f is defined as follows, for x∈ℝ: f(x)= 1 5x2+ 7 Find f′(x), the derivative of f. Give your answer in its simplest form",
   "figureKey": "maths-2023-HL-paper-p016-i0",
   "labelKey": [],
   "tariffModel": {
@@ -15692,13 +16145,13 @@
  {
   "id": "maths-2023-hl-p1-q5-b",
   "topicId": "maths-5-2",
-  "conceptId": "function-defined-follows-tan-value-value",
+  "conceptId": "function-defined-follows-tan-value-form",
   "level": "higher",
   "year": 2023,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q5(b)",
-  "questionText": "The function g(x) is defined as follows, for x∈ℝ, 0 < x < 𝜋: g(x) = (tan ( x 2 ))(ln x) Find the value of g′( 𝜋 2 ). Find the value of g′ ( 𝜋/2 ). Give your answer in the form a + ln b, where a, b∈ℝ",
+  "questionText": "The function g(x) is defined as follows, for x∈ℝ, 0 < x< 𝜋: g(x) = (tan ( x 2 ))(ln x) Find the value of g′( 𝜋 2 ). Give your answer in the form a+ ln b, where a, b∈ℝ",
   "figureKey": "maths-2023-HL-paper-p016-i1",
   "labelKey": [],
   "tariffModel": {
@@ -16497,7 +16950,7 @@
  },
  {
   "id": "maths-2023-hl-p1-q9-b-i",
-  "topicId": "maths-3-1",
+  "topicId": "maths-2-3",
   "conceptId": "complete-table-showing-pairs-factors",
   "level": "higher",
   "year": 2023,
@@ -16654,7 +17107,6 @@
   "section": "B",
   "questionRef": "2023 HL Paper 1 Q10(a)",
   "questionText": "Draw T₄ in the grid below, based on the triangle given on the grid",
-  "stem": "A triangle has a base of length 2 units and a perpendicular height of 8 units, as shown in the diagram on the right. The diagrams below show T₁, T₂, and T₃, the first three shapes in a sequence 8 of shapes based on this triangle. For each value of n∈ℕ, the shape Tₙ is made up of n rectangles of equal height 2 laid on top of each other. Tₙ is the collection of the smallest such rectangles that completely covers the triangle. 2 T₁ T₂ T₃ 1 rectangle 2 rectangles 3 rectangles of equal height of equal height",
   "figureKey": "maths-2023-HL-paper-p030-i0",
   "labelKey": [],
   "tariffModel": {
@@ -16682,7 +17134,8 @@
     }
    }
   ],
-  "notes": ""
+  "notes": "",
+  "questionFigureKey": "maths-2023-HL-ask-p1-q10-a"
  },
  {
   "id": "maths-2023-hl-p1-q10-b",
@@ -16821,7 +17274,7 @@
  },
  {
   "id": "maths-2023-hl-p1-q10-e-ii",
-  "topicId": "maths-3-4",
+  "topicId": "maths-2-3",
   "conceptId": "starts-increase-rate-units-per-second",
   "level": "higher",
   "year": 2023,
@@ -17201,7 +17654,7 @@
  },
  {
   "id": "maths-2023-hl-p2-q3-b-ii",
-  "topicId": "maths-2-2",
+  "topicId": "maths-2-3",
   "conceptId": "perpendicular-bisector-value-value",
   "level": "higher",
   "year": 2023,
@@ -18621,6 +19074,178 @@
   "questionFigureKey": "maths-2023-OL-ask-p1-q1-c"
  },
  {
+  "id": "maths-2023-ol-p1-q2-a-i",
+  "topicId": "maths-4-4",
+  "conceptId": "plot-label-complex-conjugate-diagram",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 1 Q2(a)(i), (ii)",
+  "questionText": "Plot and label z₁̅ , the complex conjugate of z₁ , on the diagram above",
+  "figureKey": "maths-2023-OL-paper-p008-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 4, 6, 8, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-q2-a-i-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit, for example shows knowledge of conjugate, OR plots one of z₂ or z₃\nWrites z̅₁ only but nothing plotted",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6, three parts for 8. The full scale runs to 10. Note: Award F* if plots all three points correctly but no or incorrect labels Re z₃. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Work of merit, for example shows knowledge of conjugate, OR plots one of z₂ or z₃\nWrites z̅₁ only but nothing plotted",
+      "Plots z̅₁\nWrites z̅₁ but doesn’t plot and plots one of z₂ or z₃\nPlots z₂ and z₃ but doesn’t deal with z̅₁",
+      "Plots z̅₁ and one of z₂ or z₃"
+     ],
+     "perOptionSteps": [
+      4,
+      2,
+      4
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q2-a-i"
+ },
+ {
+  "id": "maths-2023-ol-p1-q2-a-iii",
+  "topicId": "maths-3-1",
+  "conceptId": "iii-write-form",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 1 Q2(a)(iii)",
+  "questionText": "(iii) Write 4z₂−5z₃ in the form a + bi, where a, b∈ℤ",
+  "figureKey": "maths-2023-OL-paper-p008-i1",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 4, 6, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-q2-a-iii-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit, for example , correctly substitutes z₂ or z₃ or does distribution on one of z₂ or z₃ without showing the substitution",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Work of merit, for example , correctly substitutes z₂ or z₃ or does distribution on one of z₂ or z₃ without showing the substitution",
+      "Full substitution and distribution"
+     ],
+     "perOptionSteps": [
+      4,
+      6
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q2-a-iii"
+ },
+ {
+  "id": "maths-2023-ol-p1-q2-a-iv",
+  "topicId": "maths-3-2",
+  "conceptId": "work-out-value-surd-form",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 1 Q2(a)(iv)",
+  "questionText": "(iv) Work out the value of |z₃|. Give your answer in surd form",
+  "figureKey": "maths-2023-OL-paper-p009-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 3, 4, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-q2-a-iv-r1",
+    "kind": "anyN",
+    "verbatim": "Writes Writes (6² or (−2)²)/(√a² + b²)\nHigh (Partial Credit)/(√6² + (−2)²)",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3. The full scale runs to 5. Note: Accept correct answer without supporting work for full credit. Note: Full Credit -1 : 6 ∙3 without work. Marked in order: Low Partial Credit.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Writes Writes (6² or (−2)²)/(√a² + b²)\nHigh (Partial Credit)/(√6² + (−2)²)"
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q2-a-iv"
+ },
+ {
+  "id": "maths-2023-ol-p1-q2-b",
+  "topicId": "maths-4-4",
+  "conceptId": "complex-numbers-shown-argand-diagram-diagram",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2023 OL Paper 1 Q2(b)",
+  "questionText": "The complex numbers z₄ , z₅ , z₆ , and z₇ are shown on the Argand diagram below. The diagram is to scale",
+  "figureKey": "maths-2023-OL-paper-p009-i1",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 3, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2023-ol-p1-q2-b-r1",
+    "kind": "anyN",
+    "verbatim": "Correct box ticked\nShows knowledge of meaning of modulus\nJoined to origin on diagram\nCorrectly explains the meaning of modulus but ticks the wrong box",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3. The full scale runs to 5. Note: Accept z₅ ticked and “furthest” for full credit. Marked in order: Partial Credit.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Correct box ticked\nShows knowledge of meaning of modulus\nJoined to origin on diagram\nCorrectly explains the meaning of modulus but ticks the wrong box"
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2023-OL-ask-p1-q2-b"
+ },
+ {
   "id": "maths-2023-ol-p1-q3-a",
   "topicId": "maths-4-2",
   "conceptId": "solve-equation",
@@ -19189,13 +19814,13 @@
  {
   "id": "maths-2023-ol-p1-q6-c",
   "topicId": "maths-4-2",
-  "conceptId": "solve-equation-each-correct-decimal-places",
+  "conceptId": "solve-equation-9x2-each-correct-decimal",
   "level": "ordinary",
   "year": 2023,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2023 OL Paper 1 Q6(c)",
-  "questionText": "Solve the following equation in x: 9x² + 6x−5 = 0 Give each answer correct to 2 decimal places",
+  "questionText": "Solve the following equation in x: 9x2+ 6x−5 = 0 Give each answer correct to 2 decimal places",
   "figureKey": "maths-2023-OL-paper-p017-i0",
   "labelKey": [],
   "tariffModel": {
@@ -22185,7 +22810,7 @@
  },
  {
   "id": "maths-2023-ol-p2-q10-a",
-  "topicId": "maths-1-3",
+  "topicId": "maths-1-2",
   "conceptId": "work-out-cba-size-angle-cba",
   "level": "ordinary",
   "year": 2023,
@@ -23410,7 +24035,7 @@
  },
  {
   "id": "maths-2024-hl-p1-q7-b-i",
-  "topicId": "maths-5-2",
+  "topicId": "maths-3-3",
   "conceptId": "write-down-present-value-each-their",
   "level": "higher",
   "year": 2024,
@@ -24171,13 +24796,13 @@
  {
   "id": "maths-2024-hl-p1-q10-c-ii",
   "topicId": "maths-3-1",
-  "conceptId": "function-can-written-form-constants-constants",
+  "conceptId": "function-can-written-form-constants-value",
   "level": "higher",
   "year": 2024,
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2024 HL Paper 1 Q10(c)(ii)",
-  "questionText": "The function k can be written in the form k(x) = −x2 + b + c, where b, c∈ℝ are constants. where b, c∈ℝ are constants. Find the value of b and the value of c",
+  "questionText": "The function k can be written in the form k(x) = −x2 + b+ c, where b, c∈ℝ are constants. Find the value of b and the value of c",
   "figureKey": "maths-2024-HL-paper-p027-i0",
   "labelKey": [],
   "tariffModel": {
@@ -26080,6 +26705,410 @@
   "questionFigureKey": "maths-2024-OL-ask-p1-q1-c"
  },
  {
+  "id": "maths-2024-ol-p1-q2-a-i",
+  "topicId": "maths-4-4",
+  "conceptId": "using-argand-diagram-write-down-values",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 1 Q2(a)(i), (ii)",
+  "questionText": "Using the Argand diagram, write down the values of z₁, z₂ and z₃ in the form a + b where a, b∈ℤ",
+  "figureKey": "maths-2024-OL-paper-p008-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 3, 5, 7, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p1-q2-a-i-r1",
+    "kind": "anyN",
+    "verbatim": "One ordinate of one complex number correct\nModulus formula",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Note: Four items involved in solution: 1. z₁ 2. z₂ 3. z₃ 4. |z₂|. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "One ordinate of one complex number correct\nModulus formula",
+      "Work of merit in (i) AND (ii)\nTwo items correct",
+      "Three items correct"
+     ],
+     "perOptionSteps": [
+      3,
+      2,
+      5
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q2-a-i"
+ },
+ {
+  "id": "maths-2024-ol-p1-q2-b",
+  "topicId": "maths-3-1",
+  "conceptId": "write-form",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 1 Q2(b)",
+  "questionText": "v= 15 1+2i. Write v in the form a+ b, where a, b∈ℤ",
+  "figureKey": "maths-2024-OL-paper-p008-i1",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 5, 8, 15)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p1-q2-b-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit, for example, writes down the conjugate\nSome correct multiplication",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 8. The full scale runs to 15. Full Credit -1: Apply a * if in the form (15−30ii)/5. Marked in order: Low Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 5,
+     "options": [
+      "Work of merit, for example, writes down the conjugate\nSome correct multiplication",
+      "15/(1 + 2i) × (1−2i)/(1−2i) with some correct multiplication"
+     ],
+     "perOptionSteps": [
+      5,
+      10
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q2-b"
+ },
+ {
+  "id": "maths-2024-ol-p1-q2-c",
+  "topicId": "maths-4-4",
+  "conceptId": "complex-number-shown-argand-diagram-drawn",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 1 Q2(c)",
+  "questionText": "The complex number w = 1 + 2i is shown on the Argand diagram below (drawn to scale). The three complex numbers labelled A, B, and C are also shown on the Argand diagram",
+  "figureKey": "maths-2024-OL-paper-p008-i2",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 2, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p1-q2-c-r1",
+    "kind": "anyN",
+    "verbatim": "Correct box ticked\nWork of merit in reason, for example, 1 −2i",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2. The full scale runs to 5. Marked in order: Partial Credit.",
+    "group": {
+     "claimMax": 1,
+     "perOption": 5,
+     "options": [
+      "Correct box ticked\nWork of merit in reason, for example, 1 −2i"
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q2-c"
+ },
+ {
+  "id": "maths-2024-ol-p1-q3-a",
+  "topicId": "maths-4-2",
+  "conceptId": "toy-shop-sells-two-different-sets",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 1 Q3(a)",
+  "questionText": "A toy shop sells two different sets of the same building blocks, Set A and Set B, as shown in the table below",
+  "figureKey": "maths-2024-OL-paper-p009-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 4, 6, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p1-q3-a-r1",
+    "kind": "anyN",
+    "verbatim": "Correct box ticked\nWork of merit, for example, a correct calculation/setup, 12/60 or similar",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Correct box ticked\nWork of merit, for example, a correct calculation/setup, 12/60 or similar",
+      "A full comparable calculation worked out, for example, 150 of set A calculated or 60 of Set B calculated OR The per unit cost of both\nCorrect box ticked and work of merit"
+     ],
+     "perOptionSteps": [
+      4,
+      6
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q3-a"
+ },
+ {
+  "id": "maths-2024-ol-p1-q3-b",
+  "topicId": "maths-4-2",
+  "conceptId": "solve-equation-each-correct-decimal-places",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 1 Q3(b)",
+  "questionText": "Solve the following equation in x∈ℝ: 3x² −5x + 1 = 0 Give each answer correct to 2 decimal places",
+  "figureKey": "maths-2024-OL-paper-p009-i1",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 2, 3, 5)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p1-q3-b-r1",
+    "kind": "anyN",
+    "verbatim": "Quadratic formula written\nWork of merit, for example, identifies one of a, b or c",
+    "marks": 5,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 2, two parts for 3. The full scale runs to 5. Full Credit -1: Apply a * for no or incorrect rounding. Note: Three steps involved in solution: 1. Identifies a, b, and c 2. Fully substituted formula 3. Both correctly evaluated. Marked in order: Low Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 2,
+     "options": [
+      "Quadratic formula written\nWork of merit, for example, identifies one of a, b or c",
+      "Two steps correct\nFormula fully correctly substituted\nSecond value not found"
+     ],
+     "perOptionSteps": [
+      2,
+      3
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q3-b"
+ },
+ {
+  "id": "maths-2024-ol-p1-q3-c",
+  "topicId": "maths-4-2",
+  "conceptId": "algebra-solve-simultaneous-equations-hint-first",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 1 Q3(c)",
+  "questionText": "Use algebra to solve the simultaneous equations: 2x + y = 5 x² + y² = 25 Hint: first, use 2x + y = 5 to write y in terms of x",
+  "figureKey": "maths-2024-OL-paper-p010-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 5, 7, 9, 15)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p1-q3-c-r1",
+    "kind": "anyN",
+    "verbatim": "Some work of merit, for example, one correct transposition on any step\nTrial and improvement\nWrites the quadratic formula",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 5, two parts for 7, three parts for 9. The full scale runs to 15. Note: Four steps involved in solution: 1. Writes one variable in terms of the other 2. Substitute this into the quadratic 3. Finds both values of x (or y) OR one co-ordinate set 4. Finds the two co-ordinate sets. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 5,
+     "options": [
+      "Some work of merit, for example, one correct transposition on any step\nTrial and improvement\nWrites the quadratic formula",
+      "Two steps correct",
+      "Three steps correct"
+     ],
+     "perOptionSteps": [
+      5,
+      2,
+      8
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q3-c"
+ },
+ {
+  "id": "maths-2024-ol-p1-q4-a",
+  "topicId": "maths-4-2",
+  "conceptId": "solve-equation",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 1 Q4(a)",
+  "questionText": "Solve the following equation in x∈ℝ: 4(2x−5) −1 = 3x + 7",
+  "figureKey": "maths-2024-OL-paper-p011-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 4, 6, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p1-q4-a-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit, for example, one correct operation",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Note: Three steps involved in solution: 1. Distribution of 4 2. Transposing 3. Solves. Marked in order: Low Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Work of merit, for example, one correct operation",
+      "Two steps correct"
+     ],
+     "perOptionSteps": [
+      4,
+      6
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q4-a"
+ },
+ {
+  "id": "maths-2024-ol-p1-q4-b",
+  "topicId": "maths-3-3",
+  "conceptId": "liam-joan-martha-split-bill-ratio",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 1 Q4(b)",
+  "questionText": "Liam, Joan and Martha split a bill in the following ratio: Liam Joan Martha : Liam and Joan paid €154 in total 4 :/between 3 them. between them. 3 5 Martha paid the rest of the bill",
+  "figureKey": "maths-2024-OL-paper-p011-i1",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 4, 6, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p1-q4-b-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit, for example, 4 + 3, 12",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Work of merit, for example, 4 + 3, 12",
+      "Calculates one part"
+     ],
+     "perOptionSteps": [
+      4,
+      6
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q4-b"
+ },
+ {
+  "id": "maths-2024-ol-p1-q4-c-i",
+  "topicId": "maths-3-1",
+  "conceptId": "write-128-form",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2024 OL Paper 1 Q4(c)(i), (ii)",
+  "questionText": "Write 128 in the form 2^k, where k∈ℕ",
+  "figureKey": "maths-2024-OL-paper-p011-i2",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 4, 6, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2024-ol-p1-q4-c-i-r1",
+    "kind": "anyN",
+    "verbatim": "(i) correct\nSome work of merit in (ii), for example, equates 2^(4x + 1) to their answer from (i)\nSome correct work with indices",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Note: Accept when part (i) is correct and part (ii) is solved by correct value trialled. Marked in order: Low Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "(i) correct\nSome work of merit in (ii), for example, equates 2^(4x + 1) to their answer from (i)\nSome correct work with indices",
+      "Part (i) correct and work of merit in part (ii)\nPart (ii) correct"
+     ],
+     "perOptionSteps": [
+      4,
+      6
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q4-c-i"
+ },
+ {
   "id": "maths-2024-ol-p1-q5-a",
   "topicId": "maths-4-1",
   "conceptId": "value-expression-when",
@@ -26181,7 +27210,6 @@
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q5(c)",
   "questionText": "The graph of the linear function g(x) is shown below",
-  "stem": "y 6 g(x) 5 4 3 2 1 x -3 -2 -1 1 2 3 4 5 6 -1 -2 Use the graph to find the rate of change of g(x), that is, find g′(x). Give your answer in the form aa/bb where aa, bb ∈ b∈ℕ.",
   "figureKey": "maths-2024-OL-paper-p012-i2",
   "labelKey": [],
   "tariffModel": {
@@ -26209,7 +27237,8 @@
     }
    }
   ],
-  "notes": ""
+  "notes": "",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q5-c"
  },
  {
   "id": "maths-2024-ol-p1-q7-a-i",
@@ -27739,7 +28768,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q5-a-i",
-  "topicId": "maths-1-2",
+  "topicId": "maths-3-3",
   "conceptId": "fill-three-missing-numbers-horizontal-axis",
   "level": "ordinary",
   "year": 2024,
@@ -27871,7 +28900,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q6-a-i",
-  "topicId": "maths-2-4",
+  "topicId": "maths-2-3",
   "conceptId": "construct-bisector-angle-using-only-compass",
   "level": "ordinary",
   "year": 2024,
@@ -28622,7 +29651,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q9-b-i",
-  "topicId": "maths-1-2",
+  "topicId": "maths-3-4",
   "conceptId": "complete-venn-diagram-number-customers-each",
   "level": "ordinary",
   "year": 2024,
@@ -28702,7 +29731,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q9-c",
-  "topicId": "maths-1-2",
+  "topicId": "maths-3-4",
   "conceptId": "general-sales-ice-creams-increase-weather",
   "level": "ordinary",
   "year": 2024,
@@ -28747,7 +29776,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q9-d-i",
-  "topicId": "maths-1-2",
+  "topicId": "maths-3-4",
   "conceptId": "size-angle-length-arc",
   "level": "ordinary",
   "year": 2024,
@@ -30890,7 +31919,7 @@
  },
  {
   "id": "maths-2025-hl-p1-q10-d-iii",
-  "topicId": "maths-4-1",
+  "topicId": "maths-2-2",
   "conceptId": "value-which-given-lim-4t2",
   "level": "higher",
   "year": 2025,
@@ -30937,7 +31966,7 @@
  },
  {
   "id": "maths-2025-hl-p1-q10-e-i",
-  "topicId": "maths-4-1",
+  "topicId": "maths-2-2",
   "conceptId": "write-down-value",
   "level": "higher",
   "year": 2025,
@@ -31801,7 +32830,7 @@
   "subjectId": "maths",
   "section": "B",
   "questionRef": "2025 HL Paper 2 Q6(c)",
-  "questionText": "In the triangle A, |A| = 2, |B| = 3, and |A| = 4. C 2 3 A B 4 Use the Cosine Rule to find the value of tan ∠C, without using a calculator. Use the Cosine Rule to find the value/^√ⁿⁿ of tan ∠CCCCCC, without using a calculator. Give your answer in the form ^(√n) Give your answer in the form ^√ⁿⁿ/mm , where nn, m∈ℤ. Show all your working out. Give your answer in the form ^√ⁿⁿ/mm , where nn, m∈ℤ. Show all your working out. tan ∠C = __________ Section B Contexts and Applications 150 marks",
+  "questionText": "In the triangle A, |A| = 2, |B| = 3, and |A| = 4. C 2 3 A B 4 Use the Cosine Rule to find the value of tan ∠C, without using a calculator. Give your answer in the form √n m , where n, m∈ℤ. Show all your working out. tan ∠C= __________ Section B Contexts and Applications 150 marks",
   "figureKey": "maths-2025-HL-paper-p055-i0",
   "labelKey": [],
   "tariffModel": {
@@ -33559,8 +34588,145 @@
   "questionFigureKey": "maths-2025-OL-ask-p1-q5-c-i"
  },
  {
+  "id": "maths-2025-ol-p1-q6-a-i",
+  "topicId": "maths-3-3",
+  "conceptId": "selling-price-coat",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 OL Paper 1 Q6(a)(i), (ii)",
+  "questionText": "Find the selling price of the coat",
+  "figureKey": "maths-2025-OL-paper-p013-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 3, 5, 7, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-ol-p1-q6-a-i-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit in (i), for example, writes 0∙25 or 1∙25\nWork of merit in (ii), for example, relevant use of answer from (i) OR writes down the profit\nProfit (22∙50) written in (i) OR (ii)",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Note: Accept correct answer without work for (i). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 3,
+     "options": [
+      "Work of merit in (i), for example, writes 0∙25 or 1∙25\nWork of merit in (ii), for example, relevant use of answer from (i) OR writes down the profit\nProfit (22∙50) written in (i) OR (ii)",
+      "Work of merit in (i) AND (ii)\nOne part correct",
+      "One part correct and work of merit in the other part"
+     ],
+     "perOptionSteps": [
+      3,
+      2,
+      5
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q6-a-i"
+ },
+ {
+  "id": "maths-2025-ol-p1-q6-b",
+  "topicId": "maths-3-1",
+  "conceptId": "write-each-numbers-form",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 OL Paper 1 Q6(b)",
+  "questionText": "Write each of the following numbers in the form a × 10ⁿ, where 1 ≤ a < 10, n∈ℤ",
+  "figureKey": "maths-2025-OL-paper-p013-i1",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 4, 6, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-ol-p1-q6-b-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit, for example, 5∙8 OR 3∙6 written OR shows some understanding of scientific notation",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Work of merit, for example, 5∙8 OR 3∙6 written OR shows some understanding of scientific notation",
+      "One correct answer"
+     ],
+     "perOptionSteps": [
+      4,
+      6
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q6-b"
+ },
+ {
+  "id": "maths-2025-ol-p1-q6-c",
+  "topicId": "maths-3-3",
+  "conceptId": "light-travels-speed-approximately-second-light",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 OL Paper 1 Q6(c)",
+  "questionText": "Light travels at a speed of approximately 3 × 10⁵ km/second. A light year is the distance travelled by light in 1 year",
+  "figureKey": "maths-2025-OL-paper-p013-i2",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 4, 6, 10)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "maths-2025-ol-p1-q6-c-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit, for example, D = S × T, 24, 60 written OR one relevant multiplication, for example 60 × 365\nFinds total number of seconds (31 536 000)",
+    "marks": 10,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Marked in order: Low Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 2,
+     "perOption": 4,
+     "options": [
+      "Work of merit, for example, D = S × T, 24, 60 written OR one relevant multiplication, for example 60 × 365\nFinds total number of seconds (31 536 000)",
+      "Distance formula fully substituted"
+     ],
+     "perOptionSteps": [
+      4,
+      6
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2025-OL-ask-p1-q6-c"
+ },
+ {
   "id": "maths-2025-ol-p1-q7-a-i",
-  "topicId": "maths-4-1",
+  "topicId": "maths-3-3",
   "conceptId": "graph-estimate-value-one-share-1st",
   "level": "ordinary",
   "year": 2025,
@@ -33607,7 +34773,7 @@
  },
  {
   "id": "maths-2025-ol-p1-q7-b",
-  "topicId": "maths-4-1",
+  "topicId": "maths-3-3",
   "conceptId": "1st-august-value-one-share-was",
   "level": "ordinary",
   "year": 2025,
@@ -33697,7 +34863,7 @@
  },
  {
   "id": "maths-2025-ol-p1-q7-d-i",
-  "topicId": "maths-4-1",
+  "topicId": "maths-3-3",
   "conceptId": "complete-table-values-given-values-each",
   "level": "ordinary",
   "year": 2025,
@@ -33829,7 +34995,7 @@
  },
  {
   "id": "maths-2025-ol-p1-q8-a-i",
-  "topicId": "maths-5-2",
+  "topicId": "maths-3-3",
   "conceptId": "explain-what-means-context-question",
   "level": "ordinary",
   "year": 2025,
@@ -33874,7 +35040,7 @@
  },
  {
   "id": "maths-2025-ol-p1-q8-a-ii",
-  "topicId": "maths-5-2",
+  "topicId": "maths-3-3",
   "conceptId": "complete-table-values-given-values",
   "level": "ordinary",
   "year": 2025,
@@ -34013,7 +35179,7 @@
  },
  {
   "id": "maths-2025-ol-p1-q8-c-i",
-  "topicId": "maths-5-2",
+  "topicId": "maths-3-3",
   "conceptId": "graph-estimate-work-out-value",
   "level": "ordinary",
   "year": 2025,
@@ -34060,7 +35226,7 @@
  },
  {
   "id": "maths-2025-ol-p1-q9-a-i",
-  "topicId": "maths-3-1",
+  "topicId": "maths-4-1",
   "conceptId": "how-much-money-will-account-after",
   "level": "ordinary",
   "year": 2025,
@@ -36217,7 +37383,7 @@
  },
  {
   "id": "maths-2025-ol-p2-q10-a-i",
-  "topicId": "maths-3-4",
+  "topicId": "maths-2-3",
   "conceptId": "aoibhe-swims-back",
   "level": "ordinary",
   "year": 2025,
@@ -36302,7 +37468,7 @@
  },
  {
   "id": "maths-2025-ol-p2-q10-a-iii",
-  "topicId": "maths-3-4",
+  "topicId": "maths-2-3",
   "conceptId": "iii-aoibhe-swims-straight-cosine-rule",
   "level": "ordinary",
   "year": 2025,
@@ -36392,7 +37558,7 @@
  },
  {
   "id": "maths-2025-ol-p2-q10-b-i",
-  "topicId": "maths-3-4",
+  "topicId": "maths-2-3",
   "conceptId": "another-example-such-route-aoibhe-could",
   "level": "ordinary",
   "year": 2025,
@@ -36432,7 +37598,7 @@
  },
  {
   "id": "maths-2025-ol-p2-q10-b-ii",
-  "topicId": "maths-3-4",
+  "topicId": "maths-2-3",
   "conceptId": "work-out-how-many-such-routes",
   "level": "ordinary",
   "year": 2025,

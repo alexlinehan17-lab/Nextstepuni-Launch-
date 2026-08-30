@@ -5577,5 +5577,229 @@
   "truncated": false,
   "questionRef": "2025 OL Paper 2 Q10(b)(ii), (iii)",
   "description": "The question as printed on the paper \u2014 Aoibhe is a member of a sea swimming club. The club has six markers in the water, labelled \ud835\udc34\ud835\udc34, \ud835\udc35\ud835\udc35, \ud835\udc36\ud835\udc36, \ud835\udc37\ud835\udc37, \ud835\udc38\ud835\udc38, and \ud835\udc39\ud835\udc39, as shown in the diagram below. \ud835\udc37\ud835\udc37 200 m \ud835\udc36\ud835\udc36 150 m 150 m \ud835\udc38\ud835\udc38 \ud835\udc35\ud835\udc35 110\u00b0 200 m 200 m 200 m \ud835\udc39\ud835\udc39 \ud835\udc34\ud835\udc34 (b) Point \ud835\udc34"
+ },
+ {
+  "file": "maths-2021-HL-ask-p2-q3-b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2021 HL Paper 2 Q3(b)(ii)",
+  "description": "The question as printed on the paper \u2014 There are an infinite number of circles which touch circle c externally at the same point that s touches c. Find the coordinates of the centre of one of these circles, apart from circle s."
+ },
+ {
+  "file": "maths-2021-OL-ask-p2-q10-a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2021 OL Paper 2 Q10(a)(i)",
+  "description": "The question as printed on the paper \u2014 A TY maths class has created a game involving a co-ordinate treasure map, as shown below. The game consists of tasks that involve directions, distances, and locations. The tasks in the game are based on the map. y 6 5 l "
+ },
+ {
+  "file": "maths-2022-HL-ask-p2-q2-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2022 HL Paper 2 Q2(a)",
+  "description": "The question as printed on the paper \u2014 The points A (8, \u22124) and B (\u22121, 3) are the endpoints of the line segment [AB]. Find the coordinates of the point C, which divides [AB] internally in the ratio 4 \u22361."
+ },
+ {
+  "file": "maths-2022-HL-ask-p2-q2-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2022 HL Paper 2 Q2(b)",
+  "description": "The question as printed on the paper \u2014 The line l has a slope of m and contains the point (q, r), where m, q, r\u2208\u211d are all positive. Find the co-ordinates of the point where l cuts the y-axis, in terms of m, q, and r. y l (q, r) x"
+ },
+ {
+  "file": "maths-2022-HL-ask-p2-q2-c.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2022 HL Paper 2 Q2(c)",
+  "description": "The question as printed on the paper \u2014 The line k has a slope of \u22122. The line j makes an angle of 30\u00b0 with k. Find Give one your possible answer in value the of form the d slope + of/e\u221af, the where line one possible value of the slope of the line j. your answ"
+ },
+ {
+  "file": "maths-2022-HL-ask-p2-q6-c.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2022 HL Paper 2 Q6(c)",
+  "description": "The question as printed on the paper \u2014 Prove that O cannot be inside the triangle PQR. k If you are proving this by contradiction, your first line should be: \u201cAssume that O is inside the triangle PQR.\u201d"
+ },
+ {
+  "file": "maths-2022-OL-ask-p1-q2-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2022 OL Paper 1 Q2(a)",
+  "description": "The question as printed on the paper \u2014 Solve the following equation in x: 2(3x\u22125) + 8 = 4x\u22125 (b) Write (3\u2074)\u2075/36 in the form 3^k , where k \u2208 \u211d ."
+ },
+ {
+  "file": "maths-2022-OL-ask-p1-q2-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2022 OL Paper 1 Q2(b)",
+  "description": "The question as printed on the paper \u2014 (b) Write (3\u2074)\u2075/36 in the form 3^k , where k \u2208 \u211d ."
+ },
+ {
+  "file": "maths-2022-OL-ask-p1-q2-c.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2022 OL Paper 1 Q2(c)",
+  "description": "The question as printed on the paper \u2014 Solve the simultaneous equations below to find the value of x and the value of y. 3x + 2y = 1 7x + 5y = \u22122"
+ },
+ {
+  "file": "maths-2022-OL-ask-p2-q2-a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2022 OL Paper 2 Q2(a)(i)",
+  "description": "The question as printed on the paper \u2014 The circle k has equation (x\u22124)\u00b2 + (y + 2)\u00b2 = 169. Write down the centre and radius of the circle k."
+ },
+ {
+  "file": "maths-2022-OL-ask-p2-q2-a-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2022 OL Paper 2 Q2(a)(ii)",
+  "description": "The question as printed on the paper \u2014 The circle k has equation (x\u22124)\u00b2 + (y + 2)\u00b2 = 169. (a) Is the point (11, 10) on the circle k, inside the circle k, or outside the circle k? Show your working out. (11, 10) is (11, 10) is (11, 10) is Answer: on k inside k"
+ },
+ {
+  "file": "maths-2022-OL-ask-p2-q2-b-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2022 OL Paper 2 Q2(b)(i)",
+  "description": "The question as printed on the paper \u2014 The diagram below shows two circles, s and t. The circle s has centre (22, 13). The two circles touch at the point (12, 11). s t (22, 13) (12, 11) Find the co-ordinates of another point on the circle s, other than (12, 1"
+ },
+ {
+  "file": "maths-2022-OL-ask-p2-q2-b-ii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2022 OL Paper 2 Q2(b)(ii)",
+  "description": "The question as printed on the paper \u2014 The diagram below shows two circles, s and t. The circle s has centre (22, 13). The two circles touch at the point (12, 11). s t (22, 13) (12, 11) Find the co-ordinates of another point on the circle s, other than (12, 1"
+ },
+ {
+  "file": "maths-2023-HL-ask-p1-q10-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2023 HL Paper 1 Q10(a)",
+  "description": "The question as printed on the paper \u2014 A triangle has a base of length 2 units and a perpendicular height of 8 units, as shown in the diagram on the right. The diagrams below show T\u2081, T\u2082, and T\u2083, the first three shapes in a sequence 8 of shapes based on this "
+ },
+ {
+  "file": "maths-2023-HL-ask-p2-q9-c-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2023 HL Paper 2 Q9(c)(i)",
+  "description": "The question as printed on the paper \u2014 Ava is looking at different tilings, that is, different ways of covering a region with shapes. First, she looks at two different tilings: one using identical squares and another using identical regular hexagons. (Note: a"
+ },
+ {
+  "file": "maths-2023-OL-ask-p1-q2-a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2023 OL Paper 1 Q2(a)(i), (ii)",
+  "description": "The question as printed on the paper \u2014 In this question, i\u00b2 = \u22121. The complex number z\u2081 is shown on the Argand diagram below. Im 3 2 1 Re -1 1 2 3 4 5 6 7 -1 -2 z\u2081 -3 -4 Plot and label z\u2081\u0305 , the complex conjugate of z\u2081 , on the diagram above. z\u2082 and z\u2083 are tw"
+ },
+ {
+  "file": "maths-2023-OL-ask-p1-q2-a-iii.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2023 OL Paper 1 Q2(a)(iii)",
+  "description": "The question as printed on the paper \u2014 In this question, i\u00b2 = \u22121. The complex number z\u2081 is shown on the Argand diagram below. Im 3 2 1 Re -1 1 2 3 4 5 6 7 -1 -2 z\u2081 -3 -4 Plot and label z\u2081\u0305 , the complex conjugate of z\u2081 , on the diagram above. z\u2082 and z\u2083 are tw"
+ },
+ {
+  "file": "maths-2023-OL-ask-p1-q2-a-iv.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2023 OL Paper 1 Q2(a)(iv)",
+  "description": "The question as printed on the paper \u2014 In this question, i\u00b2 = \u22121. The complex number z\u2081 is shown on the Argand diagram below. Im 3 2 1 Re -1 1 2 3 4 5 6 7 -1 -2 z\u2081 -3 -4 Plot and label z\u2081\u0305 , the complex conjugate of z\u2081 , on the diagram above. z\u2082 and z\u2083 are tw"
+ },
+ {
+  "file": "maths-2023-OL-ask-p1-q2-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2023 OL Paper 1 Q2(b)",
+  "description": "The question as printed on the paper \u2014 The complex numbers z\u2084 , z\u2085 , z\u2086 , and z\u2087 are shown on the Argand diagram below. The diagram is to scale. Im z\u2087 z\u2084 Re z\u2086 z\u2085 Tick one box to indicate which of z\u2084 , z\u2085 , z\u2086 , or z\u2087 has the largest modulus. Give a reason fo"
+ },
+ {
+  "file": "maths-2024-OL-ask-p1-q2-a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2024 OL Paper 1 Q2(a)(i), (ii)",
+  "description": "The question as printed on the paper \u2014 In this question, i\u00b2 = \u22121. (a) The complex numbers z\u2081, z\u2082, and z\u2083 are shown on the Argand diagram below. One of these numbers is on the imaginary axis. Im 4 z\u2081 3 z\u2082 2 1 Re -4 -3 -2 -1 1 2 3 4 5 -1 z\u2083 -2 Using the Argand "
+ },
+ {
+  "file": "maths-2024-OL-ask-p1-q2-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2024 OL Paper 1 Q2(b)",
+  "description": "The question as printed on the paper \u2014 In this question, i2 = \u22121. (b) v= 1+2i. Write v in the form a+ b, where a, b\u2208\u2124."
+ },
+ {
+  "file": "maths-2024-OL-ask-p1-q2-c.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2024 OL Paper 1 Q2(c)",
+  "description": "The question as printed on the paper \u2014 The complex number w = 1 + 2i is shown on the Argand diagram below (drawn to scale). The three complex numbers labelled A, B, and C are also shown on the Argand diagram. One of these is w\u0305, the complex conjugate of w. Im"
+ },
+ {
+  "file": "maths-2024-OL-ask-p1-q3-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2024 OL Paper 1 Q3(a)",
+  "description": "The question as printed on the paper \u2014 A toy shop sells two different sets of the same building blocks, Set A and Set B, as shown in the table below. Number of blocks Cost Set A 60 \u20ac12 Set B 150 \u20ac28 Which set of building blocks works out cheaper per block? Us"
+ },
+ {
+  "file": "maths-2024-OL-ask-p1-q3-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2024 OL Paper 1 Q3(b)",
+  "description": "The question as printed on the paper \u2014 Solve the following equation in x\u2208\u211d: 3x\u00b2 \u22125x + 1 = 0 Give each answer correct to 2 decimal places."
+ },
+ {
+  "file": "maths-2024-OL-ask-p1-q3-c.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2024 OL Paper 1 Q3(c)",
+  "description": "The question as printed on the paper \u2014 Use algebra to solve the simultaneous equations: 2x + y = 5 x\u00b2 + y\u00b2 = 25 Hint: first, use 2x + y = 5 to write y in terms of x."
+ },
+ {
+  "file": "maths-2024-OL-ask-p1-q4-a.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2024 OL Paper 1 Q4(a)",
+  "description": "The question as printed on the paper \u2014 Solve the following equation in x\u2208\u211d: 4(2x\u22125) \u22121 = 3x + 7"
+ },
+ {
+  "file": "maths-2024-OL-ask-p1-q4-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2024 OL Paper 1 Q4(b)",
+  "description": "The question as printed on the paper \u2014 Liam, Joan and Martha split a bill in the following ratio: Liam Joan Martha : Liam and Joan paid \u20ac154 in total 4 :/between 3 them. between them. 3 5 Martha paid the rest of the bill. Work out how much Martha paid."
+ },
+ {
+  "file": "maths-2024-OL-ask-p1-q4-c-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2024 OL Paper 1 Q4(c)(i), (ii)",
+  "description": "The question as printed on the paper \u2014 Write 128 in the form 2^k, where k\u2208\u2115. Hence, or otherwise, solve the following equation, where x\u2208\u211d: 2^(4x + 1) = 128"
+ },
+ {
+  "file": "maths-2024-OL-ask-p1-q5-c.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2024 OL Paper 1 Q5(c)",
+  "description": "The question as printed on the paper \u2014 The graph of the linear function g(x) is shown below. y 6 g(x) 5 4 3 2 1 x -3 -2 -1 1 2 3 4 5 6 -1 -2 Use the graph to find the rate of change of g(x), that is, find g\u2032(x). Give your answer in the form aa/bb where aa, bb"
+ },
+ {
+  "file": "maths-2025-OL-ask-p1-q6-a-i.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2025 OL Paper 1 Q6(a)(i), (ii)",
+  "description": "The question as printed on the paper \u2014 Tara buys a coat for \u20ac90. She then sells the coat at a profit of 25%. Find the selling price of the coat. The margin on the coat is the profit as a percentage of the selling price. Write down the profit for this coat and"
+ },
+ {
+  "file": "maths-2025-OL-ask-p1-q6-b.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2025 OL Paper 1 Q6(b)",
+  "description": "The question as printed on the paper \u2014 Write each of the following numbers in the form a \u00d7 10\u207f, where 1 \u2264 a < 10, n\u2208\u2124. 58 000 = 0\u2219036"
+ },
+ {
+  "file": "maths-2025-OL-ask-p1-q6-c.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2025 OL Paper 1 Q6(c)",
+  "description": "The question as printed on the paper \u2014 Light travels at a speed of approximately 3 \u00d7 10\u2075 km/second. A light year is the distance travelled by light in 1 year. Find the distance travelled by light in 1 year. (You may assume there are 365 days in a year.) Give "
  }
 ]
