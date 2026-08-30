@@ -398,9 +398,32 @@ const decks = [
    * program already did, but only where what is left still ends like a
    * sentence -- a table's labels are ordinary words that also appear in the
    * question's own prose, and cutting at the first match had left "Complete
-   * the truth table for the AND logic gate, shown in". Nothing was removed. */
-  ['computer-science:higher', CS_HIGHER, 194, 'edf01d0cc57b93c686627f1e218c20679c5cda6ab217e61608cf9be43c58b45c'],
-  ['computer-science:ordinary', CS_ORDINARY, 111, '42c66d6f62f279b8b68ff0f744c91cd70219eda2a67764c7fae207ae8d38b69c'],
+   * the truth table for the AND logic gate, shown in". Nothing was removed.
+   *
+   * 2026-08-30 (same day): 194/111 -> 193/116, coverage 348/484 -> 367/484.
+   * The `use` indices a card is built from select into the SCHEME's own point
+   * list, so the author's filtering never reached the card: nineteen cards
+   * carried a row it had already rejected, one of them opening with "Any
+   * response that captures the essence of any of the following:". The indices
+   * now point at the scheme's list, so the filter applies -- and the filter
+   * itself was corrected in both directions. It drops the CREDIT RULE ("Each
+   * correct item", "Half correct conversion of (a)", "Small calculation
+   * error"), which says how much of the answer earns what and never what the
+   * answer is. It no longer drops a row that is all digits, which is the
+   * answer at least as often as it is noise: 2021 HL Q1 asks what a program
+   * prints and the scheme states "7 3" and "6 8".
+   *
+   * THREE CARDS WERE REMOVED and this is the record of them:
+   *   cs-2022-hl-q14-a-i and cs-2022-hl-q14-b-i -- the scheme states one
+   *     thing under each of these parts, "Each correct pass", and that is a
+   *     credit rule. The cards were carrying it as the answer, which tells a
+   *     student nothing about what a correct pass is;
+   *   cs-2025-hl-q13-b-iv -- with the indices corrected the card selects the
+   *     scheme's real sixth point, and that point does not trace back to the
+   *     scheme text because the reader glued a credit rule onto its end. The
+   *     provenance gate refusing it is the gate working. */
+  ['computer-science:higher', CS_HIGHER, 193, '6deede75657e10e22613a876581c7ebdeac13d25a127c6b27c9e783cff32787e'],
+  ['computer-science:ordinary', CS_ORDINARY, 116, '9f69bc2365bf273fcf24303ce5012bca91c4e2bf0b7dcf36402bd541cc791f29'],
   ['construction-studies:higher', CONS_HIGHER, 255, 'b74a39fd589f1082d6378190aee778d528eff0968d7af0ee9144525f2e40d57b'],
   ['construction-studies:ordinary', CONS_ORDINARY, 250, 'f56985e32cc1f02a2e2f7a7eb300a44646b75cf3604a12b5a478bde2a520d2da'],
 ] as const;
@@ -417,6 +440,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7755);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7759);
   });
 });

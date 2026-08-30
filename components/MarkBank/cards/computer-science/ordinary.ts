@@ -242,8 +242,7 @@ export const CARDS: SecCard[] = [
     questionText: "The following list of numbers is to be searched for a specific number using the binary search algorithm.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "No, because the list is not sorted.", marks: 2 },
-    { id: "r-2", kind: "point", verbatim: "No", marks: 2 },
+    { id: "r-1", kind: "point", verbatim: "No, because the list is not sorted.", marks: 4 },
     ],
   } as SecCard,
   {
@@ -405,6 +404,27 @@ export const CARDS: SecCard[] = [
           "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q15-fig0.png",
           "srcHash": "573b6551e51c8d802cd71871fb57d349",
           "alt": "The table or diagram printed with 2021 OL Question 15, as the State Examinations Commission set it. It is labelled: ●, Intel Core i3 CPU, 2GB RAM Memory, Intel Integrated Graphics, Bluetooth 4.1, 2 x USB 3.1, 1 x USB 2.0,, HDMI, 10/100 Ethernet LAN Port, 4‐Cell Li‐ion Battery, Figure 6.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC219GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "cs-2021-ol-q16", topicId: "cs-2-2", conceptId: "open-program-called-question16-py-your",
+    section: "B", questionRef: "2021 OL Q16",
+    questionText: "(i) Insert a comment in the appropriate location to explain what the input command is doing in this program. (ii) Amend the program so that the following message is displayed if an incorrect PIN is entered: Incorrect PIN (iii) Create a suitably named Boolean variable (e.g. loggedIn) that is initially set to False before the user enters a PIN. (iv) Amend the program so that the new Boolean variable is set to True when the user enters the correct PIN. (v) Using a while loop or similar, keep asking the user to enter their PIN until they have entered it correctly. (vi) Create a suitably named variable (e.g. failedAttempts) that is initially set to 0 before the user enters a PIN. This variable will keep track of the number of failed login attempts. (vii) The user should only be allowed 3 failed login attempts. If the PIN is entered incorrectly 3 times an appropriate message should be displayed. (a) Open the program called Question16_A.py from your device. The source code is shown and described briefly below.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "(a) 50 (5, 10, 5, 5, 10, 5, 10) marks", marks: 50, accepts: ["Possible solution:","3","4 pin = \"1579\"","7","8 while not loggedIn and (failedAttempts < 3):","10 userTry = input(\"Enter PIN:\")"] },
+    ],
+    figure: {
+          "candId": "computer-science-2021-OL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q16-figure.png",
+          "srcHash": "829123f0f0e8f2c4e8733654f29eccf5",
+          "alt": "The program printed with 2021 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 19 lines and begins: # Question 16(a)",
           "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -670,7 +690,7 @@ export const CARDS: SecCard[] = [
     questionText: "(a) What index value will be returned if you search for the number 94? (b) Describe a limitation of the linear search algorithm.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "3", marks: 5, accepts: ["Not an efficient way of searching.","In big data sets it will take a long time to complete the search."] },
+    { id: "r-1", kind: "alt", verbatim: "3", marks: 5, accepts: ["Not an efficient way of searching.","In big data sets it will take a long time to complete the search.","Will only find the first number even if the number appears more than once."] },
     ],
   } as SecCard,
   {
@@ -697,13 +717,34 @@ export const CARDS: SecCard[] = [
     questionText: "(a) Match the picture of the electronic component to its name by placing the relevant letter in the second column of the table below. (b) Select any one of these electronic components and explain its purpose.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Component", marks: 5, accepts: ["Name","(write the letter)","Transistor C","Capacitor A","Resistor B","Each Correct Item","Transistor -> Used to control current and voltage in a circuit.","Capacitor -> Are used to store electrical charge","Resistors -> Are used to slow down the flow of current in a circuit. Any one of the above or similar:"] },
+    { id: "r-1", kind: "alt", verbatim: "Component", marks: 5, accepts: ["Name","(write the letter)","Transistor C","Capacitor A","Resistor B","Transistor -> Used to control current and voltage in a circuit.","Capacitor -> Are used to store electrical charge","Resistors -> Are used to slow down the flow of current in a circuit. Any one of the above or similar:"] },
     ],
     figure: {
           "candId": "computer-science-2022-OL-paper-q10-fig0",
           "src": "/exam-figures/computer-science/markbank/computer-science-2022-OL-paper-q10-fig0.png",
           "srcHash": "d7c63be8a28a37a841da50943690cfcd",
           "alt": "The table or diagram printed with 2022 OL Question 10, as the State Examinations Commission set it. It is labelled: Name, Component, (write the letter), Transistor, Capacitor, Resistor, A, B, C.",
+          "attribution": "SEC Leaving Certificate Computer Science 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC219GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2022 Ordinary Level — © State Examinations Commission.",
+    id: "cs-2022-ol-q16", topicId: "cs-2-2", conceptId: "open-program-called-question16-py-your",
+    section: "B", questionRef: "2022 OL Q16",
+    questionText: "(i) Insert a comment in an appropriate place to say “user enters first name”. (ii) Amend the program to ask for and accept the user's surname. Store the user’s surname in a variable called surname. (iii) Amend the program so that the user’s first name and their surname are printed when they are asked to select their item. (iv) Amend the program so that the items 2 = Ruler and 3 = Pen appear in the shopping list under the item 1 = Book. (v) Amend the program so that a dashed line appears above and below the available items. (vi) Amend the program so that the correct message is printed if the user purchases a ruler or pen. (vii) Amend the program to deal with invalid number entries. If the user enters any number other than the numbers 1, 2 or 3 they should be presented with an error message. (a) Open the program called Question16_A.py from your device. The source code is shown and described briefly below. 2 # Examination Number: 3 4 firstName = input(\"What is your first name? \") 5 6 print(\"Hello\", firstName) 7 print(\"Please select from the list of items.\\n\") 8 # \\n creates a new line 9 10 print(\"\\tItems Available\") # \\t creates a tab 11 print(\"1 = Book\") 12 13 shoppingItem = int(input(\"\\nEnter the number of the item you would like: \")) 14 15 if shoppingItem == 1: 16 print(\"You bought a book\") 17 The program above is to simulate an automated shop. The aim of the program is to accept the name of the user and then to ask the user to choose what item they would like to buy. The user will select the number of the item they wish to buy and the program outputs a message confirming the item they chose.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "(a) 50 (5, 10, 5, 5, 5, 10, 10) marks", marks: 50, accepts: ["Possible solution:","1 # Question 16 (a)","2 # Examination Number:","3 # user enters first name","4 firstName = input(\"What is your first name? \")","5 surname = input(\"What is your surname? \")","6","7 print(\"Hello\", firstName, surname, \"please select from the list","of items.\\n\")","8 # \\n creates a new line","9"] },
+    ],
+    figure: {
+          "candId": "computer-science-2022-OL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-OL-paper-q16-code0.png",
+          "srcHash": "a3c230a644a48beb76a8686c74f8f0d2",
+          "alt": "The program printed with 2022 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 24 lines and begins: # Question 16 (a)",
           "attribution": "SEC Leaving Certificate Computer Science 2022 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -741,7 +782,12 @@ export const CARDS: SecCard[] = [
     questionText: "Convert the decimal number 14 to a binary number.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "14/2 = 7 Remainder 0 14 = 8 + 4 + 2 + 0", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "14/2 = 7 Remainder 0 14 = 8 + 4 + 2 + 0", marks: 1 },
+    { id: "r-2", kind: "point", verbatim: "7/2 = 3 Remainder 1 1 1 1 0", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "3/2 = 1 Remainder 1", marks: 1 },
+    { id: "r-4", kind: "point", verbatim: "OR", marks: 1 },
+    { id: "r-5", kind: "point", verbatim: "1/2 = 0 Remainder 1 Ans: 1110", marks: 1 },
+    { id: "r-6", kind: "point", verbatim: "Ans: 1110", marks: 1 },
     ],
   } as SecCard,
   {
@@ -1010,7 +1056,7 @@ export const CARDS: SecCard[] = [
     questionText: "(a) Describe the main difference between a general-purpose computer and an embedded system. (b) Name one example of an embedded system you might find in your home.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "General-purpose computers can have many uses, embedded systems have a limited or specific number of uses", marks: 6, accepts: ["General-purpose computers can be easily reprogrammed, embedded systems can’t easily be upgraded","General-purpose computers are generally higher cost, embedded systems are relatively low cost","Examples of Embedded Systems can be any digital device created for specific tasks – these include domestic appliances such as washing machines, dish washers, etc."] },
+    { id: "r-1", kind: "alt", verbatim: "General-purpose computers can have many uses, embedded systems have a limited or specific number of uses", marks: 6, accepts: ["General-purpose computers can be easily reprogrammed, embedded systems can’t easily be upgraded","General-purpose computers are generally higher cost, embedded systems are relatively low cost","Do not accept Micro:bit, Raspberry Pi as valid examples Valid example"] },
     ],
   } as SecCard,
   {
@@ -1059,7 +1105,7 @@ export const CARDS: SecCard[] = [
     questionText: "(i) Select the correct computer science term from the following list and place it in Column B to match the definitition in Column A in the table below. (ii) While loops are used in computer science to iterate over certain blocks of code. Examine the code below and complete the trace table that tracks the progress of the code being executed. (a)  (i) What cost will be printed when a customer has a car battery with a charge of 25% and no loyalty card? (ii) What cost will be printed when a customer has a car battery with a charge of 50% and a loyalty card? (iii) What cost will be printed when a customer has a car battery with a charge of 80% and no loyalty card? (iv) What is the lowest possible cost that this algorithm can print? (b) A public electric car charging point uses an algorithm to work out the cost for a customer to charge their car battery to 100%. Regular customers with loyalty cards get a discount. Examine the flowchart for the algorithm, shown in Figure 4 below, and answer the questions that follow. (i) What is the shortest time needed to fully recharge the three electric vehicles? Show your workings below. (ii) Name and explain a computational thinking skill you used to try and solve this problem. (c) Three cars arrive at an electric vehicle charging point location. There are two charge stations so only two cars can be charged at the same time. None of the three electric vehicle’s batteries have any charge. It takes one hour to fully charge each electric vehicle but this does not need to be done all in one go. Note: you do not need to account for time taken to change which car is being charged.",
     tariffModel: {"kind":"fixed"}, totalMarks: 38,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Column A Column B", marks: 38, accepts: ["Definition Term","A data structure that can store a collection of elements of the","Array","same data type","A character that represents a mathematical or logical action Operator","A command for handling a decision Conditional","A memory location that can store a value Variable","Each correct item","i j while i < j print(i)","1 1 10 True 1","2 2 9 True 2"] },
+    { id: "r-1", kind: "alt", verbatim: "Column A Column B", marks: 38, accepts: ["Definition Term","A data structure that can store a collection of elements of the","Array","same data type","A character that represents a mathematical or logical action Operator","A command for handling a decision Conditional","A memory location that can store a value Variable","i j while i < j print(i)","1 1 10 True 1","2 2 9 True 2","3 3 8 True 3"] },
     ],
     figure: {
           "candId": "computer-science-2023-OL-paper-q13-figure",
@@ -1081,9 +1127,7 @@ export const CARDS: SecCard[] = [
     questionText: "State the output from the following Python program in the box below.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "12", marks: 2 },
-    { id: "r-2", kind: "point", verbatim: "27", marks: 2 },
-    { id: "r-3", kind: "point", verbatim: "3 or 3.0", marks: 2 },
+    { id: "r-1", kind: "point", verbatim: "12", marks: 6 },
     ],
     figure: {
           "candId": "computer-science-2024-OL-paper-q1-code0",
@@ -1120,9 +1164,7 @@ export const CARDS: SecCard[] = [
     questionText: "Three different logic gates with inputs are shown in Column A in the table below. For each logic gate in Column A enter the output, either 0 or 1, in Column B.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Column A Column B", marks: 2 },
-    { id: "r-2", kind: "point", verbatim: "Logic Gate Output (0 or 1)", marks: 2 },
-    { id: "r-3", kind: "point", verbatim: "1", marks: 2 },
+    { id: "r-1", kind: "point", verbatim: "Column A Column B", marks: 6 },
     ],
     figure: {
           "candId": "computer-science-2024-OL-paper-q6-fig0",
@@ -1518,7 +1560,7 @@ export const CARDS: SecCard[] = [
     questionText: "Based on this information create an algorithm, using a flowchart or pseudo code, that will calculate if a warning should issue and if so what colour the warning should be.",
     tariffModel: {"kind":"fixed"}, totalMarks: 11,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Example of pseudocode:", marks: 11 },
+    { id: "r-1", kind: "point", verbatim: "IF speed > 90 and speed < 110:", marks: 11 },
     ],
   } as SecCard,
   {
@@ -1581,7 +1623,7 @@ export const CARDS: SecCard[] = [
     questionText: "(a) Choose the appropriate electronic component from the list below and place it in Column B to match the correct component image in Column A. Resistor Transistor Capacitor (b) Select any one of these electronic components and explain its purpose.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Column A Column B", marks: 6, accepts: ["Component Image Component Name","Capacitor","Resistor","Transistor","Each correct item","Leaving Certificate 2024","Computer Science, Marking Scheme – Ordinary level","Resistor – Creates resistance to the flow of current. Creates a voltage difference.","Transistor – Amplifies or switches on or off current. Controls current or voltage flow.","Capacitor – Can build up and store energy. Can release large amounts of built up energy."] },
+    { id: "r-1", kind: "alt", verbatim: "Column A Column B", marks: 6, accepts: ["Component Image Component Name","Capacitor","Resistor","Transistor","Leaving Certificate 2024","Computer Science, Marking Scheme – Ordinary level","Resistor – Creates resistance to the flow of current. Creates a voltage difference.","Transistor – Amplifies or switches on or off current. Controls current or voltage flow.","Capacitor – Can build up and store energy. Can release large amounts of built up energy."] },
     ],
     figure: {
           "candId": "computer-science-2024-OL-paper-q3-fig0",
@@ -1693,8 +1735,12 @@ export const CARDS: SecCard[] = [
     questionText: "The flowchart, in Figure 3 below, is a representation of an algorithm. Examine the flowchart and answer the question that follows. Figure 3 Calculate the output of the algorithm.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "0", marks: 3 },
-    { id: "r-2", kind: "point", verbatim: "2", marks: 3 },
+    { id: "r-1", kind: "point", verbatim: "0", marks: 1 },
+    { id: "r-2", kind: "point", verbatim: "2", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "4", marks: 1 },
+    { id: "r-4", kind: "point", verbatim: "6", marks: 1 },
+    { id: "r-5", kind: "point", verbatim: "8", marks: 1 },
+    { id: "r-6", kind: "point", verbatim: "10", marks: 1 },
     ],
     figure: {
           "candId": "computer-science-2025-OL-paper-q10-fig0",
@@ -2075,7 +2121,7 @@ export const CARDS: SecCard[] = [
     questionText: "(a) Choose the appropriate number system from the list below and place it in Column B to match the correct base value in Column A. (b) Explain why computers use the binary number system rather than the decimal number system.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Column A Column B", marks: 6, accepts: ["Base Value Number system","2 Binary","10 Decimal","16 Hexadecimal","Each correct item","Simplicity for Hardware: Computers use electrical circuits, which have two states: on (1) and off (0).","Reliability: Using just two states (1 and 0) reduces the chance of errors or misinterpretations.","Efficiency in Processing: The binary system allows computers to perform operations and calculations much faster because it only needs to handle two states.","Compatibility with Logic: Binary aligns with Boolean logic (true/false), which is the foundation of programming and decision-making in computers."] },
+    { id: "r-1", kind: "alt", verbatim: "Column A Column B", marks: 6, accepts: ["Base Value Number system","2 Binary","10 Decimal","16 Hexadecimal","Simplicity for Hardware: Computers use electrical circuits, which have two states: on (1) and off (0).","Reliability: Using just two states (1 and 0) reduces the chance of errors or misinterpretations.","Efficiency in Processing: The binary system allows computers to perform operations and calculations much faster because it only needs to handle two states.","Compatibility with Logic: Binary aligns with Boolean logic (true/false), which is the foundation of programming and decision-making in computers."] },
     ],
     figure: {
           "candId": "computer-science-2025-OL-paper-q3-fig0",
@@ -2097,13 +2143,70 @@ export const CARDS: SecCard[] = [
     questionText: "(a) List two ways in which abstraction has been used in the map in Figure 1. (b) What is meant by the term ‘abstraction’ in relation to computer science?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Simplified items on the map are considered forms of abstraction such as:", marks: 6, accepts: ["Removing unnecessary details such as buildings, trees etc","Simplified roads","Simplified river","Simplified railway line","Green areas","Text labels on street names / road numbers","Symbols for bus stops","Place names for important buildings","Accept any other valid forms of validation given Each correct item","Abstraction means simplifying complex systems by focusing only on the important details and"] },
+    { id: "r-1", kind: "alt", verbatim: "Simplified items on the map are considered forms of abstraction such as:", marks: 6, accepts: ["Removing unnecessary details such as buildings, trees etc","Simplified roads","Simplified river","Simplified railway line","Green areas","Text labels on street names / road numbers","Symbols for bus stops","Place names for important buildings","Abstraction means simplifying complex systems by focusing only on the important details and","hiding the unnecessary ones."] },
     ],
     figure: {
           "candId": "computer-science-2025-OL-paper-q7-fig0",
           "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q7-fig0.png",
           "srcHash": "c45667c3432393528c280d39e05c8c8a",
           "alt": "The table or diagram printed with 2025 OL Question 7, as the State Examinations Commission set it. It is labelled: Figure 1.",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC219GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "cs-2025-ol-q8", topicId: "cs-2-3", conceptId: "i-central-processing-unit-cpu-ii",
+    section: "A", questionRef: "2025 OL Q8",
+    stem: "Jeremy is building a desktop computer, such as that in Figure 2, using various pieces of hardware. Outline the purpose of the following components of a desktop computer:",
+    questionText: "(i) Central Processing Unit (CPU) (ii) Input devices Figure 2",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "CPU: The CPU (Central Processing Unit) is often referred to as the \"brain\" of the computer. It's the main component that performs most of the processing inside a computer", marks: 6, accepts: ["Input Devices: Input devices are components used to enter data, instructions, or signals into a computer system. For each:"] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC219GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "cs-2025-ol-q14", topicId: "cs-2-3", conceptId: "section-python-code-vending-machine-program",
+    section: "B", questionRef: "2025 OL Q14",
+    stem: "A vending machine, such as that in Figure 6, has the following options available for users. C2 Crisps, Cheese & Onion 2 Customers deposit coins into the vending machine and input the two-character item code (for example, A2 for water) for their desired selection. If the customer has deposited enough funds, the vending machine dispenses the chosen item and returns any necessary change.",
+    questionText: "(i) Line 1 of the code has a conditional statement. Explain the purpose of this conditional statement. (ii) State a suitable data type for the variable price. (a) A section of the Python code for the vending machine program is shown below. (i) Describe a unit test that should take place for the vending machine. (ii) The table below shows a test plan for the vending machine. Some of the entries have been left blank. Complete the test plan by filling in the correct information in the blank spaces. (iii) Name and explain a stage of software testing, other than unit testing, that should take place to ensure the vending machine works as intended when it is released. (iv) Describe two design features that could be incorporated into the vending machine to make it accessible to as many different types of users as possible. (b) The vending machine needs to be tested before it is released. (c) When the user inserts the correct amount of money and enters the code of an item, the vending machine will perform a number of checks. Create an algorithm or flowchart to describe the process outlined in the following bullet points: • The vending machine checks if there are any of that particular item available. • If there are any items available, one is dispensed to the user. • If there are no items available, the user is asked to enter another code. • If there are less than three of that particular item remaining a message is sent to head office to order more stock for the vending machine.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 38,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "It is to check that the user has entered enough money to buy the selected item", marks: 38, accepts: ["float","Verify that selecting a specific snack (e.g., \"A1\") correctly identifies the item","Check if the vending machine accepts and processes a specific amount of money (e.g., €1.50) for a €1.50 snack.","Check that the vending machine dispenses the correct change if too much money is entered","Check that the card facility for payment is working","Check that the vending machine doesn’t allow an item to be selected if it is sold out","Code Entered Money Inserted (€) Expected Result","B1 3 Oreos served, €0.50 change given","A2 1.2 Water served, no change given","C1 <2 Error – not enough money inserted"] },
+    ],
+    figure: {
+          "candId": "computer-science-2025-OL-paper-q14-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14-figure.png",
+          "srcHash": "9b0a2cd2d20d991b738ce5aa5cc418b4",
+          "alt": "The program and the table or diagram printed with 2025 OL Question 14, as the State Examinations Commission set it. The table or diagram is labelled: Item code, Item name, Price (€), A1, Water, flavoured, 1.5, A2, Water, 1.2, B1, Oreos, 2.5, C1, Crisps, Salt & Vinegar.",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC219GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "cs-2025-ol-q15", topicId: "cs-2-3", conceptId: "museum-has-information-point-such-shown",
+    section: "B", questionRef: "2025 OL Q15",
+    questionText: "(i) Identify three potential stakeholders for this app. For each stakeholder, identify one requirement they have for the app. (ii) Describe two adaptive or assistive technology features that the design team should focus on for the project. (a) A museum has an information point, such as that shown in Figure 7, to inform visitors about the museum’s art collection. There is only one information point at the entrance to the museum and it provides users with images and text about the artwork. However, there have been a number of complaints relating to the user experience, particularly in how the information from the information point is delivered to users. You are part of a design team working on redeveloping the visitor information point so that it allows users to access the information using an app on their own smart device. (i) Outline one activity that your team will undertake at each of the four stages listed in the answer box below. (ii) One of the team has suggested using a staged software development process rather than the iterative development process shown in Figure 8. Put forward two arguments for retaining the iterative development process. (b) The diagram in Figure 8 below illustrates the typical stages in a software development design process. (i) Describe one benefit of including this technology. (ii) Describe one ethical concern of including this technology. (c) One of the designers wants to build location tracking into the app to see exactly where visitors go in the museum.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 38,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Museum Visitors", marks: 38, accepts: ["Requirement: Easy access to detailed information about artwork to enhance their experience as","they explore the museum.","Museum Staff","Requirement: A user-friendly way to update and manage the content to keep the app","information current and relevant.","Museum Administrators","Requirement: Analytics tracking to monitor app usage and gather visitor insights.","Tour Guides","Requirement: The app should allow syncing or scheduling of guided tour content so it","complements live tours without conflicting information.","External Sponsors or Partners (e.g. cultural institutions, art donors)"] },
+    ],
+    figure: {
+          "candId": "computer-science-2025-OL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q15-fig0.png",
+          "srcHash": "4238272fc9f653ff7e671861fe56f9d7",
+          "alt": "The table or diagram printed with 2025 OL Question 15, as the State Examinations Commission set it. It is labelled: Figure 7.",
           "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },

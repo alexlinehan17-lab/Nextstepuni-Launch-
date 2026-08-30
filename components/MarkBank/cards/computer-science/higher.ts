@@ -520,11 +520,7 @@ export const CARDS: SecCard[] = [
     questionText: "If both words entered are anagrams the program should display the first word followed by the phrase ‘is an anagram of' and then the second word.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "error.", marks: 1 },
-    { id: "r-2", kind: "point", verbatim: "Attempted use of print function with both variables (word1 and", marks: 1 },
-    { id: "r-3", kind: "point", verbatim: "word2).", marks: 1 },
-    { id: "r-4", kind: "point", verbatim: "Minor error in construction of string.", marks: 1 },
-    { id: "r-5", kind: "point", verbatim: "Any other reasonable attempt.", marks: 1 },
+    { id: "r-1", kind: "point", verbatim: "error.", marks: 5 },
     ],
     figure: {
           "candId": "computer-science-2021-HL-paper-q16-figure",
@@ -546,11 +542,7 @@ export const CARDS: SecCard[] = [
     questionText: "Extend the program so that if the words entered are not anagrams of each other the program displays the first word followed by the phrase ‘is NOT an anagram of' and then the second word.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "error (allow use of else, elif or a separate if statement).", marks: 1 },
-    { id: "r-2", kind: "point", verbatim: "Attempted use of print function with both variables (word1 and", marks: 1 },
-    { id: "r-3", kind: "point", verbatim: "word2).", marks: 1 },
-    { id: "r-4", kind: "point", verbatim: "Minor error in construction of string.", marks: 1 },
-    { id: "r-5", kind: "point", verbatim: "Any other reasonable attempt.", marks: 1 },
+    { id: "r-1", kind: "point", verbatim: "error (allow use of else, elif or a separate if statement).", marks: 5 },
     ],
     figure: {
           "candId": "computer-science-2021-HL-paper-q16-figure",
@@ -686,7 +678,7 @@ export const CARDS: SecCard[] = [
     questionText: "(a) Using inputs of 7, 3 and 8 for n, complete the trace table showing the execution of the algorithm. (b) What output does the algorithm display?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "n total count", marks: 5, accepts: ["0 0 0","7 7 1","3 10 2","8 18 3","First correct column"] },
+    { id: "r-1", kind: "alt", verbatim: "n total count", marks: 5, accepts: ["0 0 0","7 7 1","3 10 2","8 18 3","Second column correct","OR","OR","One correct value","(b) 18/3=6"] },
     ],
     figure: {
           "candId": "computer-science-2021-HL-paper-q5-figure",
@@ -926,36 +918,13 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2022 Higher Level — © State Examinations Commission.",
-    id: "cs-2022-hl-q14-a-i", topicId: "cs-2-2", conceptId: "apply-algorithm-sort-list-integers-15",
-    section: "B", questionRef: "2022 HL Q14(a)(i)",
-    stem: "At the end of the algorithm list1 is empty, and list2 contains the elements that were in list1 at the start, now sorted in ascending order. The algorithm is described by the following pseudo-code: 1. Let N be the number of elements in list1 2. Initialise an empty list of length N – call this list2 3. Repeat N times: 4. Select the smallest (minimum) element from list1 5. Move the smallest element from list1 to list2 6. Stop Initial State State after Pass #1 This question continues on the next page. State after Pass #2 State after Pass #3 State after Pass #4 This question continues on the next page. This question continues on the next page.",
-    questionText: "Apply the algorithm to sort the list of integers [15, 28, 14, 21] showing the state of both lists after each pass of the algorithm. Pass #1 has been completed for you. You only need to fill in the numbers for passes 2, 3 and 4.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 3,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Each correct pass", marks: 3 },
-    ],
-    figure: {
-          "candId": "computer-science-2022-HL-paper-q14-figure",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q14-figure.png",
-          "srcHash": "af107078c57e92f0fc5c19832d88bc4f",
-          "alt": "The program and the table or diagram printed with 2022 HL Question 14, as the State Examinations Commission set it.",
-          "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "higher",
-    paperFileid: "LC219ALP038EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2022 Higher Level — © State Examinations Commission.",
     id: "cs-2022-hl-q14-a-ii", topicId: "cs-2-2", conceptId: "algorithm-sorts-list-ascending-order-changes",
     section: "B", questionRef: "2022 HL Q14(a)(ii)",
     stem: "At the end of the algorithm list1 is empty, and list2 contains the elements that were in list1 at the start, now sorted in ascending order. The algorithm is described by the following pseudo-code: 1. Let N be the number of elements in list1 2. Initialise an empty list of length N – call this list2 3. Repeat N times: 4. Select the smallest (minimum) element from list1 5. Move the smallest element from list1 to list2 6. Stop Initial State State after Pass #1 This question continues on the next page. State after Pass #2 State after Pass #3 State after Pass #4 This question continues on the next page. This question continues on the next page.",
     questionText: "The algorithm sorts the list in ascending order. What changes would you need to make to the algorithm so that it sorts the list in descending order?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Select the largest (instead of the smallest) element from list 1 and move it to list2", marks: 1 },
-    { id: "r-2", kind: "point", verbatim: "Any valid response.", marks: 1 },
+    { id: "r-1", kind: "point", verbatim: "Select the largest (instead of the smallest) element from list 1 and move it to list2", marks: 2 },
     ],
     figure: {
           "candId": "computer-science-2022-HL-paper-q14-figure",
@@ -1022,28 +991,6 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "The selection sort algorithm works by passing across every element in the list to sort (from left to right). The element being passed over is called the current element. For each current element the algorithm looks for the minimum (smallest) element to its right. This minimum element is selected and swapped with the current element. The algorithm then moves on to the next element.", marks: 3 },
-    ],
-    figure: {
-          "candId": "computer-science-2022-HL-paper-q14-figure",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q14-figure.png",
-          "srcHash": "af107078c57e92f0fc5c19832d88bc4f",
-          "alt": "The program and the table or diagram printed with 2022 HL Question 14, as the State Examinations Commission set it.",
-          "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "higher",
-    paperFileid: "LC219ALP038EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2022 Higher Level — © State Examinations Commission.",
-    id: "cs-2022-hl-q14-b-i", topicId: "cs-2-2", conceptId: "fill-empty-boxes-below-complete-passes",
-    section: "B", questionRef: "2022 HL Q14(b)(i)",
-    stem: "Figure 4 This question continues on the next page.",
-    questionText: "Fill in the empty boxes below to complete passes 3, 4, 5 and 6 of the insertion sort.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 4,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Each correct pass", marks: 4 },
     ],
     figure: {
           "candId": "computer-science-2022-HL-paper-q14-figure",
@@ -1283,6 +1230,28 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2022 Higher Level — © State Examinations Commission.",
+    id: "cs-2022-hl-q16-a-v", topicId: "cs-2-2", conceptId: "extend-program-display-frequency-each-number",
+    section: "B", questionRef: "2022 HL Q16(a)(v)",
+    stem: "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program simulates the rolling of a die 100 times. The program also contains code to keep track of the number of times a one and a two are rolled. These are stored in a list called frequencies. 1 # Question 16(a) 2 # Examination Number: 3 from random import randint 4 5 print(\"Dice simulation program\") 6 results = [] 7 frequencies = [0, 0, 0, 0, 0, 0] 8 9 # Loop 100 times 10 for i in range (100): 11 throw_result = randint(1,6) # store a random value between 1 and 6 12 results.append(throw_result) # append each value to results 13 14 # Start to build up a list of frequencies for each value thrown 15 if throw_result == 1: 16 frequencies[0] = frequencies[0] + 1 17 elif throw_result == 2: 18 frequencies[1] = frequencies[1] + 1 19 20 print() 21 print(\"Results:\", results) This question continues on the next page. When the program is run, the output may look as follows: (Your output will be different because the dice numbers are generated randomly.) Dice simulation program Results: [1, 4, 1, 4, 2, 3, 2, 2, 2, 4, 3, 1, 6, 1, 3, 3, 5, 1, 1, 3, 2, 2, 4, 1, 6, 4, 4, 5, 2, 2, 4, 2, 1, 2, 4, 2, 6, 6, 5, 4, 3, 5, 5, 1, 1, 6, 5, 1, 3, 3, 5, 3, 1, 5, 3, 5, 3, 2, 1, 1, 1, 1, 4, 2, 5, 6, 4, 3, 4, 6, 4, 5, 2, 5, 5, 3, 1, 5, 4, 3, 2, 2, 6, 2, 2, 3, 3, 2, 3, 1, 5, 2, 5, 4, 6, 4, 3, 5, 5, 2] Make the following changes to the program: Change the program so that the first line in the output is Dice simulation and analysis program. When the program is run the output may now look as follows: Dice simulation and analysis program Results: [1, 4, 1, 5, 3, 6, 2, 6, 6, 1, 3, 6, 4, 5, 1, 2, 5, 3, 5, 6, 5, 6, 5, 3, 3, 3, 4, 1, 2, 6, 1, 2, 4, 4, 6, 2, 4, 6, 5, 3, 4, 6, 4, 1, 4, 5, 6, 1, 1, 3, 5, 6, 6, 1, 2, 2, 5, 4, 3, 2, 6, 2, 2, 2, 2, 1, 2, 3, 4, 3, 3, 4, 3, 1, 6, 4, 1, 2, 4, 1, 3, 4, 1, 5, 3, 3, 5, 4, 4, 1, 2, 4, 4, 5, 6, 5, 6, 1, 5, 3] When the program is run the output may now look as follows: Dice simulation and analysis program Results: [1, 3, 5, 1, 5, 1, 2, 4, 2, 5, 5, 5, 6, 4, 1, 1, 6, 4, 2, 1, 2, 6, 5, 3, 6, 5, 3, 6, 3, 3, 2, 1, 4, 2, 3, 4, 6, 6, 3, 3, 6, 5, 6, 6, 6, 5, 3, 2, 1, 3, 3, 6, 1, 4, 2, 5, 6, 4, 2, 1, 6, 6, 6, 4, 2, 2, 4, 5, 6, 3, 2, 6, 2, 2, 3, 3, 3, 1, 5, 6, 3, 6, 2, 5, 5, 1, 4, 5, 4, 1, 5, 4, 6, 4, 4, 5, 3, 3, 1, 4] Frequencies: [14, 15, 0, 0, 0, 0] The frequencies list tells us that the number one has been rolled 14 times and the number two has been rolled 15 times. The frequencies for the numbers three, four, five and six are not calculated by the program yet. This is the reason they are all zero. This question continues on the next page. When the program is run the output may now look as follows: Dice simulation and analysis program Results: [2, 4, 6, 2, 1, 4, 1, 3, 1, 3, 3, 6, 5, 5, 4, 3, 2, 2, 2, 1, 3, 4, 4, 3, 4, 6, 4, 2, 3, 1, 3, 3, 1, 5, 3, 3, 6, 5, 4, 6, 1, 5, 3, 4, 2, 1, 6, 6, 5, 2, 6, 4, 5, 2, 2, 6, 6, 5, 5, 6, 2, 3, 5, 6, 4, 1, 6, 2, 2, 6, 2, 6, 3, 3, 4, 2, 5, 5, 5, 3, 1, 2, 3, 4, 2, 6, 2, 1, 5, 6, 6, 2, 5, 2, 3, 2, 5, 2, 2, 6] Frequencies: [11, 23, 18, 13, 16, 19] In this case the frequencies list tells us that the number one has been rolled 11 times, the number two has been rolled 23 times, the number three has been rolled 18 times, the number four has been rolled 13 times, the number five has been rolled 16 times and the number six has been rolled 19 times. When the program is run the output may now look as follows: Dice simulation and analysis program Frequencies: [17, 21, 17, 18, 11, 16] Dice simulation and analysis program Frequencies: [15, 10, 25, 15, 15, 20] Dice Frequency ---- --------- 1 15 2 10 3 25 4 15 5 15 6 20 This question continues on the next page. When the program is run the output may now look as follows: Dice simulation and analysis program Frequencies: [16, 14, 12, 20, 25, 13] Dice Frequency ---- --------- 1 16 2 14 3 12 4 20 5 25 6 13 5 was rolled the most often (25 times) The number of asterisks (*) in each row should correspond to each frequency. For example, in the output below there are eight asterisks in row one because the frequency for the number one is eight. Each asterisk (*) can be printed using the single statement: print(\"*\", end=\"\") When the program is run the output may now look as follows: Dice simulation and analysis program Dice frequencies: [8, 12, 22, 26, 22, 10] Dice Frequency ---- --------- 1 8 2 12 3 22 4 26 5 22 6 10 4 was rolled most often - 26 times ******** ************ ********************** **************************** ********************** ********** Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Acknowledgements Images Image on P. 4: https://freesvg.org/vector-image-of-game-dice-close-up This document will not be returned to the State Examinations Commission. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Wednesday 25 May Morning 11:30 – 12:30",
+    questionText: "Extend the program to display the frequency of each number in a tabular format as shown in the sample output here.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Actual frequency values displayed correctly and any 2 of:", marks: 10 },
+    ],
+    figure: {
+          "candId": "computer-science-2022-HL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q16-figure.png",
+          "srcHash": "bbd1b84a8247bad4824dde09980e70b0",
+          "alt": "The program printed with 2022 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 31 lines and begins: The result of each roll (throw) is stored in a variable called throw_result. Each of the 100",
+          "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2022 Higher Level — © State Examinations Commission.",
     id: "cs-2022-hl-q16-a-vi", topicId: "cs-2-2", conceptId: "extend-program-so-determines-displays-number",
     section: "B", questionRef: "2022 HL Q16(a)(vi)",
     stem: "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program simulates the rolling of a die 100 times. The program also contains code to keep track of the number of times a one and a two are rolled. These are stored in a list called frequencies. 1 # Question 16(a) 2 # Examination Number: 3 from random import randint 4 5 print(\"Dice simulation program\") 6 results = [] 7 frequencies = [0, 0, 0, 0, 0, 0] 8 9 # Loop 100 times 10 for i in range (100): 11 throw_result = randint(1,6) # store a random value between 1 and 6 12 results.append(throw_result) # append each value to results 13 14 # Start to build up a list of frequencies for each value thrown 15 if throw_result == 1: 16 frequencies[0] = frequencies[0] + 1 17 elif throw_result == 2: 18 frequencies[1] = frequencies[1] + 1 19 20 print() 21 print(\"Results:\", results) This question continues on the next page. When the program is run, the output may look as follows: (Your output will be different because the dice numbers are generated randomly.) Dice simulation program Results: [1, 4, 1, 4, 2, 3, 2, 2, 2, 4, 3, 1, 6, 1, 3, 3, 5, 1, 1, 3, 2, 2, 4, 1, 6, 4, 4, 5, 2, 2, 4, 2, 1, 2, 4, 2, 6, 6, 5, 4, 3, 5, 5, 1, 1, 6, 5, 1, 3, 3, 5, 3, 1, 5, 3, 5, 3, 2, 1, 1, 1, 1, 4, 2, 5, 6, 4, 3, 4, 6, 4, 5, 2, 5, 5, 3, 1, 5, 4, 3, 2, 2, 6, 2, 2, 3, 3, 2, 3, 1, 5, 2, 5, 4, 6, 4, 3, 5, 5, 2] Make the following changes to the program: Change the program so that the first line in the output is Dice simulation and analysis program. When the program is run the output may now look as follows: Dice simulation and analysis program Results: [1, 4, 1, 5, 3, 6, 2, 6, 6, 1, 3, 6, 4, 5, 1, 2, 5, 3, 5, 6, 5, 6, 5, 3, 3, 3, 4, 1, 2, 6, 1, 2, 4, 4, 6, 2, 4, 6, 5, 3, 4, 6, 4, 1, 4, 5, 6, 1, 1, 3, 5, 6, 6, 1, 2, 2, 5, 4, 3, 2, 6, 2, 2, 2, 2, 1, 2, 3, 4, 3, 3, 4, 3, 1, 6, 4, 1, 2, 4, 1, 3, 4, 1, 5, 3, 3, 5, 4, 4, 1, 2, 4, 4, 5, 6, 5, 6, 1, 5, 3] When the program is run the output may now look as follows: Dice simulation and analysis program Results: [1, 3, 5, 1, 5, 1, 2, 4, 2, 5, 5, 5, 6, 4, 1, 1, 6, 4, 2, 1, 2, 6, 5, 3, 6, 5, 3, 6, 3, 3, 2, 1, 4, 2, 3, 4, 6, 6, 3, 3, 6, 5, 6, 6, 6, 5, 3, 2, 1, 3, 3, 6, 1, 4, 2, 5, 6, 4, 2, 1, 6, 6, 6, 4, 2, 2, 4, 5, 6, 3, 2, 6, 2, 2, 3, 3, 3, 1, 5, 6, 3, 6, 2, 5, 5, 1, 4, 5, 4, 1, 5, 4, 6, 4, 4, 5, 3, 3, 1, 4] Frequencies: [14, 15, 0, 0, 0, 0] The frequencies list tells us that the number one has been rolled 14 times and the number two has been rolled 15 times. The frequencies for the numbers three, four, five and six are not calculated by the program yet. This is the reason they are all zero. This question continues on the next page. When the program is run the output may now look as follows: Dice simulation and analysis program Results: [2, 4, 6, 2, 1, 4, 1, 3, 1, 3, 3, 6, 5, 5, 4, 3, 2, 2, 2, 1, 3, 4, 4, 3, 4, 6, 4, 2, 3, 1, 3, 3, 1, 5, 3, 3, 6, 5, 4, 6, 1, 5, 3, 4, 2, 1, 6, 6, 5, 2, 6, 4, 5, 2, 2, 6, 6, 5, 5, 6, 2, 3, 5, 6, 4, 1, 6, 2, 2, 6, 2, 6, 3, 3, 4, 2, 5, 5, 5, 3, 1, 2, 3, 4, 2, 6, 2, 1, 5, 6, 6, 2, 5, 2, 3, 2, 5, 2, 2, 6] Frequencies: [11, 23, 18, 13, 16, 19] In this case the frequencies list tells us that the number one has been rolled 11 times, the number two has been rolled 23 times, the number three has been rolled 18 times, the number four has been rolled 13 times, the number five has been rolled 16 times and the number six has been rolled 19 times. When the program is run the output may now look as follows: Dice simulation and analysis program Frequencies: [17, 21, 17, 18, 11, 16] Dice simulation and analysis program Frequencies: [15, 10, 25, 15, 15, 20] Dice Frequency ---- --------- 1 15 2 10 3 25 4 15 5 15 6 20 This question continues on the next page. When the program is run the output may now look as follows: Dice simulation and analysis program Frequencies: [16, 14, 12, 20, 25, 13] Dice Frequency ---- --------- 1 16 2 14 3 12 4 20 5 25 6 13 5 was rolled the most often (25 times) The number of asterisks (*) in each row should correspond to each frequency. For example, in the output below there are eight asterisks in row one because the frequency for the number one is eight. Each asterisk (*) can be printed using the single statement: print(\"*\", end=\"\") When the program is run the output may now look as follows: Dice simulation and analysis program Dice frequencies: [8, 12, 22, 26, 22, 10] Dice Frequency ---- --------- 1 8 2 12 3 22 4 26 5 22 6 10 4 was rolled most often - 26 times ******** ************ ********************** **************************** ********************** ********** Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Acknowledgements Images Image on P. 4: https://freesvg.org/vector-image-of-game-dice-close-up This document will not be returned to the State Examinations Commission. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Wednesday 25 May Morning 11:30 – 12:30",
@@ -1361,7 +1330,7 @@ export const CARDS: SecCard[] = [
     questionText: "(a) Complete the truth table for the logical statement A AND (B OR C). (b) Use the relevant gate symbols to draw the circuit diagram for this system.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "A B C A AND (B OR C)", marks: 5, accepts: ["0 0 0 0","0 0 1 0","0 1 0 0","0 1 1 0","1 0 0 0"] },
+    { id: "r-1", kind: "alt", verbatim: "A B C A AND (B OR C)", marks: 5, accepts: ["0 0 0 0","0 0 1 0","0 1 0 0","0 1 1 0","1 0 0 0","1 0 1 1","1 1 0 1","1 1 1 1","3 (or more) correct values","Gates combined correctly as above","Use of AND and OR gates with either input correctly labelled"] },
     ],
     figure: {
           "candId": "computer-science-2022-HL-paper-q4-fig0",
@@ -1398,6 +1367,27 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Self-driving vehicles – safety/more accessible.", marks: 5, accepts: ["Healthcare – early detection of chronic illnesses, modelling disease spread etc.","Entertainment – music/concert/movie/book recommender systems etc.","Online shopping – product recommender systems, ads etc.","Facial recognition in home/business security systems.","Environmental protection.","Fairer justice systems.","Arts – music/literature.","Education.","Any valid example of how machine learning can be used to benefit society. Each correct response","If the data on which the algorithm makes its decision contains bias, the algorithm’s output will also be biased."] },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2022 Higher Level — © State Examinations Commission.",
+    id: "cs-2022-hl-q14", topicId: "cs-2-3", conceptId: "simplified-version-selection-sort-algorithm-involves",
+    section: "B", questionRef: "2022 HL Q14",
+    questionText: "(i) Apply the algorithm to sort the list of integers [15, 28, 14, 21] showing the state of both lists after each pass of the algorithm. Pass #1 has been completed for you. You only need to fill in the numbers for passes 2, 3 and 4. (ii) The algorithm sorts the list in ascending order. What changes would you need to make to the algorithm so that it sorts the list in descending order? (iii) Step 4 of the algorithm says to select the smallest (minimum) element from list1. Outline a method to find the smallest element in any list. (iv) Step 5 of the algorithm says to move the smallest element from list1 to list2. Why would the algorithm not work if this step said to copy the smallest element from list1 to list2? (v) The algorithm relies on two lists to complete the sort. Describe a selection sort algorithm that would sort a list ‘in place’ i.e. without the need for a second list. (a) is empty as shown. (i) Fill in the empty boxes below to complete passes 3, 4, 5 and 6 of the insertion sort. (ii) Explain how the insertion sort algorithm works. (iii) A list that is already reversed would be considered a good test case for the insertion sort algorithm. Describe two other test cases that could be used to test the insertion sort algorithm. (iv) \"Big O\" notation is used to describe the complexity of an algorithm. Discuss the algorithmic complexity of the insertion sort algorithm using \"Big O\" notation. (b) A bookshelf is partially sorted, in alphabetic order, using the insertion sort algorithm as shown in Figure 4 below.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Select the largest (instead of the smallest) element from list 1 and move it to list2", marks: 30, accepts: ["Initialise the minimum to be the first element in the list. Then, working/walk across the list compare each element to the minimum element so far. If the current element is less than the minimum element so far then let it be the new minimum. Continue in this manner until the end of the list is reached.","Pseudocode / flowchart / code are also acceptable","The same element would always be copied.","list1 will remain unchanged.","This would result in an infinite loop.","The selection sort algorithm works by passing across every element in the list to sort (from left to right). The element being passed over is called the current element. For each current element the algorithm looks for the minimum (smallest) element to its right. This minimum element is selected and swapped with the current element. The algorithm then moves on to the next element.","Pseudocode / flowchart / code are also acceptable.","The insertion sort works by passing across each element in the list starting from the second element. At the start, the first element is considered sorted and all elements to its right are considered unsorted. On each pass the first element in the unsorted list is inserted into the sorted list at its correct position.","Pseudocode / flowchart / code are also acceptable.","A list that is already sorted.","A list where all the values are the same."] },
+    ],
+    figure: {
+          "candId": "computer-science-2022-HL-paper-q14-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q14-figure.png",
+          "srcHash": "af107078c57e92f0fc5c19832d88bc4f",
+          "alt": "The program and the table or diagram printed with 2022 HL Question 14, as the State Examinations Commission set it.",
+          "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1691,7 +1681,9 @@ export const CARDS: SecCard[] = [
     questionText: "Complete the table below to show the best and worst case time complexities for the two search algorithms. You can assume that the size of the input is N.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Best Case Worst Case", marks: 3 },
+    { id: "r-1", kind: "point", verbatim: "Best Case Worst Case", marks: 1 },
+    { id: "r-2", kind: "point", verbatim: "Linear Search O(1) O(N)", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "Binary Search O(1) 𝑶(𝐥𝐨𝐠𝟐𝑵)", marks: 1 },
     ],
     figure: {
           "candId": "computer-science-2023-HL-paper-q15-fig0",
@@ -2026,7 +2018,7 @@ export const CARDS: SecCard[] = [
     questionText: "(a) A point P(x, y) is plotted inside the top right quadrant, as shown. Complete the truth table below to verify that P is inside the top right quadrant. (b) Construct a Boolean expression in the space below that will evaluate to True for all points (x, y) inside the shaded area shown in Figure 2.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "x > 0 y > 0 x > 0 and y > 0", marks: 6, accepts: ["False False False","False True False","True False False","True True True","Each correct response","(x > -d and x < 0) and (y >0 and y < d)","Note: brackets not necessary and order not important in this case.","Half correct"] },
+    { id: "r-1", kind: "alt", verbatim: "x > 0 y > 0 x > 0 and y > 0", marks: 6, accepts: ["False False False","False True False","True False False","True True True","(x > -d and x < 0) and (y >0 and y < d)","Note: brackets not necessary and order not important in this case."] },
     ],
     figure: {
           "candId": "computer-science-2023-HL-paper-q3-figure",
@@ -2076,7 +2068,7 @@ export const CARDS: SecCard[] = [
     questionText: "(a) Using the leftmost element as the pivot, show the contents of the list after the initial partition by the quicksort algorithm. You should assume that the elements in the left and right sub-lists are not re-ordered. (b) Explain why 90 would have been a poor choice of pivot to partition the list shown in Figure 5.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "30 40 10 50 20 60 80 70 90", marks: 6, accepts: ["OR","50 30 20 40 10 60 80 70 90","Elements split about the pivot","Left sub-list correct"] },
+    { id: "r-1", kind: "alt", verbatim: "30 40 10 50 20 60 80 70 90", marks: 6, accepts: ["OR","50 30 20 40 10 60 80 70 90","Elements split about the pivot","Left sub-list correct","Right sub-list correct","Because 90 is the largest number in the list.","Because it would increase the time taken to execute the algorithm."] },
     ],
   } as SecCard,
   {
@@ -2134,9 +2126,7 @@ export const CARDS: SecCard[] = [
     questionText: "Logic gates have one or more inputs and a single output. For each logic gate in Column A in the table below enter the output, either 0 or 1, in Column B.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Column A Column B", marks: 2 },
-    { id: "r-2", kind: "point", verbatim: "Logic gate with input(s) Output", marks: 2 },
-    { id: "r-3", kind: "point", verbatim: "1", marks: 2 },
+    { id: "r-1", kind: "point", verbatim: "Column A Column B", marks: 6 },
     ],
     figure: {
           "candId": "computer-science-2024-HL-paper-q1-fig0",
@@ -2158,9 +2148,8 @@ export const CARDS: SecCard[] = [
     questionText: "What is the output displayed by the following Python code?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Answer: 27 30 33 36", marks: 2 },
-    { id: "r-2", kind: "point", verbatim: "Each correct value in order (x 4)", marks: 2 },
-    { id: "r-3", kind: "point", verbatim: "Space between each value", marks: 2 },
+    { id: "r-1", kind: "point", verbatim: "Answer: 27 30 33 36", marks: 3 },
+    { id: "r-2", kind: "point", verbatim: "Space between each value", marks: 3 },
     ],
     figure: {
           "candId": "computer-science-2024-HL-paper-q2-code0",
@@ -2197,7 +2186,7 @@ export const CARDS: SecCard[] = [
     questionText: "Consider a social networking mobile application designed for teenagers. Provide one example of a unit test case and one example of a system test case that might be carried out during the development process.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Examples of Unit Test Cases", marks: 6 },
+    { id: "r-1", kind: "point", verbatim: "Update user's profile picture.", marks: 6 },
     ],
   } as SecCard,
   {
@@ -2342,9 +2331,9 @@ export const CARDS: SecCard[] = [
     questionText: "What is meant by the term ‘artificial intelligence’?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Any response that captures the essence of any of the following:", marks: 1 },
-    { id: "r-2", kind: "point", verbatim: "Artificial intelligence can be defined as the science and engineering of making intelligent computer programs capable of performing tasks that require subtleties of judgement, interpretation and generalisation that we associate with human intelligence.", marks: 1 },
-    { id: "r-3", kind: "point", verbatim: "The design and study of systems that appear to mimic intelligent behaviour", marks: 1 },
+    { id: "r-1", kind: "point", verbatim: "Artificial intelligence can be defined as the science and engineering of making intelligent computer programs capable of performing tasks that require subtleties of judgement, interpretation and generalisation that we associate with human intelligence.", marks: 1 },
+    { id: "r-2", kind: "point", verbatim: "The design and study of systems that appear to mimic intelligent behaviour", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "The theory and development of computer systems able to perform tasks that normally require human intelligence, such as visual perception, speech recognition, decision making and translation between languages.", marks: 1 },
     ],
   } as SecCard,
   {
@@ -2429,7 +2418,7 @@ export const CARDS: SecCard[] = [
     questionText: "In recent years many instances of bias have been identified in computer vision applications. Explain one method that could be used to reduce bias in these applications.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Any one of the following:", marks: 3 },
+    { id: "r-1", kind: "point", verbatim: "Diversity of images used in training datasets – ensure that the training dataset is diverse enough to represent the target population", marks: 3 },
     ],
   } as SecCard,
   {
@@ -3004,7 +2993,8 @@ export const CARDS: SecCard[] = [
     questionText: "State the name of each search algorithm.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "Algorithm 1: Linear search", marks: 2 },
+    { id: "r-1", kind: "point", verbatim: "Algorithm 1: Linear search", marks: 1 },
+    { id: "r-2", kind: "point", verbatim: "Algorithm 2: Binary search", marks: 1 },
     ],
     figure: {
           "candId": "computer-science-2025-HL-paper-q7-fig0",
@@ -3138,25 +3128,6 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Higher Level — © State Examinations Commission.",
-    id: "cs-2025-hl-q13-b-iv", topicId: "cs-1-2", conceptId: "suggest-two-ways-artificial-intelligence-ai",
-    section: "B", questionRef: "2025 HL Q13(b)(iv)",
-    stem: "Suggest two specific use cases of this component.",
-    questionText: "Suggest two ways artificial intelligence (AI) technology could be used in the DRS application.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Any two of the following:", marks: 1 },
-    { id: "r-2", kind: "point", verbatim: "Automated image recognition for bottle scanning.", marks: 1 },
-    { id: "r-3", kind: "point", verbatim: "Demand prediction for collection logistics.", marks: 1 },
-    { id: "r-4", kind: "point", verbatim: "Predictive maintenance for return machines.", marks: 1 },
-    { id: "r-5", kind: "point", verbatim: "Personalised incentives to engage users.", marks: 1 },
-    { id: "r-6", kind: "point", verbatim: "Data analysis (e.g. for environmental impact reporting).", marks: 1 },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2025, level: "higher",
-    paperFileid: "LC219ALP038EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Higher Level — © State Examinations Commission.",
     id: "cs-2025-hl-q13-c-i", topicId: "cs-2-3", conceptId: "read-following-scenario-answer-question-follows",
     section: "B", questionRef: "2025 HL Q13(c)(i)",
     stem: "Scenario: A visually impaired user needs assistance in identifying containers and navigating the DRS application. Identify and explain two appropriate assistive technology solutions that could be used in the DRS system to enhance accessibility for this user. This question continues on the next page.",
@@ -3213,8 +3184,7 @@ export const CARDS: SecCard[] = [
     questionText: "Starting from line 2 of the code, complete the trace table shown below. The variables a and b have been initialised to 45 and 18 respectively.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "a b", marks: 2 },
-    { id: "r-2", kind: "point", verbatim: "45 18", marks: 2 },
+    { id: "r-1", kind: "point", verbatim: "a b", marks: 4 },
     ],
     figure: {
           "candId": "computer-science-2025-HL-paper-q14-code0",

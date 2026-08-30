@@ -47,9 +47,16 @@ import cs_question_figures as CSF                           # noqa: E402
 LEAD_IN = re.compile(r'^(any response that captures|any \w+ of the following|'
                      r'accept any|examples? of|the following are|'
                      r'any \d+ (?:from|of)|marks? awarded for)', re.I)
-# A row of a printed table or a fragment of a code listing that the paper
-# reader lifted as prose. It is not a marking point and reads as noise.
-NOT_PROSE = re.compile(r'^[\W\d]+$')
+# How much of the answer earns what, rather than what the answer is. The
+# scheme prints these beside the marking points and they are not among them.
+CREDIT_RULE = re.compile(
+    r'^(each|every|first|half|some|fully|partially)\b[^.]*\b'
+    r'(correct|valid|relevant|response|item|rows?|columns?|pass|'
+    r'steps?|solution|conversion|attempt)\b'
+    # "Any correct step", "Small calculation error" -- the same thing said the
+    # other way round. Partial credit, not an answer.
+    r'|^any (correct|valid) (step|response|attempt|conversion|answer|part)'
+    r'|^(small|minor|major)\b[^.]*\berrors?\b', re.I)
 MAX_ROWS = 12
 
 
@@ -84,15 +91,34 @@ def points_at_printed_matter(joined):
 
 
 def cardable(points):
-    """The marking points a card may claim, lead-in and noise removed."""
+    """(index, text) for each marking point a card may claim.
+
+    INDICES, not just text. lib.card builds its own candidate list from the
+    scheme and `use` selects into THAT, so returning a filtered copy meant the
+    filtering never reached the card: nineteen cards carried a row this
+    function had already rejected, one of them opening with "Any response that
+    captures the essence of any of the following:" -- the examiner's
+    instruction to the examiner.
+
+    Two things are dropped and both are the examiner talking to the examiner:
+    the lead-in that introduces the marking points, and the CREDIT RULE that
+    says how much of the answer earns what -- "Each correct item", "Half
+    correct conversion of (a)", "First full correct response". Those say how
+    well, never what, which is the same line cs_scheme.bands() draws.
+
+    A row that is all digits and punctuation is KEPT. It was dropped as table
+    noise, and it is the answer at least as often: the scheme states "1111"
+    for the largest binary number in a nibble, "7 3" and "6 8" for what a
+    program prints, and a trace table's rows for a question that asks for a
+    trace table. Dropping them left 2024 OL Q2 claiming six marks for "Half
+    correct conversion of (a)", which is not an answer at all.
+    """
     out = []
-    for p in points:
+    for i, p in enumerate(points):
         t = ' '.join(p.split())
-        if not t or LEAD_IN.match(t) or NOT_PROSE.match(t):
+        if not t or LEAD_IN.match(t) or CREDIT_RULE.match(t):
             continue
-        if len(t) < 3:
-            continue
-        out.append(t)
+        out.append((i, t))
     return out
 
 
@@ -157,7 +183,8 @@ def main():
                 ask = A.paper.text(q, letter, roman) or ''
             except Exception:                                # noqa: BLE001
                 ask = ''
-            rows = cardable(table.points(q, letter, roman))
+            keep = cardable(table.points(q, letter, roman))
+            rows = [t for _, t in keep]
             tariff = table.tariff(q, letter, roman)
             topic, _ = topic_for(ask + ' ' + ' '.join(rows))
 
@@ -172,7 +199,13 @@ def main():
                 note('the ask is a table row or code fragment, not a question')
                 continue
             if not rows:
-                note('the scheme states nothing at this key')
+                # Held for the whole-question pass, not refused: the scheme
+                # often states a roman's answer inside its LETTER's block or
+                # under the question itself -- 2021 HL Q2(b) prints "(i) 2^4 =
+                # 16 unique pieces of information" as one of (b)'s points, and
+                # 2025 OL Q8 prints both romans' answers under Q8. A card
+                # citing the question covers everything beneath it.
+                unpriced[(section, q)].append(leaf)
                 continue
             if not tariff:
                 # Held for the whole-question pass below rather than refused
@@ -211,15 +244,15 @@ def main():
             if cardlint.NAMES_LETTERS.search(joined):
                 note('names a lettered part this author cannot decode')
                 continue
-            if len(rows) > MAX_ROWS:
-                rows = rows[:MAX_ROWS]
+            if len(keep) > MAX_ROWS:
+                keep, rows = keep[:MAX_ROWS], rows[:MAX_ROWS]
             # One mark per point where the tariff divides, else the whole
             # tariff on a single claim. Never a guessed split.
-            if len(rows) == 1 or tariff % len(rows):
-                use, marks = [0], [tariff]
-                rows = rows[:1]
+            if len(keep) == 1 or tariff % len(keep):
+                use, marks = [keep[0][0]], [tariff]
             else:
-                use, marks = list(range(len(rows))), [tariff // len(rows)] * len(rows)
+                use = [i for i, _ in keep]
+                marks = [tariff // len(keep)] * len(keep)
             cid = (f'cs-{year}-{level}-q{q}'
                    + (f'-{letter}' if letter else '')
                    + (f'-{roman}' if roman else ''))
@@ -246,7 +279,8 @@ def main():
         # printed is the thing being avoided.
         for (section, q), held in sorted(unpriced.items()):
             tariff = table.tariff(q)
-            rows = cardable(table.points(q))
+            keep = cardable(table.points(q))
+            rows = [t for _, t in keep]
             # The same join A.card will make. paper.text() on a question that
             # states nothing of its own returns empty, so checking it here
             # rejected every one of these before the card was even attempted.
@@ -289,7 +323,7 @@ def main():
                 continue
             try:
                 A.card(q, None, None, topic=topic, concept=concept_for(ask),
-                       source='table', use=[list(range(len(rows[:MAX_ROWS])))],
+                       source='table', use=[[i for i, _ in keep[:MAX_ROWS]]],
                        marks=[tariff], tariff='fixed',
                        card_id=f'cs-{year}-{level}-q{q}', figure=figure,
                        listing=listing_for(year, level, q)[0] if figure else (),
