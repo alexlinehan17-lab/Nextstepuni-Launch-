@@ -62,7 +62,16 @@ FULL = re.compile(r'^Full\s+Credit\s*([-\u2010-\u2015\u2212]\s*\d+)?\s*:?\s*$', 
 DEDUCTION = re.compile(r'^Full\s+Credit\s*[-\u2010-\u2015\u2212]\s*\d+\s*:?\s*$', re.I)
 
 
-SCALE_LINE = re.compile(r'Scale\s+\d+[A-Z]?\s*\(', re.I)
+# A heading is the marker alone; the scheme may punctuate it ("(a),").
+BARE_MARKER = re.compile(r'^\(([a-h]|i{1,3}|iv|v|vi{0,3})\)'
+                         r'(\s*\(([a-h]|i{1,3}|iv|v|vi{0,3})\))?[\s.,;:]*$')
+LETTER_SPAN = 20.0   # points: a second letter this close heads the SAME unit
+# The space after "Scale" is not always printed: the 2021 Ordinary scheme
+# sets "Scale10D (0, 3, 5, 8, 10)" ten times and the 2023 Higher once.
+# Requiring it cost those units their scale, and with it their whole band --
+# 2021 OL Paper 2 Q2(b) had a marker, a solution and a full credit ladder
+# printed, and no card.
+SCALE_LINE = re.compile(r'Scale\s*\d+[A-Z]?\s*\(', re.I)
 # Marking INSTRUCTIONS, printed in the same column at the same indent as the
 # bullets. They are not alternatives a student can claim, and appending them to
 # the bullet above -- which is what a plain continuation rule does -- produced
@@ -76,6 +85,56 @@ ASIDE = re.compile(r'^(Note\s*:|Misreading|F\*\s|Accept\b|If\b.*:$)', re.I)
 MARKER = re.compile(r'^\(([a-h]|i{1,3}|iv|v|vi{0,3})\)\s*(?:\(([a-h]|i{1,3}|iv|v|vi{0,3})\))?',
                     re.I)
 ROMANS = {'i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii'}
+
+
+
+_MARKER_ROWS = {}
+
+
+def marker_rows(page):
+    """[(y, token, in_marker_column)] for every part marker printed on a page.
+
+    The model solution restates its part marker mid-answer: 2022 HL scheme
+    page 23 prints a second bare "(b)" 53 points below the heading, and page
+    20 prints "(b) h'(x) = 3(2x^2) - 2(28.5x) + 105". Taking either for the
+    next unit's heading handed that letter to the band below, which then
+    carried the REAL next letter past the last band and dropped it -- Q7 and
+    Q8 both lost their (c), and Q8 shipped two cards claiming (b).
+
+    Neither wording nor distance separates the two: the echo is sometimes bare
+    and sits anywhere in the answer. The COLUMN does. A heading is printed at
+    the table's marker indent (x = 62.3 on those pages), an echo at the
+    solution indent (x = 90.7). The indent varies by scheme -- 56.6 in 2022
+    Ordinary, 62.4 in 2024 Higher -- so it is measured per page.
+
+    Read from the RAW lines, because placed() merges a marker with the
+    solution text beside it and reports the merged row a few points off: 2023
+    HL page 20 prints "(b)" at y=80.6 and placed() gives the row as 77.1.
+    Callers match on the NEAREST row carrying the same token rather than on a
+    y tolerance, which would have to be tight enough to separate a heading
+    from an echo six points below it and loose enough to survive that merge.
+    """
+    key = (page.parent.name, page.number)
+    if key not in _MARKER_ROWS:
+        rows = []
+        for bl in page.get_text('dict')['blocks']:
+            for ln in bl.get('lines', []):
+                t = ''.join(sp['text'] for sp in ln['spans']).strip()
+                mk = MARKER.match(t)
+                if mk:
+                    rows.append((ln['bbox'][1], mk.group(1).lower(),
+                                 ln['spans'][0]['bbox'][0]))
+        mx = min((x for _, _, x in rows), default=0.0)
+        _MARKER_ROWS[key] = [(y, tok, x <= mx + 6) for y, tok, x in rows]
+    return _MARKER_ROWS[key]
+
+
+def in_marker_column(page, y, tok):
+    """Is the marker read at this row PRINTED as a heading, or echoed in the
+    answer? Decided by the nearest raw row carrying the same token."""
+    near = sorted((abs(y - my), col) for my, mt, col in marker_rows(page)
+                  if mt == tok)
+    return near[0][1] if near else True
 
 
 class Scheme:
@@ -98,6 +157,8 @@ class Scheme:
         self.spans = {}
         # key -> the part's marking instructions, filled in by _bands()
         self._asides = {}
+        # key -> every LETTER its one scale marks, where that is more than one
+        self.letter_spans = {}
         paper, q = 1, None
         for i, page in enumerate(self.doc):
             m = PAPER.search(page.get_text())
@@ -118,11 +179,16 @@ class Scheme:
             # instruction above the table, which pushed "Q1" to the seventh --
             # so Question 1 of the 2021 Ordinary paper was never seen at all
             # and neither were its four parts.
-            for t in (t for _, t in left):
-                h = QHEAD.match(t.strip())
-                if h:
-                    q = int(h.group(1))
-                    break
+            # EVERY head in the column, with the y it is printed at. A page
+            # usually carries one, but not always: 2023 HL scheme page 20
+            # heads "Q6" at y=62 and "Q7" at y=330, and filing the whole page
+            # under the first put Q7(a) and Q7(b) under Question 6 -- where
+            # the second collided with the real Q6(b) and one of the two was
+            # dropped as a duplicate id.
+            heads = [(y, int(h.group(1))) for y, t in left
+                     for h in [QHEAD.match(t.strip())] if h]
+            if heads:
+                q = heads[0][1]
             # Some schemes drop the Q. The 2023 Ordinary Paper 2 heads its
             # first two marked pages "Q2" and every page after that with a bare
             # "3", "4", "5", "6" in the same cell -- so from Question 3 on, ten
@@ -137,6 +203,9 @@ class Scheme:
                         break
             if q is None:
                 continue
+            # The page's opening head governs from the top of the page, which
+            # is where a question CONTINUED from the page before begins.
+            heads = [(-1e9, q)] + heads[1:]
             scales = [y for y, t in right if SCALE_LINE.search(t)]
             if not scales:
                 continue
@@ -152,6 +221,7 @@ class Scheme:
             # the band above; carrying forward what has already been identified
             # cannot.
             carried = None
+            q = heads[-1][1]
             for n, y0 in enumerate(scales):
                 # A unit runs from ITS OWN scale to the next, not from the
                 # previous one: using the previous scale shifted every band up
@@ -162,7 +232,49 @@ class Scheme:
                 hi = bounds[n + 1] - 8 if bounds[n + 1] < 1e8 else bounds[n + 1]
                 # The markers that name this unit sit beside its scale, between
                 # the previous scale and the next.
+                # A letter handed on by the band above starts this one, so a
+                # roman met before any letter of our own still knows which
+                # letter it belongs to. Applied BEFORE the scan, not after it:
+                # applied after, 2021 OL P2 Q2 read "(ii)" and then "(b)" from
+                # the band below, adopted the "(b)" because no letter had been
+                # set, and DISCARDED the roman with it -- so (a)(ii) vanished
+                # and the unit shipped as a duplicate (b).
+                # The LAST letter heading printed above the next scale is
+                # the only one that can head the next unit; every other letter
+                # in this band shares this band's scale. Distance cannot decide
+                # it -- 2023 OL scheme page 39 sets "(a)" and "(b)" 32 points
+                # apart over one Scale 10D, while 2021 OL page 11 sets "(a)"
+                # and "(b)" 225 points apart over two -- but position relative
+                # to the scales can, and that is what the table encodes.
+                nxt = bounds[n + 1]
+                last_letter_y = None
+                for yy, tt in left:
+                    mk2 = MARKER.match(tt.strip())
+                    if not mk2:
+                        continue
+                    a2 = mk2.group(1).lower()
+                    b2 = (mk2.group(2) or '').lower()
+                    if a2 in ROMANS and (not b2 or b2 in ROMANS):
+                        continue
+                    if yy >= nxt + 6 or not in_marker_column(page, yy, a2):
+                        continue
+                    last_letter_y = yy
                 letter = roman = None
+                own_letter = False
+                letters = []
+                letter_y = None
+                carried_letter = None
+                if carried is not None:
+                    # Carried means the band ABOVE identified it as not its
+                    # own, so it is this band's letter and any further letter
+                    # belongs to the band below. Without that, 2021 OL P2 Q2's
+                    # second unit read the "(b)" printed 200 points further
+                    # down as its own and shipped (b)(ii) where the paper
+                    # prints (a)(ii).
+                    letter, roman = carried
+                    own_letter = True
+                    carried_letter = letter
+                    carried = None
                 romans = []
                 for y, t in left:
                     if not (lo - 4 <= y < hi):
@@ -172,27 +284,82 @@ class Scheme:
                         continue
                     a = mk.group(1).lower()
                     b = (mk.group(2) or '').lower()
-                    if a in ROMANS and not b:
+                    if a in ROMANS and (not b or b in ROMANS):
                         # The roman belongs to the letter printed above it: the
                         # scheme sets "(a)" on one line and "(ii)" on the next,
-                        # so the two have to be read together.
+                        # so the two have to be read together. One line can
+                        # also head TWO romans -- 2025 OL p39 prints "(i)(ii)"
+                        # over a single scale -- and reading the second as a
+                        # LETTER cited 2025 OL Q10 as "(c), (i)".
                         roman = a
-                        if a not in romans:
-                            romans.append(a)
+                        for r in (a, b):
+                            if r and r not in romans:
+                                romans.append(r)
                         continue
-                    if letter is not None:
-                        # A SECOND letter in this band is the next unit's, not
-                        # this one's. Bands meet a few points apart and each one
-                        # can see its neighbour's marker at its foot, so reading
-                        # on named a unit after the one that follows it: 2021 OL
+                    # A LETTER is only a heading where the scheme prints
+                    # it: in the marker column, not at the solution indent.
+                    # Romans are exempt -- a roman is often indented UNDER its
+                    # letter (2024 HL scheme page 17 sets "(b)" at x=62.6 and
+                    # its "(i)" at x=103.0).
+                    if not in_marker_column(page, y, a):
+                        continue
+                    if own_letter:
+                        if a == letter and b:
+                            # The SAME letter again carrying a new roman:
+                            # "(a)(i)" and then "(a)(ii)" over one scale.
+                            # Taken for the next unit's heading it was carried
+                            # down, and the band that really marks 2024 HL
+                            # Paper 2 Q7(b)(i) was keyed (a)(ii) -- so (b)(i)
+                            # had no scheme and (a)(ii) answered the wrong ask.
+                            # A BARE repeat still carries: 2021 OL page 34
+                            # prints "(a)" again 14 points above the next
+                            # scale, where it does head the next unit.
+                            if b not in romans:
+                                romans.append(b)
+                            if roman is None:
+                                roman = b
+                            continue
+                        if a == carried_letter and letter_y is None:
+                            # This band was HANDED its letter by the band above,
+                            # which saw the marker in its own foot-lookback --
+                            # so meeting it here is this band's OWN marker, not
+                            # the next unit's. Re-carrying it instead keyed the
+                            # band after this one by the same letter and shifted
+                            # every later letter up one: 2021 OL Paper 1 Q3
+                            # emitted (b) twice and dropped (c) as a duplicate.
+                            letter_y, carried_letter = y, None
+                            letters = [a]
+                            continue
+                        # Any letter that is NOT the last one above the next
+                        # scale is marked by THIS band's scale, exactly as
+                        # "(a) (i) & (ii)" is for romans: the scheme sets
+                        # "(a), (b)" over one scale and marks both together.
+                        if last_letter_y is None or abs(y - last_letter_y) > 0.5:
+                            if a not in letters:
+                                letters.append(a)
+                            continue
+                        # Bands meet a few points apart and each one can see
+                        # its neighbour's marker at its foot, so reading on
+                        # named a unit after the one that follows it: 2021 OL
                         # Paper 1 Q3(b) was keyed as Q3(c), collided with the
                         # real Q3(c), and one of the two was dropped.
                         carried = (a, b or None)
                         break
-                    letter, roman = a, (b or None)
-                if letter is None and carried is not None:
-                    letter, roman = carried
-                    carried = None
+                    # The band's own letter outranks one handed down to it.
+                    letter, own_letter, letter_y = a, True, y
+                    letters = [a]
+                    if b:
+                        # The roman counts toward the band's SPAN even when it
+                        # arrives welded to its letter. 2024 HL scheme page 39
+                        # prints the heading and the first line of working as
+                        # one row -- "(a) (i) zz = (50 - 48.2)/10.6" -- so the
+                        # (i) never reached the roman list, and the "(a)(ii)"
+                        # marked by the same scale looked like the only one.
+                        roman = b
+                        if b not in romans:
+                            romans.append(b)
+                    elif not romans:
+                        roman = None
                 # One scale, several romans: the scheme heads a unit
                 # "(a) (i) & (ii)" and marks both parts together. Keeping only
                 # the last roman filed the unit under (ii) and left (i) with no
@@ -201,12 +368,19 @@ class Scheme:
                 # every part it answers.
                 if letter is not None and len(romans) > 1:
                     roman = romans[0]
-                key = (paper, q, letter, roman)
+                # A head governs every band printed BELOW it.
+                qb = heads[0][1]
+                for hy, hq in heads:
+                    if hy < y0:
+                        qb = hq
+                key = (paper, qb, letter, roman)
                 if key in self.units:
-                    key = (paper, q, letter, roman, n)
+                    key = (paper, qb, letter, roman, n)
                 self.units[key] = (i, lo, hi)
                 if letter is not None and len(romans) > 1:
                     self.spans[key] = list(romans)
+                if len(letters) > 1:
+                    self.letter_spans[key] = list(letters)
 
     def parts(self):
         def order(k):

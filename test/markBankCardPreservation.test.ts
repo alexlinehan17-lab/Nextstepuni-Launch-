@@ -238,8 +238,52 @@ const decks = [
    * wording names nothing, the SCHEME states the method and the method is the
    * topic -- Q9 files as Trigonometry from "x/(sin 47) = 260/(sin 36)".
    * Coverage 907/989 -> 916/989. */
-  ['maths:higher', MATHS_HIGHER, 395, '2f708b029874bb8ef6f24889d80b360b7a7246f9b5460712bdc6a3a2f1abbc34'],
-  ['maths:ordinary', MATHS_ORDINARY, 424, '3594cc702478029d27cb0c60645c71a39451b7196902f87d332efbe612455b8b'],
+  /* 2026-08-30 (fourth pass): maths 395/424 -> 397/435, coverage 916/989 ->
+   * 939/989, and FOURTEEN cards removed. Every removal is listed below; none
+   * of them cost a paper ask its coverage (checked against the census, part
+   * by part, before re-pinning).
+   *
+   * The pass fixed ten faults in how the scheme's two-column table is read.
+   * The one that mattered most is a missing SPACE: the 2021 Ordinary scheme
+   * prints "Scale10D (0, 3, 5, 8, 10)" eleven times, and both the regex that
+   * finds a band and the one that reads its ladder required "Scale ". So the
+   * band was invisible; and once the first regex was widened the second still
+   * refused what it found, "the scheme prints no ladder for this part", on
+   * eleven units that print one. 2021 OL P2 Q2(b) had a marker, a printed
+   * solution and a full credit ladder, and no card.
+   *
+   * The rest are the reader mistaking one printed thing for another:
+   *   - the model solution ECHOES its part marker mid-answer ("(b) h'(x) =
+   *     3(2x^2) - 2(28.5x) + 105" on 2022 HL page 20). Taken for the next
+   *     unit's heading it was handed to the band below, which carried the real
+   *     letter past the last band: Q7 and Q8 both lost their (c), and Q8
+   *     shipped two cards claiming (b). An echo is printed at the SOLUTION
+   *     indent, a heading in the marker column -- x separates them, and
+   *     nothing else does.
+   *   - a scheme page can hold TWO questions. Page 20 of the 2023 Higher
+   *     scheme heads "Q6" at y=62 and "Q7" at y=330; the whole page was filed
+   *     under Q6, so Q7(a) and Q7(b) collided with the real Q6(b).
+   *   - "(i) (ii)" on one line is two ROMANS, not a letter and a roman.
+   *   - "(a)(i)" then "(a)(ii)" over one scale is one unit with two romans;
+   *     read as a second letter it was carried down and the band that really
+   *     marks 2024 HL P2 Q7(b)(i) was keyed (a)(ii).
+   *   - a band handed its letter from above met that same marker again in its
+   *     own lookback and re-carried it, shifting every later letter up one:
+   *     2021 OL P1 Q3, Q7 and Q8 each emitted (b) twice and dropped (c).
+   *   - which letter heads the NEXT band is positional, not a distance. 2023
+   *     OL page 39 sets "(a)" and "(b)" 32 points apart over ONE scale while
+   *     2021 OL page 11 sets them 225 apart over two. Only the last letter
+   *     above the next scale can head the next unit; the others share this
+   *     band's scale, and the card now cites "Q5(a), (b)" so both are credited.
+   *
+   * REMOVED -- ten cited a part the paper never prints, so they were answering
+   * an address that does not exist: 2021 OL P1 Q9(a), P2 Q1(c), Q3(b), Q4(a),
+   * Q9(b); 2023 HL P1 Q6(a), Q9(a); 2025 OL P1 Q10(c), P2 Q9(a), Q9(b).
+   * Four more are the same ask under a corrected id and are still covered:
+   * 2021 OL P2 Q6(b)(ii), 2022 HL P1 Q10(c)(ii), 2023 OL P1 Q10(b)(ii),
+   * 2024 OL P2 Q1(a)(ii). Open asks 73 -> 50. */
+  ['maths:higher', MATHS_HIGHER, 397, '198c0cc36c05271a2f05f54565d032f7c38ee603b888164e5abc7fc2790f3045'],
+  ['maths:ordinary', MATHS_ORDINARY, 435, '1739cbe00b51bbe9aed6df6e1226780777f965ec94c9492743cf2ec8df35990e'],
   ['construction-studies:higher', CONS_HIGHER, 255, 'b74a39fd589f1082d6378190aee778d528eff0968d7af0ee9144525f2e40d57b'],
   ['construction-studies:ordinary', CONS_ORDINARY, 250, 'f56985e32cc1f02a2e2f7a7eb300a44646b75cf3604a12b5a478bde2a520d2da'],
 ] as const;
@@ -256,6 +300,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7404);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7417);
   });
 });
