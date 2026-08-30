@@ -1,7 +1,7 @@
 {
  "agricultural-science": {
   "cards": 869,
-  "contentHash": "0b14228d1c48f9cc",
+  "contentHash": "74230c2ead6d1fe8",
   "coveragePct": 93.6,
   "covered": 888,
   "excluded": 3,
@@ -31,7 +31,7 @@
  },
  "business": {
   "cards": 606,
-  "contentHash": "0ed2c2f38fa70c49",
+  "contentHash": "24c66cd3cba76a38",
   "coveragePct": 94.6,
   "covered": 677,
   "excluded": 0,
@@ -121,7 +121,7 @@
  },
  "home-economics": {
   "cards": 571,
-  "contentHash": "58dd065233e9313f",
+  "contentHash": "e2e7df0bb7c83bea",
   "coveragePct": 95.3,
   "covered": 545,
   "excluded": 0,
@@ -151,7 +151,7 @@
  },
  "physics": {
   "cards": 1133,
-  "contentHash": "b0e7811e662b4a73",
+  "contentHash": "25340a89783a2c6e",
   "coveragePct": 95.2,
   "covered": 1119,
   "excluded": 46,

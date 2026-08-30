@@ -1005,6 +1005,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "90kg", marks: 2, contextNote: "The scheme ticks the 90kg box. The tick is a Wingdings glyph that the text extraction drops entirely, so this was confirmed against the marking-scheme PDF itself — the tick sits on the 90kg row (p.12)." },
     ],
+    questionFigure: {
+          "candId": "agricultural-science-2023-OL-paper-q3b-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-OL-paper-q3b-art.png",
+          "srcHash": "4c63e13c174df2a8c5bbe62ac49a981f",
+          "alt": "The table or diagram printed with 2023 OL Question 3(b), as the State Examinations Commission set it. It reads: 130kg, 90kg, 75kg.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1902,6 +1910,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "allOf", verbatim: "Water, heat and oxygen", marks: 3, contextNote: "All three conditions together are the single tick-box answer — the mark is for the complete set, not for naming one condition." },
     ],
+    questionFigure: {
+          "candId": "agricultural-science-2025-OL-paper-q5c-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-q5c-art.png",
+          "srcHash": "a20e1a18d681f752afb120375b6c025c",
+          "alt": "The table or diagram printed with 2025 OL Question 5(c), as the State Examinations Commission set it. It reads: Light, heat and oxygen, Water, light and heat, Water, heat and oxygen.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -6901,6 +6917,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "low nutrient availability or nutrient deficiencies in the crop", marks: 3 },
     { id: "r-2", kind: "point", verbatim: "adding lime to the land", marks: 1 },
     ],
+    questionFigure: {
+          "candId": "agricultural-science-2022-OL-paper-q3b-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-OL-paper-q3b-art.png",
+          "srcHash": "1b45f986a62518daaa2a88b5eb71c05e",
+          "alt": "The table or diagram printed with 2022 OL Question 3(b), as the State Examinations Commission set it. It reads: pH, Soil sample, 5.2, Implication:, Alter pH:.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",

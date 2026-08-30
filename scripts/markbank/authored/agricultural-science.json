@@ -3954,7 +3954,8 @@
     "marks": 2
    }
   ],
-  "notes": "Two separately stated 2-mark answers, so tariffModel is fixed and the rows sum to 4. Q11(a) reconciles as 4 + 4 + 2 = 10."
+  "notes": "Two separately stated 2-mark answers, so tariffModel is fixed and the rows sum to 4. Q11(a) reconciles as 4 + 4 + 2 = 10.",
+  "questionFigureKey": "agricultural-science-2022-HL-paper-q11ai-art"
  },
  {
   "id": "agsci-2022-hl-q11aii",
@@ -6837,7 +6838,8 @@
     "contextNote": "The scheme ticks the 90kg box. The tick is a Wingdings glyph that the text extraction drops entirely, so this was confirmed against the marking-scheme PDF itself — the tick sits on the 90kg row (p.12)."
    }
   ],
-  "notes": "Q3 is 10 marks: (a) 3+3+2 = 8, (b) 2. The three options are printed as text on the paper, not as a picture, so they are reproduced in the stem and no figure is needed. The answer was verified from glyph positions in the scheme PDF rather than from the markdown extraction, which loses the tick."
+  "notes": "Q3 is 10 marks: (a) 3+3+2 = 8, (b) 2. The three options are printed as text on the paper, not as a picture, so they are reproduced in the stem and no figure is needed. The answer was verified from glyph positions in the scheme PDF rather than from the markdown extraction, which loses the tick.",
+  "questionFigureKey": "agricultural-science-2023-OL-paper-q3b-art"
  },
  {
   "id": "agsci-2023-ol-q4",
@@ -10959,7 +10961,8 @@
     "contextNote": "All three conditions together are the single tick-box answer — the mark is for the complete set, not for naming one condition."
    }
   ],
-  "notes": "Q5(a) and (b) read the soil-composition diagram and are skipped pending figures; (c) is an independent tick-box with all three options printed in the paper text, so it stands alone. Tariff: the scheme prints 3 against this part, reconciling Q5 as 5 + 2 + 3 = 10."
+  "notes": "Q5(a) and (b) read the soil-composition diagram and are skipped pending figures; (c) is an independent tick-box with all three options printed in the paper text, so it stands alone. Tariff: the scheme prints 3 against this part, reconciling Q5 as 5 + 2 + 3 = 10.",
+  "questionFigureKey": "agricultural-science-2025-OL-paper-q5c-art"
  },
  {
   "id": "agsci-2025-ol-q6a",
@@ -23846,7 +23849,8 @@
     "marks": 6
    }
   ],
-  "notes": "A single 6-mark tick box, so fixed with one row summing to the tariff. The scheme prints the tick glyph beside '25%' on its own line; the glyph extracts as a private-use character but the answer value is printed. Only that one box scores — neither 45% nor 15% is creditable, which is why the card carries no accepts and no openList. The three options are reproduced in questionText so the card stands alone."
+  "notes": "A single 6-mark tick box, so fixed with one row summing to the tariff. The scheme prints the tick glyph beside '25%' on its own line; the glyph extracts as a private-use character but the answer value is printed. Only that one box scores — neither 45% nor 15% is creditable, which is why the card carries no accepts and no openList. The three options are reproduced in questionText so the card stands alone.",
+  "questionFigureKey": "agricultural-science-2024-HL-paper-q14aiii-art"
  },
  {
   "id": "agsci-2024-hl-q14bi",
@@ -33943,7 +33947,8 @@
    }
   ],
   "stem": "pH Soil sample 5.2",
-  "notes": "The scheme also allows reduced yield, slower growth or an effect on earthworm activity as the implication."
+  "notes": "The scheme also allows reduced yield, slower growth or an effect on earthworm activity as the implication.",
+  "questionFigureKey": "agricultural-science-2022-OL-paper-q3b-art"
  },
  {
   "id": "agsci-2022-ol-q4bi",

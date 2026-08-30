@@ -6632,6 +6632,14 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "second reflected ray", marks: 2 },
     { id: "r-3", kind: "point", verbatim: "intersection of rays", marks: 2 },
     ],
+    questionFigure: {
+          "candId": "physics-2022-OL-paper-q9ii-art",
+          "src": "/exam-figures/physics/markbank/physics-2022-OL-paper-q9ii-art.png",
+          "srcHash": "1406a865408d4f8bc7785dbaa0fb7b98",
+          "alt": "The table or diagram printed with 2022 OL Question 9(ii), as the State Examinations Commission set it. It reads: ●, object.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Physics 2022 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",

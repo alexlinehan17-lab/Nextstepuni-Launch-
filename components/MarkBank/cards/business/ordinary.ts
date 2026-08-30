@@ -181,6 +181,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Workplace Relations Commission", marks: 15 },
     ],
+    questionFigure: {
+          "candId": "business-2021-OL-paper-q10-art",
+          "src": "/exam-figures/business/markbank/business-2021-OL-paper-q10-art.png",
+          "srcHash": "e8fcf5453d83e0d825f0c24bf0b29618",
+          "alt": "The table or diagram printed with 2021 OL Question 10, as the State Examinations Commission set it. It reads: Labour Court.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Business 2021 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -346,6 +354,14 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "Cadbury employs thousands of people in their plants in Ireland and the UK. — Labour", marks: 4 },
     { id: "r-4", kind: "point", verbatim: "Cadbury was founded by the entrepreneur John Cadbury. — Enterprise", marks: 3 },
     ],
+    questionFigure: {
+          "candId": "business-2022-OL-paper-q4-art",
+          "src": "/exam-figures/business/markbank/business-2022-OL-paper-q4-art.png",
+          "srcHash": "be282f60d8d52f8bb39982156913e0cd",
+          "alt": "The table or diagram printed with 2022 OL Question 4, as the State Examinations Commission set it. It reads: Statement, Land, Labour, Capital, Enterprise, uses specialist, equipment and machinery to, produce their products., uses cocoa beans, in the production of their, chocolate bars., employs, was founded by.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Business 2022 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",

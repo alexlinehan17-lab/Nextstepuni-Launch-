@@ -54,8 +54,15 @@ POINTS_AT = re.compile(
     r'|\btick\b[^.]{0,30}\b(?:box|table|column)\b'
     r'|\brefer(?:ring)? to the (?:diagram|graph|table|figure|extract|passage)\b',
     re.I)
-REF = re.compile(r'^(\d{4})\s+(HL|OL)\s+(?:Paper\s*\d+\s+)?Q(\d{1,2})'
-                 r'(?:\(([a-z])\))?(?:\(([ivxlc]+)\))?', re.I)
+# Every ref shape the eleven decks use. Maths writes "2021 HL Paper 1 Q5(b)",
+# Business "2021 OL Section 1 Q10", Home Economics "2021 HL Section A Q3",
+# Economics both "2021 HL Section A Q4(b)" and "2021 HL Q13(b)(i)". The
+# component between the level and the Q is skipped rather than parsed: it
+# names a booklet or a section, and the crop is found by the question and part
+# on the page.
+REF = re.compile(r'^(\d{4})\s+(HL|OL)\s+(?:(?:Paper|Section)\s*\w+\s+)?'
+                 r'Q(\d{1,2})'
+                 r'(?:\(([a-hj-z])\))?(?:\(([ivxlc]+)\))?', re.I)
 MARKER = re.compile(r'^\(([a-z]{1,4})\)')
 
 
@@ -78,57 +85,101 @@ def worklist(subject):
     return out
 
 
-def part_band(page, q, letter, roman):
+QHEAD_LINE = re.compile(r'^\s*(?:Question\s+)?(\d{1,2})[.\s]*$')
+
+
+def question_span(page, q):
+    """The slice of this page Question q owns, or None if it is not here.
+
+    Pages carry more than one question. Finding the part marker anywhere on
+    the page cropped 2022 HL Q10(a) as a table of calf weaning weights that
+    belongs to a different question entirely — the marker was real, the
+    question was not.
+    """
+    heads = []
+    for (x0, y0, x1, y1), text in G.text_lines(page):
+        m = QHEAD_LINE.match(text.strip())
+        if m and x0 < page.rect.width * 0.35:
+            heads.append((y0, int(m.group(1))))
+    heads.sort()
+    top = next((y for y, n in heads if n == q), None)
+    if top is None:
+        return None
+    later = [y for y, n in heads if y > top + 2]
+    return top, (min(later) if later else page.rect.height)
+
+
+def part_band(page, span, letter, roman):
     """(top, bottom) of the slice of this page the part owns, or None.
 
-    Cut at the PART MARKERS. A question's parts each have their own printed
-    matter and the page has to be divided between them, or (c)'s tick-box
-    table is cropped for (a) as well.
+    Cut at the PART MARKERS, inside the question's own span. A question's
+    parts each have their own printed matter and the page has to be divided
+    between them, or (c)'s tick-box table is cropped for (a) as well.
     """
     marks = []
     for (x0, y0, x1, y1), text in G.text_lines(page):
+        if not (span[0] - 2 <= y0 <= span[1] + 2):
+            continue
         m = MARKER.match(text.strip())
         if m and x0 < page.rect.width * 0.35:
             marks.append((y0, m.group(1)))
     want = roman or letter
     if want is None:
-        # A card citing the whole QUESTION cannot say which of its parts the
-        # picture belongs to, and taking the page entire crops whatever else
-        # is on it: 2024 OL Q3 came out as a grazing diagram with parts (b),
-        # (c) and (d)'s empty answer boxes stacked underneath. Those need a
-        # figure bound by hand.
-        return None
+        # A card citing the whole QUESTION takes the question's SHARED
+        # stimulus -- everything above its first part -- and not the page
+        # entire: 2024 OL Q3 came out as a grazing diagram with parts (b), (c)
+        # and (d)'s empty answer boxes stacked underneath.
+        return span[0], (marks[0][0] if marks else span[1])
     marks.sort()
     for i, (y, label) in enumerate(marks):
         if label != want:
             continue
-        nxt = marks[i + 1][0] if i + 1 < len(marks) else page.rect.height
+        nxt = marks[i + 1][0] if i + 1 < len(marks) else span[1]
         return y, nxt
     return None
 
 
 def pages_for(P, q):
-    """Page indexes carrying this question, in booklet order."""
-    hits = []
+    """(path, page, top, bottom) for everything Question q owns.
+
+    A question owns the paper from its own heading to the NEXT heading, and
+    that runs across pages: 32 of the parts this tool could not crop had their
+    head on the page before. Matching only pages that CARRY the head found the
+    head page and then failed to find the part marker on it, because the part
+    was overleaf.
+    """
+    out, open_at = [], None
     for path in P.files:
         with pymupdf.open(path) as doc:
             for n in range(doc.page_count):
-                # Any page the question could be on. Precision comes from the
-                # PART BAND below, not from here: a page that does not carry
-                # this part's marker yields no band and is passed over.
-                if re.search(rf'(?m)^\s*(?:Question\s+)?{q}[.\s]',
-                             doc[n].get_text()):
-                    hits.append((path, n))
-    return hits
+                page = doc[n]
+                heads = []
+                for (x0, y0, x1, y1), text in G.text_lines(page):
+                    m = QHEAD_LINE.match(text.strip())
+                    if m and x0 < page.rect.width * 0.35:
+                        heads.append((y0, int(m.group(1))))
+                heads.sort()
+                mine = next((y for y, num in heads if num == q), None)
+                if mine is not None:
+                    open_at = mine
+                elif open_at is None:
+                    continue
+                else:
+                    open_at = 0.0
+                later = [y for y, num in heads if num != q and y > open_at + 2]
+                out.append((path, n, open_at, min(later) if later else page.rect.height))
+                if later:
+                    open_at = None
+    return out
 
 
 def crop_part(subject, year, level, q, letter, roman, write=False):
     """The one crop this part needs, or None."""
     P = PP.Paper(subject, year, level)
-    for path, n in pages_for(P, q):
+    for path, n, span_top, span_bot in pages_for(P, q):
         with pymupdf.open(path) as doc:
             page = doc[n]
-            band = part_band(page, q, letter, roman)
+            band = part_band(page, (span_top, span_bot), letter, roman)
             if band is None:
                 continue
             top, bottom = band
@@ -176,6 +227,14 @@ def crop_part(subject, year, level, q, letter, roman, write=False):
                     bot = ly0 - 1
             rect = pymupdf.Rect(max(0.0, x0 - PAD), top,
                                 min(page.rect.width, x1 + PAD), bot)
+            # A crop that is most of the page is the PAGE, not a figure. The
+            # shared-stimulus fallback for a whole-question card can reach
+            # that when the question has no part markers on the page it lands
+            # on, and a card showing a student a whole exam page has not been
+            # given context, it has been given the paper.
+            if (rect.width * rect.height
+                    > 0.55 * page.rect.width * page.rect.height):
+                continue
             part = (f'q{q}' + (f'{letter}' if letter else '')
                     + (f'{roman}' if roman else ''))
             name = (f'{subject}-{year}-{level.upper()}-paper-{part}-art')

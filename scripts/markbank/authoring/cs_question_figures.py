@@ -598,7 +598,17 @@ def is_a_figure(labels, has_image, placed=(), page=None, band=None,
     if page is not None and band is not None:
         rows = [r for r in rule_rows(page)
                 if band[1] - 4 <= r[1] <= band[3] + 4]
-        if len(rows) >= 2 and answer_table_top(page, *band, text_rows) is None:
+        # POSITIVE evidence, not the absence of a verdict. Asking whether
+        # answer_table_top() declined to call it an answer table was wrong:
+        # that function returns None both for "this table has content" and for
+        # "fewer than three rules, I cannot tell", and a three-line empty
+        # answer box has two. What makes a table printed matter is words in
+        # it, so that is what is tested.
+        words = [t for (bx0, by0, bx1, by1), t in text_rows
+                 if band[0] - 4 < bx0 and bx1 < band[2] + 4
+                 and band[1] - 2 < by0 and by1 < band[3] + 2
+                 and len(t.strip()) > 1 and not PROMPT.match(t)]
+        if len(rows) >= 2 and words:
             return True
     if page is not None and band is not None and has_drawn_shape(page, band):
         return True

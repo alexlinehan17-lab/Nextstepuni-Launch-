@@ -1106,6 +1106,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Plant structure: Root hairs", marks: 2 },
     { id: "r-2", kind: "point", verbatim: "Process: Active transport", marks: 2 },
     ],
+    questionFigure: {
+          "candId": "agricultural-science-2022-HL-paper-q11ai-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-HL-paper-q11ai-art.png",
+          "srcHash": "d9924e8966708e9306247b9edfe12fc8",
+          "alt": "The table or diagram printed with 2022 HL Question 11(a)(i), as the State Examinations Commission set it. It reads: Plant structure, Process involved.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4977,6 +4985,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "25%", marks: 6 },
     ],
+    questionFigure: {
+          "candId": "agricultural-science-2024-HL-paper-q14aiii-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-q14aiii-art.png",
+          "srcHash": "ff63471c7b635a8ab132672efcc47a8a",
+          "alt": "The table or diagram printed with 2024 HL Question 14(a)(iii), as the State Examinations Commission set it. It reads: 45%, 25%, 15%.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
