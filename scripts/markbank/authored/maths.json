@@ -1113,7 +1113,7 @@
  },
  {
   "id": "maths-2021-hl-p1-q8-a-i",
-  "topicId": "maths-5-1",
+  "topicId": "maths-5-2",
   "conceptId": "part",
   "level": "higher",
   "year": 2021,
@@ -5061,7 +5061,7 @@
  },
  {
   "id": "maths-2021-ol-p1-q8-c",
-  "topicId": "maths-3-4",
+  "topicId": "maths-5-2",
   "conceptId": "explain-why-box-height-units-cannot",
   "level": "ordinary",
   "year": 2021,
@@ -5552,7 +5552,7 @@
  },
  {
   "id": "maths-2021-ol-p1-q10-a-i",
-  "topicId": "maths-3-3",
+  "topicId": "maths-2-3",
   "conceptId": "how-long-takes-release-million-cubic",
   "level": "ordinary",
   "year": 2021,
@@ -9356,7 +9356,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-a",
-  "topicId": "maths-3-1",
+  "topicId": "maths-4-1",
   "conceptId": "amount-drug-left-alex-body-days",
   "level": "higher",
   "year": 2022,
@@ -9396,7 +9396,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-b",
-  "topicId": "maths-3-1",
+  "topicId": "maths-4-1",
   "conceptId": "how-long-after-single-injection-will",
   "level": "higher",
   "year": 2022,
@@ -9441,7 +9441,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-c",
-  "topicId": "maths-3-1",
+  "topicId": "maths-4-1",
   "conceptId": "explain-why-total-amount-drug-alex",
   "level": "higher",
   "year": 2022,
@@ -9487,7 +9487,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-d",
-  "topicId": "maths-3-1",
+  "topicId": "maths-4-1",
   "conceptId": "total-amount-drug-alex-body-immediately",
   "level": "higher",
   "year": 2022,
@@ -9617,7 +9617,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q9-f-ii",
-  "topicId": "maths-3-1",
+  "topicId": "maths-4-1",
   "conceptId": "immediately-after-7th-injection-there-drug",
   "level": "higher",
   "year": 2022,
@@ -11347,7 +11347,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q9-c-i",
-  "topicId": "maths-3-4",
+  "topicId": "maths-3-3",
   "conceptId": "airplane-flies-its-engine-makes-noise",
   "level": "higher",
   "year": 2022,
@@ -11437,7 +11437,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q9-d-i",
-  "topicId": "maths-3-4",
+  "topicId": "maths-3-3",
   "conceptId": "explain-briefly-why-equation-holds-100",
   "level": "higher",
   "year": 2022,
@@ -12439,7 +12439,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q5-c-i",
-  "topicId": "maths-5-1",
+  "topicId": "maths-3-3",
   "conceptId": "two-values-which",
   "level": "ordinary",
   "year": 2022,
@@ -12918,7 +12918,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q8-a-i",
-  "topicId": "maths-4-2",
+  "topicId": "maths-3-3",
   "conceptId": "work-out-how-many-acid-200",
   "level": "ordinary",
   "year": 2022,
@@ -13043,7 +13043,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q8-a-iv",
-  "topicId": "maths-4-2",
+  "topicId": "maths-3-3",
   "conceptId": "when-she-making-another-mixture-jessica",
   "level": "ordinary",
   "year": 2022,
@@ -13088,7 +13088,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q8-b-i",
-  "topicId": "maths-4-2",
+  "topicId": "maths-3-3",
   "conceptId": "write-down-values-cube-these-values",
   "level": "ordinary",
   "year": 2022,
@@ -13532,7 +13532,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q10-a-i",
-  "topicId": "maths-4-2",
+  "topicId": "maths-3-3",
   "conceptId": "how-high-metres-was-ball-when",
   "level": "ordinary",
   "year": 2022,
@@ -13572,7 +13572,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q10-a-ii",
-  "topicId": "maths-4-2",
+  "topicId": "maths-3-3",
   "conceptId": "ball-was-caught-after-seconds-how",
   "level": "ordinary",
   "year": 2022,
@@ -13612,7 +13612,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q10-a-iii",
-  "topicId": "maths-4-2",
+  "topicId": "maths-3-3",
   "conceptId": "iii-when-ball-passed-over-halfway",
   "level": "ordinary",
   "year": 2022,
@@ -13659,7 +13659,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q10-a-iv",
-  "topicId": "maths-4-2",
+  "topicId": "maths-3-3",
   "conceptId": "how-long-took-ball-reach-its",
   "level": "ordinary",
   "year": 2022,
@@ -14433,7 +14433,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q4-a",
-  "topicId": "maths-1-6",
+  "topicId": "maths-3-3",
   "conceptId": "group-students-sat-exam-each-student",
   "level": "ordinary",
   "year": 2022,
@@ -14709,7 +14709,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q6-a-i",
-  "topicId": "maths-4-1",
+  "topicId": "maths-2-1",
   "conceptId": "write-down-adb-size-total-angle",
   "level": "ordinary",
   "year": 2022,
@@ -14752,7 +14752,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q6-a-ii",
-  "topicId": "maths-4-1",
+  "topicId": "maths-2-1",
   "conceptId": "aod-130-work-out-size-angle",
   "level": "ordinary",
   "year": 2022,
@@ -15030,7 +15030,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q7-b",
-  "topicId": "maths-1-2",
+  "topicId": "maths-1-6",
   "conceptId": "complete-table-filling-four-missing-values",
   "level": "ordinary",
   "year": 2022,
@@ -15124,7 +15124,7 @@
  },
  {
   "id": "maths-2022-ol-p2-q7-d",
-  "topicId": "maths-1-2",
+  "topicId": "maths-1-6",
   "conceptId": "female-cats-were-put-separate-pens",
   "level": "ordinary",
   "year": 2022,
@@ -17544,7 +17544,7 @@
  },
  {
   "id": "maths-2023-hl-p1-q9-b-i",
-  "topicId": "maths-2-3",
+  "topicId": "maths-5-2",
   "conceptId": "complete-table-showing-pairs-factors",
   "level": "higher",
   "year": 2023,
@@ -17868,7 +17868,7 @@
  },
  {
   "id": "maths-2023-hl-p1-q10-e-ii",
-  "topicId": "maths-2-3",
+  "topicId": "maths-3-4",
   "conceptId": "starts-increase-rate-units-per-second",
   "level": "higher",
   "year": 2023,
@@ -20324,7 +20324,7 @@
  },
  {
   "id": "maths-2023-ol-p1-q6-a-i",
-  "topicId": "maths-5-2",
+  "topicId": "maths-4-1",
   "conceptId": "value",
   "level": "ordinary",
   "year": 2023,
@@ -23446,7 +23446,7 @@
  },
  {
   "id": "maths-2023-ol-p2-q10-a",
-  "topicId": "maths-1-3",
+  "topicId": "maths-2-3",
   "conceptId": "work-out-cba-size-angle-cba",
   "level": "ordinary",
   "year": 2023,
@@ -29765,7 +29765,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q6-a-i",
-  "topicId": "maths-2-1",
+  "topicId": "maths-2-4",
   "conceptId": "construct-bisector-angle-using-only-compass",
   "level": "ordinary",
   "year": 2024,
@@ -32181,6 +32181,53 @@
   "questionFigureKey": "maths-2025-HL-ask-p1-q8-b"
  },
  {
+  "id": "maths-2025-hl-p1-q8-c",
+  "topicId": "maths-3-3",
+  "conceptId": "how-long-would-take-jacob-total",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "maths",
+  "section": "B",
+  "questionRef": "2025 HL Paper 1 Q8(c), (d)",
+  "questionText": "Find how long it would take Jacob in total to kayak from S to A, and then run from A to F",
+  "figureKey": "maths-2025-HL-paper-p025-i0",
+  "labelKey": [],
+  "tariffModel": {
+   "kind": "fixed",
+   "notation": "Scale (0, 4, 7, 10, 15)",
+   "answer": null,
+   "ofParts": null,
+   "perPart": null
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "maths-2025-hl-p1-q8-c-r1",
+    "kind": "anyN",
+    "verbatim": "Work of merit, for example, in (c), one correct time found; or, in (d), some correct substitution into Pythagoras’ Theorem",
+    "marks": 15,
+    "openList": true,
+    "contextNote": "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 7, three parts for 10. The full scale runs to 15. Full Credit –1: Incorrect rounding, otherwise correct; Incorrect or no units in (c). Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.",
+    "group": {
+     "claimMax": 3,
+     "perOption": 4,
+     "options": [
+      "Work of merit, for example, in (c), one correct time found; or, in (d), some correct substitution into Pythagoras’ Theorem",
+      "1 part correct\nWork of merit in both parts",
+      "(d) correct and work of merit in (c)\n(c) correct and answer to (d) given in hours only"
+     ],
+     "perOptionSteps": [
+      4,
+      3,
+      8
+     ]
+    }
+   }
+  ],
+  "notes": "",
+  "questionFigureKey": "maths-2025-HL-ask-p1-q8-c"
+ },
+ {
   "id": "maths-2025-hl-p1-q8-e-i",
   "topicId": "maths-4-1",
   "conceptId": "expression-total-time-hours-will-take",
@@ -32784,7 +32831,7 @@
  },
  {
   "id": "maths-2025-hl-p1-q10-d-iii",
-  "topicId": "maths-2-2",
+  "topicId": "maths-4-1",
   "conceptId": "value-which-given-lim-4t2",
   "level": "higher",
   "year": 2025,
@@ -32831,7 +32878,7 @@
  },
  {
   "id": "maths-2025-hl-p1-q10-e-i",
-  "topicId": "maths-2-2",
+  "topicId": "maths-4-1",
   "conceptId": "write-down-value",
   "level": "higher",
   "year": 2025,
@@ -35860,7 +35907,7 @@
  },
  {
   "id": "maths-2025-ol-p1-q8-a-i",
-  "topicId": "maths-4-2",
+  "topicId": "maths-3-3",
   "conceptId": "explain-what-means-context-question",
   "level": "ordinary",
   "year": 2025,
@@ -35905,7 +35952,7 @@
  },
  {
   "id": "maths-2025-ol-p1-q8-a-ii",
-  "topicId": "maths-4-2",
+  "topicId": "maths-3-3",
   "conceptId": "complete-table-values-given-values",
   "level": "ordinary",
   "year": 2025,
@@ -36044,7 +36091,7 @@
  },
  {
   "id": "maths-2025-ol-p1-q8-c-i",
-  "topicId": "maths-4-2",
+  "topicId": "maths-3-3",
   "conceptId": "graph-estimate-work-out-value",
   "level": "ordinary",
   "year": 2025,
@@ -36629,7 +36676,7 @@
  },
  {
   "id": "maths-2025-ol-p2-q1-a-i",
-  "topicId": "maths-4-2",
+  "topicId": "maths-1-6",
   "conceptId": "total-rainfall-athenry-june-2023-was",
   "level": "ordinary",
   "year": 2025,
@@ -36714,7 +36761,7 @@
  },
  {
   "id": "maths-2025-ol-p2-q1-b",
-  "topicId": "maths-4-2",
+  "topicId": "maths-1-6",
   "conceptId": "table-shows-same-monthly-rainfall-values",
   "level": "ordinary",
   "year": 2025,
