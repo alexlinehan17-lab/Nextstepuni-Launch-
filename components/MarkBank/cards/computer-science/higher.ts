@@ -396,6 +396,146 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2021 Higher Level — © State Examinations Commission.",
+    id: "cs-2021-hl-q16-a-i", topicId: "cs-2-2", conceptId: "currently-value-variable-word2-hard-coded",
+    section: "B", questionRef: "2021 HL Q16(a)(i)",
+    stem: "Before making any changes, you should save your working copy of the file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The Python program shown below tests whether the strings stored in the variables word1 and word2 are anagrams of each other and displays YES if they are. Two words are anagrams of each other if they both use exactly the same letters. For example, the words LISTEN and SILENT are anagrams of one another. ELVIS and LIVES are also anagrams. The function definition is_anagram(w1, w2) determines whether or not two words are anagrams of one another and will not be used until part (v). 1 # Question 16(a) 2 # Examination Number: 3 4 # function definition used in part Enter the first word: LISTEN YES Make the following changes to the program: When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT YES When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT LISTEN is an anagram of SILENT When the program is run the output may look as follows: Enter the first word: LIST Enter the second word: ARRAY LIST is NOT an anagram of ARRAY When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Extend the program so that it prompts the user to ‘Enter a phrase:’. The program should display two additional messages to say whether or not word1 is an anagram of the phrase and, whether or not word2 is an anagram of the phrase. Some example outputs are shown below. You could use this data to test your program. Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Enter a phrase: Silence of the lambs Listen is NOT an anagram of Silence of the lambs Silent is NOT an anagram of Silence of the lambs Enter the first word: conversation Enter the second word: conservation conversation is an anagram of conservation conversation is an anagram of conservation Enter a phrase: voices rant on conversation is an anagram of voices rant on conservation is an anagram of voices rant on Enter the first word: Astronomer Enter the second word: Moon Astronomer is NOT an anagram of Moon Astronomer is NOT an anagram of Moon Enter a phrase: moon starer Astronomer is an anagram of moonstarer Moon is NOT an anagram of moon starer Save your file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third‐party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Saturday 22 May Morning 11:30 – 12:30",
+    questionText: "Currently the value of the variable word2 is hard‐coded to SILENT. Modify the program so that it prompts the user to ‘Enter the second word:’, and then assign whatever value the user enters to the variable word2.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "error.", marks: 5 },
+    ],
+    figure: {
+          "candId": "computer-science-2021-HL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q16-code0.png",
+          "srcHash": "51fc7d55a53f707e3897c7fddf99e493",
+          "alt": "The program printed with 2021 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The Python program shown below tests whether the strings stored in the variables word1",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2021 Higher Level — © State Examinations Commission.",
+    id: "cs-2021-hl-q16-a-ii", topicId: "cs-2-2", conceptId: "if-both-words-entered-anagrams-program",
+    section: "B", questionRef: "2021 HL Q16(a)(ii)",
+    stem: "Before making any changes, you should save your working copy of the file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The Python program shown below tests whether the strings stored in the variables word1 and word2 are anagrams of each other and displays YES if they are. Two words are anagrams of each other if they both use exactly the same letters. For example, the words LISTEN and SILENT are anagrams of one another. ELVIS and LIVES are also anagrams. The function definition is_anagram(w1, w2) determines whether or not two words are anagrams of one another and will not be used until part (v). 1 # Question 16(a) 2 # Examination Number: 3 4 # function definition used in part Enter the first word: LISTEN YES Make the following changes to the program: When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT YES When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT LISTEN is an anagram of SILENT When the program is run the output may look as follows: Enter the first word: LIST Enter the second word: ARRAY LIST is NOT an anagram of ARRAY When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Extend the program so that it prompts the user to ‘Enter a phrase:’. The program should display two additional messages to say whether or not word1 is an anagram of the phrase and, whether or not word2 is an anagram of the phrase. Some example outputs are shown below. You could use this data to test your program. Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Enter a phrase: Silence of the lambs Listen is NOT an anagram of Silence of the lambs Silent is NOT an anagram of Silence of the lambs Enter the first word: conversation Enter the second word: conservation conversation is an anagram of conservation conversation is an anagram of conservation Enter a phrase: voices rant on conversation is an anagram of voices rant on conservation is an anagram of voices rant on Enter the first word: Astronomer Enter the second word: Moon Astronomer is NOT an anagram of Moon Astronomer is NOT an anagram of Moon Enter a phrase: moon starer Astronomer is an anagram of moonstarer Moon is NOT an anagram of moon starer Save your file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third‐party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Saturday 22 May Morning 11:30 – 12:30",
+    questionText: "If both words entered are anagrams the program should display the first word followed by the phrase ‘is an anagram of' and then the second word.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "error.", marks: 1 },
+    { id: "r-2", kind: "point", verbatim: "Attempted use of print function with both variables (word1 and", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "word2).", marks: 1 },
+    { id: "r-4", kind: "point", verbatim: "Minor error in construction of string.", marks: 1 },
+    { id: "r-5", kind: "point", verbatim: "Any other reasonable attempt.", marks: 1 },
+    ],
+    figure: {
+          "candId": "computer-science-2021-HL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q16-code0.png",
+          "srcHash": "51fc7d55a53f707e3897c7fddf99e493",
+          "alt": "The program printed with 2021 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The Python program shown below tests whether the strings stored in the variables word1",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2021 Higher Level — © State Examinations Commission.",
+    id: "cs-2021-hl-q16-a-iii", topicId: "cs-2-2", conceptId: "extend-program-so-if-words-entered",
+    section: "B", questionRef: "2021 HL Q16(a)(iii)",
+    stem: "Before making any changes, you should save your working copy of the file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The Python program shown below tests whether the strings stored in the variables word1 and word2 are anagrams of each other and displays YES if they are. Two words are anagrams of each other if they both use exactly the same letters. For example, the words LISTEN and SILENT are anagrams of one another. ELVIS and LIVES are also anagrams. The function definition is_anagram(w1, w2) determines whether or not two words are anagrams of one another and will not be used until part (v). 1 # Question 16(a) 2 # Examination Number: 3 4 # function definition used in part Enter the first word: LISTEN YES Make the following changes to the program: When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT YES When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT LISTEN is an anagram of SILENT When the program is run the output may look as follows: Enter the first word: LIST Enter the second word: ARRAY LIST is NOT an anagram of ARRAY When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Extend the program so that it prompts the user to ‘Enter a phrase:’. The program should display two additional messages to say whether or not word1 is an anagram of the phrase and, whether or not word2 is an anagram of the phrase. Some example outputs are shown below. You could use this data to test your program. Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Enter a phrase: Silence of the lambs Listen is NOT an anagram of Silence of the lambs Silent is NOT an anagram of Silence of the lambs Enter the first word: conversation Enter the second word: conservation conversation is an anagram of conservation conversation is an anagram of conservation Enter a phrase: voices rant on conversation is an anagram of voices rant on conservation is an anagram of voices rant on Enter the first word: Astronomer Enter the second word: Moon Astronomer is NOT an anagram of Moon Astronomer is NOT an anagram of Moon Enter a phrase: moon starer Astronomer is an anagram of moonstarer Moon is NOT an anagram of moon starer Save your file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third‐party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Saturday 22 May Morning 11:30 – 12:30",
+    questionText: "Extend the program so that if the words entered are not anagrams of each other the program displays the first word followed by the phrase ‘is NOT an anagram of' and then the second word.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "error (allow use of else, elif or a separate if statement).", marks: 1 },
+    { id: "r-2", kind: "point", verbatim: "Attempted use of print function with both variables (word1 and", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "word2).", marks: 1 },
+    { id: "r-4", kind: "point", verbatim: "Minor error in construction of string.", marks: 1 },
+    { id: "r-5", kind: "point", verbatim: "Any other reasonable attempt.", marks: 1 },
+    ],
+    figure: {
+          "candId": "computer-science-2021-HL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q16-code0.png",
+          "srcHash": "51fc7d55a53f707e3897c7fddf99e493",
+          "alt": "The program printed with 2021 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The Python program shown below tests whether the strings stored in the variables word1",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2021 Higher Level — © State Examinations Commission.",
+    id: "cs-2021-hl-q16-a-iv", topicId: "cs-2-2", conceptId: "program-currently-treats-words-case-sensitive",
+    section: "B", questionRef: "2021 HL Q16(a)(iv)",
+    stem: "Before making any changes, you should save your working copy of the file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The Python program shown below tests whether the strings stored in the variables word1 and word2 are anagrams of each other and displays YES if they are. Two words are anagrams of each other if they both use exactly the same letters. For example, the words LISTEN and SILENT are anagrams of one another. ELVIS and LIVES are also anagrams. The function definition is_anagram(w1, w2) determines whether or not two words are anagrams of one another and will not be used until part (v). 1 # Question 16(a) 2 # Examination Number: 3 4 # function definition used in part Enter the first word: LISTEN YES Make the following changes to the program: When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT YES When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT LISTEN is an anagram of SILENT When the program is run the output may look as follows: Enter the first word: LIST Enter the second word: ARRAY LIST is NOT an anagram of ARRAY When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Extend the program so that it prompts the user to ‘Enter a phrase:’. The program should display two additional messages to say whether or not word1 is an anagram of the phrase and, whether or not word2 is an anagram of the phrase. Some example outputs are shown below. You could use this data to test your program. Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Enter a phrase: Silence of the lambs Listen is NOT an anagram of Silence of the lambs Silent is NOT an anagram of Silence of the lambs Enter the first word: conversation Enter the second word: conservation conversation is an anagram of conservation conversation is an anagram of conservation Enter a phrase: voices rant on conversation is an anagram of voices rant on conservation is an anagram of voices rant on Enter the first word: Astronomer Enter the second word: Moon Astronomer is NOT an anagram of Moon Astronomer is NOT an anagram of Moon Enter a phrase: moon starer Astronomer is an anagram of moonstarer Moon is NOT an anagram of moon starer Save your file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third‐party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Saturday 22 May Morning 11:30 – 12:30",
+    questionText: "The program currently treats words as case‐sensitive. Modify the program so that the case of the words entered does not matter.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "or semantic error.", marks: 10 },
+    ],
+    figure: {
+          "candId": "computer-science-2021-HL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q16-code0.png",
+          "srcHash": "51fc7d55a53f707e3897c7fddf99e493",
+          "alt": "The program printed with 2021 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The Python program shown below tests whether the strings stored in the variables word1",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2021 Higher Level — © State Examinations Commission.",
+    id: "cs-2021-hl-q16-a-v", topicId: "cs-2-2", conceptId: "5-def-anagram-w1-w2-6",
+    section: "B", questionRef: "2021 HL Q16(a)(v)",
+    stem: "Before making any changes, you should save your working copy of the file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The Python program shown below tests whether the strings stored in the variables word1 and word2 are anagrams of each other and displays YES if they are. Two words are anagrams of each other if they both use exactly the same letters. For example, the words LISTEN and SILENT are anagrams of one another. ELVIS and LIVES are also anagrams. The function definition is_anagram(w1, w2) determines whether or not two words are anagrams of one another and will not be used until part (v). 1 # Question 16(a) 2 # Examination Number: 3 4 # function definition used in part Enter the first word: LISTEN YES Make the following changes to the program: When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT YES When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT LISTEN is an anagram of SILENT When the program is run the output may look as follows: Enter the first word: LIST Enter the second word: ARRAY LIST is NOT an anagram of ARRAY When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Extend the program so that it prompts the user to ‘Enter a phrase:’. The program should display two additional messages to say whether or not word1 is an anagram of the phrase and, whether or not word2 is an anagram of the phrase. Some example outputs are shown below. You could use this data to test your program. Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Enter a phrase: Silence of the lambs Listen is NOT an anagram of Silence of the lambs Silent is NOT an anagram of Silence of the lambs Enter the first word: conversation Enter the second word: conservation conversation is an anagram of conservation conversation is an anagram of conservation Enter a phrase: voices rant on conversation is an anagram of voices rant on conservation is an anagram of voices rant on Enter the first word: Astronomer Enter the second word: Moon Astronomer is NOT an anagram of Moon Astronomer is NOT an anagram of Moon Enter a phrase: moon starer Astronomer is an anagram of moonstarer Moon is NOT an anagram of moon starer Save your file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third‐party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Saturday 22 May Morning 11:30 – 12:30",
+    questionText: "5 def is_anagram(w1, w2): 6 if sorted(w1) == sorted(w2): 7 return True 8 else: 9 return False 10 11 word1 = input(\"Enter the first word: \") 12 word2 = \"SILENT\" 13 14 # test whether the sorted strings are the same as each other 15 # if the sorted strings are the same then they must be anagrams 16 if (sorted(word1) == sorted(word2)): 17 print(\"YES\") When the program is run, the user is prompted to enter a word. If the user enters the word LISTEN (in uppercase) the output should look as follows because LISTEN and SILENT are anagrams of each other. Extend the program to use the function is_anagram to determine whether or not the two words entered are anagrams of each other. You should not delete any code you wrote in previous parts. The program will now check twice if the words are anagrams of each other.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "case is ignored).", marks: 10 },
+    ],
+    figure: {
+          "candId": "computer-science-2021-HL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q16-code0.png",
+          "srcHash": "51fc7d55a53f707e3897c7fddf99e493",
+          "alt": "The program printed with 2021 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The Python program shown below tests whether the strings stored in the variables word1",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2021 Higher Level — © State Examinations Commission.",
+    id: "cs-2021-hl-q16-a-vi", topicId: "cs-2-2", conceptId: "anagrams-words-can-also-be-phrases",
+    section: "B", questionRef: "2021 HL Q16(a)(vi)",
+    stem: "Before making any changes, you should save your working copy of the file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The Python program shown below tests whether the strings stored in the variables word1 and word2 are anagrams of each other and displays YES if they are. Two words are anagrams of each other if they both use exactly the same letters. For example, the words LISTEN and SILENT are anagrams of one another. ELVIS and LIVES are also anagrams. The function definition is_anagram(w1, w2) determines whether or not two words are anagrams of one another and will not be used until part (v). 1 # Question 16(a) 2 # Examination Number: 3 4 # function definition used in part Enter the first word: LISTEN YES Make the following changes to the program: When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT YES When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT LISTEN is an anagram of SILENT When the program is run the output may look as follows: Enter the first word: LIST Enter the second word: ARRAY LIST is NOT an anagram of ARRAY When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Extend the program so that it prompts the user to ‘Enter a phrase:’. The program should display two additional messages to say whether or not word1 is an anagram of the phrase and, whether or not word2 is an anagram of the phrase. Some example outputs are shown below. You could use this data to test your program. Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Enter a phrase: Silence of the lambs Listen is NOT an anagram of Silence of the lambs Silent is NOT an anagram of Silence of the lambs Enter the first word: conversation Enter the second word: conservation conversation is an anagram of conservation conversation is an anagram of conservation Enter a phrase: voices rant on conversation is an anagram of voices rant on conservation is an anagram of voices rant on Enter the first word: Astronomer Enter the second word: Moon Astronomer is NOT an anagram of Moon Astronomer is NOT an anagram of Moon Enter a phrase: moon starer Astronomer is an anagram of moonstarer Moon is NOT an anagram of moon starer Save your file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third‐party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Saturday 22 May Morning 11:30 – 12:30",
+    questionText: "Anagrams of words can also be phrases. For example, Moon starer is an anagram of Astronomer, and Voices rant on is an anagram of the two words, Conversation and Conservation. Note that the spaces in the phrases are ignored.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Phrase correctly read", marks: 15 },
+    ],
+    figure: {
+          "candId": "computer-science-2021-HL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q16-code0.png",
+          "srcHash": "51fc7d55a53f707e3897c7fddf99e493",
+          "alt": "The program printed with 2021 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The Python program shown below tests whether the strings stored in the variables word1",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2021 Higher Level — © State Examinations Commission.",
     id: "cs-2021-hl-q2", topicId: "cs-2-3", conceptId: "why-data-stored-computers-binary-format",
     section: "A", questionRef: "2021 HL Q2",
     questionText: "(a) Explain why data is stored in computers in binary format. (i) How many unique pieces of information could be represented using four bits? (ii) What is the minimum number of bits required to represent eight unique pieces of information? (b) A single bit can be used to represent two pieces of information.",
@@ -416,6 +556,28 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "RAM can be written, whereas ROM is read-only.", marks: 5, accepts: ["RAM chips can be read faster than ROM.","ROM is non-volatile storage (does not require a constant source of power to retain information stored on it) whereas RAM is volatile and requires a constant source of power to retain information.","Data/information in ROM is permanent whereas RAM is used to store temporary information.","CPU cannot access data that is stored in ROM directly – must be transferred to RAM first.","ROM is used primarily in the start-up process of a computer, whereas RAM is used in the normal operations of a computer after starting up and loading the operating system.","Capacity. RAM can store multiple gigabytes (GB) of data (typical range is 1-256GB per chip). ROM typically stores only several megabytes (MB) of data, typically 4-8MB per chip.","Physically RAM chips are bigger than ROM chips (of the same capacity).","The cost of RAM chips tends to be higher than ROM.","Or any similar relevant difference. Each correct response","More RAM means more applications can be loaded in RAM at the same time. This means the CPU spends less time loading RAM from secondary storage and/or paging/thrashing. This in turn means that the CPU can spend more time running user applications.","Better performance means applications run faster / quicker response times for user."] },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2021 Higher Level — © State Examinations Commission.",
+    id: "cs-2021-hl-q4", topicId: "cs-2-2", conceptId: "why-does-method-shown-not-work",
+    section: "A", questionRef: "2021 HL Q4",
+    stem: "You are asked to swap the values of two variables, x and y, which have already been initialised.",
+    questionText: "(a) Why does the method shown not work? (b) Describe a method that does work.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "The method does not work because the contents of x are overwritten (lost) after the first assignment.", marks: 5, accepts: ["A temporary variable is needed.","Use a temporary variable temp = x x = y y = temp","or, use Python’s canonical swap x, y = y, x","or, use addition/subtraction operators x = x + y y = x - y x = x - y","or, use multiplication/division operators x = x * y y = x / y x = x / y","or any other valid solution"] },
+    ],
+    figure: {
+          "candId": "computer-science-2021-HL-paper-q4-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q4-code0.png",
+          "srcHash": "0ec267fff651e2c85ff1527f8d86e444",
+          "alt": "The program printed with 2021 HL Question 4, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: x = y",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -469,6 +631,28 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "To test the feasibility of some idea (i.e. testing ideas before committing to them. Refinements can be made more quickly, more safely and for less money e.g. is it worthwhile to vaccinate?", marks: 5, accepts: ["To make predictions/demonstrate emergent behaviour (e.g. population growth, the spread of a virus, infection rates) so that decisions can be better informed (e.g. where to build hospitals, roads, schools or whether it is necessary to vaccinate against the spread of a virus).","To run simulations and be used as a basis for discussion and gaining a better understanding of a phenomena.","To enable solutions to problems that are difficult to solve analytically (e.g. because of scale or complexity).","Or similar. For each correctly stated benefit","Agent-based modelling (ABM) for COVID 19 could have behavioural rules corresponding to infection conditions and also include an individual profile for each agent, which defines its main social characteristics and health conditions used during its interactions.","ABMs can be used to predict outcomes for certain scenarios thereby allowing policy makers to make informed decisions such as those relating to social distancing, washing hands, setting lockdowns, easing restrictions, levels 1-5, crowd controls, indoor vs. outdoor activities, foreign travel etc."] },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2021 Higher Level — © State Examinations Commission.",
+    id: "cs-2021-hl-q12", topicId: "cs-2-4", conceptId: "why-each-following-fields-would-not",
+    section: "A", questionRef: "2021 HL Q12",
+    stem: "The following selection of data is taken from a table in a database used to store information about dogs.",
+    questionText: "(a) State why each of the following fields would not be good candidates for a primary key in the table shown above. (b) One owner can own many dogs. Explain how a foreign key could be introduced to improve the design of this database.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "The value of a primary key (PK) must be unique:", marks: 5, accepts: ["dog_name would not be a good PK because a duplicate value exists i.e. fido.","breed would not be a good PK because duplicates could exist.","both fields could potentially contain duplicates. For each correctly stated reason 1 mark","A foreign key(FK) links two tables. It provides the relationship between two tables. In this case if the table shown was split into two separate tables – one for owners and one for dogs – the owner_id could be used as the PK in the owners table and the FK in the dogs table. The schema is shown below. owner_id owner_name address 1 Joe Murphy 1 main street 2 Ada Traore 9 park ave. 3 James Tidy 7 bond st. dog_id dog_name breed dob microchip owner_id 1 rover labrador 22/11/2011 Y 1 2 fido poodle 02/02/2020 Y 1 3 fido jack russell 15/06/2015 N 2 4 champ greyhound 01/01/2010 Y 1 5 spot dalmation 24/08/2007 N 2 6 buddy rottweiler 21/10/2012 Y 3"] },
+    ],
+    figure: {
+          "candId": "computer-science-2021-HL-paper-q12-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q12-code0.png",
+          "srcHash": "45659128caa50f5e69def9019a193f3e",
+          "alt": "The program printed with 2021 HL Question 12, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 24 lines and begins: rover",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -638,6 +822,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Each correct pass", marks: 3 },
     ],
+    figure: {
+          "candId": "computer-science-2022-HL-paper-q14-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q14-code0.png",
+          "srcHash": "004b57517b1441662899092c273c57f4",
+          "alt": "The program printed with 2022 HL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: A simplified version of the selection sort algorithm involves the use of two lists called list1",
+          "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -653,6 +845,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Select the largest (instead of the smallest) element from list 1 and move it to list2", marks: 1 },
     { id: "r-2", kind: "point", verbatim: "Any valid response.", marks: 1 },
     ],
+    figure: {
+          "candId": "computer-science-2022-HL-paper-q14-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q14-code0.png",
+          "srcHash": "004b57517b1441662899092c273c57f4",
+          "alt": "The program printed with 2022 HL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: A simplified version of the selection sort algorithm involves the use of two lists called list1",
+          "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -667,6 +867,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Initialise the minimum to be the first element in the list. Then, working/walk across the list compare each element to the minimum element so far. If the current element is less than the minimum element so far then let it be the new minimum. Continue in this manner until the end of the list is reached.", marks: 3 },
     ],
+    figure: {
+          "candId": "computer-science-2022-HL-paper-q14-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q14-code0.png",
+          "srcHash": "004b57517b1441662899092c273c57f4",
+          "alt": "The program printed with 2022 HL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: A simplified version of the selection sort algorithm involves the use of two lists called list1",
+          "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -681,6 +889,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "The same element would always be copied.", marks: 2 },
     ],
+    figure: {
+          "candId": "computer-science-2022-HL-paper-q14-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q14-code0.png",
+          "srcHash": "004b57517b1441662899092c273c57f4",
+          "alt": "The program printed with 2022 HL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: A simplified version of the selection sort algorithm involves the use of two lists called list1",
+          "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -695,6 +911,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "The selection sort algorithm works by passing across every element in the list to sort (from left to right). The element being passed over is called the current element. For each current element the algorithm looks for the minimum (smallest) element to its right. This minimum element is selected and swapped with the current element. The algorithm then moves on to the next element.", marks: 3 },
     ],
+    figure: {
+          "candId": "computer-science-2022-HL-paper-q14-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q14-code0.png",
+          "srcHash": "004b57517b1441662899092c273c57f4",
+          "alt": "The program printed with 2022 HL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: A simplified version of the selection sort algorithm involves the use of two lists called list1",
+          "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -709,6 +933,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Each correct pass", marks: 4 },
     ],
+    figure: {
+          "candId": "computer-science-2022-HL-paper-q14-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q14-code0.png",
+          "srcHash": "004b57517b1441662899092c273c57f4",
+          "alt": "The program printed with 2022 HL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: A simplified version of the selection sort algorithm involves the use of two lists called list1",
+          "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -724,6 +956,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "The insertion sort works by passing across each element in the list starting from the second element. At the start, the first element is considered sorted and all elements to its right are considered unsorted. On each pass the first element in the unsorted list is inserted into the sorted list at its correct position.", marks: 2 },
     { id: "r-2", kind: "point", verbatim: "Pseudocode / flowchart / code are also acceptable.", marks: 2 },
     ],
+    figure: {
+          "candId": "computer-science-2022-HL-paper-q14-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q14-code0.png",
+          "srcHash": "004b57517b1441662899092c273c57f4",
+          "alt": "The program printed with 2022 HL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: A simplified version of the selection sort algorithm involves the use of two lists called list1",
+          "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -738,6 +978,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "A list that is already sorted.", marks: 4 },
     ],
+    figure: {
+          "candId": "computer-science-2022-HL-paper-q14-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q14-code0.png",
+          "srcHash": "004b57517b1441662899092c273c57f4",
+          "alt": "The program printed with 2022 HL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: A simplified version of the selection sort algorithm involves the use of two lists called list1",
+          "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -752,6 +1000,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Worst case is O(n2) – list in reverse order. For each of the n elements there are n comparisons required to make the insertion at the correct positon. AND", marks: 5 },
     ],
+    figure: {
+          "candId": "computer-science-2022-HL-paper-q14-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q14-code0.png",
+          "srcHash": "004b57517b1441662899092c273c57f4",
+          "alt": "The program printed with 2022 HL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: A simplified version of the selection sort algorithm involves the use of two lists called list1",
+          "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -879,6 +1135,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Correct implementation using solution above or similar but with syntax error.", marks: 5 },
     ],
+    figure: {
+          "candId": "computer-science-2022-HL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q16-code0.png",
+          "srcHash": "5361556dcbcff842da73151d93cf5145",
+          "alt": "The program printed with 2022 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The result of each roll (throw) is stored in a variable called throw_result. Each of the 100",
+          "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -893,6 +1157,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "error or ‘off by one’ index error.", marks: 5 },
     ],
+    figure: {
+          "candId": "computer-science-2022-HL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q16-code0.png",
+          "srcHash": "5361556dcbcff842da73151d93cf5145",
+          "alt": "The program printed with 2022 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The result of each roll (throw) is stored in a variable called throw_result. Each of the 100",
+          "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -907,6 +1179,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Most frequent value determined but not correctly displayed.", marks: 10 },
     ],
+    figure: {
+          "candId": "computer-science-2022-HL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q16-code0.png",
+          "srcHash": "5361556dcbcff842da73151d93cf5145",
+          "alt": "The program printed with 2022 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The result of each roll (throw) is stored in a variable called throw_result. Each of the 100",
+          "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -921,6 +1201,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Separate newline for each row", marks: 10 },
     ],
+    figure: {
+          "candId": "computer-science-2022-HL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q16-code0.png",
+          "srcHash": "5361556dcbcff842da73151d93cf5145",
+          "alt": "The program printed with 2022 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The result of each roll (throw) is stored in a variable called throw_result. Each of the 100",
+          "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1313,6 +1601,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "10 marks Correct response", marks: 10 },
     ],
+    figure: {
+          "candId": "computer-science-2023-HL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q16-code0.png",
+          "srcHash": "92c2ee964ee09bb9a78439f647dddc73",
+          "alt": "The program printed with 2023 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The user’s guess is stored in the variable user_guess. Every time the user enters a",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1327,6 +1623,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "10 marks Correct response", marks: 10 },
     ],
+    figure: {
+          "candId": "computer-science-2023-HL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q16-code0.png",
+          "srcHash": "92c2ee964ee09bb9a78439f647dddc73",
+          "alt": "The program printed with 2023 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The user’s guess is stored in the variable user_guess. Every time the user enters a",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1341,6 +1645,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "19", marks: 5 },
     ],
+    figure: {
+          "candId": "computer-science-2023-HL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q16-code0.png",
+          "srcHash": "92c2ee964ee09bb9a78439f647dddc73",
+          "alt": "The program printed with 2023 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The user’s guess is stored in the variable user_guess. Every time the user enters a",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1355,6 +1667,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "semantic error.", marks: 5 },
     ],
+    figure: {
+          "candId": "computer-science-2023-HL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q16-code0.png",
+          "srcHash": "92c2ee964ee09bb9a78439f647dddc73",
+          "alt": "The program printed with 2023 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The user’s guess is stored in the variable user_guess. Every time the user enters a",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1373,6 +1693,14 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "syntax or semantic error.", marks: 2 },
     { id: "r-5", kind: "point", verbatim: "Any other reasonable attempt.", marks: 2 },
     ],
+    figure: {
+          "candId": "computer-science-2023-HL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q16-code0.png",
+          "srcHash": "92c2ee964ee09bb9a78439f647dddc73",
+          "alt": "The program printed with 2023 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The user’s guess is stored in the variable user_guess. Every time the user enters a",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1391,6 +1719,36 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "syntax or semantic error.", marks: 2 },
     { id: "r-5", kind: "point", verbatim: "Any other reasonable attempt.", marks: 2 },
     ],
+    figure: {
+          "candId": "computer-science-2023-HL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q16-code0.png",
+          "srcHash": "92c2ee964ee09bb9a78439f647dddc73",
+          "alt": "The program printed with 2023 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The user’s guess is stored in the variable user_guess. Every time the user enters a",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2023 Higher Level — © State Examinations Commission.",
+    id: "cs-2023-hl-q16-b", topicId: "cs-2-2", conceptId: "open-program-called-question16-b-py",
+    section: "B", questionRef: "2023 HL Q16(b)",
+    stem: "Before adding any code, you should save your working copy of the file using the format ExaminationNumberQuestion16_B.py. For example, you would save the file as 123456Question16_B.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. Implement a number guessing game in Python. The game requires the user to guess a random number between 1 and 100 and they are awarded points based on how close they get to the number. You should use comments throughout your program to explain your code. You may wish to reuse some of the code you used in part (a) as part of your solution. The game should proceed according to the following sequence: • The user’s score is set to zero. • At the start of every new round the computer generates a random number between 1 and 100. This is the secret number that the user is trying to guess. • The user is then prompted to enter a guess as shown below. Enter your guess: • Calculate the difference between the secret number and the user guess. • The numbers are then displayed in a meaningful message on a single line as shown below. Secret number is 55. You guessed 50. Difference is 5. • The numbers are compared and the score is updated according the following rules: o If the user’s guess and the secret number are the same then the score is increased by 100 and the message \"JACKPOT!!! You score 100 points\" is displayed. o If the user’s guess is within 20 (either side) of the secret number the user’s score is increased by 20 and the message \"You score 20 points\" is displayed. o If the user’s guess is more than 30 away from the secret number the user’s score is decreased by 30 and the message \"You lose 30 points\" is displayed. • At the end of each round the score is displayed and user is prompted with the message “Play again? (Y/N):” • The game ends when the user enters anything other than the single letter ‘Y’. An example output is shown on the next page. This question continues on the next page. Enter your guess: 35 Secret number is 31. You guessed 35. Difference is 4. You score 20 points Your total score is: 20 Play again? (Y/N): Y Enter your guess: 91 Secret number is 6. You guessed 91. Difference is 85. You lose 30 points Your total score is: -10 Play again? (Y/N): Y Enter your guess: 54 Secret number is 54. You guessed 54. Difference is 0. JACKPOT!!! You score 100 points Your total score is: 90 Play again? (Y/N): Y Enter your guess: 50 Secret number is 28. You guessed 50. Difference is 22. Your total score is: 90 Play again? (Y/N): N Use the format CandidateNumberQuestion16_B.py to save your file. For example, you would save the file as 123456Question16_B.py if your candidate number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Acknowledgements Images Image on page 4 generated by https://openai.com/dall-e-2/ This document will not be returned to the State Examinations Commission. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Wednesday 24 May Morning 11:30 – 12:30",
+    questionText: "Open the program called Question16_B.py from your device. This file contains only two comments, on lines 1 and 2.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Possible solution:", marks: 30 },
+    ],
+    figure: {
+          "candId": "computer-science-2023-HL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q16-code0.png",
+          "srcHash": "92c2ee964ee09bb9a78439f647dddc73",
+          "alt": "The program printed with 2023 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The user’s guess is stored in the variable user_guess. Every time the user enters a",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1405,6 +1763,28 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Hexadecimal is very concise. This means that it can be used to express most numbers using fewer digits/characters than would be needed in other number systems.", marks: 6, accepts: ["Every hexadecimal digit/character can be represented using a group of four binary digits. This grouping makes it relatively easy and fast to convert between hexadecimal numbers and binary. It is also one of the reasons why hexadecimal numbers are considered more human-friendly than other number systems.","Because of their conciseness, humans are less likely to make mistakes when writing hexadecimal numbers.","Hexadecimal notation is commonly used as a convenient way to represent memory addresses, machine code/instructions, data, error codes, colours etc.","Cx161+ 9x160 = 12x16+ 9x1 = 192+9 = 201 OR","STEP 1. Convert to binary: C9 = 1100 1001"] },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2023 Higher Level — © State Examinations Commission.",
+    id: "cs-2023-hl-q3", topicId: "cs-2-3", conceptId: "point-p-x-y-plotted-inside",
+    section: "A", questionRef: "2023 HL Q3",
+    stem: "The diagram in Figure 1 below, shows the Cartesian plane divided into four quadrants by an x-y axis, centred on the point (0, 0). Figure 1",
+    questionText: "(a) A point P(x, y) is plotted inside the top right quadrant, as shown. Complete the truth table below to verify that P is inside the top right quadrant. (b) Construct a Boolean expression in the space below that will evaluate to True for all points (x, y) inside the shaded area shown in Figure 2.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "x > 0 y > 0 x > 0 and y > 0", marks: 6, accepts: ["False False False","False True False","True False False","True True True","Each correct response","(x > -d and x < 0) and (y >0 and y < d)","Note: brackets not necessary and order not important in this case.","Half correct"] },
+    ],
+    figure: {
+          "candId": "computer-science-2023-HL-paper-q3-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q3-code0.png",
+          "srcHash": "9d0956a156321f28753bab4810c6869d",
+          "alt": "The program printed with 2023 HL Question 3, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 14 lines and begins: A point P(x, y) is plotted inside the top right quadrant, as shown. Complete the truth",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1433,6 +1813,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Programmable appliances e.g. washing machine, dishwasher, dryers, kettle, fridge", marks: 6, accepts: ["Heating, ventilation and air conditioning system.","Lighting control system.","Alarm/security systems.","Home robots e.g. Roomba, companion robots, window cleaners, lawnmowers","Leak detection, smoke and carbon monoxide detectors.","Home safety for the elderly and disabled.","Pet and baby care.","Voice control devices like Amazon Alexa or Google Home used to control home appliances or systems.","Any acceptable smart home embedded system. Note: Do not accept Micro:bit, Raspberry Pi as valid examples. Each correct example","Embedded systems perform some specific function or tasks. Unlike computer systems they cannot be programmed to do anything beyond the scope which they were designed for.","Low Cost – the price of embedded systems is relatively inexpensive."] },
     ],
+    figure: {
+          "candId": "computer-science-2023-HL-paper-q6-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q6-code0.png",
+          "srcHash": "3287f5a80e016dfd7db5f3a3ced356ae",
+          "alt": "The program printed with 2023 HL Question 6, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 11 lines and begins: x = 10",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1532,6 +1920,36 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Any two from the following:", marks: 6 },
     ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q10-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q10-code0.png",
+          "srcHash": "56600a53a0e14ce013343e6b8aec9f60",
+          "alt": "The program printed with 2024 HL Question 10, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 12 lines and begins: 365 days. The Python function is_leap_year, shown below can be used to determine whether",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
+    id: "cs-2024-hl-q11-a", topicId: "cs-2-2", conceptId: "apply-algorithm-shown-pseudo-code-below",
+    section: "A", questionRef: "2024 HL Q11(a)",
+    stem: "problem_solved ← FALSE LOOP until problem_solved IS TRUE square ← find the leftmost square triangle ← find the rightmost triangle IF position of square IS GREATER THAN position of triangle problem solved ← TRUE ELSE swap(square, triangle) Figure 4",
+    questionText: "Apply the algorithm shown in pseudo code below to the row of shapes shown in Figure 4 and illustrate your answer in the boxes provided.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "In Step 1 the algorithm has swapped the square from position 0 with the triangle in position 7.", marks: 4 },
+    ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q11-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q11-code0.png",
+          "srcHash": "95c8b707f15fd232e06852a287b0aafa",
+          "alt": "The program printed with 2024 HL Question 11, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 8 lines and begins: problem_solved ← FALSE",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1545,6 +1963,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "A general solution provides a broad approach that can be applied to different situations", marks: 2 },
     ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q11-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q11-code0.png",
+          "srcHash": "95c8b707f15fd232e06852a287b0aafa",
+          "alt": "The program printed with 2024 HL Question 11, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 8 lines and begins: problem_solved ← FALSE",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1790,6 +2216,20 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
+    id: "cs-2024-hl-q14-c-ii", topicId: "cs-2-2", conceptId: "bubble-sort-algorithm-has-o-best",
+    section: "B", questionRef: "2024 HL Q14(c)(ii)",
+    stem: "Initial state of values: 50 70 30 60 20",
+    questionText: "The bubble sort algorithm has O(𝑛2) best and worst case time complexity. Explain what this means in terms of the number of compare operations performed.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "In a list of size N the bubble sort algorithm performs N passes. On each pass it will perform N-1 compare operations. This gives a total of 𝑵𝟐−𝑵 operations. For large N this is approximately the same as 𝑵𝟐. Hence we write O(𝑵𝟐).", marks: 5 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
     id: "cs-2024-hl-q14-c-iii", topicId: "cs-2-2", conceptId: "suggest-one-possible-improvement-could-be",
     section: "B", questionRef: "2024 HL Q14(c)(iii)",
     stem: "Initial state of values: 50 70 30 60 20",
@@ -1868,6 +2308,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "semantic error.", marks: 5 },
     ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16-code0.png",
+          "srcHash": "06b18f78982f60a83e2dc02a4a4d7d5f",
+          "alt": "The program printed with 2024 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 12 lines and begins: # Question 16(a)",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1882,6 +2330,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "semantic error.", marks: 5 },
     ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16-code0.png",
+          "srcHash": "06b18f78982f60a83e2dc02a4a4d7d5f",
+          "alt": "The program printed with 2024 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 12 lines and begins: # Question 16(a)",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1896,6 +2352,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "semantic error.", marks: 5 },
     ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16-code0.png",
+          "srcHash": "06b18f78982f60a83e2dc02a4a4d7d5f",
+          "alt": "The program printed with 2024 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 12 lines and begins: # Question 16(a)",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1910,6 +2374,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Any other reasonable attempt.", marks: 5 },
     ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16-code0.png",
+          "srcHash": "06b18f78982f60a83e2dc02a4a4d7d5f",
+          "alt": "The program printed with 2024 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 12 lines and begins: # Question 16(a)",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1924,6 +2396,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Any other reasonable attempt.", marks: 5 },
     ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16-code0.png",
+          "srcHash": "06b18f78982f60a83e2dc02a4a4d7d5f",
+          "alt": "The program printed with 2024 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 12 lines and begins: # Question 16(a)",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1942,6 +2422,14 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "syntax or semantic error.", marks: 2 },
     { id: "r-5", kind: "point", verbatim: "Any other reasonable attempt.", marks: 2 },
     ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16-code0.png",
+          "srcHash": "06b18f78982f60a83e2dc02a4a4d7d5f",
+          "alt": "The program printed with 2024 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 12 lines and begins: # Question 16(a)",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1956,6 +2444,36 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "15 marks Correct response", marks: 15 },
     ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16-code0.png",
+          "srcHash": "06b18f78982f60a83e2dc02a4a4d7d5f",
+          "alt": "The program printed with 2024 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 12 lines and begins: # Question 16(a)",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
+    id: "cs-2024-hl-q16-b", topicId: "cs-2-2", conceptId: "open-program-called-question16-b-py",
+    section: "B", questionRef: "2024 HL Q16(b)",
+    stem: "Enter your Examination Number in the space provided on line 2 in your Python file. Implement a simulation of a fruit machine in Python. You should use comments throughout your program to explain your code. You may wish to reuse some of the code you used in part (a) as part of your solution. The program should proceed according to the following sequence: • Initialise a list called fruits with three elements – apple, cherry and orange. • Display the initial list of fruits as shown. The initial list of fruits is: ['apple', 'cherry', 'orange'] • Prompt the user to enter an additional fruit, for example kiwi, pear or lemon and append the value entered to fruits. Enter an additional fruit: kiwi • Display the list of four fruits, for example: The list of four fruits is: ['apple', 'cherry', 'orange', 'kiwi'] • Prompt the user to nominate their winning fruit which must be in the above list. If the user enters a fruit that is not in fruits, the program should display an error message and prompt the user to nominate their winning fruit again. This should continue as long as the winning fruit entered is not in fruits. Nominate your winning fruit: cherry • Display the winning fruit, as show below. Nominate your winning fruit: cherry The winning fruit you selected is cherry • Write code to select three random fruits from fruits. Compare the selected fruits to the winning fruit entered earlier and keep going until all three fruits match the winning fruit. The program should keep a count of the number of tries taken and display this with a “Winner” message at the end, as shown below. Winner after 38 tries This question continues on the next page. Two example outputs are shown below. Sample output 1: The initial list of fruits is: ['apple', 'cherry', 'orange'] Enter an additional fruit: kiwi The list of 4 fruits is: ['apple', 'cherry', 'orange', 'kiwi'] Nominate your winning fruit: cherry The winning fruit you selected is cherry Winner after 38 tries Sample output 2: The initial list of fruits is: ['apple', 'cherry', 'orange'] Enter an additional fruit: kiwi The list of 4 random fruits is: ['apple', 'cherry', 'orange', 'kiwi'] Nominate your winning fruit: pear Error: winning fruit must be in the list Nominate your winning fruit: orange The winning fruit you selected is orange Winner after 27 tries Use the format CandidateNumberQuestion16_B.py to save your file. For example, you would save the file as 123456Question16_B.py if your candidate number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Acknowledgements Images Image on page 4: https://www.flaticon.com/free-icons/fruit-machine Image on page 7: https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/qEue9C6/videoblocks-slot-machine- wheels-three-3-cherries-jackpot-winner-3-d-animation_bkbn1fknu_thumbnail-1080_09.png This document will not be returned to the State Examinations Commission. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Wednesday 22 May Morning 11:30 – 12:30",
+    questionText: "Open the program called Question16_B.py from your device. This file contains only two comments, on lines 1 and 2. Before adding any code, you should save your working copy of the file using the format ExaminationNumberQuestion16_B.py. For example, you would save the file as 123456Question16_B.py if your Examination Number was 123456.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Possible solution:", marks: 30 },
+    ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16-code0.png",
+          "srcHash": "06b18f78982f60a83e2dc02a4a4d7d5f",
+          "alt": "The program printed with 2024 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 12 lines and begins: # Question 16(a)",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2070,6 +2588,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Examples Limitations", marks: 6 },
     ],
+    figure: {
+          "candId": "computer-science-2025-HL-paper-q10-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-paper-q10-code0.png",
+          "srcHash": "09a0aa7aaeaac880ff045eb7282ebc8a",
+          "alt": "The program printed with 2025 HL Question 10, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 18 lines and begins: For i in range(1, 21):",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2190,6 +2716,104 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "To introduce (define) the function gcd.", marks: 2 },
     ],
+    figure: {
+          "candId": "computer-science-2025-HL-paper-q14-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-paper-q14-code0.png",
+          "srcHash": "9973166ac8f90f02ce90781250d53bcd",
+          "alt": "The program printed with 2025 HL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 17 lines and begins: def gcd(a, b):",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Higher Level — © State Examinations Commission.",
+    id: "cs-2025-hl-q14-a-ii", topicId: "cs-2-2", conceptId: "starting-line-2-code-complete-trace",
+    section: "B", questionRef: "2025 HL Q14(a)(ii)",
+    stem: "1 def gcd(a, b): 2 while a != b: 3 if a > b: 4 a = a - b 5 elif b > a: 6 b = b - a 7 8 return a 9 10 print(\"The GCD is\", gcd(45,18)) a b 45 18 This question continues on the next page.",
+    questionText: "Starting from line 2 of the code, complete the trace table shown below. The variables a and b have been initialised to 45 and 18 respectively.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "a b", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "45 18", marks: 2 },
+    ],
+    figure: {
+          "candId": "computer-science-2025-HL-paper-q14-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-paper-q14-code0.png",
+          "srcHash": "9973166ac8f90f02ce90781250d53bcd",
+          "alt": "The program printed with 2025 HL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 17 lines and begins: def gcd(a, b):",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Higher Level — © State Examinations Commission.",
+    id: "cs-2025-hl-q14-b-i", topicId: "cs-2-2", conceptId: "every-recursive-function-including-one-shown",
+    section: "B", questionRef: "2025 HL Q14(b)(i)",
+    stem: "1 def recursive_gcd(a, b): 2 if b == 0: 3 return a 4 return recursive_gcd(b, a%b) 5 6 print(\"The GCD is\", recursive_gcd(45, 18))",
+    questionText: "Every recursive function, including the one shown here, has a base case and a recursive case. Outline the meaning of the terms ‘base case’ and ‘recursive case’.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Base Case", marks: 4 },
+    ],
+    figure: {
+          "candId": "computer-science-2025-HL-paper-q14-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-paper-q14-code0.png",
+          "srcHash": "9973166ac8f90f02ce90781250d53bcd",
+          "alt": "The program printed with 2025 HL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 17 lines and begins: def gcd(a, b):",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Higher Level — © State Examinations Commission.",
+    id: "cs-2025-hl-q14-b-iii", topicId: "cs-2-3", conceptId: "given-choice-using-gcd-shown-part",
+    section: "B", questionRef: "2025 HL Q14(b)(iii)",
+    stem: "1 def recursive_gcd(a, b): 2 if b == 0: 3 return a 4 return recursive_gcd(b, a%b) 5 6 print(\"The GCD is\", recursive_gcd(45, 18))",
+    questionText: "Given a choice of using gcd shown in part (a), or recursive_gcd shown here in part (b), which version would you recommend to find the greatest common divisor of very large numbers on machines with limited RAM? Justify your answer, in terms of memory utilisation.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "gcd", marks: 5 },
+    ],
+    figure: {
+          "candId": "computer-science-2025-HL-paper-q14-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-paper-q14-code0.png",
+          "srcHash": "9973166ac8f90f02ce90781250d53bcd",
+          "alt": "The program printed with 2025 HL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 17 lines and begins: def gcd(a, b):",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Higher Level — © State Examinations Commission.",
+    id: "cs-2025-hl-q14-c-i", topicId: "cs-2-2", conceptId: "given-unsorted-list-shown-below-pivot",
+    section: "B", questionRef: "2025 HL Q14(c)(i)",
+    stem: "29 10 14 37 13 This question continues on the next page. Figure 4",
+    questionText: "Given the unsorted list shown below and a pivot of 13, state the contents of the two sub-lists created after one partitioning step of quicksort.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Left sub-list:", marks: 1 },
+    { id: "r-2", kind: "point", verbatim: "Right sub-list: [29, 14, 37] For each correct sub-list", marks: 1 },
+    ],
+    figure: {
+          "candId": "computer-science-2025-HL-paper-q14-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-paper-q14-code0.png",
+          "srcHash": "9973166ac8f90f02ce90781250d53bcd",
+          "alt": "The program printed with 2025 HL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 17 lines and begins: def gcd(a, b):",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2204,6 +2828,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "After the first pass, quicksort continues by applying the same process to each sub-list created during partitioning. If a sub-list has only one element, it is already sorted. For larger sub-lists, a new pivot is chosen, and the list is divided into elements less than the pivot and elements greater than or equal to it. This divide-and-conquer approach is repeated recursively on each sub-list. Once all sub-lists are reduced to single elements, they are combined in order, resulting in a fully sorted list.", marks: 5 },
     ],
+    figure: {
+          "candId": "computer-science-2025-HL-paper-q14-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-paper-q14-code0.png",
+          "srcHash": "9973166ac8f90f02ce90781250d53bcd",
+          "alt": "The program printed with 2025 HL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 17 lines and begins: def gcd(a, b):",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2218,6 +2850,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Pivot selection strategies", marks: 2 },
     ],
+    figure: {
+          "candId": "computer-science-2025-HL-paper-q14-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-paper-q14-code0.png",
+          "srcHash": "9973166ac8f90f02ce90781250d53bcd",
+          "alt": "The program printed with 2025 HL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 17 lines and begins: def gcd(a, b):",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2232,6 +2872,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Best case:", marks: 4 },
     ],
+    figure: {
+          "candId": "computer-science-2025-HL-paper-q14-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-paper-q14-code0.png",
+          "srcHash": "9973166ac8f90f02ce90781250d53bcd",
+          "alt": "The program printed with 2025 HL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 17 lines and begins: def gcd(a, b):",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2347,6 +2995,36 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Any other reasonable attempt.", marks: 5 },
     ],
+    figure: {
+          "candId": "computer-science-2025-HL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-paper-q16-code0.png",
+          "srcHash": "398ea4e5b5ce916a39a75b7d54fde389",
+          "alt": "The program printed with 2025 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 34 lines and begins: # Question 16 (a)",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Higher Level — © State Examinations Commission.",
+    id: "cs-2025-hl-q16-a-iii", topicId: "cs-2-2", conceptId: "complete-function-get-grade-so-sets",
+    section: "B", questionRef: "2025 HL Q16(a)(iii)",
+    stem: "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. 1 # Question 16 The for loop adds up the values in results and stores the answer in the variable called total. Line 24 of the program calculates the mean (average) of all the results by dividing total by 9. The mean is saved in the variable called arithmetic_mean. When the program is run it displays the following message: The mean percentage mark is 61.77777777777778 Make the following changes to the program: When the program is run the output should now look as follows: The mean percentage mark is 61.78 When the program is run the output should remain the same: The mean percentage mark is 61.78 Result Grade >= 80 Distinction >= 65 Upper Merit >= 50 Lower Merit >= 40 Pass < 40 Unsuccessful When the program is run the output should remain the same: The mean percentage mark is 61.78 This question continues on the next page. When the program is run the output should now look as follows: The mean percentage mark is 61.78 The grade for the average result is Lower Merit Input: results = [39,32,62,88,51,62,64,81,77] Output: [51,62,64,81] Explanation: The sub-list [51,62,64,81] is the longest run of result increases. The value 77 breaks the sequence because it is less than its previous value, 81. When the program is run the output should now look as follows: The mean percentage mark is 61.78 The grade for the average result is Lower Merit The lowest score is 32 The highest score is 88 The number of scores below 40 is 2 The number of scores between 50 and 79 inclusive is 5 The longest run of result increases is [51, 62, 64, 81] Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. This question continues on the next page.",
+    questionText: "Complete the function get_grade so that it sets the variable grade to the correct grade using the parameter result and the information provided in the table below.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "semantic error.", marks: 5 },
+    ],
+    figure: {
+          "candId": "computer-science-2025-HL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-paper-q16-code0.png",
+          "srcHash": "398ea4e5b5ce916a39a75b7d54fde389",
+          "alt": "The program printed with 2025 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 34 lines and begins: # Question 16 (a)",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2365,6 +3043,14 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "Computer Science – Higher Level", marks: 1 },
     { id: "r-5", kind: "point", verbatim: "Marking Scheme", marks: 1 },
     ],
+    figure: {
+          "candId": "computer-science-2025-HL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-paper-q16-code0.png",
+          "srcHash": "398ea4e5b5ce916a39a75b7d54fde389",
+          "alt": "The program printed with 2025 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 34 lines and begins: # Question 16 (a)",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2379,5 +3065,35 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "15 marks Correct response", marks: 15 },
     ],
+    figure: {
+          "candId": "computer-science-2025-HL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-paper-q16-code0.png",
+          "srcHash": "398ea4e5b5ce916a39a75b7d54fde389",
+          "alt": "The program printed with 2025 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 34 lines and begins: # Question 16 (a)",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Higher Level — © State Examinations Commission.",
+    id: "cs-2025-hl-q16-b", topicId: "cs-2-2", conceptId: "open-program-called-question16-b-py",
+    section: "B", questionRef: "2025 HL Q16(b)",
+    stem: "Before adding any code, you should save your working copy of the file using the format ExaminationNumberQuestion16_B.py. For example, you would save the file as 123456Question16_B.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The median of a list of values is the middle value in that list after it has been sorted in either ascending or descending order. If the number of values in the list is odd the median is the middle value. However, if the number of values in the list is even the median is found by calculating the mean of the two middle values i.e. by adding both middle values and then dividing the result by two. Write a Python program to find the median of a list of zero or more values. You should use comments throughout your program to explain your code. You may wish to reuse some of the code you used in part (a) as part of your solution. Your program should meet the following requirements: • Initialise a list of integers. • Display the list. • Sort the list. • Display the sorted list. • Determine the median by examining the list length. o Odd: The number of elements divided by 2 will have a remainder of 1. In this case the median is the element at the middle position of the sorted list. o Even: The number of elements divided by 2 will have no remainder. In this case the median is the mean of the two middle elements in the sorted list. • Display the median. • Display an error message if the list is empty. 1. You may not make use of the statistics.median(), numpy.median() or any other Python library median function in your solution. You must write the code to calculate the median yourself. 2. You should test that your program works with an even and odd number of values. 3. You should test that your program works with an empty list. Example outputs are shown on the next page. The initial list of values is: [27, 13, 32, 50, 16] The sorted list of values is: [13, 16, 27, 32, 50] The median is 27 Sample output 2: The initial list of values is: [27, 13, 32, 50, 16, 29] The sorted list of values is: [13, 16, 27, 29, 32, 50] The median is 28.0 Sample output 3: The initial list of values is: [] The list is empty. Cannot compute the median. Use the format CandidateNumberQuestion16_B.py to save your file. For example, you would save the file as 123456Question16_B.py if your candidate number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. This document will not be returned to the State Examinations Commission. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Wednesday 21 May Morning 11:30 – 12:30",
+    questionText: "Open the program called Question16_B.py from your device. This file contains only two comments, on lines 1 and 2.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Possible solution:", marks: 30 },
+    ],
+    figure: {
+          "candId": "computer-science-2025-HL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-paper-q16-code0.png",
+          "srcHash": "398ea4e5b5ce916a39a75b7d54fde389",
+          "alt": "The program printed with 2025 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 34 lines and begins: # Question 16 (a)",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
 ];

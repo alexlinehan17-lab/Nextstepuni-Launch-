@@ -33,6 +33,7 @@ import sys
 
 DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, DIR)
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(DIR)))
 
 import paper as PP                                          # noqa: E402
 import reconcile as R                                       # noqa: E402
@@ -99,6 +100,20 @@ def main():
     ap.add_argument('--report', action='store_true')
     args = ap.parse_args()
 
+    # {(year, LEVEL, q): figure key} for the code this question prints, from
+    # the figures already bound. A card whose ask points at a listing can only
+    # ship if it CARRIES that listing, so the crop decides whether the card
+    # exists at all rather than being decoration on one that already did.
+    figs = {}
+    manifest = os.path.join(ROOT, 'components/MarkBank/figures.json')
+    if os.path.exists(manifest):
+        for key, meta in json.load(open(manifest)).items():
+            if not key.startswith('computer-science-'):
+                continue
+            m = re.match(r'computer-science-(\d{4})-(HL|OL)-paper-q(\d+)-code(\d+)$', key)
+            if m and int(m.group(4)) == 0:
+                figs[(int(m.group(1)), m.group(2), int(m.group(3)))] = key
+
     idx = R.leaf_index(census_subject('computer-science'))
     cards, refused = [], collections.Counter()
     examples = collections.defaultdict(list)
@@ -159,7 +174,8 @@ def main():
             except Exception:                                # noqa: BLE001
                 pass
             joined = ' '.join(f'{stem} {ask}'.split())
-            if points_at_printed_matter(joined):
+            figure = figs.get((year, level.upper(), q))
+            if points_at_printed_matter(joined) and not figure:
                 note('points at printed matter the card cannot carry')
                 continue
             if len(rows) > MAX_ROWS:
@@ -177,7 +193,8 @@ def main():
             try:
                 A.card(q, letter, roman, topic=topic,
                        concept=concept_for(ask), source='table',
-                       use=use, marks=marks, tariff='fixed', card_id=cid)
+                       use=use, marks=marks, tariff='fixed', card_id=cid,
+                       figure=figure)
             except Refused as exc:
                 note(str(exc).split(':', 1)[-1].strip()[:60])
         # ── whole-question pass ───────────────────────────────────────────
@@ -221,7 +238,8 @@ def main():
             except Exception:                                # noqa: BLE001
                 pass
             joined = ' '.join(f'{stem} {ask}'.split())
-            if points_at_printed_matter(joined):
+            figure = figs.get((year, level.upper(), q))
+            if points_at_printed_matter(joined) and not figure:
                 for _ in held:
                     refused['points at printed matter the card cannot carry'] += 1
                 continue
@@ -229,7 +247,7 @@ def main():
                 A.card(q, None, None, topic=topic, concept=concept_for(ask),
                        source='table', use=[list(range(len(rows[:MAX_ROWS])))],
                        marks=[tariff], tariff='fixed',
-                       card_id=f'cs-{year}-{level}-q{q}',
+                       card_id=f'cs-{year}-{level}-q{q}', figure=figure,
                        checked='The question states nothing of its own: the '
                                'paper prints the ask only under its parts, and '
                                'the card carries them joined in the paper\'s '

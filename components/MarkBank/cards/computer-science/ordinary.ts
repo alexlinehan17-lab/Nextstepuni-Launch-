@@ -430,6 +430,28 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2022 Ordinary Level — © State Examinations Commission.",
+    id: "cs-2022-ol-q3", topicId: "cs-2-2", conceptId: "why-pauses-included-algorithm-b-describe",
+    section: "A", questionRef: "2022 OL Q3",
+    stem: "The pseudocode, shown in Figure 2 below, has been designed to run on a Microbit or similar embedded system, shown in Figure 3. The embedded system has a green LED (light emitting diode) connected to pin 0, a yellow LED connected to pin 1 and a red LED connected to pin 2. Answer the questions that follow. Start Set all pins to off Set pin 0 to on Pause for 2 seconds Set pin 0 to off Set pin 1 to on Pause for 2 seconds Set pin 1 to off Set pin 2 to on Figure 2",
+    questionText: "(a) Why are pauses included in this algorithm? (b) Describe the appearance of the LEDs at the end of the algorithm.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "To see the changes of the LED turning on or off", marks: 5, accepts: ["The code will run too quickly to see LEDS without the pauses","To see if the code works correctly Any one of the above or similar:"] },
+    ],
+    figure: {
+          "candId": "computer-science-2022-OL-paper-q3-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-OL-paper-q3-code0.png",
+          "srcHash": "facdfe27693e2df2a22493d26ee54943",
+          "alt": "The program printed with 2022 OL Question 3, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 9 lines and begins: Start",
+          "attribution": "SEC Leaving Certificate Computer Science 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC219GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2022 Ordinary Level — © State Examinations Commission.",
     id: "cs-2022-ol-q5", topicId: "cs-2-2", conceptId: "index-value-will-be-returned-if",
     section: "A", questionRef: "2022 OL Q5",
     stem: "A linear search algorithm, written in Python, is used to search the following list of integers. list = [11, 52, 37, 94, 12, 73, 62, 47]",
@@ -472,6 +494,28 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2023 Ordinary Level — © State Examinations Commission.",
+    id: "cs-2023-ol-q13-a-i", topicId: "cs-2-2", conceptId: "select-correct-computer-science-term-following",
+    section: "B", questionRef: "2023 OL Q13(a)(i)",
+    stem: "Variable Array Function Operator Conditional Boolean Column A Definition Column B Term A data structure that can store a collection of elements of the same data type A character that represents a mathematical or logical action A command for handling a decision A memory location that can store a value 1 i = 1 2 j = 10 3 while i < j: 4 print(i) 5 i = i + 1 6 j = j - 1 i j while i < j print(i) 1 1 10 True 1 2 3 4 5 6 This question continues on the next page.",
+    questionText: "Select the correct computer science term from the following list and place it in Column B to match the definitition in Column A in the table below.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Column A Column B", marks: 4 },
+    ],
+    figure: {
+          "candId": "computer-science-2023-OL-paper-q13-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q13-code0.png",
+          "srcHash": "6cee09591b9415489d2ac57882a154e1",
+          "alt": "The program printed with 2023 OL Question 13, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 20 lines and begins: i = 1",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC219GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2023 Ordinary Level — © State Examinations Commission.",
     id: "cs-2023-ol-q13-a-ii", topicId: "cs-2-2", conceptId: "while-loops-used-computer-science-iterate",
     section: "B", questionRef: "2023 OL Q13(a)(ii)",
     stem: "Variable Array Function Operator Conditional Boolean Column A Definition Column B Term A data structure that can store a collection of elements of the same data type A character that represents a mathematical or logical action A command for handling a decision A memory location that can store a value 1 i = 1 2 j = 10 3 while i < j: 4 print(i) 5 i = i + 1 6 j = j - 1 i j while i < j print(i) 1 1 10 True 1 2 3 4 5 6 This question continues on the next page.",
@@ -480,6 +524,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "i j while i < j print(i)", marks: 10 },
     ],
+    figure: {
+          "candId": "computer-science-2023-OL-paper-q13-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q13-code0.png",
+          "srcHash": "6cee09591b9415489d2ac57882a154e1",
+          "alt": "The program printed with 2023 OL Question 13, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 20 lines and begins: i = 1",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -495,6 +547,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Algorithmic thinking – Algorithmic thinking is when you consider all of the information within the problem, plan out the plan out the steps towards coming up with a solution and try to find the most effective way to the end goal.", marks: 3 },
     { id: "r-2", kind: "point", verbatim: "Decomposition, abstraction, pattern recognition, generalisation, logical thinking and evaluation are all considered computational thinking skills. Valid computational thinking skill named", marks: 3 },
     ],
+    figure: {
+          "candId": "computer-science-2023-OL-paper-q13-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q13-code0.png",
+          "srcHash": "6cee09591b9415489d2ac57882a154e1",
+          "alt": "The program printed with 2023 OL Question 13, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 20 lines and begins: i = 1",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -609,6 +669,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "15 marks Correct response", marks: 15 },
     ],
+    figure: {
+          "candId": "computer-science-2023-OL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q16-code0.png",
+          "srcHash": "026689525df1271cd10d11fe79aa1f9b",
+          "alt": "The program printed with 2023 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 16 lines and begins: # Question 16(a)",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -623,6 +691,58 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "semantic error.", marks: 5 },
     ],
+    figure: {
+          "candId": "computer-science-2023-OL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q16-code0.png",
+          "srcHash": "026689525df1271cd10d11fe79aa1f9b",
+          "alt": "The program printed with 2023 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 16 lines and begins: # Question 16(a)",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC219GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2023 Ordinary Level — © State Examinations Commission.",
+    id: "cs-2023-ol-q16-a-vi", topicId: "cs-2-2", conceptId: "update-program-so-displays-results-format",
+    section: "B", questionRef: "2023 OL Q16(a)(vi)",
+    stem: "Before making any changes, you should save your working copy of the file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program below produces a times table for a specific number. A times table is a multiplication table in a list that shows the multiples of a specific number. The code below works by using a for loop to multiply the number seven by zero, then by one, then by two until the loop repeats ten times in total. 1 # Question 16(a) 2 # Examination Number: 3 4 print(\"Multiplication program\") 5 6 number = 7 7 8 print(\"Multiplications of \", number) 9 10 for i in range(10): 11 print(number*i) Make the following changes to the program: Leaving Certificate – 2023 4 Computer Science, Section C – Ordinary level This question continues on the next page. Leaving Certificate – 2023 5 Computer Science, Section C – Ordinary level Leaving Certificate – 2023 6 Computer Science, Section C – Ordinary level",
+    questionText: "Update the program so that it displays the results in the format “3 x 8 = 24”, as shown below. When the program is run and the user enters the number 8, the output may now look as follows: ******************** Times Table program ******************** Enter number: 8 Multiplications of 8 0 x 8 = 0 1 x 8 = 8 2 x 8 = 16 3 x 8 = 24 4 x 8 = 32 5 x 8 = 40 6 x 8 = 48 7 x 8 = 56 8 x 8 = 64 9 x 8 = 72 10 x 8 = 80 11 x 8 = 88 12 x 8 = 96 Save your file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. This question continues on the next page.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "syntax error.", marks: 5 },
+    ],
+    figure: {
+          "candId": "computer-science-2023-OL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q16-code0.png",
+          "srcHash": "026689525df1271cd10d11fe79aa1f9b",
+          "alt": "The program printed with 2023 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 16 lines and begins: # Question 16(a)",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC219GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2023 Ordinary Level — © State Examinations Commission.",
+    id: "cs-2023-ol-q16-b", topicId: "cs-2-2", conceptId: "open-program-called-question16-b-py",
+    section: "B", questionRef: "2023 OL Q16(b)",
+    stem: "Before making any changes, you should use the format CandidateNumberQuestion16_B.py to save your file. For example, you would save the file as 123456Question16_B.py if your candidate number was 123456. Enter your Examination Number in the space provided on Line 2. Implement a program for a temperature alert system for a baby’s room. You should use comments throughout your program to explain your code. You may wish to reuse some of the code you used in part (a) as part of your solution. Your program should do the following: • Display a message which outputs “Welcome to Temperature Alert System”. • Ask the user to enter a temperature value in degrees Celsius. An example of how this might look is shown below. Enter temperature value in degrees Celsius: 22 • Use a conditional statement to output different pieces of information based on the temperature value that has been input by the user. See the table below for conditions and the outputs that should be displayed. Condition Output Temperature is less than 20 Too cold. Turn up heating. Temperature between 20 – 24 Temperature is just right. Temperature is more than 24 Too warm. Turn down heating. An example output is shown below. Welcome to Temperature Alert System Enter temperature value in degrees Celsius: 22 Temperature is just right. Save your file using the format CandidateNumberQuestion16_B.py. For example, you would save the file as 123456Question16_B.py if your candidate number was 123456. Leaving Certificate – 2023 7 Computer Science, Section C – Ordinary level Space for rough work. This page will not be reviewed by an examiner. Leaving Certificate – 2023 8 Computer Science, Section C – Ordinary level Space for rough work. This page will not be reviewed by an examiner. Leaving Certificate – 2023 9 Computer Science, Section C – Ordinary level Space for rough work. This page will not be reviewed by an examiner. Leaving Certificate – 2023 10 Computer Science, Section C – Ordinary level Space for rough work. This page will not be reviewed by an examiner. Leaving Certificate – 2023 11 Computer Science, Section C – Ordinary level Acknowledgements Images Image on page 7: https://www.philips.co.uk/c-p/SCH480_00/avent-digital-thermometer Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Ordinary Level Computer Science – Section C Leaving Certificate – 2023 12 Computer Science, Section C – Ordinary level Wednesday 24 May Morning 11:30 – 12:30",
+    questionText: "Open the program called Question16_B.py from your device. This file only contains two comments on lines 1 and 2.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Possible solution:", marks: 30 },
+    ],
+    figure: {
+          "candId": "computer-science-2023-OL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q16-code0.png",
+          "srcHash": "026689525df1271cd10d11fe79aa1f9b",
+          "alt": "The program printed with 2023 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 16 lines and begins: # Question 16(a)",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -665,6 +785,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Not Graded", marks: 6, accepts: ["Distinction","Converts (casts) the text entered to an integer","Ensures that the datatype of the variable percentage will be an integer"] },
     ],
+    figure: {
+          "candId": "computer-science-2023-OL-paper-q11-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q11-code0.png",
+          "srcHash": "cb09e7464ee4970aa07b9b4a633fa52b",
+          "alt": "The program printed with 2023 OL Question 11, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 17 lines and begins: 1 percentage = int(input(\"How many marks out of 100? \"))",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -678,6 +806,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Column A Column B", marks: 38, accepts: ["Definition Term","A data structure that can store a collection of elements of the","Array","same data type","A character that represents a mathematical or logical action Operator","A command for handling a decision Conditional","A memory location that can store a value Variable","Each correct item","i j while i < j print(i)","1 1 10 True 1","2 2 9 True 2"] },
     ],
+    figure: {
+          "candId": "computer-science-2023-OL-paper-q13-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q13-code0.png",
+          "srcHash": "6cee09591b9415489d2ac57882a154e1",
+          "alt": "The program printed with 2023 OL Question 13, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 20 lines and begins: i = 1",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -721,6 +857,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Name Distance (Km) Driver’s License (Y/N) Mode of Transport", marks: 6 },
     ],
+    figure: {
+          "candId": "computer-science-2024-OL-paper-q10-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q10-code0.png",
+          "srcHash": "eeffc9bc52a2538da2b952948b78668a",
+          "alt": "The program printed with 2024 OL Question 10, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 31 lines and begins: Mr. Murray",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -737,6 +881,14 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "A declaration of a value that can be changed", marks: 1 },
     { id: "r-3", kind: "point", verbatim: "A term used as a placeholder for a value that can change", marks: 1 },
     ],
+    figure: {
+          "candId": "computer-science-2024-OL-paper-q13-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q13-code0.png",
+          "srcHash": "237bc7d568a427a24aad57a98d7ae2ce",
+          "alt": "The program printed with 2024 OL Question 13, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 20 lines and begins: set A to 0",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -751,6 +903,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "A – Int / Integer", marks: 6 },
     ],
+    figure: {
+          "candId": "computer-science-2024-OL-paper-q13-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q13-code0.png",
+          "srcHash": "237bc7d568a427a24aad57a98d7ae2ce",
+          "alt": "The program printed with 2024 OL Question 13, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 20 lines and begins: set A to 0",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -766,6 +926,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "An initialised variable is when a variable is given starting value", marks: 1 },
     { id: "r-2", kind: "point", verbatim: "The initial value given to a variable the first time it is declared", marks: 1 },
     ],
+    figure: {
+          "candId": "computer-science-2024-OL-paper-q13-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q13-code0.png",
+          "srcHash": "237bc7d568a427a24aad57a98d7ae2ce",
+          "alt": "The program printed with 2024 OL Question 13, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 20 lines and begins: set A to 0",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -780,6 +948,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Line 5", marks: 4 },
     ],
+    figure: {
+          "candId": "computer-science-2024-OL-paper-q13-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q13-code0.png",
+          "srcHash": "237bc7d568a427a24aad57a98d7ae2ce",
+          "alt": "The program printed with 2024 OL Question 13, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 20 lines and begins: set A to 0",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -794,6 +970,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "On line 4 the programme jumps to line 7. On line 7 the programme adds 1 to 0, then", marks: 5 },
     ],
+    figure: {
+          "candId": "computer-science-2024-OL-paper-q13-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q13-code0.png",
+          "srcHash": "237bc7d568a427a24aad57a98d7ae2ce",
+          "alt": "The program printed with 2024 OL Question 13, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 20 lines and begins: set A to 0",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -809,6 +993,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Syntax errors are mistakes in the code structure causing the program to fail during", marks: 1 },
     { id: "r-2", kind: "point", verbatim: "compilation. Logical errors, on the other hand, are flaws in the program's logic that lead to", marks: 1 },
     ],
+    figure: {
+          "candId": "computer-science-2024-OL-paper-q13-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q13-code0.png",
+          "srcHash": "237bc7d568a427a24aad57a98d7ae2ce",
+          "alt": "The program printed with 2024 OL Question 13, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 20 lines and begins: set A to 0",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -824,6 +1016,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "The list in not in any sort of order, this means that a binary search will not work.", marks: 2 },
     { id: "r-2", kind: "point", verbatim: "The list is short enough to justify the use of a linear search (no need to sort)", marks: 2 },
     ],
+    figure: {
+          "candId": "computer-science-2024-OL-paper-q13-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q13-code0.png",
+          "srcHash": "237bc7d568a427a24aad57a98d7ae2ce",
+          "alt": "The program printed with 2024 OL Question 13, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 20 lines and begins: set A to 0",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -838,6 +1038,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "The code will check the first item in the list (12) and see if it matches the target item (23), these do not match so it will then move on to the next item in the list.", marks: 6 },
     ],
+    figure: {
+          "candId": "computer-science-2024-OL-paper-q13-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q13-code0.png",
+          "srcHash": "237bc7d568a427a24aad57a98d7ae2ce",
+          "alt": "The program printed with 2024 OL Question 13, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 20 lines and begins: set A to 0",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1015,6 +1223,20 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
+    id: "cs-2024-ol-q15-d-ii", topicId: "cs-2-2", conceptId: "following-best-set-data-values-test",
+    section: "B", questionRef: "2024 OL Q15(d)(ii)",
+    stem: "Yellow Wind Warning Orange Wind Warning Red Wind Warning Speed between 90 and 110km/h Speed between 111 and 130km/h Speed greater than 130km/h Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Acknowledgements Images Image on page 7: https://aerosystemswest.com/product/asw-heavy-lift-quadcopter-industrial-drone/ Image 1 on page 8: https://makelearn.org/2019/02/07/exporting-microbit-sensor-data/ Image 2 on page 8: https://ie.farnell.com/raspberry-pi/rpi3-modbp/sbc-board-raspberry-pi-3-model/dp/2842228 Image on page 14: https://techcrunch.com/2023/04/24/snapchat-sees-spike-in-1-star-reviews-as-users-pan-the-my- ai-feature-calling-for-its-removal/ Texts Text on page 15: https://www.rte.ie/news/2023/0430/1380005-snapchat-ai/ Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Ordinary Level Computer Science – Sections A & B Wednesday 22 May Morning 9:30 – 11:00 2024L219G2EL 2024. M109 C Coimisiún na Scrúduithe Stáit State Examinations Commission Computer Science Section C Ordinary Level Wednesday 22 May Morning 11:30 – 12:30 80 marks This document will not be returned to the State Examinations Commission. Junior Cycle Final Examination 2019 previous page running Leaving Certificate – 2024 2 Computer Science, Section C – Ordinary level Instructions There is one section in this paper. Section C Programming One question 80 marks Calculators may be used during this section of the examination. The Formulae and Tables booklet cannot be used for this section of the examination. The superintendent will give you a copy of the Python Reference Guide. Ensure that you save your work regularly. Save your files using the naming structure described at the beginning of each question part. If you are unable to get some code to work correctly, you can comment out the code so that you can proceed. The code that has been commented out will be reviewed by the examiner. Rough work pages are provided at the end of this booklet. Please note that this booklet is not to be handed up and will not be reviewed by an examiner. At the end of the examination it is your responsibility to ensure that you have saved your files onto your external media. You will be provided with a brown envelope for your external media. Write your examination number on this envelope and place your external media into it before sealing. Place this envelope in the pouch at the front of the red envelope that contains your examination booklet from Section A and B. Leaving Certificate – 2024 3 Computer Science, Section C – Ordinary level Section C Programming 80 marks",
+    questionText: "Which of the following is the best set of data values to test your algorithm with? Select your answer by putting a tick (✓) in the appropriate box. [89, 90, 100, 110, 111, 129, 130, 131] [20, 70, 80, 90, 95, 135, 145, 165] [19, 60, 65, 115, 116, 138, 139, 140] Justify your answer below.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "[89, 90, 100, 110, 111, 129, 130, 131] ☑", marks: 5 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC219GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "cs-2024-ol-q16-b", topicId: "cs-2-2", conceptId: "open-program-called-question16-b-py",
     section: "B", questionRef: "2024 OL Q16(b)",
     stem: "Before making any changes, you should use the format CandidateNumberQuestion16_B.py to save your file. For example, you would save the file as 123456Question16_B.py if your candidate number was 123456. Enter your Examination Number in the space provided on Line 2. Implement a program that will help you to split a restaurant bill with your friends. You should use comments throughout your program to explain your code. You may wish to reuse some of the code you used in part (a) as part of your solution. Your program should do the following: • The program should display an output of “Split Bill Calculator” at the start. • The user can enter the total amount of the bill. • The user can enter the number of people that will be splitting the bill. • Divide the total amount of the bill by the number of people. The amount owed by each person should be printed with a suitable message. Split Bill Calculator How much is the bill?: 100 How many people?: 5 You each owe 20.0 Save your file using the format CandidateNumberQuestion16_B.py. For example, you would save the file as 123456Question16_B.py if your candidate number was 123456. Leaving Certificate – 2024 6 Computer Science, Section C – Ordinary level Space for rough work. This page will not be reviewed by an examiner. Leaving Certificate – 2024 7 Computer Science, Section C – Ordinary level Acknowledgements Images Image on page 4: https://static.aviva.io/content/dam/aviva-public/ie/articles/car/your-driving-licence-debunked- article-2.jpg Image on page 6: https://www.louisianafcu.org/articles/the-polite-persons-guide-to-splitting-the-bill Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. This document will not be returned to the State Examinations Commission. Leaving Certificate – Ordinary Level Computer Science – Section C Leaving Certificate – 2024 8 Computer Science, Section C – Ordinary level Wednesday 22 May Morning 11:30 – 12:30",
@@ -1023,6 +1245,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Possible solution:", marks: 20 },
     ],
+    figure: {
+          "candId": "computer-science-2024-OL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q16-code0.png",
+          "srcHash": "6593ad6571adada55443174a5b7ba23d",
+          "alt": "The program printed with 2024 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 15 lines and begins: # Question 16(a)",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1064,6 +1294,35 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Casts the input to an integer", marks: 6, accepts: ["int sets the data type to an integer/ number/ whole number","Numbers are equal / the same / match Valid print statement 3 marks"] },
     ],
+    figure: {
+          "candId": "computer-science-2024-OL-paper-q8-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q8-code0.png",
+          "srcHash": "786fcfa5aff5c5e5d2625f17b7e21157",
+          "alt": "The program printed with 2024 OL Question 8, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 15 lines and begins: num1 = int(input(\"Enter first number: \"))",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC219GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
+    id: "cs-2024-ol-q16", topicId: "cs-2-2", conceptId: "open-program-called-question16-py-your",
+    section: "B", questionRef: "2024 OL Q16",
+    questionText: "(i) Modify the program so that it first prints out “Welcome to the driving licence eligibility checker” instead of “The program”. When the program is run the output should now look as follows: Welcome to the driving licence eligibility checker What age are you? (ii) Insert a comment in the code that explains what is happening on line 6. (iii) Print a message stating the age that the user entered. When the program is run the output may now look as follows: Welcome to the driving licence eligibility checker What age are you? 17 You entered 17 You are entitled to apply for a driving licence. (iv) Currently the program will only output a message when the entered age is 17 or over. Change the program so that if an age less than 17 is entered a suitable message is output. When the program is run the output may now look as follows: Welcome to the driving licence eligibility checker What age are you? 16 You entered 16 You are not entitled to apply for a driving licence. (v) Amend the program to ask for the user’s name. The name should be stored in an appropriate variable. The user’s name should be output along with the message about eligibility to apply for a licence. When the program is run the output may now look as follows: Welcome to the driving licence eligibility checker What is your name? Sarah What age are you? 16 You entered 16 Sarah you are not entitled to apply for a driving licence. (vi) Update your program so that it outputs a message to the user based on the criteria in the table below. The output should continue to display the user name. The name Sarah is used in the examples below. (a) Open the program called Question16_A.py from your device. The source code is shown and described briefly below. (b) Open the program called Question16_B.py from your device. This file only contains two comments on lines 1 and 2.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 80,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Possible solution:", marks: 80, accepts: ["1 # Question 16(a)","2 # Examination Number:","3","4 print(\"Welcome to the driving licence eligibility checker\") #(i)","5","6 #(ii) user asked to input age and it is converted to an integer","7 age = int(input(\"What age are you? \"))","8 print(\"You entered\", age) #(iii)","9","10 name = input(\"Enter your name: \") #(v)","11"] },
+    ],
+    figure: {
+          "candId": "computer-science-2024-OL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q16-code0.png",
+          "srcHash": "6593ad6571adada55443174a5b7ba23d",
+          "alt": "The program printed with 2024 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 15 lines and begins: # Question 16(a)",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1210,6 +1469,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "It is to check that the user has entered enough money to buy the selected item", marks: 5 },
     ],
+    figure: {
+          "candId": "computer-science-2025-OL-paper-q14-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14-code0.png",
+          "srcHash": "ed2db2d0f69b24535a5c66ba15704259",
+          "alt": "The program printed with 2025 OL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 10 lines and begins: if money >= price:",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1224,6 +1491,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "float", marks: 1 },
     ],
+    figure: {
+          "candId": "computer-science-2025-OL-paper-q14-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14-code0.png",
+          "srcHash": "ed2db2d0f69b24535a5c66ba15704259",
+          "alt": "The program printed with 2025 OL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 10 lines and begins: if money >= price:",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1238,6 +1513,36 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Verify that selecting a specific snack (e.g., \"A1\") correctly identifies the item", marks: 4 },
     ],
+    figure: {
+          "candId": "computer-science-2025-OL-paper-q14-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14-code0.png",
+          "srcHash": "ed2db2d0f69b24535a5c66ba15704259",
+          "alt": "The program printed with 2025 OL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 10 lines and begins: if money >= price:",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC219GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "cs-2025-ol-q14-b-ii", topicId: "cs-2-2", conceptId: "table-below-shows-test-plan-vending",
+    section: "B", questionRef: "2025 OL Q14(b)(ii)",
+    stem: "Code entered Money inserted (€) Expected result B1 3 Oreos dispensed, €0.50 change given 1.2 Water dispensed, no change given C1 Error – not enough money inserted C2 0.75",
+    questionText: "The table below shows a test plan for the vending machine. Some of the entries have been left blank. Complete the test plan by filling in the correct information in the blank spaces.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Code Entered Money Inserted (€) Expected Result", marks: 9 },
+    ],
+    figure: {
+          "candId": "computer-science-2025-OL-paper-q14-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14-code0.png",
+          "srcHash": "ed2db2d0f69b24535a5c66ba15704259",
+          "alt": "The program printed with 2025 OL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 10 lines and begins: if money >= price:",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1252,6 +1557,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Functional Testing. Functional testing checks whether the software performs its intended functions correctly. For example, testing that the vending machine dispenses water when the correct amount of money is inserted and the code button is entered.", marks: 3 },
     ],
+    figure: {
+          "candId": "computer-science-2025-OL-paper-q14-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14-code0.png",
+          "srcHash": "ed2db2d0f69b24535a5c66ba15704259",
+          "alt": "The program printed with 2025 OL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 10 lines and begins: if money >= price:",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1266,6 +1579,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Large Buttons: Easily readable buttons with high-contrast colours and tactile feedback can help users with visual impairments.", marks: 8 },
     ],
+    figure: {
+          "candId": "computer-science-2025-OL-paper-q14-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14-code0.png",
+          "srcHash": "ed2db2d0f69b24535a5c66ba15704259",
+          "alt": "The program printed with 2025 OL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 10 lines and begins: if money >= price:",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1340,6 +1661,14 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "syntax or semantic error.", marks: 2 },
     { id: "r-5", kind: "point", verbatim: "Any other reasonable attempt.", marks: 2 },
     ],
+    figure: {
+          "candId": "computer-science-2025-OL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q16-code0.png",
+          "srcHash": "1b24669fdde91edf27fb0f348df74d1c",
+          "alt": "The program printed with 2025 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 17 lines and begins: # Question 16(a)",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1354,6 +1683,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "10 marks Correct response", marks: 10 },
     ],
+    figure: {
+          "candId": "computer-science-2025-OL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q16-code0.png",
+          "srcHash": "1b24669fdde91edf27fb0f348df74d1c",
+          "alt": "The program printed with 2025 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 17 lines and begins: # Question 16(a)",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1368,6 +1705,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Possible solution:", marks: 20 },
     ],
+    figure: {
+          "candId": "computer-science-2025-OL-paper-q16-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q16-code0.png",
+          "srcHash": "1b24669fdde91edf27fb0f348df74d1c",
+          "alt": "The program printed with 2025 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 17 lines and begins: # Question 16(a)",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",

@@ -39,6 +39,13 @@ LIGATURE = {
     'Ɵ': 'ti', 'ﬁ': 'fi', 'ﬂ': 'fl', 'ﬀ': 'ff', 'ﬃ': 'ffi', 'ﬄ': 'ffl',
     'ƫ': 'tt', 'ƞ': 'tf', '\u02da': '\u00b0',   # "pu[tt]ing", "ou[tf]lows", 25[deg]C
     '\uf0ae': '\u2192',   # Symbol font: code point 0xAE is its rightwards arrow
+    '\uf0df': '\u2190',   # SymbolMT 0xDF -- the LEFTWARDS arrow, which is the
+                          # assignment operator in Computer Science pseudocode.
+                          # Settled the same way as the rest of this table:
+                          # cs_question_figures cropped 2024 HL Question 11 out
+                          # of the page and it reads "problem_solved <- FALSE".
+                          # It appears in no scheme, so the derivation cannot
+                          # reach it however wide the corpus.
     # Symbol and Wingdings characters, which a PDF stores at 0xF000 + the code
     # point. Each was settled by cropping the glyph out of the page and looking
     # at it rather than by trusting an encoding chart:
@@ -48,6 +55,9 @@ LIGATURE = {
                           # page 1 and looked at: "l^-2 at 25 [deg]C"
     '\uf06c': '\u2022',   # Wingdings 0x6c -- the bullet on "using a scalpel"
     '\uf050': '\u2713',   # Wingdings 2 0x50 -- a tick
+    '\uf0fe': '\u2611',   # Wingdings 0xFE -- a ballot box WITH a check in it,
+                          # cropped from 2024 OL page 16 and looked at: it marks
+                          # which of three sorted lists is the correct answer.
     '\uf067': '\u2192',   # Wingdings 3 0x67 -- "6O2 -> 6CO2 + 6H2O"
     '\uf081': '\u2460',   # Wingdings 0x81 -- a circled 1
     '\u0424': '\u03a6',   # renders as Phi: "[Phi] = 4.33 x 10^-19 (J)"
@@ -146,7 +156,15 @@ def interpolate(seen):
 
 
 def main():
-    files = sorted(glob.glob('examiner-reports/*/schemes/*.pdf'))
+    # PAPERS as well as schemes. A glyph id means the same character in the
+    # same font wherever it is drawn, so every PDF in the corpus is evidence,
+    # and some characters appear only on the paper side: the Symbol-font
+    # leftwards arrow U+F0DF is the assignment operator in Computer Science
+    # pseudocode ("problem_solved <- FALSE") and occurs in no scheme at all,
+    # so a schemes-only corpus could never learn it and four cards were
+    # dropped for carrying it unrepaired.
+    files = sorted(glob.glob('examiner-reports/*/schemes/*.pdf')
+                   + glob.glob('examiner-reports/*/papers/*.pdf'))
     if not files:
         sys.exit('no scheme PDFs found -- run from the repo root')
     seen, bad = scan(files)
@@ -203,7 +221,7 @@ def main():
     total = sum(bad.values())
     fixed = sum(n for (f, g, u), n in bad.items()
                 if chr(u) in table)
-    print(f'{len(files)} scheme PDFs')
+    print(f"{len(files)} PDFs")
     print(f'interpolated {added} glyph ids inside known runs')
     print(f'{len(table)} map entries; dropped {len(dropped)} ambiguous {dropped}')
     print(f'mangled instances {total}, repaired {fixed} ({100 * fixed // max(total, 1)}%)')

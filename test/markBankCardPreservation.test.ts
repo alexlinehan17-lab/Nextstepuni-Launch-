@@ -363,9 +363,16 @@ const decks = [
   ['maths:ordinary', MATHS_ORDINARY, 435, '1739cbe00b51bbe9aed6df6e1226780777f965ec94c9492743cf2ec8df35990e'],
   /* 2026-08-30: Computer Science opened. 259 cards, 293/484 asks covered,
    * 0 orphans, card lint clean. A new subject is pinned from its first build;
-   * there is no earlier count to compare it against. */
-  ['computer-science:higher', CS_HIGHER, 164, '9a157315f10b7aa94fcf37ea195e8814dd082f0f1984ec89a8cf3ba651431691'],
-  ['computer-science:ordinary', CS_ORDINARY, 95, '58b307de23ce3b4054853d002f5dc641fcb54868e495f269b7f1aab3d9db9e72'],
+   * there is no earlier count to compare it against.
+   *
+   * 2026-08-30 (same day): 164/95 -> 183/102, coverage 293/484 -> 327/484.
+   * The added cards carry a CROP of the program their question prints. The
+   * text layer hands a listing back as "1 number = 27 2 while number < 39: 3
+   * print(number, end=" ")" -- line numbers run into the code and the
+   * indentation gone, which is the one thing a program cannot survive losing.
+   * Nothing was removed. */
+  ['computer-science:higher', CS_HIGHER, 183, '1913faf85906c81eafb147fea9f66c6624f43f4d66f9487e10d25a5bc91e0e21'],
+  ['computer-science:ordinary', CS_ORDINARY, 102, '5f540a8f06ed0c00db1e9039114bc3fd265fa5e52a8fa053a20786c600f00aaf'],
   ['construction-studies:higher', CONS_HIGHER, 255, 'b74a39fd589f1082d6378190aee778d528eff0968d7af0ee9144525f2e40d57b'],
   ['construction-studies:ordinary', CONS_ORDINARY, 250, 'f56985e32cc1f02a2e2f7a7eb300a44646b75cf3604a12b5a478bde2a520d2da'],
 ] as const;
@@ -382,6 +389,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7709);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7735);
   });
 });

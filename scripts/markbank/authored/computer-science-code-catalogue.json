@@ -1,0 +1,611 @@
+[
+ {
+  "file": "computer-science-2021-HL-paper-q1-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2021 HL Q1",
+  "description": "The program printed with 2021 HL Question 1, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 19 lines and begins: x = 3"
+ },
+ {
+  "file": "computer-science-2021-HL-paper-q12-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2021 HL Q12",
+  "description": "The program printed with 2021 HL Question 12, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 24 lines and begins: rover"
+ },
+ {
+  "file": "computer-science-2021-HL-paper-q12-code1.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2021 HL Q12",
+  "description": "The program printed with 2021 HL Question 12, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 35 lines and begins: Joe Murphy 1 main st."
+ },
+ {
+  "file": "computer-science-2021-HL-paper-q2-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2021 HL Q2",
+  "description": "The program printed with 2021 HL Question 2, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 19 lines and begins: x = 3"
+ },
+ {
+  "file": "computer-science-2021-HL-paper-q4-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2021 HL Q4",
+  "description": "The program printed with 2021 HL Question 4, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: x = y"
+ },
+ {
+  "file": "computer-science-2021-HL-paper-q6-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2021 HL Q6",
+  "description": "The program printed with 2021 HL Question 6, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 20 lines and begins: (num_adults) and the number of children (num_children) in a travelling group."
+ },
+ {
+  "file": "computer-science-2021-HL-paper-q16-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2021 HL Q16",
+  "description": "The program printed with 2021 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The Python program shown below tests whether the strings stored in the variables word1"
+ },
+ {
+  "file": "computer-science-2021-HL-paper-q16-code1.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2021 HL Q16",
+  "description": "The program printed with 2021 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 25 lines and begins: # Question 16(a)"
+ },
+ {
+  "file": "computer-science-2021-HL-paper-q16-code2.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2021 HL Q16",
+  "description": "The program printed with 2021 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: Enter the first word: LISTEN"
+ },
+ {
+  "file": "computer-science-2021-OL-paper-q10-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2021 OL Q10",
+  "description": "The program printed with 2021 OL Question 10, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 11 lines and begins: L = [10, 25, 21, 15, 85, 69, 74, 22, 19, 6]"
+ },
+ {
+  "file": "computer-science-2021-OL-paper-q9-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2021 OL Q9",
+  "description": "The program printed with 2021 OL Question 9, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 13 lines and begins: a = 1"
+ },
+ {
+  "file": "computer-science-2021-OL-paper-q16-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2021 OL Q16",
+  "description": "The program printed with 2021 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 15 lines and begins: # Question 16(a)"
+ },
+ {
+  "file": "computer-science-2021-OL-paper-q16-code1.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2021 OL Q16",
+  "description": "The program printed with 2021 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 4 lines and begins: Incorrect PIN"
+ },
+ {
+  "file": "computer-science-2022-HL-paper-q1-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2022 HL Q1",
+  "description": "The program printed with 2022 HL Question 1, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 21 lines and begins: def func(a):"
+ },
+ {
+  "file": "computer-science-2022-HL-paper-q12-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2022 HL Q12",
+  "description": "The program printed with 2022 HL Question 12, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The initial state is S0 and the initial tape contents is the binary number 0110 followed by a blank,"
+ },
+ {
+  "file": "computer-science-2022-HL-paper-q2-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2022 HL Q2",
+  "description": "The program printed with 2022 HL Question 2, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 21 lines and begins: def func(a):"
+ },
+ {
+  "file": "computer-science-2022-HL-paper-q14-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2022 HL Q14",
+  "description": "The program printed with 2022 HL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: A simplified version of the selection sort algorithm involves the use of two lists called list1"
+ },
+ {
+  "file": "computer-science-2022-HL-paper-q14-code1.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2022 HL Q14",
+  "description": "The program printed with 2022 HL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: list1:"
+ },
+ {
+  "file": "computer-science-2022-HL-paper-q14-code2.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2022 HL Q14",
+  "description": "The program printed with 2022 HL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: At the end of the algorithm list1 is empty, and list2 contains the elements that were in"
+ },
+ {
+  "file": "computer-science-2022-HL-paper-q14-code3.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2022 HL Q14",
+  "description": "The program printed with 2022 HL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 6 lines and begins: 1. Let N be the number of elements in list1"
+ },
+ {
+  "file": "computer-science-2022-HL-paper-q16-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2022 HL Q16",
+  "description": "The program printed with 2022 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The result of each roll (throw) is stored in a variable called throw_result. Each of the 100"
+ },
+ {
+  "file": "computer-science-2022-HL-paper-q16-code1.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2022 HL Q16",
+  "description": "The program printed with 2022 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 29 lines and begins: rolled. These are stored in a list called frequencies."
+ },
+ {
+  "file": "computer-science-2022-OL-paper-q1-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2022 OL Q1",
+  "description": "The program printed with 2022 OL Question 1, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 3 lines and begins: a = 2"
+ },
+ {
+  "file": "computer-science-2022-OL-paper-q1-code1.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2022 OL Q1",
+  "description": "The program printed with 2022 OL Question 1, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 5 lines and begins: print(a+b)"
+ },
+ {
+  "file": "computer-science-2022-OL-paper-q12-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2022 OL Q12",
+  "description": "The program printed with 2022 OL Question 12, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 4 lines and begins: Step Forward"
+ },
+ {
+  "file": "computer-science-2022-OL-paper-q12-code1.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2022 OL Q12",
+  "description": "The program printed with 2022 OL Question 12, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 5 lines and begins: Repeat 2 times:"
+ },
+ {
+  "file": "computer-science-2022-OL-paper-q2-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2022 OL Q2",
+  "description": "The program printed with 2022 OL Question 2, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 3 lines and begins: a = 2"
+ },
+ {
+  "file": "computer-science-2022-OL-paper-q2-code1.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2022 OL Q2",
+  "description": "The program printed with 2022 OL Question 2, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 5 lines and begins: print(a+b)"
+ },
+ {
+  "file": "computer-science-2022-OL-paper-q3-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2022 OL Q3",
+  "description": "The program printed with 2022 OL Question 3, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 9 lines and begins: Start"
+ },
+ {
+  "file": "computer-science-2022-OL-paper-q9-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2022 OL Q9",
+  "description": "The program printed with 2022 OL Question 9, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 7 lines and begins: Four"
+ },
+ {
+  "file": "computer-science-2022-OL-paper-q16-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2022 OL Q16",
+  "description": "The program printed with 2022 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 24 lines and begins: # Question 16 (a)"
+ },
+ {
+  "file": "computer-science-2023-HL-paper-q3-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2023 HL Q3",
+  "description": "The program printed with 2023 HL Question 3, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 14 lines and begins: A point P(x, y) is plotted inside the top right quadrant, as shown. Complete the truth"
+ },
+ {
+  "file": "computer-science-2023-HL-paper-q3-code1.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2023 HL Q3",
+  "description": "The program printed with 2023 HL Question 3, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: Construct a Boolean expression in the space below that will evaluate to True for all points"
+ },
+ {
+  "file": "computer-science-2023-HL-paper-q6-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2023 HL Q6",
+  "description": "The program printed with 2023 HL Question 6, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 11 lines and begins: x = 10"
+ },
+ {
+  "file": "computer-science-2023-HL-paper-q7-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2023 HL Q7",
+  "description": "The program printed with 2023 HL Question 7, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 11 lines and begins: x = 10"
+ },
+ {
+  "file": "computer-science-2023-HL-paper-q8-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2023 HL Q8",
+  "description": "The program printed with 2023 HL Question 8, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 3 lines and begins: By using the letter E to represent the east side of the river, and the letter W to represent the west"
+ },
+ {
+  "file": "computer-science-2023-HL-paper-q16-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2023 HL Q16",
+  "description": "The program printed with 2023 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The user’s guess is stored in the variable user_guess. Every time the user enters a"
+ },
+ {
+  "file": "computer-science-2023-HL-paper-q16-code1.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2023 HL Q16",
+  "description": "The program printed with 2023 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 26 lines and begins: # Question 16(a)"
+ },
+ {
+  "file": "computer-science-2023-OL-paper-q1-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2023 OL Q1",
+  "description": "The program printed with 2023 OL Question 1, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 4 lines and begins: Given the following variable declarations, state the Boolean result, either True or False, of each"
+ },
+ {
+  "file": "computer-science-2023-OL-paper-q1-code1.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2023 OL Q1",
+  "description": "The program printed with 2023 OL Question 1, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 3 lines and begins: print statement"
+ },
+ {
+  "file": "computer-science-2023-OL-paper-q11-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2023 OL Q11",
+  "description": "The program printed with 2023 OL Question 11, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 17 lines and begins: 1 percentage = int(input(\"How many marks out of 100? \"))"
+ },
+ {
+  "file": "computer-science-2023-OL-paper-q2-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2023 OL Q2",
+  "description": "The program printed with 2023 OL Question 2, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 4 lines and begins: Given the following variable declarations, state the Boolean result, either True or False, of each"
+ },
+ {
+  "file": "computer-science-2023-OL-paper-q2-code1.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2023 OL Q2",
+  "description": "The program printed with 2023 OL Question 2, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 3 lines and begins: print statement"
+ },
+ {
+  "file": "computer-science-2023-OL-paper-q13-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2023 OL Q13",
+  "description": "The program printed with 2023 OL Question 13, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 20 lines and begins: i = 1"
+ },
+ {
+  "file": "computer-science-2023-OL-paper-q16-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2023 OL Q16",
+  "description": "The program printed with 2023 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 16 lines and begins: # Question 16(a)"
+ },
+ {
+  "file": "computer-science-2023-OL-paper-q16-code1.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2023 OL Q16",
+  "description": "The program printed with 2023 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 12 lines and begins: Times Table program"
+ },
+ {
+  "file": "computer-science-2024-HL-paper-q1-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2024 HL Q1",
+  "description": "The program printed with 2024 HL Question 1, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 8 lines and begins: number = 27"
+ },
+ {
+  "file": "computer-science-2024-HL-paper-q10-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2024 HL Q10",
+  "description": "The program printed with 2024 HL Question 10, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 12 lines and begins: 365 days. The Python function is_leap_year, shown below can be used to determine whether"
+ },
+ {
+  "file": "computer-science-2024-HL-paper-q11-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2024 HL Q11",
+  "description": "The program printed with 2024 HL Question 11, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 8 lines and begins: problem_solved  FALSE"
+ },
+ {
+  "file": "computer-science-2024-HL-paper-q2-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2024 HL Q2",
+  "description": "The program printed with 2024 HL Question 2, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 8 lines and begins: number = 27"
+ },
+ {
+  "file": "computer-science-2024-HL-paper-q9-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2024 HL Q9",
+  "description": "The program printed with 2024 HL Question 9, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 12 lines and begins: 365 days. The Python function is_leap_year, shown below can be used to determine whether"
+ },
+ {
+  "file": "computer-science-2024-HL-paper-q16-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2024 HL Q16",
+  "description": "The program printed with 2024 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 12 lines and begins: # Question 16(a)"
+ },
+ {
+  "file": "computer-science-2024-HL-paper-q16-code1.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2024 HL Q16",
+  "description": "The program printed with 2024 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 3 lines and begins: Random Fruit 1: orange"
+ },
+ {
+  "file": "computer-science-2024-OL-paper-q1-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2024 OL Q1",
+  "description": "The program printed with 2024 OL Question 1, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 6 lines and begins: 1 x = 9"
+ },
+ {
+  "file": "computer-science-2024-OL-paper-q10-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2024 OL Q10",
+  "description": "The program printed with 2024 OL Question 10, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 31 lines and begins: Mr. Murray"
+ },
+ {
+  "file": "computer-science-2024-OL-paper-q11-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2024 OL Q11",
+  "description": "The program printed with 2024 OL Question 11, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 31 lines and begins: Mr. Murray"
+ },
+ {
+  "file": "computer-science-2024-OL-paper-q2-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2024 OL Q2",
+  "description": "The program printed with 2024 OL Question 2, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 6 lines and begins: 1 x = 9"
+ },
+ {
+  "file": "computer-science-2024-OL-paper-q8-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2024 OL Q8",
+  "description": "The program printed with 2024 OL Question 8, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 15 lines and begins: num1 = int(input(\"Enter first number: \"))"
+ },
+ {
+  "file": "computer-science-2024-OL-paper-q9-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2024 OL Q9",
+  "description": "The program printed with 2024 OL Question 9, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 15 lines and begins: num1 = int(input(\"Enter first number: \"))"
+ },
+ {
+  "file": "computer-science-2024-OL-paper-q13-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2024 OL Q13",
+  "description": "The program printed with 2024 OL Question 13, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 20 lines and begins: set A to 0"
+ },
+ {
+  "file": "computer-science-2024-OL-paper-q13-code1.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2024 OL Q13",
+  "description": "The program printed with 2024 OL Question 13, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 3 lines and begins: Choose suitable data types for the variables A and B."
+ },
+ {
+  "file": "computer-science-2024-OL-paper-q16-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2024 OL Q16",
+  "description": "The program printed with 2024 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 15 lines and begins: # Question 16(a)"
+ },
+ {
+  "file": "computer-science-2024-OL-paper-q16-code1.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2024 OL Q16",
+  "description": "The program printed with 2024 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: Welcome to the driving licence eligibility checker"
+ },
+ {
+  "file": "computer-science-2024-OL-paper-q16-code2.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2024 OL Q16",
+  "description": "The program printed with 2024 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 4 lines and begins: Welcome to the driving licence eligibility checker"
+ },
+ {
+  "file": "computer-science-2025-HL-paper-q1-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2025 HL Q1",
+  "description": "The program printed with 2025 HL Question 1, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 21 lines and begins: a = 5"
+ },
+ {
+  "file": "computer-science-2025-HL-paper-q10-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2025 HL Q10",
+  "description": "The program printed with 2025 HL Question 10, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 18 lines and begins: For i in range(1, 21):"
+ },
+ {
+  "file": "computer-science-2025-HL-paper-q2-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2025 HL Q2",
+  "description": "The program printed with 2025 HL Question 2, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 21 lines and begins: a = 5"
+ },
+ {
+  "file": "computer-science-2025-HL-paper-q9-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2025 HL Q9",
+  "description": "The program printed with 2025 HL Question 9, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 18 lines and begins: For i in range(1, 21):"
+ },
+ {
+  "file": "computer-science-2025-HL-paper-q14-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2025 HL Q14",
+  "description": "The program printed with 2025 HL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 17 lines and begins: def gcd(a, b):"
+ },
+ {
+  "file": "computer-science-2025-HL-paper-q14-code1.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2025 HL Q14",
+  "description": "The program printed with 2025 HL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 3 lines and begins: a and b have been initialised to 45 and 18 respectively."
+ },
+ {
+  "file": "computer-science-2025-HL-paper-q16-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2025 HL Q16",
+  "description": "The program printed with 2025 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 34 lines and begins: # Question 16 (a)"
+ },
+ {
+  "file": "computer-science-2025-OL-paper-q1-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2025 OL Q1",
+  "description": "The program printed with 2025 OL Question 1, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 15 lines and begins: age. It then prints out A, B, or C, depending on the value entered for the person’s age."
+ },
+ {
+  "file": "computer-science-2025-OL-paper-q1-code1.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2025 OL Q1",
+  "description": "The program printed with 2025 OL Question 1, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 6 lines and begins: "
+ },
+ {
+  "file": "computer-science-2025-OL-paper-q11-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2025 OL Q11",
+  "description": "The program printed with 2025 OL Question 11, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 6 lines and begins: myNum = \"6\""
+ },
+ {
+  "file": "computer-science-2025-OL-paper-q11-code1.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2025 OL Q11",
+  "description": "The program printed with 2025 OL Question 11, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: error:"
+ },
+ {
+  "file": "computer-science-2025-OL-paper-q12-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2025 OL Q12",
+  "description": "The program printed with 2025 OL Question 12, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 6 lines and begins: myNum = \"6\""
+ },
+ {
+  "file": "computer-science-2025-OL-paper-q12-code1.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2025 OL Q12",
+  "description": "The program printed with 2025 OL Question 12, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: error:"
+ },
+ {
+  "file": "computer-science-2025-OL-paper-q2-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2025 OL Q2",
+  "description": "The program printed with 2025 OL Question 2, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 15 lines and begins: age. It then prints out A, B, or C, depending on the value entered for the person’s age."
+ },
+ {
+  "file": "computer-science-2025-OL-paper-q2-code1.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2025 OL Q2",
+  "description": "The program printed with 2025 OL Question 2, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 6 lines and begins: "
+ },
+ {
+  "file": "computer-science-2025-OL-paper-q5-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2025 OL Q5",
+  "description": "The program printed with 2025 OL Question 5, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 10 lines and begins: name = \"John\""
+ },
+ {
+  "file": "computer-science-2025-OL-paper-q5-code1.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2025 OL Q5",
+  "description": "The program printed with 2025 OL Question 5, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 5 lines and begins: name"
+ },
+ {
+  "file": "computer-science-2025-OL-paper-q6-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2025 OL Q6",
+  "description": "The program printed with 2025 OL Question 6, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 10 lines and begins: name = \"John\""
+ },
+ {
+  "file": "computer-science-2025-OL-paper-q6-code1.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2025 OL Q6",
+  "description": "The program printed with 2025 OL Question 6, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 5 lines and begins: name"
+ },
+ {
+  "file": "computer-science-2025-OL-paper-q14-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2025 OL Q14",
+  "description": "The program printed with 2025 OL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 10 lines and begins: if money >= price:"
+ },
+ {
+  "file": "computer-science-2025-OL-paper-q16-code0.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2025 OL Q16",
+  "description": "The program printed with 2025 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 17 lines and begins: # Question 16(a)"
+ },
+ {
+  "file": "computer-science-2025-OL-paper-q16-code1.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2025 OL Q16",
+  "description": "The program printed with 2025 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 3 lines and begins: Welcome to the Tilers Mate"
+ },
+ {
+  "file": "computer-science-2025-OL-paper-q16-code2.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2025 OL Q16",
+  "description": "The program printed with 2025 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 4 lines and begins: Welcome to the Tilers Mate"
+ }
+]
