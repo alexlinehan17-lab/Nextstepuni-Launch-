@@ -61,7 +61,7 @@
  },
  "computer-science": {
   "cards": 320,
-  "contentHash": "d63581137d5898ce",
+  "contentHash": "1310789505c74f6d",
   "coveragePct": 78.9,
   "covered": 382,
   "excluded": 0,
@@ -121,7 +121,7 @@
  },
  "maths": {
   "cards": 833,
-  "contentHash": "39c2f5c60ad3e61c",
+  "contentHash": "abcd0c7413fe8c3b",
   "coveragePct": 95.1,
   "covered": 941,
   "excluded": 0,

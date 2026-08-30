@@ -5473,7 +5473,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2023-HL-ask-p1-q5-c-i",
           "src": "/exam-figures/maths/markbank/maths-2023-HL-ask-p1-q5-c-i.png",
           "srcHash": "c06e2af9355b10684fdd860840e724f1",
-          "alt": "The question as printed on the paper — The diagram below shows three sets, A, B, and C, and two functions, f and g, where f: A→B and g: B→C. #A = #C = 4 and #B = 3. x 1  w 2 ✓ y 3 z 4  Find the value of g(f(3)). Explain why g: B→C is injective but not surje",
+          "alt": "The question as printed on the paper — The diagram below shows three sets, A, B, and C, and two functions, f and g, where f: A→B and g: B→C. #A = #C = 4 and #B = 3. x 1 ✈ w 2 ✓ y 3 z 4 ☃ Find the value of g(f(3)). Explain why g: B→C is injective but not surje",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2023 Higher Level — © State Examinations Commission"
     },
@@ -7371,7 +7371,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p008-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p008-i0.png",
           "srcHash": "26586c580d0dbc59be37f17c9750e08e",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q2(b), typeset as the State Examinations Commission set it. It reads: 2 = 2 r = √1² + (√3) 𝜃𝜃 = 300° (oooo − 60°) or 𝜃𝜃 = 5𝜋𝜋/3 (oooo − 𝜋𝜋/3) 9 = [2(cos 300 + isin 300)]₉ (1 + √3i) = 2⁹(cos 9(300) + isin 9(300)) = 512(−1 + 0i) = −512 Mathematics, Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q2(b), typeset as the State Examinations Commission set it. It reads: 2 = 2 r = √1² + (√3) 𝜃 = 300° (oooo − 60°) or 𝜃 = 5𝜋/3 (oooo − 𝜋/3) 9 = [2(cos 300 + isin 300)]₉ (1 + √3i) = 2⁹(cos 9(300) + isin 9(300)) = 512(−1 + 0i) = −512 Mathematics, Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -7401,7 +7401,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p009-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p009-i0.png",
           "srcHash": "5b56e1d673305388ed80a0e1d91958e4",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q2(c)(i), typeset as the State Examinations Commission set it. It reads: uu = 4 (^√³/2 + ii 1/2) = 2√3 + 2ii = 3∙46 + 2ii [2DP] PLOTTED and LABELLED Or can use radius of 4 and angle of 30° ww: Argument = 3𝜋𝜋/4 uu: Argument = 𝜋𝜋/6 3𝜋𝜋/4 − 𝜋𝜋/6 = 7𝜋𝜋/12 Mathematics, Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q2(c)(i), typeset as the State Examinations Commission set it. It reads: uu = 4 (^√³/2 + ii 1/2) = 2√3 + 2ii = 3∙46 + 2ii [2DP] PLOTTED and LABELLED Or can use radius of 4 and angle of 30° ww: Argument = 3𝜋/4 uu: Argument = 𝜋/6 3𝜋/4 − 𝜋/6 = 7𝜋/12 Mathematics, Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -8001,7 +8001,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p021-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p021-i0.png",
           "srcHash": "c55691d610b20dc3219ea14bc9c8b170",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q8(b), typeset as the State Examinations Commission set it. It reads: Max = 21 + 19(1) = 40 Min = 21 −19(1) = 2 OR S′(t) = −(19) ( 2𝜋𝜋/365) sin 2𝜋𝜋𝜋𝜋/365 S′(t) = 0 −(19) ( 2𝜋𝜋/365) sin 2𝜋𝜋𝜋𝜋/365 = 0 2𝜋𝜋𝜋𝜋/365 = 0 2𝜋𝜋𝜋𝜋/365 = 𝜋𝜋 Max ⇒ = tt SS(0) = 0 ⇒ tt = 365/2 = 40 Min = SS (365/2 = 2",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q8(b), typeset as the State Examinations Commission set it. It reads: Max = 21 + 19(1) = 40 Min = 21 −19(1) = 2 OR S′(t) = −(19) ( 2𝜋/365) sin 2𝜋/365 S′(t) = 0 −(19) ( 2𝜋/365) sin 2𝜋/365 = 0 2𝜋/365 = 0 2𝜋/365 = 𝜋 Max ⇒ = tt SS(0) = 0 ⇒ tt = 365/2 = 40 Min = SS (365/2 = 2",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -8077,7 +8077,7 @@ export const CARDS: SecCard[] = [
     questionText: "The derivative of C(t) is given by C′(t) = 0∙03 − 38𝜋 365 sin ( 2𝜋 365)",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 4, 6, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2024-hl-p1-q8-e-r1", kind: "anyN", verbatim: "Work of merit, for example, sets up equation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Full Credit -1: Apply a * for calculator in incorrect mode. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, sets up equation","0·03(365)/38𝜋𝜋 = sin ( 2𝜋𝜋𝜋𝜋/365)"],"perOptionSteps":[4,6]} },
+    { id: "maths-2024-hl-p1-q8-e-r1", kind: "anyN", verbatim: "Work of merit, for example, sets up equation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 4, two parts for 6. The full scale runs to 10. Full Credit -1: Apply a * for calculator in incorrect mode. Marked in order: Low Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":2,"perOption":4,"options":["Work of merit, for example, sets up equation","0·03(365)/38𝜋 = sin ( 2𝜋/365)"],"perOptionSteps":[4,6]} },
     ],
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q8-e",
@@ -8091,7 +8091,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p022-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p022-i0.png",
           "srcHash": "3ada25be2470efe07ef5a75e4d29c691",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q8(e), typeset as the State Examinations Commission set it. It reads: (e) CC′(tt) = 0∙03 − 38𝜋𝜋/365 sin (2𝜋𝜋𝜋𝜋/365) = 0 0∙03 = 38𝜋𝜋/365 sin (2𝜋𝜋𝜋𝜋/365) (0 · 03(365))/38𝜋𝜋 = sin (2𝜋𝜋𝜋𝜋/365) sin^−¹ (0/38𝜋𝜋 · 03(365) ) = 2𝜋𝜋𝜋𝜋/365 0 · 09185 = 2𝜋𝜋𝜋𝜋/365 t = 5 · 336 = 5 [days] [∈ℕ] Mathematics, Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q8(e), typeset as the State Examinations Commission set it. It reads: (e) CC′(tt) = 0∙03 − 38𝜋/365 sin (2𝜋/365) = 0 0∙03 = 38𝜋/365 sin (2𝜋/365) (0 · 03(365))/38𝜋 = sin (2𝜋/365) sin^−¹ (0/38𝜋 · 03(365) ) = 2𝜋/365 0 · 09185 = 2𝜋/365 t = 5 · 336 = 5 [days] [∈ℕ] Mathematics, Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -8113,7 +8113,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-ask-p1-q9-a",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q9-a.png",
           "srcHash": "e5e50045e301afec2459c68f549e1dcc",
-          "alt": "The question as printed on the paper — A sphere has a radius of R units. The part of the sphere that is cut off by a flat surface is called a “cap”, and has a volume of: CC = (𝜋𝜋 kk²)/3 k² (3R−k) Here, C is the volume of the cap and k is the height of the cap",
+          "alt": "The question as printed on the paper — A sphere has a radius of R units. The part of the sphere that is cut off by a flat surface is called a “cap”, and has a volume of: CC = (𝜋 kk²)/3 k² (3R−k) Here, C is the volume of the cap and k is the height of the cap",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -8121,7 +8121,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p023-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p023-i0.png",
           "srcHash": "c06efce45bed66f5f4cbbe9c0c8ab769",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q9(a), typeset as the State Examinations Commission set it. It reads: (a) CC = 𝜋𝜋(4)²/3 (3(13) − 4) = 560𝜋𝜋/3",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q9(a), typeset as the State Examinations Commission set it. It reads: (a) CC = 𝜋(4)²/3 (3(13) − 4) = 560𝜋/3",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -8143,7 +8143,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-ask-p1-q9-c",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q9-c.png",
           "srcHash": "67b9ee405327be953707287742bfc79e",
-          "alt": "The question as printed on the paper — A sphere has a radius of R units. The part of the sphere that is cut off by a flat surface is called a “cap”, and has a volume of: CC = (𝜋𝜋 kk²)/3 k² (3R−k) Here, C is the volume of the cap and k is the height of the cap",
+          "alt": "The question as printed on the paper — A sphere has a radius of R units. The part of the sphere that is cut off by a flat surface is called a “cap”, and has a volume of: CC = (𝜋 kk²)/3 k² (3R−k) Here, C is the volume of the cap and k is the height of the cap",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -8151,7 +8151,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p023-i2",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p023-i2.png",
           "srcHash": "8656502cc7f3bfd0e044ff40f6301a0b",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q9(c), typeset as the State Examinations Commission set it. It reads: 3 litres = 3000 cm³ 𝜋𝜋/12 xx³ = 3000 xx³ = 3000(12)/𝜋𝜋 3 𝜋𝜋/36000 xx = 3 √ 36000/𝜋𝜋 = 22 · 5 [1 DP] Mathematics, Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q9(c), typeset as the State Examinations Commission set it. It reads: 3 litres = 3000 cm³ 𝜋/12 xx³ = 3000 xx³ = 3000(12)/𝜋 3 𝜋/36000 xx = 3 √ 36000/𝜋 = 22 · 5 [1 DP] Mathematics, Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -8167,7 +8167,7 @@ export const CARDS: SecCard[] = [
     questionText: "The volume of the hemisphere is increasing at a constant rate of 450 cm³ per second",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2024-hl-p1-q9-d-r1", kind: "anyN", verbatim: "States a relevant derivative\nWork of merit in finding a relevant derivative\nSome correct differentiation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Full Credit -1: Incorrect rounding or no rounding. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["States a relevant derivative\nWork of merit in finding a relevant derivative\nSome correct differentiation","Any two of the following: o dddd/dddd = 450 d 𝜋 o 4 x² d = o dddd/dddd = dddd/dddd × dddd/dddd or equivalent","Finds dddd/dddd = 4/𝜋𝜋xx2 × 450"],"perOptionSteps":[3,2,5]} },
+    { id: "maths-2024-hl-p1-q9-d-r1", kind: "anyN", verbatim: "States a relevant derivative\nWork of merit in finding a relevant derivative\nSome correct differentiation", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7. The full scale runs to 10. Full Credit -1: Incorrect rounding or no rounding. Marked in order: Low Partial Credit; Mid Partial Credit; High Partial Credit.", openList: true, group: {"claimMax":3,"perOption":3,"options":["States a relevant derivative\nWork of merit in finding a relevant derivative\nSome correct differentiation","Any two of the following: o dddd/dddd = 450 d 𝜋 o 4 x² d = o dddd/dddd = dddd/dddd × dddd/dddd or equivalent","Finds dddd/dddd = 4/𝜋xx2 × 450"],"perOptionSteps":[3,2,5]} },
     ],
     questionFigure: {
           "candId": "maths-2024-HL-ask-p1-q9-d",
@@ -8181,7 +8181,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p024-i0",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p024-i0.png",
           "srcHash": "a4ff0c9bc755d1070d1f3b15bda55968",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q9(d), typeset as the State Examinations Commission set it. It reads: (d) dddd/dddd = 450 VV = 𝜋𝜋/12 xx³ dddd/dddd = 𝜋𝜋/4 xx² dddd/dddd = 4/𝜋𝜋xx² dddd/dddd = dddd/dddd × dddd/dddd dddd/dddd = 4/𝜋𝜋xx² × 450 = 1800/𝜋𝜋xx² At xx = 20 dddd/dddd = 1800/𝜋𝜋(20)2 = 1 · 4 [cm/sec]",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q9(d), typeset as the State Examinations Commission set it. It reads: (d) dddd/dddd = 450 VV = 𝜋/12 xx³ dddd/dddd = 𝜋/4 xx² dddd/dddd = 4/𝜋xx² dddd/dddd = dddd/dddd × dddd/dddd dddd/dddd = 4/𝜋xx² × 450 = 1800/𝜋xx² At xx = 20 dddd/dddd = 1800/𝜋(20)2 = 1 · 4 [cm/sec]",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -8203,7 +8203,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-ask-p1-q9-e",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p1-q9-e.png",
           "srcHash": "1b2be293b45a31327f7412e58ce4fc5b",
-          "alt": "The question as printed on the paper — A sphere has a radius of R units. The part of the sphere that is cut off by a flat surface is called a “cap”, and has a volume of: CC = (𝜋𝜋 kk²)/3 k² (3R−k) Here, C is the volume of the cap and k is the height of the cap",
+          "alt": "The question as printed on the paper — A sphere has a radius of R units. The part of the sphere that is cut off by a flat surface is called a “cap”, and has a volume of: CC = (𝜋 kk²)/3 k² (3R−k) Here, C is the volume of the cap and k is the height of the cap",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
     },
@@ -8211,7 +8211,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p024-i1",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p024-i1.png",
           "srcHash": "adcf834928a608eda01d02f817f45611",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q9(e), typeset as the State Examinations Commission set it. It reads: S = 𝜋√r² + h² SS/𝜋𝜋𝜋𝜋 = √rr² + h² SS²/𝜋𝜋²rr² = rr² + h² SS²/𝜋𝜋²rr² − rr² = h² (SS² − 𝜋𝜋²rr⁴)/𝜋𝜋²rr² = h² √S²−𝜋²r⁴ = h 𝜋𝜋²rr²/(√SS² − 𝜋𝜋²rr⁴) (√SS² − 𝜋𝜋²rr⁴)/𝜋𝜋𝜋𝜋 = h Mathematics, Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 1 Q9(e), typeset as the State Examinations Commission set it. It reads: S = 𝜋√r² + h² SS/𝜋 = √rr² + h² SS²/𝜋²rr² = rr² + h² SS²/𝜋²rr² − rr² = h² (SS² − 𝜋²rr⁴)/𝜋²rr² = h² √S²−𝜋²r⁴ = h 𝜋²rr²/(√SS² − 𝜋²rr⁴) (√SS² − 𝜋²rr⁴)/𝜋 = h Mathematics, Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -8661,7 +8661,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p033-i2",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p033-i2.png",
           "srcHash": "235c817bd29b4390eb56995d824819c9",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q3(c), typeset as the State Examinations Commission set it. It reads: (c) (sin 𝜃𝜃)/45 = (sin 25)/15√3 25/15√3 sin 𝜃𝜃 = 45(0.4226)/15√3 45(0.4226)/15√3 = 0.73196 sin 𝜃= 0.73196 … 47.05° angle in 1st and 2nd quadrants 𝜃= 47.05° or 𝜃= 132.95° 𝜃= 47° or 𝜃= 133° [nearest degree] Mathematics – Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q3(c), typeset as the State Examinations Commission set it. It reads: (c) (sin 𝜃)/45 = (sin 25)/15√3 25/15√3 sin 𝜃 = 45(0.4226)/15√3 45(0.4226)/15√3 = 0.73196 sin 𝜃= 0.73196 … 47.05° angle in 1st and 2nd quadrants 𝜃= 47.05° or 𝜃= 132.95° 𝜃= 47° or 𝜃= 133° [nearest degree] Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -9111,7 +9111,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p042-i1",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p042-i1.png",
           "srcHash": "7e236fc171c93b85716e65ff24c11c02",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q8(b), typeset as the State Examinations Commission set it. It reads: r² = 6² + 11² r = √36 + 121 = √157 Vol = 4/3 𝜋𝜋(√157) 3 = 8240∙20 … = 8240·2 [cm³] [1 DP] Mathematics – Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q8(b), typeset as the State Examinations Commission set it. It reads: r² = 6² + 11² r = √36 + 121 = √157 Vol = 4/3 𝜋(√157) 3 = 8240∙20 … = 8240·2 [cm³] [1 DP] Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -9201,7 +9201,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p043-i2",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p043-i2.png",
           "srcHash": "ea018c1d7047c5f47a738fd524df3a16",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q8(c)(iv), typeset as the State Examinations Commission set it. It reads: (c)(iv) V = 1/3 𝜋𝜋rr²h = 1/3 𝜋𝜋(20h − h²)h = 1/3 𝜋𝜋(20h² − h³) dddd/ddh = 1/3 𝜋𝜋(40h − 3h²) 1/3 𝜋𝜋(40h − 3h²) = 0 at local max/min 40h−3h² = 0 h(40 −3h) = 0 Mathematics – Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q8(c)(iv), typeset as the State Examinations Commission set it. It reads: (c)(iv) V = 1/3 𝜋rr²h = 1/3 𝜋(20h − h²)h = 1/3 𝜋(20h² − h³) dddd/ddh = 1/3 𝜋(40h − 3h²) 1/3 𝜋(40h − 3h²) = 0 at local max/min 40h−3h² = 0 h(40 −3h) = 0 Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -9471,7 +9471,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-HL-paper-p048-i2",
           "src": "/exam-figures/maths/markbank/maths-2024-HL-paper-p048-i2.png",
           "srcHash": "8fd156a9726590aff85a896da4f0824b",
-          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q10(a)(iii), typeset as the State Examinations Commission set it. It reads: |∠B′| = 180 −2(41·4) = 97·2° sin 41·4 = 20/|OOOO| |OOOO| = 20/(sin 41·4) = 30·24 … Area AB′A′ = Area B′ −Area A′ = 97·2/360 𝜋𝜋(120)² − 97·2/360 𝜋𝜋(30·24)² = 11438·84 … = 11 439 [cm²] [∈ℕ] Mathematics – Higher Level",
+          "alt": "The marking scheme's printed worked solution for 2024 HL Paper 2 Q10(a)(iii), typeset as the State Examinations Commission set it. It reads: |∠B′| = 180 −2(41·4) = 97·2° sin 41·4 = 20/|OOOO| |OOOO| = 20/(sin 41·4) = 30·24 … Area AB′A′ = Area B′ −Area A′ = 97·2/360 𝜋(120)² − 97·2/360 𝜋(30·24)² = 11438·84 … = 11 439 [cm²] [∈ℕ] Mathematics – Higher Level",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -9861,7 +9861,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p013-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p013-i0.png",
           "srcHash": "d276327dd5f80ba38cca14d9d27c30f0",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q4(a), typeset as the State Examinations Commission set it. It reads: Method 1: 4 + 5i) = 8 + 10i + 12i + 15i² (2 + 3i 4 −5i)(4 + 5i 16 + 20i−20i−25i² = (−7 + 22ii)/41 = − 7/41 + 22/41 ii Method 2: (2 + 3ii)/(4 − 5ii) = aa + bbbb (4 −5i)(a + b) = 2 + 3i 4a + 4b−5a−5bi² = 2 + 3i Re: 4a + 5b = 2 Im: −5a + 4b = 3 20a + 25b = 10 Re × 5: Im × 4: (−20aa + 16bb = 12)/22 41bb = 22 ∴ bb = 22/41 4aa + 5 ( 22/41) = 2 ∴ aa = − 7/41 (2 + 3ii)/(4 − 5ii) = − 7/41 + 22/41 ii Method 3 Let 𝜃𝜃₁ = tan^−¹ ",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q4(a), typeset as the State Examinations Commission set it. It reads: Method 1: 4 + 5i) = 8 + 10i + 12i + 15i² (2 + 3i 4 −5i)(4 + 5i 16 + 20i−20i−25i² = (−7 + 22ii)/41 = − 7/41 + 22/41 ii Method 2: (2 + 3ii)/(4 − 5ii) = aa + bbbb (4 −5i)(a + b) = 2 + 3i 4a + 4b−5a−5bi² = 2 + 3i Re: 4a + 5b = 2 Im: −5a + 4b = 3 20a + 25b = 10 Re × 5: Im × 4: (−20aa + 16bb = 12)/22 41bb = 22 ∴ bb = 22/41 4aa + 5 ( 22/41) = 2 ∴ aa = − 7/41 (2 + 3ii)/(4 − 5ii) = − 7/41 + 22/41 ii Method 3 Let 𝜃₁ = tan^−¹ ",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -9921,7 +9921,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p014-i1",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p014-i1.png",
           "srcHash": "e67a8853a53391e2852156202e215ae9",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q4(c), typeset as the State Examinations Commission set it. It reads: z⁶ = −64i so z = (−64i) Reference angle: 𝜃𝜃 = −90° or 270° or 3𝜋𝜋/2 or − 𝜋𝜋/2 Modulus: r = 64 General polar form: zz = [64 (cos ( 3𝜋𝜋/2 + 2nnnn) + ii sin ( 3𝜋𝜋/2 + 2nnnn))] De Moivre’s Theorem: zz = 64 1/6 [cos ( 𝜋𝜋/4 + nnnn/3 ) + ii sin ( 𝜋𝜋/4 + nnnn/3 ) ] (ANY TWO OF:)/(nn = 00: 2 (cos) ( 𝜋𝜋 4) + ii sin ( 𝜋𝜋 4)) = √2 + √2ii nn = 00: 2 (cos ( 𝜋𝜋/4) + ii sin ( 𝜋𝜋/4)) = √2 + √2ii nn = 11: 2 (cos ( 𝜋𝜋/4 + 𝜋𝜋/3) + ii si",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q4(c), typeset as the State Examinations Commission set it. It reads: z⁶ = −64i so z = (−64i) Reference angle: 𝜃 = −90° or 270° or 3𝜋/2 or − 𝜋/2 Modulus: r = 64 General polar form: zz = [64 (cos ( 3𝜋/2 + 2nnnn) + ii sin ( 3𝜋/2 + 2nnnn))] De Moivre’s Theorem: zz = 64 1/6 [cos ( 𝜋/4 + nnnn/3 ) + ii sin ( 𝜋/4 + nnnn/3 ) ] (ANY TWO OF:)/(nn = 00: 2 (cos) ( 𝜋 4) + ii sin ( 𝜋 4)) = √2 + √2ii nn = 00: 2 (cos ( 𝜋/4) + ii sin ( 𝜋/4)) = √2 + √2ii nn = 11: 2 (cos ( 𝜋/4 + 𝜋/3) + ii si",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -10101,7 +10101,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p019-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p019-i0.png",
           "srcHash": "58ccfadf0992ff473719e137d1ffcbea",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q6(b)(ii), typeset as the State Examinations Commission set it. It reads: (b)(ii) Method 1 xx = (−bb ± √0)/2aa = 4(9mm)/2(6mm) = 3 Method 2 6mx² −36m + 54m = 0 x² −6x + 9 = 0 (x−3)² = 0 x = 3 Method 3 One solution, 𝛼⇒h′(𝛼) = 0 h′(𝛼) = 12m−4r 12m−4r = 0 12m−36m = 0 𝛼−3 = 0 𝛼= 3 Method 4 Sum of roots: Product of roots: 𝛼𝛼² = 54mm/6mm 2𝛼𝛼 = 4rr/6mm = 9 [r, m > 0, ⇒𝛼> 0] 𝛼= ±3 𝛼= 3",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q6(b)(ii), typeset as the State Examinations Commission set it. It reads: (b)(ii) Method 1 xx = (−bb ± √0)/2aa = 4(9mm)/2(6mm) = 3 Method 2 6mx² −36m + 54m = 0 x² −6x + 9 = 0 (x−3)² = 0 x = 3 Method 3 One solution, 𝛼⇒h′(𝛼) = 0 h′(𝛼) = 12m−4r 12m−4r = 0 12m−36m = 0 𝛼−3 = 0 𝛼= 3 Method 4 Sum of roots: Product of roots: 𝛼² = 54mm/6mm 2𝛼 = 4rr/6mm = 9 [r, m > 0, ⇒𝛼> 0] 𝛼= ±3 𝛼= 3",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -10243,7 +10243,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-ask-p1-q7-b-ii",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q7-b-ii.png",
           "srcHash": "9d9b8e4721b9dddd6511529d41316bdb",
-          "alt": "The question as printed on the paper — Spiders build webs out of silk. This question involves two different models of how a spider might build its web. The functions in each model give lengths in centimetres. (b) In the second model, the web is made 𝑂𝑂3 in la",
+          "alt": "The question as printed on the paper — Spiders build webs out of silk. This question involves two different models of how a spider might build its web. The functions in each model give lengths in centimetres. (b) In the second model, the web is made 𝑂3 in la",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission"
     },
@@ -10603,7 +10603,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-ask-p1-q9-b-i",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q9-b-i.png",
           "srcHash": "baebe6a125a21e15ef8c9c5bd5127cc4",
-          "alt": "The question as printed on the paper — Dani drives a car. Over the first 8 seconds that Dani is driving her car, the car’s speed, in km/hour, can be approximated using the following function v(t): 8e^(0∙4t)−8 , 0 ≤ t ≤ 4 v(t) = ൝ −t² + 24t−48∙4 , 4 < t ≤ 8 wh",
+          "alt": "The question as printed on the paper — Dani drives a car. Over the first 8 seconds that Dani is driving her car, the car’s speed, in km/hour, can be approximated using the following function v(t): 8e^(0∙4t)−8 , 0 ≤ t ≤ 4 v(t) = { −t² + 24t−48∙4 , 4 < t ≤ 8 wh",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission"
     },
@@ -10633,7 +10633,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-ask-p1-q9-b-iii",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q9-b-iii.png",
           "srcHash": "74a5fbb566d81ddebf2a2c88638f323b",
-          "alt": "The question as printed on the paper — Dani drives a car. Over the first 8 seconds that Dani is driving her car, the car’s speed, in km/hour, can be approximated using the following function v(t): 8e^(0∙4t)−8 , 0 ≤ t ≤ 4 v(t) = ൝ −t² + 24t−48∙4 , 4 < t ≤ 8 wh",
+          "alt": "The question as printed on the paper — Dani drives a car. Over the first 8 seconds that Dani is driving her car, the car’s speed, in km/hour, can be approximated using the following function v(t): 8e^(0∙4t)−8 , 0 ≤ t ≤ 4 v(t) = { −t² + 24t−48∙4 , 4 < t ≤ 8 wh",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission"
     },
@@ -10867,7 +10867,7 @@ export const CARDS: SecCard[] = [
     questionText: "The line l has equation y= − 1 3 x+ 11. The line h has equation 2x−5y + 10 = 0. Work out the size of the acute angle between the lines l and h. Give your answer correct to the nearest degree",
     tariffModel: {"kind":"fixed","notation":"Scale (0, 3, 5, 7, 10)","answer":null,"ofParts":null,"perPart":null}, totalMarks: 10,
     rows: [
-    { id: "maths-2025-hl-p2-q1-b-r1", kind: "anyN", verbatim: "Finds m_l", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Full Credit –1: Finds both acute and obtuse angles, doesn’t specify which is the answer; Apply a * for incorrect rounding. Note: Accept correct answer without unit. Consider solution as consisting of 4 steps: Method 1. Note: For Step 3, accept substitution without ± Step 1. Finds m_l Step 2. Finds m_h Step 3. Subs in formula Step 4. Finds 𝜃 Method 2 Step 1. Finds m_l Step 2. Finds m_h Step 3. Finds 161 ∙56 …⁰ and 21 ∙8 …⁰ Step 4. Finds 𝜃 Method 3 Step 1. Finds m_l Step 2. Finds m_h Step 3. 𝜃𝜃 = tan^−¹ ¹/3 + tan^−¹ ²/5 Step 4. Finds 𝜃. Marked in order: Step 1; Step 2; Step 3; Step 1; Step 2; Step 3; Step 1; Step 2; Step 3.", openList: true, group: {"claimMax":4,"perOption":3,"options":["Finds m_l","Finds m_h","Subs in formula","Finds m_l","Finds m_h","Finds 161 ∙56 …⁰ and 21 ∙8 …⁰","Finds m_l","Finds m_h","𝜃𝜃 = tan^−¹ ¹/3 + tan^−¹ ²/5"],"perOptionSteps":[3,2,2,3]} },
+    { id: "maths-2025-hl-p2-q1-b-r1", kind: "anyN", verbatim: "Finds m_l", marks: 10, contextNote: "The scheme marks this on a sliding scale: nothing for 0, one part for 3, two parts for 5, three parts for 7, four parts for 10. Full Credit –1: Finds both acute and obtuse angles, doesn’t specify which is the answer; Apply a * for incorrect rounding. Note: Accept correct answer without unit. Consider solution as consisting of 4 steps: Method 1. Note: For Step 3, accept substitution without ± Step 1. Finds m_l Step 2. Finds m_h Step 3. Subs in formula Step 4. Finds 𝜃 Method 2 Step 1. Finds m_l Step 2. Finds m_h Step 3. Finds 161 ∙56 …⁰ and 21 ∙8 …⁰ Step 4. Finds 𝜃 Method 3 Step 1. Finds m_l Step 2. Finds m_h Step 3. 𝜃 = tan^−¹ ¹/3 + tan^−¹ ²/5 Step 4. Finds 𝜃. Marked in order: Step 1; Step 2; Step 3; Step 1; Step 2; Step 3; Step 1; Step 2; Step 3.", openList: true, group: {"claimMax":4,"perOption":3,"options":["Finds m_l","Finds m_h","Subs in formula","Finds m_l","Finds m_h","Finds 161 ∙56 …⁰ and 21 ∙8 …⁰","Finds m_l","Finds m_h","𝜃 = tan^−¹ ¹/3 + tan^−¹ ²/5"],"perOptionSteps":[3,2,2,3]} },
     ],
     questionFigure: {
           "candId": "maths-2025-HL-ask-p2-q1-b",
@@ -10881,7 +10881,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p042-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p042-i0.png",
           "srcHash": "20637a75985c45145c508a8c1fc8e66f",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q1(b), typeset as the State Examinations Commission set it. It reads: Method 1 mm_l_l = − 1/3 mm_h = 2/5 tan 𝜃𝜃 = ± − 1/3 − 2/5 tan 𝜃𝜃 = ± (3 5)/(1 (2) 1 + (− 3) 5) 1 + (− 1/3) (2/5) tan 𝜃𝜃 = ± (−11)/13 𝜃= 40∙2 … ° = 40[°][∈ℕ] Method 2 mm_l_l = − 1/3 mm_h = 2/5 tan^(−1) (−1 3) = 161 ∙56 …⁰ tan^−¹ (2/5) = 21 ∙ 80 …⁰ 𝛼= 161 ∙56 …⁰ −21 ∙80 …⁰ = 139 ∙76 … ° 𝜃= 180⁰ −139 ∙76 …⁰ = 40∙24 … ° = 40[°][∈ℕ] Method 3 𝜃𝜃 = tan^−¹ 1/3 + tan^−¹ 2/5 = 40 ∙2 … = 40[°][∈ℕ]",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q1(b), typeset as the State Examinations Commission set it. It reads: Method 1 mm_l_l = − 1/3 mm_h = 2/5 tan 𝜃 = ± − 1/3 − 2/5 tan 𝜃 = ± (3 5)/(1 (2) 1 + (− 3) 5) 1 + (− 1/3) (2/5) tan 𝜃 = ± (−11)/13 𝜃= 40∙2 … ° = 40[°][∈ℕ] Method 2 mm_l_l = − 1/3 mm_h = 2/5 tan^(−1) (−1 3) = 161 ∙56 …⁰ tan^−¹ (2/5) = 21 ∙ 80 …⁰ 𝛼= 161 ∙56 …⁰ −21 ∙80 …⁰ = 139 ∙76 … ° 𝜃= 180⁰ −139 ∙76 …⁰ = 40∙24 … ° = 40[°][∈ℕ] Method 3 𝜃 = tan^−¹ 1/3 + tan^−¹ 2/5 = 40 ∙2 … = 40[°][∈ℕ]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -11301,7 +11301,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p054-i1",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p054-i1.png",
           "srcHash": "847c2b0b6796c98e39d2275daff7fe45",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q6(b), typeset as the State Examinations Commission set it. It reads: (b) Period = 1/2 (2𝜋𝜋) = 𝜋𝜋 [radians] Range: |sin x| has a range of [0, 1] |4 sinx| has a range of [0, 4] |4 sinx| −1 has a range of [−1, 3]",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q6(b), typeset as the State Examinations Commission set it. It reads: (b) Period = 1/2 (2𝜋) = 𝜋 [radians] Range: |sin x| has a range of [0, 1] |4 sinx| has a range of [0, 4] |4 sinx| −1 has a range of [−1, 3]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -11511,7 +11511,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p059-i0",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p059-i0.png",
           "srcHash": "468e1d6261bacc053553a50c39ed7a43",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q7(c)(v), typeset as the State Examinations Commission set it. It reads: (c)(v) Method 1 Area sector CCCCCC = 26/360 𝜋𝜋(√178) 2 = 40 ∙3869 … Sector −∆C = 40·3869 … −39 = 1·3869 … Sector −∆A = 23·4837 −21 = 2·4837 Total shaded area = 1·3869 … + 2·4837 … = 3 ∙87[km²][2 D. P. ] Method 2 Area sector CCCCCC = 26/360 𝜋𝜋(√178) 2 = 40 ∙3869 … Total shaded area: 40·3869 … + 23·4837 −39 −21 = 3∙87 [km₂] [2 D.P.] Method 3 |∠CCCCCC| = 13𝜋𝜋/90 Area of sector CCCCCC = 1/2 (√178) 2 13𝜋𝜋/90 = 40∙3869 … T",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q7(c)(v), typeset as the State Examinations Commission set it. It reads: (c)(v) Method 1 Area sector CCCCCC = 26/360 𝜋(√178) 2 = 40 ∙3869 … Sector −∆C = 40·3869 … −39 = 1·3869 … Sector −∆A = 23·4837 −21 = 2·4837 Total shaded area = 1·3869 … + 2·4837 … = 3 ∙87[km²][2 D. P. ] Method 2 Area sector CCCCCC = 26/360 𝜋(√178) 2 = 40 ∙3869 … Total shaded area: 40·3869 … + 23·4837 −39 −21 = 3∙87 [km₂] [2 D.P.] Method 3 |∠CCCCCC| = 13𝜋/90 Area of sector CCCCCC = 1/2 (√178) 2 13𝜋/90 = 40∙3869 … T",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []
@@ -11841,7 +11841,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2025-HL-paper-p068-i1",
           "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p068-i1.png",
           "srcHash": "3caa84a845930095ae659e9670e29d0e",
-          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q10(a)(ii), typeset as the State Examinations Commission set it. It reads: (a)(ii) zz = (xx − 𝜇𝜇)/𝜎𝜎 zz = (420 − 400)/60 = 1/3 = 0∙33 1 −P(z < 0∙33) = 1 −0∙6293 = 0.3707 = 0.37 [2 D. P. ] or accept: 1 −P(z < 0∙34) = 1 −0∙6331 = 0.3669 = 0.37 [2 D. P. ]",
+          "alt": "The marking scheme's printed worked solution for 2025 HL Paper 2 Q10(a)(ii), typeset as the State Examinations Commission set it. It reads: (a)(ii) zz = (xx − 𝜇)/𝜎 zz = (420 − 400)/60 = 1/3 = 0∙33 1 −P(z < 0∙33) = 1 −0∙6293 = 0.3707 = 0.37 [2 D. P. ] or accept: 1 −P(z < 0∙34) = 1 −0∙6331 = 0.3669 = 0.37 [2 D. P. ]",
           "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []

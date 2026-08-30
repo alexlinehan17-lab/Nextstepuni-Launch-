@@ -417,7 +417,7 @@ export const CARDS: SecCard[] = [
     questionText: "Hence, or otherwise, describe a winning strategy from state (𝑛, 𝑚), where 𝑛≠𝑚.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
-    { id: "r-1", kind: "point", verbatim: "A winning strategy from state (𝒏𝒏, 𝒎𝒎) where 𝒏𝒏≠𝒎𝒎 would be to even the piles. Leave (n,", marks: 2 },
+    { id: "r-1", kind: "point", verbatim: "A winning strategy from state (𝒏, 𝒎) where 𝒏≠𝒎 would be to even the piles. Leave (n,", marks: 2 },
     ],
     figure: {
           "candId": "computer-science-2021-HL-paper-q14-fig0",
@@ -741,7 +741,6 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "The circuits in a computer's processor are made up of transistors. A transistor is a switch that is activated by the electronic signals it receives. Signals can be 0V or 5V. The digits 1 and 0 used in binary reflect the on and off states of a transistor.", marks: null },
     { id: "r-2", kind: "point", verbatim: "As there are only two possible states, binary is more reliable than any other number systems.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "(i) 𝟐𝟐𝟒𝟒= 𝟏𝟏𝟏𝟏 unique pieces of information can be represented using four-bits.", marks: null },
     ],
   } as SecCard,
   {

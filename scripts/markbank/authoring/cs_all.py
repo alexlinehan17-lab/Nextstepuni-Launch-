@@ -47,6 +47,10 @@ import cs_question_figures as CSF                           # noqa: E402
 LEAD_IN = re.compile(r'^(any response that captures|any \w+ of the following|'
                      r'accept any|examples? of|the following are|'
                      r'any \d+ (?:from|of)|marks? awarded for)', re.I)
+# Two copies of one maths digit, which is what the text layer returns for a
+# scheme set in CambriaMath. The value cannot be recovered from the text: the
+# same font mis-maps some digits, so the pair is not necessarily the digit.
+DOUBLED_MATHS_DIGIT = re.compile(r'([\U0001D7CE-\U0001D7FF])\1')
 # How much of the answer earns what, rather than what the answer is. The
 # scheme prints these beside the marking points and they are not among them.
 CREDIT_RULE = re.compile(
@@ -117,6 +121,14 @@ def cardable(points):
     for i, p in enumerate(points):
         t = ' '.join(p.split())
         if not t or LEAD_IN.match(t) or CREDIT_RULE.match(t):
+            continue
+        # A doubled maths digit has lost its value. The scheme sets maths in
+        # CambriaMath, the text layer returns every glyph twice, and the same
+        # font mis-maps some digits: 2021 HL Q2 prints "2^4 = 16" and comes
+        # back as 2,2,4,4,=,1,1,1,1, so collapsing the pairs would state
+        # "2^4 = 11". The point is dropped and the card keeps its others,
+        # rather than the whole card being lost to one unreadable line.
+        if DOUBLED_MATHS_DIGIT.search(t):
             continue
         out.append((i, t))
     return out

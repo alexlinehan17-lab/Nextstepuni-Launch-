@@ -10431,7 +10431,7 @@ export const CARDS: SecCard[] = [
           "candId": "maths-2024-OL-paper-p041-i1",
           "src": "/exam-figures/maths/markbank/maths-2024-OL-paper-p041-i1.png",
           "srcHash": "cc67970bdc3088d151f93d181436ccc0",
-          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q9(d)(i), typeset as the State Examinations Commission set it. It reads: 𝜃= 360 −2(70) 𝜃= 220[°] Arc Length = 220/360 [2𝜋𝜋(20)] = 76 ∙79 … = 76 ∙8 [cm]",
+          "alt": "The marking scheme's printed worked solution for 2024 OL Paper 2 Q9(d)(i), typeset as the State Examinations Commission set it. It reads: 𝜃= 360 −2(70) 𝜃= 220[°] Arc Length = 220/360 [2𝜋(20)] = 76 ∙79 … = 76 ∙8 [cm]",
           "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission",
           "solution": true,
           "lettersVisible": []

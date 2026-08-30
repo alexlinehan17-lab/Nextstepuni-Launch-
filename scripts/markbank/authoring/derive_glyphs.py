@@ -58,6 +58,14 @@ LIGATURE = {
     '\uf0fe': '\u2611',   # Wingdings 0xFE -- a ballot box WITH a check in it,
                           # cropped from 2024 OL page 16 and looked at: it marks
                           # which of three sorted lists is the correct answer.
+    '\uf0f1': '\u2708',   # Webdings 0xF1 -- cropped from 2023 HL Maths Paper 1
+                          # page 13 and looked at: an AEROPLANE, used as the
+                          # bullet on a flight. An encoding chart would have
+                          # called it the plus-minus sign, which is why these
+                          # are settled by looking rather than by charting.
+    '\uf0da': '\u2603',   # Webdings 0xDA -- the same page, the same list: a
+                          # cloud with snow falling from it, cropped and looked
+                          # at, standing for the weather beside the flight.
     '\uf067': '\u2192',   # Wingdings 3 0x67 -- "6O2 -> 6CO2 + 6H2O"
     '\uf081': '\u2460',   # Wingdings 0x81 -- a circled 1
     '\u0424': '\u03a6',   # renders as Phi: "[Phi] = 4.33 x 10^-19 (J)"
@@ -72,6 +80,8 @@ LIGATURE = {
 # original font's glyph order, so a glyph's neighbours place it. The evidence
 # for each is the neighbour list, recorded here so the call can be re-checked.
 NEIGHBOUR = {
+    '\u0d5d': '{',   # cropped from 2025 HL Maths Paper 1 page 24 and looked at:
+                     # the tall brace of a piecewise definition, "v(t) = {".
     '\u0d6c': '(',   # gid 3436, between 3435='(' and 3439=')': a size variant
     '\u0d70': ')',   # gid 3440, and it closes 3436 in "cos(t + 2npi) + isin(2pi
     '\u0bec': '\U0001d466',  # gid 3052, follows 3051='x': the y of dy/dx

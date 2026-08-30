@@ -920,12 +920,6 @@
     "kind": "point",
     "verbatim": "As there are only two possible states, binary is more reliable than any other number systems.",
     "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "(i) 𝟐𝟐𝟒𝟒= 𝟏𝟏𝟏𝟏 unique pieces of information can be represented using four-bits.",
-    "marks": null
    }
   ]
  },

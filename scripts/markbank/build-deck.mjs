@@ -200,10 +200,35 @@ const BROKEN = /[\u0100-\u1FFF\uE000-\uF8FF\uFB00-\uFB4F]/g;
 const GLYPHS = JSON.parse(readFileSync(
   resolve(ROOT, 'scripts/markbank/authoring/glyphmap.json'), 'utf8'));
 
+/* A phantom second copy of every maths letter. The SEC's schemes set maths in
+ * CambriaMath and the text layer returns each glyph TWICE -- get_texttrace
+ * shows the real glyph followed by one with glyph id -1 at the identical
+ * drawing origin, which is a duplicate rather than a character. A student read
+ * "𝛼𝛼" for alpha on 21 Maths cards and "(𝒏𝒏, 𝒎𝒎)" on a Computer Science one.
+ *
+ * LETTERS only. A doubled maths DIGIT cannot be collapsed, because the same
+ * font also mis-maps some digits: 2021 HL Computer Science Q2 prints "2^4 =
+ * 16" and the text layer gives 2,2,4,4,=,1,1,1,1 -- the 6 arrives as a 1, so
+ * collapsing the pairs would state "2^4 = 11". Those are caught by BROKEN
+ * below and the card is dropped rather than shipped saying something the
+ * scheme never said. */
+const DOUBLED_MATHS_LETTER = /([\u{1D400}-\u{1D7CD}])\1/gu;
+/* A doubled maths digit, whose value the text layer has lost. */
+const DOUBLED_MATHS_DIGIT = /([\u{1D7CE}-\u{1D7FF}])\1/u;
+
 function repairText(text) {
-  if (typeof text !== 'string' || !BROKEN.test(text)) return text;
+  if (typeof text !== 'string') return text;
+  // To a fixed point: the scheme sometimes doubles an already-doubled run, so
+  // "𝜋𝜋𝜋𝜋" needs two passes and one pass left half of them behind.
+  let out = text;
+  for (let i = 0; i < 4; i++) {
+    const next = out.replace(DOUBLED_MATHS_LETTER, '$1');
+    if (next === out) break;
+    out = next;
+  }
+  if (!BROKEN.test(out)) return out;
   BROKEN.lastIndex = 0;
-  return [...text].map(ch => GLYPHS[ch] ?? ch).join('');
+  return [...out].map(ch => GLYPHS[ch] ?? ch).join('');
 }
 
 /* Every string on the card, not a list of the fields that were mangled the
@@ -229,6 +254,10 @@ function walkStrings(node, fn) {
 function repairGlyphs(card) { walkStrings(card, repairText); }
 
 function brokenGlyphs(text) {
+  if (DOUBLED_MATHS_DIGIT.test(text)) {
+    return 'a doubled maths digit whose value the text layer has lost — the '
+      + 'font mis-maps some digits, so the pair cannot be collapsed';
+  }
   const hits = (text.match(BROKEN) ?? []).filter(ch => !REAL.test(ch));
   if (!hits.length) return null;
   const uniq = [...new Set(hits)];
@@ -590,6 +619,14 @@ for (const c of cards) {
     const rec = figureRecord(c.questionFigureKey);
     if (rec.error) { dropped.push(`${c.id}: question figure — ${rec.error}`); continue; }
     if (rec.solution) { dropped.push(`${c.id}: question figure "${c.questionFigureKey}" is a solution crop`); continue; }
+    // Repaired and gated the same way the ANSWER figure's alt is, a few lines
+    // above. It was neither, so every mangled glyph and every doubled maths
+    // letter in a question-side crop's description went straight to the deck
+    // — which is where the last sixteen "𝜋𝜋" in the Maths deck were hiding,
+    // in alt text a screen reader would have read aloud.
+    rec.alt = repairText(rec.alt ?? '');
+    const qMangled = brokenGlyphs(rec.alt);
+    if (qMangled) { dropped.push(`${c.id}: question figure alt text — ${qMangled}`); continue; }
     questionFigure = { candId: rec.candId, src: rec.src, srcHash: rec.srcHash,
       alt: rec.alt, lettersVisible: [], attribution: rec.attribution };
   }
