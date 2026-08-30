@@ -5061,7 +5061,7 @@
  },
  {
   "id": "maths-2021-ol-p1-q8-c",
-  "topicId": "maths-3-1",
+  "topicId": "maths-3-4",
   "conceptId": "explain-why-box-height-units-cannot",
   "level": "ordinary",
   "year": 2021,
@@ -7097,7 +7097,6 @@
   "section": "B",
   "questionRef": "2021 OL Paper 2 Q9(b)",
   "questionText": "The aircraft flies from airport A to airport B, and then on to airport C, at the same altitude. The pilot records the flight summary on the given diagram",
-  "stem": "The line segment [ SE ], shown below, represents an airport runway. The point S and the point E represent the start and end points of the runway respectively. The diagram is drawn to a scale of 1 unit = 250 metres.",
   "figureKey": "maths-2021-OL-paper-p052-i0",
   "labelKey": [],
   "tariffModel": {
@@ -7132,7 +7131,8 @@
     }
    }
   ],
-  "notes": ""
+  "notes": "",
+  "questionFigureKey": "maths-2021-OL-ask-p2-q9-b"
  },
  {
   "id": "maths-2021-ol-p2-q9-b-i",
@@ -7721,7 +7721,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q3-a-i",
-  "topicId": "maths-4-4",
+  "topicId": "maths-3-1",
   "conceptId": "part",
   "level": "higher",
   "year": 2022,
@@ -7766,7 +7766,7 @@
  },
  {
   "id": "maths-2022-hl-p1-q3-a-ii",
-  "topicId": "maths-4-4",
+  "topicId": "maths-3-1",
   "conceptId": "part",
   "level": "higher",
   "year": 2022,
@@ -10498,7 +10498,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q8-a",
-  "topicId": "maths-1-2",
+  "topicId": "maths-1-6",
   "conceptId": "jena-researching-fuel-consumption-cars-she",
   "level": "higher",
   "year": 2022,
@@ -10583,7 +10583,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q8-a-iii",
-  "topicId": "maths-1-2",
+  "topicId": "maths-1-6",
   "conceptId": "iii-two-other-cars-have-miles",
   "level": "higher",
   "year": 2022,
@@ -10857,7 +10857,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q9-c-i",
-  "topicId": "maths-3-3",
+  "topicId": "maths-3-4",
   "conceptId": "airplane-flies-its-engine-makes-noise",
   "level": "higher",
   "year": 2022,
@@ -10947,7 +10947,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q9-d-i",
-  "topicId": "maths-3-3",
+  "topicId": "maths-3-4",
   "conceptId": "explain-briefly-why-equation-holds-100",
   "level": "higher",
   "year": 2022,
@@ -11081,7 +11081,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q10-a-ii",
-  "topicId": "maths-4-4",
+  "topicId": "maths-1-2",
   "conceptId": "runners-fastest-times-qualified-final-assuming",
   "level": "higher",
   "year": 2022,
@@ -11218,7 +11218,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q10-d",
-  "topicId": "maths-4-4",
+  "topicId": "maths-1-2",
   "conceptId": "300-runners-take-part-road-race",
   "level": "higher",
   "year": 2022,
@@ -11269,7 +11269,7 @@
  },
  {
   "id": "maths-2022-hl-p2-q10-e",
-  "topicId": "maths-4-4",
+  "topicId": "maths-1-2",
   "conceptId": "sorcha-ran-two-different-marathons-windy",
   "level": "higher",
   "year": 2022,
@@ -12428,7 +12428,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q8-a-i",
-  "topicId": "maths-3-3",
+  "topicId": "maths-4-2",
   "conceptId": "work-out-how-many-acid-200",
   "level": "ordinary",
   "year": 2022,
@@ -12553,7 +12553,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q8-a-iv",
-  "topicId": "maths-3-3",
+  "topicId": "maths-4-2",
   "conceptId": "when-she-making-another-mixture-jessica",
   "level": "ordinary",
   "year": 2022,
@@ -12598,7 +12598,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q8-b-i",
-  "topicId": "maths-3-3",
+  "topicId": "maths-4-2",
   "conceptId": "write-down-values-cube-these-values",
   "level": "ordinary",
   "year": 2022,
@@ -13042,7 +13042,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q10-a-i",
-  "topicId": "maths-3-3",
+  "topicId": "maths-4-2",
   "conceptId": "how-high-metres-was-ball-when",
   "level": "ordinary",
   "year": 2022,
@@ -13082,7 +13082,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q10-a-ii",
-  "topicId": "maths-3-3",
+  "topicId": "maths-4-2",
   "conceptId": "ball-was-caught-after-seconds-how",
   "level": "ordinary",
   "year": 2022,
@@ -13122,7 +13122,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q10-a-iii",
-  "topicId": "maths-3-3",
+  "topicId": "maths-4-2",
   "conceptId": "iii-when-ball-passed-over-halfway",
   "level": "ordinary",
   "year": 2022,
@@ -13169,7 +13169,7 @@
  },
  {
   "id": "maths-2022-ol-p1-q10-a-iv",
-  "topicId": "maths-3-3",
+  "topicId": "maths-4-2",
   "conceptId": "how-long-took-ball-reach-its",
   "level": "ordinary",
   "year": 2022,
@@ -17009,7 +17009,7 @@
  },
  {
   "id": "maths-2023-hl-p1-q9-b-i",
-  "topicId": "maths-3-1",
+  "topicId": "maths-2-3",
   "conceptId": "complete-table-showing-pairs-factors",
   "level": "higher",
   "year": 2023,
@@ -17333,7 +17333,7 @@
  },
  {
   "id": "maths-2023-hl-p1-q10-e-ii",
-  "topicId": "maths-3-4",
+  "topicId": "maths-5-2",
   "conceptId": "starts-increase-rate-units-per-second",
   "level": "higher",
   "year": 2023,
@@ -24954,7 +24954,6 @@
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q1(a)(i)–(iii)",
   "questionText": "The mode of the data is 34 metres. Use this to write down the value of a",
-  "stem": "A group of 22 students was tested to see how far, in metres, each of them could swim without stopping for a rest. The results of the testing are shown in the ordered stem and leaf plot below. Four of the entries have been replaced with the letters a, b, c, and d. 2 2 7 5 3 4 4 8 4 0 1 5 6 9 5 2 3 7 7 8 6 1 8 Key: 2|7 = 27 metres Seven of the 22 students took swimming lessons. They were re-tested after the lessons, to see how far they could now swim without stopping. The table and graph below show the results of the initial test and of the re-test for these students. Distance in Distance 400 initial test in re-test Distance in re-test (m) (m) (m) 300 22 25 200 34 40 38 65 100 45 96 49 142 0 0 80 20 40 60 57 262 Distance in initial test (m) 61 350",
   "figureKey": "maths-2024-HL-paper-p031-i0",
   "labelKey": [],
   "tariffModel": {
@@ -24989,7 +24988,8 @@
     }
    }
   ],
-  "notes": ""
+  "notes": "",
+  "questionFigureKey": "maths-2024-HL-ask-p2-q1-a-i"
  },
  {
   "id": "maths-2024-hl-p2-q1-b",
@@ -25001,7 +25001,6 @@
   "section": "B",
   "questionRef": "2024 HL Paper 2 Q1(b)",
   "questionText": "How would you best describe how the results changed for these students, from the initial test to the re-test?",
-  "stem": "A group of 22 students was tested to see how far, in metres, each of them could swim without stopping for a rest. The results of the testing are shown in the ordered stem and leaf plot below. Four of the entries have been replaced with the letters a, b, c, and d. 2 2 7 5 3 4 4 8 4 0 1 5 6 9 5 2 3 7 7 8 6 1 8 Key: 2|7 = 27 metres",
   "figureKey": "maths-2024-HL-paper-p031-i1",
   "labelKey": [],
   "tariffModel": {
@@ -25034,7 +25033,8 @@
     }
    }
   ],
-  "notes": ""
+  "notes": "",
+  "questionFigureKey": "maths-2024-HL-ask-p2-q1-b"
  },
  {
   "id": "maths-2024-hl-p2-q2-a",
@@ -27401,7 +27401,6 @@
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q6(a)(i), (ii)",
   "questionText": "Estimate the value of k(x) when x = 2∙5. Show your work on the graph",
-  "stem": "The graph of a function k(x) is shown on the co-ordinate diagram below, for 0 ≤ x ≤ 5, x∈ℝ. y 1 2 3 4 5 6 7 8 9 10 11 12 k(x) x 0 1 2 3 4 5",
   "figureKey": "maths-2024-OL-paper-p013-i0",
   "labelKey": [],
   "tariffModel": {
@@ -27436,7 +27435,8 @@
     }
    }
   ],
-  "notes": ""
+  "notes": "",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q6-a-i"
  },
  {
   "id": "maths-2024-ol-p1-q6-b-i",
@@ -27448,7 +27448,6 @@
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q6(b)(i)",
   "questionText": "Using the values of k(x) in the table above, show that the Trapezoidal Rule will give an estimate of 32∙1 units² for this area",
-  "stem": "The graph of a function k(x) is shown on the co-ordinate diagram below, for 0 ≤ x ≤ 5, x∈ℝ. He takes the following measurements from the graph on the previous page: x 0 1 2 3 4 5 k(x) 12 9 6∙8 5∙1 3∙8 2∙8 Using the values of k(x) in the table above, show that the Trapezoidal Rule will give an estimate of 32∙1 units² for this area. The actual area under k(x), between 0 and 5, is 31∙8 units². Liam estimated the area",
   "figureKey": "maths-2024-OL-paper-p013-i1",
   "labelKey": [],
   "tariffModel": {
@@ -27481,7 +27480,8 @@
     }
    }
   ],
-  "notes": ""
+  "notes": "",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q6-b-i"
  },
  {
   "id": "maths-2024-ol-p1-q6-b-ii",
@@ -27493,7 +27493,6 @@
   "section": "B",
   "questionRef": "2024 OL Paper 1 Q6(b)(ii)",
   "questionText": "The actual area under k(x), between 0 and 5, is 31∙8 units². Liam estimated the area was 32∙1 units² by using the Trapezoidal Rule",
-  "stem": "The graph of a function k(x) is shown on the co-ordinate diagram below, for 0 ≤ x ≤ 5, x∈ℝ. He takes the following measurements from the graph on the previous page: x 0 1 2 3 4 5 k(x) 12 9 6∙8 5∙1 3∙8 2∙8 Using the values of k(x) in the table above, show that the Trapezoidal Rule will give an estimate of 32∙1 units² for this area. The actual area under k(x), between 0 and 5, is 31∙8 units². Liam estimated the area",
   "figureKey": "maths-2024-OL-paper-p013-i2",
   "labelKey": [],
   "tariffModel": {
@@ -27526,7 +27525,8 @@
     }
    }
   ],
-  "notes": ""
+  "notes": "",
+  "questionFigureKey": "maths-2024-OL-ask-p1-q6-b-ii"
  },
  {
   "id": "maths-2024-ol-p1-q7-a-i",
@@ -29056,7 +29056,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q5-a-i",
-  "topicId": "maths-1-2",
+  "topicId": "maths-3-3",
   "conceptId": "fill-three-missing-numbers-horizontal-axis",
   "level": "ordinary",
   "year": 2024,
@@ -29188,7 +29188,7 @@
  },
  {
   "id": "maths-2024-ol-p2-q6-a-i",
-  "topicId": "maths-2-4",
+  "topicId": "maths-2-1",
   "conceptId": "construct-bisector-angle-using-only-compass",
   "level": "ordinary",
   "year": 2024,
@@ -32207,7 +32207,7 @@
  },
  {
   "id": "maths-2025-hl-p1-q10-d-iii",
-  "topicId": "maths-4-1",
+  "topicId": "maths-2-2",
   "conceptId": "value-which-given-lim-4t2",
   "level": "higher",
   "year": 2025,
@@ -32254,7 +32254,7 @@
  },
  {
   "id": "maths-2025-hl-p1-q10-e-i",
-  "topicId": "maths-4-1",
+  "topicId": "maths-2-2",
   "conceptId": "write-down-value",
   "level": "higher",
   "year": 2025,
@@ -32923,7 +32923,7 @@
  },
  {
   "id": "maths-2025-hl-p2-q5-b-i",
-  "topicId": "maths-2-3",
+  "topicId": "maths-2-2",
   "conceptId": "part",
   "level": "higher",
   "year": 2025,
@@ -32963,7 +32963,7 @@
  },
  {
   "id": "maths-2025-hl-p2-q5-b-ii",
-  "topicId": "maths-2-3",
+  "topicId": "maths-2-2",
   "conceptId": "shown-again-diagram-right",
   "level": "higher",
   "year": 2025,
@@ -35514,7 +35514,7 @@
  },
  {
   "id": "maths-2025-ol-p1-q9-a-i",
-  "topicId": "maths-3-1",
+  "topicId": "maths-4-1",
   "conceptId": "how-much-money-will-account-after",
   "level": "ordinary",
   "year": 2025,

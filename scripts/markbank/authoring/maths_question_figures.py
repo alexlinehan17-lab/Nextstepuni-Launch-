@@ -387,6 +387,22 @@ class Sitting:
 
     # ---- the per-card plan ----
 
+    def _art_span(self, band):
+        """The band narrowed to the artwork inside it, or None if it has none."""
+        (sp, sy), (ep, ey) = band
+        hits = []
+        for page in range(sp, min(ep, self.doc.page_count - 1) + 1):
+            lo = sy if page == sp else Y_TOP
+            hi = ey if page == ep else Y_FOOT
+            for r in self.ink(page):
+                if r.y0 >= lo - 1 and r.y1 <= hi + 1 and (r.width > 30 or r.height > 30):
+                    hits.append((page, r.y0, r.y1))
+        if not hits:
+            return None
+        top = min(hits, key=lambda h: (h[0], h[1]))
+        bot = max(hits, key=lambda h: (h[0], h[2]))
+        return ((top[0], max(Y_TOP, top[1] - 6)), (bot[0], min(Y_FOOT, bot[2] + 6)))
+
     def plan(self, qnum, letter, roman, part_text='', force=None):
         """(bands, note): the page/y bands whose stitch is the card's context."""
         force = force or {}
@@ -490,11 +506,55 @@ class Sitting:
         # words are useless here — parts of one question always talk about the
         # same thing, so that test pulled every earlier sibling into every
         # crop and the audit fleet called it irrelevant context 120 times.
+        # A sibling is another QUESTION on the card. Showing one leaves the
+        # student unable to tell which of the two the card is asking, so it
+        # rides along only where the paper itself makes it necessary:
+        #
+        #   * the ask CHAINS on it -- "Hence", "your answer to part (i)" --
+        #     and cannot be attempted without it, or
+        #   * the setup promises something printed below AND that band really
+        #     does carry artwork.
+        #
+        # The second test used to be the promise alone, which is only a form of
+        # words: "shown below" pulled the previous part onto 67 cards whose ask
+        # needed nothing from it, among them "Find h'(x), the derivative of
+        # h(x)" carrying part (a)'s whole table.
+        sib_band = (first_roman, pos(scope[ri])) if (first_roman and ri > 0) else None
+
+        def _band_has_art(band):
+            if not band:
+                return False
+            (sp, sy), (ep, ey) = band
+            for page in range(sp, min(ep, self.doc.page_count - 1) + 1):
+                lo = sy if page == sp else Y_TOP
+                hi = ey if page == ep else Y_FOOT
+                for r in self.ink(page):
+                    if r.y0 >= lo - 1 and r.y1 <= hi + 1 and (
+                            r.width > 30 or r.height > 30):
+                        return True
+            return False
+
+        chains = bool(NEEDS_SIBLINGS.search(part_text))
         siblings = force.get('siblings',
-                             bool(NEEDS_SIBLINGS.search(part_text))
-                             or stem_points_down) and ri > 0
+                             chains or (stem_points_down and _band_has_art(sib_band))
+                             ) and ri > 0
         if siblings:
-            bands.append((first_roman, pos(scope[ri])))
+            band = (first_roman, pos(scope[ri]))
+            if not chains:
+                # The sibling is here for the DIAGRAM its setup promised, not
+                # for its question. Taking the whole band brought that question
+                # along too, and the card then showed two asks with nothing
+                # saying which one it wanted -- 27 cards did that.
+                #
+                # So narrow to the artwork. And where the sibling holds NO
+                # artwork, drop it: the promised diagram is already in the
+                # letter's own setup above it (2021 OL P1 Q9(a) prints the dot
+                # patterns under "(a)", so the (i) band is nothing but (i)'s
+                # question). Where the ask CHAINS -- "Hence" -- the sibling
+                # stays whole, because the paper has made it part of this ask.
+                band = self._art_span(band)
+            if band:
+                bands.append(band)
             ctx.append(self.band_text(bands[-1:], 2000))
         # The question stem rides along when the part reaches for it by name
         # ("the diagram", "above") — and, since the 2021 OL "the lake" audit
@@ -872,6 +932,40 @@ class Sitting:
         indented_before = any(l[3] >= 80.0 and (l[0], l[1]) < cut for l in inside)
         return ((sp, sy), cut) if indented_before else band
 
+    def _stop_at_foreign_ask(self, page, top, bot, ):
+        """Cut a window short at another part's QUESTION.
+
+        A window grows to cover ink anchored in its band, and the growth is a
+        contiguous y-range -- so a diagram that reaches down past the next part
+        marker drags that part's question into the crop with it. The card then
+        shows two asks and says nothing about which one it wants. 2021 OL
+        Paper 1 Q9(a)(ii) shipped "(i) Draw the fourth pattern..." above its
+        own ask for exactly that reason.
+
+        Only ever cut where NO kept ink lies below the marker inside this
+        window: if the diagram itself runs past it, the drawing is what the
+        window is for and the marker line is the price of carrying it.
+        """
+        own = getattr(self, 'own_marks', set())
+        best = None
+        for (pg, y0, y1, x0, txt, x1) in self.lines:
+            if pg != page or not (top < y0 < bot):
+                continue
+            t = txt.strip()
+            mk = LETTER.match(t) or ROMAN.match(t)
+            if not mk:
+                continue
+            names = {g.lower() for g in mk.groups() if g}
+            if names and not (names & own):
+                if best is None or y0 < best:
+                    best = y0
+        if best is None:
+            return bot
+        for r in self.ink(page):
+            if r.y1 > best + 2 and r.y0 < bot and (r.width > 30 or r.height > 30):
+                return bot
+        return max(top, best - 3)
+
     def render(self, bands):
         self._all_bands = list(bands)
         pieces = []
@@ -888,6 +982,7 @@ class Sitting:
                             top = max(top, cb)
                         else:
                             bot = min(bot, ct)
+                bot = self._stop_at_foreign_ask(page, top, bot)
                 if bot - top < 4:
                     continue
                 covered.setdefault(page, []).append((top, bot))
@@ -1005,6 +1100,8 @@ def run(cards, write=True, probe=False):
         if f'{name}.png' in have and not probe:
             sidecar[card['id']] = name
             continue
+        S.own_marks = {x.lower() for x in re.findall(
+            r'\(([a-h]|i{1,3}|iv|vi{0,3})\)', card['questionRef'])}
         img = S.render(bands)
         if img is None:
             fails.append((card['id'], 'nothing printed in the planned bands'))
