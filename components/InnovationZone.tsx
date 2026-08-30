@@ -11,7 +11,7 @@ import { MotionButton, MotionDiv } from './Motion';
 import { FileSearch,
     ArrowLeft,
     Lock, Compass, Target,
-    CalendarDays, Calculator, GitBranch, Rocket,
+    CalendarDays, Calculator, GitBranch,
     Map, Milestone, Highlighter, Users, Sunrise, Mic, Stamp, Images, ListChecks, SpellCheck, FolderCheck, Waypoints
 } from 'lucide-react';
 import { doc, setDoc, getDoc, increment, deleteField } from 'firebase/firestore';
@@ -66,6 +66,7 @@ import { TOOL_GUIDANCE, type ToolRecommendation } from './launchpadGuidanceData'
 import { useOptionalProgress } from '../contexts/ProgressContext';
 import { DEMO_STUDENT_UID } from '../data/devStudent';
 import { type ProgressDocument } from '../services/progressRepository';
+import HorizontalTabs from './ui/HorizontalTabs';
 
 // ── Editorial chrome registry ──────────────────────────────────────────
 //
@@ -102,7 +103,10 @@ const TOOL_CHROME: Record<string, ToolChrome> = {
   // repeated both the product name and the only h1 on the page.
   'comeback':        { themeColor: '#E08938', eyebrow: 'Plan · Comeback',             subtitle: 'Find your quickest wins and build a comeback plan.',                                showHeader: false },
   'future-finder':   { themeColor: '#C76489', eyebrow: 'Understand · Career discovery', subtitle: 'Discover the courses, careers, and possible lives that fit who you are.',         showHeader: true  },
-  'future-finder-revamped': { themeColor: '#C76489', eyebrow: 'Understand · Interests (RIASEC)', subtitle: 'Discover the courses, careers and lives that fit who you are — your interests matched to CAO courses, points kept honest.', showHeader: true },
+  // The intro, quiz progress and results each provide their own stage heading.
+  // Keeping the shared hero mounted above all three pushed the first action
+  // beneath the fold on compact iPhones.
+  'future-finder-revamped': { themeColor: '#C76489', eyebrow: 'Understand · Interests (RIASEC)', subtitle: 'Discover the courses, careers and lives that fit who you are — your interests matched to CAO courses, points kept honest.', showHeader: false },
   // Compatibility alias: old Syllabus X-Ray links now open War Room directly
   // on its cohort-safe Subject Coverage view.
   'syllabus-xray':   { themeColor: '#F26B1F', eyebrow: 'Plan · Subject coverage',     subtitle: 'Your official topic map, confidence and debrief gaps in one trusted workspace.', showHeader: true  },
@@ -199,6 +203,15 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
     useEffect(() => {
         if (activeTool === 'career-paths') setActiveTool('your-possible-life');
     }, [activeTool, setActiveTool]);
+
+    // Each Launchpad tool is a new screen even though it shares this route.
+    // Reset the document scroll so a student never inherits the previous
+    // tool's position and lands halfway through the next one.
+    useEffect(() => {
+        const scrollRoot = document.scrollingElement ?? document.documentElement;
+        scrollRoot.scrollTop = 0;
+        scrollRoot.scrollLeft = 0;
+    }, [activeTool]);
     const [subjectProfile, setSubjectProfile] = useState<StudentSubjectProfile | null>(() => (
         initialSubjectProfile ? { restDays: [], ...initialSubjectProfile } : null
     ));
@@ -546,7 +559,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
             component: subjectProfile ? <WarRoom uid={user!.uid} profile={subjectProfile} timetableCompletions={timetableCompletions} skippedSessions={earnedRest.skippedSessions} onStudyNow={onStudyNow} /> : null,
         },
         {
-            id: 'comeback', title: 'Comeback Engine', description: 'A realistic seven-day recovery plan built from your actual study pattern.', icon: Rocket, needsProfile: true,
+            id: 'comeback', title: 'Comeback Engine', description: 'A realistic seven-day recovery plan built from your actual study pattern.', icon: Sunrise, needsProfile: true,
             curriculum: 'both' as const,
             tag: 'Comeback', accentHex: '#f97316', gridClass: 'md:col-span-2',
             iconBg: 'bg-orange-100 dark:bg-orange-900/30', iconColor: 'text-orange-600 dark:text-orange-400',
@@ -869,7 +882,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
           usable width, which is a reading column, not a desk: Mark Bank puts a
           question and its marking scheme side by side and needs 1092px. Tools
           listed here also own their top spacing, so `pt-16` comes off. */}
-      <main className={`flex-grow w-full relative z-10 ${WIDE_TOOLS.has(activeTool ?? '') ? 'max-w-[1140px]' : 'max-w-4xl'} ${activeTool === 'journey' || activeTool === 'war-room' || activeTool === 'college-compass' || WIDE_TOOLS.has(activeTool ?? '') ? 'px-6 pt-0' : 'px-6 pt-16'}`}>
+      <main className={`relative z-10 w-full flex-grow px-4 sm:px-6 ${WIDE_TOOLS.has(activeTool ?? '') ? 'max-w-[1140px]' : 'max-w-4xl'} ${activeTool === 'journey' || activeTool === 'war-room' || activeTool === 'college-compass' || WIDE_TOOLS.has(activeTool ?? '') ? 'pt-0' : 'pt-6 md:pt-16'}`}>
          <AnimatePresence mode="wait">
             {!activeTool ? (
                 <MotionDiv
@@ -896,22 +909,18 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                     />
 
                     {/* Filter pills + Points trigger — same row, opposite ends */}
-                    <div className="mb-8 flex items-center justify-between gap-3 flex-wrap">
-                        <div className="flex items-center gap-1 p-1 rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-soft)] w-fit">
-                            {(['all', 'understand', 'practice', 'plan', 'track'] as const).map(filter => (
-                                <button
-                                    key={filter}
-                                    onClick={() => setActiveFilter(filter)}
-                                    className={`px-4 py-2 rounded-lg text-sm transition-all ${
-                                        activeFilter === filter
-                                            ? 'bg-[var(--surface-paper)] text-[var(--ink-primary)] font-medium border border-[var(--outline-strong)]'
-                                            : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-300'
-                                    }`}
-                                >
-                                    {filter === 'all' ? 'All' : filter.charAt(0).toUpperCase() + filter.slice(1)}
-                                </button>
-                            ))}
-                        </div>
+                    <div className="mb-8 flex items-center justify-between gap-3">
+                        <HorizontalTabs
+                          className="min-w-0 flex-1"
+                          variant="pill"
+                          value={activeFilter}
+                          label="Launchpad categories"
+                          options={(['all', 'understand', 'practice', 'plan', 'track'] as const).map(filter => ({
+                            value: filter,
+                            label: filter === 'all' ? 'All' : filter.charAt(0).toUpperCase() + filter.slice(1),
+                          }))}
+                          onChange={next => setActiveFilter(next as typeof activeFilter)}
+                        />
                         <div className="flex items-center gap-1 p-1 rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-soft)] w-fit">
                             <button
                                 onClick={togglePointsPanel}
@@ -979,11 +988,11 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                                             : 'border-[var(--outline-strong)] hover:-translate-y-0.5 hover:shadow-[3px_3px_0_0_var(--outline-strong)] cursor-pointer'
                                     } bg-[var(--surface-paper)]`}
                                 >
-                                    <div className="p-6 flex-1 flex flex-col">
+                                    <div className="grid flex-1 grid-cols-[72px_minmax(0,1fr)] gap-x-4 p-4 sm:flex sm:flex-col sm:p-6">
                                         {/* Painted blob + hand-drawn ink illustration. Disabled state
                                             falls back to the muted lock tile so locked tools still
                                             communicate gating without showing the bright illustration. */}
-                                        <div className="mb-4">
+                                        <div className="row-span-5 mb-0 sm:mb-4">
                                             {profilePending || locked ? (
                                                 <div
                                                     className="flex items-center justify-center"
@@ -1003,26 +1012,26 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                                         </div>
 
                                         {/* Category label */}
-                                        <p className="text-[10px] font-bold uppercase tracking-widest mb-1.5 text-zinc-400 dark:text-zinc-500">
+                                        <p className="mb-1 text-[10px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 sm:mb-1.5">
                                             {profilePending ? 'Checking profile' : locked ? 'Needs Profile' : tool.tag}
                                         </p>
 
                                         {/* Title */}
-                                        <h3 className={`text-base font-semibold mb-1.5 ${
+                                        <h3 className={`mb-1 text-base font-semibold sm:mb-1.5 ${
                                             profilePending ? 'text-zinc-400 dark:text-zinc-600' : 'text-zinc-900 dark:text-white'
                                         }`}>
                                             {tool.title}
                                         </h3>
 
                                         {/* Description */}
-                                        <p className={`text-xs leading-relaxed flex-1 ${
+                                        <p className={`line-clamp-2 flex-1 text-xs leading-relaxed sm:line-clamp-none ${
                                             profilePending ? 'text-zinc-400 dark:text-zinc-600' : 'text-zinc-500 dark:text-zinc-400'
                                         }`}>
                                             {profilePending ? 'Checking your subject profile…' : locked ? 'Add your subjects to unlock this tool.' : tool.description}
                                         </p>
 
                                         {!profilePending && !locked && TOOL_GUIDANCE[tool.id] && (
-                                            <p className="mt-3 border-t border-[var(--outline-soft)] pt-3 text-[11px] leading-relaxed text-[var(--ink-secondary)]">
+                                            <p className="mt-3 hidden border-t border-[var(--outline-soft)] pt-3 text-[11px] leading-relaxed text-[var(--ink-secondary)] sm:block">
                                                 <span className="font-semibold text-[var(--ink-primary)]">Best when</span> {TOOL_GUIDANCE[tool.id].bestWhen}.
                                             </p>
                                         )}
@@ -1038,7 +1047,7 @@ const InnovationZone: React.FC<InnovationZoneProps> = ({ onBack, user, initialSu
                                     </div>
 
                                     {/* Bottom section with divider */}
-                                    <div className="px-6 py-3 border-t border-zinc-100 dark:border-zinc-800/60">
+                                    <div className="hidden border-t border-zinc-100 px-6 py-3 dark:border-zinc-800/60 sm:block">
                                         <span className="text-xs font-medium text-zinc-500 dark:text-zinc-400">
                                             {profilePending ? 'Loading profile…' : locked ? 'Set up profile' : 'Launch tool'}
                                         </span>

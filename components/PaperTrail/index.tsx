@@ -18,7 +18,7 @@
  */
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { ArrowLeft, Clock3, Layers, Search, Sparkles, Star } from 'lucide-react';
+import { ArrowLeft, Clock3, Layers, ListChecks, Search, Star } from 'lucide-react';
 import SubjectTilePicker from '../shared/SubjectTilePicker';
 import { baseName, displayName } from '../shared/subjectNames';
 import Viewer from './Viewer';
@@ -790,7 +790,7 @@ const PaperTrail: React.FC<PaperTrailProps> = ({
                               className="ml-2 inline-flex items-center gap-1 align-middle px-2 py-0.5 rounded-full text-[10.5px] font-sans font-bold"
                               style={{ backgroundColor: '#FDEEDF', color: '#8C3A0E' }}
                             >
-                              <Sparkles size={11} aria-hidden /> Answers
+                              <ListChecks size={11} aria-hidden /> Answers
                             </span>
                           )}
                         </p>

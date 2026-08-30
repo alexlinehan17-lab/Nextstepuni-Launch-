@@ -7,6 +7,7 @@ import React, { useMemo, useState } from 'react';
 import { ArrowRight, Check, Moon, Sun } from 'lucide-react';
 import { MotionDiv } from './Motion';
 import PageHeader from './ui/PageHeader';
+import HorizontalTabs from './ui/HorizontalTabs';
 import { type CategoryType } from './KnowledgeTree';
 import { type CourseData } from './Library';
 import { type StreakData } from '../hooks/useStreak';
@@ -199,7 +200,7 @@ const Panel: React.FC<{
 );
 
 const StatCell: React.FC<{ eyebrow: string; value: string; meta: string; accent?: boolean }> = ({ eyebrow, value, meta, accent }) => (
-  <div className="min-w-0 lg:border-l lg:border-[var(--outline-soft)] lg:pl-5 lg:first:border-l-0 lg:first:pl-0">
+  <div className="w-[112px] shrink-0 border-r border-[var(--outline-soft)] pr-4 last:border-r-0 sm:w-auto sm:border-r-0 sm:pr-0 lg:border-l lg:pl-5 lg:first:border-l-0 lg:first:pl-0">
     <p className="truncate text-[9px] font-bold uppercase tracking-[0.16em] text-[var(--ink-muted)] sm:text-[10px]">{eyebrow}</p>
     <p className={`mt-2 truncate font-serif text-[clamp(24px,3vw,34px)] font-semibold leading-none tabular-nums ${accent ? 'text-[var(--accent-hex)]' : 'text-[var(--ink-primary)]'}`}>{value}</p>
     <p className="mt-2 truncate text-[10px] text-[var(--ink-muted)] sm:text-[11px]">{meta}</p>
@@ -596,7 +597,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                 <span className="h-px w-8 bg-[var(--outline-soft)]" aria-hidden="true" />
                 <p className="text-xs text-[var(--ink-muted)]">{todayLabel}</p>
               </div>
-              <h1 className="mt-4 max-w-2xl font-serif text-[clamp(38px,6vw,68px)] font-semibold leading-[0.96] tracking-[-0.045em] text-[var(--ink-primary)]">
+              <h1 className="mt-3 max-w-2xl font-serif text-[clamp(34px,6vw,68px)] font-semibold leading-[0.97] tracking-[-0.045em] text-[var(--ink-primary)] sm:mt-4">
                 Your learning,<br />in motion.
               </h1>
               <p className="mt-4 max-w-xl text-sm leading-relaxed text-[var(--ink-secondary)] sm:text-[15px]">
@@ -625,7 +626,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                     aria-checked={darkMode}
                     onClick={onToggleTheme}
                     aria-label={darkMode ? 'Switch to light mode (Beta)' : 'Switch to dark mode (Beta)'}
-                    className="flex h-10 w-10 items-center justify-center rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-paper)] text-[var(--ink-secondary)] transition-colors hover:border-[var(--outline-strong)] hover:text-[var(--ink-primary)]"
+                    className="hidden h-10 w-10 items-center justify-center rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-paper)] text-[var(--ink-secondary)] transition-colors hover:border-[var(--outline-strong)] hover:text-[var(--ink-primary)] sm:flex"
                   >
                     {darkMode ? <Sun size={17} /> : <Moon size={17} />}
                   </button>
@@ -634,37 +635,24 @@ const DashboardView: React.FC<DashboardViewProps> = ({
             )}
           </div>
 
-          <div className="grid grid-cols-2 gap-x-4 gap-y-6 border-b border-[var(--outline-soft)] py-6 sm:grid-cols-5">
+          <div className="-mx-4 flex gap-5 overflow-x-auto border-b border-[var(--outline-soft)] px-4 py-5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:mx-0 sm:grid sm:grid-cols-5 sm:gap-x-4 sm:overflow-visible sm:px-0 sm:py-6">
             <StatCell eyebrow="Sessions" value={String(sessionsInRange.length)} meta={`${activeDays} active day${activeDays === 1 ? '' : 's'}`} accent />
             <StatCell eyebrow="Focus time" value={formatMinutes(totalMinutes)} meta={rangeBounds.label} />
             <StatCell eyebrow="Confidence" value={avgConfidence === null ? '—' : avgConfidence.toFixed(1)} meta={avgConfidence === null ? 'awaiting debriefs' : 'average out of 5'} />
             <StatCell eyebrow="Streak" value={String(streak.currentStreak)} meta="days running" />
-            <div className="col-span-2 sm:col-span-1"><StatCell eyebrow="Journey points" value={String(pointsEarned)} meta="earned to date" /></div>
+            <StatCell eyebrow="Journey points" value={String(pointsEarned)} meta="earned to date" />
           </div>
 
-          <div className="relative mb-5 mt-6 border-b border-[var(--outline-soft)]">
-            <div className="overflow-x-auto pr-8" role="tablist" aria-label="Dashboard sections">
-            <div className="flex min-w-max gap-5 sm:gap-7">
-              {TABS.map(item => (
-                <button
-                  key={item.id}
-                  type="button"
-                  role="tab"
-                  aria-selected={tab === item.id}
-                  onClick={() => {
-                    if (activeTab === undefined) setLocalTab(item.id);
-                    onTabChange?.(item.id);
-                  }}
-                  className={`relative shrink-0 whitespace-nowrap pb-3 text-xs font-semibold transition-colors ${tab === item.id ? 'text-[var(--ink-primary)]' : 'text-[var(--ink-muted)] hover:text-[var(--ink-secondary)]'}`}
-                >
-                  {item.label}
-                  {tab === item.id && <span className="absolute inset-x-0 -bottom-px h-0.5 bg-[var(--accent-hex)]" />}
-                </button>
-              ))}
-            </div>
-            </div>
-            <div aria-hidden="true" className="pointer-events-none absolute inset-y-0 right-0 w-8 bg-gradient-to-l from-[var(--surface-canvas)] to-transparent sm:hidden" />
-          </div>
+          <HorizontalTabs
+            className="mb-5 mt-6"
+            value={tab}
+            options={TABS.map(item => ({ value: item.id, label: item.label }))}
+            label="Dashboard sections"
+            onChange={next => {
+              if (activeTab === undefined) setLocalTab(next);
+              onTabChange?.(next);
+            }}
+          />
 
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-12">
             {tab === 'overview' && (

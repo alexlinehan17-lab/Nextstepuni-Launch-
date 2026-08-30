@@ -279,6 +279,13 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     && selectedType
     && selectedMinutes >= MIN_STUDY_SESSION_MINUTES,
   );
+  const startHint = !selectedSubject
+    ? 'Choose a subject to continue'
+    : !selectedType
+      ? 'Choose how you want to study'
+      : selectedMinutes < MIN_STUDY_SESSION_MINUTES
+        ? `Choose at least ${MIN_STUDY_SESSION_MINUTES} minutes`
+        : null;
 
   const handleStart = () => {
     if (!canStart || !selectedType) return;
@@ -455,19 +462,19 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
     return (
       <div className="min-h-screen theme-compat bg-[#FAFBF6] dark:bg-zinc-950 flex flex-col">
         {/* ── Editorial header — replaces the old teal hero banner ── */}
-        <div className="shrink-0 px-6 pt-6 max-w-md mx-auto w-full">
+        <div className="mx-auto w-full max-w-md shrink-0 px-4 pt-5 sm:px-6 sm:pt-6">
           <div className="flex items-center justify-between">
             <button
               onClick={onBack}
               aria-label="Back"
-              className="w-10 h-10 rounded-xl flex items-center justify-center bg-white border border-[#EDEBE8] hover:bg-[#F8F4EC] transition-colors"
+              className="flex h-11 w-11 items-center justify-center rounded-xl border border-[#EDEBE8] bg-white transition-colors hover:bg-[#F8F4EC] dark:border-zinc-700 dark:bg-zinc-900 dark:hover:bg-zinc-800"
               style={{ boxShadow: '0 1px 2px rgba(28,25,23,0.04)' }}
             >
               <ArrowLeft size={18} className="text-[#1a1a1a]" />
             </button>
             <button
               onClick={() => { loadReflections(); setJournalOpen(true); }}
-              className="inline-flex items-center gap-1.5 h-10 px-3.5 rounded-xl bg-white border border-[#EDEBE8] hover:bg-[#F8F4EC] transition-colors text-[13px] font-semibold text-[#1a1a1a]"
+              className="inline-flex h-11 items-center gap-1.5 rounded-xl border border-[#EDEBE8] bg-white px-3.5 text-[13px] font-semibold text-[#1a1a1a] transition-colors hover:bg-[#F8F4EC] dark:border-zinc-700 dark:bg-zinc-900 dark:text-white dark:hover:bg-zinc-800"
               style={{ boxShadow: '0 1px 2px rgba(28,25,23,0.04)' }}
             >
               <BookOpen size={15} className="text-[#1a1a1a]" />
@@ -475,9 +482,9 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
             </button>
           </div>
 
-          <div className="flex items-center gap-4 md:gap-5 mt-7">
+          <div className="mt-6 flex items-center gap-3 sm:mt-7 sm:gap-4 md:gap-5">
             {/* Painted blob + hand-drawn study icon */}
-            <div className="relative shrink-0" style={{ width: 96, height: 96 }}>
+            <div className="relative h-20 w-20 shrink-0 sm:h-24 sm:w-24">
               <svg
                 className="absolute pointer-events-none"
                 viewBox="0 0 100 100"
@@ -525,9 +532,9 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                   fontWeight: 500,
                   letterSpacing: '-0.6px',
                   lineHeight: 1.05,
-                  color: '#1a1a1a',
                   margin: 0,
                 }}
+                className="text-[#1A1A1A] dark:text-white"
               >
                 Study Session
               </h1>
@@ -535,22 +542,22 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
                 style={{
                   fontFamily: "'DM Sans', system-ui, sans-serif",
                   fontSize: 14,
-                  color: 'rgba(0,0,0,0.55)',
                   margin: 0,
                   marginTop: 6,
                 }}
+                className="text-zinc-500 dark:text-zinc-400"
               >
                 {session.todaySessions.length > 0
                   ? `${session.todaySessions.length} session${session.todaySessions.length !== 1 ? 's' : ''} today · ${session.todayTotalMinutes} min total`
-                  : 'Choose a subject and start studying'}
+                  : 'Choose a subject, type and duration'}
               </p>
             </div>
           </div>
         </div>
 
         {/* Centered content */}
-        <div className="flex-1 px-6 pb-28 bg-[#FAFBF6] dark:bg-zinc-950">
-          <div className="w-full max-w-md mx-auto space-y-10 pt-6">
+        <div className="flex-1 bg-[#FAFBF6] px-4 pb-28 dark:bg-zinc-950 sm:px-6">
+          <div className="mx-auto w-full max-w-md space-y-7 pt-5 sm:space-y-10 sm:pt-6">
             {/* Today's timetable blocks — quick-start shortcuts */}
             {computedTodayBlocks.length > 0 && (
               <div className="space-y-3">
@@ -655,7 +662,7 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
             </AnimatePresence>
 
             {/* Session type + Duration — side by side */}
-            <div className="grid grid-cols-2 gap-8">
+            <div className="grid grid-cols-2 gap-4 sm:gap-8">
               {/* Session type */}
               <div className="space-y-3">
                 <p className="text-[11px] font-semibold uppercase tracking-[0.15em] text-zinc-400 dark:text-zinc-500">Type</p>
@@ -736,8 +743,9 @@ const StudySessionView: React.FC<StudySessionViewProps> = ({
             </div>
 
             {/* Start button */}
-            <div className="flex justify-center">
-              <PrimaryActionButton label="Start Session" onClick={handleStart} icon={Play} disabled={!canStart} />
+            <div className="sticky bottom-[calc(76px+var(--sab,0px))] z-20 -mx-4 flex flex-col items-center bg-gradient-to-t from-[#FAFBF6] via-[#FAFBF6]/95 to-transparent px-4 pb-2 pt-5 dark:from-zinc-950 dark:via-zinc-950/95 sm:static sm:mx-0 sm:bg-none sm:p-0">
+              {startHint && <p className="mb-2 text-xs font-medium text-zinc-500 dark:text-zinc-400">{startHint}</p>}
+              <PrimaryActionButton className="w-full sm:w-auto" label="Start Session" onClick={handleStart} icon={Play} disabled={!canStart} />
             </div>
 
             {/* Strategy Mastery Summary */}

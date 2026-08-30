@@ -43,9 +43,9 @@ const PrimaryActionButton: React.FC<PrimaryActionButtonProps> = ({
       style={{
         fontSize: 16,
         padding: '14px 32px',
-        backgroundColor: v.fill,
+        backgroundColor: disabled ? '#AAA49D' : v.fill,
         border: '2px solid #1A1A1A',
-        boxShadow: '4px 4px 0 0 #1A1A1A',
+        boxShadow: disabled ? 'none' : '4px 4px 0 0 #1A1A1A',
         borderRadius: 12,
         transform: 'translateY(0) scale(1)',
       }}

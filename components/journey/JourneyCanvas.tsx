@@ -24,11 +24,16 @@ const IslandFloat: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 };
 
 const CameraMode: React.FC<{ buildMode: boolean }> = ({ buildMode }) => {
-  const { camera } = useThree();
+  const { camera, size } = useThree();
   const destination = useRef(new THREE.Vector3());
 
   useFrame((_, delta) => {
-    destination.current.set(buildMode ? 5.2 : 6, buildMode ? 10.5 : 7, buildMode ? 5.2 : 6);
+    const compact = size.width < 640;
+    destination.current.set(
+      buildMode ? (compact ? 4.6 : 5.2) : (compact ? 4.65 : 6),
+      buildMode ? (compact ? 8.8 : 10.5) : (compact ? 5.45 : 7),
+      buildMode ? (compact ? 4.6 : 5.2) : (compact ? 4.65 : 6),
+    );
     camera.position.lerp(destination.current, 1 - Math.exp(-delta * 4.5));
     camera.lookAt(0, 0, 0);
   });
@@ -125,15 +130,22 @@ const JourneyCanvas: React.FC<JourneyCanvasProps> = ({
   selectedPlacementId, onSelectCell, onSelectPlacement,
 }) => {
   return (
-    <div style={{ position: 'absolute', inset: 0 }}>
+    <div
+      style={{
+        position: 'absolute',
+        inset: 0,
+        background: 'radial-gradient(circle at 50% 38%, #4A5277 0%, #2D304C 42%, #171824 100%)',
+      }}
+    >
       <Canvas
         shadows
+        dpr={[1, 1.75]}
         camera={{ position: [6, 7, 6], fov: 35, near: 0.1, far: 200 }}
-        gl={{ antialias: true }}
-        style={{ background: '#2D2D44' }}
+        gl={{ antialias: true, alpha: true }}
+        onCreated={({ gl }) => gl.setClearColor(0x000000, 0)}
+        style={{ background: 'transparent' }}
       >
-        <color attach="background" args={['#2D2D44']} />
-        <fog attach="fog" args={['#2D2D44', 18, 35]} />
+        <fog attach="fog" args={['#2D3048', 18, 35]} />
 
         <Lighting />
         <CameraMode buildMode={buildMode} />
@@ -158,13 +170,19 @@ const JourneyCanvas: React.FC<JourneyCanvasProps> = ({
         <OrbitControls
           enablePan={false}
           enableZoom={true}
-          minDistance={4}
-          maxDistance={16}
+          minDistance={3.6}
+          maxDistance={14}
           minPolarAngle={Math.PI / 6}
           maxPolarAngle={Math.PI / 2.8}
           target={[0, 0, 0]}
         />
       </Canvas>
+
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0"
+        style={{ boxShadow: 'inset 0 -120px 150px rgba(8, 9, 18, 0.34), inset 0 80px 120px rgba(10, 11, 22, 0.18)' }}
+      />
 
       {celebrationActive && <CelebrationOverlay />}
     </div>

@@ -6,7 +6,7 @@
 import React from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from '../Motion';
-import { Sparkles } from 'lucide-react';
+import { PackageCheck } from 'lucide-react';
 
 interface PurchaseCelebrationModalProps {
   isOpen: boolean;
@@ -37,7 +37,7 @@ const PurchaseCelebrationModal: React.FC<PurchaseCelebrationModalProps> = ({ isO
           >
             <div className="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 shadow-2xl p-8 max-w-sm w-full text-center pointer-events-auto">
               <div className="mx-auto w-16 h-16 rounded-2xl flex items-center justify-center mb-5 bg-[rgba(var(--accent),0.15)] text-[var(--accent-hex)]">
-                <Sparkles size={32} />
+                <PackageCheck size={32} />
               </div>
 
               <h3 className="font-serif text-2xl font-semibold text-zinc-900 dark:text-white mb-2">
