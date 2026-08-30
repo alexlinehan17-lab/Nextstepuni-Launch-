@@ -1,0 +1,65 @@
+[
+ {
+  "file": "chemistry-2022-HL-paper-q4-fig0.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "An energy-level diagram of a hydrogen atom: three concentric circles around a nucleus, with an arrow showing an electron dropping from the outer circle to the middle one and a wavy arrow leaving the atom labelled \"red light\".",
+  "questionRef": "2022 HL Q4"
+ },
+ {
+  "file": "chemistry-2022-OL-paper-q6-fig0.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A table of five hydrocarbon structures. A is ethane, two carbons joined by a single bond each carrying three hydrogens. B is ethene, two carbons joined by a double bond each carrying two hydrogens. C is ethyne, H–C≡C–H. D is benzene, drawn as a hexagon with a circle inside it. E is methylbenzene, the same hexagon carrying a CH3 group.",
+  "questionRef": "2022 OL Q6"
+ },
+ {
+  "file": "chemistry-2022-OL-paper-q8-fig0.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A reaction scheme in four boxes. Glucose (C6H12O6) converts by reaction W, using zymase, to ethanol (C2H5OH); ethanol converts by reaction X to ethanal (CH3CHO); and ethanal converts by reaction Y, using KMnO4 in acid, to ethanoic acid (CH3COOH).",
+  "questionRef": "2022 OL Q8"
+ },
+ {
+  "file": "chemistry-2023-HL-paper-q8-fig0.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A reaction scheme in six boxes. Ethane converts by reaction A, using ultraviolet light and Cl2, to chloroethane. Ethene converts by reaction B to ethane, and by reaction C to poly(ethene). Ethanol converts by reaction D to ethene, and ethanal converts by reaction E to ethanol.",
+  "questionRef": "2023 HL Q8"
+ },
+ {
+  "file": "chemistry-2023-HL-paper-q8-fig1.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A graph of boiling point in degrees Celsius against number of carbon atoms, from one to four, carrying four rising curves labelled A, B, C and D. A is highest, beginning near 100 degrees; B begins near 65; C begins near minus 20; and D is lowest, beginning near minus 160.",
+  "questionRef": "2023 HL Q8"
+ },
+ {
+  "file": "chemistry-2023-OL-paper-q8-fig0.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A reaction scheme in four boxes. X is ethanol (C2H5OH) and converts to ethene (C2H4) using solid S, with an arrow back from ethene to X. X also converts, using reagent R, to Y, which is ethanal (CH3CHO); and Y converts to Z, which is ethanoic acid (CH3COOH).",
+  "questionRef": "2023 OL Q8"
+ },
+ {
+  "file": "chemistry-2024-HL-paper-q8-fig0.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A reaction scheme. Ethene (C2H4) converts by reaction A to ethane (C2H6), which converts by reaction B to chloroethane (C2H5Cl). Ethene also reacts with Cl2 to give X, X converts by elimination to Y, and Y polymerises to PVC.",
+  "questionRef": "2024 HL Q8"
+ },
+ {
+  "file": "chemistry-2024-OL-paper-q5-fig0.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A section of the periodic table from hydrogen to krypton, each element shown with its atomic number and its electronegativity value. Hydrogen is 2.20, lithium 0.98, nitrogen 3.04, oxygen 3.44 and fluorine 3.98; the noble gases carry a dash instead of a value.",
+  "questionRef": "2024 OL Q5"
+ },
+ {
+  "file": "chemistry-2025-OL-paper-q8-fig0.png",
+  "kind": "figure",
+  "truncated": false,
+  "description": "A reaction scheme. Ethanol (C2H5OH) converts, heated over solid S, to ethene, and separately to ethanal (CH3CHO). Ethene carries a drawn structure with a carbon-carbon double bond, and converts to P, drawn as a four-carbon chain with single bonds. Ethene also reacts with HCl to give X and with Cl2 to give Y.",
+  "questionRef": "2025 OL Q8"
+ }
+]
