@@ -461,7 +461,11 @@ def columns(page, cut=None):
     return ([t for _, t in left], [t for _, t in right])
 
 
-SCALE = re.compile(r'Scale\s+(\d+)([A-Z]?)\s*\(([\d,\s]+)\)')
+# The space after "Scale" is not always printed -- the 2021 Ordinary scheme
+# sets "Scale10D (0, 3, 5, 8, 10)" ten times. maths_scheme.SCALE_LINE finds
+# the band either way; requiring the space HERE found the band and then
+# refused it for having no ladder, which is worse than not finding it.
+SCALE = re.compile(r'Scale\s*(\d+)([A-Z]?)\s*\(([\d,\s]+)\)')
 STEP = re.compile(r'^Step\s+(\d+)\.\s*(.+)$')
 
 
