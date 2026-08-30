@@ -73,6 +73,23 @@ class Author:
         self._used = set()
         self._flat = None
 
+    def topic_evidence(self, key):
+        """The text a topic classifier may read for this unit.
+
+        The paper's own wording first. Where that names nothing a keyword can
+        file -- "Find the length of the runway. Give your answer in km." --
+        the SCHEME still states the method it is marking, and the method is
+        the topic: 2021 OL Paper 2 Q9 files as Trigonometry only because its
+        (b)(i) solution reads "x/(sin 47) = 260/(sin 36)". Reading the scheme
+        for this is not reading it for an ANSWER; it decides which shelf the
+        card sits on, nothing a student is shown.
+        """
+        try:
+            scheme = ' '.join(self.S.notes(key)) + ' ' + ' '.join(self.S.solution(key))
+        except Exception:                                    # noqa: BLE001
+            scheme = ''
+        return scheme
+
     def question(self, key):
         """The paper's wording for this unit.
 

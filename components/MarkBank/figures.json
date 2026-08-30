@@ -14613,7 +14613,7 @@
  "maths-2021-OL-paper-p022-i0": {
   "src": "/exam-figures/maths/markbank/maths-2021-OL-paper-p022-i0.png",
   "md5": "cf7b268bca2a152835a07ef7bb7f610f",
-  "alt": "The marking scheme's printed worked solution for 2021 OL Paper 1 Q9(iii), typeset as the State Examinations Commission set it. It reads: (iii) S₂₀ = 20/2 [2(1) + (20 − 1)1] = 210",
+  "alt": "The marking scheme's printed worked solution for 2021 OL Paper 1 Q9(a), typeset as the State Examinations Commission set it. It reads: (iii) S₂₀ = 20/2 [2(1) + (20 − 1)1] = 210",
   "solution": true,
   "lettersVisible": [],
   "labelMeanings": [],
@@ -14745,7 +14745,7 @@
  "maths-2021-OL-paper-p037-i0": {
   "src": "/exam-figures/maths/markbank/maths-2021-OL-paper-p037-i0.png",
   "md5": "8ab0514b58fc5c1c3aea09bf68a33b5d",
-  "alt": "The marking scheme's printed worked solution for 2021 OL Paper 2 Q4(ii), typeset as the State Examinations Commission set it. It reads: (ii) [ ,/2 ]/2 (2, −1) Graphical Solution:",
+  "alt": "The marking scheme's printed worked solution for 2021 OL Paper 2 Q4(a), typeset as the State Examinations Commission set it. It reads: (ii) [ ,/2 ]/2 (2, −1) Graphical Solution:",
   "solution": true,
   "lettersVisible": [],
   "labelMeanings": [],
@@ -14853,7 +14853,7 @@
  "maths-2021-OL-paper-p050-i0": {
   "src": "/exam-figures/maths/markbank/maths-2021-OL-paper-p050-i0.png",
   "md5": "c9b2395db9b9d31ce42611fba2840bf8",
-  "alt": "The marking scheme's printed worked solution for 2021 OL Paper 2 Q9(ii), typeset as the State Examinations Commission set it. It reads: ",
+  "alt": "The marking scheme's printed worked solution for 2021 OL Paper 2 Q9(a), typeset as the State Examinations Commission set it. It reads: ",
   "solution": true,
   "lettersVisible": [],
   "labelMeanings": [],
@@ -21704,7 +21704,7 @@
  "maths-2021-OL-paper-p033-i0": {
   "src": "/exam-figures/maths/markbank/maths-2021-OL-paper-p033-i0.png",
   "md5": "58eccc92e4d855008c69cec9d0fe1aad",
-  "alt": "The marking scheme's printed worked solution for 2021 OL Paper 2 Q1(ii), typeset as the State Examinations Commission set it. It reads: (ii) 7/16 4/16 + 4/16 − 1/16 = 7/16",
+  "alt": "The marking scheme's printed worked solution for 2021 OL Paper 2 Q1(c), typeset as the State Examinations Commission set it. It reads: (ii) 7/16 4/16 + 4/16 − 1/16 = 7/16",
   "solution": true,
   "lettersVisible": [],
   "labelMeanings": [],
@@ -21884,7 +21884,7 @@
  "maths-2021-OL-paper-p052-i0": {
   "src": "/exam-figures/maths/markbank/maths-2021-OL-paper-p052-i0.png",
   "md5": "f269a94a7a0e1044d849460ad31e8721",
-  "alt": "The marking scheme's printed worked solution for 2021 OL Paper 2 Q9(ii), typeset as the State Examinations Commission set it. It reads: (ii) C = 2𝜋(10) (/360) C = 12∙217 Total Distance = 10 + 10 + 12∙21 = 32∙217 = 32∙22",
+  "alt": "The marking scheme's printed worked solution for 2021 OL Paper 2 Q9(b), typeset as the State Examinations Commission set it. It reads: (ii) C = 2𝜋(10) (/360) C = 12∙217 Total Distance = 10 + 10 + 12∙21 = 32∙217 = 32∙22",
   "solution": true,
   "lettersVisible": [],
   "labelMeanings": [],
@@ -28578,7 +28578,7 @@
  "maths-2024-OL-ask-p1-q6-b-i": {
   "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q6-b-i.png",
   "md5": "3583aac6dc9abdc1048cb6145dc3b4b1",
-  "alt": "The question as printed on the paper — The graph of a function 𝑘𝑘(𝑥𝑥) is shown on the co-ordinate diagram below, for 0 ≤𝑥𝑥≤5, 𝑥𝑥∈ℝ. (b) Liam uses the Trapezoidal Rule to estimate the area under the graph of 𝑘𝑘(𝑥𝑥) between 0 and 5. He takes the following measu",
+  "alt": "The question as printed on the paper — The graph of a function k(x) is shown on the co-ordinate diagram below, for 0 ≤ x ≤ 5, x∈ℝ. Use the graph to answer parts (a)(i) and (a)(ii). y 12 11 10 9 8 7 6 5 4 3 k(x) 2 1 x 1 2 3 4 5 0 Estimate the value of k(x) whe",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2024 OL Paper 1 Q6(b)(i)",
@@ -28589,7 +28589,7 @@
  "maths-2024-OL-ask-p1-q6-b-ii": {
   "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q6-b-ii.png",
   "md5": "507617fa2ced50d7597243a696683723",
-  "alt": "The question as printed on the paper — The graph of a function 𝑘𝑘(𝑥𝑥) is shown on the co-ordinate diagram below, for 0 ≤𝑥𝑥≤5, 𝑥𝑥∈ℝ. (b) Liam uses the Trapezoidal Rule to estimate the area under the graph of 𝑘𝑘(𝑥𝑥) between 0 and 5. He takes the following measu",
+  "alt": "The question as printed on the paper — The graph of a function k(x) is shown on the co-ordinate diagram below, for 0 ≤ x ≤ 5, x∈ℝ. Use the graph to answer parts (a)(i) and (a)(ii). y 12 11 10 9 8 7 6 5 4 3 k(x) 2 1 x 1 2 3 4 5 0 Estimate the value of k(x) whe",
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2024 OL Paper 1 Q6(b)(ii)",
@@ -34465,5 +34465,148 @@
   "year": 2025,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Mathematics 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "maths-2021-OL-ask-p1-q1-d": {
+  "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q1-d.png",
+  "md5": "9928358f34e7a0ad366793e4664d3459",
+  "alt": "The question as printed on the paper — On September 1, 2020 the Standard Rate of VAT in Ireland was reduced from 23% to 21%. A company bought 30 computers in September, all at the same price. The company calculated that it saved €336 due to the reduction in t",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Paper 1 Q1(d)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "maths-2021-OL-ask-p1-q2-b": {
+  "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q2-b.png",
+  "md5": "b4155f9dbca11d34f81a9534703d1e8a",
+  "alt": "The question as printed on the paper — z1= −3 + 4i and z2= 4 + 3i, Im where i2= −1. 7 z3= . Find z3 in the form a+ bi, where a, b∈ℤ. (b) ௭2",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Paper 1 Q2(b)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "maths-2021-OL-ask-p1-q6-b": {
+  "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q6-b.png",
+  "md5": "317047b0928d68b3f38ebb962c22f4cc",
+  "alt": "The question as printed on the paper — The first three terms of a different arithmetic sequence are 4, 9, 14. Find S₅₀, the sum of the first 50 terms of the sequence.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Paper 1 Q6(b)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "maths-2021-OL-ask-p1-q7-c": {
+  "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q7-c.png",
+  "md5": "813a010f70cef0fd5d5f51650ef1c9a1",
+  "alt": "The question as printed on the paper — The rates and thresholds of the Universal Social Charge (USC) in Ireland (excluding the top rate) during 2020 are given in the table below. Standard rates and thresholds for USC 2020 Annual Income Rate 0·5% First €12 012",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Paper 1 Q7(c)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "maths-2021-OL-ask-p1-q7-e": {
+  "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q7-e.png",
+  "md5": "dfc20fd0d5eebe78db1a4a627139434c",
+  "alt": "The question as printed on the paper — The rates and thresholds of the Universal Social Charge (USC) in Ireland (excluding the top rate) during 2020 are given in the table below. Standard rates and thresholds for USC 2020 Annual Income Rate 0·5% First €12 012",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Paper 1 Q7(e)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "maths-2021-OL-ask-p1-q8-c": {
+  "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p1-q8-c.png",
+  "md5": "e97ce3da7ee50fc4e7c2009f6c35aafa",
+  "alt": "The question as printed on the paper — A square sheet of cardboard, of side 10 units, is used to make an open box. Squares of side x units, where x∈ℝ, are removed from each corner of the cardboard and it is then folded along the dotted lines, as shown in the ",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Paper 1 Q8(c)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "maths-2021-OL-ask-p2-q1-c": {
+  "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q1-c.png",
+  "md5": "1b27f1795cba6d9804a9193cf15c1d11",
+  "alt": "The question as printed on the paper — The game “Twister” is played using two spinners and a mat with coloured spots. The two spinners needed for the game are shown below. Both consist of four equal sections. A player spins both spinners and must then place t",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Paper 2 Q1(c)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "maths-2021-OL-ask-p2-q3-b": {
+  "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q3-b.png",
+  "md5": "5a58fb90aed4f847f2d861e60e4fc2e1",
+  "alt": "The question as printed on the paper — The diagram below shows the line l: 3x−4y = 5 and the point P(6, −3). 5 y l 4 3 2 1 x -2 -1 1 2 3 4 5 6 7 8 -1 -2 P -3 Find the equation of the line k through the point P that is perpendicular to the line l. Write your a",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Paper 2 Q3(b)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "maths-2021-OL-ask-p2-q4-a": {
+  "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q4-a.png",
+  "md5": "1ef10d297052397b3a27a5b4e67248be",
+  "alt": "The question as printed on the paper — Write down the co-ordinates of A and of B. A ^= ( , ) B ^= ( , ) Find the co-ordinates of the midpoint of [AB]. (iii) Use a compass to construct the circle c, which has AB as its diameter on the diagram above. 10 Leaving",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Paper 2 Q4(a)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "maths-2021-OL-ask-p2-q6-b-ii": {
+  "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q6-b-ii.png",
+  "md5": "339b9835a49231be42b5769c478436ec",
+  "alt": "The question as printed on the paper — The triangle PQR is the image of the triangle DEF under an enlargement. (The diagram is not drawn to scale.) The scale factor of the enlargement, k, is 2·5. |EF| = 3 cm. P 3 cm R Q Use the scale factor to find |QR|. The ",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Paper 2 Q6(b)(ii)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "maths-2021-OL-ask-p2-q9-b": {
+  "src": "/exam-figures/maths/markbank/maths-2021-OL-ask-p2-q9-b.png",
+  "md5": "a0c46c9aa8ef03f133ae6284e5eae358",
+  "alt": "The question as printed on the paper — The line segment [ SE ], shown below, represents an airport runway. The point S and the point E represent the start and end points of the runway respectively. The diagram is drawn to a scale of 1 unit = 250 metres. 1 uni",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 OL Paper 2 Q9(b)",
+  "year": 2021,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "maths-2024-HL-ask-p2-q1-a-i": {
+  "src": "/exam-figures/maths/markbank/maths-2024-HL-ask-p2-q1-a-i.png",
+  "md5": "311b315594c93a724632aae3ebabae33",
+  "alt": "The question as printed on the paper — A group of 22 students was tested to see how far, in metres, each of them could swim without stopping for a rest. The results of the testing are shown in the ordered stem and leaf plot below. Four of the entries have bee",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Paper 2 Q1(a)(i)–(iii)",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Mathematics 2024 Higher Level — © State Examinations Commission"
+ },
+ "maths-2024-OL-ask-p1-q6-a-i": {
+  "src": "/exam-figures/maths/markbank/maths-2024-OL-ask-p1-q6-a-i.png",
+  "md5": "2f5b8cac34114a640c6a3c8c38d1553c",
+  "alt": "The question as printed on the paper — The graph of a function k(x) is shown on the co-ordinate diagram below, for 0 ≤ x ≤ 5, x∈ℝ. Use the graph to answer parts (a)(i) and (a)(ii). y 12 11 10 9 8 7 6 5 4 3 k(x) 2 1 x 1 2 3 4 5 0 Estimate the value of k(x) whe",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Paper 1 Q6(a)(i), (ii)",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Mathematics 2024 Ordinary Level — © State Examinations Commission"
  }
 }
