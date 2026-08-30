@@ -93,7 +93,7 @@ export const CARDS: SecCard[] = [
     figure: {
           "candId": "computer-science-2021-OL-paper-q8-fig0",
           "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q8-fig0.png",
-          "srcHash": "59919334261e9e86b2b65d365726362f",
+          "srcHash": "574a80234b57ce9298f231fac4c9826a",
           "alt": "The table or diagram printed with 2021 OL Question 8, as the State Examinations Commission set it.",
           "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
@@ -382,9 +382,16 @@ export const CARDS: SecCard[] = [
     id: "cs-2021-ol-q6", topicId: "cs-2-3", conceptId: "answer-following-question-putting-tick-relevant",
     section: "A", questionRef: "2021 OL Q6",
     questionText: "(a) Answer the following question by putting a tick (✓) in the relevant box. Tick one box only. (b) Describe one difference between the World Wide Web (WWW) and the Internet.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "the language used to program web pages", marks: 5, accepts: ["the method for encoding data securely","the web browser","the protocol for transferring hypertext for webpages ✓","(Incorrect if more than 1 box is ticked)","The internet is a global system of interconnected computers (uses TCP/IP).","The world wide web is online content (webpages) – formatted in HTML and uses the HTTP","protocol."] },
+    { id: "r-1", kind: "point", verbatim: "the language used to program web pages", marks: null },
+    { id: "r-2", kind: "point", verbatim: "the method for encoding data securely", marks: null },
+    { id: "r-3", kind: "point", verbatim: "the web browser", marks: null },
+    { id: "r-4", kind: "point", verbatim: "the protocol for transferring hypertext for webpages ✓", marks: null },
+    { id: "r-5", kind: "point", verbatim: "(Incorrect if more than 1 box is ticked)", marks: null },
+    { id: "r-6", kind: "point", verbatim: "The internet is a global system of interconnected computers (uses TCP/IP).", marks: null },
+    { id: "r-7", kind: "point", verbatim: "The world wide web is online content (webpages) – formatted in HTML and uses the HTTP", marks: null },
+    { id: "r-8", kind: "point", verbatim: "protocol.", marks: null },
     ],
   } as SecCard,
   {
@@ -395,9 +402,20 @@ export const CARDS: SecCard[] = [
     id: "cs-2021-ol-q15", topicId: "cs-2-3", conceptId: "your-friend-complains-you-their-five",
     section: "B", questionRef: "2021 OL Q15",
     questionText: "(a) Your friend complains to you that their five‐year‐old computer is slow for playing games. (i) State the output of each of the following logic gates for the inputs given. (ii) Complete the truth table for the OR logic gate, shown in Figure 7. This question continues on the next page. (b)  (c) The diagram in Figure 8 below, shows the different layers within a computer system. Explain the purpose of any two layers. (d) Developed in 1971, the first commercially produced microprocessor was the Intel 4004 and this led to a rapid and continuous rise in the power of the personal computer. Describe one other important development in computing that has occurred in the last 100 years and discuss its impact on computing today.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Processor, RAM, Graphics Card, Wireless, Networking.", marks: 30, accepts: ["For each item:","Valid item","1","0","Both correct","One correct","INPUTS OUTPUTS","A B A OR B","0 0 0","0 1 1","1 0 1"] },
+    { id: "r-1", kind: "point", verbatim: "Processor, RAM, Graphics Card, Wireless, Networking.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "For each item:", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Valid item", marks: null },
+    { id: "r-4", kind: "point", verbatim: "1", marks: null },
+    { id: "r-5", kind: "point", verbatim: "0", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Both correct", marks: null },
+    { id: "r-7", kind: "point", verbatim: "One correct", marks: null },
+    { id: "r-8", kind: "point", verbatim: "INPUTS OUTPUTS", marks: null },
+    { id: "r-9", kind: "point", verbatim: "A B A OR B", marks: null },
+    { id: "r-10", kind: "point", verbatim: "0 0 0", marks: null },
+    { id: "r-11", kind: "point", verbatim: "0 1 1", marks: null },
+    { id: "r-12", kind: "point", verbatim: "1 0 1", marks: null },
     ],
     figure: {
           "candId": "computer-science-2021-OL-paper-q15-fig0",
@@ -416,9 +434,20 @@ export const CARDS: SecCard[] = [
     id: "cs-2021-ol-q16", topicId: "cs-2-2", conceptId: "open-program-called-question16-py-your",
     section: "B", questionRef: "2021 OL Q16",
     questionText: "(i) Insert a comment in the appropriate location to explain what the input command is doing in this program. (ii) Amend the program so that the following message is displayed if an incorrect PIN is entered: Incorrect PIN (iii) Create a suitably named Boolean variable (e.g. loggedIn) that is initially set to False before the user enters a PIN. (iv) Amend the program so that the new Boolean variable is set to True when the user enters the correct PIN. (v) Using a while loop or similar, keep asking the user to enter their PIN until they have entered it correctly. (vi) Create a suitably named variable (e.g. failedAttempts) that is initially set to 0 before the user enters a PIN. This variable will keep track of the number of failed login attempts. (vii) The user should only be allowed 3 failed login attempts. If the PIN is entered incorrectly 3 times an appropriate message should be displayed. (a) Open the program called Question16_A.py from your device. The source code is shown and described briefly below.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 50,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "(a) 50 (5, 10, 5, 5, 10, 5, 10) marks", marks: 50, accepts: ["Possible solution:","3","4 pin = \"1579\"","7","8 while not loggedIn and (failedAttempts < 3):","10 userTry = input(\"Enter PIN:\")"] },
+    { id: "r-1", kind: "point", verbatim: "(a) 50 (5, 10, 5, 5, 10, 5, 10) marks", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Possible solution:", marks: null },
+    { id: "r-3", kind: "point", verbatim: "3", marks: null },
+    { id: "r-4", kind: "point", verbatim: "4 pin = \"1579\"", marks: null },
+    { id: "r-5", kind: "point", verbatim: "7", marks: null },
+    { id: "r-6", kind: "point", verbatim: "8 while not loggedIn and (failedAttempts < 3):", marks: null },
+    { id: "r-7", kind: "point", verbatim: "10 userTry = input(\"Enter PIN:\")", marks: null },
+    { id: "r-8", kind: "point", verbatim: "11", marks: null },
+    { id: "r-9", kind: "point", verbatim: "12 if userTry == pin:", marks: null },
+    { id: "r-10", kind: "point", verbatim: "13 print(\"Welcome\")", marks: null },
+    { id: "r-11", kind: "point", verbatim: "14 loggedIn = True", marks: null },
+    { id: "r-12", kind: "point", verbatim: "15 else:", marks: null },
     ],
     figure: {
           "candId": "computer-science-2021-OL-paper-q16-figure",
@@ -666,9 +695,11 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2022 OL Q3",
     stem: "The pseudocode, shown in Figure 2 below, has been designed to run on a Microbit or similar embedded system, shown in Figure 3. The embedded system has a green LED (light emitting diode) connected to pin 0, a yellow LED connected to pin 1 and a red LED connected to pin 2. Answer the questions that follow. Figure 2",
     questionText: "(a) Why are pauses included in this algorithm? (b) Describe the appearance of the LEDs at the end of the algorithm.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "To see the changes of the LED turning on or off", marks: 5, accepts: ["The code will run too quickly to see LEDS without the pauses","To see if the code works correctly Any one of the above or similar:"] },
+    { id: "r-1", kind: "point", verbatim: "To see the changes of the LED turning on or off", marks: null },
+    { id: "r-2", kind: "point", verbatim: "The code will run too quickly to see LEDS without the pauses", marks: null },
+    { id: "r-3", kind: "point", verbatim: "To see if the code works correctly Any one of the above or similar:", marks: null },
     ],
     figure: {
           "candId": "computer-science-2022-OL-paper-q3-figure",
@@ -688,9 +719,12 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2022 OL Q5",
     stem: "A linear search algorithm, written in Python, is used to search the following list of integers. list = [11, 52, 37, 94, 12, 73, 62, 47]",
     questionText: "(a) What index value will be returned if you search for the number 94? (b) Describe a limitation of the linear search algorithm.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "3", marks: 5, accepts: ["Not an efficient way of searching.","In big data sets it will take a long time to complete the search.","Will only find the first number even if the number appears more than once."] },
+    { id: "r-1", kind: "point", verbatim: "3", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Not an efficient way of searching.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "In big data sets it will take a long time to complete the search.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Will only find the first number even if the number appears more than once.", marks: null },
     ],
   } as SecCard,
   {
@@ -702,9 +736,15 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2022 OL Q8",
     stem: "COVID-19 has had a significant impact on the use of technology and the Internet for remote work in business and education. It has also highlighted issues in the area known as the “digital divide”.",
     questionText: "(a) Describe one way digital technology has helped us during the COVID-19 Pandemic. (b) Explain what is meant by the term “digital divide”.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "COVID Tracker App", marks: 5, accepts: ["Online Video Calls.","Entertainment online.","Communicate with other people.","Getting information to stay informed.","Online working and schooling. Any one of the above or similar:","Some people can afford or get access to technology and others cannot."] },
+    { id: "r-1", kind: "point", verbatim: "COVID Tracker App", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Online Video Calls.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Entertainment online.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Communicate with other people.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Getting information to stay informed.", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Online working and schooling. Any one of the above or similar:", marks: null },
+    { id: "r-7", kind: "point", verbatim: "Some people can afford or get access to technology and others cannot.", marks: null },
     ],
   } as SecCard,
   {
@@ -715,9 +755,17 @@ export const CARDS: SecCard[] = [
     id: "cs-2022-ol-q10", topicId: "cs-2-3", conceptId: "match-picture-electronic-component-its-placing",
     section: "A", questionRef: "2022 OL Q10",
     questionText: "(a) Match the picture of the electronic component to its name by placing the relevant letter in the second column of the table below. (b) Select any one of these electronic components and explain its purpose.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Component", marks: 5, accepts: ["Name","(write the letter)","Transistor C","Capacitor A","Resistor B","Transistor -> Used to control current and voltage in a circuit.","Capacitor -> Are used to store electrical charge","Resistors -> Are used to slow down the flow of current in a circuit. Any one of the above or similar:"] },
+    { id: "r-1", kind: "point", verbatim: "Component", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Name", marks: null },
+    { id: "r-3", kind: "point", verbatim: "(write the letter)", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Transistor C", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Capacitor A", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Resistor B", marks: null },
+    { id: "r-7", kind: "point", verbatim: "Transistor -> Used to control current and voltage in a circuit.", marks: null },
+    { id: "r-8", kind: "point", verbatim: "Capacitor -> Are used to store electrical charge", marks: null },
+    { id: "r-9", kind: "point", verbatim: "Resistors -> Are used to slow down the flow of current in a circuit. Any one of the above or similar:", marks: null },
     ],
     figure: {
           "candId": "computer-science-2022-OL-paper-q10-fig0",
@@ -736,9 +784,20 @@ export const CARDS: SecCard[] = [
     id: "cs-2022-ol-q16", topicId: "cs-2-2", conceptId: "open-program-called-question16-py-your",
     section: "B", questionRef: "2022 OL Q16",
     questionText: "(i) Insert a comment in an appropriate place to say “user enters first name”. (ii) Amend the program to ask for and accept the user's surname. Store the user’s surname in a variable called surname. (iii) Amend the program so that the user’s first name and their surname are printed when they are asked to select their item. (iv) Amend the program so that the items 2 = Ruler and 3 = Pen appear in the shopping list under the item 1 = Book. (v) Amend the program so that a dashed line appears above and below the available items. (vi) Amend the program so that the correct message is printed if the user purchases a ruler or pen. (vii) Amend the program to deal with invalid number entries. If the user enters any number other than the numbers 1, 2 or 3 they should be presented with an error message. (a) Open the program called Question16_A.py from your device. The source code is shown and described briefly below. 2 # Examination Number: 3 4 firstName = input(\"What is your first name? \") 5 6 print(\"Hello\", firstName) 7 print(\"Please select from the list of items.\\n\") 8 # \\n creates a new line 9 10 print(\"\\tItems Available\") # \\t creates a tab 11 print(\"1 = Book\") 12 13 shoppingItem = int(input(\"\\nEnter the number of the item you would like: \")) 14 15 if shoppingItem == 1: 16 print(\"You bought a book\") 17 The program above is to simulate an automated shop. The aim of the program is to accept the name of the user and then to ask the user to choose what item they would like to buy. The user will select the number of the item they wish to buy and the program outputs a message confirming the item they chose.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 50,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 50,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "(a) 50 (5, 10, 5, 5, 5, 10, 10) marks", marks: 50, accepts: ["Possible solution:","1 # Question 16 (a)","2 # Examination Number:","3 # user enters first name","4 firstName = input(\"What is your first name? \")","5 surname = input(\"What is your surname? \")","6","7 print(\"Hello\", firstName, surname, \"please select from the list","of items.\\n\")","8 # \\n creates a new line","9"] },
+    { id: "r-1", kind: "point", verbatim: "(a) 50 (5, 10, 5, 5, 5, 10, 10) marks", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Possible solution:", marks: null },
+    { id: "r-3", kind: "point", verbatim: "1 # Question 16 (a)", marks: null },
+    { id: "r-4", kind: "point", verbatim: "2 # Examination Number:", marks: null },
+    { id: "r-5", kind: "point", verbatim: "3 # user enters first name", marks: null },
+    { id: "r-6", kind: "point", verbatim: "4 firstName = input(\"What is your first name? \")", marks: null },
+    { id: "r-7", kind: "point", verbatim: "5 surname = input(\"What is your surname? \")", marks: null },
+    { id: "r-8", kind: "point", verbatim: "6", marks: null },
+    { id: "r-9", kind: "point", verbatim: "7 print(\"Hello\", firstName, surname, \"please select from the list", marks: null },
+    { id: "r-10", kind: "point", verbatim: "of items.\\n\")", marks: null },
+    { id: "r-11", kind: "point", verbatim: "8 # \\n creates a new line", marks: null },
+    { id: "r-12", kind: "point", verbatim: "9", marks: null },
     ],
     figure: {
           "candId": "computer-science-2022-OL-paper-q16-code0",
@@ -870,6 +929,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Stakeholders", marks: 6 },
     ],
+    figure: {
+          "candId": "computer-science-2023-OL-paper-q14-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q14-fig0.png",
+          "srcHash": "9d86a803f121b3afdd226f55f05845dd",
+          "alt": "The table or diagram printed with 2023 OL Question 14, as the State Examinations Commission set it. It is labelled: Figure 5.",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -885,6 +952,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Role 1: Tester Description 1: Tests the software at different stages throughout the process to look for errors.", marks: 4 },
     { id: "r-2", kind: "point", verbatim: "Role 2: Project Manager Description 2: Makes sure that all of the team members know what they need to do, also makes sure everything is running on time. There are many other roles / terms within software development such as Product Owner, Business Analyst, System Analyst, Designer, Developer/ Programmer/ Coder. Accept any relevant role and description. Note: Where two separate roles are considered equivalent/to have the same meaning, marks are awarded for the best response only. Zero is awarded for the other response. Apply marks for each (2) role: Valid role identified", marks: 4 },
     ],
+    figure: {
+          "candId": "computer-science-2023-OL-paper-q14-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q14-fig0.png",
+          "srcHash": "9d86a803f121b3afdd226f55f05845dd",
+          "alt": "The table or diagram printed with 2023 OL Question 14, as the State Examinations Commission set it. It is labelled: Figure 5.",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -900,6 +975,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Create o Writing the code to implement the design o Ongoing testing to ensure the code is working o Creating databases for storing data o Creating any physical elements of the project o Accept any other valid tasks that take place within the create stage.", marks: 3 },
     { id: "r-2", kind: "point", verbatim: "Document o Documentation of system requirements for software o Creation of user guide document o Creation of user maintenance document o Creation of frequently asked questions o Accept any other valid tasks that take place within the document stage.", marks: 3 },
     ],
+    figure: {
+          "candId": "computer-science-2023-OL-paper-q14-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q14-fig0.png",
+          "srcHash": "9d86a803f121b3afdd226f55f05845dd",
+          "alt": "The table or diagram printed with 2023 OL Question 14, as the State Examinations Commission set it. It is labelled: Figure 5.",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -914,6 +997,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Flexibility – short sprint-scrum cycles", marks: 6 },
     ],
+    figure: {
+          "candId": "computer-science-2023-OL-paper-q14-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q14-fig0.png",
+          "srcHash": "9d86a803f121b3afdd226f55f05845dd",
+          "alt": "The table or diagram printed with 2023 OL Question 14, as the State Examinations Commission set it. It is labelled: Figure 5.",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -928,6 +1019,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Unit testing is when small/specific sections of code are tested by the developer while it is being created", marks: 3 },
     { id: "r-2", kind: "point", verbatim: "Unit tests can be carried out on functions / modules of code", marks: 3 },
     ],
+    figure: {
+          "candId": "computer-science-2023-OL-paper-q14-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q14-fig0.png",
+          "srcHash": "9d86a803f121b3afdd226f55f05845dd",
+          "alt": "The table or diagram printed with 2023 OL Question 14, as the State Examinations Commission set it. It is labelled: Figure 5.",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -942,6 +1041,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Advantages o Real end users try it out o Tested by public before release o Feedback improves product quality o Chance to find errors/ flaws/ issues before release o Any other valid advantage Valid advantage", marks: 3 },
     { id: "r-2", kind: "point", verbatim: "Disadvantages o Users can leak information about software before it is released o Process can be time consuming and delay the release o Can be a waste of time / money if the Beta testers do not use the software properly o Beta testers might not be representative of actual end users o Any other valid disadvantage Valid disadvantage", marks: 3 },
     ],
+    figure: {
+          "candId": "computer-science-2023-OL-paper-q14-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q14-fig0.png",
+          "srcHash": "9d86a803f121b3afdd226f55f05845dd",
+          "alt": "The table or diagram printed with 2023 OL Question 14, as the State Examinations Commission set it. It is labelled: Figure 5.",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1054,9 +1161,12 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2023 OL Q2",
     stem: "print(a == b) print(b != a) print(a > b) print(b <= a) print(a == 10) print(b != 21)",
     questionText: "(a) Describe the main difference between a general-purpose computer and an embedded system. (b) Name one example of an embedded system you might find in your home.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "General-purpose computers can have many uses, embedded systems have a limited or specific number of uses", marks: 6, accepts: ["General-purpose computers can be easily reprogrammed, embedded systems can’t easily be upgraded","General-purpose computers are generally higher cost, embedded systems are relatively low cost","Do not accept Micro:bit, Raspberry Pi as valid examples Valid example"] },
+    { id: "r-1", kind: "point", verbatim: "General-purpose computers can have many uses, embedded systems have a limited or specific number of uses", marks: null },
+    { id: "r-2", kind: "point", verbatim: "General-purpose computers can be easily reprogrammed, embedded systems can’t easily be upgraded", marks: null },
+    { id: "r-3", kind: "point", verbatim: "General-purpose computers are generally higher cost, embedded systems are relatively low cost", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Do not accept Micro:bit, Raspberry Pi as valid examples Valid example", marks: null },
     ],
   } as SecCard,
   {
@@ -1068,9 +1178,11 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2023 OL Q8",
     stem: "Below is a sorted list of student names. Ava Cara Chan Dara Julie Kevin Senan",
     questionText: "(a) If a binary search algorithm is used to search for the name “Chan” what name will first be identified as the Mid (middle) item? (b) Why is the binary search algorithm sometimes referred to as a “divide and conquer” method?",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Dara", marks: 6, accepts: ["Binary search looks at the middle item of a list & checks if that Is the item it is searching for. If the item is not found it then it splits the list in half, meaning there are less items to search. This process is repeated until item is found or there is nothing left to search.","Binary search works by dividing the list into two halves, eliminating one half and conquering the other half by repeating this process."] },
+    { id: "r-1", kind: "point", verbatim: "Dara", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Binary search looks at the middle item of a list & checks if that Is the item it is searching for. If the item is not found it then it splits the list in half, meaning there are less items to search. This process is repeated until item is found or there is nothing left to search.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Binary search works by dividing the list into two halves, eliminating one half and conquering the other half by repeating this process.", marks: null },
     ],
   } as SecCard,
   {
@@ -1082,9 +1194,12 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2023 OL Q11",
     stem: "The Python code below is being used to calculate a Junior Cycle grade descriptor from a percentage. Examine the code carefully and answer the questions below.",
     questionText: "(a) What is the output of the program if the user enters 19 when asked for the number of marks? (b) What is the output of the program if the user makes a mistake and enters 110 when asked for the number of marks? (c) What is the purpose of the int function in line 1 of the code?",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Not Graded", marks: 6, accepts: ["Distinction","Converts (casts) the text entered to an integer","Ensures that the datatype of the variable percentage will be an integer"] },
+    { id: "r-1", kind: "point", verbatim: "Not Graded", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Distinction", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Converts (casts) the text entered to an integer", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Ensures that the datatype of the variable percentage will be an integer", marks: null },
     ],
     figure: {
           "candId": "computer-science-2023-OL-paper-q11-code0",
@@ -1103,9 +1218,20 @@ export const CARDS: SecCard[] = [
     id: "cs-2023-ol-q13", topicId: "cs-2-2", conceptId: "i-select-correct-computer-science-term",
     section: "B", questionRef: "2023 OL Q13",
     questionText: "(i) Select the correct computer science term from the following list and place it in Column B to match the definitition in Column A in the table below. (ii) While loops are used in computer science to iterate over certain blocks of code. Examine the code below and complete the trace table that tracks the progress of the code being executed. (a)  (i) What cost will be printed when a customer has a car battery with a charge of 25% and no loyalty card? (ii) What cost will be printed when a customer has a car battery with a charge of 50% and a loyalty card? (iii) What cost will be printed when a customer has a car battery with a charge of 80% and no loyalty card? (iv) What is the lowest possible cost that this algorithm can print? (b) A public electric car charging point uses an algorithm to work out the cost for a customer to charge their car battery to 100%. Regular customers with loyalty cards get a discount. Examine the flowchart for the algorithm, shown in Figure 4 below, and answer the questions that follow. (i) What is the shortest time needed to fully recharge the three electric vehicles? Show your workings below. (ii) Name and explain a computational thinking skill you used to try and solve this problem. (c) Three cars arrive at an electric vehicle charging point location. There are two charge stations so only two cars can be charged at the same time. None of the three electric vehicle’s batteries have any charge. It takes one hour to fully charge each electric vehicle but this does not need to be done all in one go. Note: you do not need to account for time taken to change which car is being charged.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 38,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 38,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Column A Column B", marks: 38, accepts: ["Definition Term","A data structure that can store a collection of elements of the","Array","same data type","A character that represents a mathematical or logical action Operator","A command for handling a decision Conditional","A memory location that can store a value Variable","i j while i < j print(i)","1 1 10 True 1","2 2 9 True 2","3 3 8 True 3"] },
+    { id: "r-1", kind: "point", verbatim: "Column A Column B", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Definition Term", marks: null },
+    { id: "r-3", kind: "point", verbatim: "A data structure that can store a collection of elements of the", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Array", marks: null },
+    { id: "r-5", kind: "point", verbatim: "same data type", marks: null },
+    { id: "r-6", kind: "point", verbatim: "A character that represents a mathematical or logical action Operator", marks: null },
+    { id: "r-7", kind: "point", verbatim: "A command for handling a decision Conditional", marks: null },
+    { id: "r-8", kind: "point", verbatim: "A memory location that can store a value Variable", marks: null },
+    { id: "r-9", kind: "point", verbatim: "i j while i < j print(i)", marks: null },
+    { id: "r-10", kind: "point", verbatim: "1 1 10 True 1", marks: null },
+    { id: "r-11", kind: "point", verbatim: "2 2 9 True 2", marks: null },
+    { id: "r-12", kind: "point", verbatim: "3 3 8 True 3", marks: null },
     ],
     figure: {
           "candId": "computer-science-2023-OL-paper-q13-figure",
@@ -1521,6 +1647,14 @@ export const CARDS: SecCard[] = [
     { id: "r-4", kind: "point", verbatim: "Simulating structural movements", marks: 1 },
     { id: "r-5", kind: "point", verbatim: "Simulation of building evacuations", marks: 1 },
     ],
+    figure: {
+          "candId": "computer-science-2024-OL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q15-fig0.png",
+          "srcHash": "ec8e0b3d5b2ae421663ab65048bf1abb",
+          "alt": "The table or diagram printed with 2024 OL Question 15, as the State Examinations Commission set it. It is labelled: Column A, Name, Column B, Description, Column C, Data type, Rainfall, decimal number., Integer, Temperature, Province, Munster, Connacht, Ulster], Wind speed, Issue weather warning.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1535,6 +1669,36 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Examples:", marks: 6 },
     ],
+    figure: {
+          "candId": "computer-science-2024-OL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q15-fig0.png",
+          "srcHash": "ec8e0b3d5b2ae421663ab65048bf1abb",
+          "alt": "The table or diagram printed with 2024 OL Question 15, as the State Examinations Commission set it. It is labelled: Column A, Name, Column B, Description, Column C, Data type, Rainfall, decimal number., Integer, Temperature, Province, Munster, Connacht, Ulster], Wind speed, Issue weather warning.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC219GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
+    id: "cs-2024-ol-q15-b", topicId: "cs-2-4", conceptId: "design-phase-development-app-met-ireann",
+    section: "B", questionRef: "2024 OL Q15(b)",
+    stem: "Column C Data type Rainfall Amount of rainfall in mm. Not a decimal number. Integer Column A Column B Description Name Temperature Should accept a decimal number Province Any one of the following: [Leinster, Munster, Connacht, Ulster] Wind speed Should not be a decimal number Issue weather warning Yes or No Weather description Written description of today’s weather e.g. It will be warm and sunny today",
+    questionText: "In the design phase of the development of the app Met Éireann may have created a data table such as the one shown below. Fill in the missing data types in Column C in the table. The first row has been completed for you.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Column A Column B Column C", marks: 5 },
+    ],
+    figure: {
+          "candId": "computer-science-2024-OL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q15-fig0.png",
+          "srcHash": "ec8e0b3d5b2ae421663ab65048bf1abb",
+          "alt": "The table or diagram printed with 2024 OL Question 15, as the State Examinations Commission set it. It is labelled: Column A, Name, Column B, Description, Column C, Data type, Rainfall, decimal number., Integer, Temperature, Province, Munster, Connacht, Ulster], Wind speed, Issue weather warning.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1548,6 +1712,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Screen reader compatibility", marks: 6 },
     ],
+    figure: {
+          "candId": "computer-science-2024-OL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q15-fig0.png",
+          "srcHash": "ec8e0b3d5b2ae421663ab65048bf1abb",
+          "alt": "The table or diagram printed with 2024 OL Question 15, as the State Examinations Commission set it. It is labelled: Column A, Name, Column B, Description, Column C, Data type, Rainfall, decimal number., Integer, Temperature, Province, Munster, Connacht, Ulster], Wind speed, Issue weather warning.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1562,6 +1734,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "IF speed > 90 and speed < 110:", marks: 11 },
     ],
+    figure: {
+          "candId": "computer-science-2024-OL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q15-fig0.png",
+          "srcHash": "ec8e0b3d5b2ae421663ab65048bf1abb",
+          "alt": "The table or diagram printed with 2024 OL Question 15, as the State Examinations Commission set it. It is labelled: Column A, Name, Column B, Description, Column C, Data type, Rainfall, decimal number., Integer, Temperature, Province, Munster, Connacht, Ulster], Wind speed, Issue weather warning.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1576,6 +1756,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "[89, 90, 100, 110, 111, 129, 130, 131] ☑", marks: 5 },
     ],
+    figure: {
+          "candId": "computer-science-2024-OL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q15-fig0.png",
+          "srcHash": "ec8e0b3d5b2ae421663ab65048bf1abb",
+          "alt": "The table or diagram printed with 2024 OL Question 15, as the State Examinations Commission set it. It is labelled: Column A, Name, Column B, Description, Column C, Data type, Rainfall, decimal number., Integer, Temperature, Province, Munster, Connacht, Ulster], Wind speed, Issue weather warning.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1608,9 +1796,10 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2024 OL Q2",
     stem: "In computer science four bits of binary data is known as a ‘nibble’.",
     questionText: "(a) What is the largest binary number that can be represented by a nibble? (b) Convert the binary number from part (a) above into a decimal value.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "1111", marks: 6, accepts: ["15"] },
+    { id: "r-1", kind: "point", verbatim: "1111", marks: null },
+    { id: "r-2", kind: "point", verbatim: "15", marks: null },
     ],
   } as SecCard,
   {
@@ -1621,9 +1810,18 @@ export const CARDS: SecCard[] = [
     id: "cs-2024-ol-q3", topicId: "cs-2-3", conceptId: "choose-appropriate-electronic-component-list-below",
     section: "A", questionRef: "2024 OL Q3",
     questionText: "(a) Choose the appropriate electronic component from the list below and place it in Column B to match the correct component image in Column A. Resistor Transistor Capacitor (b) Select any one of these electronic components and explain its purpose.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Column A Column B", marks: 6, accepts: ["Component Image Component Name","Capacitor","Resistor","Transistor","Leaving Certificate 2024","Computer Science, Marking Scheme – Ordinary level","Resistor – Creates resistance to the flow of current. Creates a voltage difference.","Transistor – Amplifies or switches on or off current. Controls current or voltage flow.","Capacitor – Can build up and store energy. Can release large amounts of built up energy."] },
+    { id: "r-1", kind: "point", verbatim: "Column A Column B", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Component Image Component Name", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Capacitor", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Resistor", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Transistor", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Leaving Certificate 2024", marks: null },
+    { id: "r-7", kind: "point", verbatim: "Computer Science, Marking Scheme – Ordinary level", marks: null },
+    { id: "r-8", kind: "point", verbatim: "Resistor – Creates resistance to the flow of current. Creates a voltage difference.", marks: null },
+    { id: "r-9", kind: "point", verbatim: "Transistor – Amplifies or switches on or off current. Controls current or voltage flow.", marks: null },
+    { id: "r-10", kind: "point", verbatim: "Capacitor – Can build up and store energy. Can release large amounts of built up energy.", marks: null },
     ],
     figure: {
           "candId": "computer-science-2024-OL-paper-q3-fig0",
@@ -1643,9 +1841,11 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2024 OL Q8",
     stem: "Examine the incomplete Python program below and answer the questions that follow.",
     questionText: "(a) Why is the int function used in lines 1 and 2? (b) What is an appropriate print statement that could be entered in line 8?",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Casts the input to an integer", marks: 6, accepts: ["int sets the data type to an integer/ number/ whole number","Numbers are equal / the same / match Valid print statement 3 marks"] },
+    { id: "r-1", kind: "point", verbatim: "Casts the input to an integer", marks: null },
+    { id: "r-2", kind: "point", verbatim: "int sets the data type to an integer/ number/ whole number", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Numbers are equal / the same / match Valid print statement 3 marks", marks: null },
     ],
     figure: {
           "candId": "computer-science-2024-OL-paper-q8-code0",
@@ -1664,9 +1864,20 @@ export const CARDS: SecCard[] = [
     id: "cs-2024-ol-q16", topicId: "cs-2-2", conceptId: "open-program-called-question16-py-your",
     section: "B", questionRef: "2024 OL Q16",
     questionText: "(i) Modify the program so that it first prints out “Welcome to the driving licence eligibility checker” instead of “The program”. When the program is run the output should now look as follows: Welcome to the driving licence eligibility checker What age are you? (ii) Insert a comment in the code that explains what is happening on line 6. (iii) Print a message stating the age that the user entered. When the program is run the output may now look as follows: Welcome to the driving licence eligibility checker What age are you? 17 You entered 17 You are entitled to apply for a driving licence. (iv) Currently the program will only output a message when the entered age is 17 or over. Change the program so that if an age less than 17 is entered a suitable message is output. When the program is run the output may now look as follows: Welcome to the driving licence eligibility checker What age are you? 16 You entered 16 You are not entitled to apply for a driving licence. (v) Amend the program to ask for the user’s name. The name should be stored in an appropriate variable. The user’s name should be output along with the message about eligibility to apply for a licence. When the program is run the output may now look as follows: Welcome to the driving licence eligibility checker What is your name? Sarah What age are you? 16 You entered 16 Sarah you are not entitled to apply for a driving licence. (vi) Update your program so that it outputs a message to the user based on the criteria in the table below. The output should continue to display the user name. The name Sarah is used in the examples below. (a) Open the program called Question16_A.py from your device. The source code is shown and described briefly below. (b) Open the program called Question16_B.py from your device. This file only contains two comments on lines 1 and 2.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 80,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 80,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Possible solution:", marks: 80, accepts: ["1 # Question 16(a)","2 # Examination Number:","3","4 print(\"Welcome to the driving licence eligibility checker\") #(i)","5","6 #(ii) user asked to input age and it is converted to an integer","7 age = int(input(\"What age are you? \"))","8 print(\"You entered\", age) #(iii)","9","10 name = input(\"Enter your name: \") #(v)","11"] },
+    { id: "r-1", kind: "point", verbatim: "Possible solution:", marks: null },
+    { id: "r-2", kind: "point", verbatim: "1 # Question 16(a)", marks: null },
+    { id: "r-3", kind: "point", verbatim: "2 # Examination Number:", marks: null },
+    { id: "r-4", kind: "point", verbatim: "3", marks: null },
+    { id: "r-5", kind: "point", verbatim: "4 print(\"Welcome to the driving licence eligibility checker\") #(i)", marks: null },
+    { id: "r-6", kind: "point", verbatim: "5", marks: null },
+    { id: "r-7", kind: "point", verbatim: "6 #(ii) user asked to input age and it is converted to an integer", marks: null },
+    { id: "r-8", kind: "point", verbatim: "7 age = int(input(\"What age are you? \"))", marks: null },
+    { id: "r-9", kind: "point", verbatim: "8 print(\"You entered\", age) #(iii)", marks: null },
+    { id: "r-10", kind: "point", verbatim: "9", marks: null },
+    { id: "r-11", kind: "point", verbatim: "10 name = input(\"Enter your name: \") #(v)", marks: null },
+    { id: "r-12", kind: "point", verbatim: "11", marks: null },
     ],
     figure: {
           "candId": "computer-science-2024-OL-paper-q16-figure",
@@ -1764,6 +1975,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "The development of the Turing Machine", marks: 6 },
     ],
+    figure: {
+          "candId": "computer-science-2025-OL-paper-q13-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q13-fig0.png",
+          "srcHash": "4ad354f56f8a3afaf07b421737668d08",
+          "alt": "The table or diagram printed with 2025 OL Question 13, as the State Examinations Commission set it. It is labelled: Figure 5.",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1778,6 +1997,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Quantum computing: uses qubits, instead of binary, to solve complex problems much faster than classical computers, with applications in cryptography, drug discovery, etc.", marks: 4 },
     ],
+    figure: {
+          "candId": "computer-science-2025-OL-paper-q13-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q13-fig0.png",
+          "srcHash": "4ad354f56f8a3afaf07b421737668d08",
+          "alt": "The table or diagram printed with 2025 OL Question 13, as the State Examinations Commission set it. It is labelled: Figure 5.",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1792,6 +2019,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Application Layer: This is to provide the programs and apps that people use to do specific tasks", marks: 6 },
     ],
+    figure: {
+          "candId": "computer-science-2025-OL-paper-q13-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q13-fig0.png",
+          "srcHash": "4ad354f56f8a3afaf07b421737668d08",
+          "alt": "The table or diagram printed with 2025 OL Question 13, as the State Examinations Commission set it. It is labelled: Figure 5.",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1806,6 +2041,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Managing Hardware", marks: 6 },
     ],
+    figure: {
+          "candId": "computer-science-2025-OL-paper-q13-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q13-fig0.png",
+          "srcHash": "4ad354f56f8a3afaf07b421737668d08",
+          "alt": "The table or diagram printed with 2025 OL Question 13, as the State Examinations Commission set it. It is labelled: Figure 5.",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1820,6 +2063,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Washing Machines – Controls washing cycles, temperature, and spin speeds.", marks: 4 },
     ],
+    figure: {
+          "candId": "computer-science-2025-OL-paper-q13-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q13-fig0.png",
+          "srcHash": "4ad354f56f8a3afaf07b421737668d08",
+          "alt": "The table or diagram printed with 2025 OL Question 13, as the State Examinations Commission set it. It is labelled: Figure 5.",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2119,9 +2370,17 @@ export const CARDS: SecCard[] = [
     id: "cs-2025-ol-q3", topicId: "cs-2-3", conceptId: "choose-appropriate-number-system-list-below",
     section: "A", questionRef: "2025 OL Q3",
     questionText: "(a) Choose the appropriate number system from the list below and place it in Column B to match the correct base value in Column A. (b) Explain why computers use the binary number system rather than the decimal number system.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Column A Column B", marks: 6, accepts: ["Base Value Number system","2 Binary","10 Decimal","16 Hexadecimal","Simplicity for Hardware: Computers use electrical circuits, which have two states: on (1) and off (0).","Reliability: Using just two states (1 and 0) reduces the chance of errors or misinterpretations.","Efficiency in Processing: The binary system allows computers to perform operations and calculations much faster because it only needs to handle two states.","Compatibility with Logic: Binary aligns with Boolean logic (true/false), which is the foundation of programming and decision-making in computers."] },
+    { id: "r-1", kind: "point", verbatim: "Column A Column B", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Base Value Number system", marks: null },
+    { id: "r-3", kind: "point", verbatim: "2 Binary", marks: null },
+    { id: "r-4", kind: "point", verbatim: "10 Decimal", marks: null },
+    { id: "r-5", kind: "point", verbatim: "16 Hexadecimal", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Simplicity for Hardware: Computers use electrical circuits, which have two states: on (1) and off (0).", marks: null },
+    { id: "r-7", kind: "point", verbatim: "Reliability: Using just two states (1 and 0) reduces the chance of errors or misinterpretations.", marks: null },
+    { id: "r-8", kind: "point", verbatim: "Efficiency in Processing: The binary system allows computers to perform operations and calculations much faster because it only needs to handle two states.", marks: null },
+    { id: "r-9", kind: "point", verbatim: "Compatibility with Logic: Binary aligns with Boolean logic (true/false), which is the foundation of programming and decision-making in computers.", marks: null },
     ],
     figure: {
           "candId": "computer-science-2025-OL-paper-q3-fig0",
@@ -2141,9 +2400,19 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2025 OL Q7",
     stem: "Abstraction is used in maps, such as that in Figure 1 below, to help users read them with more ease. Figure 1",
     questionText: "(a) List two ways in which abstraction has been used in the map in Figure 1. (b) What is meant by the term ‘abstraction’ in relation to computer science?",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Simplified items on the map are considered forms of abstraction such as:", marks: 6, accepts: ["Removing unnecessary details such as buildings, trees etc","Simplified roads","Simplified river","Simplified railway line","Green areas","Text labels on street names / road numbers","Symbols for bus stops","Place names for important buildings","Abstraction means simplifying complex systems by focusing only on the important details and","hiding the unnecessary ones."] },
+    { id: "r-1", kind: "point", verbatim: "Simplified items on the map are considered forms of abstraction such as:", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Removing unnecessary details such as buildings, trees etc", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Simplified roads", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Simplified river", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Simplified railway line", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Green areas", marks: null },
+    { id: "r-7", kind: "point", verbatim: "Text labels on street names / road numbers", marks: null },
+    { id: "r-8", kind: "point", verbatim: "Symbols for bus stops", marks: null },
+    { id: "r-9", kind: "point", verbatim: "Place names for important buildings", marks: null },
+    { id: "r-10", kind: "point", verbatim: "Abstraction means simplifying complex systems by focusing only on the important details and", marks: null },
+    { id: "r-11", kind: "point", verbatim: "hiding the unnecessary ones.", marks: null },
     ],
     figure: {
           "candId": "computer-science-2025-OL-paper-q7-fig0",
@@ -2163,10 +2432,43 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2025 OL Q8",
     stem: "Jeremy is building a desktop computer, such as that in Figure 2, using various pieces of hardware. Outline the purpose of the following components of a desktop computer:",
     questionText: "(i) Central Processing Unit (CPU) (ii) Input devices Figure 2",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "CPU: The CPU (Central Processing Unit) is often referred to as the \"brain\" of the computer. It's the main component that performs most of the processing inside a computer", marks: 6, accepts: ["Input Devices: Input devices are components used to enter data, instructions, or signals into a computer system. For each:"] },
+    { id: "r-1", kind: "point", verbatim: "CPU: The CPU (Central Processing Unit) is often referred to as the \"brain\" of the computer. It's the main component that performs most of the processing inside a computer", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Input Devices: Input devices are components used to enter data, instructions, or signals into a computer system. For each:", marks: null },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC219GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
+    id: "cs-2025-ol-q13", topicId: "cs-2-3", conceptId: "development-world-s-first-computer-eniac",
+    section: "B", questionRef: "2025 OL Q13",
+    questionText: "(i) List three other important computing developments that have taken place in the last 100 years. (ii) Choose one of the developments from part (i) and explain its importance. (iii) Artificial intelligence and machine learning are major trends in computing that have emerged over the last decade. Name and explain one other emerging trend in computing. (a) The development of the world’s first computer, ENIAC (electronic numerical integrator and computer) in 1945, is a major milestone in computing. (i) Explain the purpose of the application and hardware layers. (ii) Apple iOS, Microsoft Windows, and Android OS are all examples of operating systems. List three functions of an operating system. (iii) The enhancement of computers over the last few decades has allowed for the development of specific-purpose computers such as embedded systems. Describe two examples of embedded systems in our everyday lives. (b) Modern computer systems consist of the four layers shown in Figure 5 below. (c) Name two computer-related careers and for each, list two activities that the person would undertake.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 38,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The development of the Turing Machine", marks: null },
+    { id: "r-2", kind: "point", verbatim: "The development of algorithms and software e.g. search/sort algorithms, programming language compilers", marks: null },
+    { id: "r-3", kind: "point", verbatim: "The invention of the internet", marks: null },
+    { id: "r-4", kind: "point", verbatim: "The development of the personal computer (PC)", marks: null },
+    { id: "r-5", kind: "point", verbatim: "The advancement of artificial intelligence (AI)", marks: null },
+    { id: "r-6", kind: "point", verbatim: "The creation of the World Wide Web", marks: null },
+    { id: "r-7", kind: "point", verbatim: "The development of mobile phones and smartphones", marks: null },
+    { id: "r-8", kind: "point", verbatim: "The rise of cloud computing", marks: null },
+    { id: "r-9", kind: "point", verbatim: "The expansion of wireless networking (wi-fi and 5g)", marks: null },
+    { id: "r-10", kind: "point", verbatim: "The creation of graphical user interfaces (GUIs)", marks: null },
+    { id: "r-11", kind: "point", verbatim: "The invention of the microprocessor", marks: null },
+    { id: "r-12", kind: "point", verbatim: "The rise of blockchain and cryptocurrencies", marks: null },
+    ],
+    figure: {
+          "candId": "computer-science-2025-OL-paper-q13-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q13-fig0.png",
+          "srcHash": "4ad354f56f8a3afaf07b421737668d08",
+          "alt": "The table or diagram printed with 2025 OL Question 13, as the State Examinations Commission set it. It is labelled: Figure 5.",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2177,9 +2479,20 @@ export const CARDS: SecCard[] = [
     section: "B", questionRef: "2025 OL Q14",
     stem: "A vending machine, such as that in Figure 6, has the following options available for users. C2 Crisps, Cheese & Onion 2 Customers deposit coins into the vending machine and input the two-character item code (for example, A2 for water) for their desired selection. If the customer has deposited enough funds, the vending machine dispenses the chosen item and returns any necessary change.",
     questionText: "(i) Line 1 of the code has a conditional statement. Explain the purpose of this conditional statement. (ii) State a suitable data type for the variable price. (a) A section of the Python code for the vending machine program is shown below. (i) Describe a unit test that should take place for the vending machine. (ii) The table below shows a test plan for the vending machine. Some of the entries have been left blank. Complete the test plan by filling in the correct information in the blank spaces. (iii) Name and explain a stage of software testing, other than unit testing, that should take place to ensure the vending machine works as intended when it is released. (iv) Describe two design features that could be incorporated into the vending machine to make it accessible to as many different types of users as possible. (b) The vending machine needs to be tested before it is released. (c) When the user inserts the correct amount of money and enters the code of an item, the vending machine will perform a number of checks. Create an algorithm or flowchart to describe the process outlined in the following bullet points: • The vending machine checks if there are any of that particular item available. • If there are any items available, one is dispensed to the user. • If there are no items available, the user is asked to enter another code. • If there are less than three of that particular item remaining a message is sent to head office to order more stock for the vending machine.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 38,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 38,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "It is to check that the user has entered enough money to buy the selected item", marks: 38, accepts: ["float","Verify that selecting a specific snack (e.g., \"A1\") correctly identifies the item","Check if the vending machine accepts and processes a specific amount of money (e.g., €1.50) for a €1.50 snack.","Check that the vending machine dispenses the correct change if too much money is entered","Check that the card facility for payment is working","Check that the vending machine doesn’t allow an item to be selected if it is sold out","Code Entered Money Inserted (€) Expected Result","B1 3 Oreos served, €0.50 change given","A2 1.2 Water served, no change given","C1 <2 Error – not enough money inserted"] },
+    { id: "r-1", kind: "point", verbatim: "It is to check that the user has entered enough money to buy the selected item", marks: null },
+    { id: "r-2", kind: "point", verbatim: "float", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Verify that selecting a specific snack (e.g., \"A1\") correctly identifies the item", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Check if the vending machine accepts and processes a specific amount of money (e.g., €1.50) for a €1.50 snack.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Check that the vending machine dispenses the correct change if too much money is entered", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Check that the card facility for payment is working", marks: null },
+    { id: "r-7", kind: "point", verbatim: "Check that the vending machine doesn’t allow an item to be selected if it is sold out", marks: null },
+    { id: "r-8", kind: "point", verbatim: "Code Entered Money Inserted (€) Expected Result", marks: null },
+    { id: "r-9", kind: "point", verbatim: "B1 3 Oreos served, €0.50 change given", marks: null },
+    { id: "r-10", kind: "point", verbatim: "A2 1.2 Water served, no change given", marks: null },
+    { id: "r-11", kind: "point", verbatim: "C1 <2 Error – not enough money inserted", marks: null },
+    { id: "r-12", kind: "point", verbatim: "C2 0.75 Error – not enough money inserted", marks: null },
     ],
     figure: {
           "candId": "computer-science-2025-OL-paper-q14-figure",
@@ -2198,9 +2511,20 @@ export const CARDS: SecCard[] = [
     id: "cs-2025-ol-q15", topicId: "cs-2-3", conceptId: "museum-has-information-point-such-shown",
     section: "B", questionRef: "2025 OL Q15",
     questionText: "(i) Identify three potential stakeholders for this app. For each stakeholder, identify one requirement they have for the app. (ii) Describe two adaptive or assistive technology features that the design team should focus on for the project. (a) A museum has an information point, such as that shown in Figure 7, to inform visitors about the museum’s art collection. There is only one information point at the entrance to the museum and it provides users with images and text about the artwork. However, there have been a number of complaints relating to the user experience, particularly in how the information from the information point is delivered to users. You are part of a design team working on redeveloping the visitor information point so that it allows users to access the information using an app on their own smart device. (i) Outline one activity that your team will undertake at each of the four stages listed in the answer box below. (ii) One of the team has suggested using a staged software development process rather than the iterative development process shown in Figure 8. Put forward two arguments for retaining the iterative development process. (b) The diagram in Figure 8 below illustrates the typical stages in a software development design process. (i) Describe one benefit of including this technology. (ii) Describe one ethical concern of including this technology. (c) One of the designers wants to build location tracking into the app to see exactly where visitors go in the museum.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 38,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 38,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Museum Visitors", marks: 38, accepts: ["Requirement: Easy access to detailed information about artwork to enhance their experience as","they explore the museum.","Museum Staff","Requirement: A user-friendly way to update and manage the content to keep the app","information current and relevant.","Museum Administrators","Requirement: Analytics tracking to monitor app usage and gather visitor insights.","Tour Guides","Requirement: The app should allow syncing or scheduling of guided tour content so it","complements live tours without conflicting information.","External Sponsors or Partners (e.g. cultural institutions, art donors)"] },
+    { id: "r-1", kind: "point", verbatim: "Museum Visitors", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Requirement: Easy access to detailed information about artwork to enhance their experience as", marks: null },
+    { id: "r-3", kind: "point", verbatim: "they explore the museum.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Museum Staff", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Requirement: A user-friendly way to update and manage the content to keep the app", marks: null },
+    { id: "r-6", kind: "point", verbatim: "information current and relevant.", marks: null },
+    { id: "r-7", kind: "point", verbatim: "Museum Administrators", marks: null },
+    { id: "r-8", kind: "point", verbatim: "Requirement: Analytics tracking to monitor app usage and gather visitor insights.", marks: null },
+    { id: "r-9", kind: "point", verbatim: "Tour Guides", marks: null },
+    { id: "r-10", kind: "point", verbatim: "Requirement: The app should allow syncing or scheduling of guided tour content so it", marks: null },
+    { id: "r-11", kind: "point", verbatim: "complements live tours without conflicting information.", marks: null },
+    { id: "r-12", kind: "point", verbatim: "External Sponsors or Partners (e.g. cultural institutions, art donors)", marks: null },
     ],
     figure: {
           "candId": "computer-science-2025-OL-paper-q15-fig0",

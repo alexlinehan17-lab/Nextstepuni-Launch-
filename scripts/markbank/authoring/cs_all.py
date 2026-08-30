@@ -156,14 +156,16 @@ def main():
     def listing_for(year, level, q):
         key = (year, level.lower(), q)
         if key not in listings:
+            # The lines the BOUND crop carries, not every band the question
+            # prints. A listing the card does not show is still the only place
+            # the student can read it, so taking it out of the question text
+            # would leave "Explain what the following code does:" with nothing
+            # to explain.
             try:
-                made = CSF.crop(year, level.lower(), q, write=False)
+                chosen = CSF.question_figure(year, level.lower(), q)
             except Exception:                                # noqa: BLE001
-                made = []
-            listings[key] = ([t for _, _, _, ls, kind in made
-                              if kind == 'code' for t in ls],
-                             [t for _, _, _, ls, kind in made
-                              if kind == 'fig' for t in ls])
+                chosen = None
+            listings[key] = (chosen[4], chosen[5]) if chosen else ([], [])
         return listings[key]
 
     idx = R.leaf_index(census_subject('computer-science'))
@@ -280,6 +282,15 @@ def main():
         for (section, q), held in sorted(unpriced.items()):
             tariff = table.tariff(q)
             keep = cardable(table.points(q))
+            # Each row here stands on its own rather than being an
+            # alternative to the one above it, so a point that does not trace
+            # back to the scheme is DROPPED rather than failing the card. That
+            # is what the alternatives path already did; when every point
+            # became its own row, seven cards died for one untraceable point
+            # among several good ones.
+            traces, _bad = table.verify([t for _, t in keep])
+            traces = set(traces)
+            keep = [(i, t) for i, t in keep if t in traces]
             rows = [t for _, t in keep]
             # The same join A.card will make. paper.text() on a question that
             # states nothing of its own returns empty, so checking it here
@@ -322,9 +333,18 @@ def main():
                     refused['names a lettered part this author cannot decode'] += 1
                 continue
             try:
+                # ONE ROW PER POINT, and no per-row value. The pass used to
+                # make a single alt row carrying the question's whole tariff,
+                # which reads as "five marks for any one of these" -- false
+                # wherever the question's parts ask different things. 2022 OL
+                # Q5 offered "3" (the index part (a) asks for) as an
+                # alternative to three limitations of linear search, which is
+                # what (b) asks for. The scheme prices the QUESTION and states
+                # these points under it; it never says how the marks divide,
+                # and the card now says exactly that much.
                 A.card(q, None, None, topic=topic, concept=concept_for(ask),
-                       source='table', use=[[i for i, _ in keep[:MAX_ROWS]]],
-                       marks=[tariff], tariff='fixed',
+                       source='table', use=[i for i, _ in keep[:MAX_ROWS]],
+                       total=tariff, tariff='questionTotal',
                        card_id=f'cs-{year}-{level}-q{q}', figure=figure,
                        listing=listing_for(year, level, q)[0] if figure else (),
                        printed=listing_for(year, level, q)[1] if figure else (),

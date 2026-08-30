@@ -342,9 +342,9 @@ const q = (s) => JSON.stringify(String(s));
  */
 function tariffFault(c) {
   const t = c.tariffModel ?? { kind: 'fixed' };
-  if (t.kind === 'orderedSplit') {
+  if (t.kind === 'orderedSplit' || t.kind === 'questionTotal') {
     return c.rows.every(r => r.marks === null || r.marks === undefined)
-      ? null : 'an ordered split cannot give rows their own marks';
+      ? null : `a ${t.kind} tariff cannot give rows their own marks`;
   }
   if (t.kind === 'bestNofParts') {
     return t.answer * t.perPart === c.totalMarks

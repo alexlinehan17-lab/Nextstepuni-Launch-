@@ -160,6 +160,7 @@ function claimedMarks(g: NonNullable<MarkRow['group']>, n: number): number {
  */
 export function claimableTotal(card: SecCard): number {
   if (card.tariffModel.kind === 'orderedSplit') return card.totalMarks;
+  if (card.tariffModel.kind === 'questionTotal') return card.totalMarks;
   if (card.tariffModel.kind === 'bestNofParts') {
     return card.tariffModel.answer * card.tariffModel.perPart;
   }
@@ -1428,6 +1429,13 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                     <p style={{ margin: '2px 0 0', font: `400 12px/1.45 ${SANS}`, color: MUTED }}>
                       The examiner marks the first correct answers higher than the rest
                       ({card.tariffModel.notation}) — so what these are worth depends on how many you got.
+                    </p>
+                  )}
+                  {card.tariffModel.kind === 'questionTotal' && (
+                    <p style={{ margin: '2px 0 0', font: `400 12px/1.45 ${SANS}`, color: MUTED }}>
+                      The paper prices this question at {card.totalMarks} marks in total and the
+                      scheme does not say how they divide between its parts — so these are
+                      everything it states, with no per-point value to show.
                     </p>
                   )}
                   {card.tariffModel.kind === 'bestNofParts' && (

@@ -422,8 +422,25 @@ const decks = [
    *     scheme's real sixth point, and that point does not trace back to the
    *     scheme text because the reader glued a credit rule onto its end. The
    *     provenance gate refusing it is the gate working. */
-  ['computer-science:higher', CS_HIGHER, 193, '6deede75657e10e22613a876581c7ebdeac13d25a127c6b27c9e783cff32787e'],
-  ['computer-science:ordinary', CS_ORDINARY, 116, '9f69bc2365bf273fcf24303ce5012bca91c4e2bf0b7dcf36402bd541cc791f29'],
+  /* 2026-08-30 (same day): 193/116 -> 194/116, coverage 367/484 -> 369/484.
+   * A card citing a whole question no longer presents its parts' separate
+   * answers as ALTERNATIVES to one another. That said "five marks for any one
+   * of these", and 2022 OL Q5 was offering "3" -- the index part (a) asks for
+   * -- as an alternative to the three limitations of linear search that (b)
+   * asks for. Those cards now use the new `questionTotal` tariff: one row per
+   * point, no per-row value, and the question's own printed total. Nothing was
+   * removed. */
+  /* 2026-08-30 (same day): 194/116 -> 202/118, coverage 369/484 -> 382/484.
+   * A question owns the paper from its own heading to the NEXT question's,
+   * and that often runs over the page: 2021 HL Q13 prints "This question
+   * continues on the next page". Matching only pages that CARRY the heading
+   * missed all of that, so nine questions had no figure and could not be
+   * carded. Its figure still comes from the page carrying its heading, which
+   * is where the paper prints the stimulus the question is built on -- taking
+   * one from a later page would put one part's listing on another's card.
+   * Nothing was removed. */
+  ['computer-science:higher', CS_HIGHER, 202, '4927d6cefff62be2f5cf0109014e26bed6cec252e7c27e72758a0a5b91a33449'],
+  ['computer-science:ordinary', CS_ORDINARY, 118, '7d6b2b541a17ccd4e2ae155d7997b8d82cde404107dd6962d6cc3cd67c0565da'],
   ['construction-studies:higher', CONS_HIGHER, 255, 'b74a39fd589f1082d6378190aee778d528eff0968d7af0ee9144525f2e40d57b'],
   ['construction-studies:ordinary', CONS_ORDINARY, 250, 'f56985e32cc1f02a2e2f7a7eb300a44646b75cf3604a12b5a478bde2a520d2da'],
 ] as const;
@@ -440,6 +457,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7759);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7770);
   });
 });

@@ -345,6 +345,66 @@ def trim_blank_box_right(page, x0, y0, x1, y1, text_rows):
     return x1
 
 
+def trim_blank_tail(page, x0, y0, x1, y1, text_rows):
+    """Cut empty writing space off the foot of a band.
+
+    2021 HL Q8 prints "1F44D" over a row of boxes with the first four bits
+    filled in, inside one tall rectangle the candidate completes. The given
+    bits are printed matter and the crop must keep them; the 300pt of blank
+    paper under them is where the student writes, and showing it is just a
+    large empty box under the answer.
+
+    Only whitespace goes. The band's own enclosing frame is ignored when
+    looking for the last ink, since its bottom edge is the very thing being
+    trimmed away from.
+    """
+    bottom = None
+    for bb, _ in text_rows:
+        if y0 - 2 < bb[1] and bb[3] < y1 + 2 and x0 - 2 < bb[0] and bb[2] < x1 + 2:
+            bottom = bb[3] if bottom is None else max(bottom, bb[3])
+    for d in page.get_drawings():
+        r = d['rect']
+        if r.height >= 0.9 * (y1 - y0) or r.width >= 0.98 * (x1 - x0):
+            continue
+        if y0 - 2 < r.y0 and r.y1 < y1 + 2 and x0 - 2 < r.x0 and r.x1 < x1 + 2:
+            bottom = r.y1 if bottom is None else max(bottom, r.y1)
+    for im in page.get_images(full=True):
+        for ir in page.get_image_rects(im[0]):
+            if is_a_rule(ir.x0, ir.y0, ir.x1, ir.y1):
+                continue
+            if y0 - 2 < ir.y0 and ir.y1 < y1 + 2 and x0 - 2 < ir.x0 and ir.x1 < x1 + 2:
+                bottom = ir.y1 if bottom is None else max(bottom, ir.y1)
+    if bottom is None or y1 - bottom < 60.0:
+        return y1
+    return min(y1, bottom + 10.0)
+
+
+def trim_answer_box_top(page, x0, y0, x1, y1, text_rows):
+    """Cut a blank ruled box off the TOP of a band.
+
+    The same box, at the other end. 2023 HL Q13's crop opened with the ruled
+    space part (a) is answered in and only then reached Figure 8, because the
+    trims cut from the foot and the right and never from the head.
+    """
+    for _ in range(12):
+        cut = None
+        for d in page.get_drawings():
+            r = d['rect']
+            if not (y0 - 6.0 <= r.y0 <= y0 + 6.0 and y0 + 10.0 < r.y1 < y1 - 2.0):
+                continue
+            if not (x0 - 2.0 <= r.x0 and r.x1 <= x1 + 2.0):
+                continue
+            if r.width < 0.8 * (x1 - x0) or r.height < 20.0:
+                continue
+            if not is_blank_box(page, r, text_rows):
+                continue
+            cut = r.y1 + 2.0 if cut is None else max(cut, r.y1 + 2.0)
+        if cut is None or cut >= y1:
+            break
+        y0 = cut
+    return y0
+
+
 def trim_answer_box(page, x0, y0, x1, y1, text_rows):
     """Cut a blank ruled box off the bottom of a band.
 
@@ -359,10 +419,14 @@ def trim_answer_box(page, x0, y0, x1, y1, text_rows):
         cut = None
         for d in page.get_drawings():
             r = d['rect']
-            # Inside the band and ending at its foot. Without the upper
-            # bound a box printed BELOW the band matched and the "trim"
-            # extended the crop into it instead of cutting it off.
-            if not (y0 + 2.0 < r.y0 < y1 - 10.0 and y1 - 6.0 <= r.y1 <= y1 + 6.0):
+            # Starting inside the band and ending at its foot OR BELOW IT.
+            # A band often stops part way down an answer box -- 2021 OL Q13's
+            # crop kept the top two centimetres of the "Activity 1:" box under
+            # Figure 4 -- and a test that wanted the box to END at the foot
+            # could never see those. The upper bound on r.y0 is what keeps a
+            # box printed entirely BELOW the band from matching and pulling
+            # the crop down into it.
+            if not (y0 + 2.0 < r.y0 < y1 - 10.0 and r.y1 >= y1 - 6.0):
                 continue
             # 20pt, not 40: an answer box is drawn as one rect PER RULED
             # ROW, each about a line high, so a tall-box test found nothing
@@ -578,6 +642,8 @@ def figure_bands(page, mono):
                 y0 = max(y0, ly1 + 2)
             elif ly0 >= y1:
                 y1 = min(y1, ly0 - 2)
+        y0 = trim_answer_box_top(page, x0, y0, x1, y1, text_rows)
+        y1 = trim_blank_tail(page, x0, y0, x1, y1, text_rows)
         y1 = trim_answer_box(page, x0, y0, x1, y1, text_rows)
         x1 = trim_blank_box_right(page, x0, y0, x1, y1, text_rows)
         # An empty-bodied answer table is not part of the figure. Where
@@ -615,18 +681,65 @@ def text_lines(page):
                 yield tuple(ln['bbox']), text
 
 
-def question_pages(P, q):
-    """Page indexes carrying this question's head, in booklet order."""
-    hits = []
-    for path in P.files:
-        with pymupdf.open(path) as doc:
-            for n in range(doc.page_count):
-                if re.search(rf'(?m)^\s*Question\s+{q}\b', doc[n].get_text()):
-                    hits.append((path, n))
-    return hits
-
-
 QHEAD_LINE = re.compile(r'^\s*Question\s+(\d{1,2})\b')
+
+
+_HEADINGS = {}
+
+
+def _headings(P):
+    """(path, page, height, [(y, question no)]) for every page of a paper.
+
+    Cached. Without it every question rescanned every page of its paper, and
+    the authoring run -- which asks for one question's crop at a time -- went
+    from seconds to minutes.
+    """
+    key = tuple(P.files)
+    if key not in _HEADINGS:
+        pages = []
+        for path in P.files:
+            with pymupdf.open(path) as doc:
+                for n in range(doc.page_count):
+                    heads = []
+                    for bb, text in text_lines(doc[n]):
+                        m = QHEAD_LINE.match(text)
+                        if m:
+                            heads.append((bb[1], int(m.group(1))))
+                    pages.append((path, n, doc[n].rect.height, sorted(heads)))
+        _HEADINGS[key] = pages
+    return _HEADINGS[key]
+
+
+def question_regions(P, q):
+    """(path, page index, top, bottom) for everything Question q owns.
+
+    A question owns the paper from its own heading to the NEXT question's
+    heading, and that often runs onto the following page: 2021 HL Q13 prints
+    "This question continues on the next page" and its eircode listing is over
+    the fold. Matching only pages that carry the heading missed every one of
+    those, so the listing was never cropped and stayed in the card's stem as
+    "1 def is_valid_eircode(test_eircode): 2 3 # This function checks".
+    """
+    pages = _headings(P)
+    out, open_at = [], None
+    for path, n, height, heads in pages:
+        mine = next((y for y, num in heads if num == q), None)
+        if mine is not None:
+            open_at = mine
+        elif open_at is None:
+            continue
+        else:
+            open_at = 0.0
+        if open_at is None:
+            continue
+        later = [y for y, num in heads if num != q and y > open_at + 2]
+        bottom = min(later) if later else height
+        out.append((path, n, open_at, bottom))
+        if later:
+            open_at = None
+            break
+        open_at = 0.0
+    return out
 
 
 def question_span(page, q):
@@ -653,10 +766,9 @@ def question_span(page, q):
 def crop(year, level, q, write=False):
     P = PP.Paper('computer-science', year, level)
     made = []
-    for path, n in question_pages(P, q):
+    for path, n, top, bot in question_regions(P, q):
         with pymupdf.open(path) as doc:
             page = doc[n]
-            top, bot = question_span(page, q)
             # The span bounds the CODE too. Bounding only the figure bands
             # gave every question the listing printed for the one above it
             # when the two shared a page -- 2024 HL Q2's crop came out byte
@@ -774,7 +886,7 @@ def whole_lines(year, level, q, page_no, rect):
     line out, but it must not show half of one.
     """
     P = PP.Paper('computer-science', year, level)
-    path = next(p for p, n in question_pages(P, q) if n == page_no)
+    path = next(p for p, n, _, _ in question_regions(P, q) if n == page_no)
     with pymupdf.open(path) as doc:
         page = doc[page_no]
         x0, x1 = rect.x0, rect.x1
@@ -828,13 +940,17 @@ def question_figure(year, level, q, write=False):
     made = crop(year, level, q, write=False)
     if not made:
         return None
-    if len({n for _, n, _, _, _ in made}) > 1:
-        return None
+    # A question can now own several pages, and its figure comes from the one
+    # carrying its HEADING -- that is where the paper prints the stimulus the
+    # question is built on. A later page holds the parts' own material, and
+    # picking across pages would put one part's listing on another's card.
+    head = min(n for _, n, _, _, _ in made)
+    made = [m for m in made if m[1] == head]
     made = sorted(made, key=lambda m: m[2].y0)
     page_no = made[0][1]
     if len(made) > 1:
         P = PP.Paper('computer-science', year, level)
-        path = next(p for p, n in question_pages(P, q) if n == page_no)
+        path = next(p for p, n, _, _ in question_regions(P, q) if n == page_no)
         with pymupdf.open(path) as doc:
             page = doc[page_no]
             rows = list(text_lines(page))
@@ -858,7 +974,7 @@ def question_figure(year, level, q, write=False):
         rect = whole_lines(year, level, q, page_no, rect)
     if write:
         P = PP.Paper('computer-science', year, level)
-        path = next(p for p, n in question_pages(P, q) if n == page_no)
+        path = next(p for p, n, _, _ in question_regions(P, q) if n == page_no)
         d = os.path.join(ROOT, 'exam-papers', 'computer-science', 'figures',
                          f'{year}-{level}')
         os.makedirs(d, exist_ok=True)
@@ -866,10 +982,17 @@ def question_figure(year, level, q, write=False):
             doc[page_no].get_pixmap(clip=rect, dpi=DPI).save(
                 os.path.join(d, f'{name}.png'))
     P = PP.Paper('computer-science', year, level)
-    path = next(p for p, n in question_pages(P, q) if n == page_no)
+    path = next(p for p, n, _, _ in question_regions(P, q) if n == page_no)
     with pymupdf.open(path) as doc:
         letters = letters_in(doc[page_no], rect)
-    return (name, rect, describe_question_figure(year, level, q, made), letters)
+    # The lines THIS crop carries, split by kind. Only these may be taken out
+    # of a card's question text: a listing the bound crop does not show is
+    # still the only place a student can read it, and removing it would leave
+    # "Explain what the following code does:" with no code anywhere.
+    code = [t for _, _, _, ls, k in made if k == 'code' for t in ls]
+    labels = [t for _, _, _, ls, k in made if k == 'fig' for t in ls]
+    return (name, rect, describe_question_figure(year, level, q, made),
+            letters, code, labels)
 
 
 def main():
@@ -904,7 +1027,7 @@ def main():
             continue
         if chosen is None:
             continue
-        name, rect, description, letters = chosen
+        name, rect, description, letters = chosen[:4]
         total += 1
         if args.catalogue:
             catalogue.append({

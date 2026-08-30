@@ -220,6 +220,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "3 is a losing position because the only options are to take 1 or 2 matchsticks. Both", marks: 2 },
     ],
+    figure: {
+          "candId": "computer-science-2021-HL-paper-q14-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q14-fig0.png",
+          "srcHash": "54fe4567a51487225fdd3794399e5d81",
+          "alt": "The table or diagram printed with 2021 HL Question 14, as the State Examinations Commission set it.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -235,6 +243,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "4 is a winning position because player can take 1 matchstick to leave their opponent", marks: 1 },
     { id: "r-2", kind: "point", verbatim: "with 3, which is a losing position (as per part (i) of the question).", marks: 1 },
     ],
+    figure: {
+          "candId": "computer-science-2021-HL-paper-q14-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q14-fig0.png",
+          "srcHash": "54fe4567a51487225fdd3794399e5d81",
+          "alt": "The table or diagram printed with 2021 HL Question 14, as the State Examinations Commission set it.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -249,6 +265,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "5 is winning positon as a move to take two matchsticks leaves the next player in a losing", marks: 2 },
     ],
+    figure: {
+          "candId": "computer-science-2021-HL-paper-q14-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q14-fig0.png",
+          "srcHash": "54fe4567a51487225fdd3794399e5d81",
+          "alt": "The table or diagram printed with 2021 HL Question 14, as the State Examinations Commission set it.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -263,6 +287,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Decision: I would ask my opponent to go first. (I would go second.)", marks: 2 },
     ],
+    figure: {
+          "candId": "computer-science-2021-HL-paper-q14-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q14-fig0.png",
+          "srcHash": "54fe4567a51487225fdd3794399e5d81",
+          "alt": "The table or diagram printed with 2021 HL Question 14, as the State Examinations Commission set it.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -277,6 +309,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "My strategy would be to leave my opponent with a multiple of 3 matchsticks on every", marks: 2 },
     ],
+    figure: {
+          "candId": "computer-science-2021-HL-paper-q14-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q14-fig0.png",
+          "srcHash": "54fe4567a51487225fdd3794399e5d81",
+          "alt": "The table or diagram printed with 2021 HL Question 14, as the State Examinations Commission set it.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -291,6 +331,36 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "No. of matchsticks remaining 0 1 2 3 4 5 6 7 8 9", marks: 2 },
     ],
+    figure: {
+          "candId": "computer-science-2021-HL-paper-q14-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q14-fig0.png",
+          "srcHash": "54fe4567a51487225fdd3794399e5d81",
+          "alt": "The table or diagram printed with 2021 HL Question 14, as the State Examinations Commission set it.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2021 Higher Level — © State Examinations Commission.",
+    id: "cs-2021-hl-q14-b-i", topicId: "cs-3-3", conceptId: "below-partially-completed-diagram-end-game",
+    section: "B", questionRef: "2021 HL Q14(b)(i)",
+    stem: "For example, in a game where pile X contains 10 matchsticks and pile Y contains 9 matchsticks, a player may decide to remove 9 matchsticks from pile Y on their go. The player who removes the last matchstick(s) wins the game. This question continues on the next page. This question continues on the next page.",
+    questionText: "Below is a partially completed diagram for an end game scenario in which it is player A’s turn and there is only one matchstick left in pile X and two matchsticks left in pile Y (denoted by 1, 2). The purpose of the diagram is to depict the eventual outcome for every possible move from this point in the game. The left‐hand branch of the diagram has been completed covering all eventualities if player A removes 1 matchstick from pile X (denoted by AX1). Complete the diagram to illustrate all possible moves and show who wins in each case.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "3 marks as follows:", marks: 5 },
+    ],
+    figure: {
+          "candId": "computer-science-2021-HL-paper-q14-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q14-fig0.png",
+          "srcHash": "54fe4567a51487225fdd3794399e5d81",
+          "alt": "The table or diagram printed with 2021 HL Question 14, as the State Examinations Commission set it.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -305,6 +375,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "AY1 is the best move for player A as it is the only move that leads to certain victory for", marks: 2 },
     ],
+    figure: {
+          "candId": "computer-science-2021-HL-paper-q14-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q14-fig0.png",
+          "srcHash": "54fe4567a51487225fdd3794399e5d81",
+          "alt": "The table or diagram printed with 2021 HL Question 14, as the State Examinations Commission set it.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -319,6 +397,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "A winning move for player A from state (2, 3) would be AY1.", marks: 2 },
     ],
+    figure: {
+          "candId": "computer-science-2021-HL-paper-q14-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q14-fig0.png",
+          "srcHash": "54fe4567a51487225fdd3794399e5d81",
+          "alt": "The table or diagram printed with 2021 HL Question 14, as the State Examinations Commission set it.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -333,6 +419,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "A winning strategy from state (𝒏𝒏, 𝒎𝒎) where 𝒏𝒏≠𝒎𝒎 would be to even the piles. Leave (n,", marks: 2 },
     ],
+    figure: {
+          "candId": "computer-science-2021-HL-paper-q14-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q14-fig0.png",
+          "srcHash": "54fe4567a51487225fdd3794399e5d81",
+          "alt": "The table or diagram printed with 2021 HL Question 14, as the State Examinations Commission set it.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -347,6 +441,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Since (n, n) is a winning position a winning strategy would be to remove one of the piles.", marks: 2 },
     ],
+    figure: {
+          "candId": "computer-science-2021-HL-paper-q14-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q14-fig0.png",
+          "srcHash": "54fe4567a51487225fdd3794399e5d81",
+          "alt": "The table or diagram printed with 2021 HL Question 14, as the State Examinations Commission set it.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -360,6 +462,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Abstraction", marks: 5 },
     ],
+    figure: {
+          "candId": "computer-science-2021-HL-paper-q14-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q14-fig0.png",
+          "srcHash": "54fe4567a51487225fdd3794399e5d81",
+          "alt": "The table or diagram printed with 2021 HL Question 14, as the State Examinations Commission set it.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -627,9 +737,11 @@ export const CARDS: SecCard[] = [
     id: "cs-2021-hl-q2", topicId: "cs-2-3", conceptId: "why-data-stored-computers-binary-format",
     section: "A", questionRef: "2021 HL Q2",
     questionText: "(a) Explain why data is stored in computers in binary format. (i) How many unique pieces of information could be represented using four bits? (ii) What is the minimum number of bits required to represent eight unique pieces of information? (b) A single bit can be used to represent two pieces of information.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "The circuits in a computer's processor are made up of transistors. A transistor is a switch that is activated by the electronic signals it receives. Signals can be 0V or 5V. The digits 1 and 0 used in binary reflect the on and off states of a transistor.", marks: 5, accepts: ["As there are only two possible states, binary is more reliable than any other number systems.","(i) 𝟐𝟐𝟒𝟒= 𝟏𝟏𝟏𝟏 unique pieces of information can be represented using four-bits."] },
+    { id: "r-1", kind: "point", verbatim: "The circuits in a computer's processor are made up of transistors. A transistor is a switch that is activated by the electronic signals it receives. Signals can be 0V or 5V. The digits 1 and 0 used in binary reflect the on and off states of a transistor.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "As there are only two possible states, binary is more reliable than any other number systems.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "(i) 𝟐𝟐𝟒𝟒= 𝟏𝟏𝟏𝟏 unique pieces of information can be represented using four-bits.", marks: null },
     ],
   } as SecCard,
   {
@@ -640,9 +752,20 @@ export const CARDS: SecCard[] = [
     id: "cs-2021-hl-q3", topicId: "cs-2-3", conceptId: "two-differences-between-ram-rom-b",
     section: "A", questionRef: "2021 HL Q3",
     questionText: "(a) State two differences between RAM and ROM. (b) Explain how increasing the amount of RAM on a computer might improve its performance.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "RAM can be written, whereas ROM is read-only.", marks: 5, accepts: ["RAM chips can be read faster than ROM.","ROM is non-volatile storage (does not require a constant source of power to retain information stored on it) whereas RAM is volatile and requires a constant source of power to retain information.","Data/information in ROM is permanent whereas RAM is used to store temporary information.","CPU cannot access data that is stored in ROM directly – must be transferred to RAM first.","ROM is used primarily in the start-up process of a computer, whereas RAM is used in the normal operations of a computer after starting up and loading the operating system.","Capacity. RAM can store multiple gigabytes (GB) of data (typical range is 1-256GB per chip). ROM typically stores only several megabytes (MB) of data, typically 4-8MB per chip.","Physically RAM chips are bigger than ROM chips (of the same capacity).","The cost of RAM chips tends to be higher than ROM.","Or any similar relevant difference. Each correct response","More RAM means more applications can be loaded in RAM at the same time. This means the CPU spends less time loading RAM from secondary storage and/or paging/thrashing. This in turn means that the CPU can spend more time running user applications.","Better performance means applications run faster / quicker response times for user."] },
+    { id: "r-1", kind: "point", verbatim: "RAM can be written, whereas ROM is read-only.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "RAM chips can be read faster than ROM.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "ROM is non-volatile storage (does not require a constant source of power to retain information stored on it) whereas RAM is volatile and requires a constant source of power to retain information.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Data/information in ROM is permanent whereas RAM is used to store temporary information.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "CPU cannot access data that is stored in ROM directly – must be transferred to RAM first.", marks: null },
+    { id: "r-6", kind: "point", verbatim: "ROM is used primarily in the start-up process of a computer, whereas RAM is used in the normal operations of a computer after starting up and loading the operating system.", marks: null },
+    { id: "r-7", kind: "point", verbatim: "Capacity. RAM can store multiple gigabytes (GB) of data (typical range is 1-256GB per chip). ROM typically stores only several megabytes (MB) of data, typically 4-8MB per chip.", marks: null },
+    { id: "r-8", kind: "point", verbatim: "Physically RAM chips are bigger than ROM chips (of the same capacity).", marks: null },
+    { id: "r-9", kind: "point", verbatim: "The cost of RAM chips tends to be higher than ROM.", marks: null },
+    { id: "r-10", kind: "point", verbatim: "Or any similar relevant difference. Each correct response", marks: null },
+    { id: "r-11", kind: "point", verbatim: "More RAM means more applications can be loaded in RAM at the same time. This means the CPU spends less time loading RAM from secondary storage and/or paging/thrashing. This in turn means that the CPU can spend more time running user applications.", marks: null },
+    { id: "r-12", kind: "point", verbatim: "Better performance means applications run faster / quicker response times for user.", marks: null },
     ],
   } as SecCard,
   {
@@ -654,9 +777,15 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2021 HL Q4",
     stem: "You are asked to swap the values of two variables, x and y, which have already been initialised.",
     questionText: "(a) Why does the method shown not work? (b) Describe a method that does work.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "The method does not work because the contents of x are overwritten (lost) after the first assignment.", marks: 5, accepts: ["A temporary variable is needed.","Use a temporary variable temp = x x = y y = temp","or, use Python’s canonical swap x, y = y, x","or, use addition/subtraction operators x = x + y y = x - y x = x - y","or, use multiplication/division operators x = x * y y = x / y x = x / y","or any other valid solution"] },
+    { id: "r-1", kind: "point", verbatim: "The method does not work because the contents of x are overwritten (lost) after the first assignment.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "A temporary variable is needed.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Use a temporary variable temp = x x = y y = temp", marks: null },
+    { id: "r-4", kind: "point", verbatim: "or, use Python’s canonical swap x, y = y, x", marks: null },
+    { id: "r-5", kind: "point", verbatim: "or, use addition/subtraction operators x = x + y y = x - y x = x - y", marks: null },
+    { id: "r-6", kind: "point", verbatim: "or, use multiplication/division operators x = x * y y = x / y x = x / y", marks: null },
+    { id: "r-7", kind: "point", verbatim: "or any other valid solution", marks: null },
     ],
     figure: {
           "candId": "computer-science-2021-HL-paper-q4-code0",
@@ -676,9 +805,18 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2021 HL Q5",
     stem: "The flowchart in Figure 1 is a representation of an algorithm. Figure 1",
     questionText: "(a) Using inputs of 7, 3 and 8 for n, complete the trace table showing the execution of the algorithm. (b) What output does the algorithm display?",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "n total count", marks: 5, accepts: ["0 0 0","7 7 1","3 10 2","8 18 3","Second column correct","OR","OR","One correct value","(b) 18/3=6"] },
+    { id: "r-1", kind: "point", verbatim: "n total count", marks: null },
+    { id: "r-2", kind: "point", verbatim: "0 0 0", marks: null },
+    { id: "r-3", kind: "point", verbatim: "7 7 1", marks: null },
+    { id: "r-4", kind: "point", verbatim: "3 10 2", marks: null },
+    { id: "r-5", kind: "point", verbatim: "8 18 3", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Second column correct", marks: null },
+    { id: "r-7", kind: "point", verbatim: "OR", marks: null },
+    { id: "r-8", kind: "point", verbatim: "OR", marks: null },
+    { id: "r-9", kind: "point", verbatim: "One correct value", marks: null },
+    { id: "r-10", kind: "point", verbatim: "(b) 18/3=6", marks: null },
     ],
     figure: {
           "candId": "computer-science-2021-HL-paper-q5-figure",
@@ -697,10 +835,68 @@ export const CARDS: SecCard[] = [
     id: "cs-2021-hl-q7", topicId: "cs-2-3", conceptId: "differentiate-between-http-https-b-how",
     section: "A", questionRef: "2021 HL Q7",
     questionText: "(a) Differentiate between HTTP and HTTPS. (b) Explain how the TCP communication protocol provides reliable communication between computers.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "HTTP is unsecured while HTTPS is secured.", marks: 5, accepts: ["HTTP sends data over port 80 while HTTPS uses port 443.","HTTP operates at application layer, while HTTPS operates at transport layer.","No SSL certificates are required for HTTP, with HTTPS it is required that you have an SSL certificate and it is signed by a CA.","TCP breaks messages into chunks called packets and then passes these chunks onto the IP","layer. At the receiving end the TCP software reassembles the packets into the correct","order (based on an assigned sequence number). Reliability is achieved by a system of","acknowledgments and timeouts. If an acknowledgement is not received within the","required timeout the TCP software resends individual packets or the entire message."] },
+    { id: "r-1", kind: "point", verbatim: "HTTP is unsecured while HTTPS is secured.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "HTTP sends data over port 80 while HTTPS uses port 443.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "HTTP operates at application layer, while HTTPS operates at transport layer.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "No SSL certificates are required for HTTP, with HTTPS it is required that you have an SSL certificate and it is signed by a CA.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "TCP breaks messages into chunks called packets and then passes these chunks onto the IP", marks: null },
+    { id: "r-6", kind: "point", verbatim: "layer. At the receiving end the TCP software reassembles the packets into the correct", marks: null },
+    { id: "r-7", kind: "point", verbatim: "order (based on an assigned sequence number). Reliability is achieved by a system of", marks: null },
+    { id: "r-8", kind: "point", verbatim: "acknowledgments and timeouts. If an acknowledgement is not received within the", marks: null },
+    { id: "r-9", kind: "point", verbatim: "required timeout the TCP software resends individual packets or the entire message.", marks: null },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2021 Higher Level — © State Examinations Commission.",
+    id: "cs-2021-hl-q8", topicId: "cs-2-3", conceptId: "why-emoji-characters-not-represented-using",
+    section: "A", questionRef: "2021 HL Q8",
+    stem: "The Unicode representation for the ‘thumbs up’ emoji character, shown in Figure 2, is the hexadecimal number 1F44D.",
+    questionText: "(a) Explain why emoji characters are not represented using the American Standard Code for Information Interchange (ASCII). (b) Express the hexadecimal number 1F44D as a binary number. The first four bits have been completed for you.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ASCII is a 7-bit system – cannot represent more than 128 characters. Extended ASCII uses an extra bit meaning it can cater for up to 256 different characters. ASCII was invented in the 1960’s (first published in 1963) and designed to include the characters that were most commonly used for communication between devices at that time. These included the digits 0-9, upper and lower case letters from the English alphabet (a-z, A-Z), punctuation symbols and a number of non-printing control codes used by old teletype machines.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Since emoji characters were not ‘invented’ at the time ASCII was introduced they were not considered for inclusion as part of the ASCII character set.", marks: null },
+    ],
+    figure: {
+          "candId": "computer-science-2021-HL-paper-q8-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q8-fig0.png",
+          "srcHash": "4683db5c6e56a94140f40254ed5eb800",
+          "alt": "The table or diagram printed with 2021 HL Question 8, as the State Examinations Commission set it. It is labelled: 1F44D.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2021 Higher Level — © State Examinations Commission.",
+    id: "cs-2021-hl-q9", topicId: "cs-2-3", conceptId: "operating-system-b-diagram-figure-3",
+    section: "A", questionRef: "2021 HL Q9",
+    questionText: "(a) What is an operating system? (b) The diagram in Figure 3 depicts some of the main layers of an operating system. Select any two layers and explain their function.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "An OS is the software that controls the hardware of a computer.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Acts as an interface between other software and the hardware.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Acts as an interface between the user and the machine.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "I/O Management o Controls the user interface (handles graphics, screen sizes, resolutions etc.). o Provides access to peripheral devices (through device drivers).", marks: null },
+    { id: "r-5", kind: "point", verbatim: "File System o Keeps track of where files are located (e.g. maintains the file allocation table in FAT systems). o Controls access to files (e.g. sequential vs direct access). o Handles file security. o Implements disk scheduling policy (e.g. first-come, first-served).", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Memory Management o Allocation of RAM. o Loads data in from secondary to primary storage. o Swaps data out from primary to secondary.", marks: null },
+    { id: "r-7", kind: "point", verbatim: "Processor Scheduling o Decides which job to run next and for how long (e.g. first-come, first-served, shortest job first, round robin). o Maintains the state of each process (e.g. ready/waiting/running/ended). o Deadlock avoidance. o Handles multitasking. o Handles multiple users. For each layer up to a total possible maximum of 3 marks:", marks: null },
+    ],
+    figure: {
+          "candId": "computer-science-2021-HL-paper-q9-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q9-fig0.png",
+          "srcHash": "78c41210bcb2e9961e3727e371d534c0",
+          "alt": "The table or diagram printed with 2021 HL Question 9, as the State Examinations Commission set it. It is labelled: Figure 3, Layer 1:, Explain:, Layer 2:.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -710,9 +906,18 @@ export const CARDS: SecCard[] = [
     id: "cs-2021-hl-q10", topicId: "cs-2-3", conceptId: "two-tasks-would-be-undertaken-project",
     section: "A", questionRef: "2021 HL Q10",
     questionText: "(a) State two tasks that would be undertaken by a project manager in a software design process. (b) Some programming roles require the knowledge of low‐level programming. How does a low‐ level computer program differ from a high‐level computer program?",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "To agree requirements with customer.", marks: 5, accepts: ["To ensure system/project is delivered on time and within budget.","To oversee project schedule – planning - set key dates/milestones.","To resource project – staffing, equipment, finance etc.","To assign tasks related to design, implementation, testing etc.","To communicate with and motivate team and ongoing liaison with customer.","To monitor project progress.","Any relevant task. For each correctly stated task","High level languages such as Python and JavaScript use English like words e.g. while, if. Programs written in these languages are translated into machine code using a compiler or interpreter. High level languages are machine independent.","Low level languages are used to write code for a specific processor architecture. The instruction is constrained by a processor’s instruction set. Examples are assembly languages and machine code (code written only using 1’s and 0’s)."] },
+    { id: "r-1", kind: "point", verbatim: "To agree requirements with customer.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "To ensure system/project is delivered on time and within budget.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "To oversee project schedule – planning - set key dates/milestones.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "To resource project – staffing, equipment, finance etc.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "To assign tasks related to design, implementation, testing etc.", marks: null },
+    { id: "r-6", kind: "point", verbatim: "To communicate with and motivate team and ongoing liaison with customer.", marks: null },
+    { id: "r-7", kind: "point", verbatim: "To monitor project progress.", marks: null },
+    { id: "r-8", kind: "point", verbatim: "Any relevant task. For each correctly stated task", marks: null },
+    { id: "r-9", kind: "point", verbatim: "High level languages such as Python and JavaScript use English like words e.g. while, if. Programs written in these languages are translated into machine code using a compiler or interpreter. High level languages are machine independent.", marks: null },
+    { id: "r-10", kind: "point", verbatim: "Low level languages are used to write code for a specific processor architecture. The instruction is constrained by a processor’s instruction set. Examples are assembly languages and machine code (code written only using 1’s and 0’s).", marks: null },
     ],
   } as SecCard,
   {
@@ -723,9 +928,15 @@ export const CARDS: SecCard[] = [
     id: "cs-2021-hl-q11", topicId: "cs-2-2", conceptId: "two-benefits-computer-modelling-b-how",
     section: "A", questionRef: "2021 HL Q11",
     questionText: "(a) State two benefits of computer modelling. (b) Explain how agent‐based modelling may have been used during the COVID‐19 pandemic to influence public health policy.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "To test the feasibility of some idea (i.e. testing ideas before committing to them. Refinements can be made more quickly, more safely and for less money e.g. is it worthwhile to vaccinate?", marks: 5, accepts: ["To make predictions/demonstrate emergent behaviour (e.g. population growth, the spread of a virus, infection rates) so that decisions can be better informed (e.g. where to build hospitals, roads, schools or whether it is necessary to vaccinate against the spread of a virus).","To run simulations and be used as a basis for discussion and gaining a better understanding of a phenomena.","To enable solutions to problems that are difficult to solve analytically (e.g. because of scale or complexity).","Or similar. For each correctly stated benefit","Agent-based modelling (ABM) for COVID 19 could have behavioural rules corresponding to infection conditions and also include an individual profile for each agent, which defines its main social characteristics and health conditions used during its interactions.","ABMs can be used to predict outcomes for certain scenarios thereby allowing policy makers to make informed decisions such as those relating to social distancing, washing hands, setting lockdowns, easing restrictions, levels 1-5, crowd controls, indoor vs. outdoor activities, foreign travel etc."] },
+    { id: "r-1", kind: "point", verbatim: "To test the feasibility of some idea (i.e. testing ideas before committing to them. Refinements can be made more quickly, more safely and for less money e.g. is it worthwhile to vaccinate?", marks: null },
+    { id: "r-2", kind: "point", verbatim: "To make predictions/demonstrate emergent behaviour (e.g. population growth, the spread of a virus, infection rates) so that decisions can be better informed (e.g. where to build hospitals, roads, schools or whether it is necessary to vaccinate against the spread of a virus).", marks: null },
+    { id: "r-3", kind: "point", verbatim: "To run simulations and be used as a basis for discussion and gaining a better understanding of a phenomena.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "To enable solutions to problems that are difficult to solve analytically (e.g. because of scale or complexity).", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Or similar. For each correctly stated benefit", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Agent-based modelling (ABM) for COVID 19 could have behavioural rules corresponding to infection conditions and also include an individual profile for each agent, which defines its main social characteristics and health conditions used during its interactions.", marks: null },
+    { id: "r-7", kind: "point", verbatim: "ABMs can be used to predict outcomes for certain scenarios thereby allowing policy makers to make informed decisions such as those relating to social distancing, washing hands, setting lockdowns, easing restrictions, levels 1-5, crowd controls, indoor vs. outdoor activities, foreign travel etc.", marks: null },
     ],
   } as SecCard,
   {
@@ -1300,9 +1511,16 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2022 HL Q2",
     stem: "Registers and RAM are both types of volatile memory.",
     questionText: "(a) What is volatile memory? (b) Describe two differences between registers and RAM.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "A type of memory used to store data/programs when the computer is switched on/running.", marks: 5, accepts: ["Called volatile because entire contents are cleared when the computer is switched off.","Physical location. Registers are located inside (part of) the CPU – RAM is not physically as close to the CPU.","Access time/speeds. Contents of registers can be accessed much faster by CPU than contents of RAM.","Cost. Registers are more expensive than RAM (per byte).","Capacity. Registers hold less than RAM (because of cost).","Material. Made from different materials.","Any other valid difference. 1 marks for each difference clearly described"] },
+    { id: "r-1", kind: "point", verbatim: "A type of memory used to store data/programs when the computer is switched on/running.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Called volatile because entire contents are cleared when the computer is switched off.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Physical location. Registers are located inside (part of) the CPU – RAM is not physically as close to the CPU.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Access time/speeds. Contents of registers can be accessed much faster by CPU than contents of RAM.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Cost. Registers are more expensive than RAM (per byte).", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Capacity. Registers hold less than RAM (because of cost).", marks: null },
+    { id: "r-7", kind: "point", verbatim: "Material. Made from different materials.", marks: null },
+    { id: "r-8", kind: "point", verbatim: "Any other valid difference. 1 marks for each difference clearly described", marks: null },
     ],
   } as SecCard,
   {
@@ -1314,9 +1532,15 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2022 HL Q3",
     stem: "In 1965 Gordon Moore, co-founder of Intel Corporation, predicted that the number of transistors on an integrated circuit will approximately double every two years. This prediction became known as Moore’s Law and has turned out to be very accurate to the present day.",
     questionText: "(a) Explain the terms transistor and integrated circuit. (b) State one reason why Moore’s Law might not remain accurate in the future.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Transistor", marks: 5, accepts: ["A transistor is type of electronic switch.","A transistor is a semiconductor device used to amplify or switch electronic signals and electrical power. It is composed of semiconductor material usually with at least three terminals for connection to an external circuit.","A transistor is the fundamental building block of gates, logic circuits (adders, multiplexors etc.), integrated circuits and microprocessors.","Transistors are used to represent binary 1’s and 0’s. Integrated Circuit","An integrated circuit (chip) is an electronic component that contains multiple discrete components combined together into logic circuits on a single silicon board. For each term:","There is a physical limitation to the number of transistors that can fit on a single chip."] },
+    { id: "r-1", kind: "point", verbatim: "Transistor", marks: null },
+    { id: "r-2", kind: "point", verbatim: "A transistor is type of electronic switch.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "A transistor is a semiconductor device used to amplify or switch electronic signals and electrical power. It is composed of semiconductor material usually with at least three terminals for connection to an external circuit.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "A transistor is the fundamental building block of gates, logic circuits (adders, multiplexors etc.), integrated circuits and microprocessors.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Transistors are used to represent binary 1’s and 0’s. Integrated Circuit", marks: null },
+    { id: "r-6", kind: "point", verbatim: "An integrated circuit (chip) is an electronic component that contains multiple discrete components combined together into logic circuits on a single silicon board. For each term:", marks: null },
+    { id: "r-7", kind: "point", verbatim: "There is a physical limitation to the number of transistors that can fit on a single chip.", marks: null },
     ],
   } as SecCard,
   {
@@ -1328,9 +1552,20 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2022 HL Q4",
     stem: "An automatic garage door has three inputs: - A, the master ON/OFF switch - B, a sensor on the left hand side - C, a sensor on the right hand side Once the master switch has been set ON, either sensor can trigger the door. This scenario can be represented by the logical statement: A AND (B OR C).",
     questionText: "(a) Complete the truth table for the logical statement A AND (B OR C). (b) Use the relevant gate symbols to draw the circuit diagram for this system.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "A B C A AND (B OR C)", marks: 5, accepts: ["0 0 0 0","0 0 1 0","0 1 0 0","0 1 1 0","1 0 0 0","1 0 1 1","1 1 0 1","1 1 1 1","3 (or more) correct values","Gates combined correctly as above","Use of AND and OR gates with either input correctly labelled"] },
+    { id: "r-1", kind: "point", verbatim: "A B C A AND (B OR C)", marks: null },
+    { id: "r-2", kind: "point", verbatim: "0 0 0 0", marks: null },
+    { id: "r-3", kind: "point", verbatim: "0 0 1 0", marks: null },
+    { id: "r-4", kind: "point", verbatim: "0 1 0 0", marks: null },
+    { id: "r-5", kind: "point", verbatim: "0 1 1 0", marks: null },
+    { id: "r-6", kind: "point", verbatim: "1 0 0 0", marks: null },
+    { id: "r-7", kind: "point", verbatim: "1 0 1 1", marks: null },
+    { id: "r-8", kind: "point", verbatim: "1 1 0 1", marks: null },
+    { id: "r-9", kind: "point", verbatim: "1 1 1 1", marks: null },
+    { id: "r-10", kind: "point", verbatim: "3 (or more) correct values", marks: null },
+    { id: "r-11", kind: "point", verbatim: "Gates combined correctly as above", marks: null },
+    { id: "r-12", kind: "point", verbatim: "Use of AND and OR gates with either input correctly labelled", marks: null },
     ],
     figure: {
           "candId": "computer-science-2022-HL-paper-q4-fig0",
@@ -1350,9 +1585,16 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2022 HL Q7",
     stem: "On 14 May 2021, the Health Service Executive (HSE) of Ireland suffered a major ransomware cyberattack which caused all of its IT systems nationwide to be shut down.",
     questionText: "(a) Explain the term ransomware. (b) State two measures individuals or companies can take to reduce the risk of a cyberattack.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Ransomware is a type of malicious software (malware) that threatens to publish or blocks access to data or a computer system, usually by encrypting it, until the victim pays a ransom fee to the attacker. In many cases, the ransom demand comes with a deadline. If the victim doesn’t pay in time, the data is gone forever or the ransom increases.", marks: 5, accepts: ["Company policy and procedures (people controls).","Password policies.","Anti-virus software.","Security systems (e.g. firewall, VPN).","Encryption.","Cloud (security services may be better than local organisations).","Any acceptable measure. Each correct response"] },
+    { id: "r-1", kind: "point", verbatim: "Ransomware is a type of malicious software (malware) that threatens to publish or blocks access to data or a computer system, usually by encrypting it, until the victim pays a ransom fee to the attacker. In many cases, the ransom demand comes with a deadline. If the victim doesn’t pay in time, the data is gone forever or the ransom increases.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Company policy and procedures (people controls).", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Password policies.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Anti-virus software.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Security systems (e.g. firewall, VPN).", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Encryption.", marks: null },
+    { id: "r-7", kind: "point", verbatim: "Cloud (security services may be better than local organisations).", marks: null },
+    { id: "r-8", kind: "point", verbatim: "Any acceptable measure. Each correct response", marks: null },
     ],
   } as SecCard,
   {
@@ -1363,9 +1605,33 @@ export const CARDS: SecCard[] = [
     id: "cs-2022-hl-q9", topicId: "cs-2-2", conceptId: "provide-two-examples-how-machine-learning",
     section: "A", questionRef: "2022 HL Q9",
     questionText: "(a) Provide two examples of how machine learning can be used to benefit society. (b) Outline briefly the issue of ‘bias’ in relation to machine learning.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Self-driving vehicles – safety/more accessible.", marks: 5, accepts: ["Healthcare – early detection of chronic illnesses, modelling disease spread etc.","Entertainment – music/concert/movie/book recommender systems etc.","Online shopping – product recommender systems, ads etc.","Facial recognition in home/business security systems.","Environmental protection.","Fairer justice systems.","Arts – music/literature.","Education.","Any valid example of how machine learning can be used to benefit society. Each correct response","If the data on which the algorithm makes its decision contains bias, the algorithm’s output will also be biased."] },
+    { id: "r-1", kind: "point", verbatim: "Self-driving vehicles – safety/more accessible.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Healthcare – early detection of chronic illnesses, modelling disease spread etc.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Entertainment – music/concert/movie/book recommender systems etc.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Online shopping – product recommender systems, ads etc.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Facial recognition in home/business security systems.", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Environmental protection.", marks: null },
+    { id: "r-7", kind: "point", verbatim: "Fairer justice systems.", marks: null },
+    { id: "r-8", kind: "point", verbatim: "Arts – music/literature.", marks: null },
+    { id: "r-9", kind: "point", verbatim: "Education.", marks: null },
+    { id: "r-10", kind: "point", verbatim: "Any valid example of how machine learning can be used to benefit society. Each correct response", marks: null },
+    { id: "r-11", kind: "point", verbatim: "If the data on which the algorithm makes its decision contains bias, the algorithm’s output will also be biased.", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2022 Higher Level — © State Examinations Commission.",
+    id: "cs-2022-hl-q10", topicId: "cs-2-1", conceptId: "way-fake-coin-can-be-found",
+    section: "A", questionRef: "2022 HL Q10",
+    stem: "You have eight coins and a two pan scales. Both the coins and the scales are gold plated and the diameter and circumference of all the coins are exactly the same. The coins are worth €2 each, a total of €16. - seven of the coins are genuine and weigh the same amount. - one of the coins is fake and is heavier than the others.",
+    questionText: "(a) Explain a way that the fake coin can be found in the minimum number of weighings. (b) Outline briefly your use of abstraction to tackle this problem.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "By ignoring irrelevant details such as coin colour, size and value", marks: null },
     ],
   } as SecCard,
   {
@@ -1376,9 +1642,20 @@ export const CARDS: SecCard[] = [
     id: "cs-2022-hl-q14", topicId: "cs-2-3", conceptId: "simplified-version-selection-sort-algorithm-involves",
     section: "B", questionRef: "2022 HL Q14",
     questionText: "(i) Apply the algorithm to sort the list of integers [15, 28, 14, 21] showing the state of both lists after each pass of the algorithm. Pass #1 has been completed for you. You only need to fill in the numbers for passes 2, 3 and 4. (ii) The algorithm sorts the list in ascending order. What changes would you need to make to the algorithm so that it sorts the list in descending order? (iii) Step 4 of the algorithm says to select the smallest (minimum) element from list1. Outline a method to find the smallest element in any list. (iv) Step 5 of the algorithm says to move the smallest element from list1 to list2. Why would the algorithm not work if this step said to copy the smallest element from list1 to list2? (v) The algorithm relies on two lists to complete the sort. Describe a selection sort algorithm that would sort a list ‘in place’ i.e. without the need for a second list. (a) is empty as shown. (i) Fill in the empty boxes below to complete passes 3, 4, 5 and 6 of the insertion sort. (ii) Explain how the insertion sort algorithm works. (iii) A list that is already reversed would be considered a good test case for the insertion sort algorithm. Describe two other test cases that could be used to test the insertion sort algorithm. (iv) \"Big O\" notation is used to describe the complexity of an algorithm. Discuss the algorithmic complexity of the insertion sort algorithm using \"Big O\" notation. (b) A bookshelf is partially sorted, in alphabetic order, using the insertion sort algorithm as shown in Figure 4 below.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 30,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Select the largest (instead of the smallest) element from list 1 and move it to list2", marks: 30, accepts: ["Initialise the minimum to be the first element in the list. Then, working/walk across the list compare each element to the minimum element so far. If the current element is less than the minimum element so far then let it be the new minimum. Continue in this manner until the end of the list is reached.","Pseudocode / flowchart / code are also acceptable","The same element would always be copied.","list1 will remain unchanged.","This would result in an infinite loop.","The selection sort algorithm works by passing across every element in the list to sort (from left to right). The element being passed over is called the current element. For each current element the algorithm looks for the minimum (smallest) element to its right. This minimum element is selected and swapped with the current element. The algorithm then moves on to the next element.","Pseudocode / flowchart / code are also acceptable.","The insertion sort works by passing across each element in the list starting from the second element. At the start, the first element is considered sorted and all elements to its right are considered unsorted. On each pass the first element in the unsorted list is inserted into the sorted list at its correct position.","Pseudocode / flowchart / code are also acceptable.","A list that is already sorted.","A list where all the values are the same."] },
+    { id: "r-1", kind: "point", verbatim: "Select the largest (instead of the smallest) element from list 1 and move it to list2", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Initialise the minimum to be the first element in the list. Then, working/walk across the list compare each element to the minimum element so far. If the current element is less than the minimum element so far then let it be the new minimum. Continue in this manner until the end of the list is reached.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Pseudocode / flowchart / code are also acceptable", marks: null },
+    { id: "r-4", kind: "point", verbatim: "The same element would always be copied.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "list1 will remain unchanged.", marks: null },
+    { id: "r-6", kind: "point", verbatim: "This would result in an infinite loop.", marks: null },
+    { id: "r-7", kind: "point", verbatim: "The selection sort algorithm works by passing across every element in the list to sort (from left to right). The element being passed over is called the current element. For each current element the algorithm looks for the minimum (smallest) element to its right. This minimum element is selected and swapped with the current element. The algorithm then moves on to the next element.", marks: null },
+    { id: "r-8", kind: "point", verbatim: "Pseudocode / flowchart / code are also acceptable.", marks: null },
+    { id: "r-9", kind: "point", verbatim: "The insertion sort works by passing across each element in the list starting from the second element. At the start, the first element is considered sorted and all elements to its right are considered unsorted. On each pass the first element in the unsorted list is inserted into the sorted list at its correct position.", marks: null },
+    { id: "r-10", kind: "point", verbatim: "Pseudocode / flowchart / code are also acceptable.", marks: null },
+    { id: "r-11", kind: "point", verbatim: "A list that is already sorted.", marks: null },
+    { id: "r-12", kind: "point", verbatim: "A list where all the values are the same.", marks: null },
     ],
     figure: {
           "candId": "computer-science-2022-HL-paper-q14-figure",
@@ -1438,6 +1715,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Support", marks: 8 },
     ],
+    figure: {
+          "candId": "computer-science-2023-HL-paper-q13-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q13-fig0.png",
+          "srcHash": "759f41959e2d282c71642dae236190f1",
+          "alt": "The table or diagram printed with 2023 HL Question 13, as the State Examinations Commission set it. It is labelled: Technology 1:, Description:, Technology 2:, Figure 8.",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1452,6 +1737,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Population –this could be used to determine whether it is viable to open a new hub. When combined with school population and capacity, hospital capacity etc., population models could also be used to determine whether there are enough resources to meet the potential additional demand on these services.", marks: 3 },
     ],
+    figure: {
+          "candId": "computer-science-2023-HL-paper-q13-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q13-fig0.png",
+          "srcHash": "759f41959e2d282c71642dae236190f1",
+          "alt": "The table or diagram printed with 2023 HL Question 13, as the State Examinations Commission set it. It is labelled: Technology 1:, Description:, Technology 2:, Figure 8.",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1469,6 +1762,14 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "Screen magnifier - software that provides enlarged screen content for visual impairments", marks: 2 },
     { id: "r-4", kind: "point", verbatim: "Sip-and-puff - device that allows users to enter commands into a computer system via mouth", marks: 2 },
     ],
+    figure: {
+          "candId": "computer-science-2023-HL-paper-q13-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q13-fig0.png",
+          "srcHash": "759f41959e2d282c71642dae236190f1",
+          "alt": "The table or diagram printed with 2023 HL Question 13, as the State Examinations Commission set it. It is labelled: Technology 1:, Description:, Technology 2:, Figure 8.",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1483,6 +1784,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Circles and letters are used to represent hubs.", marks: 2 },
     ],
+    figure: {
+          "candId": "computer-science-2023-HL-paper-q13-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q13-fig0.png",
+          "srcHash": "759f41959e2d282c71642dae236190f1",
+          "alt": "The table or diagram printed with 2023 HL Question 13, as the State Examinations Commission set it. It is labelled: Technology 1:, Description:, Technology 2:, Figure 8.",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1497,6 +1806,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Heuristics", marks: 3 },
     ],
+    figure: {
+          "candId": "computer-science-2023-HL-paper-q13-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q13-fig0.png",
+          "srcHash": "759f41959e2d282c71642dae236190f1",
+          "alt": "The table or diagram printed with 2023 HL Question 13, as the State Examinations Commission set it. It is labelled: Technology 1:, Description:, Technology 2:, Figure 8.",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1511,6 +1828,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "For", marks: 12 },
     ],
+    figure: {
+          "candId": "computer-science-2023-HL-paper-q13-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q13-fig0.png",
+          "srcHash": "759f41959e2d282c71642dae236190f1",
+          "alt": "The table or diagram printed with 2023 HL Question 13, as the State Examinations Commission set it. It is labelled: Technology 1:, Description:, Technology 2:, Figure 8.",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2002,9 +2327,14 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2023 HL Q2",
     stem: "Information systems can represent numbers in decimal, binary and hexadecimal format. Many software developers use hexadecimal numbers.",
     questionText: "(a) Explain one advantage of using hexadecimal numbers. (b) Convert the hexadecimal number C9 into a decimal number.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Hexadecimal is very concise. This means that it can be used to express most numbers using fewer digits/characters than would be needed in other number systems.", marks: 6, accepts: ["Every hexadecimal digit/character can be represented using a group of four binary digits. This grouping makes it relatively easy and fast to convert between hexadecimal numbers and binary. It is also one of the reasons why hexadecimal numbers are considered more human-friendly than other number systems.","Because of their conciseness, humans are less likely to make mistakes when writing hexadecimal numbers.","Hexadecimal notation is commonly used as a convenient way to represent memory addresses, machine code/instructions, data, error codes, colours etc.","Cx161+ 9x160 = 12x16+ 9x1 = 192+9 = 201 OR","STEP 1. Convert to binary: C9 = 1100 1001"] },
+    { id: "r-1", kind: "point", verbatim: "Hexadecimal is very concise. This means that it can be used to express most numbers using fewer digits/characters than would be needed in other number systems.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Every hexadecimal digit/character can be represented using a group of four binary digits. This grouping makes it relatively easy and fast to convert between hexadecimal numbers and binary. It is also one of the reasons why hexadecimal numbers are considered more human-friendly than other number systems.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Because of their conciseness, humans are less likely to make mistakes when writing hexadecimal numbers.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Hexadecimal notation is commonly used as a convenient way to represent memory addresses, machine code/instructions, data, error codes, colours etc.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Cx161+ 9x160 = 12x16+ 9x1 = 192+9 = 201 OR", marks: null },
+    { id: "r-6", kind: "point", verbatim: "STEP 1. Convert to binary: C9 = 1100 1001", marks: null },
     ],
   } as SecCard,
   {
@@ -2016,9 +2346,15 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2023 HL Q3",
     stem: "The diagram in Figure 1 below, shows the Cartesian plane divided into four quadrants by an x-y axis, centred on the point (0, 0). Figure 1",
     questionText: "(a) A point P(x, y) is plotted inside the top right quadrant, as shown. Complete the truth table below to verify that P is inside the top right quadrant. (b) Construct a Boolean expression in the space below that will evaluate to True for all points (x, y) inside the shaded area shown in Figure 2.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "x > 0 y > 0 x > 0 and y > 0", marks: 6, accepts: ["False False False","False True False","True False False","True True True","(x > -d and x < 0) and (y >0 and y < d)","Note: brackets not necessary and order not important in this case."] },
+    { id: "r-1", kind: "point", verbatim: "x > 0 y > 0 x > 0 and y > 0", marks: null },
+    { id: "r-2", kind: "point", verbatim: "False False False", marks: null },
+    { id: "r-3", kind: "point", verbatim: "False True False", marks: null },
+    { id: "r-4", kind: "point", verbatim: "True False False", marks: null },
+    { id: "r-5", kind: "point", verbatim: "True True True", marks: null },
+    { id: "r-6", kind: "point", verbatim: "(x > -d and x < 0) and (y >0 and y < d)", marks: null },
+    { id: "r-7", kind: "point", verbatim: "Note: brackets not necessary and order not important in this case.", marks: null },
     ],
     figure: {
           "candId": "computer-science-2023-HL-paper-q3-figure",
@@ -2038,9 +2374,16 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2023 HL Q4",
     stem: "User interfaces have evolved constantly over the past 40 years to become more user-friendly and accessible.",
     questionText: "(a) What is meant by the term ‘user interface’? (b) Name and describe one type of user interface that a computer system might use.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "A user interface is the means by which the user provides input to a computer and the", marks: 6, accepts: ["computer conveys output to the user. Specifically, it is the point of interaction between a","user and a computer through the use of i/o devices.","Graphical user interface (GUI) - an environment with windows, icons, menus and controlled by a pointing device (WIMP). This type of interface is called the graphical user interface (GUI) because the user interacts with images through a mouse, keyboard or touchscreen. Used on most computers & smartphones.","Command line interface (CLI) - provides a method of interaction that is non-graphical, called the command line interface (CLI). This is a text-only service with feedback from the OS appearing in text. Using a CLI requires knowledge of the commands available on a particular machine.","Menu driven interfaces - user can select from a number of options, then typically only move up, down, back & forward. Often used in menus for food, tickets etc.","Touch user interface - this is a type of interaction between a user and a computer- based device. This interaction is by doing a physical touch on the screen and the computer responds to this touch interaction.","Natural Language interface (NLI) / Voice user interfaces (VUI) - these allow the user to interact with a system through voice or speech commands. Virtual assistants, such as Siri, Google Assistant, and Alexa, are examples of these type of interfaces."] },
+    { id: "r-1", kind: "point", verbatim: "A user interface is the means by which the user provides input to a computer and the", marks: null },
+    { id: "r-2", kind: "point", verbatim: "computer conveys output to the user. Specifically, it is the point of interaction between a", marks: null },
+    { id: "r-3", kind: "point", verbatim: "user and a computer through the use of i/o devices.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Graphical user interface (GUI) - an environment with windows, icons, menus and controlled by a pointing device (WIMP). This type of interface is called the graphical user interface (GUI) because the user interacts with images through a mouse, keyboard or touchscreen. Used on most computers & smartphones.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Command line interface (CLI) - provides a method of interaction that is non-graphical, called the command line interface (CLI). This is a text-only service with feedback from the OS appearing in text. Using a CLI requires knowledge of the commands available on a particular machine.", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Menu driven interfaces - user can select from a number of options, then typically only move up, down, back & forward. Often used in menus for food, tickets etc.", marks: null },
+    { id: "r-7", kind: "point", verbatim: "Touch user interface - this is a type of interaction between a user and a computer- based device. This interaction is by doing a physical touch on the screen and the computer responds to this touch interaction.", marks: null },
+    { id: "r-8", kind: "point", verbatim: "Natural Language interface (NLI) / Voice user interfaces (VUI) - these allow the user to interact with a system through voice or speech commands. Virtual assistants, such as Siri, Google Assistant, and Alexa, are examples of these type of interfaces.", marks: null },
     ],
   } as SecCard,
   {
@@ -2052,9 +2395,20 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2023 HL Q6",
     stem: "Smart homes make use of embedded systems to make living spaces more enjoyable and convenient for home owners.",
     questionText: "(a) State two examples of embedded systems you might find in a smart home. (b) Describe two characteristics of embedded systems that distinguish them from general computer systems.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Programmable appliances e.g. washing machine, dishwasher, dryers, kettle, fridge", marks: 6, accepts: ["Heating, ventilation and air conditioning system.","Lighting control system.","Alarm/security systems.","Home robots e.g. Roomba, companion robots, window cleaners, lawnmowers","Leak detection, smoke and carbon monoxide detectors.","Home safety for the elderly and disabled.","Pet and baby care.","Voice control devices like Amazon Alexa or Google Home used to control home appliances or systems.","Any acceptable smart home embedded system. Note: Do not accept Micro:bit, Raspberry Pi as valid examples. Each correct example","Embedded systems perform some specific function or tasks. Unlike computer systems they cannot be programmed to do anything beyond the scope which they were designed for.","Low Cost – the price of embedded systems is relatively inexpensive."] },
+    { id: "r-1", kind: "point", verbatim: "Programmable appliances e.g. washing machine, dishwasher, dryers, kettle, fridge", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Heating, ventilation and air conditioning system.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Lighting control system.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Alarm/security systems.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Home robots e.g. Roomba, companion robots, window cleaners, lawnmowers", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Leak detection, smoke and carbon monoxide detectors.", marks: null },
+    { id: "r-7", kind: "point", verbatim: "Home safety for the elderly and disabled.", marks: null },
+    { id: "r-8", kind: "point", verbatim: "Pet and baby care.", marks: null },
+    { id: "r-9", kind: "point", verbatim: "Voice control devices like Amazon Alexa or Google Home used to control home appliances or systems.", marks: null },
+    { id: "r-10", kind: "point", verbatim: "Any acceptable smart home embedded system. Note: Do not accept Micro:bit, Raspberry Pi as valid examples. Each correct example", marks: null },
+    { id: "r-11", kind: "point", verbatim: "Embedded systems perform some specific function or tasks. Unlike computer systems they cannot be programmed to do anything beyond the scope which they were designed for.", marks: null },
+    { id: "r-12", kind: "point", verbatim: "Low Cost – the price of embedded systems is relatively inexpensive.", marks: null },
     ],
   } as SecCard,
   {
@@ -2066,9 +2420,16 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2023 HL Q10",
     stem: "Quicksort is widely recognised as one of the most efficient sorting algorithms. It works by recursively partitioning a list about one of the elements known as the pivot. Consider the unsorted list of integers shown in Figure 5 below and answer the questions that follow. 60 30 80 40 10 50 20 70 90 Figure 5",
     questionText: "(a) Using the leftmost element as the pivot, show the contents of the list after the initial partition by the quicksort algorithm. You should assume that the elements in the left and right sub-lists are not re-ordered. (b) Explain why 90 would have been a poor choice of pivot to partition the list shown in Figure 5.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "30 40 10 50 20 60 80 70 90", marks: 6, accepts: ["OR","50 30 20 40 10 60 80 70 90","Elements split about the pivot","Left sub-list correct","Right sub-list correct","Because 90 is the largest number in the list.","Because it would increase the time taken to execute the algorithm."] },
+    { id: "r-1", kind: "point", verbatim: "30 40 10 50 20 60 80 70 90", marks: null },
+    { id: "r-2", kind: "point", verbatim: "OR", marks: null },
+    { id: "r-3", kind: "point", verbatim: "50 30 20 40 10 60 80 70 90", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Elements split about the pivot", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Left sub-list correct", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Right sub-list correct", marks: null },
+    { id: "r-7", kind: "point", verbatim: "Because 90 is the largest number in the list.", marks: null },
+    { id: "r-8", kind: "point", verbatim: "Because it would increase the time taken to execute the algorithm.", marks: null },
     ],
   } as SecCard,
   {
@@ -2080,9 +2441,12 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2023 HL Q11",
     stem: "Figure 6 depicts a flowchart of a Python algorithm which can be used to generate new usernames for students. You can assume that the date is in the format: ddmmyyyy. Figure 6",
     questionText: "(a) Name one input and one output of the algorithm. (b) Referring to the relevant step(s) in the flowchart explain how the algorithm uses string slicing and string concatenation.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Valid inputs: first_name, surname, date_of_birth.", marks: 6, accepts: ["Valid output: username. Note: No marks awarded for actual names, dates or usernames (even if in correct format e.g. Joe Soap 26112003 and JoSoap2003) Each correct response (1 input and 1 output)","String slicing: o Step 5 of the algorithm slices the first two characters of the first_name. o Step 6 of the algorithm slices characters from positon 4 to 7 inclusive. Assuming ddmmyyyy format, this extracts the 4-digit year of birth from the date of birth.","String concatenation: o Step 7 of the algorithm concatenates the 2 characters from the first name followed by the surname followed by the 4 digit year of birth to determine the username. For each explanation:"] },
+    { id: "r-1", kind: "point", verbatim: "Valid inputs: first_name, surname, date_of_birth.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Valid output: username. Note: No marks awarded for actual names, dates or usernames (even if in correct format e.g. Joe Soap 26112003 and JoSoap2003) Each correct response (1 input and 1 output)", marks: null },
+    { id: "r-3", kind: "point", verbatim: "String slicing: o Step 5 of the algorithm slices the first two characters of the first_name. o Step 6 of the algorithm slices characters from positon 4 to 7 inclusive. Assuming ddmmyyyy format, this extracts the 4-digit year of birth from the date of birth.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "String concatenation: o Step 7 of the algorithm concatenates the 2 characters from the first name followed by the surname followed by the 4 digit year of birth to determine the username. For each explanation:", marks: null },
     ],
     figure: {
           "candId": "computer-science-2023-HL-paper-q11-fig0",
@@ -2102,9 +2466,18 @@ export const CARDS: SecCard[] = [
     section: "A", questionRef: "2023 HL Q12",
     stem: "A Software Development Lifecycle (SDLC) such as the one shown in Figure 7 below, is usually followed when creating information systems.",
     questionText: "(a) Outline briefly two reasons why the SDLC is important. (b) Distinguish between functional and non-functional testing.",
-    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "The SDLC is important because it:", marks: 6, accepts: ["provides a structured approach (thereby helping to reduce complexity","improves software quality (by increasing potential that project will meet user requirements and expectations while reducing risk of failure/errors.","minimises overrun on budgets/cost.","minimises the risk of missing project deadline(s).","maximises use of resources / staff planning.","encourages communication and collaboration among all project stakeholders","Any other reasonable reason provided. Note: Where two separate responses are considered equivalent/to have the same meaning, marks are awarded for the best response only. Zero is awarded for the other response. Each correct response","Functional testing tests whether the system meets its requirements whereas non- functional testing tests how well those requirements are met e.g. performance, usability, reliability, scalability and other non-functional aspects of the software system","Functional testing should be carried out before non-functional testing."] },
+    { id: "r-1", kind: "point", verbatim: "The SDLC is important because it:", marks: null },
+    { id: "r-2", kind: "point", verbatim: "provides a structured approach (thereby helping to reduce complexity", marks: null },
+    { id: "r-3", kind: "point", verbatim: "improves software quality (by increasing potential that project will meet user requirements and expectations while reducing risk of failure/errors.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "minimises overrun on budgets/cost.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "minimises the risk of missing project deadline(s).", marks: null },
+    { id: "r-6", kind: "point", verbatim: "maximises use of resources / staff planning.", marks: null },
+    { id: "r-7", kind: "point", verbatim: "encourages communication and collaboration among all project stakeholders", marks: null },
+    { id: "r-8", kind: "point", verbatim: "Any other reasonable reason provided. Note: Where two separate responses are considered equivalent/to have the same meaning, marks are awarded for the best response only. Zero is awarded for the other response. Each correct response", marks: null },
+    { id: "r-9", kind: "point", verbatim: "Functional testing tests whether the system meets its requirements whereas non- functional testing tests how well those requirements are met e.g. performance, usability, reliability, scalability and other non-functional aspects of the software system", marks: null },
+    { id: "r-10", kind: "point", verbatim: "Functional testing should be carried out before non-functional testing.", marks: null },
     ],
     figure: {
           "candId": "computer-science-2023-HL-paper-q12-fig0",
@@ -2335,6 +2708,14 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "The design and study of systems that appear to mimic intelligent behaviour", marks: 1 },
     { id: "r-3", kind: "point", verbatim: "The theory and development of computer systems able to perform tasks that normally require human intelligence, such as visual perception, speech recognition, decision making and translation between languages.", marks: 1 },
     ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q13-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q13-fig0.png",
+          "srcHash": "67cf0a6f2a38eacf642137aa394ed343",
+          "alt": "The table or diagram printed with 2024 HL Question 13, as the State Examinations Commission set it.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2349,6 +2730,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Narrow AI: Refers to AI systems built to perform a single task but without any skills that can be transferred to other tasks.", marks: 3 },
     ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q13-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q13-fig0.png",
+          "srcHash": "67cf0a6f2a38eacf642137aa394ed343",
+          "alt": "The table or diagram printed with 2024 HL Question 13, as the State Examinations Commission set it.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2363,6 +2752,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Generative AI is an Artificial Intelligence (AI) technology that automatically generates new/original content in response to prompts typed in by the user.", marks: 3 },
     ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q13-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q13-fig0.png",
+          "srcHash": "67cf0a6f2a38eacf642137aa394ed343",
+          "alt": "The table or diagram printed with 2024 HL Question 13, as the State Examinations Commission set it.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2377,6 +2774,36 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Any two from the following:", marks: 2 },
     ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q13-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q13-fig0.png",
+          "srcHash": "67cf0a6f2a38eacf642137aa394ed343",
+          "alt": "The table or diagram printed with 2024 HL Question 13, as the State Examinations Commission set it.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
+    id: "cs-2024-hl-q13-b-i", topicId: "cs-2-2", conceptId: "relation-computer-vision-do-percentages-shown",
+    section: "B", questionRef: "2024 HL Q13(b)(i)",
+    stem: "Figure 5 Scenario 1: An online streaming service that recommends films based on users’ viewing habits. Scenario 2: An automated lawnmower that uses sensors to navigate an outdoor space and avoid obstacles while cutting the grass. This question continues on the next page.",
+    questionText: "In relation to computer vision, what do the percentages shown in Figure 5 represent?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The percentages represent a level of confidence returned by the model that the image has been correctly classified as the associated label. For example, cat: 94% means that the algorithm is 94% confident that it has identified a cat on this part of the image.", marks: 2 },
+    ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q13-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q13-fig0.png",
+          "srcHash": "67cf0a6f2a38eacf642137aa394ed343",
+          "alt": "The table or diagram printed with 2024 HL Question 13, as the State Examinations Commission set it.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2391,6 +2818,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Any two from the following:", marks: 6 },
     ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q13-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q13-fig0.png",
+          "srcHash": "67cf0a6f2a38eacf642137aa394ed343",
+          "alt": "The table or diagram printed with 2024 HL Question 13, as the State Examinations Commission set it.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2406,6 +2841,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Scenario 1. An online streaming service that recommends films based on users’ viewing habits. o AI: The system could use machine learning algorithms to analyse user behaviour and make personalised suggestions, which would qualify it as AI. The service will use the viewing habits of the user, compare it to other users, and make a prediction of what the user would like to watch next. There are too many users of an online streaming service to be able to create rules for each user. o Not AI: Possible reasons include privacy concerns, limited data, resource constraints or preference for simplicity.", marks: 2 },
     { id: "r-2", kind: "point", verbatim: "Scenario 2. An automated lawnmower that uses sensors to navigate an outdoor space and avoid obstacles while cutting the grass. o AI (robotics): The automated lawnmower uses sensors to navigate, which involves some level of AI for obstacle avoidance and path planning. o Not AI: While it does employ sensors and automation, it typically relies on predefined rules (rather than machine learning techniques) to move around and avoid collisions. Automated lawnmowers typically don’t learn or adapt to their environment. Therefore, they are often categorised as robotics or automation rather than AI. For each justification (no marks for stating yes/no):", marks: 2 },
     ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q13-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q13-fig0.png",
+          "srcHash": "67cf0a6f2a38eacf642137aa394ed343",
+          "alt": "The table or diagram printed with 2024 HL Question 13, as the State Examinations Commission set it.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2420,6 +2863,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Diversity of images used in training datasets – ensure that the training dataset is diverse enough to represent the target population", marks: 3 },
     ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q13-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q13-fig0.png",
+          "srcHash": "67cf0a6f2a38eacf642137aa394ed343",
+          "alt": "The table or diagram printed with 2024 HL Question 13, as the State Examinations Commission set it.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2445,6 +2896,14 @@ export const CARDS: SecCard[] = [
     { id: "r-11", kind: "point", verbatim: "Job Creation and Economic Growth: While AI may lead to job displacement in certain sectors, it also has the potential to create new jobs and stimulate economic growth. Pausing development could limit the positive economic impact of AI, affecting industries that could benefit from increased efficiency and innovation.", marks: 1 },
     { id: "r-12", kind: "point", verbatim: "Elaboration of any other reasonable point against pausing development of advanced AI systems For each separate point made for and against the initiative up to a maximum of two points each:", marks: 1 },
     ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q13-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q13-fig0.png",
+          "srcHash": "67cf0a6f2a38eacf642137aa394ed343",
+          "alt": "The table or diagram printed with 2024 HL Question 13, as the State Examinations Commission set it.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2680,6 +3139,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Database", marks: 4 },
     ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q15-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q15-figure.png",
+          "srcHash": "9c3edb90be84e97e4f75aabe07ab3523",
+          "alt": "The table or diagram printed with 2024 HL Question 15, as the State Examinations Commission set it. It is labelled: Column A, Data Type, Column B, Field Name, Boolean, String, Real, member_id member_name, Amy, Chloe, member_id, book_id, date_borrowed, 20/05/2024.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2694,6 +3161,102 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Primary Key: book_id", marks: 3 },
     ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q15-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q15-figure.png",
+          "srcHash": "9c3edb90be84e97e4f75aabe07ab3523",
+          "alt": "The table or diagram printed with 2024 HL Question 15, as the State Examinations Commission set it. It is labelled: Column A, Data Type, Column B, Field Name, Boolean, String, Real, member_id member_name, Amy, Chloe, member_id, book_id, date_borrowed, 20/05/2024.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
+    id: "cs-2024-hl-q15-a-iii", topicId: "cs-2-4", conceptId: "identify-any-two-data-inconsistencies-data",
+    section: "B", questionRef: "2024 HL Q15(a)(iii)",
+    stem: "book_id title year cost author author_dob on_loan 1 The Cat in the Hat 1957 6.95 Dr. Seuss 02/03/1904 Yes 2 Green Eggs and Ham 1960 8.95 Dr. Seuss March 2, 1904 Y 3 Horton Hears a Who! 1954 €10 Doc Seus 02/03/1904 N 4 How the Grinch Stole Christmas! 1957 9.95 Dr. Seuss 03/02/1904 No Column A Data Type Column B Field Name Boolean String Real",
+    questionText: "Identify any two data inconsistencies in the data shown in the BOOKS table.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Any two from the following:", marks: 2 },
+    ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q15-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q15-figure.png",
+          "srcHash": "9c3edb90be84e97e4f75aabe07ab3523",
+          "alt": "The table or diagram printed with 2024 HL Question 15, as the State Examinations Commission set it. It is labelled: Column A, Data Type, Column B, Field Name, Boolean, String, Real, member_id member_name, Amy, Chloe, member_id, book_id, date_borrowed, 20/05/2024.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
+    id: "cs-2024-hl-q15-a-iv", topicId: "cs-2-4", conceptId: "assuming-all-data-inconsistencies-fixed-enter",
+    section: "B", questionRef: "2024 HL Q15(a)(iv)",
+    stem: "book_id title year cost author author_dob on_loan 1 The Cat in the Hat 1957 6.95 Dr. Seuss 02/03/1904 Yes 2 Green Eggs and Ham 1960 8.95 Dr. Seuss March 2, 1904 Y 3 Horton Hears a Who! 1954 €10 Doc Seus 02/03/1904 N 4 How the Grinch Stole Christmas! 1957 9.95 Dr. Seuss 03/02/1904 No Column A Data Type Column B Field Name Boolean String Real",
+    questionText: "Assuming all data inconsistencies are fixed, enter the names of three fields from the BOOKS table in Column B that correspond to the data types shown in Column A.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Column A Column B", marks: 3 },
+    ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q15-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q15-figure.png",
+          "srcHash": "9c3edb90be84e97e4f75aabe07ab3523",
+          "alt": "The table or diagram printed with 2024 HL Question 15, as the State Examinations Commission set it. It is labelled: Column A, Data Type, Column B, Field Name, Boolean, String, Real, member_id member_name, Amy, Chloe, member_id, book_id, date_borrowed, 20/05/2024.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
+    id: "cs-2024-hl-q15-b-iii", topicId: "cs-2-4", conceptId: "how-design-shown-figure-7-removes",
+    section: "B", questionRef: "2024 HL Q15(b)(iii)",
+    stem: "Alex is working out her design on paper and has inserted some data into both tables as shown in Figure 7 below. For example, the first row of data in the LOANS table records the fact that Chloe borrowed Green Eggs and Ham on 20th May 2024. • Amy borrowed How the Grinch Stole Christmas! on 1st May 2024. • Bill borrowed The Cat in the Hat on 18th May 2024. • Chloe borrowed Horton Hears a Who! 7 days ago. member_id book_id date_borrowed member_id member_name 1 Amy 3 2 20/05/2024 2 4 01/05/24 3 Chloe 2 1 MEMBERS LOANS Figure 7 This question continues on the next page.",
+    questionText: "Explain how the design shown in Figure 7 removes the need for the on_loan field from the BOOKS table.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The presence of a record in the LOANS table can be used to infer that a book is on loan. (Not only that, but the date the book was borrowed can also be looked up.) Therefore, there is no need to store this information in BOOKS.", marks: 3 },
+    ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q15-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q15-figure.png",
+          "srcHash": "9c3edb90be84e97e4f75aabe07ab3523",
+          "alt": "The table or diagram printed with 2024 HL Question 15, as the State Examinations Commission set it. It is labelled: Column A, Data Type, Column B, Field Name, Boolean, String, Real, member_id member_name, Amy, Chloe, member_id, book_id, date_borrowed, 20/05/2024.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
+    id: "cs-2024-hl-q15-b-iv", topicId: "cs-2-4", conceptId: "relational-databases-reduce-amount-data-redundancy",
+    section: "B", questionRef: "2024 HL Q15(b)(iv)",
+    stem: "Alex is working out her design on paper and has inserted some data into both tables as shown in Figure 7 below. For example, the first row of data in the LOANS table records the fact that Chloe borrowed Green Eggs and Ham on 20th May 2024. • Amy borrowed How the Grinch Stole Christmas! on 1st May 2024. • Bill borrowed The Cat in the Hat on 18th May 2024. • Chloe borrowed Horton Hears a Who! 7 days ago. member_id book_id date_borrowed member_id member_name 1 Amy 3 2 20/05/2024 2 4 01/05/24 3 Chloe 2 1 MEMBERS LOANS Figure 7 This question continues on the next page.",
+    questionText: "Relational databases reduce the amount of data redundancy. Explain the term ‘data redundancy’.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Data redundancy refers to a situation where a single piece of data (or value) is stored in more than one place in a database. It usually occurs as a result of poor design and is considered bad practice as it can lead to data inconsistencies as well as inefficiency use of storage.", marks: 3 },
+    ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q15-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q15-figure.png",
+          "srcHash": "9c3edb90be84e97e4f75aabe07ab3523",
+          "alt": "The table or diagram printed with 2024 HL Question 15, as the State Examinations Commission set it. It is labelled: Column A, Data Type, Column B, Field Name, Boolean, String, Real, member_id member_name, Amy, Chloe, member_id, book_id, date_borrowed, 20/05/2024.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2708,6 +3271,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Any two statements from the following:", marks: 4 },
     ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q15-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q15-figure.png",
+          "srcHash": "9c3edb90be84e97e4f75aabe07ab3523",
+          "alt": "The table or diagram printed with 2024 HL Question 15, as the State Examinations Commission set it. It is labelled: Column A, Data Type, Column B, Field Name, Boolean, String, Real, member_id member_name, Amy, Chloe, member_id, book_id, date_borrowed, 20/05/2024.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2722,6 +3293,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Any two from the following:", marks: 6 },
     ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q15-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q15-figure.png",
+          "srcHash": "9c3edb90be84e97e4f75aabe07ab3523",
+          "alt": "The table or diagram printed with 2024 HL Question 15, as the State Examinations Commission set it. It is labelled: Column A, Data Type, Column B, Field Name, Boolean, String, Real, member_id member_name, Amy, Chloe, member_id, book_id, date_borrowed, 20/05/2024.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",

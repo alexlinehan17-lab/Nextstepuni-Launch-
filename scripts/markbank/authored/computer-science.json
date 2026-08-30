@@ -245,7 +245,8 @@
     "marks": 2
    }
   ],
-  "stem": "A winning position (W) is a position from which a player cannot lose if she/he makes all the optimal moves until the end of the game. For example, 2 is a winning position because if the player whose turn it is, makes the optimal move (i.e. removes the two remaining matchsticks) they will win that game. A losing position (L) is a position from which a player cannot win (assuming that their opponent makes all the optimal moves until the game is over). The win/loss table below depicts winning and losing positions for the scenarios where there are 0, 1, 2, 3 or 4 matchsticks left on the board. No. of matchsticks remaining 0 1 2 3 4 Position (W or L) L W W L W This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 Position (W or L) L W W L W Calculations This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 7 8 9 Position (W or L) L Calculations This question continues on the next page."
+  "stem": "A winning position (W) is a position from which a player cannot lose if she/he makes all the optimal moves until the end of the game. For example, 2 is a winning position because if the player whose turn it is, makes the optimal move (i.e. removes the two remaining matchsticks) they will win that game. A losing position (L) is a position from which a player cannot win (assuming that their opponent makes all the optimal moves until the game is over). The win/loss table below depicts winning and losing positions for the scenarios where there are 0, 1, 2, 3 or 4 matchsticks left on the board. No. of matchsticks remaining 0 1 2 3 4 Position (W or L) L W W L W This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 Position (W or L) L W W L W Calculations This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 7 8 9 Position (W or L) L Calculations This question continues on the next page.",
+  "figureKey": "computer-science-2021-HL-paper-q14-fig0"
  },
  {
   "id": "cs-2021-hl-q14-a-ii",
@@ -275,7 +276,8 @@
     "marks": 1
    }
   ],
-  "stem": "A winning position (W) is a position from which a player cannot lose if she/he makes all the optimal moves until the end of the game. For example, 2 is a winning position because if the player whose turn it is, makes the optimal move (i.e. removes the two remaining matchsticks) they will win that game. A losing position (L) is a position from which a player cannot win (assuming that their opponent makes all the optimal moves until the game is over). The win/loss table below depicts winning and losing positions for the scenarios where there are 0, 1, 2, 3 or 4 matchsticks left on the board. No. of matchsticks remaining 0 1 2 3 4 Position (W or L) L W W L W This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 Position (W or L) L W W L W Calculations This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 7 8 9 Position (W or L) L Calculations This question continues on the next page."
+  "stem": "A winning position (W) is a position from which a player cannot lose if she/he makes all the optimal moves until the end of the game. For example, 2 is a winning position because if the player whose turn it is, makes the optimal move (i.e. removes the two remaining matchsticks) they will win that game. A losing position (L) is a position from which a player cannot win (assuming that their opponent makes all the optimal moves until the game is over). The win/loss table below depicts winning and losing positions for the scenarios where there are 0, 1, 2, 3 or 4 matchsticks left on the board. No. of matchsticks remaining 0 1 2 3 4 Position (W or L) L W W L W This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 Position (W or L) L W W L W Calculations This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 7 8 9 Position (W or L) L Calculations This question continues on the next page.",
+  "figureKey": "computer-science-2021-HL-paper-q14-fig0"
  },
  {
   "id": "cs-2021-hl-q14-a-iii",
@@ -299,7 +301,8 @@
     "marks": 2
    }
   ],
-  "stem": "A winning position (W) is a position from which a player cannot lose if she/he makes all the optimal moves until the end of the game. For example, 2 is a winning position because if the player whose turn it is, makes the optimal move (i.e. removes the two remaining matchsticks) they will win that game. A losing position (L) is a position from which a player cannot win (assuming that their opponent makes all the optimal moves until the game is over). The win/loss table below depicts winning and losing positions for the scenarios where there are 0, 1, 2, 3 or 4 matchsticks left on the board. No. of matchsticks remaining 0 1 2 3 4 Position (W or L) L W W L W This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 Position (W or L) L W W L W Calculations This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 7 8 9 Position (W or L) L Calculations This question continues on the next page."
+  "stem": "A winning position (W) is a position from which a player cannot lose if she/he makes all the optimal moves until the end of the game. For example, 2 is a winning position because if the player whose turn it is, makes the optimal move (i.e. removes the two remaining matchsticks) they will win that game. A losing position (L) is a position from which a player cannot win (assuming that their opponent makes all the optimal moves until the game is over). The win/loss table below depicts winning and losing positions for the scenarios where there are 0, 1, 2, 3 or 4 matchsticks left on the board. No. of matchsticks remaining 0 1 2 3 4 Position (W or L) L W W L W This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 Position (W or L) L W W L W Calculations This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 7 8 9 Position (W or L) L Calculations This question continues on the next page.",
+  "figureKey": "computer-science-2021-HL-paper-q14-fig0"
  },
  {
   "id": "cs-2021-hl-q14-a-iv",
@@ -323,7 +326,8 @@
     "marks": 2
    }
   ],
-  "stem": "A winning position (W) is a position from which a player cannot lose if she/he makes all the optimal moves until the end of the game. For example, 2 is a winning position because if the player whose turn it is, makes the optimal move (i.e. removes the two remaining matchsticks) they will win that game. A losing position (L) is a position from which a player cannot win (assuming that their opponent makes all the optimal moves until the game is over). The win/loss table below depicts winning and losing positions for the scenarios where there are 0, 1, 2, 3 or 4 matchsticks left on the board. No. of matchsticks remaining 0 1 2 3 4 Position (W or L) L W W L W This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 Position (W or L) L W W L W Calculations This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 7 8 9 Position (W or L) L Calculations This question continues on the next page."
+  "stem": "A winning position (W) is a position from which a player cannot lose if she/he makes all the optimal moves until the end of the game. For example, 2 is a winning position because if the player whose turn it is, makes the optimal move (i.e. removes the two remaining matchsticks) they will win that game. A losing position (L) is a position from which a player cannot win (assuming that their opponent makes all the optimal moves until the game is over). The win/loss table below depicts winning and losing positions for the scenarios where there are 0, 1, 2, 3 or 4 matchsticks left on the board. No. of matchsticks remaining 0 1 2 3 4 Position (W or L) L W W L W This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 Position (W or L) L W W L W Calculations This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 7 8 9 Position (W or L) L Calculations This question continues on the next page.",
+  "figureKey": "computer-science-2021-HL-paper-q14-fig0"
  },
  {
   "id": "cs-2021-hl-q14-a-v",
@@ -347,7 +351,8 @@
     "marks": 2
    }
   ],
-  "stem": "A winning position (W) is a position from which a player cannot lose if she/he makes all the optimal moves until the end of the game. For example, 2 is a winning position because if the player whose turn it is, makes the optimal move (i.e. removes the two remaining matchsticks) they will win that game. A losing position (L) is a position from which a player cannot win (assuming that their opponent makes all the optimal moves until the game is over). The win/loss table below depicts winning and losing positions for the scenarios where there are 0, 1, 2, 3 or 4 matchsticks left on the board. No. of matchsticks remaining 0 1 2 3 4 Position (W or L) L W W L W This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 Position (W or L) L W W L W Calculations This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 7 8 9 Position (W or L) L Calculations This question continues on the next page."
+  "stem": "A winning position (W) is a position from which a player cannot lose if she/he makes all the optimal moves until the end of the game. For example, 2 is a winning position because if the player whose turn it is, makes the optimal move (i.e. removes the two remaining matchsticks) they will win that game. A losing position (L) is a position from which a player cannot win (assuming that their opponent makes all the optimal moves until the game is over). The win/loss table below depicts winning and losing positions for the scenarios where there are 0, 1, 2, 3 or 4 matchsticks left on the board. No. of matchsticks remaining 0 1 2 3 4 Position (W or L) L W W L W This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 Position (W or L) L W W L W Calculations This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 7 8 9 Position (W or L) L Calculations This question continues on the next page.",
+  "figureKey": "computer-science-2021-HL-paper-q14-fig0"
  },
  {
   "id": "cs-2021-hl-q14-a-vi",
@@ -371,7 +376,33 @@
     "marks": 2
    }
   ],
-  "stem": "A winning position (W) is a position from which a player cannot lose if she/he makes all the optimal moves until the end of the game. For example, 2 is a winning position because if the player whose turn it is, makes the optimal move (i.e. removes the two remaining matchsticks) they will win that game. A losing position (L) is a position from which a player cannot win (assuming that their opponent makes all the optimal moves until the game is over). The win/loss table below depicts winning and losing positions for the scenarios where there are 0, 1, 2, 3 or 4 matchsticks left on the board. No. of matchsticks remaining 0 1 2 3 4 Position (W or L) L W W L W This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 Position (W or L) L W W L W Calculations This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 7 8 9 Position (W or L) L Calculations This question continues on the next page."
+  "stem": "A winning position (W) is a position from which a player cannot lose if she/he makes all the optimal moves until the end of the game. For example, 2 is a winning position because if the player whose turn it is, makes the optimal move (i.e. removes the two remaining matchsticks) they will win that game. A losing position (L) is a position from which a player cannot win (assuming that their opponent makes all the optimal moves until the game is over). The win/loss table below depicts winning and losing positions for the scenarios where there are 0, 1, 2, 3 or 4 matchsticks left on the board. No. of matchsticks remaining 0 1 2 3 4 Position (W or L) L W W L W This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 Position (W or L) L W W L W Calculations This question continues on the next page. No. of matchsticks remaining 0 1 2 3 4 5 6 7 8 9 Position (W or L) L Calculations This question continues on the next page.",
+  "figureKey": "computer-science-2021-HL-paper-q14-fig0"
+ },
+ {
+  "id": "cs-2021-hl-q14-b-i",
+  "topicId": "cs-3-3",
+  "conceptId": "below-partially-completed-diagram-end-game",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2021 HL Q14(b)(i)",
+  "questionText": "Below is a partially completed diagram for an end game scenario in which it is player A’s turn and there is only one matchstick left in pile X and two matchsticks left in pile Y (denoted by 1, 2). The purpose of the diagram is to depict the eventual outcome for every possible move from this point in the game. The left‐hand branch of the diagram has been completed covering all eventualities if player A removes 1 matchstick from pile X (denoted by AX1). Complete the diagram to illustrate all possible moves and show who wins in each case.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "3 marks as follows:",
+    "marks": 5
+   }
+  ],
+  "stem": "For example, in a game where pile X contains 10 matchsticks and pile Y contains 9 matchsticks, a player may decide to remove 9 matchsticks from pile Y on their go. The player who removes the last matchstick(s) wins the game. This question continues on the next page. This question continues on the next page.",
+  "figureKey": "computer-science-2021-HL-paper-q14-fig0"
  },
  {
   "id": "cs-2021-hl-q14-b-ii",
@@ -395,7 +426,8 @@
     "marks": 2
    }
   ],
-  "stem": "For example, in a game where pile X contains 10 matchsticks and pile Y contains 9 matchsticks, a player may decide to remove 9 matchsticks from pile Y on their go. The player who removes the last matchstick(s) wins the game. This question continues on the next page. This question continues on the next page."
+  "stem": "For example, in a game where pile X contains 10 matchsticks and pile Y contains 9 matchsticks, a player may decide to remove 9 matchsticks from pile Y on their go. The player who removes the last matchstick(s) wins the game. This question continues on the next page. This question continues on the next page.",
+  "figureKey": "computer-science-2021-HL-paper-q14-fig0"
  },
  {
   "id": "cs-2021-hl-q14-b-iii",
@@ -419,7 +451,8 @@
     "marks": 2
    }
   ],
-  "stem": "For example, in a game where pile X contains 10 matchsticks and pile Y contains 9 matchsticks, a player may decide to remove 9 matchsticks from pile Y on their go. The player who removes the last matchstick(s) wins the game. This question continues on the next page. This question continues on the next page."
+  "stem": "For example, in a game where pile X contains 10 matchsticks and pile Y contains 9 matchsticks, a player may decide to remove 9 matchsticks from pile Y on their go. The player who removes the last matchstick(s) wins the game. This question continues on the next page. This question continues on the next page.",
+  "figureKey": "computer-science-2021-HL-paper-q14-fig0"
  },
  {
   "id": "cs-2021-hl-q14-b-iv",
@@ -443,7 +476,8 @@
     "marks": 2
    }
   ],
-  "stem": "For example, in a game where pile X contains 10 matchsticks and pile Y contains 9 matchsticks, a player may decide to remove 9 matchsticks from pile Y on their go. The player who removes the last matchstick(s) wins the game. This question continues on the next page. This question continues on the next page."
+  "stem": "For example, in a game where pile X contains 10 matchsticks and pile Y contains 9 matchsticks, a player may decide to remove 9 matchsticks from pile Y on their go. The player who removes the last matchstick(s) wins the game. This question continues on the next page. This question continues on the next page.",
+  "figureKey": "computer-science-2021-HL-paper-q14-fig0"
  },
  {
   "id": "cs-2021-hl-q14-b-v",
@@ -467,7 +501,8 @@
     "marks": 2
    }
   ],
-  "stem": "For example, in a game where pile X contains 10 matchsticks and pile Y contains 9 matchsticks, a player may decide to remove 9 matchsticks from pile Y on their go. The player who removes the last matchstick(s) wins the game. This question continues on the next page. This question continues on the next page."
+  "stem": "For example, in a game where pile X contains 10 matchsticks and pile Y contains 9 matchsticks, a player may decide to remove 9 matchsticks from pile Y on their go. The player who removes the last matchstick(s) wins the game. This question continues on the next page. This question continues on the next page.",
+  "figureKey": "computer-science-2021-HL-paper-q14-fig0"
  },
  {
   "id": "cs-2021-hl-q14-c",
@@ -490,7 +525,8 @@
     "verbatim": "Abstraction",
     "marks": 5
    }
-  ]
+  ],
+  "figureKey": "computer-science-2021-HL-paper-q14-fig0"
  },
  {
   "id": "cs-2021-hl-q15-a-i",
@@ -869,19 +905,27 @@
   "questionRef": "2021 HL Q2",
   "questionText": "(a) Explain why data is stored in computers in binary format. (i) How many unique pieces of information could be represented using four bits? (ii) What is the minimum number of bits required to represent eight unique pieces of information? (b) A single bit can be used to represent two pieces of information.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "The circuits in a computer's processor are made up of transistors. A transistor is a switch that is activated by the electronic signals it receives. Signals can be 0V or 5V. The digits 1 and 0 used in binary reflect the on and off states of a transistor.",
-    "marks": 5,
-    "accepts": [
-     "As there are only two possible states, binary is more reliable than any other number systems.",
-     "(i) 𝟐𝟐𝟒𝟒= 𝟏𝟏𝟏𝟏 unique pieces of information can be represented using four-bits."
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "As there are only two possible states, binary is more reliable than any other number systems.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "(i) 𝟐𝟐𝟒𝟒= 𝟏𝟏𝟏𝟏 unique pieces of information can be represented using four-bits.",
+    "marks": null
    }
   ]
  },
@@ -896,28 +940,81 @@
   "questionRef": "2021 HL Q3",
   "questionText": "(a) State two differences between RAM and ROM. (b) Explain how increasing the amount of RAM on a computer might improve its performance.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "RAM can be written, whereas ROM is read-only.",
-    "marks": 5,
-    "accepts": [
-     "RAM chips can be read faster than ROM.",
-     "ROM is non-volatile storage (does not require a constant source of power to retain information stored on it) whereas RAM is volatile and requires a constant source of power to retain information.",
-     "Data/information in ROM is permanent whereas RAM is used to store temporary information.",
-     "CPU cannot access data that is stored in ROM directly – must be transferred to RAM first.",
-     "ROM is used primarily in the start-up process of a computer, whereas RAM is used in the normal operations of a computer after starting up and loading the operating system.",
-     "Capacity. RAM can store multiple gigabytes (GB) of data (typical range is 1-256GB per chip). ROM typically stores only several megabytes (MB) of data, typically 4-8MB per chip.",
-     "Physically RAM chips are bigger than ROM chips (of the same capacity).",
-     "The cost of RAM chips tends to be higher than ROM.",
-     "Or any similar relevant difference. Each correct response",
-     "More RAM means more applications can be loaded in RAM at the same time. This means the CPU spends less time loading RAM from secondary storage and/or paging/thrashing. This in turn means that the CPU can spend more time running user applications.",
-     "Better performance means applications run faster / quicker response times for user."
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "RAM chips can be read faster than ROM.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "ROM is non-volatile storage (does not require a constant source of power to retain information stored on it) whereas RAM is volatile and requires a constant source of power to retain information.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Data/information in ROM is permanent whereas RAM is used to store temporary information.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "CPU cannot access data that is stored in ROM directly – must be transferred to RAM first.",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "ROM is used primarily in the start-up process of a computer, whereas RAM is used in the normal operations of a computer after starting up and loading the operating system.",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Capacity. RAM can store multiple gigabytes (GB) of data (typical range is 1-256GB per chip). ROM typically stores only several megabytes (MB) of data, typically 4-8MB per chip.",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "Physically RAM chips are bigger than ROM chips (of the same capacity).",
+    "marks": null
+   },
+   {
+    "id": "r-9",
+    "kind": "point",
+    "verbatim": "The cost of RAM chips tends to be higher than ROM.",
+    "marks": null
+   },
+   {
+    "id": "r-10",
+    "kind": "point",
+    "verbatim": "Or any similar relevant difference. Each correct response",
+    "marks": null
+   },
+   {
+    "id": "r-11",
+    "kind": "point",
+    "verbatim": "More RAM means more applications can be loaded in RAM at the same time. This means the CPU spends less time loading RAM from secondary storage and/or paging/thrashing. This in turn means that the CPU can spend more time running user applications.",
+    "marks": null
+   },
+   {
+    "id": "r-12",
+    "kind": "point",
+    "verbatim": "Better performance means applications run faster / quicker response times for user.",
+    "marks": null
    }
   ]
  },
@@ -932,23 +1029,51 @@
   "questionRef": "2021 HL Q4",
   "questionText": "(a) Why does the method shown not work? (b) Describe a method that does work.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "The method does not work because the contents of x are overwritten (lost) after the first assignment.",
-    "marks": 5,
-    "accepts": [
-     "A temporary variable is needed.",
-     "Use a temporary variable temp = x x = y y = temp",
-     "or, use Python’s canonical swap x, y = y, x",
-     "or, use addition/subtraction operators x = x + y y = x - y x = x - y",
-     "or, use multiplication/division operators x = x * y y = x / y x = x / y",
-     "or any other valid solution"
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A temporary variable is needed.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Use a temporary variable temp = x x = y y = temp",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "or, use Python’s canonical swap x, y = y, x",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "or, use addition/subtraction operators x = x + y y = x - y x = x - y",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "or, use multiplication/division operators x = x * y y = x / y x = x / y",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "or any other valid solution",
+    "marks": null
    }
   ],
   "stem": "You are asked to swap the values of two variables, x and y, which have already been initialised.",
@@ -965,26 +1090,69 @@
   "questionRef": "2021 HL Q5",
   "questionText": "(a) Using inputs of 7, 3 and 8 for n, complete the trace table showing the execution of the algorithm. (b) What output does the algorithm display?",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "n total count",
-    "marks": 5,
-    "accepts": [
-     "0 0 0",
-     "7 7 1",
-     "3 10 2",
-     "8 18 3",
-     "Second column correct",
-     "OR",
-     "OR",
-     "One correct value",
-     "(b) 18/3=6"
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "0 0 0",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "7 7 1",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "3 10 2",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "8 18 3",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Second column correct",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "OR",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "OR",
+    "marks": null
+   },
+   {
+    "id": "r-9",
+    "kind": "point",
+    "verbatim": "One correct value",
+    "marks": null
+   },
+   {
+    "id": "r-10",
+    "kind": "point",
+    "verbatim": "(b) 18/3=6",
+    "marks": null
    }
   ],
   "stem": "The flowchart in Figure 1 is a representation of an algorithm. Figure 1",
@@ -1001,27 +1169,156 @@
   "questionRef": "2021 HL Q7",
   "questionText": "(a) Differentiate between HTTP and HTTPS. (b) Explain how the TCP communication protocol provides reliable communication between computers.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "HTTP is unsecured while HTTPS is secured.",
-    "marks": 5,
-    "accepts": [
-     "HTTP sends data over port 80 while HTTPS uses port 443.",
-     "HTTP operates at application layer, while HTTPS operates at transport layer.",
-     "No SSL certificates are required for HTTP, with HTTPS it is required that you have an SSL certificate and it is signed by a CA.",
-     "TCP breaks messages into chunks called packets and then passes these chunks onto the IP",
-     "layer. At the receiving end the TCP software reassembles the packets into the correct",
-     "order (based on an assigned sequence number). Reliability is achieved by a system of",
-     "acknowledgments and timeouts. If an acknowledgement is not received within the",
-     "required timeout the TCP software resends individual packets or the entire message."
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "HTTP sends data over port 80 while HTTPS uses port 443.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "HTTP operates at application layer, while HTTPS operates at transport layer.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "No SSL certificates are required for HTTP, with HTTPS it is required that you have an SSL certificate and it is signed by a CA.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "TCP breaks messages into chunks called packets and then passes these chunks onto the IP",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "layer. At the receiving end the TCP software reassembles the packets into the correct",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "order (based on an assigned sequence number). Reliability is achieved by a system of",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "acknowledgments and timeouts. If an acknowledgement is not received within the",
+    "marks": null
+   },
+   {
+    "id": "r-9",
+    "kind": "point",
+    "verbatim": "required timeout the TCP software resends individual packets or the entire message.",
+    "marks": null
    }
   ]
+ },
+ {
+  "id": "cs-2021-hl-q8",
+  "topicId": "cs-2-3",
+  "conceptId": "why-emoji-characters-not-represented-using",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2021 HL Q8",
+  "questionText": "(a) Explain why emoji characters are not represented using the American Standard Code for Information Interchange (ASCII). (b) Express the hexadecimal number 1F44D as a binary number. The first four bits have been completed for you.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ASCII is a 7-bit system – cannot represent more than 128 characters. Extended ASCII uses an extra bit meaning it can cater for up to 256 different characters. ASCII was invented in the 1960’s (first published in 1963) and designed to include the characters that were most commonly used for communication between devices at that time. These included the digits 0-9, upper and lower case letters from the English alphabet (a-z, A-Z), punctuation symbols and a number of non-printing control codes used by old teletype machines.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Since emoji characters were not ‘invented’ at the time ASCII was introduced they were not considered for inclusion as part of the ASCII character set.",
+    "marks": null
+   }
+  ],
+  "stem": "The Unicode representation for the ‘thumbs up’ emoji character, shown in Figure 2, is the hexadecimal number 1F44D.",
+  "figureKey": "computer-science-2021-HL-paper-q8-fig0"
+ },
+ {
+  "id": "cs-2021-hl-q9",
+  "topicId": "cs-2-3",
+  "conceptId": "operating-system-b-diagram-figure-3",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2021 HL Q9",
+  "questionText": "(a) What is an operating system? (b) The diagram in Figure 3 depicts some of the main layers of an operating system. Select any two layers and explain their function.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "An OS is the software that controls the hardware of a computer.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Acts as an interface between other software and the hardware.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Acts as an interface between the user and the machine.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "I/O Management o Controls the user interface (handles graphics, screen sizes, resolutions etc.). o Provides access to peripheral devices (through device drivers).",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "File System o Keeps track of where files are located (e.g. maintains the file allocation table in FAT systems). o Controls access to files (e.g. sequential vs direct access). o Handles file security. o Implements disk scheduling policy (e.g. first-come, first-served).",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Memory Management o Allocation of RAM. o Loads data in from secondary to primary storage. o Swaps data out from primary to secondary.",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Processor Scheduling o Decides which job to run next and for how long (e.g. first-come, first-served, shortest job first, round robin). o Maintains the state of each process (e.g. ready/waiting/running/ended). o Deadlock avoidance. o Handles multitasking. o Handles multiple users. For each layer up to a total possible maximum of 3 marks:",
+    "marks": null
+   }
+  ],
+  "figureKey": "computer-science-2021-HL-paper-q9-fig0"
  },
  {
   "id": "cs-2021-hl-q10",
@@ -1034,26 +1331,69 @@
   "questionRef": "2021 HL Q10",
   "questionText": "(a) State two tasks that would be undertaken by a project manager in a software design process. (b) Some programming roles require the knowledge of low‐level programming. How does a low‐ level computer program differ from a high‐level computer program?",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "To agree requirements with customer.",
-    "marks": 5,
-    "accepts": [
-     "To ensure system/project is delivered on time and within budget.",
-     "To oversee project schedule – planning - set key dates/milestones.",
-     "To resource project – staffing, equipment, finance etc.",
-     "To assign tasks related to design, implementation, testing etc.",
-     "To communicate with and motivate team and ongoing liaison with customer.",
-     "To monitor project progress.",
-     "Any relevant task. For each correctly stated task",
-     "High level languages such as Python and JavaScript use English like words e.g. while, if. Programs written in these languages are translated into machine code using a compiler or interpreter. High level languages are machine independent.",
-     "Low level languages are used to write code for a specific processor architecture. The instruction is constrained by a processor’s instruction set. Examples are assembly languages and machine code (code written only using 1’s and 0’s)."
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "To ensure system/project is delivered on time and within budget.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "To oversee project schedule – planning - set key dates/milestones.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "To resource project – staffing, equipment, finance etc.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "To assign tasks related to design, implementation, testing etc.",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "To communicate with and motivate team and ongoing liaison with customer.",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "To monitor project progress.",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "Any relevant task. For each correctly stated task",
+    "marks": null
+   },
+   {
+    "id": "r-9",
+    "kind": "point",
+    "verbatim": "High level languages such as Python and JavaScript use English like words e.g. while, if. Programs written in these languages are translated into machine code using a compiler or interpreter. High level languages are machine independent.",
+    "marks": null
+   },
+   {
+    "id": "r-10",
+    "kind": "point",
+    "verbatim": "Low level languages are used to write code for a specific processor architecture. The instruction is constrained by a processor’s instruction set. Examples are assembly languages and machine code (code written only using 1’s and 0’s).",
+    "marks": null
    }
   ]
  },
@@ -1068,23 +1408,51 @@
   "questionRef": "2021 HL Q11",
   "questionText": "(a) State two benefits of computer modelling. (b) Explain how agent‐based modelling may have been used during the COVID‐19 pandemic to influence public health policy.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "To test the feasibility of some idea (i.e. testing ideas before committing to them. Refinements can be made more quickly, more safely and for less money e.g. is it worthwhile to vaccinate?",
-    "marks": 5,
-    "accepts": [
-     "To make predictions/demonstrate emergent behaviour (e.g. population growth, the spread of a virus, infection rates) so that decisions can be better informed (e.g. where to build hospitals, roads, schools or whether it is necessary to vaccinate against the spread of a virus).",
-     "To run simulations and be used as a basis for discussion and gaining a better understanding of a phenomena.",
-     "To enable solutions to problems that are difficult to solve analytically (e.g. because of scale or complexity).",
-     "Or similar. For each correctly stated benefit",
-     "Agent-based modelling (ABM) for COVID 19 could have behavioural rules corresponding to infection conditions and also include an individual profile for each agent, which defines its main social characteristics and health conditions used during its interactions.",
-     "ABMs can be used to predict outcomes for certain scenarios thereby allowing policy makers to make informed decisions such as those relating to social distancing, washing hands, setting lockdowns, easing restrictions, levels 1-5, crowd controls, indoor vs. outdoor activities, foreign travel etc."
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "To make predictions/demonstrate emergent behaviour (e.g. population growth, the spread of a virus, infection rates) so that decisions can be better informed (e.g. where to build hospitals, roads, schools or whether it is necessary to vaccinate against the spread of a virus).",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "To run simulations and be used as a basis for discussion and gaining a better understanding of a phenomena.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "To enable solutions to problems that are difficult to solve analytically (e.g. because of scale or complexity).",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Or similar. For each correctly stated benefit",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Agent-based modelling (ABM) for COVID 19 could have behavioural rules corresponding to infection conditions and also include an individual profile for each agent, which defines its main social characteristics and health conditions used during its interactions.",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "ABMs can be used to predict outcomes for certain scenarios thereby allowing policy makers to make informed decisions such as those relating to social distancing, washing hands, setting lockdowns, easing restrictions, levels 1-5, crowd controls, indoor vs. outdoor activities, foreign travel etc.",
+    "marks": null
    }
   ]
  },
@@ -1576,24 +1944,57 @@
   "questionRef": "2021 OL Q6",
   "questionText": "(a) Answer the following question by putting a tick () in the relevant box. Tick one box only. (b) Describe one difference between the World Wide Web (WWW) and the Internet.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "the language used to program web pages",
-    "marks": 5,
-    "accepts": [
-     "the method for encoding data securely",
-     "the web browser",
-     "the protocol for transferring hypertext for webpages ",
-     "(Incorrect if more than 1 box is ticked)",
-     "The internet is a global system of interconnected computers (uses TCP/IP).",
-     "The world wide web is online content (webpages) – formatted in HTML and uses the HTTP",
-     "protocol."
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "the method for encoding data securely",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "the web browser",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "the protocol for transferring hypertext for webpages ",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "(Incorrect if more than 1 box is ticked)",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "The internet is a global system of interconnected computers (uses TCP/IP).",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "The world wide web is online content (webpages) – formatted in HTML and uses the HTTP",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "protocol.",
+    "marks": null
    }
   ]
  },
@@ -1608,28 +2009,81 @@
   "questionRef": "2021 OL Q15",
   "questionText": "(a) Your friend complains to you that their five‐year‐old computer is slow for playing games. (i) State the output of each of the following logic gates for the inputs given. (ii) Complete the truth table for the OR logic gate, shown in Figure 7. This question continues on the next page. (b)  (c) The diagram in Figure 8 below, shows the different layers within a computer system. Explain the purpose of any two layers. (d) Developed in 1971, the first commercially produced microprocessor was the Intel 4004 and this led to a rapid and continuous rise in the power of the personal computer. Describe one other important development in computing that has occurred in the last 100 years and discuss its impact on computing today.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 30,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "Processor, RAM, Graphics Card, Wireless, Networking.",
-    "marks": 30,
-    "accepts": [
-     "For each item:",
-     "Valid item",
-     "1",
-     "0",
-     "Both correct",
-     "One correct",
-     "INPUTS OUTPUTS",
-     "A B A OR B",
-     "0 0 0",
-     "0 1 1",
-     "1 0 1"
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "For each item:",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Valid item",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "1",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "0",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Both correct",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "One correct",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "INPUTS OUTPUTS",
+    "marks": null
+   },
+   {
+    "id": "r-9",
+    "kind": "point",
+    "verbatim": "A B A OR B",
+    "marks": null
+   },
+   {
+    "id": "r-10",
+    "kind": "point",
+    "verbatim": "0 0 0",
+    "marks": null
+   },
+   {
+    "id": "r-11",
+    "kind": "point",
+    "verbatim": "0 1 1",
+    "marks": null
+   },
+   {
+    "id": "r-12",
+    "kind": "point",
+    "verbatim": "1 0 1",
+    "marks": null
    }
   ],
   "figureKey": "computer-science-2021-OL-paper-q15-fig0"
@@ -1645,23 +2099,81 @@
   "questionRef": "2021 OL Q16",
   "questionText": "(i) Insert a comment in the appropriate location to explain what the input command is doing in this program. (ii) Amend the program so that the following message is displayed if an incorrect PIN is entered: Incorrect PIN (iii) Create a suitably named Boolean variable (e.g. loggedIn) that is initially set to False before the user enters a PIN. (iv) Amend the program so that the new Boolean variable is set to True when the user enters the correct PIN. (v) Using a while loop or similar, keep asking the user to enter their PIN until they have entered it correctly. (vi) Create a suitably named variable (e.g. failedAttempts) that is initially set to 0 before the user enters a PIN. This variable will keep track of the number of failed login attempts. (vii) The user should only be allowed 3 failed login attempts. If the PIN is entered incorrectly 3 times an appropriate message should be displayed. (a) Open the program called Question16_A.py from your device. The source code is shown and described briefly below.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 50,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "(a) 50 (5, 10, 5, 5, 10, 5, 10) marks",
-    "marks": 50,
-    "accepts": [
-     "Possible solution:",
-     "3",
-     "4 pin = \"1579\"",
-     "7",
-     "8 while not loggedIn and (failedAttempts < 3):",
-     "10 userTry = input(\"Enter PIN:\")"
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Possible solution:",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "3",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "4 pin = \"1579\"",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "7",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "8 while not loggedIn and (failedAttempts < 3):",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "10 userTry = input(\"Enter PIN:\")",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "11",
+    "marks": null
+   },
+   {
+    "id": "r-9",
+    "kind": "point",
+    "verbatim": "12 if userTry == pin:",
+    "marks": null
+   },
+   {
+    "id": "r-10",
+    "kind": "point",
+    "verbatim": "13 print(\"Welcome\")",
+    "marks": null
+   },
+   {
+    "id": "r-11",
+    "kind": "point",
+    "verbatim": "14 loggedIn = True",
+    "marks": null
+   },
+   {
+    "id": "r-12",
+    "kind": "point",
+    "verbatim": "15 else:",
+    "marks": null
    }
   ],
   "figureKey": "computer-science-2021-OL-paper-q16-figure"
@@ -2477,24 +2989,57 @@
   "questionRef": "2022 HL Q2",
   "questionText": "(a) What is volatile memory? (b) Describe two differences between registers and RAM.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "A type of memory used to store data/programs when the computer is switched on/running.",
-    "marks": 5,
-    "accepts": [
-     "Called volatile because entire contents are cleared when the computer is switched off.",
-     "Physical location. Registers are located inside (part of) the CPU – RAM is not physically as close to the CPU.",
-     "Access time/speeds. Contents of registers can be accessed much faster by CPU than contents of RAM.",
-     "Cost. Registers are more expensive than RAM (per byte).",
-     "Capacity. Registers hold less than RAM (because of cost).",
-     "Material. Made from different materials.",
-     "Any other valid difference. 1 marks for each difference clearly described"
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Called volatile because entire contents are cleared when the computer is switched off.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Physical location. Registers are located inside (part of) the CPU – RAM is not physically as close to the CPU.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Access time/speeds. Contents of registers can be accessed much faster by CPU than contents of RAM.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Cost. Registers are more expensive than RAM (per byte).",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Capacity. Registers hold less than RAM (because of cost).",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Material. Made from different materials.",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "Any other valid difference. 1 marks for each difference clearly described",
+    "marks": null
    }
   ],
   "stem": "Registers and RAM are both types of volatile memory."
@@ -2510,23 +3055,51 @@
   "questionRef": "2022 HL Q3",
   "questionText": "(a) Explain the terms transistor and integrated circuit. (b) State one reason why Moore’s Law might not remain accurate in the future.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "Transistor",
-    "marks": 5,
-    "accepts": [
-     "A transistor is type of electronic switch.",
-     "A transistor is a semiconductor device used to amplify or switch electronic signals and electrical power. It is composed of semiconductor material usually with at least three terminals for connection to an external circuit.",
-     "A transistor is the fundamental building block of gates, logic circuits (adders, multiplexors etc.), integrated circuits and microprocessors.",
-     "Transistors are used to represent binary 1’s and 0’s. Integrated Circuit",
-     "An integrated circuit (chip) is an electronic component that contains multiple discrete components combined together into logic circuits on a single silicon board. For each term:",
-     "There is a physical limitation to the number of transistors that can fit on a single chip."
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A transistor is type of electronic switch.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "A transistor is a semiconductor device used to amplify or switch electronic signals and electrical power. It is composed of semiconductor material usually with at least three terminals for connection to an external circuit.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "A transistor is the fundamental building block of gates, logic circuits (adders, multiplexors etc.), integrated circuits and microprocessors.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Transistors are used to represent binary 1’s and 0’s. Integrated Circuit",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "An integrated circuit (chip) is an electronic component that contains multiple discrete components combined together into logic circuits on a single silicon board. For each term:",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "There is a physical limitation to the number of transistors that can fit on a single chip.",
+    "marks": null
    }
   ],
   "stem": "In 1965 Gordon Moore, co-founder of Intel Corporation, predicted that the number of transistors on an integrated circuit will approximately double every two years. This prediction became known as Moore’s Law and has turned out to be very accurate to the present day."
@@ -2542,28 +3115,81 @@
   "questionRef": "2022 HL Q4",
   "questionText": "(a) Complete the truth table for the logical statement A AND (B OR C). (b) Use the relevant gate symbols to draw the circuit diagram for this system.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "A B C A AND (B OR C)",
-    "marks": 5,
-    "accepts": [
-     "0 0 0 0",
-     "0 0 1 0",
-     "0 1 0 0",
-     "0 1 1 0",
-     "1 0 0 0",
-     "1 0 1 1",
-     "1 1 0 1",
-     "1 1 1 1",
-     "3 (or more) correct values",
-     "Gates combined correctly as above",
-     "Use of AND and OR gates with either input correctly labelled"
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "0 0 0 0",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "0 0 1 0",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "0 1 0 0",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "0 1 1 0",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "1 0 0 0",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "1 0 1 1",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "1 1 0 1",
+    "marks": null
+   },
+   {
+    "id": "r-9",
+    "kind": "point",
+    "verbatim": "1 1 1 1",
+    "marks": null
+   },
+   {
+    "id": "r-10",
+    "kind": "point",
+    "verbatim": "3 (or more) correct values",
+    "marks": null
+   },
+   {
+    "id": "r-11",
+    "kind": "point",
+    "verbatim": "Gates combined correctly as above",
+    "marks": null
+   },
+   {
+    "id": "r-12",
+    "kind": "point",
+    "verbatim": "Use of AND and OR gates with either input correctly labelled",
+    "marks": null
    }
   ],
   "stem": "An automatic garage door has three inputs: - A, the master ON/OFF switch - B, a sensor on the left hand side - C, a sensor on the right hand side Once the master switch has been set ON, either sensor can trigger the door. This scenario can be represented by the logical statement: A AND (B OR C).",
@@ -2580,24 +3206,57 @@
   "questionRef": "2022 HL Q7",
   "questionText": "(a) Explain the term ransomware. (b) State two measures individuals or companies can take to reduce the risk of a cyberattack.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "Ransomware is a type of malicious software (malware) that threatens to publish or blocks access to data or a computer system, usually by encrypting it, until the victim pays a ransom fee to the attacker. In many cases, the ransom demand comes with a deadline. If the victim doesn’t pay in time, the data is gone forever or the ransom increases.",
-    "marks": 5,
-    "accepts": [
-     "Company policy and procedures (people controls).",
-     "Password policies.",
-     "Anti-virus software.",
-     "Security systems (e.g. firewall, VPN).",
-     "Encryption.",
-     "Cloud (security services may be better than local organisations).",
-     "Any acceptable measure. Each correct response"
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Company policy and procedures (people controls).",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Password policies.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Anti-virus software.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Security systems (e.g. firewall, VPN).",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Encryption.",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Cloud (security services may be better than local organisations).",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "Any acceptable measure. Each correct response",
+    "marks": null
    }
   ],
   "stem": "On 14 May 2021, the Health Service Executive (HSE) of Ireland suffered a major ransomware cyberattack which caused all of its IT systems nationwide to be shut down."
@@ -2613,29 +3272,101 @@
   "questionRef": "2022 HL Q9",
   "questionText": "(a) Provide two examples of how machine learning can be used to benefit society. (b) Outline briefly the issue of ‘bias’ in relation to machine learning.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "Self-driving vehicles – safety/more accessible.",
-    "marks": 5,
-    "accepts": [
-     "Healthcare – early detection of chronic illnesses, modelling disease spread etc.",
-     "Entertainment – music/concert/movie/book recommender systems etc.",
-     "Online shopping – product recommender systems, ads etc.",
-     "Facial recognition in home/business security systems.",
-     "Environmental protection.",
-     "Fairer justice systems.",
-     "Arts – music/literature.",
-     "Education.",
-     "Any valid example of how machine learning can be used to benefit society. Each correct response",
-     "If the data on which the algorithm makes its decision contains bias, the algorithm’s output will also be biased."
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Healthcare – early detection of chronic illnesses, modelling disease spread etc.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Entertainment – music/concert/movie/book recommender systems etc.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Online shopping – product recommender systems, ads etc.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Facial recognition in home/business security systems.",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Environmental protection.",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Fairer justice systems.",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "Arts – music/literature.",
+    "marks": null
+   },
+   {
+    "id": "r-9",
+    "kind": "point",
+    "verbatim": "Education.",
+    "marks": null
+   },
+   {
+    "id": "r-10",
+    "kind": "point",
+    "verbatim": "Any valid example of how machine learning can be used to benefit society. Each correct response",
+    "marks": null
+   },
+   {
+    "id": "r-11",
+    "kind": "point",
+    "verbatim": "If the data on which the algorithm makes its decision contains bias, the algorithm’s output will also be biased.",
+    "marks": null
    }
   ]
+ },
+ {
+  "id": "cs-2022-hl-q10",
+  "topicId": "cs-2-1",
+  "conceptId": "way-fake-coin-can-be-found",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2022 HL Q10",
+  "questionText": "(a) Explain a way that the fake coin can be found in the minimum number of weighings. (b) Outline briefly your use of abstraction to tackle this problem.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "By ignoring irrelevant details such as coin colour, size and value",
+    "marks": null
+   }
+  ],
+  "stem": "You have eight coins and a two pan scales. Both the coins and the scales are gold plated and the diameter and circumference of all the coins are exactly the same. The coins are worth €2 each, a total of €16. - seven of the coins are genuine and weigh the same amount. - one of the coins is fake and is heavier than the others."
  },
  {
   "id": "cs-2022-hl-q14",
@@ -2648,28 +3379,81 @@
   "questionRef": "2022 HL Q14",
   "questionText": "(i) Apply the algorithm to sort the list of integers [15, 28, 14, 21] showing the state of both lists after each pass of the algorithm. Pass #1 has been completed for you. You only need to fill in the numbers for passes 2, 3 and 4. (ii) The algorithm sorts the list in ascending order. What changes would you need to make to the algorithm so that it sorts the list in descending order? (iii) Step 4 of the algorithm says to select the smallest (minimum) element from list1. Outline a method to find the smallest element in any list. (iv) Step 5 of the algorithm says to move the smallest element from list1 to list2. Why would the algorithm not work if this step said to copy the smallest element from list1 to list2? (v) The algorithm relies on two lists to complete the sort. Describe a selection sort algorithm that would sort a list ‘in place’ i.e. without the need for a second list. (a) is empty as shown. (i) Fill in the empty boxes below to complete passes 3, 4, 5 and 6 of the insertion sort. (ii) Explain how the insertion sort algorithm works. (iii) A list that is already reversed would be considered a good test case for the insertion sort algorithm. Describe two other test cases that could be used to test the insertion sort algorithm. (iv) \"Big O\" notation is used to describe the complexity of an algorithm. Discuss the algorithmic complexity of the insertion sort algorithm using \"Big O\" notation. (b) A bookshelf is partially sorted, in alphabetic order, using the insertion sort algorithm as shown in Figure 4 below.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 30,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "Select the largest (instead of the smallest) element from list 1 and move it to list2",
-    "marks": 30,
-    "accepts": [
-     "Initialise the minimum to be the first element in the list. Then, working/walk across the list compare each element to the minimum element so far. If the current element is less than the minimum element so far then let it be the new minimum. Continue in this manner until the end of the list is reached.",
-     "Pseudocode / flowchart / code are also acceptable",
-     "The same element would always be copied.",
-     "list1 will remain unchanged.",
-     "This would result in an infinite loop.",
-     "The selection sort algorithm works by passing across every element in the list to sort (from left to right). The element being passed over is called the current element. For each current element the algorithm looks for the minimum (smallest) element to its right. This minimum element is selected and swapped with the current element. The algorithm then moves on to the next element.",
-     "Pseudocode / flowchart / code are also acceptable.",
-     "The insertion sort works by passing across each element in the list starting from the second element. At the start, the first element is considered sorted and all elements to its right are considered unsorted. On each pass the first element in the unsorted list is inserted into the sorted list at its correct position.",
-     "Pseudocode / flowchart / code are also acceptable.",
-     "A list that is already sorted.",
-     "A list where all the values are the same."
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Initialise the minimum to be the first element in the list. Then, working/walk across the list compare each element to the minimum element so far. If the current element is less than the minimum element so far then let it be the new minimum. Continue in this manner until the end of the list is reached.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Pseudocode / flowchart / code are also acceptable",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "The same element would always be copied.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "list1 will remain unchanged.",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "This would result in an infinite loop.",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "The selection sort algorithm works by passing across every element in the list to sort (from left to right). The element being passed over is called the current element. For each current element the algorithm looks for the minimum (smallest) element to its right. This minimum element is selected and swapped with the current element. The algorithm then moves on to the next element.",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "Pseudocode / flowchart / code are also acceptable.",
+    "marks": null
+   },
+   {
+    "id": "r-9",
+    "kind": "point",
+    "verbatim": "The insertion sort works by passing across each element in the list starting from the second element. At the start, the first element is considered sorted and all elements to its right are considered unsorted. On each pass the first element in the unsorted list is inserted into the sorted list at its correct position.",
+    "marks": null
+   },
+   {
+    "id": "r-10",
+    "kind": "point",
+    "verbatim": "Pseudocode / flowchart / code are also acceptable.",
+    "marks": null
+   },
+   {
+    "id": "r-11",
+    "kind": "point",
+    "verbatim": "A list that is already sorted.",
+    "marks": null
+   },
+   {
+    "id": "r-12",
+    "kind": "point",
+    "verbatim": "A list where all the values are the same.",
+    "marks": null
    }
   ],
   "figureKey": "computer-science-2022-HL-paper-q14-figure"
@@ -3009,19 +3793,27 @@
   "questionRef": "2022 OL Q3",
   "questionText": "(a) Why are pauses included in this algorithm? (b) Describe the appearance of the LEDs at the end of the algorithm.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "To see the changes of the LED turning on or off",
-    "marks": 5,
-    "accepts": [
-     "The code will run too quickly to see LEDS without the pauses",
-     "To see if the code works correctly Any one of the above or similar:"
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The code will run too quickly to see LEDS without the pauses",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "To see if the code works correctly Any one of the above or similar:",
+    "marks": null
    }
   ],
   "stem": "The pseudocode, shown in Figure 2 below, has been designed to run on a Microbit or similar embedded system, shown in Figure 3. The embedded system has a green LED (light emitting diode) connected to pin 0, a yellow LED connected to pin 1 and a red LED connected to pin 2. Answer the questions that follow. Figure 2",
@@ -3038,20 +3830,33 @@
   "questionRef": "2022 OL Q5",
   "questionText": "(a) What index value will be returned if you search for the number 94? (b) Describe a limitation of the linear search algorithm.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "3",
-    "marks": 5,
-    "accepts": [
-     "Not an efficient way of searching.",
-     "In big data sets it will take a long time to complete the search.",
-     "Will only find the first number even if the number appears more than once."
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Not an efficient way of searching.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "In big data sets it will take a long time to complete the search.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Will only find the first number even if the number appears more than once.",
+    "marks": null
    }
   ],
   "stem": "A linear search algorithm, written in Python, is used to search the following list of integers. list = [11, 52, 37, 94, 12, 73, 62, 47]"
@@ -3067,23 +3872,51 @@
   "questionRef": "2022 OL Q8",
   "questionText": "(a) Describe one way digital technology has helped us during the COVID-19 Pandemic. (b) Explain what is meant by the term “digital divide”.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "COVID Tracker App",
-    "marks": 5,
-    "accepts": [
-     "Online Video Calls.",
-     "Entertainment online.",
-     "Communicate with other people.",
-     "Getting information to stay informed.",
-     "Online working and schooling. Any one of the above or similar:",
-     "Some people can afford or get access to technology and others cannot."
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Online Video Calls.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Entertainment online.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Communicate with other people.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Getting information to stay informed.",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Online working and schooling. Any one of the above or similar:",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Some people can afford or get access to technology and others cannot.",
+    "marks": null
    }
   ],
   "stem": "COVID-19 has had a significant impact on the use of technology and the Internet for remote work in business and education. It has also highlighted issues in the area known as the “digital divide”."
@@ -3099,25 +3932,63 @@
   "questionRef": "2022 OL Q10",
   "questionText": "(a) Match the picture of the electronic component to its name by placing the relevant letter in the second column of the table below. (b) Select any one of these electronic components and explain its purpose.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 5,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "Component",
-    "marks": 5,
-    "accepts": [
-     "Name",
-     "(write the letter)",
-     "Transistor C",
-     "Capacitor A",
-     "Resistor B",
-     "Transistor -> Used to control current and voltage in a circuit.",
-     "Capacitor -> Are used to store electrical charge",
-     "Resistors -> Are used to slow down the flow of current in a circuit. Any one of the above or similar:"
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Name",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "(write the letter)",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Transistor C",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Capacitor A",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Resistor B",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Transistor -> Used to control current and voltage in a circuit.",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "Capacitor -> Are used to store electrical charge",
+    "marks": null
+   },
+   {
+    "id": "r-9",
+    "kind": "point",
+    "verbatim": "Resistors -> Are used to slow down the flow of current in a circuit. Any one of the above or similar:",
+    "marks": null
    }
   ],
   "figureKey": "computer-science-2022-OL-paper-q10-fig0"
@@ -3133,28 +4004,81 @@
   "questionRef": "2022 OL Q16",
   "questionText": "(i) Insert a comment in an appropriate place to say “user enters first name”. (ii) Amend the program to ask for and accept the user's surname. Store the user’s surname in a variable called surname. (iii) Amend the program so that the user’s first name and their surname are printed when they are asked to select their item. (iv) Amend the program so that the items 2 = Ruler and 3 = Pen appear in the shopping list under the item 1 = Book. (v) Amend the program so that a dashed line appears above and below the available items. (vi) Amend the program so that the correct message is printed if the user purchases a ruler or pen. (vii) Amend the program to deal with invalid number entries. If the user enters any number other than the numbers 1, 2 or 3 they should be presented with an error message. (a) Open the program called Question16_A.py from your device. The source code is shown and described briefly below. 2 # Examination Number: 3 4 firstName = input(\"What is your first name? \") 5 6 print(\"Hello\", firstName) 7 print(\"Please select from the list of items.\\n\") 8 # \\n creates a new line 9 10 print(\"\\tItems Available\") # \\t creates a tab 11 print(\"1 = Book\") 12 13 shoppingItem = int(input(\"\\nEnter the number of the item you would like: \")) 14 15 if shoppingItem == 1: 16 print(\"You bought a book\") 17 The program above is to simulate an automated shop. The aim of the program is to accept the name of the user and then to ask the user to choose what item they would like to buy. The user will select the number of the item they wish to buy and the program outputs a message confirming the item they chose.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 50,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "(a) 50 (5, 10, 5, 5, 5, 10, 10) marks",
-    "marks": 50,
-    "accepts": [
-     "Possible solution:",
-     "1 # Question 16 (a)",
-     "2 # Examination Number:",
-     "3 # user enters first name",
-     "4 firstName = input(\"What is your first name? \")",
-     "5 surname = input(\"What is your surname? \")",
-     "6",
-     "7 print(\"Hello\", firstName, surname, \"please select from the list",
-     "of items.\\n\")",
-     "8 # \\n creates a new line",
-     "9"
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Possible solution:",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "1 # Question 16 (a)",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "2 # Examination Number:",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "3 # user enters first name",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "4 firstName = input(\"What is your first name? \")",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "5 surname = input(\"What is your surname? \")",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "6",
+    "marks": null
+   },
+   {
+    "id": "r-9",
+    "kind": "point",
+    "verbatim": "7 print(\"Hello\", firstName, surname, \"please select from the list",
+    "marks": null
+   },
+   {
+    "id": "r-10",
+    "kind": "point",
+    "verbatim": "of items.\\n\")",
+    "marks": null
+   },
+   {
+    "id": "r-11",
+    "kind": "point",
+    "verbatim": "8 # \\n creates a new line",
+    "marks": null
+   },
+   {
+    "id": "r-12",
+    "kind": "point",
+    "verbatim": "9",
+    "marks": null
    }
   ],
   "figureKey": "computer-science-2022-OL-paper-q16-code0"
@@ -3230,7 +4154,8 @@
     "marks": 8
    }
   ],
-  "stem": "This question continues on the next page."
+  "stem": "This question continues on the next page.",
+  "figureKey": "computer-science-2023-HL-paper-q13-fig0"
  },
  {
   "id": "cs-2023-hl-q13-a-ii",
@@ -3254,7 +4179,8 @@
     "marks": 3
    }
   ],
-  "stem": "This question continues on the next page."
+  "stem": "This question continues on the next page.",
+  "figureKey": "computer-science-2023-HL-paper-q13-fig0"
  },
  {
   "id": "cs-2023-hl-q13-a-iii",
@@ -3296,7 +4222,8 @@
     "marks": 2
    }
   ],
-  "stem": "This question continues on the next page."
+  "stem": "This question continues on the next page.",
+  "figureKey": "computer-science-2023-HL-paper-q13-fig0"
  },
  {
   "id": "cs-2023-hl-q13-b-ii",
@@ -3320,7 +4247,8 @@
     "marks": 2
    }
   ],
-  "stem": "Figure 8 This question continues on the next page."
+  "stem": "Figure 8 This question continues on the next page.",
+  "figureKey": "computer-science-2023-HL-paper-q13-fig0"
  },
  {
   "id": "cs-2023-hl-q13-b-iii",
@@ -3344,7 +4272,8 @@
     "marks": 3
    }
   ],
-  "stem": "Figure 8 This question continues on the next page."
+  "stem": "Figure 8 This question continues on the next page.",
+  "figureKey": "computer-science-2023-HL-paper-q13-fig0"
  },
  {
   "id": "cs-2023-hl-q13-c",
@@ -3368,7 +4297,8 @@
     "marks": 12
    }
   ],
-  "stem": "Outline two arguments for and two arguments against the use of FRS for law enforcement."
+  "stem": "Outline two arguments for and two arguments against the use of FRS for law enforcement.",
+  "figureKey": "computer-science-2023-HL-paper-q13-fig0"
  },
  {
   "id": "cs-2023-hl-q14-a-iii",
@@ -4088,22 +5018,45 @@
   "questionRef": "2023 HL Q2",
   "questionText": "(a) Explain one advantage of using hexadecimal numbers. (b) Convert the hexadecimal number C9 into a decimal number.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "Hexadecimal is very concise. This means that it can be used to express most numbers using fewer digits/characters than would be needed in other number systems.",
-    "marks": 6,
-    "accepts": [
-     "Every hexadecimal digit/character can be represented using a group of four binary digits. This grouping makes it relatively easy and fast to convert between hexadecimal numbers and binary. It is also one of the reasons why hexadecimal numbers are considered more human-friendly than other number systems.",
-     "Because of their conciseness, humans are less likely to make mistakes when writing hexadecimal numbers.",
-     "Hexadecimal notation is commonly used as a convenient way to represent memory addresses, machine code/instructions, data, error codes, colours etc.",
-     "Cx161+ 9x160 = 12x16+ 9x1 = 192+9 = 201 OR",
-     "STEP 1. Convert to binary: C9 = 1100 1001"
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Every hexadecimal digit/character can be represented using a group of four binary digits. This grouping makes it relatively easy and fast to convert between hexadecimal numbers and binary. It is also one of the reasons why hexadecimal numbers are considered more human-friendly than other number systems.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Because of their conciseness, humans are less likely to make mistakes when writing hexadecimal numbers.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Hexadecimal notation is commonly used as a convenient way to represent memory addresses, machine code/instructions, data, error codes, colours etc.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Cx161+ 9x160 = 12x16+ 9x1 = 192+9 = 201 OR",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "STEP 1. Convert to binary: C9 = 1100 1001",
+    "marks": null
    }
   ],
   "stem": "Information systems can represent numbers in decimal, binary and hexadecimal format. Many software developers use hexadecimal numbers."
@@ -4119,23 +5072,51 @@
   "questionRef": "2023 HL Q3",
   "questionText": "(a) A point P(x, y) is plotted inside the top right quadrant, as shown. Complete the truth table below to verify that P is inside the top right quadrant. (b) Construct a Boolean expression in the space below that will evaluate to True for all points (x, y) inside the shaded area shown in Figure 2.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "x > 0 y > 0 x > 0 and y > 0",
-    "marks": 6,
-    "accepts": [
-     "False False False",
-     "False True False",
-     "True False False",
-     "True True True",
-     "(x > -d and x < 0) and (y >0 and y < d)",
-     "Note: brackets not necessary and order not important in this case."
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "False False False",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "False True False",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "True False False",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "True True True",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "(x > -d and x < 0) and (y >0 and y < d)",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Note: brackets not necessary and order not important in this case.",
+    "marks": null
    }
   ],
   "stem": "The diagram in Figure 1 below, shows the Cartesian plane divided into four quadrants by an x-y axis, centred on the point (0, 0). Figure 1",
@@ -4152,24 +5133,57 @@
   "questionRef": "2023 HL Q4",
   "questionText": "(a) What is meant by the term ‘user interface’? (b) Name and describe one type of user interface that a computer system might use.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "A user interface is the means by which the user provides input to a computer and the",
-    "marks": 6,
-    "accepts": [
-     "computer conveys output to the user. Specifically, it is the point of interaction between a",
-     "user and a computer through the use of i/o devices.",
-     "Graphical user interface (GUI) - an environment with windows, icons, menus and controlled by a pointing device (WIMP). This type of interface is called the graphical user interface (GUI) because the user interacts with images through a mouse, keyboard or touchscreen. Used on most computers & smartphones.",
-     "Command line interface (CLI) - provides a method of interaction that is non-graphical, called the command line interface (CLI). This is a text-only service with feedback from the OS appearing in text. Using a CLI requires knowledge of the commands available on a particular machine.",
-     "Menu driven interfaces - user can select from a number of options, then typically only move up, down, back & forward. Often used in menus for food, tickets etc.",
-     "Touch user interface - this is a type of interaction between a user and a computer- based device. This interaction is by doing a physical touch on the screen and the computer responds to this touch interaction.",
-     "Natural Language interface (NLI) / Voice user interfaces (VUI) - these allow the user to interact with a system through voice or speech commands. Virtual assistants, such as Siri, Google Assistant, and Alexa, are examples of these type of interfaces."
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "computer conveys output to the user. Specifically, it is the point of interaction between a",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "user and a computer through the use of i/o devices.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Graphical user interface (GUI) - an environment with windows, icons, menus and controlled by a pointing device (WIMP). This type of interface is called the graphical user interface (GUI) because the user interacts with images through a mouse, keyboard or touchscreen. Used on most computers & smartphones.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Command line interface (CLI) - provides a method of interaction that is non-graphical, called the command line interface (CLI). This is a text-only service with feedback from the OS appearing in text. Using a CLI requires knowledge of the commands available on a particular machine.",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Menu driven interfaces - user can select from a number of options, then typically only move up, down, back & forward. Often used in menus for food, tickets etc.",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Touch user interface - this is a type of interaction between a user and a computer- based device. This interaction is by doing a physical touch on the screen and the computer responds to this touch interaction.",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "Natural Language interface (NLI) / Voice user interfaces (VUI) - these allow the user to interact with a system through voice or speech commands. Virtual assistants, such as Siri, Google Assistant, and Alexa, are examples of these type of interfaces.",
+    "marks": null
    }
   ],
   "stem": "User interfaces have evolved constantly over the past 40 years to become more user-friendly and accessible."
@@ -4185,28 +5199,81 @@
   "questionRef": "2023 HL Q6",
   "questionText": "(a) State two examples of embedded systems you might find in a smart home. (b) Describe two characteristics of embedded systems that distinguish them from general computer systems.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "Programmable appliances e.g. washing machine, dishwasher, dryers, kettle, fridge",
-    "marks": 6,
-    "accepts": [
-     "Heating, ventilation and air conditioning system.",
-     "Lighting control system.",
-     "Alarm/security systems.",
-     "Home robots e.g. Roomba, companion robots, window cleaners, lawnmowers",
-     "Leak detection, smoke and carbon monoxide detectors.",
-     "Home safety for the elderly and disabled.",
-     "Pet and baby care.",
-     "Voice control devices like Amazon Alexa or Google Home used to control home appliances or systems.",
-     "Any acceptable smart home embedded system. Note: Do not accept Micro:bit, Raspberry Pi as valid examples. Each correct example",
-     "Embedded systems perform some specific function or tasks. Unlike computer systems they cannot be programmed to do anything beyond the scope which they were designed for.",
-     "Low Cost – the price of embedded systems is relatively inexpensive."
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Heating, ventilation and air conditioning system.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Lighting control system.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Alarm/security systems.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Home robots e.g. Roomba, companion robots, window cleaners, lawnmowers",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Leak detection, smoke and carbon monoxide detectors.",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Home safety for the elderly and disabled.",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "Pet and baby care.",
+    "marks": null
+   },
+   {
+    "id": "r-9",
+    "kind": "point",
+    "verbatim": "Voice control devices like Amazon Alexa or Google Home used to control home appliances or systems.",
+    "marks": null
+   },
+   {
+    "id": "r-10",
+    "kind": "point",
+    "verbatim": "Any acceptable smart home embedded system. Note: Do not accept Micro:bit, Raspberry Pi as valid examples. Each correct example",
+    "marks": null
+   },
+   {
+    "id": "r-11",
+    "kind": "point",
+    "verbatim": "Embedded systems perform some specific function or tasks. Unlike computer systems they cannot be programmed to do anything beyond the scope which they were designed for.",
+    "marks": null
+   },
+   {
+    "id": "r-12",
+    "kind": "point",
+    "verbatim": "Low Cost – the price of embedded systems is relatively inexpensive.",
+    "marks": null
    }
   ],
   "stem": "Smart homes make use of embedded systems to make living spaces more enjoyable and convenient for home owners."
@@ -4222,24 +5289,57 @@
   "questionRef": "2023 HL Q10",
   "questionText": "(a) Using the leftmost element as the pivot, show the contents of the list after the initial partition by the quicksort algorithm. You should assume that the elements in the left and right sub-lists are not re-ordered. (b) Explain why 90 would have been a poor choice of pivot to partition the list shown in Figure 5.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "30 40 10 50 20 60 80 70 90",
-    "marks": 6,
-    "accepts": [
-     "OR",
-     "50 30 20 40 10 60 80 70 90",
-     "Elements split about the pivot",
-     "Left sub-list correct",
-     "Right sub-list correct",
-     "Because 90 is the largest number in the list.",
-     "Because it would increase the time taken to execute the algorithm."
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "OR",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "50 30 20 40 10 60 80 70 90",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Elements split about the pivot",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Left sub-list correct",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Right sub-list correct",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Because 90 is the largest number in the list.",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "Because it would increase the time taken to execute the algorithm.",
+    "marks": null
    }
   ],
   "stem": "Quicksort is widely recognised as one of the most efficient sorting algorithms. It works by recursively partitioning a list about one of the elements known as the pivot. Consider the unsorted list of integers shown in Figure 5 below and answer the questions that follow. 60 30 80 40 10 50 20 70 90 Figure 5"
@@ -4255,20 +5355,33 @@
   "questionRef": "2023 HL Q11",
   "questionText": "(a) Name one input and one output of the algorithm. (b) Referring to the relevant step(s) in the flowchart explain how the algorithm uses string slicing and string concatenation.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "Valid inputs: first_name, surname, date_of_birth.",
-    "marks": 6,
-    "accepts": [
-     "Valid output: username. Note: No marks awarded for actual names, dates or usernames (even if in correct format e.g. Joe Soap 26112003 and JoSoap2003) Each correct response (1 input and 1 output)",
-     "String slicing: o Step 5 of the algorithm slices the first two characters of the first_name. o Step 6 of the algorithm slices characters from positon 4 to 7 inclusive. Assuming ddmmyyyy format, this extracts the 4-digit year of birth from the date of birth.",
-     "String concatenation: o Step 7 of the algorithm concatenates the 2 characters from the first name followed by the surname followed by the 4 digit year of birth to determine the username. For each explanation:"
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Valid output: username. Note: No marks awarded for actual names, dates or usernames (even if in correct format e.g. Joe Soap 26112003 and JoSoap2003) Each correct response (1 input and 1 output)",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "String slicing: o Step 5 of the algorithm slices the first two characters of the first_name. o Step 6 of the algorithm slices characters from positon 4 to 7 inclusive. Assuming ddmmyyyy format, this extracts the 4-digit year of birth from the date of birth.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "String concatenation: o Step 7 of the algorithm concatenates the 2 characters from the first name followed by the surname followed by the 4 digit year of birth to determine the username. For each explanation:",
+    "marks": null
    }
   ],
   "stem": "Figure 6 depicts a flowchart of a Python algorithm which can be used to generate new usernames for students. You can assume that the date is in the format: ddmmyyyy. Figure 6",
@@ -4285,26 +5398,69 @@
   "questionRef": "2023 HL Q12",
   "questionText": "(a) Outline briefly two reasons why the SDLC is important. (b) Distinguish between functional and non-functional testing.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "The SDLC is important because it:",
-    "marks": 6,
-    "accepts": [
-     "provides a structured approach (thereby helping to reduce complexity",
-     "improves software quality (by increasing potential that project will meet user requirements and expectations while reducing risk of failure/errors.",
-     "minimises overrun on budgets/cost.",
-     "minimises the risk of missing project deadline(s).",
-     "maximises use of resources / staff planning.",
-     "encourages communication and collaboration among all project stakeholders",
-     "Any other reasonable reason provided. Note: Where two separate responses are considered equivalent/to have the same meaning, marks are awarded for the best response only. Zero is awarded for the other response. Each correct response",
-     "Functional testing tests whether the system meets its requirements whereas non- functional testing tests how well those requirements are met e.g. performance, usability, reliability, scalability and other non-functional aspects of the software system",
-     "Functional testing should be carried out before non-functional testing."
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "provides a structured approach (thereby helping to reduce complexity",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "improves software quality (by increasing potential that project will meet user requirements and expectations while reducing risk of failure/errors.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "minimises overrun on budgets/cost.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "minimises the risk of missing project deadline(s).",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "maximises use of resources / staff planning.",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "encourages communication and collaboration among all project stakeholders",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "Any other reasonable reason provided. Note: Where two separate responses are considered equivalent/to have the same meaning, marks are awarded for the best response only. Zero is awarded for the other response. Each correct response",
+    "marks": null
+   },
+   {
+    "id": "r-9",
+    "kind": "point",
+    "verbatim": "Functional testing tests whether the system meets its requirements whereas non- functional testing tests how well those requirements are met e.g. performance, usability, reliability, scalability and other non-functional aspects of the software system",
+    "marks": null
+   },
+   {
+    "id": "r-10",
+    "kind": "point",
+    "verbatim": "Functional testing should be carried out before non-functional testing.",
+    "marks": null
    }
   ],
   "stem": "A Software Development Lifecycle (SDLC) such as the one shown in Figure 7 below, is usually followed when creating information systems.",
@@ -4492,7 +5648,8 @@
     "marks": 6
    }
   ],
-  "stem": "Over the past year RTÉ have been looking into updating their RTÉ Player app. When a new piece of software is created for such a large organisation there are many different stages of the software development lifecycle to go through and also many different people involved. This question continues on the next page."
+  "stem": "Over the past year RTÉ have been looking into updating their RTÉ Player app. When a new piece of software is created for such a large organisation there are many different stages of the software development lifecycle to go through and also many different people involved. This question continues on the next page.",
+  "figureKey": "computer-science-2023-OL-paper-q14-fig0"
  },
  {
   "id": "cs-2023-ol-q14-a-ii",
@@ -4522,7 +5679,8 @@
     "marks": 4
    }
   ],
-  "stem": "Over the past year RTÉ have been looking into updating their RTÉ Player app. When a new piece of software is created for such a large organisation there are many different stages of the software development lifecycle to go through and also many different people involved. This question continues on the next page."
+  "stem": "Over the past year RTÉ have been looking into updating their RTÉ Player app. When a new piece of software is created for such a large organisation there are many different stages of the software development lifecycle to go through and also many different people involved. This question continues on the next page.",
+  "figureKey": "computer-science-2023-OL-paper-q14-fig0"
  },
  {
   "id": "cs-2023-ol-q14-b-i",
@@ -4552,7 +5710,8 @@
     "marks": 3
    }
   ],
-  "stem": "Figure 5 This question continues on the next page."
+  "stem": "Figure 5 This question continues on the next page.",
+  "figureKey": "computer-science-2023-OL-paper-q14-fig0"
  },
  {
   "id": "cs-2023-ol-q14-b-ii",
@@ -4576,7 +5735,8 @@
     "marks": 6
    }
   ],
-  "stem": "Figure 5 This question continues on the next page."
+  "stem": "Figure 5 This question continues on the next page.",
+  "figureKey": "computer-science-2023-OL-paper-q14-fig0"
  },
  {
   "id": "cs-2023-ol-q14-c-i",
@@ -4605,7 +5765,8 @@
     "verbatim": "Unit tests can be carried out on functions / modules of code",
     "marks": 3
    }
-  ]
+  ],
+  "figureKey": "computer-science-2023-OL-paper-q14-fig0"
  },
  {
   "id": "cs-2023-ol-q14-c-ii",
@@ -4634,7 +5795,8 @@
     "verbatim": "Disadvantages o Users can leak information about software before it is released o Process can be time consuming and delay the release o Can be a waste of time / money if the Beta testers do not use the software properly o Beta testers might not be representative of actual end users o Any other valid disadvantage Valid disadvantage",
     "marks": 3
    }
-  ]
+  ],
+  "figureKey": "computer-science-2023-OL-paper-q14-fig0"
  },
  {
   "id": "cs-2023-ol-q15-a-i",
@@ -4771,20 +5933,33 @@
   "questionRef": "2023 OL Q2",
   "questionText": "(a) Describe the main difference between a general-purpose computer and an embedded system. (b) Name one example of an embedded system you might find in your home.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "General-purpose computers can have many uses, embedded systems have a limited or specific number of uses",
-    "marks": 6,
-    "accepts": [
-     "General-purpose computers can be easily reprogrammed, embedded systems can’t easily be upgraded",
-     "General-purpose computers are generally higher cost, embedded systems are relatively low cost",
-     "Do not accept Micro:bit, Raspberry Pi as valid examples Valid example"
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "General-purpose computers can be easily reprogrammed, embedded systems can’t easily be upgraded",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "General-purpose computers are generally higher cost, embedded systems are relatively low cost",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Do not accept Micro:bit, Raspberry Pi as valid examples Valid example",
+    "marks": null
    }
   ],
   "stem": "print(a == b) print(b != a) print(a > b) print(b <= a) print(a == 10) print(b != 21)"
@@ -4800,19 +5975,27 @@
   "questionRef": "2023 OL Q8",
   "questionText": "(a) If a binary search algorithm is used to search for the name “Chan” what name will first be identified as the Mid (middle) item? (b) Why is the binary search algorithm sometimes referred to as a “divide and conquer” method?",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "Dara",
-    "marks": 6,
-    "accepts": [
-     "Binary search looks at the middle item of a list & checks if that Is the item it is searching for. If the item is not found it then it splits the list in half, meaning there are less items to search. This process is repeated until item is found or there is nothing left to search.",
-     "Binary search works by dividing the list into two halves, eliminating one half and conquering the other half by repeating this process."
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Binary search looks at the middle item of a list & checks if that Is the item it is searching for. If the item is not found it then it splits the list in half, meaning there are less items to search. This process is repeated until item is found or there is nothing left to search.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Binary search works by dividing the list into two halves, eliminating one half and conquering the other half by repeating this process.",
+    "marks": null
    }
   ],
   "stem": "Below is a sorted list of student names. Ava Cara Chan Dara Julie Kevin Senan"
@@ -4828,20 +6011,33 @@
   "questionRef": "2023 OL Q11",
   "questionText": "(a) What is the output of the program if the user enters 19 when asked for the number of marks? (b) What is the output of the program if the user makes a mistake and enters 110 when asked for the number of marks? (c) What is the purpose of the int function in line 1 of the code?",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "Not Graded",
-    "marks": 6,
-    "accepts": [
-     "Distinction",
-     "Converts (casts) the text entered to an integer",
-     "Ensures that the datatype of the variable percentage will be an integer"
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Distinction",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Converts (casts) the text entered to an integer",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Ensures that the datatype of the variable percentage will be an integer",
+    "marks": null
    }
   ],
   "stem": "The Python code below is being used to calculate a Junior Cycle grade descriptor from a percentage. Examine the code carefully and answer the questions below.",
@@ -4858,28 +6054,81 @@
   "questionRef": "2023 OL Q13",
   "questionText": "(i) Select the correct computer science term from the following list and place it in Column B to match the definitition in Column A in the table below. (ii) While loops are used in computer science to iterate over certain blocks of code. Examine the code below and complete the trace table that tracks the progress of the code being executed. (a)  (i) What cost will be printed when a customer has a car battery with a charge of 25% and no loyalty card? (ii) What cost will be printed when a customer has a car battery with a charge of 50% and a loyalty card? (iii) What cost will be printed when a customer has a car battery with a charge of 80% and no loyalty card? (iv) What is the lowest possible cost that this algorithm can print? (b) A public electric car charging point uses an algorithm to work out the cost for a customer to charge their car battery to 100%. Regular customers with loyalty cards get a discount. Examine the flowchart for the algorithm, shown in Figure 4 below, and answer the questions that follow. (i) What is the shortest time needed to fully recharge the three electric vehicles? Show your workings below. (ii) Name and explain a computational thinking skill you used to try and solve this problem. (c) Three cars arrive at an electric vehicle charging point location. There are two charge stations so only two cars can be charged at the same time. None of the three electric vehicle’s batteries have any charge. It takes one hour to fully charge each electric vehicle but this does not need to be done all in one go. Note: you do not need to account for time taken to change which car is being charged.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 38,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "Column A Column B",
-    "marks": 38,
-    "accepts": [
-     "Definition Term",
-     "A data structure that can store a collection of elements of the",
-     "Array",
-     "same data type",
-     "A character that represents a mathematical or logical action Operator",
-     "A command for handling a decision Conditional",
-     "A memory location that can store a value Variable",
-     "i j while i < j print(i)",
-     "1 1 10 True 1",
-     "2 2 9 True 2",
-     "3 3 8 True 3"
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Definition Term",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "A data structure that can store a collection of elements of the",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Array",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "same data type",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "A character that represents a mathematical or logical action Operator",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "A command for handling a decision Conditional",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "A memory location that can store a value Variable",
+    "marks": null
+   },
+   {
+    "id": "r-9",
+    "kind": "point",
+    "verbatim": "i j while i < j print(i)",
+    "marks": null
+   },
+   {
+    "id": "r-10",
+    "kind": "point",
+    "verbatim": "1 1 10 True 1",
+    "marks": null
+   },
+   {
+    "id": "r-11",
+    "kind": "point",
+    "verbatim": "2 2 9 True 2",
+    "marks": null
+   },
+   {
+    "id": "r-12",
+    "kind": "point",
+    "verbatim": "3 3 8 True 3",
+    "marks": null
    }
   ],
   "figureKey": "computer-science-2023-OL-paper-q13-figure"
@@ -5211,7 +6460,8 @@
     "marks": 1
    }
   ],
-  "stem": "This question continues on the next page."
+  "stem": "This question continues on the next page.",
+  "figureKey": "computer-science-2024-HL-paper-q13-fig0"
  },
  {
   "id": "cs-2024-hl-q13-a-ii",
@@ -5235,7 +6485,8 @@
     "marks": 3
    }
   ],
-  "stem": "This question continues on the next page."
+  "stem": "This question continues on the next page.",
+  "figureKey": "computer-science-2024-HL-paper-q13-fig0"
  },
  {
   "id": "cs-2024-hl-q13-a-iii",
@@ -5259,7 +6510,8 @@
     "marks": 3
    }
   ],
-  "stem": "This question continues on the next page."
+  "stem": "This question continues on the next page.",
+  "figureKey": "computer-science-2024-HL-paper-q13-fig0"
  },
  {
   "id": "cs-2024-hl-q13-a-iv",
@@ -5283,7 +6535,33 @@
     "marks": 2
    }
   ],
-  "stem": "This question continues on the next page."
+  "stem": "This question continues on the next page.",
+  "figureKey": "computer-science-2024-HL-paper-q13-fig0"
+ },
+ {
+  "id": "cs-2024-hl-q13-b-i",
+  "topicId": "cs-2-2",
+  "conceptId": "relation-computer-vision-do-percentages-shown",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2024 HL Q13(b)(i)",
+  "questionText": "In relation to computer vision, what do the percentages shown in Figure 5 represent?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The percentages represent a level of confidence returned by the model that the image has been correctly classified as the associated label. For example, cat: 94% means that the algorithm is 94% confident that it has identified a cat on this part of the image.",
+    "marks": 2
+   }
+  ],
+  "stem": "Figure 5 Scenario 1: An online streaming service that recommends films based on users’ viewing habits. Scenario 2: An automated lawnmower that uses sensors to navigate an outdoor space and avoid obstacles while cutting the grass. This question continues on the next page.",
+  "figureKey": "computer-science-2024-HL-paper-q13-fig0"
  },
  {
   "id": "cs-2024-hl-q13-b-ii",
@@ -5307,7 +6585,8 @@
     "marks": 6
    }
   ],
-  "stem": "Figure 5 Scenario 1: An online streaming service that recommends films based on users’ viewing habits. Scenario 2: An automated lawnmower that uses sensors to navigate an outdoor space and avoid obstacles while cutting the grass. This question continues on the next page."
+  "stem": "Figure 5 Scenario 1: An online streaming service that recommends films based on users’ viewing habits. Scenario 2: An automated lawnmower that uses sensors to navigate an outdoor space and avoid obstacles while cutting the grass. This question continues on the next page.",
+  "figureKey": "computer-science-2024-HL-paper-q13-fig0"
  },
  {
   "id": "cs-2024-hl-q13-b-iii",
@@ -5337,7 +6616,8 @@
     "marks": 2
    }
   ],
-  "stem": "Figure 5 Scenario 1: An online streaming service that recommends films based on users’ viewing habits. Scenario 2: An automated lawnmower that uses sensors to navigate an outdoor space and avoid obstacles while cutting the grass. This question continues on the next page."
+  "stem": "Figure 5 Scenario 1: An online streaming service that recommends films based on users’ viewing habits. Scenario 2: An automated lawnmower that uses sensors to navigate an outdoor space and avoid obstacles while cutting the grass. This question continues on the next page.",
+  "figureKey": "computer-science-2024-HL-paper-q13-fig0"
  },
  {
   "id": "cs-2024-hl-q13-b-iv",
@@ -5361,7 +6641,8 @@
     "marks": 3
    }
   ],
-  "stem": "Figure 5 Scenario 1: An online streaming service that recommends films based on users’ viewing habits. Scenario 2: An automated lawnmower that uses sensors to navigate an outdoor space and avoid obstacles while cutting the grass. This question continues on the next page."
+  "stem": "Figure 5 Scenario 1: An online streaming service that recommends films based on users’ viewing habits. Scenario 2: An automated lawnmower that uses sensors to navigate an outdoor space and avoid obstacles while cutting the grass. This question continues on the next page.",
+  "figureKey": "computer-science-2024-HL-paper-q13-fig0"
  },
  {
   "id": "cs-2024-hl-q13-c",
@@ -5451,7 +6732,8 @@
     "marks": 1
    }
   ],
-  "stem": "Discuss the reasons for some people supporting the initiative to pause training and others not supporting the initiative."
+  "stem": "Discuss the reasons for some people supporting the initiative to pause training and others not supporting the initiative.",
+  "figureKey": "computer-science-2024-HL-paper-q13-fig0"
  },
  {
   "id": "cs-2024-hl-q14-a-i",
@@ -5731,7 +7013,8 @@
     "marks": 4
    }
   ],
-  "stem": "book_id title year cost author author_dob on_loan 1 The Cat in the Hat 1957 6.95 Dr. Seuss 02/03/1904 Yes 2 Green Eggs and Ham 1960 8.95 Dr. Seuss March 2, 1904 Y 3 Horton Hears a Who! 1954 €10 Doc Seus 02/03/1904 N 4 How the Grinch Stole Christmas! 1957 9.95 Dr. Seuss 03/02/1904 No Column A Data Type Column B Field Name Boolean String Real"
+  "stem": "book_id title year cost author author_dob on_loan 1 The Cat in the Hat 1957 6.95 Dr. Seuss 02/03/1904 Yes 2 Green Eggs and Ham 1960 8.95 Dr. Seuss March 2, 1904 Y 3 Horton Hears a Who! 1954 €10 Doc Seus 02/03/1904 N 4 How the Grinch Stole Christmas! 1957 9.95 Dr. Seuss 03/02/1904 No Column A Data Type Column B Field Name Boolean String Real",
+  "figureKey": "computer-science-2024-HL-paper-q15-figure"
  },
  {
   "id": "cs-2024-hl-q15-a-ii",
@@ -5755,7 +7038,108 @@
     "marks": 3
    }
   ],
-  "stem": "book_id title year cost author author_dob on_loan 1 The Cat in the Hat 1957 6.95 Dr. Seuss 02/03/1904 Yes 2 Green Eggs and Ham 1960 8.95 Dr. Seuss March 2, 1904 Y 3 Horton Hears a Who! 1954 €10 Doc Seus 02/03/1904 N 4 How the Grinch Stole Christmas! 1957 9.95 Dr. Seuss 03/02/1904 No Column A Data Type Column B Field Name Boolean String Real"
+  "stem": "book_id title year cost author author_dob on_loan 1 The Cat in the Hat 1957 6.95 Dr. Seuss 02/03/1904 Yes 2 Green Eggs and Ham 1960 8.95 Dr. Seuss March 2, 1904 Y 3 Horton Hears a Who! 1954 €10 Doc Seus 02/03/1904 N 4 How the Grinch Stole Christmas! 1957 9.95 Dr. Seuss 03/02/1904 No Column A Data Type Column B Field Name Boolean String Real",
+  "figureKey": "computer-science-2024-HL-paper-q15-figure"
+ },
+ {
+  "id": "cs-2024-hl-q15-a-iii",
+  "topicId": "cs-2-4",
+  "conceptId": "identify-any-two-data-inconsistencies-data",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2024 HL Q15(a)(iii)",
+  "questionText": "Identify any two data inconsistencies in the data shown in the BOOKS table.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Any two from the following:",
+    "marks": 2
+   }
+  ],
+  "stem": "book_id title year cost author author_dob on_loan 1 The Cat in the Hat 1957 6.95 Dr. Seuss 02/03/1904 Yes 2 Green Eggs and Ham 1960 8.95 Dr. Seuss March 2, 1904 Y 3 Horton Hears a Who! 1954 €10 Doc Seus 02/03/1904 N 4 How the Grinch Stole Christmas! 1957 9.95 Dr. Seuss 03/02/1904 No Column A Data Type Column B Field Name Boolean String Real",
+  "figureKey": "computer-science-2024-HL-paper-q15-figure"
+ },
+ {
+  "id": "cs-2024-hl-q15-a-iv",
+  "topicId": "cs-2-4",
+  "conceptId": "assuming-all-data-inconsistencies-fixed-enter",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2024 HL Q15(a)(iv)",
+  "questionText": "Assuming all data inconsistencies are fixed, enter the names of three fields from the BOOKS table in Column B that correspond to the data types shown in Column A.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Column A Column B",
+    "marks": 3
+   }
+  ],
+  "stem": "book_id title year cost author author_dob on_loan 1 The Cat in the Hat 1957 6.95 Dr. Seuss 02/03/1904 Yes 2 Green Eggs and Ham 1960 8.95 Dr. Seuss March 2, 1904 Y 3 Horton Hears a Who! 1954 €10 Doc Seus 02/03/1904 N 4 How the Grinch Stole Christmas! 1957 9.95 Dr. Seuss 03/02/1904 No Column A Data Type Column B Field Name Boolean String Real",
+  "figureKey": "computer-science-2024-HL-paper-q15-figure"
+ },
+ {
+  "id": "cs-2024-hl-q15-b-iii",
+  "topicId": "cs-2-4",
+  "conceptId": "how-design-shown-figure-7-removes",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2024 HL Q15(b)(iii)",
+  "questionText": "Explain how the design shown in Figure 7 removes the need for the on_loan field from the BOOKS table.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The presence of a record in the LOANS table can be used to infer that a book is on loan. (Not only that, but the date the book was borrowed can also be looked up.) Therefore, there is no need to store this information in BOOKS.",
+    "marks": 3
+   }
+  ],
+  "stem": "Alex is working out her design on paper and has inserted some data into both tables as shown in Figure 7 below. For example, the first row of data in the LOANS table records the fact that Chloe borrowed Green Eggs and Ham on 20th May 2024.  Amy borrowed How the Grinch Stole Christmas! on 1st May 2024.  Bill borrowed The Cat in the Hat on 18th May 2024.  Chloe borrowed Horton Hears a Who! 7 days ago. member_id book_id date_borrowed member_id member_name 1 Amy 3 2 20/05/2024 2 4 01/05/24 3 Chloe 2 1 MEMBERS LOANS Figure 7 This question continues on the next page.",
+  "figureKey": "computer-science-2024-HL-paper-q15-figure"
+ },
+ {
+  "id": "cs-2024-hl-q15-b-iv",
+  "topicId": "cs-2-4",
+  "conceptId": "relational-databases-reduce-amount-data-redundancy",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2024 HL Q15(b)(iv)",
+  "questionText": "Relational databases reduce the amount of data redundancy. Explain the term ‘data redundancy’.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Data redundancy refers to a situation where a single piece of data (or value) is stored in more than one place in a database. It usually occurs as a result of poor design and is considered bad practice as it can lead to data inconsistencies as well as inefficiency use of storage.",
+    "marks": 3
+   }
+  ],
+  "stem": "Alex is working out her design on paper and has inserted some data into both tables as shown in Figure 7 below. For example, the first row of data in the LOANS table records the fact that Chloe borrowed Green Eggs and Ham on 20th May 2024.  Amy borrowed How the Grinch Stole Christmas! on 1st May 2024.  Bill borrowed The Cat in the Hat on 18th May 2024.  Chloe borrowed Horton Hears a Who! 7 days ago. member_id book_id date_borrowed member_id member_name 1 Amy 3 2 20/05/2024 2 4 01/05/24 3 Chloe 2 1 MEMBERS LOANS Figure 7 This question continues on the next page.",
+  "figureKey": "computer-science-2024-HL-paper-q15-figure"
  },
  {
   "id": "cs-2024-hl-q15-c-i",
@@ -5779,7 +7163,8 @@
     "marks": 4
    }
   ],
-  "stem": "Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Acknowledgements Images Image 1 on Page 6: https://technologyicalword.wordpress.com/emerging-technologies-in-computer-science/ Image 2 on Page 6: https://fossbytes.com/difference-between-ram-and-rom-memory/ Image on Page 7: https://www.forbes.com/sites/edrensi/2018/07/11/mcdonalds-says-goodbye-cashiers-hello-kiosks/ Image on Page 9: https://tech.co/digital-marketing/social-media-trends Image on Page 11: https://thebulletin.org/2023/08/convergence-artificial-intelligence-and-the-new-and-old-weapons- of-mass-destruction/ Image on Page 12: https://www.meathspca.com/get-involved.html Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Sections A & B Wednesday 22 May Morning 9:30 – 11:00 2024L219A2EL 2024. M110 C Coimisiún na Scrúduithe Stáit State Examinations Commission Computer Science Section C Higher Level Wednesday 22 May Morning 11:30 – 12:30 80 marks This document will not be returned to the State Examinations Commission. Instructions There is one section in this paper. Section C Programming One question 80 marks Calculators may be used during this section of the examination. The Formulae and Tables booklet cannot be used for this section of the examination. The superintendent will give you a copy of the Python Reference Guide. Ensure that you save your work regularly. Save your files using the naming structure described at the beginning of each question part. If you are unable to get some code to work correctly, you can comment out the code so that you can proceed. The code that has been commented out will be reviewed by the examiner. Rough work pages are provided at the end of this booklet. Please note that this booklet is not to be handed up and will not be reviewed by an examiner. At the end of the examination it is your responsibility to ensure that you have saved your files onto your external media. You will be provided with a brown envelope for your external media. Write your examination number on this envelope and place your external media into it before sealing. Place this envelope in the pouch at the front of the red envelope that contains your examination booklet from Section A and B. Section C Programming 80 marks"
+  "stem": "Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Acknowledgements Images Image 1 on Page 6: https://technologyicalword.wordpress.com/emerging-technologies-in-computer-science/ Image 2 on Page 6: https://fossbytes.com/difference-between-ram-and-rom-memory/ Image on Page 7: https://www.forbes.com/sites/edrensi/2018/07/11/mcdonalds-says-goodbye-cashiers-hello-kiosks/ Image on Page 9: https://tech.co/digital-marketing/social-media-trends Image on Page 11: https://thebulletin.org/2023/08/convergence-artificial-intelligence-and-the-new-and-old-weapons- of-mass-destruction/ Image on Page 12: https://www.meathspca.com/get-involved.html Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Sections A & B Wednesday 22 May Morning 9:30 – 11:00 2024L219A2EL 2024. M110 C Coimisiún na Scrúduithe Stáit State Examinations Commission Computer Science Section C Higher Level Wednesday 22 May Morning 11:30 – 12:30 80 marks This document will not be returned to the State Examinations Commission. Instructions There is one section in this paper. Section C Programming One question 80 marks Calculators may be used during this section of the examination. The Formulae and Tables booklet cannot be used for this section of the examination. The superintendent will give you a copy of the Python Reference Guide. Ensure that you save your work regularly. Save your files using the naming structure described at the beginning of each question part. If you are unable to get some code to work correctly, you can comment out the code so that you can proceed. The code that has been commented out will be reviewed by the examiner. Rough work pages are provided at the end of this booklet. Please note that this booklet is not to be handed up and will not be reviewed by an examiner. At the end of the examination it is your responsibility to ensure that you have saved your files onto your external media. You will be provided with a brown envelope for your external media. Write your examination number on this envelope and place your external media into it before sealing. Place this envelope in the pouch at the front of the red envelope that contains your examination booklet from Section A and B. Section C Programming 80 marks",
+  "figureKey": "computer-science-2024-HL-paper-q15-figure"
  },
  {
   "id": "cs-2024-hl-q15-c-ii",
@@ -5803,7 +7188,8 @@
     "marks": 6
    }
   ],
-  "stem": "Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Acknowledgements Images Image 1 on Page 6: https://technologyicalword.wordpress.com/emerging-technologies-in-computer-science/ Image 2 on Page 6: https://fossbytes.com/difference-between-ram-and-rom-memory/ Image on Page 7: https://www.forbes.com/sites/edrensi/2018/07/11/mcdonalds-says-goodbye-cashiers-hello-kiosks/ Image on Page 9: https://tech.co/digital-marketing/social-media-trends Image on Page 11: https://thebulletin.org/2023/08/convergence-artificial-intelligence-and-the-new-and-old-weapons- of-mass-destruction/ Image on Page 12: https://www.meathspca.com/get-involved.html Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Sections A & B Wednesday 22 May Morning 9:30 – 11:00 2024L219A2EL 2024. M110 C Coimisiún na Scrúduithe Stáit State Examinations Commission Computer Science Section C Higher Level Wednesday 22 May Morning 11:30 – 12:30 80 marks This document will not be returned to the State Examinations Commission. Instructions There is one section in this paper. Section C Programming One question 80 marks Calculators may be used during this section of the examination. The Formulae and Tables booklet cannot be used for this section of the examination. The superintendent will give you a copy of the Python Reference Guide. Ensure that you save your work regularly. Save your files using the naming structure described at the beginning of each question part. If you are unable to get some code to work correctly, you can comment out the code so that you can proceed. The code that has been commented out will be reviewed by the examiner. Rough work pages are provided at the end of this booklet. Please note that this booklet is not to be handed up and will not be reviewed by an examiner. At the end of the examination it is your responsibility to ensure that you have saved your files onto your external media. You will be provided with a brown envelope for your external media. Write your examination number on this envelope and place your external media into it before sealing. Place this envelope in the pouch at the front of the red envelope that contains your examination booklet from Section A and B. Section C Programming 80 marks"
+  "stem": "Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Acknowledgements Images Image 1 on Page 6: https://technologyicalword.wordpress.com/emerging-technologies-in-computer-science/ Image 2 on Page 6: https://fossbytes.com/difference-between-ram-and-rom-memory/ Image on Page 7: https://www.forbes.com/sites/edrensi/2018/07/11/mcdonalds-says-goodbye-cashiers-hello-kiosks/ Image on Page 9: https://tech.co/digital-marketing/social-media-trends Image on Page 11: https://thebulletin.org/2023/08/convergence-artificial-intelligence-and-the-new-and-old-weapons- of-mass-destruction/ Image on Page 12: https://www.meathspca.com/get-involved.html Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Sections A & B Wednesday 22 May Morning 9:30 – 11:00 2024L219A2EL 2024. M110 C Coimisiún na Scrúduithe Stáit State Examinations Commission Computer Science Section C Higher Level Wednesday 22 May Morning 11:30 – 12:30 80 marks This document will not be returned to the State Examinations Commission. Instructions There is one section in this paper. Section C Programming One question 80 marks Calculators may be used during this section of the examination. The Formulae and Tables booklet cannot be used for this section of the examination. The superintendent will give you a copy of the Python Reference Guide. Ensure that you save your work regularly. Save your files using the naming structure described at the beginning of each question part. If you are unable to get some code to work correctly, you can comment out the code so that you can proceed. The code that has been commented out will be reviewed by the examiner. Rough work pages are provided at the end of this booklet. Please note that this booklet is not to be handed up and will not be reviewed by an examiner. At the end of the examination it is your responsibility to ensure that you have saved your files onto your external media. You will be provided with a brown envelope for your external media. Write your examination number on this envelope and place your external media into it before sealing. Place this envelope in the pouch at the front of the red envelope that contains your examination booklet from Section A and B. Section C Programming 80 marks",
+  "figureKey": "computer-science-2024-HL-paper-q15-figure"
  },
  {
   "id": "cs-2024-hl-q16-a-i",
@@ -6686,7 +8072,8 @@
     "marks": 1
    }
   ],
-  "stem": "This question continues on the next page."
+  "stem": "This question continues on the next page.",
+  "figureKey": "computer-science-2024-OL-paper-q15-fig0"
  },
  {
   "id": "cs-2024-ol-q15-a-ii",
@@ -6710,7 +8097,33 @@
     "marks": 6
    }
   ],
-  "stem": "This question continues on the next page."
+  "stem": "This question continues on the next page.",
+  "figureKey": "computer-science-2024-OL-paper-q15-fig0"
+ },
+ {
+  "id": "cs-2024-ol-q15-b",
+  "topicId": "cs-2-4",
+  "conceptId": "design-phase-development-app-met-ireann",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2024 OL Q15(b)",
+  "questionText": "In the design phase of the development of the app Met Éireann may have created a data table such as the one shown below. Fill in the missing data types in Column C in the table. The first row has been completed for you.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Column A Column B Column C",
+    "marks": 5
+   }
+  ],
+  "stem": "Column C Data type Rainfall Amount of rainfall in mm. Not a decimal number. Integer Column A Column B Description Name Temperature Should accept a decimal number Province Any one of the following: [Leinster, Munster, Connacht, Ulster] Wind speed Should not be a decimal number Issue weather warning Yes or No Weather description Written description of today’s weather e.g. It will be warm and sunny today",
+  "figureKey": "computer-science-2024-OL-paper-q15-fig0"
  },
  {
   "id": "cs-2024-ol-q15-c",
@@ -6733,7 +8146,8 @@
     "verbatim": "Screen reader compatibility",
     "marks": 6
    }
-  ]
+  ],
+  "figureKey": "computer-science-2024-OL-paper-q15-fig0"
  },
  {
   "id": "cs-2024-ol-q15-d-i",
@@ -6757,7 +8171,8 @@
     "marks": 11
    }
   ],
-  "stem": "Yellow Wind Warning Orange Wind Warning Red Wind Warning Speed between 90 and 110km/h Speed between 111 and 130km/h Speed greater than 130km/h Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Acknowledgements Images Image on page 7: https://aerosystemswest.com/product/asw-heavy-lift-quadcopter-industrial-drone/ Image 1 on page 8: https://makelearn.org/2019/02/07/exporting-microbit-sensor-data/ Image 2 on page 8: https://ie.farnell.com/raspberry-pi/rpi3-modbp/sbc-board-raspberry-pi-3-model/dp/2842228 Image on page 14: https://techcrunch.com/2023/04/24/snapchat-sees-spike-in-1-star-reviews-as-users-pan-the-my- ai-feature-calling-for-its-removal/ Texts Text on page 15: https://www.rte.ie/news/2023/0430/1380005-snapchat-ai/ Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Ordinary Level Computer Science – Sections A & B Wednesday 22 May Morning 9:30 – 11:00 2024L219G2EL 2024. M109 C Coimisiún na Scrúduithe Stáit State Examinations Commission Computer Science Section C Ordinary Level Wednesday 22 May Morning 11:30 – 12:30 80 marks This document will not be returned to the State Examinations Commission. Junior Cycle Final Examination 2019 previous page running Leaving Certificate – 2024 2 Computer Science, Section C – Ordinary level Instructions There is one section in this paper. Section C Programming One question 80 marks Calculators may be used during this section of the examination. The Formulae and Tables booklet cannot be used for this section of the examination. The superintendent will give you a copy of the Python Reference Guide. Ensure that you save your work regularly. Save your files using the naming structure described at the beginning of each question part. If you are unable to get some code to work correctly, you can comment out the code so that you can proceed. The code that has been commented out will be reviewed by the examiner. Rough work pages are provided at the end of this booklet. Please note that this booklet is not to be handed up and will not be reviewed by an examiner. At the end of the examination it is your responsibility to ensure that you have saved your files onto your external media. You will be provided with a brown envelope for your external media. Write your examination number on this envelope and place your external media into it before sealing. Place this envelope in the pouch at the front of the red envelope that contains your examination booklet from Section A and B. Leaving Certificate – 2024 3 Computer Science, Section C – Ordinary level Section C Programming 80 marks"
+  "stem": "Yellow Wind Warning Orange Wind Warning Red Wind Warning Speed between 90 and 110km/h Speed between 111 and 130km/h Speed greater than 130km/h Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Acknowledgements Images Image on page 7: https://aerosystemswest.com/product/asw-heavy-lift-quadcopter-industrial-drone/ Image 1 on page 8: https://makelearn.org/2019/02/07/exporting-microbit-sensor-data/ Image 2 on page 8: https://ie.farnell.com/raspberry-pi/rpi3-modbp/sbc-board-raspberry-pi-3-model/dp/2842228 Image on page 14: https://techcrunch.com/2023/04/24/snapchat-sees-spike-in-1-star-reviews-as-users-pan-the-my- ai-feature-calling-for-its-removal/ Texts Text on page 15: https://www.rte.ie/news/2023/0430/1380005-snapchat-ai/ Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Ordinary Level Computer Science – Sections A & B Wednesday 22 May Morning 9:30 – 11:00 2024L219G2EL 2024. M109 C Coimisiún na Scrúduithe Stáit State Examinations Commission Computer Science Section C Ordinary Level Wednesday 22 May Morning 11:30 – 12:30 80 marks This document will not be returned to the State Examinations Commission. Junior Cycle Final Examination 2019 previous page running Leaving Certificate – 2024 2 Computer Science, Section C – Ordinary level Instructions There is one section in this paper. Section C Programming One question 80 marks Calculators may be used during this section of the examination. The Formulae and Tables booklet cannot be used for this section of the examination. The superintendent will give you a copy of the Python Reference Guide. Ensure that you save your work regularly. Save your files using the naming structure described at the beginning of each question part. If you are unable to get some code to work correctly, you can comment out the code so that you can proceed. The code that has been commented out will be reviewed by the examiner. Rough work pages are provided at the end of this booklet. Please note that this booklet is not to be handed up and will not be reviewed by an examiner. At the end of the examination it is your responsibility to ensure that you have saved your files onto your external media. You will be provided with a brown envelope for your external media. Write your examination number on this envelope and place your external media into it before sealing. Place this envelope in the pouch at the front of the red envelope that contains your examination booklet from Section A and B. Leaving Certificate – 2024 3 Computer Science, Section C – Ordinary level Section C Programming 80 marks",
+  "figureKey": "computer-science-2024-OL-paper-q15-fig0"
  },
  {
   "id": "cs-2024-ol-q15-d-ii",
@@ -6781,7 +8196,8 @@
     "marks": 5
    }
   ],
-  "stem": "Yellow Wind Warning Orange Wind Warning Red Wind Warning Speed between 90 and 110km/h Speed between 111 and 130km/h Speed greater than 130km/h Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Acknowledgements Images Image on page 7: https://aerosystemswest.com/product/asw-heavy-lift-quadcopter-industrial-drone/ Image 1 on page 8: https://makelearn.org/2019/02/07/exporting-microbit-sensor-data/ Image 2 on page 8: https://ie.farnell.com/raspberry-pi/rpi3-modbp/sbc-board-raspberry-pi-3-model/dp/2842228 Image on page 14: https://techcrunch.com/2023/04/24/snapchat-sees-spike-in-1-star-reviews-as-users-pan-the-my- ai-feature-calling-for-its-removal/ Texts Text on page 15: https://www.rte.ie/news/2023/0430/1380005-snapchat-ai/ Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Ordinary Level Computer Science – Sections A & B Wednesday 22 May Morning 9:30 – 11:00 2024L219G2EL 2024. M109 C Coimisiún na Scrúduithe Stáit State Examinations Commission Computer Science Section C Ordinary Level Wednesday 22 May Morning 11:30 – 12:30 80 marks This document will not be returned to the State Examinations Commission. Junior Cycle Final Examination 2019 previous page running Leaving Certificate – 2024 2 Computer Science, Section C – Ordinary level Instructions There is one section in this paper. Section C Programming One question 80 marks Calculators may be used during this section of the examination. The Formulae and Tables booklet cannot be used for this section of the examination. The superintendent will give you a copy of the Python Reference Guide. Ensure that you save your work regularly. Save your files using the naming structure described at the beginning of each question part. If you are unable to get some code to work correctly, you can comment out the code so that you can proceed. The code that has been commented out will be reviewed by the examiner. Rough work pages are provided at the end of this booklet. Please note that this booklet is not to be handed up and will not be reviewed by an examiner. At the end of the examination it is your responsibility to ensure that you have saved your files onto your external media. You will be provided with a brown envelope for your external media. Write your examination number on this envelope and place your external media into it before sealing. Place this envelope in the pouch at the front of the red envelope that contains your examination booklet from Section A and B. Leaving Certificate – 2024 3 Computer Science, Section C – Ordinary level Section C Programming 80 marks"
+  "stem": "Yellow Wind Warning Orange Wind Warning Red Wind Warning Speed between 90 and 110km/h Speed between 111 and 130km/h Speed greater than 130km/h Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Acknowledgements Images Image on page 7: https://aerosystemswest.com/product/asw-heavy-lift-quadcopter-industrial-drone/ Image 1 on page 8: https://makelearn.org/2019/02/07/exporting-microbit-sensor-data/ Image 2 on page 8: https://ie.farnell.com/raspberry-pi/rpi3-modbp/sbc-board-raspberry-pi-3-model/dp/2842228 Image on page 14: https://techcrunch.com/2023/04/24/snapchat-sees-spike-in-1-star-reviews-as-users-pan-the-my- ai-feature-calling-for-its-removal/ Texts Text on page 15: https://www.rte.ie/news/2023/0430/1380005-snapchat-ai/ Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Ordinary Level Computer Science – Sections A & B Wednesday 22 May Morning 9:30 – 11:00 2024L219G2EL 2024. M109 C Coimisiún na Scrúduithe Stáit State Examinations Commission Computer Science Section C Ordinary Level Wednesday 22 May Morning 11:30 – 12:30 80 marks This document will not be returned to the State Examinations Commission. Junior Cycle Final Examination 2019 previous page running Leaving Certificate – 2024 2 Computer Science, Section C – Ordinary level Instructions There is one section in this paper. Section C Programming One question 80 marks Calculators may be used during this section of the examination. The Formulae and Tables booklet cannot be used for this section of the examination. The superintendent will give you a copy of the Python Reference Guide. Ensure that you save your work regularly. Save your files using the naming structure described at the beginning of each question part. If you are unable to get some code to work correctly, you can comment out the code so that you can proceed. The code that has been commented out will be reviewed by the examiner. Rough work pages are provided at the end of this booklet. Please note that this booklet is not to be handed up and will not be reviewed by an examiner. At the end of the examination it is your responsibility to ensure that you have saved your files onto your external media. You will be provided with a brown envelope for your external media. Write your examination number on this envelope and place your external media into it before sealing. Place this envelope in the pouch at the front of the red envelope that contains your examination booklet from Section A and B. Leaving Certificate – 2024 3 Computer Science, Section C – Ordinary level Section C Programming 80 marks",
+  "figureKey": "computer-science-2024-OL-paper-q15-fig0"
  },
  {
   "id": "cs-2024-ol-q16-b",
@@ -6819,18 +8235,21 @@
   "questionRef": "2024 OL Q2",
   "questionText": "(a) What is the largest binary number that can be represented by a nibble? (b) Convert the binary number from part (a) above into a decimal value.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "1111",
-    "marks": 6,
-    "accepts": [
-     "15"
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "15",
+    "marks": null
    }
   ],
   "stem": "In computer science four bits of binary data is known as a ‘nibble’."
@@ -6846,26 +8265,69 @@
   "questionRef": "2024 OL Q3",
   "questionText": "(a) Choose the appropriate electronic component from the list below and place it in Column B to match the correct component image in Column A. Resistor Transistor Capacitor (b) Select any one of these electronic components and explain its purpose.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "Column A Column B",
-    "marks": 6,
-    "accepts": [
-     "Component Image Component Name",
-     "Capacitor",
-     "Resistor",
-     "Transistor",
-     "Leaving Certificate 2024",
-     "Computer Science, Marking Scheme – Ordinary level",
-     "Resistor – Creates resistance to the flow of current. Creates a voltage difference.",
-     "Transistor – Amplifies or switches on or off current. Controls current or voltage flow.",
-     "Capacitor – Can build up and store energy. Can release large amounts of built up energy."
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Component Image Component Name",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Capacitor",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Resistor",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Transistor",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Leaving Certificate 2024",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Computer Science, Marking Scheme – Ordinary level",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "Resistor – Creates resistance to the flow of current. Creates a voltage difference.",
+    "marks": null
+   },
+   {
+    "id": "r-9",
+    "kind": "point",
+    "verbatim": "Transistor – Amplifies or switches on or off current. Controls current or voltage flow.",
+    "marks": null
+   },
+   {
+    "id": "r-10",
+    "kind": "point",
+    "verbatim": "Capacitor – Can build up and store energy. Can release large amounts of built up energy.",
+    "marks": null
    }
   ],
   "figureKey": "computer-science-2024-OL-paper-q3-fig0"
@@ -6881,19 +8343,27 @@
   "questionRef": "2024 OL Q8",
   "questionText": "(a) Why is the int function used in lines 1 and 2? (b) What is an appropriate print statement that could be entered in line 8?",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "Casts the input to an integer",
-    "marks": 6,
-    "accepts": [
-     "int sets the data type to an integer/ number/ whole number",
-     "Numbers are equal / the same / match Valid print statement 3 marks"
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "int sets the data type to an integer/ number/ whole number",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Numbers are equal / the same / match Valid print statement 3 marks",
+    "marks": null
    }
   ],
   "stem": "Examine the incomplete Python program below and answer the questions that follow.",
@@ -6910,28 +8380,81 @@
   "questionRef": "2024 OL Q16",
   "questionText": "(i) Modify the program so that it first prints out “Welcome to the driving licence eligibility checker” instead of “The program”. When the program is run the output should now look as follows: Welcome to the driving licence eligibility checker What age are you? (ii) Insert a comment in the code that explains what is happening on line 6. (iii) Print a message stating the age that the user entered. When the program is run the output may now look as follows: Welcome to the driving licence eligibility checker What age are you? 17 You entered 17 You are entitled to apply for a driving licence. (iv) Currently the program will only output a message when the entered age is 17 or over. Change the program so that if an age less than 17 is entered a suitable message is output. When the program is run the output may now look as follows: Welcome to the driving licence eligibility checker What age are you? 16 You entered 16 You are not entitled to apply for a driving licence. (v) Amend the program to ask for the user’s name. The name should be stored in an appropriate variable. The user’s name should be output along with the message about eligibility to apply for a licence. When the program is run the output may now look as follows: Welcome to the driving licence eligibility checker What is your name? Sarah What age are you? 16 You entered 16 Sarah you are not entitled to apply for a driving licence. (vi) Update your program so that it outputs a message to the user based on the criteria in the table below. The output should continue to display the user name. The name Sarah is used in the examples below. (a) Open the program called Question16_A.py from your device. The source code is shown and described briefly below. (b) Open the program called Question16_B.py from your device. This file only contains two comments on lines 1 and 2.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 80,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "Possible solution:",
-    "marks": 80,
-    "accepts": [
-     "1 # Question 16(a)",
-     "2 # Examination Number:",
-     "3",
-     "4 print(\"Welcome to the driving licence eligibility checker\") #(i)",
-     "5",
-     "6 #(ii) user asked to input age and it is converted to an integer",
-     "7 age = int(input(\"What age are you? \"))",
-     "8 print(\"You entered\", age) #(iii)",
-     "9",
-     "10 name = input(\"Enter your name: \") #(v)",
-     "11"
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "1 # Question 16(a)",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "2 # Examination Number:",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "3",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "4 print(\"Welcome to the driving licence eligibility checker\") #(i)",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "5",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "6 #(ii) user asked to input age and it is converted to an integer",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "7 age = int(input(\"What age are you? \"))",
+    "marks": null
+   },
+   {
+    "id": "r-9",
+    "kind": "point",
+    "verbatim": "8 print(\"You entered\", age) #(iii)",
+    "marks": null
+   },
+   {
+    "id": "r-10",
+    "kind": "point",
+    "verbatim": "9",
+    "marks": null
+   },
+   {
+    "id": "r-11",
+    "kind": "point",
+    "verbatim": "10 name = input(\"Enter your name: \") #(v)",
+    "marks": null
+   },
+   {
+    "id": "r-12",
+    "kind": "point",
+    "verbatim": "11",
+    "marks": null
    }
   ],
   "figureKey": "computer-science-2024-OL-paper-q16-figure"
@@ -8063,7 +9586,8 @@
     "marks": 6
    }
   ],
-  "stem": "Figure 4"
+  "stem": "Figure 4",
+  "figureKey": "computer-science-2025-OL-paper-q13-fig0"
  },
  {
   "id": "cs-2025-ol-q13-a-iii",
@@ -8087,7 +9611,8 @@
     "marks": 4
    }
   ],
-  "stem": "Figure 4"
+  "stem": "Figure 4",
+  "figureKey": "computer-science-2025-OL-paper-q13-fig0"
  },
  {
   "id": "cs-2025-ol-q13-b-i",
@@ -8111,7 +9636,8 @@
     "marks": 6
    }
   ],
-  "stem": "Figure 5 This question continues on the next page."
+  "stem": "Figure 5 This question continues on the next page.",
+  "figureKey": "computer-science-2025-OL-paper-q13-fig0"
  },
  {
   "id": "cs-2025-ol-q13-b-ii",
@@ -8135,7 +9661,8 @@
     "marks": 6
    }
   ],
-  "stem": "Figure 5 This question continues on the next page."
+  "stem": "Figure 5 This question continues on the next page.",
+  "figureKey": "computer-science-2025-OL-paper-q13-fig0"
  },
  {
   "id": "cs-2025-ol-q13-b-iii",
@@ -8159,7 +9686,8 @@
     "marks": 4
    }
   ],
-  "stem": "Figure 5 This question continues on the next page."
+  "stem": "Figure 5 This question continues on the next page.",
+  "figureKey": "computer-science-2025-OL-paper-q13-fig0"
  },
  {
   "id": "cs-2025-ol-q14-a-i",
@@ -8521,25 +10049,63 @@
   "questionRef": "2025 OL Q3",
   "questionText": "(a) Choose the appropriate number system from the list below and place it in Column B to match the correct base value in Column A. (b) Explain why computers use the binary number system rather than the decimal number system.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "Column A Column B",
-    "marks": 6,
-    "accepts": [
-     "Base Value Number system",
-     "2 Binary",
-     "10 Decimal",
-     "16 Hexadecimal",
-     "Simplicity for Hardware: Computers use electrical circuits, which have two states: on (1) and off (0).",
-     "Reliability: Using just two states (1 and 0) reduces the chance of errors or misinterpretations.",
-     "Efficiency in Processing: The binary system allows computers to perform operations and calculations much faster because it only needs to handle two states.",
-     "Compatibility with Logic: Binary aligns with Boolean logic (true/false), which is the foundation of programming and decision-making in computers."
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Base Value Number system",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "2 Binary",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "10 Decimal",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "16 Hexadecimal",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Simplicity for Hardware: Computers use electrical circuits, which have two states: on (1) and off (0).",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Reliability: Using just two states (1 and 0) reduces the chance of errors or misinterpretations.",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "Efficiency in Processing: The binary system allows computers to perform operations and calculations much faster because it only needs to handle two states.",
+    "marks": null
+   },
+   {
+    "id": "r-9",
+    "kind": "point",
+    "verbatim": "Compatibility with Logic: Binary aligns with Boolean logic (true/false), which is the foundation of programming and decision-making in computers.",
+    "marks": null
    }
   ],
   "figureKey": "computer-science-2025-OL-paper-q3-fig0"
@@ -8555,27 +10121,75 @@
   "questionRef": "2025 OL Q7",
   "questionText": "(a) List two ways in which abstraction has been used in the map in Figure 1. (b) What is meant by the term ‘abstraction’ in relation to computer science?",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "Simplified items on the map are considered forms of abstraction such as:",
-    "marks": 6,
-    "accepts": [
-     "Removing unnecessary details such as buildings, trees etc",
-     "Simplified roads",
-     "Simplified river",
-     "Simplified railway line",
-     "Green areas",
-     "Text labels on street names / road numbers",
-     "Symbols for bus stops",
-     "Place names for important buildings",
-     "Abstraction means simplifying complex systems by focusing only on the important details and",
-     "hiding the unnecessary ones."
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Removing unnecessary details such as buildings, trees etc",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Simplified roads",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Simplified river",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Simplified railway line",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Green areas",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Text labels on street names / road numbers",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "Symbols for bus stops",
+    "marks": null
+   },
+   {
+    "id": "r-9",
+    "kind": "point",
+    "verbatim": "Place names for important buildings",
+    "marks": null
+   },
+   {
+    "id": "r-10",
+    "kind": "point",
+    "verbatim": "Abstraction means simplifying complex systems by focusing only on the important details and",
+    "marks": null
+   },
+   {
+    "id": "r-11",
+    "kind": "point",
+    "verbatim": "hiding the unnecessary ones.",
+    "marks": null
    }
   ],
   "stem": "Abstraction is used in maps, such as that in Figure 1 below, to help users read them with more ease. Figure 1",
@@ -8592,21 +10206,114 @@
   "questionRef": "2025 OL Q8",
   "questionText": "(i) Central Processing Unit (CPU) (ii) Input devices Figure 2",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "CPU: The CPU (Central Processing Unit) is often referred to as the \"brain\" of the computer. It's the main component that performs most of the processing inside a computer",
-    "marks": 6,
-    "accepts": [
-     "Input Devices: Input devices are components used to enter data, instructions, or signals into a computer system. For each:"
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Input Devices: Input devices are components used to enter data, instructions, or signals into a computer system. For each:",
+    "marks": null
    }
   ],
   "stem": "Jeremy is building a desktop computer, such as that in Figure 2, using various pieces of hardware. Outline the purpose of the following components of a desktop computer:"
+ },
+ {
+  "id": "cs-2025-ol-q13",
+  "topicId": "cs-2-3",
+  "conceptId": "development-world-s-first-computer-eniac",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2025 OL Q13",
+  "questionText": "(i) List three other important computing developments that have taken place in the last 100 years. (ii) Choose one of the developments from part (i) and explain its importance. (iii) Artificial intelligence and machine learning are major trends in computing that have emerged over the last decade. Name and explain one other emerging trend in computing. (a) The development of the world’s first computer, ENIAC (electronic numerical integrator and computer) in 1945, is a major milestone in computing. (i) Explain the purpose of the application and hardware layers. (ii) Apple iOS, Microsoft Windows, and Android OS are all examples of operating systems. List three functions of an operating system. (iii) The enhancement of computers over the last few decades has allowed for the development of specific-purpose computers such as embedded systems. Describe two examples of embedded systems in our everyday lives. (b) Modern computer systems consist of the four layers shown in Figure 5 below. (c) Name two computer-related careers and for each, list two activities that the person would undertake.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 38,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The development of the Turing Machine",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The development of algorithms and software e.g. search/sort algorithms, programming language compilers",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "The invention of the internet",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "The development of the personal computer (PC)",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "The advancement of artificial intelligence (AI)",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "The creation of the World Wide Web",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "The development of mobile phones and smartphones",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "The rise of cloud computing",
+    "marks": null
+   },
+   {
+    "id": "r-9",
+    "kind": "point",
+    "verbatim": "The expansion of wireless networking (wi-fi and 5g)",
+    "marks": null
+   },
+   {
+    "id": "r-10",
+    "kind": "point",
+    "verbatim": "The creation of graphical user interfaces (GUIs)",
+    "marks": null
+   },
+   {
+    "id": "r-11",
+    "kind": "point",
+    "verbatim": "The invention of the microprocessor",
+    "marks": null
+   },
+   {
+    "id": "r-12",
+    "kind": "point",
+    "verbatim": "The rise of blockchain and cryptocurrencies",
+    "marks": null
+   }
+  ],
+  "figureKey": "computer-science-2025-OL-paper-q13-fig0"
  },
  {
   "id": "cs-2025-ol-q14",
@@ -8619,27 +10326,81 @@
   "questionRef": "2025 OL Q14",
   "questionText": "(i) Line 1 of the code has a conditional statement. Explain the purpose of this conditional statement. (ii) State a suitable data type for the variable price. (a) A section of the Python code for the vending machine program is shown below. (i) Describe a unit test that should take place for the vending machine. (ii) The table below shows a test plan for the vending machine. Some of the entries have been left blank. Complete the test plan by filling in the correct information in the blank spaces. (iii) Name and explain a stage of software testing, other than unit testing, that should take place to ensure the vending machine works as intended when it is released. (iv) Describe two design features that could be incorporated into the vending machine to make it accessible to as many different types of users as possible. (b) The vending machine needs to be tested before it is released. (c) When the user inserts the correct amount of money and enters the code of an item, the vending machine will perform a number of checks. Create an algorithm or flowchart to describe the process outlined in the following bullet points:  The vending machine checks if there are any of that particular item available.  If there are any items available, one is dispensed to the user.  If there are no items available, the user is asked to enter another code.  If there are less than three of that particular item remaining a message is sent to head office to order more stock for the vending machine.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 38,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "It is to check that the user has entered enough money to buy the selected item",
-    "marks": 38,
-    "accepts": [
-     "float",
-     "Verify that selecting a specific snack (e.g., \"A1\") correctly identifies the item",
-     "Check if the vending machine accepts and processes a specific amount of money (e.g., €1.50) for a €1.50 snack.",
-     "Check that the vending machine dispenses the correct change if too much money is entered",
-     "Check that the card facility for payment is working",
-     "Check that the vending machine doesn’t allow an item to be selected if it is sold out",
-     "Code Entered Money Inserted (€) Expected Result",
-     "B1 3 Oreos served, €0.50 change given",
-     "A2 1.2 Water served, no change given",
-     "C1 <2 Error – not enough money inserted"
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "float",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Verify that selecting a specific snack (e.g., \"A1\") correctly identifies the item",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Check if the vending machine accepts and processes a specific amount of money (e.g., €1.50) for a €1.50 snack.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Check that the vending machine dispenses the correct change if too much money is entered",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Check that the card facility for payment is working",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Check that the vending machine doesn’t allow an item to be selected if it is sold out",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "Code Entered Money Inserted (€) Expected Result",
+    "marks": null
+   },
+   {
+    "id": "r-9",
+    "kind": "point",
+    "verbatim": "B1 3 Oreos served, €0.50 change given",
+    "marks": null
+   },
+   {
+    "id": "r-10",
+    "kind": "point",
+    "verbatim": "A2 1.2 Water served, no change given",
+    "marks": null
+   },
+   {
+    "id": "r-11",
+    "kind": "point",
+    "verbatim": "C1 <2 Error – not enough money inserted",
+    "marks": null
+   },
+   {
+    "id": "r-12",
+    "kind": "point",
+    "verbatim": "C2 0.75 Error – not enough money inserted",
+    "marks": null
    }
   ],
   "stem": "A vending machine, such as that in Figure 6, has the following options available for users. C2 Crisps, Cheese & Onion 2 Customers deposit coins into the vending machine and input the two-character item code (for example, A2 for water) for their desired selection. If the customer has deposited enough funds, the vending machine dispenses the chosen item and returns any necessary change.",
@@ -8656,28 +10417,81 @@
   "questionRef": "2025 OL Q15",
   "questionText": "(i) Identify three potential stakeholders for this app. For each stakeholder, identify one requirement they have for the app. (ii) Describe two adaptive or assistive technology features that the design team should focus on for the project. (a) A museum has an information point, such as that shown in Figure 7, to inform visitors about the museum’s art collection. There is only one information point at the entrance to the museum and it provides users with images and text about the artwork. However, there have been a number of complaints relating to the user experience, particularly in how the information from the information point is delivered to users. You are part of a design team working on redeveloping the visitor information point so that it allows users to access the information using an app on their own smart device. (i) Outline one activity that your team will undertake at each of the four stages listed in the answer box below. (ii) One of the team has suggested using a staged software development process rather than the iterative development process shown in Figure 8. Put forward two arguments for retaining the iterative development process. (b) The diagram in Figure 8 below illustrates the typical stages in a software development design process. (i) Describe one benefit of including this technology. (ii) Describe one ethical concern of including this technology. (c) One of the designers wants to build location tracking into the app to see exactly where visitors go in the museum.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 38,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "Museum Visitors",
-    "marks": 38,
-    "accepts": [
-     "Requirement: Easy access to detailed information about artwork to enhance their experience as",
-     "they explore the museum.",
-     "Museum Staff",
-     "Requirement: A user-friendly way to update and manage the content to keep the app",
-     "information current and relevant.",
-     "Museum Administrators",
-     "Requirement: Analytics tracking to monitor app usage and gather visitor insights.",
-     "Tour Guides",
-     "Requirement: The app should allow syncing or scheduling of guided tour content so it",
-     "complements live tours without conflicting information.",
-     "External Sponsors or Partners (e.g. cultural institutions, art donors)"
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Requirement: Easy access to detailed information about artwork to enhance their experience as",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "they explore the museum.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Museum Staff",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Requirement: A user-friendly way to update and manage the content to keep the app",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "information current and relevant.",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Museum Administrators",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "Requirement: Analytics tracking to monitor app usage and gather visitor insights.",
+    "marks": null
+   },
+   {
+    "id": "r-9",
+    "kind": "point",
+    "verbatim": "Tour Guides",
+    "marks": null
+   },
+   {
+    "id": "r-10",
+    "kind": "point",
+    "verbatim": "Requirement: The app should allow syncing or scheduling of guided tour content so it",
+    "marks": null
+   },
+   {
+    "id": "r-11",
+    "kind": "point",
+    "verbatim": "complements live tours without conflicting information.",
+    "marks": null
+   },
+   {
+    "id": "r-12",
+    "kind": "point",
+    "verbatim": "External Sponsors or Partners (e.g. cultural institutions, art donors)",
+    "marks": null
    }
   ],
   "figureKey": "computer-science-2025-OL-paper-q15-fig0"

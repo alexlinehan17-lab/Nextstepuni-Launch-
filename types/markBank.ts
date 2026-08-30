@@ -45,13 +45,23 @@
  *    correct answers 5 marks each and the rest 2. A point's value depends on how
  *    many the student got right, not which point it is, so per-row values do not
  *    exist and must not be invented.
+ *  - `questionTotal` — the scheme prices the QUESTION and states its points
+ *    without printing how those marks divide across its parts. Computer Science
+ *    Section A does this throughout: a five-mark question prints (a) and (b),
+ *    and the scheme answers each without ever saying what either is worth.
+ *    A card citing the question can state the total and the points; it cannot
+ *    state a split, and it must not present the parts' separate answers as
+ *    ALTERNATIVES to one another — "five marks for any one of these" is a claim
+ *    the scheme never made and, for a question whose parts ask different
+ *    things, is false.
  *
  * PARSED from the notation printed in the scheme. Never inferred, never defaulted.
  */
 export type TariffModel =
   | { kind: 'fixed' }
   | { kind: 'bestNofParts'; answer: number; ofParts: number; perPart: number }
-  | { kind: 'orderedSplit'; notation: string };
+  | { kind: 'orderedSplit'; notation: string }
+  | { kind: 'questionTotal' };
 
 /**
  * What kind of thing one marking row is.
@@ -406,8 +416,9 @@ export function isContentFreeRow(verbatim: string): boolean {
  *
  * `fixed` must sum exactly. `bestNofParts` sums only the claimable subset, which
  * is what catches six rows × 4m displaying 24 marks on a 20-mark question.
- * `orderedSplit` cannot be checked, because the scheme does not define per-row
- * values — so we assert the rows carry none rather than pretending.
+ * `orderedSplit` and `questionTotal` cannot be checked, because the scheme does
+ * not define per-row values — so we assert the rows carry none rather than
+ * pretending.
  */
 /** What one bounded group is worth when fully claimed. */
 export function groupMarks(g: { claimMax: number; perOption: number; perOptionSteps?: number[] }): number {
@@ -418,7 +429,9 @@ export function groupMarks(g: { claimMax: number; perOption: number; perOptionSt
 
 export function tariffReconciles(card: SecCard): boolean {
   const { tariffModel: t, rows, totalMarks } = card;
-  if (t.kind === 'orderedSplit') return rows.every(r => r.marks === null);
+  if (t.kind === 'orderedSplit' || t.kind === 'questionTotal') {
+    return rows.every(r => r.marks === null);
+  }
   if (t.kind === 'bestNofParts') return t.answer * t.perPart === totalMarks;
   // Asterisked rows count: the asterisk constrains the wording, not the value.
   const worth = (r: MarkRow) =>

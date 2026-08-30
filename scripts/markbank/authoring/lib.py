@@ -511,6 +511,13 @@ class Author:
             if not notation:
                 raise Refused(f'{ref}: ladder needs a notation giving the scale')
             marks = [None] * len(chosen)
+        # The same shape for a different reason. The scheme prices the QUESTION
+        # and states its points without saying how those marks divide across
+        # its parts, so no row has a value of its own. Computer Science Section
+        # A does this throughout: a five-mark question prints (a) and (b) and
+        # the scheme answers each without ever saying what either is worth.
+        if tariff == 'questionTotal':
+            marks = [None] * len(chosen)
 
         scheme_marks = scheme.marks(q, letter, roman) or self.scheme.marks(q, letter, roman)
         if marks is None:
@@ -523,7 +530,14 @@ class Author:
         if len(marks) != len(chosen):
             raise Refused(f'{ref}: {len(marks)} marks for {len(chosen)} points')
 
-        if ladder is not None:
+        if tariff == 'questionTotal':
+            # There is nothing to sum, so the total has to be given: it is the
+            # tariff the paper prints on the question.
+            if total is None:
+                raise Refused(f'{ref}: a questionTotal card must be given the '
+                              f'total the paper prints')
+            computed = total
+        elif ladder is not None:
             computed = ladder
         else:
             computed = sum(marks)

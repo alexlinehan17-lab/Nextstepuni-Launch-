@@ -35493,7 +35493,7 @@
  },
  "computer-science-2021-OL-paper-q5-fig0": {
   "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q5-fig0.png",
-  "md5": "db4c015d2ab094a9eec5102d380723e1",
+  "md5": "342af652f5f9101a7b60a218bb7c1c2b",
   "alt": "The table or diagram printed with 2021 OL Question 5, as the State Examinations Commission set it. It is labelled: technology., Figure 2.",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -35515,7 +35515,7 @@
  },
  "computer-science-2021-OL-paper-q8-fig0": {
   "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q8-fig0.png",
-  "md5": "59919334261e9e86b2b65d365726362f",
+  "md5": "574a80234b57ce9298f231fac4c9826a",
   "alt": "The table or diagram printed with 2021 OL Question 8, as the State Examinations Commission set it.",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -35870,7 +35870,7 @@
  },
  "computer-science-2023-OL-paper-q5-fig0": {
   "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q5-fig0.png",
-  "md5": "83f7365b3b6671c3a8c5f65f0c0f52a3",
+  "md5": "dc955f673acf0713517d096b61faba86",
   "alt": "The table or diagram printed with 2023 OL Question 5, as the State Examinations Commission set it. It is labelled: Figure 1.",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -35958,7 +35958,7 @@
  },
  "computer-science-2024-HL-paper-q4-figure": {
   "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q4-figure.png",
-  "md5": "ecdbe62a9a376141ccd4cf8e1ae2850b",
+  "md5": "4606683b08f0eaa2b3ea99f8c9fd1973",
   "alt": "The table or diagram printed with 2024 HL Question 4, as the State Examinations Commission set it. It is labelled: Figure 2 (end state).",
   "lettersVisible": [],
   "labelMeanings": [],
@@ -36271,6 +36271,105 @@
   "lettersVisible": [],
   "labelMeanings": [],
   "questionRef": "2025 OL Q12",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2021-HL-paper-q8-fig0": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q8-fig0.png",
+  "md5": "4683db5c6e56a94140f40254ed5eb800",
+  "alt": "The table or diagram printed with 2021 HL Question 8, as the State Examinations Commission set it. It is labelled: 1F44D.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q8",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission"
+ },
+ "computer-science-2021-HL-paper-q9-fig0": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q9-fig0.png",
+  "md5": "78c41210bcb2e9961e3727e371d534c0",
+  "alt": "The table or diagram printed with 2021 HL Question 9, as the State Examinations Commission set it. It is labelled: Figure 3, Layer 1:, Explain:, Layer 2:.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q9",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission"
+ },
+ "computer-science-2021-HL-paper-q14-fig0": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q14-fig0.png",
+  "md5": "54fe4567a51487225fdd3794399e5d81",
+  "alt": "The table or diagram printed with 2021 HL Question 14, as the State Examinations Commission set it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2021 HL Q14",
+  "year": 2021,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission"
+ },
+ "computer-science-2023-HL-paper-q13-fig0": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q13-fig0.png",
+  "md5": "759f41959e2d282c71642dae236190f1",
+  "alt": "The table or diagram printed with 2023 HL Question 13, as the State Examinations Commission set it. It is labelled: Technology 1:, Description:, Technology 2:, Figure 8.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q13",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission"
+ },
+ "computer-science-2023-OL-paper-q14-fig0": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q14-fig0.png",
+  "md5": "9d86a803f121b3afdd226f55f05845dd",
+  "alt": "The table or diagram printed with 2023 OL Question 14, as the State Examinations Commission set it. It is labelled: Figure 5.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q14",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2024-HL-paper-q13-fig0": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q13-fig0.png",
+  "md5": "67cf0a6f2a38eacf642137aa394ed343",
+  "alt": "The table or diagram printed with 2024 HL Question 13, as the State Examinations Commission set it.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q13",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission"
+ },
+ "computer-science-2024-HL-paper-q15-figure": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q15-figure.png",
+  "md5": "9c3edb90be84e97e4f75aabe07ab3523",
+  "alt": "The table or diagram printed with 2024 HL Question 15, as the State Examinations Commission set it. It is labelled: Column A, Data Type, Column B, Field Name, Boolean, String, Real, member_id member_name, Amy, Chloe, member_id, book_id, date_borrowed, 20/05/2024.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q15",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission"
+ },
+ "computer-science-2024-OL-paper-q15-fig0": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q15-fig0.png",
+  "md5": "ec8e0b3d5b2ae421663ab65048bf1abb",
+  "alt": "The table or diagram printed with 2024 OL Question 15, as the State Examinations Commission set it. It is labelled: Column A, Name, Column B, Description, Column C, Data type, Rainfall, decimal number., Integer, Temperature, Province, Munster, Connacht, Ulster], Wind speed, Issue weather warning.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q15",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "computer-science-2025-OL-paper-q13-fig0": {
+  "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q13-fig0.png",
+  "md5": "4ad354f56f8a3afaf07b421737668d08",
+  "alt": "The table or diagram printed with 2025 OL Question 13, as the State Examinations Commission set it. It is labelled: Figure 5.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q13",
   "year": 2025,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission"
