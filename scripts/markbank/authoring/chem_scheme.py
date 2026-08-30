@@ -95,19 +95,27 @@ def _lines(page):
             text = re.sub(r'\b([A-Z]):(?=\S)', r'\1: ', text)
             if not text or BLANK_RUN.match(text):
                 continue
-            x0, y, x1 = ln['bbox'][0], ln['bbox'][1], ln['bbox'][2]
+            x0, y, x1, y1 = (ln['bbox'][0], ln['bbox'][1],
+                             ln['bbox'][2], ln['bbox'][3])
             if y > 770 or FOOTER.match(text):
                 continue
-            out.append((x0, y, text, x1))
+            out.append((x0, y, text, x1, y1))
     # A printed ROW is not a single y. The 2023 Ordinary scheme sets the
     # roman "(ii)" at y=143.7 and the answer beside it at y=143.6, so sorting
     # on y to a decimal put the answer BEFORE the marker that opens its part
     # -- and it was filed under the part above. Cluster into rows first, then
     # read each row left to right, which is how the table is printed.
+    #
+    # Five points, not three: a term carrying a SUPERSCRIPT starts higher than
+    # the marker beside it. The mass numbers in 2022 HL Q5(d)(ii)'s alpha
+    # decay open at y=116.9 against a "(ii)" at 120.6, and at a 3-point
+    # tolerance the whole equation clustered into the row above and was filed
+    # under (d)(i) -- which is "Define radioactivity". Line spacing here is
+    # 13 points, so 5 cannot merge two real rows.
     out.sort(key=lambda r: (r[1], r[0]))
     rows, cur = [], []
     for cell in out:
-        if cur and cell[1] - cur[0][1] > 3.0:
+        if cur and cell[1] - cur[0][1] > 5.0:
             rows.append(sorted(cur, key=lambda r: r[0]))
             cur = []
         cur.append(cell)
@@ -187,6 +195,8 @@ class ChemScheme:
         self._marks = collections.defaultdict(list)
         self._asides = collections.defaultdict(list)
         self._question = {}
+        # key -> (page index, first y, last y) of everything printed under it
+        self._bounds = {}
         self.mark_x = self._mark_column()
         self.letter_x, self.roman_x = self._marker_columns()
         self._read()
@@ -205,7 +215,7 @@ class ChemScheme:
         """
         edges = collections.Counter(
             round(x1) for n in range(len(self.doc))
-            for _, _, t, x1 in _lines(self.doc[n]) if MARK_CELL.match(t))
+            for _, _, t, x1, _y1 in _lines(self.doc[n]) if MARK_CELL.match(t))
         return float(edges.most_common(1)[0][0]) if edges else 520.0
 
     def _marker_columns(self):
@@ -217,7 +227,7 @@ class ChemScheme:
         """
         letters, romans = collections.Counter(), collections.Counter()
         for n in range(len(self.doc)):
-            for x, _, t, _x1 in _lines(self.doc[n]):
+            for x, _, t, _x1, _y1 in _lines(self.doc[n]):
                 if x >= self.mark_x - 60:
                     continue
                 if LETTER.match(t):
@@ -233,7 +243,7 @@ class ChemScheme:
         q = letter = roman = None
         key = None
         for n in range(len(self.doc)):
-            for x, y, text, x1 in _lines(self.doc[n]):
+            for x, y, text, x1, ybot in _lines(self.doc[n]):
                 # The right margin prices whatever part is open.
                 m = MARK_CELL.match(text)
                 if m:
@@ -282,6 +292,7 @@ class ChemScheme:
                 if opened:
                     key = (q, letter, roman)
                     self._answers.setdefault(key, [])
+                    self._bounds.setdefault(key, [n, y, y, ybot])
 
                 if key is None:
                     continue
@@ -303,6 +314,9 @@ class ChemScheme:
                     self._asides[key].append(note.strip('[]').strip())
                 text = ASIDE.sub(' ', text)
                 text = ' '.join(text.split())
+                if key in self._bounds and self._bounds[key][0] == n:
+                    self._bounds[key][2] = max(self._bounds[key][2], y)
+                    self._bounds[key][3] = max(self._bounds[key][3], ybot)
                 if text and not BLANK_RUN.match(text):
                     self._answers[key].append(text)
 
@@ -349,6 +363,59 @@ class ChemScheme:
         if marks[0] == sum(marks[1:]):
             return marks[0]
         return None
+
+    def bounds(self, q, letter=None, roman=None):
+        """(page index, y0, y1) of what the scheme prints under this part.
+
+        Used to CROP an answer the text layer cannot carry -- a drawn
+        structure, a dot-and-cross diagram, a completed nuclear equation. The
+        marker row opens the span and the last row filed under the same key on
+        the same page closes it. A part running over a page break is reported
+        for its first page only, which is the page its heading is on.
+        """
+        got = self._bounds.get((q, letter, roman))
+        if not got:
+            return None
+        return (got[0], got[1], got[2])
+
+    def crop_bounds(self, q, letter=None, roman=None, pad=6.0):
+        """(page, y0, y1) covering a part's whole CELL, artwork included.
+
+        bounds() closes on the last line the reader filed under the key, and
+        where the answer is a drawing that is the marker row itself: 2021 OL
+        Q8(a)(ii) is "Draw the structure of an ethene molecule" and its answer
+        is a picture, so the text span is two points tall.
+
+        The cell runs from this part's marker to the NEXT part's, which is what
+        the table's own ruling does. On the last part of a page it runs to the
+        foot of the printed area.
+        """
+        got = self._bounds.get((q, letter, roman))
+        if not got:
+            return None
+        page, y0, y1 = got[0], got[1], got[2]
+        starts = sorted(b[1] for k, b in self._bounds.items()
+                        if b[0] == page and b[1] > y0 + 1)
+        bottom = starts[0] - 2 if starts else 770.0
+        # The TOP is clamped below whatever the part above printed last, not
+        # just padded off this part's marker. Padding alone let the previous
+        # answer's last line and its mark cell hang into the crop -- 2025 HL
+        # Q10(a)(ii) opened with a clipped "polar covalent (3)", which is
+        # (a)(i)'s answer, and a crop that shows the answer to the question
+        # before it is worse than no crop.
+        # Measured on the previous line's BOTTOM, not its top. A line's y is
+        # where it starts; "polar covalent" starts at 83 and its glyphs run to
+        # 93, so a ceiling of 86 still let the tail of it into the crop.
+        above = [b[3] for k, b in self._bounds.items()
+                 if b[0] == page and b[2] < y0 - 1]
+        ceiling = (max(above) + 2.0) if above else 0.0
+        # The FOOT takes the lower of the part's own last line and the next
+        # part's marker -- whichever is further down -- and the last line is
+        # measured at its bottom for the same reason the ceiling is: cropping
+        # to its top sliced the 2024 HL Q8(c)(v) aside in half, leaving
+        # "[award 3 marks two repeating units consistent with..." cut through
+        # the middle of the letters.
+        return (page, max(ceiling, y0 - pad), max(got[3] + 3.0, bottom))
 
     def text(self, q, letter=None, roman=None):
         """One string, as the scheme prints it."""

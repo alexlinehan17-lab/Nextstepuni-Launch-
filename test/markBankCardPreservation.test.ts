@@ -61,8 +61,26 @@ const decks = [
    * (ii) and (iii) as lowercase continuations of the cue (i) ends with and
    * the census had been reading straight past them. Both are now carded in
    * their own right. */
-  ['chemistry:higher', CHEM_HIGHER, 486, '97f614df4cd565c22d6b5bdc4435484c384b8f25577af3db5f0ebfb52a423156'],
-  ['chemistry:ordinary', CHEM_ORDINARY, 377, 'c02d1275de28d70cf2ed5f56a70b8693ae92d4d78cf4e6cdad3057073fbd076d'],
+  /* 2026-08-30 (second pass): chemistry 486/377 -> 488/379, coverage
+   * 1105/1211 -> 1109/1211, open 106 -> 102. Four more, none removed.
+   *
+   * Two of them carry the marking scheme's own DRAWING, cropped by
+   * chem_figures.py and published as a solution figure the session screen
+   * holds back until the student commits -- the mechanism Economics used for
+   * its worked calculations. 2021 OL Q5(d)(ii) is the case that shows why it
+   * is worth doing: the scheme prints BOTH accepted dot-and-cross
+   * representations of O2 side by side, with the criteria beneath them, and
+   * the text layer under that picture reads "x x / O O x x x x".
+   *
+   * The other two came free from a fix to the reader's row clustering. A term
+   * carrying a SUPERSCRIPT starts higher than the marker beside it -- the mass
+   * numbers in 2022 HL Q5(d)(ii)'s alpha decay open 3.7 points above their
+   * "(ii)" -- so at a 3-point tolerance the whole equation clustered into the
+   * row above and was filed under (d)(i), which is "Define radioactivity".
+   * Widening to 5 points (line spacing there is 13) unbled that answer and
+   * made it cardable. */
+  ['chemistry:higher', CHEM_HIGHER, 488, '8a3a7358ad90edf9535bdc2e9fb5c1d80eb9f1bd52e827d3fa7b6a9704eb92f3'],
+  ['chemistry:ordinary', CHEM_ORDINARY, 379, 'f24f694ba9cafe16fa25136c30a5053d8a7730d6063ce18fafc18651c11912b6'],
   /* 2026-08-23: physics drops from 487/477 to 486/475. Three cards -- one
    * Higher (2021 q13a(v)) and two Ordinary (2022 q3(ii) and q3(viii)) -- quote
    * a stacked fraction the scheme's font renders as a diagonal slash whose
@@ -332,6 +350,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7435);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7439);
   });
 });
