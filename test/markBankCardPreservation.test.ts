@@ -35,8 +35,34 @@ import { CARDS as CONS_ORDINARY } from '../components/MarkBank/cards/constructio
 const decks = [
   ['biology:higher', BIO_HIGHER, 673, '45f278ef15f8d35a8a4393a0e8d01d7e5484e73a881844880dc090daeb9ce836'],
   ['biology:ordinary', BIO_ORDINARY, 686, '5792567a2b95584be782d44956c9fe7961eeec2e061683c83f32096fdf4de55e'],
-  ['chemistry:higher', CHEM_HIGHER, 482, 'bea03a9e78691b0024ae64eb02526840fde6c4e51a586b1e4bc9387dd24112b5'],
-  ['chemistry:ordinary', CHEM_ORDINARY, 364, '7c52a09853d6d24715537428d4a09ada8bbe3ece0a43a841c25c4dd129481172'],
+  /* 2026-08-30: chemistry 482/364 -> 486/377. SEVENTEEN cards added, none
+   * removed, coverage 1088/1211 -> 1105/1211 and open asks 123 -> 106.
+   *
+   * They are lifted through chem_scheme.py, a reader written for this
+   * subject's own five-column table after the two generic parsers were shown
+   * to be unusable on it -- one flattens the columns into each other, the
+   * other keys the answers to a question number it takes from whichever block
+   * last looked like a heading. 1136 of the 1211 paper asks (93%) now have
+   * scheme text at their own key.
+   *
+   * Every topic was assigned by hand. chem_topics.py suggests one and scores
+   * 54% against the cards already carrying a topic, which is not good enough
+   * to file by.
+   *
+   * Two cards were written and then withdrawn, both caught by a check rather
+   * than by judgement: 2022 HL Q4(b) opens "The diagram shows the origin of
+   * one of the lines in the Balmer series" and no crop of that diagram
+   * exists, which card lint flagged as a ghost figure; and 2025 OL Q8(a)(iii)
+   * and (iv) had already been refused by chem_2025_ol.py for pointing at a
+   * reaction scheme whose only crops are truncated.
+   *
+   * One existing card CHANGED and is better for it: chem-2022-ol-q3-b-i was
+   * carrying part (ii)'s ask welded onto its own, because the paper prints
+   * (ii) and (iii) as lowercase continuations of the cue (i) ends with and
+   * the census had been reading straight past them. Both are now carded in
+   * their own right. */
+  ['chemistry:higher', CHEM_HIGHER, 486, '97f614df4cd565c22d6b5bdc4435484c384b8f25577af3db5f0ebfb52a423156'],
+  ['chemistry:ordinary', CHEM_ORDINARY, 377, 'c02d1275de28d70cf2ed5f56a70b8693ae92d4d78cf4e6cdad3057073fbd076d'],
   /* 2026-08-23: physics drops from 487/477 to 486/475. Three cards -- one
    * Higher (2021 q13a(v)) and two Ordinary (2022 q3(ii) and q3(viii)) -- quote
    * a stacked fraction the scheme's font renders as a diagonal slash whose
@@ -306,6 +332,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7418);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7435);
   });
 });
