@@ -348,7 +348,16 @@ class Scheme:
                     # The band's own letter outranks one handed down to it.
                     letter, own_letter, letter_y = a, True, y
                     letters = [a]
-                    if b:
+                    if b and b not in ROMANS:
+                        # Two LETTERS on one heading line -- 2025 HL scheme
+                        # page 8 sets "(c)(d)" over a single scale. Putting the
+                        # second in the ROMAN slot cited the unit as "Q8(c)(d)"
+                        # and the paper reader, asked for a part (d) under a
+                        # letter (c), found no question text at all.
+                        if b not in letters:
+                            letters.append(b)
+                        roman = None
+                    elif b:
                         # The roman counts toward the band's SPAN even when it
                         # arrives welded to its letter. 2024 HL scheme page 39
                         # prints the heading and the first line of working as

@@ -12693,7 +12693,7 @@
  "maths-2025-HL-paper-p025-i0": {
   "src": "/exam-figures/maths/markbank/maths-2025-HL-paper-p025-i0.png",
   "md5": "264b73d0de821668d2d14859b899c04c",
-  "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q8(c)(d), typeset as the State Examinations Commission set it. It reads: (c) (d) Time = 2/6 + 8/12 = 1 hour |S|² = 8² + 2² |S| = √68 Time = 2√17/6 = 1∙37 … hours = 82 minutes [nearest minute] [= 1 hr 22 mins ]",
+  "alt": "The marking scheme's printed worked solution for 2025 HL Paper 1 Q8(c), typeset as the State Examinations Commission set it. It reads: (c) (d) Time = 2/6 + 8/12 = 1 hour |S|² = 8² + 2² |S| = √68 Time = 2√17/6 = 1∙37 … hours = 82 minutes [nearest minute] [= 1 hr 22 mins ]",
   "solution": true,
   "lettersVisible": [],
   "labelMeanings": [],
@@ -35191,5 +35191,16 @@
   "year": 2021,
   "level": "ordinary",
   "attribution": "SEC Leaving Certificate Mathematics 2021 Ordinary Level — © State Examinations Commission"
+ },
+ "maths-2025-HL-ask-p1-q8-c": {
+  "src": "/exam-figures/maths/markbank/maths-2025-HL-ask-p1-q8-c.png",
+  "md5": "2ce252bcbb463cd148664d1374b28fc4",
+  "alt": "The question as printed on the paper — Find how long it would take Jacob in total to kayak from S to A, and then run from A to F.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 HL Paper 1 Q8(c), (d)",
+  "year": 2025,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Mathematics 2025 Higher Level — © State Examinations Commission"
  }
 }

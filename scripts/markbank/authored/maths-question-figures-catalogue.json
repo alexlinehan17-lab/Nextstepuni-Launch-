@@ -6130,5 +6130,12 @@
   "truncated": false,
   "questionRef": "2023 HL Paper 2 Q10(b)(iii)",
   "description": "The question as printed on the paper \u2014 S\u00e9amus needs to pick a new PIN code. It must be a 4-digit code. It must use exactly 4 of the digits from 1 to 9, so no digit can be used more than once. Work out how many such codes are possible. Work out how many of the"
+ },
+ {
+  "file": "maths-2025-HL-ask-p1-q8-c.png",
+  "kind": "figure",
+  "truncated": false,
+  "questionRef": "2025 HL Paper 1 Q8(c), (d)",
+  "description": "The question as printed on the paper \u2014 Find how long it would take Jacob in total to kayak from S to A, and then run from A to F."
  }
 ]
