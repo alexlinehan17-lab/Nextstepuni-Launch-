@@ -391,9 +391,16 @@ const decks = [
    * The same span fix took a WRONG figure off three cards that kept their
    * ids -- cs-2023-hl-q6, cs-2024-hl-q10 and cs-2025-hl-q10 were each showing
    * the listing printed for the question above them. 2024 HL Q10 asks about
-   * ordering kiosks and was showing a leap-year function. */
-  ['computer-science:higher', CS_HIGHER, 191, '5d33cff9a8ceae56d4c3570b512cfbcefcd445d4927434075191124c451df359'],
-  ['computer-science:ordinary', CS_ORDINARY, 109, 'dd8c2821c4ea42f7f4a86fbff90ec96e0750e8bf24b0f30141a908d68b698603'],
+   * ordering kiosks and was showing a leap-year function.
+   *
+   * 2026-08-30 (same day): 191/109 -> 194/111, coverage 343/484 -> 348/484.
+   * The TABLE a question prints comes out of its question text the way the
+   * program already did, but only where what is left still ends like a
+   * sentence -- a table's labels are ordinary words that also appear in the
+   * question's own prose, and cutting at the first match had left "Complete
+   * the truth table for the AND logic gate, shown in". Nothing was removed. */
+  ['computer-science:higher', CS_HIGHER, 194, 'edf01d0cc57b93c686627f1e218c20679c5cda6ab217e61608cf9be43c58b45c'],
+  ['computer-science:ordinary', CS_ORDINARY, 111, '42c66d6f62f279b8b68ff0f744c91cd70219eda2a67764c7fae207ae8d38b69c'],
   ['construction-studies:higher', CONS_HIGHER, 255, 'b74a39fd589f1082d6378190aee778d528eff0968d7af0ee9144525f2e40d57b'],
   ['construction-studies:ordinary', CONS_ORDINARY, 250, 'f56985e32cc1f02a2e2f7a7eb300a44646b75cf3604a12b5a478bde2a520d2da'],
 ] as const;
@@ -410,6 +417,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7750);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7755);
   });
 });

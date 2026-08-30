@@ -134,8 +134,10 @@ def main():
                 made = CSF.crop(year, level.lower(), q, write=False)
             except Exception:                                # noqa: BLE001
                 made = []
-            listings[key] = [t for _, _, _, ls, kind in made
-                             if kind == 'code' for t in ls]
+            listings[key] = ([t for _, _, _, ls, kind in made
+                              if kind == 'code' for t in ls],
+                             [t for _, _, _, ls, kind in made
+                              if kind == 'fig' for t in ls])
         return listings[key]
 
     idx = R.leaf_index(census_subject('computer-science'))
@@ -226,7 +228,8 @@ def main():
                        concept=concept_for(ask), source='table',
                        use=use, marks=marks, tariff='fixed', card_id=cid,
                        figure=figure,
-                       listing=listing_for(year, level, q) if figure else (),
+                       listing=listing_for(year, level, q)[0] if figure else (),
+                       printed=listing_for(year, level, q)[1] if figure else (),
                        # A stem that reads as a heap of short tokens IS the
                        # printed table, lifted by the text layer. The crop
                        # carries it properly, so the card drops the text
@@ -289,7 +292,8 @@ def main():
                        source='table', use=[list(range(len(rows[:MAX_ROWS])))],
                        marks=[tariff], tariff='fixed',
                        card_id=f'cs-{year}-{level}-q{q}', figure=figure,
-                       listing=listing_for(year, level, q) if figure else (),
+                       listing=listing_for(year, level, q)[0] if figure else (),
+                       printed=listing_for(year, level, q)[1] if figure else (),
                        checked='The question states nothing of its own: the '
                                'paper prints the ask only under its parts, and '
                                'the card carries them joined in the paper\'s '

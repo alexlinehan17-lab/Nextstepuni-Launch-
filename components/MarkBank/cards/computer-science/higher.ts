@@ -422,13 +422,27 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2021 Higher Level — © State Examinations Commission.",
-    id: "cs-2021-hl-q15-a-v", topicId: "cs-1-1", conceptId: "describe-two-advantages-embedded-systems-over",
+    id: "cs-2021-hl-q15-a-v", topicId: "cs-3-4", conceptId: "describe-two-advantages-embedded-systems-over",
     section: "B", questionRef: "2021 HL Q15(a)(v)",
     stem: "Embedded systems are a combination of hardware and software designed to perform a specific function. They are called ‘embedded’ because they are often used as part of a larger system. Many embedded systems use sensors to receive analogue or digital inputs. The input data which is often supplied in real time is then processed resulting in some sort of output. While not every embedded system will have a user interface, some are designed to meet the principles of universal design. This question continues on the next page. This question continues on the next page.",
     questionText: "Describe two advantages of embedded systems over general purpose computer systems, such as desktop computers and laptops.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Cost – ES are generally cheaper.", marks: 2 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2021 Higher Level — © State Examinations Commission.",
+    id: "cs-2021-hl-q15-b-i", topicId: "cs-3-4", conceptId: "describe-two-examples-embedded-systems-mobile",
+    section: "B", questionRef: "2021 HL Q15(b)(i)",
+    stem: "This question continues on the next page. This question continues on the next page.",
+    questionText: "Describe two examples of embedded systems on mobile devices.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ES that runs on a smartphone/tablet:", marks: 2 },
     ],
   } as SecCard,
   {
@@ -1390,6 +1404,28 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2023 Higher Level — © State Examinations Commission.",
+    id: "cs-2023-hl-q1", topicId: "cs-2-4", conceptId: "enter-appropriate-data-type-column-b",
+    section: "A", questionRef: "2023 HL Q1",
+    stem: "Enter the appropriate data type in Column B to match the values in Column A.",
+    questionText: "Enter the appropriate data type in Column B to match the values in Column A.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Value Data Type", marks: 6 },
+    ],
+    figure: {
+          "candId": "computer-science-2023-HL-paper-q1-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q1-fig0.png",
+          "srcHash": "90d3cbb9c856a5b6563d20f027949834",
+          "alt": "The table or diagram printed with 2023 HL Question 1, as the State Examinations Commission set it. It is labelled: Column A, Value, Column B, Data Type, Ciara, 083-1234567, 1.5, 1.7, 1.2, 0.9, 1.3, False, −99.99.",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2023 Higher Level — © State Examinations Commission.",
     id: "cs-2023-hl-q5", topicId: "cs-2-3", conceptId: "transmission-control-protocol-internet-protocol-tcp",
     section: "A", questionRef: "2023 HL Q5",
     stem: "Transmission Control Protocol / Internet Protocol (TCP/IP) refers to a suite of protocols used to send and receive messages over the internet. The TCP/IP protocol suite contains a number of different layers. Name one of these layers and describe what happens within this layer.",
@@ -1582,7 +1618,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2023 Higher Level — © State Examinations Commission.",
     id: "cs-2023-hl-q15-a-i", topicId: "cs-2-3", conceptId: "search-algorithm-would-be-best-suited",
     section: "B", questionRef: "2023 HL Q15(a)(i)",
-    stem: "Amir Dean Eoin Helen Natalia Steve Terry Search algorithms work by comparing the list elements with a particular search value, known as a key. Best Case Worst Case Linear Search O(1) Binary Search This question continues on the next page.",
+    stem: "Amir Dean Eoin Helen Natalia Steve Terry Search algorithms work by comparing the list elements with a particular search value, known as a key. This question continues on the next page.",
     questionText: "What search algorithm would be best suited to search the list of names shown above? Justify your answer.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -1605,7 +1641,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2023 Higher Level — © State Examinations Commission.",
     id: "cs-2023-hl-q15-a-ii", topicId: "cs-2-2", conceptId: "list-order-names-would-be-compared",
     section: "B", questionRef: "2023 HL Q15(a)(ii)",
-    stem: "Amir Dean Eoin Helen Natalia Steve Terry Search algorithms work by comparing the list elements with a particular search value, known as a key. Best Case Worst Case Linear Search O(1) Binary Search This question continues on the next page.",
+    stem: "Amir Dean Eoin Helen Natalia Steve Terry Search algorithms work by comparing the list elements with a particular search value, known as a key. This question continues on the next page.",
     questionText: "List, in order, the names that would be compared until Natalia is found using the linear search algorithm.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -1628,7 +1664,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2023 Higher Level — © State Examinations Commission.",
     id: "cs-2023-hl-q15-a-iii", topicId: "cs-2-3", conceptId: "list-order-names-would-be-compared",
     section: "B", questionRef: "2023 HL Q15(a)(iii)",
-    stem: "Amir Dean Eoin Helen Natalia Steve Terry Search algorithms work by comparing the list elements with a particular search value, known as a key. Best Case Worst Case Linear Search O(1) Binary Search This question continues on the next page.",
+    stem: "Amir Dean Eoin Helen Natalia Steve Terry Search algorithms work by comparing the list elements with a particular search value, known as a key. This question continues on the next page.",
     questionText: "List, in order, the names that would be compared until Natalia is found using the binary search algorithm.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -1651,7 +1687,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2023 Higher Level — © State Examinations Commission.",
     id: "cs-2023-hl-q15-a-iv", topicId: "cs-2-3", conceptId: "complete-table-below-show-best-worst",
     section: "B", questionRef: "2023 HL Q15(a)(iv)",
-    stem: "Amir Dean Eoin Helen Natalia Steve Terry Search algorithms work by comparing the list elements with a particular search value, known as a key. Best Case Worst Case Linear Search O(1) Binary Search This question continues on the next page.",
+    stem: "Amir Dean Eoin Helen Natalia Steve Terry Search algorithms work by comparing the list elements with a particular search value, known as a key. This question continues on the next page.",
     questionText: "Complete the table below to show the best and worst case time complexities for the two search algorithms. You can assume that the size of the input is N.",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -1673,7 +1709,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2023 Higher Level — © State Examinations Commission.",
     id: "cs-2023-hl-q15-a-v", topicId: "cs-2-2", conceptId: "meant-o-1-time-complexity",
     section: "B", questionRef: "2023 HL Q15(a)(v)",
-    stem: "Amir Dean Eoin Helen Natalia Steve Terry Search algorithms work by comparing the list elements with a particular search value, known as a key. Best Case Worst Case Linear Search O(1) Binary Search This question continues on the next page.",
+    stem: "Amir Dean Eoin Helen Natalia Steve Terry Search algorithms work by comparing the list elements with a particular search value, known as a key. This question continues on the next page.",
     questionText: "What is meant by O(1) time complexity?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -2084,6 +2120,30 @@ export const CARDS: SecCard[] = [
           "srcHash": "028073eebfc394e94258df4c00184c93",
           "alt": "The table or diagram printed with 2023 HL Question 12, as the State Examinations Commission set it. It is labelled: Figure 7.",
           "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
+    id: "cs-2024-hl-q1", topicId: "cs-2-3", conceptId: "logic-gates-have-one-or-more",
+    section: "A", questionRef: "2024 HL Q1",
+    stem: "Logic gates have one or more inputs and a single output. For each logic gate in Column A in the table below enter the output, either 0 or 1, in Column B.",
+    questionText: "Logic gates have one or more inputs and a single output. For each logic gate in Column A in the table below enter the output, either 0 or 1, in Column B.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Column A Column B", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "Logic gate with input(s) Output", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "1", marks: 2 },
+    ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q1-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q1-fig0.png",
+          "srcHash": "43b85da358760be46d687db9d0919fd5",
+          "alt": "The table or diagram printed with 2024 HL Question 1, as the State Examinations Commission set it. It is labelled: Column A, Logic gate with input(s), Column B, Output (0 or 1).",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
   } as SecCard,
@@ -3305,7 +3365,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Higher Level — © State Examinations Commission.",
     id: "cs-2025-hl-q15-a-i", topicId: "cs-2-2", conceptId: "output-variable-model",
     section: "B", questionRef: "2025 HL Q15(a)(i)",
-    stem: "Test outcome 1 Male 18 Manual 8 FAIL 2 Female 22 Automatic 5 PASS 3 Male 20 Automatic 8 PASS 4 Male 19 Manual 3 FAIL 5 Female 30 Automatic 12 PASS 6 Female 25 Manual 2 FAIL 7 Female 23 Automatic 10 PASS 8 Male 17 Manual 6 FAIL 9 Male 19 Manual 5 FAIL 10 Female 21 Manual 15 PASS ID Gender Age Transmission Instructor experience (years) Figure 5 This question continues on the next page.",
+    stem: "Test outcome 1 Male 18 Manual 8 FAIL 2 Female 22 Automatic 5 PASS 3 Male 20 Automatic 8 PASS 4 Male 19 Manual 3 FAIL 5 Female 30 Automatic 12 PASS 6 Female 25 Manual 2 FAIL 7 Female 23 Automatic 10 PASS 8 Male 17 Manual 6 FAIL 9 Male 19 Manual 5 FAIL 10 Female 21 Manual 15 PASS ID This question continues on the next page.",
     questionText: "State the name of the output variable in the model.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
@@ -3327,7 +3387,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Higher Level — © State Examinations Commission.",
     id: "cs-2025-hl-q15-a-iii", topicId: "cs-2-2", conceptId: "describe-two-patterns-you-can-identify",
     section: "B", questionRef: "2025 HL Q15(a)(iii)",
-    stem: "Test outcome 1 Male 18 Manual 8 FAIL 2 Female 22 Automatic 5 PASS 3 Male 20 Automatic 8 PASS 4 Male 19 Manual 3 FAIL 5 Female 30 Automatic 12 PASS 6 Female 25 Manual 2 FAIL 7 Female 23 Automatic 10 PASS 8 Male 17 Manual 6 FAIL 9 Male 19 Manual 5 FAIL 10 Female 21 Manual 15 PASS ID Gender Age Transmission Instructor experience (years) Figure 5 This question continues on the next page.",
+    stem: "Test outcome 1 Male 18 Manual 8 FAIL 2 Female 22 Automatic 5 PASS 3 Male 20 Automatic 8 PASS 4 Male 19 Manual 3 FAIL 5 Female 30 Automatic 12 PASS 6 Female 25 Manual 2 FAIL 7 Female 23 Automatic 10 PASS 8 Male 17 Manual 6 FAIL 9 Male 19 Manual 5 FAIL 10 Female 21 Manual 15 PASS ID This question continues on the next page.",
     questionText: "Describe two patterns you can identify from the model.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -3349,7 +3409,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Higher Level — © State Examinations Commission.",
     id: "cs-2025-hl-q15-a-iv", topicId: "cs-2-2", conceptId: "identify-two-additional-variables-could-be",
     section: "B", questionRef: "2025 HL Q15(a)(iv)",
-    stem: "Test outcome 1 Male 18 Manual 8 FAIL 2 Female 22 Automatic 5 PASS 3 Male 20 Automatic 8 PASS 4 Male 19 Manual 3 FAIL 5 Female 30 Automatic 12 PASS 6 Female 25 Manual 2 FAIL 7 Female 23 Automatic 10 PASS 8 Male 17 Manual 6 FAIL 9 Male 19 Manual 5 FAIL 10 Female 21 Manual 15 PASS ID Gender Age Transmission Instructor experience (years) Figure 5 This question continues on the next page.",
+    stem: "Test outcome 1 Male 18 Manual 8 FAIL 2 Female 22 Automatic 5 PASS 3 Male 20 Automatic 8 PASS 4 Male 19 Manual 3 FAIL 5 Female 30 Automatic 12 PASS 6 Female 25 Manual 2 FAIL 7 Female 23 Automatic 10 PASS 8 Male 17 Manual 6 FAIL 9 Male 19 Manual 5 FAIL 10 Female 21 Manual 15 PASS ID This question continues on the next page.",
     questionText: "Identify two additional variables that could be used to enhance the driving test outcome model.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [

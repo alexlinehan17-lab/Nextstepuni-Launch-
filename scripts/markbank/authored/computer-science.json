@@ -590,7 +590,7 @@
  },
  {
   "id": "cs-2021-hl-q15-a-v",
-  "topicId": "cs-1-1",
+  "topicId": "cs-3-4",
   "conceptId": "describe-two-advantages-embedded-systems-over",
   "level": "higher",
   "year": 2021,
@@ -611,6 +611,30 @@
    }
   ],
   "stem": "Embedded systems are a combination of hardware and software designed to perform a specific function. They are called ‘embedded’ because they are often used as part of a larger system. Many embedded systems use sensors to receive analogue or digital inputs. The input data which is often supplied in real time is then processed resulting in some sort of output. While not every embedded system will have a user interface, some are designed to meet the principles of universal design. This question continues on the next page. This question continues on the next page."
+ },
+ {
+  "id": "cs-2021-hl-q15-b-i",
+  "topicId": "cs-3-4",
+  "conceptId": "describe-two-examples-embedded-systems-mobile",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2021 HL Q15(b)(i)",
+  "questionText": "Describe two examples of embedded systems on mobile devices.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ES that runs on a smartphone/tablet:",
+    "marks": 2
+   }
+  ],
+  "stem": "This question continues on the next page. This question continues on the next page."
  },
  {
   "id": "cs-2021-hl-q15-b-ii",
@@ -3105,6 +3129,31 @@
   "figureKey": "computer-science-2022-OL-paper-q10-fig0"
  },
  {
+  "id": "cs-2023-hl-q1",
+  "topicId": "cs-2-4",
+  "conceptId": "enter-appropriate-data-type-column-b",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2023 HL Q1",
+  "questionText": "Enter the appropriate data type in Column B to match the values in Column A.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Value Data Type",
+    "marks": 6
+   }
+  ],
+  "stem": "Enter the appropriate data type in Column B to match the values in Column A.",
+  "figureKey": "computer-science-2023-HL-paper-q1-fig0"
+ },
+ {
   "id": "cs-2023-hl-q5",
   "topicId": "cs-2-3",
   "conceptId": "transmission-control-protocol-internet-protocol-tcp",
@@ -3492,7 +3541,7 @@
     "marks": 1
    }
   ],
-  "stem": "Amir Dean Eoin Helen Natalia Steve Terry Search algorithms work by comparing the list elements with a particular search value, known as a key. Best Case Worst Case Linear Search O(1) Binary Search This question continues on the next page.",
+  "stem": "Amir Dean Eoin Helen Natalia Steve Terry Search algorithms work by comparing the list elements with a particular search value, known as a key. This question continues on the next page.",
   "figureKey": "computer-science-2023-HL-paper-q15-fig0"
  },
  {
@@ -3523,7 +3572,7 @@
     "marks": 1
    }
   ],
-  "stem": "Amir Dean Eoin Helen Natalia Steve Terry Search algorithms work by comparing the list elements with a particular search value, known as a key. Best Case Worst Case Linear Search O(1) Binary Search This question continues on the next page.",
+  "stem": "Amir Dean Eoin Helen Natalia Steve Terry Search algorithms work by comparing the list elements with a particular search value, known as a key. This question continues on the next page.",
   "figureKey": "computer-science-2023-HL-paper-q15-fig0"
  },
  {
@@ -3554,7 +3603,7 @@
     "marks": 1
    }
   ],
-  "stem": "Amir Dean Eoin Helen Natalia Steve Terry Search algorithms work by comparing the list elements with a particular search value, known as a key. Best Case Worst Case Linear Search O(1) Binary Search This question continues on the next page.",
+  "stem": "Amir Dean Eoin Helen Natalia Steve Terry Search algorithms work by comparing the list elements with a particular search value, known as a key. This question continues on the next page.",
   "figureKey": "computer-science-2023-HL-paper-q15-fig0"
  },
  {
@@ -3579,7 +3628,7 @@
     "marks": 3
    }
   ],
-  "stem": "Amir Dean Eoin Helen Natalia Steve Terry Search algorithms work by comparing the list elements with a particular search value, known as a key. Best Case Worst Case Linear Search O(1) Binary Search This question continues on the next page.",
+  "stem": "Amir Dean Eoin Helen Natalia Steve Terry Search algorithms work by comparing the list elements with a particular search value, known as a key. This question continues on the next page.",
   "figureKey": "computer-science-2023-HL-paper-q15-fig0"
  },
  {
@@ -3604,7 +3653,7 @@
     "marks": 3
    }
   ],
-  "stem": "Amir Dean Eoin Helen Natalia Steve Terry Search algorithms work by comparing the list elements with a particular search value, known as a key. Best Case Worst Case Linear Search O(1) Binary Search This question continues on the next page.",
+  "stem": "Amir Dean Eoin Helen Natalia Steve Terry Search algorithms work by comparing the list elements with a particular search value, known as a key. This question continues on the next page.",
   "figureKey": "computer-science-2023-HL-paper-q15-fig0"
  },
  {
@@ -4218,6 +4267,31 @@
   "figureKey": "computer-science-2023-HL-paper-q12-fig0"
  },
  {
+  "id": "cs-2023-ol-q1",
+  "topicId": "cs-2-2",
+  "conceptId": "given-following-variable-declarations-boolean-result",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2023 OL Q1",
+  "questionText": "Given the following variable declarations, state the Boolean result, either True or False, of each of the Python print statements in the table below.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Column A Column B",
+    "marks": 6
+   }
+  ],
+  "stem": "Given the following variable declarations, state the Boolean result, either True or False, of each of the Python print statements in the table below.",
+  "figureKey": "computer-science-2023-OL-paper-q1-figure"
+ },
+ {
   "id": "cs-2023-ol-q4",
   "topicId": "cs-2-3",
   "conceptId": "convert-decimal-number-14-binary-number",
@@ -4263,7 +4337,7 @@
     "marks": 4
    }
   ],
-  "stem": "Variable Array Function Operator Conditional Boolean Column A Definition Column B Term A data structure that can store a collection of elements of the same data type A character that represents a mathematical or logical action A command for handling a decision A memory location that can store a value This question continues on the next page.",
+  "stem": "Variable Array Function Operator Conditional Boolean A data structure that can store a collection of elements of the same data type A character that represents a mathematical or logical action A command for handling a decision A memory location that can store a value This question continues on the next page.",
   "figureKey": "computer-science-2023-OL-paper-q13-figure"
  },
  {
@@ -4288,7 +4362,7 @@
     "marks": 10
    }
   ],
-  "stem": "Variable Array Function Operator Conditional Boolean Column A Definition Column B Term A data structure that can store a collection of elements of the same data type A character that represents a mathematical or logical action A command for handling a decision A memory location that can store a value This question continues on the next page.",
+  "stem": "Variable Array Function Operator Conditional Boolean A data structure that can store a collection of elements of the same data type A character that represents a mathematical or logical action A command for handling a decision A memory location that can store a value This question continues on the next page.",
   "figureKey": "computer-science-2023-OL-paper-q13-figure"
  },
  {
@@ -4735,6 +4809,43 @@
    }
   ],
   "figureKey": "computer-science-2023-OL-paper-q13-figure"
+ },
+ {
+  "id": "cs-2024-hl-q1",
+  "topicId": "cs-2-3",
+  "conceptId": "logic-gates-have-one-or-more",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2024 HL Q1",
+  "questionText": "Logic gates have one or more inputs and a single output. For each logic gate in Column A in the table below enter the output, either 0 or 1, in Column B.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Column A Column B",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Logic gate with input(s) Output",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "1",
+    "marks": 2
+   }
+  ],
+  "stem": "Logic gates have one or more inputs and a single output. For each logic gate in Column A in the table below enter the output, either 0 or 1, in Column B.",
+  "figureKey": "computer-science-2024-HL-paper-q1-fig0"
  },
  {
   "id": "cs-2024-hl-q2",
@@ -5930,6 +6041,43 @@
   "stem": "HTTP stands for Hypertext Transfer Protocol. HTTP is an important protocol in terms of networks and internet. Explain the purpose of this protocol."
  },
  {
+  "id": "cs-2024-ol-q6",
+  "topicId": "cs-2-3",
+  "conceptId": "three-different-logic-gates-inputs-shown",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2024 OL Q6",
+  "questionText": "Three different logic gates with inputs are shown in Column A in the table below. For each logic gate in Column A enter the output, either 0 or 1, in Column B.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Column A Column B",
+    "marks": 2
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Logic Gate Output (0 or 1)",
+    "marks": 2
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "1",
+    "marks": 2
+   }
+  ],
+  "stem": "Three different logic gates with inputs are shown in Column A in the table below. For each logic gate in Column A enter the output, either 0 or 1, in Column B.",
+  "figureKey": "computer-science-2024-OL-paper-q6-fig0"
+ },
+ {
   "id": "cs-2024-ol-q9",
   "topicId": "cs-1-2",
   "conceptId": "drones-example-computing-technology-can-have",
@@ -5962,7 +6110,7 @@
   "subjectId": "computer-science",
   "section": "A",
   "questionRef": "2024 OL Q10",
-  "questionText": "The data set below shows the raw data collected from a school survey on how teachers travel to work. Name Distance (Km) Driver’s License (Y/N) Mode of Transport You want to use this data as part of a computer science project. List three issues with the data in the data set.",
+  "questionText": "The data set below shows the raw data collected from a school survey on how teachers travel to work. You want to use this data as part of a computer science project. List three issues with the data in the data set.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -5975,7 +6123,7 @@
     "marks": 6
    }
   ],
-  "stem": "The data set below shows the raw data collected from a school survey on how teachers travel to work. Name Distance (Km) Driver’s License (Y/N) Mode of Transport You want to use this data as part of a computer science project. List three issues with the data in the data set.",
+  "stem": "The data set below shows the raw data collected from a school survey on how teachers travel to work. You want to use this data as part of a computer science project. List three issues with the data in the data set.",
   "figureKey": "computer-science-2024-OL-paper-q10-figure"
  },
  {
@@ -6664,7 +6812,7 @@
   "subjectId": "computer-science",
   "section": "A",
   "questionRef": "2024 OL Q3",
-  "questionText": "(a) Choose the appropriate electronic component from the list below and place it in Column B to match the correct component image in Column A. Resistor Transistor Capacitor Column A Component Image Column B Component Name (b) Select any one of these electronic components and explain its purpose.",
+  "questionText": "(a) Choose the appropriate electronic component from the list below and place it in Column B to match the correct component image in Column A. Resistor Transistor Capacitor (b) Select any one of these electronic components and explain its purpose.",
   "tariffModel": {
    "kind": "fixed"
   },
@@ -7439,7 +7587,7 @@
     "marks": 1
    }
   ],
-  "stem": "Test outcome 1 Male 18 Manual 8 FAIL 2 Female 22 Automatic 5 PASS 3 Male 20 Automatic 8 PASS 4 Male 19 Manual 3 FAIL 5 Female 30 Automatic 12 PASS 6 Female 25 Manual 2 FAIL 7 Female 23 Automatic 10 PASS 8 Male 17 Manual 6 FAIL 9 Male 19 Manual 5 FAIL 10 Female 21 Manual 15 PASS ID Gender Age Transmission Instructor experience (years) Figure 5 This question continues on the next page.",
+  "stem": "Test outcome 1 Male 18 Manual 8 FAIL 2 Female 22 Automatic 5 PASS 3 Male 20 Automatic 8 PASS 4 Male 19 Manual 3 FAIL 5 Female 30 Automatic 12 PASS 6 Female 25 Manual 2 FAIL 7 Female 23 Automatic 10 PASS 8 Male 17 Manual 6 FAIL 9 Male 19 Manual 5 FAIL 10 Female 21 Manual 15 PASS ID This question continues on the next page.",
   "figureKey": "computer-science-2025-HL-paper-q15-fig0"
  },
  {
@@ -7464,7 +7612,7 @@
     "marks": 4
    }
   ],
-  "stem": "Test outcome 1 Male 18 Manual 8 FAIL 2 Female 22 Automatic 5 PASS 3 Male 20 Automatic 8 PASS 4 Male 19 Manual 3 FAIL 5 Female 30 Automatic 12 PASS 6 Female 25 Manual 2 FAIL 7 Female 23 Automatic 10 PASS 8 Male 17 Manual 6 FAIL 9 Male 19 Manual 5 FAIL 10 Female 21 Manual 15 PASS ID Gender Age Transmission Instructor experience (years) Figure 5 This question continues on the next page.",
+  "stem": "Test outcome 1 Male 18 Manual 8 FAIL 2 Female 22 Automatic 5 PASS 3 Male 20 Automatic 8 PASS 4 Male 19 Manual 3 FAIL 5 Female 30 Automatic 12 PASS 6 Female 25 Manual 2 FAIL 7 Female 23 Automatic 10 PASS 8 Male 17 Manual 6 FAIL 9 Male 19 Manual 5 FAIL 10 Female 21 Manual 15 PASS ID This question continues on the next page.",
   "figureKey": "computer-science-2025-HL-paper-q15-fig0"
  },
  {
@@ -7489,7 +7637,7 @@
     "marks": 4
    }
   ],
-  "stem": "Test outcome 1 Male 18 Manual 8 FAIL 2 Female 22 Automatic 5 PASS 3 Male 20 Automatic 8 PASS 4 Male 19 Manual 3 FAIL 5 Female 30 Automatic 12 PASS 6 Female 25 Manual 2 FAIL 7 Female 23 Automatic 10 PASS 8 Male 17 Manual 6 FAIL 9 Male 19 Manual 5 FAIL 10 Female 21 Manual 15 PASS ID Gender Age Transmission Instructor experience (years) Figure 5 This question continues on the next page.",
+  "stem": "Test outcome 1 Male 18 Manual 8 FAIL 2 Female 22 Automatic 5 PASS 3 Male 20 Automatic 8 PASS 4 Male 19 Manual 3 FAIL 5 Female 30 Automatic 12 PASS 6 Female 25 Manual 2 FAIL 7 Female 23 Automatic 10 PASS 8 Male 17 Manual 6 FAIL 9 Male 19 Manual 5 FAIL 10 Female 21 Manual 15 PASS ID This question continues on the next page.",
   "figureKey": "computer-science-2025-HL-paper-q15-fig0"
  },
  {

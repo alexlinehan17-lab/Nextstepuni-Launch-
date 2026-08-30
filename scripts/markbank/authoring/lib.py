@@ -192,17 +192,41 @@ class _CsSource:
 PAPER_TERMINAL = re.compile(r'[.?!]$')
 
 
-def _without_listing(question, lines):
-    """The question text with the crop's own program lines removed."""
+def _without_listing(question, lines, strict=False):
+    """The question text with the crop's own lines removed.
+
+    A PROGRAM is a contiguous run of monospaced lines and occurs once, so the
+    first place its opening line is found is where it starts. A TABLE's labels
+    are ordinary words that also appear in the question's own sentence --
+    "shown in Figure 7", "in Column A" -- so cutting at the first match left
+    "Complete the truth table for the AND logic gate, shown in". Strict mode
+    is for those: it tries every place the first label occurs, wants a run of
+    at least three labels, and accepts a cut only when what remains still ends
+    like a sentence. Where nothing satisfies that, it declines and the part
+    stays flagged for a person to look at.
+    """
     q = ' '.join(question.split())
     toks = [' '.join(t.split()) for t in lines]
     toks = [t for t in toks if len(t) >= 3]
     if not toks:
         return None
-    lo = q.find(toks[0])
-    if lo <= 0:
-        return None
+    starts = []
+    at = q.find(toks[0])
+    while at > 0:
+        starts.append(at)
+        if not strict:
+            break
+        at = q.find(toks[0], at + 1)
+    for lo in starts:
+        out = _cut(q, toks, lo, strict)
+        if out:
+            return out
+    return None
+
+
+def _cut(q, toks, lo, strict):
     cur = lo + len(toks[0])
+    run = 1
     for t in toks[1:]:
         i = q.find(t, cur)
         # 14 characters of slack: a blank line in the listing shows up as its
@@ -210,6 +234,9 @@ def _without_listing(question, lines):
         if i < 0 or i - cur > 14:
             continue
         cur = i + len(t)
+        run += 1
+    if strict and run < 3:
+        return None
     head = re.sub(r'[\s\d]+$', '', q[:lo].rstrip())
     tail = re.sub(r'^[\s\d]+', '', q[cur:].lstrip())
     out = ' '.join(f'{head} {tail}'.split())
@@ -218,6 +245,8 @@ def _without_listing(question, lines):
     # whole ask to "(a)". Taking the listing out may shorten a question; it
     # may not empty it.
     if len(out) < 25 or len(out.split()) < 5:
+        return None
+    if strict and not PAPER_TERMINAL.search(out):
         return None
     return out
 
@@ -289,7 +318,8 @@ class Author:
              labels=None, notes=None, stem=True, checked=None, suffix='',
              row_kind='point', notation=None, spread=False, context=None,
              omit=(), source='md', card_id=None, from_run=None, from_runs=None,
-             tick=None, first_sentence=False, ladder=None, listing=()):
+             tick=None, first_sentence=False, ladder=None, listing=(),
+             printed=()):
         ref = part_ref(self.year, self.level, q, letter, roman)
 
         question = self.paper.text(q, letter, roman)
@@ -331,6 +361,10 @@ class Author:
         listing_removed = False
         if listing and question:
             without = _without_listing(question, listing)
+            if without:
+                question, listing_removed = without, True
+        if printed and question:
+            without = _without_listing(question, printed, strict=True)
             if without:
                 question, listing_removed = without, True
 
@@ -553,6 +587,8 @@ class Author:
             # card lint reports as label junk and a student reads as noise.
             if listing and text:
                 text = _without_listing(text, listing) or text
+            if printed and text:
+                text = _without_listing(text, printed, strict=True) or text
             if text:
                 card['stem'] = text
         if notes:

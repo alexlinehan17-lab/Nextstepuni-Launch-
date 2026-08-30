@@ -62,7 +62,12 @@ RULES = [
     ('cs-2-4', 11, r'\b(data type|boolean|integer|\breal\b|\bchar\b|\bstring\b|'
                    r'\barray\b|\bascii\b|unicode|utf-8|character set|emoji|'
                    r'encode|decode|two.s complement|database|\bsql\b|'
-                   r'record|field|continuous and discrete|information system)\b'),
+                   # 2.18 is "collect, store and sort both continuous and
+                   # discrete data" -- the paper asks about the two words one
+                   # at a time ("either discrete data or continuous data"),
+                   # which the joined phrase could never match.
+                   r'record|field|discrete data|continuous data|'
+                   r'continuous and discrete|information system)\b'),
     ('cs-2-5', 11, r'\b(unit test|function test|system test|debug\w*|'
                    r'syntax error|semantic error|logic error|runtime error|'
                    r'test case|test plan|validat\w+|verif\w+|'
@@ -89,10 +94,20 @@ RULES = [
                   r'automat\w+|systematic (?:process|approach)|'
                   r'winning (?:position|move|strategy)|losing position|'
                   r'best move|strategy would you|deconstruct\w*|'
+                  # 1.8: "evaluate the costs and benefits of the use of
+                  # computing technology in automating processes".
+                  r'automating processes|costs and benefits|'
                   r'alternative solution|trade[- ]?off)\b'),
     # ── Strand 3: the four applied learning tasks ──────────────────────────
-    ('cs-3-4', 10, r'\b(embedded system|microprocessor|micro:?bit|arduino|'
-                   r'sensor|actuator|analogue input|digital (?:input|output)|'
+    # The specification's own heading is "Embedded systems", plural, and 3.11
+    # to 3.14 read "within an embedded system", "digital inputs and outputs",
+    # "measure and store data returned from an analogue input", "design
+    # automated applications using embedded systems". The singular-only
+    # pattern could not match its own heading: "Describe two advantages of
+    # embedded systems" filed under no topic at all.
+    ('cs-3-4', 10, r'\b(embedded systems?|microprocessor|micro:?bit|arduino|'
+                   r'sensors?|actuators?|analogue inputs?|'
+                   r'digital (?:inputs?|outputs?)|automated applications?|'
                    r'\bgpio\b)\b'),
     ('cs-3-1', 9, r'\b(website|web page|\bhtml\b|\bcss\b|javascript|'
                   r'relational database|web design|hyperlink|browser)\b'),
