@@ -470,12 +470,25 @@ const decks = [
   ['computer-science:ordinary', CS_ORDINARY, 127, '15c1f77f5c96c66290a8f9d59845a12aa4c851a8b5177410f08a651146332731'],
   ['construction-studies:higher', CONS_HIGHER, 255, 'b74a39fd589f1082d6378190aee778d528eff0968d7af0ee9144525f2e40d57b'],
   ['construction-studies:ordinary', CONS_ORDINARY, 250, 'f56985e32cc1f02a2e2f7a7eb300a44646b75cf3604a12b5a478bde2a520d2da'],
-  /* 2026-08-30: Engineering opens at 66/4, covering 171 of its 806 asks. The
-   * Ordinary count is low because that level prints most of its parts as
-   * option lists the census counts as leaves, and the four cards there cover
-   * far more asks than four. This is the floor, not the target. */
-  ['engineering:higher', ENG_HIGHER, 66, '2d0e66b47ee222a3e7e7409d42f15ca0bc6da731c9395299c62312c95dfe05d4'],
-  ['engineering:ordinary', ENG_ORDINARY, 4, '03940f2e610cbfb601507e523ce6455a9c008fc17301d8812f2fdf8eef859c73'],
+  /* 2026-08-30: Engineering opened at 66/4, covering 171 of its 806 asks.
+   *
+   * Same day, 66/4 -> 47/10 and 171 asks -> 101. THIRTY-TWO CARDS WERE
+   * REMOVED, and this is the record of it. Twenty-one of them pointed at a
+   * picture they did not carry — "Identify the hybrid vehicle configuration
+   * shown opposite", with nothing opposite — which is the very defect this
+   * bank was asked to sweep out of the other ten subjects. They survived
+   * because the authoring guard tested the LEAF's wording while lib builds a
+   * whole-question card from the key's ask with every child joined on, so the
+   * reference arrived from a child the guard never read. The finished card is
+   * now tested with card lint's own condition instead of an approximation of
+   * it.
+   *
+   * The count comes back when Engineering gets a figure pass: those questions
+   * print the picture, nothing has cropped it yet, and a card carrying the
+   * crop is no longer a ghost. Ordinary rose 4 -> 10 in the same pass from
+   * the provenance and sentence-splitting fixes. */
+  ['engineering:higher', ENG_HIGHER, 47, '0721a4229e121d302e158c88d78f10b6789c11809eeb1c7a7a438c05aeb25a07'],
+  ['engineering:ordinary', ENG_ORDINARY, 10, '8d832c30ce0e34b0b8fdc15b50eca71126e21a111d76e1cc131add0e0c187447'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -490,6 +503,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7857);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7844);
   });
 });

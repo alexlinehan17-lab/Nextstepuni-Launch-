@@ -380,8 +380,20 @@ class EngScheme:
             return []
         lines = b['points']
         if not any(BULLET.match(x) for x in lines):
-            joined = ' '.join(lines).strip()
-            return [joined] if joined else []
+            # One point per SENTENCE, not one per key. Joining every line a
+            # key holds made points of 1,588 characters -- a whole column of
+            # the Ordinary Level table welded together -- and no such string
+            # appears in the scheme, so the provenance gate refused all of
+            # them. A line that ends on a full stop ends its point.
+            out, cur = [], []
+            for line in lines:
+                cur.append(line)
+                if re.search(r'[.?!:]$', line.strip()):
+                    out.append(' '.join(cur).strip())
+                    cur = []
+            if cur:
+                out.append(' '.join(cur).strip())
+            return [x for x in out if x]
         out = []
         for line in lines:
             if BULLET.match(line):

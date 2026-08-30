@@ -217,6 +217,13 @@ def main():
                     or cardlint.NAMES_LETTERS.search(joined)):
                 note('points at printed matter the card cannot carry')
                 continue
+            # A card that NAMES a lettered part needs the letters decoded as
+            # well as shown, which is what card lint asks for and what this
+            # author cannot supply. Refusing here rather than letting the deck
+            # build drop it keeps the authored file and the deck the same.
+            if cardlint.NAMES_LETTERS.search(joined):
+                note('names a lettered part this author cannot decode')
+                continue
             shape = rows_for(S.notation(*key), S.tariff(*key), S.rule(*key),
                              points)
             if not shape:
@@ -253,6 +260,32 @@ def main():
                            use=[i for i, _ in keep[:MAX_ROWS]],
                            marks=marks, tariff='fixed', total=S.tariff(*key),
                            stem=not cardlint.label_junk(stem))
+                # Card lint reads the text the CARD carries, which lib builds
+                # from the key's own ask with its children joined on.
+                # Rebuilding that here to guess at it was wrong in both
+                # directions, so the finished card is tested with card lint's
+                # own condition and withdrawn if it points at a picture it
+                # cannot show. Twenty-one Engineering cards were shipping that
+                # way -- "Identify the hybrid vehicle configuration shown
+                # opposite", with nothing opposite.
+                made = A.cards[-1] if A.cards else None
+                if made is not None:
+                    stem_t = made.get('stem') or ''
+                    qtext = made.get('questionText') or ''
+                    final = f'{stem_t} {qtext}'
+                    hit = cardlint.FIG_REF.search(final)
+                    table_only = bool(hit) and re.search(
+                        r'(?:table|chart|graph)\b', hit.group(0), re.I) \
+                        and cardlint.INLINE_TABLE.search(final)
+                    ghost = (hit and not cardlint.SELF_WORK.search(final)
+                             and not cardlint.NO_DEPENDENCY.search(final)
+                             and not table_only)
+                    lettered = (cardlint.NAMES_LETTERS.search(qtext)
+                                and not cardlint.INVITES_DRAWING.search(qtext))
+                    if ghost or lettered:
+                        A.cards.pop()
+                        note('points at printed matter the card cannot carry')
+                        continue
                 seen.add(key)
             except Refused as exc:
                 note(str(exc).split(':', 1)[-1].strip()[:60])

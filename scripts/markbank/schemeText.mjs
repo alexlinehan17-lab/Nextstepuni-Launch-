@@ -75,6 +75,26 @@ const MARKS_CELL = /⟨[^⟩]*⟩/g;
 const ORDINAL_TARIFF = /\b\d+\s*(?:st|nd|rd|th)\s*[@x]\s*\d+\b/gi;
 
 /**
+ * The MARK CELL itself, flattened into the middle of a marking point.
+ *
+ * Engineering sets its Ordinary Level answers in a two-column table with the
+ * value beside the answer, and the converter emits the two as one line:
+ *
+ *     A permanent joint is a joint that cannot be disassembled without
+ *     7 (6) Marks destroying the parts or damaging the surfaces i.e., a pop
+ *     riveted joint.
+ *
+ * The card quotes the sentence the SEC printed, which is right, and the gate
+ * refused it because the gate's copy has a mark cell in the middle of it. The
+ * forms are the ones those schemes use: "7 (6) Marks", "4 (3) + 3 Marks",
+ * "Award 3 @ 3 Marks", "Total (15) Marks". Same reasoning as ORDINAL_TARIFF
+ * above and added as another scheme form, which can only ever let more
+ * through.
+ */
+const INLINE_MARKS =
+  /\b(?:Award\s+|Total\s+)?\(?\d{1,3}\)?(?:\s*\(\s*\d{1,3}\s*\))?(?:\s*[+@x]\s*\(?\d{1,3}\)?(?:\s*\(\s*\d{1,3}\s*\))?)*\s*Marks?\b/gi;
+
+/**
  * The extractor's own page markers.
  *
  * A marking point does not stop at a page break — the SEC prints "Less Risk /
@@ -249,6 +269,7 @@ export const comparableScheme = (raw) => {
     whole.replace(DEGREE_O, '$1c'),
     normalise(foldOriya(joined)),
     normalise(joined.replace(ORDINAL_TARIFF, ' ')),
+    normalise(joined.replace(INLINE_MARKS, ' ')),
     normalise(repairGlyphs(joined)),
   ].join('|');
 };
