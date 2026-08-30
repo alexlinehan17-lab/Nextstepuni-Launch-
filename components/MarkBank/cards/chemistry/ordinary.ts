@@ -5340,6 +5340,29 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC022GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2021 Ordinary Level — © State Examinations Commission.",
+    id: "chem-2021-ol-q5-d-ii", topicId: "chem-2-1", conceptId: "dot-and-cross-diagram-for-an-oxygen-molecule",
+    section: "A", questionRef: "2021 OL Q5(d)(ii)",
+    stem: "Refer to pages 79 and 81 of the Formulae and Tables booklet when answering this question.",
+    questionText: "Oxygen (O2) also has covalent bonding. Use a dot and cross diagram to show the arrangement of the electrons in an O2 molecule. (Electrons in the first main energy levels need not be shown.)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "two bond pairs shown // two lone pairs in valence shell of each oxygen shown", marks: 6, contextNote: "The scheme accepts either a shell diagram or a Lewis structure; both are printed side by side in its own answer." },
+    ],
+    figure: {
+          "candId": "chemistry-2021-OL-scheme-q5d-ii",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2021-OL-scheme-q5d-ii.png",
+          "srcHash": "3de230cea08e1db031b7d2cf91ec8a2a",
+          "alt": "The marking scheme's own answer to 2021 OL Q5(d)(ii), drawn as the State Examinations Commission printed it. The question asks: Oxygen (O2) also has covalent bonding. Use a dot and cross diagram to show the arrangement of the electrons in an O2 molecule. (Electrons in the first main energy levels need not b The scheme requires: two bond pairs shown // two lone pairs in valence shell of each oxygen shown Electrons in inner shell of oxygen need not be shown. Any electron can be represented by a dot or a cross.",
+          "attribution": "SEC Leaving Certificate Chemistry 2021 Ordinary Level — © State Examinations Commission",
+          "solution": true,
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2022, level: "ordinary",
     paperFileid: "LC022GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2022 Ordinary Level — © State Examinations Commission.",
@@ -5926,6 +5949,22 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "mobile phase, e.g. water", marks: 3 },
     { id: "r-2", kind: "point", verbatim: "stationary phase, e.g. filter paper", marks: 3 },
     { id: "r-3", kind: "point", verbatim: "(separated/unseparated) mixture in correct location", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC022GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2024 Ordinary Level — © State Examinations Commission.",
+    id: "chem-2024-ol-q10-a-iii", topicId: "chem-1-4", conceptId: "molecular-formula-from-a-relative-molecular-mass",
+    section: "A", questionRef: "2024 OL Q10(a)(iii)",
+    stem: "Following analysis, a sample of multistriatin was found to contain 70.59 % carbon, 10.59 % hydrogen and 18.82 % oxygen by mass.",
+    questionText: "Multistriatin has a relative molecular mass of 170. Calculate its molecular formula.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "5 × 12 + 9 × 1 + 1 × 16 = 85", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "170 ÷ 85 = 2", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "10:18:2 / C₁₀H₁₈O₂", marks: 2 },
     ],
   } as SecCard,
   {

@@ -84,6 +84,7 @@ WORK = {
          None, None),
     ],
     (2022, 'hl'): [
+        (5, 'd', 'i', 'chem-1-2', 'definition-of-radioactivity', None, None),
         (5, 'd', 'iii', 'chem-1-2', 'why-lead-cannot-be-changed-to-gold-chemically',
          None,
          'The paper sets this as one sentence ending "(12)", which is the mark '
@@ -131,6 +132,26 @@ WORK = {
          'The trailing "(25)" is the mark for the whole of Q11(c). Page 19 of '
          'the 2022 Ordinary Level paper prints the ask as the card carries it.'),
     ],
+    (2021, 'ol', 'FIG'): [
+        (5, 'd', 'ii', 'chem-2-1', 'dot-and-cross-diagram-for-an-oxygen-molecule',
+         'The scheme accepts either a shell diagram or a Lewis structure; both '
+         'are printed side by side in its own answer.',
+         'The paper prints the whole ask on one line including its own '
+         'parenthetical, "(Electrons in the first main energy levels need not '
+         'be shown.)". Page 12 of the 2021 Ordinary Level paper carries it as '
+         'the card does.',
+         'chemistry-2021-OL-scheme-q5d-ii'),
+    ],
+    (2024, 'hl', 'FIG'): [
+        (5, 'b', 'vi', 'chem-1-2', 'shape-of-a-p-orbital', None,
+         'The trailing "(29)" is the mark for the whole of Q5(b). Page 9 of '
+         'the 2024 Higher Level paper prints the ask as the card carries it.',
+         'chemistry-2024-HL-scheme-q5b-vi'),
+    ],
+    (2024, 'ol'): [
+        (10, 'a', 'iii', 'chem-1-4', 'molecular-formula-from-a-relative-molecular-mass',
+         None, None),
+    ],
     (2023, 'ol'): [
         (3, 'a', 'ii', 'chem-4-3', 'determining-the-concentration-of-dissolved-solids',
          None, None),
@@ -168,20 +189,36 @@ def scattered(points):
 def emit(only=None):
     """(cards, refusals) for one sitting, or for every sitting when None."""
     cards, refused = [], []
-    for (year, level), items in sorted(WORK.items()):
+    for sitting, items in sorted(WORK.items(), key=lambda kv: kv[0][:2]):
+        year, level = sitting[0], sitting[1]
         if only and (year, level) != only:
             continue
         A = Author('chemistry', year, level)
         table = A._source('table')
-        for q, letter, roman, topic, concept, note, checked in items:
+        for item in items:
+            q, letter, roman, topic, concept, note, checked = item[:7]
+            figure = item[7] if len(item) > 7 else None
             rows = table.points(q, letter, roman)
             tariff = table.tariff(q, letter, roman, rows=len(rows))
+            keep = list(range(len(rows)))
             try:
                 if not rows:
                     raise Refused('the scheme states nothing at this key')
                 if not tariff:
                     raise Refused('the scheme prints no tariff that reads one way')
-                if scattered(rows):
+                if figure:
+                    # On a card carrying the scheme's own DRAWING, the drawing
+                    # is the answer and the rows are the CRITERIA printed
+                    # beside it. The picture's own scattered labels are not
+                    # criteria: 2021 OL Q5(d)(ii) returns "x x", "/", "O", "O"
+                    # before it returns "two bond pairs shown". Keep only what
+                    # reads as a sentence.
+                    keep = [i for i, r in enumerate(rows) if len(r.split()) >= 3]
+                    rows = [rows[i] for i in keep]
+                    if not rows:
+                        raise Refused('the scheme states no criteria for the '
+                                      'drawing, so there is nothing to claim')
+                elif scattered(rows):
                     raise Refused('the answer is artwork the text layer scattered')
                 # One mark per marking point. The scheme prints the split
                 # itself where it can -- "A: bromine (3)", "B: hydrogen
@@ -196,9 +233,9 @@ def emit(only=None):
                     raise Refused(f'tariff {tariff} does not divide over '
                                   f'{len(rows)} marking point(s)')
                 A.card(q, letter, roman, topic=topic, concept=concept,
-                       source='table', use=list(range(len(rows))),
+                       source='table', use=keep,
                        marks=marks, tariff='fixed', context=note,
-                       checked=checked)
+                       checked=checked, figure=figure)
             except Refused as exc:
                 refused.append(f'{year} {level.upper()} Q{q}'
                                + (f'({letter})' if letter else '')
