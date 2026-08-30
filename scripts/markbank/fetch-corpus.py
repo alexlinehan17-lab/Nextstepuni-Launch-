@@ -57,6 +57,12 @@ SUBJECTS = {
     # mush; see mathtext.py, which shows the mangling is a reversible font
     # fault and that the Marking Notes column is clean English.
     'maths': 'mathematics',
+    # Added 30 August 2026. Stage 0 passed it on the Economics "Responses may
+    # make reference to" menu pattern, which econ_lib already reads. The corpus
+    # holds a complete run: papers AND schemes for every year 2018-2025.
+    'politics-society': 'politics-and-society',
+    # Added 30 August 2026, to MEASURE it before choosing it. See stage 0.
+    'computer-science': 'computer-science',
 }
 
 FILEID = re.compile(r'^LC(\d{3})([AG])LP(\d{3})([EI])V\.pdf$', re.I)
