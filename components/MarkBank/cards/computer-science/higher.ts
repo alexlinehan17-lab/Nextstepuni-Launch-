@@ -32,6 +32,32 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2021 Higher Level — © State Examinations Commission.",
+    id: "cs-2021-hl-q1", topicId: "cs-2-2", conceptId: "output-following-piece-python-code-1",
+    section: "A", questionRef: "2021 HL Q1",
+    stem: "What is the output of the following piece of Python code?",
+    questionText: "What is the output of the following piece of Python code?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Output", marks: 1 },
+    { id: "r-2", kind: "point", verbatim: "x is 3", marks: 1 },
+    { id: "r-3", kind: "point", verbatim: "7 3", marks: 1 },
+    { id: "r-4", kind: "point", verbatim: "6 8", marks: 1 },
+    { id: "r-5", kind: "point", verbatim: "y is y", marks: 1 },
+    ],
+    figure: {
+          "candId": "computer-science-2021-HL-paper-q1-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q1-code0.png",
+          "srcHash": "ab1e1c89c35955295a8059658aeb4b04",
+          "alt": "The program printed with 2021 HL Question 1, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 19 lines and begins: x = 3",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2021 Higher Level — © State Examinations Commission.",
     id: "cs-2021-hl-q13-b-i", topicId: "cs-2-2", conceptId: "meant-term-validation-check",
     section: "B", questionRef: "2021 HL Q13(b)(i)",
     stem: "1 def is_valid_eircode(test_eircode): 2 3 # This function checks whether 'test_eircode' is a valid Eircode or not 4 # It returns True if 'test_eircode' is a valid Eircode. False otherwise. 5 6 # Uses: 7 # s.isalpha() -> True if s contains alphabetic only; False otherwise 8 # s.idigit() -> True if s contains digits only; False otherwise 9 # s.isalnum() -> True if s contains alpha-numeric only; False otherwise 10 11 if not test_eircode[0].isalpha(): 12 return False 13 14 # if the second character isn’t a digit or the third character isn’t a 15 # digit the Eircode is invalid so return False 16 if ((not test_eircode[1].isdigit()) or (not test_eircode[2].isdigit())): 17 return False 18 19 if not test_eircode[-4:].isalnum(): 20 return False 21 22 return True This question continues on the next page. This question continues on the next page.",
@@ -40,6 +66,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "A validation check is a test carried out by a program to make sure data is in the", marks: 2 },
     ],
+    figure: {
+          "candId": "computer-science-2021-HL-paper-q13-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q13-fig0.png",
+          "srcHash": "016b0b18f3e7196fcb1c3491439dc79c",
+          "alt": "The table or diagram printed with 2021 HL Question 13, as the State Examinations Commission set it. It is labelled: Figure 4.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -54,6 +88,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "A test case would be any value passed into the function.", marks: 2 },
     ],
+    figure: {
+          "candId": "computer-science-2021-HL-paper-q13-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q13-fig0.png",
+          "srcHash": "016b0b18f3e7196fcb1c3491439dc79c",
+          "alt": "The table or diagram printed with 2021 HL Question 13, as the State Examinations Commission set it. It is labelled: Figure 4.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -68,6 +110,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Unit Testing", marks: 4 },
     ],
+    figure: {
+          "candId": "computer-science-2021-HL-paper-q13-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q13-fig0.png",
+          "srcHash": "016b0b18f3e7196fcb1c3491439dc79c",
+          "alt": "The table or diagram printed with 2021 HL Question 13, as the State Examinations Commission set it. It is labelled: Figure 4.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -82,6 +132,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "The function only looks at the first three characters and the last four characters – it does not check for length or look for any characters in between .", marks: 2 },
     ],
+    figure: {
+          "candId": "computer-science-2021-HL-paper-q13-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q13-fig0.png",
+          "srcHash": "016b0b18f3e7196fcb1c3491439dc79c",
+          "alt": "The table or diagram printed with 2021 HL Question 13, as the State Examinations Commission set it. It is labelled: Figure 4.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -96,6 +154,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Regression testing is important because it ensures that a change to the code does", marks: 5 },
     ],
+    figure: {
+          "candId": "computer-science-2021-HL-paper-q13-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q13-fig0.png",
+          "srcHash": "016b0b18f3e7196fcb1c3491439dc79c",
+          "alt": "The table or diagram printed with 2021 HL Question 13, as the State Examinations Commission set it. It is labelled: Figure 4.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -110,6 +176,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "P Q P and Q not (P and Q)", marks: 3 },
     ],
+    figure: {
+          "candId": "computer-science-2021-HL-paper-q13-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q13-fig0.png",
+          "srcHash": "016b0b18f3e7196fcb1c3491439dc79c",
+          "alt": "The table or diagram printed with 2021 HL Question 13, as the State Examinations Commission set it. It is labelled: Figure 4.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -124,6 +198,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Slicing could be used to extract the 2nd and 3rd characters and test them together (as a", marks: 2 },
     ],
+    figure: {
+          "candId": "computer-science-2021-HL-paper-q13-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q13-fig0.png",
+          "srcHash": "016b0b18f3e7196fcb1c3491439dc79c",
+          "alt": "The table or diagram printed with 2021 HL Question 13, as the State Examinations Commission set it. It is labelled: Figure 4.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -398,17 +480,17 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2021 Higher Level — © State Examinations Commission.",
     id: "cs-2021-hl-q16-a-i", topicId: "cs-2-2", conceptId: "currently-value-variable-word2-hard-coded",
     section: "B", questionRef: "2021 HL Q16(a)(i)",
-    stem: "Before making any changes, you should save your working copy of the file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The Python program shown below tests whether the strings stored in the variables word1 and word2 are anagrams of each other and displays YES if they are. Two words are anagrams of each other if they both use exactly the same letters. For example, the words LISTEN and SILENT are anagrams of one another. ELVIS and LIVES are also anagrams. The function definition is_anagram(w1, w2) determines whether or not two words are anagrams of one another and will not be used until part (v). 1 # Question 16(a) 2 # Examination Number: 3 4 # function definition used in part Enter the first word: LISTEN YES Make the following changes to the program: When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT YES When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT LISTEN is an anagram of SILENT When the program is run the output may look as follows: Enter the first word: LIST Enter the second word: ARRAY LIST is NOT an anagram of ARRAY When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Extend the program so that it prompts the user to ‘Enter a phrase:’. The program should display two additional messages to say whether or not word1 is an anagram of the phrase and, whether or not word2 is an anagram of the phrase. Some example outputs are shown below. You could use this data to test your program. Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Enter a phrase: Silence of the lambs Listen is NOT an anagram of Silence of the lambs Silent is NOT an anagram of Silence of the lambs Enter the first word: conversation Enter the second word: conservation conversation is an anagram of conservation conversation is an anagram of conservation Enter a phrase: voices rant on conversation is an anagram of voices rant on conservation is an anagram of voices rant on Enter the first word: Astronomer Enter the second word: Moon Astronomer is NOT an anagram of Moon Astronomer is NOT an anagram of Moon Enter a phrase: moon starer Astronomer is an anagram of moonstarer Moon is NOT an anagram of moon starer Save your file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third‐party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Saturday 22 May Morning 11:30 – 12:30",
+    stem: "Before making any changes, you should save your working copy of the file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. Two words are anagrams of each other if they both use exactly the same letters. For example, the words LISTEN and SILENT are anagrams of one another. ELVIS and LIVES are also anagrams. The function definition is_anagram(w1, w2) determines whether or not two words are anagrams of one another and will not be used until part (v). 1 # Question 16(a) 2 # Examination Number: 3 4 # function definition used in part Enter the first word: LISTEN YES Make the following changes to the program: When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT YES When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT LISTEN is an anagram of SILENT When the program is run the output may look as follows: Enter the first word: LIST Enter the second word: ARRAY LIST is NOT an anagram of ARRAY When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Extend the program so that it prompts the user to ‘Enter a phrase:’. The program should display two additional messages to say whether or not word1 is an anagram of the phrase and, whether or not word2 is an anagram of the phrase. Some example outputs are shown below. You could use this data to test your program. Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Enter a phrase: Silence of the lambs Listen is NOT an anagram of Silence of the lambs Silent is NOT an anagram of Silence of the lambs Enter the first word: conversation Enter the second word: conservation conversation is an anagram of conservation conversation is an anagram of conservation Enter a phrase: voices rant on conversation is an anagram of voices rant on conservation is an anagram of voices rant on Enter the first word: Astronomer Enter the second word: Moon Astronomer is NOT an anagram of Moon Astronomer is NOT an anagram of Moon Enter a phrase: moon starer Astronomer is an anagram of moonstarer Moon is NOT an anagram of moon starer Save your file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third‐party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Saturday 22 May Morning 11:30 – 12:30",
     questionText: "Currently the value of the variable word2 is hard‐coded to SILENT. Modify the program so that it prompts the user to ‘Enter the second word:’, and then assign whatever value the user enters to the variable word2.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "error.", marks: 5 },
     ],
     figure: {
-          "candId": "computer-science-2021-HL-paper-q16-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q16-code0.png",
-          "srcHash": "51fc7d55a53f707e3897c7fddf99e493",
-          "alt": "The program printed with 2021 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The Python program shown below tests whether the strings stored in the variables word1",
+          "candId": "computer-science-2021-HL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q16-figure.png",
+          "srcHash": "b2d153d6f36fdc1ad60ace8a4e76febd",
+          "alt": "The program printed with 2021 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 29 lines and begins: The Python program shown below tests whether the strings stored in the variables word1",
           "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -420,7 +502,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2021 Higher Level — © State Examinations Commission.",
     id: "cs-2021-hl-q16-a-ii", topicId: "cs-2-2", conceptId: "if-both-words-entered-anagrams-program",
     section: "B", questionRef: "2021 HL Q16(a)(ii)",
-    stem: "Before making any changes, you should save your working copy of the file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The Python program shown below tests whether the strings stored in the variables word1 and word2 are anagrams of each other and displays YES if they are. Two words are anagrams of each other if they both use exactly the same letters. For example, the words LISTEN and SILENT are anagrams of one another. ELVIS and LIVES are also anagrams. The function definition is_anagram(w1, w2) determines whether or not two words are anagrams of one another and will not be used until part (v). 1 # Question 16(a) 2 # Examination Number: 3 4 # function definition used in part Enter the first word: LISTEN YES Make the following changes to the program: When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT YES When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT LISTEN is an anagram of SILENT When the program is run the output may look as follows: Enter the first word: LIST Enter the second word: ARRAY LIST is NOT an anagram of ARRAY When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Extend the program so that it prompts the user to ‘Enter a phrase:’. The program should display two additional messages to say whether or not word1 is an anagram of the phrase and, whether or not word2 is an anagram of the phrase. Some example outputs are shown below. You could use this data to test your program. Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Enter a phrase: Silence of the lambs Listen is NOT an anagram of Silence of the lambs Silent is NOT an anagram of Silence of the lambs Enter the first word: conversation Enter the second word: conservation conversation is an anagram of conservation conversation is an anagram of conservation Enter a phrase: voices rant on conversation is an anagram of voices rant on conservation is an anagram of voices rant on Enter the first word: Astronomer Enter the second word: Moon Astronomer is NOT an anagram of Moon Astronomer is NOT an anagram of Moon Enter a phrase: moon starer Astronomer is an anagram of moonstarer Moon is NOT an anagram of moon starer Save your file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third‐party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Saturday 22 May Morning 11:30 – 12:30",
+    stem: "Before making any changes, you should save your working copy of the file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. Two words are anagrams of each other if they both use exactly the same letters. For example, the words LISTEN and SILENT are anagrams of one another. ELVIS and LIVES are also anagrams. The function definition is_anagram(w1, w2) determines whether or not two words are anagrams of one another and will not be used until part (v). 1 # Question 16(a) 2 # Examination Number: 3 4 # function definition used in part Enter the first word: LISTEN YES Make the following changes to the program: When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT YES When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT LISTEN is an anagram of SILENT When the program is run the output may look as follows: Enter the first word: LIST Enter the second word: ARRAY LIST is NOT an anagram of ARRAY When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Extend the program so that it prompts the user to ‘Enter a phrase:’. The program should display two additional messages to say whether or not word1 is an anagram of the phrase and, whether or not word2 is an anagram of the phrase. Some example outputs are shown below. You could use this data to test your program. Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Enter a phrase: Silence of the lambs Listen is NOT an anagram of Silence of the lambs Silent is NOT an anagram of Silence of the lambs Enter the first word: conversation Enter the second word: conservation conversation is an anagram of conservation conversation is an anagram of conservation Enter a phrase: voices rant on conversation is an anagram of voices rant on conservation is an anagram of voices rant on Enter the first word: Astronomer Enter the second word: Moon Astronomer is NOT an anagram of Moon Astronomer is NOT an anagram of Moon Enter a phrase: moon starer Astronomer is an anagram of moonstarer Moon is NOT an anagram of moon starer Save your file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third‐party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Saturday 22 May Morning 11:30 – 12:30",
     questionText: "If both words entered are anagrams the program should display the first word followed by the phrase ‘is an anagram of' and then the second word.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -431,10 +513,10 @@ export const CARDS: SecCard[] = [
     { id: "r-5", kind: "point", verbatim: "Any other reasonable attempt.", marks: 1 },
     ],
     figure: {
-          "candId": "computer-science-2021-HL-paper-q16-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q16-code0.png",
-          "srcHash": "51fc7d55a53f707e3897c7fddf99e493",
-          "alt": "The program printed with 2021 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The Python program shown below tests whether the strings stored in the variables word1",
+          "candId": "computer-science-2021-HL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q16-figure.png",
+          "srcHash": "b2d153d6f36fdc1ad60ace8a4e76febd",
+          "alt": "The program printed with 2021 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 29 lines and begins: The Python program shown below tests whether the strings stored in the variables word1",
           "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -446,7 +528,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2021 Higher Level — © State Examinations Commission.",
     id: "cs-2021-hl-q16-a-iii", topicId: "cs-2-2", conceptId: "extend-program-so-if-words-entered",
     section: "B", questionRef: "2021 HL Q16(a)(iii)",
-    stem: "Before making any changes, you should save your working copy of the file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The Python program shown below tests whether the strings stored in the variables word1 and word2 are anagrams of each other and displays YES if they are. Two words are anagrams of each other if they both use exactly the same letters. For example, the words LISTEN and SILENT are anagrams of one another. ELVIS and LIVES are also anagrams. The function definition is_anagram(w1, w2) determines whether or not two words are anagrams of one another and will not be used until part (v). 1 # Question 16(a) 2 # Examination Number: 3 4 # function definition used in part Enter the first word: LISTEN YES Make the following changes to the program: When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT YES When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT LISTEN is an anagram of SILENT When the program is run the output may look as follows: Enter the first word: LIST Enter the second word: ARRAY LIST is NOT an anagram of ARRAY When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Extend the program so that it prompts the user to ‘Enter a phrase:’. The program should display two additional messages to say whether or not word1 is an anagram of the phrase and, whether or not word2 is an anagram of the phrase. Some example outputs are shown below. You could use this data to test your program. Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Enter a phrase: Silence of the lambs Listen is NOT an anagram of Silence of the lambs Silent is NOT an anagram of Silence of the lambs Enter the first word: conversation Enter the second word: conservation conversation is an anagram of conservation conversation is an anagram of conservation Enter a phrase: voices rant on conversation is an anagram of voices rant on conservation is an anagram of voices rant on Enter the first word: Astronomer Enter the second word: Moon Astronomer is NOT an anagram of Moon Astronomer is NOT an anagram of Moon Enter a phrase: moon starer Astronomer is an anagram of moonstarer Moon is NOT an anagram of moon starer Save your file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third‐party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Saturday 22 May Morning 11:30 – 12:30",
+    stem: "Before making any changes, you should save your working copy of the file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. Two words are anagrams of each other if they both use exactly the same letters. For example, the words LISTEN and SILENT are anagrams of one another. ELVIS and LIVES are also anagrams. The function definition is_anagram(w1, w2) determines whether or not two words are anagrams of one another and will not be used until part (v). 1 # Question 16(a) 2 # Examination Number: 3 4 # function definition used in part Enter the first word: LISTEN YES Make the following changes to the program: When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT YES When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT LISTEN is an anagram of SILENT When the program is run the output may look as follows: Enter the first word: LIST Enter the second word: ARRAY LIST is NOT an anagram of ARRAY When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Extend the program so that it prompts the user to ‘Enter a phrase:’. The program should display two additional messages to say whether or not word1 is an anagram of the phrase and, whether or not word2 is an anagram of the phrase. Some example outputs are shown below. You could use this data to test your program. Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Enter a phrase: Silence of the lambs Listen is NOT an anagram of Silence of the lambs Silent is NOT an anagram of Silence of the lambs Enter the first word: conversation Enter the second word: conservation conversation is an anagram of conservation conversation is an anagram of conservation Enter a phrase: voices rant on conversation is an anagram of voices rant on conservation is an anagram of voices rant on Enter the first word: Astronomer Enter the second word: Moon Astronomer is NOT an anagram of Moon Astronomer is NOT an anagram of Moon Enter a phrase: moon starer Astronomer is an anagram of moonstarer Moon is NOT an anagram of moon starer Save your file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third‐party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Saturday 22 May Morning 11:30 – 12:30",
     questionText: "Extend the program so that if the words entered are not anagrams of each other the program displays the first word followed by the phrase ‘is NOT an anagram of' and then the second word.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -457,10 +539,10 @@ export const CARDS: SecCard[] = [
     { id: "r-5", kind: "point", verbatim: "Any other reasonable attempt.", marks: 1 },
     ],
     figure: {
-          "candId": "computer-science-2021-HL-paper-q16-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q16-code0.png",
-          "srcHash": "51fc7d55a53f707e3897c7fddf99e493",
-          "alt": "The program printed with 2021 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The Python program shown below tests whether the strings stored in the variables word1",
+          "candId": "computer-science-2021-HL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q16-figure.png",
+          "srcHash": "b2d153d6f36fdc1ad60ace8a4e76febd",
+          "alt": "The program printed with 2021 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 29 lines and begins: The Python program shown below tests whether the strings stored in the variables word1",
           "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -472,17 +554,17 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2021 Higher Level — © State Examinations Commission.",
     id: "cs-2021-hl-q16-a-iv", topicId: "cs-2-2", conceptId: "program-currently-treats-words-case-sensitive",
     section: "B", questionRef: "2021 HL Q16(a)(iv)",
-    stem: "Before making any changes, you should save your working copy of the file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The Python program shown below tests whether the strings stored in the variables word1 and word2 are anagrams of each other and displays YES if they are. Two words are anagrams of each other if they both use exactly the same letters. For example, the words LISTEN and SILENT are anagrams of one another. ELVIS and LIVES are also anagrams. The function definition is_anagram(w1, w2) determines whether or not two words are anagrams of one another and will not be used until part (v). 1 # Question 16(a) 2 # Examination Number: 3 4 # function definition used in part Enter the first word: LISTEN YES Make the following changes to the program: When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT YES When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT LISTEN is an anagram of SILENT When the program is run the output may look as follows: Enter the first word: LIST Enter the second word: ARRAY LIST is NOT an anagram of ARRAY When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Extend the program so that it prompts the user to ‘Enter a phrase:’. The program should display two additional messages to say whether or not word1 is an anagram of the phrase and, whether or not word2 is an anagram of the phrase. Some example outputs are shown below. You could use this data to test your program. Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Enter a phrase: Silence of the lambs Listen is NOT an anagram of Silence of the lambs Silent is NOT an anagram of Silence of the lambs Enter the first word: conversation Enter the second word: conservation conversation is an anagram of conservation conversation is an anagram of conservation Enter a phrase: voices rant on conversation is an anagram of voices rant on conservation is an anagram of voices rant on Enter the first word: Astronomer Enter the second word: Moon Astronomer is NOT an anagram of Moon Astronomer is NOT an anagram of Moon Enter a phrase: moon starer Astronomer is an anagram of moonstarer Moon is NOT an anagram of moon starer Save your file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third‐party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Saturday 22 May Morning 11:30 – 12:30",
+    stem: "Before making any changes, you should save your working copy of the file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. Two words are anagrams of each other if they both use exactly the same letters. For example, the words LISTEN and SILENT are anagrams of one another. ELVIS and LIVES are also anagrams. The function definition is_anagram(w1, w2) determines whether or not two words are anagrams of one another and will not be used until part (v). 1 # Question 16(a) 2 # Examination Number: 3 4 # function definition used in part Enter the first word: LISTEN YES Make the following changes to the program: When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT YES When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT LISTEN is an anagram of SILENT When the program is run the output may look as follows: Enter the first word: LIST Enter the second word: ARRAY LIST is NOT an anagram of ARRAY When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Extend the program so that it prompts the user to ‘Enter a phrase:’. The program should display two additional messages to say whether or not word1 is an anagram of the phrase and, whether or not word2 is an anagram of the phrase. Some example outputs are shown below. You could use this data to test your program. Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Enter a phrase: Silence of the lambs Listen is NOT an anagram of Silence of the lambs Silent is NOT an anagram of Silence of the lambs Enter the first word: conversation Enter the second word: conservation conversation is an anagram of conservation conversation is an anagram of conservation Enter a phrase: voices rant on conversation is an anagram of voices rant on conservation is an anagram of voices rant on Enter the first word: Astronomer Enter the second word: Moon Astronomer is NOT an anagram of Moon Astronomer is NOT an anagram of Moon Enter a phrase: moon starer Astronomer is an anagram of moonstarer Moon is NOT an anagram of moon starer Save your file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third‐party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Saturday 22 May Morning 11:30 – 12:30",
     questionText: "The program currently treats words as case‐sensitive. Modify the program so that the case of the words entered does not matter.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "or semantic error.", marks: 10 },
     ],
     figure: {
-          "candId": "computer-science-2021-HL-paper-q16-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q16-code0.png",
-          "srcHash": "51fc7d55a53f707e3897c7fddf99e493",
-          "alt": "The program printed with 2021 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The Python program shown below tests whether the strings stored in the variables word1",
+          "candId": "computer-science-2021-HL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q16-figure.png",
+          "srcHash": "b2d153d6f36fdc1ad60ace8a4e76febd",
+          "alt": "The program printed with 2021 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 29 lines and begins: The Python program shown below tests whether the strings stored in the variables word1",
           "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -494,17 +576,17 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2021 Higher Level — © State Examinations Commission.",
     id: "cs-2021-hl-q16-a-v", topicId: "cs-2-2", conceptId: "5-def-anagram-w1-w2-6",
     section: "B", questionRef: "2021 HL Q16(a)(v)",
-    stem: "Before making any changes, you should save your working copy of the file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The Python program shown below tests whether the strings stored in the variables word1 and word2 are anagrams of each other and displays YES if they are. Two words are anagrams of each other if they both use exactly the same letters. For example, the words LISTEN and SILENT are anagrams of one another. ELVIS and LIVES are also anagrams. The function definition is_anagram(w1, w2) determines whether or not two words are anagrams of one another and will not be used until part (v). 1 # Question 16(a) 2 # Examination Number: 3 4 # function definition used in part Enter the first word: LISTEN YES Make the following changes to the program: When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT YES When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT LISTEN is an anagram of SILENT When the program is run the output may look as follows: Enter the first word: LIST Enter the second word: ARRAY LIST is NOT an anagram of ARRAY When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Extend the program so that it prompts the user to ‘Enter a phrase:’. The program should display two additional messages to say whether or not word1 is an anagram of the phrase and, whether or not word2 is an anagram of the phrase. Some example outputs are shown below. You could use this data to test your program. Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Enter a phrase: Silence of the lambs Listen is NOT an anagram of Silence of the lambs Silent is NOT an anagram of Silence of the lambs Enter the first word: conversation Enter the second word: conservation conversation is an anagram of conservation conversation is an anagram of conservation Enter a phrase: voices rant on conversation is an anagram of voices rant on conservation is an anagram of voices rant on Enter the first word: Astronomer Enter the second word: Moon Astronomer is NOT an anagram of Moon Astronomer is NOT an anagram of Moon Enter a phrase: moon starer Astronomer is an anagram of moonstarer Moon is NOT an anagram of moon starer Save your file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third‐party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Saturday 22 May Morning 11:30 – 12:30",
+    stem: "Before making any changes, you should save your working copy of the file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. Two words are anagrams of each other if they both use exactly the same letters. For example, the words LISTEN and SILENT are anagrams of one another. ELVIS and LIVES are also anagrams. The function definition is_anagram(w1, w2) determines whether or not two words are anagrams of one another and will not be used until part (v). 1 # Question 16(a) 2 # Examination Number: 3 4 # function definition used in part Enter the first word: LISTEN YES Make the following changes to the program: When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT YES When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT LISTEN is an anagram of SILENT When the program is run the output may look as follows: Enter the first word: LIST Enter the second word: ARRAY LIST is NOT an anagram of ARRAY When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Extend the program so that it prompts the user to ‘Enter a phrase:’. The program should display two additional messages to say whether or not word1 is an anagram of the phrase and, whether or not word2 is an anagram of the phrase. Some example outputs are shown below. You could use this data to test your program. Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Enter a phrase: Silence of the lambs Listen is NOT an anagram of Silence of the lambs Silent is NOT an anagram of Silence of the lambs Enter the first word: conversation Enter the second word: conservation conversation is an anagram of conservation conversation is an anagram of conservation Enter a phrase: voices rant on conversation is an anagram of voices rant on conservation is an anagram of voices rant on Enter the first word: Astronomer Enter the second word: Moon Astronomer is NOT an anagram of Moon Astronomer is NOT an anagram of Moon Enter a phrase: moon starer Astronomer is an anagram of moonstarer Moon is NOT an anagram of moon starer Save your file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third‐party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Saturday 22 May Morning 11:30 – 12:30",
     questionText: "5 def is_anagram(w1, w2): 6 if sorted(w1) == sorted(w2): 7 return True 8 else: 9 return False 10 11 word1 = input(\"Enter the first word: \") 12 word2 = \"SILENT\" 13 14 # test whether the sorted strings are the same as each other 15 # if the sorted strings are the same then they must be anagrams 16 if (sorted(word1) == sorted(word2)): 17 print(\"YES\") When the program is run, the user is prompted to enter a word. If the user enters the word LISTEN (in uppercase) the output should look as follows because LISTEN and SILENT are anagrams of each other. Extend the program to use the function is_anagram to determine whether or not the two words entered are anagrams of each other. You should not delete any code you wrote in previous parts. The program will now check twice if the words are anagrams of each other.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "case is ignored).", marks: 10 },
     ],
     figure: {
-          "candId": "computer-science-2021-HL-paper-q16-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q16-code0.png",
-          "srcHash": "51fc7d55a53f707e3897c7fddf99e493",
-          "alt": "The program printed with 2021 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The Python program shown below tests whether the strings stored in the variables word1",
+          "candId": "computer-science-2021-HL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q16-figure.png",
+          "srcHash": "b2d153d6f36fdc1ad60ace8a4e76febd",
+          "alt": "The program printed with 2021 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 29 lines and begins: The Python program shown below tests whether the strings stored in the variables word1",
           "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -516,17 +598,17 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2021 Higher Level — © State Examinations Commission.",
     id: "cs-2021-hl-q16-a-vi", topicId: "cs-2-2", conceptId: "anagrams-words-can-also-be-phrases",
     section: "B", questionRef: "2021 HL Q16(a)(vi)",
-    stem: "Before making any changes, you should save your working copy of the file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The Python program shown below tests whether the strings stored in the variables word1 and word2 are anagrams of each other and displays YES if they are. Two words are anagrams of each other if they both use exactly the same letters. For example, the words LISTEN and SILENT are anagrams of one another. ELVIS and LIVES are also anagrams. The function definition is_anagram(w1, w2) determines whether or not two words are anagrams of one another and will not be used until part (v). 1 # Question 16(a) 2 # Examination Number: 3 4 # function definition used in part Enter the first word: LISTEN YES Make the following changes to the program: When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT YES When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT LISTEN is an anagram of SILENT When the program is run the output may look as follows: Enter the first word: LIST Enter the second word: ARRAY LIST is NOT an anagram of ARRAY When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Extend the program so that it prompts the user to ‘Enter a phrase:’. The program should display two additional messages to say whether or not word1 is an anagram of the phrase and, whether or not word2 is an anagram of the phrase. Some example outputs are shown below. You could use this data to test your program. Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Enter a phrase: Silence of the lambs Listen is NOT an anagram of Silence of the lambs Silent is NOT an anagram of Silence of the lambs Enter the first word: conversation Enter the second word: conservation conversation is an anagram of conservation conversation is an anagram of conservation Enter a phrase: voices rant on conversation is an anagram of voices rant on conservation is an anagram of voices rant on Enter the first word: Astronomer Enter the second word: Moon Astronomer is NOT an anagram of Moon Astronomer is NOT an anagram of Moon Enter a phrase: moon starer Astronomer is an anagram of moonstarer Moon is NOT an anagram of moon starer Save your file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third‐party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Saturday 22 May Morning 11:30 – 12:30",
+    stem: "Before making any changes, you should save your working copy of the file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. Two words are anagrams of each other if they both use exactly the same letters. For example, the words LISTEN and SILENT are anagrams of one another. ELVIS and LIVES are also anagrams. The function definition is_anagram(w1, w2) determines whether or not two words are anagrams of one another and will not be used until part (v). 1 # Question 16(a) 2 # Examination Number: 3 4 # function definition used in part Enter the first word: LISTEN YES Make the following changes to the program: When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT YES When the program is run the output may look as follows: Enter the first word: LISTEN Enter the second word: SILENT LISTEN is an anagram of SILENT When the program is run the output may look as follows: Enter the first word: LIST Enter the second word: ARRAY LIST is NOT an anagram of ARRAY When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent When the program is run the output may look as follows: Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Extend the program so that it prompts the user to ‘Enter a phrase:’. The program should display two additional messages to say whether or not word1 is an anagram of the phrase and, whether or not word2 is an anagram of the phrase. Some example outputs are shown below. You could use this data to test your program. Enter the first word: Listen Enter the second word: Silent Listen is an anagram of Silent Listen is an anagram of Silent Enter a phrase: Silence of the lambs Listen is NOT an anagram of Silence of the lambs Silent is NOT an anagram of Silence of the lambs Enter the first word: conversation Enter the second word: conservation conversation is an anagram of conservation conversation is an anagram of conservation Enter a phrase: voices rant on conversation is an anagram of voices rant on conservation is an anagram of voices rant on Enter the first word: Astronomer Enter the second word: Moon Astronomer is NOT an anagram of Moon Astronomer is NOT an anagram of Moon Enter a phrase: moon starer Astronomer is an anagram of moonstarer Moon is NOT an anagram of moon starer Save your file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third‐party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Saturday 22 May Morning 11:30 – 12:30",
     questionText: "Anagrams of words can also be phrases. For example, Moon starer is an anagram of Astronomer, and Voices rant on is an anagram of the two words, Conversation and Conservation. Note that the spaces in the phrases are ignored.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Phrase correctly read", marks: 15 },
     ],
     figure: {
-          "candId": "computer-science-2021-HL-paper-q16-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q16-code0.png",
-          "srcHash": "51fc7d55a53f707e3897c7fddf99e493",
-          "alt": "The program printed with 2021 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The Python program shown below tests whether the strings stored in the variables word1",
+          "candId": "computer-science-2021-HL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q16-figure.png",
+          "srcHash": "b2d153d6f36fdc1ad60ace8a4e76febd",
+          "alt": "The program printed with 2021 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 29 lines and begins: The Python program shown below tests whether the strings stored in the variables word1",
           "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -592,6 +674,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "n total count", marks: 5, accepts: ["0 0 0","7 7 1","3 10 2","8 18 3","First correct column"] },
     ],
+    figure: {
+          "candId": "computer-science-2021-HL-paper-q5-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q5-figure.png",
+          "srcHash": "a6ba4465e2a9c5fabc72f238cad14f3c",
+          "alt": "The table or diagram printed with 2021 HL Question 5, as the State Examinations Commission set it. It is labelled: Figure 1, total, count.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -634,23 +724,23 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
-    year: 2021, level: "higher",
+    year: 2022, level: "higher",
     paperFileid: "LC219ALP038EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2021 Higher Level — © State Examinations Commission.",
-    id: "cs-2021-hl-q12", topicId: "cs-2-4", conceptId: "why-each-following-fields-would-not",
-    section: "A", questionRef: "2021 HL Q12",
-    stem: "The following selection of data is taken from a table in a database used to store information about dogs.",
-    questionText: "(a) State why each of the following fields would not be good candidates for a primary key in the table shown above. (b) One owner can own many dogs. Explain how a foreign key could be introduced to improve the design of this database.",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2022 Higher Level — © State Examinations Commission.",
+    id: "cs-2022-hl-q1", topicId: "cs-2-2", conceptId: "output-following-python-program-1-def",
+    section: "A", questionRef: "2022 HL Q1",
+    stem: "What is the output of the following Python program?",
+    questionText: "What is the output of the following Python program?",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "The value of a primary key (PK) must be unique:", marks: 5, accepts: ["dog_name would not be a good PK because a duplicate value exists i.e. fido.","breed would not be a good PK because duplicates could exist.","both fields could potentially contain duplicates. For each correctly stated reason 1 mark","A foreign key(FK) links two tables. It provides the relationship between two tables. In this case if the table shown was split into two separate tables – one for owners and one for dogs – the owner_id could be used as the PK in the owners table and the FK in the dogs table. The schema is shown below. owner_id owner_name address 1 Joe Murphy 1 main street 2 Ada Traore 9 park ave. 3 James Tidy 7 bond st. dog_id dog_name breed dob microchip owner_id 1 rover labrador 22/11/2011 Y 1 2 fido poodle 02/02/2020 Y 1 3 fido jack russell 15/06/2015 N 2 4 champ greyhound 01/01/2010 Y 1 5 spot dalmation 24/08/2007 N 2 6 buddy rottweiler 21/10/2012 Y 3"] },
+    { id: "r-1", kind: "point", verbatim: "Output", marks: 5 },
     ],
     figure: {
-          "candId": "computer-science-2021-HL-paper-q12-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2021-HL-paper-q12-code0.png",
-          "srcHash": "45659128caa50f5e69def9019a193f3e",
-          "alt": "The program printed with 2021 HL Question 12, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 24 lines and begins: rover",
-          "attribution": "SEC Leaving Certificate Computer Science 2021 Higher Level — © State Examinations Commission",
+          "candId": "computer-science-2022-HL-paper-q1-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q1-code0.png",
+          "srcHash": "77fb8e0c14347e57d134700540de00a7",
+          "alt": "The program printed with 2022 HL Question 1, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 21 lines and begins: def func(a):",
+          "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
   } as SecCard,
@@ -667,6 +757,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "A web client sends a browser request to a web server. This browser request is then processed by the web server which responds by sending the result back to the client in the form of a server response.", marks: 5 },
     ],
+    figure: {
+          "candId": "computer-science-2022-HL-paper-q6-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q6-fig0.png",
+          "srcHash": "b008eac4326fabcc47a78bd36201811e",
+          "alt": "The table or diagram printed with 2022 HL Question 6, as the State Examinations Commission set it. It is labelled: Figure 2.",
+          "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -823,10 +921,10 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Each correct pass", marks: 3 },
     ],
     figure: {
-          "candId": "computer-science-2022-HL-paper-q14-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q14-code0.png",
-          "srcHash": "004b57517b1441662899092c273c57f4",
-          "alt": "The program printed with 2022 HL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: A simplified version of the selection sort algorithm involves the use of two lists called list1",
+          "candId": "computer-science-2022-HL-paper-q14-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q14-figure.png",
+          "srcHash": "af107078c57e92f0fc5c19832d88bc4f",
+          "alt": "The program and the table or diagram printed with 2022 HL Question 14, as the State Examinations Commission set it.",
           "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -846,10 +944,10 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Any valid response.", marks: 1 },
     ],
     figure: {
-          "candId": "computer-science-2022-HL-paper-q14-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q14-code0.png",
-          "srcHash": "004b57517b1441662899092c273c57f4",
-          "alt": "The program printed with 2022 HL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: A simplified version of the selection sort algorithm involves the use of two lists called list1",
+          "candId": "computer-science-2022-HL-paper-q14-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q14-figure.png",
+          "srcHash": "af107078c57e92f0fc5c19832d88bc4f",
+          "alt": "The program and the table or diagram printed with 2022 HL Question 14, as the State Examinations Commission set it.",
           "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -868,10 +966,10 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Initialise the minimum to be the first element in the list. Then, working/walk across the list compare each element to the minimum element so far. If the current element is less than the minimum element so far then let it be the new minimum. Continue in this manner until the end of the list is reached.", marks: 3 },
     ],
     figure: {
-          "candId": "computer-science-2022-HL-paper-q14-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q14-code0.png",
-          "srcHash": "004b57517b1441662899092c273c57f4",
-          "alt": "The program printed with 2022 HL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: A simplified version of the selection sort algorithm involves the use of two lists called list1",
+          "candId": "computer-science-2022-HL-paper-q14-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q14-figure.png",
+          "srcHash": "af107078c57e92f0fc5c19832d88bc4f",
+          "alt": "The program and the table or diagram printed with 2022 HL Question 14, as the State Examinations Commission set it.",
           "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -890,10 +988,10 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "The same element would always be copied.", marks: 2 },
     ],
     figure: {
-          "candId": "computer-science-2022-HL-paper-q14-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q14-code0.png",
-          "srcHash": "004b57517b1441662899092c273c57f4",
-          "alt": "The program printed with 2022 HL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: A simplified version of the selection sort algorithm involves the use of two lists called list1",
+          "candId": "computer-science-2022-HL-paper-q14-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q14-figure.png",
+          "srcHash": "af107078c57e92f0fc5c19832d88bc4f",
+          "alt": "The program and the table or diagram printed with 2022 HL Question 14, as the State Examinations Commission set it.",
           "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -912,10 +1010,10 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "The selection sort algorithm works by passing across every element in the list to sort (from left to right). The element being passed over is called the current element. For each current element the algorithm looks for the minimum (smallest) element to its right. This minimum element is selected and swapped with the current element. The algorithm then moves on to the next element.", marks: 3 },
     ],
     figure: {
-          "candId": "computer-science-2022-HL-paper-q14-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q14-code0.png",
-          "srcHash": "004b57517b1441662899092c273c57f4",
-          "alt": "The program printed with 2022 HL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: A simplified version of the selection sort algorithm involves the use of two lists called list1",
+          "candId": "computer-science-2022-HL-paper-q14-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q14-figure.png",
+          "srcHash": "af107078c57e92f0fc5c19832d88bc4f",
+          "alt": "The program and the table or diagram printed with 2022 HL Question 14, as the State Examinations Commission set it.",
           "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -934,10 +1032,10 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Each correct pass", marks: 4 },
     ],
     figure: {
-          "candId": "computer-science-2022-HL-paper-q14-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q14-code0.png",
-          "srcHash": "004b57517b1441662899092c273c57f4",
-          "alt": "The program printed with 2022 HL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: A simplified version of the selection sort algorithm involves the use of two lists called list1",
+          "candId": "computer-science-2022-HL-paper-q14-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q14-figure.png",
+          "srcHash": "af107078c57e92f0fc5c19832d88bc4f",
+          "alt": "The program and the table or diagram printed with 2022 HL Question 14, as the State Examinations Commission set it.",
           "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -957,10 +1055,10 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Pseudocode / flowchart / code are also acceptable.", marks: 2 },
     ],
     figure: {
-          "candId": "computer-science-2022-HL-paper-q14-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q14-code0.png",
-          "srcHash": "004b57517b1441662899092c273c57f4",
-          "alt": "The program printed with 2022 HL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: A simplified version of the selection sort algorithm involves the use of two lists called list1",
+          "candId": "computer-science-2022-HL-paper-q14-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q14-figure.png",
+          "srcHash": "af107078c57e92f0fc5c19832d88bc4f",
+          "alt": "The program and the table or diagram printed with 2022 HL Question 14, as the State Examinations Commission set it.",
           "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -979,10 +1077,10 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "A list that is already sorted.", marks: 4 },
     ],
     figure: {
-          "candId": "computer-science-2022-HL-paper-q14-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q14-code0.png",
-          "srcHash": "004b57517b1441662899092c273c57f4",
-          "alt": "The program printed with 2022 HL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: A simplified version of the selection sort algorithm involves the use of two lists called list1",
+          "candId": "computer-science-2022-HL-paper-q14-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q14-figure.png",
+          "srcHash": "af107078c57e92f0fc5c19832d88bc4f",
+          "alt": "The program and the table or diagram printed with 2022 HL Question 14, as the State Examinations Commission set it.",
           "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1001,10 +1099,10 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Worst case is O(n2) – list in reverse order. For each of the n elements there are n comparisons required to make the insertion at the correct positon. AND", marks: 5 },
     ],
     figure: {
-          "candId": "computer-science-2022-HL-paper-q14-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q14-code0.png",
-          "srcHash": "004b57517b1441662899092c273c57f4",
-          "alt": "The program printed with 2022 HL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: A simplified version of the selection sort algorithm involves the use of two lists called list1",
+          "candId": "computer-science-2022-HL-paper-q14-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q14-figure.png",
+          "srcHash": "af107078c57e92f0fc5c19832d88bc4f",
+          "alt": "The program and the table or diagram printed with 2022 HL Question 14, as the State Examinations Commission set it.",
           "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1129,17 +1227,17 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2022 Higher Level — © State Examinations Commission.",
     id: "cs-2022-hl-q16-a-ii", topicId: "cs-2-2", conceptId: "insert-new-line-code-end-program",
     section: "B", questionRef: "2022 HL Q16(a)(ii)",
-    stem: "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program simulates the rolling of a die 100 times. The result of each roll (throw) is stored in a variable called throw_result. Each of the 100 results are appended to a list called results as they are generated. The program also contains code to keep track of the number of times a one and a two are rolled. These are stored in a list called frequencies. 1 # Question 16(a) 2 # Examination Number: 3 from random import randint 4 5 print(\"Dice simulation program\") 6 results = [] 7 frequencies = [0, 0, 0, 0, 0, 0] 8 9 # Loop 100 times 10 for i in range (100): 11 throw_result = randint(1,6) # store a random value between 1 and 6 12 results.append(throw_result) # append each value to results 13 14 # Start to build up a list of frequencies for each value thrown 15 if throw_result == 1: 16 frequencies[0] = frequencies[0] + 1 17 elif throw_result == 2: 18 frequencies[1] = frequencies[1] + 1 19 20 print() 21 print(\"Results:\", results) This question continues on the next page. When the program is run, the output may look as follows: (Your output will be different because the dice numbers are generated randomly.) Dice simulation program Results: [1, 4, 1, 4, 2, 3, 2, 2, 2, 4, 3, 1, 6, 1, 3, 3, 5, 1, 1, 3, 2, 2, 4, 1, 6, 4, 4, 5, 2, 2, 4, 2, 1, 2, 4, 2, 6, 6, 5, 4, 3, 5, 5, 1, 1, 6, 5, 1, 3, 3, 5, 3, 1, 5, 3, 5, 3, 2, 1, 1, 1, 1, 4, 2, 5, 6, 4, 3, 4, 6, 4, 5, 2, 5, 5, 3, 1, 5, 4, 3, 2, 2, 6, 2, 2, 3, 3, 2, 3, 1, 5, 2, 5, 4, 6, 4, 3, 5, 5, 2] Make the following changes to the program: Change the program so that the first line in the output is Dice simulation and analysis program. When the program is run the output may now look as follows: Dice simulation and analysis program Results: [1, 4, 1, 5, 3, 6, 2, 6, 6, 1, 3, 6, 4, 5, 1, 2, 5, 3, 5, 6, 5, 6, 5, 3, 3, 3, 4, 1, 2, 6, 1, 2, 4, 4, 6, 2, 4, 6, 5, 3, 4, 6, 4, 1, 4, 5, 6, 1, 1, 3, 5, 6, 6, 1, 2, 2, 5, 4, 3, 2, 6, 2, 2, 2, 2, 1, 2, 3, 4, 3, 3, 4, 3, 1, 6, 4, 1, 2, 4, 1, 3, 4, 1, 5, 3, 3, 5, 4, 4, 1, 2, 4, 4, 5, 6, 5, 6, 1, 5, 3] When the program is run the output may now look as follows: Dice simulation and analysis program Results: [1, 3, 5, 1, 5, 1, 2, 4, 2, 5, 5, 5, 6, 4, 1, 1, 6, 4, 2, 1, 2, 6, 5, 3, 6, 5, 3, 6, 3, 3, 2, 1, 4, 2, 3, 4, 6, 6, 3, 3, 6, 5, 6, 6, 6, 5, 3, 2, 1, 3, 3, 6, 1, 4, 2, 5, 6, 4, 2, 1, 6, 6, 6, 4, 2, 2, 4, 5, 6, 3, 2, 6, 2, 2, 3, 3, 3, 1, 5, 6, 3, 6, 2, 5, 5, 1, 4, 5, 4, 1, 5, 4, 6, 4, 4, 5, 3, 3, 1, 4] Frequencies: [14, 15, 0, 0, 0, 0] The frequencies list tells us that the number one has been rolled 14 times and the number two has been rolled 15 times. The frequencies for the numbers three, four, five and six are not calculated by the program yet. This is the reason they are all zero. This question continues on the next page. When the program is run the output may now look as follows: Dice simulation and analysis program Results: [2, 4, 6, 2, 1, 4, 1, 3, 1, 3, 3, 6, 5, 5, 4, 3, 2, 2, 2, 1, 3, 4, 4, 3, 4, 6, 4, 2, 3, 1, 3, 3, 1, 5, 3, 3, 6, 5, 4, 6, 1, 5, 3, 4, 2, 1, 6, 6, 5, 2, 6, 4, 5, 2, 2, 6, 6, 5, 5, 6, 2, 3, 5, 6, 4, 1, 6, 2, 2, 6, 2, 6, 3, 3, 4, 2, 5, 5, 5, 3, 1, 2, 3, 4, 2, 6, 2, 1, 5, 6, 6, 2, 5, 2, 3, 2, 5, 2, 2, 6] Frequencies: [11, 23, 18, 13, 16, 19] In this case the frequencies list tells us that the number one has been rolled 11 times, the number two has been rolled 23 times, the number three has been rolled 18 times, the number four has been rolled 13 times, the number five has been rolled 16 times and the number six has been rolled 19 times. When the program is run the output may now look as follows: Dice simulation and analysis program Frequencies: [17, 21, 17, 18, 11, 16] Dice simulation and analysis program Frequencies: [15, 10, 25, 15, 15, 20] Dice Frequency ---- --------- 1 15 2 10 3 25 4 15 5 15 6 20 This question continues on the next page. When the program is run the output may now look as follows: Dice simulation and analysis program Frequencies: [16, 14, 12, 20, 25, 13] Dice Frequency ---- --------- 1 16 2 14 3 12 4 20 5 25 6 13 5 was rolled the most often (25 times) The number of asterisks (*) in each row should correspond to each frequency. For example, in the output below there are eight asterisks in row one because the frequency for the number one is eight. Each asterisk (*) can be printed using the single statement: print(\"*\", end=\"\") When the program is run the output may now look as follows: Dice simulation and analysis program Dice frequencies: [8, 12, 22, 26, 22, 10] Dice Frequency ---- --------- 1 8 2 12 3 22 4 26 5 22 6 10 4 was rolled most often - 26 times ******** ************ ********************** **************************** ********************** ********** Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Acknowledgements Images Image on P. 4: https://freesvg.org/vector-image-of-game-dice-close-up This document will not be returned to the State Examinations Commission. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Wednesday 25 May Morning 11:30 – 12:30",
+    stem: "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program simulates the rolling of a die 100 times. The program also contains code to keep track of the number of times a one and a two are rolled. These are stored in a list called frequencies. 1 # Question 16(a) 2 # Examination Number: 3 from random import randint 4 5 print(\"Dice simulation program\") 6 results = [] 7 frequencies = [0, 0, 0, 0, 0, 0] 8 9 # Loop 100 times 10 for i in range (100): 11 throw_result = randint(1,6) # store a random value between 1 and 6 12 results.append(throw_result) # append each value to results 13 14 # Start to build up a list of frequencies for each value thrown 15 if throw_result == 1: 16 frequencies[0] = frequencies[0] + 1 17 elif throw_result == 2: 18 frequencies[1] = frequencies[1] + 1 19 20 print() 21 print(\"Results:\", results) This question continues on the next page. When the program is run, the output may look as follows: (Your output will be different because the dice numbers are generated randomly.) Dice simulation program Results: [1, 4, 1, 4, 2, 3, 2, 2, 2, 4, 3, 1, 6, 1, 3, 3, 5, 1, 1, 3, 2, 2, 4, 1, 6, 4, 4, 5, 2, 2, 4, 2, 1, 2, 4, 2, 6, 6, 5, 4, 3, 5, 5, 1, 1, 6, 5, 1, 3, 3, 5, 3, 1, 5, 3, 5, 3, 2, 1, 1, 1, 1, 4, 2, 5, 6, 4, 3, 4, 6, 4, 5, 2, 5, 5, 3, 1, 5, 4, 3, 2, 2, 6, 2, 2, 3, 3, 2, 3, 1, 5, 2, 5, 4, 6, 4, 3, 5, 5, 2] Make the following changes to the program: Change the program so that the first line in the output is Dice simulation and analysis program. When the program is run the output may now look as follows: Dice simulation and analysis program Results: [1, 4, 1, 5, 3, 6, 2, 6, 6, 1, 3, 6, 4, 5, 1, 2, 5, 3, 5, 6, 5, 6, 5, 3, 3, 3, 4, 1, 2, 6, 1, 2, 4, 4, 6, 2, 4, 6, 5, 3, 4, 6, 4, 1, 4, 5, 6, 1, 1, 3, 5, 6, 6, 1, 2, 2, 5, 4, 3, 2, 6, 2, 2, 2, 2, 1, 2, 3, 4, 3, 3, 4, 3, 1, 6, 4, 1, 2, 4, 1, 3, 4, 1, 5, 3, 3, 5, 4, 4, 1, 2, 4, 4, 5, 6, 5, 6, 1, 5, 3] When the program is run the output may now look as follows: Dice simulation and analysis program Results: [1, 3, 5, 1, 5, 1, 2, 4, 2, 5, 5, 5, 6, 4, 1, 1, 6, 4, 2, 1, 2, 6, 5, 3, 6, 5, 3, 6, 3, 3, 2, 1, 4, 2, 3, 4, 6, 6, 3, 3, 6, 5, 6, 6, 6, 5, 3, 2, 1, 3, 3, 6, 1, 4, 2, 5, 6, 4, 2, 1, 6, 6, 6, 4, 2, 2, 4, 5, 6, 3, 2, 6, 2, 2, 3, 3, 3, 1, 5, 6, 3, 6, 2, 5, 5, 1, 4, 5, 4, 1, 5, 4, 6, 4, 4, 5, 3, 3, 1, 4] Frequencies: [14, 15, 0, 0, 0, 0] The frequencies list tells us that the number one has been rolled 14 times and the number two has been rolled 15 times. The frequencies for the numbers three, four, five and six are not calculated by the program yet. This is the reason they are all zero. This question continues on the next page. When the program is run the output may now look as follows: Dice simulation and analysis program Results: [2, 4, 6, 2, 1, 4, 1, 3, 1, 3, 3, 6, 5, 5, 4, 3, 2, 2, 2, 1, 3, 4, 4, 3, 4, 6, 4, 2, 3, 1, 3, 3, 1, 5, 3, 3, 6, 5, 4, 6, 1, 5, 3, 4, 2, 1, 6, 6, 5, 2, 6, 4, 5, 2, 2, 6, 6, 5, 5, 6, 2, 3, 5, 6, 4, 1, 6, 2, 2, 6, 2, 6, 3, 3, 4, 2, 5, 5, 5, 3, 1, 2, 3, 4, 2, 6, 2, 1, 5, 6, 6, 2, 5, 2, 3, 2, 5, 2, 2, 6] Frequencies: [11, 23, 18, 13, 16, 19] In this case the frequencies list tells us that the number one has been rolled 11 times, the number two has been rolled 23 times, the number three has been rolled 18 times, the number four has been rolled 13 times, the number five has been rolled 16 times and the number six has been rolled 19 times. When the program is run the output may now look as follows: Dice simulation and analysis program Frequencies: [17, 21, 17, 18, 11, 16] Dice simulation and analysis program Frequencies: [15, 10, 25, 15, 15, 20] Dice Frequency ---- --------- 1 15 2 10 3 25 4 15 5 15 6 20 This question continues on the next page. When the program is run the output may now look as follows: Dice simulation and analysis program Frequencies: [16, 14, 12, 20, 25, 13] Dice Frequency ---- --------- 1 16 2 14 3 12 4 20 5 25 6 13 5 was rolled the most often (25 times) The number of asterisks (*) in each row should correspond to each frequency. For example, in the output below there are eight asterisks in row one because the frequency for the number one is eight. Each asterisk (*) can be printed using the single statement: print(\"*\", end=\"\") When the program is run the output may now look as follows: Dice simulation and analysis program Dice frequencies: [8, 12, 22, 26, 22, 10] Dice Frequency ---- --------- 1 8 2 12 3 22 4 26 5 22 6 10 4 was rolled most often - 26 times ******** ************ ********************** **************************** ********************** ********** Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Acknowledgements Images Image on P. 4: https://freesvg.org/vector-image-of-game-dice-close-up This document will not be returned to the State Examinations Commission. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Wednesday 25 May Morning 11:30 – 12:30",
     questionText: "Insert a new line of code at the end of the program to display the list of dice frequencies.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Correct implementation using solution above or similar but with syntax error.", marks: 5 },
     ],
     figure: {
-          "candId": "computer-science-2022-HL-paper-q16-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q16-code0.png",
-          "srcHash": "5361556dcbcff842da73151d93cf5145",
-          "alt": "The program printed with 2022 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The result of each roll (throw) is stored in a variable called throw_result. Each of the 100",
+          "candId": "computer-science-2022-HL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q16-figure.png",
+          "srcHash": "bbd1b84a8247bad4824dde09980e70b0",
+          "alt": "The program printed with 2022 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 31 lines and begins: The result of each roll (throw) is stored in a variable called throw_result. Each of the 100",
           "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1151,17 +1249,17 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2022 Higher Level — © State Examinations Commission.",
     id: "cs-2022-hl-q16-a-iii", topicId: "cs-2-2", conceptId: "complete-code-calculate-frequencies-numbers-three",
     section: "B", questionRef: "2022 HL Q16(a)(iii)",
-    stem: "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program simulates the rolling of a die 100 times. The result of each roll (throw) is stored in a variable called throw_result. Each of the 100 results are appended to a list called results as they are generated. The program also contains code to keep track of the number of times a one and a two are rolled. These are stored in a list called frequencies. 1 # Question 16(a) 2 # Examination Number: 3 from random import randint 4 5 print(\"Dice simulation program\") 6 results = [] 7 frequencies = [0, 0, 0, 0, 0, 0] 8 9 # Loop 100 times 10 for i in range (100): 11 throw_result = randint(1,6) # store a random value between 1 and 6 12 results.append(throw_result) # append each value to results 13 14 # Start to build up a list of frequencies for each value thrown 15 if throw_result == 1: 16 frequencies[0] = frequencies[0] + 1 17 elif throw_result == 2: 18 frequencies[1] = frequencies[1] + 1 19 20 print() 21 print(\"Results:\", results) This question continues on the next page. When the program is run, the output may look as follows: (Your output will be different because the dice numbers are generated randomly.) Dice simulation program Results: [1, 4, 1, 4, 2, 3, 2, 2, 2, 4, 3, 1, 6, 1, 3, 3, 5, 1, 1, 3, 2, 2, 4, 1, 6, 4, 4, 5, 2, 2, 4, 2, 1, 2, 4, 2, 6, 6, 5, 4, 3, 5, 5, 1, 1, 6, 5, 1, 3, 3, 5, 3, 1, 5, 3, 5, 3, 2, 1, 1, 1, 1, 4, 2, 5, 6, 4, 3, 4, 6, 4, 5, 2, 5, 5, 3, 1, 5, 4, 3, 2, 2, 6, 2, 2, 3, 3, 2, 3, 1, 5, 2, 5, 4, 6, 4, 3, 5, 5, 2] Make the following changes to the program: Change the program so that the first line in the output is Dice simulation and analysis program. When the program is run the output may now look as follows: Dice simulation and analysis program Results: [1, 4, 1, 5, 3, 6, 2, 6, 6, 1, 3, 6, 4, 5, 1, 2, 5, 3, 5, 6, 5, 6, 5, 3, 3, 3, 4, 1, 2, 6, 1, 2, 4, 4, 6, 2, 4, 6, 5, 3, 4, 6, 4, 1, 4, 5, 6, 1, 1, 3, 5, 6, 6, 1, 2, 2, 5, 4, 3, 2, 6, 2, 2, 2, 2, 1, 2, 3, 4, 3, 3, 4, 3, 1, 6, 4, 1, 2, 4, 1, 3, 4, 1, 5, 3, 3, 5, 4, 4, 1, 2, 4, 4, 5, 6, 5, 6, 1, 5, 3] When the program is run the output may now look as follows: Dice simulation and analysis program Results: [1, 3, 5, 1, 5, 1, 2, 4, 2, 5, 5, 5, 6, 4, 1, 1, 6, 4, 2, 1, 2, 6, 5, 3, 6, 5, 3, 6, 3, 3, 2, 1, 4, 2, 3, 4, 6, 6, 3, 3, 6, 5, 6, 6, 6, 5, 3, 2, 1, 3, 3, 6, 1, 4, 2, 5, 6, 4, 2, 1, 6, 6, 6, 4, 2, 2, 4, 5, 6, 3, 2, 6, 2, 2, 3, 3, 3, 1, 5, 6, 3, 6, 2, 5, 5, 1, 4, 5, 4, 1, 5, 4, 6, 4, 4, 5, 3, 3, 1, 4] Frequencies: [14, 15, 0, 0, 0, 0] The frequencies list tells us that the number one has been rolled 14 times and the number two has been rolled 15 times. The frequencies for the numbers three, four, five and six are not calculated by the program yet. This is the reason they are all zero. This question continues on the next page. When the program is run the output may now look as follows: Dice simulation and analysis program Results: [2, 4, 6, 2, 1, 4, 1, 3, 1, 3, 3, 6, 5, 5, 4, 3, 2, 2, 2, 1, 3, 4, 4, 3, 4, 6, 4, 2, 3, 1, 3, 3, 1, 5, 3, 3, 6, 5, 4, 6, 1, 5, 3, 4, 2, 1, 6, 6, 5, 2, 6, 4, 5, 2, 2, 6, 6, 5, 5, 6, 2, 3, 5, 6, 4, 1, 6, 2, 2, 6, 2, 6, 3, 3, 4, 2, 5, 5, 5, 3, 1, 2, 3, 4, 2, 6, 2, 1, 5, 6, 6, 2, 5, 2, 3, 2, 5, 2, 2, 6] Frequencies: [11, 23, 18, 13, 16, 19] In this case the frequencies list tells us that the number one has been rolled 11 times, the number two has been rolled 23 times, the number three has been rolled 18 times, the number four has been rolled 13 times, the number five has been rolled 16 times and the number six has been rolled 19 times. When the program is run the output may now look as follows: Dice simulation and analysis program Frequencies: [17, 21, 17, 18, 11, 16] Dice simulation and analysis program Frequencies: [15, 10, 25, 15, 15, 20] Dice Frequency ---- --------- 1 15 2 10 3 25 4 15 5 15 6 20 This question continues on the next page. When the program is run the output may now look as follows: Dice simulation and analysis program Frequencies: [16, 14, 12, 20, 25, 13] Dice Frequency ---- --------- 1 16 2 14 3 12 4 20 5 25 6 13 5 was rolled the most often (25 times) The number of asterisks (*) in each row should correspond to each frequency. For example, in the output below there are eight asterisks in row one because the frequency for the number one is eight. Each asterisk (*) can be printed using the single statement: print(\"*\", end=\"\") When the program is run the output may now look as follows: Dice simulation and analysis program Dice frequencies: [8, 12, 22, 26, 22, 10] Dice Frequency ---- --------- 1 8 2 12 3 22 4 26 5 22 6 10 4 was rolled most often - 26 times ******** ************ ********************** **************************** ********************** ********** Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Acknowledgements Images Image on P. 4: https://freesvg.org/vector-image-of-game-dice-close-up This document will not be returned to the State Examinations Commission. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Wednesday 25 May Morning 11:30 – 12:30",
+    stem: "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program simulates the rolling of a die 100 times. The program also contains code to keep track of the number of times a one and a two are rolled. These are stored in a list called frequencies. 1 # Question 16(a) 2 # Examination Number: 3 from random import randint 4 5 print(\"Dice simulation program\") 6 results = [] 7 frequencies = [0, 0, 0, 0, 0, 0] 8 9 # Loop 100 times 10 for i in range (100): 11 throw_result = randint(1,6) # store a random value between 1 and 6 12 results.append(throw_result) # append each value to results 13 14 # Start to build up a list of frequencies for each value thrown 15 if throw_result == 1: 16 frequencies[0] = frequencies[0] + 1 17 elif throw_result == 2: 18 frequencies[1] = frequencies[1] + 1 19 20 print() 21 print(\"Results:\", results) This question continues on the next page. When the program is run, the output may look as follows: (Your output will be different because the dice numbers are generated randomly.) Dice simulation program Results: [1, 4, 1, 4, 2, 3, 2, 2, 2, 4, 3, 1, 6, 1, 3, 3, 5, 1, 1, 3, 2, 2, 4, 1, 6, 4, 4, 5, 2, 2, 4, 2, 1, 2, 4, 2, 6, 6, 5, 4, 3, 5, 5, 1, 1, 6, 5, 1, 3, 3, 5, 3, 1, 5, 3, 5, 3, 2, 1, 1, 1, 1, 4, 2, 5, 6, 4, 3, 4, 6, 4, 5, 2, 5, 5, 3, 1, 5, 4, 3, 2, 2, 6, 2, 2, 3, 3, 2, 3, 1, 5, 2, 5, 4, 6, 4, 3, 5, 5, 2] Make the following changes to the program: Change the program so that the first line in the output is Dice simulation and analysis program. When the program is run the output may now look as follows: Dice simulation and analysis program Results: [1, 4, 1, 5, 3, 6, 2, 6, 6, 1, 3, 6, 4, 5, 1, 2, 5, 3, 5, 6, 5, 6, 5, 3, 3, 3, 4, 1, 2, 6, 1, 2, 4, 4, 6, 2, 4, 6, 5, 3, 4, 6, 4, 1, 4, 5, 6, 1, 1, 3, 5, 6, 6, 1, 2, 2, 5, 4, 3, 2, 6, 2, 2, 2, 2, 1, 2, 3, 4, 3, 3, 4, 3, 1, 6, 4, 1, 2, 4, 1, 3, 4, 1, 5, 3, 3, 5, 4, 4, 1, 2, 4, 4, 5, 6, 5, 6, 1, 5, 3] When the program is run the output may now look as follows: Dice simulation and analysis program Results: [1, 3, 5, 1, 5, 1, 2, 4, 2, 5, 5, 5, 6, 4, 1, 1, 6, 4, 2, 1, 2, 6, 5, 3, 6, 5, 3, 6, 3, 3, 2, 1, 4, 2, 3, 4, 6, 6, 3, 3, 6, 5, 6, 6, 6, 5, 3, 2, 1, 3, 3, 6, 1, 4, 2, 5, 6, 4, 2, 1, 6, 6, 6, 4, 2, 2, 4, 5, 6, 3, 2, 6, 2, 2, 3, 3, 3, 1, 5, 6, 3, 6, 2, 5, 5, 1, 4, 5, 4, 1, 5, 4, 6, 4, 4, 5, 3, 3, 1, 4] Frequencies: [14, 15, 0, 0, 0, 0] The frequencies list tells us that the number one has been rolled 14 times and the number two has been rolled 15 times. The frequencies for the numbers three, four, five and six are not calculated by the program yet. This is the reason they are all zero. This question continues on the next page. When the program is run the output may now look as follows: Dice simulation and analysis program Results: [2, 4, 6, 2, 1, 4, 1, 3, 1, 3, 3, 6, 5, 5, 4, 3, 2, 2, 2, 1, 3, 4, 4, 3, 4, 6, 4, 2, 3, 1, 3, 3, 1, 5, 3, 3, 6, 5, 4, 6, 1, 5, 3, 4, 2, 1, 6, 6, 5, 2, 6, 4, 5, 2, 2, 6, 6, 5, 5, 6, 2, 3, 5, 6, 4, 1, 6, 2, 2, 6, 2, 6, 3, 3, 4, 2, 5, 5, 5, 3, 1, 2, 3, 4, 2, 6, 2, 1, 5, 6, 6, 2, 5, 2, 3, 2, 5, 2, 2, 6] Frequencies: [11, 23, 18, 13, 16, 19] In this case the frequencies list tells us that the number one has been rolled 11 times, the number two has been rolled 23 times, the number three has been rolled 18 times, the number four has been rolled 13 times, the number five has been rolled 16 times and the number six has been rolled 19 times. When the program is run the output may now look as follows: Dice simulation and analysis program Frequencies: [17, 21, 17, 18, 11, 16] Dice simulation and analysis program Frequencies: [15, 10, 25, 15, 15, 20] Dice Frequency ---- --------- 1 15 2 10 3 25 4 15 5 15 6 20 This question continues on the next page. When the program is run the output may now look as follows: Dice simulation and analysis program Frequencies: [16, 14, 12, 20, 25, 13] Dice Frequency ---- --------- 1 16 2 14 3 12 4 20 5 25 6 13 5 was rolled the most often (25 times) The number of asterisks (*) in each row should correspond to each frequency. For example, in the output below there are eight asterisks in row one because the frequency for the number one is eight. Each asterisk (*) can be printed using the single statement: print(\"*\", end=\"\") When the program is run the output may now look as follows: Dice simulation and analysis program Dice frequencies: [8, 12, 22, 26, 22, 10] Dice Frequency ---- --------- 1 8 2 12 3 22 4 26 5 22 6 10 4 was rolled most often - 26 times ******** ************ ********************** **************************** ********************** ********** Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Acknowledgements Images Image on P. 4: https://freesvg.org/vector-image-of-game-dice-close-up This document will not be returned to the State Examinations Commission. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Wednesday 25 May Morning 11:30 – 12:30",
     questionText: "Complete the code to calculate the frequencies for the numbers three, four, five and six.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "error or ‘off by one’ index error.", marks: 5 },
     ],
     figure: {
-          "candId": "computer-science-2022-HL-paper-q16-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q16-code0.png",
-          "srcHash": "5361556dcbcff842da73151d93cf5145",
-          "alt": "The program printed with 2022 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The result of each roll (throw) is stored in a variable called throw_result. Each of the 100",
+          "candId": "computer-science-2022-HL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q16-figure.png",
+          "srcHash": "bbd1b84a8247bad4824dde09980e70b0",
+          "alt": "The program printed with 2022 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 31 lines and begins: The result of each roll (throw) is stored in a variable called throw_result. Each of the 100",
           "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1173,17 +1271,17 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2022 Higher Level — © State Examinations Commission.",
     id: "cs-2022-hl-q16-a-vi", topicId: "cs-2-2", conceptId: "extend-program-so-determines-displays-number",
     section: "B", questionRef: "2022 HL Q16(a)(vi)",
-    stem: "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program simulates the rolling of a die 100 times. The result of each roll (throw) is stored in a variable called throw_result. Each of the 100 results are appended to a list called results as they are generated. The program also contains code to keep track of the number of times a one and a two are rolled. These are stored in a list called frequencies. 1 # Question 16(a) 2 # Examination Number: 3 from random import randint 4 5 print(\"Dice simulation program\") 6 results = [] 7 frequencies = [0, 0, 0, 0, 0, 0] 8 9 # Loop 100 times 10 for i in range (100): 11 throw_result = randint(1,6) # store a random value between 1 and 6 12 results.append(throw_result) # append each value to results 13 14 # Start to build up a list of frequencies for each value thrown 15 if throw_result == 1: 16 frequencies[0] = frequencies[0] + 1 17 elif throw_result == 2: 18 frequencies[1] = frequencies[1] + 1 19 20 print() 21 print(\"Results:\", results) This question continues on the next page. When the program is run, the output may look as follows: (Your output will be different because the dice numbers are generated randomly.) Dice simulation program Results: [1, 4, 1, 4, 2, 3, 2, 2, 2, 4, 3, 1, 6, 1, 3, 3, 5, 1, 1, 3, 2, 2, 4, 1, 6, 4, 4, 5, 2, 2, 4, 2, 1, 2, 4, 2, 6, 6, 5, 4, 3, 5, 5, 1, 1, 6, 5, 1, 3, 3, 5, 3, 1, 5, 3, 5, 3, 2, 1, 1, 1, 1, 4, 2, 5, 6, 4, 3, 4, 6, 4, 5, 2, 5, 5, 3, 1, 5, 4, 3, 2, 2, 6, 2, 2, 3, 3, 2, 3, 1, 5, 2, 5, 4, 6, 4, 3, 5, 5, 2] Make the following changes to the program: Change the program so that the first line in the output is Dice simulation and analysis program. When the program is run the output may now look as follows: Dice simulation and analysis program Results: [1, 4, 1, 5, 3, 6, 2, 6, 6, 1, 3, 6, 4, 5, 1, 2, 5, 3, 5, 6, 5, 6, 5, 3, 3, 3, 4, 1, 2, 6, 1, 2, 4, 4, 6, 2, 4, 6, 5, 3, 4, 6, 4, 1, 4, 5, 6, 1, 1, 3, 5, 6, 6, 1, 2, 2, 5, 4, 3, 2, 6, 2, 2, 2, 2, 1, 2, 3, 4, 3, 3, 4, 3, 1, 6, 4, 1, 2, 4, 1, 3, 4, 1, 5, 3, 3, 5, 4, 4, 1, 2, 4, 4, 5, 6, 5, 6, 1, 5, 3] When the program is run the output may now look as follows: Dice simulation and analysis program Results: [1, 3, 5, 1, 5, 1, 2, 4, 2, 5, 5, 5, 6, 4, 1, 1, 6, 4, 2, 1, 2, 6, 5, 3, 6, 5, 3, 6, 3, 3, 2, 1, 4, 2, 3, 4, 6, 6, 3, 3, 6, 5, 6, 6, 6, 5, 3, 2, 1, 3, 3, 6, 1, 4, 2, 5, 6, 4, 2, 1, 6, 6, 6, 4, 2, 2, 4, 5, 6, 3, 2, 6, 2, 2, 3, 3, 3, 1, 5, 6, 3, 6, 2, 5, 5, 1, 4, 5, 4, 1, 5, 4, 6, 4, 4, 5, 3, 3, 1, 4] Frequencies: [14, 15, 0, 0, 0, 0] The frequencies list tells us that the number one has been rolled 14 times and the number two has been rolled 15 times. The frequencies for the numbers three, four, five and six are not calculated by the program yet. This is the reason they are all zero. This question continues on the next page. When the program is run the output may now look as follows: Dice simulation and analysis program Results: [2, 4, 6, 2, 1, 4, 1, 3, 1, 3, 3, 6, 5, 5, 4, 3, 2, 2, 2, 1, 3, 4, 4, 3, 4, 6, 4, 2, 3, 1, 3, 3, 1, 5, 3, 3, 6, 5, 4, 6, 1, 5, 3, 4, 2, 1, 6, 6, 5, 2, 6, 4, 5, 2, 2, 6, 6, 5, 5, 6, 2, 3, 5, 6, 4, 1, 6, 2, 2, 6, 2, 6, 3, 3, 4, 2, 5, 5, 5, 3, 1, 2, 3, 4, 2, 6, 2, 1, 5, 6, 6, 2, 5, 2, 3, 2, 5, 2, 2, 6] Frequencies: [11, 23, 18, 13, 16, 19] In this case the frequencies list tells us that the number one has been rolled 11 times, the number two has been rolled 23 times, the number three has been rolled 18 times, the number four has been rolled 13 times, the number five has been rolled 16 times and the number six has been rolled 19 times. When the program is run the output may now look as follows: Dice simulation and analysis program Frequencies: [17, 21, 17, 18, 11, 16] Dice simulation and analysis program Frequencies: [15, 10, 25, 15, 15, 20] Dice Frequency ---- --------- 1 15 2 10 3 25 4 15 5 15 6 20 This question continues on the next page. When the program is run the output may now look as follows: Dice simulation and analysis program Frequencies: [16, 14, 12, 20, 25, 13] Dice Frequency ---- --------- 1 16 2 14 3 12 4 20 5 25 6 13 5 was rolled the most often (25 times) The number of asterisks (*) in each row should correspond to each frequency. For example, in the output below there are eight asterisks in row one because the frequency for the number one is eight. Each asterisk (*) can be printed using the single statement: print(\"*\", end=\"\") When the program is run the output may now look as follows: Dice simulation and analysis program Dice frequencies: [8, 12, 22, 26, 22, 10] Dice Frequency ---- --------- 1 8 2 12 3 22 4 26 5 22 6 10 4 was rolled most often - 26 times ******** ************ ********************** **************************** ********************** ********** Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Acknowledgements Images Image on P. 4: https://freesvg.org/vector-image-of-game-dice-close-up This document will not be returned to the State Examinations Commission. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Wednesday 25 May Morning 11:30 – 12:30",
+    stem: "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program simulates the rolling of a die 100 times. The program also contains code to keep track of the number of times a one and a two are rolled. These are stored in a list called frequencies. 1 # Question 16(a) 2 # Examination Number: 3 from random import randint 4 5 print(\"Dice simulation program\") 6 results = [] 7 frequencies = [0, 0, 0, 0, 0, 0] 8 9 # Loop 100 times 10 for i in range (100): 11 throw_result = randint(1,6) # store a random value between 1 and 6 12 results.append(throw_result) # append each value to results 13 14 # Start to build up a list of frequencies for each value thrown 15 if throw_result == 1: 16 frequencies[0] = frequencies[0] + 1 17 elif throw_result == 2: 18 frequencies[1] = frequencies[1] + 1 19 20 print() 21 print(\"Results:\", results) This question continues on the next page. When the program is run, the output may look as follows: (Your output will be different because the dice numbers are generated randomly.) Dice simulation program Results: [1, 4, 1, 4, 2, 3, 2, 2, 2, 4, 3, 1, 6, 1, 3, 3, 5, 1, 1, 3, 2, 2, 4, 1, 6, 4, 4, 5, 2, 2, 4, 2, 1, 2, 4, 2, 6, 6, 5, 4, 3, 5, 5, 1, 1, 6, 5, 1, 3, 3, 5, 3, 1, 5, 3, 5, 3, 2, 1, 1, 1, 1, 4, 2, 5, 6, 4, 3, 4, 6, 4, 5, 2, 5, 5, 3, 1, 5, 4, 3, 2, 2, 6, 2, 2, 3, 3, 2, 3, 1, 5, 2, 5, 4, 6, 4, 3, 5, 5, 2] Make the following changes to the program: Change the program so that the first line in the output is Dice simulation and analysis program. When the program is run the output may now look as follows: Dice simulation and analysis program Results: [1, 4, 1, 5, 3, 6, 2, 6, 6, 1, 3, 6, 4, 5, 1, 2, 5, 3, 5, 6, 5, 6, 5, 3, 3, 3, 4, 1, 2, 6, 1, 2, 4, 4, 6, 2, 4, 6, 5, 3, 4, 6, 4, 1, 4, 5, 6, 1, 1, 3, 5, 6, 6, 1, 2, 2, 5, 4, 3, 2, 6, 2, 2, 2, 2, 1, 2, 3, 4, 3, 3, 4, 3, 1, 6, 4, 1, 2, 4, 1, 3, 4, 1, 5, 3, 3, 5, 4, 4, 1, 2, 4, 4, 5, 6, 5, 6, 1, 5, 3] When the program is run the output may now look as follows: Dice simulation and analysis program Results: [1, 3, 5, 1, 5, 1, 2, 4, 2, 5, 5, 5, 6, 4, 1, 1, 6, 4, 2, 1, 2, 6, 5, 3, 6, 5, 3, 6, 3, 3, 2, 1, 4, 2, 3, 4, 6, 6, 3, 3, 6, 5, 6, 6, 6, 5, 3, 2, 1, 3, 3, 6, 1, 4, 2, 5, 6, 4, 2, 1, 6, 6, 6, 4, 2, 2, 4, 5, 6, 3, 2, 6, 2, 2, 3, 3, 3, 1, 5, 6, 3, 6, 2, 5, 5, 1, 4, 5, 4, 1, 5, 4, 6, 4, 4, 5, 3, 3, 1, 4] Frequencies: [14, 15, 0, 0, 0, 0] The frequencies list tells us that the number one has been rolled 14 times and the number two has been rolled 15 times. The frequencies for the numbers three, four, five and six are not calculated by the program yet. This is the reason they are all zero. This question continues on the next page. When the program is run the output may now look as follows: Dice simulation and analysis program Results: [2, 4, 6, 2, 1, 4, 1, 3, 1, 3, 3, 6, 5, 5, 4, 3, 2, 2, 2, 1, 3, 4, 4, 3, 4, 6, 4, 2, 3, 1, 3, 3, 1, 5, 3, 3, 6, 5, 4, 6, 1, 5, 3, 4, 2, 1, 6, 6, 5, 2, 6, 4, 5, 2, 2, 6, 6, 5, 5, 6, 2, 3, 5, 6, 4, 1, 6, 2, 2, 6, 2, 6, 3, 3, 4, 2, 5, 5, 5, 3, 1, 2, 3, 4, 2, 6, 2, 1, 5, 6, 6, 2, 5, 2, 3, 2, 5, 2, 2, 6] Frequencies: [11, 23, 18, 13, 16, 19] In this case the frequencies list tells us that the number one has been rolled 11 times, the number two has been rolled 23 times, the number three has been rolled 18 times, the number four has been rolled 13 times, the number five has been rolled 16 times and the number six has been rolled 19 times. When the program is run the output may now look as follows: Dice simulation and analysis program Frequencies: [17, 21, 17, 18, 11, 16] Dice simulation and analysis program Frequencies: [15, 10, 25, 15, 15, 20] Dice Frequency ---- --------- 1 15 2 10 3 25 4 15 5 15 6 20 This question continues on the next page. When the program is run the output may now look as follows: Dice simulation and analysis program Frequencies: [16, 14, 12, 20, 25, 13] Dice Frequency ---- --------- 1 16 2 14 3 12 4 20 5 25 6 13 5 was rolled the most often (25 times) The number of asterisks (*) in each row should correspond to each frequency. For example, in the output below there are eight asterisks in row one because the frequency for the number one is eight. Each asterisk (*) can be printed using the single statement: print(\"*\", end=\"\") When the program is run the output may now look as follows: Dice simulation and analysis program Dice frequencies: [8, 12, 22, 26, 22, 10] Dice Frequency ---- --------- 1 8 2 12 3 22 4 26 5 22 6 10 4 was rolled most often - 26 times ******** ************ ********************** **************************** ********************** ********** Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Acknowledgements Images Image on P. 4: https://freesvg.org/vector-image-of-game-dice-close-up This document will not be returned to the State Examinations Commission. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Wednesday 25 May Morning 11:30 – 12:30",
     questionText: "Extend the program so that it determines and displays the number that was rolled most often along with its frequency. For example, in the output below the number five was rolled most often (25 times). You can ignore the possibility of ties.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Most frequent value determined but not correctly displayed.", marks: 10 },
     ],
     figure: {
-          "candId": "computer-science-2022-HL-paper-q16-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q16-code0.png",
-          "srcHash": "5361556dcbcff842da73151d93cf5145",
-          "alt": "The program printed with 2022 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The result of each roll (throw) is stored in a variable called throw_result. Each of the 100",
+          "candId": "computer-science-2022-HL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q16-figure.png",
+          "srcHash": "bbd1b84a8247bad4824dde09980e70b0",
+          "alt": "The program printed with 2022 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 31 lines and begins: The result of each roll (throw) is stored in a variable called throw_result. Each of the 100",
           "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1195,17 +1293,17 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2022 Higher Level — © State Examinations Commission.",
     id: "cs-2022-hl-q16-a-vii", topicId: "cs-2-3", conceptId: "extend-program-display-horizontal-bar-chart",
     section: "B", questionRef: "2022 HL Q16(a)(vii)",
-    stem: "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program simulates the rolling of a die 100 times. The result of each roll (throw) is stored in a variable called throw_result. Each of the 100 results are appended to a list called results as they are generated. The program also contains code to keep track of the number of times a one and a two are rolled. These are stored in a list called frequencies. 1 # Question 16(a) 2 # Examination Number: 3 from random import randint 4 5 print(\"Dice simulation program\") 6 results = [] 7 frequencies = [0, 0, 0, 0, 0, 0] 8 9 # Loop 100 times 10 for i in range (100): 11 throw_result = randint(1,6) # store a random value between 1 and 6 12 results.append(throw_result) # append each value to results 13 14 # Start to build up a list of frequencies for each value thrown 15 if throw_result == 1: 16 frequencies[0] = frequencies[0] + 1 17 elif throw_result == 2: 18 frequencies[1] = frequencies[1] + 1 19 20 print() 21 print(\"Results:\", results) This question continues on the next page. When the program is run, the output may look as follows: (Your output will be different because the dice numbers are generated randomly.) Dice simulation program Results: [1, 4, 1, 4, 2, 3, 2, 2, 2, 4, 3, 1, 6, 1, 3, 3, 5, 1, 1, 3, 2, 2, 4, 1, 6, 4, 4, 5, 2, 2, 4, 2, 1, 2, 4, 2, 6, 6, 5, 4, 3, 5, 5, 1, 1, 6, 5, 1, 3, 3, 5, 3, 1, 5, 3, 5, 3, 2, 1, 1, 1, 1, 4, 2, 5, 6, 4, 3, 4, 6, 4, 5, 2, 5, 5, 3, 1, 5, 4, 3, 2, 2, 6, 2, 2, 3, 3, 2, 3, 1, 5, 2, 5, 4, 6, 4, 3, 5, 5, 2] Make the following changes to the program: Change the program so that the first line in the output is Dice simulation and analysis program. When the program is run the output may now look as follows: Dice simulation and analysis program Results: [1, 4, 1, 5, 3, 6, 2, 6, 6, 1, 3, 6, 4, 5, 1, 2, 5, 3, 5, 6, 5, 6, 5, 3, 3, 3, 4, 1, 2, 6, 1, 2, 4, 4, 6, 2, 4, 6, 5, 3, 4, 6, 4, 1, 4, 5, 6, 1, 1, 3, 5, 6, 6, 1, 2, 2, 5, 4, 3, 2, 6, 2, 2, 2, 2, 1, 2, 3, 4, 3, 3, 4, 3, 1, 6, 4, 1, 2, 4, 1, 3, 4, 1, 5, 3, 3, 5, 4, 4, 1, 2, 4, 4, 5, 6, 5, 6, 1, 5, 3] When the program is run the output may now look as follows: Dice simulation and analysis program Results: [1, 3, 5, 1, 5, 1, 2, 4, 2, 5, 5, 5, 6, 4, 1, 1, 6, 4, 2, 1, 2, 6, 5, 3, 6, 5, 3, 6, 3, 3, 2, 1, 4, 2, 3, 4, 6, 6, 3, 3, 6, 5, 6, 6, 6, 5, 3, 2, 1, 3, 3, 6, 1, 4, 2, 5, 6, 4, 2, 1, 6, 6, 6, 4, 2, 2, 4, 5, 6, 3, 2, 6, 2, 2, 3, 3, 3, 1, 5, 6, 3, 6, 2, 5, 5, 1, 4, 5, 4, 1, 5, 4, 6, 4, 4, 5, 3, 3, 1, 4] Frequencies: [14, 15, 0, 0, 0, 0] The frequencies list tells us that the number one has been rolled 14 times and the number two has been rolled 15 times. The frequencies for the numbers three, four, five and six are not calculated by the program yet. This is the reason they are all zero. This question continues on the next page. When the program is run the output may now look as follows: Dice simulation and analysis program Results: [2, 4, 6, 2, 1, 4, 1, 3, 1, 3, 3, 6, 5, 5, 4, 3, 2, 2, 2, 1, 3, 4, 4, 3, 4, 6, 4, 2, 3, 1, 3, 3, 1, 5, 3, 3, 6, 5, 4, 6, 1, 5, 3, 4, 2, 1, 6, 6, 5, 2, 6, 4, 5, 2, 2, 6, 6, 5, 5, 6, 2, 3, 5, 6, 4, 1, 6, 2, 2, 6, 2, 6, 3, 3, 4, 2, 5, 5, 5, 3, 1, 2, 3, 4, 2, 6, 2, 1, 5, 6, 6, 2, 5, 2, 3, 2, 5, 2, 2, 6] Frequencies: [11, 23, 18, 13, 16, 19] In this case the frequencies list tells us that the number one has been rolled 11 times, the number two has been rolled 23 times, the number three has been rolled 18 times, the number four has been rolled 13 times, the number five has been rolled 16 times and the number six has been rolled 19 times. When the program is run the output may now look as follows: Dice simulation and analysis program Frequencies: [17, 21, 17, 18, 11, 16] Dice simulation and analysis program Frequencies: [15, 10, 25, 15, 15, 20] Dice Frequency ---- --------- 1 15 2 10 3 25 4 15 5 15 6 20 This question continues on the next page. When the program is run the output may now look as follows: Dice simulation and analysis program Frequencies: [16, 14, 12, 20, 25, 13] Dice Frequency ---- --------- 1 16 2 14 3 12 4 20 5 25 6 13 5 was rolled the most often (25 times) The number of asterisks (*) in each row should correspond to each frequency. For example, in the output below there are eight asterisks in row one because the frequency for the number one is eight. Each asterisk (*) can be printed using the single statement: print(\"*\", end=\"\") When the program is run the output may now look as follows: Dice simulation and analysis program Dice frequencies: [8, 12, 22, 26, 22, 10] Dice Frequency ---- --------- 1 8 2 12 3 22 4 26 5 22 6 10 4 was rolled most often - 26 times ******** ************ ********************** **************************** ********************** ********** Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Acknowledgements Images Image on P. 4: https://freesvg.org/vector-image-of-game-dice-close-up This document will not be returned to the State Examinations Commission. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Wednesday 25 May Morning 11:30 – 12:30",
+    stem: "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program simulates the rolling of a die 100 times. The program also contains code to keep track of the number of times a one and a two are rolled. These are stored in a list called frequencies. 1 # Question 16(a) 2 # Examination Number: 3 from random import randint 4 5 print(\"Dice simulation program\") 6 results = [] 7 frequencies = [0, 0, 0, 0, 0, 0] 8 9 # Loop 100 times 10 for i in range (100): 11 throw_result = randint(1,6) # store a random value between 1 and 6 12 results.append(throw_result) # append each value to results 13 14 # Start to build up a list of frequencies for each value thrown 15 if throw_result == 1: 16 frequencies[0] = frequencies[0] + 1 17 elif throw_result == 2: 18 frequencies[1] = frequencies[1] + 1 19 20 print() 21 print(\"Results:\", results) This question continues on the next page. When the program is run, the output may look as follows: (Your output will be different because the dice numbers are generated randomly.) Dice simulation program Results: [1, 4, 1, 4, 2, 3, 2, 2, 2, 4, 3, 1, 6, 1, 3, 3, 5, 1, 1, 3, 2, 2, 4, 1, 6, 4, 4, 5, 2, 2, 4, 2, 1, 2, 4, 2, 6, 6, 5, 4, 3, 5, 5, 1, 1, 6, 5, 1, 3, 3, 5, 3, 1, 5, 3, 5, 3, 2, 1, 1, 1, 1, 4, 2, 5, 6, 4, 3, 4, 6, 4, 5, 2, 5, 5, 3, 1, 5, 4, 3, 2, 2, 6, 2, 2, 3, 3, 2, 3, 1, 5, 2, 5, 4, 6, 4, 3, 5, 5, 2] Make the following changes to the program: Change the program so that the first line in the output is Dice simulation and analysis program. When the program is run the output may now look as follows: Dice simulation and analysis program Results: [1, 4, 1, 5, 3, 6, 2, 6, 6, 1, 3, 6, 4, 5, 1, 2, 5, 3, 5, 6, 5, 6, 5, 3, 3, 3, 4, 1, 2, 6, 1, 2, 4, 4, 6, 2, 4, 6, 5, 3, 4, 6, 4, 1, 4, 5, 6, 1, 1, 3, 5, 6, 6, 1, 2, 2, 5, 4, 3, 2, 6, 2, 2, 2, 2, 1, 2, 3, 4, 3, 3, 4, 3, 1, 6, 4, 1, 2, 4, 1, 3, 4, 1, 5, 3, 3, 5, 4, 4, 1, 2, 4, 4, 5, 6, 5, 6, 1, 5, 3] When the program is run the output may now look as follows: Dice simulation and analysis program Results: [1, 3, 5, 1, 5, 1, 2, 4, 2, 5, 5, 5, 6, 4, 1, 1, 6, 4, 2, 1, 2, 6, 5, 3, 6, 5, 3, 6, 3, 3, 2, 1, 4, 2, 3, 4, 6, 6, 3, 3, 6, 5, 6, 6, 6, 5, 3, 2, 1, 3, 3, 6, 1, 4, 2, 5, 6, 4, 2, 1, 6, 6, 6, 4, 2, 2, 4, 5, 6, 3, 2, 6, 2, 2, 3, 3, 3, 1, 5, 6, 3, 6, 2, 5, 5, 1, 4, 5, 4, 1, 5, 4, 6, 4, 4, 5, 3, 3, 1, 4] Frequencies: [14, 15, 0, 0, 0, 0] The frequencies list tells us that the number one has been rolled 14 times and the number two has been rolled 15 times. The frequencies for the numbers three, four, five and six are not calculated by the program yet. This is the reason they are all zero. This question continues on the next page. When the program is run the output may now look as follows: Dice simulation and analysis program Results: [2, 4, 6, 2, 1, 4, 1, 3, 1, 3, 3, 6, 5, 5, 4, 3, 2, 2, 2, 1, 3, 4, 4, 3, 4, 6, 4, 2, 3, 1, 3, 3, 1, 5, 3, 3, 6, 5, 4, 6, 1, 5, 3, 4, 2, 1, 6, 6, 5, 2, 6, 4, 5, 2, 2, 6, 6, 5, 5, 6, 2, 3, 5, 6, 4, 1, 6, 2, 2, 6, 2, 6, 3, 3, 4, 2, 5, 5, 5, 3, 1, 2, 3, 4, 2, 6, 2, 1, 5, 6, 6, 2, 5, 2, 3, 2, 5, 2, 2, 6] Frequencies: [11, 23, 18, 13, 16, 19] In this case the frequencies list tells us that the number one has been rolled 11 times, the number two has been rolled 23 times, the number three has been rolled 18 times, the number four has been rolled 13 times, the number five has been rolled 16 times and the number six has been rolled 19 times. When the program is run the output may now look as follows: Dice simulation and analysis program Frequencies: [17, 21, 17, 18, 11, 16] Dice simulation and analysis program Frequencies: [15, 10, 25, 15, 15, 20] Dice Frequency ---- --------- 1 15 2 10 3 25 4 15 5 15 6 20 This question continues on the next page. When the program is run the output may now look as follows: Dice simulation and analysis program Frequencies: [16, 14, 12, 20, 25, 13] Dice Frequency ---- --------- 1 16 2 14 3 12 4 20 5 25 6 13 5 was rolled the most often (25 times) The number of asterisks (*) in each row should correspond to each frequency. For example, in the output below there are eight asterisks in row one because the frequency for the number one is eight. Each asterisk (*) can be printed using the single statement: print(\"*\", end=\"\") When the program is run the output may now look as follows: Dice simulation and analysis program Dice frequencies: [8, 12, 22, 26, 22, 10] Dice Frequency ---- --------- 1 8 2 12 3 22 4 26 5 22 6 10 4 was rolled most often - 26 times ******** ************ ********************** **************************** ********************** ********** Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Space for rough work. This page will not be reviewed by an examiner. Acknowledgements Images Image on P. 4: https://freesvg.org/vector-image-of-game-dice-close-up This document will not be returned to the State Examinations Commission. Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Section C Wednesday 25 May Morning 11:30 – 12:30",
     questionText: "Extend the program to display a horizontal bar chart of the frequencies.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Separate newline for each row", marks: 10 },
     ],
     figure: {
-          "candId": "computer-science-2022-HL-paper-q16-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q16-code0.png",
-          "srcHash": "5361556dcbcff842da73151d93cf5145",
-          "alt": "The program printed with 2022 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The result of each roll (throw) is stored in a variable called throw_result. Each of the 100",
+          "candId": "computer-science-2022-HL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q16-figure.png",
+          "srcHash": "bbd1b84a8247bad4824dde09980e70b0",
+          "alt": "The program printed with 2022 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 31 lines and begins: The result of each roll (throw) is stored in a variable called throw_result. Each of the 100",
           "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1251,6 +1349,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "A B C A AND (B OR C)", marks: 5, accepts: ["0 0 0 0","0 0 1 0","0 1 0 0","0 1 1 0","1 0 0 0"] },
     ],
+    figure: {
+          "candId": "computer-science-2022-HL-paper-q4-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q4-fig0.png",
+          "srcHash": "2568c8d86c5b64deaace67fee62afa3a",
+          "alt": "The table or diagram printed with 2022 HL Question 4, as the State Examinations Commission set it. It is labelled: A, B, C, A AND (B OR C).",
+          "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1474,6 +1580,29 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2023 Higher Level — © State Examinations Commission.",
+    id: "cs-2023-hl-q15-a-i", topicId: "cs-2-3", conceptId: "search-algorithm-would-be-best-suited",
+    section: "B", questionRef: "2023 HL Q15(a)(i)",
+    stem: "Amir Dean Eoin Helen Natalia Steve Terry Search algorithms work by comparing the list elements with a particular search value, known as a key. Best Case Worst Case Linear Search O(1) Binary Search This question continues on the next page.",
+    questionText: "What search algorithm would be best suited to search the list of names shown above? Justify your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Linear search because the list is short/search is relatively fast on short lists.", marks: 1 },
+    { id: "r-2", kind: "point", verbatim: "Binary search because the list is already sorted/search is faster. Note: No marks for identifying the search algorithm with no or invalid justification Valid justification for the search algorithm named", marks: 1 },
+    ],
+    figure: {
+          "candId": "computer-science-2023-HL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q15-fig0.png",
+          "srcHash": "58c281b828df0a409a80ce4a3974a5ce",
+          "alt": "The table or diagram printed with 2023 HL Question 15, as the State Examinations Commission set it. It is labelled: Best Case, Worst Case, Linear Search, O(1), Binary Search.",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2023 Higher Level — © State Examinations Commission.",
     id: "cs-2023-hl-q15-a-ii", topicId: "cs-2-2", conceptId: "list-order-names-would-be-compared",
     section: "B", questionRef: "2023 HL Q15(a)(ii)",
     stem: "Amir Dean Eoin Helen Natalia Steve Terry Search algorithms work by comparing the list elements with a particular search value, known as a key. Best Case Worst Case Linear Search O(1) Binary Search This question continues on the next page.",
@@ -1483,6 +1612,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Amir, Dean, Eoin, Helen, Natalia", marks: 1 },
     { id: "r-2", kind: "point", verbatim: "All names except Natalia listed", marks: 1 },
     ],
+    figure: {
+          "candId": "computer-science-2023-HL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q15-fig0.png",
+          "srcHash": "58c281b828df0a409a80ce4a3974a5ce",
+          "alt": "The table or diagram printed with 2023 HL Question 15, as the State Examinations Commission set it. It is labelled: Best Case, Worst Case, Linear Search, O(1), Binary Search.",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1498,6 +1635,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Helen, Steve, Natalia", marks: 1 },
     { id: "r-2", kind: "point", verbatim: "All names except Natalia listed", marks: 1 },
     ],
+    figure: {
+          "candId": "computer-science-2023-HL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q15-fig0.png",
+          "srcHash": "58c281b828df0a409a80ce4a3974a5ce",
+          "alt": "The table or diagram printed with 2023 HL Question 15, as the State Examinations Commission set it. It is labelled: Best Case, Worst Case, Linear Search, O(1), Binary Search.",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1512,6 +1657,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Best Case Worst Case", marks: 3 },
     ],
+    figure: {
+          "candId": "computer-science-2023-HL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q15-fig0.png",
+          "srcHash": "58c281b828df0a409a80ce4a3974a5ce",
+          "alt": "The table or diagram printed with 2023 HL Question 15, as the State Examinations Commission set it. It is labelled: Best Case, Worst Case, Linear Search, O(1), Binary Search.",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1526,6 +1679,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "O(1) time complexity means that the time needed to perform a certain task remains", marks: 3 },
     ],
+    figure: {
+          "candId": "computer-science-2023-HL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q15-fig0.png",
+          "srcHash": "58c281b828df0a409a80ce4a3974a5ce",
+          "alt": "The table or diagram printed with 2023 HL Question 15, as the State Examinations Commission set it. It is labelled: Best Case, Worst Case, Linear Search, O(1), Binary Search.",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1540,6 +1701,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Start line number: 6", marks: 5 },
     ],
+    figure: {
+          "candId": "computer-science-2023-HL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q15-fig0.png",
+          "srcHash": "58c281b828df0a409a80ce4a3974a5ce",
+          "alt": "The table or diagram printed with 2023 HL Question 15, as the State Examinations Commission set it. It is labelled: Best Case, Worst Case, Linear Search, O(1), Binary Search.",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1554,6 +1723,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "The purpose of a return statement is to end the function", marks: 3 },
     ],
+    figure: {
+          "candId": "computer-science-2023-HL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q15-fig0.png",
+          "srcHash": "58c281b828df0a409a80ce4a3974a5ce",
+          "alt": "The table or diagram printed with 2023 HL Question 15, as the State Examinations Commission set it. It is labelled: Best Case, Worst Case, Linear Search, O(1), Binary Search.",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1568,6 +1745,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Recursive functions have the following three properties:", marks: 6 },
     ],
+    figure: {
+          "candId": "computer-science-2023-HL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q15-fig0.png",
+          "srcHash": "58c281b828df0a409a80ce4a3974a5ce",
+          "alt": "The table or diagram printed with 2023 HL Question 15, as the State Examinations Commission set it. It is labelled: Best Case, Worst Case, Linear Search, O(1), Binary Search.",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1587,6 +1772,36 @@ export const CARDS: SecCard[] = [
     { id: "r-5", kind: "point", verbatim: "Performance. Recursion can lead to slower execution time due to memory overheads", marks: 1 },
     { id: "r-6", kind: "point", verbatim: "If recursion is too deep, then there is a danger of running out of space on the stack and ultimately program crashes. For each advantage/disadvantage:", marks: 1 },
     ],
+    figure: {
+          "candId": "computer-science-2023-HL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q15-fig0.png",
+          "srcHash": "58c281b828df0a409a80ce4a3974a5ce",
+          "alt": "The table or diagram printed with 2023 HL Question 15, as the State Examinations Commission set it. It is labelled: Best Case, Worst Case, Linear Search, O(1), Binary Search.",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2023 Higher Level — © State Examinations Commission.",
+    id: "cs-2023-hl-q15-c-iii", topicId: "cs-2-2", conceptId: "given-list-names-initialised-shown-below",
+    section: "B", questionRef: "2023 HL Q15(c)(iii)",
+    stem: "1 def binary_search2(v, L, lo, hi): 2 3 if lo > hi: 4 return len(L) 5 6 mid = (lo + hi)//2 7 8 if L[mid] > v: 9 return binary_search2(v, L, lo, mid-1) 10 elif L[mid] < v: 11 return binary_search2(v, L, mid+1, hi) 12 13 return mid names = [\"Amir\", \"Dean\", \"Eoin\", \"Helen\", \"Natalia\", \"Steve\", \"Terry\"] Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Acknowledgements Images Image on page 5: https://www.ccnahub.com/ip-fundamentals/understanding-tcp-ip-and-osi-models/ Image on page 7: https://www.researchgate.net/figure/On-the-left-is-the-Wolf-Goat-and-Cabbage-puzzle- environment-Right-screenshot-from-a_fig2_305084487 Image on page 11: https://devoxsoftware.com/blog/software-development-lifecycle/ Image on page 12: https://www.donegaldaily.com/2021/05/12/making-remote-work-an-office-with-a-view-on- arranmore/ Image on page 14: https://skybiometry.com/the-best-face-recognition-software-for-your-business/ Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Sections A & B Wednesday 24 May Morning 9:30 – 11:00 2023L219A2EL 2023. M110C Coimisiún na Scrúduithe Stáit State Examinations Commission Computer Science Section C Higher Level Wednesday 24 May Morning 11:30 – 12:30 80 marks This document will not be returned to the State Examinations Commission. Instructions There is one section in this paper. Section C Programming One question 80 marks Calculators may be used during this section of the examination. The Formulae and Tables booklet cannot be used for this section of the examination. The superintendent will give you a copy of the Python Reference Guide. Ensure that you save your work regularly. Save your files using the naming structure described at the beginning of each question part. If you are unable to get some code to work correctly, you can comment out the code so that you can proceed. The code that has been commented out will be reviewed by the examiner. Rough work pages are provided at the end of this booklet. Please note that this booklet is not to be handed up and will not be reviewed by an examiner. At the end of the examination it is your responsibility to ensure that you have saved your files onto your external media. You will be provided with a brown envelope for your external media. Write your examination number on this envelope and place your external media into it before sealing. Place this envelope in the pouch at the front of the red envelope that contains your examination booklet from Section A and B. Section C Programming 80 marks",
+    questionText: "Given a list of names, initialised as shown below, write a line of code to call the function binary_search2 to find the name Natalia. You should store the result of the function in a variable called result.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "result = binary_search2(\"Natalia\", names, 0, len(names)-1)", marks: 3 },
+    ],
+    figure: {
+          "candId": "computer-science-2023-HL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q15-fig0.png",
+          "srcHash": "58c281b828df0a409a80ce4a3974a5ce",
+          "alt": "The table or diagram printed with 2023 HL Question 15, as the State Examinations Commission set it. It is labelled: Best Case, Worst Case, Linear Search, O(1), Binary Search.",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1595,17 +1810,17 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2023 Higher Level — © State Examinations Commission.",
     id: "cs-2023-hl-q16-a-i", topicId: "cs-2-2", conceptId: "change-program-display-extra-line-output",
     section: "B", questionRef: "2023 HL Q16(a)(i)",
-    stem: "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program defines a function called guess_game which simulates a guessing game. When the function is called, the program generates a secret number between 1 and 5 inclusive. This is stored in a variable called secret_number. The program then enters a loop in which the user is prompted to guess the number. The user’s guess is stored in the variable user_guess. Every time the user enters a guess the program increases the variable guess_count by one. If the user’s guess matches the computer’s secret number, the message ‘Congratulations! You win!’ is displayed. The loop continues until the user guesses the secret number. 1 # Question 16(a) 2 # Examination Number: 3 from random import randint 4 5 def guess_game(max_guesses_allowed): 6 7 secret_number = randint(1, 5) 8 guess_count = 0 9 user_guess = 0 10 11 while (user_guess != secret_number): 12 13 user_guess = int(input(\"Enter your guess: \")) 14 guess_count += 1 #Increase guess_count by 1 15 if user_guess == secret_number: 16 print(\"Congratulations! You win!\") 17 18 print(\"Welcome to the guessing game!\") 19 guess_game(3) This question continues on the next page. When the program is run, the output may look as follows. Your output may be different as the secret number is generated randomly. Welcome to the guessing game! Enter your guess: 2 Enter your guess: 3 Enter your guess: 1 Congratulations! You win! Make the following changes to the program: When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 2 Enter your guess: 3 Enter your guess: 1 Congratulations! You win! You took 3 guesses. Change the program so that it displays one of the following messages as a hint to the user: ‘Sorry! Your guess was too low’ or ‘Sorry! Your guess was too high’ When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Enter your guess: 3 Sorry! Your guess was too low Enter your guess: 4 Congratulations! You win! You took 4 guesses. This question continues on the next page. Hint: You will need to change the loop so that it continues as long as the user’s guess is not equal to the secret number and the number of guesses is less than max_guesses_allowed. When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Enter your guess: 2 Sorry! Your guess was too low Modify the program so that the user is presented with the prompt: Enter the maximum number of guesses allowed. Store the value entered as an integer and pass this value into the function guess_game. When the program is run the output may now look as follows: Welcome to the guessing game! Enter the maximum number of guesses allowed: 2 Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Modify the program so that it prompts the user to enter a difficulty level – ‘E’ for easy and ‘H’ for hard. If the user chooses ‘H’ the secret number should be between 1 and 100 inclusive. A value of anything other than ‘H’ can be interpreted as easy. When the program is run the output may now look as follows: Welcome to the guessing game! Enter the maximum number of guesses allowed: 3 Enter difficulty E(asy) or H(ard): H Enter your guess: 50 Sorry! Your guess was too low Enter your guess: 75 Sorry! Your guess was too low Enter your guess: 95 Sorry! Your guess was too low This question continues on the next page. This question continues on the next page.",
+    stem: "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program defines a function called guess_game which simulates a guessing game. When the function is called, the program generates a secret number between 1 and 5 inclusive. This is stored in a variable called secret_number. The program then enters a loop in which the user is prompted to guess the number. matches the computer’s secret number, the message ‘Congratulations! You win!’ is displayed. The loop continues until the user guesses the secret number. 1 # Question 16(a) 2 # Examination Number: 3 from random import randint 4 5 def guess_game(max_guesses_allowed): 6 7 secret_number = randint(1, 5) 8 guess_count = 0 9 user_guess = 0 10 11 while (user_guess != secret_number): 12 13 user_guess = int(input(\"Enter your guess: \")) 14 guess_count += 1 #Increase guess_count by 1 15 if user_guess == secret_number: 16 print(\"Congratulations! You win!\") 17 18 print(\"Welcome to the guessing game!\") 19 guess_game(3) This question continues on the next page. When the program is run, the output may look as follows. Your output may be different as the secret number is generated randomly. Welcome to the guessing game! Enter your guess: 2 Enter your guess: 3 Enter your guess: 1 Congratulations! You win! Make the following changes to the program: When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 2 Enter your guess: 3 Enter your guess: 1 Congratulations! You win! You took 3 guesses. Change the program so that it displays one of the following messages as a hint to the user: ‘Sorry! Your guess was too low’ or ‘Sorry! Your guess was too high’ When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Enter your guess: 3 Sorry! Your guess was too low Enter your guess: 4 Congratulations! You win! You took 4 guesses. This question continues on the next page. Hint: You will need to change the loop so that it continues as long as the user’s guess is not equal to the secret number and the number of guesses is less than max_guesses_allowed. When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Enter your guess: 2 Sorry! Your guess was too low Modify the program so that the user is presented with the prompt: Enter the maximum number of guesses allowed. Store the value entered as an integer and pass this value into the function guess_game. When the program is run the output may now look as follows: Welcome to the guessing game! Enter the maximum number of guesses allowed: 2 Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Modify the program so that it prompts the user to enter a difficulty level – ‘E’ for easy and ‘H’ for hard. If the user chooses ‘H’ the secret number should be between 1 and 100 inclusive. A value of anything other than ‘H’ can be interpreted as easy. When the program is run the output may now look as follows: Welcome to the guessing game! Enter the maximum number of guesses allowed: 3 Enter difficulty E(asy) or H(ard): H Enter your guess: 50 Sorry! Your guess was too low Enter your guess: 75 Sorry! Your guess was too low Enter your guess: 95 Sorry! Your guess was too low This question continues on the next page. This question continues on the next page.",
     questionText: "Change the program to display an extra line of output when the user wins, showing the number of guesses taken.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "10 marks Correct response", marks: 10 },
     ],
     figure: {
-          "candId": "computer-science-2023-HL-paper-q16-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q16-code0.png",
-          "srcHash": "92c2ee964ee09bb9a78439f647dddc73",
-          "alt": "The program printed with 2023 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The user’s guess is stored in the variable user_guess. Every time the user enters a",
+          "candId": "computer-science-2023-HL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q16-figure.png",
+          "srcHash": "c57206f1ca3acbf1a5213b2d53350aa9",
+          "alt": "The program printed with 2023 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 28 lines and begins: The user’s guess is stored in the variable user_guess. Every time the user enters a",
           "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1617,17 +1832,17 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2023 Higher Level — © State Examinations Commission.",
     id: "cs-2023-hl-q16-a-ii", topicId: "cs-2-2", conceptId: "program-does-not-display-message-unless",
     section: "B", questionRef: "2023 HL Q16(a)(ii)",
-    stem: "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program defines a function called guess_game which simulates a guessing game. When the function is called, the program generates a secret number between 1 and 5 inclusive. This is stored in a variable called secret_number. The program then enters a loop in which the user is prompted to guess the number. The user’s guess is stored in the variable user_guess. Every time the user enters a guess the program increases the variable guess_count by one. If the user’s guess matches the computer’s secret number, the message ‘Congratulations! You win!’ is displayed. The loop continues until the user guesses the secret number. 1 # Question 16(a) 2 # Examination Number: 3 from random import randint 4 5 def guess_game(max_guesses_allowed): 6 7 secret_number = randint(1, 5) 8 guess_count = 0 9 user_guess = 0 10 11 while (user_guess != secret_number): 12 13 user_guess = int(input(\"Enter your guess: \")) 14 guess_count += 1 #Increase guess_count by 1 15 if user_guess == secret_number: 16 print(\"Congratulations! You win!\") 17 18 print(\"Welcome to the guessing game!\") 19 guess_game(3) This question continues on the next page. When the program is run, the output may look as follows. Your output may be different as the secret number is generated randomly. Welcome to the guessing game! Enter your guess: 2 Enter your guess: 3 Enter your guess: 1 Congratulations! You win! Make the following changes to the program: When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 2 Enter your guess: 3 Enter your guess: 1 Congratulations! You win! You took 3 guesses. Change the program so that it displays one of the following messages as a hint to the user: ‘Sorry! Your guess was too low’ or ‘Sorry! Your guess was too high’ When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Enter your guess: 3 Sorry! Your guess was too low Enter your guess: 4 Congratulations! You win! You took 4 guesses. This question continues on the next page. Hint: You will need to change the loop so that it continues as long as the user’s guess is not equal to the secret number and the number of guesses is less than max_guesses_allowed. When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Enter your guess: 2 Sorry! Your guess was too low Modify the program so that the user is presented with the prompt: Enter the maximum number of guesses allowed. Store the value entered as an integer and pass this value into the function guess_game. When the program is run the output may now look as follows: Welcome to the guessing game! Enter the maximum number of guesses allowed: 2 Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Modify the program so that it prompts the user to enter a difficulty level – ‘E’ for easy and ‘H’ for hard. If the user chooses ‘H’ the secret number should be between 1 and 100 inclusive. A value of anything other than ‘H’ can be interpreted as easy. When the program is run the output may now look as follows: Welcome to the guessing game! Enter the maximum number of guesses allowed: 3 Enter difficulty E(asy) or H(ard): H Enter your guess: 50 Sorry! Your guess was too low Enter your guess: 75 Sorry! Your guess was too low Enter your guess: 95 Sorry! Your guess was too low This question continues on the next page. This question continues on the next page.",
+    stem: "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program defines a function called guess_game which simulates a guessing game. When the function is called, the program generates a secret number between 1 and 5 inclusive. This is stored in a variable called secret_number. The program then enters a loop in which the user is prompted to guess the number. matches the computer’s secret number, the message ‘Congratulations! You win!’ is displayed. The loop continues until the user guesses the secret number. 1 # Question 16(a) 2 # Examination Number: 3 from random import randint 4 5 def guess_game(max_guesses_allowed): 6 7 secret_number = randint(1, 5) 8 guess_count = 0 9 user_guess = 0 10 11 while (user_guess != secret_number): 12 13 user_guess = int(input(\"Enter your guess: \")) 14 guess_count += 1 #Increase guess_count by 1 15 if user_guess == secret_number: 16 print(\"Congratulations! You win!\") 17 18 print(\"Welcome to the guessing game!\") 19 guess_game(3) This question continues on the next page. When the program is run, the output may look as follows. Your output may be different as the secret number is generated randomly. Welcome to the guessing game! Enter your guess: 2 Enter your guess: 3 Enter your guess: 1 Congratulations! You win! Make the following changes to the program: When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 2 Enter your guess: 3 Enter your guess: 1 Congratulations! You win! You took 3 guesses. Change the program so that it displays one of the following messages as a hint to the user: ‘Sorry! Your guess was too low’ or ‘Sorry! Your guess was too high’ When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Enter your guess: 3 Sorry! Your guess was too low Enter your guess: 4 Congratulations! You win! You took 4 guesses. This question continues on the next page. Hint: You will need to change the loop so that it continues as long as the user’s guess is not equal to the secret number and the number of guesses is less than max_guesses_allowed. When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Enter your guess: 2 Sorry! Your guess was too low Modify the program so that the user is presented with the prompt: Enter the maximum number of guesses allowed. Store the value entered as an integer and pass this value into the function guess_game. When the program is run the output may now look as follows: Welcome to the guessing game! Enter the maximum number of guesses allowed: 2 Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Modify the program so that it prompts the user to enter a difficulty level – ‘E’ for easy and ‘H’ for hard. If the user chooses ‘H’ the secret number should be between 1 and 100 inclusive. A value of anything other than ‘H’ can be interpreted as easy. When the program is run the output may now look as follows: Welcome to the guessing game! Enter the maximum number of guesses allowed: 3 Enter difficulty E(asy) or H(ard): H Enter your guess: 50 Sorry! Your guess was too low Enter your guess: 75 Sorry! Your guess was too low Enter your guess: 95 Sorry! Your guess was too low This question continues on the next page. This question continues on the next page.",
     questionText: "The program does not display a message unless the user guesses the secret number.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "10 marks Correct response", marks: 10 },
     ],
     figure: {
-          "candId": "computer-science-2023-HL-paper-q16-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q16-code0.png",
-          "srcHash": "92c2ee964ee09bb9a78439f647dddc73",
-          "alt": "The program printed with 2023 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The user’s guess is stored in the variable user_guess. Every time the user enters a",
+          "candId": "computer-science-2023-HL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q16-figure.png",
+          "srcHash": "c57206f1ca3acbf1a5213b2d53350aa9",
+          "alt": "The program printed with 2023 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 28 lines and begins: The user’s guess is stored in the variable user_guess. Every time the user enters a",
           "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1639,17 +1854,17 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2023 Higher Level — © State Examinations Commission.",
     id: "cs-2023-hl-q16-a-iii", topicId: "cs-2-2", conceptId: "currently-program-has-no-way-ending",
     section: "B", questionRef: "2023 HL Q16(a)(iii)",
-    stem: "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program defines a function called guess_game which simulates a guessing game. When the function is called, the program generates a secret number between 1 and 5 inclusive. This is stored in a variable called secret_number. The program then enters a loop in which the user is prompted to guess the number. The user’s guess is stored in the variable user_guess. Every time the user enters a guess the program increases the variable guess_count by one. If the user’s guess matches the computer’s secret number, the message ‘Congratulations! You win!’ is displayed. The loop continues until the user guesses the secret number. 1 # Question 16(a) 2 # Examination Number: 3 from random import randint 4 5 def guess_game(max_guesses_allowed): 6 7 secret_number = randint(1, 5) 8 guess_count = 0 9 user_guess = 0 10 11 while (user_guess != secret_number): 12 13 user_guess = int(input(\"Enter your guess: \")) 14 guess_count += 1 #Increase guess_count by 1 15 if user_guess == secret_number: 16 print(\"Congratulations! You win!\") 17 18 print(\"Welcome to the guessing game!\") 19 guess_game(3) This question continues on the next page. When the program is run, the output may look as follows. Your output may be different as the secret number is generated randomly. Welcome to the guessing game! Enter your guess: 2 Enter your guess: 3 Enter your guess: 1 Congratulations! You win! Make the following changes to the program: When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 2 Enter your guess: 3 Enter your guess: 1 Congratulations! You win! You took 3 guesses. Change the program so that it displays one of the following messages as a hint to the user: ‘Sorry! Your guess was too low’ or ‘Sorry! Your guess was too high’ When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Enter your guess: 3 Sorry! Your guess was too low Enter your guess: 4 Congratulations! You win! You took 4 guesses. This question continues on the next page. Hint: You will need to change the loop so that it continues as long as the user’s guess is not equal to the secret number and the number of guesses is less than max_guesses_allowed. When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Enter your guess: 2 Sorry! Your guess was too low Modify the program so that the user is presented with the prompt: Enter the maximum number of guesses allowed. Store the value entered as an integer and pass this value into the function guess_game. When the program is run the output may now look as follows: Welcome to the guessing game! Enter the maximum number of guesses allowed: 2 Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Modify the program so that it prompts the user to enter a difficulty level – ‘E’ for easy and ‘H’ for hard. If the user chooses ‘H’ the secret number should be between 1 and 100 inclusive. A value of anything other than ‘H’ can be interpreted as easy. When the program is run the output may now look as follows: Welcome to the guessing game! Enter the maximum number of guesses allowed: 3 Enter difficulty E(asy) or H(ard): H Enter your guess: 50 Sorry! Your guess was too low Enter your guess: 75 Sorry! Your guess was too low Enter your guess: 95 Sorry! Your guess was too low This question continues on the next page. This question continues on the next page.",
+    stem: "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program defines a function called guess_game which simulates a guessing game. When the function is called, the program generates a secret number between 1 and 5 inclusive. This is stored in a variable called secret_number. The program then enters a loop in which the user is prompted to guess the number. matches the computer’s secret number, the message ‘Congratulations! You win!’ is displayed. The loop continues until the user guesses the secret number. 1 # Question 16(a) 2 # Examination Number: 3 from random import randint 4 5 def guess_game(max_guesses_allowed): 6 7 secret_number = randint(1, 5) 8 guess_count = 0 9 user_guess = 0 10 11 while (user_guess != secret_number): 12 13 user_guess = int(input(\"Enter your guess: \")) 14 guess_count += 1 #Increase guess_count by 1 15 if user_guess == secret_number: 16 print(\"Congratulations! You win!\") 17 18 print(\"Welcome to the guessing game!\") 19 guess_game(3) This question continues on the next page. When the program is run, the output may look as follows. Your output may be different as the secret number is generated randomly. Welcome to the guessing game! Enter your guess: 2 Enter your guess: 3 Enter your guess: 1 Congratulations! You win! Make the following changes to the program: When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 2 Enter your guess: 3 Enter your guess: 1 Congratulations! You win! You took 3 guesses. Change the program so that it displays one of the following messages as a hint to the user: ‘Sorry! Your guess was too low’ or ‘Sorry! Your guess was too high’ When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Enter your guess: 3 Sorry! Your guess was too low Enter your guess: 4 Congratulations! You win! You took 4 guesses. This question continues on the next page. Hint: You will need to change the loop so that it continues as long as the user’s guess is not equal to the secret number and the number of guesses is less than max_guesses_allowed. When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Enter your guess: 2 Sorry! Your guess was too low Modify the program so that the user is presented with the prompt: Enter the maximum number of guesses allowed. Store the value entered as an integer and pass this value into the function guess_game. When the program is run the output may now look as follows: Welcome to the guessing game! Enter the maximum number of guesses allowed: 2 Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Modify the program so that it prompts the user to enter a difficulty level – ‘E’ for easy and ‘H’ for hard. If the user chooses ‘H’ the secret number should be between 1 and 100 inclusive. A value of anything other than ‘H’ can be interpreted as easy. When the program is run the output may now look as follows: Welcome to the guessing game! Enter the maximum number of guesses allowed: 3 Enter difficulty E(asy) or H(ard): H Enter your guess: 50 Sorry! Your guess was too low Enter your guess: 75 Sorry! Your guess was too low Enter your guess: 95 Sorry! Your guess was too low This question continues on the next page. This question continues on the next page.",
     questionText: "Currently the program has no way of ending unless the user guesses the secret number. Change the program so that it does not allow the user more than three guesses. This is the value currently being passed into the function.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "19", marks: 5 },
     ],
     figure: {
-          "candId": "computer-science-2023-HL-paper-q16-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q16-code0.png",
-          "srcHash": "92c2ee964ee09bb9a78439f647dddc73",
-          "alt": "The program printed with 2023 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The user’s guess is stored in the variable user_guess. Every time the user enters a",
+          "candId": "computer-science-2023-HL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q16-figure.png",
+          "srcHash": "c57206f1ca3acbf1a5213b2d53350aa9",
+          "alt": "The program printed with 2023 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 28 lines and begins: The user’s guess is stored in the variable user_guess. Every time the user enters a",
           "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1661,17 +1876,17 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2023 Higher Level — © State Examinations Commission.",
     id: "cs-2023-hl-q16-a-iv", topicId: "cs-2-5", conceptId: "currently-number-guesses-user-allowed-hard",
     section: "B", questionRef: "2023 HL Q16(a)(iv)",
-    stem: "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program defines a function called guess_game which simulates a guessing game. When the function is called, the program generates a secret number between 1 and 5 inclusive. This is stored in a variable called secret_number. The program then enters a loop in which the user is prompted to guess the number. The user’s guess is stored in the variable user_guess. Every time the user enters a guess the program increases the variable guess_count by one. If the user’s guess matches the computer’s secret number, the message ‘Congratulations! You win!’ is displayed. The loop continues until the user guesses the secret number. 1 # Question 16(a) 2 # Examination Number: 3 from random import randint 4 5 def guess_game(max_guesses_allowed): 6 7 secret_number = randint(1, 5) 8 guess_count = 0 9 user_guess = 0 10 11 while (user_guess != secret_number): 12 13 user_guess = int(input(\"Enter your guess: \")) 14 guess_count += 1 #Increase guess_count by 1 15 if user_guess == secret_number: 16 print(\"Congratulations! You win!\") 17 18 print(\"Welcome to the guessing game!\") 19 guess_game(3) This question continues on the next page. When the program is run, the output may look as follows. Your output may be different as the secret number is generated randomly. Welcome to the guessing game! Enter your guess: 2 Enter your guess: 3 Enter your guess: 1 Congratulations! You win! Make the following changes to the program: When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 2 Enter your guess: 3 Enter your guess: 1 Congratulations! You win! You took 3 guesses. Change the program so that it displays one of the following messages as a hint to the user: ‘Sorry! Your guess was too low’ or ‘Sorry! Your guess was too high’ When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Enter your guess: 3 Sorry! Your guess was too low Enter your guess: 4 Congratulations! You win! You took 4 guesses. This question continues on the next page. Hint: You will need to change the loop so that it continues as long as the user’s guess is not equal to the secret number and the number of guesses is less than max_guesses_allowed. When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Enter your guess: 2 Sorry! Your guess was too low Modify the program so that the user is presented with the prompt: Enter the maximum number of guesses allowed. Store the value entered as an integer and pass this value into the function guess_game. When the program is run the output may now look as follows: Welcome to the guessing game! Enter the maximum number of guesses allowed: 2 Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Modify the program so that it prompts the user to enter a difficulty level – ‘E’ for easy and ‘H’ for hard. If the user chooses ‘H’ the secret number should be between 1 and 100 inclusive. A value of anything other than ‘H’ can be interpreted as easy. When the program is run the output may now look as follows: Welcome to the guessing game! Enter the maximum number of guesses allowed: 3 Enter difficulty E(asy) or H(ard): H Enter your guess: 50 Sorry! Your guess was too low Enter your guess: 75 Sorry! Your guess was too low Enter your guess: 95 Sorry! Your guess was too low This question continues on the next page. This question continues on the next page.",
+    stem: "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program defines a function called guess_game which simulates a guessing game. When the function is called, the program generates a secret number between 1 and 5 inclusive. This is stored in a variable called secret_number. The program then enters a loop in which the user is prompted to guess the number. matches the computer’s secret number, the message ‘Congratulations! You win!’ is displayed. The loop continues until the user guesses the secret number. 1 # Question 16(a) 2 # Examination Number: 3 from random import randint 4 5 def guess_game(max_guesses_allowed): 6 7 secret_number = randint(1, 5) 8 guess_count = 0 9 user_guess = 0 10 11 while (user_guess != secret_number): 12 13 user_guess = int(input(\"Enter your guess: \")) 14 guess_count += 1 #Increase guess_count by 1 15 if user_guess == secret_number: 16 print(\"Congratulations! You win!\") 17 18 print(\"Welcome to the guessing game!\") 19 guess_game(3) This question continues on the next page. When the program is run, the output may look as follows. Your output may be different as the secret number is generated randomly. Welcome to the guessing game! Enter your guess: 2 Enter your guess: 3 Enter your guess: 1 Congratulations! You win! Make the following changes to the program: When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 2 Enter your guess: 3 Enter your guess: 1 Congratulations! You win! You took 3 guesses. Change the program so that it displays one of the following messages as a hint to the user: ‘Sorry! Your guess was too low’ or ‘Sorry! Your guess was too high’ When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Enter your guess: 3 Sorry! Your guess was too low Enter your guess: 4 Congratulations! You win! You took 4 guesses. This question continues on the next page. Hint: You will need to change the loop so that it continues as long as the user’s guess is not equal to the secret number and the number of guesses is less than max_guesses_allowed. When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Enter your guess: 2 Sorry! Your guess was too low Modify the program so that the user is presented with the prompt: Enter the maximum number of guesses allowed. Store the value entered as an integer and pass this value into the function guess_game. When the program is run the output may now look as follows: Welcome to the guessing game! Enter the maximum number of guesses allowed: 2 Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Modify the program so that it prompts the user to enter a difficulty level – ‘E’ for easy and ‘H’ for hard. If the user chooses ‘H’ the secret number should be between 1 and 100 inclusive. A value of anything other than ‘H’ can be interpreted as easy. When the program is run the output may now look as follows: Welcome to the guessing game! Enter the maximum number of guesses allowed: 3 Enter difficulty E(asy) or H(ard): H Enter your guess: 50 Sorry! Your guess was too low Enter your guess: 75 Sorry! Your guess was too low Enter your guess: 95 Sorry! Your guess was too low This question continues on the next page. This question continues on the next page.",
     questionText: "Currently the number of guesses that the user is allowed is hard coded to three.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "semantic error.", marks: 5 },
     ],
     figure: {
-          "candId": "computer-science-2023-HL-paper-q16-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q16-code0.png",
-          "srcHash": "92c2ee964ee09bb9a78439f647dddc73",
-          "alt": "The program printed with 2023 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The user’s guess is stored in the variable user_guess. Every time the user enters a",
+          "candId": "computer-science-2023-HL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q16-figure.png",
+          "srcHash": "c57206f1ca3acbf1a5213b2d53350aa9",
+          "alt": "The program printed with 2023 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 28 lines and begins: The user’s guess is stored in the variable user_guess. Every time the user enters a",
           "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1683,7 +1898,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2023 Higher Level — © State Examinations Commission.",
     id: "cs-2023-hl-q16-a-v", topicId: "cs-2-5", conceptId: "currently-secret-number-always-between-1",
     section: "B", questionRef: "2023 HL Q16(a)(v)",
-    stem: "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program defines a function called guess_game which simulates a guessing game. When the function is called, the program generates a secret number between 1 and 5 inclusive. This is stored in a variable called secret_number. The program then enters a loop in which the user is prompted to guess the number. The user’s guess is stored in the variable user_guess. Every time the user enters a guess the program increases the variable guess_count by one. If the user’s guess matches the computer’s secret number, the message ‘Congratulations! You win!’ is displayed. The loop continues until the user guesses the secret number. 1 # Question 16(a) 2 # Examination Number: 3 from random import randint 4 5 def guess_game(max_guesses_allowed): 6 7 secret_number = randint(1, 5) 8 guess_count = 0 9 user_guess = 0 10 11 while (user_guess != secret_number): 12 13 user_guess = int(input(\"Enter your guess: \")) 14 guess_count += 1 #Increase guess_count by 1 15 if user_guess == secret_number: 16 print(\"Congratulations! You win!\") 17 18 print(\"Welcome to the guessing game!\") 19 guess_game(3) This question continues on the next page. When the program is run, the output may look as follows. Your output may be different as the secret number is generated randomly. Welcome to the guessing game! Enter your guess: 2 Enter your guess: 3 Enter your guess: 1 Congratulations! You win! Make the following changes to the program: When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 2 Enter your guess: 3 Enter your guess: 1 Congratulations! You win! You took 3 guesses. Change the program so that it displays one of the following messages as a hint to the user: ‘Sorry! Your guess was too low’ or ‘Sorry! Your guess was too high’ When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Enter your guess: 3 Sorry! Your guess was too low Enter your guess: 4 Congratulations! You win! You took 4 guesses. This question continues on the next page. Hint: You will need to change the loop so that it continues as long as the user’s guess is not equal to the secret number and the number of guesses is less than max_guesses_allowed. When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Enter your guess: 2 Sorry! Your guess was too low Modify the program so that the user is presented with the prompt: Enter the maximum number of guesses allowed. Store the value entered as an integer and pass this value into the function guess_game. When the program is run the output may now look as follows: Welcome to the guessing game! Enter the maximum number of guesses allowed: 2 Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Modify the program so that it prompts the user to enter a difficulty level – ‘E’ for easy and ‘H’ for hard. If the user chooses ‘H’ the secret number should be between 1 and 100 inclusive. A value of anything other than ‘H’ can be interpreted as easy. When the program is run the output may now look as follows: Welcome to the guessing game! Enter the maximum number of guesses allowed: 3 Enter difficulty E(asy) or H(ard): H Enter your guess: 50 Sorry! Your guess was too low Enter your guess: 75 Sorry! Your guess was too low Enter your guess: 95 Sorry! Your guess was too low This question continues on the next page. This question continues on the next page.",
+    stem: "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program defines a function called guess_game which simulates a guessing game. When the function is called, the program generates a secret number between 1 and 5 inclusive. This is stored in a variable called secret_number. The program then enters a loop in which the user is prompted to guess the number. matches the computer’s secret number, the message ‘Congratulations! You win!’ is displayed. The loop continues until the user guesses the secret number. 1 # Question 16(a) 2 # Examination Number: 3 from random import randint 4 5 def guess_game(max_guesses_allowed): 6 7 secret_number = randint(1, 5) 8 guess_count = 0 9 user_guess = 0 10 11 while (user_guess != secret_number): 12 13 user_guess = int(input(\"Enter your guess: \")) 14 guess_count += 1 #Increase guess_count by 1 15 if user_guess == secret_number: 16 print(\"Congratulations! You win!\") 17 18 print(\"Welcome to the guessing game!\") 19 guess_game(3) This question continues on the next page. When the program is run, the output may look as follows. Your output may be different as the secret number is generated randomly. Welcome to the guessing game! Enter your guess: 2 Enter your guess: 3 Enter your guess: 1 Congratulations! You win! Make the following changes to the program: When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 2 Enter your guess: 3 Enter your guess: 1 Congratulations! You win! You took 3 guesses. Change the program so that it displays one of the following messages as a hint to the user: ‘Sorry! Your guess was too low’ or ‘Sorry! Your guess was too high’ When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Enter your guess: 3 Sorry! Your guess was too low Enter your guess: 4 Congratulations! You win! You took 4 guesses. This question continues on the next page. Hint: You will need to change the loop so that it continues as long as the user’s guess is not equal to the secret number and the number of guesses is less than max_guesses_allowed. When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Enter your guess: 2 Sorry! Your guess was too low Modify the program so that the user is presented with the prompt: Enter the maximum number of guesses allowed. Store the value entered as an integer and pass this value into the function guess_game. When the program is run the output may now look as follows: Welcome to the guessing game! Enter the maximum number of guesses allowed: 2 Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Modify the program so that it prompts the user to enter a difficulty level – ‘E’ for easy and ‘H’ for hard. If the user chooses ‘H’ the secret number should be between 1 and 100 inclusive. A value of anything other than ‘H’ can be interpreted as easy. When the program is run the output may now look as follows: Welcome to the guessing game! Enter the maximum number of guesses allowed: 3 Enter difficulty E(asy) or H(ard): H Enter your guess: 50 Sorry! Your guess was too low Enter your guess: 75 Sorry! Your guess was too low Enter your guess: 95 Sorry! Your guess was too low This question continues on the next page. This question continues on the next page.",
     questionText: "Currently the secret number is always between 1 and 5 inclusive.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
@@ -1694,10 +1909,10 @@ export const CARDS: SecCard[] = [
     { id: "r-5", kind: "point", verbatim: "Any other reasonable attempt.", marks: 2 },
     ],
     figure: {
-          "candId": "computer-science-2023-HL-paper-q16-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q16-code0.png",
-          "srcHash": "92c2ee964ee09bb9a78439f647dddc73",
-          "alt": "The program printed with 2023 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The user’s guess is stored in the variable user_guess. Every time the user enters a",
+          "candId": "computer-science-2023-HL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q16-figure.png",
+          "srcHash": "c57206f1ca3acbf1a5213b2d53350aa9",
+          "alt": "The program printed with 2023 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 28 lines and begins: The user’s guess is stored in the variable user_guess. Every time the user enters a",
           "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1709,7 +1924,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2023 Higher Level — © State Examinations Commission.",
     id: "cs-2023-hl-q16-a-vi", topicId: "cs-2-2", conceptId: "modify-code-so-if-user-guesses",
     section: "B", questionRef: "2023 HL Q16(a)(vi)",
-    stem: "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program defines a function called guess_game which simulates a guessing game. When the function is called, the program generates a secret number between 1 and 5 inclusive. This is stored in a variable called secret_number. The program then enters a loop in which the user is prompted to guess the number. The user’s guess is stored in the variable user_guess. Every time the user enters a guess the program increases the variable guess_count by one. If the user’s guess matches the computer’s secret number, the message ‘Congratulations! You win!’ is displayed. The loop continues until the user guesses the secret number. 1 # Question 16(a) 2 # Examination Number: 3 from random import randint 4 5 def guess_game(max_guesses_allowed): 6 7 secret_number = randint(1, 5) 8 guess_count = 0 9 user_guess = 0 10 11 while (user_guess != secret_number): 12 13 user_guess = int(input(\"Enter your guess: \")) 14 guess_count += 1 #Increase guess_count by 1 15 if user_guess == secret_number: 16 print(\"Congratulations! You win!\") 17 18 print(\"Welcome to the guessing game!\") 19 guess_game(3) This question continues on the next page. When the program is run, the output may look as follows. Your output may be different as the secret number is generated randomly. Welcome to the guessing game! Enter your guess: 2 Enter your guess: 3 Enter your guess: 1 Congratulations! You win! Make the following changes to the program: When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 2 Enter your guess: 3 Enter your guess: 1 Congratulations! You win! You took 3 guesses. Change the program so that it displays one of the following messages as a hint to the user: ‘Sorry! Your guess was too low’ or ‘Sorry! Your guess was too high’ When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Enter your guess: 3 Sorry! Your guess was too low Enter your guess: 4 Congratulations! You win! You took 4 guesses. This question continues on the next page. Hint: You will need to change the loop so that it continues as long as the user’s guess is not equal to the secret number and the number of guesses is less than max_guesses_allowed. When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Enter your guess: 2 Sorry! Your guess was too low Modify the program so that the user is presented with the prompt: Enter the maximum number of guesses allowed. Store the value entered as an integer and pass this value into the function guess_game. When the program is run the output may now look as follows: Welcome to the guessing game! Enter the maximum number of guesses allowed: 2 Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Modify the program so that it prompts the user to enter a difficulty level – ‘E’ for easy and ‘H’ for hard. If the user chooses ‘H’ the secret number should be between 1 and 100 inclusive. A value of anything other than ‘H’ can be interpreted as easy. When the program is run the output may now look as follows: Welcome to the guessing game! Enter the maximum number of guesses allowed: 3 Enter difficulty E(asy) or H(ard): H Enter your guess: 50 Sorry! Your guess was too low Enter your guess: 75 Sorry! Your guess was too low Enter your guess: 95 Sorry! Your guess was too low This question continues on the next page. This question continues on the next page.",
+    stem: "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program defines a function called guess_game which simulates a guessing game. When the function is called, the program generates a secret number between 1 and 5 inclusive. This is stored in a variable called secret_number. The program then enters a loop in which the user is prompted to guess the number. matches the computer’s secret number, the message ‘Congratulations! You win!’ is displayed. The loop continues until the user guesses the secret number. 1 # Question 16(a) 2 # Examination Number: 3 from random import randint 4 5 def guess_game(max_guesses_allowed): 6 7 secret_number = randint(1, 5) 8 guess_count = 0 9 user_guess = 0 10 11 while (user_guess != secret_number): 12 13 user_guess = int(input(\"Enter your guess: \")) 14 guess_count += 1 #Increase guess_count by 1 15 if user_guess == secret_number: 16 print(\"Congratulations! You win!\") 17 18 print(\"Welcome to the guessing game!\") 19 guess_game(3) This question continues on the next page. When the program is run, the output may look as follows. Your output may be different as the secret number is generated randomly. Welcome to the guessing game! Enter your guess: 2 Enter your guess: 3 Enter your guess: 1 Congratulations! You win! Make the following changes to the program: When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 2 Enter your guess: 3 Enter your guess: 1 Congratulations! You win! You took 3 guesses. Change the program so that it displays one of the following messages as a hint to the user: ‘Sorry! Your guess was too low’ or ‘Sorry! Your guess was too high’ When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Enter your guess: 3 Sorry! Your guess was too low Enter your guess: 4 Congratulations! You win! You took 4 guesses. This question continues on the next page. Hint: You will need to change the loop so that it continues as long as the user’s guess is not equal to the secret number and the number of guesses is less than max_guesses_allowed. When the program is run the output may now look as follows: Welcome to the guessing game! Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Enter your guess: 2 Sorry! Your guess was too low Modify the program so that the user is presented with the prompt: Enter the maximum number of guesses allowed. Store the value entered as an integer and pass this value into the function guess_game. When the program is run the output may now look as follows: Welcome to the guessing game! Enter the maximum number of guesses allowed: 2 Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 5 Sorry! Your guess was too high Modify the program so that it prompts the user to enter a difficulty level – ‘E’ for easy and ‘H’ for hard. If the user chooses ‘H’ the secret number should be between 1 and 100 inclusive. A value of anything other than ‘H’ can be interpreted as easy. When the program is run the output may now look as follows: Welcome to the guessing game! Enter the maximum number of guesses allowed: 3 Enter difficulty E(asy) or H(ard): H Enter your guess: 50 Sorry! Your guess was too low Enter your guess: 75 Sorry! Your guess was too low Enter your guess: 95 Sorry! Your guess was too low This question continues on the next page. This question continues on the next page.",
     questionText: "Modify the code so that if the user guesses a number that was already guessed the following message is displayed: ‘You already guessed this number.’ When the program is run the output may now look as follows: Welcome to the guessing game! Enter the maximum number of guesses allowed: 3 Enter difficulty E(asy) or H(ard): E Enter your guess: 1 Sorry! Your guess was too low Enter your guess: 1 You already guessed this number. Sorry! Your guess was too low Enter your guess: 3 Congratulations! You win! You took 3 guesses. Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
@@ -1720,10 +1935,10 @@ export const CARDS: SecCard[] = [
     { id: "r-5", kind: "point", verbatim: "Any other reasonable attempt.", marks: 2 },
     ],
     figure: {
-          "candId": "computer-science-2023-HL-paper-q16-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q16-code0.png",
-          "srcHash": "92c2ee964ee09bb9a78439f647dddc73",
-          "alt": "The program printed with 2023 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The user’s guess is stored in the variable user_guess. Every time the user enters a",
+          "candId": "computer-science-2023-HL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q16-figure.png",
+          "srcHash": "c57206f1ca3acbf1a5213b2d53350aa9",
+          "alt": "The program printed with 2023 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 28 lines and begins: The user’s guess is stored in the variable user_guess. Every time the user enters a",
           "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1742,10 +1957,10 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Possible solution:", marks: 30 },
     ],
     figure: {
-          "candId": "computer-science-2023-HL-paper-q16-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q16-code0.png",
-          "srcHash": "92c2ee964ee09bb9a78439f647dddc73",
-          "alt": "The program printed with 2023 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 2 lines and begins: The user’s guess is stored in the variable user_guess. Every time the user enters a",
+          "candId": "computer-science-2023-HL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q16-figure.png",
+          "srcHash": "c57206f1ca3acbf1a5213b2d53350aa9",
+          "alt": "The program printed with 2023 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 28 lines and begins: The user’s guess is stored in the variable user_guess. Every time the user enters a",
           "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1778,10 +1993,10 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "x > 0 y > 0 x > 0 and y > 0", marks: 6, accepts: ["False False False","False True False","True False False","True True True","Each correct response","(x > -d and x < 0) and (y >0 and y < d)","Note: brackets not necessary and order not important in this case.","Half correct"] },
     ],
     figure: {
-          "candId": "computer-science-2023-HL-paper-q3-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q3-code0.png",
-          "srcHash": "9d0956a156321f28753bab4810c6869d",
-          "alt": "The program printed with 2023 HL Question 3, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 14 lines and begins: A point P(x, y) is plotted inside the top right quadrant, as shown. Complete the truth",
+          "candId": "computer-science-2023-HL-paper-q3-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q3-figure.png",
+          "srcHash": "e149c2aee93d1586013b8cf1c0f6b511",
+          "alt": "The program and the table or diagram printed with 2023 HL Question 3, as the State Examinations Commission set it. The table or diagram is labelled: Figure 1, Figure 2.",
           "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1813,14 +2028,6 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Programmable appliances e.g. washing machine, dishwasher, dryers, kettle, fridge", marks: 6, accepts: ["Heating, ventilation and air conditioning system.","Lighting control system.","Alarm/security systems.","Home robots e.g. Roomba, companion robots, window cleaners, lawnmowers","Leak detection, smoke and carbon monoxide detectors.","Home safety for the elderly and disabled.","Pet and baby care.","Voice control devices like Amazon Alexa or Google Home used to control home appliances or systems.","Any acceptable smart home embedded system. Note: Do not accept Micro:bit, Raspberry Pi as valid examples. Each correct example","Embedded systems perform some specific function or tasks. Unlike computer systems they cannot be programmed to do anything beyond the scope which they were designed for.","Low Cost – the price of embedded systems is relatively inexpensive."] },
     ],
-    figure: {
-          "candId": "computer-science-2023-HL-paper-q6-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q6-code0.png",
-          "srcHash": "3287f5a80e016dfd7db5f3a3ced356ae",
-          "alt": "The program printed with 2023 HL Question 6, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 11 lines and begins: x = 10",
-          "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1849,6 +2056,60 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Valid inputs: first_name, surname, date_of_birth.", marks: 6, accepts: ["Valid output: username. Note: No marks awarded for actual names, dates or usernames (even if in correct format e.g. Joe Soap 26112003 and JoSoap2003) Each correct response (1 input and 1 output)","String slicing: o Step 5 of the algorithm slices the first two characters of the first_name. o Step 6 of the algorithm slices characters from positon 4 to 7 inclusive. Assuming ddmmyyyy format, this extracts the 4-digit year of birth from the date of birth.","String concatenation: o Step 7 of the algorithm concatenates the 2 characters from the first name followed by the surname followed by the 4 digit year of birth to determine the username. For each explanation:"] },
     ],
+    figure: {
+          "candId": "computer-science-2023-HL-paper-q11-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q11-fig0.png",
+          "srcHash": "ce4fc962ef8a519ef792a6446ceb1216",
+          "alt": "The table or diagram printed with 2023 HL Question 11, as the State Examinations Commission set it. It is labelled: Figure 6.",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2023 Higher Level — © State Examinations Commission.",
+    id: "cs-2023-hl-q12", topicId: "cs-2-3", conceptId: "outline-briefly-two-reasons-why-sdlc",
+    section: "A", questionRef: "2023 HL Q12",
+    stem: "A Software Development Lifecycle (SDLC) such as the one shown in Figure 7 below, is usually followed when creating information systems.",
+    questionText: "(a) Outline briefly two reasons why the SDLC is important. (b) Distinguish between functional and non-functional testing.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "The SDLC is important because it:", marks: 6, accepts: ["provides a structured approach (thereby helping to reduce complexity","improves software quality (by increasing potential that project will meet user requirements and expectations while reducing risk of failure/errors.","minimises overrun on budgets/cost.","minimises the risk of missing project deadline(s).","maximises use of resources / staff planning.","encourages communication and collaboration among all project stakeholders","Any other reasonable reason provided. Note: Where two separate responses are considered equivalent/to have the same meaning, marks are awarded for the best response only. Zero is awarded for the other response. Each correct response","Functional testing tests whether the system meets its requirements whereas non- functional testing tests how well those requirements are met e.g. performance, usability, reliability, scalability and other non-functional aspects of the software system","Functional testing should be carried out before non-functional testing."] },
+    ],
+    figure: {
+          "candId": "computer-science-2023-HL-paper-q12-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-HL-paper-q12-fig0.png",
+          "srcHash": "028073eebfc394e94258df4c00184c93",
+          "alt": "The table or diagram printed with 2023 HL Question 12, as the State Examinations Commission set it. It is labelled: Figure 7.",
+          "attribution": "SEC Leaving Certificate Computer Science 2023 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
+    id: "cs-2024-hl-q2", topicId: "cs-2-2", conceptId: "output-displayed-following-python-code-1",
+    section: "A", questionRef: "2024 HL Q2",
+    stem: "What is the output displayed by the following Python code?",
+    questionText: "What is the output displayed by the following Python code?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Answer: 27 30 33 36", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "Each correct value in order (x 4)", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "Space between each value", marks: 2 },
+    ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q2-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q2-code0.png",
+          "srcHash": "802f12849d31c77ea06e4420710b3e38",
+          "alt": "The program printed with 2024 HL Question 2, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 8 lines and begins: number = 27",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1912,6 +2173,30 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
+    id: "cs-2024-hl-q9", topicId: "cs-2-2", conceptId: "leap-year-year-contains-additional-day",
+    section: "A", questionRef: "2024 HL Q9",
+    stem: "A leap year is a year that contains an additional day making it 366 days long instead of the usual Use the code to describe the two rules for determining whether a year is a leap year.",
+    questionText: "A leap year is a year that contains an additional day making it 366 days long instead of the usual Use the code to describe the two rules for determining whether a year is a leap year.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The two rules are:", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "If the year is evenly divisible by 400 it is a leap year e.g. 2000 was a leap year", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "If the year is evenly divisible by 4 and not 100 it is a leap year e.g. 2024 is but 2025 and 2100 are not For each rule:", marks: 2 },
+    ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q9-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q9-code0.png",
+          "srcHash": "56600a53a0e14ce013343e6b8aec9f60",
+          "alt": "The program printed with 2024 HL Question 9, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 12 lines and begins: 365 days. The Python function is_leap_year, shown below can be used to determine whether",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
     id: "cs-2024-hl-q10", topicId: "cs-2-2", conceptId: "many-fast-food-restaurants-have-begun",
     section: "A", questionRef: "2024 HL Q10",
     stem: "Many fast-food restaurants have begun using interactive kiosks that allow customers to order food without having to go to a cashier. These kiosks have menu-driven interfaces. Name two principles of universal design and explain how these principles could be met in the design of such systems.",
@@ -1920,14 +2205,6 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Any two from the following:", marks: 6 },
     ],
-    figure: {
-          "candId": "computer-science-2024-HL-paper-q10-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q10-code0.png",
-          "srcHash": "56600a53a0e14ce013343e6b8aec9f60",
-          "alt": "The program printed with 2024 HL Question 10, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 12 lines and begins: 365 days. The Python function is_leap_year, shown below can be used to determine whether",
-          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1943,10 +2220,10 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "In Step 1 the algorithm has swapped the square from position 0 with the triangle in position 7.", marks: 4 },
     ],
     figure: {
-          "candId": "computer-science-2024-HL-paper-q11-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q11-code0.png",
-          "srcHash": "95c8b707f15fd232e06852a287b0aafa",
-          "alt": "The program printed with 2024 HL Question 11, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 8 lines and begins: problem_solved ← FALSE",
+          "candId": "computer-science-2024-HL-paper-q11-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q11-figure.png",
+          "srcHash": "19c3755b0d4049ad2aaf05ad475579a6",
+          "alt": "The program and the table or diagram printed with 2024 HL Question 11, as the State Examinations Commission set it. The table or diagram is labelled: problem_solved ← FALSE, problem solved ← TRUE, ELSE, swap(square, triangle), Figure 4, Step 1:, Step 2:.",
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1964,10 +2241,32 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "A general solution provides a broad approach that can be applied to different situations", marks: 2 },
     ],
     figure: {
-          "candId": "computer-science-2024-HL-paper-q11-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q11-code0.png",
-          "srcHash": "95c8b707f15fd232e06852a287b0aafa",
-          "alt": "The program printed with 2024 HL Question 11, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 8 lines and begins: problem_solved ← FALSE",
+          "candId": "computer-science-2024-HL-paper-q11-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q11-figure.png",
+          "srcHash": "19c3755b0d4049ad2aaf05ad475579a6",
+          "alt": "The program and the table or diagram printed with 2024 HL Question 11, as the State Examinations Commission set it. The table or diagram is labelled: problem_solved ← FALSE, problem solved ← TRUE, ELSE, swap(square, triangle), Figure 4, Step 1:, Step 2:.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
+    id: "cs-2024-hl-q12-a", topicId: "cs-1-2", conceptId: "meaning-quote-shown-figure-5-above",
+    section: "A", questionRef: "2024 HL Q12(a)",
+    stem: "Figure 5",
+    questionText: "Explain the meaning of the quote, shown in Figure 5 above, in relation to online applications.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The meaning of the quote is that when a service such as social media is free, the users become a commodity for these platforms, and their attention and data are the actual products that are monetised. As users interact with social media platforms, they generate valuable data (through their preferences, behaviours etc.). This data is then collected, analysed, and used to create targeted advertising or sold to third parties for various purposes, such as market research or influencing user behaviour.", marks: 3 },
+    ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q12-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q12-fig0.png",
+          "srcHash": "fc23af70fcd91510becdf651e9fd0068",
+          "alt": "The table or diagram printed with 2024 HL Question 12, as the State Examinations Commission set it. It is labelled: Figure 5.",
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2112,6 +2411,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Input variable 1: a", marks: 1 },
     { id: "r-2", kind: "point", verbatim: "Input variable 2: b Each correct response 1 mark", marks: 1 },
     ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q14-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q14-fig0.png",
+          "srcHash": "78d566ae40bd1ebc30ccc959f1ce19ae",
+          "alt": "The table or diagram printed with 2024 HL Question 14, as the State Examinations Commission set it. It is labelled: Figure 6.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2126,6 +2433,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "t is a temporary variable used to store the value of a", marks: 3 },
     ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q14-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q14-fig0.png",
+          "srcHash": "78d566ae40bd1ebc30ccc959f1ce19ae",
+          "alt": "The table or diagram printed with 2024 HL Question 14, as the State Examinations Commission set it. It is labelled: Figure 6.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2140,6 +2455,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Advantages", marks: 4 },
     ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q14-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q14-fig0.png",
+          "srcHash": "78d566ae40bd1ebc30ccc959f1ce19ae",
+          "alt": "The table or diagram printed with 2024 HL Question 14, as the State Examinations Commission set it. It is labelled: Figure 6.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2154,6 +2477,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "the data type of the variable, values. Is a list (array)", marks: 1 },
     ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q14-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q14-fig0.png",
+          "srcHash": "78d566ae40bd1ebc30ccc959f1ce19ae",
+          "alt": "The table or diagram printed with 2024 HL Question 14, as the State Examinations Commission set it. It is labelled: Figure 6.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2168,6 +2499,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "the Python expression, len(values) returns 5", marks: 1 },
     ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q14-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q14-fig0.png",
+          "srcHash": "78d566ae40bd1ebc30ccc959f1ce19ae",
+          "alt": "The table or diagram printed with 2024 HL Question 14, as the State Examinations Commission set it. It is labelled: Figure 6.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2182,6 +2521,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "the expression values[5] would generate a runtime error because the index 5 is out of bounds", marks: 3 },
     ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q14-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q14-fig0.png",
+          "srcHash": "78d566ae40bd1ebc30ccc959f1ce19ae",
+          "alt": "The table or diagram printed with 2024 HL Question 14, as the State Examinations Commission set it. It is labelled: Figure 6.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2196,6 +2543,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Advantages", marks: 6 },
     ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q14-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q14-fig0.png",
+          "srcHash": "78d566ae40bd1ebc30ccc959f1ce19ae",
+          "alt": "The table or diagram printed with 2024 HL Question 14, as the State Examinations Commission set it. It is labelled: Figure 6.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2210,6 +2565,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Initial state of values: 50 70 30 60 20", marks: 5 },
     ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q14-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q14-fig0.png",
+          "srcHash": "78d566ae40bd1ebc30ccc959f1ce19ae",
+          "alt": "The table or diagram printed with 2024 HL Question 14, as the State Examinations Commission set it. It is labelled: Figure 6.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2224,6 +2587,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "In a list of size N the bubble sort algorithm performs N passes. On each pass it will perform N-1 compare operations. This gives a total of 𝑵𝟐−𝑵 operations. For large N this is approximately the same as 𝑵𝟐. Hence we write O(𝑵𝟐).", marks: 5 },
     ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q14-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q14-fig0.png",
+          "srcHash": "78d566ae40bd1ebc30ccc959f1ce19ae",
+          "alt": "The table or diagram printed with 2024 HL Question 14, as the State Examinations Commission set it. It is labelled: Figure 6.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2238,6 +2609,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Enhancement 1 (reducing size of list by 1 on each pass)", marks: 5 },
     ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q14-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q14-fig0.png",
+          "srcHash": "78d566ae40bd1ebc30ccc959f1ce19ae",
+          "alt": "The table or diagram printed with 2024 HL Question 14, as the State Examinations Commission set it. It is labelled: Figure 6.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2302,17 +2681,17 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
     id: "cs-2024-hl-q16-a-i", topicId: "cs-2-2", conceptId: "line-code-display-value-variable-random",
     section: "B", questionRef: "2024 HL Q16(a)(i)",
-    stem: "1 # Question 16(a) 2 # Examination Number: 3 from random import choice 4 5 fruits = ['apple', 'cherry', 'orange'] 6 7 random_fruit_1 = choice(fruits) Make the following changes to the program: When the program is run the output may now look as follows: Random Fruit 1: cherry When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: orange Random Fruit 3: cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: apple Random Fruit 3: cherry First fruit is cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match First pair are cherries When the program is run the output may now look as follows: Random Fruit 1: apple Random Fruit 2: cherry Random Fruit 3: apple Matching pair This question continues on the next page. When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: cherry Random Fruit 3: cherry Matching pair apple 33 cherry 36 orange 31 Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456.",
+    stem: "Make the following changes to the program: When the program is run the output may now look as follows: Random Fruit 1: cherry When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: orange Random Fruit 3: cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: apple Random Fruit 3: cherry First fruit is cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match First pair are cherries When the program is run the output may now look as follows: Random Fruit 1: apple Random Fruit 2: cherry Random Fruit 3: apple Matching pair This question continues on the next page. When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: cherry Random Fruit 3: cherry Matching pair apple 33 cherry 36 orange 31 Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456.",
     questionText: "Write a line of code to display the value of the variable random_fruit_1 in a message.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "semantic error.", marks: 5 },
     ],
     figure: {
-          "candId": "computer-science-2024-HL-paper-q16-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16-code0.png",
-          "srcHash": "06b18f78982f60a83e2dc02a4a4d7d5f",
-          "alt": "The program printed with 2024 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 12 lines and begins: # Question 16(a)",
+          "candId": "computer-science-2024-HL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16-figure.png",
+          "srcHash": "dac2bb8e404cd4f9900cd33c89f0fecb",
+          "alt": "The program printed with 2024 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 15 lines and begins: # Question 16(a)",
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2324,17 +2703,17 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
     id: "cs-2024-hl-q16-a-ii", topicId: "cs-2-5", conceptId: "add-statements-initialise-two-new-variables",
     section: "B", questionRef: "2024 HL Q16(a)(ii)",
-    stem: "1 # Question 16(a) 2 # Examination Number: 3 from random import choice 4 5 fruits = ['apple', 'cherry', 'orange'] 6 7 random_fruit_1 = choice(fruits) Make the following changes to the program: When the program is run the output may now look as follows: Random Fruit 1: cherry When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: orange Random Fruit 3: cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: apple Random Fruit 3: cherry First fruit is cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match First pair are cherries When the program is run the output may now look as follows: Random Fruit 1: apple Random Fruit 2: cherry Random Fruit 3: apple Matching pair This question continues on the next page. When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: cherry Random Fruit 3: cherry Matching pair apple 33 cherry 36 orange 31 Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456.",
+    stem: "Make the following changes to the program: When the program is run the output may now look as follows: Random Fruit 1: cherry When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: orange Random Fruit 3: cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: apple Random Fruit 3: cherry First fruit is cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match First pair are cherries When the program is run the output may now look as follows: Random Fruit 1: apple Random Fruit 2: cherry Random Fruit 3: apple Matching pair This question continues on the next page. When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: cherry Random Fruit 3: cherry Matching pair apple 33 cherry 36 orange 31 Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456.",
     questionText: "Add statements to initialise two new variables with fruits chosen randomly from the list. You should also display the values of the variables which should be called random_fruit_2 and random_fruit_3.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "semantic error.", marks: 5 },
     ],
     figure: {
-          "candId": "computer-science-2024-HL-paper-q16-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16-code0.png",
-          "srcHash": "06b18f78982f60a83e2dc02a4a4d7d5f",
-          "alt": "The program printed with 2024 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 12 lines and begins: # Question 16(a)",
+          "candId": "computer-science-2024-HL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16-figure.png",
+          "srcHash": "dac2bb8e404cd4f9900cd33c89f0fecb",
+          "alt": "The program printed with 2024 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 15 lines and begins: # Question 16(a)",
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2346,17 +2725,17 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
     id: "cs-2024-hl-q16-a-iii", topicId: "cs-2-2", conceptId: "add-code-display-message-first-fruit",
     section: "B", questionRef: "2024 HL Q16(a)(iii)",
-    stem: "1 # Question 16(a) 2 # Examination Number: 3 from random import choice 4 5 fruits = ['apple', 'cherry', 'orange'] 6 7 random_fruit_1 = choice(fruits) Make the following changes to the program: When the program is run the output may now look as follows: Random Fruit 1: cherry When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: orange Random Fruit 3: cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: apple Random Fruit 3: cherry First fruit is cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match First pair are cherries When the program is run the output may now look as follows: Random Fruit 1: apple Random Fruit 2: cherry Random Fruit 3: apple Matching pair This question continues on the next page. When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: cherry Random Fruit 3: cherry Matching pair apple 33 cherry 36 orange 31 Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456.",
+    stem: "Make the following changes to the program: When the program is run the output may now look as follows: Random Fruit 1: cherry When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: orange Random Fruit 3: cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: apple Random Fruit 3: cherry First fruit is cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match First pair are cherries When the program is run the output may now look as follows: Random Fruit 1: apple Random Fruit 2: cherry Random Fruit 3: apple Matching pair This question continues on the next page. When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: cherry Random Fruit 3: cherry Matching pair apple 33 cherry 36 orange 31 Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456.",
     questionText: "Add code to display the message “First fruit is cherry” if the first random fruit is a cherry.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "semantic error.", marks: 5 },
     ],
     figure: {
-          "candId": "computer-science-2024-HL-paper-q16-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16-code0.png",
-          "srcHash": "06b18f78982f60a83e2dc02a4a4d7d5f",
-          "alt": "The program printed with 2024 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 12 lines and begins: # Question 16(a)",
+          "candId": "computer-science-2024-HL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16-figure.png",
+          "srcHash": "dac2bb8e404cd4f9900cd33c89f0fecb",
+          "alt": "The program printed with 2024 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 15 lines and begins: # Question 16(a)",
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2368,17 +2747,17 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
     id: "cs-2024-hl-q16-a-iv", topicId: "cs-2-2", conceptId: "add-code-display-message-first-pair",
     section: "B", questionRef: "2024 HL Q16(a)(iv)",
-    stem: "1 # Question 16(a) 2 # Examination Number: 3 from random import choice 4 5 fruits = ['apple', 'cherry', 'orange'] 6 7 random_fruit_1 = choice(fruits) Make the following changes to the program: When the program is run the output may now look as follows: Random Fruit 1: cherry When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: orange Random Fruit 3: cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: apple Random Fruit 3: cherry First fruit is cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match First pair are cherries When the program is run the output may now look as follows: Random Fruit 1: apple Random Fruit 2: cherry Random Fruit 3: apple Matching pair This question continues on the next page. When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: cherry Random Fruit 3: cherry Matching pair apple 33 cherry 36 orange 31 Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456.",
+    stem: "Make the following changes to the program: When the program is run the output may now look as follows: Random Fruit 1: cherry When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: orange Random Fruit 3: cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: apple Random Fruit 3: cherry First fruit is cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match First pair are cherries When the program is run the output may now look as follows: Random Fruit 1: apple Random Fruit 2: cherry Random Fruit 3: apple Matching pair This question continues on the next page. When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: cherry Random Fruit 3: cherry Matching pair apple 33 cherry 36 orange 31 Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456.",
     questionText: "Add code to display the message “First pair match” if the first two fruits are the same.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Any other reasonable attempt.", marks: 5 },
     ],
     figure: {
-          "candId": "computer-science-2024-HL-paper-q16-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16-code0.png",
-          "srcHash": "06b18f78982f60a83e2dc02a4a4d7d5f",
-          "alt": "The program printed with 2024 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 12 lines and begins: # Question 16(a)",
+          "candId": "computer-science-2024-HL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16-figure.png",
+          "srcHash": "dac2bb8e404cd4f9900cd33c89f0fecb",
+          "alt": "The program printed with 2024 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 15 lines and begins: # Question 16(a)",
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2390,17 +2769,17 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
     id: "cs-2024-hl-q16-a-v", topicId: "cs-2-2", conceptId: "add-code-display-message-first-pair",
     section: "B", questionRef: "2024 HL Q16(a)(v)",
-    stem: "1 # Question 16(a) 2 # Examination Number: 3 from random import choice 4 5 fruits = ['apple', 'cherry', 'orange'] 6 7 random_fruit_1 = choice(fruits) Make the following changes to the program: When the program is run the output may now look as follows: Random Fruit 1: cherry When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: orange Random Fruit 3: cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: apple Random Fruit 3: cherry First fruit is cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match First pair are cherries When the program is run the output may now look as follows: Random Fruit 1: apple Random Fruit 2: cherry Random Fruit 3: apple Matching pair This question continues on the next page. When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: cherry Random Fruit 3: cherry Matching pair apple 33 cherry 36 orange 31 Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456.",
+    stem: "Make the following changes to the program: When the program is run the output may now look as follows: Random Fruit 1: cherry When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: orange Random Fruit 3: cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: apple Random Fruit 3: cherry First fruit is cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match First pair are cherries When the program is run the output may now look as follows: Random Fruit 1: apple Random Fruit 2: cherry Random Fruit 3: apple Matching pair This question continues on the next page. When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: cherry Random Fruit 3: cherry Matching pair apple 33 cherry 36 orange 31 Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456.",
     questionText: "Add code to display the message “First pair are cherries” if the first two fruits are both cherries.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Any other reasonable attempt.", marks: 5 },
     ],
     figure: {
-          "candId": "computer-science-2024-HL-paper-q16-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16-code0.png",
-          "srcHash": "06b18f78982f60a83e2dc02a4a4d7d5f",
-          "alt": "The program printed with 2024 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 12 lines and begins: # Question 16(a)",
+          "candId": "computer-science-2024-HL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16-figure.png",
+          "srcHash": "dac2bb8e404cd4f9900cd33c89f0fecb",
+          "alt": "The program printed with 2024 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 15 lines and begins: # Question 16(a)",
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2412,7 +2791,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
     id: "cs-2024-hl-q16-a-vi", topicId: "cs-2-2", conceptId: "add-code-display-message-matching-pair",
     section: "B", questionRef: "2024 HL Q16(a)(vi)",
-    stem: "1 # Question 16(a) 2 # Examination Number: 3 from random import choice 4 5 fruits = ['apple', 'cherry', 'orange'] 6 7 random_fruit_1 = choice(fruits) Make the following changes to the program: When the program is run the output may now look as follows: Random Fruit 1: cherry When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: orange Random Fruit 3: cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: apple Random Fruit 3: cherry First fruit is cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match First pair are cherries When the program is run the output may now look as follows: Random Fruit 1: apple Random Fruit 2: cherry Random Fruit 3: apple Matching pair This question continues on the next page. When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: cherry Random Fruit 3: cherry Matching pair apple 33 cherry 36 orange 31 Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456.",
+    stem: "Make the following changes to the program: When the program is run the output may now look as follows: Random Fruit 1: cherry When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: orange Random Fruit 3: cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: apple Random Fruit 3: cherry First fruit is cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match First pair are cherries When the program is run the output may now look as follows: Random Fruit 1: apple Random Fruit 2: cherry Random Fruit 3: apple Matching pair This question continues on the next page. When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: cherry Random Fruit 3: cherry Matching pair apple 33 cherry 36 orange 31 Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456.",
     questionText: "Add code to display the message “Matching pair” if any two fruits are the same.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
@@ -2423,10 +2802,10 @@ export const CARDS: SecCard[] = [
     { id: "r-5", kind: "point", verbatim: "Any other reasonable attempt.", marks: 2 },
     ],
     figure: {
-          "candId": "computer-science-2024-HL-paper-q16-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16-code0.png",
-          "srcHash": "06b18f78982f60a83e2dc02a4a4d7d5f",
-          "alt": "The program printed with 2024 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 12 lines and begins: # Question 16(a)",
+          "candId": "computer-science-2024-HL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16-figure.png",
+          "srcHash": "dac2bb8e404cd4f9900cd33c89f0fecb",
+          "alt": "The program printed with 2024 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 15 lines and begins: # Question 16(a)",
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2438,17 +2817,17 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
     id: "cs-2024-hl-q16-a-vii", topicId: "cs-2-2", conceptId: "extend-program-loop-iterates-100-times",
     section: "B", questionRef: "2024 HL Q16(a)(vii)",
-    stem: "1 # Question 16(a) 2 # Examination Number: 3 from random import choice 4 5 fruits = ['apple', 'cherry', 'orange'] 6 7 random_fruit_1 = choice(fruits) Make the following changes to the program: When the program is run the output may now look as follows: Random Fruit 1: cherry When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: orange Random Fruit 3: cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: apple Random Fruit 3: cherry First fruit is cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match First pair are cherries When the program is run the output may now look as follows: Random Fruit 1: apple Random Fruit 2: cherry Random Fruit 3: apple Matching pair This question continues on the next page. When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: cherry Random Fruit 3: cherry Matching pair apple 33 cherry 36 orange 31 Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456.",
+    stem: "Make the following changes to the program: When the program is run the output may now look as follows: Random Fruit 1: cherry When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: orange Random Fruit 3: cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: apple Random Fruit 3: cherry First fruit is cherry When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match When the program is run the output may now look as follows: Random Fruit 1: cherry Random Fruit 2: cherry Random Fruit 3: apple First fruit is cherry First pair match First pair are cherries When the program is run the output may now look as follows: Random Fruit 1: apple Random Fruit 2: cherry Random Fruit 3: apple Matching pair This question continues on the next page. When the program is run the output may now look as follows: Random Fruit 1: orange Random Fruit 2: cherry Random Fruit 3: cherry Matching pair apple 33 cherry 36 orange 31 Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your Examination Number was 123456.",
     questionText: "Extend the program with a loop that iterates 100 times. The loop should generate a random fruit on each iteration. After the loop is executed, the program should display a count of the number of times each fruit was generated. There is no need to display the names of the 100 fruits.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
     { id: "r-1", kind: "point", verbatim: "15 marks Correct response", marks: 15 },
     ],
     figure: {
-          "candId": "computer-science-2024-HL-paper-q16-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16-code0.png",
-          "srcHash": "06b18f78982f60a83e2dc02a4a4d7d5f",
-          "alt": "The program printed with 2024 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 12 lines and begins: # Question 16(a)",
+          "candId": "computer-science-2024-HL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16-figure.png",
+          "srcHash": "dac2bb8e404cd4f9900cd33c89f0fecb",
+          "alt": "The program printed with 2024 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 15 lines and begins: # Question 16(a)",
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -2467,11 +2846,33 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Possible solution:", marks: 30 },
     ],
     figure: {
-          "candId": "computer-science-2024-HL-paper-q16-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16-code0.png",
-          "srcHash": "06b18f78982f60a83e2dc02a4a4d7d5f",
-          "alt": "The program printed with 2024 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 12 lines and begins: # Question 16(a)",
+          "candId": "computer-science-2024-HL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q16-figure.png",
+          "srcHash": "dac2bb8e404cd4f9900cd33c89f0fecb",
+          "alt": "The program printed with 2024 HL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 15 lines and begins: # Question 16(a)",
           "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Higher Level — © State Examinations Commission.",
+    id: "cs-2025-hl-q1", topicId: "cs-2-2", conceptId: "output-following-python-code-1-5",
+    section: "A", questionRef: "2025 HL Q1",
+    stem: "State the output of the following Python code.",
+    questionText: "State the output of the following Python code.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Output", marks: 6 },
+    ],
+    figure: {
+          "candId": "computer-science-2025-HL-paper-q1-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-paper-q1-code0.png",
+          "srcHash": "f85f75831382924545914ad4ac382d13",
+          "alt": "The program printed with 2025 HL Question 1, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 21 lines and begins: a = 5",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission",
           "lettersVisible": []
     },
   } as SecCard,
@@ -2545,6 +2946,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Algorithm 1: Linear search", marks: 2 },
     ],
+    figure: {
+          "candId": "computer-science-2025-HL-paper-q7-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-paper-q7-fig0.png",
+          "srcHash": "d195e9614ecac764ea8dc492c7739ef6",
+          "alt": "The table or diagram printed with 2025 HL Question 7, as the State Examinations Commission set it.",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2560,6 +2969,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Linear search may be more efficient as there is no sort overhead. Also, target item will sometimes be the first item (or one of the first items) in the list. For relatively small lists this can be more efficient than a binary search. OR", marks: 2 },
     { id: "r-2", kind: "point", verbatim: "In general, binary search is more efficient as at worst it just requires log(n) operations to complete its task. Linear search on the other hand requires O(n) operations.", marks: 2 },
     ],
+    figure: {
+          "candId": "computer-science-2025-HL-paper-q7-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-paper-q7-fig0.png",
+          "srcHash": "d195e9614ecac764ea8dc492c7739ef6",
+          "alt": "The table or diagram printed with 2025 HL Question 7, as the State Examinations Commission set it.",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2568,12 +2985,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Higher Level — © State Examinations Commission.",
     id: "cs-2025-hl-q9-a", topicId: "cs-2-2", conceptId: "there-number-syntax-errors-code-identify",
     section: "A", questionRef: "2025 HL Q9(a)",
-    stem: "The intention of the Python code below is to scan through all integers from 1 to 20 inclusive and: • if the integer is evenly divisible by both 3 and 5, display the word FizzBuzz. • if the integer is evenly divisible by 3 and not divisible by 5 display the word Fizz. • if the integer is evenly divisible by 5 and not divisible by 3 display the word Buzz. 1 For i in range(1, 21): 2 if i % 3 == 0: 3 print(\"Fizz\" 4 elif i % 5 == 0: 5 print(Buzz\") 6 elif i % 3 == 0 and i % 5 == 0: 7 print(\"FizzBuzz\") 8 else 9 print(number)",
+    stem: "The intention of the Python code below is to scan through all integers from 1 to 20 inclusive and: • if the integer is evenly divisible by both 3 and 5, display the word FizzBuzz. • if the integer is evenly divisible by 3 and not divisible by 5 display the word Fizz. • if the integer is evenly divisible by 5 and not divisible by 3 display the word Buzz.",
     questionText: "There are a number of syntax errors in the code. Identify any two of these errors.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Any two syntax errors from the following:", marks: 2 },
     ],
+    figure: {
+          "candId": "computer-science-2025-HL-paper-q9-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-paper-q9-code0.png",
+          "srcHash": "09a0aa7aaeaac880ff045eb7282ebc8a",
+          "alt": "The program printed with 2025 HL Question 9, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 18 lines and begins: For i in range(1, 21):",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2588,14 +3013,6 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Examples Limitations", marks: 6 },
     ],
-    figure: {
-          "candId": "computer-science-2025-HL-paper-q10-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-paper-q10-code0.png",
-          "srcHash": "09a0aa7aaeaac880ff045eb7282ebc8a",
-          "alt": "The program printed with 2025 HL Question 10, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 18 lines and begins: For i in range(1, 21):",
-          "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
-    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2710,7 +3127,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Higher Level — © State Examinations Commission.",
     id: "cs-2025-hl-q14-a-i", topicId: "cs-2-2", conceptId: "purpose-def-keyword-line-1-code",
     section: "B", questionRef: "2025 HL Q14(a)(i)",
-    stem: "1 def gcd(a, b): 2 while a != b: 3 if a > b: 4 a = a - b 5 elif b > a: 6 b = b - a 7 8 return a 9 10 print(\"The GCD is\", gcd(45,18)) a b 45 18 This question continues on the next page.",
+    stem: "a b 45 18 This question continues on the next page.",
     questionText: "State the purpose of the def keyword on line 1 of the code.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -2732,7 +3149,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Higher Level — © State Examinations Commission.",
     id: "cs-2025-hl-q14-a-ii", topicId: "cs-2-2", conceptId: "starting-line-2-code-complete-trace",
     section: "B", questionRef: "2025 HL Q14(a)(ii)",
-    stem: "1 def gcd(a, b): 2 while a != b: 3 if a > b: 4 a = a - b 5 elif b > a: 6 b = b - a 7 8 return a 9 10 print(\"The GCD is\", gcd(45,18)) a b 45 18 This question continues on the next page.",
+    stem: "a b 45 18 This question continues on the next page.",
     questionText: "Starting from line 2 of the code, complete the trace table shown below. The variables a and b have been initialised to 45 and 18 respectively.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -2894,6 +3311,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Output variable:", marks: 1 },
     ],
+    figure: {
+          "candId": "computer-science-2025-HL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-paper-q15-fig0.png",
+          "srcHash": "aa29b5bff379bb30c3a108fe795781e6",
+          "alt": "The table or diagram printed with 2025 HL Question 15, as the State Examinations Commission set it. It is labelled: ID, Gender, Age, Transmission, Instructor, experience (years), Test, outcome, 1 Male, Manual, FAIL, 2 Female, Automatic, PASS.",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2908,6 +3333,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Any two from the following:", marks: 4 },
     ],
+    figure: {
+          "candId": "computer-science-2025-HL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-paper-q15-fig0.png",
+          "srcHash": "aa29b5bff379bb30c3a108fe795781e6",
+          "alt": "The table or diagram printed with 2025 HL Question 15, as the State Examinations Commission set it. It is labelled: ID, Gender, Age, Transmission, Instructor, experience (years), Test, outcome, 1 Male, Manual, FAIL, 2 Female, Automatic, PASS.",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2922,6 +3355,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Any two from the following:", marks: 4 },
     ],
+    figure: {
+          "candId": "computer-science-2025-HL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-paper-q15-fig0.png",
+          "srcHash": "aa29b5bff379bb30c3a108fe795781e6",
+          "alt": "The table or diagram printed with 2025 HL Question 15, as the State Examinations Commission set it. It is labelled: ID, Gender, Age, Transmission, Instructor, experience (years), Test, outcome, 1 Male, Manual, FAIL, 2 Female, Automatic, PASS.",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2936,6 +3377,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Limitations", marks: 4 },
     ],
+    figure: {
+          "candId": "computer-science-2025-HL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-paper-q15-fig0.png",
+          "srcHash": "aa29b5bff379bb30c3a108fe795781e6",
+          "alt": "The table or diagram printed with 2025 HL Question 15, as the State Examinations Commission set it. It is labelled: ID, Gender, Age, Transmission, Instructor, experience (years), Test, outcome, 1 Male, Manual, FAIL, 2 Female, Automatic, PASS.",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2950,6 +3399,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Abstraction is important when developing a model because it allows us to focus on the most essential elements of a system while ignoring unnecessary details.", marks: 4 },
     ],
+    figure: {
+          "candId": "computer-science-2025-HL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-paper-q15-fig0.png",
+          "srcHash": "aa29b5bff379bb30c3a108fe795781e6",
+          "alt": "The table or diagram printed with 2025 HL Question 15, as the State Examinations Commission set it. It is labelled: ID, Gender, Age, Transmission, Instructor, experience (years), Test, outcome, 1 Male, Manual, FAIL, 2 Female, Automatic, PASS.",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2967,6 +3424,14 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "Environment: Environmental models simulate natural systems, such as climate change or ecosystem dynamics, to predict future conditions. These simulations help in understanding the potential impacts of human activity, guiding policy decisions and strategies for sustainable resource management.", marks: 2 },
     { id: "r-4", kind: "point", verbatim: "Traffic Management: Traffic flow simulations can model the movement of vehicles in a city to identify congestion points and optimise traffic signal timings. This helps improve traffic efficiency, reduce delays, and lower accident rates, ultimately enhancing overall transportation systems. For each area:", marks: 2 },
     ],
+    figure: {
+          "candId": "computer-science-2025-HL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-paper-q15-fig0.png",
+          "srcHash": "aa29b5bff379bb30c3a108fe795781e6",
+          "alt": "The table or diagram printed with 2025 HL Question 15, as the State Examinations Commission set it. It is labelled: ID, Gender, Age, Transmission, Instructor, experience (years), Test, outcome, 1 Male, Manual, FAIL, 2 Female, Automatic, PASS.",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2981,6 +3446,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Any one from the following:", marks: 2 },
     ],
+    figure: {
+          "candId": "computer-science-2025-HL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-paper-q15-fig0.png",
+          "srcHash": "aa29b5bff379bb30c3a108fe795781e6",
+          "alt": "The table or diagram printed with 2025 HL Question 15, as the State Examinations Commission set it. It is labelled: ID, Gender, Age, Transmission, Instructor, experience (years), Test, outcome, 1 Male, Manual, FAIL, 2 Female, Automatic, PASS.",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",

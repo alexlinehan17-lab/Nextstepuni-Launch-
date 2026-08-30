@@ -68,6 +68,36 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Digital input signals are used to represent items that only have two (2) states, such as ON", marks: 5 },
     ],
+    figure: {
+          "candId": "computer-science-2021-OL-paper-q7-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q7-fig0.png",
+          "srcHash": "8c6fdf032b963da9d4f8135417eff2af",
+          "alt": "The table or diagram printed with 2021 OL Question 7, as the State Examinations Commission set it. It is labelled: Figure 3.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC219GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "cs-2021-ol-q8", topicId: "cs-2-2", conceptId: "output-produced-algorithm-shown-flowchart-below",
+    section: "A", questionRef: "2021 OL Q8",
+    stem: "What output is produced by the algorithm shown in the flowchart below?",
+    questionText: "What output is produced by the algorithm shown in the flowchart below?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Answer:", marks: 5 },
+    ],
+    figure: {
+          "candId": "computer-science-2021-OL-paper-q8-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q8-fig0.png",
+          "srcHash": "59919334261e9e86b2b65d365726362f",
+          "alt": "The table or diagram printed with 2021 OL Question 8, as the State Examinations Commission set it.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -96,6 +126,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Example Activities:", marks: 6 },
     ],
+    figure: {
+          "candId": "computer-science-2021-OL-paper-q13-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q13-fig0.png",
+          "srcHash": "1f71d5481e63ae348ba8444b07217bfc",
+          "alt": "The table or diagram printed with 2021 OL Question 13, as the State Examinations Commission set it. It is labelled: Figure 4, Activity 1:, Activity 2:.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -110,6 +148,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Software Developer, Project Manager, Team Leader, Product Manager/Owner, Graphic", marks: 10 },
     ],
+    figure: {
+          "candId": "computer-science-2021-OL-paper-q13-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q13-fig0.png",
+          "srcHash": "1f71d5481e63ae348ba8444b07217bfc",
+          "alt": "The table or diagram printed with 2021 OL Question 13, as the State Examinations Commission set it. It is labelled: Figure 4, Activity 1:, Activity 2:.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -124,6 +170,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Any reason related to GDPR requirements.", marks: 6 },
     ],
+    figure: {
+          "candId": "computer-science-2021-OL-paper-q13-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q13-fig0.png",
+          "srcHash": "1f71d5481e63ae348ba8444b07217bfc",
+          "alt": "The table or diagram printed with 2021 OL Question 13, as the State Examinations Commission set it. It is labelled: Figure 4, Activity 1:, Activity 2:.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -138,6 +192,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Accept principles of universal design or UI design.", marks: 8 },
     ],
+    figure: {
+          "candId": "computer-science-2021-OL-paper-q13-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q13-fig0.png",
+          "srcHash": "1f71d5481e63ae348ba8444b07217bfc",
+          "alt": "The table or diagram printed with 2021 OL Question 13, as the State Examinations Commission set it. It is labelled: Figure 4, Activity 1:, Activity 2:.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -239,6 +301,57 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Processor, RAM, Graphics Card, Wireless, Networking.", marks: 8 },
     ],
+    figure: {
+          "candId": "computer-science-2021-OL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q15-fig0.png",
+          "srcHash": "573b6551e51c8d802cd71871fb57d349",
+          "alt": "The table or diagram printed with 2021 OL Question 15, as the State Examinations Commission set it. It is labelled: ●, Intel Core i3 CPU, 2GB RAM Memory, Intel Integrated Graphics, Bluetooth 4.1, 2 x USB 3.1, 1 x USB 2.0,, HDMI, 10/100 Ethernet LAN Port, 4‐Cell Li‐ion Battery, Figure 6.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC219GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "cs-2021-ol-q15-b-ii", topicId: "cs-2-3", conceptId: "complete-truth-table-or-logic-gate",
+    section: "B", questionRef: "2021 OL Q15(b)(ii)",
+    questionText: "Complete the truth table for the OR logic gate, shown in Figure 7. This question continues on the next page.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "INPUTS OUTPUTS", marks: 4 },
+    ],
+    figure: {
+          "candId": "computer-science-2021-OL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q15-fig0.png",
+          "srcHash": "573b6551e51c8d802cd71871fb57d349",
+          "alt": "The table or diagram printed with 2021 OL Question 15, as the State Examinations Commission set it. It is labelled: ●, Intel Core i3 CPU, 2GB RAM Memory, Intel Integrated Graphics, Bluetooth 4.1, 2 x USB 3.1, 1 x USB 2.0,, HDMI, 10/100 Ethernet LAN Port, 4‐Cell Li‐ion Battery, Figure 6.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC219GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "cs-2021-ol-q15-c", topicId: "cs-2-3", conceptId: "diagram-figure-8-below-shows-different",
+    section: "B", questionRef: "2021 OL Q15(c)",
+    stem: "Figure 8 This question continues on the next page.",
+    questionText: "The diagram in Figure 8 below, shows the different layers within a computer system. Explain the purpose of any two layers.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "- The hardware layer is the lowest layer in the layered operating system architecture. This", marks: 6 },
+    ],
+    figure: {
+          "candId": "computer-science-2021-OL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q15-fig0.png",
+          "srcHash": "573b6551e51c8d802cd71871fb57d349",
+          "alt": "The table or diagram printed with 2021 OL Question 15, as the State Examinations Commission set it. It is labelled: ●, Intel Core i3 CPU, 2GB RAM Memory, Intel Integrated Graphics, Bluetooth 4.1, 2 x USB 3.1, 1 x USB 2.0,, HDMI, 10/100 Ethernet LAN Port, 4‐Cell Li‐ion Battery, Figure 6.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -253,6 +366,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Name valid development", marks: 6 },
     ],
+    figure: {
+          "candId": "computer-science-2021-OL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q15-fig0.png",
+          "srcHash": "573b6551e51c8d802cd71871fb57d349",
+          "alt": "The table or diagram printed with 2021 OL Question 15, as the State Examinations Commission set it. It is labelled: ●, Intel Core i3 CPU, 2GB RAM Memory, Intel Integrated Graphics, Bluetooth 4.1, 2 x USB 3.1, 1 x USB 2.0,, HDMI, 10/100 Ethernet LAN Port, 4‐Cell Li‐ion Battery, Figure 6.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -269,6 +390,49 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC219GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2021 Ordinary Level — © State Examinations Commission.",
+    id: "cs-2021-ol-q15", topicId: "cs-2-3", conceptId: "your-friend-complains-you-their-five",
+    section: "B", questionRef: "2021 OL Q15",
+    questionText: "(a) Your friend complains to you that their five‐year‐old computer is slow for playing games. (i) State the output of each of the following logic gates for the inputs given. (ii) Complete the truth table for the OR logic gate, shown in Figure 7. This question continues on the next page. (b)  (c) The diagram in Figure 8 below, shows the different layers within a computer system. Explain the purpose of any two layers. (d) Developed in 1971, the first commercially produced microprocessor was the Intel 4004 and this led to a rapid and continuous rise in the power of the personal computer. Describe one other important development in computing that has occurred in the last 100 years and discuss its impact on computing today.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 30,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Processor, RAM, Graphics Card, Wireless, Networking.", marks: 30, accepts: ["For each item:","Valid item","1","0","Both correct","One correct","INPUTS OUTPUTS","A B A OR B","0 0 0","0 1 1","1 0 1"] },
+    ],
+    figure: {
+          "candId": "computer-science-2021-OL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2021-OL-paper-q15-fig0.png",
+          "srcHash": "573b6551e51c8d802cd71871fb57d349",
+          "alt": "The table or diagram printed with 2021 OL Question 15, as the State Examinations Commission set it. It is labelled: ●, Intel Core i3 CPU, 2GB RAM Memory, Intel Integrated Graphics, Bluetooth 4.1, 2 x USB 3.1, 1 x USB 2.0,, HDMI, 10/100 Ethernet LAN Port, 4‐Cell Li‐ion Battery, Figure 6.",
+          "attribution": "SEC Leaving Certificate Computer Science 2021 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC219GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2022 Ordinary Level — © State Examinations Commission.",
+    id: "cs-2022-ol-q1", topicId: "cs-2-2", conceptId: "given-following-variable-declarations-result-each",
+    section: "A", questionRef: "2022 OL Q1",
+    stem: "Given the following variable declarations, state the result of each of the Python print statements in the table below.",
+    questionText: "Given the following variable declarations, state the result of each of the Python print statements in the table below.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "print statement Result", marks: 5 },
+    ],
+    figure: {
+          "candId": "computer-science-2022-OL-paper-q1-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-OL-paper-q1-figure.png",
+          "srcHash": "c5e6788444fd0846eb2bc2e43b0a5f58",
+          "alt": "The program printed with 2022 OL Question 1, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 8 lines and begins: a = 2",
+          "attribution": "SEC Leaving Certificate Computer Science 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2022, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2022 Ordinary Level — © State Examinations Commission.",
@@ -280,6 +444,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Motherboard -> This is a circuit board that the other components can connect into.", marks: 5 },
     ],
+    figure: {
+          "candId": "computer-science-2022-OL-paper-q4-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-OL-paper-q4-fig0.png",
+          "srcHash": "8e9f8ce35cb9b46c737a522c6e601dda",
+          "alt": "The table or diagram printed with 2022 OL Question 4, as the State Examinations Commission set it. It is labelled: Figure 4, • Motherboard, • Fan, • Memory, • Hard drive, • Video card, Component Name 2:, Description 2:, Component Name 3:, Description 3:, Component Name 1:, Description 1:.",
+          "attribution": "SEC Leaving Certificate Computer Science 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -308,6 +480,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Primary storage is contained within the device (RAM and ROM). It is often known as internal memory. Secondary storage can be connected to the device USB, hard- drive.", marks: 5 },
     ],
+    figure: {
+          "candId": "computer-science-2022-OL-paper-q13-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-OL-paper-q13-figure.png",
+          "srcHash": "7b250b763c2e49723c55ec20927ad2bd",
+          "alt": "The table or diagram printed with 2022 OL Question 13, as the State Examinations Commission set it. It is labelled: Figure 9, First digit, Second digit, Third digit, Fourth digit, Answer:, First digit, Second digit, Third digit, Fourth digit.",
+          "attribution": "SEC Leaving Certificate Computer Science 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -377,6 +557,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "The World Wide Web and the Internet are often thought to be the same thing but they are", marks: 6 },
     ],
+    figure: {
+          "candId": "computer-science-2022-OL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-OL-paper-q15-fig0.png",
+          "srcHash": "fb64447f490526af1036cdc203a1847d",
+          "alt": "The table or diagram printed with 2022 OL Question 15, as the State Examinations Commission set it. It is labelled: Figure 10.",
+          "attribution": "SEC Leaving Certificate Computer Science 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -391,6 +579,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Clear visual of Ireland", marks: 6 },
     ],
+    figure: {
+          "candId": "computer-science-2022-OL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-OL-paper-q15-fig0.png",
+          "srcHash": "fb64447f490526af1036cdc203a1847d",
+          "alt": "The table or diagram printed with 2022 OL Question 15, as the State Examinations Commission set it. It is labelled: Figure 10.",
+          "attribution": "SEC Leaving Certificate Computer Science 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -410,6 +606,14 @@ export const CARDS: SecCard[] = [
     { id: "r-5", kind: "point", verbatim: "Add in a navigation bar with links", marks: 1 },
     { id: "r-6", kind: "point", verbatim: "Place search bar in more prominent place on the site. Any three of the above or similar 2 marks each", marks: 1 },
     ],
+    figure: {
+          "candId": "computer-science-2022-OL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-OL-paper-q15-fig0.png",
+          "srcHash": "fb64447f490526af1036cdc203a1847d",
+          "alt": "The table or diagram printed with 2022 OL Question 15, as the State Examinations Commission set it. It is labelled: Figure 10.",
+          "attribution": "SEC Leaving Certificate Computer Science 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -424,6 +628,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Use plain English", marks: 6 },
     ],
+    figure: {
+          "candId": "computer-science-2022-OL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-OL-paper-q15-fig0.png",
+          "srcHash": "fb64447f490526af1036cdc203a1847d",
+          "alt": "The table or diagram printed with 2022 OL Question 15, as the State Examinations Commission set it. It is labelled: Figure 10.",
+          "attribution": "SEC Leaving Certificate Computer Science 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -432,17 +644,17 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2022 Ordinary Level — © State Examinations Commission.",
     id: "cs-2022-ol-q3", topicId: "cs-2-2", conceptId: "why-pauses-included-algorithm-b-describe",
     section: "A", questionRef: "2022 OL Q3",
-    stem: "The pseudocode, shown in Figure 2 below, has been designed to run on a Microbit or similar embedded system, shown in Figure 3. The embedded system has a green LED (light emitting diode) connected to pin 0, a yellow LED connected to pin 1 and a red LED connected to pin 2. Answer the questions that follow. Start Set all pins to off Set pin 0 to on Pause for 2 seconds Set pin 0 to off Set pin 1 to on Pause for 2 seconds Set pin 1 to off Set pin 2 to on Figure 2",
+    stem: "The pseudocode, shown in Figure 2 below, has been designed to run on a Microbit or similar embedded system, shown in Figure 3. The embedded system has a green LED (light emitting diode) connected to pin 0, a yellow LED connected to pin 1 and a red LED connected to pin 2. Answer the questions that follow. Figure 2",
     questionText: "(a) Why are pauses included in this algorithm? (b) Describe the appearance of the LEDs at the end of the algorithm.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "To see the changes of the LED turning on or off", marks: 5, accepts: ["The code will run too quickly to see LEDS without the pauses","To see if the code works correctly Any one of the above or similar:"] },
     ],
     figure: {
-          "candId": "computer-science-2022-OL-paper-q3-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2022-OL-paper-q3-code0.png",
-          "srcHash": "facdfe27693e2df2a22493d26ee54943",
-          "alt": "The program printed with 2022 OL Question 3, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 9 lines and begins: Start",
+          "candId": "computer-science-2022-OL-paper-q3-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-OL-paper-q3-figure.png",
+          "srcHash": "761f6cd4e59c5439e2ac5e1af6f58602",
+          "alt": "The program and the table or diagram printed with 2022 OL Question 3, as the State Examinations Commission set it. The table or diagram is labelled: Start, Set all pins to off, Set pin 0 to on, Pause for 2 seconds, Set pin 0 to off, Set pin 1 to on, Set pin 1 to off, Set pin 2 to on, Figure 2, Figure 3.",
           "attribution": "SEC Leaving Certificate Computer Science 2022 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -477,6 +689,27 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC219GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2022 Ordinary Level — © State Examinations Commission.",
+    id: "cs-2022-ol-q10", topicId: "cs-2-3", conceptId: "match-picture-electronic-component-its-placing",
+    section: "A", questionRef: "2022 OL Q10",
+    questionText: "(a) Match the picture of the electronic component to its name by placing the relevant letter in the second column of the table below. (b) Select any one of these electronic components and explain its purpose.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Component", marks: 5, accepts: ["Name","(write the letter)","Transistor C","Capacitor A","Resistor B","Each Correct Item","Transistor -> Used to control current and voltage in a circuit.","Capacitor -> Are used to store electrical charge","Resistors -> Are used to slow down the flow of current in a circuit. Any one of the above or similar:"] },
+    ],
+    figure: {
+          "candId": "computer-science-2022-OL-paper-q10-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-OL-paper-q10-fig0.png",
+          "srcHash": "d7c63be8a28a37a841da50943690cfcd",
+          "alt": "The table or diagram printed with 2022 OL Question 10, as the State Examinations Commission set it. It is labelled: Name, Component, (write the letter), Transistor, Capacitor, Resistor, A, B, C.",
+          "attribution": "SEC Leaving Certificate Computer Science 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2023, level: "ordinary",
     paperFileid: "LC219GLP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2023 Ordinary Level — © State Examinations Commission.",
@@ -496,17 +729,17 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2023 Ordinary Level — © State Examinations Commission.",
     id: "cs-2023-ol-q13-a-i", topicId: "cs-2-2", conceptId: "select-correct-computer-science-term-following",
     section: "B", questionRef: "2023 OL Q13(a)(i)",
-    stem: "Variable Array Function Operator Conditional Boolean Column A Definition Column B Term A data structure that can store a collection of elements of the same data type A character that represents a mathematical or logical action A command for handling a decision A memory location that can store a value 1 i = 1 2 j = 10 3 while i < j: 4 print(i) 5 i = i + 1 6 j = j - 1 i j while i < j print(i) 1 1 10 True 1 2 3 4 5 6 This question continues on the next page.",
+    stem: "Variable Array Function Operator Conditional Boolean Column A Definition Column B Term A data structure that can store a collection of elements of the same data type A character that represents a mathematical or logical action A command for handling a decision A memory location that can store a value This question continues on the next page.",
     questionText: "Select the correct computer science term from the following list and place it in Column B to match the definitition in Column A in the table below.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Column A Column B", marks: 4 },
     ],
     figure: {
-          "candId": "computer-science-2023-OL-paper-q13-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q13-code0.png",
-          "srcHash": "6cee09591b9415489d2ac57882a154e1",
-          "alt": "The program printed with 2023 OL Question 13, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 20 lines and begins: i = 1",
+          "candId": "computer-science-2023-OL-paper-q13-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q13-figure.png",
+          "srcHash": "2e907eae200af6eb7a48f033a2ef866c",
+          "alt": "The program and the table or diagram printed with 2023 OL Question 13, as the State Examinations Commission set it. The table or diagram is labelled: Column A, Definition, Column B, Term, same data type, i = 1, j = 10, while i < j:, print(i), i = i + 1, j = j - 1, while i < j, True.",
           "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -518,17 +751,17 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2023 Ordinary Level — © State Examinations Commission.",
     id: "cs-2023-ol-q13-a-ii", topicId: "cs-2-2", conceptId: "while-loops-used-computer-science-iterate",
     section: "B", questionRef: "2023 OL Q13(a)(ii)",
-    stem: "Variable Array Function Operator Conditional Boolean Column A Definition Column B Term A data structure that can store a collection of elements of the same data type A character that represents a mathematical or logical action A command for handling a decision A memory location that can store a value 1 i = 1 2 j = 10 3 while i < j: 4 print(i) 5 i = i + 1 6 j = j - 1 i j while i < j print(i) 1 1 10 True 1 2 3 4 5 6 This question continues on the next page.",
+    stem: "Variable Array Function Operator Conditional Boolean Column A Definition Column B Term A data structure that can store a collection of elements of the same data type A character that represents a mathematical or logical action A command for handling a decision A memory location that can store a value This question continues on the next page.",
     questionText: "While loops are used in computer science to iterate over certain blocks of code. Examine the code below and complete the trace table that tracks the progress of the code being executed.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "i j while i < j print(i)", marks: 10 },
     ],
     figure: {
-          "candId": "computer-science-2023-OL-paper-q13-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q13-code0.png",
-          "srcHash": "6cee09591b9415489d2ac57882a154e1",
-          "alt": "The program printed with 2023 OL Question 13, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 20 lines and begins: i = 1",
+          "candId": "computer-science-2023-OL-paper-q13-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q13-figure.png",
+          "srcHash": "2e907eae200af6eb7a48f033a2ef866c",
+          "alt": "The program and the table or diagram printed with 2023 OL Question 13, as the State Examinations Commission set it. The table or diagram is labelled: Column A, Definition, Column B, Term, same data type, i = 1, j = 10, while i < j:, print(i), i = i + 1, j = j - 1, while i < j, True.",
           "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -548,10 +781,10 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Decomposition, abstraction, pattern recognition, generalisation, logical thinking and evaluation are all considered computational thinking skills. Valid computational thinking skill named", marks: 3 },
     ],
     figure: {
-          "candId": "computer-science-2023-OL-paper-q13-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q13-code0.png",
-          "srcHash": "6cee09591b9415489d2ac57882a154e1",
-          "alt": "The program printed with 2023 OL Question 13, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 20 lines and begins: i = 1",
+          "candId": "computer-science-2023-OL-paper-q13-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q13-figure.png",
+          "srcHash": "2e907eae200af6eb7a48f033a2ef866c",
+          "alt": "The program and the table or diagram printed with 2023 OL Question 13, as the State Examinations Commission set it. The table or diagram is labelled: Column A, Definition, Column B, Term, same data type, i = 1, j = 10, while i < j:, print(i), i = i + 1, j = j - 1, while i < j, True.",
           "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -663,17 +896,17 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2023 Ordinary Level — © State Examinations Commission.",
     id: "cs-2023-ol-q16-a-i", topicId: "cs-2-2", conceptId: "currently-first-line-printed-program-multiplication",
     section: "B", questionRef: "2023 OL Q16(a)(i)",
-    stem: "Before making any changes, you should save your working copy of the file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program below produces a times table for a specific number. A times table is a multiplication table in a list that shows the multiples of a specific number. The code below works by using a for loop to multiply the number seven by zero, then by one, then by two until the loop repeats ten times in total. 1 # Question 16(a) 2 # Examination Number: 3 4 print(\"Multiplication program\") 5 6 number = 7 7 8 print(\"Multiplications of \", number) 9 10 for i in range(10): 11 print(number*i) Make the following changes to the program: Leaving Certificate – 2023 4 Computer Science, Section C – Ordinary level This question continues on the next page. Leaving Certificate – 2023 5 Computer Science, Section C – Ordinary level Leaving Certificate – 2023 6 Computer Science, Section C – Ordinary level",
+    stem: "Before making any changes, you should save your working copy of the file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program below produces a times table for a specific number. A times table is a multiplication table in a list that shows the multiples of a specific number. The code below works by using a for loop to multiply the number seven by zero, then by one, then by two until the loop repeats ten times in total. Make the following changes to the program: Leaving Certificate – 2023 4 Computer Science, Section C – Ordinary level This question continues on the next page. Leaving Certificate – 2023 5 Computer Science, Section C – Ordinary level Leaving Certificate – 2023 6 Computer Science, Section C – Ordinary level",
     questionText: "Currently the first line that is printed by the program is “Multiplication program”. Change the program so that the first line printed is “Times Table program”. When the program is run the output may now look as follows: Times Table program Multiplications of 7 0 7 14 21 28 35 42 49 56 63 This question continues on the next page.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
     { id: "r-1", kind: "point", verbatim: "15 marks Correct response", marks: 15 },
     ],
     figure: {
-          "candId": "computer-science-2023-OL-paper-q16-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q16-code0.png",
-          "srcHash": "026689525df1271cd10d11fe79aa1f9b",
-          "alt": "The program printed with 2023 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 16 lines and begins: # Question 16(a)",
+          "candId": "computer-science-2023-OL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q16-figure.png",
+          "srcHash": "d6cfd575e44ba5694354c720e2e26310",
+          "alt": "The program printed with 2023 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 28 lines and begins: # Question 16(a)",
           "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -685,17 +918,17 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2023 Ordinary Level — © State Examinations Commission.",
     id: "cs-2023-ol-q16-a-iv", topicId: "cs-2-2", conceptId: "currently-user-can-enter-negative-number",
     section: "B", questionRef: "2023 OL Q16(a)(iv)",
-    stem: "Before making any changes, you should save your working copy of the file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program below produces a times table for a specific number. A times table is a multiplication table in a list that shows the multiples of a specific number. The code below works by using a for loop to multiply the number seven by zero, then by one, then by two until the loop repeats ten times in total. 1 # Question 16(a) 2 # Examination Number: 3 4 print(\"Multiplication program\") 5 6 number = 7 7 8 print(\"Multiplications of \", number) 9 10 for i in range(10): 11 print(number*i) Make the following changes to the program: Leaving Certificate – 2023 4 Computer Science, Section C – Ordinary level This question continues on the next page. Leaving Certificate – 2023 5 Computer Science, Section C – Ordinary level Leaving Certificate – 2023 6 Computer Science, Section C – Ordinary level",
+    stem: "Before making any changes, you should save your working copy of the file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program below produces a times table for a specific number. A times table is a multiplication table in a list that shows the multiples of a specific number. The code below works by using a for loop to multiply the number seven by zero, then by one, then by two until the loop repeats ten times in total. Make the following changes to the program: Leaving Certificate – 2023 4 Computer Science, Section C – Ordinary level This question continues on the next page. Leaving Certificate – 2023 5 Computer Science, Section C – Ordinary level Leaving Certificate – 2023 6 Computer Science, Section C – Ordinary level",
     questionText: "Currently the user can enter a negative number. Negative numbers should not be allowed in this program. Amend the program so that the times table is not printed out and an appropriate error message is displayed if the user enters a negative number. When the program is run and the user enters -2 as the number, the output may now look as follows: Times Table program Enter number: -2 This program does not support negative numbers.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "semantic error.", marks: 5 },
     ],
     figure: {
-          "candId": "computer-science-2023-OL-paper-q16-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q16-code0.png",
-          "srcHash": "026689525df1271cd10d11fe79aa1f9b",
-          "alt": "The program printed with 2023 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 16 lines and begins: # Question 16(a)",
+          "candId": "computer-science-2023-OL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q16-figure.png",
+          "srcHash": "d6cfd575e44ba5694354c720e2e26310",
+          "alt": "The program printed with 2023 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 28 lines and begins: # Question 16(a)",
           "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -707,17 +940,17 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2023 Ordinary Level — © State Examinations Commission.",
     id: "cs-2023-ol-q16-a-vi", topicId: "cs-2-2", conceptId: "update-program-so-displays-results-format",
     section: "B", questionRef: "2023 OL Q16(a)(vi)",
-    stem: "Before making any changes, you should save your working copy of the file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program below produces a times table for a specific number. A times table is a multiplication table in a list that shows the multiples of a specific number. The code below works by using a for loop to multiply the number seven by zero, then by one, then by two until the loop repeats ten times in total. 1 # Question 16(a) 2 # Examination Number: 3 4 print(\"Multiplication program\") 5 6 number = 7 7 8 print(\"Multiplications of \", number) 9 10 for i in range(10): 11 print(number*i) Make the following changes to the program: Leaving Certificate – 2023 4 Computer Science, Section C – Ordinary level This question continues on the next page. Leaving Certificate – 2023 5 Computer Science, Section C – Ordinary level Leaving Certificate – 2023 6 Computer Science, Section C – Ordinary level",
+    stem: "Before making any changes, you should save your working copy of the file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. Enter your Examination Number in the space provided on line 2 in your Python file. The program below produces a times table for a specific number. A times table is a multiplication table in a list that shows the multiples of a specific number. The code below works by using a for loop to multiply the number seven by zero, then by one, then by two until the loop repeats ten times in total. Make the following changes to the program: Leaving Certificate – 2023 4 Computer Science, Section C – Ordinary level This question continues on the next page. Leaving Certificate – 2023 5 Computer Science, Section C – Ordinary level Leaving Certificate – 2023 6 Computer Science, Section C – Ordinary level",
     questionText: "Update the program so that it displays the results in the format “3 x 8 = 24”, as shown below. When the program is run and the user enters the number 8, the output may now look as follows: ******************** Times Table program ******************** Enter number: 8 Multiplications of 8 0 x 8 = 0 1 x 8 = 8 2 x 8 = 16 3 x 8 = 24 4 x 8 = 32 5 x 8 = 40 6 x 8 = 48 7 x 8 = 56 8 x 8 = 64 9 x 8 = 72 10 x 8 = 80 11 x 8 = 88 12 x 8 = 96 Save your file using the format CandidateNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your candidate number was 123456. This question continues on the next page.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "syntax error.", marks: 5 },
     ],
     figure: {
-          "candId": "computer-science-2023-OL-paper-q16-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q16-code0.png",
-          "srcHash": "026689525df1271cd10d11fe79aa1f9b",
-          "alt": "The program printed with 2023 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 16 lines and begins: # Question 16(a)",
+          "candId": "computer-science-2023-OL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q16-figure.png",
+          "srcHash": "d6cfd575e44ba5694354c720e2e26310",
+          "alt": "The program printed with 2023 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 28 lines and begins: # Question 16(a)",
           "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -736,10 +969,10 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Possible solution:", marks: 30 },
     ],
     figure: {
-          "candId": "computer-science-2023-OL-paper-q16-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q16-code0.png",
-          "srcHash": "026689525df1271cd10d11fe79aa1f9b",
-          "alt": "The program printed with 2023 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 16 lines and begins: # Question 16(a)",
+          "candId": "computer-science-2023-OL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q16-figure.png",
+          "srcHash": "d6cfd575e44ba5694354c720e2e26310",
+          "alt": "The program printed with 2023 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 28 lines and begins: # Question 16(a)",
           "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -779,7 +1012,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2023 Ordinary Level — © State Examinations Commission.",
     id: "cs-2023-ol-q11", topicId: "cs-2-2", conceptId: "output-program-if-user-enters-19",
     section: "A", questionRef: "2023 OL Q11",
-    stem: "The Python code below is being used to calculate a Junior Cycle grade descriptor from a percentage. Examine the code carefully and answer the questions below. 1 percentage = int(input(\"How many marks out of 100? \")) 2 3 grade = \"\" 4 if percentage >= 90: 5 grade = \"Distinction\" 6 elif percentage >= 75: 7 grade = \"Higher Merit\" 8 elif percentage >= 55: 9 grade = \"Merit\" 10 elif percentage >= 40: 11 grade = \"Achieved\" 12 elif percentage >= 20: 13 grade = \"Partially Achieved\" 14 else: 15 grade = \"Not Graded\" 16 17 print(grade)",
+    stem: "The Python code below is being used to calculate a Junior Cycle grade descriptor from a percentage. Examine the code carefully and answer the questions below.",
     questionText: "(a) What is the output of the program if the user enters 19 when asked for the number of marks? (b) What is the output of the program if the user makes a mistake and enters 110 when asked for the number of marks? (c) What is the purpose of the int function in line 1 of the code?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -807,11 +1040,35 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Column A Column B", marks: 38, accepts: ["Definition Term","A data structure that can store a collection of elements of the","Array","same data type","A character that represents a mathematical or logical action Operator","A command for handling a decision Conditional","A memory location that can store a value Variable","Each correct item","i j while i < j print(i)","1 1 10 True 1","2 2 9 True 2"] },
     ],
     figure: {
-          "candId": "computer-science-2023-OL-paper-q13-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q13-code0.png",
-          "srcHash": "6cee09591b9415489d2ac57882a154e1",
-          "alt": "The program printed with 2023 OL Question 13, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 20 lines and begins: i = 1",
+          "candId": "computer-science-2023-OL-paper-q13-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2023-OL-paper-q13-figure.png",
+          "srcHash": "2e907eae200af6eb7a48f033a2ef866c",
+          "alt": "The program and the table or diagram printed with 2023 OL Question 13, as the State Examinations Commission set it. The table or diagram is labelled: Column A, Definition, Column B, Term, same data type, i = 1, j = 10, while i < j:, print(i), i = i + 1, j = j - 1, while i < j, True.",
           "attribution": "SEC Leaving Certificate Computer Science 2023 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC219GLP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
+    id: "cs-2024-ol-q1", topicId: "cs-2-2", conceptId: "output-following-python-program-box-below",
+    section: "A", questionRef: "2024 OL Q1",
+    stem: "State the output from the following Python program in the box below.",
+    questionText: "State the output from the following Python program in the box below.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "12", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "27", marks: 2 },
+    { id: "r-3", kind: "point", verbatim: "3 or 3.0", marks: 2 },
+    ],
+    figure: {
+          "candId": "computer-science-2024-OL-paper-q1-code0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q1-code0.png",
+          "srcHash": "546bd4fd5c41fcb8e72435ced241722c",
+          "alt": "The program printed with 2024 OL Question 1, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 6 lines and begins: 1 x = 9",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
   } as SecCard,
@@ -851,17 +1108,17 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "cs-2024-ol-q10", topicId: "cs-3-2", conceptId: "data-set-below-shows-raw-data",
     section: "A", questionRef: "2024 OL Q10",
-    stem: "The data set below shows the raw data collected from a school survey on how teachers travel to work. Name Distance (Km) Driver’s License (Y/N) Mode of Transport Mr. Murray 3 Y Cycle Mrs. Woods 15 yes Car Mr. Murphy 23 Y Ms. Jones 340 N Walk Bn Uí Fhlanagáin 11 N Bus Mr. Murray 3 Y Cycle Ms. O’Neill -18 Y Car Mrs. Lavery 4 Y Walk You want to use this data as part of a computer science project. List three issues with the data in the data set.",
-    questionText: "The data set below shows the raw data collected from a school survey on how teachers travel to work. Name Distance (Km) Driver’s License (Y/N) Mode of Transport Mr. Murray 3 Y Cycle Mrs. Woods 15 yes Car Mr. Murphy 23 Y Ms. Jones 340 N Walk Bn Uí Fhlanagáin 11 N Bus Mr. Murray 3 Y Cycle Ms. O’Neill -18 Y Car Mrs. Lavery 4 Y Walk You want to use this data as part of a computer science project. List three issues with the data in the data set.",
+    stem: "The data set below shows the raw data collected from a school survey on how teachers travel to work. Name Distance (Km) Driver’s License (Y/N) Mode of Transport You want to use this data as part of a computer science project. List three issues with the data in the data set.",
+    questionText: "The data set below shows the raw data collected from a school survey on how teachers travel to work. Name Distance (Km) Driver’s License (Y/N) Mode of Transport You want to use this data as part of a computer science project. List three issues with the data in the data set.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Name Distance (Km) Driver’s License (Y/N) Mode of Transport", marks: 6 },
     ],
     figure: {
-          "candId": "computer-science-2024-OL-paper-q10-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q10-code0.png",
-          "srcHash": "eeffc9bc52a2538da2b952948b78668a",
-          "alt": "The program printed with 2024 OL Question 10, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 31 lines and begins: Mr. Murray",
+          "candId": "computer-science-2024-OL-paper-q10-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q10-figure.png",
+          "srcHash": "80b261aee96bf1526cc920ebe5783bad",
+          "alt": "The program and the table or diagram printed with 2024 OL Question 10, as the State Examinations Commission set it. The table or diagram is labelled: Name, Distance (Km), Driver’s License (Y/N), Mode of Transport, Mr. Murray, Y, Cycle, Mrs. Woods, Car, Mr. Murphy, Ms. Jones, N, Walk, Bn Uí Fhlanagáin.",
           "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -873,7 +1130,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "cs-2024-ol-q13-a-i", topicId: "cs-2-2", conceptId: "b-both-variables-variable",
     section: "B", questionRef: "2024 OL Q13(a)(i)",
-    stem: "1 set A to 0 2 set B to FALSE 3 add 1 to A 4 go to 7 5 if A equals 60 go to 9 6 set A to 0 7 add 1 to A 8 go to 3 9 shake the bottle A times 10 set B to TRUE 11 end This question continues on the next page.",
+    stem: "This question continues on the next page.",
     questionText: "A and B are both variables. What is a variable?",
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
@@ -897,7 +1154,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "cs-2024-ol-q13-a-ii", topicId: "cs-2-4", conceptId: "choose-suitable-data-types-variables-b",
     section: "B", questionRef: "2024 OL Q13(a)(ii)",
-    stem: "1 set A to 0 2 set B to FALSE 3 add 1 to A 4 go to 7 5 if A equals 60 go to 9 6 set A to 0 7 add 1 to A 8 go to 3 9 shake the bottle A times 10 set B to TRUE 11 end This question continues on the next page.",
+    stem: "This question continues on the next page.",
     questionText: "Choose suitable data types for the variables A and B.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -919,7 +1176,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "cs-2024-ol-q13-a-iii", topicId: "cs-2-2", conceptId: "lines-1-2-program-variables-initialised",
     section: "B", questionRef: "2024 OL Q13(a)(iii)",
-    stem: "1 set A to 0 2 set B to FALSE 3 add 1 to A 4 go to 7 5 if A equals 60 go to 9 6 set A to 0 7 add 1 to A 8 go to 3 9 shake the bottle A times 10 set B to TRUE 11 end This question continues on the next page.",
+    stem: "This question continues on the next page.",
     questionText: "In lines 1 and 2 in this program the variables are initialised. Explain the term “initialised” in relation to variables.",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -942,7 +1199,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "cs-2024-ol-q13-a-iv", topicId: "cs-2-2", conceptId: "program-has-conditional-statement-line-number",
     section: "B", questionRef: "2024 OL Q13(a)(iv)",
-    stem: "1 set A to 0 2 set B to FALSE 3 add 1 to A 4 go to 7 5 if A equals 60 go to 9 6 set A to 0 7 add 1 to A 8 go to 3 9 shake the bottle A times 10 set B to TRUE 11 end This question continues on the next page.",
+    stem: "This question continues on the next page.",
     questionText: "This program has a conditional statement. On what line number is the conditional statement?",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -964,7 +1221,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "cs-2024-ol-q13-a-v", topicId: "cs-2-2", conceptId: "program-enters-infinite-loop-term-reference",
     section: "B", questionRef: "2024 OL Q13(a)(v)",
-    stem: "1 set A to 0 2 set B to FALSE 3 add 1 to A 4 go to 7 5 if A equals 60 go to 9 6 set A to 0 7 add 1 to A 8 go to 3 9 shake the bottle A times 10 set B to TRUE 11 end This question continues on the next page.",
+    stem: "This question continues on the next page.",
     questionText: "This program enters an “infinite loop”. Explain this term with reference to the code.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -986,7 +1243,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "cs-2024-ol-q13-a-vi", topicId: "cs-2-2", conceptId: "infinite-loop-program-above-example-logic",
     section: "B", questionRef: "2024 OL Q13(a)(vi)",
-    stem: "1 set A to 0 2 set B to FALSE 3 add 1 to A 4 go to 7 5 if A equals 60 go to 9 6 set A to 0 7 add 1 to A 8 go to 3 9 shake the bottle A times 10 set B to TRUE 11 end This question continues on the next page.",
+    stem: "This question continues on the next page.",
     questionText: "The infinite loop in the program above is an example of a “logic error”. In programming, what is the difference between a logic error and a syntax error?",
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
@@ -1246,10 +1503,10 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Possible solution:", marks: 20 },
     ],
     figure: {
-          "candId": "computer-science-2024-OL-paper-q16-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q16-code0.png",
-          "srcHash": "6593ad6571adada55443174a5b7ba23d",
-          "alt": "The program printed with 2024 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 15 lines and begins: # Question 16(a)",
+          "candId": "computer-science-2024-OL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q16-figure.png",
+          "srcHash": "245468b63981c1500f0c5218e6e03200",
+          "alt": "The program printed with 2024 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 21 lines and begins: # Question 16(a)",
           "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1280,6 +1537,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Column A Column B", marks: 6, accepts: ["Component Image Component Name","Capacitor","Resistor","Transistor","Each correct item","Leaving Certificate 2024","Computer Science, Marking Scheme – Ordinary level","Resistor – Creates resistance to the flow of current. Creates a voltage difference.","Transistor – Amplifies or switches on or off current. Controls current or voltage flow.","Capacitor – Can build up and store energy. Can release large amounts of built up energy."] },
     ],
+    figure: {
+          "candId": "computer-science-2024-OL-paper-q3-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q3-fig0.png",
+          "srcHash": "8ed57202a38f791e84c9a4b33f582d36",
+          "alt": "The table or diagram printed with 2024 OL Question 3, as the State Examinations Commission set it. It is labelled: Column A, Component Image, Column B, Component Name.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1288,7 +1553,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Ordinary Level — © State Examinations Commission.",
     id: "cs-2024-ol-q8", topicId: "cs-2-4", conceptId: "why-int-function-used-lines-1",
     section: "A", questionRef: "2024 OL Q8",
-    stem: "Examine the incomplete Python program below and answer the questions that follow. 1 num1 = int(input(\"Enter first number: \")) 2 num2 = int(input(\"Enter second number: \")) 3 if num1 > num2: 4 print(num1, \"is greater\") 5 elif num2 > num1: 6 print(num2, \"is greater\") 7 else: 8",
+    stem: "Examine the incomplete Python program below and answer the questions that follow.",
     questionText: "(a) Why is the int function used in lines 1 and 2? (b) What is an appropriate print statement that could be entered in line 8?",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -1316,10 +1581,10 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "Possible solution:", marks: 80, accepts: ["1 # Question 16(a)","2 # Examination Number:","3","4 print(\"Welcome to the driving licence eligibility checker\") #(i)","5","6 #(ii) user asked to input age and it is converted to an integer","7 age = int(input(\"What age are you? \"))","8 print(\"You entered\", age) #(iii)","9","10 name = input(\"Enter your name: \") #(v)","11"] },
     ],
     figure: {
-          "candId": "computer-science-2024-OL-paper-q16-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q16-code0.png",
-          "srcHash": "6593ad6571adada55443174a5b7ba23d",
-          "alt": "The program printed with 2024 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 15 lines and begins: # Question 16(a)",
+          "candId": "computer-science-2024-OL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-OL-paper-q16-figure.png",
+          "srcHash": "245468b63981c1500f0c5218e6e03200",
+          "alt": "The program printed with 2024 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 21 lines and begins: # Question 16(a)",
           "attribution": "SEC Leaving Certificate Computer Science 2024 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1385,6 +1650,14 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "0", marks: 3 },
     { id: "r-2", kind: "point", verbatim: "2", marks: 3 },
     ],
+    figure: {
+          "candId": "computer-science-2025-OL-paper-q10-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q10-fig0.png",
+          "srcHash": "01cdece4153fc3d34f8a6c462420d48e",
+          "alt": "The table or diagram printed with 2025 OL Question 10, as the State Examinations Commission set it. It is labelled: Figure 3.",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1463,17 +1736,17 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "cs-2025-ol-q14-a-i", topicId: "cs-2-2", conceptId: "line-1-code-has-conditional-statement",
     section: "B", questionRef: "2025 OL Q14(a)(i)",
-    stem: "1 if money >= price: 2 dispenseItem 3 giveChange(money - price) 4 else: 5 print(\"Error – not enough money inserted\") This question continues on the next page.",
+    stem: "This question continues on the next page.",
     questionText: "Line 1 of the code has a conditional statement. Explain the purpose of this conditional statement.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
     { id: "r-1", kind: "point", verbatim: "It is to check that the user has entered enough money to buy the selected item", marks: 5 },
     ],
     figure: {
-          "candId": "computer-science-2025-OL-paper-q14-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14-code0.png",
-          "srcHash": "ed2db2d0f69b24535a5c66ba15704259",
-          "alt": "The program printed with 2025 OL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 10 lines and begins: if money >= price:",
+          "candId": "computer-science-2025-OL-paper-q14-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14-figure.png",
+          "srcHash": "9b0a2cd2d20d991b738ce5aa5cc418b4",
+          "alt": "The program and the table or diagram printed with 2025 OL Question 14, as the State Examinations Commission set it. The table or diagram is labelled: Item code, Item name, Price (€), A1, Water, flavoured, 1.5, A2, Water, 1.2, B1, Oreos, 2.5, C1, Crisps, Salt & Vinegar.",
           "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1485,17 +1758,17 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "cs-2025-ol-q14-a-ii", topicId: "cs-2-2", conceptId: "suitable-data-type-variable-price",
     section: "B", questionRef: "2025 OL Q14(a)(ii)",
-    stem: "1 if money >= price: 2 dispenseItem 3 giveChange(money - price) 4 else: 5 print(\"Error – not enough money inserted\") This question continues on the next page.",
+    stem: "This question continues on the next page.",
     questionText: "State a suitable data type for the variable price.",
     tariffModel: {"kind":"fixed"}, totalMarks: 1,
     rows: [
     { id: "r-1", kind: "point", verbatim: "float", marks: 1 },
     ],
     figure: {
-          "candId": "computer-science-2025-OL-paper-q14-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14-code0.png",
-          "srcHash": "ed2db2d0f69b24535a5c66ba15704259",
-          "alt": "The program printed with 2025 OL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 10 lines and begins: if money >= price:",
+          "candId": "computer-science-2025-OL-paper-q14-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14-figure.png",
+          "srcHash": "9b0a2cd2d20d991b738ce5aa5cc418b4",
+          "alt": "The program and the table or diagram printed with 2025 OL Question 14, as the State Examinations Commission set it. The table or diagram is labelled: Item code, Item name, Price (€), A1, Water, flavoured, 1.5, A2, Water, 1.2, B1, Oreos, 2.5, C1, Crisps, Salt & Vinegar.",
           "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1514,10 +1787,10 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Verify that selecting a specific snack (e.g., \"A1\") correctly identifies the item", marks: 4 },
     ],
     figure: {
-          "candId": "computer-science-2025-OL-paper-q14-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14-code0.png",
-          "srcHash": "ed2db2d0f69b24535a5c66ba15704259",
-          "alt": "The program printed with 2025 OL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 10 lines and begins: if money >= price:",
+          "candId": "computer-science-2025-OL-paper-q14-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14-figure.png",
+          "srcHash": "9b0a2cd2d20d991b738ce5aa5cc418b4",
+          "alt": "The program and the table or diagram printed with 2025 OL Question 14, as the State Examinations Commission set it. The table or diagram is labelled: Item code, Item name, Price (€), A1, Water, flavoured, 1.5, A2, Water, 1.2, B1, Oreos, 2.5, C1, Crisps, Salt & Vinegar.",
           "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1536,10 +1809,10 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Code Entered Money Inserted (€) Expected Result", marks: 9 },
     ],
     figure: {
-          "candId": "computer-science-2025-OL-paper-q14-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14-code0.png",
-          "srcHash": "ed2db2d0f69b24535a5c66ba15704259",
-          "alt": "The program printed with 2025 OL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 10 lines and begins: if money >= price:",
+          "candId": "computer-science-2025-OL-paper-q14-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14-figure.png",
+          "srcHash": "9b0a2cd2d20d991b738ce5aa5cc418b4",
+          "alt": "The program and the table or diagram printed with 2025 OL Question 14, as the State Examinations Commission set it. The table or diagram is labelled: Item code, Item name, Price (€), A1, Water, flavoured, 1.5, A2, Water, 1.2, B1, Oreos, 2.5, C1, Crisps, Salt & Vinegar.",
           "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1558,10 +1831,10 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Functional Testing. Functional testing checks whether the software performs its intended functions correctly. For example, testing that the vending machine dispenses water when the correct amount of money is inserted and the code button is entered.", marks: 3 },
     ],
     figure: {
-          "candId": "computer-science-2025-OL-paper-q14-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14-code0.png",
-          "srcHash": "ed2db2d0f69b24535a5c66ba15704259",
-          "alt": "The program printed with 2025 OL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 10 lines and begins: if money >= price:",
+          "candId": "computer-science-2025-OL-paper-q14-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14-figure.png",
+          "srcHash": "9b0a2cd2d20d991b738ce5aa5cc418b4",
+          "alt": "The program and the table or diagram printed with 2025 OL Question 14, as the State Examinations Commission set it. The table or diagram is labelled: Item code, Item name, Price (€), A1, Water, flavoured, 1.5, A2, Water, 1.2, B1, Oreos, 2.5, C1, Crisps, Salt & Vinegar.",
           "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1580,10 +1853,10 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Large Buttons: Easily readable buttons with high-contrast colours and tactile feedback can help users with visual impairments.", marks: 8 },
     ],
     figure: {
-          "candId": "computer-science-2025-OL-paper-q14-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14-code0.png",
-          "srcHash": "ed2db2d0f69b24535a5c66ba15704259",
-          "alt": "The program printed with 2025 OL Question 14, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 10 lines and begins: if money >= price:",
+          "candId": "computer-science-2025-OL-paper-q14-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q14-figure.png",
+          "srcHash": "9b0a2cd2d20d991b738ce5aa5cc418b4",
+          "alt": "The program and the table or diagram printed with 2025 OL Question 14, as the State Examinations Commission set it. The table or diagram is labelled: Item code, Item name, Price (€), A1, Water, flavoured, 1.5, A2, Water, 1.2, B1, Oreos, 2.5, C1, Crisps, Salt & Vinegar.",
           "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1601,6 +1874,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Museum Visitors", marks: 8 },
     ],
+    figure: {
+          "candId": "computer-science-2025-OL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q15-fig0.png",
+          "srcHash": "4238272fc9f653ff7e671861fe56f9d7",
+          "alt": "The table or diagram printed with 2025 OL Question 15, as the State Examinations Commission set it. It is labelled: Figure 7.",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1615,6 +1896,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Screen Reader Compatibility: Ensures the content can be read aloud by screen readers, allowing visually impaired users to navigate and consume information effectively.", marks: 6 },
     ],
+    figure: {
+          "candId": "computer-science-2025-OL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q15-fig0.png",
+          "srcHash": "4238272fc9f653ff7e671861fe56f9d7",
+          "alt": "The table or diagram printed with 2025 OL Question 15, as the State Examinations Commission set it. It is labelled: Figure 7.",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1629,6 +1918,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Enhanced navigation: users can easily locate exhibits, galleries, toilets, and other amenities within the museum, reducing confusion and improving their overall experience.", marks: 5 },
     ],
+    figure: {
+          "candId": "computer-science-2025-OL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q15-fig0.png",
+          "srcHash": "4238272fc9f653ff7e671861fe56f9d7",
+          "alt": "The table or diagram printed with 2025 OL Question 15, as the State Examinations Commission set it. It is labelled: Figure 7.",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1643,6 +1940,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Privacy and data collection: collecting location data may raise concerns about how users' location information is stored, used, and shared.", marks: 4 },
     ],
+    figure: {
+          "candId": "computer-science-2025-OL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q15-fig0.png",
+          "srcHash": "4238272fc9f653ff7e671861fe56f9d7",
+          "alt": "The table or diagram printed with 2025 OL Question 15, as the State Examinations Commission set it. It is labelled: Figure 7.",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1651,7 +1956,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "cs-2025-ol-q16-a-v", topicId: "cs-2-2", conceptId: "total-cost-tiling-floor-can-be",
     section: "B", questionRef: "2025 OL Q16(a)(v)",
-    stem: "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your examination number was 123456. Enter your examination number in the space provided on line 2 in your Python file. The program below is the start of a program to help floor tilers calculate the total cost of tiles. The program allows the user to enter the length of a room and then calculates and outputs the total area of the floor. 1 # Question 16(a) 2 # Examination Number: 3 4 print(\"The program\") 5 6 length = float(input(\"What length is the room?: \")) 7 width = 20 8 9 area = length * width 10 11 print(\"The area of the floor is:\", area) Make the following changes to the program: Leaving Certificate – 2025 5 Computer Science, Section C – Ordinary level Leaving Certificate – 2025 6 Computer Science, Section C – Ordinary level",
+    stem: "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your examination number was 123456. Enter your examination number in the space provided on line 2 in your Python file. The program below is the start of a program to help floor tilers calculate the total cost of tiles. The program allows the user to enter the length of a room and then calculates and outputs the total area of the floor. Make the following changes to the program: Leaving Certificate – 2025 5 Computer Science, Section C – Ordinary level Leaving Certificate – 2025 6 Computer Science, Section C – Ordinary level",
     questionText: "The total cost for tiling the floor can be found by multiplying the cost per square metre by the area of the floor. Modify the program to print out the total cost in an appropriate sentence. When the program is run the output may now look as follows: What length is the room?: 5 What width is the room?: 6 You entered a length of: 5.0 metres You entered a width of: 6.0 metres The area of the floor is: 30.0 The cost per square metre is: 15 The total cost is: 450.0 This question continues on the next page.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
@@ -1662,10 +1967,10 @@ export const CARDS: SecCard[] = [
     { id: "r-5", kind: "point", verbatim: "Any other reasonable attempt.", marks: 2 },
     ],
     figure: {
-          "candId": "computer-science-2025-OL-paper-q16-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q16-code0.png",
-          "srcHash": "1b24669fdde91edf27fb0f348df74d1c",
-          "alt": "The program printed with 2025 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 17 lines and begins: # Question 16(a)",
+          "candId": "computer-science-2025-OL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q16-figure.png",
+          "srcHash": "6c33a073caa3a4a87e96d90cdff326ed",
+          "alt": "The program printed with 2025 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 24 lines and begins: # Question 16(a)",
           "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1677,17 +1982,17 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Ordinary Level — © State Examinations Commission.",
     id: "cs-2025-ol-q16-a-vi", topicId: "cs-2-2", conceptId: "if-total-cost-greater-than-1000",
     section: "B", questionRef: "2025 OL Q16(a)(vi)",
-    stem: "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your examination number was 123456. Enter your examination number in the space provided on line 2 in your Python file. The program below is the start of a program to help floor tilers calculate the total cost of tiles. The program allows the user to enter the length of a room and then calculates and outputs the total area of the floor. 1 # Question 16(a) 2 # Examination Number: 3 4 print(\"The program\") 5 6 length = float(input(\"What length is the room?: \")) 7 width = 20 8 9 area = length * width 10 11 print(\"The area of the floor is:\", area) Make the following changes to the program: Leaving Certificate – 2025 5 Computer Science, Section C – Ordinary level Leaving Certificate – 2025 6 Computer Science, Section C – Ordinary level",
+    stem: "Before making any changes, you should save your working copy of the file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your examination number was 123456. Enter your examination number in the space provided on line 2 in your Python file. The program below is the start of a program to help floor tilers calculate the total cost of tiles. The program allows the user to enter the length of a room and then calculates and outputs the total area of the floor. Make the following changes to the program: Leaving Certificate – 2025 5 Computer Science, Section C – Ordinary level Leaving Certificate – 2025 6 Computer Science, Section C – Ordinary level",
     questionText: "If the total cost is greater than 1000 then a discount will apply. However, if the total cost is less than 100 then the tiler will not take on the job. Modify the program to output a message based on the following table: Condition Output Cost is more than 1000 You are entitled to a 10% discount Cost is between 100 and 1000 inclusive You are not entitled to a 10% discount Cost is less than 100 Sorry, job is too small When the program is run the output may now look as follows: What length is the room?: 5 What width is the room?: 6 You entered a length of: 5.0 metres You entered a width of: 6.0 metres The area of the floor is: 30.0 The cost per square metre is: 15 The total cost is: 450.0 You are not entitled to a 10% discount Save your file using the format ExaminationNumberQuestion16_A.py. For example, you would save the file as 123456Question16_A.py if your examination number was 123456.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "10 marks Correct response", marks: 10 },
     ],
     figure: {
-          "candId": "computer-science-2025-OL-paper-q16-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q16-code0.png",
-          "srcHash": "1b24669fdde91edf27fb0f348df74d1c",
-          "alt": "The program printed with 2025 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 17 lines and begins: # Question 16(a)",
+          "candId": "computer-science-2025-OL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q16-figure.png",
+          "srcHash": "6c33a073caa3a4a87e96d90cdff326ed",
+          "alt": "The program printed with 2025 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 24 lines and begins: # Question 16(a)",
           "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1706,10 +2011,10 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Possible solution:", marks: 20 },
     ],
     figure: {
-          "candId": "computer-science-2025-OL-paper-q16-code0",
-          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q16-code0.png",
-          "srcHash": "1b24669fdde91edf27fb0f348df74d1c",
-          "alt": "The program printed with 2025 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 17 lines and begins: # Question 16(a)",
+          "candId": "computer-science-2025-OL-paper-q16-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q16-figure.png",
+          "srcHash": "6c33a073caa3a4a87e96d90cdff326ed",
+          "alt": "The program printed with 2025 OL Question 16, as the State Examinations Commission set it, with its line numbers and indentation. It runs to 24 lines and begins: # Question 16(a)",
           "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
           "lettersVisible": []
     },
@@ -1726,6 +2031,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Column A Column B", marks: 6, accepts: ["Base Value Number system","2 Binary","10 Decimal","16 Hexadecimal","Each correct item","Simplicity for Hardware: Computers use electrical circuits, which have two states: on (1) and off (0).","Reliability: Using just two states (1 and 0) reduces the chance of errors or misinterpretations.","Efficiency in Processing: The binary system allows computers to perform operations and calculations much faster because it only needs to handle two states.","Compatibility with Logic: Binary aligns with Boolean logic (true/false), which is the foundation of programming and decision-making in computers."] },
     ],
+    figure: {
+          "candId": "computer-science-2025-OL-paper-q3-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q3-fig0.png",
+          "srcHash": "6b8a475bb57bbb7dd154f9a6825c3765",
+          "alt": "The table or diagram printed with 2025 OL Question 3, as the State Examinations Commission set it. It is labelled: Column A, Base value, Column B, Number system.",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1740,5 +2053,13 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Simplified items on the map are considered forms of abstraction such as:", marks: 6, accepts: ["Removing unnecessary details such as buildings, trees etc","Simplified roads","Simplified river","Simplified railway line","Green areas","Text labels on street names / road numbers","Symbols for bus stops","Place names for important buildings","Accept any other valid forms of validation given Each correct item","Abstraction means simplifying complex systems by focusing only on the important details and"] },
     ],
+    figure: {
+          "candId": "computer-science-2025-OL-paper-q7-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-OL-paper-q7-fig0.png",
+          "srcHash": "c45667c3432393528c280d39e05c8c8a",
+          "alt": "The table or diagram printed with 2025 OL Question 7, as the State Examinations Commission set it. It is labelled: Figure 1.",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
 ];

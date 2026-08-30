@@ -370,9 +370,30 @@ const decks = [
    * text layer hands a listing back as "1 number = 27 2 while number < 39: 3
    * print(number, end=" ")" -- line numbers run into the code and the
    * indentation gone, which is the one thing a program cannot survive losing.
-   * Nothing was removed. */
-  ['computer-science:higher', CS_HIGHER, 183, '1913faf85906c81eafb147fea9f66c6624f43f4d66f9487e10d25a5bc91e0e21'],
-  ['computer-science:ordinary', CS_ORDINARY, 102, '5f540a8f06ed0c00db1e9039114bc3fd265fa5e52a8fa053a20786c600f00aaf'],
+   * Nothing was removed.
+   *
+   * 2026-08-30 (same day): 183/102 -> 191/109, coverage 327/484 -> 343/484.
+   * The figure pass was extended from programs to the TABLES and DIAGRAMS the
+   * questions print, and each question now publishes one crop rather than one
+   * per band -- a card cites a PART, and attaching the topmost band would have
+   * shown 2022 OL Q13(b) the binary digits printed for (a).
+   *
+   * ONE CARD WAS REMOVED, and this is the record of it rather than a hash
+   * quietly moved over the top of it: cs-2021-hl-q12. That question prints one
+   * database table, then the ruled box the candidate writes in, then a SECOND
+   * table, and asks about both. No single rectangle holds the two tables
+   * without the blank box between them, and its parts are not priced
+   * separately so the card can only cite the whole question. The card it
+   * replaced carried the first table only, which is the defect this pass
+   * exists to remove: a question asking about a table the student cannot see.
+   * It comes back when a card can carry a figure per part.
+   *
+   * The same span fix took a WRONG figure off three cards that kept their
+   * ids -- cs-2023-hl-q6, cs-2024-hl-q10 and cs-2025-hl-q10 were each showing
+   * the listing printed for the question above them. 2024 HL Q10 asks about
+   * ordering kiosks and was showing a leap-year function. */
+  ['computer-science:higher', CS_HIGHER, 191, '5d33cff9a8ceae56d4c3570b512cfbcefcd445d4927434075191124c451df359'],
+  ['computer-science:ordinary', CS_ORDINARY, 109, 'dd8c2821c4ea42f7f4a86fbff90ec96e0750e8bf24b0f30141a908d68b698603'],
   ['construction-studies:higher', CONS_HIGHER, 255, 'b74a39fd589f1082d6378190aee778d528eff0968d7af0ee9144525f2e40d57b'],
   ['construction-studies:ordinary', CONS_ORDINARY, 250, 'f56985e32cc1f02a2e2f7a7eb300a44646b75cf3604a12b5a478bde2a520d2da'],
 ] as const;
@@ -389,6 +410,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7735);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7750);
   });
 });

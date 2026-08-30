@@ -60,19 +60,19 @@
   "refsHash": "b362d158b7cb0b00"
  },
  "computer-science": {
-  "cards": 285,
-  "contentHash": "c333b2ad05d53ba2",
-  "coveragePct": 67.6,
-  "covered": 327,
+  "cards": 300,
+  "contentHash": "ddbe6acf7e107682",
+  "coveragePct": 70.9,
+  "covered": 343,
   "excluded": 0,
   "leaves": 484,
-  "open": 157,
+  "open": 141,
   "orphans": 0,
   "papers": {
    "count": 20,
    "hash": "4eb8d8bb7c8ce50b"
   },
-  "refsHash": "a2e88c00fc275163"
+  "refsHash": "b3cbbc2d588f333c"
  },
  "construction-studies": {
   "cards": 505,

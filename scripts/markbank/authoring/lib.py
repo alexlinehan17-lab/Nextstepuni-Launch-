@@ -189,6 +189,39 @@ class _CsSource:
     def paths(self):
         return self._scheme.parts()
 
+PAPER_TERMINAL = re.compile(r'[.?!]$')
+
+
+def _without_listing(question, lines):
+    """The question text with the crop's own program lines removed."""
+    q = ' '.join(question.split())
+    toks = [' '.join(t.split()) for t in lines]
+    toks = [t for t in toks if len(t) >= 3]
+    if not toks:
+        return None
+    lo = q.find(toks[0])
+    if lo <= 0:
+        return None
+    cur = lo + len(toks[0])
+    for t in toks[1:]:
+        i = q.find(t, cur)
+        # 14 characters of slack: a blank line in the listing shows up as its
+        # bare line numbers ("3 4") between two lines of code.
+        if i < 0 or i - cur > 14:
+            continue
+        cur = i + len(t)
+    head = re.sub(r'[\s\d]+$', '', q[:lo].rstrip())
+    tail = re.sub(r'^[\s\d]+', '', q[cur:].lstrip())
+    out = ' '.join(f'{head} {tail}'.split())
+    # What is left has to still be a question. 2023 HL Q3 matched a crop line
+    # against the fourth character of its text and the "removal" reduced the
+    # whole ask to "(a)". Taking the listing out may shorten a question; it
+    # may not empty it.
+    if len(out) < 25 or len(out.split()) < 5:
+        return None
+    return out
+
+
 class Author:
     def __init__(self, subject, year, level):
         level = {'higher': 'hl', 'ordinary': 'ol'}.get(level, level)
@@ -256,7 +289,7 @@ class Author:
              labels=None, notes=None, stem=True, checked=None, suffix='',
              row_kind='point', notation=None, spread=False, context=None,
              omit=(), source='md', card_id=None, from_run=None, from_runs=None,
-             tick=None, first_sentence=False, ladder=None):
+             tick=None, first_sentence=False, ladder=None, listing=()):
         ref = part_ref(self.year, self.level, q, letter, roman)
 
         question = self.paper.text(q, letter, roman)
@@ -286,6 +319,21 @@ class Author:
                 if tail.strip():
                     question = f'{(question or "").rstrip()} {tail}'.strip()
 
+        # A PROGRAM the crop carries, taken back out of the question text.
+        # Computer Science prints its listings inside the question block, and
+        # the text layer returns them run into the prose: "What is the output
+        # of the following piece of Python code? 1 x = 3 2 print("x is", x)".
+        # Where a figure carries that listing, the card's question is the ask
+        # without it -- the paper's own words either side, nothing rewritten,
+        # and the code shown as the paper set it rather than as a text layer
+        # mangled it. The lines are matched IN ORDER from the first one found,
+        # so a fragment that also occurs in the prose cannot start the cut.
+        listing_removed = False
+        if listing and question:
+            without = _without_listing(question, listing)
+            if without:
+                question, listing_removed = without, True
+
         if not question:
             raise Refused(f'{ref}: the paper has no text for this part')
 
@@ -307,7 +355,15 @@ class Author:
 
         # The flag is raised on what the paper block held; a scheme-confirmed
         # trim answers it, so the check runs on the text the card will carry.
-        if not first_sentence and self.paper.suspect(q, letter, roman) and not checked:
+        # The flag is raised on what the paper BLOCK held. Where the crop has
+        # taken the listing back out, the text the card carries is a different
+        # string, and it answers the flag on its own terms if it now ends in a
+        # full stop: what made it look truncated was the program running off
+        # its end.
+        flagged = self.paper.suspect(q, letter, roman)
+        if flagged and listing_removed and PAPER_TERMINAL.search(question.strip()):
+            flagged = False
+        if not first_sentence and flagged and not checked:
             raise Refused(
                 f'{ref}: question text is flagged and unreviewed — {question!r}. '
                 f'Open the page; if it is right, pass checked="<why>".')
@@ -491,6 +547,12 @@ class Author:
         }
         if stem:
             text = self.paper.stem(q, letter) or self.paper.stem(q)
+            # The crop carries the listing here too. A shared stem is where a
+            # printed table most often ends up -- 2021 OL Q15's stem came out
+            # as "Figure 7 INPUTS OUTPUTS A B A OR B 0 0 0 1 1 0 1 1", which
+            # card lint reports as label junk and a student reads as noise.
+            if listing and text:
+                text = _without_listing(text, listing) or text
             if text:
                 card['stem'] = text
         if notes:

@@ -41,6 +41,7 @@ from paper_census import census_subject                     # noqa: E402
 from lib import Author, Refused                             # noqa: E402
 from cs_topics import topic_for, concept_for                 # noqa: E402
 import cardlint                                             # noqa: E402
+import cs_question_figures as CSF                           # noqa: E402
 
 # The examiner's instruction ABOUT the marking points, not one of them.
 LEAD_IN = re.compile(r'^(any response that captures|any \w+ of the following|'
@@ -98,6 +99,8 @@ def cardable(points):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--report', action='store_true')
+    ap.add_argument('--all', action='store_true',
+                    help='list every refusal, not the first three of each')
     args = ap.parse_args()
 
     # {(year, LEVEL, q): figure key} for the code this question prints, from
@@ -110,9 +113,30 @@ def main():
         for key, meta in json.load(open(manifest)).items():
             if not key.startswith('computer-science-'):
                 continue
-            m = re.match(r'computer-science-(\d{4})-(HL|OL)-paper-q(\d+)-code(\d+)$', key)
-            if m and int(m.group(4)) == 0:
+            # One key per question, whatever its suffix. cs_question_figures
+            # publishes a single crop for each question -- the listing, the
+            # diagram, or the two joined -- because a card cites a PART and
+            # the part cannot be matched to one band on the page. Matching
+            # "code0" alone missed every question whose printed matter is a
+            # table rather than a program.
+            m = re.match(r'computer-science-(\d{4})-(HL|OL)-paper-q(\d+)-\w+$', key)
+            if m:
                 figs[(int(m.group(1)), m.group(2), int(m.group(3)))] = key
+
+    # The program lines each question's crop carries, so the card's question
+    # text can be the ask without the listing run into it.
+    listings = {}
+
+    def listing_for(year, level, q):
+        key = (year, level.lower(), q)
+        if key not in listings:
+            try:
+                made = CSF.crop(year, level.lower(), q, write=False)
+            except Exception:                                # noqa: BLE001
+                made = []
+            listings[key] = [t for _, _, _, ls, kind in made
+                             if kind == 'code' for t in ls]
+        return listings[key]
 
     idx = R.leaf_index(census_subject('computer-science'))
     cards, refused = [], collections.Counter()
@@ -137,8 +161,7 @@ def main():
 
             def note(reason):
                 refused[reason] += 1
-                if len(examples[reason]) < 4:
-                    examples[reason].append(f'{ref}: {" ".join(ask.split())[:60]}')
+                examples[reason].append(f'{ref}: {" ".join(ask.split())[:70]}')
 
             if not ask.strip():
                 note('the paper reader recovers no ask')
@@ -178,6 +201,14 @@ def main():
             if points_at_printed_matter(joined) and not figure:
                 note('points at printed matter the card cannot carry')
                 continue
+            # A card that NAMES a lettered part needs the letters decoded as
+            # well as shown, which is what card lint asks for and what this
+            # author cannot supply: the meaning of the letter is usually the
+            # answer. Refusing here rather than letting the deck build drop it
+            # keeps the authored file and the shipped deck the same thing.
+            if cardlint.NAMES_LETTERS.search(joined):
+                note('names a lettered part this author cannot decode')
+                continue
             if len(rows) > MAX_ROWS:
                 rows = rows[:MAX_ROWS]
             # One mark per point where the tariff divides, else the whole
@@ -194,7 +225,13 @@ def main():
                 A.card(q, letter, roman, topic=topic,
                        concept=concept_for(ask), source='table',
                        use=use, marks=marks, tariff='fixed', card_id=cid,
-                       figure=figure)
+                       figure=figure,
+                       listing=listing_for(year, level, q) if figure else (),
+                       # A stem that reads as a heap of short tokens IS the
+                       # printed table, lifted by the text layer. The crop
+                       # carries it properly, so the card drops the text
+                       # version rather than showing a student both.
+                       stem=not (figure and cardlint.label_junk(stem)))
             except Refused as exc:
                 note(str(exc).split(':', 1)[-1].strip()[:60])
         # ── whole-question pass ───────────────────────────────────────────
@@ -243,11 +280,16 @@ def main():
                 for _ in held:
                     refused['points at printed matter the card cannot carry'] += 1
                 continue
+            if cardlint.NAMES_LETTERS.search(joined):
+                for _ in held:
+                    refused['names a lettered part this author cannot decode'] += 1
+                continue
             try:
                 A.card(q, None, None, topic=topic, concept=concept_for(ask),
                        source='table', use=[list(range(len(rows[:MAX_ROWS])))],
                        marks=[tariff], tariff='fixed',
                        card_id=f'cs-{year}-{level}-q{q}', figure=figure,
+                       listing=listing_for(year, level, q) if figure else (),
                        checked='The question states nothing of its own: the '
                                'paper prints the ask only under its parts, and '
                                'the card carries them joined in the paper\'s '
@@ -262,9 +304,10 @@ def main():
 
     if args.report:
         print(f'{len(cards)} card(s) from {sum(len(v) for v in idx.values())} asks')
+        limit = 60 if args.all else 3
         for reason, n in refused.most_common():
             print(f'   {n:4} REFUSED  {reason}')
-            for e in examples[reason][:3]:
+            for e in examples[reason][:limit]:
                 print(f'             {e}')
         return 0
     print(json.dumps(cards, ensure_ascii=False, indent=1))
