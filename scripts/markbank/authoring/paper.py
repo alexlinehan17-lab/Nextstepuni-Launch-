@@ -105,6 +105,31 @@ RUBRIC_HEAD = re.compile(
 # The '\d.' head may be followed by an opening quote: Construction Studies'
 # 2019-2025 alternative Q10 opens with a quotation.
 QHEAD = re.compile('^(?:Question\\s+(\\d{1,2})\\b|(\\d{1,2})\\.\\s+(?=[A-Z(\\d"\u201c\u2018]))')
+# An instruction ABOUT THE PAPER, numbered like a question. Engineering prints
+# its rubric as a numbered list — "1. Answer any SIX questions. 2. All
+# questions carry equal marks. 3. All answers must be written in ink..." — and
+# where the extractor splits those into separate blocks the reader read them as
+# Questions 1 to 6, which shifted every real question down by six: the true
+# Question 1 vanished and Question 6 absorbed five questions' parts. It is one
+# block in 2021 and 2022 and six blocks in 2023 to 2025, so the fault appears
+# and disappears by year.
+#
+# Matched on the instruction's own words rather than on its position, because
+# position cannot tell it apart from a real question: Biology and Business
+# number every question this way with no "Question" in front of it, and their
+# first bare head is Question 1. Across 170 papers this matches these six lines
+# and nothing else.
+EXAM_INSTRUCTION = re.compile(
+    r'^\d{1,2}\.\s+(?:'
+    r'Answer\s+(?:any\s+|all\s+|either\s+)?[\w\-]+\s+questions?\b'
+    r'|All\s+questions\s+carry\s+equal\s+marks'
+    r'|All\s+answers?\s+must\s+be\s+written'
+    r'|Diagrams?\s+should\s+be\s+drawn'
+    r'|Squared\s+paper\s+is\s+supplied'
+    r'|Please\s+label\s+and\s+number'
+    r'|Write\s+your\s+(?:examination|candidate)\s+number'
+    r'|Marks?\s+(?:may|will)\s+be\s+(?:lost|deducted)'
+    r')', re.I)
 MARKER = re.compile(r'^\(([a-z]{1,4})\)\s*')
 # Letters run past (h): Chemistry's Q4 runs to (l) and Physics' lettered-choice
 # questions to (l) as well — every part after (h) was invisible and 61 shipped
@@ -393,6 +418,8 @@ class Paper:
                 if q < joined_q <= q + 3 and not q < int(sp.group(1)) <= q + 3:
                     text = f'Question {joined_q}' + text[sp.end():]
             m = QHEAD.match(text)
+            if m and EXAM_INSTRUCTION.match(text):
+                m = None
             if not m and q is not None:
                 # Not every head is printed as "N." followed by a word. 2025 OL
                 # Physics sets "12." in a block of its own with part (a) in the

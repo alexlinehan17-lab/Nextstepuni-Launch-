@@ -68,6 +68,10 @@ SUBJECTS = {
     # programming question answered on a computer. The sections are named on
     # the page, so the census reads them rather than the booklet code.
     'computer-science': {'mode': 'sections'},
+    # One booklet, nine questions of 50 marks, "Answer any SIX questions. All
+    # questions carry equal marks." Question 1 is itself "Give brief answers
+    # to any ten of the following", which is the bestNofParts shape.
+    'engineering': {'mode': 'merged'},
 }
 
 MARKS = re.compile(r'\((\d{1,3})\s*marks?\)', re.I)
@@ -194,6 +198,11 @@ def marks_by_question(P_files, subject):
                     h = re.match(r'^(?:Question\s+(\d{1,2})\b|(\d{1,2})\.\s+)',
                                  un)
                     block = un
+            # The paper's own rubric, numbered like a question — see
+            # paper.EXAM_INSTRUCTION. Engineering's "1. Answer any SIX
+            # questions." was censused as Question 1.
+            if h and PP.EXAM_INSTRUCTION.match(block.strip()):
+                h = None
             if h:
                 q = int(h.group(1) or h.group(2))
             m = MARKS.search(block)

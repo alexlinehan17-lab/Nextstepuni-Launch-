@@ -63,6 +63,12 @@ SUBJECTS = {
     'politics-society': 'politics-and-society',
     # Added 30 August 2026, to MEASURE it before choosing it. See stage 0.
     'computer-science': 'computer-science',
+    # Added 30 August 2026. Stage 0 read one scheme first: it prints STATED
+    # answers against printed tariffs -- "Function of a heatsink: A heatsink
+    # provides a reservoir or pathway to remove heat from temperature
+    # sensitive components", "Any one @ 5" -- which is the pattern
+    # Agricultural Science and Construction Studies already ship.
+    'engineering': 'engineering',
 }
 
 FILEID = re.compile(r'^LC(\d{3})([AG])LP(\d{3})([EI])V\.pdf$', re.I)
