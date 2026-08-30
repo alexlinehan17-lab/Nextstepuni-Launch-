@@ -37,7 +37,11 @@ def mangled(u):
 # character -- so they cannot come out of a glyph-id table keyed by character.
 LIGATURE = {
     'Ɵ': 'ti', 'ﬁ': 'fi', 'ﬂ': 'fl', 'ﬀ': 'ff', 'ﬃ': 'ffi', 'ﬄ': 'ffl',
-    'ƫ': 'tt', 'ƞ': 'tf', '\u02da': '\u00b0',   # "pu[tt]ing", "ou[tf]lows", 25[deg]C
+    # 'tti', not 'tt'. The comment beside this entry read "pu[tt]ing", which
+    # expands to "puttng" -- the ligature swallows the i as well. Every one of
+    # the seven sightings across the corpus is the same: setting, putting,
+    # cutting, emitting. "tt" was right in none of them.
+    'ƫ': 'tti', 'ƞ': 'tf', '\u02da': '\u00b0',   # "pu[tti]ng", "ou[tf]lows", 25[deg]C
     '\uf0ae': '\u2192',   # Symbol font: code point 0xAE is its rightwards arrow
     '\uf0df': '\u2190',   # SymbolMT 0xDF -- the LEFTWARDS arrow, which is the
                           # assignment operator in Computer Science pseudocode.
