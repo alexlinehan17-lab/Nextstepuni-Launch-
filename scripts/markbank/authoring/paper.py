@@ -166,6 +166,82 @@ INLINE_MARKER = re.compile(
 LABELS_ONLY = re.compile(r'^[A-H]\s*:?(\s+[A-H]\s*:?)*$')
 
 
+ROMAN_RUN = ['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x',
+             'xi', 'xii']
+
+
+def _next_marker(tok):
+    """The token that would come after this one in a printed run."""
+    if tok in ROMAN_RUN:
+        i = ROMAN_RUN.index(tok)
+        return ROMAN_RUN[i + 1] if i + 1 < len(ROMAN_RUN) else None
+    if len(tok) == 1 and tok.isalpha():
+        nxt = chr(ord(tok) + 1)
+        return 'j' if nxt == 'i' else nxt
+    return None
+
+
+# A marker that OPENS a printed line. Either it has the line to itself, or the
+# ask begins on it in lower case -- 2023 HL Chemistry sets "(vi)" alone and
+# then "(vii) are not involved in bonding?" on one line. A cross-reference
+# never opens a line: it sits inside a sentence ("at part (a) above").
+LINE_OPENING_MARKER = re.compile(
+    r'^\(([a-hj-l]|i{1,3}|iv|vi{0,3}|ix|xi{0,3})\)(?:[ \t]*$|[ \t]+(?=[a-z]))')
+
+
+def _split_own_line_markers(raw):
+    """Flatten a block, but let a marker printed ALONE on its line start one.
+
+    A block is flattened to a single line, and INLINE_MARKER -- which finds the
+    markers inside it -- requires the ask to begin with a CAPITAL. That rule is
+    right for running prose, where "(a), (b) and (c)" is a cross-reference and
+    not a marker: relaxing the case would admit 470 of those across the corpus,
+    nearly all of them rubrics ("Answer either (a) or (b)") and back-references
+    ("at part (a) above").
+
+    But a shared stem hands its asks to LOWERCASE continuations. 2023 HL
+    Chemistry Q10(a) prints "A single benzene molecule has 42 electrons. How
+    many of these electrons" and then "(iii) are involved in carbon to hydrogen
+    bonding,". Flattened, that is indistinguishable from a cross-reference; on
+    the page it is not, because the marker has a line to ITSELF. So split
+    before flattening and the case rule never has to be relaxed.
+
+    Chemistry's paper census gains 117 leaves and Home Economics one; the other eight subjects gain
+    and lose none, because their PDFs already break those markers into blocks
+    of their own. The asks were being lost, not merely mis-keyed: five cards
+    were shipping as ORPHANS against parts the census said the paper does not
+    print, and the paper prints every one of them.
+    """
+    lines = [l.strip() for l in raw.splitlines() if l.strip()]
+    out, cur, last = [], [], None
+    for i, line in enumerate(lines):
+        m = LINE_OPENING_MARKER.match(line)
+        tok = m.group(1) if m else None
+        alone = m and line == m.group(0).strip()
+        # Alone on its line, with the ask starting below it: a marker.
+        split = bool(cur and alone and i + 1 < len(lines)
+                     and lines[i + 1][:1].islower())
+        # Sharing its line with the ask, in lower case: a marker ONLY where it
+        # continues a run this block has already broken. 2023 HL Chemistry sets
+        # "(vi)" alone and then "(vii) are not involved in bonding?" on one
+        # line. Without the run test this also split "suggest how (i) health
+        # and wellbeing and\n(ii) responsible living might influence food
+        # choices" -- one 20-mark ask in 2021 HL Home Economics, whose "(i)"
+        # sits mid-line and is rightly left alone -- into a phantom second
+        # part. The census's own roman-gap flag caught it: a lone (ii).
+        if cur and m and not alone and last and tok == _next_marker(last):
+            split = True
+        if split:
+            out.append(' '.join(' '.join(x.split()) for x in cur))
+            cur = []
+        if split or (m and alone):
+            last = tok
+        cur.append(line)
+    if cur:
+        out.append(' '.join(' '.join(x.split()) for x in cur))
+    return out
+
+
 def _blocks(path):
     """Every non-empty text block, in page then top-to-bottom, left-to-right order."""
     with pymupdf.open(path) as doc:
@@ -173,9 +249,9 @@ def _blocks(path):
                  for n in range(doc.page_count)]
     for page in pages:
         for b in page:
-            text = ' '.join(b[4].split())
-            if text and not PAGE_FURNITURE.match(text):
-                yield text
+            for text in _split_own_line_markers(b[4]):
+                if text and not PAGE_FURNITURE.match(text):
+                    yield text
 
 
 def _i_is_letter(blocks, index):
