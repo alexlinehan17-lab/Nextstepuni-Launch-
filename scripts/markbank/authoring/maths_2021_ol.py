@@ -27,6 +27,11 @@ filed, votes = {}, {}
 for key in A.S.parts():
     t, _ = topic_for(A.question(key))
     filed[key] = t
+    if not t:
+        # The paper's wording files nothing; let the scheme's own method vote.
+        t2, _ = topic_for(A.topic_evidence(key))
+        if t2:
+            votes.setdefault((key[0], key[1]), []).append(t2)
     if t:
         votes.setdefault((key[0], key[1]), []).append(t)
 

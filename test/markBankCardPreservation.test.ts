@@ -218,8 +218,28 @@ const decks = [
    * is now read off each page, bounded so it can only move LEFT (see
    * mathtext.reader_cut for why moving it right loses units). Coverage
    * 881/989 -> 907/989. Nothing removed. */
-  ['maths:higher', MATHS_HIGHER, 393, 'ee77c5bd6bd1c568daac4633db9571159d4a0e698798de23d189c924c5a43160'],
-  ['maths:ordinary', MATHS_ORDINARY, 420, '1734beabce15f2b5b49a8a5ec545c442d3aa9af9a20f766d1507bc65a84ce8f0'],
+  /* 2026-08-30 (third pass): maths 393/420 -> 395/424, and NINE Ordinary cards
+   * REMOVED. Each was defective and is listed here rather than pinned over.
+   *
+   * A unit's band runs from its own Scale line and the part marker prints a
+   * little above it, so the reader looked back 8 points. 2021 OL scheme page 9
+   * sets Q1(d)'s marker 14.6 points above its scale, outside that window, so
+   * the unit shipped LETTERLESS -- keyed as the whole of Q1, carrying a crop of
+   * all four parts and a 10-mark tariff against a 30-mark question. Five cards
+   * were like that (2021 OL P1 Q1, Q6, Q7, Q8 and P2 Q6) and four more cited a
+   * part the paper does not print (P1 Q9(iii), P2 Q1(ii), Q4(ii), Q9(ii)).
+   * The band above already identified each marker and discarded it as "the
+   * next unit's"; it is now handed forward instead. Q1 is (a) 5 + (b) 5 +
+   * (c) 10 + (d) 10 = the 30 the paper prints.
+   *
+   * That in turn showed the topic vote leaning on the welding: "Find the
+   * length of the runway" files nothing, and 2021 OL P2 Q9 only ever filed
+   * because its text carried the aircraft stem glued on. Where the paper's
+   * wording names nothing, the SCHEME states the method and the method is the
+   * topic -- Q9 files as Trigonometry from "x/(sin 47) = 260/(sin 36)".
+   * Coverage 907/989 -> 916/989. */
+  ['maths:higher', MATHS_HIGHER, 395, '2f708b029874bb8ef6f24889d80b360b7a7246f9b5460712bdc6a3a2f1abbc34'],
+  ['maths:ordinary', MATHS_ORDINARY, 424, '3594cc702478029d27cb0c60645c71a39451b7196902f87d332efbe612455b8b'],
   ['construction-studies:higher', CONS_HIGHER, 255, 'b74a39fd589f1082d6378190aee778d528eff0968d7af0ee9144525f2e40d57b'],
   ['construction-studies:ordinary', CONS_ORDINARY, 250, 'f56985e32cc1f02a2e2f7a7eb300a44646b75cf3604a12b5a478bde2a520d2da'],
 ] as const;
@@ -236,6 +256,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7398);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7404);
   });
 });
