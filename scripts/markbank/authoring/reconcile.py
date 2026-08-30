@@ -72,22 +72,24 @@ def shipped_cards(subject):
     "g-parent1") and paired each with the next card's citation, which
     invented five hundred phantom orphans in Business alone.
     """
+    if subject == 'english':
+        # English's paper-specific facts live in the reviewed manifest and are
+        # converted to runtime cards by factory.ts. Parsing literal makeCard
+        # calls sees only the 19 hand-enriched 2025 HL Paper 1 cards and makes
+        # the other 641 shipped cards invisible to the ledger.
+        path = os.path.join(DECKS, 'english', 'authored.json')
+        payload = json.load(open(path, encoding='utf-8'))
+        cards = payload.get('cards', [])
+        if payload.get('cardCount') != len(cards):
+            raise AssertionError('English authored manifest count is stale')
+        return [(card['id'], card['questionRef']) for card in cards]
+
     out = []
     for level in ('higher', 'ordinary'):
         path = os.path.join(DECKS, subject, f'{level}.ts')
         if not os.path.exists(path):
             continue
         text = open(path, encoding='utf-8').read()
-        if subject == 'english':
-            # English cards are reviewed source objects, not output from the
-            # exact-point emitter. Pair each makeCard call's id with its paper
-            # reference; do not scan every object field and invent row ids.
-            for chunk in re.split(r'\bmakeCard\(\{', text)[1:]:
-                cid = re.search(r"\bid:\s*'([^']+)'", chunk)
-                ref = re.search(r"\bref:\s*'([^']+)'", chunk)
-                if cid and ref:
-                    out.append((cid.group(1), ref.group(1)))
-            continue
         for chunk in re.split(r'\.\.\.base,\s*kind:', text)[1:]:
             cid = re.search(r'\bid: "([^"]+)"', chunk)
             ref = re.search(r'questionRef: "([^"]+)"', chunk)
@@ -456,6 +458,11 @@ def content_hash(subject):
         path = os.path.join(DECKS, subject, f'{level}.ts')
         if os.path.exists(path):
             h.update(open(path, 'rb').read())
+    if subject == 'english':
+        # English is data-driven, so these two files can materially change a
+        # runtime card even when the tiny level exports do not move.
+        for name in ('factory.ts', 'authored.json'):
+            h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
     return h.hexdigest()[:16]
 
 
@@ -479,7 +486,13 @@ def refs_hash(subject):
     and nothing would force a re-measure. The hash moves when any citation
     does."""
     import hashlib
-    text = '\n'.join(f'{cid}\t{ref}' for cid, ref in shipped_cards(subject))
+    cards = shipped_cards(subject)
+    # English is assembled by a reviewed-card overlay plus a generated
+    # manifest, so display order is intentionally different from manifest
+    # order. Coverage identity is the stable id/ref pair, not deck sorting.
+    if subject == 'english':
+        cards = sorted(cards)
+    text = '\n'.join(f'{cid}\t{ref}' for cid, ref in cards)
     return hashlib.sha256(text.encode('utf-8')).hexdigest()[:16]
 
 

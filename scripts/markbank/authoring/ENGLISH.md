@@ -6,13 +6,18 @@ are assessed through PCLM: Purpose, Coherence, Language and Mechanics.
 
 ## The card model
 
-Every card contains the exact examination prompt and one of two published
+Every card contains the exact examination prompt and one of three published
 marking modes:
 
 - **Combined PCLM grid** for short responses, where the scheme awards one
   holistic mark from a printed grade band.
 - **Discrete PCLM** for longer responses, where P, C and L carry 30% each and M
   carries 10%. Coherence and Language may not score above Purpose.
+- **Composite PCLM** for linked compulsory parts that receive separate grids.
+  Components can be combined or discrete — for example an Ordinary Level
+  Comparative card uses two 15-mark combined grids followed by one 40-mark
+  discrete grid. The card stays together, but each part is placed and totalled
+  on its own published tariff.
 
 The marking side separates three things that must never be conflated:
 
@@ -34,7 +39,7 @@ the scheme reveal. Add `sourceMaterial` with:
 
 - the paper's own source label and title;
 - every one-based PDF page the source spans, in reading order; and
-- the author/publication acknowledgement printed at the end of the paper.
+- the concise author/publication introduction printed with the source.
 
 The source reader renders those pages directly from Paper Trail's verified
 question-paper PDF. Do not retype the passage, manufacture a facsimile, point at
@@ -67,19 +72,29 @@ python3 scripts/markbank/authoring/english_census.py --check
 python3 scripts/markbank/authoring/reconcile.py english --open
 ```
 
-The current ledger contains 630 card units across 20 papers. The first authored
-batch is the complete 2025 Higher Level Paper 1: all 19 selectable questions,
-including all Question A parts, all Question B choices and all seven composing
-choices. The remaining ledger entries stay explicitly queued until their exact
-prompt and year-specific scheme rubric have been reviewed.
+The current ledger contains 660 card units across 20 papers. Every unit has a
+live PCLM card: 210 Higher Level and 450 Ordinary Level. The total includes all
+Question A parts, all Question B and composing choices, every Single Text and
+Comparative option, both unseen-poetry routes, and every printed prescribed-
+poetry choice. Ordinary Level prescribed poetry is counted as one linked Q1
+card for its compulsory (a)/(b) parts plus three separate Q2 alternatives.
+
+`english_cards.py` extracts every prompt from the question paper, maps required
+source pages, and traces the wording to its own year's marking scheme before it
+writes the committed runtime manifest:
+
+```bash
+python3 scripts/markbank/authoring/english_cards.py
+python3 scripts/markbank/authoring/english_cards.py --check
+```
 
 ## Authoring order
 
-Work newest-first while completing one whole paper at a time:
+The corpus was reviewed newest-first, completing one whole paper at a time:
 
 1. 2025 Ordinary Level Paper 1
 2. 2025 Higher and Ordinary Level Paper 2
 3. 2024 back through 2021, Paper 1 then Paper 2 at each level
 
-No paper is described as complete until every census ID for that paper has a
+No paper is described as complete unless every census ID for that paper has a
 live card and the one-to-one coverage test passes.

@@ -90,19 +90,19 @@
   "refsHash": "ffceb66a16576771"
  },
  "english": {
-  "cards": 19,
-  "contentHash": "4e7f2d8406f10a43",
-  "coveragePct": 3.0,
-  "covered": 19,
+  "cards": 660,
+  "contentHash": "dd32efcea04d35fc",
+  "coveragePct": 100.0,
+  "covered": 660,
   "excluded": 0,
-  "leaves": 630,
-  "open": 611,
+  "leaves": 660,
+  "open": 0,
   "orphans": 0,
   "papers": {
    "count": 20,
    "hash": "5a9e0ab3f863aa4f"
   },
-  "refsHash": "8b61ad20c56c4e73"
+  "refsHash": "c1e31e8602659293"
  },
  "home-economics": {
   "cards": 571,

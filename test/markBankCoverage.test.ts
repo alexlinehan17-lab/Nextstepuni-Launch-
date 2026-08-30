@@ -24,10 +24,16 @@ import { readFileSync, readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 import baseline from '../scripts/markbank/coverage-baseline.json';
+import { CARDS as ENGLISH_HIGHER } from '../components/MarkBank/cards/english/higher';
+import { CARDS as ENGLISH_ORDINARY } from '../components/MarkBank/cards/english/ordinary';
 
 const SUBJECTS = Object.keys(baseline) as (keyof typeof baseline)[];
 
 const deckCards = (subject: string): { id: string; ref: string }[] => {
+  if (subject === 'english') {
+    return [...ENGLISH_HIGHER, ...ENGLISH_ORDINARY]
+      .map(({ id, questionRef: ref }) => ({ id, ref }));
+  }
   const out: { id: string; ref: string }[] = [];
   for (const level of ['higher', 'ordinary']) {
     const path = resolve(
@@ -36,14 +42,6 @@ const deckCards = (subject: string): { id: string; ref: string }[] => {
     try {
       text = readFileSync(path, 'utf8');
     } catch {
-      continue;
-    }
-    if (subject === 'english') {
-      for (const chunk of text.split(/\bmakeCard\(\{/).slice(1)) {
-        const id = chunk.match(/\bid:\s*'([^']+)'/);
-        const ref = chunk.match(/\bref:\s*'([^']+)'/);
-        if (id && ref) out.push({ id: id[1], ref: ref[1] });
-      }
       continue;
     }
     for (const chunk of text.split(/\.\.\.base,\s*kind:/).slice(1)) {
@@ -81,8 +79,13 @@ describe('Mark Bank paper-coverage ratchet', () => {
     ).toBe(baseline[subject].cards);
     // The count alone leaves a hole: a re-cited card changes coverage with
     // no size change. The hash moves when any citation does.
+    const identities = cards.map(({ id, ref }) => `${id}\t${ref}`);
+    // English overlays 19 hand-enriched cards onto a generated corpus, so its
+    // display ordering is not the manifest ordering. Coverage pins identity,
+    // not presentation order.
+    if (subject === 'english') identities.sort();
     const digest = createHash('sha256')
-      .update(cards.map(({ id, ref }) => `${id}\t${ref}`).join('\n'))
+      .update(identities.join('\n'))
       .digest('hex').slice(0, 16);
     expect(
       digest,
@@ -94,7 +97,7 @@ describe('Mark Bank paper-coverage ratchet', () => {
     const bad = deckCards(subject)
       .filter(({ ref }) => {
         if (subject === 'english') {
-          return !/^\d{4} (?:HL|OL) Paper [12] (?:Text [1-3] QA\((?:i|ii|iii)\)|Text [1-3] QB|Composing [1-7])$/.test(ref);
+          return !/^\d{4} (?:HL|OL) Paper [12] (?:Text [1-3] QA\((?:i|ii|iii)(?:\)\((?:a|b))?\)|Text [1-3] QB|Composing [1-7]|Single Text [A-I](?:\((?:i|ii)\)| Q[1-4])|Comparative [A-C] Q[12]|Unseen Poetry Q[12]|Prescribed Poetry (?:[1-5]|[A-F] Q(?:1|2\((?:i|ii|iii)\))))$/.test(ref);
         }
         const core = ref.split(/\s+[—–-]\s+/)[0];
         const m = core.match(HEAD);
@@ -123,6 +126,12 @@ describe('Mark Bank paper-coverage ratchet', () => {
       const path = resolve(
         __dirname, '..', 'components', 'MarkBank', 'cards', subject, `${level}.ts`);
       try { h.update(readFileSync(path)); } catch { /* single-level deck */ }
+    }
+    if (subject === 'english') {
+      for (const name of ['factory.ts', 'authored.json']) {
+        h.update(readFileSync(resolve(
+          __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));
+      }
     }
     expect(
       h.digest('hex').slice(0, 16),
