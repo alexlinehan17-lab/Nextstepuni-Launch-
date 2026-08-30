@@ -439,8 +439,17 @@ const decks = [
    * is where the paper prints the stimulus the question is built on -- taking
    * one from a later page would put one part's listing on another's card.
    * Nothing was removed. */
-  ['computer-science:higher', CS_HIGHER, 202, '4927d6cefff62be2f5cf0109014e26bed6cec252e7c27e72758a0a5b91a33449'],
-  ['computer-science:ordinary', CS_ORDINARY, 118, '7d6b2b541a17ccd4e2ae155d7997b8d82cde404107dd6962d6cc3cd67c0565da'],
+  /* 2026-08-30 (same day): 202/118 -> 207/119, coverage 382/484 -> 388/484.
+   * Six more asks file under a syllabus topic. Each addition to the taxonomy
+   * names the learning outcome it rests on: 2.11 "the different components
+   * within a computer" reaches a solid state drive, 2.16 lists "array" among
+   * the data types and the papers index and slice one without ever using the
+   * word, 3.2 "create a basic relational database" is where a foreign key
+   * lives, 1.20 "assign roles and responsibilities within a team" is where a
+   * project manager does, and 3.8 is "develop a model that will allow
+   * different scenarios to be tested". Nothing was removed. */
+  ['computer-science:higher', CS_HIGHER, 207, 'fa25887976a1618dbe9727884929fc1248e832e02948c57f567468659429d198'],
+  ['computer-science:ordinary', CS_ORDINARY, 119, 'f4fa132252430a081fb671452bfa85caf0677909840cc0a16635d6fde0e524d3'],
   ['construction-studies:higher', CONS_HIGHER, 255, 'b74a39fd589f1082d6378190aee778d528eff0968d7af0ee9144525f2e40d57b'],
   ['construction-studies:ordinary', CONS_ORDINARY, 250, 'f56985e32cc1f02a2e2f7a7eb300a44646b75cf3604a12b5a478bde2a520d2da'],
 ] as const;
@@ -457,6 +466,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7770);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7776);
   });
 });

@@ -1888,6 +1888,20 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2023 Higher Level — © State Examinations Commission.",
+    id: "cs-2023-hl-q14-b-i", topicId: "cs-2-3", conceptId: "sarah-looking-buy-new-laptop-so",
+    section: "B", questionRef: "2023 HL Q14(b)(i)",
+    stem: "This question continues on the next page.",
+    questionText: "Sarah is looking to buy a new laptop. So far, all the laptops she has looked at have either magnetic or solid state hard drives. Which type of secondary storage would you recommend? Justify your answer.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Reasons for choosing solid state over magnetic hard drives", marks: 3 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2023 Higher Level — © State Examinations Commission.",
     id: "cs-2023-hl-q14-b-ii", topicId: "cs-2-3", conceptId: "when-computer-carrying-out-lots-tasks",
     section: "B", questionRef: "2023 HL Q14(b)(ii)",
     stem: "This question continues on the next page.",
@@ -2998,6 +3012,28 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
+    id: "cs-2024-hl-q14-b-ii", topicId: "cs-2-4", conceptId: "index-element-70",
+    section: "B", questionRef: "2024 HL Q14(b)(ii)",
+    stem: "1 values = [50, 70, 30, 60, 20] 2 3 for i in range(len(values)): 4 for j in range(len(values)-1): 5 if values[j] > values[j+1]: 6 t = values[j+1] 7 values[j+1] = values[j] 8 values[j] = t 9 10 print(\"OUTPUT:\", values)",
+    questionText: "What is the index of the element 70?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 1,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "the index of the element 70 is 1", marks: 1 },
+    ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q14-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q14-fig0.png",
+          "srcHash": "78d566ae40bd1ebc30ccc959f1ce19ae",
+          "alt": "The table or diagram printed with 2024 HL Question 14, as the State Examinations Commission set it. It is labelled: Figure 6.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
     id: "cs-2024-hl-q14-b-iii", topicId: "cs-2-2", conceptId: "does-python-expression-len-values-return",
     section: "B", questionRef: "2024 HL Q14(b)(iii)",
     stem: "1 values = [50, 70, 30, 60, 20] 2 3 for i in range(len(values)): 4 for j in range(len(values)-1): 5 if values[j] > values[j+1]: 6 t = values[j+1] 7 values[j+1] = values[j] 8 values[j] = t 9 10 print(\"OUTPUT:\", values)",
@@ -3020,7 +3056,29 @@ export const CARDS: SecCard[] = [
     year: 2024, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
-    id: "cs-2024-hl-q14-b-v", topicId: "cs-2-5", conceptId: "why-expression-values-5-would-generate",
+    id: "cs-2024-hl-q14-b-iv", topicId: "cs-2-4", conceptId: "does-slice-expression-values-2-4",
+    section: "B", questionRef: "2024 HL Q14(b)(iv)",
+    stem: "1 values = [50, 70, 30, 60, 20] 2 3 for i in range(len(values)): 4 for j in range(len(values)-1): 5 if values[j] > values[j+1]: 6 t = values[j+1] 7 values[j+1] = values[j] 8 values[j] = t 9 10 print(\"OUTPUT:\", values)",
+    questionText: "What does the slice expression values[2:4] return?",
+    tariffModel: {"kind":"fixed"}, totalMarks: 2,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "the slice expression, values[2:4] returns the list, [30, 60]", marks: 2 },
+    ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q14-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q14-fig0.png",
+          "srcHash": "78d566ae40bd1ebc30ccc959f1ce19ae",
+          "alt": "The table or diagram printed with 2024 HL Question 14, as the State Examinations Commission set it. It is labelled: Figure 6.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
+    id: "cs-2024-hl-q14-b-v", topicId: "cs-2-4", conceptId: "why-expression-values-5-would-generate",
     section: "B", questionRef: "2024 HL Q14(b)(v)",
     stem: "1 values = [50, 70, 30, 60, 20] 2 3 for i in range(len(values)): 4 for j in range(len(values)-1): 5 if values[j] > values[j+1]: 6 t = values[j+1] 7 values[j+1] = values[j] 8 values[j] = t 9 10 print(\"OUTPUT:\", values)",
     questionText: "Explain why the expression values[5] would generate a runtime error.",
@@ -3203,6 +3261,28 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 3,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Column A Column B", marks: 3 },
+    ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q15-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q15-figure.png",
+          "srcHash": "9c3edb90be84e97e4f75aabe07ab3523",
+          "alt": "The table or diagram printed with 2024 HL Question 15, as the State Examinations Commission set it. It is labelled: Column A, Data Type, Column B, Field Name, Boolean, String, Real, member_id member_name, Amy, Chloe, member_id, book_id, date_borrowed, 20/05/2024.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
+    id: "cs-2024-hl-q15-b-ii", topicId: "cs-3-1", conceptId: "identify-use-one-foreign-key-design",
+    section: "B", questionRef: "2024 HL Q15(b)(ii)",
+    stem: "Alex is working out her design on paper and has inserted some data into both tables as shown in Figure 7 below. For example, the first row of data in the LOANS table records the fact that Chloe borrowed Green Eggs and Ham on 20th May 2024. • Amy borrowed How the Grinch Stole Christmas! on 1st May 2024. • Bill borrowed The Cat in the Hat on 18th May 2024. • Chloe borrowed Horton Hears a Who! 7 days ago. member_id book_id date_borrowed member_id member_name 1 Amy 3 2 20/05/2024 2 4 01/05/24 3 Chloe 2 1 MEMBERS LOANS Figure 7 This question continues on the next page.",
+    questionText: "Identify and explain the use of one foreign key from the design shown in Figure 7.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Possible answers are:", marks: 4 },
     ],
     figure: {
           "candId": "computer-science-2024-HL-paper-q15-figure",
@@ -4053,6 +4133,28 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Any one from the following:", marks: 2 },
+    ],
+    figure: {
+          "candId": "computer-science-2025-HL-paper-q15-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2025-HL-paper-q15-fig0.png",
+          "srcHash": "aa29b5bff379bb30c3a108fe795781e6",
+          "alt": "The table or diagram printed with 2025 HL Question 15, as the State Examinations Commission set it. It is labelled: ID, Gender, Age, Transmission, Instructor, experience (years), Test, outcome, 1 Male, Manual, FAIL, 2 Female, Automatic, PASS.",
+          "attribution": "SEC Leaving Certificate Computer Science 2025 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2025 Higher Level — © State Examinations Commission.",
+    id: "cs-2025-hl-q15-c-iii", topicId: "cs-3-3", conceptId: "suggest-one-strategy-health-agency-could",
+    section: "B", questionRef: "2025 HL Q15(c)(iii)",
+    stem: "This question continues on the next page. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Acknowledgements Images Image on page 4: https://girlswhocode.com/ Image on page 5: https://en.wikipedia.org/wiki/RGB_color_model Image on page 8: https://www.pdq.com/sysadmin-glossary/cpu/ Image on page 9: https://www.irishtimes.com/ireland/2024/04/23/what-is-your-experience-of-the-deposit-return- scheme/ Image on page 13: https://www.worldhistory.org/Euclid/ Image on page 15: https://en.wikipedia.org/wiki/Tony_Hoare Image on page 16:https://www.w3schools.com/dsa/dsa_timecomplexity_quicksort.php Image on page 18: https://en.wikipedia.org/wiki/George_E._P._Box Texts Text on page 5: https://pursuit.unimelb.edu.au/articles/will-a-computer-take-your-job Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Sections A & B Wednesday 21 May Morning 9:30 – 11:00 2025L219A2EL 2025. M110 C Coimisiún na Scrúduithe Stáit State Examinations Commission Computer Science Section C Higher Level Wednesday 21 May Morning 11:30 – 12:30 80 marks This document will not be returned to the State Examinations Commission. Instructions There is one section in this paper. Section C Programming One question 80 marks Calculators may be used during this section of the examination. The Formulae and Tables booklet cannot be used for this section of the examination. The superintendent will give you a copy of the Python Reference Guide. Ensure that you save your work regularly. Save your files using the naming structure described at the beginning of each question part. If you are unable to get some code to work correctly, you can comment out the code so that you can proceed. The code that has been commented out will be reviewed by the examiner. Rough work pages are provided at the end of this booklet. Please note that this booklet is not to be handed up and will not be reviewed by an examiner. At the end of the examination it is your responsibility to ensure that you have saved your files onto your external media. You will be provided with a brown envelope for your external media. Write your examination number on this envelope and place your external media into it before sealing. Place this envelope in the pouch at the front of the red envelope that contains your examination booklet from Section A and B. Section C Programming 80 marks",
+    questionText: "Suggest one strategy the health agency could test in the model to reduce infection rates and explain how you would measure its success.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Strategies - any one from the following:", marks: 6 },
     ],
     figure: {
           "candId": "computer-science-2025-HL-paper-q15-fig0",

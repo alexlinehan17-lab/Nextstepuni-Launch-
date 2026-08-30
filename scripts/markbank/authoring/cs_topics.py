@@ -40,7 +40,12 @@ RULES = [
                    r'operating system|hardware component|'
                    # "Operating system layers: Hardware, OS, Application, User"
                    # is the spec's own list against 2.11-2.13.
+                   # 2.11 is "describe the different components within a
+                   # computer and the function of those components". A solid
+                   # state drive is such a component; the paper names it and
+                   # the specification names the category.
                    r'hardware|software\b|firmware|peripheral|storage device|'
+                   r'solid state drive|hard disk drive|\bssds?\b|\bhdds?\b|'
                    r'input device|output device|motherboard|clock speed|'
                    r'binary(?: number| format| digit)?|hexadecimal|denary|'
                    r'\bbits?\b|\bbytes?\b|base 2|base 16|'
@@ -60,7 +65,11 @@ RULES = [
                    r'output of the following|what is the output|'
                    r'pseudocode|subroutine|parameter|\bwhile\b|\bfor loop\b)\b'),
     ('cs-2-4', 11, r'\b(data type|boolean|integer|\breal\b|\bchar\b|\bstring\b|'
-                   r'\barray\b|\bascii\b|unicode|utf-8|character set|emoji|'
+                   # 2.16 lists "array" among the data types. Indexing one and
+                   # slicing one are how a program uses it, and the papers ask
+                   # about both without ever using the word "array".
+                   r'\barray\b|\bindex(?:es|ing)?\b|slice expression|'
+                   r'\bascii\b|unicode|utf-8|character set|emoji|'
                    r'encode|decode|two.s complement|database|\bsql\b|'
                    # 2.18 is "collect, store and sort both continuous and
                    # discrete data" -- the paper asks about the two words one
@@ -85,7 +94,11 @@ RULES = [
     ('cs-1-3', 9, r'\b(design process|iterative design|staged design|'
                   r'assign\w* roles|work(?:ing)? in a team|collaborat\w+|'
                   r'stakeholder|end users?|requirements?|version control|'
-                  r'project management|prototyp\w+|reflect\w* on the design)\b'),
+                  # 1.20 is "collaborate and assign roles and responsibilities
+                  # within a team to tackle a computing task" -- the paper puts
+                  # a name on the role and asks about it.
+                  r'project manage(?:ment|r)|team leader|'
+                  r'prototyp\w+|reflect\w* on the design)\b'),
     # 1.4 "solve problems using skills of logic" and 1.5 "evaluate
     # alternative solutions to computational problems": a game-strategy
     # question is a logic problem, which is where the spec puts it.
@@ -109,12 +122,20 @@ RULES = [
                    r'sensors?|actuators?|analogue inputs?|'
                    r'digital (?:inputs?|outputs?)|automated applications?|'
                    r'\bgpio\b)\b'),
+    # 3.2 is "create a basic relational database to store and retrieve a
+    # variety of forms of data types", and the specification's own list for
+    # this task is "File systems and relational databases". A foreign key is
+    # the relation; a primary key is what it points at.
     ('cs-3-1', 9, r'\b(website|web page|\bhtml\b|\bcss\b|javascript|'
-                  r'relational database|web design|hyperlink|browser)\b'),
+                  r'relational database|web design|hyperlink|browser|'
+                  r'foreign key|primary key)\b'),
     ('cs-3-2', 9, r'\b(analytics|data set|visualis\w+|chart|graph of the data|'
                   r'trend|correlat\w+|statistic\w*)\b'),
+    # 3.8 "develop a model that will allow different scenarios to be tested"
+    # and 3.9 "analyse and interpret the outcome of simulations".
     ('cs-3-3', 9, r'\b(agent[- ]based|emergent behaviour|scenario|'
-                  r'simulat\w+ (?:model|the)|model that)\b'),
+                  r'simulat\w+ (?:model|the)|model that|in the model|'
+                  r'test in the model|outcome of the simulation)\b'),
 ]
 COMPILED = [(t, w, re.compile(p, re.I)) for t, w, p in RULES]
 

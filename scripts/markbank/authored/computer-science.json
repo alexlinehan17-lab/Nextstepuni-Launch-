@@ -4397,6 +4397,30 @@
   "stem": "Figure 9 Figure 10 This question continues on the next page."
  },
  {
+  "id": "cs-2023-hl-q14-b-i",
+  "topicId": "cs-2-3",
+  "conceptId": "sarah-looking-buy-new-laptop-so",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2023 HL Q14(b)(i)",
+  "questionText": "Sarah is looking to buy a new laptop. So far, all the laptops she has looked at have either magnetic or solid state hard drives. Which type of secondary storage would you recommend? Justify your answer.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Reasons for choosing solid state over magnetic hard drives",
+    "marks": 3
+   }
+  ],
+  "stem": "This question continues on the next page."
+ },
+ {
   "id": "cs-2023-hl-q14-b-ii",
   "topicId": "cs-2-3",
   "conceptId": "when-computer-carrying-out-lots-tasks",
@@ -6836,6 +6860,31 @@
   "figureKey": "computer-science-2024-HL-paper-q14-fig0"
  },
  {
+  "id": "cs-2024-hl-q14-b-ii",
+  "topicId": "cs-2-4",
+  "conceptId": "index-element-70",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2024 HL Q14(b)(ii)",
+  "questionText": "What is the index of the element 70?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 1,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "the index of the element 70 is 1",
+    "marks": 1
+   }
+  ],
+  "stem": "1 values = [50, 70, 30, 60, 20] 2 3 for i in range(len(values)): 4 for j in range(len(values)-1): 5 if values[j] > values[j+1]: 6 t = values[j+1] 7 values[j+1] = values[j] 8 values[j] = t 9 10 print(\"OUTPUT:\", values)",
+  "figureKey": "computer-science-2024-HL-paper-q14-fig0"
+ },
+ {
   "id": "cs-2024-hl-q14-b-iii",
   "topicId": "cs-2-2",
   "conceptId": "does-python-expression-len-values-return",
@@ -6861,8 +6910,33 @@
   "figureKey": "computer-science-2024-HL-paper-q14-fig0"
  },
  {
+  "id": "cs-2024-hl-q14-b-iv",
+  "topicId": "cs-2-4",
+  "conceptId": "does-slice-expression-values-2-4",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2024 HL Q14(b)(iv)",
+  "questionText": "What does the slice expression values[2:4] return?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 2,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "the slice expression, values[2:4] returns the list, [30, 60]",
+    "marks": 2
+   }
+  ],
+  "stem": "1 values = [50, 70, 30, 60, 20] 2 3 for i in range(len(values)): 4 for j in range(len(values)-1): 5 if values[j] > values[j+1]: 6 t = values[j+1] 7 values[j+1] = values[j] 8 values[j] = t 9 10 print(\"OUTPUT:\", values)",
+  "figureKey": "computer-science-2024-HL-paper-q14-fig0"
+ },
+ {
   "id": "cs-2024-hl-q14-b-v",
-  "topicId": "cs-2-5",
+  "topicId": "cs-2-4",
   "conceptId": "why-expression-values-5-would-generate",
   "level": "higher",
   "year": 2024,
@@ -7083,6 +7157,31 @@
    }
   ],
   "stem": "book_id title year cost author author_dob on_loan 1 The Cat in the Hat 1957 6.95 Dr. Seuss 02/03/1904 Yes 2 Green Eggs and Ham 1960 8.95 Dr. Seuss March 2, 1904 Y 3 Horton Hears a Who! 1954 €10 Doc Seus 02/03/1904 N 4 How the Grinch Stole Christmas! 1957 9.95 Dr. Seuss 03/02/1904 No Column A Data Type Column B Field Name Boolean String Real",
+  "figureKey": "computer-science-2024-HL-paper-q15-figure"
+ },
+ {
+  "id": "cs-2024-hl-q15-b-ii",
+  "topicId": "cs-3-1",
+  "conceptId": "identify-use-one-foreign-key-design",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2024 HL Q15(b)(ii)",
+  "questionText": "Identify and explain the use of one foreign key from the design shown in Figure 7.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Possible answers are:",
+    "marks": 4
+   }
+  ],
+  "stem": "Alex is working out her design on paper and has inserted some data into both tables as shown in Figure 7 below. For example, the first row of data in the LOANS table records the fact that Chloe borrowed Green Eggs and Ham on 20th May 2024.  Amy borrowed How the Grinch Stole Christmas! on 1st May 2024.  Bill borrowed The Cat in the Hat on 18th May 2024.  Chloe borrowed Horton Hears a Who! 7 days ago. member_id book_id date_borrowed member_id member_name 1 Amy 3 2 20/05/2024 2 4 01/05/24 3 Chloe 2 1 MEMBERS LOANS Figure 7 This question continues on the next page.",
   "figureKey": "computer-science-2024-HL-paper-q15-figure"
  },
  {
@@ -7488,6 +7587,30 @@
   ],
   "stem": "Three different logic gates with inputs are shown in Column A in the table below. For each logic gate in Column A enter the output, either 0 or 1, in Column B.",
   "figureKey": "computer-science-2024-OL-paper-q6-fig0"
+ },
+ {
+  "id": "cs-2024-ol-q7",
+  "topicId": "cs-1-3",
+  "conceptId": "jack-has-been-selected-project-manager",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "computer-science",
+  "section": "A",
+  "questionRef": "2024 OL Q7",
+  "questionText": "Jack has been selected as a project manager for a school project where a group are creating a student wellbeing app. List three specific tasks that a project manager would be responsible for on this project.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Coming up with a time line / time plan",
+    "marks": 6
+   }
+  ],
+  "stem": "Jack has been selected as a project manager for a school project where a group are creating a student wellbeing app. List three specific tasks that a project manager would be responsible for on this project."
  },
  {
   "id": "cs-2024-ol-q9",
@@ -9247,6 +9370,31 @@
     "kind": "point",
     "verbatim": "Any one from the following:",
     "marks": 2
+   }
+  ],
+  "stem": "This question continues on the next page. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Acknowledgements Images Image on page 4: https://girlswhocode.com/ Image on page 5: https://en.wikipedia.org/wiki/RGB_color_model Image on page 8: https://www.pdq.com/sysadmin-glossary/cpu/ Image on page 9: https://www.irishtimes.com/ireland/2024/04/23/what-is-your-experience-of-the-deposit-return- scheme/ Image on page 13: https://www.worldhistory.org/Euclid/ Image on page 15: https://en.wikipedia.org/wiki/Tony_Hoare Image on page 16:https://www.w3schools.com/dsa/dsa_timecomplexity_quicksort.php Image on page 18: https://en.wikipedia.org/wiki/George_E._P._Box Texts Text on page 5: https://pursuit.unimelb.edu.au/articles/will-a-computer-take-your-job Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Sections A & B Wednesday 21 May Morning 9:30 – 11:00 2025L219A2EL 2025. M110 C Coimisiún na Scrúduithe Stáit State Examinations Commission Computer Science Section C Higher Level Wednesday 21 May Morning 11:30 – 12:30 80 marks This document will not be returned to the State Examinations Commission. Instructions There is one section in this paper. Section C Programming One question 80 marks Calculators may be used during this section of the examination. The Formulae and Tables booklet cannot be used for this section of the examination. The superintendent will give you a copy of the Python Reference Guide. Ensure that you save your work regularly. Save your files using the naming structure described at the beginning of each question part. If you are unable to get some code to work correctly, you can comment out the code so that you can proceed. The code that has been commented out will be reviewed by the examiner. Rough work pages are provided at the end of this booklet. Please note that this booklet is not to be handed up and will not be reviewed by an examiner. At the end of the examination it is your responsibility to ensure that you have saved your files onto your external media. You will be provided with a brown envelope for your external media. Write your examination number on this envelope and place your external media into it before sealing. Place this envelope in the pouch at the front of the red envelope that contains your examination booklet from Section A and B. Section C Programming 80 marks",
+  "figureKey": "computer-science-2025-HL-paper-q15-fig0"
+ },
+ {
+  "id": "cs-2025-hl-q15-c-iii",
+  "topicId": "cs-3-3",
+  "conceptId": "suggest-one-strategy-health-agency-could",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "computer-science",
+  "section": "B",
+  "questionRef": "2025 HL Q15(c)(iii)",
+  "questionText": "Suggest one strategy the health agency could test in the model to reduce infection rates and explain how you would measure its success.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Strategies - any one from the following:",
+    "marks": 6
    }
   ],
   "stem": "This question continues on the next page. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Space for extra work. Indicate clearly the number and part of the question(s) you are answering. Acknowledgements Images Image on page 4: https://girlswhocode.com/ Image on page 5: https://en.wikipedia.org/wiki/RGB_color_model Image on page 8: https://www.pdq.com/sysadmin-glossary/cpu/ Image on page 9: https://www.irishtimes.com/ireland/2024/04/23/what-is-your-experience-of-the-deposit-return- scheme/ Image on page 13: https://www.worldhistory.org/Euclid/ Image on page 15: https://en.wikipedia.org/wiki/Tony_Hoare Image on page 16:https://www.w3schools.com/dsa/dsa_timecomplexity_quicksort.php Image on page 18: https://en.wikipedia.org/wiki/George_E._P._Box Texts Text on page 5: https://pursuit.unimelb.edu.au/articles/will-a-computer-take-your-job Copyright notice This examination paper may contain text or images for which the State Examinations Commission is not the copyright owner, and which may have been adapted, for the purpose of assessment, without the authors’ prior consent. This examination paper has been prepared in accordance with Section 53(5) of the Copyright and Related Rights Act, 2000. Any subsequent use for a purpose other than the intended purpose is not authorised. The Commission does not accept liability for any infringement of third-party rights arising from unauthorised distribution or use of this examination paper. Leaving Certificate – Higher Level Computer Science – Sections A & B Wednesday 21 May Morning 9:30 – 11:00 2025L219A2EL 2025. M110 C Coimisiún na Scrúduithe Stáit State Examinations Commission Computer Science Section C Higher Level Wednesday 21 May Morning 11:30 – 12:30 80 marks This document will not be returned to the State Examinations Commission. Instructions There is one section in this paper. Section C Programming One question 80 marks Calculators may be used during this section of the examination. The Formulae and Tables booklet cannot be used for this section of the examination. The superintendent will give you a copy of the Python Reference Guide. Ensure that you save your work regularly. Save your files using the naming structure described at the beginning of each question part. If you are unable to get some code to work correctly, you can comment out the code so that you can proceed. The code that has been commented out will be reviewed by the examiner. Rough work pages are provided at the end of this booklet. Please note that this booklet is not to be handed up and will not be reviewed by an examiner. At the end of the examination it is your responsibility to ensure that you have saved your files onto your external media. You will be provided with a brown envelope for your external media. Write your examination number on this envelope and place your external media into it before sealing. Place this envelope in the pouch at the front of the red envelope that contains your examination booklet from Section A and B. Section C Programming 80 marks",
