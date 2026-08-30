@@ -267,7 +267,14 @@ function brokenGlyphs(text) {
 
 function mangledText(card) {
   const seen = [];
-  walkStrings(card, (v) => { seen.push(v); return v; });
+  // `notes` never reaches the deck -- it is the author's record of how the
+  // card was made, and it sometimes QUOTES a corruption as the evidence for a
+  // decision. Business 2025 HL Q7(b) explains why it read five mark ticks off
+  // the rendered page, quoting the mangled run it could not trust, and the
+  // gate then dropped the card for containing the very thing the note exists
+  // to document.
+  const { notes, ...shipped } = card;
+  walkStrings(shipped, (v) => { seen.push(v); return v; });
   return brokenGlyphs(seen.join(' '));
 }
 

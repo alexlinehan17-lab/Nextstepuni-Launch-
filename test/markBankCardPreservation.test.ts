@@ -123,7 +123,13 @@ const decks = [
    * repaired IN PLACE (same ids): q1-v now lifts the clockwise-moments line
    * its question asks for, q10-iv the closed-pipe harmonic instead of another
    * part's answer. Nothing removed. */
-  ['physics:higher', PHYS_HIGHER, 569, '463dd2324556ac2c286ed7c722602a9bf5e4f83a9ee43fdd03bcf8b13d97e6fd'],
+  /* 2026-08-30: 569 -> 570. phys-2021-hl-q13a-v comes BACK. The unreadable-
+   * glyph gate read the card's `notes` — the author's record of how the card
+   * was made, which never reaches the deck and which sometimes quotes a
+   * corruption as the evidence for a decision. The card was dropped for
+   * containing the very thing its note exists to document. Nothing else on
+   * the card changed. */
+  ['physics:higher', PHYS_HIGHER, 570, '9712686995c6b73f612200773855e1054ae6a5ec13ceaf5a82427934ea590007'],
   ['physics:ordinary', PHYS_ORDINARY, 563, '67dee7bc4ede4f829b03a569374b5cf94de35dd92bed3af580263667cf2a5f40'],
   ['agricultural-science:higher', AGSCI_HIGHER, 438, '31e25662626e35ca1db55e96e1cdfe0492648666c6cd35365f2c1e6d92c35f6a'],
   ['agricultural-science:ordinary', AGSCI_ORDINARY, 431, '2dbd6e7635bb73941a16773ce9d3c654741a863280c002f783fc45cd0d7e8dbd'],
@@ -448,8 +454,18 @@ const decks = [
    * lives, 1.20 "assign roles and responsibilities within a team" is where a
    * project manager does, and 3.8 is "develop a model that will allow
    * different scenarios to be tested". Nothing was removed. */
-  ['computer-science:higher', CS_HIGHER, 207, 'fa25887976a1618dbe9727884929fc1248e832e02948c57f567468659429d198'],
-  ['computer-science:ordinary', CS_ORDINARY, 119, 'f4fa132252430a081fb671452bfa85caf0677909840cc0a16635d6fde0e524d3'],
+  /* 2026-08-30 (same day): 207/119 -> 209/127, coverage 388/484 -> see below.
+   * The reader sweeps the page's FURNITURE into a question block: a bare
+   * "Figure 3" at the end is the caption of the picture printed beside the
+   * ask, "Section B Long Questions 76 marks" is the banner of the section
+   * that starts underneath, and "This question continues on the next page" is
+   * an instruction about the paper. Those parts were flagged as unreviewed
+   * because the text stopped without punctuation, which is exactly what a
+   * caption swept onto the end looks like. The strip is self-checking: it is
+   * taken only where what remains still ends like a sentence. Nothing was
+   * removed. */
+  ['computer-science:higher', CS_HIGHER, 209, '1030050a22b237ea5ab74477d630b55d18620313c352fe167eb91691ae933abd'],
+  ['computer-science:ordinary', CS_ORDINARY, 127, '15c1f77f5c96c66290a8f9d59845a12aa4c851a8b5177410f08a651146332731'],
   ['construction-studies:higher', CONS_HIGHER, 255, 'b74a39fd589f1082d6378190aee778d528eff0968d7af0ee9144525f2e40d57b'],
   ['construction-studies:ordinary', CONS_ORDINARY, 250, 'f56985e32cc1f02a2e2f7a7eb300a44646b75cf3604a12b5a478bde2a520d2da'],
 ] as const;
@@ -466,6 +482,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7776);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7787);
   });
 });

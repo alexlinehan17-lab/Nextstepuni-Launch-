@@ -190,6 +190,35 @@ class _CsSource:
         return self._scheme.parts()
 
 PAPER_TERMINAL = re.compile(r'[.?!]$')
+# The page's own furniture, swept into a question block by the reader. A bare
+# "Figure 3" at the end is the CAPTION of the picture printed beside the ask,
+# not part of it; "Section B Long Questions 76 marks" is the banner of the
+# section that starts underneath; and "This question continues on the next
+# page" is an instruction to the candidate about the paper.
+CONTINUES = re.compile(r'\s*This question continues on the next page\.?', re.I)
+TRAILING_FURNITURE = re.compile(
+    r'(?:\s*(?:Figures?|Figs?\.?)\s*\d+[a-z]?)+\s*$'
+    r'|\s*Section\s+[A-C]\b[^.]{0,60}?\d{1,3}\s*marks?\s*$', re.I)
+
+
+def _without_furniture(text):
+    """The question with the page's furniture off its end, or None.
+
+    Self-checking, the same way the table cut is: the strip is taken only
+    where what remains still ends like a sentence. That is what separates a
+    caption swept onto the end of the ask from a question that genuinely ends
+    by naming a figure.
+    """
+    q = ' '.join(CONTINUES.sub(' ', text).split())
+    for _ in range(4):
+        stripped = TRAILING_FURNITURE.sub('', q).strip()
+        if stripped == q:
+            break
+        q = stripped
+    q = ' '.join(q.split())
+    if q == ' '.join(text.split()) or len(q) < 25 or len(q.split()) < 5:
+        return None
+    return q if PAPER_TERMINAL.search(q) else None
 
 
 def _without_listing(question, lines, strict=False):
@@ -359,6 +388,10 @@ class Author:
         # mangled it. The lines are matched IN ORDER from the first one found,
         # so a fragment that also occurs in the prose cannot start the cut.
         listing_removed = False
+        if question:
+            without = _without_furniture(question)
+            if without:
+                question, listing_removed = without, True
         if listing and question:
             without = _without_listing(question, listing)
             if without:

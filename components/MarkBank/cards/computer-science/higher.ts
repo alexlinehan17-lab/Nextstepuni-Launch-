@@ -1001,6 +1001,28 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: "LC219ALP038EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2022 Higher Level — © State Examinations Commission.",
+    id: "cs-2022-hl-q12", topicId: "cs-2-3", conceptId: "transition-diagram-particular-turing-machine-shown",
+    section: "A", questionRef: "2022 HL Q12",
+    stem: "The state transition diagram for a particular Turing machine is shown in Figure 3 below. Trace the computation of the Turing machine by filling in the blanks in the diagram below. The read/write head is currently reading a 0. You can assume that the read/write head is moved one place to the right at the end of each step. Figure 3 Section B Long Questions 30 marks",
+    questionText: "The state transition diagram for a particular Turing machine is shown in Figure 3 below. Trace the computation of the Turing machine by filling in the blanks in the diagram below. The read/write head is currently reading a 0. You can assume that the read/write head is moved one place to the right at the end of each step.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Three or more correct tapes", marks: 5 },
+    ],
+    figure: {
+          "candId": "computer-science-2022-HL-paper-q12-figure",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2022-HL-paper-q12-figure.png",
+          "srcHash": "345cfe73db767c7b439bc7ae520ac30e",
+          "alt": "The program and the table or diagram printed with 2022 HL Question 12, as the State Examinations Commission set it. The table or diagram is labelled: Figure 3.",
+          "attribution": "SEC Leaving Certificate Computer Science 2022 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2022 Higher Level — © State Examinations Commission.",
     id: "cs-2022-hl-q13-a-i", topicId: "cs-2-3", conceptId: "information-system",
     section: "B", questionRef: "2022 HL Q13(a)(i)",
     stem: "This question continues on the next page. This question continues on the next page.",
@@ -2560,6 +2582,28 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "point", verbatim: "Answer: 0111 1001", marks: 3 },
     { id: "r-2", kind: "point", verbatim: "For each calculation error deduct 2 marks", marks: 3 },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC219ALP038EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Computer Science 2024 Higher Level — © State Examinations Commission.",
+    id: "cs-2024-hl-q5", topicId: "cs-2-3", conceptId: "history-computer-hardware-marked-significant-milestones",
+    section: "A", questionRef: "2024 HL Q5",
+    stem: "The history of computer hardware is marked by significant milestones that have driven advancements in computing capabilities. Six key milestones between the 1930s and the 1980s are shown in Figure 3 below. Choose one of the milestones from Figure 3 and explain its significance. Figure 3",
+    questionText: "The history of computer hardware is marked by significant milestones that have driven advancements in computing capabilities. Six key milestones between the 1930s and the 1980s are shown in Figure 3 below. Choose one of the milestones from Figure 3 and explain its significance.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Turing Machines", marks: 6 },
+    ],
+    figure: {
+          "candId": "computer-science-2024-HL-paper-q5-fig0",
+          "src": "/exam-figures/computer-science/markbank/computer-science-2024-HL-paper-q5-fig0.png",
+          "srcHash": "33290c12b8e0c9cf9cf9a5b1c6edd990",
+          "alt": "The table or diagram printed with 2024 HL Question 5, as the State Examinations Commission set it. It is labelled: Figure 3.",
+          "attribution": "SEC Leaving Certificate Computer Science 2024 Higher Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
   {
     ...base, kind: "question",

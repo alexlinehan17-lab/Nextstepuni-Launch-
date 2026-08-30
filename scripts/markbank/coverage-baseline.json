@@ -60,19 +60,19 @@
   "refsHash": "b362d158b7cb0b00"
  },
  "computer-science": {
-  "cards": 326,
-  "contentHash": "52f7fc100e378cfe",
-  "coveragePct": 80.2,
-  "covered": 388,
+  "cards": 336,
+  "contentHash": "3b5ceb12900aa3c8",
+  "coveragePct": 82.2,
+  "covered": 398,
   "excluded": 0,
   "leaves": 484,
-  "open": 96,
+  "open": 86,
   "orphans": 0,
   "papers": {
    "count": 20,
    "hash": "4eb8d8bb7c8ce50b"
   },
-  "refsHash": "6c1e9374356de6db"
+  "refsHash": "ba197c3dcfdb616b"
  },
  "construction-studies": {
   "cards": 505,
@@ -135,18 +135,18 @@
   "refsHash": "69c96154480244d8"
  },
  "physics": {
-  "cards": 1132,
-  "contentHash": "c199922e4c2e2a2e",
-  "coveragePct": 95.1,
-  "covered": 1118,
+  "cards": 1133,
+  "contentHash": "3d1968df72e38074",
+  "coveragePct": 95.2,
+  "covered": 1119,
   "excluded": 46,
   "leaves": 1224,
-  "open": 60,
+  "open": 59,
   "orphans": 6,
   "papers": {
    "count": 10,
    "hash": "aedd9969b3ce025e"
   },
-  "refsHash": "adf8dd6c8e143930"
+  "refsHash": "83bd7bc978ad6302"
  }
 }
