@@ -21,6 +21,7 @@
  */
 
 import type { SecCard, SecDiagramCard } from '../../types/markBank';
+import { CURRICULUM } from '../../curriculum';
 import DECK_SIZES from './cards/sizes.json';
 
 
@@ -36,6 +37,41 @@ export interface StrandRef {
   title: string;
   topics: TopicRef[];
 }
+
+/**
+ * English still uses the outgoing syllabus taxonomy through the 2028 exam.
+ * Adapt the canonical curriculum data instead of maintaining a second English
+ * list in Mark Bank. `curriculumRegistry.ts` currently imports this catalogue
+ * to build redeveloped specifications, so importing the registry here would be
+ * a cycle; `curriculum.ts` is its canonical legacy adapter and the one safe
+ * dependency at this boundary.
+ */
+const englishCurriculum = CURRICULUM.find(subject => subject.id === 'english');
+if (!englishCurriculum) throw new Error('Canonical English curriculum is missing');
+
+// Put the live Paper 1 areas first. The canonical curriculum starts with the
+// much larger Paper 2 catalogue, which otherwise buries all 19 available
+// cards below nearly one hundred disabled topic rows on a phone.
+const englishDisplayPriority = new Map([
+  ['english-10', 0], // Comprehending — Section I
+  ['english-9', 1],  // Composing — Section II
+]);
+
+export const ENGLISH_STRANDS: StrandRef[] = [...englishCurriculum.strands]
+  .sort((a, b) =>
+    (englishDisplayPriority.get(a.id) ?? 2) - (englishDisplayPriority.get(b.id) ?? 2))
+  .map(strand => ({
+  id: strand.id,
+  label: strand.id === 'english-9' || strand.id === 'english-10' ? 'Paper 1' : 'Paper 2',
+  title: strand.name,
+  topics: strand.subtopics
+    .filter((topic): topic is { id: string; name: string } => Boolean(topic.id))
+    .map(topic => ({
+      id: topic.id,
+      code: topic.id.replace(/^english-(\d+)-/, '$1.'),
+      title: topic.name,
+    })),
+  }));
 
 /** The redeveloped specification's own structure, verbatim from the spec. */
 export const STRANDS: StrandRef[] = [
@@ -701,6 +737,7 @@ export const SUBJECTS = [
   { id: 'economics', title: 'Economics', strands: ECONOMICS_STRANDS, spec: 'specification examined from 2021' },
   { id: 'construction-studies', title: 'Construction Studies', strands: CONSTRUCTION_STUDIES_STRANDS, spec: 'Ordinary and Higher Level syllabus' },
   { id: 'maths', title: 'Mathematics', strands: MATHS_STRANDS, spec: 'syllabus for examination from 2015' },
+  { id: 'english', title: 'English', strands: ENGLISH_STRANDS, spec: 'outgoing syllabus examined through 2028' },
 ] as const;
 
 export type SubjectId = (typeof SUBJECTS)[number]['id'];
@@ -945,6 +982,10 @@ const DECKS: Record<string, Record<Level, () => Promise<{ CARDS: SecCard[] }>>> 
   maths: {
     higher: () => import('./cards/maths/higher'),
     ordinary: () => import('./cards/maths/ordinary'),
+  },
+  english: {
+    higher: () => import('./cards/english/higher'),
+    ordinary: () => import('./cards/english/ordinary'),
   },
 };
 

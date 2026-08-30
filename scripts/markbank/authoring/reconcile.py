@@ -78,12 +78,75 @@ def shipped_cards(subject):
         if not os.path.exists(path):
             continue
         text = open(path, encoding='utf-8').read()
+        if subject == 'english':
+            # English cards are reviewed source objects, not output from the
+            # exact-point emitter. Pair each makeCard call's id with its paper
+            # reference; do not scan every object field and invent row ids.
+            for chunk in re.split(r'\bmakeCard\(\{', text)[1:]:
+                cid = re.search(r"\bid:\s*'([^']+)'", chunk)
+                ref = re.search(r"\bref:\s*'([^']+)'", chunk)
+                if cid and ref:
+                    out.append((cid.group(1), ref.group(1)))
+            continue
         for chunk in re.split(r'\.\.\.base,\s*kind:', text)[1:]:
             cid = re.search(r'\bid: "([^"]+)"', chunk)
             ref = re.search(r'questionRef: "([^"]+)"', chunk)
             if cid and ref:
                 out.append((cid.group(1), ref.group(1)))
     return out
+
+
+def reconcile_english(census):
+    """Reconcile English by its stable census ids, not science part grammar.
+
+    Its printed addresses restart under each text, work, mode and poet. The
+    bespoke census has already resolved those choices into one stable id per
+    independently selectable response, so an exact id + questionRef match is
+    stronger than forcing them through the Q3(b)(ii) parser.
+    """
+    expected = {}
+    paper_rows = []
+    for paper in census['papers']:
+        ids = []
+        for leaf in paper['leaves']:
+            cid = leaf['key'][0]
+            expected[cid] = leaf['label']
+            ids.append(cid)
+        paper_rows.append((paper, ids))
+
+    cards = shipped_cards('english')
+    covered = set()
+    orphans = []
+    for cid, ref in cards:
+        wanted = expected.get(cid)
+        if wanted is None:
+            orphans.append({'id': cid, 'ref': ref,
+                            'why': 'card id is absent from the English paper census'})
+        elif ref != wanted:
+            orphans.append({'id': cid, 'ref': ref,
+                            'why': f'census address is "{wanted}"'})
+        else:
+            covered.add(cid)
+
+    papers = []
+    for paper, ids in paper_rows:
+        open_ids = [cid for cid in ids if cid not in covered]
+        papers.append({
+            'year': paper['year'], 'level': paper['level'],
+            'paper': paper['paper'], 'leaves': len(ids),
+            'covered': len(ids) - len(open_ids), 'excluded': 0,
+            'open': [expected[cid] for cid in open_ids],
+        })
+    leaves = len(expected)
+    return {
+        'subject': 'english', 'mode': 'english',
+        'cards': len(cards), 'leaves': leaves,
+        'covered': len(covered), 'excluded': 0,
+        'open': leaves - len(covered),
+        'coveragePct': round(100 * len(covered) / leaves, 1) if leaves else 0.0,
+        'orphans': orphans, 'unparsed': [], 'staleExclusions': [],
+        'papers': papers, 'censusFlags': 0,
+    }
 
 
 def _classify(tok):
@@ -250,6 +313,8 @@ def load_exclusions(subject):
 
 def reconcile_subject(subject, census=None):
     census = census or census_subject(subject)
+    if subject == 'english':
+        return reconcile_english(census)
     sections_mode = census['mode'] == 'sections'
     idx = leaf_index(census)
     covered = collections.defaultdict(set)      # paper key -> set(leaf)

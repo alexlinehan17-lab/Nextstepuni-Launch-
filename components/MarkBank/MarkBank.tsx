@@ -698,8 +698,8 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
                           onMouseEnter={e => { if (built) e.currentTarget.style.background = 'var(--mb-raised)'; }}
                           onMouseLeave={e => { e.currentTarget.style.background = launchingTopicId === topic.id ? 'var(--mb-raised)' : 'transparent'; }}
                           style={{
-                            width: '100%', height: 56, display: 'flex', alignItems: 'center', gap: 16,
-                            padding: '0 18px', textAlign: 'left',
+                            width: '100%', height: 56, display: 'flex', alignItems: 'center', gap: wide ? 16 : 12,
+                            padding: wide ? '0 18px' : '0 14px', textAlign: 'left',
                             background: launchingTopicId === topic.id ? 'var(--mb-raised)' : 'transparent', border: 'none',
                             cursor: built ? 'pointer' : 'default',
                             transform: launchingTopicId === topic.id ? 'translateX(4px)' : 'translateX(0)',
@@ -726,12 +726,14 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
                           {/* Every bar at the same x. Twenty bars scattered across
                               twenty cards cannot be compared, which is the one
                               thing a marks-based progress model exists to do. */}
-                          <span style={{ width: 120, flex: '0 0 auto' }}>
-                            {built && tMet > 0 && <MarkBar secure={tSecure} met={tMet} total={total} />}
-                          </span>
+                          {wide && (
+                            <span style={{ width: 120, flex: '0 0 auto' }}>
+                              {built && tMet > 0 && <MarkBar secure={tSecure} met={tMet} total={total} />}
+                            </span>
+                          )}
 
                           <span style={{
-                            width: 96, flex: '0 0 auto', textAlign: 'right',
+                            width: wide ? 96 : 80, flex: '0 0 auto', textAlign: 'right',
                             font: `700 11px/1.5 ${MONO}`, fontVariantNumeric: 'tabular-nums',
                             // Orange is the ONE colour here, and it means "do this
                             // now". It used to be the success green, so the same

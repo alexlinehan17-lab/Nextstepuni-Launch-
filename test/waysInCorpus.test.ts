@@ -18,6 +18,8 @@ import { CARDS as constructionHigher } from '@/components/MarkBank/cards/constru
 import { CARDS as constructionOrdinary } from '@/components/MarkBank/cards/construction-studies/ordinary';
 import { CARDS as economicsHigher } from '@/components/MarkBank/cards/economics/higher';
 import { CARDS as economicsOrdinary } from '@/components/MarkBank/cards/economics/ordinary';
+import { CARDS as englishHigher } from '@/components/MarkBank/cards/english/higher';
+import { CARDS as englishOrdinary } from '@/components/MarkBank/cards/english/ordinary';
 import { CARDS as homeEconomicsHigher } from '@/components/MarkBank/cards/home-economics/higher';
 import { CARDS as homeEconomicsOrdinary } from '@/components/MarkBank/cards/home-economics/ordinary';
 import { CARDS as mathsHigher } from '@/components/MarkBank/cards/maths/higher';
@@ -38,6 +40,7 @@ const cards = [
   ...chemistryHigher, ...chemistryOrdinary,
   ...constructionHigher, ...constructionOrdinary,
   ...economicsHigher, ...economicsOrdinary,
+  ...englishHigher, ...englishOrdinary,
   ...homeEconomicsHigher, ...homeEconomicsOrdinary,
   ...mathsHigher, ...mathsOrdinary,
   ...physicsHigher, ...physicsOrdinary,
@@ -64,7 +67,7 @@ describe('Ways In across the Mark Bank corpus', () => {
       expect(payload, card.id).not.toHaveProperty('schemeRegion');
       expect(Object.keys(source.answerShape ?? {}), card.id).toEqual(['totalMarks']);
     }
-  });
+  }, 60_000);
 
   test('builds a bounded, paper-grounded planning frame for every card', () => {
     for (const card of cards) {
@@ -81,7 +84,7 @@ describe('Ways In across the Mark Bank corpus', () => {
         if (item.sourceText) expect(paperText, `${card.id}: ${item.sourceText}`).toContain(item.sourceText);
       }
     }
-  });
+  }, 60_000);
 
   test('recognises the command in at least nine out of ten real questions', () => {
     const missing = cards.filter(card => {

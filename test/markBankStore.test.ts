@@ -23,8 +23,8 @@ import {
   rowId,
   tariffReconciles,
   type MarkRow,
-  type SecCard,
   type SecDiagramCard,
+  type SecQuestionCard,
   type StudentCard,
 } from '../types/markBank';
 
@@ -34,7 +34,7 @@ const row = (over: Partial<MarkRow> = {}): MarkRow => ({
   id: 'r0', kind: 'point', verbatim: 'Oesophagus', marks: 2, ...over,
 });
 
-const secCard = (over: Partial<SecCard> = {}): SecCard => ({
+const secCard = (over: Partial<SecQuestionCard> = {}): SecQuestionCard => ({
   source: 'sec',
   kind: 'question',
   id: 'bio-2025-hl-q6-ab',
@@ -54,7 +54,7 @@ const secCard = (over: Partial<SecCard> = {}): SecCard => ({
   specVersion: 'lc-biology-2002',
   qa: { gates: ['verbatim', 'tariff'], humanReviewedBy: 'al', humanReviewedAt: '2026-07-30' },
   ...over,
-} as SecCard);
+} as SecQuestionCard);
 
 /* ----------------------------------------------------------- the card type ---- */
 

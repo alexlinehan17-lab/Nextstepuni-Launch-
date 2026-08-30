@@ -31,6 +31,8 @@ import { CARDS as MATHS_HIGHER } from '../components/MarkBank/cards/maths/higher
 import { CARDS as MATHS_ORDINARY } from '../components/MarkBank/cards/maths/ordinary';
 import { CARDS as CONS_HIGHER } from '../components/MarkBank/cards/construction-studies/higher';
 import { CARDS as CONS_ORDINARY } from '../components/MarkBank/cards/construction-studies/ordinary';
+import { CARDS as ENGLISH_HIGHER } from '../components/MarkBank/cards/english/higher';
+import { CARDS as ENGLISH_ORDINARY } from '../components/MarkBank/cards/english/ordinary';
 
 const decks = [
   ['biology:higher', BIO_HIGHER, 673, '45f278ef15f8d35a8a4393a0e8d01d7e5484e73a881844880dc090daeb9ce836'],
@@ -361,6 +363,12 @@ const decks = [
   ['maths:ordinary', MATHS_ORDINARY, 435, '1739cbe00b51bbe9aed6df6e1226780777f965ec94c9492743cf2ec8df35990e'],
   ['construction-studies:higher', CONS_HIGHER, 255, 'b74a39fd589f1082d6378190aee778d528eff0968d7af0ee9144525f2e40d57b'],
   ['construction-studies:ordinary', CONS_ORDINARY, 250, 'f56985e32cc1f02a2e2f7a7eb300a44646b75cf3604a12b5a478bde2a520d2da'],
+  /* 2026-08-30: English launches with one COMPLETE paper rather than a
+   * convenient sample: every 2025 Higher Paper 1 ask and choice (19 cards).
+   * The PCLM rubric variant keeps indicative material non-exhaustive and out
+   * of the binary marking-row model. */
+  ['english:higher', ENGLISH_HIGHER, 19, '7431dc87536afaade1b40b09278337750d6d5d829e71c31ac5c3d25022f777a4'],
+  ['english:ordinary', ENGLISH_ORDINARY, 0, 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -375,6 +383,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7450);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7469);
   });
 });
