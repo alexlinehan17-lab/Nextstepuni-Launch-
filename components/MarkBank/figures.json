@@ -35226,5 +35226,104 @@
   "year": 2024,
   "level": "higher",
   "attribution": "SEC Leaving Certificate Chemistry 2024 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2022-HL-paper-q4-fig0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2022-HL-paper-q4-fig0.png",
+  "md5": "b14d1f33b8c5aed043d63b3a93049d98",
+  "alt": "An energy-level diagram of a hydrogen atom: three concentric circles around a nucleus, with an arrow showing an electron dropping from the outer circle to the middle one and a wavy arrow leaving the atom labelled \"red light\".",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 HL Q4",
+  "year": 2022,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2022 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2022-OL-paper-q6-fig0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2022-OL-paper-q6-fig0.png",
+  "md5": "5e543af4bf5449926f772470b5ca42d4",
+  "alt": "A table of five hydrocarbon structures. A is ethane, two carbons joined by a single bond each carrying three hydrogens. B is ethene, two carbons joined by a double bond each carrying two hydrogens. C is ethyne, H–C≡C–H. D is benzene, drawn as a hexagon with a circle inside it. E is methylbenzene, the same hexagon carrying a CH3 group.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q6",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2022-OL-paper-q8-fig0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2022-OL-paper-q8-fig0.png",
+  "md5": "34954c2eb823650641656b80f4755787",
+  "alt": "A reaction scheme in four boxes. Glucose (C6H12O6) converts by reaction W, using zymase, to ethanol (C2H5OH); ethanol converts by reaction X to ethanal (CH3CHO); and ethanal converts by reaction Y, using KMnO4 in acid, to ethanoic acid (CH3COOH).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2022 OL Q8",
+  "year": 2022,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2022 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2023-HL-paper-q8-fig0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2023-HL-paper-q8-fig0.png",
+  "md5": "3b9467f99d4f57a3806acaabd909b6ff",
+  "alt": "A reaction scheme in six boxes. Ethane converts by reaction A, using ultraviolet light and Cl2, to chloroethane. Ethene converts by reaction B to ethane, and by reaction C to poly(ethene). Ethanol converts by reaction D to ethene, and ethanal converts by reaction E to ethanol.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q8",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2023 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2023-HL-paper-q8-fig1": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2023-HL-paper-q8-fig1.png",
+  "md5": "3b66f5cd6f9275b4e2ab595d9e8723e9",
+  "alt": "A graph of boiling point in degrees Celsius against number of carbon atoms, from one to four, carrying four rising curves labelled A, B, C and D. A is highest, beginning near 100 degrees; B begins near 65; C begins near minus 20; and D is lowest, beginning near minus 160.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 HL Q8",
+  "year": 2023,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2023 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2023-OL-paper-q8-fig0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2023-OL-paper-q8-fig0.png",
+  "md5": "17d37a5c6a6ebf6683ef0747e69e1f6f",
+  "alt": "A reaction scheme in four boxes. X is ethanol (C2H5OH) and converts to ethene (C2H4) using solid S, with an arrow back from ethene to X. X also converts, using reagent R, to Y, which is ethanal (CH3CHO); and Y converts to Z, which is ethanoic acid (CH3COOH).",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2023 OL Q8",
+  "year": 2023,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2023 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2024-HL-paper-q8-fig0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2024-HL-paper-q8-fig0.png",
+  "md5": "7f61677ff4fe40630d1d47d55bcb9949",
+  "alt": "A reaction scheme. Ethene (C2H4) converts by reaction A to ethane (C2H6), which converts by reaction B to chloroethane (C2H5Cl). Ethene also reacts with Cl2 to give X, X converts by elimination to Y, and Y polymerises to PVC.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 HL Q8",
+  "year": 2024,
+  "level": "higher",
+  "attribution": "SEC Leaving Certificate Chemistry 2024 Higher Level — © State Examinations Commission"
+ },
+ "chemistry-2024-OL-paper-q5-fig0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2024-OL-paper-q5-fig0.png",
+  "md5": "2f8dfdb46be35020e53a05939fe4ebae",
+  "alt": "A section of the periodic table from hydrogen to krypton, each element shown with its atomic number and its electronegativity value. Hydrogen is 2.20, lithium 0.98, nitrogen 3.04, oxygen 3.44 and fluorine 3.98; the noble gases carry a dash instead of a value.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2024 OL Q5",
+  "year": 2024,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2024 Ordinary Level — © State Examinations Commission"
+ },
+ "chemistry-2025-OL-paper-q8-fig0": {
+  "src": "/exam-figures/chemistry/markbank/chemistry-2025-OL-paper-q8-fig0.png",
+  "md5": "ec562a21eca8992a356509b55dceba0b",
+  "alt": "A reaction scheme. Ethanol (C2H5OH) converts, heated over solid S, to ethene, and separately to ethanal (CH3CHO). Ethene carries a drawn structure with a carbon-carbon double bond, and converts to P, drawn as a four-carbon chain with single bonds. Ethene also reacts with HCl to give X and with Cl2 to give Y.",
+  "lettersVisible": [],
+  "labelMeanings": [],
+  "questionRef": "2025 OL Q8",
+  "year": 2025,
+  "level": "ordinary",
+  "attribution": "SEC Leaving Certificate Chemistry 2025 Ordinary Level — © State Examinations Commission"
  }
 }

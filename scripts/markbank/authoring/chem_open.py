@@ -152,6 +152,76 @@ WORK = {
         (10, 'a', 'iii', 'chem-1-4', 'molecular-formula-from-a-relative-molecular-mass',
          None, None),
     ],
+    # ── parts unlocked by the figure pass ─────────────────────────────────
+    # Each of these points at something printed. chem_question_figures.py
+    # cropped it from the paper and it is bound to the card, so the ask can be
+    # answered from what the card shows.
+    (2022, 'hl', 'FIGPASS'): [
+        (4, 'b', None, 'chem-1-2', 'why-a-photon-is-emitted-in-the-balmer-series',
+         None, None, 'chemistry-2022-HL-paper-q4-fig0'),
+    ],
+    (2022, 'ol', 'FIGPASS'): [
+        (6, 'c', 'ii', 'chem-2-4', 'identifying-the-aromatic-hydrocarbons-in-a-table',
+         'A to E are the five structures drawn in the table at the head of Q6.',
+         'The block ends "(12) H H B C C H H" -- the group mark followed by '
+         'atom labels the text layer lifted out of the drawn structures beside '
+         'it. Page 7 of the 2022 Ordinary Level paper prints the ask itself as '
+         'the card carries it.',
+         'chemistry-2022-OL-paper-q6-fig0'),
+    ],
+    (2023, 'hl', 'FIGPASS'): [
+        (8, 'a', 'ii', 'chem-2-4', 'identifying-the-elimination-reaction-in-a-scheme',
+         None,
+         'The trailing "(8)" is the mark for the whole of Q8(a). Page 9 of the '
+         '2023 Higher Level paper prints the ask as the card carries it.',
+         'chemistry-2023-HL-paper-q8-fig0'),
+        (8, 'c', 'ii', 'chem-2-2', 'geometry-change-when-ethene-is-polymerised',
+         None,
+         'The trailing "(12)" is the mark for the whole of Q8(c). Page 9 of the '
+         '2023 Higher Level paper prints the ask as the card carries it.',
+         'chemistry-2023-HL-paper-q8-fig0'),
+        (8, 'd', 'i', 'chem-2-4', 'inorganic-product-of-a-free-radical-substitution',
+         None, None, 'chemistry-2023-HL-paper-q8-fig0'),
+        (8, 'd', 'ii', 'chem-2-4', 'significance-of-traces-of-butane-in-a-substitution',
+         None,
+         'The trailing "(6)" is the mark for the whole of Q8(d). Page 9 of the '
+         '2023 Higher Level paper prints the ask as the card carries it.',
+         'chemistry-2023-HL-paper-q8-fig0'),
+        (8, 'e', 'i', 'chem-2-2', 'which-graph-shows-the-boiling-points-of-the-alkanes',
+         'Q8(e) sets the cue these asks complete: "Deduce which of A, B, C or '
+         'D is a graph of the boiling points".',
+         'The paper sets (i) and (ii) as a two-item list under that one cue, so '
+         'each begins in lower case. Page 9 of the 2023 Higher Level paper '
+         'prints this part exactly as the card carries it.',
+         'chemistry-2023-HL-paper-q8-fig1'),
+        (8, 'e', 'ii', 'chem-2-2', 'which-graph-shows-the-boiling-points-of-the-aldehydes',
+         'Q8(e) sets the cue these asks complete: "Deduce which of A, B, C or '
+         'D is a graph of the boiling points".',
+         'The paper sets (i) and (ii) as a two-item list under that one cue, so '
+         'each begins in lower case. Page 9 of the 2023 Higher Level paper '
+         'prints this part exactly as the card carries it.',
+         'chemistry-2023-HL-paper-q8-fig1'),
+        (8, 'e', 'iii', 'chem-2-2', 'why-boiling-point-rises-with-carbon-number',
+         None,
+         'The paper runs (iii) on into the lead-in for (iv) and (v), "Account '
+         'for the significant difference in the boiling points". Page 9 of the '
+         '2023 Higher Level paper prints both sentences under (iii) as the '
+         'card carries them.',
+         'chemistry-2023-HL-paper-q8-fig1'),
+    ],
+    (2025, 'ol', 'FIGPASS'): [
+        (8, 'a', 'iii', 'chem-2-4', 'name-of-the-polymer-formed-from-ethene',
+         'P is the polymer drawn at the foot of the Q8 reaction scheme, shown '
+         'as two repeating units.',
+         'The scheme is now cropped and bound, which is what chem_2025_ol.py '
+         'was waiting on when it refused this part.',
+         'chemistry-2025-OL-paper-q8-fig0'),
+        (8, 'a', 'iv', 'chem-2-4', 'carbonyl-compound-in-a-reaction-scheme',
+         None,
+         'The trailing "(18)" is the mark for the whole of Q8(a), and the '
+         'scheme the ask points at is now bound to the card.',
+         'chemistry-2025-OL-paper-q8-fig0'),
+    ],
     (2023, 'ol'): [
         (3, 'a', 'ii', 'chem-4-3', 'determining-the-concentration-of-dissolved-solids',
          None, None),
@@ -206,7 +276,12 @@ def emit(only=None):
                     raise Refused('the scheme states nothing at this key')
                 if not tariff:
                     raise Refused('the scheme prints no tariff that reads one way')
-                if figure:
+                # A SOLUTION crop is the scheme's own drawing and is itself
+                # the answer, so the card's rows are the criteria printed
+                # beside it. A QUESTION crop is the paper's diagram and is the
+                # stimulus, so the rows are the ordinary answer -- which is
+                # often a single letter read off that diagram ("D").
+                if figure and '-scheme-' in figure:
                     # On a card carrying the scheme's own DRAWING, the drawing
                     # is the answer and the rows are the CRITERIA printed
                     # beside it. The picture's own scattered labels are not
@@ -218,7 +293,7 @@ def emit(only=None):
                     if not rows:
                         raise Refused('the scheme states no criteria for the '
                                       'drawing, so there is nothing to claim')
-                elif scattered(rows):
+                elif scattered(rows) and not figure:
                     raise Refused('the answer is artwork the text layer scattered')
                 # One mark per marking point. The scheme prints the split
                 # itself where it can -- "A: bromine (3)", "B: hydrogen

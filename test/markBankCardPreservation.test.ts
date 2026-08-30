@@ -79,8 +79,33 @@ const decks = [
    * row above and was filed under (d)(i), which is "Define radioactivity".
    * Widening to 5 points (line spacing there is 13) unbled that answer and
    * made it cardable. */
-  ['chemistry:higher', CHEM_HIGHER, 488, '8a3a7358ad90edf9535bdc2e9fb5c1d80eb9f1bd52e827d3fa7b6a9704eb92f3'],
-  ['chemistry:ordinary', CHEM_ORDINARY, 379, 'f24f694ba9cafe16fa25136c30a5053d8a7730d6063ce18fafc18651c11912b6'],
+  /* 2026-08-30 (figure pass): chemistry 488/379 -> 496/382, coverage
+   * 1109/1211 -> 1120/1211, open 102 -> 91. Eleven more, none removed.
+   *
+   * Every one points at something PRINTED -- "Identify the elimination
+   * reaction in the scheme", "which of A, B, C or D is a graph of the boiling
+   * points" -- and could not be carded at all before, because the scheme's
+   * answer to the second is the single letter "D". chem_question_figures.py
+   * crops the diagram from the paper and it is bound to the card.
+   *
+   * The raster extractor could not have supplied these. A reaction scheme is
+   * drawn in VECTOR strokes with its compound names set as ordinary text
+   * beside them, so 2023 HL page 9 holds thirteen image fragments and
+   * twenty-two paths for what a reader sees as one picture. The cropper
+   * clusters the artwork and grows each band to the labels printed inside it.
+   *
+   * Where one band ends and the next begins is decided by the question's own
+   * PROSE, not by a gap: 2022 HL page 5 sets a Balmer energy-level diagram
+   * and a photograph of a diamond 26 points apart and they answer different
+   * parts, while the reaction scheme on 2023 HL page 9 has a 23-point gap
+   * inside it. A sentence printed between two runs of artwork is what makes
+   * them two figures.
+   *
+   * Every crop was opened and looked at before it was bound, and the alt text
+   * on each was written from that -- a generated description would be a guess
+   * about a picture, and it is the only thing a screen reader gets. */
+  ['chemistry:higher', CHEM_HIGHER, 496, 'ef4c5a891f86986b4ba3091bb89a527ac4019d01f1f2590b8c465e35f2db71cc'],
+  ['chemistry:ordinary', CHEM_ORDINARY, 382, '0064364c76c789a59057490251a454723738f9db96185b4eab192638eb776440'],
   /* 2026-08-23: physics drops from 487/477 to 486/475. Three cards -- one
    * Higher (2021 q13a(v)) and two Ordinary (2022 q3(ii) and q3(viii)) -- quote
    * a stacked fraction the scheme's font renders as a diagonal slash whose
@@ -350,6 +375,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7439);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7450);
   });
 });
