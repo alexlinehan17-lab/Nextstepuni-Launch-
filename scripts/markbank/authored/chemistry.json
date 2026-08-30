@@ -30368,6 +30368,31 @@
   "stem": "Mn2+ + BiO3– + H+  MnO4– + Bi3+ + H2O Assign oxidation numbers and, hence or otherwise, balance this equation."
  },
  {
+  "id": "chem-2022-hl-q4-b",
+  "topicId": "chem-1-2",
+  "conceptId": "why-a-photon-is-emitted-in-the-balmer-series",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 HL Q4(b)",
+  "questionText": "The diagram shows the origin of one of the lines in the Balmer series of the hydrogen emission spectrum. Why is a photon emitted as the electron moves from one energy level to another as shown?",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "electron in outer energy level (shell, n = 3) has more energy / electron in excited (higher, outer) state has more energy / electron in inner energy level (shell, n = 2) has less energy / electron loses energy / electron moves from higher to lower energy level / E₂ – E₁ = hf",
+    "marks": 6
+   }
+  ],
+  "stem": "red light",
+  "figureKey": "chemistry-2022-HL-paper-q4-fig0"
+ },
+ {
   "id": "chem-2022-ol-q3-b-i",
   "topicId": "chem-u2",
   "conceptId": "plotting-the-h2o2-decomposition-graph",
@@ -30976,6 +31001,32 @@
   "stem": "glass wool plug S P T or"
  },
  {
+  "id": "chem-2022-ol-q6-c-ii",
+  "topicId": "chem-2-4",
+  "conceptId": "identifying-the-aromatic-hydrocarbons-in-a-table",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2022 OL Q6(c)(ii)",
+  "questionText": "Identify two aromatic hydrocarbons in the table. (12) H H B C C H H",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "D (benzene) // E (methylbenzene, phenylmethane)",
+    "marks": 5,
+    "contextNote": "A to E are the five structures drawn in the table at the head of Q6."
+   }
+  ],
+  "stem": "Consider the structural formulae of the five hydrocarbon compounds A to E in the table.",
+  "figureKey": "chemistry-2022-OL-paper-q6-fig0"
+ },
+ {
   "id": "chem-2023-hl-q1-d-ii",
   "topicId": "chem-4-1",
   "conceptId": "moles-of-iron-ii-in-a-25-cm3-portion",
@@ -31243,6 +31294,189 @@
    }
   ],
   "notes": "The scheme gives this answer twice, once as the rearrangement of pV = nRT and once as the sentence the row carries; the row takes the sentence because the rearranged form survives only as mangled glyphs in the scheme's text layer. The paper sets the lead-in to Q11(a)(iii) directly beneath this part with no marker between them, so the block ends on that sentence about the limitations of pV = nRT; the ask is the first sentence."
+ },
+ {
+  "id": "chem-2023-hl-q8-a-ii",
+  "topicId": "chem-2-4",
+  "conceptId": "identifying-the-elimination-reaction-in-a-scheme",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2023 HL Q8(a)(ii)",
+  "questionText": "Identify the elimination reaction in the scheme. (8)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "D (ethanol to ethene)",
+    "marks": 4
+   }
+  ],
+  "stem": "Study the reaction scheme and answer the questions below. Chloroethane A Ethane uv, Cl2 Ethanal Ethanol Poly(ethene) Ethene",
+  "figureKey": "chemistry-2023-HL-paper-q8-fig0"
+ },
+ {
+  "id": "chem-2023-hl-q8-c-ii",
+  "topicId": "chem-2-2",
+  "conceptId": "geometry-change-when-ethene-is-polymerised",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2023 HL Q8(c)(ii)",
+  "questionText": "How does the geometry around the carbon atoms change during conversion C? (12)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "planar to // tetrahedral",
+    "marks": 6
+   }
+  ],
+  "stem": "Study the reaction scheme and answer the questions below. Chloroethane A Ethane uv, Cl2 Ethanal Ethanol Poly(ethene) Ethene",
+  "figureKey": "chemistry-2023-HL-paper-q8-fig0"
+ },
+ {
+  "id": "chem-2023-hl-q8-d-i",
+  "topicId": "chem-2-4",
+  "conceptId": "inorganic-product-of-a-free-radical-substitution",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2023 HL Q8(d)(i)",
+  "questionText": "Identify the inorganic product of conversion A.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "HCl (hydrogen chloride)",
+    "marks": 3
+   }
+  ],
+  "stem": "Study the reaction scheme and answer the questions below. Chloroethane A Ethane uv, Cl2 Ethanal Ethanol Poly(ethene) Ethene",
+  "figureKey": "chemistry-2023-HL-paper-q8-fig0"
+ },
+ {
+  "id": "chem-2023-hl-q8-d-ii",
+  "topicId": "chem-2-4",
+  "conceptId": "significance-of-traces-of-butane-in-a-substitution",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2023 HL Q8(d)(ii)",
+  "questionText": "Traces of butane are formed during conversion A. What is the significance of this result? (6)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "evidence for substitution (free radical) reaction (mechanism) / evidence for termination",
+    "marks": 3
+   }
+  ],
+  "stem": "Study the reaction scheme and answer the questions below. Chloroethane A Ethane uv, Cl2 Ethanal Ethanol Poly(ethene) Ethene",
+  "figureKey": "chemistry-2023-HL-paper-q8-fig0"
+ },
+ {
+  "id": "chem-2023-hl-q8-e-i",
+  "topicId": "chem-2-2",
+  "conceptId": "which-graph-shows-the-boiling-points-of-the-alkanes",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2023 HL Q8(e)(i)",
+  "questionText": "of the first four alkanes,",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "D",
+    "marks": 3,
+    "contextNote": "Q8(e) sets the cue these asks complete: \"Deduce which of A, B, C or D is a graph of the boiling points\"."
+   }
+  ],
+  "stem": "Study the reaction scheme and answer the questions below. Chloroethane A Ethane uv, Cl2 Ethanal Ethanol Poly(ethene) Ethene",
+  "figureKey": "chemistry-2023-HL-paper-q8-fig1"
+ },
+ {
+  "id": "chem-2023-hl-q8-e-ii",
+  "topicId": "chem-2-2",
+  "conceptId": "which-graph-shows-the-boiling-points-of-the-aldehydes",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2023 HL Q8(e)(ii)",
+  "questionText": "of the first four aldehydes.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "C",
+    "marks": 3,
+    "contextNote": "Q8(e) sets the cue these asks complete: \"Deduce which of A, B, C or D is a graph of the boiling points\"."
+   }
+  ],
+  "stem": "Study the reaction scheme and answer the questions below. Chloroethane A Ethane uv, Cl2 Ethanal Ethanol Poly(ethene) Ethene",
+  "figureKey": "chemistry-2023-HL-paper-q8-fig1"
+ },
+ {
+  "id": "chem-2023-hl-q8-e-iii",
+  "topicId": "chem-2-2",
+  "conceptId": "why-boiling-point-rises-with-carbon-number",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2023 HL Q8(e)(iii)",
+  "questionText": "Why does boiling point increase with the number of carbon atoms in each of these graphs? Account for the significant difference in the boiling points",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "increasing molecular mass (M_(r)) / increasing molecular size / increasing number of electrons / stronger intermolecular (van der Waals, London,",
+    "marks": 3
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "dispersion) forces (bonds, interactions)",
+    "marks": 3
+   }
+  ],
+  "stem": "Study the reaction scheme and answer the questions below. Chloroethane A Ethane uv, Cl2 Ethanal Ethanol Poly(ethene) Ethene",
+  "figureKey": "chemistry-2023-HL-paper-q8-fig1"
  },
  {
   "id": "chem-2023-ol-q1-c-i",
@@ -32705,5 +32939,56 @@
   ],
   "stem": "The potassium reacts vigorously with the water to produce soluble potassium hydroxide and bubbles of hydrogen gas. potassium water The reaction is described by the following word equation: potassium + water → potassium hydroxide + hydrogen gas",
   "notes": "The two rows are matched, not free choice: a named indicator has to be paired with its own colour change, and a pH meter with a pH reading. Three of the twelve marks are for the second row, which is the half candidates leave out — naming the test without saying what it shows."
+ },
+ {
+  "id": "chem-2025-ol-q8-a-iii",
+  "topicId": "chem-2-4",
+  "conceptId": "name-of-the-polymer-formed-from-ethene",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2025 OL Q8(a)(iii)",
+  "questionText": "Name polymer P, two repeating units of which are shown in the reaction scheme.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "polyethene",
+    "marks": 6,
+    "contextNote": "P is the polymer drawn at the foot of the Q8 reaction scheme, shown as two repeating units."
+   }
+  ],
+  "stem": "The reaction scheme below shows some of the reactions of ethene. heated C2H5OH ethanol solid S P ethene HCl Cl2 CH3CHO X Y ethanal",
+  "figureKey": "chemistry-2025-OL-paper-q8-fig0"
+ },
+ {
+  "id": "chem-2025-ol-q8-a-iv",
+  "topicId": "chem-2-4",
+  "conceptId": "carbonyl-compound-in-a-reaction-scheme",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "chemistry",
+  "section": "A",
+  "questionRef": "2025 OL Q8(a)(iv)",
+  "questionText": "Identify a carbonyl compound from the reaction scheme. (18)",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "ethanal / CH₃CHO",
+    "marks": 3
+   }
+  ],
+  "stem": "The reaction scheme below shows some of the reactions of ethene. heated C2H5OH ethanol solid S P ethene HCl Cl2 CH3CHO X Y ethanal",
+  "figureKey": "chemistry-2025-OL-paper-q8-fig0"
  }
 ]

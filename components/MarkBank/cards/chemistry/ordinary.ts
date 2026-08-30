@@ -5643,6 +5643,28 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC022GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2022 Ordinary Level — © State Examinations Commission.",
+    id: "chem-2022-ol-q6-c-ii", topicId: "chem-2-4", conceptId: "identifying-the-aromatic-hydrocarbons-in-a-table",
+    section: "A", questionRef: "2022 OL Q6(c)(ii)",
+    stem: "Consider the structural formulae of the five hydrocarbon compounds A to E in the table.",
+    questionText: "Identify two aromatic hydrocarbons in the table. (12) H H B C C H H",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "D (benzene) // E (methylbenzene, phenylmethane)", marks: 5, contextNote: "A to E are the five structures drawn in the table at the head of Q6." },
+    ],
+    figure: {
+          "candId": "chemistry-2022-OL-paper-q6-fig0",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2022-OL-paper-q6-fig0.png",
+          "srcHash": "5e543af4bf5449926f772470b5ca42d4",
+          "alt": "A table of five hydrocarbon structures. A is ethane, two carbons joined by a single bond each carrying three hydrogens. B is ethene, two carbons joined by a double bond each carrying two hydrogens. C is ethyne, H–C≡C–H. D is benzene, drawn as a hexagon with a circle inside it. E is methylbenzene, the same hexagon carrying a CH3 group.",
+          "attribution": "SEC Leaving Certificate Chemistry 2022 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2023, level: "ordinary",
     paperFileid: "LC022GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2023 Ordinary Level — © State Examinations Commission.",
@@ -6043,5 +6065,49 @@ export const CARDS: SecCard[] = [
     { id: "r-1", kind: "alt", verbatim: "pH meter", marks: 9, accepts: ["named indicator"] },
     { id: "r-2", kind: "alt", verbatim: "pH reading", marks: 3, accepts: ["correct matching colour change"] },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC022GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2025 Ordinary Level — © State Examinations Commission.",
+    id: "chem-2025-ol-q8-a-iii", topicId: "chem-2-4", conceptId: "name-of-the-polymer-formed-from-ethene",
+    section: "A", questionRef: "2025 OL Q8(a)(iii)",
+    stem: "The reaction scheme below shows some of the reactions of ethene. heated C2H5OH ethanol solid S P ethene HCl Cl2 CH3CHO X Y ethanal",
+    questionText: "Name polymer P, two repeating units of which are shown in the reaction scheme.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "polyethene", marks: 6, contextNote: "P is the polymer drawn at the foot of the Q8 reaction scheme, shown as two repeating units." },
+    ],
+    figure: {
+          "candId": "chemistry-2025-OL-paper-q8-fig0",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2025-OL-paper-q8-fig0.png",
+          "srcHash": "ec562a21eca8992a356509b55dceba0b",
+          "alt": "A reaction scheme. Ethanol (C2H5OH) converts, heated over solid S, to ethene, and separately to ethanal (CH3CHO). Ethene carries a drawn structure with a carbon-carbon double bond, and converts to P, drawn as a four-carbon chain with single bonds. Ethene also reacts with HCl to give X and with Cl2 to give Y.",
+          "attribution": "SEC Leaving Certificate Chemistry 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC022GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Chemistry 2025 Ordinary Level — © State Examinations Commission.",
+    id: "chem-2025-ol-q8-a-iv", topicId: "chem-2-4", conceptId: "carbonyl-compound-in-a-reaction-scheme",
+    section: "A", questionRef: "2025 OL Q8(a)(iv)",
+    stem: "The reaction scheme below shows some of the reactions of ethene. heated C2H5OH ethanol solid S P ethene HCl Cl2 CH3CHO X Y ethanal",
+    questionText: "Identify a carbonyl compound from the reaction scheme. (18)",
+    tariffModel: {"kind":"fixed"}, totalMarks: 3,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "ethanal / CH₃CHO", marks: 3 },
+    ],
+    figure: {
+          "candId": "chemistry-2025-OL-paper-q8-fig0",
+          "src": "/exam-figures/chemistry/markbank/chemistry-2025-OL-paper-q8-fig0.png",
+          "srcHash": "ec562a21eca8992a356509b55dceba0b",
+          "alt": "A reaction scheme. Ethanol (C2H5OH) converts, heated over solid S, to ethene, and separately to ethanal (CH3CHO). Ethene carries a drawn structure with a carbon-carbon double bond, and converts to P, drawn as a four-carbon chain with single bonds. Ethene also reacts with HCl to give X and with Cl2 to give Y.",
+          "attribution": "SEC Leaving Certificate Chemistry 2025 Ordinary Level — © State Examinations Commission",
+          "lettersVisible": []
+    },
   } as SecCard,
 ];

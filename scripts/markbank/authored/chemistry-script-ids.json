@@ -26,6 +26,7 @@
  "chem-2022-hl-q3-c-i",
  "chem-2022-hl-q3-c-ii",
  "chem-2022-hl-q3-c-iii",
+ "chem-2022-hl-q4-b",
  "chem-2022-hl-q5-d-i",
  "chem-2022-hl-q5-d-iii",
  "chem-2022-hl-q8-b-iv",
@@ -45,6 +46,7 @@
  "chem-2022-ol-q3-b-ii",
  "chem-2022-ol-q3-b-iii",
  "chem-2022-ol-q4-k",
+ "chem-2022-ol-q6-c-ii",
  "chem-2022-ol-q7-b-1",
  "chem-2022-ol-q7-b-2",
  "chem-2022-ol-q8-b-i",
@@ -59,6 +61,13 @@
  "chem-2023-hl-q11-a-ii",
  "chem-2023-hl-q2-a-i",
  "chem-2023-hl-q6-e-ii",
+ "chem-2023-hl-q8-a-ii",
+ "chem-2023-hl-q8-c-ii",
+ "chem-2023-hl-q8-d-i",
+ "chem-2023-hl-q8-d-ii",
+ "chem-2023-hl-q8-e-i",
+ "chem-2023-hl-q8-e-ii",
+ "chem-2023-hl-q8-e-iii",
  "chem-2023-hl-q9-d-i",
  "chem-2023-ol-q1-c-i",
  "chem-2023-ol-q2-d-ii",
@@ -102,5 +111,7 @@
  "chem-2025-ol-q3-b-i",
  "chem-2025-ol-q3-b-ii",
  "chem-2025-ol-q4-h",
- "chem-2025-ol-q7-b-iii"
+ "chem-2025-ol-q7-b-iii",
+ "chem-2025-ol-q8-a-iii",
+ "chem-2025-ol-q8-a-iv"
 ]
