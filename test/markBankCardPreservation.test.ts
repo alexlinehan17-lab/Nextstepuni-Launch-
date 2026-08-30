@@ -204,8 +204,14 @@ const decks = [
    * players) — the fix ships every part's paper stem, and four cards whose
    * question texts previously collided as duplicates are disambiguated by
    * their stems and now ship. Nothing was removed; all prior ids remain. */
-  ['maths:higher', MATHS_HIGHER, 387, 'e5daea14329527050997f6c7d02d838919bb8c72efb236fadaa02b69fd369bc5'],
-  ['maths:ordinary', MATHS_ORDINARY, 397, 'feb0fc8f67372bcef789bbe1616dd3241c6c42b9fd8f4d12a3204c84a49b5c74'],
+  /* 2026-08-30: maths 387/397 -> 391/400. Not new authoring — a scheme-reader
+   * repair. A Maths credit band lists the ALTERNATIVE ways to reach that rung,
+   * one bullet each, and answer_rows joined every line in a band into one
+   * string: 274 of 799 cards stated something the scheme never said. Fixing
+   * that, recognising a bare "Partial Credit:" header, and reading the letter
+   * gate case-sensitively recovered seven parts. Nothing removed. */
+  ['maths:higher', MATHS_HIGHER, 391, '3d65dbbfba97b1cf25ac9f9cd43072f3bd7b529bc0efc670d925c0f02713e3c2'],
+  ['maths:ordinary', MATHS_ORDINARY, 400, '8d06be623ac9ed99cde68fed138f26a22e84b1062067f2e7c6595505b3a95537'],
   ['construction-studies:higher', CONS_HIGHER, 255, 'b74a39fd589f1082d6378190aee778d528eff0968d7af0ee9144525f2e40d57b'],
   ['construction-studies:ordinary', CONS_ORDINARY, 250, 'f56985e32cc1f02a2e2f7a7eb300a44646b75cf3604a12b5a478bde2a520d2da'],
 ] as const;
@@ -222,6 +228,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7369);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7376);
   });
 });

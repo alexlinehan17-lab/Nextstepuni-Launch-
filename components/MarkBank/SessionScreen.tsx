@@ -407,7 +407,18 @@ const MarkRowView: React.FC<{
                   )}
                 </span>
                 <span>
-                  {option}
+                  {/* A Maths credit band lists the ALTERNATIVE ways to reach
+                      that rung, one per line. Rendered as one run-on string
+                      they read as a single sentence and say something the
+                      scheme never said, so each stays on its own line. */}
+                  {option.includes('\n')
+                    ? option.split('\n').map((line, li) => (
+                        <span key={li} style={{ display: 'grid', gridTemplateColumns: '10px 1fr', gap: 6, marginTop: li ? 3 : 0 }}>
+                          <span aria-hidden="true" style={{ color: MUTED }}>&middot;</span>
+                          <span>{line}</span>
+                        </span>
+                      ))
+                    : option}
                   {usedAlready && (
                     <em style={{ display: 'block', marginTop: 2, font: `400 11px/1.4 ${SANS}`, color: MUTED, fontStyle: 'normal' }}>
                       Already claimed above — one answer earns marks once.

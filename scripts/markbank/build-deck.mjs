@@ -509,8 +509,14 @@ for (const c of cards) {
 
   // A question naming lettered parts is unanswerable without the figure.
   const invitesDrawing = /you may include a labelled/i.test(c.questionText);
+  // CASE-SENSITIVE on the letter. The SEC indexes a diagram with CAPITALS --
+  // "structure A", "the part labelled B" -- and those need a key decoding what
+  // each points at. A lower-case letter is the thing's own name, not an index:
+  // "three circles, labelled p, q, and r" and "the side labelled l" label
+  // themselves on the printed diagram and have nothing to decode. The /i flag
+  // conflated the two and refused four Maths cards whose crops show the labels.
   const namesLetters = !invitesDrawing
-    && /\blabelled [A-Z]\b|\bstructures? [A-Z](,| and )|\bparts? [A-Z](,| and )|\blabelled\s+(parts|structures)\b/i.test(c.questionText);
+    && /\blabelled [A-Z]\b|\bstructures? [A-Z](,| and )|\bparts? [A-Z](,| and )|\blabelled\s+(parts|structures)\b/.test(c.questionText);
   // Not merely "has a figure": a question about labelled parts needs those
   // labels DECODED, so it must be a full diagram card with a label key.
   if (namesLetters && !(c.figureKey && Array.isArray(c.labelKey) && c.labelKey.length)) {
