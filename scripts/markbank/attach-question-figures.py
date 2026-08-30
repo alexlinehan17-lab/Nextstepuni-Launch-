@@ -6,8 +6,8 @@
 
 A card that says "From your diagram above, explain how excess demand occurs"
 or "Name the stage of mitosis shown in the diagram" cannot be answered by
-someone who cannot see the diagram. 544 cards across the eleven decks read
-that way, and for most of them the SEC's own crop was already published in
+someone who cannot see the diagram. Some of them had the SEC's own crop already
+published in
 components/MarkBank/figures.json against the same question — bound to a
 sibling card, or extracted and never used.
 
@@ -64,6 +64,20 @@ POINTS_AT = re.compile(
     r'|\btick\b[^.]{0,30}\b(?:box|table|column)\b'
     r'|\brefer(?:ring)? to the (?:diagram|graph|table|figure|extract|passage)\b',
     re.I)
+# Two things that LOOK like a card pointing at printed matter and are not.
+#
+# The student makes it themselves. "Draw a large diagram of a neuron and label
+# the following parts", "On the axes below, sketch two graphs" — there is
+# nothing printed to show, and a crop of the blank axes is the blank box in
+# another form.
+DRAWS_IT = re.compile(r'\b(draw|sketch|copy and complete|in your answerbook|'
+                      r'complete the (?:table|diagram)|plot)\b', re.I)
+# The options are printed in the question's OWN words: "Identify the correct
+# explanation for marbling by placing a tick in the correct box: Distribution
+# of fat within the muscle / Fat around the outside of the muscle". A tick-box
+# card whose choices are in its text can be answered as it stands.
+OPTIONS_INLINE = re.compile(r':\s*[^:]{3,}?\s+/\s+[^:]{3,}|true or false'
+                            r'|\btrue\b.*\bfalse\b', re.I)
 PART = re.compile(r'\s*\([a-z]\)(?:\([ivxlc]+\))?\s*$', re.I)
 ROMAN = re.compile(r'\s*\([ivxlc]+\)\s*$', re.I)
 
@@ -147,6 +161,8 @@ def main():
                 continue
             text = card_text(card)
             if not POINTS_AT.search(text):
+                continue
+            if DRAWS_IT.search(text) or OPTIONS_INLINE.search(text):
                 continue
             if card['id'] in for_card:
                 attached[subject] += 1
