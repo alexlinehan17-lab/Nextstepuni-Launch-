@@ -711,6 +711,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Rhizobium", marks: 3, contextNote: "Tick-box choice on the paper: Clostridium / Rhizobium / E. coli." },
     ],
+    questionFigure: {
+          "candId": "agricultural-science-2022-OL-paper-p11-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2022-OL-paper-p11-i0.png",
+          "srcHash": "c0838b58bc60bb2adc552fd553913cff",
+          "alt": "Q8 equipment plate. Stem: 'A student was asked to carry out an investigation to isolate and grow bacteria from clover root nodules. The following pictures represent some of the equipment a student may use during this investigation.' Two photographs on a plain white/grey background, each with a bold capital letter centred above. A (left): a long slender metal implement lying diagonally — a fine twisted/coiled wire shaft with a small closed circular loop at its upper tip, fixed into a plain light-coloured handle at the lower end (an inoculating loop). B (right): clear glass or plastic circular dishes with shallow vertical sides — one shown complete in the centre and part of a second at the right edge, the two halves of a Petri dish. Below: '(a) Identify each piece of equipment A and B above.' with an answer table ruled 'A:' and 'B:', then '(b) State a suitable prediction for this investigation.'",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Agricultural Science 2022 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1144,6 +1152,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Rumen pH — 7.0", marks: 3, contextNote: "The scheme ticks the 7.0 box. The tick is a Wingdings glyph the text extraction drops, so this was confirmed against the marking-scheme PDF (p.15)." },
     ],
+    questionFigure: {
+          "candId": "agricultural-science-2023-OL-paper-p12-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-OL-paper-p12-i0.png",
+          "srcHash": "7b3a4597aaedd882b92dc243fea70592",
+          "alt": "A three-panel table of hand-drawn line diagrams showing the development of a ruminant stomach. The table has a grey header row with three red bold column headings: 'First week', '3 to 4 months', 'Maturity'. Each cell below contains an outline drawing of the four-chambered stomach in side view, with a short tube (the oesophagus) entering at the left. In every panel three parts are named in words with black leader arrows — 'Rumen' (arrow into the large rounded sac), 'Omasum' (arrow into the small hatched/dotted chamber at the upper right) and 'Reticulum' (arrow up into the chamber at the lower right) — and a fourth part is marked only by a dark blue upward arrow with a red capital letter A beneath it, pointing into the elongated lower chamber that runs along the bottom of the drawing. The proportions change across the panels: in 'First week' the chamber marked A is large relative to a small rumen; by '3 to 4 months' the rumen has grown; at 'Maturity' the rumen is by far the largest chamber and the chamber marked A is a long narrow sac beneath it. Above the table a line of question prose is sliced by the crop edge ('...Analyse the diagrams and answer the questions which follow' is legible below it). Beneath the table is '(i) Identify the stomach chamber A.' with a blank answer box, and '(ii) Explain the changes in the structure of the ruminant stomach as the animal gets older.'",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1815,6 +1831,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Has no horns", marks: 2 },
     ],
+    questionFigure: {
+          "candId": "agricultural-science-2025-OL-paper-p03-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p03-art.png",
+          "srcHash": "3d7f24bd5114829a31454828aae981da",
+          "alt": "The top of Section A with Question 1(a). A pale green word bank lists Jersey, Holstein Friesian, Charolais and Limousin, above four photographs of cattle in a two by two grid, each pair over an answer row. A: a cream-white bull with a pale pink muzzle and yellow ear tags, standing in grass among darker cattle. B: a fawn cow grazing, with a herd of the same fawn colour behind her. C: a deep red-brown bull, heavily muscled over the hindquarters, tied in a straw-bedded shed. D: a black-and-white cow grazing, black over the shoulder and rump with a broad white band. Part (ii) below asks for one beef breed from part (i).",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -2042,6 +2066,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Spring calving", marks: 3 },
     ],
+    questionFigure: {
+          "candId": "agricultural-science-2025-OL-paper-p14-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p14-i0.png",
+          "srcHash": "9c51a8185170b6cb68d19bb90d3cf11e",
+          "alt": "Colour photograph inside a cattle shed for Question 11(b). Three young bulls lie resting on a slatted floor whose slats are covered with dark teal-green rubber matting; the rubber-covered slats run in parallel strips across the frame and a drainage channel with a concrete kerb runs along the left. The nearest animal is a large grey-coated bull lying with its legs folded under it, facing the camera, with a yellow ear tag. Behind it lie two pale cream/white cattle, also with yellow ear tags, one facing away and one facing left. Concrete walls and a bright doorway are visible at the top. Above the photograph is the stem '(b) Technology on farms to improve animal welfare and save labour is moving at a fast pace.' and below it part (i), 'The picture shows bulls on rubber slats. Briefly outline two ways that the rubber slats improve animal welfare', with a blank numbered answer table.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -4200,6 +4232,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Genetic information", marks: 6, contextNote: "One box only. \"Physical appearance\" describes a phenotype and \"alternative form of a gene\" describes an allele — neither is DNA." },
     ],
+    questionFigure: {
+          "candId": "agricultural-science-2023-OL-paper-p35-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2023-OL-paper-p35-i0.png",
+          "srcHash": "da45c3d2c20b8e17f3ef236955db47d1",
+          "alt": "A schematic diagram of gene editing with CRISPR-Cas9, drawn as horizontal capsule-shaped bars representing lengths of DNA. At the top is a single bar coloured red at both ends with a blue segment in the middle; a black leader line labelled in words 'Target gene' points to that blue middle segment. A long curved black arrow sweeps in from the right, labelled in words 'CRISPR-Cas9', and ends at a yellow lightning-bolt symbol sitting on the bar at the junction of the red and blue sections, representing the cut. A straight downward arrow leads to the next stage, where the bar has been split into two fragments, each red with a blue end, drawn side by side. Two diagonal arrows then lead down to two different outcomes. Left outcome: a single rejoined bar, red - blue - red, i.e. the cut has simply been sealed. Right outcome: a longer bar reading red - blue - green - blue - red, where a pale green segment has been placed between the two blue pieces; the word 'Insertion' labels this green segment, and a curved arrow rises to it from a separate small pale green bar drawn on its own at the bottom right of the diagram. Above the diagram the printed stem is partly sliced by the crop edge but reads '...developing new plant varieties. The diagram shows a gene being edited using the tool CRISPR-Cas9.' Below is '(i) With the aid of the diagram above, explain how the gene editing process works.' with the start of a blank ruled answer box.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Agricultural Science 2023 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5173,6 +5213,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Heating milk at high temperatures for short amount of time", marks: 4, contextNote: "The scheme's full wording is \"Heating milk at high temperatures for short amount of time and cooling rapidly to kill bacteria\" — the first of the three printed options." },
     ],
+    questionFigure: {
+          "candId": "agricultural-science-2025-OL-paper-p25-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-OL-paper-p25-i0.png",
+          "srcHash": "512c2df90de4b4c3e1d5fe81ba10bb4e",
+          "alt": "Exploded pie chart titled in bold 'Average Milk Composition', showing the typical composition of cow's milk. One large green sector dominates the pie and is labelled inside with a red bold B and the value 87.5%. Four thin sectors are pulled out to the upper right, each with a leader line to its percentage: a gold/yellow sliver labelled 4.20%, a pale blue sliver labelled 0.90%, a pink/magenta sliver labelled 3.40%, and a purple sliver labelled 4.00% which also carries a white bold A inside it. To the right is a five-entry legend with colour swatches reading, top to bottom: pink = 'Protein', purple = 'A', green = 'B', gold = 'Lactose', blue = 'Minerals'. Above the chart is the stem '(iii) The chart shows the typical composition of cow's milk', and below it the instruction 'Identify A and B in the chart above of the composition of milk' with a blue-and-cream answer table headed 'Component' whose two rows are labelled A and B.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -5357,6 +5405,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Process during which soil particles in a solution contact and stick together — forming clusters or clumps of a larger size", marks: 3, contextNote: "Statement (1) — the first of the three boxes." },
     ],
+    questionFigure: {
+          "candId": "agricultural-science-2025-ol-paper-p032-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2025-ol-paper-p032-i0.png",
+          "srcHash": "c54eabd9ec1afbedd297a71cba349815",
+          "alt": "Four bordered panels in a two-by-two grid, each headed with a blue capital letter and holding a laboratory photograph above a peach caption strip. A: two test tubes in a metal rack, one holding dark soil and one holding soil topped with white powder - 'Add calcium carbonate to one of the test tubes'. B: a hand holding two cork-stoppered test tubes, one with dark settled soil and one milky white - 'Add water to each test tube, then stopper and shake the test tubes'. C: two tubes held over a rack, the left one uniformly muddy brown and the right one clear above a settled soil layer - 'Leave to settle, one test tube stays muddy, while one test tube goes clear'. D: two empty test tubes in a rack each holding a small plug of dry brown soil - 'Add clay soil to two test tubes'.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Agricultural Science 2025 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -7298,6 +7354,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Easy to operate", marks: 2, accepts: ["safe working with animals","administer medicine easily or any named treatment"] },
     ],
+    questionFigure: {
+          "candId": "agricultural-science-2024-OL-paper-p05-i0",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-OL-paper-p05-i0.png",
+          "srcHash": "e98ac1a834f4f2e82a08a959fff28d52",
+          "alt": "Question 2(b), two cattle-handling facility pictures side by side, each headed by a bold capital. Picture A is a colour photograph of a galvanised steel cattle race/crush built along a concrete wall in a yard, made of horizontal bars in vertical posts, with a heavier vertical-barred gate structure at the far end; an orange callout box with white bold text \"Headgate\" and a yellow arrow points to that end structure. Picture B is a black-and-white plan-view (bird's-eye) line drawing of a curved handling system on a pale background: a straight channel labelled \"Single file race\" by a leader line runs to the right, turns through a 180 degree bend into a rounded pen at the far right labelled \"Round crowd pen\", and continues round a second bend at the bottom left; small stylised cattle drawn from above are spaced along the route. A solid line path is labelled in red \"Right way\" and a dashed line path is labelled in red \"Wrong way\", and the caption \"Cattle see place to go\" runs along the bottom. Three small circled numerals, 1, 2 and 3, mark points along the route. Below the pictures, sub-parts (i) and (ii) with empty answer boxes.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",

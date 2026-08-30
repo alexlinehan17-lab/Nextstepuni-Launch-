@@ -459,6 +459,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "How excess demand occurs — all three steps", marks: 12, contextNote: "Three steps, 4 marks each: demand exceeds the fixed supply at €500, the low price presses price up towards equilibrium, and the undercharging itself created the excess demand.", openList: true, group: {"claimMax":3,"perOption":4,"options":["At the price of €500 there is more demand (QX) than the available (fixed) supply of the product (QE).","This indicates that the price charged in this too low, the excess demand puts upward pressure on price driving it to the equilibrium price P1.","By undercharging for the PS5 it created additional demand for the product which would be rationalised if the price were to be increased."]} },
     ],
+    questionFigure: {
+          "candId": "economics-2021-HL-paper-p22-art",
+          "src": "/exam-figures/economics/markbank/economics-2021-HL-paper-p22-art.png",
+          "srcHash": "213fa2d5bb73d2a07a52a5a7edda373a",
+          "alt": "The 2021 Higher Level Economics paper's Question 13(a)(i) as printed: the PS5 shortage stimulus and the blank Price/Quantity axes the student completes to show excess demand at the €500 retail price.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Economics 2021 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",

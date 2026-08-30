@@ -32266,7 +32266,8 @@
    }
   ],
   "stem": "The diagram below shows how a ray of light travels through a rectangular glass block.",
-  "notes": "Object, incident ray(s) and image formed earn three marks each."
+  "notes": "Object, incident ray(s) and image formed earn three marks each.",
+  "questionFigureKey": "physics-2023-ol-paper-p007-i0"
  },
  {
   "id": "phys-2023-ol-q10-ix",
@@ -33997,7 +33998,8 @@
     "marks": 2
    }
   ],
-  "stem": "Light can be reflected by many different surfaces. The picture on the right shows light being reflected from a plane mirror. An image is formed. One of the laws of reflection of light states that the angle of incidence equals the angle of reflection. f ● object The picture on the right shows images in a concave mirror. An object is placed 20 cm in front of a concave mirror and the image is formed 40 cm in front of the mirror."
+  "stem": "Light can be reflected by many different surfaces. The picture on the right shows light being reflected from a plane mirror. An image is formed. One of the laws of reflection of light states that the angle of incidence equals the angle of reflection. f ● object The picture on the right shows images in a concave mirror. An object is placed 20 cm in front of a concave mirror and the image is formed 40 cm in front of the mirror.",
+  "questionFigureKey": "physics-2024-OL-paper-p07-i2"
  },
  {
   "id": "phys-2024-ol-q12-vii",

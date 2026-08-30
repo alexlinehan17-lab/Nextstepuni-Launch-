@@ -9188,6 +9188,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Diagram: Penis and urethra and sperm duct and testis", marks: 6 },
     ],
+    questionFigure: {
+          "candId": "biology-2021-HL-paper2-p07-i0",
+          "src": "/exam-figures/biology/markbank/biology-2021-HL-paper2-p07-i0.png",
+          "srcHash": "2941e9c87203901d4dadf1f32e3a2f25",
+          "alt": "Grey-shaded three-dimensional block diagram of a section through skin, with five hairs emerging from the top surface. On the left, a dark hair sits in its follicle with a lobed gland beside it; in the centre, a vessel loops up from the deep tissue to just beneath the surface layer; on the right, a tightly coiled ball of tubing connects by a wavy duct to a pore on the surface. A layer of rounded fat-like cells runs along the base with vessels threading through it. Three bold horizontal arrows: A points to the hair in its follicle, B to the crest of the central vessel loop, C to the coiled ball of tubing. The top line of question text ('...skin is important in excretion and temperature regulation.') is complete; the bottom edge slices the line '(i) Which labelled structure is involved in vasoconstriction?' — the diagram and all three labels are intact.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Biology 2021 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "diagram",

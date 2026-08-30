@@ -5347,6 +5347,14 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "point", verbatim: "Mycorrhizal", marks: 6 },
     ],
+    questionFigure: {
+          "candId": "agricultural-science-2024-HL-paper-p36-art",
+          "src": "/exam-figures/agricultural-science/markbank/agricultural-science-2024-HL-paper-p36-art.png",
+          "srcHash": "e2adf0f6cbdc572de192c0a1af1dd0c8",
+          "alt": "The Question 17(c) results table, with its header row complete. Four columns: Soil sample, Loss in mass (g), % Soil organic matter, % Soil organic carbon. The Peat row reads 55.2 for loss in mass, then two cells highlighted in yellow carrying the letters A and B in place of values. The Loam row beneath it is filled in throughout: 3.8, 4.2 and 2.4. Above the table sit the ruled Predication and Reason boxes from part (c)(i) and the line 'Results from the investigation are shown in the table below.'; below it are parts (ii) and (iii) with their Calculation boxes.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Agricultural Science 2024 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",

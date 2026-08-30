@@ -37859,7 +37859,8 @@
     "verbatim": "Diagram: Penis and urethra and sperm duct and testis",
     "marks": 6
    }
-  ]
+  ],
+  "questionFigureKey": "biology-2021-HL-paper2-p07-i0"
  },
  {
   "id": "bio-2021-hl-q2-e",
@@ -42899,7 +42900,8 @@
     "marks": 3
    }
   ],
-  "notes": "The scheme wants the cell membrane in the drawing as well, although the paper names only three parts to label."
+  "notes": "The scheme wants the cell membrane in the drawing as well, although the paper names only three parts to label.",
+  "questionFigureKey": "biology-2024-ol-040-p005-i0"
  },
  {
   "id": "bio-2024-ol-q14-c-i",

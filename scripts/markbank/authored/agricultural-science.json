@@ -5036,7 +5036,8 @@
     "contextNote": "Tick-box choice on the paper: Clostridium / Rhizobium / E. coli."
    }
   ],
-  "notes": "Single 3-mark tick-box answer. The three options are printed as words on the paper, so no figure is needed."
+  "notes": "Single 3-mark tick-box answer. The three options are printed as words on the paper, so no figure is needed.",
+  "questionFigureKey": "agricultural-science-2022-OL-paper-p11-i0"
  },
  {
   "id": "agsci-2022-ol-q9a",
@@ -7214,7 +7215,8 @@
     "contextNote": "The scheme ticks the 7.0 box. The tick is a Wingdings glyph the text extraction drops, so this was confirmed against the marking-scheme PDF (p.15)."
    }
   ],
-  "notes": "The three options are printed as text on the paper, so they are reproduced in the stem and no figure is needed. The row is written as \"label — answer\" so the card reads sensibly; the scheme's own printed answer is the ticked \"7.0\"."
+  "notes": "The three options are printed as text on the paper, so they are reproduced in the stem and no figure is needed. The row is written as \"label — answer\" so the card reads sensibly; the scheme's own printed answer is the ticked \"7.0\".",
+  "questionFigureKey": "agricultural-science-2023-OL-paper-p12-i0"
  },
  {
   "id": "agsci-2023-ol-q9b-i",
@@ -10795,7 +10797,8 @@
     "marks": 2
    }
   ],
-  "notes": "Tick-box question; the three printed options are carried in the question text as the paper prints them. Scheme awards 2."
+  "notes": "Tick-box question; the three printed options are carried in the question text as the paper prints them. Scheme awards 2.",
+  "questionFigureKey": "agricultural-science-2025-OL-paper-p03-art"
  },
  {
   "id": "agsci-2025-ol-q1biii",
@@ -11315,7 +11318,8 @@
     "marks": 3
    }
   ],
-  "notes": "The whole of Q11(a) hangs on a printed article, which the stem reproduces verbatim, so no figure is involved. Scheme prints 3; Q11(a) reconciles as 3 + 3 + 4 = 10."
+  "notes": "The whole of Q11(a) hangs on a printed article, which the stem reproduces verbatim, so no figure is involved. Scheme prints 3; Q11(a) reconciles as 3 + 3 + 4 = 10.",
+  "questionFigureKey": "agricultural-science-2025-OL-paper-p14-i0"
  },
  {
   "id": "agsci-2025-ol-q11aii",
@@ -23127,7 +23131,8 @@
     "contextNote": "One box only. \"Physical appearance\" describes a phenotype and \"alternative form of a gene\" describes an allele — neither is DNA."
    }
   ],
-  "notes": "A single tick-box worth 6 marks, the scheme printing one answer. The three printed options are reproduced in the question text so the card stands alone without the figure, and the underlined term is confirmed from the PDF's own underline rule beneath \"DNA\" on page 34."
+  "notes": "A single tick-box worth 6 marks, the scheme printing one answer. The three printed options are reproduced in the question text so the card stands alone without the figure, and the underlined term is confirmed from the PDF's own underline rule beneath \"DNA\" on page 34.",
+  "questionFigureKey": "agricultural-science-2023-OL-paper-p35-i0"
  },
  {
   "id": "agsci-2023-ol-q18aii",
@@ -24800,7 +24805,8 @@
     "marks": 6
    }
   ],
-  "notes": "A tick-box question whose three options are printed as plain text labels, not as a figure, so the card carries them in the questionText and stands alone. Single 6-mark tariff, single answer, fixed."
+  "notes": "A tick-box question whose three options are printed as plain text labels, not as a figure, so the card carries them in the questionText and stands alone. Single 6-mark tariff, single answer, fixed.",
+  "questionFigureKey": "agricultural-science-2024-HL-paper-p36-art"
  },
  {
   "id": "agsci-2024-hl-q17biv",
@@ -29186,7 +29192,8 @@
     "contextNote": "The scheme's full wording is \"Heating milk at high temperatures for short amount of time and cooling rapidly to kill bacteria\" — the first of the three printed options."
    }
   ],
-  "notes": "A three-option tick box with all three options transcribed into the questionText. The row stops mid-sentence because the extracted scheme line has the tariff token 4 typeset between \"time\" and \"cooling rapidly\"; the full wording is in the contextNote and in the questionText, so nothing is hidden from the student."
+  "notes": "A three-option tick box with all three options transcribed into the questionText. The row stops mid-sentence because the extracted scheme line has the tariff token 4 typeset between \"time\" and \"cooling rapidly\"; the full wording is in the contextNote and in the questionText, so nothing is hidden from the student.",
+  "questionFigureKey": "agricultural-science-2025-OL-paper-p25-i0"
  },
  {
   "id": "agsci-2025-ol-q15b-i",
@@ -29862,7 +29869,8 @@
     "contextNote": "Statement (1) — the first of the three boxes."
    }
   ],
-  "notes": "All three tick-box statements are printed as text in the paper and are reproduced in questionText, so no figure is involved. One 3-mark answer, one row. REVIEWER NOTE: the scheme prints this statement across two lines with the marks cell ('3') landing between 'stick' and 'together', so the sentence is not contiguous in the extracted source. The row keeps every word of the scheme in order and replaces the scheme's comma with an em dash at that break — the same 'clue — answer' form the existing agsci cards use, and the form both gates check against. Nothing is added or removed."
+  "notes": "All three tick-box statements are printed as text in the paper and are reproduced in questionText, so no figure is involved. One 3-mark answer, one row. REVIEWER NOTE: the scheme prints this statement across two lines with the marks cell ('3') landing between 'stick' and 'together', so the sentence is not contiguous in the extracted source. The row keeps every word of the scheme in order and replaces the scheme's comma with an em dash at that break — the same 'clue — answer' form the existing agsci cards use, and the form both gates check against. Nothing is added or removed.",
+  "questionFigureKey": "agricultural-science-2025-ol-paper-p032-i0"
  },
  {
   "id": "agsci-2025-ol-q17biii",
@@ -35126,7 +35134,8 @@
     ]
    }
   ],
-  "stem": "Single file race Round crowd pen Wrong way Right way Headgate Cattle see place to go"
+  "stem": "Single file race Round crowd pen Wrong way Right way Headgate Cattle see place to go",
+  "questionFigureKey": "agricultural-science-2024-OL-paper-p05-i0"
  },
  {
   "id": "agsci-2025-hl-q15b",
