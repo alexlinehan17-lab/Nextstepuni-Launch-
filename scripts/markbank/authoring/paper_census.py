@@ -63,6 +63,11 @@ SUBJECTS = {
     'maths': {'mode': 'papers', 'papers': {'100': 'Paper 1', '200': 'Paper 2'}},
     'business': {'mode': 'sections'},
     'home-economics': {'mode': 'sections'},
+    # Two booklets: 038 carries Section A (short answer, attempt any nine) and
+    # Section B (long questions, attempt any two); 040 carries Section C, one
+    # programming question answered on a computer. The sections are named on
+    # the page, so the census reads them rather than the booklet code.
+    'computer-science': {'mode': 'sections'},
 }
 
 MARKS = re.compile(r'\((\d{1,3})\s*marks?\)', re.I)
