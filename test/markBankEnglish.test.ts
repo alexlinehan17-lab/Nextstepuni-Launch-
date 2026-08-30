@@ -14,6 +14,7 @@ import {
   isRubricCard,
   tariffReconciles,
   type CardSourceMaterial,
+  type PclmRubric,
   type SecRubricCard,
 } from '../types/markBank';
 
@@ -60,7 +61,8 @@ const census = JSON.parse(readFileSync(
   'utf8',
 )) as EnglishCensus;
 const manifest = authoredJson as unknown as EnglishManifest;
-const ALL: SecRubricCard[] = [...HIGHER, ...ORDINARY];
+type EnglishCard = SecRubricCard & { rubric: PclmRubric };
+const ALL = [...HIGHER, ...ORDINARY] as EnglishCard[];
 const byId = new Map(ALL.map(card => [card.id, card]));
 
 const comparable = (value: string) => value

@@ -72,16 +72,15 @@ def shipped_cards(subject):
     "g-parent1") and paired each with the next card's citation, which
     invented five hundred phantom orphans in Business alone.
     """
-    if subject == 'english':
-        # English's paper-specific facts live in the reviewed manifest and are
-        # converted to runtime cards by factory.ts. Parsing literal makeCard
-        # calls sees only the 19 hand-enriched 2025 HL Paper 1 cards and makes
-        # the other 641 shipped cards invisible to the ledger.
-        path = os.path.join(DECKS, 'english', 'authored.json')
+    if subject in ('english', 'irish'):
+        # Paper-specific facts live in a reviewed generated manifest and are
+        # converted to runtime cards by factory.ts; the tiny level exports do
+        # not contain literal card objects for the ledger to parse.
+        path = os.path.join(DECKS, subject, 'authored.json')
         payload = json.load(open(path, encoding='utf-8'))
         cards = payload.get('cards', [])
         if payload.get('cardCount') != len(cards):
-            raise AssertionError('English authored manifest count is stale')
+            raise AssertionError(f'{subject} authored manifest count is stale')
         return [(card['id'], card['questionRef']) for card in cards]
 
     out = []
@@ -98,13 +97,13 @@ def shipped_cards(subject):
     return out
 
 
-def reconcile_english(census):
-    """Reconcile English by its stable census ids, not science part grammar.
+def reconcile_manifest(subject, census):
+    """Reconcile a language corpus by stable census ids, not science grammar.
 
-    Its printed addresses restart under each text, work, mode and poet. The
-    bespoke census has already resolved those choices into one stable id per
-    independently selectable response, so an exact id + questionRef match is
-    stronger than forcing them through the Q3(b)(ii) parser.
+    Printed addresses restart under paper-specific texts, modes and choices.
+    The bespoke census has already resolved them into one stable id per
+    independently selectable response, so exact id + questionRef matching is
+    stronger than forcing them through the science Q3(b)(ii) parser.
     """
     expected = {}
     paper_rows = []
@@ -116,14 +115,14 @@ def reconcile_english(census):
             ids.append(cid)
         paper_rows.append((paper, ids))
 
-    cards = shipped_cards('english')
+    cards = shipped_cards(subject)
     covered = set()
     orphans = []
     for cid, ref in cards:
         wanted = expected.get(cid)
         if wanted is None:
             orphans.append({'id': cid, 'ref': ref,
-                            'why': 'card id is absent from the English paper census'})
+                            'why': f'card id is absent from the {subject} paper census'})
         elif ref != wanted:
             orphans.append({'id': cid, 'ref': ref,
                             'why': f'census address is "{wanted}"'})
@@ -141,7 +140,7 @@ def reconcile_english(census):
         })
     leaves = len(expected)
     return {
-        'subject': 'english', 'mode': 'english',
+        'subject': subject, 'mode': census['mode'],
         'cards': len(cards), 'leaves': leaves,
         'covered': len(covered), 'excluded': 0,
         'open': leaves - len(covered),
@@ -315,8 +314,8 @@ def load_exclusions(subject):
 
 def reconcile_subject(subject, census=None):
     census = census or census_subject(subject)
-    if subject == 'english':
-        return reconcile_english(census)
+    if subject in ('english', 'irish'):
+        return reconcile_manifest(subject, census)
     sections_mode = census['mode'] == 'sections'
     idx = leaf_index(census)
     covered = collections.defaultdict(set)      # paper key -> set(leaf)
@@ -458,8 +457,8 @@ def content_hash(subject):
         path = os.path.join(DECKS, subject, f'{level}.ts')
         if os.path.exists(path):
             h.update(open(path, 'rb').read())
-    if subject == 'english':
-        # English is data-driven, so these two files can materially change a
+    if subject in ('english', 'irish'):
+        # Language corpora are data-driven, so these two files can materially change a
         # runtime card even when the tiny level exports do not move.
         for name in ('factory.ts', 'authored.json'):
             h.update(open(os.path.join(DECKS, subject, name), 'rb').read())
@@ -487,10 +486,9 @@ def refs_hash(subject):
     does."""
     import hashlib
     cards = shipped_cards(subject)
-    # English is assembled by a reviewed-card overlay plus a generated
-    # manifest, so display order is intentionally different from manifest
-    # order. Coverage identity is the stable id/ref pair, not deck sorting.
-    if subject == 'english':
+    # Data-driven language decks may order their runtime cards independently
+    # from the manifest. Coverage identity is the stable id/ref pair.
+    if subject in ('english', 'irish'):
         cards = sorted(cards)
     text = '\n'.join(f'{cid}\t{ref}' for cid, ref in cards)
     return hashlib.sha256(text.encode('utf-8')).hexdigest()[:16]

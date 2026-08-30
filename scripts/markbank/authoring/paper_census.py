@@ -65,6 +65,10 @@ SUBJECTS = {
     # generic leaf parser. `english_census.py` is its paper-only denominator;
     # this entry keeps it inside every `--all` coverage run.
     'english': {'mode': 'english'},
+    # Irish's selectable units cross listening halves, composition choices and
+    # holistic literature options. irish_cards.py reads all twenty papers and
+    # emits the dedicated, count-pinned census used by the generic ratchet.
+    'irish': {'mode': 'irish'},
     'business': {'mode': 'sections'},
     'home-economics': {'mode': 'sections'},
     # Two booklets: 038 carries Section A (short answer, attempt any nine) and
@@ -469,6 +473,28 @@ def census_sections(subject, year, level):
 
 def census_subject(subject):
     cfg = SUBJECTS.get(subject, {'mode': 'merged'})
+    if cfg['mode'] == 'irish':
+        path = os.path.join(ROOT, 'scripts', 'markbank', 'authored', 'irish-census.json')
+        payload = json.load(open(path, encoding='utf-8'))
+        papers = []
+        for source in payload['papers']:
+            asks = [ask for ask in payload['asks']
+                    if ask['year'] == source['year']
+                    and ask['level'] == source['level']
+                    and ask['paper'] == source['paper']]
+            papers.append({
+                'year': source['year'], 'level': source['level'],
+                'paper': f"Paper {source['paper']}",
+                'leafCount': len(asks),
+                'leaves': [{
+                    'key': [ask['id']], 'label': ask['questionRef'],
+                    'text': '', 'status': ask['status'],
+                } for ask in asks],
+                'marksSum': None, 'marksQuestions': 0, 'flags': [],
+            })
+        if payload.get('cardUnitCount') != sum(p['leafCount'] for p in papers):
+            raise AssertionError('Irish authored census count is stale')
+        return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}
     if cfg['mode'] == 'english':
         # Import lazily so the ordinary census remains independent of PyMuPDF
         # until English is actually requested.

@@ -38,5 +38,9 @@
  "english": {
   "higher": 210,
   "ordinary": 450
+ },
+ "irish": {
+  "higher": 215,
+  "ordinary": 185
  }
 }

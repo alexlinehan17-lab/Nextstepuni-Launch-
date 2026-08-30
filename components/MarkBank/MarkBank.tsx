@@ -498,7 +498,8 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
   // corpus", not "unfinished". Showing dozens of disabled poets and roll-up
   // categories made a complete subject look half-built and buried the useful
   // choices on mobile.
-  const visibleStrands = subjectId === 'english'
+  const completePaperCorpus = subjectId === 'english' || subjectId === 'irish';
+  const visibleStrands = completePaperCorpus
     ? strands
       .map(strand => ({
         ...strand,
@@ -645,7 +646,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
                 <p style={{ margin: '20px 0 0', font: `400 11.5px/1.5 ${SANS}`, color: LABEL }}>
                   {cards.length} questions from the {examYears} Leaving Certificate papers,
                   each marked against the real State Examinations Commission scheme.
-                  {subjectId === 'english'
+                  {completePaperCorpus
                     ? <> Every selectable response is included across {coveredTopics} examined syllabus topics.</>
                     : <> Coverage currently spans {coveredTopics} of {totalTopics} syllabus topics.</>}
                 </p>

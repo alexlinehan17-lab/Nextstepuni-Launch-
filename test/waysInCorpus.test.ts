@@ -20,6 +20,8 @@ import { CARDS as economicsHigher } from '@/components/MarkBank/cards/economics/
 import { CARDS as economicsOrdinary } from '@/components/MarkBank/cards/economics/ordinary';
 import { CARDS as englishHigher } from '@/components/MarkBank/cards/english/higher';
 import { CARDS as englishOrdinary } from '@/components/MarkBank/cards/english/ordinary';
+import { CARDS as irishHigher } from '@/components/MarkBank/cards/irish/higher';
+import { CARDS as irishOrdinary } from '@/components/MarkBank/cards/irish/ordinary';
 import { CARDS as homeEconomicsHigher } from '@/components/MarkBank/cards/home-economics/higher';
 import { CARDS as homeEconomicsOrdinary } from '@/components/MarkBank/cards/home-economics/ordinary';
 import { CARDS as mathsHigher } from '@/components/MarkBank/cards/maths/higher';
@@ -41,6 +43,7 @@ const cards = [
   ...constructionHigher, ...constructionOrdinary,
   ...economicsHigher, ...economicsOrdinary,
   ...englishHigher, ...englishOrdinary,
+  ...irishHigher, ...irishOrdinary,
   ...homeEconomicsHigher, ...homeEconomicsOrdinary,
   ...mathsHigher, ...mathsOrdinary,
   ...physicsHigher, ...physicsOrdinary,
@@ -96,6 +99,34 @@ describe('Ways In across the Mark Bank corpus', () => {
       coverage,
       missing.slice(0, 30).map(card => `${card.id}: ${card.questionText}`).join('\n'),
     ).toBeGreaterThanOrEqual(0.9);
+  });
+
+  test('understands Gaeilge instructions and interrogatives without translating the paper', () => {
+    const expectedCommands: Record<string, string[]> = {
+      'irish-2021-hl-p1-listening-a-f1': ['cad atá', 'cén', 'scríobh síos'],
+      'irish-2021-hl-p2-prose-2a-a': ['déan plé'],
+    };
+
+    for (const [cardId, expected] of Object.entries(expectedCommands)) {
+      const card = cards.find(candidate => candidate.id === cardId);
+      expect(card, cardId).toBeDefined();
+      const model = buildQuestionModel(waysInSourceFromMarkBank(card!, card!.subjectId));
+      expect(model.exactText, cardId).toBe(card!.questionText);
+      expect(model.commands.map(command => command.surface.toLowerCase()), cardId).toEqual(expected);
+    }
+
+    const countedCard = cards.find(card => card.id === 'irish-2023-hl-p2-prose-2a-a');
+    expect(countedCard).toBeDefined();
+    const countedModel = buildQuestionModel(
+      waysInSourceFromMarkBank(countedCard!, countedCard!.subjectId),
+    );
+    expect(countedModel.commands.map(command => command.surface.toLowerCase())).toEqual(['déan plé']);
+    expect(countedModel.planShape).toMatchObject({
+      count: 2,
+      basis: 'printed',
+      structure: 'count-phrase',
+      evidence: 'dá thréith',
+    });
   });
 
   test('honours every explicit choice count before counting its labelled options', () => {

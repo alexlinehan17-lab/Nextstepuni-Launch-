@@ -33,6 +33,8 @@ import { CARDS as CONS_HIGHER } from '../components/MarkBank/cards/construction-
 import { CARDS as CONS_ORDINARY } from '../components/MarkBank/cards/construction-studies/ordinary';
 import { CARDS as ENGLISH_HIGHER } from '../components/MarkBank/cards/english/higher';
 import { CARDS as ENGLISH_ORDINARY } from '../components/MarkBank/cards/english/ordinary';
+import { CARDS as IRISH_HIGHER } from '../components/MarkBank/cards/irish/higher';
+import { CARDS as IRISH_ORDINARY } from '../components/MarkBank/cards/irish/ordinary';
 
 const decks = [
   ['biology:higher', BIO_HIGHER, 673, '45f278ef15f8d35a8a4393a0e8d01d7e5484e73a881844880dc090daeb9ce836'],
@@ -370,6 +372,11 @@ const decks = [
    * 205 cards open the real paper passage or poem in the source reader. */
   ['english:higher', ENGLISH_HIGHER, 210, '231477c3f869811a39610398ed61ff14a4f3e5f087ebaa053a5d1b8daabc3df0'],
   ['english:ordinary', ENGLISH_ORDINARY, 450, '002bc88c4783ace7725b9f0564d395f56d4477178df52045d4bb174941e2bb7e'],
+  /* 2026-08-30: complete Irish written-paper launch. All 400 selectable
+   * responses across 2021–2025 Higher and Ordinary are present, including
+   * listening audio and the real PDF pages for passages and printed poems. */
+  ['irish:higher', IRISH_HIGHER, 215, '47cc840774127e9368d60a0965951e7fc39bd3a2a02c1d9fddd11738cc18255b'],
+  ['irish:ordinary', IRISH_ORDINARY, 185, '34e18ac058529e14ac0337a030264ab74329f72dabdd0dee8d9b912107dd343c'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -384,6 +391,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(8110);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(8510);
   });
 });
