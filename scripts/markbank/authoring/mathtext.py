@@ -282,8 +282,10 @@ def words(page):
     return out
 
 
-def fractions(page, cut=300):
+def fractions(page, cut=None):
     """[(x0, top, bottom, text)] -- each stacked fraction read back into a line."""
+    if cut is None:
+        cut = reader_cut(page)
     found = [w for w in words(page) if w[4].strip()]
     out, band = [], []
     for bar in sorted(_bars(page), key=lambda r: (r.y0, r.x0)) + [None]:
@@ -358,7 +360,65 @@ def _splice(words, band, cut=300):
             spacing(re.sub(r'\s+', ' ', text).strip()))
 
 
-def placed(page, cut=300):
+_CUTCACHE = {}
+DEFAULT_CUT = 300
+
+
+def column_cut(page):
+    """Where THIS page divides Model Solution from Marking Notes.
+
+    The split was a constant 300. It is not: across the ten schemes the
+    "Marking Notes" header sits anywhere from x=276 to x=369, and 90 of the 429
+    pages that print one are more than 40 points from 300. Two things go wrong
+    when the constant is used instead.
+
+    Twelve pages print the header LEFT of 300, so it lands in the solution
+    column, the reader finds no "Marking Notes" on the right, and skips the
+    whole page -- every part on it goes unmarked. And on the pages whose header
+    sits well right of 300, the solution column's own text from 300 to the real
+    boundary is filed as notes: 2021 HL Paper 1 Q3(a)'s Low Partial Credit came
+    back as "Low * Partial xz = Credit:/2v2, or similar Mid Partial Credit:".
+
+    So take the boundary from the page: a little left of its own header.
+    """
+    key = (id(page.parent), page.number)
+    if key in _CUTCACHE:
+        return _CUTCACHE[key]
+    cut = DEFAULT_CUT
+    for b in page.get_text('dict')['blocks']:
+        for ln in b.get('lines', []):
+            spans = ln.get('spans') or []
+            t = ' '.join(sp['text'] for sp in spans).strip()
+            if t.startswith('Marking Notes'):
+                cut = min(sp['bbox'][0] for sp in spans) - 12
+                break
+        else:
+            continue
+        break
+    _CUTCACHE[key] = cut
+    return cut
+
+
+def reader_cut(page):
+    """The boundary to READ the page's two columns at -- never right of 300.
+
+    column_cut() gives the page's own header position, which is what the
+    CROPPER wants: it bounds a picture, and a crop that stops short slices the
+    solution in half. The reader wants something weaker, because it classifies
+    a LINE by that line's smallest x and the extractor sometimes merges the two
+    columns into one line: on 2022 HL scheme page 36 the notes' "Scale 5C
+    (0,2,3,5)" arrives glued to the tail of the solution beside it, so the line
+    starts at x=328 and a cut at 340 files the whole thing as solution. The
+    scale line is how a unit is found at all, so Q1(b) simply disappeared.
+
+    Moving the boundary LEFT is safe -- it only rescues pages whose notes
+    column starts before 300, which is the twelve pages that were being skipped
+    outright. Moving it RIGHT risks losing a unit. So only ever move it left.
+    """
+    return min(column_cut(page), DEFAULT_CUT)
+
+
+def placed(page, cut=None):
     """([(y, text)] left, [(y, text)] right) — columns WITH their positions.
 
     A Maths scheme page is a table, and one page frequently holds several
@@ -367,6 +427,8 @@ def placed(page, cut=300):
     part and loses the rest, so the position is kept and the caller segments on
     it.
     """
+    if cut is None:
+        cut = reader_cut(page)
     left, right = [], []
     spans = fractions(page, cut)
     for x0, top, bottom, text in spans:
@@ -393,7 +455,7 @@ def placed(page, cut=300):
     return sorted(left), sorted(right)
 
 
-def columns(page, cut=300):
+def columns(page, cut=None):
     """(model solution lines, marking-notes lines) for one scheme page."""
     left, right = placed(page, cut)
     return ([t for _, t in left], [t for _, t in right])
@@ -561,11 +623,20 @@ def clean_like(paths, fragment):
     return out
 
 
-def _clean_like(paths, fragment):
+def _locate(paths, fragment):
+    """The repaired form of `fragment`, or None if the document has no run of
+    rows that spells it.
+
+    Split out of _clean_like and deliberately NON-RECURSIVE. The fallbacks
+    below used to call _clean_like, which tries its own fallbacks, which call
+    it again: each level dropped a token or split a sentence and then branched
+    four ways, so one paper spent two hours on a single question. The fallbacks
+    call THIS instead, so the search runs once per candidate and stops.
+    """
     rows = clean_document(paths)
     want = _squash(demangle(fragment))
     if len(want) < 12:
-        return demangle(fragment)
+        return None
     hay, owner = _haystack(paths, rows)
     # The floor has to be below len(want), or the range is EMPTY and the match
     # never runs: a 34-character fragment against a floor of 40 gave range(34,
@@ -587,15 +658,34 @@ def _clean_like(paths, fragment):
         else:
             hi = mid - 1
     if at < 0:
+        return None
+    end = min(at + len(want), len(owner)) - 1
+    lines = rows[owner[at]:owner[end] + 1]
+    kept = [c for c, _ in lines if not MARKER_ONLY.match(c.strip())]
+    return spacing(' '.join(' '.join(kept or [c for c, _ in lines]).split()))
+
+
+def _clean_like(paths, fragment):
+    hit = _locate(paths, fragment)
+    if hit is not None:
+        return hit
+    if True:
         # The whole fragment is not one contiguous run of rows -- a large
         # bracket or a part marker splits it. Repair it a SENTENCE at a time
         # before giving up: each sentence usually does sit on rows of its own,
         # and the plain fallback below loses every exponent in the line.
         parts = [p for p in re.split(r'(?<=[.?])\s+', fragment) if p.strip()]
         if len(parts) > 1:
-            done = [_clean_like(paths, p) for p in parts]
-            if any(_squash(a) != _squash(b) for a, b in zip(done, parts)):
-                return spacing(' '.join(' '.join(done).split()))
+            done = [(_locate(paths, p) or demangle(p)) for p in parts]
+            joined = spacing(' '.join(' '.join(done).split()))
+            # The repair must not GROW the question. A sentence the paper
+            # prints twice -- once in the ask and again over the answer space --
+            # matches the second copy too, and 2025 HL Paper 2 Q6(c) came back
+            # with its Cosine Rule sentence stated a second time, mangled
+            # ("the value/^√ⁿⁿ of tan ∠CCCCCC"). Six questions grew that way.
+            if (any(_squash(a) != _squash(b) for a, b in zip(done, parts))
+                    and len(_squash(joined)) <= len(_squash(demangle(fragment))) + 3):
+                return joined
         # 2022 HL Paper 1 Q3(b) prints "(√3 - i)" and its exponent 9 on
         # separate rows, and the exponent comes out FIRST, so no prefix of the
         # fragment is contiguous in the document. Repair the tail that is: it
@@ -612,7 +702,9 @@ def _clean_like(paths, fragment):
             tail = ' '.join(toks[drop:])
             if len(_squash(demangle(tail))) < 30:
                 break
-            fixed = _clean_like(paths, tail)
+            fixed = _locate(paths, tail)
+            if fixed is None:
+                continue
             sq = _squash(demangle(tail))
             # The repaired row may CARRY a character the demangled tail lost --
             # the exponent 9 is a glyph squash drops -- so the tail is required

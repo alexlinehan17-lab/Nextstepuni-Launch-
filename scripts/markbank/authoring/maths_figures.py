@@ -107,11 +107,18 @@ def crop(year, level, write=False):
         # a guessed offset: too tight sliced "[for all x in the domain of g(x)]"
         # in half, too loose let the first letters of the notes bleed in down
         # the right-hand edge.
+        # Measured from THIS page's own notes column, not the 300 constant.
+        # The solution's own lines can start past 300 -- a centred "OR", an
+        # indented expression -- and counting one of those as the notes column
+        # pulled the right edge in to 296 on 2022 HL page 35, slicing
+        # "P(O).P(U) = P(O n U):" in half. mathtext.column_cut reads the
+        # boundary off the page's "Marking Notes" header.
+        column = mathtext.column_cut(page) + 12
         notes_x = [min(sp['bbox'][0] for sp in ln['spans'])
                    for b in page.get_text('dict')['blocks'] for ln in b.get('lines', [])
-                   if min(sp['bbox'][0] for sp in ln['spans']) >= COLUMN
+                   if min(sp['bbox'][0] for sp in ln['spans']) >= column
                    and top <= min(sp['bbox'][1] for sp in ln['spans']) <= bottom]
-        right_edge = (min(notes_x) - 6) if notes_x else COLUMN - 4
+        right_edge = (min(notes_x) - 6) if notes_x else column - 4
         rect = pymupdf.Rect(30, top, right_edge, bottom)
         name = f'maths-{year}-{level.upper()}-paper-p{page_no:03d}-i{seen[page_no]}'
         seen[page_no] += 1
