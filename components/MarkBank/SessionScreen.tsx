@@ -32,7 +32,7 @@
  * share a surface. `test/markBankSession.test.tsx` asserts it.
  */
 
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { splitForEmphasis } from './questionEmphasis';
 import { createPortal } from 'react-dom';
 import { AnimatePresence, MotionDiv, MotionSpan, useReducedMotion } from '../Motion';
@@ -767,6 +767,30 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
 }) => {
   const reduced = useReducedMotion() ?? false;
   const wide = useTwoPane();
+  /* The scroller has to reserve exactly as much room as the action rail takes,
+     and the rail's height is not a constant: it carries the tariff line, and
+     after the reveal a two-line prompt above three buttons, and a whisper
+     stacks on top of that. A fixed 112px reserve was short of the tallest of
+     those, so the foot of a tall figure — a Maths marking scheme is a full
+     page of the SEC's own print — was left sitting behind the rail with no way
+     to scroll to it. Measured, so it cannot drift again when the rail changes. */
+  const [railH, setRailH] = useState(112);
+  const railRef = useRef<HTMLDivElement | null>(null);
+  /* Measured after EVERY render, not from a ResizeObserver. The rail only
+     changes height when this component re-renders -- the reveal puts a
+     two-line prompt and three buttons where one button was -- so a render-time
+     measurement catches every change that can happen. It also works where the
+     observer does not: RO was not delivering callbacks in this page at all,
+     not even the one it owes on observe(), so the reserve stayed at the rail's
+     pre-reveal 78px while the rail stood at 155 and the foot of a tall figure
+     sat behind it with no way to scroll to it. Guarded on a real change, or
+     the setState would re-render forever. */
+  useLayoutEffect(() => {
+    const el = railRef.current;
+    if (!el) return;
+    const h = Math.ceil(el.getBoundingClientRect().height);
+    if (h && h !== railH) setRailH(h);
+  });
   const [queue, setQueue] = useState(() => cards.map(c => c.id));
   const [position, setPosition] = useState(0);
   const [revealed, setRevealed] = useState(false);
@@ -774,6 +798,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const [picks, setPicks] = useState<Record<string, number[]>>({});
   const [results, setResults] = useState<SessionCardResult[]>([]);
   const [whisper, setWhisper] = useState<string | null>(null);
+
   const [confirmExit, setConfirmExit] = useState(false);
   const [waysInOpen, setWaysInOpen] = useState(false);
   const [waysInFocusMode, setWaysInFocusMode] = useState(false);
@@ -1005,7 +1030,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
       position: 'fixed', inset: 0, zIndex: 120,
       background: PAPER, fontFamily: SANS,
       overflowY: 'auto', overscrollBehavior: 'contain',
-      paddingBottom: 'calc(112px + var(--sab, 0px))',
+      paddingBottom: `calc(${railH + 20}px + var(--sab, 0px))`,
     }}>
       {/* Session bar. Full-bleed, so the work surface below reads as contained
           by a declared edge rather than adrift in a wide window. */}
@@ -1434,7 +1459,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
           The whisper STACKS above the action rather than replacing it — an
           earlier arrangement suppressed the reveal button for the 1.1s the
           whisper was on screen, so the next card briefly had no way in. */}
-      <div className="mb-session-rail" style={{
+      <div className="mb-session-rail" ref={railRef} style={{
         position: 'fixed', left: 0, right: 0, bottom: 0, zIndex: 2,
         background: '#FFFFFF', borderTop: `1px solid ${HAIRLINE_2}`,
         boxShadow: '0 -10px 30px rgba(38, 32, 27, .045)',
