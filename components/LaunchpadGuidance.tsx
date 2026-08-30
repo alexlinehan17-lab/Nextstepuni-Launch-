@@ -92,19 +92,19 @@ const LaunchpadGuidance: React.FC<LaunchpadGuidanceProps> = ({
 
   return (
     <>
-      <section aria-labelledby="launchpad-help-heading" className="mb-8">
-        <div className="mb-4">
+      <section aria-labelledby="launchpad-help-heading" className="mb-6 sm:mb-8">
+        <div className="mb-3 sm:mb-4">
           <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--ink-muted)]">Not sure where to begin?</p>
-          <h2 id="launchpad-help-heading" className="mt-1 text-xl font-semibold text-[var(--ink-primary)]">Find your way around the Launchpad.</h2>
+          <h2 id="launchpad-help-heading" className="mt-1 text-lg font-semibold text-[var(--ink-primary)] sm:text-xl">Find your way around the Launchpad.</h2>
         </div>
 
-        <div className="grid gap-3 sm:grid-cols-2">
+        <div className="grid auto-cols-[minmax(270px,86vw)] grid-flow-col gap-3 overflow-x-auto snap-x snap-mandatory pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:grid-flow-row sm:grid-cols-2 sm:overflow-visible sm:pb-0">
           <button
             type="button"
             onClick={() => open('explain')}
-            className="group flex min-h-[116px] items-center gap-4 rounded-2xl border-[1.5px] border-[var(--outline-strong)] bg-[var(--surface-paper)] p-5 text-left transition-all hover:-translate-y-0.5 hover:shadow-[3px_3px_0_0_var(--outline-strong)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.45)]"
+            className="group flex min-h-[96px] snap-start items-center gap-3 rounded-2xl border-[1.5px] border-[var(--outline-strong)] bg-[var(--surface-paper)] p-4 text-left transition-all hover:-translate-y-0.5 hover:shadow-[3px_3px_0_0_var(--outline-strong)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.45)] sm:min-h-[116px] sm:gap-4 sm:p-5"
           >
-            <ToolIconBlob toolId="meet-tools" size={72} />
+            <ToolIconBlob toolId="meet-tools" size={56} />
             <span className="min-w-0 flex-1">
               <span className="block font-semibold text-[var(--ink-primary)]">Meet the tools</span>
               <span className="mt-1 block text-xs leading-relaxed text-[var(--ink-secondary)]">A quick, plain-English guide to what each tool is for.</span>
@@ -115,9 +115,9 @@ const LaunchpadGuidance: React.FC<LaunchpadGuidanceProps> = ({
           <button
             type="button"
             onClick={() => open('recommend')}
-            className="group flex min-h-[116px] items-center gap-4 rounded-2xl border-[1.5px] border-[var(--outline-strong)] bg-[var(--surface-paper)] p-5 text-left transition-all hover:-translate-y-0.5 hover:shadow-[3px_3px_0_0_var(--outline-strong)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.45)]"
+            className="group flex min-h-[96px] snap-start items-center gap-3 rounded-2xl border-[1.5px] border-[var(--outline-strong)] bg-[var(--surface-paper)] p-4 text-left transition-all hover:-translate-y-0.5 hover:shadow-[3px_3px_0_0_var(--outline-strong)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(var(--accent),0.45)] sm:min-h-[116px] sm:gap-4 sm:p-5"
           >
-            <ToolIconBlob toolId="recommend-tool" size={72} />
+            <ToolIconBlob toolId="recommend-tool" size={56} />
             <span className="min-w-0 flex-1">
               <span className="block font-semibold text-[var(--ink-primary)]">Recommend a tool</span>
               <span className="mt-1 block text-xs leading-relaxed text-[var(--ink-secondary)]">Answer two quick questions and get one clear starting point.</span>
@@ -166,7 +166,7 @@ const LaunchpadGuidance: React.FC<LaunchpadGuidanceProps> = ({
                           : 'What would help right now?'}
                   </h2>
                 </div>
-                <button ref={closeButtonRef} type="button" onClick={close} aria-label="Close Launchpad guide" className="flex h-10 w-10 items-center justify-center rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-paper)] text-[var(--ink-secondary)]">
+              <button ref={closeButtonRef} type="button" onClick={close} aria-label="Close Launchpad guide" className="flex h-11 w-11 items-center justify-center rounded-xl border border-[var(--outline-soft)] bg-[var(--surface-paper)] text-[var(--ink-secondary)]">
                   <X size={18} />
                 </button>
               </header>
@@ -189,9 +189,9 @@ const LaunchpadGuidance: React.FC<LaunchpadGuidanceProps> = ({
 
                   <div className="flex min-h-[560px] flex-col p-6 sm:p-8">
                     <div className="mb-5 flex items-center justify-between md:hidden">
-                      <button type="button" onClick={() => setToolIndex(index => Math.max(0, index - 1))} disabled={toolIndex === 0} aria-label="Previous tool" className="flex h-9 w-9 items-center justify-center rounded-lg border border-[var(--outline-soft)] disabled:opacity-30"><ChevronLeft size={18} /></button>
+                      <button type="button" onClick={() => setToolIndex(index => Math.max(0, index - 1))} disabled={toolIndex === 0} aria-label="Previous tool" className="flex h-11 w-11 items-center justify-center rounded-xl border border-[var(--outline-soft)] disabled:opacity-30"><ChevronLeft size={18} /></button>
                       <span className="text-xs tabular-nums text-[var(--ink-muted)]">{toolIndex + 1} of {tools.length}</span>
-                      <button type="button" onClick={() => setToolIndex(index => Math.min(tools.length - 1, index + 1))} disabled={toolIndex === tools.length - 1} aria-label="Next tool" className="flex h-9 w-9 items-center justify-center rounded-lg border border-[var(--outline-soft)] disabled:opacity-30"><ChevronRight size={18} /></button>
+                      <button type="button" onClick={() => setToolIndex(index => Math.min(tools.length - 1, index + 1))} disabled={toolIndex === tools.length - 1} aria-label="Next tool" className="flex h-11 w-11 items-center justify-center rounded-xl border border-[var(--outline-soft)] disabled:opacity-30"><ChevronRight size={18} /></button>
                     </div>
 
                     <div className="flex items-start gap-5">

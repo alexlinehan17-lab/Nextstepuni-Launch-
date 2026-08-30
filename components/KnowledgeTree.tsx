@@ -75,11 +75,13 @@ interface KnowledgeTreeProps {
   uid?: string;
   onOpenSiteGuide?: () => void;
   onOpenFeedback?: () => void;
+  onOpenMobileProfile?: () => void;
+  hasUnreadNotifications?: boolean;
 }
 
 const noop = () => {};
 
-export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: _onSelectCategory, onGoToModules, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, onGoToInsights: _onGoToInsights, onGoToAccreditation, onGoToYearPlans, allCourses, onSelectModule, categoryTitles: _categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes: _unlockedThemes = [], completedCount, totalCount, streak, pointsBalance, northStar, studentProfile, timetableCompletions, smartRecommendation, questState, onClaimQuestReward, onRecommendationAction, onOpenTool, uid, onOpenSiteGuide = noop, onOpenFeedback = noop }) => {
+export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: _onSelectCategory, onGoToModules, onGoToInnovationZone, onGoToDashboard, onGoToLearningPaths, onGoToJourney, onGoToStudy, onGoToInsights: _onGoToInsights, onGoToAccreditation, onGoToYearPlans, allCourses, onSelectModule, categoryTitles: _categoryTitles, userProgress, userName, userAvatarSeed, onLogout, onOpenSettings, onOpenPassport, onChangeSubjects, settings, updateSetting, unlockedThemes: _unlockedThemes = [], completedCount, totalCount, streak, pointsBalance, northStar, studentProfile, timetableCompletions, smartRecommendation, questState, onClaimQuestReward, onRecommendationAction, onOpenTool, uid, onOpenSiteGuide = noop, onOpenFeedback = noop, onOpenMobileProfile = noop, hasUnreadNotifications = false }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const reduceMotion = useReducedMotion();
   // The former inline home panel has moved into the full student dashboard.
@@ -435,29 +437,44 @@ export const KnowledgeTree: React.FC<KnowledgeTreeProps> = ({ onSelectCategory: 
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-          className="mb-6"
+          className="mb-6 flex items-start justify-between gap-4"
         >
-          <p className="text-[12px] font-semibold uppercase tracking-[0.2em] mb-3" style={{ color: COLORS.accent }}>
-            Learning Lab
-          </p>
-          <h1 className="font-serif tracking-tight leading-tight font-bold text-[#1A1A1A] dark:text-white" style={{ fontSize: 'clamp(28px, 5vw, 36px)' }}>
-            {(() => { const h = new Date().getHours(); const firstName = userName?.split(' ')[0] || ''; const name = firstName ? `, ${firstName}` : ''; return h < 12 ? `Good morning${name}.` : h < 18 ? `Good afternoon${name}.` : `Good evening${name}.`; })()}
-          </h1>
-          <p className="mt-2 text-[#78716C] dark:text-zinc-400" style={{ fontSize: 15 }}>
-            {(() => {
-              const h = new Date().getHours();
-              const completed = allCourses.filter(c => { const p = userProgress[c.id]; return p && p.unlockedSection >= c.sectionsCount; }).length;
-              const inProgress = allCourses.filter(c => { const p = userProgress[c.id]; return p && p.unlockedSection > 0 && p.unlockedSection < c.sectionsCount; }).length;
-              const allBlocksDone = todayBlocks.length > 0 && todayBlocks.every((_b: any, i: number) => todayCompletions.includes(`block-${i}`));
-              if (completed === allCourses.length) return 'You\'ve completed the full curriculum. Remarkable.';
-              if (h >= 18 && allBlocksDone) return 'All done for today. Quick review before tomorrow?';
-              if (h >= 18) return 'Wind down with a final session or review your progress.';
-              if (h < 12 && studentProfile) return 'Here\'s your plan for today.';
-              if (completed > 0) return `You've completed ${completed} of ${allCourses.length} modules.`;
-              if (inProgress > 0) return `You have ${inProgress} module${inProgress !== 1 ? 's' : ''} in progress.`;
-              return 'Pick a module to start your journey.';
-            })()}
-          </p>
+          <div className="min-w-0">
+            <p className="text-[12px] font-semibold uppercase tracking-[0.2em] mb-3" style={{ color: COLORS.accent }}>
+              Learning Lab
+            </p>
+            <h1 className="font-serif tracking-tight leading-tight font-bold text-[#1A1A1A] dark:text-white" style={{ fontSize: 'clamp(28px, 5vw, 36px)' }}>
+              {(() => { const h = new Date().getHours(); const firstName = userName?.split(' ')[0] || ''; const name = firstName ? `, ${firstName}` : ''; return h < 12 ? `Good morning${name}.` : h < 18 ? `Good afternoon${name}.` : `Good evening${name}.`; })()}
+            </h1>
+            <p className="mt-2 text-[#78716C] dark:text-zinc-400" style={{ fontSize: 15 }}>
+              {(() => {
+                const h = new Date().getHours();
+                const completed = allCourses.filter(c => { const p = userProgress[c.id]; return p && p.unlockedSection >= c.sectionsCount; }).length;
+                const inProgress = allCourses.filter(c => { const p = userProgress[c.id]; return p && p.unlockedSection > 0 && p.unlockedSection < c.sectionsCount; }).length;
+                const allBlocksDone = todayBlocks.length > 0 && todayBlocks.every((_b: any, i: number) => todayCompletions.includes(`block-${i}`));
+                if (completed === allCourses.length) return 'You\'ve completed the full curriculum. Remarkable.';
+                if (h >= 18 && allBlocksDone) return 'All done for today. Quick review before tomorrow?';
+                if (h >= 18) return 'Wind down with a final session or review your progress.';
+                if (h < 12 && studentProfile) return 'Here\'s your plan for today.';
+                if (completed > 0) return `You've completed ${completed} of ${allCourses.length} modules.`;
+                if (inProgress > 0) return `You have ${inProgress} module${inProgress !== 1 ? 's' : ''} in progress.`;
+                return 'Pick a module to start your journey.';
+              })()}
+            </p>
+          </div>
+          <button
+            type="button"
+            onClick={onOpenMobileProfile}
+            aria-label="Open profile and settings"
+            className="relative mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-full border-[1.5px] border-[#383838] bg-white shadow-[2px_2px_0_0_#383838] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none md:hidden dark:border-zinc-600 dark:bg-zinc-800"
+          >
+            {userAvatarSeed ? (
+              <Avatar seed={userAvatarSeed} alt="" className="h-full w-full object-cover" />
+            ) : (
+              <User size={18} strokeWidth={1.6} className="text-zinc-500" />
+            )}
+            {hasUnreadNotifications && <span className="absolute right-0.5 top-0.5 h-2.5 w-2.5 rounded-full border-2 border-white bg-rose-500 dark:border-zinc-800" />}
+          </button>
         </MotionDiv>
 
         {/* Pick up where you left off — deep-link back to the last module/tool */}

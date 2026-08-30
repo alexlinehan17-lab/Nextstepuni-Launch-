@@ -214,6 +214,8 @@ export interface AppRouterProps {
   setUnlockedCardStyles: (styles: string[]) => void;
   onOpenSiteGuide: () => void;
   onOpenFeedback: () => void;
+  onOpenMobileProfile: () => void;
+  hasUnreadNotifications: boolean;
 }
 
 /**
@@ -267,7 +269,7 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
     setUnlockedAvatarSeeds,
     unlockedThemes, setUnlockedThemes,
     setUnlockedCardStyles,
-    onOpenSiteGuide, onOpenFeedback,
+    onOpenSiteGuide, onOpenFeedback, onOpenMobileProfile, hasUnreadNotifications,
   } = props;
 
   // Navigation handlers from context
@@ -657,6 +659,8 @@ const AppRouter: React.FC<AppRouterProps> = (props) => {
       uid={user?.uid}
       onOpenSiteGuide={onOpenSiteGuide}
       onOpenFeedback={onOpenFeedback}
+      onOpenMobileProfile={onOpenMobileProfile}
+      hasUnreadNotifications={hasUnreadNotifications}
     />;
   }
 

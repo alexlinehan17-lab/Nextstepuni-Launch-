@@ -6,7 +6,7 @@
 
 import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { createPortal } from 'react-dom';
-import { Home, Rocket, ChartNoAxesCombined, Timer, Mountain, User } from 'lucide-react';
+import { Home, Compass, ChartNoAxesCombined, Timer, Mountain } from 'lucide-react';
 import { UserProfile, MobileProfileSheet } from './components/UserProfileMenu';
 import { type CategoryType } from './components/KnowledgeTree';
 import AppRouter from './components/AppRouter';
@@ -69,18 +69,15 @@ interface MobileBottomNavProps {
   onGoToStudy: () => void;
   onGoToJourney: () => void;
   onGoToInnovationZone: () => void;
-  onOpenProfile: () => void;
-  unreadNotifications?: number;
 }
 
-const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ viewState, onGoHome, onGoToProgress, onGoToStudy, onGoToJourney, onGoToInnovationZone, onOpenProfile, unreadNotifications = 0 }) => {
+const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ viewState, onGoHome, onGoToProgress, onGoToStudy, onGoToJourney, onGoToInnovationZone }) => {
   const tabs = [
     { id: 'tree', label: 'Home', icon: Home, action: onGoHome },
     { id: 'dashboard', label: 'Progress', icon: ChartNoAxesCombined, action: onGoToProgress },
     { id: 'study-session', label: 'Study', icon: Timer, action: onGoToStudy },
     { id: 'my-journey', label: 'Journey', icon: Mountain, action: onGoToJourney },
-    { id: 'innovation-zone', label: 'Launch', icon: Rocket, action: onGoToInnovationZone },
-    { id: 'profile', label: 'Profile', icon: User, action: onOpenProfile },
+    { id: 'innovation-zone', label: 'Launch', icon: Compass, action: onGoToInnovationZone },
   ];
 
   // Portaled to document.body so the nav stays viewport-anchored even when an
@@ -91,22 +88,19 @@ const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ viewState, onGoHome, 
       className="fixed bottom-0 left-0 right-0 z-[90] md:hidden bg-[#FAFBF6] dark:bg-zinc-900 border-t-[1.5px] border-[#383838] dark:border-zinc-700"
       style={{ paddingBottom: 'var(--sab, 0px)' }}
     >
-      <div className="flex items-center justify-around h-16">
+      <div className="mx-auto flex h-16 max-w-md items-center justify-around px-1">
         {tabs.map((tab) => {
           const isActive = tab.id === viewState || (tab.id === 'tree' && viewState === 'category');
           return (
             <button
               key={tab.id}
               onClick={tab.action}
-              className={`relative flex flex-col items-center justify-center gap-1 flex-1 h-full transition-colors focus-visible:outline-none ${isActive ? 'text-[#B94712] dark:text-[#FF9A64]' : 'text-zinc-500 dark:text-zinc-400'}`}
+              className={`relative flex h-full min-w-0 flex-1 flex-col items-center justify-center gap-0.5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[rgba(var(--accent),0.45)] ${isActive ? 'text-[#B94712] dark:text-[#FF9A64]' : 'text-zinc-500 dark:text-zinc-400'}`}
             >
-              <span className={`flex h-8 w-11 items-center justify-center rounded-xl border transition-colors ${isActive ? 'border-[#F26B1F] bg-[#FDEBDD]' : 'border-transparent'}`}>
+              <span className={`flex h-8 w-11 items-center justify-center rounded-xl border transition-colors ${isActive ? 'border-[#F26B1F] bg-[#FDEBDD] dark:border-orange-400 dark:bg-orange-950/60' : 'border-transparent'}`}>
                 <tab.icon size={20} strokeWidth={isActive ? 2 : 1.6} />
               </span>
-              <span className="text-[9px] font-semibold">{tab.label}</span>
-              {tab.id === 'profile' && unreadNotifications > 0 && (
-                <div className="absolute top-2 right-1/2 translate-x-3 w-2 h-2 rounded-full bg-rose-500" />
-              )}
+              <span className="text-[10px] font-semibold tracking-tight">{tab.label}</span>
             </button>
           );
         })}
@@ -986,6 +980,8 @@ const App: React.FC = () => {
     setUnlockedCardStyles,
     onOpenSiteGuide: () => setSiteGuideOpen(true),
     onOpenFeedback: () => setFeedbackOpen(true),
+    onOpenMobileProfile: () => setMobileProfileOpen(true),
+    hasUnreadNotifications: unreadNotificationCount > 0,
   };
 
   return (
@@ -1054,8 +1050,6 @@ const App: React.FC = () => {
           onGoToStudy={handleGoToStudy}
           onGoToJourney={handleGoToJourney}
           onGoToInnovationZone={handleGoToInnovationZone}
-          onOpenProfile={() => setMobileProfileOpen(true)}
-          unreadNotifications={unreadNotificationCount}
         />
       )}
 

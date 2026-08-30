@@ -86,7 +86,7 @@ const IslandShopDrawer: React.FC<IslandShopDrawerProps> = ({
               key={cat.key}
               onClick={() => setActiveCategory(cat.key)}
               style={{ flexShrink: 0, whiteSpace: 'nowrap' }}
-              className={`px-3 py-1.5 rounded-full text-xs font-semibold transition-colors relative ${
+              className={`relative min-h-11 rounded-full px-4 text-xs font-semibold transition-colors ${
                 activeCategory === cat.key
                   ? 'bg-[var(--accent-hex)] text-white'
                   : 'bg-zinc-200 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-300 dark:hover:bg-zinc-700'

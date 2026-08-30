@@ -223,24 +223,24 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
   // ── INTRO ─────────────────────────────────────────────────────
   if (phase === 'intro') {
     return (
-      <div className="w-full max-w-md mx-auto py-6 text-center">
-        <img src="/assets/tools/future-finder.png" alt="" draggable={false} className="w-44 h-44 md:w-52 md:h-52 mx-auto -mb-1 object-contain pointer-events-none select-none" />
-        <div className="inline-flex items-center gap-1.5 mb-3 px-3 py-1.5 rounded-full" style={{ backgroundColor: COLORS.accentTint }}>
+      <div className="mx-auto w-full max-w-md py-2 text-center sm:py-6">
+        <img src="/assets/tools/future-finder.png" alt="" draggable={false} className="mx-auto -mb-1 hidden h-44 w-44 select-none object-contain sm:block md:h-52 md:w-52" />
+        <div className="mb-3 inline-flex items-center gap-1.5 rounded-full px-3 py-1.5" style={{ backgroundColor: COLORS.accentTint }}>
           <Compass size={14} style={{ color: COLORS.accent }} />
           <span className="text-[10.5px] font-bold uppercase tracking-[0.14em]" style={{ color: COLORS.accentDarkText }}>Interests · RIASEC</span>
         </div>
-        <h2 className="font-serif text-[28px] md:text-[32px] font-semibold leading-[1.08] mb-3" style={{ color: '#1a1a1a' }}>Find courses that fit<br />who you are</h2>
-        <p className="text-[14.5px] leading-relaxed text-zinc-500 dark:text-zinc-400 max-w-sm mx-auto mb-6">Rate quick activities and we’ll rank routes using your <span className="font-semibold text-zinc-700 dark:text-zinc-200">interests, values and target-grade points</span>. Your interest match remains visible on every course.</p>
+        <h2 className="mb-2 font-serif text-[28px] font-semibold leading-[1.08] text-[#1A1A1A] dark:text-white md:text-[32px]">Find courses that fit<br />who you are</h2>
+        <p className="mx-auto mb-5 max-w-sm text-[14px] leading-relaxed text-zinc-500 dark:text-zinc-400 sm:mb-6 sm:text-[14.5px]">Rate quick activities and we’ll rank routes using your <span className="font-semibold text-zinc-700 dark:text-zinc-200">interests, values and target-grade points</span>. Your interest match remains visible on every course.</p>
 
         {/* length choice — chunky year-selector style buttons (a touch smaller) */}
-        <div className="grid grid-cols-2 gap-3 max-w-sm mx-auto mb-6">
+        <div className="mx-auto mb-5 grid max-w-sm grid-cols-2 gap-3 sm:mb-6">
           {(['full', 'quick'] as const).map((l) => {
             const selected = length === l;
             return (
               <button
                 key={l}
                 onClick={() => setLength(l)}
-                className={`flex flex-col items-center justify-center py-4 rounded-2xl border-2 border-[#1A1A1A] font-sans transition-all duration-150 hover:-translate-y-0.5 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0_0_#1A1A1A] hover:shadow-[5px_5px_0_0_#1A1A1A] active:shadow-[0px_0px_0_0_#1A1A1A] ${selected ? 'bg-[#F26B1F] text-[#FDF8F0]' : 'bg-[#FDF8F0] text-[#1A1A1A]'}`}
+                className={`flex min-h-[76px] flex-col items-center justify-center rounded-2xl border-2 border-[#1A1A1A] py-3 font-sans shadow-[4px_4px_0_0_#1A1A1A] transition-all duration-150 hover:-translate-y-0.5 hover:shadow-[5px_5px_0_0_#1A1A1A] active:translate-x-1 active:translate-y-1 active:shadow-[0px_0px_0_0_#1A1A1A] ${selected ? 'bg-[#F26B1F] text-[#FDF8F0]' : 'bg-[#FDF8F0] text-[#1A1A1A] dark:bg-zinc-900 dark:text-white'}`}
               >
                 <span className="text-xl font-bold leading-none">{l === 'full' ? 'Full' : 'Quick'}</span>
                 <span className="text-[11px] font-medium mt-1 opacity-80">{l === 'full' ? '72 taps · ~9 min' : '42 taps · ~5 min'}</span>
@@ -253,7 +253,7 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
           <PrimaryActionButton label="Start" onClick={() => { setIdx(0); setPhase('quiz'); }} icon={ArrowRight} />
         </div>
 
-        <p className="text-[12px] text-zinc-400 italic max-w-sm mx-auto mt-7">A snapshot of your interests right now — not a verdict. Best re-taken, and used alongside your guidance counsellor.</p>
+        <p className="mx-auto mt-5 max-w-sm text-[12px] italic text-zinc-400 sm:mt-7">A snapshot of your interests right now — not a verdict. Best re-taken, and used alongside your guidance counsellor.</p>
       </div>
     );
   }
@@ -268,20 +268,20 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
     return (
       <div className="w-full max-w-2xl mx-auto">
         <div className="flex items-center gap-3 mb-4">
-          <button onClick={() => (idx > 0 ? setIdx((i) => i - 1) : setPhase('intro'))} aria-label={idx > 0 ? 'Previous question' : 'Back to introduction'} className="text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200"><ArrowLeft size={18} /></button>
+          <button onClick={() => (idx > 0 ? setIdx((i) => i - 1) : setPhase('intro'))} aria-label={idx > 0 ? 'Previous question' : 'Back to introduction'} className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl text-zinc-400 hover:bg-zinc-100 hover:text-zinc-700 dark:hover:bg-zinc-800 dark:hover:text-zinc-200"><ArrowLeft size={18} /></button>
           <div className="flex-1 h-2 rounded-full bg-zinc-100 dark:bg-zinc-800 overflow-hidden"><div className="h-full rounded-full" style={{ width: `${pct}%`, backgroundColor: COLORS.accent, transition: 'width 0.45s cubic-bezier(0.22,1,0.36,1)' }} /></div>
           <span className="text-[12px] font-semibold text-zinc-400 shrink-0">{idx + 1}/{questions.length}</span>
         </div>
         <AnimatePresence mode="wait">
           <MotionDiv key={q.id} initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.2 }} className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 p-6 md:p-8 shadow-sm">
             <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-zinc-400 mb-2">{prompt}</p>
-            <p className="text-[22px] leading-tight font-semibold mb-7" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>{q.text}</p>
+            <p className="mb-7 text-[22px] font-semibold leading-tight text-[#1A1A1A] dark:text-white" style={{ fontFamily: "'Source Serif 4', serif" }}>{q.text}</p>
             <div className="space-y-2">
               {scale.map((label, i) => {
                 const val = i + 1;
                 const cur = (q.kind === 'interest' ? responses[q.id] : valueResponses[q.id]) === val;
                 return (
-                  <button key={val} onClick={() => answer(val)} className="w-full text-left rounded-xl border-2 px-4 py-3 text-[14px] font-medium transition-colors" style={cur ? { borderColor: COLORS.accent, backgroundColor: COLORS.accent, color: '#fff' } : { borderColor: '#E2E0DC', color: '#3a3530' }}>{label}</button>
+                  <button key={val} onClick={() => answer(val)} className="min-h-12 w-full rounded-xl border-2 px-4 py-3 text-left text-[14px] font-medium text-zinc-700 transition-colors dark:text-zinc-200" style={cur ? { borderColor: COLORS.accent, backgroundColor: COLORS.accent, color: '#fff' } : { borderColor: 'var(--outline-soft)' }}>{label}</button>
                 );
               })}
             </div>
@@ -313,7 +313,7 @@ const FutureFinderRevamped: React.FC<{ uid?: string; profile: StudentSubjectProf
       {/* profile read-back */}
       <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 p-6 mb-5 shadow-sm">
         <p className="text-[11px] font-bold uppercase tracking-[0.14em] mb-1" style={{ color: COLORS.accentDarkText }}>Your interest profile</p>
-        <h2 className="text-xl font-semibold mb-3" style={{ fontFamily: "'Source Serif 4', serif", color: '#1a1a1a' }}>You lean {topTypes.map((l, i) => <span key={l}>{i > 0 ? (i === topTypes.length - 1 ? ' & ' : ', ') : ''}<span style={{ color: COLORS.accent }}>{RIASEC_LABELS[l]}</span></span>)}</h2>
+        <h2 className="mb-3 text-xl font-semibold text-[#1A1A1A] dark:text-white" style={{ fontFamily: "'Source Serif 4', serif" }}>You lean {topTypes.map((l, i) => <span key={l}>{i > 0 ? (i === topTypes.length - 1 ? ' & ' : ', ') : ''}<span style={{ color: COLORS.accent }}>{RIASEC_LABELS[l]}</span></span>)}</h2>
         <div className="flex items-end gap-2 h-20 mb-2">
           {RIASEC_LETTERS.map((l) => (
             <div key={l} className="flex-1 flex flex-col items-center justify-end h-full">
@@ -391,7 +391,7 @@ function RiasecExplainerModal({ onClose }: { onClose: () => void }) {
           </div>
           <button
             onClick={onClose}
-            className="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-black/5 dark:hover:bg-white/10 transition-colors shrink-0"
+            className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl transition-colors hover:bg-black/5 dark:hover:bg-white/10"
             aria-label="Close"
           >
             <X size={18} className="text-zinc-500" />

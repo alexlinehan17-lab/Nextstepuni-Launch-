@@ -8,7 +8,7 @@ import { AnimatePresence } from 'framer-motion';
 import { MotionDiv } from './Motion';
 import {
   TrendingUp, Plus, Trash2,
-  ArrowRight, Star, Calendar, Award, Rocket,
+  ArrowRight, Star, Calendar, Award,
   Shield, Target, Pencil,
 } from 'lucide-react';
 import {
@@ -32,6 +32,7 @@ import { LoadingState } from './ui/SystemState';
 import ModalFrame from './ui/ModalFrame';
 import { useProgress } from '../contexts/ProgressContext';
 import { DEMO_STUDENT_UID } from '../data/devStudent';
+import HorizontalTabs from './ui/HorizontalTabs';
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -83,7 +84,7 @@ const MICRO_STORIES = [
 const SLOT_META: Record<ScenarioSlot, { label: string; description: string; Icon: typeof Shield }> = {
   safe: { label: 'Safe', description: 'Grades you\'re confident of', Icon: Shield },
   target: { label: 'Target', description: 'Your realistic goal', Icon: Target },
-  stretch: { label: 'Stretch', description: 'If everything clicks', Icon: Rocket },
+  stretch: { label: 'Stretch', description: 'If everything clicks', Icon: TrendingUp },
 };
 
 // ─── Utility ─────────────────────────────────────────────────────────────────
@@ -348,69 +349,55 @@ const PointsPassport: React.FC<PointsPassportProps> = ({ uid, profile, onOpenSet
       {/* Grade Planner carries its own live totals because they react to the
           student's unsaved what-if edits. Other sections share this snapshot. */}
       {activeTab !== 'planner' && <>
-      {/* Points overview cards — stack on phones where 3-up makes "+133 pts"
-          and similar widths overflow the card edges. */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+      {/* One compact points story on phones; three scan-friendly cards once
+          there is enough width for them to breathe. */}
+      <div className="grid grid-cols-3 rounded-xl border border-[var(--outline-soft)] bg-[#FAF7F4] p-4 dark:bg-zinc-900 sm:gap-3 sm:border-0 sm:bg-transparent sm:p-0 dark:sm:bg-transparent">
         {/* Design system: white/cream cards only — the previous green "Target"
             and amber "Gap" coloured surfaces are banned. Accent marks the goal;
             current + gap are neutral facts. */}
-        <div className="rounded-xl p-4 bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
+        <div className="min-w-0 px-2 first:pl-0 sm:rounded-xl sm:border sm:border-[var(--outline-soft)] sm:bg-[#FAF7F4] sm:p-4 sm:dark:bg-zinc-900">
           <p className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#9A9590] dark:text-zinc-500">Current</p>
-          <span className="font-apercu text-3xl font-black text-[#1a1a1a] dark:text-white">{currentPoints}</span>
-          <span className="text-sm ml-1 text-[#9A9590] dark:text-zinc-500">/625</span>
+          <span className="font-apercu text-2xl font-black text-[#1a1a1a] dark:text-white sm:text-3xl">{currentPoints}</span>
+          <span className="ml-0.5 text-[10px] text-[#9A9590] dark:text-zinc-500 sm:ml-1 sm:text-sm">/625</span>
         </div>
-        <div className="rounded-xl p-4 bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
+        <div className="min-w-0 border-l border-[var(--outline-soft)] px-3 sm:rounded-xl sm:border sm:border-[var(--outline-soft)] sm:bg-[#FAF7F4] sm:p-4 sm:dark:bg-zinc-900">
           <p className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#9A9590] dark:text-zinc-500">Target</p>
-          <span className="font-apercu text-3xl font-black" style={{ color: COLORS.accent }}>{targetPoints}</span>
-          <span className="text-sm ml-1 text-[#9A9590] dark:text-zinc-500">/625</span>
+          <span className="font-apercu text-2xl font-black sm:text-3xl" style={{ color: COLORS.accent }}>{targetPoints}</span>
+          <span className="ml-0.5 text-[10px] text-[#9A9590] dark:text-zinc-500 sm:ml-1 sm:text-sm">/625</span>
         </div>
-        <div className="rounded-xl p-4 bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
+        <div className="min-w-0 border-l border-[var(--outline-soft)] pl-3 sm:rounded-xl sm:border sm:border-[var(--outline-soft)] sm:bg-[#FAF7F4] sm:p-4 sm:dark:bg-zinc-900">
           <p className="text-[10px] font-bold uppercase tracking-widest mb-1 text-[#9A9590] dark:text-zinc-500">Gap</p>
-          <span className="font-apercu text-3xl font-black text-[#1a1a1a] dark:text-white">
+          <span className="font-apercu text-2xl font-black text-[#1a1a1a] dark:text-white sm:text-3xl">
             {targetPoints - currentPoints > 0 ? '+' : ''}{targetPoints - currentPoints}
           </span>
-          <span className="text-sm ml-1 text-[#9A9590] dark:text-zinc-500">pts</span>
+          <span className="ml-0.5 text-[10px] text-[#9A9590] dark:text-zinc-500 sm:ml-1 sm:text-sm">pts</span>
         </div>
       </div>
 
-      {/* Identity reframing card */}
-      <div className="rounded-xl p-5 bg-[#FAF7F4] dark:bg-zinc-900" style={{ border: '0.5px solid rgba(0,0,0,0.07)' }}>
-        <div className="flex items-start gap-3">
-          <TrendingUp size={18} className="shrink-0 mt-0.5" style={{ color: COLORS.accent }} />
-          <div>
-            <p className="text-sm font-bold" style={{ color: COLORS.accent }}>
-              Students scoring {trajectoryInfo.range} typically improve by {trajectoryInfo.typical} points
-            </p>
-            <p className="text-xs leading-relaxed mt-1 text-zinc-600 dark:text-zinc-400">
-              {trajectoryInfo.message}
-            </p>
-          </div>
-        </div>
+      {/* Editorial context — supporting evidence, not a competing callout. */}
+      <div className="border-y border-[var(--outline-soft)] py-4">
+        <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--ink-muted)]">A realistic runway</p>
+        <p className="mt-1 text-sm font-semibold text-[var(--ink-primary)]">
+          Students scoring {trajectoryInfo.range} typically improve by {trajectoryInfo.typical} points.
+        </p>
+        <p className="mt-1 text-xs leading-relaxed text-[var(--ink-secondary)]">{trajectoryInfo.message}</p>
       </div>
       </>}
 
       {/* Tab switcher */}
-      <div className="flex flex-wrap gap-1 p-1 bg-zinc-100 dark:bg-zinc-800/50 rounded-xl">
-        {([
-          { key: 'overview' as const, label: 'Overview' },
-          { key: 'mocks' as const, label: 'Mock Tracker' },
-          { key: 'planner' as const, label: 'Grade Planner' },
-          { key: 'scenarios' as const, label: 'Scenarios' },
-          { key: 'bargains' as const, label: 'Best Moves' },
-        ]).map(tab => (
-          <button
-            key={tab.key}
-            onClick={() => setActiveTab(tab.key)}
-            className={`flex-1 py-2.5 px-3 rounded-lg text-sm transition-all ${
-              activeTab === tab.key
-                ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white font-medium shadow-sm'
-                : 'text-zinc-500'
-            }`}
-          >
-            {tab.label}
-          </button>
-        ))}
-      </div>
+      <HorizontalTabs
+        variant="pill"
+        value={activeTab}
+        label="Points Passport sections"
+        onChange={next => setActiveTab(next as PassportTab)}
+        options={[
+          { value: 'overview', label: 'Overview' },
+          { value: 'mocks', label: 'Mock Tracker' },
+          { value: 'planner', label: 'Grade Planner' },
+          { value: 'scenarios', label: 'Scenarios' },
+          { value: 'bargains', label: 'Best Moves' },
+        ]}
+      />
 
       {/* Tab content */}
       <AnimatePresence mode="wait">

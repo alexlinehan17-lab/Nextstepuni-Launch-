@@ -344,8 +344,9 @@ const JourneyView: React.FC<JourneyViewProps> = ({
           />
 
           {peerViewMode === 'own' && !sheetOpen && !kudosModalOpen && !giftsModalOpen && (
-            <div className="pointer-events-none absolute left-1/2 top-[76px] z-[74] w-[calc(100%-32px)] max-w-xs -translate-x-1/2 rounded-xl bg-black/65 px-4 py-2.5 text-center text-sm font-semibold leading-snug text-white sm:hidden">
-              {northStar.statement}
+            <div className="pointer-events-none absolute left-1/2 top-[76px] z-[74] w-[calc(100%-32px)] max-w-sm -translate-x-1/2 rounded-2xl border border-white/20 bg-[#171824]/72 px-4 py-3 text-center text-white shadow-lg backdrop-blur-md sm:hidden">
+              <p className="text-[9px] font-bold uppercase tracking-[0.18em] text-orange-200">My Journey · {journeyProgression.stage.name}</p>
+              <p className="mt-1 line-clamp-2 font-serif text-sm font-semibold leading-snug">{northStar.statement}</p>
             </div>
           )}
 
@@ -361,7 +362,7 @@ const JourneyView: React.FC<JourneyViewProps> = ({
               type="button"
               onClick={isViewingPeer ? handleBackFromPeer : onBack}
               aria-label={isViewingPeer ? 'Back to my island' : 'Back to home'}
-              className="p-2.5 rounded-xl bg-white/90 dark:bg-zinc-900/90 backdrop-blur-sm border border-zinc-200 dark:border-zinc-800 hover:bg-white dark:hover:bg-zinc-800 transition-colors"
+              className="flex h-11 w-11 items-center justify-center rounded-xl border border-zinc-200 bg-white/90 backdrop-blur-sm transition-colors hover:bg-white dark:border-zinc-800 dark:bg-zinc-900/90 dark:hover:bg-zinc-800"
             >
               <ArrowLeft size={18} className="text-zinc-900 dark:text-white" />
             </button>
@@ -409,7 +410,7 @@ const JourneyView: React.FC<JourneyViewProps> = ({
                   type="button"
                   onClick={() => buildMode ? exitBuildMode() : setBuildMode(true)}
                   aria-label={buildMode ? 'Finish building' : 'Build island'}
-                  className={`flex items-center gap-2 px-3 py-2.5 rounded-xl backdrop-blur-sm border transition-colors ${
+                  className={`flex h-11 min-w-11 items-center justify-center gap-2 rounded-xl border px-3 backdrop-blur-sm transition-colors ${
                     buildMode
                       ? 'bg-[#F26B1F] border-[#F26B1F] text-white'
                       : 'bg-white/90 dark:bg-zinc-900/90 border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-white'
@@ -571,6 +572,8 @@ const JourneyView: React.FC<JourneyViewProps> = ({
                 pointsBalance={effectivePoints}
                 stageName={journeyProgression.stage.name}
                 stageProgress={journeyProgression.progress}
+                nextStageName={journeyProgression.nextStage?.name}
+                modulesToNext={journeyProgression.modulesToNext}
                 onTap={() => setSheetOpen(true)}
               />
             )}

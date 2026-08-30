@@ -201,7 +201,7 @@ interface MobileProfileSheetProps {
   unlockedThemes: string[];
 }
 
-export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, onClose, user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride, streak, recommendation, onSelectModule, onOpenPassport, onGoToDashboard: _onGoToDashboard, onGoToInsights: _onGoToInsights, onGoToReferences, onGoToYearPlans, onOpenSiteGuide, onOpenFeedback, completedCount, totalCount, onOpenNorthStar, hasNorthStar, unlockedThemes: _unlockedThemes }) => {
+export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, onClose, user, onLogout, settings, updateSetting, onOpenSettings, avatarOverride, streak, recommendation, onSelectModule, onOpenPassport, onGoToDashboard, onGoToInsights: _onGoToInsights, onGoToReferences, onGoToYearPlans, onOpenSiteGuide, onOpenFeedback, completedCount, totalCount, onOpenNorthStar, hasNorthStar, unlockedThemes: _unlockedThemes }) => {
   const displayAvatar = avatarOverride || user.avatar;
   const sheetRef = useRef<HTMLDivElement>(null);
   useModal(isOpen, onClose, sheetRef);
@@ -240,7 +240,7 @@ export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, 
 
             <div className="px-5 pb-6">
               {/* User info */}
-              <div className="flex items-center justify-between mb-4">
+              <div className="sticky top-0 z-10 -mx-5 mb-4 flex items-center justify-between border-b border-zinc-100 bg-white/95 px-5 py-3 backdrop-blur-xl dark:border-zinc-800 dark:bg-zinc-900/95">
                 <div className="flex items-center gap-3">
                   <img src={getAvatarUrl(displayAvatar)} alt="Avatar" className="w-12 h-12 rounded-full bg-zinc-200" onError={(e) => handleAvatarError(e, displayAvatar)} />
                   <div>
@@ -248,7 +248,7 @@ export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, 
                     <p className="text-xs text-zinc-500">Student</p>
                   </div>
                 </div>
-                <button onClick={onClose} aria-label="Close profile" className="p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800">
+                <button onClick={onClose} aria-label="Close profile" className="flex h-11 w-11 items-center justify-center rounded-xl hover:bg-zinc-100 dark:hover:bg-zinc-800">
                   <X size={18} className="text-zinc-400" />
                 </button>
               </div>
@@ -285,50 +285,75 @@ export const MobileProfileSheet: React.FC<MobileProfileSheetProps> = ({ isOpen, 
                 )}
               </div>
 
-              {/* Actions */}
-              <div className="space-y-1">
-                <button onClick={() => { onClose(); onOpenPassport(); }} className="w-full flex items-center gap-3 p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
-                  <div className="w-8 h-8 rounded-lg bg-[rgba(var(--accent),0.1)] flex items-center justify-center"><Award size={16} className="text-[var(--accent-hex)]" /></div>
-                  <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300 flex-1 text-left">Study Passport</span>
-                  <span className="text-xs font-bold text-zinc-400 dark:text-zinc-500">{completedCount}/{totalCount}</span>
-                </button>
-                <NotificationBell uid={user.uid} variant="menu" />
-                <button onClick={() => { onClose(); onGoToReferences(); }} className="w-full flex items-center gap-3 p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
-                  <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-50 dark:bg-blue-500/10"><BookOpen size={16} className="text-blue-500" /></div>
-                  <span className="flex-1 text-left text-sm font-medium text-zinc-700 dark:text-zinc-300">References</span>
-                </button>
-                <button onClick={() => { onClose(); onGoToYearPlans(); }} className="w-full flex items-center gap-3 p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
-                  <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-50 dark:bg-emerald-500/10"><CalendarRange size={16} className="text-emerald-600" /></div>
-                  <span className="flex-1 text-left text-sm font-medium text-zinc-700 dark:text-zinc-300">Year Plans</span>
-                </button>
-                <button onClick={() => { onClose(); onOpenSiteGuide(); }} className="w-full flex items-center gap-3 p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
-                  <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-orange-50 dark:bg-orange-500/10"><HelpCircle size={16} className="text-[#F26B1F]" /></div>
-                  <span className="flex-1 text-left text-sm font-medium text-zinc-700 dark:text-zinc-300">How the app works</span>
-                </button>
-                <button onClick={() => { onClose(); onOpenFeedback(); }} className="w-full flex items-center gap-3 p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
-                  <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-zinc-100 dark:bg-zinc-800"><MessageSquare size={16} className="text-zinc-500" /></div>
-                  <span className="flex-1 text-left text-sm font-medium text-zinc-700 dark:text-zinc-300">Help us improve</span>
-                </button>
-                {hasNorthStar && (
-                  <button onClick={() => { onClose(); onOpenNorthStar(); }} className="w-full flex items-center gap-3 p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
-                    <div className="w-8 h-8 rounded-lg bg-amber-50 dark:bg-amber-500/10 flex items-center justify-center"><Star size={16} className="text-amber-500" /></div>
-                    <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300 flex-1 text-left">My North Star</span>
-                  </button>
-                )}
-                <button role="switch" aria-checked={settings.darkMode} onClick={() => updateSetting('darkMode', !settings.darkMode)} className="w-full flex items-center gap-3 p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
-                  <div className="w-8 h-8 rounded-lg bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center">
-                    {settings.darkMode ? <Sun size={16} className="text-amber-400" /> : <Moon size={16} className="text-zinc-600" />}
+              {/* Grouped actions keep the sheet scannable as the app grows. */}
+              <div className="space-y-5">
+                <section aria-labelledby="profile-learning-heading">
+                  <p id="profile-learning-heading" className="mb-1 px-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-zinc-400 dark:text-zinc-500">Learning</p>
+                  <div className="divide-y divide-zinc-100 rounded-2xl border border-zinc-200 dark:divide-zinc-800 dark:border-zinc-700">
+                    <button onClick={() => { onClose(); onGoToDashboard(); }} className="flex min-h-14 w-full items-center gap-3 px-3 text-left hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
+                      <div className="flex h-8 w-8 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-700"><BarChart3 size={16} className="text-[var(--accent-hex)]" /></div>
+                      <span className="flex-1 text-sm font-medium text-zinc-700 dark:text-zinc-300">My Progress</span>
+                    </button>
+                    <button onClick={() => { onClose(); onOpenPassport(); }} className="flex min-h-14 w-full items-center gap-3 px-3 text-left hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
+                      <div className="flex h-8 w-8 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-700"><Award size={16} className="text-[var(--accent-hex)]" /></div>
+                      <span className="flex-1 text-sm font-medium text-zinc-700 dark:text-zinc-300">Study Passport</span>
+                      <span className="text-xs font-bold text-zinc-400 dark:text-zinc-500">{completedCount}/{totalCount}</span>
+                    </button>
+                    <button onClick={() => { onClose(); onGoToYearPlans(); }} className="flex min-h-14 w-full items-center gap-3 px-3 text-left hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
+                      <div className="flex h-8 w-8 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-700"><CalendarRange size={16} className="text-zinc-500" /></div>
+                      <span className="flex-1 text-sm font-medium text-zinc-700 dark:text-zinc-300">Year Plans</span>
+                    </button>
                   </div>
-                  <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300 flex-1 text-left">{settings.darkMode ? 'Light Mode (Beta)' : 'Dark Mode (Beta)'}</span>
-                </button>
-                <button onClick={() => { onClose(); onOpenSettings(); }} className="w-full flex items-center gap-3 p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
-                  <div className="w-8 h-8 rounded-lg bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center"><Settings size={16} className="text-zinc-500" /></div>
-                  <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300 flex-1 text-left">Settings</span>
-                </button>
-                <button onClick={() => { onClose(); onLogout(); }} className="w-full flex items-center gap-3 p-3 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
-                  <div className="w-8 h-8 rounded-lg bg-rose-50 dark:bg-rose-500/10 flex items-center justify-center"><LogOut size={16} className="text-rose-500" /></div>
-                  <span className="text-sm font-medium text-rose-500 flex-1 text-left">Log Out</span>
-                </button>
+                </section>
+
+                <section aria-labelledby="profile-direction-heading">
+                  <p id="profile-direction-heading" className="mb-1 px-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-zinc-400 dark:text-zinc-500">Direction</p>
+                  <div className="divide-y divide-zinc-100 rounded-2xl border border-zinc-200 dark:divide-zinc-800 dark:border-zinc-700">
+                    {hasNorthStar && (
+                      <button onClick={() => { onClose(); onOpenNorthStar(); }} className="flex min-h-14 w-full items-center gap-3 px-3 text-left hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
+                        <div className="flex h-8 w-8 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-700"><Star size={16} className="text-amber-500" /></div>
+                        <span className="flex-1 text-sm font-medium text-zinc-700 dark:text-zinc-300">My North Star</span>
+                      </button>
+                    )}
+                    <button onClick={() => { onClose(); onGoToReferences(); }} className="flex min-h-14 w-full items-center gap-3 px-3 text-left hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
+                      <div className="flex h-8 w-8 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-700"><BookOpen size={16} className="text-zinc-500" /></div>
+                      <span className="flex-1 text-sm font-medium text-zinc-700 dark:text-zinc-300">References</span>
+                    </button>
+                  </div>
+                </section>
+
+                <section aria-labelledby="profile-support-heading">
+                  <p id="profile-support-heading" className="mb-1 px-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-zinc-400 dark:text-zinc-500">Support</p>
+                  <div className="divide-y divide-zinc-100 rounded-2xl border border-zinc-200 dark:divide-zinc-800 dark:border-zinc-700">
+                    <NotificationBell uid={user.uid} variant="menu" />
+                    <button onClick={() => { onClose(); onOpenSiteGuide(); }} className="flex min-h-14 w-full items-center gap-3 px-3 text-left hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
+                      <div className="flex h-8 w-8 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-700"><HelpCircle size={16} className="text-[#F26B1F]" /></div>
+                      <span className="flex-1 text-sm font-medium text-zinc-700 dark:text-zinc-300">How the app works</span>
+                    </button>
+                    <button onClick={() => { onClose(); onOpenFeedback(); }} className="flex min-h-14 w-full items-center gap-3 px-3 text-left hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
+                      <div className="flex h-8 w-8 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-700"><MessageSquare size={16} className="text-zinc-500" /></div>
+                      <span className="flex-1 text-sm font-medium text-zinc-700 dark:text-zinc-300">Help us improve</span>
+                    </button>
+                  </div>
+                </section>
+
+                <section aria-labelledby="profile-account-heading">
+                  <p id="profile-account-heading" className="mb-1 px-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-zinc-400 dark:text-zinc-500">Account</p>
+                  <div className="divide-y divide-zinc-100 rounded-2xl border border-zinc-200 dark:divide-zinc-800 dark:border-zinc-700">
+                    <button role="switch" aria-checked={settings.darkMode} onClick={() => updateSetting('darkMode', !settings.darkMode)} className="flex min-h-14 w-full items-center gap-3 px-3 text-left hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
+                      <div className="flex h-8 w-8 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-700">{settings.darkMode ? <Sun size={16} className="text-amber-400" /> : <Moon size={16} className="text-zinc-600 dark:text-zinc-300" />}</div>
+                      <span className="flex-1 text-sm font-medium text-zinc-700 dark:text-zinc-300">{settings.darkMode ? 'Light Mode (Beta)' : 'Dark Mode (Beta)'}</span>
+                    </button>
+                    <button onClick={() => { onClose(); onOpenSettings(); }} className="flex min-h-14 w-full items-center gap-3 px-3 text-left hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
+                      <div className="flex h-8 w-8 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-700"><Settings size={16} className="text-zinc-500" /></div>
+                      <span className="flex-1 text-sm font-medium text-zinc-700 dark:text-zinc-300">Settings</span>
+                    </button>
+                    <button onClick={() => { onClose(); onLogout(); }} className="flex min-h-14 w-full items-center gap-3 px-3 text-left hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
+                      <div className="flex h-8 w-8 items-center justify-center rounded-lg border border-rose-200 dark:border-rose-900"><LogOut size={16} className="text-rose-500" /></div>
+                      <span className="flex-1 text-sm font-medium text-rose-500">Log Out</span>
+                    </button>
+                  </div>
+                </section>
               </div>
             </div>
           </motion.div>
