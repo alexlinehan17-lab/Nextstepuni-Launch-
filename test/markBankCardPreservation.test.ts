@@ -210,8 +210,16 @@ const decks = [
    * string: 274 of 799 cards stated something the scheme never said. Fixing
    * that, recognising a bare "Partial Credit:" header, and reading the letter
    * gate case-sensitively recovered seven parts. Nothing removed. */
-  ['maths:higher', MATHS_HIGHER, 391, '3d65dbbfba97b1cf25ac9f9cd43072f3bd7b529bc0efc670d925c0f02713e3c2'],
-  ['maths:ordinary', MATHS_ORDINARY, 400, '8d06be623ac9ed99cde68fed138f26a22e84b1062067f2e7c6595505b3a95537'],
+  /* 2026-08-30 (second pass): maths 391/400 -> 393/420. The scheme reader split
+   * every page at a constant x=300; across the ten schemes the "Marking Notes"
+   * header actually sits between 276 and 369. Twelve pages print it LEFT of
+   * 300, so it landed in the solution column, the reader found no notes on the
+   * right and skipped the page outright -- every part on it unmarked. The cut
+   * is now read off each page, bounded so it can only move LEFT (see
+   * mathtext.reader_cut for why moving it right loses units). Coverage
+   * 881/989 -> 907/989. Nothing removed. */
+  ['maths:higher', MATHS_HIGHER, 393, 'ee77c5bd6bd1c568daac4633db9571159d4a0e698798de23d189c924c5a43160'],
+  ['maths:ordinary', MATHS_ORDINARY, 420, '1734beabce15f2b5b49a8a5ec545c442d3aa9af9a20f766d1507bc65a84ce8f0'],
   ['construction-studies:higher', CONS_HIGHER, 255, 'b74a39fd589f1082d6378190aee778d528eff0968d7af0ee9144525f2e40d57b'],
   ['construction-studies:ordinary', CONS_ORDINARY, 250, 'f56985e32cc1f02a2e2f7a7eb300a44646b75cf3604a12b5a478bde2a520d2da'],
 ] as const;
@@ -228,6 +236,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7376);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7398);
   });
 });
