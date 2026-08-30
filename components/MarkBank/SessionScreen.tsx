@@ -55,6 +55,7 @@ import WaysInPanel, {
   emptyWaysInWork,
   type WaysInWork,
 } from './WaysInPanel';
+import SourceMaterialReader from './SourceMaterialReader';
 
 const EASE = [0.16, 1, 0.3, 1] as number[];
 
@@ -1268,6 +1269,7 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
   const levelLabel = card.level === 'higher' ? 'HIGHER LEVEL' : 'ORDINARY LEVEL';
   const figure = 'figure' in card ? card.figure : undefined;
   const questionFigure = 'questionFigure' in card ? card.questionFigure : undefined;
+  const sourceMaterial = card.sourceMaterial;
   const labelKey = card.kind === 'diagram' ? card.labelKey : undefined;
 
   const banked = results.reduce((n, r) => n + r.marksClaimed, 0);
@@ -1565,6 +1567,15 @@ const SessionScreen: React.FC<SessionScreenProps> = ({
                   {figure.attribution}
                 </figcaption>
               </figure>
+            )}
+
+            {sourceMaterial && card.paperFileid && (
+              <SourceMaterialReader
+                source={sourceMaterial}
+                subjectId={card.subjectId}
+                year={card.year}
+                paperFileid={card.paperFileid}
+              />
             )}
           </div>
         </MotionDiv>

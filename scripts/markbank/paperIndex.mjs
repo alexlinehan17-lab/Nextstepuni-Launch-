@@ -81,8 +81,19 @@ export const paperEntry = (subjectId, year, level) =>
  */
 const labelCovers = (label) => {
   const text = String(label);
-  if (!/\bsection\b/i.test(text)) return new Set();
-  return new Set(text.match(/\b[ABC1-9]\b/g) ?? []);
+  const covered = new Set();
+  if (/\bsection\b/i.test(text)) {
+    for (const token of text.match(/\b[ABC1-9]\b/g) ?? []) covered.add(token);
+  }
+  // English and several language subjects name their documents "Paper One"
+  // and "Paper Two" rather than "Section 1" and "Section 2". Mark Bank uses
+  // those same numeric section ids, so treating the labels as unknowable left
+  // every English card with a null paper link even though Paper Trail had the
+  // exact document. Keep this anchored on the word Paper so a stray number in a
+  // practical-test label cannot become a false section match.
+  const paper = text.match(/\bpaper\s+(one|two|[1-9])\b/i)?.[1]?.toLowerCase();
+  if (paper) covered.add(paper === 'one' ? '1' : paper === 'two' ? '2' : paper);
+  return covered;
 };
 
 const stripPdf = (f) => (f ? String(f).replace(/\.pdf$/, '') : null);

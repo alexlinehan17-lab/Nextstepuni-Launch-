@@ -1565,6 +1565,547 @@ html:not(.dark) [class*="text-[#A0978D]"] {
   background: var(--mb-paper) !important;
 }
 
+/* The question-side doorway into a passage. It is part of the printed-paper
+   card, not another floating card inside it, so it closes the sheet edge to
+   edge and uses one quiet rule as its boundary. */
+.mb-source-material-trigger {
+  width: calc(100% + 36px);
+  margin: 17px -18px -18px;
+  padding: 13px 16px;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+  text-align: left;
+  color: var(--mb-ink);
+  background: var(--mb-soft);
+  border: 0;
+  border-top: 1px solid var(--mb-border);
+  cursor: pointer;
+  transition: background-color 160ms ease;
+}
+
+.mb-source-material-trigger:hover,
+.mb-source-material-trigger:focus-visible {
+  background: #FDEEDF;
+}
+
+.dark .mb-source-material-trigger:hover,
+.dark .mb-source-material-trigger:focus-visible {
+  background: #38281F;
+}
+
+.mb-source-material-trigger:focus-visible {
+  outline: 3px solid rgba(242, 107, 31, .28);
+  outline-offset: -3px;
+}
+
+.mb-source-material-icon {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  color: #B64B12;
+  background: var(--mb-paper);
+  border: 1px solid rgba(242, 107, 31, .38);
+  border-radius: 11px;
+}
+
+.mb-source-material-copy {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.mb-source-material-copy > span {
+  color: #9A3D0B;
+  font: 700 9.5px/1.4 'DM Sans', system-ui, sans-serif;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+
+.dark .mb-source-material-copy > span,
+.dark .mb-source-material-icon,
+.dark .mb-source-reader-heading > span,
+.dark .mb-source-reader-provenance a {
+  color: #FFAE7A;
+}
+
+.mb-source-material-copy strong {
+  margin-top: 1px;
+  overflow: hidden;
+  color: var(--mb-ink);
+  font: 650 14px/1.35 'Source Serif 4', Georgia, serif;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mb-source-material-copy small {
+  margin-top: 2px;
+  color: var(--mb-muted);
+  font: 500 10.5px/1.35 'DM Sans', system-ui, sans-serif;
+}
+
+.mb-source-material-open {
+  width: 29px;
+  height: 29px;
+  display: grid;
+  place-items: center;
+  color: var(--mb-ink-2);
+  background: var(--mb-paper);
+  border: 1px solid var(--mb-border);
+  border-radius: 50%;
+}
+
+/* Immersive source reader. The overlay is intentionally solid-dim rather than
+   blurred glass: the examination page stays the only detailed surface. */
+.mb-source-reader-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 220;
+  display: grid;
+  place-items: center;
+  padding: 14px;
+  background: rgba(18, 17, 16, .72);
+  font-family: 'DM Sans', system-ui, sans-serif;
+  animation: mb-source-reader-in 150ms ease-out both;
+}
+
+.mb-source-reader-dialog {
+  width: min(1120px, 100%);
+  height: min(900px, calc(100dvh - 28px));
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  overflow: hidden;
+  color: var(--mb-ink);
+  background: var(--mb-paper);
+  border: 1px solid var(--mb-border);
+  border-radius: 20px;
+  box-shadow: 0 28px 90px rgba(0, 0, 0, .34);
+  animation: mb-source-reader-sheet-in 190ms cubic-bezier(.16, 1, .3, 1) both;
+}
+
+.mb-source-reader-header {
+  min-height: 70px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  gap: 14px;
+  align-items: center;
+  padding: 12px 16px 12px 20px;
+  background: var(--mb-paper);
+  border-bottom: 1px solid var(--mb-border);
+}
+
+.mb-source-reader-heading {
+  min-width: 0;
+}
+
+.mb-source-reader-heading > span {
+  display: block;
+  color: #A8430E;
+  font: 700 9.5px/1.4 'DM Sans', system-ui, sans-serif;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.mb-source-reader-heading h2 {
+  margin: 2px 0 0;
+  overflow: hidden;
+  color: var(--mb-ink);
+  font: 700 20px/1.2 'Source Serif 4', Georgia, serif;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mb-source-reader-tools {
+  display: grid;
+  grid-template-columns: 34px 54px 34px;
+  align-items: center;
+  color: var(--mb-ink-2);
+  border: 1px solid var(--mb-border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.mb-source-reader-tools button,
+.mb-source-reader-close,
+.mb-source-reader-navigation > button {
+  display: grid;
+  place-items: center;
+  color: var(--mb-ink-2);
+  background: var(--mb-paper);
+  border: 0;
+  cursor: pointer;
+}
+
+.mb-source-reader-tools button {
+  width: 34px;
+  height: 34px;
+  font: 600 19px/1 'DM Sans', system-ui, sans-serif;
+}
+
+.mb-source-reader-tools button:first-child {
+  border-right: 1px solid var(--mb-border);
+}
+
+.mb-source-reader-tools button:last-child {
+  border-left: 1px solid var(--mb-border);
+}
+
+.mb-source-reader-tools button:disabled,
+.mb-source-reader-navigation > button:disabled {
+  cursor: default;
+  opacity: .32;
+}
+
+.mb-source-reader-tools > span {
+  text-align: center;
+  font: 650 10.5px/1 'Roboto Mono', ui-monospace, monospace;
+}
+
+.mb-source-reader-close {
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--mb-border);
+  border-radius: 50%;
+}
+
+.mb-source-reader-tools button:focus-visible,
+.mb-source-reader-close:focus-visible,
+.mb-source-reader-navigation button:focus-visible,
+.mb-source-reader-provenance a:focus-visible {
+  outline: 3px solid rgba(242, 107, 31, .32);
+  outline-offset: 2px;
+}
+
+.mb-source-reader-track {
+  min-height: 0;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  background: var(--mb-canvas);
+}
+
+.mb-source-reader-track::-webkit-scrollbar {
+  display: none;
+}
+
+.mb-source-reader-slide {
+  min-width: 100%;
+  min-height: 0;
+  display: flex;
+  flex: 0 0 100%;
+  flex-direction: column;
+  overflow: hidden;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.mb-source-reader-page-meta {
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 18px 0;
+  color: var(--mb-label);
+  font: 700 9px/1.4 'Roboto Mono', ui-monospace, monospace;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.mb-source-reader-page-pan {
+  min-height: 0;
+  flex: 1;
+  overflow: auto;
+  overscroll-behavior: contain;
+  padding: 10px 18px 20px;
+}
+
+.mb-source-reader-paper {
+  min-width: 100%;
+  max-width: 900px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 8px;
+  background: #FFFFFF;
+  border: 1px solid #D9D5CF;
+  box-shadow: 0 12px 30px rgba(32, 28, 24, .1);
+}
+
+.mb-source-reader-paper canvas {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  margin-bottom: 0 !important;
+}
+
+.mb-source-reader-loading {
+  width: 100%;
+  aspect-ratio: 1 / 1.414;
+  padding: 11% 9%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: #FFFFFF;
+}
+
+.mb-source-reader-loading span {
+  height: 10px;
+  border-radius: 999px;
+  background: #ECE9E4;
+  animation: mb-source-pulse 1.1s ease-in-out infinite alternate;
+}
+
+.mb-source-reader-loading span:nth-child(1) { width: 54%; }
+.mb-source-reader-loading span:nth-child(2) { width: 88%; }
+.mb-source-reader-loading span:nth-child(3) { width: 79%; }
+.mb-source-reader-loading span:nth-child(4) { width: 84%; }
+
+.mb-source-reader-failed {
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  text-align: center;
+  color: #3A3530;
+  background: #FFFFFF;
+}
+
+.mb-source-reader-failed strong {
+  font: 700 21px/1.25 'Source Serif 4', Georgia, serif;
+}
+
+.mb-source-reader-failed span {
+  max-width: 360px;
+  margin-top: 7px;
+  color: #69605A;
+  font: 400 13px/1.5 'DM Sans', system-ui, sans-serif;
+}
+
+.mb-source-reader-failed button {
+  margin-top: 16px;
+  padding: 10px 15px;
+  color: #FFFFFF;
+  background: #F26B1F;
+  border: 0;
+  border-radius: 9px;
+  font: 650 12.5px/1 'DM Sans', system-ui, sans-serif;
+  cursor: pointer;
+}
+
+.mb-source-reader-footer {
+  min-height: 76px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: center;
+  padding: 11px 16px 11px 20px;
+  background: var(--mb-paper);
+  border-top: 1px solid var(--mb-border);
+}
+
+.mb-source-reader-provenance {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.mb-source-reader-provenance strong {
+  overflow: hidden;
+  color: var(--mb-ink-2);
+  font: 600 10.5px/1.4 'DM Sans', system-ui, sans-serif;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mb-source-reader-provenance span {
+  margin-top: 1px;
+  overflow: hidden;
+  color: var(--mb-muted);
+  font: 400 9.5px/1.4 'DM Sans', system-ui, sans-serif;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mb-source-reader-provenance a {
+  width: fit-content;
+  margin-top: 3px;
+  color: #A8430E;
+  font: 650 10.5px/1.35 'DM Sans', system-ui, sans-serif;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.mb-source-reader-navigation {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mb-source-reader-navigation > button {
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--mb-border);
+  border-radius: 50%;
+}
+
+.mb-source-reader-dots {
+  min-width: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.mb-source-reader-dots button {
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  background: var(--mb-border);
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: width 150ms ease, background-color 150ms ease;
+}
+
+.mb-source-reader-dots button[aria-current='page'] {
+  width: 21px;
+  background: #F26B1F;
+}
+
+@keyframes mb-source-reader-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes mb-source-reader-sheet-in {
+  from { opacity: 0; transform: translateY(8px) scale(.992); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes mb-source-pulse {
+  from { opacity: .48; }
+  to { opacity: 1; }
+}
+
+@media (min-width: 860px) {
+  .mb-source-reader-tools {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .mb-source-material-trigger {
+    padding: 12px 14px;
+  }
+
+  .mb-source-material-copy strong {
+    font-size: 13.5px;
+  }
+
+  .mb-source-reader-overlay {
+    padding: 0;
+  }
+
+  .mb-source-reader-dialog {
+    width: 100%;
+    height: 100dvh;
+    border: 0;
+    border-radius: 0;
+  }
+
+  .mb-source-reader-header {
+    min-height: 64px;
+    gap: 8px;
+    padding: calc(9px + var(--sat, 0px)) 10px 9px 14px;
+  }
+
+  .mb-source-reader-heading h2 {
+    font-size: 16px;
+  }
+
+  .mb-source-reader-heading > span {
+    font-size: 8.5px;
+  }
+
+  .mb-source-reader-tools {
+    grid-template-columns: 30px 43px 30px;
+  }
+
+  .mb-source-reader-tools button {
+    width: 30px;
+    height: 32px;
+  }
+
+  .mb-source-reader-tools > span {
+    font-size: 9px;
+  }
+
+  .mb-source-reader-close {
+    width: 34px;
+    height: 34px;
+  }
+
+  .mb-source-reader-page-meta {
+    padding: 7px 10px 0;
+  }
+
+  .mb-source-reader-page-pan {
+    padding: 7px 8px 12px;
+  }
+
+  .mb-source-reader-paper {
+    padding: 4px;
+  }
+
+  .mb-source-reader-footer {
+    min-height: 92px;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 8px;
+    padding: 8px 10px 8px 13px;
+    padding-bottom: calc(8px + var(--sab, 0px));
+  }
+
+  .mb-source-reader-provenance strong {
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .mb-source-reader-provenance span {
+    display: none;
+  }
+
+  .mb-source-reader-navigation {
+    gap: 7px;
+  }
+
+  .mb-source-reader-navigation > button {
+    width: 35px;
+    height: 35px;
+  }
+
+  .mb-source-reader-dots {
+    min-width: 38px;
+    gap: 4px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mb-source-reader-overlay,
+  .mb-source-reader-dialog,
+  .mb-source-reader-loading span {
+    animation: none;
+  }
+
+  .mb-source-reader-track {
+    scroll-behavior: auto;
+  }
+}
+
 /* Shared immersive decks use coloured illustration bands over a restrained
    paper card. In dark mode the paper becomes warm charcoal while illustrations
    retain their authored colours and every label keeps readable contrast. */

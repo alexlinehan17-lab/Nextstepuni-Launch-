@@ -26,6 +26,28 @@ This makes open-ended writing self-assessable without pretending that one model
 answer is the only valid answer. Exemplar responses can be added later as
 annotated calibration material, but must not replace the published rubric.
 
+## Required source material
+
+A prompt that says the response must be based on, supported by, or developed
+from a printed text is not a complete card until that text is available before
+the scheme reveal. Add `sourceMaterial` with:
+
+- the paper's own source label and title;
+- every one-based PDF page the source spans, in reading order; and
+- the author/publication acknowledgement printed at the end of the paper.
+
+The source reader renders those pages directly from Paper Trail's verified
+question-paper PDF. Do not retype the passage, manufacture a facsimile, point at
+the marking scheme, or add raster copies to the app bundle. Resolve
+`paperFileid` from the Paper Trail index and verify the pages visually against
+the local authoring PDF.
+
+Do not attach a long source merely because a self-contained writing prompt
+mentions its theme or includes a quotation from it. The test is whether a
+student needs to read the source to answer the exact task faithfully. This keeps
+Question B and composing cards focused while guaranteeing that every direct
+comprehension, unseen-poetry or other source-dependent ask is actually usable.
+
 ## What counts as one card
 
 A card represents every independently selectable response opportunity printed

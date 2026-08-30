@@ -187,6 +187,29 @@ export interface CardFigure {
   thirdPartyRights?: string;
 }
 
+/**
+ * Printed material a student must read before answering a card.
+ *
+ * This is deliberately separate from `CardFigure`. A source passage can span
+ * several pages and belongs on the QUESTION side of the reveal, whereas a
+ * figure is one bounded image and may itself be a worked solution. The pages
+ * are rendered from the real paper PDF already held by Paper Trail: no retyped
+ * passage, no fabricated facsimile, and no second copy bundled into the app.
+ */
+export interface CardSourceMaterial {
+  kind: 'source-text';
+  /** The paper's own identity for the source, e.g. "TEXT 1". */
+  label: string;
+  /** Human title printed in the reader header. */
+  title: string;
+  /** One-based PDF pages, in reading order. */
+  pages: number[];
+  /** The author/publication acknowledgement printed by the SEC. */
+  attribution: string;
+  /** Clarifies that the displayed layout is the official examination version. */
+  presentationNote: string;
+}
+
 /** Fields every card shares, whatever its provenance. */
 interface CardBase {
   /** No dots: a dot is a Firestore field-path separator, and card ids are used as
@@ -232,6 +255,9 @@ export interface SecCardBase extends CardBase {
   questionRef: string;
   /** Optional lead-in the paper prints before the question proper. */
   stem?: string;
+  /** Required reading carried by the question. It is available before reveal
+   *  and is rendered page-for-page from `paperFileid`. */
+  sourceMaterial?: CardSourceMaterial;
   /** Verbatim from the QUESTION PAPER — not the scheme. Required, always. */
   questionText: string;
   /** The tariff printed on the paper. Row marks must reconcile against this. */

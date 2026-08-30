@@ -16,6 +16,7 @@
  */
 
 import type {
+  CardSourceMaterial,
   PclmCriterion,
   PclmGradeBand,
   SecRubricCard,
@@ -61,6 +62,33 @@ const COMBINED_CRITERIA = [
   'Spelling and grammar appropriate to the register',
 ];
 
+const TEXT_1_SOURCE: CardSourceMaterial = {
+  kind: 'source-text',
+  label: 'TEXT 1',
+  title: 'The Underdog Effect — Changing Perspectives',
+  pages: [2, 3],
+  attribution: 'David Robson, BBC Essential, August 2024.',
+  presentationNote: 'Official 2025 SEC examination layout; edited for assessment.',
+};
+
+const TEXT_2_SOURCE: CardSourceMaterial = {
+  kind: 'source-text',
+  label: 'TEXT 2',
+  title: 'The Perspective of a ‘Wise Old Counsellor’',
+  pages: [4, 5],
+  attribution: 'Margaret Atwood, One Young World Congress, Montreal, September 2024.',
+  presentationNote: 'Official 2025 SEC examination layout; edited for assessment.',
+};
+
+const TEXT_3_SOURCE: CardSourceMaterial = {
+  kind: 'source-text',
+  label: 'TEXT 3',
+  title: 'Planet Earth from the Perspective of Space',
+  pages: [6, 7],
+  attribution: 'Samantha Harvey, Orbital, Jonathan Cape, 2023.',
+  presentationNote: 'Official 2025 SEC examination layout; edited for assessment.',
+};
+
 const permitted = (max: 5 | 10 | 15 | 30) => {
   if (max === 5) return range(0, 5);
   if (max === 10) return range(0, 10);
@@ -99,6 +127,7 @@ interface CardArgs {
   text: string;
   marks: 15 | 20 | 50 | 100;
   page: number;
+  source?: CardSourceMaterial;
   requirements: string[];
   indicative?: string[];
   purpose?: string[];
@@ -114,11 +143,12 @@ const makeCard = (args: CardArgs): SecRubricCard => ({
   source: 'sec',
   kind: 'rubric',
   year: 2025,
-  // The corpus download records the paper, but not a durable SEC file id in
-  // repository metadata. Null is required here rather than a guessed deep link.
-  paperFileid: null,
+  // Resolved from Paper Trail's 2025 English Higher entry. The source reader
+  // uses this same question-paper document; it never points at the scheme.
+  paperFileid: 'LC002ALP100EV',
   section: '1',
   questionRef: args.ref,
+  sourceMaterial: args.source,
   questionText: args.text,
   totalMarks: args.marks,
   schemeCitation: `SEC English Higher Level marking scheme 2025, p.${args.page} — © State Examinations Commission.`,
@@ -149,6 +179,7 @@ export const CARDS: SecRubricCard[] = [
   makeCard({
     id: 'english-2025-hl-p1-t1-a-i', conceptId: 'english-comprehending-insights',
     topicId: 'english-10-0', ref: '2025 HL Paper 1 Text 1 QA(i)', marks: 15, page: 4,
+    source: TEXT_1_SOURCE,
     text: 'Based on your reading of TEXT 1, what insights do you gain about how the ‘underdog effect’ can influence our perspectives? Make three points, supporting your response with reference to the text.',
     requirements: ['Explain three insights about how the ‘underdog effect’ can influence perspectives', 'Support the response with reference to TEXT 1'],
     indicative: [
@@ -163,12 +194,14 @@ export const CARDS: SecRubricCard[] = [
   makeCard({
     id: 'english-2025-hl-p1-t1-a-ii', conceptId: 'english-comprehending-viewpoint',
     topicId: 'english-10-0', ref: '2025 HL Paper 1 Text 1 QA(ii)', marks: 15, page: 5,
+    source: TEXT_1_SOURCE,
     text: 'To what extent do you agree with the writer’s claim, in TEXT 1, that humankind has a “fixation on status and prestige”? Develop at least two points in your response.',
     requirements: ['Take a clear position on the extent of agreement or disagreement', 'Develop at least two points', 'Address the claim about humankind’s “fixation on status and prestige”'],
   }),
   makeCard({
     id: 'english-2025-hl-p1-t1-a-iii', conceptId: 'english-comprehending-style',
     topicId: 'english-10-0', ref: '2025 HL Paper 1 Text 1 QA(iii)', marks: 20, page: 5,
+    source: TEXT_1_SOURCE,
     text: '“In TEXT 1, David Robson uses elements of language that are effective in making this article both informative and thought-provoking.” To what extent do you agree with this statement? Support your answer with reference to four elements of Robson’s style from the text.',
     requirements: ['Judge the extent to which the statement is convincing', 'Engage with both “informative” and “thought-provoking”', 'Discuss four elements of Robson’s style', 'Support the response with reference to TEXT 1'],
     indicative: [
@@ -192,6 +225,7 @@ export const CARDS: SecRubricCard[] = [
   makeCard({
     id: 'english-2025-hl-p1-t2-a-i', conceptId: 'english-comprehending-insights',
     topicId: 'english-10-0', ref: '2025 HL Paper 1 Text 2 QA(i)', marks: 15, page: 7,
+    source: TEXT_2_SOURCE,
     text: 'Based on your reading of TEXT 2 what insights do you gain about Margaret Atwood’s perspective on current world problems? Make three points, supporting your response with reference to the text.',
     requirements: ['Explain three insights into Atwood’s perspective on current world problems', 'Support the response with reference to TEXT 2'],
     indicative: [
@@ -206,12 +240,14 @@ export const CARDS: SecRubricCard[] = [
   makeCard({
     id: 'english-2025-hl-p1-t2-a-ii', conceptId: 'english-comprehending-viewpoint',
     topicId: 'english-10-0', ref: '2025 HL Paper 1 Text 2 QA(ii)', marks: 15, page: 7,
+    source: TEXT_2_SOURCE,
     text: 'To what extent do you agree with the observation, in TEXT 2, that in order to address world problems, “all beneficial actions must be local and grounded”? Develop at least two points in your response.',
     requirements: ['Take a clear position on the extent of agreement or disagreement', 'Develop at least two points', 'Address whether beneficial action must be “local and grounded”'],
   }),
   makeCard({
     id: 'english-2025-hl-p1-t2-a-iii', conceptId: 'english-comprehending-style',
     topicId: 'english-10-0', ref: '2025 HL Paper 1 Text 2 QA(iii)', marks: 20, page: 8,
+    source: TEXT_2_SOURCE,
     text: '“In TEXT 2, Margaret Atwood uses elements of language that are effective in making this speech both engaging and inspiring.” To what extent do you agree with this statement? Support your answer with reference to four elements of Atwood’s style from the text.',
     requirements: ['Judge the extent to which the statement is convincing', 'Engage with both “engaging” and “inspiring”', 'Discuss four elements of Atwood’s style', 'Support the response with reference to TEXT 2'],
     indicative: [
@@ -235,6 +271,7 @@ export const CARDS: SecRubricCard[] = [
   makeCard({
     id: 'english-2025-hl-p1-t3-a-i', conceptId: 'english-comprehending-insights',
     topicId: 'english-10-0', ref: '2025 HL Paper 1 Text 3 QA(i)', marks: 15, page: 10,
+    source: TEXT_3_SOURCE,
     text: 'Based on your reading of TEXT 3 what insights do you gain about planet Earth by viewing it from the perspective of space? Make three points, supporting your response with reference to the text.',
     requirements: ['Explain three insights about Earth viewed from space', 'Support the response with reference to TEXT 3'],
     indicative: [
@@ -249,12 +286,14 @@ export const CARDS: SecRubricCard[] = [
   makeCard({
     id: 'english-2025-hl-p1-t3-a-ii', conceptId: 'english-comprehending-viewpoint',
     topicId: 'english-10-0', ref: '2025 HL Paper 1 Text 3 QA(ii)', marks: 15, page: 10,
+    source: TEXT_3_SOURCE,
     text: 'To what extent do you agree with the view, in TEXT 3, that, “striking out, further and deeper” into space is worthwhile? Develop at least two points in your response.',
     requirements: ['Take a clear position on the extent of agreement or disagreement', 'Develop at least two points', 'Address whether deeper space exploration is worthwhile'],
   }),
   makeCard({
     id: 'english-2025-hl-p1-t3-a-iii', conceptId: 'english-comprehending-style',
     topicId: 'english-10-0', ref: '2025 HL Paper 1 Text 3 QA(iii)', marks: 20, page: 11,
+    source: TEXT_3_SOURCE,
     text: '“In TEXT 3, Samantha Harvey uses elements of language that are effective in making the writing in this passage both elegant and thought-provoking.” To what extent do you agree with this statement? Support your answer with reference to four elements of Harvey’s style from the text.',
     requirements: ['Judge the extent to which the statement is convincing', 'Engage with both “elegant” and “thought-provoking”', 'Discuss four elements of Harvey’s style', 'Support the response with reference to TEXT 3'],
     indicative: [
@@ -332,4 +371,3 @@ export const CARDS: SecRubricCard[] = [
     coherence: ['Successfully shape, develop and sustain the narrative', 'Sequence and manage ideas effectively'],
   }),
 ];
-
