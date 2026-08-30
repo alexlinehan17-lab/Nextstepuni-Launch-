@@ -143,6 +143,36 @@ ROMAN_ORDER = {r: i for i, r in enumerate(
 
 
 
+class _EngSource:
+    """eng_scheme.EngScheme behind the interface Author expects of a scheme.
+
+    The Engineering scheme is read off the page, but the build's provenance
+    gate reads the MARKDOWN extraction, so verify() is answered by the
+    markdown as it is for every other subject: a claim lifted from the PDF has
+    to appear in the document the gate checks against.
+    """
+
+    def __init__(self, scheme, md):
+        self._scheme, self._md = scheme, md
+        self.path = md.path
+
+    def points(self, q, letter=None, roman=None):
+        # Everything at this key and beneath it, because that is what the key's
+        # tariff prices. `use` indexes into THIS list, so the author and the
+        # card must be reading the same one.
+        return self._scheme.points_under(q, letter, roman)
+
+    def marks(self, q, letter=None, roman=None):
+        t = self._scheme.tariff(q, letter, roman)
+        return [str(t)] if t else []
+
+    def verify(self, claims):
+        return self._md.verify(claims)
+
+    def paths(self):
+        return list(self._scheme.body())
+
+
 class _CsSource:
     """cs_scheme.CsScheme behind the interface Author expects of a scheme.
 
@@ -310,12 +340,15 @@ class Author:
         elif subject == 'computer-science':
             from cs_scheme import CsScheme
             self.scheme_table = _CsSource(CsScheme(year, level), self.scheme)
+        elif subject == 'engineering':
+            from eng_scheme import EngScheme
+            self.scheme_table = _EngSource(EngScheme(year, level), self.scheme)
         self.cards = []
 
     def _source(self, source):
         if source == 'table':
             if self.scheme_table is None:
-                raise Refused('source="table" is Chemistry only')
+                raise Refused(f'source="table" has no reader for {self.subject}')
             return self.scheme_table
         if source not in ('md', 'pdf'):
             raise Refused(f'unknown scheme source {source!r} — use "md", "pdf" '
@@ -365,6 +398,7 @@ class Author:
         # Computer Science prices Section A at the question and prints the ask
         # only under (a) and (b), so the parent's own text is empty and a card
         # citing the question was refused for having no question text at all.
+        joined_kids = False
         if roman is None and len(' '.join((question or '').split())) < 40:
             kids = [k for k in self.paper.parts
                     if k[0] == q
@@ -377,6 +411,7 @@ class Author:
                     for k in kids)
                 if tail.strip():
                     question = f'{(question or "").rstrip()} {tail}'.strip()
+                    joined_kids = True
 
         # A PROGRAM the crop carries, taken back out of the question text.
         # Computer Science prints its listings inside the question block, and
@@ -428,7 +463,14 @@ class Author:
         # full stop: what made it look truncated was the program running off
         # its end.
         flagged = self.paper.suspect(q, letter, roman)
-        if flagged and listing_removed and PAPER_TERMINAL.search(question.strip()):
+        # The flag is raised on what the paper BLOCK held. Where the children
+        # have been joined on, the text the card carries is a different string
+        # and answers the flag on its own terms: a part that reads "Answer any
+        # three of the following:" is flagged for stopping on a colon, and
+        # once its three children are joined it ends in a full stop like any
+        # other question.
+        if flagged and (listing_removed or joined_kids) \
+                and PAPER_TERMINAL.search(question.strip()):
             flagged = False
         if not first_sentence and flagged and not checked:
             raise Refused(

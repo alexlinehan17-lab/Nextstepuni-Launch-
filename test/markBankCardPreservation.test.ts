@@ -33,6 +33,8 @@ import { CARDS as CS_HIGHER } from '../components/MarkBank/cards/computer-scienc
 import { CARDS as CS_ORDINARY } from '../components/MarkBank/cards/computer-science/ordinary';
 import { CARDS as CONS_HIGHER } from '../components/MarkBank/cards/construction-studies/higher';
 import { CARDS as CONS_ORDINARY } from '../components/MarkBank/cards/construction-studies/ordinary';
+import { CARDS as ENG_HIGHER } from '../components/MarkBank/cards/engineering/higher';
+import { CARDS as ENG_ORDINARY } from '../components/MarkBank/cards/engineering/ordinary';
 
 const decks = [
   ['biology:higher', BIO_HIGHER, 673, '45f278ef15f8d35a8a4393a0e8d01d7e5484e73a881844880dc090daeb9ce836'],
@@ -468,6 +470,12 @@ const decks = [
   ['computer-science:ordinary', CS_ORDINARY, 127, '15c1f77f5c96c66290a8f9d59845a12aa4c851a8b5177410f08a651146332731'],
   ['construction-studies:higher', CONS_HIGHER, 255, 'b74a39fd589f1082d6378190aee778d528eff0968d7af0ee9144525f2e40d57b'],
   ['construction-studies:ordinary', CONS_ORDINARY, 250, 'f56985e32cc1f02a2e2f7a7eb300a44646b75cf3604a12b5a478bde2a520d2da'],
+  /* 2026-08-30: Engineering opens at 66/4, covering 171 of its 806 asks. The
+   * Ordinary count is low because that level prints most of its parts as
+   * option lists the census counts as leaves, and the four cards there cover
+   * far more asks than four. This is the floor, not the target. */
+  ['engineering:higher', ENG_HIGHER, 66, '2d0e66b47ee222a3e7e7409d42f15ca0bc6da731c9395299c62312c95dfe05d4'],
+  ['engineering:ordinary', ENG_ORDINARY, 4, '03940f2e610cbfb601507e523ce6455a9c008fc17301d8812f2fdf8eef859c73'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -482,6 +490,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7787);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7857);
   });
 });

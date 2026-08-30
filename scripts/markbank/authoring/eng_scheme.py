@@ -390,6 +390,25 @@ class EngScheme:
                 out[-1] = f'{out[-1]} {line}'.strip()
         return [x for x in out if x]
 
+    def points_under(self, q, letter=None, roman=None):
+        """This key's marking points AND every key beneath it, in page order.
+
+        The scheme prices "(b) Any three @ 6 + 6 + 6" ONCE and then answers
+        (b)(i), (b)(ii) and (b)(iii) underneath it. A card citing (b) claims
+        the tariff for all three, so it has to carry all three; a card citing
+        (b)(i) alone could not claim it.
+        """
+        out = []
+        for key in self.body():
+            if key[0] != q:
+                continue
+            if letter is not None and key[1] != letter:
+                continue
+            if roman is not None and key[2] != roman:
+                continue
+            out.extend(self.points(*key))
+        return out
+
     def lead(self, q, letter=None, roman=None):
         b = self.body().get((q, letter, roman))
         return b['lead'] if b else None

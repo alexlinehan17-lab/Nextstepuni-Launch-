@@ -702,6 +702,44 @@ export const MATHS_STRANDS: StrandRef[] = [
  *  ANALYTICS"). Strand 3's tasks are titled in capitals in the document and
  *  are given here in sentence case, which is the only change made to any of
  *  this wording. */
+/* The syllabus's own headings for section 2, "Materials and Technology",
+ * which is what the written examination covers, plus the mechanisms heading
+ * from section 1's TECHNOLOGY ("prime movers, power transmission systems,
+ * brakes and other mechanisms"). Grouped into three for the shelf; the
+ * headings themselves are the syllabus's, in its order. */
+export const ENGINEERING_STRANDS: StrandRef[] = [
+  {
+    id: 'eng1', label: 'Materials', title: 'Materials',
+    topics: [
+      { id: 'eng-1-2', code: 'M', title: 'Classification and origin of metals' },
+      { id: 'eng-1-3', code: 'M', title: 'Structure of metals' },
+      { id: 'eng-1-4', code: 'M', title: 'Iron and steel' },
+      { id: 'eng-1-5', code: 'M', title: 'Non-ferrous metals' },
+      { id: 'eng-1-9', code: 'M', title: 'Plastics' },
+    ],
+  },
+  {
+    id: 'eng2', label: 'Processes', title: 'Processes',
+    topics: [
+      { id: 'eng-2-6', code: 'P', title: 'Heat treatment of metals' },
+      { id: 'eng-2-10', code: 'P', title: 'Joining of materials' },
+      { id: 'eng-2-11', code: 'P', title: 'Machining' },
+      { id: 'eng-2-13', code: 'P', title: 'Manufacturing processes' },
+      { id: 'eng-2-15', code: 'P', title: 'Mechanisms and power transmission' },
+    ],
+  },
+  {
+    id: 'eng3', label: 'Properties and practice', title: 'Properties and practice',
+    topics: [
+      { id: 'eng-3-1', code: 'T', title: 'Health and safety' },
+      { id: 'eng-3-7', code: 'T', title: 'Corrosion of metals' },
+      { id: 'eng-3-8', code: 'T', title: 'Materials testing' },
+      { id: 'eng-3-12', code: 'T', title: 'Metrology' },
+      { id: 'eng-3-14', code: 'T', title: 'Technology and design' },
+    ],
+  },
+];
+
 export const COMPUTER_SCIENCE_STRANDS: StrandRef[] = [
   {
     id: 'cs1', label: 'Strand 1', title: 'Practices and principles',
@@ -744,6 +782,7 @@ export const SUBJECTS = [
   { id: 'construction-studies', title: 'Construction Studies', strands: CONSTRUCTION_STUDIES_STRANDS, spec: 'Ordinary and Higher Level syllabus' },
   { id: 'maths', title: 'Mathematics', strands: MATHS_STRANDS, spec: 'syllabus for examination from 2015' },
   { id: 'computer-science', title: 'Computer Science', strands: COMPUTER_SCIENCE_STRANDS, spec: 'specification examined from 2020' },
+  { id: 'engineering', title: 'Engineering', strands: ENGINEERING_STRANDS, spec: 'Materials and Technology syllabus' },
 ] as const;
 
 export type SubjectId = (typeof SUBJECTS)[number]['id'];
@@ -988,6 +1027,10 @@ const DECKS: Record<string, Record<Level, () => Promise<{ CARDS: SecCard[] }>>> 
   maths: {
     higher: () => import('./cards/maths/higher'),
     ordinary: () => import('./cards/maths/ordinary'),
+  },
+  engineering: {
+    higher: () => import('./cards/engineering/higher'),
+    ordinary: () => import('./cards/engineering/ordinary'),
   },
   'computer-science': {
     higher: () => import('./cards/computer-science/higher'),

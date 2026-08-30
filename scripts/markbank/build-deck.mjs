@@ -35,6 +35,17 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 /** Per-subject facts the generated module needs. Adding a subject means adding
  *  a row here, and nothing else in this script changes. */
 const SUBJECTS = {
+  engineering: {
+    title: 'Engineering',
+    /* The syllabus's section 2, "Materials and Technology", is what the
+     * written examination covers -- 300 marks at Higher, 200 at Ordinary.
+     * Its fourteen headings are the topics, plus the mechanisms heading from
+     * section 1. See ENGINEERING_STRANDS. */
+    specVersion: 'lc-engineering-materials-and-technology',
+    specNote: 'Cards are tagged to the headings of the Engineering syllabus, section 2 Materials and Technology.\n * The written paper sets nine questions of 50 marks at Higher and seven at Ordinary; candidates answer six and four.',
+    figureDir: 'public/exam-figures/engineering',
+    blocked: new Set(),
+  },
   'computer-science': {
     title: 'Computer Science',
     /* The specification first examined in 2020 -- the one these papers were

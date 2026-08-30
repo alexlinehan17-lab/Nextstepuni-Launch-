@@ -38,5 +38,9 @@
  "computer-science": {
   "higher": 209,
   "ordinary": 127
+ },
+ "engineering": {
+  "higher": 66,
+  "ordinary": 4
  }
 }
