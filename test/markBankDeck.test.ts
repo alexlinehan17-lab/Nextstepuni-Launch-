@@ -307,6 +307,24 @@ describe('figures are real crops from the paper', () => {
 /* ------------------------------------------------------------ paper ids --- */
 
 describe('every card points at the question paper it came from', () => {
+  test('required source material has a real paper and ordered page numbers', () => {
+    const bad: string[] = [];
+    for (const card of SAMPLE_CARDS) {
+      const source = card.sourceMaterial;
+      if (!source) continue;
+      const pagesAreValid = source.pages.length > 0
+        && source.pages.every(page => Number.isInteger(page) && page > 0)
+        && new Set(source.pages).size === source.pages.length
+        && source.pages.every((page, index) => index === 0 || page > source.pages[index - 1]);
+      if (!card.paperFileid) bad.push(`${card.questionRef}: source pages have no question-paper file id`);
+      if (!pagesAreValid) bad.push(`${card.questionRef}: invalid source pages ${JSON.stringify(source.pages)}`);
+      if (!source.label.trim() || !source.title.trim() || !source.attribution.trim()) {
+        bad.push(`${card.questionRef}: source identity or attribution is blank`);
+      }
+    }
+    expect(bad, show(bad)).toEqual([]);
+  });
+
   test('never at the marking scheme', async () => {
     // The first Biology build defaulted paperFileid to a literal, and that
     // literal was the SCHEME's id — so a deep link would have opened the answers

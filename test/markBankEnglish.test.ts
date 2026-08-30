@@ -119,4 +119,30 @@ describe('English PCLM cards', () => {
     expect(pclmMarks(card, { combined: 12 })).toBe(12);
     expect(suggestPclmGrade(card, { combined: 12 })).toBe('got');
   });
+
+  it('carries every required comprehension text on the question side', () => {
+    const expected = new Map([
+      ['Text 1', [2, 3]],
+      ['Text 2', [4, 5]],
+      ['Text 3', [6, 7]],
+    ]);
+    const comprehension = CARDS.filter(card => / QA\([ivx]+\)$/.test(card.questionRef));
+
+    expect(comprehension).toHaveLength(9);
+    for (const card of comprehension) {
+      const text = card.questionRef.match(/Text [123]/)?.[0];
+      expect(text, card.questionRef).toBeDefined();
+      expect(card.paperFileid, card.questionRef).toBe('LC002ALP100EV');
+      expect(card.sourceMaterial, card.questionRef).toBeDefined();
+      expect(card.sourceMaterial?.label, card.questionRef).toBe(text?.toUpperCase());
+      expect(card.sourceMaterial?.pages, card.questionRef).toEqual(expected.get(text!));
+      expect(card.sourceMaterial?.attribution, card.questionRef).not.toMatch(/marking scheme/i);
+    }
+  });
+
+  it('does not pretend a self-contained writing prompt requires the passage', () => {
+    const selfContained = CARDS.filter(card => !/ QA\([ivx]+\)$/.test(card.questionRef));
+    expect(selfContained).toHaveLength(10);
+    expect(selfContained.filter(card => card.sourceMaterial).map(card => card.questionRef)).toEqual([]);
+  });
 });

@@ -26,6 +26,12 @@ import SessionScreen, {
 } from '@/components/MarkBank/SessionScreen';
 import { tariffReconciles, type MarkRow, type SecCard, type SecDiagramCard, type SecQuestionCard } from '@/types/markBank';
 
+vi.mock('@/components/PaperTrail/vaultDocs', () => ({
+  // Source-reader interaction is independent of PDF rasterisation. Keep the
+  // document in its deliberate loading state here; Paper Trail owns canvas QA.
+  vaultPdf: vi.fn(() => new Promise(() => {})),
+}));
+
 const row = (o: Partial<MarkRow> = {}): MarkRow => ({ id: 'r0', kind: 'point', verbatim: 'Oesophagus', marks: 2, ...o });
 
 const card = (o: Partial<SecQuestionCard> = {}): SecQuestionCard => ({
@@ -218,6 +224,40 @@ describe('the question comes first and stays', () => {
     expect(screen.getByRole('heading', { name: /Work with the wording/i })).toBeInTheDocument();
     expect(screen.getAllByText('Name the parts labelled A and B.').length).toBeGreaterThanOrEqual(1);
     expect(screen.queryByText('Oesophagus')).not.toBeInTheDocument();
+  });
+
+  test('opens required source pages before reveal and lets the student move through them', () => {
+    renderSession([card({
+      subjectId: 'english',
+      paperFileid: 'LC002ALP100EV',
+      questionText: 'Support your answer with reference to TEXT 1.',
+      sourceMaterial: {
+        kind: 'source-text',
+        label: 'TEXT 1',
+        title: 'The Underdog Effect — Changing Perspectives',
+        pages: [2, 3],
+        attribution: 'David Robson, BBC Essential, August 2024.',
+        presentationNote: 'Official SEC examination layout.',
+      },
+    })]);
+
+    fireEvent.click(screen.getByRole('button', { name: /Read TEXT 1/i }));
+    expect(screen.getByRole('dialog', { name: /The Underdog Effect/i })).toBeInTheDocument();
+    expect(screen.getByText('Printed page 2')).toBeInTheDocument();
+    expect(screen.queryByText('Oesophagus')).not.toBeInTheDocument();
+
+    const pages = screen.getByLabelText('TEXT 1 pages');
+    fireEvent.touchStart(pages, { touches: [{ clientX: 320, clientY: 360 }] });
+    fireEvent.touchEnd(pages, { changedTouches: [{ clientX: 80, clientY: 365 }] });
+    expect(screen.getByLabelText('Page 2 of 2')).toBeInTheDocument();
+    expect(screen.getByText('Printed page 3')).toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole('button', { name: /Previous source page/i }));
+    expect(screen.getByLabelText('Page 1 of 2')).toBeInTheDocument();
+
+    fireEvent.keyDown(screen.getByRole('dialog'), { key: 'Escape' });
+    expect(screen.queryByRole('dialog', { name: /The Underdog Effect/i })).not.toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Reveal the marking scheme/i })).toBeInTheDocument();
   });
 
   test('reads numbered question parts with their wording instead of as isolated numbers', () => {
