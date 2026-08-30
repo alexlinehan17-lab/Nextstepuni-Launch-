@@ -281,8 +281,14 @@ const decks = [
    * Q9(b); 2023 HL P1 Q6(a), Q9(a); 2025 OL P1 Q10(c), P2 Q9(a), Q9(b).
    * Four more are the same ask under a corrected id and are still covered:
    * 2021 OL P2 Q6(b)(ii), 2022 HL P1 Q10(c)(ii), 2023 OL P1 Q10(b)(ii),
-   * 2024 OL P2 Q1(a)(ii). Open asks 73 -> 50. */
-  ['maths:higher', MATHS_HIGHER, 397, '198c0cc36c05271a2f05f54565d032f7c38ee603b888164e5abc7fc2790f3045'],
+   * 2024 OL P2 Q1(a)(ii). Open asks 73 -> 50.
+   *
+   * Then one more, ADDED not removed: 2025 HL scheme page 8 heads a unit
+   * "(c)(d)" -- two letters on one line, over a single scale. The second went
+   * into the ROMAN slot, so the card cited "Q8(c)(d)" and the paper reader,
+   * asked for a part (d) underneath a letter (c), found no question text and
+   * refused. It cites "Q8(c), (d)" now. 939/989 -> 941/989, open 50 -> 48. */
+  ['maths:higher', MATHS_HIGHER, 398, '39e8bdf9425336b1d19f5827df8fb9b811f117781b610adf6456ed9213583d25'],
   ['maths:ordinary', MATHS_ORDINARY, 435, '1739cbe00b51bbe9aed6df6e1226780777f965ec94c9492743cf2ec8df35990e'],
   ['construction-studies:higher', CONS_HIGHER, 255, 'b74a39fd589f1082d6378190aee778d528eff0968d7af0ee9144525f2e40d57b'],
   ['construction-studies:ordinary', CONS_ORDINARY, 250, 'f56985e32cc1f02a2e2f7a7eb300a44646b75cf3604a12b5a478bde2a520d2da'],
@@ -300,6 +306,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7417);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7418);
   });
 });
