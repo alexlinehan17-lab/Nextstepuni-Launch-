@@ -141,6 +141,17 @@ class Scheme:
             if not scales:
                 continue
             bounds = scales + [1e9]
+            # A marker the PREVIOUS band saw and discarded as "the next unit's"
+            # -- see below. It is handed forward rather than found again,
+            # because the lookback that would find it varies: 2021 OL scheme
+            # page 9 sets Q1(d)'s marker 14.6 points above its own scale line,
+            # so the 8-point lookback missed it and the unit shipped LETTERLESS
+            # -- keyed as the whole of Q1, carrying a crop of all four parts and
+            # a 10-mark tariff against a 30-mark question. Widening the lookback
+            # to suit would risk stealing the marker that genuinely belongs to
+            # the band above; carrying forward what has already been identified
+            # cannot.
+            carried = None
             for n, y0 in enumerate(scales):
                 # A unit runs from ITS OWN scale to the next, not from the
                 # previous one: using the previous scale shifted every band up
@@ -176,8 +187,12 @@ class Scheme:
                         # on named a unit after the one that follows it: 2021 OL
                         # Paper 1 Q3(b) was keyed as Q3(c), collided with the
                         # real Q3(c), and one of the two was dropped.
+                        carried = (a, b or None)
                         break
                     letter, roman = a, (b or None)
+                if letter is None and carried is not None:
+                    letter, roman = carried
+                    carried = None
                 # One scale, several romans: the scheme heads a unit
                 # "(a) (i) & (ii)" and marks both parts together. Keeping only
                 # the last roman filed the unit under (ii) and left (i) with no
