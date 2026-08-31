@@ -238,6 +238,12 @@ QA_PASSED_ANSWER_PROFILES = {
     ('biology', 'higher', 'iv'),
     ('business', 'higher', 'iv'),
     ('business', 'ordinary', 'iv'),
+    # Dormant bespoke waves lit at last (render-verified now): JC History
+    # (jc_history.py, 2022-25 — Q5's Home Rule sources open their leader
+    # answers) and History Early Modern (hem_history.py, 2021-22 HL — the
+    # Magrath DBQ opens its Criticism indicative points).
+    ('jc-history', 'common', 'ev'),
+    ('history-early-modern', 'higher', 'ev'),
     ('chemistry', 'higher', 'iv'),
     ('chemistry', 'ordinary', 'iv'),
     ('computer-science', 'higher', 'iv'),
@@ -394,6 +400,12 @@ QA_PASSED_ANSWER_PROFILES = {
     # 6's denitrification answers; Construction Q10 its EnerPHit model answer;
     # Chemistry HL Q11 its propanone redox block; Accounting HL Q6 the Olivette
     # P&L; Applied Maths HL Q10 the completed scheduling network.
+    # Dormant bespoke waves lit at last (render-verified now): JC History
+    # (jc_history.py, 2022-25 — Q5's Home Rule sources open their leader
+    # answers) and History Early Modern (hem_history.py, 2021-22 HL — the
+    # Magrath DBQ opens its Criticism indicative points).
+    ('jc-history', 'common', 'ev'),
+    ('history-early-modern', 'higher', 'ev'),
     ('chemistry', 'higher', 'iv'),
     ('construction-studies', 'higher', 'iv'),
     ('construction-studies', 'ordinary', 'iv'),
