@@ -802,6 +802,20 @@ def main():
         return (code[:2].upper() in SCOPE_EXAMS
                 and code not in DONE_CODES
                 and (SCOPE_CODES is None or code in SCOPE_CODES))
+
+    # Lang/level guard: a run scoped to --langs IV must clear ONLY the IV
+    # sidecars of an in-scope code — the code prefix alone is lang-blind, and
+    # clearing by code would delete committed EV sidecars this run cannot
+    # regenerate (the bespoke-authored ones most of all). Same for levels.
+    _sidecar_re = re.compile(r"^(LC|JC|LB)\d{3}([A-Z])L?P[A-Z0-9]{3}(EV|IV|BV)\.pdf\.json$", re.I)
+
+    def in_scope_sidecar(fn):
+        m = _sidecar_re.match(fn)
+        if not m:
+            return False  # unrecognised name — never delete what we can't parse
+        return (in_scope_code(fn[:5])
+                and m.group(2).upper() in SCOPE_LEVELS
+                and m.group(3).upper() in SCOPE_LANGS)
     if os.path.isdir(ANSWERS_DIR):
         for yd in os.listdir(ANSWERS_DIR):
             ydp = os.path.join(ANSWERS_DIR, yd)
@@ -809,7 +823,7 @@ def main():
                 continue
             if os.path.isdir(ydp):
                 for fn in os.listdir(ydp):
-                    if in_scope_code(fn[:5]):
+                    if in_scope_sidecar(fn):
                         os.remove(os.path.join(ydp, fn))
 
     manifest_lines, report_rows = [], []
