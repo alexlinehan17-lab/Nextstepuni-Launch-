@@ -61,10 +61,10 @@ def lines_with_pos(page):
     return out
 
 
-Q_RE = re.compile(r"^Question\s+(\d+)\b", re.I)
+Q_RE = re.compile(r"^(?:Question|Ceist)\s+(\d+)\b", re.I)
 # 'N. text', 'N. 30 marks' or a standalone 'N.' line (CS schemes number answers
 # with a bare marker line and put the body beside/below it).
-LEAD_RE = re.compile(r"^(\d{1,2})\.(\s|$)")
+LEAD_RE = re.compile(r"^(\d{1,2})\s?\.(\s|$)")
 
 
 def paper_questions(doc):
@@ -89,7 +89,7 @@ def scheme_question_blocks(doc):
             if m:
                 n = int(m.group(1))
                 # ignore essay-range headers like 'Question 11 (b) – Question 16'
-                if re.search(r"–\s*Question", txt, re.I):
+                if re.search(r"[–-]\s*(?:Question|Ceist)", txt, re.I):
                     continue
                 if n not in seen:
                     seen[n] = (pi + 1, y)
@@ -149,7 +149,8 @@ def paper_yband(qmap, n, doc_len):
     return [round(y, 4), round(same[0], 4) if same else 1.0]
 
 
-def build_map(paper_path, scheme_path, subject):
+def build_map(paper_path, scheme_path, subject, lang="ev"):
+    iv = lang == "iv"
     paper = fitz.open(paper_path)
     scheme = fitz.open(scheme_path)
     S = len(scheme)
@@ -164,7 +165,7 @@ def build_map(paper_path, scheme_path, subject):
     qs = []
 
     if subject == "politics-and-society":
-        rubric = find_header(scheme, r"^Section\s+C\b")
+        rubric = find_header(scheme, r"^(?:Section|Roinn)\s+C\b")
         if not rubric:
             return None, "no Section C rubric block in scheme"
         # per-question blocks, ordered; regions run block→next block / rubric
@@ -181,11 +182,19 @@ def build_map(paper_path, scheme_path, subject):
         for n in menu_ns:
             if n <= max(block_ns, default=0):
                 return None, f"unmatched non-essay question Q{n}"
-            qs.append((n, rsegs, f"Question {n} · Section C — common marking criteria"))
+            qs.append((n, rsegs,
+                       (f"Ceist {n} · Roinn C — critéir choiteanna mharcála" if iv
+                        else f"Question {n} · Section C — common marking criteria")))
     elif subject == "classical-studies":
         ESSAY_PAT = (r"(Question\s+11\s*\(b\)\s*[–-]\s*Question\s+16"
                      r"|Questions?\s+12\s*[–-]\s*16"
-                     r"|Each of these questions has the same marking scheme)")
+                     r"|Each of these questions has the same marking scheme"
+                     # Irish-medium (IV) twins of the same headers
+                     r"|Ceist\s+11\s*\(b\)\s*[–-]\s*Ceist\s+16"
+                     r"|Ceisteanna\s+12\s*[–-]\s*16:"
+                     r"|^12\.?\s*[–-]\s*16\b"
+                     r"|úsáidtear an scéim mharcála ch?éanna"
+                     r"|^Le haghaidh gach ceann de na ceisteanna)")
         # Q11's own block starts at 'Question 11' or the '11a …' descriptor grid.
         q11 = sq.get(11) or find_header(scheme, r"^11a\b")
         # Common essay block: positioned AFTER Q11's block start when Q11 has one
@@ -221,7 +230,9 @@ def build_map(paper_path, scheme_path, subject):
                 start = 12
         rsegs = region_between(essay_hdr, None, S)
         for n in range(start, max(ns) + 1):
-            qs.append((n, rsegs, f"Question {n} · common essay marking scheme"))
+            qs.append((n, rsegs,
+                       (f"Ceist {n} · scéim mharcála choiteann na n-aistí" if iv
+                        else f"Question {n} · common essay marking scheme")))
     else:
         return None, f"unknown subject grammar {subject}"
 
@@ -265,7 +276,7 @@ def main():
         sp = os.path.join(corpus, f"{t['sid']}_{t['year']}_{t['level']}_scheme.pdf")
         if not (os.path.exists(pp) and os.path.exists(sp)):
             continue
-        sidecar, err = build_map(pp, sp, t["sid"])
+        sidecar, err = build_map(pp, sp, t["sid"], t.get("lang", "ev"))
         if sidecar is None:
             print(f"DROP {t['sid']} {t['year']} {t['level']}: {err}")
             drop += 1

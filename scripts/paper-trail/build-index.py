@@ -374,6 +374,15 @@ QA_PASSED_ANSWER_PROFILES = {
     # is continuous so whole-paper maps are safe), JC Applied Technology's
     # written paper is an answered copy of itself (the old "practical" ⛔ was
     # wrong for the written exam). LCA Gaeilge regenerations verified richer.
+    # Wave-10 IV (same session): wave10_sections.py gained the Irish grammar
+    # (Ceist headers, 'Ceist 11(b) – Ceist 16' / '12-16' range variants,
+    # spaced-dot markers, Irish chip labels). Renders: Classical HL IV Q9 opens
+    # the Aeinéid block; P&S HL IV Q1 its restated marking notes; essay chips
+    # open the common criteria with Irish labels.
+    ('classical-studies', 'higher', 'iv'),
+    ('classical-studies', 'ordinary', 'iv'),
+    ('politics-and-society', 'higher', 'iv'),
+    ('politics-and-society', 'ordinary', 'iv'),
     ('jc-irish', 'higher', 'iv'),
     ('jc-irish', 'ordinary', 'iv'),
     ('jc-mathematics', 'higher', 'iv'),
