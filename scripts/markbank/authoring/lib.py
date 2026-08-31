@@ -406,8 +406,14 @@ class Author:
         # its children, and without them the card cannot be answered and files
         # under no syllabus topic either, because every topic word it has is
         # in the names.
+        # ... and so does one that says "of the following:" anywhere in it. The
+        # colon is the signal and it is not always the last character: 2025 HL
+        # Q9(b) reads "Answer any three of the following: inspection robot",
+        # the lead-in with the first item already run onto it, and its five
+        # romans are the list it is introducing.
         _q = ' '.join((question or '').split())
-        if roman is None and (len(_q) < 40 or _q.endswith(':')):
+        if roman is None and (len(_q) < 40 or _q.endswith(':')
+                              or re.search(r'\bfollowing\s*:', _q)):
             kids = [k for k in self.paper.parts
                     if k[0] == q
                     and (k[1] == letter if letter else k[1] is not None or k[2])

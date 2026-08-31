@@ -1729,6 +1729,48 @@
   "notes": "The scheme prints 'Two parts @ 4 marks (8)'."
  },
  {
+  "id": "eng-2021-ol-q6-b",
+  "topicId": "eng-2-11",
+  "conceptId": "any-following-relation-machining-cutting-fluids",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q6(b)",
+  "questionText": "Describe any three of the following in relation to machining: (i) Cutting fluids, (ii) Clearance angle, (iii) Chuck key, (iv) Depth of cut.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "One part @ 6 marks; Two parts @ 5 marks (16)"
+  },
+  "totalMarks": 16,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Cutting fluids are used when machining metals to improve tool life, reduce the buildup of heat, improve surface finish and flush away chips from the cutting zone.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Without a clearance angle, no cutting would take place. The clearance angle ensures that only the cutting edge of a tool contacts a piece. It provides clearance between the cutting tool face and the workpiece.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Used to open and close a 3 / 4 jaw chuck on a centre lathe.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "This is the distance the cutting tool is moved into the workpiece when cutting.",
+    "marks": null
+   }
+  ]
+ },
+ {
   "id": "eng-2021-ol-q7-a",
   "topicId": "eng-3-12",
   "conceptId": "types-fit-possible-when-assembling-shaft",
@@ -2073,36 +2115,6 @@
     "marks": 5
    }
   ]
- },
- {
-  "id": "eng-2022-hl-q2-a-ii",
-  "topicId": "eng-3-14",
-  "conceptId": "basic-difference-between-machine-learning-deep",
-  "level": "higher",
-  "year": 2022,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2022 HL Q2(a)(ii)",
-  "questionText": "Explain the basic difference between machine learning and deep learning.",
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 5,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Machine learning is the general term for when computers learn from data. It describes the intersect of computer science and statistics where algorithms are used to perform a specific task without being explicitly programmed; instead, they recognise patterns in the data and make predictions once new data arrives.",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Deep learning algorithms can be regarded both as a sophisticated and mathematically complex evolution of machine learning algorithms. Deep learning describes algorithms that analyses data with a logic structure similar to how a human would draw conclusions.",
-    "marks": null
-   }
-  ],
-  "notes": "The scheme prints '5'."
  },
  {
   "id": "eng-2022-hl-q2-b",
@@ -3709,6 +3721,39 @@
   "notes": "The scheme prints 'Any three parts @ 5 marks (15)'."
  },
  {
+  "id": "eng-2022-ol-q2-b",
+  "topicId": "eng-1-4",
+  "conceptId": "aid-labelled-diagram-operation-furnace-you",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 OL Q2(b)",
+  "questionText": "Describe, with the aid of a labelled diagram, the operation of one furnace you have studied.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Pig iron and scrap steel or cast iron, together with carbon, coke & limestone provide the charge. Like the blast furnace, the cupola furnace is coke-fired with limestone acting as a flux to turn the impurities into slag.",
+    "marks": 12,
+    "accepts": [
+     "The charge consists of scrap iron and steel together with lime and molten pig iron. Oxygen is blown at the surface of the molten charge from a water-cooled lance which is lowered through the mouth of the furnace. Impurities in the charge are oxidized and form a slag on the surface. At the end of the blow, the steel is poured off through a tapping hole followed by emptying the slag through the mouth of the furnace.",
+     "Basic oxygen furnace Labelled diagram & operation:",
+     "Iron ore, coke and limestone provide the charge and are fed in through the top of the furnace.",
+     "As the coke burns, carbon monoxide is produced, and combines with the oxygen in the ore, leaving iron. The limestone combines with impurities to form slag. The molten iron falls to the bottom of the furnace where it is tapped off from time to time.",
+     "Cold scrap iron or steel make up Furnace lid Carbon electrodes most of the charge together with small amounts of lime and carbon.",
+     "The lime combines with impurities producing slag. When the correct composition of steel is achieved the slag is removed through the back Charge door. The furnace is then tilted forwarded on its rollers allowing the molten steel to flow out the tapping Tilting rollers spout.",
+     "Electric Arc furnace"
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'One part @ 12 marks (12)'."
+ },
+ {
   "id": "eng-2022-ol-q2-d-i",
   "topicId": "eng-2-15",
   "conceptId": "advantage-using-belt-pulley-mechanism-drive",
@@ -4016,6 +4061,35 @@
   ],
   "stem": "seat belts dashboard number plate door handles headlights Engineering - Ordinary level 6",
   "notes": "The scheme prints 'Two parts @ 4 marks (8)'."
+ },
+ {
+  "id": "eng-2022-ol-q6-b",
+  "topicId": "eng-2-11",
+  "conceptId": "any-following-relation-machining-metals-cutting",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 OL Q6(b)",
+  "questionText": "Explain any three of the following in relation to the machining of metals: (i) Cutting fluid, (ii) Spindle speed, (iii) Depth of cut, (iv) Feed.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Cutting fluid is used when machining metals to, improve tool life, reduce the buildup of heat, improve surface finish and flush away chips from the cutting zone.",
+    "marks": 18,
+    "accepts": [
+     "This is the speed at which the chuck rotates in RPM. This speed can be adjusted using the gears.",
+     "This is the distance the cutting tool is moved into the workpiece when cutting.",
+     "Feed is the amount per revolution at which the drill moves into the material being drilled."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any three parts @ 6 marks (18)'."
  },
  {
   "id": "eng-2023-hl-q1-a",
@@ -5008,30 +5082,6 @@
    }
   ],
   "questionFigureKey": "engineering-2023-HL-paper-q5ai-art"
- },
- {
-  "id": "eng-2023-hl-q5-b-i",
-  "topicId": "eng-1-3",
-  "conceptId": "draw-equilibrium-diagram-according-given-data",
-  "level": "higher",
-  "year": 2023,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2023 HL Q5(b)(i)",
-  "questionText": "Draw the equilibrium diagram according to the given data, label the liquidus and solidus lines and the eutectic point.",
-  "tariffModel": {
-   "kind": "questionTotal"
-  },
-  "totalMarks": 12,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "Draw equilibrium diagram 9 Identify liquidus, solidus lines and eutectic point 3",
-    "marks": null
-   }
-  ],
-  "notes": "The scheme prints '9 + 3'."
  },
  {
   "id": "eng-2023-hl-q5-b-iii",
@@ -6095,6 +6145,33 @@
    }
   ],
   "notes": "The scheme prints 'any three @ 5marks (15)'."
+ },
+ {
+  "id": "eng-2023-ol-q2-b",
+  "topicId": "eng-1-4",
+  "conceptId": "aid-labelled-diagram-operation-any-following",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q2(b)",
+  "questionText": "With the aid of a labelled diagram, describe the operation of any one of the following furnaces: (i) Blast furnace, (ii) Basic oxygen furnace, (iii) Electric arc furnace.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Iron ore, coke and limestone provide the charge and are fed in through the top of the furnace.",
+    "marks": 12,
+    "accepts": [
+     "As the coke burns, carbon monoxide is produced, and combines with the oxygen in the ore, leaving iron. The limestone combines with impurities to form slag. The molten iron falls to the bottom of the furnace where it is tapped off from time to time. The slag floats on top of the molten iron and is tapped off when necessary."
+    ]
+   }
+  ],
+  "notes": "The scheme prints '@ 12 marks (12)'."
  },
  {
   "id": "eng-2023-ol-q2-c-ii",
@@ -8619,6 +8696,34 @@
   "notes": "The scheme prints 'Three parts @ 5 marks (15)'."
  },
  {
+  "id": "eng-2024-ol-q2-b-iii",
+  "topicId": "eng-1-4",
+  "conceptId": "how-charge-heated",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q2(b)(iii)",
+  "questionText": "Describe how the charge is heated.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 3,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "The coke is burned to produce heat.",
+    "marks": 3,
+    "accepts": [
+     "Cupola furnace",
+     "Heating the charge: - Heat for this furnace is produced by an electric arc created between carbon electrodes and the charge."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'One part @ 3 marks (12)'."
+ },
+ {
   "id": "eng-2024-ol-q2-c-ii",
   "topicId": "eng-3-14",
   "conceptId": "reason-selection-each-material",
@@ -9034,6 +9139,31 @@
   ],
   "stem": "[[",
   "notes": "The scheme prints 'Any one part @ 6 (12)'."
+ },
+ {
+  "id": "eng-2024-ol-q7-c-iii",
+  "topicId": "eng-2-16",
+  "conceptId": "advantage-using-crocodile-clips-when-assembling",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q7(c)(iii)",
+  "questionText": "State one advantage of using crocodile clips when assembling test circuits.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Used for accurately measuring the diameter of round bars or internal diameters of holes. Measurement can be read directly from a digital display.",
+    "marks": 6
+   }
+  ],
+  "stem": "crocodile clips test circuit",
+  "notes": "The scheme prints 'Any one part @ 6 marks (18)'."
  },
  {
   "id": "eng-2025-hl-q1-a",
@@ -10617,6 +10747,38 @@
   "notes": "The scheme prints '6'."
  },
  {
+  "id": "eng-2025-hl-q9-b",
+  "topicId": "eng-2-15",
+  "conceptId": "aid-diagram-operation-bevel-gears",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 HL Q9(b)",
+  "questionText": "Answer any three of the following: inspection robot (i) Describe, with the aid of a diagram, the operation of bevel gears. (ii) State two benefits of thermostatic control in home heating systems. (iii) Identify the mechanism shown opposite and give one suitable use for the mechanism. (iv) Describe the operation of a single acting pneumatic cylinder. (v) Outline the operation of a capacitor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Bevel gears have a conical shape and are used to transmit rotational power through shaŌs that are typically at an angle of 90° to each other. They are typically used for motor transmission differential drives.",
+    "marks": 18,
+    "accepts": [
+     "Thermostats allow you to control the temperature of each room individually, rather heating the entire floor or entire property at the same time.",
+     "This reduces energy wastage and excessive heat use, resulting in financial savings. Smart thermostats allow the user to control their heating system remotely.",
+     "Suitable uses include ratchet strap, winch mechanism on trailer, fishing reel, ratchet spanner, turnstile, etc.",
+     "A single acting cylinder is a pneumatic output device that requires compressed air to make the piston move. If the air is removed the piston will return because of the spring.",
+     "Force of air moves ram No compressed air Compressed air applied"
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any three @ 6 + 6 + 6'.",
+  "questionFigureKey": "engineering-2025-HL-paper-q9biii-art"
+ },
+ {
   "id": "eng-2025-ol-q1-a",
   "topicId": "eng-2-11",
   "conceptId": "safety-precautions-be-observed-when-using",
@@ -10862,6 +11024,55 @@
     "id": "r-4",
     "kind": "point",
     "verbatim": "Deburring removes sharp edges and  burrs that can pose a safety hazard to workers when handling parts. Metal parts often require deburring following manufacturing.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:",
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2025-ol-q1-j",
+  "topicId": "eng-2-11",
+  "conceptId": "any-following-bandsaw-3d-printer-deburring",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q1(j)",
+  "questionText": "Explain any one of the following: bandsaw 3D printer deburring (i) Artificial intelligence (AI), (ii) Renewable energy, (iii) Virtual reality (VR).",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans. AI systems can analyse data, recognise patterns, make decisions, and even improve their performance over time without human intervention.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Applications of AI include voice assistants like Siri and Alexa, self‐driving cars, and recommendation systems used by platforms like Netflix and Amazon. AI has the potential to transform various industries by automating tasks, enhancing productivity, and providing insights based on data analysis.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Renewable energy is energy that is generated from natural sources that are continuously replenished, such as sunlight, wind, rain, tides, and geothermal heat. Unlike fossil fuels, which can deplete and contribute to environmental pollution, renewable energy sources are more sustainable and have a lower impact on the planet. Common forms of renewable energy include solar power, wind energy, hydroelectric power, and biomass. The use of renewable energy is crucial for reducing greenhouse gas emissions and combating climate change.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Virtual Reality (VR) is an immersive technology that creates a simulated environment that can be experienced through a headset or other devices. In VR, users are transported into a 3‐dimensional digital space where they can interact with the environment and objects as if they were real.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "This technology is commonly used in gaming, training simulations, education, and therapy, allowing users to experience scenarios that may be difficult or impossible to recreate in the real world.",
     "marks": null
    }
   ],

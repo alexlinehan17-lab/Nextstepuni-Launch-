@@ -639,14 +639,32 @@ class EngScheme:
 
     @staticmethod
     def _artwork(page):
+        """The pictures on the page, for keeping their callouts out of answers.
+
+        A drawn rectangle is not necessarily a picture. The Ordinary Level
+        schemes set their answers in a BORDERED TABLE, and each cell's border
+        is a drawing wide and tall enough to pass any size test -- so every
+        answer inside one was dropped as a callout printed on a diagram. 2022
+        Ordinary Q6(b) explains cutting fluid, spindle speed and depth of cut
+        in three such cells, and the scheme came back holding only the three
+        headings.
+
+        What tells a cell from a picture is what is written in it: a diagram
+        is labelled in words, and a table cell holds sentences.
+        """
         out = []
         for im in page.get_images(full=True):
             for r in page.get_image_rects(im[0]):
                 out.append((r.x0, r.y0, r.x1, r.y1))
+        prose = [r for r in _lines(page) if len(r[4]) >= 30]
         for d in page.get_drawings():
             r = d['rect']
-            if r.width > 40 and r.height > 40:
-                out.append((r.x0, r.y0, r.x1, r.y1))
+            if r.width <= 40 or r.height <= 40:
+                continue
+            if any(r.x0 - 2 <= b[0] and b[2] <= r.x1 + 2
+                   and r.y0 - 2 <= b[1] and b[3] <= r.y1 + 2 for b in prose):
+                continue
+            out.append((r.x0, r.y0, r.x1, r.y1))
         return out
 
     # ── what the author asks for ───────────────────────────────────────────

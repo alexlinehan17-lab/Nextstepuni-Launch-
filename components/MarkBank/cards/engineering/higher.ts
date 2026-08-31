@@ -838,20 +838,6 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "higher",
     paperFileid: "LC027ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Higher Level — © State Examinations Commission.",
-    id: "eng-2022-hl-q2-a-ii", topicId: "eng-3-14", conceptId: "basic-difference-between-machine-learning-deep",
-    section: "A", questionRef: "2022 HL Q2(a)(ii)",
-    questionText: "Explain the basic difference between machine learning and deep learning.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Machine learning is the general term for when computers learn from data. It describes the intersect of computer science and statistics where algorithms are used to perform a specific task without being explicitly programmed; instead, they recognise patterns in the data and make predictions once new data arrives.", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Deep learning algorithms can be regarded both as a sophisticated and mathematically complex evolution of machine learning algorithms. Deep learning describes algorithms that analyses data with a logic structure similar to how a human would draw conclusions.", marks: null },
-    ],
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2022, level: "higher",
-    paperFileid: "LC027ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Higher Level — © State Examinations Commission.",
     id: "eng-2022-hl-q2-b", topicId: "eng-3-14", conceptId: "artificial-intelligence-can-be-broadly-categorised",
     section: "A", questionRef: "2022 HL Q2(b)",
     questionText: "Artificial Intelligence can be broadly categorised in two forms. Describe the difference between: • Artificial Narrow Intelligence (weak AI) and, • Artificial General Intelligence (strong AI).",
@@ -1904,19 +1890,6 @@ export const CARDS: SecCard[] = [
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
     },
-  } as SecCard,
-  {
-    ...base, kind: "question",
-    year: 2023, level: "higher",
-    paperFileid: "LC027ALP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
-    id: "eng-2023-hl-q5-b-i", topicId: "eng-1-3", conceptId: "draw-equilibrium-diagram-according-given-data",
-    section: "A", questionRef: "2023 HL Q5(b)(i)",
-    questionText: "Draw the equilibrium diagram according to the given data, label the liquidus and solidus lines and the eutectic point.",
-    tariffModel: {"kind":"questionTotal"}, totalMarks: 12,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "Draw equilibrium diagram 9 Identify liquidus, solidus lines and eutectic point 3", marks: null },
-    ],
   } as SecCard,
   {
     ...base, kind: "question",
@@ -3679,5 +3652,26 @@ export const CARDS: SecCard[] = [
     { id: "r-5", kind: "point", verbatim: "Performing surveillance and military operations.", marks: null },
     { id: "r-6", kind: "point", verbatim: "Remote healthcare for patients and equipment.", marks: null },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
+    id: "eng-2025-hl-q9-b", topicId: "eng-2-15", conceptId: "aid-diagram-operation-bevel-gears",
+    section: "A", questionRef: "2025 HL Q9(b)",
+    questionText: "Answer any three of the following: inspection robot (i) Describe, with the aid of a diagram, the operation of bevel gears. (ii) State two benefits of thermostatic control in home heating systems. (iii) Identify the mechanism shown opposite and give one suitable use for the mechanism. (iv) Describe the operation of a single acting pneumatic cylinder. (v) Outline the operation of a capacitor.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 18,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Bevel gears have a conical shape and are used to transmit rotational power through shafts that are typically at an angle of 90° to each other. They are typically used for motor transmission differential drives.", marks: 18, accepts: ["Thermostats allow you to control the temperature of each room individually, rather heating the entire floor or entire property at the same time.","This reduces energy wastage and excessive heat use, resulting in financial savings. Smart thermostats allow the user to control their heating system remotely.","Suitable uses include ratchet strap, winch mechanism on trailer, fishing reel, ratchet spanner, turnstile, etc.","A single acting cylinder is a pneumatic output device that requires compressed air to make the piston move. If the air is removed the piston will return because of the spring.","Force of air moves ram No compressed air Compressed air applied"] },
+    ],
+    questionFigure: {
+          "candId": "engineering-2025-HL-paper-q9biii-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2025-HL-paper-q9biii-art.png",
+          "srcHash": "69edd2b5098351d4c4482b3de50ac745",
+          "alt": "The table or diagram printed with 2025 HL Q9(b)(iii), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
 ];

@@ -619,7 +619,20 @@ const decks = [
   // with "Blast furnace" for twelve marks; and eng-2024-ol-q4-d, which
   // answered "state two safety precautions when soldering copper pipes" with
   // the heading "Soldering copper pipes and fittings:".
-  ['engineering:higher', ENG_HIGHER, 226, 'ec2ccca5ece577cd65d1ec9195ef91825c16bb4364b0b98a3c419b6928ff26c6'],
+  // 2026-08-31 (twelfth pass): 226 -> 224, Ordinary 113 -> 119, and 12 more
+  // asks. A drawn rectangle is not necessarily a picture. The Ordinary
+  // schemes set their answers in a BORDERED TABLE, and each cell's border is
+  // a drawing wide and tall enough to pass any size test — so every answer
+  // inside one was dropped as a callout printed on a diagram. 2022 Ordinary
+  // Q6(b) explains cutting fluid, spindle speed and depth of cut in three
+  // such cells, and the scheme came back holding only the three headings.
+  // What tells a cell from a picture is what is written in it: a diagram is
+  // labelled in words, a table cell holds sentences.
+  //
+  // Two cards REMOVED. Both now carry a marking point recovered from inside
+  // such a cell, and that fuller point cannot be traced in the markdown the
+  // provenance gate reads: eng-2022-hl-q2-a-ii and eng-2023-hl-q5-b-i.
+  ['engineering:higher', ENG_HIGHER, 225, '3491d2e0d1d04e5517fa853a2324094dff91deb01250eb7b92af22430d4f11ef'],
   // 2026-08-31: 10 -> 24, same reader work as Higher above. Four cards
   // REMOVED. eng-2021-ol-q7-c-ii asked for the electronic symbol of each
   // component named and answered "of round bars or internal diameters of
@@ -658,7 +671,13 @@ const decks = [
   //
   // Three whole-question cards REMOVED, their parts now priced and carded one
   // by one: eng-2023-ol-q2, eng-2023-ol-q4, eng-2024-ol-q6.
-  ['engineering:ordinary', ENG_ORDINARY, 113, 'c80a53149fae3b208cd39f6c930dfe4e6f2bd01610c881ad2c4c64047b97b4c0'],
+  // 2026-08-31 (thirteenth pass): 119 -> 120, Higher 224 -> 225. A question
+  // that says "of the following:" ANYWHERE in it is introducing a list, and
+  // the colon is not always its last character: 2025 HL Q9(b) reads "Answer
+  // any three of the following: inspection robot" — the lead-in with a
+  // picture's label run onto it — and its five romans are the list. Nothing
+  // removed.
+  ['engineering:ordinary', ENG_ORDINARY, 120, '8d9014d957916ccff464564db9fe12749639dee0cdf01f72ffc8394301eed26b'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -673,6 +692,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(8126);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(8132);
   });
 });
