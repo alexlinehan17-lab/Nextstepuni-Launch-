@@ -795,6 +795,15 @@ NEVER_MAP = (
     ("LC032", "000", "A", "IV", None),
     # Geography OL IV 2025 Part Two: anchors the Part One short-answer key.
     ("LC005", "043", "G", "IV", 2025),
+    # History OL: the scheme's numbered RSR criteria list ("3. Criticism
+    # (20 marks)") reconciles against the paper's document questions — the
+    # documented mainstream-History-OL blocker, confirmed again by render.
+    ("LC004", "000", "G", None, None),
+    # Biology Sections A&B (038) EV transition years: the chip crops the
+    # Q-marks grid, not the answers. The IV twins map correctly.
+    ("LC025", "038", "A", "EV", 2020),
+    ("LC025", "038", "A", "EV", 2022),
+    ("LC025", "038", "A", "EV", 2023),
 )
 
 
