@@ -42,7 +42,9 @@ export const paperAnswersPath = (
  *  so a new year can be previewed on localhost before its upload. The mirror
  *  serves the same `papers/...` layout and redirects misses to live Storage.
  *  Unset in production builds, leaving the plain Storage REST endpoint. */
-const LOCAL_BASE: string | undefined = import.meta.env.VITE_PAPER_TRAIL_LOCAL;
+const LOCAL_BASE = (import.meta as unknown as {
+  env?: { VITE_PAPER_TRAIL_LOCAL?: string };
+}).env?.VITE_PAPER_TRAIL_LOCAL;
 
 /** Public REST URL for a corpus document (range-request capable, CORS-open). */
 export const paperUrl = (path: string) =>
