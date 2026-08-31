@@ -319,6 +319,24 @@ const figureRecord = (key) => {
   };
 };
 
+/**
+ * Early Maths question-crop descriptions were hard-cut after 220 characters.
+ * Keep their useful verified context, mark the cut honestly with an ellipsis,
+ * and append the complete card prompt so assistive technology never receives
+ * a sentence ending halfway through a word. New crops are authored without a
+ * fixed description limit; this repairs the already-inspected corpus at build.
+ */
+function accessibleQuestionFigureAlt(alt, card) {
+  const repaired = repairText(alt ?? '').trim();
+  if (SUBJECT_ID !== 'maths' || repaired.length !== 259) return repaired;
+  const context = repaired.replace(/\s+\S*$/, '').trimEnd();
+  const prompt = [card.stem, card.questionText]
+    .filter(value => typeof value === 'string' && value.trim())
+    .join(' ')
+    .trim();
+  return `${context}… Full card prompt: ${prompt}`;
+}
+
 const q = (s) => JSON.stringify(String(s));
 
 /**
@@ -580,7 +598,7 @@ for (const c of cards) {
     if (rec.error) { dropped.push(`${c.id}: question figure — ${rec.error}`); continue; }
     if (rec.solution) { dropped.push(`${c.id}: question figure "${c.questionFigureKey}" is a solution crop`); continue; }
     questionFigure = { candId: rec.candId, src: rec.src, srcHash: rec.srcHash,
-      alt: rec.alt, lettersVisible: [], attribution: rec.attribution };
+      alt: accessibleQuestionFigureAlt(rec.alt, c), lettersVisible: [], attribution: rec.attribution };
   }
 
   seenId.add(c.id);

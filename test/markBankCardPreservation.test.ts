@@ -35,6 +35,10 @@ import { CARDS as ENGLISH_HIGHER } from '../components/MarkBank/cards/english/hi
 import { CARDS as ENGLISH_ORDINARY } from '../components/MarkBank/cards/english/ordinary';
 import { CARDS as IRISH_HIGHER } from '../components/MarkBank/cards/irish/higher';
 import { CARDS as IRISH_ORDINARY } from '../components/MarkBank/cards/irish/ordinary';
+import { CARDS as ART_HIGHER } from '../components/MarkBank/cards/art/higher';
+import { CARDS as ART_ORDINARY } from '../components/MarkBank/cards/art/ordinary';
+import { CARDS as GEOGRAPHY_HIGHER } from '../components/MarkBank/cards/geography/higher';
+import { CARDS as GEOGRAPHY_ORDINARY } from '../components/MarkBank/cards/geography/ordinary';
 
 const decks = [
   ['biology:higher', BIO_HIGHER, 673, '45f278ef15f8d35a8a4393a0e8d01d7e5484e73a881844880dc090daeb9ce836'],
@@ -377,6 +381,21 @@ const decks = [
    * listening audio and the real PDF pages for passages and printed poems. */
   ['irish:higher', IRISH_HIGHER, 215, '47cc840774127e9368d60a0965951e7fc39bd3a2a02c1d9fddd11738cc18255b'],
   ['irish:ordinary', IRISH_ORDINARY, 185, '34e18ac058529e14ac0337a030264ab74329f72dabdd0dee8d9b912107dd343c'],
+  /* 2026-08-30: complete Art written-paper launch. All 462 separately marked
+   * tasks and finite printed answer routes across 2021–2025 are present. This
+   * includes all ten heading pairs for 2025 OL Q4(a), while keeping Section
+   * B/C holistic descriptor essays intact and splitting only at published
+   * task and mark boundaries. */
+  ['art:higher', ART_HIGHER, 222, '720e68e98f7d3254af15e7834a3fdbd6098ca319d00ccce82fa570d411fb15a9'],
+  ['art:ordinary', ART_ORDINARY, 240, 'fcf4b64bd5bad786856087dfc8cefdc133233a12a74516166205d1f8898e193b'],
+  /* 2026-08-31: Geography now covers 2021-2026. All 563 answerable base tasks
+   * are present, with every finite route expanded into a usable card. The 85
+   * historical tasks whose separate OS map/aerial source is not yet held stay
+   * census-held; every 2026 task ships with its complete official source set.
+   * The 2021 HL Q6C choose-two audit also adds its nine missing combinations
+   * while retaining the original card id for saved-progress continuity. */
+  ['geography:higher', GEOGRAPHY_HIGHER, 445, '7768fb37a748daf2cda31ae9f8c97b6bb632b44f1243332ce5edfac06361bacc'],
+  ['geography:ordinary', GEOGRAPHY_ORDINARY, 309, '350dc90c7120b0efe314d07115ceb88f3ea49a55d79a55b48b819c188068cee7'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -391,6 +410,28 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(8510);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(9726);
+  });
+
+  it('adds 2026 Geography and the Q6C routes without replacing a prior card id', () => {
+    const addedHigherRoutes = new Set(GEOGRAPHY_HIGHER
+      .filter(card => card.id.startsWith('geography-2021-hl-p2-q6c-'))
+      .map(card => card.id));
+    expect(addedHigherRoutes.size).toBe(9);
+    expect(identityHash(GEOGRAPHY_HIGHER.filter(card =>
+      card.year <= 2025 && !addedHigherRoutes.has(card.id))))
+      .toBe('db478deb519637edeacce1fd96db3cf50e893e7cf1e8a72cc28c40694b0281ea');
+    expect(identityHash(GEOGRAPHY_ORDINARY.filter(card => card.year <= 2025)))
+      .toBe('2f6f346262b91ac1385b55c194b7940d927c207403fa00c0ada08e087fd227a9');
+  });
+
+  it('adds the Art choose-two routes without replacing any existing card id', () => {
+    const correctionIds = new Set(ART_ORDINARY
+      .filter(card => card.questionRef.startsWith('2025 OL Q4(a)')
+        && card.id !== 'art-2025-ol-q4-a')
+      .map(card => card.id));
+    expect(correctionIds.size).toBe(9);
+    expect(identityHash(ART_ORDINARY.filter(card => !correctionIds.has(card.id))))
+      .toBe('e5403f6e685e0133ad94ef321f97a77f96127c2ee3570395e00662d7719ddbd5');
   });
 });

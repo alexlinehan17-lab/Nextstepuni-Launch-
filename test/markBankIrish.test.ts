@@ -8,8 +8,10 @@ import authoredJson from '../components/MarkBank/cards/irish/authored.json';
 import {
   irishMarks,
   irishScoreId,
+  listeningQuestionGroups,
   suggestRubricGrade,
 } from '../components/MarkBank/SessionScreen';
+import { sessionExerciseCount } from '../components/MarkBank/sessionPlanning';
 import {
   isRubricCard,
   tariffReconciles,
@@ -186,6 +188,44 @@ describe('Irish prompt, paper and source integrity', () => {
     ]);
   });
 
+  it('keeps every Ordinary prescribed-poetry choice whole and on its own page', () => {
+    const ordinaryPoetry = ORDINARY.filter(card => card.id.includes('-poetry-3a-'));
+    expect(ordinaryPoetry).toHaveLength(15);
+    for (const card of ordinaryPoetry) {
+      expect(card.questionText, card.id).toMatch(/\(i\).*\(ii\).*\(iii\)/);
+      expect(card.sourceMaterial?.title, card.id).not.toBe('Dán Ainmnithe');
+      expect(card.sourceMaterial?.pages, card.id).toHaveLength(1);
+    }
+
+    const repairedChoices = [
+      ['irish-2022-ol-p2-poetry-3a-a', 'An tEarrach Thiar', 11],
+      ['irish-2022-ol-p2-poetry-3a-b', 'Colscaradh', 12],
+      ['irish-2022-ol-p2-poetry-3a-c', 'An Spailpín Fánach', 13],
+      ['irish-2024-ol-p2-poetry-3a-a', 'Colscaradh', 10],
+      ['irish-2024-ol-p2-poetry-3a-b', 'An Spailpín Fánach', 11],
+      ['irish-2024-ol-p2-poetry-3a-c', 'Géibheann', 12],
+      ['irish-2025-ol-p2-poetry-3a-a', 'Mo Ghrá-Sa', 10],
+      ['irish-2025-ol-p2-poetry-3a-b', 'An tEarrach Thiar', 11],
+      ['irish-2025-ol-p2-poetry-3a-c', 'Colscaradh', 12],
+    ] as const;
+    for (const [id, title, page] of repairedChoices) {
+      const card = byId.get(id);
+      expect(card?.sourceMaterial?.title, id).toBe(title);
+      expect(card?.sourceMaterial?.pages, id).toEqual([page]);
+      expect(card?.totalMarks, id).toBe(25);
+    }
+  });
+
+  it('retains printed part labels and removes continuation furniture', () => {
+    const hurlamaboc = byId.get('irish-2021-ol-p2-prose-2a-a');
+    expect(hurlamaboc?.questionText).toMatch(/\(i\).*\(ii\).*\(iii\).*\(iv\).*\(v\)/);
+
+    const furniture = ALL.filter(card =>
+      /Cuid\s+[ABC]\s+ar\s+leanúint|Freagair\s+do\s+rogha\s+ceann\s+amháin\s+as\s*$/i
+        .test(card.questionText));
+    expect(furniture.map(card => card.id)).toEqual([]);
+  });
+
   it('puts the official listening recording on every listening card and nowhere else', () => {
     const listening = ALL.filter(card => family(card) === 'listening');
     expect(listening).toHaveLength(70);
@@ -204,6 +244,37 @@ describe('Irish prompt, paper and source integrity', () => {
     }
     const grid = byId.get('irish-2021-ol-p1-listening-a-f1')!;
     expect(irishRubric(grid).criteria[0].guidance.join(' ')).toContain('oifig@gaeilge.ie');
+  });
+
+  it('keeps every prompt for an audio extract together with that recording', () => {
+    const listening = ALL.filter(card => family(card) === 'listening');
+    const groups = listening.map(card => ({
+      id: card.id,
+      groups: listeningQuestionGroups(card.questionText),
+    }));
+
+    expect(groups.every(card => card.groups.length > 0)).toBe(true);
+    const malformed = groups.filter(card => !card.groups.every(group =>
+      group.prompts.length > 0
+      && group.prompts.every(prompt => Boolean(prompt.label && prompt.text))));
+    expect(malformed.map(card => card.id)).toEqual([]);
+
+    // These are 218 prompts backed by 70 separately scored card ids, but shown
+    // inside only 30 listening exercises. The recording and the question sheet
+    // must not restart merely because the SEC scheme has another scoring block.
+    expect(groups.reduce((total, card) => total + card.groups.reduce(
+      (subtotal, group) => subtotal + group.prompts.length, 0), 0)).toBe(218);
+    expect(sessionExerciseCount(listening)).toBe(30);
+
+    const grid = groups.find(card => card.id === 'irish-2021-ol-p1-listening-a-f1')!;
+    expect(grid.groups[0].instruction).toMatch(/Líon isteach an t-eolas/i);
+    expect(grid.groups[0].prompts).toHaveLength(4);
+
+    const conversation = groups.find(card => card.id === 'irish-2025-ol-p1-listening-b-c1')!;
+    expect(conversation.groups.map(group => group.label)).toEqual([
+      'An Chéad Mhír', 'An Dara Mír',
+    ]);
+    expect(conversation.groups.flatMap(group => group.prompts)).toHaveLength(4);
   });
 });
 

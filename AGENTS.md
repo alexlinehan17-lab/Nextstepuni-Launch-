@@ -19,6 +19,41 @@
   that every previous card still exists. A normal curriculum migration must not
   update the baseline merely to make a failing test pass.
 
+## Exam-corpus completeness
+
+- Never use the number of printed questions, generated cards, or a census made
+  by the same parser as independent proof that a subject is complete. Before a
+  completion claim, sweep every paper visually and cross-check each candidate
+  card boundary against its marking scheme.
+- The card unit is one independently selectable, separately practicable task at
+  a published mark boundary—not necessarily one numbered question. Use the
+  scheme's allocation to decide whether printed parts split or remain one
+  holistic response.
+- Expand every finite printed answer route. A closed choose-one pool of `n`
+  options yields `n` cards; a closed choose-`k` pool yields `C(n, k)` cards.
+  Derive these variants mechanically and pin their count, unique IDs, wording
+  and tariff in tests.
+- Apply selection analysis inside every split task, not just at the outer
+  numbered-question level. The Art corpus previously handled separately marked
+  parts and choose-one questions but missed the task-internal "any two of five"
+  instruction in 2025 OL Q4(a), collapsing ten valid routes into one.
+- Do not fan out required headings, illustrative example lists, open choices
+  such as a named artist or work, or flexible wording such as `and/or`. Those
+  remain one response unless the paper requires a fixed finite selection. Keep
+  a reviewed, written reason beside any finite-looking pool that is deliberately
+  not expanded.
+- Scan raw extracted paper wording for selection directives such as `choose`,
+  `one of`, `any N`, `either/or`, and `answer X of Y`; generation must fail when
+  one is unclassified. A hand-written expansion map must also fail when its key
+  no longer matches the source paper.
+- When a task is split or expanded, carry all required stem context, source
+  pages or illustrations, scheme criteria and marks into every resulting card.
+  Alternative routes each retain the route tariff; their marks are never added
+  together as though a candidate answered every alternative.
+- Update coverage and preservation baselines only after the paper/scheme sweep,
+  old-ID preservation check, zero-open/zero-orphan reconciliation, and targeted
+  regression tests all pass.
+
 ## Design language
 
 - Do not use the generic "AI callout" composition: a softly tinted rounded

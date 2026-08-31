@@ -42,5 +42,13 @@
  "irish": {
   "higher": 215,
   "ordinary": 185
+ },
+ "art": {
+  "higher": 222,
+  "ordinary": 240
+ },
+ "geography": {
+  "higher": 445,
+  "ordinary": 309
  }
 }

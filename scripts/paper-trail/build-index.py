@@ -42,8 +42,8 @@ CYCLE_OF_EXAM = {"lc": "lc", "jc": "jc", "lb": "lca"}
 CYCLE_RANK = {"lc": 0, "jc": 1, "lca": 2}
 CYCLE_PREFIX = {"lc": "", "jc": "jc-", "lca": "lca-"}
 
-LC_YEAR_MIN, LC_YEAR_MAX = 2010, 2025  # also LCA
-JC_YEAR_MAX = 2025
+LC_YEAR_MIN, LC_YEAR_MAX = 2010, 2026  # also LCA
+JC_YEAR_MAX = 2026
 JC_CANCELLED_YEARS = (2020, 2021)
 JC_CANCELLED_REASON = "Junior Cycle exams were cancelled in 2020 and 2021"
 LCA_CANCELLED_REASON = ("No 2020 LCA written examinations — COVID-19 calculated grades "

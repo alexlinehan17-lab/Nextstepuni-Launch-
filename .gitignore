@@ -62,3 +62,4 @@ android/keystore.properties
 # predate this and stay tracked; gitignore does not untrack them.)
 examiner-reports/*/papers/*.pdf
 examiner-reports/*/schemes/*.pdf
+examiner-reports/*/supplements/

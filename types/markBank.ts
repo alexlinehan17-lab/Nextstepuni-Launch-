@@ -197,13 +197,20 @@ export interface CardFigure {
  * passage, no fabricated facsimile, and no second copy bundled into the app.
  */
 export interface CardSourceMaterial {
-  kind: 'source-text';
+  kind: 'source-text' | 'source-illustration';
   /** The paper's own identity for the source, e.g. "TEXT 1". */
   label: string;
   /** Human title printed in the reader header. */
   title: string;
   /** One-based PDF pages, in reading order. */
   pages: number[];
+  /**
+   * A separate official SEC document when the required material is not inside
+   * the question paper itself. Art publishes its illustrations as a companion
+   * booklet; defaulting to `SecCardBase.paperFileid` would silently open the
+   * wrong PDF. Omitted for passages that live in the question paper.
+   */
+  sourceFileid?: string;
   /** The author/publication acknowledgement printed by the SEC. */
   attribution: string;
   /** Clarifies that the displayed layout is the official examination version. */
@@ -283,6 +290,15 @@ export interface SecCardBase extends CardBase {
   /** Required reading carried by the question. It is available before reveal
    *  and is rendered page-for-page from `paperFileid`. */
   sourceMaterial?: CardSourceMaterial;
+  /**
+   * Further official documents needed beside `sourceMaterial`.
+   *
+   * Geography can require the printed question page, a separate OS map, and
+   * its separate legend for one task. Keeping those as distinct SEC documents
+   * avoids flattening or fabricating a composite while still putting every
+   * required source on the question side of the reveal.
+   */
+  additionalSourceMaterials?: CardSourceMaterial[];
   /** Required listening recording, available on the question side. */
   audioMaterial?: CardAudioMaterial;
   /** Verbatim from the QUESTION PAPER — not the scheme. Required, always. */
@@ -448,7 +464,80 @@ export interface IrishRubric {
   markingGuideNote: string;
 }
 
-export type SecRubric = PclmRubric | IrishRubric;
+export type ArtBandLevel = 'low' | 'moderate' | 'high';
+
+/** One published Art descriptor band and every mark it permits. */
+export interface ArtBand {
+  level: ArtBandLevel;
+  marks: number[];
+  /** SEC descriptor guidance, condensed only to remove repeated boilerplate. */
+  guidance: string[];
+}
+
+/**
+ * One independently awarded Art component.
+ *
+ * The 2021–2022 History and Appreciation schemes allocate marks to named
+ * components without quality bands. The 2023+ Visual Studies schemes retain
+ * components for Section A and publish low/moderate/high bands; Sections B and
+ * C use four holistic criteria. One type represents both grammars without
+ * pretending either is English PCLM.
+ */
+export interface ArtCriterion {
+  id: string;
+  label: string;
+  maxMarks: number;
+  permittedMarks: number[];
+  /** Question-specific allocation or focus printed by the marking scheme. */
+  guidance: string[];
+  /** Absent where the SEC printed an allocation but no descriptor bands. */
+  bands?: ArtBand[];
+}
+
+export interface ArtRubric {
+  system: 'art';
+  /** Things the printed task explicitly requires. They carry no marks alone. */
+  taskRequirements: string[];
+  criteria: ArtCriterion[];
+  markingGuideNote: string;
+}
+
+export type GeographyGuidanceKind =
+  /** A bounded answer or allocation printed by the scheme. */
+  | 'exact'
+  /** Significant Relevant Points: valid alternatives remain creditable. */
+  | 'srp';
+
+/**
+ * One Geography mark placement.
+ *
+ * Geography schemes mix exact short answers, named components, graded map
+ * work and Significant Relevant Points.  An SRP is evidence emerging from a
+ * coherent response, not a model-answer bullet to tick.  Keeping that grammar
+ * explicit prevents the scheme's non-exhaustive examples becoming a fabricated
+ * checklist while still letting a student place their work on the real tariff.
+ */
+export interface GeographyCriterion {
+  id: string;
+  label: string;
+  maxMarks: number;
+  permittedMarks: number[];
+  guidanceKind: GeographyGuidanceKind;
+  /** Published allocation and examiner directions for this task. */
+  guidance: string[];
+}
+
+export interface GeographyRubric {
+  system: 'geography';
+  /** Finite route or other instruction selected on this card. */
+  taskRequirements: string[];
+  criteria: GeographyCriterion[];
+  /** The mark value of one SRP on this paper, where SRPs govern the answer. */
+  srpMarks?: number;
+  markingGuideNote: string;
+}
+
+export type SecRubric = PclmRubric | IrishRubric | ArtRubric | GeographyRubric;
 
 /** A prose/short-answer SEC card. */
 export interface SecQuestionCard extends SecPointCardBase {
@@ -473,10 +562,10 @@ export interface SecDiagramCard extends SecPointCardBase {
 }
 
 /**
- * A real SEC English question marked holistically with the published PCLM
- * grammar. This variant has a renderer and scoring path of its own; it does
- * not expose `rows`, so indicative examples cannot accidentally become binary
- * marks in some future consumer.
+ * A real SEC question governed by a published subject-specific rubric rather
+ * than a list of exact answer points. This variant has a renderer and scoring
+ * path of its own; it does not expose `rows`, so indicative examples cannot
+ * accidentally become binary marks in some future consumer.
  */
 export interface SecRubricCard extends SecCardBase {
   kind: 'rubric';
@@ -631,6 +720,38 @@ export function tariffReconciles(card: SecCard): boolean {
       return criteria.length > 0
         && new Set(criteria.map(criterion => criterion.id)).size === criteria.length
         && awardMaximum === card.totalMarks
+        && criteria.every(criterion =>
+          criterion.permittedMarks.length > 0
+          && Math.min(...criterion.permittedMarks) === 0
+          && Math.max(...criterion.permittedMarks) === criterion.maxMarks
+          && new Set(criterion.permittedMarks).size === criterion.permittedMarks.length);
+    }
+    if (card.rubric.system === 'art') {
+      const { criteria } = card.rubric;
+      return criteria.length > 0
+        && new Set(criteria.map(criterion => criterion.id)).size === criteria.length
+        && criteria.reduce((sum, criterion) => sum + criterion.maxMarks, 0) === card.totalMarks
+        && criteria.every(criterion => {
+          const permitted = criterion.permittedMarks;
+          if (permitted.length === 0
+            || Math.min(...permitted) !== 0
+            || Math.max(...permitted) !== criterion.maxMarks
+            || new Set(permitted).size !== permitted.length) return false;
+          if (!criterion.bands) return true;
+          const bandMarks = criterion.bands.flatMap(band => band.marks);
+          return criterion.bands.length === 3
+            && new Set(criterion.bands.map(band => band.level)).size === 3
+            && bandMarks.length === permitted.length
+            && new Set(bandMarks).size === bandMarks.length
+            && [...bandMarks].sort((a, b) => a - b)
+              .every((mark, index) => mark === [...permitted].sort((a, b) => a - b)[index]);
+        });
+    }
+    if (card.rubric.system === 'geography') {
+      const { criteria } = card.rubric;
+      return criteria.length > 0
+        && new Set(criteria.map(criterion => criterion.id)).size === criteria.length
+        && criteria.reduce((sum, criterion) => sum + criterion.maxMarks, 0) === card.totalMarks
         && criteria.every(criterion =>
           criterion.permittedMarks.length > 0
           && Math.min(...criterion.permittedMarks) === 0

@@ -27,8 +27,10 @@ import {
 } from './scheduler';
 import {
   MARK_BANK_SESSION_SIZE,
+  listeningExerciseKey,
   nextSessionActionLabel,
   resolveSessionQueue,
+  sessionExerciseCount,
   topicSessionSummary,
 } from './sessionPlanning';
 import { SUBJECTS, builtDecks, cardsForTopic, deckSize, loadCards, strandsFor, topicMarks, type Level } from './deck';
@@ -403,11 +405,14 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
     )[0];
     const worstCard = worst && cards.find(c => c.id === worst.cardId);
     const worstGap = worst ? worst.marksAvailable - worst.marksClaimed : 0;
-    const distinct = new Set(screen.results.map(r => r.cardId)).size;
+    const distinct = new Set(screen.results.map(result => {
+      const resultCard = cards.find(card => card.id === result.cardId);
+      return resultCard ? listeningExerciseKey(resultCard) ?? resultCard.id : result.cardId;
+    })).size;
     const nextPool = screen.topicId ? cardsForTopic(screen.topicId, cards) : cards;
     const nextQueue = resolveSessionQueue(nextPool, memories, now(), deck.examTs);
     const nextAction = nextSessionActionLabel(
-      nextQueue.length,
+      sessionExerciseCount(nextQueue),
       Boolean(screen.topicId),
       subject.title,
     );
@@ -701,7 +706,7 @@ const MarkBank: React.FC<MarkBankProps> = ({ uid, studentSubjects, now = () => D
                       .filter(c => { const m = memories[c.id]; return m?.last ? isDue(c.id, m, now(), retention) : false; })
                       .reduce((n, c) => n + c.totalMarks, 0);
                     const nextTopicCount = built && due === 0 && tMet === 0
-                      ? resolveSessionQueue(topicCards, memories, now(), deck.examTs).length
+                      ? sessionExerciseCount(resolveSessionQueue(topicCards, memories, now(), deck.examTs))
                       : 0;
                     const sessionSummary = topicSessionSummary(topicCards.length, nextTopicCount);
 

@@ -50,6 +50,10 @@ const englishCurriculum = CURRICULUM.find(subject => subject.id === 'english');
 if (!englishCurriculum) throw new Error('Canonical English curriculum is missing');
 const irishCurriculum = CURRICULUM.find(subject => subject.id === 'irish');
 if (!irishCurriculum) throw new Error('Canonical Irish curriculum is missing');
+const artCurriculum = CURRICULUM.find(subject => subject.id === 'art');
+if (!artCurriculum) throw new Error('Canonical Art curriculum is missing');
+const geographyCurriculum = CURRICULUM.find(subject => subject.id === 'geography');
+if (!geographyCurriculum) throw new Error('Canonical Geography curriculum is missing');
 
 // Put the live Paper 1 areas first. The canonical curriculum starts with the
 // much larger Paper 2 catalogue, which otherwise buries all 19 available
@@ -90,6 +94,53 @@ export const IRISH_STRANDS: StrandRef[] = irishCurriculum.strands.map(strand => 
     .map(topic => ({
       id: topic.id,
       code: topic.id.replace(/^irish-(\d+)-/, '$1.'),
+      title: topic.name,
+    })),
+}));
+
+/**
+ * The written Art paper examines the three Visual Studies content areas. Keep
+ * their canonical curriculum ids while omitting Research/Create/Respond rows,
+ * which belong to coursework and the practical examination rather than this
+ * complete written-paper deck. `art-6-4` is the registry's catch-all filing
+ * bucket, not another examinable content area; every 2021–2025 question has a
+ * more specific home, so showing it as “Being built” would falsely make this
+ * complete corpus look unfinished.
+ */
+const artSection = new Map([
+  ['art-6', { order: 0, label: 'Section A', title: "Today's World" }],
+  ['art-4', { order: 1, label: 'Section B', title: 'Europe and the Wider World' }],
+  ['art-5', { order: 2, label: 'Section C', title: 'Ireland and the Wider World' }],
+]);
+
+export const ART_STRANDS: StrandRef[] = artCurriculum.strands
+  .filter(strand => artSection.has(strand.id))
+  .sort((a, b) => artSection.get(a.id)!.order - artSection.get(b.id)!.order)
+  .map(strand => ({
+    id: strand.id,
+    label: artSection.get(strand.id)!.label,
+    title: artSection.get(strand.id)!.title,
+    topics: strand.subtopics
+      .filter((topic): topic is { id: string; name: string } =>
+        Boolean(topic.id) && topic.id !== 'art-6-4')
+      .map(topic => ({
+        id: topic.id,
+        code: topic.id.replace(/^art-(\d+)-/, '$1.'),
+        title: topic.name,
+      })),
+  }));
+
+/** The 2021–2025 papers use the outgoing nine-unit Geography syllabus. */
+export const GEOGRAPHY_STRANDS: StrandRef[] = geographyCurriculum.strands.map(strand => ({
+  id: strand.id,
+  label: strand.name.startsWith('Optional') ? 'Optional unit'
+    : strand.name.startsWith('Elective') ? 'Elective unit' : 'Core unit',
+  title: strand.name.replace(/^(?:Core|Elective|Optional) Unit \d+:\s*/, ''),
+  topics: strand.subtopics
+    .filter((topic): topic is { id: string; name: string } => Boolean(topic.id))
+    .map(topic => ({
+      id: topic.id,
+      code: topic.id.replace(/^geography-(\d+)-/, '$1.'),
       title: topic.name,
     })),
 }));
@@ -760,6 +811,8 @@ export const SUBJECTS = [
   { id: 'maths', title: 'Mathematics', strands: MATHS_STRANDS, spec: 'syllabus for examination from 2015' },
   { id: 'english', title: 'English', strands: ENGLISH_STRANDS, spec: 'outgoing syllabus examined through 2028' },
   { id: 'irish', title: 'Irish', strands: IRISH_STRANDS, spec: 'outgoing Leaving Certificate syllabus' },
+  { id: 'art', title: 'Art', strands: ART_STRANDS, spec: 'Visual Studies specification' },
+  { id: 'geography', title: 'Geography', strands: GEOGRAPHY_STRANDS, spec: 'outgoing Leaving Certificate syllabus' },
 ] as const;
 
 export type SubjectId = (typeof SUBJECTS)[number]['id'];
@@ -1012,6 +1065,14 @@ const DECKS: Record<string, Record<Level, () => Promise<{ CARDS: SecCard[] }>>> 
   irish: {
     higher: () => import('./cards/irish/higher'),
     ordinary: () => import('./cards/irish/ordinary'),
+  },
+  art: {
+    higher: () => import('./cards/art/higher'),
+    ordinary: () => import('./cards/art/ordinary'),
+  },
+  geography: {
+    higher: () => import('./cards/geography/higher'),
+    ordinary: () => import('./cards/geography/ordinary'),
   },
 };
 

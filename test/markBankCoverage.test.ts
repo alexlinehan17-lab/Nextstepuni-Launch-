@@ -28,6 +28,10 @@ import { CARDS as ENGLISH_HIGHER } from '../components/MarkBank/cards/english/hi
 import { CARDS as ENGLISH_ORDINARY } from '../components/MarkBank/cards/english/ordinary';
 import { CARDS as IRISH_HIGHER } from '../components/MarkBank/cards/irish/higher';
 import { CARDS as IRISH_ORDINARY } from '../components/MarkBank/cards/irish/ordinary';
+import { CARDS as ART_HIGHER } from '../components/MarkBank/cards/art/higher';
+import { CARDS as ART_ORDINARY } from '../components/MarkBank/cards/art/ordinary';
+import { CARDS as GEOGRAPHY_HIGHER } from '../components/MarkBank/cards/geography/higher';
+import { CARDS as GEOGRAPHY_ORDINARY } from '../components/MarkBank/cards/geography/ordinary';
 
 const SUBJECTS = Object.keys(baseline) as (keyof typeof baseline)[];
 
@@ -38,6 +42,14 @@ const deckCards = (subject: string): { id: string; ref: string }[] => {
   }
   if (subject === 'irish') {
     return [...IRISH_HIGHER, ...IRISH_ORDINARY]
+      .map(({ id, questionRef: ref }) => ({ id, ref }));
+  }
+  if (subject === 'art') {
+    return [...ART_HIGHER, ...ART_ORDINARY]
+      .map(({ id, questionRef: ref }) => ({ id, ref }));
+  }
+  if (subject === 'geography') {
+    return [...GEOGRAPHY_HIGHER, ...GEOGRAPHY_ORDINARY]
       .map(({ id, questionRef: ref }) => ({ id, ref }));
   }
   const out: { id: string; ref: string }[] = [];
@@ -89,7 +101,8 @@ describe('Mark Bank paper-coverage ratchet', () => {
     // English overlays 19 hand-enriched cards onto a generated corpus, so its
     // display ordering is not the manifest ordering. Coverage pins identity,
     // not presentation order.
-    if (subject === 'english' || subject === 'irish') identities.sort();
+    if (subject === 'english' || subject === 'irish' || subject === 'art'
+      || subject === 'geography') identities.sort();
     const digest = createHash('sha256')
       .update(identities.join('\n'))
       .digest('hex').slice(0, 16);
@@ -107,6 +120,9 @@ describe('Mark Bank paper-coverage ratchet', () => {
         }
         if (subject === 'irish') {
           return !/^\d{4} (?:HL|OL) Paper [12] (?:Cluastuiscint Cuid [ABC] · .+|Ceapadóireacht [A-D]\((?:[a-e]|i{1,3})\)|Léamhthuiscint [AB] · Ceist [1-6]|(?:Prose|Poetry) [23][AB]\([a-c]\)|Literature 4\([a-f]\))$/.test(ref);
+        }
+        if (subject === 'geography') {
+          return !/^\d{4} (?:HL|OL) Part [12] Q(?:[1-9]|1\d|2[0-4])(?:[ABC])?(?: · .+)?$/.test(ref);
         }
         const core = ref.split(/\s+[—–-]\s+/)[0];
         const m = core.match(HEAD);
@@ -136,7 +152,8 @@ describe('Mark Bank paper-coverage ratchet', () => {
         __dirname, '..', 'components', 'MarkBank', 'cards', subject, `${level}.ts`);
       try { h.update(readFileSync(path)); } catch { /* single-level deck */ }
     }
-    if (subject === 'english' || subject === 'irish') {
+    if (subject === 'english' || subject === 'irish' || subject === 'art'
+      || subject === 'geography') {
       for (const name of ['factory.ts', 'authored.json']) {
         h.update(readFileSync(resolve(
           __dirname, '..', 'components', 'MarkBank', 'cards', subject, name)));

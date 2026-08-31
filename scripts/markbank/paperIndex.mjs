@@ -94,6 +94,12 @@ const labelCovers = (label) => {
   // practical-test label cannot become a false section match.
   const paper = text.match(/\bpaper\s+(one|two|[1-9])\b/i)?.[1]?.toLowerCase();
   if (paper) covered.add(paper === 'one' ? '1' : paper === 'two' ? '2' : paper);
+  // Geography names its two written documents "Part 1" and "Part 2".  They
+  // are separate PDFs (042 and 043), so leaving Part unrecognised makes every
+  // Geography card resolve to null even though Paper Trail holds both exact
+  // documents.  Keep this anchored just as tightly as Paper/Section above.
+  const part = text.match(/\bpart\s+(one|two|[1-9])\b/i)?.[1]?.toLowerCase();
+  if (part) covered.add(part === 'one' ? '1' : part === 'two' ? '2' : part);
   return covered;
 };
 
@@ -110,6 +116,17 @@ export function resolvePaperFileid(subjectId, year, level, section) {
   if (!entry?.papers?.length) return null;
   // One paper for the year means there is nothing to choose between.
   if (entry.papers.length === 1) return stripPdf(entry.papers[0].doc?.f);
+  // Art's separate illustration booklet is indexed as a second "paper" even
+  // though every written section lives in the document explicitly labelled
+  // Exam Paper. Treating both documents as section candidates made every Art
+  // card resolve to null. This is safe only when that label is unique and all
+  // siblings identify themselves as picture/illustration companions.
+  const namedExamPapers = entry.papers.filter(p => /^Exam Paper$/i.test(p.label));
+  const companions = entry.papers.filter(p => !/^Exam Paper$/i.test(p.label));
+  if (namedExamPapers.length === 1 && companions.length > 0
+      && companions.every(p => /picture|illustration/i.test(p.label))) {
+    return stripPdf(namedExamPapers[0].doc?.f);
+  }
   const direct = entry.papers.find(p => labelCovers(p.label).has(section));
   if (direct) return stripPdf(direct.doc?.f);
   // The 2022 Irish OL Paper 1 is labelled only "Exam Paper" in the SEC index,

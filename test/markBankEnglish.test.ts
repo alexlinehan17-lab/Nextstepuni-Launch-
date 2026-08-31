@@ -48,6 +48,7 @@ interface AuthoredCard {
   printedParts: string[];
   schemePage: number;
   schemeTraceScore: number;
+  taskRequirements: string[];
   sourceMaterial?: CardSourceMaterial;
 }
 
@@ -191,7 +192,7 @@ describe('English prompt and source integrity', () => {
 
   it('attaches every required passage or poem to the official paper page', () => {
     const withSource = manifest.cards.filter(card => card.sourceMaterial);
-    expect(withSource).toHaveLength(205);
+    expect(withSource).toHaveLength(215);
 
     for (const authored of withSource) {
       const runtime = byId.get(authored.id)!;
@@ -225,6 +226,27 @@ describe('English prompt and source integrity', () => {
     expect(directlyDependentP1.length).toBeGreaterThan(30);
     expect(directlyDependentP1.filter(card => !card.sourceMaterial)
       .map(card => card.questionRef)).toEqual([]);
+
+    const restoredContextDependentIds = [
+      'english-2023-hl-p1-t1-a-iii',
+      'english-2023-hl-p1-t2-a-ii',
+      'english-2023-hl-p1-t2-a-iii',
+      'english-2023-ol-p1-t2-a-ii',
+      'english-2023-ol-p1-t2-a-iii-b',
+      'english-2023-ol-p1-t3-a-ii',
+      'english-2024-ol-p1-t1-a-ii',
+      'english-2024-ol-p1-t1-a-iii-b',
+      'english-2024-ol-p1-t2-a-ii',
+      'english-2024-ol-p1-t3-a-iii-b',
+    ];
+    for (const id of restoredContextDependentIds) {
+      const authored = manifest.cards.find(card => card.id === id);
+      const runtime = byId.get(id);
+      expect(authored?.sourceMaterial, id).toBeDefined();
+      expect(runtime?.sourceMaterial, id).toBeDefined();
+      expect(authored?.taskRequirements, id).toContain(
+        'Read and use the official source material supplied with the card.');
+    }
   });
 
   it('does not add a paper passage to self-contained writing choices', () => {
