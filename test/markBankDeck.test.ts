@@ -46,6 +46,10 @@ import { CARDS as ENGLISH_HIGHER } from '../components/MarkBank/cards/english/hi
 import { CARDS as ENGLISH_ORDINARY } from '../components/MarkBank/cards/english/ordinary';
 import { CARDS as IRISH_HIGHER } from '../components/MarkBank/cards/irish/higher';
 import { CARDS as IRISH_ORDINARY } from '../components/MarkBank/cards/irish/ordinary';
+import { CARDS as ART_HIGHER } from '../components/MarkBank/cards/art/higher';
+import { CARDS as ART_ORDINARY } from '../components/MarkBank/cards/art/ordinary';
+import { CARDS as GEOGRAPHY_HIGHER } from '../components/MarkBank/cards/geography/higher';
+import { CARDS as GEOGRAPHY_ORDINARY } from '../components/MarkBank/cards/geography/ordinary';
 
 /** Every deck at once. The app loads one at a time; the guards check them all,
  *  so a new subject inherits the whole net the day its first cards land.
@@ -61,6 +65,8 @@ const SAMPLE_CARDS = [
   ...BUS_HIGHER, ...BUS_ORDINARY, ...HE_HIGHER, ...HE_ORDINARY,
   ...ECON_HIGHER, ...ECON_ORDINARY, ...ENGLISH_HIGHER, ...ENGLISH_ORDINARY,
   ...IRISH_HIGHER, ...IRISH_ORDINARY,
+  ...ART_HIGHER, ...ART_ORDINARY,
+  ...GEOGRAPHY_HIGHER, ...GEOGRAPHY_ORDINARY,
 ];
 import {
   isDiagramCard, isContentFreeRow, isPointCard, looksLikeSectionLabel, tariffReconciles,
@@ -236,7 +242,7 @@ describe('no card can repeat the fabrication that shipped first time', () => {
     const bad = SAMPLE_CARDS.filter(c => {
       if (/you may include a labelled/i.test(c.questionText)) return false;
       const namesLetters = /\blabelled [A-Z]\b|\bstructures? [A-Z](,| and )|\bparts? [A-Z](,| and )|\blabelled\s+(parts|structures)\b/i.test(c.questionText);
-      return namesLetters && !isDiagramCard(c);
+      return namesLetters && !isDiagramCard(c) && !c.sourceMaterial;
     }).map(c => `${c.questionRef}: "${c.questionText}"`);
     expect(bad, show(bad)).toEqual([]);
   });
@@ -376,6 +382,10 @@ describe('the size manifest matches the decks it describes', () => {
     ['english', 'ordinary', ENGLISH_ORDINARY],
     ['irish', 'higher', IRISH_HIGHER],
     ['irish', 'ordinary', IRISH_ORDINARY],
+    ['art', 'higher', ART_HIGHER],
+    ['art', 'ordinary', ART_ORDINARY],
+    ['geography', 'higher', GEOGRAPHY_HIGHER],
+    ['geography', 'ordinary', GEOGRAPHY_ORDINARY],
   ] as const)('%s %s', (subjectId, level, cards) => {
     expect(deckSize(subjectId, level)).toBe(cards.length);
   });
@@ -435,6 +445,8 @@ describe('the taxonomy is the redeveloped specification', () => {
       maths: 'maths-',
       english: 'english-',
       irish: 'irish-',
+      art: 'art-',
+      geography: 'geography-',
     };
     for (const subject of SUBJECTS) {
       const prefix = PREFIX[subject.id];

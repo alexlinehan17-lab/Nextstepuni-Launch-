@@ -4,10 +4,11 @@
  *
  * Mark Bank — source-material reader.
  *
- * A comprehension card is not answerable from its prompt alone. This reader
- * opens the exact printed pages from Paper Trail's SEC corpus before the
- * marking-scheme reveal. Pages stay as PDF renders rather than retyped HTML so
- * columns, images, emphasis and the examination context cannot drift.
+ * Some cards are not answerable from their prompt alone. This reader opens the
+ * exact printed source pages or companion illustration sheets from Paper
+ * Trail's SEC corpus before the marking-scheme reveal. Pages stay as PDF
+ * renders rather than retyped HTML so layout, imagery, emphasis and examination
+ * context cannot drift.
  */
 
 import React, {
@@ -62,6 +63,8 @@ const CloseIcon = () => (
 const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
   source, subjectId, year, paperFileid,
 }) => {
+  const isIllustration = source.kind === 'source-illustration';
+  const materialLabel = isIllustration ? 'illustration sheet' : 'source text';
   const [open, setOpen] = useState(false);
   const [pdf, setPdf] = useState<PDFDocumentProxy | null>(null);
   const [failed, setFailed] = useState(false);
@@ -225,7 +228,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
       >
         <header className="mb-source-reader-header">
           <div className="mb-source-reader-heading">
-            <span>{source.label} · source text</span>
+            <span>{source.label} · {materialLabel}</span>
             <h2 id="mb-source-reader-title">{source.title}</h2>
           </div>
           <div className="mb-source-reader-tools" aria-label="Page display controls">
@@ -249,7 +252,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
               <span aria-hidden="true">+</span>
             </button>
           </div>
-          <button ref={closeRef} type="button" className="mb-source-reader-close" onClick={close} aria-label="Close source text">
+          <button ref={closeRef} type="button" className="mb-source-reader-close" onClick={close} aria-label={`Close ${materialLabel}`}>
             <CloseIcon />
           </button>
         </header>
@@ -294,7 +297,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
                   ) : failed ? (
                     <div className="mb-source-reader-failed">
                       <strong>That page did not load.</strong>
-                      <span>You can retry or open the original examination paper.</span>
+                      <span>You can retry or open the original examination document.</span>
                       <button type="button" onClick={() => { setFailed(false); setPdf(null); vaultPdf(url).then(setPdf).catch(() => setFailed(true)); }}>
                         Try again
                       </button>
@@ -318,7 +321,7 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
             <strong>{source.attribution}</strong>
             <span>{source.presentationNote}</span>
             <a href={`${url}#page=${source.pages[pageIndex]}`} target="_blank" rel="noreferrer">
-              Open the original paper
+              Open the original {isIllustration ? 'illustration sheet' : 'paper'}
             </a>
           </div>
           <div className="mb-source-reader-navigation">
@@ -359,7 +362,9 @@ const SourceMaterialReader: React.FC<SourceMaterialReaderProps> = ({
         <span className="mb-source-material-copy">
           <span>Read {source.label}</span>
           <strong>{source.title}</strong>
-          <small>{source.pages.length} printed {source.pages.length === 1 ? 'page' : 'pages'} · exact examination text</small>
+          <small>
+            {source.pages.length} printed {source.pages.length === 1 ? 'page' : 'pages'} · {isIllustration ? 'official examination imagery' : 'exact examination text'}
+          </small>
         </span>
         <span className="mb-source-material-open" aria-hidden="true">
           <ArrowIcon direction="right" />

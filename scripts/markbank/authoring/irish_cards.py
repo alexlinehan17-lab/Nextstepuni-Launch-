@@ -68,6 +68,13 @@ POETRY_TOPICS = {
     'mo ghrá-sa': 'irish-5-4',
     'colscaradh': 'irish-5-5',
 }
+POETRY_TITLES = {
+    'an spailpín fánach': 'An Spailpín Fánach',
+    'géibheann': 'Géibheann',
+    'an tearrach thiar': 'An tEarrach Thiar',
+    'mo ghrá-sa': 'Mo Ghrá-Sa',
+    'colscaradh': 'Colscaradh',
+}
 ADDITIONAL_TOPICS = {
     'an triail': 'irish-6-0',
     'a thig ná tit orm': 'irish-6-1',
@@ -140,6 +147,8 @@ def clean_lines(value: str, *, drop_answer_slots: bool = True) -> str:
             continue
         if re.match(r'^Cuid I\s+An Chluastuiscint\s+60 marc', line, re.I):
             continue
+        if re.match(r'^Cuid\s+[ABC]\s+ar\s+leanúint\.?$', line, re.I):
+            continue
         if re.match(r'^Cuid II\s+An Cheapadóireacht\s+100 marc', line, re.I):
             continue
         lines.append(line)
@@ -148,8 +157,8 @@ def clean_lines(value: str, *, drop_answer_slots: bool = True) -> str:
     return value.strip()
 
 
-def prompt_text(value: str) -> str:
-    value = clean_lines(value)
+def prompt_text(value: str, *, preserve_part_labels: bool = False) -> str:
+    value = clean_lines(value, drop_answer_slots=not preserve_part_labels)
     value = re.sub(r'(?m)^nó\s*$', '', value, flags=re.I)
     value = re.sub(r'\s+([?.!,;:])', r'\1', value)
     value = re.sub(r'\n{2,}', '\n', value)
@@ -238,6 +247,46 @@ def split_options(value: str, labels: Sequence[str]) -> list[tuple[str, str, int
         end = ordered[index + 1].start() if index + 1 < len(ordered) else len(value)
         out.append((match.group(1).lower(), value[match.end():end], match.start()))
     return out
+
+
+def split_titled_options(
+    value: str,
+    labels: Sequence[str],
+    titles: Iterable[str],
+) -> list[tuple[str, str, int]]:
+    """Split prescribed choices without confusing nested lettered subparts.
+
+    Ordinary poetry often begins option (a) with an (i)(a)-(d) question. The
+    generic ordered-label splitter consequently treated nested (i)(b) and
+    (i)(c) as the next two selectable poems. A real prescribed option is
+    followed immediately by a syllabus title, so use that primary-paper fact
+    to identify the top-level markers.
+    """
+    folded_titles = tuple(comparable(title) for title in titles)
+    candidates: list[re.Match[str]] = []
+    for match in re.finditer(r'(?m)^\s*\(([a-z])\)\s*', value, re.I):
+        if match.group(1).lower() not in labels:
+            continue
+        following = comparable(value[match.end():match.end() + 140])
+        if any(following.startswith(title) for title in folded_titles):
+            candidates.append(match)
+    ordered: list[re.Match[str]] = []
+    cursor = 0
+    for label in labels:
+        candidate = next((match for match in candidates[cursor:]
+                          if match.group(1).lower() == label), None)
+        if candidate is None:
+            raise AssertionError(
+                f'missing titled option ({label}) in {compact(value)[:500]}')
+        ordered.append(candidate)
+        cursor = candidates.index(candidate) + 1
+    return [
+        (match.group(1).lower(),
+         value[match.end():(ordered[index + 1].start()
+                            if index + 1 < len(ordered) else len(value))],
+         match.start())
+        for index, match in enumerate(ordered)
+    ]
 
 
 def numbered_questions(value: str, count: int) -> list[tuple[int, str, int]]:
@@ -919,7 +968,8 @@ def literature_cards(year: int, level: str, paper_pages: list[str], scheme_pages
     def without_literature_footer(value: str) -> str:
         footer = re.search(
             r'(?mi)^\s*(?:(?:2A|2B|3A|3B)\s*(?:[–—-]\s*)?'
-            r'(?:PRÓS|FILÍOCHT)\b|Ceist\s+[23]\s+(?:Prós|Filíocht)\b)', value)
+            r'(?:PRÓS|FILÍOCHT)\b|Ceist\s+[23]\s+(?:Prós|Filíocht)\b'
+            r'|Freagair\s+do\s+rogha\s+ceann\s+amháin\s+as\s*$)', value)
         return value[:footer.start()] if footer else value
 
     def add_literature(
@@ -927,7 +977,8 @@ def literature_cards(year: int, level: str, paper_pages: list[str], scheme_pages
         total: int, source: dict | None = None,
     ) -> None:
         body = without_literature_footer(body)
-        question = prompt_text(f'({option}) {body}')
+        question = prompt_text(
+            f'({option}) {body}', preserve_part_labels=True)
         scheme_page, trace, guide = literature_scheme(question, scheme_pages)
         knowledge = total - 5 if level == 'higher' else total
         criteria = [criterion(
@@ -979,7 +1030,10 @@ def literature_cards(year: int, level: str, paper_pages: list[str], scheme_pages
 
     for section_key in ('3a', '3b'):
         zone, _ = zones[section_key]
-        for option, body, _ in split_options(zone, poetry_labels):
+        option_parts = (split_titled_options(zone, poetry_labels, POETRY_TOPICS)
+                        if section_key == '3a'
+                        else split_options(zone, poetry_labels))
+        for option, body, _ in option_parts:
             # Prescribed poems are printed after the three linked subparts.  The
             # poem is source material, not part of the question text.
             if section_key == '3a':
@@ -987,11 +1041,12 @@ def literature_cards(year: int, level: str, paper_pages: list[str], scheme_pages
             topic = title_topic(
                 body, POETRY_TOPICS,
                 'irish-5-0' if section_key == '3a' else 'irish-5-6')
-            question = prompt_text(f'({option}) {body}')
+            question = prompt_text(
+                f'({option}) {body}', preserve_part_labels=True)
             source = None
             if section_key == '3a':
                 source_pages = option_source_pages(question, paper_pages)
-                title = next((key.title() for key in POETRY_TOPICS
+                title = next((canonical for key, canonical in POETRY_TITLES.items()
                               if comparable(key) in comparable(question)), 'Dán Ainmnithe')
                 source = source_material('Filíocht Ainmnithe', title, source_pages)
             add_literature(

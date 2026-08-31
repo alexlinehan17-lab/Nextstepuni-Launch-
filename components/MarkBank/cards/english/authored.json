@@ -6624,9 +6624,21 @@
       "conceptId": "english-comprehending-style",
       "taskRequirements": [
         "Address every instruction in the printed task.",
+        "Read and use the official source material supplied with the card.",
         "Support the response with relevant evidence from the named text or source.",
         "Sustain a clear, purposeful response in an appropriate register."
-      ]
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "TEXT 1",
+        "title": "BETWEEN TWO WORLDS: VILLAGE AND CITY",
+        "pages": [
+          2,
+          3
+        ],
+        "attribution": "This text is based on an edited extract from Gravel Heart, a novel by Abdulrazak Gurnah, 2021 Nobel Prize winner for literature. In this extract Salim, from a small island village in Zanzibar, comes to stay with his uncle in London to further his education. He doesn’t know how to belong in this strange city and feels cut off from the world he has left behind.",
+        "presentationNote": "Official State Examinations Commission examination layout."
+      }
     },
     {
       "id": "english-2023-hl-p1-t1-b",
@@ -6696,9 +6708,21 @@
       "conceptId": "english-comprehending-insights",
       "taskRequirements": [
         "Address every instruction in the printed task.",
+        "Read and use the official source material supplied with the card.",
         "Develop the required three points fully.",
         "Sustain a clear, purposeful response in an appropriate register."
-      ]
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "TEXT 2",
+        "title": "BETWEEN TWO WORLDS: THROUGH WORDS AND PICTURES",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "Text 2 consists of two elements. The first is an edited text by Henry Eliot entitled, This Must be the Place which focuses on literary locations. The second is an iconic photograph, taken in 1907 and published in Time magazine’s 100 most influential, historical pictures. Both elements illustrate how we can experience different worlds through words and pictures.",
+        "presentationNote": "Official State Examinations Commission examination layout."
+      }
     },
     {
       "id": "english-2023-hl-p1-t2-a-iii",
@@ -6716,9 +6740,21 @@
       "conceptId": "english-comprehending-style",
       "taskRequirements": [
         "Address every instruction in the printed task.",
+        "Read and use the official source material supplied with the card.",
         "Support the response with relevant evidence from the named text or source.",
         "Sustain a clear, purposeful response in an appropriate register."
-      ]
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "TEXT 2",
+        "title": "BETWEEN TWO WORLDS: THROUGH WORDS AND PICTURES",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "Text 2 consists of two elements. The first is an edited text by Henry Eliot entitled, This Must be the Place which focuses on literary locations. The second is an iconic photograph, taken in 1907 and published in Time magazine’s 100 most influential, historical pictures. Both elements illustrate how we can experience different worlds through words and pictures.",
+        "presentationNote": "Official State Examinations Commission examination layout."
+      }
     },
     {
       "id": "english-2023-hl-p1-t2-b",
@@ -7680,8 +7716,20 @@
       "conceptId": "english-comprehending-insights",
       "taskRequirements": [
         "Address every instruction in the printed task.",
+        "Read and use the official source material supplied with the card.",
         "Sustain a clear, purposeful response in an appropriate register."
-      ]
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "TEXT 2",
+        "title": "LESSONS FOR THE FUTURE",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "The following text is based on edited extracts from a speech delivered by Booker Prize winning author George Saunders to a group of students graduating from Syracuse University.",
+        "presentationNote": "Official State Examinations Commission examination layout."
+      }
     },
     {
       "id": "english-2023-ol-p1-t2-a-iii-a",
@@ -7718,8 +7766,20 @@
       "conceptId": "english-comprehending-insights",
       "taskRequirements": [
         "Address every instruction in the printed task.",
+        "Read and use the official source material supplied with the card.",
         "Sustain a clear, purposeful response in an appropriate register."
-      ]
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "TEXT 2",
+        "title": "LESSONS FOR THE FUTURE",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "The following text is based on edited extracts from a speech delivered by Booker Prize winning author George Saunders to a group of students graduating from Syracuse University.",
+        "presentationNote": "Official State Examinations Commission examination layout."
+      }
     },
     {
       "id": "english-2023-ol-p1-t2-b",
@@ -7789,8 +7849,20 @@
       "conceptId": "english-comprehending-insights",
       "taskRequirements": [
         "Address every instruction in the printed task.",
+        "Read and use the official source material supplied with the card.",
         "Sustain a clear, purposeful response in an appropriate register."
-      ]
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "TEXT 3",
+        "title": "LIFE LESSONS THROUGH ART",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "This text is based on an article in The Smithsonian by Will Ellsworth Jones. In it he discusses the mysterious graffiti artist, Banksy, whose identity is kept secret and whose art often raises questions about life lessons and life’s challenges. The text includes two images by Banksy.",
+        "presentationNote": "Official State Examinations Commission examination layout."
+      }
     },
     {
       "id": "english-2023-ol-p1-t3-a-iii-a",
@@ -10829,8 +10901,20 @@
       "conceptId": "english-comprehending-insights",
       "taskRequirements": [
         "Address every instruction in the printed task.",
+        "Read and use the official source material supplied with the card.",
         "Sustain a clear, purposeful response in an appropriate register."
-      ]
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "TEXT 1",
+        "title": "CHALLENGE 1: A NEW SCHOOL",
+        "pages": [
+          2,
+          3
+        ],
+        "attribution": "TEXT 1 is an adapted extract from the novel, “How to Build a Boat” by Elaine Feeney. It was longlisted for the 2023 Booker Prize. It tells the story of Jamie O’Neill, a 13-year-old, who has a unique way of viewing the world that involves a need to be organised when facing new challenges. In this extract Jamie prepares for his first day at secondary school with some help from his father, Eoin.",
+        "presentationNote": "Official State Examinations Commission examination layout."
+      }
     },
     {
       "id": "english-2024-ol-p1-t1-a-iii-a",
@@ -10867,8 +10951,20 @@
       "conceptId": "english-comprehending-insights",
       "taskRequirements": [
         "Address every instruction in the printed task.",
+        "Read and use the official source material supplied with the card.",
         "Sustain a clear, purposeful response in an appropriate register."
-      ]
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "TEXT 1",
+        "title": "CHALLENGE 1: A NEW SCHOOL",
+        "pages": [
+          2,
+          3
+        ],
+        "attribution": "TEXT 1 is an adapted extract from the novel, “How to Build a Boat” by Elaine Feeney. It was longlisted for the 2023 Booker Prize. It tells the story of Jamie O’Neill, a 13-year-old, who has a unique way of viewing the world that involves a need to be organised when facing new challenges. In this extract Jamie prepares for his first day at secondary school with some help from his father, Eoin.",
+        "presentationNote": "Official State Examinations Commission examination layout."
+      }
     },
     {
       "id": "english-2024-ol-p1-t1-b",
@@ -10938,8 +11034,20 @@
       "conceptId": "english-comprehending-insights",
       "taskRequirements": [
         "Address every instruction in the printed task.",
+        "Read and use the official source material supplied with the card.",
         "Sustain a clear, purposeful response in an appropriate register."
-      ]
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "TEXT 2",
+        "title": "CHALLENGE 2: BEAT THE CLOCK",
+        "pages": [
+          4,
+          5
+        ],
+        "attribution": "This text is based on an article by Ian O’Riordan which appeared in The Irish Times. In it he profiles Rhasidat Adeleke, an Irish sprinter who is on a sports scholarship attending the University of Texas. She is one of Ireland’s brightest Olympic hopefuls.",
+        "presentationNote": "Official State Examinations Commission examination layout."
+      }
     },
     {
       "id": "english-2024-ol-p1-t2-a-iii-a",
@@ -11095,8 +11203,20 @@
       "conceptId": "english-comprehending-insights",
       "taskRequirements": [
         "Address every instruction in the printed task.",
+        "Read and use the official source material supplied with the card.",
         "Sustain a clear, purposeful response in an appropriate register."
-      ]
+      ],
+      "sourceMaterial": {
+        "kind": "source-text",
+        "label": "TEXT 3",
+        "title": "CHALLENGE 3: LIFE CHALLENGES",
+        "pages": [
+          6,
+          7
+        ],
+        "attribution": "This text is based on a series of quotations about challenges and how we face or deal with them. It also includes a collection of photographs visually capturing various forms of challenges.",
+        "presentationNote": "Official State Examinations Commission examination layout."
+      }
     },
     {
       "id": "english-2024-ol-p1-t3-b",

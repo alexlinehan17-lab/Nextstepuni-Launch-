@@ -14,6 +14,21 @@
   },
   "refsHash": "967a2d72ff0648b1"
  },
+ "art": {
+  "cards": 462,
+  "contentHash": "f84ca9f2c3b181ad",
+  "coveragePct": 100.0,
+  "covered": 462,
+  "excluded": 0,
+  "leaves": 462,
+  "open": 0,
+  "orphans": 0,
+  "papers": {
+   "count": 20,
+   "hash": "289b620d2a5e9d7e"
+  },
+  "refsHash": "7ba094263d991baa"
+ },
  "biology": {
   "cards": 1359,
   "contentHash": "f24a6944766a455f",
@@ -91,7 +106,7 @@
  },
  "english": {
   "cards": 660,
-  "contentHash": "dd32efcea04d35fc",
+  "contentHash": "d84d602617d4bc77",
   "coveragePct": 100.0,
   "covered": 660,
   "excluded": 0,
@@ -103,6 +118,21 @@
    "hash": "5a9e0ab3f863aa4f"
   },
   "refsHash": "c1e31e8602659293"
+ },
+ "geography": {
+  "cards": 754,
+  "contentHash": "cd75945aa06165db",
+  "coveragePct": 100.0,
+  "covered": 563,
+  "excluded": 85,
+  "leaves": 648,
+  "open": 0,
+  "orphans": 0,
+  "papers": {
+   "count": 24,
+   "hash": "7d40addba29edb98"
+  },
+  "refsHash": "a4cecb0559e11239"
  },
  "home-economics": {
   "cards": 571,
@@ -121,7 +151,7 @@
  },
  "irish": {
   "cards": 400,
-  "contentHash": "125a2d03a608051f",
+  "contentHash": "0f7f4953e350117f",
   "coveragePct": 100.0,
   "covered": 400,
   "excluded": 0,
@@ -136,7 +166,7 @@
  },
  "maths": {
   "cards": 833,
-  "contentHash": "39c2f5c60ad3e61c",
+  "contentHash": "04cef27791c4d903",
   "coveragePct": 95.1,
   "covered": 941,
   "excluded": 0,

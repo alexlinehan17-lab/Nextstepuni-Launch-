@@ -44,6 +44,39 @@ FURNITURE_TAIL = re.compile(
 CONTENT_FREE = re.compile(r'^(work of merit|any valid|as above|see above|'
                           r'accept any|other relevant)\W*$', re.I)
 
+# Primary-paper corrections for asks whose two-dimensional typesetting defeats
+# the generic text extractor. The source remains the SEC paper; these strings
+# are verified transcriptions and keep future regeneration from restoring the
+# broken, interleaved readings currently visible on the affected cards.
+VERIFIED_QUESTION_TEXT = {
+    (2025, 'hl', 1, 10, 'e', 'i'):
+        'H(n) is the total number of dots in Pattern n of the sequence, for '
+        'n ∈ ℕ. (i) Write down the value of H(1). When n is a natural number, '
+        'H(n + 1) can always be found from H(n), using the formula '
+        'H(n + 1) = H(n) + 2n + 3. (ii) Using this fact, prove by induction '
+        'that H(n) = (n + 1)² for all n ∈ ℕ.',
+    (2025, 'hl', 2, 8, 'a', 'i'):
+        '(i) Use the theorem of Pythagoras to show that |OB| = 3√2 m, and '
+        'hence find |OP|, the vertical height of the pyramid. Give |OP| in '
+        'surd form.',
+    (2025, 'hl', 2, 8, 'a', 'ii'):
+        '(ii) On the triangular face PAB, the size of ∠PAB is 74·2°, correct '
+        'to 1 decimal place. Using this, or otherwise, work out the total area '
+        'of the four triangular faces of the roof. Give your answer correct '
+        'to the nearest m².',
+    (2025, 'hl', 2, 8, 'a', 'iii'):
+        '(iii) The diagram below shows part of a scaled diagram of the net of '
+        'this pyramid. The diagram shows the square base and two of the '
+        'triangular sides. Construct the rest of the scaled diagram of the '
+        'net of the pyramid. Show all construction lines clearly.',
+    (2025, 'hl', 2, 10, 'e', None):
+        '(e) For one of the questions on the test, students are given a mark '
+        'of 0, 1, 2, or 3. The proportion receiving each mark is 0·19, p, 2r, '
+        'and r, respectively, where p, r ∈ ℝ and p, r ≥ 0. A student is '
+        'picked at random. The expected value of their mark will depend on p '
+        'and r. Find the largest value that the expected value could be.',
+}
+
 
 class Refused(Exception):
     pass
@@ -99,6 +132,10 @@ class Author:
         underneath it are joined. That is still the paper's own words.
         """
         paper, q, letter, roman = key[0], key[1], key[2], key[3]
+        verified = VERIFIED_QUESTION_TEXT.get(
+            (self.year, self.level, paper, q, letter, roman))
+        if verified:
+            return verified
         P = self.P[paper]
         exact = [k for k in P.parts
                  if k[0] == q and k[1] == letter and k[2] == roman]

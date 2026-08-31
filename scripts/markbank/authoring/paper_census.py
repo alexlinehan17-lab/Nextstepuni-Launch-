@@ -69,6 +69,14 @@ SUBJECTS = {
     # holistic literature options. irish_cards.py reads all twenty papers and
     # emits the dedicated, count-pinned census used by the generic ratchet.
     'irish': {'mode': 'irish'},
+    # Art's real practice units are the separately marked task and fixed
+    # printed choice, not the outer question number. The dedicated census also
+    # preserves the legacy/current specification boundary and image bindings.
+    'art': {'mode': 'art'},
+    # Geography has one base task per printed short question or separately
+    # selectable Part Two A/B/C task. Its dedicated census also records the
+    # historical map/aerial tasks held until their companion sources exist.
+    'geography': {'mode': 'geography'},
     'business': {'mode': 'sections'},
     'home-economics': {'mode': 'sections'},
     # Two booklets: 038 carries Section A (short answer, attempt any nine) and
@@ -473,6 +481,54 @@ def census_sections(subject, year, level):
 
 def census_subject(subject):
     cfg = SUBJECTS.get(subject, {'mode': 'merged'})
+    if cfg['mode'] == 'geography':
+        path = os.path.join(
+            ROOT, 'scripts', 'markbank', 'authored', 'geography-census.json')
+        payload = json.load(open(path, encoding='utf-8'))
+        tasks = payload['baseTasks']
+        if payload.get('paperBaseTasks') != len(tasks):
+            raise AssertionError('Geography authored census total is stale')
+        papers = []
+        for sitting in payload['sittings']:
+            asks = [task for task in tasks
+                    if task['year'] == sitting['year']
+                    and task['level'] == sitting['level']]
+            if sitting.get('paperBaseTasks') != len(asks):
+                raise AssertionError(
+                    f"Geography {sitting['year']} {sitting['level']} "
+                    'census count is stale')
+            papers.append({
+                'year': sitting['year'], 'level': sitting['level'],
+                'paper': None, 'leafCount': len(asks),
+                'leaves': [{
+                    'key': [ask['id']], 'label': ask['questionRef'],
+                    'text': ask['title'], 'status': ask['status'],
+                } for ask in asks],
+                'marksSum': None, 'marksQuestions': 0, 'flags': [],
+            })
+        return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}
+    if cfg['mode'] == 'art':
+        path = os.path.join(ROOT, 'scripts', 'markbank', 'authored', 'art-census.json')
+        payload = json.load(open(path, encoding='utf-8'))
+        papers = []
+        for source in payload['papers']:
+            cards = source['cards']
+            if source.get('expectedCards') != len(cards):
+                raise AssertionError(
+                    f"Art {source['year']} {source['level']} census count is stale")
+            papers.append({
+                'year': source['year'], 'level': source['level'],
+                'paper': None, 'leafCount': len(cards),
+                'leaves': [{
+                    'key': [card['cardId']], 'label': card['questionRef'],
+                    'text': '', 'status': 'authored',
+                } for card in cards],
+                'marksSum': None, 'marksQuestions': 0, 'flags': [],
+            })
+        total = sum(p['leafCount'] for p in papers)
+        if payload.get('expectedCards', {}).get('total') != total:
+            raise AssertionError('Art authored census total is stale')
+        return {'subject': subject, 'mode': cfg['mode'], 'papers': papers}
     if cfg['mode'] == 'irish':
         path = os.path.join(ROOT, 'scripts', 'markbank', 'authored', 'irish-census.json')
         payload = json.load(open(path, encoding='utf-8'))

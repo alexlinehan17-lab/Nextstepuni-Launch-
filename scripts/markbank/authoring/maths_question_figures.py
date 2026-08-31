@@ -47,7 +47,10 @@ SIDECAR = os.path.join(ROOT, 'scripts', 'markbank', 'authored',
 CATALOGUE = os.path.join(ROOT, 'scripts', 'markbank', 'authored',
                          'maths-question-figures-catalogue.json')
 # Per-card corrections to the automatic plan, written after LOOKING at a bad
-# crop: {"card-id": {"qstem": true|false, "siblings": true|false}}.
+# crop. Alongside planning switches, a verified override may provide explicit
+# one-based PDF page regions. Those regions are useful where a two-column
+# diagram and its prompt need to be stacked cleanly instead of carrying an
+# answer grid or a neighbouring ask into the crop.
 OVERRIDES = os.path.join(HERE, 'maths_qfig_overrides.json')
 MANIFEST_JSON = os.path.join(ROOT, 'components', 'MarkBank', 'figures.json')
 
@@ -368,7 +371,7 @@ class Sitting:
             return self.q[nums[i + 1]]['head'][:2]
         return self.tail or (self.doc.page_count, 0.0)
 
-    def band_text(self, bands, limit=220):
+    def band_text(self, bands, limit=None):
         words = []
         for (sp, sy), (ep, ey) in bands:
             for (page, y0, y1, x0, txt, x1) in self.lines:
@@ -383,7 +386,7 @@ class Sitting:
             flat = mathtext.clean_like([self.path], flat) or flat
         except Exception:                                   # noqa: BLE001
             flat = mathtext.demangle(flat)
-        return flat[:limit]
+        return flat if limit is None else flat[:limit]
 
     # ---- the per-card plan ----
 
@@ -1005,6 +1008,42 @@ class Sitting:
             y += p.height + GAP
         return out
 
+    def render_regions(self, regions):
+        """Render visually verified page rectangles without inferred masking.
+
+        Override pages are one-based, matching the number printed in these
+        SEC booklets. Each rectangle was inspected against the primary paper,
+        so it deliberately excludes answer furniture and neighbouring parts.
+        Narrow diagram rectangles are centred in the final vertical stitch.
+        """
+        pieces = []
+        for region in regions:
+            page = int(region['page']) - 1
+            if page < 0 or page >= self.doc.page_count:
+                raise ValueError(f'override page {page + 1} is outside {self.path}')
+            x0 = float(region.get('x0', X0))
+            x1 = float(region.get('x1', X1))
+            top = float(region['top'])
+            bottom = float(region['bottom'])
+            if x1 <= x0 or bottom <= top:
+                raise ValueError(f'invalid override region {region!r}')
+            clip = pymupdf.Rect(x0, top, x1, bottom)
+            pix = self.doc[page].get_pixmap(clip=clip, dpi=DPI)
+            img = Image.open(io.BytesIO(pix.tobytes('png'))).convert('L')
+            img = trim_rows(img)
+            if img is not None:
+                pieces.append(img)
+        if not pieces:
+            return None
+        width = max(piece.width for piece in pieces)
+        height = sum(piece.height for piece in pieces) + GAP * (len(pieces) - 1)
+        out = Image.new('L', (width, height), 255)
+        y = 0
+        for piece in pieces:
+            out.paste(piece, ((width - piece.width) // 2, y))
+            y += piece.height + GAP
+        return out
+
 
 ANON = object()
 
@@ -1050,7 +1089,7 @@ def fig_name(year, level, paper, qnum, letter, roman):
     return '-'.join(parts)
 
 
-def run(cards, write=True, probe=False):
+def run(cards, write=True, probe=False, replace=False):
     sittings = {}
     overrides = json.load(open(OVERRIDES)) if os.path.exists(OVERRIDES) else {}
     sidecar = json.load(open(SIDECAR)) if os.path.exists(SIDECAR) else {}
@@ -1077,8 +1116,15 @@ def run(cards, write=True, probe=False):
         if key not in sittings:
             sittings[key] = Sitting(*key)
         S = sittings[key]
+        force = overrides.get(card['id'], {})
+        explicit_regions = force.get('regions')
         bands, note = S.plan(qnum, letter, roman, card.get('questionText', ''),
-                             overrides.get(card['id']))
+                             force)
+        if explicit_regions:
+            bands = [((int(region['page']) - 1, float(region['top'])),
+                      (int(region['page']) - 1, float(region['bottom'])))
+                     for region in explicit_regions]
+            note = 'visually verified explicit regions'
         # A span citation answers several parts from one scale. The crop has to
         # show all of them, so the last band runs to whatever follows the LAST
         # roman named rather than stopping at the first.
@@ -1097,12 +1143,13 @@ def run(cards, write=True, probe=False):
             print(f"{card['id']}: {note}")
             for b in bands:
                 print(f'   p{b[0][0]} y{b[0][1]:.0f} -> p{b[1][0]} y{b[1][1]:.0f}')
-        if f'{name}.png' in have and not probe:
+        if f'{name}.png' in have and not probe and not replace:
             sidecar[card['id']] = name
             continue
         S.own_marks = {x.lower() for x in re.findall(
             r'\(([a-h]|i{1,3}|iv|vi{0,3})\)', card['questionRef'])}
-        img = S.render(bands)
+        img = (S.render_regions(explicit_regions)
+               if explicit_regions else S.render(bands))
         if img is None:
             fails.append((card['id'], 'nothing printed in the planned bands'))
             continue
@@ -1127,15 +1174,21 @@ def run(cards, write=True, probe=False):
             continue
         by_hash[digest] = name
         sidecar[card['id']] = name
-        catalogue.append({
+        catalogue_record = {
             'file': f'{name}.png',
             'kind': 'figure',
             'truncated': False,
             'questionRef': card['questionRef'],
             'description':
                 'The question as printed on the paper — '
-                f'{S.band_text(bands)}',
-        })
+                f'{force.get("description") or S.band_text(bands)}',
+        }
+        existing = next((i for i, item in enumerate(catalogue)
+                         if item['file'] == catalogue_record['file']), None)
+        if existing is None:
+            catalogue.append(catalogue_record)
+        else:
+            catalogue[existing] = catalogue_record
         have.add(f'{name}.png')
     if write and not probe:
         json.dump(sidecar, open(SIDECAR, 'w'), indent=1)
@@ -1151,6 +1204,14 @@ def main():
         subset = [c for c in cards if c['questionRef'].startswith(ref)][:1] or [
             {'id': 'probe', 'questionRef': ref, 'questionText': ''}]
         fails = run(subset, write=False, probe=True)
+    elif args and args[0] == '--replace-card':
+        card_id = args[1]
+        subset = [c for c in cards if c['id'] == card_id]
+        if not subset:
+            print(f'unknown card id: {card_id}')
+            sys.exit(1)
+        fails = run(subset, replace=True)
+        print(f'{len(subset) - len(fails)}/{len(subset)} replaced')
     elif args and args[0] == '--sitting':
         year, lvl = args[1], args[2].lower()
         subset = [c for c in cards

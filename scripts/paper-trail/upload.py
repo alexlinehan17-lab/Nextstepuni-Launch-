@@ -32,7 +32,7 @@ ANSWERS_MANIFEST = os.path.join(HERE, "out", "answers-upload-manifest.jsonl")
 STAGE = os.path.join(HERE, "out", "stage")
 BUCKET = "gs://nextstepuni-app.firebasestorage.app"
 GCLOUD = os.path.expanduser("~/google-cloud-sdk/bin/gcloud")
-CURRENT_YEAR = 2025  # most recent published exam year
+CURRENT_YEAR = 2026  # most recent published exam year
 
 
 def main():
