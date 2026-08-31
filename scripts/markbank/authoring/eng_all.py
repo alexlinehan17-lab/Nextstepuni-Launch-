@@ -61,6 +61,28 @@ MAX_ROWS = 12
 # An "ask" that is really one of the options the question lists. It has no
 # sentence in it: "Nylon,", "Full hybrid;", "Ferdinand Porsche", "Basin".
 NOT_AN_ASK = re.compile(r'^[^.?!]{0,40}[,;.]?$')
+# What separates an ask from a list item is not its LENGTH. "Explain the term
+# bioplastic." is 28 characters and is the whole question; "Ferdinand Porsche"
+# is 17 and is one of three names under "Outline the contribution made by each
+# of the following". Refusing everything short refused 256 leaves, among them
+# every short imperative in the subject.
+#
+# The command word is the real signal, and it is DERIVED rather than invented:
+# these are the words that open the 550 census leaves too long to be anything
+# but an ask, minus the stems that came with them ("nominal", "the", "using"),
+# plus sketch/label/indicate, which open one ask each and are imperative in
+# the same way. "Select" is excluded -- it opens "Select any two from the
+# following", which is a lead-in to options rather than an ask.
+COMMAND_WORD = re.compile(
+    r'^(?:briefly|calculate|compare|define|describe|determine|differentiate'
+    r'|discuss|distinguish|draw|explain|give|identify|indicate|label|list'
+    r'|name|outline|sketch|state|suggest)\b', re.I)
+# Printed on the page but not stated by anyone: the running footer, and a
+# heading that INTRODUCES the marking points rather than being one. Both were
+# reaching cards as the whole answer -- "Page 17" for eighteen marks, "A -
+# Vacuum forming:" for ten, "Any two:" for twelve.
+NOT_A_POINT = re.compile(r'^(?:Page\s+\d+|\d+\s+of\s+\d+)\s*$'
+                         r'|^[^.?!]{0,28}:\s*$', re.I)
 # The examiner talking to the examiner rather than stating an answer.
 CREDIT_RULE = re.compile(
     r'^(?:award|allow|accept|max\b|total\b|note:|any other|or\b)', re.I)
@@ -72,6 +94,8 @@ def looks_like_an_ask(text):
         return False
     if len(re.findall(r'[a-z]{3,}', t)) < 4:
         return False
+    if COMMAND_WORD.match(t):
+        return True
     return not NOT_AN_ASK.match(t) or len(t) > 45
 
 
@@ -80,7 +104,7 @@ def cardable(points):
     out = []
     for p in points:
         t = ' '.join(p.split())
-        if len(t) < 3 or CREDIT_RULE.match(t):
+        if len(t) < 3 or CREDIT_RULE.match(t) or NOT_A_POINT.match(t):
             continue
         out.append(t)
     return out
@@ -97,7 +121,7 @@ def cardable_indexed(points):
     out = []
     for i, p in enumerate(points):
         t = ' '.join(p.split())
-        if len(t) < 3 or CREDIT_RULE.match(t):
+        if len(t) < 3 or CREDIT_RULE.match(t) or NOT_A_POINT.match(t):
             continue
         out.append((i, t))
     return out
@@ -111,10 +135,17 @@ def resolve(S, q, letter, roman):
     depth: the scheme prices the letter and answers its romans.
     """
     for key in ((q, letter, roman), (q, letter, None), (q, None, None)):
-        if S.tariff(*key):
+        priced = S.tariff(*key)
+        if priced:
             keep = cardable_indexed(S.points_under(*key))
             if keep:
                 return key, keep
+            # PRICED but unanswered is a failure to read THIS key, and
+            # climbing past it answers the part with its neighbours' work:
+            # 2021 OL Q2(d) asks which metals make solder, bronze and brass,
+            # and the question above it answers about three furnaces. The
+            # part goes unresolved instead.
+            return None, []
     return None, []
 
 
@@ -165,7 +196,11 @@ def main():
     for (year, level, _), leaves in sorted(idx.items()):
         A = Author('engineering', year, level)
         S = EngScheme(year, level)
-        seen = set()
+        seen, noted = set(), set()
+        siblings = collections.defaultdict(list)
+        for lf in sorted(leaves):
+            if lf[1] and lf[2]:
+                siblings[(lf[0], lf[1])].append(lf[2])
         for leaf in sorted(leaves):
             q, letter, roman = leaf[0], leaf[1], leaf[2]
             ref = (f'{year} {level.upper()} Q{q}'
@@ -177,12 +212,59 @@ def main():
                 ask = ''
 
             def note(reason):
+                # A promoted parent is reached once per option beneath it.
+                # Counting it each time trebles a single refusal and makes the
+                # report read as three problems.
+                if ref in noted:
+                    return
+                noted.add(ref)
                 refused[reason] += 1
                 examples[reason].append(f'{ref}: {" ".join(ask.split())[:70]}')
 
             if not looks_like_an_ask(ask):
-                note('an option the question lists, not an ask')
-                continue
+                # The census counts each roman as a leaf, and under "Discuss
+                # the contribution that any one of the following has made to
+                # technology:" the romans are Ferdinand Porsche, Hedy Lamarr
+                # and Nikolaus Otto. None is an ask; the PARENT is, the
+                # student picks one, and the scheme prices the parent "Any one
+                # @ 5" with one point per name.
+                #
+                # A ref shallower than the census covers everything beneath
+                # it, so ONE card at the parent answers all three -- and
+                # without it neither the parent nor its options are carded at
+                # all, because the parent is not a leaf.
+                if letter and roman:
+                    try:
+                        above = ' '.join((A.paper.text(q, letter, None)
+                                          or '').split())
+                    except Exception:                        # noqa: BLE001
+                        above = ''
+                    if looks_like_an_ask(above):
+                        # The options are part of the parent's ask: without
+                        # the three names "Discuss the contribution that any
+                        # one of the following has made to technology:"
+                        # cannot be answered, and files under no topic
+                        # either, because every topic word it has is in the
+                        # names. Both halves are printed, and the paper sets
+                        # them exactly this way -- lead-in, then the list.
+                        items = []
+                        for sib in siblings.get((q, letter), ()):
+                            try:
+                                t = ' '.join((A.paper.text(q, letter, sib)
+                                              or '').split())
+                            except Exception:                # noqa: BLE001
+                                t = ''
+                            if t:
+                                items.append(t.rstrip(' ;,.'))
+                        ref = f'{year} {level.upper()} Q{q}({letter})'
+                        ask = f'{above} {"; ".join(items)}.' if items else above
+                        roman = None
+                    else:
+                        note('an option the question lists, not an ask')
+                        continue
+                else:
+                    note('an option the question lists, not an ask')
+                    continue
             key, keep = resolve(S, q, letter, roman)
             points = [t for _, t in keep]
             if not key:
@@ -191,7 +273,37 @@ def main():
             if key in seen:
                 continue
             lead = S.lead(*key) or ''
-            topic, _ = topic_for(f'{ask} {lead}')
+            # The ask decides ALONE first. Blending the scheme's lead into
+            # the same haystack let the lead outvote the question: "Draw the
+            # electronic symbol for each electronic component named" filed
+            # under Metrology, and "Identify any two lubricants commonly used
+            # when machining" under Plastics. Each source is consulted in turn,
+            # nearest first, and the first one that shelves the part wins.
+            topic = None
+            for source in (ask, f'{ask} {lead}'):
+                topic, _ = topic_for(source)
+                if topic:
+                    break
+            if not topic:
+                # A part's own words are often too generic to shelve it --
+                # "Label the main parts of the furnace" names no furnace --
+                # and the QUESTION says which. Consulted only as a fallback,
+                # so the ask decides whenever it can: a safety part under a
+                # heat-treatment question is a safety part.
+                # The QUESTION head carries no text of its own in this
+                # subject -- the context sits on the parent PART, which is
+                # where "Select one of the furnaces shown at Q2(a) above"
+                # lives -- so the walk goes up one level at a time.
+                for above in ((q, letter, None), (q, None, None)):
+                    if above == (q, letter, roman):
+                        continue
+                    try:
+                        parent = A.paper.text(*above) or ''
+                    except Exception:                        # noqa: BLE001
+                        continue
+                    topic, _ = topic_for(parent)
+                    if topic:
+                        break
             if not topic:
                 note('files under no syllabus topic')
                 continue

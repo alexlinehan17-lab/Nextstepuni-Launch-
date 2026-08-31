@@ -726,6 +726,7 @@ export const ENGINEERING_STRANDS: StrandRef[] = [
       { id: 'eng-2-11', code: 'P', title: 'Machining' },
       { id: 'eng-2-13', code: 'P', title: 'Manufacturing processes' },
       { id: 'eng-2-15', code: 'P', title: 'Mechanisms and power transmission' },
+      { id: 'eng-2-16', code: 'P', title: 'Control technology and electronics' },
     ],
   },
   {

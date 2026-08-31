@@ -52,6 +52,15 @@ from paper import unligature                                # noqa: E402
 SCHEMES = os.path.join(ROOT, 'examiner-reports', 'engineering', 'schemes')
 
 QHEAD = re.compile(r'^Question\s*(\d{1,2})\b', re.I)
+# A rule that carries its own group total: "Three parts @ 2 marks (15)".
+#
+# It must be the total that follows THIS rule's own "marks", not the last one
+# on the line. Ordinary sets the grid in columns narrow enough that the row
+# join welds two cells together -- "Three parts @ 2 marks (15) (c) Any two
+# parts @ 5 marks (10)" is two cells, and reading the line's last total closed
+# the first cell against the SECOND cell's arithmetic. Six cells a corpus were
+# discarded that way, each one read correctly and then thrown out.
+TRAILING_TOTAL = re.compile(r'marks?\s*\((\d{1,3})\)', re.I)
 # The summary table's own question head, which carries the total: "Question 1 -
 # 50 marks" at Higher, "Question 1: 50 marks" at Ordinary.
 SUMMARY_HEAD = re.compile(r'^Question\s*(\d{1,2})\s*[:\-–]\s*(\d{1,3})\s*marks', re.I)
@@ -70,12 +79,18 @@ ROMAN = re.compile(r'^\((i{1,3}|iv|v|vi{1,3}|ix|x)\)')
 SPLIT = re.compile(r'^\d{1,2}(?:\s*\+\s*\d{1,2})*$')
 ANY_AT = re.compile(r'^Any\s+(\w+)(?:\s+parts?)?\s*@\s*(.+)$', re.I)
 N_AT = re.compile(r'^(One|Two|Three|Four|Five|Six|Seven|Eight|Nine|Ten)\s+'
-                  r'(?:parts?\s+)?@\s*(\d{1,2})\s*marks?', re.I)
+                  r'(?:[a-z]+s?\s+)?@\s*(\d{1,2})\s*marks?', re.I)
 TOTAL_ONLY = re.compile(r'^\((\d{1,3})\)$')
 WORD = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6,
         'seven': 7, 'eight': 8, 'nine': 9, 'ten': 10, 'eleven': 11,
         'twelve': 12, 'thirteen': 13}
 OR_ROW = re.compile(r'^(?:Or|OR)$')
+# Ordinary Level sets its answers in a two-column table with the mark cell
+# beside the answer, and the cell lands wherever the row join puts it -- MID
+# SENTENCE, in "Wear heat resistant gloves when preforming heat treatment of
+# Total (8) Marks metals." It is the marking grid, never the answer, so it
+# comes out before a point is assembled rather than off the end of one.
+MARK_CELL = re.compile(r'\s*\bTotal\s*\(?\d{1,3}\)?\s*Marks?\b\s*', re.I)
 
 
 def _lines(page, join='block'):
@@ -163,6 +178,22 @@ def _band(x0, bands):
     return None
 
 
+# Ordinary Level writes the same rule three ways across the years, and 2023
+# and 2024 write it with the ask's own verb in front -- "Explain any two @ 7
+# marks", "Name any three @ 5 marks" -- or with the thing counted in place of
+# "parts": "Three materials @ 3 marks", "Two precautions @ 4 marks", "Two
+# reasons @ 2 marks". Neither spelling parsed, so 2023 Ordinary Level yielded
+# TWO priced parts out of a whole paper. The verb is stripped and the noun
+# allowed; the arithmetic underneath is the same and still the paper's own.
+LEAD_VERB = re.compile(
+    r'^(?:award\s+)?(?:briefly\s+)?(?:calculate|compare|define|describe'
+    r'|determine|differentiate|discuss|distinguish|draw|explain|give'
+    r'|identify|indicate|label|list|name|outline|sketch|state|suggest)\b\s*',
+    re.I)
+# "Describe @ 12 marks" states one point worth twelve.
+BARE_AT = re.compile(r'^@\s*(\d{1,2})\s*marks?', re.I)
+
+
 def parse_tariff(text):
     """(notation, total marks, per-option rule) for one tariff cell, or None.
 
@@ -172,6 +203,10 @@ def parse_tariff(text):
     returns None and the part goes unpriced rather than guessed.
     """
     t = ' '.join(text.split())
+    t = LEAD_VERB.sub('', t).strip()
+    m = BARE_AT.match(t)
+    if m:
+        return (t, int(m.group(1)), (1, int(m.group(1))))
     m = ANY_AT.match(t)
     if m:
         n = WORD.get(m.group(1).lower())
@@ -237,12 +272,67 @@ class EngScheme:
         return out
 
     def _read_column(self, rows, out):
+        """Walk one column of the grid, settling each part against its total.
+
+        A part's rule may run over SEVERAL lines, and only the last of them
+        carries the printed total:
+
+            (a) - Three parts @ 3 marks
+                  Three parts @ 2 marks    (15)
+
+        (a) is worth 3x3 + 3x2 = 15, and reading the last line alone prices it
+        at 6. The total in the margin is the paper's own arithmetic over the
+        whole group, so it is the check: lines are ACCUMULATED until a printed
+        total closes them, and the group is accepted only when what was read
+        adds up to what was printed. Fourteen cells were mispriced this way.
+
+        A group may span more than one key, and then the total is the parent's:
+
+            (a) - (i) Two parts @ 5 marks
+                  (ii) One part @ 10 marks   (20)
+
+        (i) is 10 and (ii) is 10; the (20) belongs to (a).
+        """
         q = letter = roman = None
-        pending = None          # a marker whose tariff is on a later line
+        group = []              # [(key, notation, marks, rule)] since the marker
+
+        def flush(printed=None):
+            if not group:
+                return
+            per_key = collections.OrderedDict()
+            lines_for = collections.Counter()
+            for key, notation, marks, rule in group:
+                lines_for[key] += 1
+                if key in per_key:
+                    note, tot, first = per_key[key]
+                    per_key[key] = (f'{note}; {notation}', tot + marks, first)
+                else:
+                    per_key[key] = (notation, marks, rule)
+            grand = sum(t for _, t, _ in per_key.values())
+            if printed is not None and grand != printed:
+                # The reader did not understand this cell. A tariff is never
+                # guessed, so the part goes unpriced and its cards are refused.
+                group.clear()
+                return
+            for key, (notation, tot, rule) in per_key.items():
+                # "Any two @ 8 + 8" prices any TWO of the points at eight
+                # each, and that per-option rule is what lets a card offer
+                # them as alternatives. It survives whenever this key was
+                # stated on a line of its own; only a key assembled from
+                # several lines has no single rule to name.
+                out.setdefault(key, (notation, tot,
+                                     rule if lines_for[key] == 1 else None))
+            if printed is not None and len(per_key) > 1:
+                # One total over several romans prices their PARENT.
+                parent = (q, letter, None)
+                out.setdefault(parent, (f'{printed} marks', printed, None))
+            group.clear()
+
         for x0, y0, x1, y1, text, _bold in rows:
             h = SUMMARY_HEAD.match(text)
             if h:
-                q, letter, roman, pending = int(h.group(1)), None, None, None
+                flush()
+                q, letter, roman = int(h.group(1)), None, None
                 out.setdefault((q, None, None), (text, int(h.group(2)), None))
                 continue
             if q is None:
@@ -250,32 +340,40 @@ class EngScheme:
             body = text
             m = MARKER.match(body)
             if m:
+                flush()
                 letter, roman = m.group(1), None
                 body = body[m.end():].strip()
+                # Ordinary separates a marker from its rule with a dash.
+                # Left in place it defeated the parse, so the FIRST line of
+                # every multi-line rule was dropped and the continuation
+                # line priced the part on its own. It is stripped before
+                # the roman test because "(a) - (i) Two parts @ 5 marks"
+                # hides the roman behind it.
+                body = re.sub(r'^[\u2010-\u2015\-]\s*', '', body).strip()
             r = ROMAN.match(body)
             if r:
+                # A roman on a line of its own CONTINUES the letter's group
+                # rather than starting one: the total below covers them both.
                 roman = r.group(1)
                 body = body[r.end():].strip()
             if not body:
-                pending = (letter, roman)
                 continue
             if OR_ROW.match(body):
+                flush()
                 continue
             tot = TOTAL_ONLY.match(body)
-            if tot and pending is not None:
-                # Ordinary prints the total in a column of its own, against
-                # the rule it belongs to rather than against the marker.
-                key = (q, pending[0], pending[1])
-                if key in out and out[key][1] is None:
-                    out[key] = (out[key][0], int(tot.group(1)), out[key][2])
-                continue
             if tot:
+                flush(int(tot.group(1)))
                 continue
             parsed = parse_tariff(body)
             if parsed:
-                key = (q, letter if not m else m.group(1), roman)
-                out.setdefault(key, parsed)
-                pending = (key[1], key[2])
+                group.append(((q, letter, roman),) + parsed)
+                # A rule may carry its own total at the end of the line, and
+                # that closes the group it completes.
+                closing = TRAILING_TOTAL.search(body)
+                if closing:
+                    flush(int(closing.group(1)))
+        flush()
         return out
 
     # ── the answer body ────────────────────────────────────────────────────
@@ -378,7 +476,7 @@ class EngScheme:
         b = self.body().get((q, letter, roman))
         if not b:
             return []
-        lines = b['points']
+        lines = [MARK_CELL.sub(' ', x) for x in b['points']]
         if not any(BULLET.match(x) for x in lines):
             # One point per SENTENCE, not one per key. Joining every line a
             # key holds made points of 1,588 characters -- a whole column of

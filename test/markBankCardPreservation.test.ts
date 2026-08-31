@@ -487,8 +487,23 @@ const decks = [
    * print the picture, nothing has cropped it yet, and a card carrying the
    * crop is no longer a ghost. Ordinary rose 4 -> 10 in the same pass from
    * the provenance and sentence-splitting fixes. */
-  ['engineering:higher', ENG_HIGHER, 48, '5e8deb743e478baf3b57e03ef2f8f02065cc06b0d399af51a36fb4fe264b6356'],
-  ['engineering:ordinary', ENG_ORDINARY, 10, '8d832c30ce0e34b0b8fdc15b50eca71126e21a111d76e1cc131add0e0c187447'],
+  // 2026-08-31: 48 -> 65. The scheme reader learned three things the Ordinary
+  // and Higher tariff tables had always said and it had not read: a part's
+  // rule may run over several lines and only the last carries the total
+  // ("Three parts @ 3 marks" + "Three parts @ 2 marks (15)" is 15, not 6); the
+  // rule may be written with its own verb in front ("Explain any two @ 7
+  // marks"), which is how 2023 Ordinary Level writes every one of them; and a
+  // marker is separated from its rule by a dash, which had been defeating the
+  // parse of the FIRST line of every multi-line rule. 289 priced parts -> 318.
+  // Two cards were REMOVED, both of them shipping page furniture as a marking
+  // point: eng-2022-hl-q5-b, whose entire 18-mark answer was "Page 17", and
+  // eng-2023-hl-q1-j, which paid 2 of its 5 marks for "Page 8".
+  ['engineering:higher', ENG_HIGHER, 65, '7df14249e8d4802c9f32ea928a6a3e20aca67a64ed23b337290eea7c6eea0463'],
+  // 2026-08-31: 10 -> 21, same reader work as Higher above. One card REMOVED:
+  // eng-2021-ol-q7-c-ii asked for the electronic symbol of each component
+  // named and answered "of round bars or internal diameters of holes", which
+  // is a fragment of the vernier caliper answer from another part entirely.
+  ['engineering:ordinary', ENG_ORDINARY, 21, 'ebad4215e07a526701bb89c5315225e3eba52f0684e626adb0f94d706f5b33fb'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -503,6 +518,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7845);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7873);
   });
 });

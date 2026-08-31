@@ -1,5 +1,54 @@
 [
  {
+  "id": "eng-2021-hl-q1-a",
+  "topicId": "eng-3-14",
+  "conceptId": "ways-wireless-headsets-have-improved-game",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q1(a)",
+  "questionText": "Describe two ways in which wireless headsets have improved the in-game experience of online gaming.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Portable/Wire free.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Distance from connected source.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Comfort.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Audio quality.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "External noise reduction.",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks) Give brief answers to any ten of the following:"
+ },
+ {
   "id": "eng-2021-hl-q1-l",
   "topicId": "eng-3-7",
   "conceptId": "identify-metals-commmonly-used-protect-steel",
@@ -49,6 +98,55 @@
   "stem": "(m) Outline two reasons for the use of composite materials, such as carbon fibre and fibreglass, in the production of modern kayaks."
  },
  {
+  "id": "eng-2021-hl-q2-a-ii",
+  "topicId": "eng-3-14",
+  "conceptId": "identify-benefits-using-hybrid-vehicles-urban",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q2(a)(ii)",
+  "questionText": "Identify two benefits of using hybrid vehicles in urban transportation.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Reduced emissions in atmosphere, urban transport creates a high volume of emissions from existing vehicles",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Reduced noise in cities",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Particularly efficient in short trips, which are a feature of urban transport",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Potential for self-driving vehicles with reduced workforce",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Regenerative braking energy can be employed efficiently, etc.",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks) Answer all of the following:"
+ },
+ {
   "id": "eng-2021-hl-q3-b-iii",
   "topicId": "eng-3-8",
   "conceptId": "calculate-young-s-modulus-elasticity-alloy",
@@ -71,6 +169,54 @@
    }
   ],
   "stem": "Stress (N/mm2) 50 125 195 260 300 330 350 352 Strain (x1000) 0.60 1.40 2.20 3.00 3.70 5.00 7.00 8.50"
+ },
+ {
+  "id": "eng-2021-hl-q3-c-ii",
+  "topicId": "eng-2-10",
+  "conceptId": "aid-diagram-suitable-non-destructive-test",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q3(c)(ii)",
+  "questionText": "Describe, with the aid of a diagram, a suitable non-destructive test to locate internal cavities in a welded joint.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "X-ray radiation penetrates materials and produces an internal photographic image of the test piece. Electrons are released by heating the cathode to high temperature. A high DC voltage speeds up the electrons, which are aimed at the anode. The electrons penetrate the anode and the energy is given off as X-rays. The anode reflects the X-rays to the test piece and an image plate is used to capture the internal image. Any flaw or cavity in the test piece will appear dark on the image plate as the radiation will not be absorbed by the flaw. Proper shielding is necessary when using x-ray equipment as a safety precaution. Internal cavities in welded joins can be determined by this NDT method.",
+    "marks": 8
+   }
+  ],
+  "stem": ". (50 marks)"
+ },
+ {
+  "id": "eng-2021-hl-q4-b-iii",
+  "topicId": "eng-1-3",
+  "conceptId": "transformation-occurs-point-x-reference-temperature",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q4(b)(iii)",
+  "questionText": "Describe the transformation that occurs at point X, with reference to temperature, composition and phase change.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "going through a pasty stage. It occurs at approx. 1140°C and 4.3% carbon content.",
+    "marks": 6
+   }
+  ],
+  "stem": "1400 1000 600 200 C X Temperature °C 723°C 0.83% % Carbon 1 2 3 4 5 6"
  },
  {
   "id": "eng-2021-hl-q5-a-ii",
@@ -243,12 +389,6 @@
     "kind": "point",
     "verbatim": "Pigments give the plastic bottle its tinted colour.",
     "marks": null
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Page 21",
-    "marks": null
    }
   ],
   "stem": "polylactic acid (PLA) filament guide plate forming and curing die preformer cut-off resin bath pulling mechanism fibre creel"
@@ -341,8 +481,121 @@
   "notes": "The scheme prints 'Any three@ 6 + 6 + 6'."
  },
  {
+  "id": "eng-2021-ol-q3-c",
+  "topicId": "eng-2-6",
+  "conceptId": "safety-precautions-be-observed-during-heat",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q3(c)",
+  "questionText": "State two safety precautions to be observed during the heat treatment of metals.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Wear heat resistant gloves when preforming heat treatment of metals.",
+    "marks": 8,
+    "accepts": [
+     "Do not leave hot metals lying around in case people accidently pick up the piece."
+    ]
+   }
+  ],
+  "stem": "point cutting edge",
+  "notes": "The scheme prints 'Two parts @ 4 marks (8)'."
+ },
+ {
+  "id": "eng-2021-ol-q3-d",
+  "topicId": "eng-3-8",
+  "conceptId": "malleability-advantages-robotics-manufacturing",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q3(d)",
+  "questionText": "Explain any two of the following terms: (i) Malleability, State two advantages of robotics in manufacturing. (ii) Compressive strength, State two ways in which the use of robotic technology can improve the safety of a work environment. (iii) Ductility, (iv) Tensile strength.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "The ability of a material to be hammered and/or formed without breaking.",
+    "marks": 12,
+    "accepts": [
+     "Robotic technology can reduce the number of injuries associated with lifting heavy objects. Robotics can also be used to reduce the need for workers to lift or carry heavy objects.",
+     "A material is said to be ductile when it can be permanently stretched, without fracture. It must be plastic enough to allow deformation and strong enough not to fracture. A metal must be ductile to enable it to be stretched / drawn into wire.",
+     "The ability of a material to withstand being pulled apart or stretched.",
+     "Robotics offer precision placement of components in manufacturing.",
+     "Robotics offer precision when performing manufacturing processes such as welding & paint spraying."
+    ]
+   }
+  ],
+  "stem": "Engineering ‐ Ordinary level 4",
+  "notes": "The scheme prints 'Two parts @ 6 marks (12)'."
+ },
+ {
+  "id": "eng-2021-ol-q4-a-ii",
+  "topicId": "eng-2-10",
+  "conceptId": "steps-necessary-ensure-successful-soft-soldered",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q4(a)(ii)",
+  "questionText": "Describe two steps necessary to ensure a successful soft soldered joint.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "The surfaces to be joined must be perfectly clean and coated with flux.",
+    "marks": 6,
+    "accepts": [
+     "A good flow of heat to the joint is essential. Before applying the solder, the joint must be brought to the temperature at which the solder melts."
+    ]
+   }
+  ],
+  "stem": ". (50 marks)",
+  "notes": "The scheme prints 'Two parts @ 3 marks (15)'."
+ },
+ {
+  "id": "eng-2021-ol-q4-d",
+  "topicId": "eng-2-10",
+  "conceptId": "safety-precautions-be-observed-when-using",
+  "level": "ordinary",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 OL Q4(d)",
+  "questionText": "State two safety precautions to be observed when using an electrical soldering iron.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Avoid leaving a hot soldering iron on a desk after use.",
+    "marks": 8
+   }
+  ],
+  "stem": "Engineering ‐ Ordinary level 5",
+  "notes": "The scheme prints 'Two parts @ 4 marks (8)'."
+ },
+ {
   "id": "eng-2021-ol-q5-a-ii",
-  "topicId": "eng-1-9",
+  "topicId": "eng-2-13",
   "conceptId": "aid-diagram-any-manufacturing-processes-named",
   "level": "ordinary",
   "year": 2021,
@@ -358,10 +611,9 @@
    {
     "id": "r-1",
     "kind": "alt",
-    "verbatim": "A - Vacuum forming:",
+    "verbatim": "A thermoplastic sheet is clamped in a frame and heat is applied until the sheet begins to sag. At this stage, the mould is lifted up into the plastic sheet and vacuum pressure is applied. This causes the plastic sheet to pull against the mold and form the final shape. After cooling, the mould is lowered and the plastic part is removed from the frame. Excess material is trimmed away.",
     "marks": 10,
     "accepts": [
-     "A thermoplastic sheet is clamped in a frame and heat is applied until the sheet begins to sag. At this stage, the mould is lifted up into the plastic sheet and vacuum pressure is applied. This causes the plastic sheet to pull against the mold and form the final shape. After cooling, the mould is lowered and the plastic part is removed from the frame. Excess material is trimmed away.",
      "Heater Plunger Mould Molten plastic Injection nozzle Thermoplastic is softened by heating it inside an injection nozzle. The softened plastic is forced by a plunger into a cold mould where it hardens rapidly and is then ejected. Injection molding is used for the rapid molding of components.",
      "Air Parison Split mould Plastic bottle Used to produce articles from a heated thermoplastic tube called a parison.",
      "The mould closes around the extruded parison and air is blow inside forcing the parison out against the wall of the mould. The article is moulded by the internal shape of a split mould. The component is allowed to cool before being removed from the opened mould."
@@ -372,34 +624,57 @@
   "notes": "The scheme prints 'One part @ 10 marks (20)'."
  },
  {
-  "id": "eng-2021-ol-q7-c-ii",
-  "topicId": "eng-3-12",
-  "conceptId": "draw-electronic-symbol-each-electronic-component",
+  "id": "eng-2021-ol-q5-d",
+  "topicId": "eng-2-10",
+  "conceptId": "safety-precautions-be-observed-when-using",
   "level": "ordinary",
   "year": 2021,
   "subjectId": "engineering",
   "section": "A",
-  "questionRef": "2021 OL Q7(c)(ii)",
-  "questionText": "Draw the electronic symbol for each electronic component named.",
+  "questionRef": "2021 OL Q5(d)",
+  "questionText": "State two safety precautions to be observed when using an adhesive to bond acrylic.",
   "tariffModel": {
    "kind": "fixed"
   },
-  "totalMarks": 5,
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Always work in a well-ventilated area.",
+    "marks": 8
+   }
+  ],
+  "stem": "Engineering ‐ Ordinary level 6",
+  "notes": "The scheme prints 'Two parts @ 4 marks (8)'."
+ },
+ {
+  "id": "eng-2022-hl-q1-c",
+  "topicId": "eng-3-12",
+  "conceptId": "difference-between-clearance-fit-interference-fit",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 HL Q1(c)",
+  "questionText": "Describe the difference between a clearance fit and an interference fit in engineering limits and fits.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
   "rows": [
    {
     "id": "r-1",
     "kind": "alt",
-    "verbatim": "of round bars or internal diameters of holes.",
-    "marks": 5,
+    "verbatim": "the assembly. In the clearance fit, the largest permitted shaft diameter is smaller than the diameter of the smallest hole. The difference between the size of the hole and the size of the shaft is defined as clearance.",
+    "marks": 10,
     "accepts": [
-     "Measurement can be read directly from a digital display.",
-     "Motor:",
-     "Switch:"
+     "Interference fit also known as a press fit, is a form of fastening between two tight fitting mating parts that produces a joint which is held together by friction after the parts are pushed together. In an interference fit, the smallest permitted shaft diameter is bigger than the largest diameter of the hole."
     ]
    }
   ],
-  "stem": "Hole: Ø30 ± 0.06 mm Shaft: Ø30 ± 0.08 mm Engineering ‐ Ordinary level 8 Engineering ‐ Ordinary level 8",
-  "notes": "The scheme prints 'One part @ 5 marks'."
+  "stem": ". (50 marks) Give brief answers to any ten of the following:",
+  "notes": "The scheme prints 'Any two @ 5 + 5'."
  },
  {
   "id": "eng-2022-hl-q2-a-i",
@@ -474,43 +749,43 @@
    {
     "id": "r-6",
     "kind": "point",
-    "verbatim": "Page 10",
+    "verbatim": "Reactive machines are basic in that they do not store “memories” or use past experiences to determine future actions. They simply perceive the world and react to it. IBM’s Deep Blue, which defeated chess grandmaster Kasporov, is a reactive machine that sees the pieces on a chess board and reacts to them. It cannot refer to any of its prior experiences, and cannot improve with practice.",
     "marks": null
    },
    {
     "id": "r-7",
     "kind": "point",
-    "verbatim": "Reactive machines are basic in that they do not store “memories” or use past experiences to determine future actions. They simply perceive the world and react to it. IBM’s Deep Blue, which defeated chess grandmaster Kasporov, is a reactive machine that sees the pieces on a chess board and reacts to them. It cannot refer to any of its prior experiences, and cannot improve with practice.",
+    "verbatim": "Limited Memory machines can retain data for a short period of time. While they can use this data for a specific period of time, they cannot add it to a library of their experiences. Many self-driving cars use Limited Memory technology: they store data such as the recent speed of nearby cars, the distance of such cars, the speed limit, and other information that can help them navigate roads.",
     "marks": null
    },
    {
     "id": "r-8",
     "kind": "point",
-    "verbatim": "Limited Memory machines can retain data for a short period of time. While they can use this data for a specific period of time, they cannot add it to a library of their experiences. Many self-driving cars use Limited Memory technology: they store data such as the recent speed of nearby cars, the distance of such cars, the speed limit, and other information that can help them navigate roads.",
+    "verbatim": "Psychology tells us that people have thoughts, emotions, memories, and mental models that drive their behaviour. Theory of Mind researchers hope to build computers that imitate our mental models, by forming representations about the world, and about other agents and entities in it. One goal of these researchers is to build computers that relate to humans and perceive human intelligence and how people’s emotions are impacted by events and the environment. While plenty of computers use models, a computer with a “mind” does not yet exist.",
     "marks": null
    },
    {
     "id": "r-9",
     "kind": "point",
-    "verbatim": "Psychology tells us that people have thoughts, emotions, memories, and mental models that drive their behaviour. Theory of Mind researchers hope to build computers that imitate our mental models, by forming representations about the world, and about other agents and entities in it. One goal of these researchers is to build computers that relate to humans and perceive human intelligence and how people’s emotions are impacted by events and the environment. While plenty of computers use models, a computer with a “mind” does not yet exist.",
+    "verbatim": "Self-aware machines are the stuff of science fiction, though many AI enthusiasts believe them to be the ultimate goal of AI development. Even if a machine can operate as a person does, for example by preserving itself, predicting its own needs and demands, and relating to others as an equal, the question of whether a machines can become truly self-aware, or “conscious”, is best left for philosophers.",
     "marks": null
    },
    {
     "id": "r-10",
     "kind": "point",
-    "verbatim": "Self-aware machines are the stuff of science fiction, though many AI enthusiasts believe them to be the ultimate goal of AI development. Even if a machine can operate as a person does, for example by preserving itself, predicting its own needs and demands, and relating to others as an equal, the question of whether a machines can become truly self-aware, or “conscious”, is best left for philosophers.",
+    "verbatim": "Minimise the risk of failure: i.e. spot when something isn’t working and implement a fix before a failure;",
     "marks": null
    },
    {
     "id": "r-11",
     "kind": "point",
-    "verbatim": "Page 11",
+    "verbatim": "Find existing relationships in data: i.e. examine available data, see where anomalies lie and predict parameters to change.",
     "marks": null
    },
    {
     "id": "r-12",
     "kind": "point",
-    "verbatim": "Minimise the risk of failure: i.e. spot when something isn’t working and implement a fix before a failure;",
+    "verbatim": "AI-lead supply chain optimisation software amplifies important decisions by using cognitive predictions and recommendations on optimal actions. This can help enhance overall supply chain performance. It also helps manufacturers with possible implications across various scenarios in terms of time, cost, and revenue.",
     "marks": null
    }
   ],
@@ -596,33 +871,41 @@
   "notes": "The scheme prints 'Any two @ 8 + 8'."
  },
  {
-  "id": "eng-2022-hl-q5-b",
+  "id": "eng-2022-hl-q5-c-i",
   "topicId": "eng-1-3",
-  "conceptId": "draw-equilibrium-diagram-according-given-data",
+  "conceptId": "impact-dislocation-crystal-structures",
   "level": "higher",
   "year": 2022,
   "subjectId": "engineering",
   "section": "A",
-  "questionRef": "2022 HL Q5(b)",
-  "questionText": "The table shows the solidification temperatures for various alloys of metal A and metal B.",
+  "questionRef": "2022 HL Q5(c)(i)",
+  "questionText": "The impact of a dislocation in crystal structures.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "orderedSplit",
+   "notation": "4 + 4"
   },
-  "totalMarks": 18,
+  "totalMarks": 8,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
-    "verbatim": "Page 17",
-    "marks": 18,
-    "accepts": [
-     "|BC| 88 - 70 18",
-     "B - 1500°C"
-    ]
+    "kind": "point",
+    "verbatim": "Dislocations can move as far as grain boundaries under a shear stress. Fine grained metals are stronger, stiffer and harder than coarse grained metals.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Dislocations promote material malleability. The motion of dislocations allows slip deformation to occur.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Heat treatments can impact on dislocation density caused by cold working.",
+    "marks": null
    }
   ],
-  "stem": "% of metal B in the alloy 0 10 20 30 40 50 60 70 80 90 100 Start of solidification (°C) 1120 1225 1295 1345 1390 1420 1445 1468 1485 1495 1500 End of solidification (°C) 1120 1128 1150 1170 1195 1225 1260 1295 1350 1420 1500",
-  "notes": "The scheme prints 'Any three @ 6 + 6 + 6'."
+  "stem": "dislocation"
  },
  {
   "id": "eng-2022-hl-q6",
@@ -937,6 +1220,73 @@
   "notes": "The scheme prints 'Two parts @ 4 marks (8)'."
  },
  {
+  "id": "eng-2023-hl-q1-a",
+  "topicId": "eng-3-14",
+  "conceptId": "advantage-disadvantage-smart-glasses",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q1(a)",
+  "questionText": "Outline one advantage and one disadvantage of ‘smart’ glasses.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Hands-free operation",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Limited battery life",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Can incorporate augmented reality (AR)",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Privacy concerns with permissions of capabilities the capture of images",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Can personalise information based on",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Screen limitations on visual clarity at location, preferences or activity this early stage of development",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Can gather information in ‘real-time’",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "Cost and accessibility",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks) Give brief answers to any ten of the following:"
+ },
+ {
   "id": "eng-2023-hl-q1-c",
   "topicId": "eng-2-13",
   "conceptId": "engineering-importance-specifying-limits-component-drawings",
@@ -955,6 +1305,30 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "This promotes mass production of component parts and can facilitate interchangeability and replacement of components.",
+    "marks": 5
+   }
+  ],
+  "stem": ". (50 marks) Give brief answers to any ten of the following:"
+ },
+ {
+  "id": "eng-2023-hl-q1-e",
+  "topicId": "eng-1-3",
+  "conceptId": "how-structure-metallic-bond-facilitates-electrical",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q1(e)",
+  "questionText": "Describe how the structure of the metallic bond facilitates electrical conductivity in metals.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Cations are bonded by a ‘sea’ of electrons giving metals that are usually malleable, ductile and conductive. The movement of the electrons promotes conductivity in the metal.",
     "marks": 5
    }
   ],
@@ -1046,36 +1420,6 @@
   "stem": ". (50 marks) Give brief answers to any ten of the following:"
  },
  {
-  "id": "eng-2023-hl-q1-j",
-  "topicId": "eng-2-11",
-  "conceptId": "safety-features-integrated-into-cnc-lathe",
-  "level": "higher",
-  "year": 2023,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2023 HL Q1(j)",
-  "questionText": "Describe two safety features integrated into a CNC lathe.",
-  "tariffModel": {
-   "kind": "fixed"
-  },
-  "totalMarks": 5,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "programmes and prevent accidents, emergency stop button, limit switching on carriage, etc.",
-    "marks": 3
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Page 8",
-    "marks": 2
-   }
-  ],
-  "stem": ". (50 marks) Give brief answers to any ten of the following:"
- },
- {
   "id": "eng-2023-hl-q1-l",
   "topicId": "eng-3-8",
   "conceptId": "term-material-creep-relation-jet-engine",
@@ -1100,6 +1444,97 @@
   "stem": "(m) Wave energy technology captures the energy of water waves to do useful work such as generating electricity. Give two possible disadvantages associated with wave energy technology as an energy source."
  },
  {
+  "id": "eng-2023-hl-q2-a-i",
+  "topicId": "eng-3-14",
+  "conceptId": "term-extended-reality-xr",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q2(a)(i)",
+  "questionText": "Describe the term Extended Reality (XR).",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Extended Reality (XR) encompasses various immersive technologies including Virtual Reality (VR), Augmented Reality (AR) and Mixed Reality (MR). XR refers to the blending of the physical and virtual worlds, creating a spectrum of experiences that range from completely virtual environments to the augmentation of real-world environments with virtual elements.",
+    "marks": 5
+   }
+  ],
+  "stem": ". (50 marks) Answer all of the following:"
+ },
+ {
+  "id": "eng-2023-hl-q2-a-ii",
+  "topicId": "eng-3-14",
+  "conceptId": "identify-benefits-extended-reality-xr",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q2(a)(ii)",
+  "questionText": "Identify two benefits of Extended Reality (XR).",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "XR creates highly immersive and interactive experiences that captivates attention and engages the user.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "XR allows for realistic simulations of complex scenarios such as training simulations for high-risk professions like aviation and healthcare.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "This technology allows architects, engineers and designers to visualise and interact with 3D models and designs.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Remote collaboration can be facilitated easily.",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks) Answer all of the following:"
+ },
+ {
+  "id": "eng-2023-hl-q3-a-i",
+  "topicId": "eng-3-8",
+  "conceptId": "define-term-material-hardness",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q3(a)(i)",
+  "questionText": "Define the term material hardness.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Hardness can be described as the ability of a material to resist denting and scratching.",
+    "marks": 4
+   }
+  ],
+  "stem": "Stainless steel kitchen"
+ },
+ {
   "id": "eng-2023-hl-q3-a-iii",
   "topicId": "eng-1-4",
   "conceptId": "advantage-disadvantage-use-stainless-steel-kitchen",
@@ -1110,8 +1545,7 @@
   "questionRef": "2023 HL Q3(a)(iii)",
   "questionText": "Outline one advantage and one disadvantage of the use of stainless steel for kitchen countertops in domestic settings.",
   "tariffModel": {
-   "kind": "orderedSplit",
-   "notation": "2 + 2"
+   "kind": "fixed"
   },
   "totalMarks": 4,
   "rows": [
@@ -1119,19 +1553,13 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "is hard wearing, etc.",
-    "marks": null
+    "marks": 2
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "Disadvantages: Stainless steel is not an environmentally friendly material compared to other countertop materials as it is challenging to produce and fabricate, gives a ‘cold’ feel to a kitchen, etc.",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Page 12",
-    "marks": null
+    "marks": 2
    }
   ],
   "stem": "Stainless steel kitchen"
@@ -1183,6 +1611,30 @@
    }
   ],
   "stem": "Load (kN) 22 44 66 80 89 100 110 123 135 132 118 Extension (mm) 0.1 0.2 0.3 0.4 0.5 0.8 1.0 1.5 2.5 4.0 4.3"
+ },
+ {
+  "id": "eng-2023-hl-q3-c-i",
+  "topicId": "eng-3-8",
+  "conceptId": "aid-suitable-diagrams-ultrasonic-non-destructive",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q3(c)(i)",
+  "questionText": "Describe, with the aid of suitable diagrams, ultrasonic non-destructive testing.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A quartz crystal is used to generate high frequency vibrations and passed over the material to be tested. If the material has internal defects, vibrations will be reflected quicker back to the receiver and displayed on a screen. It is used to test thick components such as castings and forgings for defects. It is quick and has the ability to probe deeply without damaging the piece. Ultrasonic wave generation and use is safe for humans, therefore no extra safety precautions need to be taken.",
+    "marks": 8
+   }
+  ],
+  "stem": ". (50 marks)"
  },
  {
   "id": "eng-2023-hl-q4-a-ii",
@@ -1286,6 +1738,30 @@
    }
   ],
   "stem": "arbour Line A 1400 1000 600 200 Temperature °C Line B Line C % Carbon 1 2 3 4 5 6"
+ },
+ {
+  "id": "eng-2023-hl-q5-a-ii",
+  "topicId": "eng-3-8",
+  "conceptId": "material-property-may-be-affected-defect",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q5(a)(ii)",
+  "questionText": "Describe one material property which may be affected by defect B.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "more difficult to move. Ductility is reduced and brittleness can be increased. Interstitial defects may reduce electrical and thermal conductivity with disruption of the regular patterns of atoms.",
+    "marks": 4
+   }
+  ],
+  "stem": "defect A defect B"
  },
  {
   "id": "eng-2023-hl-q6-a-ii",
@@ -1401,6 +1877,54 @@
   "stem": "motorbike fuel tank Bellabot smart delivery robot"
  },
  {
+  "id": "eng-2023-hl-q7-a-i",
+  "topicId": "eng-1-9",
+  "conceptId": "define-term-elastomer-aid-diagram-internal",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q7(a)(i)",
+  "questionText": "Define the term elastomer and describe, with the aid of a diagram, the internal structure of elastomers.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "minimal cross-linking. This irregular internal structure and bonding arrangement allows these materials to be very elastic at room temperature.",
+    "marks": 8
+   }
+  ],
+  "stem": "polyurethane sole"
+ },
+ {
+  "id": "eng-2023-hl-q7-b-i",
+  "topicId": "eng-1-9",
+  "conceptId": "term-copolymer-relation-thermoplastics",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q7(b)(i)",
+  "questionText": "Describe the term copolymer in relation to thermoplastics.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "copolymer and the process is called copolymerisation. It is similar to the process of metal alloying. Examples of copolymers include Acrylonitrile butadiene styrene (ABS), Nitrile rubber and Ethylene-vinyl acetate.",
+    "marks": 4
+   }
+  ],
+  "stem": ". (50 marks)"
+ },
+ {
   "id": "eng-2023-hl-q7-c",
   "topicId": "eng-1-9",
   "conceptId": "distinguish-between-recyclability-thermoplastics-thermoset-plastics",
@@ -1502,6 +2026,196 @@
   "notes": "The scheme prints 'One part @ 7 marks'."
  },
  {
+  "id": "eng-2023-ol-q3-b-ii",
+  "topicId": "eng-2-6",
+  "conceptId": "tempering-process",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q3(b)(ii)",
+  "questionText": "Describe the tempering process.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Tempering removes some of the hardness while increasing the toughness of a metal. It is achieved by heating the metal to a specific temperature which is determined by the colour of the metal. On heating, colours appear and when the correct colour is achieved i.e., light straw appears at approx. 250° - 350°, it is quenched in cold water.",
+    "marks": 7
+   }
+  ],
+  "stem": ". (50 marks)",
+  "notes": "The scheme prints '@ 7 marks'."
+ },
+ {
+  "id": "eng-2023-ol-q3-d-i",
+  "topicId": "eng-3-8",
+  "conceptId": "toughness-areas-where-robotic-technology-used",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q3(d)(i)",
+  "questionText": "Toughness, Describe two areas where robotic technology is used in health care.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Roving robots in emergency rooms can support the evaluation of patients by connecting with a remote specialist who can converse with them, review their records and examine patients with special cameras.",
+    "marks": 6
+   }
+  ],
+  "stem": "exoskeleton suit",
+  "notes": "The scheme prints 'two areas @ 3 marks'."
+ },
+ {
+  "id": "eng-2023-ol-q3-d-ii",
+  "topicId": "eng-3-8",
+  "conceptId": "ductility-ways-exoskeleton-suits-can-help",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q3(d)(ii)",
+  "questionText": "Ductility, State two ways in which exoskeleton suits can help the recovery process.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Exoskeleton suits can help people with spinal cord injuries gain some mobility, helping to improve cardiovascular health, slow the loss of fat tissue, build lean muscle mass, improve bowel function, and aid in pain management",
+    "marks": 6
+   }
+  ],
+  "stem": "exoskeleton suit",
+  "notes": "The scheme prints 'Two ways @ 3 marks (12) (c) (i) One part @ 6 marks'."
+ },
+ {
+  "id": "eng-2023-ol-q4-d",
+  "topicId": "eng-2-10",
+  "conceptId": "safety-precautions-be-observed-when-working",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q4(d)",
+  "questionText": "State two safety precautions to be observed when working with adhesives.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Wear suitable gloves to avoid the adhesives coming in contact with your skin.",
+    "marks": 8
+   }
+  ],
+  "stem": ". (50 marks)",
+  "notes": "The scheme prints 'Two precautions @ 4 marks (8) (c) Any three parts @ 6 marks (18)'."
+ },
+ {
+  "id": "eng-2023-ol-q7-c-i",
+  "topicId": "eng-2-16",
+  "conceptId": "use-solenoid",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q7(c)(i)",
+  "questionText": "State one use of a solenoid.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "diameter of round bars or the internal diameter of holes. The measurement can be read directly from a digital display.",
+    "marks": 6,
+    "accepts": [
+     "to convert electrical energy into mechanical work. It can be used to open and close pneumatic valves / turn on or off an electrical switch / operate as a locking mechanism….",
+     "Plunger moves in and out."
+    ]
+   }
+  ],
+  "stem": "short leg long leg colour bands Leaving Certificate 2023 Engineering – Ordinary level 8",
+  "notes": "The scheme prints '@ 6 marks'."
+ },
+ {
+  "id": "eng-2024-hl-q2-a-i",
+  "topicId": "eng-3-14",
+  "conceptId": "reasons-extensive-use-container-ships-movement",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q2(a)(i)",
+  "questionText": "Outline two reasons for the extensive use of container ships in the movement of goods.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "2 + 2"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Efficiency and Speed: Container ships can carry large quantities of goods at once, significantly reducing the cost per unit of cargo. They are designed to load and unload quickly at ports, minimising turnaround time and maximising efficiency.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Standardisation: The use of standardised containers (typically 20-foot and 40-foot long) allows for easy handling, stacking, and transportation across different modes of transport (ships, trains, trucks).",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Cost-Effectiveness: Shipping goods by container ship is generally cheaper than other forms of transportation, especially for long distances.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Security: Containers provide a secure environment for goods, reducing the risk of damage, theŌ and loss.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Flexibility: Container ships can carry a wide variety of goods.",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Global Connectivity: Container shipping networks cover major ports around the world, facilitating global trade.",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Reduced Environmental Impact: While shipping does have environmental impacts, container ships are relatively efficient in terms of fuel consumption and emissions per ton of cargo transported compared to other forms of transport, such as air freight.",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks)"
+ },
+ {
   "id": "eng-2024-hl-q2-c-i",
   "topicId": "eng-1-5",
   "conceptId": "container-ships-often-driven-cast-bronze",
@@ -1549,8 +2263,7 @@
   "questionRef": "2024 HL Q5(a)(i)",
   "questionText": "Describe, with the aid of diagram(s), the various stages of dendritic growth during the process of metal solidification.",
   "tariffModel": {
-   "kind": "orderedSplit",
-   "notation": "3 + 3"
+   "kind": "fixed"
   },
   "totalMarks": 6,
   "rows": [
@@ -1558,19 +2271,13 @@
     "id": "r-1",
     "kind": "point",
     "verbatim": "As a metal reaches its cooling point small particles cool first. Solidification takes place in a pattern. This pattern is called dendritic growth and looks like the branches of a tree.",
-    "marks": null
+    "marks": 3
    },
    {
     "id": "r-2",
     "kind": "point",
     "verbatim": "Each small particle grows to form a crystal or grain. Crystals grow together to form a solid.",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Page 17",
-    "marks": null
+    "marks": 3
    }
   ],
   "stem": "."
@@ -1604,7 +2311,7 @@
  },
  {
   "id": "eng-2024-hl-q8-c-ii",
-  "topicId": "eng-1-9",
+  "topicId": "eng-2-11",
   "conceptId": "identify-any-lubricants-commonly-used-when",
   "level": "higher",
   "year": 2024,
@@ -1646,6 +2353,31 @@
   "stem": ". (50 marks)"
  },
  {
+  "id": "eng-2024-ol-q2-d-i",
+  "topicId": "eng-2-10",
+  "conceptId": "advantage-using-temporary-joining-process",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q2(d)(i)",
+  "questionText": "State one advantage of using a temporary joining process.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "Component parts can be easily dismantled if there is repair work required or new parts to be replaced.",
+    "marks": 4
+   }
+  ],
+  "stem": "weight plates seat frame leg press weight machine coupling",
+  "notes": "The scheme prints 'One part @ 4 marks'."
+ },
+ {
   "id": "eng-2025-hl-q1-a",
   "topicId": "eng-3-14",
   "conceptId": "advantages-voice-recognition-technology",
@@ -1683,6 +2415,55 @@
     "id": "r-4",
     "kind": "point",
     "verbatim": "Overcoming language barriers for global accessibility.",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks) Give brief answers to any ten of the following:"
+ },
+ {
+  "id": "eng-2025-hl-q1-c",
+  "topicId": "eng-2-11",
+  "conceptId": "safety-precautions-be-observed-when-using",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 HL Q1(c)",
+  "questionText": "State two safety precautions to be observed when using cutting fluids.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Avoid splashes on skin, wash immediately, use skin barrier cream.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Wear eye protection.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Remove spilt cuƫng fluids from floor to prevent slipping.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Renew cuƫng fluid to prevent rancidity.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Cuƫng fluids need to be filtered and cleaned.",
     "marks": null
    }
   ],
@@ -1738,6 +2519,79 @@
   "stem": ". (50 marks) Give brief answers to any ten of the following:"
  },
  {
+  "id": "eng-2025-hl-q2-a-ii",
+  "topicId": "eng-3-14",
+  "conceptId": "advantages-using-hydrogen-fuel-source",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 HL Q2(a)(ii)",
+  "questionText": "Describe two advantages of using hydrogen as a fuel source.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "3 + 2"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Environmentally Friendly: When hydrogen is used in fuel cells, it produces water as a byproduct, eliminating greenhouse gas emissions and pollutants.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Renewable source: Hydrogen can be produced from various renewable resources, such as water through electrolysis powered by renewable energy (e.g. solar, wind).",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Energy Efficiency: Hydrogen fuel cells are very efficient, converting chemical energy directly into electrical energy with efficiency rates of 40–60%, higher than conventional combustion engines.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Hydrogen can be used as an energy storage medium, balancing intermittent renewable energy sources like wind and solar by storing excess energy for later use.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Hydrogen can be used across various sectors, including transportation (fuel cell vehicles), industrial processes, and residential heating.",
+    "marks": null
+   }
+  ],
+  "stem": ". (50 marks)"
+ },
+ {
+  "id": "eng-2025-hl-q3-a-i",
+  "topicId": "eng-3-8",
+  "conceptId": "term-metal-fatigue",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 HL Q3(a)(i)",
+  "questionText": "Explain the term metal fatigue.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Metal fatigue is the initiation and propagation of cracks in a material due to cyclic loading (on/off loading). Once a fatigue crack has initiated, it grows a small amount with each loading cycle. The crack will continue to grow until it reaches a critical size and complete fracture of the structure.",
+    "marks": 4
+   }
+  ],
+  "stem": "compressor blade"
+ },
+ {
   "id": "eng-2025-hl-q4-b-ii",
   "topicId": "eng-1-3",
   "conceptId": "point-c-transformation-occurs-point",
@@ -1763,7 +2617,7 @@
  },
  {
   "id": "eng-2025-hl-q4-b-iii",
-  "topicId": "eng-1-4",
+  "topicId": "eng-2-6",
   "conceptId": "annealing-1-2-carbon-steel-under",
   "level": "higher",
   "year": 2025,
@@ -1852,31 +2706,79 @@
   "questionRef": "2025 HL Q6(b)",
   "questionText": "Answer any three of the following: (i) Identify two necessary steps in the preparation of a joint for welding. (ii) State two functions of the electrode coating in manual metal arc welding. (iii) Describe how acetylene gas is safely stored. (iv) Describe, with the aid of a diagram(s), the process of friction welding. (v) Outline how distortion, as shown, may occur during welding.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "orderedSplit",
+   "notation": "Any three @ 6 + 6 + 6; 16"
   },
-  "totalMarks": 18,
+  "totalMarks": 34,
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "point",
     "verbatim": "Clean the surfaces to be welded by removing dirt, grease, oil and rust. Use a wire brush, grinder or chemical cleaner.",
-    "marks": 18,
-    "accepts": [
-     "Ensure there are no sharp edges or burrs on the metal pieces by grinding or filing them down.",
-     "Ensure the metal pieces are correctly aligned and close fiƫng, for thicker materials, bevel the edges using a grinder or cuƫng tool.",
-     "Ensure that the angles and alignment are accurate and secure the workpieces using clamps, jigs, or fixtures.",
-     "Some metals, like high-carbon steel or thick materials, may require preheating to prevent cracking. Use a torch or heating element to bring the metal to the desired temperature.",
-     "To generate a shield of carbon dioxide gas to protect welded joints from contamination by oxygen and nitrogen in the air.",
-     "To form a slag coating which protects the weld from oxidation and ensures a slow cooling rate for the weld, this prevents cracks and brittleness.",
-     "Facilitates the striking action of the arc between the work and electrode. Page 19",
-     "Acetylene is safely stored in colour coded cylinders that contain a porous material soaked with a solvent like acetone. This method keeps the gas dissolved at low pressures, reducing the risk of explosion. The cylinders are stored upright in cool, well-ventilated areas, with safety features like pressure relief devices to further ensure safe storage.",
-     "contact, high quality joints. By rotating one work piece at high- speed relative to another, a compressive axial force is applied.",
-     "This generates sufficient temperature to cause the interface to plasticise and fuse."
-    ]
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Ensure there are no sharp edges or burrs on the metal pieces by grinding or filing them down.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Ensure the metal pieces are correctly aligned and close fiƫng, for thicker materials, bevel the edges using a grinder or cuƫng tool.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Ensure that the angles and alignment are accurate and secure the workpieces using clamps, jigs, or fixtures.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Some metals, like high-carbon steel or thick materials, may require preheating to prevent cracking. Use a torch or heating element to bring the metal to the desired temperature.",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "To generate a shield of carbon dioxide gas to protect welded joints from contamination by oxygen and nitrogen in the air.",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "To form a slag coating which protects the weld from oxidation and ensures a slow cooling rate for the weld, this prevents cracks and brittleness.",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "Facilitates the striking action of the arc between the work and electrode. Page 19",
+    "marks": null
+   },
+   {
+    "id": "r-9",
+    "kind": "point",
+    "verbatim": "Acetylene is safely stored in colour coded cylinders that contain a porous material soaked with a solvent like acetone. This method keeps the gas dissolved at low pressures, reducing the risk of explosion. The cylinders are stored upright in cool, well-ventilated areas, with safety features like pressure relief devices to further ensure safe storage.",
+    "marks": null
+   },
+   {
+    "id": "r-10",
+    "kind": "point",
+    "verbatim": "contact, high quality joints. By rotating one work piece at high- speed relative to another, a compressive axial force is applied.",
+    "marks": null
+   },
+   {
+    "id": "r-11",
+    "kind": "point",
+    "verbatim": "This generates sufficient temperature to cause the interface to plasticise and fuse.",
+    "marks": null
    }
   ],
   "stem": ". (50 marks)",
-  "notes": "The scheme prints 'Any three @ 6 + 6 + 6'.",
   "figureKey": "engineering-2025-HL-paper-q6bv-art"
  },
  {
@@ -1923,12 +2825,6 @@
     "id": "r-5",
     "kind": "point",
     "verbatim": "AI-powered inspection systems can operate continuously without breaks, making them • ideal for high-volume production environments, increasing overall productivity and reducing bottlenecks in the manufacturing process.",
-    "marks": null
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "Page 21",
     "marks": null
    }
   ],
@@ -2066,7 +2962,7 @@
  },
  {
   "id": "eng-2025-ol-q7-c-i",
-  "topicId": "eng-3-12",
+  "topicId": "eng-2-16",
   "conceptId": "advantage-using-printed-circuit-board-pcb",
   "level": "ordinary",
   "year": 2025,
@@ -2094,7 +2990,7 @@
  },
  {
   "id": "eng-2025-ol-q7-c-ii",
-  "topicId": "eng-2-11",
+  "topicId": "eng-2-16",
   "conceptId": "examples-where-printed-circuit-board-pcb",
   "level": "ordinary",
   "year": 2025,
@@ -2116,5 +3012,33 @@
   ],
   "stem": "microchip",
   "notes": "The scheme prints 'Any two @ 3 marks'."
+ },
+ {
+  "id": "eng-2025-ol-q7-c-iii",
+  "topicId": "eng-2-16",
+  "conceptId": "term-microchip",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q7(c)(iii)",
+  "questionText": "Explain the term microchip.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Micrometers are specially designed for the measurement of very small objects. They allow for the highly precise measurement of any item that fits between the anvil and spindle.",
+    "marks": 6,
+    "accepts": [
+     "A microchip is an integrated circuit (IC) containing a set of micro‐ electronic circuits made up of transistors, resistors and capacitors and their interconnectors etched onto small pieces of semiconductor material."
+    ]
+   }
+  ],
+  "stem": "microchip",
+  "notes": "The scheme prints 'One part @ 6 marks'."
  }
 ]
