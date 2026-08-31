@@ -130,7 +130,7 @@ export const PAPER_TRAIL_SUBJECTS: PaperTrailSubject[] = [
 
 export const PAPER_TRAIL_INDEX: Record<string, PaperEntry[]> = {
   "accounting": [
-    {"year": 2026, "level": "higher", "lang": "ev", "papers": [{"label": "Exam Paper", "doc": {"f": "LC032ALP000EV.pdf", "b": 888039}, "scheme": {"f": "LC032ALP000EV.pdf", "b": 328093}}]},
+    {"year": 2026, "level": "higher", "lang": "ev", "papers": [{"label": "Exam Paper", "doc": {"f": "LC032ALP000EV.pdf", "b": 888039}, "scheme": {"f": "LC032ALP000EV.pdf", "b": 328093}, "answers": 1}]},
     {"year": 2026, "level": "higher", "lang": "iv", "papers": [{"label": "Exam Paper", "doc": {"f": "LC032ALP000IV.pdf", "b": 874639}, "scheme": {"f": "LC032ALP000IV.pdf", "b": 482324}}]},
     {"year": 2026, "level": "ordinary", "lang": "ev", "papers": [{"label": "Exam Paper", "doc": {"f": "LC032GLP000EV.pdf", "b": 927570}, "scheme": {"f": "LC032GLP000EV.pdf", "b": 280848}, "answers": 1}]},
     {"year": 2026, "level": "ordinary", "lang": "iv", "papers": [{"label": "Exam Paper", "doc": {"f": "LC032GLP000IV.pdf", "b": 926371}, "scheme": {"f": "LC032GLP000IV.pdf", "b": 275980}, "answers": 1}]},
@@ -368,8 +368,8 @@ export const PAPER_TRAIL_INDEX: Record<string, PaperEntry[]> = {
     {"year": 2010, "level": "ordinary", "lang": "iv", "papers": [{"label": "Exam Paper", "doc": {"f": "LC007GLP000IV.pdf", "b": 129538}}]},
   ],
   "applied-mathematics": [
-    {"year": 2026, "level": "higher", "lang": "ev", "papers": [{"label": "Exam Paper", "doc": {"f": "LC020ALP000EV.pdf", "b": 676825}, "scheme": {"f": "LC020ALP000EV.pdf", "b": 1171674}}]},
-    {"year": 2026, "level": "higher", "lang": "iv", "papers": [{"label": "Exam Paper", "doc": {"f": "LC020ALP000IV.pdf", "b": 619607}, "scheme": {"f": "LC020ALP000IV.pdf", "b": 635239}}]},
+    {"year": 2026, "level": "higher", "lang": "ev", "papers": [{"label": "Exam Paper", "doc": {"f": "LC020ALP000EV.pdf", "b": 676825}, "scheme": {"f": "LC020ALP000EV.pdf", "b": 1171674}, "answers": 1}]},
+    {"year": 2026, "level": "higher", "lang": "iv", "papers": [{"label": "Exam Paper", "doc": {"f": "LC020ALP000IV.pdf", "b": 619607}, "scheme": {"f": "LC020ALP000IV.pdf", "b": 635239}, "answers": 1}]},
     {"year": 2026, "level": "ordinary", "lang": "ev", "papers": [{"label": "Exam Paper", "doc": {"f": "LC020GLP000EV.pdf", "b": 834071}, "scheme": {"f": "LC020GLP000EV.pdf", "b": 623825}}]},
     {"year": 2026, "level": "ordinary", "lang": "iv", "papers": [{"label": "Exam Paper", "doc": {"f": "LC020GLP000IV.pdf", "b": 791419}, "scheme": {"f": "LC020GLP000IV.pdf", "b": 602344}}]},
     {"year": 2025, "level": "higher", "lang": "ev", "papers": [{"label": "Exam Paper", "doc": {"f": "LC020ALP000EV.pdf", "b": 596527}, "scheme": {"f": "LC020ALP000EV.pdf", "b": 1764716}}]},
@@ -541,10 +541,10 @@ export const PAPER_TRAIL_INDEX: Record<string, PaperEntry[]> = {
     {"year": 2010, "level": "ordinary", "lang": "iv", "papers": [{"label": "Exam Paper", "doc": {"f": "LC014GLP000IV.pdf", "b": 175932}, "scheme": {"f": "LC014GLP000IV.pdf", "b": 188519}}, {"label": "History and Appreciation", "doc": {"f": "LC014GLP013IV.pdf", "b": 21717290}, "scheme": {"f": "LC014GLP000IV.pdf", "b": 188519}}]},
   ],
   "biology": [
-    {"year": 2026, "level": "higher", "lang": "ev", "papers": [{"label": "Section A&B", "doc": {"f": "LC025ALP038EV.pdf", "b": 1855085}, "scheme": {"f": "LC025ALP000EV.pdf", "b": 1234164}}, {"label": "Section C", "doc": {"f": "LC025ALP040EV.pdf", "b": 1359733}, "scheme": {"f": "LC025ALP000EV.pdf", "b": 1234164}}]},
-    {"year": 2026, "level": "higher", "lang": "iv", "papers": [{"label": "Section A&B", "doc": {"f": "LC025ALP038IV.pdf", "b": 1707380}, "scheme": {"f": "LC025ALP000IV.pdf", "b": 1261756}}, {"label": "Section C", "doc": {"f": "LC025ALP040IV.pdf", "b": 1399980}, "scheme": {"f": "LC025ALP000IV.pdf", "b": 1261756}}]},
-    {"year": 2026, "level": "ordinary", "lang": "ev", "papers": [{"label": "Section A&B", "doc": {"f": "LC025GLP038EV.pdf", "b": 1973272}, "scheme": {"f": "LC025GLP000EV.pdf", "b": 1504567}}, {"label": "Section C", "doc": {"f": "LC025GLP040EV.pdf", "b": 1776955}, "scheme": {"f": "LC025GLP000EV.pdf", "b": 1504567}}]},
-    {"year": 2026, "level": "ordinary", "lang": "iv", "papers": [{"label": "Section A&B", "doc": {"f": "LC025GLP038IV.pdf", "b": 1933498}, "scheme": {"f": "LC025GLP000IV.pdf", "b": 1530756}}, {"label": "Section C", "doc": {"f": "LC025GLP040IV.pdf", "b": 1754930}, "scheme": {"f": "LC025GLP000IV.pdf", "b": 1530756}}]},
+    {"year": 2026, "level": "higher", "lang": "ev", "papers": [{"label": "Section A&B", "doc": {"f": "LC025ALP038EV.pdf", "b": 1855085}, "scheme": {"f": "LC025ALP000EV.pdf", "b": 1234164}, "answers": 1}, {"label": "Section C", "doc": {"f": "LC025ALP040EV.pdf", "b": 1359733}, "scheme": {"f": "LC025ALP000EV.pdf", "b": 1234164}, "answers": 1}]},
+    {"year": 2026, "level": "higher", "lang": "iv", "papers": [{"label": "Section A&B", "doc": {"f": "LC025ALP038IV.pdf", "b": 1707380}, "scheme": {"f": "LC025ALP000IV.pdf", "b": 1261756}, "answers": 1}, {"label": "Section C", "doc": {"f": "LC025ALP040IV.pdf", "b": 1399980}, "scheme": {"f": "LC025ALP000IV.pdf", "b": 1261756}, "answers": 1}]},
+    {"year": 2026, "level": "ordinary", "lang": "ev", "papers": [{"label": "Section A&B", "doc": {"f": "LC025GLP038EV.pdf", "b": 1973272}, "scheme": {"f": "LC025GLP000EV.pdf", "b": 1504567}, "answers": 1}, {"label": "Section C", "doc": {"f": "LC025GLP040EV.pdf", "b": 1776955}, "scheme": {"f": "LC025GLP000EV.pdf", "b": 1504567}, "answers": 1}]},
+    {"year": 2026, "level": "ordinary", "lang": "iv", "papers": [{"label": "Section A&B", "doc": {"f": "LC025GLP038IV.pdf", "b": 1933498}, "scheme": {"f": "LC025GLP000IV.pdf", "b": 1530756}, "answers": 1}, {"label": "Section C", "doc": {"f": "LC025GLP040IV.pdf", "b": 1754930}, "scheme": {"f": "LC025GLP000IV.pdf", "b": 1530756}, "answers": 1}]},
     {"year": 2025, "level": "higher", "lang": "ev", "papers": [{"label": "Section A&B", "doc": {"f": "LC025ALP038EV.pdf", "b": 1720226}, "scheme": {"f": "LC025ALP000EV.pdf", "b": 1114818}}, {"label": "Section C", "doc": {"f": "LC025ALP040EV.pdf", "b": 2785293}, "scheme": {"f": "LC025ALP000EV.pdf", "b": 1114818}}]},
     {"year": 2025, "level": "higher", "lang": "iv", "papers": [{"label": "Section A&B", "doc": {"f": "LC025ALP038IV.pdf", "b": 1639173}, "scheme": {"f": "LC025ALP000IV.pdf", "b": 1091630}}, {"label": "Section C", "doc": {"f": "LC025ALP040IV.pdf", "b": 4182340}, "scheme": {"f": "LC025ALP000IV.pdf", "b": 1091630}}]},
     {"year": 2025, "level": "ordinary", "lang": "ev", "papers": [{"label": "Section A&B", "doc": {"f": "LC025GLP038EV.pdf", "b": 1524346}, "scheme": {"f": "LC025GLP000EV.pdf", "b": 1068410}}, {"label": "Section C", "doc": {"f": "LC025GLP040EV.pdf", "b": 2316012}, "scheme": {"f": "LC025GLP000EV.pdf", "b": 1068410}}]},
@@ -700,8 +700,8 @@ export const PAPER_TRAIL_INDEX: Record<string, PaperEntry[]> = {
     {"year": 2010, "level": "ordinary", "lang": "iv", "papers": [{"label": "Exam Paper", "doc": {"f": "LC033GLP000IV.pdf", "b": 189112}, "scheme": {"f": "LC033GLP000IV.pdf", "b": 255624}}]},
   ],
   "chemistry": [
-    {"year": 2026, "level": "higher", "lang": "ev", "papers": [{"label": "Exam Paper", "doc": {"f": "LC022ALP000EV.pdf", "b": 1077751}, "scheme": {"f": "LC022ALP000EV.pdf", "b": 484812}}]},
-    {"year": 2026, "level": "higher", "lang": "iv", "papers": [{"label": "Exam Paper", "doc": {"f": "LC022ALP000IV.pdf", "b": 1087769}, "scheme": {"f": "LC022ALP000IV.pdf", "b": 517675}}]},
+    {"year": 2026, "level": "higher", "lang": "ev", "papers": [{"label": "Exam Paper", "doc": {"f": "LC022ALP000EV.pdf", "b": 1077751}, "scheme": {"f": "LC022ALP000EV.pdf", "b": 484812}, "answers": 1}]},
+    {"year": 2026, "level": "higher", "lang": "iv", "papers": [{"label": "Exam Paper", "doc": {"f": "LC022ALP000IV.pdf", "b": 1087769}, "scheme": {"f": "LC022ALP000IV.pdf", "b": 517675}, "answers": 1}]},
     {"year": 2026, "level": "ordinary", "lang": "ev", "papers": [{"label": "Exam Paper", "doc": {"f": "LC022GLP000EV.pdf", "b": 933471}, "scheme": {"f": "LC022GLP000EV.pdf", "b": 513881}, "answers": 1}]},
     {"year": 2026, "level": "ordinary", "lang": "iv", "papers": [{"label": "Exam Paper", "doc": {"f": "LC022GLP000IV.pdf", "b": 950195}, "scheme": {"f": "LC022GLP000IV.pdf", "b": 495118}, "answers": 1}]},
     {"year": 2025, "level": "higher", "lang": "ev", "papers": [{"label": "Exam Paper", "doc": {"f": "LC022ALP000EV.pdf", "b": 1441596}, "scheme": {"f": "LC022ALP000EV.pdf", "b": 592515}, "answers": 1}]},
@@ -864,10 +864,10 @@ export const PAPER_TRAIL_INDEX: Record<string, PaperEntry[]> = {
     {"year": 2020, "level": "higher", "lang": "iv", "papers": [{"label": "Section A&B", "doc": {"f": "LC219ALP038IV.pdf", "b": 1737009}}, {"label": "Section C", "doc": {"f": "LC219ALP040IV.pdf", "b": 979909}}], "note": "November 2020 deferred-sitting papers"},
   ],
   "construction-studies": [
-    {"year": 2026, "level": "higher", "lang": "ev", "papers": [{"label": "Exam Paper", "doc": {"f": "LC029ALP000EV.pdf", "b": 4055537}, "scheme": {"f": "LC029ALP000EV.pdf", "b": 9098034}}]},
-    {"year": 2026, "level": "higher", "lang": "iv", "papers": [{"label": "Exam Paper", "doc": {"f": "LC029ALP000IV.pdf", "b": 4009747}, "scheme": {"f": "LC029ALP000IV.pdf", "b": 8330731}}]},
-    {"year": 2026, "level": "ordinary", "lang": "ev", "papers": [{"label": "Exam Paper", "doc": {"f": "LC029GLP000EV.pdf", "b": 2693914}, "scheme": {"f": "LC029GLP000EV.pdf", "b": 9542775}}]},
-    {"year": 2026, "level": "ordinary", "lang": "iv", "papers": [{"label": "Exam Paper", "doc": {"f": "LC029GLP000IV.pdf", "b": 1773242}, "scheme": {"f": "LC029GLP000IV.pdf", "b": 25079956}}]},
+    {"year": 2026, "level": "higher", "lang": "ev", "papers": [{"label": "Exam Paper", "doc": {"f": "LC029ALP000EV.pdf", "b": 4055537}, "scheme": {"f": "LC029ALP000EV.pdf", "b": 9098034}, "answers": 1}]},
+    {"year": 2026, "level": "higher", "lang": "iv", "papers": [{"label": "Exam Paper", "doc": {"f": "LC029ALP000IV.pdf", "b": 4009747}, "scheme": {"f": "LC029ALP000IV.pdf", "b": 8330731}, "answers": 1}]},
+    {"year": 2026, "level": "ordinary", "lang": "ev", "papers": [{"label": "Exam Paper", "doc": {"f": "LC029GLP000EV.pdf", "b": 2693914}, "scheme": {"f": "LC029GLP000EV.pdf", "b": 9542775}, "answers": 1}]},
+    {"year": 2026, "level": "ordinary", "lang": "iv", "papers": [{"label": "Exam Paper", "doc": {"f": "LC029GLP000IV.pdf", "b": 1773242}, "scheme": {"f": "LC029GLP000IV.pdf", "b": 25079956}, "answers": 1}]},
     {"year": 2026, "level": "common", "lang": "ev", "papers": [{"label": "Practical Test Day 1", "doc": {"f": "LC029CLP034EV.pdf", "b": 1717776}}, {"label": "Practical Test Day 2", "doc": {"f": "LC029CLP035EV.pdf", "b": 1680785}}, {"label": "Practical Test Day 3", "doc": {"f": "LC029CLP036EV.pdf", "b": 1766553}}]},
     {"year": 2025, "level": "higher", "lang": "ev", "papers": [{"label": "Exam Paper", "doc": {"f": "LC029ALP000EV.pdf", "b": 5086036}, "scheme": {"f": "LC029ALP000EV.pdf", "b": 14970383}, "answers": 1}]},
     {"year": 2025, "level": "higher", "lang": "iv", "papers": [{"label": "Exam Paper", "doc": {"f": "LC029ALP000IV.pdf", "b": 4281408}, "scheme": {"f": "LC029ALP000IV.pdf", "b": 18526233}}]},

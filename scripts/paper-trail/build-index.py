@@ -388,6 +388,16 @@ QA_PASSED_ANSWER_PROFILES = {
     # 2024's ChatGPT questions open their exact marked answers) plus 4
     # section-level gap years via irish_sections.py ("Ceist 3 · Filíocht"
     # labelled chips onto each section's full marking block).
+    # New-spec 2026 wave: CONTINUATION_CODES + the divider-exception let the
+    # continuously-numbered 2026 schemes map precisely — Biology's nitrogen-
+    # cycle chip (the fallback disaster's original exhibit) now opens Question
+    # 6's denitrification answers; Construction Q10 its EnerPHit model answer;
+    # Chemistry HL Q11 its propanone redox block; Accounting HL Q6 the Olivette
+    # P&L; Applied Maths HL Q10 the completed scheduling network.
+    ('chemistry', 'higher', 'iv'),
+    ('construction-studies', 'higher', 'iv'),
+    ('construction-studies', 'ordinary', 'iv'),
+    ('applied-mathematics', 'higher', 'iv'),
     ('irish', 'higher', 'iv'),
     ('irish', 'ordinary', 'iv'),
     ('jc-irish', 'higher', 'iv'),

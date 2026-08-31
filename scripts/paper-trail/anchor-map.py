@@ -130,6 +130,12 @@ DONE_CODES = {
 # Aural / unprepared-listening / non-level components never carry page questions.
 SKIP_COMPONENTS = {"A00", "U00"}
 
+# New-spec multi-booklet subjects (Biology 2026: Sections A&B = Q1-15, Section C
+# = Q11-17 continuation) — their booklets may start numbering past 1, and their
+# lead-int papers legitimately reconcile against 'Question N' scheme blocks
+# (the scheme restates each question; there is no competing short-answer key).
+CONTINUATION_CODES = {"LC025", "LC034", "LC022", "LC032", "LC020", "LC029"}
+
 
 def log(msg):
     print(msg, flush=True)
@@ -281,7 +287,7 @@ DETECTORS = [("question", _det_question_word), ("lead_int", _det_lead_int), ("qt
              ("ctoken", _det_c_token)]
 
 
-def best_sequence(hits):
+def best_sequence(hits, allow_k_start=False):
     """Clean a detector's hits to the longest contiguous 1..N at a consistent
     left-margin x (deduped per number). Returns sorted [(n,page0,x0,yFrac)] or None."""
     if not hits:
@@ -296,18 +302,23 @@ def best_sequence(hits):
             if n not in first:
                 first[n] = (n, pi, x, y)
         ns = sorted(first)
-        if ns == list(range(1, len(ns) + 1)) and len(ns) >= MIN_QUESTIONS:
+        ok_run = ns == list(range(1, len(ns) + 1))
+        if not ok_run and allow_k_start and ns and len(ns) >= 3:
+            # continuation booklets (Biology Section C numbers 11..17): accept a
+            # contiguous run starting past 1
+            ok_run = ns == list(range(ns[0], ns[0] + len(ns)))
+        if ok_run and len(ns) >= MIN_QUESTIONS:
             seq = [first[n] for n in ns]
             if best is None or len(seq) > len(best):
                 best = seq
     return best
 
 
-def detect_paper_headers(doc):
+def detect_paper_headers(doc, allow_k_start=False):
     """Best (detector_name, [(n,page0,x0,yFrac)]) across detectors, or None."""
     best = None
     for name, fn in DETECTORS:
-        seq = best_sequence(fn(doc))
+        seq = best_sequence(fn(doc), allow_k_start)
         if seq and (best is None or len(seq) > len(best[1])):
             best = (name, seq)
     return best
@@ -599,7 +610,9 @@ def map_paper(paper_path, scheme_path, band_strategy, fallback_only=False):
     paper = fitz.open(paper_path)
     scheme = fitz.open(scheme_path)
 
-    ph = detect_paper_headers(paper)
+    _code = (decode_fileid(os.path.basename(paper_path)) or {}).get("code")
+    _continuation = _code in CONTINUATION_CODES
+    ph = detect_paper_headers(paper, allow_k_start=_continuation)
     if not ph:
         stats["reason"] = "no clean paper question sequence"
         return None, stats
@@ -655,7 +668,8 @@ def map_paper(paper_path, scheme_path, band_strategy, fallback_only=False):
 
     fm_start = front_matter_end(scheme, band_start, band_end)
     markers = detect_scheme_markers(scheme, fm_start, band_end, want_ns, detector,
-                                    divider_band=(band_strategy[0] == "divider"))
+                                    divider_band=(band_strategy[0] == "divider"
+                                                  or _continuation))
     matched = sum(1 for n in want_ns if n in markers)
     stats["conf"] = round(matched / N, 3)
     # Strict gate: every paper question must have a scheme marker.
