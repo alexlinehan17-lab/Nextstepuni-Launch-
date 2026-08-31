@@ -538,7 +538,18 @@ const decks = [
   // no head and had no band at all; and a bare number was being read as a
   // head, so a graph's axis labels became nine questions on one page. One
   // more crop bound after opening it. Nothing removed.
-  ['engineering:higher', ENG_HIGHER, 150, '695fcc6d1d4b811048d19d330f18b7c5c257108e10703d7f48451cf4c57a9430'],
+  // 2026-08-31 (sixth pass): 150 -> 163, and Ordinary 33 -> 71. Question 1 is
+  // answered "any ten of the following" and the tariff table prices only the
+  // QUESTION, with the rule on the line beneath the head — "Any ten @ 5 marks
+  // each", "Any eight parts @ 6 marks each". Every one of its thirteen to
+  // eighteen parts resolved up to the question, so one card carried all of
+  // them; Q1 held 148 of the subject's 806 asks and 20% of them were covered.
+  // The rule says what a PART is worth, so a part-level card claims it — but
+  // only where it says EACH and names one value. 2021 Ordinary says "Any
+  // eight." and then "Two @ 7 marks, six @ 6 marks", which prices some parts
+  // at 7 and some at 6 without saying which, and that one stays refused.
+  // Nothing removed.
+  ['engineering:higher', ENG_HIGHER, 163, 'bbab7115a9d9744a79f9dbf94e8ab1bb07e144100c6b4c38f197dcfac1f75fff'],
   // 2026-08-31: 10 -> 24, same reader work as Higher above. Four cards
   // REMOVED. eng-2021-ol-q7-c-ii asked for the electronic symbol of each
   // component named and answered "of round bars or internal diameters of
@@ -554,7 +565,7 @@ const decks = [
   // A, B, C and D" with no labelled figure to show them on. The deck build
   // was already dropping it; the author now refuses it, so the authored file
   // and the deck agree about what the subject holds.
-  ['engineering:ordinary', ENG_ORDINARY, 33, 'f436c2b2a3f32ac8ff564d68bde1bb871da79de0fa6a59491584e5661a1ea1c0'],
+  ['engineering:ordinary', ENG_ORDINARY, 71, '3089b3903dc545650489fbac38c0aeba569aa80a1137a7c3dd1f50e3c8426a00'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -569,6 +580,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7970);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(8021);
   });
 });

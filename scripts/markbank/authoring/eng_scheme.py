@@ -241,6 +241,7 @@ class EngScheme:
         self.year, self.level = year, level
         self.path = os.path.join(SCHEMES, f'{year}-{level}.pdf')
         self._tariffs = None
+        self._per_part = None
         self._body = None
 
     # ── the tariff table ───────────────────────────────────────────────────
@@ -378,6 +379,52 @@ class EngScheme:
                     flush(int(closing.group(1)))
         flush()
         return out
+
+    def per_part(self, q):
+        """What EACH part of this question is worth, when the scheme says so.
+
+        Question 1 is answered "any ten of the following" and the tariff table
+        prices only the question -- "Question 1 - 50 marks" -- with the rule on
+        the line beneath it: "Any ten @ 5 marks each", "Any eight parts @ 6
+        marks each". Every part then resolves up to the question and one card
+        carries all eighteen of them, which is not a card.
+
+        The rule is the paper's own arithmetic and it says what a part is
+        worth, so a part-level card can claim it. Only when it says EACH, and
+        only when it names ONE value: 2021 Ordinary Level says "Any eight."
+        and then "Two @ 7 marks, six @ 6 marks", which prices some parts at 7
+        and some at 6 without saying which, and a tariff is never guessed.
+        """
+        if self._per_part is None:
+            self._per_part = {}
+            for _, rows, width in self._summary_pages():
+                bands = _columns(rows, width)
+                if not bands:
+                    continue
+                per_col = collections.defaultdict(list)
+                for r in rows:
+                    b = _band(r[0], bands)
+                    if b is not None:
+                        per_col[b].append(r)
+                for col in sorted(per_col):
+                    seq = sorted(per_col[col], key=lambda r: r[1])
+                    for i, row in enumerate(seq):
+                        h = SUMMARY_HEAD.match(row[4])
+                        if not h:
+                            continue
+                        for nxt in seq[i + 1:i + 3]:
+                            t = ' '.join(nxt[4].split())
+                            if SUMMARY_HEAD.match(t) or MARKER.match(t):
+                                break
+                            if not re.search(r'\beach\b', t, re.I):
+                                continue
+                            if t.count('@') != 1:
+                                continue
+                            parsed = parse_tariff(t)
+                            if parsed and parsed[2]:
+                                self._per_part[int(h.group(1))] = parsed[2][1]
+                            break
+        return self._per_part.get(q)
 
     # ── the answer body ────────────────────────────────────────────────────
     def body(self):

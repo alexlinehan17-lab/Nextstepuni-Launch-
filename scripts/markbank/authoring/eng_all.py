@@ -158,6 +158,16 @@ def resolve(S, q, letter, roman):
     asks, because at Ordinary Level the two are almost never at the same
     depth: the scheme prices the letter and answers its romans.
     """
+    # Before climbing to the question: if the question states what EACH of its
+    # parts is worth, this part is priced and does not need to climb. Question
+    # 1 is answered "any ten of the following" and prices only the question, so
+    # every one of its thirteen to eighteen parts resolved to the whole
+    # question and one card carried all of them.
+    per = S.per_part(q)
+    if per and (letter or roman) and not S.tariff(q, letter, roman):
+        keep = cardable_indexed(S.points_under(q, letter, roman))
+        if keep:
+            return (q, letter, roman), keep
     for key in ((q, letter, roman), (q, letter, None), (q, None, None)):
         priced = S.tariff(*key)
         if priced:
@@ -204,6 +214,9 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--report', action='store_true')
     ap.add_argument('--all', action='store_true')
+    ap.add_argument('--verdicts', help='write one line per REFUSED leaf, with '
+                                       'the reason, for counting where the '
+                                       'open asks actually are')
     args = ap.parse_args()
 
     # The crops question_art.py cut for the parts that point at a picture,
@@ -229,6 +242,7 @@ def main():
 
     idx = R.leaf_index(census_subject('engineering'))
     cards, refused = [], collections.Counter()
+    verdicts = []
     examples = collections.defaultdict(list)
 
     for (year, level, _), leaves in sorted(idx.items()):
@@ -250,6 +264,7 @@ def main():
                 ask = ''
 
             def note(reason):
+                verdicts.append((year, level, q, letter, roman, ref, reason))
                 # A promoted parent is reached once per option beneath it.
                 # Counting it each time trebles a single refusal and makes the
                 # report read as three problems.
@@ -391,8 +406,17 @@ def main():
             if cardlint.NAMES_LETTERS.search(joined):
                 note('names a lettered part this author cannot decode')
                 continue
-            shape = rows_for(S.notation(*key), S.tariff(*key), S.rule(*key),
-                             points)
+            tariff_here = S.tariff(*key)
+            notation_here = S.notation(*key)
+            rule_here = S.rule(*key)
+            if tariff_here is None and (key[1] or key[2]):
+                # Priced by the question's "@ N marks each", which is what
+                # this part is worth and what the scheme printed.
+                per = S.per_part(key[0])
+                if per:
+                    tariff_here, rule_here = per, None
+                    notation_here = f'{per} marks'
+            shape = rows_for(notation_here, tariff_here, rule_here, points)
             if not shape:
                 note('the printed split does not fit the points stated')
                 continue
@@ -409,7 +433,7 @@ def main():
                            marks=[n * per], tariff='fixed',
                            row_kind='anyN', total=n * per, question_figure=figure,
                            stem=keeps_stem(stem, figure),
-                           notes=f'The scheme prints {S.notation(*key)!r}.')
+                           notes=f'The scheme prints {notation_here!r}.')
                 elif model['kind'] == 'orderedSplit':
                     # Rows carry no marks and the total is given, which is the
                     # shape lib already has for a scale: `ladder`. Which point
@@ -420,22 +444,22 @@ def main():
                            use=[i for i, _ in keep[:MAX_ROWS]],
                            tariff='orderedSplit', question_figure=figure,
                            notation=model['notation'],
-                           ladder=S.tariff(*key),
+                           ladder=tariff_here,
                            stem=keeps_stem(stem, figure))
                 elif model['kind'] == 'questionTotal':
                     A.card(*key, topic=topic, concept=concept_for(ask),
                            source='table', card_id=cid,
                            use=[i for i, _ in keep[:MAX_ROWS]],
                            tariff='questionTotal', question_figure=figure,
-                           total=S.tariff(*key),
+                           total=tariff_here,
                            stem=keeps_stem(stem, figure),
-                           notes=f'The scheme prints {S.notation(*key)!r}.')
+                           notes=f'The scheme prints {notation_here!r}.')
                 else:
                     A.card(*key, topic=topic, concept=concept_for(ask),
                            source='table', card_id=cid,
                            use=[i for i, _ in keep[:MAX_ROWS]],
                            marks=marks, tariff='fixed', question_figure=figure,
-                           total=S.tariff(*key),
+                           total=tariff_here,
                            stem=keeps_stem(stem, figure))
                 # Card lint reads the text the CARD carries, which lib builds
                 # from the key's own ask with its children joined on.
@@ -482,6 +506,12 @@ def main():
                 note(str(exc).split(':', 1)[-1].strip()[:60])
         cards.extend(A.cards)
 
+    if args.verdicts:
+        with open(args.verdicts, 'w', encoding='utf-8') as fh:
+            json.dump([{'year': v[0], 'level': v[1], 'q': v[2], 'letter': v[3],
+                        'roman': v[4], 'ref': v[5], 'reason': v[6]}
+                       for v in verdicts], fh, indent=1)
+        print(f'wrote {args.verdicts}: {len(verdicts)} refusals')
     if args.report:
         total = sum(len(v) for v in idx.values())
         print(f'{len(cards)} card(s) from {total} asks')

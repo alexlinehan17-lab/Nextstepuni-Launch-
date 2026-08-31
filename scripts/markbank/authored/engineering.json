@@ -151,6 +151,73 @@
   "notes": "The scheme prints '5'."
  },
  {
+  "id": "eng-2021-hl-q1-h",
+  "topicId": "eng-2-11",
+  "conceptId": "reasons-why-may-be-necessary-operate",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q1(h)",
+  "questionText": "Outline two reasons why it may be necessary to operate drilling machines at different speeds.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The diameter of the drill bit used",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The type of material being drilled",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Feed rate of the drill bit.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Copper is annealed by heating the metal to a red colour (approx. 400°C) and then rapidly cooling it in water. Annealing copper makes it softer and less brittle, which allows you to bend it without breaking it. This malleability allows you to hammer and mould the copper into any shape you wish without cracking the metal.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '5 marks'."
+ },
+ {
+  "id": "eng-2021-hl-q1-k",
+  "topicId": "eng-3-8",
+  "conceptId": "significance-having-safety-factor-5-fos",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q1(k)",
+  "questionText": "Explain the significance for having a safety factor of 5 (FoS = 5) on a structural beam.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Safety (FoS) e.g. a beam made to withstand 10kN will be capable of withstanding 50kN when the FoS is 5.",
+    "marks": 5
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:"
+ },
+ {
   "id": "eng-2021-hl-q1-l",
   "topicId": "eng-3-7",
   "conceptId": "identify-metals-commmonly-used-protect-steel",
@@ -1521,6 +1588,196 @@
   "notes": "The scheme prints 'Any two @ 5 + 5'."
  },
  {
+  "id": "eng-2022-hl-q1-f",
+  "topicId": "eng-3-14",
+  "conceptId": "discuss-contribution-any-following-has-made",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 HL Q1(f)",
+  "questionText": "Discuss the contribution that any one of the following has made to technology: (i) Nikola Tesla (ii) John McCarthy (iii) Alessandro Volta.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Nikola Tesla (1856 – 1943) was a Serbian-American engineer and physicist made dozens of breakthroughs in the production, transmission and application of electric power.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "He is best known for creating the first alternating current (AC) motor and developed AC generation and transmission technology.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "John McCarthy (1927 – 2011) was an American computer scientist and cognitive scientist.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "McCarthy was one of the founders of the discipline of artificial intelligence (AI). It was in the mid-1950s that McCarthy coined the term “Artificial Intelligence” which he would define as “the science and engineering of making intelligent machines”.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Alessandro Volta (1745 – 1827) was an Italian physicist, chemist, and pioneer of electricity and power who is credited as the inventor of the electric battery and the discoverer of methane. His invention of the electric battery provided the first source of continuous current.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '5 marks'."
+ },
+ {
+  "id": "eng-2022-hl-q1-g",
+  "topicId": "eng-3-14",
+  "conceptId": "environmental-benefits-using-hydrogen-powered-fuel",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 HL Q1(g)",
+  "questionText": "Explain two environmental benefits of using hydrogen powered fuel cell vehicles in modern urban transportation.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The biggest advantage to a hydrogen-powered fuel cell vehicle is that it only produces water and air, which are not harmful to the environment.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Driving hydrogen fuel-cell powered vehicles would eliminate greenhouse gases and help reduce air pollution.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Does not require large areas of land to produce hydrogen.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '5 marks'."
+ },
+ {
+  "id": "eng-2022-hl-q1-h",
+  "topicId": "eng-1-3",
+  "conceptId": "term-allotropy-relation-iron",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 HL Q1(h)",
+  "questionText": "Explain the term allotropy in relation to iron.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Allotropy is the property of some chemical elements to exist in two or more different forms. Iron exists as a BCC structure up to approximately 910°C. Between 910°C and approximately 1390°C it exists as a FCC structure.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Tougher, more durable coatings.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Corrosion resistant.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Consistent finish.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "No solvent disposal.",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Ease of application",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Quick process.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '5 marks'."
+ },
+ {
+  "id": "eng-2022-hl-q1-j",
+  "topicId": "eng-2-10",
+  "conceptId": "method-reducing-or-eliminating-impact-any",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 HL Q1(j)",
+  "questionText": "Outline one method of reducing or eliminating the impact of any harmful fumes that may be created in the soldering of electronic circuits.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Use fume extraction system.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Do not breathe in fumes from the plume of smoke created by resin flux heating.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "A risk assessment of the process and measures should be undertaken.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Titanium is strong, long lasting and lightweight. Titanium is lighter than stainless steel and allows (k) the designer to manufacturer a much larger club head that meets the weight specifications of a normal driver. Titanium does not corrode either.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '5 marks'."
+ },
+ {
   "id": "eng-2022-hl-q2-a-i",
   "topicId": "eng-3-14",
   "conceptId": "term-artificial-intelligence-ai",
@@ -2325,6 +2582,288 @@
   ],
   "stem": "laminated and tempered screen",
   "notes": "The scheme prints '6'."
+ },
+ {
+  "id": "eng-2022-ol-q1-a",
+  "topicId": "eng-2-11",
+  "conceptId": "safety-precautions-be-observed-when-using",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 OL Q1(a)",
+  "questionText": "Give two safety precautions to be observed when using a pillar drilling machine.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Personal Protective Equipment (PPE) must be worn to protect the",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "eyes /face i.e., goggles / face shield.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:",
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2022-ol-q1-b",
+  "topicId": "eng-2-10",
+  "conceptId": "disadvantage-non-permanent-joint-metal",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 OL Q1(b)",
+  "questionText": "State one disadvantage of a non-permanent joint in metal.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A non-permanent joint can fail / loosen due to vibration. The strength of non-permanent joints are not as strong as permanent joints and are not suitable for heavy loads.",
+    "marks": 6
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:"
+ },
+ {
+  "id": "eng-2022-ol-q1-c",
+  "topicId": "eng-3-14",
+  "conceptId": "benefits-renewable-energy",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 OL Q1(c)",
+  "questionText": "State two benefits of renewable energy.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "- Cleaner than burning fossil fuels.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "- Renewable energy such as wind or solar will not run out.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:",
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2022-ol-q1-e",
+  "topicId": "eng-2-15",
+  "conceptId": "reason-why-important-keep-engine-parts",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 OL Q1(e)",
+  "questionText": "Give one reason why it is important to keep engine parts lubricated.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Lubricating engine parts can help prevent overheating of engine parts, reduce friction and prevent seizing.",
+    "marks": 6
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:"
+ },
+ {
+  "id": "eng-2022-ol-q1-f",
+  "topicId": "eng-2-13",
+  "conceptId": "benefit-using-computer-aided-drawing-cad",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 OL Q1(f)",
+  "questionText": "Give one benefit of using computer aided drawing (CAD) in Engineering.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Accurate, high-quality drawings can be produced.",
+    "marks": 6
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:"
+ },
+ {
+  "id": "eng-2022-ol-q1-g",
+  "topicId": "eng-1-5",
+  "conceptId": "term-non-ferrous-non-ferrous-metal",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 OL Q1(g)",
+  "questionText": "Explain the term non-ferrous and name one non-ferrous metal.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Non-ferrous metals or alloys do not contain any amounts of iron.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Aluminium is a non-ferrous metal as it does not contain iron.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:",
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2022-ol-q1-j",
+  "topicId": "eng-2-16",
+  "conceptId": "any-following-wireless-control-micro-bit",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 OL Q1(j)",
+  "questionText": "Explain any one of the following: Wireless control, Micro:bit, Sensor.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Wireless control is the communication of signals between different devices through radio waves. Wi-Fi is an example of wireless technology used to connect computer, tablets, smartphones, and other devices to the internet.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Wi-Fi is the radio signal sent from a wireless router to a nearby device, which translates the signal into data you can see or use to control devices.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Smartphone Apps can now be used to control home heating / lighting systems wirelessly i.e., no wire connections are required.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "The Micro:bit is a pocket sized computer that allows a user to control motors or other devices using coding. The micro:bit has an LED light display, buttons, sensors and many input/output features that, when programmed, let it interact with you and your world.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "A sensor is an input device that detects events or changes in its environment and sends the information to other electronic components / devices. Sensors are used in everyday objects such as touch-sensitive lamps which dim or brighten by touching the base. Biometric sensors are used on smart phones to provide access via fingerprint or face recognition.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:",
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2022-ol-q1-k",
+  "topicId": "eng-3-8",
+  "conceptId": "define-property-malleability-metals-metal-malleable",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 OL Q1(k)",
+  "questionText": "Define the property malleability in metals and name one metal which is malleable.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Malleability is the ability of a material to be hammered / flattened out in all directions without breaking.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Name: Lead",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:",
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2022-ol-q1-l",
+  "topicId": "eng-2-10",
+  "conceptId": "any-following-conductor-engraving-prototype-m",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 OL Q1(l)",
+  "questionText": "Describe any one of the following: Conductor, Engraving, Prototype. (m) List two safety precautions to be followed when soldering electronic components.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A conductor is a material that allows heat or electricity flow through it. Copper is an example of a good conductor as it will allow heat / electricity to flow through it.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The process of forming designs by cutting with a tool or corrosion by acids on the surface of material.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "A prototype is an early sample, model, or release of a product built to test how well it might operate.",
+    "marks": null
+   }
+  ],
+  "stem": "Engineering - Ordinary level 2",
+  "notes": "The scheme prints '6 marks'."
  },
  {
   "id": "eng-2022-ol-q2-d-i",
@@ -4019,6 +4558,305 @@
   "notes": "The scheme prints '8'."
  },
  {
+  "id": "eng-2023-ol-q1-a",
+  "topicId": "eng-3-14",
+  "conceptId": "application-remote-control-technology",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q1(a)",
+  "questionText": "State one application of remote-control technology.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Controlling construction equipment like cranes, diggers and drills.",
+    "marks": 6
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:"
+ },
+ {
+  "id": "eng-2023-ol-q1-b",
+  "topicId": "eng-3-8",
+  "conceptId": "term-brittleness",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q1(b)",
+  "questionText": "Explain the term brittleness.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Brittleness describes the property of a material that breaks when subjected to stress.",
+    "marks": 6
+   }
+  ],
+  "stem": "remote-control technology"
+ },
+ {
+  "id": "eng-2023-ol-q1-c",
+  "topicId": "eng-2-11",
+  "conceptId": "reasons-why-pilot-holes-used-when",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q1(c)",
+  "questionText": "State two reasons why pilot holes are used when drilling.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Helps to guide a larger drill through the material providing a more accurate and better located hole.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Can help provide a better cutting action for larger drills.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:",
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2023-ol-q1-d",
+  "topicId": "eng-2-10",
+  "conceptId": "advantage-using-thumbscrews-when-assembling-parts",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q1(d)",
+  "questionText": "List one advantage of using thumbscrews when assembling parts.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The large, knurled head, provides easy grip, and this helps to loosen or tighten the thumbscrew without tools.",
+    "marks": 6
+   }
+  ],
+  "stem": "thumbscrew"
+ },
+ {
+  "id": "eng-2023-ol-q1-e",
+  "topicId": "eng-1-9",
+  "conceptId": "application-strip-heater-when-working-plastics",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q1(e)",
+  "questionText": "Give one application of a strip heater when working with plastics.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A strip heater allows for plastics such as acrylic to be heated up and bent into shape.",
+    "marks": 6
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:"
+ },
+ {
+  "id": "eng-2023-ol-q1-g",
+  "topicId": "eng-3-1",
+  "conceptId": "reason-why-important-wear-ear-protection",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q1(g)",
+  "questionText": "Give one reason why it is important to wear ear protection when working in a workshop.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Being exposed to loud noises for a period of time can cause damage to your hearing.",
+    "marks": 6
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:"
+ },
+ {
+  "id": "eng-2023-ol-q1-h",
+  "topicId": "eng-3-14",
+  "conceptId": "any-following-cad-modelling-artificial-intelligence",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q1(h)",
+  "questionText": "Explain any one of the following: (i) CAD Modelling, (ii) Artificial intelligence (AI), (iii) Electric vehicle.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Upcycling is the process of reusing old materials to create something more valuable or of a higher quality. An example of upcycling is using reclaimed skateboards to make quality furniture, as shown.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions. The term may also be applied to any machine that exhibits traits associated with a human mind such as learning and problem solving.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "An electric vehicle is essentially a vehicle with an electric motor powering it rather than a combustible engine. A fully electric vehicle does not run on or have a petrol or diesel engine.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:",
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2023-ol-q1-j",
+  "topicId": "eng-2-10",
+  "conceptId": "main-operating-features-any-following-scissor",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q1(j)",
+  "questionText": "Describe the main operating features of any one of the following: (i) Scissor jack, (ii) Foot shears, (iii) Soldering iron.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A scissor jack is operated by turning a small crank that is connected to one end of the scissor jack. This crank is usually \"Z\" shaped. When this crank is turned, the screw turns, and this raises or lowers the jack.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A foot shears has two straight-edged blades which pass closely together to generate the force on the material necessary to shear. Just before the blade makes contact with the material, the material is held in place with pressure preventing it from slipping. When the foot pedal is pressed, the top blade lowers at an angle creating a scissor effect shearing the material.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "A soldering iron is a hand tool used to join electronic components and other materials using solder. It supplies heat to the components and materials so that melted solder can flow into the joint between the two workpieces. A soldering iron has a heated metal tip and an insulated handle. Heating is achieved by passing an electric current through a heating element.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:",
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2023-ol-q1-k",
+  "topicId": "eng-1-2",
+  "conceptId": "define-electrical-conductor-relation-properties-metals",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q1(k)",
+  "questionText": "Define electrical conductor in relation to the properties of metals and name one metal which is used as an electrical conductor.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Definition: An electrical conductor is a material that allows electricity to flow through it.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Example: Copper",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:",
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2023-ol-q1-l",
+  "topicId": "eng-2-11",
+  "conceptId": "any-following-pop-riveting-countersinking-blind",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q1(l)",
+  "questionText": "Explain any one of the following: (i) Pop riveting, (ii) Countersinking, (iii) Blind hole.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Pop rivets are typically used to join sheet metals together. The rivet body is inserted into a pre-drilled hole in the material being joined and the mandrel is held in the riveter. When the handles are squeezed, the mandrel snaps, and the body of the rivet holds the pieces together.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Countersinking is a process that creates a V- shaped edge near the surface of a hole.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "It is often used to allow the head of a countersunk-head screw, sit flush or below the surface of the material.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "A blind hole refers to a hole that is reamed, drilled or milled to a specific depth without breaking through to the other side of the workpiece.",
+    "marks": null
+   }
+  ],
+  "stem": "(m) List two benefits of using cutting fluids when machining.",
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
   "id": "eng-2023-ol-q2",
   "topicId": "eng-1-4",
   "conceptId": "any-following-furnace-related-terms-water",
@@ -4358,6 +5196,73 @@
   "notes": "The scheme prints 'Two precautions @ 4 marks (8) (c) Any three parts @ 6 marks (18)'."
  },
  {
+  "id": "eng-2024-hl-q1-b",
+  "topicId": "eng-2-10",
+  "conceptId": "identify-hazards-associated-use-adhesives-engineering",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q1(b)",
+  "questionText": "Identify two hazards associated with the use of adhesives in engineering.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "▪ Avoid contact with skin.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "▪ Avoid inhalation and provide fume extraction.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "▪ Ensure that materials to be joined are adequately supported while the adhesive is curing.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "▪ Eye irritation must be avoided.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '5 marks'."
+ },
+ {
+  "id": "eng-2024-hl-q1-c",
+  "topicId": "eng-3-12",
+  "conceptId": "precision-measurement-meant-parallax-error",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q1(c)",
+  "questionText": "In precision measurement, explain what is meant by parallax error.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Parallax error arises when a change of viewpoint results in an inaccurate reading. Measurements need to read perpendicular to the measuring scale.",
+    "marks": 5
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:"
+ },
+ {
   "id": "eng-2024-hl-q1-e",
   "topicId": "eng-3-14",
   "conceptId": "discuss-contribution-any-following-has-made",
@@ -4385,6 +5290,177 @@
   ],
   "stem": "Give brief answers to any ten of the following:",
   "notes": "The scheme prints 'Any two @ 5 + 5'."
+ },
+ {
+  "id": "eng-2024-hl-q1-f",
+  "topicId": "eng-3-1",
+  "conceptId": "important-material-properties-be-considered-when",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q1(f)",
+  "questionText": "Describe two important material properties to be considered when selecting a suitable material for a mouth guard.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Material properties should be lightweight, tough, strong, corrosion resistant, non-toxic, biocompatible (not toxic and not rejected by the body), long-lasting, easy to mould, etc.",
+    "marks": 5
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:"
+ },
+ {
+  "id": "eng-2024-hl-q1-h",
+  "topicId": "eng-1-9",
+  "conceptId": "roof-bar-uses-elastomer-strip-provide",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q1(h)",
+  "questionText": "The roof bar uses an elastomer strip to provide a grip for carrying items. Explain the term elastomer.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Elastomers are a group of polymers consisting of linear chains that are coiled, entangled and are subject to minimal cross-linking. This irregular internal structure and bonding arrangement allows these materials to be very elastic at room temperature.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Metal extrusion is a forming process in which a metal (either hot or cold) is forced through a die.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Due to the high pressures, the metal exits the die through the opening, assuming the die shape in the process.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '5 marks'."
+ },
+ {
+  "id": "eng-2024-hl-q1-j",
+  "topicId": "eng-3-8",
+  "conceptId": "compare-indenters-used-both-brinell-vickers",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q1(j)",
+  "questionText": "Compare the indenters used in both the Brinell and the Vickers hardness tests.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The Vickers hardness test uses a diamond, square-based pyramid indenter. It has a point angle of 136°.",
+    "marks": 5
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:"
+ },
+ {
+  "id": "eng-2024-hl-q1-k",
+  "topicId": "eng-1-2",
+  "conceptId": "differentiate-between-pyrometallurgy-hydrometallurgy",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q1(k)",
+  "questionText": "Differentiate between pyrometallurgy and hydrometallurgy.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Pyrometallurgy is a high-temperature process that involves the heating of ores to extract metals. This process typically involves the use of heat and chemical reactions in a furnace or smelter.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Hydrometallurgy is a process that uses aqueous solutions to extract metals from ores. It involves dissolving the metal compounds in water or acid solutions and then separating and purifying the metal from the solution.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '5 marks'."
+ },
+ {
+  "id": "eng-2024-hl-q1-l",
+  "topicId": "eng-2-15",
+  "conceptId": "advantage-disadvantage-cordless-power-tools-m",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q1(l)",
+  "questionText": "Outline one advantage and one disadvantage of cordless power tools. (m) Solar panels may be tilted to optimise the capture of solar energy. Suggest a suitable mechanism which could be used to tilt a solar panel.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Limited battery life.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Offer greater flexibility and",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Expensive to buy. portability.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Removes tripping hazard of",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Corded tools are typically power cords. lighter than cordless tools, etc.",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "No need for a mains power source, etc.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '5 marks'."
  },
  {
   "id": "eng-2024-hl-q2-a-i",
@@ -4961,6 +6037,291 @@
    }
   ],
   "questionFigureKey": "engineering-2024-HL-paper-q9bii-art"
+ },
+ {
+  "id": "eng-2024-ol-q1-a",
+  "topicId": "eng-2-15",
+  "conceptId": "identify-mechanism-application",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q1(a)",
+  "questionText": "Identify mechanism A and give one application for it.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Mechanism A is a ratchet and pawl. • Application, used in a socket wrench / ratchet. •",
+    "marks": 6
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:"
+ },
+ {
+  "id": "eng-2024-ol-q1-b",
+  "topicId": "eng-1-2",
+  "conceptId": "term-electrical-conductor",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q1(b)",
+  "questionText": "Explain the term electrical conductor.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "An electrical conductor is a material that will allow electricity to flow • through it.",
+    "marks": 6
+   }
+  ],
+  "stem": "mechanism A"
+ },
+ {
+  "id": "eng-2024-ol-q1-c",
+  "topicId": "eng-2-13",
+  "conceptId": "benefit-making-prototypes-part-design-process",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q1(c)",
+  "questionText": "State one benefit of making prototypes as part of the design process.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Making prototypes or models helps to ensure the final design • operates as intended.",
+    "marks": 6
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:"
+ },
+ {
+  "id": "eng-2024-ol-q1-d",
+  "topicId": "eng-2-11",
+  "conceptId": "reason-using-cutting-fluids-when-machining",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q1(d)",
+  "questionText": "Give one reason for using cutting fluids when machining.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Cutting fluids help to control the temperature during the machining • process by absorbing heat and preventing damage to the cutting tool and workpiece.",
+    "marks": 6
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:"
+ },
+ {
+  "id": "eng-2024-ol-q1-e",
+  "topicId": "eng-3-1",
+  "conceptId": "safety-precautions-should-be-followed-when",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q1(e)",
+  "questionText": "State two safety precautions that should be followed when using a metal shears.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "State two safety precautions that should be followed when using a metal shears:",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Make sure your hands are a safe distance from the cutting blades. • Always check, nobody is behind you when you pull down the arm as • the arm could hit them.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:",
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2024-ol-q1-f",
+  "topicId": "eng-1-2",
+  "conceptId": "term-alloy-alloy",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q1(f)",
+  "questionText": "Explain the term alloy and name one alloy.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A metal alloy is a metal made of two or more metals mixed together. • An example of a metal alloy is bronze, a mixture of copper and tin. •",
+    "marks": 6
+   }
+  ],
+  "stem": "metal shears"
+ },
+ {
+  "id": "eng-2024-ol-q1-g",
+  "topicId": "eng-1-5",
+  "conceptId": "properties-aluminium",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q1(g)",
+  "questionText": "State two properties of aluminium.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Lightweight • Malleable •",
+    "marks": 6
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:"
+ },
+ {
+  "id": "eng-2024-ol-q1-j",
+  "topicId": "eng-2-11",
+  "conceptId": "main-operating-features-any-following-wire",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q1(j)",
+  "questionText": "Describe the main operating features of any one of the following: (i) Wire stripper, (ii) Knurling tool, (iii) Scroll saw.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A wire stripper is a hand tool designed to remove the protective covering from electrical wires. To remove the protective covering, you must open the wire stripper handles and put the wire into the jaws of the wire stripper. Slowly press the handles together until they can go no further. This action will cut through the insulation on the wire. Pull the wire stripper towards the cut end of the wire to remove the insulation. The wire stripper shown has an adjusting screw which is used to stop the jaws closing too far and cutting through the wire.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A knurling tool is used on a centre lathe to apply a grip to the surface of a piece i.e. scriber / centre punch. The knurling tool is fitted to the tool post and set at 90⁰ to work. The knurling tool has two opposing rollers which are pressed into the piece and when moved parallel to the axis of the work will produce a diamond pattern on the surface of the material.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "A scroll saw includes an electric motor and a crank mechanism. The crank mechanism converts the rotary motion of the motor into reciprocating motion of a thin blade. The up and down motion of the thin blade can be used to cut intricate shapes in wood or metals. A small rubber bellows, fixed to the crank mechanism, is used to produce a small air flow which is directed at the cutting face to remove waste material as it is cut. A guard is attached to the top of the scroll saw arm and should always be used when cutting.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:",
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2024-ol-q1-k",
+  "topicId": "eng-3-14",
+  "conceptId": "any-following-drone-technology-autonomous-vehicle",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q1(k)",
+  "questionText": "Explain any one of the following: (i) Drone technology, (ii) Autonomous vehicle, (iii) Solar energy.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Drones are unmanned aircrafts. A drone is a flying robot that can be remotely controlled or fly autonomously using software-controlled flight plans that work in conjunction with onboard sensors and a global positioning system (GPS). To fly, drones must have a power source, such as battery or fuel. They also have rotors, propellers and a frame.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The frame of a drone is typically made of a lightweight, composite material to reduce weight and increase manoeuvrability.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "An autonomous vehicle is a vehicle capable of sensing its environment and operating without human involvement. A human passenger is not required to take control of the vehicle at any time, nor is a human passenger required to be present in the vehicle at all. An autonomous car can go anywhere a traditional car goes and do everything that an experienced human driver does.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Autonomous vehicles for Digital Warehousing .",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Solar energy is light, heat, and other forms of energy given off by the sun. Solar energy can be collected and used to heat buildings and to make electricity.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:",
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2024-ol-q1-l",
+  "topicId": "eng-3-8",
+  "conceptId": "define-term-brittleness-material-brittle-swarf",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q1(l)",
+  "questionText": "Define the term brittleness and name one material that is brittle.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Brittleness is a material’s tendency to easily break, crack or snap. • Glass is a brittle material. •",
+    "marks": 6
+   }
+  ],
+  "stem": "(m) Explain any one of the following:"
  },
  {
   "id": "eng-2024-ol-q2-d-i",
@@ -6559,6 +7920,270 @@
    }
   ],
   "questionFigureKey": "engineering-2025-HL-paper-q9biii-art"
+ },
+ {
+  "id": "eng-2025-ol-q1-a",
+  "topicId": "eng-2-11",
+  "conceptId": "safety-precautions-be-observed-when-using",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q1(a)",
+  "questionText": "State two safety precautions to be observed when using a bandsaw.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Wear personal protective equipment (PPE) such as safety goggles to  protect your eyes from flying debris.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Always maintain a safe distance between your hands and the blade. ",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:",
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2025-ol-q1-b",
+  "topicId": "eng-2-10",
+  "conceptId": "term-permanent-joint-example-permanent-joint",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q1(b)",
+  "questionText": "Explain the term permanent joint and give one example of a permanent joint in engineering.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A permanent joint is a joint that cannot be disassembled without destroying the parts or damaging the surfaces.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "An example of a permanent joint in engineering is a welded joint.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:",
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2025-ol-q1-c",
+  "topicId": "eng-2-16",
+  "conceptId": "reason-testing-electronic-circuits-before-assembly",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q1(c)",
+  "questionText": "State one reason for testing electronic circuits before assembly.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To ensure they operate as required and to identify any errors  in design or assembly.",
+    "marks": 6
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:"
+ },
+ {
+  "id": "eng-2025-ol-q1-d",
+  "topicId": "eng-2-10",
+  "conceptId": "reason-why-important-work-ventilated-area",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q1(d)",
+  "questionText": "Give one reason why it is important to work in a ventilated area when using adhesives.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Give one reason why it is important to work in a ventilated area when using adhesives.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Adhesives produce dangerous fumes, which can be harmful if inhaled,  ventilation provides a flow of fresh air which helps to dilute the dangerous fumes.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:",
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2025-ol-q1-e",
+  "topicId": "eng-2-13",
+  "conceptId": "advantages-using-3d-printer-manufacture-engineering",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q1(e)",
+  "questionText": "State two advantages of using a 3D printer for manufacture in engineering.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Less material waste is produced as 3D printing is an additive  manufacturing process.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "More complex products can be designed and produced. ",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:",
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2025-ol-q1-f",
+  "topicId": "eng-1-5",
+  "conceptId": "term-non-ferrous-non-ferrous-metal",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q1(f)",
+  "questionText": "Explain the term non‐ferrous and name one non‐ferrous metal.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Brass is an example of a non‐ferrous metal.",
+    "marks": 6
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:"
+ },
+ {
+  "id": "eng-2025-ol-q1-g",
+  "topicId": "eng-2-13",
+  "conceptId": "reason-producing-prototype-when-designing-new",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q1(g)",
+  "questionText": "Give one reason for producing a prototype when designing new products.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "To give engineers and designers the ability to explore new design  alternatives and to test if the product functions as required.",
+    "marks": 6
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:"
+ },
+ {
+  "id": "eng-2025-ol-q1-h",
+  "topicId": "eng-3-8",
+  "conceptId": "define-malleability-relation-properties-materials-material",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q1(h)",
+  "questionText": "Define malleability in relation to the properties of materials and name one material which is malleable.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Lead is a malleable metal.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Deburring removes sharp edges and  burrs that can pose a safety hazard to workers when handling parts. Metal parts often require deburring following manufacturing.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:",
+  "notes": "The scheme prints '6 marks'."
+ },
+ {
+  "id": "eng-2025-ol-q1-k",
+  "topicId": "eng-2-10",
+  "conceptId": "main-operating-features-any-following-hot",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q1(k)",
+  "questionText": "Describe the main operating features of any one of the following: (i) Hot wire strip heater, (ii) Soldering iron, (iii) Pop rivet gun.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A hot wire strip heater is used to form straight or small curvature bends in thermoplastic sheet material. An electric element or hot wire is enclosed in a channel which has an opening at the top. The thermoplastic sheet is placed across supports above the opening. By adjusting the height of the supports the width of strip to be heated can be altered. The supports are set to a low height for tight bends. If a more gradual bend is required, the heated area is widened by setting the supports higher. Different thicknesses of sheet may be formed by controlling the heating temperature.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A soldering iron is a hand tool used to join electronic components and other materials using solder. It supplies heat to the components and materials so that melted solder can flow into the joint between the two workpieces. A soldering iron has a heated metal tip and an insulated handle. Heating is achieved by passing an electric current through a heating element.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "A pop riveting gun is used to create a pop rivet joint in sheet metal. A pop rivet is placed into the gun and passed through pre‐drilled holes in the metals to be joined. As the handles of the gun are squeezed, a clamping mechanism grips the shaft of the rivet and draws it back into the gun. The enlarged end of the shaft causes the remaining part of the rivet to expand thereby clamping the sheets together. When the tensile force on the rivet gets too great the shaft breaks off leaving the pop rivet joint behind.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any eight of the following:",
+  "notes": "The scheme prints '6 marks'."
  },
  {
   "id": "eng-2025-ol-q3-a",
