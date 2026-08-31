@@ -400,7 +400,14 @@ class Author:
         # only under (a) and (b), so the parent's own text is empty and a card
         # citing the question was refused for having no question text at all.
         joined_kids = False
-        if roman is None and len(' '.join((question or '').split())) < 40:
+        # ... and so is a part that ENDS ON A COLON, however long it is.
+        # "Discuss the contribution that any one of the following has made to
+        # technology:" is 77 characters and names nobody; the three names are
+        # its children, and without them the card cannot be answered and files
+        # under no syllabus topic either, because every topic word it has is
+        # in the names.
+        _q = ' '.join((question or '').split())
+        if roman is None and (len(_q) < 40 or _q.endswith(':')):
             kids = [k for k in self.paper.parts
                     if k[0] == q
                     and (k[1] == letter if letter else k[1] is not None or k[2])

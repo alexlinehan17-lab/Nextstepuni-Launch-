@@ -85,7 +85,12 @@ NOT_A_POINT = re.compile(r'^(?:Page\s+\d+|\d+\s+of\s+\d+)\s*$'
                          r'|^[^.?!]{0,28}:\s*$', re.I)
 # The examiner talking to the examiner rather than stating an answer.
 CREDIT_RULE = re.compile(
-    r'^(?:award|allow|accept|max\b|total\b|note:|any other|or\b)', re.I)
+    r'^(?:award|allow|accept|max\b|total\b|note:|any other|or\b'
+    # A bare "Any three" is the examiner saying how many of the points
+    # below to credit, not one of them. It shipped as a card's whole
+    # twelve-mark answer.
+    r'|any\s+(?:one|two|three|four|five|six|seven|eight|nine|ten|\d+)\s*[:.]?$)',
+    re.I)
 
 
 def keeps_stem(stem, figure):

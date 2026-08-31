@@ -508,7 +508,12 @@ const decks = [
   // eng-2022-hl-q6, held "electrode" as a row of its own; rejoined into its
   // sentence it cannot be traced in the markdown, where the mark column is
   // welded into the answer, and the gate is right to refuse it.
-  ['engineering:higher', ENG_HIGHER, 124, '75cae35a152f2897e0e18b79dee0acb0aa9c01bf7270ea66cdea14cc65e8b55f'],
+  // 2026-08-31 (later): 124 -> 138. A part that ENDS ON A COLON is
+  // introducing its children, however long it is. lib.card joined a parent's
+  // children only when the parent's own text ran under 40 characters, and
+  // "Discuss the contribution that any one of the following has made to
+  // technology:" is 77 and names nobody. Nothing removed.
+  ['engineering:higher', ENG_HIGHER, 138, 'a59827ab3e806fa2d8ad2197782e1db5afea96ef366dd280816aebf3fb3aef9d'],
   // 2026-08-31: 10 -> 24, same reader work as Higher above. Four cards
   // REMOVED. eng-2021-ol-q7-c-ii asked for the electronic symbol of each
   // component named and answered "of round bars or internal diameters of
@@ -517,7 +522,8 @@ const decks = [
   // it belongs to, which the markdown cannot confirm: eng-2022-ol-q2-d-i,
   // eng-2023-ol-q7-c-i (which answered "State one use of a solenoid" with a
   // vernier caliper) and eng-2025-ol-q6-c-ii.
-  ['engineering:ordinary', ENG_ORDINARY, 24, 'a44b5b043a7b58aead26144d7b427d06a5d0f5750e704598e16a55e3f55ff318'],
+  // 2026-08-31 (later): 24 -> 30, the same colon rule. Nothing removed.
+  ['engineering:ordinary', ENG_ORDINARY, 30, '28d663927b59344a41a98c20b25c7fc97c371c16743d63bb8e7607690841c0c9'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -532,6 +538,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7935);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7955);
   });
 });

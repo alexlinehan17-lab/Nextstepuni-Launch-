@@ -32,6 +32,32 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2021-ol-q3-a", topicId: "eng-2-6", conceptId: "any-following-processes-quenching-case-hardening",
+    section: "A", questionRef: "2021 OL Q3(a)",
+    questionText: "Explain any two of the following processes: (i) Quenching, (ii) Case hardening, (iii) Annealing, (iv) Work hardening.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 14,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Quenching is when a hot metal is cooled very quickly i.e. when a cherry red metal is moved about when dipped into cold water.", marks: 14, accepts: ["Case hardening is a method of making low carbon steel very hard on the outside while leaving its centre tough. Low carbon steel may be case hardened by first increasing the amount of carbon in the outer surface by ‘carburising’. Carburising is carried out by heating the steel to a cherry red and allowing it to cool in a carbon rich material. The steel part will now have a skin or ‘case’ rich in carbon. The part is then heated to a cherry red and quenched, producing a hardened skin with a tough core.","Annealing is a heat treatment process used to soften metals. To anneal steel, it is heated to a cherry red colour, approx. 900⁰C and allowed to cool down as slow as possible. This can be achieved by leaving the metal in the furnace while the furnace is cooling down.","Work hardening is when a metal becomes hard and brittle because of been hammered or shaped when cold. Some metals are more prone to work hardening, than others. Copper and aluminum are typical examples and need to be continually annealed if subjected to a lot of cold shaping or forming."] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2021-ol-q3-b", topicId: "eng-2-6", conceptId: "how-carry-out-each-following-heat",
+    section: "A", questionRef: "2021 OL Q3(b)",
+    questionText: "Describe how to carry out each of the following heat treatment processes: (i) To harden the point of a centre punch. (ii) To temper the cutting edge of a cold chisel.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 16,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Point A of the centre punch is hardened by heating the point to approx.", marks: 16, accepts: ["800⁰C, i.e. a cherry red color, or until the point loses its magnetic properties.","The point is then immediately quenched in water or oil.","Following the hardening process, the cutting edge is reheated to a suitable temperature, which is below the reddening temperature and then cooled in oil or water. The correct temperature is often displayed by a colour i.e. blue / purple is a suitable indicator for the cutting edge of a chisel."] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
     id: "eng-2021-ol-q3-c", topicId: "eng-2-6", conceptId: "safety-precautions-be-observed-during-heat",
     section: "A", questionRef: "2021 OL Q3(c)",
     stem: "point cutting edge",
@@ -67,6 +93,27 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "The surfaces to be joined must be perfectly clean and coated with flux.", marks: 6, accepts: ["A good flow of heat to the joint is essential. Before applying the solder, the joint must be brought to the temperature at which the solder melts."] },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2021-ol-q4-b", topicId: "eng-2-10", conceptId: "why-flux-required-electrode-during-manual",
+    section: "A", questionRef: "2021 OL Q4(b)",
+    questionText: "Answer any three of the following in relation to manual metal arc welding: (i) Why is a flux required on the electrode during manual metal arc welding? (ii) What is the function of the welding earth clamp shown? (iii) Describe one function of slag. (iv) State two safety precautions to be observed when manual metal arc welding.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 12,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Flux protects the weld area and prevents oxidisation during welding.", marks: 12, accepts: ["The earth clamp forms the circuit when welding. It clamps onto the material being welded and when the electrode creates the arc the clamp closes the circuit.","When manual arc welding, slag forms on top of the weld helping to pull impurities out of the weld. The slag also forms a shield from the atmosphere reducing oxidisation of the weld. The shield also slows down the cooling rate of the weld when solidifying.","Always wear correct PPE such as a face welding mask."] },
+    ],
+    questionFigure: {
+          "candId": "engineering-2021-OL-paper-q4bii-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2021-OL-paper-q4bii-art.png",
+          "srcHash": "7dfcc4ecadb58fc60dd4d4c40a6b6adb",
+          "alt": "The table or diagram printed with 2021 OL Q4(b)(ii), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2021 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -289,6 +336,32 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2025-ol-q3-a", topicId: "eng-2-6", conceptId: "reason-why-each-following-heat-treatment",
+    section: "A", questionRef: "2025 OL Q3(a)",
+    questionText: "Explain the reason why each of the following heat treatment processes are carried out: (i) Normalising, (ii) Hardening.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 14,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Normalising is carried out to refine the structure of steel and to remove internal stresses caused by cold working such as hammering, rolling or bending. It is similar to the annealing of steel, except the cooling rate is much faster.", marks: 14, accepts: ["When high carbon steel is heated to a cherry red it undergoes structural changes, and rapid cooling does not allow it to revert to its normal soft condition. The high carbon steel becomes hard resisting indentation, scratching and wear. The point of a centre punch is hardened to ensure it retains its point during use."] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2025-ol-q4-b", topicId: "eng-2-10", conceptId: "function-any-following-items-used-manual",
+    section: "A", questionRef: "2025 OL Q4(b)",
+    questionText: "Explain the function of any three of the following items used in manual metal arc welding: (i) Welding curtain, (ii) Chipping hammer, (iii) Electrode holder, (iv) Welding shield.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "The welding curtain is a flame‐retardant shield used to deflect welding and grinding sparks. They also absorb harmful UV light to protect bystanders within the vicinity of the welder.", marks: 15, accepts: ["The chipping hammer is used to remove the slag which forms on top of the welded joint after arc welding.","An electrode holder is a device that holds the electrode / welding rod during the welding process. The handle is insulated which protects the user from current flowing to the electrode.","The welding mask protects your eyes and face from severe sparks, ultraviolet and infrared rays emitted by the arc when welding."] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
     id: "eng-2025-ol-q4-c", topicId: "eng-1-5", conceptId: "suggest-method-joining-sheet-aluminium",
     section: "A", questionRef: "2025 OL Q4(c)",
     questionText: "Answer any three of the following: (i) Outline one benefit of using the R‐clip shown. (ii) Suggest one method of joining sheet aluminium. (iii) Give two reasons why flux is required when soldering. (iv) Name tool A shown opposite and give one use for this tool.",
@@ -325,6 +398,19 @@ export const CARDS: SecCard[] = [
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Engineering 2025 Ordinary Level — © State Examinations Commission"
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2025-ol-q6-b", topicId: "eng-2-11", conceptId: "any-following-relation-machining-cutting-fluid",
+    section: "A", questionRef: "2025 OL Q6(b)",
+    questionText: "Explain any three of the following in relation to machining: (i) Cutting fluid, (ii) Clearance angle, (iii) Depth of cut, (iv) Swarf.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Cutting fluids are used when machining metals to improve tool life, reduce the buildup of heat, improve surface finish and flush away chips from the cutting zone.", marks: 15, accepts: ["Without a clearance angle, no cutting would take place. The clearance angle ensures that only the cutting edge of a tool contacts a piece. It provides clearance between the cutting tool face and the workpiece","Depth of cut This is the distance the cutting tool is moved into the workpiece when cutting"] },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
