@@ -388,6 +388,7 @@ class EngScheme:
         summary = {n for n, _, _ in self._summary_pages()}
         with pymupdf.open(self.path) as doc:
             q = letter = roman = None
+            or_branch = False
             for n in range(doc.page_count):
                 if n in summary:
                     continue
@@ -417,6 +418,13 @@ class EngScheme:
                            and a[1] - 2 <= y0 and y1 <= a[3] + 2 for a in art):
                         continue          # a callout printed on a diagram
                     body_text = text
+                    # The scheme sets an ALTERNATIVE the way the paper does: a
+                    # standalone OR, then the same markers again. 2021 HL Q8
+                    # answers (c)(i) and (c)(ii) on surface grinding, then OR,
+                    # then (c)(i) and (c)(ii) on subtractive manufacturing.
+                    if OR_ROW.match(body_text):
+                        or_branch = True
+                        continue
                     m = MARKER.match(body_text)
                     r = None
                     if m:
@@ -429,9 +437,34 @@ class EngScheme:
                         roman = r.group(1)
                         body_text = body_text[r.end():].strip()
                     if m or r:
-                        out.setdefault((q, letter, roman),
-                                       {'lead': body_text, 'points': [],
-                                        'marks': None})
+                        key = (q, letter, roman)
+                        # Both branches land on one key, and joined with
+                        # nothing between them the sentence assembly ran the
+                        # tail of one into the middle of the next: "Both types
+                        # can be turned on and off. process, this expands the
+                        # tool carrying capacity of the machine." The paper's
+                        # own word goes between them, and closes the point.
+                        # A marker that re-opens a key which ALREADY HOLDS
+                        # ANSWERS is itself the boundary, whether or not the
+                        # scheme printed the OR: 2021 HL Q8 answers (c)(i) and
+                        # (c)(ii) on surface grinding and then, with no OR at
+                        # all, (c)(i) and (c)(ii) on subtractive manufacturing.
+                        # Nothing else re-opens an answered key.
+                        if out.get(key, {}).get('points'):
+                            out[key]['points'].append('OR')
+                            # The heading of the FIRST branch is the scheme
+                            # restating the ask and is not a marking point.
+                            # The second branch's is its answer opening --
+                            # "Subtractive manufacturing is a term for various
+                            # controlled machining and material removal" --
+                            # and setdefault below keeps the first, so without
+                            # this the branch begins mid-sentence: fourteen
+                            # rows opened on a lowercase word.
+                            if body_text:
+                                out[key]['points'].append(body_text)
+                        or_branch = False
+                        out.setdefault(key, {'lead': body_text, 'points': [],
+                                             'marks': None})
                         continue
                     key = (q, letter, roman)
                     if key not in out:
@@ -520,6 +553,11 @@ class EngScheme:
             # them. A line that ends on a full stop ends its point.
             out, cur = [], []
             for n, line in enumerate(lines):
+                if line.strip() in ('OR', 'Or'):
+                    if cur:
+                        out.append(' '.join(cur).strip())
+                        cur = []
+                    continue
                 cur.append(line)
                 # A full stop ends a point only when what follows STARTS one.
                 # "It occurs at approx." ends a line on a period and the

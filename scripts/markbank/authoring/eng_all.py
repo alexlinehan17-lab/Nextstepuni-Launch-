@@ -446,6 +446,19 @@ def main():
                 # way -- "Identify the hybrid vehicle configuration shown
                 # opposite", with nothing opposite.
                 made = A.cards[-1] if A.cards else None
+                # A card that NAMES lettered parts needs those letters
+                # DECODED as well as shown, and this author cannot supply a
+                # label key. Having a figure is not enough: the deck build
+                # drops such a card, and a card the author writes and the
+                # build throws away leaves the authored file and the deck
+                # disagreeing about what the subject holds.
+                if made is not None:
+                    final = f'{made.get("stem") or ""} {made.get("questionText") or ""}'
+                    if cardlint.NAMES_LETTERS.search(final) \
+                            and not made.get('labelKey'):
+                        A.cards.pop()
+                        note('names a lettered part this author cannot decode')
+                        continue
                 if made is not None and not (made.get('figureKey')
                                             or made.get('questionFigureKey')):
                     stem_t = made.get('stem') or ''

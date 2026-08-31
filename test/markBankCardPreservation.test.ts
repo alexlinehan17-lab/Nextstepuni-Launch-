@@ -527,7 +527,13 @@ const decks = [
   // the tool carrying capacity" is the tail of one branch and the middle of
   // the next — and the gate is right that no such sentence exists:
   // eng-2021-hl-q8-c-ii, eng-2021-hl-q9-c-ii, eng-2025-hl-q8-c-ii.
-  ['engineering:higher', ENG_HIGHER, 141, '946af87d84d53a997ccbe6d8b9523cdc9f5f8366968e75ce1057887e105ec35b'],
+  // 2026-08-31 (fourth pass): 141 -> 149. The SCHEME sets alternatives the
+  // way the paper does, and a marker that re-opens a key which already holds
+  // answers is the boundary whether or not an OR is printed: 2021 HL Q8
+  // answers (c)(i) and (c)(ii) on surface grinding and then, with no OR at
+  // all, (c)(i) and (c)(ii) on subtractive manufacturing. Joined, the tail of
+  // one branch ran into the middle of the next. Nothing removed.
+  ['engineering:higher', ENG_HIGHER, 149, '63789f2faf56ee34cc0c2387bd5eebed64bcd3418341e4f1389474ce4e9384e0'],
   // 2026-08-31: 10 -> 24, same reader work as Higher above. Four cards
   // REMOVED. eng-2021-ol-q7-c-ii asked for the electronic symbol of each
   // component named and answered "of round bars or internal diameters of
@@ -538,7 +544,12 @@ const decks = [
   // vernier caliper) and eng-2025-ol-q6-c-ii.
   // 2026-08-31 (later): 24 -> 30, the same colon rule. Nothing removed.
   // 2026-08-31 (later still): 30 -> 33, the same callout rule. Nothing removed.
-  ['engineering:ordinary', ENG_ORDINARY, 33, 'e50c7fdb085af38b9b41df93ad6133e6ea94d706d3fe42e6793712a6fa89af8f'],
+  // 2026-08-31 (fourth pass): 33 cards, same set size, one swapped. REMOVED
+  // eng-2023-ol-q6, which asked "Name any three of the lathe parts shown at
+  // A, B, C and D" with no labelled figure to show them on. The deck build
+  // was already dropping it; the author now refuses it, so the authored file
+  // and the deck agree about what the subject holds.
+  ['engineering:ordinary', ENG_ORDINARY, 33, 'f436c2b2a3f32ac8ff564d68bde1bb871da79de0fa6a59491584e5661a1ea1c0'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -553,6 +564,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7961);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7969);
   });
 });

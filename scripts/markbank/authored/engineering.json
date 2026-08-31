@@ -1006,6 +1006,96 @@
   "notes": "The scheme prints 'Any three@ 6 + 6 + 6'."
  },
  {
+  "id": "eng-2021-hl-q8-c-i",
+  "topicId": "eng-2-11",
+  "conceptId": "aid-diagram-s-precision-surface-grinding",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q8(c)(i)",
+  "questionText": "Explain, with the aid of a diagram(s), the precision surface grinding process. Explain the term subtractive manufacturing in relation to CNC milling.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A metal cutting process in which flat and extremely smooth surfaces are produced.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The grinding wheel rotates and the workpiece, usually held in a magnetic chuck, is fed to and from continuously. At the end of each stroke, the table is moved across the wheel by a small amount. The grinding wheel can be lowered to take a new cut.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Subtractive manufacturing is a term for various controlled machining and material removal processes that start with solid blocks, bars, rods of plastic, metal, or other materials that are shaped by removing material through cutting, boring, drilling, and grinding. In CNC milling, these processes are controlled by programmes devised to produce complex shapes.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '10'."
+ },
+ {
+  "id": "eng-2021-hl-q8-c-ii",
+  "topicId": "eng-1-4",
+  "conceptId": "method-securely-holding-ferrous-metals-during",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q8(c)(ii)",
+  "questionText": "Outline one method of securely holding ferrous metals during the surface grinding process. OR Describe each of the following CNC terms: • Automatic tool change • Tool offsets.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Used for holding ferromagnetic workpieces, a magnetic chuck consists of an accurately centred permanent magnet face.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Electromagnets or permanent magnets are brought into contact with fixed ferrous plates, or pole pieces, contained within a housing. These pole pieces are usually flush with the housing surface. The part (workpiece) to be held forms the closing of the magnetic loop or path, onto those fixed plates, providing a secure anchor for the workpiece.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "There are two basic types of magnetic chucks now available (electromagnetic and permanent), but they come in a variety of sizes, shapes and modifications to suit many different applications. Electromagnetic chucks are charged by an electrical current while permanent-type magnetic chucks are based on permanent magnets.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Both types can be turned on and off.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Automatic tool change (ATC) selects and changes machine tools as part of the machining process, this expands the tool carrying capacity of the machine. ATC changes the tool very quickly, reducing the non-productive time.",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "Tool offsets are the set of values that move the centre point of the cutter to the correct position for cutting a work piece using a specific tool. This accounts for variation in tool geometry (diameter, length, etc.) and ensures precise cutting.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '6'."
+ },
+ {
   "id": "eng-2021-hl-q9-a-i",
   "topicId": "eng-2-15",
   "conceptId": "aid-diagram-s-operation-leadscrew-mechanism",
@@ -1034,6 +1124,80 @@
    }
   ],
   "stem": "leadscrew",
+  "notes": "The scheme prints '8'."
+ },
+ {
+  "id": "eng-2021-hl-q9-c-i",
+  "topicId": "eng-2-15",
+  "conceptId": "aid-diagram-s-suitable-lifting-mechanism",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q9(c)(i)",
+  "questionText": "Describe, with the aid of a diagram(s), a suitable lifting mechanism for the forklift. Describe, with the aid of a diagram(s), how turbines convert wind energy into electrical energy.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The use of a rack and pinion mechanism would provide a drive mechanism for the platform to be raised and lowered.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "A worm-wheel could also be used with the gear pinion to prevent the mechanism slipping, the motor would have to drive all movement.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Wind turbines convert the energy in wind to electricity by rotating propeller-like blades around a rotor. The rotor turns the drive shaft, which turns an electric generator.",
+    "marks": null
+   }
+  ],
+  "stem": "Leaving Certificate – Higher Level Engineering – Materials and Technology Thursday 10 June Morning 9:30 – 12:30",
+  "notes": "The scheme prints '8'."
+ },
+ {
+  "id": "eng-2021-hl-q9-c-ii",
+  "topicId": "eng-3-14",
+  "conceptId": "how-design-multi-directional-forklift-helps",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q9(c)(ii)",
+  "questionText": "Describe how the design of the multi-directional forklift helps to improve workplace safety. OR Outline one advantage and one disadvantage of offshore wind energy generation.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The forklift shown can lift long loads safely. Loads can be manoeuvred with minimal need to change direction. The design of the forklift gives a wide range of user visibility.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Advantages of offshore wind energy: provides renewable energy; does not consume water; provides a domestic energy source; creates jobs; and does not emit environmental pollutants or greenhouse gases.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Disadvantages of offshore wind energy: can be expensive to build and maintain; hard to reach locations; susceptible to damage from very high-speed winds during storms, which is expensive to repair.",
+    "marks": null
+   }
+  ],
+  "stem": "Leaving Certificate – Higher Level Engineering – Materials and Technology Thursday 10 June Morning 9:30 – 12:30",
   "notes": "The scheme prints '8'."
  },
  {
@@ -3257,6 +3421,55 @@
   "notes": "The scheme prints 'Any three @ 6 + 6 + 6'."
  },
  {
+  "id": "eng-2023-hl-q6-c-i",
+  "topicId": "eng-2-10",
+  "conceptId": "aid-diagram-process-resistance-seam-welding",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q6(c)(i)",
+  "questionText": "Describe, with the aid of a diagram, the process of resistance seam welding. Explain the basic difference between Visual SLAM and Laser SLAM for robot navigation.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "A form of resistance welding that uses copper roller electrodes to provide a continuous run of overlapping welds as the current is activated at set intervals. One of the electrodes may be driven by an electric motor.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The workpiece is moved between the rollers and pulses of current are supplied. Each pulse is set to last long enough to produce a weld.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Used when continuous weld is required e.g. fuel tanks, drums, domestic radiators.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Visual SLAM relies on cameras and visual information for simultaneous localisation and mapping, it relies on visual features and can struggle in low-light or featureless environments.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "Laser SLAM utilises laser range finders or LiDAR sensors which give precise distance measurements, it is robust and precise in a variety of environmental conditions.",
+    "marks": null
+   }
+  ],
+  "stem": "motorbike fuel tank Bellabot smart delivery robot",
+  "notes": "The scheme prints '8'."
+ },
+ {
   "id": "eng-2023-hl-q6-c-ii",
   "topicId": "eng-2-10",
   "conceptId": "suggest-advantages-using-seam-welding-join",
@@ -3574,6 +3787,43 @@
   ]
  },
  {
+  "id": "eng-2023-hl-q8-c-i",
+  "topicId": "eng-2-15",
+  "conceptId": "aid-diagram-s-precision-cylindrical-grinding",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q8(c)(i)",
+  "questionText": "Explain, with the aid of a diagram(s), the precision cylindrical grinding process. Explain the difference between CAD and CAM in CNC laser cutting.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Cylindrical grinding: This is used to produce cylindrical objects. The workpiece is held in a chuck, or between centres, and set to rotate. Then a grinding wheel, when brought into contact with the workpiece, will produce a smooth accurate cylinder. Long workpieces can be ground as the table can reciprocate and the wheel head can move towards the workpiece. Tapered work can also be carried out. Clamped workpiece Wheel",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "CAD – computer aided drawing/ computer aided drafting uses programmes to design, edit and draw products on a computer.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "CAM – computer aided manufacture will take CAD drawings and produce machined components using computer driven machines such as laser cutters.",
+    "marks": null
+   }
+  ],
+  "stem": "hydraulic ram piston",
+  "notes": "The scheme prints '8'."
+ },
+ {
   "id": "eng-2023-hl-q8-c-ii",
   "topicId": "eng-2-13",
   "conceptId": "benefits-any-precision-grinding-process-or",
@@ -3652,17 +3902,23 @@
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": "LED lights use less electricity than traditional bulbs.",
+    "verbatim": "Reduced electricity from the national grid is required.",
     "marks": null
    },
    {
     "id": "r-4",
     "kind": "point",
-    "verbatim": "LED lights do not require as much maintenance or replacement.",
+    "verbatim": "LED lights use less electricity than traditional bulbs.",
     "marks": null
    },
    {
     "id": "r-5",
+    "kind": "point",
+    "verbatim": "LED lights do not require as much maintenance or replacement.",
+    "marks": null
+   },
+   {
+    "id": "r-6",
     "kind": "point",
     "verbatim": "It allows new attractive designs to be introduced.",
     "marks": null
@@ -3744,13 +4000,19 @@
    {
     "id": "r-10",
     "kind": "point",
-    "verbatim": "An alloy is created by mixing metal with either another metal or a nonmetal substance. Metal alloys are generally made by melting the substances, mixing them together, and then letting them cool to room temperature, resulting in a solid material.",
+    "verbatim": "Reason: Can be easily moulded into the shape needed.",
     "marks": null
    },
    {
     "id": "r-11",
     "kind": "point",
-    "verbatim": "Alloy: Bronze Metals: Copper and tin",
+    "verbatim": "Reason: Light but strong",
+    "marks": null
+   },
+   {
+    "id": "r-12",
+    "kind": "point",
+    "verbatim": "An alloy is created by mixing metal with either another metal or a nonmetal substance. Metal alloys are generally made by melting the substances, mixing them together, and then letting them cool to room temperature, resulting in a solid material.",
     "marks": null
    }
   ]
@@ -4003,97 +4265,6 @@
    }
   ],
   "notes": "The scheme prints 'Two precautions @ 4 marks (8) (c) Any three parts @ 6 marks (18)'."
- },
- {
-  "id": "eng-2023-ol-q6",
-  "topicId": "eng-2-11",
-  "conceptId": "any-lathe-parts-shown-b-c",
-  "level": "ordinary",
-  "year": 2023,
-  "subjectId": "engineering",
-  "section": "A",
-  "questionRef": "2023 OL Q6",
-  "questionText": "(a) Name any three of the lathe parts shown at A, B, C and D. (i) Clearance angle, (ii) Spindle speed, (iii) Rake angle, (iv) Feed. (b) Explain any three of the following in relation to machining: (i) Name two lathe processes used in the manufacture of the thumbscrew. What does CNC stand for? (ii) Describe one of the processes named by you, at 6(c)(i) above. Identify one other CNC process. (iii) Name two items of personal protective equipment (PPE) that should be worn when operating a lathe. OR List two advantages of using CNC machines in manufacturing. (c) The thumbscrew shown opposite was manufactured on a lathe. 3D printing is now a popular CNC process.",
-  "tariffModel": {
-   "kind": "orderedSplit",
-   "notation": "Question 6: 50 marks"
-  },
-  "totalMarks": 50,
-  "rows": [
-   {
-    "id": "r-1",
-    "kind": "point",
-    "verbatim": "A – Four jaw chuck B – Tailstock C – Emergency stop button D – Revolving dead centre",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Without a clearance angle, no cutting would take place. The clearance angle ensures that only the cutting edge of a tool contacts the material. It provides clearance between the cutting tool face and the workpiece. This ensures a reduction in friction and heat build-up, while providing longer tool life and better surface finish.",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "This is the speed at which the chuck rotates in RPM. This speed can be adjusted by selecting different gear train settings within the gear box.",
-    "marks": null
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "The rake angle is ground on a cutting tool to provide a sharp edge for cutting. The rake angle allows the swarf to pass over the cutting tool and away from the cutting area.",
-    "marks": null
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "Feed",
-    "marks": null
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "Feed is the amount per revolution at which the cutting tool moves into the material being machined.",
-    "marks": null
-   },
-   {
-    "id": "r-7",
-    "kind": "point",
-    "verbatim": "A knurling tool is set on centre and at 90° against a piece of round section bar. The lathe is set so that the chuck revolves at a low speed. The knurling tool is then pressed against the rotating steel bar and pressure is slowly increased until the tool produces a pattern on the bar.",
-    "marks": null
-   },
-   {
-    "id": "r-8",
-    "kind": "point",
-    "verbatim": "Parting off Secure the parting off tool in the tool post, square to the workpiece. Check that the tool tip is in line with the centre of the workpiece. Align the tool tip outside of the line where you require to cut. Select a suitable cutting speed and direction and turn on the lathe. Engage the tool tip into the turning workpiece and cut in a continuous motion.",
-    "marks": null
-   },
-   {
-    "id": "r-9",
-    "kind": "point",
-    "verbatim": "Safety glasses or shield.",
-    "marks": null
-   },
-   {
-    "id": "r-10",
-    "kind": "point",
-    "verbatim": "A lab coat / overall to ensure no lose clothing can get caught in the spinning chuck. OR",
-    "marks": null
-   },
-   {
-    "id": "r-11",
-    "kind": "point",
-    "verbatim": "CNC machines can manufacture complicated products.",
-    "marks": null
-   },
-   {
-    "id": "r-12",
-    "kind": "point",
-    "verbatim": "CNC machines support the automation of mass production.",
-    "marks": null
-   }
-  ],
-  "questionFigureKey": "engineering-2023-OL-paper-q6a-art"
  },
  {
   "id": "eng-2024-hl-q1-e",
@@ -4724,6 +4895,79 @@
   ],
   "notes": "The scheme prints 'One part @ 4 marks'.",
   "questionFigureKey": "engineering-2024-OL-paper-q2dii-art"
+ },
+ {
+  "id": "eng-2024-ol-q6",
+  "topicId": "eng-2-11",
+  "conceptId": "engineering-component-shown-be-manufactured-centre",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q6",
+  "questionText": "(a) The engineering component shown is to be manufactured on a centre lathe. Identify three lathe processes used to manufacture the engineering component. (i) Rake angle, engineering component (ii) Chuck key, (iii) Depth of cut, (iv) Pilot hole. (b) Explain any three of the following in relation to machining: (i) Name the centre lathe part shown. OR Explain the term CNC. (ii) Identify one use for this centre lathe part. OR List two advantages of using a CNC laser cutter in engineering manufacture. (iii) State two safety precautions to be observed when using a centre lathe. OR Identify one safety precaution to be observed when using a CNC laser cutter. (c) A part for a centre lathe is shown opposite. OR CNC Laser cutting is frequently used in schools and industry as part of the manufacturing process.",
+  "tariffModel": {
+   "kind": "orderedSplit",
+   "notation": "Question 6: 50 marks"
+  },
+  "totalMarks": 50,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Parallel turning / Facing / Knurling / Drilling / Undercutting / Parting off / Taper turning.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "The rake angle facilitates the removal of the chip when the cutting tool is in contact with the workpiece.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "A chuck key is used to open and close drill chucks found on a range of machines such as pillar drills, hand drills or lathe tailstocks.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "This is the distance the cutting tool is moved into the workpiece when cutting.",
+    "marks": null
+   },
+   {
+    "id": "r-5",
+    "kind": "point",
+    "verbatim": "A pilot hole must be drilled before using a large drill.",
+    "marks": null
+   },
+   {
+    "id": "r-6",
+    "kind": "point",
+    "verbatim": "This keeps the large drill central as it guides the drill through the piece when drilling.",
+    "marks": null
+   },
+   {
+    "id": "r-7",
+    "kind": "point",
+    "verbatim": "Mass production of complex parts. • High level of precision accuracy. •",
+    "marks": null
+   },
+   {
+    "id": "r-8",
+    "kind": "point",
+    "verbatim": "Wear safety goggles. • Do not remove swarf using hands. •",
+    "marks": null
+   },
+   {
+    "id": "r-9",
+    "kind": "point",
+    "verbatim": "Do not leave a CNC laser machine operating unattended. •",
+    "marks": null
+   }
+  ],
+  "questionFigureKey": "engineering-2024-OL-paper-q6a-art"
  },
  {
   "id": "eng-2025-hl-q1-a",
@@ -6049,6 +6293,92 @@
   ]
  },
  {
+  "id": "eng-2025-hl-q8-c-i",
+  "topicId": "eng-2-11",
+  "conceptId": "identify-metal-cutting-chips-shown-b",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 HL Q8(c)(i)",
+  "questionText": "Identify the metal cutting chips shown at A and B and distinguish clearly between them with reference to material properties. Describe each of the following in relation to robotic CNC milling technology: • Stepper motors • Feedback sensors.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Continuous chips are formed during metal machining in long ribbons without breakage. This chip formation is characterised by high cuƫng speeds and minimum friction between tool face and metal on ductile materials such as mild steel and aluminium.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "Discontinuous chips are small segments produced by metal cuƫng processes. These chips usually fracture without deformation and are associated with brittle materials such as brass, bronze and cast iron. Discontinuous chips produce effective cuƫng conditions for brittle materials but may have a tearing action on ductile materials resulting on poor surface finish and excessive wear on tools.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Stepper motors, as used in control of robotic CNC milling technology, provide incremental movement and allow for precision control of movement. They have good reliability of operation and good power output to give torque required for operation. Stepper motors are driven by control circuits.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Feedback sensors are used in robotic CNC milling machines to continuously monitor and measure the output value of the system and compare the output value with the desired value. If the value of the output and input are not equal, then an adjustment is made.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '8'.",
+  "questionFigureKey": "engineering-2025-HL-paper-q8ci-art"
+ },
+ {
+  "id": "eng-2025-hl-q8-c-ii",
+  "topicId": "eng-2-11",
+  "conceptId": "identify-chip-formation-shown-c-how",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 HL Q8(c)(ii)",
+  "questionText": "Identify the chip formation shown at C and outline how this chip formation impacts on both safety and surface finish. OR Explain the term subtractive manufacturing in relation to CNC milling.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Built-up edge (BUE) is common in machining, particularly in lathe work, where material being cut adheres to the cuƫng tool, forming a small deposit or \"edge\" on the tool's tip. This occurs when the pressure and temperature at the cuƫng zone cause workpiece material to weld to the cuƫng tool.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
+    "verbatim": "BUE impacts safety as it increases the risk of tool failure and machine stress, potentially leading to accidents if the tool breaks or the workpiece is ejected.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "BUE can negatively affect the surface finish of the workpiece, it can leave behind rough or irregular surfaces, resulting in a poor finish with increased roughness. BUE can lead to inaccuracies in the dimensions of the machined part.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Subtractive manufacturing is a term for various controlled machining and material removal processes that start with solid blocks, bars, rods of plastic, metal or other materials that are shaped by removing material through cuƫng, boring, drilling and grinding. In CNC milling, these processes are controlled by programmes devised to produce complex shapes.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '8'.",
+  "questionFigureKey": "engineering-2025-HL-paper-q8ci-art"
+ },
+ {
   "id": "eng-2025-hl-q9",
   "topicId": "eng-2-15",
   "conceptId": "identify-mechanism-shown-opposite-suitable-use",
@@ -6329,12 +6659,9 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "alt",
+    "kind": "anyN",
     "verbatim": "Wear goggles.",
-    "marks": 8,
-    "accepts": [
-     "Protective clothing i.e. gloves OR"
-    ]
+    "marks": 8
    }
   ],
   "stem": "stunt bike pegs",
@@ -6362,7 +6689,7 @@
     "marks": 6,
     "accepts": [
      "Measurements can be read directly from a digital display.",
-     "Ensures the correct assembly of components as all component  positions are identified on the PCB.",
+     "PCB Ensures the correct assembly of components as all component  positions are identified on the PCB.",
      "Quicker to assemble and ensures better circuit operation when  complete."
     ]
    }
@@ -6391,7 +6718,7 @@
     "verbatim": "Used to check the diameter of twist drills.",
     "marks": 6,
     "accepts": [
-     "Smart phones  Computers "
+     "Use Smart phones  Computers "
     ]
    }
   ],
@@ -6419,7 +6746,7 @@
     "verbatim": "Micrometers are specially designed for the measurement of very small objects. They allow for the highly precise measurement of any item that fits between the anvil and spindle.",
     "marks": 6,
     "accepts": [
-     "A microchip is an integrated circuit (IC) containing a set of micro‐ electronic circuits made up of transistors, resistors and capacitors and their interconnectors etched onto small pieces of semiconductor material."
+     "Microchip A microchip is an integrated circuit (IC) containing a set of micro‐ electronic circuits made up of transistors, resistors and capacitors and their interconnectors etched onto small pieces of semiconductor material."
     ]
    }
   ],

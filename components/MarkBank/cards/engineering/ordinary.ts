@@ -231,8 +231,9 @@ export const CARDS: SecCard[] = [
     { id: "r-7", kind: "point", verbatim: "Basic oxygen furnace", marks: null },
     { id: "r-8", kind: "point", verbatim: "Electric arc furnace", marks: null },
     { id: "r-9", kind: "point", verbatim: "Reason: Increases the grip for the driver when holding the steering wheel.", marks: null },
-    { id: "r-10", kind: "point", verbatim: "An alloy is created by mixing metal with either another metal or a nonmetal substance. Metal alloys are generally made by melting the substances, mixing them together, and then letting them cool to room temperature, resulting in a solid material.", marks: null },
-    { id: "r-11", kind: "point", verbatim: "Alloy: Bronze Metals: Copper and tin", marks: null },
+    { id: "r-10", kind: "point", verbatim: "Reason: Can be easily moulded into the shape needed.", marks: null },
+    { id: "r-11", kind: "point", verbatim: "Reason: Light but strong", marks: null },
+    { id: "r-12", kind: "point", verbatim: "An alloy is created by mixing metal with either another metal or a nonmetal substance. Metal alloys are generally made by melting the substances, mixing them together, and then letting them cool to room temperature, resulting in a solid material.", marks: null },
     ],
   } as SecCard,
   {
@@ -349,38 +350,6 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
-    year: 2023, level: "ordinary",
-    paperFileid: "LC027GLP000EV",
-    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
-    id: "eng-2023-ol-q6", topicId: "eng-2-11", conceptId: "any-lathe-parts-shown-b-c",
-    section: "A", questionRef: "2023 OL Q6",
-    questionText: "(a) Name any three of the lathe parts shown at A, B, C and D. (i) Clearance angle, (ii) Spindle speed, (iii) Rake angle, (iv) Feed. (b) Explain any three of the following in relation to machining: (i) Name two lathe processes used in the manufacture of the thumbscrew. What does CNC stand for? (ii) Describe one of the processes named by you, at 6(c)(i) above. Identify one other CNC process. (iii) Name two items of personal protective equipment (PPE) that should be worn when operating a lathe. OR List two advantages of using CNC machines in manufacturing. (c) The thumbscrew shown opposite was manufactured on a lathe. 3D printing is now a popular CNC process.",
-    tariffModel: {"kind":"orderedSplit","notation":"Question 6: 50 marks"}, totalMarks: 50,
-    rows: [
-    { id: "r-1", kind: "point", verbatim: "A – Four jaw chuck B – Tailstock C – Emergency stop button D – Revolving dead centre", marks: null },
-    { id: "r-2", kind: "point", verbatim: "Without a clearance angle, no cutting would take place. The clearance angle ensures that only the cutting edge of a tool contacts the material. It provides clearance between the cutting tool face and the workpiece. This ensures a reduction in friction and heat build-up, while providing longer tool life and better surface finish.", marks: null },
-    { id: "r-3", kind: "point", verbatim: "This is the speed at which the chuck rotates in RPM. This speed can be adjusted by selecting different gear train settings within the gear box.", marks: null },
-    { id: "r-4", kind: "point", verbatim: "The rake angle is ground on a cutting tool to provide a sharp edge for cutting. The rake angle allows the swarf to pass over the cutting tool and away from the cutting area.", marks: null },
-    { id: "r-5", kind: "point", verbatim: "Feed", marks: null },
-    { id: "r-6", kind: "point", verbatim: "Feed is the amount per revolution at which the cutting tool moves into the material being machined.", marks: null },
-    { id: "r-7", kind: "point", verbatim: "A knurling tool is set on centre and at 90° against a piece of round section bar. The lathe is set so that the chuck revolves at a low speed. The knurling tool is then pressed against the rotating steel bar and pressure is slowly increased until the tool produces a pattern on the bar.", marks: null },
-    { id: "r-8", kind: "point", verbatim: "Parting off Secure the parting off tool in the tool post, square to the workpiece. Check that the tool tip is in line with the centre of the workpiece. Align the tool tip outside of the line where you require to cut. Select a suitable cutting speed and direction and turn on the lathe. Engage the tool tip into the turning workpiece and cut in a continuous motion.", marks: null },
-    { id: "r-9", kind: "point", verbatim: "Safety glasses or shield.", marks: null },
-    { id: "r-10", kind: "point", verbatim: "A lab coat / overall to ensure no lose clothing can get caught in the spinning chuck. OR", marks: null },
-    { id: "r-11", kind: "point", verbatim: "CNC machines can manufacture complicated products.", marks: null },
-    { id: "r-12", kind: "point", verbatim: "CNC machines support the automation of mass production.", marks: null },
-    ],
-    questionFigure: {
-          "candId": "engineering-2023-OL-paper-q6a-art",
-          "src": "/exam-figures/engineering/markbank/engineering-2023-OL-paper-q6a-art.png",
-          "srcHash": "03c663ffb0252fd8b6b4c8dfa2e39ba1",
-          "alt": "The table or diagram printed with 2023 OL Question 6(a), as the State Examinations Commission set it.",
-          "lettersVisible": [],
-          "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission"
-    },
-  } as SecCard,
-  {
-    ...base, kind: "question",
     year: 2024, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Ordinary Level — © State Examinations Commission.",
@@ -396,6 +365,35 @@ export const CARDS: SecCard[] = [
           "src": "/exam-figures/engineering/markbank/engineering-2024-OL-paper-q2dii-art.png",
           "srcHash": "230f56b15957641678ada07d55875859",
           "alt": "The table or diagram printed with 2024 OL Q2(d)(ii), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2024 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2024-ol-q6", topicId: "eng-2-11", conceptId: "engineering-component-shown-be-manufactured-centre",
+    section: "A", questionRef: "2024 OL Q6",
+    questionText: "(a) The engineering component shown is to be manufactured on a centre lathe. Identify three lathe processes used to manufacture the engineering component. (i) Rake angle, engineering component (ii) Chuck key, (iii) Depth of cut, (iv) Pilot hole. (b) Explain any three of the following in relation to machining: (i) Name the centre lathe part shown. OR Explain the term CNC. (ii) Identify one use for this centre lathe part. OR List two advantages of using a CNC laser cutter in engineering manufacture. (iii) State two safety precautions to be observed when using a centre lathe. OR Identify one safety precaution to be observed when using a CNC laser cutter. (c) A part for a centre lathe is shown opposite. OR CNC Laser cutting is frequently used in schools and industry as part of the manufacturing process.",
+    tariffModel: {"kind":"orderedSplit","notation":"Question 6: 50 marks"}, totalMarks: 50,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Parallel turning / Facing / Knurling / Drilling / Undercutting / Parting off / Taper turning.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "The rake angle facilitates the removal of the chip when the cutting tool is in contact with the workpiece.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "A chuck key is used to open and close drill chucks found on a range of machines such as pillar drills, hand drills or lathe tailstocks.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "This is the distance the cutting tool is moved into the workpiece when cutting.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "A pilot hole must be drilled before using a large drill.", marks: null },
+    { id: "r-6", kind: "point", verbatim: "This keeps the large drill central as it guides the drill through the piece when drilling.", marks: null },
+    { id: "r-7", kind: "point", verbatim: "Mass production of complex parts. • High level of precision accuracy. •", marks: null },
+    { id: "r-8", kind: "point", verbatim: "Wear safety goggles. • Do not remove swarf using hands. •", marks: null },
+    { id: "r-9", kind: "point", verbatim: "Do not leave a CNC laser machine operating unattended. •", marks: null },
+    ],
+    questionFigure: {
+          "candId": "engineering-2024-OL-paper-q6a-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2024-OL-paper-q6a-art.png",
+          "srcHash": "1085c2678f43c79de24dbd4e93746d99",
+          "alt": "The table or diagram printed with 2024 OL Question 6(a), as the State Examinations Commission set it. It reads: engineering component.",
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Engineering 2024 Ordinary Level — © State Examinations Commission"
     },
@@ -506,7 +504,7 @@ export const CARDS: SecCard[] = [
     questionText: "Specify any two items of personal protective equipment (PPE) that should be worn when operating a centre lathe. OR Give two advantages of using CNC machines.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Wear goggles.", marks: 8, accepts: ["Protective clothing i.e. gloves OR"] },
+    { id: "r-1", kind: "anyN", verbatim: "Wear goggles.", marks: 8 },
     ],
   } as SecCard,
   {
@@ -520,7 +518,7 @@ export const CARDS: SecCard[] = [
     questionText: "State one advantage of using a Printed Circuit Board (PCB) for the assembly of circuits.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Used for accurately measuring the diameter of round bars or internal diameters of holes.", marks: 6, accepts: ["Measurements can be read directly from a digital display.","Ensures the correct assembly of components as all component • positions are identified on the PCB.","Quicker to assemble and ensures better circuit operation when • complete."] },
+    { id: "r-1", kind: "alt", verbatim: "Used for accurately measuring the diameter of round bars or internal diameters of holes.", marks: 6, accepts: ["Measurements can be read directly from a digital display.","PCB Ensures the correct assembly of components as all component • positions are identified on the PCB.","Quicker to assemble and ensures better circuit operation when • complete."] },
     ],
   } as SecCard,
   {
@@ -534,7 +532,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give two examples where a Printed Circuit Board (PCB) may be used.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Used to check the diameter of twist drills.", marks: 6, accepts: ["Smart phones • Computers •"] },
+    { id: "r-1", kind: "alt", verbatim: "Used to check the diameter of twist drills.", marks: 6, accepts: ["Use Smart phones • Computers •"] },
     ],
   } as SecCard,
   {
@@ -548,7 +546,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain the term microchip.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Micrometers are specially designed for the measurement of very small objects. They allow for the highly precise measurement of any item that fits between the anvil and spindle.", marks: 6, accepts: ["A microchip is an integrated circuit (IC) containing a set of micro‐ electronic circuits made up of transistors, resistors and capacitors and their interconnectors etched onto small pieces of semiconductor material."] },
+    { id: "r-1", kind: "alt", verbatim: "Micrometers are specially designed for the measurement of very small objects. They allow for the highly precise measurement of any item that fits between the anvil and spindle.", marks: 6, accepts: ["Microchip A microchip is an integrated circuit (IC) containing a set of micro‐ electronic circuits made up of transistors, resistors and capacitors and their interconnectors etched onto small pieces of semiconductor material."] },
     ],
   } as SecCard,
 ];
