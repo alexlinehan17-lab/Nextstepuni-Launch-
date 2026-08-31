@@ -52,6 +52,10 @@ from paper import unligature                                # noqa: E402
 SCHEMES = os.path.join(ROOT, 'examiner-reports', 'engineering', 'schemes')
 
 QHEAD = re.compile(r'^Question\s*(\d{1,2})\b', re.I)
+# Just the group total at the end of a cell, for taking off before the rule
+# is read. TRAILING_TOTAL below matches the "marks" with it, which is right
+# for FINDING the total and wrong for removing it.
+TAIL_TOTAL = re.compile(r'\s*\(\d{1,3}\)\s*$')
 # A rule that carries its own group total: "Three parts @ 2 marks (15)".
 #
 # It must be the total that follows THIS rule's own "marks", not the last one
@@ -96,6 +100,11 @@ FOLLOWS = {'i': 'h', 'v': 'u', 'x': 'w'}
 # Total (8) Marks metals." It is the marking grid, never the answer, so it
 # comes out before a point is assembled rather than off the end of one.
 MARK_CELL = re.compile(r'\s*\bTotal\s*\(?\d{1,3}\)?\s*Marks?\b\s*', re.I)
+# The Symbol font's bullet, which reaches the text layer as a private-use
+# codepoint. BULLET below strips it at the START of a line; the row join
+# can leave it in the MIDDLE of one -- "wear safety goggles to \uf0b7
+# protect your eyes" -- where it renders as a box on the card.
+PUA_BULLET = re.compile(r'\s*[\uf0a7\uf0b7\uf0d8\uf0fc\uf06c]\s*')
 # The running footer arrives the same way and welds onto the end of a point:
 # "Stepper motors are driven by control circuits Page 18".
 PAGE_FOOT = re.compile(r'\s*\bPage\s+\d{1,3}\b\s*', re.I)
@@ -159,8 +168,14 @@ def _lines(page, join='block'):
 
 def _join_row(rows):
     """Join lines sharing a baseline, within one column and no further."""
+    # The baseline is rounded to the nearest POINT, not the tenth. 2023
+    # Ordinary sets a part's marker at y243.1 and its rule at y242.9, and
+    # sorting to a tenth put the marker AFTER the rule, where it joined onto
+    # the end: "Explain any three @ 5marks (15) (a)". The marker was then not
+    # at the start of the row, so the row priced nothing and the whole paper
+    # yielded twenty-one part tariffs.
     out = []
-    for row in sorted(rows, key=lambda r: (round(r[1], 1), r[0])):
+    for row in sorted(rows, key=lambda r: (round(r[1]), r[0])):
         if out and abs(out[-1][1] - row[1]) <= 2.0 and row[0] - out[-1][2] < 60:
             p = out[-1]
             out[-1] = (p[0], min(p[1], row[1]), max(p[2], row[2]),
@@ -247,10 +262,17 @@ def parse_tariff(text):
     """
     t = ' '.join(text.split())
     t = LEAD_VERB.sub('', t).strip()
-    m = BARE_AT.match(t)
+    # The group total printed at the end of the cell is not part of the rule.
+    # "Any two parts @ 7 marks (14)" offered 7 and 14 as candidate per-option
+    # values, and two different numbers where one was expected made the whole
+    # cell unreadable -- which is why 2024 Ordinary Level priced Question 2
+    # completely and Question 3 not at all. The caller reads the total off the
+    # same line for itself.
+    rule_text = TAIL_TOTAL.sub('', t).strip()
+    m = BARE_AT.match(rule_text)
     if m:
         return (t, int(m.group(1)), (1, int(m.group(1))))
-    m = ANY_AT.match(t)
+    m = ANY_AT.match(rule_text)
     if m:
         n = WORD.get(m.group(1).lower())
         rest = m.group(2).strip()
@@ -263,13 +285,13 @@ def parse_tariff(text):
             if len(parts) == 1:
                 return (t, per * n, (n, per))
         return None
-    m = N_AT.match(t)
+    m = N_AT.match(rule_text)
     if m:
         n, per = WORD.get(m.group(1).lower()), int(m.group(2))
         if n:
             return (t, n * per, (n, per))
-    if SPLIT.match(t):
-        vals = [int(x) for x in re.findall(r'\d{1,2}', t)]
+    if SPLIT.match(rule_text):
+        vals = [int(x) for x in re.findall(r'\d{1,2}', rule_text)]
         return (t, sum(vals), None)
     return None
 
@@ -652,7 +674,8 @@ class EngScheme:
         b = self.body().get((q, letter, roman))
         if not b:
             return []
-        lines = [PAGE_FOOT.sub(' ', MARK_CELL.sub(' ', x)) for x in b['points']]
+        lines = [PUA_BULLET.sub(' ', PAGE_FOOT.sub(' ', MARK_CELL.sub(' ', x)))
+                 for x in b['points']]
         # The bold heading is the scheme's restatement of the ask and not a
         # marking point -- but only when it is a whole one. 2021 HL Q4(b)(iii)
         # sets "Point X is the eutectic point. This is where the liquid steel

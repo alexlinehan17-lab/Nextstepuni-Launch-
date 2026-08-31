@@ -198,6 +198,26 @@ def rows_for(notation, total, rule, points):
         if len(points) > len(terms):
             return ('point', None,
                     {'kind': 'orderedSplit', 'notation': notation}, None)
+        # FEWER points than the split names. The scheme has not left anything
+        # out -- it has written the whole answer as one run of prose. "Give
+        # two reasons why tubular aluminium is used in scaffolding" is priced
+        # "3 + 2" and answered "Aluminium tubing has a high strength-to-weight
+        # ratio, it is lightweight, resists corrosion...", both reasons in one
+        # sentence. The card shows what the scheme wrote and states the total
+        # the table prints, and divides nothing.
+        #
+        # A RULE is different: "Three parts @ 5 marks" against two points
+        # means a part really is missing, and a card claiming fifteen marks
+        # for two of three parts would be wrong. That stays refused above.
+        if sum(1 for c in re.split(r'[;,]', ' '.join(points))
+               if len(c.split()) >= 3) >= len(terms):
+            return ('point', None, {'kind': 'questionTotal'}, None)
+        # ... and only when the prose really does hold as many clauses as the
+        # split names parts. "Calculate Young's modulus for metal A and for
+        # metal B" is priced "2 + 2" and the scheme read gives one line,
+        # "Young's Modulus of elasticity for metal B = 60 kN/mm²". Metal A's
+        # answer is missing, and a card stating four marks over it would be
+        # showing half an answer for full marks.
         return None
     if len(points) == 1:
         return ('point', [total], {'kind': 'fixed'}, None)

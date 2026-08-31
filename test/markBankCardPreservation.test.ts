@@ -586,7 +586,24 @@ const decks = [
   //
   // Five whole-question cards REMOVED, their parts now priced and carded one
   // by one: eng-2022-hl-q6-b-ii, -q7, eng-2024-hl-q9, eng-2025-hl-q7, -q9.
-  ['engineering:higher', ENG_HIGHER, 207, '96be1df129f59d1f8d99e90173caaf4e690e290017928925641b7b99d35417c7'],
+  // 2026-08-31 (ninth pass): 207 -> 217. Where the printed split names more
+  // parts than the scheme has marking points, the scheme has usually left
+  // nothing out — it has written the whole answer as one run of prose. "Give
+  // two reasons why tubular aluminium is used in scaffolding" is priced
+  // "3 + 2" and answered "Aluminium tubing has a high strength-to-weight
+  // ratio, it is lightweight, resists corrosion…", both reasons in one
+  // sentence. The card shows it and states the printed total, dividing
+  // nothing. It applies only when the prose holds as many clauses as the
+  // split names parts: "Calculate Young's modulus for metal A and for metal
+  // B" is priced "2 + 2" and the reader has only metal B's line, and a card
+  // stating four marks over it would show half an answer for full marks.
+  // A RULE — "Three parts @ 5 marks" against two points — stays refused.
+  //
+  // Also: the Symbol font's bullet reaches the text layer as a private-use
+  // codepoint, and the row join can leave it MID-LINE, where it renders as a
+  // box: "wear safety goggles to ▯ protect your eyes". 13 rows carried one.
+  // Nothing removed.
+  ['engineering:higher', ENG_HIGHER, 217, '348f2d54097668255a1ccf7b5b7297a4288aea86b61042c8600f1d33184339a5'],
   // 2026-08-31: 10 -> 24, same reader work as Higher above. Four cards
   // REMOVED. eng-2021-ol-q7-c-ii asked for the electronic symbol of each
   // component named and answered "of round bars or internal diameters of
@@ -605,7 +622,27 @@ const decks = [
   // 2026-08-31 (seventh pass): 71 -> 69, same column fix. REMOVED
   // eng-2025-ol-q5-a-i and eng-2025-ol-q6-b, both whole-part cards whose
   // romans are now priced separately and refused on their own provenance.
-  ['engineering:ordinary', ENG_ORDINARY, 77, 'e888c82d15507d827e815d8af1f55af3d9f4c8332acd2afb3e40acd5a1766b49'],
+  // 2026-08-31 (tenth pass): 77 -> 103, all in the Ordinary tariff tables.
+  // Two faults, both of them making a whole question unreadable:
+  //
+  //   * the baseline is rounded to the nearest POINT, not the tenth. 2023
+  //     Ordinary sets a part's marker at y243.1 and its rule at y242.9, so
+  //     sorting to a tenth put the marker AFTER the rule and joined it onto
+  //     the end — "Explain any three @ 5marks (15) (a)" — where it priced
+  //     nothing;
+  //   * the group total at the end of a cell is not part of the rule. "Any
+  //     two parts @ 7 marks (14)" offered 7 and 14 as candidate per-option
+  //     values, and two numbers where one was expected made the cell
+  //     unreadable. 2024 Ordinary priced Question 2 completely and Question 3
+  //     not at all.
+  //
+  // 488 part tariffs from 431, and EVERY printed total is now accounted for:
+  // 90 cells where either the cell's own arithmetic matches the total beside
+  // it, or its siblings sum to it, and none unexplained.
+  //
+  // Three whole-question cards REMOVED, their parts now priced and carded one
+  // by one: eng-2023-ol-q2, eng-2023-ol-q4, eng-2024-ol-q6.
+  ['engineering:ordinary', ENG_ORDINARY, 103, '79d24da63443a289547925bbd038ea8ef3ef8f2dc25f13d1330e1012a8dc8204'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -620,6 +657,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(8071);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(8107);
   });
 });

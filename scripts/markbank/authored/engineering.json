@@ -151,6 +151,31 @@
   "notes": "The scheme prints '5'."
  },
  {
+  "id": "eng-2021-hl-q1-e",
+  "topicId": "eng-1-5",
+  "conceptId": "reasons-why-tubular-aluminium-used-scaffolding",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q1(e)",
+  "questionText": "Give two reasons why tubular aluminium is used in scaffolding.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Aluminium tubing has a high strength-to-weight ratio, it is lightweight, resists corrosion, extrudes well as aluminium is ductile, etc.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '3 + 2'."
+ },
+ {
   "id": "eng-2021-hl-q1-h",
   "topicId": "eng-2-11",
   "conceptId": "reasons-why-may-be-necessary-operate",
@@ -1109,6 +1134,30 @@
   ]
  },
  {
+  "id": "eng-2021-hl-q8-a-ii",
+  "topicId": "eng-3-1",
+  "conceptId": "advantages-use-polycarbonate-manufacture-machine-guards",
+  "level": "higher",
+  "year": 2021,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2021 HL Q8(a)(ii)",
+  "questionText": "Describe two advantages for the use of polycarbonate in the manufacture of machine guards.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Polycarbonate is transparent, screens can be replaced easily, polycarbonate is tough and will not shatter if struck by loose metals, etc.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '5 + 5'."
+ },
+ {
   "id": "eng-2021-hl-q8-b",
   "topicId": "eng-2-11",
   "conceptId": "difference-between-clearance-hole-tapping-size",
@@ -1416,7 +1465,7 @@
    {
     "id": "r-1",
     "kind": "alt",
-    "verbatim": "Wear heat resistant gloves when preforming heat treatment of metals.",
+    "verbatim": "Wear heat resistant gloves when preforming heat treatment of  metals.",
     "marks": 8,
     "accepts": [
      "Do not leave hot metals lying around in case people accidently pick up the piece."
@@ -1447,6 +1496,7 @@
     "verbatim": "The ability of a material to be hammered and/or formed without breaking.",
     "marks": 12,
     "accepts": [
+     "The ability of a material to withstand being squashed or pushed together.",
      "Robotic technology can reduce the number of injuries associated with lifting heavy objects. Robotics can also be used to reduce the need for workers to lift or carry heavy objects.",
      "The use of exoskeleton robots can reduce the need for workers to perform repetitive motion tasks, which often lead to musculoskeletal disorders (MSDs).",
      "A material is said to be ductile when it can be permanently stretched, without fracture. It must be plastic enough to allow deformation and strong enough not to fracture. A metal must be ductile to enable it to be stretched / drawn into wire.",
@@ -2289,6 +2339,30 @@
   ]
  },
  {
+  "id": "eng-2022-hl-q4-a-ii",
+  "topicId": "eng-1-4",
+  "conceptId": "reasons-why-cast-iron-deemed-suitable",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 HL Q4(a)(ii)",
+  "questionText": "Outline two reasons why cast iron was deemed suitable for the structure of the bridge.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Cast iron is suitable for the construction of the bridge structure because of its ability to perform well in compression, resists corrosion, has high strength, is hard and tough. It casts well into the decorative shape of the bridge.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '4 + 4'."
+ },
+ {
   "id": "eng-2022-hl-q4-b-ii",
   "topicId": "eng-2-6",
   "conceptId": "identify-heat-treatment-process-occurs-when",
@@ -2876,6 +2950,31 @@
   "stem": "shell liner chin strap Chin strap"
  },
  {
+  "id": "eng-2022-hl-q7-a-iii",
+  "topicId": "eng-1-9",
+  "conceptId": "select-suitable-polymer-manufacture-chin-straps",
+  "level": "higher",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 HL Q7(a)(iii)",
+  "questionText": "Select a suitable polymer for the manufacture of the chin straps on the bicycle helmet. Justify your selection.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Suggested plastic is nylon. Nylon is strong, wear resistant and can be made into woven and flexible straps.",
+    "marks": null
+   }
+  ],
+  "stem": "shell liner chin strap Chin strap",
+  "notes": "The scheme prints '2 + 2'."
+ },
+ {
   "id": "eng-2022-hl-q7-b",
   "topicId": "eng-1-9",
   "conceptId": "function-catalyst-addition-polymerisation-process",
@@ -3422,6 +3521,35 @@
   "notes": "The scheme prints '6 marks'."
  },
  {
+  "id": "eng-2022-ol-q2-a",
+  "topicId": "eng-1-4",
+  "conceptId": "relation-metal-production-any-following-furnace",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 OL Q2(a)",
+  "questionText": "In relation to metal production, explain any three of the following furnace terms: Tapping hole, Charge, Refractory lining, Slag.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Furnace tapping is the process of removing slag and hot metal from the furnace. The tapping hole, usually located slightly above the floor of the furnace, is used for tapping (removing) slag and hot metal from the furnace.",
+    "marks": 15,
+    "accepts": [
+     "The charge is the material melted in the furnace. It can be made up of material such as ore, scrap iron/steel, coke, limestone, etc.",
+     "The refractory lining of a furnace is a protective layer inside the furnace that acts as a form of insulation to withstand high temperatures.",
+     "Slag is a material produced during metal production. It is a glass-like by- product, left over after the metal has been separated from its ore. Slag floats on top of the metal and generally removes waste in metal smelting but can also help control the temperature of the molten metal."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any three parts @ 5 marks (15)'."
+ },
+ {
   "id": "eng-2022-ol-q2-d-i",
   "topicId": "eng-2-15",
   "conceptId": "advantage-using-belt-pulley-mechanism-drive",
@@ -3470,6 +3598,98 @@
   ],
   "stem": "roll cage seat wheel rim belt and pulley mechanism Engineering - Ordinary level 3",
   "notes": "The scheme prints 'One part @ 4 marks (8)'."
+ },
+ {
+  "id": "eng-2022-ol-q3-a",
+  "topicId": "eng-2-6",
+  "conceptId": "head-steel-axe-annealed-normalised-tempered",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 OL Q3(a)",
+  "questionText": "The head of a steel axe is annealed, normalised, and tempered during manufacture. Describe any two of the following processes: (i) Annealing; (ii) Normalising; (iii) Tempering.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Annealing is a heat treatment process used to soften metals. To anneal steel, it is heated to a cherry red colour, approx. 900⁰ and allowed to cool down as slow as possible. This can be achieved by leaving the metal in a furnace while the furnace is cooling down. Annealing relieves internal stresses, increases ductility and malleability of a metal.",
+    "marks": 14,
+    "accepts": [
+     "Normalising is a heat treatment process that is used to make a metal more ductile and tough after processes such as thermal or mechanical hardening.",
+     "Normalising steel involves heating it to a temperature typically in the range of 830°-950°and then cooling in air. The heating and slow cooling changes the microstructure of the steel, altering its mechanical properties.",
+     "Tempering removes some of the hardness while increasing the toughness of a metal. It is achieved by heating the metal to a specific temperature which is determined by the colour of the metal. On heating, colours appear and when the correct colour is achieved i.e., light straw appears at approx. 250° - 350°, it is quenched in cold water."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any two parts @ 7 marks (14)'."
+ },
+ {
+  "id": "eng-2022-ol-q3-b",
+  "topicId": "eng-2-6",
+  "conceptId": "relation-heat-treatment-steel-any-following",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 OL Q3(b)",
+  "questionText": "In relation to the heat treatment of steel, explain any two of the following: (i) Quenching, (ii) Carbon content, (iii) Hardening temperature, (iv) Case hardening.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Quenching is when a hot metal is cooled very quickly i.e., when a cherry red metal is moved about when dipped into cold water.",
+    "marks": 14,
+    "accepts": [
+     "Medium carbon steel contains between 0.03% and 0.06% carbon.",
+     "High carbon steel contains more than 0.06% carbon.",
+     "To ensure high carbon steel is hardened correctly the steel must be raised to the correct temperature before cooling. This critical temperature is known as it’s hardening temperature.",
+     "Case hardening is a method of making low carbon steel very hard on the outside while leaving its centre tough. Low carbon steel may be case hardened by first increasing the amount of carbon in the outer surface by ‘carburising’. Carburising is carried out by heating the steel to a cherry red and allowing it to cool in a carbon rich material. The steel part will now have a skin or ‘case’ rich in carbon. The part is then heated to a cherry red and quenched, producing a hardened skin with a tough core."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any two parts @ 7 marks (14)'."
+ },
+ {
+  "id": "eng-2022-ol-q3-d",
+  "topicId": "eng-3-8",
+  "conceptId": "brittleness-or-medicine-ii-gardening-iii",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 OL Q3(d)",
+  "questionText": "Explain any two of the following metal properties: OR Give one example of the use of robotics in any two of the following: (i) Brittleness, OR medicine; (ii) gardening; (iii) manufacturing. (ii) Melting point, (iii) Toughness, (iv) Elasticity.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "A brittle material will break / shatter under impact. Cast iron, glass and concrete are brittle materials.",
+    "marks": 12,
+    "accepts": [
+     "Performing operations from a distance Example",
+     "Melting point is the temperature at which a metal changes its state from solid to liquid.",
+     "Gardening: Robotic lawnmowers",
+     "This property enables a material to withstand blows or an impact. The amount of energy it takes to fracture a material is an indicator of its toughness.",
+     "Manufacturing: Robotic welding",
+     "The property of elasticity is the ability of an object or material to return to its original shape after being stretched."
+    ]
+   }
+  ],
+  "stem": "Engineering - Ordinary level 4",
+  "notes": "The scheme prints 'Any two parts @ 6 marks (12)'."
  },
  {
   "id": "eng-2022-ol-q4-a-iii",
@@ -3551,6 +3771,35 @@
   ],
   "notes": "The scheme prints 'One part @ 10 marks (20)'.",
   "questionFigureKey": "engineering-2022-OL-paper-q5ai-art"
+ },
+ {
+  "id": "eng-2022-ol-q5-b",
+  "topicId": "eng-1-9",
+  "conceptId": "relation-plastic-technology-any-following-thermosetting",
+  "level": "ordinary",
+  "year": 2022,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2022 OL Q5(b)",
+  "questionText": "In relation to plastic technology, describe any three of the following: (i) Thermosetting plastics; (ii) Thermoplastics; (iii) Fibreglass; (iv) Elastic memory.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Thermosetting plastic is a plastic which remains hard when heated.",
+    "marks": 12,
+    "accepts": [
+     "Thermoplastic is a plastic which softens when heated.",
+     "Fibreglass is a composite, made of woven glass fibres, held together with a polyester resin. The combination of materials forms an extremely strong and durable composite.",
+     "Elastic memory describes the ability of a plastic to return to it’s original shape after being formed. The plastic remembers it’s original shape and will return to this shape if heated i.e. it is a smart material."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any three parts @ 4 marks (12)'."
  },
  {
   "id": "eng-2022-ol-q5-d",
@@ -3839,6 +4088,31 @@
    }
   ],
   "stem": "Give brief answers to any ten of the following:"
+ },
+ {
+  "id": "eng-2023-hl-q1-j",
+  "topicId": "eng-2-11",
+  "conceptId": "safety-features-integrated-into-cnc-lathe",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q1(j)",
+  "questionText": "Describe two safety features integrated into a CNC lathe.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "The CNC lathe has a full cover machine guard, interlocking switching, simulation capabilities to test programmes and prevent accidents, emergency stop button, limit switching on carriage, etc.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '3 + 2'."
  },
  {
   "id": "eng-2023-hl-q1-l",
@@ -4522,6 +4796,30 @@
    }
   ],
   "questionFigureKey": "engineering-2023-HL-paper-q5ai-art"
+ },
+ {
+  "id": "eng-2023-hl-q5-b-i",
+  "topicId": "eng-1-3",
+  "conceptId": "draw-equilibrium-diagram-according-given-data",
+  "level": "higher",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 HL Q5(b)(i)",
+  "questionText": "Draw the equilibrium diagram according to the given data, label the liquidus and solidus lines and the eutectic point.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Draw equilibrium diagram 9 Identify liquidus, solidus lines and eutectic point 3",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '9 + 3'."
  },
  {
   "id": "eng-2023-hl-q5-c",
@@ -5466,94 +5764,115 @@
   "notes": "The scheme prints '6 marks'."
  },
  {
-  "id": "eng-2023-ol-q2",
+  "id": "eng-2023-ol-q2-a",
   "topicId": "eng-1-4",
   "conceptId": "any-following-furnace-related-terms-water",
   "level": "ordinary",
   "year": 2023,
   "subjectId": "engineering",
   "section": "A",
-  "questionRef": "2023 OL Q2",
-  "questionText": "(i) Water-cooled oxygen lance, (ii) Pig iron, (iii) Carbon electrodes, (iv) Iron ore. (a) Explain any three of the following furnace-related terms: (i) Blast furnace, (ii) Basic oxygen furnace, (iii) Electric arc furnace. (b) With the aid of a labelled diagram, describe the operation of any one of the following furnaces: (i) Name a suitable material for each of the parts labelled on the electric go-kart below. (ii) State one reason for the selection of each material. (c) Electric go-karts have become popular in recent years. You have been asked to manufacture an electric go-kart suitable for a teenager. (i) Explain the term alloy. (ii) Name one metal alloy and name the metals used in its production. (d) Car wheel rims are often manufactured from a metal alloy.",
+  "questionRef": "2023 OL Q2(a)",
+  "questionText": "Explain any three of the following furnace-related terms: (i) Water-cooled oxygen lance, (ii) Pig iron, (iii) Carbon electrodes, (iv) Iron ore.",
   "tariffModel": {
-   "kind": "orderedSplit",
-   "notation": "Question 2: 50 marks"
+   "kind": "fixed"
   },
-  "totalMarks": 50,
+  "totalMarks": 15,
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
+    "kind": "alt",
     "verbatim": "The water-cooled oxygen lance is used to blow oxygen over the hot metal in the Basic Oxygen Furnace during the steel making process. The oxygen ignites the carbon dissolved in the steel, and converts it into carbon dioxide and carbon monoxide, which in turn raises the temperature of the furnace to 1700°C. This helps in melting the steel and reducing the carbon content and impurities in the steel. The lance is kept cool by water passing through the walls of the lance.",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Pig iron is a produced when iron ore is smelted in the ‘Blast Furnace’. Pig iron has a high carbon content, making it very brittle.",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Carbon electrodes are used in the ‘Electric Arc Furnace’ to produce heat.",
-    "marks": null
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "The heat is generated by means of an electric arc produced between the charge and the electrodes.",
-    "marks": null
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "Iron ore is mined and is used as the raw material to make pig iron.",
-    "marks": null
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "Blast furnace",
-    "marks": null
-   },
-   {
-    "id": "r-7",
-    "kind": "point",
-    "verbatim": "Basic oxygen furnace",
-    "marks": null
-   },
-   {
-    "id": "r-8",
-    "kind": "point",
-    "verbatim": "Electric arc furnace",
-    "marks": null
-   },
-   {
-    "id": "r-9",
-    "kind": "point",
-    "verbatim": "Reason: Increases the grip for the driver when holding the steering wheel.",
-    "marks": null
-   },
-   {
-    "id": "r-10",
-    "kind": "point",
-    "verbatim": "Reason: Can be easily moulded into the shape needed.",
-    "marks": null
-   },
-   {
-    "id": "r-11",
-    "kind": "point",
-    "verbatim": "Reason: Light but strong",
-    "marks": null
-   },
-   {
-    "id": "r-12",
-    "kind": "point",
-    "verbatim": "An alloy is created by mixing metal with either another metal or a nonmetal substance. Metal alloys are generally made by melting the substances, mixing them together, and then letting them cool to room temperature, resulting in a solid material.",
-    "marks": null
+    "marks": 15,
+    "accepts": [
+     "Pig iron is a produced when iron ore is smelted in the ‘Blast Furnace’. Pig iron has a high carbon content, making it very brittle.",
+     "Carbon electrodes are used in the ‘Electric Arc Furnace’ to produce heat.",
+     "The heat is generated by means of an electric arc produced between the charge and the electrodes.",
+     "Iron ore is mined and is used as the raw material to make pig iron."
+    ]
    }
-  ]
+  ],
+  "notes": "The scheme prints 'any three @ 5marks (15)'."
+ },
+ {
+  "id": "eng-2023-ol-q2-b",
+  "topicId": "eng-1-4",
+  "conceptId": "aid-labelled-diagram-operation-any-following",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q2(b)",
+  "questionText": "With the aid of a labelled diagram, describe the operation of any one of the following furnaces: (i) Blast furnace, (ii) Basic oxygen furnace, (iii) Electric arc furnace.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Blast furnace",
+    "marks": 12,
+    "accepts": [
+     "Basic oxygen furnace",
+     "Electric arc furnace"
+    ]
+   }
+  ],
+  "notes": "The scheme prints '@ 12 marks (12)'."
+ },
+ {
+  "id": "eng-2023-ol-q2-d-i",
+  "topicId": "eng-1-2",
+  "conceptId": "term-alloy",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q2(d)(i)",
+  "questionText": "Explain the term alloy.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 4,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "anyN",
+    "verbatim": "An alloy is created by mixing metal with either another metal or a nonmetal substance. Metal alloys are generally made by melting the substances, mixing them together, and then letting them cool to room temperature, resulting in a solid material.",
+    "marks": 4
+   }
+  ],
+  "stem": "chassis rim",
+  "notes": "The scheme prints '@ 4 marks'."
+ },
+ {
+  "id": "eng-2023-ol-q3-a",
+  "topicId": "eng-2-6",
+  "conceptId": "any-following-heat-treatment-procedures-annealing",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q3(a)",
+  "questionText": "Explain any two of the following heat treatment procedures: (i) Annealing, (ii) Case hardening, (iii) Quenching.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Annealing is a heat treatment procedure used to soften metals. To anneal steel, it is heated to a cherry red colour, approx. 900⁰ and allowed to cool down as slow as possible. This can be achieved by leaving the metal in a furnace while the furnace is cooling down. Annealing relieves internal stresses, increases ductility and malleability of a metal.",
+    "marks": 14,
+    "accepts": [
+     "Case hardening is a method of making low carbon steel very hard on the outside while leaving its centre tough. Low carbon steel may be case hardened by first increasing the amount of carbon in the outer surface by ‘carburising’. Carburising is carried out by heating the steel to a cherry red and allowing it to cool in a carbon rich material. The steel part will now have a skin or ‘case’ rich in carbon. The part is then heated to a cherry red and quenched, producing a hardened skin with a tough core.",
+     "Quenching is when a hot metal is cooled very quickly i.e., when a cherry red metal is dipped into cold water and moved about."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'any two @ 7 marks (14)'."
  },
  {
   "id": "eng-2023-ol-q3-b-i",
@@ -5687,94 +6006,63 @@
   "notes": "The scheme prints 'Two ways @ 3 marks (12)'."
  },
  {
-  "id": "eng-2023-ol-q4",
-  "topicId": "eng-2-11",
-  "conceptId": "cutting-tool-shown-suitable-use",
+  "id": "eng-2023-ol-q4-b",
+  "topicId": "eng-2-10",
+  "conceptId": "function-any-following-manual-metal-arc",
   "level": "ordinary",
   "year": 2023,
   "subjectId": "engineering",
   "section": "A",
-  "questionRef": "2023 OL Q4",
-  "questionText": "(i) Name two common gases used in gas welding. (ii) Name two types of flame produced when gas welding. (iii) State two safety precautions that should be followed when gas welding. (a)  (i) Welding plant, (ii) Chipping hammer, (iii) Leather apron, (iv) Electrode holder. (b) State the function of any three of the following in manual metal arc welding: (i) Explain why a passive flux is used when soldering electrical circuits. (ii) Name one process that can be used to permanently join sheet metals. (iii) Give one reason why it is important to clean grease and corrosion from joints before soldering. (iv) Name the cutting tool shown and state a suitable use for it. (c) Answer any three of the following: (d) State two safety precautions to be observed when working with adhesives.",
+  "questionRef": "2023 OL Q4(b)",
+  "questionText": "State the function of any three of the following in manual metal arc welding: (i) Welding plant, (ii) Chipping hammer, (iii) Leather apron, (iv) Electrode holder.",
   "tariffModel": {
-   "kind": "orderedSplit",
-   "notation": "Question 4: 50 marks"
+   "kind": "fixed"
   },
-  "totalMarks": 50,
+  "totalMarks": 12,
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Oxygen",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "Acetylene",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "Oxidising flame",
-    "marks": null
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "Neutral flame",
-    "marks": null
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "Carburising flame",
-    "marks": null
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "The gas hoses are checked for damage before starting the welding process.",
-    "marks": null
-   },
-   {
-    "id": "r-7",
-    "kind": "point",
-    "verbatim": "Correct PPE is worn while welding.",
-    "marks": null
-   },
-   {
-    "id": "r-8",
-    "kind": "point",
+    "kind": "alt",
     "verbatim": "A welding plant is a device used for fusing / welding metals together. The welding plant creates an electrical arc between the welding rod and the metals being joined. The arc generates enough heat to melt the welding rod and metals, fusing the joint between the two pieces of metal. The welding plant can produce temperatures up to 3,600℃ needed to melt metals.",
-    "marks": null
-   },
-   {
-    "id": "r-9",
-    "kind": "point",
-    "verbatim": "The chipping hammer is used to remove the slag which forms on top of the welded joint after arc welding.",
-    "marks": null
-   },
-   {
-    "id": "r-10",
-    "kind": "point",
-    "verbatim": "Leather aprons are fireproof and help protect against heat and flames. The leather apron is worn during welding and helps protect the welder against sparks, spatter, slag, and some flames that are often encountered during welding work.",
-    "marks": null
-   },
-   {
-    "id": "r-11",
-    "kind": "point",
-    "verbatim": "An electrode holder is a device that holds the electrode / welding rod during the welding process. The handle is insulated to protect the user from the current flowing to the electrode.",
-    "marks": null
-   },
-   {
-    "id": "r-12",
-    "kind": "point",
-    "verbatim": "A passive flux is an inactive, non-corrosive flux and will not damage / corrode the electrical circuit. Therefore, the passive flux can remain on the electric circuit when finished soldering.",
-    "marks": null
+    "marks": 12,
+    "accepts": [
+     "The chipping hammer is used to remove the slag which forms on top of the welded joint after arc welding.",
+     "Leather aprons are fireproof and help protect against heat and flames. The leather apron is worn during welding and helps protect the welder against sparks, spatter, slag, and some flames that are often encountered during welding work.",
+     "An electrode holder is a device that holds the electrode / welding rod during the welding process. The handle is insulated to protect the user from the current flowing to the electrode."
+    ]
    }
   ],
+  "notes": "The scheme prints 'Any three parts @ 4 marks (12)'."
+ },
+ {
+  "id": "eng-2023-ol-q4-c",
+  "topicId": "eng-2-10",
+  "conceptId": "why-passive-flux-used-when-soldering",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q4(c)",
+  "questionText": "Answer any three of the following: (i) Explain why a passive flux is used when soldering electrical circuits. (ii) Name one process that can be used to permanently join sheet metals. (iii) Give one reason why it is important to clean grease and corrosion from joints before soldering. (iv) Name the cutting tool shown and state a suitable use for it.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "A passive flux is an inactive, non-corrosive flux and will not damage / corrode the electrical circuit. Therefore, the passive flux can remain on the electric circuit when finished soldering.",
+    "marks": 15,
+    "accepts": [
+     "Resistance / Spot welding.",
+     "The removal of grease and corrosion from joints before soldering ensures that the solder will adhere / join to the surface of the metals when the correct heat is applied. This will aid in a successful soldered joint.",
+     "Thread cutting die.",
+     "The thread cutting die will produce an external thread on a round bar."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any three parts @ 5 marks (15)'.",
   "questionFigureKey": "engineering-2023-OL-paper-q4civ-art"
  },
  {
@@ -5803,6 +6091,121 @@
    }
   ],
   "notes": "The scheme prints 'Two precautions @ 4 marks (8)'."
+ },
+ {
+  "id": "eng-2023-ol-q5-a-ii",
+  "topicId": "eng-2-13",
+  "conceptId": "aid-labelled-diagram-any-manufacturing-processes",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q5(a)(ii)",
+  "questionText": "Describe with the aid of a labelled diagram any one of the manufacturing processes named by you at 5(a)(i) above.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Blow Molulding Used to produce articles from a heated thermoplastic tube called a parison. The mould closes around the extruded parison and air is blow inside forcing the parison out against the wall of the mould. The article is formed by the internal shape of a split mould. The component is allowed to cool before being removed from the opened mould.",
+    "marks": 11,
+    "accepts": [
+     "This causes the plastic sheet to pull against the mould, forming the final shape. After cooling, the mould is lowered, and the plastic part is removed.",
+     "Injection moulding Thermoplastic is softened by heating it inside an injection nozzle. The softened plastic is forced by a plunger into a cold mould where it hardens rapidly and is then ejected. Injection moulding is used for the rapid moulding of components."
+    ]
+   }
+  ],
+  "notes": "The scheme prints '@ 11 marks (20)'.",
+  "questionFigureKey": "engineering-2023-OL-paper-q5ai-art"
+ },
+ {
+  "id": "eng-2023-ol-q5-b",
+  "topicId": "eng-1-9",
+  "conceptId": "relation-plastic-technology-any-following-elastic",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q5(b)",
+  "questionText": "In relation to plastic technology, describe any three of the following: (i) Elastic memory; (ii) Thermosetting plastics; (iii) Plastic dip coating; (iv) Thermoplastic.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "This describes the ability of a plastic to return to its original shape after being formed. The plastic remembers its original shape and will return to this shape if heated.",
+    "marks": 12,
+    "accepts": [
+     "Thermosetting plastic is a plastic which remains hard when heated.",
+     "Pre-heated items for coating are dipped into a tank of plastic powder which fuses and sticks to the product. The item is removed and allowed to cool causing the plastic to form a protective coating around the product.",
+     "Thermoplastic is a plastic which softens when heated. Thermoplastics can be recycled and used again."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any three parts @ 4 marks (12)'."
+ },
+ {
+  "id": "eng-2023-ol-q5-d",
+  "topicId": "eng-1-9",
+  "conceptId": "safety-precautions-be-observed-when-working",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q5(d)",
+  "questionText": "State two safety precautions to be observed when working with hot plastics.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Do not leave pieces of hot plastic unattended on the bench / work area.",
+    "marks": 8,
+    "accepts": [
+     "Wear protective gloves if handling hot sheets of plastic."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Two precautions @ 4 marks (8)'."
+ },
+ {
+  "id": "eng-2023-ol-q6-b",
+  "topicId": "eng-2-11",
+  "conceptId": "any-following-relation-machining-clearance-angle",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q6(b)",
+  "questionText": "Explain any three of the following in relation to machining: (i) Clearance angle, (ii) Spindle speed, (iii) Rake angle, (iv) Feed.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Without a clearance angle, no cutting would take place. The clearance angle ensures that only the cutting edge of a tool contacts the material. It provides clearance between the cutting tool face and the workpiece. This ensures a reduction in friction and heat build-up, while providing longer tool life and better surface finish.",
+    "marks": 15,
+    "accepts": [
+     "This is the speed at which the chuck rotates in RPM. This speed can be adjusted by selecting different gear train settings within the gear box.",
+     "The rake angle is ground on a cutting tool to provide a sharp edge for cutting. The rake angle allows the swarf to pass over the cutting tool and away from the cutting area.",
+     "Feed",
+     "Feed is the amount per revolution at which the cutting tool moves into the material being machined."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'any three @ 5 marks (15)'."
  },
  {
   "id": "eng-2023-ol-q6-c-ii",
@@ -5861,6 +6264,34 @@
   ],
   "stem": "thumbscrew",
   "notes": "The scheme prints 'two items @ 4 marks (20)'."
+ },
+ {
+  "id": "eng-2023-ol-q7-a",
+  "topicId": "eng-3-12",
+  "conceptId": "any-following-terms-relation-limits-fits",
+  "level": "ordinary",
+  "year": 2023,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2023 OL Q7(a)",
+  "questionText": "Explain any two of the following terms in relation to limits and fits: (i) Clearance fit, (ii) Upper limit, (iii) Transition fit.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 12,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "The shaft is always smaller than the hole.",
+    "marks": 12,
+    "accepts": [
+     "The largest dimension a piece can be manufactured to.",
+     "The shaft can be larger or smaller than the hole."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'any two @ 6 marks (12)'."
  },
  {
   "id": "eng-2024-hl-q1-b",
@@ -5957,6 +6388,31 @@
   ],
   "stem": "Give brief answers to any ten of the following:",
   "notes": "The scheme prints 'Any one @ 5'."
+ },
+ {
+  "id": "eng-2024-hl-q1-f",
+  "topicId": "eng-3-1",
+  "conceptId": "important-material-properties-be-considered-when",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q1(f)",
+  "questionText": "Describe two important material properties to be considered when selecting a suitable material for a mouth guard.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 5,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Material properties should be lightweight, tough, strong, corrosion resistant, non-toxic, biocompatible (not toxic and not rejected by the body), long-lasting, easy to mould, etc.",
+    "marks": null
+   }
+  ],
+  "stem": "Give brief answers to any ten of the following:",
+  "notes": "The scheme prints '3 + 2'."
  },
  {
   "id": "eng-2024-hl-q1-h",
@@ -6448,19 +6904,19 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": " Shin guard is made to suit the player dimensions.",
+    "verbatim": "Shin guard is made to suit the player dimensions.",
     "marks": null
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": " Carbon fibre has an excellent strength-to-weight ratio and impact resistance.",
+    "verbatim": "Carbon fibre has an excellent strength-to-weight ratio and impact resistance.",
     "marks": null
    },
    {
     "id": "r-3",
     "kind": "point",
-    "verbatim": " Superior impact protection over traditional polymer materials, etc.",
+    "verbatim": "Superior impact protection over traditional polymer materials, etc.",
     "marks": null
    }
   ]
@@ -6723,6 +7179,31 @@
     "marks": 7
    }
   ],
+  "questionFigureKey": "engineering-2024-HL-paper-q4bi-art"
+ },
+ {
+  "id": "eng-2024-hl-q4-b-iii",
+  "topicId": "eng-2-6",
+  "conceptId": "benefits-annealing-0-6-carbon-steel",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q4(b)(iii)",
+  "questionText": "Outline two benefits of annealing 0.6% carbon steel.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "This makes the metal as soŌ as possible, improves ductility, refines the grain size and removes internal stresses.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '3 + 3'.",
   "questionFigureKey": "engineering-2024-HL-paper-q4bi-art"
  },
  {
@@ -7182,6 +7663,30 @@
    }
   ],
   "stem": "3-D printed prototype"
+ },
+ {
+  "id": "eng-2024-hl-q8-a-ii",
+  "topicId": "eng-2-11",
+  "conceptId": "identify-factors-influence-material-surface-finish",
+  "level": "higher",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 HL Q8(a)(ii)",
+  "questionText": "Identify two factors that influence material surface finish when machining on a lathe.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 7,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Use of cuƫng fluids have a lubricating impact and will reduce heat build-up and improve surface finish; the quality of the cuƫng tool; maintenance of correct cuƫng angles and a sharp cuƫng edge; the machine parameters, speed and feed rate, etc.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '4 + 3'."
  },
  {
   "id": "eng-2024-hl-q8-b",
@@ -7666,77 +8171,287 @@
   "questionFigureKey": "engineering-2024-OL-paper-q2dii-art"
  },
  {
-  "id": "eng-2024-ol-q6",
-  "topicId": "eng-2-11",
-  "conceptId": "engineering-component-shown-be-manufactured-centre",
+  "id": "eng-2024-ol-q2-d-ii",
+  "topicId": "eng-2-10",
+  "conceptId": "identify-temporary-joining-process-could-be",
   "level": "ordinary",
   "year": 2024,
   "subjectId": "engineering",
   "section": "A",
-  "questionRef": "2024 OL Q6",
-  "questionText": "(a) The engineering component shown is to be manufactured on a centre lathe. Identify three lathe processes used to manufacture the engineering component. (i) Rake angle, engineering component (ii) Chuck key, (iii) Depth of cut, (iv) Pilot hole. (b) Explain any three of the following in relation to machining: (i) Name the centre lathe part shown. OR Explain the term CNC. (ii) Identify one use for this centre lathe part. OR List two advantages of using a CNC laser cutter in engineering manufacture. (iii) State two safety precautions to be observed when using a centre lathe. OR Identify one safety precaution to be observed when using a CNC laser cutter. (c) A part for a centre lathe is shown opposite. OR CNC Laser cutting is frequently used in schools and industry as part of the manufacturing process.",
+  "questionRef": "2024 OL Q2(d)(ii)",
+  "questionText": "Identify a temporary joining process which could be used in the assembly of the coupling shown.",
   "tariffModel": {
-   "kind": "orderedSplit",
-   "notation": "Question 6: 50 marks"
+   "kind": "fixed"
   },
-  "totalMarks": 50,
+  "totalMarks": 4,
   "rows": [
    {
     "id": "r-1",
-    "kind": "point",
-    "verbatim": "Parallel turning / Facing / Knurling / Drilling / Undercutting / Parting off / Taper turning.",
-    "marks": null
-   },
-   {
-    "id": "r-2",
-    "kind": "point",
-    "verbatim": "The rake angle facilitates the removal of the chip when the cutting tool is in contact with the workpiece.",
-    "marks": null
-   },
-   {
-    "id": "r-3",
-    "kind": "point",
-    "verbatim": "A chuck key is used to open and close drill chucks found on a range of machines such as pillar drills, hand drills or lathe tailstocks.",
-    "marks": null
-   },
-   {
-    "id": "r-4",
-    "kind": "point",
-    "verbatim": "This is the distance the cutting tool is moved into the workpiece when cutting.",
-    "marks": null
-   },
-   {
-    "id": "r-5",
-    "kind": "point",
-    "verbatim": "A pilot hole must be drilled before using a large drill.",
-    "marks": null
-   },
-   {
-    "id": "r-6",
-    "kind": "point",
-    "verbatim": "This keeps the large drill central as it guides the drill through the piece when drilling.",
-    "marks": null
-   },
-   {
-    "id": "r-7",
-    "kind": "point",
-    "verbatim": "Mass production of complex parts. • High level of precision accuracy. •",
-    "marks": null
-   },
-   {
-    "id": "r-8",
-    "kind": "point",
-    "verbatim": "Wear safety goggles. • Do not remove swarf using hands. •",
-    "marks": null
-   },
-   {
-    "id": "r-9",
-    "kind": "point",
-    "verbatim": "Do not leave a CNC laser machine operating unattended. •",
-    "marks": null
+    "kind": "anyN",
+    "verbatim": "A suitable temporary joining process for the assembly of the coupling would be the use of nuts and bolts.",
+    "marks": 4
    }
   ],
-  "questionFigureKey": "engineering-2024-OL-paper-q6a-art"
+  "notes": "The scheme prints 'One part @ 4 marks (8)'.",
+  "questionFigureKey": "engineering-2024-OL-paper-q2dii-art"
+ },
+ {
+  "id": "eng-2024-ol-q3-a",
+  "topicId": "eng-2-6",
+  "conceptId": "relation-heat-treatment-steel-any-following",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q3(a)",
+  "questionText": "In relation to the heat treatment of steel, explain any two of the following: (i) Normalising, (ii) Quenching, (iii) Carbon content.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 14,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Normalising steel will reduce its hardness and improve its ductility.",
+    "marks": 14,
+    "accepts": [
+     "Steel is heated to a cherry red colour, approx. 900°C and allowed to cool down at room temperature (faster than annealing).",
+     "Quenching is when a hot metal is cooled very quickly i.e., when a cherry red metal is dipped into cold water and moved about.",
+     "If iron is mixed with carbon, steel is produced. The amount of carbon (carbon content) mixed with iron, will determine the type of steel produced i.e.",
+     "Low carbon steel contains less than 0.03% of carbon. • Medium carbon steel contains between 0.03% and 0.06% • carbon.",
+     "High carbon steel contains more than 0.06% carbon. •"
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any two parts @ 7 marks (14)'."
+ },
+ {
+  "id": "eng-2024-ol-q3-c",
+  "topicId": "eng-2-6",
+  "conceptId": "safety-precautions-be-observed-during-heat",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q3(c)",
+  "questionText": "State two safety precautions to be observed during the heat treatment of metals.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Wear heat resistant gloves when preforming heat treatment of • metals.",
+    "marks": 10,
+    "accepts": [
+     "Wear a face shield to protect from hot splashes. •"
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any two parts @ 5 marks (10)'."
+ },
+ {
+  "id": "eng-2024-ol-q4-b",
+  "topicId": "eng-2-10",
+  "conceptId": "function-any-following-manual-metal-arc",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q4(b)",
+  "questionText": "State the function of any three of the following in manual metal arc welding: (i) Earth clamp, (ii) Welding mask, (iii) Leather gloves, (iv) Welding magnet.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "The earth clamp forms the circuit when welding. It clamps onto the material being welded and when the electrode creates the arc the clamp closes the circuit.",
+    "marks": 15,
+    "accepts": [
+     "The welding mask protects your eyes and face from heat and sparks, as well as ultraviolet and infrared rays emitted by the arc.",
+     "Leather gloves are used to protect the user’s hands and arms from burns due to molten splatter when welding. They also protect the user from burns when handling hot metals.",
+     "Welding magnets are strong magnets that can be used to hold workpieces in place while the workpieces are being welded."
+    ]
+   }
+  ],
+  "stem": "valve A valve B oxy-acetylene gas welding torch",
+  "notes": "The scheme prints 'Any three parts @ 5 marks (15)'."
+ },
+ {
+  "id": "eng-2024-ol-q4-c",
+  "topicId": "eng-2-10",
+  "conceptId": "function-plastic-casing-electrode-holder-shown",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q4(c)",
+  "questionText": "Answer any three of the following: (i) Explain the function of the plastic casing on the electrode holder shown. (ii) Explain why it is important to work in a well-ventilated area when using adhesives. (iii) State one reason why flux is required when soldering. (iv) Give one advantage of using a locknut when assembling project work.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "The handle of the electrode holder is typically insulated to protect the welder from electrical shock. The insulation material, often made of heat-resistant plastic or rubber, prevents the welder from coming into direct contact with the conductive parts of the holder.",
+    "marks": 15,
+    "accepts": [
+     "The chemicals in adhesives can be dangerous especially if they evaporate and form a mist or vapor in the air. Working in a well- ventilated area will help to disperse the vapours reducing the danger of inhaling the chemicals.",
+     "Locknuts are used in assembling project work because the nylon insert ensures that they do not loosen due to vibrations."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any three parts @ 5 marks (15)'.",
+  "questionFigureKey": "engineering-2024-OL-paper-q4ci-art"
+ },
+ {
+  "id": "eng-2024-ol-q4-d",
+  "topicId": "eng-1-5",
+  "conceptId": "safety-precautions-be-observed-when-soldering",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q4(d)",
+  "questionText": "State two safety precautions to be observed when soldering copper pipes and fittings.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Soldering copper pipes and fittings:",
+    "marks": 8,
+    "accepts": [
+     "Wear a suitable mask to protect from the fumes produced by the • flux."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Two parts @ 4 marks (8)'."
+ },
+ {
+  "id": "eng-2024-ol-q5-a-ii",
+  "topicId": "eng-2-13",
+  "conceptId": "aid-labelled-diagram-any-manufacturing-processes",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q5(a)(ii)",
+  "questionText": "Describe with the aid of a labelled diagram any one of the manufacturing processes, named by you, at Q5 (a)(i) above.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 11,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Thermoplastic is softened by heating it inside an injection nozzle. The softened plastic is forced by a plunger into a cold mould where it hardens rapidly and is then ejected. Injection moulding is used for the rapid moulding of components.",
+    "marks": 11,
+    "accepts": [
+     "Blow Molulding Used to produce articles from a heated thermoplastic tube called a parison. The mould closes around the extruded parison and air is blow inside forcing the parison out against the wall of the mould. The article is formed by the internal shape of a split mould. The component is allowed to cool before being removed from the opened mould.",
+     "Final shape Vacuum Mould A vacuum former is a plastic thermoforming machine that is used to produce parts which are precisely formed on one side. The former contains a heating element, a height adjustable table, which is porous, and an air pump. The heating element is used to heat up and soften a sheet of plastic which has been clamped into a frame. When the plastic sheet begins to sag, a mould, placed on the porous table, is lifted into the plastic sheet. The air pump is then turned on creating a vacuum below the mould. This causes the plastic sheet to pull against the mould, forming the final shape. After cooling, the mould is lowered, and the plastic part is removed."
+    ]
+   }
+  ],
+  "stem": "Chair Water bottle Toy car",
+  "notes": "The scheme prints 'One part @ 11 marks (20)'."
+ },
+ {
+  "id": "eng-2024-ol-q5-c",
+  "topicId": "eng-3-1",
+  "conceptId": "safety-precautions-be-observed-when-using",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q5(c)",
+  "questionText": "State two safety precautions to be observed when using a strip heater.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Safety precautions when using a strip heater:",
+    "marks": 10,
+    "accepts": [
+     "Do not leave a piece of plastic unattended on the strip heater. • Remember to turn the strip heater off when finished using it. •"
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any two parts @ 5 marks (10)'."
+ },
+ {
+  "id": "eng-2024-ol-q5-d",
+  "topicId": "eng-1-9",
+  "conceptId": "relation-plastic-technology-any-following-plastic",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q5(d)",
+  "questionText": "In relation to plastic technology, describe any two of the following: (i) Plastic dip coating, (ii) Thermosetting plastics, (iii) 3D Printing.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Air is forced through a tank containing powder causing the powder to act like a fluid. Pre-heated items for coating are dipped into the tank. The hot item melts the powder which sticks to its surface. It can then be heated again to provide a fully fused plastic surface.",
+    "marks": 10,
+    "accepts": [
+     "Thermosetting plastic is a plastic once set, remains hard even when heated again.",
+     "3D printing is an additive manufacturing process that creates physical objects from a digital design. The process works by extruding thin layers of melted plastic on top of each other. The layers are allowed to fuse and solidify, creating a 3D object."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any two parts @ 5 marks (10)'."
+ },
+ {
+  "id": "eng-2024-ol-q6-b",
+  "topicId": "eng-2-11",
+  "conceptId": "any-following-relation-machining-rake-angle",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q6(b)",
+  "questionText": "Explain any three of the following in relation to machining: (i) Rake angle, engineering component (ii) Chuck key, (iii) Depth of cut, (iv) Pilot hole.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 15,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "The rake angle facilitates the removal of the chip when the cutting tool is in contact with the workpiece.",
+    "marks": 15,
+    "accepts": [
+     "A chuck key is used to open and close drill chucks found on a range of machines such as pillar drills, hand drills or lathe tailstocks.",
+     "This is the distance the cutting tool is moved into the workpiece when cutting.",
+     "A pilot hole must be drilled before using a large drill.",
+     "This keeps the large drill central as it guides the drill through the piece when drilling."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any three parts @ 5 marks (15)'."
  },
  {
   "id": "eng-2024-ol-q6-c-ii",
@@ -7761,6 +8476,33 @@
    }
   ],
   "notes": "The scheme prints 'One part @ 6 marks'."
+ },
+ {
+  "id": "eng-2024-ol-q6-c-iii",
+  "topicId": "eng-2-11",
+  "conceptId": "safety-precautions-be-observed-when-using",
+  "level": "ordinary",
+  "year": 2024,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2024 OL Q6(c)(iii)",
+  "questionText": "State two safety precautions to be observed when using a centre lathe. OR Identify one safety precaution to be observed when using a CNC laser cutter.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 8,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Wear safety goggles. • Do not remove swarf using hands. •",
+    "marks": 8,
+    "accepts": [
+     "Do not leave a CNC laser machine operating unattended. •"
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Two parts @ 4 marks (20)'."
  },
  {
   "id": "eng-2025-hl-q1-a",
@@ -8686,6 +9428,30 @@
   "notes": "The scheme prints '10'."
  },
  {
+  "id": "eng-2025-hl-q6-a-ii",
+  "topicId": "eng-2-10",
+  "conceptId": "reasons-why-submerged-arc-welding-saw",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 HL Q6(a)(ii)",
+  "questionText": "State two reasons why submerged arc welding (SAW) is used in the fabrication of wind turbine towers.",
+  "tariffModel": {
+   "kind": "questionTotal"
+  },
+  "totalMarks": 6,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "point",
+    "verbatim": "Submerged arc welding (SAW) is a suitable welding technique for the rolled steel segment as SAW is an automated process used for long uninterrupted welding. The SAW process is efficient, allowing for deep weld penetration and high deposition rates and is frequently used in heavy structural construction.",
+    "marks": null
+   }
+  ],
+  "notes": "The scheme prints '3 + 3'."
+ },
+ {
   "id": "eng-2025-hl-q6-b",
   "topicId": "eng-2-10",
   "conceptId": "identify-necessary-steps-preparation-joint-welding",
@@ -9301,13 +10067,13 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Wear personal protective equipment (PPE) such as safety goggles to  protect your eyes from flying debris.",
+    "verbatim": "Wear personal protective equipment (PPE) such as safety goggles to  protect your eyes from flying debris.",
     "marks": null
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Always maintain a safe distance between your hands and the blade. ",
+    "verbatim": "Always maintain a safe distance between your hands and the blade.",
     "marks": null
    }
   ],
@@ -9332,11 +10098,17 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "A permanent joint is a joint that cannot be disassembled without destroying the parts or damaging the surfaces.",
+    "verbatim": "Explain the term permanent joint and give one example of a permanent joint in engineering.",
     "marks": null
    },
    {
     "id": "r-2",
+    "kind": "point",
+    "verbatim": "A permanent joint is a joint that cannot be disassembled without destroying the parts or damaging the surfaces.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
     "kind": "point",
     "verbatim": "An example of a permanent joint in engineering is a welded joint.",
     "marks": null
@@ -9363,7 +10135,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "To ensure they operate as required and to identify any errors  in design or assembly.",
+    "verbatim": "To ensure they operate as required and to identify any errors  in design or assembly.",
     "marks": 6
    }
   ],
@@ -9393,7 +10165,7 @@
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Adhesives produce dangerous fumes, which can be harmful if inhaled,  ventilation provides a flow of fresh air which helps to dilute the dangerous fumes.",
+    "verbatim": "Adhesives produce dangerous fumes, which can be harmful if inhaled,  ventilation provides a flow of fresh air which helps to dilute the dangerous fumes.",
     "marks": null
    }
   ],
@@ -9418,13 +10190,13 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Less material waste is produced as 3D printing is an additive  manufacturing process.",
+    "verbatim": "Less material waste is produced as 3D printing is an additive  manufacturing process.",
     "marks": null
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "More complex products can be designed and produced. ",
+    "verbatim": "More complex products can be designed and produced.",
     "marks": null
    }
   ],
@@ -9442,18 +10214,25 @@
   "questionRef": "2025 OL Q1(f)",
   "questionText": "Explain the term non‐ferrous and name one non‐ferrous metal.",
   "tariffModel": {
-   "kind": "fixed"
+   "kind": "questionTotal"
   },
   "totalMarks": 6,
   "rows": [
    {
     "id": "r-1",
     "kind": "point",
+    "verbatim": "Metals which do not contain iron, are referred to as non‐ferrous metals.",
+    "marks": null
+   },
+   {
+    "id": "r-2",
+    "kind": "point",
     "verbatim": "Brass is an example of a non‐ferrous metal.",
-    "marks": 6
+    "marks": null
    }
   ],
-  "stem": "Give brief answers to any eight of the following:"
+  "stem": "Give brief answers to any eight of the following:",
+  "notes": "The scheme prints '6 marks'."
  },
  {
   "id": "eng-2025-ol-q1-g",
@@ -9473,7 +10252,7 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "To give engineers and designers the ability to explore new design  alternatives and to test if the product functions as required.",
+    "verbatim": "To give engineers and designers the ability to explore new design  alternatives and to test if the product functions as required.",
     "marks": 6
    }
   ],
@@ -9497,13 +10276,25 @@
    {
     "id": "r-1",
     "kind": "point",
-    "verbatim": "Lead is a malleable metal.",
+    "verbatim": "Define malleability in relation to the properties of materials and name one material which is malleable.",
     "marks": null
    },
    {
     "id": "r-2",
     "kind": "point",
-    "verbatim": "Deburring removes sharp edges and  burrs that can pose a safety hazard to workers when handling parts. Metal parts often require deburring following manufacturing.",
+    "verbatim": "Malleability is the ability of a material to be hammered / flattened out in  all directions without breaking.",
+    "marks": null
+   },
+   {
+    "id": "r-3",
+    "kind": "point",
+    "verbatim": "Lead is a malleable metal.",
+    "marks": null
+   },
+   {
+    "id": "r-4",
+    "kind": "point",
+    "verbatim": "Deburring removes sharp edges and  burrs that can pose a safety hazard to workers when handling parts. Metal parts often require deburring following manufacturing.",
     "marks": null
    }
   ],
@@ -9575,6 +10366,33 @@
   "notes": "The scheme prints 'Any two parts @ 7 marks'."
  },
  {
+  "id": "eng-2025-ol-q3-c",
+  "topicId": "eng-3-1",
+  "conceptId": "items-personal-protective-equipment-ppe-should",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q3(c)",
+  "questionText": "State two items of personal protective equipment (PPE) that should be worn when working with hot metals.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "PPE 1 – Wear heat resistant gloves to protect the hands.",
+    "marks": 10,
+    "accepts": [
+     "PPE 2 – Wear a face shield to protect the face from high  temperatures."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any two parts @ 5 marks (10)'."
+ },
+ {
   "id": "eng-2025-ol-q4-b",
   "topicId": "eng-2-10",
   "conceptId": "function-any-following-items-used-manual",
@@ -9628,8 +10446,7 @@
      "Pop riveting / Machine screws.",
      "Flux cleans the surfaces and protects them from oxidation during the soldering process, ensuring better adhesion.",
      "Flux enhances the wetting properties of the solder, allowing it to flow more easily and uniformly across the surfaces being joined.",
-     "Name: Allen key",
-     "Use: Allen keys are designed to tighten or loosen hexagonal‐shaped bolts and screws. Allen keys are highly versatile hand tools and can be used to assemble flatpack furniture and to adjust seat posts, handlebars on a bicycle."
+     "Name: Allen key  Use: Allen keys are designed to tighten or loosen hexagonal‐shaped bolts and screws. Allen keys are highly versatile hand tools and can be used to assemble flatpack furniture and to adjust seat posts, handlebars on a bicycle."
     ]
    }
   ],
@@ -9665,6 +10482,35 @@
   ],
   "notes": "The scheme prints 'Three parts @ 3 marks'.",
   "questionFigureKey": "engineering-2025-OL-paper-q5ai-art"
+ },
+ {
+  "id": "eng-2025-ol-q5-b",
+  "topicId": "eng-1-9",
+  "conceptId": "relation-plastic-technology-any-following-thermosetting",
+  "level": "ordinary",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 OL Q5(b)",
+  "questionText": "In relation to plastic technology, describe any two of the following: (i) Thermosetting plastic, (ii) Laminating, (iii) Thermoplastic, (iv) Elastic memory.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 10,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Thermosetting plastic is a plastic which remains hard when heated.",
+    "marks": 10,
+    "accepts": [
+     "Laminating is a bonding process which produces a sheet material manufactured from multiple layers of paper with a top layer of plastic, usually 1.5 mm thick, with a decorative finish. It can be used in flat sheets or heat‐formed and bent and adhered to single curved base material. It is commonly referred to by the brand name \"Formica.\"",
+     "Thermoplastic is a plastic which softens when heated.",
+     "This describes the ability of a plastic to return to its original shape after being formed. The plastic remembers its original shape and will return to this shape if heated."
+    ]
+   }
+  ],
+  "notes": "The scheme prints 'Any two parts @ 5 marks (10)'."
  },
  {
   "id": "eng-2025-ol-q6-b",
@@ -9713,7 +10559,7 @@
    {
     "id": "r-1",
     "kind": "alt",
-    "verbatim": "Knurling  Drilling ",
+    "verbatim": "Knurling  Drilling",
     "marks": 6,
     "accepts": [
      "CAD software enables developers to work more quickly, cut production costs and decrease errors."
@@ -9765,9 +10611,14 @@
   "rows": [
    {
     "id": "r-1",
-    "kind": "anyN",
-    "verbatim": "Wear goggles.",
-    "marks": 8
+    "kind": "alt",
+    "verbatim": "A knurling tool is fitted to the tool post and set at 90° to work. The centre lathe is then turned on at a very slow speed. The knurling tool is moved into the workpiece. Two opposing rollers which press into the piece are moved parallel to the axis of the work producing a diamond pattern on the surface of the material. A lubricant should be used on the workpiece and rollers to help reduce friction.",
+    "marks": 8,
+    "accepts": [
+     "Wear goggles.",
+     "Protective clothing i.e. gloves",
+     "High precision and capable of producing highly complex parts."
+    ]
    }
   ],
   "stem": "stunt bike pegs",
@@ -9795,8 +10646,8 @@
     "marks": 6,
     "accepts": [
      "Measurements can be read directly from a digital display.",
-     "PCB Ensures the correct assembly of components as all component  positions are identified on the PCB.",
-     "Quicker to assemble and ensures better circuit operation when  complete."
+     "PCB Ensures the correct assembly of components as all component  positions are identified on the PCB.",
+     "Quicker to assemble and ensures better circuit operation when  complete."
     ]
    }
   ],
@@ -9824,7 +10675,7 @@
     "verbatim": "Used to check the diameter of twist drills.",
     "marks": 6,
     "accepts": [
-     "Use Smart phones  Computers "
+     "Use Smart phones  Computers"
     ]
    }
   ],
