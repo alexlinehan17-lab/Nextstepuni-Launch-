@@ -78,7 +78,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any two of the following terms: (i) Malleability, OR State two advantages of robotics in manufacturing. (ii) Compressive strength, OR State two ways in which the use of robotic technology can improve the safety of a work environment. (iii) Ductility, (iv) Tensile strength.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "The ability of a material to be hammered and/or formed without breaking.", marks: 12, accepts: ["Robotic technology can reduce the number of injuries associated with lifting heavy objects. Robotics can also be used to reduce the need for workers to lift or carry heavy objects.","A material is said to be ductile when it can be permanently stretched, without fracture. It must be plastic enough to allow deformation and strong enough not to fracture. A metal must be ductile to enable it to be stretched / drawn into wire.","The ability of a material to withstand being pulled apart or stretched.","Robotics offer precision placement of components in manufacturing.","Robotics offer precision when performing manufacturing processes such as welding & paint spraying."] },
+    { id: "r-1", kind: "alt", verbatim: "The ability of a material to be hammered and/or formed without breaking.", marks: 12, accepts: ["Robotic technology can reduce the number of injuries associated with lifting heavy objects. Robotics can also be used to reduce the need for workers to lift or carry heavy objects.","The use of exoskeleton robots can reduce the need for workers to perform repetitive motion tasks, which often lead to musculoskeletal disorders (MSDs).","A material is said to be ductile when it can be permanently stretched, without fracture. It must be plastic enough to allow deformation and strong enough not to fracture. A metal must be ductile to enable it to be stretched / drawn into wire.","The ability of a material to withstand being pulled apart or stretched.","Robotics offer precision placement of components in manufacturing.","Robotics offer precision when performing manufacturing processes such as welding & paint spraying."] },
     ],
   } as SecCard,
   {
@@ -104,7 +104,7 @@ export const CARDS: SecCard[] = [
     questionText: "Answer any three of the following in relation to manual metal arc welding: (i) Why is a flux required on the electrode during manual metal arc welding? (ii) What is the function of the welding earth clamp shown? (iii) Describe one function of slag. (iv) State two safety precautions to be observed when manual metal arc welding.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Flux protects the weld area and prevents oxidisation during welding.", marks: 12, accepts: ["The earth clamp forms the circuit when welding. It clamps onto the material being welded and when the electrode creates the arc the clamp closes the circuit.","When manual arc welding, slag forms on top of the weld helping to pull impurities out of the weld. The slag also forms a shield from the atmosphere reducing oxidisation of the weld. The shield also slows down the cooling rate of the weld when solidifying.","Always wear correct PPE such as a face welding mask."] },
+    { id: "r-1", kind: "alt", verbatim: "Flux protects the weld area and prevents oxidisation during welding.", marks: 12, accepts: ["The earth clamp forms the circuit when welding. It clamps onto the material being welded and when the electrode creates the arc the clamp closes the circuit.","When manual arc welding, slag forms on top of the weld helping to pull impurities out of the weld. The slag also forms a shield from the atmosphere reducing oxidisation of the weld. The shield also slows down the cooling rate of the weld when solidifying.","Always wear correct PPE such as a face welding mask.","Ensure the area is dry and all electric cables are in good condition."] },
     ],
     questionFigure: {
           "candId": "engineering-2021-OL-paper-q4bii-art",
@@ -126,7 +126,7 @@ export const CARDS: SecCard[] = [
     questionText: "State two safety precautions to be observed when using an electrical soldering iron.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Avoid leaving a hot soldering iron on a desk after use.", marks: 8 },
+    { id: "r-1", kind: "alt", verbatim: "Avoid leaving a hot soldering iron on a desk after use.", marks: 8, accepts: ["Avoid touching your hand or skin with the hot tip of the soldering iron when in use."] },
     ],
   } as SecCard,
   {
@@ -139,7 +139,7 @@ export const CARDS: SecCard[] = [
     questionText: "Describe, with the aid of a diagram, any one of the manufacturing processes named by you at Q5(a)(i) above.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "A thermoplastic sheet is clamped in a frame and heat is applied until the sheet begins to sag. At this stage, the mould is lifted up into the plastic sheet and vacuum pressure is applied. This causes the plastic sheet to pull against the mold and form the final shape. After cooling, the mould is lowered and the plastic part is removed from the frame. Excess material is trimmed away.", marks: 10, accepts: ["Plastic sheet Heat Final shape Vacuum Mould Hopper B - Injection moulding:","Heater Plunger Mould Molten plastic Injection nozzle Thermoplastic is softened by heating it inside an injection nozzle. The softened plastic is forced by a plunger into a cold mould where it hardens rapidly and is then ejected. Injection molding is used for the rapid molding of components.","Air Parison Split mould Plastic bottle Used to produce articles from a heated thermoplastic tube called a parison.","The mould closes around the extruded parison and air is blow inside forcing the parison out against the wall of the mould. The article is moulded by the internal shape of a split mould. The component is allowed to cool before being removed from the opened mould."] },
+    { id: "r-1", kind: "alt", verbatim: "A thermoplastic sheet is clamped in a frame and heat is applied until the sheet begins to sag. At this stage, the mould is lifted up into the plastic sheet and vacuum pressure is applied. This causes the plastic sheet to pull against the mold and form the final shape. After cooling, the mould is lowered and the plastic part is removed from the frame. Excess material is trimmed away.", marks: 10, accepts: ["Air Parison Split mould Used to produce articles from a heated thermoplastic tube called a parison.","The mould closes around the extruded parison and air is blow inside forcing the parison out against the wall of the mould. The article is moulded by the internal shape of a split mould. The component is allowed to cool before being removed from the opened mould."] },
     ],
   } as SecCard,
   {
@@ -153,7 +153,7 @@ export const CARDS: SecCard[] = [
     questionText: "State two safety precautions to be observed when using an adhesive to bond acrylic.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Always work in a well-ventilated area.", marks: 8 },
+    { id: "r-1", kind: "alt", verbatim: "Always work in a well-ventilated area.", marks: 8, accepts: ["Wear protective goggles / gloves to protect from adhesive sticking to the skin."] },
     ],
   } as SecCard,
   {
@@ -175,13 +175,27 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2022-ol-q2-d-ii", topicId: "eng-2-15", conceptId: "disadvantage-using-belt-pulley-mechanism-drive",
+    section: "A", questionRef: "2022 OL Q2(d)(ii)",
+    stem: "roll cage seat wheel rim belt and pulley mechanism Engineering - Ordinary level 3",
+    questionText: "State one disadvantage of using a belt and pulley mechanism in a drive system.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Disadvantage - Belts can stretch causing slippage resulting in loss of drive. Belts can also snap / break", marks: 4 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
     id: "eng-2022-ol-q4-d", topicId: "eng-2-10", conceptId: "safety-precautions-be-observed-when-gas",
     section: "A", questionRef: "2022 OL Q4(d)",
     stem: "Engineering - Ordinary level 5",
     questionText: "State two safety precautions to be observed when gas welding.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Check the hoses for any damage before you start welding.", marks: 8 },
+    { id: "r-1", kind: "alt", verbatim: "Check the hoses for any damage before you start welding.", marks: 8, accepts: ["Make sure the gas cylinders are secure and cannot fall over."] },
     ],
   } as SecCard,
   {
@@ -195,7 +209,30 @@ export const CARDS: SecCard[] = [
     questionText: "List two safety precautions to be observed when working with hot plastics.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Do not leave pieces of hot plastic unattended on the bench / work area.", marks: 8 },
+    { id: "r-1", kind: "alt", verbatim: "Do not leave pieces of hot plastic unattended on the bench / work area.", marks: 8, accepts: ["Wear protective gloves if handling hot sheets of plastic."] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2023-ol-q2", topicId: "eng-1-4", conceptId: "any-following-furnace-related-terms-water",
+    section: "A", questionRef: "2023 OL Q2",
+    questionText: "(i) Water-cooled oxygen lance, (ii) Pig iron, (iii) Carbon electrodes, (iv) Iron ore. (a) Explain any three of the following furnace-related terms: (i) Blast furnace, (ii) Basic oxygen furnace, (iii) Electric arc furnace. (b) With the aid of a labelled diagram, describe the operation of any one of the following furnaces: (i) Name a suitable material for each of the parts labelled on the electric go-kart below. (ii) State one reason for the selection of each material. (c) Electric go-karts have become popular in recent years. You have been asked to manufacture an electric go-kart suitable for a teenager. (i) Explain the term alloy. (ii) Name one metal alloy and name the metals used in its production. (d) Car wheel rims are often manufactured from a metal alloy.",
+    tariffModel: {"kind":"orderedSplit","notation":"Question 2: 50 marks"}, totalMarks: 50,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "The water-cooled oxygen lance is used to blow oxygen over the hot metal in the Basic Oxygen Furnace during the steel making process. The oxygen ignites the carbon dissolved in the steel, and converts it into carbon dioxide and carbon monoxide, which in turn raises the temperature of the furnace to 1700°C. This helps in melting the steel and reducing the carbon content and impurities in the steel. The lance is kept cool by water passing through the walls of the lance.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Pig iron is a produced when iron ore is smelted in the ‘Blast Furnace’. Pig iron has a high carbon content, making it very brittle.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Carbon electrodes are used in the ‘Electric Arc Furnace’ to produce heat.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "The heat is generated by means of an electric arc produced between the charge and the electrodes.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Iron ore is mined and is used as the raw material to make pig iron.", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Blast furnace", marks: null },
+    { id: "r-7", kind: "point", verbatim: "Basic oxygen furnace", marks: null },
+    { id: "r-8", kind: "point", verbatim: "Electric arc furnace", marks: null },
+    { id: "r-9", kind: "point", verbatim: "Reason: Increases the grip for the driver when holding the steering wheel.", marks: null },
+    { id: "r-10", kind: "point", verbatim: "An alloy is created by mixing metal with either another metal or a nonmetal substance. Metal alloys are generally made by melting the substances, mixing them together, and then letting them cool to room temperature, resulting in a solid material.", marks: null },
+    { id: "r-11", kind: "point", verbatim: "Alloy: Bronze Metals: Copper and tin", marks: null },
     ],
   } as SecCard,
   {
@@ -234,7 +271,7 @@ export const CARDS: SecCard[] = [
     questionText: "Identify two safety precautions to be observed when working with hot metals.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Wear heat resistant gloves when preforming heat treatment of metals.", marks: 10 },
+    { id: "r-1", kind: "alt", verbatim: "Wear heat resistant gloves when preforming heat treatment of metals.", marks: 10, accepts: ["Do not leave hot metals lying around in case people accidently pick up the piece."] },
     ],
   } as SecCard,
   {
@@ -248,7 +285,7 @@ export const CARDS: SecCard[] = [
     questionText: "Toughness, Describe two areas where robotic technology is used in health care.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Roving robots in emergency rooms can support the evaluation of patients by connecting with a remote specialist who can converse with them, review their records and examine patients with special cameras.", marks: 6 },
+    { id: "r-1", kind: "alt", verbatim: "Roving robots in emergency rooms can support the evaluation of patients by connecting with a remote specialist who can converse with them, review their records and examine patients with special cameras.", marks: 6, accepts: ["Surgical robots are beginning to be used for general surgeries. Robotic assisted surgical systems use robotic arms with tiny surgical instruments that are controlled by surgeons, potentially allowing for expert surgeons to operate remotely from anywhere in the world."] },
     ],
   } as SecCard,
   {
@@ -262,7 +299,7 @@ export const CARDS: SecCard[] = [
     questionText: "Ductility, State two ways in which exoskeleton suits can help the recovery process.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Exoskeleton suits can help people with spinal cord injuries gain some mobility, helping to improve cardiovascular health, slow the loss of fat tissue, build lean muscle mass, improve bowel function, and aid in pain management", marks: 6 },
+    { id: "r-1", kind: "alt", verbatim: "Exoskeleton suits can help people with spinal cord injuries gain some mobility, helping to improve cardiovascular health, slow the loss of fat tissue, build lean muscle mass, improve bowel function, and aid in pain management", marks: 6, accepts: ["Exoskeleton technology can help assist the disabled by helping with personal care functions like dress, shave, scratch and eat by themselves."] },
     ],
   } as SecCard,
   {
@@ -307,8 +344,40 @@ export const CARDS: SecCard[] = [
     questionText: "State two safety precautions to be observed when working with adhesives.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Wear suitable gloves to avoid the adhesives coming in contact with your skin.", marks: 8 },
+    { id: "r-1", kind: "alt", verbatim: "Wear suitable gloves to avoid the adhesives coming in contact with your skin.", marks: 8, accepts: ["Work in a well-ventilated area as adhesives can produce harmful fumes."] },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2023-ol-q6", topicId: "eng-2-11", conceptId: "any-lathe-parts-shown-b-c",
+    section: "A", questionRef: "2023 OL Q6",
+    questionText: "(a) Name any three of the lathe parts shown at A, B, C and D. (i) Clearance angle, (ii) Spindle speed, (iii) Rake angle, (iv) Feed. (b) Explain any three of the following in relation to machining: (i) Name two lathe processes used in the manufacture of the thumbscrew. What does CNC stand for? (ii) Describe one of the processes named by you, at 6(c)(i) above. Identify one other CNC process. (iii) Name two items of personal protective equipment (PPE) that should be worn when operating a lathe. OR List two advantages of using CNC machines in manufacturing. (c) The thumbscrew shown opposite was manufactured on a lathe. 3D printing is now a popular CNC process.",
+    tariffModel: {"kind":"orderedSplit","notation":"Question 6: 50 marks"}, totalMarks: 50,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "A – Four jaw chuck B – Tailstock C – Emergency stop button D – Revolving dead centre", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Without a clearance angle, no cutting would take place. The clearance angle ensures that only the cutting edge of a tool contacts the material. It provides clearance between the cutting tool face and the workpiece. This ensures a reduction in friction and heat build-up, while providing longer tool life and better surface finish.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "This is the speed at which the chuck rotates in RPM. This speed can be adjusted by selecting different gear train settings within the gear box.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "The rake angle is ground on a cutting tool to provide a sharp edge for cutting. The rake angle allows the swarf to pass over the cutting tool and away from the cutting area.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Feed", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Feed is the amount per revolution at which the cutting tool moves into the material being machined.", marks: null },
+    { id: "r-7", kind: "point", verbatim: "A knurling tool is set on centre and at 90° against a piece of round section bar. The lathe is set so that the chuck revolves at a low speed. The knurling tool is then pressed against the rotating steel bar and pressure is slowly increased until the tool produces a pattern on the bar.", marks: null },
+    { id: "r-8", kind: "point", verbatim: "Parting off Secure the parting off tool in the tool post, square to the workpiece. Check that the tool tip is in line with the centre of the workpiece. Align the tool tip outside of the line where you require to cut. Select a suitable cutting speed and direction and turn on the lathe. Engage the tool tip into the turning workpiece and cut in a continuous motion.", marks: null },
+    { id: "r-9", kind: "point", verbatim: "Safety glasses or shield.", marks: null },
+    { id: "r-10", kind: "point", verbatim: "A lab coat / overall to ensure no lose clothing can get caught in the spinning chuck. OR", marks: null },
+    { id: "r-11", kind: "point", verbatim: "CNC machines can manufacture complicated products.", marks: null },
+    { id: "r-12", kind: "point", verbatim: "CNC machines support the automation of mass production.", marks: null },
+    ],
+    questionFigure: {
+          "candId": "engineering-2023-OL-paper-q6a-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2023-OL-paper-q6a-art.png",
+          "srcHash": "03c663ffb0252fd8b6b4c8dfa2e39ba1",
+          "alt": "The table or diagram printed with 2023 OL Question 6(a), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -388,7 +457,7 @@ export const CARDS: SecCard[] = [
     questionText: "Name each of the plastic manufacturing processes shown at A, B and C.",
     tariffModel: {"kind":"fixed"}, totalMarks: 9,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "A: Compression moulding B: Blow moulding C: Vacuum forming. ii) Describe any one plastic manufacturing process:", marks: 9, accepts: ["Plastic A measured amount of thermosetting plastic polymer is placed into the cavity of the mould. Heat from the mould causes the polymer to melt. The mould cavity is shaped to form the outside of the object. The top half of the mould closes dispensing the melted plastic to form the object. Pressure is maintained to allow the plastic to harden. Once solidified the mould is opened and the part is released.","Air Parison Split mould Plastic bottle Used to produce articles from a heated thermoplastic tube called a parison. The mould closes around the extruded parison and air is blow inside forcing the parison out against the wall of the mould. The article is moulded by the internal shape of a split mould. The component is allowed to cool before being removed from the opened moulding.","A thermoplastic sheet is clamped in a frame and heat is applied until the sheet begins to sag. At this stage, the mould is lifted up into the plastic sheet and vacuum pressure is applied. This causes the plastic sheet to pull against the mold and form the final shape. After cooling, the mould is lowered and the plastic part is removed from the frame. Excess material is trimmed away."] },
+    { id: "r-1", kind: "alt", verbatim: "A: Compression moulding B: Blow moulding C: Vacuum forming. ii) Describe any one plastic manufacturing process:", marks: 9, accepts: ["Plastic A measured amount of thermosetting plastic polymer is placed into the cavity of the mould. Heat from the mould causes the polymer to melt. The mould cavity is shaped to form the outside of the object. The top half of the mould closes dispensing the melted plastic to form the object. Pressure is maintained to allow the plastic to harden. Once solidified the mould is opened and the part is released.","Air Parison Split mould Used to produce articles from a heated thermoplastic tube called a parison. The mould closes around the extruded parison and air is blow inside forcing the parison out against the wall of the mould. The article is moulded by the internal shape of a split mould. The component is allowed to cool before being removed from the opened moulding.","A thermoplastic sheet is clamped in a frame and heat is applied until the sheet begins to sag. At this stage, the mould is lifted up into the plastic sheet and vacuum pressure is applied. This causes the plastic sheet to pull against the mold and form the final shape. After cooling, the mould is lowered and the plastic part is removed from the frame. Excess material is trimmed away."] },
     ],
     questionFigure: {
           "candId": "engineering-2025-OL-paper-q5ai-art",
@@ -409,7 +478,7 @@ export const CARDS: SecCard[] = [
     questionText: "Explain any three of the following in relation to machining: (i) Cutting fluid, (ii) Clearance angle, (iii) Depth of cut, (iv) Swarf.",
     tariffModel: {"kind":"fixed"}, totalMarks: 15,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Cutting fluids are used when machining metals to improve tool life, reduce the buildup of heat, improve surface finish and flush away chips from the cutting zone.", marks: 15, accepts: ["Without a clearance angle, no cutting would take place. The clearance angle ensures that only the cutting edge of a tool contacts a piece. It provides clearance between the cutting tool face and the workpiece","Depth of cut This is the distance the cutting tool is moved into the workpiece when cutting"] },
+    { id: "r-1", kind: "alt", verbatim: "Cutting fluids are used when machining metals to improve tool life, reduce the buildup of heat, improve surface finish and flush away chips from the cutting zone.", marks: 15, accepts: ["Without a clearance angle, no cutting would take place. The clearance angle ensures that only the cutting edge of a tool contacts a piece. It provides clearance between the cutting tool face and the workpiece","This is the distance the cutting tool is moved into the workpiece when cutting","Swarf is the waste material produced when the chip is cut from a workpiece"] },
     ],
   } as SecCard,
   {
@@ -437,7 +506,7 @@ export const CARDS: SecCard[] = [
     questionText: "Specify any two items of personal protective equipment (PPE) that should be worn when operating a centre lathe. OR Give two advantages of using CNC machines.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Wear goggles.", marks: 8 },
+    { id: "r-1", kind: "alt", verbatim: "Wear goggles.", marks: 8, accepts: ["Protective clothing i.e. gloves OR"] },
     ],
   } as SecCard,
   {
@@ -465,7 +534,7 @@ export const CARDS: SecCard[] = [
     questionText: "Give two examples where a Printed Circuit Board (PCB) may be used.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "anyN", verbatim: "Used to check the diameter of twist drills.", marks: 6 },
+    { id: "r-1", kind: "alt", verbatim: "Used to check the diameter of twist drills.", marks: 6, accepts: ["Smart phones • Computers •"] },
     ],
   } as SecCard,
   {

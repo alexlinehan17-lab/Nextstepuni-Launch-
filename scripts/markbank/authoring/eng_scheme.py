@@ -393,6 +393,10 @@ class EngScheme:
                     continue
                 page = doc[n]
                 rows = _lines(page)
+                # The answer column's left edge: where the prose on this page
+                # actually starts, not a guess at it.
+                wide = [r[0] for r in rows if len(r[4]) > 40]
+                margin = min(wide) if wide else 0.0
                 art = self._artwork(page)
                 right = page.rect.width - 60
                 for x0, y0, x1, y1, text, bold in rows:
@@ -431,6 +435,22 @@ class EngScheme:
                         continue
                     key = (q, letter, roman)
                     if key not in out:
+                        continue
+                    # A callout printed on a diagram, identified by where it
+                    # sits and what it is rather than by the artwork it
+                    # labels: far to the right of the answer column, a word or
+                    # two, closing on nothing. The answers run from the left
+                    # margin; "impression" at x538 and "sample" at x442 are
+                    # labels on a Vickers indentation diagram, and the
+                    # sentence assembly ran them into "the length of the
+                    # diagonals of the indentation are ... measured."
+                    #
+                    # All three conditions are needed. The right-hand column
+                    # of a two-column list is also far right, and it is made
+                    # of whole marking points, which is what the word count
+                    # and the punctuation separate it from.
+                    if x0 > margin + 250 and len(body_text.split()) <= 3 \
+                            and not re.search(r'[.?!:]$', body_text.strip()):
                         continue
                     out[key]['points'].append(body_text)
         self._body = out
@@ -508,8 +528,13 @@ class EngScheme:
                 # answer begins mid-sentence is a card a student screenshots.
                 # 42 rows across the subject began that way.
                 nxt = next((x.strip() for x in lines[n + 1:] if x.strip()), '')
-                if re.search(r'[.?!:]$', line.strip()) and not re.match(
-                        r'[a-z]', nxt):
+                # ... but a lone lowercase WORD after a closed sentence is a
+                # diagram callout, not the sentence running on: "TIG welding
+                # is generally a manual operation." followed by "electrode".
+                # Carried on, the label lands inside the marking point and no
+                # such sentence is in the scheme, so the point is refused.
+                runs_on = re.match(r'[a-z]', nxt) and len(nxt.split()) > 1
+                if re.search(r'[.?!:]$', line.strip()) and not runs_on:
                     out.append(' '.join(cur).strip())
                     cur = []
             if cur:

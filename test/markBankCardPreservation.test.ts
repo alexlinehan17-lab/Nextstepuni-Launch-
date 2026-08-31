@@ -513,7 +513,21 @@ const decks = [
   // children only when the parent's own text ran under 40 characters, and
   // "Discuss the contribution that any one of the following has made to
   // technology:" is 77 and names nobody. Nothing removed.
-  ['engineering:higher', ENG_HIGHER, 138, 'a59827ab3e806fa2d8ad2197782e1db5afea96ef366dd280816aebf3fb3aef9d'],
+  // 2026-08-31 (later still): 138 -> 141. A callout printed on a diagram is
+  // identified by where it sits and what it is: far right of the answer
+  // column, a word or two, closing on nothing. The sentence assembly had been
+  // running them into the middle of marking points — "the indentation are
+  // impression measured", "as the heated flames austenite structure changes"
+  // — and no such sentence is in the scheme, so the gate refused each one.
+  //
+  // Four cards REMOVED. eng-2024-hl-q5-b's entire 18-mark answer was the
+  // table header "% Metal B", which is the callout rule doing its job. The
+  // other three hold a point where the scheme's own OR branches are welded
+  // together — "Both types can be turned on and off. process, this expands
+  // the tool carrying capacity" is the tail of one branch and the middle of
+  // the next — and the gate is right that no such sentence exists:
+  // eng-2021-hl-q8-c-ii, eng-2021-hl-q9-c-ii, eng-2025-hl-q8-c-ii.
+  ['engineering:higher', ENG_HIGHER, 141, '946af87d84d53a997ccbe6d8b9523cdc9f5f8366968e75ce1057887e105ec35b'],
   // 2026-08-31: 10 -> 24, same reader work as Higher above. Four cards
   // REMOVED. eng-2021-ol-q7-c-ii asked for the electronic symbol of each
   // component named and answered "of round bars or internal diameters of
@@ -523,7 +537,8 @@ const decks = [
   // eng-2023-ol-q7-c-i (which answered "State one use of a solenoid" with a
   // vernier caliper) and eng-2025-ol-q6-c-ii.
   // 2026-08-31 (later): 24 -> 30, the same colon rule. Nothing removed.
-  ['engineering:ordinary', ENG_ORDINARY, 30, '28d663927b59344a41a98c20b25c7fc97c371c16743d63bb8e7607690841c0c9'],
+  // 2026-08-31 (later still): 30 -> 33, the same callout rule. Nothing removed.
+  ['engineering:ordinary', ENG_ORDINARY, 33, 'e50c7fdb085af38b9b41df93ad6133e6ea94d706d3fe42e6793712a6fa89af8f'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -538,6 +553,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7955);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7961);
   });
 });
