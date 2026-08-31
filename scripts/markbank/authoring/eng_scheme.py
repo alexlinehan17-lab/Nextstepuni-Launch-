@@ -85,6 +85,9 @@ WORD = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6,
         'seven': 7, 'eight': 8, 'nine': 9, 'ten': 10, 'eleven': 11,
         'twelve': 12, 'thirteen': 13}
 OR_ROW = re.compile(r'^(?:Or|OR)$')
+# The letter each of i, v and x follows, when a question is lettering
+# rather than numbering its romans.
+FOLLOWS = {'i': 'h', 'v': 'u', 'x': 'w'}
 # Ordinary Level sets its answers in a two-column table with the mark cell
 # beside the answer, and the cell lands wherever the row join puts it -- MID
 # SENTENCE, in "Wear heat resistant gloves when preforming heat treatment of
@@ -166,11 +169,24 @@ def _columns(rows, page_width):
     if not heads:
         return {}
     edges = sorted({round(x0) for x0, _, _ in heads})
-    # A column owns the x range from its own left edge to the next one.
+    # Two heads a point apart are the same column printed on different rows.
+    merged = [edges[0]]
+    for e in edges[1:]:
+        if e - merged[-1] > 40:
+            merged.append(e)
+    # A column's boundary is HALFWAY to the next one, not a fixed inset from
+    # its own head. 2022 Higher indents its heads about eighteen points to the
+    # RIGHT of the rows beneath them -- heads at x78, x252, x426 over content
+    # at x60, x237, x410 -- so a fixed inset put every row in the column to
+    # its left and dropped the first column's rows off the page entirely.
+    # That paper read 29 part tariffs where 2023 read 64, and 289 leaves
+    # across the subject were unpriced and climbing to their question.
     bands = []
-    for i, left in enumerate(edges):
-        right = edges[i + 1] if i + 1 < len(edges) else page_width + 1
-        bands.append((left - 12, right - 12))
+    for i, left in enumerate(merged):
+        lo = 0.0 if i == 0 else (merged[i - 1] + left) / 2.0
+        hi = ((left + merged[i + 1]) / 2.0 if i + 1 < len(merged)
+              else page_width + 1)
+        bands.append((lo, hi))
     return bands
 
 
@@ -355,6 +371,17 @@ class EngScheme:
                 # hides the roman behind it.
                 body = re.sub(r'^[\u2010-\u2015\-]\s*', '', body).strip()
             r = ROMAN.match(body)
+            if r and not m and r.group(1) in FOLLOWS and letter == FOLLOWS[r.group(1)] \
+                    and roman is None:
+                # "(i)" after "(h)" is the LETTER i, not roman one. The marker
+                # pattern leaves i, v and x out because alone they are romans
+                # far more often than letters -- but a question that runs (g),
+                # (h), (i) is lettering, and Question 1 does exactly that in
+                # every Higher paper. Read as a roman, part (i) was priced
+                # under (g) and had no tariff of its own, so it resolved up to
+                # the whole question and took all fourteen parts with it.
+                letter, roman, r = r.group(1), None, None
+                body = body[ROMAN.match(body).end():].strip()
             if r:
                 # A roman on a line of its own CONTINUES the letter's group
                 # rather than starting one: the total below covers them both.

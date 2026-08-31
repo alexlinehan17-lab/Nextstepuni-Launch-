@@ -549,7 +549,27 @@ const decks = [
   // eight." and then "Two @ 7 marks, six @ 6 marks", which prices some parts
   // at 7 and some at 6 without saying which, and that one stays refused.
   // Nothing removed.
-  ['engineering:higher', ENG_HIGHER, 163, 'bbab7115a9d9744a79f9dbf94e8ab1bb07e144100c6b4c38f197dcfac1f75fff'],
+  // 2026-08-31 (seventh pass): 163 -> 190. The tariff table's COLUMNS were
+  // mis-cut. 2022 and 2024 Higher indent their question heads about eighteen
+  // points to the RIGHT of the rows beneath them — heads at x78, x252, x426
+  // over content at x60, x237, x410 — and the bands were a fixed inset from
+  // each head, so every row landed in the column to its LEFT and the first
+  // column's rows fell off the page. 2022 Higher read 29 part tariffs where
+  // 2023 read 64; 289 leaves across the subject were unpriced and climbing to
+  // their whole question. Boundaries are now halfway between heads: 367 part
+  // tariffs, and the printed totals still agree on every cell but the seven
+  // known ones.
+  //
+  // TWELVE SURVIVING CARDS HAD THE WRONG MARK TOTAL, read from a neighbouring
+  // question's column: eng-2022-hl-q4-a-i said 8 and the page says 4 (8 is
+  // Question 5's); eng-2024-hl-q4-a-ii said 15 and it is 8.
+  //
+  // Twelve whole-question and whole-part cards were REMOVED because their
+  // parts are now priced and carded individually — eng-2022-hl-q2, -q3, -q6,
+  // -q4-b-i, -q4-c, -q5-c-i, eng-2024-hl-q1-f, -q5-c, eng-2025-hl-q2-d,
+  // -q3-b-iii, -q4-a-ii, -q5-a-i. 32 asks gained, 15 lost where a newly
+  // separated part then fails its own provenance check; net +17.
+  ['engineering:higher', ENG_HIGHER, 190, '2b8636ec9ddbdb2c15905480e517688f84cc75c2bc81e0ae343c3a93055a3acd'],
   // 2026-08-31: 10 -> 24, same reader work as Higher above. Four cards
   // REMOVED. eng-2021-ol-q7-c-ii asked for the electronic symbol of each
   // component named and answered "of round bars or internal diameters of
@@ -565,7 +585,10 @@ const decks = [
   // A, B, C and D" with no labelled figure to show them on. The deck build
   // was already dropping it; the author now refuses it, so the authored file
   // and the deck agree about what the subject holds.
-  ['engineering:ordinary', ENG_ORDINARY, 71, '3089b3903dc545650489fbac38c0aeba569aa80a1137a7c3dd1f50e3c8426a00'],
+  // 2026-08-31 (seventh pass): 71 -> 69, same column fix. REMOVED
+  // eng-2025-ol-q5-a-i and eng-2025-ol-q6-b, both whole-part cards whose
+  // romans are now priced separately and refused on their own provenance.
+  ['engineering:ordinary', ENG_ORDINARY, 69, '485b6ea875a667858635c5c29a9bcc414d68952aa422be58dd49b1d6e24f10d6'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -580,6 +603,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(8021);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(8046);
   });
 });
