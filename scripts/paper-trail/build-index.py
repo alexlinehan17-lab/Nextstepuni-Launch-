@@ -361,6 +361,13 @@ QA_PASSED_ANSWER_PROFILES = {
     # including ~25 EV maps wrongly live since the H&A wave; purged),
     # Accounting HL IV (scheme numbers its working lines), Geography OL IV
     # Part Two 2025 (anchored on the Part One short-answer key).
+    # IV sweep wave 2: Maths IV after the contents-aware Páipéar band split,
+    # Irish front-matter skip, and the divider-band exception to the
+    # short-answer guard ('1.'-numbered papers vs 'CEIST N' scheme heads) —
+    # the same fixes corrected cross-paper bands in a dozen committed EV years
+    # (2019 OL P2's crescent chip opened Paper 1's Q5 before this).
+    ('mathematics', 'higher', 'iv'),
+    ('mathematics', 'ordinary', 'iv'),
     ('agricultural-science', 'higher', 'iv'),
     ('agricultural-science', 'ordinary', 'iv'),
     ('art', 'higher', 'iv'),

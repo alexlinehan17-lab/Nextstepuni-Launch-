@@ -331,7 +331,8 @@ def _marker_map(hits, band_start, band_end):
     return best
 
 
-def detect_scheme_markers(doc, band_start, band_end, want_ns, paper_det=None):
+def detect_scheme_markers(doc, band_start, band_end, want_ns, paper_det=None,
+                          divider_band=False):
     """The detector whose in-band number-set best covers the paper's questions.
 
     Grammar guard: a 'Question N' scheme marker always heads a major structured
@@ -339,10 +340,17 @@ def detect_scheme_markers(doc, band_start, band_end, want_ns, paper_det=None):
     reconcile against those — its answers live in a compact short-answer key, not
     the essay solutions. So when the paper is not 'question'-headed we exclude the
     'question' scheme detector (else e.g. a Geography Part One short-answer book
-    would map onto the Part Two essay scheme and ship a confidently-wrong chip)."""
+    would map onto the Part Two essay scheme and ship a confidently-wrong chip).
+
+    Divider-band exception: inside a P1/P2 divider band (shared Maths-style
+    scheme) both siblings are full papers with structured per-question solutions
+    inside their OWN bands — there is no competing short-answer key for the
+    guard to protect. 2012-era Maths numbers the paper '1.' but heads scheme
+    solutions 'CEIST 1'; the guard blocked that legitimate pairing."""
     best, best_score = {}, -1
     for name, fn in DETECTORS:
-        if paper_det is not None and paper_det != "question" and name == "question":
+        if (paper_det is not None and paper_det != "question" and name == "question"
+                and not divider_band):
             continue
         m = _marker_map(fn(doc), band_start, band_end)
         score = len(set(m) & want_ns)
@@ -351,17 +359,55 @@ def detect_scheme_markers(doc, band_start, band_end, want_ns, paper_det=None):
     return best
 
 
-def find_band(scheme, divider_title):
-    """0-based page index of the FIRST top-of-page occurrence of the band divider
-    title (e.g. 'Paper 1'). Returns None if not found."""
+def find_band_pages(scheme, divider_title):
+    """All 0-based page indices with a top-of-page occurrence of the divider
+    title (e.g. 'Paper 1' / 'Páipéar 1'), in order."""
+    out = []
     for pi, page in enumerate(scheme):
         if page.rotation:
             continue
         H = page.rect.height
         for r in page.search_for(divider_title):
             if r.y0 < H * DIVIDER_TOP_FRAC:
-                return pi
-    return None
+                out.append(pi)
+                break
+    return out
+
+
+def find_paper_band(scheme, k):
+    """[start, end) 0-based page band for 'Paper k' in a shared P1+P2 scheme,
+    or None. Contents-aware: a cover/contents page names BOTH papers at the top
+    (the Maths schemes do, EN and GA alike), so single-occurrence logic banded
+    Paper 2 at the contents page and its chips fell through to Paper 1's
+    questions — a cross-paper mis-map that count-reconcile cannot see. The
+    robust reading: discard pages naming both papers, then the Paper-2 divider
+    is the first of its pages past EVERY Paper-1 page (running per-page
+    headers make 'last occurrence' equally wrong in the other direction)."""
+    def occ(n):
+        pages = set()
+        for t in (f"Paper {n}", f"Páipéar {n}", f"PÁIPÉAR {n}"):
+            pages |= set(find_band_pages(scheme, t))
+        return pages
+    p1, p2 = occ(1), occ(2)
+    shared = p1 & p2
+    p1, p2 = sorted(p1 - shared), sorted(p2 - shared)
+    if not p2:
+        # No Paper-2 divider at all: Paper 1 runs to the end (or the scheme is
+        # genuinely single-paper); Paper 2 cannot be banded.
+        return (min(p1), len(scheme)) if k == 1 and p1 else None
+    # The boundary is the first Paper-2 page with the FEWEST Paper-1 pages
+    # after it — ideally zero, but the SEC's own 2016-era schemes repeat the
+    # "Marking Scheme – Paper 1 …" boilerplate header inside the Paper-2 half,
+    # so a single stray must not sink the whole band.
+    def strays(b):
+        return sum(1 for p in p1 if p >= b)
+    best = min(strays(b) for b in p2)
+    boundary = next(b for b in p2 if strays(b) == best)
+    if p1 and boundary <= min(p1):
+        return None  # every Paper-2 mention precedes Paper 1 — not a real split
+    if k == 1:
+        return (p1[0], boundary) if p1 else None
+    return (boundary, len(scheme))
 
 
 # SEC marking-scheme front-matter boilerplate. Schemes that prefix a numbered
@@ -382,6 +428,16 @@ FRONT_MATTER_PHRASES = (
     "candidates must attempt",
     "candidates should answer",
     "write your examination number",
+    # Irish-medium (IV) scheme boilerplate — the same general-guideline pages,
+    # numbered 1..N, that decoy the detectors when not skipped (2012-era Maths
+    # IV anchored every chip on the penalties list before these were added).
+    "treoirlínte ginearálta do scrúdaitheoirí",
+    "na treoirlínte a chur i bhfeidhm",
+    "cuirtear trí chineál pionóis",
+    "nótaí ginearálta maidir leis an marcáil",
+    "marcanna breise as ucht freagairt trí ghaeilge",
+    "scéim mharcála a úsáid",
+    "ní foláir d'iarrthóirí",
     "write all answers",
     "general directions",
 )
@@ -553,19 +609,20 @@ def map_paper(paper_path, scheme_path, band_strategy, fallback_only=False):
     if fallback_only:
         return drop("fallback-only pass")
 
-    # Band for this paper within (possibly shared) scheme.
+    # Band for this paper within (possibly shared) scheme (EN + GA titles,
+    # contents-page aware — see find_paper_band).
     if band_strategy[0] == "divider":
         k = band_strategy[1]
-        band_start = find_band(scheme, f"Paper {k}")
-        if band_start is None:
+        band = find_paper_band(scheme, k)
+        if band is None:
             return drop(f"band 'Paper {k}' not found")
-        nxt = find_band(scheme, f"Paper {k + 1}")
-        band_end = nxt if (nxt is not None and nxt > band_start) else len(scheme)
+        band_start, band_end = band
     else:
         band_start, band_end = 0, len(scheme)
 
     fm_start = front_matter_end(scheme, band_start, band_end)
-    markers = detect_scheme_markers(scheme, fm_start, band_end, want_ns, detector)
+    markers = detect_scheme_markers(scheme, fm_start, band_end, want_ns, detector,
+                                    divider_band=(band_strategy[0] == "divider"))
     matched = sum(1 for n in want_ns if n in markers)
     stats["conf"] = round(matched / N, 3)
     # Strict gate: every paper question must have a scheme marker.
@@ -666,6 +723,15 @@ def map_paper(paper_path, scheme_path, band_strategy, fallback_only=False):
         stats["reason"] = "no questions mapped"
         return None, stats
 
+    # Chip order must follow the paper's print order (the viewer derives crop
+    # bands from consecutive anchors). A non-monotonic n sequence means the
+    # paper-side headers captured a section restart — drop, never ship (PE 2023
+    # wrote 9..13,1..8 before this gate; vitest caught it post-hoc).
+    ns = [int(q["n"]) for q in qout]
+    if any(b <= a for a, b in zip(ns, ns[1:])):
+        stats["reason"] = "paper chip order not monotonic (section restart)"
+        return None, stats
+
     sidecar = {
         "v": SIDECAR_V,
         "paperFileid": os.path.basename(paper_path),
@@ -679,6 +745,35 @@ def map_paper(paper_path, scheme_path, band_strategy, fallback_only=False):
 
 
 # ─── pairing + band strategy ─────────────────────────────────────────────────
+
+# Content-verified NO-GO list: (code, component, levelCode-or-None, lang-or-None,
+# year-or-None). These pairs produce maps that pass every structural gate but are
+# WRONG at the content level (render-verified) — the engine must never emit them,
+# or each sweep resurrects a deleted defect. None = wildcard.
+NEVER_MAP = (
+    # Art practical components (Design/Craftwork/Coursework): the shared scheme's
+    # criteria grids decoy-anchor 'Q.N' from the wrong component (2016 Design Q6
+    # opened the H&A 'Berry Dress' rows). All levels, both languages.
+    ("LC014", "010", None, None, None),
+    ("LC014", "011", None, None, None),
+    ("LC014", "027", None, None, None),
+    # Accounting HL IV: the scheme numbers its working LINES (Q9 chip opened
+    # arithmetic item 9 of another solution). EV heads real 'Question N' blocks.
+    ("LC032", "000", "A", "IV", None),
+    # Geography OL IV 2025 Part Two: anchors the Part One short-answer key.
+    ("LC005", "043", "G", "IV", 2025),
+)
+
+
+def never_map(d, year):
+    for code, comp, lvl, lang, yr in NEVER_MAP:
+        if (d["code"] == code and d["component"] == comp
+                and lvl in (None, d["levelCode"])
+                and lang in (None, d["lang"].upper())
+                and yr in (None, year)):
+            return True
+    return False
+
 
 def build_pairs(rows, include_done=False, langs=None, levels=None):
     """[(paperRow, schemeRow, band_strategy, levelCode)] for in-scope papers.
@@ -700,6 +795,8 @@ def build_pairs(rows, include_done=False, langs=None, levels=None):
             continue  # --codes filters unconditionally (targeted re-runs)
         if d["levelCode"] not in SCOPE_LEVELS or d["lang"] not in langs:
             continue
+        if r["view"] == "exampapers" and never_map(d, int(r["year"])):
+            continue  # content-verified wrong (NEVER_MAP) — never emit
         if int(r["year"]) not in SCOPE_YEARS or d["component"] in SKIP_COMPONENTS:
             continue
         key = (d["code"], int(r["year"]), d["levelCode"], d["lang"])
@@ -834,7 +931,17 @@ def main():
     # regenerate (the bespoke-authored ones most of all). Same for levels.
     _sidecar_re = re.compile(r"^(LC|JC|LB)\d{3}([A-Z])L?P[A-Z0-9]{3}(EV|IV|BV)\.pdf\.json$", re.I)
 
-    def in_scope_sidecar(fn):
+    # Committed sidecars the generic engine cannot regenerate (special-cased
+    # years authored via FILEID_FIXES or hand-verified one-offs). Clearing one
+    # of these silently unships it on every sweep — preserve by exact name.
+    CLEARING_PRESERVE = {
+        (2011, "LC014ALP013IV.pdf.json"),  # Art H&A IV 2011 (FILEID_FIXES year)
+        (2011, "LC003ALP100IV.pdf.json"),  # Maths HL P1 IV 2011 (FILEID_FIXES year)
+    }
+
+    def in_scope_sidecar(fn, year):
+        if (year, fn) in CLEARING_PRESERVE:
+            return False
         m = _sidecar_re.match(fn)
         if not m:
             return False  # unrecognised name — never delete what we can't parse
@@ -848,7 +955,7 @@ def main():
                 continue
             if os.path.isdir(ydp):
                 for fn in os.listdir(ydp):
-                    if in_scope_sidecar(fn):
+                    if in_scope_sidecar(fn, int(yd)):
                         os.remove(os.path.join(ydp, fn))
 
     manifest_lines, report_rows = [], []
