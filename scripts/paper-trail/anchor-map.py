@@ -219,11 +219,25 @@ def _det_lead_int(doc):
         if page.rotation:
             continue
         H = page.rect.height
-        for lw in line_groups(page):
+        groups = line_groups(page)
+        blocks_with = Counter(lw[0][5] for lw in groups if lw)
+        for lw in groups:
             if not lw:
                 continue
             w = lw[0]
             m = re.fullmatch(r"(\d{1,2})\.", w[4])
+            # Dotless variant: the SEC sometimes drops the dot on a lone
+            # question marker (2022 Physics OL IV prints a bare '4' on its own
+            # line beside the text block). Accepted only when the line is a
+            # margin-left number whose BLOCK carries more lines (page numbers
+            # sit in single-line blocks or outside LEAD_INT_X) and it is not
+            # in the footer zone.
+            if m is None:
+                bare = re.fullmatch(r"(\d{1,2})", w[4])
+                if bare and (len(lw) >= 3
+                             or (len(lw) == 1 and blocks_with[w[5]] > 1)) \
+                        and w[1] / H < 0.9:
+                    m = bare
             if m and w[0] < LEAD_INT_X:
                 hits.append((int(m.group(1)), pi, w[0], w[1] / H))
     return hits
@@ -328,6 +342,21 @@ def _marker_map(hits, band_start, band_end):
             key = (len({p for p, _ in m.values()}), len(m))
             if key > best_key:
                 best, best_key = m, key
+    # Neighbour-consistent fill: some schemes indent a lone question's marker
+    # off the modal column (2018 Physics IV prints Q5 at x57 amid an x28 run),
+    # so the x-cluster filter discards a real marker. Re-admit an off-column
+    # hit ONLY where it slots strictly between its numeric neighbours' page/y
+    # positions — a front-matter or summary duplicate cannot satisfy that.
+    if best:
+        for n, pi, x, y in sorted(inb, key=lambda h: (h[1], h[3])):
+            if n in best:
+                continue
+            lower = max((m for m in best if m < n), default=None)
+            upper = min((m for m in best if m > n), default=None)
+            if lower is None or upper is None:
+                continue  # only interior gaps — edges have no bracketing proof
+            if best[lower] < (pi, y) < best[upper]:
+                best[n] = (pi, y)
     return best
 
 
@@ -438,6 +467,7 @@ FRONT_MATTER_PHRASES = (
     "marcanna breise as ucht freagairt trí ghaeilge",
     "scéim mharcála a úsáid",
     "ní foláir d'iarrthóirí",
+    "ba chóir na pointí seo a leanas",
     "write all answers",
     "general directions",
 )
@@ -450,7 +480,10 @@ def front_matter_end(scheme, band_start, band_end):
     last_fm = -1
     for pi in range(band_start, min(band_start + 8, band_end)):
         t = scheme[pi].get_text("text").lower()
-        if any(p in t for p in FRONT_MATTER_PHRASES):
+        # Some IV schemes extract with every space glued away ("bachóirnapointí…"),
+        # so match phrases with spaces stripped from BOTH sides.
+        t_glued = t.replace(" ", "")
+        if any(p in t or p.replace(" ", "") in t_glued for p in FRONT_MATTER_PHRASES):
             last_fm = pi
     return last_fm + 1 if last_fm >= band_start else band_start
 
