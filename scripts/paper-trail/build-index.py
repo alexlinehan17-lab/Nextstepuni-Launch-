@@ -383,6 +383,13 @@ QA_PASSED_ANSWER_PROFILES = {
     ('classical-studies', 'ordinary', 'iv'),
     ('politics-and-society', 'higher', 'iv'),
     ('politics-and-society', 'ordinary', 'iv'),
+    # IRISH (LC001) lights for the first time: 25 committed per-question
+    # léamhthuiscint maps from the IV reading wave (render-verified now — HL
+    # 2024's ChatGPT questions open their exact marked answers) plus 4
+    # section-level gap years via irish_sections.py ("Ceist 3 · Filíocht"
+    # labelled chips onto each section's full marking block).
+    ('irish', 'higher', 'iv'),
+    ('irish', 'ordinary', 'iv'),
     ('jc-irish', 'higher', 'iv'),
     ('jc-irish', 'ordinary', 'iv'),
     ('jc-mathematics', 'higher', 'iv'),
