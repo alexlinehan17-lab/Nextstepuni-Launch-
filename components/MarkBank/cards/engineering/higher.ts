@@ -848,7 +848,7 @@ export const CARDS: SecCard[] = [
     id: "eng-2024-hl-q8-c-ii", topicId: "eng-2-11", conceptId: "identify-any-lubricants-commonly-used-when",
     section: "A", questionRef: "2024 HL Q8(c)(ii)",
     stem: ". (50 marks)",
-    questionText: "Identify any two lubricants commonly used when machining. Outline two safety features integrated into computerised manufacturing machines.",
+    questionText: "Identify any two lubricants commonly used when machining. OR Outline two safety features integrated into computerised manufacturing machines.",
     tariffModel: {"kind":"orderedSplit","notation":"4 + 4"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Cutting tools are guarded.", marks: null },

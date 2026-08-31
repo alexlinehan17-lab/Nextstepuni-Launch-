@@ -373,6 +373,7 @@ class Paper:
         q = letter = roman = None
         open_key = None          # the part a continuation block may extend
         or_pending = False       # a standalone OR announces a choice variant
+        or_part = False          # ... of a PART, and of everything under it
         dot_heads = 0            # how many 'N.'-style heads were accepted
         qkind = {}               # q -> 'letter'|'roman': which marker opened it
         blocks = list(self._all_blocks())
@@ -403,7 +404,12 @@ class Paper:
             # twice this way every year. The variant files under -q so its
             # parts never collide with the first printing's.
             if re.fullmatch(r'OR', text):
-                or_pending = True
+                # The alternative runs from here to the end of the question:
+                # 2024 HL Q8 sets a second (c) with its own (i) and (ii), and
+                # each of them lands on the key its twin already holds. The
+                # flag has to outlast the (c) that opens the branch or only
+                # the (c) itself is separated and its children still weld.
+                or_pending = or_part = True
                 continue
             if text.startswith('OR ') and QHEAD.match(text[3:]):
                 or_pending, text = True, text[3:]
@@ -475,7 +481,7 @@ class Paper:
                     if m.group(2):
                         dot_heads += 1
                     q = -found if variant else found
-                    or_pending = False
+                    or_pending = or_part = False
                     letter, roman, open_key = None, None, None
                     self.stems.setdefault((q, None), [])
                     rest = text[m.end():].strip()
@@ -560,6 +566,18 @@ class Paper:
                 else:
                     roman = found_roman
                 key = (q, letter, roman)
+                # A part may be printed TWICE, the second time as an
+                # alternative the student may take instead: 2024 HL Q8 sets
+                # (c) about a sealed lubrication system and then, after a
+                # standalone OR, a second (c) about CNC milling. Both (c)(ii)s
+                # land on one key, and joined without the OR the card read as
+                # one ask welded to another — "Identify any two lubricants
+                # commonly used when machining. Outline two safety features
+                # integrated into computer numerical control." The paper's own
+                # word goes back between them, which is how the alternatives
+                # printed inline already read.
+                if or_part and self.parts.get(key):
+                    self.parts[key].append('OR')
                 self.parts.setdefault(key, [])
                 if rest:
                     self.parts[key].append(rest)
@@ -587,6 +605,14 @@ class Paper:
                 self.stems.setdefault((q, letter), []).append(text)
             open_key = None
 
+        # An alternative may repeat a marker and put nothing after it -- 2021
+        # OL Q3 sets "(d) Explain any two of the following terms:" and then,
+        # after the OR, a bare "(d)" whose own romans carry the text. The OR
+        # placed on the letter then has nothing to join, and a part ending in
+        # "OR" reads as an ask cut off mid-choice.
+        for blocks in self.parts.values():
+            while blocks and blocks[-1].strip() == 'OR':
+                blocks.pop()
         self._adopt_unlettered()
 
     def _all_blocks(self):

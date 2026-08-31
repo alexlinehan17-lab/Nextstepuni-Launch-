@@ -46,10 +46,10 @@ export const CARDS: SecCard[] = [
     year: 2021, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
-    id: "eng-2021-ol-q3-d", topicId: "eng-3-8", conceptId: "malleability-advantages-robotics-manufacturing",
+    id: "eng-2021-ol-q3-d", topicId: "eng-3-8", conceptId: "malleability-or-advantages-robotics-manufacturing",
     section: "A", questionRef: "2021 OL Q3(d)",
     stem: "Engineering ‐ Ordinary level 4",
-    questionText: "Explain any two of the following terms: (i) Malleability, State two advantages of robotics in manufacturing. (ii) Compressive strength, State two ways in which the use of robotic technology can improve the safety of a work environment. (iii) Ductility, (iv) Tensile strength.",
+    questionText: "Explain any two of the following terms: (i) Malleability, OR State two advantages of robotics in manufacturing. (ii) Compressive strength, OR State two ways in which the use of robotic technology can improve the safety of a work environment. (iii) Ductility, (iv) Tensile strength.",
     tariffModel: {"kind":"fixed"}, totalMarks: 12,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "The ability of a material to be hammered and/or formed without breaking.", marks: 12, accepts: ["Robotic technology can reduce the number of injuries associated with lifting heavy objects. Robotics can also be used to reduce the need for workers to lift or carry heavy objects.","A material is said to be ductile when it can be permanently stretched, without fracture. It must be plastic enough to allow deformation and strong enough not to fracture. A metal must be ductile to enable it to be stretched / drawn into wire.","The ability of a material to withstand being pulled apart or stretched.","Robotics offer precision placement of components in manufacturing.","Robotics offer precision when performing manufacturing processes such as welding & paint spraying."] },
@@ -259,7 +259,7 @@ export const CARDS: SecCard[] = [
     id: "eng-2025-ol-q6-c-ii", topicId: "eng-2-13", conceptId: "any-processes-named-you-q6-c",
     section: "A", questionRef: "2025 OL Q6(c)(ii)",
     stem: "stunt bike pegs",
-    questionText: "Describe any one of the processes named by you, at Q6(c)(i) above. Name one CNC machine commonly used in the engineering workshop.",
+    questionText: "Describe any one of the processes named by you, at Q6(c)(i) above. OR Name one CNC machine commonly used in the engineering workshop.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "used in the engineering workshop.", marks: 6 },
@@ -273,7 +273,7 @@ export const CARDS: SecCard[] = [
     id: "eng-2025-ol-q6-c-iii", topicId: "eng-2-11", conceptId: "specify-any-items-personal-protective-equipment",
     section: "A", questionRef: "2025 OL Q6(c)(iii)",
     stem: "stunt bike pegs",
-    questionText: "Specify any two items of personal protective equipment (PPE) that should be worn when operating a centre lathe. Give two advantages of using CNC machines.",
+    questionText: "Specify any two items of personal protective equipment (PPE) that should be worn when operating a centre lathe. OR Give two advantages of using CNC machines.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Wear goggles.", marks: 8 },

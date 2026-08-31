@@ -503,6 +503,10 @@ const decks = [
   // eng-2021-ol-q7-c-ii asked for the electronic symbol of each component
   // named and answered "of round bars or internal diameters of holes", which
   // is a fragment of the vernier caliper answer from another part entirely.
+  // 2026-08-31: 10 -> 21, same reader work as Higher above. One card REMOVED:
+  // eng-2021-ol-q7-c-ii asked for the electronic symbol of each component
+  // named and answered "of round bars or internal diameters of holes", which
+  // is a fragment of the vernier caliper answer from another part entirely.
   ['engineering:ordinary', ENG_ORDINARY, 21, 'ebad4215e07a526701bb89c5315225e3eba52f0684e626adb0f94d706f5b33fb'],
 ] as const;
 
