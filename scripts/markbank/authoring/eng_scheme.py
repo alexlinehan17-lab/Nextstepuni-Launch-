@@ -88,6 +88,12 @@ TOTAL_ONLY = re.compile(r'^\((\d{1,3})\)$')
 WORD = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6,
         'seven': 7, 'eight': 8, 'nine': 9, 'ten': 10, 'eleven': 11,
         'twelve': 12, 'thirteen': 13}
+# A heading that tells the EXAMINER or the candidate what to do, rather than
+# answering: "Plot the graph.", "Labels 1 + 1 + 1". Taken as the answer it
+# gave a ten-mark card the words "2 4 6 8", which is a graph's axis.
+LEAD_INSTRUCTION = re.compile(
+    r'^(?:plot|draw|sketch|labels?|award|allow|accept|complete|marks?|use)\b',
+    re.I)
 OR_ROW = re.compile(r'^(?:Or|OR)$')
 # How far left of its own head a column's rows may start.
 INSET = 24.0
@@ -674,6 +680,25 @@ class EngScheme:
         b = self.body().get((q, letter, roman))
         if not b:
             return []
+        # A part with a bold heading and NOTHING under it: the heading is the
+        # answer, not the scheme restating the ask. "Identify the hybrid
+        # vehicle configuration shown opposite" is answered "Parallel Hybrid",
+        # in bold, on one line. What tells that apart from a restatement is
+        # the colon -- "Metal fatigue:" introduces the points beneath it and
+        # is not one of them, and a heading with points under it is a heading
+        # whatever it ends on.
+        # It needs TWO real words at least. One is a label off the diagram --
+        # "Frame", "Tracks: -" -- and an answer worth four to fifteen marks is
+        # not one word, where "Parallel Hybrid", "Substitutional defect." and
+        # "Blast furnace: Pig iron." all are answers. Mostly-digits is a mark
+        # breakdown or a graph's axis: "Labels 1 + 1 + 1", "2 4 6 8".
+        lead_only = ' '.join((b.get('lead') or '').split())
+        if (not [x for x in b['points'] if x.strip()] and lead_only
+                and not lead_only.endswith(':')
+                and not LEAD_INSTRUCTION.match(lead_only)
+                and len(re.findall(r'[A-Za-z]{3,}', lead_only)) >= 2
+                and len(re.findall(r'\d', lead_only)) <= len(lead_only) / 4):
+            return [lead_only]
         lines = [PUA_BULLET.sub(' ', PAGE_FOOT.sub(' ', MARK_CELL.sub(' ', x)))
                  for x in b['points']]
         # The bold heading is the scheme's restatement of the ask and not a

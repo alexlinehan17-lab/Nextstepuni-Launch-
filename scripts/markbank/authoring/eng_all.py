@@ -339,6 +339,17 @@ def main():
                     note('an option the question lists, not an ask')
                     continue
             key, keep = resolve(S, q, letter, roman)
+            # A "marking point" that repeats the ask is the scheme naming the
+            # part, not answering it. 2021 OL Q6(b) lists cutting fluids,
+            # clearance angle and chuck key as the three things to describe,
+            # and the scheme heads each answer with the same words; taken as
+            # the answer, the card shows the student the question again.
+            # Indices are kept, because `use` selects into the SCHEME's own
+            # list and a filtered copy shifts every one past the first drop.
+            bare = re.sub(r'[^a-z0-9]', '', ask.lower())
+            keep = [(i, t) for i, t in keep
+                    if len(t) > 60
+                    or re.sub(r'[^a-z0-9]', '', t.lower()) not in bare]
             points = [t for _, t in keep]
             if not key:
                 note('the scheme states and prices nothing at this key or above')

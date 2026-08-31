@@ -94,7 +94,7 @@ RULES = [
                     r'\buct\b|\blct\b)\b'),
     ('eng-2-10', 12, r'\b(joining of materials|adhesive|adhesion|'
                      r'mechanical fastening|soldering|brazing|'
-                     r'fusion welding|oxyacetylene|electric arc|\bweld\w*|'
+                     r'fusion welding|oxy-?acetylene|electric arc|\bweld\w*|'
                      r'\bflux(es)?\b|electrode|inert gas|\bmig\b|\btig\b|'
                      r'resistance welding|spot welding|transformer|'
                      r'\bac\b and \bdc\b|riveted?|rivets?|'
@@ -111,7 +111,7 @@ RULES = [
                      r'counterbor\w+|countersink\w*|\bmill\w*|parting off|'
                      r'plug tap|tapered tap|\btaps?\b|\btapping\b|blind hole|'
                      r'screwcutting|boring|undercutting|eccentric turning|'
-                     r'parallel turning|deburr\w+|internal thread)\b'),
+                     r'parallel turning|deburr\w+|internal thread|\bgrinding\b|cutting tip|tungsten carbide|surface finish)\b'),
     # The syllabus's OTHER Technology heading, in section 1: "Dismantling and
     # assembling a range of engineering components derived from prime movers,
     # power transmission systems, brakes and other mechanisms to achieve an
@@ -125,7 +125,7 @@ RULES = [
                      r'\bbearings?\b|clutch|\bbrakes?\b|prime mover|'
                      r'power transmission|\btorque\b|single[- ]acting|'
                      r'double[- ]acting|pneumatic|hydraulic|cylinder|piston|'
-                     r'lubricat\w+|\bgrease\b|\bvice\b|jig\b|fixture)\b'),
+                     r'lubricat\w+|\bgrease\b|\bvice\b|jig\b|fixture|universal joint|reciprocating|oscillat\w+|timing belt|timing chain|\bfulcrum\b|lifting platform|rotary motion|drive system)\b'),
     ('eng-2-13', 10, r'\b(manufacturing process|fabrication|casting|forging|'
                      r'rolling|drawing|extruding|pressing|quality control|'
                      r'sand cast\w*|die cast\w*|3-?d print\w*|'
@@ -151,7 +151,7 @@ RULES = [
     ('eng-3-7', 12, r'\b(corrosion|rust\w*|oxidation|electrolytic action|'
                     r'protect\w*\s+(?:steel|metal|iron)|galvanis\w+|'
                     r'protective coating|anodic protection|cathodic protection|'
-                    r'sacrificial anode)\b'),
+                    r'sacrificial\s+\w+)\b'),
     ('eng-3-12', 11, r'\b(metrology|limits and tolerances|systems of limits|'
                      r'types of fit|interchangeability|selective assembly|'
                      r'limit gauge|vernier|micrometer|sine bar|slip gauge|'
@@ -160,7 +160,7 @@ RULES = [
                      r'clearance fit|interference fit|transition fit|'
                      r'type of fit|limits and fits|toleranc\w+|allowance|'
                      r'nominal (?:size|diameter)|parallax|dimensioning|'
-                     r'upper limit|lower limit)\b'),
+                     r'upper limit|lower limit|\bfits\b)\b'),
     ('eng-3-1', 11, r'\b(health and safety|first aid|personal protection|'
                     r'personal protective equipment|\bppe\b|safety precaution|'
                     r'safeguarding machinery|colour code|work space clearance|'
@@ -206,7 +206,7 @@ RULES = [
                     r'extended reality|\bxr\b|upcycl\w+|smart\b|wireless|'
                     r'drone|bluetooth|autonomous|hydrogen|fuel cell|'
                     r'container ship|\bcad\b|computer aided|'
-                    r'remote[- ]control\w*|energy conversion)\b'),
+                    r'remote[- ]control\w*|energy conversion|selection of each material|sanitiser|air purifier|\bhepa\b|co.\s*monitor|facial recognition|standing desk|telescopic|selfie stick|thermostatic|home heating|contribution[^.]{0,40}industry)\b'),
 ]
 # Every rule above is written singular and hyphenated, the way the syllabus
 # prints it, and the papers write neither. Three things were silently costing

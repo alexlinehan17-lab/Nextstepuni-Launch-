@@ -603,7 +603,23 @@ const decks = [
   // codepoint, and the row join can leave it MID-LINE, where it renders as a
   // box: "wear safety goggles to ▯ protect your eyes". 13 rows carried one.
   // Nothing removed.
-  ['engineering:higher', ENG_HIGHER, 217, '348f2d54097668255a1ccf7b5b7297a4288aea86b61042c8600f1d33184339a5'],
+  // 2026-08-31 (eleventh pass): 217 -> 226. A part with a bold heading and
+  // NOTHING under it: the heading is the answer, not the scheme restating the
+  // ask. "Identify the hybrid vehicle configuration shown opposite" is
+  // answered "Parallel Hybrid", in bold, on one line. What tells that apart
+  // from a restatement is the colon — "Metal fatigue:" introduces the points
+  // beneath it — plus two tests that keep labels and mark breakdowns out: two
+  // real words at least ("Frame", "Tracks: -" are labels off a diagram), and
+  // not mostly digits ("Labels 1 + 1 + 1", "2 4 6 8" is a graph's axis).
+  //
+  // And a marking point that REPEATS THE ASK is the scheme naming the part,
+  // not answering it. REMOVED for that: eng-2024-hl-q3-b-i, which answered
+  // "plot the stress-strain diagram" with "stress"; eng-2023-ol-q2-b, which
+  // answered "describe the operation of any one of the following furnaces"
+  // with "Blast furnace" for twelve marks; and eng-2024-ol-q4-d, which
+  // answered "state two safety precautions when soldering copper pipes" with
+  // the heading "Soldering copper pipes and fittings:".
+  ['engineering:higher', ENG_HIGHER, 226, 'ec2ccca5ece577cd65d1ec9195ef91825c16bb4364b0b98a3c419b6928ff26c6'],
   // 2026-08-31: 10 -> 24, same reader work as Higher above. Four cards
   // REMOVED. eng-2021-ol-q7-c-ii asked for the electronic symbol of each
   // component named and answered "of round bars or internal diameters of
@@ -642,7 +658,7 @@ const decks = [
   //
   // Three whole-question cards REMOVED, their parts now priced and carded one
   // by one: eng-2023-ol-q2, eng-2023-ol-q4, eng-2024-ol-q6.
-  ['engineering:ordinary', ENG_ORDINARY, 103, '79d24da63443a289547925bbd038ea8ef3ef8f2dc25f13d1330e1012a8dc8204'],
+  ['engineering:ordinary', ENG_ORDINARY, 113, 'c80a53149fae3b208cd39f6c930dfe4e6f2bd01610c881ad2c4c64047b97b4c0'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -657,6 +673,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(8107);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(8126);
   });
 });
