@@ -1842,6 +1842,44 @@
   ]
  },
  {
+  "id": "eng-2025-hl-q6-b",
+  "topicId": "eng-2-10",
+  "conceptId": "how-distortion-shown-may-occur-during",
+  "level": "higher",
+  "year": 2025,
+  "subjectId": "engineering",
+  "section": "A",
+  "questionRef": "2025 HL Q6(b)",
+  "questionText": "Answer any three of the following: (i) Identify two necessary steps in the preparation of a joint for welding. (ii) State two functions of the electrode coating in manual metal arc welding. (iii) Describe how acetylene gas is safely stored. (iv) Describe, with the aid of a diagram(s), the process of friction welding. (v) Outline how distortion, as shown, may occur during welding.",
+  "tariffModel": {
+   "kind": "fixed"
+  },
+  "totalMarks": 18,
+  "rows": [
+   {
+    "id": "r-1",
+    "kind": "alt",
+    "verbatim": "Clean the surfaces to be welded by removing dirt, grease, oil and rust. Use a wire brush, grinder or chemical cleaner.",
+    "marks": 18,
+    "accepts": [
+     "Ensure there are no sharp edges or burrs on the metal pieces by grinding or filing them down.",
+     "Ensure the metal pieces are correctly aligned and close fiƫng, for thicker materials, bevel the edges using a grinder or cuƫng tool.",
+     "Ensure that the angles and alignment are accurate and secure the workpieces using clamps, jigs, or fixtures.",
+     "Some metals, like high-carbon steel or thick materials, may require preheating to prevent cracking. Use a torch or heating element to bring the metal to the desired temperature.",
+     "To generate a shield of carbon dioxide gas to protect welded joints from contamination by oxygen and nitrogen in the air.",
+     "To form a slag coating which protects the weld from oxidation and ensures a slow cooling rate for the weld, this prevents cracks and brittleness.",
+     "Facilitates the striking action of the arc between the work and electrode. Page 19",
+     "Acetylene is safely stored in colour coded cylinders that contain a porous material soaked with a solvent like acetone. This method keeps the gas dissolved at low pressures, reducing the risk of explosion. The cylinders are stored upright in cool, well-ventilated areas, with safety features like pressure relief devices to further ensure safe storage.",
+     "contact, high quality joints. By rotating one work piece at high- speed relative to another, a compressive axial force is applied.",
+     "This generates sufficient temperature to cause the interface to plasticise and fuse."
+    ]
+   }
+  ],
+  "stem": ". (50 marks)",
+  "notes": "The scheme prints 'Any three @ 6 + 6 + 6'.",
+  "figureKey": "engineering-2025-HL-paper-q6bv-art"
+ },
+ {
   "id": "eng-2025-hl-q6-c-i",
   "topicId": "eng-2-10",
   "conceptId": "benefits-using-artificial-intelligence-ai-inspect",

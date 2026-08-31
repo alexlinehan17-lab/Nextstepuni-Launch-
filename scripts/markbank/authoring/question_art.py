@@ -38,6 +38,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(DIR)))
 
 import paper as PP                                          # noqa: E402
 import cs_question_figures as G                             # noqa: E402
+import cardlint                                             # noqa: E402
 
 DPI = 150
 PAD = 8.0
@@ -81,6 +82,15 @@ def carries_its_own_text(card):
     farmer-owned co-operative." Those cards are answerable as they stand, and
     cropping for them got the wrong section's page entirely.
     """
+    text = ' '.join(f"{card.get('questionText') or ''} "
+                    f"{card.get('stem') or ''}".split())
+    # Only a reference to TEXT can be satisfied by the stem. "The diagram
+    # shown opposite" cannot: prose is not a picture, however much of it there
+    # is, and Engineering's stems are long while its diagrams are still
+    # missing.
+    if not re.search(r'\b(?:text|passage|information|extract|article|'
+                     r'data|results?|figures|table)\b', text, re.I):
+        return False
     stem = ' '.join((card.get('stem') or '').split())
     return len(stem) >= 150
 
@@ -106,7 +116,13 @@ def worklist(subject):
     return out
 
 
-QHEAD_LINE = re.compile(r'^\s*(?:Question\s+)?(\d{1,2})[.\s]*$')
+# The head may carry its tariff on the same line: Engineering prints
+# "Question 4. (50 marks)". Demanding the number alone found no heads at all,
+# so every question's span ran to the end of the paper and the crop came from
+# whichever page happened to hold a matching part marker.
+QHEAD_LINE = re.compile(
+    r'^\s*(?:Question\s+)?(\d{1,2})\.?\s*(?:\(\s*\d{1,3}\s*marks?\s*\))?\s*$',
+    re.I)
 
 
 def question_span(page, q):
@@ -128,6 +144,71 @@ def question_span(page, q):
         return None
     later = [y for y, n in heads if y > top + 2]
     return top, (min(later) if later else page.rect.height)
+
+
+def census_worklist(subject):
+    """(year, level, q, letter, roman, ref) for every PART that points at
+    printed matter, taken from the census and the paper rather than the deck.
+
+    A subject whose cards were REFUSED for pointing at a picture has no cards
+    to read a worklist from -- that is the whole problem. Engineering refuses
+    116 asks that way, and none of them is in the deck to be listed. So the
+    paper is asked directly: every part the census knows about, whose printed
+    wording points at something the card would have to show.
+    """
+    import reconcile as R                                    # noqa: PLC0415
+    from paper_census import census_subject                  # noqa: PLC0415
+    out = []
+    idx = R.leaf_index(census_subject(subject))
+    for (year, level, _), leaves in sorted(idx.items()):
+        P = PP.Paper(subject, year, level)
+        for leaf in sorted(leaves):
+            q, letter, roman = leaf[-3], leaf[-2], leaf[-1]
+            try:
+                ask = P.text(q, letter, roman) or ''
+            except Exception:                                # noqa: BLE001
+                continue
+            try:
+                stem = P.stem(q, letter) or P.stem(q) or ''
+            except Exception:                                # noqa: BLE001
+                stem = ''
+            text = ' '.join(f'{stem} {ask}'.split())
+            # CARD LINT'S own condition, not this module's. The census mode
+            # exists to satisfy that gate, and the gate is broader: it catches
+            # "Identify the hybrid vehicle configuration shown opposite",
+            # which names no diagram at all and so never matched POINTS_AT.
+            # 116 Engineering asks are refused for pointing at a picture and
+            # only 15 of them matched the narrower test.
+            hit = cardlint.FIG_REF.search(text)
+            table_only = bool(hit) and re.search(
+                r'(?:table|chart|graph)\b', hit.group(0), re.I) \
+                and cardlint.INLINE_TABLE.search(text)
+            ghost = (hit and not cardlint.SELF_WORK.search(text)
+                     and not cardlint.NO_DEPENDENCY.search(text)
+                     and not table_only)
+            lettered = (cardlint.NAMES_LETTERS.search(ask)
+                        and not cardlint.INVITES_DRAWING.search(ask))
+            if not (ghost or lettered) or OPTIONS_INLINE.search(text):
+                continue
+            if carries_its_own_text({'stem': stem, 'questionText': ask}):
+                continue
+            ref = (f'{year} {level.upper()} Q{q}'
+                   + (f'({letter})' if letter else '')
+                   + (f'({roman})' if roman else ''))
+            out.append((year, level, q, letter, roman, ref))
+    return out
+
+
+def markers_on(page, span):
+    """[(y, label)] for every part marker inside the question's span."""
+    out = []
+    for (x0, y0, x1, y1), text in G.text_lines(page):
+        if not (span[0] - 2 <= y0 <= span[1] + 2):
+            continue
+        m = MARKER.match(text.strip())
+        if m and x0 < page.rect.width * 0.35:
+            out.append((y0, m.group(1)))
+    return sorted(out)
 
 
 def part_band(page, span, letter, roman):
@@ -271,9 +352,22 @@ def crop_part(subject, year, level, q, letter, roman, write=False):
                 # (e) are its rows, so nothing fits INSIDE the part's slice
                 # and the crop has to be the table that CONTAINS it. That is
                 # the question's stimulus, which every part under it may show.
+                # A band that CONTAINS the part's slice belongs to the part
+                # only if no OTHER part starts inside it. Agricultural Science
+                # 2021 OL Q7 is one True/False table with (a) to (e) as its
+                # rows -- every marker is inside it, and it is shared by all
+                # of them. Engineering 2025 OL Q4 prints one picture per part,
+                # and a band holding (a)(i)'s flames and nothing else is
+                # (a)(i)'s; taking it for (c)(i) as well gave the R-clip
+                # question a picture of three flames.
+                others = [y for y, label in markers_on(page, (span_top, span_bot))
+                          if label != (roman or letter)]
                 bands = [b for b in found
                          if b[1] <= top + 6 and b[3] >= bottom - 6
-                         and b[3] - b[1] < 0.75 * page.rect.height]
+                         and b[3] - b[1] < 0.75 * page.rect.height
+                         and (not any(b[1] - 4 < y < b[3] + 4 for y in others)
+                              or len([r for r in G.rule_rows(page)
+                                      if b[1] - 4 <= r[1] <= b[3] + 4]) >= 2)]
             if not bands:
                 continue
             # Several bands are one picture only if what lies BETWEEN them is
@@ -297,6 +391,25 @@ def crop_part(subject, year, level, q, letter, roman, write=False):
             y0 = min(b[1] for b in bands)
             x1 = max(b[2] for b in bands)
             y1 = max(b[3] for b in bands)
+            # A photograph printed BESIDE the question's prose takes the
+            # picture, not the prose. 2025 HL Q1(d) sets its kettlebell photo
+            # to the right of the ask and the union came out as half a
+            # sentence -- "t iron is often used to manufacture ... te." --
+            # with the photo alongside. Only where the prose is a real line of
+            # the question, not a label: an A/B/C caption is short and must be
+            # kept, which is what the furnaces and the lathe are labelled by.
+            pics = [ir for im in page.get_images(full=True)
+                    for ir in page.get_image_rects(im[0])
+                    if not G.is_a_rule(ir.x0, ir.y0, ir.x1, ir.y1)
+                    and x0 - 2 <= ir.x0 and ir.x1 <= x1 + 2
+                    and y0 - 2 <= ir.y0 and ir.y1 <= y1 + 2]
+            if pics:
+                left = min(p.x0 for p in pics)
+                prose = [r for r in rows
+                         if y0 - 2 < r[0][1] and r[0][3] < y1 + 2
+                         and r[0][0] < left - 4 and len(r[1].strip()) > 20]
+                if prose:
+                    x0 = left
             # The union can still end inside the candidate's answer space when
             # the box sits hard against the picture: 2022 OL Q4(b) prints its
             # composition table and a photograph, then "Protein: / Fibre:"
@@ -352,16 +465,29 @@ def main():
     ap.add_argument('subject')
     ap.add_argument('--write', action='store_true')
     ap.add_argument('--catalogue', action='store_true')
+    ap.add_argument('--census', action='store_true',
+                    help='take the worklist from the census and the paper, '
+                         'for a subject whose cards do not exist yet because '
+                         'they were refused for pointing at a picture')
     args = ap.parse_args()
 
     cards = {c['id']: c for c in json.load(open(os.path.join(
         ROOT, 'scripts', 'markbank', 'authored', f'{args.subject}.json'),
         encoding='utf-8'))}
+    jobs = (census_worklist(args.subject) if args.census
+            else worklist(args.subject))
     made, missed, catalogue = [], [], []
-    for year, level, q, letter, roman, cid in worklist(args.subject):
+    for year, level, q, letter, roman, cid in jobs:
         card = cards.get(cid, {})
         text = ' '.join(f"{card.get('questionText') or ''} "
                         f"{card.get('stem') or ''}".split())
+        if args.census:
+            P = PP.Paper(args.subject, year, level)
+            try:
+                text = ' '.join(f'{P.stem(q, letter) or P.stem(q) or ""} '
+                                f'{P.text(q, letter, roman) or ""}'.split())
+            except Exception:                                # noqa: BLE001
+                text = ''
         cut = crop_passage if READS_PASSAGE.search(text) else crop_part
         try:
             got = cut(args.subject, year, level, q, letter, roman,

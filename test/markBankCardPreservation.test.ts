@@ -487,7 +487,7 @@ const decks = [
    * print the picture, nothing has cropped it yet, and a card carrying the
    * crop is no longer a ghost. Ordinary rose 4 -> 10 in the same pass from
    * the provenance and sentence-splitting fixes. */
-  ['engineering:higher', ENG_HIGHER, 47, '0721a4229e121d302e158c88d78f10b6789c11809eeb1c7a7a438c05aeb25a07'],
+  ['engineering:higher', ENG_HIGHER, 48, '5e8deb743e478baf3b57e03ef2f8f02065cc06b0d399af51a36fb4fe264b6356'],
   ['engineering:ordinary', ENG_ORDINARY, 10, '8d832c30ce0e34b0b8fdc15b50eca71126e21a111d76e1cc131add0e0c187447'],
 ] as const;
 
@@ -503,6 +503,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7844);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7845);
   });
 });

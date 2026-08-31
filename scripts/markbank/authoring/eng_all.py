@@ -145,6 +145,19 @@ def main():
     ap.add_argument('--all', action='store_true')
     args = ap.parse_args()
 
+    # The crops question_art.py cut for the parts that point at a picture,
+    # keyed by the part they were cut FOR. A card that carries the crop is no
+    # longer a ghost, so this is read before the figure gate below.
+    figs = {}
+    manifest = os.path.join(ROOT, 'components/MarkBank/figures.json')
+    if os.path.exists(manifest):
+        for key in json.load(open(manifest)):
+            m = re.match(r'engineering-(\d{4})-(HL|OL)-paper-q(\d+)'
+                         r'([a-hj-z])?((?:i|ii|iii|iv|v|vi|vii|viii)?)-art$', key)
+            if m:
+                figs[(int(m.group(1)), m.group(2).lower(), int(m.group(3)),
+                      m.group(4) or None, m.group(5) or None)] = key
+
     idx = R.leaf_index(census_subject('engineering'))
     cards, refused = [], collections.Counter()
     examples = collections.defaultdict(list)
@@ -211,9 +224,13 @@ def main():
                               key=lambda k: (k[1] or '', k[2] or ''))
                 whole = ' '.join([ask] + [(A.paper.text(*k) or '') for k in kids])
             joined = ' '.join(f'{stem} {whole}'.split())
-            if ((cardlint.FIG_REF.search(joined)
-                 and not cardlint.SELF_WORK.search(joined)
-                 and not cardlint.NO_DEPENDENCY.search(joined))
+            figure = (figs.get((year, level, q, key[1], key[2]))
+                      or figs.get((year, level, q, letter, roman))
+                      or figs.get((year, level, q, key[1], None)))
+            if not figure and (
+                    (cardlint.FIG_REF.search(joined)
+                     and not cardlint.SELF_WORK.search(joined)
+                     and not cardlint.NO_DEPENDENCY.search(joined))
                     or cardlint.NAMES_LETTERS.search(joined)):
                 note('points at printed matter the card cannot carry')
                 continue
@@ -240,7 +257,7 @@ def main():
                            source='table', card_id=cid,
                            use=[[i for i, _ in keep[:MAX_ROWS]]],
                            marks=[n * per], tariff='fixed',
-                           row_kind='anyN', total=n * per,
+                           row_kind='anyN', total=n * per, figure=figure,
                            stem=not cardlint.label_junk(stem),
                            notes=f'The scheme prints {S.notation(*key)!r}.')
                 elif model['kind'] == 'orderedSplit':
@@ -251,14 +268,16 @@ def main():
                     A.card(*key, topic=topic, concept=concept_for(ask),
                            source='table', card_id=cid,
                            use=[i for i, _ in keep[:MAX_ROWS]],
-                           tariff='orderedSplit', notation=model['notation'],
+                           tariff='orderedSplit', figure=figure,
+                           notation=model['notation'],
                            ladder=S.tariff(*key),
                            stem=not cardlint.label_junk(stem))
                 else:
                     A.card(*key, topic=topic, concept=concept_for(ask),
                            source='table', card_id=cid,
                            use=[i for i, _ in keep[:MAX_ROWS]],
-                           marks=marks, tariff='fixed', total=S.tariff(*key),
+                           marks=marks, tariff='fixed', figure=figure,
+                           total=S.tariff(*key),
                            stem=not cardlint.label_junk(stem))
                 # Card lint reads the text the CARD carries, which lib builds
                 # from the key's own ask with its children joined on.
@@ -269,7 +288,7 @@ def main():
                 # way -- "Identify the hybrid vehicle configuration shown
                 # opposite", with nothing opposite.
                 made = A.cards[-1] if A.cards else None
-                if made is not None:
+                if made is not None and not made.get('figureKey'):
                     stem_t = made.get('stem') or ''
                     qtext = made.get('questionText') or ''
                     final = f'{stem_t} {qtext}'

@@ -123,6 +123,15 @@ def carries_its_own_text(card):
     farmer-owned co-operative." Those cards are answerable as they stand, and
     cropping for them got the wrong section's page entirely.
     """
+    text = ' '.join(f"{card.get('questionText') or ''} "
+                    f"{card.get('stem') or ''}".split())
+    # Only a reference to TEXT can be satisfied by the stem. "The diagram
+    # shown opposite" cannot: prose is not a picture, however much of it there
+    # is, and Engineering's stems are long while its diagrams are still
+    # missing.
+    if not re.search(r'\b(?:text|passage|information|extract|article|'
+                     r'data|results?|figures|table)\b', text, re.I):
+        return False
     stem = ' '.join((card.get('stem') or '').split())
     return len(stem) >= 150
 
