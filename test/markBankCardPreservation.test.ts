@@ -632,7 +632,22 @@ const decks = [
   // Two cards REMOVED. Both now carry a marking point recovered from inside
   // such a cell, and that fuller point cannot be traced in the markdown the
   // provenance gate reads: eng-2022-hl-q2-a-ii and eng-2023-hl-q5-b-i.
-  ['engineering:higher', ENG_HIGHER, 225, '3491d2e0d1d04e5517fa853a2324094dff91deb01250eb7b92af22430d4f11ef'],
+  // 2026-08-31 (fourteenth pass): 225 -> 308, Ordinary 120 -> 147. A LETTER
+  // that states what each of its parts is worth prices them: "Any three @ 6 +
+  // 6 + 6" makes each roman under (a) six marks, and "Any two @ 8 + 8" makes
+  // each eight. That is the scheme's own arithmetic, and without it a roman
+  // with an answer of its own had to climb to its letter and drag every
+  // sibling with it — which matters past the tariff, because a card at (a)
+  // carries every roman's text, and one roman saying "shown opposite" refused
+  // the whole part. 54 of the figure refusals were a parent condemned by one
+  // child.
+  //
+  // Fifteen whole-LETTER cards were REMOVED and replaced by their romans,
+  // which is finer and citable part by part: eng-2021-hl-q3-a, -q6-a,
+  // eng-2021-ol-q4-b, -q5-b, -q7-a, eng-2022-hl-q6-b, eng-2023-hl-q4-c,
+  // -q5-c, -q7-c, eng-2023-ol-q4-c, eng-2024-hl-q4-c, -q5-c, eng-2024-ol-q4-c,
+  // eng-2025-hl-q4-c, eng-2025-ol-q4-c. No surviving card changed its marks.
+  ['engineering:higher', ENG_HIGHER, 308, 'c6c720e7e02df9903254f875a16f675e94f67423aeceed4a277ac5dc1e2dc98f'],
   // 2026-08-31: 10 -> 24, same reader work as Higher above. Four cards
   // REMOVED. eng-2021-ol-q7-c-ii asked for the electronic symbol of each
   // component named and answered "of round bars or internal diameters of
@@ -677,7 +692,7 @@ const decks = [
   // any three of the following: inspection robot" — the lead-in with a
   // picture's label run onto it — and its five romans are the list. Nothing
   // removed.
-  ['engineering:ordinary', ENG_ORDINARY, 120, '8d9014d957916ccff464564db9fe12749639dee0cdf01f72ffc8394301eed26b'],
+  ['engineering:ordinary', ENG_ORDINARY, 147, '0d0ef3853d79495c3c69aad458053d913577b27c1a4a3ef0768578fbfcb2a2ea'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -692,6 +707,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(8132);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(8242);
   });
 });

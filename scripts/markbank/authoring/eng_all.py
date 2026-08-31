@@ -168,6 +168,18 @@ def resolve(S, q, letter, roman):
         keep = cardable_indexed(S.points_under(q, letter, roman))
         if keep:
             return (q, letter, roman), keep
+    # The same at the LETTER. "Any three parts @ 6 marks" prices each of (b)'s
+    # romans at six, so a roman with an answer of its own does not have to
+    # climb to (b) and drag its siblings with it. That matters beyond the
+    # tariff: a card at (b) carries every roman's text, and one roman saying
+    # "shown opposite" refuses the whole part -- 54 of the figure refusals are
+    # a parent condemned by one child.
+    if roman and letter and not S.tariff(q, letter, roman):
+        parent = S.rule(q, letter, None)
+        if parent:
+            keep = cardable_indexed(S.points_under(q, letter, roman))
+            if keep:
+                return (q, letter, roman), keep
     for key in ((q, letter, roman), (q, letter, None), (q, None, None)):
         priced = S.tariff(*key)
         if priced:
@@ -183,6 +195,21 @@ def resolve(S, q, letter, roman):
     return None, []
 
 
+def holds(points, n):
+    """Whether this prose states N things, however few points it is split into.
+
+    The scheme often writes a multi-part answer as ONE run: "Name the type of
+    flame produced for each of the following" is priced three parts at three
+    marks and answered "Excess acetylene: Carburising flame Excess oxygen:
+    Oxidising flame Equal amounts: Neutral flame" -- all three, on one line.
+    Counting the pieces it is punctuated into says whether they are all there,
+    and "Material: Rubber" against three materials says they are not.
+    """
+    parts = [c for c in re.split(r'[;,:]', ' '.join(points))
+             if re.search(r'[A-Za-z]{3,}', c)]
+    return len(parts) >= n
+
+
 def rows_for(notation, total, rule, points):
     """(row kind, marks per row, tariff model) for a part, or None to refuse."""
     points = points[:MAX_ROWS]
@@ -190,6 +217,9 @@ def rows_for(notation, total, rule, points):
         n, per = rule
         if n <= len(points):
             return ('anyN', None, {'kind': 'fixed'}, (n, per))
+        # Fewer points than parts, but the prose may hold them all.
+        if holds(points, n):
+            return ('point', None, {'kind': 'questionTotal'}, None)
         return None
     terms = [int(x) for x in re.findall(r'\d{1,2}', notation or '')]
     if len(terms) > 1:
@@ -209,8 +239,7 @@ def rows_for(notation, total, rule, points):
         # A RULE is different: "Three parts @ 5 marks" against two points
         # means a part really is missing, and a card claiming fifteen marks
         # for two of three parts would be wrong. That stays refused above.
-        if sum(1 for c in re.split(r'[;,]', ' '.join(points))
-               if len(c.split()) >= 3) >= len(terms):
+        if holds(points, len(terms)):
             return ('point', None, {'kind': 'questionTotal'}, None)
         # ... and only when the prose really does hold as many clauses as the
         # split names parts. "Calculate Young's modulus for metal A and for
@@ -441,9 +470,13 @@ def main():
             notation_here = S.notation(*key)
             rule_here = S.rule(*key)
             if tariff_here is None and (key[1] or key[2]):
-                # Priced by the question's "@ N marks each", which is what
-                # this part is worth and what the scheme printed.
+                # Priced by the question's "@ N marks each", or by the
+                # letter's "Any three parts @ 6 marks" -- either way it is
+                # what this part is worth and what the scheme printed.
                 per = S.per_part(key[0])
+                if not per and key[2] and key[1]:
+                    up = S.rule(key[0], key[1], None)
+                    per = up[1] if up else None
                 if per:
                     tariff_here, rule_here = per, None
                     notation_here = f'{per} marks'
