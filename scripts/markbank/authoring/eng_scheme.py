@@ -85,6 +85,8 @@ WORD = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6,
         'seven': 7, 'eight': 8, 'nine': 9, 'ten': 10, 'eleven': 11,
         'twelve': 12, 'thirteen': 13}
 OR_ROW = re.compile(r'^(?:Or|OR)$')
+# How far left of its own head a column's rows may start.
+INSET = 24.0
 # The letter each of i, v and x follows, when a question is lettering
 # rather than numbering its romans.
 FOLLOWS = {'i': 'h', 'v': 'u', 'x': 'w'}
@@ -124,7 +126,7 @@ def _lines(page, join='block'):
     """
     out = []
     blocks = page.get_text('dict')['blocks']
-    if join == 'row':
+    if join in ('row', 'none'):
         blocks = [{'lines': [l for b in blocks for l in b.get('lines', [])],
                    'number': 0}]
     for block in blocks:
@@ -139,6 +141,9 @@ def _lines(page, join='block'):
             rows.append((x0, y0, x1, y1, text, bold))
         rows.sort(key=lambda r: (round(r[1], 1), r[0]))
         for row in rows:
+            if join == 'none':
+                out.append(row + (block_id(block),))
+                continue
             close = (row[0] - out[-1][2] < 60) if (out and join == 'row') else True
             if out and out[-1][6] == block_id(block) and close and \
                     abs(out[-1][1] - row[1]) <= 2.0:
@@ -150,6 +155,20 @@ def _lines(page, join='block'):
                 out.append(row + (block_id(block),))
     out.sort(key=lambda r: (round(r[1], 1), r[0]))
     return [r[:6] for r in out]
+
+
+def _join_row(rows):
+    """Join lines sharing a baseline, within one column and no further."""
+    out = []
+    for row in sorted(rows, key=lambda r: (round(r[1], 1), r[0])):
+        if out and abs(out[-1][1] - row[1]) <= 2.0 and row[0] - out[-1][2] < 60:
+            p = out[-1]
+            out[-1] = (p[0], min(p[1], row[1]), max(p[2], row[2]),
+                       max(p[3], row[3]), f'{p[4]} {row[4]}'.strip(),
+                       p[5] or row[5])
+        else:
+            out.append(row[:6])
+    return out
 
 
 def block_id(block):
@@ -181,11 +200,16 @@ def _columns(rows, page_width):
     # its left and dropped the first column's rows off the page entirely.
     # That paper read 29 part tariffs where 2023 read 64, and 289 leaves
     # across the subject were unpriced and climbing to their question.
+    # A column starts a little LEFT of its own head -- 2022 Higher indents its
+    # heads about eighteen points -- and ends where the next column starts.
+    # The midpoint is not the boundary: 2024 Ordinary prints Question 2's
+    # total column at x274 and Question 5's marker at x304, so halfway between
+    # the heads at x101 and x304 falls inside Question 2's own table and gave
+    # its totals to Question 5.
     bands = []
     for i, left in enumerate(merged):
-        lo = 0.0 if i == 0 else (merged[i - 1] + left) / 2.0
-        hi = ((left + merged[i + 1]) / 2.0 if i + 1 < len(merged)
-              else page_width + 1)
+        lo = 0.0 if i == 0 else max(0.0, left - INSET)
+        hi = (merged[i + 1] - INSET if i + 1 < len(merged) else page_width + 1)
         bands.append((lo, hi))
     return bands
 
@@ -262,12 +286,34 @@ class EngScheme:
 
     # ── the tariff table ───────────────────────────────────────────────────
     def _summary_pages(self):
+        """Each summary page's rows, joined WITHIN its columns.
+
+        The columns have to be found before the rows are joined, not after.
+        2024 Ordinary Level sets the grid four columns wide -- marker, rule and
+        total for one question, then the same three for another -- and the row
+        join reached across the gutter, so one row read
+
+            "(15) (a) Three parts @ 5 marks (i) Any three @ 3 marks"
+
+        which is Question 2(a)'s total welded to Question 5(a)'s marker and
+        rule. Whichever column that row was then filed under, the other
+        question's rule was gone. 2024 Ordinary read FIVE part tariffs out of
+        a whole paper.
+        """
         with pymupdf.open(self.path) as doc:
             for n in range(min(14, doc.page_count)):
-                rows = _lines(doc[n], join='row')
-                heads = [t for *_, t, _ in rows if SUMMARY_HEAD.match(t)]
-                if len(heads) >= 2:
-                    yield n, rows, doc[n].rect.width
+                page = doc[n]
+                loose = _lines(page, join='none')
+                heads = [t for *_, t, _ in loose if SUMMARY_HEAD.match(t)]
+                if len(heads) < 2:
+                    continue
+                bands = _columns(loose, page.rect.width)
+                rows = []
+                for lo, hi in bands or [(0.0, page.rect.width + 1)]:
+                    inside = [r for r in loose if lo <= r[0] < hi]
+                    rows += _join_row(inside)
+                rows.sort(key=lambda r: (round(r[1], 1), r[0]))
+                yield n, rows, page.rect.width
 
     def tariffs(self):
         """{(q, letter, roman): (notation, total, per-option rule)}"""

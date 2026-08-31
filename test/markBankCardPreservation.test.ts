@@ -569,7 +569,24 @@ const decks = [
   // -q4-b-i, -q4-c, -q5-c-i, eng-2024-hl-q1-f, -q5-c, eng-2025-hl-q2-d,
   // -q3-b-iii, -q4-a-ii, -q5-a-i. 32 asks gained, 15 lost where a newly
   // separated part then fails its own provenance check; net +17.
-  ['engineering:higher', ENG_HIGHER, 190, '2b8636ec9ddbdb2c15905480e517688f84cc75c2bc81e0ae343c3a93055a3acd'],
+  // 2026-08-31 (eighth pass): 190 -> 207, Ordinary 69 -> 77. The COLUMNS
+  // have to be found before the rows are joined, not after. 2024 Ordinary
+  // sets the grid four columns wide — marker, rule and total for one
+  // question, then the same three for another — and the row join reached
+  // across the gutter, so one row read "(15) (a) Three parts @ 5 marks (i)
+  // Any three @ 3 marks", which is Q2(a)'s total welded to Q5(a)'s rule.
+  // Whichever column it was filed under, the other question's rule was gone.
+  // And a column's boundary is a small inset LEFT of the next head, not the
+  // midpoint: halfway between x101 and x304 falls inside Question 2's own
+  // table and handed its totals to Question 5. 402 part tariffs from 367.
+  //
+  // Two more cards had the WRONG MARK TOTAL: eng-2025-hl-q6-b said 34 where
+  // the table says "Any three @ 6 + 6 + 6" — 18 — and eng-2024-hl-q5-a-ii
+  // said 12 where the cell says 8.
+  //
+  // Five whole-question cards REMOVED, their parts now priced and carded one
+  // by one: eng-2022-hl-q6-b-ii, -q7, eng-2024-hl-q9, eng-2025-hl-q7, -q9.
+  ['engineering:higher', ENG_HIGHER, 207, '96be1df129f59d1f8d99e90173caaf4e690e290017928925641b7b99d35417c7'],
   // 2026-08-31: 10 -> 24, same reader work as Higher above. Four cards
   // REMOVED. eng-2021-ol-q7-c-ii asked for the electronic symbol of each
   // component named and answered "of round bars or internal diameters of
@@ -588,7 +605,7 @@ const decks = [
   // 2026-08-31 (seventh pass): 71 -> 69, same column fix. REMOVED
   // eng-2025-ol-q5-a-i and eng-2025-ol-q6-b, both whole-part cards whose
   // romans are now priced separately and refused on their own provenance.
-  ['engineering:ordinary', ENG_ORDINARY, 69, '485b6ea875a667858635c5c29a9bcc414d68952aa422be58dd49b1d6e24f10d6'],
+  ['engineering:ordinary', ENG_ORDINARY, 77, 'e888c82d15507d827e815d8af1f55af3d9f4c8332acd2afb3e40acd5a1766b49'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -603,6 +620,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(8046);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(8071);
   });
 });

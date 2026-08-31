@@ -325,6 +325,19 @@ export const CARDS: SecCard[] = [
     year: 2022, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2022-ol-q4-a-iii", topicId: "eng-2-10", conceptId: "function-gas-regulator-oxy-acetylene-welding",
+    section: "A", questionRef: "2022 OL Q4(a)(iii)",
+    questionText: "Explain the function of the gas regulator in oxy-acetylene welding.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "The primary function of a regulator is to reduce high-pressure gas in a cylinder to a lower, usable level when it passes from the cylinder to the torch. The regulator includes two gauges, one gauge displays the regulated gas pressure passing from the cylinder to the torch, the other displays the gas pressure inside the cylinder.", marks: 5 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
     id: "eng-2022-ol-q4-d", topicId: "eng-2-10", conceptId: "safety-precautions-be-observed-when-gas",
     section: "A", questionRef: "2022 OL Q4(d)",
     stem: "Engineering - Ordinary level 5",
@@ -333,6 +346,27 @@ export const CARDS: SecCard[] = [
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Check the hoses for any damage before you start welding.", marks: 8, accepts: ["Make sure the gas cylinders are secure and cannot fall over."] },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2022-ol-q5-a-ii", topicId: "eng-2-13", conceptId: "aid-labelled-diagram-any-manufacturing-processes",
+    section: "A", questionRef: "2022 OL Q5(a)(ii)",
+    questionText: "Describe, with the aid of a labelled diagram, any one of the manufacturing processes named by you, at 5(a)(i) above.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Used to produce articles from a heated thermoplastic tube called a parison.", marks: 10, accepts: ["The mould closes around the extruded parison and air is blow inside forcing the parison out against the wall of the mould. The article is formed by the internal shape of a split mould. The component is allowed to cool before being removed from the opened mould.","Top of mould Mould cavity Plastic A measured amount of thermosetting plastic polymer is placed into the cavity of the mould. Heat from the mould causes the polymer to melt. The mould cavity is shaped to form the outside of the object. The top half of the mould closes dispensing the melted plastic to form the object. Pressure is maintained to allow the plastic to harden. Once solidified the mould is opened and the part is released."] },
+    ],
+    questionFigure: {
+          "candId": "engineering-2022-OL-paper-q5ai-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2022-OL-paper-q5ai-art.png",
+          "srcHash": "cd663eb2dc5c87e2245b727d154192a0",
+          "alt": "The table or diagram printed with 2022 OL Question 5(a)(i), as the State Examinations Commission set it. It reads: A, C, B.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2022 Ordinary Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -635,6 +669,34 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2023-ol-q6-c-ii", topicId: "eng-2-13", conceptId: "processes-named-you-6-c-i",
+    section: "A", questionRef: "2023 OL Q6(c)(ii)",
+    stem: "thumbscrew",
+    questionText: "Describe one of the processes named by you, at 6(c)(i) above. Identify one other CNC process.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "A knurling tool is set on centre and at 90° against a piece of round section bar. The lathe is set so that the chuck revolves at a low speed. The knurling tool is then pressed against the rotating steel bar and pressure is slowly increased until the tool produces a pattern on the bar.", marks: 6, accepts: ["Parting off Secure the parting off tool in the tool post, square to the workpiece. Check that the tool tip is in line with the centre of the workpiece. Align the tool tip outside of the line where you require to cut. Select a suitable cutting speed and direction and turn on the lathe. Engage the tool tip into the turning workpiece and cut in a continuous motion.","A CNC lathe / Lazer machine / Milling machine."] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2023-ol-q6-c-iii", topicId: "eng-2-11", conceptId: "items-personal-protective-equipment-ppe-should",
+    section: "A", questionRef: "2023 OL Q6(c)(iii)",
+    stem: "thumbscrew",
+    questionText: "Name two items of personal protective equipment (PPE) that should be worn when operating a lathe. OR List two advantages of using CNC machines in manufacturing.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Safety glasses or shield.", marks: 8, accepts: ["CNC machines can manufacture complicated products.","CNC machines support the automation of mass production."] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2024, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Ordinary Level — © State Examinations Commission.",
@@ -832,6 +894,19 @@ export const CARDS: SecCard[] = [
   } as SecCard,
   {
     ...base, kind: "question",
+    year: 2024, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2024-ol-q6-c-ii", topicId: "eng-2-11", conceptId: "identify-use-centre-lathe-part-or",
+    section: "A", questionRef: "2024 OL Q6(c)(ii)",
+    questionText: "Identify one use for this centre lathe part. OR List two advantages of using a CNC laser cutter in engineering manufacture.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Mass production of complex parts. • High level of precision accuracy. •", marks: 6 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
     year: 2025, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
@@ -1009,6 +1084,54 @@ export const CARDS: SecCard[] = [
           "lettersVisible": [],
           "attribution": "SEC Leaving Certificate Engineering 2025 Ordinary Level — © State Examinations Commission"
     },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2025-ol-q5-a-i", topicId: "eng-1-9", conceptId: "each-plastic-manufacturing-processes-shown-b",
+    section: "A", questionRef: "2025 OL Q5(a)(i)",
+    questionText: "Name each of the plastic manufacturing processes shown at A, B and C.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "A: Compression moulding B: Blow moulding C: Vacuum forming. ii) Describe any one plastic manufacturing process:", marks: 9, accepts: ["Plastic A measured amount of thermosetting plastic polymer is placed into the cavity of the mould. Heat from the mould causes the polymer to melt. The mould cavity is shaped to form the outside of the object. The top half of the mould closes dispensing the melted plastic to form the object. Pressure is maintained to allow the plastic to harden. Once solidified the mould is opened and the part is released.","Air Parison Split mould Used to produce articles from a heated thermoplastic tube called a parison. The mould closes around the extruded parison and air is blow inside forcing the parison out against the wall of the mould. The article is moulded by the internal shape of a split mould. The component is allowed to cool before being removed from the opened moulding.","A thermoplastic sheet is clamped in a frame and heat is applied until the sheet begins to sag. At this stage, the mould is lifted up into the plastic sheet and vacuum pressure is applied. This causes the plastic sheet to pull against the mold and form the final shape. After cooling, the mould is lowered and the plastic part is removed from the frame. Excess material is trimmed away."] },
+    ],
+    questionFigure: {
+          "candId": "engineering-2025-OL-paper-q5ai-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2025-OL-paper-q5ai-art.png",
+          "srcHash": "d1178a3ca8c6d1e1bccf2ad276d8fc01",
+          "alt": "The table or diagram printed with 2025 OL Question 5(a)(i), as the State Examinations Commission set it. It reads: A, C, B.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2025 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2025-ol-q6-b", topicId: "eng-2-11", conceptId: "any-following-relation-machining-cutting-fluid",
+    section: "A", questionRef: "2025 OL Q6(b)",
+    questionText: "Explain any three of the following in relation to machining: (i) Cutting fluid, (ii) Clearance angle, (iii) Depth of cut, (iv) Swarf.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Cutting fluids are used when machining metals to improve tool life, reduce the buildup of heat, improve surface finish and flush away chips from the cutting zone.", marks: 15, accepts: ["Without a clearance angle, no cutting would take place. The clearance angle ensures that only the cutting edge of a tool contacts a piece. It provides clearance between the cutting tool face and the workpiece","This is the distance the cutting tool is moved into the workpiece when cutting","Swarf is the waste material produced when the chip is cut from a workpiece"] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2025-ol-q6-c-i", topicId: "eng-2-11", conceptId: "any-centre-lathe-processes-used-manufacture",
+    section: "A", questionRef: "2025 OL Q6(c)(i)",
+    stem: "stunt bike pegs",
+    questionText: "Name any two centre lathe processes used to manufacture the stunt bike pegs. OR Outline one advantage of using CAD in the design and manufacturing process.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Knurling • Drilling •", marks: 6, accepts: ["CAD software enables developers to work more quickly, cut production costs and decrease errors."] },
+    ],
   } as SecCard,
   {
     ...base, kind: "question",
