@@ -34,7 +34,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
     id: "eng-2021-hl-q1-a", topicId: "eng-3-14", conceptId: "ways-wireless-headsets-have-improved-game",
     section: "A", questionRef: "2021 HL Q1(a)",
-    stem: ". (50 marks) Give brief answers to any ten of the following:",
+    stem: "Give brief answers to any ten of the following:",
     questionText: "Describe two ways in which wireless headsets have improved the in-game experience of online gaming.",
     tariffModel: {"kind":"orderedSplit","notation":"3 + 2"}, totalMarks: 5,
     rows: [
@@ -52,7 +52,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
     id: "eng-2021-hl-q1-d", topicId: "eng-1-9", conceptId: "water-drinkers-cattle-typically-manufactured-polyethylene",
     section: "A", questionRef: "2021 HL Q1(d)",
-    stem: ". (50 marks) Give brief answers to any ten of the following:",
+    stem: "Give brief answers to any ten of the following:",
     questionText: "Water drinkers for cattle are typically manufactured from polyethylene which is UV light and frost resistant. Describe a polymer manufacturing process suitable for a water drinker.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
@@ -87,7 +87,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
     id: "eng-2021-hl-q2-a-i", topicId: "eng-3-14", conceptId: "term-hybrid-vehicle-technology",
     section: "A", questionRef: "2021 HL Q2(a)(i)",
-    stem: ". (50 marks) Answer all of the following:",
     questionText: "Describe the term hybrid vehicle technology.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
@@ -103,7 +102,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
     id: "eng-2021-hl-q2-a-ii", topicId: "eng-3-14", conceptId: "identify-benefits-using-hybrid-vehicles-urban",
     section: "A", questionRef: "2021 HL Q2(a)(ii)",
-    stem: ". (50 marks) Answer all of the following:",
     questionText: "Identify two benefits of using hybrid vehicles in urban transportation.",
     tariffModel: {"kind":"orderedSplit","notation":"3 + 2"}, totalMarks: 5,
     rows: [
@@ -135,7 +133,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
     id: "eng-2021-hl-q3-c-ii", topicId: "eng-2-10", conceptId: "aid-diagram-suitable-non-destructive-test",
     section: "A", questionRef: "2021 HL Q3(c)(ii)",
-    stem: ". (50 marks)",
     questionText: "Describe, with the aid of a diagram, a suitable non-destructive test to locate internal cavities in a welded joint.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -149,13 +146,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
     id: "eng-2021-hl-q4-b-ii", topicId: "eng-1-4", conceptId: "identify-microstructure-present-0-83-carbon",
     section: "A", questionRef: "2021 HL Q4(b)(ii)",
-    stem: "1400 1000 600 200 C X Temperature °C 723°C 0.83% % Carbon 1 2 3 4 5 6",
     questionText: "Identify and explain the microstructure which is present at 0.83% carbon steel, up to 723°C.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Pearlite is a layered structure with alternate layers of ferrite and cementite.", marks: null },
     { id: "r-2", kind: "point", verbatim: "It has a “mother of pearl” sheen when fractured.", marks: null },
     ],
+    questionFigure: {
+          "candId": "engineering-2021-HL-paper-q4bi-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2021-HL-paper-q4bi-art.png",
+          "srcHash": "38631ba46c41017d2b0f7776fd6fd86b",
+          "alt": "The table or diagram printed with 2021 HL Q4(b)(i), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -164,12 +168,19 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
     id: "eng-2021-hl-q4-b-iii", topicId: "eng-1-3", conceptId: "transformation-occurs-point-x-reference-temperature",
     section: "A", questionRef: "2021 HL Q4(b)(iii)",
-    stem: "1400 1000 600 200 C X Temperature °C 723°C 0.83% % Carbon 1 2 3 4 5 6",
     questionText: "Describe the transformation that occurs at point X, with reference to temperature, composition and phase change.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Point “X” is the eutectic point. This is where the liquid steel turns into solid steel without going through a pasty stage. It occurs at approx. 1140°C and 4.3% carbon content.", marks: 6 },
     ],
+    questionFigure: {
+          "candId": "engineering-2021-HL-paper-q4bi-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2021-HL-paper-q4bi-art.png",
+          "srcHash": "38631ba46c41017d2b0f7776fd6fd86b",
+          "alt": "The table or diagram printed with 2021 HL Q4(b)(i), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -178,7 +189,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
     id: "eng-2021-hl-q5-a-ii", topicId: "eng-1-3", conceptId: "why-crystal-structure-b-likely-be",
     section: "A", questionRef: "2021 HL Q5(a)(ii)",
-    stem: ". (50 marks)",
     questionText: "Explain why crystal structure B is likely to be more ductile than crystal structure A.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -218,7 +228,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
     id: "eng-2021-hl-q6-a", topicId: "eng-2-10", conceptId: "main-features-electro-slag-welding",
     section: "A", questionRef: "2021 HL Q6(a)",
-    stem: ". (50 marks)",
     questionText: "Answer any three of the following: (i) Outline two main features of electro-slag welding. (ii) Identify three safety features integrated into oxy-acetylene welding equipment. (iii) Explain the function of the earth clamp in arc welding units. (iv) Give two benefits of the formation of slag in manual metal arc welding.",
     tariffModel: {"kind":"fixed"}, totalMarks: 18,
     rows: [
@@ -232,7 +241,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
     id: "eng-2021-hl-q6-b-ii", topicId: "eng-2-10", conceptId: "safety-precautions-be-observed-when-operating",
     section: "A", questionRef: "2021 HL Q6(b)(ii)",
-    stem: ". (50 marks)",
     questionText: "Outline three safety precautions to be observed when operating a welding unit.",
     tariffModel: {"kind":"orderedSplit","notation":"2 + 2 + 2"}, totalMarks: 6,
     rows: [
@@ -241,6 +249,14 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "Have a ventilation system in place to deal with the toxic fumes.", marks: null },
     { id: "r-4", kind: "point", verbatim: "Have all electrical units earthed and connections properly insulated.", marks: null },
     ],
+    questionFigure: {
+          "candId": "engineering-2021-HL-paper-q6bi-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2021-HL-paper-q6bi-art.png",
+          "srcHash": "38e3446d12f0548fd99ef96b3bac03e4",
+          "alt": "The table or diagram printed with 2021 HL Q6(b)(i), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -249,7 +265,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
     id: "eng-2021-hl-q6-c-i", topicId: "eng-3-14", conceptId: "following-terms-relation-robotic-assisted-surgery",
     section: "A", questionRef: "2021 HL Q6(c)(i)",
-    stem: ". (50 marks)",
     questionText: "Explain the following terms in relation to the robotic assisted surgery (RAS): • Degrees of freedom • Machine vision.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -264,7 +279,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
     id: "eng-2021-hl-q6-c-ii", topicId: "eng-3-14", conceptId: "important-role-played-stepper-motors-control",
     section: "A", questionRef: "2021 HL Q6(c)(ii)",
-    stem: ". (50 marks)",
     questionText: "Describe the important role played by stepper motors in the control of robotic arms.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
@@ -281,13 +295,33 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
     id: "eng-2021-hl-q7-a-i", topicId: "eng-1-9", conceptId: "term-bioplastic",
     section: "A", questionRef: "2021 HL Q7(a)(i)",
-    stem: ". (50 marks)",
     questionText: "Explain the term bioplastic.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 2,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Bioplastics are plastic materials produced from renewable biomass sources, such as vegetable fats and oils, corn starch, straw, woodchips, sawdust, recycled food waste, etc.", marks: null },
     { id: "r-2", kind: "point", verbatim: "Bioplastic can be made from agricultural by-products and also from used plastic bottles and other containers using micro-organisms. Bioplastics are biodegradable materials that come from renewable sources and can be used to reduce the problem of plastic waste that is contaminating the environment.", marks: null },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
+    id: "eng-2021-hl-q7-b", topicId: "eng-1-9", conceptId: "main-differences-between-natural-rubber-synthetic",
+    section: "A", questionRef: "2021 HL Q7(b)",
+    questionText: "Answer any three of the following: (i) Describe the main differences between natural rubber and synthetic rubber. (ii) Describe the manufacturing process of plastic pultrusion shown below. (iii) Outline two negative effects on the environment of petroleum-based polymer manufacture. (iv) Describe, with the aid of a diagram, the ethylene monomer. (v) Explain the polymer manufacturing process of vacuum forming.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 18,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "Most natural rubber is produced from a softwood tree native to Brazil, though several other species of trees and shrubs are sources of rubber as well. Natural rubber has a high tensile strength and is resistant to fatigue from wear such as chipping, cutting or tearing.", marks: 18, accepts: ["Synthetic rubber is produced artificially from polymers in different varieties to mimic the different properties of natural rubber. Synthetic rubber offers better resistance to abrasion than natural rubber, as well as superior resistance to heat and the effects of ageing. Many types of synthetic rubber are flame-resistant, so it can be used as insulation for electrical devices. It also remains flexible at low temperatures and is resistant to grease and oil.","Plastic pultrusion is similar to extrusion and is associated mainly with thermosetting polymers. In the standard pultrusion process the reinforcement materials like fibres are impregnated with resin, possibly followed by a separate preforming system, and pulled through a heated stationary die where the resin undergoes polymerisation. The impregnation is either done by pulling the reinforcement through a bath or by injecting the resin into an injection chamber which typically is connected to the die.","Many resin types may be used in pultrusion including polyester, polyurethane, vinylester and epoxy. Resin provides the resistance to the environment, (i.e., the corrosion resistance, the UV resistance, the impact resistance, etc.) and the glass provides strength, in addition to safety from fire.","The synthesis of petroleum products also uses large amounts of energy.","Some chemical by-products may also be hazardous.","Petroleum products are likely to be long-life, presenting a challenge for disposal at end-of- life.","The ethylene monomer (or mer) consists of hydrogen and carbon atoms as shown in the diagram.","There is a strong and a weak bond between the carbon atoms. This monomer polymerises to form polyethylene by addition polymerisation."] },
+    ],
+    questionFigure: {
+          "candId": "engineering-2021-HL-paper-q7bii-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2021-HL-paper-q7bii-art.png",
+          "srcHash": "360b58f9c648a69d07c6feee7727a3f2",
+          "alt": "The table or diagram printed with 2021 HL Q7(b)(ii), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2021 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -330,7 +364,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
     id: "eng-2021-hl-q8-a-i", topicId: "eng-2-11", conceptId: "safety-hazards-associated-use-centre-lathe",
     section: "A", questionRef: "2021 HL Q8(a)(i)",
-    stem: ". (50 marks)",
     questionText: "Outline three safety hazards associated with the use of a centre lathe in the engineering classroom.",
     tariffModel: {"kind":"orderedSplit","notation":"2 + 2 + 2"}, totalMarks: 6,
     rows: [
@@ -348,11 +381,42 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
     id: "eng-2021-hl-q8-b", topicId: "eng-2-11", conceptId: "difference-between-clearance-hole-tapping-size",
     section: "A", questionRef: "2021 HL Q8(b)",
-    stem: ". (50 marks)",
     questionText: "Answer any three of the following: (i) Explain the difference between a clearance hole and a tapping size hole in drilling. (ii) Identify two safety features incorporated into a horizontal bandsaw. (iii) Explain two ways in which cutting fluids help the machining process. (iv) Describe, with the aid of a diagram, the formation of a built-up edge in metal cutting. (v) Outline two reasons for dressing a grinding wheel.",
     tariffModel: {"kind":"fixed"}, totalMarks: 18,
     rows: [
     { id: "r-1", kind: "alt", verbatim: "Clearance hole is a hole through an object which is large enough to enable threads of a screw or bolt to pass through but not the head of the screw or bolt.", marks: 18, accepts: ["A tapping size hole is drilled to allow threads to be cut on the inside of the hole.","Blade is covered by guard","Sturdy construction which can be bolted on to ground","Feed rate can be regulated","Has a cutting fluid reservoir integrated into the machine","Cut-off switch prevents machine from cutting into bed","Cutting fluids will keep the material and cutting tools cool, this prevents heat build up and improves cutting action.","Tool life is extended.","Most cutting fluids have some lubricating action to make cutting more efficient.","Built-up edge: In single point cutting of metals, a built-up edge is an accumulation of material against the rake face which adheres to the tool tip. The cutting tool is separated from the chip by the built-up edge.","As the built-up edge enlarges, the cutting edge will not cut effectively as the tool cutting angles are compromised. The surface finish will deteriorate and machining will not be smooth."] },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
+    id: "eng-2021-hl-q8-c-ii", topicId: "eng-1-4", conceptId: "method-securely-holding-ferrous-metals-during",
+    section: "A", questionRef: "2021 HL Q8(c)(ii)",
+    questionText: "Outline one method of securely holding ferrous metals during the surface grinding process. OR Describe each of the following CNC terms: • Automatic tool change • Tool offsets.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Used for holding ferromagnetic workpieces, a magnetic chuck consists of an accurately centred permanent magnet face.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Electromagnets or permanent magnets are brought into contact with fixed ferrous plates, or pole pieces, contained within a housing. These pole pieces are usually flush with the housing surface. The part (workpiece) to be held forms the closing of the magnetic loop or path, onto those fixed plates, providing a secure anchor for the workpiece.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "There are two basic types of magnetic chucks now available (electromagnetic and permanent), but they come in a variety of sizes, shapes and modifications to suit many different applications. Electromagnetic chucks are charged by an electrical current while permanent-type magnetic chucks are based on permanent magnets.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Both types can be turned on and off.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Tool offsets are the set of values that move the centre point of the cutter to the correct position for cutting a work piece using a specific tool. This accounts for variation in tool geometry (diameter, length, etc.) and ensures precise cutting.", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2021, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Higher Level — © State Examinations Commission.",
+    id: "eng-2021-hl-q9-a-i", topicId: "eng-2-15", conceptId: "aid-diagram-s-operation-leadscrew-mechanism",
+    section: "A", questionRef: "2021 HL Q9(a)(i)",
+    stem: "leadscrew",
+    questionText: "Describe, with the aid of a diagram(s), the operation of the leadscrew mechanism in lifting the ride-on lawnmower.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "As the leadscrew handle is rotated, the screw rotates causing the platform to raise and lower.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "The platform is attached with a fixed threaded nut which follows the threaded leadscrew until the handle stops turning.", marks: null },
     ],
   } as SecCard,
   {
@@ -377,7 +441,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Higher Level — © State Examinations Commission.",
     id: "eng-2022-hl-q1-b", topicId: "eng-1-3", conceptId: "examples-difference-between-amorphous-structures-crystalline",
     section: "A", questionRef: "2022 HL Q1(b)",
-    stem: ". (50 marks) Give brief answers to any ten of the following:",
+    stem: "Give brief answers to any ten of the following:",
     questionText: "Describe, with examples, the difference between amorphous structures and crystalline structures.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
@@ -392,7 +456,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Higher Level — © State Examinations Commission.",
     id: "eng-2022-hl-q1-c", topicId: "eng-3-12", conceptId: "difference-between-clearance-fit-interference-fit",
     section: "A", questionRef: "2022 HL Q1(c)",
-    stem: ". (50 marks) Give brief answers to any ten of the following:",
+    stem: "Give brief answers to any ten of the following:",
     questionText: "Describe the difference between a clearance fit and an interference fit in engineering limits and fits.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
@@ -406,7 +470,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Higher Level — © State Examinations Commission.",
     id: "eng-2022-hl-q2-a-i", topicId: "eng-3-14", conceptId: "term-artificial-intelligence-ai",
     section: "A", questionRef: "2022 HL Q2(a)(i)",
-    stem: ". (50 marks) Answer all of the following:",
     questionText: "Describe the term Artificial Intelligence (AI).",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -420,7 +483,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Higher Level — © State Examinations Commission.",
     id: "eng-2022-hl-q2-a-ii", topicId: "eng-3-14", conceptId: "basic-difference-between-machine-learning-deep",
     section: "A", questionRef: "2022 HL Q2(a)(ii)",
-    stem: ". (50 marks) Answer all of the following:",
     questionText: "Explain the basic difference between machine learning and deep learning.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
@@ -435,7 +497,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Higher Level — © State Examinations Commission.",
     id: "eng-2022-hl-q2", topicId: "eng-3-14", conceptId: "artificial-intelligence-can-be-broadly-categorised",
     section: "A", questionRef: "2022 HL Q2",
-    stem: ". (50 marks) Answer all of the following:",
     questionText: "(i) Describe the term Artificial Intelligence (AI). (ii) Explain the basic difference between machine learning and deep learning. (a) Industry 4.0 (4th industrial revolution) is a fusion of leading-edge production techniques and smart systems that integrate with organisations and people. An essential element of industry 4.0 is Artificial Intelligence (AI) and Smart Manufacturing. (b) Artificial Intelligence can be broadly categorised in two forms. Describe the difference between: • Artificial Narrow Intelligence (weak AI) and, • Artificial General Intelligence (strong AI). (i) Reactive machines; (ii) Limited memory; (iii) Theory of mind; (iv) Self-awareness. (c) Explain any two of the following terms in relation to artificial intelligence and smart manufacturing: (i) Predictive maintenance; (ii) Supply chain management; (iii) Quality control. (d) Artificial intelligence offers a range of benefits in smart manufacturing processes. Explain any two of the following in relation to smart manufacturing: (e) Artificial intelligence provides both benefits and concerns for the business and manufacturing industries. Discuss each of the following in relation to artificial intelligence: • Economic benefits; • Ethical concerns.",
     tariffModel: {"kind":"orderedSplit","notation":"Question 2 – 50 marks"}, totalMarks: 50,
     rows: [
@@ -460,7 +521,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Higher Level — © State Examinations Commission.",
     id: "eng-2022-hl-q4-a-i", topicId: "eng-1-4", conceptId: "difference-between-cast-iron-steel",
     section: "A", questionRef: "2022 HL Q4(a)(i)",
-    stem: ". (50 marks)",
     questionText: "Explain one difference between cast iron and steel.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -474,12 +534,42 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Higher Level — © State Examinations Commission.",
     id: "eng-2022-hl-q4-b-i", topicId: "eng-1-3", conceptId: "identify-point-transformation-occurs-point",
     section: "A", questionRef: "2022 HL Q4(b)(i)",
-    stem: "1000 900 Temperature °C 800 700 600 500 400 300 200 100 0.2 0.4 0.6 0.8 1.0 1.2 1.4 % Carbon",
     questionText: "Identify the point A, and describe the transformation which occurs at this point.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "This is where pearlite changes to austenite at 0.83% carbon content at 723°C. It is a solid to solid transformation.", marks: 10 },
     ],
+    questionFigure: {
+          "candId": "engineering-2022-HL-paper-q4bii-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2022-HL-paper-q4bii-art.png",
+          "srcHash": "9c1105c64a467efbaa627bb01c531e7b",
+          "alt": "The table or diagram printed with 2022 HL Q4(b)(ii), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2022 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Higher Level — © State Examinations Commission.",
+    id: "eng-2022-hl-q4-b-ii", topicId: "eng-2-6", conceptId: "identify-heat-treatment-process-occurs-when",
+    section: "A", questionRef: "2022 HL Q4(b)(ii)",
+    questionText: "Identify and describe the heat treatment process which occurs when 0.6% carbon steel is cooled very slowly from 1000°C, as indicated on the diagram.",
+    tariffModel: {"kind":"orderedSplit","notation":"2 + 4"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "For annealing of 0.6% carbon content the steel is heated to 1000°C and soaked at this temperature until all of the workpiece is fully heated through.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "The temperature of the furnace is gradually reduced so that the piece cools very slowly.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "This causes the steel to become “soft”, recrystallises the grains and makes the pieces more machineable and ductile.", marks: null },
+    ],
+    questionFigure: {
+          "candId": "engineering-2022-HL-paper-q4bii-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2022-HL-paper-q4bii-art.png",
+          "srcHash": "9c1105c64a467efbaa627bb01c531e7b",
+          "alt": "The table or diagram printed with 2022 HL Q4(b)(ii), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2022 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -488,7 +578,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Higher Level — © State Examinations Commission.",
     id: "eng-2022-hl-q4-b-iii", topicId: "eng-2-6", conceptId: "method-accurately-measuring-furnace-temperature-when",
     section: "A", questionRef: "2022 HL Q4(b)(iii)",
-    stem: "1000 900 Temperature °C 800 700 600 500 400 300 200 100 0.2 0.4 0.6 0.8 1.0 1.2 1.4 % Carbon",
     questionText: "Describe one method of accurately measuring furnace temperature when heat treating steel.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
@@ -496,6 +585,14 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "There are three possible results with the optical pyrometer: filament too bright, filament not bright enough and filament matching the furnace colour. When the filament seems to ‘disappear’, the temperature of the filament matches that of the furnace and can thus be taken.", marks: null },
     { id: "r-3", kind: "point", verbatim: "Temperature too low Correct Temperature too high", marks: null },
     ],
+    questionFigure: {
+          "candId": "engineering-2022-HL-paper-q4bii-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2022-HL-paper-q4bii-art.png",
+          "srcHash": "9c1105c64a467efbaa627bb01c531e7b",
+          "alt": "The table or diagram printed with 2022 HL Q4(b)(ii), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2022 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -504,11 +601,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Higher Level — © State Examinations Commission.",
     id: "eng-2022-hl-q4-c", topicId: "eng-2-6", conceptId: "aid-diagram-heating-cooling-process-used",
     section: "A", questionRef: "2022 HL Q4(c)",
-    stem: ". (50 marks)",
     questionText: "Induction hardening is a heat treatment technique that can be used to harden specific portions of gears to improve their mechanical properties.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Induction hardening is a method of quickly and selectively hardening the surface of a metal part.", marks: 16, accepts: ["Examples of where this process is used include the slide-ways on the center lathe and gears.","High temperatures associated with the heating process – wear PPE.","Electrical Alternating current supplying the coil can cause an electrical hazard.","Spitting of the water on impacting the heated surface could lead to burning.","Fumes could lead to dangerous gas levels in the work area."] },
+    { id: "r-1", kind: "alt", verbatim: "Induction hardening is a method of quickly and selectively hardening the surface of a metal part.", marks: 16, accepts: ["A copper coil carrying a significant level of alternating current is placed near (not touching) the part.","The workpiece is heated by a high frequency electric current passing through the copper coil to a high temperature (austenite zone) and then quenched with jets of water.","The quenched metal undergoes a martensitic transformation, increasing the hardness of the outer surface while keeping the inner core tough.","Examples of where this process is used include the slide-ways on the center lathe and gears.","High temperatures associated with the heating process – wear PPE.","Electrical Alternating current supplying the coil can cause an electrical hazard.","Spitting of the water on impacting the heated surface could lead to burning.","Fumes could lead to dangerous gas levels in the work area."] },
     ],
   } as SecCard,
   {
@@ -518,7 +614,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Higher Level — © State Examinations Commission.",
     id: "eng-2022-hl-q4-c-ii", topicId: "eng-2-6", conceptId: "safety-hazards-associated-induction-hardening-process",
     section: "A", questionRef: "2022 HL Q4(c)(ii)",
-    stem: ". (50 marks)",
     questionText: "Outline two safety hazards associated with the induction hardening process.",
     tariffModel: {"kind":"orderedSplit","notation":"4 + 4"}, totalMarks: 8,
     rows: [
@@ -535,13 +630,27 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Higher Level — © State Examinations Commission.",
     id: "eng-2022-hl-q5-a-i", topicId: "eng-1-3", conceptId: "aid-diagrams-process-dendritic-growth",
     section: "A", questionRef: "2022 HL Q5(a)(i)",
-    stem: ". (50 marks)",
     questionText: "Describe, with the aid of diagrams, the process of dendritic growth.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
     { id: "r-1", kind: "point", verbatim: "As a metal reaches its cooling point small particles cool first. Solidification takes place in a pattern. This pattern is called Dendritic Growth and looks like the branches of a tree.", marks: null },
     { id: "r-2", kind: "point", verbatim: "Each small particle grows to form a crystal or grain. Crystals grow together to form a solid.", marks: null },
     { id: "r-3", kind: "point", verbatim: "This process is known as dendritic growth from Greek word “dendron” for treelike.", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Higher Level — © State Examinations Commission.",
+    id: "eng-2022-hl-q5-a-ii", topicId: "eng-1-3", conceptId: "aid-diagram-any-crystal-point-defects",
+    section: "A", questionRef: "2022 HL Q5(a)(ii)",
+    questionText: "Describe, with the aid of a diagram, any two crystal point defects which may occur during the solidification process.",
+    tariffModel: {"kind":"orderedSplit","notation":"4 + 4"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "This is where foreign atoms replace the parent atoms.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Vacancy Defect This is where there is an atom missing from the lattice.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Interstitial Defect This is where foreign atoms fit in between the parent atoms.", marks: null },
     ],
   } as SecCard,
   {
@@ -567,7 +676,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Higher Level — © State Examinations Commission.",
     id: "eng-2022-hl-q7", topicId: "eng-1-9", conceptId: "aid-diagram-suitable-thermoplastic-manufacturing-process",
     section: "A", questionRef: "2022 HL Q7",
-    stem: ". (50 marks)",
     questionText: "(i) Describe, with the aid of a diagram, a suitable thermoplastic manufacturing process for the polyethylene terephthalate (PET) shell. (ii) Give two properties of expanded polystyrene (ESP) which make it suitable for use in the helmet liner. (iii) Select a suitable polymer for the manufacture of the chin straps on the bicycle helmet. Justify your selection. (a) Bicycle helmets are manufactured from a range of thermoplastic polymers. The shell is generally manufactured from polyethylene terephthalate (PET) and the liner from expanded polystyrene (ESP). (i) Outline the function of a catalyst in the addition polymerisation process. (ii) Explain, with an example, the term copolymerisation. (iii) Name any two polymer additives which are used in the production of mobile phone covers. (iv) Outline two environmental benefits of promoting widespread recycling of mobile phone covers. (v) Describe, with the aid of a diagram(s), the main differences between linear and cross-linked chains in polymers. (b) Answer any three of the following: (i) Compare glass and polycarbonate as suitable materials in the production of mobile phone screen protectors, making reference to: • impact resistance • transparency • hardness. (ii) Describe the process of polymer lamination. (c) A range of plastic materials and glass are often used in the manufacture of mobile phone protective screens. Screen protectors may be laminated and tempered.",
     tariffModel: {"kind":"orderedSplit","notation":"Question 7 – 50 marks"}, totalMarks: 50,
     rows: [
@@ -626,7 +734,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q1-a", topicId: "eng-3-14", conceptId: "advantage-disadvantage-smart-glasses",
     section: "A", questionRef: "2023 HL Q1(a)",
-    stem: ". (50 marks) Give brief answers to any ten of the following:",
+    stem: "Give brief answers to any ten of the following:",
     questionText: "Outline one advantage and one disadvantage of ‘smart’ glasses.",
     tariffModel: {"kind":"orderedSplit","notation":"3 + 2"}, totalMarks: 5,
     rows: [
@@ -647,7 +755,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q1-b", topicId: "eng-2-10", conceptId: "briefly-principle-operation-bridge-rectifier-electric",
     section: "A", questionRef: "2023 HL Q1(b)",
-    stem: ". (50 marks) Give brief answers to any ten of the following:",
+    stem: "Give brief answers to any ten of the following:",
     questionText: "Briefly describe the principle of operation of a bridge rectifier in electric arc welding circuits.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
@@ -662,7 +770,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q1-c", topicId: "eng-2-13", conceptId: "engineering-importance-specifying-limits-component-drawings",
     section: "A", questionRef: "2023 HL Q1(c)",
-    stem: ". (50 marks) Give brief answers to any ten of the following:",
+    stem: "Give brief answers to any ten of the following:",
     questionText: "In engineering, explain the importance of specifying limits on component drawings prior to manufacture.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -676,7 +784,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q1-e", topicId: "eng-1-3", conceptId: "how-structure-metallic-bond-facilitates-electrical",
     section: "A", questionRef: "2023 HL Q1(e)",
-    stem: ". (50 marks) Give brief answers to any ten of the following:",
+    stem: "Give brief answers to any ten of the following:",
     questionText: "Describe how the structure of the metallic bond facilitates electrical conductivity in metals.",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -690,7 +798,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q1-h", topicId: "eng-2-15", conceptId: "benefits-using-pneumatic-power-over-electrical",
     section: "A", questionRef: "2023 HL Q1(h)",
-    stem: ". (50 marks) Give brief answers to any ten of the following:",
+    stem: "Give brief answers to any ten of the following:",
     questionText: "Outline two benefits of using pneumatic power over electrical power in engineering manufacture.",
     tariffModel: {"kind":"orderedSplit","notation":"3 + 2"}, totalMarks: 5,
     rows: [
@@ -728,7 +836,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q2-a-i", topicId: "eng-3-14", conceptId: "term-extended-reality-xr",
     section: "A", questionRef: "2023 HL Q2(a)(i)",
-    stem: ". (50 marks) Answer all of the following:",
     questionText: "Describe the term Extended Reality (XR).",
     tariffModel: {"kind":"fixed"}, totalMarks: 5,
     rows: [
@@ -742,7 +849,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q2-a-ii", topicId: "eng-3-14", conceptId: "identify-benefits-extended-reality-xr",
     section: "A", questionRef: "2023 HL Q2(a)(ii)",
-    stem: ". (50 marks) Answer all of the following:",
     questionText: "Identify two benefits of Extended Reality (XR).",
     tariffModel: {"kind":"orderedSplit","notation":"3 + 2"}, totalMarks: 5,
     rows: [
@@ -759,7 +865,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q2-c", topicId: "eng-3-14", conceptId: "discuss-how-extended-reality-xr-immersive",
     section: "A", questionRef: "2023 HL Q2(c)",
-    stem: ". (50 marks) Answer all of the following:",
     questionText: "Discuss how Extended Reality (XR) immersive technology might provide a more engaging educational environment for learners of the future.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
@@ -823,6 +928,20 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC027ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
+    id: "eng-2023-hl-q3-b-i", topicId: "eng-3-8", conceptId: "using-graph-paper-supplied-plot-load",
+    section: "A", questionRef: "2023 HL Q3(b)(i)",
+    stem: "Load (kN) 22 44 66 80 89 100 110 123 135 132 118 Extension (mm) 0.1 0.2 0.3 0.4 0.5 0.8 1.0 1.5 2.5 4.0 4.3",
+    questionText: "Using the graph paper supplied, plot the load-extension diagram.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "120 100 80 60 40 20 0.08 1.0 2.0 3.0 4.0 5.0 Extension(mm) ( )", marks: 10 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q3-b-ii", topicId: "eng-3-8", conceptId: "determine-ultimate-tensile-strength-uts-specimen",
     section: "A", questionRef: "2023 HL Q3(b)(ii)",
     stem: "Load (kN) 22 44 66 80 89 100 110 123 135 132 118 Extension (mm) 0.1 0.2 0.3 0.4 0.5 0.8 1.0 1.5 2.5 4.0 4.3",
@@ -853,7 +972,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q3-c-i", topicId: "eng-3-8", conceptId: "aid-suitable-diagrams-ultrasonic-non-destructive",
     section: "A", questionRef: "2023 HL Q3(c)(i)",
-    stem: ". (50 marks)",
     questionText: "Describe, with the aid of suitable diagrams, ultrasonic non-destructive testing.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -867,7 +985,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q3-c-ii", topicId: "eng-3-8", conceptId: "distinguish-examples-between-microscopic-macroscopic-non",
     section: "A", questionRef: "2023 HL Q3(c)(ii)",
-    stem: ". (50 marks)",
     questionText: "Distinguish, with examples, between microscopic and macroscopic non-destructive testing methods.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
@@ -882,7 +999,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q4-a-ii", topicId: "eng-2-6", conceptId: "reasons-case-hardening-arbour-keyless-chuck",
     section: "A", questionRef: "2023 HL Q4(a)(ii)",
-    stem: ". (50 marks)",
     questionText: "Outline two reasons for case hardening the arbour of the keyless chuck.",
     tariffModel: {"kind":"orderedSplit","notation":"2 + 2"}, totalMarks: 4,
     rows: [
@@ -900,7 +1016,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q4-a-iii", topicId: "eng-2-6", conceptId: "advantage-case-hardening-over-full-hardening",
     section: "A", questionRef: "2023 HL Q4(a)(iii)",
-    stem: ". (50 marks)",
     questionText: "Explain one advantage of case hardening over full hardening.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -914,13 +1029,20 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q4-b-ii", topicId: "eng-1-3", conceptId: "significance-point-d-point-e",
     section: "A", questionRef: "2023 HL Q4(b)(ii)",
-    stem: "arbour Line A 1400 1000 600 200 Temperature °C Line B Line C % Carbon 1 2 3 4 5 6",
     questionText: "Explain the significance of point D and point E.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "D = At the eutectoid point, during the cooling process, the single-phase austenite (γ) transforms into a mixture of two distinct phases: ferrite (α) and cementite (Fe₃C). This transformation is known as the eutectoid transformation. It is a crucial process that affects the microstructure and properties of the steel.", marks: 3 },
     { id: "r-2", kind: "point", verbatim: "E = This is a single-phase liquid of 4.3% carbon at the eutectic temperature 1147 oC which converts into solid austenite and cementite.", marks: 3 },
     ],
+    questionFigure: {
+          "candId": "engineering-2023-HL-paper-q4bi-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2023-HL-paper-q4bi-art.png",
+          "srcHash": "fdc6d01d9654cc0aceca2b896b76cb3f",
+          "alt": "The table or diagram printed with 2023 HL Q4(b)(i), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -929,13 +1051,42 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q4-b-iii", topicId: "eng-1-4", conceptId: "compare-austenite-pearlite-reference-carbon-content",
     section: "A", questionRef: "2023 HL Q4(b)(iii)",
-    stem: "arbour Line A 1400 1000 600 200 Temperature °C Line B Line C % Carbon 1 2 3 4 5 6",
     questionText: "Compare austenite and pearlite with reference to carbon content, temperature and structure.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Austenite is a high-temperature phase with an FCC crystal structure, forming above the critical temperature and dissolving higher carbon contents (in excess of 0.76% carbon).", marks: null },
     { id: "r-2", kind: "point", verbatim: "Pearlite is a BCC microstructure that forms during the eutectoid transformation of austenite and consists of alternating layers of ferrite and cementite. It forms at temperatures below the eutectoid temperature of 723 oC with a carbon content around the eutectoid composition.", marks: null },
     ],
+    questionFigure: {
+          "candId": "engineering-2023-HL-paper-q4bi-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2023-HL-paper-q4bi-art.png",
+          "srcHash": "fdc6d01d9654cc0aceca2b896b76cb3f",
+          "alt": "The table or diagram printed with 2023 HL Q4(b)(i), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
+    id: "eng-2023-hl-q5-a-i", topicId: "eng-1-3", conceptId: "crystal-defect-crystal-defect-b-shown",
+    section: "A", questionRef: "2023 HL Q5(a)(i)",
+    questionText: "Name and describe crystal defect A and crystal defect B shown.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "This is where there is an atom missing from the lattice.", marks: 4 },
+    { id: "r-2", kind: "point", verbatim: "B = Interstitial Defect This is where foreign atoms fit in between the parent atoms.", marks: 4 },
+    ],
+    questionFigure: {
+          "candId": "engineering-2023-HL-paper-q5ai-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2023-HL-paper-q5ai-art.png",
+          "srcHash": "7953cbf44557a740d95d80fd798e89e6",
+          "alt": "The table or diagram printed with 2023 HL Q5(a)(i), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -944,12 +1095,19 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q5-a-ii", topicId: "eng-3-8", conceptId: "material-property-may-be-affected-defect",
     section: "A", questionRef: "2023 HL Q5(a)(ii)",
-    stem: "defect A defect B",
     questionText: "Describe one material property which may be affected by defect B.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Interstitial defects can increase the hardness and strength of a metal as dislocations can be more difficult to move. Ductility is reduced and brittleness can be increased. Interstitial defects may reduce electrical and thermal conductivity with disruption of the regular patterns of atoms.", marks: 4 },
     ],
+    questionFigure: {
+          "candId": "engineering-2023-HL-paper-q5ai-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2023-HL-paper-q5ai-art.png",
+          "srcHash": "7953cbf44557a740d95d80fd798e89e6",
+          "alt": "The table or diagram printed with 2023 HL Q5(a)(i), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -958,7 +1116,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q6-a-i", topicId: "eng-2-10", conceptId: "aid-diagram-principles-mig-welding",
     section: "A", questionRef: "2023 HL Q6(a)(i)",
-    stem: ". (50 marks)",
     questionText: "Describe, with the aid of a diagram, the principles of MIG welding.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
@@ -973,7 +1130,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q6-a-ii", topicId: "eng-2-10", conceptId: "reasons-use-mig-welding-restoration-classic",
     section: "A", questionRef: "2023 HL Q6(a)(ii)",
-    stem: ". (50 marks)",
     questionText: "Explain two reasons for the use of MIG welding in the restoration of classic cars.",
     tariffModel: {"kind":"orderedSplit","notation":"3 + 3"}, totalMarks: 6,
     rows: [
@@ -990,7 +1146,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q6-b", topicId: "eng-2-10", conceptId: "aid-diagram-neutral-flame-oxy-acetylene",
     section: "A", questionRef: "2023 HL Q6(b)",
-    stem: ". (50 marks)",
     questionText: "Answer any three of the following: (i) Describe, with the aid of a diagram, the neutral flame in oxy-acetylene welding. (ii) Name three types of welding suitable for automated control. (iii) Outline one safety benefit of using a granulated flux in submerged arc welding. (iv) Describe how multi-run welding can impact the quality of a weld. (v) Explain the function of a pressure regulator in oxy-acetylene welding.",
     tariffModel: {"kind":"fixed"}, totalMarks: 18,
     rows: [
@@ -1053,12 +1208,43 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q7-b-i", topicId: "eng-1-9", conceptId: "term-copolymer-relation-thermoplastics",
     section: "A", questionRef: "2023 HL Q7(b)(i)",
-    stem: ". (50 marks)",
     questionText: "Describe the term copolymer in relation to thermoplastics.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "point", verbatim: "When two or more different monomers are added together, their result is called a copolymer and the process is called copolymerisation. It is similar to the process of metal alloying. Examples of copolymers include Acrylonitrile butadiene styrene (ABS), Nitrile rubber and Ethylene-vinyl acetate.", marks: 4 },
     ],
+    questionFigure: {
+          "candId": "engineering-2023-HL-paper-q7bii-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2023-HL-paper-q7bii-art.png",
+          "srcHash": "bd55b86b2a330396878d031fe087d6fb",
+          "alt": "The table or diagram printed with 2023 HL Q7(b)(ii), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
+    id: "eng-2023-hl-q7-b-ii", topicId: "eng-1-9", conceptId: "identify-aid-diagram-polymer-manufacturing-process",
+    section: "A", questionRef: "2023 HL Q7(b)(ii)",
+    questionText: "Identify and describe, with the aid of a diagram, a polymer manufacturing process capable of mass producing the yellow jet ski hull shown.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Granulated thermoplastic polymer is fed into the barrel from the hopper.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "The screw moves the polymer forward.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Heaters melt the polymer to liquid.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "When there is enough liquid polymer, the ram will inject the polymer into the mould.", marks: null },
+    ],
+    questionFigure: {
+          "candId": "engineering-2023-HL-paper-q7bii-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2023-HL-paper-q7bii-art.png",
+          "srcHash": "bd55b86b2a330396878d031fe087d6fb",
+          "alt": "The table or diagram printed with 2023 HL Q7(b)(ii), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2023 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1079,9 +1265,22 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "higher",
     paperFileid: "LC027ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
+    id: "eng-2023-hl-q8-a-i", topicId: "eng-2-11", conceptId: "aid-diagram-term-built-up-edge",
+    section: "A", questionRef: "2023 HL Q8(a)(i)",
+    questionText: "Describe, with the aid of a diagram, the term built-up edge and explain how it occurs.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Built-up edge: In single point cutting of metals, a built-up edge is an accumulation of material against the rake face which adheres to the tool tip. The cutting tool is separated from the chip by the built-up edge which is caused by incorrect machine speeds for the metal, machine feed rate, cutting fluids, etc.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "As the built-up edge enlarges, the cutting edge will not cut effectively as the tool cutting angles are compromised. The surface finish will deteriorate and machining will not be smooth. The machine is likely to be subjected to excess vibration.", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Higher Level — © State Examinations Commission.",
     id: "eng-2023-hl-q8-a-ii", topicId: "eng-2-11", conceptId: "methods-preventing-built-up-edge-when",
     section: "A", questionRef: "2023 HL Q8(a)(ii)",
-    stem: ". (50 marks)",
     questionText: "Outline two methods of preventing a built-up edge when machining.",
     tariffModel: {"kind":"orderedSplit","notation":"2 + 2"}, totalMarks: 4,
     rows: [
@@ -1134,7 +1333,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q2-a-i", topicId: "eng-3-14", conceptId: "reasons-extensive-use-container-ships-movement",
     section: "A", questionRef: "2024 HL Q2(a)(i)",
-    stem: ". (50 marks)",
     questionText: "Outline two reasons for the extensive use of container ships in the movement of goods.",
     tariffModel: {"kind":"orderedSplit","notation":"2 + 2"}, totalMarks: 4,
     rows: [
@@ -1154,7 +1352,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q2-a-ii", topicId: "eng-3-14", conceptId: "hazards-container-ships-must-overcome-they",
     section: "A", questionRef: "2024 HL Q2(a)(ii)",
-    stem: ". (50 marks)",
     questionText: "Describe two hazards that container ships must overcome as they move across the oceans.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
@@ -1174,7 +1371,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q2-b-ii", topicId: "eng-3-14", conceptId: "distinguish-between-following-container-ships-feeder",
     section: "A", questionRef: "2024 HL Q2(b)(ii)",
-    stem: ". (50 marks)",
     questionText: "Distinguish between the following container ships: Feeder, Panamax and Ultra Large Container Vessel (ULCV).",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
@@ -1190,13 +1386,43 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q2-c-i", topicId: "eng-1-5", conceptId: "container-ships-often-driven-cast-bronze",
     section: "A", questionRef: "2024 HL Q2(c)(i)",
-    stem: ". (50 marks)",
     questionText: "Container ships are often driven by cast bronze propellers which may be up to 10m in diameter. Outline two reasons for the use of bronze in the propellers of container ships.",
     tariffModel: {"kind":"orderedSplit","notation":"4 + 4"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "Bronze has excellent resistance to corrosion, especially in a seawater environment. Bronze is a strong and wear-resistant material.", marks: null },
     { id: "r-2", kind: "point", verbatim: "It is easy to cast and machine and has effective shock absorption properties, this promotes smoother operation.", marks: null },
     { id: "r-3", kind: "point", verbatim: "It is cost effective due to long life and performance.", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
+    id: "eng-2024-hl-q2-c-ii", topicId: "eng-3-14", conceptId: "aid-diagram-s-how-container-ship",
+    section: "A", questionRef: "2024 HL Q2(c)(ii)",
+    questionText: "Describe, with the aid of diagram(s), how container ship stability is maintained making reference to centre of gravity and shape of the hull.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Centre of gravity: The centre of gravity is the point where the ship mass is considered to be concentrated. A lower centre of gravity makes the ship more stable. It reduces the risk of capsizing.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "The cargo must be loaded in a manner that keeps the centre of gravity low and close to the centreline of the ship.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Shape of the Hull: A wider beam (the width of the ship at its widest point) increases stability by providing a larger area for buoyancy forces to act upon. This makes the ship more resistant to rolling (side-to-side motion).", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2024, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
+    id: "eng-2024-hl-q4-a-ii", topicId: "eng-2-6", conceptId: "aid-diagram-s-suitable-hardening-heat",
+    section: "A", questionRef: "2024 HL Q4(a)(ii)",
+    stem: "Brake disc",
+    questionText: "Describe, with the aid of a diagram(s), a suitable hardening heat treatment process for the brake disc.",
+    tariffModel: {"kind":"orderedSplit","notation":"8; 7"}, totalMarks: 15,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Induction hardening is a method of quickly and selectively hardening the surface of a metal part. A copper coil carrying a significant level of alternating current is placed near (not touching) the part.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "The workpiece is heated by a high frequency electric current passing through the copper coil to a high temperature (austenite zone) and then quenched with jets of water.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "The quenched metal undergoes a martensitic transformation, increasing the hardness of the outer surface while keeping the inner core tough.", marks: null },
     ],
   } as SecCard,
   {
@@ -1298,7 +1524,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Higher Level — © State Examinations Commission.",
     id: "eng-2024-hl-q8-c-ii", topicId: "eng-2-11", conceptId: "identify-any-lubricants-commonly-used-when",
     section: "A", questionRef: "2024 HL Q8(c)(ii)",
-    stem: ". (50 marks)",
     questionText: "Identify any two lubricants commonly used when machining. OR Outline two safety features integrated into computerised manufacturing machines.",
     tariffModel: {"kind":"orderedSplit","notation":"4 + 4"}, totalMarks: 8,
     rows: [
@@ -1315,7 +1540,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
     id: "eng-2025-hl-q1-a", topicId: "eng-3-14", conceptId: "advantages-voice-recognition-technology",
     section: "A", questionRef: "2025 HL Q1(a)",
-    stem: ". (50 marks) Give brief answers to any ten of the following:",
+    stem: "Give brief answers to any ten of the following:",
     questionText: "Outline two advantages of voice recognition technology.",
     tariffModel: {"kind":"orderedSplit","notation":"3 + 2"}, totalMarks: 5,
     rows: [
@@ -1332,7 +1557,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
     id: "eng-2025-hl-q1-b", topicId: "eng-2-16", conceptId: "function-heatsink-electronic-devices",
     section: "A", questionRef: "2025 HL Q1(b)",
-    stem: ". (50 marks) Give brief answers to any ten of the following:",
+    stem: "Give brief answers to any ten of the following:",
     questionText: "Explain the function of a heatsink in electronic devices.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
@@ -1347,7 +1572,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
     id: "eng-2025-hl-q1-c", topicId: "eng-2-11", conceptId: "safety-precautions-be-observed-when-using",
     section: "A", questionRef: "2025 HL Q1(c)",
-    stem: ". (50 marks) Give brief answers to any ten of the following:",
+    stem: "Give brief answers to any ten of the following:",
     questionText: "State two safety precautions to be observed when using cutting fluids.",
     tariffModel: {"kind":"orderedSplit","notation":"3 + 2"}, totalMarks: 5,
     rows: [
@@ -1365,7 +1590,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
     id: "eng-2025-hl-q1-d", topicId: "eng-1-4", conceptId: "reasons-why-cast-iron-often-used",
     section: "A", questionRef: "2025 HL Q1(d)",
-    stem: ". (50 marks) Give brief answers to any ten of the following:",
+    stem: "Give brief answers to any ten of the following:",
     questionText: "Outline two reasons why cast iron is often used to manufacture a kettlebell, as shown opposite.",
     tariffModel: {"kind":"orderedSplit","notation":"3 + 2"}, totalMarks: 5,
     rows: [
@@ -1373,13 +1598,13 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "Cast iron provides good stiffness and durability.", marks: null },
     { id: "r-3", kind: "point", verbatim: "Cast iron is a dense material, so when comparing two kettlebells of the same weight, the cast iron option will always be smaller and more compact.", marks: null },
     ],
-    figure: {
+    questionFigure: {
           "candId": "engineering-2025-HL-paper-q1d-art",
           "src": "/exam-figures/engineering/markbank/engineering-2025-HL-paper-q1d-art.png",
           "srcHash": "b0dc1ff85cc6d2c464496cefe8fc9d51",
           "alt": "The table or diagram printed with 2025 HL Question 1(d), as the State Examinations Commission set it.",
-          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -1389,7 +1614,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
     id: "eng-2025-hl-q1-f", topicId: "eng-1-5", conceptId: "identify-benefits-recycling-plastic-bottles-aluminium",
     section: "A", questionRef: "2025 HL Q1(f)",
-    stem: ". (50 marks) Give brief answers to any ten of the following:",
+    stem: "Give brief answers to any ten of the following:",
     questionText: "Identify two benefits of recycling plastic bottles and aluminium cans for the Deposit Return Scheme (DRS), introduced in Ireland in 2024.",
     tariffModel: {"kind":"orderedSplit","notation":"3 + 2"}, totalMarks: 5,
     rows: [
@@ -1407,7 +1632,7 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
     id: "eng-2025-hl-q1-g", topicId: "eng-3-12", conceptId: "distinguish-between-incremental-absolute-dimensioning",
     section: "A", questionRef: "2025 HL Q1(g)",
-    stem: ". (50 marks) Give brief answers to any ten of the following:",
+    stem: "Give brief answers to any ten of the following:",
     questionText: "Distinguish between incremental and absolute dimensioning.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
@@ -1422,7 +1647,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
     id: "eng-2025-hl-q2-a-i", topicId: "eng-3-14", conceptId: "main-properties-hydrogen",
     section: "A", questionRef: "2025 HL Q2(a)(i)",
-    stem: ". (50 marks)",
     questionText: "State the main properties of hydrogen.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
@@ -1439,7 +1663,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
     id: "eng-2025-hl-q2-a-ii", topicId: "eng-3-14", conceptId: "advantages-using-hydrogen-fuel-source",
     section: "A", questionRef: "2025 HL Q2(a)(ii)",
-    stem: ". (50 marks)",
     questionText: "Describe two advantages of using hydrogen as a fuel source.",
     tariffModel: {"kind":"orderedSplit","notation":"3 + 2"}, totalMarks: 5,
     rows: [
@@ -1457,7 +1680,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
     id: "eng-2025-hl-q2-b-ii", topicId: "eng-3-14", conceptId: "environmental-impact-smr-reference-use-fossil",
     section: "A", questionRef: "2025 HL Q2(b)(ii)",
-    stem: ". (50 marks)",
     questionText: "Outline the environmental impact of SMR with reference to the use of fossil fuels, energy input and emissions.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 5,
     rows: [
@@ -1549,9 +1771,38 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC027ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
+    id: "eng-2025-hl-q3-a-iii", topicId: "eng-3-8", conceptId: "aid-diagram-s-principles-tensile-testing",
+    section: "A", questionRef: "2025 HL Q3(a)(iii)",
+    stem: "compressor blade",
+    questionText: "Describe, with the aid of a diagram(s), the principles of tensile testing.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Very hard and brittle (red), high stress with only a limited degree of elasticity before failure. Results in a brittle fracture.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Tough material (green), elastic and plastic deformation, necking and failure. Results in a ductile fracture.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Very Ductile material (blue), a lot of plastic deformation under load before failure.", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
+    id: "eng-2025-hl-q3-b-iii", topicId: "eng-3-8", conceptId: "determine-ultimate-tensile-strength-uts-specimen",
+    section: "A", questionRef: "2025 HL Q3(b)(iii)",
+    stem: "Load (kN) 30 80 126 147 154 148 152 162 180 175 Extension (mm) 0.2 0.5 0.8 0.9 1.5 2.0 2.5 3.0 5.5 8.0",
+    questionText: "Determine the Ultimate Tensile Strength (UTS) of the specimen.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "113.1 mm² C.S.A", marks: 4 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
     id: "eng-2025-hl-q3-c-i", topicId: "eng-3-8", conceptId: "distinguish-between-microscopic-macroscopic-non-destructive",
     section: "A", questionRef: "2025 HL Q3(c)(i)",
-    stem: ". (50 marks)",
     questionText: "Distinguish between microscopic and macroscopic non-destructive testing.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
@@ -1566,12 +1817,25 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
     id: "eng-2025-hl-q3-c-ii", topicId: "eng-3-8", conceptId: "aid-diagram-s-suitable-non-destructive",
     section: "A", questionRef: "2025 HL Q3(c)(ii)",
-    stem: ". (50 marks)",
     questionText: "Describe, with the aid of a diagram(s), one suitable non-destructive test used to examine jet engine turbine blades for internal flaws.",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "point", verbatim: "X-ray radiation penetrates materials and produces an internal photographic image of the test piece. Electrons are released by heating the cathode to high temperature. A high DC voltage speeds up the electrons which are aimed at the anode. The electrons penetrate the anode and the energy is given off as X-rays. The anode reflects the X-rays to the test piece and an image plate is used to capture the internal image. Any flaw or cavity in the test piece will appear dark on the image plate as the radiation will not be absorbed by the flaw.", marks: null },
     { id: "r-2", kind: "point", verbatim: "Proper shielding is necessary when using x-ray equipment as a safety precaution. Internal cavities in jet engine turbine blades can be determined by this NDT method.", marks: null },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
+    id: "eng-2025-hl-q4-a-ii", topicId: "eng-2-6", conceptId: "aid-diagram-s-heating-cooling-process",
+    section: "A", questionRef: "2025 HL Q4(a)(ii)",
+    questionText: "Describe, with the aid of a diagram(s), the heating and cooling process used during the induction hardening of the plough point.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Induction hardening is a method of quickly and selectively hardening the surface of a metal part. A copper coil carrying a significant level of alternating current is placed near (not touching) the part.", marks: 2 },
+    { id: "r-2", kind: "point", verbatim: "The workpiece is heated by a high frequency electric current passing through the copper coil to a high temperature (austenite zone) and then quenched with jets of water. The quenched metal undergoes a martensitic transformation, increasing the hardness of the outer surface while keeping the inner core tough.", marks: 2 },
     ],
   } as SecCard,
   {
@@ -1609,7 +1873,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
     id: "eng-2025-hl-q4-c", topicId: "eng-2-6", conceptId: "aid-diagram-s-operation-optical-pyrometer",
     section: "A", questionRef: "2025 HL Q4(c)",
-    stem: ". (50 marks)",
     questionText: "Answer any two of the following: (i) Describe, with the aid of a diagram(s), the operation of an optical pyrometer. (ii) Identify any three quenching media used in heat treatments. (iii) Explain one benefit of forging metal components.",
     tariffModel: {"kind":"fixed"}, totalMarks: 16,
     rows: [
@@ -1623,7 +1886,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
     id: "eng-2025-hl-q5-a-i", topicId: "eng-1-3", conceptId: "term-allotrope",
     section: "A", questionRef: "2025 HL Q5(a)(i)",
-    stem: ". (50 marks)",
     questionText: "Explain the term allotrope.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
@@ -1650,7 +1912,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
     id: "eng-2025-hl-q6-a-i", topicId: "eng-2-10", conceptId: "aid-diagram-s-process-submerged-arc",
     section: "A", questionRef: "2025 HL Q6(a)(i)",
-    stem: ". (50 marks)",
     questionText: "Describe, with the aid of a diagram(s), the process of submerged arc welding (SAW).",
     tariffModel: {"kind":"questionTotal"}, totalMarks: 10,
     rows: [
@@ -1663,9 +1924,8 @@ export const CARDS: SecCard[] = [
     year: 2025, level: "higher",
     paperFileid: "LC027ALP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
-    id: "eng-2025-hl-q6-b", topicId: "eng-2-10", conceptId: "how-distortion-shown-may-occur-during",
+    id: "eng-2025-hl-q6-b", topicId: "eng-2-10", conceptId: "identify-necessary-steps-preparation-joint-welding",
     section: "A", questionRef: "2025 HL Q6(b)",
-    stem: ". (50 marks)",
     questionText: "Answer any three of the following: (i) Identify two necessary steps in the preparation of a joint for welding. (ii) State two functions of the electrode coating in manual metal arc welding. (iii) Describe how acetylene gas is safely stored. (iv) Describe, with the aid of a diagram(s), the process of friction welding. (v) Outline how distortion, as shown, may occur during welding.",
     tariffModel: {"kind":"orderedSplit","notation":"Any three @ 6 + 6 + 6; 16"}, totalMarks: 34,
     rows: [
@@ -1681,13 +1941,13 @@ export const CARDS: SecCard[] = [
     { id: "r-10", kind: "point", verbatim: "Friction welding is a solid-state fusion process that produces full contact, high quality joints. By rotating one work piece at high- speed relative to another, a compressive axial force is applied.", marks: null },
     { id: "r-11", kind: "point", verbatim: "This generates sufficient temperature to cause the interface to plasticise and fuse.", marks: null },
     ],
-    figure: {
+    questionFigure: {
           "candId": "engineering-2025-HL-paper-q6bv-art",
           "src": "/exam-figures/engineering/markbank/engineering-2025-HL-paper-q6bv-art.png",
           "srcHash": "f2ed35041036c773008d76f907281a36",
           "alt": "The table or diagram printed with 2025 HL Question 6(b)(v), as the State Examinations Commission set it.",
-          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission",
-          "lettersVisible": []
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
     },
   } as SecCard,
   {
@@ -1697,7 +1957,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
     id: "eng-2025-hl-q6-c-i", topicId: "eng-2-10", conceptId: "benefits-using-artificial-intelligence-ai-inspect",
     section: "A", questionRef: "2025 HL Q6(c)(i)",
-    stem: ". (50 marks)",
     questionText: "Outline two benefits of using Artificial Intelligence (AI) to inspect welds for defects.",
     tariffModel: {"kind":"orderedSplit","notation":"4 + 4"}, totalMarks: 8,
     rows: [
@@ -1715,7 +1974,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
     id: "eng-2025-hl-q6-c-ii", topicId: "eng-2-10", conceptId: "advantages-using-virtual-reality-vr-headsets",
     section: "A", questionRef: "2025 HL Q6(c)(ii)",
-    stem: ". (50 marks)",
     questionText: "Describe two advantages of using Virtual Reality (VR) headsets during welder training.",
     tariffModel: {"kind":"orderedSplit","notation":"4 + 4"}, totalMarks: 8,
     rows: [
@@ -1724,6 +1982,38 @@ export const CARDS: SecCard[] = [
     { id: "r-3", kind: "point", verbatim: "Traditional welding training requires significant amounts of consumables, including metal, electrodes, gas and energy. VR training eliminates these costs, as no physical materials are consumed during practice sessions. This leads to substantial savings over time.", marks: null },
     { id: "r-4", kind: "point", verbatim: "VR training can be easily scaled to accommodate multiple trainees simultaneously without the need for multiple physical setups. Additionally, it allows for repeated practice without wear and tear on equipment and trainees can practice anytime and anywhere, increasing flexibility and accessibility.", marks: null },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
+    id: "eng-2025-hl-q7", topicId: "eng-1-9", conceptId: "reasons-why-barriers-shown-hollow-design",
+    section: "A", questionRef: "2025 HL Q7",
+    questionText: "(i) Give two reasons why the barriers shown are hollow in design. (ii) Describe, with the aid of a diagram(s), a suitable polymer manufacturing process for the hollow barriers shown. (iii) Outline two properties of high-density polyethylene (HDPE) which make it suitable for the manufacture of the barriers. (a) Plastic barriers are commonly used to direct traffic and to keep pedestrians safe at road works and building sites. The barriers shown are hollow and are made from thermoplastic high-density polyethylene (HDPE). (i) Outline two reasons why carbon composite materials are used in the manufacture of body panels for the eVTOL aircraft shown. (ii) Explain the difference between elastic memory and elasticity in thermoplastics. (iii) Outline the function of a catalyst and an inhibitor in the addition polymerisation process. (iv) Discuss the use of foaming agents in polymer manufacturing. (v) Identify two reasons why polyurethane is suitable for use in the manufacture of skateboard wheels. (b) Answer any three of the following: (i) Outline the effects of plastic waste on marine life. (ii) Differentiate between the methods of recycling thermoplastics and thermosetting plastics. (c) The Seabin™ is an innovative floating device, designed to remove plastic waste and other debris from the surface of water.",
+    tariffModel: {"kind":"orderedSplit","notation":"Question 7 – 50 marks"}, totalMarks: 50,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Hollow plastic barriers are much lighter than solid barriers, making them easier to • transport, install and reposition. This is particularly important for temporary setups, such as during road construction or events, where barriers need to be frequently moved or adjusted.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Hollow barriers can be filled with water or sand once they are in position. This filling • provides the necessary weight and stability to resist impacts and remain in place under various conditions. When the job is done, the filling can be drained, returning the barrier to its lightweight state for easy removal.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Using hollow plastic reduces the amount of raw material required to manufacture each • barrier, making them more cost-effective to produce compared to solid barriers.", marks: null },
+    { id: "r-4", kind: "point", verbatim: "In the event of a collision, hollow plastic barriers, especially when filled with water, can • absorb and dissipate some of the impact energy, reducing the severity of damage to vehicles and minimising the risk of injury to occupants. This makes them safer compared to solid, rigid barriers.", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Rotational Moulding involves a heated hollow mould which is filled with a charge of thermoplastic material. The charge is heated and softened and then slowly rotated (usually around two perpendicular axes) causing the softened material to disperse and stick to the walls of the mould. In order to maintain even thickness throughout the part, the mould continues to rotate at all times during the heating phase. Products that can be manufactured using rotational moulding include storage tanks, toys, bins and refuse containers, footballs, helmets and canoes.", marks: null },
+    { id: "r-6", kind: "point", verbatim: "Does not absorb water.", marks: null },
+    { id: "r-7", kind: "point", verbatim: "HDPE will not decay.", marks: null },
+    { id: "r-8", kind: "point", verbatim: "HDPE maintains its colour for the life of the barrier.", marks: null },
+    { id: "r-9", kind: "point", verbatim: "HDPE only loses 10% of its strength over its lifetime, thus making it ultimately ideal for outdoor use.", marks: null },
+    { id: "r-10", kind: "point", verbatim: "Carbon composites offer a superior strength-to-weight ratio and are significantly lighter than traditional materials like aluminium or steel. This weight reduction is critical for eVTOL aircraft, as it enhances energy efficiency, increases range and improves overall performance by allowing for higher payloads and longer flight durations.", marks: null },
+    { id: "r-11", kind: "point", verbatim: "Unlike metals, carbon composites are resistant to corrosion, which reduces maintenance costs and extends the lifespan of the aircraft.", marks: null },
+    { id: "r-12", kind: "point", verbatim: "The ability to mould carbon composites into complex shapes allows for innovative and streamlined designs that improve aerodynamic efficiency, contributing to better flight performance and reduced drag.", marks: null },
+    ],
+    questionFigure: {
+          "candId": "engineering-2025-HL-paper-q7ai-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2025-HL-paper-q7ai-art.png",
+          "srcHash": "8a1d7a972c334b52d20d775d15c6ad08",
+          "alt": "The table or diagram printed with 2025 HL Q7(a)(i), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
   {
     ...base, kind: "question",
@@ -1768,7 +2058,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
     id: "eng-2025-hl-q8-a-ii", topicId: "eng-2-11", conceptId: "safety-hazards-associated-using-precision-grinding",
     section: "A", questionRef: "2025 HL Q8(a)(ii)",
-    stem: ". (50 marks)",
     questionText: "Outline two safety hazards associated with using a precision grinding machine.",
     tariffModel: {"kind":"orderedSplit","notation":"3 + 3"}, totalMarks: 6,
     rows: [
@@ -1776,5 +2065,28 @@ export const CARDS: SecCard[] = [
     { id: "r-2", kind: "point", verbatim: "The grinding wheel can break or shatter if it is damaged, improperly mounted, or used at excessive speeds. This can result in serious injuries from high-speed projectiles.", marks: null },
     { id: "r-3", kind: "point", verbatim: "The workpiece may become loose and dislodge if appropriate clamping is not applied.", marks: null },
     ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "higher",
+    paperFileid: "LC027ALP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Higher Level — © State Examinations Commission.",
+    id: "eng-2025-hl-q8-c-ii", topicId: "eng-2-11", conceptId: "identify-chip-formation-shown-c-how",
+    section: "A", questionRef: "2025 HL Q8(c)(ii)",
+    questionText: "Identify the chip formation shown at C and outline how this chip formation impacts on both safety and surface finish. OR Explain the term subtractive manufacturing in relation to CNC milling.",
+    tariffModel: {"kind":"questionTotal"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Built-up edge (BUE) is common in machining, particularly in lathe work, where material being cut adheres to the cutting tool, forming a small deposit or \"edge\" on the tool's tip. This occurs when the pressure and temperature at the cutting zone cause workpiece material to weld to the cutting tool.", marks: null },
+    { id: "r-2", kind: "point", verbatim: "BUE impacts safety as it increases the risk of tool failure and machine stress, potentially leading to accidents if the tool breaks or the workpiece is ejected.", marks: null },
+    { id: "r-3", kind: "point", verbatim: "BUE can negatively affect the surface finish of the workpiece, it can leave behind rough or irregular surfaces, resulting in a poor finish with increased roughness. BUE can lead to inaccuracies in the dimensions of the machined part.", marks: null },
+    ],
+    questionFigure: {
+          "candId": "engineering-2025-HL-paper-q8ci-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2025-HL-paper-q8ci-art.png",
+          "srcHash": "a29e859b459de0b6ad135d2105419ebc",
+          "alt": "The table or diagram printed with 2025 HL Q8(c)(i), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2025 Higher Level — © State Examinations Commission"
+    },
   } as SecCard,
 ];

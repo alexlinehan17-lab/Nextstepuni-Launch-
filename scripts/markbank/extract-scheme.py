@@ -33,7 +33,8 @@ except ImportError:
     fitz = None
 
 
-def extract(pdf_path: Path, marks_column: bool = False) -> str:
+def extract(pdf_path: Path, marks_column: bool = False,
+            columns: bool = False) -> str:
     """Extract, rejoining split spans and reconstructing table rows.
 
     SEC schemes are tables: a marking point and the marks it earns sit in
@@ -68,8 +69,58 @@ def extract(pdf_path: Path, marks_column: bool = False) -> str:
             row.append(line)
         if row:
             out.append(render_row(row, marks_x))
+        if columns:
+            out.extend(render_columns(lines))
     doc.close()
     return "\n".join(out)
+
+
+# ------------------------------------------------------------- columns ----
+
+# How far apart two pieces of text must be before they are different COLUMNS
+# rather than the same line of prose. 60pt is about ten characters at this
+# body size -- wider than any word space and narrower than the gutter between
+# a scheme's answer column and whatever is printed beside it.
+COLUMN_GAP = 60.0
+
+
+def render_columns(lines):
+    """The same page read DOWN its columns instead of across its rows.
+
+    Reading across is right for keeping a marking point with its marks, and
+    wrong for the prose itself whenever anything is printed beside it. The
+    2021 Higher Engineering scheme answers "A single-acting cylinder is one
+    where the thrust or output" at x72 and labels the diagram "Piston is
+    pushed" at x495; on the same baseline, joined left to right, the label
+    lands in the middle of the sentence and the sentence is not in the
+    document any more. The build's provenance check compares against this
+    file, so the true sentence is unfindable and the card is dropped -- 164
+    Engineering asks, and the same shape costs every subject whose scheme
+    prints callouts, mark cells or a second column beside its answers.
+
+    Both readings are emitted. Neither is a correction of the other: they are
+    the same text, and a claim is the SEC's own words if it is found in
+    either.
+    """
+    if not lines:
+        return []
+    edges = sorted({round(l["x"]) for l in lines})
+    bands, start = [], edges[0]
+    for a, b in zip(edges, edges[1:]):
+        if b - a > COLUMN_GAP:
+            bands.append((start, a))
+            start = b
+    bands.append((start, edges[-1]))
+    if len(bands) < 2:
+        return []
+    out = ["", "<!-- columns -->"]
+    for left, right in bands:
+        col = [l for l in lines if left - 1 <= round(l["x"]) <= right + 1]
+        if not col:
+            continue
+        col.sort(key=lambda l: (round(l["y"], 1), l["x"]))
+        out.append(" ".join(l["text"].strip() for l in col))
+    return out
 
 
 # ------------------------------------------------------------ marks column ----
@@ -229,6 +280,9 @@ def main() -> int:
     ap.add_argument("--check", action="store_true", help="report likely splits in an existing .md")
     ap.add_argument("--marks-column", action="store_true",
                     help="lift the right-hand marks cells out of the prose into ⟨brackets⟩")
+    ap.add_argument("--columns", action="store_true",
+                    help="also read each page DOWN its columns, for prose that "
+                         "has something printed beside it")
     args = ap.parse_args()
 
     words = load_dictionary()
@@ -245,7 +299,8 @@ def main() -> int:
         print("PyMuPDF is required to extract", file=sys.stderr)
         return 1
 
-    text = extract(args.path, marks_column=args.marks_column)
+    text = extract(args.path, marks_column=args.marks_column,
+                   columns=args.columns)
     hits = check(text, words)
     out = args.out or args.path.with_suffix(".md")
     out.write_text(text)

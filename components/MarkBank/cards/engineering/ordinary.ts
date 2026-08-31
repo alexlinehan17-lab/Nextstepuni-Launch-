@@ -62,7 +62,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
     id: "eng-2021-ol-q4-a-ii", topicId: "eng-2-10", conceptId: "steps-necessary-ensure-successful-soft-soldered",
     section: "A", questionRef: "2021 OL Q4(a)(ii)",
-    stem: ". (50 marks)",
     questionText: "Describe two steps necessary to ensure a successful soft soldered joint.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
@@ -90,11 +89,10 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2021 Ordinary Level — © State Examinations Commission.",
     id: "eng-2021-ol-q5-a-ii", topicId: "eng-2-13", conceptId: "aid-diagram-any-manufacturing-processes-named",
     section: "A", questionRef: "2021 OL Q5(a)(ii)",
-    stem: ". (50 marks)",
     questionText: "Describe, with the aid of a diagram, any one of the manufacturing processes named by you at Q5(a)(i) above.",
     tariffModel: {"kind":"fixed"}, totalMarks: 10,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "A thermoplastic sheet is clamped in a frame and heat is applied until the sheet begins to sag. At this stage, the mould is lifted up into the plastic sheet and vacuum pressure is applied. This causes the plastic sheet to pull against the mold and form the final shape. After cooling, the mould is lowered and the plastic part is removed from the frame. Excess material is trimmed away.", marks: 10, accepts: ["Heater Plunger Mould Molten plastic Injection nozzle Thermoplastic is softened by heating it inside an injection nozzle. The softened plastic is forced by a plunger into a cold mould where it hardens rapidly and is then ejected. Injection molding is used for the rapid molding of components.","Air Parison Split mould Plastic bottle Used to produce articles from a heated thermoplastic tube called a parison.","The mould closes around the extruded parison and air is blow inside forcing the parison out against the wall of the mould. The article is moulded by the internal shape of a split mould. The component is allowed to cool before being removed from the opened mould."] },
+    { id: "r-1", kind: "alt", verbatim: "A thermoplastic sheet is clamped in a frame and heat is applied until the sheet begins to sag. At this stage, the mould is lifted up into the plastic sheet and vacuum pressure is applied. This causes the plastic sheet to pull against the mold and form the final shape. After cooling, the mould is lowered and the plastic part is removed from the frame. Excess material is trimmed away.", marks: 10, accepts: ["Plastic sheet Heat Final shape Vacuum Mould Hopper B - Injection moulding:","Heater Plunger Mould Molten plastic Injection nozzle Thermoplastic is softened by heating it inside an injection nozzle. The softened plastic is forced by a plunger into a cold mould where it hardens rapidly and is then ejected. Injection molding is used for the rapid molding of components.","Air Parison Split mould Plastic bottle Used to produce articles from a heated thermoplastic tube called a parison.","The mould closes around the extruded parison and air is blow inside forcing the parison out against the wall of the mould. The article is moulded by the internal shape of a split mould. The component is allowed to cool before being removed from the opened mould."] },
     ],
   } as SecCard,
   {
@@ -109,6 +107,20 @@ export const CARDS: SecCard[] = [
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Always work in a well-ventilated area.", marks: 8 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2022, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2022 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2022-ol-q2-d-i", topicId: "eng-2-15", conceptId: "advantage-using-belt-pulley-mechanism-drive",
+    section: "A", questionRef: "2022 OL Q2(d)(i)",
+    stem: "roll cage seat wheel rim belt and pulley mechanism Engineering - Ordinary level 3",
+    questionText: "State one advantage of using a belt and pulley mechanism in a drive system.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 4,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Advantage - Generally quiet when in use, cheap, requires no lubrication. Easier to assemble compared to gear drive systems.", marks: 4 },
     ],
   } as SecCard,
   {
@@ -146,7 +158,6 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q3-b-i", topicId: "eng-2-6", conceptId: "effect-does-hardening-have-steel",
     section: "A", questionRef: "2023 OL Q3(b)(i)",
-    stem: ". (50 marks)",
     questionText: "What effect does hardening have on steel?",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
@@ -160,11 +171,23 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q3-b-ii", topicId: "eng-2-6", conceptId: "tempering-process",
     section: "A", questionRef: "2023 OL Q3(b)(ii)",
-    stem: ". (50 marks)",
     questionText: "Describe the tempering process.",
     tariffModel: {"kind":"fixed"}, totalMarks: 7,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Tempering removes some of the hardness while increasing the toughness of a metal. It is achieved by heating the metal to a specific temperature which is determined by the colour of the metal. On heating, colours appear and when the correct colour is achieved i.e., light straw appears at approx. 250° - 350°, it is quenched in cold water.", marks: 7 },
+    ],
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2023-ol-q3-c", topicId: "eng-3-1", conceptId: "identify-safety-precautions-be-observed-when",
+    section: "A", questionRef: "2023 OL Q3(c)",
+    questionText: "Identify two safety precautions to be observed when working with hot metals.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 10,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Wear heat resistant gloves when preforming heat treatment of metals.", marks: 10 },
     ],
   } as SecCard,
   {
@@ -200,9 +223,40 @@ export const CARDS: SecCard[] = [
     year: 2023, level: "ordinary",
     paperFileid: "LC027GLP000EV",
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2023-ol-q4", topicId: "eng-2-11", conceptId: "cutting-tool-shown-suitable-use",
+    section: "A", questionRef: "2023 OL Q4",
+    questionText: "(i) Name two common gases used in gas welding. (ii) Name two types of flame produced when gas welding. (iii) State two safety precautions that should be followed when gas welding. (a)  (i) Welding plant, (ii) Chipping hammer, (iii) Leather apron, (iv) Electrode holder. (b) State the function of any three of the following in manual metal arc welding: (i) Explain why a passive flux is used when soldering electrical circuits. (ii) Name one process that can be used to permanently join sheet metals. (iii) Give one reason why it is important to clean grease and corrosion from joints before soldering. (iv) Name the cutting tool shown and state a suitable use for it. (c) Answer any three of the following: (d) State two safety precautions to be observed when working with adhesives.",
+    tariffModel: {"kind":"orderedSplit","notation":"Question 4: 50 marks"}, totalMarks: 50,
+    rows: [
+    { id: "r-1", kind: "point", verbatim: "Oxygen", marks: null },
+    { id: "r-2", kind: "point", verbatim: "Acetylene", marks: null },
+    { id: "r-3", kind: "point", verbatim: "Oxidising flame", marks: null },
+    { id: "r-4", kind: "point", verbatim: "Neutral flame", marks: null },
+    { id: "r-5", kind: "point", verbatim: "Carburising flame", marks: null },
+    { id: "r-6", kind: "point", verbatim: "The gas hoses are checked for damage before starting the welding process.", marks: null },
+    { id: "r-7", kind: "point", verbatim: "Correct PPE is worn while welding.", marks: null },
+    { id: "r-8", kind: "point", verbatim: "A welding plant is a device used for fusing / welding metals together. The welding plant creates an electrical arc between the welding rod and the metals being joined. The arc generates enough heat to melt the welding rod and metals, fusing the joint between the two pieces of metal. The welding plant can produce temperatures up to 3,600℃ needed to melt metals.", marks: null },
+    { id: "r-9", kind: "point", verbatim: "The chipping hammer is used to remove the slag which forms on top of the welded joint after arc welding.", marks: null },
+    { id: "r-10", kind: "point", verbatim: "Leather aprons are fireproof and help protect against heat and flames. The leather apron is worn during welding and helps protect the welder against sparks, spatter, slag, and some flames that are often encountered during welding work.", marks: null },
+    { id: "r-11", kind: "point", verbatim: "An electrode holder is a device that holds the electrode / welding rod during the welding process. The handle is insulated to protect the user from the current flowing to the electrode.", marks: null },
+    { id: "r-12", kind: "point", verbatim: "A passive flux is an inactive, non-corrosive flux and will not damage / corrode the electrical circuit. Therefore, the passive flux can remain on the electric circuit when finished soldering.", marks: null },
+    ],
+    questionFigure: {
+          "candId": "engineering-2023-OL-paper-q4civ-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2023-OL-paper-q4civ-art.png",
+          "srcHash": "9c7c728188a46f8bbb4d3ee39d13b518",
+          "alt": "The table or diagram printed with 2023 OL Q4(c)(iv), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2023 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2023, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2023 Ordinary Level — © State Examinations Commission.",
     id: "eng-2023-ol-q4-d", topicId: "eng-2-10", conceptId: "safety-precautions-be-observed-when-working",
     section: "A", questionRef: "2023 OL Q4(d)",
-    stem: ". (50 marks)",
     questionText: "State two safety precautions to be observed when working with adhesives.",
     tariffModel: {"kind":"fixed"}, totalMarks: 8,
     rows: [
@@ -216,11 +270,74 @@ export const CARDS: SecCard[] = [
     schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2024 Ordinary Level — © State Examinations Commission.",
     id: "eng-2024-ol-q2-d-i", topicId: "eng-2-10", conceptId: "advantage-using-temporary-joining-process",
     section: "A", questionRef: "2024 OL Q2(d)(i)",
-    stem: "weight plates seat frame leg press weight machine coupling",
     questionText: "State one advantage of using a temporary joining process.",
     tariffModel: {"kind":"fixed"}, totalMarks: 4,
     rows: [
     { id: "r-1", kind: "anyN", verbatim: "Component parts can be easily dismantled if there is repair work required or new parts to be replaced.", marks: 4 },
+    ],
+    questionFigure: {
+          "candId": "engineering-2024-OL-paper-q2dii-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2024-OL-paper-q2dii-art.png",
+          "srcHash": "230f56b15957641678ada07d55875859",
+          "alt": "The table or diagram printed with 2024 OL Q2(d)(ii), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2024 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2025-ol-q4-c", topicId: "eng-1-5", conceptId: "suggest-method-joining-sheet-aluminium",
+    section: "A", questionRef: "2025 OL Q4(c)",
+    questionText: "Answer any three of the following: (i) Outline one benefit of using the R‐clip shown. (ii) Suggest one method of joining sheet aluminium. (iii) Give two reasons why flux is required when soldering. (iv) Name tool A shown opposite and give one use for this tool.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 8,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "R‐clips are similar in function to split pins and linchpins.", marks: 8, accepts: ["Compared to split pins, they are easier to remove and are re‐ usable. They are particularly common in automotive and construction applications, such as securing hitch pins in trailers or locking parts in place on equipment.","Pop riveting / Machine screws.","Flux cleans the surfaces and protects them from oxidation during the soldering process, ensuring better adhesion.","Flux enhances the wetting properties of the solder, allowing it to flow more easily and uniformly across the surfaces being joined.","Name: Allen key","Use: Allen keys are designed to tighten or loosen hexagonal‐shaped bolts and screws. Allen keys are highly versatile hand tools and can be used to assemble flatpack furniture and to adjust seat posts, handlebars on a bicycle."] },
+    ],
+    questionFigure: {
+          "candId": "engineering-2025-OL-paper-q4civ-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2025-OL-paper-q4civ-art.png",
+          "srcHash": "5e7bcfea2764d63b9b724ffc3cecc592",
+          "alt": "The table or diagram printed with 2025 OL Q4(c)(iv), as the State Examinations Commission set it.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2025 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2025-ol-q5-a-i", topicId: "eng-1-9", conceptId: "each-plastic-manufacturing-processes-shown-b",
+    section: "A", questionRef: "2025 OL Q5(a)(i)",
+    questionText: "Name each of the plastic manufacturing processes shown at A, B and C.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 9,
+    rows: [
+    { id: "r-1", kind: "alt", verbatim: "A: Compression moulding B: Blow moulding C: Vacuum forming. ii) Describe any one plastic manufacturing process:", marks: 9, accepts: ["Plastic A measured amount of thermosetting plastic polymer is placed into the cavity of the mould. Heat from the mould causes the polymer to melt. The mould cavity is shaped to form the outside of the object. The top half of the mould closes dispensing the melted plastic to form the object. Pressure is maintained to allow the plastic to harden. Once solidified the mould is opened and the part is released.","Air Parison Split mould Plastic bottle Used to produce articles from a heated thermoplastic tube called a parison. The mould closes around the extruded parison and air is blow inside forcing the parison out against the wall of the mould. The article is moulded by the internal shape of a split mould. The component is allowed to cool before being removed from the opened moulding.","A thermoplastic sheet is clamped in a frame and heat is applied until the sheet begins to sag. At this stage, the mould is lifted up into the plastic sheet and vacuum pressure is applied. This causes the plastic sheet to pull against the mold and form the final shape. After cooling, the mould is lowered and the plastic part is removed from the frame. Excess material is trimmed away."] },
+    ],
+    questionFigure: {
+          "candId": "engineering-2025-OL-paper-q5ai-art",
+          "src": "/exam-figures/engineering/markbank/engineering-2025-OL-paper-q5ai-art.png",
+          "srcHash": "d1178a3ca8c6d1e1bccf2ad276d8fc01",
+          "alt": "The table or diagram printed with 2025 OL Question 5(a)(i), as the State Examinations Commission set it. It reads: A, C, B.",
+          "lettersVisible": [],
+          "attribution": "SEC Leaving Certificate Engineering 2025 Ordinary Level — © State Examinations Commission"
+    },
+  } as SecCard,
+  {
+    ...base, kind: "question",
+    year: 2025, level: "ordinary",
+    paperFileid: "LC027GLP000EV",
+    schemeCitation: "Marking points quoted from the SEC marking scheme, Engineering 2025 Ordinary Level — © State Examinations Commission.",
+    id: "eng-2025-ol-q6-c-ii", topicId: "eng-2-13", conceptId: "any-processes-named-you-q6-c",
+    section: "A", questionRef: "2025 OL Q6(c)(ii)",
+    stem: "stunt bike pegs",
+    questionText: "Describe any one of the processes named by you, at Q6(c)(i) above. OR Name one CNC machine commonly used in the engineering workshop.",
+    tariffModel: {"kind":"fixed"}, totalMarks: 6,
+    rows: [
+    { id: "r-1", kind: "anyN", verbatim: "Computer numerically controlled (CNC) lathes are commonly used in the engineering workshop.", marks: 6 },
     ],
   } as SecCard,
   {
@@ -248,7 +365,7 @@ export const CARDS: SecCard[] = [
     questionText: "State one advantage of using a Printed Circuit Board (PCB) for the assembly of circuits.",
     tariffModel: {"kind":"fixed"}, totalMarks: 6,
     rows: [
-    { id: "r-1", kind: "alt", verbatim: "Used for accurately measuring the diameter of round bars or internal diameters of holes.", marks: 6, accepts: ["Quicker to assemble and ensures better circuit operation when • complete."] },
+    { id: "r-1", kind: "alt", verbatim: "Used for accurately measuring the diameter of round bars or internal diameters of holes.", marks: 6, accepts: ["Measurements can be read directly from a digital display.","Ensures the correct assembly of components as all component • positions are identified on the PCB.","Quicker to assemble and ensures better circuit operation when • complete."] },
     ],
   } as SecCard,
   {

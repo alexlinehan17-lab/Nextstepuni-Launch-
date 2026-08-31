@@ -105,6 +105,9 @@ RUBRIC_HEAD = re.compile(
 # The '\d.' head may be followed by an opening quote: Construction Studies'
 # 2019-2025 alternative Q10 opens with a quotation.
 QHEAD = re.compile('^(?:Question\\s+(\\d{1,2})\\b|(\\d{1,2})\\.\\s+(?=[A-Z(\\d"\u201c\u2018]))')
+# What a question head may carry after its number and before its first part:
+# a full stop and the marks the question is worth.
+QHEAD_TARIFF = re.compile(r'^\.?\s*\(\s*\d{1,3}\s*marks?\s*\)', re.I)
 # An instruction ABOUT THE PAPER, numbered like a question. Engineering prints
 # its rubric as a numbered list — "1. Answer any SIX questions. 2. All
 # questions carry equal marks. 3. All answers must be written in ink..." — and
@@ -485,6 +488,13 @@ class Paper:
                     letter, roman, open_key = None, None, None
                     self.stems.setdefault((q, None), [])
                     rest = text[m.end():].strip()
+                    # The head may carry its own tariff: Engineering sets
+                    # "Question 4. (50 marks)". Consuming only the number left
+                    # ". (50 marks)" as the question's stimulus prose, and it
+                    # was the whole stem on 80 of its cards -- the first thing
+                    # a student would read on the card, and not a stimulus at
+                    # all.
+                    rest = QHEAD_TARIFF.sub('', rest, count=1).strip()
                     if rest and _leading(rest)[:2] != (None, None):
                         # "7. (a) Define an acid ..." — the head is welded to its
                         # own first part, and filing that as stimulus prose loses

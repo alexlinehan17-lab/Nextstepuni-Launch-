@@ -88,6 +88,25 @@ CREDIT_RULE = re.compile(
     r'^(?:award|allow|accept|max\b|total\b|note:|any other|or\b)', re.I)
 
 
+def keeps_stem(stem, figure):
+    """Whether this card's stimulus prose is worth showing.
+
+    A stem earns its place by saying something the card does not. Once the
+    QUESTION FIGURE is bound, the labels printed on that figure no longer do:
+    "1400 1000 600 200 C X Temperature °C 723°C 0.83% % Carbon 1 2 3 4 5 6"
+    is the axis of the diagram now shown above it, and "defect A defect B" is
+    written on the picture itself. What separates them from a real stem is
+    that a real one is a SENTENCE -- "Give brief answers to any ten of the
+    following:" closes on its colon, and a run of labels closes on nothing.
+    """
+    text = ' '.join((stem or '').split())
+    if not text or cardlint.label_junk(text):
+        return False
+    if figure and not re.search(r'[.?!:]$', text):
+        return False
+    return True
+
+
 def looks_like_an_ask(text):
     t = ' '.join((text or '').split())
     if not t:
@@ -192,8 +211,16 @@ def main():
             m = re.match(r'engineering-(\d{4})-(HL|OL)-paper-q(\d+)'
                          r'([a-hj-z])?((?:i|ii|iii|iv|v|vi|vii|viii)?)-art$', key)
             if m:
-                figs[(int(m.group(1)), m.group(2).lower(), int(m.group(3)),
-                      m.group(4) or None, m.group(5) or None)] = key
+                year, level = int(m.group(1)), m.group(2).lower()
+                q, le, rm = int(m.group(3)), m.group(4) or None, m.group(5) or None
+                figs[(year, level, q, le, rm)] = key
+                # The picture is printed ONCE for the part that owns it, and
+                # every part beneath it may show it -- 2021 HL Q2(d) prints
+                # one hybrid vehicle diagram, (d)(i) identifies it and (d)(ii)
+                # describes its operation from the labels on it. Registering
+                # the letter as well is what lets the siblings find it.
+                if rm:
+                    figs.setdefault((year, level, q, le, None), key)
 
     idx = R.leaf_index(census_subject('engineering'))
     cards, refused = [], collections.Counter()
@@ -375,8 +402,8 @@ def main():
                            source='table', card_id=cid,
                            use=[[i for i, _ in keep[:MAX_ROWS]]],
                            marks=[n * per], tariff='fixed',
-                           row_kind='anyN', total=n * per, figure=figure,
-                           stem=not cardlint.label_junk(stem),
+                           row_kind='anyN', total=n * per, question_figure=figure,
+                           stem=keeps_stem(stem, figure),
                            notes=f'The scheme prints {S.notation(*key)!r}.')
                 elif model['kind'] == 'orderedSplit':
                     # Rows carry no marks and the total is given, which is the
@@ -386,25 +413,25 @@ def main():
                     A.card(*key, topic=topic, concept=concept_for(ask),
                            source='table', card_id=cid,
                            use=[i for i, _ in keep[:MAX_ROWS]],
-                           tariff='orderedSplit', figure=figure,
+                           tariff='orderedSplit', question_figure=figure,
                            notation=model['notation'],
                            ladder=S.tariff(*key),
-                           stem=not cardlint.label_junk(stem))
+                           stem=keeps_stem(stem, figure))
                 elif model['kind'] == 'questionTotal':
                     A.card(*key, topic=topic, concept=concept_for(ask),
                            source='table', card_id=cid,
                            use=[i for i, _ in keep[:MAX_ROWS]],
-                           tariff='questionTotal', figure=figure,
+                           tariff='questionTotal', question_figure=figure,
                            total=S.tariff(*key),
-                           stem=not cardlint.label_junk(stem),
+                           stem=keeps_stem(stem, figure),
                            notes=f'The scheme prints {S.notation(*key)!r}.')
                 else:
                     A.card(*key, topic=topic, concept=concept_for(ask),
                            source='table', card_id=cid,
                            use=[i for i, _ in keep[:MAX_ROWS]],
-                           marks=marks, tariff='fixed', figure=figure,
+                           marks=marks, tariff='fixed', question_figure=figure,
                            total=S.tariff(*key),
-                           stem=not cardlint.label_junk(stem))
+                           stem=keeps_stem(stem, figure))
                 # Card lint reads the text the CARD carries, which lib builds
                 # from the key's own ask with its children joined on.
                 # Rebuilding that here to guess at it was wrong in both
@@ -414,7 +441,8 @@ def main():
                 # way -- "Identify the hybrid vehicle configuration shown
                 # opposite", with nothing opposite.
                 made = A.cards[-1] if A.cards else None
-                if made is not None and not made.get('figureKey'):
+                if made is not None and not (made.get('figureKey')
+                                            or made.get('questionFigureKey')):
                     stem_t = made.get('stem') or ''
                     qtext = made.get('questionText') or ''
                     final = f'{stem_t} {qtext}'

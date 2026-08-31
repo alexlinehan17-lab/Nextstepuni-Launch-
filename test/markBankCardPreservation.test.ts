@@ -487,42 +487,37 @@ const decks = [
    * print the picture, nothing has cropped it yet, and a card carrying the
    * crop is no longer a ghost. Ordinary rose 4 -> 10 in the same pass from
    * the provenance and sentence-splitting fixes. */
-  // 2026-08-31: 48 -> 108. The scheme reader learned four things the tariff
-  // table and the answer body had always said and it had not read: a part's
-  // rule may run over several lines and only the last carries the total
-  // ("Three parts @ 3 marks" + "Three parts @ 2 marks (15)" is 15, not 6); the
-  // rule may be written with its own verb in front ("Explain any two @ 7
-  // marks"), which is how 2023 Ordinary Level writes every one of them; a
-  // marker is separated from its rule by a dash, which defeated the parse of
-  // the FIRST line of every multi-line rule; and the bold heading above an
-  // answer is the scheme restating the ask only when it is a WHOLE sentence.
-  // Where the boldness changed mid-sentence the answer began "going through a
-  // pasty stage" — 42 rows across the subject started that way.
+  // 2026-08-31: 48 -> 124, over three passes. The scheme reader learned four
+  // things the tariff table and the answer body had always said: a part's
+  // rule may run over several lines and only the last carries the total; the
+  // rule may be written with the ask's own verb in front, which is how 2023
+  // Ordinary Level writes every one of them; a marker is separated from its
+  // rule by a dash, which defeated the first line of every multi-line rule;
+  // and the bold heading above an answer is the scheme restating the ask only
+  // when it is a WHOLE sentence, so 42 rows no longer begin mid-sentence.
   //
   // A part whose total is printed once over several points now says so
-  // (questionTotal) instead of paying that total for each point, which is
-  // what lib.card was rightly refusing.
+  // (questionTotal) instead of paying that total for each point. The .md the
+  // provenance gate reads was re-extracted with --columns, which recovers
+  // prose split by anything printed beside it. And 22 figures were cut by a
+  // bespoke Engineering cropper and bound, every one opened first.
   //
-  // Two cards REMOVED for shipping page furniture as a marking point:
+  // Three cards REMOVED. Two shipped page furniture as a marking point:
   // eng-2022-hl-q5-b, whose entire 18-mark answer was "Page 17", and
-  // eng-2023-hl-q1-j, which paid 2 of its 5 marks for "Page 8". One more,
-  // eng-2022-hl-q6, held "electrode" as a row of its own; rejoined into the
-  // sentence it came from, the sentence cannot be traced in the MARKDOWN the
-  // provenance gate reads, because there the mark column is welded into the
-  // answer. The gate is right to refuse it: the fragment matched only because
-  // it began after the weld.
-  ['engineering:higher', ENG_HIGHER, 108, '66e941c0a2e931423a2baa9ce02d2099aacae7c9b490bfdef97db7bfd3ae4a91'],
-  // 2026-08-31: 10 -> 18, same reader work as Higher above. Four cards
+  // eng-2023-hl-q1-j, which paid 2 of its 5 marks for "Page 8". The third,
+  // eng-2022-hl-q6, held "electrode" as a row of its own; rejoined into its
+  // sentence it cannot be traced in the markdown, where the mark column is
+  // welded into the answer, and the gate is right to refuse it.
+  ['engineering:higher', ENG_HIGHER, 124, '75cae35a152f2897e0e18b79dee0acb0aa9c01bf7270ea66cdea14cc65e8b55f'],
+  // 2026-08-31: 10 -> 24, same reader work as Higher above. Four cards
   // REMOVED. eng-2021-ol-q7-c-ii asked for the electronic symbol of each
   // component named and answered "of round bars or internal diameters of
   // holes", a fragment of the vernier answer from another part. The other
   // three carried a fragment as their whole answer and now carry the sentence
-  // it belongs to, which cannot be traced in the markdown the gate reads:
-  // eng-2022-ol-q2-d-i ("lubrication. Easier to assemble compared to gear
-  // drive systems."), eng-2023-ol-q7-c-i (which answered "State one use of a
-  // solenoid" with a vernier caliper) and eng-2025-ol-q6-c-ii ("used in the
-  // engineering workshop.").
-  ['engineering:ordinary', ENG_ORDINARY, 18, '82162b66333953e89185806062fe8d7f6072da291e036000d730cafba8c4cd29'],
+  // it belongs to, which the markdown cannot confirm: eng-2022-ol-q2-d-i,
+  // eng-2023-ol-q7-c-i (which answered "State one use of a solenoid" with a
+  // vernier caliper) and eng-2025-ol-q6-c-ii.
+  ['engineering:ordinary', ENG_ORDINARY, 24, 'a44b5b043a7b58aead26144d7b427d06a5d0f5750e704598e16a55e3f55ff318'],
 ] as const;
 
 const identityHash = (cards: readonly { id: string }[]) => createHash('sha256')
@@ -537,6 +532,6 @@ describe('Mark Bank card preservation', () => {
   });
 
   it('protects the complete current bank', () => {
-    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7913);
+    expect(decks.reduce((total, [, cards]) => total + cards.length, 0)).toBe(7935);
   });
 });

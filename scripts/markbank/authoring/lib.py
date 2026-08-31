@@ -377,6 +377,7 @@ class Author:
 
     def card(self, q, letter=None, roman=None, *, topic, concept,
              use=None, marks=None, tariff='fixed', total=None, figure=None,
+             question_figure=None,
              labels=None, notes=None, stem=True, checked=None, suffix='',
              row_kind='point', notation=None, spread=False, context=None,
              omit=(), source='md', card_id=None, from_run=None, from_runs=None,
@@ -684,6 +685,14 @@ class Author:
             card['notes'] = notes
         if figure:
             card['figureKey'] = figure
+        # The SEC's own print of the ask and its setup, shown BEFORE the
+        # reveal. It is the right slot for a stimulus printed once and asked
+        # about by several parts -- one hybrid vehicle diagram over (d)(i) and
+        # (d)(ii) -- which the answer slot's one-crop-one-card rule is there
+        # to forbid, and which would otherwise appear only once the student
+        # has already answered.
+        if question_figure:
+            card['questionFigureKey'] = question_figure
         if labels == 'auto':
             labels = {}
             for point in chosen:
