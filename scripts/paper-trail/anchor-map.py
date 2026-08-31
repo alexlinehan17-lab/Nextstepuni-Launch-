@@ -244,7 +244,27 @@ def _det_q_token(doc):
     return hits
 
 
-DETECTORS = [("question", _det_question_word), ("lead_int", _det_lead_int), ("qtoken", _det_q_token)]
+def _det_c_token(doc):
+    """Irish-medium schemes abbreviate 'Ceist N' to a left-margin 'C1'/'C2'
+    marker (e.g. Ag Science IV: 'C1 (6 chuid ar bith) 6 × 10 marc'). Same shape
+    as the Q-token detector. False C-hits (part labels, chemistry formulae)
+    don't form clean monotonic 1..N runs and lose at sequence/count-reconcile."""
+    hits = []
+    for pi, page in enumerate(doc):
+        if page.rotation:
+            continue
+        H = page.rect.height
+        for lw in line_groups(page):
+            for w in lw:
+                m = re.fullmatch(r"C\.?(\d{1,2})", w[4])
+                if m and w[0] < LEFT_MARGIN_X:
+                    hits.append((int(m.group(1)), pi, w[0], w[1] / H))
+                    break
+    return hits
+
+
+DETECTORS = [("question", _det_question_word), ("lead_int", _det_lead_int), ("qtoken", _det_q_token),
+             ("ctoken", _det_c_token)]
 
 
 def best_sequence(hits):
@@ -676,8 +696,8 @@ def build_pairs(rows, include_done=False, langs=None, levels=None):
             continue
         if d["code"] in DONE_CODES and not include_done:
             continue  # frozen — lit in an earlier wave, never re-mapped
-        if SCOPE_CODES is not None and not include_done and d["code"] not in SCOPE_CODES:
-            continue
+        if SCOPE_CODES is not None and d["code"] not in SCOPE_CODES:
+            continue  # --codes filters unconditionally (targeted re-runs)
         if d["levelCode"] not in SCOPE_LEVELS or d["lang"] not in langs:
             continue
         if int(r["year"]) not in SCOPE_YEARS or d["component"] in SKIP_COMPONENTS:
@@ -737,6 +757,9 @@ def main():
     ap.add_argument("--years", help="comma-separated years to (re)map, e.g. 2026")
     ap.add_argument("--include-done", action="store_true",
                     help="attempt frozen DONE_CODES subjects too (new-year refresh)")
+    ap.add_argument("--codes", default="",
+                    help="comma-separated SEC codes to attempt EXCLUSIVELY "
+                         "(e.g. LC024) — targeted re-runs after an engine fix")
     ap.add_argument("--skip-codes", default="",
                     help="comma-separated SEC codes to leave alone (bespoke-owned)")
     ap.add_argument("--langs", default="",
@@ -753,9 +776,11 @@ def main():
                          "(conf-0.3 page-jump chips for papers the precise "
                          "engine drops; ships ungated by design)")
     args = ap.parse_args()
-    global SCOPE_LANGS, SCOPE_LEVELS, UNIVERSAL_FALLBACK, SCOPE_EXAMS
+    global SCOPE_LANGS, SCOPE_LEVELS, UNIVERSAL_FALLBACK, SCOPE_EXAMS, SCOPE_CODES
     if args.years:
         SCOPE_YEARS = {int(y) for y in args.years.split(",")}
+    if args.codes:
+        SCOPE_CODES = {c.strip().upper() for c in args.codes.split(",") if c.strip()}
     if args.langs:
         SCOPE_LANGS = {x.strip().upper() for x in args.langs.split(",") if x.strip()}
     if args.levels:

@@ -353,6 +353,21 @@ QA_PASSED_ANSWER_PROFILES = {
     # (2018/2022 006 maps re-verified correct — the trap is 2026-specific).
     ('latin', 'higher', 'ev'),
     ('latin', 'higher', 'iv'),
+    # IV sweep wave 1 (2026-08-31, CAMPAIGN-FULL-COVERAGE Phase A): the C-token
+    # detector ("C1" = Ceist 1) unlocked the Irish-medium twins of proven EV
+    # layouts. Each profile render-verified (paper band vs scheme crop panes)
+    # plus overlap-vs-EV-twin QA; decoy families found the same way were
+    # DELETED, not lit: Art practical components 010/011/027 (criteria grids —
+    # including ~25 EV maps wrongly live since the H&A wave; purged),
+    # Accounting HL IV (scheme numbers its working lines), Geography OL IV
+    # Part Two 2025 (anchored on the Part One short-answer key).
+    ('agricultural-science', 'higher', 'iv'),
+    ('agricultural-science', 'ordinary', 'iv'),
+    ('art', 'higher', 'iv'),
+    ('art', 'ordinary', 'iv'),
+    ('accounting', 'ordinary', 'iv'),
+    ('biology', 'higher', 'iv'),
+    ('biology', 'ordinary', 'iv'),
     ('lca-engineering', 'common', 'ev'),
     ('lca-gaeilge-chumarsaideach', 'common', 'iv'),
     ('link-modules', 'common', 'ev'),
